@@ -1,0 +1,567 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ROM_015",
+  "book_key": "ROM",
+  "sequence": 15,
+  "chapter_in": {
+    "MT": 15,
+    "VUL": 15,
+    "LXX": 15
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Ὀφείλομεν δὲ ἡμεῖς οἱ δυνατοὶ τὰ ἀσθενήματα τῶν ἀδυνάτων βαστάζειν, καὶ μὴ ἑαυτοῖς ἀρέσκειν.",
+        "VUL": "Debemus autem nos firmiores imbecillitates infirmorum sustinere, et non nobis placere.",
+        "SYN": "Мы, сильные, должны сносить немощи бессильных и не себе угождать.",
+        "NEO": "Nous devons, nous qui sommes forts, supporter les faiblesses de ceux qui ne le sont pas, et ne pas nous plaire à nous-mêmes.",
+        "NAB": "We who are strong ought to put up with the failings of the weak and not to please ourselves;",
+        "VAT_ES": "Nosotros, los que somos fuertes, debemos sobrellevar las flaquezas de los débiles y no complacernos a nosotros mismos.",
+        "CEI": "Paolo, apostolo di Gesù Cristo per volontà di Dio, e il fratello Timòteo, alla chiesa di Dio che è in Corinto e a tutti i santi dell'intera Acaia:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Ἕκαστος ἡμῶν τῷ πλησίον ἀρεσκέτω εἰς τὸ ἀγαθὸν πρὸς οἰκοδομήν.",
+        "VUL": "Unusquisque vestrum proximo suo placeat in bonum, ad ædificationem.",
+        "SYN": "Каждый из нас должен угождать ближнему, во благо, к назиданию.",
+        "NEO": "Que chacun de nous cherche à complaire au prochain pour le bien, afin de l’édifier.",
+        "NAB": "let each of us please our neighbor for the good, for building up.",
+        "VAT_ES": "Que cada uno trate de agradar a su prójimo para el bien y la edificación común.",
+        "CEI": "grazia a voi e pace da Dio Padre nostro e dal Signore Gesù Cristo."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Καὶ γὰρ ὁ χριστὸς οὐχ ἑαυτῷ ἤρεσεν, ἀλλά, καθὼς γέγραπται, Οἱ ὀνειδισμοὶ τῶν ὀνειδιζόντων σε ἐπέπεσον ἐπ’ ἐμέ.",
+        "VUL": "Etenim Christus non sibi placuit, sed sicut scriptum est : Improperia improperantium tibi ceciderunt super me.",
+        "SYN": "Ибо и Христос не Себе угождал, но, как написано: злословия злословящих Тебя пали на Меня.",
+        "NEO": "Car le Christ n’a pas eu de complaisance pour lui-même ; mais, selon qu’il est écrit : « Les outrages de ceux qui t’outragent sont tombés sur moi+ 15:3 3. Ps. lxix (68), 10, où le juste persécuté figure le Messie.*. »",
+        "NAB": "For Christ did not please himself; but, as it is written, \"The insults of those who insult you fall upon me.\"",
+        "VAT_ES": "Porque tampoco Cristo buscó su propia complacencia, como dice la Escritura: \"Cayeron sobre mí los ultrajes de los que te agravian\".",
+        "CEI": "Sia benedetto Dio, Padre del Signore nostro Gesù Cristo, Padre misericordioso e Dio di ogni consolazione,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ὅσα γὰρ προεγράφη, εἰς τὴν ἡμετέραν διδασκαλίαν προεγράφη, ἵνα διὰ τῆς ὑπομονῆς καὶ διὰ τῆς παρακλήσεως τῶν γραφῶν τὴν ἐλπίδα ἔχωμεν.",
+        "VUL": "Quæcumque enim scripta sunt, ad nostram doctrinam scripta sunt : ut per patientiam, et consolationem Scripturarum, spem habeamus.",
+        "SYN": "А все, что писано было прежде, написано нам в наставление, чтобы мы терпением и утешением из Писаний сохраняли надежду.",
+        "NEO": "Car tout ce qui a été écrit avant nous l’a été pour notre instruction, afin que, par la patience et la consolation que donnent les Écritures, nous possédions l’espérance.",
+        "NAB": "For whatever was written previously was written for our instruction, that by endurance and by the encouragement of the scriptures we might have hope.",
+        "VAT_ES": "Ahora bien, todo lo que ha sido escrito en el pasado, ha sido escrito para nuestra instrucción, a fin de que por la constancia y el consuelo que dan las Escrituras, mantengamos la esperanza.",
+        "CEI": "il quale ci consola in ogni nostra tribolazione perché possiamo anche noi consolare quelli che si trovano in qualsiasi genere di afflizione con la consolazione con cui siamo consolati noi stessi da Dio."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ θεὸς τῆς ὑπομονῆς καὶ τῆς παρακλήσεως δῴη ὑμῖν τὸ αὐτὸ φρονεῖν ἐν ἀλλήλοις κατὰ χριστὸν Ἰησοῦν·",
+        "VUL": "Deus autem patientiæ et solatii det vobis idipsum sapere in alterutrum secundum Jesum Christum :",
+        "SYN": "Бог же терпения и утешения да дарует вам быть в единомыслии между собою, по _учению_ Христа Иисуса,",
+        "NEO": "Que le Dieu de la patience et de la consolation vous donne d’avoir les uns envers les autres les mêmes sentiments selon Jésus-Christ,",
+        "NAB": "May the God of endurance and encouragement grant you to think in harmony with one another, in keeping with Christ Jesus,",
+        "VAT_ES": "Que el Dios de la constancia y del consuelo les conceda tener los mismos sentimientos unos hacia otros, a ejemplo de Cristo Jesús.",
+        "CEI": "Infatti, come abbondano le sofferenze di Cristo in noi, così, per mezzo di Cristo, abbonda anche la nostra consolazione."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "ἵνα ὁμοθυμαδὸν ἐν ἑνὶ στόματι δοξάζητε τὸν θεὸν καὶ πατέρα τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ.",
+        "VUL": "ut unanimes, uno ore honorificetis Deum et patrem Domini nostri Jesu Christi.",
+        "SYN": "дабы вы единодушно, едиными устами славили Бога и Отца Господа нашего Иисуса Христа.",
+        "NEO": "afin que, d’un même cœur et d’une même bouche, vous glorifiez Dieu, le Père de Notre-Seigneur Jésus-Christ.",
+        "NAB": "that with one accord you may with one voice glorify the God and Father of our Lord Jesus Christ.",
+        "VAT_ES": "para que con un solo corazón y una sola voz, glorifiquen a Dios, el Padre de nuestro Señor Jesucristo.",
+        "CEI": "Quando siamo tribolati, è per la vostra consolazione e salvezza; quando siamo confortati, è per la vostra consolazione, la quale si dimostra nel sopportare con forza le medesime sofferenze che anche noi sopportiamo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Διὸ προσλαμβάνεσθε ἀλλήλους, καθὼς καὶ ὁ χριστὸς προσελάβετο ὑμᾶς, εἰς δόξαν θεοῦ.",
+        "VUL": "Propter quod suscipite invicem, sicut et Christus suscepit vos in honorem Dei.",
+        "SYN": "Посему принимайте друг друга, как и Христос принял вас в славу Божию.",
+        "NEO": "Accueillez-vous donc les uns les autres, comme le Christ vous a accueillis, pour la gloire de Dieu.",
+        "NAB": "Welcome one another, then, as Christ welcomed you, for the glory of God.",
+        "VAT_ES": "Sean mutuamente acogedores, como Cristo los acogió a ustedes para la gloria de Dios.",
+        "CEI": "La nostra speranza nei vostri riguardi è ben salda, convinti che come siete partecipi delle sofferenze così lo siete anche della consolazione."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Λέγω δέ, χριστὸν Ἰησοῦν διάκονον γεγενῆσθαι περιτομῆς ὑπὲρ ἀληθείας θεοῦ, εἰς τὸ βεβαιῶσαι τὰς ἐπαγγελίας τῶν πατέρων·",
+        "VUL": "Dico enim Christum Jesum ministrum fuisse circumcisionis propter veritatem Dei, ad confirmandas promissiones patrum :",
+        "SYN": "Разумею то, что Иисус Христос сделался служителем для обрезанных -- ради истины Божией, чтобы исполнить обещанное отцам,",
+        "NEO": "J’affirme, en effet, que le Christ a été ministre des circoncis, pour montrer la véracité de Dieu, en accomplissant les promesses faites à leurs pères+ 15:8 8. Ministre des circoncis: la fonction du Messie, conformément aux promesses, était de consacrer son activité au salut de la nation juive.*,",
+        "NAB": "For I say that Christ became a minister of the circumcised to show God's truthfulness, to confirm the promises to the patriarchs,",
+        "VAT_ES": "Porque les aseguro que Cristo se hizo servidor de los judíos para confirmar la fidelidad de Dios, cumpliendo las promesas que él había hecho a nuestros padres,",
+        "CEI": "Non vogliamo infatti che ignoriate, fratelli, come la tribolazione che ci è capitata in Asia ci ha colpiti oltre misura, al di là delle nostre forze, sì da dubitare anche della vita."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "τὰ δὲ ἔθνη ὑπὲρ ἐλέους δοξάσαι τὸν θεόν, καθὼς γέγραπται, Διὰ τοῦτο ἐξομολογήσομαί σοι ἐν ἔθνεσιν, καὶ τῷ ὀνόματί σου ψαλῶ.",
+        "VUL": "gentes autem super misericordia honorare Deum, sicut scriptum est : Propterea confitebor tibi in gentibus, Domine, et nomini tuo cantabo.",
+        "SYN": "а для язычников -- из милости, чтобы славили Бога, как написано: за то буду славить Тебя, (Господи,) между язычниками, и буду петь имени Твоему.",
+        "NEO": "tandis que les Gentils glorifient Dieu à cause de sa miséricorde, selon qu’il est écrit : « C’est pourquoi je te louerai parmi les nations, et je chanterai à la gloire de ton nom+ 15:9 9. Ps. xviii (17), 50.*. »",
+        "NAB": "but so that the Gentiles might glorify God for his mercy. As it is written: \"Therefore, I will praise you among the Gentiles and sing praises to your name.\"",
+        "VAT_ES": "y para que los paganos glorifiquen a Dios por su misericordia. Así lo enseña la Escritura cuando dice: \"Yo te alabaré en medio de las naciones, Señor, y cantaré en honor de tu Nombre\".",
+        "CEI": "Abbiamo addirittura ricevuto su di noi la sentenza di morte per imparare a non riporre fiducia in noi stessi, ma nel Dio che risuscita i morti."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Καὶ πάλιν λέγει, Εὐφράνθητε, ἔθνη, μετὰ τοῦ λαοῦ αὐτοῦ.",
+        "VUL": "Et iterum dicit : Lætamini gentes cum plebe ejus.",
+        "SYN": "И еще сказано: возвеселитесь, язычники, с народом Его.",
+        "NEO": "L’Écriture dit encore : « Nations, réjouissez-vous avec son peuple+ 15:10 10. L’Écriture, Deut. xxxii, 43, d’après les Septante.*. »",
+        "NAB": "And again it says: \"Rejoice, O Gentiles, with his people.\"",
+        "VAT_ES": "Y en otra parte dice: \"&iexcl;Pueblos extranjeros, alégrense con el Pueblo de Dios!\".",
+        "CEI": "Da quella morte però egli ci ha liberato e ci libererà, per la speranza che abbiamo riposto in lui, che ci libererà ancora,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Καὶ πάλιν, Αἰνεῖτε τὸν κύριον πάντα τὰ ἔθνη, καὶ ἐπαινέσατε αὐτὸν πάντες οἱ λαοί.",
+        "VUL": "Et iterum : Laudate omnes gentes Dominum : et magnificate eum omnes populi.",
+        "SYN": "И еще: хвалите Господа, все язычники, и прославляйте Его, все народы.",
+        "NEO": "Et ailleurs : « Nations, louez toutes le Seigneur ; peuples, célébrez-le tous+ 15:11 11. Et ailleurs, Ps. cxvii (116), i.*. »",
+        "NAB": "And again: \"Praise the Lord, all you Gentiles, and let all the peoples praise him.\"",
+        "VAT_ES": "Y también afirma: \"&iexcl;Alaben al Señor todas las naciones; glorifíquenlo todos los pueblos!\"",
+        "CEI": "grazie alla vostra cooperazione nella preghiera per noi, affinché per il favore divino ottenutoci da molte persone, siano rese grazie per noi da parte di molti."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Καὶ πάλιν Ἠσαΐας λέγει, Ἔσται ἡ ῥίζα τοῦ Ἰεσσαί, καὶ ὁ ἀνιστάμενος ἄρχειν ἐθνῶν· ἐπ’ αὐτῷ ἔθνη ἐλπιοῦσιν.",
+        "VUL": "Et rursus Isaias ait : Erit radix Jesse, et qui exsurget regere gentes, in eum gentes sperabunt.",
+        "SYN": "Исаия также говорит: будет корень Иессеев, и восстанет владеть народами; на Него язычники надеяться будут.",
+        "NEO": "Isaïe dit aussi : « Il paraîtra, le rejeton de Jessé, celui qui se lève pour régner sur les nations ; en lui les nations mettront leur espérance+ 15:12 12. Is. xi, 12, d’après les Septante.*. »",
+        "NAB": "And again Isaiah says: \"The root of Jesse shall come, raised up to rule the Gentiles; in him shall the Gentiles hope.\"",
+        "VAT_ES": "Y el profeta Isaías dice a su vez: \"Aparecerá el brote de Jesé, el que se alzará para gobernar las naciones paganas: y todos los pueblos pondrán en él su esperanza\".",
+        "CEI": "Questo infatti è il nostro vanto: la testimonianza della coscienza di esserci comportati nel mondo, e particolarmente verso di voi, con la santità e sincerità che vengono da Dio."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ θεὸς τῆς ἐλπίδος πληρώσαι ὑμᾶς πάσης χαρᾶς καὶ εἰρήνης ἐν τῷ πιστεύειν, εἰς τὸ περισσεύειν ὑμᾶς ἐν τῇ ἐλπίδι, ἐν δυνάμει πνεύματος ἁγίου.",
+        "VUL": "Deus autem spei repleat vos omni gaudio, et pace in credendo : ut abundetis in spe, et virtute Spiritus Sancti.",
+        "SYN": "Бог же надежды да исполнит вас всякой радости и мира в вере, дабы вы, силою Духа Святаго, обогатились надеждою.",
+        "NEO": "Que le Dieu de l’espérance vous remplisse de toute joie et de toute paix dans la foi, afin que, par la vertu de l’Esprit-Saint, vous abondiez en espérance !",
+        "NAB": "May the God of hope fill you with all joy and peace in believing, so that you may abound in hope by the power of the holy Spirit.",
+        "VAT_ES": "Que el Dios de la esperanza los llene de alegría y de paz en la fe, para que la esperanza sobreabunde en ustedes por obra del Espíritu Santo.",
+        "CEI": "Non vi scriviamo in maniera diversa da quello che potete leggere o comprendere; spero che comprenderete sino alla fine,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "¶Πέπεισμαι δέ, ἀδελφοί μου, καὶ αὐτὸς ἐγὼ περὶ ὑμῶν, ὅτι καὶ αὐτοὶ μεστοί ἐστε ἀγαθωσύνης, πεπληρωμένοι πάσης γνώσεως, δυνάμενοι καὶ ἄλλους νουθετεῖν.",
+        "VUL": "Certus sum autem fratres mei et ego ipse de vobis, quoniam et ipsi pleni estis dilectione, repleti omni scientia, ita ut possitis alterutrum monere.",
+        "SYN": "И сам я уверен о вас, братия мои, что и вы полны благости, исполнены всякого познания и можете наставлять друг друга;",
+        "NEO": "Moi aussi, mes frères, j’ai de vous cette persuasion que vous êtes de vous-mêmes pleins de bons sentiments, remplis de toute connaissance, et capables de vous avertir les uns les autres.",
+        "NAB": "I myself am convinced about you, my brothers, that you yourselves are full of goodness, filled with all knowledge, and able to admonish one another.",
+        "VAT_ES": "Por mi parte, hermanos, estoy convencido de que ustedes están llenos de buenas disposiciones y colmados del don de la ciencia, y también de que son capaces de aconsejarse mutuamente.",
+        "CEI": "come ci avete già compresi in parte, che noi siamo il vostro vanto, come voi sarete il nostro, nel giorno del Signore nostro Gesù."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Τολμηρότερον δὲ ἔγραψα ὑμῖν, ἀδελφοί, ἀπὸ μέρους, ὡς ἐπαναμιμνῄσκων ὑμᾶς, διὰ τὴν χάριν τὴν δοθεῖσάν μοι ὑπὸ τοῦ θεοῦ,",
+        "VUL": "Audacius autem scripsi vobis fratres ex parte, tamquam in memoriam vos reducens : propter gratiam, quæ data est mihi a Deo,",
+        "SYN": "но писал вам, братия, с некоторою смелостью, отчасти как бы в напоминание вам, по данной мне от Бога благодати",
+        "NEO": "Cependant je vous ai écrit plus librement, comme pour raviver en partie vos souvenirs, — à cause de la grâce que Dieu m’a faite",
+        "NAB": "But I have written to you rather boldly in some respects to remind you, because of the grace given me by God",
+        "VAT_ES": "Sin embargo, les he escrito, en algunos pasajes con una cierta audacia, para recordarles lo que ya saben, correspondiendo así a la gracia que Dios me ha dado:",
+        "CEI": "Con questa convinzione avevo deciso in un primo tempo di venire da voi, perchè riceveste una seconda grazia,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "εἰς τὸ εἶναί με λειτουργὸν Ἰησοῦ χριστοῦ εἰς τὰ ἔθνη, ἱερουργοῦντα τὸ εὐαγγέλιον τοῦ θεοῦ, ἵνα γένηται ἡ προσφορὰ τῶν ἐθνῶν εὐπρόσδεκτος, ἡγιασμένη ἐν πνεύματι ἁγίῳ.",
+        "VUL": "ut sim minister Christi Jesu in gentibus : sanctificans Evangelium Dei, ut fiat oblatio gentium accepta, et sanctificata in Spiritu Sancto.",
+        "SYN": "быть служителем Иисуса Христа у язычников и _совершать_ священнодействие благовествования Божия, дабы сие приношение язычников, будучи освящено Духом Святым, было благоприятно _Богу._",
+        "NEO": "d’être ministre de Jésus-Christ, pour les Gentils, — en m’acquittant du divin service de l’Évangile de Dieu, afin que l’offrande des Gentils soit agréée, étant sanctifiée par le Saint-Esprit.",
+        "NAB": "to be a minister of Christ Jesus to the Gentiles in performing the priestly service of the gospel of God, so that the offering up of the Gentiles may be acceptable, sanctified by the holy Spirit.",
+        "VAT_ES": "la de ser ministro de Jesucristo entre los paganos, ejerciendo el oficio sagrado de anunciar la Buena Noticia de Dios, a fin de que los paganos lleguen a ser una ofrenda agradable a Dios, santificada por el Espíritu Santo.",
+        "CEI": "e da voi passare in Macedonia, per ritornare nuovamente dalla Macedonia in mezzo a voi ed avere da voi il commiato per la Giudea."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Ἔχω οὖν καύχησιν ἐν χριστῷ Ἰησοῦ τὰ πρὸς τὸν θεόν.",
+        "VUL": "Habeo igitur gloriam in Christo Jesu ad Deum.",
+        "SYN": "Итак я могу похвалиться в Иисусе Христе в том, что _относится_ к Богу,",
+        "NEO": "J’ai donc sujet de me glorifier en Jésus-Christ pour ce qui regarde le service de Dieu.",
+        "NAB": "In Christ Jesus, then, I have reason to boast in what pertains to God.",
+        "VAT_ES": "&iexcl;Yo tengo que gloriarme en Cristo Jesús, en lo que se refiere al servicio de Dios!",
+        "CEI": "Forse in questo progetto mi sono comportato con leggerezza? O quello che decido lo decido secondo la carne, in maniera da dire allo stesso tempo \"sì,sì\" e \"no,no,\"?"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Οὐ γὰρ τολμήσω λαλεῖν τι ὧν οὐ κατειργάσατο χριστὸς δι’ ἐμοῦ, εἰς ὑπακοὴν ἐθνῶν, λόγῳ καὶ ἔργῳ,",
+        "VUL": "Non enim audeo aliquid loqui eorum, quæ per me non efficit Christus in obedientiam gentium, verbo et factis :",
+        "SYN": "ибо не осмелюсь сказать что-нибудь такое, чего не совершил Христос через меня, в покорении язычников _вере,_ словом и делом,",
+        "NEO": "Car je n’oserais pas parler de choses que le Christ n’aurait pas faites par mon ministère pour amener les païens à obéir à l’Évangile*, par la parole et par l’action,",
+        "NAB": "For I will not dare to speak of anything except what Christ has accomplished through me to lead the Gentiles to obedience by word and deed,",
+        "VAT_ES": "Porque no me atrevería a hablar sino de aquello que hizo Cristo por mi intermedio, para conducir a los paganos a la obediencia, mediante la palabra y la acción,",
+        "CEI": "Dio è testimone che la nostra parola verso di voi non è \"sì\" e \"no\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "ἐν δυνάμει σημείων καὶ τεράτων, ἐν δυνάμει πνεύματος θεοῦ· ὥστε με ἀπὸ Ἱερουσαλὴμ καὶ κύκλῳ μέχρι τοῦ Ἰλλυρικοῦ πεπληρωκέναι τὸ εὐαγγέλιον τοῦ χριστοῦ·",
+        "VUL": "in virtute signorum, et prodigiorum, in virtute Spiritus Sancti : ita ut ab Jerusalem per circuitum usque ad Illyricum repleverim Evangelium Christi.",
+        "SYN": "силою знамений и чудес, силою Духа Божия, так что благовествование Христово распространено мною от Иерусалима и окрестности до Иллирика.",
+        "NEO": "par la vertu des miracles et des prodiges, par la puissance de l’Esprit-Saint* : si bien que, depuis Jérusalem et les pays voisins jusqu’à l’Illyrie, j’ai porté partout l’Évangile du Christ+ 15:19 Act. ix, 26 sv.; Act. xxvi, 20 ; Act. xx, 1-3.*,",
+        "NAB": "by the power of signs and wonders, by the power of the Spirit (of God), so that from Jerusalem all the way around to Illyricum I have finished preaching the gospel of Christ.",
+        "VAT_ES": "por el poder de signos y prodigios y por la fuerza del Espíritu Santo. Desde Jerusalén y sus alrededores hasta Iliria, he llevado a su pleno cumplimiento la Buena Noticia de Cristo,",
+        "CEI": "Il Figlio di Dio, Gesù Cristo che abbiamo predicato tra voi, io, Silvano e Timoteo, non fu \"sì\" e \"no\", ma in lui c'è stato il \"sì\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "οὕτως δὲ φιλοτιμούμενον εὐαγγελίζεσθαι, οὐχ ὅπου ὠνομάσθη χριστός, ἵνα μὴ ἐπ’ ἀλλότριον θεμέλιον οἰκοδομῶ·",
+        "VUL": "Sic autem prædicavi Evangelium hoc, non ubi nominatus est Christus, ne super alienum fundamentum ædificarem :",
+        "SYN": "Притом я старался благовествовать не там, где _уже_ было известно имя Христово, дабы не созидать на чужом основании,",
+        "NEO": "mettant toutefois mon honneur à prêcher l’Évangile là où le Christ n’avait pas encore été nommé, afin de ne pas bâtir sur le fondement qu’un autre aurait posé+ 15:20 Mettant mon honneur. La Vulgate, qui rend très bien ce mot II Cor. v, 9 ; I Thess. iv, 11, l’omet ici.*,",
+        "NAB": "Thus I aspire to proclaim the gospel not where Christ has already been named, so that I do not build on another's foundation,",
+        "VAT_ES": "haciendo cuestión de honor no predicar la Buena Noticia allí donde el nombre de Cristo ya había sido invocado, para no edificar sobre un fundamento puesto por otros.",
+        "CEI": "E in realtà tutte le promesse di Dio in lui sono divenute \"sì\". Per questo sempre attraverso lui sale a Dio il nostro Amen per la sua gloria."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "ἀλλά, καθὼς γέγραπται, Οἷς οὐκ ἀνηγγέλη περὶ αὐτοῦ, ὄψονται· καὶ οἳ οὐκ ἀκηκόασιν συνήσουσιν.",
+        "VUL": "sed sicut scriptum est : Quibus non est annuntiatum de eo, videbunt : et qui non audierunt, intelligent.",
+        "SYN": "но как написано: не имевшие о Нем известия увидят, и не слышавшие узнают.",
+        "NEO": "mais selon qu’il est écrit : « Ceux à qui il n’avait pas été annoncé le verront, et ceux qui n’en avaient pas entendu parler le connaîtront+ 15:21 Is. lii, 15.*. »",
+        "NAB": "but as it is written: \"Those who have never been told of him shall see, and those who have never heard of him shall understand.\"",
+        "VAT_ES": "Así dice la Escritura: \"Lo verán aquellos a los que no se les había anunciado y comprenderán aquellos que no habían oído hablar de él\".",
+        "CEI": "È Dio stesso che ci conferma, insieme a voi, in Cristo, e ci ha conferito l'unzione,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "¶Διὸ καὶ ἐνεκοπτόμην τὰ πολλὰ τοῦ ἐλθεῖν πρὸς ὑμᾶς·",
+        "VUL": "Propter quod et impediebar plurimum venire ad vos, et prohibitus sum usque adhuc.",
+        "SYN": "Сие-то много раз и препятствовало мне придти к вам.",
+        "NEO": "C’est ce qui m’a souvent empêché d’aller chez vous+ 15:22 Chez vous. La Vulgate ajoute, \\+qt et je ne l’ai pu faire jusqu’à cette heure\\+qt*. Ces mots manquent dans tous les manuscrits grecs, dans toutes les versions anciennes, et dans plusieurs manuscrits même de la Vulgate.*.",
+        "NAB": "That is why I have so often been prevented from coming to you.",
+        "VAT_ES": "Por eso en todo este tiempo no he podido ir a verlos.",
+        "CEI": "ci ha impresso il sigillo e ci ha dato la caparra dello Spirito Santo nei nostri cuori."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "νυνὶ δὲ μηκέτι τόπον ἔχων ἐν τοῖς κλίμασιν τούτοις, ἐπιποθίαν δὲ ἔχων τοῦ ἐλθεῖν πρὸς ὑμᾶς ἀπὸ πολλῶν ἐτῶν,",
+        "VUL": "Nunc vero ulterius locum non habens in his regionibus, cupiditatem autem habens veniendi ad vos ex multis jam præcedentibus annis :",
+        "SYN": "Ныне же, не имея _такого_ места в сих странах, а с давних лет имея желание придти к вам,",
+        "NEO": "Mais maintenant n’ayant plus rien qui me retienne dans ces contrées, et ayant depuis plusieurs années le désir d’aller vers vous,",
+        "NAB": "But now, since I no longer have any opportunity in these regions and since I have desired to come to you for many years,",
+        "VAT_ES": "Pero como ya he terminado mi trabajo en esas regiones y desde hace varios años tengo un gran deseo de visitarlos,",
+        "CEI": "Io chiamo Dio a testimone sulla mia vita, che solo per risparmiarvi non sono più venuto a Corinto."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "ὡς ἐὰν πορεύωμαι εἰς τὴν Σπανίαν, ἐλεύσομαι πρὸς ὑμᾶς· ἐλπίζω γὰρ διαπορευόμενος θεάσασθαι ὑμᾶς, καὶ ὑφ’ ὑμῶν προπεμφθῆναι ἐκεῖ, ἐὰν ὑμῶν πρῶτον ἀπὸ μέρους ἐμπλησθῶ.",
+        "VUL": "cum in Hispaniam proficisci cpero, spero quod præteriens videam vos, et a vobis deducar illuc, si vobis primum ex parte fruitus fuero.",
+        "SYN": "как только предприму путь в Испанию, приду к вам. Ибо надеюсь, что, проходя, увижусь с вами и что вы проводите меня туда, как скоро наслажусь _общением_ с вами, хотя отчасти.",
+        "NEO": "j’espère vous voir en passant, quand je me rendrai en Espagne, et y être accompagné par vous, après que j’aurai satisfait, en partie du moins*, mon désir de me trouver parmi vous.",
+        "NAB": "I hope to see you in passing as I go to Spain and to be sent on my way there by you, after I have enjoyed being with you for a time.",
+        "VAT_ES": "espero verlos de paso cuando vaya a España, y que me ayuden a proseguir mi viaje a ese país, una vez que haya disfrutado, aunque sea un poco, de la compañía de ustedes.",
+        "CEI": "Noi non intendiamo far da padroni sulla vostra fede; siamo invece i collaboratori della vostra gioia, perchè nella fede voi siete già saldi."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Νυνὶ δὲ πορεύομαι εἰς Ἱερουσαλήμ, διακονῶν τοῖς ἁγίοις.",
+        "VUL": "Nunc igitur proficiscar in Jerusalem ministrare sanctis.",
+        "SYN": "А теперь я иду в Иерусалим, чтобы послужить святым,",
+        "NEO": "Présentement je vais à Jérusalem, pour venir en aide aux saints.",
+        "NAB": "Now, however, I am going to Jerusalem to minister to the holy ones.",
+        "VAT_ES": "Pero ahora, voy a Jerusalén para llevar una ayuda los santos de allí."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Εὐδόκησαν γὰρ Μακεδονία καὶ Ἀχαΐα κοινωνίαν τινὰ ποιήσασθαι εἰς τοὺς πτωχοὺς τῶν ἁγίων τῶν ἐν Ἱερουσαλήμ.",
+        "VUL": "Probaverunt enim Macedonia et Achaia collationem aliquam facere in pauperes sanctorum, qui sunt in Jerusalem.",
+        "SYN": "ибо Македония и Ахаия усердствуют некоторым подаянием для бедных между святыми в Иерусалиме.",
+        "NEO": "Car la Macédoine et l’Achaïe ont bien voulu faire une collecte en faveur des saints de Jérusalem qui sont dans la pauvreté.",
+        "NAB": "For Macedonia and Achaia have decided to make some contribution for the poor among the holy ones in Jerusalem;",
+        "VAT_ES": "Porque Macedonia y Acaya resolvieron hacer una colecta en favor de los santos de Jerusalén que están necesitados."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Εὐδόκησαν γάρ, καὶ ὀφειλέται αὐτῶν εἰσιν. Εἰ γὰρ τοῖς πνευματικοῖς αὐτῶν ἐκοινώνησαν τὰ ἔθνη, ὀφείλουσιν καὶ ἐν τοῖς σαρκικοῖς λειτουργῆσαι αὐτοῖς.",
+        "VUL": "Placuit enim eis : et debitores sunt eorum. Nam si spiritualium eorum participes facti sunt gentiles, debent et in carnalibus ministrare illis.",
+        "SYN": "Усердствуют, да и должники они перед ними. Ибо если язычники сделались участниками в их духовном, то должны и им послужить в телесном.",
+        "NEO": "Elles l’ont bien voulu ; aussi bien elles le leur devaient ; car si les Gentils ont eu part à leurs biens spirituels, ils doivent à leur tour les assister de leurs biens temporels+ 15:27 Les assister, litt. \\+qt les servir religieusement\\+qt* de leurs biens temporels, comme on fait une offrande à Dieu.*.",
+        "NAB": "they decided to do it, and in fact they are indebted to them, for if the Gentiles have come to share in their spiritual blessings, they ought also to serve them in material blessings.",
+        "VAT_ES": "Lo hicieron espontáneamente, aunque en realidad, estaban en deuda con ellos. Porque si los paganos participaron de sus bienes espirituales, deben a su vez retribuirles con bienes materiales."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Τοῦτο οὖν ἐπιτελέσας, καὶ σφραγισάμενος αὐτοῖς τὸν καρπὸν τοῦτον, ἀπελεύσομαι δι’ ὑμῶν εἰς τὴν Σπανίαν.",
+        "VUL": "Hoc igitur cum consummavero, et assignavero eis fructum hunc, per vos proficiscar in Hispaniam.",
+        "SYN": "Исполнив это и верно доставив им сей плод _усердия,_ я отправлюсь через ваши _места_ в Испанию,",
+        "NEO": "Dès que j’aurai terminé cette affaire et que j’aurai consigné ce don+ 15:28 Ce don, litt. ce \\+qt fruit\\+qt* de leur charité, ou de la collecte.* entre leurs mains, je partirai pour l’Espagne et passerai chez vous.",
+        "NAB": "So when I have completed this and safely handed over this contribution to them, I shall set out by way of you to Spain;",
+        "VAT_ES": "Y una vez que haya terminado esa misión y entregado oficialmente la ofrenda recogida, iré a España, pasando por allí."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Οἶδα δὲ ὅτι ἐρχόμενος πρὸς ὑμᾶς ἐν πληρώματι εὐλογίας τοῦ εὐαγγελίου τοῦ χριστοῦ ἐλεύσομαι.",
+        "VUL": "Scio autem quoniam veniens ad vos, in abundantia benedictionis Evangelii Christi veniam.",
+        "SYN": "и уверен, что когда приду к вам, то приду с полным благословением благовествования Христова.",
+        "NEO": "Or je sais qu’en allant chez vous, j’y viendrai avec une abondante bénédiction du Christ.",
+        "NAB": "and I know that in coming to you I shall come in the fullness of Christ's blessing.",
+        "VAT_ES": "Y estoy seguro de que llegaré hasta ustedes con la plenitud de las bendiciones de Cristo."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "¶Παρακαλῶ δὲ ὑμᾶς, ἀδελφοί, διὰ τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ, καὶ διὰ τῆς ἀγάπης τοῦ πνεύματος, συναγωνίσασθαί μοι ἐν ταῖς προσευχαῖς ὑπὲρ ἐμοῦ πρὸς τὸν θεόν·",
+        "VUL": "Obsecro ergo vos fratres per Dominum nostrum Jesum Christum, et per caritatem Sancti Spiritus, ut adjuvetis me in orationibus vestris pro me ad Deum,",
+        "SYN": "Между тем умоляю вас, братия, Господом нашим Иисусом Христом и любовью Духа, подвизаться со мною в молитвах за меня к Богу,",
+        "NEO": "Je vous exhorte, mes frères, par Notre-Seigneur Jésus-Christ et par la charité du Saint-Esprit, à combattre avec moi, en adressant pour moi des prières à Dieu+ 15:30 Paul avait le pressentiment des persécutions qui l’attendaient à Jérusalem (Act. xx, 22 sv. ; xxi, 10 sv.). — Combattre avec moi, comp. Col. iv, 12. Vulg. \\+qt de m’aider\\+qt*.*,",
+        "NAB": "I urge you, (brothers,) by our Lord Jesus Christ and by the love of the Spirit, to join me in the struggle by your prayers to God on my behalf,",
+        "VAT_ES": "Les ruego, hermanos, en nombre de nuestro Señor Jesucristo y por el amor del Espíritu Santo, que luchen junto conmigo, intercediendo ante Dios por mí,"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "ἵνα ῥυσθῶ ἀπὸ τῶν ἀπειθούντων ἐν τῇ Ἰουδαίᾳ, καὶ ἵνα ἡ διακονία μου ἡ εἰς Ἱερουσαλὴμ εὐπρόσδεκτος γένηται τοῖς ἁγίοις·",
+        "VUL": "ut liberer ab infidelibus, qui sunt in Judæa, et obsequii mei oblatio accepta fiat in Jerusalem sanctis,",
+        "SYN": "чтобы избавиться мне от неверующих в Иудее и чтобы служение мое для Иерусалима было благоприятно святым,",
+        "NEO": "afin que j’échappe aux incrédules qui sont en Judée, et que l’offrande que je porte à Jérusalem soit agréable aux saints,",
+        "NAB": "that I may be delivered from the disobedient in Judea, and that my ministry for Jerusalem may be acceptable to the holy ones,",
+        "VAT_ES": "a fin de que, en Judea, no caiga en manos de los incrédulos, y los santos de Jerusalén reciban con agrado la ofrenda que les llevo."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "ἵνα ἐν χαρᾷ ἔλθω πρὸς ὑμᾶς διὰ θελήματος θεοῦ, καὶ συναναπαύσωμαι ὑμῖν.",
+        "VUL": "ut veniam ad vos in gaudio per voluntatem Dei, et refrigerer vobiscum.",
+        "SYN": "дабы мне в радости, если Богу угодно, придти к вам и успокоиться с вами.",
+        "NEO": "en sorte que j’arrive chez vous dans la joie, si c’est la volonté de Dieu, et que je goûte quelque repos au milieu de vous.",
+        "NAB": "so that I may come to you with joy by the will of God and be refreshed together with you.",
+        "VAT_ES": "Así tendré la alegría de ir a verlos, y si Dios quiere, podré descansar un poco entre ustedes."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ θεὸς τῆς εἰρήνης μετὰ πάντων ὑμῶν. Ἀμήν.",
+        "VUL": "Deus autem pacis sit cum omnibus vobis. Amen.",
+        "SYN": "Бог же мира да будет со всеми вами, аминь.",
+        "NEO": "Que le Dieu de paix soit avec vous tous ! Amen !+ 15:33 Comp. I Cor. xiv, 33 ; II Cor. xiii, 11 ; Phil. iv, 9 ; I Thess. v, 23.*",
+        "NAB": "The God of peace be with all of you. Amen.",
+        "VAT_ES": "Que el Dios de la paz esté con todos ustedes. Amén."
+      }
+    }
+  }
+}

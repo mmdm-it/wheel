@@ -1,0 +1,213 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "CANT_003",
+  "book_key": "CANT",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "עַל מִשְׁכָּבִ/י֙ בַּ/לֵּיל֔וֹת בִּקַּ֕שְׁתִּי אֵ֥ת שֶׁ/אָהֲבָ֖ה נַפְשִׁ֑/י בִּקַּשְׁתִּ֖י/ו וְ/לֹ֥א מְצָאתִֽי/ו׃",
+        "LXX": "ἐπὶ κοίτην μου ἐν νυξὶν ἐζήτησα ὃν ἠγάπησεν ἡ ψυχή μου· ἐζήτησα αὐτὸν καὶ οὐχ εὗρον αὐτόν, ἐκάλεσα αὐτὸν καὶ οὐχ ὑπήκουσέν μου.",
+        "VUL": "[In lectulo meo, per noctes,/ quæsivi quem diligit anima mea :/ quæsivi illum, et non inveni./",
+        "SYN": "На ложе моем ночью искала я того, которого любит душа моя, искала его и не нашла его.",
+        "NEO": "Sur ma couche, pendant la nuit, j’ai cherché celui que mon cœur aime ; je l’ai cherché et je ne l’ai pas trouvé.",
+        "NAB": "B On my bed at night I sought him whom my heart loves - I sought him but I did not find him.",
+        "VAT_ES": "En mi lecho, durante la noche, busqué al amado de mi alma. &iexcl;Lo busqué y no lo encontré!",
+        "CEI": "Sul mio letto, lungo la notte, ho cercato l'amato del mio cuore; l'ho cercato, ma non l'ho trovato."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אָק֨וּמָה נָּ֜א וַ/אֲסוֹבְבָ֣ה בָ/עִ֗יר בַּ/שְּׁוָקִים֙ וּ/בָ֣/רְחֹב֔וֹת אֲבַקְשָׁ֕ה אֵ֥ת שֶׁ/אָהֲבָ֖ה נַפְשִׁ֑/י בִּקַּשְׁתִּ֖י/ו וְ/לֹ֥א מְצָאתִֽי/ו׃",
+        "LXX": "ἀναστήσομαι δὴ καὶ κυκλώσω ἐν τῇ πόλει, ἐν ταῖς ἀγοραῖς καὶ ἐν ταῖς πλατείαις, καὶ ζητήσω ὃν ἠγάπησεν ἡ ψυχή μου· ἐζήτησα αὐτὸν καὶ οὐχ εὗρον αὐτόν.",
+        "VUL": "Surgam, et circuibo civitatem :/ per vicos et plateas/ quæram quem diligit anima mea :/ quæsivi illum, et non inveni./",
+        "SYN": "Встану же я, пойду по городу, по улицам и площадям, и буду искать того, которого любит душа моя; искала я его и не нашла его.",
+        "NEO": "« Levons-nous, me suis-je dit, parcourons la ville, les rues et les places, cherchons celui que mon cœur aime. » Je l’ai cherché et je ne l’ai pas trouvé.",
+        "NAB": "I will rise then and go about the city; in the streets and crossings I will seek Him whom my heart loves. I sought him but I did not find him.",
+        "VAT_ES": "Me levantaré y recorreré la ciudad; por las calles y las plazas, buscaré al amado de mi alma. &iexcl;Lo busqué y no lo encontré!",
+        "CEI": "\"Mi alzerò e farò il giro della città; per le strade e per le piazze; voglio cercare l'amato del mio cuore\". L'ho cercato, ma non l'ho trovato."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "מְצָא֨וּ/נִי֙ הַ/שֹּׁ֣מְרִ֔ים הַ/סֹּבְבִ֖ים בָּ/עִ֑יר אֵ֛ת שֶׁ/אָהֲבָ֥ה נַפְשִׁ֖/י רְאִיתֶֽם׃",
+        "LXX": "εὕροσάν με οἱ τηροῦντες, οἱ κυκλοῦντες ἐν τῇ πόλει Μὴ ὃν ἠγάπησεν ἡ ψυχή μου εἴδετε;",
+        "VUL": "Invenerunt me vigiles qui custodiunt civitatem :/ Num quem diligit anima mea vidistis ?/",
+        "SYN": "Встретили меня стражи, обходящие город: \"не видали ли вы того, которого любит душа моя?\"",
+        "NEO": "Les gardes m’ont rencontrée, ceux qui font la ronde dans la ville : « Avez-vous vu celui que mon cœur aime ? »",
+        "NAB": "The watchmen came upon me as they made their rounds of the city: Have you seen him whom my heart loves?",
+        "VAT_ES": "Me encontraron los centinelas que hacen la ronda por la ciudad: «&iquest;Han visto al amado de mi alma?».",
+        "CEI": "Mi hanno incontrato le guardie che fanno la ronda: \"Avete visto l'amato del mio cuore?\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּ/מְעַט֙ שֶׁ/עָבַ֣רְתִּי מֵ/הֶ֔ם עַ֣ד שֶֽׁ/מָּצָ֔אתִי אֵ֥ת שֶׁ/אָהֲבָ֖ה נַפְשִׁ֑/י אֲחַזְתִּי/ו֙ וְ/לֹ֣א אַרְפֶּ֔/נּוּ עַד שֶׁ֤/הֲבֵיאתִי/ו֙ אֶל בֵּ֣ית אִמִּ֔/י וְ/אֶל חֶ֖דֶר הוֹרָתִֽ/י׃",
+        "LXX": "ὡς μικρὸν ὅτε παρῆλθον ἀπ’ αὐτῶν, ἕως οὗ εὗρον ὃν ἠγάπησεν ἡ ψυχή μου· ἐκράτησα αὐτὸν καὶ οὐκ ἀφῆκα αὐτόν, ἕως οὗ εἰσήγαγον αὐτὸν εἰς οἶκον μητρός μου καὶ εἰς ταμεῖον τῆς συλλαβούσης με.",
+        "VUL": "Paululum cum pertransissem eos,/ inveni quem diligit anima mea :/ tenui eum, nec dimittam,/ donec introducam illum in domum matris meæ,/ et in cubiculum genetricis meæ./",
+        "SYN": "Но едва я отошла от них, как нашла того, которого любит душа моя, ухватилась за него, и не отпустила его, доколе не привела его в дом матери моей и во внутренние комнаты родительницы моей.",
+        "NEO": "A peine les avais-je dépassés, que j’ai trouvé celui que mon cœur aime. Je l’ai saisi et je ne le lâcherai pas, jusqu’à ce que je l’aie introduit dans la maison de ma mère, et dans la chambre de celle qui m’a donné le jour.",
+        "NAB": "I had hardly left them when I found him whom my heart loves. I took hold of him and would not let him go till I should bring him to the home of my mother, to the room of my parent.",
+        "VAT_ES": "Apenas los había pasado, encontré al amado de mi alma. Lo agarré, y no lo soltaré hasta que lo haya hecho entrar en la casa de mi madre, en la habitación de la que me engendró.",
+        "CEI": "Da poco le avevo oltrepassate, quando trovai l'amato del mio cuore. Lo strinsi fortemente e non lo lascerò finché non l'abbia condotto in casa di mia madre, nella stanza della mia genitrice."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הִשְׁבַּ֨עְתִּי אֶתְ/כֶ֜ם בְּנ֤וֹת יְרוּשָׁלִַ֨ם֙ בִּ/צְבָא֔וֹת א֖וֹ בְּ/אַיְל֣וֹת הַ/שָּׂדֶ֑ה אִם תָּעִ֧ירוּ וְֽ/אִם תְּעֽוֹרְר֛וּ אֶת הָ/אַהֲבָ֖ה עַ֥ד שֶׁ/תֶּחְפָּֽץ׃",
+        "LXX": "Ὥρκισα ὑμᾶς, θυγατέρες Ἰερουσαλήμ, ἐν ταῖς δυνάμεσιν καὶ ἐν ταῖς ἰσχύσεσιν τοῦ ἀγροῦ, ἐὰν ἐγείρητε καὶ ἐξεγείρητε τὴν ἀγάπην ἕως ἂν θελήσῃ.",
+        "VUL": "<Sponsus>Adjuro vos, filiæ Jerusalem,/ per capreas cervosque camporum,/ ne suscitetis, neque evigilare faciatis dilectam,/ donec ipsa velit./",
+        "SYN": "Заклинаю вас, дщери Иерусалимские, сернами или полевыми ланями: не будите и не тревожьте возлюбленной, доколе ей угодно.",
+        "NEO": "Je vous en conjure, filles de Jérusalem, par les gazelles et les biches des champs, n’éveillez pas, ne réveillez pas la bien-aimée, avant qu’elle le veuille.",
+        "NAB": "I adjure you, daughters of Jerusalem, by the gazelles and hinds of the field, Do not arouse, do not stir up love before its own time.",
+        "VAT_ES": "&iexcl;Júrenme, hijas de Jerusalén, por las gacelas y las ciervas del campo, que no despertarán ni desvelarán a mi amor, hasta que ella quiera.",
+        "CEI": "Io vi scongiuro, figlie di Gerusalemme, per le gazzelle e per le cerve dei campi: non destate, non scuotete dal sonno l'amata finché essa non lo voglia."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "מִ֣י זֹ֗את עֹלָה֙ מִן הַ/מִּדְבָּ֔ר כְּ/תִֽימֲר֖וֹת עָשָׁ֑ן מְקֻטֶּ֤רֶת מוֹר֙ וּ/לְבוֹנָ֔ה מִ/כֹּ֖ל אַבְקַ֥ת רוֹכֵֽל׃",
+        "LXX": "Τίς αὕτη ἡ ἀναβαίνουσα ἀπὸ τῆς ἐρήμου, ὡς στελέχη καπνοῦ τεθυμιαμένη σμύρναν καὶ λίβανον ἀπὸ πάντων κονιορτῶν μυρεψοῦ;",
+        "VUL": "<Chorus>Quæ est ista quæ ascendit per desertum/ sicut virgula fumi ex aromatibus myrrhæ,/ et thuris, et universi pulveris pigmentarii ?/",
+        "SYN": "Кто эта, восходящая от пустыни как бы столбы дыма, окуриваемая миррою и фимиамом, всякими порошками мироварника?",
+        "NEO": "Quelle est celle-ci qui monte du désert, comme une colonne de fumée, exhalant la myrrhe et l’encens, tous les aromates des marchands ? —",
+        "NAB": "D What is this coming up from the desert, like a column of smoke Laden with myrrh, with frankincense, and with the perfume of every exotic dust?",
+        "VAT_ES": "&iquest;Qué es eso que sube del desierto, como una columna de humo, perfumada de mirra y de incienso y de todos los perfumes exóticos?",
+        "CEI": "Che cos'è che sale dal deserto come una colonna di fumo, esalando profumo di mirra e d'incenso e d'ogni polvere aromatica?"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "הִנֵּ֗ה מִטָּת/וֹ֙ שֶׁ/לִּ/שְׁלֹמֹ֔ה שִׁשִּׁ֥ים גִּבֹּרִ֖ים סָבִ֣יב לָ֑/הּ מִ/גִּבֹּרֵ֖י יִשְׂרָאֵֽל׃",
+        "LXX": "ἰδοὺ ἡ κλίνη τοῦ Σαλωμών, ἑξήκοντα δυνατοὶ κύκλῳ αὐτῆς ἀπὸ δυνατῶν Ἰσραήλ·",
+        "VUL": "En lectulum Salomonis sexaginta fortes ambiunt/ ex fortissimis Israël,/",
+        "SYN": "Вот одр его - Соломона: шестьдесят сильных вокруг него, из сильных Израилевых.",
+        "NEO": "Voici le palanquin de Salomon ; autour de lui, soixante braves, d’entre les vaillants d’Israël ;",
+        "NAB": "Ah, it is the litter of Solomon; sixty valiant men surround it, of the valiant men of Israel:",
+        "VAT_ES": "&iexcl;Es la litera de Salomón! La rodean setenta guerreros, de los más valientes de Israel:",
+        "CEI": "Ecco, la lettiga di Salomone: sessanta prodi le stanno intorno, tra i più valorosi d'Israele."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כֻּלָּ/ם֙ אֲחֻ֣זֵי חֶ֔רֶב מְלֻמְּדֵ֖י מִלְחָמָ֑ה אִ֤ישׁ חַרְבּ/וֹ֙ עַל יְרֵכ֔/וֹ מִ/פַּ֖חַד בַּ/לֵּילּֽוֹת׃",
+        "LXX": "πάντες κατέχοντες ῥομφαίαν, δεδιδαγμένοι πόλεμον· ἀνὴρ ῥομφαία αὐτοῦ ἐπὶ μηρὸν αὐτοῦ ἀπὸ θάμβους ἐν νυξίν.",
+        "VUL": "omnes tenentes gladios, et ad bella doctissimi :/ uniuscujusque ensis super femur suum/ propter timores nocturnos./",
+        "SYN": "Все они держат по мечу, опытны в бою; у каждого меч при бедре его ради страха ночного.",
+        "NEO": "tous sont armés de l’épée, exercés au combat ; chacun porte son épée sur sa hanche, pour écarter les alarmes de la nuit.",
+        "NAB": "All of them expert with the sword, skilled in battle, Each with his sword at his side against danger in the watches of the night.",
+        "VAT_ES": "todos ellos provistos de espada, adiestrados para el combate, cada uno con su espada a la cintura por temor a los peligros de la noche.",
+        "CEI": "Tutti sanno maneggiare la spada, sono esperti nella guerra; ognuno porta la spada al fianco contro i pericoli della notte."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אַפִּרְי֗וֹן עָ֤שָׂה ל/וֹ֙ הַ/מֶּ֣לֶךְ שְׁלֹמֹ֔ה מֵ/עֲצֵ֖י הַ/לְּבָנֽוֹן׃",
+        "LXX": "φορεῖον ἐποίησεν ἑαυτῷ ὁ βασιλεὺς Σαλωμὼν ⸆ ἀπὸ ξύλων τοῦ Λιβάνου·",
+        "VUL": "Ferculum fecit sibi rex Salomon/ de lignis Libani ;/",
+        "SYN": "Носильный одр сделал себе царь Соломон из дерев Ливанских;",
+        "NEO": "Le roi Salomon s’est fait une litière des bois du Liban.",
+        "NAB": "King Solomon made himself a carriage of wood from Lebanon.",
+        "VAT_ES": "El rey Salomón se hizo una litera con maderas del Líbano.",
+        "CEI": "Un baldacchino s'è fatto il re Salomone, con legno del Libano."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "עַמּוּדָי/ו֙ עָ֣שָׂה כֶ֔סֶף רְפִידָת֣/וֹ זָהָ֔ב מֶרְכָּב֖/וֹ אַרְגָּמָ֑ן תּוֹכ/וֹ֙ רָצ֣וּף אַהֲבָ֔ה מִ/בְּנ֖וֹת יְרוּשָׁלִָֽם׃",
+        "LXX": "στύλους αὐτοῦ ἐποίησεν ἀργύριον, καὶ ἀνάκλιτον αὐτοῦ χρύσεον· ἐπίβασις αὐτοῦ πορφυρᾶ, ἐντὸς αὐτοῦ λιθόστρωτον, ἀγάπην ἀπὸ θυγατέρων Ἰερουσαλήμ.",
+        "VUL": "columnas ejus fecit argenteas,/ reclinatorium aureum, ascensum purpureum ;/ media caritate constravit,/ propter filias Jerusalem./",
+        "SYN": "столпцы его сделал из серебра, локотники его из золота, седалище его из пурпуровой ткани; внутренность его убрана с любовью дщерями Иерусалимскими.",
+        "NEO": "Il en a fait les colonnes d’argent, le dossier d’or, le siège de pourpre ; au milieu est une broderie, œuvre d’amour des filles de Jérusalem.",
+        "NAB": "He made its columns of silver, its roof of gold, Its seat of purple cloth, its framework inlaid with ivory.",
+        "VAT_ES": "Sus columnas las hizo de plata, su respaldo de oro, su asiento de púrpura, con el interior revestido de ébano. Hijas de Jerusalén,",
+        "CEI": "Le sue colonne le ha fatte d'argento, d'oro la sua spalliera; il suo seggio di porpora, il centro è un ricamo d'amore delle fanciulle di Gerusalemme."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "צְאֶ֧ינָה וּֽ/רְאֶ֛ינָה בְּנ֥וֹת צִיּ֖וֹן בַּ/מֶּ֣לֶךְ שְׁלֹמֹ֑ה בָּ/עֲטָרָ֗ה שֶׁ/עִטְּרָה לּ֤/וֹ אִמּ/וֹ֙ בְּ/י֣וֹם חֲתֻנָּת֔/וֹ וּ/בְ/י֖וֹם שִׂמְחַ֥ת לִבּֽ/וֹ׃",
+        "LXX": "ἐξέλθατε καὶ ἴδετε ἐν τῷ βασιλεῖ Σαλωμών, ἐν τῷ στεφάνῳ ᾧ ἐστεφάνωσεν αὐτὸν ἡ μήτηρ αὐτοῦ ἐν ἡμέρᾳ νυμφεύσεως αὐτοῦ καὶ ἐν ἡμέρᾳ εὐφροσύνης καρδίας αὐτοῦ.",
+        "VUL": "Egredimini et videte, filiæ Sion,/ regem Salomonem in diademate quo coronavit illum mater sua/ in die desponsationis illius,/ et in die lætitiæ cordis ejus.]",
+        "SYN": "Пойдите и посмотрите, дщери Сионские, на царя Соломона в венце, которым увенчала его мать его в день бракосочетания его, в день, радостный для сердца его.",
+        "NEO": "Sortez, filles de Sion, et voyez le roi Salomon, avec la couronne dont sa mère l’a couronné, le jour de ses épousailles, le jour de la joie de son cœur.",
+        "NAB": "Daughters of Jerusalem, come forth and look upon King Solomon In the crown with which his mother has crowned him on the day of his marriage, on the day of the joy of his heart.",
+        "VAT_ES": "salgan a contemplar al rey Salomón, con la corona que le ciñó su madre, el día de su boda, el día de su alegría.",
+        "CEI": "Uscite figlie di Sion, guardate il re Salomone con la corona che gli pose sua madre, nel giorno delle sue nozze, nel giorno della gioia del suo cuore."
+      }
+    }
+  }
+}

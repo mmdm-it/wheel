@@ -1,0 +1,536 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLE_007",
+  "book_key": "ECCLE",
+  "sequence": 7,
+  "chapter_in": {
+    "MT": 7,
+    "VUL": 7,
+    "LXX": 7
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "ט֥וֹב שֵׁ֖ם מִ/שֶּׁ֣מֶן ט֑וֹב וְ/י֣וֹם הַ/מָּ֔וֶת מִ/יּ֖וֹם הִוָּלְדֽ/וֹ׃",
+        "LXX": "τί περισσὸν τῷ ἀνθρώπῳ; ὅτι τίς οἶδεν ἀγαθὸν τῷ ἀνθρώπῳ ἐν τῇ ζωῇ, ἀριθμὸν ἡμερῶν ζωῆς ματαιότητος αὐτοῦ; καὶ ἐποίησεν αὐτὰ ἐν σκιᾷ· ὅτι τίς ἀπαγγελεῖ τῷ ἀνθρώπῳ τί ἔσται ὀπίσω αὐτοῦ ὑπὸ τὸν ἥλιον;",
+        "VUL": "[Quid necesse est homini majora se quærere,/ cum ignoret quid conducat sibi in vita sua,/ numero dierum peregrinationis suæ,/ et tempore quod velut umbra præterit ?/ aut quis ei poterit indicare/ quod post eum futurum sub sole sit ?/",
+        "SYN": "Доброе имя лучше дорогой масти, и день смерти - дня рождения.",
+        "NEO": "Une bonne renommée vaut mieux qu’un bon parfum, et le jour de la mort que le jour de la naissance.",
+        "NAB": "A good name is better than good ointment, and the day of death than the day of birth.",
+        "VAT_ES": "Más vale el buen nombre que un buen perfume y el día de la muerte, más que el del nacimiento.",
+        "CEI": "Un buon nome è preferibile all'unguento profumato e il giorno della morte al giorno della nascita."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "ט֞וֹב לָ/לֶ֣כֶת אֶל בֵּֽית אֵ֗בֶל מִ/לֶּ֨כֶת֙ אֶל בֵּ֣ית מִשְׁתֶּ֔ה בַּ/אֲשֶׁ֕ר ה֖וּא ס֣וֹף כָּל הָ/אָדָ֑ם וְ/הַ/חַ֖י יִתֵּ֥ן אֶל לִבּֽ/וֹ׃",
+        "LXX": "Ἀγαθὸν ὄνομα ὑπὲρ ἔλαιον ἀγαθόν, καὶ ἡμέρα τοῦ θανάτου ὑπὲρ ἡμέραν γεννήσεως.",
+        "VUL": "Melius est nomen bonum quam unguenta pretiosa,/ et dies mortis die nativitatis./",
+        "SYN": "Лучше ходить в дом плача об умершем, нежели ходить в дом пира; ибо таков конец всякого человека, и живой приложит _это_ к своему сердцу.",
+        "NEO": "Mieux vaut aller à la maison de deuil qu’aller à la maison de festin, car dans la première apparaît la fin de tout homme, et le vivant y applique son cœur.",
+        "NAB": "It is better to go to the house of mourning than to the house of feasting, For that is the end of every man, and the living should take it to heart.",
+        "VAT_ES": "Más vale ir a una casa donde hay duelo que asistir a un banquete, porque ese es el fin de todo hombre y allí reflexionan los vivientes.",
+        "CEI": "È meglio andare in una casa in pianto che andare in una casa in festa; perché quella è la fine d'ogni uomo e chi vive ci rifletterà."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "ט֥וֹב כַּ֖עַס מִ/שְּׂחֹ֑ק כִּֽי בְ/רֹ֥עַ פָּנִ֖ים יִ֥יטַב לֵֽב׃",
+        "LXX": "ἀγαθὸν πορευθῆναι εἰς οἶκον πένθους ἢ ὅτι πορευθῆναι εἰς οἶκον πότου, καθότι τοῦτο τέλος παντὸς ἀνθρώπου, καὶ ὁ ζῶν δώσει ἀγαθὸν εἰς καρδίαν αὐτοῦ.",
+        "VUL": "Melius est ire ad domum luctus/ quam ad domum convivii ;/ in illa enim finis cunctorum admonetur hominum,/ et vivens cogitat quid futurum sit./",
+        "SYN": "Сетование лучше смеха; потому что при печали лица сердце делается лучше.",
+        "NEO": "Mieux vaut la tristesse que le rire, car un visage triste fait du bien au cœur.",
+        "NAB": "Sorrow is better than laughter, because when the face is sad the heart grows wiser.",
+        "VAT_ES": "Más vale la tristeza que la risa, porque el rostro serio ayuda a pensar.",
+        "CEI": "È preferibile la mestizia al riso, perché sotto un triste aspetto il cuore è felice."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "לֵ֤ב חֲכָמִים֙ בְּ/בֵ֣ית אֵ֔בֶל וְ/לֵ֥ב כְּסִילִ֖ים בְּ/בֵ֥ית שִׂמְחָֽה׃",
+        "LXX": "ἀγαθὸν θυμὸς ὑπὲρ γέλωτα, ὅτι ἐν κακίᾳ προσώπου ἀγαθυνθήσεται·",
+        "VUL": "Melior est ira risu,/ quia per tristitiam vultus corrigitur animus delinquentis./",
+        "SYN": "Сердце мудрых - в доме плача, а сердце глупых - в доме веселья.",
+        "NEO": "Le cœur des sages est dans la maison de deuil, et le cœur des insensés dans la maison de joie.",
+        "NAB": "The heart of the wise is in the house of mourning, but the heart of fools is in the house of mirth.",
+        "VAT_ES": "El corazón del sabio está en la casa de duelo y el del necio, en el lugar de diversión.",
+        "CEI": "Il cuore dei saggi è in una casa in lutto e il cuore degli stolti in una casa in festa."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "ט֕וֹב לִ/שְׁמֹ֖עַ גַּעֲרַ֣ת חָכָ֑ם מֵ/אִ֕ישׁ שֹׁמֵ֖עַ שִׁ֥יר כְּסִילִֽים׃",
+        "LXX": "καρδία σοφῶν ἐν οἴκῳ πένθους, καὶ καρδία ἀφρόνων ἐν οἴκῳ εὐφροσύνης.",
+        "VUL": "Cor sapientium ubi tristitia est,/ et cor stultorum ubi lætitia./",
+        "SYN": "Лучше слушать обличения от мудрого, нежели слушать песни глупых;",
+        "NEO": "Mieux vaut entendre la réprimande du sage que d’entendre la chanson des insensés.",
+        "NAB": "It is better to hearken to the wise man's rebuke than to hearken to the song of fools;",
+        "VAT_ES": "Más vale escuchar el reproche de un sabio que oír el canto de los necios.",
+        "CEI": "Meglio ascoltare il rimprovero del saggio che ascoltare il canto degli stolti:"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כִּ֣י כְ/ק֤וֹל הַ/סִּירִים֙ תַּ֣חַת הַ/סִּ֔יר כֵּ֖ן שְׂחֹ֣ק הַ/כְּסִ֑יל וְ/גַם זֶ֖ה הָֽבֶל׃",
+        "LXX": "ἀγαθὸν τὸ ἀκοῦσαι ἐπιτίμησιν σοφοῦ ὑπὲρ ἄνδρα ἀκούοντα ᾆσμα ἀφρόνων.",
+        "VUL": "Melius est a sapiente corripi,/ quam stultorum adulatione decipi ;/",
+        "SYN": "потому что смех глупых то же, что треск тернового хвороста под котлом. И это - суета!",
+        "NEO": "Car semblable au pétillement des épines sous la chaudière est le rire des insensés : c’est là encore une vanité.",
+        "NAB": "For as the crackling of thorns under a pot, so is the fool's laughter.",
+        "VAT_ES": "porque como el crepitar de las espinas bajo la olla, así es la risa de los necios. Y también esto es vanidad.",
+        "CEI": "perché com'è il crepitio dei pruni sotto la pentola, tale è il riso degli stolti. Ma anche questo è vanità."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּ֥י הָ/עֹ֖שֶׁק יְהוֹלֵ֣ל חָכָ֑ם וִֽ/יאַבֵּ֥ד אֶת לֵ֖ב מַתָּנָֽה׃",
+        "LXX": "ὡς φωνὴ ἀκανθῶν ὑπὸ τὸν λέβητα, οὕτως γέλως τῶν ἀφρόνων· καί γε τοῦτο ματαιότης.",
+        "VUL": "quia sicut sonitus spinarum ardentium sub olla,/ sic risus stulti./ Sed et hoc vanitas./",
+        "SYN": "Притесняя других, мудрый делается глупым, и подарки портят сердце.",
+        "NEO": "Car l’oppression rend insensé le sage, et les présents corrompent le cœur.",
+        "NAB": "For oppression can make a fool of a wise man, and a bribe corrupts the heart.",
+        "VAT_ES": "La opresión puede enloquecer a un sabio, y los regalos pierden el corazón.",
+        "CEI": "Il mal tolto rende sciocco il saggio e i regali corrompono il cuore."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "ט֛וֹב אַחֲרִ֥ית דָּבָ֖ר מֵֽ/רֵאשִׁית֑/וֹ ט֥וֹב אֶֽרֶךְ ר֖וּחַ מִ/גְּבַהּ רֽוּחַ׃",
+        "LXX": "ὅτι ἡ συκοφαντία περιφέρει σοφὸν καὶ ἀπόλλυσι τὴν καρδίαν εὐγενείας αὐτοῦ.",
+        "VUL": "Calumnia conturbat sapientem,/ et perdet robur cordis illius./",
+        "SYN": "Конец дела лучше начала его; терпеливый лучше высокомерного.",
+        "NEO": "Mieux vaut la fin d’une chose que son commencement ; mieux vaut un esprit patient qu’un esprit hautain.",
+        "NAB": "Better is the end of speech than its beginning; better is the patient spirit than the lofty spirit.",
+        "VAT_ES": "Más vale el fin de una cosa que su comienzo y más vale ser paciente que pretender demasiado.",
+        "CEI": "Meglio la fine di una cosa che il suo principio; è meglio la pazienza della superbia."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אַל תְּבַהֵ֥ל בְּ/רֽוּחֲ/ךָ֖ לִ/כְע֑וֹס כִּ֣י כַ֔עַס בְּ/חֵ֥יק כְּסִילִ֖ים יָנֽוּחַ׃",
+        "LXX": "ἀγαθὴ ἐσχάτη λόγων ὑπὲρ ἀρχὴν αὐτοῦ, ἀγαθὸν μακρόθυμος ὑπὲρ ὑψηλὸν πνεύματι.",
+        "VUL": "Melior est finis orationis quam principium./ Melior est patiens arrogante./",
+        "SYN": "Не будь духом твоим поспешен на гнев, потому что гнев гнездится в сердце глупых.",
+        "NEO": "Ne te hâte pas dans ton esprit de t’irriter, car l’irritation repose dans le sein des insensés.",
+        "NAB": "Do not in spirit become quickly discontented, for discontent lodges in the bosom of a fool.",
+        "VAT_ES": "No te dejes llevar por el enojo, porque el enojo se alberga en el pecho de los necios.",
+        "CEI": "Non esser facile a irritarti nel tuo spirito, perché l'ira alberga in seno agli stolti."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אַל תֹּאמַר֙ מֶ֣ה הָיָ֔ה שֶׁ֤/הַ/יָּמִים֙ הָ/רִ֣אשֹׁנִ֔ים הָי֥וּ טוֹבִ֖ים מֵ/אֵ֑לֶּה כִּ֛י לֹ֥א מֵ/חָכְמָ֖ה שָׁאַ֥לְתָּ עַל זֶֽה׃",
+        "LXX": "μὴ σπεύσῃς ἐν πνεύματί σου τοῦ θυμοῦσθαι, ὅτι θυμὸς ἐν κόλπῳ ἀφρόνων ἀναπαύσεται.",
+        "VUL": "Ne sis velox ad irascendum,/ quia ira in sinu stulti requiescit./",
+        "SYN": "Не говори: \"отчего это прежние дни были лучше нынешних?\", потому что не от мудрости ты спрашиваешь об этом.",
+        "NEO": "Ne dis pas : « D’où vient que les jours anciens étaient meilleurs que ceux-ci ? » Car ce n’est pas par sagesse que tu interroges à ce sujet.",
+        "NAB": "Do not say: How is it that former times were better than these? For it is not in wisdom that you ask about this.",
+        "VAT_ES": "No digas: «&iquest;A qué se debe que el tiempo pasado fue mejor que el presente?». Porque no es la sabiduría la que te lleva a hacer esa pregunta.",
+        "CEI": "Non domandare: \"Come mai i tempi antichi erano migliori del presente?\", poiché una tale domanda non è ispirata da saggezza."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "טוֹבָ֥ה חָכְמָ֖ה עִֽם נַחֲלָ֑ה וְ/יֹתֵ֖ר לְ/רֹאֵ֥י הַ/שָּֽׁמֶשׁ׃",
+        "LXX": "μὴ εἴπῃς Τί ἐγένετο ὅτι αἱ ἡμέραι αἱ πρότεραι ἦσαν ἀγαθαὶ ὑπὲρ ταύτας; ὅτι οὐκ ἐν σοφίᾳ ἐπηρώτησας περὶ τούτου.",
+        "VUL": "Ne dicas : Quid putas causæ est/ quod priora tempora meliora fuere quam nunc sunt ?/ stulta enim est hujuscemodi interrogatio./",
+        "SYN": "Хороша мудрость с наследством, и особенно для видящих солнце:",
+        "NEO": "La sagesse est bonne avec un patrimoine, et profitable à ceux qui voient le soleil.",
+        "NAB": "Wisdom and an inheritance are good, and an advantage to those that see the sun.",
+        "VAT_ES": "La sabiduría vale tanto como una herencia y es provechosa para los que ven la luz del sol.",
+        "CEI": "È buona la saggezza insieme con un patrimonio ed è utile per coloro che vedono il sole;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כִּ֛י בְּ/צֵ֥ל הַֽ/חָכְמָ֖ה בְּ/צֵ֣ל הַ/כָּ֑סֶף וְ/יִתְר֣וֹן דַּ֔עַת הַֽ/חָכְמָ֖ה תְּחַיֶּ֥ה בְעָלֶֽי/הָ׃",
+        "LXX": "ἀγαθὴ σοφία μετὰ κληρονομίας καὶ περισσεία τοῖς θεωροῦσιν τὸν ἥλιον·",
+        "VUL": "Utilior est sapientia cum divitiis,/ et magis prodest videntibus solem./",
+        "SYN": "потому что под сенью ее _то же, что_ под сенью серебра; но превосходство знания в _том, что_ мудрость дает жизнь владеющему ею.",
+        "NEO": "Car telle la protection de l’argent, telle la protection de la sagesse ; mais un avantage du savoir, c’est que la sagesse fait vivre ceux qui la possèdent.",
+        "NAB": "For the protection of wisdom is as the protection of money; and the advantage of knowledge is that wisdom preserves the life of its owner.",
+        "VAT_ES": "Porque estar a la sombra de la sabiduría es como estar a la sombra del dinero, y la ventaja de la ciencia es que la sabiduría hace vivir al que la posee.",
+        "CEI": "perché si sta all'ombra della saggezza come si sta all'ombra del denaro e il profitto della saggezza fa vivere chi la possiede."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "רְאֵ֖ה אֶת מַעֲשֵׂ֣ה הָ/אֱלֹהִ֑ים כִּ֣י מִ֤י יוּכַל֙ לְ/תַקֵּ֔ן אֵ֖ת אֲשֶׁ֥ר עִוְּתֽ/וֹ׃",
+        "LXX": "ὅτι ἐν σκιᾷ αὐτῆς ἡ σοφία ὡς σκιὰ ἀργυρίου, καὶ περισσεία γνώσεως τῆς σοφίας ζωοποιήσει τὸν παρ’ αὐτῆς.",
+        "VUL": "Sicut enim protegit sapientia, sic protegit pecunia ;/ hoc autem plus habet eruditio et sapientia,/ quod vitam tribuunt possessori suo./",
+        "SYN": "Смотри на действование Божие: ибо кто может выпрямить то, что Он сделал кривым?",
+        "NEO": "Regarde l’œuvre de Dieu : qui pourra redresser ce qu’il a courbé ?",
+        "NAB": "Consider the work of God. Who can make straight what he has made crooked?",
+        "VAT_ES": "Observa la obra de Dios: &iquest;quién puede enderezar lo que él torció?",
+        "CEI": "Osserva l'opera di Dio: chi può raddrizzare ciò che egli ha fatto curvo?"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "בְּ/י֤וֹם טוֹבָה֙ הֱיֵ֣ה בְ/ט֔וֹב וּ/בְ/י֥וֹם רָעָ֖ה רְאֵ֑ה גַּ֣ם אֶת זֶ֤ה לְ/עֻמַּת זֶה֙ עָשָׂ֣ה הָֽ/אֱלֹהִ֔ים עַל דִּבְרַ֗ת שֶׁ/לֹּ֨א יִמְצָ֧א הָֽ/אָדָ֛ם אַחֲרָ֖י/ו מְאֽוּמָה׃",
+        "LXX": "ἴδε τὰ ποιήματα τοῦ θεοῦ· ὅτι τίς δυνήσεται κοσμῆσαι ὃν ἂν ὁ θεὸς διαστρέψῃ αὐτόν;",
+        "VUL": "Considera opera Dei,/ quod nemo possit corrigere quem ille despexerit./",
+        "SYN": "Во дни благополучия пользуйся благом, а во дни несчастья размышляй: то и другое соделал Бог для того, чтобы человек ничего не мог сказать против Него.",
+        "NEO": "Au jour du bonheur, sois joyeux, et au jour du malheur, réfléchis : Dieu a fait l’un comme l’autre, afin que l’homme ne découvre pas ce qui doit lui arriver.",
+        "NAB": "On a good day enjoy good things, and on an evil day consider: Both the one and the other God has made, so that man cannot find fault with him in anything.",
+        "VAT_ES": "Disfruta de los días felices y en los días adversos, reflexiona: Dios hizo que se sucedan unos a otros, de manera que el hombre no descubra nada de lo que vendrá después de él.",
+        "CEI": "Nel giorno lieto stà allegro e nel giorno triste rifletti: \"Dio ha fatto tanto l'uno quanto l'altro, perché l'uomo non trovi nulla da incolparlo\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אֶת הַ/כֹּ֥ל רָאִ֖יתִי בִּ/ימֵ֣י הֶבְלִ֑/י יֵ֤שׁ צַדִּיק֙ אֹבֵ֣ד בְּ/צִדְק֔/וֹ וְ/יֵ֣שׁ רָשָׁ֔ע מַאֲרִ֖יךְ בְּ/רָעָתֽ/וֹ׃",
+        "LXX": "ἐν ἡμέρᾳ ἀγαθωσύνης ζῆθι ἐν ἀγαθῷ, καὶ ἴδε ἐν ἡμέρᾳ κακίας. ἴδε καί γε σὺν τούτῳ συμφώνως τοῦτο ἐποίησεν ὁ θεὸς περὶ λαλιᾶς, ἵνα μὴ εὕρῃ ὁ ἄνθρωπος ὀπίσω αὐτοῦ οὐδέν.",
+        "VUL": "In die bona fruere bonis,/ et malam diem præcave ;/ sicut enim hanc, sic et illam fecit Deus,/ ut non inveniat homo contra eum justas querimonias./",
+        "SYN": "Всего насмотрелся я в суетные дни мои: праведник гибнет в праведности своей; нечестивый живет долго в нечестии своем.",
+        "NEO": "Tout ceci, je l’ai vu au jour de ma vanité : il y a tel juste qui périt dans sa justice, et il y a tel méchant qui prolonge sa vie dans sa méchanceté.",
+        "NAB": "I have seen all manner of things in my vain days: a just man perishing in his justice, and a wicked one surviving in his wickedness.",
+        "VAT_ES": "Yo he visto de todo en mis días vanos: hay justos que parecen a pesar de su justicia y malvados que sobreviven a pesar de su maldad.",
+        "CEI": "Tutto ho visto nei giorni della mia vanità: perire il giusto nonostante la sua giustizia, vivere a lungo l'empio nonostante la sua iniquità."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אַל תְּהִ֤י צַדִּיק֙ הַרְבֵּ֔ה וְ/אַל תִּתְחַכַּ֖ם יוֹתֵ֑ר לָ֖/מָּה תִּשּׁוֹמֵֽם׃",
+        "LXX": "Τὰ πάντα εἶδον ἐν ἡμέραις ματαιότητός μου· ἔστιν δίκαιος ἀπολλύμενος ἐν δικαίῳ αὐτοῦ, καὶ ἔστιν ἀσεβὴς μένων ἐν κακίᾳ αὐτοῦ.",
+        "VUL": "Hæc quoque vidi in diebus vanitatis meæ :/ justus perit in justitia sua,/ et impius multo vivit tempore in malitia sua./",
+        "SYN": "Не будь слишком строг, и не выставляй себя слишком мудрым; зачем тебе губить себя?",
+        "NEO": "Ne sois pas juste à l’excès, et ne te montre pas sage outre mesure : pourquoi voudrais-tu te détruire ?",
+        "NAB": "\"Be not just to excess, and be not overwise, lest you be ruined.",
+        "VAT_ES": "No seas excesivamente justo ni quieras ser demasiado sabio: &iquest;para qué te vas a arruinar?",
+        "CEI": "Non esser troppo scrupoloso né saggio oltre misura. Perché vuoi rovinarti?"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אַל תִּרְשַׁ֥ע הַרְבֵּ֖ה וְ/אַל תְּהִ֣י סָכָ֑ל לָ֥/מָּה תָמ֖וּת בְּ/לֹ֥א עִתֶּֽ/ךָ׃",
+        "LXX": "μὴ γίνου δίκαιος πολὺ μηδὲ σοφίζου περισσά, μή ποτε ἐκπλαγῇς.",
+        "VUL": "Noli esse justus multum,/ neque plus sapias quam necesse est,/ ne obstupescas./",
+        "SYN": "Не предавайся греху, и не будь безумен: зачем тебе умирать не в свое время?",
+        "NEO": "Ne sois pas méchant à l’excès, et ne sois pas insensé : pourquoi voudrais-tu mourir avant ton temps ?",
+        "NAB": "Be not wicked to excess, and be not foolish. Why should you die before your time?\"",
+        "VAT_ES": "No seas demasiado malo ni te comportes como un necio: &iquest;para qué vas a morir antes de tiempo?",
+        "CEI": "Non esser troppo malvagio e non essere stolto. Perché vuoi morire innanzi tempo?"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "ט֚וֹב אֲשֶׁ֣ר תֶּאֱחֹ֣ז בָּ/זֶ֔ה וְ/גַם מִ/זֶּ֖ה אַל תַּנַּ֣ח אֶת יָדֶ֑/ךָ כִּֽי יְרֵ֥א אֱלֹהִ֖ים יֵצֵ֥א אֶת כֻּלָּֽ/ם׃",
+        "LXX": "μὴ ἀσεβήσῃς πολὺ καὶ μὴ γίνου σκληρός, ἵνα μὴ ἀποθάνῃς ἐν οὐ καιρῷ σου.",
+        "VUL": "Ne impie agas multum,/ et noli esse stultus,/ ne moriaris in tempore non tuo./",
+        "SYN": "Хорошо, если ты будешь держаться одного и не отнимать руки от другого; потому что кто боится Бога, тот избежит всего того.",
+        "NEO": "Il est bon que tu retiennes ceci, et que tu ne relâches pas ta main de cela, car celui qui craint Dieu évite tous ces excès.",
+        "NAB": "It is good to hold to this rule, and not to let that one go; but he who fears God will win through at all events.",
+        "VAT_ES": "Lo mejor es procurar esto sin dejar de lado aquello: el que teme a Dios sabe unir las dos cosas.",
+        "CEI": "È bene che tu ti attenga a questo e che non stacchi la mano da quello, perché chi teme Dio riesce in tutte queste cose."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "הַֽ/חָכְמָ֖ה תָּעֹ֣ז לֶ/חָכָ֑ם מֵֽ/עֲשָׂרָה֙ שַׁלִּיטִ֔ים אֲשֶׁ֥ר הָי֖וּ בָּ/עִֽיר׃",
+        "LXX": "ἀγαθὸν τὸ ἀντέχεσθαί σε ἐν τούτῳ, καί γε ἀπὸ τούτου μὴ μιάνῃς τὴν χεῖρά σου, ὅτι φοβουμένοις τὸν θεὸν ἐξελεύσεται τὰ πάντα.",
+        "VUL": "Bonum est te sustentare justum :/ sed et ab illo ne subtrahas manum tuam ;/ quia qui timet Deum nihil negligit./",
+        "SYN": "Мудрость делает мудрого сильнее десяти властителей, которые в городе.",
+        "NEO": "La sagesse donne au sage plus de force que n’en possèdent dix chefs qui sont dans la ville.",
+        "NAB": "Wisdom is a better defense for the wise man than would be ten princes in the city,",
+        "VAT_ES": "La sabiduría hace más fuerte al sabio que diez magistrados de una ciudad.",
+        "CEI": "La sapienza rende il saggio più forte di dieci potenti che governano la città."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "כִּ֣י אָדָ֔ם אֵ֥ין צַדִּ֖יק בָּ/אָ֑רֶץ אֲשֶׁ֥ר יַעֲשֶׂה טּ֖וֹב וְ/לֹ֥א יֶחֱטָֽא׃",
+        "LXX": "Ἡ σοφία βοηθήσει τῷ σοφῷ ὑπὲρ δέκα ἐξουσιάζοντας τοὺς ὄντας ἐν τῇ πόλει·",
+        "VUL": "Sapientia confortavit sapientem/ super decem principes civitatis ;/",
+        "SYN": "Нет человека праведного на земле, который делал бы добро и не грешил бы;",
+        "NEO": "Car il n’y a pas sur terre d’homme juste qui fasse le bien sans jamais pécher.",
+        "NAB": "yet there is no man on earth so just as to do good and never sin.",
+        "VAT_ES": "No hay un hombre justo sobre la tierra que haga el bien sin pecar jamás.",
+        "CEI": "Non c'è infatti sulla terra un uomo così giusto che faccia solo il bene e non pecchi."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "גַּ֤ם לְ/כָל הַ/דְּבָרִים֙ אֲשֶׁ֣ר יְדַבֵּ֔רוּ אַל תִּתֵּ֖ן לִבֶּ֑/ךָ אֲשֶׁ֥ר לֹֽא תִשְׁמַ֥ע אֶֽת עַבְדְּ/ךָ֖ מְקַלְלֶֽ/ךָ׃",
+        "LXX": "ὅτι ἄνθρωπος οὐκ ἔστιν δίκαιος ἐν τῇ γῇ, ὃς ποιήσει ἀγαθὸν καὶ οὐχ ἁμαρτήσεται.",
+        "VUL": "non est enim homo justus in terra/ qui faciat bonum et non peccet./",
+        "SYN": "поэтому не на всякое слово, которое говорят, обращай внимание, чтобы не услышать тебе раба твоего, когда он злословит тебя;",
+        "NEO": "Ne fais pas non plus attention à toutes les paroles qui se disent, de peur que tu n’entendes ton serviteur te maudire ;",
+        "NAB": "Do not give heed to every word that is spoken lest you hear your servant speaking ill of you,",
+        "VAT_ES": "Tampoco prestes atención a todo lo que se dice. no sea que escuches a tu servidor que te maldice.",
+        "CEI": "Ancora: non fare attenzione a tutte le dicerie che si fanno, per non sentir che il tuo servo ha detto male di te,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כִּ֛י גַּם פְּעָמִ֥ים רַבּ֖וֹת יָדַ֣ע לִבֶּ֑/ךָ אֲשֶׁ֥ר גַּם את אַתָּ֖ה קִלַּ֥לְתָּ אֲחֵרִֽים׃",
+        "LXX": "καί γε εἰς πάντας λόγους οὓς λαλήσουσιν ἀσεβεῖς μὴ θῇς καρδίαν σου, ὅπως μὴ ἀκούσῃς τοῦ δούλου σου καταρωμένου σε·",
+        "VUL": "Sed et cunctis sermonibus qui dicuntur/ ne accomodes cor tuum,/ ne forte audias servum tuum maledicentem tibi ;/",
+        "SYN": "ибо сердце твое знает много случаев, когда и сам ты злословил других.",
+        "NEO": "car ton cœur sait que bien des fois aussi tu as maudit les autres.",
+        "NAB": "for you know in your heart that you have many times spoken ill of others.",
+        "VAT_ES": "Porque, además, tú sabes muy bien cuántas veces has maldecido a otros.",
+        "CEI": "perché il tuo cuore sa che anche tu hai detto tante volte male degli altri."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "כָּל זֹ֖ה נִסִּ֣יתִי בַֽ/חָכְמָ֑ה אָמַ֣רְתִּי אֶחְכָּ֔מָה וְ/הִ֖יא רְחוֹקָ֥ה מִמֶּֽ/נִּי׃",
+        "LXX": "ὅτι πλειστάκις πονηρεύσεταί σε καὶ καθόδους πολλὰς κακώσει καρδία σου, ὅτι ὡς καί γε σὺ κατηράσω ἑτέρους.",
+        "VUL": "scit enim conscientia tua/ quia et tu crebro maledixisti aliis./",
+        "SYN": "Все это испытал я мудростью; я сказал: \"буду я мудрым\"; но мудрость далека от меня.",
+        "NEO": "J’ai reconnu vrai tout cela par la sagesse ; j’ai dit : je veux être sage ! mais la sagesse est restée loin de moi.",
+        "NAB": "All these things I probed in wisdom. I said, \"I will acquire wisdom\"; but it was beyond me.",
+        "VAT_ES": "Yo experimenté todo esto con sabiduría, pensando: «Voy a ser sabio». Pero ella está fuera de mi alcance:",
+        "CEI": "Tutto questo io ho esaminato con sapienza e ho detto: \"Voglio essere saggio!\", ma la sapienza è lontana da me!"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "רָח֖וֹק מַה שֶּׁ/הָיָ֑ה וְ/עָמֹ֥ק עָמֹ֖ק מִ֥י יִמְצָאֶֽ/נּוּ׃",
+        "LXX": "Πάντα ταῦτα ἐπείρασα ἐν σοφίᾳ. εἶπα Σοφισθήσομαι·",
+        "VUL": "Cuncta tentavi in sapientia./ Dixi : Sapiens efficiar :/ et ipsa longius recessit a me,/",
+        "SYN": "Далеко то, что было, и глубоко - глубоко: кто постигнет его?",
+        "NEO": "Ce qui arrive est lointain, profond, profond : qui peut l’atteindre ?",
+        "NAB": "What exists is far-reaching; it is deep, very deep: who can find it out?",
+        "VAT_ES": "lo que existe es lejano y profundo, más profundo de lo que se puede vislumbrar.",
+        "CEI": "Ciò che è stato è lontano e profondo, profondo: chi lo può raggiungere?"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "סַבּ֨וֹתִֽי אֲנִ֤י וְ/לִבִּ/י֙ לָ/דַ֣עַת וְ/לָ/ת֔וּר וּ/בַקֵּ֥שׁ חָכְמָ֖ה וְ/חֶשְׁבּ֑וֹן וְ/לָ/דַ֨עַת֙ רֶ֣שַׁע כֶּ֔סֶל וְ/הַ/סִּכְל֖וּת הוֹלֵלֽוֹת׃",
+        "LXX": "καὶ αὕτη ἐμακρύνθη ἀπ’ ἐμοῦ· μακρὰν ὑπὲρ ὃ ἦν, καὶ βαθὺ βάθος, τίς εὑρήσει αὐτό;",
+        "VUL": "multo magis quam erat./ Et alta profunditas, quis inveniet eam ?]",
+        "SYN": "Обратился я сердцем моим к тому, чтобы узнать, исследовать и изыскать мудрость и разум, и познать нечестие глупости, невежества и безумия, -",
+        "NEO": "Je me suis appliqué et mon cœur a cherché à connaître, à sonder et à poursuivre la sagesse et la raison des choses, et j’ai reconnu que la méchanceté est une démence, et qu’une conduite folle est un délire.",
+        "NAB": "I turned my thoughts toward knowledge; I sought and pursued wisdom and reason, and I recognized that wickedness is foolish and folly is madness.",
+        "VAT_ES": "Yo me dediqué con el mayor empeño a conocer, a explorar, y a buscar la sabiduría y la razón de las cosas y reconocí que la maldad es una insensatez, y la necedad, una locura.",
+        "CEI": "Mi son applicato di nuovo a conoscere e indagare e cercare la sapienza e il perché delle cose e a conoscere che la malvagità è follia e la stoltezza pazzia."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וּ/מוֹצֶ֨א אֲנִ֜י מַ֣ר מִ/מָּ֗וֶת אֶת הָֽ/אִשָּׁה֙ אֲשֶׁר הִ֨יא מְצוֹדִ֧ים וַ/חֲרָמִ֛ים לִבָּ֖/הּ אֲסוּרִ֣ים יָדֶ֑י/הָ ט֞וֹב לִ/פְנֵ֤י הָ/אֱלֹהִים֙ יִמָּלֵ֣ט מִמֶּ֔/נָּה וְ/חוֹטֵ֖א יִלָּ֥כֶד בָּֽ/הּ׃",
+        "LXX": "ἐκύκλωσα ἐγώ, καὶ ἡ καρδία μου τοῦ γνῶναι καὶ τοῦ κατασκέψασθαι καὶ ζητῆσαι σοφίαν καὶ ψῆφον, καὶ τοῦ γνῶναι ἀσεβοῦς ἀφροσύνην καὶ ὀχληρίαν καὶ περιφοράν·",
+        "VUL": "[Lustravi universa animo meo,/ ut scirem et considerarem,/ et quærerem sapientiam, et rationem,/ et ut cognoscerem impietatem stulti,/ et errorem imprudentium :/",
+        "SYN": "и нашел я, что горче смерти женщина, потому что она - сеть, и сердце ее - силки, руки ее - оковы; добрый пред Богом спасется от нее, а грешник уловлен будет ею.",
+        "NEO": "Et j’ai trouvé plus amère que la mort la femme dont le cœur est un piège et un filet, et dont les mains sont des liens ; celui qui est agréable à Dieu lui échappe, mais le pécheur sera enlacé par elle.",
+        "NAB": "More bitter than death I find the woman who is a hunter's trap, whose heart is a snare and whose hands are prison bonds. He who is pleasing to God will escape her, but the sinner will be entrapped by her.",
+        "VAT_ES": "Y yo encuentro más amarga que la muerte a la mujer, cuando ella misma es una trampa, su corazón, una red, y sus brazos, ataduras. Con el favor de Dios, uno puede librarse, pero el pecador se deja atrapar.",
+        "CEI": "Trovo che amara più della morte è la donna, la quale è tutta lacci: una rete il suo cuore, catene le sue braccia. Chi è gradito a Dio la sfugge ma il peccatore ne resta preso."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "רְאֵה֙ זֶ֣ה מָצָ֔אתִי אָמְרָ֖ה קֹהֶ֑לֶת אַחַ֥ת לְ/אַחַ֖ת לִ/מְצֹ֥א חֶשְׁבּֽוֹן׃",
+        "LXX": "καὶ εὑρίσκω ἐγὼ αὐτήν, καὶ ἐρῶ πικρότερον ὑπὲρ θάνατον· σὺν τὴν γυναῖκα ἥτις ἐστὶν θήρευμα, καὶ σαγῆναι καρδία αὐτῆς, δεσμὸς εἰς χεῖρας αὐτῆς· ἀγαθὸς πρὸ προσώπου τοῦ θεοῦ ἐξαιρεθήσεται ἀπ’ αὐτῆς, καὶ ἁμαρτάνων συλλημφθήσεται ἐν αὐτῇ.",
+        "VUL": "et inveni amariorem morte mulierem,/ quæ laqueus venatorum est,/ et sagena cor ejus ;/ vincula sunt manus illius./ Qui placet Deo effugiet illam ;/ qui autem peccator est capietur ab illa./",
+        "SYN": "Вот это нашел я, сказал Екклесиаст, испытывая одно за другим.",
+        "NEO": "Vois, j’ai trouvé ceci, dit l’Ecclésiaste, en considérant les choses une à une pour en découvrir la raison, que mon âme a constamment cherchée, sans que je l’aie trouvée : J’ai trouvé un homme entre mille, mais je n’ai pas trouvé une femme dans le même nombre.",
+        "NAB": "Behold, this have I found, says Qoheleth, adding one thing to another that I might discover the answer",
+        "VAT_ES": "Mira: esto es lo que descubrí, dice Cohélet. tratando de razonar caso por caso.",
+        "CEI": "Vedi, io ho scoperto questo, dice Qoèlet, confrontando una ad una le cose, per trovarne la ragione."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֛ר עוֹד בִּקְשָׁ֥ה נַפְשִׁ֖/י וְ/לֹ֣א מָצָ֑אתִי אָדָ֞ם אֶחָ֤ד מֵ/אֶ֨לֶף֙ מָצָ֔אתִי וְ/אִשָּׁ֥ה בְ/כָל אֵ֖לֶּה לֹ֥א מָצָֽאתִי׃",
+        "LXX": "ἴδε τοῦτο εὗρον, εἶπεν ὁ ἐκκλησιαστής, μία τῇ μιᾷ, τοῦ εὑρεῖν λογισμὸν",
+        "VUL": "Ecce hoc inveni, dixit Ecclesiastes,/ unum et alterum ut invenirem rationem,/",
+        "SYN": "Чего еще искала душа моя, и я не нашел? - Мужчину одного из тысячи я нашел, а женщину между всеми ими не нашел.",
+        "NEO": "Seulement, vois, j’ai trouvé ceci : C’est que Dieu a fait l’homme droit, mais eux cherchent beaucoup de subtilités.",
+        "NAB": "which my soul still seeks and has not found: One man out of a thousand have I come upon, but a woman among them all I have not found.",
+        "VAT_ES": "Pero esto es lo que todavía busco, sin haberlo encontrado: He logrado encontrar a un hombre entre mil, pero entre todas las mujeres no hallé ni una sola.",
+        "CEI": "Quello che io cerco ancora e non ho trovato è questo: Un uomo su mille l'ho trovato: ma una donna fra tutte non l'ho trovata."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "לְ/בַד֙ רְאֵה זֶ֣ה מָצָ֔אתִי אֲשֶׁ֨ר עָשָׂ֧ה הָ/אֱלֹהִ֛ים אֶת הָ/אָדָ֖ם יָשָׁ֑ר וְ/הֵ֥מָּה בִקְשׁ֖וּ חִשְּׁבֹנ֥וֹת רַבִּֽים׃",
+        "LXX": "ὃν ἐπεζήτησεν ἡ ψυχή μου, καὶ οὐχ εὗρον· καὶ ἄνθρωπον ἕνα ἀπὸ χιλίων εὗρον, καὶ γυναῖκα ἐν πᾶσι τούτοις οὐχ εὗρον.",
+        "VUL": "quam adhuc quærit anima mea,/ et non inveni./ Virum de mille unum reperi ;/ mulierem ex omnibus non inveni./",
+        "SYN": "Только это я нашел, что Бог сотворил человека правым, а люди пустились во многие помыслы.",
+        "NAB": "Behold, only this have I found out: God made mankind straight, but men have had recourse to many calculations.",
+        "VAT_ES": "En resumen, he descubierto lo siguiente: Dios hizo recto al hombre, pero ellos se buscan muchas complicaciones.",
+        "CEI": "Vedi, solo questo ho trovato: Dio ha fatto l'uomo retto, ma essi cercano tanti fallaci ragionamenti."
+      }
+    }
+  }
+}

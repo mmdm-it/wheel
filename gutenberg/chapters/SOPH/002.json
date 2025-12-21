@@ -1,0 +1,269 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "SOPH_002",
+  "book_key": "SOPH",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "הִֽתְקוֹשְׁשׁ֖וּ וָ/ק֑וֹשּׁוּ הַ/גּ֖וֹי לֹ֥א נִכְסָֽף׃",
+        "LXX": "Συνάχθητε καὶ συνδέθητε, τὸ ἔθνος τὸ ἀπαίδευτον,",
+        "SYN": "Исследуйте себя внимательно, исследуйте, народ необузданный,",
+        "NEO": "Recueillez-vous, rentrez en vous-mêmes, race sans pudeur,",
+        "NAB": "Gather, gather yourselves together, O nation without shame!",
+        "VAT_ES": "&iexcl;Reúnanse, sí, reúnanse, gente sin verg&uuml;enza,",
+        "CEI": "Radunatevi, raccoglietevi, o gente spudorata,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בְּ/טֶ֨רֶם֙ לֶ֣דֶת חֹ֔ק כְּ/מֹ֖ץ עָ֣בַר י֑וֹם בְּ/טֶ֣רֶם לֹא יָב֣וֹא עֲלֵי/כֶ֗ם חֲרוֹן֙ אַף יְהוָ֔ה בְּ/טֶ֨רֶם֙ לֹא יָב֣וֹא עֲלֵי/כֶ֔ם י֖וֹם אַף יְהוָֽה׃",
+        "LXX": "πρὸ τοῦ γενέσθαι ὑμᾶς ὡς ἄνθος παραπορευόμενον, πρὸ τοῦ ἐπελθεῖν ἐφ’ ὑμᾶς ὀργήν Κυρίου, πρὸ τοῦ ἐπελθεῖν ἐφ’ ὑμᾶς ἡμέραν θυμοῦ Κυρίου.",
+        "SYN": "доколе не пришло определение - день пролетит как мякина - доколе не пришел на вас пламенный гнев Господень, доколе не наступил для вас день ярости Господней.",
+        "NEO": "avant que le décret ait enfanté, que le jour ait passé comme la paille ; avant que vienne sur vous l’ardeur de la colère de \\+w Yahweh|strong=\"H3068\"\\+w**, avant que vienne sur vous le jour de la colère de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Before you are driven away, like chaff that passes on; Before there comes upon you the blazing anger of the LORD: Before there comes upon you the day of the LORD'S anger.",
+        "VAT_ES": "antes que sean aventados como la paja que desaparece en un día, antes que llegue sobre ustedes el ardor de la ira del Señor, antes que llegue sobre ustedes el Día de la ira del Señor!",
+        "CEI": "prima di essere travolti come pula che scompare in un giorno; prima che piombi su di voi la collera furiosa del Signore."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "בַּקְּשׁ֤וּ אֶת יְהוָה֙ כָּל עַנְוֵ֣י הָ/אָ֔רֶץ אֲשֶׁ֥ר מִשְׁפָּט֖/וֹ פָּעָ֑לוּ בַּקְּשׁוּ צֶ֨דֶק֙ בַּקְּשׁ֣וּ עֲנָוָ֔ה אוּלַי֙ תִּסָּ֣תְר֔וּ בְּ/י֖וֹם אַף יְהוָֽה׃",
+        "LXX": "ζητήσατε τὸν κύριον, πάντες ταπεινοὶ γῆς· κρίμα ἐργάζεσθε καὶ δικαιοσύνην ζητήσατε, καὶ ἀποκρίνεσθε αὐτά, ὅπως σκεπασθῆτε ἐν ἡμέρᾳ ὀργῆς Κυρίου.",
+        "SYN": "Взыщите Господа, все смиренные земли, исполняющие законы Его; взыщите правду, взыщите смиренномудрие; может быть, вы укроетесь в день гнева Господня.",
+        "NEO": "Cherchez \\+w Yahweh|strong=\"H3068\"\\+w**, vous tous humbles du pays, qui avez pratiqué sa loi ; recherchez la justice, recherchez l’humilité. Peut-être serez-vous à l’abri au jour de la colère de \\+w Yahweh|strong=\"H3068\"\\+w** !...",
+        "NAB": "Seek the LORD, all you humble of the earth, who have observed his law; Seek justice, seek humility; perhaps you may be sheltered on the day of the LORD'S anger.",
+        "VAT_ES": "Busquen al Señor, ustedes, todos los humildes de la tierra, los que ponen en práctica sus decretos. Busquen la justicia, busquen la humildad, tal vez así estarán protegidos en el Día de la ira del Señor.",
+        "CEI": "Cercate il Signore voi tutti, umili della terra, che eseguite i suoi ordini; cercate la giustizia, cercate l'umiltà, per trovarvi al riparo nel giorno dell'ira del Signore."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּ֤י עַזָּה֙ עֲזוּבָ֣ה תִֽהְיֶ֔ה וְ/אַשְׁקְל֖וֹן לִ/שְׁמָמָ֑ה אַשְׁדּ֗וֹד בַּֽ/צָּהֳרַ֨יִם֙ יְגָ֣רְשׁ֔וּ/הָ וְ/עֶקְר֖וֹן תֵּעָקֵֽר׃",
+        "LXX": "Διότι Γάζα διηρπασμένη ἔσται, καὶ Ἀσκάλων εἰς ἀφανισμόν, καὶ Ἄζωτος μεσημβρίας ἐκριφήσεται, καὶ Ἀκκαρὼν ἐκριζωθήσεται.",
+        "SYN": "Ибо Газа будет покинута и Аскалон опустеет, Азот будет выгнан среди дня и Екрон искоренится.",
+        "NEO": "Car Gaza sera abandonnée, et Ascalon réduite en désert ; on chassera Azot en plein midi, et Accaron sera déracinée.",
+        "NAB": "For Gaza shall be forsaken, and Ashkelon shall be a waste, Ashdod they shall drive out at midday, and Ekron shall be uprooted.",
+        "VAT_ES": "Porque Gaza será abandonada y Ascalón quedará desolada; Asdod será expulsada en pleno día y Ecrón será arrancada de raíz.",
+        "CEI": "Gaza infatti sarà desolata e Ascalòna ridotta a un deserto. Asdòd in pieno giorno sarà deportata ed Ekròn distrutta dalle fondamenta."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "ה֗וֹי יֹֽשְׁבֵ֛י חֶ֥בֶל הַ/יָּ֖ם גּ֣וֹי כְּרֵתִ֑ים דְּבַר יְהוָ֣ה עֲלֵי/כֶ֗ם כְּנַ֨עַן֙ אֶ֣רֶץ פְּלִשְׁתִּ֔ים וְ/הַאֲבַדְתִּ֖י/ךְ מֵ/אֵ֥ין יוֹשֵֽׁב׃",
+        "LXX": "οὐαὶ οἱ κατοικοῦντες τὸ σχοίνισμα τῆς θαλάσσης, πάροικοι Κρητῶν· λόγος Κυρίου ἐφ’ ὑμᾶς Χανάαν, γῆ ἀλλοφύλων, καὶ ἀπολῶ ὑμᾶς ἐκ κατοικίας·",
+        "SYN": "Горе жителям приморской страны, народу Критскому! Слово Господне на вас, Хананеи, земля Филистимская! Я истреблю тебя, и не будет у тебя жителей, -",
+        "NEO": "Malheur aux habitants de la région de la mer, à la nation des Crétois ! La parole de \\+w Yahweh|strong=\"H3068\"\\+w** est prononcée contre vous, Canaan, terre des Philistins : « Et je te détruirai en sorte qu’il ne te reste plus d’habitants. »",
+        "NAB": "Woe to you who dwell by the seacoast, to the Cretan folk! The word of the LORD is against you, I will humble you, land of the Philistines, and leave you to perish without an inhabitant!",
+        "VAT_ES": "&iexcl;Ay de los habitantes de la liga del mar, del pueblo de los quereteos! La palabra del Señor está contra ustedes, Canaán, tierra de los filisteos: «&iexcl;Yo te haré perecer, hasta dejarte sin habitantes!».",
+        "CEI": "Guai agli abitanti della costa del mare, alla gente dei Cretei! La parola del Signore è contro di te, Cànaan, paese dei Filistei: \"Io ti distruggerò privandoti di ogni abitante."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְֽ/הָיְתָ֞ה חֶ֣בֶל הַ/יָּ֗ם נְוֺ֛ת כְּרֹ֥ת רֹעִ֖ים וְ/גִדְר֥וֹת צֹֽאן׃",
+        "LXX": "καὶ ἔσται Κρήτη νομὴ ποιμνίων καὶ μάνδρα προβάτων,",
+        "SYN": "и будет приморская страна пастушьим овчарником и загоном для скота.",
+        "NEO": "La région de la mer deviendra des pâturages, des grottes de bergers et des parcs de moutons.",
+        "NAB": "The coastland of the Cretans shall become fields for shepherds, and folds for flocks.",
+        "VAT_ES": "La liga del mar se convertirá en un pastizal, en campos de pastoreo y en corrales de ovejas.",
+        "CEI": "Diverrai pascoli di pastori e recinti di greggi\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הָ֣יָה חֶ֗בֶל לִ/שְׁאֵרִ֛ית בֵּ֥ית יְהוּדָ֖ה עֲלֵי/הֶ֣ם יִרְע֑וּ/ן בְּ/בָתֵּ֣י אַשְׁקְל֗וֹן בָּ/עֶ֨רֶב֙ יִרְבָּצ֔וּ/ן כִּ֧י יִפְקְדֵ֛/ם יְהוָ֥ה אֱלֹהֵי/הֶ֖ם וְ/שָׁ֥ב שבות/ם שְׁבִיתָֽ/ם׃",
+        "LXX": "καὶ ἔσται τὸ σχοίνισμα τῆς θαλάσσης τοῖς καταλοίποις οἴκου Ἰούδα· ἐπ’ αὐτοὺς νεμήσονται ἐν τοῖς οἴκοις Ἀσκάλωνος, δείλης καταλύσουσιν ἀπὸ προσώπου υἱῶν Ἰούδα, ὅτι ἐπέσκεπται αὐτοὺς Κύριος ὁ θεὸς αὐτῶν, καὶ ἀπέστρεψε τὴν αἰχμαλωσίαν αὐτῶν.",
+        "SYN": "И достанется этот край остаткам дома Иудина, и будут пасти там, и в домах Аскалона будут вечером отдыхать, ибо Господь Бог их посетит их и возвратит плен их.",
+        "NEO": "Ce sera un territoire pour le reste de la maison de Juda, ils y paîtront leurs troupeaux ; le soir, ils prendront leur gîte dans les maisons d’Ascalon, car \\+w Yahweh|strong=\"H3068\"\\+w**, leur Dieu, les visitera et les rétablira.",
+        "NAB": "The coast shall belong to the remnant of the house of Judah; by the sea they shall pasture. In the houses of Ashkelon at evening they shall couch their flocks, For the LORD their God shall visit them, and bring about their restoration.",
+        "VAT_ES": "Y la liga pertenecerá al resto del pueblo de Judá: apacentarán sus ganados junto al mar y al caer la tarde, descansarán en las casas de Ascalón; porque el Señor, su Dios, los visitará y cambiará su suerte.",
+        "CEI": "La costa del mare apparterrà al resto della casa di Giuda; in quei luoghi pascoleranno e a sera nelle case di Ascalòna prenderanno riposo, quando il Signore loro Dio li avrà visitati e avrà restaurato le loro sorti."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "שָׁמַ֨עְתִּי֙ חֶרְפַּ֣ת מוֹאָ֔ב וְ/גִדּוּפֵ֖י בְּנֵ֣י עַמּ֑וֹן אֲשֶׁ֤ר חֵֽרְפוּ֙ אֶת עַמִּ֔/י וַ/יַּגְדִּ֖ילוּ עַל גְּבוּלָֽ/ם׃",
+        "LXX": "Ἤκουσα ὀνειδισμοὺς Μωὰβ καὶ κονδυλισμοὺς υἱῶν Ἀμμών, ἐν οἷς ὠνείδιζον τὸν λαόν μου καὶ ἐμεγαλύνοντο ἐπὶ τὰ ὅριά μου.",
+        "SYN": "Слышал Я поношение Моава и ругательства сынов Аммоновых, как они издевались над Моим народом и величались на пределах его.",
+        "NEO": "J’ai entendu les insultes de Moab, et les outrages des fils d’Ammon, qui insultaient mon peuple, et s’agrandissaient aux dépens de ses frontières.",
+        "NAB": "I have heard the revilings uttered by Moab, and the insults of the Ammonites, When they reviled my people and made boasts against their territory.",
+        "VAT_ES": "Yo escuché los insultos de Moab y las injurias de los amonitas, cuando insultaron a mi pueblo y se engrandecieron a costa de su territorio.",
+        "CEI": "\"Ho udito l'insulto di Moab e gli oltraggi degli Ammoniti, con i quali hanno insultato il mio popolo gloriandosi del loro territorio."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לָ/כֵ֣ן חַי אָ֡נִי נְאֻם֩ יְהוָ֨ה צְבָא֜וֹת אֱלֹהֵ֣י יִשְׂרָאֵ֗ל כִּֽי מוֹאָ֞ב כִּ/סְדֹ֤ם תִּֽהְיֶה֙ וּ/בְנֵ֤י עַמּוֹן֙ כַּֽ/עֲמֹרָ֔ה מִמְשַׁ֥ק חָר֛וּל וּ/מִכְרֵה מֶ֥לַח וּ/שְׁמָמָ֖ה עַד עוֹלָ֑ם שְׁאֵרִ֤ית עַמִּ/י֙ יְבָזּ֔וּ/ם וְ/יֶ֥תֶר גוי גּוֹיִ֖/י יִנְחָלֽוּ/ם׃",
+        "LXX": "διὰ τοῦτο ζῶ ἐγώ, λέγει Κύριος τῶν δυνάμεων ὁ θεὸς Ἰσραήλ, διότι Μωὰβ ὡς Σόδομα ἔσται, καὶ υἱοὶ Ἀμμὼν ὡς Γόμορρα, καὶ Δαμασκὸς ἐκλελιμμένη ὡς θιμωνιὰ ἅλωνος καὶ ἠφανισμένη εἰς τὸν αἰῶνα· καὶ οἱ κατάλοιποι λαοῦ μου διαρπῶνται αὐτούς, καὶ οἱ κατάλοιποι ἔθνους μου κληρονομήσουσιν αὐτούς.",
+        "SYN": "Посему, живу Я! говорит Господь Саваоф, Бог Израилев: Моав будет, как Содом, и сыны Аммона будут, как Гоморра, достоянием крапивы, соляною рытвиною, пустынею навеки; остаток народа Моего возьмет их в добычу, и уцелевшие из людей Моих получат их в наследие.",
+        "NEO": "C’est pourquoi, je suis vivant, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** des armées, le Dieu d’Israël : Moab sera comme Sodome, et les fils d’Ammon comme Gomorrhe : un lieu livré aux orties, une carrière de sel, un désert à jamais. Le reste de mon peuple le pillera, et ce qui demeurera de ma nation, les aura en héritage.",
+        "NAB": "Therefore, as I live, says the LORD of hosts, the God of Israel, Moab shall become like Sodom, the land of Ammon like Gomorrah: A field of nettles and a salt pit and a waste forever. The remnant of my people shall plunder them, the survivors of my nation dispossess them.",
+        "VAT_ES": "Por eso, juro por mi vida –oráculo del Señor de los ejércitos, Dios de Israel– Moab quedará como Sodoma y los amonitas como Gomorra: un campo de cardos, una mina de sal, una tierra desolada para siempre. El resto de mi pueblo los saqueará, lo que quede de mi nación los heredará.",
+        "CEI": "Perciò, com'è vero ch'io vivo, - parola del Signore degli eserciti Dio d'Israele - Moab diventerà come Sòdoma e gli Ammoniti come Gomorra: un luogo invaso dai pruni, una cava di sale, un deserto per sempre. I rimasti del mio popolo li saccheggeranno e i superstiti della mia gente ne saranno gli eredi\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "זֹ֥את לָ/הֶ֖ם תַּ֣חַת גְּאוֹנָ֑/ם כִּ֤י חֵֽרְפוּ֙ וַ/יַּגְדִּ֔לוּ עַל עַ֖ם יְהוָ֥ה צְבָאֽוֹת׃",
+        "LXX": "αὕτη αὐτοῖς ἀντὶ τῆς ὕβρεως αὐτῶν, διότι ὠνείδισαν καὶ ἐμεγαλύνθησαν ἐπὶ τὸν κύριον τὸν παντοκράτορα.",
+        "SYN": "Это им за высокомерие их, за то, что они издевались и величались над народом Господа Саваофа.",
+        "NEO": "Cela leur arrivera pour leur orgueil, parce qu’ils ont été méprisants et insolents, contre le peuple de \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "Such shall be the requital of their pride, because they reviled and boasted against the people of the LORD of hosts.",
+        "VAT_ES": "Eso es lo que recibirán a cambio de su orgullo, porque han insultado al pueblo del Señor de los ejércitos, y se han engrandecido a costa de él.",
+        "CEI": "Questo accadrà ad essi per la loro superbia, perchè hanno insultato, hanno disprezzato il popolo del Signore."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "נוֹרָ֤א יְהוָה֙ עֲלֵי/הֶ֔ם כִּ֣י רָזָ֔ה אֵ֖ת כָּל אֱלֹהֵ֣י הָ/אָ֑רֶץ וְ/יִשְׁתַּֽחֲווּ ל/וֹ֙ אִ֣ישׁ מִ/מְּקוֹמ֔/וֹ כֹּ֖ל אִיֵּ֥י הַ/גּוֹיִֽם׃",
+        "LXX": "ἐπιφανήσεται Κύριος ἐπ’ αὐτούς, καὶ ἐξολεθρεύσει πάντας τοὺς θεοὺς τῶν ἐθνῶν τῆς γῆς, καὶ προσκυνήσουσιν αὐτῷ ἕκαστος ἐκ τοῦ τόπου αὐτοῦ, πᾶσαι αἱ νῆσοι τῶν ἐθνῶν.",
+        "SYN": "Страшен будет для них Господь, ибо истребит всех богов земли, и Ему будут поклоняться, каждый со своего места, все острова народов.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** sera un objet de terreur pour eux, car il anéantira tous les dieux de la terre ; et devant lui se prosterneront, chacun de son lieu, les habitants de toutes les îles des nations.",
+        "NAB": "The LORD shall inspire them with fear when he makes all the gods of earth to waste away; Then, each from its own place, all the coastlands of the nations shall adore him.",
+        "VAT_ES": "El Señor se mostrará terrible con ellos, cuando él reduzca a nada a todos los dioses de la tierra y se postren ante él, cada una en su lugar, hasta las naciones de las costas más lejanas.",
+        "CEI": "Terribile sarà il Signore con loro, poiché annienterà tutti gli idoli della terra, mentre a lui si prostreranno, ognuno sul proprio suolo, i popoli di tutti i continenti."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "גַּם אַתֶּ֣ם כּוּשִׁ֔ים חַֽלְלֵ֥י חַרְבִּ֖/י הֵֽמָּה׃",
+        "LXX": "⸂⸆⸃ Καὶ ὑμεῖς, Αἰθίοπες, τραυματίαι ῥομφαίας μού ἐστε·",
+        "SYN": "И вы, Ефиопляне, избиты будете мечом Моим.",
+        "NEO": "Vous aussi, Ethiopiens !... Ils seront transpercés par mon épée.",
+        "NAB": "You too, O Cushites, shall be slain by the sword of the LORD.",
+        "VAT_ES": "&iexcl;También ustedes, cusitas, serán víctimas de mi espada!...",
+        "CEI": "\"Anche voi, Etiopi, sarete trafitti dalla mia spada\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/יֵ֤ט יָד/וֹ֙ עַל צָפ֔וֹן וִֽ/יאַבֵּ֖ד אֶת אַשּׁ֑וּר וְ/יָשֵׂ֤ם אֶת נִֽינְוֵה֙ לִ/שְׁמָמָ֔ה צִיָּ֖ה כַּ/מִּדְבָּֽר׃",
+        "LXX": "καὶ ἐκτενεῖ τὴν χεῖρα αὐτοῦ ἐπὶ βορρᾶν καὶ ἀπολεῖ τὸν Ἀσσύριον, καὶ θήσει τὴν Νινευὴ εἰς ἀφανισμὸν ἄνυδρον ὡς ἔρημον·",
+        "SYN": "И прострет Он руку Свою на север, и уничтожит Ассура, и обратит Ниневию в развалины, в место сухое, как пустыня,",
+        "NEO": "Il étendra aussi sa main contre le nord, il détruira Assur, et il fera de Ninive une solitude, aride comme le désert.",
+        "NAB": "He will stretch out his hand against the north, to destroy Assyria; He will make Nineveh a waste, dry as the desert.",
+        "VAT_ES": "El extenderá su mano contra el Norte y hará desaparecer a Asiria; convertirá a Nínive en una desolación, en una tierra árida como el desierto.",
+        "CEI": "Stenderà la mano anche al settentrione e distruggerà Assur, farà di Ninive una desolazione, arida come il deserto."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/רָבְצ֨וּ בְ/תוֹכָ֤/הּ עֲדָרִים֙ כָּל חַיְת/וֹ ג֔וֹי גַּם קָאַת֙ גַּם קִפֹּ֔ד בְּ/כַפְתֹּרֶ֖י/הָ יָלִ֑ינוּ ק֠וֹל יְשׁוֹרֵ֤ר בַּֽ/חַלּוֹן֙ חֹ֣רֶב בַּ/סַּ֔ף כִּ֥י אַרְזָ֖ה עֵרָֽה׃",
+        "LXX": "καὶ νεμήσονται ἐν μέσῳ αὐτῆς ποίμνια καὶ πάντα τὰ θηρία τῆς γῆς, καὶ χαμαιλέοντες καὶ ἐχῖνοι ἐν τοῖς φατνώμασιν αὐτῆς κοιτασθήσονται, καὶ θηρία φωνήσει ἐν τοῖς διορύγμασιν αὐτῆς, κόρακες ἐν τοῖς πυλῶσιν αὐτῆς, διότι κέδρος τὸ ἀνάστημα αὐτῆς.",
+        "SYN": "и покоиться будут среди нее стада и всякого рода животные; пеликан и еж будут ночевать в резных украшениях ее; голос их будет раздаваться в окнах, разрушение обнаружится на дверных столбах, ибо не станет на них кедровой обшивки.",
+        "NEO": "Au milieu d’elle prendront leur gîte des troupeaux, des animaux de toute espèce ; même le pélican, même le hérisson se logeront sur ses chapiteaux ; on entendra des chants dans les fenêtres, la désolation sera sur le seuil, car on a mis à nu les boiseries de cèdres.",
+        "NAB": "In her midst shall settle in droves all the wild life of the hollows; The screech owl and the desert owl shall roost in her columns; Their call shall resound from the window, the raven's croak from the doorway.",
+        "VAT_ES": "En medio de ella descansarán los rebaños, los animales de toda clase; hasta el pelícano y el erizo pasarán la noche en sus capiteles; el búho gritará en la ventana y el cuervo sobre el umbral, porque el maderaje de cedro ha sido arrancado.",
+        "CEI": "Alloggeranno in mezzo a lei, a branchi, tutti gli animali della valle. Anche il pellicano, anche il riccio albergheranno nei suoi capitelli; il gufo striderà sulle finestre e il corvo sulle soglie."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "זֹ֞֠את הָ/עִ֤יר הָ/עַלִּיזָה֙ הַ/יּוֹשֶׁ֣בֶת לָ/בֶ֔טַח הָ/אֹֽמְרָה֙ בִּ/לְבָבָ֔/הּ אֲנִ֖י וְ/אַפְסִ֣/י ע֑וֹד אֵ֣יךְ הָיְתָ֣ה לְ/שַׁמָּ֗ה מַרְבֵּץ֙ לַֽ/חַיָּ֔ה כֹּ֚ל עוֹבֵ֣ר עָלֶ֔י/הָ יִשְׁרֹ֖ק יָנִ֥יעַ יָדֽ/וֹ׃",
+        "SYN": "Вот чем будет город торжествующий, живущий беспечно, говорящий в сердце своем: \"я, и нет иного кроме меня\". Как он стал развалиною, логовищем для зверей! Всякий, проходя мимо него, посвищет и махнет рукою.",
+        "NEO": "C’est là la ville joyeuse, assise avec assurance, qui disait en son cœur : « Moi, et rien que moi ! » Comment est-elle devenue un désert, une demeure pour les bêtes ? Quiconque passera sur elle sifflera et agitera la main.",
+        "NAB": "Is this the exultant city that dwelt secure; That told herself, \"There is no other than I!\" How has she become a waste, a lair for wild beasts? Whoever passes by her hisses, and shakes his fist!",
+        "VAT_ES": "Así quedará la ciudad feliz, la que vivía segura y decía en su corazón: «&iexcl;Yo, y nadie más que yo!». &iquest;Cómo es que se ha convertido en una desolación, en un refugio de animales? Todos los que pasan junto a ella, silban y hacen gestos con la mano.",
+        "CEI": "È questa la città gaudente che si sentiva sicura e che pensava: \"Io e non altri all'infuori di me\"? Come mai è diventata un deserto, un rifugio di animali? Chiunque le passa vicino fischia e agita la mano."
+      }
+    }
+  }
+}

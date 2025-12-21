@@ -1,0 +1,356 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_025",
+  "book_key": "DEUT",
+  "sequence": 25,
+  "chapter_in": {
+    "MT": 25,
+    "VUL": 25,
+    "LXX": 25
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "כִּֽי יִהְיֶ֥ה רִיב֙ בֵּ֣ין אֲנָשִׁ֔ים וְ/נִגְּשׁ֥וּ אֶל הַ/מִּשְׁפָּ֖ט וּ/שְׁפָט֑וּ/ם וְ/הִצְדִּ֨יקוּ֙ אֶת הַ/צַּדִּ֔יק וְ/הִרְשִׁ֖יעוּ אֶת הָ/רָשָֽׁע׃",
+        "LXX": "Ἐὰν δὲ γένηται ἀντιλογία ἀνὰ μέσον ἀνθρώπων, καὶ προσέλθωσιν εἰς κρίσιν, καὶ δικαιώσωσιν τὸ δίκαιον καὶ καταγνῶσιν τοῦ ἀσεβοῦς·",
+        "VUL": "Si fuerit causa inter aliquos, et interpellaverint judices : quem justum esse perspexerint, illi justitiæ palmam dabunt : quem impium, condemnabunt impietatis.",
+        "SYN": "Если будет тяжба между людьми, то пусть приведут их в суд и рассудят их, правого пусть оправдают, а виновного осудят;",
+        "NEO": "Quand il s’élèvera une contestation entre des hommes, et qu’ils se seront présentés au jugement, qu’on les aura jugés, qu’on aura absous l’innocent et condamné le coupable,",
+        "NAB": "\"When men have a dispute and bring it to court, and a decision is handed down to them acquitting the innocent party and condemning the guilty party,",
+        "VAT_ES": "Si entre dos hombres se produce un litigio y ellos acuden a la justicia, se los juzgará, y se absolverá al inocente y se condenará al culpable.",
+        "CEI": "Quando sorgerà una lite fra alcuni uomini e verranno in giudizio, i giudici che sentenzieranno, assolveranno l'innocente e condanneranno il colpevole."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֛ה אִם בִּ֥ן הַכּ֖וֹת הָ/רָשָׁ֑ע וְ/הִפִּיל֤/וֹ הַ/שֹּׁפֵט֙ וְ/הִכָּ֣ה/וּ לְ/פָנָ֔י/ו כְּ/דֵ֥י רִשְׁעָת֖/וֹ בְּ/מִסְפָּֽר׃",
+        "LXX": "καὶ ἔσται ἐὰν ἄξιος ᾖ πληγῶν ὁ ἀσεβῶν, καθιεῖς αὐτὸν ἐναντίον αὐτῶν.",
+        "VUL": "Sin autem eum, qui peccavit, dignum viderint plagis : prosternent, et coram se facient verberari. Pro mensura peccati erit et plagarum modus :",
+        "SYN": "и если виновный достоин будет побоев, то судья пусть прикажет положить его и бить при себе, смотря по вине его, по счету;",
+        "NEO": "si le coupable a mérité d’être battu, le juge le fera étendre par terre et battre en sa présence d’un nombre de coups proportionné à sa faute.",
+        "NAB": "if the latter deserves stripes, the judge shall have him lie down and in his presence receive the number of stripes his guilt deserves.",
+        "VAT_ES": "Si este último merece ser apaleado, el juez lo obligará a tenderse en el suelo y lo hará castigar en su presencia, con un número de golpes proporcionados a su culpa.",
+        "CEI": "Se il colpevole avrà meritato di essere fustigato, il giudice lo farà stendere per terra e fustigare in sua presenza, con un numero di colpi proporzionati alla gravità della sua colpa."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אַרְבָּעִ֥ים יַכֶּ֖/נּוּ לֹ֣א יֹסִ֑יף פֶּן יֹסִ֨יף לְ/הַכֹּת֤/וֹ עַל אֵ֨לֶּה֙ מַכָּ֣ה רַבָּ֔ה וְ/נִקְלָ֥ה אָחִ֖י/ךָ לְ/עֵינֶֽי/ךָ׃",
+        "LXX": "καὶ ἀριθμῷ τεσσεράκοντα μαστιγώσουσιν αὐτόν, οὐ προσθήσουσιν· ἐὰν δὲ προσθῇς μαστιγῶσαι ὑπὲρ ταύτας τὰς πληγὰς πλείους, ἀσχημονήσει ὁ ἀδελφός σου ἐναντίον σου.",
+        "VUL": "ita dumtaxat, ut quadragenarium numerum non excedant : ne fde laceratus ante oculos tuos abeat frater tuus.",
+        "SYN": "сорок ударов можно дать ему, а не более, чтобы от многих ударов брат твой не был обезображен пред глазами твоими.",
+        "NEO": "Il ne lui fera pas donner plus de quarante coups, de peur que, si on continuait à le frapper de beaucoup de coups en plus de ceux-là, ton frère ne fût avili à tes yeux.",
+        "NAB": "Forty stripes may be given him, but no more; lest, if he were beaten with more stripes than these, your kinsman should be looked upon as disgraced because of the severity of the beating.",
+        "VAT_ES": "Podrá infligirle hasta cuarenta golpes, pero no más, no sea que castigándolo más de la cuenta, el castigo resulte excesivo y tu hermano quede envilecido a tus ojos.",
+        "CEI": "Gli farà dare non più di quaranta colpi, perché, aggiungendo altre battiture a queste, la punizione non risulti troppo grave e il tuo fratello resti infamato ai tuoi occhi."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "לֹא תַחְסֹ֥ם שׁ֖וֹר בְּ/דִישֽׁ/וֹ׃",
+        "LXX": "Οὐ φιμώσεις βοῦν ἀλοῶντα.",
+        "VUL": "Non ligabis os bovis terentis in area fruges tuas.",
+        "SYN": "Не заграждай рта волу, когда он молотит.",
+        "NEO": "Tu ne muselleras pas le bœuf, quand il foulera le grain.",
+        "NAB": "\"You shall not muzzle an ox when it is treading out grain.",
+        "VAT_ES": "No pondrás bozal al buey que trilla.",
+        "CEI": "Non metterai la museruola al bue, mentre sta trebbiando."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּֽי יֵשְׁב֨וּ אַחִ֜ים יַחְדָּ֗ו וּ/מֵ֨ת אַחַ֤ד מֵ/הֶם֙ וּ/בֵ֣ן אֵֽין ל֔/וֹ לֹֽא תִהְיֶ֧ה אֵֽשֶׁת הַ/מֵּ֛ת הַ/ח֖וּצָ/ה לְ/אִ֣ישׁ זָ֑ר יְבָמָ/הּ֙ יָבֹ֣א עָלֶ֔י/הָ וּ/לְקָחָ֥/הּ ל֛/וֹ לְ/אִשָּׁ֖ה וְ/יִבְּמָֽ/הּ׃",
+        "LXX": "Ἐὰν δὲ κατοικῶσιν ἀδελφοὶ ἐπὶ τὸ αὐτό, καὶ ἀποθάνῃ εἷς αὐτῶν, σπέρμα δὲ μὴ ἦν αὐτῷ, οὐκ ἔσται ἡ γυνὴ τοῦ τεθνηκότος ἔξω ἀνδρὶ μὴ ἐγγίζοντι· ὁ ἀδελφὸς τοῦ ἀνδρὸς αὐτῆς εἰσελεύσεται πρὸς αὐτὴν καὶ λήμψεται αὐτὴν ἑαυτῷ γυναῖκα καὶ συνοικήσει αὐτῇ.",
+        "VUL": "Quando habitaverint fratres simul, et unus ex eis absque liberis mortuus fuerit, uxor defuncti non nubet alteri : sed accipiet eam frater ejus, et suscitabit semen fratris sui :",
+        "SYN": "Если братья живут вместе и один из них умрет, не имея у себя сына, то жена умершего не должна выходить на сторону за человека чужого, но деверь ее должен войти к ней и взять ее себе в жену, и жить с нею, --",
+        "NEO": "Lorsque des frères demeurent ensemble, et que l’un d’eux meurt sans laisser de fils, la femme du défunt ne se mariera pas au dehors, à un étranger ; mais son beau-frère ira vers elle, la prendra pour femme, et remplira envers elle le devoir de beau-frère.",
+        "NAB": "\"When brothers live together and one of them dies without a son, the widow of the deceased shall not marry anyone outside the family; but her husband's brother shall go to her and perform the duty of a brother-in-law by marrying her.",
+        "VAT_ES": "Si varios hermanos viven juntos y uno de ellos muere sin tener hijos, la mujer del difunto no se casará con un extraño. El hermano del difunto se unirá con ella y cumplirá con su deber de cuñado.",
+        "CEI": "Quando i fratelli abiteranno insieme e uno di loro morirà senza lasciare figli, la moglie del defunto non si mariterà fuori, con un forestiero; il suo cognato verrà da lei e se la prenderà in moglie, compiendo così verso di lei il dovere del cognato;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה הַ/בְּכוֹר֙ אֲשֶׁ֣ר תֵּלֵ֔ד יָק֕וּם עַל שֵׁ֥ם אָחִ֖י/ו הַ/מֵּ֑ת וְ/לֹֽא יִמָּחֶ֥ה שְׁמ֖/וֹ מִ/יִּשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἔσται τὸ παιδίον ὃ ἐὰν τέκῃ κατασταθήσεται ἐκ τοῦ ὀνόματος τοῦ τετελευτηκότος, καὶ οὐκ ἐξαλειφθήσεται τὸ ὄνομα αὐτοῦ ἐξ Ἰσραήλ.",
+        "VUL": "et primogenitum ex ea filium nomine illius appellabit, ut non deleatur nomen ejus ex Israël.",
+        "SYN": "и первенец, которого она родит, останется с именем брата его умершего, чтоб имя его не изгладилось в Израиле.",
+        "NEO": "Le premier-né qu’elle mettra au monde succédera au frère défunt et prendra son nom, afin que ce nom ne soit pas effacé d’Israël.",
+        "NAB": "The first-born son she bears shall continue the line of the deceased brother, that his name may not be blotted out from Israel.",
+        "VAT_ES": "El primogénito que de ella nazca perpetuará el nombre del hermano difunto, y así su nombre no se borrará de Israel.",
+        "CEI": "il primogenito che essa metterà al mondo, andrà sotto il nome del fratello morto perché il nome di questo non si estingua in Israele."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/אִם לֹ֤א יַחְפֹּץ֙ הָ/אִ֔ישׁ לָ/קַ֖חַת אֶת יְבִמְתּ֑/וֹ וְ/עָלְתָה֩ יְבִמְתּ֨/וֹ הַ/שַּׁ֜עְרָ/ה אֶל הַ/זְּקֵנִ֗ים וְ/אָֽמְרָה֙ מֵאֵ֨ין יְבָמִ֜/י לְ/הָקִ֨ים לְ/אָחִ֥י/ו שֵׁם֙ בְּ/יִשְׂרָאֵ֔ל לֹ֥א אָבָ֖ה יַבְּמִֽ/י׃",
+        "LXX": "ἐὰν δὲ μὴ βούληται ὁ ἄνθρωπος λαβεῖν τὴν γυναῖκα τοῦ ἀδελφοῦ αὐτοῦ, καὶ ἀναβήσεται ἡ γυνὴ ἐπὶ τὴν πύλην ἐπὶ τὴν γερουσίαν καὶ ἐρεῖ Οὐ θέλει ὁ ἀδελφὸς τοῦ ἀνδρός μου ἀναστῆσαι τὸ ὄνομα τοῦ ἀδελφοῦ αὐτοῦ ἐν Ἰσραήλ· οὐκ ἠθέλησεν ὁ ἀδελφὸς τοῦ ἀνδρός μου.",
+        "VUL": "Sin autem noluerit accipere uxorem fratris sui, quæ ei lege debetur, perget mulier ad portam civitatis, et interpellabit majores natu, dicetque : Non vult frater viri mei suscitare nomen fratris sui in Israël, nec me in conjugem sumere.",
+        "SYN": "Если же он не захочет взять невестку свою, то невестка его пойдет к воротам, к старейшинам, и скажет: \"деверь мой отказывается восставить имя брата своего в Израиле, не хочет жениться на мне\";",
+        "NEO": "S’il ne plaît pas à cet homme de prendre sa belle-sœur, sa belle-sœur montera à la porte, vers les anciens, et dira : « Mon beau-frère refuse de faire revivre le nom de son frère en Israël ; il ne veut pas remplir, en m’épousant, son devoir de beau-frère. »",
+        "NAB": "If, however, a man does not care to marry his brother's wife, she shall go up to the elders at the gate and declare, 'My brother-in-law does not intend to perform his duty toward me and refuses to perpetuate his brother's name in Israel.'",
+        "VAT_ES": "Pero si el cuñado se niega a tomarla por esposa, ella subirá a la puerta de la ciudad donde están los ancianos, y dirá: «Mi cuñado se niega a perpetuar en Israel el nombre de su hermano; y no está dispuesto a cumplir en mi favor sus deberes de cuñado».",
+        "CEI": "Ma se quell'uomo non ha piacere di prendere la cognata, essa salirà alla porta degli anziani e dirà: Mio cognato rifiuta di assicurare in Israele il nome del fratello; non acconsente a compiere verso di me il dovere del cognato."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/קָֽרְאוּ ל֥/וֹ זִקְנֵי עִיר֖/וֹ וְ/דִבְּר֣וּ אֵלָ֑י/ו וְ/עָמַ֣ד וְ/אָמַ֔ר לֹ֥א חָפַ֖צְתִּי לְ/קַחְתָּֽ/הּ׃",
+        "LXX": "καὶ καλέσουσιν αὐτὸν ἡ γερουσία τῆς πόλεως αὐτοῦ καὶ ἐροῦσιν αὐτῷ, καὶ στὰς εἴπῃ Οὐ βούλομαι λαβεῖν αὐτήν·",
+        "VUL": "Statimque accersiri eum facient, et interrogabunt. Si responderit : Nolo eam uxorem accipere :",
+        "SYN": "тогда старейшины города его должны призвать его и уговаривать его, и если он станет и скажет: \"не хочу взять ее\",",
+        "NEO": "Alors les anciens de la ville l’appelleront et lui parleront. S’il persiste et dit : « Il ne me plaît pas de la prendre, »",
+        "NAB": "Thereupon the elders of his city shall summon him and admonish him. If he persists in saying, 'I am not willing to marry her,'",
+        "VAT_ES": "Entonces los ancianos de su ciudad llamarán a ese hombre y le pedirán una explicación. Si él persiste en su negativa, diciendo: «No quiero casarme con ella»,",
+        "CEI": "Allora gli anziani della sua città lo chiameranno e gli parleranno; se egli persiste e dice: Non ho piacere di prenderla,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/נִגְּשָׁ֨ה יְבִמְתּ֣/וֹ אֵלָי/ו֮ לְ/עֵינֵ֣י הַ/זְּקֵנִים֒ וְ/חָלְצָ֤ה נַעֲל/וֹ֙ מֵ/עַ֣ל רַגְל֔/וֹ וְ/יָרְקָ֖ה בְּ/פָנָ֑י/ו וְ/עָֽנְתָה֙ וְ/אָ֣מְרָ֔ה כָּ֚כָה יֵעָשֶׂ֣ה לָ/אִ֔ישׁ אֲשֶׁ֥ר לֹא יִבְנֶ֖ה אֶת בֵּ֥ית אָחִֽי/ו׃",
+        "LXX": "καὶ προσελθοῦσα ἡ γυνὴ τοῦ ἀδελφοῦ αὐτοῦ ἔναντι τῆς γερουσίας, καὶ ὑπολύσει τὸ ὑπόδημα αὐτοῦ τὸ ἓν ἀπὸ τοῦ ποδὸς αὐτοῦ, καὶ ἐμπτύσεται κατὰ πρόσωπον αὐτοῦ, καὶ ἀποκριθεῖσα ἐρεῖ Οὕτως ποιήσουσιν τῷ ἀνθρώπῳ ὃς οὐκ οἰκοδομήσει τὸν οἶκον τοῦ ἀδελφοῦ αὐτοῦ ἐν Ἰσραήλ·",
+        "VUL": "accedet mulier ad eum coram senioribus, et tollet calceamentum de pede ejus, spuetque in faciem illius, et dicet : Sic fiet homini, qui non ædificat domum fratris sui.",
+        "SYN": "_тогда_ невестка его пусть пойдет к нему в глазах старейшин, и снимет сапог его с ноги его, и плюнет в лице его, и скажет: \"так поступают с человеком, который не созидает дома брату своему [у Израиля]\";",
+        "NEO": "sa belle-sœur s’approchera de lui en présence des anciens, lui ôtera son soulier du pied et lui crachera au visage, en disant : « Ainsi sera fait à l’homme qui ne relève pas la maison de son frère. »",
+        "NAB": "his sister-in-law, in the presence of the elders, shall go up to him and strip his sandal from his foot and spit in his face, saying publicly, 'This is how one should be treated who will not build up his brother's family!'",
+        "VAT_ES": "su cuñada se acercará a él en presencia de los ancianos, le quitará la sandalia del pie, lo escupirá en la cara y le dirá: «Así se debe obrar con el hombre que no edifica la casa de su hermano».",
+        "CEI": "allora sua cognata gli si avvicinerà in presenza degli anziani, gli toglierà il sandalo dal piede, gli sputerà in faccia e prendendo la parola dirà: Così sarà fatto all'uomo che non vuole ricostruire la famiglia del fratello."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/נִקְרָ֥א שְׁמ֖/וֹ בְּ/יִשְׂרָאֵ֑ל בֵּ֖ית חֲל֥וּץ הַ/נָּֽעַל׃",
+        "LXX": "καὶ κληθήσεται τὸ ὄνομα αὐτοῦ ἐν Ἰσραὴλ Οἶκος τοῦ ὑπολυθέντος τὸ ὑπόδημα.",
+        "VUL": "Et vocabitur nomen illius in Israël, Domus discalceati.",
+        "SYN": "и нарекут ему имя в Израиле: дом разутого.",
+        "NEO": "Et sa maison sera appelée en Israël la maison du déchaussé.",
+        "NAB": "And his lineage shall be spoken of in Israel as 'the family of the man stripped of his sandal.'",
+        "VAT_ES": "Y en adelante, se lo apodará en Israel: «Casa del descalzo».",
+        "CEI": "La famiglia di lui sarà chiamata in Israele la famiglia dello scalzato."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּֽי יִנָּצ֨וּ אֲנָשִׁ֤ים יַחְדָּו֙ אִ֣ישׁ וְ/אָחִ֔י/ו וְ/קָֽרְבָה֙ אֵ֣שֶׁת הָֽ/אֶחָ֔ד לְ/הַצִּ֥יל אֶת אִישָׁ֖/הּ מִ/יַּ֣ד מַכֵּ֑ה/וּ וְ/שָׁלְחָ֣ה יָדָ֔/הּ וְ/הֶחֱזִ֖יקָה בִּ/מְבֻשָֽׁי/ו׃",
+        "LXX": "Ἐὰν δὲ μάχωνται ἄνθρωποι ἐπὶ τὸ αὐτό, ἄνθρωπος μετὰ τοῦ ἀδελφοῦ αὐτοῦ, καὶ προσέλθῃ γυνὴ ἑνὸς αὐτῶν ἐξελέσθαι τὸν ἄνδρα αὐτῆς ἐκ χειρὸς τοῦ τύπτοντος αὐτόν, καὶ ἐκτείνασα τὴν χεῖρα ἐπιλάβηται τῶν διδύμων αὐτοῦ,",
+        "VUL": "Si habuerint inter se jurgium viri duo, et unus contra alterum rixari cperit, volensque uxor alterius eruere virum suum de manu fortioris, miseritque manum, et apprehenderit verenda ejus :",
+        "SYN": "Когда дерутся между собою мужчины, и жена одного [из них] подойдет, чтобы отнять мужа своего из рук бьющего его, и протянув руку свою, схватит его за срамный уд,",
+        "NEO": "Lorsque des hommes se battront ensemble, un homme et son frère, si la femme de l’un s’approche pour délivrer son mari de la main de celui qui le frappe, et que, avançant la main, elle saisisse ce dernier par les parties honteuses,",
+        "NAB": "\"When two men are fighting and the wife of one intervenes to save her husband from the blows of his opponent, if she stretches out her hand and seizes the latter by his private parts,",
+        "VAT_ES": "Si unos hombres se pelean, y la mujer de uno de ellos, para librar a su marido de los golpes del otro, extiende la mano y lo toma por las partes genitales,",
+        "CEI": "Se alcuni verranno a contesa fra di loro e la moglie dell'uno si avvicinerà per liberare il marito dalle mani di chi lo percuote e stenderà la mano per afferrare costui nelle parti vergognose,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/קַצֹּתָ֖ה אֶת כַּפָּ֑/הּ לֹ֥א תָח֖וֹס עֵינֶֽ/ךָ׃",
+        "LXX": "ἀποκόψεις τὴν χεῖρα· οὐ φείσεται ὁ ὀφθαλμός σου ἐπ’ αὐτῇ.",
+        "VUL": "abscides manum illius, nec flecteris super eam ulla misericordia.",
+        "SYN": "то отсеки руку ее: да не пощадит [ее] глаз твой.",
+        "NEO": "tu lui couperas la main ; ton œil sera sans pitié.",
+        "NAB": "you shall chop off her hand without pity.",
+        "VAT_ES": "deberás cortarle la mano sin tenerle compasión.",
+        "CEI": "tu le taglierai la mano e l'occhio tuo non dovrà averne compassione."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "לֹֽא יִהְיֶ֥ה לְ/ךָ֛ בְּ/כִֽיסְ/ךָ֖ אֶ֣בֶן וָ/אָ֑בֶן גְּדוֹלָ֖ה וּ/קְטַנָּֽה׃",
+        "LXX": "Οὐκ ἔσται σοι ἐν τῷ μαρσίππῳ στάθμιον καὶ στάθμιον, μέγα ἢ μικρόν·",
+        "VUL": "Non habebis in sacculo diversa pondera, majus et minus :",
+        "SYN": "В кисе твоей не должны быть двоякие гири, большие и меньшие;",
+        "NEO": "Tu n’auras pas dans ton sac deux sortes de poids, un gros et un petit.",
+        "NAB": "\"You shall not keep two differing weights in your bag, one large and the other small;",
+        "VAT_ES": "No tendrás en tu bolsa dos pesas, una liviana y otra pesada.",
+        "CEI": "Non avrai nel tuo sacco due pesi diversi, uno grande e uno piccolo."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לֹא יִהְיֶ֥ה לְ/ךָ֛ בְּ/בֵיתְ/ךָ֖ אֵיפָ֣ה וְ/אֵיפָ֑ה גְּדוֹלָ֖ה וּ/קְטַנָּֽה׃",
+        "LXX": "οὐκ ἔσται ἐν τῇ οἰκίᾳ σου μέτρον καὶ μέτρον, μέγα ἢ μικρόν·",
+        "VUL": "nec erit in domo tua modius major, et minor.",
+        "SYN": "в доме твоем не должна быть двоякая ефа, большая и меньшая;",
+        "NEO": "Tu n’auras pas dans ta maison deux sortes d’épha, un grand et un petit.",
+        "NAB": "nor shall you keep two different measures in your house, one large and the other small.",
+        "VAT_ES": "No tendrás en tu casa dos medidas, una grande y otra pequeña.",
+        "CEI": "Non avrai in casa due tipi di efa, una grande e una piccola."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אֶ֣בֶן שְׁלֵמָ֤ה וָ/צֶ֨דֶק֙ יִֽהְיֶה לָּ֔/ךְ אֵיפָ֧ה שְׁלֵמָ֛ה וָ/צֶ֖דֶק יִֽהְיֶה לָּ֑/ךְ לְמַ֨עַן֙ יַאֲרִ֣יכוּ יָמֶ֔י/ךָ עַ֚ל הָֽ/אֲדָמָ֔ה אֲשֶׁר יְהוָ֥ה אֱלֹהֶ֖י/ךָ נֹתֵ֥ן לָֽ/ךְ׃",
+        "LXX": "στάθμιον ἀληθινὸν καὶ δίκαιον ἔσται σοι, ἵνα πολυήμερος γένῃ ἐπὶ τῆς γῆς ἧς Κύριος ὁ θεός σου δίδωσίν σοι ἐν κλήρῳ.",
+        "VUL": "Pondus habebis justum et verum, et modius æqualis et verus erit tibi : ut multo vivas tempore super terram, quam Dominus Deus tuus dederit tibi.",
+        "SYN": "гиря у тебя должна быть точная и правильная, и ефа у тебя должна быть точная и правильная, чтобы продлились дни твои на земле, которую Господь Бог твой дает тебе [в удел];",
+        "NEO": "Tu auras un poids exact et juste, tu auras un épha exact et juste, afin que tes jours se prolongent dans la terre que te donne \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu.",
+        "NAB": "But use a true and just weight, and a true and just measure, that you may have a long life on the land which the LORD, your God, is giving you.",
+        "VAT_ES": "Deberás tener una pesa exacta y justa, y también una medida exacta y justa, para gozar de una larga vida en el suelo que El Señor, tu Dios, te da.",
+        "CEI": "Terrai un peso completo e giusto, terrai un'efa completa e giusta, perché tu possa aver lunga vita nel paese che il Signore tuo Dio sta per darti."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "כִּ֧י תוֹעֲבַ֛ת יְהוָ֥ה אֱלֹהֶ֖י/ךָ כָּל עֹ֣שֵׂה אֵ֑לֶּה כֹּ֖ל עֹ֥שֵׂה עָֽוֶל׃",
+        "VUL": "Abominatur enim Dominus tuus eum qui facit hæc, et aversatur omnem injustitiam.",
+        "SYN": "ибо мерзок пред Господом Богом твоим всякий делающий неправду.",
+        "NEO": "Car il est en abomination à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, celui qui fait ces choses, qui commet une iniquité.",
+        "NAB": "Everyone who is dishonest in any of these matters is an abomination to the LORD, your God.",
+        "VAT_ES": "Porque él considera abominable a que procede de esa manera, a cualquiera que comete una injusticia.",
+        "CEI": "Poiché chiunque compie tali cose, chiunque commette ingiustizia è in abominio al Signore tuo Dio."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "זָכ֕וֹר אֵ֛ת אֲשֶׁר עָשָׂ֥ה לְ/ךָ֖ עֲמָלֵ֑ק בַּ/דֶּ֖רֶךְ בְּ/צֵאתְ/כֶ֥ם מִ/מִּצְרָֽיִם׃",
+        "LXX": "Μνήσθητι ὅσα ἐποίησέν σοι Ἀμαλὴκ ἐν τῇ ὁδῷ ἐκπορευομένου σου ἐκ γῆς Αἰγύπτου,",
+        "VUL": "Memento quæ fecerit tibi Amalec in via quando egrediebaris ex Ægypto :",
+        "SYN": "Помни, как поступил с тобою Амалик на пути, когда вы шли из Египта:",
+        "NEO": "Souviens-toi de ce que te fit Amalec pendant le voyage, lorsque tu sortis de l’Égypte,",
+        "NAB": "\"Bear in mind what Amalek did to you on the journey after you left Egypt,",
+        "VAT_ES": "Recuerda lo que te hizo Amalec cuando ustedes iban por el camino, después que salieron de Egipto:",
+        "CEI": "Ricordati di ciò che ti ha fatto Amalek lungo il cammino quando uscivate dall'Egitto:"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֨ר קָֽרְ/ךָ֜ בַּ/דֶּ֗רֶךְ וַ/יְזַנֵּ֤ב בְּ/ךָ֙ כָּל הַ/נֶּחֱשָׁלִ֣ים אַֽחַרֶ֔י/ךָ וְ/אַתָּ֖ה עָיֵ֣ף וְ/יָגֵ֑עַ וְ/לֹ֥א יָרֵ֖א אֱלֹהִֽים׃",
+        "LXX": "πῶς ἀντέστη σοι ἐν τῇ ὁδῷ καὶ ἔκοψέν σου τὴν οὐραγίαν, τοὺς κοπιῶντας ὀπίσω σου, σὺ δὲ ἐπείνας καὶ ἐκοπίας, καὶ οὐκ ἐφοβήθη τὸν θεόν·",
+        "VUL": "quomodo occurrerit tibi, et extremos agminis tui, qui lassi residebant, ceciderit, quando tu eras fame et labore confectus : et non timuerit Deum.",
+        "SYN": "как он встретил тебя на пути, и побил сзади тебя всех ослабевших, когда ты устал и утомился, и не побоялся он Бога;",
+        "NEO": "comment il te rencontra en route, et tomba sur toi par derrière, sur tous ceux qui étaient épuisés derrière toi, et toi tu étais fatigué et sans force, et il n’eut aucune crainte de Dieu.",
+        "NAB": "how without fear of any god he harassed you along the way, weak and weary as you were, and cut off at the rear all those who lagged behind.",
+        "VAT_ES": "cómo te salió el paso y atacó por la espalda a todos los que se habían quedado a la retaguardia, agotados por el cansancio. Entonces tú estabas fatigado y sin fuerzas, pero él no tuvo temor de Dios.",
+        "CEI": "come ti assalì lungo il cammino e aggredì nella tua carovana tutti i più deboli della retroguardia, mentre tu eri stanco e sfinito, e non ebbe alcun timor di Dio."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֡ה בְּ/הָנִ֣יחַ יְהוָ֣ה אֱלֹהֶ֣י/ךָ לְ֠/ךָ מִ/כָּל אֹ֨יְבֶ֜י/ךָ מִ/סָּבִ֗יב בָּ/אָ֨רֶץ֙ אֲשֶׁ֣ר יְהוָֽה אֱ֠לֹהֶי/ךָ נֹתֵ֨ן לְ/ךָ֤ נַחֲלָה֙ לְ/רִשְׁתָּ֔/הּ תִּמְחֶה֙ אֶת זֵ֣כֶר עֲמָלֵ֔ק מִ/תַּ֖חַת הַ/שָּׁמָ֑יִם לֹ֖א תִּשְׁכָּֽח׃",
+        "LXX": "καὶ ἔσται ἡνίκα ἐὰν καταπαύσῃ σε Κύριος ὁ θεός σου ἀπὸ πάντων τῶν ἐχθρῶν σου τῶν κύκλῳ σου ἐν τῇ γῇ ᾗ Κύριος ὁ θεός σου δίδωσίν σοι κληρονομῆσαι, ἐξαλείψεις τὸ ὄνομα Ἀμαλὴκ ἐκ τῆς ὑπὸ τὸν οὐρανόν, καὶ οὐ μὴ ἐπιλάθῃ.",
+        "VUL": "Cum ergo Dominus Deus tuus dederit tibi requiem, et subjecerit cunctas per circuitum nationes in terra, quam tibi pollicitus est : delebis nomen ejus sub cælo. Cave ne obliviscaris.",
+        "SYN": "итак, когда Господь Бог твой успокоит тебя от всех врагов твоих со всех сторон, на земле, которую Господь Бог твой дает тебе в удел, чтоб овладеть ею, изгладь память Амалика из поднебесной; не забудь.",
+        "NEO": "Quand \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’aura donné du repos, t’ayant délivré de tous tes ennemis d’alentour, dans le pays que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te donne en héritage pour le posséder, tu effaceras la mémoire d’Amalec de dessous le ciel : ne l’oublie pas.",
+        "NAB": "Therefore, when the LORD, your God, gives you rest from all your enemies round about in the land which he is giving you to occupy as your heritage, you shall blot out the memory of Amalek from under the heavens. Do not forget!",
+        "VAT_ES": "Por eso, cuando el Señor, tu Dios, te libre definitivamente de todos los enemigos que están a tu alrededor, en la tierra que él te dará en herencia, borrarás de todas partes el recuerdo de Amalec. &iexcl;No lo olvides!",
+        "CEI": "Quando dunque il Signore tuo Dio ti avrà assicurato tranquillità, liberandoti da tutti i tuoi nemici all'intorno nel paese che il Signore tuo Dio sta per darti in eredità, cancellerai la memoria di Amalek sotto al cielo: non dimenticare!"
+      }
+    }
+  }
+}

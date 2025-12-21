@@ -1,0 +1,369 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "SAPI_017",
+  "book_key": "SAPI",
+  "sequence": 17,
+  "chapter_in": {
+    "MT": 17,
+    "VUL": 17,
+    "LXX": 17
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Μεγάλαι γάρ σου αἱ κρίσεις καὶ δυσδιήγητοι· διὰ τοῦτο ἀπαίδευτοι ψυχαὶ ἐπλανήθησαν.",
+        "VUL": "[Magna sunt enim judicia tua, Domine,/ et inenarrabilia verba tua :/ propter hoc indisciplinatæ animæ erraverunt./",
+        "SYN": "Велики и непостижимы суды Твои, посему ненаученные души впали в заблуждение.",
+        "NEO": "Car vos jugements sont grands et difficiles à expliquer ; aussi les âmes sans instruction se sont-elles égarées.",
+        "NAB": "For great are your judgments, and hardly to be described; therefore the unruly souls were wrong.",
+        "VAT_ES": "Grandes e inenarrables son tus juicios, por eso, las almas ignorantes se extraviaron.",
+        "CEI": "I tuoi giudizi sono grandi e difficili da spiegare, per questo le anime grossolane furono tratte in errore."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ὑπειληφότες γὰρ καταδυναστεύειν ἔθνος ἅγιον ἄνομοι, δέσμιοι σκότους καὶ μακρᾶς πεδῆται νυκτὸς κατακλεισθέντες ὀρόφοις, φυγάδες τῆς αἰωνίου προνοίας ἔκειντο.",
+        "VUL": "Dum enim persuasum habent iniqui/ posse dominari nationi sanctæ,/ vinculis tenebrarum et longæ noctis compediti,/ inclusi sub tectis,/ fugitivi perpetuæ providentiæ jacuerunt./",
+        "SYN": "Ибо беззаконные, которые задумали угнетать святой народ, узники тьмы и пленники долгой ночи, затворившись в домах, скрывались от вечного Промысла.",
+        "NEO": "Alors que les méchants s’étaient persuadés qu’ils pouvaient opprimer la nation sainte, enchaînés par les ténèbres et prisonniers d’une longue nuit, enfermés sous leur toit, ils gisaient là, fuyant eux-mêmes votre incessante providence.",
+        "NAB": "For when the lawless thought to enslave the holy nation, shackled with darkness, fettered by the long night, they lay confined beneath their own roofs as exiles from the eternal providence.",
+        "VAT_ES": "Porque cuando los impíos pensaban que podían oprimir a una nación santa, yacían encadenados en las tinieblas, prisioneros de una larga noche, encerrados bajo sus techos, excluidos de la providencia eterna.",
+        "CEI": "Gli iniqui credendo di dominare il popolo santo, incatenati nelle tenebre e prigionieri di una lunga notte, chiusi nelle case, giacevano esclusi dalla provvidenza eterna."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "λανθάνειν γὰρ νομίζοντες ἐπὶ κρυφαίοις ἁμαρτήμασιν, ἀφεγγεῖ λήθης παρακαλύμματι ἐσκορπίσθησαν, θαμβούμενοι δεινῶς καὶ ἰνδάλμασιν ἐκταρασσόμενοι·",
+        "VUL": "Et dum putant se latere in obscuris peccatis,/ tenebroso oblivionis velamento dispersi sunt,/ paventes horrende,/ et cum admiratione nimia perturbati./",
+        "SYN": "Думая укрыться в тайных грехах, они, под темным покровом забвения, рассеялись, сильно устрашаемые и смущаемые призраками,",
+        "NEO": "Alors qu’ils imaginaient rester cachés avec leurs péchés secrets, sous le voile épais de l’oubli, ils furent dispersés, saisis d’une horrible épouvante, et effrayés par des fantômes.",
+        "NAB": "For they who supposed their secret sins were hid under the dark veil of oblivion Were scattered in fearful trembling, terrified by apparitions.",
+        "VAT_ES": "Ellos pensaban mantenerse ocultos con sus pecados secretos, bajo el oscuro velo del olvido, pero fueron dispersados, presa de terrible espanto, y aterrorizados por fantasmas.",
+        "CEI": "Credendo di restar nascosti con i loro peccati segreti, sotto il velo opaco dell'oblio, furono dispersi, colpiti da spavento terribile e tutti agitati da fantasmi."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "οὐδὲ γὰρ ὁ κατέχων αὐτοὺς μυχὸς ἀφόβως διεφύλασσεν, ἦχοι δ’ ἐκταράσσοντες αὐτοὺς περιεκόμπουν, καὶ φάσματα ἀμειδήτοις κατηφῆ προσώποις ἐνεφανίζετο.",
+        "VUL": "Neque enim quæ continebat illos spelunca sine timore custodiebat,/ quoniam sonitus descendens perturbabat illos,/ et personæ tristes illis apparentes pavorem illis præstabant./",
+        "SYN": "ибо и самое потаенное место, заключавшее их, не спасало их от страха, но страшные звуки вокруг них приводили их в смущение, и являлись свирепые чудовища со страшными лицами.",
+        "NEO": "Les réduits où ils se renfermaient ne les préservaient pas de la crainte : des bruits effrayants retentissaient autour d’eux, et des spectres leur apparaissaient avec des visages lugubres.",
+        "NAB": "For not even their inner chambers kept them fearless, for crashing sounds on all sides terrified them, and mute phantoms with somber looks appeared.",
+        "VAT_ES": "Porque el reducto que los protegía no los preservaba del miedo; ruidos estremecedores resonaban a su alrededor y se les aparecían espectros lúgubres, de rostro sombrío.",
+        "CEI": "Neppure il nascondiglio in cui si trovavano li preservò dal timore, ma suoni spaventosi rimbombavano intorno a loro, fantasmi lugubri dai volti tristi apparivano."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "καὶ πυρὸς μὲν οὐδεμία βία κατίσχυεν φωτίζειν, οὔτε ἄστρων ἔκλαμπροι φλόγες καταυγάζειν ὑπέμενον τὴν στυγνὴν ἐκείνην νύκτα.",
+        "VUL": "Et ignis quidem nulla vis poterat illis lumen præbere,/ nec siderum limpidæ flammæ/ illuminare poterant illam noctem horrendam./",
+        "SYN": "И никакая сила огня не могла озарить, ни яркий блеск звезд не в состоянии был осветить этой мрачной ночи.",
+        "NEO": "Il n’y avait pas de feu capable de donner de la lumière, et les flammes brillantes des astres ne pouvaient éclairer cette horrible nuit.",
+        "NAB": "No force, even of fire, was able to give light, nor did the flaming brilliance of the stars succeed in lighting up that gloomy night.",
+        "VAT_ES": "Ningún fuego tenía fuerza suficiente para alumbrar, ni el resplandor brillante de las estrellas lograba iluminar aquella horrible noche.",
+        "CEI": "Nessun fuoco, per quanto intenso riusciva a far luce, neppure le luci splendenti degli astri riuscivano a rischiarare quella cupa notte."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "διεφαίνετο δ’ αὐτοῖς μόνον αὐτομάτη πυρὰ φόβου πλήρης, ἐκδειματούμενοι δὲ τῆς μὴ θεωρουμένης ἐκείνης ὄψεως ἡγοῦντο χείρω τὰ βλεπόμενα.",
+        "VUL": "Apparebat autem illis subitaneus ignis, timore plenus ;/ et timore perculsi illius quæ non videbatur faciei,/ æstimabant deteriora esse quæ videbantur./",
+        "SYN": "Являлись им только сами собою горящие костры, полные ужаса, и они, страшась невидимого - призрака, представляли себе видимое еще худшим.",
+        "NEO": "Parfois seulement, leur apparaissait une masse de feu, allumée d’elle-même, effrayante, et, épouvantés de cette vision dont ils n’apercevaient pas la cause, ils jugeaient ces apparitions plus terribles encore.",
+        "NAB": "But only intermittent, fearful fires flashed through upon them; And in their terror they thought beholding these was worse than the times when that sight was no longer to be seen.",
+        "VAT_ES": "Solamente brillaba para ellos una masa de fuego que se encendía por sí misma, sembrando el terror, y una vez desaparecida aquella visión, quedaban aterrados y consideraban lo que habían visto peor de lo que era.",
+        "CEI": "Appariva loro solo una massa di fuoco, improvvisa, spaventosa; atterriti da quella fugace visione, credevano ancora peggiori le cose viste."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "μαγικῆς δὲ ἐμπαίγματα κατέκειτο τέχνης, καὶ τῆς ἐπὶ φρονήσει ἀλαζονίας ἔλεγχος ἐφύβριστος·",
+        "VUL": "Et magicæ artis appositi erant derisus,/ et sapientiæ gloriæ correptio cum contumelia./",
+        "SYN": "Пали обольщения волшебного искусства, и хвастовство мудростью подверглось посмеянию,",
+        "NEO": "L’art dérisoire des magiciens était à bout, et leur prétention à la sagesse honteusement convaincue de fausseté.",
+        "NAB": "And mockeries of the magic art were in readiness, and a jeering reproof of their vaunted shrewdness.",
+        "VAT_ES": "Los artificios de la magia resultaban ineficaces, y su pretendida ciencia quedaba vergonzosamente desmentida,",
+        "CEI": "Fallivano i ritrovati della magìa, e la loro baldanzosa pretesa di sapienza."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "οἱ γὰρ ὑπισχνούμενοι δείματα καὶ ταραχὰς ἀπελαύνειν ψυχῆς νοσούσης, οὗτοι καταγέλαστον εὐλάβειαν ἐνόσουν.",
+        "VUL": "Illi enim qui promittebant/ timores et perturbationes expellere se ab anima languente,/ hi cum derisu pleni timore languebant./",
+        "SYN": "ибо обещавшиеся отогнать от страдавшей души ужасы и страхи, сами страдали позорною боязливостью.",
+        "NEO": "Eux qui se faisaient forts de chasser des âmes malades la terreur et le trouble, ils étaient malades eux-mêmes d’une peur ridicule.",
+        "NAB": "For they who undertook to banish fears and terrors from the sick soul themselves sickened with a ridiculous fear.",
+        "VAT_ES": "porque los que prometían liberar las almas enfermas de temores y sobresaltos, estaban, ellos mismos, enfermos de un temor ridículo.",
+        "CEI": "Promettevano di cacciare timori e inquietudini dall'anima malata, e cadevano malati per uno spavento ridicolo."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "καὶ γὰρ εἰ μηδὲν αὐτοὺς ταραχῶδες ἐφόβει, κνωδάλων παρόδοις καὶ ἑρπετῶν συριγμοῖς ἐκσεσοβημένοι,",
+        "VUL": "Nam etsi nihil illos ex monstris perturbabat,/ transitu animalium et serpentium sibilatione commoti,/ tremebundi peribant,/ et aërem quem nulla ratione quis effugere posset, negantes se videre./",
+        "SYN": "И хотя никакие устрашения не тревожили их, но, преследуемые брожениями ядовитых зверей и свистами пресмыкающихся, они исчезали от страха, боясь взглянуть даже на воздух, от которого никуда нельзя убежать,",
+        "NEO": "Car, quoiqu’il n’y eût rien de terrible pour les effrayer, le passage des animaux et le sifflement des serpents les terrifiaient ;",
+        "NAB": "For even though no monstrous thing frightened them, they shook at the passing of insects and the hissing of reptiles,",
+        "VAT_ES": "Aunque nada terrorífico les infundiera temor, horrorizados por el paso de los bichos y el silbido de los reptiles,",
+        "CEI": "Anche se nulla di spaventoso li atterriva, spaventati al passare delle bestiole e ai sibili dei rettili, morivano di tremore, rifiutando persino di guardare l'aria, a cui nessuno può sottrarsi."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "διώλλυντο ἔντρομοι καὶ τὸν μηδαμόθεν φευκτὸν ἀέρα προσιδεῖν ἀρνούμενοι.",
+        "VUL": "Cum sit enim timida nequitia,/ dat testimonium condemnationis :/ semper enim præsumit sæva,/ perturbata conscientia :/",
+        "SYN": "ибо осуждаемое собственным свидетельством нечестие боязливо и, преследуемое совестью, всегда придумывает ужасы.",
+        "NEO": "et ils mouraient de frayeur, se refusant à voir cet air auquel nul ne peut échapper.",
+        "NAB": "And perished trembling, reluctant to face even the air that they could nowhere escape.",
+        "VAT_ES": "se morían de miedo, y hasta rehusaban mirar el aire, del que nadie puede escapar.",
+        "CEI": "La malvagità condannata dalla propria testimonianza è qualcosa di vile e oppressa dalla coscienza presume sempre il peggio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "δειλὸν γὰρ ἰδίως πονηρία μαρτυρεῖ καταδικαζομένη, ἀεὶ δὲ προσείληφεν τὰ χαλεπὰ συνεχομένη τῇ συνειδήσει.",
+        "VUL": "nihil enim est timor nisi proditio cogitationis auxiliorum./",
+        "SYN": "Страх есть не что иное, как лишение помощи от рассудка.",
+        "NEO": "— Car la perversité est craintive, condamnée qu’elle est par son propre témoignage ; pressée par sa conscience, elle s’exagère toujours le mal.",
+        "NAB": "For wickedness, of its nature cowardly, testifies in its own condemnation, and because of a distressed conscience, always magnifies misfortunes.",
+        "VAT_ES": "Porque la maldad es cobarde y su propio testimonio la condena: acosada por la conciencia, imagina siempre lo peor.",
+        "CEI": "Il timore infatti non è altro che rinunzia agli aiuti della ragione;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "οὐθὲν γάρ ἐστιν φόβος εἰ μὴ προδοσία τῶν ἀπὸ λογισμοῦ βοηθημάτων·",
+        "VUL": "Et dum ab intus minor est exspectatio,/ majorem computat inscientiam ejus causæ,/ de qua tormentum præstat./",
+        "SYN": "Чем меньше надежды внутри, тем больше представляется неизвестность причины, производящей мучение.",
+        "NEO": "La crainte, en effet, n’est pas autre chose que l’abandon des secours qu’apporterait la réflexion.",
+        "NAB": "For fear is nought but the surrender of the helps that come from reason;",
+        "VAT_ES": "El miedo, en efecto, no es sino el abandono de la ayuda que da la reflexión:",
+        "CEI": "quanto meno nell'intimo ci si aspetta da essi, tanto più grave si stima l'ignoranza della causa che produce il tormento."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "ἔνδοθεν δὲ οὖσα ἥττων ἡ προσδοκία πλείονα λογίζεται τὴν ἄγνοιαν τῆς παρεχούσης τὴν βάσανον αἰτίας.",
+        "VUL": "Illi autem qui impotentem vere noctem,/ et ab infimis et ab altissimis inferis supervenientem,/ eumdem somnum dormientes,/",
+        "SYN": "И они в эту истинно невыносимую и из глубин нестерпимого ада исшедшую ночь, располагаясь заснуть обыкновенным сном,",
+        "NEO": "L’espérance étant moindre au fond du cœur, on s’effraie d’autant plus d’ignorer la cause de ses tourments. —",
+        "NAB": "and the more one's expectation is of itself uncertain, the more one makes of not knowing the cause that brings on torment.",
+        "VAT_ES": "cuanto menos se cuenta con esa seguridad interior, tanto más grave se considera ignorar la causa del tormento.",
+        "CEI": "Ma essi durante tale notte davvero impotente, uscita dai recessi impenetrabili degli inferi senza potere, intorpiditi da un medesimo sonno,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "οἱ δὲ τὴν ἀδύνατον ὄντως νύκτα καὶ ἐξ ἀδυνάτου ᾅδου μυχῶν ἐπελθοῦσαν τὸν αὐτὸν ὕπνον κοιμώμενοι,",
+        "VUL": "aliquando monstrorum exagitabantur timore,/ aliquando animæ deficiebant traductione :/ subitaneus enim illis et insperatus timor supervenerat./",
+        "SYN": "то были тревожимы страшными призраками, то расслабляемы душевным унынием, ибо находил на них внезапный и неожиданный страх.",
+        "NEO": "Eux, pendant cette nuit d’impuissance, sortie des profondeurs du schéol impuissant, endormis du même sommeil,",
+        "NAB": "So they, during that night, powerless though it was, that had come upon them from the recesses of a powerless nether world, while all sleeping the same sleep,",
+        "VAT_ES": "Durante esa noche verdaderamente impotente, salida de las profundidades del Abismo impotente, sumergidos en un mismo sueño,",
+        "CEI": "ora erano agitati da fantasmi mostruosi, ora paralizzati per l'abbattimento dell'anima; poiché un terrore improvviso e inaspettato si era riversato su di loro."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "τὰ μὲν τέρασιν ἠλαύνοντο φαντασμάτων, τὰ δὲ τῆς ψυχῆς παρελύοντο προδοσίᾳ· αἰφνίδιος γὰρ αὐτοῖς καὶ ἀπροσδόκητος φόβος ἐπῆλθεν.",
+        "VUL": "Deinde si quisquam ex illis decidisset,/ custodiebatur in carcere sine ferro reclusus./",
+        "SYN": "Итак, где кто тогда был застигнут, делался пленником и заключаем был в эту темницу без оков.",
+        "NEO": "étaient tantôt agités par des spectres terrifiants, tantôt abattus par la défaillance de leur âme ; car une épouvante subite et inattendue s’était répandue sur eux.",
+        "NAB": "Were partly smitten by fearsome apparitions and partly stricken by their souls' surrender; for fear came upon them, sudden and unexpected.",
+        "VAT_ES": "eran perseguidos a la vez por espectros monstruosos y paralizados por el desfallecimiento de su alma, porque un terror repentino e inesperado los había invadido.",
+        "CEI": "Così chiunque, cadendo là dove si trovava, era custodito chiuso in un carcere senza serrami,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "εἶθ’ οὕτως, ὃς δή ποτ’ οὖν ἦν ἐκεῖ καταπίπτων, ἐφρουρεῖτο εἰς τὴν ἀσίδηρον εἱρκτὴν κατακλεισθείς·",
+        "VUL": "Si enim rusticus quis erat, aut pastor,/ aut agri laborum operarius præoccupatus esset,/ ineffugibilem sustinebat necessitatem ;/",
+        "SYN": "Был ли то земледелец или пастух, или занимающийся работами в пустыне, всякий, быв застигнут, подвергался этой неизбежной судьбе,",
+        "NEO": "De même tous les autres, quels qu’ils fussent, tombant là sans force, étaient retenus comme enfermés dans une prison sans verrous.",
+        "NAB": "Thus, then, whoever was there fell into that unbarred prison and was kept confined.",
+        "VAT_ES": "Así, cualquiera que caía en ese estado quedaba prisionero, encerrado en esa prisión sin hierros.",
+        "CEI": "fosse un agricoltore o un pastore o un operaio impegnato in lavori in luoghi solitari, sorpreso cadeva sotto la necessità ineluttabile, perché tutti eran legati dalla stessa catena di tenebre."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "εἴ τε γὰρ γεωργὸς ἦν τις ἢ ποιμὴν ἢ τῶν κατ’ ἐρημίαν ἐργάτης μόχθων, προλημφθεὶς τὴν δυσάλυκτον ἔμενεν ἀνάγκην.",
+        "VUL": "una enim catena tenebrarum omnes erant colligati./ Sive spiritus sibilans,/ aut inter spissos arborum ramos avium sonus suavis,/ aut vis aquæ decurrentis nimium,/",
+        "SYN": "ибо все были связаны одними неразрешимыми узами тьмы. Свищущий ли ветер, или среди густых ветвей сладкозвучный голос птиц, или сила быстро текущей воды, или сильный треск низвергающихся камней,",
+        "NEO": "Le laboureur, le berger, l’ouvrier occupé aux rudes travaux de la campagne, surpris par le fléau, étaient soumis à l’inévitable nécessité ;",
+        "NAB": "For whether one was a farmer, or a shepherd, or a worker at tasks in the wasteland, Taken unawares, he served out the inescapable sentence;",
+        "VAT_ES": "Ya fuera labrador o pastor, o trabajara en lugares solitarios, al ser sorprendido, tenía que soportar la ineludible necesidad,",
+        "CEI": "Il sibilare del vento, il canto melodioso di uccelli tra folti rami, il mormorio di impetuosa acqua corrente, il cupo fragore di rocce cadenti,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "μιᾷ γὰρ ἁλύσει σκότους πάντες ἐδέθησαν. εἴ τε πνεῦμα συρίζον, ἢ περὶ ἀμφιλαφεῖς κλάδους ὀρνέων ἦχος εὐμελής, ⸆ ἢ ῥυθμὸς ὕδατος πορευομένου βίᾳ,",
+        "VUL": "aut sonus validus præcipitatarum petrarum,/ aut ludentium animalium cursus invisus,/ aut mugientium valida bestiarum vox,/ aut resonans de altissimis montibus echo :/ deficientes faciebant illos præ timore./",
+        "SYN": "или незримое бегание скачущих животных, или голос ревущих свирепейших зверей, или отдающееся из горных углублений эхо, все это, ужасая их, повергало в расслабление.",
+        "NEO": "car tous étaient liés par la même chaîne de ténèbres. Le vent qui sifflait, le chant mélodieux des oiseaux dans les rameaux épais, le bruit des eaux précipitant leur cours,",
+        "NAB": "for all were bound by the one bond of darkness. And were it only the whistling wind, or the melodious song of birds in the spreading branches, Or the steady sound of rushing water,",
+        "VAT_ES": "porque todos estaban atados por una misma cadena de tinieblas. El silbido del viento, el canto melodioso de los pájaros en la arboleda, el ruido cadencioso de las aguas en su impetuoso correr,",
+        "CEI": "la corsa invisibile di animali imbizzarriti, le urla di crudelissime belve ruggenti, l'eco ripercossa delle cavità dei monti, tutto li paralizzava e li riempiva di terrore."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ἢ κτύπος ἀπηνὴς καταριπτομένων πετρῶν, ἢ σκιρτώντων ζῴων δρόμος ἀθεώρητος, ἢ ὠρυομένων ἀπηνεστάτων θηρίων φωνή, ἢ ἀντανακλωμένη ἐκ κοιλότητος ὀρέων ἠχώ, παρέλυσεν αὐτοὺς ἐκφοβοῦντα.",
+        "VUL": "Omnis enim orbis terrarum limpido illuminabatur lumine,/ et non impeditis operibus continebatur./",
+        "SYN": "Ибо весь мир был освещаем ясным светом и занимался беспрепятственно делами;",
+        "NEO": "le fracas des pierres qui roulaient, la course invisible des animaux bondissants, les hurlements des bêtes féroces, l’écho se répercutant dans les cavités des montagnes, tout les faisait pâmer d’effroi.",
+        "NAB": "or the rude crash of overthrown rocks, Or the unseen gallop of bounding animals, or the roaring cry of the fiercest beasts, Or an echo resounding from the hollow of the hills, these sounds, inspiring terror, paralyzed them.",
+        "VAT_ES": "el violento estruendo de las rocas cayendo en avalanchas, la invisible carrera de animales encabritados, el rugido de las fieras más salvajes, el eco que retumba en los huecos de las montañas, todo los llenaba de terror y los paralizaba.",
+        "CEI": "Tutto il mondo era illuminato di luce splendente ed ognuno era dedito ai suoi lavori senza impedimento."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ὅλος γὰρ ὁ κόσμος λαμπρῷ κατελάμπετο φωτί, καὶ ἀνεμποδίστοις συνείχετο ἔργοις·",
+        "VUL": "Solis autem illis superposita erat gravis nox,/ imago tenebrarum quæ superventura illis erat :/ ipsi ergo sibi erant graviores tenebris.]",
+        "SYN": "а над ними одними была распростерта тяжелая ночь, образ тьмы, имевшей некогда объять их; но сами для себя они были тягостнее тьмы.",
+        "NEO": "Car tandis que tout l’univers était éclairé d’une lumière brillante, et se livrait sans obstacle à ses travaux,",
+        "NAB": "For the whole world shone with brilliant light and continued its works without interruption;",
+        "VAT_ES": "Porque el mundo entero estaba iluminado por una luz resplandeciente y se dedicaba libremente a sus trabajos;",
+        "CEI": "Soltanto su di essi si stendeva una notte profonda, immagine della tenebra che li avrebbe avvolti; ma erano a se stessi più gravosi della tenebra."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "μόνοις δὲ ἐκείνοις ἐπέτατο βαρεῖα νύξ, εἰκὼν τοῦ μέλλοντος αὐτοὺς διαδέχεσθαι σκότους, ἑαυτοῖς δὲ ἦσαν βαρύτεροι σκότους.",
+        "NEO": "sur eux seuls s’étendait une nuit pesante, image des ténèbres qui devaient les recevoir ; mais ils étaient encore plus à charge à eux-mêmes que les ténèbres.",
+        "NAB": "Over them alone was spread oppressive night, an image of the darkness that next should come upon them; yet they were to themselves more burdensome than the darkness.",
+        "VAT_ES": "solamente sobre ellos se extendía una pesada noche, imagen de las tinieblas que les estaban reservadas. Pero más que de las tinieblas, ellos sentían el peso de sí mismos."
+      }
+    }
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "II_COR_001",
+  "book_key": "II_COR",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Παῦλος ἀπόστολος Ἰησοῦ χριστοῦ διὰ θελήματος θεοῦ, καὶ Τιμόθεος ὁ ἀδελφός, τῇ ἐκκλησίᾳ τοῦ θεοῦ τῇ οὔσῃ ἐν Κορίνθῳ, σὺν τοῖς ἁγίοις πᾶσιν τοῖς οὖσιν ἐν ὅλῃ τῇ Ἀχαΐᾳ·",
+        "VUL": "Paulus, Apostolus Jesu Christi per voluntatem Dei, et Timotheus frater, ecclesiæ Dei, quæ est Corinthi cum omnibus sanctis, qui sunt in universa Achaia.",
+        "SYN": "Павел, волею Божиею Апостол Иисуса Христа, и Тимофей брат, церкви Божией, находящейся в Коринфе, со всеми святыми по всей Ахаии:",
+        "NEO": "Paul, apôtre de Jésus-Christ par la volonté de Dieu, et Timothée son frère, à l’Église de Dieu qui est à Corinthe, et à tous les saints qui sont dans toute l’Achaïe :",
+        "NAB": "Paul, an apostle of Christ Jesus by the will of God, and Timothy our brother, to the church of God that is in Corinth, with all the holy ones throughout Achaia:",
+        "VAT_ES": "Pablo, Apóstol de Jesucristo por la voluntad de Dios, y el hermano Timoteo, saludan a la Iglesia de Dios que reside en Corinto, junto con todos los santos que viven en la provincia de Acaya.",
+        "CEI": "Anche voi eravate morti per le vostre colpe e i vostri peccati,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "χάρις ὑμῖν καὶ εἰρήνη ἀπὸ θεοῦ πατρὸς ἡμῶν καὶ κυρίου Ἰησοῦ χριστοῦ.",
+        "VUL": "Gratia vobis, et pax a Deo Patre nostro, et Domino Jesu Christo.",
+        "SYN": "благодать вам и мир от Бога Отца нашего и Господа Иисуса Христа.",
+        "NEO": "grâce et paix vous soient données de la part de Dieu notre Père et du Seigneur Jésus-Christ !",
+        "NAB": "grace to you and peace from God our Father and the Lord Jesus Christ.",
+        "VAT_ES": "Llegue a ustedes la gracia y la paz que proceden de Dios, nuestro Padre, y del Señor Jesucristo.",
+        "CEI": "nei quali un tempo viveste alla maniera di questo mondo, seguendo il principe delle potenze dell'aria, quello spirito che ora opera negli uomini ribelli."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Εὐλογητὸς ὁ θεὸς καὶ πατὴρ τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ, ὁ πατὴρ τῶν οἰκτιρμῶν καὶ θεὸς πάσης παρακλήσεως,",
+        "VUL": "Benedictus Deus et Pater Domini nostri Jesu Christi, Pater misericordiarum, et Deus totius consolationis,",
+        "SYN": "Благословен Бог и Отец Господа нашего Иисуса Христа, Отец милосердия и Бог всякого утешения,",
+        "NEO": "Béni soit Dieu, le Père de notre Seigneur Jésus-Christ, le Père des miséricordes et le Dieu de toute consolation,",
+        "NAB": "Blessed be the God and Father of our Lord Jesus Christ, the Father of compassion and God of all encouragement,",
+        "VAT_ES": "Bendito sea Dios, el Padre de nuestro Señor Jesucristo, Padre de las misericordias y Dios de todo consuelo,",
+        "CEI": "Nel numero di quei ribelli, del resto, siamo vissuti anche tutti noi, un tempo, con i desideri della nostra carne, seguendo le voglie della carne e i desideri cattivi; ed eravamo per natura meritevoli d'ira, come gli altri."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "ὁ παρακαλῶν ἡμᾶς ἐπὶ πάσῃ τῇ θλίψει ἡμῶν, εἰς τὸ δύνασθαι ἡμᾶς παρακαλεῖν τοὺς ἐν πάσῃ θλίψει, διὰ τῆς παρακλήσεως ἧς παρακαλούμεθα αὐτοὶ ὑπὸ τοῦ θεοῦ.",
+        "VUL": "qui consolatur nos in omni tribulatione nostra : ut possimus et ipsi consolari eos qui in omni pressura sunt, per exhortationem, qua exhortamur et ipsi a Deo.",
+        "SYN": "утешающий нас во всякой скорби нашей, чтобы и мы могли утешать находящихся во всякой скорби тем утешением, которым Бог утешает нас самих!",
+        "NEO": "qui nous console dans toutes nos tribulations, afin que, par la consolation que nous recevons nous-mêmes de lui, nous puissions consoler les autres dans toutes leurs afflictions !",
+        "NAB": "who encourages us in our every affliction, so that we may be able to encourage those who are in any affliction with the encouragement with which we ourselves are encouraged by God.",
+        "VAT_ES": "que nos reconforta en todas nuestras tribulaciones, para que nosotros podamos dar a los que sufren el mismo consuelo que recibimos de Dios.",
+        "CEI": "Ma Dio, ricco di misericordia, per il grande amore con il quale ci ha amati,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ὅτι καθὼς περισσεύει τὰ παθήματα τοῦ χριστοῦ εἰς ἡμᾶς, οὕτως διὰ τοῦ χριστοῦ περισσεύει καὶ ἡ παράκλησις ἡμῶν.",
+        "VUL": "Quoniam sicut abundant passiones Christi in nobis : ita et per Christum abundat consolatio nostra.",
+        "SYN": "Ибо по мере, как умножаются в нас страдания Христовы, умножается Христом и утешение наше.",
+        "NEO": "Car de même que les souffrances du Christ abondent en nous, de même aussi par le Christ abonde notre consolation.",
+        "NAB": "For as Christ's sufferings overflow to us, so through Christ does our encouragement also overflow.",
+        "VAT_ES": "Porque así como participamos abundantemente de los sufrimientos de Cristo, también por medio de Cristo abunda nuestro consuelo.",
+        "CEI": "da morti che eravamo per i peccati, ci ha fatti rivivere con Cristo: per grazia infatti siete stati salvati."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Εἴτε δὲ θλιβόμεθα, ὑπὲρ τῆς ὑμῶν παρακλήσεως καὶ σωτηρίας, τῆς ἐνεργουμένης ἐν ὑπομονῇ τῶν αὐτῶν παθημάτων ὧν καὶ ἡμεῖς πάσχομεν· καὶ ἡ ἐλπὶς ἡμῶν βεβαία ὑπὲρ ὑμῶν· εἴτε παρακαλούμεθα, ὑπὲρ τῆς ὑμῶν παρακλήσεως καὶ σωτηρίας·",
+        "VUL": "Sive autem tribulamur pro vestra exhortatione et salute, sive consolamur pro vestra consolatione, sive exhortamur pro vestra exhortatione et salute, quæ operatur tolerantiam earumdem passionum, quas et nos patimur :",
+        "SYN": "Скорбим ли мы, _скорбим_ для вашего утешения и спасения, которое совершается перенесением тех же страданий, какие и мы терпим.",
+        "NEO": "Si nous sommes affligés, c’est pour votre consolation et pour votre salut ; si nous sommes consolés, c’est pour votre consolation, qui vous fait supporter avec patience les mêmes souffrances que nous endurons aussi.+ 1:6 I, 6. Vulg. Si nous sommes consolés c’est aussi pour votre consolation, et si nous sommes encouragés, c’est encore pour votre encouragement et votre salut, qui nous détermine à souffrir, etc. — Dans l’exorde et la première partie, S. Paul emploie surtout le pluriel \\+qt nous\\+qt*, parce qu’il parle en son nom et au nom de ses collaborateurs. Dans la troisième partie son apologie est plus personnelle.*",
+        "NAB": "If we are afflicted, it is for your encouragement and salvation; if we are encouraged, it is for your encouragement, which enables you to endure the same sufferings that we suffer.",
+        "VAT_ES": "Si sufrimos, es para consuelo y salvación de ustedes; si somos consolados, también es para consuelo de ustedes, y esto les permite soportar con constancia los mismos sufrimientos que nosotros padecemos.",
+        "CEI": "Con lui ci ha anche risuscitati e ci ha fatti sedere nei cieli, in Cristo Gesù,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "εἰδότες ὅτι ὥσπερ κοινωνοί ἐστε τῶν παθημάτων, οὕτως καὶ τῆς παρακλήσεως.",
+        "VUL": "ut spes nostra firma sit pro vobis : scientes quod sicut socii passionum estis, sic eritis et consolationis.",
+        "SYN": "И надежда наша о вас тверда. Утешаемся ли, _утешаемся_ для вашего утешения и спасения, зная, что вы участвуете как в страданиях наших, так и в утешении.",
+        "NEO": "Et notre espérance à votre égard est ferme, parce que nous savons que, comme vous avez part aux souffrances, vous avez part aussi à la consolation.",
+        "NAB": "Our hope for you is firm, for we know that as you share in the sufferings, you also share in the encouragement.",
+        "VAT_ES": "Por eso, tenemos una esperanza bien fundada con respecto a ustedes, sabiendo que si comparten nuestras tribulaciones, también compartirán nuestro consuelo.",
+        "CEI": "per mostrare nei secoli futuri la straordinaria ricchezza della sua grazia mediante la sua bontà verso di noi in Cristo Gesù."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Οὐ γὰρ θέλομεν ὑμᾶς ἀγνοεῖν, ἀδελφοί, ὑπὲρ τῆς θλίψεως ἡμῶν τῆς γενομένης ἡμῖν ἐν τῇ Ἀσίᾳ, ὅτι καθ’ ὑπερβολὴν ἐβαρήθημεν ὑπὲρ δύναμιν, ὥστε ἐξαπορηθῆναι ἡμᾶς καὶ τοῦ ζῇν.",
+        "VUL": "Non enim volumus ignorare vos, fratres, de tribulatione nostra, quæ facta est in Asia, quoniam supra modum gravati sumus supra virtutem, ita ut tæderet nos etiam vivere.",
+        "SYN": "Ибо мы не хотим оставить вас, братия, в неведении о скорби нашей, бывшей с нами в Асии, потому что мы отягчены были чрезмерно и сверх силы, так что не надеялись остаться в живых.",
+        "NEO": "Nous ne voulons pas, en effet, vous laisser ignorer, frères, au sujet de la tribulation qui nous est survenue en Asie, que nous avons été accablés au delà de toute mesure, au delà de nos forces, à tel point que nous désespérions même de la vie ;+ 1:8 8. S’agit-il d’une grave maladie, ou du tumulte d’Éphèse (Act. xix, 23 sv.), ou de quelque autre fait non raconté ailleurs (comp. I Cor. xvi, 9) ? On ne peut le décider. — Vulg. en sorte que la vie même nous était à charge.*",
+        "NAB": "We do not want you to be unaware, brothers, of the affliction that came to us in the province of Asia; we were utterly weighed down beyond our strength, so that we despaired even of life.",
+        "VAT_ES": "Queremos, hermanos, que ustedes conozcan la tribulación que debimos sufrir en la provincia de Asia: la carga fue tan grande que no podíamos sobrellevarla, al extremo de pensar que estábamos a punto de perder la vida.",
+        "CEI": "Per questa grazia infatti siete salvi mediante la fede; e ciò non viene da voi, ma è dono di Dio;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Ἀλλὰ αὐτοὶ ἐν ἑαυτοῖς τὸ ἀπόκριμα τοῦ θανάτου ἐσχήκαμεν, ἵνα μὴ πεποιθότες ὦμεν ἐφ’ ἑαυτοῖς ἀλλ’ ἐπὶ τῷ θεῷ τῷ ἐγείροντι τοὺς νεκρούς·",
+        "VUL": "Sed ipsi in nobismetipsis responsum mortis habuimus, ut non simus fidentes in nobis, sed in Deo, qui suscitat mortuos :",
+        "SYN": "Но сами в себе имели приговор к смерти, для того, чтобы надеяться не на самих себя, но на Бога, воскрешающего мертвых,",
+        "NEO": "mais nous avions en nous-mêmes l’arrêt de notre mort, afin de ne pas mettre notre confiance en nous-mêmes, mais de la mettre en Dieu, qui ressuscite les morts.+ 1:9 9. L’arrêt, Vulg. \\+qt la réponse de notre mort.\\+qt**",
+        "NAB": "Indeed, we had accepted within ourselves the sentence of death, that we might trust not in ourselves but in God who raises the dead.",
+        "VAT_ES": "Soportamos en nuestra propia carne una sentencia de muerte, y así aprendimos a no poner nuestra confianza en nosotros mismos, sino en Dios que resucita a los muertos.",
+        "CEI": "né viene dalle opere, perché nessuno possa vantarsene."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "ὃς ἐκ τηλικούτου θανάτου ἐρρύσατο ἡμᾶς καὶ ῥύεται, εἰς ὃν ἠλπίκαμεν ὅτι καὶ ἔτι ῥύσεται,",
+        "VUL": "qui de tantis periculis nos eripuit, et eruit : in quem speramus quoniam et adhuc eripiet,",
+        "SYN": "Который и избавил нас от столь _близкой_ смерти, и избавляет, и на Которого надеемся, что и еще избавит,",
+        "NEO": "C’est lui qui nous a délivrés de cette mort si imminente, qui nous en délivre, et qui, nous l’espérons, nous délivrera dans la suite,",
+        "NAB": "He rescued us from such great danger of death, and he will continue to rescue us; in him we have put our hope (that) he will also rescue us again,",
+        "VAT_ES": "El nos libró y nos librará de ese peligro mortal. Sí, esperamos que también nos librará en el futuro.",
+        "CEI": "Siamo infatti opera sua, creati in Cristo Gesù per le opere buone che Dio ha predisposto perché noi le praticassimo."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "συνυπουργούντων καὶ ὑμῶν ὑπὲρ ἡμῶν τῇ δεήσει, ἵνα ἐκ πολλῶν προσώπων τὸ εἰς ἡμᾶς χάρισμα διὰ πολλῶν εὐχαριστηθῇ ὑπὲρ ὑμῶν.",
+        "VUL": "adjuvantibus et vobis in oratione pro nobis : ut ex multorum personis, ejus quæ in nobis est donationis, per multos gratiæ agantur pro nobis.",
+        "SYN": "при содействии и вашей молитвы за нас, дабы за дарованное нам, по ходатайству многих, многие возблагодарили за нас.",
+        "NEO": "surtout* si vous-mêmes vous nous assistez aussi de vos prières, afin que ce bienfait, nous étant accordé en considération de beaucoup de personnes, soit aussi pour un grand nombre l’occasion de rendre grâces à notre sujet. PREMIÈRE PARTIE. [I, 12 — VII, 16.] APOLOGIE DU MINISTÈRE CHRÉTIEN",
+        "NAB": "as you help us with prayer, so that thanks may be given by many on our behalf for the gift granted us through the prayers of many.",
+        "VAT_ES": "Ustedes también nos ayudarán con su oración, y de esa manera, siendo muchos los que interceden por nosotros, también serán muchos los que darán gracias por el beneficio recibido.",
+        "CEI": "Perciò ricordatevi che un tempo voi, pagani per nascita, chiamati incirconcisi da quelli che si dicono circoncisi perché tali sono nella carne per mano di uomo,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "¶Ἡ γὰρ καύχησις ἡμῶν αὕτη ἐστίν, τὸ μαρτύριον τῆς συνειδήσεως ἡμῶν, ὅτι ἐν ἁπλότητι καὶ εἰλικρινείᾳ θεοῦ, οὐκ ἐν σοφίᾳ σαρκικῇ ἀλλ’ ἐν χάριτι θεοῦ, ἀνεστράφημεν ἐν τῷ κόσμῳ, περισσοτέρως δὲ πρὸς ὑμᾶς.",
+        "VUL": "Nam gloria nostra hæc est : testimonium conscientiæ nostræ, quod in simplicitate cordis et sinceritate Dei, et non in sapientia carnali, sed in gratia Dei, conversati sumus in hoc mundo : abundantius autem ad vos.",
+        "SYN": "Ибо похвала наша сия есть свидетельство совести нашей, что мы в простоте и богоугодной искренности, не по плотской мудрости, но по благодати Божией, жили в мире, особенно же у вас.",
+        "NEO": "Car ce qui fait notre gloire, c’est ce témoignage de notre conscience que nous avec simplicité+ 1:12 12. Simplicité, ou, selon d’autres manuscrits, \\+qt sainteté\\+qt*. La Vulgate lit \\+qt simplicité\\+qt* et ajoute à tort, \\+qt du cœur\\+qt* (Eph. v, 5). — \\+qt Sincérité devant Dieu\\+qt*, c.-à-d. véritable. — \\+qt Sagesse charnelle\\+qt*, comp. I Cor. i, 20 ; ii, 4.* et sincérité devant Dieu, non avec une sagesse charnelle, mais avec la grâce de Dieu.",
+        "NAB": "For our boast is this, the testimony of our conscience that we have conducted ourselves in the world, and especially toward you, with the simplicity and sincerity of God, (and) not by human wisdom but by the grace of God.",
+        "VAT_ES": "Este es para nosotros un motivo de orgullo: el testimonio que nos da nuestra conciencia de que siempre, y particularmente en relación con ustedes, nos hemos comportado con la santidad y la sinceridad que proceden de Dios, movidos, no por una sabiduría puramente humana, sino por la gracia de Dios.",
+        "CEI": "ricordatevi che in quel tempo eravate senza Cristo, esclusi dalla cittadinanza d'Israele, estranei ai patti della promessa, senza speranza e senza Dio in questo mondo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Οὐ γὰρ ἄλλα γράφομεν ὑμῖν, ἀλλ’ ἢ ἃ ἀναγινώσκετε ἢ καὶ ἐπιγινώσκετε, ἐλπίζω δὲ ὅτι καὶ ἕως τέλους ἐπιγνώσεσθε·",
+        "VUL": "Non enim alia scribimus vobis, quam quæ legistis, et cognovistis. Spero autem quod usque in finem cognoscetis,",
+        "SYN": "И мы пишем вам не иное, как то, что вы читаете или разумеете, и что, как надеюсь, до конца уразумеете,",
+        "NEO": "Nous ne vous écrivons pas autre chose que ce que vous lisez et ce que vous connaissez bien ; et ce que, je l’espère, vous reconnaîtrez jusqu’à la fin,+ 1:13 13. Nous ne dissimulons rien. — Comme une partie d’entre vous nous connaissent, ou bien comme vous l’avez déjà reconnu en partie.*",
+        "NAB": "For we write you nothing but what you can read and understand, and I hope that you will understand completely,",
+        "VAT_ES": "En efecto, nuestras cartas no son ambiguas: no hay en ellas más de lo que ustedes pueden leer y entender. Y espero que comprenderán plenamente",
+        "CEI": "Ora invece, in Cristo Gesù, voi che un tempo eravate i lontani siete diventati i vicini grazie al sangue di Cristo."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "καθὼς καὶ ἐπέγνωτε ἡμᾶς ἀπὸ μέρους, ὅτι καύχημα ὑμῶν ἐσμέν, καθάπερ καὶ ὑμεῖς ἡμῶν, ἐν τῇ ἡμέρᾳ τοῦ κυρίου Ἰησοῦ.",
+        "VUL": "sicut et cognovistis nos ex parte, quod gloria vestra sumus, sicut et vos nostra, in die Domini nostri Jesu Christi.",
+        "SYN": "так как вы отчасти и уразумели уже, что мы будем вашею похвалою, равно и вы нашею, в день Господа нашего Иисуса Христа.",
+        "NEO": "— comme une partie d’entre vous nous connaissent, — que nous sommes votre gloire, de même que vous serez aussi la nôtre au jour du Seigneur Jésus.",
+        "NAB": "as you have come to understand us partially, that we are your boast as you also are ours, on the day of (our) Lord Jesus.",
+        "VAT_ES": "–como ya lo han comprendido en parte– que en el Día de nuestro Señor Jesús, podrán sentirse orgullosos de nosotros, como nosotros de ustedes.",
+        "CEI": "Egli infatti è la nostra pace, colui che ha fatto dei due un popolo solo, abbattendo il muro di separazione che era frammezzo, cioè l'inimicizia,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "¶Καὶ ταύτῃ τῇ πεποιθήσει ἐβουλόμην ἐλθεῖν πρὸς ὑμᾶς τὸ πρότερον, ἵνα δευτέραν χάριν ἔχητε·",
+        "VUL": "Et hac confidentia volui prius venire ad vos, ut secundam gratiam haberetis :",
+        "SYN": "И в этой уверенности я намеревался придти к вам ранее, чтобы вы вторично получили благодать,",
+        "NEO": "Dans cette persuasion, je m’étais proposé d’aller d’abord chez vous, afin que vous eussiez une double grâce :",
+        "NAB": "With this confidence I formerly intended to come to you so that you might receive a double favor,",
+        "VAT_ES": "Convencido de esto, me propuse visitarlos primero a ustedes, para darles una nueva alegría,",
+        "CEI": "annullando, per mezzo della sua carne, la legge fatta di prescrizioni e di decreti, per creare in se stesso, dei due, un solo uomo nuovo, facendo la pace,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "καὶ δι’ ὑμῶν διελθεῖν εἰς Μακεδονίαν, καὶ πάλιν ἀπὸ Μακεδονίας ἐλθεῖν πρὸς ὑμᾶς, καὶ ὑφ’ ὑμῶν προπεμφθῆναι εἰς τὴν Ἰουδαίαν.",
+        "VUL": "et per vos transire in Macedoniam, et iterum a Macedonia venire ad vos, et a vobis deduci in Judæam.",
+        "SYN": "и через вас пройти в Македонию, из Македонии же опять придти к вам; а вы проводили бы меня в Иудею.",
+        "NEO": "je voulais passer par chez vous pour aller en Macédoine, puis revenir de la Macédoine chez vous, et vous m’auriez fait accompagner en Judée.+ 1:16 15-16. Double, litt., \\+qt seconde\\+qt* : la 1re lorsque Paul passerait à Corinthe pour aller en Macédoine ; la 2e, lorsqu’il reviendrait de Macédoine à Corinthe.*",
+        "NAB": "namely, to go by way of you to Macedonia, and then to come to you again on my return from Macedonia, and have you send me on my way to Judea.",
+        "VAT_ES": "y de allí pasar a Macedonia. Después, a mi regreso de Macedonia, ustedes me ayudarían a proseguir mi viaje a Judea.",
+        "CEI": "e per riconciliare tutti e due con Dio in un solo corpo, per mezzo della croce, distruggendo in se stesso l'inimicizia."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Τοῦτο οὖν βουλευόμενος, μήτι ἄρα τῇ ἐλαφρίᾳ ἐχρησάμην; Ἢ ἃ βουλεύομαι, κατὰ σάρκα βουλεύομαι, ἵνα ᾖ παρ’ ἐμοὶ τὸ Ναί, ναὶ καὶ τὸ Οὔ, οὔ;",
+        "VUL": "Cum ergo hoc voluissem, numquid levitate usus sum ? aut quæ cogito, secundum carnem cogito, ut sit apud me Est et Non ?",
+        "SYN": "Имея такое намерение, легкомысленно ли я поступил? Или, что я предпринимаю, по плоти предпринимаю, так что у меня то \"да, да\", то \"нет, нет\"?",
+        "NEO": "Est-ce donc qu’en formant ce dessein j’aurais agi avec légèreté ? Ou bien est-ce que les projets que je fais, je les fais selon la chair, de sorte qu’il y ait en moi le oui et le non ?",
+        "NAB": "So when I intended this, did I act lightly? Or do I make my plans according to human considerations, so that with me it is \"yes, yes\" and \"no, no\"?",
+        "VAT_ES": "Al proponerme esto, &iquest;obré precipitadamente?, &iquest;o bien mis proyectos estaban fundados en motivos puramente humanos, de manera que yo digo al mismo tiempo «sí» y «no»?",
+        "CEI": "Egli è venuto perciò ad annunziare pace a voi che eravate lontani e pace a coloro che erano vicini."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Πιστὸς δὲ ὁ θεός, ὅτι ὁ λόγος ἡμῶν ὁ πρὸς ὑμᾶς οὐκ ἐγένετο Ναὶ καὶ οὔ.",
+        "VUL": "Fidelis autem Deus, quia sermo noster, qui fuit apud vos, non est in illo Est et Non.",
+        "SYN": "Верен Бог, что слово наше к вам не было то \"да\", то \"нет\".",
+        "NEO": "Aussi vrai que Dieu est fidèle, la parole que nous vous avons adressée n’est pas+ 1:18 18. N’est pas, ou, comme la Vulgate, \\+qt n’a pas été\\+qt*.* oui et non.",
+        "NAB": "As God is faithful, our word to you is not \"yes\" and \"no.\"",
+        "VAT_ES": "Les aseguro, por la fidelidad de Dios, que nuestro lenguaje con ustedes no es hoy «sí», y mañana «no».",
+        "CEI": "Per mezzo di lui possiamo presentarci, gli uni e gli altri, al Padre in un solo Spirito."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ὁ γὰρ τοῦ θεοῦ υἱὸς Ἰησοῦς χριστὸς ὁ ἐν ὑμῖν δι’ ἡμῶν κηρυχθείς, δι’ ἐμοῦ καὶ Σιλουανοῦ καὶ Τιμοθέου, οὐκ ἐγένετο Ναὶ καὶ Οὔ, ἀλλὰ Ναὶ ἐν αὐτῷ γέγονεν.",
+        "VUL": "Dei enim Filius Jesus Christus, qui in vobis per nos prædicatus est, per me, et Silvanum, et Timotheum, non fuit Est et Non, sed Est in illo fuit.",
+        "SYN": "Ибо Сын Божий, Иисус Христос, проповеданный у вас нами, мною и Силуаном и Тимофеем, не был \"да\" и \"нет\"; но в Нем было \"да\", --",
+        "NEO": "Car le Fils de Dieu, Jésus-Christ, que nous avons prêché au milieu de vous, Silvain,+ 1:19 19. Silvain ou \\+qt Silas\\+qt* (forme abrégée). Voyez Act. xv, 27, 40.* Timothée et moi, n’a pas été oui et non ; il n’y a eu que oui en lui.",
+        "NAB": "For the Son of God, Jesus Christ, who was proclaimed to you by us, Silvanus and Timothy and me, was not \"yes\" and \"no,\" but \"yes\" has been in him.",
+        "VAT_ES": "Porque el Hijo de Dios, Jesucristo, el que nosotros hemos anunciado entre ustedes –tanto Silvano y Timoteo, como yo mismo– no fue «sí» y «no», sino solamente «sí».",
+        "CEI": "Così dunque voi non siete più stranieri né ospiti, ma siete concittadini dei santi e familiari di Dio,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Ὅσαι γὰρ ἐπαγγελίαι θεοῦ, ἐν αὐτῷ τὸ Ναί, καὶ ἐν αὐτῷ τὸ Ἀμήν, τῷ θεῷ πρὸς δόξαν δι’ ἡμῶν.",
+        "VUL": "Quotquot enim promissiones Dei sunt, in illo Est : ideo et per ipsum Amen Deo ad gloriam nostram.",
+        "SYN": "ибо все обетования Божии в Нем \"да\" и в Нем \"аминь\", -- в славу Божию, через нас.",
+        "NEO": "Car, pour autant qu’il y a de promesses de Dieu, elles sont oui en Jésus ; c’est pourquoi aussi, grâce à lui, l’amen est prononcé, à la gloire de Dieu, par notre ministère.+ 1:20 20. Pensée : toutes les promesses de Dieu relatives au salut se sont accomplies en J.-C. ; il a, en quelque sorte, répondu oui à l’humanité, et en tous lieux on a dit \\+qt amen\\+qt* (allusion à l’usage où étaient déjà les fidèles de répondre \\+qt amen\\+qt* à la fin des prières, comp. I Cor. xiv, 16), c.-à-d., on a cru d’une foi joyeuse et ferme à l’accomplissement de ces promesses, et cela, \\+qt pour la gloire de Dieu, par notre ministère\\+qt* (litt. \\+qt par nous\\+qt*), notre prédication étant le moyen par lequel Dieu vous a amenés à la foi. La Vulgate dit à tort, \\+qt pour notre gloire\\+qt*.*",
+        "NAB": "For however many are the promises of God, their Yes is in him; therefore, the Amen from us also goes through him to God for glory.",
+        "VAT_ES": "En efecto, todas las promesas de Dios encuentran su «sí» en Jesús, de manera que por él decimos «Amén» a Dios, para gloria suya.",
+        "CEI": "edificati sopra il fondamento degli apostoli e dei profeti, e avendo come pietra angolare lo stesso Cristo Gesù."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ βεβαιῶν ἡμᾶς σὺν ὑμῖν εἰς χριστόν, καὶ χρίσας ἡμᾶς, θεός·",
+        "VUL": "Qui autem confirmat nos vobiscum in Christo, et qui unxit nos Deus :",
+        "SYN": "Утверждающий же нас с вами во Христе и помазавший нас _есть_ Бог,",
+        "NEO": "Et celui qui nous affermit avec vous dans le Christ, et qui nous a oints, c’est Dieu,",
+        "NAB": "But the one who gives us security with you in Christ and who anointed us is God;",
+        "VAT_ES": "Y es Dios el que nos reconforta en Cristo, a nosotros y a ustedes; el que nos ha ungido,",
+        "CEI": "In lui ogni costruzione cresce ben ordinata per essere tempio santo nel Signore;"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "ὁ καὶ σφραγισάμενος ἡμᾶς, καὶ δοὺς τὸν ἀρραβῶνα τοῦ πνεύματος ἐν ταῖς καρδίαις ἡμῶν.",
+        "VUL": "qui et signavit nos, et dedit pignus Spiritus in cordibus nostris.",
+        "SYN": "Который и запечатлел нас и дал залог Духа в сердца наши.",
+        "NEO": "lequel nous a aussi marqués d’un sceau et nous a donné à titre d’arrhes, le Saint-Esprit dans nos cœurs.",
+        "NAB": "he has also put his seal upon us and given the Spirit in our hearts as a first installment.",
+        "VAT_ES": "el que también nos ha marcado con su sello y ha puesto en nuestros corazones las primicias del Espíritu.",
+        "CEI": "in lui anche voi insieme con gli altri venite edificati per diventare dimora di Dio per mezzo dello Spirito."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "¶Ἐγὼ δὲ μάρτυρα τὸν θεὸν ἐπικαλοῦμαι ἐπὶ τὴν ἐμὴν ψυχήν, ὅτι φειδόμενος ὑμῶν οὐκέτι ἦλθον εἰς Κόρινθον.",
+        "VUL": "Ego autem testem Deum invoco in animam meam, quod parcens vobis, non veni ultra Corinthum : non quia dominamur fidei vestræ, sed adjutores sumus gaudii vestri : nam fide statis.",
+        "SYN": "Бога призываю во свидетели на душу мою, что, щадя вас, я доселе не приходил в Коринф,",
+        "NEO": "Pour moi, je prends Dieu à témoin sur mon âme que c’est pour vous épargner que je ne suis pas allé de nouveau à Corinthe ;",
+        "NAB": "But I call upon God as witness, on my life, that it is to spare you that I have not yet gone to Corinth.",
+        "VAT_ES": "Pongo a Dios por testigo, y lo juro por mi propia vida, que si no volví a Corinto fue por consideración hacia ustedes."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Οὐχ ὅτι κυριεύομεν ὑμῶν τῆς πίστεως, ἀλλὰ συνεργοί ἐσμεν τῆς χαρᾶς ὑμῶν· τῇ γὰρ πίστει ἑστήκατε.",
+        "SYN": "не потому, будто мы берем власть над верою вашею; но мы споспешествуем радости вашей: ибо верою вы тверды.",
+        "NEO": "non que nous prétendions dominer sur votre foi, mais nous contribuons à votre joie ; car dans la foi vous êtes fermes.",
+        "NAB": "Not that we lord it over your faith; rather, we work together for your joy, for you stand firm in the faith.",
+        "VAT_ES": "Porque no pretendemos imponer nuestro dominio sobre la fe de ustedes, ya que ustedes permanecen firmes en la fe: lo que queremos es aumentarles el gozo."
+      }
+    }
+  }
+}

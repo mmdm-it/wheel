@@ -1,0 +1,357 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "OSE_004",
+  "book_key": "OSE",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שִׁמְע֥וּ דְבַר יְהוָ֖ה בְּנֵ֣י יִשְׂרָאֵ֑ל כִּ֣י רִ֤יב לַֽ/יהוָה֙ עִם יוֹשְׁבֵ֣י הָ/אָ֔רֶץ כִּ֠י אֵין אֱמֶ֧ת וְֽ/אֵין חֶ֛סֶד וְ/אֵֽין דַּ֥עַת אֱלֹהִ֖ים בָּ/אָֽרֶץ׃",
+        "LXX": "Ἀκούσατε λόγον Κυρίου, υἱοὶ Ἰσραήλ, ὅτι κρίσις τῷ κυρίῳ πρὸς τοὺς κατοικοῦντας τὴν γῆν, διότι οὐκ ἔστιν ἀλήθεια οὐδὲ ἔλεος οὐδὲ ἐπίγνωσις θεοῦ ἐπὶ τῆς γῆς·",
+        "VUL": "[Audite verbum Domini, filii Israël,/ quia judicium Domino cum habitatoribus terræ :/ non est enim veritas, et non est misericordia,/ et non est scientia Dei in terra./",
+        "SYN": "Слушайте слово Господне, сыны Израилевы; ибо суд у Господа с жителями сей земли, потому что нет ни истины, ни милосердия, ни Богопознания на земле.",
+        "NEO": "Ecoutez la parole de \\+w Yahweh|strong=\"H3068\"\\+w**, enfants d’Israël ; car \\+w Yahweh|strong=\"H3068\"\\+w** a un procès avec les habitants du pays. Car il n’y a ni vérité, ni compassion, ni connaissance de Dieu dans le pays.",
+        "NAB": "Hear the word of the LORD, O people of Israel, for the LORD has a grievance against the inhabitants of the land: There is no fidelity, no mercy, no knowledge of God in the land.",
+        "VAT_ES": "Escuchen la palabra del Señor, israelitas, porque el Señor tiene un pleito con los habitantes del país; ya no hay fidelidad, ni amor, ni conocimiento de Dios en el país.",
+        "CEI": "Ascoltate la parola del Signore, o Israeliti, poiché il Signore ha un processo con gli abitanti del paese. Non c'è infatti sincerità né amore del prossimo, nè conoscenza di Dio nel paese."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אָלֹ֣ה וְ/כַחֵ֔שׁ וְ/רָצֹ֥חַ וְ/גָנֹ֖ב וְ/נָאֹ֑ף פָּרָ֕צוּ וְ/דָמִ֥ים בְּ/דָמִ֖ים נָגָֽעוּ׃",
+        "LXX": "ἀρὰ καὶ ψεῦδος καὶ φόνος καὶ κλοπὴ καὶ μοιχεία κέχυται ἐπὶ τῆς γῆς, καὶ αἵματα ἐφ’ αἵμασιν μίσγουσιν.",
+        "VUL": "Maledictum, et mendacium,/ et homicidium, et furtum, et adulterium inundaverunt,/ et sanguis sanguinem tetigit./",
+        "SYN": "Клятва и обман, убийство и воровство, и прелюбодейство крайне распространились, и кровопролитие следует за кровопролитием.",
+        "NEO": "On se parjure, on ment, on tue, on vole, on commet l’adultère ; ils font violence, et le sang versé touche le sang versé.",
+        "NAB": "False swearing, lying, murder, stealing and adultery! in their lawlessness, bloodshed follows bloodshed.",
+        "VAT_ES": "Sólo perjurio y engaño, asesinato y robo, adulterio y extorsión, y los crímenes sangrientos se suceden uno tras otro.",
+        "CEI": "Si giura, si mentisce, si uccide, si ruba, si commette adulterio, si fa strage e si versa sangue su sangue."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "עַל כֵּ֣ן תֶּאֱבַ֣ל הָ/אָ֗רֶץ וְ/אֻמְלַל֙ כָּל יוֹשֵׁ֣ב בָּ֔/הּ בְּ/חַיַּ֥ת הַ/שָּׂדֶ֖ה וּ/בְ/ע֣וֹף הַ/שָּׁמָ֑יִם וְ/גַם דְּגֵ֥י הַ/יָּ֖ם יֵאָסֵֽפוּ׃",
+        "LXX": "διὰ τοῦτο πενθήσει ἡ γῆ, καὶ μικρυνθήσεται σὺν πᾶσιν τοῖς κατοικοῦσιν αὐτήν, σὺν τοῖς θηρίοις τοῦ ἀγροῦ καὶ σὺν τοῖς ἑρπετοῖς τῆς γῆς καὶ σὺν τοῖς πετεινοῖς τοῦ οὐρανοῦ, καὶ οἱ ἰχθύες τῆς θαλάσσης ἐκλεὶψουσιν,",
+        "VUL": "Propter hoc lugebit terra,/ et infirmabitur omnis qui habitat in ea,/ in bestia agri, et in volucre cæli ;/ sed et pisces maris congregabuntur./",
+        "SYN": "За то восплачет земля сия, и изнемогут все, живущие на ней, со зверями полевыми и птицами небесными, даже и рыбы морские погибнут.",
+        "NEO": "C’est pourquoi le pays est dans le deuil, et quiconque y habite est sans force, jusqu’aux bêtes des champs et aux oiseaux du ciel ; même les poissons de la mer disparaissent.",
+        "NAB": "Therefore the land mourns, and everything that dwells in it languishes: The beasts of the field, the birds of the air, and even the fish of the sea perish.",
+        "VAT_ES": "Por eso, el país está de duelo y languidecen todos sus habitantes; hasta los animales del campo y los pájaros del cielo, y aún los peces del mar, desaparecerán.",
+        "CEI": "Per questo è in lutto il paese e chiunque vi abita langue insieme con gli animali della terra e con gli uccelli del cielo; perfino i pesci del mare periranno."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אַ֥ךְ אִ֛ישׁ אַל יָרֵ֖ב וְ/אַל יוֹכַ֣ח אִ֑ישׁ וְ/עַמְּ/ךָ֖ כִּ/מְרִיבֵ֥י כֹהֵֽן׃",
+        "LXX": "ὅπως μηδεὶς μήτε δικάζηται μήτε ἐλέγχῃ μηδείς. ὁ δὲ λαός μου ὡς ἀντιλεγόμενος ἱερεύς,",
+        "VUL": "Verumtamen unusquisque non judicet,/ et non arguatur vir :/ populus enim tuus sicut hi qui contradicunt sacerdoti./",
+        "SYN": "Но никто не спорь, никто не обличай другого; и твой народ - как спорящие со священником.",
+        "NEO": "Mais que nul ne conteste, et que nul ne réclame ! Car ton peuple est comme ceux qui auraient un procès avec le prêtre.",
+        "NAB": "But let no one protest, let no one complain; with you is my grievance, O priests!",
+        "VAT_ES": "&iexcl;No, que nadie acuse ni haga reproches! &iexcl;Mi pleito es contigo, sacerdote!",
+        "CEI": "Ma nessuno accusi, nessuno contesti; contro di te, sacerdote, muovo l'accusa."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/כָשַׁלְתָּ֣ הַ/יּ֔וֹם וְ/כָשַׁ֧ל גַּם נָבִ֛יא עִמְּ/ךָ֖ לָ֑יְלָה וְ/דָמִ֖יתִי אִמֶּֽ/ךָ׃",
+        "LXX": "καὶ ἀσθενήσει ἡμέρας, καὶ ἀσθενήσει προφήτης μετὰ σοῦ· νυκτὶ ὡμοίωσα τὴν μητέρα σου,",
+        "VUL": "Et corrues hodie,/ et corruet etiam propheta tecum./ Nocte tacere feci matrem tuam./",
+        "SYN": "И ты падешь днем, и пророк падет с тобою ночью, и истреблю матерь твою.",
+        "NEO": "Tu trébucheras pendant le jour, le prophète aussi trébuchera avec toi pendant la nuit ; et je ferai périr ta mère.",
+        "NAB": "You shall stumble in the day, and the prophets shall stumble with you at night; I will destroy your mother.",
+        "VAT_ES": "Tú tropezarás en pleno día; también el profeta tropezará en la noche junto contigo, y yo haré perecer a tu madre.",
+        "CEI": "Tu inciampi di giorno e il profeta con te inciampa di notte e fai perire tua madre."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "נִדְמ֥וּ עַמִּ֖/י מִ/בְּלִ֣י הַ/דָּ֑עַת כִּֽי אַתָּ֞ה הַ/דַּ֣עַת מָאַ֗סְתָּ וְ/אֶמְאָֽסְא/ךָ֙ מִ/כַּהֵ֣ן לִ֔/י וַ/תִּשְׁכַּח֙ תּוֹרַ֣ת אֱלֹהֶ֔י/ךָ אֶשְׁכַּ֥ח בָּנֶ֖י/ךָ גַּם אָֽנִי׃",
+        "LXX": "ὡμοιώθη ὁ λαός μου ὡς οὐκ ἔχων γνῶσιν· ὅτι σὺ ἐπίγνωσιν ἀπώσω, κἀγὼ ἀπώσομαι σὲ τοῦ ἱερατεύειν μοι· καὶ ἐπελάθου νόμον θεοῦ σου, κἀγὼ ἐπιλήσομαι τέκνων σου.",
+        "VUL": "Conticuit populus meus,/ eo quod non habuerit scientiam :/ quia tu scientiam repulisti,/ repellam te, ne sacerdotio fungaris mihi ;/ et oblita es legis Dei tui,/ obliviscar filiorum tuorum et ego./",
+        "SYN": "Истреблен будет народ Мой за недостаток ведения: так как ты отверг ведение, то и Я отвергну тебя от священнодействия предо Мною; и как ты забыл закон Бога твоего то и Я забуду детей твоих.",
+        "NEO": "Mon peuple périt faute de connaissance ; parce que tu as rejeté la connaissance, je te rejetterai de mon sacerdoce. Tu as oublié la loi de ton Dieu ; moi aussi, j’oublierai tes enfants.",
+        "NAB": "My people perish for want of knowledge! Since you have rejected knowledge, I will reject you from my priesthood; Since you have ignored the law of your God, I will also ignore your sons.",
+        "VAT_ES": "Mi pueblo perece por falta de conocimiento. Porque tú has rechazado el conocimiento, yo te rechazaré de mi sacerdocio; porque has olvidado la instrucción de tu Dios, también yo me olvidaré de tus hijos.",
+        "CEI": "Perisce il mio popolo per mancanza di conoscenza. Poiché tu rifiuti la conoscenza, rifiuterò te come mio sacerdote; hai dimenticato la legge del tuo Dio e io dimenticherò i tuoi figli."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כְּ/רֻבָּ֖/ם כֵּ֣ן חָֽטְאוּ לִ֑/י כְּבוֹדָ֖/ם בְּ/קָל֥וֹן אָמִֽיר׃",
+        "LXX": "κατὰ τὸ πλῆθος αὐτῶν οὕτως ἥμαρτόν μοι· τὴν δόξαν αὐτῶν εἰς ἀτιμίαν θήσομαι,",
+        "VUL": "Secundum multitudinem eorum sic peccaverunt mihi :/ gloriam eorum in ignominiam commutabo./",
+        "SYN": "Чем больше они умножаются, тем больше грешат против Меня; славу их обращу в бесславие.",
+        "NEO": "Tant qu’ils sont, ils ont péché contre moi ; je changerai leur gloire en ignominie.",
+        "NAB": "One and all they sin against me, exchanging their glory for shame.",
+        "VAT_ES": "Todos, sin excepción, pecaron contra mí, cambiaron su Gloria por la Ignominia.",
+        "CEI": "Tutti hanno peccato contro di me; cambierò la loro gloria in vituperio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "חַטַּ֥את עַמִּ֖/י יֹאכֵ֑לוּ וְ/אֶל עֲוֺנָ֖/ם יִשְׂא֥וּ נַפְשֽׁ/וֹ׃",
+        "LXX": "ἁμαρτίας λαοῦ μου φάγονται, καὶ ἐν ταῖς ἀδικίαις αὐτῶν λήμψονται τὰς ψυχὰς αὐτῶν.",
+        "VUL": "Peccata populi mei comedent,/ et ad iniquitatem eorum sublevabunt animas eorum./",
+        "SYN": "Грехами народа Моего кормятся они, и к беззаконию его стремится душа их.",
+        "NEO": "Ils se repaissent des péchés de mon peuple, ils ne désirent que ses iniquités.",
+        "NAB": "They feed on the sin of my people, and are greedy for their guilt.",
+        "VAT_ES": "Se alimentan con el pecado de mi pueblo y están ávidos de su iniquidad.",
+        "CEI": "Essi si nutrono del peccato del mio popolo e sono avidi della sua iniquità."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֥ה כָ/עָ֖ם כַּ/כֹּהֵ֑ן וּ/פָקַדְתִּ֤י עָלָי/ו֙ דְּרָכָ֔י/ו וּ/מַעֲלָלָ֖י/ו אָשִׁ֥יב לֽ/וֹ׃",
+        "LXX": "καὶ ἔσται καθὼς ὁ λαὸς οὕτως καὶ ὁ ἱερεύς, καὶ ἐκδικήσω ἐπ’ αὐτὸν τὰς ὁδοὺς αὐτοῦ, καὶ τὰ διαβούλια αὐτοῦ ἀνταποδώσω αὐτῷ.",
+        "VUL": "Et erit sicut populus, sic sacerdos ;/ et visitabo super eum vias ejus,/ et cogitationes ejus reddam ei./",
+        "SYN": "И что будет с народом, то и со священником; и накажу его по путям его, и воздам ему по делам его.",
+        "NEO": "Il en sera du prêtre comme du peuple ; je vengerai sur lui ses voies, et je ferai retomber sur lui ses œuvres.",
+        "NAB": "The priests shall fare no better than the people: I will punish them for their ways, and repay them for their deeds.",
+        "VAT_ES": "Pero al sacerdote le sucederá lo mismo que al pueblo: yo le pediré cuenta de su conducta y le retribuiré sus malas acciones.",
+        "CEI": "Il popolo e il sacerdote avranno la stessa sorte; li punirò per la loro condotta, e li retribuirò dei loro misfatti."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/אָֽכְלוּ֙ וְ/לֹ֣א יִשְׂבָּ֔עוּ הִזְנ֖וּ וְ/לֹ֣א יִפְרֹ֑צוּ כִּֽי אֶת יְהוָ֥ה עָזְב֖וּ לִ/שְׁמֹֽר׃",
+        "LXX": "καὶ φάγονται καὶ οὐ μὴ ἐμπλησθῶσιν, ἐπόρνευσαν καὶ οὐ μὴ κατευθύνωσιν, διότι τὸν κύριον ἐγκατέλιπον τοῦ φυλάξαι",
+        "VUL": "Et comedent, et non saturabuntur ;/ fornicati sunt, et non cessaverunt :/ quoniam Dominum dereliquerunt in non custodiendo./",
+        "SYN": "Будут есть, и не насытятся; будут блудить, и не размножатся; ибо оставили служение Господу.",
+        "NEO": "Ils mangeront et ne seront pas rassasiés, ils se prostitueront et ne se multiplieront pas ; car ils ont abandonné \\+w Yahweh|strong=\"H3068\"\\+w** pour ne plus le servir.",
+        "NAB": "They shall eat but not be satisfied, they shall play the harlot but not increase, Because they have abandoned the LORD",
+        "VAT_ES": "Comerán, pero no se saciarán, se prostituirán, pero no aumentarán, porque han abandonado al Señor, para entregarse a la prostitución.",
+        "CEI": "Mangeranno, ma non si sazieranno, si prostituiranno, ma non avranno prole, perchè hanno abbandonato il Signore per darsi alla prostituzione."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "זְנ֛וּת וְ/יַ֥יִן וְ/תִיר֖וֹשׁ יִֽקַּֽח לֵֽב׃",
+        "LXX": "πορνείαν. καὶ οἶνον καὶ μέθυσμα ἐδέξατο καρδία λαοῦ μου·",
+        "VUL": "Fornicatio, et vinum, et ebrietas auferunt cor./",
+        "SYN": "Блуд, вино и напитки завладели сердцем их.",
+        "NEO": "La luxure, le vin et le moût enlèvent le sens.",
+        "NAB": "to practice harlotry. Old wine and new deprive my people of understanding.",
+        "VAT_ES": "El vino y el mosto hacen perder la razón.",
+        "CEI": "Il vino e il mosto tolgono il senno."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "עַמִּ/י֙ בְּ/עֵצ֣/וֹ יִשְׁאָ֔ל וּ/מַקְל֖/וֹ יַגִּ֣יד ל֑/וֹ כִּ֣י ר֤וּחַ זְנוּנִים֙ הִתְעָ֔ה וַ/יִּזְנ֖וּ מִ/תַּ֥חַת אֱלֹהֵי/הֶֽם׃",
+        "LXX": "ἐν συμβόλοις ἐπηρώτων, καὶ ἐν ῥάβδοις αὐτοῦ ἀπήγγελλον αὐτῷ· πνεύματι πορνείας ἐπλανήθησαν καὶ ἐξεπόρνευσαν ἀπὸ τοῦ θεοῦ αὐτῶν.",
+        "VUL": "Populus meus in ligno suo interrogavit,/ et baculus ejus annuntiavit ei ;/ spiritus enim fornicationum decepit eos,/ et fornicati sunt a Deo suo./",
+        "SYN": "Народ Мой вопрошает свое дерево и жезл его дает ему ответ; ибо дух блуда ввел их в заблуждение, и, блудодействуя, они отступили от Бога своего.",
+        "NEO": "Mon peuple consulte son bois, et son bâton lui apprend l’avenir ; car un esprit de prostitution les a égarés, et ils se sont prostitués loin de leur Dieu.",
+        "NAB": "They consult their piece of wood, and their wand makes pronouncements for them, For the spirit of harlotry has led them astray; they commit harlotry, forsaking their God.",
+        "VAT_ES": "Mi pueblo consulta a su pedazo de madera y su vara lo adoctrina, porque un espíritu de prostitución lo extravía y se han prostituido lejos de su Dios.",
+        "CEI": "Il mio popolo consulta il suo pezzo di legno e il suo bastone gli dà il responso, poiché uno spirito di prostituzione li svia e si prostituiscono, allontanandosi dal loro Dio."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "עַל רָאשֵׁ֨י הֶ/הָרִ֜ים יְזַבֵּ֗חוּ וְ/עַל הַ/גְּבָעוֹת֙ יְקַטֵּ֔רוּ תַּ֣חַת אַלּ֧וֹן וְ/לִבְנֶ֛ה וְ/אֵלָ֖ה כִּ֣י ט֣וֹב צִלָּ֑/הּ עַל כֵּ֗ן תִּזְנֶ֨ינָה֙ בְּנ֣וֹתֵי/כֶ֔ם וְ/כַלּוֹתֵי/כֶ֖ם תְּנָאַֽפְנָה׃",
+        "LXX": "ἐπὶ τὰς κορυφὰς τῶν ὀρέων ἐθυσίαζον, καὶ ἐπὶ τοὺς βουνοὺς ἔθυον ὑποκάτω δρυὸς καὶ λεύκης καὶ δένδρου συσκιάζοντος, ὅτι καλὸν σκέπη. διὰ τοῦτο ἐκπορνεύσουσιν αἱ θυγατέρες ὑμῶν, καὶ αἱ νύμφαι ὑμῶν μοιχεύσουσιν·",
+        "VUL": "Super capita montium sacrificabant,/ et super colles accendebant thymiama ;/ subtus quercum, et populum, et terebinthum,/ quia bona erat umbra ejus ;/ ideo fornicabuntur filiæ vestræ,/ et sponsæ vestræ adulteræ erunt./",
+        "SYN": "На вершинах гор они приносят жертвы и на холмах совершают каждение под дубом и тополем и теревинфом, потому что хороша от них тень; поэтому любодействуют дочери ваши и прелюбодействуют невестки ваши.",
+        "NEO": "Ils offrent des sacrifices sur les sommets des montagnes, et ils brûlent de l’encens sur les collines, sous le chêne, le peuplier, le térébinthe, parce que l’ombrage en est bon. C’est pourquoi, si vos filles se prostituent, et si vos jeunes femmes sont adultères,",
+        "NAB": "On the mountaintops they offer sacrifice and on the hills they burn incense, Beneath oak and poplar and terebinth, because of their pleasant shade. That is why your daughters play the harlot, and your daughters-in-law are adulteresses.",
+        "VAT_ES": "Sacrifican en las cumbres de las montañas y queman incienso sobre las colinas, bajo la encina, el álamo y el terebinto, porque su sombre es agradable. Por eso se prostituyen las hijas de ustedes y sus nueras cometen adulterio.",
+        "CEI": "Sulla cima dei monti fanno sacrifici e sui colli bruciano incensi sotto la quercia, i pioppi e i terebinti, perchè buona è la loro ombra. Perciò si prostituiscono le vostre figlie e le vostre nuore commettono adulterio."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לֹֽא אֶפְק֨וֹד עַל בְּנוֹתֵי/כֶ֜ם כִּ֣י תִזְנֶ֗ינָה וְ/עַל כַּלּֽוֹתֵי/כֶם֙ כִּ֣י תְנָאַ֔פְנָה כִּי הֵם֙ עִם הַ/זֹּנ֣וֹת יְפָרֵ֔דוּ וְ/עִם הַ/קְּדֵשׁ֖וֹת יְזַבֵּ֑חוּ וְ/עָ֥ם לֹֽא יָבִ֖ין יִלָּבֵֽט׃",
+        "LXX": "καὶ οὐ μὴ ἐπισκέψωμαι ἐπὶ τὰς θυγατέρας ὑμῶν ὅταν πορνεύωσιν, καὶ ἐπὶ τὰς νύμφας ὑμῶν ὅταν μοιχεύωσιν· ὅτι αὐτοὶ μετὰ τῶν πορνῶν συνεφύροντο, καὶ μετὰ τῶν τετελεσμένων ἔθυον, καὶ ὁ λαὸς ὁ συνίων συνεπλέκετο μετὰ πόρνης.",
+        "VUL": "Non visitabo super filias vestras cum fuerint fornicatæ,/ et super sponsas vestras cum adulteraverint,/ quoniam ipsi cum meretricibus conversabantur,/ et cum effeminatis sacrificabant ;/ et populus non intelligens vapulabit./",
+        "SYN": "Я оставлю наказывать дочерей ваших, когда они блудодействуют, и невесток ваших, когда они прелюбодействуют, потому что вы сами на стороне блудниц и с любодейцами приносите жертвы, а невежественный народ гибнет.",
+        "NEO": "je ne punirai pas vos filles parce qu’elles se sont prostituées, ni vos jeunes brus pour leurs adultères ; car eux-mêmes vont à l’écart avec les prostituées, et sacrifient avec les courtisanes. Et le peuple sans intelligence court à sa perte.",
+        "NAB": "Am I then to punish your daughters for their harlotry, your daughters-in-law for their adultery? You yourselves consort with harlots, and with prostitutes you offer sacrifice! So must a people without understanding come to ruin.",
+        "VAT_ES": "Pero yo no pediré cuenta a sus hijas por su prostitución ni a sus nueras por su adulterio, porque ellos mismos se van aparte con prostitutas y ofrecen sacrificios con las consagradas a la prostitución. &iexcl;Así, un pueblo que no entiende va la ruina!",
+        "CEI": "Non punirò le vostre figlie se si prostituiscono, nè le vostre nuore se commettono adulterio; poiché essi stessi si appartano con le prostitute e con le prostitute sacre offrono sacrifici; un popolo, che non comprende, va a precipizio."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אִם זֹנֶ֤ה אַתָּה֙ יִשְׂרָאֵ֔ל אַל יֶאְשַׁ֖ם יְהוּדָ֑ה וְ/אַל תָּבֹ֣אוּ הַ/גִּלְגָּ֗ל וְ/אַֽל תַּעֲלוּ֙ בֵּ֣ית אָ֔וֶן וְ/אַל תִּשָּׁבְע֖וּ חַי יְהוָֽה׃",
+        "LXX": "σὺ δέ, Ἰσραήλ, μὴ ἀγνόει, καὶ Ἰούδα, μὴ εἰσπορεύεσθε εἰς Γάλγαλα, καὶ μὴ ἀναβαίνετε εἰς τὸν οἶκον Ὤν, καὶ μὴ ὀμνύετε ζῶντα Κύριον.",
+        "VUL": "Si fornicaris tu, Israël,/ non delinquat saltem Juda ;/ et nolite ingredi in Galgala,/ et ne ascenderitis in Bethaven,/ neque juraveritis : Vivit Dominus !/",
+        "SYN": "Если ты, Израиль, блудодействуешь, то пусть не грешил бы Иуда; и не ходите в Галгал, и не восходите в Беф-Авен, и не клянитесь: \"жив Господь!\"",
+        "NEO": "Si tu te prostitues, O Israël, que Juda ne se rende pas coupable ! Ne venez pas à Galgala, et ne montez pas à Bethaven, et ne jurez pas en disant : « \\+w Yahweh|strong=\"H3068\"\\+w** est vivant ! »",
+        "NAB": "Though you play the harlot, O Israel, let not Judah become guilty! Come not to Gilgal, nor up to Beth-aven, to swear, \"As the Lord lives!\"",
+        "VAT_ES": "&iexcl;Si tú te prostituyes, Israel, que al menos Judá no se haga culpable! &iexcl;No vayan a Guilgal, no suban a Bet Aven, ni juren por la vida del Señor!",
+        "CEI": "Se ti prostituisci tu, Israele, non si renda colpevole Giuda. Non andate a Gàlgala, non salite a Bet-Avèn, non giurate per il Signore vivente."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "כִּ֚י כְּ/פָרָ֣ה סֹֽרֵרָ֔ה סָרַ֖ר יִשְׂרָאֵ֑ל עַתָּה֙ יִרְעֵ֣/ם יְהוָ֔ה כְּ/כֶ֖בֶשׂ בַּ/מֶּרְחָֽב׃",
+        "LXX": "διότι ὡς δάμαλις παροιστρῶσα παροίστρησεν Ἰσραήλ· νῦν νεμήσει αὐτοὺς Κύριος ὡς ἀμνὸν ἐν εὐρυχώρῳ.",
+        "VUL": "Quoniam sicut vacca lasciviens declinavit Israël ;/ nunc pascet eos Dominus, quasi agnum in latitudine./",
+        "SYN": "Ибо как упрямая телица, упорен стал Израиль; посему будет ли теперь Господь пасти их, как агнцев на пространном пастбище?",
+        "NEO": "Parce que pareil à une génisse rétive, Israël a été rétif, maintenant \\+w Yahweh|strong=\"H3068\"\\+w** les fera paître, comme des agneaux, dans une plaine ouverte.",
+        "NAB": "For Israel is as stubborn as a heifer; will the LORD now give them broad pastures as though they were lambs?",
+        "VAT_ES": "Sí, Israel se ha vuelto obstinado como una vaca empacada. &iquest;Puede ahora el Señor apacentarlos como a corderos en campo abierto?",
+        "CEI": "E poiché come giovenca ribelle si ribella Israele, forse potrà pascolarlo il Signore come agnello in luoghi aperti?"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "חֲב֧וּר עֲצַבִּ֛ים אֶפְרָ֖יִם הַֽנַּֽח לֽ/וֹ׃",
+        "LXX": "μέτοχος εἰδώλων Ἐφράιμ ἔθηκεν ἑαυτῷ σκάνδαλα,",
+        "VUL": "Particeps idolorum Ephraim : dimitte eum./",
+        "SYN": "Привязался к идолам Ефрем; оставь его!",
+        "NEO": "Ephraïm est attaché aux idoles ; laisse-le !",
+        "NAB": "Ephraim is an associate of idols, let him alone!",
+        "VAT_ES": "Israel está apegado a los ídolos: &iexcl;déjalo!",
+        "CEI": "Si è alleato agli idoli Efraim,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "סָ֖ר סָבְאָ֑/ם הַזְנֵ֣ה הִזְנ֔וּ אָהֲב֥וּ הֵב֛וּ קָל֖וֹן מָגִנֶּֽי/הָ׃",
+        "LXX": "ᾑρέτισεν Χαναναίους· πορνεύοντες ἐξεπόρνευσαν, ἠγάπησαν ἀτιμίαν ἐκ φρυάγματος αὐτῆς.",
+        "VUL": "Separatum est convivium eorum ;/ fornicatione fornicati sunt :/ dilexerunt afferre ignominiam protectores ejus./",
+        "SYN": "Отвратительно пьянство их, совершенно предались блудодеянию; князья их любят постыдное.",
+        "NEO": "Dès qu’ils ont fini de boire, ils se livrent à la prostitution ; leurs chefs n’aspirent qu’à l’ignominie.",
+        "NAB": "When their carousing is over, they give themselves to harlotry; in their arrogance they love shame.",
+        "VAT_ES": "Cuando terminan de embriagarse se entregan a la prostitución; sus jefes aman la Ignominia.",
+        "CEI": "si accompagna ai beoni; si son dati alla prostituzione, han preferito il disonore alla loro gloria."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "צָרַ֥ר ר֛וּחַ אוֹתָ֖/הּ בִּ/כְנָפֶ֑י/הָ וְ/יֵבֹ֖שׁוּ מִ/זִּבְחוֹתָֽ/ם׃",
+        "LXX": "συστροφὴ πνεύματος σὺ εἶ ἐν ταῖς πτέρυξιν αὐτῆς, καὶ καταισχυνθήσονται ἐκ τῶν θυσιαστηρίων αὐτῶν.",
+        "VUL": "Ligavit eum spiritus in alis suis,/ et confundentur a sacrificiis suis.]",
+        "SYN": "Охватит их ветер своими крыльями, и устыдятся они жертв своих.",
+        "NEO": "Le vent les a enserrés dans ses ailes, et ils seront confus à cause de leurs sacrifices.",
+        "NAB": "The wind has bound them up in its pinions; they shall have only shame from their altars.",
+        "VAT_ES": "El viento los envolverá con sus alas y se avergonzarán de sus sacrificios",
+        "CEI": "Un vento li travolgerà con le sue ali e si vergogneranno dei loro sacrifici."
+      }
+    }
+  }
+}

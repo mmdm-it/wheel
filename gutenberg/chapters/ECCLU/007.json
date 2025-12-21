@@ -1,0 +1,627 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_007",
+  "book_key": "ECCLU",
+  "sequence": 7,
+  "chapter_in": {
+    "MT": 7,
+    "VUL": 7,
+    "LXX": 7
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Μὴ ποίει κακά, καὶ οὐ μή σε καταλάβῃ κακόν·",
+        "VUL": "[Noli facere mala, et non te apprehendent :/",
+        "SYN": "Не делай зла, и тебя не постигнет зло;",
+        "NEO": "Ne fais pas le mal, et le mal ne te saisira pas ;",
+        "NAB": "Do no evil, and evil will not overtake you;",
+        "VAT_ES": "No hagas el mal, y el mal no se apoderará de ti;",
+        "CEI": "Non fare il male, perché il male non ti prenda."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ἀπόστηθι ἀπὸ ἀδίκου, καὶ ἐκκλινεῖ ἀπὸ σοῦ.",
+        "VUL": "discede ab iniquo, et deficient mala abs te./",
+        "SYN": "удаляйся от неправды, и она уклонится от тебя.",
+        "NEO": "éloigne-toi de ce qui est injuste, et l’injuste s’éloignera de toi.",
+        "NAB": "avoid wickedness, and it will turn aside from you.",
+        "VAT_ES": "apártate de la injusticia, y ella se apartará de ti.",
+        "CEI": "Allontànati dall'iniquità ed essa si allontanerà da te."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "υἱέ, μὴ σπεῖρε ἐπ’ αὔλακας ἀδικίας, καὶ οὐ μὴ θερίσῃς αὐτὰς ἑπταπλασίως.",
+        "VUL": "Fili, non semines mala in sulcis injustitiæ,/ et non metes ea in septuplum./",
+        "SYN": "Сын мой! не сей на бороздах неправды, и не будешь в семь раз более пожинать с них.",
+        "NEO": "Mon fils, ne sème pas dans les sillons de l’injustice, si tu ne veux pas récolter sept fois autant.",
+        "NAB": "Sow not in the furrows of injustice, lest you harvest it sevenfold.",
+        "VAT_ES": "No siembres, hijo mío, en los surcos de la injusticia, no sea que coseches siete veces más.",
+        "CEI": "Figlio, non seminare nei solchi dell'ingiustizia per non raccoglierne sette volte tanto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "μὴ ζήτει παρὰ Κυρίου ἡγεμονίαν, μηδὲ παρὰ βασιλέως καθέδραν δόξης.",
+        "VUL": "Noli quærere a Domino ducatum,/ neque a rege cathedram honoris./",
+        "SYN": "Не проси у Господа власти, и у царя - почетного места.",
+        "NEO": "Ne demande pas au Seigneur le pouvoir, ni au roi un siège d’honneur.",
+        "NAB": "Seek not from the LORD authority, nor from the king a place of honor.",
+        "VAT_ES": "No pidas al Señor un puesto importante ni al rey un sitial de honor.",
+        "CEI": "Non domandare al Signore il potere né al re un posto di onore."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "μὴ δικαιοῦ ἔναντι Κυρίου, καὶ παρὰ βασιλεῖ μὴ σοφίζου.",
+        "VUL": "Non te justifices ante Deum,/ quoniam agnitor cordis ipse est :/ et penes regem noli velle videri sapiens./",
+        "SYN": "Не оправдывай себя пред Господом, и не мудрствуй пред царем.",
+        "NEO": "N’essaie pas de paraître juste devant le Seigneur, et ne cherche pas à paraître sage devant le roi.",
+        "NAB": "Parade not your justice before the Lord, and before the king flaunt not your wisdom.",
+        "VAT_ES": "No quieras pasar por justo delante del Señor ni te hagas el sabio delante del rey.",
+        "CEI": "Non farti giusto davanti al Signore né saggio davanti al re."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "μὴ ζήτει γενέσθαι κριτής, μὴ οὐκ ἐξισχύσεις ἐξᾶραι ἀδικίας· μή ποτε εὐλαβηθῇς ἀπὸ προσώπου δυνάστου, καὶ θήσεις σκάνδαλον ἐν εὐθύτητί σου.",
+        "VUL": "Noli quærere fieri judex,/ nisi valeas virtute irrumpere iniquitates :/ ne forte extimescas faciem potentis,/ et ponas scandalum in æquitate tua./",
+        "SYN": "Не домогайся сделаться судьею, чтобы не оказаться тебе бессильным сокрушить неправду, чтобы не убояться когда-либо лица сильного и не положить тени на правоту твою.",
+        "NEO": "Ne cherche pas à devenir juge, de peur que tu n’aies pas la force d’extirper l’injustice, de peur que tu ne sois intimidé en présence d’un puissant, et que tu ne mettes en péril ton équité.",
+        "NAB": "Seek not to become a judge if you have not strength to root out crime, Or you will show favor to the ruler and mar your integrity.",
+        "VAT_ES": "No aspires al cargo de juez, no sea que no puedas extirpar las injusticias o te dejes intimidar por un poderoso, y así pongas en peligro tu rectitud.",
+        "CEI": "Non cercare di divenire giudice, che poi ti manchi la forza di estirpare l'ingiustizia; altrimenti temeresti alla presenza del potente e getteresti una macchia sulla tua dirittura."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "μὴ ἁμάρτανε εἰς πλῆθος πόλεως, καὶ μὴ καταβάλῃς σεαυτὸν ἐν ὄχλῳ.",
+        "VUL": "Non pecces in multitudinem civitatis,/ nec te immittas in populum :/",
+        "SYN": "Не греши против городского общества, и не роняй себя пред народом.",
+        "NEO": "N’offense pas toute la population d’une ville, et ne te jette pas au milieu de la foule.",
+        "NAB": "Be guilty of no evil before the city's populace, nor disgrace yourself before the assembly.",
+        "VAT_ES": "No ofendas a la asamblea de la ciudad ni te degrades delante de la multitud.",
+        "CEI": "Non offendere l'assemblea della città e non degradarti in mezzo al popolo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "μὴ καταδεσμεύσῃς δὶς ἁμαρτίαν, ἐν γὰρ τῇ μιᾷ οὐκ ἀθῷος ἔσῃ.",
+        "VUL": "neque alliges duplicia peccata,/ nec enim in uno eris immunis./",
+        "SYN": "Не прилагай греха ко греху, ибо и за один не останешься ненаказанным.",
+        "NEO": "Ne lie pas deux fois le péché, car même pour un seul tu ne seras pas impuni.",
+        "NAB": "Do not plot to repeat a sin; not even for one will you go unpunished.",
+        "VAT_ES": "No incurras dos veces en pecado, porque ni uno solo quedará impune.",
+        "CEI": "Non ti impigliare due volte nel peccato, perché neppure di uno resterai impunito."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "μὴ εἴπῃς Τῷ πλήθει τῶν δώρων μου ἐπόψεται, καὶ ἐν τῷ προσενέγκαι με θεῷ ὑψίστῳ προσδέξεται.",
+        "VUL": "Noli esse pusillanimis in animo tuo :/",
+        "SYN": "Не говори: \"Он призрит на множество даров моих, и, когда я принесу их Богу Вышнему, Он примет\".",
+        "NEO": "Ne dis pas : « Dieu considérera la multitude de mes dons, et, quand je les offrirai au Dieu très haut, il les recevra. »",
+        "NAB": "Say not: \"He will appreciate my many gifts; the Most High will accept my offerings.\"",
+        "VAT_ES": "No digas: «El Señor apreciará la multitud de mis dones; cuando los presente al Dios Altísimo, él los aceptará».",
+        "CEI": "Non dire: \"Egli guarderà all'abbondanza dei miei doni, e quando farò l'offerta al Dio altissimo egli l'accetterà\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "μὴ ὀλιγοψυχήσῃς ἐν τῇ προσευχῇ σου, καὶ ἐλεημοσύνην ποιῆσαι μὴ παρίδῃς.",
+        "VUL": "exorare et facere eleemosynam ne despicias./",
+        "SYN": "Не малодушествуй в молитве твоей и не пренебрегай подавать милостыню.",
+        "NEO": "Ne sois pas pusillanime dans ta prière, et ne néglige pas de faire l’aumône.",
+        "NAB": "Be not impatient in prayers, and neglect not the giving of alms.",
+        "VAT_ES": "No dejes de orar confiadamente ni te olvides de dar limosna.",
+        "CEI": "Non mancar di fiducia nella tua preghiera e non trascurare di fare elemosina."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "μὴ καταγέλα ἄνθρωπον ὄντα ἐν πικρίᾳ ψυχῆς αὐτοῦ· ἔστιν γὰρ ὁ ταπεινῶν καὶ ἀνυψῶν.",
+        "VUL": "Ne dicas : In multitudine munerum meorum respiciet Deus,/ et offerente me Deo altissimo, munera mea suscipiet./",
+        "SYN": "Не насмехайся над человеком, находящимся в горести души его; ибо есть Смиряющий и Возвышающий.",
+        "NEO": "Ne te moque pas de l’homme dont le cœur est affligé, car il y en a un qui abaisse et qui élève.",
+        "NAB": "Laugh not at an embittered man; be mindful of him who exalts and humbles.",
+        "VAT_ES": "No te burles del hombre que está amargado, porque hay Alguien que humilla y también exalta.",
+        "CEI": "Non deridere un uomo dall'animo amareggiato, poiché c'è chi umilia e innalza."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "μὴ ἀροτρία ψεῦδος ἐπ’ ἀδελφῷ σου, μηδὲ φίλῳ τὸ ὅμοιον ποίει.",
+        "VUL": "Non irrideas hominem in amaritudine animæ :/ est enim qui humiliat et exaltat circumspector Deus./",
+        "SYN": "Не выдумывай лжи на брата твоего, и не делай того же против друга.",
+        "NEO": "Ne forge pas de mensonge contre ton frère ; ne fais pas pareille chose contre ton ami.",
+        "NAB": "Plot no mischief against your brother, nor against your friend and companion.",
+        "VAT_ES": "No urdas mentiras contra tu hermano ni lo hagas tampoco contra un amigo.",
+        "CEI": "Non fabbricare menzogne contro tuo fratello e neppure qualcosa di simile contro l'amico."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "μὴ θέλε ψεύδεσθαι πᾶν ψεῦδος· ὁ γὰρ ἐνδελεχισμὸς αὐτοῦ οὐκ εἰς ἀγαθόν.",
+        "VUL": "Noli amare mendacium adversus fratrem tuum,/ neque in amicum similiter facias./",
+        "SYN": "Не желай говорить какую бы то ни было ложь; ибо повторение ее не послужит ко благу.",
+        "NEO": "Garde-toi de dire aucun mensonge, car le mensonge continu ne tourne pas à bien.",
+        "NAB": "Delight not in telling lie after lie, for it never results in good.",
+        "VAT_ES": "No digas nunca una mentira, porque esa costumbre no conduce a nada bueno.",
+        "CEI": "Non volere in nessun modo ricorrere alla menzogna, perché le sue conseguenze non sono buone."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "μὴ ἀδολέσχει ἐν πλήθει πρεσβυτέρων, ⸆ καὶ μὴ δευτερώσῃς λόγον ἐν προσευχῇ σου.",
+        "VUL": "Noli velle mentiri omne mendacium :/ assiduitas enim illius non est bona./",
+        "SYN": "Пред собранием старших не многословь, и не повторяй слова в прошении твоем.",
+        "NEO": "Ne bavarde pas dans la compagnie des vieillards, et ne répète pas les paroles de ta prière.",
+        "NAB": "Thrust not yourself into the deliberations of princes, and repeat not the words of your prayer.",
+        "VAT_ES": "No hables demasiado en la asamblea de los ancianos ni repitas las palabras en tu oración.",
+        "CEI": "Non parlar troppo nell'assemblea degli anziani e non ripetere le parole della tua preghiera."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "μὴ μισήσῃς ἐπίπονον ἐργασίαν καὶ γεωργίαν ὑπὸ Ὑψίστου ἐκτισμένην.",
+        "VUL": "Noli verbosus esse in multitudine presbyterorum,/ et non iteres verbum in oratione tua./",
+        "SYN": "Не отвращайся от трудной работы и от земледелия, которое учреждено от Вышнего.",
+        "NEO": "Ne hais pas les labeurs pénibles, ni le travail des champs institué par le Très-Haut.",
+        "NAB": "Hate not laborious tasks, nor farming, which was ordained by the Most High.",
+        "VAT_ES": "No detestes los trabajos penosos ni el trabajo del campo, creado por el Altísimo.",
+        "CEI": "Non disprezzare il lavoro faticoso, neppure l'agricoltura creata dall'Altissimo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "μὴ προσλογίζου σεαυτὸν ἐν πλήθει ἁμαρτωλῶν· ⸂ μνήσθητι ὅτι ὀργὴ οὐ χρονιεῖ,⸃",
+        "VUL": "Non oderis laboriosa opera,/ et rusticationem creatam ab Altissimo./",
+        "SYN": "Не прилагайся ко множеству грешников.",
+        "NEO": "Ne te mets pas parmi le plus grand nombre des pécheurs ; souviens-toi que la vengeance ne tardera pas.",
+        "NAB": "Do not esteem yourself better than your fellows; remember, his wrath will not delay.",
+        "VAT_ES": "No te agregues a la multitud de los pecadores: recuerda que la ira del Señor no tardará.",
+        "CEI": "Non unirti alla moltitudine dei peccatori, ricòrdati che la collera divina non tarderà."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "ταπείνωσον σφόδρα τὴν ψυχήν σου. ὅτι ἐκδίκησις ἀσεβοῦς πῦρ καὶ σκώληξ.",
+        "VUL": "Non te reputes in multitudine indisciplinatorum./",
+        "SYN": "Глубоко смири душу твою.",
+        "NEO": "Humilie profondément ton âme, car le feu et le ver sont le châtiment de l’impie.",
+        "NAB": "More and more, humble your pride; what awaits man is worms.",
+        "VAT_ES": "Sé profundamente humilde, porque fuego y gusanos son el castigo del impío.",
+        "CEI": "Umilia profondamente la tua anima, perché castigo dell'empio sono fuoco e vermi."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "μὴ ἀλλάξῃς φίλον ἕνεκεν ἀδιαφόρου, μηδὲ ἀδελφὸν γνήσιον ἐν χρυσίῳ Σουφείρ.",
+        "VUL": "Memento iræ, quoniam non tardabit./",
+        "SYN": "Помни, что гнев не замедлит,",
+        "NEO": "N’échange pas un ami pour de l’argent, ni un frère pour l’or d’Ophir.",
+        "NAB": "Barter not a friend for money, nor a dear brother for the gold of Ophir.",
+        "VAT_ES": "No cambies a un amigo por dinero ni a un verdadero hermano por el oro de Ofir.",
+        "CEI": "Non cambiare un amico per interesse, né un fratello fedele per l'oro di Ofir."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "μὴ ἀστόχει γυναικὸς σοφῆς καὶ ἀγαθῆς, καὶ γὰρ χάρις αὐτῆς ὑπὲρ τὸ χρυσίον.",
+        "VUL": "Humilia valde spiritum tuum,/ quoniam vindicta carnis impii ignis et vermis.]",
+        "SYN": "что наказание нечестивому - огонь и червь.",
+        "NEO": "Ne te détourne pas d’une épouse intelligente et bonne ; car son charme vaut mieux que l’or.",
+        "NAB": "Dismiss not a sensible wife; a gracious wife is more precious than corals.",
+        "VAT_ES": "No te apartes de una mujer sabia y buena, porque su encanto vale más que el oro.",
+        "CEI": "Non disdegnare una sposa saggia e buona, poiché la sua bontà val più dell'oro."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "μὴ κακώσῃς οἰκέτην ἐργαζόμενον ἐν ἀληθείᾳ, μηδὲ μίσθιον διδόντα ψυχὴν αὐτοῦ·",
+        "VUL": "[Noli prævaricari in amicum pecuniam differentem,/ neque fratrem carissimum auro spreveris./",
+        "SYN": "Не меняй друга на сокровище и брата однокровного - на золото Офирское.",
+        "NEO": "Ne maltraite pas l’esclave qui travaille fidèlement, ni le mercenaire qui se dévoue à ton service.",
+        "NAB": "Mistreat not a servant who faithfully serves, nor a laborer who devotes himself to his task.",
+        "VAT_ES": "No maltrates al servidor que trabaja fielmente ni al jornalero que se da por entero.",
+        "CEI": "Non maltrattare uno schiavo che lavora fedelmente né un mercenario che dà tutto se stesso."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "οἰκέτην ἀγαθὸν ἀγαπάτω σου ἡ ψυχή· μὴ στερήσῃς αὐτὸν ἐλευθερίας.",
+        "VUL": "Noli discedere a muliere sensata et bona,/ quam sortitus es in timore Domini :/ gratia enim verecundiæ illius super aurum./",
+        "SYN": "Не оставляй умной и доброй жены, ибо достоинство ее драгоценнее золота.",
+        "NEO": "Aime l’esclave intelligent ; ne le prive pas de la liberté.",
+        "NAB": "Let a wise servant be dear to you as your own self; refuse him not his freedom.",
+        "VAT_ES": "Ama de corazón a un servidor inteligente y no lo prives de su libertad.",
+        "CEI": "Ami l'anima tua un servo saggio e non ricusargli la libertà."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "Κτήνη σοί ἐστιν; ἐπισκέπτου αὐτά, καὶ εἰ ἔστιν σοι χρήσιμα, ἐμμενέτω σοι.",
+        "VUL": "Non lædas servum in veritate operantem,/ neque mercenarium dantem animam suam./",
+        "SYN": "Не обижай раба, трудящегося усердно, ни наемника, преданного тебе душею.",
+        "NEO": "As-tu des troupeaux, prends-en soin, et, s’ils te sont utiles, garde-les chez toi.",
+        "NAB": "If you have livestock, look after them; if they are dependable, keep them.",
+        "VAT_ES": "Si tienes ganado, cuídalo bien, y si te da ganancia, consérvalo.",
+        "CEI": "Hai bestiame? Abbine cura; se ti è utile, resti in tuo possesso."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "τέκνα σοί ἐστιν; παίδευσον αὐτά, καὶ κάμψον ἐκ νεότητος τὸν τράχηλον αὐτῶν.",
+        "VUL": "Servus sensatus sit tibi dilectus quasi anima tua :/ non defraudes illum libertate,/ neque inopem derelinquas illum./",
+        "SYN": "Разумного раба да любит душа твоя, и не откажи ему в свободе.",
+        "NEO": "As-tu des fils, instruis-les, et plie-les au joug dès leur enfance.",
+        "NAB": "If you have sons, chastise them; bend their necks from childhood.",
+        "VAT_ES": "Si tienes hijos, edúcalos y exígeles obediencia desde su niñez.",
+        "CEI": "Hai figli? Educali e sottomettili fin dalla giovinezza."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "θυγατέρες σοί εἰσιν; πρόσεχε τῷ σώματι αὐτῶν, καὶ μὴ ἱλαρώσῃς πρὸς αὐτὰς τὸ πρόσωπόν σου.",
+        "VUL": "Pecora tibi sunt, attende illis :/ et si sunt utilia, perseverent apud te./",
+        "SYN": "Есть у тебя скот? наблюдай за ним, и если он полезен тебе, пусть остается у тебя.",
+        "NEO": "As-tu des filles, veille à leur chasteté, et n’aie pas avec elle un visage jovial.",
+        "NAB": "If you have daughters, keep them chaste, and be not indulgent to them.",
+        "VAT_ES": "Si tienes hijas, cuídalas para que sean castas y no te muestres demasiado blando con ellas.",
+        "CEI": "Hai figlie? Vigila sui loro corpi e non mostrare loro un volto troppo indulgente."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "ἔκδου θυγατέρα, καὶ ἔσῃ τετελεκὼς ἔργον μέγα, καὶ ἀνδρὶ συνετῷ δώρησαι αὐτήν.",
+        "VUL": "Filii tibi sunt ? erudi illos,/ et curva illos a pueritia illorum./",
+        "SYN": "Есть у тебя сыновья? учи их и с юности нагибай шею их.",
+        "NEO": "Marie ta fille, et tu auras fini une grosse affaire ; et donne-la à un homme intelligent.",
+        "NAB": "Giving your daughter in marriage ends a great task; but give her to a worthy man.",
+        "VAT_ES": "Casa a tu hija, y habrás hecho una gran obra, pero dásela a un hombre inteligente.",
+        "CEI": "Accasa una figlia e avrai compiuto un grande affare; ma sposala a un uomo assennato."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "γυνή σοί ἐστιν κατὰ ψυχήν; μὴ ἐκβάλῃς αὐτήν.",
+        "VUL": "Filiæ tibi sunt ? serva corpus illarum,/ et non ostendas hilarem faciem tuam ad illas./",
+        "SYN": "Есть у тебя дочери? имей попечение о теле их и не показывай им веселого лица твоего.",
+        "NEO": "As-tu une femme selon ton cœur, ne la répudie pas ; [mais ne te donne pas à une femme qui t’est contraire].",
+        "NAB": "If you have a wife, let her not seem odious to you; but where there is ill-feeling, trust her not.",
+        "VAT_ES": "Si quieres a tu mujer, no la repudies, pero si no la amas, no te fíes de ella.",
+        "CEI": "Hai una moglie secondo il tuo cuore? Non ripudiarla; ma di quella odiata non fidarti."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "ἐν ὅλῃ καρδίᾳ δόξασον τὸν πατέρα σου, καὶ μητρὸς ὠδῖνας μὴ ἐπιλάθῃ·",
+        "VUL": "Trade filiam, et grande opus feceris :/ et homini sensato da illam./",
+        "SYN": "Выдай дочь в замужество, и сделаешь великое дело, и подари ее мужу разумному.",
+        "NEO": "Honore ton père de tout ton cœur, et n’oublie pas les douleurs de ta mère.",
+        "NAB": "With your whole heart honor your father; your mother's birthpangs forget not.",
+        "VAT_ES": "Glorifica a tu padre de todo corazón y no olvides los dolores de tu madre;",
+        "CEI": "Onora tuo padre con tutto il cuore e non dimenticare i dolori di tua madre."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "μνήσθητι ὅτι δι’ αὐτῶν ἐγενήθης, καὶ τί ἀνταποδώσεις αὐτοῖς καθὼς αὐτοὶ σοί;",
+        "VUL": "Mulier si est tibi secundum animam tuam, non projicias illam :/ et odibili non credas te./ In toto corde tuo/",
+        "SYN": "Есть у тебя жена по душе? не отгоняй ее.",
+        "NEO": "Souviens-toi que c’est par eux que tu es venu au monde : et comment leur rendras-tu ce qu’ils t’ont donné ?",
+        "NAB": "Remember, of these parents you were born; what can you give them for all they gave you?",
+        "VAT_ES": "acuérdate que les debes la vida: &iquest;cómo les retribuirás lo que hicieron por ti?",
+        "CEI": "Ricorda che essi ti hanno generato; che darai loro in cambio di quanto ti hanno dato?"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "ἐν ὅλῃ ψυχῇ σου εὐλαβοῦ τὸν κύριον, καὶ τοὺς ἱερεῖς αὐτοῦ θαύμαζε·",
+        "VUL": "honora patrem tuum,/ et gemitus matris tuæ ne obliviscaris :/",
+        "SYN": "Всем сердцем почитай отца твоего и не забывай родильных болезней матери твоей.",
+        "NEO": "Crains le Seigneur de toute ton âme, et tiens ses prêtres en grand honneur.",
+        "NAB": "With all your soul, fear God, revere his priests.",
+        "VAT_ES": "Reverencia al Señor con toda tu alma y venera a sus sacerdotes.",
+        "CEI": "Temi con tutta l'anima il Signore e riverisci i suoi sacerdoti."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "ἐν ὅλῃ δυνάμει ἀγάπησον τὸν ποιήσαντά σε, καὶ τοὺς λειτουργοὺς αὐτοῦ μὴ ἐγκαταλίπῃς.",
+        "VUL": "memento quoniam nisi per illos natus non fuisses :/ et retribue illis, quomodo et illi tibi.]",
+        "SYN": "Помни, что ты рожден от них: и что можешь ты воздать им, как они тебе?",
+        "NEO": "Aime de toutes tes forces Celui qui t’a fait, et ne délaisse pas ses ministres.",
+        "NAB": "With all your strength, love your Creator, forsake not his ministers.",
+        "VAT_ES": "Ama a tu Creador con todas tus fuerzas y no abandones a sus ministros.",
+        "CEI": "Ama con tutta la forza chi ti ha creato e non trascurare i suoi ministri."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "φοβοῦ τὸν κύριον καὶ δόξασον ἱερέα, καὶ δὸς τὴν μερίδα αὐτῷ καθὼς ἐντέταλταί σοι ἀπ’ ἀρχῆς, καὶ περὶ πλημμελίας καὶ δόσιν βραχιόνων καὶ θυσίαν ἁγιασμοῦ καὶ ἀπαρχήν.",
+        "VUL": "[In tota anima tua time Dominum,/ et sacerdotes illius sanctifica./",
+        "SYN": "Всею душею твоею благоговей пред Господом и уважай священников Его.",
+        "NEO": "Crains le Seigneur et honore le prêtre ; donne-lui sa part, comme il a été prescrit dès l’origine : la victime pour le délit avec le don des épaules, la sainte oblation et les prémices.",
+        "NAB": "Honor God and respect the priest; give him his portion as you have been commanded: First fruits and contributions, due sacrifices and holy offerings.",
+        "VAT_ES": "Teme al Señor y glorifica al sacerdote, dale su parte, como se te ha mandado: las primicias, el sacrificio de reparación y el lomo de las víctimas, las ofrendas consagradas y la primicia de las cosas santas.",
+        "CEI": "Temi il Signore e onora il sacerdote, consegna la sua parte, come ti è stato comandato: primizie, sacrifici espiatori, offerta delle spalle, vittima di santificazione e primizie delle cose sante."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "LXX": "καὶ πτωχῷ ἔκτεινον τὴν χεῖρά σου, ἵνα τελειωθῇ ἡ εὐλογία σου.",
+        "VUL": "In omni virtute tua dilige eum qui te fecit,/ et ministros ejus ne derelinquas./",
+        "SYN": "Всею силою люби Творца твоего, и не оставляй служителей Его.",
+        "NEO": "Tends aussi la main au pauvre, afin que ta bénédiction soit complète.",
+        "NAB": "To the poor man also extend your hand, that your blessing may be complete;",
+        "VAT_ES": "Tiende la mano también al pobre, y serás plenamente bendecido;",
+        "CEI": "Al povero stendi la tua mano, perché sia perfetta la tua benedizione."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "LXX": "χάρις δόματος ἔναντι παντὸς ζῶντος, καὶ ἐπὶ νεκρῷ μὴ ἀποκωλύσῃς χάριν.",
+        "VUL": "Honora Deum ex tota anima tua,/ et honorifica sacerdotes,/ et propurga te cum brachiis./",
+        "SYN": "Бойся Господа, и почитай священника, и давай ему часть, как заповедано тебе:",
+        "NEO": "Donne gracieusement à tout vivant, et ne refuse pas ton bienfait au mort.",
+        "NAB": "Be generous to all the living, and withhold not your kindness from the dead.",
+        "VAT_ES": "sé generoso con todos los vivientes y no niegues tu piedad a los muertos;",
+        "CEI": "La tua generosità si estenda a ogni vivente e al morto non negare la tua grazia."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "LXX": "μὴ ὑστέρει ἀπὸ κλαιόντων, καὶ μετὰ πενθούντων πένθησον.",
+        "VUL": "Da illis partem, sicut mandatum est tibi, primitiarum et purgationis,/ et de negligentia tua purga te cum paucis./",
+        "SYN": "начатки, и за грех, и даяние плеч, и жертву освящения, и начатки святых.",
+        "NEO": "Ne fais pas défaut à ceux qui pleurent, et afflige-toi avec les affligés.",
+        "NAB": "Avoid not those who weep, but mourn with those who mourn;",
+        "VAT_ES": "no des la espalda a los que lloran y comparte la aflicción de los que sufren;",
+        "CEI": "Non evitare coloro che piangono e con gli afflitti mòstrati afflitto."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "LXX": "μὴ ὄκνει ἐπισκέπτεσθαι ἄρρωστον· ἐκ γὰρ τῶν τοιούτων ἀγαπηθήσῃ.",
+        "VUL": "Datum brachiorum tuorum,/ et sacrificium sanctificationis offeres Domino,/ et initia sanctorum./",
+        "SYN": "И к бедному простирай руку твою, дабы благословение твое было совершенно.",
+        "NEO": "Ne néglige pas de prendre soin des malades ; pour de tels actes de charité tu seras aimé de Dieu.",
+        "NAB": "Neglect not to visit the sick - for these things you will be loved.",
+        "VAT_ES": "no dejes de visitar al enfermo: con tales obras te harás amar.",
+        "CEI": "Non indugiare a visitare un malato, perché per questo sarai amato."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "LXX": "ἐν πᾶσι τοῖς λόγοις σου μιμνήσκου τὰ ἔσχατά σου, καὶ εἰς τὸν αἰῶνα οὐχ ἁμαρτήσεις.",
+        "VUL": "Et pauperi porrige manum tuam,/ ut perficiatur propitiatio et benedictio tua./",
+        "SYN": "Милость даяния да будет ко всякому живущему, но и умершего не лишай милости.",
+        "NEO": "Dans toutes tes actions souviens-toi de ta fin, et tu ne pécheras jamais.",
+        "NAB": "In whatever you do, remember your last days, and you will never sin.",
+        "VAT_ES": "En todas tus acciones, acuérdate de tu fin y no pecarás jamás.",
+        "CEI": "In tutte le tue opere ricordati della tua fine e non cadrai mai nel peccato."
+      }
+    }
+  }
+}

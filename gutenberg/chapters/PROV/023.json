@@ -1,0 +1,644 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PROV_023",
+  "book_key": "PROV",
+  "sequence": 23,
+  "chapter_in": {
+    "MT": 23,
+    "VUL": 23,
+    "LXX": 23
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "כִּֽי תֵ֭שֵׁב לִ/לְח֣וֹם אֶת מוֹשֵׁ֑ל בִּ֥ין תָּ֝בִ֗ין אֶת אֲשֶׁ֥ר לְ/פָנֶֽי/ךָ׃",
+        "LXX": "ἐὰν καθίσῃς δειπνεῖν ἐπὶ τραπέζης δυναστῶν, νοητῶς νόει τὰ παρατιθέμενά σοι,",
+        "VUL": "[Quando sederis ut comedas cum principe,/ diligenter attende quæ apposita sunt ante faciem tuam./",
+        "SYN": "Когда сядешь вкушать пищу с властелином, то тщательно наблюдай, что перед тобою,",
+        "NEO": "Si tu es à table avec un grand, fais attention à ce qui est devant toi.",
+        "NAB": "When you sit down to dine with a ruler, keep in mind who is before you;",
+        "VAT_ES": "Si te sientas a la mesa con un señor, fíjate bien en lo que tienes delante;",
+        "CEI": "Quando siedi a mangiare con un potente, considera bene che cosa hai davanti;"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/שַׂמְתָּ֣ שַׂכִּ֣ין בְּ/לֹעֶ֑/ךָ אִם בַּ֖עַל נֶ֣פֶשׁ אָֽתָּה׃",
+        "LXX": "καὶ ἐπίβαλλε τὴν χεῖρά σου, εἰδὼς ὅτι τοιαῦτά σε δεῖ παρασκευάσαι. εἰ δὲ ἀπληστότερος εἶ,",
+        "VUL": "Et statue cultrum in gutture tuo :/ si tamen habes in potestate animam tuam./",
+        "SYN": "и поставь преграду в гортани твоей, если ты алчен.",
+        "NEO": "Mets un couteau à ta gorge, si tu as trop d’avidité.",
+        "NAB": "And put a knife to your throat if you have a ravenous appetite.",
+        "VAT_ES": "clava un cuchillo en tu garganta, si tienes mucho apetito.",
+        "CEI": "mettiti un coltello alla gola, se hai molto appetito."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אַל תִּ֭תְאָו לְ/מַטְעַמּוֹתָ֑י/ו וְ֝/ה֗וּא לֶ֣חֶם כְּזָבִֽים׃",
+        "LXX": "μὴ ἐπιθύμει τῶν ἐδεσμάτων αὐτοῦ· ταῦτα γὰρ ἔχεται ζωῆς ψευδοῦς.",
+        "VUL": "Ne desideres de cibis ejus,/ in quo est panis mendacii./",
+        "SYN": "Не прельщайся лакомыми яствами его; это - обманчивая пища.",
+        "NEO": "Ne convoite pas ses mets délicats, c’est un aliment trompeur.",
+        "NAB": "Do not desire his delicacies; they are deceitful food.",
+        "VAT_ES": "No ambiciones sus manjares, porque son un alimento engañoso.",
+        "CEI": "Non desiderare le sue ghiottonerie, sono un cibo fallace."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אַל תִּיגַ֥ע לְֽ/הַעֲשִׁ֑יר מִֽ/בִּינָתְ/ךָ֥ חֲדָֽל׃",
+        "LXX": "μὴ παρεκτείνου πένης ὢν πλουσίῳ, τῇ δὲ σῇ ἐννοίᾳ ἀπόσχου.",
+        "VUL": "Noli laborare ut diteris,/ sed prudentiæ tuæ pone modum./",
+        "SYN": "Не заботься о том, чтобы нажить богатство; оставь такие мысли твои.",
+        "NEO": "Ne te tourmente pas pour devenir riche, abstiens-toi d’y appliquer ton intelligence.",
+        "NAB": "Toil not to gain wealth, cease to be concerned about it;",
+        "VAT_ES": "No te afanes por enriquecerte, deja de pensar en eso.",
+        "CEI": "Non affannarti per arricchire, rinunzia a un simile pensiero;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "ה/תעוף הֲ/תָ֤עִיף עֵינֶ֥י/ךָ בּ֗/וֹ וְֽ/אֵ֫ינֶ֥/נּוּ כִּ֤י עָשֹׂ֣ה יַעֲשֶׂה לּ֣/וֹ כְנָפַ֑יִם כְּ֝/נֶ֗שֶׁר ו/עיף יָע֥וּף הַ/שָּׁמָֽיִם׃",
+        "LXX": "ἐὰν ἐπιστήσῃς τὸ σὸν ὄμμα πρὸς αὐτόν, οὐδαμοῦ πεσεῖται· κατεσκεύασται γὰρ αὐτῷ πτέρυγες ὥσπερ ἀετοῦ, καὶ ὑποστρέφει εἰς τὸν οἶκον τοῦ προεστηκότος αὐτοῦ.",
+        "VUL": "Ne erigas oculos tuos ad opes quas non potes habere,/ quia facient sibi pennas quasi aquilæ, et volabunt in cælum./",
+        "SYN": "Устремишь глаза твои на него, и - его уже нет; потому что оно сделает себе крылья и, как орел, улетит к небу.",
+        "NEO": "Veux-tu poursuivre du regard ce qui va s’évanouir ? Car la richesse se fait des ailes, et, comme l’aigle, elle s’envole vers les cieux.",
+        "NAB": "While your glance flits to it, it is gone! for assuredly it grows wings, like the eagle that flies toward heaven.",
+        "VAT_ES": "Tus ojos vuelan hacia la riqueza, y ya no hay nada, porque ella se pone alas y vuela hacia el cielo como un águila.",
+        "CEI": "appena vi fai volare gli occhi sopra, essa già non è più: perché mette ali come aquila e vola verso il cielo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אַל תִּלְחַ֗ם אֶת לֶ֭חֶם רַ֣ע עָ֑יִן וְ/אַל תתאו תִּ֝תְאָ֗יו לְ/מַטְעַמֹּתָֽי/ו׃",
+        "LXX": "μὴ συνδείπνει ἀνδρὶ βασκάνῳ, μηδὲ ἐπιθύμει τῶν βρωμάτων αὐτοῦ·",
+        "VUL": "Ne comedas cum homine invido,/ et ne desideres cibos ejus :/",
+        "SYN": "Не вкушай пищи у человека завистливого и не прельщайся лакомыми яствами его;",
+        "NEO": "Ne mange pas le pain de l’homme envieux, et ne convoite pas ses mets délicats ;",
+        "NAB": "Do not take food with a grudging man, and do not desire his dainties;",
+        "VAT_ES": "No comas el pan del hombre malicioso ni codicies sus manjares,",
+        "CEI": "Non mangiare il pane di chi ha l'occhio cattivo e non desiderare le sue ghiottonerie,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּ֤י כְּמוֹ שָׁעַ֥ר בְּ/נַפְשׁ֗/וֹ כֶּ֫ן ה֥וּא אֱכֹ֣ל וּ֭/שְׁתֵה יֹ֣אמַר לָ֑/ךְ וְ֝/לִבּ֗/וֹ בַּל עִמָּֽ/ךְ׃",
+        "LXX": "ὃν τρόπον γὰρ εἴ τις καταπίοι τρίχα, οὕτως ἐσθίει καὶ πίνει. μηδὲ πρὸς σὲ εἰσαγάγῃς αὐτὸν καὶ φάγῃς τὸν ψωμόν σου μετ’ αὐτοῦ·",
+        "VUL": "quoniam in similitudinem arioli et conjectoris/ æstimat quod ignorat./ Comede et bibe, dicet tibi ;/ et mens ejus non est tecum./",
+        "SYN": "потому что, каковы мысли в душе его, таков и он; \"ешь и пей\", говорит он тебе, а сердце его не с тобою.",
+        "NEO": "car il ne vaut pas plus que les pensées de son âme. « Mange et bois, » te dira-t-il ; mais son cœur n’est pas avec toi.",
+        "NAB": "For in his greed he is like a storm. \"Eat and drink,\" he says to you, though his heart is not with you;",
+        "VAT_ES": "porque él es en realidad como piensa dentro de sí: «Come y bebe», te dice, pero su corazón no está contigo.",
+        "CEI": "perché come chi calcola fra di sé, così è costui; ti dirà: \"Mangia e bevi\", ma il suo cuore non è con te."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "פִּֽתְּ/ךָ אָכַ֥לְתָּ תְקִיאֶ֑/נָּה וְ֝/שִׁחַ֗תָּ דְּבָרֶ֥י/ךָ הַ/נְּעִימִֽים׃",
+        "LXX": "ἐξεμέσει γὰρ αὐτὸν καὶ λυμανεῖται τοὺς λόγους σου τοὺς καλούς.",
+        "VUL": "Cibos quos comederas evomes,/ et perdes pulchros sermones tuos./",
+        "SYN": "Кусок, который ты съел, изблюешь, и добрые слова твои ты потратишь напрасно.",
+        "NEO": "Tu vomiras le morceau que tu as mangé, et tu en seras pour tes belles paroles.",
+        "NAB": "The little you have eaten you will vomit up, and you will have wasted your agreeable words.",
+        "VAT_ES": "El bocado que comiste, lo vomitarás, y habrás desperdiciado tus lindas palabras.",
+        "CEI": "Il boccone che hai mangiato rigetterai e avrai sprecato le tue parole gentili."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "בְּ/אָזְנֵ֣י כְ֭סִיל אַל תְּדַבֵּ֑ר כִּֽי יָ֝ב֗וּז לְ/שֵׂ֣כֶל מִלֶּֽי/ךָ׃",
+        "LXX": "εἰς ὦτα ἄφρονος μηδὲν λέγε, μή ποτε μυκτηρίσῃ τοὺς συνετοὺς λόγους σου.",
+        "VUL": "In auribus insipientium ne loquaris,/ qui despicient doctrinam eloquii tui./",
+        "SYN": "В уши глупого не говори, потому что он презрит разумные слова твои.",
+        "NEO": "Ne parle pas aux oreilles de l’insensé, car il méprisera la sagesse de tes discours.",
+        "NAB": "Speak not for the fool's hearing; he will despise the wisdom of your words.",
+        "VAT_ES": "No hables a los oídos de un insensato, porque despreciará el buen sentido de tus palabras.",
+        "CEI": "Non parlare agli orecchi di uno stolto, perché egli disprezzerà le tue sagge parole."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אַל תַּ֭סֵּג גְּב֣וּל עוֹלָ֑ם וּ/בִ/שְׂדֵ֥י יְ֝תוֹמִ֗ים אַל תָּבֹֽא׃",
+        "LXX": "μὴ μεταθῇς ὅρια αἰώνια, εἰς δὲ κτῆμα ὀρφανῶν μὴ εἰσέλθῃς·",
+        "VUL": "Ne attingas parvulorum terminos,/ et agrum pupillorum ne introëas :/",
+        "SYN": "Не передвигай межи давней и на поля сирот не заходи,",
+        "NEO": "Ne déplace pas la borne antique, et n’entre pas dans le champ des orphelins.",
+        "NAB": "Remove not the ancient landmark, nor invade the fields of orphans;",
+        "VAT_ES": "No desplaces los linderos antiguos, ni te metas en los campos de los huérfanos,",
+        "CEI": "Non spostare il confine antico, e non invadere il campo degli orfani,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּֽי גֹאֲלָ֥/ם חָזָ֑ק הֽוּא יָרִ֖יב אֶת רִיבָ֣/ם אִתָּֽ/ךְ׃",
+        "LXX": "ὁ γὰρ λυτρούμενος αὐτοὺς Κύριος· κραταιός ἐστιν, καὶ κρινεῖ τὴν κρίσιν αὐτῶν μετὰ σοῦ.",
+        "VUL": "propinquus enim illorum fortis est,/ et ipse judicabit contra te causam illorum.]",
+        "SYN": "потому что Защитник их силен; Он вступится в дело их с тобою.",
+        "NEO": "Car leur vengeur est puissant : il défendra leur cause contre toi.",
+        "NAB": "For their redeemer is strong; he will defend their cause against you.",
+        "VAT_ES": "porque su Vengador es poderoso y defenderá su causa contra ti.",
+        "CEI": "perché il loro vendicatore è forte, egli difenderà la loro causa contro di te."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "הָבִ֣יאָ/ה לַ/מּוּסָ֣ר לִבֶּ֑/ךָ וְ֝/אָזְנֶ֗/ךָ לְ/אִמְרֵי דָֽעַת׃",
+        "LXX": "δὸς εἰς παιδείαν τὴν καρδίαν σου, τὰ δὲ ὦτά σου ἑτοίμασον λόγοις αἰσθήσεως.",
+        "VUL": "[Ingrediatur ad doctrinam cor tuum,/ et aures tuæ ad verba scientiæ./",
+        "SYN": "Приложи сердце твое к учению и уши твои - к умным словам.",
+        "NEO": "Applique ton cœur à l’instruction, et tes oreilles aux paroles de la science.",
+        "NAB": "Apply your heart to instruction, and your ears to words of knowledge.",
+        "VAT_ES": "Abre tu corazón a la instrucción y tus oídos a las palabras de la ciencia.",
+        "CEI": "Piega il cuore alla correzione e l'orecchio ai discorsi sapienti."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "אַל תִּמְנַ֣ע מִ/נַּ֣עַר מוּסָ֑ר כִּֽי תַכֶּ֥/נּוּ בַ֝/שֵּׁ֗בֶט לֹ֣א יָמֽוּת׃",
+        "LXX": "μὴ ἀπόσχῃ νήπιον παιδεύειν, ὅτι ἐὰν πατάξῃς αὐτὸν ῥάβδῳ, οὐ μὴ ἀποθάνῃ·",
+        "VUL": "Noli subtrahere a puero disciplinam :/ si enim percusseris eum virga, non morietur./",
+        "SYN": "Не оставляй юноши без наказания: если накажешь его розгою, он не умрет;",
+        "NEO": "N’épargne pas la correction à l’enfant ; si tu le frappes de la verge, il ne mourra point.",
+        "NAB": "Withhold not chastisement from a boy; if you beat him with the rod, he will not die.",
+        "VAT_ES": "No mezquines la corrección a un niño: si lo golpeas con la vara, no morirá.",
+        "CEI": "Non risparmiare al giovane la correzione, anche se tu lo batti con la verga, non morirà;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אַ֭תָּה בַּ/שֵּׁ֣בֶט תַּכֶּ֑/נּוּ וְ֝/נַפְשׁ֗/וֹ מִ/שְּׁא֥וֹל תַּצִּֽיל׃",
+        "LXX": "σὺ μὲν γὰρ πατάξεις αὐτὸν ῥάβδῳ, τὴν δὲ ψυχὴν αὐτοῦ ἐκ θανάτου ῥύσῃ.",
+        "VUL": "Tu virga percuties eum,/ et animam ejus de inferno liberabis./",
+        "SYN": "ты накажешь его розгою и спасешь душу его от преисподней.",
+        "NEO": "Tu le frappes de la verge, et tu délivres son âme du schéol.",
+        "NAB": "Beat him with the rod, and you will save him from the nether world.",
+        "VAT_ES": "Tú lo golpearás con la vara, y librarás su vida del Abismo.",
+        "CEI": "anzi, se lo batti con la verga, lo salverai dagli inferi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "בְּ֭נִ/י אִם חָכַ֣ם לִבֶּ֑/ךָ יִשְׂמַ֖ח לִבִּ֣/י גַם אָֽנִי׃",
+        "LXX": "υἱέ, ἐὰν σοφὴ γένηταί σου ἡ καρδία, εὐφρανεῖς καὶ τὴν ἐμὴν καρδίαν,",
+        "VUL": "Fili mi, si sapiens fuerit animus tuus,/ gaudebit tecum cor meum :/",
+        "SYN": "Сын мой! если сердце твое будет мудро, то порадуется и мое сердце;",
+        "NEO": "Mon fils, si ton cœur est sage, mon cœur, à moi aussi, sera dans la joie.",
+        "NAB": "My son, if your heart be wise, my own heart also will rejoice;",
+        "VAT_ES": "Hijo mío, si tu corazón es sabio, también se alegrará mi corazón:",
+        "CEI": "Figlio mio, se il tuo cuore sarà saggio, anche il mio cuore gioirà."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/תַעְלֹ֥זְנָה כִלְיוֹתָ֑/י בְּ/דַבֵּ֥ר שְׂ֝פָתֶ֗י/ךָ מֵישָׁרִֽים׃",
+        "LXX": "καὶ ἐνδιατρίψει λόγοις τὰ σὰ χείλη πρὸς τὰ ἐμὰ χείλη, ἐὰν ὀρθὰ ὦσιν.",
+        "VUL": "et exsultabunt renes mei,/ cum locuta fuerint rectum labia tua./",
+        "SYN": "и внутренности мои будут радоваться, когда уста твои будут говорить правое.",
+        "NEO": "Mes entrailles tressailliront d’allégresse, quand tes lèvres diront ce qui est droit.",
+        "NAB": "And my inmost being will exult, when your lips speak what is right.",
+        "VAT_ES": "mis entrañas se regocijarán, cuando tus labios hablen con rectitud.",
+        "CEI": "Esulteranno le mie viscere, quando le tue labbra diranno parole rette."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אַל יְקַנֵּ֣א לִ֭בְּ/ךָ בַּֽ/חַטָּאִ֑ים כִּ֥י אִם בְּ/יִרְאַת יְ֝הוָ֗ה כָּל הַ/יּֽוֹם׃",
+        "LXX": "μὴ ζηλούτω ἡ καρδία σου ἁμαρτωλούς, ἀλλὰ ἐν φόβῳ Κυρίου ἴσθι ὅλην τὴν ἡμέραν.",
+        "VUL": "Non æmuletur cor tuum peccatores,/ sed in timore Domini esto tota die :/",
+        "SYN": "Да не завидует сердце твое грешникам, но да пребудет оно во все дни в страхе Господнем;",
+        "NEO": "Que ton cœur n’envie pas les pécheurs, mais qu’il reste toujours dans la crainte de \\+w Yahweh|strong=\"H3068\"\\+w** ;",
+        "NAB": "Let not your heart emulate sinners, but be zealous for the fear of the LORD always;",
+        "VAT_ES": "Que tu corazón no envidie a los pecadores, sino que siempre tema al Señor.",
+        "CEI": "Il tuo cuore non invidi i peccatori, ma resti sempre nel timore del Signore,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כִּ֭י אִם יֵ֣שׁ אַחֲרִ֑ית וְ֝/תִקְוָתְ/ךָ֗ לֹ֣א תִכָּרֵֽת׃",
+        "LXX": "ἐὰν γὰρ τηρήσῃς αὐτά, ἔσται σοι ἔκγονα, ἡ δὲ ἐλπίς σου οὐκ ἀποστήσεται.",
+        "VUL": "quia habebis spem in novissimo,/ et præstolatio tua non auferetur./",
+        "SYN": "потому что есть будущность, и надежда твоя не потеряна.",
+        "NEO": "car il y a un avenir, et ton espérance ne sera pas anéantie.",
+        "NAB": "For you will surely have a future, and your hope will not be cut off.",
+        "VAT_ES": "Así, ciertamente, tendrás un porvenir y tu esperanza no quedará defraudada.",
+        "CEI": "perché così avrai un avvenire e la tua speranza non sarà delusa."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "שְׁמַע אַתָּ֣ה בְנִ֣/י וַ/חֲכָ֑ם וְ/אַשֵּׁ֖ר בַּ/דֶּ֣רֶךְ לִבֶּֽ/ךָ׃",
+        "LXX": "ἄκουε, υἱέ, καὶ σοφὸς γενοῦ, καὶ κατεύθυνε ἐννοίας σῆς καρδίας.",
+        "VUL": "Audi, fili mi, et esto sapiens,/ et dirige in via animum tuum./",
+        "SYN": "Слушай, сын мой, и будь мудр, и направляй сердце твое на прямой путь.",
+        "NEO": "Ecoute, mon fils, et sois sage ; dirige ton cœur dans la voie droite.",
+        "NAB": "Hear, my son, and be wise, and guide your heart in the right way.",
+        "VAT_ES": "Escucha, hijo mío, y te harás sabio, y enderezarás tu corazón por el buen camino.",
+        "CEI": "Ascolta, figlio mio, e sii saggio e indirizza il cuore per la via retta."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "אַל תְּהִ֥י בְ/סֹֽבְאֵי יָ֑יִן בְּ/זֹלֲלֵ֖י בָשָׂ֣ר לָֽ/מוֹ׃",
+        "LXX": "μὴ ἴσθι οἰνοπότης, μηδὲ ἐκτείνου συμβολαῖς, κρεῶν ἀγορασμοῖς·",
+        "VUL": "Noli esse in conviviis potatorum,/ nec in comessationibus eorum qui carnes ad vescendum conferunt :/",
+        "SYN": "Не будь между упивающимися вином, между пресыщающимися мясом:",
+        "NEO": "Ne sois pas parmi les buveurs de vin, parmi ceux qui se gorgent de viandes ;",
+        "NAB": "Consort not with winebibbers, nor with those who eat meat to excess;",
+        "VAT_ES": "No te juntes con los borrachos ni con los que se hartan de carne,",
+        "CEI": "Non essere fra quelli che s'inebriano di vino, né fra coloro che son ghiotti di carne,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "כִּי סֹבֵ֣א וְ֭/זוֹלֵל יִוָּרֵ֑שׁ וּ֝/קְרָעִ֗ים תַּלְבִּ֥ישׁ נוּמָֽה׃",
+        "LXX": "πᾶς γὰρ μέθυσος καὶ πορνοκόπος πτωχεύσει, καὶ ἐνδύσεται διερρηγμένα καὶ ῥακώδη πᾶς ὑπνώδης.",
+        "VUL": "quia vacantes potibus et dantes symbola consumentur,/ et vestietur pannis dormitatio./",
+        "SYN": "потому что пьяница и пресыщающийся обеднеют, и сонливость оденет в рубище.",
+        "NEO": "car le buveur et le gourmand s’appauvrissent, et la somnolence fait porter des haillons.",
+        "NAB": "For the drunkard and the glutton come to poverty, and torpor clothes a man in rags.",
+        "VAT_ES": "porque el borracho y el glotón se empobrecen, y la modorra hace andar vestido con harapos.",
+        "CEI": "perché l'ubriacone e il ghiottone impoveriranno e il dormiglione si vestirà di stracci."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "שְׁמַ֣ע לְ֭/אָבִי/ךָ זֶ֣ה יְלָדֶ֑/ךָ וְ/אַל תָּ֝ב֗וּז כִּֽי זָקְנָ֥ה אִמֶּֽ/ךָ׃",
+        "LXX": "ἄκουε, υἱέ, πατρὸς τοῦ γεννήσαντός σε, καὶ μὴ καταφρόνει ὅτι γεγήρακέν σου ἡ μήτηρ.",
+        "VUL": "Audi patrem tuum, qui genuit te,/ et ne contemnas cum senuerit mater tua./",
+        "SYN": "Слушайся отца твоего: он родил тебя; и не пренебрегай матери твоей, когда она и состарится.",
+        "NEO": "Ecoute ton père, lui qui t’a engendré, et ne méprise pas ta mère, quand elle est devenue vieille.",
+        "NAB": "Listen to your father who begot you, and despise not your mother when she is old.",
+        "VAT_ES": "Escucha a tu padre, que te engendró, y no desprecies a tu madre cuando sea vieja.",
+        "CEI": "Ascolta tuo padre che ti ha generato, non disprezzare tua madre quando è vecchia."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "אֱמֶ֣ת קְ֭נֵה וְ/אַל תִּמְכֹּ֑ר חָכְמָ֖ה וּ/מוּסָ֣ר וּ/בִינָֽה׃",
+        "VUL": "Veritatem eme, et noli vendere sapientiam,/ et doctrinam, et intelligentiam./",
+        "SYN": "Купи истину и не продавай мудрости и учения и разума.",
+        "NEO": "Acquiers la vérité, et ne la vend pas, la sagesse, l’instruction et l’intelligence.",
+        "NAB": "Get the truth, and sell it not - wisdom, instruction and understanding.",
+        "VAT_ES": "Adquiere la verdad y no la vendas, lo mismo que la sabiduría, la instrucción y la inteligencia.",
+        "CEI": "Acquista il vero bene e non cederlo, la sapienza, l'istruzione e l'intelligenza."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "גול גִּ֣יל יגול יָ֭גִיל אֲבִ֣י צַדִּ֑יק יולד וְ/יוֹלֵ֥ד חָ֝כָ֗ם ו/ישמח יִשְׂמַח בּֽ/וֹ׃",
+        "LXX": "καλῶς ἐκτρέφει πατὴρ δίκαιος, ἐπὶ δὲ υἱῷ σοφῷ εὐφραίνεται ἡ ψυχὴ αὐτοῦ.",
+        "VUL": "Exsultat gaudio pater justi ;/ qui sapientem genuit, lætabitur in eo./",
+        "SYN": "Торжествует отец праведника, и родивший мудрого радуется о нем.",
+        "NEO": "Le père du juste est dans l’allégresse, celui qui donne le jour à un sage en aura de la joie.",
+        "NAB": "The father of a just man will exult with glee; he who begets a wise son will have joy in him.",
+        "VAT_ES": "El padre de un justo se llena de gozo, el que tiene un hijo sabio se alegra por él:",
+        "CEI": "Il padre del giusto gioirà pienamente e chi ha generato un saggio se ne compiacerà."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "יִֽשְׂמַח אָבִ֥י/ךָ וְ/אִמֶּ֑/ךָ וְ֝/תָגֵ֗ל יֽוֹלַדְתֶּֽ/ךָ׃",
+        "LXX": "εὐφραινέσθω ὁ πατὴρ καὶ ἡ μήτηρ ἐπὶ σοί, καὶ χαιρέτω ἡ τεκοῦσά σε. ⸆",
+        "VUL": "Gaudeat pater tuus et mater tua,/ et exsultet quæ genuit te./",
+        "SYN": "Да веселится отец твой и да торжествует мать твоя, родившая тебя.",
+        "NEO": "Que ton père et ta mère se réjouissent ! Que celle qui t’a enfanté soit dans l’allégresse !",
+        "NAB": "Let your father and mother have joy; let her who bore you exult.",
+        "VAT_ES": "&iexcl;que se alegren tu padre y tu madre y se llene de gozo la que te hizo nacer!",
+        "CEI": "Gioisca tuo padre e tua madre e si rallegri colei che ti ha generato."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "תְּנָֽ/ה בְנִ֣/י לִבְּ/ךָ֣ לִ֑/י וְ֝/עֵינֶ֗י/ךָ דְּרָכַ֥/י תרצנה תִּצֹּֽרְנָה׃",
+        "LXX": "δός μοι, υἱέ, σὴν καρδίαν· οἱ δὲ σοὶ ὀφθαλμοὶ ἐμὰς ὁδοὺς τηρείτωσαν.",
+        "VUL": "Præbe, fili mi, cor tuum mihi,/ et oculi tui vias meas custodiant./",
+        "SYN": "Сын мой! отдай сердце твое мне, и глаза твои да наблюдают пути мои,",
+        "NEO": "Mon fils, donne-moi ton cœur, et que tes yeux gardent mes voies :",
+        "NAB": "My son, give me your heart, and let your eyes keep to my ways.",
+        "VAT_ES": "Hijo mío, préstame atención y acepta de buena gana mis caminos.",
+        "CEI": "Fà bene attenzione a me, figlio mio, e tieni fisso lo sguardo ai miei consigli:"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "כִּֽי שׁוּחָ֣ה עֲמֻקָּ֣ה זוֹנָ֑ה וּ/בְאֵ֥ר צָ֝רָ֗ה נָכְרִיָּֽה׃",
+        "LXX": "πίθος γὰρ τετρημένος ἐστὶν ἀλλότριος οἶκος καὶ φρέαρ στενὸν ἀλλότριον.",
+        "VUL": "Fovea enim profunda est meretrix,/ et puteus angustus aliena./",
+        "SYN": "потому что блудница - глубокая пропасть, и чужая жена - тесный колодезь;",
+        "NEO": "car la courtisane est une fosse profonde, et l’étrangère un puits étroit.",
+        "NAB": "For the harlot is a deep ditch, and the adulteress a narrow pit;",
+        "VAT_ES": "Porque la prostituta es una fosa profunda y la mujer extraña, un pozo estrecho:",
+        "CEI": "una fossa profonda è la prostituta, e un pozzo stretto la straniera."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "אַף הִ֭יא כְּ/חֶ֣תֶף תֶּֽאֱרֹ֑ב וּ֝/בוֹגְדִ֗ים בְּ/אָדָ֥ם תּוֹסִֽף׃",
+        "LXX": "οὗτος γὰρ συντόμως ἀπολεῖται, καὶ πᾶς παράνομος ἀναλωθήσεται.",
+        "VUL": "Insidiatur in via quasi latro,/ et quos incautos viderit, interficiet.]",
+        "SYN": "она, как разбойник, сидит в засаде и умножает между людьми законопреступников.",
+        "NEO": "Elle dresse des embûches comme pour une proie et elle augmente parmi les hommes le nombre des prévaricateurs.",
+        "NAB": "Yes, she lies in wait like a robber, and increases the faithless among men.",
+        "VAT_ES": "también ella está al acecho como un ladrón y multiplica las traiciones entre los hombres.",
+        "CEI": "Essa si apposta come un ladro e aumenta fra gli uomini il numero dei perfidi."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "לְ/מִ֨י א֥וֹי לְ/מִ֪י אֲב֡וֹי לְ/מִ֤י מדונים מִדְיָנִ֨ים לְ/מִ֥י שִׂ֗יחַ לְ֭/מִי פְּצָעִ֣ים חִנָּ֑ם לְ֝/מִ֗י חַכְלִל֥וּת עֵינָֽיִם׃",
+        "LXX": "τίνι οὐαί; τίνι θόρυβος; τίνι κρίσις; τίνι δὲ ἀηδία καὶ λέσχαι; τίνι συντρίμματα διὰ κενῆς; τίνος πελιοὶ ὀφθαλμοί;",
+        "VUL": "[Cui væ ? cujus patri væ ?/ cui rixæ ? cui foveæ ?/ cui sine causa vulnera ? cui suffusio oculorum ?/",
+        "SYN": "У кого вой? у кого стон? у кого ссоры? у кого горе? у кого раны без причины? у кого багровые глаза?",
+        "NEO": "Pour qui les ah ? Pour qui les hélas ? Pour qui les disputes ? Pour qui les murmures ? Pour qui les blessures sans raison ? Pour qui les yeux rouges ?...",
+        "NAB": "Who scream? Who shriek? Who have strife? Who have anxiety? Who have wounds for nothing? Who have black eyes?",
+        "VAT_ES": "&iquest;Para quién los lamentos? &iquest;Para quién los quejidos? &iquest;Para quién las querellas? &iquest;Para quién los suspiros? &iquest;Para quién las heridas sin motivo? &iquest;Para quién la mirada turbia?",
+        "CEI": "Per chi i guai? Per chi i lamenti? Per chi i litigi? Per chi i gemiti? A chi le percosse per futili motivi? A chi gli occhi rossi?"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "לַֽ/מְאַחֲרִ֥ים עַל הַ/יָּ֑יִן לַ֝/בָּאִ֗ים לַ/חְקֹ֥ר מִמְסָֽךְ׃",
+        "LXX": "οὐ τῶν ἐνχρονιζόντων ἐν οἴνοις; οὐ τῶν ἰχνευόντων ποῦ πότοι γίνονται;",
+        "VUL": "nonne his qui commorantur in vino,/ et student calicibus epotandis ?/",
+        "SYN": "У тех, которые долго сидят за вином, которые приходят отыскивать _вина_ приправленного.",
+        "NEO": "Pour ceux qui s’attardent auprès du vin, pour ceux qui vont goûter du vin aromatisé.",
+        "NAB": "Those who linger long over wine, those who engage in trials of blended wine.",
+        "VAT_ES": "Para los que se pasan bebiendo y van en busca de vino aromatizado.",
+        "CEI": "Per quelli che si perdono dietro al vino e vanno a gustare vino puro."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "אַל תֵּ֥רֶא יַיִן֮ כִּ֪י יִתְאַ֫דָּ֥ם כִּֽי יִתֵּ֣ן ב/כיס בַּ/כּ֣וֹס עֵינ֑/וֹ יִ֝תְהַלֵּ֗ךְ בְּ/מֵישָׁרִֽים׃",
+        "LXX": "μὴ μεθύσκεσθε ἐν οἴνοις, ἀλλὰ ὁμιλεῖτε ἀνθρώποις δικαίοις, καὶ ὁμιλεῖτε ἐν περιπάτοις· ἐὰν γὰρ εἰς τὰς φιάλας καὶ τὰ ποτήρια δῷς τοὺς ὀφθαλμούς σου, ὕστερον περιπατήσεις γυμνότερος ὑπέρου·",
+        "VUL": "Ne intuearis vinum quando flavescit,/ cum splenduerit in vitro color ejus :/ ingreditur blande,/",
+        "SYN": "Не смотри на вино, как оно краснеет, как оно искрится в чаше, как оно ухаживается ровно:",
+        "NEO": "Ne regarde pas le vin : comme il est vermeil ; comme il donne son éclat dans la coupe, comme il coule aisément.",
+        "NAB": "Look not on the wine when it is red, when it sparkles in the glass. It goes down smoothly;",
+        "VAT_ES": "No mires el vino: &iexcl;qué rojo es! &iexcl;Cómo centellea en la copa! &iexcl;Cómo fluye suavemente!",
+        "CEI": "Non guardare il vino quando rosseggia, quando scintilla nella coppa e scende giù piano piano;"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "אַ֭חֲרִית/וֹ כְּ/נָחָ֣שׁ יִשָּׁ֑ךְ וּֽ/כְ/צִפְעֹנִ֥י יַפְרִֽשׁ׃",
+        "LXX": "τὸ δὲ ἔσχατον ὥσπερ ὑπὸ ὄφεως πεπληγὼς ἐκτείνεται, καὶ ὥσπερ ὑπὸ κεράστου διαχεῖται αὐτῷ ὁ ἰός.",
+        "VUL": "sed in novissimo mordebit ut coluber,/ et sicut regulus venena diffundet./",
+        "SYN": "впоследствии, как змей, оно укусит, и ужалит, как аспид;",
+        "NEO": "Il finit par mordre comme un serpent, et par piquer comme un basilic.",
+        "NAB": "but in the end it bites like a serpent, or like a poisonous adder.",
+        "VAT_ES": "Pero al fin muerde como una serpiente y pica como una víbora.",
+        "CEI": "finirà con il morderti come un serpente e pungerti come una vipera."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "עֵ֭ינֶי/ךָ יִרְא֣וּ זָר֑וֹת וְ֝/לִבְּ/ךָ֗ יְדַבֵּ֥ר תַּהְפֻּכֽוֹת׃",
+        "LXX": "οἱ ὀφθαλμοί σου ὅταν ἴδωσιν ἀλλοτρίαν, τὸ στόμα σου τότε λαλήσει σκολιά,",
+        "VUL": "Oculi tui videbunt extraneas,/ et cor tuum loquetur perversa./",
+        "SYN": "глаза твои будут смотреть на чужих жен, и сердце твое заговорит развратное,",
+        "NEO": "Tes yeux se porteront sur des étrangères, et ton cœur tiendra des discours pervers.",
+        "NAB": "Your eyes behold strange sights, and your heart utters disordered thoughts;",
+        "VAT_ES": "Tus ojos verán cosas extrañas, tu corazón hablará sin ton ni son;",
+        "CEI": "Allora i tuoi occhi vedranno cose strane e la tua mente dirà cose sconnesse."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְ֭/הָיִיתָ כְּ/שֹׁכֵ֣ב בְּ/לֶב יָ֑ם וּ֝/כְ/שֹׁכֵ֗ב בְּ/רֹ֣אשׁ חִבֵּֽל׃",
+        "LXX": "καὶ κατακείσῃ ὥσπερ ἐν καρδίᾳ θαλάσσης, καὶ ὥσπερ κυβερνήτης ἐν πολλῷ κλύδωνι.",
+        "VUL": "Et eris sicut dormiens in medio mari,/ et quasi sopitus gubernator, amisso clavo./",
+        "SYN": "и ты будешь, как спящий среди моря и как спящий на верху мачты.",
+        "NEO": "Tu seras comme un homme couché au milieu de la mer, comme un homme endormi au sommet d’un mât.",
+        "NAB": "You are like one now lying in the depths of the sea, now sprawled at the top of the mast.",
+        "VAT_ES": "serás como un hombre acostado en alta mar, acostado en la punta de un mástil.",
+        "CEI": "Ti parrà di giacere in alto mare o di dormire in cima all'albero maestro."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "הִכּ֥וּ/נִי בַל חָלִיתִי֮ הֲלָמ֗וּ/נִי בַּל יָ֫דָ֥עְתִּי מָתַ֥י אָקִ֑יץ א֝וֹסִ֗יף אֲבַקְשֶׁ֥/נּוּ עֽוֹד׃",
+        "LXX": "ἐρεῖς δέ Τύπτουσίν με καὶ οὐκ ἐπόνεσα, καὶ ἐνέπαιξάν μοι, ἐγὼ δὲ οὐκ ᾔδειν· πότε ὄρθρος ἔσται, ἵνα ἐλθὼν ζητήσω μεθ’ ὧν συνελεύσομαι;",
+        "VUL": "Et dices : Verberaverunt me, sed non dolui ;/ traxerunt me, et ego non sensi./ Quando evigilabo, et rursus vina reperiam ?]",
+        "SYN": "[И скажешь:] \"били меня, мне не было больно; толкали меня, я не чувствовал. Когда проснусь, опять буду искать того же\".",
+        "NEO": "« On m’a frappé... Je n’ai pas de mal ! On m’a battu... Je ne sens rien !... Quand me réveillerai-je ?... Il m’en faut encore ! »",
+        "NAB": "\"They struck me, but it pained me not; They beat me, but I felt it not; When shall I awake to seek wine once again?\"",
+        "VAT_ES": "«Me han golpeado, pero no me dolió; me han pegado, pero no me di cuenta. &iquest;Cuándo me despertaré? &iexcl;Volveré a pedir más todavía!».",
+        "CEI": "\"Mi hanno picchiato, ma non sento male. Mi hanno bastonato, ma non me ne sono accorto. Quando mi sveglierò? Ne chiederò dell'altro\"."
+      }
+    }
+  }
+}

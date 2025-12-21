@@ -1,0 +1,889 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOHA_007",
+  "book_key": "IOHA",
+  "sequence": 7,
+  "chapter_in": {
+    "MT": 7,
+    "VUL": 7,
+    "LXX": 7
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Καὶ περιεπάτει ὁ Ἰησοῦς μετὰ ταῦτα ἐν τῇ Γαλιλαίᾳ· οὐ γὰρ ἤθελεν ἐν τῇ Ἰουδαίᾳ περιπατεῖν, ὅτι ἐζήτουν αὐτὸν οἱ Ἰουδαῖοι ἀποκτεῖναι.",
+        "VUL": "Post hæc autem ambulabat Jesus in Galilæam : non enim volebat in Judæam ambulare, quia quærebant eum Judæi interficere.",
+        "SYN": "После сего Иисус ходил по Галилее, ибо по Иудее не хотел ходить, потому что Иудеи искали убить Его.",
+        "NEO": "Après cela, Jésus parcourut la Galilée, ne voulant pas aller en Judée, parce que les Juifs cherchaient à le faire mourir.",
+        "NAB": "After this, Jesus moved about within Galilee; but he did not wish to travel in Judea, because the Jews were trying to kill him.",
+        "VAT_ES": "Después de esto, Jesús recorría la Galilea; no quería transitar por Judea porque los judíos intentaban matarlo.",
+        "CEI": "Un giorno Pietro e Giovanni salivano al tempio per la preghiera verso le tre del pomeriggio."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Ἦν δὲ ἐγγὺς ἡ ἑορτὴ τῶν Ἰουδαίων ἡ Σκηνοπηγία.",
+        "VUL": "Erat autem in proximo dies festus Judæorum, Scenopegia.",
+        "SYN": "Приближался праздник Иудейский -- поставление кущей.",
+        "NEO": "Or, la fête des Juifs, celle des Tabernacles, était proche.+ 7:2 VII, 2. S. Jean, se contentant d’une allusion aux courses apostoliques que fit alors N.-S. aux environs de la Galilée, dans le nord de la Palestine (Matth. xv-xviii), nous transporte à la fête des Tabernacles, qui se célébrait chaque année du 15 au 22 du mois appelé Tischri (septembre-octobre) ; le premier et le dernier jours étaient très solennels.*",
+        "NAB": "But the Jewish feast of Tabernacles was near.",
+        "VAT_ES": "Se acercaba la fiesta judía de las Chozas,",
+        "CEI": "Qui di solito veniva portato un uomo, storpio fin dalla nascita e lo ponevano ogni giorno presso la porta del tempio detta \"Bella\" a chiedere l'elemosina a coloro che entravano nel tempio."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Εἶπον οὖν πρὸς αὐτὸν οἱ ἀδελφοὶ αὐτοῦ, Μετάβηθι ἐντεῦθεν, καὶ ὕπαγε εἰς τὴν Ἰουδαίαν, ἵνα καὶ οἱ μαθηταί σου θεωρήσωσιν τὰ ἔργα σου ἃ ποιεῖς.",
+        "VUL": "Dixerunt autem ad eum fratres ejus : Transi hinc, et vade in Judæam, ut et discipuli tui videant opera tua, quæ facis.",
+        "SYN": "Тогда братья Его сказали Ему: выйди отсюда и пойди в Иудею, чтобы и ученики Твои видели дела, которые Ты делаешь.",
+        "NEO": "Ses frères lui dirent donc : « Pars d’ici, et va en Judée, afin que tes disciples aussi voient les œuvres que tu fais ;",
+        "NAB": "So his brothers said to him, \"Leave here and go to Judea, so that your disciples also may see the works you are doing.",
+        "VAT_ES": "y sus hermanos le dijeron: «No te quedes aquí; ve a Judea, para que también tus discípulos de allí vean las obras que haces.",
+        "CEI": "Questi, vedendo Pietro e Giovanni che stavano per entrare nel tempio, domandò loro l'elemosina."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Οὐδεὶς γὰρ ἐν κρυπτῷ τι ποιεῖ, καὶ ζητεῖ αὐτὸς ἐν παρρησίᾳ εἶναι. Εἰ ταῦτα ποιεῖς, φανέρωσον σεαυτὸν τῷ κόσμῳ.",
+        "VUL": "Nemo quippe in occulto quid facit, et quærit ipse in palam esse : si hæc facis, manifesta teipsum mundo.",
+        "SYN": "Ибо никто не делает чего-либо втайне, и ищет сам быть известным. Если Ты творишь такие дела, то яви Себя миру.",
+        "NEO": "car personne ne fait une chose en secret, lorsqu’il désire qu’elle paraisse. Si tu fais ces choses, montres-toi au monde. »",
+        "NAB": "No one works in secret if he wants to be known publicly. If you do these things, manifest yourself to the world.\"",
+        "VAT_ES": "Cuando uno quiere hacerse conocer, no actúa en secreto; ya que tú haces estas cosas, manifiéstate al mundo».",
+        "CEI": "Allora Pietro fissò lo sguardo su di lui insieme a Giovanni e disse: \"Guarda verso di noi\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Οὐδὲ γὰρ οἱ ἀδελφοὶ αὐτοῦ ἐπίστευον εἰς αὐτόν.",
+        "VUL": "Neque enim fratres ejus credebant in eum.",
+        "SYN": "Ибо и братья Его не веровали в Него.",
+        "NEO": "Car ses frères mêmes ne croyaient pas en lui.+ 7:5 5. Ils doutaient encore qu’il fût le Messie, ce Messie puissant et glorieux qui, dans leur opinion, comme dans celle de la plupart de leurs contemporains, devait relever avec plus d’éclat le trône de David et de Salomon. Puisqu’il semble, cependant, prétendre à cette dignité, qu’il se hâte de quitter la Galilée, de sortir de la solitude où il se complaît, pour se rendre dans la capitale de la nation, et là, qu’il inaugure sa royauté avec éclat.*",
+        "NAB": "For his brothers did not believe in him.",
+        "VAT_ES": "Efectivamente, ni sus propios hermanos creían en él.",
+        "CEI": "Ed egli si volse verso di loro, aspettandosi di ricevere qualche cosa."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Λέγει οὖν αὐτοῖς ὁ Ἰησοῦς, Ὁ καιρὸς ὁ ἐμὸς οὔπω πάρεστιν, ὁ δὲ καιρὸς ὁ ὑμέτερος πάντοτέ ἐστιν ἕτοιμος.",
+        "VUL": "Dicit ergo eis Jesus : Tempus meum nondum advenit : tempus autem vestrum semper est paratum.",
+        "SYN": "На это Иисус сказал им: Мое время еще не настало, а для вас всегда время.",
+        "NEO": "Jésus leur dit : « Mon temps n’est pas encore venu ; mais votre temps à vous est toujours prêt.+ 7:6 6. Mon temps, le temps de me montrer au monde, à Jérusalem. — \\+qt Votre temps est toujours prêt\\+qt*, c.‑à-d. tous les temps vous sont bons, vous pouvez aller à Jérusalem quand vous le voulez.*",
+        "NAB": "So Jesus said to them, \"My time is not yet here, but the time is always right for you.",
+        "VAT_ES": "Jesús les dijo: «Mi tiempo no ha llegado todavía, mientras que para ustedes cualquier tiempo es bueno.",
+        "CEI": "Ma Pietro gli disse: \"Non possiedo né argento né oro, ma quello che ho te lo do: nel nome di Gesù Cristo, il Nazareno, cammina!\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Οὐ δύναται ὁ κόσμος μισεῖν ὑμᾶς· ἐμὲ δὲ μισεῖ, ὅτι ἐγὼ μαρτυρῶ περὶ αὐτοῦ, ὅτι τὰ ἔργα αὐτοῦ πονηρά ἐστιν.",
+        "VUL": "Non potest mundus odisse vos : me autem odit, quia ego testimonium perhibeo de illo quod opera ejus mala sunt.",
+        "SYN": "Вас мир не может ненавидеть, а Меня ненавидит, потому что Я свидетельствую о нем, что дела его злы.",
+        "NEO": "Le monde ne saurait vous haïr ; moi, il me hait, parce que je rends de lui ce témoignage, que ses œuvres sont mauvaises.",
+        "NAB": "The world cannot hate you, but it hates me, because I testify to it that its works are evil.",
+        "VAT_ES": "El mundo no tiene por qué odiarlos a ustedes; me odia a mí, porque atestiguo contra él que sus obras son malas.",
+        "CEI": "E, presolo per la mano destra, lo sollevò. Di colpo i suoi piedi e le caviglie si rinvigorirono"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ὑμεῖς ἀνάβητε εἰς τὴν ἑορτὴν ταύτην· ἐγὼ οὔπω ἀναβαίνω εἰς τὴν ἑορτὴν ταύτην, ὅτι ὁ καιρὸς ὁ ἐμὸς οὔπω πεπλήρωται.",
+        "VUL": "Vos ascendite ad diem festum hunc, ego autem non ascendo ad diem festum istum : quia meum tempus nondum impletum est.",
+        "SYN": "Вы пойдите на праздник сей; а Я еще не пойду на сей праздник, потому что Мое время еще не исполнилось.",
+        "NEO": "Montez, vous, à cette fête ; pour moi, je n’y vais pas, parce que mon temps n’est pas encore venu. »+ 7:8 8. Je n’y vais pas avec vous, avec la foule pour me montrer avec éclat comme vous le désirez.*",
+        "NAB": "You go up to the feast. I am not going up to this feast, because my time has not yet been fulfilled.\"",
+        "VAT_ES": "Suban ustedes para la fiesta. Yo no subo a esa fiesta, porque mi tiempo no se ha cumplido todavía».",
+        "CEI": "e balzato in piedi camminava; ed entrò con loro nel tempio camminando, saltando e lodando Dio."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Ταῦτα δὲ εἰπὼν αὐτοῖς, ἔμεινεν ἐν τῇ Γαλιλαίᾳ.",
+        "VUL": "Hæc cum dixisset, ipse mansit in Galilæa.",
+        "SYN": "Сие сказав им, остался в Галилее.",
+        "NEO": "Après avoir dit cela, il resta en Galilée.",
+        "NAB": "After he had said this, he stayed on in Galilee.",
+        "VAT_ES": "Después de decirles esto, permaneció en Galilea.",
+        "CEI": "Tutto il popolo lo vide camminare e lodare Dio"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "¶Ὡς δὲ ἀνέβησαν οἱ ἀδελφοὶ αὐτοῦ, τότε καὶ αὐτὸς ἀνέβη εἰς τὴν ἑορτήν, οὐ φανερῶς, ἀλλ’ ὡς ἐν κρυπτῷ.",
+        "VUL": "Ut autem ascenderunt fratres ejus, tunc et ipse ascendit ad diem festum non manifeste, sed quasi in occulto.",
+        "SYN": "Но когда пришли братья Его, тогда и Он пришел на праздник не явно, а как бы тайно.",
+        "NEO": "Mais lorsque ses frères furent partis, lui-même monta aussi à la fête, non publiquement, mais en secret.",
+        "NAB": "But when his brothers had gone up to the feast, he himself also went up, not openly but (as it were) in secret.",
+        "VAT_ES": "Sin embargo, cuando sus hermanos subieron para la fiesta, también él subió, pero en secreto, sin hacerse ver.",
+        "CEI": "e riconoscevano che era quello che sedeva a chiedere l'elemosina alla porta Bella del tempio ed erano meravigliati e stupiti per quello che gli era accaduto."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Οἱ οὖν Ἰουδαῖοι ἐζήτουν αὐτὸν ἐν τῇ ἑορτῇ, καὶ ἔλεγον, Ποῦ ἐστιν ἐκεῖνος;",
+        "VUL": "Judæi ergo quærebant eum in die festo, et dicebant : Ubi est ille ?",
+        "SYN": "Иудеи же искали Его на празднике и говорили: где Он?",
+        "NEO": "Les Juifs donc le cherchaient durant la fête, et disaient : « Où est-il ? »",
+        "NAB": "The Jews were looking for him at the feast and saying, \"Where is he?\"",
+        "VAT_ES": "Los judíos lo buscaban durante la fiesta y decían: «&iquest;Dónde está ese?».",
+        "CEI": "Mentr'egli si teneva accanto a Pietro e Giovanni, tutto il popolo fuor di sé per lo stupore accorse verso di loro al portico detto di Salomone."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Καὶ γογγυσμὸς πολὺς περὶ αὐτοῦ ἦν ἐν τοῖς ὄχλοις· οἱ μὲν ἔλεγον ὅτι Ἀγαθός ἐστιν· ἄλλοι ἔλεγον, Οὔ, ἀλλὰ πλανᾷ τὸν ὄχλον.",
+        "VUL": "Et murmur multum erat in turba de eo. Quidam enim dicebant : Quia bonus est. Alii autem dicebant : Non, sed seducit turbas.",
+        "SYN": "И много толков было о Нем в народе: одни говорили, что Он добр; а другие говорили: нет, но обольщает народ.",
+        "NEO": "Et il y avait dans la foule une grande rumeur à son sujet. Les uns disaient : « C’est un homme de bien. — Non, disaient les autres, il trompe le peuple. »",
+        "NAB": "And there was considerable murmuring about him in the crowds. Some said, \"He is a good man,\" (while) others said, \"No; on the contrary, he misleads the crowd.\"",
+        "VAT_ES": "Jesús era el comentario de la multitud. Unos opinaban: «Es un hombre de bien». Otros, en cambio, decían: «No, engaña al pueblo».",
+        "CEI": "Vedendo ciò, Pietro disse al popolo: \"Uomini d'Israele, perché vi meravigliate di questo e continuate a fissarci come se per nostro potere e nostra pietà avessimo fatto camminare quest'uomo?"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Οὐδεὶς μέντοι παρρησίᾳ ἐλάλει περὶ αὐτοῦ διὰ τὸν φόβον τῶν Ἰουδαίων.",
+        "VUL": "Nemo tamen palam loquebatur de illo propter metum Judæorum.",
+        "SYN": "Впрочем никто не говорил о Нем явно, боясь Иудеев.",
+        "NEO": "Cependant personne ne s’exprimait librement sur son compte, par crainte des Juifs.",
+        "NAB": "Still, no one spoke openly about him because they were afraid of the Jews.",
+        "VAT_ES": "Sin embargo, nadie hablaba de él abiertamente, por temor a los judíos.",
+        "CEI": "Il Dio di Abramo, di Isacco e di Giacobbe, il Dio dei nostri padri ha glorificato il suo servo Gesù, che voi avete consegnato e rinnegato di fronte a Pilato, mentre egli aveva deciso di liberarlo;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "¶Ἤδη δὲ τῆς ἑορτῆς μεσούσης, ἀνέβη ὁ Ἰησοῦς εἰς τὸ ἱερόν, καὶ ἐδίδασκεν.",
+        "VUL": "Jam autem die festo mediante, ascendit Jesus in templum, et docebat.",
+        "SYN": "Но в половине уже праздника вошел Иисус в храм и учил.",
+        "NEO": "On était déjà au milieu de la fête, lorsque Jésus monta au temple, et il se mit à enseigner.+ 7:14 14. Jésus monta au temple, εἰς τὸ ἱερὸν, il s’agit ici des galeries sacrées.*",
+        "NAB": "When the feast was already half over, Jesus went up into the temple area and began to teach.",
+        "VAT_ES": "Promediaba ya la celebración de la fiesta, cuando Jesús subió al Templo y comenzó a enseñar.",
+        "CEI": "voi invece avete rinnegato il Santo e il Giusto, avete chiesto che vi fosse graziato un assassino"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Καὶ ἐθαύμαζον οἱ Ἰουδαῖοι λέγοντες, Πῶς οὗτος γράμματα οἶδεν, μὴ μεμαθηκώς;",
+        "VUL": "Et mirabantur Judæi, dicentes : Quomodo hic litteras scit, cum non didicerit ?",
+        "SYN": "И дивились Иудеи, говоря: как Он знает Писания, не учившись?",
+        "NEO": "Les Juifs étonnés disaient : « Comment connaît-il les Écritures, lui qui n’a pas fréquenté les écoles ? »",
+        "NAB": "The Jews were amazed and said, \"How does he know scripture without having studied?\"",
+        "VAT_ES": "Los judíos, admirados, decían: «&iquest;Cómo conoce las Escrituras sin haber estudiado?».",
+        "CEI": "e avete ucciso l'autore della vita. Ma Dio l'ha risuscitato dai morti e di questo noi siamo testimoni."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Ἀπεκρίθη οὖν αὐτοῖς ὁ Ἰησοῦς καὶ εἶπεν, Ἡ ἐμὴ διδαχὴ οὐκ ἔστιν ἐμή, ἀλλὰ τοῦ πέμψαντός με.",
+        "VUL": "Respondit eis Jesus, et dixit : Mea doctrina non est mea, sed ejus qui misit me.",
+        "SYN": "Иисус, отвечая им, сказал: Мое учение -- не Мое, но Пославшего Меня;",
+        "NEO": "Jésus leur répondit : « Ma doctrine n’est pas de moi, mais de celui qui m’a envoyé.",
+        "NAB": "Jesus answered them and said, \"My teaching is not my own but is from the one who sent me.",
+        "VAT_ES": "Jesús les respondió: «Mi enseñanza no es mía sino de aquel que me envió.",
+        "CEI": "Proprio per la fede riposta in lui il nome di Gesù ha dato vigore a quest'uomo che voi vedete e conoscete; la fede in lui ha dato a quest'uomo la perfetta guarigione alla presenza di tutti voi."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Ἐάν τις θέλῃ τὸ θέλημα αὐτοῦ ποιεῖν, γνώσεται περὶ τῆς διδαχῆς, πότερον ἐκ τοῦ θεοῦ ἐστιν, ἢ ἐγὼ ἀπ’ ἐμαυτοῦ λαλῶ.",
+        "VUL": "Si quis voluerit voluntatem ejus facere, cognoscet de doctrina, utrum ex Deo sit, an ego a meipso loquar.",
+        "SYN": "кто хочет творить волю Его, тот узнает о сем учении, от Бога ли оно, или Я Сам от Себя говорю.",
+        "NEO": "Si quelqu’un veut faire la volonté de Dieu, il saura si ma doctrine est de Dieu, ou si je parle de moi-même.",
+        "NAB": "Whoever chooses to do his will shall know whether my teaching is from God or whether I speak on my own.",
+        "VAT_ES": "El que quiere hacer la voluntad de Dios conocerá si esta enseñanza es de Dios o si yo hablo por mi cuenta.",
+        "CEI": "Ora, fratelli, io so che voi avete agito per ignoranza, così come i vostri capi;"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Ὁ ἀφ’ ἑαυτοῦ λαλῶν, τὴν δόξαν τὴν ἰδίαν ζητεῖ· ὁ δὲ ζητῶν τὴν δόξαν τοῦ πέμψαντος αὐτόν, οὗτος ἀληθής ἐστιν, καὶ ἀδικία ἐν αὐτῷ οὐκ ἔστιν.",
+        "VUL": "Qui a semetipso loquitur, gloriam propriam quærit ; qui autem quærit gloriam ejus qui misit eum, hic verax est, et injustitia in illo non est.",
+        "SYN": "Говорящий сам от себя ищет славы себе; а Кто ищет славы Пославшему Его, Тот истинен, и нет неправды в Нем.",
+        "NEO": "Celui qui parle de soi-même, cherche sa propre gloire ; mais celui qui cherche la gloire de celui qui l’a envoyé, est véridique, et il n’y a pas en lui d’imposture.",
+        "NAB": "Whoever speaks on his own seeks his own glory, but whoever seeks the glory of the one who sent him is truthful, and there is no wrong in him.",
+        "VAT_ES": "El que habla por su cuenta busca su propia gloria, pero el que busca la gloria de aquel que lo envió, ese dice la verdad y no hay nada de falso en él.",
+        "CEI": "Dio però ha adempiuto così ciò che aveva annunziato per bocca di tutti i profeti, che cioè il suo Cristo sarebbe morto."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Οὐ Μωσῆς δέδωκεν ὑμῖν τὸν νόμον, καὶ οὐδεὶς ἐξ ὑμῶν ποιεῖ τὸν νόμον; Τί με ζητεῖτε ἀποκτεῖναι;",
+        "VUL": "Nonne Moyses dedit vobis legem : et nemo ex vobis facit legem ?",
+        "SYN": "Не дал ли вам Моисей закона? и никто из вас не поступает по закону. За что ищете убить Меня?",
+        "NEO": "Est-ce que Moïse ne vous a pas donné la Loi ? Et nul de vous n’accomplit la loi.",
+        "NAB": "Did not Moses give you the law? Yet none of you keeps the law. Why are you trying to kill me?\"",
+        "VAT_ES": "&iquest;Acaso Moisés no les dio la Ley? Pero ninguno de ustedes la cumple. &iquest;Por qué quieren matarme?».",
+        "CEI": "Pentitevi dunque e cambiate vita, perché siano cancellati i vostri peccati"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Ἀπεκρίθη ὁ ὄχλος καὶ εἶπεν, Δαιμόνιον ἔχεις· τίς σε ζητεῖ ἀποκτεῖναι;",
+        "VUL": "Quid me quæritis interficere ? Respondit turba, et dixit : Dæmonium habes : quis te quærit interficere ?",
+        "SYN": "Народ сказал в ответ: не бес ли в Тебе? кто ищет убить Тебя?",
+        "NEO": "Pourquoi cherchez-vous à me faire mourir ? » La foule répondit : « Tu es possédé du démon ; qui est-ce qui cherche à te faire mourir ? »",
+        "NAB": "The crowd answered, \"You are possessed! Who is trying to kill you?\"",
+        "VAT_ES": "La multitud respondió: «Estás poseído por el demonio: &iquest;quién quiere matarte?».",
+        "CEI": "e così possano giungere i tempi della consolazione da parte del Signore ed egli mandi quello che vi aveva destinato come Messia, cioè Gesù."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Ἀπεκρίθη Ἰησοῦς καὶ εἶπεν αὐτοῖς, Ἓν ἔργον ἐποίησα, καὶ πάντες θαυμάζετε.",
+        "VUL": "Respondit Jesus et dixit eis : Unum opus feci, et omnes miramini :",
+        "SYN": "Иисус, продолжая речь, сказал им: одно дело сделал Я, и все вы дивитесь.",
+        "NEO": "Jésus leur dit : « J’ai fait une seule œuvre, et vous voilà tous hors de vous-mêmes ?+ 7:21 21. Allusion à la guérison d’un paralytique le jour du sabbat (v. 2 sv.).*",
+        "NAB": "Jesus answered and said to them, \"I performed one work and all of you are amazed",
+        "VAT_ES": "Jesús continuó: «Por una sola obra que realicé, ustedes están maravillados.",
+        "CEI": "Egli dev'esser accolto in cielo fino ai tempi della restaurazione di tutte le cose, come ha detto Dio fin dall'antichità, per bocca dei suoi santi profeti."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Διὰ τοῦτο Μωσῆς δέδωκεν ὑμῖν τὴν περιτομήν- οὐχ ὅτι ἐκ τοῦ Μωσέως ἐστίν, ἀλλ’ ἐκ τῶν πατέρων- καὶ ἐν σαββάτῳ περιτέμνετε ἄνθρωπον.",
+        "VUL": "propterea Moyses dedit vobis circumcisionem (non quia ex Moyse est, sed ex patribus), et in sabbato circumciditis hominem.",
+        "SYN": "Моисей дал вам обрезание [хотя оно не от Моисея, но от отцов], и в субботу вы обрезываете человека.",
+        "NEO": "Moïse vous a donné la circoncision (non qu’elle vienne de Moïse, mais des Patriarches), et vous la pratiquez le jour du sabbat.",
+        "NAB": "because of it. Moses gave you circumcision - not that it came from Moses but rather from the patriarchs - and you circumcise a man on the sabbath.",
+        "VAT_ES": "Moisés les dio la circuncisión –aunque ella no viene de Moisés, sino de los patriarcas– y ustedes la practican también en sábado.",
+        "CEI": "Mosè infatti disse: Il Signore vostro Dio vi farà sorgere un profeta come me in mezzo ai vostri fratelli; voi lo ascolterete in tutto quello che egli vi dirà."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Εἰ περιτομὴν λαμβάνει ἄνθρωπος ἐν σαββάτῳ, ἵνα μὴ λυθῇ ὁ νόμος Μωσέως, ἐμοὶ χολᾶτε ὅτι ὅλον ἄνθρωπον ὑγιῆ ἐποίησα ἐν σαββάτῳ;",
+        "VUL": "Si circumcisionem accipit homo in sabbato, ut non solvatur lex Moysi : mihi indignamini quia totum hominem sanum feci in sabbato ?",
+        "SYN": "Если в субботу принимает человек обрезание, чтобы не был нарушен закон Моисеев, -- на Меня ли негодуете за то, что Я всего человека исцелил в субботу?",
+        "NEO": "Que si, pour ne pas violer la loi de Moïse, on circoncit le jour du sabbat, comment vous indignez-vous contre moi, parce que, le jour du sabbat, j’ai guéri un homme dans tout son corps ?",
+        "NAB": "If a man can receive circumcision on a sabbath so that the law of Moses may not be broken, are you angry with me because I made a whole person well on a sabbath?",
+        "VAT_ES": "Si se circuncida a un hombre en sábado para no quebrantar la Ley de Moisés, &iquest;cómo ustedes se enojan conmigo porque he curado completamente a un hombre en sábado?",
+        "CEI": "E chiunque non ascolterà quel profeta, sarà estirpato di mezzo al popolo."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Μὴ κρίνετε κατ’ ὄψιν, ἀλλὰ τὴν δικαίαν κρίσιν κρίνατε.",
+        "VUL": "Nolite judicare secundum faciem, sed justum judicium judicate.",
+        "SYN": "Не судите по наружности, но судите судом праведным.",
+        "NEO": "Ne jugez pas sur l’apparence, mais jugez selon la justice. »",
+        "NAB": "Stop judging by appearances, but judge justly.\"",
+        "VAT_ES": "No juzguen según las apariencias, sino conforme a la justicia».",
+        "CEI": "Tutti i profeti, a cominciare da Samuele e da quanti parlarono in seguito, annunziarono questi giorni."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "¶Ἔλεγον οὖν τινες ἐκ τῶν Ἱεροσολυμιτῶν, Οὐχ οὗτός ἐστιν ὃν ζητοῦσιν ἀποκτεῖναι;",
+        "VUL": "Dicebant ergo quidam ex Jerosolymis : Nonne hic est, quem quærunt interficere ?",
+        "SYN": "Тут некоторые из Иерусалимлян говорили: не Тот ли это, Которого ищут убить?",
+        "NEO": "Alors quelques habitants de Jérusalem dirent : « N’est-ce pas là celui qu’ils cherchent à faire mourir ?",
+        "NAB": "So some of the inhabitants of Jerusalem said, \"Is he not the one they are trying to kill?",
+        "VAT_ES": "Algunos de Jerusalén decían: «&iquest;No es este aquel a quien querían matar?",
+        "CEI": "Voi siete i figli dei profeti e dell'alleanza che Dio stabilì con i vostri padri, quando disse ad Abramo: Nella tua discendenza saranno benedette tutte le famiglie della terra."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Καὶ ἴδε παρρησίᾳ λαλεῖ, καὶ οὐδὲν αὐτῷ λέγουσιν. Μήποτε ἀληθῶς ἔγνωσαν οἱ ἄρχοντες ὅτι οὗτός ἐστιν ἀληθῶς ὁ χριστός;",
+        "VUL": "et ecce palam loquitur, et nihil ei dicunt. Numquid vere cognoverunt principes quia hic est Christus ?",
+        "SYN": "Вот, Он говорит явно, и ничего не говорят Ему: не удостоверились ли начальники, что Он подлинно Христос?",
+        "NEO": "Et le voilà qui parle publiquement sans qu’on lui dise rien. Est-ce que vraiment les chefs du peuple auraient reconnu qu’il est le Christ ?",
+        "NAB": "And look, he is speaking openly and they say nothing to him. Could the authorities have realized that he is the Messiah?",
+        "VAT_ES": "&iexcl;Y miren como habla abiertamente y nadie le dice nada! &iquest;Habrán reconocido las autoridades que es verdaderamente el Mesías?",
+        "CEI": "Dio, dopo aver risuscitato il suo servo, l'ha mandato prima di tutto a voi per portarvi la benedizione e perché ciascuno si converta dalle sue iniquità\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Ἀλλὰ τοῦτον οἴδαμεν πόθεν ἐστίν· ὁ δὲ χριστὸς ὅταν ἔρχηται, οὐδεὶς γινώσκει πόθεν ἐστίν.",
+        "VUL": "Sed hunc scimus unde sit : Christus autem cum venerit, nemo scit unde sit.",
+        "SYN": "Но мы знаем Его, откуда Он; Христос же когда придет, никто не будет знать, откуда Он.",
+        "NEO": "Celui-ci, néanmoins, nous savons d’où il est ; mais quand le Christ viendra, personne ne saura d’où il est. »",
+        "NAB": "But we know where he is from. When the Messiah comes, no one will know where he is from.\"",
+        "VAT_ES": "Pero nosotros sabemos de dónde es este; en cambio, cuando venga el Mesías, nadie sabrá de dónde es»."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Ἔκραξεν οὖν ἐν τῷ ἱερῷ διδάσκων ὁ Ἰησοῦς καὶ λέγων, Κἀμὲ οἴδατε, καὶ οἴδατε πόθεν εἰμί· καὶ ἀπ’ ἐμαυτοῦ οὐκ ἐλήλυθα, ἀλλ’ ἔστιν ἀληθινὸς ὁ πέμψας με, ὃν ὑμεῖς οὐκ οἴδατε.",
+        "VUL": "Clamabat ergo Jesus in templo docens, et dicens : Et me scitis, et unde sim scitis : et a meipso non veni, sed est verus qui misit me, quem vos nescitis.",
+        "SYN": "Тогда Иисус возгласил в храме, уча и говоря: и знаете Меня, и знаете, откуда Я; и Я пришел не Сам от Себя, но истинен Пославший Меня, Которого вы не знаете.",
+        "NEO": "Jésus, enseignant dans le temple, dit donc à haute voix : « Vous me connaissez et vous savez d’où je suis !… et pourtant ce n’est pas de moi-même que je suis venu : mais celui qui m’a envoyé est vrai : vous ne le connaissez pas ;",
+        "NAB": "So Jesus cried out in the temple area as he was teaching and said, \"You know me and also know where I am from. Yet I did not come on my own, but the one who sent me, whom you do not know, is true.",
+        "VAT_ES": "Entonces Jesús, que enseñaba en el Templo, exclamó: «&iquest;Así que ustedes me conocen y saben de dónde soy? Sin embargo, yo no vine por mi propia cuenta; pero el que me envió dice la verdad, y ustedes no lo conocen."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Ἐγὼ οἶδα αὐτόν, ὅτι παρ’ αὐτοῦ εἰμι, κἀκεῖνός με ἀπέστειλεν.",
+        "VUL": "Ego scio eum : quia ab ipso sum, et ipse me misit.",
+        "SYN": "Я знаю Его, потому что Я от Него, и Он послал Меня.",
+        "NEO": "moi, je le connais, parce que je suis de lui, et c’est lui qui m’a envoyé. »",
+        "NAB": "I know him, because I am from him, and he sent me.\"",
+        "VAT_ES": "Yo sí lo conozco, porque vengo de él y es él el que me envió»."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Ἐζήτουν οὖν αὐτὸν πιάσαι. Καὶ οὐδεὶς ἐπέβαλεν ἐπ’ αὐτὸν τὴν χεῖρα, ὅτι οὔπω ἐληλύθει ἡ ὥρα αὐτοῦ.",
+        "VUL": "Quærebant ergo eum apprehendere : et nemo misit in illum manus, quia nondum venerat hora ejus.",
+        "SYN": "И искали схватить Его, но никто не наложил на Него руки, потому что еще не пришел час Его.",
+        "NEO": "Ils cherchèrent donc à le saisir ; et personne ne mit la main sur lui, parce que son heure n’était pas encore venue.",
+        "NAB": "So they tried to arrest him, but no one laid a hand upon him, because his hour had not yet come.",
+        "VAT_ES": "Entonces quisieron detenerlo, pero nadie puso las manos sobre él, porque todavía no había llegado su hora."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "Πολλοὶ δὲ ἐκ τοῦ ὄχλου ἐπίστευσαν εἰς αὐτόν, καὶ ἔλεγον ὅτι Ὁ χριστὸς ὅταν ἔλθῃ, μήτι πλείονα σημεῖα τούτων ποιήσει ὧν οὗτος ἐποίησεν;",
+        "VUL": "De turba autem multi crediderunt in eum, et dicebant : Christus cum venerit, numquid plura signa faciet quam quæ hic facit ?",
+        "SYN": "Многие же из народа уверовали в Него и говорили: когда придет Христос, неужели сотворит больше знамений, нежели сколько Сей сотворил?",
+        "NEO": "Mais beaucoup, parmi le peuple, crurent en lui, et ils disaient : « Quand le Christ viendra, fera-t-il plus de miracles que n’en a fait celui-ci ? »",
+        "NAB": "But many of the crowd began to believe in him, and said, \"When the Messiah comes, will he perform more signs than this man has done?\"",
+        "VAT_ES": "Muchos de la multitud creyeron en él y decían: «Cuando venga el Mesías, &iquest;podrá hacer más signos de los que hace este hombre?»."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "Ἤκουσαν οἱ Φαρισαῖοι τοῦ ὄχλου γογγύζοντος περὶ αὐτοῦ ταῦτα· καὶ ἀπέστειλαν ὑπηρέτας οἱ Φαρισαῖοι καὶ οἱ ἀρχιερεῖς ἵνα πιάσωσιν αὐτόν.",
+        "VUL": "Audierunt pharisæi turbam murmurantem de illo hæc : et miserunt principes et pharisæi ministros ut apprehenderent eum.",
+        "SYN": "Услышали фарисеи такие толки о Нем в народе, и послали фарисеи и первосвященники служителей -- схватить Его.",
+        "NEO": "Les Pharisiens entendirent la foule murmurant ces choses au sujet de Jésus ; alors les Princes des prêtres et les Pharisiens envoyèrent des satellites pour l’arrêter.",
+        "NAB": "The Pharisees heard the crowd murmuring about him to this effect, and the chief priests and the Pharisees sent guards to arrest him.",
+        "VAT_ES": "Llegó a oídos de los fariseos lo que la gente comentaba de él, y enviaron guardias para detenerlo."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Εἶπεν οὖν ὁ Ἰησοῦς, Ἔτι μικρὸν χρόνον μεθ’ ὑμῶν εἰμι, καὶ ὑπάγω πρὸς τὸν πέμψαντά με.",
+        "VUL": "Dixit ergo eis Jesus : Adhuc modicum tempus vobiscum sum : et vado ad eum qui me misit.",
+        "SYN": "Иисус же сказал им: еще недолго быть Мне с вами, и пойду к Пославшему Меня;",
+        "NEO": "Jésus dit : « Je suis encore avec vous un peu de temps, puis je m’en vais à celui qui m’a envoyé.",
+        "NAB": "So Jesus said, \"I will be with you only a little while longer, and then I will go to the one who sent me.",
+        "VAT_ES": "Después Jesús dijo: «Poco tiempo estaré aún con ustedes y me iré a aquel que me envió"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "Ζητήσετέ με, καὶ οὐχ εὑρήσετε· καὶ ὅπου εἰμὶ ἐγώ, ὑμεῖς οὐ δύνασθε ἐλθεῖν.",
+        "VUL": "Quæretis me, et non invenietis : et ubi ego sum, vos non potestis venire.",
+        "SYN": "будете искать Меня, и не найдете; и где буду Я, _туда_ вы не можете придти.",
+        "NEO": "Vous me chercherez, et vous ne me trouverez pas, et où je suis vous ne pouvez venir. »",
+        "NAB": "You will look for me but not find (me), and where I am you cannot come.\"",
+        "VAT_ES": "Me buscarán y no me encontrarán, porque allí donde yo estoy ustedes no pueden venir»."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "Εἶπον οὖν οἱ Ἰουδαῖοι πρὸς ἑαυτούς, Ποῦ οὗτος μέλλει πορεύεσθαι ὅτι ἡμεῖς οὐχ εὑρήσομεν αὐτόν; Μὴ εἰς τὴν διασπορὰν τῶν Ἑλλήνων μέλλει πορεύεσθαι, καὶ διδάσκειν τοὺς Ἕλληνας;",
+        "VUL": "Dixerunt ergo Judæi ad semetipsos : Quo hic iturus est, quia non inveniemus eum ? numquid in dispersionem gentium iturus est, et docturus gentes ?",
+        "SYN": "При сем Иудеи говорили между собою: куда Он хочет идти, так что мы не найдем Его? Не хочет ли Он идти в Еллинское рассеяние и учить Еллинов?",
+        "NEO": "Sur quoi les Juifs se dirent entre eux : « Où donc ira-t-il, que nous ne le trouverons pas ? Ira-t-il vers ceux qui sont dispersés parmi les Gentils, et ira-t-il les instruire ?",
+        "NAB": "So the Jews said to one another, \"Where is he going that we will not find him? Surely he is not going to the dispersion among the Greeks to teach the Greeks, is he?",
+        "VAT_ES": "Los judíos comentaban entre ellos: «&iquest;A dónde irá, para que no podamos encontrarlo? &iquest;Acaso irá a reunirse con los judíos dispersos entre los paganos, para enseñar a los paganos?"
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "Τίς ἐστιν οὗτος ὁ λόγος ὃν εἶπεν, Ζητήσετέ με, καὶ οὐχ εὑρήσετε· καὶ ὅπου εἰμὶ ἐγώ, ὑμεῖς οὐ δύνασθε ἐλθεῖν;",
+        "VUL": "quis est hic sermo, quem dixit : Quæretis me, et non invenietis : et ubi sum ego, vos non potestis venire ?",
+        "SYN": "Что значат сии слова, которые Он сказал: будете искать Меня, и не найдете; и где буду Я, _туда_ вы не можете придти?",
+        "NEO": "Que signifie cette parole qu’il a dite : Vous me chercherez et vous ne me trouverez pas, et où je suis, vous ne pouvez venir ? »",
+        "NAB": "What is the meaning of his saying, 'You will look for me and not find (me), and where I am you cannot come'?\"",
+        "VAT_ES": "&iquest;Qué quiso decir con estas palabras: «Me buscarán y no me encontrarán, y allí donde yo estoy ustedes no pueden venir»?."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "¶Ἐν δὲ τῇ ἐσχάτῃ ἡμέρᾳ τῇ μεγάλῃ τῆς ἑορτῆς εἱστήκει ὁ Ἰησοῦς καὶ ἔκραξεν, λέγων, Ἐάν τις διψᾷ, ἐρχέσθω πρός με καὶ πινέτω.",
+        "VUL": "In novissimo autem die magno festivitatis stabat Jesus, et clamabat dicens : Si quis sitit, veniat ad me et bibat.",
+        "SYN": "В последний же великий день праздника стоял Иисус и возгласил, говоря: кто жаждет, иди ко Мне и пей.",
+        "NEO": "Le dernier jour de la fête, qui en est le jour le plus solennel, Jésus debout, dit à haute voix : « Si quelqu’un a soif, qu’il vienne à moi, et qu’il boive.+ 7:37 37. Il s’agit du huitième jour, qui clôturait la fête. Voy. Lév. xxiii, 36 sv.*",
+        "NAB": "On the last and greatest day of the feast, Jesus stood up and exclaimed, \"Let anyone who thirsts come to me and drink.",
+        "VAT_ES": "El último día, el más solemne de la fiesta, Jesús, poniéndose de pie, exclamó: «El que tenga sed, venga a mí; y beba"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "BYZ": "Ὁ πιστεύων εἰς ἐμέ, καθὼς εἶπεν ἡ γραφή, ποταμοὶ ἐκ τῆς κοιλίας αὐτοῦ ῥεύσουσιν ὕδατος ζῶντος.",
+        "VUL": "Qui credit in me, sicut dicit Scriptura, flumina de ventre ejus fluent aquæ vivæ.",
+        "SYN": "Кто верует в Меня, у того, как сказано в Писании, из чрева потекут реки воды живой.",
+        "NEO": "Celui qui croit en moi, de son sein, comme dit l’Écriture, couleront des fleuves d’eau vive. »+ 7:38 38. Plusieurs prophètes ont annoncé l’effusion des dons de l’Esprit-Saint dans les âmes à l’époque du Messie : p. ex. Is. xliv, 3 ; Joël, ii, 28 ; Ezéch. xxxvi, 25, etc.*",
+        "NAB": "Whoever believes in me, as scripture says: 'Rivers of living water will flow from within him.'\"",
+        "VAT_ES": "el que cree en mí». Como dice la Escritura: \"De su seno brotarán manantiales de agua viva\"."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "BYZ": "Τοῦτο δὲ εἶπεν περὶ τοῦ πνεύματος οὗ ἔμελλον λαμβάνειν οἱ πιστεύοντες εἰς αὐτόν· οὔπω γὰρ ἦν πνεῦμα ἅγιον, ὅτι Ἰησοῦς οὐδέπω ἐδοξάσθη.",
+        "VUL": "Hoc autem dixit de Spiritu, quem accepturi erant credentes in eum : nondum enim erat Spiritus datus, quia Jesus nondum erat glorificatus.",
+        "SYN": "Сие сказал Он о Духе, Которого имели принять верующие в Него: ибо еще не было на них Духа Святаго, потому что Иисус еще не был прославлен.",
+        "NEO": "Il disait cela de l’Esprit que devaient recevoir ceux qui croient en lui ; car l’Esprit n’était pas encore donné, parce que Jésus n’avait pas encore été glorifié.+ 7:39 39. Ce qui eut lieu à la 1re Pentecôte et depuis : le don de l’Esprit-Saint, son effusion dans les âmes par les charismes, devait être le fruit de la victoire et de la glorification de l’Homme-Dieu.*",
+        "NAB": "He said this in reference to the Spirit that those who came to believe in him were to receive. There was, of course, no Spirit yet, because Jesus had not yet been glorified.",
+        "VAT_ES": "El se refería al Espíritu que debían recibir los que creyeran en él. Porque el Espíritu no había sido dado todavía, ya que Jesús aún no había sido glorificado."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "BYZ": "Πολλοὶ οὖν ἐκ τοῦ ὄχλου ἀκούσαντες τὸν λόγον ἔλεγον, Οὗτός ἐστιν ἀληθῶς ὁ προφήτης.",
+        "VUL": "Ex illa ergo turba cum audissent hos sermones ejus, dicebant : Hic est vere propheta.",
+        "SYN": "Многие из народа, услышав сии слова, говорили: Он точно пророк.",
+        "NEO": "Parmi la foule, quelques-uns, qui avaient entendu ces paroles, disaient : « C’est vraiment le prophète. »+ 7:40 40. Le Prophète: voy. i, 21.*",
+        "NAB": "Some in the crowd who heard these words said, \"This is truly the Prophet.\"",
+        "VAT_ES": "Algunos de la multitud que lo habían oído, opinaban: «Este es verdaderamente el Profeta»."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "BYZ": "Ἄλλοι ἔλεγον, Οὗτός ἐστιν ὁ χριστός. Ἄλλοι ἔλεγον, Μὴ γὰρ ἐκ τῆς Γαλιλαίας ὁ χριστὸς ἔρχεται;",
+        "VUL": "Alii dicebant : Hic est Christus. Quidam autem dicebant : Numquid a Galilæa venit Christus ?",
+        "SYN": "Другие говорили: это Христос. А иные говорили: разве из Галилеи Христос придет?",
+        "NEO": "D’autres : « C’est le Christ. — Mais, disaient les autres, est-ce de la Galilée que doit venir le Christ ?",
+        "NAB": "Others said, \"This is the Messiah.\" But others said, \"The Messiah will not come from Galilee, will he?",
+        "VAT_ES": "Otros decían: «Este es el Mesías». Pero otros preguntaban: «&iquest;Acaso el Mesías vendrá de Galilea?"
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "BYZ": "Οὐχὶ ἡ γραφὴ εἶπεν ὅτι ἐκ τοῦ σπέρματος Δαυίδ, καὶ ἀπὸ Βηθλεέμ, τῆς κώμης ὅπου ἦν Δαυίδ, ὁ χριστὸς ἔρχεται;",
+        "VUL": "nonne Scriptura dicit : Quia ex semine David, et de Bethlehem castello, ubi erat David, venit Christus ?",
+        "SYN": "Не сказано ли в Писании, что Христос придет от семени Давидова и из Вифлеема, из того места, откуда был Давид?",
+        "NEO": "L’Écriture ne dit-elle pas que c’est de la race de David, et du bourg de Bethléem, où était David, que le Christ doit venir ? »",
+        "NAB": "Does not scripture say that the Messiah will be of David's family and come from Bethlehem, the village where David lived?\"",
+        "VAT_ES": "&iquest;No dice la Escritura que el Mesías vendrá del linaje de David y de Belén, el pueblo de donde era David?»."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "BYZ": "Σχίσμα οὖν ἐν τῷ ὄχλῳ ἐγένετο δι’ αὐτόν.",
+        "VUL": "Dissensio itaque facta est in turba propter eum.",
+        "SYN": "Итак произошла о Нем распря в народе.",
+        "NEO": "C’est ainsi que le peuple était partagé à son sujet.",
+        "NAB": "So a division occurred in the crowd because of him.",
+        "VAT_ES": "Y por causa de él, se produjo una división entre la gente."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "BYZ": "Τινὲς δὲ ἤθελον ἐξ αὐτῶν πιάσαι αὐτόν, ἀλλ’ οὐδεὶς ἐπέβαλεν ἐπ’ αὐτὸν τὰς χεῖρας.",
+        "VUL": "Quidam autem ex ipsis volebant apprehendere eum : sed nemo misit super eum manus.",
+        "SYN": "Некоторые из них хотели схватить Его; но никто не наложил на Него рук.",
+        "NEO": "Quelques-uns voulaient l’arrêter ; mais personne ne mit la main sur lui.",
+        "NAB": "Some of them even wanted to arrest him, but no one laid hands on him.",
+        "VAT_ES": "Algunos querían detenerlo, pero nadie puso las manos sobre él."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "BYZ": "¶Ἦλθον οὖν οἱ ὑπηρέται πρὸς τοὺς ἀρχιερεῖς καὶ Φαρισαίους· καὶ εἶπον αὐτοῖς ἐκεῖνοι, Διὰ τί οὐκ ἠγάγετε αὐτόν;",
+        "VUL": "Venerunt ergo ministri ad pontifices et pharisæos. Et dixerunt eis illi : Quare non adduxistis illum ?",
+        "SYN": "Итак служители возвратились к первосвященникам и фарисеям, и сии сказали им: для чего вы не привели Его?",
+        "NEO": "Les satellites étant donc revenus vers les Pontifes et les Pharisiens, ceux-ci leur dirent : « Pourquoi ne l’avez-vous pas amené ? »",
+        "NAB": "So the guards went to the chief priests and Pharisees, who asked them, \"Why did you not bring him?\"",
+        "VAT_ES": "Los guardias fueron a ver a los sumos sacerdotes y a los fariseos, y estos les preguntaron: «&iquest;Por qué no lo trajeron?»."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "BYZ": "Ἀπεκρίθησαν οἱ ὑπηρέται, Οὐδέποτε οὕτως ἐλάλησεν ἄνθρωπος, ὡς οὗτος ὁ ἄνθρωπος.",
+        "VUL": "Responderunt ministri : Numquam sic locutus est homo, sicut hic homo.",
+        "SYN": "Служители отвечали: никогда человек не говорил так, как Этот Человек.",
+        "NEO": "Les satellites répondirent : « Jamais homme n’a parlé comme cet homme. »+ 7:46 46. Voyez Marc, i, 22 ; Luc, iv, 22, 32.*",
+        "NAB": "The guards answered, \"Never before has anyone spoken like this one.\"",
+        "VAT_ES": "Ellos respondieron: «Nadie habló jamás como este hombre»."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "BYZ": "Ἀπεκρίθησαν οὖν αὐτοῖς οἱ Φαρισαῖοι, Μὴ καὶ ὑμεῖς πεπλάνησθε;",
+        "VUL": "Responderunt ergo eis pharisæi : Numquid et vos seducti estis ?",
+        "SYN": "Фарисеи сказали им: неужели и вы прельстились?",
+        "NEO": "Les Pharisiens leur répliquèrent : « Vous aussi, vous êtes-vous laissés séduire ?",
+        "NAB": "So the Pharisees answered them, \"Have you also been deceived?",
+        "VAT_ES": "Los fariseos respondieron: «&iquest;También ustedes se dejaron engañar?"
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "BYZ": "Μή τις ἐκ τῶν ἀρχόντων ἐπίστευσεν εἰς αὐτόν, ἢ ἐκ τῶν Φαρισαίων;",
+        "VUL": "numquid ex principibus aliquis credidit in eum, aut ex pharisæis ?",
+        "SYN": "Уверовал ли в Него кто из начальников, или из фарисеев?",
+        "NEO": "Y a-t-il quelqu’un parmi les Princes du peuple qui ait cru en lui ? Y en a-t-il parmi les Pharisiens ?",
+        "NAB": "Have any of the authorities or the Pharisees believed in him?",
+        "VAT_ES": "&iquest;Acaso alguno de los jefes o de los fariseos ha creído en él?"
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ ὁ ὄχλος οὗτος ὁ μὴ γινώσκων τὸν νόμον ἐπικατάρατοί εἰσιν.",
+        "VUL": "sed turba hæc, quæ non novit legem, maledicti sunt.",
+        "SYN": "Но этот народ невежда в законе, проклят он.",
+        "NEO": "Mais cette populace qui ne connaît pas la Loi, ce sont des maudits ! »",
+        "NAB": "But this crowd, which does not know the law, is accursed.\"",
+        "VAT_ES": "En cambio, esa gente que no conoce la Ley está maldita»."
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "BYZ": "Λέγει Νικόδημος πρὸς αὐτούς- ὁ ἐλθὼν νυκτὸς πρὸς αὐτόν, εἷς ὢν ἐξ αὐτῶν-",
+        "VUL": "Dixit Nicodemus ad eos, ille qui venit ad eum nocte, qui unus erat ex ipsis :",
+        "SYN": "Никодим, приходивший к Нему ночью, будучи один из них, говорит им:",
+        "NEO": "Nicodème, l’un d’eux, celui qui était venu de nuit à Jésus, leur dit :+ 7:50 50. Voy. ; .*",
+        "NAB": "Nicodemus, one of their members who had come to him earlier, said to them,",
+        "VAT_ES": "Nicodemo, uno de ellos, que había ido a ver a Jesús, les dijo:"
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "BYZ": "Μὴ ὁ νόμος ἡμῶν κρίνει τὸν ἄνθρωπον, ἐὰν μὴ ἀκούσῃ παρ’ αὐτοῦ πρότερον καὶ γνῷ τί ποιεῖ;",
+        "VUL": "Numquid lex nostra judicat hominem, nisi prius audierit ab ipso, et cognoverit quid faciat ?",
+        "SYN": "судит ли закон наш человека, если прежде не выслушают его и не узнают, что он делает?",
+        "NEO": "« Notre loi condamne-t-elle un homme sans qu’on l’ait d’abord entendu, et sans qu’on sache ce qu’il a fait ? »",
+        "NAB": "\"Does our law condemn a person before it first hears him and finds out what he is doing?\"",
+        "VAT_ES": "«&iquest;Acaso nuestra Ley permite juzgar a un hombre sin escucharlo antes para saber lo que hizo?»."
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "BYZ": "Ἀπεκρίθησαν καὶ εἶπον αὐτῷ, Μὴ καὶ σὺ ἐκ τῆς Γαλιλαίας εἶ; Ἐρεύνησον καὶ ἴδε ὅτι προφήτης ἐκ τῆς Γαλιλαίας οὐκ ἐγήγερται.",
+        "VUL": "Responderunt, et dixerunt ei : Numquid et tu Galilæus es ? scrutare Scripturas, et vide quia a Galilæa propheta non surgit.",
+        "SYN": "На это сказали ему: и ты не из Галилеи ли? рассмотри и увидишь, что из Галилеи не приходит пророк.",
+        "NEO": "Ils lui répondirent : « Toi aussi, es-tu Galiléen ? Examine avec soin les Écritures*,+ 7:52 52. Les Écritures. Ce mot qu’on lit dans la Vulgate ne se trouve pas dans le grec : cependant il est bien dans le sens.* et tu verras qu’il ne sort pas de prophète de la Galilée. »",
+        "NAB": "They answered and said to him, \"You are not from Galilee also, are you? Look and see that no prophet arises from Galilee.\"",
+        "VAT_ES": "Le respondieron: «&iquest;Tú también eres galileo? Examina las Escrituras y verás que de Galilea no surge ningún profeta»."
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "BYZ": "Καὶ ἐπορεύθη ἕκαστος εἰς τὸν οἶκον αὐτοῦ·",
+        "VUL": "Et reversi sunt unusquisque in domum suam.",
+        "SYN": "И разошлись все по домам.",
+        "NEO": "Et ils s’en retournèrent chacun dans sa maison.",
+        "NAB": "Then each went to his own house,",
+        "VAT_ES": "Y cada uno regresó a su casa."
+      }
+    }
+  }
+}

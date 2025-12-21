@@ -1,0 +1,645 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_104",
+  "book_key": "PSAL",
+  "sequence": 104,
+  "chapter_in": {
+    "MT": 104,
+    "VUL": 103,
+    "LXX": 103
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בָּרֲכִ֥י נַפְשִׁ֗/י אֶת יְה֫וָ֥ה יְהוָ֣ה אֱ֭לֹהַ/י גָּדַ֣לְתָּ מְּאֹ֑ד ה֭וֹד וְ/הָדָ֣ר לָבָֽשְׁתָּ׃",
+        "LXX": "Ἁλληλουιά. Ἐξομολογεῖσθε τῷ κυρίῳ καὶ ἐπικαλεῖσθε τὸ ὄνομα αὐτοῦ, ἀπαγγείλατε ἐν τοῖς ἔθνεσιν τὰ ἔργα αὐτοῦ.",
+        "VUL": "Alleluja. [Confitemini Domino, et invocate nomen ejus ;/ annuntiate inter gentes opera ejus./",
+        "SYN": "Славьте Господа; призывайте имя Его; возвещайте в народах дела Его;",
+        "NEO": "Mon âme, bénis \\+w Yahweh|strong=\"H3068\"\\+w** ! \\+w Yahweh|strong=\"H3068\"\\+w**, mon Dieu, tu es infiniment grand, Tu es revêtu de majesté et de splendeur !",
+        "NAB": "Bless the LORD, my soul! LORD, my God, you are great indeed! You are clothed with majesty and glory,",
+        "VAT_ES": "Bendice al Señor, alma mía:",
+        "CEI": "Benedici il Signore, anima mia, Signore, mio Dio, quanto sei grande! Rivestito di maestà e di splendore,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עֹֽטֶה א֭וֹר כַּ/שַּׂלְמָ֑ה נוֹטֶ֥ה שָׁ֝מַ֗יִם כַּ/יְרִיעָֽה׃",
+        "LXX": "ᾄσατε αὐτῷ καὶ ψάλατε αὐτῷ, διηγήσασθε πάντα τὰ θαυμάσια αὐτοῦ.",
+        "VUL": "Cantate ei, et psallite ei ;/ narrate omnia mirabilia ejus./",
+        "SYN": "воспойте Ему и пойте Ему; поведайте о всех чудесах Его.",
+        "NEO": "Il s’enveloppe de lumière comme d’un manteau, il déploie les cieux comme une tente.",
+        "NAB": "robed in light as with a cloak. You spread out the heavens like a tent;",
+        "VAT_ES": "y te envuelves con un manto de luz.",
+        "CEI": "avvolto di luce come di un manto. Tu stendi il cielo come una tenda,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הַ֥/מְקָרֶֽה בַ/מַּ֗יִם עֲֽלִיּ֫וֹתָ֥י/ו הַ/שָּׂם עָבִ֥ים רְכוּב֑/וֹ הַֽ֝/מְהַלֵּ֗ךְ עַל כַּנְפֵי רֽוּחַ׃",
+        "LXX": "ἐπαινεῖσθε ἐν τῷ ὀνόματι τῷ ἁγίῳ αὐτοῦ· εὐφρανθήτω καρδία ζητούντων τὸν κύριον.",
+        "VUL": "Laudamini in nomine sancto ejus ;/ lætetur cor quærentium Dominum./",
+        "SYN": "Хвалитесь именем Его святым; да веселится сердце ищущих Господа.",
+        "NEO": "Dans les eaux du ciel il bâtit sa demeure, des nuées il fait son char, il s’avance sur les ailes du vent,",
+        "NAB": "you raised your palace upon the waters. You make the clouds your chariot; you travel on the wings of the wind.",
+        "VAT_ES": "y construiste tu mansión sobre las aguas.",
+        "CEI": "costruisci sulle acque la tua dimora, fai delle nubi il tuo carro, cammini sulle ali del vento;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "עֹשֶׂ֣ה מַלְאָכָ֣י/ו רוּח֑וֹת מְ֝שָׁרְתָ֗י/ו אֵ֣שׁ לֹהֵֽט׃",
+        "LXX": "ζητήσατε τὸν κύριον καὶ κραταιώθητε, ζητήσατε τὸ πρόσωπον αὐτοῦ διὰ παντός·",
+        "VUL": "Quærite Dominum, et confirmamini ;/ quærite faciem ejus semper./",
+        "SYN": "Ищите Господа и силы Его, ищите лица Его всегда.",
+        "NEO": "Des vents il fait ses messagers, des flammes de feu ses serviteurs.",
+        "NAB": "You make the winds your messengers; flaming fire, your ministers.",
+        "VAT_ES": "Usas como mensajeros a los vientos,",
+        "CEI": "fai dei venti i tuoi messaggeri, delle fiamme guizzanti i tuoi ministri."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "יָֽסַד אֶ֭רֶץ עַל מְכוֹנֶ֑י/הָ בַּל תִּ֝מּ֗וֹט עוֹלָ֥ם וָ/עֶֽד׃",
+        "LXX": "μνήσθητε τῶν θαυμασίων αὐτοῦ ὧν ἐποίησεν, τὰ τέρατα αὐτοῦ καὶ τὰ κρίματα τοῦ στόματος αὐτοῦ·",
+        "VUL": "Mementote mirabilium ejus quæ fecit ;/ prodigia ejus, et judicia oris ejus :/",
+        "SYN": "Воспоминайте чудеса Его, которые сотворил, знамения Его и суды уст Его,",
+        "NEO": "Il a affermi la terre sur ses bases : elle est à jamais inébranlable.",
+        "NAB": "You fixed the earth on its foundation, never to be moved.",
+        "VAT_ES": "Afirmaste la tierra sobre sus cimientos:",
+        "CEI": "Hai fondato la terra sulle sue basi, mai potrà vacillare."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "תְּ֭הוֹם כַּ/לְּב֣וּשׁ כִּסִּית֑/וֹ עַל הָ֝רִ֗ים יַֽעַמְדוּ מָֽיִם׃",
+        "LXX": "σπέρμα Ἀβραὰμ δοῦλοι αὐτοῦ, υἱοὶ Ἰακὼβ ἐκλεκτοὶ αὐτοῦ.",
+        "VUL": "semen Abraham servi ejus ;/ filii Jacob electi ejus./",
+        "SYN": "вы, семя Авраамово, рабы Его, сыны Иакова, избранные Его.",
+        "NEO": "Tu l’avais enveloppée de l’abîme comme d’un vêtement ; les eaux recouvraient les montagnes.",
+        "NAB": "The ocean covered it like a garment; above the mountains stood the waters.",
+        "VAT_ES": "El océano la cubría como un manto,",
+        "CEI": "L'oceano l'avvolgeva come un manto, le acque coprivano le montagne."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "מִן גַּעֲרָ֣תְ/ךָ֣ יְנוּס֑וּ/ן מִן ק֥וֹל רַֽ֝עַמְ/ךָ֗ יֵחָפֵזֽוּ/ן׃",
+        "LXX": "αὐτὸς Κύριος ὁ θεὸς ἡμῶν· ἐν πάσῃ τῇ γῇ τὰ κρίματα αὐτοῦ.",
+        "VUL": "Ipse Dominus Deus noster ;/ in universa terra judicia ejus./",
+        "SYN": "Он Господь Бог наш: по всей земле суды Его.",
+        "NEO": "Elles s’enfuirent devant ta menace ; au bruit de ton tonnerre, elles reculèrent épouvantées.",
+        "NAB": "At your roar they took flight; at the sound of your thunder they fled.",
+        "VAT_ES": "pero tú las amenazaste y huyeron,",
+        "CEI": "Alla tua minaccia sono fuggite, al fragore del tuo tuono hanno tremato."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "יַעֲל֣וּ הָ֭רִים יֵרְד֣וּ בְקָע֑וֹת אֶל מְ֝ק֗וֹם זֶ֤ה יָסַ֬דְתָּ לָ/הֶֽם׃",
+        "LXX": "ἐμνήσθη εἰς τὸν αἰῶνα διαθήκης αὐτοῦ, λόγου οὗ ἐνετείλατο εἰς χιλίας γενεάς,",
+        "VUL": "Memor fuit in sæculum testamenti sui ;/ verbi quod mandavit in mille generationes :/",
+        "SYN": "Вечно помнит завет Свой, слово, [которое] заповедал в тысячу родов,",
+        "NEO": "Les montagnes surgirent, les vallées se creusèrent, au lieu que tu leur avais assigné.",
+        "NAB": "They rushed up the mountains, down the valleys to the place you had fixed for them.",
+        "VAT_ES": "Subieron a las montañas,",
+        "CEI": "Emergono i monti, scendono le valli al luogo che hai loro assegnato."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "גְּֽבוּל שַׂ֭מְתָּ בַּל יַֽעֲבֹר֑וּ/ן בַּל יְ֝שׁוּב֗וּ/ן לְ/כַסּ֥וֹת הָ/אָֽרֶץ׃",
+        "LXX": "ὃν διέθετο τῷ Ἀβραάμ, καὶ τοῦ ὅρκου αὐτοῦ τῷ Ἰσαάκ·",
+        "VUL": "quod disposuit ad Abraham,/ et juramenti sui ad Isaac :/",
+        "SYN": "которое завещал Аврааму, и клятву Свою Исааку,",
+        "NEO": "Tu poses une limite que les eaux ne franchiront plus : elles ne reviendront plus couvrir la terre.",
+        "NAB": "You set a limit they cannot pass; never again will they cover the earth.",
+        "VAT_ES": "les fijaste un límite que no pasarán,",
+        "CEI": "Hai posto un limite alle acque: non lo passeranno, non torneranno a coprire la terra."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "הַֽ/מְשַׁלֵּ֣חַ מַ֭עְיָנִים בַּ/נְּחָלִ֑ים בֵּ֥ין הָ֝רִ֗ים יְהַלֵּכֽוּ/ן׃",
+        "LXX": "καὶ ἔστησεν αὐτὴν τῷ Ἰακὼβ εἰς πρόσταγμα καὶ τῷ Ἰσραὴλ διαθήκην αἰώνιον,",
+        "VUL": "et statuit illud Jacob in præceptum,/ et Israël in testamentum æternum,/",
+        "SYN": "и поставил то Иакову в закон и Израилю в завет вечный,",
+        "NEO": "Il envoie les sources dans les vallées ; elles s’écoulent entre les montagnes.",
+        "NAB": "You made springs flow into channels that wind among the mountains.",
+        "VAT_ES": "Haces brotar fuentes en los valles,",
+        "CEI": "Fai scaturire le sorgenti nelle valli e scorrono tra i monti;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "יַ֭שְׁקוּ כָּל חַיְת֣/וֹ שָׂדָ֑י יִשְׁבְּר֖וּ פְרָאִ֣ים צְמָאָֽ/ם׃",
+        "LXX": "λέγων Σοὶ δώσω τὴν γῆν Χανάαν, σχοίνισμα κληρονομίας ὑμῶν·",
+        "VUL": "dicens : Tibi dabo terram Chanaan,/ funiculum hæreditatis vestræ :/",
+        "SYN": "говоря: \"тебе дам землю Ханаанскую в удел наследия вашего\".",
+        "NEO": "Elles abreuvent tous les animaux des champs, les onagres viennent y étancher leur soif.",
+        "NAB": "They give drink to every beast of the field; here wild asses quench their thirst.",
+        "VAT_ES": "Allí beben los animales del campo,",
+        "CEI": "ne bevono tutte le bestie selvatiche e gli ònagri estinguono la loro sete."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "עֲ֭לֵי/הֶם עוֹף הַ/שָּׁמַ֣יִם יִשְׁכּ֑וֹן מִ/בֵּ֥ין עֳ֝פָאיִ֗ם יִתְּנוּ קֽוֹל׃",
+        "LXX": "ἐν τῷ εἶναι αὐτοὺς ἀριθμῷ βραχεῖς, ὀλιγοστοὺς καὶ παροίκους ἐν αὐτῇ.",
+        "VUL": "cum essent numero brevi,/ paucissimi, et incolæ ejus./",
+        "SYN": "Когда их было еще мало числом, очень мало, и они были пришельцами в ней",
+        "NEO": "Les oiseaux du ciel habitent sur leurs bords, et font résonner leur voix dans le feuillage.",
+        "NAB": "Beside them the birds of heaven nest; among the branches they sing.",
+        "VAT_ES": "Las aves del cielo habitan junto a ellas",
+        "CEI": "Al di sopra dimorano gli uccelli del cielo, cantano tra le fronde."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "מַשְׁקֶ֣ה הָ֭רִים מֵ/עֲלִיּוֹתָ֑י/ו מִ/פְּרִ֥י מַ֝עֲשֶׂ֗י/ךָ תִּשְׂבַּ֥ע הָ/אָֽרֶץ׃",
+        "LXX": "καὶ διῆλθον ἐξ ἔθνους εἰς ἔθνος ἐκ βασιλείας εἰς λαὸν ἕτερον·",
+        "VUL": "Et pertransierunt de gente in gentem,/ et de regno ad populum alterum./",
+        "SYN": "и переходили от народа к народу, из царства к иному племени,",
+        "NEO": "De sa haute demeure il arrose les montagnes ; la terre se rassasie du fruit de tes œuvres.",
+        "NAB": "You water the mountains from your palace; by your labor the earth abounds.",
+        "VAT_ES": "Desde lo alto riegas las montañas,",
+        "CEI": "Dalle tue alte dimore irrighi i monti, con il frutto delle tue opere sazi la terra."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "מַצְמִ֤יחַ חָצִ֨יר לַ/בְּהֵמָ֗ה וְ֭/עֵשֶׂב לַ/עֲבֹדַ֣ת הָ/אָדָ֑ם לְ/ה֥וֹצִיא לֶ֝֗חֶם מִן הָ/אָֽרֶץ׃",
+        "LXX": "οὐκ ἀφῆκεν ἄνθρωπον ἀδικῆσαι αὐτούς, καὶ ἤλεγξεν ὑπὲρ αὐτῶν βασιλεῖς",
+        "VUL": "Non reliquit hominem nocere eis :/ et corripuit pro eis reges./",
+        "SYN": "никому не позволял обижать их и возбранял о них царям:",
+        "NEO": "Il fait croître l’herbe pour les troupeaux, et les plantes pour l’usage de l’homme ; Il tire le pain du sein de la terre,",
+        "NAB": "You raise grass for the cattle and plants for our beasts of burden. You bring bread from the earth,",
+        "VAT_ES": "Haces brotar la hierba para el ganado",
+        "CEI": "Fai crescere il fieno per gli armenti e l'erba al servizio dell'uomo, perché tragga alimento dalla terra:"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/יַ֤יִן יְשַׂמַּ֬ח לְֽבַב אֱנ֗וֹשׁ לְ/הַצְהִ֣יל פָּנִ֣ים מִ/שָּׁ֑מֶן וְ֝/לֶ֗חֶם לְֽבַב אֱנ֥וֹשׁ יִסְעָֽד׃",
+        "LXX": "Μὴ ἅψησθε τῶν χριστῶν μου, καὶ ἐν τοῖς προφήταις μου μὴ πονηρεύεσθε.",
+        "VUL": "Nolite tangere christos meos,/ et in prophetis meis nolite malignari./",
+        "SYN": "[не прикасайтесь к помазанным Моим, и пророкам Моим не делайте зла].",
+        "NEO": "et le vin qui réjouit le cœur de l’homme ; il lui donne l’huile qui brille sur sa face, et le pain qui affermit son cœur.",
+        "NAB": "and wine to gladden our hearts, Oil to make our faces gleam, food to build our strength.",
+        "VAT_ES": "y el vino que alegra el corazón del hombre,",
+        "CEI": "il vino che allieta il cuore dell'uomo; l'olio che fa brillare il suo volto e il pane che sostiene il suo vigore."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "יִ֭שְׂבְּעוּ עֲצֵ֣י יְהוָ֑ה אַֽרְזֵ֥י לְ֝בָנ֗וֹן אֲשֶׁ֣ר נָטָֽע׃",
+        "LXX": "καὶ ἐκάλεσεν λιμὸν ἐπὶ τὴν γῆν, πᾶν στήριγμα ἄρτου συνέτριψεν.",
+        "VUL": "Et vocavit famem super terram,/ et omne firmamentum panis contrivit./",
+        "SYN": "И призвал голод на землю; всякий стебель хлебный истребил.",
+        "NEO": "Les arbres de \\+w Yahweh|strong=\"H3068\"\\+w** sont pleins de sève, et les cèdres du Liban qu’il a plantés.",
+        "NAB": "The trees of the LORD drink their fill, the cedars of Lebanon, which you planted.",
+        "VAT_ES": "Se llenan de savia los árboles del Señor,",
+        "CEI": "Si saziano gli alberi del Signore, i cedri del Libano da lui piantati."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אֲשֶׁר שָׁ֭ם צִפֳּרִ֣ים יְקַנֵּ֑נוּ חֲ֝סִידָ֗ה בְּרוֹשִׁ֥ים בֵּיתָֽ/הּ׃",
+        "LXX": "ἀπέστειλεν ἔμπροσθεν αὐτῶν ἄνθρωπον, εἰς δοῦλον ἐπράθη Ἰωσήφ.",
+        "VUL": "Misit ante eos virum :/ in servum venumdatus est, Joseph./",
+        "SYN": "Послал пред ними человека: в рабы продан был Иосиф.",
+        "NEO": "C’est là que les oiseaux font leurs nids, et la cigogne qui habite dans les cyprès.",
+        "NAB": "There the birds build their nests; junipers are the home of the stork.",
+        "VAT_ES": "allí ponen su nido los pájaros,",
+        "CEI": "Là gli uccelli fanno il loro nido e la cicogna sui cipressi ha la sua casa."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "הָרִ֣ים הַ֭/גְּבֹהִים לַ/יְּעֵלִ֑ים סְ֝לָעִ֗ים מַחְסֶ֥ה לַֽ/שְׁפַנִּֽים׃",
+        "LXX": "ἐταπείνωσαν ἐν πέδαις τοὺς πόδας αὐτοῦ, σίδηρον διῆλθεν ἡ ψυχὴ αὐτοῦ·",
+        "VUL": "Humiliaverunt in compedibus pedes ejus ;/ ferrum pertransiit animam ejus :/",
+        "SYN": "Стеснили оковами ноги его; в железо вошла душа его,",
+        "NEO": "Les montagnes élevées sont pour les chamois, les rochers sont l’abri des gerboises.",
+        "NAB": "The high mountains are for wild goats; the rocky cliffs, a refuge for badgers.",
+        "VAT_ES": "los altos peñascos son para las cabras,",
+        "CEI": "Per i camosci sono le alte montagne, le rocce sono rifugio per gli iràci."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "עָשָׂ֣ה יָ֭רֵחַ לְ/מוֹעֲדִ֑ים שֶׁ֝֗מֶשׁ יָדַ֥ע מְבוֹאֽ/וֹ׃",
+        "LXX": "μέχρι τοῦ ἐλθεῖν τὸν λόγον αὐτοῦ, τὸ λόγιον τοῦ κυρίου ἐπύρωσεν αὐτόν.",
+        "VUL": "donec veniret verbum ejus./ Eloquium Domini inflammavit eum./",
+        "SYN": "доколе исполнилось слово Его: слово Господне испытало его.",
+        "NEO": "Il a fait la lune pour marquer les temps, et le soleil qui connaît l’heure de son coucher.",
+        "NAB": "You made the moon to mark the seasons, the sun that knows the hour of its setting.",
+        "VAT_ES": "Hiciste la luna para medir el tiempo,",
+        "CEI": "Per segnare le stagioni hai fatto la luna e il sole che conosce il suo tramonto."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "תָּֽשֶׁת חֹ֭שֶׁךְ וִ֣/יהִי לָ֑יְלָה בּֽ/וֹ תִ֝רְמֹ֗שׂ כָּל חַיְת/וֹ יָֽעַר׃",
+        "LXX": "ἐξαπέστειλεν βασιλεὺς καὶ ἔλυσεν αὐτόν, ἄρχων λαῶν, καὶ ἀφῆκεν αὐτόν·",
+        "VUL": "Misit rex, et solvit eum ;/ princeps populorum, et dimisit eum./",
+        "SYN": "Послал царь, и разрешил его владетель народов и освободил его;",
+        "NEO": "Il amène les ténèbres, et il est nuit ; aussitôt se mettent en mouvement toutes les bêtes de la forêt.",
+        "NAB": "You bring darkness and night falls, then all the beasts of the forest roam abroad.",
+        "VAT_ES": "mandas la oscuridad, y cae la noche:",
+        "CEI": "Stendi le tenebre e viene la notte e vagano tutte le bestie della foresta;"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "הַ֭/כְּפִירִים שֹׁאֲגִ֣ים לַ/טָּ֑רֶף וּ/לְ/בַקֵּ֖שׁ מֵ/אֵ֣ל אָכְלָֽ/ם׃",
+        "LXX": "κατέστησεν αὐτὸν κύριον τοῦ οἴκου αὐτοῦ καὶ ἄρχοντα πάσης τῆς κτήσεως αὐτοῦ,",
+        "VUL": "Constituit eum dominum domus suæ,/ et principem omnis possessionis suæ :/",
+        "SYN": "поставил его господином над домом своим и правителем над всем владением своим,",
+        "NEO": "Les lionceaux rugissent après la proie, et demandent à Dieu leur nourriture.",
+        "NAB": "Young lions roar for prey; they seek their food from God.",
+        "VAT_ES": "y los cachorros rugen por la presa,",
+        "CEI": "ruggiscono i leoncelli in cerca di preda e chiedono a Dio il loro cibo."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "תִּזְרַ֣ח הַ֭/שֶּׁמֶשׁ יֵאָסֵפ֑וּ/ן וְ/אֶל מְ֝עוֹנֹתָ֗/ם יִרְבָּצֽוּ/ן׃",
+        "LXX": "τοῦ παιδεῦσαι τοὺς ἄρχοντας αὐτοῦ ὡς ἑαυτόν, καὶ τοὺς πρεσβυτέρους αὐτοῦ σοφίσαι.",
+        "VUL": "ut erudiret principes ejus sicut semetipsum,/ et senes ejus prudentiam doceret./",
+        "SYN": "чтобы он наставлял вельмож его по своей душе и старейшин его учил мудрости.",
+        "NEO": "Le soleil se lève : ils se retirent, et se couchent dans leurs tanières.",
+        "NAB": "When the sun rises, they steal away and rest in their dens.",
+        "VAT_ES": "Haces brillar el sol y se retiran,",
+        "CEI": "Sorge il sole, si ritirano e si accovacciano nelle tane."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "יֵצֵ֣א אָדָ֣ם לְ/פָעֳל֑/וֹ וְֽ/לַ/עֲבֹ֖דָת֣/וֹ עֲדֵי עָֽרֶב׃",
+        "LXX": "καὶ εἰσῆλθεν Ἰσραὴλ εἰς Αἴγυπτον, καὶ Ἰακὼβ παρῴκησεν ἐν γῇ Χάμ·",
+        "VUL": "Et intravit Israël in Ægyptum,/ et Jacob accola fuit in terra Cham./",
+        "SYN": "Тогда пришел Израиль в Египет, и переселился Иаков в землю Хамову.",
+        "NEO": "L’homme sort alors pour sa tâche, et pour son travail jusqu’au soir.",
+        "NAB": "People go forth to their work, to their labor till evening falls.",
+        "VAT_ES": "entonces sale el hombre a trabajar,",
+        "CEI": "Allora l'uomo esce al suo lavoro, per la sua fatica fino a sera."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "מָֽה רַבּ֬וּ מַעֲשֶׂ֨י/ךָ יְֽהוָ֗ה כֻּ֭לָּ/ם בְּ/חָכְמָ֣ה עָשִׂ֑יתָ מָלְאָ֥ה הָ֝/אָ֗רֶץ קִנְיָנֶֽ/ךָ׃",
+        "LXX": "καὶ ηὔξησεν τὸν λαὸν αὐτοῦ σφόδρα, καὶ ἐκραταίωσεν αὐτὸν ὑπὲρ τοὺς ἐχθροὺς αὐτοῦ.",
+        "VUL": "Et auxit populum suum vehementer,/ et firmavit eum super inimicos ejus./",
+        "SYN": "И весьма размножил _Бог_ народ Свой и сделал его сильнее врагов его.",
+        "NEO": "Que tes œuvres sont nombreuses, \\+w Yahweh|strong=\"H3068\"\\+w** ! Tu les as toutes faites avec sagesse ; La terre est remplie de tes biens.",
+        "NAB": "How varied are your works, LORD! In wisdom you have wrought them all; the earth is full of your creatures.",
+        "VAT_ES": "&iexcl;Qué variadas son tus obras, Señor!",
+        "CEI": "Quanto sono grandi, Signore, le tue opere! Tutto hai fatto con saggezza, la terra è piena delle tue creature."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "זֶ֤ה הַ/יָּ֥ם גָּדוֹל֮ וּ/רְחַ֪ב יָ֫דָ֥יִם שָֽׁם רֶ֭מֶשׂ וְ/אֵ֣ין מִסְפָּ֑ר חַיּ֥וֹת קְ֝טַנּ֗וֹת עִם גְּדֹלֽוֹת׃",
+        "LXX": "καὶ μετέστρεψεν τὴν καρδίαν αὐτῶν τοῦ μισῆσαι τὸν λαὸν αὐτοῦ, τοῦ δολιοῦσθαι ἐν τοῖς δούλοις αὐτοῦ.",
+        "VUL": "Convertit cor eorum, ut odirent populum ejus,/ et dolum facerent in servos ejus./",
+        "SYN": "Возбудил в сердце их ненависть против народа Его и ухищрение против рабов Его.",
+        "NEO": "Voici la mer, large et vaste : là fourmillent sans nombre des animaux petits et grands ;",
+        "NAB": "Look at the sea, great and wide! It teems with countless beings, living things both large and small.",
+        "VAT_ES": "Allí está el mar, grande y dilatado,",
+        "CEI": "Ecco il mare spazioso e vasto: lì guizzano senza numero animali piccoli e grandi."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "שָׁ֭ם אֳנִיּ֣וֹת יְהַלֵּכ֑וּ/ן לִ֝וְיָתָ֗ן זֶֽה יָצַ֥רְתָּ לְ/שַֽׂחֶק בּֽ/וֹ׃",
+        "LXX": "ἐξαπέστειλεν Μωυσῆν τὸν δοῦλον αὐτοῦ, Ἀαρὼν ὃν ἐξελέξατο αὐτόν·",
+        "VUL": "Misit Moysen servum suum ;/ Aaron quem elegit ipsum./",
+        "SYN": "Послал Моисея, раба Своего, Аарона, которого избрал.",
+        "NEO": "là se promènent les navires, et le léviathan que tu as formé pour se jouer dans les flots.",
+        "NAB": "Here ships ply their course; here Leviathan, your creature, plays.",
+        "VAT_ES": "Por él transitan las naves, y ese Leviatán",
+        "CEI": "Lo solcano le navi, il Leviatàn che hai plasmato perché in esso si diverta."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "כֻּ֭לָּ/ם אֵלֶ֣י/ךָ יְשַׂבֵּר֑וּ/ן לָ/תֵ֖ת אָכְלָ֣/ם בְּ/עִתּֽ/וֹ׃",
+        "LXX": "ἔθετο αὐτοῖς τοὺς λόγους τῶν σημείων αὐτοῦ καὶ τῶν τεράτων ἐν γῇ Χάμ.",
+        "VUL": "Posuit in eis verba signorum suorum,/ et prodigiorum in terra Cham./",
+        "SYN": "Они показали между ними слова знамений Его и чудеса [Его] в земле Хамовой.",
+        "NEO": "Tous attendent de toi que tu leur donnes la nourriture en son temps.",
+        "NAB": "All of these look to you to give them food in due time.",
+        "VAT_ES": "Todos esperan de ti",
+        "CEI": "Tutti da te aspettano che tu dia loro il cibo in tempo opportuno."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "תִּתֵּ֣ן לָ֭/הֶם יִלְקֹט֑וּ/ן תִּפְתַּ֥ח יָֽ֝דְ/ךָ֗ יִשְׂבְּע֥וּ/ן טֽוֹב׃",
+        "LXX": "ἐξαπέστειλεν σκότος καὶ ἐσκότασεν, καὶ παρεπίκραναν τοὺς λόγους αὐτοῦ.",
+        "VUL": "Misit tenebras, et obscuravit ;/ et non exacerbavit sermones suos./",
+        "SYN": "Послал тьму и сделал мрак, и не воспротивились слову Его.",
+        "NEO": "Tu la leur donnes, et ils la recueillent ; Tu ouvres ta main, et ils se rassasient de tes biens.",
+        "NAB": "When you give to them, they gather; when you open your hand, they are well filled.",
+        "VAT_ES": "se la das, y ellos la recogen;",
+        "CEI": "Tu lo provvedi, essi lo raccolgono, tu apri la mano, si saziano di beni."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "תַּסְתִּ֥יר פָּנֶי/ךָ֮ יִֽבָּהֵ֫ל֥וּ/ן תֹּסֵ֣ף ר֭וּחָ/ם יִגְוָע֑וּ/ן וְֽ/אֶל עֲפָרָ֥/ם יְשׁוּבֽוּ/ן׃",
+        "LXX": "μετέστρεψεν τὰ ὕδατα αὐτῶν εἰς αἷμα, καὶ ἀπέκτεινεν τοὺς ἰχθύας αὐτῶν·",
+        "VUL": "Convertit aquas eorum in sanguinem,/ et occidit pisces eorum./",
+        "SYN": "Преложил воду их в кровь, и уморил рыбу их.",
+        "NEO": "Tu caches ta face : ils sont dans l’épouvante ; tu leur retire le souffle : ils expirent, et retournent dans leur poussière.",
+        "NAB": "When you hide your face, they are lost. When you take away their breath, they perish and return to the dust from which they came.",
+        "VAT_ES": "Si escondes tu rostro, se espantan;",
+        "CEI": "Se nascondi il tuo volto, vengono meno, togli loro il respiro, muoiono e ritornano nella loro polvere."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "תְּשַׁלַּ֣ח ר֭וּחֲ/ךָ יִבָּרֵא֑וּ/ן וּ֝/תְחַדֵּ֗שׁ פְּנֵ֣י אֲדָמָֽה׃",
+        "LXX": "ἐξῆρψεν ἡ γῆ αὐτῶν βατράχους, ἐν τοῖς ταμείοις τῶν βασιλειῶν αὐτῶν.",
+        "VUL": "Edidit terra eorum ranas/ in penetralibus regum ipsorum./",
+        "SYN": "Земля их произвела множество жаб _даже_ в спальне царей их.",
+        "NEO": "Tu envoies ton souffle : ils sont créés, et tu renouvelles la face de la terre.",
+        "NAB": "When you send forth your breath, they are created, and you renew the face of the earth.",
+        "VAT_ES": "Si envías tu aliento, son creados,",
+        "CEI": "Mandi il tuo spirito, sono creati, e rinnovi la faccia della terra."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "יְהִ֤י כְב֣וֹד יְהוָ֣ה לְ/עוֹלָ֑ם יִשְׂמַ֖ח יְהוָ֣ה בְּ/מַעֲשָֽׂי/ו׃",
+        "LXX": "εἶπεν, καὶ ἦλθεν κυνόμυια καὶ σκνῖπες ἐν πᾶσι τοῖς ὁρίοις αὐτῶν.",
+        "VUL": "Dixit, et venit cnomyia et ciniphes/ in omnibus finibus eorum./",
+        "SYN": "Он сказал, и пришли разные насекомые, скнипы во все пределы их.",
+        "NEO": "Que la gloire de \\+w Yahweh|strong=\"H3068\"\\+w** subsiste à jamais ! Que \\+w Yahweh|strong=\"H3068\"\\+w** se réjouisse de ses œuvres !",
+        "NAB": "May the glory of the LORD endure forever; may the LORD be glad in these works!",
+        "VAT_ES": "&iexcl;Gloria al Señor para siempre,",
+        "CEI": "La gloria del Signore sia per sempre; gioisca il Signore delle sue opere."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "הַ/מַּבִּ֣יט לָ֭/אָרֶץ וַ/תִּרְעָ֑ד יִגַּ֖ע בֶּ/הָרִ֣ים וְֽ/יֶעֱשָֽׁנוּ׃",
+        "LXX": "ἔθετο τὰς βροχὰς αὐτῶν χάλαζαν, πῦρ καταφλέγον ἐν τῇ γῇ αὐτῶν·",
+        "VUL": "Posuit pluvias eorum grandinem :/ ignem comburentem in terra ipsorum./",
+        "SYN": "Вместо дождя послал на них град, палящий огонь на землю их,",
+        "NEO": "Il regarde la terre et elle tremble ; il touche les montagnes, et elles fument.",
+        "NAB": "If God glares at the earth, it trembles; if God touches the mountains, they smoke!",
+        "VAT_ES": "El mira, y la tierra se estremece;",
+        "CEI": "Egli guarda la terra e la fa sussultare, tocca i monti ed essi fumano."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "אָשִׁ֣ירָה לַ/יהוָ֣ה בְּ/חַיָּ֑/י אֲזַמְּרָ֖ה לֵ/אלֹהַ֣/י בְּ/עוֹדִֽ/י׃",
+        "LXX": "καὶ ἐπάταξεν τὰς ἀμπέλους αὐτῶν καὶ τὰς συκᾶς αὐτῶν, καὶ συνέτριψεν πᾶν ξύλον ὁρίου αὐτῶν.",
+        "VUL": "Et percussit vineas eorum, et ficulneas eorum,/ et contrivit lignum finium eorum./",
+        "SYN": "и побил виноград их и смоковницы их, и сокрушил дерева в пределах их.",
+        "NEO": "Je veux chanter \\+w Yahweh|strong=\"H3068\"\\+w** tant que je vivrai, célébrer mon Dieu tant que j’existerai.",
+        "NAB": "I will sing to the LORD all my life; I will sing praise to my God while I live.",
+        "VAT_ES": "Cantaré al Señor toda mi vida;",
+        "CEI": "Voglio cantare al Signore finché ho vita, cantare al mio Dio finché esisto."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "יֶעֱרַ֣ב עָלָ֣י/ו שִׂיחִ֑/י אָ֝נֹכִ֗י אֶשְׂמַ֥ח בַּ/יהוָֽה׃",
+        "LXX": "εἶπεν, καὶ ἦλθεν ἀκρὶς καὶ βροῦχος οὗ οὐκ ἦν ἀριθμός,",
+        "VUL": "Dixit, et venit locusta,/ et bruchus cujus non erat numerus :/",
+        "SYN": "Сказал, и пришла саранча и гусеницы без числа;",
+        "NEO": "Puisse mon cantique lui être agréable ! Moi, je mets ma joie en \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "May my theme be pleasing to God; I will rejoice in the LORD.",
+        "VAT_ES": "que mi canto le sea agradable,",
+        "CEI": "A lui sia gradito il mio canto; la mia gioia è nel Signore."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "יִתַּ֤מּוּ חַטָּאִ֨ים מִן הָ/אָ֡רֶץ וּ/רְשָׁעִ֤ים ע֤וֹד אֵינָ֗/ם בָּרֲכִ֣י נַ֭פְשִׁ/י אֶת יְהוָ֗ה הַֽלְלוּ יָֽהּ׃",
+        "LXX": "καὶ κατέφαγεν πάντα τὸν χόρτον ἐν τῇ γῇ αὐτῶν, καὶ κατέφαγεν τὸν καρπὸν τῆς γῆς αὐτῶν.",
+        "VUL": "et comedit omne fnum in terra eorum,/ et comedit omnem fructum terræ eorum./",
+        "SYN": "и съели всю траву на земле их, и съели плоды на полях их.",
+        "NEO": "Que les pécheurs disparaissent de la terre, et que les méchants ne soient plus !",
+        "NAB": "May sinners vanish from the earth, and the wicked be no more. Bless the LORD, my soul! Hallelujah!",
+        "VAT_ES": "Que los pecadores desaparezcan de la tierra",
+        "CEI": "Scompaiano i peccatori dalla terra e più non esistano gli empi. Benedici il Signore, anima mia."
+      }
+    }
+  }
+}

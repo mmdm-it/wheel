@@ -1,0 +1,440 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_042",
+  "book_key": "ECCLU",
+  "sequence": 42,
+  "chapter_in": {
+    "MT": 42,
+    "VUL": 42,
+    "LXX": 42
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "ἀπὸ δευτερώσεως καὶ λόγου ἀκοῆς, καὶ ἀπὸ ἀποκαλύψεων λόγων κρυφίων· καὶ ἔσῃ αἰσχυντηρὸς ἀληθινῶς, καὶ εὑρίσκων χάριν ἔναντι παντὸς ἀνθρώπου. Μὴ περὶ τούτων αἰσχυνθῇς, καὶ μὴ λάβῃς πρόσωπον τοῦ ἁμαρτάνειν·",
+        "VUL": "[Non duplices sermonem auditus de revelatione sermonis absconditi :/ et eris vere sine confusione,/ et invenies gratiam in conspectu omnium hominum./ Ne pro his omnibus confundaris,/ et ne accipias personam ut delinquas :/",
+        "SYN": "Не стыдись вот чего, и из лицеприятия не греши:",
+        "NEO": "Aie honte de répéter ce que tu as entendu, et de révéler des choses secrètes. Ainsi tu auras la vraie honte, et tu trouveras faveur devant tous les hommes.",
+        "NAB": "But of these things be not ashamed, lest you sin through human respect:",
+        "VAT_ES": "Pero no te averg&uuml;ences de lo siguiente y no peques por temor a los que pensarán de ti:",
+        "CEI": "Non ti vergognare delle cose seguenti e non peccare per rispetto umano:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "περὶ νόμου Ὑψίστου καὶ διαθήκης, καὶ περὶ κρίματος δικαιῶσαι τὸν ἀσεβῆ,",
+        "VUL": "de lege Altissimi, et testamento,/ et de judicio justificare impium,/",
+        "SYN": "не стыдись точного исполнения закона Всевышнего и завета, и суда, чтобы оказать правосудие нечестивому,",
+        "NEO": "de la loi du Très-Haut et de son alliance, de la sentence qui justifie l’impie,",
+        "NAB": "Of the law of the Most High and his precepts, or of the sentence to be passed upon the sinful;",
+        "VAT_ES": "no te averg&uuml;ences de la Ley del Altísimo y de la Alianza, ni de la sentencia que hace justicia al impío;",
+        "CEI": "della legge dell'Altissimo né dell'alleanza, della sentenza per assolvere l'empio,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "περὶ λόγου κοινωνοῦ καὶ ὁδοιπόρων, περὶ δόσεως κληρονομίας ἑταίρων,",
+        "VUL": "de verbo sociorum et viatorum,/ et de datione hæreditatis amicorum,/",
+        "SYN": "спора между товарищем и посторонними и предоставления наследства друзьям,",
+        "NEO": "de t’entretenir avec des compagnons et des passants, de donner quelque bien à tes amis,",
+        "NAB": "Of sharing the expenses of a business or a journey, or of dividing an inheritance or property;",
+        "VAT_ES": "de hacer las cuentas con los compañeros de vieja, ni compartir una herencia con otros;",
+        "CEI": "dei conti con il socio e con i compagni di viaggio, del dono di un'eredità agli amici,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "περὶ ἀκριβείας ζυγοῦ καὶ σταθμίων, περὶ κτήσεως πολλῶν καὶ ὀλίγων,",
+        "VUL": "de æqualitate stateræ et ponderum,/ de acquisitione multorum et paucorum,/",
+        "SYN": "точности в весах и мерах, - много ли, мало ли приобретаешь, -",
+        "NEO": "d’user de balances justes et de justes poids, d’acquérir beaucoup ou peu,",
+        "NAB": "Of accuracy of scales and balances, or of tested measures and weights;",
+        "VAT_ES": "de usar pesas y medidas exactas, ni de obtener ganancias grandes o pequeñas;",
+        "CEI": "dell'esattezza della bilancia e dei pesi, dell'acquisto di molte o poche cose,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "περὶ ἀδιαφόρου πράσεως καὶ ἐμπόρων, καὶ περὶ παιδείας τέκνων πολλῆς, καὶ οἰκέτῃ πονηρῷ πλευρὰν αἱμάξαι·",
+        "VUL": "de corruptione emptionis et negotiatorum,/ et de multa disciplina filiorum,/ et servo pessimo latus sanguinare./",
+        "SYN": "беспристрастия в купле и продаже и строгого воспитания детей, и - окровавить ребро худому рабу.",
+        "NEO": "de ne pas faire de différence dans la vente et avec les marchands, de corriger sévèrement tes enfants, et de frapper jusqu’au sang le dos d’un méchant esclave.",
+        "NAB": "Of acquiring much or little, or of bargaining in dealing with a merchant; Of constant training of children, or of beating the sides of a disloyal servant;",
+        "VAT_ES": "de lograr beneficios en el comercio, de corregir frecuentemente a tus hijos, ni de hacer sangrar las espaldas de un mal servidor.",
+        "CEI": "della contrattazione sul prezzo con i commercianti, della frequente correzione dei figli e del far sanguinare i fianchi di uno schiavo pigro."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ἐπὶ γυναικὶ πονηρᾷ καλὸν σφραγίς, καὶ ὅπου χεῖρες πολλαὶ κλεῖσον·",
+        "VUL": "Super mulierem nequam bonum est signum./",
+        "SYN": "При худой жене хорошо иметь печать, и, где много рук, там запирай.",
+        "NEO": "Avec une méchante femme, le sceau est bon ; et là où il y a beaucoup de mains, mets sous clef.",
+        "NAB": "Of a seal to keep an erring wife at home, or of a lock placed where there are many hands;",
+        "VAT_ES": "Conviene poner bajo sello a una mujer infiel, y donde hay muchas manos tener las cosas bajo llave.",
+        "CEI": "Con una moglie malvagia è opportuno il sigillo, dove ci sono troppe mani usa la chiave."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "ὃ ἐὰν παραδιδῷς, ἐν ἀριθμῷ καὶ σταθμῷ, καὶ δόσις καὶ λῆμψις παντὶ ἐν γραφῇ·",
+        "VUL": "Ubi manus multæ sunt, claude :/ et quodcumque trades, numera et appende :/ datum vero et acceptum omne describe./",
+        "SYN": "Если что выдаешь, выдавай счетом и весом и делай всякую выдачу и прием по записи.",
+        "NEO": "Ce que tu livres à tes gens, compte-le et pèse-le, et mets par écrit ce que tu donnes et ce que tu reçois.",
+        "NAB": "Of numbering every deposit, or of recording all that is given or received;",
+        "VAT_ES": "Cuenta y pesa bien lo que depositas, y lo que das y recibes, que esté todo por escrito.",
+        "CEI": "Qualunque cosa depositi, contala e pesala; il dare e l'avere sia tutto per iscritto."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "περὶ παιδείας ἀνοήτου καὶ μωροῦ καὶ ἐσχατογήρως κρινομένου πρὸς νέους, καὶ ἔσῃ πεπαιδευμένος ἀληθινῶς καὶ δεδοκιμασμένος ἔναντι παντὸς ζῶντος.",
+        "VUL": "De disciplina insensati et fatui,/ et de senioribus qui judicantur ab adolescentibus :/ et eris eruditus in omnibus,/ et probabilis in conspectu omnium vivorum.]",
+        "SYN": "Не стыдись вразумлять неразумного и глупого, и престарелого, состязающегося с молодыми: и будешь истинно благовоспитанным и заслужишь одобрение от всякого человека.",
+        "NEO": "Ne rougis pas de réprimander l’insensé et le sot, et le vieillard qui dispute avec des jeunes gens. Et ainsi tu seras véritablement instruit, et approuvé de tout le monde.",
+        "NAB": "Of chastisement of the silly and the foolish, or of the aged and infirm answering for wanton conduct. Thus you will be truly cautious and recognized by all men as discreet.",
+        "VAT_ES": "No te averg&uuml;ences de corregir el insensato y al necio, ni al anciano decrépito que rivaliza con los jóvenes. Así demostrarás que estás verdaderamente instruido y serás estimado por todo el mundo.",
+        "CEI": "Non vergognarti di correggere l'insensato e lo stolto e il vecchio decrepito che disputa con i giovani; sarai così veramente assennato e approvato da ogni vivente. Affanni di un padre per sua figlia"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "θυγάτηρ πατρὶ ἀπόκρυφος ἀγρυπνία, καὶ ἡ μέριμνα αὐτῆς ἀφιστᾷ ὕπνον· ἐν νεότητι αὐτῆς μή ποτε παρακμάσῃ, καὶ συνῳκηκυῖα μή ποτε μισηθῇ·",
+        "VUL": "[Filia patris abscondita est vigilia,/ et sollicitudo ejus aufert somnum :/ ne forte in adolescentia sua adulta efficiatur,/ et cum viro commorata odibilis fiat :/",
+        "SYN": "Дочь для отца - тайная постоянная забота, и попечение о ней отгоняет сон: в юности ее - как бы не отцвела, а в замужестве - как бы не опротивела;",
+        "NEO": "Une fille est pour son père un secret souci ; l’inquiétude qu’elle lui donne lui ôte le sommeil : jeune fille, elle passera peut-être la fleur de l’âge ; unie à un mari, elle lui deviendra peut-être odieuse ;",
+        "NAB": "A daughter is a treasure that keeps her father wakeful, and worry over her drives away rest: Lest she pass her prime unmarried, or when she is married, lest she be disliked;",
+        "VAT_ES": "Una hija es para su padre causa secreta de insomnio, y la preocupación por ella le quita el sueño: cuando es joven, se le puede pasar la edad, y si está casada, puede ser aborrecida.",
+        "CEI": "Una figlia è per il padre un'inquietudine segreta, la preoccupazione per lei allontana il sonno: nella sua giovinezza, perché non sfiorisca, una volta accasata, perché non sia ripudiata."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ἐν παρθενείᾳ μή ποτε βεβηλωθῇ καὶ ἐν τοῖς πατρικοῖς αὐτῆς ἔγκυος γένηται· μετὰ ἀνδρὸς οὖσα μή ποτε παραβῇ, καὶ συνῳκηκυῖα μή ποτε στειρώσῃ.",
+        "VUL": "nequando polluatur in virginitate sua,/ et in paternis suis gravida inveniatur :/ ne forte cum viro commorata transgrediatur,/ aut certe sterilis efficiatur./",
+        "SYN": "в девстве - как бы не осквернилась и не сделалась беременною в отцовском доме, в замужестве - чтобы не нарушила супружеской верности и в сожительстве с мужем не осталась бесплодною.",
+        "NEO": "vierge, elle pourrait se laisser séduire, et devenir enceinte dans la maison paternelle ; avec un mari, peut-être sera-t-elle infidèle, et, habitant avec lui, peut-être restera-t-elle stérile.",
+        "NAB": "While unmarried, lest she be seduced, or, as a wife, lest she prove unfaithful; Lest she conceive in her father's home, or be sterile in that of her husband.",
+        "VAT_ES": "Mientras es virgen, puede ser violada y quedar embarazada en la casa paterna. Si tiene marido, puede ser infiel, si ya convive, puede ser estéril.",
+        "CEI": "Finché è ragazza, si teme che sia sedotta e che resti incinta nella casa paterna; quando è con un marito, che cada in colpa, quando è accasata, che sia sterile."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἐπὶ θυγατρὶ ἀδιατρέπτῳ στερέωσον φυλακήν, μή ποτε ποιήσῃ σε ἐπίχαρμα ἐχθροῖς, λαλιὰν ἐν πόλει καὶ ἔκκλητον λαοῦ, καὶ καταισχυνεῖ σε ἐν πλήθει πολλῶν.",
+        "VUL": "Super filiam luxuriosam confirma custodiam,/ nequando faciat te in opprobrium venire inimicis,/ a detractione in civitate, et objectione plebis,/ et confundat te in multitudine populi./",
+        "SYN": "Над бесстыдною дочерью усиль надзор, чтобы она не сделала тебя посмешищем для врагов, притчею в городе и упреком в народе и не осрамила тебя пред обществом.",
+        "NEO": "A l’égard d’une fille opiniâtre, exerce une sévère vigilance de peur qu’elle ne fasse de toi la risée de tes ennemis, la fable de la ville et l’objet des propos publics, et ne te déshonore au milieu de tout le peuple.",
+        "NAB": "Keep a close watch on your daughter, lest she make you the sport of your enemies, A byword in the city, a reproach among the people, an object of derision in public gatherings. See that there is no lattice in her room, no place that overlooks the approaches to the house.",
+        "VAT_ES": "Si tu hija es atrevida, vigílala bien, no sea que te convierta en la burla de tus enemigos, en la habladuría de la ciudad y el comentario de la gente, y te cubra de verg&uuml;enza a los ojos de todos.",
+        "CEI": "Su una figlia indocile rafforza la vigilanza, perché non ti renda scherno dei nemici, oggetto di chiacchiere in città e favola della gente, sì da farti vergognare davanti a tutti."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "παντὶ ἀνθρώπῳ μὴ ἔμβλεπε ἐν κάλλει, καὶ ἐν μέσῳ γυναικῶν μὴ συνέδρευε·",
+        "VUL": "Omni homini noli intendere in specie,/ et in medio mulierum noli commorari :/",
+        "SYN": "Не смотри на красоту человека и не сиди среди женщин:",
+        "NEO": "Ne regarde pas à la beauté de tout homme, et ne t’assieds pas au milieu des femmes ;",
+        "NAB": "Let her not parade her charms before men, or spend her time with married women;",
+        "VAT_ES": "No fijes tus ojos en la belleza de nadie ni trates con familiaridad a las mujeres.",
+        "CEI": "Non mostri la sua bellezza a qualsiasi uomo, non segga a ciarlare insieme con le altre donne,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "ἀπὸ γὰρ ἱματίων ἐκπορεύεται σής, καὶ ἀπὸ γυναικὸς πονηρία γυναικός.",
+        "VUL": "de vestimentis enim procedit tinea,/ et a muliere iniquitas viri./",
+        "SYN": "ибо как из одежд выходит моль, так от женщины - лукавство женское.",
+        "NEO": "car des vêtements sort la teigne, et de la femme la malice féminine.",
+        "NAB": "For just as moths come from garments, so harm to women comes from women:",
+        "VAT_ES": "Porque de la ropa sale la polilla y de la mujer, una malicia de mujer.",
+        "CEI": "perché dagli abiti esce fuori la tignola e dalla donna malizia di donna."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "κρείσσων πονηρία ἀνδρὸς ἢ ἀγαθοποιὸς γυνή, καὶ γυνὴ καταισχύνουσα εἰς ὀνειδισμόν.",
+        "VUL": "Melior est enim iniquitas viri quam mulier benefaciens,/ et mulier confundens in opprobrium.]",
+        "SYN": "Лучше злой мужчина, нежели ласковая женщина, - женщина, которая стыдит до поношения.",
+        "NEO": "Un homme méchant vaut mieux qu’une femme caressante, car la femme couvre d’opprobre et de honte.",
+        "NAB": "Better a man's harshness than a woman's indulgence, and a frightened daughter than any disgrace.",
+        "VAT_ES": "Más vale malicia de hombre que bondad de mujer: una mujer averg&uuml;enza hasta la ignominia.",
+        "CEI": "Meglio la cattiveria di un uomo che la bontà di una donna, una donna che porta vergogna fino allo scherno."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "Μνησθήσομαι δὲ τὰ ἔργα Κυρίου, καὶ ἃ ἑόρακα ἐκδιηγήσομαι· ἐν λόγοις Κυρίου τὰ ἔργα αὐτοῦ.",
+        "VUL": "[Memor ero igitur operum Domini,/ et quæ vidi annuntiabo./ In sermonibus Domini opera ejus./",
+        "SYN": "Воспомяну теперь о делах Господа и расскажу о том, что я видел. По слову Господа явились дела Его:",
+        "NEO": "Je vais rappeler les œuvres du Seigneur, et publier ce que j’ai vu. C’est par la parole du Seigneur que ses œuvres ont été faites.",
+        "NAB": "Now will I recall God's works; what I have seen, I will describe. At God's word were his works brought into being; they do his will as he has ordained for them.",
+        "VAT_ES": "Ahora voy a recordar las obras del Señor, lo que yo he visto, lo voy a relatar: por las palabras del Señor existen sus obras.",
+        "CEI": "Ricorderò ora le opere del Signore e descriverò quanto ho visto. Con le parole del Signore sono state create le sue opere."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ἥλιος φωτίζων κατὰ πᾶν ἐπέβλεψεν, καὶ τῆς δόξης αὐτοῦ πλῆρες τὸ ἔργον αὐτοῦ.",
+        "VUL": "Sol illuminans per omnia respexit,/ et gloria Domini plenum est opus ejus./",
+        "SYN": "сияющее солнце смотрит на все, и все дело его полно славы Господней.",
+        "NEO": "Le soleil qui les éclaire les contemple toutes ; ouvrage du Seigneur, il est rempli de sa gloire.",
+        "NAB": "As the rising sun is clear to all, so the glory of the LORD fills all his works;",
+        "VAT_ES": "El sol resplandeciente contempla todas las cosas, y la obra del Señor está llena de su gloria.",
+        "CEI": "Il sole con il suo splendore illumina tutto, della gloria del Signore è piena la sua opera."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "οὐκ ἐνεποίησεν τοῖς ἁγίοις Κύριος ἐκδιηγήσασθαι πάντα τὰ θαυμάσια αὐτοῦ, ἃ ἐστερέωσεν Κύριος ὁ παντοκράτωρ, στηριχθῆναι ἐν δόξῃ αὐτοῦ τὸ πᾶν.",
+        "VUL": "Nonne Dominus fecit sanctos enarrare omnia mirabilia sua,/ quæ confirmavit Dominus omnipotens stabiliri in gloria sua ?/",
+        "SYN": "И святым не предоставил Господь провозвестить о всех чудесах Его, которые утвердил Господь Вседержитель, чтобы вселенная стояла твердо во славу Его.",
+        "NEO": "Le Seigneur n’a pas rendu ses saints capables d’annoncer toutes ses merveilles, que le Seigneur tout-puissant a solidement établies, pour que tout l’univers soit affermi par sa gloire.",
+        "NAB": "Yet even God's holy ones must fail in recounting the wonders of the LORD, Though God has given these, his hosts, the strength to stand firm before his glory.",
+        "VAT_ES": "No ha sido posible a los santos del Señor relatar todas sus maravillas, las que el Señor todopoderoso estableció sólidamente para que el universo quedara afirmado en su gloria.",
+        "CEI": "Neppure i santi del Signore sono in grado di narrare tutte le sue meraviglie, ciò che il Signore onnipotente ha stabilito perché l'universo stesse saldo a sua gloria."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "ἄβυσσον καὶ καρδίαν ἐξίχνευσεν, καὶ ἐν πανουργεύμασιν αὐτῶν διενοήθην· ἔγνω γὰρ ὁ κύριος πᾶσαν εἴδησιν καὶ ἐνέβλεψεν εἰς σημεῖον αἰῶνος,",
+        "VUL": "Abyssum et cor hominum investigavit,/ et in astutia eorum excogitavit./",
+        "SYN": "Он проникает бездну и сердце и видит все изгибы их; ибо Господь знает всякое ведение и прозирает в знамения века,",
+        "NEO": "Il sonde les profondeurs de l’océan et le cœur des hommes, et il connaît leurs desseins les plus subtils. Car le Seigneur possède toute science, et il voit les signes du temps.",
+        "NAB": "He plumbs the depths and penetrates the heart; their innermost being he understands. The Most High possesses all knowledge, and sees from of old the things that are to come:",
+        "VAT_ES": "El sondea el abismo y el corazón, y penetra en sus secretos designios, porque el Altísimo posee todo el conocimiento y observa los signos de los tiempos.",
+        "CEI": "Egli scruta l'abisso e il cuore e penetra tutti i loro segreti. L'Altissimo conosce tutta la scienza e osserva i segni dei tempi,"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ἀπαγγέλλων τὰ παρεληλυθότα καὶ ἐπεσόμενα, καὶ ἀποκαλύπτων ἴχνη ἀποκρύφων·",
+        "VUL": "Cognovit enim Dominus omnem scientiam,/ et inspexit in signum ævi,/ annuntians quæ præterierunt et quæ superventura sunt,/ revelans vestigia occultorum./",
+        "SYN": "возвещая прошедшее и будущее и открывая следы сокровенного;",
+        "NEO": "Il annonce le passé et l’avenir, et il dévoile les traces des choses cachées.",
+        "NAB": "He makes known the past and the future, and reveals the deepest secrets.",
+        "VAT_ES": "El anuncia el pasado y el futuro, y revela las huellas de las cosas ocultas:",
+        "CEI": "annunziando le cose passate e future e svelando le tracce di quelle nascoste."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "οὐ παρῆλθεν αὐτὸν πᾶν διανόημα, οὐκ ἐκρύβη ἀπ’ αὐτοῦ οὐδὲ εἷς λόγος.",
+        "VUL": "Non præterit illum omnis cogitatus,/ et non abscondit se ab eo ullus sermo./",
+        "SYN": "не минует Его никакое помышление и не утаится от Него ни одно слово.",
+        "NEO": "Aucune pensée ne lui échappe, aucune parole n’est cachée pour lui.",
+        "NAB": "No understanding does he lack; no single thing escapes him.",
+        "VAT_ES": "ningún pensamiento se le escapa, ninguna palabra se le oculta.",
+        "CEI": "Nessun pensiero gli sfugge, neppure una parola gli è nascosta."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "τὰ μεγαλεῖα τῆς σοφίας αὐτοῦ ἐκόσμησεν· καὶ ἕως ἔστιν πρὸ τοῦ αἰῶνος καὶ εἰς τὸν αἰῶνα, οὔτε προσετέθη οὔτε ἠλαττώθη, καὶ οὐ προσεδεήθη οὐδενὸς συμβούλου.",
+        "VUL": "Magnalia sapientiæ suæ decoravit,/ qui est ante sæculum et usque in sæculum :/ neque adjectum est,/",
+        "SYN": "Он устроил великие дела Своей премудрости и пребывает прежде века и вовек;",
+        "NEO": "Il a orné les grandes œuvres de sa sagesse ; il est avant tous les siècles, et il subsistera à jamais ; rien n’a été ajouté à son être, et il n’en a été rien ôté ; et il n’a eu besoin d’aucun conseiller.",
+        "NAB": "Perennial is his almighty wisdom; he is from all eternity one and the same,",
+        "VAT_ES": "El dispuso ordenadamente las grandes obras de su sabiduría, porque existe desde siempre y siempre; nada ha sido añadido, nada ha sido quitado, y él no tuvo necesidad de ningún consejero.",
+        "CEI": "Ha ordinato le meraviglie della sua sapienza, poiché egli è da sempre e per sempre. Nulla può essergli aggiunto e nulla tolto, non ha bisogno di alcun consigliere."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ὡς πάντα τὰ ἔργα αὐτοῦ ἐπιθυμητά, καὶ ὡς σπινθῆρός ἐστιν θεωρῆσαι.",
+        "VUL": "neque minuitur,/ et non eget alicujus consilio./",
+        "SYN": "Он не увеличился и не умалился и не требовал никакого советника.",
+        "NEO": "Comme toutes ses œuvres sont belles ! Et ce qu’on en contemple n’est qu’une étincelle.",
+        "NAB": "With nothing added, nothing taken away; no need of a counselor for him!",
+        "VAT_ES": "&iexcl;Qué deseables son todas sus obras! Y lo que vemos es apenas una chispa!",
+        "CEI": "Quanto sono amabili tutte le sue opere! E appena una scintilla se ne può osservare."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "πάντα ταῦτα ζῇ καὶ μένει εἰς τὸν αἰῶνα ἐν πάσαις χρείαις, καὶ πάντα ὑπακούει·",
+        "VUL": "Quam desiderabilia omnia opera ejus !/ et tamquam scintilla quæ est considerare !/",
+        "SYN": "Как вожделенны все дела Его, хотя мы можем видеть их как только искры!",
+        "NEO": "Tout est vivant et demeure à jamais, pour tous les usages, et tout obéit au Créateur.",
+        "NAB": "How beautiful are all his works! even to the spark and the fleeting vision!",
+        "VAT_ES": "Todo tiene vida y permanece para siempre, y todo obedece a un fin determinado.",
+        "CEI": "Tutte queste cose vivono e resteranno per sempre in tutte le circostanze e tutte gli obbediscono."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "πάντα δισσὰ ἓν κατέναντι τοῦ ἑνός, καὶ οὐκ ἐποίησεν οὐδὲν ἐκλιπόν·",
+        "VUL": "Omnia hæc vivunt, et manent in sæculum,/ et in omni necessitate omnia obaudiunt ei./",
+        "SYN": "Все они живут и пребывают вовек для всяких потребностей, и все повинуются Ему.",
+        "NEO": "Tout est par couple, un individu en face d’un autre, et il n’a rien fait qui aille à la ruine.",
+        "NAB": "The universe lives and abides forever; to meet each need, each creature is preserved.",
+        "VAT_ES": "Todas las cosas van en pareja, una frente a otra, y él no ha hecho nada incompleto:",
+        "CEI": "Tutte sono a coppia, una di fronte all'altra, egli non ha fatto nulla di incompleto."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "ἓν τοῦ ἑνὸς ἐστερέωσεν τὰ ἀγαθά, καὶ τίς πλησθήσεται ὁρῶν δόξαν αὐτοῦ;",
+        "VUL": "Omnia duplicia, unum contra unum,/ et non fecit quidquam deesse./",
+        "SYN": "Все они - вдвойне, одно напротив другого, и ничего не сотворил Он несовершенным:",
+        "NEO": "L’un assure le bonheur de l’autre : qui pourra se rassasier de voir la gloire du Seigneur ?",
+        "NAB": "All of them differ, one from another, yet none of them has he made in vain, For each in turn, as it comes, is good; can one ever see enough of their splendor?",
+        "VAT_ES": "una cosa asegura el bien de la otra. &iquest;Quién se saciará de ver su gloria?",
+        "CEI": "L'una conferma i meriti dell'altra, chi si sazierà nel contemplare la sua gloria?"
+      }
+    }
+  }
+}

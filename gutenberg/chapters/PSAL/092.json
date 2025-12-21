@@ -1,0 +1,254 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_092",
+  "book_key": "PSAL",
+  "sequence": 92,
+  "chapter_in": {
+    "MT": 92,
+    "VUL": 91,
+    "LXX": 91
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מִזְמ֥וֹר שִׁ֗יר לְ/י֣וֹם הַ/שַּׁבָּֽת׃",
+        "LXX": "Εἰς τὴν ἡμέραν τοῦ προσαββάτου, ὅτε κατῴκισται ἡ γῆ· αἶνος ᾠδῆς τῷ Δαυείδ. Κύριος ἐβασίλευσεν, εὐπρέπειαν ἐνεδύσατο· ἐνεδύσατο Κύριος δύναμιν καὶ περιεζώσατο, καὶ γὰρ ἐστερέωσεν τὴν οἰκουμένην, ἥτις οὐ σαλευθήσεται",
+        "VUL": "Laus cantici ipsi David, in die ante sabbatum, quando fundata est terra. [Dominus regnavit, decorem indutus est :/ indutus est Dominus fortitudinem, et præcinxit se./ Etenim firmavit orbem terræ, qui non commovebitur./",
+        "SYN": "Господь царствует; Он облечен величием, облечен Господь могуществом [и] препоясан: потому вселенная тверда, не подвигнется.",
+        "NEO": "Psaume. Cantique pour le jour du sabbat.",
+        "NAB": "A psalm. A sabbath song.",
+        "CEI": "Salmo. Canto. Per il giorno del sabato."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "ט֗וֹב לְ/הֹד֥וֹת לַ/יהוָ֑ה וּ/לְ/זַמֵּ֖ר לְ/שִׁמְ/ךָ֣ עֶלְיֽוֹן׃",
+        "LXX": "ἕτοιμος ὁ θρόνος σου ἀπὸ τότε· ἀπὸ τοῦ αἰῶνος σὺ εἶ.",
+        "VUL": "Parata sedes tua ex tunc ;/ a sæculo tu es./",
+        "SYN": "Престол Твой утвержден искони: Ты - от века.",
+        "NEO": "Il est bon de louer \\+w Yahweh|strong=\"H3068\"\\+w**, et de célébrer ton nom, ô Très-Haut,",
+        "NAB": "It is good to give thanks to the LORD, to sing praise to your name, Most High,",
+        "VAT_ES": "Es bueno dar gracias al Señor,",
+        "CEI": "È bello dar lode al Signore e cantare al tuo nome, o Altissimo,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "לְ/הַגִּ֣יד בַּ/בֹּ֣קֶר חַסְֽדֶּ֑/ךָ וֶ֝/אֱמֽוּנָתְ/ךָ֗ בַּ/לֵּילֽוֹת׃",
+        "LXX": "ἐπῆραν οἱ ποταμοί, Κύριε, ἐπῆραν οἱ ποταμοὶ φωνὰς ⸆ αὐτῶν.",
+        "VUL": "Elevaverunt flumina, Domine,/ elevaverunt flumina vocem suam ;/ elevaverunt flumina fluctus suos,/",
+        "SYN": "Возвышают реки, Господи, возвышают реки голос свой, возвышают реки волны свои.",
+        "NEO": "de publier le matin ta bonté, et ta fidélité pendant la nuit,",
+        "NAB": "To proclaim your love in the morning, your faithfulness in the night,",
+        "VAT_ES": "proclamar tu amor de madrugada,",
+        "CEI": "annunziare al mattino il tuo amore, la tua fedeltà lungo la notte,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "עֲֽלֵי עָ֭שׂוֹר וַ/עֲלֵי נָ֑בֶל עֲלֵ֖י הִגָּי֣וֹן בְּ/כִנּֽוֹר׃",
+        "LXX": "ἀπὸ φωνῶν ὑδάτων πολλῶν θαυμαστοὶ οἱ μετεωρισμοὶ τῆς θαλάσσης· θαυμαστὸς ἐν ὑψηλοῖς ὁ κύριος.",
+        "VUL": "a vocibus aquarum multarum./ Mirabiles elationes maris ;/ mirabilis in altis Dominus./",
+        "SYN": "Но паче шума вод многих, сильных волн морских, силен в вышних Господь.",
+        "NEO": "sur l’instrument à dix cordes et sur le luth, avec les accords de la harpe.",
+        "NAB": "With the ten-stringed harp, with melody upon the lyre.",
+        "VAT_ES": "con el arpa de diez cuerdas y la lira,",
+        "CEI": "sull'arpa a dieci corde e sulla lira, con canti sulla cetra."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּ֤י שִׂמַּחְתַּ֣/נִי יְהוָ֣ה בְּ/פָעֳלֶ֑/ךָ בְּֽ/מַעֲשֵׂ֖י יָדֶ֣י/ךָ אֲרַנֵּֽן׃",
+        "LXX": "τὰ μαρτύριά σου ἐπιστώθησαν σφόδρα· τῷ οἴκῳ σου πρέπει ἁγίασμα, Κύριε, εἰς μακρότητα ἡμερῶν.",
+        "VUL": "Testimonia tua credibilia facta sunt nimis ;/ domum tuam decet sanctitudo, Domine,/ in longitudinem dierum.]",
+        "SYN": "Откровения Твои несомненно верны. Дому Твоему, Господи, принадлежит святость на долгие дни.",
+        "NEO": "Tu me réjouis, \\+w Yahweh|strong=\"H3068\"\\+w**, par tes œuvres, et je tressaille devant les ouvrages de tes mains.",
+        "NAB": "For you make me jubilant, LORD, by your deeds; at the works of your hands I shout for joy.",
+        "VAT_ES": "Tú me alegras, Señor, con tus acciones,",
+        "CEI": "Poiché mi rallegri, Signore, con le tue meraviglie, esulto per l'opera delle tue mani."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "מַה גָּדְל֣וּ מַעֲשֶׂ֣י/ךָ יְהוָ֑ה מְ֝אֹ֗ד עָמְק֥וּ מַחְשְׁבֹתֶֽי/ךָ׃",
+        "NEO": "Que tes œuvres sont grandes, \\+w Yahweh|strong=\"H3068\"\\+w**, que tes pensées sont profondes !",
+        "NAB": "How great are your works, LORD! How profound your purpose!",
+        "VAT_ES": "&iexcl;Qué grandes son tus obras, Señor,",
+        "CEI": "Come sono grandi le tue opere, Signore, quanto profondi i tuoi pensieri!"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אִֽישׁ בַּ֭עַר לֹ֣א יֵדָ֑ע וּ֝/כְסִ֗יל לֹא יָבִ֥ין אֶת זֹֽאת׃",
+        "NEO": "L’homme stupide n’y connaît rien, et l’insensé n’y peut rien comprendre.",
+        "NAB": "A senseless person cannot know this; a fool cannot comprehend.",
+        "VAT_ES": "El hombre insensato no conoce",
+        "CEI": "L'uomo insensato non intende e lo stolto non capisce:"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "בִּ/פְרֹ֤חַ רְשָׁעִ֨ים כְּמ֥וֹ עֵ֗שֶׂב וַ֭/יָּצִיצוּ כָּל פֹּ֣עֲלֵי אָ֑וֶן לְ/הִשָּֽׁמְדָ֥/ם עֲדֵי עַֽד׃",
+        "NEO": "Quand les méchants croissent comme l’herbe, et que fleurissent tous ceux qui font le mal, c’est pour être exterminés à jamais.",
+        "NAB": "Though the wicked flourish like grass and all sinners thrive, They are destined for eternal destruction;",
+        "VAT_ES": "Si los impíos crecen como la hierba",
+        "CEI": "se i peccatori germogliano come l'erba e fioriscono tutti i malfattori, li attende una rovina eterna:"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֥ה מָר֗וֹם לְ/עֹלָ֥ם יְהוָֽה׃",
+        "NEO": "Mais toi, tu es élevé pour l’éternité, \\+w Yahweh|strong=\"H3068\"\\+w** !",
+        "NAB": "for you, LORD, are forever on high.",
+        "VAT_ES": "tú, en cambio, eres el Excelso para siempre.",
+        "CEI": "ma tu sei l'eccelso per sempre, o Signore."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּ֤י הִנֵּ֪ה אֹיְבֶ֡י/ךָ יְֽהוָ֗ה כִּֽי הִנֵּ֣ה אֹיְבֶ֣י/ךָ יֹאבֵ֑דוּ יִ֝תְפָּרְד֗וּ כָּל פֹּ֥עֲלֵי אָֽוֶן׃",
+        "NEO": "Car voici que tes ennemis, \\+w Yahweh|strong=\"H3068\"\\+w**, voici que tes ennemis périssent, tous ceux qui font le mal sont dispersés.",
+        "NAB": "Indeed your enemies, LORD, indeed your enemies shall perish; all sinners shall be scattered.",
+        "VAT_ES": "Mira, Señor, cómo perecen tus enemigos",
+        "CEI": "Ecco, i tuoi nemici, o Signore, ecco, i tuoi nemici periranno, saranno dispersi tutti i malfattori."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/תָּ֣רֶם כִּ/רְאֵ֣ים קַרְנִ֑/י בַּ֝לֹּתִ֗י בְּ/שֶׁ֣מֶן רַעֲנָֽן׃",
+        "NEO": "Et tu élèves ma corne, comme celle du buffle, je suis arrosé avec une huile fraîche.",
+        "NAB": "You have given me the strength of a wild bull; you have poured rich oil upon me.",
+        "VAT_ES": "Pero a mí me das la fuerza de un toro salvaje",
+        "CEI": "Tu mi doni la forza di un bùfalo, mi cospargi di olio splendente."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/תַּבֵּ֥ט עֵינִ֗/י בְּ/שׁ֫וּרָ֥/י בַּ/קָּמִ֖ים עָלַ֥/י מְרֵעִ֗ים תִּשְׁמַ֥עְנָה אָזְנָֽ/י׃",
+        "NEO": "Mon œil se plaît à contempler mes ennemis, et mon oreille à entendre les méchants qui s’élèvent contre moi.",
+        "NAB": "My eyes look with glee on my wicked enemies; my ears delight in the fall of my foes.",
+        "VAT_ES": "Mis ojos han desafiado a mis calumniadores,",
+        "CEI": "I miei occhi disprezzeranno i miei nemici, e contro gli iniqui che mi assalgono i miei orecchi udranno cose infauste."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "צַ֭דִּיק כַּ/תָּמָ֣ר יִפְרָ֑ח כְּ/אֶ֖רֶז בַּ/לְּבָנ֣וֹן יִשְׂגֶּֽה׃",
+        "NEO": "Le juste croîtra comme le palmier, il s’élèvera comme le cèdre du Liban.",
+        "NAB": "The just shall flourish like the palm tree, shall grow like a cedar of Lebanon.",
+        "VAT_ES": "El justo florecerá como la palmera,",
+        "CEI": "Il giusto fiorirà come palma, crescerà come cedro del Libano;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "שְׁ֭תוּלִים בְּ/בֵ֣ית יְהוָ֑ה בְּ/חַצְר֖וֹת אֱלֹהֵ֣י/נוּ יַפְרִֽיחוּ׃",
+        "NEO": "Plantés dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, ils fleuriront dans les parvis de notre Dieu.",
+        "NAB": "Planted in the house of the LORD, they shall flourish in the courts of our God.",
+        "VAT_ES": "trasplantado en la Casa del Señor,",
+        "CEI": "piantati nella casa del Signore, fioriranno negli atri del nostro Dio."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "ע֭וֹד יְנוּב֣וּ/ן בְּ/שֵׂיבָ֑ה דְּשֵׁנִ֖ים וְ/רַֽעֲנַנִּ֣ים יִהְיֽוּ׃",
+        "NEO": "Ils porteront encore des fruits dans la vieillesse ; ils seront pleins de sève et verdoyants,",
+        "NAB": "They shall bear fruit even in old age, always vigorous and sturdy,",
+        "VAT_ES": "En la vejez seguirá dando frutos,",
+        "CEI": "Nella vecchiaia daranno ancora frutti, saranno vegeti e rigogliosi,"
+      }
+    }
+  }
+}

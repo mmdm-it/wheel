@@ -1,0 +1,542 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_031",
+  "book_key": "ECCLU",
+  "sequence": 31,
+  "chapter_in": {
+    "MT": 31,
+    "VUL": 31,
+    "LXX": 31
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Κεναὶ ἐλπίδες καὶ ψευδεῖς ἀσυνέτῳ ἀνδρί, καὶ ἐνύπνια ἀναπτεροῦσιν ἄφρονας.",
+        "VUL": "[Vigilia honestatis tabefaciet carnes,/ et cogitatus illius auferet somnum./",
+        "SYN": "Бдительность над богатством изнуряет тело, и забота о нем отгоняет сон.",
+        "NEO": "Les veilles du riche consument les chairs, et les soucis lui enlèvent le sommeil.",
+        "NAB": "Keeping watch over riches wastes the flesh, and the care of wealth drives away rest.",
+        "VAT_ES": "Los desvelos del rico terminan por consumirlo y el afán de riquezas hace perder el sueño.",
+        "CEI": "L'insonnia per la ricchezza logora il corpo, l'affanno per essa distoglie il sonno."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ὡς δρασσόμενος σκιᾶς καὶ διώκων ἄνεμον, οὕτως ὁ ἐπέχων ἐνυπνίοις·",
+        "VUL": "Cogitatus præscientiæ avertit sensum,/ et infirmitas gravis sobriam facit animam./",
+        "SYN": "Бдительная забота не дает дремать, и тяжкая болезнь отнимает сон.",
+        "NEO": "Un souci perpétuel empêche le sommeil, comme une maladie grave le bannit.",
+        "NAB": "Concern for one's livelihood banishes slumber; more than a serious illness it disturbs repose.",
+        "VAT_ES": "La preocupación por el sustento no deja dormir, y priva del sueño más que una grave enfermedad.",
+        "CEI": "L'affanno della veglia tien lontano l'assopirsi, come una grave malattia bandisce il sonno."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "τοῦτο κατὰ τούτου ὅρασις ἐνυπνίων, κατέναντι προσώπου ὁμοίωμα προσώπου.",
+        "VUL": "Laboravit dives in congregatione substantiæ,/ et in requie sua replebitur bonis suis./",
+        "SYN": "Потрудился богатый при умножении имуществ - и в покое насыщается своими благами.",
+        "NEO": "Le riche travaille pour amasser des richesses, et, quand il se repose, il se rassasie de plaisirs.",
+        "NAB": "The rich man labors to pile up wealth, and his only rest is wanton pleasure;",
+        "VAT_ES": "El rico se fatiga por amontonar una fortuna, y si descansa, es para hartarse de placeres;",
+        "CEI": "Un ricco fatica nell'accumulare ricchezze e se smette, si ingolfa nei piaceri."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ἀπὸ ἀκαθάρτου τί καθαρισθήσεται; καὶ ἀπὸ ψευδοῦς τί ἀληθεύσει;",
+        "VUL": "Laboravit pauper in diminutione victus,/ et in fine inops fit./",
+        "SYN": "Потрудился бедный при недостатках в жизни - и в покое остается скудным.",
+        "NEO": "Le pauvre travaille, faute d’avoir de quoi vivre, et, quand il se repose, il manque de tout.",
+        "NAB": "The poor man toils for a meager subsistence, and if ever he rests, he finds himself in want.",
+        "VAT_ES": "el pobre se fatiga por amontonar una fortuna, y si descansa, cae en la indigencia.",
+        "CEI": "Un povero fatica nelle privazioni della vita e se smette, cade nell'indigenza."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "μαντεῖαι καὶ οἰωνισμοὶ καὶ ἐνύπνια μάταιά ἐστιν, καὶ ὡς ὠδινούσης φαντάζεται καρδία. ⸆",
+        "VUL": "Qui aurum diligit non justificabitur,/ et qui insequitur consumptionem replebitur ex ea./",
+        "SYN": "Любящий золото не будет прав, и кто гоняется за тлением, наполнится им.",
+        "NEO": "Celui qui aime l’or ne sera pas sans péché, et celui qui poursuit la corruption sera rassasié.",
+        "NAB": "The lover of gold will not be free from sin, for he who pursues wealth is led astray by it.",
+        "VAT_ES": "El que ama el oro nunca podrá ser justo, y el afán de lucro hace extraviar a un hombre.",
+        "CEI": "Chi ama l'oro non sarà esente da colpa, chi insegue il denaro per esso peccherà."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ἐὰν μὴ παρὰ Ὑψίστου ἀποσταλῇ ἐν ἐπισκοπῇ, μὴ δῷς εἰς αὐτὰ τὴν καρδίαν σου·",
+        "VUL": "Multi dati sunt in auri casus,/ et facta est in specie ipsius perditio illorum./",
+        "SYN": "Многие ради золота подверглись падению, и погибель их была пред лицем их;",
+        "NEO": "Beaucoup ont été livrés à la ruine à cause de l’or, et leur perte était devant eux.",
+        "NAB": "Many have been ensnared by gold, though destruction lay before their eyes;",
+        "VAT_ES": "Muchos acabaron en la ruina por culpa del oro y se enfrentaron con su propia perdición,",
+        "CEI": "Molti sono andati in rovina a causa dell'oro, il loro disastro era davanti a loro."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "πολλοὺς ἐπλάνησεν τὰ ἐνύπνια, καὶ ἐξέπεσον ἐλπίζοντες ἐπ’ αὐτοῖς.",
+        "VUL": "Lignum offensionis est aurum sacrificantium :/ væ illis qui sectantur illud !/ et omnis imprudens deperiet in illo./",
+        "SYN": "оно - дерево преткновения для приносящих ему жертвы, и всякий несмысленный будет уловлен им.",
+        "NEO": "L’or est un bois de scandale pour ceux qui lui sacrifient ; tout insensé y sera pris.",
+        "NAB": "It is a stumbling block to those who are avid for it, a snare for every fool.",
+        "VAT_ES": "porque el oro es una trampa para los que se enloquecen por él, y todos los insensatos se dejan atrapar.",
+        "CEI": "È una trappola per quanti ne sono entusiasti, ogni insensato vi resta preso."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "ἄνευ ψεύδους συντελεσθήσεται νόμος, καὶ σοφία στόματι πιστῷ τελείωσις.",
+        "VUL": "Beatus dives qui inventus est sine macula,/ et qui post aurum non abiit,/ nec speravit in pecunia et thesauris./",
+        "SYN": "Счастлив богач, который оказался безукоризненным и который не гонялся за золотом.",
+        "NEO": "Heureux le riche qui sera trouvé sans tache, et qui n’est pas allé après l’or !",
+        "NAB": "Happy the rich man found without fault, who turns not aside after gain!",
+        "VAT_ES": "&iexcl;Feliz el rico que se conserva íntegro y no corre detrás del oro!",
+        "CEI": "Beato il ricco, che si trova senza macchia e che non corre dietro all'oro."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "Ἀνὴρ πεπαιδευμένος ἔγνω πολλά, καὶ ὁ πολύπειρος ἐκδιηγήσεται σύνεσιν·",
+        "VUL": "Quis est hic ? et laudabimus eum :/ fecit enim mirabilia in vita sua./",
+        "SYN": "Кто он? и мы прославим его; ибо он сделал чудо в народе своем.",
+        "NEO": "Qui est-il, pour que nous le proclamions heureux ? Car il a fait une chose merveilleuse parmi son peuple.",
+        "NAB": "Who is he, that we may praise him? he, of all his kindred, has done wonders,",
+        "VAT_ES": "&iquest;Quién es él? Y lo felicitaremos porque ha hecho maravillas en su pueblo.",
+        "CEI": "Chi è costui? noi lo proclameremo beato: difatti egli ha compiuto meraviglie in mezzo al suo popolo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ὃς οὐκ ἐπειράθη ὀλίγα οἶδεν,",
+        "VUL": "Qui probatus est in illo, et perfectus est, erit illi gloria æterna :/ qui potuit transgredi, et non est transgressus ;/ facere mala, et non fecit./",
+        "SYN": "Кто был искушаем золотом - и остался непорочным? Да будет это в похвалу ему.",
+        "NEO": "Quel est celui qui a été éprouvé à ce sujet et trouvé sans reproche ? Que cette épreuve lui soit un sujet de gloire ! Qui a pu violer la loi et ne l’a pas violée, faire le mal et ne l’a pas fait ?",
+        "NAB": "For he has been tested by gold and come off safe, and this remains his glory; He could have sinned but did not, could have done evil but would not,",
+        "VAT_ES": "&iquest;Quién pasó por esta prueba y demostró ser perfecto? Tiene un buen motivo para gloriarse. &iquest;Quién pudo transgredir y no transgredió, hacer el mal y no lo hizo?",
+        "CEI": "Chi ha subìto la prova, risultando perfetto? Sarà un titolo di gloria per lui. Chi, potendo trasgredire, non ha trasgredito, e potendo compiere il male, non lo ha fatto?"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ὁ δὲ πεπλανημένος πληθυνεῖ πανουργίαν.",
+        "VUL": "Ideo stabilita sunt bona illius in Domino,/ et eleemosynas illius enarrabit omnis ecclesia sanctorum.]",
+        "SYN": "Кто мог погрешить - и не погрешил, сделать зло - и не сделал?",
+        "NEO": "Sa fortune sera affermie, et l’assemblée publiera ses bienfaits.",
+        "NAB": "So that his possessions are secure, and the assembly recounts his praises.",
+        "VAT_ES": "Sus bienes estarán asegurados y la asamblea publicará sus beneficios.",
+        "CEI": "Si consolideranno i suoi beni e l'assemblea celebrerà le sue beneficenze."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "πολλὰ ἑώρακα ἐν τῇ ἀποπλανήσει μου, καὶ πλείονα τῶν λόγων μου σύνεσίς μου·",
+        "VUL": "[Supra mensam magnam sedisti ?/ non aperias super illam faucem tuam prior./",
+        "SYN": "Прочно будет богатство его, и о милостынях его будет возвещать собрание.",
+        "NEO": "As-tu pris place à une table bien servie, n’ouvre pas la bouche devant elle, et ne dis pas : « Il y a sur elle bien des mets. »",
+        "NAB": "If you are dining with a great man, bring not a greedy gullet to his table, Nor cry out, \"How much food there is here!\"",
+        "VAT_ES": "&iquest;Estás sentado a la mesa de un grande? No digas, relamiéndote los labios: «&iexcl;Cuántas cosas hay aquí!».",
+        "CEI": "Hai davanti una tavola sontuosa? Non spalancare verso di essa la tua bocca e non dire: \"Che abbondanza qua sopra\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "πλεονάκις ἕως θανάτου ἐκινδύνευσα, καὶ διεσώθην τούτων χάριν.",
+        "VUL": "Non dicas sic : Multa sunt, quæ super illam sunt./",
+        "SYN": "Когда ты сядешь за богатый стол, не раскрывай на него гортани твоей",
+        "NEO": "Souviens-toi que l’œil envieux est chose mauvaise ; rien a-t-il été créé de plus mauvais que l’œil envieux ? Aussi pleure-t-il de tout visage.",
+        "NAB": "Remember that gluttony is evil. No creature is greedier than the eye: therefore it weeps for any cause.",
+        "VAT_ES": "Acuérdate que está mal tener un ojo ávido: &iquest;ha sido creado algo peor que el ojo? Por eso derrama lágrimas por cualquier cosa.",
+        "CEI": "Ricòrdati che l'occhio cattivo è un male. Che cosa è stato creato peggiore dell'occhio? Per questo esso lacrima in ogni circostanza."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "πνεῦμα φοβουμένων Κύριον ζήσεται,",
+        "VUL": "Memento quoniam malus est oculus nequam./",
+        "SYN": "и не говори: \"много же на нем!\" Помни, что алчный глаз - злая вещь.",
+        "NEO": "Où il regarde, n’étends pas la main, et ne te heurte pas avec lui dans le plat.",
+        "NAB": "Toward what he eyes, do not put out a hand; nor reach when he does for the same dish.",
+        "VAT_ES": "No extiendas la mano a todo lo que veas, para no tropezar con tu vecino en el plato.",
+        "CEI": "Dove guarda l'ospite, non stendere la mano; non intingere nel piatto insieme con lui."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ἡ γὰρ ἐλπὶς αὐτῶν ἐπὶ τὸν σώζοντα αὐτούς·",
+        "VUL": "Nequius oculo quid creatum est ?/ ideo ab omni facie sua lacrimabitur, cum viderit./",
+        "SYN": "Что из сотворенного завистливее глаза? Потому он плачет о всем, что видит.",
+        "NEO": "Juge des désirs du prochain d’après toi-même, et agis en toutes choses avec réflexion.",
+        "NAB": "Recognize that your neighbor feels as you do, and keep in mind your own dislikes:",
+        "VAT_ES": "Juzga al prójimo por lo que tú mismo sientes y reflexiona siempre que hagas algo.",
+        "CEI": "Giudica le esigenze del prossimo dalle tue; e su ogni cosa rifletti."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ὁ φοβούμενος Κύριον οὐ μὴ εὐλαβηθήσεται, καὶ οὐ μὴ δειλιάσει, ὅτι αὐτὸς ἐλπὶς αὐτοῦ.",
+        "VUL": "Ne extendas manum tuam prior,/ et invidia contaminatus erubescas./",
+        "SYN": "Куда он посмотрит, не протягивай руки, и не сталкивайся с ним в блюде.",
+        "NEO": "Mange, comme il convient à un homme, de ce qui est devant toi, et ne mâche pas avec bruit, de peur d’inspirer du dégoût.",
+        "NAB": "Behave at table like a favored guest, and be not greedy, lest you be despised.",
+        "VAT_ES": "Come como persona educada lo que pongan delante y no mastiques ruidosamente, para no hacer odioso.",
+        "CEI": "Mangia da uomo ciò che ti è posto innanzi; non masticare con voracità per non renderti odioso."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "φοβουμένου τὸν κύριον μακαρία ἡ ψυχή·",
+        "VUL": "Ne comprimaris in convivio./",
+        "SYN": "Суди о ближнем по себе и о всяком действии рассуждай.",
+        "NEO": "Cesse le premier par bonne éducation, et ne te montre pas insatiable, de peur de scandaliser.",
+        "NAB": "Be the first to stop, as befits good manners; gorge not yourself, lest you give offense.",
+        "VAT_ES": "Sé el primero en dejar de comer, por buena educación, y no seas insaciable, para no chocar.",
+        "CEI": "Sii il primo a smettere per educazione, non essere ingordo per non incorrere nel disprezzo."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "τίνι ἐπέχει; καὶ τίς ἀντιστήριγμα αὐτοῦ;",
+        "VUL": "Intellige quæ sunt proximi tui ex teipso./",
+        "SYN": "Ешь, как человек, что тебе предложено, и не пресыщайся, чтобы не возненавидели тебя;",
+        "NEO": "Si tu es assis en nombreuse compagnie, n’étends pas la main avant les autres.",
+        "NAB": "If there are many with you at table, be not the first to reach out your hand.",
+        "VAT_ES": "Si estás sentado entre muchos comensales, no extiendas tu mano antes que los demás.",
+        "CEI": "Se siedi tra molti invitati, non essere il primo a stendere la mano."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "οἱ ὀφθαλμοὶ Κυρίου ἐπὶ τοὺς ἀγαπῶντας αὐτόν, ὑπερασπισμὸς δυναστείας καὶ στήριγμα ἰσχύος, σκέπη ἀπὸ καύσωνος καὶ σκέπη ἀπὸ μεσημβρίας, φυλακὴ ἀπὸ προσκόμματος καὶ βοήθεια ἀπὸ πτώματος·",
+        "VUL": "Utere quasi homo frugi his quæ tibi apponuntur :/ ne, cum manducas multum, odio habearis./",
+        "SYN": "переставай есть первый из вежливости и не будь алчен, чтобы не послужить соблазном;",
+        "NEO": "Qu’il suffit de peu à un homme bien élevé ! Aussi, sur sa couche, il respire librement.",
+        "NAB": "Does not a little suffice for a well-bred man? When he lies down, it is without discomfort.",
+        "VAT_ES": "&iexcl;Qué poco le basta a un hombre bien educado! Por eso no se sofoca cuando está en su lecho.",
+        "CEI": "Quanto poco è sufficiente per un uomo educato, una volta a letto non si sente soffocato."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ἀνυψῶν ψυχὴν καὶ φωτίζων ὀφθαλμούς, ἴασιν διδοὺς ζωὴν καὶ εὐλογίαν.",
+        "VUL": "Cessa prior causa disciplinæ :/ et noli nimius esse, ne forte offendas./",
+        "SYN": "и если ты сядешь посреди многих, то не протягивай руки твоей прежде них.",
+        "NEO": "Le sommeil salutaire est pour l’estomac sobre ; on se lève matin et on a l’esprit à soi. Les douleurs de l’insomnie, les vomissements et la colique sont pour l’homme intempérant.",
+        "NAB": "Distress and anguish and loss of sleep, and restless tossing for the glutton! Moderate eating ensures sound slumber and a clear mind next day on rising.",
+        "VAT_ES": "A estómago sobrio, sueño saludable: uno se levanta temprano, y está bien despierto. Insomnio penoso, náuseas y cólicos: eso le espera al hombre insaciable.",
+        "CEI": "Sonno salubre con uno stomaco ben regolato, al mattino si alza e il suo spirito è libero. Travaglio di insonnia, coliche e vomiti accompagnano l'uomo ingordo."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "Θυσιάζων ἐξ ἀδίκου, προσφορὰ μεμωκημένη,",
+        "VUL": "Et si in medio multorum sedisti,/ prior illis ne extendas manum tuam,/ nec prior poscas bibere./",
+        "SYN": "Немногим довольствуется человек благовоспитанный, и потому он не страдает одышкою на своем ложе.",
+        "NEO": "Si tu as été amené à trop manger, lève-toi, promène-toi au large, et tu seras soulagé.",
+        "NAB": "If perforce you have eaten too much, once you have emptied your stomach, you will have relief.",
+        "VAT_ES": "Y si te han forzado a excedente en la comida, levántate, ve lejos a vomitar y sentirás alivio.",
+        "CEI": "Se sei stato forzato a eccedere nei cibi, àlzati, và a vomitare e sarai sollevato."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "καὶ οὐκ εἰς εὐδοκίαν μωκήματα ἀνόμων·",
+        "VUL": "Quam sufficiens est homini erudito vinum exiguum !/ et in dormiendo non laborabis ab illo,/ et non senties dolorem./",
+        "SYN": "Здоровый сон бывает при умеренности желудка: встал рано, и душа его с ним;",
+        "NEO": "Ecoute-moi, mon fils, et ne me méprise pas, et à la fin tu éprouveras la vérité de mes paroles : Dans toutes tes actions, sois diligent, et aucune maladie ne te surviendra.",
+        "NAB": "Listen to me, my son, and scorn me not; later you will find my advice good. In whatever you do, be moderate, and no sickness will befall you.",
+        "VAT_ES": "Escúchame, hijo mío, no me desprecies, y al final comprenderás mis palabras: sé moderado en todas tus acciones y nunca caerás enfermo.",
+        "CEI": "Ascoltami, figlio, e non disprezzarmi, alla fine troverai vere le mie parole. In tutte le azioni sii moderato e nessuna malattia ti coglierà."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "οὐκ εὐδοκεῖ ὁ ὕψιστος ἐν προσφοραῖς ἀσεβῶν, οὐδὲ ἐν πλήθει θυσιῶν ἐξιλάσκεται ἁμαρτίας.",
+        "VUL": "Vigilia, cholera et tortura viro infrunito,/",
+        "SYN": "страдание бессонницею и холера и резь в животе бывают у человека ненасытного.",
+        "NEO": "Les lèvres bénissent celui qui est libéral en ses repas, et le témoignage rendu à sa générosité est vrai.",
+        "NAB": "On a man generous with food, blessings are invoked, and this testimony to his goodness is lasting;",
+        "VAT_ES": "Los labios bendicen al que sirve bien de comer y el testimonio de su generosidad es digno de fe.",
+        "CEI": "Molte labbra loderanno chi è splendido nei banchetti, e vera è la testimonianza della sua munificenza."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "θύων υἱὸν ἔναντι τοῦ πατρὸς αὐτοῦ ὁ προσάγων θυσίαν ἐκ χρημάτων πενήτων.",
+        "VUL": "somnus sanitatis in homine parco :/ dormiet usque mane,/ et anima illius cum ipso delectabitur./",
+        "SYN": "Если ты обременил себя яствами, то встань из-за стола и отдохни.",
+        "NEO": "La ville murmure contre celui qui est avare en ses repas, et le témoignage rendu à son avarice est exact.",
+        "NAB": "He who is miserly with food is denounced in public, and this testimony to his stinginess is lasting.",
+        "VAT_ES": "La ciudad murmura del que mezquina el pan y el testimonio de su mezquindad es exacto.",
+        "CEI": "La città mormora di chi è tirchio nei banchetti; ed esatta è la testimonianza della sua avarizia."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "ἄρτος ἐπιδεομένων ζωὴ πτωχῶν, ὁ ἀποστερῶν αὐτὴν ἄνθρωπος αἱμάτων·",
+        "VUL": "Et si coactus fueris in edendo multum,/ surge e medio, evome, et refrigerabit te,/ et non adduces corpori tuo infirmitatem./",
+        "SYN": "Послушай меня, сын мой, и не пренебреги мною, и впоследствии ты поймешь слова мои.",
+        "NEO": "Ne fais pas le brave avec le vin, car le vin en a fait périr beaucoup.",
+        "NAB": "Let not wine-drinking be the proof of your strength, for wine has been the ruin of many.",
+        "VAT_ES": "No te hagas el valiente con el vino, porque el vino ha sido la perdición de muchos.",
+        "CEI": "Non fare il forte con il vino, perché ha mandato molti in rovina."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "φονεύων τὸν πλησίον ὁ ἀφαιρούμενος συμβίωσιν,",
+        "VUL": "Audi me, fili, et ne spernas me,/ et in novissimo invenies verba mea./",
+        "SYN": "Во всех делах твоих будь осмотрителен, и никакая болезнь не приключится тебе.",
+        "NEO": "La fournaise éprouve l’acier quand on le trempe ; de même le vin éprouve les cœurs quand les orgueilleux se querellent.",
+        "NAB": "As the furnace probes the work of the smith, so does wine the hearts of the insolent.",
+        "VAT_ES": "Como la fragua pone a prueba el temple del acero, el vino prueba al hombre en las disputas de los prepotentes.",
+        "CEI": "La fornace prova il metallo nella tempera, così il vino i cuori in una sfida di arroganti."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "καὶ ἐκχέων αἷμα ὁ ἀποστερῶν μισθὸν μισθίου.",
+        "VUL": "In omnibus operibus tuis esto velox,/ et omnis infirmitas non occurret tibi./",
+        "SYN": "Щедрого на хлебы будут благословлять уста, и свидетельство о доброте его - верно;",
+        "NEO": "Le vin est comme la vie pour l’homme, si tu le bois dans sa juste mesure. Quelle vie a celui qui manque de vin ? Et certes le vin a été fait pour réjouir les hommes.",
+        "NAB": "Wine is very life to man if taken in moderation. Does he really live who lacks the wine which was created for his joy?",
+        "VAT_ES": "El vino es como la vida para el hombre, siempre que se lo beba con moderación. &iquest;Qué es la vida cuando falta el vino? Porque él fue creado para alegría de los hombres.",
+        "CEI": "Il vino è come la vita per gli uomini, purché tu lo beva con misura. Che vita è quella di chi non ha vino? Questo fu creato per la gioia degli uomini."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "εἷς οἰκοδομῶν καὶ εἷς καθαιρῶν, τί ὠφέλησαν πλεῖον ἢ κόπου;",
+        "VUL": "Splendidum in panibus benedicent labia multorum,/ et testimonium veritatis illius fidele./",
+        "SYN": "против скупого на хлеб будет роптать город, и свидетельство о скупости его - справедливо.",
+        "NEO": "Allégresse du cœur et joie de l’âme, tel est le vin pris à temps, dans une juste mesure.",
+        "NAB": "Joy of heart, good cheer and merriment are wine drunk freely at the proper time.",
+        "VAT_ES": "Gozo del corazón y alegría del alma es el vino bebido a su tiempo y en la medida conveniente.",
+        "CEI": "Allegria del cuore e gioia dell'anima è il vino bevuto a tempo e a misura."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "εἷς εὐχόμενος καὶ εἷς καταρώμενος, τίνος φωνῆς εἰσακούσεται ὁ δεσπότης;",
+        "VUL": "Nequissimo in pane murmurabit civitas,/ et testimonium nequitiæ illius verum est./",
+        "SYN": "Против вина не показывай себя храбрым, ибо многих погубило вино.",
+        "NEO": "Amertume de l’âme est le vin bu en abondance, alors qu’on est excité et qu’on se dispute.",
+        "NAB": "Headache, bitterness and disgrace is wine drunk amid anger and strife.",
+        "VAT_ES": "Amargura del alma es el vino bebido en exceso, con ánimo de desafiar y provocar.",
+        "CEI": "Amarezza dell'anima è il vino bevuto in quantità, con eccitazione e per sfida."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "βαπτιζόμενος ἀπὸ νεκροῦ καὶ πάλιν ἁπτόμενος αὐτοῦ, τί ὠφέλησεν τῷ λουτρῷ αὐτοῦ;",
+        "VUL": "Diligentes in vino noli provocare :/ multos enim exterminavit vinum./",
+        "SYN": "Печь испытывает крепость лезвия закалкою; так вино испытывает сердца гордых - пьянством.",
+        "NEO": "L’ivresse échauffe la fureur de l’insensé et le fait tomber ; elle diminue les forces et amène des blessures.",
+        "NAB": "More and more wine is a snare for the fool; it lessens his strength and multiplies his wounds.",
+        "VAT_ES": "La embriaguez enfurece al necio hasta el escándalo, disminuye sus fuerzas y le provoca heridas.",
+        "CEI": "L'ubriachezza accresce l'ira dello stolto a sua rovina, ne diminuisce le forze e gli procura ferite."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "οὕτως ἄνθρωπος νηστεύων ἐπὶ τῶν ἁμαρτιῶν αὐτοῦ καὶ πάλιν πορευόμενος καὶ τὰ αὐτὰ ποιῶν· τῆς προσευχῆς αὐτοῦ τίς εἰσακούσεται; καὶ τί ὠφέλησεν ἐν τῷ ταπεινωθῆναι αὐτόν;",
+        "VUL": "Ignis probat ferrum durum :/ sic vinum corda superborum arguet in ebrietate potatum./",
+        "SYN": "Вино полезно для жизни человека, если будешь пить его умеренно.",
+        "NEO": "Dans un festin, ne fais pas de reproches au prochain, et ne le traite avec mépris pendant qu’il est dans la joie ; ne lui adresse pas de paroles injurieuses, et ne le presse pas, en lui redemandant quelque chose.",
+        "NAB": "Rebuke not your neighbor when wine is served, nor put him to shame while he is merry; Use no harsh words with him and distress him not in the presence of others.",
+        "VAT_ES": "Mientras se bebe vino, no reprendas a tu prójimo ni lo humilles si se pone alegre; no le dirijas palabras injuriosas ni lo importunes con reclamos.",
+        "CEI": "Durante un banchetto non rimproverare il vicino, non deriderlo nella sua letizia. Non dirgli parola di rimprovero e non tormentarlo col chiedergli ciò che ti deve."
+      }
+    }
+  }
+}

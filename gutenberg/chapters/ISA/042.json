@@ -1,0 +1,440 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_042",
+  "book_key": "ISA",
+  "sequence": 42,
+  "chapter_in": {
+    "MT": 42,
+    "VUL": 42,
+    "LXX": 42
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "הֵ֤ן עַבְדִּ/י֙ אֶתְמָךְ בּ֔/וֹ בְּחִירִ֖/י רָצְתָ֣ה נַפְשִׁ֑/י נָתַ֤תִּי רוּחִ/י֙ עָלָ֔י/ו מִשְׁפָּ֖ט לַ/גּוֹיִ֥ם יוֹצִֽיא׃",
+        "LXX": "Ἰακὼβ ὁ παῖς μου, ἀντιλήμψομαι αὐτοῦ· Ἰσραὴλ ὁ ἐκλεκτός μου, προσεδέξατο αὐτὸν ἡ ψυχή μου· ἔδωκα τὸ πνεῦμά μου ἐπ’ αὐτόν, κρίσιν τοῖς ἔθνεσιν ἐξοίσει·",
+        "VUL": "[Ecce servus meus, suscipiam eum ;/ electus meus, complacuit sibi in illo anima mea :/ dedi spiritum meum super eum :/ judicium gentibus proferet./",
+        "SYN": "Вот, Отрок Мой, Которого Я держу за руку, избранный Мой, к Которому благоволит душа Моя. Положу дух Мой на Него, и возвестит народам суд;",
+        "NEO": "Voici mon serviteur, que je soutiens, mon élu, en qui mon âme se complaît ; j’ai mis mon esprit sur lui ; il répandra la justice parmi les nations.",
+        "NAB": "Here is my servant whom I uphold, my chosen one with whom I am pleased, Upon whom I have put my spirit; he shall bring forth justice to the nations,",
+        "CEI": "Ecco il mio servo che io sostengo, il mio eletto di cui mi compiaccio. Ho posto il mio spirito su di lui; egli porterà il diritto alle nazioni."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "לֹ֥א יִצְעַ֖ק וְ/לֹ֣א יִשָּׂ֑א וְ/לֹֽא יַשְׁמִ֥יעַ בַּ/ח֖וּץ קוֹלֽ/וֹ׃",
+        "LXX": "οὐ κεκράξεται οὐδὲ ἀνήσει, οὐδὲ ἀκουσθήσεται ἔξω ἡ φωνὴ αὐτοῦ.",
+        "VUL": "Non clamabit, neque accipiet personam,/ nec audietur vox ejus foris./",
+        "SYN": "не возопиет и не возвысит голоса Своего, и не даст услышать его на улицах;",
+        "NEO": "Il ne criera point, il ne parlera pas haut, il ne fera pas entendre sa voix dans les rues.",
+        "NAB": "Not crying out, not shouting, not making his voice heard in the street.",
+        "CEI": "Non griderà né alzerà il tono, non farà udire in piazza la sua voce,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "קָנֶ֤ה רָצוּץ֙ לֹ֣א יִשְׁבּ֔וֹר וּ/פִשְׁתָּ֥ה כֵהָ֖ה לֹ֣א יְכַבֶּ֑/נָּה לֶ/אֱמֶ֖ת יוֹצִ֥יא מִשְׁפָּֽט׃",
+        "LXX": "κάλαμον τεθλασμένον οὐ συντρίψει, καὶ λίνον καπνιζόμενον οὐ σβέσει, ἀλλὰ εἰς ἀλήθειαν ἐξοίσει κρίσιν·",
+        "VUL": "Calamum quassatum non conteret,/ et linum fumigans non extinguet :/ in veritate educet judicium./",
+        "SYN": "трости надломленной не переломит, и льна курящегося не угасит; будет производить суд по истине;",
+        "NEO": "Il ne brisera pas le roseau froissé, et n’éteindra pas la mèche prête à mourir.",
+        "NAB": "A bruised reed he shall not break, and a smoldering wick he shall not quench,",
+        "CEI": "non spezzerà una canna incrinata, non spegnerà uno stoppino dalla fiamma smorta. Proclamerà il diritto con fermezza;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "לֹ֤א יִכְהֶה֙ וְ/לֹ֣א יָר֔וּץ עַד יָשִׂ֥ים בָּ/אָ֖רֶץ מִשְׁפָּ֑ט וּ/לְ/תוֹרָת֖/וֹ אִיִּ֥ים יְיַחֵֽילוּ׃",
+        "LXX": "ἀναλάμψει καὶ οὐ θραυσθήσεται, ἕως ἂν θῇ ἐπὶ τῆς γῆς κρίσιν· καὶ ἐπὶ τῷ ὀνόματι αὐτοῦ ἔθνη ἐλπιοῦσιν.",
+        "VUL": "Non erit tristis, neque turbulentus,/ donec ponat in terra judicium ;/ et legem ejus insulæ exspectabunt./",
+        "SYN": "не ослабеет и не изнеможет, доколе на земле не утвердит суда, и на закон Его будут уповать острова.",
+        "NEO": "il ne faiblira pas et ne se laissera pas abattre, jusqu’à ce qu’il ait établi la justice sur la terre, et les îles seront dans l’attente de sa loi.",
+        "NAB": "Until he establishes justice on the earth; the coastlands will wait for his teaching.",
+        "CEI": "non verrà meno e non si abbatterà, finché non avrà stabilito il diritto sulla terra; e per la sua dottrina saranno in attesa le isole."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כֹּֽה אָמַ֞ר הָ/אֵ֣ל יְהוָ֗ה בּוֹרֵ֤א הַ/שָּׁמַ֨יִם֙ וְ/נ֣וֹטֵי/הֶ֔ם רֹקַ֥ע הָ/אָ֖רֶץ וְ/צֶאֱצָאֶ֑י/הָ נֹתֵ֤ן נְשָׁמָה֙ לָ/עָ֣ם עָלֶ֔י/הָ וְ/ר֖וּחַ לַ/הֹלְכִ֥ים בָּֽ/הּ׃",
+        "LXX": "οὕτως λέγει Κύριος ὁ θεὸς ὁ ποιήσας τὸν οὐρανὸν καὶ πήξας αὐτόν, ὁ στερεώσας τὴν γῆν καὶ τὰ ἐν αὐτῇ, καὶ διδοὺς πνοὴν τῷ λαῷ τῷ ἐπ’ αὐτῆς καὶ πνεῦμα τοῖς πατοῦσιν αὐτήν.",
+        "VUL": "Hæc dicit Dominus Deus,/ creans cælos, et extendens eos ;/ firmans terram, et quæ germinant ex ea ;/ dans flatum populo qui est super eam,/ et spiritum calcantibus eam :/",
+        "SYN": "Так говорит Господь Бог, сотворивший небеса и пространство их, распростерший землю с произведениями ее, дающий дыхание народу на ней и дух ходящим по ней.",
+        "NEO": "Ainsi parle le Dieu \\+w Yahweh|strong=\"H3068\"\\+w**, qui a créé les cieux et les a déployés, qui a étendu la terre et ses productions, qui donne la respiration au peuple qui l’habite ; et le souffle à ceux qui la parcourent :",
+        "NAB": "Thus says God, the LORD, who created the heavens and stretched them out, who spreads out the earth with its crops, Who gives breath to its people and spirit to those who walk on it:",
+        "CEI": "Così dice il Signore Dio che crea i cieli e li dispiega, distende la terra con ciò che vi nasce, dà il respiro alla gente che la abita e l'alito a quanti camminano su di essa:"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אֲנִ֧י יְהוָ֛ה קְרָאתִ֥י/ךָֽ בְ/צֶ֖דֶק וְ/אַחְזֵ֣ק בְּ/יָדֶ֑/ךָ וְ/אֶצָּרְ/ךָ֗ וְ/אֶתֶּנְ/ךָ֛ לִ/בְרִ֥ית עָ֖ם לְ/א֥וֹר גּוֹיִֽם׃",
+        "LXX": "ἐγὼ Κύριος ὁ θεὸς ἐκάλεσά σε ἐν δικαιοσύνῃ, καὶ κρατήσω τῆς χειρός σου καὶ ἐνισχύσω σε, καὶ ἔδωκά σε εἰς διαθήκην γένους,",
+        "VUL": "Ego Dominus vocavi te in justitia,/ et apprehendi manum tuam,/ et servavi te :/ et dedi te in fdus populi,/ in lucem gentium,/",
+        "SYN": "Я, Господь, призвал Тебя в правду, и буду держать Тебя за руку и хранить Тебя, и поставлю Тебя в завет для народа, во свет для язычников,",
+        "NEO": "Moi, \\+w Yahweh|strong=\"H3068\"\\+w**, je t’ai appelé dans la justice, et je t’ai pris par la main ; je te garde et je fais de toi l’alliance du peuple, la lumière des nations ;",
+        "NAB": "I, the LORD, have called you for the victory of justice, I have grasped you by the hand; I formed you, and set you as a covenant of the people, a light for the nations,",
+        "CEI": "\"Io, il Signore, ti ho chiamato per la giustizia e ti ho preso per mano; ti ho formato e stabilito come alleanza del popolo e luce delle nazioni,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "לִ/פְקֹ֖חַ עֵינַ֣יִם עִוְר֑וֹת לְ/הוֹצִ֤יא מִ/מַּסְגֵּר֙ אַסִּ֔יר מִ/בֵּ֥ית כֶּ֖לֶא יֹ֥שְׁבֵי חֹֽשֶׁךְ׃",
+        "LXX": "ἀνοῖξαι ὀφθαλμοὺς τυφλῶν, ἐξαγαγεῖν ἐκ δεσμῶν δεδεμένους καὶ ἐξ οἴκου φυλακῆς καθημένους ἐν σκότει.",
+        "VUL": "ut aperires oculos cæcorum,/ et educeres de conclusione vinctum,/ de domo carceris sedentes in tenebris./",
+        "SYN": "чтобы открыть глаза слепых, чтобы узников вывести из заключения и сидящих во тьме - из темницы.",
+        "NEO": "Pour ouvrir les yeux des aveugles ; pour faire sortir de prison les captifs, du cachot ceux qui sont assis dans les ténèbres.",
+        "NAB": "To open the eyes of the blind, to bring out prisoners from confinement, and from the dungeon, those who live in darkness.",
+        "CEI": "perché tu apra gli occhi ai ciechi e faccia uscire dal carcere i prigionieri, dalla reclusione coloro che abitano nelle tenebre."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אֲנִ֥י יְהוָ֖ה ה֣וּא שְׁמִ֑/י וּ/כְבוֹדִ/י֙ לְ/אַחֵ֣ר לֹֽא אֶתֵּ֔ן וּ/תְהִלָּתִ֖/י לַ/פְּסִילִֽים׃",
+        "LXX": "ἐγὼ Κύριος ὁ θεός, τοῦτό μού ἐστιν τὸ ὄνομα, τὴν δόξαν μου ἑτέρῳ οὐ δώσω, οὐδὲ τὰς ἀρετάς μου τοῖς γλυπτοῖς.",
+        "VUL": "Ego Dominus,/ hoc est nomen meum ;/ gloriam meam alteri non dabo,/ et laudem meam sculptilibus./",
+        "SYN": "Я Господь, это - Мое имя, и не дам славы Моей иному и хвалы Моей истуканам.",
+        "NEO": "Je suis \\+w Yahweh|strong=\"H3068\"\\+w** ; c’est là mon nom, et je ne donnerai pas ma gloire à un autre, ni mon honneur aux idoles,",
+        "NAB": "I am the LORD, this is my name; my glory I give to no other, nor my praise to idols.",
+        "CEI": "Io sono il Signore: questo è il mio nome; non cederò la mia gloria ad altri, né il mio onore agli idoli."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הָ/רִֽאשֹׁנ֖וֹת הִנֵּה בָ֑אוּ וַֽ/חֲדָשׁוֹת֙ אֲנִ֣י מַגִּ֔יד בְּ/טֶ֥רֶם תִּצְמַ֖חְנָה אַשְׁמִ֥יע אֶתְ/כֶֽם׃",
+        "LXX": "τὰ ἀπ’ ἀρχῆς ἰδοὺ ἥκασιν, καὶ καινὰ ἃ ἐγὼ ἀναγγέλλω, καὶ πρὸ τοῦ ἀναγγεῖλαι ἐδηλώθη ὑμῖν.",
+        "VUL": "Quæ prima fuerunt, ecce venerunt ;/ nova quoque ego annuntio :/ antequam oriantur,/ audita vobis faciam.]",
+        "SYN": "Вот, _предсказанное_ прежде сбылось, и новое Я возвещу; прежде нежели оно произойдет, Я возвещу вам.",
+        "NEO": "Voici que les premières choses sont arrivées, et j’en annonce de nouvelles ; avant qu’elles éclosent, je vous les fais entendre.",
+        "NAB": "See, the earlier things have come to pass, new ones I now foretell; Before they spring into being, I announce them to you.",
+        "CEI": "I primi fatti, ecco, sono avvenuti e i nuovi io preannunzio; prima che spuntino, ve li faccio sentire\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "שִׁ֤ירוּ לַֽ/יהוָה֙ שִׁ֣יר חָדָ֔שׁ תְּהִלָּת֖/וֹ מִ/קְצֵ֣ה הָ/אָ֑רֶץ יוֹרְדֵ֤י הַ/יָּם֙ וּ/מְלֹא֔/וֹ אִיִּ֖ים וְ/יֹשְׁבֵי/הֶֽם׃",
+        "LXX": "Ὑμνήσατε τῷ κυρίῳ ὕμνον καινόν· ἡ ἀρχὴ αὐτοῦ, δοξάζετε τὸ ὄνομα αὐτοῦ ἀπ’ ἄκρου τῆς γῆς, οἱ καταβαίνοντες εἰς τὴν θάλασσαν καὶ πλέοντες αὐτήν, αἱ νῆσοι καὶ οἱ κατοικοῦντες αὐτάς.",
+        "VUL": "[Cantate Domino canticum novum,/ laus ejus ab extremis terræ,/ qui descenditis in mare, et plenitudo ejus ;/ insulæ, et habitatores earum./",
+        "SYN": "Пойте Господу новую песнь, хвалу Ему от концов земли, вы, плавающие по морю, и все, наполняющее его, острова и живущие на них.",
+        "NEO": "Chantez à \\+w Yahweh|strong=\"H3068\"\\+w** un cantique nouveau ; Chantez sa louange aux extrémités de la terre, vous qui naviguez sur la mer et qui la peuplez, vous, îles, et vos habitants !",
+        "NAB": "Sing to the LORD a new song, his praise from the end of the earth: Let the sea and what fills it resound, the coastlands, and those who dwell in them.",
+        "CEI": "Cantate al Signore un canto nuovo, lode a lui fino all'estremità della terra; lo celebri il mare con quanto esso contiene, le isole con i loro abitanti."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "יִשְׂא֤וּ מִדְבָּר֙ וְ/עָרָ֔י/ו חֲצֵרִ֖ים תֵּשֵׁ֣ב קֵדָ֑ר יָרֹ֨נּוּ֙ יֹ֣שְׁבֵי סֶ֔לַע מֵ/רֹ֥אשׁ הָרִ֖ים יִצְוָֽחוּ׃",
+        "LXX": "εὐφράνθητι, ἔρημος καὶ αἱ κῶμαι αὐτῆς, ἐπαύλεις καὶ οἱ κατοικοῦντες Κηδάρ. εὐφρανθήσονται οἱ κατοικοῦντες πέτραν, ἀπ’ ἄκρου τῶν ὀρέων βοήσουσιν·",
+        "VUL": "Sublevetur desertum et civitates ejus./ In domibus habitabit Cedar :/ laudate, habitatores petræ ;/ de vertice montium clamabunt./",
+        "SYN": "Да возвысит голос пустыня и города ее, селения, где обитает Кидар; да торжествуют живущие на скалах, да возглашают с вершин гор.",
+        "NEO": "Que le désert et ses villes élèvent la voix, les campements habités par Cédar ! Que les habitants de Séla tressaillent d’allégresse ; que du sommet des montagnes, ils poussent des cris de joie !",
+        "NAB": "Let the steppe and its cities cry out, the villages where Kedar dwells; Let the inhabitants of Sela exult, and shout from the top of the mountains.",
+        "CEI": "Esulti il deserto con le sue città, esultino i villaggi dove abitano quelli di Kedàr; acclamino gli abitanti di Sela, dalla cima dei monti alzino grida."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "יָשִׂ֥ימוּ לַֽ/יהוָ֖ה כָּב֑וֹד וּ/תְהִלָּת֖/וֹ בָּ/אִיִּ֥ים יַגִּֽידוּ׃",
+        "LXX": "δώσουσιν τῷ θεῷ δόξαν, τὰς ἀρετὰς αὐτοῦ ἐν ταῖς νήσοις ἀναγγελοῦσιν.",
+        "VUL": "Ponent Domino gloriam,/ et laudem ejus in insulis nuntiabunt./",
+        "SYN": "Да воздадут Господу славу, и хвалу Его да возвестят на островах.",
+        "NEO": "Qu’ils rendent gloire à \\+w Yahweh|strong=\"H3068\"\\+w**, qu’ils publient sa louange dans les îles !",
+        "NAB": "Let them give glory to the LORD, and utter his praise in the coastlands.",
+        "CEI": "Diano gloria al Signore e il suo onore divulghino nelle isole."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "יְהוָה֙ כַּ/גִּבּ֣וֹר יֵצֵ֔א כְּ/אִ֥ישׁ מִלְחָמ֖וֹת יָעִ֣יר קִנְאָ֑ה יָרִ֨יעַ֙ אַף יַצְרִ֔יחַ עַל אֹיְבָ֖י/ו יִתְגַּבָּֽר׃",
+        "LXX": "Κύριος ὁ θεὸς τῶν δυνάμεων ἐξελεύσεται καὶ συντρίψει πόλεμον, ἐπεγερεῖ ζῆλον καὶ βοήσεται ἐπὶ τοὺς ἐχθροὺς αὐτοῦ μετὰ ἰσχύος.",
+        "VUL": "Dominus sicut fortis egredietur,/ sicut vir præliator suscitabit zelum ;/ vociferabitur, et clamabit :/ super inimicos suos confortabitur.]",
+        "SYN": "Господь выйдет, как исполин, как муж браней возбудит ревность; воззовет и поднимет воинский крик, и покажет Себя сильным против врагов Своих.",
+        "NEO": "Car \\+w Yahweh|strong=\"H3068\"\\+w** sort comme un héros ; comme un guerrier, il réveille son ardeur ; il pousse le cri de guerre, un cri éclatant ; il déploie sa force contre ses ennemis.",
+        "NAB": "The LORD goes forth like a hero, like a warrior he stirs up his ardor; He shouts out his battle cry, against his enemies he shows his might:",
+        "CEI": "Il Signore avanza come un prode, come un guerriero eccita il suo ardore; grida, lancia urla di guerra, si mostra forte contro i suoi nemici."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הֶחֱשֵׁ֨יתִי֙ מֵֽ/עוֹלָ֔ם אַחֲרִ֖ישׁ אֶתְאַפָּ֑ק כַּ/יּוֹלֵדָ֣ה אֶפְעֶ֔ה אֶשֹּׁ֥ם וְ/אֶשְׁאַ֖ף יָֽחַד׃",
+        "LXX": "ἐσιώπησα, μὴ καὶ ἀεὶ σιωπήσομαι καὶ ἀνέξομαι; ὡς ἡ τίκτουσα ἐκαρτέρησα, ἐκστήσω καὶ ξηρανῶ ἅμα.",
+        "VUL": "[Tacui semper,/ silui, patiens fui :/ sicut parturiens loquar ;/ dissipabo, et absorbebo simul./",
+        "SYN": "Долго молчал Я, терпел, удерживался; теперь буду кричать, как рождающая, буду разрушать и поглощать все;",
+        "NEO": "Longtemps je me suis tu, j’ai gardé le silence, je me suis contenu ; comme la femme qui enfante, je gémis, je soupire et je suis haletant.",
+        "NAB": "I have looked away, and kept silence, I have said nothing, holding myself in; But now, I cry out as a woman in labor, gasping and panting.",
+        "CEI": "Per molto tempo, ho taciuto, ho fatto silenzio, mi sono contenuto; ora griderò come una partoriente, mi affannerò e sbufferò insieme."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אַחֲרִ֤יב הָרִים֙ וּ/גְבָע֔וֹת וְ/כָל עֶשְׂבָּ֖/ם אוֹבִ֑ישׁ וְ/שַׂמְתִּ֤י נְהָרוֹת֙ לָֽ/אִיִּ֔ים וַ/אֲגַמִּ֖ים אוֹבִֽישׁ׃",
+        "LXX": "ἐρημώσω ὄρη καὶ βουνούς, καὶ πάντα χόρτον αὐτῶν ξηρανῶ καὶ θήσω ποταμοὺς εἰς νήσους, καὶ ἕλη ξηρανῶ.",
+        "VUL": "Desertos faciam montes et colles,/ et omne gramen eorum exsiccabo ;/ et ponam flumina in insulas,/ et stagna arefaciam./",
+        "SYN": "опустошу горы и холмы, и всю траву их иссушу; и реки сделаю островами, и осушу озера;",
+        "NEO": "Je désolerai les montagnes et les collines, et je dessécherai toute leur verdure ; je changerai les fleuves en îles, et je mettrai les lacs à sec.",
+        "NAB": "I will lay waste mountains and hills, all their herbage I will dry up; I will turn the rivers into marshes, and the marshes I will dry up.",
+        "CEI": "Renderò aridi monti e colli, farò seccare tutta la loro erba; trasformerò i fiumi in stagni e gli stagni farò inaridire."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/הוֹלַכְתִּ֣י עִוְרִ֗ים בְּ/דֶ֨רֶךְ֙ לֹ֣א יָדָ֔עוּ בִּ/נְתִיב֥וֹת לֹֽא יָדְע֖וּ אַדְרִיכֵ֑/ם אָשִׂים֩ מַחְשָׁ֨ךְ לִ/פְנֵי/הֶ֜ם לָ/א֗וֹר וּ/מַֽעֲקַשִּׁים֙ לְ/מִישׁ֔וֹר אֵ֚לֶּה הַ/דְּבָרִ֔ים עֲשִׂיתִ֖/ם וְ/לֹ֥א עֲזַבְתִּֽי/ם׃",
+        "LXX": "καὶ ἄξω τυφλοὺς ἐν ὁδῷ ᾗ οὐκ ἔγνωσαν, καὶ τρίβους ἃς οὐκ ᾔδεισαν πατῆσαι ποιήσω αὐτούς· ποιήσω αὐτοῖς τὸ σκότος εἰς φῶς, καὶ τὰ σκολιὰ εὐθεῖαν. ταῦτα τὰ ῥήματα ποιήσω καὶ οὐκ ἐγκαταλείψω αὐτούς·",
+        "VUL": "Et ducam cæcos in viam quam nesciunt,/ et in semitis quas ignoraverunt ambulare eos faciam ;/ ponam tenebras coram eis in lucem,/ et prava in recta ;/ hæc verba feci eis,/ et non dereliqui eos./",
+        "SYN": "и поведу слепых дорогою, которой они не знают, неизвестными путями буду вести их; мрак сделаю светом пред ними, и кривые пути - прямыми: вот что Я сделаю для них и не оставлю их.",
+        "NEO": "Je conduirai les aveugles par un chemin qu’ils ne connaissent pas, je les mènerai par des sentiers qu’ils ignorent ; je changerai devant eux les ténèbres en lumière, et les lieux montueux en plaine. Ces paroles, je les accomplirai ; et je n’y manquerai point.",
+        "NAB": "I will lead the blind on their journey; by paths unknown I will guide them. I will turn darkness into light before them, and make crooked ways straight. These things I do for them, and I will not forsake them.",
+        "CEI": "Farò camminare i ciechi per vie che non conoscono, li guiderò per sentieri sconosciuti; trasformerò davanti a loro le tenebre in luce, i luoghi aspri in pianura. Tali cose io ho fatto e non cesserò di farle."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "נָסֹ֤גוּ אָחוֹר֙ יֵבֹ֣שׁוּ בֹ֔שֶׁת הַ/בֹּטְחִ֖ים בַּ/פָּ֑סֶל הָ/אֹמְרִ֥ים לְ/מַסֵּכָ֖ה אַתֶּ֥ם אֱלֹהֵֽי/נוּ׃",
+        "LXX": "αὐτοὶ δὲ ἀπεστράφησαν εἰς τὰ ὀπίσω. αἰσχύνθητε αἰσχύνην, οἱ πεποιθότες ἐπὶ τοῖς γλυπτοῖς, οἱ λέγοντες τοῖς χωνευτοῖς Ὑμεῖς ἐστε θεοὶ ἡμῶν.",
+        "VUL": "Conversi sunt retrorsum, confundantur confusione,/ qui confidunt in sculptili ;/ qui dicunt conflatili :/ Vos dii nostri./",
+        "SYN": "Тогда обратятся вспять и великим стыдом покроются надеющиеся на идолов, говорящие истуканам: \"вы наши боги\".",
+        "NEO": "Ils reculeront, ils seront couverts de honte, ceux qui se confient dans les idoles, qui disent aux images fondues : « Vous êtes nos dieux ! »",
+        "NAB": "They shall be turned back in utter shame who trust in idols; Who say to molten images, \"You are our gods.\"",
+        "CEI": "Retrocedono pieni di vergogna quanti sperano in un idolo, quanti dicono alle statue: \"Voi siete i nostri dei\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "הַ/חֵרְשִׁ֖ים שְׁמָ֑עוּ וְ/הַ/עִוְרִ֖ים הַבִּ֥יטוּ לִ/רְאֽוֹת׃",
+        "LXX": "Οἱ κωφοί, ἀκούσατε, καὶ οἱ τυφλοί, ἀναβλέψατε ἰδεῖν.",
+        "VUL": "Surdi, audite,/ et cæci, intuemini ad videndum./",
+        "SYN": "Слушайте, глухие, и смотрите, слепые, чтобы видеть.",
+        "NEO": "Sourds, entendez ; aveugles, ouvrez les yeux pour voir !",
+        "NAB": "You who are deaf, listen, you who are blind, look and see!",
+        "CEI": "Sordi, ascoltate, ciechi, volgete lo sguardo per vedere."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "מִ֤י עִוֵּר֙ כִּ֣י אִם עַבְדִּ֔/י וְ/חֵרֵ֖שׁ כְּ/מַלְאָכִ֣/י אֶשְׁלָ֑ח מִ֤י עִוֵּר֙ כִּ/מְשֻׁלָּ֔ם וְ/עִוֵּ֖ר כְּ/עֶ֥בֶד יְהוָֽה׃",
+        "LXX": "καὶ τίς τυφλὸς ἀλλ’ ἢ οἱ παῖδές μου, καὶ κωφοὶ ἀλλ’ ἢ οἱ κυριεύοντες αὐτῶν; καὶ ἐτυφλώθησαν οἱ δοῦλοι τοῦ θεοῦ.",
+        "VUL": "Quis cæcus, nisi servus meus ;/ et surdus, nisi ad quem nuntios meos misi ?/ quis cæcus, nisi qui venundatus est ?/ et quis cæcus, nisi servus Domini ?/",
+        "SYN": "Кто так слеп, как раб Мой, и глух, как вестник Мой, Мною посланный? Кто так слеп, как возлюбленный, так слеп, как раб Господа?",
+        "NEO": "Qui est aveugle, sinon mon serviteur, et sourd comme mon messager que j’envoie ? Qui est aveugle comme celui dont j’avais fait mon ami, aveugle comme le serviteur de \\+w Yahweh|strong=\"H3068\"\\+w** ?",
+        "NAB": "Who is blind but my servant, or deaf like the messenger I send?",
+        "CEI": "Chi è cieco, se non il mio servo? Chi è sordo come colui al quale io mandavo araldi? Chi è cieco come il mio privilegiato? Chi è sordo come il servo del Signore?"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "ראית רָא֥וֹת רַבּ֖וֹת וְ/לֹ֣א תִשְׁמֹ֑ר פָּק֥וֹחַ אָזְנַ֖יִם וְ/לֹ֥א יִשְׁמָֽע׃",
+        "LXX": "εἴδετε πλεονάκις, καὶ οὐκ ἐφυλάξασθε· ἠνοιγμένα τὰ ὦτα, καὶ οὐκ ἠκούσατε.",
+        "VUL": "Qui vides multa, nonne custodies ?/ qui apertas habes aures, nonne audies ?/",
+        "SYN": "Ты видел многое, но не замечал; уши были открыты, но не слышал.",
+        "NEO": "Tu as vu beaucoup de choses, et tu n’as rien retenu ; il a eu ses oreilles ouvertes, et il n’a rien entendu.",
+        "NAB": "You see many things without taking note; your ears are open, but without hearing.",
+        "CEI": "Hai visto molte cose, ma senza farvi attenzione, hai aperto gli orecchi, ma senza sentire."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "יְהוָ֥ה חָפֵ֖ץ לְמַ֣עַן צִדְק֑/וֹ יַגְדִּ֥יל תּוֹרָ֖ה וְ/יַאְדִּֽיר׃",
+        "LXX": "Κύριος ὁ θεὸς ἐβουλεύσατο ἵνα δικαιωθῇ καὶ μεγαλύνῃ αἴνεσιν.",
+        "VUL": "Et Dominus voluit ut sanctificaret eum,/ et magnificaret legem, et extolleret./",
+        "SYN": "Господу угодно было, ради правды Своей, возвеличить и прославить закон.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** a daigné, à cause de sa justice, donner une loi grande et magnifique.",
+        "NAB": "Though it pleased the LORD in his justice to make his law great and glorious,",
+        "CEI": "Il Signore si compiacque, per amore della sua giustizia, di dare una legge grande e gloriosa."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/הוּא֮ עַם בָּז֣וּז וְ/שָׁסוּי֒ הָפֵ֤חַ בַּֽ/חוּרִים֙ כֻּלָּ֔/ם וּ/בְ/בָתֵּ֥י כְלָאִ֖ים הָחְבָּ֑אוּ הָי֤וּ לָ/בַז֙ וְ/אֵ֣ין מַצִּ֔יל מְשִׁסָּ֖ה וְ/אֵין אֹמֵ֥ר הָשַֽׁב׃",
+        "LXX": "καὶ εἶδον, καὶ ἐγένετο ὁ λαὸς πεπρονομευμένος καὶ διηρπασμένος· ἡ γὰρ παγὶς ἐν τοῖς ταμείοις πανταχοῦ, καὶ ἐν οἴκοις ἅμα, ὅπου ἔκρυψαν αὐτούς, ἐγένοντο εἰς προνομήν· καὶ οὐκ ἦν ἐξαιρούμενος ἃρπαγμα, καὶ οὐκ ἦν ὁ λέγων Ἀπόδος.",
+        "VUL": "Ipse autem populus direptus, et vastatus ;/ laqueus juvenum omnes,/ et in domibus carcerum absconditi sunt ;/ facti sunt in rapinam, nec est qui eruat ;/ in direptionem, nec est qui dicat : Redde./",
+        "SYN": "Но это народ разоренный и разграбленный; все они связаны в подземельях и сокрыты в темницах; сделались добычею, и нет избавителя; ограблены, и никто не говорит: \"отдай назад!\"",
+        "NEO": "Et voilà ce peuple pillé et dépouillé ! On les a tous enchaînés dans des cavernes, ils ont été enfermés dans des cachots ; ils sont au pillage, et personne qui les délivre ; dépouillés, et personne qui dise : « Restitue ! »",
+        "NAB": "This is a people despoiled and plundered, all of them trapped in holes, hidden away in prisons. They are taken as booty, with no one to rescue them, as spoil, with no one to demand their return.",
+        "CEI": "Eppure questo è un popolo saccheggiato e spogliato; sono tutti presi con il laccio nelle caverne, sono rinchiusi in prigioni. Furono saccheggiati e nessuno li liberava; furono spogliati, e nessuno diceva: \"Restituisci\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "מִ֥י בָ/כֶ֖ם יַאֲזִ֣ין זֹ֑את יַקְשִׁ֥ב וְ/יִשְׁמַ֖ע לְ/אָחֽוֹר׃",
+        "LXX": "τίς ἐν ὑμῖν ὃς ἐνωτιεῖται ταῦτα; εἰσακούσατε εἰς τὰ ἐπερχόμενα",
+        "VUL": "Quis est in vobis qui audiat hoc,/ attendat, et auscultet futura ?/",
+        "SYN": "Кто из вас приклонил к этому ухо, вникнул и выслушал это для будущего?",
+        "NEO": "Qui de vous prêtera l’oreille à ces choses, y prendra garde et écoutera désormais ?",
+        "NAB": "Who of you gives ear to this? Who listens and pays heed for the time to come?",
+        "CEI": "Chi fra di voi porge l'orecchio a ciò, vi fa attenzione e ascolta per il futuro?"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "מִֽי נָתַ֨ן ל/משוסה לִ/מְשִׁסָּ֧ה יַעֲקֹ֛ב וְ/יִשְׂרָאֵ֥ל לְ/בֹזְזִ֖ים הֲ/ל֣וֹא יְהוָ֑ה ז֚וּ חָטָ֣אנוּ ל֔/וֹ וְ/לֹֽא אָב֤וּ בִ/דְרָכָי/ו֙ הָל֔וֹךְ וְ/לֹ֥א שָׁמְע֖וּ בְּ/תוֹרָתֽ/וֹ׃",
+        "LXX": "οἷς ἔδωκεν εἰς διαρπαγὴν Ἰακὼβ καὶ Ἰσραήλ, τοῖς προνομεύουσιν αὐτόν. οὐχὶ ὁ θεὸς ᾧ ἡμάρτοσαν αὐτῷ, καὶ οὐκ ἐβούλοντο ἐν ταῖς ὁδοῖς αὐτοῦ πορεύεσθαι οὐδὲ ἀκούειν τοῦ νόμου αὐτοῦ;",
+        "VUL": "Quis dedit in direptionem Jacob,/ et Israël vastantibus ?/ nonne Dominus ipse, cui peccavimus ?/ Et noluerunt in viis ejus ambulare,/ et non audierunt legem ejus./",
+        "SYN": "Кто предал Иакова на разорение и Израиля грабителям? не Господь ли, против Которого мы грешили? Не хотели они ходить путями Его и не слушали закона Его.",
+        "NEO": "Qui a livré Jacob au pillage, et Israël aux spoliateurs ? N’est-ce pas \\+w Yahweh|strong=\"H3068\"\\+w**, lui contre qui nous avons péché, lui dont ils n’ont pas voulu suivre les voies, et dont ils n’ont pas écouté la loi ?",
+        "NAB": "Who was it that gave Jacob to be plundered, Israel to the despoilers? Was it not the LORD, against whom we have sinned? In his ways they refused to walk, his law they disobeyed.",
+        "CEI": "Chi abbandonò Giacobbe al saccheggio, Israele ai predoni? Non è stato forse il Signore contro cui peccarono, per le cui vie non vollero camminare, la cui legge non osservarono?"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁפֹּ֤ךְ עָלָי/ו֙ חֵמָ֣ה אַפּ֔/וֹ וֶ/עֱז֖וּז מִלְחָמָ֑ה וַ/תְּלַהֲטֵ֤/הוּ מִ/סָּבִיב֙ וְ/לֹ֣א יָדָ֔ע וַ/תִּבְעַר בּ֖/וֹ וְ/לֹא יָשִׂ֥ים עַל לֵֽב׃",
+        "LXX": "καὶ ἐπήγαγεν ἐπ’ αὐτοὺς ὀργὴν θυμοῦ αὐτοῦ, καὶ κατίσχυσεν αὐτοὺς πόλεμος, καὶ οἱ συμφλέγοντες αὐτοὺς κύκλῳ, καὶ οὐκ ἔγνωσαν ἕκαστος αὐτῶν οὐδὲ ἔθεντο ἐπὶ ψυχήν.",
+        "VUL": "Et effudit super eum indignationem furoris sui,/ et forte bellum ;/ et combussit eum in circuitu, et non cognovit ;/ et succendit eum, et non intellexit.]",
+        "SYN": "И Он излил на них ярость гнева Своего и лютость войны: она окружила их пламенем со всех сторон, но они не примечали; и горела у них, но они не уразумели этого сердцем.",
+        "NEO": "Il a versé sur eux le feu de son courroux, et les fureurs de la guerre ; elle s’est allumée tout autour de lui, et il n’a pas compris ; elle l’a consumé, et il n’y a pas pris garde !",
+        "NAB": "So he poured out wrath upon them, his anger, and the fury of battle; It blazed round about them, yet they did not realize, it burned them, but they took it not to heart.",
+        "CEI": "Egli, perciò, ha riversato su di esso la sua ira ardente e la violenza della guerra. L'ira divina lo ha avvolto nelle sue fiamme senza che egli se ne accorgesse, lo ha bruciato, senza che vi facesse attenzione."
+      }
+    }
+  }
+}

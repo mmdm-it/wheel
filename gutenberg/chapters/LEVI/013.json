@@ -1,0 +1,1077 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LEVI_013",
+  "book_key": "LEVI",
+  "sequence": 13,
+  "chapter_in": {
+    "MT": 13,
+    "VUL": 13,
+    "LXX": 13
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר יְהוָ֔ה אֶל מֹשֶׁ֥ה וְ/אֶֽל אַהֲרֹ֖ן לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν καὶ Ἀαρὼν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, et Aaron, dicens :",
+        "SYN": "И сказал Господь Моисею и Аарону, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse et à Aaron en disant :",
+        "NAB": "The LORD said to Moses and Aaron,",
+        "VAT_ES": "El Señor dijo a Moisés y a Aarón:",
+        "CEI": "Il Signore aggiunse a Mosè e ad Aronne:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אָדָ֗ם כִּֽי יִהְיֶ֤ה בְ/עוֹר בְּשָׂר/וֹ֙ שְׂאֵ֤ת אֽוֹ סַפַּ֨חַת֙ א֣וֹ בַהֶ֔רֶת וְ/הָיָ֥ה בְ/עוֹר בְּשָׂר֖/וֹ לְ/נֶ֣גַע צָרָ֑עַת וְ/הוּבָא֙ אֶל אַהֲרֹ֣ן הַ/כֹּהֵ֔ן א֛וֹ אֶל אַחַ֥ד מִ/בָּנָ֖י/ו הַ/כֹּהֲנִֽים׃",
+        "LXX": "Ἀνθρώπῳ ἐάν τινι γένηται ἐν δέρματι χρωτὸς αὐτοῦ οὐλὴ σημασίας τηλαυγής, καὶ γένηται ἐν δέρματι χρωτὸς αὐτοῦ ἁφὴ λέπρας, καὶ ἀχθήσεται πρὸς Ἀαρὼν τὸν ἱερέα ἢ ἕνα τῶν υἱῶν αὐτοῦ τῶν ἱερέων.",
+        "VUL": "Homo, in cujus cute et carne ortus fuerit diversus color, sive pustula, aut quasi lucens quippiam, id est, plaga lepræ, adducetur ad Aaron sacerdotem, vel ad unum quemlibet filiorum ejus.",
+        "SYN": "когда у кого появится на коже тела его опухоль, или лишаи, или пятно, и на коже тела его сделается как бы язва проказы, то должно привести его к Аарону священнику, или к одному из сынов его, священников;",
+        "NEO": "« Quand un homme aura sur la peau de sa chair une tumeur, une dartre ou une tache blanche, et qu’il viendra ainsi sur la peau de sa chair une plaie de lèpre, on l’amènera à Aaron, le prêtre, ou à l’un de ses fils qui sont prêtres.",
+        "NAB": "\"If someone has on his skin a scab or pustule or blotch which appears to be the sore of leprosy, he shall be brought to Aaron, the priest, or to one of the priests among his descendants,",
+        "VAT_ES": "Cuando aparezca en la piel de una persona una hinchazón, una erupción o una mancha lustrosa, que hacen previsible un caso de lepra, la persona será llevada al sacerdote Aarón o a uno de sus hijos, los sacerdotes,",
+        "CEI": "\"Quando uno ha sulla pelle del corpo un tumore o una pustola o macchia bianca che faccia sospettare una piaga di lebbra, quel tale sarà condotto dal sacerdote Aronne o da qualcuno dei sacerdoti, suoi figli."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֣ה הַ/כֹּהֵ֣ן אֶת הַ/נֶּ֣גַע בְּ/עֽוֹר הַ֠/בָּשָׂר וְ/שֵׂעָ֨ר בַּ/נֶּ֜גַע הָפַ֣ךְ לָבָ֗ן וּ/מַרְאֵ֤ה הַ/נֶּ֨גַע֙ עָמֹק֙ מֵ/ע֣וֹר בְּשָׂר֔/וֹ נֶ֥גַע צָרַ֖עַת ה֑וּא וְ/רָאָ֥/הוּ הַ/כֹּהֵ֖ן וְ/טִמֵּ֥א אֹתֽ/וֹ׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεὺς τὴν ἁφὴν ἐν δέρματι τοῦ χρωτὸς αὐτοῦ, καὶ ἡ θρὶξ ἐν τῇ ἁφῇ μεταβάλῃ λευκή, καὶ ἡ ὄψις τῆς ἁφῆς ταπεινὴ ἀπὸ τοῦ δέρματος τοῦ χρωτός, ἁφὴ λέπρας ἐστίν· καὶ ὄψεται ὁ ἱερεύς, καὶ μιανεῖ αὐτόν.",
+        "VUL": "Qui cum viderit lepram in cute, et pilos in album mutatos colorem, ipsamque speciem lepræ humiliorem cute et carne reliqua : plaga lepræ est, et ad arbitrium ejus separabitur.",
+        "SYN": "священник осмотрит язву на коже тела, и если волосы на язве изменились в белые, и язва оказывается углубленною в кожу тела его, то это язва проказы; священник, осмотрев его, объявит его нечистым.",
+        "NEO": "Le prêtre examinera la plaie qui est sur la peau de la chair : si le poil de la plaie est devenu blanc et que la plaie paraisse plus profonde que la peau de la chair, c’est une plaie de lèpre : le prêtre, ayant examiné cet homme, le déclarera impur.",
+        "NAB": "who shall examine the sore on his skin. If the hair on the sore has turned white and the sore itself shows that it has penetrated below the skin, it is indeed the sore of leprosy; the priest, on seeing this, shall declare the man unclean.",
+        "VAT_ES": "el cual examinará la afección. Si en la zona afectada el vello se ha puesto blanco, y aquella aparece más hundida que el resto de la piel, es un caso de lepra. El sacerdote, después de haberla observado, deberá declarar impura a esa persona.",
+        "CEI": "Il sacerdote esaminerà la piaga sulla pelle del corpo; se il pelo della piaga è diventato bianco e la piaga appare depressa rispetto alla pelle del corpo, è piaga di lebbra; il sacerdote, dopo averlo esaminato, dichiarerà quell'uomo immondo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/אִם בַּהֶרֶת֩ לְבָנָ֨ה הִ֜וא בְּ/ע֣וֹר בְּשָׂר֗/וֹ וְ/עָמֹק֙ אֵין מַרְאֶ֣/הָ מִן הָ/ע֔וֹר וּ/שְׂעָרָ֖/ה לֹא הָפַ֣ךְ לָבָ֑ן וְ/הִסְגִּ֧יר הַ/כֹּהֵ֛ן אֶת הַ/נֶּ֖גַע שִׁבְעַ֥ת יָמִֽים׃",
+        "LXX": "ἐὰν δὲ τηλαυγὴς λευκὴ ἦν ἐν τῷ δέρματι τοῦ χρωτὸς αὐτῆς, καὶ ταπεινὴ μὴ ἦν ἡ ὄψις αὐτῆς ἀπὸ τοῦ δέρματος αὐτῆς, καὶ ἡ θρὶξ αὐτοῦ οὐ μετέβαλεν τρίχα λευκήν, αὐτὴ δέ ἐστιν ἀμαυρά, καὶ ἀφοριεῖ ὁ ἱερεὺς τὴν ἁφὴν ἑπτὰ ἡμέρας.",
+        "VUL": "Sin autem lucens candor fuerit in cute, nec humilior carne reliqua, et pili coloris pristini, recludet eum sacerdos septem diebus :",
+        "SYN": "А если на коже тела его пятно белое, но оно не окажется углубленным в кожу, и волосы на нем не изменились в белые, то священник _имеющего_ язву должен заключить на семь дней;",
+        "NEO": "S’il y a sur la peau de sa chair une tache blanche qui ne paraisse pas plus profonde que la peau, et que le poil ne soit pas devenu blanc, le prêtre séquestrera pendant sept jours celui qui a la plaie.",
+        "NAB": "If, however, the blotch on the skin is white, but does not seem to have penetrated below the skin, nor has the hair turned white, the priest shall quarantine the stricken man for seven days.",
+        "VAT_ES": "Si la mancha lustrosa es blancuzca pero no aparece más hundida que la piel y el vello que la recubre no se ha puesto blanco, el sacerdote mantendrá aislada a la persona afectada durante siete días.",
+        "CEI": "Ma se la macchia sulla pelle del corpo è bianca e non appare depressa rispetto alla pelle e il suo pelo non è diventato bianco, il sacerdote isolerà per sette giorni colui che ha la piaga."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֣/הוּ הַ/כֹּהֵן֮ בַּ/יּ֣וֹם הַ/שְּׁבִיעִי֒ וְ/הִנֵּ֤ה הַ/נֶּ֨גַע֙ עָמַ֣ד בְּ/עֵינָ֔י/ו לֹֽא פָשָׂ֥ה הַ/נֶּ֖גַע בָּ/ע֑וֹר וְ/הִסְגִּיר֧/וֹ הַ/כֹּהֵ֛ן שִׁבְעַ֥ת יָמִ֖ים שֵׁנִֽית׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεὺς τὴν ἁφὴν τῇ ἡμέρᾳ τῇ ἑβδόμῃ, καὶ ἰδοὺ ἡ ἁφὴ μένει ἐναντίον αὐτοῦ, οὐ μετέπεσεν ἡ ἁφὴ ἐν τῷ δέρματι, καὶ ἀφοριεῖ αὐτὸν ὁ ἱερεὺς ἑπτὰ ἡμέρας τὸ δεύτερον.",
+        "VUL": "et considerabit die septimo : et siquidem lepra ultra non creverit, nec transierit in cute priores terminos, rursum recludet eum septem diebus aliis.",
+        "SYN": "в седьмой день священник осмотрит его, и если язва остается в своем виде и не распространяется язва по коже, то священник должен заключить его на другие семь дней;",
+        "NEO": "Le septième jour le prêtre l’examinera : si la plaie lui paraît n’avoir pas fait de progrès, ne s’étant pas étendue sur la peau, le prêtre le séquestrera une seconde fois pendant sept jours.",
+        "NAB": "On the seventh day the priest shall again examine him. If he judges that the sore has remained unchanged and has not spread on the skin, the priest shall quarantine him for another seven days,",
+        "VAT_ES": "Al séptimo día volverá a examinarla y si comprueba que la afección continúa estacionaria y no se ha propagado por la piel, el sacerdote la mantendrá aislada siete días más.",
+        "CEI": "Al settimo giorno il sacerdote l'esaminerà ancora; se gli parrà che la piaga si sia fermata senza allargarsi sulla pelle, il sacerdote lo isolerà per altri sette giorni."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/רָאָה֩ הַ/כֹּהֵ֨ן אֹת֜/וֹ בַּ/יּ֣וֹם הַ/שְּׁבִיעִי֮ שֵׁנִית֒ וְ/הִנֵּה֙ כֵּהָ֣ה הַ/נֶּ֔גַע וְ/לֹא פָשָׂ֥ה הַ/נֶּ֖גַע בָּ/ע֑וֹר וְ/טִהֲר֤/וֹ הַ/כֹּהֵן֙ מִסְפַּ֣חַת הִ֔יא וְ/כִבֶּ֥ס בְּגָדָ֖י/ו וְ/טָהֵֽר׃",
+        "LXX": "καὶ ὄψεται αὐτὸν ὁ ἱερεὺς τῇ ἡμέρᾳ τῇ ἑβδόμῃ τὸ δεύτερον, καὶ ἰδοὺ ἀμαυρὰ ἡ ἁφή, οὐ μετέπεσεν ἡ ἁφὴ ἐν τῷ δέρματι, καθαριεῖ αὐτὸν ὁ ἱερεύς· σημασία γάρ ἐστιν· καὶ πλυνάμενος τὰ ἱμάτια καθαρὸς ἔσται.",
+        "VUL": "Et die septimo contemplabitur : si obscurior fuerit lepra, et non creverit in cute, mundabit eum, quia scabies est : lavabitque homo vestimenta sua, et mundus erit.",
+        "SYN": "в седьмой день опять священник осмотрит его, и если язва менее приметна и не распространилась язва по коже, то священник должен объявить его чистым: это лишаи, и пусть он омоет одежды свои, и будет чист.",
+        "NEO": "Le prêtre l’examinera une seconde fois le septième jour : si la plaie est devenue terne et ne s’est pas étendue sur la peau, le prêtre déclarera cet homme pur : c’est une dartre ; il lavera ses vêtements, et il sera pur.",
+        "NAB": "and once more examine him on the seventh day. If the sore is now dying out and has not spread on the skin, the priest shall declare the man clean; it was merely eczema. The man shall wash his garments and so become clean.",
+        "VAT_ES": "Al séptimo día volverá a examinar, y si la afección ha cedido y no se ha extendido por la piel, declarará puro al enfermo; no es más que una erupción. El enfermo lavará su ropa y será puro.",
+        "CEI": "Il sacerdote, il settimo giorno, lo esaminerà di nuovo; se vedrà che la piaga non è più bianca e non si è allargata sulla pelle, dichiarerà quell'uomo mondo: è una pustola. Quegli si laverà le vesti e sarà mondo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/אִם פָּשֹׂ֨ה תִפְשֶׂ֤ה הַ/מִּסְפַּ֨חַת֙ בָּ/ע֔וֹר אַחֲרֵ֧י הֵרָאֹת֛/וֹ אֶל הַ/כֹּהֵ֖ן לְ/טָהֳרָת֑/וֹ וְ/נִרְאָ֥ה שֵׁנִ֖ית אֶל הַ/כֹּהֵֽן׃",
+        "LXX": "ἐὰν δὲ μεταβαλοῦσα μεταπέσῃ ἡ σημασία ἐν τῷ δέρματι μετὰ τὸ ἰδεῖν αὐτὸν τὸν ἱερέα τοῦ καθαρίσαι αὐτόν, καὶ ὀφθήσεται τὸ δεύτερον τῷ ἱερεῖ·",
+        "VUL": "Quod si postquam a sacerdote visus est, et redditus munditiæ, iterum lepra creverit : adducetur ad eum,",
+        "SYN": "Если же лишаи станут распространяться по коже, после того как он являлся к священнику для очищения, то он вторично должен явиться к священнику;",
+        "NEO": "Mais si la dartre s’est étendue sur la peau, après qu’il s’est montré au prêtre pour être déclaré pur, il se montrera une seconde fois au prêtre.",
+        "NAB": "But if, after he has shown himself to the priest to be declared clean, the eczema spreads at all on his skin, he shall once more show himself to the priest.",
+        "VAT_ES": "Pero si después de haberse presentado al sacerdote y de haber sido declarado puro, la erupción continúa extendiéndose por la piel, se presentará nuevamente al sacerdote.",
+        "CEI": "Ma se la pustola si è allargata sulla pelle, dopo che egli si è mostrato al sacerdote per essere dichiarato mondo, si farà esaminare di nuovo dal sacerdote;"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/רָאָה֙ הַ/כֹּהֵ֔ן וְ/הִנֵּ֛ה פָּשְׂתָ֥ה הַ/מִּסְפַּ֖חַת בָּ/ע֑וֹר וְ/טִמְּא֥/וֹ הַ/כֹּהֵ֖ן צָרַ֥עַת הִֽוא׃",
+        "LXX": "καὶ ὄψεται αὐτὸν ὁ ἱερεύς, καὶ ἰδοὺ μετέπεσεν ἡ σημασία ἐν τῷ δέρματι, καὶ μιανεῖ αὐτὸν ὁ ἱερεύς· λέπρα ἐστίν.",
+        "VUL": "et immunditiæ condemnabitur.",
+        "SYN": "священник, увидев, что лишаи распространяются по коже, объявит его нечистым: это проказа.",
+        "NEO": "Le prêtre l’examinera et, si la dartre s’est étendue sur la peau, le prêtre le déclarera impur : c’est la lèpre.",
+        "NAB": "Should the priest, on examining it, find that the eczema has indeed spread on the skin, he shall declare the man unclean; it is leprosy.",
+        "VAT_ES": "Y si este ve que la erupción se ha propagado, deberá declararlo impuro, porque es lepra.",
+        "CEI": "il sacerdote l'esaminerà e se vedrà che la pustola si è allargata sulla pelle, il sacerdote lo dichiarerà immondo: è lebbra."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "נֶ֣גַע צָרַ֔עַת כִּ֥י תִהְיֶ֖ה בְּ/אָדָ֑ם וְ/הוּבָ֖א אֶל הַ/כֹּהֵֽן׃",
+        "LXX": "Καὶ ἁφὴ λέπρας ἐὰν γένηται ἐν ἀνθρώπῳ, καὶ ἥξει πρὸς τὸν ἱερέα·",
+        "VUL": "Plaga lepræ si fuerit in homine, adducetur ad sacerdotem,",
+        "SYN": "Если будет на ком язва проказы, то должно привести его к священнику;",
+        "NEO": "Lorsqu’il y aura sur un homme une plaie de lèpre, on l’amènera au prêtre.",
+        "NAB": "\"When someone is stricken with leprosy, he shall be brought to the priest.",
+        "VAT_ES": "Cuando en una persona aparezcan síntomas de lepra, será llevada al sacerdote.",
+        "CEI": "Quando uno avrà addosso una piaga di lebbra, sarà condotto al sacerdote,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֣ה הַ/כֹּהֵ֗ן וְ/הִנֵּ֤ה שְׂאֵת לְבָנָה֙ בָּ/ע֔וֹר וְ/הִ֕יא הָפְכָ֖ה שֵׂעָ֣ר לָבָ֑ן וּ/מִֽחְיַ֛ת בָּשָׂ֥ר חַ֖י בַּ/שְׂאֵֽת׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεύς, καὶ ἰδοὺ οὐλὴ λευκὴ ἐν τῷ δέρματι, καὶ αὕτη μετέβαλεν τρίχα λευκήν, καὶ ἀπὸ τοῦ ὑγιοῦς τῆς σαρκὸς τῆς ζώσης ἐν τῇ οὐλῇ,",
+        "VUL": "et videbit eum. Cumque color albus in cute fuerit, et capillorum mutaverit aspectum, ipsa quoque caro viva apparuerit :",
+        "SYN": "священник осмотрит, и если опухоль на коже бела, и волос изменился в белый, и на опухоли живое мясо,",
+        "NEO": "Le prêtre l’examinera. Et voici, il y a sur la peau une tumeur blanche, et cette tumeur a fait blanchir le poil, et il y a trace de chair vive dans la tumeur ;",
+        "NAB": "Should the priest, on examining him, find that there is a white scab on the skin which has turned the hair white and that there is raw flesh in it,",
+        "VAT_ES": "Si este descubre en la piel una hinchazón blancuzca, que ha emblanquecido el vello, y si en la parte hinchada se ha formado una úlcera,",
+        "CEI": "ed egli lo esaminerà; se vedrà che sulla pelle c'è un tumore bianco, che questo tumore ha fatto imbiancare il pelo e che nel tumore si trova carne viva,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "צָרַ֨עַת נוֹשֶׁ֤נֶת הִוא֙ בְּ/ע֣וֹר בְּשָׂר֔/וֹ וְ/טִמְּא֖/וֹ הַ/כֹּהֵ֑ן לֹ֣א יַסְגִּרֶ֔/נּוּ כִּ֥י טָמֵ֖א הֽוּא׃",
+        "LXX": "λέπρα παλαιουμένη ἐστίν· ἐν τῷ δέρματι τοῦ χρωτός ἐστιν· καὶ μιανεῖ αὐτὸν ὁ ἱερεὺς καὶ ἀφοριεῖ αὐτόν, ὅτι ἀκάθαρτός ἐστιν.",
+        "VUL": "lepra vetustissima judicabitur, atque inolita cuti. Contaminabit itaque eum sacerdos, et non recludet, quia perspicuæ immunditiæ est.",
+        "SYN": "то это застарелая проказа на коже тела его; и священник объявит его нечистым и заключит его, ибо он нечист.",
+        "NEO": "c’est une lèpre invétérée dans la peau de sa chair : le prêtre le déclarera impur ; il ne l’enfermera pas, car cet homme est impur.",
+        "NAB": "it is skin leprosy that has long developed. The priest shall declare the man unclean without first quarantining him, since he is certainly unclean.",
+        "VAT_ES": "entonces se trata de lepra crónica. El sacerdote debe declarar impuro al enfermo, sin necesidad de aislarlo, porque ciertamente es impuro.",
+        "CEI": "è lebbra inveterata nella pelle del corpo e il sacerdote lo dichiarerà immondo; non lo terrà isolato, perché certo è immondo."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/אִם פָּר֨וֹחַ תִּפְרַ֤ח הַ/צָּרַ֨עַת֙ בָּ/ע֔וֹר וְ/כִסְּתָ֣ה הַ/צָּרַ֗עַת אֵ֚ת כָּל ע֣וֹר הַ/נֶּ֔גַע מֵ/רֹאשׁ֖/וֹ וְ/עַד רַגְלָ֑י/ו לְ/כָל מַרְאֵ֖ה עֵינֵ֥י הַ/כֹּהֵֽן׃",
+        "LXX": "ἐὰν δὲ ἐξανθοῦσα ἐξανθήσῃ ἡ λέπρα ἐν τῷ δέρματι, καὶ καλύψῃ ἡ λέπρα πᾶν τὸ δέρμα τῆς ἁφῆς ἀπὸ κεφαλῆς ἕως ποδῶν καθ’ ὅλην τὴν ὅρασιν τοῦ ἱερέως,",
+        "VUL": "Sin autem effloruerit discurrens lepra in cute, et operuerit omnem cutem a capite usque ad pedes, quidquid sub aspectum oculorum cadit,",
+        "SYN": "Если же проказа расцветет на коже, и покроет проказа всю кожу больного от головы его до ног, сколько могут видеть глаза священника,",
+        "NEO": "Mais si la lèpre s’est épanouie sur la peau et couvre toute la peau de celui qui a la plaie, depuis la tête jusqu’aux pieds, selon tout ce que voient les yeux du prêtre,",
+        "NAB": "If leprosy breaks out on the skin and, as far as the priest can see, covers all the skin of the stricken man from head to foot,",
+        "VAT_ES": "Pero si la lepra prolifera hasta cubrir por completo la piel de la persona afectada, de la cabeza a los pies, en cuanto el sacerdote alcanza a ver,",
+        "CEI": "Se la lebbra si propaga sulla pelle in modo da coprire tutta la pelle di colui che ha la piaga, dal capo ai piedi, dovunque il sacerdote guardi,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֣ה הַ/כֹּהֵ֗ן וְ/הִנֵּ֨ה כִסְּתָ֤ה הַ/צָּרַ֨עַת֙ אֶת כָּל בְּשָׂר֔/וֹ וְ/טִהַ֖ר אֶת הַ/נָּ֑גַע כֻּלּ֛/וֹ הָפַ֥ךְ לָבָ֖ן טָה֥וֹר הֽוּא׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεύς, καὶ ἰδοὺ ἐκάλυψεν ἡ λέπρα πᾶν τὸ δέρμα τοῦ χρωτός, καὶ καθαριεῖ αὐτὸν ὁ ἱερεὺς τὴν ἁφήν· ὅτι πᾶν μετέβαλεν λευκόν, καθαρόν ἐστιν.",
+        "VUL": "considerabit eum sacerdos, et teneri lepra mundissima judicabit : eo quod omnis in candorem versa sit, et idcirco homo mundus erit.",
+        "SYN": "и увидит священник, что проказа покрыла все тело его, то он объявит больного чистым, потому что все превратилось в белое: он чист.",
+        "NEO": "le prêtre l’examinera, et si la lèpre couvre tout le corps, il déclarera pur celui qui a la plaie : il est devenu tout entier blanc ; il est pur.",
+        "NAB": "should the priest then, on examining him, find that the leprosy does cover his whole body, he shall declare the stricken man clean; since it has all turned white, the man is clean.",
+        "VAT_ES": "y si este, al hacer el examen, comprueba que la lepra cubre todo el cuerpo, entonces deberá declarar pura a la persona afectada. Es pura, porque se ha vuelto totalmente blanca.",
+        "CEI": "questi lo esaminerà; se vedrà che la lebbra copre tutto il corpo, dichiarerà mondo colui che ha la piaga: essendo tutto bianco, è mondo."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וּ/בְ/י֨וֹם הֵרָא֥וֹת בּ֛/וֹ בָּשָׂ֥ר חַ֖י יִטְמָֽא׃",
+        "LXX": "καὶ ᾗ ἂν ἡμέρᾳ ὀφθῇ ἐν αὐτῷ χρὼς ζῶν, μιανθήσεται·",
+        "VUL": "Quando vero caro vivens in eo apparuerit,",
+        "SYN": "Когда же окажется на нем живое мясо, то он нечист;",
+        "NEO": "Mais le jour où l’on apercevra en lui de la chair vive, il sera impur ;",
+        "NAB": "But as soon as raw flesh appears on him, he is unclean;",
+        "VAT_ES": "Sin embargo, apenas aparezca una úlcera, será impura.",
+        "CEI": "Ma quando apparirà in lui carne viva, sarà chiamato immondo."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֧ה הַ/כֹּהֵ֛ן אֶת הַ/בָּשָׂ֥ר הַ/חַ֖י וְ/טִמְּא֑/וֹ הַ/בָּשָׂ֥ר הַ/חַ֛י טָמֵ֥א ה֖וּא צָרַ֥עַת הֽוּא׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεὺς τὸν χρῶτα τὸν ὑγιῆ, καὶ μιανεῖ αὐτὸν ὁ χρὼς ὁ ὑγιής, ὅτι ἀκάθαρτός ἐστιν· λέπρα ἐστίν.",
+        "VUL": "tunc sacerdotis judicio polluetur, et inter immundos reputabitur : caro enim viva, si lepra aspergitur, immunda est.",
+        "SYN": "священник, увидев живое мясо, объявит его нечистым; живое мясо нечисто: это проказа.",
+        "NEO": "quand le prêtre aura vu la chair vive, il le déclarera impur ; la chair vive est impure, c’est la lèpre.",
+        "NAB": "on observing the raw flesh, the priest shall declare him unclean, because raw flesh is unclean; it is leprosy.",
+        "VAT_ES": "Cuando el sacerdote vea la úlcera, la declarará impura: la úlcera es impura porque es lepra.",
+        "CEI": "Il sacerdote, vista la carne viva, lo dichiarerà immondo; la carne viva è immonda: è lebbra."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "א֣וֹ כִ֥י יָשׁ֛וּב הַ/בָּשָׂ֥ר הַ/חַ֖י וְ/נֶהְפַּ֣ךְ לְ/לָבָ֑ן וּ/בָ֖א אֶל הַ/כֹּהֵֽן׃",
+        "LXX": "ἐὰν δὲ ἀποκαταστῇ ὁ χρὼς ὁ ὑγιὴς καὶ μεταβάλῃ λευκή, καὶ ἐλεύσεται πρὸς τὸν ἱερέα·",
+        "VUL": "Quod si rursum versa fuerit in alborem, et totum hominem operuerit,",
+        "SYN": "Если же живое мясо изменится и обратится в белое, пусть он придет к священнику;",
+        "NEO": "Si la chair vive change et devient blanche, il ira vers le prêtre.",
+        "NAB": "If, however, the raw flesh again turns white, he shall return to the priest;",
+        "VAT_ES": "Pero si la úlcera se vuelve a poner blanca, el enfermo irá de nuevo al sacerdote,",
+        "CEI": "Ma se la carne viva ridiventa bianca, egli vada dal sacerdote e il sacerdote lo esaminerà;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֨/הוּ֙ הַ/כֹּהֵ֔ן וְ/הִנֵּ֛ה נֶהְפַּ֥ךְ הַ/נֶּ֖גַע לְ/לָבָ֑ן וְ/טִהַ֧ר הַ/כֹּהֵ֛ן אֶת הַ/נֶּ֖גַע טָה֥וֹר הֽוּא׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεύς, καὶ ἰδοὺ μετέβαλεν ἡ ἁφὴ εἰς τὸ λευκόν, καὶ καθαριεῖ ὁ ἱερεὺς τὴν ἁφήν· καθαρός ἐστιν.",
+        "VUL": "considerabit eum sacerdos, et mundum esse decernet.",
+        "SYN": "священник осмотрит его, и если язва обратилась в белое, священник объявит больного чистым; он чист.",
+        "NEO": "Le prêtre l’examinera, et si la plaie est devenue blanche, le prêtre déclarera pur celui qui a la plaie : il est pur.",
+        "NAB": "should the latter, on examining him, find that the sore has indeed turned white, he shall declare the stricken man clean, and thus he will be clean.",
+        "VAT_ES": "y él lo examinará. Si la afección ha recuperado el color blanco, el sacerdote tendrá que declarar pura a la persona afectada, porque es pura.",
+        "CEI": "se vedrà che la piaga è ridiventata bianca, il sacerdote dichiarerà mondo colui che ha la piaga: è mondo."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וּ/בָשָׂ֕ר כִּֽי יִהְיֶ֥ה בֽ/וֹ בְ/עֹר֖/וֹ שְׁחִ֑ין וְ/נִרְפָּֽא׃",
+        "LXX": "Καὶ σὰρξ ἐὰν γένηται ἐν τῷ δέρματι αὐτοῦ ἕλκος, καὶ ὑγιασθῇ,",
+        "VUL": "Caro autem et cutis in qua ulcus natum est, et sanatum,",
+        "SYN": "Если у кого на коже тела был нарыв и зажил,",
+        "NEO": "Lorsqu’un homme aura eu sur son corps, sur sa peau, un ulcère, et que, cet ulcère étant guéri,",
+        "NAB": "\"If a man who had a boil on his skin which later healed,",
+        "VAT_ES": "Si en la piel de una persona aparece una inflamación, que luego se cura,",
+        "CEI": "Quando uno ha avuto sulla pelle della carne un'ulcera che sia guarita"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֞ה בִּ/מְק֤וֹם הַ/שְּׁחִין֙ שְׂאֵ֣ת לְבָנָ֔ה א֥וֹ בַהֶ֖רֶת לְבָנָ֣ה אֲדַמְדָּ֑מֶת וְ/נִרְאָ֖ה אֶל הַ/כֹּהֵֽן׃",
+        "LXX": "καὶ γένηται ἐν τῷ τόπῳ τοῦ ἕλκους οὐλὴ λευκὴ ἢ τηλαυγὴς λευκαίνουσα ἢ πυρρίζουσα, καὶ ὀφθήσεται τῷ ἱερεῖ.",
+        "VUL": "et in loco ulceris cicatrix alba apparuerit, sive subrufa, adducetur homo ad sacerdotem.",
+        "SYN": "и на месте нарыва появилась белая опухоль, или пятно белое или красноватое, то он должен явиться к священнику;",
+        "NEO": "il y aura, à la place de l’ulcère, une tumeur blanche ou une tache d’un blanc rougeâtre, cet homme se montrera au prêtre.",
+        "NAB": "should now in the place of the boil have a white scab or a pink blotch, he shall show himself to the priest.",
+        "VAT_ES": "pero en el lugar donde estaba la inflamación se forma una hinchazón blancuzca o una mancha de color rojizo pálido, el enfermo se presentará al sacerdote.",
+        "CEI": "e poi, sul luogo dell'ulcera, appaia un tumore bianco o una macchia bianca, rosseggiante, quel tale si mostrerà al sacerdote,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֣ה הַ/כֹּהֵ֗ן וְ/הִנֵּ֤ה מַרְאֶ֨/הָ֙ שָׁפָ֣ל מִן הָ/ע֔וֹר וּ/שְׂעָרָ֖/הּ הָפַ֣ךְ לָבָ֑ן וְ/טִמְּא֧/וֹ הַ/כֹּהֵ֛ן נֶֽגַע צָרַ֥עַת הִ֖וא בַּ/שְּׁחִ֥ין פָּרָֽחָה׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεύς, καὶ ἰδοὺ ἡ ὄψις ταπεινοτέρα τοῦ δέρματος, καὶ θρὶξ αὐτῆς μετέβαλεν εἰς λευκήν, καὶ μιανεῖ αὐτὸν ὁ ἱερεύς· λέπρα ἐστίν, ἐν τῷ ἕλκει ἐξήνθησεν.",
+        "VUL": "Qui cum viderit locum lepræ humiliorem carne reliqua, et pilos versos in candorem, contaminabit eum : plaga enim lepræ orta est in ulcere.",
+        "SYN": "священник осмотрит его, и если оно окажется ниже кожи, и волос его изменился в белый, то священник объявит его нечистым: это язва проказы, она расцвела на нарыве;",
+        "NEO": "Le prêtre l’examinera. Si la tache paraît plus enfoncée que la peau, et que le poil y soit devenu blanc, le prêtre le déclarera impur : c’est une plaie de lèpre qui a fait éruption dans l’ulcère.",
+        "NAB": "If the latter, on examination, sees that it is deeper than the skin and that the hair has turned white, he shall declare the man unclean; it is the sore of leprosy that has broken out in the boil.",
+        "VAT_ES": "Si el sacerdote ve que la zona afectada está más hundida que la piel, y que el vello se ha puesto blanco, deberá declararlo impuro: es un caso de lepra que ha proliferado en la inflamación.",
+        "CEI": "il quale l'esaminerà e se vedrà che la macchia è depressa rispetto alla pelle e che il pelo è diventato bianco, il sacerdote lo dichiarerà immondo; è una piaga di lebbra che è scoppiata nell'ulcera."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/אִ֣ם יִרְאֶ֣/נָּה הַ/כֹּהֵ֗ן וְ/הִנֵּ֤ה אֵֽין בָּ/הּ֙ שֵׂעָ֣ר לָבָ֔ן וּ/שְׁפָלָ֥ה אֵינֶ֛/נָּה מִן הָ/ע֖וֹר וְ/הִ֣יא כֵהָ֑ה וְ/הִסְגִּיר֥/וֹ הַ/כֹּהֵ֖ן שִׁבְעַ֥ת יָמִֽים׃",
+        "LXX": "ἐὰν δὲ ἴδῃ ὁ ἱερεύς, καὶ ἰδοὺ οὐκ ἔστιν ἐν αὐτῷ θρὶξ λευκή, καὶ ταπεινὸν μὴ ᾖ ἀπὸ τοῦ δέρματος τοῦ χρωτός, καὶ αὐτὴ ᾖ ἀμαυρά, ἀφοριεῖ αὐτὸν ὁ ἱερεὺς ἑπτὰ ἡμέρας.",
+        "VUL": "Quod si pilus coloris est pristini, et cicatrix subobscura, et vicina carne non est humilior, recludet eum septem diebus :",
+        "SYN": "если же священник увидит, что волос на ней не бел, и она не ниже кожи, и притом мало приметна, то священник заключит его на семь дней;",
+        "NEO": "Mais si le prêtre voit qu’il n’y a pas de poil blanc dans la tache, que celle-ci n’est pas plus enfoncée que la peau et qu’elle est devenue pâle, il séquestrera cet homme pendant sept jours.",
+        "NAB": "But if the priest, on examining him, finds that there is no white hair in it and that it is not deeper than the skin and is already dying out, the priest shall quarantine him for seven days.",
+        "VAT_ES": "Pero sin advierte que no hubo emblanquecimiento del vello ni hundimiento de la epidermis, sino que la afección fue cediendo, mantendrá al enfermo aislado durante siete días,",
+        "CEI": "Ma se il sacerdote, esaminandola, vede che nella macchia non ci sono peli bianchi, che non è depressa rispetto alla pelle e che si è attenuata, il sacerdote lo isolerà per sette giorni."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/אִם פָּשֹׂ֥ה תִפְשֶׂ֖ה בָּ/ע֑וֹר וְ/טִמֵּ֧א הַ/כֹּהֵ֛ן אֹת֖/וֹ נֶ֥גַע הִֽוא׃",
+        "LXX": "ἐὰν δὲ διαχέηται ἐν τῷ δέρματι, καὶ μιανεῖ αὐτὸν ὁ ἱερεύς· ἁφὴ λέπρας ἐστίν, ἐν τῷ ἕλκει ἐξήνθησεν·",
+        "VUL": "et si quidem creverit, adjudicabit eum lepræ ;",
+        "SYN": "если она станет очень распространяться по коже, то священник объявит его нечистым: это язва;",
+        "NEO": "Si, durant ce temps, la tache s’est étendue sur la peau, le prêtre le déclarera impur : c’est une plaie de lèpre.",
+        "NAB": "If it has then spread on the skin, the priest shall declare him unclean; the man is stricken.",
+        "VAT_ES": "y si la inflamación continúa extendiéndose por la piel, deberá declararlo impuro: es una verdadera afección.",
+        "CEI": "Se la macchia si allarga sulla pelle, il sacerdote lo dichiarerà immondo: è una piaga di lebbra."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/אִם תַּחְתֶּ֜י/הָ תַּעֲמֹ֤ד הַ/בַּהֶ֨רֶת֙ לֹ֣א פָשָׂ֔תָה צָרֶ֥בֶת הַ/שְּׁחִ֖ין הִ֑וא וְ/טִהֲר֖/וֹ הַ/כֹּהֵֽן׃",
+        "LXX": "ἐὰν δὲ κατὰ χώραν μείνῃ τὸ τηλαύγημα καὶ μὴ διαχέηται, οὐλὴ τοῦ ἕλκους ἐστίν, καὶ καθαριεῖ αὐτὸν ὁ ἱερεύς.",
+        "VUL": "sin autem steterit in loco suo, ulceris est cicatrix, et homo mundus erit.",
+        "SYN": "если же пятно остается на своем месте и не распространяется, то это воспаление нарыва, и священник объявит его чистым.",
+        "NEO": "Si au contraire la tache est restée à sa place, sans s’étendre, c’est la cicatrice de l’ulcère : le prêtre le déclarera pur.",
+        "NAB": "But if the blotch remains in its place without spreading, it is merely the scar of the boil; the priest shall therefore declare him clean.",
+        "VAT_ES": "En cambio, si la mancha permanece estacionaria y no se extiende, es la cicatriz de la inflamación, y por lo tanto, el sacerdote deberá declarar pura a la persona afectada.",
+        "CEI": "Ma se la macchia è rimasta allo stesso punto, senza allargarsi, è una cicatrice di ulcera e il sacerdote lo dichiarerà mondo."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "א֣וֹ בָשָׂ֔ר כִּֽי יִהְיֶ֥ה בְ/עֹר֖/וֹ מִכְוַת אֵ֑שׁ וְֽ/הָיְתָ֞ה מִֽחְיַ֣ת הַ/מִּכְוָ֗ה בַּהֶ֛רֶת לְבָנָ֥ה אֲדַמְדֶּ֖מֶת א֥וֹ לְבָנָֽה׃",
+        "LXX": "Καὶ σὰρξ ἐὰν γένηται ἐν τῷ δέρματι αὐτοῦ κατάκαυμα πυρός, καὶ γένηται ἐν τῷ δέρματι αὐτοῦ τὸ ὑγιασθὲν τοῦ κατακαύματος αὐγάζον τηλαυγὲς λευκόν, ὑποπυρρίζον ἢ ἔκλευκον,",
+        "VUL": "Caro autem et cutis, quam ignis exusserit, et sanata albam sive rufam habuerit cicatricem,",
+        "SYN": "Или если у кого на коже тела будет ожог, и на зажившем ожоге окажется красноватое или белое пятно,",
+        "NEO": "Lorsqu’un homme aura eu sur le corps, sur la peau, une brûlure faite par le feu, s’il se forme sur la trace de la brûlure une tache blanche ou d’un blanc rougeâtre,",
+        "NAB": "\"If a man had a burn on his skin, and the proud flesh of the burn now becomes a pink or a white blotch,",
+        "VAT_ES": "Si una persona se quema con fuego y se forma sobre la quemadura una mancha lustrosa de color rojizo pálido o blancuzco,",
+        "CEI": "Quando uno ha sulla pelle del corpo una scottatura prodotta da fuoco e su questa appaia una macchia lucida, bianca, rossastra o soltanto bianca,"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֣ה אֹתָ֣/הּ הַ/כֹּהֵ֡ן וְ/הִנֵּ֣ה נֶהְפַּךְ֩ שֵׂעָ֨ר לָבָ֜ן בַּ/בַּהֶ֗רֶת וּ/מַרְאֶ֨/הָ֙ עָמֹ֣ק מִן הָ/ע֔וֹר צָרַ֣עַת הִ֔וא בַּ/מִּכְוָ֖ה פָּרָ֑חָה וְ/טִמֵּ֤א אֹת/וֹ֙ הַ/כֹּהֵ֔ן נֶ֥גַע צָרַ֖עַת הִֽוא׃",
+        "LXX": "καὶ ὄψεται αὐτὸν ὁ ἱερεύς, καὶ ἰδοὺ μετέβαλεν θρὶξ λευκὴ εἰς τὸ αὐγάζον, καὶ ἡ ὄψις αὐτοῦ ταπεινὴ ἀπὸ τοῦ δέρματος, λέπρα ἐστίν, ἐν τῷ κατακαύματι ἐξήνθησεν· καὶ μιανεῖ αὐτὸν ὁ ἱερεύς, ἁφὴ λέπρας ἐστίν.",
+        "VUL": "considerabit eam sacerdos : et ecce versa est in alborem, et locus ejus reliqua cute est humilior, contaminabit eum, quia plaga lepræ in cicatrice orta est.",
+        "SYN": "и священник увидит, что волос на пятне изменился в белый, и оно окажется углубленным в коже, то это проказа, она расцвела на ожоге; и священник объявит его нечистым: это язва проказы;",
+        "NEO": "le prêtre l’examinera. Si le poil est devenu blanc dans la tache et qu’elle paraisse plus profonde que la peau, c’est la lèpre, elle a fait éruption dans la brûlure ; le prêtre déclarera cet homme impur ; c’est une plaie de lèpre.",
+        "NAB": "the priest shall examine it. If the hair has turned white on the blotch and this seems to have penetrated below the skin, it is leprosy that has broken out in the burn; the priest shall therefore declare him unclean and stricken with leprosy.",
+        "VAT_ES": "el sacerdote la examinará. Si en la mancha lustrosa el vello se ha puesto blanco y la parte afectada aparece más hundida que el resto de la piel, se trata de lepra que ha proliferado en la quemadura. El sacerdote deberá declarar impuro al enfermo, porque es lepra.",
+        "CEI": "il sacerdote l'esaminerà; se vedrà che il pelo della macchia è diventato bianco e la macchia appare depressa rispetto alla pelle, è lebbra scoppiata nella scottatura. Il sacerdote lo dichiarerà immondo: è una piaga di lebbra."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/אִ֣ם יִרְאֶ֣/נָּה הַ/כֹּהֵ֗ן וְ/הִנֵּ֤ה אֵֽין בַּ/בֶּהֶ֨רֶת֙ שֵׂעָ֣ר לָבָ֔ן וּ/שְׁפָלָ֥ה אֵינֶ֛/נָּה מִן הָ/ע֖וֹר וְ/הִ֣וא כֵהָ֑ה וְ/הִסְגִּיר֥/וֹ הַ/כֹּהֵ֖ן שִׁבְעַ֥ת יָמִֽים׃",
+        "LXX": "ἐὰν δὲ ἴδῃ ὁ ἱερεύς, καὶ ἰδοὺ οὐκ ἔστιν ἐν τῷ αὐγάζοντι θρὶξ λευκή, καὶ ταπεινὸν μὴ ἦν ἀπὸ τοῦ δέρματος, αὐτὸ δὲ ἀμαυρόν, καὶ ἀφοριεῖ αὐτὸν ὁ ἱερεὺς ἑπτὰ ἡμέρας.",
+        "VUL": "Quod si pilorum color non fuerit immutatus, nec humilior plaga carne reliqua, et ipsa lepræ species fuerit subobscura, recludet eum septem diebus,",
+        "SYN": "если же священник увидит, что волос на пятне не бел, и оно не ниже кожи, и притом мало приметно, то священник заключит его на семь дней;",
+        "NEO": "Mais si le prêtre voit qu’il n’y a pas de poil blanc dans la tache, qu’elle n’est pas plus enfoncée que la peau et qu’elle est devenue pâle, il séquestrera cet homme pendant sept jours.",
+        "NAB": "But if the priest, on examining it, finds that there is no white hair on the blotch and that this is not deeper than the skin and is already dying out, the priest shall quarantine him for seven days.",
+        "VAT_ES": "Pero si el sacerdote comprueba que no hay emblanquecimiento del vello ni hundimiento de la epidermis, y que la mancha ha ido cediendo, mantendrá aislado al enfermo durante siete días.",
+        "CEI": "Ma se il sacerdote, esaminandola, vede che non c'è pelo bianco nella macchia e che essa non è depressa rispetto alla pelle e si è attenuata, il sacerdote lo isolerà per sette giorni."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֥/הוּ הַ/כֹּהֵ֖ן בַּ/יּ֣וֹם הַ/שְּׁבִיעִ֑י אִם פָּשֹׂ֤ה תִפְשֶׂה֙ בָּ/ע֔וֹר וְ/טִמֵּ֤א הַ/כֹּהֵן֙ אֹת֔/וֹ נֶ֥גַע צָרַ֖עַת הִֽוא׃",
+        "LXX": "καὶ ὄψεται αὐτὸν ὁ ἱερεὺς τῇ ἡμέρᾳ τῇ ἑβδόμῃ, ἐὰν δὲ διαχύσει διαχέηται ἐν τῷ δέρματι, καὶ μιανεῖ αὐτὸν ὁ ἱερεύς· ἁφὴ λέπρας ἐστίν, ἐν τῷ ἕλκει ἐξήνθησεν.",
+        "VUL": "et die septimo contemplabitur : si creverit in cute lepra, contaminabit eum.",
+        "SYN": "в седьмой день священник осмотрит его, и если оно очень распространяется по коже, то священник объявит его нечистым: это язва проказы;",
+        "NEO": "Le prêtre l’examinera le septième jour. Si la tache s’est étendue sur la peau, le prêtre le déclarera impur : c’est une plaie de lèpre.",
+        "NAB": "Should the priest, when examining it on the seventh day, find that it has spread at all on the skin, he shall declare the man unclean and stricken with leprosy.",
+        "VAT_ES": "Al séptimo día lo examinará, y si la afección se ha extendido por la piel, el sacerdote deberá declararlo impuro: es un caso de lepra.",
+        "CEI": "Al settimo giorno il sacerdote lo esaminerà e se la macchia si è diffusa sulla pelle, il sacerdote lo dichiarerà immondo: è una piaga di lebbra."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/אִם תַּחְתֶּי/הָ֩ תַעֲמֹ֨ד הַ/בַּהֶ֜רֶת לֹא פָשְׂתָ֤ה בָ/עוֹר֙ וְ/הִ֣וא כֵהָ֔ה שְׂאֵ֥ת הַ/מִּכְוָ֖ה הִ֑וא וְ/טִֽהֲר/וֹ֙ הַ/כֹּהֵ֔ן כִּֽי צָרֶ֥בֶת הַ/מִּכְוָ֖ה הִֽוא׃",
+        "LXX": "ἐὰν δὲ κατὰ χώραν μείνῃ τὸ αὐγάζον καὶ μὴ διαχυθῇ ἐν τῷ δέρματι, αὐτὴ δὲ ᾖ ἀμαυρά, ἡ οὐλὴ τοῦ κατακαύματός ἐστιν, καὶ καθαριεῖ αὐτὸν ὁ ἱερεύς· ὁ γὰρ χαρακτὴρ τοῦ κατακαύματός ἐστιν.",
+        "VUL": "Sin autem in loco suo candor steterit non satis clarus, plaga combustionis est, et idcirco mundabitur, quia cicatrix est combusturæ.",
+        "SYN": "если же пятно остается на своем месте и не распространяется по коже, и притом мало приметно, то это опухоль от ожога; священник объявит его чистым, ибо это воспаление от ожога.",
+        "NEO": "Mais si la tache est restée à la même place, sans s’étendre sur la peau, et qu’elle soit devenue pâle, c’est la tumeur de la brûlure ; le prêtre le déclarera pur, car c’est la cicatrice de la brûlure.",
+        "NAB": "But if the blotch remains in its place without spreading on the skin and is already dying out, it is merely the scab of the burn; the priest shall therefore declare the man clean, since it is only the scar of the burn.",
+        "VAT_ES": "Pero si la mancha permanece estacionaria, sin extenderse por la piel, y pierde intensidad, es simplemente efecto de la quemadura. El sacerdote tendrá que declararlo puro, porque no es más que la cicatriz de la quemadura.",
+        "CEI": "Ma se la macchia è rimasta ferma nella stessa zona e non si è diffusa sulla pelle, ma si è attenuata, è un tumore di bruciatura; il sacerdote dichiarerà quel tale mondo, perché si tratta di una cicatrice della bruciatura."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/אִישׁ֙ א֣וֹ אִשָּׁ֔ה כִּֽי יִהְיֶ֥ה ב֖/וֹ נָ֑גַע בְּ/רֹ֖אשׁ א֥וֹ בְ/זָקָֽן׃",
+        "LXX": "Καὶ ἀνδρὶ καὶ γυναικὶ ἐὰν γένηται ἐν αὐτοῖς ἁφὴ λέπρας ἐν τῇ κεφαλῇ ἢ ἐν τῷ πώγωνι,",
+        "VUL": "Vir, sive mulier, in cujus capite vel barba germinaverit lepra, videbit eos sacerdos.",
+        "SYN": "Если у мужчины или у женщины будет язва на голове или на бороде,",
+        "NEO": "Lorsqu’un homme ou une femme aura une plaie à la tête ou au menton, le prêtre examinera la plaie.",
+        "NAB": "\"When a man or a woman has a sore on the head or cheek,",
+        "VAT_ES": "Si un hombre o una mujer tienen una afección en la cabeza o en el mentón,",
+        "CEI": "Quando un uomo o una donna ha una piaga sul capo o nella barba,"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֨ה הַ/כֹּהֵ֜ן אֶת הַ/נֶּ֗גַע וְ/הִנֵּ֤ה מַרְאֵ֨/הוּ֙ עָמֹ֣ק מִן הָ/ע֔וֹר וּ/ב֛/וֹ שֵׂעָ֥ר צָהֹ֖ב דָּ֑ק וְ/טִמֵּ֨א אֹת֤/וֹ הַ/כֹּהֵן֙ נֶ֣תֶק ה֔וּא צָרַ֧עַת הָ/רֹ֛אשׁ א֥וֹ הַ/זָּקָ֖ן הֽוּא׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεὺς τὴν ἁφήν, καὶ ἰδοὺ ἡ ὄψις αὐτῆς ἐνκοιλοτέρα τοῦ δέρματος, ἐν αὐτῇ δὲ θρὶξ ξανθίζουσα λεπτή, καὶ μιανεῖ αὐτὸν ὁ ἱερεύς· θραῦσμά ἐστιν, λέπρα τῆς κεφαλῆς ἢ λέπρα τοῦ πώγωνός ἐστιν.",
+        "VUL": "Et siquidem humilior fuerit locus carne reliqua, et capillus flavus, solitoque subtilior, contaminabit eos, quia lepra capitis ac barbæ est.",
+        "SYN": "и осмотрит священник язву, и она окажется углубленною в коже, и волос на ней желтоватый тонкий, то священник объявит их нечистыми: это паршивость, это проказа на голове или на бороде;",
+        "NEO": "Si elle paraît plus profonde que la peau, et qu’il y ait du poil jaunâtre et grêle, le prêtre déclarera cet homme impur : c’est le nétheq, c’est la lèpre de la tête ou du menton.",
+        "NAB": "should the priest, on examining it, find that the sore has penetrated below the skin and that there is fine yellow hair on it, the priest shall declare the person unclean, for this is scall, a leprous disease of the head or cheek.",
+        "VAT_ES": "el sacerdote examinará la parte afectada. Si esta aparece más hundida que el resto de la piel, y en ella el pelo se ha vuelto amarillento y débil, el sacerdote tendrá que declarar impuro al enfermo: es tiña, o sea, lepra de la cabeza y del mentón.",
+        "CEI": "il sacerdote esaminerà la piaga; se riscontra che essa è depressa rispetto alla pelle e che v'è del pelo gialliccio e sottile, il sacerdote lo dichiarerà immondo: è tigna, lebbra del capo o della barba."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/כִֽי יִרְאֶ֨ה הַ/כֹּהֵ֜ן אֶת נֶ֣גַע הַ/נֶּ֗תֶק וְ/הִנֵּ֤ה אֵין מַרְאֵ֨/הוּ֙ עָמֹ֣ק מִן הָ/ע֔וֹר וְ/שֵׂעָ֥ר שָׁחֹ֖ר אֵ֣ין בּ֑/וֹ וְ/הִסְגִּ֧יר הַ/כֹּהֵ֛ן אֶת נֶ֥גַע הַ/נֶּ֖תֶק שִׁבְעַ֥ת יָמִֽים׃",
+        "LXX": "καὶ ἐὰν ἴδῃ ὁ ἱερεὺς τὴν ἁφὴν τοῦ τραύματος, καὶ ἰδοὺ οὐχ ἡ ὄψις ἐνκοιλοτέρα τοῦ δέρματος, καὶ θρὶξ ξανθίζουσα οὐκ ἔστιν ἐν αὐτῇ, καὶ ἀφοριεῖ ὁ ἱερεὺς τὴν ἁφὴν τοῦ θραύσματος ἑπτὰ ἡμέρας·",
+        "VUL": "Sin autem viderit locum maculæ æqualem vicinæ carni, et capillum nigrum : recludet eum septem diebus,",
+        "SYN": "если же священник осмотрит язву паршивости и она не окажется углубленною в коже, и волос на ней не черный, то священник _имеющего_ язву паршивости заключит на семь дней;",
+        "NEO": "Si le prêtre voit que la plaie du nétheq ne paraît pas plus profonde que la peau, sans pourtant qu’il y ait poil noir, le prêtre séquestrera pendant sept jours celui qui a la plaie du nétheq.",
+        "NAB": "But if the priest, on examining the scall sore, finds that it has not penetrated below the skin, though the hair on it may not be black, the priest shall quarantine the person with scall sore for seven days,",
+        "VAT_ES": "Pero si el sacerdote comprueba que la zona afectada de tiña no aparece más hundida que el resto de la piel, y que en ella no hay pelo negro, mantendrá aislado al enfermo durante siete días.",
+        "CEI": "Ma se il sacerdote, esaminando la piaga della tigna, riscontra che non è depressa rispetto alla pelle e che non vi è pelo scuro, il sacerdote isolerà per sette giorni colui che ha la piaga della tigna."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֨ה הַ/כֹּהֵ֣ן אֶת הַ/נֶּגַע֮ בַּ/יּ֣וֹם הַ/שְּׁבִיעִי֒ וְ/הִנֵּה֙ לֹא פָשָׂ֣ה הַ/נֶּ֔תֶק וְ/לֹא הָ֥יָה ב֖/וֹ שֵׂעָ֣ר צָהֹ֑ב וּ/מַרְאֵ֣ה הַ/נֶּ֔תֶק אֵ֥ין עָמֹ֖ק מִן הָ/עֽוֹר׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεὺς τὴν ἁφὴν τῇ ἡμέρᾳ τῇ ἑβδόμῃ, καὶ ἰδοὺ οὐ διεχύθη τὸ θραῦσμα, καὶ θρὶξ ξανθίζουσα οὐκ ἔστιν ἐν αὐτῇ, καὶ ἡ ὄψις τοῦ θραύσματος οὐκ ἔστιν κοίλη ἀπὸ τοῦ δέρματος,",
+        "VUL": "et die septimo intuebitur. Si non creverit macula, et capillus sui coloris est, et locus plagæ carni reliquæ æqualis :",
+        "SYN": "в седьмой день священник осмотрит язву, и если паршивость не распространяется, и нет на ней желтоватого волоса, и паршивость не окажется углубленною в коже,",
+        "NEO": "Le septième jour, le prêtre examinera la plaie. Si le nétheq ne s’est pas étendu, qu’il ne s’y trouve aucun poil jaunâtre et que le nétheq ne paraisse pas plus profond que la peau,",
+        "NAB": "and on the seventh day again examine the sore. If the scall has not spread and has no yellow hair on it and does not seem to have penetrated below the skin,",
+        "VAT_ES": "Al séptimo día examinará la afección, y si tiña no se ha propagado ni hay pelo amarillento, y la zona afectada no aparece más hundida que el resto de la piel,",
+        "CEI": "Se il sacerdote, esaminando al settimo giorno la piaga, vedrà che la tigna non si è allargata e che non v'è pelo gialliccio e che la tigna non appare depressa rispetto alla pelle,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/הִ֨תְגַּלָּ֔ח וְ/אֶת הַ/נֶּ֖תֶק לֹ֣א יְגַלֵּ֑חַ וְ/הִסְגִּ֨יר הַ/כֹּהֵ֧ן אֶת הַ/נֶּ֛תֶק שִׁבְעַ֥ת יָמִ֖ים שֵׁנִֽית׃",
+        "LXX": "καὶ ξυρηθήσεται τὸ δέρμα, τὸ δὲ θραῦσμα οὐ ξυρηθήσεται, καὶ ἀφοριεῖ ὁ ἱερεὺς τὸ θραῦσμα ἑπτὰ ἡμέρας τὸ δεύτερον.",
+        "VUL": "radetur homo absque loco maculæ, et includetur septem diebus aliis.",
+        "SYN": "то _больного_ должно остричь, но паршивого места не остригать, и священник должен паршивого вторично заключить на семь дней;",
+        "NEO": "celui qui a le nétheq se rasera, mais il ne rasera pas l’endroit de la plaie, et le prêtre le séquestrera une deuxième fois pendant sept jours.",
+        "NAB": "the man shall shave himself, but not on the diseased spot. Then the priest shall quarantine him for another seven days.",
+        "VAT_ES": "el enfermo se afeitará, excluida la parte afectada, y el sacerdote lo mantendrá aislado siete días más.",
+        "CEI": "quel tale si raderà, ma non raderà il luogo dove è la tigna; il sacerdote lo terrà isolato per altri sette giorni."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְ/רָאָה֩ הַ/כֹּהֵ֨ן אֶת הַ/נֶּ֜תֶק בַּ/יּ֣וֹם הַ/שְּׁבִיעִ֗י וְ֠/הִנֵּה לֹא פָשָׂ֤ה הַ/נֶּ֨תֶק֙ בָּ/ע֔וֹר וּ/מַרְאֵ֕/הוּ אֵינֶ֥/נּוּ עָמֹ֖ק מִן הָ/ע֑וֹר וְ/טִהַ֤ר אֹת/וֹ֙ הַ/כֹּהֵ֔ן וְ/כִבֶּ֥ס בְּגָדָ֖י/ו וְ/טָהֵֽר׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεὺς τὸ θραῦσμα τῇ ἡμέρᾳ τῇ ἑβδόμῃ, καὶ ἰδοὺ οὐ διεχύθη τὸ θραῦσμα ἐν τῷ δέρματι μετὰ τὸ ξυρηθῆναι αὐτόν, καὶ ἡ ὄψις τοῦ θραύσματος οὐκ ἔστιν κοίλη ἀπὸ τοῦ δέρματος, καὶ καθαριεῖ αὐτὸν ὁ ἱερεύς· καὶ πλυνάμενος τὰ ἱμάτια καθαρὸς ἔσται.",
+        "VUL": "Si die septimo visa fuerit stetisse plaga in loco suo, nec humilior carne reliqua, mundabit eum : lotisque vestibus suis, mundus erit.",
+        "SYN": "в седьмой день священник осмотрит паршивость, и если паршивость не распространяется по коже и не окажется углубленною в коже, то священник объявит его чистым; пусть он омоет одежды свои, и будет чист.",
+        "NEO": "Le septième jour, le prêtre examinera le nétheq : si le nétheq ne s’est pas étendu sur la peau et qu’il ne paraisse pas plus profond que la peau, le prêtre déclarera cet homme pur : il lavera ses vêtements, et il sera pur.",
+        "NAB": "If the priest, when examining the scall on the seventh day, finds that it has not spread on the skin and that it has not penetrated below the skin, he shall declare the man clean; the latter shall wash his garments, and thus he will be clean.",
+        "VAT_ES": "Al séptimo día lo someterá a un nuevo examen, y si la tiña no se ha extendido por la piel y la zona afectada no aparece más hundida, el sacerdote tendrá que declararlo puro.",
+        "CEI": "Al settimo giorno, il sacerdote esaminerà la tigna; se riscontra che la tigna non si è allargata sulla pelle e non appare depressa rispetto alla pelle, il sacerdote lo dichiarerà mondo; egli si laverà le vesti e sarà mondo."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וְ/אִם פָּשֹׂ֥ה יִפְשֶׂ֛ה הַ/נֶּ֖תֶק בָּ/ע֑וֹר אַחֲרֵ֖י טָהֳרָתֽ/וֹ׃",
+        "LXX": "ἐὰν δὲ διαχύσει διαχέηται τὸ θραῦσμα ἐν τῷ δέρματι μετὰ τὸ καθαρισθῆναι αὐτόν,",
+        "VUL": "Sin autem post emundationem rursus creverit macula in cute,",
+        "SYN": "Если же после очищения его будет очень распространяться паршивость по коже,",
+        "NEO": "Si, cependant, après qu’il a été déclaré pur, le nétheq s’étend sur la peau,",
+        "NAB": "But if the scall spreads at all on his skin after he has been declared clean,",
+        "VAT_ES": "Si después de haber sido declarado puro, la tiña se propaga por la piel,",
+        "CEI": "Ma se, dichiarato mondo, la tigna si è allargata sulla pelle,"
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֨/הוּ֙ הַ/כֹּהֵ֔ן וְ/הִנֵּ֛ה פָּשָׂ֥ה הַ/נֶּ֖תֶק בָּ/ע֑וֹר לֹֽא יְבַקֵּ֧ר הַ/כֹּהֵ֛ן לַ/שֵּׂעָ֥ר הַ/צָּהֹ֖ב טָמֵ֥א הֽוּא׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεύς, καὶ ἰδοὺ διακέχυται τὸ θραῦσμα ἐν τῷ δέρματι, οὐκ ἐπισκέψεται ὁ ἱερεὺς περὶ τῆς τριχὸς τῆς ξανθῆς, ὅτι ἀκάθαρτός ἐστιν·",
+        "VUL": "non quæret amplius utrum capillus in flavum colorem sit immutatus, quia aperte immundus est.",
+        "SYN": "и священник увидит, что паршивость распространяется по коже, то священник пусть не ищет желтоватого волоса: он нечист.",
+        "NEO": "le prêtre l’examinera ; et si le nétheq s’est étendu sur la peau, le prêtre n’aura pas à rechercher s’il y a du poil jaunâtre : l’homme est impur.",
+        "NAB": "the priest shall again examine it. If the scall has indeed spread on the skin, he need not look for yellow hair; the man is surely unclean.",
+        "VAT_ES": "el sacerdote lo examinará, y si la tiña se ha extendido, no necesitará verificar si hay pelo amarillento: el enfermo es impuro.",
+        "CEI": "il sacerdote l'esaminerà; se nota che la tigna si è allargata sulla pelle, non cercherà se vi è il pelo giallo; quel tale è immondo."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וְ/אִם בְּ/עֵינָי/ו֩ עָמַ֨ד הַ/נֶּ֜תֶק וְ/שֵׂעָ֨ר שָׁחֹ֧ר צָֽמַח בּ֛/וֹ נִרְפָּ֥א הַ/נֶּ֖תֶק טָה֣וֹר ה֑וּא וְ/טִהֲר֖/וֹ הַ/כֹּהֵֽן׃",
+        "LXX": "ἐὰν δὲ ἐνώπιον μείνῃ τὸ θραῦσμα ἐπὶ χώρας καὶ θρὶξ μέλαινα ἀνατείλῃ ἐν αὐτῷ, ὑγίακεν τὸ θραῦσμα, καθαρόν ἐστιν, καὶ καθαριεῖ αὐτὸν ὁ ἱερεύς.",
+        "VUL": "Porro si steterit macula, et capilli nigri fuerint, noverit hominem sanatum esse, et confidenter eum pronuntiet mundum.",
+        "SYN": "Если же паршивость остается в своем виде, и показывается на ней волос черный, то паршивость прошла, он чист; священник объявит его чистым.",
+        "NEO": "Mais si le nétheq lui paraît n’avoir pas fait de progrès, et qu’il y ait poussé des poils noirs, le nétheq est guéri : l’homme est pur, et le prêtre le déclarera pur.",
+        "NAB": "If, however, he judges that the scall has remained in its place and that black hair has grown on it, the disease has been healed; the man is clean, and the priest shall declare him clean.",
+        "VAT_ES": "En cambio, si advierte que la tiña permanece estacionaria y que en la zona afectada ha crecido pelo negro, la tiña está curada. La persona es pura, y el sacerdote deberá declararla como tal.",
+        "CEI": "Ma se vedrà che la tigna si è fermata e vi è cresciuto il pelo scuro, la tigna è guarita; quel tale è mondo e il sacerdote lo dichiarerà tale."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וְ/אִישׁ֙ אֽוֹ אִשָּׁ֔ה כִּֽי יִהְיֶ֥ה בְ/עוֹר בְּשָׂרָ֖/ם בֶּהָרֹ֑ת בֶּהָרֹ֖ת לְבָנֹֽת׃",
+        "LXX": "Καὶ ἀνδρὶ ἢ γυναικὶ ἐὰν γένηται ἐν δέρματι τῆς σαρκὸς αὐτοῦ αὔγασμα, αὐγάζοντα λευκαθίζοντα,",
+        "VUL": "Vir, sive mulier, in cujus cute candor apparuerit,",
+        "SYN": "Если у мужчины или у женщины на коже тела их будут пятна, пятна белые,",
+        "NEO": "Lorsqu’un homme ou une femme aura sur la peau de sa chair des taches blanches,",
+        "NAB": "\"When the skin of a man or a woman is spotted with white blotches,",
+        "VAT_ES": "Si un hombre o una mujer tienen en la piel manchas lustrosas de color blanco,",
+        "CEI": "Quando un uomo o una donna ha sulla pelle del corpo macchie lucide, bianche,"
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֣ה הַ/כֹּהֵ֗ן וְ/הִנֵּ֧ה בְ/עוֹר בְּשָׂרָ֛/ם בֶּהָרֹ֖ת כֵּה֣וֹת לְבָנֹ֑ת בֹּ֥הַק ה֛וּא פָּרַ֥ח בָּ/ע֖וֹר טָה֥וֹר הֽוּא׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεύς, καὶ ἰδοὺ ἐν δέρματι τῆς σαρκὸς αὐτοῦ αὐγάσματα αὐγάζοντα λευκαθίζοντα, ἀλφός ἐστιν, καθαρός ἐστιν· ἐξανθήσει ἐν τῷ δέρματι τῆς σαρκὸς αὐτοῦ, καθαρός ἐστιν.",
+        "VUL": "intuebitur eos sacerdos. Si deprehenderit subobscurum alborem lucere in cute, sciat non esse lepram, sed maculam coloris candidi, et hominem mundum.",
+        "SYN": "и священник увидит, что на коже тела их пятна бледно-белые, то это лишай, расцветший на коже: он чист.",
+        "NEO": "le prêtre l’examinera. S’il y a sur la peau de sa chair des taches d’un blanc pâle, c’est un exanthème qui a poussé sur la peau : il est pur.",
+        "NAB": "the priest shall make an examination. If the blotches on the skin are white and already dying out, it is only tetter that has broken out on the skin, and the person therefore is clean.",
+        "VAT_ES": "y el sacerdote ve que las manchas son de un blanco tenue, se trata de una eczema que ha brotado en la piel: esa persona es pura.",
+        "CEI": "il sacerdote le esaminerà; se vedrà che le macchie sulla pelle del loro corpo sono di un bianco pallido, è un'eruzione cutanea; quel tale è mondo."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וְ/אִ֕ישׁ כִּ֥י יִמָּרֵ֖ט רֹאשׁ֑/וֹ קֵרֵ֥חַ ה֖וּא טָה֥וֹר הֽוּא׃",
+        "LXX": "ἐὰν δέ τινι μαδήσῃ ἡ κεφαλὴ αὐτοῦ, φαλακρός ἐστιν, καθαρός ἐστιν·",
+        "VUL": "Vir, de cujus capite capilli fluunt, calvus et mundus est :",
+        "SYN": "Если у кого на голове вылезли _волосы,_ то это плешивый: он чист;",
+        "NEO": "Lorsqu’un homme a perdu ses cheveux sur la tête, il est chauve, mais il est pur.",
+        "NAB": "\"When a man loses the hair of his head, he is not unclean merely because of his bald crown.",
+        "VAT_ES": "Si a un hombre se le cae el cabello y queda calvo, es puro.",
+        "CEI": "Chi perde i capelli del capo è calvo, ma è mondo."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וְ/אִם֙ מִ/פְּאַ֣ת פָּנָ֔י/ו יִמָּרֵ֖ט רֹאשׁ֑/וֹ גִּבֵּ֥חַ ה֖וּא טָה֥וֹר הֽוּא׃",
+        "LXX": "ἐὰν δὲ κατὰ πρόσωπον μαδήσῃ ἡ κεφαλὴ αὐτοῦ, ἀναφάλαντός ἐστιν, καθαρός ἐστιν.",
+        "VUL": "et si a fronte ceciderint pili, recalvaster et mundus est.",
+        "SYN": "а если на передней стороне головы вылезли _волосы,_ то это лысый: он чист.",
+        "NEO": "Si ses cheveux sont tombés du côté de la face, il a le front chauve, mais il est pur.",
+        "NAB": "So too, if he loses the hair on the front of his head, he is not unclean merely because of his bald forehead.",
+        "VAT_ES": "Si pierde el cabello en la parte delantera de la cabeza y se vuelve calvo sobre la frente, también es puro.",
+        "CEI": "Se i capelli gli sono caduti dal lato della fronte, è calvo davanti, ma è mondo."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וְ/כִֽי יִהְיֶ֤ה בַ/קָּרַ֨חַת֙ א֣וֹ בַ/גַּבַּ֔חַת נֶ֖גַע לָבָ֣ן אֲדַמְדָּ֑ם צָרַ֤עַת פֹּרַ֨חַת֙ הִ֔וא בְּ/קָרַחְתּ֖/וֹ א֥וֹ בְ/גַבַּחְתּֽ/וֹ׃",
+        "LXX": "ἐὰν δὲ γένηται ἐν τῷ φαλακρώματι αὐτοῦ ἢ ἐν τῷ ἀναφαλαντώματι αὐτοῦ ἁφὴ λευκὴ ἢ πυρρίζουσα, λέπρα ἐστὶν ἐν τῷ φαλακρώματι αὐτοῦ ἤ ἐν τῷ ἀναφαλαντώματι αὐτοῦ·",
+        "VUL": "Sin autem in calvitio sive in recalvatione albus vel rufus color fuerit exortus,",
+        "SYN": "Если же на плеши или на лысине будет белое или красноватое пятно, то на плеши его или на лысине его расцвела проказа;",
+        "NEO": "Mais si, dans la partie chauve de devant ou de derrière, il se trouve une plaie d’un blanc rougeâtre, c’est la lèpre qui a fait éruption dans la partie chauve de derrière ou de devant.",
+        "NAB": "But when there is a pink sore on his bald crown or bald forehead, it is leprosy that is breaking out there.",
+        "VAT_ES": "Pero si en la parte calva, ya sea sobre la frente o en la parte posterior de la cabeza, aparece una afección de color rojizo pálido, es lepra que ha proliferado en la parte calva.",
+        "CEI": "Ma se sulla calvizie del cranio o della fronte appare una piaga bianca tendente al rosso, è lebbra scoppiata sulla calvizie del cranio o della fronte;"
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֨ה אֹת֜/וֹ הַ/כֹּהֵ֗ן וְ/הִנֵּ֤ה שְׂאֵת הַ/נֶּ֨גַע֙ לְבָנָ֣ה אֲדַמְדֶּ֔מֶת בְּ/קָרַחְתּ֖/וֹ א֣וֹ בְ/גַבַּחְתּ֑/וֹ כְּ/מַרְאֵ֥ה צָרַ֖עַת ע֥וֹר בָּשָֽׂר׃",
+        "LXX": "καὶ ὄψεται αὐτὸν ὁ ἱερεύς, καὶ ἰδοὺ ἡ ὄψις τῆς ἁφῆς λευκὴ πυρρίζουσα ἐν τῷ φαλακρώματι αὐτοῦ ἢ ἐν τῷ ἀναφαλαντώματι αὐτοῦ, ὡς εἶδος λέπρας ἐν δέρματι τῆς σαρκὸς αὐτοῦ,",
+        "VUL": "et hoc sacerdos viderit, condemnabit eum haud dubie lepræ, quæ orta est in calvitio.",
+        "SYN": "священник осмотрит его, и если увидит, что опухоль язвы бела _или_ красновата на плеши его или на лысине его, видом похожа на проказу кожи тела,",
+        "NEO": "Le prêtre l’examinera. Si la plaie est une tumeur d’un blanc rougeâtre dans la partie chauve de derrière ou de devant, ayant l’aspect d’une lèpre de la peau de la chair,",
+        "NAB": "The priest shall examine him; and if the scab on the sore of the bald spot has the same pink appearance as that of skin leprosy of the fleshy part of the body,",
+        "VAT_ES": "El sacerdote lo examinará, y si la hinchazón de la zona afectada es de un color rojizo pálido y tiene el mismo aspecto que la lepra de la piel del cuerpo,",
+        "CEI": "il sacerdote lo esaminerà: se riscontra che il tumore della piaga nella parte calva del cranio o della fronte è bianco tendente al rosso, simile alla lebbra della pelle del corpo,"
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "אִישׁ צָר֥וּעַ ה֖וּא טָמֵ֣א ה֑וּא טַמֵּ֧א יְטַמְּאֶ֛/נּוּ הַ/כֹּהֵ֖ן בְּ/רֹאשׁ֥/וֹ נִגְעֽ/וֹ׃",
+        "LXX": "ἄνθρωπος λεπρός ἐστιν· μιάνσει μιανεῖ αὐτὸν ὁ ἱερεύς, ἐν τῇ κεφαλῇ αὐτοῦ ἡ ἁφὴ αὐτοῦ.",
+        "VUL": "Quicumque ergo maculatus fuerit lepra, et separatus est ad arbitrium sacerdotis,",
+        "SYN": "то он прокаженный, нечист он; священник должен объявить его нечистым, у него на голове язва.",
+        "NEO": "c’est un homme lépreux, il est impur : le prêtre le déclarera impur : c’est à la tête qu’est sa plaie de lèpre.",
+        "NAB": "the man is leprous and unclean, and the priest shall declare him unclean by reason of the sore on his head.",
+        "VAT_ES": "se trata de un leproso. Esa persona es impura, y el sacerdote deberá declararla como tal: tiene lepra en la cabeza.",
+        "CEI": "quel tale è un lebbroso; è immondo e lo dovrà dichiarare immondo; la piaga è sul suo capo."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וְ/הַ/צָּר֜וּעַ אֲשֶׁר בּ֣/וֹ הַ/נֶּ֗גַע בְּגָדָ֞י/ו יִהְי֤וּ פְרֻמִים֙ וְ/רֹאשׁ/וֹ֙ יִהְיֶ֣ה פָר֔וּעַ וְ/עַל שָׂפָ֖ם יַעְטֶ֑ה וְ/טָמֵ֥א טָמֵ֖א יִקְרָֽא׃",
+        "LXX": "Καὶ ὁ λεπρὸς ἐν ᾧ ἐστὶν ἡ ἁφή, τὰ ἱμάτια αὐτοῦ ἔστω παραλελυμένα καὶ ἡ κεφαλὴ αὐτοῦ ἀκάλυπτος καὶ περὶ τὸ στόμα αὐτοῦ περιβαλέσθω, καὶ ἀκάθαρτος κεκλήσεται·",
+        "VUL": "habebit vestimenta dissuta, caput nudum, os veste contectum, contaminatum ac sordidum se clamabit.",
+        "SYN": "У прокаженного, на котором эта язва, должна быть разодрана одежда, и голова его должна быть не покрыта, и до уст он должен быть закрыт и кричать: нечист! нечист!",
+        "NEO": "Le lépreux, atteint de la plaie, portera ses vêtements déchirés et laissera flotter ses cheveux, il se couvrira la barbe et criera : Impur ! impur !",
+        "NAB": "\"The one who bears the sore of leprosy shall keep his garments rent and his head bare, and shall muffle his beard; he shall cry out, 'Unclean, unclean!'",
+        "VAT_ES": "La persona afectada de lepra llevará la ropa desgarrada y los cabellos sueltos; se cubrirá hasta la boca e irá gritando: «&iexcl;Impuro, impuro!»",
+        "CEI": "Il lebbroso colpito dalla lebbra porterà vesti strappate e il capo scoperto, si coprirà la barba e andrà gridando: Immondo! Immondo!"
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "כָּל יְמֵ֞י אֲשֶׁ֨ר הַ/נֶּ֥גַע בּ֛/וֹ יִטְמָ֖א טָמֵ֣א ה֑וּא בָּדָ֣ד יֵשֵׁ֔ב מִ/ח֥וּץ לַֽ/מַּחֲנֶ֖ה מוֹשָׁבֽ/וֹ׃",
+        "LXX": "πάσας τὰς ἡμέρας ὅσας ἄν ᾖ ἐπ’ αὐτοῦ ἡ ἁφή, ἀκάθαρτος ὢν ἀκάθαρτος ἔσται· κεχωρισμένος καθήσεται, ἔξω τῆς παρεμβολῆς αὐτοῦ ἔσται ἡ διατριβή.",
+        "VUL": "Omni tempore quo leprosus est et immundus, solus habitabit extra castra.",
+        "SYN": "Во все дни, доколе на нем язва, он должен быть нечист, нечист он; он должен жить отдельно, вне стана жилище его.",
+        "NEO": "Aussi longtemps que durera sa plaie, il sera impur. Il est impur ; il habitera seul ; sa demeure sera hors du camp.",
+        "NAB": "As long as the sore is on him he shall declare himself unclean, since he is in fact unclean. He shall dwell apart, making his abode outside the camp.",
+        "VAT_ES": "Será impuro mientras dure su afección. Por ser impuro, vivirá apartado y su morada estará fuera del campamento.",
+        "CEI": "Sarà immondo finché avrà la piaga; è immondo, se ne starà solo, abiterà fuori dell'accampamento."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "וְ/הַ/בֶּ֕גֶד כִּֽי יִהְיֶ֥ה ב֖/וֹ נֶ֣גַע צָרָ֑עַת בְּ/בֶ֣גֶד צֶ֔מֶר א֖וֹ בְּ/בֶ֥גֶד פִּשְׁתִּֽים׃",
+        "LXX": "Καὶ ἱματίῳ ἐὰν γένηται ἐν αὐτῷ ἁφὴ λέπρας, ἐν ἱματίῳ ἐρεῷ ἢ ἐν ἱματίῳ, στιππυίνῳ,",
+        "VUL": "Vestis lanea sive linea, quæ lepram habuerit,",
+        "SYN": "Если язва проказы будет на одежде, на одежде шерстяной, или на одежде льняной,",
+        "NEO": "Lorsque, sur un vêtement, il y aura une plaie de lèpre, sur un vêtement de lin ou sur un vêtement de laine,",
+        "NAB": "\"When a leprous infection is on a garment of wool or of linen,",
+        "VAT_ES": "Cuando aparezca una mancha de lepra en una prenda de lana o de lino",
+        "CEI": "Quando apparirà una macchia di lebbra su una veste, di lana o di lino,"
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "א֤וֹ בִֽ/שְׁתִי֙ א֣וֹ בְ/עֵ֔רֶב לַ/פִּשְׁתִּ֖ים וְ/לַ/צָּ֑מֶר א֣וֹ בְ/ע֔וֹר א֖וֹ בְּ/כָל מְלֶ֥אכֶת עֽוֹר׃",
+        "LXX": "ἢ ἐν στήμονι ἢ ἐν κρόκῃ, ἢ ἐν τοῖς λινοῖς ἢ ἐν τοῖς ἐρεοῖς, ἢ ἐν δέρματι ἢ ἐν παντὶ ἐργασίμῳ δέρματι,",
+        "VUL": "in stamine atque subtegmine, aut certe pellis, vel quidquid ex pelle confectum est,",
+        "SYN": "или на основе, или на утоке из льна или шерсти, или на коже, или на каком-нибудь изделии кожаном,",
+        "NEO": "au fil de lin ou de laine destiné à la chaîne ou à la trame, à une peau ou à quelque ouvrage fait de peau,",
+        "NAB": "or on woven or knitted material of linen or wool, or on a hide or anything made of leather,",
+        "VAT_ES": "–en la trama o en la urdimbre de la lana o del lino– o en un cuero, o en algo fabricado con cuero,",
+        "CEI": "nel tessuto o nel manufatto di lino o di lana, su una pelliccia o qualunque altra cosa di cuoio,"
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֨ה הַ/נֶּ֜גַע יְרַקְרַ֣ק א֣וֹ אֲדַמְדָּ֗ם בַּ/בֶּגֶד֩ א֨וֹ בָ/ע֜וֹר אֽוֹ בַ/שְּׁתִ֤י אוֹ בָ/עֵ֨רֶב֙ א֣וֹ בְ/כָל כְּלִי ע֔וֹר נֶ֥גַע צָרַ֖עַת ה֑וּא וְ/הָרְאָ֖ה אֶת הַ/כֹּהֵֽן׃",
+        "LXX": "καὶ γένηται ἡ ἁφὴ χλωρίζουσα ἢ πυρρίζουσα ἐν τῷ δέρματι ἢ ἐν τῷ ἱματίῳ ἢ ἐν τῷ στήμονι ἢ ἐν τῇ κρόκῃ ἢ ἐν παντὶ σκεύει ἐργασίμῳ δέρματος, ἁφὴ λέπρας ἐστίν, καὶ δείξει τῷ ἱερεῖ.",
+        "VUL": "si alba vel rufa macula fuerit infecta, lepra reputabitur, ostendeturque sacerdoti :",
+        "SYN": "и пятно будет зеленоватое или красноватое на одежде, или на коже, или на основе, или на утоке, или на какой-нибудь кожаной вещи, -- то это язва проказы: должно показать ее священнику;",
+        "NEO": "si la plaie est verdâtre ou rougeâtre sur le vêtement, sur la peau, sur le fil destiné à la chaîne ou à la trame, sur tout objet fait de peau, c’est une plaie de lèpre ; on la montrera au prêtre.",
+        "NAB": "if the infection on the garment or hide, or on the woven or knitted material, or on any leather article is greenish or reddish, the thing is indeed infected with leprosy and must be shown to the priest.",
+        "VAT_ES": "si la mancha es amarillenta o rojiza, se trata de una mancha de lepra y por lo tanto deberá ser mostrada al sacerdote.",
+        "CEI": "se la macchia sarà verdastra o rossastra, sulla veste o sulla pelliccia, sul tessuto o sul manufatto o su qualunque cosa di cuoio, è macchia di lebbra e sarà mostrata al sacerdote."
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֥ה הַ/כֹּהֵ֖ן אֶת הַ/נָּ֑גַע וְ/הִסְגִּ֥יר אֶת הַ/נֶּ֖גַע שִׁבְעַ֥ת יָמִֽים׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεὺς τὴν ἁφήν, καὶ ἀφοριεῖ ὁ ἱερεὺς τὴν ἁφὴν ἑπτὰ ἡμέρας.",
+        "VUL": "qui consideratam recludet septem diebus :",
+        "SYN": "священник осмотрит язву и заключит зараженное язвою на семь дней;",
+        "NEO": "Le prêtre, après avoir considéré la plaie, enfermera pendant sept jours l’objet qui a la plaie.",
+        "NAB": "Having examined the infection, the priest shall quarantine the infected article for seven days.",
+        "VAT_ES": "Este la examinará y mantendrá aislado durante siete días el objeto afectado.",
+        "CEI": "Il sacerdote esaminerà la macchia e rinchiuderà per sette giorni l'oggetto che ha la macchia."
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֨ה אֶת הַ/נֶּ֜גַע בַּ/יּ֣וֹם הַ/שְּׁבִיעִ֗י כִּֽי פָשָׂ֤ה הַ/נֶּ֨גַע֙ בַּ֠/בֶּגֶד אֽוֹ בַ/שְּׁתִ֤י אֽוֹ בָ/עֵ֨רֶב֙ א֣וֹ בָ/ע֔וֹר לְ/כֹ֛ל אֲשֶׁר יֵעָשֶׂ֥ה הָ/ע֖וֹר לִ/מְלָאכָ֑ה צָרַ֧עַת מַמְאֶ֛רֶת הַ/נֶּ֖גַע טָמֵ֥א הֽוּא׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεὺς τὴν ἁφὴν τῇ ἡμέρᾳ τῇ ἑβδόμῃ· ἐὰν δὲ διαχέηται ἡ ἁφὴ ἐν τῷ ἱματίῳ ἢ ἐν τῷ στήμονι ἢ ἐν τῇ κρόκῃ ἢ ἐν τῷ δέρματι, κατὰ πάντα ὅσα ἂν ποιηθῇ δέρματα ἐν τῇ ἐργασίᾳ, λέπρα ἔμμονός ἐστιν ἡ ἁφή· ἀκάθαρτός ἐστιν.",
+        "VUL": "et die septimo rursus aspiciens, si deprehenderit crevisse, lepra perseverans est : pollutum judicabit vestimentum, et omne in quo fuerit inventa :",
+        "SYN": "в седьмой день осмотрит священник зараженное, и если язва распространилась по одежде, или по основе, или по утоку, или по коже, или по какому-либо изделию, сделанному из кожи, то это проказа едкая, язва нечистая;",
+        "NEO": "Le septième jour, il examinera la plaie : si la plaie s’est étendue sur le vêtement, sur le fil destiné à la chaîne ou à la trame, sur la peau ou sur un ouvrage quelconque qui est fait de peau, c’est une plaie de lèpre maligne ; l’objet est impur.",
+        "NAB": "\"On the seventh day the priest shall again examine the infection. If it has spread on the garment, or on the woven or knitted material, or on the leather, whatever be its use, the infection is malignant leprosy, and the article is unclean.",
+        "VAT_ES": "Al séptimo día volverá a examinar la mancha, y si se ha extendido por la prenda de vestir –en la trama o la urdimbre– o por el cuero –cualquiera sea el uso para el que se lo destina– es lepra maligna: ese objeto es impuro",
+        "CEI": "Al settimo giorno esaminerà la macchia; se la macchia si sarà allargata sulla veste o sul tessuto o sul manufatto o sulla pelliccia o sull'oggetto di cuoio per qualunque uso, è una macchia di lebbra maligna, è cosa immonda."
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "WLC": "וְ/שָׂרַ֨ף אֶת הַ/בֶּ֜גֶד א֥וֹ אֶֽת הַ/שְּׁתִ֣י א֣וֹ אֶת הָ/עֵ֗רֶב בַּ/צֶּ֨מֶר֙ א֣וֹ בַ/פִּשְׁתִּ֔ים א֚וֹ אֶת כָּל כְּלִ֣י הָ/ע֔וֹר אֲשֶׁר יִהְיֶ֥ה ב֖/וֹ הַ/נָּ֑גַע כִּֽי צָרַ֤עַת מַמְאֶ֨רֶת֙ הִ֔וא בָּ/אֵ֖שׁ תִּשָּׂרֵֽף׃",
+        "LXX": "κατακαύσει τὸ ἱμάτιον ἢ τὸν στήμονα ἢ τὴν κρόκην, ἐν τοῖς ἐρεοῖς ἢ ἐν τοῖς λινοῖς ἢ ἐν παντὶ σκεύει δερματίνῳ ἐν ᾧ ἐὰν ᾖ ἐν αὐτῷ ἡ ἁφή· ὅτι λέπρα, ἐν πυρὶ κατακαυθήσεται.",
+        "VUL": "et idcirco comburetur flammis.",
+        "SYN": "он должен сжечь одежду, или основу, или уток шерстяной или льняной, или какую бы то ни было кожаную вещь, на которой будет язва, ибо это проказа едкая: должно сжечь на огне.",
+        "NEO": "Il brûlera le vêtement, le fil de lin ou de laine destiné à la chaîne ou à la trame, l’objet quelconque de peau sur lequel se trouve la plaie, car c’est une lèpre maligne : l’objet sera brûlé au feu.",
+        "NAB": "He shall therefore burn up the garment, or the woven or knitted material of wool or linen, or the leather article, whatever it may be, which is infected; since it has malignant leprosy, it must be destroyed by fire.",
+        "VAT_ES": "y será quemado. Como se trata de lepra maligna, deberá ser consumido por el fuego.",
+        "CEI": "Egli brucerà quella veste o il tessuto o il manufatto di lana o di lino o qualunque oggetto fatto di pelle, sul quale è la macchia; perché è lebbra maligna, saranno bruciati nel fuoco."
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "WLC": "וְ/אִם֮ יִרְאֶ֣ה הַ/כֹּהֵן֒ וְ/הִנֵּה֙ לֹא פָשָׂ֣ה הַ/נֶּ֔גַע בַּ/בֶּ֕גֶד א֥וֹ בַ/שְּׁתִ֖י א֣וֹ בָ/עֵ֑רֶב א֖וֹ בְּ/כָל כְּלִי עֽוֹר׃",
+        "LXX": "ἐὰν δὲ ἴδῃ ὁ ἱερεύς, καὶ μὴ διαχέηται ἡ ἁφὴ ἐν τῷ ἱματίῳ ἢ ἐν τῷ στήμονι ἢ ἐν τῇ κρόκῃ ἢ ἐν παντὶ σκεύει δερματίνῳ,",
+        "VUL": "Quod si eam viderit non crevisse,",
+        "SYN": "Если же священник увидит, что язва не распространилась по одежде, или по основе, или по утоку, или по какой бы то ни было кожаной вещи,",
+        "NEO": "Mais si le prêtre voit que la plaie ne s’est pas étendue sur le vêtement, sur le fil destiné à la chaîne ou à la trame, sur tout objet fait de peau,",
+        "NAB": "But if the priest, on examining the infection, finds that it has not spread on the garment, or on the woven or knitted material, or on the leather article,",
+        "VAT_ES": "Pero si el sacerdote comprueba que la mancha no se ha extendido,",
+        "CEI": "Ma se il sacerdote, esaminandola, vedrà che la macchia non si è allargata sulle vesti o sul tessuto o sul manufatto o su qualunque oggetto di cuoio,"
+      }
+    },
+    "54": {
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "WLC": "וְ/צִוָּה֙ הַ/כֹּהֵ֔ן וְ/כִ֨בְּס֔וּ אֵ֥ת אֲשֶׁר בּ֖/וֹ הַ/נָּ֑גַע וְ/הִסְגִּיר֥/וֹ שִׁבְעַת יָמִ֖ים שֵׁנִֽית׃",
+        "LXX": "καὶ συντάξει ὁ ἱερεύς, καὶ πλυνεῖ ἐφ’ οὗ ἐὰν ᾖ ἐπ’ αὐτοῦ ἡ ἁφή, καὶ ἀφοριεῖ ὁ ἱερεὺς τὴν ἁφὴν ἑπτὰ ἡμέρας τὸ δεύτερον.",
+        "VUL": "præcipiet, et lavabunt id in quo lepra est, recludetque illud septem diebus aliis.",
+        "SYN": "то священник прикажет омыть то, на чем язва, и вторично заключит на семь дней;",
+        "NEO": "il fera laver l’objet qui a la plaie, et il l’enfermera une seconde fois pendant sept jours.",
+        "NAB": "he shall give orders to have the infected article washed and then quarantined for another seven days.",
+        "VAT_ES": "ordenará que laven el objeto donde está la misma y lo mantendrá aislado siete días más.",
+        "CEI": "il sacerdote ordinerà che si lavi l'oggetto su cui è la macchia e lo rinchiuderà per altri sette giorni."
+      }
+    },
+    "55": {
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֨ה הַ/כֹּהֵ֜ן אַחֲרֵ֣י הֻכַּבֵּ֣ס אֶת הַ/נֶּ֗גַע וְ֠/הִנֵּה לֹֽא הָפַ֨ךְ הַ/נֶּ֤גַע אֶת עֵינ/וֹ֙ וְ/הַ/נֶּ֣גַע לֹֽא פָשָׂ֔ה טָמֵ֣א ה֔וּא בָּ/אֵ֖שׁ תִּשְׂרְפֶ֑/נּוּ פְּחֶ֣תֶת הִ֔וא בְּ/קָרַחְתּ֖/וֹ א֥וֹ בְ/גַבַּחְתּֽ/וֹ׃",
+        "LXX": "καὶ ὄψεται ὁ ἱερεὺς μετὰ τὸ πλυθῆναι αὐτὸ τὴν ἁφήν, καὶ ἥδε μὴ μετέβαλεν τὴν ὄψιν ἡ ἁφή, καὶ ἡ ἁφὴ οὐ διαχεῖται, ἀκάθαρτόν ἐστιν, ἐν πυρὶ κατακαυθήσεται· ἐστήρισται ἐν τῷ ἱματίῳ ἢ ἐν τῷ στήμονι ἢ ἐν τῇ κρόκῃ.",
+        "VUL": "Et cum viderit faciem quidem pristinam non reversam, nec tamen crevisse lepram, immundum judicabit, et igne comburet, eo quod infusa sit in superficie vestimenti, vel per totum, lepra.",
+        "SYN": "если по омытии зараженной _вещи_ священник увидит, что язва не изменила вида своего и не распространилась язва, то она нечиста, сожги ее на огне; это выеденная ямина на лицевой стороне или на изнанке;",
+        "NEO": "Le prêtre examinera la plaie, sept jours après qu’elle aura été lavée. Si elle n’a pas changé d’aspect et ne s’est pas étendue, l’objet est impur : tu le consumeras par le feu ; la lèpre en a rongé l’endroit ou l’envers.",
+        "NAB": "\"Then the priest shall again examine the infected article after it has been washed. If the infection has not changed its appearance, even though it may not have spread, the article is unclean and shall be destroyed by fire.",
+        "VAT_ES": "El sacerdote examinará la mancha después de haber sido lavada: si esta no ha cambiado de aspecto, aunque no se haya extendido, el objeto es impuro y deberás quemarlo: es una corrosión, sea en la parte interior o en la parte exterior.",
+        "CEI": "Il sacerdote esaminerà la macchia, dopo che sarà stata lavata; se vedrà che la macchia non ha mutato colore, benché non si sia allargata, è un oggetto immondo; lo brucerai nel fuoco; vi è corrosione, sia che la parte corrosa si trovi sul diritto o sul rovescio dell'oggetto."
+      }
+    },
+    "56": {
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "WLC": "וְ/אִם֮ רָאָ֣ה הַ/כֹּהֵן֒ וְ/הִנֵּה֙ כֵּהָ֣ה הַ/נֶּ֔גַע אַחֲרֵ֖י הֻכַּבֵּ֣ס אֹת֑/וֹ וְ/קָרַ֣ע אֹת֗/וֹ מִן הַ/בֶּ֨גֶד֙ א֣וֹ מִן הָ/ע֔וֹר א֥וֹ מִן הַ/שְּׁתִ֖י א֥וֹ מִן הָ/עֵֽרֶב׃",
+        "LXX": "καὶ ἐὰν ἴδῃ ὁ ἱερεύς, καὶ ᾖ ἀμαυρὰ ἡ ἁφὴ μετὰ τὸ πλυθῆναι αὐτό, ἀπορρήξει αὐτὸ ἀπὸ τοῦ ἱματίου ἢ ἀπὸ τοῦ δέρματος ἢ ἀπὸ τοῦ στήμονος ἢ ἀπὸ τῆς κρόκης.",
+        "VUL": "Sin autem obscurior fuerit locus lepræ, postquam vestis est lota, abrumpet eum, et a solido dividet.",
+        "SYN": "если же священник увидит, что язва по омытии ее сделалась менее приметна, то священник пусть оторвет ее от одежды, или от кожи, или от основы, или от утока.",
+        "NEO": "Mais si le prêtre voit que la plaie, sept jours après avoir été lavée, est devenue pâle, il l’arrachera du vêtement, de la peau, ou du fil destiné à la chaîne ou à la trame.",
+        "NAB": "But if the priest, on examining the infection, finds that it is dying out after the washing, he shall tear the infected part out of the garment, or the leather, or the woven or knitted material.",
+        "VAT_ES": "Pero si el sacerdote comprueba que la mancha, una vez lavada, ha disminuido, la arrancará de la ropa o del cuero, de la trama o de la urdimbre.",
+        "CEI": "Se il sacerdote, esaminandola, vede che la macchia, dopo essere stata lavata, è diventata pallida, la strapperà dalla veste o dalla pelle o dal tessuto o dal manufatto."
+      }
+    },
+    "57": {
+      "seq": 57,
+      "v_in": {
+        "MT": 57,
+        "VUL": 57,
+        "LXX": 57
+      },
+      "text": {
+        "WLC": "וְ/אִם תֵּרָאֶ֨ה ע֜וֹד בַּ֠/בֶּגֶד אֽוֹ בַ/שְּׁתִ֤י אֽוֹ בָ/עֵ֨רֶב֙ א֣וֹ בְ/כָל כְּלִי ע֔וֹר פֹּרַ֖חַת הִ֑וא בָּ/אֵ֣שׁ תִּשְׂרְפֶ֔/נּוּ אֵ֥ת אֲשֶׁר בּ֖/וֹ הַ/נָּֽגַע׃",
+        "LXX": "ἐὰν δὲ ὀφθῇ ἔτι ἐν τῷ ἱματίῳ ἢ ἐν τῷ στήμονι ἢ ἐν τῇ κρόκῃ ἢ ἐν παντὶ σκεύει δερματίνῳ, λέπρα ἐξανθοῦσά ἐστιν· ἐν πυρὶ κατακαυθήσεται ἐν ᾧ ἐστὶν ἡ ἁφή.",
+        "VUL": "Quod si ultra apparuerit in his locis, quæ prius immaculata erant, lepra volatilis et vaga, debet igne comburi.",
+        "SYN": "Если же она опять покажется на одежде, или на основе, или на утоке, или на какой-нибудь кожаной вещи, то это расцветающая язва: сожги на огне то, на чем язва.",
+        "NEO": "Si elle reparaît ensuite sur le vêtement, sur le fil destiné à la chaîne ou à la trame, ou sur tout objet fait de peau, c’est une éruption de lèpre ; tu consumeras par le feu l’objet atteint par la plaie.",
+        "NAB": "If, however, the infection again appears on the garment, or on the woven or knitted material, or on the leather article, it is still virulent and the thing infected shall be destroyed by fire.",
+        "VAT_ES": "Y si vuelve a aparecer, es un brote contagioso: el objeto deberá ser consumido por el fuego.",
+        "CEI": "Se appare ancora sulla veste o sul tessuto o sul manufatto o sull'oggetto di cuoio, è una eruzione in atto; brucerai nel fuoco l'oggetto su cui è la macchia."
+      }
+    },
+    "58": {
+      "seq": 58,
+      "v_in": {
+        "MT": 58,
+        "VUL": 58,
+        "LXX": 58
+      },
+      "text": {
+        "WLC": "וְ/הַ/בֶּ֡גֶד אֽוֹ הַ/שְּׁתִ֨י אוֹ הָ/עֵ֜רֶב אֽוֹ כָל כְּלִ֤י הָ/עוֹר֙ אֲשֶׁ֣ר תְּכַבֵּ֔ס וְ/סָ֥ר מֵ/הֶ֖ם הַ/נָּ֑גַע וְ/כֻבַּ֥ס שֵׁנִ֖ית וְ/טָהֵֽר׃",
+        "LXX": "καὶ τὸ ἱμάτιον ἢ ὁ στήμων ἢ ἡ κρόκη ἢ πᾶν σκεῦος δερμάτινον ὃ πλυθήσεται καὶ ἀποστήσεται ἀπ’ αὐτοῦ ἡ ἁφή, καὶ πλυθήσεται τὸ δεύτερον· καθαρὸν ἔσται.",
+        "VUL": "Si cessaverit, lavabit aqua ea, quæ pura sunt, secundo, et munda erunt.",
+        "SYN": "Если же одежду, или основу, или уток, или какую-нибудь кожаную вещь вымоешь, и сойдет с них язва, то должно вымыть их вторично, и они будут чисты.",
+        "NEO": "Mais le vêtement, le fil pour la chaîne ou la trame, tout objet fait de peau que tu auras lavé et d’où la plaie aura disparu, sera lavé une seconde fois et il sera pur.",
+        "NAB": "But if, after the washing, the infection has left the garment, or the woven or knitted material, or the leather article, the thing shall be washed a second time, and thus it will be clean.",
+        "VAT_ES": "Pero si la mancha desaparece de la ropa –de la trama o de la urdimbre– o del objeto de cuero que sido lavado, se lo volverá a lavar, y entonces será puro.",
+        "CEI": "La veste o il tessuto o il manufatto o qualunque oggetto di cuoio che avrai lavato e dal quale la macchia sarà scomparsa, si laverà una seconda volta e sarà mondo."
+      }
+    },
+    "59": {
+      "seq": 59,
+      "v_in": {
+        "MT": 59,
+        "VUL": 59,
+        "LXX": 59
+      },
+      "text": {
+        "WLC": "זֹ֠את תּוֹרַ֨ת נֶֽגַע צָרַ֜עַת בֶּ֥גֶד הַ/צֶּ֣מֶר א֣וֹ הַ/פִּשְׁתִּ֗ים א֤וֹ הַ/שְּׁתִי֙ א֣וֹ הָ/עֵ֔רֶב א֖וֹ כָּל כְּלִי ע֑וֹר לְ/טַהֲר֖/וֹ א֥וֹ לְ/טַמְּאֽ/וֹ׃",
+        "LXX": "οὗτος ὁ νόμος ἁφῆς λέπρας ἱματίου ἐρεοῦ ἢ στιππυίνου ἢ στήμονος ἢ κρόκης ἢ παντὸς σκεύους δερματίνου, εἰς τὸ καθαρίσαι αὐτὸ ἢ μιᾶναι αὐτό.",
+        "VUL": "Ista est lex lepræ vestimenti lanei et linei, staminis, atque subtegminis, omnisque supellectilis pelliceæ, quomodo mundari debeat, vel contaminari.",
+        "SYN": "Вот закон о язве проказы на одежде шерстяной или льняной, или на основе и на утоке, или на какой-нибудь кожаной вещи, как объявлять ее чистою или нечистою.",
+        "NEO": "Telle est la loi sur la plaie de la lèpre qui attaque les vêtements de laine ou de lin, le fil pour la chaîne ou pour la trame, tout objet fait de peau, pour déclarer ces choses pures ou impures. »",
+        "NAB": "This is the law for leprous infection on a garment of wool or linen, or on woven or knitted material, or on any leather article, to determine whether it is clean or unclean.\"",
+        "VAT_ES": "Estas son las instrucciones relativas a la lepra de la ropa de lana o de lino –en la urdimbre o la trama– o de cualquier objeto de cuero, para declararlos puros o impuros.",
+        "CEI": "Questa è la legge relativa alla macchia di lebbra sopra una veste di lana o di lino, sul tessuto o sul manufatto o su qualunque oggetto di pelle, per dichiararli mondi o immondi\"."
+      }
+    }
+  }
+}

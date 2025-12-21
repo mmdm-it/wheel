@@ -1,0 +1,792 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOHA_005",
+  "book_key": "IOHA",
+  "sequence": 5,
+  "chapter_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Μετὰ ταῦτα ἦν ἡ ἑορτὴ τῶν Ἰουδαίων, καὶ ἀνέβη ὁ Ἰησοῦς εἰς Ἱεροσόλυμα.",
+        "VUL": "Post hæc erat dies festus Judæorum, et ascendit Jesus Jerosolymam.",
+        "SYN": "После сего был праздник Иудейский, и пришел Иисус в Иерусалим.",
+        "NEO": "Après cela, il y eut une fête des Juifs, et Jésus monta à Jérusalem.+ 5:1 V, 1. Dans les manuscrits et les versions, se trouve deux leçons : la fête, ⸀ἦ ἑορτὴ, et une fête, ἑορτὴ, sans article. Avec l’article ce serait la fête par excellence, la Pâque : c’était le sentiment de S. Irénée. Avec ou sans l’article, on pourrait y voir la fête des Tabernacles. D’autres fêtes ont été proposées, comme la fête de Purim, qui ne vont pas au contexte.*",
+        "NAB": "After this, there was a feast of the Jews, and Jesus went up to Jerusalem.",
+        "VAT_ES": "Después de esto, se celebraba una fiesta de los judíos y Jesús subió a Jerusalén,",
+        "CEI": "Nel mio primo libro ho già trattato, o Teòfilo, di tutto quello che Gesù fece e insegnò dal principio"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "¶Ἔστιν δὲ ἐν τοῖς Ἱεροσολύμοις ἐπὶ τῇ προβατικῇ κολυμβήθρα, ἡ ἐπιλεγομένη Ἑβραϊστὶ Βηθεσδά, πέντε στοὰς ἔχουσα.",
+        "VUL": "Est autem Jerosolymis probatica piscina, quæ cognominatur hebraice Bethsaida, quinque porticus habens.",
+        "SYN": "Есть же в Иерусалиме у Овечьих _ворот_ купальня, называемая по-еврейски Вифезда, при которой было пять крытых ходов.",
+        "NEO": "Or, à Jérusalem, près de la porte des Brebis, il y a une piscine qui s’appelle en hébreu Béthesda,+ 5:2 2. Bethesda. La Vulg. dit : \\+qt Bethsaida\\+qt* : les manuscrits grecs ont, les uns Bethsaida, d’autres Bethzatha, d’autres Béthesda. Ce dernier nom s’explique mieux. Il signifie « maison ou lieu de miséricorde. » — On lit dans la Vulgate : \\+qt Or à Jérusalem est la piscine Probatique\\+qt* (des Brebis), \\+qt qui est appelée Bethsaïde et a cinq portiques.\\+qt** et qui a cinq portiques.",
+        "NAB": "Now there is in Jerusalem at the Sheep (Gate) a pool called in Hebrew Bethesda, with five porticoes.",
+        "VAT_ES": "Junto a la puerta de las Ovejas, en Jerusalén, hay una piscina llamada en hebreo Betsata, que tiene cinco pórticos.",
+        "CEI": "fino al giorno in cui, dopo aver dato istruzioni agli apostoli che si era scelti nello Spirito Santo, egli fu assunto in cielo."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Ἐν ταύταις κατέκειτο πλῆθος πολὺ τῶν ἀσθενούντων, τυφλῶν, χωλῶν, ξηρῶν, ἐκδεχομένων τὴν τοῦ ὕδατος κίνησιν.",
+        "VUL": "In his jacebat multitudo magna languentium, cæcorum, claudorum, aridorum, expectantium aquæ motum.",
+        "SYN": "В них лежало великое множество больных, слепых, хромых, иссохших, ожидающих движения воды,",
+        "NEO": "Sous ces portiques étaient couchés un grand nombre de malades, d’aveugles, de boiteux et de paralytiques ; [ils attendaient le bouillonnement de l’eau.",
+        "NAB": "In these lay a large number of ill, blind, lame, and crippled.",
+        "VAT_ES": "Bajo estos pórticos yacía una multitud de enfermos, ciegos, paralíticos y lisiados, que esperaban la agitación del agua.",
+        "CEI": "Egli si mostrò ad essi vivo, dopo la sua passione, con molte prove, apparendo loro per quaranta giorni e parlando del regno di Dio."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ἄγγελος γὰρ κατὰ καιρὸν κατέβαινεν ἐν τῇ κολυμβήθρᾳ, καὶ ἐτάρασσεν τὸ ὕδωρ· ὁ οὖν πρῶτος ἐμβὰς μετὰ τὴν ταραχὴν τοῦ ὕδατος, ὑγιὴς ἐγίνετο, ᾧ δήποτε κατείχετο νοσήματι.",
+        "VUL": "Angelus autem Domini descendebat secundum tempus in piscinam, et movebatur aqua. Et qui prior descendisset in piscinam post motionem aquæ, sanus fiebat a quacumque detinebatur infirmitate.",
+        "SYN": "ибо Ангел Господень по временам сходил в купальню и возмущал воду, и кто первый входил _в_ _нее_ по возмущении воды, тот выздоравливал, какою бы ни был одержим болезнью.",
+        "NEO": "Car un ange du Seigneur descendait à certains temps dans la piscine, et agitait l’eau : et celui qui y descendait le premier après l’agitation de l’eau, était guéri de son infirmité quelle qu’elle fût.]+ 5:4 4. Le v. 4. est omis dans le Sinaïticus et le \\+qt Vaticanus\\+qt* et aussi dans C, D, A, dans plusieurs versions (syriaque de Cureton, Copte) et qq. mss. de la Vulgate. Il se trouve dans l’\\+qt Alexandrinus\\+qt* et la plupart des mss. onciaux, dans les versions syriaques (Peschito et Philoxénienne) et la plupart des mss. de la Vulgate. Il était lu par S. Cyrille d’Alex., S. Chrysost., Tertullien., etc.*",
+        "VAT_ES": "[Porque el Angel del Señor descendía cada tanto a la piscina y movía el agua. El primero que entraba en la piscina, después que el agua se agitaba, quedaba curado, cualquiera fuera su mal.]",
+        "CEI": "Mentre si trovava a tavola con essi, ordinò loro di non allontanarsi da Gerusalemme, ma di attendere che si adempisse la promessa del Padre \"quella, disse, che voi avete udito da me:"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ἦν δέ τις ἄνθρωπος ἐκεῖ τριάκοντα ὀκτὼ ἔτη ἔχων ἐν τῇ ἀσθενείᾳ.",
+        "VUL": "Erat autem quidam homo ibi triginta et octo annos habens in infirmitate sua.",
+        "SYN": "Тут был человек, находившийся в болезни тридцать восемь лет.",
+        "NEO": "Là se trouvait un homme malade depuis trente-huit ans.",
+        "NAB": "One man was there who had been ill for thirty-eight years.",
+        "VAT_ES": "Había allí un hombre que estaba enfermo desde hacía treinta y ocho años.",
+        "CEI": "Giovanni ha battezzato con acqua, voi invece sarete battezzati in Spirito Santo, fra non molti giorni\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Τοῦτον ἰδὼν ὁ Ἰησοῦς κατακείμενον, καὶ γνοὺς ὅτι πολὺν ἤδη χρόνον ἔχει, λέγει αὐτῷ, Θέλεις ὑγιὴς γενέσθαι;",
+        "VUL": "Hunc autem cum vidisset Jesus jacentem, et cognovisset quia jam multum tempus haberet, dicit ei : Vis sanus fieri ?",
+        "SYN": "Иисус, увидев его лежащего и узнав, что он лежит уже долгое время, говорит ему: хочешь ли быть здоров?",
+        "NEO": "Jésus l’ayant vu gisant, et sachant qu’il était malade depuis longtemps, lui dit : « Veux-tu être guéri ? »",
+        "NAB": "When Jesus saw him lying there and knew that he had been ill for a long time, he said to him, \"Do you want to be well?\"",
+        "VAT_ES": "Al verlo tendido, y sabiendo que hacía tanto tiempo que estaba así, Jesús le preguntó: «&iquest;Quieres curarte?».",
+        "CEI": "Così venutisi a trovare insieme gli domandarono: \"Signore, è questo il tempo in cui ricostituirai il regno di Israele?\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ἀπεκρίθη αὐτῷ ὁ ἀσθενῶν, Κύριε, ἄνθρωπον οὐκ ἔχω ἵνα, ὅταν ταραχθῇ τὸ ὕδωρ, βάλῃ με εἰς τὴν κολυμβήθραν· ἐν ᾧ δὲ ἔρχομαι ἐγώ, ἄλλος πρὸ ἐμοῦ καταβαίνει.",
+        "VUL": "Respondit ei languidus : Domine, hominem non habeo, ut, cum turbata fuerit aqua, mittat me in piscinam : dum venio enim ego, alius ante me descendit.",
+        "SYN": "Больной отвечал Ему: так, Господи; но не имею человека, который опустил бы меня в купальню, когда возмутится вода; когда же я прихожу, другой уже сходит прежде меня.",
+        "NEO": "Le malade lui répondit : « Seigneur, je n’ai personne pour me jeter dans la piscine dès que l’eau est agitée, et pendant que j’y vais, un autre descend avant moi. »",
+        "NAB": "The sick man answered him, \"Sir, I have no one to put me into the pool when the water is stirred up; while I am on my way, someone else gets down there before me.\"",
+        "VAT_ES": "El respondió: «Señor, no tengo a nadie que me sumerja en la piscina cuando el agua comienza a agitarse; mientras yo voy, otro desciende antes».",
+        "CEI": "Ma egli rispose: \"Non spetta a voi conoscere i tempi e i momenti che il Padre ha riservato alla sua scelta,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Λέγει αὐτῷ ὁ Ἰησοῦς, Ἔγειραι, ἆρον τὸν κράββατόν σου, καὶ περιπάτει.",
+        "VUL": "Dicit ei Jesus : Surge, tolle grabatum tuum et ambula.",
+        "SYN": "Иисус говорит ему: встань, возьми постель твою и ходи.",
+        "NEO": "Jésus lui dit : « Lève-toi, prends ton grabat et marche. »",
+        "NAB": "Jesus said to him, \"Rise, take up your mat, and walk.\"",
+        "VAT_ES": "Jesús le dijo: «Levántate, toma tu camilla y camina».",
+        "CEI": "ma avrete forza dallo Spirito Santo che scenderà su di voi e mi sarete testimoni a Gerusalemme, in tutta la Giudea e la Samaria e fino agli estremi confini della terra\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Καὶ εὐθέως ἐγένετο ὑγιὴς ὁ ἄνθρωπος, καὶ ἦρεν τὸν κράββατον αὐτοῦ καὶ περιεπάτει. Ἦν δὲ σάββατον ἐν ἐκείνῃ τῇ ἡμέρᾳ.",
+        "VUL": "Et statim sanus factus est homo ille : et sustulit grabatum suum, et ambulabat. Erat autem sabbatum in die illo.",
+        "SYN": "И он тотчас выздоровел, и взял постель свою и пошел. Было же это в день субботний.",
+        "NEO": "Et à l’instant cet homme fut guéri ; il prit son grabat et se mit à marcher. C’était un jour de sabbat.",
+        "NAB": "Immediately the man became well, took up his mat, and walked. Now that day was a sabbath.",
+        "VAT_ES": "En seguida el hombre se curó, tomó su camilla y empezó a caminar. Era un sábado,",
+        "CEI": "Detto questo, fu elevato in alto sotto i loro occhi e una nube lo sottrasse al loro sguardo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "¶Ἔλεγον οὖν οἱ Ἰουδαῖοι τῷ τεθεραπευμένῳ, Σάββατόν ἐστιν· οὐκ ἔξεστίν σοι ἆραι τὸν κράββατον.",
+        "VUL": "Dicebant ergo Judæi illi qui sanatus fuerat : Sabbatum est, non licet tibi tollere grabatum tuum.",
+        "SYN": "Посему Иудеи говорили исцеленному: сегодня суббота; не должно тебе брать постели.",
+        "NEO": "Les Juifs dirent donc à celui qui avait été guéri : « C’est le sabbat, il ne t’est pas permis d’emporter ton grabat. »",
+        "NAB": "So the Jews said to the man who was cured, \"It is the sabbath, and it is not lawful for you to carry your mat.\"",
+        "VAT_ES": "y los Judíos dijeron entonces al que acababa de ser curado: «Es sábado. No te está permitido llevar tu camilla».",
+        "CEI": "E poiché essi stavano fissando il cielo mentre egli se n'andava, ecco due uomini in bianche vesti si presentarono a loro e dissero:"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Ἀπεκρίθη αὐτοῖς, Ὁ ποιήσας με ὑγιῆ, ἐκεῖνός μοι εἶπεν, Ἆρον τὸν κράββατόν σου καὶ περιπάτει.",
+        "VUL": "Respondit eis : Qui me sanum fecit, ille mihi dixit : Tolle grabatum tuum et ambula.",
+        "SYN": "Он отвечал им: Кто меня исцелил, Тот мне сказал: возьми постель твою и ходи.",
+        "NEO": "Il leur répondit : « Celui qui m’a guéri m’a dit : Prends ton grabat et marche. »",
+        "NAB": "He answered them, \"The man who made me well told me, 'Take up your mat and walk.'\"",
+        "VAT_ES": "El les respondió: «El que me curó me dijo: «Toma tu camilla y camina».",
+        "CEI": "\"Uomini di Galilea, perché state a guardare il cielo? Questo Gesù, che è stato di tra voi assunto fino al cielo, tornerà un giorno allo stesso modo in cui l'avete visto andare in cielo\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Ἠρώτησαν οὖν αὐτόν, Τίς ἐστιν ὁ ἄνθρωπος ὁ εἰπών σοι, Ἆρον τὸν κράββατόν σου καὶ περιπάτει;",
+        "VUL": "Interrogaverunt ergo eum : Quis est ille homo qui dixit tibi : Tolle grabatum tuum et ambula ?",
+        "SYN": "Его спросили: кто Тот Человек, Который сказал тебе: возьми постель твою и ходи?",
+        "NEO": "Ils lui demandèrent : « Qui est l’homme qui t’a dit : Prends ton grabat et marche ? »",
+        "NAB": "They asked him, \"Who is the man who told you, 'Take it up and walk'?\"",
+        "VAT_ES": "Ellos le preguntaron: «&iquest;Quién es ese hombre que te dijo: «Toma tu camilla y camina?».",
+        "CEI": "Allora ritornarono a Gerusalemme dal monte detto degli Ulivi, che è vicino a Gerusalemme quanto il cammino permesso in un sabato."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ ἰαθεὶς οὐκ ᾔδει τίς ἐστιν· ὁ γὰρ Ἰησοῦς ἐξένευσεν, ὄχλου ὄντος ἐν τῷ τόπῳ.",
+        "VUL": "Is autem qui sanus fuerat effectus, nesciebat quis esset. Jesus enim declinavit a turba constituta in loco.",
+        "SYN": "Исцеленный же не знал, кто Он, ибо Иисус скрылся в народе, бывшем на том месте.",
+        "NEO": "Mais celui qui avait été guéri ne savait pas qui c’était ; car Jésus s’était esquivé, grâce à la foule qui était en cet endroit.",
+        "NAB": "The man who was healed did not know who it was, for Jesus had slipped away, since there was a crowd there.",
+        "VAT_ES": "Pero el enfermo lo ignoraba, porque Jesús había desaparecido entre la multitud que estaba allí.",
+        "CEI": "Entrati in città salirono al piano superiore dove abitavano. C'erano Pietro e Giovanni, Giacomo e Andrea, Filippo e Tommaso, Bartolomeo e Matteo, Giacomo di Alfeo e Simone lo Zelòta e Giuda di Giacomo."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Μετὰ ταῦτα εὑρίσκει αὐτὸν ὁ Ἰησοῦς ἐν τῷ ἱερῷ, καὶ εἶπεν αὐτῷ, Ἴδε ὑγιὴς γέγονας· μηκέτι ἁμάρτανε, ἵνα μὴ χεῖρόν τί σοι γένηται.",
+        "VUL": "Postea invenit eum Jesus in templo, et dixit illi : Ecce sanus factus es ; jam noli peccare, ne deterius tibi aliquid contingat.",
+        "SYN": "Потом Иисус встретил его в храме и сказал ему: вот, ты выздоровел; не греши больше, чтобы не случилось с тобою чего хуже.",
+        "NEO": "Plus tard, Jésus le trouva dans le temple et lui dit : « Te voilà guéri ; ne pèche plus, de peur qu’il ne t’arrive quelque chose de pire. »",
+        "NAB": "After this Jesus found him in the temple area and said to him, \"Look, you are well; do not sin any more, so that nothing worse may happen to you.\"",
+        "VAT_ES": "Después, Jesús lo encontró en el Templo y le dijo: «Has sido curado; no vuelvas a pecar, de lo contrario te ocurrirán peores cosas todavía».",
+        "CEI": "Tutti questi erano assidui e concordi nella preghiera, insieme con alcune donne e con Maria, la madre di Gesù e con i fratelli di lui."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ἀπῆλθεν ὁ ἄνθρωπος, καὶ ἀνήγγειλεν τοῖς Ἰουδαίοις ὅτι Ἰησοῦς ἐστιν ὁ ποιήσας αὐτὸν ὑγιῆ.",
+        "VUL": "Abiit ille homo, et nuntiavit Judæis quia Jesus esset, qui fecit eum sanum.",
+        "SYN": "Человек сей пошел и объявил Иудеям, что исцеливший его есть Иисус.",
+        "NEO": "Cet homme s’en alla, et annonça aux Juifs que c’était Jésus qui l’avait guéri.",
+        "NAB": "The man went and told the Jews that Jesus was the one who had made him well.",
+        "VAT_ES": "El hombre fue a decir a los judíos que era Jesús el que lo había curado.",
+        "CEI": "In quei giorni Pietro si alzò in mezzo ai fratelli (il numero delle persone radunate era circa centoventi) e disse:"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Καὶ διὰ τοῦτο ἐδίωκον τὸν Ἰησοῦν οἱ Ἰουδαῖοι, καὶ ἐζήτουν αὐτὸν ἀποκτεῖναι, ὅτι ταῦτα ἐποίει ἐν σαββάτῳ.",
+        "VUL": "Propterea persequebantur Judæi Jesum, quia hæc faciebat in sabbato.",
+        "SYN": "И стали Иудеи гнать Иисуса и искали убить Его за то, что Он делал такие _дела_ в субботу.",
+        "NEO": "C’est pourquoi les Juifs persécutaient Jésus, parce qu’il faisait ces choses le jour du sabbat.",
+        "NAB": "Therefore, the Jews began to persecute Jesus because he did this on a sabbath.",
+        "VAT_ES": "Ellos atacaban a Jesús, porque hacía esas cosas en sábado.",
+        "CEI": "\"Fratelli, era necessario che si adempisse ciò che nella Scrittura fu predetto dallo Spirito Santo per bocca di Davide riguardo a Giuda, che fece da guida a quelli che arrestarono Gesù."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ Ἰησοῦς ἀπεκρίνατο αὐτοῖς, Ὁ πατήρ μου ἕως ἄρτι ἐργάζεται, κἀγὼ ἐργάζομαι.",
+        "VUL": "Jesus autem respondit eis : Pater meus usque modo operatur, et ego operor.",
+        "SYN": "Иисус же говорил им: Отец Мой доныне делает, и Я делаю.",
+        "NEO": "Mais Jésus leur dit : « Mon Père agit jusqu’à présent, et moi aussi j’agis. »",
+        "NAB": "But Jesus answered them, \"My Father is at work until now, so I am at work.\"",
+        "VAT_ES": "el les respondió: «Mi Padre trabaja siempre, y yo también trabajo».",
+        "CEI": "Egli era stato del nostro numero e aveva avuto in sorte lo stesso nostro ministero."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Διὰ τοῦτο οὖν μᾶλλον ἐζήτουν αὐτὸν οἱ Ἰουδαῖοι ἀποκτεῖναι, ὅτι οὐ μόνον ἔλυεν τὸ σάββατον, ἀλλὰ καὶ πατέρα ἴδιον ἔλεγεν τὸν θεόν, ἴσον ἑαυτὸν ποιῶν τῷ θεῷ.",
+        "VUL": "Propterea ergo magis quærebant eum Judæi interficere : quia non solum solvebat sabbatum, sed et patrem suum dicebat Deum, æqualem se faciens Deo.\\ Respondit itaque Jesus, et dixit eis :",
+        "SYN": "И еще более искали убить Его Иудеи за то, что Он не только нарушал субботу, но и Отцем Своим называл Бога, делая Себя равным Богу.",
+        "NEO": "Sur quoi, les Juifs cherchaient encore avec plus d’ardeur à le faire mourir, parce que, non content de violer le sabbat, il disait encore que Dieu était son père, se faisant égal à Dieu.",
+        "NAB": "For this reason the Jews tried all the more to kill him, because he not only broke the sabbath but he also called God his own father, making himself equal to God.",
+        "VAT_ES": "Pero para los judíos esta era una razón más para matarlo, porque no sólo violaba el sábado, sino que se hacía igual a Dios, llamándolo su propio Padre.",
+        "CEI": "Giuda comprò un pezzo di terra con i proventi del suo delitto e poi precipitando in avanti si squarciò in mezzo e si sparsero fuori tutte le sue viscere."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "¶Ἀπεκρίνατο οὖν ὁ Ἰησοῦς καὶ εἶπεν αὐτοῖς, Ἀμὴν ἀμὴν λέγω ὑμῖν, οὐ δύναται ὁ υἱὸς ποιεῖν ἀφ’ ἑαυτοῦ οὐδέν, ἐὰν μή τι βλέπῃ τὸν πατέρα ποιοῦντα· ἃ γὰρ ἂν ἐκεῖνος ποιῇ, ταῦτα καὶ ὁ υἱὸς ὁμοίως ποιεῖ.",
+        "VUL": "Amen, amen dico vobis : non potest Filius a se facere quidquam, nisi quod viderit Patrem facientem : quæcumque enim ille fecerit, hæc et Filius similiter facit.",
+        "SYN": "На это Иисус сказал: истинно, истинно говорю вам: Сын ничего не может творить Сам от Себя, если не увидит Отца творящего: ибо, что творит Он, то и Сын творит также.",
+        "NEO": "« En vérité, en vérité, je vous le dis, le Fils ne peut rien faire de lui-même, mais seulement ce qu’il voit faire au Père ; et tout ce que fait le Père, le Fils aussi le fait pareillement.",
+        "NAB": "Jesus answered and said to them, \"Amen, amen, I say to you, a son cannot do anything on his own, but only what he sees his father doing; for what he does, his son will do also.",
+        "VAT_ES": "Entonces Jesús tomó la palabra diciendo: «Les aseguro que el Hijo no puede hacer nada por sí mismo sino solamente lo que ve hacer al Padre; lo que hace el Padre, lo hace igualmente el Hijo.",
+        "CEI": "La cosa è divenuta così nota a tutti gli abitanti di Gerusalemme, che quel terreno è stato chiamato nella loro lingua Akeldamà, cioè Campo di sangue."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Ὁ γὰρ πατὴρ φιλεῖ τὸν υἱόν, καὶ πάντα δείκνυσιν αὐτῷ ἃ αὐτὸς ποιεῖ· καὶ μείζονα τούτων δείξει αὐτῷ ἔργα, ἵνα ὑμεῖς θαυμάζητε.",
+        "VUL": "Pater enim diligit Filium, et omnia demonstrat ei quæ ipse facit : et majora his demonstrabit ei opera, ut vos miremini.",
+        "SYN": "Ибо Отец любит Сына и показывает Ему все, что творит Сам; и покажет Ему дела больше сих, так что вы удивитесь.",
+        "NEO": "Car le Père aime le Fils, et lui montre tout ce qu’il fait ; et il lui montrera des œuvres plus grandes que celles-ci, qui vous jetteront dans l’étonnement.",
+        "NAB": "For the Father loves his Son and shows him everything that he himself does, and he will show him greater works than these, so that you may be amazed.",
+        "VAT_ES": "Porque el Padre ama al Hijo y le muestra todo lo que hace. Y le mostrará obras más grandes aún, para que ustedes queden maravillados.",
+        "CEI": "Infatti sta scritto nel libro dei Salmi: La sua dimora diventi deserta, e nessuno vi abiti, il suo incarico lo prenda un altro."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Ὥσπερ γὰρ ὁ πατὴρ ἐγείρει τοὺς νεκροὺς καὶ ζῳοποιεῖ, οὕτως καὶ ὁ υἱὸς οὓς θέλει ζῳοποιεῖ.",
+        "VUL": "Sicut enim Pater suscitat mortuos, et vivificat, sic et Filius, quos vult, vivificat.",
+        "SYN": "Ибо, как Отец воскрешает мертвых и оживляет, так и Сын оживляет, кого хочет.",
+        "NEO": "Car, comme le Père ressuscite les morts et donne la vie, aussi le Fils donne la vie à qui il veut.",
+        "NAB": "For just as the Father raises the dead and gives life, so also does the Son give life to whomever he wishes.",
+        "VAT_ES": "Así como el Padre resucita a los muertos y les da vida, del mismo modo el Hijo da vida al que él quiere.",
+        "CEI": "Bisogna dunque che tra coloro che ci furono compagni per tutto il tempo in cui il Signore Gesù ha vissuto in mezzo a noi,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Οὐδὲ γὰρ ὁ πατὴρ κρίνει οὐδένα, ἀλλὰ τὴν κρίσιν πᾶσαν δέδωκεν τῷ υἱῷ·",
+        "VUL": "Neque enim Pater judicat quemquam : sed omne judicium dedit Filio,",
+        "SYN": "Ибо Отец и не судит никого, но весь суд отдал Сыну,",
+        "NEO": "Le Père même ne juge personne, mais il a donné au Fils le jugement tout entier,",
+        "NAB": "Nor does the Father judge anyone, but he has given all judgment to his Son,",
+        "VAT_ES": "Porque el Padre no juzga a nadie: él ha puesto todo juicio en manos de su Hijo,",
+        "CEI": "incominciando dal battesimo di Giovanni fino al giorno in cui è stato di tra noi assunto in cielo, uno divenga, insieme a noi, testimone della sua risurrezione\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "ἵνα πάντες τιμῶσιν τὸν υἱόν, καθὼς τιμῶσιν τὸν πατέρα. Ὁ μὴ τιμῶν τὸν υἱόν, οὐ τιμᾷ τὸν πατέρα τὸν πέμψαντα αὐτόν.",
+        "VUL": "ut omnes honorificent Filium, sicut honorificant Patrem ; qui non honorificat Filium, non honorificat Patrem, qui misit illum.",
+        "SYN": "дабы все чтили Сына, как чтут Отца. Кто не чтит Сына, тот не чтит и Отца, пославшего Его.",
+        "NEO": "afin que tous honorent le Fils comme ils honorent le Père. Celui qui n’honore pas le Fils n’honore pas le Père qui l’a envoyé.",
+        "NAB": "so that all may honor the Son just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him.",
+        "VAT_ES": "para que todos honren al Hijo como honran al Padre. El que no honra al Hijo, no honra al Padre que lo envió.",
+        "CEI": "Ne furono proposti due, Giuseppe detto Barsabba, che era soprannominato Giusto, e Mattia."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Ἀμὴν ἀμὴν λέγω ὑμῖν ὅτι ὁ τὸν λόγον μου ἀκούων, καὶ πιστεύων τῷ πέμψαντί με, ἔχει ζωὴν αἰώνιον· καὶ εἰς κρίσιν οὐκ ἔρχεται, ἀλλὰ μεταβέβηκεν ἐκ τοῦ θανάτου εἰς τὴν ζωήν.",
+        "VUL": "Amen, amen dico vobis, quia qui verbum meum audit, et credit ei qui misit me, habet vitam æternam, et in judicium non venit, sed transiit a morte in vitam.",
+        "SYN": "Истинно, истинно говорю вам: слушающий слово Мое и верующий в Пославшего Меня имеет жизнь вечную, и на суд не приходит, но перешел от смерти в жизнь.",
+        "NEO": "En vérité, en vérité, je vous le dis, celui qui écoute ma parole et croit à celui qui m’a envoyé a la vie éternelle, et n’encourt pas la condamnation, mais il est passé de la mort à la vie.",
+        "NAB": "Amen, amen, I say to you, whoever hears my word and believes in the one who sent me has eternal life and will not come to condemnation, but has passed from death to life.",
+        "VAT_ES": "Les aseguro que el que escucha mi palabra y cree en aquel que me ha enviado, tiene Vida eterna y no está sometido al juicio, sino que ya ha pasado de la muerte a la Vida.",
+        "CEI": "Allora essi pregarono dicendo: \"Tu, Signore, che conosci il cuore di tutti, mostraci quale di questi due hai designato"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Ἀμὴν ἀμὴν λέγω ὑμῖν ὅτι ἔρχεται ὥρα καὶ νῦν ἐστιν, ὅτε οἱ νεκροὶ ἀκούσονται τῆς φωνῆς τοῦ υἱοῦ τοῦ θεοῦ, καὶ οἱ ἀκούσαντες ζήσονται.",
+        "VUL": "Amen, amen dico vobis, quia venit hora, et nunc est, quando mortui audient vocem Filii Dei : et qui audierint, vivent.",
+        "SYN": "Истинно, истинно говорю вам: наступает время, и настало уже, когда мертвые услышат глас Сына Божия и, услышав, оживут.",
+        "NEO": "En vérité, en vérité, je vous le dis, l’heure vient, et elle est déjà venue, où les morts entendront la voix du Fils de Dieu, et ceux qui l’auront entendue vivront.",
+        "NAB": "Amen, amen, I say to you, the hour is coming and is now here when the dead will hear the voice of the Son of God, and those who hear will live.",
+        "VAT_ES": "Les aseguro que la hora se acerca, y ya ha llegado, en que los muertos oirán la voz del Hijo de Dios; y los que la oigan, vivirán.",
+        "CEI": "a prendere il posto in questo ministero e apostolato che Giuda ha abbandonato per andarsene al posto da lui scelto\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Ὥσπερ γὰρ ὁ πατὴρ ἔχει ζωὴν ἐν ἑαυτῷ, οὕτως ἔδωκεν καὶ τῷ υἱῷ ζωὴν ἔχειν ἐν ἑαυτῷ·",
+        "VUL": "Sicut enim Pater habet vitam in semetipso, sic dedit et Filio habere vitam in semetipso :",
+        "SYN": "Ибо, как Отец имеет жизнь в Самом Себе, так и Сыну дал иметь жизнь в Самом Себе.",
+        "NEO": "Car, comme le Père a la vie en lui-même, ainsi il a donné au Fils d’avoir la vie en lui-même ;",
+        "NAB": "For just as the Father has life in himself, so also he gave to his Son the possession of life in himself.",
+        "VAT_ES": "Así como el Padre dispone de la Vida, del mismo modo ha concedido a su Hijo disponer de ella,",
+        "CEI": "Gettarono quindi le sorti su di loro e la sorte cadde su Mattia, che fu associato agli undici apostoli."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "καὶ ἐξουσίαν ἔδωκεν αὐτῷ καὶ κρίσιν ποιεῖν, ὅτι υἱὸς ἀνθρώπου ἐστίν.",
+        "VUL": "et potestatem dedit ei judicium facere, quia Filius hominis est.",
+        "SYN": "И дал Ему власть производить и суд, потому что Он есть Сын Человеческий.",
+        "NEO": "et il lui a aussi donné le pouvoir de juger, parce qu’il est Fils de l’homme.+ 5:27 27. Parce qu’il est le Fils de l’Homme, c’est-à-dire \\+qt le Messie\\+qt* (voy. Dan. vii, 13-14), il a reçu le pouvoir de juger, prérogative du Messie, comme l’avaient déclaré les Prophètes (voy. Ps. lxxii (héb.) 2 ; Is. xi, 4 ; lxiii, 3, 6).*",
+        "NAB": "And he gave him power to exercise judgment, because he is the Son of Man.",
+        "VAT_ES": "y le dio autoridad para juzgar porque él es el Hijo del hombre."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Μὴ θαυμάζετε τοῦτο· ὅτι ἔρχεται ὥρα, ἐν ᾗ πάντες οἱ ἐν τοῖς μνημείοις ἀκούσονται τῆς φωνῆς αὐτοῦ,",
+        "VUL": "Nolite mirari hoc, quia venit hora in qua omnes qui in monumentis sunt audient vocem Filii Dei :",
+        "SYN": "Не дивитесь сему; ибо наступает время, в которое все, находящиеся в гробах, услышат глас Сына Божия;",
+        "NEO": "Ne vous en étonnez pas ; car l’heure vient où tous ceux qui sont dans les sépulcres entendront sa voix.",
+        "NAB": "Do not be amazed at this, because the hour is coming in which all who are in the tombs will hear his voice",
+        "VAT_ES": "No se asombren: se acerca la hora en que todos los que están en las tumbas oirán su voz"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "καὶ ἐκπορεύσονται, οἱ τὰ ἀγαθὰ ποιήσαντες, εἰς ἀνάστασιν ζωῆς· οἱ δὲ τὰ φαῦλα πράξαντες, εἰς ἀνάστασιν κρίσεως.",
+        "VUL": "et procedent qui bona fecerunt, in resurrectionem vitæ ; qui vero mala egerunt, in resurrectionem judicii.",
+        "SYN": "и изыдут творившие добро в воскресение жизни, а делавшие зло -- в воскресение осуждения.",
+        "NEO": "Et ils en sortiront, ceux qui auront fait le bien, pour une résurrection de vie ; ceux qui auront fait le mal, pour une résurrection de condamnation.",
+        "NAB": "and will come out, those who have done good deeds to the resurrection of life, but those who have done wicked deeds to the resurrection of condemnation.",
+        "VAT_ES": "y saldrán de ellas: los que hayan hecho el bien, resucitarán para la Vida; los que hayan hecho el mal, resucitarán para el juicio."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "¶Οὐ δύναμαι ἐγὼ ποιεῖν ἀπ’ ἐμαυτοῦ οὐδέν· καθὼς ἀκούω, κρίνω· καὶ ἡ κρίσις ἡ ἐμὴ δικαία ἐστίν· ὅτι οὐ ζητῶ τὸ θέλημα τὸ ἐμόν, ἀλλὰ τὸ θέλημα τοῦ πέμψαντός με πατρός.",
+        "VUL": "Non possum ego a meipso facere quidquam. Sicut audio, judico : et judicium meum justum est, quia non quæro voluntatem meam, sed voluntatem ejus qui misit me.",
+        "SYN": "Я ничего не могу творить Сам от Себя. Как слышу, так и сужу, и суд Мой праведен; ибо не ищу Моей воли, но воли пославшего Меня Отца.",
+        "NEO": "Je ne puis rien faire de moi-même. Selon que j’entends, je juge ; et mon jugement est juste, parce que je ne cherche pas ma propre volonté, mais la volonté de celui qui m’a envoyé.",
+        "NAB": "\"I cannot do anything on my own; I judge as I hear, and my judgment is just, because I do not seek my own will but the will of the one who sent me.",
+        "VAT_ES": "Nada puedo hacer por mí mismo. Yo juzgo de acuerdo con lo que oigo, y mi juicio es justo, porque lo que yo busco no es hacer mi voluntad, sino la de aquel que me envió."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "Ἐὰν ἐγὼ μαρτυρῶ περὶ ἐμαυτοῦ, ἡ μαρτυρία μου οὐκ ἔστιν ἀληθής.",
+        "VUL": "Si ego testimonium perhibeo de meipso, testimonium meum non est verum.",
+        "SYN": "Если Я свидетельствую Сам о Себе, то свидетельство Мое не есть истинно.",
+        "NEO": "Si c’est moi qui rends témoignage de moi-même, mon témoignage n’est pas véridique.",
+        "NAB": "\"If I testify on my own behalf, my testimony cannot be verified.",
+        "VAT_ES": "Si yo diera testimonio de mí mismo, mi testimonio no valdría."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "Ἄλλος ἐστὶν ὁ μαρτυρῶν περὶ ἐμοῦ, καὶ οἶδα ὅτι ἀληθής ἐστιν ἡ μαρτυρία ἣν μαρτυρεῖ περὶ ἐμοῦ.",
+        "VUL": "Alius est qui testimonium perhibet de me : et scio quia verum est testimonium, quod perhibet de me.",
+        "SYN": "Есть другой, свидетельствующий о Мне; и Я знаю, что истинно то свидетельство, которым он свидетельствует о Мне.",
+        "NEO": "Il y en a un autre qui rend témoignage de moi, et je sais que le témoignage qu’il rend de moi est véridique.+ 5:32 32. Un autre: mon Père ; comp. vers. 27 ; vii, 28 ; viii, 26.*",
+        "NAB": "But there is another who testifies on my behalf, and I know that the testimony he gives on my behalf is true.",
+        "VAT_ES": "Pero hay otro que da testimonio de mí, y yo sé que ese testimonio es verdadero."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Ὑμεῖς ἀπεστάλκατε πρὸς Ἰωάννην, καὶ μεμαρτύρηκεν τῇ ἀληθείᾳ.",
+        "VUL": "Vos misistis ad Joannem, et testimonium perhibuit veritati.",
+        "SYN": "Вы посылали к Иоанну, и он засвидетельствовал об истине.",
+        "NEO": "Vous avez envoyé vers Jean, et il a rendu témoignage à la vérité.+ 5:33 33. Comp. i, 19.*",
+        "NAB": "You sent emissaries to John, and he testified to the truth.",
+        "VAT_ES": "Ustedes mismos mandaron preguntar a Juan, y él ha dado testimonio de la verdad."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "Ἐγὼ δὲ οὐ παρὰ ἀνθρώπου τὴν μαρτυρίαν λαμβάνω, ἀλλὰ ταῦτα λέγω ἵνα ὑμεῖς σωθῆτε.",
+        "VUL": "Ego autem non ab homine testimonium accipio : sed hæc dico ut vos salvi sitis.",
+        "SYN": "Впрочем Я не от человека принимаю свидетельство, но говорю это для того, чтобы вы спаслись.",
+        "NEO": "Pour moi, ce n’est pas d’un homme que je reçois le témoignage ; mais je dis cela afin que vous soyez sauvés.+ 5:34 34. Je vous dis cela, je vous rappelle le témoignage de Jean-Baptiste.*",
+        "NAB": "I do not accept testimony from a human being, but I say this so that you may be saved.",
+        "VAT_ES": "No es que yo dependa del testimonio de un hombre; si digo esto es para la salvación de ustedes."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "Ἐκεῖνος ἦν ὁ λύχνος ὁ καιόμενος καὶ φαίνων, ὑμεῖς δὲ ἠθελήσατε ἀγαλλιαθῆναι πρὸς ὥραν ἐν τῷ φωτὶ αὐτοῦ.",
+        "VUL": "Ille erat lucerna ardens et lucens : vos autem voluistis ad horam exsultare in luce ejus.",
+        "SYN": "Он был светильник, горящий и светящий; а вы хотели малое время порадоваться при свете его.",
+        "NEO": "Jean était la lampe qui brûle et luit, mais vous n’*avez voulu que* vous réjouir un moment à sa lumière.",
+        "NAB": "He was a burning and shining lamp, and for a while you were content to rejoice in his light.",
+        "VAT_ES": "Juan era la lámpara que arde y resplandece, y ustedes han querido gozar un instante de su luz."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "Ἐγὼ δὲ ἔχω τὴν μαρτυρίαν μείζω τοῦ Ἰωάννου· τὰ γὰρ ἔργα ἃ ἔδωκέν μοι ὁ πατὴρ ἵνα τελειώσω αὐτά, αὐτὰ τὰ ἔργα ἃ ἐγὼ ποιῶ, μαρτυρεῖ περὶ ἐμοῦ ὅτι ὁ πατήρ με ἀπέσταλκεν.",
+        "VUL": "Ego autem habeo testimonium majus Joanne. Opera enim quæ dedit mihi Pater ut perficiam ea : ipsa opera, quæ ego facio, testimonium perhibent de me, quia Pater misit me :",
+        "SYN": "Я же имею свидетельство больше Иоаннова: ибо дела, которые Отец дал Мне совершить, самые дела сии, Мною творимые, свидетельствуют о Мне, что Отец послал Меня.",
+        "NEO": "Pour moi, j’ai un témoignage plus grand que celui de Jean ; car les œuvres que le Père m’a donné d’accomplir, ces œuvres mêmes que je fais, rendent témoignage de moi, que c’est le Père qui m’a envoyé.",
+        "NAB": "But I have testimony greater than John's. The works that the Father gave me to accomplish, these works that I perform testify on my behalf that the Father has sent me.",
+        "VAT_ES": "Pero el testimonio que yo tengo es mayor que el de Juan: son las obras que el Padre me encargó llevar a cabo. Estas obras que yo realizo atestiguan que mi Padre me ha enviado."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "Καὶ ὁ πέμψας με πατήρ, αὐτὸς μεμαρτύρηκεν περὶ ἐμοῦ. Οὔτε φωνὴν αὐτοῦ ἀκηκόατε πώποτε, οὔτε εἶδος αὐτοῦ ἑωράκατε.",
+        "VUL": "et qui misit me Pater, ipse testimonium perhibuit de me : neque vocem ejus umquam audistis, neque speciem ejus vidistis :",
+        "SYN": "И пославший Меня Отец Сам засвидетельствовал о Мне. А вы ни гласа Его никогда не слышали, ни лица Его не видели;",
+        "NEO": "Et le Père qui m’a envoyé a rendu lui-même témoignage de moi. Vous n’avez jamais entendu sa voix, ni vu sa face,",
+        "NAB": "Moreover, the Father who sent me has testified on my behalf. But you have never heard his voice nor seen his form,",
+        "VAT_ES": "Y el Padre que me envió ha dado testimonio de mí. Ustedes nunca han escuchado su voz ni han visto su rostro,"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "BYZ": "Καὶ τὸν λόγον αὐτοῦ οὐκ ἔχετε μένοντα ἐν ὑμῖν, ὅτι ὃν ἀπέστειλεν ἐκεῖνος, τούτῳ ὑμεῖς οὐ πιστεύετε.",
+        "VUL": "et verbum ejus non habetis in vobis manens : quia quem misit ille, huic vos non creditis.",
+        "SYN": "и не имеете слова Его пребывающего в вас, потому что вы не веруете Тому, Которого Он послал.",
+        "NEO": "et vous n’avez pas sa parole demeurant en vous, parce que vous ne croyez pas à celui qu’il a envoyé.",
+        "NAB": "and you do not have his word remaining in you, because you do not believe in the one whom he has sent.",
+        "VAT_ES": "y su palabra no permanece en ustedes, porque no creen al que él envió."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "BYZ": "Ἐρευνᾶτε τὰς γραφάς, ὅτι ὑμεῖς δοκεῖτε ἐν αὐταῖς ζωὴν αἰώνιον ἔχειν, καὶ ἐκεῖναί εἰσιν αἱ μαρτυροῦσαι περὶ ἐμοῦ·",
+        "VUL": "Scrutamini Scripturas, quia vos putatis in ipsis vitam æternam habere : et illæ sunt quæ testimonium perhibent de me :",
+        "SYN": "Исследуйте Писания, ибо вы думаете чрез них иметь жизнь вечную; а они свидетельствуют о Мне.",
+        "NEO": "Vous scrutez les Écritures, parce que vous pensez trouver en elles la vie éternelle ;",
+        "NAB": "You search the scriptures, because you think you have eternal life through them; even they testify on my behalf.",
+        "VAT_ES": "Ustedes examinan las Escrituras, porque en ellas piensan encontrar Vida eterna: ellas dan testimonio de mí,"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "BYZ": "καὶ οὐ θέλετε ἐλθεῖν πρός με, ἵνα ζωὴν ἔχητε.",
+        "VUL": "et non vultis venire ad me ut vitam habeatis.",
+        "SYN": "Но вы не хотите придти ко Мне, чтобы иметь жизнь.",
+        "NEO": "or, ce sont elles qui rendent témoignage de moi ; et vous ne voulez pas venir à moi pour avoir la vie.",
+        "NAB": "But you do not want to come to me to have life.",
+        "VAT_ES": "y sin embargo, ustedes no quieren venir a mí para tener Vida."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "BYZ": "Δόξαν παρὰ ἀνθρώπων οὐ λαμβάνω·",
+        "VUL": "Claritatem ab hominibus non accipio.",
+        "SYN": "Не принимаю славы от человеков,",
+        "NEO": "Ce n’est pas que je demande ma gloire aux hommes ;",
+        "NAB": "\"I do not accept human praise;",
+        "VAT_ES": "Mi gloria no viene de los hombres."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "BYZ": "ἀλλ’ ἔγνωκα ὑμᾶς, ὅτι τὴν ἀγάπην τοῦ θεοῦ οὐκ ἔχετε ἐν ἑαυτοῖς.",
+        "VUL": "Sed cognovi vos, quia dilectionem Dei non habetis in vobis.",
+        "SYN": "но знаю вас: вы не имеете в себе любви к Богу.",
+        "NEO": "mais je vous connais, je sais* que vous n’avez pas en vous l’amour de Dieu.",
+        "NAB": "moreover, I know that you do not have the love of God in you.",
+        "VAT_ES": "Además, yo los conozco: el amor de Dios no está en ustedes."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "BYZ": "Ἐγὼ ἐλήλυθα ἐν τῷ ὀνόματι τοῦ πατρός μου, καὶ οὐ λαμβάνετέ με· ἐὰν ἄλλος ἔλθῃ ἐν τῷ ὀνόματι τῷ ἰδίῳ, ἐκεῖνον λήψεσθε.",
+        "VUL": "Ego veni in nomine Patris mei, et non accipitis me ; si alius venerit in nomine suo, illum accipietis.",
+        "SYN": "Я пришел во имя Отца Моего, и не принимаете Меня; а если иной придет во имя свое, его примете.",
+        "NEO": "Je suis venu au nom de mon Père, et vous ne me recevez pas ; qu’un autre vienne en son propre nom, vous le recevrez.",
+        "NAB": "I came in the name of my Father, but you do not accept me; yet if another comes in his own name, you will accept him.",
+        "VAT_ES": "He venido en nombre de mi Padre y ustedes no me reciben, pero si otro viene en su propio nombre, a ese sí lo van a recibir."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "BYZ": "Πῶς δύνασθε ὑμεῖς πιστεῦσαι, δόξαν παρὰ ἀλλήλων λαμβάνοντες, καὶ τὴν δόξαν τὴν παρὰ τοῦ μόνου θεοῦ οὐ ζητεῖτε;",
+        "VUL": "Quomodo vos potestis credere, qui gloriam ab invicem accipitis, et gloriam quæ a solo Deo est, non quæritis ?",
+        "SYN": "Как вы можете веровать, когда друг от друга принимаете славу, а славы, которая от Единого Бога, не ищете?",
+        "NEO": "Comment pouvez-vous croire, vous qui tirez votre gloire les uns des autres, et qui ne recherchez pas la gloire qui vient de Dieu seul ?",
+        "NAB": "How can you believe, when you accept praise from one another and do not seek the praise that comes from the only God?",
+        "VAT_ES": "&iquest;Cómo es posible que crean, ustedes que se glorifican unos a otros y no se preocupan por la gloria que sólo viene de Dios?"
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "BYZ": "Μὴ δοκεῖτε ὅτι ἐγὼ κατηγορήσω ὑμῶν πρὸς τὸν πατέρα· ἔστιν ὁ κατηγορῶν ὑμῶν, Μωσῆς, εἰς ὃν ὑμεῖς ἠλπίκατε.",
+        "VUL": "Nolite putare quia ego accusaturus sim vos apud Patrem : est qui accusat vos Moyses, in quo vos speratis.",
+        "SYN": "Не думайте, что Я буду обвинять вас пред Отцем: есть на вас обвинитель Моисей, на которого вы уповаете.",
+        "NEO": "Ne pensez pas que ce soit moi qui vous accuserai devant le Père ; votre accusateur, c’est Moïse, en qui vous avez mis votre espérance.",
+        "NAB": "Do not think that I will accuse you before the Father: the one who will accuse you is Moses, in whom you have placed your hope.",
+        "VAT_ES": "No piensen que soy yo el que los acusaré ante el Padre; el que los acusará será Moisés, en el que ustedes han puesto su esperanza."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "BYZ": "Εἰ γὰρ ἐπιστεύετε Μωσῇ, ἐπιστεύετε ἂν ἐμοί· περὶ γὰρ ἐμοῦ ἐκεῖνος ἔγραψεν.",
+        "VUL": "Si enim crederetis Moysi, crederetis forsitan et mihi : de me enim ille scripsit.",
+        "SYN": "Ибо если бы вы верили Моисею, то поверили бы и Мне, потому что он писал о Мне.",
+        "NEO": "Car si vous croyiez Moïse, vous me croiriez aussi, parce qu’il a écrit de moi.+ 5:46 46. Deut. xviii, 15-19.*",
+        "NAB": "For if you had believed Moses, you would have believed me, because he wrote about me.",
+        "VAT_ES": "Si creyeran en Moisés, también creerían en mí, porque él ha escrito acerca de mí."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ τοῖς ἐκείνου γράμμασιν οὐ πιστεύετε, πῶς τοῖς ἐμοῖς ῥήμασιν πιστεύσετε;",
+        "VUL": "Si autem illius litteris non creditis, quomodo verbis meis credetis ?",
+        "SYN": "Если же его писаниям не верите, как поверите Моим словам?",
+        "NEO": "Mais si vous ne croyez pas à ses écrits, comment croirez-vous à mes paroles ? »",
+        "NAB": "But if you do not believe his writings, how will you believe my words?\"",
+        "VAT_ES": "Pero si no creen lo que él ha escrito, &iquest;cómo creerán lo que yo les digo?»."
+      }
+    }
+  }
+}

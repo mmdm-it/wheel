@@ -1,0 +1,576 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PROV_030",
+  "book_key": "PROV",
+  "sequence": 30,
+  "chapter_in": {
+    "MT": 30,
+    "VUL": 30,
+    "LXX": 30
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "דִּבְרֵ֤י אָג֥וּר בִּן יָקֶ֗ה הַ/מַּ֫שָּׂ֥א נְאֻ֣ם הַ֭/גֶּבֶר לְ/אִֽיתִיאֵ֑ל לְ/אִ֖יתִיאֵ֣ל וְ/אֻכָֽל׃",
+        "VUL": "Verba Congregantis, filii Vomentis. Visio quam locutus est vir cum quo est Deus, et qui Deo secum morante confortatus, ait :",
+        "SYN": "Слова Агура, сына Иакеева. Вдохновенные изречения, _которые_ сказал этот человек Ифиилу, Ифиилу и Укалу:",
+        "NEO": "Paroles d’Agur, fils de Jaké ; sentence. Cet homme a dit :",
+        "NAB": "The words of Agur, son of Jakeh the Massaite: The pronouncement of mortal man: \"I am not God; I am not God, that I should prevail.",
+        "VAT_ES": "Palabras de Agur, hijo de Iaqué, de Masá. Oráculo de este gran hombre: &iexcl;Me he fatigado, Dios, me he fatigado, Dios, y estoy exhausto!",
+        "CEI": "Detti di Agùr figlio di Iakè, da Massa. Dice quest'uomo: Sono stanco, o Dio, sono stanco, o Dio, e vengo meno,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כִּ֤י בַ֣עַר אָנֹכִ֣י מֵ/אִ֑ישׁ וְ/לֹֽא בִינַ֖ת אָדָ֣ם לִֽ/י׃",
+        "VUL": "[Stultissimus sum virorum,/ et sapientia hominum non est mecum./",
+        "SYN": "подлинно, я более невежда, нежели кто-либо из людей, и разума человеческого нет у меня,",
+        "NEO": "Car je suis plus stupide que personne, et je n’ai pas l’intelligence d’un homme.",
+        "NAB": "Why, I am the most stupid of men, and have not even human intelligence;",
+        "VAT_ES": "Sí, soy demasiado torpe para ser un hombre y no tengo la inteligencia de un ser humano;",
+        "CEI": "perché io sono il più ignorante degli uomini e non ho intelligenza umana;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא לָמַ֥דְתִּי חָכְמָ֑ה וְ/דַ֖עַת קְדֹשִׁ֣ים אֵדָֽע׃",
+        "VUL": "Non didici sapientiam,/ et non novi scientiam sanctorum./",
+        "SYN": "и не научился я мудрости, и познания святых не имею.",
+        "NEO": "Je n’ai pas appris la sagesse, et je ne connais pas la science du Saint.",
+        "NAB": "Neither have I learned wisdom, nor have I the knowledge of the Holy One.",
+        "VAT_ES": "nunca aprendí la sabiduría, &iexcl;y qué puedo saber de la ciencia del Santo!",
+        "CEI": "non ho imparato la sapienza e ignoro la scienza del Santo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "מִ֤י עָלָֽה שָׁמַ֨יִם וַ/יֵּרַ֡ד מִ֤י אָֽסַף ר֨וּחַ בְּ/חָפְנָ֡י/ו מִ֤י צָֽרַר מַ֨יִם בַּ/שִּׂמְלָ֗ה מִ֭י הֵקִ֣ים כָּל אַפְסֵי אָ֑רֶץ מַה שְּׁמ֥/וֹ וּ/מַֽה שֶּׁם בְּ֝נ֗/וֹ כִּ֣י תֵדָֽע׃",
+        "VUL": "Quis ascendit in cælum, atque descendit ?/ quis continuit spiritum in manibus suis ?/ quis colligavit aquas quasi in vestimento ?/ quis suscitavit omnes terminos terræ ?/ quod nomen est ejus, et quod nomen filii ejus, si nosti ?/",
+        "SYN": "Кто восходил на небо и нисходил? кто собрал ветер в пригоршни свои? кто завязал воду в одежду? кто поставил все пределы земли? какое имя ему? и какое имя сыну его? знаешь ли?",
+        "NEO": "Qui monte au ciel et qui en descend ? Qui a recueilli le vent dans ses mains ? Qui a lié les eaux dans son vêtement ? Qui a affermi toutes les extrémités de la terre ? Quel est son nom et quel est le nom de son fils ? Le sais-tu ?",
+        "NAB": "Who has gone up to heaven and come down again - who has cupped the wind in his hands? Who has bound up the waters in a cloak - who has marked out all the ends of the earth? What is his name, what is his son's name, if you know it?\"",
+        "VAT_ES": "&iquest;Quién subió a los cielos y descendió? &iquest;Quién recogió el viento en sus puños? &iquest;Quién contuvo las aguas en su manto? &iquest;Quién estableció los confines de la tierra? &iquest;Cuál es su nombre y el nombre de su hijo, si es que lo sabes?",
+        "CEI": "Chi è salito al cielo e ne è sceso? Chi ha raccolto il vento nel suo pugno? Chi ha racchiuso le acque nel suo mantello? Chi ha fissato tutti i confini della terra? Come si chiama? Qual è il nome di suo figlio, se lo sai?"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כָּל אִמְרַ֣ת אֱל֣וֹהַּ צְרוּפָ֑ה מָגֵ֥ן ה֝֗וּא לַֽ/חֹסִ֥ים בּֽ/וֹ׃",
+        "VUL": "Omnis sermo Dei ignitus :/ clypeus est sperantibus in se./",
+        "SYN": "Всякое слово Бога чисто; Он - щит уповающим на Него.",
+        "NEO": "Toute parole de Dieu est éprouvée par le feu ; il est un bouclier pour ceux qui se réfugient auprès de lui.",
+        "NAB": "Every word of God is tested; he is a shield to those who take refuge in him.",
+        "VAT_ES": "Toda palabra de Dios es acrisolada, Dios es un escudo para el que se refugia en él.",
+        "CEI": "Ogni parola di Dio è appurata; egli è uno scudo per chi ricorre a lui."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אַל תּ֥וֹסְףְּ עַל דְּבָרָ֑י/ו פֶּן יוֹכִ֖יחַ בְּ/ךָ֣ וְ/נִכְזָֽבְתָּ׃",
+        "VUL": "Ne addas quidquam verbis illius,/ et arguaris, inveniarisque mendax./",
+        "SYN": "Не прибавляй к словам Его, чтобы Он не обличил тебя, и ты не оказался лжецом.",
+        "NEO": "N’ajoute rien à ses paroles, de peur qu’il ne te reprenne et que tu ne sois trouvé menteur.",
+        "NAB": "Add nothing to his words, lest he reprove you, and you be exposed as a deceiver.",
+        "VAT_ES": "No añadas nada a sus palabras, no sea que te reprenda y seas tenido por mentiroso.",
+        "CEI": "Non aggiungere nulla alle sue parole, perché non ti riprenda e tu sia trovato bugiardo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "שְׁ֭תַּיִם שָׁאַ֣לְתִּי מֵ/אִתָּ֑/ךְ אַל תִּמְנַ֥ע מִ֝מֶּ֗/נִּי בְּ/טֶ֣רֶם אָמֽוּת׃",
+        "VUL": "Duo rogavi te :/ ne deneges mihi antequam moriar :/",
+        "SYN": "Двух вещей я прошу у Тебя, не откажи мне, прежде нежели я умру:",
+        "NEO": "Je te demande deux choses, ne me les refuse pas avant que je meure :",
+        "NAB": "Two things I ask of you, deny them not to me before I die:",
+        "VAT_ES": "Hay dos cosas que yo te pido, no me la niegues antes que muera:",
+        "CEI": "Io ti domando due cose, non negarmele prima che io muoia:"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "שָׁ֤וְא וּֽ/דְבַר כָּזָ֡ב הַרְחֵ֬ק מִמֶּ֗/נִּי רֵ֣אשׁ וָ֭/עֹשֶׁר אַל תִּֽתֶּן לִ֑/י הַ֝טְרִיפֵ֗/נִי לֶ֣חֶם חֻקִּֽ/י׃",
+        "VUL": "vanitatem et verba mendacia longe fac a me ;/ mendicitatem et divitias ne dederis mihi :/ tribue tantum victui meo necessaria,/",
+        "SYN": "суету и ложь удали от меня, нищеты и богатства не давай мне, питай меня насущным хлебом,",
+        "NEO": "Eloigne de moi la fausseté et la parole mensongère ; ne me donne ni pauvreté, ni richesse, accorde-moi le pain qui m’est nécessaire :",
+        "NAB": "Put falsehood and lying far from me, give me neither poverty nor riches; (provide me only with the food I need;)",
+        "VAT_ES": "aleja de mí la falsedad y la mentira; no me des ni pobreza ni riqueza, dame la ración necesaria,",
+        "CEI": "tieni lontano da me falsità e menzogna, non darmi né povertà né ricchezza; ma fammi avere il cibo necessario,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "פֶּ֥ן אֶשְׂבַּ֨ע וְ/כִחַשְׁתִּי֮ וְ/אָמַ֗רְתִּי מִ֥י יְה֫וָ֥ה וּ/פֶֽן אִוָּרֵ֥שׁ וְ/גָנַ֑בְתִּי וְ֝/תָפַ֗שְׂתִּי שֵׁ֣ם אֱלֹהָֽ/י׃",
+        "VUL": "ne forte satiatus illiciar ad negandum,/ et dicam : Quis est Dominus ?/ aut egestate compulsus, furer,/ et perjurem nomen Dei mei./",
+        "SYN": "дабы, пресытившись, я не отрекся _Тебя_ и не сказал: \"кто Господь?\" и чтобы, обеднев, не стал красть и употреблять имя Бога моего всуе.",
+        "NEO": "de peur que, rassasié, je ne te renie et ne dise : « Qui est \\+w Yahweh|strong=\"H3068\"\\+w** ? » ; et que, devenu pauvre, je ne dérobe, et n’outrage le nom de mon Dieu.",
+        "NAB": "Lest, being full, I deny you, saying, \"Who is the LORD?\" Or, being in want, I steal, and profane the name of my God.",
+        "VAT_ES": "no sea que, al sentirme satisfecho, reniegue y diga: «&iquest;Quién es el Señor?», o que, siendo pobre, me ponga a robar y atente contra el nombre de mi Dios.",
+        "CEI": "perché, una volta sazio, io non ti rinneghi e dica: \"Chi è il Signore?\", oppure, ridotto all'indigenza, non rubi e profani il nome del mio Dio."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אַל תַּלְשֵׁ֣ן עֶ֭בֶד אֶל אדנ/ו אֲדֹנָ֑י/ו פֶּֽן יְקַלֶּלְ/ךָ֥ וְ/אָשָֽׁמְתָּ׃",
+        "VUL": "Ne accuses servum ad dominum suum,/ ne forte maledicat tibi, et corruas.]",
+        "SYN": "Не злословь раба пред господином его, чтобы он не проклял тебя, и ты не остался виноватым.",
+        "NEO": "Ne calomnie pas un serviteur auprès de son maître, de peur qu’il ne te maudisse et que tu n’en portes la peine.",
+        "NAB": "Slander not a servant to his master, lest he curse you, and you have to pay the penalty.",
+        "VAT_ES": "No denigres a un servidor delante de su patrón, no sea que él te maldiga y cargues con la culpa.",
+        "CEI": "Non calunniare lo schiavo presso il padrone, perché egli non ti maledica e tu non ne porti la pena."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "דּ֭וֹר אָבִ֣י/ו יְקַלֵּ֑ל וְ/אֶת אִ֝מּ֗/וֹ לֹ֣א יְבָרֵֽךְ׃",
+        "VUL": "[Generatio quæ patri suo maledicit,/ et quæ matri suæ non benedicit ;/",
+        "SYN": "Есть род, который проклинает отца своего и не благословляет матери своей.",
+        "NEO": "Il est une race qui maudit son père, et qui ne bénit pas sa mère.",
+        "NAB": "There is a group of people that curses its father, and blesses not its mother.",
+        "VAT_ES": "Hay cierta clase de gente que maldice a su padre y no bendice a su madre,",
+        "CEI": "C'è gente che maledice suo padre e non benedice sua madre."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "דּ֭וֹר טָה֣וֹר בְּ/עֵינָ֑י/ו וּ֝/מִ/צֹּאָת֗/וֹ לֹ֣א רֻחָֽץ׃",
+        "VUL": "generatio quæ sibi munda videtur,/ et tamen non est lota a sordibus suis ;/",
+        "SYN": "Есть род, который чист в глазах своих, тогда как не омыт от нечистот своих.",
+        "NEO": "Il est une race qui est pure à ses propres yeux, et qui n’est pas lavée de sa souillure.",
+        "NAB": "There is a group that is pure in its own eyes, yet is not purged of its filth.",
+        "VAT_ES": "gente que se considera pura y no se ha lavado de su inmundicia.",
+        "CEI": "C'è gente che si crede pura, ma non si è lavata della sua lordura."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "דּ֭וֹר מָה רָמ֣וּ עֵינָ֑י/ו וְ֝/עַפְעַפָּ֗י/ו יִנָּשֵֽׂאוּ׃",
+        "VUL": "generatio cujus excelsi sunt oculi,/ et palpebræ ejus in alta surrectæ ;/",
+        "SYN": "Есть род - о, как высокомерны глаза его, и как подняты ресницы его!",
+        "NEO": "Il est une race — combien ses regards sont altiers, et ses paupières élevées !",
+        "NAB": "There is a group - how haughty their eyes! how overbearing their glance!",
+        "VAT_ES": "&iexcl;Qué altaneros son los ojos de esa gente, cuánto desdén hay en sus miradas!",
+        "CEI": "C'è gente dagli occhi così alteri e dalle ciglia così altezzose!"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "דּ֤וֹר חֲרָב֣וֹת שִׁנָּי/ו֮ וּֽ/מַאֲכָל֪וֹת מְֽתַלְּעֹ֫תָ֥י/ו לֶ/אֱכֹ֣ל עֲנִיִּ֣ים מֵ/אֶ֑רֶץ וְ֝/אֶבְיוֹנִ֗ים מֵ/אָדָֽם׃",
+        "VUL": "generatio quæ pro dentibus gladios habet,/ et commandit molaribus suis,/ ut comedat inopes de terra,/ et pauperes ex hominibus./",
+        "SYN": "Есть род, у которого зубы - мечи, и челюсти - ножи, чтобы пожирать бедных на земле и нищих между людьми.",
+        "NEO": "Il est une race dont les dents sont des glaives, et les molaires des couteaux, pour dévorer les malheureux de dessus la terre, et les indigents parmi les hommes.",
+        "NAB": "There is a group whose incisors are swords, whose teeth are knives, Devouring the needy from the earth, and the poor from among men.",
+        "VAT_ES": "Sus dientes son espadas y sus mandíbulas, cuchillos, para devorar a los desvalidos de la tierra y a los más pobres entre los hombres.",
+        "CEI": "C'è gente i cui denti sono spade e i cui molari sono coltelli, per divorare gli umili eliminandoli dalla terra e i poveri in mezzo agli uomini."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "לַֽ/עֲלוּקָ֨ה שְׁתֵּ֥י בָנוֹת֮ הַ֤ב הַ֥ב שָׁל֣וֹשׁ הֵ֭נָּה לֹ֣א תִשְׂבַּ֑עְנָה אַ֝רְבַּ֗ע לֹא אָ֥מְרוּ הֽוֹן׃",
+        "VUL": "Sanguisugæ duæ sunt filiæ,/ dicentes : Affer, affer./ Tria sunt insaturabilia,/ et quartum quod numquam dicit : Sufficit./",
+        "SYN": "У ненасытимости две дочери: \"давай, давай!\" Вот три ненасытимых, и четыре, которые не скажут: \"довольно!\"",
+        "NEO": "La sangsue a deux filles : Donne ! donne ! Trois choses sont insatiables, quatre ne disent jamais : Assez :",
+        "NAB": "The two daughters of the leech are, \"Give, Give.\" Three things are never satisfied, four never say, \"Enough!\"",
+        "VAT_ES": "La sanguijuela tiene dos hijas: «&iexcl;Dame!» y «&iexcl;Dame!». Hay tres cosas insaciables y cuatro que nunca dicen: «&iexcl;Basta!».",
+        "CEI": "La sanguisuga ha due figlie: \"Dammi! Dammi!\". Tre cose non si saziano mai, anzi quattro non dicono mai: \"Basta!\":"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "שְׁאוֹל֮ וְ/עֹ֪צֶ֫ר רָ֥חַם אֶ֭רֶץ לֹא שָׂ֣בְעָה מַּ֑יִם וְ֝/אֵ֗שׁ לֹא אָ֥מְרָה הֽוֹן׃",
+        "VUL": "Infernus, et os vulvæ,/ et terra quæ non satiatur aqua :/ ignis vero numquam dicit : Sufficit./",
+        "SYN": "Преисподняя и утроба бесплодная, земля, которая не насыщается водою, и огонь, который не говорит: \"довольно!\"",
+        "NEO": "le schéol, le sein stérile, la terre qui n’est pas rassasiée d’eau et le feu qui ne dit jamais : Assez !",
+        "NAB": "The nether world, and the barren womb; the earth, that is never saturated with water, and fire, that never says, \"Enough!\"",
+        "VAT_ES": "el Abismo y el vientre estéril, la tierra, que no se sacia de agua, y el fuego, que nunca dice: «&iexcl;Basta!».",
+        "CEI": "gli inferi, il grembo sterile, la terra mai sazia d'acqua e il fuoco che mai dice: \"Basta!\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "עַ֤יִן תִּֽלְעַ֣ג לְ/אָב֮ וְ/תָב֪וּז לִֽ/יקֲּהַ֫ת אֵ֥ם יִקְּר֥וּ/הָ עֹרְבֵי נַ֑חַל וְֽ/יֹאכְל֥וּ/הָ בְנֵי נָֽשֶׁר׃",
+        "VUL": "Oculum qui subsannat patrem,/ et qui despicit partum matris suæ,/ effodiant eum corvi de torrentibus,/ et comedant eum filii aquilæ !]",
+        "SYN": "Глаз, насмехающийся над отцом и пренебрегающий покорностью к матери, выклюют вороны дольные, и сожрут птенцы орлиные!",
+        "NEO": "L’œil qui se moque d’un père, et qui dédaigne l’obéissance envers une mère, les corbeaux du torrent le perceront, et les petits de l’aigle le dévoreront.",
+        "NAB": "The eye that mocks a father, or scorns an aged mother, Will be plucked out by the ravens in the valley; the young eagles will devour it.",
+        "VAT_ES": "Al ojo que se burla de su padre y desprecia la vejez de su madre, lo vaciarán los cuervos del torrente y lo devorarán los aguiluchos.",
+        "CEI": "L'occhio che guarda con scherno il padre e disprezza l'obbedienza alla madre sia cavato dai corvi della valle e divorato dagli aquilotti."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "שְׁלֹשָׁ֣ה הֵ֭מָּה נִפְלְא֣וּ מִמֶּ֑/נִּי ו/ארבע וְ֝/אַרְבָּעָ֗ה לֹ֣א יְדַעְתִּֽי/ם׃",
+        "VUL": "[Tria sunt difficilia mihi,/ et quartum penitus ignoro :/",
+        "SYN": "Три вещи непостижимы для меня, и четырех я не понимаю:",
+        "NEO": "Il y a trois choses qui me dépassent, et même quatre que je ne comprends pas :",
+        "NAB": "Three things are too wonderful for me, yes, four I cannot understand:",
+        "VAT_ES": "Hay tres cosas que me superan y cuatro que no comprendo:",
+        "CEI": "Tre cose mi sono difficili, anzi quattro, che io non comprendo:"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "דֶּ֤רֶךְ הַ/נֶּ֨שֶׁר בַּ/שָּׁמַיִם֮ דֶּ֥רֶךְ נָחָ֗שׁ עֲלֵ֫י צ֥וּר דֶּֽרֶךְ אֳנִיָּ֥ה בְ/לֶב יָ֑ם וְ/דֶ֖רֶךְ גֶּ֣בֶר בְּ/עַלְמָֽה׃",
+        "VUL": "viam aquilæ in cælo,/ viam colubri super petram,/ viam navis in medio mari,/ et viam viri in adolescentia./",
+        "SYN": "пути орла на небе, пути змея на скале, пути корабля среди моря и пути мужчины к девице.",
+        "NEO": "la trace de l’aigle dans les cieux, la trace du serpent sur le rocher, la trace du navire au milieu de la mer, et la trace de l’homme chez la jeune fille.",
+        "NAB": "The way of an eagle in the air, the way of a serpent upon a rock, The way of a ship on the high seas, and the way of a man with a maiden.",
+        "VAT_ES": "el camino del águila en el cielo, el camino de la serpiente sobre la roca, el camino del hombre en una joven.",
+        "CEI": "il sentiero dell'aquila nell'aria, il sentiero del serpente sulla roccia, il sentiero della nave in alto mare, il sentiero dell'uomo in una giovane."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "כֵּ֤ן דֶּ֥רֶךְ אִשָּׁ֗ה מְנָ֫אָ֥פֶת אָ֭כְלָה וּ/מָ֣חֲתָה פִ֑י/הָ וְ֝/אָמְרָ֗ה לֹֽא פָעַ֥לְתִּי אָֽוֶן׃",
+        "VUL": "Talis est et via mulieris adulteræ,/ quæ comedit, et tergens os suum/ dicit : Non sum operata malum./",
+        "SYN": "Таков путь и жены прелюбодейной; поела и обтерла рот свой, и говорит: \"я ничего худого не сделала\".",
+        "NEO": "Telle est la voie de la femme adultère : elle mange et, s’essuyant la bouche, elle dit : « Je n’ai pas fait de mal. »",
+        "NAB": "Such is the way of an adulterous woman: she eats, wipes her mouth, and says, \"I have done no wrong.\"",
+        "VAT_ES": "Esta es la conducta de la mujer adúltera: come, se limpia la boca y exclama: «&iexcl;No hice nada malo!».",
+        "CEI": "Tale è la condotta della donna adultera: mangia e si pulisce la bocca e dice: \"Non ho fatto niente di male!\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "תַּ֣חַת שָׁ֭לוֹשׁ רָ֣גְזָה אֶ֑רֶץ וְ/תַ֥חַת אַ֝רְבַּ֗ע לֹא תוּכַ֥ל שְׂאֵֽת׃",
+        "VUL": "Per tria movetur terra,/ et quartum non potest sustinere :/",
+        "SYN": "От трех трясется земля, четырех она не может носить:",
+        "NEO": "Sous trois choses la terre tremble, et sous quatre, qu’elle ne peut supporter :",
+        "NAB": "Under three things the earth trembles, yes, under four it cannot bear up:",
+        "VAT_ES": "Por tres cosas tiembla la tierra y hay cuatro que no puede soportar:",
+        "CEI": "Per tre cose freme la terra, anzi quattro cose non può sopportare:"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "תַּֽחַת עֶ֭בֶד כִּ֣י יִמְל֑וֹךְ וְ֝/נָבָ֗ל כִּ֣י יִֽשְׂבַּֽע לָֽחֶם׃",
+        "VUL": "per servum, cum regnaverit ;/ per stultum, cum saturatus fuerit cibo ;/",
+        "SYN": "раба, когда он делается царем; глупого, когда он досыта ест хлеб;",
+        "NEO": "sous un esclave lorsqu’il vient à régner, et un insensé lorsqu’il est rassasié de pain,",
+        "NAB": "Under a slave when he becomes king, and a fool when he is glutted with food;",
+        "VAT_ES": "un esclavo que llega a rey, un tonto que se harta de pan,",
+        "CEI": "uno schiavo che diventi re, uno stolto che abbia viveri in abbondanza,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "תַּ֣חַת שְׂ֭נוּאָה כִּ֣י תִבָּעֵ֑ל וְ֝/שִׁפְחָ֗ה כִּֽי תִירַ֥שׁ גְּבִרְתָּֽ/הּ׃",
+        "VUL": "per odiosam mulierem, cum in matrimonio fuerit assumpta ;/ et per ancillam, cum fuerit hæres dominæ suæ.]",
+        "SYN": "позорную женщину, когда она выходит замуж, и служанку, когда она занимает место госпожи своей.",
+        "NEO": "sous une femme dédaignée lorsqu’elle se marie, et sous une servante lorsqu’elle hérite de sa maîtresse.",
+        "NAB": "Under an odious woman when she is wed, and a maidservant when she displaces her mistress.",
+        "VAT_ES": "una mujer odiada que encuentra marido y una esclava que hereda a su señora.",
+        "CEI": "una donna già trascurata da tutti che trovi marito e una schiava che prenda il posto della padrona."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אַרְבָּ֣עָה הֵ֭ם קְטַנֵּי אָ֑רֶץ וְ֝/הֵ֗מָּה חֲכָמִ֥ים מְחֻכָּמִֽים׃",
+        "VUL": "[Quatuor sunt minima terræ,/ et ipsa sunt sapientiora sapientibus :/",
+        "SYN": "Вот четыре малых на земле, но они мудрее мудрых:",
+        "NEO": "Il y a sur la terre quatre animaux bien petits, et qui sont cependant très sages :",
+        "NAB": "Four things are among the smallest on the earth, and yet are exceedingly wise:",
+        "VAT_ES": "Hay cuatro seres, lo más pequeños de la tierra, que son sabios entre los sabios:",
+        "CEI": "Quattro esseri sono fra le cose più piccole della terra, eppure sono i più saggi dei saggi:"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "הַ֭/נְּמָלִים עַ֣ם לֹא עָ֑ז וַ/יָּכִ֖ינוּ בַ/קַּ֣יִץ לַחְמָֽ/ם׃",
+        "VUL": "formicæ, populus infirmus,/ qui præparat in messe cibum sibi ;/",
+        "SYN": "муравьи - народ не сильный, но летом заготовляют пищу свою;",
+        "NEO": "Les fourmis, peuple sans force, préparent en été leur nourriture ;",
+        "NAB": "Ants - a species not strong, yet they store up their food in the summer;",
+        "VAT_ES": "las hormigas, pueblo sin fuerza, que aseguran sus provisiones en verano;",
+        "CEI": "le formiche, popolo senza forza, che si provvedono il cibo durante l'estate;"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "שְׁ֭פַנִּים עַ֣ם לֹא עָצ֑וּם וַ/יָּשִׂ֖ימוּ בַ/סֶּ֣לַע בֵּיתָֽ/ם׃",
+        "VUL": "lepusculus, plebs invalida,/ qui collocat in petra cubile suum ;/",
+        "SYN": "горные мыши - народ слабый, но ставят домы свои на скале;",
+        "NEO": "les damans, peuple sans puissance, placent leur gîte dans les rochers ;",
+        "NAB": "Rock-badgers - a species not mighty, yet they make their home in the crags;",
+        "VAT_ES": "los damanes, pueblo sin poder, que instalan sus casa en la roca;",
+        "CEI": "gli iràci, popolo imbelle, ma che hanno la tana sulle rupi;"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "מֶ֭לֶךְ אֵ֣ין לָ/אַרְבֶּ֑ה וַ/יֵּצֵ֖א חֹצֵ֣ץ כֻּלּֽ/וֹ׃",
+        "VUL": "regem locusta non habet,/ et egreditur universa per turmas suas ;/",
+        "SYN": "у саранчи нет царя, но выступает вся она стройно;",
+        "NEO": "les sauterelles n’ont pas de roi, et elles sortent toutes par bandes ;",
+        "NAB": "Locusts - they have no king, yet they migrate all in array;",
+        "VAT_ES": "las langostas, que no tienen rey, pero avanzan todas en escuadrones;",
+        "CEI": "le cavallette, che non hanno un re, eppure marciano tutte insieme schierate;"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "שְׂ֭מָמִית בְּ/יָדַ֣יִם תְּתַפֵּ֑שׂ וְ֝/הִ֗יא בְּ/הֵ֣יכְלֵי מֶֽלֶךְ׃",
+        "VUL": "stellio manibus nititur,/ et moratur in ædibus regis./",
+        "SYN": "паук лапками цепляется, но бывает в царских чертогах.",
+        "NEO": "tu peux prendre le lézard avec la main, et il se trouve dans le palais des rois.",
+        "NAB": "Lizards - you can catch them with your hands, yet they find their way into king's palaces.",
+        "VAT_ES": "la lagartija, que puedes agarrar con la mano, pero habita en los palacios de los reyes.",
+        "CEI": "la lucertola, che si può prender con le mani, ma penetra anche nei palazzi dei re."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "שְׁלֹשָׁ֣ה הֵ֭מָּה מֵיטִ֣יבֵי צָ֑עַד וְ֝/אַרְבָּעָ֗ה מֵיטִ֥בֵי לָֽכֶת׃",
+        "VUL": "Tria sunt quæ bene gradiuntur,/ et quartum quod incedit feliciter :/",
+        "SYN": "Вот трое имеют стройную походку, и четверо стройно выступают:",
+        "NEO": "Il y en a trois qui ont une belle allure, et quatre qui ont une belle démarche :",
+        "NAB": "Three things are stately in their stride, yes, four are stately in their carriage:",
+        "VAT_ES": "Hay tres cosas de paso majestuoso y cuatro que caminan con elegancia:",
+        "CEI": "Tre esseri hanno un portamento maestoso, anzi quattro sono eleganti nel camminare:"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "לַ֭יִשׁ גִּבּ֣וֹר בַּ/בְּהֵמָ֑ה וְ/לֹא יָ֝שׁ֗וּב מִ/פְּנֵי כֹֽל׃",
+        "VUL": "leo, fortissimus bestiarum,/ ad nullius pavebit occursum ;/",
+        "SYN": "лев, силач между зверями, не посторонится ни перед кем;",
+        "NEO": "le lion, le plus brave des animaux, ne reculant devant aucun adversaire ;",
+        "NAB": "The lion, mightiest of beasts, who retreats before nothing;",
+        "VAT_ES": "el león, el más fuerte entre los animales, que no retrocede ante nada;",
+        "CEI": "il leone, il più forte degli animali, che non indietreggia davanti a nessuno;"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "זַרְזִ֣יר מָתְנַ֣יִם אוֹ תָ֑יִשׁ וּ֝/מֶ֗לֶךְ אַלְק֥וּם עִמּֽ/וֹ׃",
+        "VUL": "gallus succinctus lumbos ;/ et aries ; nec est rex, qui resistat ei./",
+        "SYN": "конь и козел, [предводитель стада,] и царь среди народа своего.",
+        "NEO": "l’animal aux reins agiles, ou le bouc, et le roi, à qui personne ne résiste.",
+        "NAB": "The strutting cock, and the he-goat, and the king at the head of his people.",
+        "VAT_ES": "el gallo vigoroso, o el chivo, y el rey al frente de su regimiento.",
+        "CEI": "il gallo pettoruto e il caprone e un re alla testa del suo popolo."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "אִם נָבַ֥לְתָּ בְ/הִתְנַשֵּׂ֑א וְ/אִם זַ֝מּ֗וֹתָ יָ֣ד לְ/פֶֽה׃",
+        "VUL": "Est qui stultus apparuit postquam elevatus est in sublime ;/ si enim intellexisset, ori suo imposuisset manum./",
+        "SYN": "Если ты в заносчивости своей сделал глупость и помыслил злое, то _положи_ руку на уста;",
+        "NEO": "Si tu es assez fou pour te laisser emporter par l’orgueil, et si tu en as la pensée, mets la main sur ta bouche,",
+        "NAB": "If you have foolishly been proud or presumptuous - put your hand on your mouth;",
+        "VAT_ES": "Si fuiste tan tonto que te exaltaste a ti mismo y luego reflexionaste, tápate bien la boca,",
+        "CEI": "Se ti sei esaltato per stoltezza e se poi hai riflettuto, mettiti una mano sulla bocca,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "כִּ֤י מִ֪יץ חָלָ֡ב י֘וֹצִ֤יא חֶמְאָ֗ה וּֽ/מִיץ אַ֭ף י֣וֹצִיא דָ֑ם וּ/מִ֥יץ אַ֝פַּ֗יִם י֣וֹצִיא רִֽיב׃",
+        "VUL": "Qui autem fortiter premit ubera ad eliciendum lac exprimit butyrum ;/ et qui vehementer emungit elicit sanguinem ;/ et qui provocat iras producit discordias.]",
+        "SYN": "потому что, как сбивание молока производит масло, толчок в нос производит кровь, так и возбуждение гнева производит ссору.",
+        "NEO": "car la pression du lait produit du beurre, la pression du nez produit du sang, et la pression de la colère produit la querelle.",
+        "NAB": "For the stirring of milk brings forth curds, and the stirring of anger brings forth blood.",
+        "VAT_ES": "porque apretando la leche se saca manteca, apretando la nariz se saca sangre y apretando la ira se saca una disputa.",
+        "CEI": "poiché, sbattendo il latte ne esce la panna, premendo il naso ne esce il sangue, spremendo la collera ne esce la lite."
+      }
+    }
+  }
+}

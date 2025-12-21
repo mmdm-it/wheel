@@ -1,0 +1,501 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_017",
+  "book_key": "GENE",
+  "sequence": 17,
+  "chapter_in": {
+    "MT": 17,
+    "VUL": 17,
+    "LXX": 17
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י אַבְרָ֔ם בֶּן תִּשְׁעִ֥ים שָׁנָ֖ה וְ/תֵ֣שַׁע שָׁנִ֑ים וַ/יֵּרָ֨א יְהוָ֜ה אֶל אַבְרָ֗ם וַ/יֹּ֤אמֶר אֵלָי/ו֙ אֲנִי אֵ֣ל שַׁדַּ֔י הִתְהַלֵּ֥ךְ לְ/פָנַ֖/י וֶ/הְיֵ֥ה תָמִֽים׃",
+        "VUL": "Postquam vero nonaginta et novem annorum esse cperat, apparuit ei Dominus, dixitque ad eum : Ego Deus omnipotens : ambula coram me, et esto perfectus.",
+        "LXX": "Ἐγένετο δὲ Ἀβρὰμ ἐτῶν ἐνενήκοντα ἐννέα, καὶ ὤφθη Κύριος τῷ Ἀβρὰμ καὶ εἶπεν αὐτῷ Ἐγώ εἰμι ὁ θεός σου· εὐαρέστει ἐναντίον ἐμοῦ, καὶ γίνου ἄμεμπτος·",
+        "NAB": "When Abram was ninety-nine years old, the LORD appeared to him and said: \"I am God the Almighty. Walk in my presence and be blameless.",
+        "SYN": "Аврам был девяноста девяти лет, и Господь явился Авраму и сказал ему: Я Бог Всемогущий; ходи предо Мною и будь непорочен;",
+        "NEO": "Lorsque Abram fut arrivé à l’âge de quatre-vingt-dix-neuf ans, \\+w Yahweh|strong=\"H3068\"\\+w** lui apparut et lui dit : « Je suis le Dieu tout-puissant ; marche devant ma face et sois irréprochable :",
+        "VAT_ES": "Cuando Abram tenía noventa y nueve años, el Señor se le apareció y le dijo: «Yo soy el Dios Todopoderoso. Camina en mi presencia y sé irreprochable.",
+        "CEI": "Quando Abram ebbe novantanove anni, il Signore gli apparve e gli disse: \"Io sono Dio onnipotente: cammina davanti a me e sii integro."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/אֶתְּנָ֥ה בְרִיתִ֖/י בֵּינִ֣/י וּ/בֵינֶ֑/ךָ וְ/אַרְבֶּ֥ה אוֹתְ/ךָ֖ בִּ/מְאֹ֥ד מְאֹֽד׃",
+        "VUL": "Ponamque fdus meum inter me et te, et multiplicabo te vehementer nimis.",
+        "LXX": "καὶ θήσομαι τὴν διαθήκην μου ἀνὰ μέσον ἐμοῦ καὶ ἀνὰ μέσον σοῦ, καὶ πληθυνῶ σε σφόδρα.",
+        "NAB": "Between you and me I will establish my covenant, and I will multiply you exceedingly.\"",
+        "SYN": "и поставлю завет Мой между Мною и тобою, и весьма, весьма размножу тебя.",
+        "NEO": "j’établirai mon alliance entre moi et toi, et je te multiplierai à l’infini. »",
+        "VAT_ES": "Yo haré una alianza contigo, y te daré una descendencia muy numerosa».",
+        "CEI": "Porrò la mia alleanza tra me e te e ti renderò numeroso molto, molto\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּפֹּ֥ל אַבְרָ֖ם עַל פָּנָ֑י/ו וַ/יְדַבֵּ֥ר אִתּ֛/וֹ אֱלֹהִ֖ים לֵ/אמֹֽר׃",
+        "VUL": "Cecidit Abram pronus in faciem.",
+        "LXX": "καὶ ἔπεσεν Ἀβρὰμ ἐπὶ πρόσωπον αὐτοῦ, καὶ ἐλάλησεν αὐτῷ ὁ θεὸς λέγων",
+        "NAB": "When Abram prostrated himself, God continued to speak to him:",
+        "SYN": "И пал Аврам на лице свое. Бог продолжал говорить с ним и сказал:",
+        "NEO": "Abram tomba la face contre terre, et Dieu lui parla ainsi :",
+        "VAT_ES": "Abram cayó con el rostro en tierra, mientras Dios le seguía diciendo:",
+        "CEI": "Subito Abram si prostrò con il viso a terra e Dio parlò con lui:"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אֲנִ֕י הִנֵּ֥ה בְרִיתִ֖/י אִתָּ֑/ךְ וְ/הָיִ֕יתָ לְ/אַ֖ב הֲמ֥וֹן גּוֹיִֽם׃",
+        "VUL": "Dixitque ei Deus : Ego sum, et pactum meum tecum, erisque pater multarum gentium.",
+        "LXX": "Καὶ ἐγώ, ἰδοὺ ἡ διαθήκη μου μετὰ σοῦ· καὶ ἔσῃ πατὴρ πλήθους ἐθνῶν.",
+        "NAB": "\"My covenant with you is this: you are to become the father of a host of nations.",
+        "SYN": "Я -- вот завет Мой с тобою: ты будешь отцом множества народов,",
+        "NEO": "« Moi, voici mon alliance avec toi : tu deviendras père d’une multitude de nations.",
+        "VAT_ES": "«Esta será mi alianza contigo: tú serás el padre de una multitud de naciones.",
+        "CEI": "\"Eccomi: la mia alleanza è con te e sarai padre di una moltitudine di popoli."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/לֹא יִקָּרֵ֥א ע֛וֹד אֶת שִׁמְ/ךָ֖ אַבְרָ֑ם וְ/הָיָ֤ה שִׁמְ/ךָ֙ אַבְרָהָ֔ם כִּ֛י אַב הֲמ֥וֹן גּוֹיִ֖ם נְתַתִּֽי/ךָ׃",
+        "VUL": "Nec ultra vocabitur nomen tuum Abram, sed appellaberis Abraham : quia patrem multarum gentium constitui te.",
+        "LXX": "καὶ οὐ κληθήσεται ἔτι τὸ ὄνομά σου Ἀβράμ, ἀλλ’ ἔσται Ἀβραὰμ τὸ ὄνομά σου· ὅτι πατέρα πολλῶν ἐθνῶν τέθεικά σε.",
+        "NAB": "No longer shall you be called Abram; your name shall be Abraham, for I am making you the father of a host of nations.",
+        "SYN": "и не будешь ты больше называться Аврамом, но будет тебе имя: Авраам, ибо Я сделаю тебя отцом множества народов;",
+        "NEO": "On ne te nommera plus Abram, mais ton nom sera Abraham, car je te fais père d’une multitude de nations.",
+        "VAT_ES": "Y ya no te llamarás más Abram: en adelante tu nombre será Abraham, para indicar que yo te he constituido padre de una multitud de naciones.",
+        "CEI": "Non ti chiamerai più Abram ma ti chiamerai Abraham perché padre di una moltitudine di popoli ti renderò."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/הִפְרֵתִ֤י אֹֽתְ/ךָ֙ בִּ/מְאֹ֣ד מְאֹ֔ד וּ/נְתַתִּ֖י/ךָ לְ/גוֹיִ֑ם וּ/מְלָכִ֖ים מִמְּ/ךָ֥ יֵצֵֽאוּ׃",
+        "VUL": "Faciamque te crescere vehementissime, et ponam te in gentibus, regesque ex te egredientur.",
+        "LXX": "καὶ αὐξανῶ σε σφόδρα, καὶ θήσω σε εἰς ἔθνη, καὶ βασιλεῖς ἐκ σοῦ ἐξελεύσονται.",
+        "NAB": "I will render you exceedingly fertile; I will make nations of you; kings shall stem from you.",
+        "SYN": "и весьма, весьма распложу тебя, и произведу от тебя народы, и цари произойдут от тебя;",
+        "NEO": "Je te ferai croître extraordinairement, je ferai de toi des nations, et des rois sortiront de toi.",
+        "VAT_ES": "Te haré extraordinariamente fecundo: de ti suscitaré naciones, y de ti nacerán reyes.",
+        "CEI": "E ti renderò molto, molto fecondo; ti farò diventare nazioni e da te nasceranno dei re."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/הֲקִמֹתִ֨י אֶת בְּרִיתִ֜/י בֵּינִ֣/י וּ/בֵינֶ֗/ךָ וּ/בֵ֨ין זַרְעֲ/ךָ֧ אַחֲרֶ֛י/ךָ לְ/דֹרֹתָ֖/ם לִ/בְרִ֣ית עוֹלָ֑ם לִ/הְי֤וֹת לְ/ךָ֙ לֵֽ/אלֹהִ֔ים וּֽ/לְ/זַרְעֲ/ךָ֖ אַחֲרֶֽי/ךָ׃",
+        "VUL": "Et statuam pactum meum inter me et te, et inter semen tuum post te in generationibus suis, fdere sempiterno : ut sim Deus tuus, et seminis tui post te.",
+        "LXX": "καὶ στήσω τὴν διαθήκην μου ἀνὰ μέσον ἐμοῦ καὶ ἀνὰ μέσον σοῦ καὶ ἀνὰ μέσον τοῦ σπέρματός σου μετὰ σὲ εἰς γενεὰς αὐτῶν εἰς διαθήκην αἰώνιον, εἶναί σου θεὸς καὶ τοῦ σπέρματός σου μετὰ σέ.",
+        "NAB": "I will maintain my covenant with you and your descendants after you throughout the ages as an everlasting pact, to be your God and the God of your descendants after you.",
+        "SYN": "и поставлю завет Мой между Мною и тобою и между потомками твоими после тебя в роды их, завет вечный в том, что Я буду Богом твоим и потомков твоих после тебя;",
+        "NEO": "J’établis mon alliance, entre moi et toi et tes descendants après toi, d’âge en âge, en une alliance perpétuelle, pour être ton Dieu et le Dieu de tes descendants après toi.",
+        "VAT_ES": "Estableceré mi alianza contigo y con tu descendencia a través de las generaciones. Mi alianza será una alianza eterna, y así yo seré tu Dios y el de tus descendientes.",
+        "CEI": "Stabilirò la mia alleanza con te e con la tua discendenza dopo di te di generazione in generazione, come alleanza perenne, per essere il Dio tuo e della tua discendenza dopo di te."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/נָתַתִּ֣י לְ֠/ךָ וּ/לְ/זַרְעֲ/ךָ֨ אַחֲרֶ֜י/ךָ אֵ֣ת אֶ֣רֶץ מְגֻרֶ֗י/ךָ אֵ֚ת כָּל אֶ֣רֶץ כְּנַ֔עַן לַ/אֲחֻזַּ֖ת עוֹלָ֑ם וְ/הָיִ֥יתִי לָ/הֶ֖ם לֵ/אלֹהִֽים׃",
+        "VUL": "Daboque tibi et semini tuo terram peregrinationis tuæ, omnem terram Chanaan in possessionem æternam, eroque Deus eorum.",
+        "LXX": "καὶ δώσω σοι καὶ τῷ σπέρματί σου μετὰ σὲ τὴν γῆν ἣν παροικεῖς, πᾶσαν τὴν γῆν Χανάαν, εἰς κατάσχεσιν αἰώνιον· καὶ ἔσομαι αὐτοῖς θεός.",
+        "NAB": "I will give to you and to your descendants after you the land in which you are now staying, the whole land of Canaan, as a permanent possession; and I will be their God.\"",
+        "SYN": "и дам тебе и потомкам твоим после тебя землю, по которой ты странствуешь, всю землю Ханаанскую, во владение вечное; и буду им Богом.",
+        "NEO": "Je te donnerai, à toi et à tes descendants après toi, le pays où tu séjournes comme étranger, tout le pays de Canaan, en possession perpétuelle, et je serai leur Dieu ».",
+        "VAT_ES": "Yo te daré en posesión perpetua, a ti y a tus descendientes, toda la tierra de Canaán, esa tierra donde ahora resides como extranjero, y yo seré su Dios».",
+        "CEI": "Darò a te e alla tua discendenza dopo di te il paese dove sei straniero, tutto il paese di Cànaan in possesso perenne; sarò il vostro Dio\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֱלֹהִים֙ אֶל אַבְרָהָ֔ם וְ/אַתָּ֖ה אֶת בְּרִיתִ֣/י תִשְׁמֹ֑ר אַתָּ֛ה וְ/זַרְעֲ/ךָ֥ אַֽחֲרֶ֖י/ךָ לְ/דֹרֹתָֽ/ם׃",
+        "VUL": "Dixit iterum Deus ad Abraham : Et tu ergo custodies pactum meum, et semen tuum post te in generationibus suis.",
+        "LXX": "καὶ εἶπεν ὁ θεὸς πρὸς Ἀβραάμ Σὺ δὲ τὴν διαθήκην μου διατηρήσεις, σὺ καὶ τὸ σπέρμα σου μετὰ σὲ εἰς τὰς γενεὰς αὐτῶν.",
+        "NAB": "God also said to Abraham: \"On your part, you and your descendants after you must keep my covenant throughout the ages.",
+        "SYN": "И сказал Бог Аврааму: ты же соблюди завет Мой, ты и потомки твои после тебя в роды их.",
+        "NEO": "Dieu dit à Abraham : « Et toi, tu garderas mon alliance, toi et tes descendants après toi, d’âge en âge.",
+        "VAT_ES": "Después, Dios dijo a Abraham: «Tú, por tu parte, serás fiel a mi alianza; tú, y también tus descendientes, a lo largo de las generaciones.",
+        "CEI": "Disse Dio ad Abramo: \"Da parte tua devi osservare la mia alleanza, tu e la tua discendenza dopo di te di generazione in generazione."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "זֹ֣את בְּרִיתִ֞/י אֲשֶׁ֣ר תִּשְׁמְר֗וּ בֵּינִ/י֙ וּ/בֵ֣ינֵי/כֶ֔ם וּ/בֵ֥ין זַרְעֲ/ךָ֖ אַחֲרֶ֑י/ךָ הִמּ֥וֹל לָ/כֶ֖ם כָּל זָכָֽר׃",
+        "VUL": "Hoc est pactum meum quod observabitis inter me et vos, et semen tuum post te : circumcidetur ex vobis omne masculinum :",
+        "LXX": "καὶ αὕτη ἡ διαθήκη ἣν διατηρήσεις ἀνὰ μέσον ἐμοῦ καὶ ὑμῶν, καὶ ἀνὰ μέσον τοῦ σπέρματός σου μετὰ σὲ ⸆ εἰς τὰς γενεὰς αὐτῶν· περιτμηθήσεται ὑμῶν πᾶν ἀρσενικόν.",
+        "NAB": "This is my covenant with you and your descendants after you that you must keep: every male among you shall be circumcised.",
+        "SYN": "Сей есть завет Мой, который вы _должны_ соблюдать между Мною и между вами и между потомками твоими после тебя [в роды их]: да будет у вас обрезан весь мужеский пол;",
+        "NEO": "Voici l’alliance que vous avez à garder, l’alliance entre moi et vous, et tes descendants après toi : tout mâle parmi vous sera circoncis.",
+        "VAT_ES": "Y esta es mi alianza con ustedes, a la que permanecerán fieles tú y tus descendientes; todos los varones deberán ser circuncidados.",
+        "CEI": "Questa è la mia alleanza che dovete osservare, alleanza tra me e voi e la tua discendenza dopo di te: sia circonciso tra di voi ogni maschio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/נְמַלְתֶּ֕ם אֵ֖ת בְּשַׂ֣ר עָרְלַתְ/כֶ֑ם וְ/הָיָה֙ לְ/א֣וֹת בְּרִ֔ית בֵּינִ֖/י וּ/בֵינֵי/כֶֽם׃",
+        "VUL": "et circumcidetis carnem præputii vestri, ut sit in signum fderis inter me et vos.",
+        "LXX": "καὶ περιτμηθήσεσθε τὴν σάρκα τῆς ἀκροβυστίας ὑμῶν, καὶ ἔσται ἐν σημείῳ διαθήκης ἀνὰ μέσον ἐμοῦ καὶ ὑμῶν.",
+        "NAB": "Circumcise the flesh of your foreskin, and that shall be the mark of the covenant between you and me.",
+        "SYN": "обрезывайте крайнюю плоть вашу: и сие будет знамением завета между Мною и вами.",
+        "NEO": "Vous vous circoncirez dans votre chair, et ce sera le signe de l’alliance entre moi et vous.",
+        "VAT_ES": "Circuncidarán la carne de su prepucio, y ese será el signo de mi alianza con ustedes.",
+        "CEI": "Vi lascerete circoncidere la carne del vostro membro e ciò sarà il segno dell'alleanza tra me e voi."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וּ/בֶן שְׁמֹנַ֣ת יָמִ֗ים יִמּ֥וֹל לָ/כֶ֛ם כָּל זָכָ֖ר לְ/דֹרֹתֵי/כֶ֑ם יְלִ֣יד בָּ֔יִת וּ/מִקְנַת כֶּ֨סֶף֙ מִ/כֹּ֣ל בֶּן נֵכָ֔ר אֲשֶׁ֛ר לֹ֥א מִֽ/זַּרְעֲ/ךָ֖ הֽוּא׃",
+        "VUL": "Infans octo dierum circumcidetur in vobis, omne masculinum in generationibus vestris : tam vernaculus, quam emptitius circumcidetur, et quicumque non fuerit de stirpe vestra :",
+        "LXX": "καὶ παιδίον ὀκτὼ ἡμερῶν περιτμηθήσεται ὑμῖν πᾶν ἀρσενικὸν εἰς τὰς γενεὰς ὑμῶν· ὁ οἰκογενὴς τῆς οἰκίας σου καὶ ὁ ἀργυρώνητος ἀπὸ παντὸς υἱοῦ ἀλλοτρίου, ὃς οὐκ ἔστιν ἐκ τοῦ σπέρματός σου,",
+        "NAB": "Throughout the ages, every male among you, when he is eight days old, shall be circumcised, including houseborn slaves and those acquired with money from any foreigner who is not of your blood.",
+        "SYN": "Восьми дней от рождения да будет обрезан у вас в роды ваши всякий _младенец_ мужеского пола, рожденный в доме и купленный за серебро у какого-нибудь иноплеменника, который не от твоего семени.",
+        "NEO": "Quand il aura huit jours, tout mâle parmi vous, d’âge en âge, sera circoncis, qu’il soit né dans la maison, ou qu’il ait été acquis à prix d’argent d’un étranger quelconque, qui n’est pas de ta race.",
+        "VAT_ES": "Al cumplir ocho días, serán circuncidados todos los varones de cada generación, tanto los nacidos en la casa como los que hayan sido comprados a un extranjero, a alguien que no es de tu sangre.",
+        "CEI": "Quando avrà otto giorni, sarà circonciso tra di voi ogni maschio di generazione in generazione, tanto quello nato in casa come quello comperato con denaro da qualunque straniero che non sia della tua stirpe."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הִמּ֧וֹל יִמּ֛וֹל יְלִ֥יד בֵּֽיתְ/ךָ֖ וּ/מִקְנַ֣ת כַּסְפֶּ֑/ךָ וְ/הָיְתָ֧ה בְרִיתִ֛/י בִּ/בְשַׂרְ/כֶ֖ם לִ/בְרִ֥ית עוֹלָֽם׃",
+        "VUL": "eritque pactum meum in carne vestra in fdus æternum.",
+        "LXX": "περιτομῇ περιτμηθήσεται, ὁ οἰκογενὴς τῆς οἰκίας σου καὶ ὁ ἀργυρώνητος. καὶ ἔσται ἡ διαθήκη μου ἐπὶ τῆς σαρκὸς ὑμῶν εἰς διαθήκην αἰώνιον.",
+        "NAB": "Yes, both the houseborn slaves and those acquired with money must be circumcised. Thus my covenant shall be in your flesh as an everlasting pact.",
+        "SYN": "Непременно да будет обрезан рожденный в доме твоем и купленный за серебро твое, и будет завет Мой на теле вашем заветом вечным.",
+        "NEO": "On devra circoncire le mâle né dans la maison ou acquis à prix d’argent, et mon alliance sera dans votre chair comme alliance perpétuelle.",
+        "VAT_ES": "Sí, tanto los nacidos en tu casa como los que hayan sido comprados, serán circuncidados. Así ustedes llevarán grabada en su carne la señal de mi alianza eterna.",
+        "CEI": "Deve essere circonciso chi è nato in casa e chi viene comperato con denaro; così la mia alleanza sussisterà nella vostra carne come alleanza perenne."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/עָרֵ֣ל זָכָ֗ר אֲשֶׁ֤ר לֹֽא יִמּוֹל֙ אֶת בְּשַׂ֣ר עָרְלָת֔/וֹ וְ/נִכְרְתָ֛ה הַ/נֶּ֥פֶשׁ הַ/הִ֖וא מֵ/עַמֶּ֑י/הָ אֶת בְּרִיתִ֖/י הֵפַֽר׃",
+        "VUL": "Masculus, cujus præputii caro circumcisa non fuerit, delebitur anima illa de populo suo : quia pactum meum irritum fecit.",
+        "LXX": "καὶ ἀπερίτμητος ἄρσην, ὃς οὐ περιτμηθήσεται τὴν σάρκα τῆς ἀκροβυστίας αὐτοῦ τῇ ἡμέρᾳ τῇ ὀγδόῃ, ἐξολεθρευθήσεται ἡ ψυχὴ ἐκείνη ἐκ τοῦ γένους αὐτῆς· ὅτι τὴν διαθήκην μου διεσκέδασεν.",
+        "NAB": "If a male is uncircumcised, that is, if the flesh of his foreskin has not been cut away, such a one shall be cut off from his people; he has broken my covenant.\"",
+        "SYN": "Необрезанный же мужеского пола, который не обрежет крайней плоти своей [в восьмой день], истребится душа та из народа своего, _ибо_ он нарушил завет Мой.",
+        "NEO": "Un mâle incirconcis, qui n’aura pas été circoncis dans sa chair, sera retranché de son peuple : il aura violé mon alliance. »",
+        "VAT_ES": "Y el incircunciso, aquel a quien no se haya cortado la carne de su prepucio, será excluido de su familia, porque ha quebrantado mi alianza».",
+        "CEI": "Il maschio non circonciso, di cui cioè non sarà stata circoncisa la carne del membro, sia eliminato dal suo popolo: ha violato la mia alleanza\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֱלֹהִים֙ אֶל אַבְרָהָ֔ם שָׂרַ֣י אִשְׁתְּ/ךָ֔ לֹא תִקְרָ֥א אֶת שְׁמָ֖/הּ שָׂרָ֑י כִּ֥י שָׂרָ֖ה שְׁמָֽ/הּ׃",
+        "VUL": "Dixit quoque Deus ad Abraham : Sarai uxorem tuam non vocabis Sarai, sed Saram.",
+        "LXX": "Εἶπεν δὲ ὁ θεὸς τῷ Ἀβραάμ Σάρα ἡ γυνή σου, οὐ κληθήσεται τὸ ὄνομα αὐτῆς Σάρα, ἀλλὰ Σάρρα ἔσται τὸ ὄνομα αὐτῆς·",
+        "NAB": "God further said to Abraham: \"As for your wife Sarai, do not call her Sarai; her name shall be Sarah.",
+        "SYN": "И сказал Бог Аврааму: Сару, жену твою, не называй Сарою, но да будет имя ей: Сарра;",
+        "NEO": "Dieu dit à Abraham : « Tu ne donneras plus à Saraï, ta femme, le nom de Saraï, car son nom est Sara.",
+        "VAT_ES": "También dijo Dios a Abraham: «A Sarai, tu esposa, no la llamarás más Sarai, sino que su nombre será Sara.",
+        "CEI": "Dio aggiunse ad Abramo: \"Quanto a Sarai tua moglie, non la chiamerai più Sarai, ma Sara."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וּ/בֵרַכְתִּ֣י אֹתָ֔/הּ וְ/גַ֨ם נָתַ֧תִּי מִמֶּ֛/נָּה לְ/ךָ֖ בֵּ֑ן וּ/בֵֽרַכְתִּ֨י/הָ֙ וְ/הָֽיְתָ֣ה לְ/גוֹיִ֔ם מַלְכֵ֥י עַמִּ֖ים מִמֶּ֥/נָּה יִהְיֽוּ׃",
+        "VUL": "Et benedicam ei, et ex illa dabo tibi filium cui benedicturus sum : eritque in nationes, et reges populorum orientur ex eo.",
+        "LXX": "εὐλογήσω δὲ αὐτήν, καὶ δώσω σοι ἐξ αὐτῆς τέκνον. καὶ εὐλογήσω αὐτόν, καὶ ἔσται εἰς ἔθνη, καὶ βασιλεῖς ἐθνῶν ἐξ αὐτοῦ ἔσονται.",
+        "NAB": "I will bless her, and I will give you a son by her. Him also will I bless; he shall give rise to nations, and rulers of peoples shall issue from him.\"",
+        "SYN": "Я благословлю ее и дам тебе от нее сына; благословлю ее, и произойдут от нее народы, и цари народов произойдут от нее.",
+        "NEO": "Je la bénirai, et je te donnerai aussi d’elle un fils ; je la bénirai, et elle deviendra des nations ; des rois de peuples sortiront d’elle. »",
+        "VAT_ES": "Yo la bendeciré y te daré un hijo nacido de ella, al que también bendeciré. De ella suscitaré naciones, y de ella nacerán reyes de pueblos».",
+        "CEI": "Io la benedirò e anche da lei ti darò un figlio; la benedirò e diventerà nazioni e re di popoli nasceranno da lei\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יִּפֹּ֧ל אַבְרָהָ֛ם עַל פָּנָ֖י/ו וַ/יִּצְחָ֑ק וַ/יֹּ֣אמֶר בְּ/לִבּ֗/וֹ הַ/לְּ/בֶ֤ן מֵאָֽה שָׁנָה֙ יִוָּלֵ֔ד וְ/אִ֨ם שָׂרָ֔ה הֲ/בַת תִּשְׁעִ֥ים שָׁנָ֖ה תֵּלֵֽד׃",
+        "VUL": "Cecidit Abraham in faciem suam, et risit, dicens in corde suo : Putasne centenario nascetur filius ? et Sara nonagenaria pariet ?",
+        "LXX": "καὶ ἔπεσεν Ἀβραὰμ ἐπὶ πρόσωπον καὶ ἐγέλασεν καὶ εἶπεν ἐν τῇ διανοίᾳ αὐτοῦ λέγων Εἰ τῷ ἑκατονταετεῖ γενήσεται υἱός, καὶ εἰ Σάρρᾳ ἐνενήκοντα ἐτῶν γενήσεται;",
+        "NAB": "Abraham prostrated himself and laughed as he said to himself, \"Can a child be born to a man who is a hundred years old? Or can Sarah give birth at ninety?\"",
+        "SYN": "И пал Авраам на лице свое, и рассмеялся, и сказал сам в себе: неужели от столетнего будет сын? и Сарра, девяностолетняя, неужели родит?",
+        "NEO": "Abraham tomba la face contre terre, et il rit, disant dans son cœur : « Naîtra-t-il un fils à un homme de cent ans ? Et Sara, une femme de quatre-vingt-dix ans, enfantera-t-elle ? »",
+        "VAT_ES": "Abraham cayó con el rostro en tierra, y se sonrió, pensando: «&iquest;Se puede tener un hijo a los cien años? Y Sara, a los noventa, &iquest;podrá dar a luz?».",
+        "CEI": "Allora Abramo si prostrò con la faccia a terra e rise e pensò: \"Ad uno di cento anni può nascere un figlio? E Sara all'età di novanta anni potrà partorire?\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר אַבְרָהָ֖ם אֶל הָֽ/אֱלֹהִ֑ים ל֥וּ יִשְׁמָעֵ֖אל יִחְיֶ֥ה לְ/פָנֶֽי/ךָ׃",
+        "VUL": "Dixitque ad Deum : Utinam Ismaël vivat coram te.",
+        "LXX": "εἶπεν δὲ Ἀβραὰμ πρὸς τὸν θεόν Ἰσμαὴλ οὗτος ζήτω ἐναντίον σου.",
+        "NAB": "Then Abraham said to God, \"Let but Ishmael live on by your favor!\"",
+        "SYN": "И сказал Авраам Богу: о, хотя бы Измаил был жив пред лицем Твоим!",
+        "NEO": "Et Abraham dit à Dieu : « Oh ! qu’Ismaël vive devant votre face ! »",
+        "VAT_ES": "Entonces Abraham dijo a Dios: «Basta con que Ismael viva feliz bajo tu protección».",
+        "CEI": "Abramo disse a Dio: \"Se almeno Ismaele potesse vivere davanti a te!\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֱלֹהִ֗ים אֲבָל֙ שָׂרָ֣ה אִשְׁתְּ/ךָ֗ יֹלֶ֤דֶת לְ/ךָ֙ בֵּ֔ן וְ/קָרָ֥אתָ אֶת שְׁמ֖/וֹ יִצְחָ֑ק וַ/הֲקִמֹתִ֨י אֶת בְּרִיתִ֥/י אִתּ֛/וֹ לִ/בְרִ֥ית עוֹלָ֖ם לְ/זַרְע֥/וֹ אַחֲרָֽי/ו׃",
+        "VUL": "Et ait Deus ad Abraham : Sara uxor tua pariet tibi filium, vocabisque nomen ejus Isaac, et constituam pactum meum illi in fdus sempiternum, et semini ejus post eum.",
+        "LXX": "εἶπεν δὲ ὁ θεὸς πρὸς Ἀβραάμ Ναί· ἰδοὺ Σάρρα ἡ γυνή σου τέξεταί σοι υἱόν, καὶ καλέσεις τὸ ὄνομα αὐτοῦ Ἰσαάκ· καὶ στήσω τὴν διαθήκην μου πρὸς αὐτὸν εἰς διαθήκην αἰώνιον, καὶ τῷ σπέρματι αὐτοῦ μετ’ αὐτόν.",
+        "NAB": "God replied: \"Nevertheless, your wife Sarah is to bear you a son, and you shall call him Isaac. I will maintain my covenant with him as an everlasting pact, to be his God and the God of his descendants after him.",
+        "SYN": "Бог же сказал [Аврааму]: именно Сарра, жена твоя, родит тебе сына, и ты наречешь ему имя: Исаак; и поставлю завет Мой с ним заветом вечным [в том, что Я буду Богом ему и] потомству его после него.",
+        "NEO": "Dieu dit : « Oui, Sara, ta femme, t’enfantera un fils ; tu le nommeras Isaac, et j’établirai mon alliance avec lui comme une alliance perpétuelle pour ses descendants après lui.",
+        "VAT_ES": "Pero Dios le respondió: «No, tu esposa Sara te dará un hijo, a quien pondrás el nombre de Isaac. Yo estableceré mi alianza con él y con su descendencia como una alianza eterna.",
+        "CEI": "E Dio disse: \"No, Sara, tua moglie, ti partorirà un figlio e lo chiamerai Isacco. Io stabilirò la mia alleanza con lui come alleanza perenne, per essere il Dio suo e della sua discendenza dopo di lui."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וּֽ/לְ/יִשְׁמָעֵ֘אל שְׁמַעְתִּי/ךָ֒ הִנֵּ֣ה בֵּרַ֣כְתִּי אֹת֗/וֹ וְ/הִפְרֵיתִ֥י אֹת֛/וֹ וְ/הִרְבֵּיתִ֥י אֹת֖/וֹ בִּ/מְאֹ֣ד מְאֹ֑ד שְׁנֵים עָשָׂ֤ר נְשִׂיאִם֙ יוֹלִ֔יד וּ/נְתַתִּ֖י/ו לְ/ג֥וֹי גָּדֽוֹל׃",
+        "VUL": "Super Ismaël quoque exaudivi te : ecce, benedicam ei, et augebo, et multiplicabo eum valde : duodecim duces generabit, et faciam illum in gentem magnam.",
+        "LXX": "περὶ δὲ Ἰσμαὴλ ἰδοὺ ἐπήκουσά σου· καὶ εὐλόγησα αὐτόν, καὶ αὐξανῶ αὐτὸν καὶ πληθυνῶ αὐτὸν σφόδρα· δώδεκα ἔθνη γεννήσει, καὶ δώσω αὐτὸν εἰς ἔθνος μέγα.",
+        "NAB": "As for Ishmael, I am heeding you: I hereby bless him. I will make him fertile and will multiply him exceedingly. He shall become the father of twelve chieftains, and I will make of him a great nation.",
+        "SYN": "И о Измаиле Я услышал тебя: вот, Я благословлю его, и возращу его, и весьма, весьма размножу; двенадцать князей родятся от него; и Я произведу от него великий народ.",
+        "NEO": "Quant à Ismaël, je t’ai entendu. Voici, je l’ai béni, je le rendrai fécond et je le multiplierai extrêmement ; il engendrera douze princes, et je ferai de lui une grande nation.",
+        "VAT_ES": "Sin embargo, también te escucharé en lo que respecta a Ismael: lo bendeciré, lo haré fecundo y le daré una descendencia muy numerosa; será padre de doce príncipes y haré de él una gran nación.",
+        "CEI": "Anche riguardo a Ismaele io ti ho esaudito: ecco, io lo benedico e lo renderò fecondo e molto, molto numeroso: dodici principi egli genererà e di lui farò una grande nazione."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/אֶת בְּרִיתִ֖/י אָקִ֣ים אֶת יִצְחָ֑ק אֲשֶׁר֩ תֵּלֵ֨ד לְ/ךָ֤ שָׂרָה֙ לַ/מּוֹעֵ֣ד הַ/זֶּ֔ה בַּ/שָּׁנָ֖ה הָ/אַחֶֽרֶת׃",
+        "VUL": "Pactum vero meum statuam ad Isaac, quem pariet tibi Sara tempore isto in anno altero.",
+        "LXX": "τὴν δὲ διαθήκην μου στήσω πρὸς Ἰσαάκ, ὃν τέξεταί σοι Σάρρα εἰς τὸν καιρὸν τοῦτον ἐν τῷ ἐνιαυτῷ τῷ ἑτέρῳ.",
+        "NAB": "But my covenant I will maintain with Isaac, whom Sarah shall bear to you by this time next year.\"",
+        "SYN": "Но завет Мой поставлю с Исааком, которого родит тебе Сарра в сие самое время на другой год.",
+        "NEO": "Mais mon alliance, je l’établirai avec Isaac, que Sara t’enfantera l’année prochaine, à cette époque. »",
+        "VAT_ES": "Pero mi alianza la estableceré con Isaac, el hijo que Sara te dará el año próximo, para esta misma época».",
+        "CEI": "Ma stabilirò la mia alleanza con Isacco, che Sara ti partorirà a questa data l'anno venturo\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יְכַ֖ל לְ/דַבֵּ֣ר אִתּ֑/וֹ וַ/יַּ֣עַל אֱלֹהִ֔ים מֵ/עַ֖ל אַבְרָהָֽם׃",
+        "VUL": "Cumque finitus esset sermo loquentis cum eo, ascendit Deus ab Abraham.",
+        "LXX": "συνετέλεσεν δὲ λαλῶν πρὸς αὐτόν, καὶ ἀνέβη ὁ θεὸς ἀπὸ Ἀβραάμ.",
+        "NAB": "When he had finished speaking with him, God departed from Abraham.",
+        "SYN": "И Бог перестал говорить с Авраамом и восшел от него.",
+        "NEO": "Et ayant achevé de parler avec lui, Dieu remonta d’auprès d’Abraham.",
+        "VAT_ES": "Y cuando terminó de hablar, Dios se alejó de Abraham.",
+        "CEI": "Dio terminò così di parlare con lui e, salendo in alto, lasciò Abramo."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֨ח אַבְרָהָ֜ם אֶת יִשְׁמָעֵ֣אל בְּנ֗/וֹ וְ/אֵ֨ת כָּל יְלִידֵ֤י בֵית/וֹ֙ וְ/אֵת֙ כָּל מִקְנַ֣ת כַּסְפּ֔/וֹ כָּל זָכָ֕ר בְּ/אַנְשֵׁ֖י בֵּ֣ית אַבְרָהָ֑ם וַ/יָּ֜מָל אֶת בְּשַׂ֣ר עָרְלָתָ֗/ם בְּ/עֶ֨צֶם֙ הַ/יּ֣וֹם הַ/זֶּ֔ה כַּ/אֲשֶׁ֛ר דִּבֶּ֥ר אִתּ֖/וֹ אֱלֹהִֽים׃",
+        "VUL": "Tulit autem Abraham Ismaël filium suum, et omnes vernaculos domus suæ, universosque quos emerat, cunctos mares ex omnibus viris domus suæ : et circumcidit carnem præputii eorum statim in ipsa die, sicut præceperat ei Deus.",
+        "LXX": "Καὶ ἔλαβεν Ἀβραὰμ Ἰσμαὴλ τὸν υἱὸν αὐτοῦ καὶ πάντας τοὺς οἰκογενεῖς αὐτοῦ καὶ πάντας τοὺς ἀργυρωνήτους καὶ πᾶν ἄρσεν τῶν ἀνδρῶν τῶν ἐν τῷ οἴκῳ Ἀβραάμ, καὶ περιέτεμεν τὰς ἀκροβυστίας αὐτῶν ἐν τῷ καιρῷ τῆς ἡμέρας ἐκείνης, καθὰ ἐλάλησεν αὐτῷ ὁ θεός.",
+        "NAB": "Then Abraham took his son Ishmael and all his slaves, whether born in his house or acquired with his money - every male among the members of Abraham's household - and he circumcised the flesh of their foreskins on that same day, as God had told him to do.",
+        "SYN": "И взял Авраам Измаила, сына своего, и всех рожденных в доме своем и всех купленных за серебро свое, весь мужеский пол людей дома Авраамова; и обрезал крайнюю плоть их в тот самый день, как сказал ему Бог.",
+        "NEO": "Abraham prit Ismaël, son fils, ainsi que tous les serviteurs nés dans sa maison et tous ceux qu’il avait acquis à prix d’argent, tous les mâles parmi les gens de sa maison, et il les circoncit en ce jour même, comme Dieu le lui avait commandé.",
+        "VAT_ES": "Entonces Abraham tomó a su hijo Ismael y a todos los demás varones que estaban a su servicio –tanto los que habían nacido en su casa como los que había comprado– y aquel mismo día les circuncidó la carne del prepucio, conforme a la orden que Dios le había dado.",
+        "CEI": "Allora Abramo prese Ismaele suo figlio e tutti i nati nella sua casa e tutti quelli comperati con il suo denaro, tutti i maschi appartenenti al personale della casa di Abramo, e circoncise la carne del loro membro in quello stesso giorno, come Dio gli aveva detto."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/אַ֨בְרָהָ֔ם בֶּן תִּשְׁעִ֥ים וָ/תֵ֖שַׁע שָׁנָ֑ה בְּ/הִמֹּל֖/וֹ בְּשַׂ֥ר עָרְלָתֽ/וֹ׃",
+        "VUL": "Abraham nonaginta et novem erat annorum quando circumcidit carnem præputii sui.",
+        "LXX": "Ἀβραὰμ δὲ ἦν ἐνενήκοντα ἐννέα ἐτῶν, ἡνίκα περιέτεμεν τὴν σάρκα τῆς ἀκροβυστίας αὐτοῦ·",
+        "NAB": "Abraham was ninety-nine years old when the flesh of his foreskin was circumcised,",
+        "SYN": "Авраам был девяноста девяти лет, когда была обрезана крайняя плоть его.",
+        "NEO": "Abraham était âgé de quatre-vingt-dix-neuf ans lorsqu’il fut circoncis ;",
+        "VAT_ES": "Cuando fueron circuncidados, Abraham tenía noventa y nueve años,",
+        "CEI": "Ora Abramo aveva novantanove anni, quando si fece circoncidere la carne del membro."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/יִשְׁמָעֵ֣אל בְּנ֔/וֹ בֶּן שְׁלֹ֥שׁ עֶשְׂרֵ֖ה שָׁנָ֑ה בְּ/הִ֨מֹּל֔/וֹ אֵ֖ת בְּשַׂ֥ר עָרְלָתֽ/וֹ׃",
+        "VUL": "Et Ismaël filius tredecim annos impleverat tempore circumcisionis suæ.",
+        "LXX": "Ἰσμαὴλ δὲ ὁ υἱὸς αὐτοῦ ἐτῶν δέκα τριῶν ἦν, ἡνίκα περιετμήθη τὴν σάρκα τῆς ἀκροβυστίας αὐτοῦ.",
+        "NAB": "and his son Ishmael was thirteen years old when the flesh of his foreskin was circumcised.",
+        "SYN": "А Измаил, сын его, был тринадцати лет, когда была обрезана крайняя плоть его.",
+        "NEO": "et Ismaël, son fils, avait treize ans lorsqu’il fut circoncis.",
+        "VAT_ES": "y su hijo Ismael, trece.",
+        "CEI": "Ismaele suo figlio aveva tredici anni quando gli fu circoncisa la carne del membro."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "בְּ/עֶ֨צֶם֙ הַ/יּ֣וֹם הַ/זֶּ֔ה נִמּ֖וֹל אַבְרָהָ֑ם וְ/יִשְׁמָעֵ֖אל בְּנֽ/וֹ׃",
+        "VUL": "Eadem die circumcisus est Abraham et Ismaël filius ejus :",
+        "LXX": "ἐν τῷ καιρῷ τῆς ἡμέρας ἐκείνης περιετμήθη Ἀβραὰμ καὶ Ἰσμαὴλ ὁ υἱὸς αὐτοῦ·",
+        "NAB": "Thus, on that same day Abraham and his son Ishmael were circumcised;",
+        "SYN": "В тот же самый день обрезаны были Авраам и Измаил, сын его,",
+        "NEO": "Ce même jour, Abraham fut circoncis, ainsi qu’Ismaël, son fils ;",
+        "VAT_ES": "Abraham e Ismael fueron circuncidados el mismo día;",
+        "CEI": "In quello stesso giorno furono circoncisi Abramo e Ismaele suo figlio."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/כָל אַנְשֵׁ֤י בֵית/וֹ֙ יְלִ֣יד בָּ֔יִת וּ/מִקְנַת כֶּ֖סֶף מֵ/אֵ֣ת בֶּן נֵכָ֑ר נִמֹּ֖לוּ אִתּֽ/וֹ׃",
+        "VUL": "et omnes viri domus illius, tam vernaculi, quam emptitii et alienigenæ pariter circumcisi sunt.",
+        "LXX": "καὶ πάντες οἱ ἄνδρες τοῦ οἴκου αὐτοῦ καὶ οἱ οἰκογενεῖς καὶ οἱ ἀργυρώνητοι ἐξ ἀλλογενῶν ἐθνῶν, περιέτεμεν αὐτούς.",
+        "NAB": "and all the male members of his household, including the slaves born in his house or acquired with his money from foreigners, were circumcised with him.",
+        "SYN": "и с ним обрезан был весь мужеский пол дома его, рожденные в доме и купленные за серебро у иноплеменников.",
+        "NEO": "et tous les hommes de sa maison, ceux qui étaient nés chez lui et ceux qui avaient été acquis des étrangers à prix d’argent, furent circoncis avec lui.",
+        "VAT_ES": "y todos los varones de su servidumbre, los nacidos en su casa y los comprados a extranjeros, fueron circuncidados junto con él.",
+        "CEI": "E tutti gli uomini della sua casa, i nati in casa e i comperati con denaro dagli stranieri, furono circoncisi con lui."
+      }
+    }
+  }
+}

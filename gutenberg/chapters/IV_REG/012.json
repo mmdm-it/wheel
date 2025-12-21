@@ -1,0 +1,393 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IV_REG_012",
+  "book_key": "IV_REG",
+  "sequence": 12,
+  "chapter_in": {
+    "MT": 12,
+    "VUL": 12,
+    "LXX": 12
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בֶּן שֶׁ֥בַע שָׁנִ֖ים יְהוֹאָ֥שׁ בְּ/מָלְכֽ/וֹ׃",
+        "LXX": "ἐν ἔτει ἑβδόμῳ τῷ Εἰοὺ ἐβασίλευσεν Ἰωάς, καὶ τεσσεράκοντα ἔτη ἐβασίλευσεν ἐν Ἰερουσαλήμ, καὶ ὄνομα τῆς μητρὸς αὐτοῦ Ἀβιὰ ἐκ γῆς Βηρσάβεε.",
+        "VUL": "Anno septimo Jehu, regnavit Joas : et quadraginta annis regnavit in Jerusalem. Nomen matris ejus Sebia de Bersabee.",
+        "SYN": "В седьмой год Ииуя воцарился Иоас и сорок лет царствовал в Иерусалиме. Имя матери его Цивья, из Вирсавии.",
+        "NEO": "Joas avait sept ans lorsqu’il devint roi.",
+        "NAB": "Joash was seven years old when he became king.",
+        "VAT_ES": "Joás tenía siete años cuando inició su reinado.",
+        "CEI": "Quando divenne re, Ioas aveva sette anni."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בִּ/שְׁנַת שֶׁ֤בַע לְ/יֵהוּא֙ מָלַ֣ךְ יְהוֹאָ֔שׁ וְ/אַרְבָּעִ֣ים שָׁנָ֔ה מָלַ֖ךְ בִּ/ירֽוּשָׁלִָ֑ם וְ/שֵׁ֣ם אִמּ֔/וֹ צִבְיָ֖ה מִ/בְּאֵ֥ר שָֽׁבַע׃",
+        "LXX": "καὶ ἐποίησεν Ἰωὰς τὸ εὐθὲς ἐνώπιον Κυρίου πάσας τὰς ἡμέρας ἃς ἐφώτισεν αὐτὸν Ἰωδᾶε ὁ ἱερεύς.",
+        "VUL": "Fecitque Joas rectum coram Domino cunctis diebus quibus docuit eum Jojada sacerdos.",
+        "SYN": "И делал Иоас угодное в очах Господних во все дни свои, доколе наставлял его священник Иодай;",
+        "NEO": "La septième année de Jéhu, Joas devint roi, et il régna quarante ans à Jérusalem. Sa mère s’appelait Sébia, de Bersabée.",
+        "NAB": "Joash began to reign in the seventh year of Jehu, and he reigned forty years in Jerusalem. His mother, who was named Zibiah, was from Beer-sheba.",
+        "VAT_ES": "Cro 24.23-27",
+        "CEI": "Divenne re nell'anno settimo di Ieu e regnò quarant'anni in Gerusalemme. Sua madre, di Bersabea, si chiamava Sibia."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַשׂ יְהוֹאָ֧שׁ הַ/יָּשָׁ֛ר בְּ/עֵינֵ֥י יְהוָ֖ה כָּל יָמָ֑י/ו אֲשֶׁ֣ר הוֹרָ֔/הוּ יְהוֹיָדָ֖ע הַ/כֹּהֵֽן׃",
+        "LXX": "πλὴν τῶν ὑψηλῶν οὐ μετεστάθησαν, καὶ ἐκεῖ ἔτι ὁ λαὸς ἐθυσίασαν καὶ ἐθυμίων ἐν τοῖς ὑψηλοῖς.",
+        "VUL": "Verumtamen excelsa non abstulit : adhuc enim populus immolabat, et adolebat in excelsis incensum.",
+        "SYN": "только высоты не были отменены; народ еще приносил жертвы и курения на высотах.",
+        "NEO": "Joas fit ce qui est droit aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w** tout le temps que le prêtre Joïada lui donna ses instructions.",
+        "NAB": "Joash did what was pleasing to the LORD as long as he lived, because the priest Jehoiada guided him.",
+        "VAT_ES": "Joás hizo lo que es recto a los ojos del Señor durante toda su vida, porque el sacerdote Iehoiadá lo había instruido.",
+        "CEI": "Ioas fece ciò che è giusto agli occhi del Signore per tutta la sua vita, perché era stato educato dal sacerdote Ioiada."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "רַ֥ק הַ/בָּמ֖וֹת לֹא סָ֑רוּ ע֥וֹד הָ/עָ֛ם מְזַבְּחִ֥ים וּֽ/מְקַטְּרִ֖ים בַּ/בָּמֽוֹת׃",
+        "LXX": "Καὶ εἶπεν Ἰωὰς πρὸς τοὺς ἱερεῖς Πᾶν τὸ ἀργύριον τῶν ἁγίων τὸ εἰσοδιαζόμενον ἐν τῷ οἴκῳ Κυρίου ἀργύριον συντιμήσεως, ἀνὴρ ἀργύριον λαβὼν συντιμήσεως, πᾶν ἀργύριον ὃ ἐὰν λάβῃ ἐπὶ καρδίαν ἀνδρὸς ἐνεγκεῖν ἐν οἴκῳ Κυρίου,",
+        "VUL": "Dixitque Joas ad sacerdotes : Omnem pecuniam sanctorum, quæ illata fuerit in templum Domini a prætereuntibus, quæ offertur pro pretio animæ, et quam sponte et arbitrio cordis sui inferunt in templum Domini :",
+        "SYN": "И сказал Иоас священникам: все серебро посвящаемое, которое приносят в дом Господень, серебро от приходящих, серебро, _вносимое_ за каждую душу по оценке, все серебро, сколько кому приходит на сердце принести в дом Господень,",
+        "NEO": "Seulement les hauts lieux ne disparurent point ; le peuple continuait d’offrir des sacrifices et des parfums sur les hauts lieux.",
+        "NAB": "Still, the high places did not disappear; the people continued to sacrifice and to burn incense there.",
+        "VAT_ES": "Sin embargo, no desaparecieron los lugares altos: el pueblo seguía ofreciendo sacrificios y quemando incienso en los lugares altos.",
+        "CEI": "Ma non scomparvero le alture, infatti il popolo tuttora sacrificava e offriva incenso sulle alture."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוֹאָ֜שׁ אֶל הַ/כֹּהֲנִ֗ים כֹּל֩ כֶּ֨סֶף הַ/קֳּדָשִׁ֜ים אֲשֶׁר יוּבָ֤א בֵית יְהוָה֙ כֶּ֣סֶף עוֹבֵ֔ר אִ֕ישׁ כֶּ֥סֶף נַפְשׁ֖וֹת עֶרְכּ֑/וֹ כָּל כֶּ֗סֶף אֲשֶׁ֤ר יַֽעֲלֶה֙ עַ֣ל לֶב אִ֔ישׁ לְ/הָבִ֖יא בֵּ֥ית יְהוָֽה׃",
+        "LXX": "λαβέτωσαν ἑαυτοῖς οἱ ἱερεῖς ἀνὴρ ἀπὸ τῆς πράσεως αὐτοῦ, καὶ αὐτοὶ κρατήσουσιν τὸ βέδεκ τοῦ οἴκου εἰς πάντα οὗ ἐὰν εὑρεθῇ ἐκεῖ βέδεκ.",
+        "VUL": "accipiant illam sacerdotes juxta ordinem suum, et instaurent sartatecta domus, si quid necessarium viderint instauratione.",
+        "SYN": "пусть берут священники себе, каждый от своего знакомого, и пусть исправляют они поврежденное в храме, везде, где найдется повреждение.",
+        "NEO": "Joas dit aux prêtres : « Tout l’argent du sanctuaire qu’on apporte dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, savoir, l’argent de la taxe personnelle, l’argent pour le rachat des personnes d’après l’estimation de chacune, et tout l’argent que chacun a à cœur d’apporter à la maison de \\+w Yahweh|strong=\"H3068\"\\+w** ;",
+        "NAB": "For the priests Joash made this rule: \"All the funds for sacred purposes that are brought to the temple of the LORD - the census tax, personal redemption money, and whatever funds are freely brought to the temple of the LORD -",
+        "VAT_ES": "Joás dijo a los sacerdotes: «Todo el dinero que se aporte a la Casa del Señor como ofrenda consagrada –el dinero en moneda corriente, los aranceles personales según los recursos de cada uno, y todo el dinero que aporte cada uno a la Casa del Señor por propia voluntad –",
+        "CEI": "Ioas disse ai sacerdoti: \"Tutto il denaro delle rendite sacre, che viene portato nel tempio del Signore, il denaro che uno versa per il proprio riscatto e tutto il denaro offerto spontaneamente al tempio,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "יִקְח֤וּ לָ/הֶם֙ הַ/כֹּ֣הֲנִ֔ים אִ֖ישׁ מֵ/אֵ֣ת מַכָּר֑/וֹ וְ/הֵ֗ם יְחַזְּקוּ֙ אֶת בֶּ֣דֶק הַ/בַּ֔יִת לְ/כֹ֛ל אֲשֶׁר יִמָּצֵ֥א שָׁ֖ם בָּֽדֶק׃",
+        "LXX": "καὶ ἐγενήθη ἐν τῷ εἰκοστῷ καὶ τρίτῳ ἔτει τῷ βασιλεῖ Ἰωὰς οὐκ ἐκραταίωσαν οἱ ἱερεῖς τὸ βέδεκ τοῦ οἴκου.",
+        "VUL": "Igitur usque ad vigesimum tertium annum regis Joas, non instauraverunt sacerdotes sartatecta templi.",
+        "SYN": "Но как до двадцать третьего года царя Иоаса священники не исправляли повреждений в храме,",
+        "NEO": "que les prêtres le prennent, chacun des gens de sa connaissance, et qu’ils réparent les brèches de la maison, partout où l’on en trouvera. »",
+        "NAB": "the priests may take for themselves, each from his own clients. However, they must make whatever repairs on the temple may prove necessary.\"",
+        "VAT_ES": "lo recibirán los sacerdotes para sí mismos, cada uno de la gente que conoce, y tendrán que reparar las partes deterioradas de la Casa, allí donde sea necesario».",
+        "CEI": "lo prendano i sacerdoti, ognuno dalla mano del proprio conoscente; con esso eseguiscano le riparazioni del tempio, ovunque appaiano necessarie\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י בִּ/שְׁנַ֨ת עֶשְׂרִ֧ים וְ/שָׁלֹ֛שׁ שָׁנָ֖ה לַ/מֶּ֣לֶךְ יְהוֹאָ֑שׁ לֹֽא חִזְּק֥וּ הַ/כֹּהֲנִ֖ים אֶת בֶּ֥דֶק הַ/בָּֽיִת׃",
+        "LXX": "καὶ ἐκάλεσεν Ἰωὰς ὁ βασιλεὺς Ἰωδᾶε τὸν ἱερέα καὶ τοὺς ἱερεῖς, καὶ εἶπεν πρὸς αὐτούς Τί ὅτι οὐκ ἐκραταιοῦτε τὸ βέδεκ τοῦ οἴκου; καὶ νῦν μὴ λάβητε ἀργύριον ἀπὸ τῶν πράσεων ὑμῶν, ὅτι εἰς τὸ βέδεκ τοῦ οἴκου δώσετε αὐτό.",
+        "VUL": "Vocavitque rex Joas Jojadam pontificem et sacerdotes, dicens eis : Quare sartatecta non instauratis templi ? nolite ergo amplius accipere pecuniam juxta ordinem vestrum, sed ad instaurationem templi reddite eam.",
+        "SYN": "то царь Иоас позвал священника Иодая и священников и сказал им: почему вы не исправляете повреждений в храме? Не берите же отныне серебра у знакомых своих, а на _починку_ повреждений в храме отдайте его.",
+        "NEO": "Or il arriva que, dans la vingt-troisième année du roi Joas, les prêtres n’avaient pas réparé les brèches de la maison.",
+        "NAB": "Nevertheless, as late as the twenty-third year of the reign of King Joash, the priests had not made needed repairs on the temple.",
+        "VAT_ES": "Pero el vigesimotercer año del rey Joás, los sacerdotes no habían reparado aún las partes deterioradas de la Casa.",
+        "CEI": "Ora nell'anno ventitré del re Ioas i sacerdoti non avevano ancora eseguito le riparazioni nel tempio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָא֩ הַ/מֶּ֨לֶךְ יְהוֹאָ֜שׁ לִ/יהוֹיָדָ֤ע הַ/כֹּהֵן֙ וְ/לַ/כֹּ֣הֲנִ֔ים וַ/יֹּ֣אמֶר אֲלֵ/הֶ֔ם מַדּ֛וּעַ אֵינְ/כֶ֥ם מְחַזְּקִ֖ים אֶת בֶּ֣דֶק הַ/בָּ֑יִת וְ/עַתָּ֗ה אַל תִּקְחוּ כֶ֨סֶף֙ מֵ/אֵ֣ת מַכָּֽרֵי/כֶ֔ם כִּֽי לְ/בֶ֥דֶק הַ/בַּ֖יִת תִּתְּנֻֽ/הוּ׃",
+        "LXX": "καὶ συνεφώνησαν οἱ ἱερεῖς τοῦ μὴ λαβεῖν ἀργύριον παρὰ τοῦ λαοῦ καὶ τοῦ μὴ ἐνισχῦσαι τὸ βδέλυγμα τοῦ οἴκου.",
+        "VUL": "Prohibitique sunt sacerdotes ultra accipere pecuniam a populo, et instaurare sartatecta domus.",
+        "SYN": "И согласились священники не брать серебра у народа на исправление повреждений в храме.",
+        "NEO": "Le roi Joas appela le prêtre Joïada et les autres prêtres, et leur dit : « Pourquoi ne réparez-vous pas les brèches de la maison ? Maintenant, vous ne prendrez plus l’argent de vos connaissances, mais vous le livrerez pour les brèches de la maison. »",
+        "NAB": "Accordingly, King Joash summoned the priest Jehoiada and the other priests. \"Why do you not repair the temple?\" he asked them. \"You must no longer take funds from your clients, but you shall turn them over for the repairs.\"",
+        "VAT_ES": "Entonces el rey Joás llamó al sacerdote Iehoiadá y a los demás sacerdotes, y les dijo: «&iquest;Por qué no reparan las partes deterioradas de la Casa? En adelante, ya no recibirán más dinero de la gente que conocen, sino que lo entregarán para reparar la Casa».",
+        "CEI": "Il re Ioas convocò il sacerdote Ioiada e gli altri sacerdoti e disse loro: \"Perché non avete restaurato il tempio? D'ora innanzi non ritirerete più il denaro dai vostri conoscenti, ma lo consegnerete per il restauro del tempio\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֵּאֹ֖תוּ הַ/כֹּֽהֲנִ֑ים לְ/בִלְתִּ֤י קְחַת כֶּ֨סֶף֙ מֵ/אֵ֣ת הָ/עָ֔ם וּ/לְ/בִלְתִּ֥י חַזֵּ֖ק אֶת בֶּ֥דֶק הַ/בָּֽיִת׃",
+        "LXX": "καὶ ἔλαβεν Ἰωδᾶε ὁ ἱερεὺς κιβωτὸν μίαν, καὶ ἔτρησεν τρὼγλην ἐν τῇ τρώγλῃ αὐτῆς, καὶ ἔδωκαν οἱ ἱερεῖς οἱ φυλάσσοντες τὸν σταθμὸν πᾶν τὸ ἀργύριον τὸ εὑρεθὲν ἐν οἴκῳ Κυρίου.",
+        "VUL": "Et tulit Jojada pontifex gazophylacium unum, aperuitque foramen desuper, et posuit illud juxta altare ad dexteram ingredientium domum Domini : mittebantque in eo sacerdotes qui custodiebant ostia, omnem pecuniam quæ deferebatur ad templum Domini.",
+        "SYN": "И взял священник Иодай один ящик, и сделал отверстие сверху его, и поставил его подле жертвенника на правой стороне, где входили в дом Господень. И полагали туда священники, стоящие на страже у порога, все серебро, приносимое в дом Господень.",
+        "NEO": "Les prêtres consentirent à ne plus prendre d’argent du peuple et ils n’eurent plus à réparer les brèches de la maison.",
+        "NAB": "So the priests agreed that they would neither take funds from the people nor make the repairs on the temple.",
+        "VAT_ES": "Los sacerdotes estuvieron de acuerdo en no recibir dinero del pueblo y en tener que reparar las partes deterioradas de la Casa.",
+        "CEI": "I sacerdoti acconsentirono a non ricevere più il denaro dal popolo e a non curare il restauro del tempio."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֞ח יְהוֹיָדָ֤ע הַ/כֹּהֵן֙ אֲר֣וֹן אֶחָ֔ד וַ/יִּקֹּ֥ב חֹ֖ר בְּ/דַלְתּ֑/וֹ וַ/יִּתֵּ֣ן אֹת/וֹ֩ אֵ֨צֶל הַ/מִּזְבֵּ֜חַ ב/ימין מִ/יָּמִ֗ין בְּ/בֽוֹא אִישׁ֙ בֵּ֣ית יְהוָ֔ה וְ/נָֽתְנוּ שָׁ֤מָּ/ה הַ/כֹּֽהֲנִים֙ שֹׁמְרֵ֣י הַ/סַּ֔ף אֶת כָּל הַ/כֶּ֖סֶף הַ/מּוּבָ֥א בֵית יְהוָֽה׃",
+        "LXX": "καὶ ἐγένετο ὡς εἶδεν ὅτι πολὺ τὸ ἀργύριον ἐν τῇ κιβωτῷ, καὶ ἀνέβη ὁ γραμματεὺς τοῦ βασιλέως καὶ ὁ ἱερεὺς ὁ μέγας, καὶ ἔσφιγξαν καὶ ἠρίθμησαν τὸ ἀργύριον τὸ εὑρεθὲν ἐν οἴκῳ Κυρίου.",
+        "VUL": "Cumque viderent nimiam pecuniam esse in gazophylacio, ascendebat scriba regis, et pontifex, effundebantque et numerabant pecuniam quæ inveniebatur in domo Domini :",
+        "SYN": "И когда видели, что много серебра в ящике, приходили писец царский и первосвященник, и завязывали _в_ _мешки,_ и пересчитывали серебро, найденное в доме Господнем;",
+        "NEO": "Alors le prêtre Joïada prit un coffre et, ayant percé un trou dans son couvercle, il le plaça à côté de l’autel, à droite du passage par lequel on entrait dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w** ; les prêtres qui gardaient la porte y mettaient tout l’argent qu’on apportait dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The priest Jehoiada then took a chest, bored a hole in its lid, and set it beside the stele, on the right as one entered the temple of the LORD. The priests who guarded the entry would put into it all the funds that were brought to the temple of the LORD.",
+        "VAT_ES": "Luego el sacerdote Iehoiadá tomó un cofre, le hizo una abertura en la tapa, y lo colocó al lado del altar, a la derecha de quien entra en la Casa del Señor. Y los sacerdotes guardianes del umbral depositaban allí todo el dinero que se aportaba para la Casa del Señor.",
+        "CEI": "Il sacerdote Ioiada prese una cassa, vi fece un buco nel coperchio e la pose a lato dell'altare, a destra di chi entra nel tempio. I sacerdoti custodi della soglia depositavano ivi tutto il denaro portato al tempio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ כִּ/רְאוֹתָ֔/ם כִּֽי רַ֥ב הַ/כֶּ֖סֶף בָּֽ/אָר֑וֹן וַ/יַּ֨עַל סֹפֵ֤ר הַ/מֶּ֨לֶךְ֙ וְ/הַ/כֹּהֵ֣ן הַ/גָּד֔וֹל וַ/יָּצֻ֨רוּ֙ וַ/יִּמְנ֔וּ אֶת הַ/כֶּ֖סֶף הַ/נִּמְצָ֥א בֵית יְהוָֽה׃",
+        "LXX": "καὶ ἔδωκεν τὸ ἀργύριον τὸ ἑτοιμασθὲν ἐπὶ χεῖρας ποιούντων τὰ ἔργα τῶν ἐπισκόπων οἴκου Κυρίου· καὶ ἐχέδοσαν τοῖς τέκτοσιν τῶν ξύλων καὶ τοῖς οἰκοδόμοις τοῖς ποιοῦσιν ἐν οἴκῳ Κυρίου",
+        "VUL": "et dabant eam juxta numerum atque mensuram in manu eorum qui præerant cæmentariis domus Domini : qui impendebant eam in fabris lignorum et in cæmentariis, iis qui operabantur in domo Domini,",
+        "SYN": "и отдавали сосчитанное серебро в руки производителям работ, приставленным к дому Господню, а сии издерживали его на плотников и строителей, работавших в доме Господнем,",
+        "NEO": "Quand ils voyaient qu’il y avait beaucoup d’argent dans le coffre, le secrétaire du roi montait avec le grand prêtre, et ils liaient et comptaient l’argent qui se trouvait dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "When they noticed that there was a large amount of silver in the chest, the royal scribe (and the priest) would come up, and they would melt down all the funds that were in the temple of the LORD, and weigh them.",
+        "VAT_ES": "Cuando veían que había mucho dinero en el cofre, el secretario del rey subía con el sumo sacerdote a recoger y contar el dinero que se encontraba en la Casa del Señor.",
+        "CEI": "Quando vedevano che nella cassa c'era molto denaro, veniva il segretario del re, insieme con il sommo sacerdote, che riducevano in verghe e contavano il denaro trovato nel tempio."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/נָתְנוּ֙ אֶת הַ/כֶּ֣סֶף הַֽ/מְתֻכָּ֔ן עַל יד יְדֵי֙ עֹשֵׂ֣י הַ/מְּלָאכָ֔ה ה/פקדים הַ/מֻּפְקָדִ֖ים בֵּ֣ית יְהוָ֑ה וַ/יּוֹצִיאֻ֜/הוּ לְ/חָרָשֵׁ֤י הָ/עֵץ֙ וְ/לַ/בֹּנִ֔ים הָ/עֹשִׂ֖ים בֵּ֥ית יְהוָֽה׃",
+        "LXX": "καὶ τοῖς τειχισταῖς καὶ τοῖς λατόμοις τῶν λίθων, τοῦ κτήσασθαι ξύλα καὶ λίθους λατομητοὺς τοῦ κατασχεῖν τὸ βέδεκ οἴκου Κυρίου, εἰς πάντα ὅσα ἐξωδιάσθη ἐπὶ τὸν οἶκον τοῦ κραταιῶσαι.",
+        "VUL": "et sartatecta faciebant : et in iis qui cædebant saxa, et ut emerent ligna, et lapides, qui excidebantur, ita ut impleretur instauratio domus Domini in universis quæ indigebant expensa ad muniendam domum.",
+        "SYN": "и на делателей стен и на каменотесов, также на покупку дерев и тесаных камней, для починки повреждений в доме Господнем, и на все, что расходовалось для поддержания храма.",
+        "NEO": "Ils remettaient l’argent pesé entre les mains de ceux qui faisaient exécuter l’ouvrage, qui étaient préposés sur la maison de \\+w Yahweh|strong=\"H3068\"\\+w** ; et ceux-ci le donnaient aux charpentiers et aux autres ouvriers qui travaillaient à la maison de \\+w Yahweh|strong=\"H3068\"\\+w** ;",
+        "NAB": "The amount thus realized they turned over to the master workmen in the temple of the LORD. They in turn would give it to the carpenters and builders working in the temple of the LORD,",
+        "VAT_ES": "Después de haberlo contado, ponían el dinero en manos de los que dirigían las obras, de los supervisores de la Casa del Señor, y ellos lo empleaban para pagar a los carpinteros y constructores que trabajaban en la Casa del Señor,",
+        "CEI": "Consegnavano il denaro controllato nelle mani degli esecutori dei lavori nel tempio. Costoro lo distribuivano ai falegnami e ai muratori, che lavoravano nel tempio,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/לַ/גֹּֽדְרִים֙ וּ/לְ/חֹצְבֵ֣י הָ/אֶ֔בֶן וְ/לִ/קְנ֤וֹת עֵצִים֙ וְ/אַבְנֵ֣י מַחְצֵ֔ב לְ/חַזֵּ֖ק אֶת בֶּ֣דֶק בֵּית יְהוָ֑ה וּ/לְ/כֹ֛ל אֲשֶׁר יֵצֵ֥א עַל הַ/בַּ֖יִת לְ/חָזְקָֽה׃",
+        "LXX": "πλὴν οὐ ποιηθήσεται οἴκῳ Κυρίου θύραι ἀργυραῖ, ἧλοι, φιάλαι καὶ σάλπιγγες, πᾶν σκεῦος χρυσοῦν καὶ σκεῦος ἀργυροῦν, ἐκ τοῦ ἀργυρίου τοῦ εἰσενεχθέντος ἐν οἴκῳ Κυρίου·",
+        "VUL": "Verumtamen non fiebant ex eadem pecunia hydriæ templi Domini, et fuscinulæ, et thuribula, et tubæ, et omne vas aureum et argenteum, de pecunia quæ inferebatur in templum Domini.",
+        "SYN": "Но не сделано было для дома Господня серебряных блюд, ножей, чаш _для_ _окропления,_ труб, всяких сосудов золотых и сосудов серебряных из серебра, приносимого в дом Господень,",
+        "NEO": "aux maçons et aux tailleurs de pierre ; ils le donnaient aussi pour les achats de bois et de pierres de taille nécessaires à la réparation des brèches de la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, et pour tout ce que l’on dépensait pour consolider la maison.",
+        "NAB": "and to the lumbermen and stone cutters, and for the purchase of the wood and hewn stone used in repairing the breaches, and for any other expenses that were necessary to repair the temple.",
+        "VAT_ES": "a los albañiles y a los talladores de piedras, y también para comprar la madera y las piedras talladas con que se reparaba la Casa del Señor. Así se cubrían todos los gastos necesarios para reparar la Casa.",
+        "CEI": "ai muratori, ai tagliapietre, ai fornitori del legname e delle pietre da taglio per il restauro dei danni nel tempio, insomma per quanto era necessario per riparare il tempio."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אַךְ֩ לֹ֨א יֵעָשֶׂ֜ה בֵּ֣ית יְהוָ֗ה סִפּ֥וֹת כֶּ֨סֶף֙ מְזַמְּר֤וֹת מִזְרָקוֹת֙ חֲצֹ֣צְר֔וֹת כָּל כְּלִ֥י זָהָ֖ב וּ/כְלִי כָ֑סֶף מִן הַ/כֶּ֖סֶף הַ/מּוּבָ֥א בֵית יְהוָֽה׃",
+        "LXX": "ὅτι τοῖς ποιοῦσιν τὰ ἔργα δώσουσιν αὐτὸ. καὶ ἐκραταίωσαν ἐν αὐτῷ τὸν οἶκον Κυρίου.",
+        "VUL": "Iis enim qui faciebant opus, dabatur ut instauraretur templum Domini :",
+        "SYN": "а производителям работ отдавали его, и починивали им дом Господень.",
+        "NEO": "Toutefois on ne fit pour la maison de \\+w Yahweh|strong=\"H3068\"\\+w** ni bassins d’argent, ni couteaux, ni coupes, ni trompettes, ni ustensile d’or, ni ustensile d’argent, avec l’argent qu’on apportait dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w** :",
+        "NAB": "None of the funds brought to the temple of the LORD were used there to make silver cups, snuffers, basins, trumpets, or any gold or silver article.",
+        "VAT_ES": "Sin embargo, con el dinero que se aportaba para la Casa del Señor no se hacían fuentes de plata, ni cuchillos, ni aspersorios, ni trompetas, ni objetos de oro y plata,",
+        "CEI": "Ma con il denaro portato al tempio del Signore non si dovevano fare né coppe d'argento, né strumenti musicali, né coltelli, né vassoi, né trombe, insomma nessun oggetto d'oro o d'argento."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כִּֽי לְ/עֹשֵׂ֥י הַ/מְּלָאכָ֖ה יִתְּנֻ֑/הוּ וְ/חִזְּקוּ ב֖/וֹ אֶת בֵּ֥ית יְהוָֽה׃",
+        "LXX": "καὶ οὐκ ἐξελογίζοντο τοὺς ἄνδρας οἷς ἐδίδουν τὸ ἀργύριον ἐπὶ χεῖρας αὐτῶν δοῦναι τοῖς ποιοῦσιν τὰ ἔργα, ὅτι ἐν πίστει αὐτῶν ποιοῦσιν.",
+        "VUL": "et non fiebat ratio iis hominibus qui accipiebant pecuniam ut distribuerent eam artificibus, sed in fide tractabant eam.",
+        "SYN": "И не требовали отчета от тех людей, которым поручали серебро для раздачи производителям работ, ибо они действовали честно.",
+        "NEO": "on le donnait à ceux qui faisaient exécuter l’ouvrage, pour qu’ils l’emploient à réparer la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Instead, they were given to the workmen, and with them they repaired the temple of the LORD.",
+        "VAT_ES": "sino que se lo entregaba a los que dirigían las obras, y ellos lo empleaban para reparar la Casa del Señor.",
+        "CEI": "Esso era consegnato solo agli esecutori dei lavori, che l'usavano per restaurare il tempio."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/לֹ֧א יְחַשְּׁב֣וּ אֶת הָ/אֲנָשִׁ֗ים אֲשֶׁ֨ר יִתְּנ֤וּ אֶת הַ/כֶּ֨סֶף֙ עַל יָדָ֔/ם לָ/תֵ֖ת לְ/עֹשֵׂ֣י הַ/מְּלָאכָ֑ה כִּ֥י בֶ/אֱמֻנָ֖ה הֵ֥ם עֹשִֽׂים׃",
+        "LXX": "ἀργύριον περὶ ἁμαρτίας καὶ ἀργύριον περὶ πλημμελείας ὅ τι εἰσηνέχθη ἐν οἴκῳ Κυρίου, τοῖς ἱερεῦσιν ἐγένετο.",
+        "VUL": "Pecuniam vero pro delicto, et pecuniam pro peccatis non inferebant in templum Domini, quia sacerdotum erat.",
+        "SYN": "Серебро за жертву о преступлении и серебро за жертву о грехе не вносилось в дом Господень: священникам оно принадлежало.",
+        "NEO": "On ne demandait pas de compte aux hommes entre les mains desquels on remettait l’argent pour le donner à ceux qui faisaient exécuter l’ouvrage, parce qu’ils se conduisaient avec probité.",
+        "NAB": "Moreover, no reckoning was asked of the men who were provided with the funds to give to the workmen, because they held positions of trust.",
+        "VAT_ES": "Y no se pedía cuenta a los hombres que recibían el dinero para pagar a los obreros, porque obraban a conciencia.",
+        "CEI": "Coloro nelle cui mani si rimetteva il denaro perché lo dessero agli esecutori dei lavori non dovevano renderne conto, perché la loro condotta ispirava fiducia."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כֶּ֤סֶף אָשָׁם֙ וְ/כֶ֣סֶף חַטָּא֔וֹת לֹ֥א יוּבָ֖א בֵּ֣ית יְהוָ֑ה לַ/כֹּהֲנִ֖ים יִהְיֽוּ׃",
+        "LXX": "Τότε ἀνέβη Ἁζαὴλ βασιλεὺς Συρίας καὶ ἐπολέμησεν ἐπὶ Γέθ, καὶ προκατελάβετο αὐτήν. καὶ ἔταξεν Ἁζαὴλ τὸ πρόσωπον αὐτοῦ ἀναβῆναι ἐπὶ Ἰερουσαλήμ.",
+        "VUL": "Tunc ascendit Hazaël rex Syriæ, et pugnabat contra Geth, cepitque eam : et direxit faciem suam ut ascenderet in Jerusalem.",
+        "SYN": "Тогда выступил в поход Азаил, царь Сирийский, и пошел войною на Геф, и взял его; и вознамерился Азаил идти на Иерусалим.",
+        "NEO": "L’argent des sacrifices pour le délit et des sacrifices pour le péché n’était pas apporté dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w** : il était pour les prêtres.",
+        "NAB": "The funds from guilt-offerings and from sin-offerings, however, were not brought to the temple of the LORD; they belonged to the priests.",
+        "VAT_ES": "El dinero de los sacrificios de reparación y de los sacrificios por el pecado, no se lo destinaba a la Casa del Señor, sino que era para los sacerdotes.",
+        "CEI": "Il denaro dei sacrifici per il delitto e per il peccato non era destinato al tempio, ma era lasciato ai sacerdoti."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "אָ֣ז יַעֲלֶ֗ה חֲזָאֵל֙ מֶ֣לֶךְ אֲרָ֔ם וַ/יִּלָּ֥חֶם עַל גַּ֖ת וַֽ/יִּלְכְּדָ֑/הּ וַ/יָּ֤שֶׂם חֲזָאֵל֙ פָּנָ֔י/ו לַ/עֲל֖וֹת עַל יְרוּשָׁלִָֽם׃",
+        "LXX": "καὶ ἔλαβεν Ἰωὰς βασιλεὺς Ἰούδα πάντα τὰ ἅγια ὅσα ἡγίασεν Ἰωσαφὰθ καὶ Ἰωρὰμ καὶ Ὀχοζείας, οἱ πατέρες αὐτοῦ καὶ βασιλεῖς Ἰούδα, καὶ τὰ ἅγια αὐτοῦ καὶ πᾶν τὸ χρυσίον τὸ εὑρεθὲν ἐν θησαυροῖς οἴκου Κυρίου καὶ οἴκου τοῦ βασιλέως, καὶ ἀπέστειλεν τῷ Ἁζαὴλ βασιλεῖ Συρίας· καὶ ἀνέβη ἀπὸ Ἰερουσαλήμ.",
+        "VUL": "Quam ob rem tulit Joas rex Juda omnia sanctificata quæ consecraverant Josaphat, et Joram, et Ochozias, patres ejus reges Juda, et quæ ipse obtulerat : et universum argentum quod inveniri potuit in thesauris templi Domini et in palatio regis : misitque Hazaëli regi Syriæ, et recessit ab Jerusalem.",
+        "SYN": "Но Иоас, царь Иудейский, взял все пожертвованное, что пожертвовали _храму_ Иосафат, и Иорам и Охозия, отцы его, цари Иудейские, и что он сам пожертвовал, и все золото, найденное в сокровищницах дома Господня и дома царского, и послал Азаилу, царю Сирийскому; и он отступил от Иерусалима.",
+        "NEO": "Alors Hazaël, roi de Syrie, monta et combattit contre Geth, dont il s’empara. Il résolut de monter contre Jérusalem.",
+        "NAB": "Then King Hazael of Aram mounted a siege against Gath. When he had taken it, Hazael decided to go on to attack Jerusalem.",
+        "VAT_ES": "Por ese entonces, Jazael, rey de Aram, subió a combatir contra Gat y se apoderó de ella. Luego Jazael se dispuso a subir contra Jerusalén.",
+        "CEI": "In quel tempo Cazaèl re di Aram mosse guerra contro Gat e la conquistò. Allora Cazaèl si preparò ad assalire Gerusalemme."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֞ח יְהוֹאָ֣שׁ מֶֽלֶךְ יְהוּדָ֗ה אֵ֣ת כָּל הַ/קֳּדָשִׁ֡ים אֲשֶׁר הִקְדִּ֣ישׁוּ יְהוֹשָׁפָ֣ט וִ/יהוֹרָם֩ וַ/אֲחַזְיָ֨הוּ אֲבֹתָ֜י/ו מַלְכֵ֤י יְהוּדָה֙ וְ/אֶת קֳדָשָׁ֔י/ו וְ/אֵ֣ת כָּל הַ/זָּהָ֗ב הַ/נִּמְצָ֛א בְּ/אֹצְר֥וֹת בֵּית יְהוָ֖ה וּ/בֵ֣ית הַ/מֶּ֑לֶךְ וַ/יִּשְׁלַ֗ח לַֽ/חֲזָאֵל֙ מֶ֣לֶךְ אֲרָ֔ם וַ/יַּ֖עַל מֵ/עַ֥ל יְרוּשָׁלִָֽם׃",
+        "LXX": "καὶ τὰ λοιπὰ τῶν λόγων Ἰωὰς καὶ πάντα ὅσα ἐποίησεν, οὐκ ἰδοὺ ταῦτα γεγραμμένα ἐπὶ βιβλίῳ λόγων τῶν ἡμερῶν τοῖς βασιλεῦσιν Ἰούδα;",
+        "VUL": "Reliqua autem sermonum Joas, et universa quæ fecit, nonne hæc scripta sunt in libro verborum dierum regum Juda ?",
+        "SYN": "Прочее об Иоасе и обо всем, что он сделал, написано в летописи царей Иудейских.",
+        "NEO": "Joas, roi de Juda, prit toutes les choses consacrées, ce qu’avaient consacré Josaphat, Joram et Ochozias, ses pères, rois de Juda, ce qu’il avait consacré lui-même, et tout l’or qui se trouvait dans les trésors de la maison de \\+w Yahweh|strong=\"H3068\"\\+w** et de la maison du roi, et il envoya le tout à Hazaël, roi de Syrie, qui s’éloigna de Jérusalem.",
+        "NAB": "But King Jehoash of Judah took all the dedicated offerings presented by his forebears, Jehoshaphat, Jehoram, and Ahaziah, kings of Judah, as well as his own, and all the gold there was in the treasuries of the temple and the palace, and sent them to King Hazael of Aram, who then led his forces away from Jerusalem.",
+        "VAT_ES": "Joás, rey de Judá, tomó todos los objetos que habían consagrado Josafat, Joram y Ocozías, sus padres, reyes de Judá, y los que él mismo había consagrado, así como también todo el oro que había en los tesoros de la Casa del Señor y de la casa del rey, y envió todo eso a Jazael, rey de Aram. Así este se alejó de Jerusalén.",
+        "CEI": "Ioas re di Giuda prese tutti gli oggetti consacrati da Giòsafat, da Ioram e da Acazia, suoi antenati, re di Giuda, e quelli consacrati da lui stesso, insieme con tutto l'oro trovato nei tesori del tempio e della reggia; egli mandò tutto ciò a Cazaèl re di Aram, che si allontanò da Gerusalemme."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/יֶ֛תֶר דִּבְרֵ֥י יוֹאָ֖שׁ וְ/כָל אֲשֶׁ֣ר עָשָׂ֑ה הֲ/לוֹא הֵ֣ם כְּתוּבִ֗ים עַל סֵ֛פֶר דִּבְרֵ֥י הַ/יָּמִ֖ים לְ/מַלְכֵ֥י יְהוּדָֽה׃",
+        "LXX": "καὶ ἀνέστησαν οἱ δοῦλοι αὐτοῦ καὶ ἔδησαν πάντα δεσμόν, καὶ ἐπάταξαν τὸν Ἰωὰς ἐν οἴκῳ Μααλὼ τὸν Γααλλά.",
+        "VUL": "Surrexerunt autem servi ejus, et conjuraverunt inter se, percusseruntque Joas in domo Mello in descensu Sella.",
+        "SYN": "И восстали слуги его, и составили заговор, и убили Иоаса в доме Милло, на дороге к Силле.",
+        "NEO": "Le reste des actes de Joas, et tout ce qu’il a fait, cela n’est-il pas écrit dans le livre des Chroniques des rois de Juda ?",
+        "NAB": "The rest of the acts of Joash, with all that he did, are recorded in the book of the chronicles of the kings of Judah.",
+        "VAT_ES": "El resto de los hechos de Joás y todo lo que él hizo, &iquest;no está escrito en el libro de los Anales de los reyes de Judá?",
+        "CEI": "Le altre gesta di Ioas e tutte le sue azioni sono descritte nel libro delle Cronache dei re di Giuda."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יָּקֻ֥מוּ עֲבָדָ֖י/ו וַ/יִּקְשְׁרֽוּ קָ֑שֶׁר וַ/יַּכּוּ֙ אֶת יוֹאָ֔שׁ בֵּ֥ית מִלֹּ֖א הַ/יּוֹרֵ֥ד סִלָּֽא׃",
+        "LXX": "καὶ Ἰεζειχὰρ υἱὸς Ἰεμουὰθ καὶ Ἰεζεβοὺθ ὁ υἱὸς αὐτοῦ Σωμὴρ οἱ δοῦλοι αὐτοῦ ἐπάταξαν αὐτόν, καὶ ἀπέθανεν· καὶ ἔθαψαν αὐτὸν μετὰ τῶν πατέρων αὐτοῦ ἐν πόλει Δαυείδ· καὶ ἐβασίλευσεν Ἀμεσσείας υἱὸς αὐτοῦ ἀντ’ αὐτοῦ.",
+        "VUL": "Josachar namque filius Semaath, et Jozabad filius Somer servi ejus, percusserunt eum, et mortuus est : et sepelierunt eum cum patribus suis in civitate David : regnavitque Amasias filius ejus pro eo.",
+        "SYN": "Его убили слуги его: Иозакар, сын Шимеаты, и Иегозавад, сын Шомеры; и он умер, и похоронили его с отцами его в городе Давидовом. И воцарился Амасия, сын его, вместо него.",
+        "NEO": "Ses serviteurs se soulevèrent et, ayant formé une conspiration, ils frappèrent Joas dans la maison de Mello, à la descente de Sella.",
+        "NAB": "Certain of his officials entered into a plot against him and killed him at Beth-millo.",
+        "VAT_ES": "Sus servidores se sublevaron, urdieron una conspiración y asesinaron a Joás en Bet Miló, mientras él bajaba hacia Silá.",
+        "CEI": "I suoi ufficiali si sollevarono organizzando una congiura; uccisero Ioas a Bet-Millo, nella discesa verso Silla."
+      }
+    }
+  }
+}

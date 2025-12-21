@@ -1,0 +1,501 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IV_REG_003",
+  "book_key": "IV_REG",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וִ/יהוֹרָ֣ם בֶּן אַחְאָ֗ב מָלַ֤ךְ עַל יִשְׂרָאֵל֙ בְּ/שֹׁ֣מְר֔וֹן בִּ/שְׁנַת֙ שְׁמֹנֶ֣ה עֶשְׂרֵ֔ה לִ/יהוֹשָׁפָ֖ט מֶ֣לֶךְ יְהוּדָ֑ה וַ/יִּמְלֹ֖ךְ שְׁתֵּים עֶשְׂרֵ֥ה שָׁנָֽה׃",
+        "LXX": "Καὶ Ἰωρὰμ υἱὸς Ἀχαὰβ ἐβασίλευσεν ἐν Ἰσραὴλ ἐν ἔτει ὀκτωκαιδεκάτῳ Ἰωσαφὰθ βασιλεῖ Ἰούδα, καὶ ἐβασίλευσεν δώδεκα ἔτη.",
+        "VUL": "Joram vero filius Achab regnavit super Israël in Samaria anno decimooctavo Josaphat regis Judæ : regnavitque duodecim annis.",
+        "SYN": "Иорам, сын Ахава, воцарился над Израилем в Самарии в восемнадцатый год Иосафата, царя Иудейского, и царствовал двенадцать лет,",
+        "NEO": "Joram, fils d’Achab, devint roi d’Israël à Samarie la dix-huitième année de Josaphat, roi de Juda ; et il régna douze ans.",
+        "NAB": "Joram, son of Ahab, became king of Israel in Samaria (in the eighteenth year of Jehoshaphat, king of Judah, and he reigned for twelve years).",
+        "VAT_ES": "Joram, hijo de Ajab, comenzó a reinar sobre Israel, en Samaría, el decimoctavo año de Josafat, rey de Judá, y reinó doce años.",
+        "CEI": "Ioram figlio di Acab divenne re d'Israele in Samaria l'anno diciotto di Giòsafat, re di Giuda. Ioram regnò dodici anni."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲשֶׂ֤ה הָ/רַע֙ בְּ/עֵינֵ֣י יְהוָ֔ה רַ֕ק לֹ֥א כְ/אָבִ֖י/ו וּ/כְ/אִמּ֑/וֹ וַ/יָּ֨סַר֙ אֶת מַצְּבַ֣ת הַ/בַּ֔עַל אֲשֶׁ֥ר עָשָׂ֖ה אָבִֽי/ו׃",
+        "LXX": "καὶ ἐποίησεν τὸ πονηρὸν ἐν ὀφθαλμοῖς Κυρίου, πλὴν οὐχ ὡς ὁ πατὴρ αὐτοῦ καὶ οὐχ ὡς ἡ μήτηρ αὐτοῦ, καὶ μετέστησεν τὰς στήλας τοῦ Βάαλ ἃς ἐποίησεν ὁ πατὴρ αὐτοῦ·",
+        "VUL": "Et fecit malum coram Domino, sed non sicut pater suus et mater : tulit enim statuas Baal quas fecerat pater ejus.",
+        "SYN": "и делал неугодное в очах Господних, хотя не так, как отец его и мать его: он снял статую Ваала, которую сделал отец его;",
+        "NEO": "Il fit ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**, non pas toutefois comme son père et sa mère ; car il fit disparaître la stèle de Baal, que son père avait faite.",
+        "NAB": "He did evil in the LORD'S sight, though not as much as his father and mother. He did away with the pillar of Baal, which his father had made,",
+        "VAT_ES": "El hizo lo que es malo a los ojos del Señor, aunque no tanto como su padre y su madre, ya que retiró la piedra sagrada de Baal que había erigido su padre.",
+        "CEI": "Fece ciò che è male agli occhi del Signore, ma non come suo padre e sua madre. Egli allontanò la stele di Baal, eretta dal padre."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "רַ֠ק בְּ/חַטֹּ֞אות יָרָבְעָ֧ם בֶּֽן נְבָ֛ט אֲשֶׁר הֶחֱטִ֥יא אֶת יִשְׂרָאֵ֖ל דָּבֵ֑ק לֹא סָ֖ר מִמֶּֽ/נָּה׃",
+        "LXX": "πλὴν ἐν τῇ ἁμαρτίᾳ Ἰεροβοὰμ υἱοῦ Ναβὰτ ὃς ἐξήμαρτεν τὸν Ἰσραὴλ ἐκολλήθη, οὐκ ἀπέστη ἀπ’ αὐτῆς.",
+        "VUL": "Verumtamen in peccatis Jeroboam filii Nabat, qui peccare fecit Israël, adhæsit, nec recessit ab eis.",
+        "SYN": "однако же грехов Иеровоама, сына Наватова, который ввел в грех Израиля, он держался, не отставал от них.",
+        "NEO": "Mais il s’attacha aux péchés de Jéroboam, fils de Nabat, qui avait fait pécher Israël, et il ne s’en détourna point.",
+        "NAB": "but he still clung to the sin to which Jeroboam, son of Nebat, had lured Israel; this he did not give up.",
+        "VAT_ES": "Sin embargo, persistió en el pecado que Jeroboam, hijo de Nebat, había hecho cometer a Israel, y no se apartó de él.",
+        "CEI": "Ma restò legato, senza allontanarsene, al peccato che Geroboamo, figlio di Nebàt, aveva fatto commettere a Israele."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וּ/מֵישַׁ֥ע מֶֽלֶךְ מוֹאָ֖ב הָיָ֣ה נֹקֵ֑ד וְ/הֵשִׁ֤יב לְ/מֶֽלֶךְ יִשְׂרָאֵל֙ מֵאָה אֶ֣לֶף כָּרִ֔ים וּ/מֵ֥אָה אֶ֖לֶף אֵילִ֥ים צָֽמֶר׃",
+        "LXX": "Καὶ Μωσὰ βασιλεὺς Μωὰβ ἦν νωκήθ, καὶ ἐπέστρεψεν τῷ βασιλεῖ Ἰσραὴλ ἐν τῇ ἐπαναστάσει ἑκατὸν χιλιάδας ἀρνῶν καὶ ἑκατὸν χιλιάδας κριῶν ἐπιπόκων.",
+        "VUL": "Porro Mesa rex Moab nutriebat pecora multa, et solvebat regi Israël centum millia agnorum, et centum millia arietum cum velleribus suis.",
+        "SYN": "Меса, царь Моавитский, был богат скотом и присылал царю Израильскому по сто тысяч овец и по сто тысяч неостриженных баранов.",
+        "NEO": "Mésa, roi de Moab, possédait des troupeaux, et il payait au roi d’Israël un tribut de cent mille agneaux et de cent mille béliers avec leurs toisons.",
+        "NAB": "Now Mesha, king of Moab, who raised sheep, used to pay the king of Israel as tribute a hundred thousand lambs and the wool of a hundred thousand rams.",
+        "VAT_ES": "Mesa, rey de Moab, era criador de rebaños, y pagaba como tributo al rey de Israel cien mil corderos y cien mil carneros lanudos.",
+        "CEI": "Mesa re di Moab era un allevatore di pecore. Egli inviava al re di Israele centomila agnelli e la lana di centomila arieti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֖י כְּ/מ֣וֹת אַחְאָ֑ב וַ/יִּפְשַׁ֥ע מֶֽלֶךְ מוֹאָ֖ב בְּ/מֶ֥לֶךְ יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐγένετο μετὰ τὸ ἀποθανεῖν Ἀχαὰβ καὶ ἠθέτησεν βασιλεὺς Μωὰβ ἐν βασιλεῖ Ἰσραήλ.",
+        "VUL": "Cumque mortuus fuisset Achab, prævaricatus est fdus quod habebat cum rege Israël.",
+        "SYN": "Но когда умер Ахав, царь Моавитский отложился от царя Израильского.",
+        "NEO": "A la mort d’Achab, le roi de Moab se révolta contre le roi d’Israël.",
+        "NAB": "But when Ahab died, the king of Moab had rebelled against the king of Israel.",
+        "VAT_ES": "Pero al morir Ajab, el rey de Moab se sublevó contra el rey de Israel.",
+        "CEI": "Ma alla morte di Acab, Mesa si ribellò al re di Israele."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֞א הַ/מֶּ֧לֶךְ יְהוֹרָ֛ם בַּ/יּ֥וֹם הַ/ה֖וּא מִ/שֹּׁמְר֑וֹן וַ/יִּפְקֹ֖ד אֶת כָּל יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐξῆλθεν ὁ βασιλεὺς Ἰωρὰμ ἐν τῇ ἡμέρᾳ ἐκείνῃ ἐκ Σαμαρείας καὶ ἐπεσκέψατο τὸν Ἰσραήλ·",
+        "VUL": "Egressus est igitur rex Joram in die illa de Samaria, et recensuit universum Israël.",
+        "SYN": "И выступил царь Иорам в то время из Самарии и сделал смотр всем Израильтянам;",
+        "NEO": "Le roi Joram sortit donc en ce jour-là de Samarie et passa en revue tout Israël.",
+        "NAB": "Joram as king mustered all Israel, and when he set out on a campaign from Samaria,",
+        "VAT_ES": "Aquel día, el rey Joram salió de Samaría y pasó revista a todo Israel.",
+        "CEI": "Allora il re Ioram uscì da Samaria e passò in rassegna tutto Israele."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֡לֶךְ וַ/יִּשְׁלַח֩ אֶל יְהוֹשָׁפָ֨ט מֶֽלֶךְ יְהוּדָ֜ה לֵ/אמֹ֗ר מֶ֤לֶךְ מוֹאָב֙ פָּשַׁ֣ע בִּ֔/י הֲ/תֵלֵ֥ךְ אִתִּ֛/י אֶל מוֹאָ֖ב לַ/מִּלְחָמָ֑ה וַ/יֹּ֣אמֶר אֶעֱלֶ֔ה כָּמ֧וֹ/נִי כָמ֛וֹ/ךָ כְּ/עַמִּ֥/י כְ/עַמֶּ֖/ךָ כְּ/סוּסַ֥/י כְּ/סוּסֶֽי/ךָ׃",
+        "LXX": "καὶ ἐπορεύθη καὶ ἐξαπέστειλεν πρὸς Ἰωσαφὰθ βασιλέα Ἰούδα λέγων Βασιλεὺς Μωὰβ ἠθέτησεν ἐν ἐμοί· εἰ πορεύσῃ μετ’ ἐμοῦ εἰς Μωὰβ εἰς πόλεμον; καὶ εἶπεν Ἀναβήσομαι· ὅμοιός μοι ὅμοιός σοι, ὡς ὁ λαός μου ὁ λαός σου, ὡς οἱ ἵπποι μου οἱ ἵπποι σου.",
+        "VUL": "Misitque ad Josaphat regem Juda, dicens : Rex Moab recessit a me : veni mecum contra eum ad prælium. Qui respondit : Ascendam : qui meus est, tuus est : populus meus, populus tuus, et equi mei, equi tui.",
+        "SYN": "и пошел и послал к Иосафату, царю Иудейскому, сказать: царь Моавитский отложился от меня, пойдешь ли со мной на войну против Моава? Он сказал: пойду; как ты, так и я, как твой народ, так и мой народ; как твои кони, так и мои кони.",
+        "NEO": "S’étant mis en marche, il envoya dire à Josaphat, roi de Juda : « Le roi de Moab s’est révolté contre moi ; viendras-tu avec moi attaquer Moab ? » Josaphat répondit : « Je monterai ; il en sera de moi comme de toi, de mon peuple comme de ton peuple, de mes chevaux comme de tes chevaux. »",
+        "NAB": "he sent the king of Judah the message: \"The king of Moab is in rebellion against me. Will you join me in battle against Moab?\" \"I will,\" he replied. \"You and I shall be as one, your people and mine, and your horses and mine as well.\"",
+        "VAT_ES": "Luego partió y mandó decir a Josafat, rey de Judá: «El rey de Moab se ha sublevado contra mí; &iquest;quieres venir conmigo a combatir contra Moab?». Josafat respondió: «Sí, subiré; cuenta conmigo como contigo mismo, con mi gente como con la tuya, con mis caballos como con los tuyos».",
+        "CEI": "Si mosse e mandò a dire a Giòsafat re di Giuda: \"Il re di Moab si è ribellato contro di me; vuoi partecipare con me alla guerra contro Moab?\". Quegli rispose: \"Ci verrò; conta su di me come su di te, sul mio popolo come sul tuo, sui miei cavalli come sui tuoi\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֕אמֶר אֵי זֶ֥ה הַ/דֶּ֖רֶךְ נַעֲלֶ֑ה וַ/יֹּ֕אמֶר דֶּ֖רֶךְ מִדְבַּ֥ר אֱדֽוֹם׃",
+        "LXX": "καὶ εἶπεν Ποίᾳ ὁδῷ ἀναβῶ; καὶ εἶπεν Ὁδὸν ἔρημον Ἐδώμ.",
+        "VUL": "Dixitque : Per quam viam ascendemus ? At ille respondit : Per desertum Idumææ.",
+        "SYN": "И сказал: какою дорогою идти нам? Он сказал: дорогою пустыни Едомской.",
+        "NEO": "Et il dit : « Par quel chemin monterons-nous ? » Joram répondit : « Par le chemin du désert d’Edom. »",
+        "NAB": "They discussed the route for their attack, and settled upon the route through the desert of Edom.",
+        "VAT_ES": "Además preguntó: «&iquest;Por qué camino subiremos?». «Por el camino del desierto de Moab», respondió Joram.",
+        "CEI": "\"Per quale strada muoveremo?\", domandò Giòsafat. L'altro rispose: \"Per la strada del deserto di Edom\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֵּלֶךְ֩ מֶ֨לֶךְ יִשְׂרָאֵ֤ל וּ/מֶֽלֶך יְהוּדָה֙ וּ/מֶ֣לֶךְ אֱד֔וֹם וַ/יָּסֹ֕בּוּ דֶּ֖רֶךְ שִׁבְעַ֣ת יָמִ֑ים וְ/לֹא הָיָ֨ה מַ֧יִם לַֽ/מַּחֲנֶ֛ה וְ/לַ/בְּהֵמָ֖ה אֲשֶׁ֥ר בְּ/רַגְלֵי/הֶֽם׃",
+        "LXX": "καὶ ἐπορεύθη ὁ βασιλεὺς Ἰσραὴλ καὶ ὁ βασιλεὺς Ἰούδα καὶ βασιλεὺς Ἐδώμ, καὶ ἐκύκλωσαν ὁδὸν ἑπτὰ ἡμερῶν· καὶ οὐκ ἦν ὕδωρ τῇ παρεμβολῇ καὶ τοῖς κτήνεσιν τοῖς ἐν τοῖς ποσὶν αὐτῶν.",
+        "VUL": "Perrexerunt igitur rex Israël, et rex Juda, et rex Edom, et circuierunt per viam septem dierum, nec erat aqua exercitui et jumentis quæ sequebantur eos.",
+        "SYN": "И пошел царь Израильский, и царь Иудейский, и царь Едомский, и шли они обходом семь дней, и не было воды для войска и для скота, который _шел_ за ними.",
+        "NEO": "Le roi d’Israël, le roi de Juda et le roi d’Edom partirent. Après une marche de sept jours, il n’y eut pas d’eau pour l’armée et pour les bêtes qui la suivaient.",
+        "NAB": "So the king of Israel set out, accompanied by the king of Judah and the king of Edom. After their roundabout journey of seven days the water gave out for the army and for the animals with them.",
+        "VAT_ES": "El rey de Israel, el rey de Judá y el rey de Edom se pusieron en campaña; pero después de siete días de marcha, faltó el agua para la tropa y para los animales de carga que iban detrás.",
+        "CEI": "Allora si misero in marcia il re di Israele, il re di Giuda e il re di Edom. Girarono per sette giorni. Non c'era acqua per l'esercito né per le bestie che lo seguivano."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֖אמֶר מֶ֣לֶךְ יִשְׂרָאֵ֑ל אֲהָ֕הּ כִּֽי קָרָ֣א יְהוָ֗ה לִ/שְׁלֹ֨שֶׁת֙ הַ/מְּלָכִ֣ים הָ/אֵ֔לֶּה לָ/תֵ֥ת אוֹתָ֖/ם בְּ/יַד מוֹאָֽב׃",
+        "LXX": "καὶ εἶπεν βασιλεὺς Ἰσραήλ Ὤ, ὅτι κέκληκεν Κύριος τοὺς τρεῖς βασιλεῖς παρερχομένους δοῦναι αὐτοὺς ἐν χειρὶ Μωάβ.",
+        "VUL": "Dixitque rex Israël : Heu ! heu ! heu ! congregavit nos Dominus tres reges ut traderet in manus Moab.",
+        "SYN": "И сказал царь Израильский: ах! созвал Господь трех царей сих, чтобы предать их в руку Моава.",
+        "NEO": "Alors le roi d’Israël dit : « Hélas ! \\+w Yahweh|strong=\"H3068\"\\+w** a appelé ces trois rois pour les livrer aux mains de Moab ! »",
+        "NAB": "\"Alas!\" exclaimed the king of Israel. \"The LORD has called together these three kings to put them in the grasp of Moab.\"",
+        "VAT_ES": "Entonces el rey de Israel exclamó: «&iexcl;Ay, el Señor ha convocado a estos tres reyes para entregarlos en manos de Moab!».",
+        "CEI": "Il re di Israele disse: \"Ah, il Signore ha chiamato questi tre re per metterli nelle mani di Moab\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוֹשָׁפָ֗ט הַ/אֵ֨ין פֹּ֤ה נָבִיא֙ לַֽ/יהוָ֔ה וְ/נִדְרְשָׁ֥ה אֶת יְהוָ֖ה מֵ/אוֹת֑/וֹ וַ֠/יַּעַן אֶחָ֞ד מֵ/עַבְדֵ֤י מֶֽלֶךְ יִשְׂרָאֵל֙ וַ/יֹּ֔אמֶר פֹּ֚ה אֱלִישָׁ֣ע בֶּן שָׁפָ֔ט אֲשֶׁר יָ֥צַק מַ֖יִם עַל יְדֵ֥י אֵלִיָּֽהוּ׃",
+        "LXX": "καὶ εἶπεν Ἰωσαφάθ Οὐκ ἔστιν ὧδε προφήτης τοῦ κυρίου καὶ ἐπιζητήσωμεν τὸν κύριον παρ’ αὐτοῦ; καὶ ἀπεκρίθη εἷς τῶν παίδων βασιλέως Ἰσραὴλ καὶ εἶπεν Ὧδε Ἐλεισαῖε υἱὸς Ἰωσαφάθ, ὃς ἐπέχεεν ὕδωρ ἐπὶ χεῖρας Ἠλειού.",
+        "VUL": "Et ait Josaphat : Estne hic propheta Domini, ut deprecemur Dominum per eum ? Et respondit unus de servis regis Israël : Est hic Eliseus filius Saphat, qui fundebat aquam super manus Eliæ.",
+        "SYN": "И сказал Иосафат: нет ли здесь пророка Господня, чтобы нам вопросить Господа чрез него? И отвечал один из слуг царя Израильского и сказал: здесь Елисей, сын Сафатов, который подавал воду на руки Илии.",
+        "NEO": "Mais Josaphat dit : « N’y a-t-il ici aucun prophète de \\+w Yahweh|strong=\"H3068\"\\+w**, par qui nous puissions consulter \\+w Yahweh|strong=\"H3068\"\\+w** ? » Un des serviteurs du roi d’Israël répondit et dit : « Il y a ici Elisée, fils de Saphat, qui versait l’eau sur les mains d’Elie. »",
+        "NAB": "But the king of Judah asked, \"Is there no prophet of the LORD here through whom we may inquire of the LORD?\" One of the officers of the king of Israel replied, \"Elisha, son of Shaphat, who poured water on the hands of Elijah, is here.\"",
+        "VAT_ES": "Josafat, por su parte, preguntó: «&iquest;No hay aquí un profeta del Señor, para que podamos consultar al Señor?». Uno de los servidores del rey de Israel tomó la palabra y dijo: «Aquí esta Eliseo, hijo de Safat, el que derramaba agua sobre las manos de Elías».",
+        "CEI": "Giòsafat disse: \"Non c'è qui un profeta del Signore, per mezzo del quale possiamo consultare il Signore?\". Rispose uno dei ministri del re di Israele: \"C'è qui Eliseo, figlio di Safat, che versava l'acqua sulle mani di Elia\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ יְה֣וֹשָׁפָ֔ט יֵ֥שׁ אוֹת֖/וֹ דְּבַר יְהוָ֑ה וַ/יֵּרְד֣וּ אֵלָ֗י/ו מֶ֧לֶךְ יִשְׂרָאֵ֛ל וִ/יהוֹשָׁפָ֖ט וּ/מֶ֥לֶךְ אֱדֽוֹם׃",
+        "LXX": "καὶ εἶπεν Ἰωσαφάθ Ἔστιν αὐτῷ ῥῆμα· καὶ κατέβη πρὸς αὐτὸν βασιλεὺς Ἰσραὴλ καὶ Ἰωσαφὰθ βασιλεὺς Ἰούδα καὶ βασιλεὺς Ἐδώμ.",
+        "VUL": "Et ait Josaphat : Est apud eum sermo Domini. Descenditque ad eum rex Israël, et Josaphat rex Juda, et rex Edom.",
+        "SYN": "И сказал Иосафат: есть у него слово Господне. И пошли к нему царь Израильский, и Иосафат, и царь Едомский.",
+        "NEO": "Et Josaphat dit : « La parole de \\+w Yahweh|strong=\"H3068\"\\+w** est avec lui. » Le roi d’Israël, Josaphat, roi de Juda, et le roi d’Edom descendirent auprès de lui.",
+        "NAB": "\"He has the word of the LORD,\" the king of Judah agreed. So the kings of Israel, Judah, and Edom went down to Elisha.",
+        "VAT_ES": "Y Josafat afirmó: «La palabra del Señor está con él». El rey de Israel, el rey de Judá y el rey de Edom bajaron hacia donde estaba Eliseo,",
+        "CEI": "Giòsafat disse: \"La parola del Signore è in lui\". Scesero da costui il re di Israele, Giòsafat e il re di Edom."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֱלִישָׁ֜ע אֶל מֶ֤לֶךְ יִשְׂרָאֵל֙ מַה לִּ֣/י וָ/לָ֔/ךְ לֵ֚ךְ אֶל נְבִיאֵ֣י אָבִ֔י/ךָ וְ/אֶל נְבִיאֵ֖י אִמֶּ֑/ךָ וַ/יֹּ֤אמֶר ל/וֹ֙ מֶ֣לֶךְ יִשְׂרָאֵ֔ל אַ֗ל כִּֽי קָרָ֤א יְהוָה֙ לִ/שְׁלֹ֨שֶׁת֙ הַ/מְּלָכִ֣ים הָ/אֵ֔לֶּה לָ/תֵ֥ת אוֹתָ֖/ם בְּ/יַד מוֹאָֽב׃",
+        "LXX": "καὶ εἶπεν Ἐλεισαῖε πρὸς βασιλέα Ἰσραήλ Τί ἐμοὶ καὶ σοί; δεῦρο πρὸς τοὺς προφήτας τοῦ πατρός σου. καὶ εἶπεν αὐτῷ ὁ βασιλεὺς Ἰσραήλ Μή, ὅτι κέκληκεν Κύριος τοὺς τρεῖς βασιλεῖς τοῦ παραδοῦναι αὐτοὺς εἰς χεῖρας Μωάβ.",
+        "VUL": "Dixit autem Eliseus ad regem Israël : Quid mihi et tibi est ? vade ad prophetas patris tui et matris tuæ. Et ait illi rex Israël : Quare congregavit Dominus tres reges hos ut traderet eos in manus Moab ?",
+        "SYN": "И сказал Елисей царю Израильскому: что мне и тебе? пойди к пророкам отца твоего и к пророкам матери твоей. И сказал ему царь Израильский: нет, потому что Господь созвал сюда трех царей сих, чтобы предать их в руку Моава.",
+        "NEO": "Elisée dit au roi d’Israël : « Que me veux-tu, toi ? Va vers les prophètes de ton père et vers les prophètes de ta mère. » Et le roi d’Israël lui dit : « Non, car \\+w Yahweh|strong=\"H3068\"\\+w** a appelé ces trois rois pour les livrer entre les mains de Moab. »",
+        "NAB": "\"What do you want with me?\" Elisha asked the king of Israel. \"Go to the prophets of your father and to the prophets of your mother.\" \"No,\" the king of Israel replied. \"The LORD has called these three kings together to put them in the grasp of Moab.\"",
+        "VAT_ES": "pero este dijo al rey de Israel: «&iquest;Qué tengo que ver yo contigo? Recurre a los profetas de tu padre y a los profetas de tu madre». «De ninguna manera, dijo el rey de Israel, porque el Señor ha convocado a estos tres reyes para entregarlos en manos de Moab».",
+        "CEI": "Eliseo disse al re di Israele: \"Che c'è fra me e te? Và dai profeti di tuo padre e dai profeti di tua madre!\". Il re di Israele gli disse: \"No, perché il Signore ha chiamato noi tre re per metterci nelle mani di Moab\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֱלִישָׁ֗ע חַי יְהוָ֤ה צְבָאוֹת֙ אֲשֶׁ֣ר עָמַ֣דְתִּי לְ/פָנָ֔י/ו כִּ֗י לוּלֵ֛י פְּנֵ֛י יְהוֹשָׁפָ֥ט מֶֽלֶךְ יְהוּדָ֖ה אֲנִ֣י נֹשֵׂ֑א אִם אַבִּ֥יט אֵלֶ֖י/ךָ וְ/אִם אֶרְאֶֽ/ךָּ׃",
+        "LXX": "καὶ εἶπεν Ἐλεισαῖε Ζῇ Κύριος τῶν δυνάμεων ᾧ παρέστην ἐνώπιον αὐτοῦ, ὅτι εἰ μὴ πρόσωπον Ἰωσαφὰθ βασιλέως Ἰούδα ἐγὼ λαμβάνω, ἦ ἐπέβλεψα πρὸς σὲ καὶ εἶδόν σε·",
+        "VUL": "Dixitque ad eum Eliseus : Vivit Dominus exercituum, in cujus conspectu sto, quod si non vultum Josaphat regis Judæ erubescerem, non attendissem quidem te, nec respexissem.",
+        "SYN": "И сказал Елисей: жив Господь Саваоф, пред Которым я стою! Если бы я не почитал Иосафата, царя Иудейского, то не взглянул бы на тебя и не видел бы тебя;",
+        "NEO": "Elisée dit : « \\+w Yahweh|strong=\"H3068\"\\+w** des armées, devant qui je me tiens, est vivant ! Si je n’avais égard à Josaphat, roi de Juda, je ne ferais aucune attention à toi et je ne te regarderais pas.",
+        "NAB": "Then Elisha said, \"As the LORD of hosts lives, whom I serve, were it not that I respect the king of Judah, I should neither look at you nor notice you at all.",
+        "VAT_ES": "Eliseo respondió: «&iexcl;Por la vida del Señor de los ejércitos, a quien sirvo! Si no fuera por consideración a Josafat, rey de Judá, no te tendría en cuenta y ni siquiera te miraría.",
+        "CEI": "Eliseo disse: \"Per la vita del Signore degli eserciti, alla cui presenza io sto, se non fosse per il rispetto che provo verso Giòsafat re di Giuda, a te non avrei neppure badato, né ti avrei guardato."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֖ה קְחוּ לִ֣/י מְנַגֵּ֑ן וְ/הָיָה֙ כְּ/נַגֵּ֣ן הַֽ/מְנַגֵּ֔ן וַ/תְּהִ֥י עָלָ֖י/ו יַד יְהוָֽה׃",
+        "LXX": "καὶ νῦν λάβε μοι ψάλλοντα. καὶ ἐγένετο ὡς ἔψαλλεν ὁ ψάλλων, καὶ ἐγένετο ἐπ’ αὐτὸν χεὶρ Κυρίου·",
+        "VUL": "Nunc autem adducite mihi psaltem. Cumque caneret psaltes, facta est super eum manus Domini, et ait :",
+        "SYN": "теперь позовите мне гуслиста. И когда гуслист играл на гуслях, тогда рука Господня коснулась Елисея,",
+        "NEO": "Maintenant, amenez-moi un joueur de harpe. » Et pendant que le joueur de harpe jouait, la main de \\+w Yahweh|strong=\"H3068\"\\+w** fut sur Elisée ;",
+        "NAB": "Now get me a minstrel.\" When the minstrel played, the power of the LORD came upon Elisha",
+        "VAT_ES": "Pero ahora, tráiganme un músico». Y mientras el músico pulsaba las cuerdas, la mano del Señor se posó sobre Eliseo,",
+        "CEI": "Ora cercatemi un suonatore di cetra\". Mentre il suonatore arpeggiava, cantando, la mano del Signore fu sopra Eliseo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֕אמֶר כֹּ֖ה אָמַ֣ר יְהוָ֑ה עָשֹׂ֛ה הַ/נַּ֥חַל הַ/זֶּ֖ה גֵּבִ֥ים גֵּבִֽים׃",
+        "LXX": "καὶ εἶπεν Τάδε λέγει Κύριος Ποιήσατε τὸν χειμάρρουν τοῦτον βοθύνους βοθύνους.",
+        "VUL": "Hæc dicit Dominus : Facite alveum torrentis hujus fossas et fossas.",
+        "SYN": "и он сказал: так говорит Господь: делайте на сей долине рвы за рвами,",
+        "NEO": "et il dit : « Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : Faites dans cette vallée des fosses et des fosses.",
+        "NAB": "and he announced: \"Thus says the LORD, 'Provide many catch basins in this wadi.'",
+        "VAT_ES": "y él dijo: «Así habla el Señor: Abran zanjas y más zanjas en esta quebrada,",
+        "CEI": "Egli annunziò: \"Dice il Signore: Scavate molte fosse in questa valle,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כִּֽי כֹ֣ה אָמַ֣ר יְהוָ֗ה לֹֽא תִרְא֥וּ ר֨וּחַ֙ וְ/לֹֽא תִרְא֣וּ גֶ֔שֶׁם וְ/הַ/נַּ֥חַל הַ/ה֖וּא יִמָּ֣לֵא מָ֑יִם וּ/שְׁתִיתֶ֛ם אַתֶּ֥ם וּ/מִקְנֵי/כֶ֖ם וּֽ/בְהֶמְתְּ/כֶֽם׃",
+        "LXX": "ὅτι τάδε λέγει Κύριος Οὐκ ὄψεσθε πνεῦμα καὶ οὐκ ὄψεσθε ὑετόν, καὶ ὁ χειμάρρους οὗτος πλησθήσεται ὕδατος, καὶ πίεσθε ὑμεῖς καὶ αἱ κτήσεις ὑμῶν καὶ τὰ κτήνη ὑμῶν.",
+        "VUL": "Hæc enim dicit Dominus : Non videbitis ventum, neque pluviam : et alveus iste replebitur aquis, et bibetis vos, et familiæ vestræ, et jumenta vestra.",
+        "SYN": "ибо так говорит Господь: не увидите ветра и не увидите дождя, а долина сия наполнится водою, которую будете пить вы и мелкий и крупный скот ваш;",
+        "NEO": "Car ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : Vous ne verrez pas de vent et vous ne verrez pas de pluie, et cette vallée se remplira d’eau, et vous boirez, vous, vos troupeaux et vos bêtes de somme.",
+        "NAB": "For the LORD says, 'Though you will see neither wind nor rain, yet this wadi will be filled with water for you, your livestock, and your pack animals to drink.'",
+        "VAT_ES": "porque así habla el Señor: Ustedes no verán viento ni verán lluvia, pero esta quebrada se llenará de agua, para que beban ustedes, su ganado y sus bestias de carga.",
+        "CEI": "perché dice il Signore: Voi non sentirete il vento né vedrete la pioggia, eppure questa valle si riempirà d'acqua; berrete voi, la vostra truppa e le vostre bestie da soma."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/נָקַ֥ל זֹ֖את בְּ/עֵינֵ֣י יְהוָ֑ה וְ/נָתַ֥ן אֶת מוֹאָ֖ב בְּ/יֶדְ/כֶֽם׃",
+        "LXX": "καὶ κοῦφος καὶ αὕτη ἐν ὀφθαλμοῖς Κυρίου· καὶ παραδώσω τὴν Μωὰβ ἐν χειρὶ ὑμῶν.",
+        "VUL": "Parumque est hoc in conspectu Domini : insuper tradet etiam Moab in manus vestras.",
+        "SYN": "но этого мало пред очами Господа; Он и Моава предаст в руки ваши,",
+        "NEO": "Mais cela est peu de chose aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w** : il livrera Moab entre vos mains.",
+        "NAB": "And since the LORD does not consider this enough, he will also deliver Moab into your grasp.",
+        "VAT_ES": "Y como esto es demasiado poco a los ojos del Señor, él entregará a Moab en manos de ustedes.",
+        "CEI": "Ciò è poca cosa agli occhi del Signore; egli metterà anche Moab nelle vostre mani."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/הִכִּיתֶ֞ם כָּל עִ֤יר מִבְצָר֙ וְ/כָל עִ֣יר מִבְח֔וֹר וְ/כָל עֵ֥ץ טוֹב֙ תַּפִּ֔ילוּ וְ/כָל מַעְיְנֵי מַ֖יִם תִּסְתֹּ֑מוּ וְ/כֹל֙ הַ/חֶלְקָ֣ה הַ/טּוֹבָ֔ה תַּכְאִ֖בוּ בָּ/אֲבָנִֽים׃",
+        "LXX": "καὶ πατάξετε πᾶσαν πόλιν ὀχυράν, καὶ πᾶν ξύλον ἀγαθὸν καταβαλεῖτε, καὶ πάσας πηγὰς ὕδατος ἐμφράξατε, καὶ πᾶσαν μερίδα ἀγαθὴν ἀχρειώσετε ἐν λίθοις.",
+        "VUL": "Et percutietis omnem civitatem munitam, et omnem urbem electam, et universum lignum fructiferum succidetis, cunctosque fontes aquarum obturabitis, et omnem agrum egregium operietis lapidibus.",
+        "SYN": "и вы поразите все города укрепленные и все города главные, и все лучшие деревья срубите, и все источники водные запрудите, и все лучшие участки полевые испортите каменьями.",
+        "NEO": "Vous frapperez toutes les villes fortes et toutes les villes de choix, vous abattrez tous les arbres fruitiers, vous boucherez toutes les sources d’eau, et vous désolerez, en les couvrant de pierres, tous les meilleurs champs. »",
+        "NAB": "You shall destroy every fortified city, fell every fruit tree, stop up all the springs, and ruin every fertile field with stones.\"",
+        "VAT_ES": "Derrotarán todas las plazas fuertes y todas las ciudades importantes; talarán los mejores árboles, cegarán todas las fuentes de agua y arruinarán todos los campos fértiles, cubriéndolos de piedras».",
+        "CEI": "Voi distruggerete tutte le fortezze e tutte le città più importanti; abbatterete ogni albero e ostruirete tutte le sorgenti d'acqua; rovinerete ogni campo fertile riempiendolo di pietre\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֤י בַ/בֹּ֨קֶר֙ כַּ/עֲל֣וֹת הַ/מִּנְחָ֔ה וְ/הִנֵּה מַ֥יִם בָּאִ֖ים מִ/דֶּ֣רֶךְ אֱד֑וֹם וַ/תִּמָּלֵ֥א הָ/אָ֖רֶץ אֶת הַ/מָּֽיִם׃",
+        "LXX": "καὶ ἐγένετο τὸ πρωὶ ἀναβαινούσης τῆς θυσίας, καὶ ἰδοὺ ὕδατα ἤρχοντο ἐξ ὁδοῦ Ἐδώμ, καὶ ἐπλήσθη ἡ γῆ ὕδατος.",
+        "VUL": "Factum est igitur mane, quando sacrificium offerri solet, et ecce aquæ veniebant per viam Edom, et repleta est terra aquis.",
+        "SYN": "Поутру, когда возносят хлебное приношение, вдруг полилась вода по пути от Едома, и наполнилась земля водою.",
+        "NEO": "De fait le matin, à l’heure où l’on offre l’oblation, voici que l’eau arriva par le chemin d’Edom, et le pays fut rempli d’eau.",
+        "NAB": "In the morning, at the time of the sacrifice, water came from the direction of Edom and filled the land.",
+        "VAT_ES": "En efecto, a la mañana siguiente, a la hora de la ofrenda, vino una correntada por el lado de Edom y se inundó de agua toda la región.",
+        "CEI": "Al mattino, nell'ora dell'offerta, ecco scorrere l'acqua dalla direzione di Edom; la zona ne fu inondata."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/כָל מוֹאָב֙ שָֽׁמְע֔וּ כִּֽי עָל֥וּ הַ/מְּלָכִ֖ים לְ/הִלָּ֣חֶם בָּ֑/ם וַ/יִּצָּעֲק֗וּ מִ/כֹּ֨ל חֹגֵ֤ר חֲגֹרָה֙ וָ/מַ֔עְלָ/ה וַ/יַּעַמְד֖וּ עַֽל הַ/גְּבֽוּל׃",
+        "LXX": "καὶ πᾶσα Μωὰβ ἤκουσαν ὅτι ἀνέβησαν οἱ βασιλεῖς πολεμεῖν αὐτούς· καὶ ἀνεβόησαν ἐκ παντὸς περιεζωσμένοι ζώνην καὶ εἶπον Ὤ. καὶ ἔστησαν ἐπὶ τοῦ ὁρίου.",
+        "VUL": "Universi autem Moabitæ audientes quod ascendissent reges ut pugnarent adversum eos, convocaverunt omnes qui accincti erant balteo desuper, et steterunt in terminis.",
+        "SYN": "Когда Моавитяне услышали, что идут цари воевать с ними, тогда собраны были все, начиная от носящего пояс и старше, и стали на границе.",
+        "NEO": "Cependant, tous les Moabites ayant appris que les rois montaient pour les attaquer, on convoqua tous les hommes capables de ceindre le baudrier, et même au-delà, et ils se postèrent sur la frontière.",
+        "NAB": "Meanwhile, all Moab heard that the kings had come to give them battle; every man capable of bearing arms was called up and stationed at the border.",
+        "VAT_ES": "Mientras tanto, todos los moabitas, al oír que los reyes subían a combatir contra ellos, se habían movilizado –desde los que estaban en edad de ceñir las armas en adelante– y se habían apostado en la frontera.",
+        "CEI": "Tutti i Moabiti, saputo che erano venuti i re per fare loro guerra, arruolarono tutti gli uomini in età di maneggiare le armi e si schierarono sulla frontiera."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יַּשְׁכִּ֣ימוּ בַ/בֹּ֔קֶר וְ/הַ/שֶּׁ֖מֶשׁ זָרְחָ֣ה עַל הַ/מָּ֑יִם וַ/יִּרְא֨וּ מוֹאָ֥ב מִ/נֶּ֛גֶד אֶת הַ/מַּ֖יִם אֲדֻמִּ֥ים כַּ/דָּֽם׃",
+        "LXX": "καὶ ὤρθρισαν τὸ πρωί, καὶ ὁ ἥλιος ἀνέτειλεν ἐπὶ τὰ ὕδατα· καὶ εἶδεν Μωὰβ ἐξ ἐναντίας τὰ ὕδατα πυρρὰ ὡσεὶ αἷμα,",
+        "VUL": "Primoque mane surgentes, et orto jam sole ex adverso aquarum, viderunt Moabitæ e contra aquas rubras quasi sanguinem,",
+        "SYN": "Поутру встали они рано, и когда солнце воссияло над водою, Моавитянам издали показалась эта вода красною, как кровь.",
+        "NEO": "Ils se levèrent de bon matin et, quand le soleil brilla sur les eaux, les Moabites virent en face d’eux les eaux rouges comme du sang.",
+        "NAB": "Early that morning, when the sun shone on the water, the Moabites saw the water at a distance as red as blood.",
+        "VAT_ES": "A la mañana siguiente, bien de madrugada, cuando el sol brillaba sobre las aguas, los moabitas vieron frente a ellos las aguas rojas como sangre,",
+        "CEI": "Alzatisi presto al mattino, quando il sole splendeva sulle acque, i Moabiti videro da lontano le acque rosse come sangue."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּֽאמְרוּ֙ דָּ֣ם זֶ֔ה הָחֳרֵ֤ב נֶֽחֶרְבוּ֙ הַ/מְּלָכִ֔ים וַ/יַּכּ֖וּ אִ֣ישׁ אֶת רֵעֵ֑/הוּ וְ/עַתָּ֥ה לַ/שָּׁלָ֖ל מוֹאָֽב׃",
+        "LXX": "καὶ εἶπαν Αἷμα τοῦτο τῆς ῥομφαίας· ἐμαχέσαντο οἱ βασιλεῖς, καὶ ἐπάταξεν ἀνὴρ τὸν πλησίον αὐτοῦ· καὶ νῦν ἐπὶ τὰ σκῦλα, Μωάβ.",
+        "VUL": "dixeruntque : Sanguis gladii est : pugnaverunt reges contra se, et cæsi sunt mutuo : nunc perge ad prædam, Moab.",
+        "SYN": "И сказали они: это кровь; сразились цари между собою и истребили друг друга; теперь на добычу, Моав!",
+        "NEO": "Ils dirent : « C’est du sang ! Les rois sont détruits, ils se sont frappés les uns les autres ; et maintenant Moabites, au pillage ! »",
+        "NAB": "\"This is blood!\" they exclaimed. \"The kings have fought among themselves and killed one another. Quick! To the spoils, Moabites!\"",
+        "VAT_ES": "y dijeron: «&iexcl;Es sangre! Seguro que los reyes se batieron a espada y se mataron entre ellos. Y ahora, &iexcl;al saqueo, Moab!».",
+        "CEI": "Esclamarono: \"Questo è sangue! I re si sono azzuffati e l'uno ha ucciso l'altro. Ebbene, Moab, alla preda!\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹאוּ֮ אֶל מַחֲנֵ֣ה יִשְׂרָאֵל֒ וַ/יָּקֻ֤מוּ יִשְׂרָאֵל֙ וַ/יַּכּ֣וּ אֶת מוֹאָ֔ב וַ/יָּנֻ֖סוּ מִ/פְּנֵי/הֶ֑ם ו/יבו וַ/יַּכּוּ בָ֔/הּ וְ/הַכּ֖וֹת אֶת מוֹאָֽב׃",
+        "LXX": "καὶ εἰσῆλθον εἰς τὴν παρεμβολὴν Ἰσραήλ· καὶ Ἰσραὴλ ἀνέστησαν καὶ ἐπάταξαν τὴν Μωάβ, καὶ ἔφυγον ἀπὸ προσώπου αὐτῶν. καὶ εἰσῆλθον εἰσπορευόμενοι καὶ τύπτοντες τὴν Μωάβ,",
+        "VUL": "Perrexeruntque in castra Israël : porro consurgens Israël, percussit Moab : at illi fugerunt coram eis. Venerunt igitur qui vicerant, et percusserunt Moab,",
+        "SYN": "И пришли они к стану Израильскому. И встали Израильтяне и стали бить Моавитян, и те побежали от них, а они продолжали идти на них и бить Моавитян.",
+        "NEO": "Et ils s’avancèrent vers le camp d’Israël. Mais les Israélites se levèrent et frappèrent Moab, qui prit la fuite devant eux. Pénétrant dans le pays, ils frappèrent Moab ;",
+        "NAB": "But when they reached the camp of Israel, the Israelites rose up and attacked the Moabites, who fled from them. They ranged through the countryside striking down the Moabites, and",
+        "VAT_ES": "Pero cuando llegaron al campamento de Israel, surgieron los israelitas y derrotaron a Moab, que huyó delante de ellos. Luego siguieron avanzando y derrotando a Moab:",
+        "CEI": "Andarono dunque nell'accampamento di Israele. Ma gli Israeliti si alzarono e sconfissero i Moabiti, che fuggirono davanti a loro. I vincitori si inoltrarono nel paese, incalzando e uccidendo i Moabiti."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/הֶ/עָרִ֣ים יַהֲרֹ֡סוּ וְ/כָל חֶלְקָ֣ה ט֠וֹבָה יַשְׁלִ֨יכוּ אִישׁ אַבְנ֜/וֹ וּ/מִלְא֗וּ/הָ וְ/כָל מַעְיַן מַ֤יִם יִסְתֹּ֨מוּ֙ וְ/כָל עֵֽץ ט֣וֹב יַפִּ֔ילוּ עַד הִשְׁאִ֧יר אֲבָנֶ֛י/הָ בַּ/קִּ֖יר חֲרָ֑שֶׂת וַ/יָּסֹ֥בּוּ הַ/קַּלָּעִ֖ים וַ/יַּכּֽוּ/הָ׃",
+        "LXX": "καὶ τὰς πόλεις καθεῖλον· καὶ πᾶσαν μερίδα ἀγαθήν, ἔρριψαν ἀνὴρ τὸν λίθον καὶ ἐνέπλησαν αὐτήν, καὶ πᾶσαν πηγὴν ἐνέφραξαν, καὶ πᾶν ξύλον ἀγαθὸν κατέβαλον ἕως τοῦ καταλιπεῖν τοὺς λίθους τοῦ τοίχου καθῃρημένους· καὶ ἐκύκλευσαν οἱ σφενδονῆται καὶ ἐπάταξαν αὐτήν.",
+        "VUL": "et civitates destruxerunt : et omnem agrum optimum, mittentes singuli lapides, repleverunt : et universos fontes aquarum obturaverunt : et omnia ligna fructifera succiderunt, ita ut muri tantum fictiles remanerent : et circumdata est civitas a fundibulariis, et magna ex parte percussa.",
+        "SYN": "И города разрушили, и на всякий лучший участок в поле бросили каждый по камню и закидали его; и все протоки вод запрудили и все дерева лучшие срубили, так что оставались только каменья в Кир-Харешете. И обступили его пращники и разрушили его.",
+        "NEO": "ils détruisirent les villes ; chacun jetant sa pierre dans tous les meilleurs champs, ils les en remplirent ; ils bouchèrent toutes les sources d’eau, ils abattirent tous les arbres fruitiers, au point que de Qir-Charoseth il ne resta que les pierres ; les frondeurs l’avaient entourée et battue.",
+        "NAB": "destroying the cities; each of them cast stones onto every fertile field till they had loaded it down; all the springs they stopped up and every useful tree they felled. Finally only Kir-hareseth was left behind its stone walls, and the slingers had surrounded it and were attacking it.",
+        "VAT_ES": "demolieron las ciudades y cada uno arrojó su piedra en los campos fértiles, hasta llenarlos de ellas; cegaron todas las fuentes de agua y talaron los mejores árboles. Al fin, cuando ya no quedó más que Quir Jaréset, los honderos la cercaron y la atacaron.",
+        "CEI": "Ne demolirono le città; su tutti i campi fertili ognuno gettò una pietra e li riempirono; otturarono tutte le sorgenti d'acqua e tagliarono tutti gli alberi utili. Rimase soltanto Kir Careset; i frombolieri l'aggirarono e l'assalirono."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יַּרְא֙ מֶ֣לֶךְ מוֹאָ֔ב כִּֽי חָזַ֥ק מִמֶּ֖/נּוּ הַ/מִּלְחָמָ֑ה וַ/יִּקַּ֣ח א֠וֹת/וֹ שְׁבַע מֵא֨וֹת אִ֜ישׁ שֹׁ֣לֵֽף חֶ֗רֶב לְ/הַבְקִ֛יעַ אֶל מֶ֥לֶךְ אֱד֖וֹם וְ/לֹ֥א יָכֹֽלוּ׃",
+        "LXX": "καὶ εἶδεν ὁ βασιλεὺς Μωὰβ ὅτι ἐκραταίωσεν ὑπὲρ αὐτὸν ὁ πόλεμος, καὶ ἔλαβεν μεθ’ ἑαυτοῦ ἑπτακοσίους ἄνδρας ἐσπασμένους ῥομφαίαν διακόψαι πρὸς βασιλέα Ἐδώμ· καὶ οὐκ ἠδυνήθησαν.",
+        "VUL": "Quod cum vidisset rex Moab, prævaluisse scilicet hostes, tulit secum septingentos viros educentes gladium, ut irrumperent ad regem Edom : et non potuerunt.",
+        "SYN": "И увидел царь Моавитский, что битва одолевает его, и взял с собою семьсот человек, владеющих мечом, чтобы пробиться к царю Едомскому; но не могли.",
+        "NEO": "Quand le roi de Moab vit qu’il avait le dessous dans le combat, il prit avec lui sept cents hommes, l’épée nue à la main, pour se frayer un passage jusqu’au roi d’Edom ; mais ils ne purent y réussir.",
+        "NAB": "When he saw that he was losing the battle, the king of Moab took seven hundred swordsmen to break through to the king of Aram, but he failed.",
+        "VAT_ES": "El rey de Moab, al ver que la guerra estaba perdida para él, reunió a setecientos hombres armados de espada, para abrirse una brecha hacia el rey de Edom; pero fracasó.",
+        "CEI": "Il re di Moab, visto che la guerra era insostenibile per lui, prese con sé settecento uomini che maneggiavano la spada per aprirsi un passaggio verso il re di Edom, ma non ci riuscì."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּח֩ אֶת בְּנ֨/וֹ הַ/בְּכ֜וֹר אֲשֶׁר יִמְלֹ֣ךְ תַּחְתָּ֗י/ו וַ/יַּעֲלֵ֤/הוּ עֹלָה֙ עַל הַ֣/חֹמָ֔ה וַ/יְהִ֥י קֶצֶף גָּד֖וֹל עַל יִשְׂרָאֵ֑ל וַ/יִּסְעוּ֙ מֵֽ/עָלָ֔י/ו וַ/יָּשֻׁ֖בוּ לָ/אָֽרֶץ׃",
+        "LXX": "καὶ ἔλαβεν τὸν υἱὸν αὐτοῦ τὸν πρωτότοκον, ὃς ἐβασίλευσεν ἀντ’ αὐτοῦ, καὶ ἀνήνεγκεν αὐτὸν ὁλοκαύτωμα ἐπὶ τοῦ τείχους· καὶ ἐγένετο μετάμελος μέγας ἐπὶ Ἰσραήλ. καὶ ἀπῆραν ἀπ’ αὐτοῦ καὶ ἐπέστρεψαν εἰς τὴν γῆν.",
+        "VUL": "Arripiensque filium suum primogenitum, qui regnaturus erat pro eo, obtulit holocaustum super murum : et facta est indignatio magna in Israël, statimque recesserunt ab eo, et reversi sunt in terram suam.",
+        "SYN": "И взял он сына своего первенца, которому следовало царствовать вместо него, и вознес его во всесожжение на стене. Это произвело большое негодование в Израильтянах, и они отступили от него и возвратились в свою землю.",
+        "NEO": "Prenant alors son fils premier-né, qui devait régner à sa place, il l’offrit en holocauste sur la muraille. Et une grande indignation s’empara d’Israël ; et ils s’éloignèrent du roi de Moab et retournèrent dans leur pays.",
+        "NAB": "So he took his first-born, his heir apparent, and offered him as a holocaust upon the wall. The wrath against Israel was so great that they gave up the siege and returned to their own land.",
+        "VAT_ES": "Entonces tomó a su hijo primogénito, el que debía reinar después de él, y lo ofreció en holocausto sobre la muralla. Y se desencadenó una ira tan grande contra Israel, que debieron retirarse de allí y volver a su país.",
+        "CEI": "Allora prese il figlio primogenito, che doveva regnare al suo posto, e l'offrì in olocausto sulle mura. Si scatenò una grande ira contro gli Israeliti, che si allontanarono da lui e tornarono nella loro regione."
+      }
+    }
+  }
+}

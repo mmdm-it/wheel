@@ -1,0 +1,429 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EZE_014",
+  "book_key": "EZE",
+  "sequence": 14,
+  "chapter_in": {
+    "MT": 14,
+    "VUL": 14,
+    "LXX": 14
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יָּב֤וֹא אֵלַ/י֙ אֲנָשִׁ֔ים מִ/זִּקְנֵ֖י יִשְׂרָאֵ֑ל וַ/יֵּשְׁב֖וּ לְ/פָנָֽ/י׃",
+        "LXX": "Καὶ ἦλθον πρὸς μὲ ἐκ τῶν πρεσβυτέρων ἄνδρες τοῦ Ἰσραήλ, καὶ ἐκάθισαν πρὸ προσώπου μου.",
+        "VUL": "Et venerunt ad me viri seniorum Israël, et sederunt coram me.",
+        "SYN": "И пришли ко мне несколько человек из старейшин Израилевых и сели перед лицем моим.",
+        "NEO": "Quelques-uns des anciens d’Israël vinrent auprès de moi et s’assirent devant moi.",
+        "NAB": "When certain elders of Israel came and sat down before me,",
+        "VAT_ES": "Algunos de los ancianos de Israel vinieron a verme, y se sentaron ante mí.",
+        "CEI": "Vennero a trovarmi alcuni anziani d'Israele e sedettero dinanzi a me."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "Et la parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "the word of the LORD came to me:",
+        "VAT_ES": "Entonces la palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu rivolta allora questa parola del Signore:"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֗ם הָ/אֲנָשִׁ֤ים הָ/אֵ֨לֶּה֙ הֶעֱל֤וּ גִלּֽוּלֵי/הֶם֙ עַל לִבָּ֔/ם וּ/מִכְשׁ֣וֹל עֲוֺנָ֔/ם נָתְנ֖וּ נֹ֣כַח פְּנֵי/הֶ֑ם הַ/אִדָּרֹ֥שׁ אִדָּרֵ֖שׁ לָ/הֶֽם׃",
+        "LXX": "Υἱὲ ἀνθρώπου, οἱ ἄνδρες οὗτοι ἔθεντο τὰ διανοήματα αὐτῶν ἐπὶ τὰς καρδίας αὐτῶν, καὶ τὴν κόλασιν τῶν ἀδικιῶν αὐτῶν ἔθηκαν πρὸ προσώπου αὐτῶν· εἰ ἀποκρινόμενος ἀποκριθῶ αὐτοῖς;",
+        "VUL": "Fili hominis, viri isti posuerunt immunditias suas in cordibus suis, et scandalum iniquitatis suæ statuerunt contra faciem suam : numquid interrogatus respondebo eis ?",
+        "SYN": "сын человеческий! Сии люди допустили идолов своих в сердце свое и поставили соблазн нечестия своего перед лицем своим: могу ли Я отвечать им?",
+        "NEO": "« Fils de l’homme, ces gens-là ont dressé dans leur cœur leurs infâmes idoles, et ils mettent devant leur face le scandale qui les fait pécher : me laisserai-je interroger par eux ?",
+        "NAB": "Son of man, these men have the memory of their idols fresh in their hearts, and they keep the occasion of their sin before them. Why should I allow myself to be consulted by them?",
+        "VAT_ES": "Hijo de hombre, esta gente tiene el corazón apegado a sus ídolos y ha puesto delante de sí lo que es ocasión de sus culpas. &iquest;Voy a dejar que ellos me consulten?",
+        "CEI": "\"Figlio dell'uomo, questi uomini hanno posto idoli nel loro cuore e tengono fisso lo sguardo all'occasione della loro iniquità appena si mostri. Mi lascerò interrogare da loro?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "לָ/כֵ֣ן דַּבֵּר א֠וֹתָ/ם וְ/אָמַרְתָּ֨ אֲלֵי/הֶ֜ם כֹּה אָמַ֣ר אֲדֹנָ֣/י יְהוִ֗ה אִ֣ישׁ אִ֣ישׁ מִ/בֵּ֣ית יִשְׂרָאֵ֡ל אֲשֶׁר֩ יַעֲלֶ֨ה אֶת גִּלּוּלָ֜י/ו אֶל לִבּ֗/וֹ וּ/מִכְשׁ֤וֹל עֲוֺנ/וֹ֙ יָשִׂים֙ נֹ֣כַח פָּנָ֔י/ו וּ/בָ֖א אֶל הַ/נָּבִ֑יא אֲנִ֣י יְהוָ֗ה נַעֲנֵ֧יתִי ל֦/וֹ ב/ה בָ֖א בְּ/רֹ֥ב גִּלּוּלָֽי/ו׃",
+        "LXX": "διὰ τοῦτο λάλησον αὐτοῖς, καὶ ἐρεῖς πρὸς αὐτούς Τάδε λέγει Κύριος Ἄνθρωπος ἄνθρωπος ἐκ τοῦ οἴκου Ἰσραὴλ ὃς ἂν θῇ τὰ διανοήματα αὐτοῦ ἐπὶ τὴν καρδίαν αὐτοῦ, καὶ τὴν κόλασιν τῆς ἀδικίας αὐτοῦ τάξῃ πρὸ προσώπου αὐτοῦ, καὶ ἔλθῃ πρὸς τὸν προφήτην, ἐγὼ Κύριος ἀποκριθήσομαι αὐτῷ ἐν οἷς ἐνέχεται ἡ διάνοια αὐτοῦ,",
+        "VUL": "Propter hoc loquere eis, et dices ad eos : Hæc dicit Dominus Deus : Homo, homo de domo Israël, qui posuerit immunditias suas in corde suo, et scandalum iniquitatis suæ statuerit contra faciem suam, et venerit ad prophetam interrogans per eum me : ego Dominus respondebo ei in multitudine immunditiarum suarum,",
+        "SYN": "Посему говори с ними и скажи им: так говорит Господь Бог: если кто из дома Израилева допустит идолов своих в сердце свое и поставит соблазн нечестия своего перед лицем своим, и придет к пророку, - то Я, Господь, могу ли, при множестве идолов его, дать ему ответ?",
+        "NEO": "C’est pourquoi parle-leur et dis-leur : Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Quiconque de la maison d’Israël dresse en son cœur ses infâmes idoles et met devant sa face le scandale qui le fait pécher, s’il vient vers le prophète, moi, \\+w Yahweh|strong=\"H3068\"\\+w**, je lui répondrai par moi-même, comme le mérite la multitude de ses idoles,",
+        "NAB": "Therefore speak with them, and say to them: Thus says the Lord GOD: If anyone of the house of Israel, holding the memory of his idols in his heart and keeping the occasion of his sin before him, has recourse to a prophet, I, the LORD, will be his answer in person because of his many idols.",
+        "VAT_ES": "Por eso, habla con ellos y diles: Así habla el Señor: Si un hombre de Israel que tiene el corazón apegado a sus ídolos y ha puesto delante de sí lo que es ocasión de sus culpas, va y se presenta al profeta, yo mismo, el Señor, me verá obligado a responderle, a causa de la multitud de sus ídolos.",
+        "CEI": "Parla quindi e dì loro: Dice il Signore Dio: Qualunque Israelita avrà innalzato i suoi idoli nel proprio cuore e avrà rivolto lo sguardo all'occasione della propria iniquità e verrà dal profeta, gli risponderò io, il Signore, riguardo alla moltitudine dei suoi idoli,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לְמַ֛עַן תְּפֹ֥שׂ אֶת בֵּֽית יִשְׂרָאֵ֖ל בְּ/לִבָּ֑/ם אֲשֶׁ֤ר נָזֹ֨רוּ֙ מֵֽ/עָלַ֔/י בְּ/גִלּֽוּלֵי/הֶ֖ם כֻּלָּֽ/ם׃",
+        "LXX": "ὅπως πλαγιάσῃ τὸν οἶκον τοῦ Ἰσραὴλ κατὰ τὰς καρδίας αὐτῶν τὰς ἀπηλλοτριωμένας ἀπ’ ἐμοῦ ἐν τοῖς ἐνθυμήμασιν αὐτῶν.",
+        "VUL": "ut capiatur domus Israël in corde suo, quo recesserunt a me in cunctis idolis suis.",
+        "SYN": "Пусть дом Израилев поймет в сердце своем, что все они через своих идолов сделались чужими для Меня.",
+        "NEO": "afin de prendre la maison d’Israël par son propre cœur, elle qui, avec toutes ses idoles infâmes, s’est détournée de moi.",
+        "NAB": "Thus would I bring back to their senses the house of Israel, who have become estranged from me through all their idols.",
+        "VAT_ES": "Lo haré, a fin de llegar al corazón del pueblo de Israel, porque todos se han alejado de mi a causa de sus ídolos».",
+        "CEI": "per raggiungere al cuore gli Israeliti, che si sono allontanati da me a causa di tutti i loro idoli."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "לָ/כֵ֞ן אֱמֹ֣ר אֶל בֵּ֣ית יִשְׂרָאֵ֗ל כֹּ֤ה אָמַר֙ אֲדֹנָ֣/י יְהוִ֔ה שׁ֣וּבוּ וְ/הָשִׁ֔יבוּ מֵ/עַ֖ל גִּלּֽוּלֵי/כֶ֑ם וּ/מֵ/עַ֥ל כָּל תּוֹעֲבֹתֵי/כֶ֖ם הָשִׁ֥יבוּ פְנֵי/כֶֽם׃",
+        "LXX": "διὰ τοῦτο εἰπὸν εἰς τὸν οἶκον τοῦ Ἰσραήλ Τάδε λέγει κύριος Κύριος Ἐπιστράφητε καὶ ἀποστρέψατε ἀπὸ τῶν ἐπιτηδευμάτων ὑμῶν καὶ ἀπὸ πασῶν τῶν ἀσεβειῶν ὑμῶν, καὶ ἐπιστρέψατε τὰ πρόσωπα ὑμῶν.",
+        "VUL": "Propterea dic ad domum Israël : Hæc dicit Dominus Deus : Convertimini, et recedite ab idolis vestris, et ab universis contaminationibus vestris avertite facies vestras.",
+        "SYN": "Посему скажи дому Израилеву: так говорит Господь Бог: обратитесь и отвратитесь от идолов ваших, и от всех мерзостей ваших отвратите лице ваше.",
+        "NEO": "C’est pourquoi dis à la maison d’Israël : Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Revenez et détournez-vous de vos idoles infâmes, et détournez votre face de toutes vos abominations.",
+        "NAB": "Therefore say to the house of Israel: Thus says the Lord GOD: Return and be converted from your idols; turn yourselves away from all your abominations.",
+        "VAT_ES": "Por eso, di a la casa de Israel: Así habla el Señor: Conviértanse, apártense de sus ídolos; aparten su rostro de todas sus abominaciones",
+        "CEI": "Riferisci pertanto al popolo d'Israele: Dice il Signore Dio: Convertitevi, abbandonate i vostri idoli e distogliete la faccia da tutte le vostre immondezze,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּי֩ אִ֨ישׁ אִ֜ישׁ מִ/בֵּ֣ית יִשְׂרָאֵ֗ל וּ/מֵ/הַ/גֵּר֮ אֲשֶׁר יָג֣וּר בְּ/יִשְׂרָאֵל֒ וְ/יִנָּזֵ֣ר מֵֽ/אַחֲרַ֗/י וְ/יַ֤עַל גִּלּוּלָי/ו֙ אֶל לִבּ֔/וֹ וּ/מִכְשׁ֣וֹל עֲוֺנ֔/וֹ יָשִׂ֖ים נֹ֣כַח פָּנָ֑י/ו וּ/בָ֤א אֶל הַ/נָּבִיא֙ לִ/דְרָשׁ ל֣/וֹ בִ֔/י אֲנִ֣י יְהוָ֔ה נַֽעֲנֶה לּ֖/וֹ בִּֽ/י׃",
+        "LXX": "διότι ἄνθρωπος ἄνθρωπος ἐκ τοῦ οἴκου Ἰσραὴλ καὶ ἐκ τῶν προσηλύτων τῶν προσηλυτευόντων ἐν τῷ Ἰσραὴλ ὃς ἂν ἀπαλλοτριωθῇ ἀπ’ ἐμοῦ, καὶ θῆται τὰ ἐνθυμήματα αὐτοῦ ἐπὶ τὴν καρδίαν αὐτοῦ, καὶ τὴν κόλασιν τῆς ἀδικίας αὐτοῦ τάξῃ πρὸ προσώπου αὐτοῦ, καὶ ἔλθῃ πρὸς τὸν προφήτην τοῦ ἐπερωτῆσαι αὐτὸν ἐν ἐμοί, ἐγὼ Κύριος ἀποκριθήσομαι αὐτῷ ἐν ᾧ ἐνέχεται ἐν αὐτῷ.",
+        "VUL": "Quia homo, homo de domo Israël, et de proselytis quicumque advena fuerit in Israël, si alienatus fuerit a me, et posuerit idola sua in corde suo, et scandalum iniquitatis suæ statuerit contra faciem suam, et venerit ad prophetam ut interroget per eum me : ego Dominus respondebo ei per me :",
+        "SYN": "Ибо если кто из дома Израилева и из пришельцев, которые живут у Израиля, отложится от Меня и допустит идолов своих в сердце свое, и поставит соблазн нечестия своего перед лицем своим, и придет к пророку вопросить Меня через него, - то Я, Господь, дам ли ему ответ от Себя?",
+        "NEO": "Car quiconque de la maison d’Israël ou des étrangers séjournant en Israël se détourne de moi, dresse dans son cœur ses infâmes idoles et met devant sa face le scandale qui le fait pécher, s’il vient vers le prophète afin qu’il m’interroge pour lui, moi \\+w Yahweh|strong=\"H3068\"\\+w** je lui répondrai moi-même.",
+        "NAB": "For if anyone of the house of Israel or any alien resident in Israel is estranged from me, and holds the memory of his idols in his heart and keeps the occasion of his sin before him, yet asks a prophet to consult me for him, I, the LORD, will be his answer in person.",
+        "VAT_ES": "Porque si un hombre de Israel, o un extranjero que reside en Israel, se aleja de mí, erige en su corazón un altar para sus ídolos y pone delante de sí lo que es ocasión de sus culpas, y si luego se presenta al profeta para consultarme, yo mismo, el Señor, me veré obligado a responderle.",
+        "CEI": "poiché a qualunque Israelita e a qualunque straniero abitante in Israele, che si allontana da me e innalza nel suo cuore i suoi idoli e rivolge lo sguardo all'occasione della propria iniquità e poi viene dal profeta a consultarmi, risponderò io, il Signore, da me stesso."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/נָתַתִּ֨י פָנַ֜/י בָּ/אִ֣ישׁ הַ/ה֗וּא וַ/הֲשִֽׂמֹתִ֨י/הוּ֙ לְ/א֣וֹת וְ/לִ/מְשָׁלִ֔ים וְ/הִכְרַתִּ֖י/ו מִ/תּ֣וֹךְ עַמִּ֑/י וִֽ/ידַעְתֶּ֖ם כִּֽי אֲנִ֥י יְהוָֽה׃",
+        "LXX": "καὶ στηριῶ τὸ πρόσωπόν μου ἐπὶ τὸν ἄνθρωπον ἐκεῖνον, καὶ θήσομαι αὐτὸν εἰς ἔρημον καὶ εἰς ἀφανισμόν, καὶ ἐξαρῶ αὐτὸν ἐκ μέσου τοῦ λαοῦ μου· καὶ ἐπιγνώσεσθε ὅτι ἐγὼ Κύριος.",
+        "VUL": "et ponam faciem meam super hominem illum, et faciam eum in exemplum et in proverbium, et disperdam eum de medio populi mei : et scietis quia ego Dominus.",
+        "SYN": "Я обращу лице Мое против того человека и сокрушу его в знамение и притчу, и истреблю его из народа Моего, и узнаете, что Я Господь.",
+        "NEO": "Je dirigerai ma face contre cet homme, je le détruirai pour faire de lui un signe et un proverbe ; je le retrancherai du milieu de mon peuple, et vous saurez que je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "I will turn against that man, and make of him an example and a byword. I will cut him off from the midst of my people. Thus you shall know that I am the LORD.",
+        "VAT_ES": "Volveré mi rostro contra ese hombre, haré que sirva de escarmiento y de ejemplo, y lo extirparé de en medio de mi pueblo. Así ustedes sabrán que yo soy el Señor.",
+        "CEI": "Distoglierò la faccia da costui e ne farò un esempio e un proverbio, e lo sterminerò dal mio popolo: saprete così che io sono il Signore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הַ/נָּבִ֤יא כִֽי יְפֻתֶּה֙ וְ/דִבֶּ֣ר דָּבָ֔ר אֲנִ֤י יְהוָה֙ פִּתֵּ֔יתִי אֵ֖ת הַ/נָּבִ֣יא הַ/ה֑וּא וְ/נָטִ֤יתִי אֶת יָדִ/י֙ עָלָ֔י/ו וְ/הִ֨שְׁמַדְתִּ֔י/ו מִ/תּ֖וֹךְ עַמִּ֥/י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ὁ προφήτης ἐὰν πλανήσῃ καὶ λαλήσῃ, ἐγὼ Κύριος πεπλάνηκα τὸν προφήτην ἐκεῖνον, καὶ ἐκτενῶ τὴν χεῖρά μου ἐπ’ αὐτὸν καὶ ἀφανιῶ αὐτὸν ἐκ μέσου τοῦ λαοῦ μου Ἰσραήλ.",
+        "VUL": "Et propheta cum erraverit, et locutus fuerit verbum, ego Dominus decepi prophetam illum, et extendam manum meam super illum, et delebo eum de medio populi mei Israël.",
+        "SYN": "А если пророк допустит обольстить себя и скажет слово так, как бы Я, Господь, научил этого пророка, то Я простру на него руку Мою и истреблю его из народа Моего, Израиля.",
+        "NEO": "Et si le prophète se laisse séduire et qu’il prononce quelque parole, c’est moi, \\+w Yahweh|strong=\"H3068\"\\+w**, qui aurai séduit ce prophète ; et j’étendrai ma main sur lui, et je l’exterminerai du milieu de mon peuple d’Israël.",
+        "NAB": "As for the prophet, if he is beguiled into speaking a word, I, the LORD, shall have beguiled that prophet; I will stretch out my hand against him and root him out of my people Israel.",
+        "VAT_ES": "Pero si el profeta se deja seducir y pronuncia una palabra, habré sido yo, el Señor, el que sedujo a ese profeta: extenderá mi mano contra él y lo exterminaré de en medio de mi pueblo Israel.",
+        "CEI": "Se un profeta si lascia sedurre e fa una profezia, io, il Signore, ho sedotto quel profeta: stenderò la mano contro di lui e lo cancellerò dal mio popolo Israele."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/נָשְׂא֖וּ עֲוֺנָ֑/ם כַּֽ/עֲוֺן֙ הַ/דֹּרֵ֔שׁ כַּ/עֲוֺ֥ן הַ/נָּבִ֖יא יִֽהְיֶֽה׃",
+        "LXX": "καὶ λήμψονται τὴν ἀδικίαν αὐτῶν· κατὰ τὸ ἀδίκημα τοῦ ἐπερωτῶντος, καὶ κατὰ τὸ ἀδίκημα ὁμοίως τῷ προφήτῃ ἔσται,",
+        "VUL": "Et portabunt iniquitatem suam : juxta iniquitatem interrogantis, sic iniquitas prophetæ erit :",
+        "SYN": "И понесут вину беззакония своего: какова вина вопрошающего, такова будет вина и пророка,",
+        "NEO": "Ils porteront ainsi la peine de leur iniquité, — telle l’iniquité de celui qui interroge, telle l’iniquité du prophète, —",
+        "NAB": "Each shall receive punishment for his sin, the inquirer and the prophet shall be punished alike,",
+        "VAT_ES": "Uno y otro cargarán con esa culpa: el profeta y el que lo consulta serán igualmente culpables.",
+        "CEI": "Ambedue porteranno la pena della loro iniquità. La pena di chi consulta sarà uguale a quella del profeta,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "לְ֠מַעַן לֹֽא יִתְע֨וּ ע֤וֹד בֵּֽית יִשְׂרָאֵל֙ מֵ/אַֽחֲרַ֔/י וְ/לֹֽא יִטַּמְּא֥וּ ע֖וֹד בְּ/כָל פִּשְׁעֵי/הֶ֑ם וְ/הָ֥יוּ לִ֣/י לְ/עָ֗ם וַֽ/אֲנִי֙ אֶהְיֶ֤ה לָ/הֶם֙ לֵֽ/אלֹהִ֔ים נְאֻ֖ם אֲדֹנָ֥/י יְהוִֽה׃",
+        "LXX": "ὅπως μὴ πλανᾶται ἔτι ὁ οἶκος τοῦ Ἰσραὴλ ἀπ’ ἐμοῦ, καὶ ἵνα μὴ μιαίνωνται ἔτι ἐν πᾶσιν τοῖς παραπτώμασιν αὐτῶν· καὶ ἔσονταί μοι εἰς λαὸν καὶ ἐγὼ ἔσομαι αὐτοῖς εἰς θεόν, λέγει Κύριος.",
+        "VUL": "ut non erret ultra domus Israël a me, neque polluatur in universis prævaricationibus suis : sed sint mihi in populum, et ego sim eis in Deum, ait Dominus exercituum.",
+        "SYN": "чтобы впредь дом Израилев не уклонялся от Меня и чтобы более не оскверняли себя всякими беззакониями своими, но чтобы были Моим народом, и Я был их Богом, говорит Господь Бог.",
+        "NEO": "afin que la maison d’Israël ne s’égare plus loin de moi, et qu’elle ne se souille plus par toutes ses transgressions. Alors ils seront mon peuple, et moi je serai leur Dieu, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "so that the house of Israel may no longer stray from me and may no longer be defiled by all their sins. Thus they shall be my people, and I will be their God, says the Lord GOD.",
+        "VAT_ES": "Así, nunca más el pueblo de Israel andará errante lejos de mí, y no volverá a mancharse con todas sus rebeldías: ellos serán mi Pueblo y yo será su Dios –oráculo del Señor–.",
+        "CEI": "perché gli Israeliti non vadano più errando lontano da me, né più si contaminino con tutte le loro prevaricazioni: essi saranno il mio popolo e io sarò il loro Dio. Parola del Signore\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu rivolta questa parola del Signore:"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֗ם אֶ֚רֶץ כִּ֤י תֶחֱטָא לִ/י֙ לִ/מְעָל מַ֔עַל וְ/נָטִ֤יתִי יָדִ/י֙ עָלֶ֔י/הָ וְ/שָׁבַ֥רְתִּי לָ֖/הּ מַטֵּה לָ֑חֶם וְ/הִשְׁלַחְתִּי בָ֣/הּ רָעָ֔ב וְ/הִכְרַתִּ֥י מִמֶּ֖/נָּה אָדָ֥ם וּ/בְהֵמָֽה׃",
+        "LXX": "Υἱὲ ἀνθρώπου, γῆ ἣ ἂν ἁμάρτῃ μοι τοῦ παραπεσεῖν παράπτωμα, καὶ ἐκτενῶ τὴν χεῖρά μου ἐπ’ αὐτὴν καὶ συντρίψω αὐτῆς στήριγμα ἄρτου, καὶ ἐξαποστελῶ ἐπ’ αὐτὴν λιμὸν καὶ ἐξαρῶ ἐξ αὐτῆς ἄνθρωπον καὶ κτήνη.",
+        "VUL": "[Fili hominis, terra cum peccaverit mihi,/ ut prævaricetur prævaricans,/ extendam manum meam super eam,/ et conteram virgam panis ejus,/ et immittam in eam famem,/ et interficiam de ea hominem et jumentum./",
+        "SYN": "сын человеческий! если бы какая земля согрешила предо Мною, вероломно отступив от Меня, и Я простер на нее руку Мою, и истребил в ней хлебную опору, и послал на нее голод, и стал губить на ней людей и скот;",
+        "NEO": "« Fils de l’homme, si un pays péchait contre moi par révolte, et si j’étendais ma main sur lui en brisant pour lui le bâton du pain, et si je lui envoyais la famine, en exterminant hommes et bêtes,",
+        "NAB": "Son of man, when a land sins against me by breaking faith, I stretch out my hand against it and break its staff of bread, I let famine loose upon it and cut off from it both man and beast;",
+        "VAT_ES": "Hijo de hombre, si un país peca contra mí cometiendo alguna infidelidad, yo extenderá mi mano contra él y agotaré todas sus reservas de alimento: enviaré el hambre sobre él y extirparé por igual a hombres y animales.",
+        "CEI": "\"Figlio dell'uomo, se un paese pecca contro di me e si rende infedele, io stendo la mano sopra di lui e gli tolgo la riserva del pane e gli mando contro la fame e stèrmino uomini e bestie;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ֠/הָיוּ שְׁלֹ֨שֶׁת הָ/אֲנָשִׁ֤ים הָ/אֵ֨לֶּה֙ בְּ/תוֹכָ֔/הּ נֹ֖חַ דנאל דָּנִיֵּ֣אל וְ/אִיּ֑וֹב הֵ֤מָּה בְ/צִדְקָתָ/ם֙ יְנַצְּל֣וּ נַפְשָׁ֔/ם נְאֻ֖ם אֲדֹנָ֥/י יְהוִֽה׃",
+        "LXX": "καὶ ἐὰν ὦσιν οἱ τρεῖς ἄνδρες οὗτοι ἐν μέσῳ αὐτῆς, Νῶε καὶ Δανιὴλ καὶ Ἰώβ, αὐτοὶ ἐν τῇ δικαιοσύνῃ αὐτῶν σωθήσονται, λέγει Κύριος.",
+        "VUL": "Et si fuerint tres viri isti in medio ejus,/ Noë, Daniel, et Job,/ ipsi justitia sua liberabunt animas suas,/ ait Dominus exercituum./",
+        "SYN": "и если бы нашлись в ней сии три мужа: Ной, Даниил и Иов, - то они праведностью своею спасли бы только свои души, говорит Господь Бог.",
+        "NEO": "et qu’il y eut ces trois hommes au milieu de ce pays, Noé, Daniel et Job,... eux sauveraient leur âme par leur justice, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "and even if these three men were in it, Noah, Daniel, and Job, they could save only themselves by their virtue, says the Lord GOD.",
+        "VAT_ES": "Pero si se encuentran en ese país estos tres hombres: Noé, Daniel y Job, ellos salvarán su vida a causa de su justicia –oráculo del Señor–.",
+        "CEI": "anche se nel paese vivessero questi tre uomini: Noè, Daniele e Giobbe, essi con la loro giustizia salverebbero solo se stessi, dice il Signore Dio."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "לֽוּ חַיָּ֥ה רָעָ֛ה אַעֲבִ֥יר בָּ/אָ֖רֶץ וְ/שִׁכְּלָ֑תָּ/ה וְ/הָיְתָ֤ה שְׁמָמָה֙ מִ/בְּלִ֣י עוֹבֵ֔ר מִ/פְּנֵ֖י הַ/חַיָּֽה׃",
+        "LXX": "ἐὰν καὶ θηρία πονηρὰ ἐπάγω ἐπὶ τὴν γῆν καὶ τιμωρήσομαι αὐτήν, καὶ ἔσται εἰς ἀφανισμόν, καὶ οὐκ ἔσται ὁ διοδεύων ἀπὸ προσώπου τῶν θηρίων,",
+        "VUL": "Quod si et bestias pessimas induxero super terram/ ut vastem eam, et fuerit invia,/ eo quod non sit pertransiens propter bestias :/",
+        "SYN": "Или, если бы Я послал на эту землю лютых зверей, которые осиротили бы ее, и она по причине зверей сделалась пустою и непроходимою:",
+        "NEO": "Si je faisais passer dans le pays des bêtes malfaisantes, et qu’il fût dépeuplé, et qu’il devint un désert où personne ne passerait à cause des bêtes,",
+        "NAB": "If I were to cause wild beasts to prowl the land, depopulating it so that it became a waste, traversed by none because of the wild beasts,",
+        "VAT_ES": "Si yo suelto las bestias feroces contra ese país para dejarlo despoblado, y él se convierte en un desierto intransitable, a causa de las fieras;",
+        "CEI": "Oppure se io infestassi quel paese di bestie feroci, che lo privassero dei suoi figli e ne facessero un deserto che nessuno potesse attraversare a causa delle bestie feroci,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "שְׁלֹ֨שֶׁת הָ/אֲנָשִׁ֣ים הָ/אֵלֶּה֮ בְּ/תוֹכָ/הּ֒ חַי אָ֗נִי נְאֻם֙ אֲדֹנָ֣/י יְהוִ֔ה אִם בָּנִ֥ים וְ/אִם בָּנ֖וֹת יַצִּ֑ילוּ הֵ֤מָּה לְ/בַדָּ/ם֙ יִנָּצֵ֔לוּ וְ/הָ/אָ֖רֶץ תִּהְיֶ֥ה שְׁמָמָֽה׃",
+        "LXX": "καὶ οἱ τρεῖς ἄνδρες οὗτοι ἐν μέσῳ αὐτῆς ὦσι, ζῶ ἐγώ, λέγει Κύριος, εἰ υἱοὶ ἢ θυγατέρες σωθήσονται, ἀλλ’ ἢ αὐτοὶ μόνοι σωθήσονται, ἡ δὲ γῆ ἔσται εἰς ὄλεθρον.",
+        "VUL": "tres viri isti si fuerint in ea,/ vivo ego, dicit Dominus Deus,/ quia nec filios nec filias liberabunt,/ sed ipsi soli liberabuntur,/ terra autem desolabitur./",
+        "SYN": "то сии три мужа среди нее, - живу Я, говорит Господь Бог, - не спасли бы ни сыновей, ни дочерей, а они, только они спаслись бы, земля же сделалась бы пустынею.",
+        "NEO": "et qu’il y eût ces trois hommes au milieu de ce pays, je suis vivant, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Ils ne sauveraient ni fils ni filles ; eux seuls seraient sauvés, mais le pays serait dévasté.",
+        "NAB": "and these three men were in it, as I live, says the Lord GOD, I swear they could save neither sons nor daughters; they alone would be saved, and the land would be a waste.",
+        "VAT_ES": "aunque se encuentren en ese país estos tres hombres, juro por mi vida –oráculo del Señor– que no podrán salvar ni a sus hijos ni a sus hijas: ellos solos se salvarán, mientras que el país quedará desierto.",
+        "CEI": "anche se in mezzo a quella terra ci fossero questi tre uomini, giuro com'è vero ch'io vivo, dice il Signore Dio: non salverebbero né figli né figlie, soltanto loro si salverebbero, ma la terra sarebbe un deserto."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "א֛וֹ חֶ֥רֶב אָבִ֖יא עַל הָ/אָ֣רֶץ הַ/הִ֑יא וְ/אָמַרְתִּ֗י חֶ֚רֶב תַּעֲבֹ֣ר בָּ/אָ֔רֶץ וְ/הִכְרַתִּ֥י מִמֶּ֖/נָּה אָדָ֥ם וּ/בְהֵמָֽה׃",
+        "LXX": "ἢ καὶ ῥομφαίαν ἐὰν ἐπάγω ἐπὶ τὴν γῆν ἐκείνην καὶ εἴπω Ῥομφαία διελθάτω διὰ τῆς γῆς, καὶ ἐξαρῶ ἐξ αὐτῆς ἄνθρωπον καὶ κτῆνος,",
+        "VUL": "Vel si gladium induxero super terram illam,/ et dixero gladio : Transi per terram :/ et interfecero de ea hominem et jumentum,/",
+        "SYN": "Или, если бы Я навел на ту землю меч и сказал: \"меч, пройди по земле!\", и стал истреблять на ней людей и скот,",
+        "NEO": "Ou si je faisais venir l’épée sur ce pays, et que je dise : Que l’épée passe sur le pays !... en exterminant hommes et bêtes,",
+        "NAB": "Or if I brought the sword upon this country, commanding the sword to pass through the land cutting off from it man and beast,",
+        "VAT_ES": "O bien, si yo atraigo la espada contra ese país, diciendo: «Pase la espada por este país y extirpe de él a hombres y animales»;",
+        "CEI": "Oppure, se io mandassi la spada contro quel paese e dicessi: Spada, percorri quel paese; e sterminassi uomini e bestie,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וּ/שְׁלֹ֨שֶׁת הָ/אֲנָשִׁ֣ים הָ/אֵלֶּה֮ בְּ/תוֹכָ/הּ֒ חַי אָ֗נִי נְאֻם֙ אֲדֹנָ֣/י יְהוִ֔ה לֹ֥א יַצִּ֖ילוּ בָּנִ֣ים וּ/בָנ֑וֹת כִּ֛י הֵ֥ם לְ/בַדָּ֖/ם יִנָּצֵֽלוּ׃",
+        "LXX": "καὶ οἱ τρεῖς οὗτοι ἄνδρες ἐν μέσῳ αὐτῆς, ζῶ ἐγώ, λέγει Κύριος, οὐ μὴ ῥύσωνται υἱοὺς οὐδὲ θυγατέρας, αὐτοὶ μόνοι σωθήσονται.",
+        "VUL": "et tres viri isti fuerint in medio ejus :/ vivo ego, dicit Dominus Deus,/ non liberabunt filios neque filias,/ sed ipsi soli liberabuntur./",
+        "SYN": "то сии три мужа среди нее, - живу Я, говорит Господь Бог, - не спасли бы ни сыновей, ни дочерей, а они только спаслись бы.",
+        "NEO": "et qu’il y eût ces trois hommes au milieu de ce pays, je suis vivant, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Ils ne sauveraient ni fils, ni filles ; eux seuls seraient sauvés.",
+        "NAB": "and these three men were in it, as I live, says the Lord GOD, they would be unable to save either sons or daughters; they alone would be saved.",
+        "VAT_ES": "aunque se encuentren en ese país estos tres hombres, juro por mi vida –oráculo del Señor– que no podrán salvar ni a sus hijos ni a sus hijas: ellos se salvarán.",
+        "CEI": "anche se in mezzo a quel paese ci fossero questi tre uomini, giuro com'è vero ch'io vivo, dice il Signore: non salverebbero né figli né figlie, soltanto loro si salverebbero."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "א֛וֹ דֶּ֥בֶר אֲשַׁלַּ֖ח אֶל הָ/אָ֣רֶץ הַ/הִ֑יא וְ/שָׁפַכְתִּ֨י חֲמָתִ֤/י עָלֶ֨י/הָ֙ בְּ/דָ֔ם לְ/הַכְרִ֥ית מִמֶּ֖/נָּה אָדָ֥ם וּ/בְהֵמָֽה׃",
+        "LXX": "ἢ καὶ θάνατον ἐπαποστείλω ἐπὶ τὴν γῆν ἐκείνην, καὶ ἐκχεῶ τὸν θυμόν μου ἐπ’ αὐτὴν ἐν αἵματι τοῦ ἐξολεθρεῦσαι ἐξ αὐτῆς ἄνθρωπον καὶ κτῆνος,",
+        "VUL": "Si autem et pestilentiam immisero super terram illam,/ et effudero indignationem meam super eam in sanguine,/ ut auferam ex ea hominem et jumentum,/",
+        "SYN": "Или, если бы Я послал на ту землю моровую язву и излил на нее ярость Мою в кровопролитии, чтобы истребить на ней людей и скот:",
+        "NEO": "Ou si j’envoyais la peste sur ce pays, et que je répandisse sur lui mon courroux dans le sang, en exterminant hommes et bêtes,",
+        "NAB": "Or if I were to send pestilence into this land, pouring out upon it my bloodthirsty fury, cutting off from it man and beast,",
+        "VAT_ES": "O si envío la peste contra ese país y desahogo en forma sangrienta mi indignación contra ellos, extirpando por igual a hombres y animales;",
+        "CEI": "Oppure, se io mandassi la peste contro quella terra e sfogassi nella strage lo sdegno e sterminassi uomini e bestie,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/נֹ֨חַ דנאל דָּנִיֵּ֣אל וְ/אִיּוֹב֮ בְּ/תוֹכָ/הּ֒ חַי אָ֗נִי נְאֻם֙ אֲדֹנָ֣/י יְהוִ֔ה אִם בֵּ֥ן אִם בַּ֖ת יַצִּ֑ילוּ הֵ֥מָּה בְ/צִדְקָתָ֖/ם יַצִּ֥ילוּ נַפְשָֽׁ/ם׃",
+        "LXX": "καὶ Νῶε καὶ Δανιὴλ καὶ Ἰὼβ ἐν μέσῳ αὐτῆς, ζῶ ἐγώ, λέγει Κύριος, ἐὰν υἱοὶ ἢ θυγατέρες ὑπολειφθῶσιν, αὐτοὶ ἐν τῇ δικαιοσύνῃ αὐτῶν ῥύσονται τὰς ψυχὰς αὐτῶν.",
+        "VUL": "et Noë, et Daniel, et Job fuerint in medio ejus :/ vivo ego, dicit Dominus Deus,/ quia filium et filiam non liberabunt,/ sed ipsi justitia sua liberabunt animas suas./",
+        "SYN": "то Ной, Даниил и Иов среди нее, - живу Я, говорит Господь Бог, - не спасли бы ни сыновей, ни дочерей; праведностью своею они спасли бы только свои души.",
+        "NEO": "et que Noé, Daniel et Job fussent au milieu de ce pays, je suis vivant, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Ils ne sauveraient ni fils, ni filles, mais eux sauveraient leur âme par leur justice.",
+        "NAB": "even if Noah, Daniel, and Job were in it, as I live, says the Lord GOD, I swear that they could save neither son nor daughter; they would save only themselves by their virtue.",
+        "VAT_ES": "aunque se encuentren en ese país Noé, Daniel y Job, juro por mi vida –oráculo del Señor– que no podrán salvar ni a sus hijos ni a sus hijas: ellos solos se salvarán a causa de su justicia.",
+        "CEI": "anche se in mezzo a quella terra ci fossero Noè, Daniele e Giobbe, giuro com'è vero ch'io vivo, dice il Signore Dio: non salverebbero né figli né figlie, soltanto essi si salverebbero per la loro giustizia."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "כִּי֩ כֹ֨ה אָמַ֜ר אֲדֹנָ֣/י יְהֹוִ֗ה אַ֣ף כִּֽי אַרְבַּ֣עַת שְׁפָטַ֣/י הָ/רָעִ֡ים חֶ֠רֶב וְ/רָעָ֞ב וְ/חַיָּ֤ה רָעָה֙ וָ/דֶ֔בֶר שִׁלַּ֖חְתִּי אֶל יְרוּשָׁלִָ֑ם לְ/הַכְרִ֥ית מִמֶּ֖/נָּה אָדָ֥ם וּ/בְהֵמָֽה׃",
+        "LXX": "τάδε λέγει Κύριος Ἐὰν δὲ καὶ τὰς τέσσαρας ἐκδικήσεις μου τὰς πονηράς, ῥομφαίαν καὶ λιμὸν καὶ θηρία πονηρὰ καὶ θάνατον, ἐξαποστείλω ἐπὶ Ἰερουσαλὴμ τοῦ ἐξολεθρεῦσαι ἐξ αὐτῆς ἄνθρωπον καὶ κτῆνος,",
+        "VUL": "Quoniam hæc dicit Dominus Deus :/ Quod etsi quatuor judicia mea pessima,/ gladium, et famem, ac bestias malas, et pestilentiam,/ immisero in Jerusalem,/ ut interficiam de ea hominem et pecus,/",
+        "SYN": "Ибо так говорит Господь Бог: если и четыре тяжкие казни Мои: меч, и голод, и лютых зверей, и моровую язву пошлю на Иерусалим, чтобы истребить в нем людей и скот,",
+        "NEO": "Car ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Même quand j’aurai envoyé contre Jérusalem mes quatre châtiments terribles, l’épée, la famine, les bêtes malfaisantes et la peste, en exterminant hommes et bêtes,",
+        "NAB": "Thus says the Lord GOD: Even though I send Jerusalem my four cruel punishments, the sword, famine, wild beasts, and pestilence, to cut off from it man and beast,",
+        "VAT_ES": "Así habla el Señor: Aunque yo envié contra Jerusalén mis cuatro terribles castigos –la espada, el hambre, las bestias feroces y la peste– para extirpar de ella a hombres y animales,",
+        "CEI": "Dice infatti il Signore Dio: Quando manderò contro Gerusalemme i miei quattro tremendi castighi: la spada, la fame, le bestie feroci e la peste, per estirpare da essa uomini e bestie,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּ֨ה נֽוֹתְרָה בָּ֜/הּ פְּלֵטָ֗ה הַֽ/מּוּצָאִים֮ בָּנִ֣ים וּ/בָנוֹת֒ הִנָּ/ם֙ יוֹצְאִ֣ים אֲלֵי/כֶ֔ם וּ/רְאִיתֶ֥ם אֶת דַּרְכָּ֖/ם וְ/אֶת עֲלִֽילוֹתָ֑/ם וְ/נִחַמְתֶּ֗ם עַל הָֽ/רָעָה֙ אֲשֶׁ֤ר הֵבֵ֨אתִי֙ עַל יְר֣וּשָׁלִַ֔ם אֵ֛ת כָּל אֲשֶׁ֥ר הֵבֵ֖אתִי עָלֶֽי/הָ׃",
+        "LXX": "καὶ ἰδοὺ ὑπολελιμμένοι ἐν αὐτῇ οἱ ἀνασεσωσμένοι αὐτῆς, οἳ ἐξάγουσιν ἐξ αὐτῆς υἱοὺς καὶ θυγατέρας, ἰδοὺ ἐκπορεύονται πρὸς ὑμᾶς, καὶ ὄψεσθε τὰς ὁδοὺς αὐτῶν",
+        "VUL": "tamen relinquetur in ea salvatio educentium filios et filias :/ ecce ipsi ingredientur ad vos,/ et videbitis viam eorum et adinventiones eorum,/ et consolabimini super malo quod induxi in Jerusalem,/ in omnibus quæ importavi super eam./",
+        "SYN": "и тогда останется в нем остаток, сыновья и дочери, которые будут выведены оттуда; вот, они выйдут к вам, и вы увидите поведение их и дела их, и утешитесь о том бедствии, которое Я навел на Иерусалим, о всем, что Я навел на него.",
+        "NEO": "voici qu’il y aura un reste qui échappera, qui sortira de la ville, des fils et des filles.",
+        "NAB": "still some survivors shall be left in it who will bring out sons and daughters; when they come out to you, you shall see their conduct and their actions and be consoled regarding the evil I have brought on Jerusalem (all that I have brought upon it).",
+        "VAT_ES": "ahí queda un resto de sobrevivientes que hacen salir a sus hijos y a sus hijas y vienen adonde están ustedes. Ustedes verán su mala conducta y sus obras, y se consolarán de la desgracia que atraje sobre Jerusalén, de todo lo que mandé contra ella.",
+        "CEI": "ecco vi sarà in mezzo un residuo che si metterà in salvo con i figli e le figlie. Essi verranno da voi perché vediate la loro condotta e le loro opere e vi consoliate del male che ho mandato contro Gerusalemme, di quanto ho mandato contro di lei."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/נִחֲמ֣וּ אֶתְ/כֶ֔ם כִּֽי תִרְא֥וּ אֶת דַּרְכָּ֖/ם וְ/אֶת עֲלִֽילוֹתָ֑/ם וִֽ/ידַעְתֶּ֗ם כִּי֩ לֹ֨א חִנָּ֤ם עָשִׂ֨יתִי֙ אֵ֣ת כָּל אֲשֶׁר עָשִׂ֣יתִי בָ֔/הּ נְאֻ֖ם אֲדֹנָ֥/י יְהֹוִֽה׃",
+        "LXX": "καὶ τὰ ἐνθυμήματα αὐτῶν, καὶ ἐπιγνώσεσθε διότι οὐ μάτην πεποίηκα πάντα ὅσα ἐποίησα ἐν αὐτῇ, λέγει Κύριος.",
+        "VUL": "Et consolabuntur vos,/ cum videritis viam eorum/ et adinventiones eorum :/ et cognoscetis quod non frustra fecerim omnia quæ feci in ea,/ ait Dominus Deus.]",
+        "SYN": "Они утешат вас, когда вы увидите поведение их и дела их; и узнаете, что Я не напрасно сделал все то, что сделал в нем, говорит Господь Бог.",
+        "NEO": "Ils vous consoleront, quand vous verrez leur conduite et leurs œuvres, et vous saurez que ce n’est pas sans cause que j’aurai fait tout ce que je lui aurai fait, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "They shall console you when you see their conduct and actions, for you shall then know that it was not without reason that I did to it what I did, says the Lord GOD.",
+        "VAT_ES": "Ellos los consolarán, porque ustedes verán su mala conducta y sus obras, y así sabrán que no sin motivo hice todo esto en la ciudad –oráculo del Señor–.",
+        "CEI": "Essi vi consoleranno quando vedrete la loro condotta e le loro opere e saprete che non invano ho fatto quello che ho fatto in mezzo a lei\". Parola del Signore Dio."
+      }
+    }
+  }
+}

@@ -1,0 +1,681 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IV_REG_018",
+  "book_key": "IV_REG",
+  "sequence": 18,
+  "chapter_in": {
+    "MT": 18,
+    "VUL": 18,
+    "LXX": 18
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ בִּ/שְׁנַ֣ת שָׁלֹ֔שׁ לְ/הוֹשֵׁ֥עַ בֶּן אֵלָ֖ה מֶ֣לֶךְ יִשְׂרָאֵ֑ל מָלַ֛ךְ חִזְקִיָּ֥ה בֶן אָחָ֖ז מֶ֥לֶךְ יְהוּדָֽה׃",
+        "LXX": "Καὶ ἐγένετο ἐν ἔτει τρίτῳ τῷ Ὡσῆε υἱῷ Ἠλὰ βασιλεῖ Ἰσραὴλ ἐβασίλευσεν Ἑζεκίας υἱὸς Ἀχὰζ βασιλέως Ἰούδα.",
+        "VUL": "Anno tertio Osee filii Ela regis Israël, regnavit Ezechias filius Achaz regis Juda.",
+        "SYN": "В третий год Осии, сына Илы, царя Израильского, воцарился Езекия, сын Ахаза, царя Иудейского.",
+        "NEO": "La troisième année d’Osée, fils d’Ela, roi d’Israël, régna Ezéchias, fils d’Achaz, roi de Juda.",
+        "NAB": "In the third year of Hoshea, son of Elah, king of Israel, Hezekiah, son of Ahaz, king of Judah, began to reign.",
+        "VAT_ES": "El tercer año de Oseas, hijo de Elá, rey de Israel, inició su reinado Ezequías, hijo de Ajaz, rey de Judá.",
+        "CEI": "Nell'anno terzo di Osea figlio di Ela, re di Israele, divenne re Ezechia figlio di Acaz, re di Giuda."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בֶּן עֶשְׂרִ֨ים וְ/חָמֵ֤שׁ שָׁנָה֙ הָיָ֣ה בְ/מָלְכ֔/וֹ וְ/עֶשְׂרִ֤ים וָ/תֵ֨שַׁע֙ שָׁנָ֔ה מָלַ֖ךְ בִּ/ירוּשָׁלִָ֑ם וְ/שֵׁ֣ם אִמּ֔/וֹ אֲבִ֖י בַּת זְכַרְיָֽה׃",
+        "LXX": "υἱὸς εἴκοσι καὶ πέντε ἐτῶν ἐν τῷ βασιλεύειν αὐτόν, καὶ εἴκοσι καὶ ἐννέα ἔτη ἐβασίλευσεν ἐν Ἰερουσαλήμ, καὶ ὄνομα τῇ μητρὶ αὐτοῦ Ἀβού, θυγάτηρ Ζαχαρίου.",
+        "VUL": "Viginti quinque annorum erat cum regnare cpisset, et viginti novem annis regnavit in Jerusalem : nomen matris ejus Abi filia Zachariæ.",
+        "SYN": "Двадцати пяти лет был он, когда воцарился, и двадцать девять лет царствовал в Иерусалиме; имя матери его Ави, дочь Захарии.",
+        "NEO": "Il avait vingt-cinq ans lorsqu’il devint roi, et il régna vingt-neuf ans à Jérusalem. Sa mère s’appelait Abi, fille de Zacharias.",
+        "NAB": "He was twenty-five years old when he became king, and he reigned twenty-nine years in Jerusalem. His mother's name was Abi, daughter of Zechariah.",
+        "VAT_ES": "Cro 32.9-19; Is 36.2-22",
+        "CEI": "Quando egli divenne re, aveva venticinque anni; regnò ventinove anni in Gerusalemme. Sua madre si chiamava Abi, figlia di Zaccaria."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ הַ/יָּשָׁ֖ר בְּ/עֵינֵ֣י יְהוָ֑ה כְּ/כֹ֥ל אֲשֶׁר עָשָׂ֖ה דָּוִ֥ד אָבִֽי/ו׃",
+        "LXX": "καὶ ἐποίησεν τὸ εὐθὲς ἐν ὀφθαλμοῖς Κυρίου κατὰ πάντα ὅσα ἐποίησεν Δαυεὶδ ὁ πατὴρ αὐτοῦ.",
+        "VUL": "Fecitque quod erat bonum coram Domino, juxta omnia quæ fecerat David pater ejus.",
+        "SYN": "И делал он угодное в очах Господних во всем так, как делал Давид, отец его;",
+        "NEO": "Il fit ce qui est droit aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**, selon tout ce qu’avait fait David, son père.",
+        "NAB": "He pleased the LORD, just as his forefather David had done.",
+        "VAT_ES": "El hizo lo que es recto a los ojos del Señor, tal como lo había hecho su padre David.",
+        "CEI": "Fece ciò che è retto agli occhi del Signore, secondo quanto aveva fatto Davide suo antenato."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "ה֣וּא הֵסִ֣יר אֶת הַ/בָּמ֗וֹת וְ/שִׁבַּר֙ אֶת הַ/מַּצֵּבֹ֔ת וְ/כָרַ֖ת אֶת הָֽ/אֲשֵׁרָ֑ה וְ/כִתַּת֩ נְחַ֨שׁ הַ/נְּחֹ֜שֶׁת אֲשֶׁר עָשָׂ֣ה מֹשֶׁ֗ה כִּ֣י עַד הַ/יָּמִ֤ים הָ/הֵ֨מָּה֙ הָי֤וּ בְנֵֽי יִשְׂרָאֵל֙ מְקַטְּרִ֣ים ל֔/וֹ וַ/יִּקְרָא ל֖/וֹ נְחֻשְׁתָּֽן׃",
+        "LXX": "αὐτὸς ἐξῆρεν τὰ ὑψηλά, καὶ συνέτριψεν τὰς στήλας, καὶ ἐξωλέθρευσεν τὰ ἄλση καὶ τὸν ὄφιν τὸν χαλκοῦν ὃν ἐποίησεν Μωυσῆς, ὅτι ἕως τῶν ἡμερῶν ἐκείνων ἦσαν οἱ υἱοὶ Ἰσραὴλ θυμιῶντες αὐτῷ· καὶ ἐκάλεσεν αὐτὸν Νεσθαλεί.",
+        "VUL": "Ipse dissipavit excelsa, et contrivit statuas, et succidit lucos, confregitque serpentem æneum quem fecerat Moyses : siquidem usque ad illud tempus filii Israël adolebant ei incensum : vocavitque nomen ejus Nohestan.",
+        "SYN": "он отменил высоты, разбил статуи, срубил дубраву и истребил медного змея, которого сделал Моисей, потому что до самых тех дней сыны Израилевы кадили ему и называли его Нехуштан.",
+        "NEO": "Il fit disparaître les hauts lieux, brisa les stèles, coupa les aschérahs, et mit en pièces le serpent d’airain que Moïse avait fait, car les enfants d’Israël brûlaient jusqu’alors des parfums devant lui : on l’appelait Nohestan.",
+        "NAB": "It was he who removed the high places, shattered the pillars, and cut down the sacred poles. He smashed the bronze serpent called Nehushtan which Moses had made, because up to that time the Israelites were burning incense to it.",
+        "VAT_ES": "Hizo desaparecer los lugares altos, rompió las piedras conmemorativas, taló el poste sagrado e hizo pedazos la serpiente de bronce que había hecho Moisés, porque hasta esos días los israelitas le quemaban incienso; se la llamaba Nejustán.",
+        "CEI": "Egli eliminò le alture e frantumò le stele, abbatté il palo sacro e fece a pezzi il serpente di bronzo, eretto da Mosè; difatti fino a quel tempo gli Israeliti gli bruciavano incenso e lo chiamavano Necustan."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בַּ/יהוָ֥ה אֱלֹהֵֽי יִשְׂרָאֵ֖ל בָּטָ֑ח וְ/אַחֲרָ֞י/ו לֹא הָיָ֣ה כָמֹ֗/הוּ בְּ/כֹל֙ מַלְכֵ֣י יְהוּדָ֔ה וַ/אֲשֶׁ֥ר הָי֖וּ לְ/פָנָֽי/ו׃",
+        "LXX": "ἐν κυρίῳ θεῷ Ἰσραὴλ ἤλπισεν, καὶ μετ’ αὐτὸν οὐκ ἐγενήθη ὅμοιος αὐτῷ ἐν βασιλεῦσιν Ἰούδα καὶ ἐν τοῖς γενομένοις ἔμπροσθεν αὐτοῦ·",
+        "VUL": "In Domino Deo Israël speravit : itaque post eum non fuit similis ei de cunctis regibus Juda, sed neque in his qui ante eum fuerunt :",
+        "SYN": "На Господа Бога Израилева уповал он; и такого, как он, не бывало между всеми царями Иудейскими и после него и прежде него.",
+        "NEO": "Il mit sa confiance dans \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu d’Israël, et il n’eut pas son semblable parmi tous les rois de Juda qui vinrent après lui ou qui le précédèrent.",
+        "NAB": "He put his trust in the LORD, the God of Israel; and neither before him nor after him was there anyone like him among all the kings of Judah.",
+        "VAT_ES": "Ezequías puso su confianza en el Señor, el Dios de Israel, y no hubo después de él ninguno igual entre todos los reyes de Judá, como tampoco lo hubo antes que él.",
+        "CEI": "Egli confidò nel Signore, Dio di Israele. Fra tutti i re di Giuda nessuno fu simile a lui, né fra i suoi successori né fra i suoi predecessori."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּדְבַּק֙ בַּֽ/יהוָ֔ה לֹא סָ֖ר מֵ/אַֽחֲרָ֑י/ו וַ/יִּשְׁמֹר֙ מִצְוֺתָ֔י/ו אֲשֶׁר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "καὶ ἐκολλήθη τῷ κυρίῳ, οὐκ ἀπέστη ὄπισθεν αὐτοῦ, καὶ ἐφύλαξεν τὰς ἐντολὰς αὐτοῦ ὅσας ἐνετείλατο Μωυσῇ.",
+        "VUL": "et adhæsit Domino, et non recessit a vestigiis ejus, fecitque mandata ejus, quæ præceperat Dominus Moysi.",
+        "SYN": "И прилепился он к Господу и не отступал от Него, и соблюдал заповеди Его, какие заповедал Господь Моисею.",
+        "NEO": "Attaché à \\+w Yahweh|strong=\"H3068\"\\+w**, il ne se détourna pas de lui, et il observa ses commandements que \\+w Yahweh|strong=\"H3068\"\\+w** avait prescrits à Moïse.",
+        "NAB": "Loyal to the LORD, Hezekiah never turned away from him, but observed the commandments which the LORD had given Moses.",
+        "VAT_ES": "Se mantuvo fiel al Señor sin apartarse de él, y observó los mandamientos que el Señor había dado a Moisés.",
+        "CEI": "Attaccato al Signore, non se ne allontanò; osservò i decreti che il Signore aveva dati a Mosè."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֤ה יְהוָה֙ עִמּ֔/וֹ בְּ/כֹ֥ל אֲשֶׁר יֵצֵ֖א יַשְׂכִּ֑יל וַ/יִּמְרֹ֥ד בְּ/מֶֽלֶךְ אַשּׁ֖וּר וְ/לֹ֥א עֲבָדֽ/וֹ׃",
+        "LXX": "καὶ ἦν Κύριος μετ’ αὐτοῦ, καὶ ἐν πᾶσιν οἷς ἐποίει συνῆκεν· καὶ ἠθέτησεν ἐν τῷ βασιλεῖ Ἀσσυρίων, καὶ οὐκ ἐδούλευσεν αὐτῷ.",
+        "VUL": "Unde et erat Dominus cum eo, et in cunctis ad quæ procedebat, sapienter se agebat. Rebellavit quoque contra regem Assyriorum, et non servivit ei.",
+        "SYN": "И был Господь с ним: везде, куда он ни ходил, поступал он благоразумно. И отложился он от царя Ассирийского, и не стал служить ему.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** fut avec Ezéchias, et il réussit dans toutes ses entreprises.",
+        "NAB": "The LORD was with him, and he prospered in all that he set out to do. He rebelled against the king of Assyria and did not serve him.",
+        "VAT_ES": "Tuvo éxito en todas sus empresas, porque el Señor estaba con él. Se rebeló contra el rey de Asiria y no fue más su vasallo.",
+        "CEI": "Il Signore fu con Ezechia e questi riuscì in tutte le iniziative. Egli si ribellò al re d'Assiria e non gli fu sottomesso."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הֽוּא הִכָּ֧ה אֶת פְּלִשְׁתִּ֛ים עַד עַזָּ֖ה וְ/אֶת גְּבוּלֶ֑י/הָ מִ/מִּגְדַּ֥ל נוֹצְרִ֖ים עַד עִ֥יר מִבְצָֽר׃",
+        "LXX": "αὐτὸς ἐπάταξεν τοὺς ἀλλοφύλους ἕως Γάζης καὶ ἕως ὁρίου αὐτῆς, ἀπὸ πύργου φυλασσόντων καὶ ἕως πόλεως ὀχυρᾶς.",
+        "VUL": "Ipse percussit Philisthæos usque ad Gazam, et omnes terminos eorum, a turre custodum usque ad civitatem munitam.",
+        "SYN": "Он поразил Филистимлян до Газы и в пределах ее, от сторожевой башни до укрепленного города.",
+        "NEO": "Il battit les Philistins jusqu’à Gaza et ravagea son territoire, depuis la tour des gardiens jusqu’aux villes fortes.",
+        "NAB": "He also subjugated the watchtowers and walled cities of the Philistines, all the way to Gaza and its territory.",
+        "VAT_ES": "Derrotó a los filisteos hasta Gaza y devastó su territorio, desde las torres de guardia hasta las plazas fuertes.",
+        "CEI": "Sconfisse i Filistei fino a Gaza e ai suoi confini, dal più piccolo villaggio fino alle fortezze."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִ֞י בַּ/שָּׁנָ֤ה הָֽ/רְבִיעִית֙ לַ/מֶּ֣לֶךְ חִזְקִיָּ֔הוּ הִ֚יא הַ/שָּׁנָ֣ה הַ/שְּׁבִיעִ֔ית לְ/הוֹשֵׁ֥עַ בֶּן אֵלָ֖ה מֶ֣לֶךְ יִשְׂרָאֵ֑ל עָלָ֞ה שַׁלְמַנְאֶ֧סֶר מֶֽלֶךְ אַשּׁ֛וּר עַל שֹׁמְר֖וֹן וַ/יָּ֥צַר עָלֶֽי/הָ׃",
+        "LXX": "Καὶ ἐγένετο ἐν τῷ ἔτει τῷ τετάρτῳ βασιλεῖ Ἑζεκίᾳ, αὐτὸς ἐνιαυτὸς ὁ ἕβδομος τῷ Ὡσῆε υἱῷ Ἠλὰ βασιλεῖ Ἰσραήλ, ἀνέβη Σαλαμανάσσαρ βασιλεὺς Ἀσσυρίων ἐπὶ Σαμάρειαν καὶ ἐπολιόρκει ἐπ’ αὐτήν·",
+        "VUL": "Anno quarto regis Ezechiæ, qui erat annus septimus Osee filii Ela regis Israël, ascendit Salmanasar rex Assyriorum in Samariam, et oppugnavit eam,",
+        "SYN": "В четвертый год царя Езекии, то есть в седьмой год Осии, сына Илы, царя Израильского, пошел Салманассар, царь Ассирийский, на Самарию, и осадил ее,",
+        "NEO": "La quatrième année du roi Ezéchias, qui était la septième année d’Osée, fils d’Ela, roi d’Israël, Salmanasar, roi d’Assyrie, monta contre Samarie et l’assiégea.",
+        "NAB": "In the fourth year of King Hezekiah, which was the seventh year of Hoshea, son of Elah, king of Israel, Shalmaneser, king of Assyria, attacked Samaria, laid siege to it,",
+        "VAT_ES": "El cuarto año del rey Ezequías, que era el séptimo año de Oseas, hijo de Elá, rey de Israel, Salmanasar, rey de Asiria, subió contra Samaría y la sitió.",
+        "CEI": "Nell'anno quarto del re Ezechia, cioè l'anno settimo di Osea figlio di Ela, re di Israele, Salmanassar re di Assiria marciò contro Samaria e la assediò."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַֽ/יִּלְכְּדֻ֗/הָ מִ/קְצֵה֙ שָׁלֹ֣שׁ שָׁנִ֔ים בִּ/שְׁנַת שֵׁ֖שׁ לְ/חִזְקִיָּ֑ה הִ֣יא שְׁנַת תֵּ֗שַׁע לְ/הוֹשֵׁ֨עַ֙ מֶ֣לֶךְ יִשְׂרָאֵ֔ל נִלְכְּדָ֖ה שֹׁמְרֽוֹן׃",
+        "LXX": "καὶ κατελάβετο αὐτὴν ἀπὸ τέλους τριῶν ἐτῶν ἐν ἔτει ἕκτῳ τῷ Ἑζεκίᾳ, αὐτὸς ἐνιαυτὸς ἔνατος τῷ Ὡσῆε βασιλεῖ Ἰσραήλ, καὶ συνελήμφθη Σαμάρεια.",
+        "VUL": "et cepit. Nam post annos tres, anno sexto Ezechiæ, id est nono anno Osee regis Israël, capta est Samaria :",
+        "SYN": "и взял ее через три года; в шестой год Езекии, то есть в девятый год Осии, царя Израильского, взята Самария.",
+        "NEO": "On la prit au bout de trois ans ; ce fut la sixième année d’Ezéchias, qui était la neuvième d’Osée, roi d’Israël, que Samarie fut prise.",
+        "NAB": "and after three years captured it. In the sixth year of Hezekiah, the ninth year of Hoshea, king of Israel, Samaria was taken.",
+        "VAT_ES": "Al cabo de tres años la conquistaron: en el sexto año de Ezequías, que era el noveno año de Oseas, rey de Israel, fue tomada Samaría.",
+        "CEI": "Dopo tre anni la prese; nell'anno sesto di Ezechia, cioè l'anno nono di Osea re di Israele, Samaria fu presa."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֶּ֧גֶל מֶֽלֶךְ אַשּׁ֛וּר אֶת יִשְׂרָאֵ֖ל אַשּׁ֑וּרָ/ה וַ/יַּנְחֵ֞/ם בַּ/חְלַ֧ח וּ/בְ/חָב֛וֹר נְהַ֥ר גּוֹזָ֖ן וְ/עָרֵ֥י מָדָֽי׃",
+        "LXX": "καὶ ἀπῴκισεν βασιλεὺς Ἀσσυρίων τὴν Σαμάρειαν εἰς Ἀσσυρίους, καὶ ἔθηκεν αὐτοὺς ἐν Ἁλάε καὶ ἐν Ἁβιὼρ ποταμῷ Γωζὰν καὶ Ὀρὴ Μήδων·",
+        "VUL": "et transtulit rex Assyriorum Israël in Assyrios, collocavitque eos in Hala et in Habor fluviis Gozan in civitatibus Medorum :",
+        "SYN": "И переселил царь Ассирийский Израильтян в Ассирию, и поселил их в Халахе и в Хаворе, при реке Гозан, и в городах Мидийских,",
+        "NEO": "Le roi d’Assyrie emmena Israël captif en Assyrie ; il les établit à Hala, sur les rives du Habor, fleuve de Gosan, et dans les villes des Mèdes,",
+        "NAB": "The king of Assyria then deported the Israelites to Assyria and settled them in Halah, at the Habor, a river of Gozan, and in the cities of the Medes.",
+        "VAT_ES": "El rey de Asiria deportó a los israelitas a Asiria y los estableció en Jalaj, y también junto al Jabor, río de Gozán, y en las ciudades de los medos.",
+        "CEI": "Il re d'Assiria deportò gli Israeliti in Assiria, destinandoli a Chelach, al Cabòr, fiume del Gozan, e alle città della Media."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "עַ֣ל אֲשֶׁ֣ר לֹֽא שָׁמְע֗וּ בְּ/קוֹל֙ יְהוָ֣ה אֱלֹהֵי/הֶ֔ם וַ/יַּעַבְרוּ֙ אֶת בְּרִית֔/וֹ אֵ֚ת כָּל אֲשֶׁ֣ר צִוָּ֔ה מֹשֶׁ֖ה עֶ֣בֶד יְהוָ֑ה וְ/לֹ֥א שָׁמְע֖וּ וְ/לֹ֥א עָשֽׂוּ׃",
+        "LXX": "ἀνθ’ ὧν ὅτι οὐκ ἤκουσαν τῆς φωνῆς Κυρίου θεοῦ αὐτῶν, καὶ παρέβησαν τὴν διαθήκην αὐτοῦ πάντα ὅσα ἐνετείλατο Μωσῆς ὁ δοῦλος Κυρίου, καὶ οὐκ ἤκουσαν καὶ οὐκ ἐποίησαν.",
+        "VUL": "quia non audierunt vocem Domini Dei sui, sed prætergressi sunt pactum ejus : omnia quæ præceperat Moyses servus Domini non audierunt, neque fecerunt.",
+        "SYN": "за то, что они не слушали гласа Господа Бога своего и преступили завет Его, всё, что заповедал Моисей раб Господень, они и не слушали и не исполняли.",
+        "NEO": "parce qu’ils n’avaient pas écouté la voix de \\+w Yahweh|strong=\"H3068\"\\+w** leur Dieu, et qu’ils avaient transgressé son alliance, parce qu’ils n’avaient ni écouté ni mis en pratique tout ce qu’avait ordonné Moïse, serviteur de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "This came about because they had not heeded the warning of the LORD, their God, but violated his covenant, not heeding and not fulfilling the commandments of Moses, the servant of the LORD.",
+        "VAT_ES": "Esto sucedió porque no habían escuchado la voz del Señor, su Dios, y habían transgredido su alianza; todo lo que había mandado Moisés, el servidor del Señor, ellos no lo habían escuchado ni practicado.",
+        "CEI": "Ciò accadde perché quelli non avevano ascoltato la voce del Signore loro Dio e ne avevano trasgredito l'alleanza e non avevano ascoltato né messo in pratica quanto aveva loro comandato Mosè, servo di Dio."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וּ/בְ/אַרְבַּע֩ עֶשְׂרֵ֨ה שָׁנָ֜ה לַ/מֶּ֣לֶךְ חִזְקִיָּ֗ה עָלָ֞ה סַנְחֵרִ֤יב מֶֽלֶךְ אַשּׁוּר֙ עַ֣ל כָּל עָרֵ֧י יְהוּדָ֛ה הַ/בְּצֻר֖וֹת וַֽ/יִּתְפְּשֵֽׂ/ם׃",
+        "LXX": "Καὶ τῷ τεσσαρεσκαιδεκάτῳ ἔτει βασιλεῖ Ἑζεκιοὺ ἀνέβη Σενναχηρεὶμ βασιλεὺς Ἀσσυρίων ἐπὶ τὰς πόλεις Ἰούδα τὰς ὀχυρὰς καὶ συνέλαβεν αὐτάς.",
+        "VUL": "Anno quartodecimo regis Ezechiæ, ascendit Sennacherib rex Assyriorum ad universas civitates Juda munitas, et cepit eas.",
+        "SYN": "В четырнадцатый год царя Езекии, пошел Сеннахирим, царь Ассирийский, против всех укрепленных городов Иуды и взял их.",
+        "NEO": "La quatorzième année du roi Ezéchias, Sennachérib, roi d’Assyrie, monta contre toutes les villes fortes de Juda et s’en empara.",
+        "NAB": "In the fourteenth year of King Hezekiah, Sennacherib, king of Assyria, went on an expedition against all the fortified cities of Judah and captured them.",
+        "VAT_ES": "El decimocuarto año del rey Ezequías, Senaquerib, rey de Asiria, subió contra todas las ciudades fortificadas de Judá y se apoderó de ellas.",
+        "CEI": "Nell'anno quattordici del re Ezechia, Sennàcherib re di Assiria assalì e prese tutte le fortezze di Giuda."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֣ח חִזְקִיָּ֣ה מֶֽלֶךְ יְהוּדָ֣ה אֶל מֶֽלֶךְ אַשּׁוּר֩ לָכִ֨ישָׁ/ה לֵ/אמֹ֤ר חָטָ֨אתִי֙ שׁ֣וּב מֵֽ/עָלַ֔/י אֵ֛ת אֲשֶׁר תִּתֵּ֥ן עָלַ֖/י אֶשָּׂ֑א וַ/יָּ֨שֶׂם מֶֽלֶךְ אַשּׁ֜וּר עַל חִזְקִיָּ֣ה מֶֽלֶךְ יְהוּדָ֗ה שְׁלֹ֤שׁ מֵאוֹת֙ כִּכַּר כֶּ֔סֶף וּ/שְׁלֹשִׁ֖ים כִּכַּ֥ר זָהָֽב׃",
+        "LXX": "καὶ ἀπέστειλεν Ἑζεκίας βασιλεὺς Ἰούδα ἀγγέλους πρὸς βασιλέα Ἀσσυρίων εἰς Λαχεὶς λέγων Ἡμάρτηκα, ἀποστράφητι ἀπ’ ἐμοῦ· ὃ ἐὰν ἐπιθῇς ἐπ’ ἐμὲ βαστάσω. καὶ ἐπέθηκεν ὁ βασιλεὺς Ἀσσυρίων ἐπὶ Ἑζεκίαν βασιλέα Ἰούδα τριακόσια τάλαντα ἀργυρίου καὶ τριάκοντα τάλαντα χρυσίου.",
+        "VUL": "Tunc misit Ezechias rex Juda nuntios ad regem Assyriorum in Lachis, dicens : Peccavi : recede a me, et omne quod imposueris mihi, feram. Indixit itaque rex Assyriorum Ezechiæ regi Judæ trecenta talenta argenti, et triginta talenta auri.",
+        "SYN": "И послал Езекия, царь Иудейский, к царю Ассирийскому в Лахис сказать: виновен я; отойди от меня; что наложишь на меня, я внесу. И наложил царь Ассирийский на Езекию, царя Иудейского, триста талантов серебра и тридцать талантов золота.",
+        "NEO": "Ezéchias, roi de Juda, envoya dire au roi d’Assyrie à Lachis : « J’ai commis une faute ; éloigne-toi de moi ; ce que tu m’imposeras, je le subirai. » Et le roi d’Assyrie imposa à Ezéchias, roi de Juda, trois cents talents d’argent et trente talents d’or.",
+        "NAB": "Hezekiah, king of Judah, sent this message to the king of Assyria at Lachish: \"I have done wrong. Leave me, and I will pay whatever tribute you impose on me.\" The king of Assyria exacted three hundred talents of silver and thirty talents of gold from Hezekiah, king of Judah.",
+        "VAT_ES": "Ezequías, rey de Judá, mandó a decir al rey de Asiria, que estaba en Laquis: «He cometido un error; retírate y aceptaré lo que me impongas». El rey de Asiria exigió al rey Ezequías, rey de Judá, trescientos talentos de plata y trescientos talentos de oro.",
+        "CEI": "Ezechia, re di Giuda, mandò a dire al re d'Assiria in Lachis: \"Ho peccato; allontànati da me e io sopporterò quanto mi imporrai\". Il re di Assiria impose a Ezechia re di Giuda trecento talenti d'argento e trenta talenti d'oro."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּן֙ חִזְקִיָּ֔ה אֶת כָּל הַ/כֶּ֖סֶף הַ/נִּמְצָ֣א בֵית יְהוָ֑ה וּ/בְ/אֹצְר֖וֹת בֵּ֥ית הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ ἔδωκεν Ἑζεκίας πᾶν τὸ ἀργύριον τὸ εὑρεθὲν ἐν οἴκῳ Κυρίου καὶ ἐν θησαυροῖς οἴκου τοῦ βασιλέως.",
+        "VUL": "Deditque Ezechias omne argentum quod repertum fuerat in domo Domini et in thesauris regis.",
+        "SYN": "И отдал Езекия все серебро, какое нашлось в доме Господнем и в сокровищницах дома царского.",
+        "NEO": "Ezéchias donna tout l’argent qui se trouvait dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w** et dans les trésors de la maison du roi.",
+        "NAB": "Hezekiah paid him all the funds there were in the temple of the LORD and in the palace treasuries.",
+        "VAT_ES": "Ezequías entregó entonces toda la plata que se encontraba en la Casa del Señor y en los tesoros de la casa del rey.",
+        "CEI": "Ezechia consegnò tutto il denaro che si trovava nel tempio e nei tesori della reggia."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "בָּ/עֵ֣ת הַ/הִ֗יא קִצַּ֨ץ חִזְקִיָּ֜ה אֶת דַּלְת֨וֹת הֵיכַ֤ל יְהוָה֙ וְ/אֶת הָ/אֹ֣מְנ֔וֹת אֲשֶׁ֣ר צִפָּ֔ה חִזְקִיָּ֖ה מֶ֣לֶךְ יְהוּדָ֑ה וַֽ/יִּתְּנֵ֖/ם לְ/מֶ֥לֶךְ אַשּֽׁוּר׃",
+        "LXX": "ἐν τῷ καιρῷ ἐκείνῳ συνέκοψεν Ἑζεκίας τὰς θύρας ναοῦ καὶ τὰ ἐστηριγμένα ἃ ἐχρύσωσεν Ἑζεκίας βασιλεὺς Ἰούδα, καὶ ἔδωκεν αὐτὰ βασιλεῖ Ἀσσυρίων.",
+        "VUL": "In tempore illo confregit Ezechias valvas templi Domini, et laminas auri quas ipse affixerat, et dedit eas regi Assyriorum.",
+        "SYN": "В то время снял Езекия _золото_ с дверей дома Господня и с дверных столбов, которые позолотил Езекия, царь Иудейский, и отдал его царю Ассирийскому.",
+        "NEO": "En ce temps-là Ezéchias, roi de Juda, brisa les portes du temple de \\+w Yahweh|strong=\"H3068\"\\+w** et les piliers qu’Ezéchias, roi de Juda, avait lui-même revêtus d’or, et il donna l’or au roi d’Assyrie.",
+        "NAB": "He broke up the door panels and the uprights of the temple of the LORD which he himself had ordered to be overlaid with gold, and gave the gold to the king of Assyria.",
+        "VAT_ES": "Fue en aquel tiempo cuando Ezequías desmanteló las puertas del Templo del Señor y los soportes que el mismo Ezequías, rey de Judá, había recubierto de metal, para entregarlos al rey de Asiria.",
+        "CEI": "In quel tempo Ezechia staccò dalle porte del tempio del Signore e dagli stipiti l'oro, di cui egli stesso re di Giuda li aveva rivestiti, e lo diede al re d'Assiria."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֣ח מֶֽלֶךְ אַשּׁ֡וּר אֶת תַּרְתָּ֥ן וְ/אֶת רַב סָרִ֣יס וְ/אֶת רַב שָׁקֵ֨ה מִן לָכִ֜ישׁ אֶל הַ/מֶּ֧לֶךְ חִזְקִיָּ֛הוּ בְּ/חֵ֥יל כָּבֵ֖ד יְרוּשָׁלִָ֑ם וַֽ/יַּעֲלוּ֙ וַ/יָּבֹ֣אוּ יְרוּשָׁלִַ֔ם וַ/יַּעֲל֣וּ וַ/יָּבֹ֗אוּ וַ/יַּֽעַמְדוּ֙ בִּ/תְעָלַת֙ הַ/בְּרֵכָ֣ה הָֽ/עֶלְיוֹנָ֔ה אֲשֶׁ֕ר בִּ/מְסִלַּ֖ת שְׂדֵ֥ה כוֹבֵֽס׃",
+        "LXX": "Καὶ ἀπέστειλεν βασιλεὺς Ἀσσυρίων τὸν Θανθὰν καὶ τὸν Ῥαφεὶς καὶ τὸν Ῥαψάκην ἐκ Λαχεὶς πρὸς τὸν βασιλέα Ἑζεκίαν ἐν δυνάμει βαρείᾳ ἐπὶ Ἰερουσαλήμ· καὶ ἀνέβησαν καὶ ἦλθον εἰς Ἰερουσαλήμ, καὶ ἔστησαν ἐν τῷ ὑδραγωγῷ τῆς κολυμβήθρας τῆς ἄνω ἥ ἐστιν ἐν τῇ ὁδῷ τοῦ ἀγροῦ τοῦ γναφέως.",
+        "VUL": "Misit autem rex Assyriorum Tharthan, et Rabsaris, et Rabsacen de Lachis ad regem Ezechiam cum manu valida Jerusalem : qui cum ascendissent, venerunt Jerusalem, et steterunt juxta aquæductum piscinæ superioris, quæ est in via Agrifullonis.",
+        "SYN": "И послал царь Ассирийский Тартана и Рабсариса и Рабсака из Лахиса к царю Езекии с большим войском в Иерусалим. И пошли, и пришли к Иерусалиму; и пошли, и пришли, и стали у водопровода верхнего пруда, который на дороге поля белильничьего.",
+        "NEO": "Le roi d’Assyrie envoya de Lachis à Jérusalem, vers le roi Ezéchias, son général en chef, son chef des eunuques et son grand échanson avec une troupe nombreuse ; ils montèrent et arrivèrent à Jérusalem. Lorsqu’ils furent montés et arrivés, ils s’arrêtèrent à l’aqueduc de l’étang supérieur, sur le chemin du champ du Foulon,",
+        "NAB": "The king of Assyria sent the general, the lord chamberlain, and the commander from Lachish with a great army to King Hezekiah at Jerusalem. They went up, and on their arrival in Jerusalem, stopped at the conduit of the upper pool on the highway of the fuller's field.",
+        "VAT_ES": "Desde Laquis, el rey de Asiria envió a Jerusalén, donde estaba Ezequías, al general en jefe, al jefe de los eunucos y al copero mayor, acompañados de una fuerte escolta. Ellos subieron y, al llegar a Jerusalén, se apostaron junto al canal de la piscina superior, sobre la seda del campo del Tintorero.",
+        "CEI": "Il re d'Assiria mandò il tartan, il capo delle guardie e il gran coppiere da Lachis a Gerusalemme, al re Ezechia, con un grande esercito. Costoro salirono e giunsero a Gerusalemme; si fermarono al canale della piscina superiore, sulla strada del campo del lavandaio."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַֽ/יִּקְרְאוּ֙ אֶל הַ/מֶּ֔לֶךְ וַ/יֵּצֵ֧א אֲלֵ/הֶ֛ם אֶלְיָקִ֥ים בֶּן חִלְקִיָּ֖הוּ אֲשֶׁ֣ר עַל הַ/בָּ֑יִת וְ/שֶׁבְנָה֙ הַ/סֹּפֵ֔ר וְ/יוֹאָ֥ח בֶּן אָסָ֖ף הַ/מַּזְכִּֽיר׃",
+        "LXX": "καὶ ἐβόησαν πρὸς Ἑζεκίαν, καὶ ἦλθον πρὸς αὐτὸν Ἐλιακεὶμ υἱὸς Χελκίου ὁ οἰκονόμος καὶ Σόμνας ὁ γραμματεὺς καὶ Ἰωσαφὰτ ὁ ἀναμιμνήσκων.",
+        "VUL": "Vocaveruntque regem : egressus est autem ad eos Eliacim filius Helciæ præpositus domus, et Sobna scriba, et Joahe filius Asaph a commentariis.",
+        "SYN": "И звали они царя. И вышел к ним Елиаким, сын Хелкиин, начальник дворца, и Севна писец, и Иоах, сын Асафов, дееписатель.",
+        "NEO": "et appelèrent le roi. Eliacim, fils d’Helcias, chef de la maison du roi, se rendit auprès d’eux, avec Sobna, le secrétaire, et Joahé, fils d’Asaph, l’archiviste.",
+        "NAB": "They called for the king, who sent out to them Eliakim, son of Hilkiah, the master of the palace; Shebnah the scribe; and the herald Joah, son of Asaph.",
+        "VAT_ES": "Llamaron al rey, y Eliaquim, hijo de Jilquías, el mayordomo de palacio, salió a su encuentro, junto con Sebná, el secretario, y Joaj, hijo de Asaf, el archivista.",
+        "CEI": "Essi chiesero del re e incontro a loro vennero Eliakìm figlio di Chelkia, il maggiordomo, Sebna lo scriba e Ioach figlio di Asaf, l'archivista."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֲלֵ/הֶם֙ רַב שָׁקֵ֔ה אִמְרוּ נָ֖א אֶל חִזְקִיָּ֑הוּ כֹּֽה אָמַ֞ר הַ/מֶּ֤לֶךְ הַ/גָּדוֹל֙ מֶ֣לֶךְ אַשּׁ֔וּר מָ֧ה הַ/בִּטָּח֛וֹן הַ/זֶּ֖ה אֲשֶׁ֥ר בָּטָֽחְתָּ׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτοὺς Ῥαψάκης Εἴπατε δὴ πρὸς Ἑζεκίαν Τάδε λέγει ὁ βασιλεὺς ὁ μέγας βασιλεὺς Ἀσσυρίων Τί ἡ πεποίθησις αὕτη ἣν πέποιθας;",
+        "VUL": "Dixitque ad eos Rabsaces : Loquimini Ezechiæ : Hæc dicit rex magnus, rex Assyriorum : Quæ est ista fiducia, qua niteris ?",
+        "SYN": "И сказал им Рабсак: скажите Езекии: так говорит царь великий, царь Ассирийский: что это за упование, на которое ты уповаешь?",
+        "NEO": "Le grand échanson leur dit : « Dites à Ezéchias : Ainsi dit le grand roi, le roi d’Assyrie : Quelle est cette confiance sur laquelle tu t’appuies ?",
+        "NAB": "The commander said to them, \"Tell Hezekiah, 'Thus says the great king, the king of Assyria: On what do you base this confidence of yours?",
+        "VAT_ES": "El copero mayor les dijo: «Digan a Ezequías: Así habla el gran rey, el rey de Asiria: &iquest;Qué motivo tienes para estar tan confiado?",
+        "CEI": "Il gran coppiere disse loro: \"Riferite a Ezechia: Dice il gran re, il re d'Assiria: Che fiducia è quella su cui ti appoggi?"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "אָמַ֨רְתָּ֙ אַךְ דְּבַר שְׂפָתַ֔יִם עֵצָ֥ה וּ/גְבוּרָ֖ה לַ/מִּלְחָמָ֑ה עַתָּה֙ עַל מִ֣י בָטַ֔חְתָּ כִּ֥י מָרַ֖דְתָּ בִּֽ/י׃",
+        "LXX": "εἶπας, πλὴν λόγοι χειλέων Βουλὴ καὶ δύναμις εἰς πόλεμον· νῦν οὖν τίνι πεποιθὼς ἠθέτησας ἐν ἐμοί;",
+        "VUL": "forsitan inisti consilium, ut præpares te ad prælium. In quo confidis, ut audeas rebellare ?",
+        "SYN": "Ты говорил только пустые слова: для войны нужны совет и сила. Ныне же на кого ты уповаешь, что отложился от меня?",
+        "NEO": "Tu as dit — paroles en l’air ! — J’ai conseil et force pour la guerre. Et maintenant, en qui te confies-tu pour te révolter contre moi ?",
+        "NAB": "Do you think mere words substitute for strategy and might in war? On whom, then, do you rely, that you rebel against me?",
+        "VAT_ES": "&iquest;Piensas que la estrategia y el valor para el combate son cuestión de palabras? &iquest;En quien confías para rebelarte contra mí",
+        "CEI": "Pensi forse che la semplice parola possa sostituire il consiglio e la forza nella guerra? Ora, in chi confidi ribellandoti a me?"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "עַתָּ֡ה הִנֵּ֣ה בָטַ֣חְתָּ לְּ/ךָ֡ עַל מִשְׁעֶנֶת֩ הַ/קָּנֶ֨ה הָ/רָצ֤וּץ הַ/זֶּה֙ עַל מִצְרַ֔יִם אֲשֶׁ֨ר יִסָּמֵ֥ךְ אִישׁ֙ עָלָ֔י/ו וּ/בָ֥א בְ/כַפּ֖/וֹ וּ/נְקָבָ֑/הּ כֵּ֚ן פַּרְעֹ֣ה מֶֽלֶךְ מִצְרַ֔יִם לְ/כָֽל הַ/בֹּטְחִ֖ים עָלָֽי/ו׃",
+        "LXX": "νῦν ἰδοὺ πέποιθας σαυτῷ ἐπὶ τὴν ῥάβδον τὴν καλαμίνην τὴν τεθλασμένην ταύτην, ἐπ’ Αἴγυπτον· ὃς ἂν στηριχθῇ ἀνὴρ ἐπ’ αὐτήν, καὶ εἰσελεύσεται εἰς τὴν χεῖρα αὐτοῦ, καὶ τρήσει αὐτήν· οὕτως Φαραὼ βασιλεὺς Αἰγύπτου πᾶσιν τοῖς πεποιθόσιν ἐπ’ αὐτόν.",
+        "VUL": "an speras in baculo arundineo atque confracto Ægypto, super quem, si incubuerit homo, comminutus ingredietur manum ejus, et perforabit eam ? sic est Pharao rex Ægypti omnibus qui confidunt in se.",
+        "SYN": "Вот, ты думаешь опереться на Египет, на эту трость надломленную, которая, если кто опрется на нее, войдет ему в руку и проколет ее. Таков фараон, царь Египетский, для всех уповающих на него.",
+        "NEO": "Voici que maintenant tu te fies à l’appui de ce roseau cassé — l’Égypte — qui pénètre et perce la main de quiconque s’appuie dessus : tel est Pharaon, roi d’Égypte, pour tous ceux qui se confient en lui.",
+        "NAB": "This Egypt, the staff on which you rely, is in fact a broken reed which pierces the hand of anyone who leans on it. That is what Pharaoh, king of Egypt, is to all who rely on him.",
+        "VAT_ES": "&iexcl;Ah, sí! Tú confías en el apoyo de esa caña quebrada, en Egipto, que perfora y atraviesa la mano de todo el que se apoya en él. Eso es el Faraón, rey de Egipto, para todos los que confían en él.",
+        "CEI": "Ecco, tu confidi su questo sostegno di canna spezzata, che è l'Egitto, che penetra nella mano, forandola, a chi vi si appoggia; tale è il faraone re di Egitto per chiunque confida in lui."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/כִי תֹאמְר֣וּ/ן אֵלַ֔/י אֶל יְהוָ֥ה אֱלֹהֵ֖י/נוּ בָּטָ֑חְנוּ הֲ/לוֹא ה֗וּא אֲשֶׁ֨ר הֵסִ֤יר חִזְקִיָּ֨הוּ֙ אֶת בָּמֹתָ֣י/ו וְ/אֶת מִזְבְּחֹתָ֔י/ו וַ/יֹּ֤אמֶר לִֽ/יהוּדָה֙ וְ/לִ/יר֣וּשָׁלִַ֔ם לִ/פְנֵי֙ הַ/מִּזְבֵּ֣חַ הַ/זֶּ֔ה תִּֽשְׁתַּחֲו֖וּ בִּ/ירוּשָׁלִָֽם׃",
+        "LXX": "καὶ ὅτι εἶπας πρὸς μέ Ἐπὶ Κύριον θεὸν πεποίθαμεν· οὐχὶ αὐτὸς οὗτος ἀπέστησεν Ἑζεκίας τὰ ὑψηλὰ αὐτοῦ καὶ τὰ θυσιαστήρια αὐτοῦ, καὶ εἶπεν τῷ Ἰούδᾳ καὶ τῇ Ἰερουσαλήμ Ἐνώπιον τοῦ θυσιαστηρίου τούτου προσκυνήσετε ἐν Ἰερουσαλήμ;",
+        "VUL": "Quod si dixeritis mihi : In Domino Deo nostro habemus fiduciam : nonne iste est, cujus abstulit Ezechias excelsa et altaria, et præcepit Judæ et Jerusalem : Ante altare hoc adorabitis in Jerusalem ?",
+        "SYN": "А если вы скажете мне: \"на Господа Бога нашего мы уповаем\", то на того ли, которого высоты и жертвенники отменил Езекия, и сказал Иуде и Иерусалиму: \"пред сим только жертвенником поклоняйтесь в Иерусалиме\"?",
+        "NEO": "Peut-être me direz-vous : C’est en \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, que nous avons confiance !... Mais n’est-ce pas lui dont Ezéchias a fait disparaître les hauts lieux et les autels, en disant à Juda et à Jérusalem : Vous vous prosternerez devant cet autel, à Jérusalem ?",
+        "NAB": "But if you say to me, We rely on the LORD, our God, is not he the one whose high places and altars Hezekiah has removed, commanding Judah and Jerusalem to worship before this altar in Jerusalem?'",
+        "VAT_ES": "Seguramente, tú me dirás: «Nosotros confiamos en el Señor, nuestro Dios». Pero &iquest;no fue acaso Ezequías el que suprimió todos los lugares altos y los altares dedicados a él, diciendo a la gente de Judá y de Jerusalén: «Sólo delante de este altar, en Jerusalén, ustedes deberán postrarse»?",
+        "CEI": "Se mi dite: Noi confidiamo nel Signore nostro Dio, non è forse quello stesso del quale Ezechia distrusse le alture e gli altari, ordinando alla gente di Giuda e di Gerusalemme: Vi prostrerete soltanto davanti a questo altare in Gerusalemme?"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/עַתָּה֙ הִתְעָ֣רֶב נָ֔א אֶת אֲדֹנִ֖/י אֶת מֶ֣לֶךְ אַשּׁ֑וּר וְ/אֶתְּנָ֤ה לְ/ךָ֙ אַלְפַּ֣יִם סוּסִ֔ים אִם תּוּכַ֕ל לָ֥/תֶת לְ/ךָ֖ רֹכְבִ֥ים עֲלֵי/הֶֽם׃",
+        "LXX": "καὶ νῦν μίχθητε δὴ τῷ κυρίῳ μου βασιλεῖ Ἀσσυρίων, καὶ δώσω σοι δισχιλίους ἵππους, εἰ δυνήσῃ δοῦναι σεαυτῷ ἐπιβάτας ἐπ’ αὐτούς.",
+        "VUL": "Nunc igitur transite ad dominum meum regem Assyriorum, et dabo vobis duo millia equorum, et videte an habere valeatis ascensores eorum.",
+        "SYN": "Итак вступи в союз с господином моим царем Ассирийским: я дам тебе две тысячи коней, можешь ли достать себе всадников на них?",
+        "NEO": "Maintenant, fais un accord avec mon maître, le roi d’Assyrie : je te donnerai deux mille chevaux, si tu peux fournir des cavaliers pour les monter !...",
+        "NAB": "\"Now, make a wager with my lord, the king of Assyria: I will give you two thousand horses if you can put riders on them.",
+        "VAT_ES": "&iexcl;Y bien! Haz una apuesta con mi señor, el rey de Asiria: &iexcl;Yo te daré dos mil caballos, si puedes conseguir bastantes hombres para montarlos!",
+        "CEI": "Ora vieni al mio signore, re d'Assiria; io ti darò duemila cavalli, se potrai procurarti cavalieri per essi."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/אֵ֣יךְ תָּשִׁ֗יב אֵ֠ת פְּנֵ֨י פַחַ֥ת אַחַ֛ד עַבְדֵ֥י אֲדֹנִ֖/י הַ/קְּטַנִּ֑ים וַ/תִּבְטַ֤ח לְ/ךָ֙ עַל מִצְרַ֔יִם לְ/רֶ֖כֶב וּ/לְ/פָרָשִֽׁים׃",
+        "LXX": "καὶ πῶς ἀποστρέψετε τὸ πρόσωπον τοπάρχου ἑνὸς τῶν δούλων τοῦ κυρίου μου τῶν ἐλαχίστων; καὶ ἤλπισας σαυτῷ ἐπ’ Αἴγυπτον εἰς ἅρματα καὶ ἱππεῖς.",
+        "VUL": "Et quomodo potestis resistere ante unum satrapam de servis domini mei minimis ? an fiduciam habes in Ægypto propter currus et equites ?",
+        "SYN": "Как тебе одолеть и одного вождя из малейших слуг господина моего? И уповаешь на Египет ради колесниц и коней?",
+        "NEO": "Comment repousserais-tu un seul chef d’entre les moindres serviteurs de mon maître ? Aussi mets-tu ta confiance dans l’Égypte pour les chars et pour les cavaliers.",
+        "NAB": "How then can you repulse even one of the least servants of my lord, relying as you do on Egypt for chariots and horsemen?",
+        "VAT_ES": "&iquest;Cómo harías retroceder a uno solo de los más insignificantes servidores de mi señor? &iexcl;Pero tú confías en Egipto para tener carros de guerra y soldados!",
+        "CEI": "Come potresti fare retrocedere uno solo dei più piccoli servi del mio signore? Eppure tu confidi nell'Egitto per i carri e i cavalieri."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "עַתָּה֙ הֲ/מִ/בַּלְעֲדֵ֣י יְהוָ֔ה עָלִ֛יתִי עַל הַ/מָּק֥וֹם הַ/זֶּ֖ה לְ/הַשְׁחִת֑/וֹ יְהוָה֙ אָמַ֣ר אֵלַ֔/י עֲלֵ֛ה עַל הָ/אָ֥רֶץ הַ/זֹּ֖את וְ/הַשְׁחִיתָֽ/הּ׃",
+        "LXX": "καὶ νῦν μὴ ἄνευ Κυρίου ἀνέβημεν ἐπὶ τὸν τόπον τοῦτον τοῦ διαφθεῖραι αὐτόν; Κύριος εἶπεν πρὸς μέ Ἀνάβηθι ἐπὶ τὴν γῆν ταύτην καὶ διάφθειρον αὐτήν.",
+        "VUL": "Numquid sine Domini voluntate ascendi ad locum istum, ut demolirer eum ? Dominus dixit mihi : Ascende ad terram hanc, et demolire eam.",
+        "SYN": "Притом же разве я без воли Господней пошел на место сие, чтобы разорить его? Господь сказал мне: \"пойди на землю сию и разори ее\".",
+        "NEO": "Maintenant, est-ce sans la volonté de \\+w Yahweh|strong=\"H3068\"\\+w** que je suis monté contre ce lieu pour le détruire ? \\+w Yahweh|strong=\"H3068\"\\+w** m’a dit : « Monte contre ce pays et détruis-le. »",
+        "NAB": "Was it without the LORD'S will that I have come up to destroy this place? The LORD said to me, 'Go up and destroy that land!'\"",
+        "VAT_ES": "&iquest;Acaso he venido a arrasar este país sin el consentimiento del Señor? Fue el Señor quien me dijo: &iexcl;Sube contra ese país y arrásalo!».",
+        "CEI": "Ora, non è forse secondo il volere del Signore che io sono venuto contro questo paese per distruggerlo? Il Signore mi ha detto: Và contro questo paese e distruggilo\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֶלְיָקִ֣ים בֶּן חִ֠לְקִיָּהוּ וְ/שֶׁבְנָ֨ה וְ/יוֹאָ֜ח אֶל רַב שָׁקֵ֗ה דַּבֶּר נָ֤א אֶל עֲבָדֶ֨י/ךָ֙ אֲרָמִ֔ית כִּ֥י שֹׁמְעִ֖ים אֲנָ֑חְנוּ וְ/אַל תְּדַבֵּ֤ר עִמָּ֨/נוּ֙ יְהוּדִ֔ית בְּ/אָזְנֵ֣י הָ/עָ֔ם אֲשֶׁ֖ר עַל הַ/חֹמָֽה׃",
+        "LXX": "καὶ εἶπεν Ἐλιακεὶμ υἱὸς Χελκείου καὶ Σόμνας καὶ Ἰώας πρὸς Ῥαψάκην Λάλησον δὴ πρὸς τοὺς παῖδάς σου Συριστί· ἀκούομεν ἡμεῖς, καὶ οὐ λαλήσεις μεθ’ ἡμῶν Ἰουδαιστί· καὶ ἵνα τί λαλεῖς ἐν τοῖς ὠσὶν τοῦ λαοῦ τοῦ ἐπὶ τοῦ τείχους;",
+        "VUL": "Dixerunt autem Eliacim filius Helciæ, et Sobna, et Joahe Rabsaci : Precamur ut loquaris nobis servis tuis syriace : siquidem intelligimus hanc linguam : et non loquaris nobis judaice, audiente populo qui est super murum.",
+        "SYN": "И сказал Елиаким, сын Хелкиин, и Севна и Иоах Рабсаку: говори рабам твоим по-арамейски, потому что понимаем мы, а не говори с нами по-иудейски вслух народа, который на стене.",
+        "NEO": "Eliacim, fils d’Helcias, Sobna et Joahé dirent au grand échanson : « Parle à tes serviteurs en araméen, car nous l’entendons ; et ne nous parle pas en langue judaïque, aux oreilles du peuple qui est sur la muraille. »",
+        "NAB": "Then Eliakim, son of Hilkiah, and Shebnah and Joah said to the commander: \"Please speak to your servants in Aramaic; we understand it. Do not speak to us in Judean within earshot of the people who are on the wall.\"",
+        "VAT_ES": "Eliaquim, hijo de Jilquías, Sebná y Joaj dijeron al copero mayor: «Por favor, háblanos en arameo, porque nosotros lo entendemos. No nos hables en hebreo, a oídos del pueblo que está sobre la muralla».",
+        "CEI": "Eliakìm figlio di Chelkia, Sebna e Ioach risposero al gran coppiere: \"Parla, ti prego, ai tuoi servi in aramaico, perché noi lo comprendiamo; non parlare in ebraico, mentre il popolo che è sulle mura ascolta\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֲלֵי/הֶ֜ם רַב שָׁקֵ֗ה הַ/עַ֨ל אֲדֹנֶ֤י/ךָ וְ/אֵלֶ֨י/ךָ֙ שְׁלָחַ֣/נִי אֲדֹנִ֔/י לְ/דַבֵּ֖ר אֶת הַ/דְּבָרִ֣ים הָ/אֵ֑לֶּה הֲ/לֹ֣א עַל הָ/אֲנָשִׁ֗ים הַ/יֹּֽשְׁבִים֙ עַל הַ֣/חֹמָ֔ה לֶ/אֱכֹ֣ל אֶת חרי/הם צוֹאָתָ֗/ם וְ/לִ/שְׁתּ֛וֹת אֶת שיני/הם מימֵ֥י רַגְלֵי/הֶ֖ם עִמָּ/כֶֽם׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτοὺς Ῥαψάκης Μὴ ἐπὶ τὸν κύριόν σου καὶ πρὸς σὲ ἀπέστειλέν με ὁ κύριός μου λαλῆσαι τοὺς λόγους τούτους; οὐχὶ ἐπὶ τοὺς ἄνδρας τοὺς καθημένους ἐπὶ τοῦ τείχους, τοῦ φαγεῖν τὴν κόπρον αὐτῶν καὶ πιεῖν τὸ οὖρον αὐτῶν μεθ’ ὑμῶν ἅμα;",
+        "VUL": "Responditque eis Rabsaces, dicens : Numquid ad dominum tuum, et ad te misit me dominus meus, ut loquerer sermones hos, et non potius ad viros qui sedent super murum, ut comedant stercora sua, et bibant urinam suam vobiscum ?",
+        "SYN": "И сказал им Рабсак: разве _только_ к господину твоему и к тебе послал меня господин мой сказать сии слова? Нет, также и к людям, которые сидят на стене, чтобы есть помет свой и пить мочу свою с вами.",
+        "NEO": "Le grand échanson leur répondit : « Est-ce à ton maître et à toi que mon maître m’a envoyé dire ces paroles ? N’est-ce pas à ces hommes assis sur la muraille, pour manger leurs excréments et pour boire leur urine avec vous ? »",
+        "NAB": "But the commander replied: \"Was it to your master and to you that my lord sent me to speak these words? Was it not rather to the men sitting on the wall, who, with you, will have to eat their own excrement and drink their urine?\"",
+        "VAT_ES": "Pero el copero mayor les replicó» «&iquest;Acaso mi señor me envió a decir estas cosas a tu señor y a ti? &iquest;No están dirigidas a esos hombres apostados sobre la muralla, que tendrán que comer sus excrementos y beber su orina, igual que ustedes?».",
+        "CEI": "Il gran coppiere replicò: \"Forse io sono stato inviato al tuo signore e a te dal mio signore per pronunziare tali parole e non piuttosto agli uomini che stanno sulle mura, i quali saranno ridotti a mangiare i loro escrementi e a bere la loro urina con voi?\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַֽ/יַּעֲמֹד֙ רַב שָׁקֵ֔ה וַ/יִּקְרָ֥א בְ/קוֹל גָּד֖וֹל יְהוּדִ֑ית וַ/יְדַבֵּ֣ר וַ/יֹּ֔אמֶר שִׁמְע֛וּ דְּבַר הַ/מֶּ֥לֶךְ הַ/גָּד֖וֹל מֶ֥לֶךְ אַשּֽׁוּר׃",
+        "LXX": "καὶ ἔστη Ῥαψάκης καὶ ἐβόησεν μεγάλῃ Ἰουδαιστί· καὶ ἐλάλησεν καὶ εἶπεν Ἀκούσατε τοὺς λόγους τοῦ μεγάλου βασιλέως Ἀσσυρίων",
+        "VUL": "Stetit itaque Rabsaces, et exclamavit voce magna judaice, et ait : Audite verba regis magni, regis Assyriorum.",
+        "SYN": "И встал Рабсак и возгласил громким голосом по-иудейски, и говорил, и сказал: слушайте слово царя великого, царя Ассирийского!",
+        "NEO": "Alors le grand échanson, s’étant avancé, cria à haute voix en langue judaïque et tint ce langage : « Ecoutez la parole du grand roi, du roi d’Assyrie !",
+        "NAB": "Then the commander stepped forward and cried out in a loud voice in Judean, \"Listen to the words of the great king, the king of Assyria.",
+        "VAT_ES": "Entonces el copero mayor, puesto de pie, gritó bien fuerte en hebreo: «Escuchen la palabra del gran rey, el rey de Asiria:",
+        "CEI": "Il gran coppiere allora si alzò e gridò a gran voce in ebraico: \"Udite la parola del gran re, del re d'Assiria:"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "כֹּ֚ה אָמַ֣ר הַ/מֶּ֔לֶךְ אַל יַשִּׁ֥יא לָ/כֶ֖ם חִזְקִיָּ֑הוּ כִּי לֹ֣א יוּכַ֔ל לְ/הַצִּ֥יל אֶתְ/כֶ֖ם מִ/יָּדֽ/וֹ׃",
+        "LXX": "Τάδε λέγει ὁ βασιλεύς Μὴ ἐπαιρέτω ὑμᾶς Ἑζεκίας λόγοις, ὅτι οὐ μὴ δύνηται ὑμᾶς ἐξελέσθαι ἐκ χειρὸς αὐτοῦ.",
+        "VUL": "Hæc dicit rex : Non vos seducat Ezechias : non enim poterit eruere vos de manu mea :",
+        "SYN": "Так говорит царь: пусть не обольщает вас Езекия, ибо он не может вас спасти от руки моей;",
+        "NEO": "Ainsi dit le roi : Qu’Ezéchias ne vous abuse pas, car il ne pourra vous délivrer de sa main.",
+        "NAB": "Thus says the king: 'Do not let Hezekiah deceive you, since he cannot deliver you out of my hand.",
+        "VAT_ES": "Así habla el rey: Que Ezequías no los engañe, porque él no podrá librarnos de mi mano.",
+        "CEI": "Dice il re: Non vi inganni Ezechia, poiché non potrà liberarvi dalla mia mano."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/אַל יַבְטַ֨ח אֶתְ/כֶ֤ם חִזְקִיָּ֨הוּ֙ אֶל יְהוָ֣ה לֵ/אמֹ֔ר הַצֵּ֥ל יַצִּילֵ֖/נוּ יְהוָ֑ה וְ/לֹ֤א תִנָּתֵן֙ אֶת הָ/עִ֣יר הַ/זֹּ֔את בְּ/יַ֖ד מֶ֥לֶךְ אַשּֽׁוּר׃",
+        "LXX": "καὶ μὴ ἐπελπιζέτω ὑμᾶς Ἑζεκίας πρὸς Κὺριον λέγων Ἐξαιρούμενος ἐξελεῖται Κύριος· οὐ μὴ παραδοθῇ ἡ πόλις αὕτη ἐν χειρὶ βασιλέως Ἀσσυρίων.",
+        "VUL": "neque fiduciam vobis tribuat super Dominum, dicens : Eruens liberabit nos Dominus, et non tradetur civitas hæc in manu regis Assyriorum.",
+        "SYN": "и пусть не обнадеживает вас Езекия Господом, говоря: \"спасет нас Господь и не будет город сей отдан в руки царя Ассирийского\".",
+        "NEO": "Qu’Ezéchias ne vous persuade pas de vous confier en \\+w Yahweh|strong=\"H3068\"\\+w**, en disant : \\+w Yahweh|strong=\"H3068\"\\+w** nous délivrera sûrement, et cette ville ne sera pas livrée entre les mains du roi d’Assyrie.",
+        "NAB": "Let not Hezekiah induce you to rely on the LORD, saying, The LORD will surely save us; this city will not be handed over to the king of Assyria.",
+        "VAT_ES": "Y que Ezequías no los induzca a confiar en el Señor, diciendo: Seguramente el Señor nos librará, y esta ciudad no caerá en manos del rey de Asiria.",
+        "CEI": "Ezechia non vi induca a confidare nel Signore, dicendo: Certo, il Signore ci libererà, questa città non sarà messa nelle mani del re d'Assiria."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "אַֽל תִּשְׁמְע֖וּ אֶל חִזְקִיָּ֑הוּ כִּי֩ כֹ֨ה אָמַ֜ר מֶ֣לֶךְ אַשּׁ֗וּר עֲשֽׂוּ אִתִּ֤/י בְרָכָה֙ וּ/צְא֣וּ אֵלַ֔/י וְ/אִכְל֤וּ אִישׁ גַּפְנ/וֹ֙ וְ/אִ֣ישׁ תְּאֵֽנָת֔/וֹ וּ/שְׁת֖וּ אִ֥ישׁ מֵֽי בוֹרֽ/וֹ׃",
+        "LXX": "μὴ ἀκούετε Ἑζεκίου, ὅτι τάδε λέγει ὁ βασιλεὺς Ἀσσυρίων Ποιήσατε μετ’ ἐμοῦ εὐλογίαν καὶ ἐξέλθατε πρὸς μέ, καὶ πίεται ἀνὴρ τὴν ἄμπελον αὐτοῦ, καὶ ἀνὴρ τὴν συκῆν αὐτοῦ φάγεται, καὶ πίεται ὕδωρ τοῦ λάκκου αὐτοῦ,",
+        "VUL": "Nolite audire Ezechiam. Hæc enim dicit rex Assyriorum : Facite mecum quod vobis est utile, et egredimini ad me : et comedet unusquisque de vinea sua, et de ficu sua : et bibetis aquas de cisternis vestris,",
+        "SYN": "Не слушайте Езекии. Ибо так говорит царь Ассирийский: примиритесь со мною и выйдите ко мне, и пусть каждый ест _плоды_ виноградной лозы своей и смоковницы своей, и пусть каждый пьет воду из своего колодезя,",
+        "NEO": "N’écoutez pas Ezéchias, car ainsi dit le roi d’Assyrie : Faites la paix avec moi et rendez-vous à moi ; et que chacun de vous mange de sa vigne et chacun de son figuier, et que chacun boive l’eau de son puits,",
+        "NAB": "Do not listen to Hezekiah, for the king of Assyria says: Make peace with me and surrender! Then each of you will eat of his own vine and of his own fig-tree, and drink the water of his own cistern,",
+        "VAT_ES": "No le hagan caso a Ezequías, porque así habla el rey de Asiria: Hagan las paces conmigo y ríndanse. Así cada uno de ustedes comerá los frutos de su viña y de su higuera, y beberá el agua de su pozo,",
+        "CEI": "Non ascoltate Ezechia, poiché dice il re d'Assiria: Fate la pace con me e arrendetevi; allora ognuno potrà mangiare i frutti della sua vigna e dei suoi fichi, ognuno potrà bere l'acqua della sua cisterna,"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "עַד בֹּאִ/י֩ וְ/לָקַחְתִּ֨י אֶתְ/כֶ֜ם אֶל אֶ֣רֶץ כְּ/אַרְצְ/כֶ֗ם אֶרֶץ֩ דָּגָ֨ן וְ/תִיר֜וֹשׁ אֶ֧רֶץ לֶ֣חֶם וּ/כְרָמִ֗ים אֶ֣רֶץ זֵ֤ית יִצְהָר֙ וּ/דְבַ֔שׁ וִֽ/חְי֖וּ וְ/לֹ֣א תָמֻ֑תוּ וְ/אַֽל תִּשְׁמְעוּ֙ אֶל חִזְקִיָּ֔הוּ כִּֽי יַסִּ֤ית אֶתְ/כֶם֙ לֵ/אמֹ֔ר יְהוָ֖ה יַצִּילֵֽ/נוּ׃",
+        "LXX": "ἕως ἔλθω καὶ λάβω ὑμᾶς εἰς γῆν ὡς γῆ ὑμῶν, σίτου καὶ οἴνου καὶ ἄρτου καὶ ἀμπελώνων, γῆ ἐλαίας ἐλαίου καὶ μέλιτος· καὶ ζήσετε καὶ οὐ μὴ ἀποθάνητε. καὶ μὴ ἀκούετε Ἑζεκίου, ὅτι ἀπατᾷ ὑμᾶς λέγων Κύριος ῥύσεται ὑμᾶς.",
+        "VUL": "donec veniam, et transferam vos in terram quæ similis est terræ vestræ, in terram fructiferam, et fertilem vini, terram panis et vinearum, terram olivarum et olei ac mellis : et vivetis, et non moriemini. Nolite audire Ezechiam, qui vos decipit, dicens : Dominus liberabit nos.",
+        "SYN": "пока я не приду и не возьму вас в землю такую же, как и ваша земля, в землю хлеба и вина, в землю плодов и виноградников, в землю масличных дерев и меда, и будете жить, и не умрете. Не слушайте же Езекии, который обольщает вас, говоря: \"Господь спасет нас\".",
+        "NEO": "jusqu’à ce que je vienne et que je vous emmène dans un pays comme le vôtre, un pays de blé et de vin, un pays de pain et de vignes, un pays d’oliviers à huile et de miel, afin que vous viviez et ne mourriez point. N’écoutez donc pas Ezéchias, car il vous abuse en disant : \\+w Yahweh|strong=\"H3068\"\\+w** nous délivrera.",
+        "NAB": "until I come to take you to a land like your own, a land of grain and wine, of bread and orchards, of olives, oil and fruit syrup. Choose life, not death. Do not listen to Hezekiah when he would seduce you by saying, The LORD will rescue us.",
+        "VAT_ES": "hasta que venga yo y los lleve a un país como el de ustedes, un país de trigo y vino nuevo, un país de pan y viñedos, un país de olivares, de aceite fresco y de miel; así ustedes vivirán y no morirán. Pero no escuchen a Ezequías, porque él los seduce, diciendo: «El Señor nos librará».",
+        "CEI": "finché io non venga per condurvi in un paese come il vostro, in un paese che produce frumento e mosto, in un paese ricco di pane e di vigne, in un paese di ulivi e di miele; voi vivrete e non morirete. Non ascoltate Ezechia che vi inganna, dicendovi: Il Signore ci libererà!"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "הַ/הַצֵּ֥ל הִצִּ֛ילוּ אֱלֹהֵ֥י הַ/גּוֹיִ֖ם אִ֣ישׁ אֶת אַרְצ֑/וֹ מִ/יַּ֖ד מֶ֥לֶךְ אַשּֽׁוּר׃",
+        "LXX": "μὴ ῥυόμενοι ἐρύσαντο οἱ θεοὶ τῶν ἐθνῶν ἕκαστος τὴν ἑαυτοῦ χώραν ἐκ χειρός βασιλέως Ἀσσυρίων;",
+        "VUL": "Numquid liberaverunt dii gentium terram suam de manu regis Assyriorum ?",
+        "SYN": "Спасли ли боги народов, каждый свою землю, от руки царя Ассирийского?",
+        "NEO": "Est-ce que les dieux des nations ont délivré chacun leur pays de la main du roi d’Assyrie ?",
+        "NAB": "Has any of the gods of the nations ever rescued his land from the hand of the king of Assyria?",
+        "VAT_ES": "&iquest;Acaso los dioses de las naciones han librado a sus países de la mano del rey de Asiria?",
+        "CEI": "Forse gli dei delle nazioni hanno liberato ognuno il proprio paese dalla mano del re d'Assiria?"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "אַיֵּה֩ אֱלֹהֵ֨י חֲמָ֜ת וְ/אַרְפָּ֗ד אַיֵּ֛ה אֱלֹהֵ֥י סְפַרְוַ֖יִם הֵנַ֣ע וְ/עִוָּ֑ה כִּֽי הִצִּ֥ילוּ אֶת שֹׁמְר֖וֹן מִ/יָּדִֽ/י׃",
+        "LXX": "ποῦ ἐστιν ὁ θεὸς Αἱμὰθ καὶ Ἀρφάλ; ποῦ ἐστιν ὁ θεὸς Σεπφαρουμάιν; καὶ ὅτι ἐξείλαντο Σαμάρειαν ἐκ χειρός μου;",
+        "VUL": "ubi est deus Emath, et Arphad ? ubi est deus Sepharvaim, Ana, et Ava ? numquid liberaverunt Samariam de manu mea ?",
+        "SYN": "Где боги Емафа и Арпада? Где боги Сепарваима, Ены и Иввы? Спасли ли они Самарию от руки моей?",
+        "NEO": "Où sont les dieux d’Emath et d’Arphad ? Où sont les dieux de Sépharvaïm, d’Ana et d’Ava ? Ont-ils délivré Samarie de ma main ?",
+        "NAB": "Where are the gods of Hamath and Arpad? Where are the gods of Sepharvaim, Hena, and Avva? Where are the gods of the land of Samaria?",
+        "VAT_ES": "&iquest;Dónde están los dioses de Sefarvaim, de Hená y de Ivá? &iquest;Dónde los dioses del país de Samaría?",
+        "CEI": "Dove sono gli dei di Amat e di Arpad? Dove sono gli dei di Sefarvàim, di Ena e di Ivva? Hanno essi forse liberato Samaria dalla mia mano?"
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "מִ֚י בְּ/כָל אֱלֹהֵ֣י הָֽ/אֲרָצ֔וֹת אֲשֶׁר הִצִּ֥ילוּ אֶת אַרְצָ֖/ם מִ/יָּדִ֑/י כִּי יַצִּ֧יל יְהוָ֛ה אֶת יְרוּשָׁלִַ֖ם מִ/יָּדִֽ/י׃",
+        "LXX": "τίς ἐν πᾶσιν τοῖς θεοῖς τῶν γαιῶν οἳ ἐξείλαντο τὰς γᾶς αὐτῶν ἐκ χειρός μου, ὃτι ἐξελεῖται Κύριος τὴν Ἰερουσαλὴμ ἐκ χειρός μου;",
+        "VUL": "Quinam illi sunt in universis diis terrarum, qui eruerunt regionem suam de manu mea, ut possit eruere Dominus Jerusalem de manu mea ?",
+        "SYN": "Кто из всех богов земель сих спас землю свою от руки моей? Так неужели Господь спасет Иерусалим от руки моей?",
+        "NEO": "Quels sont, parmi tous les dieux des pays, ceux qui ont délivré leur pays de ma main, pour que \\+w Yahweh|strong=\"H3068\"\\+w** puisse délivrer Jérusalem de ma main ? »",
+        "NAB": "Which of the gods for all these lands ever rescued his land from my hand? Will the LORD then rescue Jerusalem from my hand?'\"",
+        "VAT_ES": "Entre todos los dioses de esos países, &iquest;hubo alguno que librara de mi mano a su propio país, para que el Señor libre de mi mano a Jerusalén?».",
+        "CEI": "Quali mai, fra tutti gli dei di quelle nazioni, hanno liberato il loro paese dalla mia mano? Potrà forse il Signore liberare Gerusalemme dalla mia mano?\"."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וְ/הֶחֱרִ֣ישׁוּ הָ/עָ֔ם וְ/לֹֽא עָנ֥וּ אֹת֖/וֹ דָּבָ֑ר כִּי מִצְוַ֨ת הַ/מֶּ֥לֶךְ הִ֛יא לֵ/אמֹ֖ר לֹ֥א תַעֲנֻֽ/הוּ׃",
+        "LXX": "καὶ ἐκώφευσαν καὶ οὐκ ἀπεκρίθησαν αὐτῷ λόγον, ὅτι ἐντολὴ τοῦ βασιλέως λέγων Οὐκ ἀποκριθήσεσθε αὐτῷ.",
+        "VUL": "Tacuit itaque populus, et non respondit ei quidquam : siquidem præceptum regis acceperant ut non responderent ei.",
+        "SYN": "И молчал народ и не отвечали ему ни слова, потому что было приказание царя: \"не отвечайте ему\".",
+        "NEO": "Le peuple se tut et ne lui répondit pas un mot, car le roi avait donné cet ordre : « Vous ne lui répondrez pas. »",
+        "NAB": "But the people remained silent and did not answer him one word, for the king had ordered them not to answer him.",
+        "VAT_ES": "El pueblo guardó silencio y no le respondió ni una sola palabra, porque esta era la orden del rey: «No le respondan nada».",
+        "CEI": "Quelli tacquero e non gli risposero neppure una parola, perché l'ordine del re era: \"Non rispondete loro\"."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֣א אֶלְיָקִ֣ים בֶּן חִלְקִיָּ֣ה אֲשֶׁר עַל הַ֠/בַּיִת וְ/שֶׁבְנָ֨א הַ/סֹּפֵ֜ר וְ/יוֹאָ֨ח בֶּן אָסָ֧ף הַ/מַּזְכִּ֛יר אֶל חִזְקִיָּ֖הוּ קְרוּעֵ֣י בְגָדִ֑ים וַ/יַּגִּ֣דוּ ל֔/וֹ דִּבְרֵ֖י רַב שָׁקֵֽה׃",
+        "LXX": "καὶ εἰσῆλθεν Ἐλιακεὶμ υἱὸς Χελκείου ὁ οἰκονόμος καὶ Σόμνας ὁ γραμματεὺς καὶ Ἰώας υἱὸς Σαφὰν ὁ ἀναμιμνήσκων πρὸς τὸν Ἐζεκίαν διερρηχότες τὰ ἱμάτια, καὶ ἀνήγγειλαν αὐτῷ τοὺς λόγους Ῥαψάκου.",
+        "VUL": "Venitque Eliacim filius Helciæ, præpositus domus, et Sobna scriba, et Joahe filius Asaph a commentariis ad Ezechiam scissis vestibus, et nuntiaverunt ei verba Rabsacis.",
+        "SYN": "И пришел Елиаким, сын Хелкиин, начальник дворца, и Севна писец и Иоах, сын Асафов, дееписатель, к Езекии в разодранных одеждах, и пересказали ему слова Рабсаковы.",
+        "NEO": "Et Eliacim, fils d’Helcias, chef de la maison du roi, Sobna, le secrétaire, et Joahé, fils d’Asaph, l’archiviste, vinrent auprès d’Ezéchias, les vêtements déchirés, et lui rapportèrent les paroles du grand échanson.",
+        "NAB": "Then the master of the palace, Eliakim, son of Hilkiah, Shebnah the scribe, and the herald Joah, son of Asaph, came to Hezekiah with their garments torn, and reported to him what the commander had",
+        "VAT_ES": "Eliaquim, hijo de Jilquías, el mayordomo de palacio, Sebná, el secretario, y Joaj, hijo de Asaf, el archivista, se presentaron ante Ezequías con sus vestiduras desgarradas, y le informaron de las palabras del copero mayor.",
+        "CEI": "Eliakìm figlio di Chelkia, il maggiordomo, Sebna lo scriba e Ioach figlio di Asaf, l'archivista, si presentarono a Ezechia con le vesti stracciate e gli riferirono le parole del gran coppiere."
+      }
+    }
+  }
+}

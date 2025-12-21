@@ -1,0 +1,321 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "CANT_002",
+  "book_key": "CANT",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אֲנִי֙ חֲבַצֶּ֣לֶת הַ/שָּׁר֔וֹן שֽׁוֹשַׁנַּ֖ת הָ/עֲמָקִֽים׃",
+        "LXX": "ἐγὼ ἄνθος τοῦ πεδίου, κρίνον τῶν κοιλάδων.",
+        "VUL": "[Ego flos campi,/ et lilium convallium./",
+        "SYN": "Я нарцисс Саронский, лилия долин!",
+        "NEO": "Je suis le narcisse de Saron, le lis des vallées.",
+        "NAB": "I am a flower of Sharon, a lily of the valley.",
+        "VAT_ES": "Yo soy el narciso de Sarón, el lirio de los valles.",
+        "CEI": "Io sono un narciso di Saron, un giglio delle valli."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כְּ/שֽׁוֹשַׁנָּה֙ בֵּ֣ין הַ/חוֹחִ֔ים כֵּ֥ן רַעְיָתִ֖/י בֵּ֥ין הַ/בָּנֽוֹת׃",
+        "LXX": "Ὡς κρίνον ἐν μέσῳ ἀκανθῶν, οὕτως ἡ πλησίον μου ἀνὰ μέσον τῶν θυγατέρων.",
+        "VUL": "<Sponsus>Sicut lilium inter spinas,/ sic amica mea inter filias./",
+        "SYN": "Что лилия между тернами, то возлюбленная моя между девицами.",
+        "NEO": "Comme un lis au milieu des épines, telle est mon amie parmi les jeunes filles.",
+        "NAB": "G As a lily among thorns, so is my beloved among women.",
+        "VAT_ES": "Como un lirio entre los cardos es mi amada entre las jóvenes.",
+        "CEI": "Come un giglio fra i cardi, così la mia amata tra le fanciulle."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כְּ/תַפּ֨וּחַ֙ בַּ/עֲצֵ֣י הַ/יַּ֔עַר כֵּ֥ן דּוֹדִ֖/י בֵּ֣ין הַ/בָּנִ֑ים בְּ/צִלּ/וֹ֙ חִמַּ֣דְתִּי וְ/יָשַׁ֔בְתִּי וּ/פִרְי֖/וֹ מָת֥וֹק לְ/חִכִּֽ/י׃",
+        "LXX": "Ὡς μῆλον ἐν τοῖς ξύλοις τοῦ δρυμοῦ, οὕτως ἀδελφιδός μου ἀνὰ μέσον τῶν υἱῶν· ἐν τῇ σκιᾷ αὐτοῦ ἐπεθύμησα καὶ ἐκάθισα, καὶ καρπὸς αὐτοῦ γλυκὺς ἐν λάρυγγί μου.",
+        "VUL": "<Sponsa>Sicut malus inter ligna silvarum,/ sic dilectus meus inter filios./ Sub umbra illius quem desideraveram sedi,/ et fructus ejus dulcis gutturi meo./",
+        "SYN": "Что яблоня между лесными деревьями, то возлюбленный мой между юношами. В тени ее люблю я сидеть, и плоды ее сладки для гортани моей.",
+        "NEO": "Comme un pommier au milieu des arbres de la forêt, tel est mon bien-aimé parmi les jeunes hommes. J’ai désiré m’asseoir à son ombre, et son fruit est doux à mon palais.",
+        "NAB": "B As an apple tree among the trees of the woods, so is my lover among men. I delight to rest in his shadow, and his fruit is sweet to my mouth.",
+        "VAT_ES": "Como un manzano entre los árboles silvestres, es mi amado entre los jóvenes: yo me senté a su sombra tan deseada y su fruto es dulce a mi paladar.",
+        "CEI": "Come un melo tra gli alberi del bosco, il mio diletto fra i giovani. Alla sua ombra, cui anelavo, mi siedo e dolce è il suo frutto al mio palato."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הֱבִיאַ֨/נִי֙ אֶל בֵּ֣ית הַ/יָּ֔יִן וְ/דִגְל֥/וֹ עָלַ֖/י אַהֲבָֽה׃",
+        "LXX": "εἰσαγάγετέ με εἰς οἶκον τοῦ οἴνου, τάξατε ἐπ’ ἐμὲ ἀγάπην.",
+        "VUL": "Introduxit me in cellam vinariam ;/ ordinavit in me caritatem./",
+        "SYN": "Он ввел меня в дом пира, и знамя его надо мною - любовь.",
+        "NEO": "Il m’a fait entrer dans son cellier, et la bannière qu’il lève sur moi, c’est l’amour.",
+        "NAB": "He brings me into the banquet hall and his emblem over me is love.",
+        "VAT_ES": "El me hizo entrar en la bodega y enarboló sobre mí la insignia del Amor.",
+        "CEI": "Mi ha introdotto nella cella del vino e il suo vessillo su di me è amore."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "סַמְּכ֨וּ/נִי֙ בָּֽ/אֲשִׁישׁ֔וֹת רַפְּד֖וּ/נִי בַּ/תַּפּוּחִ֑ים כִּי חוֹלַ֥ת אַהֲבָ֖ה אָֽנִי׃",
+        "LXX": "στηρίσατέ με ἐν μύροις, στοιβάσατέ με ἐν μήλοις, ὅτι τετρωμένη ἀγάπης ἐγώ.",
+        "VUL": "Fulcite me floribus,/ stipate me malis,/ quia amore langueo./",
+        "SYN": "Подкрепите меня вином, освежите меня яблоками, ибо я изнемогаю от любви.",
+        "NEO": "Soutenez-moi avec des gâteaux de raisin, fortifiez-moi avec des pommes, car je suis malade d’amour.",
+        "NAB": "Strengthen me with raisin cakes, refresh me with apples, for I am faint with love.",
+        "VAT_ES": "Reconfórtenme con pasteles de pasa, reanímenme con manzanas, porque estoy enferma de amor.",
+        "CEI": "Sostenetemi con focacce d'uva passa, rinfrancatemi con pomi, perché io sono malata d'amore."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "שְׂמֹאל/וֹ֙ תַּ֣חַת לְ/רֹאשִׁ֔/י וִ/ימִינ֖/וֹ תְּחַבְּקֵֽ/נִי׃",
+        "LXX": "εὐώνυμος αὐτοῦ ὑπὸ τὴν κεφαλήν μου, καὶ ἡ δεξιὰ αὐτοῦ περιλήμψεταί με.",
+        "VUL": "Læva ejus sub capite meo,/ et dextera illius amplexabitur me./",
+        "SYN": "Левая рука его у меня под головою, а правая обнимает меня.",
+        "NEO": "Que sa main gauche soutienne ma tête, et que sa droite me tienne embrassée.",
+        "NAB": "His left hand is under my head and his right arm embraces me.",
+        "VAT_ES": "Su izquierda sostiene mi cabeza y con su derecha me abraza.",
+        "CEI": "La sua sinistra è sotto il mio capo e la sua destra mi abbraccia."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "הִשְׁבַּ֨עְתִּי אֶתְ/כֶ֜ם בְּנ֤וֹת יְרוּשָׁלִַ֨ם֙ בִּ/צְבָא֔וֹת א֖וֹ בְּ/אַיְל֣וֹת הַ/שָּׂדֶ֑ה אִם תָּעִ֧ירוּ וְֽ/אִם תְּעֽוֹרְר֛וּ אֶת הָ/אַהֲבָ֖ה עַ֥ד שֶׁ/תֶּחְפָּֽץ׃",
+        "LXX": "Ὥρκισα ὑμᾶς, θυγατέρες Ἰερουσαλήμ, ἐν δυνάμεσιν καὶ ἐν ἰσχύσεσιν τοῦ ἀγροῦ, ἐὰν ἐγείρητε καὶ ἐξεγείρητε τὴν ἀγάπην ἕως οὗ θελήσῃ.",
+        "VUL": "<Sponsus>Adjuro vos, filiæ Jerusalem,/ per capreas cervosque camporum,/ ne suscitetis, neque evigilare faciatis dilectam,/ quoadusque ipsa velit./",
+        "SYN": "Заклинаю вас, дщери Иерусалимские, сернами или полевыми ланями: не будите и не тревожьте возлюбленной, доколе ей угодно.",
+        "NEO": "Je vous en conjure, filles de Jérusalem, par les gazelles et les biches des champs, n’éveillez pas, ne réveillez pas la bien-aimée, avant qu’elle le veuille.",
+        "NAB": "I adjure you, daughters of Jerusalem, by the gazelles and hinds of the field, Do not arouse, do not stir up love before its own time.",
+        "VAT_ES": "&iexcl;Júrenme, hijas de Jerusalén, por las gacelas y las ciervas del campo, que no despertarán ni desvelarán a mi amor, hasta que ella quiera!",
+        "CEI": "Io vi scongiuro, figlie di Gerusalemme, per le gazzelle o per le cerve dei campi: non destate, non scuotete dal sonno l'amata, finché essa non lo voglia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "ק֣וֹל דּוֹדִ֔/י הִנֵּה זֶ֖ה בָּ֑א מְדַלֵּג֙ עַל הֶ֣/הָרִ֔ים מְקַפֵּ֖ץ עַל הַ/גְּבָעֽוֹת׃",
+        "LXX": "Φωνὴ ἀδελφιδοῦ μου· ἰδοὺ οὗτος ἥκει πηδῶν ἐπὶ τὰ ὄρη, διαλλόμενος ἐπὶ τοὺς βουνούς.",
+        "VUL": "<Sponsa>Vox dilecti mei ; ecce iste venit,/ saliens in montibus, transiliens colles./",
+        "SYN": "Голос возлюбленного моего! вот, он идет, скачет по горам, прыгает по холмам.",
+        "NEO": "La voix de mon bien-aimé ! Voici qu’il vient, bondissant sur les montagnes, sautant sur les collines.",
+        "NAB": "B Hark! my lover-here he comes springing across the mountains, leaping across the hills.",
+        "VAT_ES": "&iexcl;La voz de mi amado! Ahí viene, saltando por las montañas, brincando por las colinas.",
+        "CEI": "Una voce! Il mio diletto! Eccolo, viene saltando per i monti, balzando per le colline."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "דּוֹמֶ֤ה דוֹדִ/י֙ לִ/צְבִ֔י א֖וֹ לְ/עֹ֣פֶר הָֽ/אַיָּלִ֑ים הִנֵּה זֶ֤ה עוֹמֵד֙ אַחַ֣ר כָּתְלֵ֔/נוּ מַשְׁגִּ֨יחַ֙ מִן הַֽ/חֲלֹּנ֔וֹת מֵצִ֖יץ מִן הַֽ/חֲרַכִּֽים׃",
+        "LXX": "ὅμοιός ἐστιν ἀδελφιδός μου τῇ δορκάδι ἢ νεβρῷ ἐλάφων ἐπὶ τὰ ὄρη Βαιθήλ. ἰδοὺ οὗτος ὀπίσω τοῦ τοίχου ἡμῶν, παρακύπτων διὰ τῶν θυρίδων ἐκκύπτων διὰ τῶν δικτύων.",
+        "VUL": "Similis est dilectus meus capreæ,/ hinnuloque cervorum./ En ipse stat post parietem nostrum,/ respiciens per fenestras,/ prospiciens per cancellos./",
+        "SYN": "Друг мой похож на серну или на молодого оленя. Вот, он стоит у нас за стеною, заглядывает в окно, мелькает сквозь решетку.",
+        "NEO": "Mon bien-aimé est semblable à la gazelle, ou au faon des biches. Le voici, il est derrière notre mur, regardant par la fenêtre, épiant par le treillis.",
+        "NAB": "My lover is like a gazelle or a young stag. Here he stands behind our wall, gazing through the windows, peering through the lattices.",
+        "VAT_ES": "Mi amado es como una gacela, como un ciervo joven. Ahí está: se detiene detrás de nuestro muro; mira por la ventana, espía por el enrejado.",
+        "CEI": "Somiglia il mio diletto a un capriolo o ad un cerbiatto. Eccolo, egli sta dietro il nostro muro; guarda dalla finestra, spia attraverso le inferriate."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "עָנָ֥ה דוֹדִ֖/י וְ/אָ֣מַר לִ֑/י ק֥וּמִי לָ֛/ךְ רַעְיָתִ֥/י יָפָתִ֖/י וּ/לְכִי לָֽ/ךְ׃",
+        "LXX": "ἀποκρίνεται ἀδελφιδός μου καὶ λέγει μοι Ἀνάστα ἐλθέ, ἡ πλησίον μου, καλή μου, περιστερά μου.",
+        "VUL": "En dilectus meus loquitur mihi./ <Sponsus>Surge, propera, amica mea,/ columba mea, formosa mea, et veni :/",
+        "SYN": "Возлюбленный мой начал говорить мне: встань, возлюбленная моя, прекрасная моя, выйди!",
+        "NEO": "Mon bien-aimé a pris la parole, il m’a dit : « Lève-toi, mon amie, ma belle, et viens !",
+        "NAB": "My lover speaks; he says to me, \"Arise, my beloved, my beautiful one, and come!",
+        "VAT_ES": "Habla mi amado, y me dice: «&iexcl;Levántate, amada mía, y ven, hermosa mía!",
+        "CEI": "Ora parla il mio diletto e mi dice: \"Alzati, amica mia, mia bella, e vieni!"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּֽי הִנֵּ֥ה ה/סתו הַ/סְּתָ֖יו עָבָ֑ר הַ/גֶּ֕שֶׁם חָלַ֖ף הָלַ֥ךְ לֽ/וֹ׃",
+        "LXX": "ὅτι ἰδοὺ ὁ χειμὼν παρῆλθεν, ὁ ὑετὸς ἀπῆλθεν, ἐπορεύθη ἑαυτῷ·",
+        "VUL": "jam enim hiems transiit ;/ imber abiit, et recessit./",
+        "SYN": "Вот, зима уже прошла; дождь миновал, перестал;",
+        "NEO": "Car voici que l’hiver est fini ; la pluie a cessé, elle a disparu.",
+        "NAB": "\"For see, the winter is past, the rains are over and gone.",
+        "VAT_ES": "Porque ya pasó el invierno, cesaron y se fueron las lluvias.",
+        "CEI": "Perché, ecco, l'inverno è passato, è cessata la pioggia, se n'è andata;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "הַ/נִּצָּנִים֙ נִרְא֣וּ בָ/אָ֔רֶץ עֵ֥ת הַ/זָּמִ֖יר הִגִּ֑יעַ וְ/ק֥וֹל הַ/תּ֖וֹר נִשְׁמַ֥ע בְּ/אַרְצֵֽ/נוּ׃",
+        "LXX": "τὰ ἄνθη ὤφθη ἐν τῇ γῇ, καιρὸς τῆς τομῆς ἔφθακεν, φωνὴ τοῦ τρυγόνος ἠκούσθη ἐν τῇ γῇ ἡμῶν·",
+        "VUL": "Flores apparuerunt in terra nostra ;/ tempus putationis advenit :/ vox turturis audita est in terra nostra ;/",
+        "SYN": "цветы показались на земле; время пения настало, и голос горлицы слышен в стране нашей;",
+        "NEO": "Les fleurs ont paru sur la terre, le temps des chants est arrivé ; la voix de la tourterelle s’est fait entendre dans nos campagnes ;",
+        "NAB": "The flowers appear on the earth, the time of pruning the vines has come, and the song of the dove is heard in our land.",
+        "VAT_ES": "Aparecieron las flores sobre la tierra, llegó el tiempo de las canciones, y se oye en nuestra tierra el arrullo de la tórtola.",
+        "CEI": "i fiori sono apparsi nei campi, il tempo del canto è tornato e la voce della tortora ancora si fa sentire nella nostra campagna."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הַ/תְּאֵנָה֙ חָֽנְטָ֣ה פַגֶּ֔י/הָ וְ/הַ/גְּפָנִ֥ים סְמָדַ֖ר נָ֣תְנוּ רֵ֑יחַ ק֥וּמִי לכי לָ֛/ךְ רַעְיָתִ֥/י יָפָתִ֖/י וּ/לְכִי לָֽ/ךְ׃",
+        "LXX": "ἡ συκῆ ἐξήνεγκεν ὀλύνθους αὐτῆς, αἱ ἄμπελοι κυπρίζουσιν, ἔδωκαν ὀσμήν. ἀνάστα ἐλθέ, ἡ πλησίον μου, καλή μου, περιστερά μου. καὶ ἐλθέ,",
+        "VUL": "ficus protulit grossos suos ;/ vineæ florentes dederunt odorem suum./ Surge, amica mea, speciosa mea, et veni :/",
+        "SYN": "смоковницы распустили свои почки, и виноградные лозы, расцветая, издают благовоние. Встань, возлюбленная моя, прекрасная моя, выйди!",
+        "NEO": "le figuier pousse ses fruits naissants, la vigne en fleur donne son parfum. Lève-toi, mon amie, ma belle, et viens !",
+        "NAB": "The fig tree puts forth its figs, and the vines, in bloom, give forth fragrance. Arise, my beloved, my beautiful one, and come!",
+        "VAT_ES": "La higuera dio sus primeros frutos y las viñas en flor exhalan su perfume. &iexcl;Levántate, amada mía, y ven, hermosa mía!",
+        "CEI": "Il fico ha messo fuori i primi frutti e le viti fiorite spandono fragranza. Alzati, amica mia, mia bella, e vieni!"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "יוֹנָתִ֞/י בְּ/חַגְוֵ֣י הַ/סֶּ֗לַע בְּ/סֵ֨תֶר֙ הַ/מַּדְרֵגָ֔ה הַרְאִ֨י/נִי֙ אֶתּ מַרְאַ֔יִ/ךְ הַשְׁמִיעִ֖י/נִי אֶת קוֹלֵ֑/ךְ כִּי קוֹלֵ֥/ךְ עָרֵ֖ב וּ/מַרְאֵ֥י/ךְ נָאוֶֽה׃",
+        "LXX": "σὺ περιστερά μου, ἐν σκέπῃ τῆς πέτρας, ἐχόμενα τοῦ προτειχίσματος δεῖξόν μοι τὴν ὄψιν σου, καὶ ἀκούτισόν με τὴν φωνήν σου, ὅτι ἡ φωνή σου ἡδεῖα, καὶ ἡ ὄψις σου ὡραία.",
+        "VUL": "columba mea, in foraminibus petræ, in caverna maceriæ,/ ostende mihi faciem tuam,/ sonet vox tua in auribus meis :/ vox enim tua dulcis, et facies tua decora./",
+        "SYN": "Голубица моя в ущелье скалы под кровом утеса! покажи мне лице твое, дай мне услышать голос твой, потому что голос твой сладок и лице твое приятно.",
+        "NEO": "Ma colombe, qui te tiens dans la fente du rocher, dans l’abri des parois escarpées. montre-moi ton visage, fais-moi entendre ta voix ; car ta voix est douce, et ton visage charmant.",
+        "NAB": "\"O my dove in the clefts of the rock, in the secret recesses of the cliff, Let me see you, let me hear your voice, For your voice is sweet, and you are lovely.\"",
+        "VAT_ES": "Paloma mía, que anidas en las grietas de las rocas, en lugares escarpados, muéstrame tu rostro, déjame oír tu voz; porque tu voz es suave y es hermoso tu semblante».",
+        "CEI": "O mia colomba, che stai nelle fenditure della roccia, nei nascondigli dei dirupi, mostrami il tuo viso, fammi sentire la tua voce, perché la tua voce è soave, il tuo viso è leggiadro\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אֶֽחֱזוּ לָ֨/נוּ֙ שֽׁוּעָלִ֔ים שֽׁוּעָלִ֥ים קְטַנִּ֖ים מְחַבְּלִ֣ים כְּרָמִ֑ים וּ/כְרָמֵ֖י/נוּ סְמָדַֽר׃",
+        "LXX": "πιάσατε ἡμῖν ἀλώπεκας μικροὺς ἀφανίζοντας ἀμπελῶνας· καὶ αἱ ἄμπελοι ἡμῶν κυπρίζουσαι.",
+        "VUL": "<Sponsa>Capite nobis vulpes parvulas/ quæ demoliuntur vineas :/ nam vinea nostra floruit./",
+        "SYN": "Ловите нам лисиц, лисенят, которые портят виноградники, а виноградники наши в цвете.",
+        "NEO": "Prenez-nous les renards, les petits renards, qui ravagent les vignes, car nos vignes sont en fleur. »",
+        "NAB": "B Catch us the foxes, the little foxes that damage the vineyards; for our vineyards are in bloom!",
+        "VAT_ES": "Cacen a los zorros, a esos zorros pequeños que arrasan las viñas, &iexcl;y nuestras viñas están en flor!",
+        "CEI": "Prendeteci le volpi, le volpi piccoline che guastano le vigne, perché le nostre vigne sono in fiore."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "דּוֹדִ֥/י לִ/י֙ וַ/אֲנִ֣י ל֔/וֹ הָ/רֹעֶ֖ה בַּ/שּׁוֹשַׁנִּֽים׃",
+        "LXX": "ἀδελφιδός μου ἐμοὶ κἀγὼ αὐτῷ· ὁ ποιμαίνων ἐν τοῖς κρίνοις,",
+        "VUL": "Dilectus meus mihi, et ego illi,/ qui pascitur inter lilia,/",
+        "SYN": "Возлюбленный мой принадлежит мне, а я ему; он пасет между лилиями.",
+        "NEO": "Mon bien-aimé est à moi, et je suis à lui ; il fait paître son troupeau parmi les lis.",
+        "NAB": "My lover belongs to me and I to him; he browses among the lilies.",
+        "VAT_ES": "&iexcl;Mi amado es para mí, y yo soy para mi amado, que apacienta su regaño entre los lirios!",
+        "CEI": "Il mio diletto è per me e io per lui. Egli pascola il gregge fra i gigli."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "עַ֤ד שֶׁ/יָּפ֨וּחַ֙ הַ/יּ֔וֹם וְ/נָ֖סוּ הַ/צְּלָלִ֑ים סֹב֩ דְּמֵה לְ/ךָ֨ דוֹדִ֜/י לִ/צְבִ֗י א֛וֹ לְ/עֹ֥פֶר הָ/אַיָּלִ֖ים עַל הָ֥רֵי בָֽתֶר׃",
+        "LXX": "ἕως οὗ διαπνεύσῃ ἡ ἡμέρα καὶ κινηθῶσιν αἱ σκιαί. ἀπόστρεψον, ὁμοιώθητι σύ, ἀδελφιδέ, τῷ δόρκωνι ἢ νεβρῷ ἐλάφων ἐπὶ ὄρη κοιλωμάτων.",
+        "VUL": "donec aspiret dies, et inclinentur umbræ./ Revertere ; similis esto, dilecte mi, capreæ,/ hinnuloque cervorum super montes Bether.]",
+        "SYN": "Доколе день дышит _прохладою,_ и убегают тени, возвратись, будь подобен серне или молодому оленю на расселинах гор.",
+        "NEO": "Avant que vienne la fraîcheur du jour, et que les ombres fuient, reviens !... Sois semblable, mon bien-aimé, à la gazelle ou au faon des biches, sur les montagnes ravinées.",
+        "NAB": "Until the day breathes cool and the shadows lengthen, roam, my lover, Like a gazelle or a young stag upon the mountains of Bether.",
+        "VAT_ES": "Antes que sople la brisa y huyan las sombras &iexcl;vuelve, amado mío, como una gacela, o como un ciervo joven, por las montañas de Beter!",
+        "CEI": "Prima che spiri la brezza del giorno e si allunghino le ombre, ritorna, o mio diletto, somigliante alla gazzella o al cerbiatto, sopra i monti degli aromi."
+      }
+    }
+  }
+}

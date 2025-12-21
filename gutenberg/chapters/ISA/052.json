@@ -1,0 +1,281 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_052",
+  "book_key": "ISA",
+  "sequence": 52,
+  "chapter_in": {
+    "MT": 52,
+    "VUL": 52,
+    "LXX": 52
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "עוּרִ֥י עוּרִ֛י לִבְשִׁ֥י עֻזֵּ֖/ךְ צִיּ֑וֹן לִבְשִׁ֣י בִּגְדֵ֣י תִפְאַרְתֵּ֗/ךְ יְרוּשָׁלִַ֨ם֙ עִ֣יר הַ/קֹּ֔דֶשׁ כִּ֣י לֹ֥א יוֹסִ֛יף יָבֹא בָ֥/ךְ ע֖וֹד עָרֵ֥ל וְ/טָמֵֽא׃",
+        "LXX": "Ἐξεγείρου ἐξεγείρου, Σειών· ἔνδυσαι τὴν ἰσχύν σου, Σειών, καὶ σὺ ἔνδυσαι τὴν δόξαν σου, Ἰερουσαλήμ, πόλις ἡ ἁγία· οὐκέτι προστεθήσεται διελθεῖν διὰ σοῦ ἀπερίτμητος καὶ ἀκάθαρτος.",
+        "VUL": "[Consurge, consurge, induere fortitudine tua, Sion !/ induere vestimentis gloriæ tuæ,/ Jerusalem, civitas Sancti,/ quia non adjiciet ultra ut pertranseat per te/ incircumcisus et immundus./",
+        "SYN": "Восстань, восстань, облекись в силу твою, Сион! Облекись в одежды величия твоего, Иерусалим, город святый! ибо уже не будет более входить в тебя необрезанный и нечистый.",
+        "NEO": "Réveille-toi, réveille-toi, revêts ta force, Sion ! Revêts tes habits de fête, Jérusalem, ville sainte ! Car l’incirconcis et l’impur n’entreront plus chez toi désormais.",
+        "NAB": "Awake, awake! Put on your strength, O Zion; Put on your glorious garments, O Jerusalem, holy city. No longer shall the uncircumcised or the unclean enter you.",
+        "VAT_ES": "Así habla el Señor: &iquest;Dónde está el acta de divorcio con la que despedí a la madre de ustedes? O bien, &iquest;a cuál de mis acreedores yo los he vendido? No, ustedes fueron vendidos por sus culpas, por los crímenes de ustedes fue despedida su madre",
+        "CEI": "Svegliati, svegliati, rivestiti della tua magnificenza, Sion; indossa le vesti più belle, Gerusalemme, città santa; perché mai più entrerà in te il non circonciso né l'impuro."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "הִתְנַעֲרִ֧י מֵ/עָפָ֛ר ק֥וּמִי שְּׁבִ֖י יְרֽוּשָׁלִָ֑ם התפתחו הִֽתְפַּתְּחִי֙ מוֹסְרֵ֣י צַוָּארֵ֔/ךְ שְׁבִיָּ֖ה בַּת צִיּֽוֹן׃",
+        "LXX": "ἐκτίναξαι τὸν χοῦν καὶ ἀνάστηθι, κάθισον, Ἰερουσαλήμ· ἔκλυσαι τὸν δεσμὸν τοῦ τραχήλου σου, ἡ αἰχμάλωτος θυγάτηρ Σειών.",
+        "VUL": "Excutere de pulvere, consurge ;/ sede, Jerusalem !/ solve vincula colli tui,/ captiva filia Sion./",
+        "SYN": "Отряси с себя прах; встань, пленный Иерусалим! сними цепи с шеи твоей, пленная дочь Сиона!",
+        "NEO": "Secoue ta poussière, relève-toi, assieds-toi, Jérusalem ; détache les chaînes de ton cou, captive, fille de Sion !",
+        "NAB": "Shake off the dust, ascend to the throne, Jerusalem; Loose the bonds from your neck, O captive daughter Zion!",
+        "VAT_ES": "&iquest;Por qué no había nadie cuando vine ni respondió nadie cuando llamé? &iquest;Será demasiado corta mi mano para rescatar? &iquest;No tengo fuerza para librar? Yo, con una amenaza, seco el mar y hago de los ríos un desierto; sus peces se pudren por falta de agua y se mueren de sed.",
+        "CEI": "Scuotiti la polvere, alzati, Gerusalemme schiava! Sciogliti dal collo i legami, schiava figlia di Sion!"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כִּֽי כֹה֙ אָמַ֣ר יְהוָ֔ה חִנָּ֖ם נִמְכַּרְתֶּ֑ם וְ/לֹ֥א בְ/כֶ֖סֶף תִּגָּאֵֽלוּ׃",
+        "LXX": "ὅτι τάδε λέγει Κύριος Δωρεὰν ἐπράθητε, καὶ οὐ μετὰ ἀργυρίου λυτρωθήσεσθε.",
+        "VUL": "Quia hæc dicit Dominus :/ Gratis venundati estis,/ et sine argento redimemini./",
+        "SYN": "ибо так говорит Господь: за ничто были вы проданы, и без серебра будете выкуплены;",
+        "NEO": "Car ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Vous avez été vendus pour rien, et sans argent vous serez rachetés !",
+        "NAB": "For thus says the LORD: You were sold for nothing, and without money you shall be redeemed.",
+        "VAT_ES": "Yo visto los cielos de negro y los cubro con ropa de luto.",
+        "CEI": "Poiché dice il Signore: \"Senza prezzo foste venduti e sarete riscattati senza denaro\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּ֣י כֹ֤ה אָמַר֙ אֲדֹנָ֣/י יְהוִ֔ה מִצְרַ֛יִם יָֽרַד עַמִּ֥/י בָ/רִֽאשֹׁנָ֖ה לָ/ג֣וּר שָׁ֑ם וְ/אַשּׁ֖וּר בְּ/אֶ֥פֶס עֲשָׁקֽ/וֹ׃",
+        "LXX": "Οὕτως λέγει κύριος Κύριος Εἰς Αἴγυπτον κατέβη ὁ λαός μου τὸ πρότερον παροικῆσαι ἐκεῖ, καὶ εἰς Ἀσσυρίους βίᾳ ἤχθησαν·",
+        "VUL": "Quia hæc dicit Dominus Deus :/ In Ægyptum descendit populus meus in principio, ut colonus esset ibi,/ et Assur absque ulla causa calumniatus est eum./",
+        "SYN": "ибо так говорит Господь Бог: народ Мой ходил прежде в Египет, чтобы там пожить, и Ассур теснил его ни за что.",
+        "NEO": "Car ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Mon peuple descendit jadis en Égypte pour y séjourner puis Assur l’opprima sans cause.",
+        "NAB": "Thus says the Lord GOD: To Egypt in the beginning my people went down, to sojourn there; Assyria, too, oppressed them for nought.",
+        "VAT_ES": "El mismo Señor me ha dado una lengua de discípulo, para que yo sepa reconfortar al fatigado con una palabra de aliento. Cada mañana, él despierta mi oído para que yo escuche como un discípulo.",
+        "CEI": "Poiché dice il Signore Dio: \"In Egitto è sceso il mio popolo un tempo per abitarvi come straniero; poi l'Assiro senza motivo lo ha oppresso."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֤ה מי ל/י מַה לִּ/י פֹה֙ נְאֻם יְהוָ֔ה כִּֽי לֻקַּ֥ח עַמִּ֖/י חִנָּ֑ם משל/ו מֹשְׁלָ֤י/ו יְהֵילִ֨ילוּ֙ נְאֻם יְהוָ֔ה וְ/תָמִ֥יד כָּל הַ/יּ֖וֹם שְׁמִ֥/י מִנֹּאָֽץ׃",
+        "LXX": "καὶ νῦν τί ὧδέ ἐστε; τάδε λέγει Κύριος Ὅτι ἐλήμφθη ὁ λαός μου δωρεάν, θαυμάζετε καὶ ὀλολύζετε. τάδε λέγει Κύριος Δι’ ὑμᾶς διὰ παντὸς τὸ ὄνομά μου βλασφημεῖται ἐν τοῖς ἔθνεσιν.",
+        "VUL": "Et nunc quid mihi est hic, dicit Dominus,/ quoniam ablatus est populus meus gratis ?/ Dominatores ejus inique agunt, dicit Dominus,/ et jugiter tota die nomen meum blasphematur./",
+        "SYN": "И теперь что у Меня здесь? говорит Господь; народ Мой взят даром, властители их неистовствуют, говорит Господь, и постоянно, всякий день имя Мое бесславится.",
+        "NEO": "Et maintenant qu’ai-je à faire ici ? — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, puisque mon peuple a été enlevé sans droit ? Ses tyrans poussent des hurlements, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, et sans cesse, tout le jour, mon nom est outragé.",
+        "NAB": "But now, what am I to do here? says the LORD. My people have been taken away without redress; their rulers make a boast of it, says the LORD; all the day my name is constantly reviled.",
+        "VAT_ES": "El Señor abrió mi oído y yo no me resistí ni me volví atrás.",
+        "CEI": "Ora, che faccio io qui? - oracolo del Signore - Sì, il mio popolo è stato deportato per nulla! I suoi dominatori trionfavano - oracolo del Signore - e sempre, tutti i giorni il mio nome è stato disprezzato."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "לָ/כֵ֛ן יֵדַ֥ע עַמִּ֖/י שְׁמִ֑/י לָ/כֵן֙ בַּ/יּ֣וֹם הַ/ה֔וּא כִּֽי אֲנִי ה֥וּא הַֽ/מְדַבֵּ֖ר הִנֵּֽ/נִי׃",
+        "LXX": "διὰ τοῦτο γνώσεται ὁ λαός μου τὸ ὄνομά μου ἐν τῇ ἡμέρᾳ ἐκείνῃ, ὅτι ἐγώ εἰμι αὐτὸς ὁ λαλῶν· πάρειμι",
+        "VUL": "Propter hoc sciet populus meus nomen meum/ in die illa :/ quia ego ipse qui loquebar, ecce adsum.]",
+        "SYN": "Поэтому народ Мой узнает имя Мое; поэтому _узнает_ в тот день, что Я тот же, Который сказал: \"вот Я!\"",
+        "NEO": "C’est pourquoi mon peuple connaîtra mon nom ; oui, il saura en ce jour que c’est moi qui dis : « Me voici ! »",
+        "NAB": "Therefore on that day my people shall know my renown, that it is I who have foretold it. Here I am!",
+        "VAT_ES": "Ofrecí mi espalda a los que golpeaban y mis mejillas, a los que me arrancaban la barba; no retiré mi rostro cuando me ultrajaban y escupían.",
+        "CEI": "Pertanto il mio popolo conoscerà il mio nome, comprenderà in quel giorno che io dicevo: Eccomi qua\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "מַה נָּאו֨וּ עַל הֶ/הָרִ֜ים רַגְלֵ֣י מְבַשֵּׂ֗ר מַשְׁמִ֧יעַ שָׁל֛וֹם מְבַשֵּׂ֥ר ט֖וֹב מַשְׁמִ֣יעַ יְשׁוּעָ֑ה אֹמֵ֥ר לְ/צִיּ֖וֹן מָלַ֥ךְ אֱלֹהָֽיִ/ךְ׃",
+        "LXX": "ὡς ὥρα ἐπὶ τῶν ὀρέων, ὡς πόδες εὐαγγελιζομένου ἀκοὴν εἰρήνης, ὡς εὐαγγελιζόμενος ἀγαθά, ὅτι ἀκουστὴν ποιήσω τὴν σωτηρίαν σου λέγων Σειών Βασιλεύσει σου ὁ θεός·",
+        "VUL": "[Quam pulchri super montes pedes annuntiantis/ et prædicantis pacem ;/ annuntiantis bonum,/ prædicantis salutem,/ dicentis Sion :/ Regnabit Deus tuus !/",
+        "SYN": "Как прекрасны на горах ноги благовестника, возвещающего мир, благовествующего радость, проповедующего спасение, говорящего Сиону: \"воцарился Бог твой!\"",
+        "NEO": "Qu’ils sont beaux sur les montagnes les pieds du messager, qui publie la bonne nouvelle de la paix ; de celui qui annonce le bonheur, qui publie le salut ; de celui qui dit à Sion : « Ton Dieu règne ! »",
+        "NAB": "How beautiful upon the mountains are the feet of him who brings glad tidings, Announcing peace, bearing good news, announcing salvation, and saying to Zion, \"Your God is King!\"",
+        "VAT_ES": "Pero el Señor viene en mi ayuda: por eso, no quedé confundido; por eso, endurecí mi rostro como el pedernal, y sé muy bien que no seré defraudado.",
+        "CEI": "Come sono belli sui monti i piedi del messaggero di lieti annunzi che annunzia la pace, messaggero di bene che annunzia la salvezza, che dice a Sion: \"Regna il tuo Dio\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "ק֥וֹל צֹפַ֛יִ/ךְ נָ֥שְׂאוּ ק֖וֹל יַחְדָּ֣ו יְרַנֵּ֑נוּ כִּ֣י עַ֤יִן בְּ/עַ֨יִן֙ יִרְא֔וּ בְּ/שׁ֥וּב יְהוָ֖ה צִיּֽוֹן׃",
+        "LXX": "ὅτι φωνὴ τῶν φυλασσόντων σε ὑψώθη, καὶ τῇ φωνῇ ἅμα εὐφρανθήσονται· ὅτι ὀφθαλμοὶ πρὸς ὀφθαλμοὺς ὄψονται, ἡνίκα ἂν ἐλεήσῃ Κύριος τὴν Σειών.",
+        "VUL": "Vox speculatorum tuorum : levaverunt vocem,/ simul laudabunt,/ quia oculo ad oculum videbunt/ cum converterit Dominus Sion./",
+        "SYN": "Голос сторожей твоих - они возвысили голос, и все вместе ликуют, ибо своими глазами видят, что Господь возвращается в Сион.",
+        "NEO": "La voix de tes sentinelles ! Elles élèvent la voix, elles poussent ensemble des cris d’allégresse, car elles voient de leurs yeux le retour de \\+w Yahweh|strong=\"H3068\"\\+w** en Sion.",
+        "NAB": "Hark! Your watchmen raise a cry, together they shout for joy, For they see directly, before their eyes, the LORD restoring Zion.",
+        "VAT_ES": "Está cerca el que me hace justicia: &iquest;quién me va a procesar? &iexcl;Comparezcamos todos juntos! &iquest;Quién será mi adversario en el juicio? &iexcl;Que se acerque hasta mí!",
+        "CEI": "Senti? Le tue sentinelle alzano la voce, insieme gridano di gioia, poiché vedono con gli occhi il ritorno del Signore in Sion."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "פִּצְח֤וּ רַנְּנוּ֙ יַחְדָּ֔ו חָרְב֖וֹת יְרוּשָׁלִָ֑ם כִּֽי נִחַ֤ם יְהוָה֙ עַמּ֔/וֹ גָּאַ֖ל יְרוּשָׁלִָֽם׃",
+        "LXX": "ῥηξάτω εὐφροσύνην ἅμα τὰ ἔρημα Ἰερουσαλήμ, ὅτι ἠλέησεν Κύριος αὐτὴν καὶ ἐρύσατο Ἰερουσαλήμ.",
+        "VUL": "Gaudete, et laudate simul,/ deserta Jerusalem,/ quia consolatus est Dominus populum suum ;/ redemit Jerusalem./",
+        "SYN": "Торжествуйте, пойте вместе, развалины Иерусалима, ибо утешил Господь народ Свой, искупил Иерусалим.",
+        "NEO": "Eclatez ensemble en cris de joie, ruines de Jérusalem ! Car \\+w Yahweh|strong=\"H3068\"\\+w** a consolé son peuple, il a racheté Jérusalem.",
+        "NAB": "Break out together in song, O ruins of Jerusalem! For the LORD comforts his people, he redeems Jerusalem.",
+        "VAT_ES": "Sí, el Señor viene en mi ayuda: &iquest;quién me va a condenar? Todos ellos se gastarán como un vestido, se los comerá la polilla.",
+        "CEI": "Prorompete insieme in canti di gioia, rovine di Gerusalemme, perché il Signore ha consolato il suo popolo, ha riscattato Gerusalemme."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "חָשַׂ֤ף יְהוָה֙ אֶת זְר֣וֹעַ קָדְשׁ֔/וֹ לְ/עֵינֵ֖י כָּל הַ/גּוֹיִ֑ם וְ/רָאוּ֙ כָּל אַפְסֵי אָ֔רֶץ אֵ֖ת יְשׁוּעַ֥ת אֱלֹהֵֽי/נוּ׃",
+        "LXX": "καὶ ἀποκαλύψει Κύριος τὸν βραχίονα τὸν ἅγιον αὐτοῦ ἐνώπιον πάντων τῶν ἐθνῶν, καὶ ὄψονται πάντα ἄκρα τῆς γῆς τὴν σωτηρίαν τὴν παρὰ τοῦ θεοῦ ἡμῶν.",
+        "VUL": "Paravit Dominus brachium sanctum suum/ in oculis omnium gentium ;/ et videbunt omnes fines terræ/ salutare Dei nostri./",
+        "SYN": "Обнажил Господь святую мышцу Свою пред глазами всех народов; и все концы земли увидят спасение Бога нашего.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** a découvert le bras de sa sainteté, aux yeux de toutes les nations ; et toutes les extrémités de la terre verront le salut de notre Dieu.",
+        "NAB": "The LORD has bared his holy arm in the sight of all the nations; All the ends of the earth will behold the salvation of our God.",
+        "VAT_ES": "&iquest;Quién entre ustedes teme al Señor y escucha la voz de su Servidor? Aunque camine en las tinieblas, sin un rayo de luz, que confíe en el nombre del Señor y se apoye en su Dios.",
+        "CEI": "Il Signore ha snudato il suo santo braccio davanti a tutti i popoli; tutti i confini della terra vedranno la salvezza del nostro Dio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "ס֤וּרוּ ס֨וּרוּ֙ צְא֣וּ מִ/שָּׁ֔ם טָמֵ֖א אַל תִּגָּ֑עוּ צְא֣וּ מִ/תּוֹכָ֔/הּ הִבָּ֕רוּ נֹשְׂאֵ֖י כְּלֵ֥י יְהוָֽה׃",
+        "LXX": "ἀπόστητε ἀπόστητε, ἐξέλθατε ἐκεῖθεν καὶ ἀκαθάρτου μὴ ἅψησθε, ἐξέλθατε ἐκ μέσου αὐτῆς, ἀφορίσθητε, οἱ φέροντες τὰ σκεύη Κυρίου·",
+        "VUL": "Recedite, recedite ; exite inde,/ pollutum nolite tangere ;/ exite de medio ejus ; mundamini,/ qui fertis vasa Domini./",
+        "SYN": "Идите, идите, выходите оттуда; не касайтесь нечистого; выходите из среды его, очистите себя, носящие сосуды Господни!",
+        "NEO": "Partez, partez, sortez de là ; ne touchez rien d’impur ! Sortez du milieu d’elle ; purifiez-vous ; vous qui portez les vases de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Depart, depart, come forth from there, touch nothing unclean! Out from there! Purify yourselves, you who carry the vessels of the LORD.",
+        "VAT_ES": "Pero ustedes, los que atizan el fuego y arman flechas incendiarias, caminen al resplandor de sus hogueras y entre las flechas que encendieron. Esto les sucederá por obra mía y ustedes yacerán en medio de tormentos.",
+        "CEI": "Fuori, fuori, uscite di là! Non toccate niente d'impuro. Uscite da essa, purificatevi, voi che portate gli arredi del Signore!"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כִּ֣י לֹ֤א בְ/חִפָּזוֹן֙ תֵּצֵ֔אוּ וּ/בִ/מְנוּסָ֖ה לֹ֣א תֵלֵכ֑וּ/ן כִּֽי הֹלֵ֤ךְ לִ/פְנֵי/כֶם֙ יְהוָ֔ה וּ/מְאַסִּפְ/כֶ֖ם אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "ὅτι οὐ μετὰ ταραχῆς ἐξελεύσεσθε οὐδὲ φυγῇ πορεύσεσθε, προπορεύσεται γὰρ πρότερος ὑμῶν Κύριος καὶ ὁ ἐπισυνάγων ὑμᾶς θεὸς Ἰσραήλ.",
+        "VUL": "Quoniam non in tumultu exibitis,/ nec in fuga properabitis ;/ præcedet enim vos Dominus,/ et congregabit vos Deus Israël.]",
+        "SYN": "ибо вы выйдете неторопливо, и не побежите; потому что впереди вас пойдет Господь, и Бог Израилев будет стражем позади вас.",
+        "NEO": "Car vous ne sortirez pas avec précipitation, et vous ne vous en irez pas en fuyant ; car \\+w Yahweh|strong=\"H3068\"\\+w** marche devant vous, et le Dieu d’Israël est votre arrière garde !",
+        "NAB": "Yet not in fearful haste will you come out, nor leave in headlong flight, For the LORD comes before you, and your rear guard is the God of Israel.",
+        "CEI": "Voi non dovrete uscire in fretta né andarvene come uno che fugge, perché davanti a voi cammina il Signore, il Dio di Israele chiude la vostra carovana."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הִנֵּ֥ה יַשְׂכִּ֖יל עַבְדִּ֑/י יָר֧וּם וְ/נִשָּׂ֛א וְ/גָבַ֖הּ מְאֹֽד׃",
+        "LXX": "Ἰδοὺ συνήσει ὁ παῖς μου, καὶ ὑψωθήσεται καὶ δοξασθήσεται σφόδρα.",
+        "VUL": "[Ecce intelliget servus meus,/ exaltabitur et elevabitur, et sublimis erit valde./",
+        "SYN": "Вот, раб Мой будет благоуспешен, возвысится и вознесется, и возвеличится.",
+        "NEO": "Voici que mon Serviteur prospérera ; il grandira, il sera exalté, souverainement élevé.",
+        "NAB": "See, my servant shall prosper, he shall be raised high and greatly exalted.",
+        "CEI": "Ecco, il mio servo avrà successo, sarà onorato, esaltato e molto innalzato."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כַּ/אֲשֶׁ֨ר שָׁמְמ֤וּ עָלֶ֨י/ךָ֙ רַבִּ֔ים כֵּן מִשְׁחַ֥ת מֵ/אִ֖ישׁ מַרְאֵ֑/הוּ וְ/תֹאֲר֖/וֹ מִ/בְּנֵ֥י אָדָֽם׃",
+        "LXX": "ὃν τρόπον ἐκστήσονται ἐπὶ σὲ πολλοί, οὕτως ἀδοξήσει ἀπὸ ἀνθρώπων τὸ εἶδός σου, καὶ ἡ δόξα σου ἀπὸ τῶν ἀνθρώπων.",
+        "VUL": "Sicut obstupuerunt super te multi,/ sic inglorius erit inter viros aspectus ejus,/ et forma ejus inter filios hominum./",
+        "SYN": "Как многие изумлялись, _смотря_ на Тебя, - столько был обезображен паче всякого человека лик Его, и вид Его - паче сынов человеческих!",
+        "NEO": "De même que beaucoup ont été dans la stupeur en le voyant, — tant il était défiguré, son aspect n’étant plus celui d’un homme, ni son visage celui des enfants des hommes, —",
+        "NAB": "Even as many were amazed at him - so marred was his look beyond that of man, and his appearance beyond that of mortals -",
+        "CEI": "Come molti si stupirono di lui - tanto era sfigurato per essere d'uomo il suo aspetto e diversa la sua forma da quella dei figli dell'uomo -"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כֵּ֤ן יַזֶּה֙ גּוֹיִ֣ם רַבִּ֔ים עָלָ֛י/ו יִקְפְּצ֥וּ מְלָכִ֖ים פִּי/הֶ֑ם כִּ֠י אֲשֶׁ֨ר לֹֽא סֻפַּ֤ר לָ/הֶם֙ רָא֔וּ וַ/אֲשֶׁ֥ר לֹֽא שָׁמְע֖וּ הִתְבּוֹנָֽנוּ׃",
+        "LXX": "οὕτω θαυμάσονται ἔθνη πολλὰ ἐπ’ αὐτῷ, καὶ συνέξουσιν βασιλεῖς τὸ στόμα αὐτῶν· ὅτι οἷς οὐκ ἀνηγγέλη περὶ αὐτοῦ ὄψονται, καὶ οἳ οὐκ ἀκηκόασιν συνήσουσιν.",
+        "VUL": "Iste asperget gentes multas ;/ super ipsum continebunt reges os suum :/ quia quibus non est narratum de eo viderunt,/ et qui non audierunt contemplati sunt.]",
+        "SYN": "Так многие народы приведет Он в изумление; цари закроют пред Ним уста свои, ибо они увидят то, о чем не было говорено им, и узнают то, чего не слыхали.",
+        "NEO": "ainsi il fera tressaillir des nations nombreuses. Devant lui les rois fermeront la bouche ; car ils verront ce qui ne leur avait pas été raconté, et ils apprendront ce qu’ils n’avaient pas entendu.",
+        "NAB": "So shall he startle many nations, because of him kings shall stand speechless; For those who have not been told shall see, those who have not heard shall ponder it.",
+        "CEI": "così si meraviglieranno di lui molte genti; i re davanti a lui si chiuderanno la bocca, poiché vedranno un fatto mai ad essi raccontato e comprenderanno ciò che mai avevano udito."
+      }
+    }
+  }
+}

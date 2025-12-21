@@ -1,0 +1,338 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_008",
+  "book_key": "ECCLU",
+  "sequence": 8,
+  "chapter_in": {
+    "MT": 8,
+    "VUL": 8,
+    "LXX": 8
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Μὴ διαμάχου μετὰ ἀνθρώπου δυνάστου, μή ποτε ἐμπέσῃς εἰς τὰς χεῖρας αὐτοῦ.",
+        "VUL": "[Non litiges cum homine potente,/ ne forte incidas in manus illius./",
+        "SYN": "Не ссорься с человеком сильным, чтобы когда-нибудь не впасть в его руки.",
+        "NEO": "N’aie pas de dispute avec un homme puissant, de peur que tu ne tombes entre ses mains.",
+        "NAB": "Contend not with an influential man, lest you fall into his power.",
+        "VAT_ES": "No disputes con un hombre poderoso, no sea que caigas en sus manos.",
+        "CEI": "Non litigare con un uomo potente per non cadere poi nelle sue mani."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "μὴ ἔριζε μετὰ ἀνθρώπου πλουσίου, μή ποτε ἀντιστήσῃ σου τὴν ὁλκήν· πολλοὺς γὰρ ἀπώλεσεν τὸ χρυσίον, καὶ καρδίας βασιλέων ἐξέκλινεν.",
+        "VUL": "Non contendas cum viro locuplete,/ ne forte contra te constituat litem tibi :/",
+        "SYN": "Не заводи тяжбы с человеком богатым, чтобы он не имел перевеса над тобою;",
+        "NEO": "N’aie pas de querelle avec un homme riche, de peur qu’il ne t’oppose le poids de son or ; car l’or a perdu beaucoup de gens, il a même fait dévier le cœur des rois.",
+        "NAB": "Quarrel not with a rich man, lest he pay out the price of your downfall; For gold has dazzled many, and perverts the character of princes.",
+        "VAT_ES": "No entres en pleito con un hombre rico, no sea que oponga todo su peso contra ti: porque el oro fue la ruina de muchos e hizo desviar el corazón de los reyes.",
+        "CEI": "Non litigare con un uomo ricco, perché egli non t'opponga il peso del suo danaro, poiché l'oro ha corrotto molti e ha fatto deviare il cuore dei re."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "μὴ διαμάχου μετὰ ἀνθρώπου γλωσσώδους, καὶ μὴ ἐπιστοιβάσῃς ἐπὶ τὸ πῦρ αὐτοῦ ξύλα.",
+        "VUL": "multos enim perdidit aurum et argentum,/ et usque ad cor regum extendit et convertit./",
+        "SYN": "ибо золото многих погубило, и склоняло сердца царей.",
+        "NEO": "N’aie pas de dispute avec un grand parleur, et n’entasse pas de bois dans son feu.",
+        "NAB": "Dispute not with a man of railing speech, heap no wood upon his fire.",
+        "VAT_ES": "No disputes con un charlatán, no eches más leña a su fuego.",
+        "CEI": "Non litigare con un uomo linguacciuto e non aggiungere legna sul suo fuoco."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "μὴ πρόσπαιζε ἀπαιδεύτῳ, ἵνα μὴ ἀτιμάζωνται οἱ πρόγονοί σου.",
+        "VUL": "Non litiges cum homine linguato,/ et non strues in ignem illius ligna./",
+        "SYN": "Не спорь с человеком, дерзким на язык, и не подкладывай дров на огонь его.",
+        "NEO": "Ne plaisante pas avec un homme mal élevé, de peur que tes ancêtres ne soient déshonorés.",
+        "NAB": "Be not too familiar with an unruly man, lest he speak ill of your forebears.",
+        "VAT_ES": "No bromees con un hombre grosero, para que tus antepasados no sean injuriados.",
+        "CEI": "Non scherzare con l'ignorante, perché non siano disprezzati i tuoi antenati."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "μὴ ὀνείδιζε ἄνθρωπον ἀποστρέφοντα ἀπὸ ἁμαρτίας· μνήσθητι ὅτι πάντες ἐσμὲν ἐν ἐπιτίμοις.",
+        "VUL": "Non communices homini indocto,/ ne male de progenie tua loquatur./",
+        "SYN": "Не шути с невеждою, чтобы не подверглись бесчестию твои предки.",
+        "NEO": "Ne raille pas l’homme qui se détourne du péché ; souviens-toi que nous sommes tous dignes de châtiment.",
+        "NAB": "Shame not a repentant sinner; remember, we all are guilty.",
+        "VAT_ES": "No reproches el pecador que se arrepiente: recuerda que todo somos culpables.",
+        "CEI": "Non insultare un uomo convertito dal peccato, ricòrdati che siamo tutti degni di pena."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "μὴ ἀτιμάσῃς ἄνθρωπον ἐν γήρει αὐτοῦ, καὶ γὰρ ἐξ ἡμῶν γηράσκουσιν.",
+        "VUL": "Ne despicias hominem avertentem se a peccato,/ neque improperes ei :/ memento quoniam omnes in correptione sumus./",
+        "SYN": "Не укоряй человека, обращающегося от греха: помни, что все мы находимся под эпитимиями.",
+        "NEO": "Ne méprise pas un homme dans sa vieillesse, car quelques-uns d’entre nous vieillissent aussi.",
+        "NAB": "Insult no man when he is old, for some of us, too, will grow old.",
+        "VAT_ES": "No desprecies a un hombre en su vejez porque también nosotros envejecemos.",
+        "CEI": "Non disprezzare un uomo quando è vecchio, perché anche di noi alcuni invecchieranno."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "μὴ ἐπίχαιρε ἐπὶ νεκρῷ· μνήσθητι ὅτι πάντες τελευτῶμεν.",
+        "VUL": "Ne spernas hominem in sua senectute,/ etenim ex nobis senescunt./",
+        "SYN": "Не пренебрегай человека в старости его, ибо и мы стареем.",
+        "NEO": "Ne te réjouis pas quand un homme meurt ; souviens-toi que nous mourrons tous.",
+        "NAB": "Rejoice not when a man dies; remember, we are all to die.",
+        "VAT_ES": "No te alegres por la muerte de nadie: recuerda que todos tenemos un fin.",
+        "CEI": "Non gioire per la morte di qualcuno; ricòrdati che tutti moriremo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "μὴ παρίδῃς διήγημα σοφῶν, καὶ ἐν ταῖς παροιμίαις αὐτῶν ἀναστρέφου· ὅτι παρ’ αὐτῶν μαθήσῃ παιδείαν καὶ λειτουργῆσαι μεγιστᾶσιν.",
+        "VUL": "Noli de mortuo inimico tuo gaudere :/ sciens quoniam omnes morimur,/ et in gaudium nolumus venire./",
+        "SYN": "Не радуйся смерти человека, хотя бы он был самый враждебный тебе: помни, что все мы умрем.",
+        "NEO": "Ne néglige pas les discours des sages, et entretiens-toi de leurs maximes ; car tu apprendras d’eux l’instruction, et l’art de servir les grands.",
+        "NAB": "Spurn not the discourse of the wise, but acquaint yourself with their proverbs; From them you will acquire the training to serve in the presence of princes.",
+        "VAT_ES": "No menosprecies la conversación de los sabios: vuelve sobre sus máximas una y otra vez, porque de ellos recibirás la instrucción y el arte de servir a los grandes.",
+        "CEI": "Non disdegnare i discorsi dei saggi, medita piuttosto le loro massime, perché da essi imparerai la dottrina e potrai essere a servizio dei grandi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "μὴ ἀστόχει διηγήματος γερόντων, καὶ γὰρ αὐτοὶ ἔμαθον παρὰ τῶν πατέρων αὐτῶν· ὅτι παρ’ αὐτῶν μαθήσῃ σύνεσιν καὶ ἐν καιρῷ χρείας δοῦναι ἀπόκρισιν.",
+        "VUL": "Ne despicias narrationem presbyterorum sapientium,/ et in proverbiis eorum conversare :/",
+        "SYN": "Не пренебрегай повестью мудрых и упражняйся в притчах их;",
+        "NEO": "Ne laisse pas échapper les discours des vieillards, car eux-mêmes ont appris de leurs pères. Tu apprendras d’eux la sagesse, et à bien répondre quand il en sera besoin.",
+        "NAB": "Reject not the tradition of old men which they have learned from their fathers; From it you will obtain the knowledge how to answer in time of need.",
+        "VAT_ES": "No te apartes de la conversación de los ancianos, porque ellos mismos aprendieron de sus padres: de ellos aprenderás a ser inteligente y a dar una respuesta en el momento justo.",
+        "CEI": "Non trascurare i discorsi dei vecchi, perché anch'essi hanno imparato dai loro padri; da essi imparerai l'accorgimento e come rispondere a tempo opportuno."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "μὴ ἔκκαιε ἄνθρακας ἁμαρτωλοῦ, μὴ ἐμπυρισθῇς ἐν πυρὶ φλογὸς αὐτοῦ.",
+        "VUL": "ab ipsis enim disces sapientiam et doctrinam intellectus,/ et servire magnatis sine querela./",
+        "SYN": "ибо от них научишься ведению и - как служить сильным.",
+        "NEO": "N’allume pas les charbons du pécheur, de peur que tu ne sois dévoré par les ardeurs de sa flamme.",
+        "NAB": "Kindle not the coals of a sinner, lest you be consumed in his flaming fire.",
+        "VAT_ES": "No remuevas las brasas del pecador, no sea que te quemes con sus lamas.",
+        "CEI": "Non attizzare le braci del peccatore, per non bruciare nel fuoco della sua fiamma."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "μὴ ἐξαναστῇς ἀπὸ προσώπου ὑβριστοῦ, ἵνα μὴ ἐνκαθίσῃ ὡς ἔνεδρον τῷ στόματί σου.",
+        "VUL": "Non te prætereat narratio seniorum,/ ipsi enim didicerunt a patribus suis :/",
+        "SYN": "Не удаляйся от повести старцев, ибо и они научились от отцов своих,",
+        "NEO": "Ne tiens pas tête à l’insolent qui t’insulte, de peur qu’il ne se mette en embuscade pour épier tes paroles.",
+        "NAB": "Let not the impious man intimidate you; it will set him in ambush against you.",
+        "VAT_ES": "No cedas en presencia de un insolente, porque él sería como una trampa tendida ante tu boca.",
+        "CEI": "Non ritirarti dalla presenza del violento, perché egli non ponga un agguato contro di te."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "μὴ δανίσῃς ἀνθρώπῳ ἰσχυροτέρῳ σου, καὶ ἐὰν δανίσῃς, ὡς ἀπολωλεκὼς γίνου.",
+        "VUL": "quoniam ab ipsis disces intellectum,/ et in tempore necessitatis dare responsum./",
+        "SYN": "и ты научишься от них рассудительности и - какой в случае надобности дать ответ.",
+        "NEO": "Ne prête pas à plus puissant que toi, et, si tu lui as prêté une chose, tiens-la pour perdue.",
+        "NAB": "Lend not to one more powerful than yourself; and whatever you lend, count it as lost.",
+        "VAT_ES": "No prestes a un hombre más fuerte que tú, y si prestas, dalo por perdido.",
+        "CEI": "Non imprestare a un uomo più forte di te; quello che gli hai prestato, consideralo come perduto."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "μὴ ἐγγυήσῃ ὑπὲρ δύναμίν σου, καὶ ἐὰν ἐγγυήσῃ, ὡς ἀποτίσων φρόντιζε.",
+        "VUL": "Non incendas carbones peccatorum arguens eos,/ et ne incendaris flamma ignis peccatorum illorum./",
+        "SYN": "Не разжигай углей грешника, чтобы не сгореть от пламени огня его,",
+        "NEO": "Ne te porte pas caution au delà de tes moyens, et, si tu as cautionné, inquiète-toi comme devant payer.",
+        "NAB": "Go not surety beyond your means; think any pledge a debt you must pay.",
+        "VAT_ES": "No ofrezcas garantía más allá de tus medios, y si lo haces, prepárate a pagar.",
+        "CEI": "Non garantire oltre la tua possibilità; se hai garantito, preòccupati di soddisfare."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "μὴ δικάζου μετὰ κριτοῦ. κατὰ γὰρ τὴν δόξαν αὐτοῦ κρινοῦσιν αὐτῷ.",
+        "VUL": "Ne contra faciem stes contumeliosi,/ ne sedeat quasi insidiator ori tuo./",
+        "SYN": "и не восставай против наглеца, чтобы он не засел засадою в устах твоих.",
+        "NEO": "N’aie pas de litige avec un juge, car on décidera pour lui selon sa considération.",
+        "NAB": "Contend not at law with a judge, for he will settle it according to his whim.",
+        "VAT_ES": "No entres en pleito con un juez: en razón de su dignidad, fallarán a su favor.",
+        "CEI": "Non muovere causa a un giudice, perché giudicheranno in suo favore secondo il suo parere."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "μετὰ τολμηροῦ μὴ πορεύου ἐν ὁδῷ, ἵνα μὴ καταβαρύνηται κατὰ σοῦ. ⸂⸆⸃ αὐτὸς γὰρ κατὰ τὸ θέλημα αὐτοῦ ποιήσει, καὶ τῇ ἀφροσύνῃ αὐτοῦ συναπολῇ·",
+        "VUL": "Noli fnerari homini fortiori te :/ quod si fneraveris, quasi perditum habe./",
+        "SYN": "Не давай взаймы человеку, который сильнее тебя; а если дашь, то считай себя потерявшим.",
+        "NEO": "Ne fais pas route avec un téméraire, de peur qu’il ne te devienne à charge ; car il fait tout à sa fantaisie, et, par sa folie, tu périras avec lui.",
+        "NAB": "Travel not with a ruthless man, lest he weigh you down with calamity; For he will go his own way straight, and through his folly you will perish with him.",
+        "VAT_ES": "No te pongas en camino con un aventurero, no sea que se convierta en una carga para ti, porque él obrará según su capricho y su locura te hará perecer junto con él.",
+        "CEI": "Con un avventuriero non metterti in viaggio, per paura che ti diventi insopportabile; egli agirà secondo il suo capriccio e andrai con lui in rovina per la sua insipienza."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "μετὰ θυμώδους μὴ ποιήσῃς μάχην, καὶ μὴ διαπορεύου μετ’ αὐτοῦ τὴν ἔρημον· ὅτι ὡς οὐδὲν ἐν ὀφθαλμοῖς αὐτοῦ αἷμα, καὶ ὅπου οὐκ ἔστιν βοήθεια καταβαλεῖ σε.",
+        "VUL": "Non spondeas super virtutem tuam :/ quod si spoponderis, quasi restituens cogita./",
+        "SYN": "Не поручайся сверх силы твоей; а если поручишься, заботься, как обязанный заплатить.",
+        "NEO": "N’aie pas de querelle avec un homme irascible, et ne traverse pas le désert avec lui ; car le sang est comme rien à ses yeux, et là où il n’y aura pas de secours, il te terrassera.",
+        "NAB": "Provoke no quarrel with a quick-tempered man, nor ride with him through the desert, For bloodshed is nothing to him; when there is no one to help you, he will destroy you.",
+        "VAT_ES": "No te pelees con un hombre iracundo, ni atravieses el desierto con él, porque la sangre no vale nada a sus ojos y cuando estés indefenso, te derribará.",
+        "CEI": "Non litigare con un irascibile e non traversare con lui un luogo solitario, perché ai suoi occhi il sangue è come nulla, dove non c'è possibilità di aiuto ti assalirà."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "μετὰ μωροῦ μὴ συμβουλεύου, οὐ γὰρ δυνήσεται λόγον στέξαι.",
+        "VUL": "Non judices contra judicem,/ quoniam secundum quod justum est judicat./",
+        "SYN": "Не судись с судьею, потому что его будут судить по его почету.",
+        "NEO": "Ne tiens pas conseil avec un fou, car il ne pourra rien taire.",
+        "NAB": "Take no counsel with a fool, for he can keep nothing to himself.",
+        "VAT_ES": "No consultes tus asuntos con un necio, porque es incapaz de mantener el secreto.",
+        "CEI": "Non consigliarti con lo stolto, perché non saprà mantenere un segreto."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "ἐνώπιον ἀλλοτρίου μὴ ποιήσῃς κρυπτόν, οὐ γὰρ γινώσκεις τί τέξεται.",
+        "VUL": "Cum audace non eas in via,/ ne forte gravet mala sua in te :/ ipse enim secundum voluntatem suam vadit,/ et simul cum stultitia illius peries./",
+        "SYN": "С отважным не пускайся в путь, чтобы он не был тебе в тягость; ибо он будет поступать по своему произволу, и ты можешь погибнуть от его безрассудства.",
+        "NEO": "Devant un étranger ne fais rien qui doive rester caché, car tu ne sais ce qu’il peut faire.",
+        "NAB": "Before a stranger do nothing that should be kept secret, for you know not what it will engender.",
+        "VAT_ES": "No hagas un extraño lo que debe quedar oculto, porque no sabes con qué puede salir.",
+        "CEI": "Davanti a uno straniero non fare nulla di riservato, perché non sai che cosa ne seguirà."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "παντὶ ἀνθρώπῳ μὴ ἔκφαινε σὴν καρδίαν, καὶ μὴ ἀναφερέτω σοι χάριν.",
+        "VUL": "Cum iracundo non facias rixam,/ et cum audace non eas in desertum :/ quoniam quasi nihil est ante illum sanguis,/ et ubi non est adjutorium, elidet te./",
+        "SYN": "Не заводи ссоры со вспыльчивым и не проходи с ним чрез пустыню; потому что кровь - как ничто в глазах его, и где нет помощи, он поразит тебя.",
+        "NEO": "Ne découvre pas ton cœur à tout homme, si tu ne veux pas en être mal récompensé.",
+        "NAB": "Open your heart to no man, and banish not your happiness.",
+        "VAT_ES": "No abras tu corazón a cualquiera ni dejes que cualquiera te haga un favor.",
+        "CEI": "Con un uomo qualsiasi non aprire il tuo cuore ed egli non abbia a portar via il tuo bene."
+      }
+    }
+  }
+}

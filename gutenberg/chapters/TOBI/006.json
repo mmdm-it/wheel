@@ -1,0 +1,287 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "TOBI_006",
+  "book_key": "TOBI",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "καὶ ἐπαύσατο κλαίουσα.",
+        "VUL": "Profectus est autem Tobias, et canis secutus est eum, et mansit prima mansione juxta fluvium Tigris.",
+        "SYN": "И перестала она плакать.",
+        "NEO": "Et elle sécha ses larmes.",
+        "NAB": "Then she stopped weeping.",
+        "VAT_ES": "El joven partió con el ángel, y el perro los seguía. Caminaron los dos y, al llegar la primera noche, acamparon a orillas del río Tigris."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "Οἱ δὲ πορευόμενοι τὴν ὁδὸν ἦλθον ἑσπέρας ἐπὶ τὸν Τίγριν ποταμόν, καὶ ηὐλίζοντο ἐκεῖ.",
+        "VUL": "Et exivit ut lavaret pedes suos, et ecce piscis immanis exivit ad devorandum eum.",
+        "SYN": "А путники вечером пришли к реке Тигру и остановились там на ночь.",
+        "NEO": "Le garçon partit avec l’ange, et le chien suivit. Ils marchèrent tous les deux et, le premier soir venu, ils campèrent au bord du Tigre.",
+        "NAB": "When the boy left home, accompanied by the angel, the dog followed Tobiah out of the house and went with them. The travelers walked till nightfall, and made camp beside the Tigris River.",
+        "VAT_ES": "El joven bajó a lavarse los pies en el río, y de pronto saltó del agua un gran pez que intentó devorarle el pie. El joven gritó,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "τὸ δὲ παιδάριον κατέβη περικλύσασθαι, καὶ ἀνεπήδησεν ἰχθὺς ἀπὸ τοῦ ποταμοῦ καὶ ἐβουλήθη καταπεῖν τὸ παιδάριον.",
+        "VUL": "Quem expavescens Tobias clamavit voce magna, dicens : Domine, invadit me.",
+        "SYN": "Юноша пошел помыться, но из реки показалась рыба и хотела поглотить юношу.",
+        "NEO": "Le garçon était descendu au fleuve pour se laver les pieds, quand un grand poisson bondit hors de l’eau et essaya d’avaler son pied. Le garçon poussa un cri+ 6:3 La Vulg. ajoute : \\+it Effrayé, Tobie poussa un grand cri, en disant : « Seigneur, il se jette sur moi ! »\\+it**",
+        "NAB": "Now when the boy went down to wash his feet in the river, a large fish suddenly leaped out of the water and tried to swallow his foot. He shouted in alarm.",
+        "VAT_ES": "pero el ángel le dijo: «&iexcl;Agárralo y no lo dejes escapar!». Entonces él se apoderó del pez y lo sacó a tierra."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ὁ δὲ ἄγγελος εἶπεν αὐτῷ Ἐπιλαβοῦ τοῦ ἰχθύος· καὶ ἐκράτησεν τὸν ἰχθὺν τὸ παιδάριον, καὶ ἀνέβαλεν αὐτὸν ἐπὶ τὴν γῆν.",
+        "VUL": "Et dixit ei angelus : Apprehende branchiam ejus, et trahe eum ad te. Quod cum fecisset, attraxit eum in siccum, et palpitare cpit ante pedes ejus.",
+        "SYN": "Тогда Ангел сказал ему: возьми эту рыбу. И юноша схватил рыбу и вытащил на землю.",
+        "NEO": "et l’ange dit : « Attrape le poisson, ne le lâche pas ». Le garçon maîtrisa le poisson et le tira sur la rive.",
+        "NAB": "But the angel said to him, \"Take hold of the fish and don't let it get away!\" The boy seized the fish and hauled it up on the shore.",
+        "VAT_ES": "El ángel le dijo: «Abrelo, sácale la hiel, el corazón y el hígado, y colócalos aparte; luego tira las entrañas. Porque la hiel, el corazón y el hígado son útiles como remedios»."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτῷ ὁ ἄγγελος Ἀνάτεμε τὸν ἰχθύν, καὶ λαβὼν τὴν καρδίαν καὶ τὸ ἧπαρ καὶ τὴν χολὴν θὲς ἀσφαλῶς.",
+        "VUL": "Tunc dixit ei angelus : Exentera hunc piscem, et cor ejus, et fel, et jecur repone tibi : sunt enim hæc necessaria ad medicamenta utiliter.",
+        "SYN": "И сказал ему Ангел: разрежь рыбу, возьми сердце, печень и желчь, и сбереги _их_.",
+        "NEO": "L’ange dit : « Ouvre-le, prends le fiel, le cœur et le foie, mets-les de côté et jette les entrailles, car le fiel, le cœur et le foie sont d’utiles remèdes ».",
+        "NAB": "The angel then told him: \"Cut the fish open and take out its gall, heart, and liver, and keep them with you; but throw away the entrails. Its gall, heart, and liver make useful medicines.\"",
+        "VAT_ES": "El joven abrió el pez, y le sacó la hiel, el corazón y el hígado. Asó una parte del pez y la comió, y guardó la otra parte después de haberla salado."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "καὶ ἐποίησεν τὸ παιδάριον ὡς εἶπεν αὐτῷ ὁ ἄγγελος, τὸν δὲ ἰχθὺν ὀπτήσαντες ἔφαγον· καὶ ὥδευον ἀμφότεροι ἕως ἤγγισαν ἐν Ἐκβατάνοις.",
+        "VUL": "Quod cum fecisset, assavit carnes ejus, et secum tulerunt in via : cetera salierunt, quæ sufficerent eis, quousque pervenirent in Rages civitatem Medorum.",
+        "SYN": "Юноша так и сделал, как сказал ему Ангел; рыбу же испекли и съели; и пошли дальше и дошли до Екбатан.",
+        "NEO": "Le garçon ouvrit le poisson et en retira le fiel, le cœur et le foie. Il fit frire une partie du poisson pour son repas et en garda un peu pour le saler. Puis ils reprirent la route ensemble jusqu’à ce qu’ils soient arrivés en Médie.",
+        "NAB": "After the lad had cut the fish open, he put aside the gall, heart, and liver. Then he broiled and ate part of the fish; the rest he salted and kept for the journey.",
+        "VAT_ES": "Luego los dos juntos continuaron su camino hasta llegar cerca de Media."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν τὸ παιδάριον τῷ ἀγγέλῳ Ἀζαρία ἀδελφέ, τί ἐστιν τὸ ἧπαρ καὶ ἡ καρδία καὶ ἡ χολὴ τοῦ ἰχθύος;",
+        "VUL": "Tunc interrogavit Tobias angelum, et dixit ei : Obsecro te, Azaria frater, ut dicas mihi quod remedium habebunt ista, quæ de pisce servare jussisti ?",
+        "SYN": "И сказал юноша Ангелу: брат Азария, к чему эта печень и сердце и желчь из рыбы?",
+        "NEO": "Le garçon posa alors à l’ange la question suivante : « Frère Azarias, que peuvent guérir le cœur, le foie et le fiel du poisson ?",
+        "NAB": "Afterward they traveled on together till they were near Media. The boy asked the angel this question: \"Brother Azariah, what medicinal value is there in the fish's heart, liver, and gall?\"",
+        "VAT_ES": "Entre tanto, el joven preguntó al ángel: «Hermano Azarías, &iquest;qué clase de remedio hay en el corazón, en el hígado y en le hiel del pez?»."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτῷ Ἡ καρδία καὶ τὸ ἧπαρ, ἐάν τινα ὀχλῇ δαιμόνιον ἢ πνεῦμα πονηρόν· ταῦτα δὲ καπνίσαι ἐνώπιον ἀνθρώπου ἢ γυναικός, καὶ οὐ μηκέτι ὀχληθῇ.",
+        "VUL": "Et respondens angelus, dixit ei : Cordis ejus particulam si super carbones ponas, fumus ejus extricat omne genus dæmoniorum sive a viro, sive a muliere, ita ut ultra non accedat ad eos.",
+        "SYN": "Он отвечал: если кого мучит демон или злой дух, то сердцем и печенью должно курить пред _таким_ мужчиною или женщиною, и более уже не будет мучиться;",
+        "NEO": "Il répondit : « On brûle le cœur et le foie du poisson, et on utilise leur fumée pour guérir un homme ou une femme en proie à un démon ou à un mauvais esprit ; ce mal disparaît définitivement et ne laisse aucune trace.",
+        "NAB": "He answered: \"As regards the fish's heart and liver, if you burn them so that the smoke surrounds a man or a woman who is afflicted by a demon or evil spirit, the affliction will leave him completely, and no demons will ever return to him again.",
+        "VAT_ES": "El ángel le respondió: «Si se quema el corazón o el hígado del pez delante de un hombre o de una mujer atacados por un demonio o espíritu maligno, cesan los ataques y desaparecen para siempre."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "ἡ δὲ χολὴ ἐνχρῖσαι ἄνθρωπον ὃς ἔχει λευκώματα ἐν τοῖς ὀφθαλμοῖς, καὶ ἰαθήσεται.",
+        "VUL": "Et fel valet ad ungendos oculos in quibus fuerit albugo, et sanabuntur.",
+        "SYN": "а желчью помазать человека, который имеет бельма на глазах, и он исцелится.",
+        "NEO": "Quant au fiel, il est utilisé comme onguent pour les yeux de celui qui a des taches blanches* sur les yeux ; après l’avoir utilisé, il suffit de souffler sur les taches pour les guérir. »",
+        "NAB": "And as for the gall, if you rub it on the eyes of a man who has cataracts, blowing into his eyes right on the cataracts, his sight will be restored.\"",
+        "VAT_ES": "En cuanto a la hiel, sirve para ungir los ojos afectados de manchas blancas: basta con soplar sobre esas manchas para que se curen»."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "Ὡς δὲ προσήγγισαν τῇ Ῥάγῃ,",
+        "VUL": "Et dixit ei Tobias : Ubi vis ut maneamus ?",
+        "SYN": "Когда же приближались к Раге,",
+        "NEO": "Ils entrèrent en Médie et étaient presque arrivés à Ecbatane",
+        "NAB": "When they had entered Media and were getting close to Ecbatana,",
+        "VAT_ES": "Cuando entraron en Media y ya se acercaban a Ecbátana,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "εἶπεν ὁ ἄγγελος τῷ παιδαρίῳ Ἀδελφέ, σήμερον αὐλισθησόμεθα παρὰ Ῥαγουήλῳ· καὶ αὐτὸς συγγενής σού ἐστιν, καὶ ἔστιν αὐτῷ θυγάτηρ ὀνόματι Σάρρα.",
+        "VUL": "Respondensque angelus, ait : Est hic Raguel nomine, vir propinquus de tribu tua, et hic habet filiam nomine Saram, sed neque masculum neque feminam ullam habet aliam præter eam.",
+        "SYN": "Ангел сказал юноше: брат, ныне мы переночуем у Рагуила, твоего родственника, у которого есть дочь, по имени Сарра.",
+        "NEO": "lorsque Raphaël dit au garçon : « Frère Tobias », il répondit : « Oui ? » L’ange poursuivit : « Ce soir, nous allons loger chez Ragouël, qui est un de tes parents. Il a une fille qui s’appelle Sarra,",
+        "NAB": "Raphael said to the boy, \"Brother Tobiah!\" He answered, \"Yes, what is it?\" Raphael continued: \"Tonight we must stay with Raguel, who is a relative of yours. He has a daughter named Sarah,",
+        "VAT_ES": "Rafael dijo al joven: «&iexcl;Hermano Tobías!». Este le preguntó: «&iquest;Qué quieres?». El ángel continuó: «Es necesario que pasemos esta noche en casa de Rag&uuml;el; él es pariente tuyo y tiene una hija que se llama Sara."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "λαλήσω περὶ αὐτῆς τοῦ δοθῆναί σοι αὐτὴν εἰς γυναῖκα, ὅτι σοὶ ἐπιβάλλει ἡ κληρονομία αὐτῆς, καὶ σὺ μόνος εἶ ἐκ τοῦ γένους αὐτῆς· καὶ τὸ κοράσιον καλὸν καὶ φρόνιμόν ἐστιν.",
+        "VUL": "Tibi debetur omnis substantia ejus, et oportet eam te accipere conjugem.",
+        "SYN": "Я поговорю о ней, чтобы дали ее тебе в жену, ибо тебе предназначено наследство ее, так как ты один из рода ее; а девица прекрасная и умная.",
+        "NEO": "mais à part Sarra, il n’a pas d’autre fils ou fille. Maintenant, tu es son plus proche parent ; elle te revient en priorité et tu peux revendiquer l’héritage de son père. C’est une fille réfléchie, courageuse et très belle, et son père l’aime beaucoup.",
+        "NAB": "but no other child. Since you are Sarah's closest relative, you before all other men have the right to marry her. Also, her father's estate is rightfully yours to inherit. Now the girl is sensible, courageous, and very beautiful; and her father loves her dearly.\"",
+        "VAT_ES": "Ella es su única hija, Por ser tú el pariente más cercano, tienes más derecho sobre ella que todos los demás, y es justo que recibas la herencia de su padre. Es una joven seria, decidida y muy hermosa, y su padre es una persona honrada»."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "καὶ νῦν ἄκουσόν μου καὶ λαλήσω τῷ πατρὶ αὐτῆς, καὶ ὅταν ὑποστρέψωμεν ἐκ Ῥάγων, ποιήσωμεν τὸν γάμον. διότι ἐπίσταμαι Ῥαγουὴλ ὅτι οὐ μὴ δῷ αὐτὴν ἀνδρὶ ἑτέρῳ κατὰ τὸν νόμον Μωυσῆ, ἢ ὀφειλέσει θάνατον, ὅτι τὴν κληρονομίαν σοὶ καθήκει λαβεῖν ἢ πάντα ἄνθρωπον.",
+        "VUL": "Pete ergo eam a patre ejus, et dabit tibi eam in uxorem.",
+        "SYN": "Так послушайся меня; я поговорю с ее отцом и, когда мы возвратимся из Раг, совершим брак. Я знаю Рагуила: он никак не даст ее мужу чужому вопреки закону Моисееву; иначе повинен будет смерти, так как наследство следует получить тебе, а не другому кому.",
+        "NEO": "Tu as le droit de l’épouser. Écoute, mon frère ; ce soir même, je parlerai de la jeune fille à son père et ferai en sorte qu’elle soit fiancée à toi, et quand nous reviendrons de Rhagès, nous pourrons célébrer le mariage. Je t’assure que Ragouël n’a aucun droit de te refuser ou de la fiancer à quelqu’un d’autre. Ce serait demander la mort, comme le prescrit le Livre de Moïse, dès lors qu’il sait que la parenté te donne le droit prééminent d’épouser sa fille. Alors écoute, mon frère. Ce soir même, nous allons parler de la fille et demander sa main. Quand nous reviendrons de Rhagès, nous irons la chercher et l’emmènerons chez nous ».",
+        "NAB": "He continued: \"Since you have the right to marry her, listen to me, brother. Tonight I will ask the girl's father to let us have her as your bride. When we return from Rages, we will hold the wedding feast for her. I know that Raguel cannot keep her from you or let her become engaged to another man; that would be a capital crime according to the decree in the Book of Moses, and he knows that it is your right, before all other men, to marry his daughter. So heed my words, brother; tonight we must speak for the girl, so that we may have her engaged to you. And when we return from Rages, we will take her and bring her back with us to your house.\"",
+        "VAT_ES": "Y añadió: «Tú tienes el derecho de casarte con ella. Escúchame, hermano: esta misma noche, yo hablaré de ella a su padre para que él la haga tu prometida; y cuando volvamos de Ragués, celebraremos la boda. Yo sé que Rag&uuml;el no podría negártela ni comprometerla con otro, sin hacerse reo de muerte, conforme a lo prescrito en el Libro de Moisés. El sabe, en efecto, que a ti te corresponde tomar por esposa a su hija antes de cualquier otro. Por eso, óyeme, bien, hermano: esta noche, hablaremos de la joven y la pediremos en matrimonio. Cuando volvamos de Ragués, la tomaremos y la llevaremos con nosotros a tu casa»."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "τότε εἶπεν τὸ παιδάριον τῷ ἀγγέλῳ Ἀζαρία ἀδελφέ, ἀκήκοα ἐγὼ τὸ κοράσιον δεδόσθαι ἑπτὰ ἀνδράσιν, καὶ πάντας ἐν τῷ νυμφῶνι ἀπολωλότας.",
+        "VUL": "Tunc respondit Tobias, et dixit : Audio quia tradita est septem viris, et mortui sunt : sed et hoc audivi, quia dæmonium occidit illos.",
+        "SYN": "Тогда юноша сказал Ангелу: брат Азария, я слышал, что эту девицу отдавали семи мужам, но все они погибли в брачной комнате;",
+        "NEO": "Tobias répondit à Raphaël : « Frère Azarias, on m’a dit qu’elle a déjà été donnée en mariage sept fois et que chaque fois son époux est mort dans la chambre nuptiale. Il est mort la nuit même où il est entré dans sa chambre ; et j’ai entendu des gens dire que c’était un démon qui les avait tués,",
+        "NAB": "Tobiah objected, however: \"Brother Azariah, I have heard that this woman has already been married seven times, and that her husbands died in their bridal chambers. On the very night they approached her, they dropped dead. And I have heard it said that it was a demon who killed them.",
+        "VAT_ES": "Tobías dijo a Rafael: «Hermano Azarías, he oído decir que ella se ha casado siete veces, y que todos sus maridos han muerto la noche misma de la boda, apenas se acercaban a ella. También he oído decir que es un demonio el que los mataba."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "καὶ νῦν ἐγὼ μόνος εἰμὶ τῷ πατρί, καὶ φοβοῦμαι μὴ εἰσελθὼν ἀποθάνω καθὼς καὶ οἱ πρότεροι, ὅτι δαιμόνιον φιλεῖ αὐτὴν ὃ οὐκ ἀδικεῖ οὐδένα πλὴν τῶν προσαγόντων αὐτῇ. καὶ νῦν ἐγὼ φοβοῦμαι μὴ ἀποθάνω, καὶ κατάξω τὴν ζωὴν τοῦ πατρός μου καὶ τῆς μητρός μου μετ’ ὀδύνης ἐπ’ ἐμοὶ εἰς τὸν τάφον αὐτῶν· καὶ υἱὸς ἕτερος οὐχ ὑπάρχει αὐτοῖς ὃς θάψει αὐτούς.",
+        "VUL": "Timeo ergo, ne forte et mihi hæc eveniant : et cum sim unicus parentibus meis, deponam senectutem illorum cum tristitia ad inferos.",
+        "SYN": "а я один у отца и боюсь, как бы, войдя _к ней_, не умереть, подобно прежним; ее любит демон, который никому не вредит, кроме приближающихся к ней. И потому я боюсь, как бы мне не умереть и не свести жизнь отца моего и матери моей печалью обо мне во гроб их; а другого сына, который похоронил бы их, нет у них.",
+        "NEO": "et cela me fait peur. Pour elle, le démon ne fait aucun mal car il l’aime, mais dès qu’un homme tente de l’approcher, il le tue. Je suis le fils unique de mon père, et je ne veux pas mourir. Je ne veux pas que mon père et ma mère aient à s’affliger de moi jusqu’à la tombe. Ils n’ont pas d’autre fils pour les enterrer. »",
+        "NAB": "So now I too am afraid of this demon. Because he loves her, he does not harm her; but he does slay any man who wishes to come close to her. I am my father's only child. If I should die, I would bring my father and mother down to their grave in sorrow over me. And they have no other son to bury them!\"",
+        "VAT_ES": "Yo tengo miedo, ya que a ella no le hace ningún mal, porque la ama, pero mata a todo el que intenta tener relaciones con ella. Y soy hijo único, y si muero, mi padre y mi madre bajarán a la tumba llenos de dolor por mi causa. Y ellos no tienen otro hijo que les dé sepultura»."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "εἶπεν δὲ αὐτῷ ὁ ἄγγελος Οὐ μέμνησαι τῶν λόγων ὧν ἐνετείλατό σοι ὁ πατήρ σου ὑπὲρ τοῦ λαβεῖν σε γυναῖκα ἐκ τοῦ γένους σου; καὶ νῦν ἄκουσόν μου, ἀδελφέ, διότι σοὶ ἔσται εἰς γυναῖκα, καὶ τοῦ δαιμονίου μηδένα λόγον ἔχε, ὅτι τὴν νύκτα ταύτην δοθήσεταί σοι αὕτη εἰς γυναῖκα.",
+        "VUL": "Tunc angelus Raphaël dixit ei : Audi me, et ostendam tibi qui sunt, quibus prævalere potest dæmonium.",
+        "SYN": "Ангел сказал ему: разве ты забыл слова, которые заповедал тебе отец твой, чтобы ты взял жену из рода твоего? Послушай же меня, брат: ей следует быть твоею женою, а о демоне не беспокойся; в эту же ночь отдадут тебе ее в жену.",
+        "NEO": "L’ange dit : « As-tu oublié les conseils de ton père ? Il t’a en effet conseillé de choisir une femme de la famille de ton père. Écoute donc, mon frère. Ne t’inquiète pas pour le démon, prends-la. Ce soir même, je te le promets, elle te sera donnée comme épouse.",
+        "NAB": "Raphael said to him: \"Do you not remember your father's orders? He commanded you to marry a woman from your own family. So now listen to me, brother; do not give another thought to this demon, but marry Sarah. I know that tonight you shall have her for your wife!",
+        "VAT_ES": "El ángel le dijo: «&iquest;No recuerdas que tu padre te recomendó casarte con una mujer de tu familia? Escúchame bien, hermano. No te preocupes de ese demonio y cásate con ella. Estoy seguro de que esta noche te la darán por esposa."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "καὶ ἐὰν εἰσέλθῃς εἰς τὸν νυμφῶνα, λήμψῃ τέφραν θυμιαμάτων καὶ ἐπιθήσεις ἀπὸ τῆς καρδίας καὶ τοῦ ἥπατος τοῦ ἰχθύος· καὶ καπνίσεις,",
+        "VUL": "Hi namque qui conjugium ita suscipiunt, ut Deum a se et a sua mente excludant, et suæ libidini ita vacent sicut equus et mulus quibus non est intellectus : habet potestatem dæmonium super eos.",
+        "SYN": "Только, когда ты войдешь в брачную комнату, возьми курильницу, вложи в нее сердца и печени рыбы и покури;",
+        "NEO": "Puis, une fois dans la chambre nuptiale, prends le cœur et le foie du poisson et mets-en un peu sur l’encens qui brûle. La puanteur s’élèvera,",
+        "NAB": "When you go into the bridal chamber, take the fish's liver and heart, and place them on the embers for the incense.",
+        "VAT_ES": "Pero eso sí, cuando entres en la habitación, toma una parte del hígado y del corazón del pez, y colócalos sobre el brasero de los perfumes. Entonces se extenderá el olor, y cuando el demonio lo huela, huirá y nunca más aparecerá a su lado."
+      }
+    }
+  }
+}

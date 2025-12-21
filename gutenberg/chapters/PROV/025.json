@@ -1,0 +1,519 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PROV_025",
+  "book_key": "PROV",
+  "sequence": 25,
+  "chapter_in": {
+    "MT": 25,
+    "VUL": 25,
+    "LXX": 25
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "גַּם אֵ֭לֶּה מִשְׁלֵ֣י שְׁלֹמֹ֑ה אֲשֶׁ֥ר הֶ֝עְתִּ֗יקוּ אַנְשֵׁ֤י חִזְקִיָּ֬ה מֶֽלֶךְ יְהוּדָֽה׃",
+        "LXX": "Αὗται αἱ παιδεῖαι Σαλωμῶντος αἱ ἀδιάκριτοι, ἃς ἐξεγράψαντο οἱ φίλοι Ἑζεκίου τοῦ βασιλέως τῆς Ἰουδαίας.",
+        "VUL": "Hæ quoque parabolæ Salomonis, quas transtulerunt viri Ezechiæ regis Juda.",
+        "SYN": "И это притчи Соломона, которые собрали мужи Езекии, царя Иудейского.",
+        "NEO": "Voici encore des Proverbes de Salomon, recueillis par les gens d’Ézéchias, roi de Juda.",
+        "NAB": "These also are proverbs of Solomon. The men of Hezekiah, king of Judah, transmitted them.",
+        "VAT_ES": "Estos también son proverbios de Salomón, coleccionados por los hombres de Ezequías, rey de Judá.",
+        "CEI": "Anche questi sono proverbi di Salomone, trascritti dagli uomini di Ezechia, re di Giuda."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כְּבֹ֣ד אֱ֭לֹהִים הַסְתֵּ֣ר דָּבָ֑ר וּ/כְבֹ֥ד מְ֝לָכִ֗ים חֲקֹ֣ר דָּבָֽר׃",
+        "LXX": "Δόξα θεοῦ κρύπτει λόγον, δόξα δὲ βασιλέως τιμᾷ πράγματα.",
+        "VUL": "[Gloria Dei est celare verbum,/ et gloria regum investigare sermonem./",
+        "SYN": "Слава Божия - облекать тайною дело, а слава царей - исследывать дело.",
+        "NEO": "La gloire de Dieu, c’est de cacher les choses ; la gloire des rois, c’est de les examiner.",
+        "NAB": "God has glory in what he conceals, kings have glory in what they fathom.",
+        "VAT_ES": "Es gloria de Dios mantener oculta una cosa, y gloria de los reyes investigarla.",
+        "CEI": "È gloria di Dio nascondere le cose, è gloria dei re investigarle."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "שָׁמַ֣יִם לָ֭/רוּם וָ/אָ֣רֶץ לָ/עֹ֑מֶק וְ/לֵ֥ב מְ֝לָכִ֗ים אֵ֣ין חֵֽקֶר׃",
+        "LXX": "οὐρανὸς ὑψηλός, γῆ δὲ βαθεῖα, καρδία δὲ βασιλέως ἀνεξέλεγκτος.",
+        "VUL": "Cælum sursum, et terra deorsum,/ et cor regum inscrutabile./",
+        "SYN": "Как небо в высоте и земля в глубине, так сердце царей - неисследимо.",
+        "NEO": "Le ciel dans sa hauteur, la terre dans sa profondeur, et le cœur des rois sont impénétrables.",
+        "NAB": "As the heavens in height, and the earth in depth, the heart of kings is unfathomable.",
+        "VAT_ES": "El cielo por su altura, la tierra por su profundidad, y el corazón de los reyes son impenetrables.",
+        "CEI": "I cieli per la loro altezza, la terra per la sua profondità e il cuore dei re sono inesplorabili."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הָג֣וֹ סִיגִ֣ים מִ/כָּ֑סֶף וַ/יֵּצֵ֖א לַ/צֹּרֵ֣ף כֶּֽלִי׃",
+        "LXX": "τύπτε ἀδόκιμον ἀργύριον, καὶ καθαρισθήσεται καθαρὸν ἅπαν·",
+        "VUL": "Aufer rubiginem de argento,/ et egredietur vas purissimum./",
+        "SYN": "Отдели примесь от серебра, и выйдет у серебряника сосуд:",
+        "NEO": "Ote les scories de l’argent, et il en sortira un vase pour le fondeur.",
+        "NAB": "Remove the dross from silver, and it comes forth perfectly purified;",
+        "VAT_ES": "Quita las escorias de la plata, y saldrá un vaso para el orfebre;",
+        "CEI": "Togli le scorie dall'argento e l'orafo ne farà un bel vaso;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הָג֣וֹ רָ֭שָׁע לִ/פְנֵי מֶ֑לֶךְ וְ/יִכּ֖וֹן בַּ/צֶּ֣דֶק כִּסְאֽ/וֹ׃",
+        "LXX": "κτεῖνε ἀσεβεῖς ἐκ προσώπου βασιλέως, καὶ κατορθώσει ἐν δικαιοσύνῃ ὁ θρόνος αὐτοῦ.",
+        "VUL": "Aufer impietatem de vultu regis,/ et firmabitur justitia thronus ejus./",
+        "SYN": "удали неправедного от царя, и престол его утвердится правдою.",
+        "NEO": "Ote le méchant de devant le roi, et son trône s’affermira dans la justice.",
+        "NAB": "Remove the wicked from the presence of the king, and his throne is made firm through righteousness.",
+        "VAT_ES": "quita al malvado de la presencia del rey, y su trono se afianzará en la justicia.",
+        "CEI": "togli il malvagio dalla presenza del re e il suo trono si stabilirà sulla giustizia."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אַל תִּתְהַדַּ֥ר לִ/פְנֵי מֶ֑לֶךְ וּ/בִ/מְק֥וֹם גְּ֝דֹלִ֗ים אַֽל תַּעֲמֹֽד׃",
+        "LXX": "μὴ ἀλαζονεύου ἐνώπιον βασιλέως, μηδὲ ἐν τόποις δυναστῶν ὑφίστασο·",
+        "VUL": "Ne gloriosus appareas coram rege,/ et in loco magnorum ne steteris./",
+        "SYN": "Не величайся пред лицем царя, и на месте великих не становись;",
+        "NEO": "Ne prends pas des airs superbes devant le roi, et ne te mets pas à la place des grands ;",
+        "NAB": "Claim no honor in the king's presence, nor occupy the place of great men;",
+        "VAT_ES": "No te des importancia en la presencia del rey ni te pongas en el lugar de los grandes:",
+        "CEI": "Non darti arie davanti al re e non metterti al posto dei grandi,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּ֤י ט֥וֹב אֲמָר לְ/ךָ֗ עֲֽלֵ֫ה הֵ֥נָּה מֵֽ֭/הַשְׁפִּ֣ילְ/ךָ לִ/פְנֵ֣י נָדִ֑יב אֲשֶׁ֖ר רָא֣וּ עֵינֶֽי/ךָ׃",
+        "LXX": "κρεῖσσον γάρ σοι τὸ ῥηθῆναι Ἀνάβαινε πρὸς μέ, ἢ ταπεινῶσαί σε ἐν προσώπῳ δυνάστου. ἃ εἶδον οἱ ὀφθαλμοί σου λέγε.",
+        "VUL": "Melius est enim ut dicatur tibi : Ascende huc,/ quam ut humilieris coram principe.]",
+        "SYN": "потому что лучше, когда скажут тебе: \"пойди сюда повыше\", нежели когда понизят тебя пред знатным, которого видели глаза твои.",
+        "NEO": "car il vaut mieux qu’on te dise : « Monte ici », que si l’on t’humilie devant le prince que tes yeux ont vu.",
+        "NAB": "For it is better that you be told, \"Come up closer!\" than that you be humbled before the prince.",
+        "VAT_ES": "más vale que te digan: «Sube aquí», que verte humillado ante un noble. Lo que han visto tus ojos,",
+        "CEI": "perché è meglio sentirsi dire: \"Sali quassù\" piuttosto che essere umiliato davanti a uno superiore. Quanto i tuoi occhi hanno visto"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אַל תֵּצֵ֥א לָ/רִ֗ב מַ֫הֵ֥ר פֶּ֣ן מַה תַּ֭עֲשֶׂה בְּ/אַחֲרִיתָ֑/הּ בְּ/הַכְלִ֖ים אֹתְ/ךָ֣ רֵעֶֽ/ךָ׃",
+        "LXX": "μὴ πρόσπιπτε εἰς μάχην ταχέως, ἵνα μὴ μεταμεληθῇς ἐπ’ ἐσχάτῳ, ἡνίκα ἄν σε ὀνειδίσῃ ὁ σὸς φίλος.",
+        "VUL": "[Quæ viderunt oculi tui ne proferas in jurgio cito,/ ne postea emendare non possis,/ cum dehonestaveris amicum tuum./",
+        "SYN": "Не вступай поспешно в тяжбу: иначе что будешь делать при окончании, когда соперник твой осрамит тебя?",
+        "NEO": "Ne pars pas trop vite en contestation, de peur qu’à la fin tu ne saches que faire.",
+        "NAB": "What your eyes have seen bring not forth hastily against an opponent; For what will you do later on when your neighbor puts you to shame?",
+        "VAT_ES": "no te apresures a llevarlo a juicio; porque &iquest;qué harás al final, cuando tu prójimo te cubra de confusión?",
+        "CEI": "non metterlo subito fuori in un processo; altrimenti che farai alla fine, quando il tuo prossimo ti svergognerà?"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "רִֽ֭יבְ/ךָ רִ֣יב אֶת רֵעֶ֑/ךָ וְ/ס֖וֹד אַחֵ֣ר אַל תְּגָֽל׃",
+        "LXX": "ἀναχώρει εἰς τὰ ὀπίσω, μὴ καταφρόνει,",
+        "VUL": "Causam tuam tracta cum amico tuo,/ et secretum extraneo ne reveles :/",
+        "SYN": "Веди тяжбу с соперником твоим, но тайны другого не открывай,",
+        "NEO": "Lorsque ton prochain t’aura outragé, défends ta cause contre ton prochain, mais ne révèle pas le secret d’un autre,",
+        "NAB": "Discuss your case with your neighbor, but another man's secret do not disclose;",
+        "VAT_ES": "Defiende tu causa contra tu prójimo, pero no reveles el secreto de otro,",
+        "CEI": "Discuti la tua causa con il tuo vicino, ma non rivelare il segreto altrui;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "פֶּֽן יְחַסֶּדְ/ךָ֥ שֹׁמֵ֑עַ וְ֝/דִבָּתְ/ךָ֗ לֹ֣א תָשֽׁוּב׃",
+        "LXX": "μή σε ὀνειδίσῃ μὲν ὁ φίλος· ἡ δὲ μάχη σου καὶ ἡ ἔχθρα οὐκ ἀπέσται, [1] ἀλλ’ ἔσται σοι ἴση θανάτῳ. χάρις καὶ φιλία ἐλευθεροῖ, ἃς τήρησον σεαυτῷ, ἵνα μὴ ἐπονείδιστος γένῃ, ἀλλὰ φύλαξον τὰς ὁδούς σου εὐσυναλλάκτως.",
+        "VUL": "ne forte insultet tibi cum audierit,/ et exprobrare non cesset./ Gratia et amicitia liberant :/ quas tibi serva, ne exprobrabilis fias./",
+        "SYN": "дабы не укорил тебя услышавший это, и тогда бесчестие твое не отойдет от тебя. [Любовь и дружба освобождают: сбереги их для себя, чтобы не сделаться тебе достойным поношения; сохрани пути твои благоустроенными.]",
+        "NEO": "de peur que celui qui l’apprendra ne te couvre de honte, et que ton ignominie ne s’efface pas.",
+        "NAB": "Lest, hearing it, he reproach you, and your ill repute cease not.",
+        "VAT_ES": "no sea que te eche en cara el que lo oye y tu infamia sea irreparable.",
+        "CEI": "altrimenti chi ti ascolta ti biasimerebbe e il tuo discredito sarebbe irreparabile."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "תַּפּוּחֵ֣י זָ֭הָב בְּ/מַשְׂכִּיּ֥וֹת כָּ֑סֶף דָּ֝בָ֗ר דָּבֻ֥ר עַל אָפְנָֽי/ו׃",
+        "LXX": "μῆλον χρυσοῦν ἐν ὁρμίσκῳ σαρδίου, οὕτως εἰπεῖν λόγον.",
+        "VUL": "Mala aurea in lectis argenteis,/ qui loquitur verbum in tempore suo./",
+        "SYN": "Золотые яблоки в серебряных прозрачных сосудах - слово, сказанное прилично.",
+        "NEO": "Comme des pommes d’or sur des ciselures d’argent, ainsi est une parole dite à propos.",
+        "NAB": "Like golden apples in silver settings are words spoken at the proper time.",
+        "VAT_ES": "Manzanas de oro con filigranas de plata es la palabra dicha oportunamente.",
+        "CEI": "Come frutti d'oro su vassoio d'argento così è una parola detta a suo tempo."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "נֶ֣זֶם זָ֭הָב וַ/חֲלִי כָ֑תֶם מוֹכִ֥יחַ חָ֝כָ֗ם עַל אֹ֥זֶן שֹׁמָֽעַת׃",
+        "LXX": "εἰς ἐνώτιον χρυσοῦν καὶ σάρδιον πολυτελὲς δέδεται, λόγος σοφὸς εἰς εὐήκοον οὖς.",
+        "VUL": "Inauris aurea, et margaritum fulgens,/ qui arguit sapientem et aurem obedientem./",
+        "SYN": "Золотая серьга и украшение из чистого золота - мудрый обличитель для внимательного уха.",
+        "NEO": "Comme un anneau d’or et un ornement d’or fin, ainsi est le sage qui reprend une oreille docile.",
+        "NAB": "Like a golden earring, or a necklace of fine gold, is a wise reprover to an obedient ear.",
+        "VAT_ES": "Anillo de oro y collar de oro fino es el sabio que reprende al que sabe escuchar.",
+        "CEI": "Come anello d'oro e collana d'oro fino è un saggio che ammonisce un orecchio attento."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כְּ/צִנַּת שֶׁ֨לֶג בְּ/י֬וֹם קָצִ֗יר צִ֣יר נֶ֭אֱמָן לְ/שֹׁלְחָ֑י/ו וְ/נֶ֖פֶשׁ אֲדֹנָ֣י/ו יָשִֽׁיב׃",
+        "LXX": "ὥσπερ ἔξοδος ἐν ἀμήτῳ κατὰ καῦμα ὠφελεῖ, οὕτως ἄγγελος πιστὸς τοὺς ἀποστείλαντας αὐτόν· ψυχὰς γὰρ τῶν αὐτῷ χρωμένων ὠφελεῖ.",
+        "VUL": "Sicut frigus nivis in die messis,/ ita legatus fidelis ei qui misit eum :/ animam ipsius requiescere facit./",
+        "SYN": "Что прохлада от снега во время жатвы, то верный посол для посылающего его: он доставляет душе господина своего отраду.",
+        "NEO": "Comme la fraîcheur de la neige au temps de la moisson, ainsi est le messager fidèle pour ceux qui l’envoient ; il réjouit l’âme de son maître.",
+        "NAB": "Like the coolness of snow in the heat of the harvest is a faithful messenger for the one who sends him. (He refreshes the soul of his master.)",
+        "VAT_ES": "Como frescura de nieve en tiempo de cosecha es el emisario fiel para aquel que lo envía: él reconforta el ánimo de su señor.",
+        "CEI": "Come fresco di neve al tempo della mietitura, è un messaggero verace per chi lo manda; egli rinfranca l'animo del suo signore."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "נְשִׂיאִ֣ים וְ֭/רוּחַ וְ/גֶ֣שֶׁם אָ֑יִן אִ֥ישׁ מִ֝תְהַלֵּ֗ל בְּ/מַתַּת שָֽׁקֶר׃",
+        "LXX": "ὥσπερ ἄνεμοι καὶ νέφη καὶ ὑετοὶ ἐπιφανέστατα, οὕτως ὁ καυχώμενος ἐπὶ δόσει ψευδεῖ.",
+        "VUL": "Nubes, et ventus, et pluviæ non sequentes,/ vir gloriosus et promissa non complens./",
+        "SYN": "Что тучи и ветры без дождя, то человек, хвастающий ложными подарками.",
+        "NEO": "Des nuages et du vent sans pluie, tel est l’homme qui se glorifie de présents mensongers.",
+        "NAB": "Like clouds and wind when no rain follows is the man who boastfully promises what he never gives.",
+        "VAT_ES": "Nubes y viento, pero sin lluvia, es el que se jacta de dar y no da nada.",
+        "CEI": "Nuvole e vento, ma senza pioggia, tale è l'uomo che si vanta di regali che non fa."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "בְּ/אֹ֣רֶךְ אַ֭פַּיִם יְפֻתֶּ֣ה קָצִ֑ין וְ/לָשׁ֥וֹן רַ֝כָּ֗ה תִּשְׁבָּר גָּֽרֶם׃",
+        "LXX": "ἐν μακροθυμίᾳ εὐοδία βασιλεῦσιν, γλῶσσα δὲ μαλακὴ συντρίβει ὀστᾶ.",
+        "VUL": "Patientia lenietur princeps,/ et lingua mollis confringet duritiam.]",
+        "SYN": "Кротостью склоняется к милости вельможа, и мягкий язык переламывает кость.",
+        "NEO": "Par la patience le juge se laisse persuader, et une langue douce peut briser des os.",
+        "NAB": "By patience is a ruler persuaded, and a soft tongue will break a bone.",
+        "VAT_ES": "Con mucha paciencia se convence a un magistrado, y la lengua suave quiebra hasta un hueso.",
+        "CEI": "Con la pazienza il giudice si lascia persuadere, una lingua dolce spezza le ossa."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "דְּבַ֣שׁ מָ֭צָאתָ אֱכֹ֣ל דַּיֶּ֑/ךָּ פֶּן תִּ֝שְׂבָּעֶ֗/נּוּ וַ/הֲקֵֽאתֽ/וֹ׃",
+        "LXX": "μέλι εὑρὼν φάγε τὸ ἱκανόν, μή ποτε πλησθεὶς ἐξεμέσῃς.",
+        "VUL": "[Mel invenisti : comede quod sufficit tibi,/ ne forte satiatus evomas illud./",
+        "SYN": "Нашел ты мед, - ешь, сколько тебе потребно, чтобы не пресытиться им и не изблевать его.",
+        "NEO": "Si tu trouves du miel, n’en mange que ce qui te suffit, de peur que, rassasié, tu ne le vomisses.",
+        "NAB": "If you find honey, eat only what you need, lest you become glutted with it and vomit it up.",
+        "VAT_ES": "&iquest;Has encontrado miel? Come lo indispensable, no sea que te hartes y la tengas que vomitar.",
+        "CEI": "Se hai trovato il miele, mangiane quanto ti basta, per non esserne nauseato e poi vomitarlo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "הֹקַ֣ר רַ֭גְלְ/ךָ מִ/בֵּ֣ית רֵעֶ֑/ךָ פֶּן יִ֝שְׂבָּעֲ/ךָ֗ וּ/שְׂנֵאֶֽ/ךָ׃",
+        "LXX": "σπάνιον εἴσαγε σὸν πόδα πρὸς σεαυτοῦ φίλον, μή ποτε πλησθεὶς σου μισήσῃ σε.",
+        "VUL": "Subtrahe pedem tuum de domo proximi tui,/ nequando satiatus oderit te./",
+        "SYN": "Не учащай входить в дом друга твоего, чтобы он не наскучил тобою и не возненавидел тебя.",
+        "NEO": "Mets rarement le pied dans la maison de ton prochain, de peur que, fatigué de toi, il ne te haïsse.",
+        "NAB": "Let your foot be seldom in your neighbor's house, lest he have more than enough of you, and hate you.",
+        "VAT_ES": "Pon tu pie raramente en la casa de tu vecino, no sea que se harte de ti y te aborrezca.",
+        "CEI": "Metti di rado il piede in casa del tuo vicino, perché non si stanchi di te e ti prenda in odio."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "מֵפִ֣יץ וְ֭/חֶרֶב וְ/חֵ֣ץ שָׁנ֑וּן אִ֥ישׁ עֹנֶ֥ה בְ֝/רֵעֵ֗/הוּ עֵ֣ד שָֽׁקֶר׃",
+        "LXX": "ῥόπαλον καὶ μάχαιρα καὶ τόξευμα ἀκιδωτόν, οὕτως καὶ ἀνὴρ ὁ καταμαρτυρῶν τοῦ φίλου αὐτοῦ μαρτυρίαν ψευδῆ.",
+        "VUL": "Jaculum, et gladius, et sagitta acuta,/ homo qui loquitur contra proximum suum falsum testimonium./",
+        "SYN": "Что молот и меч и острая стрела, то человек, произносящий ложное свидетельство против ближнего своего.",
+        "NEO": "Une massue, une épée et une flèche aiguë, tel est l’homme qui porte un faux témoignage contre son prochain.",
+        "NAB": "Like a club, or a sword, or a sharp arrow, is the man who bears false witness against his neighbor.",
+        "VAT_ES": "Maza, espada y flecha puntiaguda es el que atestigua falsamente contra su prójimo.",
+        "CEI": "Mazza, spada e freccia acuta è colui che depone il falso contro il suo prossimo."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "שֵׁ֣ן רֹ֭עָה וְ/רֶ֣גֶל מוּעָ֑דֶת מִבְטָ֥ח בּ֝וֹגֵ֗ד בְּ/י֣וֹם צָרָֽה׃",
+        "LXX": "ὁδὸς κακοῦ καὶ ποὺς παρανόμου ὀλεῖται ἐν ἡμέρᾳ κακῇ.",
+        "VUL": "Dens putridus, et pes lassus,/ qui sperat super infideli in die angustiæ,/",
+        "SYN": "Что сломанный зуб и расслабленная нога, то надежда на ненадежного [человека] в день бедствия.",
+        "NEO": "Une dent cassée et un pied qui glisse, c’est la confiance qu’inspire un perfide au jour du malheur.",
+        "NAB": "Like an infected tooth or an unsteady foot is (dependence on) a faithless man in time of trouble.",
+        "VAT_ES": "Diente picado, pie que vacila es confiar en el traidor cuando llega la adversidad.",
+        "CEI": "Qual dente cariato e piede slogato tale è la fiducia dell'uomo sleale nel giorno della sventura,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "מַ֥עֲדֶה בֶּ֨גֶד בְּ/י֣וֹם קָ֭רָה חֹ֣מֶץ עַל נָ֑תֶר וְ/שָׁ֥ר בַּ֝/שִּׁרִ֗ים עַ֣ל לֶב רָֽע׃",
+        "LXX": "ὥσπερ ὄξος ἕλκει ἀσύμφορον, οὕτως προσπεσὸν πάθος ἐν σώματι καρδίαν λυπεῖ. [1] ὥσπερ σὴς ἐν ἱματίῳ καὶ σκώληξ ξύλῳ, οὕτως λύπη ἀνδρὸς βλάπτει καρδίαν.",
+        "VUL": "et amittit pallium in die frigoris./ Acetum in nitro,/ qui cantat carmina cordi pessimo./ Sicut tinea vestimento, et vermis ligno,/ ita tristitia viri nocet cordi./",
+        "SYN": "Что снимающий с себя одежду в холодный день, что уксус на рану, то поющий песни печальному сердцу. [Как моль одежде и червь дереву, так печаль вредит сердцу человека.]",
+        "NEO": "Oter son manteau un jour de froid, répandre du vinaigre sur du nitre, ainsi fait celui qui dit des chansons à un cœur affligé.",
+        "NAB": "Like a moth in clothing, or a maggot in wood, sorrow gnaws at the human heart.",
+        "VAT_ES": "Quitar el manto en un día de frío, echar vinagre sobre una llaga es entonar canciones a un corazón afligido.",
+        "CEI": "è togliersi le vesti in un giorno rigido. Aceto su una piaga viva, tali sono i canti per un cuore afflitto."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "אִם רָעֵ֣ב שֹׂ֭נַאֲ/ךָ הַאֲכִלֵ֣/הוּ לָ֑חֶם וְ/אִם צָ֝מֵ֗א הַשְׁקֵ֥/הוּ מָֽיִם׃",
+        "LXX": "ἐὰν πεινᾷ ὁ ἐχθρός σου, ψώμιζε αὐτόν, ἐὰν διψᾷ, πότιζε αὐτόν·",
+        "VUL": "Si esurierit inimicus tuus, ciba illum ;/ si sitierit, da ei aquam bibere :/",
+        "SYN": "Если голоден враг твой, накорми его хлебом; и если он жаждет, напой его водою:",
+        "NEO": "Si ton ennemi a faim, donne-lui du pain à manger ; s’il a soif, donne-lui de l’eau à boire ;",
+        "NAB": "If your enemy be hungry, give him food to eat, if he be thirsty, give him to drink;",
+        "VAT_ES": "Si tu enemigo tiene hambre, dale de comer; si tiene sed, dale de beber:",
+        "CEI": "Se il tuo nemico ha fame, dagli pane da mangiare, se ha sete, dagli acqua da bere;"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כִּ֤י גֶֽחָלִ֗ים אַ֭תָּה חֹתֶ֣ה עַל רֹאשׁ֑/וֹ וַֽ֝/יהוָ֗ה יְשַׁלֶּם לָֽ/ךְ׃",
+        "LXX": "τοῦτο γὰρ ποιῶν ἄνθρακας πυρὸς σωρεύσεις ἐπὶ τὴν κεφαλὴν αὐτοῦ, ὁ δὲ Κύριος ἀνταποδώσει σοι ἀγαθά.",
+        "VUL": "prunas enim congregabis super caput ejus,/ et Dominus reddet tibi./",
+        "SYN": "ибо, [делая сие,] ты собираешь горящие угли на голову его, и Господь воздаст тебе.",
+        "NEO": "car tu amasses ainsi des charbons sur sa tête, et \\+w Yahweh|strong=\"H3068\"\\+w** te récompensera.",
+        "NAB": "For live coals you will heap on his head, and the LORD will vindicate you.",
+        "VAT_ES": "así acumulas carbones encendidos sobre tu cabeza y el Señor te recompensará.",
+        "CEI": "perché così ammasserai carboni ardenti sul suo capo e il Signore ti ricompenserà."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "ר֣וּחַ צָ֭פוֹן תְּח֣וֹלֵֽל גָּ֑שֶׁם וּ/פָנִ֥ים נִ֝זְעָמִ֗ים לְשׁ֣וֹן סָֽתֶר׃",
+        "LXX": "ἄνεμος βορέας ἐξεγείρει νέφη, πρόσωπον δὲ ἀναιδὲς γλῶσσαν ἐρεθίζει.",
+        "VUL": "Ventus aquilo dissipat pluvias,/ et facies tristis linguam detrahentem./",
+        "SYN": "Северный ветер производит дождь, а тайный язык - недовольные лица.",
+        "NEO": "Le vent du nord enfante la pluie, et la langue qui médit en secret, un visage irrité.",
+        "NAB": "The north wind brings rain, and a backbiting tongue an angry countenance.",
+        "VAT_ES": "El viento del norte engendra la lluvia y la lengua simuladora, un rostro irritado.",
+        "CEI": "La tramontana porta la pioggia, un parlare in segreto provoca lo sdegno sul volto."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "ט֗וֹב שֶׁ֥בֶת עַל פִּנַּת גָּ֑ג מֵ/אֵ֥שֶׁת מדונים מִ֝דְיָנִ֗ים וּ/בֵ֥ית חָֽבֶר׃",
+        "LXX": "κρεῖττον οἰκεῖν ἐπὶ γωνίας δώματος ἢ μετὰ γυναικὸς λοιδόρου ἐν οἰκίᾳ κοινῇ.",
+        "VUL": "Melius est sedere in angulo domatis/ quam cum muliere litigiosa et in domo communi./",
+        "SYN": "Лучше жить в углу на кровле, нежели со сварливою женою в пространном доме.",
+        "NEO": "Mieux vaut habiter à l’angle d’un toit, que de rester avec une femme querelleuse.",
+        "NAB": "It is better to dwell in a corner of the housetop than in a roomy house with a quarrelsome woman.",
+        "VAT_ES": "Más vale habitar en un rincón del techo que compartir la casa con una mujer pendenciera.",
+        "CEI": "Abitare su un angolo del tetto è meglio di una moglie litigiosa e una casa in comune."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "מַ֣יִם קָ֭רִים עַל נֶ֣פֶשׁ עֲיֵפָ֑ה וּ/שְׁמוּעָ֥ה ט֝וֹבָ֗ה מֵ/אֶ֥רֶץ מֶרְחָֽק׃",
+        "LXX": "ὥσπερ ὕδωρ ψυχρὸν ψυχῇ διψώσῃ προσηνές, οὕτως ἀγγελία ἀγαθὴ ἐκ γῆς μακρόθεν.",
+        "VUL": "Aqua frigida animæ sitienti,/ et nuntius bonus de terra longinqua./",
+        "SYN": "Что холодная вода для истомленной жаждой души, то добрая весть из дальней страны.",
+        "NEO": "De l’eau fraîche pour une personne altérée, telle est une bonne nouvelle venant d’une terre lointaine.",
+        "NAB": "Like cool water to one faint from thirst is good news from a far country.",
+        "VAT_ES": "Agua fresca para una garganta reseca es una buena noticia que llega de un país lejano.",
+        "CEI": "Come acqua fresca per una gola riarsa è una buona notizia da un paese lontano."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "מַעְיָ֣ן נִ֭רְפָּשׂ וּ/מָק֣וֹר מָשְׁחָ֑ת צַ֝דִּ֗יק מָ֣ט לִ/פְנֵֽי רָשָֽׁע׃",
+        "LXX": "ὥσπερ εἴ τις πηγὴν φράσσοι καὶ ὕδατος ἔξοδον λυμαίνοιτο, οὕτως ἄκοσμον δίκαιον πεπτωκέναι ἐνώπιον ἀσεβοῦς.",
+        "VUL": "Fons turbatus pede et vena corrupta,/ justus cadens coram impio./",
+        "SYN": "Что возмущенный источник и поврежденный родник, то праведник, падающий пред нечестивым.",
+        "NEO": "Une fontaine troublée et une source corrompue, tel est le juste qui chancelle devant le méchant.",
+        "NAB": "Like a troubled fountain or a polluted spring is a just man who gives way before the wicked.",
+        "VAT_ES": "Fuente enturbiada y manantial contaminado es el justo que vacila ante el malvado.",
+        "CEI": "Fontana torbida e sorgente inquinata, tale è il giusto che vacilla di fronte all'empio."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "אָ֘כֹ֤ל דְּבַ֣שׁ הַרְבּ֣וֹת לֹא ט֑וֹב וְ/חֵ֖קֶר כְּבֹדָ֣/ם כָּבֽוֹד׃",
+        "LXX": "ἐσθίειν μέλι πολὺ οὐ καλόν, τιμᾷν δὲ χρὴ λόγους ἐνδόξους.",
+        "VUL": "Sicut qui mel multum comedit non est ei bonum,/ sic qui scrutator est majestatis opprimetur a gloria./",
+        "SYN": "Как нехорошо есть много меду, так домогаться славы не есть слава.",
+        "NEO": "Il n’est pas bon de manger beaucoup de miel ; ainsi celui qui veut sonder la majesté divine sera accablé par sa gloire.",
+        "NAB": "To eat too much honey is not good; nor to seek honor after honor.",
+        "VAT_ES": "No es bueno comer mucha miel ni buscar excesivos honores.",
+        "CEI": "Mangiare troppo miele non è bene, né lasciarsi prendere da parole adulatrici."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "עִ֣יר פְּ֭רוּצָה אֵ֣ין חוֹמָ֑ה אִ֝֗ישׁ אֲשֶׁ֤ר אֵ֖ין מַעְצָ֣ר לְ/רוּחֽ/וֹ׃",
+        "LXX": "ὥσπερ πόλις τὰ τείχη καταβεβλημένη καὶ ἀτείχιστος, οὕτως ἀνὴρ ὃς οὐ μετὰ βουλῆς τι πράσσει.",
+        "VUL": "Sicut urbs patens et absque murorum ambitu,/ ita vir qui non potest in loquendo cohibere spiritum suum.]",
+        "SYN": "Что город разрушенный, без стен, то человек, не владеющий духом своим.",
+        "NEO": "Une ville forcée qui n’a plus de murailles, tel est l’homme qui ne peut se contenir.",
+        "NAB": "Like an open city with no defenses is the man with no check on his feelings.",
+        "VAT_ES": "Ciudad desmantelada y sin muralla es el hombre que no domina su genio.",
+        "CEI": "Una città smantellata o senza mura tale è l'uomo che non sa dominare la collera."
+      }
+    }
+  }
+}

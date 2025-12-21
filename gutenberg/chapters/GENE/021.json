@@ -1,0 +1,627 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_021",
+  "book_key": "GENE",
+  "sequence": 21,
+  "chapter_in": {
+    "MT": 21,
+    "VUL": 21,
+    "LXX": 21
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַֽ/יהוָ֛ה פָּקַ֥ד אֶת שָׂרָ֖ה כַּ/אֲשֶׁ֣ר אָמָ֑ר וַ/יַּ֧עַשׂ יְהוָ֛ה לְ/שָׂרָ֖ה כַּ/אֲשֶׁ֥ר דִּבֵּֽר׃",
+        "VUL": "Visitavit autem Dominus Saram, sicut promiserat : et implevit quæ locutus est.",
+        "LXX": "Καὶ Κύριος ἐπεσκέψατο τὴν Σάρραν, καθὰ εἶπεν· καὶ ἐποίησεν Κύριος τῇ Σάρρᾳ καθὰ ἐλάλησεν.",
+        "NAB": "The LORD took note of Sarah as he had said he would; he did for her as he had promised.",
+        "SYN": "И призрел Господь на Сарру, как сказал; и сделал Господь Сарре, как говорил.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** visita Sara, comme il l’avait dit ; \\+w Yahweh|strong=\"H3068\"\\+w** accomplit pour Sara ce qu’il avait promis.",
+        "VAT_ES": "El Señor visitó a Sara como lo había dicho, y obró con ella conforme a su promesa.",
+        "CEI": "Il Signore visitò Sara, come aveva detto, e fece a Sara come aveva promesso."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/תַּהַר֩ וַ/תֵּ֨לֶד שָׂרָ֧ה לְ/אַבְרָהָ֛ם בֵּ֖ן לִ/זְקֻנָ֑י/ו לַ/מּוֹעֵ֕ד אֲשֶׁר דִּבֶּ֥ר אֹת֖/וֹ אֱלֹהִֽים׃",
+        "VUL": "Concepitque et peperit filium in senectute sua, tempore quo prædixerat ei Deus.",
+        "LXX": "καὶ συλλαβοῦσα ἔτεκεν Σάρρα τῷ Ἀβραὰμ υἱὸν εἰς τὸ γῆρας, εἰς τὸν καιρὸν καθὰ ἐλάλησεν αὐτῷ Κύριος.",
+        "NAB": "Sarah became pregnant and bore Abraham a son in his old age, at the set time that God had stated.",
+        "SYN": "Сарра зачала и родила Аврааму сына в старости его во время, о котором говорил ему Бог;",
+        "NEO": "Sara conçut et enfanta à Abraham un fils dans sa vieillesse, au terme que Dieu lui avait marqué.",
+        "VAT_ES": "En el momento anunciado por Dios, Sara concibió y dio un hijo a Abraham, que ya era anciano.",
+        "CEI": "Sara concepì e partorì ad Abramo un figlio nella vecchiaia, nel tempo che Dio aveva fissato."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֨א אַבְרָהָ֜ם אֶֽת שֶׁם בְּנ֧/וֹ הַ/נּֽוֹלַד ל֛/וֹ אֲשֶׁר יָלְדָה לּ֥/וֹ שָׂרָ֖ה יִצְחָֽק׃",
+        "VUL": "Vocavitque Abraham nomen filii sui, quem genuit ei Sara, Isaac :",
+        "LXX": "καὶ ἐκάλεσεν Ἀβραὰμ τὸ ὄνομα τοῦ υἱοῦ αὐτοῦ τοῦ γενομένου αὐτῷ, ὃν ἔτεκεν αὐτῷ Σάρρα, Ἰσαάκ·",
+        "NAB": "Abraham gave the name Isaac to this son of his whom Sarah bore him.",
+        "SYN": "и нарек Авраам имя сыну своему, родившемуся у него, которого родила ему Сарра, Исаак;",
+        "NEO": "Abraham donna au fils qui lui était né, que Sara lui avait enfanté, le nom d’Isaac.",
+        "VAT_ES": "Cuando nació el niño que le dio Sara, Abraham le puso el nombre de Isaac.",
+        "CEI": "Abramo chiamò Isacco il figlio che gli era nato, che Sara gli aveva partorito."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יָּ֤מָל אַבְרָהָם֙ אֶת יִצְחָ֣ק בְּנ֔/וֹ בֶּן שְׁמֹנַ֖ת יָמִ֑ים כַּ/אֲשֶׁ֛ר צִוָּ֥ה אֹת֖/וֹ אֱלֹהִֽים׃",
+        "VUL": "et circumcidit eum octavo die, sicut præceperat ei Deus,",
+        "LXX": "⸂⸆⸃ περιέτεμεν δὲ Ἀβραὰμ τὸν Ἰσαὰκ τῇ ὀγδόῃ ἡμέρᾳ, καθὰ ἐνετείλατο αὐτῷ ὁ θεός.",
+        "NAB": "When his son Isaac was eight days old, Abraham circumcised him, as God had commanded.",
+        "SYN": "и обрезал Авраам Исаака, сына своего, в восьмой день, как заповедал ему Бог.",
+        "NEO": "Et Abraham circoncit Isaac, son fils, à l’âge de huit jours, comme Dieu le lui avait ordonné.",
+        "VAT_ES": "Abraham circuncidó a su hijo Isaac a los ocho días, como Dios se lo había ordenado.",
+        "CEI": "Abramo circoncise suo figlio Isacco, quando questi ebbe otto giorni, come Dio gli aveva comandato."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/אַבְרָהָ֖ם בֶּן מְאַ֣ת שָׁנָ֑ה בְּ/הִוָּ֣לֶד ל֔/וֹ אֵ֖ת יִצְחָ֥ק בְּנֽ/וֹ׃",
+        "VUL": "cum centum esset annorum : hac quippe ætate patris, natus est Isaac.",
+        "LXX": "Ἀβραὰμ δὲ ἦν ἑκατὸν ἐτῶν, ἡνίκα ἐγένετο αὐτῷ Ἰσαὰκ ὁ υἱὸς αὐτοῦ.",
+        "NAB": "Abraham was a hundred years old when his son Isaac was born to him.",
+        "SYN": "Авраам был ста лет, когда родился у него Исаак, сын его.",
+        "NEO": "Abraham avait cent ans à la naissance d’Isaac, son fils.",
+        "VAT_ES": "Abraham tenía entonces cien años de edad.",
+        "CEI": "Abramo aveva cento anni, quando gli nacque il figlio Isacco."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֣אמֶר שָׂרָ֔ה צְחֹ֕ק עָ֥שָׂה לִ֖/י אֱלֹהִ֑ים כָּל הַ/שֹּׁמֵ֖עַ יִֽצְחַק לִֽ/י׃",
+        "VUL": "Dixitque Sara : Risum fecit mihi Deus : quicumque audierit, corridebit mihi.",
+        "LXX": "εἶπεν δὲ Σάρρα Γέλωτά μοι ἐποίησεν Κύριος· ὃς γὰρ ἐὰν ἀκούσῃ συγχαρεῖταί μοι.",
+        "NAB": "Sarah then said, \"God has given me cause to laugh, and all who hear of it will laugh with me.",
+        "SYN": "И сказала Сарра: смех сделал мне Бог; кто ни услышит обо мне, рассмеется.",
+        "NEO": "Et Sara dit : « Dieu m’a donné de quoi rire ; quiconque l’apprendra rira à mon sujet. »",
+        "VAT_ES": "Sara dijo: «Dios me ha dado motivo para reír, y todos los que se enteren reirán conmigo».",
+        "CEI": "Allora Sara disse: \"Motivo di lieto riso mi ha dato Dio: chiunque lo saprà sorriderà di me!\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֗אמֶר מִ֤י מִלֵּל֙ לְ/אַבְרָהָ֔ם הֵינִ֥יקָה בָנִ֖ים שָׂרָ֑ה כִּֽי יָלַ֥דְתִּי בֵ֖ן לִ/זְקֻנָֽי/ו׃",
+        "VUL": "Rursumque ait : Quis auditurus crederet Abraham quod Sara lactaret filium, quem peperit ei jam seni ?",
+        "LXX": "καὶ εἶπεν Τίς ἀναγγελεῖ τῷ Ἀβραάμ ὅτι θηλάζει παιδίον Σάρρα; ὅτι ἔτεκον υἱὸν ἐν τῷ γήρει μου.",
+        "NAB": "Who would have told Abraham,\" she added, \"that Sarah would nurse children! Yet I have borne him a son in his old age.\"",
+        "SYN": "И сказала: кто сказал бы Аврааму: Сарра будет кормить детей грудью? ибо в старости его я родила сына.",
+        "NEO": "Elle ajouta : « Qui eût dit à Abraham : Sara allaitera des enfants ? Car j’ai donné un fils à sa vieillesse. »",
+        "VAT_ES": "Y añadió: «&iexcl;Quién le hubiera dicho a Abraham que Sara amamantaría hijos! Porque yo le di un hijo en su vejez».",
+        "CEI": "Poi disse: \"Chi avrebbe mai detto ad Abramo: Sara deve allattare figli! Eppure gli ho partorito un figlio nella sua vecchiaia!\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּגְדַּ֥ל הַ/יֶּ֖לֶד וַ/יִּגָּמַ֑ל וַ/יַּ֤עַשׂ אַבְרָהָם֙ מִשְׁתֶּ֣ה גָד֔וֹל בְּ/י֖וֹם הִגָּמֵ֥ל אֶת יִצְחָֽק׃",
+        "VUL": "Crevit igitur puer, et ablactatus est : fecitque Abraham grande convivium in die ablactationis ejus.",
+        "LXX": "Καὶ ηὐξήθη τὸ παιδίον καὶ ἀπεγαλακτίσθη· καὶ ἐποίησεν Ἀβραὰμ δοχὴν μεγάλην ᾗ ἡμέρᾳ ἀπεγαλακτίσθη Ἰσαὰκ ὁ υἱὸς αὐτοῦ.",
+        "NAB": "Isaac grew, and on the day of the child's weaning, Abraham held a great feast.",
+        "SYN": "Дитя выросло и отнято от груди; и Авраам сделал большой пир в тот день, когда Исаак [сын его] отнят был от груди.",
+        "NEO": "L’enfant grandit, et on le sevra. Abraham fit un grand festin le jour où Isaac fut sevré.",
+        "VAT_ES": "El niño creció y fue destetado, y el día en que lo destetaron, Abraham ofreció un gran banquete.",
+        "CEI": "Il bambino crebbe e fu svezzato e Abramo fece un grande banchetto quando Isacco fu svezzato."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֨רֶא שָׂרָ֜ה אֶֽת בֶּן הָגָ֧ר הַ/מִּצְרִ֛ית אֲשֶׁר יָלְדָ֥ה לְ/אַבְרָהָ֖ם מְצַחֵֽק׃",
+        "VUL": "Cumque vidisset Sara filium Agar Ægyptiæ ludentem cum Isaac filio suo, dixit ad Abraham :",
+        "LXX": "ἰδοῦσα δὲ Σάρρα τὸν υἱὸν Ἁγὰρ τῆς Αἰγυπτίας, ὃς ἐγένετο τῷ Ἀβραάμ, παίζοντα μετὰ Ἰσαὰκ τοῦ υἱοῦ ἑαυτῆς,",
+        "NAB": "Sarah noticed the son whom Hagar the Egyptian had borne to Abraham playing with her son Isaac;",
+        "SYN": "И увидела Сарра, что сын Агари Египтянки, которого она родила Аврааму, насмехается [над ее сыном, Исааком],",
+        "NEO": "Sara vit le fils d’Agar, l’Egyptienne, qu’elle avait enfanté à Abraham, qui riait,",
+        "VAT_ES": "Sara vio que el hijo de Agar, la egipcia, jugaba con su hijo Isaac.",
+        "CEI": "Ma Sara vide che il figlio di Agar l'Egiziana, quello che essa aveva partorito ad Abramo, scherzava con il figlio Isacco."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר֙ לְ/אַבְרָהָ֔ם גָּרֵ֛שׁ הָ/אָמָ֥ה הַ/זֹּ֖את וְ/אֶת בְּנָ֑/הּ כִּ֣י לֹ֤א יִירַשׁ֙ בֶּן הָ/אָמָ֣ה הַ/זֹּ֔את עִם בְּנִ֖/י עִם יִצְחָֽק׃",
+        "VUL": "Ejice ancillam hanc, et filium ejus : non enim erit hæres filius ancillæ cum filio meo Isaac.",
+        "LXX": "καὶ εἶπεν τῷ Ἀβραάμ Ἔκβαλε τὴν παιδίσκην ταύτην καὶ τὸν υἱὸν αὐτῆς· οὐ γὰρ μὴ κληρονομήσει ὁ υἱὸς τῆς παιδίσκης μετὰ τοῦ υἱοῦ μου Ἰσαάκ.",
+        "NAB": "so she demanded of Abraham: \"Drive out that slave and her son! No son of that slave is going to share the inheritance with my son Isaac!\"",
+        "SYN": "и сказала Аврааму: выгони эту рабыню и сына ее, ибо не наследует сын рабыни сей с сыном моим Исааком.",
+        "NEO": "et elle dit à Abraham : « Chasse cette servante et son fils ; car le fils de cette servante ne doit pas hériter avec mon fils, avec Isaac. »",
+        "VAT_ES": "Entonces dijo a Abraham: «Echa a esa esclava y a su hijo, porque el hijo de esa esclava no va a compartir la herencia con mi hijo Isaac».",
+        "CEI": "Disse allora ad Abramo: \"Scaccia questa schiava e suo figlio, perché il figlio di questa schiava non deve essere erede con mio figlio Isacco\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֧רַע הַ/דָּבָ֛ר מְאֹ֖ד בְּ/עֵינֵ֣י אַבְרָהָ֑ם עַ֖ל אוֹדֹ֥ת בְּנֽ/וֹ׃",
+        "VUL": "Dure accepit hoc Abraham pro filio suo.",
+        "LXX": "σκληρὸν δὲ ἐφάνη τὸ ῥῆμα σφόδρα ἐναντίον Ἀβραὰμ περὶ τοῦ υἱοῦ αὐτοῦ Ἰσμαήλ.",
+        "NAB": "Abraham was greatly distressed, especially on account of his son Ishmael.",
+        "SYN": "И показалось это Аврааму весьма неприятным ради сына его [Измаила].",
+        "NEO": "Cette parole déplut beaucoup aux yeux d’Abraham, à cause de son fils Ismaël.",
+        "VAT_ES": "Esto afligió profundamente a Abraham, ya que el otro también era hijo suyo.",
+        "CEI": "La cosa dispiacque molto ad Abramo per riguardo a suo figlio."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֱלֹהִ֜ים אֶל אַבְרָהָ֗ם אַל יֵרַ֤ע בְּ/עֵינֶ֨י/ךָ֙ עַל הַ/נַּ֣עַר וְ/עַל אֲמָתֶ֔/ךָ כֹּל֩ אֲשֶׁ֨ר תֹּאמַ֥ר אֵלֶ֛י/ךָ שָׂרָ֖ה שְׁמַ֣ע בְּ/קֹלָ֑/הּ כִּ֣י בְ/יִצְחָ֔ק יִקָּרֵ֥א לְ/ךָ֖ זָֽרַע׃",
+        "VUL": "Cui dixit Deus : Non tibi videatur asperum super puero, et super ancilla tua : omnia quæ dixerit tibi Sara, audi vocem ejus : quia in Isaac vocabitur tibi semen.",
+        "LXX": "εἶπεν δὲ ὁ θεὸς τῷ Ἀβραάμ Μὴ σκληρὸν ἔστω τὸ ῥῆμα ἐναντίον σου περὶ τοῦ παιδίου καὶ περὶ τῆς παιδίσκης· πάντα ὅσα ἐὰν εἴπῃ σοι Σάρρα, ἄκουε τῆς φωνῆς αὐτῆς· ὅτι ἐν Ἰσαὰκ κληθήσεταί σοι σπέρμα.",
+        "NAB": "But God said to Abraham: \"Do not be distressed about the boy or about your slave woman. Heed the demands of Sarah, no matter what she is asking of you; for it is through Isaac that descendants shall bear your name.",
+        "SYN": "Но Бог сказал Аврааму: не огорчайся ради отрока и рабыни твоей; во всем, что скажет тебе Сарра, слушайся голоса ее, ибо в Исааке наречется тебе семя;",
+        "NEO": "Mais Dieu dit à Abraham : « Que cela ne déplaise pas à tes yeux, à cause de l’enfant et de ta servante ; quoi que Sara te demande, consens-y, car c’est d’Isaac que naîtra la postérité qui portera ton nom.",
+        "VAT_ES": "Pero Dios le dijo: «No te aflijas por el niño y por tu esclava. Concédele a Sara lo que ella te pide, porque de Isaac nacerá la descendencia que llevará tu nombre.",
+        "CEI": "Ma Dio disse ad Abramo: \"Non ti dispiaccia questo, per il fanciullo e la tua schiava: ascolta la parola di Sara in quanto ti dice, ascolta la sua voce, perché attraverso Isacco da te prenderà nome una stirpe."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/גַ֥ם אֶת בֶּן הָ/אָמָ֖ה לְ/ג֣וֹי אֲשִׂימֶ֑/נּוּ כִּ֥י זַרְעֲ/ךָ֖ הֽוּא׃",
+        "VUL": "Sed et filium ancillæ faciam in gentem magnam, quia semen tuum est.",
+        "LXX": "καὶ τὸν υἱὸν δὲ τῆς παιδίσκης ταύτης, εἰς ἔθνος μέγα ποιήσω αὐτόν, ὅτι σπέρμα σόν ἐστιν.",
+        "NAB": "As for the son of the slave woman, I will make a great nation of him also, since he too is your offspring.\"",
+        "SYN": "и от сына рабыни Я произведу [великий] народ, потому что он семя твое.",
+        "NEO": "Néanmoins du fils de la servante je ferai aussi une nation, parce qu’il est né de toi. »",
+        "VAT_ES": "Y en cuanto al hijo de la esclava, yo hará de él una gran nación, porque también es descendiente tuyo».",
+        "CEI": "Ma io farò diventare una grande nazione anche il figlio della schiava, perché è tua prole\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יַּשְׁכֵּ֣ם אַבְרָהָ֣ם בַּ/בֹּ֡קֶר וַ/יִּֽקַּֽח לֶחֶם֩ וְ/חֵ֨מַת מַ֜יִם וַ/יִּתֵּ֣ן אֶל הָ֠גָר שָׂ֧ם עַל שִׁכְמָ֛/הּ וְ/אֶת הַ/יֶּ֖לֶד וַֽ/יְשַׁלְּחֶ֑/הָ וַ/תֵּ֣לֶךְ וַ/תֵּ֔תַע בְּ/מִדְבַּ֖ר בְּאֵ֥ר שָֽׁבַע׃",
+        "VUL": "Surrexit itaque Abraham mane, et tollens panem et utrem aquæ, imposuit scapulæ ejus, tradiditque puerum, et dimisit eam. Quæ cum abiisset, errabat in solitudine Bersabee.",
+        "LXX": "ἀνέστη δὲ Ἀβραὰμ τὸ πρωί, καὶ ἔλαβεν ἄρτους καὶ ἀσκὸν ὕδατος καὶ ἔδωκεν Ἁγάρ· καὶ ἐπέθηκεν ἐπὶ τὸν ὦμον καὶ τὸ παιδίον, καὶ ἀπέστειλεν αὐτήν· ἀπελθοῦσα δὲ ἐπλανᾶτο τὴν ἔρημον, κατὰ τὸ φρέαρ τοῦ ὅρκου.",
+        "NAB": "Early the next morning Abraham got some bread and a skin of water and gave them to Hagar. Then, placing the child on her back, he sent her away. As she roamed aimlessly in the wilderness of Beer-sheba,",
+        "SYN": "Авраам встал рано утром, и взял хлеба и мех воды, и дал Агари, положив ей на плечи, и отрока, и отпустил ее. Она пошла, и заблудилась в пустыне Вирсавии;",
+        "NEO": "Abraham s’étant levé de bon matin, prit du pain et une outre d’eau, les donna à Agar et les mit sur son épaule ; il lui remit aussi l’enfant, et il la renvoya. Elle s’en alla, errant dans le désert de Bersabée.",
+        "VAT_ES": "A la madrugada del día siguiente, Abraham tomó un poco de pan y un odre con agua y se los dio a Agar; se los puso sobre las espaldas, y la despidió junto con el niño. Ella partió y anduvo errante por el desierto de Berseba.",
+        "CEI": "Abramo si alzò di buon mattino, prese il pane e un otre di acqua e li diede ad Agar, caricandoli sulle sue spalle; le consegnò il fanciullo e la mandò via. Essa se ne andò e si smarrì per il deserto di Bersabea."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּכְל֥וּ הַ/מַּ֖יִם מִן הַ/חֵ֑מֶת וַ/תַּשְׁלֵ֣ךְ אֶת הַ/יֶּ֔לֶד תַּ֖חַת אַחַ֥ד הַ/שִּׂיחִֽם׃",
+        "VUL": "Cumque consumpta esset aqua in utre, abjecit puerum subter unam arborum, quæ ibi erant.",
+        "LXX": "ἐξέλειπεν δὲ τὸ ὕδωρ ἐκ τοῦ ἀσκοῦ, καὶ ἔρριψεν τὸ παιδίον ὑποκάτω μιᾶς ἐλάτης·",
+        "NAB": "the water in the skin was used up. So she put the child down under a shrub,",
+        "SYN": "и не стало воды в мехе, и она оставила отрока под одним кустом",
+        "NEO": "Quand l’eau qui était dans l’outre fut épuisée, elle jeta l’enfant sous l’un des arbrisseaux,",
+        "VAT_ES": "Cuando se acabó el agua que llevaba en el odre, puso al niño debajo de unos arbustos,",
+        "CEI": "Tutta l'acqua dell'otre era venuta a mancare. Allora essa depose il fanciullo sotto un cespuglio"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/תֵּלֶךְ֩ וַ/תֵּ֨שֶׁב לָ֜/הּ מִ/נֶּ֗גֶד הַרְחֵק֙ כִּ/מְטַחֲוֵ֣י קֶ֔שֶׁת כִּ֣י אָֽמְרָ֔ה אַל אֶרְאֶ֖ה בְּ/מ֣וֹת הַ/יָּ֑לֶד וַ/תֵּ֣שֶׁב מִ/נֶּ֔גֶד וַ/תִּשָּׂ֥א אֶת קֹלָ֖/הּ וַ/תֵּֽבְךְּ׃",
+        "VUL": "Et abiit, seditque e regione procul quantum potest arcus jacere : dixit enim : Non videbo morientem puerum : et sedens contra, levavit vocem suam et flevit.",
+        "LXX": "ἀπελθοῦσα δὲ ἐκάθητο ἀπέναντι αὐτοῦ μακρότερον, ὡσεὶ τόξου βολήν· εἶπεν γάρ Οὐ μὴ ἴδω τὸν θάνατον τοῦ παιδίου μου. καὶ ἐκάθητο ἀπέναντι αὐτοῦ μακρόθεν· ἀναβοῆσαν δὲ τὸ παιδίον ἔκλαυσεν.",
+        "NAB": "and then went and sat down opposite him, about a bowshot away; for she said to herself, \"Let me not watch to see the child die.\" As she sat opposite him, he began to cry.",
+        "SYN": "и пошла, села вдали, в расстоянии на _один_ выстрел из лука. Ибо она сказала: не _хочу_ видеть смерти отрока. И она села [поодаль] против [него], и подняла вопль, и плакала;",
+        "NEO": "et elle s’en alla s’asseoir vis-à-vis, à une portée d’arc ; car elle disait : « Je ne veux pas voir mourir l’enfant. » Elle s’assit donc vis-à-vis, éleva la voix et pleura.",
+        "VAT_ES": "y fue a sentarse aparte, a la distancia de un tiro de flecha, pensando: «Al menos no veré morir al niño». Y cuando estuvo sentada aparte, prorrumpió en sollozos.",
+        "CEI": "e andò a sedersi di fronte, alla distanza di un tiro d'arco, perché diceva: \"Non voglio veder morire il fanciullo!\". Quando gli si fu seduta di fronte, egli alzò la voce e pianse."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֣ע אֱלֹהִים֮ אֶת ק֣וֹל הַ/נַּעַר֒ וַ/יִּקְרָא֩ מַלְאַ֨ךְ אֱלֹהִ֤ים אֶל הָגָר֙ מִן הַ/שָּׁמַ֔יִם וַ/יֹּ֥אמֶר לָ֖/הּ מַה לָּ֣/ךְ הָגָ֑ר אַל תִּ֣ירְאִ֔י כִּֽי שָׁמַ֧ע אֱלֹהִ֛ים אֶל ק֥וֹל הַ/נַּ֖עַר בַּ/אֲשֶׁ֥ר הוּא שָֽׁם׃",
+        "VUL": "Exaudivit autem Deus vocem pueri : vocavitque angelus Dei Agar de cælo, dicens : Quid agis Agar ? noli timere : exaudivit enim Deus vocem pueri de loco in quo est.",
+        "LXX": "εἰσήκουσεν δὲ ὁ θεὸς τῆς φωνῆς τοῦ παιδίου ἐκ τοῦ τόπου οὗ ἦν, καὶ ἐκάλεσεν ἄγγελος θεοῦ τὴν Ἁγὰρ ἐκ τοῦ οὐρανοῦ καὶ εἶπεν αὐτῇ Τί ἐστιν, Ἁγάρ; μὴ φοβοῦ· ἐπακήκοεν γὰρ ὁ θεὸς τῆς φωνῆς τοῦ παιδίου σου ἐκ τοῦ τόπου οὗ ἐστίν.",
+        "NAB": "God heard the boy's cry, and God's messenger called to Hagar from heaven: \"What is the matter, Hagar? Don't be afraid; God has heard the boy's cry in this plight of his.",
+        "SYN": "и услышал Бог голос отрока [оттуда, где он был]; и Ангел Божий с неба воззвал к Агари и сказал ей: что с тобою, Агарь? не бойся; Бог услышал голос отрока оттуда, где он находится;",
+        "NEO": "Dieu entendit la voix de l’enfant, et l’ange de Dieu appela du ciel Agar, en disant : « Qu’as-tu Agar ? Ne crains point, car Dieu a entendu la voix de l’enfant, dans le lieu où il est.",
+        "VAT_ES": "Dios escuchó la voz del niño, y el Angel de Dios llamó a Agar desde el cielo: «&iquest;Qué te pasa, Agar?», le dijo. «No temas, porque Dios ha oído la voz del niño que está ahí.",
+        "CEI": "Ma Dio udì la voce del fanciullo e un angelo di Dio chiamò Agar dal cielo e le disse: \"Che hai, Agar? Non temere, perché Dio ha udito la voce del fanciullo là dove si trova."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "ק֚וּמִי שְׂאִ֣י אֶת הַ/נַּ֔עַר וְ/הַחֲזִ֥יקִי אֶת יָדֵ֖/ךְ בּ֑/וֹ כִּֽי לְ/ג֥וֹי גָּד֖וֹל אֲשִׂימֶֽ/נּוּ׃",
+        "VUL": "Surge, tolle puerum, et tene manum illius : quia in gentem magnam faciam eum.",
+        "LXX": "ἀνάστηθι καὶ λάβε τὸ παιδίον, καὶ κράτησον τῇ χειρί σου αὐτό· εἰς γάρ ἔθνος μέγα ποιήσω αὐτόν.",
+        "NAB": "Arise, lift up the boy and hold him by the hand; for I will make of him a great nation.\"",
+        "SYN": "встань, подними отрока и возьми его за руку, ибо Я произведу от него великий народ.",
+        "NEO": "Lève-toi, relève l’enfant, prends-le par la main, car je ferai de lui une grande nation. »",
+        "VAT_ES": "Levántate, alza al niño y estréchalo bien en tus brazos, porque yo haré de él una gran nación».",
+        "CEI": "Alzati, prendi il fanciullo e tienilo per mano, perché io ne farò una grande nazione\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יִּפְקַ֤ח אֱלֹהִים֙ אֶת עֵינֶ֔י/הָ וַ/תֵּ֖רֶא בְּאֵ֣ר מָ֑יִם וַ/תֵּ֜לֶךְ וַ/תְּמַלֵּ֤א אֶת הַ/חֵ֨מֶת֙ מַ֔יִם וַ/תַּ֖שְׁקְ אֶת הַ/נָּֽעַר׃",
+        "VUL": "Aperuitque oculos ejus Deus : quæ videns puteum aquæ, abiit, et implevit utrem, deditque puero bibere.",
+        "LXX": "καὶ ἀνέῳξεν ὁ θεὸς τοὺς ὀφθαλμοὺς αὐτῆς, καὶ ἴδεν φρέαρ ὕδατος ζῶντος· καὶ ἐπορεύθη καὶ ἔπλησεν τὸν ἀσκὸν ὕδατος καὶ ἐπότισεν τὸ παιδίον.",
+        "NAB": "Then God opened her eyes, and she saw a well of water. She went and filled the skin with water, and then let the boy drink.",
+        "SYN": "И Бог открыл глаза ее, и она увидела колодезь с водою [живою], и пошла, наполнила мех водою и напоила отрока.",
+        "NEO": "Et Dieu lui ouvrit les yeux, et elle vit un puits d’eau ; elle alla remplir l’outre d’eau et donna à boire à l’enfant.",
+        "VAT_ES": "En seguida Dios le abrió los ojos, y ella divisó un pozo de agua. Fue entonces a llenar el odre con agua y dio de beber al niño.",
+        "CEI": "Dio le aprì gli occhi ed essa vide un pozzo d'acqua. Allora andò a riempire l'otre e fece bere il fanciullo."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֧י אֱלֹהִ֛ים אֶת הַ/נַּ֖עַר וַ/יִּגְדָּ֑ל וַ/יֵּ֨שֶׁב֙ בַּ/מִּדְבָּ֔ר וַ/יְהִ֖י רֹבֶ֥ה קַשָּֽׁת׃",
+        "VUL": "Et fuit cum eo : qui crevit, et moratus est in solitudine, factusque est juvenis sagittarius.",
+        "LXX": "καὶ ἦν ὁ θεὸς μετὰ τοῦ παιδίου, καὶ ηὐξήθη καὶ κατῴκησεν ἐν τῇ ἐρήμῳ· ἐγένετο δὲ τοξότης.",
+        "NAB": "God was with the boy as he grew up. He lived in the wilderness and became an expert bowman,",
+        "SYN": "И Бог был с отроком; и он вырос, и стал жить в пустыне, и сделался стрелком из лука.",
+        "NEO": "Dieu fut avec l’enfant, et il grandit ; il habita dans le désert et devint un tireur d’arc.",
+        "VAT_ES": "Dios acompañaba al niño y este fue creciendo. Su morada era el desierto, y se convirtió en un arquero experimentado.",
+        "CEI": "E Dio fu con il fanciullo, che crebbe e abitò nel deserto e divenne un tiratore d'arco."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֖שֶׁב בְּ/מִדְבַּ֣ר פָּארָ֑ן וַ/תִּֽקַּֽח ל֥/וֹ אִמּ֛/וֹ אִשָּׁ֖ה מֵ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "VUL": "Habitavitque in deserto Pharan, et accepit illi mater sua uxorem de terra Ægypti.",
+        "LXX": "καὶ κατῴκησεν ἐν τῇ ἐρήμῳ τῇ Φαράν· καὶ ἔλαβεν αὐτῷ ἡ μήτηρ γυναῖκα ἐκ γῆς Αἰγύπτου.",
+        "NAB": "with his home in the wilderness of Paran. His mother got a wife for him from the land of Egypt.",
+        "SYN": "Он жил в пустыне Фаран; и мать его взяла ему жену из земли Египетской.",
+        "NEO": "Il habitait dans le désert de Pharan, et sa mère prit pour lui une femme du pays d’Égypte.",
+        "VAT_ES": "Vivió en el desierto de Parán, y su madre lo casó con una mujer egipcia.",
+        "CEI": "Egli abitò nel deserto di Paran e sua madre gli prese una moglie del paese d'Egitto."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ בָּ/עֵ֣ת הַ/הִ֔וא וַ/יֹּ֣אמֶר אֲבִימֶ֗לֶךְ וּ/פִיכֹל֙ שַׂר צְבָא֔/וֹ אֶל אַבְרָהָ֖ם לֵ/אמֹ֑ר אֱלֹהִ֣ים עִמְּ/ךָ֔ בְּ/כֹ֥ל אֲשֶׁר אַתָּ֖ה עֹשֶֽׂה׃",
+        "VUL": "Eodem tempore dixit Abimelech, et Phicol princeps exercitus ejus, ad Abraham : Deus tecum est in universis quæ agis.",
+        "LXX": "Ἐγένετο δὲ ἐν τῷ καιρῷ ἐκείνῳ καὶ εἶπεν Ἀβιμέλεχ καὶ Ὀχοζὰθ ὁ νυμφαγωγὸς αὐτοῦ καὶ Φικὸλ ὁ ἀρχιστράτηγος τῆς δυνάμεως αὐτοῦ πρὸς Ἀβραὰμ λέγων Ὁ θεὸς μετὰ σοῦ ἐν πᾶσιν οἷς ἐὰν ποιῇς.",
+        "NAB": "About that time Abimelech, accompanied by Phicol, the commander of his army, said to Abraham: \"God is with you in everything you do.",
+        "SYN": "И было в то время, Авимелех с [Ахузафом невестоводителем и] Фихолом, военачальником своим, сказал Аврааму: с тобою Бог во всем, что ты ни делаешь;",
+        "NEO": "En ce temps-là, Abimélek, accompagné de Phicol, chef de son armée, parla ainsi à Abraham : « Dieu est avec toi dans tout ce que tu fais.",
+        "VAT_ES": "Por aquel tiempo, Abimélec, que iba acompañado de Picol, el jefe de su ejército, dijo a Abraham: «Dios está contigo en todo lo que haces.",
+        "CEI": "In quel tempo Abimèlech con Picol, capo del suo esercito, disse ad Abramo: \"Dio è con te in quanto fai."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה הִשָּׁ֨בְעָ/ה לִּ֤/י בֵֽ/אלֹהִים֙ הֵ֔נָּה אִם תִּשְׁקֹ֣ר לִ֔/י וּ/לְ/נִינִ֖/י וּ/לְ/נֶכְדִּ֑/י כַּ/חֶ֜סֶד אֲשֶׁר עָשִׂ֤יתִי עִמְּ/ךָ֙ תַּעֲשֶׂ֣ה עִמָּדִ֔/י וְ/עִם הָ/אָ֖רֶץ אֲשֶׁר גַּ֥רְתָּה בָּֽ/הּ׃",
+        "VUL": "Jura ergo per Deum, ne noceas mihi, et posteris meis, stirpique meæ : sed juxta misericordiam, quam feci tibi, facies mihi, et terræ in qua versatus es advena.",
+        "LXX": "νῦν οὖν ὄμοσόν μοι τὸν θεόν, μὴ ἀδικήσειν με μηδὲ τὸ σπέρμα μου μηδὲ τὸ ὄνομά μου· ἀλλὰ κατὰ τὴν δικαιοσύνην ἣν ἐποίησα μετὰ σοῦ ποιήσεις μετ’ ἐμοῦ, καὶ τῇ γῇ ᾗ σὺ παρῴκησας ἐν αὐτῇ.",
+        "NAB": "Therefore, swear to me by God at this place that you will not deal falsely with me or with my progeny and posterity, but will act as loyally toward me and the land in which you stay as I have acted toward you.\"",
+        "SYN": "и теперь поклянись мне здесь Богом, что ты не обидишь ни меня, ни сына моего, ни внука моего; и как я хорошо поступал с тобою, так и ты будешь поступать со мною и землею, в которой ты гостишь.",
+        "NEO": "Jure-moi donc ici, par le nom de Dieu, que tu ne tromperas ni moi, ni mes enfants, ni mes petits-enfants, mais que tu auras pour moi et pour ce pays où tu séjournes la même bienveillance dont j’ai usé envers toi. »",
+        "VAT_ES": "Júrame por Dios aquí mismo, que nunca te vas a comportar falsamente conmigo o con mi estirpe o mi posteridad, y que nos vas a dar, a mí y al país donde resides, las mismas pruebas de lealtad que yo te he dado».",
+        "CEI": "Ebbene, giurami qui per Dio che tu non ingannerai né me né i miei figli né i miei discendenti: come io ho agito amichevolmente con te, così tu agirai con me e con il paese nel quale sei forestiero\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ אַבְרָהָ֔ם אָנֹכִ֖י אִשָּׁבֵֽעַ׃",
+        "VUL": "Dixitque Abraham : Ego jurabo.",
+        "LXX": "καὶ εἶπεν Ἀβραάμ Ἐγὼ ὀμοῦμαι.",
+        "NAB": "To this Abraham replied, \"I so swear.\"",
+        "SYN": "И сказал Авраам: я клянусь.",
+        "NEO": "Abraham dit : « Je le jurerai. »",
+        "VAT_ES": "Abraham respondió: «Lo juro».",
+        "CEI": "Rispose Abramo: \"Io lo giuro\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/הוֹכִ֥חַ אַבְרָהָ֖ם אֶת אֲבִימֶ֑לֶךְ עַל אֹדוֹת֙ בְּאֵ֣ר הַ/מַּ֔יִם אֲשֶׁ֥ר גָּזְל֖וּ עַבְדֵ֥י אֲבִימֶֽלֶךְ׃",
+        "VUL": "Et increpavit Abimelech propter puteum aquæ quem vi abstulerunt servi ejus.",
+        "LXX": "καὶ ἤλεγξεν Ἀβραὰμ τὸν Ἀβιμέλεχ περὶ τῶν φρεάτων τοῦ ὕδατος ὧν ἀφείλαντο οἱ παῖδες τοῦ Ἀβιμέλεχ.",
+        "NAB": "Abraham, however, reproached Abimelech about a well that Abimelech's men had seized by force.",
+        "SYN": "И Авраам упрекал Авимелеха за колодезь с водою, который отняли рабы Авимелеховы.",
+        "NEO": "Mais Abraham fit des reproches à Abimélek au sujet d’un puits d’eau dont les serviteurs d’Abimélek s’étaient emparés de force.",
+        "VAT_ES": "Pero Abraham presentó una queja a Abimélec, a causa de un pozo que los servidores de Abimélec habían tomado por la fuerza.",
+        "CEI": "Ma Abramo rimproverò Abimèlech a causa di un pozzo d'acqua, che i servi di Abimèlech avevano usurpato."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֲבִימֶ֔לֶךְ לֹ֣א יָדַ֔עְתִּי מִ֥י עָשָׂ֖ה אֶת הַ/דָּבָ֣ר הַ/זֶּ֑ה וְ/גַם אַתָּ֞ה לֹא הִגַּ֣דְתָּ לִּ֗/י וְ/גַ֧ם אָנֹכִ֛י לֹ֥א שָׁמַ֖עְתִּי בִּלְתִּ֥י הַ/יּֽוֹם׃",
+        "VUL": "Responditque Abimelech : Nescivi quis fecerit hanc rem : sed et tu non indicasti mihi, et ego non audivi præter hodie.",
+        "LXX": "καὶ εἶπεν αὐτῷ Ἀβιμέλεχ Οὐκ ἔγνων τίς ἐποίησεν τὸ πρᾶγμα τοῦτο· οὐδὲ σύ μοι ἀπήγγειλας, οὐδὲ ἐγὼ ἤκουσα ἀλλὰ σήμερον.",
+        "NAB": "\"I have no idea who did that,\" Abimelech replied. \"In fact, you never told me about it, nor did I ever hear of it until now.\"",
+        "SYN": "Авимелех же сказал [ему]: не знаю, кто это сделал, и ты не сказал мне; я даже и не слыхал _о_ _том_ доныне.",
+        "NEO": "Abimélek répondit : « J’ignore qui a fait cela ; toi-même tu ne m’en as pas informé, et je n’en ai entendu parler qu’aujourd’hui. »",
+        "VAT_ES": "Este replicó: «No tengo idea de quién pudo haber hecho esto. Tú no me lo hiciste saber, y hasta ahora yo no me había enterado de nada».",
+        "CEI": "Abimèlech disse: \"Io non so chi abbia fatto questa cosa: né tu me ne hai informato, né io ne ho sentito parlare se non oggi\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֤ח אַבְרָהָם֙ צֹ֣אן וּ/בָקָ֔ר וַ/יִּתֵּ֖ן לַ/אֲבִימֶ֑לֶךְ וַ/יִּכְרְת֥וּ שְׁנֵי/הֶ֖ם בְּרִֽית׃",
+        "VUL": "Tulit itaque Abraham oves et boves, et dedit Abimelech : percusseruntque ambo fdus.",
+        "LXX": "καὶ ἔλαβεν Ἀβραὰμ πρόβατα καὶ μόσχους καὶ ἔδωκεν τῷ Ἀβιμέλεχ· καὶ διέθεντο ἀμφότεροι διαθήκην.",
+        "NAB": "Then Abraham took sheep and cattle and gave them to Abimelech and the two made a pact.",
+        "SYN": "И взял Авраам мелкого и крупного скота и дал Авимелеху, и они оба заключили союз.",
+        "NEO": "Et Abraham prit des brebis et des bœufs, et les donna à Abimélek, et ils firent alliance tous deux.",
+        "VAT_ES": "Entonces Abraham regaló a Abimélec unas ovejas y unas vacas, y los dos hicieron una alianza.",
+        "CEI": "Allora Abramo prese alcuni capi del gregge e dell'armento, li diede ad Abimèlech: tra loro due conclusero un'alleanza."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יַּצֵּ֣ב אַבְרָהָ֗ם אֶת שֶׁ֛בַע כִּבְשֹׂ֥ת הַ/צֹּ֖אן לְ/בַדְּ/הֶֽן׃",
+        "VUL": "Et statuit Abraham septem agnas gregis seorsum.",
+        "LXX": "καὶ ἔστησεν Ἀβραὰμ ἑπτὰ ἀμνάδας προβάτων μόνας.",
+        "NAB": "Abraham also set apart seven ewe lambs of the flock,",
+        "SYN": "И поставил Авраам семь агниц из _стада_ мелкого скота особо.",
+        "NEO": "Abraham mit à part sept jeunes brebis du troupeau,",
+        "VAT_ES": "Y como Abraham puso aparte siete corderas del rebaño,",
+        "CEI": "Poi Abramo mise in disparte sette agnelle del gregge."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר אֲבִימֶ֖לֶךְ אֶל אַבְרָהָ֑ם מָ֣ה הֵ֗נָּה שֶׁ֤בַע כְּבָשֹׂת֙ הָ/אֵ֔לֶּה אֲשֶׁ֥ר הִצַּ֖בְתָּ לְ/בַדָּֽ/נָה׃",
+        "VUL": "Cui dixit Abimelech : Quid sibi volunt septem agnæ istæ, quas stare fecisti seorsum ?",
+        "LXX": "καὶ εἶπεν Ἀβιμέλεχ τῷ Ἀβραάμ Τί εἰσιν αἱ ἑπτὰ ἀμνάδες τῶν προβάτων τούτων ἃς ἔστησας μόνας;",
+        "NAB": "and Abimelech asked him, \"What is the purpose of these seven ewe lambs that you have set apart?\"",
+        "SYN": "Авимелех же сказал Аврааму: на что здесь сии семь агниц [_из_ _стада_ овец], которых ты поставил особо?",
+        "NEO": "et Abimélek dit à Abraham : « Qu’est-ce que ces sept jeunes brebis, que tu as mises à part ? »",
+        "VAT_ES": "Abimélec le preguntó: «&iquest;Qué significan esas siete corderas que pusiste aparte?».",
+        "CEI": "Abimèlech disse ad Abramo: \"Che significano quelle sette agnelle che hai messe in disparte?\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֕אמֶר כִּ֚י אֶת שֶׁ֣בַע כְּבָשֹׂ֔ת תִּקַּ֖ח מִ/יָּדִ֑/י בַּ/עֲבוּר֙ תִּֽהְיֶה לִּ֣/י לְ/עֵדָ֔ה כִּ֥י חָפַ֖רְתִּי אֶת הַ/בְּאֵ֥ר הַ/זֹּֽאת׃",
+        "VUL": "At ille : Septem, inquit, agnas accipies de manu mea : ut sint mihi in testimonium, quoniam ego fodi puteum istum.",
+        "LXX": "καὶ εἶπεν Ἀβραὰμ ὅτι Τὰς ἑπτὰ ἀμνάδας ταύτας λήμψῃ παρ’ ἐμοῦ, ἵνα ὦσιν εἰς μαρτύριον ὅτι ἐγὼ ὤρυξα τὸ φρέαρ τοῦτο.",
+        "NAB": "Abraham answered, \"The seven ewe lambs you shall accept from me that thus I may have your acknowledgment that the well was dug by me.\"",
+        "SYN": "[Авраам] сказал: семь агниц сих возьми от руки моей, чтобы они были мне свидетельством, что я выкопал этот колодезь.",
+        "NEO": "Il répondit : « Tu accepteras de ma main ces sept jeunes brebis, afin que ce soit pour moi un témoignage que j’ai creusé ce puits. »",
+        "VAT_ES": "«Significan –respondió Abraham– que tú me vas a aceptar estas siete corderas como una prueba de que el pozo lo he cavado yo».",
+        "CEI": "Rispose: \"Tu accetterai queste sette agnelle dalla mia mano, perché ciò mi valga di testimonianza che io ho scavato questo pozzo\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "עַל כֵּ֗ן קָרָ֛א לַ/מָּק֥וֹם הַ/ה֖וּא בְּאֵ֣ר שָׁ֑בַע כִּ֛י שָׁ֥ם נִשְׁבְּע֖וּ שְׁנֵי/הֶֽם׃",
+        "VUL": "Idcirco vocatus est locus ille Bersabee : quia ibi uterque juravit.",
+        "LXX": "διὰ τοῦτο ἐπωνόμασεν τὸ ὄνομα τοῦ τόπου ἐκείνου Φρέαρ ὁρκισμοῦ, ὅτι ἐκεῖ ὤμοσαν ἀμφότεροι.",
+        "NAB": "This is why the place is called Beer-sheba; the two took an oath there.",
+        "SYN": "Потому и назвал он сие место: Вирсавия, ибо тут оба они клялись",
+        "NEO": "C’est pourquoi on a appelé ce lieu Bersabée, parce que c’est là qu’ils ont tous deux prêté serment.",
+        "VAT_ES": "Y a aquel lugar se lo llamó Berseba, que significa «pozo del juramento», porque allí los dos prestaron un juramento.",
+        "CEI": "Per questo quel luogo si chiamò Bersabea, perché là fecero giuramento tutti e due."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יִּכְרְת֥וּ בְרִ֖ית בִּ/בְאֵ֣ר שָׁ֑בַע וַ/יָּ֣קָם אֲבִימֶ֗לֶךְ וּ/פִיכֹל֙ שַׂר צְבָא֔/וֹ וַ/יָּשֻׁ֖בוּ אֶל אֶ֥רֶץ פְּלִשְׁתִּֽים׃",
+        "VUL": "Et inierunt fdus pro puteo juramenti.",
+        "LXX": "καὶ διέθεντο διαθήκην ἐν τῷ φρέατι τοῦ ὅρκου. ἀνέστη δὲ Ἀβιμέλεχ καὶ Ὀχοζὰθ ὁ νυμφαγωγὸς αὐτοῦ καὶ Φικὸλ ὁ ἀρχιστράτηγος τῆς δυνάμεως αὐτοῦ, καὶ ἐπέστρεψαν εἰς τὴν γῆν τῶν Φυλιστιείμ.",
+        "NAB": "When they had thus made the pact in Beer-sheba, Abimelech, along with Phicol, the commander of his army, left and returned to the land of the Philistines.",
+        "SYN": "и заключили союз в Вирсавии. И встал Авимелех, и [Ахузаф, невестоводитель его, и] Фихол, военачальник его, и возвратились в землю Филистимскую.",
+        "NEO": "C’est ainsi qu’ils firent alliance à Bersabée. Après quoi Abimélek se leva, avec Phicol, chef de son armée, et ils retournèrent au pays des Philistins.",
+        "VAT_ES": "Después de concluida la alianza, Abimélec partió junto con Picol, el jefe de su ejército, y regresó al país de los filisteos.",
+        "CEI": "E dopo che ebbero concluso l'alleanza a Bersabea, Abimèlech si alzò con Picol, capo del suo esercito, e ritornarono nel paese dei Filistei."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יִּטַּ֥ע אֶ֖שֶׁל בִּ/בְאֵ֣ר שָׁ֑בַע וַ/יִּ֨קְרָא שָׁ֔ם בְּ/שֵׁ֥ם יְהוָ֖ה אֵ֥ל עוֹלָֽם׃",
+        "VUL": "Surrexit autem Abimelech, et Phicol princeps exercitus ejus, reversique sunt in terram Palæstinorum. Abraham vero plantavit nemus in Bersabee, et invocavit ibi nomen Domini Dei æterni.",
+        "LXX": "καὶ ἐφύτευσεν Ἀβραὰμ ἄρουραν ἐπὶ τῷ φρέατι τοῦ ὅρκου, καὶ ἐπεκαλέσατο ἐκεῖ τὸ ὄνομα Κυρίου, Θεὸς αἰώνιος.",
+        "NAB": "Abraham planted a tamarisk at Beer-sheba, and there he invoked by name the LORD, God the Eternal.",
+        "SYN": "И насадил [Авраам] при Вирсавии рощу и призвал там имя Господа, Бога вечного.",
+        "NEO": "Abraham planta un tamaris à Bersabée, et il invoqua là le nom de \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu éternel ;",
+        "VAT_ES": "Abraham, por su parte, plantó un tamarisco en Berseba e invocó el nombre del Señor Dios, el Eterno.",
+        "CEI": "Abramo piantò un tamerice in Bersabea, e lì invocò il nome del Signore, Dio dell'eternità."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יָּ֧גָר אַבְרָהָ֛ם בְּ/אֶ֥רֶץ פְּלִשְׁתִּ֖ים יָמִ֥ים רַבִּֽים׃",
+        "VUL": "Et fuit colonus terræ Palæstinorum diebus multis.",
+        "LXX": "παρῴκησεν δὲ Ἀβραὰμ ἐν τῇ γῇ τῶν Φυλιστιεὶμ ἡμέρας πολλάς.",
+        "NAB": "Abraham resided in the land of the Philistines for many years.",
+        "SYN": "И жил Авраам в земле Филистимской, как странник, дни многие.",
+        "NEO": "et Abraham séjourna longtemps dans le pays des Philistins.",
+        "VAT_ES": "El permaneció largo tiempo en el país de los filisteos.",
+        "CEI": "E fu forestiero nel paese dei Filistei per molto tempo."
+      }
+    }
+  }
+}

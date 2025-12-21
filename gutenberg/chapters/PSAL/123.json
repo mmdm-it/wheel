@@ -1,0 +1,86 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_123",
+  "book_key": "PSAL",
+  "sequence": 123,
+  "chapter_in": {
+    "MT": 123,
+    "VUL": 122,
+    "LXX": 122
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שִׁ֗יר הַֽ/מַּ֫עֲל֥וֹת אֵ֭לֶי/ךָ נָשָׂ֣אתִי אֶת עֵינַ֑/י הַ֝/יֹּשְׁבִ֗י בַּ/שָּׁמָֽיִם׃",
+        "LXX": "ᾨδὴ τῶν ἀναβαθμῶν· τῷ Δαυείδ. Εἰ μὴ ὅτι Κύριος ἦν ἐν ἡμῖν, εἰπάτω δὴ Ἰσραήλ,",
+        "VUL": "Canticum graduum. [Nisi quia Dominus erat in nobis,/ dicat nunc Israël,/",
+        "SYN": "Если бы не Господь был с нами, - да скажет Израиль, -",
+        "NEO": "Cantique des montées.",
+        "NAB": "A song of ascents. To you I raise my eyes, to you enthroned in heaven.",
+        "CEI": "Canto delle ascensioni. Di Davide. A te levo i miei occhi, a te che abiti nei cieli."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "הִנֵּ֨ה כְ/עֵינֵ֪י עֲבָדִ֡ים אֶל יַ֤ד אֲֽדוֹנֵי/הֶ֗ם כְּ/עֵינֵ֣י שִׁפְחָה֮ אֶל יַ֪ד גְּבִ֫רְתָּ֥/הּ כֵּ֣ן עֵ֭ינֵי/נוּ אֶל יְהוָ֣ה אֱלֹהֵ֑י/נוּ עַ֝֗ד שֶׁ/יְּחָנֵּֽ/נוּ׃",
+        "LXX": "εἰ μὴ ὅτι Κύριος ἦν ἐν ἡμῖν, ἐν τῷ ἐπαναστῆναι ἀνθρώπους ἐφ’ ἡμᾶς,",
+        "VUL": "nisi quia Dominus erat in nobis :/ cum exsurgerent homines in nos,/",
+        "SYN": "если бы не Господь был с нами, когда восстали на нас люди,",
+        "NEO": "Comme l’œil du serviteur est fixé sur la main de son maître, et l’œil de la servante sur la main de sa maîtresse, ainsi nos yeux sont fixés sur \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, jusqu’à ce qu’il ait pitié de nous.",
+        "NAB": "Yes, like the eyes of a servant on the hand of his master, Like the eyes of a maid on the hand of her mistress, So our eyes are on the LORD our God, till we are shown favor.",
+        "VAT_ES": "Como los ojos de los servidores",
+        "CEI": "Ecco, come gli occhi dei servi alla mano dei loro padroni; come gli occhi della schiava, alla mano della sua padrona, così i nostri occhi sono rivolti al Signore nostro Dio, finché abbia pietà di noi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "חָנֵּ֣/נוּ יְהוָ֣ה חָנֵּ֑/נוּ כִּֽי רַ֝֗ב שָׂבַ֥עְנוּ בֽוּז׃",
+        "LXX": "ἄρα ζῶντας ἂν κατέπιον ἡμᾶς, ἐν τῷ ὀργισθῆναι τὸν θυμὸν αὐτῶν ἐφ’ ἡμᾶς.",
+        "VUL": "forte vivos deglutissent nos ;/ cum irasceretur furor eorum in nos,/",
+        "SYN": "то живых они поглотили бы нас, когда возгорелась ярость их на нас;",
+        "NEO": "Aie pitié de nous, \\+w Yahweh|strong=\"H3068\"\\+w**, aie pitié de nous, car nous n’avons été que trop rassasiés d’opprobres.",
+        "NAB": "Show us favor, LORD, show us favor, for we have our fill of contempt.",
+        "VAT_ES": "&iexcl;Ten piedad, Señor,",
+        "CEI": "Pietà di noi, Signore, pietà di noi, gia troppo ci hanno colmato di scherni,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "רַבַּת֮ שָֽׂבְעָה לָּ֪/הּ נַ֫פְשֵׁ֥/נוּ הַ/לַּ֥עַג הַ/שַּׁאֲנַנִּ֑ים הַ֝/בּ֗וּז לִ/גְאֵ֥יוֹנִֽים׃",
+        "LXX": "ἄρα τὸ ὕδωρ κατεπόντισεν ἡμᾶς, χείμαρρον διῆλθεν ἡ ψυχὴ ἡμῶν·",
+        "VUL": "forsitan aqua absorbuisset nos ;/",
+        "SYN": "воды потопили бы нас, поток прошел бы над душею нашею;",
+        "NEO": "Notre âme n’a été que trop rassasiée de la moquerie des superbes, du mépris des orgueilleux.",
+        "NAB": "We have our fill of insult from the insolent, of disdain from the arrogant.",
+        "VAT_ES": "Nuestra alma está saturada",
+        "CEI": "noi siamo troppo sazi degli scherni dei gaudenti, del disprezzo dei superbi."
+      }
+    }
+  }
+}

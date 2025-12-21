@@ -1,0 +1,644 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_011",
+  "book_key": "NUME",
+  "sequence": 11,
+  "chapter_in": {
+    "MT": 11,
+    "VUL": 11,
+    "LXX": 11
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֤י הָ/עָם֙ כְּ/מִתְאֹ֣נְנִ֔ים רַ֖ע בְּ/אָזְנֵ֣י יְהוָ֑ה וַ/יִּשְׁמַ֤ע יְהוָה֙ וַ/יִּ֣חַר אַפּ֔/וֹ וַ/תִּבְעַר בָּ/ם֙ אֵ֣שׁ יְהוָ֔ה וַ/תֹּ֖אכַל בִּ/קְצֵ֥ה הַֽ/מַּחֲנֶֽה׃",
+        "LXX": "Καὶ ἦν ὁ λαὸς γογγύζων πονηρὰ ἔναντι Κυρίου· καὶ ἤκουσεν Κύριος καὶ ἐθυμώθη ὀργῇ, καὶ ἐξεκαύθη ἐν αὐτοῖς πῦρ παρὰ Κυρίου καὶ κατέφαγεν μέρος τι τῆς παρεμβολῆς.",
+        "VUL": "Interea ortum est murmur populi, quasi dolentium pro labore, contra Dominum. Quod cum audisset Dominus, iratus est. Et accensus in eos ignis Domini, devoravit extremam castrorum partem.",
+        "SYN": "Народ стал роптать вслух Господа; и Господь услышал, и воспламенился гнев Его, и возгорелся у них огонь Господень, и начал истреблять край стана.",
+        "NEO": "Le peuple se mit à murmurer du mal aux oreilles de \\+w Yahweh|strong=\"H3068\"\\+w**. \\+w Yahweh|strong=\"H3068\"\\+w** l’entendit, et sa colère s’enflamma, et le feu de \\+w Yahweh|strong=\"H3068\"\\+w** s’alluma contre eux et il dévorait à l’extrémité du camp.",
+        "NAB": "Now the people complained in the hearing of the LORD; and when he heard it his wrath flared up so that the fire of the LORD burned among them and consumed the outskirts of the camp.",
+        "VAT_ES": "Una vez, el pueblo se quejó amargamente delante del Señor. Cuando el Señor los oyó, se llenó de indignación. El fuego del Señor se encendió contra ellos y devoró el extremo del campamento.",
+        "CEI": "Ora il popolo cominciò a lamentarsi malamente agli orecchi del Signore. Li udì il Signore e il suo sdegno si accese e il fuoco del Signore divampò in mezzo a loro e divorò l'estremità dell'accampamento."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּצְעַ֥ק הָ/עָ֖ם אֶל מֹשֶׁ֑ה וַ/יִּתְפַּלֵּ֤ל מֹשֶׁה֙ אֶל יְהוָ֔ה וַ/תִּשְׁקַ֖ע הָ/אֵֽשׁ׃",
+        "LXX": "καὶ ἐκέκραξεν ὁ λαὸς πρὸς Μωυσῆν· καὶ ηὔξατο Μωυσῆς πρὸς Κύριον, καὶ ἐκόπασεν τὸ πῦρ.",
+        "VUL": "Cumque clamasset populus ad Moysen, oravit Moyses ad Dominum, et absorptus est ignis.",
+        "SYN": "И возопил народ к Моисею; и помолился Моисей Господу, и утих огонь.",
+        "NEO": "Le peuple cria vers Moïse, et Moïse pria \\+w Yahweh|strong=\"H3068\"\\+w**, et le feu s’éteignit.",
+        "NAB": "But when the people cried out to Moses, he prayed to the LORD and the fire died out.",
+        "VAT_ES": "El pueblo pidió auxilio a Moisés. Este intercedió ante el Señor, y se apagó el fuego.",
+        "CEI": "Il popolo gridò a Mosè; Mosè pregò il Signore e il fuoco si spense."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֛א שֵֽׁם הַ/מָּק֥וֹם הַ/ה֖וּא תַּבְעֵרָ֑ה כִּֽי בָעֲרָ֥ה בָ֖/ם אֵ֥שׁ יְהוָֽה׃",
+        "LXX": "καὶ ἐκλήθη τὸ ὄνομα τοῦ τόπου ἐκείνου Ἐνπυρισμός, ὅτι ἐξεκαύθη ἐν αὐτοῖς πῦρ παρὰ Κυρίου.",
+        "VUL": "Vocavitque nomen loci illius, Incensio : eo quod incensus fuisset contra eos ignis Domini.",
+        "SYN": "И нарекли имя месту сему: Тавера, потому что возгорелся у них огонь Господень.",
+        "NEO": "On donna à ce lieu le nom de Thabéera, parce que le feu de \\+w Yahweh|strong=\"H3068\"\\+w** s’était allumé contre eux.",
+        "NAB": "Hence that place was called Taberah, because there the fire of the LORD burned among them.",
+        "VAT_ES": "Aquel lugar fue llamado Taberá –que significa Incendio– porque allí se había encendido el fuego del Señor contra los israelitas.",
+        "CEI": "Quel luogo fu chiamato Tabera, perché il fuoco del Signore era divampato in mezzo a loro."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/הָֽ/אסַפְסֻף֙ אֲשֶׁ֣ר בְּ/קִרְבּ֔/וֹ הִתְאַוּ֖וּ תַּאֲוָ֑ה וַ/יָּשֻׁ֣בוּ וַ/יִּבְכּ֗וּ גַּ֚ם בְּנֵ֣י יִשְׂרָאֵ֔ל וַ/יֹּ֣אמְר֔וּ מִ֥י יַאֲכִלֵ֖/נוּ בָּשָֽׂר׃",
+        "LXX": "Καὶ ὁ ἐπίμικτος ὁ ἐν αὐτοῖς ἐπεθύμησεν ἐπιθυμίαν· καὶ καθίσαντες ἔκλαιον καὶ οἱ υἱοὶ Ἰσραὴλ καὶ εἶπαν Τίς ἡμᾶς ψωμιεῖ κρέας;",
+        "VUL": "Vulgus quippe promiscuum, quod ascenderat cum eis, flagravit desiderio, sedens et flens, junctis sibi pariter filiis Israël, et ait : Quis dabit nobis ad vescendum carnes ?",
+        "SYN": "Пришельцы между ними стали обнаруживать прихоти; а с ними и сыны Израилевы сидели и плакали и говорили: кто накормит нас мясом?",
+        "NEO": "Le ramas de gens qui se trouvaient au milieu d’Israël s’enflamma de convoitise, et même les enfants d’Israël recommencèrent à pleurer et dirent : « Qui nous donnera de la viande à manger ?",
+        "NAB": "The foreign elements among them were so greedy for meat that even the Israelites lamented again, \"Would that we had meat for food!",
+        "VAT_ES": "La turba de los advenedizos que se habían mezclado con el pueblo se dejó llevar de la gula, y los israelitas se sentaron a llorar a gritos, diciendo: «&iexcl;Si al menos tuviéramos carne para comer!",
+        "CEI": "La gente raccogliticcia, che era tra il popolo, fu presa da bramosia; anche gli Israeliti ripresero a lamentarsi e a dire: \"Chi ci potrà dare carne da mangiare?"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "זָכַ֨רְנוּ֙ אֶת הַ/דָּגָ֔ה אֲשֶׁר נֹאכַ֥ל בְּ/מִצְרַ֖יִם חִנָּ֑ם אֵ֣ת הַ/קִּשֻּׁאִ֗ים וְ/אֵת֙ הָֽ/אֲבַטִּחִ֔ים וְ/אֶת הֶ/חָצִ֥יר וְ/אֶת הַ/בְּצָלִ֖ים וְ/אֶת הַ/שּׁוּמִֽים׃",
+        "LXX": "ἐμνήσθημεν τοὺς ἰχθύας οὓς ἠσθίομεν ἐν Αἰγύπτῳ δωρεάν, καὶ τοὺς σικύας καὶ τοὺς πέπονας καὶ τὰ πράσα καὶ τὰ κρόμμυα καὶ τὰ σκόρδα·",
+        "VUL": "recordamur piscium quos comedebamus in Ægypto gratis : in mentem nobis veniunt cucumeres, et pepones, porrique, et cepe, et allia.",
+        "SYN": "Мы помним рыбу, которую в Египте мы ели даром, огурцы и дыни, и лук, и репчатый лук и чеснок;",
+        "NEO": "Il nous souvient des poissons que nous mangions pour rien en Égypte, des concombres, des melons, des poireaux, des oignons et de l’ail.",
+        "NAB": "We remember the fish we used to eat without cost in Egypt, and the cucumbers, the melons, the leeks, the onions, and the garlic.",
+        "VAT_ES": "&iexcl;Cómo recordamos los pescados que comíamos gratis en Egipto, y los pepinos, los melones, los puerros, las cebollas y los ajos!",
+        "CEI": "Ci ricordiamo dei pesci che mangiavamo in Egitto gratuitamente, dei cocomeri, dei meloni, dei porri, delle cipolle e dell'aglio."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֛ה נַפְשֵׁ֥/נוּ יְבֵשָׁ֖ה אֵ֣ין כֹּ֑ל בִּלְתִּ֖י אֶל הַ/מָּ֥ן עֵינֵֽי/נוּ׃",
+        "LXX": "νυνὶ δὲ ἡ ψυχὴ ἡμῶν κατάξηρος, οὐδὲν πλὴν εἰς τὸ μάννα οἱ ὀφθαλμοὶ ἡμῶν.",
+        "VUL": "Anima nostra arida est : nihil aliud respiciunt oculi nostri nisi man.",
+        "SYN": "а ныне душа наша изнывает; ничего нет, только манна в глазах наших.",
+        "NEO": "Maintenant notre âme est desséchée ; plus rien ! Nos yeux ne voient que de la manne. »",
+        "NAB": "But now we are famished; we see nothing before us but this manna.\"",
+        "VAT_ES": "&iexcl;Ahora nuestras gargantas están resecas! &iexcl;Estamos privados de todo, y nuestros ojos no ven nada más que el maná!».",
+        "CEI": "Ora la nostra vita inaridisce; non c'è più nulla, i nostri occhi non vedono altro che questa manna\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הַ/מָּ֕ן כִּ/זְרַע גַּ֖ד ה֑וּא וְ/עֵינ֖/וֹ כְּ/עֵ֥ין הַ/בְּדֹֽלַח׃",
+        "LXX": "τὸ δὲ μάννα ὡσεὶ σπέρμα κορίου ἐστίν, καὶ τὸ εἶδος αὐτοῦ εἶδος κρυστάλλου.",
+        "VUL": "Erat autem man quasi semen coriandri, coloris bdellii.",
+        "SYN": "Манна же была подобна кориандровому семени, видом, как бдолах;",
+        "NEO": "La manne était semblable à la graine de coriandre, et avait l’aspect du bdellium.",
+        "NAB": "Manna was like coriander seed and had the appearance of bdellium.",
+        "VAT_ES": "El maná se parecía a la semilla de cilantro y su color era semejante al del bedelio.",
+        "CEI": "Ora la manna era simile al seme del coriandolo e aveva l'aspetto della resina odorosa."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "שָׁטוּ֩ הָ/עָ֨ם וְ/לָֽקְט֜וּ וְ/טָחֲנ֣וּ בָ/רֵחַ֗יִם א֤וֹ דָכוּ֙ בַּ/מְּדֹכָ֔ה וּ/בִשְּׁלוּ֙ בַּ/פָּר֔וּר וְ/עָשׂ֥וּ אֹת֖/וֹ עֻג֑וֹת וְ/הָיָ֣ה טַעְמ֔/וֹ כְּ/טַ֖עַם לְשַׁ֥ד הַ/שָּֽׁמֶן׃",
+        "LXX": "καὶ διεπορεύετο ὁ λαὸς καὶ συνέλεγον, καὶ ἤληθον αὐτὸ ἐν τῷ μύλῳ καὶ ἔτριβον ἐν τῇ θυίᾳ, καὶ ἥψουν αὐτὸ ἐν τῇ χύτρᾳ καὶ ἐποίουν αὐτὸ ἐνκρυφίας· καὶ ἦν ἡ ἡδονὴ αὐτοῦ ὡσεὶ γεῦμα ἐνκρὶς ἐξ ἐλαίου.",
+        "VUL": "Circuibatque populus, et colligens illud, frangebat mola, sive terebat in mortario, coquens in olla, et faciens ex eo tortulas saporis quasi panis oleati.",
+        "SYN": "народ ходил и собирал ее, и молол в жерновах или толок в ступе, и варил в котле, и делал из нее лепешки; вкус же ее подобен был вкусу лепешек с елеем.",
+        "NEO": "Le peuple se répandait pour la ramasser ; il la broyait avec des meules ou la pilait dans un mortier ; il la cuisait au pot, et en faisait des gâteaux. Elle avait le goût d’un gâteau à l’huile.",
+        "NAB": "When they had gone about and gathered it up, the people would grind it between millstones or pound it in a mortar, then cook it in a pot and make it into loaves, which tasted like cakes made with oil.",
+        "VAT_ES": "El pueblo tenía que ir a buscarlo; una vez recogido, lo trituraban con piedras de moler o lo machacaban en un mortero, lo cocían en una olla, y lo preparaban en forma de galletas. Su sabor era como el de un pastel apetitoso.",
+        "CEI": "Il popolo andava attorno a raccoglierla; poi la riduceva in farina con la macina o la pestava nel mortaio, la faceva cuocere nelle pentole o ne faceva focacce; aveva il sapore di pasta all'olio."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וּ/בְ/רֶ֧דֶת הַ/טַּ֛ל עַל הַֽ/מַּחֲנֶ֖ה לָ֑יְלָה יֵרֵ֥ד הַ/מָּ֖ן עָלָֽי/ו׃",
+        "LXX": "καὶ ὅταν κατέβη ἡ δρόσος ἐπὶ τὴν παρεμβολὴν νυκτός, κατέβαινεν τὸ μάννα ἐπ’ αὐτῆς.",
+        "VUL": "Cumque descenderet nocte super castra ros, descendebat pariter et man.",
+        "SYN": "И когда роса сходила на стан ночью, тогда сходила на него и манна.",
+        "NEO": "Quand la rosée descendait pendant la nuit sur le camp, la manne y descendait aussi.",
+        "NAB": "At night, when the dew fell upon the camp, the manna also fell.",
+        "VAT_ES": "De noche, cuando el rocío caía sobre el campamento, también caía el maná.",
+        "CEI": "Quando di notte cadeva la rugiada sul campo, cadeva anche la manna."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֨ע מֹשֶׁ֜ה אֶת הָ/עָ֗ם בֹּכֶה֙ לְ/מִשְׁפְּחֹתָ֔י/ו אִ֖ישׁ לְ/פֶ֣תַח אָהֳל֑/וֹ וַ/יִּֽחַר אַ֤ף יְהוָה֙ מְאֹ֔ד וּ/בְ/עֵינֵ֥י מֹשֶׁ֖ה רָֽע׃",
+        "LXX": "καὶ ἤκουσεν Μωυσῆς κλαίοντων αὐτῶν κατά δήμους αὐτῶν, ἕκαστον ἐπὶ τῆς θύρας αὐτοῦ· καὶ ἐθυμώθη ὀργῇ Κύριος σφόδρα, καὶ ἔναντι Μωυσῆ ἦν πονηρόν.",
+        "VUL": "Audivit ergo Moyses flentem populum per familias, singulos per ostia tentorii sui. Iratusque est furor Domini valde : sed et Moysi intoleranda res visa est,",
+        "SYN": "Моисей слышал, что народ плачет в семействах своих, каждый у дверей шатра своего; и сильно воспламенился гнев Господень, и прискорбно было для Моисея.",
+        "NEO": "Moïse entendit le peuple qui pleurait dans chaque famille, chacun à l’entrée de sa tente. La colère de \\+w Yahweh|strong=\"H3068\"\\+w** s’enflamma grandement. Moïse fut attristé,",
+        "NAB": "When Moses heard the people, family after family, crying at the entrance of their tents, so that the LORD became very angry, he was grieved.",
+        "VAT_ES": "Moisés oyó llorar al pueblo, que se había agrupado por familias, cada uno a la entrada de su carpa. El Señor se llenó de una gran indignación, pero Moisés, vivamente contrariado,",
+        "CEI": "Mosè udì il popolo che si lamentava in tutte le famiglie, ognuno all'ingresso della propria tenda; lo sdegno del Signore divampò e la cosa dispiacque anche a Mosè."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר מֹשֶׁ֜ה אֶל יְהוָ֗ה לָ/מָ֤ה הֲרֵעֹ֨תָ֙ לְ/עַבְדֶּ֔/ךָ וְ/לָ֛/מָּה לֹא מָצָ֥תִי חֵ֖ן בְּ/עֵינֶ֑י/ךָ לָ/שׂ֗וּם אֶת מַשָּׂ֛א כָּל הָ/עָ֥ם הַ/זֶּ֖ה עָלָֽ/י׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς πρὸς Κύριον Ἵνα τί ἐκάκωσας τὸν θεράποντά σου; καὶ διὰ τί οὐχ εὕρηκα χάριν ἐναντίον σου, ἐπιθεῖναι τὴν ὁρμὴν τοῦ λαοῦ τούτου ἐπ’ ἐμέ;",
+        "VUL": "et ait ad Dominum : Cur afflixisti servum tuum ? quare non invenio gratiam coram te ? et cur imposuisti pondus universi populi hujus super me ?",
+        "SYN": "И сказал Моисей Господу: для чего Ты мучишь раба Твоего? и почему я не нашел милости пред очами Твоими, что Ты возложил на меня бремя всего народа сего?",
+        "NEO": "et il dit à \\+w Yahweh|strong=\"H3068\"\\+w** : « Pourquoi avez-vous fait ce mal à votre serviteur, et pourquoi n’ai-je pas trouvé grâce à vos yeux, que vous ayez mis sur moi la charge de tout ce peuple ?",
+        "NAB": "\"Why do you treat your servant so badly?\" Moses asked the LORD. \"Why are you so displeased with me that you burden me with all this people?",
+        "VAT_ES": "le dijo: «&iquest;Por qué tratas tan duramente a tu servidor? &iquest;Por qué no has tenido compasión de mí, y me has cargado con el peso de todo este pueblo?",
+        "CEI": "Mosè disse al Signore: \"Perché hai trattato così male il tuo servo? Perché non ho trovato grazia ai tuoi occhi, tanto che tu mi hai messo addosso il carico di tutto questo popolo?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "הֶ/אָנֹכִ֣י הָרִ֗יתִי אֵ֚ת כָּל הָ/עָ֣ם הַ/זֶּ֔ה אִם אָנֹכִ֖י יְלִדְתִּ֑י/הוּ כִּֽי תֹאמַ֨ר אֵלַ֜/י שָׂאֵ֣/הוּ בְ/חֵיקֶ֗/ךָ כַּ/אֲשֶׁ֨ר יִשָּׂ֤א הָ/אֹמֵן֙ אֶת הַ/יֹּנֵ֔ק עַ֚ל הָֽ/אֲדָמָ֔ה אֲשֶׁ֥ר נִשְׁבַּ֖עְתָּ לַ/אֲבֹתָֽי/ו׃",
+        "LXX": "μὴ ἐγὼ ἐν γαστρὶ ἔλαβον πάντα τὸν λαὸν τοῦτον, ἢ ἐγὼ ἔτεκον αὐτούς, ὅτι λέγεις μοι Λάβε αὐτὸν εἰς τὸν κόλπον σου, ὡσεὶ ἄραι τιθηνὸς τὸν θηλάζοντα, εἰς τὴν γῆν ἣν ὤμοσας τοῖς πατράσιν αὐτῶν;",
+        "VUL": "Numquid ego concepi omnem hanc multitudinem, vel genui eam, ut dicas mihi : Porta eos in sinu tuo sicut portare solet nutrix infantulum, et defer in terram, pro qua jurasti patribus eorum ?",
+        "SYN": "разве я носил во чреве весь народ сей, и разве я родил его, что Ты говоришь мне: неси его на руках твоих, как нянька носит ребенка, в землю, которую Ты с клятвою обещал отцам его?",
+        "NEO": "Est-ce moi qui ai conçu tout ce peuple ? est-ce moi qui l’ai enfanté, pour que vous me disiez : Porte-le sur ton sein, comme le nourricier porte un enfant qu’on allaite, jusqu’au pays que vous avez juré à ses pères de lui donner ?",
+        "NAB": "Was it I who conceived all this people? or was it I who gave them birth, that you tell me to carry them at my bosom, like a foster father carrying an infant, to the land you have promised under oath to their fathers?",
+        "VAT_ES": "&iquest;Acaso he sido yo el que concibió a todo este pueblo, o el que lo dio a luz, para que me digas: «Llévalo en tu regazo, como la nodriza lleva a un niño de pecho, hasta la tierra que juraste dar a sus padres?»",
+        "CEI": "L'ho forse concepito io tutto questo popolo? O l'ho forse messo al mondo io perché tu mi dica: Pòrtatelo in grembo, come la balia porta il bambino lattante, fino al paese che tu hai promesso con giuramento ai suoi padri?"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "מֵ/אַ֤יִן לִ/י֙ בָּשָׂ֔ר לָ/תֵ֖ת לְ/כָל הָ/עָ֣ם הַ/זֶּ֑ה כִּֽי יִבְכּ֤וּ עָלַ/י֙ לֵ/אמֹ֔ר תְּנָ/ה לָּ֥/נוּ בָשָׂ֖ר וְ/נֹאכֵֽלָה׃",
+        "LXX": "πόθεν μοι κρέα δοῦναι παντὶ τῷ λαῷ τούτῳ; ὅτι κλαίουσιν ἐπ’ ἐμοὶ λέγοντες Δὸς ἡμῖν κρέα ἵνα φάγωμεν.",
+        "VUL": "Unde mihi carnes ut dem tantæ multitudini ? flent contra me, dicentes : Da nobis carnes ut comedamus.",
+        "SYN": "откуда мне _взять_ мяса, чтобы дать всему народу сему? ибо они плачут предо мною и говорят: дай нам есть мяса.",
+        "NEO": "Où prendrai-je de la viande pour en donner à tout ce peuple ? Car ils pleurent autour de moi, en disant : Donne-nous de la viande à manger.",
+        "NAB": "Where can I get meat to give to all this people? For they are crying to me, 'Give us meat for our food.'",
+        "VAT_ES": "&iquest;De dónde voy a sacar carne para dar de comer a todos los que están llorando a mi lado y me dicen: «Danos carne para comer»?",
+        "CEI": "Da dove prenderei la carne da dare a tutto questo popolo? Perché si lamenta dietro a me, dicendo: Dacci da mangiare carne!"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לֹֽא אוּכַ֤ל אָנֹכִי֙ לְ/בַדִּ֔/י לָ/שֵׂ֖את אֶת כָּל הָ/עָ֣ם הַ/זֶּ֑ה כִּ֥י כָבֵ֖ד מִמֶּֽ/נִּי׃",
+        "LXX": "οὐ δυνήσομαι ἐγὼ μόνος φέρειν τὸν λαὸν τοῦτον, ὅτι βαρύτερόν μοί ἐστιν τὸ ῥῆμα τοῦτο.",
+        "VUL": "Non possum solus sustinere omnem hunc populum, quia gravis est mihi.",
+        "SYN": "Я один не могу нести всего народа сего, потому что он тяжел для меня;",
+        "NEO": "Je ne puis pas, à moi seul, porter tout ce peuple ; il est trop pesant pour moi.",
+        "NAB": "I cannot carry all this people by myself, for they are too heavy for me.",
+        "VAT_ES": "Yo solo no puedo soportar el peso de todo este pueblo: mis fuerzas no dan para tanto.",
+        "CEI": "Io non posso da solo portare il peso di tutto questo popolo; è un peso troppo grave per me."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/אִם כָּ֣כָה אַתְּ עֹ֣שֶׂה לִּ֗/י הָרְגֵ֤/נִי נָא֙ הָרֹ֔ג אִם מָצָ֥אתִי חֵ֖ן בְּ/עֵינֶ֑י/ךָ וְ/אַל אֶרְאֶ֖ה בְּ/רָעָתִֽ/י׃",
+        "LXX": "εἰ δὲ οὕτως σὺ ποιεῖς μοι, ἀπόκτεινόν με ἀναιρέσει, εἰ εὕρηκα ἔλεος παρὰ σοί, ἵνα μὴ ἴδω μου τὴν κάκωσιν.",
+        "VUL": "Sin aliter tibi videtur, obsecro ut interficias me, et inveniam gratiam in oculis tuis, ne tantis afficiar malis.",
+        "SYN": "когда Ты так поступаешь со мною, то _лучше_ умертви меня, если я нашел милость пред очами Твоими, чтобы мне не видеть бедствия моего.",
+        "NEO": "Pour me traiter ainsi, tuez-moi plutôt, je vous prie, si j’ai trouvé grâce à vos yeux, et que je ne voie pas mon malheur ! »",
+        "NAB": "If this is the way you will deal with me, then please do me the favor of killing me at once, so that I need no longer face this distress.\"",
+        "VAT_ES": "Si me vas a seguir tratando de ese modo, mátame de una vez. Así me veré libre de mis males».",
+        "CEI": "Se mi devi trattare così, fammi morire piuttosto, fammi morire, se ho trovato grazia ai tuoi occhi; io non veda più la mia sventura!\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֜ה אֶל מֹשֶׁ֗ה אֶסְפָ/ה לִּ֞/י שִׁבְעִ֣ים אִישׁ֮ מִ/זִּקְנֵ֣י יִשְׂרָאֵל֒ אֲשֶׁ֣ר יָדַ֔עְתָּ כִּי הֵ֛ם זִקְנֵ֥י הָ/עָ֖ם וְ/שֹׁטְרָ֑י/ו וְ/לָקַחְתָּ֤ אֹתָ/ם֙ אֶל אֹ֣הֶל מוֹעֵ֔ד וְ/הִֽתְיַצְּב֥וּ שָׁ֖ם עִמָּֽ/ךְ׃",
+        "LXX": "Καὶ εἶπεν Κύριος πρὸς Μωυσῆν Συνάγαγέ μοι ἑβδομήκοντα ἄνδρας ἀπὸ τῶν πρεσβυτέρων Ἰσραήλ, οὓς αὐτός σοι εἶδες ὅτι οὗτοί εἰσιν πρεσβύτεροι τοῦ λαοῦ καὶ γραμματεῖς αὐτῶν. καὶ ἄξεις αὐτοὺς πρὸς τὴν σκηνὴν τοῦ μαρτυρίου, καὶ στήσονται ἐκεῖ μετὰ σοῦ.",
+        "VUL": "Et dixit Dominus ad Moysen : Congrega mihi septuaginta viros de senibus Israël, quos tu nosti quod senes populi sint ac magistri : et duces eos ad ostium tabernaculi fderis, faciesque ibi stare tecum,",
+        "SYN": "И сказал Господь Моисею: собери Мне семьдесят мужей из старейшин Израилевых, которых ты знаешь, что они старейшины и надзиратели его, и возьми их к скинии собрания, чтобы они стали там с тобою;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Assemble-moi soixante-dix hommes des anciens d’Israël, que tu connais pour être anciens du peuple et préposés sur lui ; amène-les à la tente de réunion et qu’ils se tiennent là avec toi.",
+        "NAB": "Then the LORD said to Moses, \"Assemble for me seventy of the elders of Israel, men you know for true elders and authorities among the people, and bring them to the meeting tent. When they are in place beside you,",
+        "VAT_ES": "El Señor respondió a Moisés: «Reúneme a setenta de los ancianos de Israel –deberás estar seguro de que son realmente ancianos y escribas del pueblo– llévalos a la Carpa del Encuentro, y que permanezcan allí junto contigo.",
+        "CEI": "Il Signore disse a Mosè: \"Radunami settanta uomini tra gli anziani d'Israele, conosciuti da te come anziani del popolo e come loro scribi; conducili alla tenda del convegno; vi si presentino con te."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/יָרַדְתִּ֗י וְ/דִבַּרְתִּ֣י עִמְּ/ךָ֮ שָׁם֒ וְ/אָצַלְתִּ֗י מִן הָ/ר֛וּחַ אֲשֶׁ֥ר עָלֶ֖י/ךָ וְ/שַׂמְתִּ֣י עֲלֵי/הֶ֑ם וְ/נָשְׂא֤וּ אִתְּ/ךָ֙ בְּ/מַשָּׂ֣א הָ/עָ֔ם וְ/לֹא תִשָּׂ֥א אַתָּ֖ה לְ/בַדֶּֽ/ךָ׃",
+        "LXX": "καὶ καταβήσομαι καὶ λαλήσω ἐκεῖ μετὰ σοῦ, καὶ ἀφελῶ ἀπὸ τοῦ πνεύματος τοῦ ἐπὶ σοὶ καὶ ἐπιθήσω ἐπ’ αὐτούς· καὶ συναντιλήμψονται μετὰ σοῦ τὴν ὁρμὴν τοῦ λαοῦ, καὶ οὐκ οἴσεις αὐτοὺς σὺ μόνος.",
+        "VUL": "ut descendam et loquar tibi : et auferam de spiritu tuo, tradamque eis, ut sustentent tecum onus populi, et non tu solus graveris.",
+        "SYN": "Я сойду, и буду говорить там с тобою, и возьму от Духа, Который на тебе, и возложу на них, чтобы они несли с тобою бремя народа, а не один ты носил.",
+        "NEO": "Je descendrai et je te parlerai là ; je prendrai de l’esprit qui est sur toi et je le mettrai sur eux, afin qu’ils portent avec toi la charge du peuple, et tu ne la porteras plus toi seul.",
+        "NAB": "I will come down and speak with you there. I will also take some of the spirit that is on you and will bestow it on them, that they may share the burden of the people with you. You will then not have to bear it by yourself.",
+        "VAT_ES": "Yo bajaré hasta allí, te hablaré, y tomaré algo del espíritu que tú posees, para comunicárselo a ellos. Así podrán compartir contigo el peso de este pueblo, y no tendrás que soportarlo tú solo.",
+        "CEI": "Io scenderò e parlerò in quel luogo con te; prenderò lo spirito che è su di te per metterlo su di loro, perché portino con te il carico del popolo e tu non lo porti più da solo."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/אֶל הָ/עָ֨ם תֹּאמַ֜ר הִתְקַדְּשׁ֣וּ לְ/מָחָר֮ וַ/אֲכַלְתֶּ֣ם בָּשָׂר֒ כִּ֡י בְּכִיתֶם֩ בְּ/אָזְנֵ֨י יְהוָ֜ה לֵ/אמֹ֗ר מִ֤י יַאֲכִלֵ֨/נוּ֙ בָּשָׂ֔ר כִּי ט֥וֹב לָ֖/נוּ בְּ/מִצְרָ֑יִם וְ/נָתַ֨ן יְהוָ֥ה לָ/כֶ֛ם בָּשָׂ֖ר וַ/אֲכַלְתֶּֽם׃",
+        "LXX": "καὶ τῷ λαῷ ἐρεῖς Ἁγνίσασθε εἰς αὔριον, καὶ φάγεσθε κρέα· ὅτι ἐκλαύσατε ἔναντι Κυρίου λέγοντες Τίς ἡμᾶς ψωμιεῖ κρέα; ὅτι καλὸν ἡμῖν ἐστὶν ἐν Αἰγύπτῳ· καὶ δώσει Κύριος ὑμῖν κρέα φαγεῖν, καὶ φάγεσθε κρέα.",
+        "VUL": "Populo quoque dices : Sanctificamini (cras comedetis carnes : ego enim audivi vos dicere : Quis dabit nobis escas carnium ? bene nobis erat in Ægypto), ut det vobis Dominus carnes, et comedatis :",
+        "SYN": "Народу же скажи: очиститесь к завтрашнему дню, и будете есть мясо; так как вы плакали вслух Господа и говорили: кто накормит нас мясом? хорошо нам было в Египте, -- то и даст вам Господь мясо, и будете есть [мясо]:",
+        "NEO": "Tu diras au peuple : Sanctifiez-vous pour demain, et vous aurez de la viande à manger, puisque vous avez pleuré aux oreilles de \\+w Yahweh|strong=\"H3068\"\\+w**, en disant : Qui nous fera manger de la viande ? car nous étions bien en Égypte ! Et \\+w Yahweh|strong=\"H3068\"\\+w** vous donnera de la viande, et vous en mangerez ;",
+        "NAB": "\"To the people, however, you shall say: Sanctify yourselves for tomorrow, when you shall have meat to eat. For in the hearing of the LORD you have cried, 'Would that we had meat for food! Oh, how well off we were in Egypt!' Therefore the LORD will give you meat for food,",
+        "VAT_ES": "También dirás al pueblo: Purifíquense para mañana y comerán carne. Ya que ustedes han llorado delante del Señor, diciendo: «&iexcl;Si al menos tuviéramos carne para comer! &iexcl;Qué bien estábamos en Egipto!», el Señor les dará de comer carne.",
+        "CEI": "Dirai al popolo: Santificatevi per domani e mangerete carne, perché avete pianto agli orecchi del Signore, dicendo: Chi ci farà mangiare carne? Stavamo così bene in Egitto! Ebbene il Signore vi darà carne e voi ne mangerete."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "לֹ֣א י֥וֹם אֶחָ֛ד תֹּאכְל֖וּ/ן וְ/לֹ֣א יוֹמָ֑יִם וְ/לֹ֣א חֲמִשָּׁ֣ה יָמִ֗ים וְ/לֹא֙ עֲשָׂרָ֣ה יָמִ֔ים וְ/לֹ֖א עֶשְׂרִ֥ים יֽוֹם׃",
+        "LXX": "οὐχ ἡμέραν μίαν φάγεσθε, οὐδὲ δύο οὐδὲ πέντε ἡμέρας, οὐδὲ δέκα ἡμέρας, οὐδὲ εἴκοσι ἡμέρας·",
+        "VUL": "non uno die, nec duobus, vel quinque aut decem, nec viginti quidem,",
+        "SYN": "не один день будете есть, не два дня, не пять дней, не десять дней и не двадцать дней,",
+        "NEO": "ce n’est pas un jour que vous en mangerez, ni deux jours, ni cinq jours, ni dix jours, ni vingt jours,",
+        "NAB": "and you will eat it, not for one day, or two days, or five, or ten, or twenty days,",
+        "VAT_ES": "Y no la comerán un día, ni dos, ni diez, ni veinte,",
+        "CEI": "Ne mangerete non per un giorno, non per due giorni, non per cinque giorni, non per dieci giorni, non per venti giorni,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "עַ֣ד חֹ֣דֶשׁ יָמִ֗ים עַ֤ד אֲשֶׁר יֵצֵא֙ מֵֽ/אַפְּ/כֶ֔ם וְ/הָיָ֥ה לָ/כֶ֖ם לְ/זָרָ֑א יַ֗עַן כִּֽי מְאַסְתֶּ֤ם אֶת יְהוָה֙ אֲשֶׁ֣ר בְּ/קִרְבְּ/כֶ֔ם וַ/תִּבְכּ֤וּ לְ/פָנָי/ו֙ לֵ/אמֹ֔ר לָ֥/מָּה זֶּ֖ה יָצָ֥אנוּ מִ/מִּצְרָֽיִם׃",
+        "LXX": "ἕως μηνὸς ἡμερῶν φάγεσθε, ἕως ἂν ἐξέλθῃ ἐκ τῶν μυκτήρων ὑμῶν κρέα· καὶ ἔσται ὑμῖν εἰς χολέραν· ὅτι ἠπειθήσατε Κυρίῳ ὅς ἐστιν ἐν ὑμῖν, καὶ ἐκλαύσατε ἐναντίον αὐτοῦ λέγοντες Ἵνα τί ἡμῖν ἐξελθεῖν ἐξ Αἰγύπτου;",
+        "VUL": "sed usque ad mensem dierum, donec exeat per nares vestras, et vertatur in nauseam, eo quod repuleritis Dominum, qui in medio vestri est, et fleveritis coram eo, dicentes : Quare egressi sumus ex Ægypto ?",
+        "SYN": "но целый месяц [будете есть], пока не пойдет оно из ноздрей ваших и не сделается для вас отвратительным, за то, что вы презрели Господа, Который среди вас, и плакали пред Ним, говоря: для чего было нам выходить из Египта?",
+        "NEO": "mais un mois entier, jusqu’à ce qu’elle vous sorte par les narines et qu’elle vous soit en dégoût, parce que vous avez rejeté \\+w Yahweh|strong=\"H3068\"\\+w** qui est au milieu de vous, et que vous avez pleuré devant lui, en disant : Pourquoi donc sommes-nous sortis d’Égypte ? »",
+        "NAB": "but for a whole month-until it comes out of your very nostrils and becomes loathsome to you. For you have spurned the LORD who is in your midst, and in his presence you have wailed, 'Why did we ever leave Egypt?'\"",
+        "VAT_ES": "sino un mes entero, hasta que se les salga por las narices y les provoque repugnancia. Porque han despreciado al Señor que está en medio de ustedes, y han llorado en su presencia, diciendo: «&iquest;Para qué habremos salido de Egipto?».",
+        "CEI": "ma per un mese intero, finché vi esca dalle narici e vi venga a noia, perché avete respinto il Signore che è in mezzo a voi e avete pianto davanti a lui, dicendo: Perché siamo usciti dall'Egitto?\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֮ מֹשֶׁה֒ שֵׁשׁ מֵא֥וֹת אֶ֨לֶף֙ רַגְלִ֔י הָ/עָ֕ם אֲשֶׁ֥ר אָנֹכִ֖י בְּ/קִרְבּ֑/וֹ וְ/אַתָּ֣ה אָמַ֗רְתָּ בָּשָׂר֙ אֶתֵּ֣ן לָ/הֶ֔ם וְ/אָכְל֖וּ חֹ֥דֶשׁ יָמִֽים׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς πρὸς Κύριον Ἑξακόσιαι χιλιάδες πεζῶν ὁ λαὸς ἐν οἷς εἰμὶ ἐν αὐτοῖς, καὶ σὺ εἶπας Κρέα δώσω αὐτοῖς φαγεῖν, καὶ φάγονται μῆνα ἡμερῶν·",
+        "VUL": "Et ait Moyses : Sexcenta millia peditum hujus populi sunt : et tu dicis : Dabo eis esum carnium mense integro ?",
+        "SYN": "И сказал Моисей: шестьсот тысяч пеших в народе сем, среди которого я _нахожусь;_ а Ты говоришь: Я дам им мясо, и будут есть целый месяц!",
+        "NEO": "Moïse dit : « Le peuple au milieu duquel je suis est de six cent mille hommes de pied, et vous dites : Je leur donnerai de la viande, et ils en mangeront un mois entier !",
+        "NAB": "But Moses said, \"The people around me include six hundred thousand soldiers; yet you say, 'I will give them meat to eat for a whole month.'",
+        "VAT_ES": "Moisés dijo entonces: «El pueblo que me rodea está formado por seiscientos mil hombres de a pie, &iquest;y tú dices que le darás carne para comer un mes entero?",
+        "CEI": "Mosè disse: \"Questo popolo, in mezzo al quale mi trovo, conta seicentomila adulti e tu dici: Io darò loro la carne e ne mangeranno per un mese intero!"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "הֲ/צֹ֧אן וּ/בָקָ֛ר יִשָּׁחֵ֥ט לָ/הֶ֖ם וּ/מָצָ֣א לָ/הֶ֑ם אִ֣ם אֶֽת כָּל דְּגֵ֥י הַ/יָּ֛ם יֵאָסֵ֥ף לָ/הֶ֖ם וּ/מָצָ֥א לָ/הֶֽם׃",
+        "LXX": "μὴ πρόβατα καὶ βόες σφαγήσονται αὐτοῖς, καὶ ἀρκέσει αὐτοῖς; ἢ πᾶν τὸ ὄψος τῆς θαλάσσης συναχθήσεται αὐτοῖς, καὶ ἀρκέσει αὐτοῖς;",
+        "VUL": "numquid ovium et boum multitudo cædetur, ut possit sufficere ad cibum ? vel omnes pisces maris in unum congregabuntur, ut eos satient ?",
+        "SYN": "заколоть ли всех овец и волов, чтобы им было довольно? или вся рыба морская соберется, чтобы удовлетворить их?",
+        "NEO": "Egorgera-t-on pour eux les brebis et les bœufs, pour qu’ils en aient assez ? Ou leur ramassera-t-on tous les poissons de la mer, pour qu’ils en aient assez ? »",
+        "NAB": "Can enough sheep and cattle be slaughtered for them? If all the fish of the sea were caught for them, would they have enough?\"",
+        "VAT_ES": "Si se degollaran ovejas y vacas, &iquest;alcanzarían para todos? Y si se reunieran todos los peces del mar, &iquest;tendrían bastante?».",
+        "CEI": "Si possono uccidere per loro greggi e armenti in modo che ne abbiano abbastanza? O si radunerà per loro tutto il pesce del mare in modo che ne abbiano abbastanza?\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֶל מֹשֶׁ֔ה הֲ/יַ֥ד יְהוָ֖ה תִּקְצָ֑ר עַתָּ֥ה תִרְאֶ֛ה הֲ/יִקְרְ/ךָ֥ דְבָרִ֖/י אִם לֹֽא׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς Μωυσῆν Μὴ χεὶρ Κυρίου οὐκ ἐξαρκέσει; ἤδη γνώσει εἰ ἐπικαταλήμψεταί σε ὁ λόγος μου ἢ οὔ.",
+        "VUL": "Cui respondit Dominus : Numquid manus Domini invalida est ? jam nunc videbis utrum meus sermo opere compleatur.",
+        "SYN": "И сказал Господь Моисею: разве рука Господня коротка? ныне ты увидишь, сбудется ли слово Мое тебе, или нет?",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** répondit à Moïse : « La main de \\+w Yahweh|strong=\"H3068\"\\+w** est-elle trop courte ? Tu verras maintenant si ce que j’ai dit t’arrivera ou non. »",
+        "NAB": "The LORD answered Moses, \"Is this beyond the LORD'S reach? You shall see now whether or not what I have promised you takes place.\"",
+        "VAT_ES": "Pero el Señor respondió a Moisés: «&iquest;Acaso hay límite para el poder del Señor? En seguida verás si lo que acabo de decirte se cumple o no».",
+        "CEI": "Il Signore rispose a Mosè: \"Il braccio del Signore è forse raccorciato? Ora vedrai se la parola che ti ho detta si realizzerà o no\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֣א מֹשֶׁ֗ה וַ/יְדַבֵּר֙ אֶל הָ/עָ֔ם אֵ֖ת דִּבְרֵ֣י יְהוָ֑ה וַ/יֶּאֱסֹ֞ף שִׁבְעִ֥ים אִישׁ֙ מִ/זִּקְנֵ֣י הָ/עָ֔ם וַֽ/יַּעֲמֵ֥ד אֹתָ֖/ם סְבִיבֹ֥ת הָ/אֹֽהֶל׃",
+        "LXX": "καὶ ἐξῆλθεν Μωυσῆς καὶ ἐλάλησεν πρὸς τὸν λαὸν τὰ ῥήματα Κυρίου, καὶ συνήγαγεν ἑβδομήκοντα ἄνδρας ἀπὸ τῶν πρεσβυτέρων τοῦ λαοῦ καὶ ἔστησεν αὐτοὺς κύκλῳ τῆς σκηνῆς.",
+        "VUL": "Venit igitur Moyses, et narravit populo verba Domini, congregans septuaginta viros de senibus Israël, quos stare fecit circa tabernaculum.",
+        "SYN": "Моисей вышел и сказал народу слова Господни, и собрал семьдесят мужей из старейшин народа и поставил их около скинии.",
+        "NEO": "Moïse sortit et rapporta au peuple les paroles de \\+w Yahweh|strong=\"H3068\"\\+w**, et il assembla soixante-dix hommes des anciens du peuple et les plaça autour de la tente.",
+        "NAB": "So Moses went out and told the people what the LORD had said. Gathering seventy elders of the people, he had them stand around the tent.",
+        "VAT_ES": "Moisés salió a comunicar al pueblo las palabras del Señor. Luego reunió a setenta hombres entre los ancianos del pueblo, y los hizo poner de pie alrededor de la Carpa.",
+        "CEI": "Mosè dunque uscì e riferì al popolo le parole del Signore; radunò settanta uomini tra gli anziani del popolo e li pose intorno alla tenda del convegno."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨רֶד יְהוָ֥ה בֶּ/עָנָן֮ וַ/יְדַבֵּ֣ר אֵלָי/ו֒ וַ/יָּ֗אצֶל מִן הָ/ר֨וּחַ֙ אֲשֶׁ֣ר עָלָ֔י/ו וַ/יִּתֵּ֕ן עַל שִׁבְעִ֥ים אִ֖ישׁ הַ/זְּקֵנִ֑ים וַ/יְהִ֗י כְּ/נ֤וֹחַ עֲלֵי/הֶם֙ הָ/ר֔וּחַ וַ/יִּֽתְנַבְּא֖וּ וְ/לֹ֥א יָסָֽפוּ׃",
+        "LXX": "καὶ κατέβη Κύριος ἐν νεφέλῃ καὶ ἐλάλησεν πρὸς αὐτόν, καὶ παρείλατο ἀπὸ τοῦ πνεύματος τοῦ ἐπ’ αὐτῷ καὶ ἐπέθηκεν ἐπὶ τοὺς ἑβδομήκοντα ἄνδρας τοὺς πρεσβυτέρους· ὡς δὲ ἐπανεπαύσατο τὸ πνεῦμα ἐπ’ αὐτούς, καὶ ἐπροφήτευσαν, καὶ οὐκέτι προσέθεντο.",
+        "VUL": "Descenditque Dominus per nubem, et locutus est ad eum, auferens de spiritu qui erat in Moyse, et dans septuaginta viris. Cumque requievisset in eis spiritus, prophetaverunt, nec ultra cessaverunt.",
+        "SYN": "И сошел Господь в облаке, и говорил с ним, и взял от Духа, Который на нем, и дал семидесяти мужам старейшинам. И когда почил на них Дух, они стали пророчествовать, но потом перестали.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** descendit dans la nuée et parla à Moïse ; il prit de l’esprit qui était sur lui et le mit sur les soixante-dix anciens ; et, dès que l’esprit reposa sur eux, ils prophétisèrent ; mais ils ne continuèrent pas.",
+        "NAB": "The LORD then came down in the cloud and spoke to him. Taking some of the spirit that was on Moses, he bestowed it on the seventy elders; and as the spirit came to rest on them, they prophesied.",
+        "VAT_ES": "Entonces el Señor descendió en la nube y le habló a Moisés. Después tomó algo del espíritu que estaba sobre él y lo infundió a los setenta ancianos. Y apenas el espíritu se posó sobre ellos, comenzaron a hablar en éxtasis; pero después no volvieron a hacerlo.",
+        "CEI": "Allora il Signore scese nella nube e gli parlò: prese lo spirito che era su di lui e lo infuse sui settanta anziani: quando lo spirito si fu posato su di essi, quelli profetizzarono, ma non lo fecero più in seguito."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יִּשָּׁאֲר֣וּ שְׁנֵֽי אֲנָשִׁ֣ים בַּֽ/מַּחֲנֶ֡ה שֵׁ֣ם הָ/אֶחָ֣ד אֶלְדָּ֡ד וְ/שֵׁם֩ הַ/שֵּׁנִ֨י מֵידָ֜ד וַ/תָּ֧נַח עֲלֵי/הֶ֣ם הָ/ר֗וּחַ וְ/הֵ֨מָּה֙ בַּ/כְּתֻבִ֔ים וְ/לֹ֥א יָצְא֖וּ הָ/אֹ֑הֱלָ/ה וַ/יִּֽתְנַבְּא֖וּ בַּֽ/מַּחֲנֶֽה׃",
+        "LXX": "καὶ κατελείφθησαν δύο ἄνδρες ἐν τῇ παρεμβολῇ, ὄνομα τῷ ἑνὶ Ἐλδὰδ καὶ ὄνομα τῷ δευτέρῳ Μωδάδ, καὶ ἐπανεπαύσατο ἐπ’ αὐτοὺς πνεῦμα· καὶ οὗτοι ἦσαν τῶν καταγεγραμμένων, καὶ οὐκ ἦλθον πρὸς τὴν σκηνήν· καὶ ἐπροφήτευσαν ἐν τῇ παρεμβολῇ.",
+        "VUL": "Remanserant autem in castris duo viri, quorum unus vocabatur Eldad, et alter Medad, super quos requievit spiritus. Nam et ipsi descripti fuerant, et non exierant ad tabernaculum.",
+        "SYN": "Двое из мужей оставались в стане, одному имя Елдад, а другому имя Модад; но и на них почил Дух [они были из числа записанных, только не выходили к скинии], и они пророчествовали в стане.",
+        "NEO": "Deux hommes, l’un nommé Eldad, et l’autre Médad, étaient restés dans le camp, et l’esprit reposa aussi sur eux ; ils étaient parmi les inscrits, mais ils ne s’étaient pas rendus à la tente ; et ils prophétisèrent dans le camp.",
+        "NAB": "Now two men, one named Eldad and the other Medad, were not in the gathering but had been left in the camp. They too had been on the list, but had not gone out to the tent; yet the spirit came to rest on them also, and they prophesied in the camp.",
+        "VAT_ES": "Dos hombres –uno llamado Eldad y el otro Medad– se habían quedado en el campamento; y como figuraban entre los inscritos, el espíritu se posó sobre ellos, a pesar de que no habían ido a la Carpa. Y también ellos se pusieron a hablar en éxtasis.",
+        "CEI": "Intanto, due uomini, uno chiamato Eldad e l'altro Medad, erano rimasti nell'accampamento e lo spirito si posò su di essi; erano fra gli iscritti ma non erano usciti per andare alla tenda; si misero a profetizzare nell'accampamento."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣רָץ הַ/נַּ֔עַר וַ/יַּגֵּ֥ד לְ/מֹשֶׁ֖ה וַ/יֹּאמַ֑ר אֶלְדָּ֣ד וּ/מֵידָ֔ד מִֽתְנַבְּאִ֖ים בַּֽ/מַּחֲנֶֽה׃",
+        "LXX": "καὶ προσδραμὼν ὁ νεανίσκος ἀπήγγειλεν Μωυσῇ καὶ εἶπεν λέγων Ἐλδὰδ καὶ Μωδὰδ προφητεύουσιν ἐν τῇ παρεμβολῇ.",
+        "VUL": "Cumque prophetarent in castris, cucurrit puer, et nuntiavit Moysi, dicens : Eldad et Medad prophetant in castris.",
+        "SYN": "И прибежал отрок и донес Моисею, и сказал: Елдад и Модад пророчествуют в стане.",
+        "NEO": "Un jeune garçon courut l’annoncer à Moïse, en disant : « Eldad et Médad prophétisent dans le camp. »",
+        "NAB": "So, when a young man quickly told Moses, \"Eldad and Medad are prophesying in the camp,\"",
+        "VAT_ES": "Un muchacho vino corriendo y comunicó la noticia a Moisés, con estas palabras: «Eldad y Medad están profetizando en el campamento».",
+        "CEI": "Un giovane corse a riferire la cosa a Mosè e disse: \"Eldad e Medad profetizzano nell'accampamento\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יַּ֜עַן יְהוֹשֻׁ֣עַ בִּן נ֗וּן מְשָׁרֵ֥ת מֹשֶׁ֛ה מִ/בְּחֻרָ֖י/ו וַ/יֹּאמַ֑ר אֲדֹנִ֥/י מֹשֶׁ֖ה כְּלָאֵֽ/ם׃",
+        "LXX": "καὶ ἀποκριθεὶς Ἰησοῦς ὁ τοῦ Ναυὴ ὁ παρεστηκὼς Μωυσῇ ὁ ἐκλεκτὸς εἶπεν Κύριε Μωυσῆ, κώλυσον αὐτούς.",
+        "VUL": "Statim Josue filius Nun, minister Moysi, et electus e pluribus, ait : Domine mi Moyses, prohibe eos.",
+        "SYN": "В ответ на это Иисус, сын Навин, служитель Моисея, один из избранных его, сказал: господин мой Моисей! запрети им.",
+        "NEO": "Aussitôt Josué, fils de Nun, serviteur de Moïse depuis sa jeunesse, prenant la parole dit : « Moïse, mon seigneur, empêche-les. »",
+        "NAB": "Joshua, son of Nun, who from his youth had been Moses' aide, said, \"Moses, my lord, stop them.\"",
+        "VAT_ES": "Josué, hijo de Nun, que desde su juventud era ayudante de Moisés, intervino diciendo: «Moisés, señor mío, no se lo permitas».",
+        "CEI": "Allora Giosuè, figlio di Nun, che dalla sua giovinezza era al servizio di Mosè, disse: \"Mosè, signor mio, impediscili!\"."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר ל/וֹ֙ מֹשֶׁ֔ה הַֽ/מְקַנֵּ֥א אַתָּ֖ה לִ֑/י וּ/מִ֨י יִתֵּ֜ן כָּל עַ֤ם יְהוָה֙ נְבִיאִ֔ים כִּי יִתֵּ֧ן יְהוָ֛ה אֶת רוּח֖/וֹ עֲלֵי/הֶֽם׃",
+        "LXX": "καὶ εἶπεν αὐτῷ Μωυσῆς Μὴ ζηλοῖς σὺ ἐμέ; καὶ τίς δῴη πάντα τὸν λαὸν Κυρίου προφήτας, ὅταν δῷ Κύριος τὸ πνεῦμα αὐτοῦ ἐπ’ αὐτούς;",
+        "VUL": "At ille : Quid, inquit æmularis pro me ? quis tribuat ut omnis populus prophetet, et det eis Dominus spiritum suum ?",
+        "SYN": "Но Моисей сказал ему: не ревнуешь ли ты за меня? о, если бы все в народе Господнем были пророками, когда бы Господь послал Духа Своего на них!",
+        "NEO": "Moïse lui répondit : « Es-tu donc jaloux pour moi ? Plût à Dieu que tout le peuple de \\+w Yahweh|strong=\"H3068\"\\+w** fût prophète, et que \\+w Yahweh|strong=\"H3068\"\\+w** mit son esprit sur eux ! »",
+        "NAB": "But Moses answered him, \"Are you jealous for my sake? Would that all the people of the LORD were prophets! Would that the LORD might bestow his spirit on them all!\"",
+        "VAT_ES": "Pero Moisés le respondió: «&iquest;Acaso estás celoso a causa de mí? &iexcl;Ojalá todos fueran profetas en el pueblo del Señor, porque él les infunde su espíritu!».",
+        "CEI": "Ma Mosè gli rispose: \"Sei tu geloso per me? Fossero tutti profeti nel popolo del Signore e volesse il Signore dare loro il suo spirito!\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יֵּאָסֵ֥ף מֹשֶׁ֖ה אֶל הַֽ/מַּחֲנֶ֑ה ה֖וּא וְ/זִקְנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἀπῆλθεν Μωυσῆς εἰς τὴν παρεμβολήν, αὐτὸς καὶ οἱ πρεσβύτεροι Ἰσραήλ.",
+        "VUL": "Reversusque est Moyses, et majores natu Israël in castra.",
+        "SYN": "И возвратился Моисей в стан, он и старейшины Израилевы.",
+        "NEO": "Et Moïse se retira dans le camp, lui et les anciens d’Israël.",
+        "NAB": "Then Moses retired to the camp, along with the elders of Israel.",
+        "VAT_ES": "Luego Moisés volvió a entrar en el campamento con todos los ancianos de Israel.",
+        "CEI": "Mosè si ritirò nell'accampamento, insieme con gli anziani d'Israele."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/ר֜וּחַ נָסַ֣ע מֵ/אֵ֣ת יְהוָ֗ה וַ/יָּ֣גָז שַׂלְוִים֮ מִן הַ/יָּם֒ וַ/יִּטֹּ֨שׁ עַל הַֽ/מַּחֲנֶ֜ה כְּ/דֶ֧רֶךְ י֣וֹם כֹּ֗ה וּ/כְ/דֶ֤רֶךְ יוֹם֙ כֹּ֔ה סְבִיב֖וֹת הַֽ/מַּחֲנֶ֑ה וּ/כְ/אַמָּתַ֖יִם עַל פְּנֵ֥י הָ/אָֽרֶץ׃",
+        "LXX": "Καὶ πνεῦμα ἐξῆλθεν παρὰ Κυρίου καὶ ἐξεπέρασεν ὀρτυγομήτραν ἀπὸ τῆς θαλάσσης, καὶ ἐπέβαλεν ἐπὶ τὴν παρεμβολὴν ὁδὸν ἡμέρας ἐντεῦθεν καὶ ὁδὸν ἡμέρας ἐντεῦθεν κύκλῳ τῆς παρεμβολῆς, ὡσεὶ δίπηχυ ἀπὸ τῆς γῆς.",
+        "VUL": "Ventus autem egrediens a Domino, arreptans trans mare coturnices detulit, et demisit in castra itinere quantum uno die confici potest, ex omni parte castrorum per circuitum, volabantque in aëre duobus cubitis altitudine super terram.",
+        "SYN": "И поднялся ветер от Господа, и принес от моря перепелов, и набросал их около стана, на путь дня по одну сторону и на путь дня по другую сторону около стана, на два почти локтя от земли.",
+        "NEO": "Un vent souffla de par l’ordre de \\+w Yahweh|strong=\"H3068\"\\+w**, qui, de la mer, amena des cailles et les abattit sur le camp, sur l’étendue d’environ une journée de chemin d’un côté, d’environ une journée de chemin de l’autre côté, autour du camp ; et il y en avait près de deux coudées de haut sur la surface de la terre.",
+        "NAB": "There arose a wind sent by the LORD, that drove in quail from the sea and brought them down over the camp site at a height of two cubits from the ground for the distance of a day's journey all around the camp.",
+        "VAT_ES": "Entonces se levantó un viento enviado por el Señor, que trajo del mar una bandada de codornices y las precipitó sobre el campamento. Las codornices cubrieron toda la extensión de un día de camino, a uno y otro lado del campamento, hasta la altura de un metro sobre la superficie del suelo.",
+        "CEI": "Intanto si era alzato un vento, per ordine del Signore, e portò quaglie dalla parte del mare e le fece cadere presso l'accampamento sulla distesa di circa una giornata di cammino da un lato e una giornata di cammino dall'altro, intorno all'accampamento e a un'altezza di circa due cubiti sulla superficie del suolo."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣קָם הָ/עָ֡ם כָּל הַ/יּוֹם֩ הַ/ה֨וּא וְ/כָל הַ/לַּ֜יְלָה וְ/כֹ֣ל י֣וֹם הַֽ/מָּחֳרָ֗ת וַ/יַּֽאַסְפוּ֙ אֶת הַ/שְּׂלָ֔ו הַ/מַּמְעִ֕יט אָסַ֖ף עֲשָׂרָ֣ה חֳמָרִ֑ים וַ/יִּשְׁטְח֤וּ לָ/הֶם֙ שָׁט֔וֹחַ סְבִיב֖וֹת הַֽ/מַּחֲנֶֽה׃",
+        "LXX": "καὶ ἀναστὰς ὁ λαὸς ὅλην τὴν ἡμέραν καὶ ὅλην τὴν νύκτα καὶ ὅλην τὴν ἡμέραν τὴν ἐπαύριον, καὶ συνήγαγον τὴν ὀρτυγομήτραν· ὁ τὸ ὀλίγον συνήγαγεν δέκα κόρους· καὶ ἔσφαξαν ἑαυτοῖς ψυγμοὺς κύκλῳ τῆς παρεμβολῆς.",
+        "VUL": "Surgens ergo populus toto die illo, et nocte, ac die altero, congregavit coturnicum : qui parum, decem coros : et siccaverunt eas per gyrum castrorum.",
+        "SYN": "И встал народ, и весь тот день, и всю ночь, и весь следующий день собирали перепелов; и кто мало собирал, тот собрал десять хомеров; и разложили их для себя вокруг стана.",
+        "NEO": "Pendant tout ce jour, toute la nuit et toute la journée du lendemain, le peuple se leva et ramassa les cailles ; celui qui en avait ramassé le moins en avait dix gomors ; et ils les étendirent pour eux, tout autour du camp.",
+        "NAB": "All that day, all night, and all the next day the people gathered in the quail. Even the one who got the least gathered ten homers of them. Then they spread them out all around the camp.",
+        "VAT_ES": "El pueblo se puso a recoger codornices todo el día, toda la noche y todo el día siguiente. El que había recogido menos, tenía diez medidas de unos cuatrocientos cincuenta litros cada una. Y las esparcieron alrededor de todo el campamento.",
+        "CEI": "Il popolo si alzò e tutto quel giorno e tutta la notte e tutto il giorno dopo raccolse le quaglie. Chi ne raccolse meno ne ebbe dieci homer; le distesero intorno all'accampamento."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "הַ/בָּשָׂ֗ר עוֹדֶ֨/נּוּ֙ בֵּ֣ין שִׁנֵּי/הֶ֔ם טֶ֖רֶם יִכָּרֵ֑ת וְ/אַ֤ף יְהוָה֙ חָרָ֣ה בָ/עָ֔ם וַ/יַּ֤ךְ יְהוָה֙ בָּ/עָ֔ם מַכָּ֖ה רַבָּ֥ה מְאֹֽד׃",
+        "LXX": "τὰ κρέα ἔτι ἦν ἐν τοῖς ὀδοῦσιν αὐτῶν πρὶν ἢ ἐκλείπειν, καὶ Κύριος ἐθυμώθη εἰς τὸν λαὸν αὐτοῦ· καὶ Κύριος ἐπάταξεν τὸν λαὸν πληγὴν μεγάλην σφόδρα.",
+        "VUL": "Adhuc carnes erant in dentibus eorum, nec defecerat hujuscemodi cibus : et ecce furor Domini concitatus in populum, percussit eum plaga magna nimis.",
+        "SYN": "Мясо еще было в зубах их и не было еще съедено, как гнев Господень возгорелся на народ, и поразил Господь народ весьма великою язвою.",
+        "NEO": "Mais la chair était encore entre leurs dents, avant d’être consommée, que la colère de \\+w Yahweh|strong=\"H3068\"\\+w** s’enflamma contre le peuple, et \\+w Yahweh|strong=\"H3068\"\\+w** frappa le peuple d’une très grande plaie.",
+        "NAB": "But while the meat was still between their teeth, before it could be consumed, the LORD'S wrath flared up against the people, and he struck them with a very great plague.",
+        "VAT_ES": "La carne estaba todavía entre sus dientes, sin masticar, cuando la ira del Señor se encendió contra el pueblo, y el Señor lo castigó con una enorme mortandad.",
+        "CEI": "Avevano ancora la carne fra i denti e non l'avevano ancora masticata, quando lo sdegno del Signore si accese contro il popolo e il Signore percosse il popolo con una gravissima piaga."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֛א אֶת שֵֽׁם הַ/מָּק֥וֹם הַ/ה֖וּא קִבְר֣וֹת הַֽתַּאֲוָ֑ה כִּי שָׁם֙ קָֽבְר֔וּ אֶת הָ/עָ֖ם הַ/מִּתְאַוִּֽים׃",
+        "LXX": "καὶ ἐκλήθη τὸ ὄνομα τοῦ τόπου ἐκείνου Μνήματα τῆς ἐπιθυμίας· ἐκεῖ ἔθαψαν τὸν λαὸν τὸν ἐπιθυμητήν.",
+        "VUL": "Vocatusque est ille locus, Sepulchra concupiscentiæ : ibi enim sepelierunt populum qui desideraverat. Egressi autem de Sepulchris concupiscentiæ, venerunt in Haseroth, et manserunt ibi.",
+        "SYN": "И нарекли имя месту сему: Киброт-Гаттаава, ибо там похоронили прихотливый народ.",
+        "NEO": "On donna à ce lieu le nom de Qibroth-Hattaava, parce qu’on y enterra le peuple qui s’était enflammé de convoitise.",
+        "NAB": "So that place was named Kibroth-hattaavah, because it was there that the greedy people were buried.",
+        "VAT_ES": "El lugar fue llamado Quibrot Hataavá –que significa Tumbas de la Gula– porque allí enterraron a la gente que se dejó llevar por la gula.",
+        "CEI": "Quel luogo fu chiamato Kibrot-Taava, perché qui fu sepolta la gente che si era lasciata dominare dalla ingordigia."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "מִ/קִּבְר֧וֹת הַֽתַּאֲוָ֛ה נָסְע֥וּ הָ/עָ֖ם חֲצֵר֑וֹת וַ/יִּהְי֖וּ בַּ/חֲצֵרֽוֹת׃",
+        "LXX": "ἀπὸ Μνημάτων ἐπιθυμίας ἐξῆρεν ὁ λαὸς εἰς Ἁσηρώθ, καὶ ἐγένετο ὁ λαὸς ἐν Ἁσηρώθ.",
+        "SYN": "От Киброт-Гаттаавы двинулся народ в Асироф, и остановился в Асирофе.",
+        "NEO": "De Qibroth-Hattaava le peuple partit pour Haséroth, et il s’arrêta à Haséroth.",
+        "NAB": "From Kibroth-hattaavah the people set out for Hazeroth.",
+        "VAT_ES": "Desde Quibrot Hataavá el pueblo siguió avanzando hasta Jaserot, y allí se detuvo.",
+        "CEI": "Da Kibrot-Taava il popolo partì per Caserot e a Caserot fece sosta."
+      }
+    }
+  }
+}

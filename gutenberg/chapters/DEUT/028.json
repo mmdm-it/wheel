@@ -1,0 +1,1239 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_028",
+  "book_key": "DEUT",
+  "sequence": 28,
+  "chapter_in": {
+    "MT": 28,
+    "VUL": 28,
+    "LXX": 28
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה אִם שָׁמ֤וֹעַ תִּשְׁמַע֙ בְּ/קוֹל֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ לִ/שְׁמֹ֤ר לַ/עֲשׂוֹת֙ אֶת כָּל מִצְוֺתָ֔י/ו אֲשֶׁ֛ר אָנֹכִ֥י מְצַוְּ/ךָ֖ הַ/יּ֑וֹם וּ/נְתָ֨נְ/ךָ֜ יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ עֶלְי֔וֹן עַ֖ל כָּל גּוֹיֵ֥י הָ/אָֽרֶץ׃",
+        "LXX": "Καὶ ἔσται ἐὰν ἀκοῇ ἀκούσῃς τῆς φωνῆς Κύριου τοῦ θεοῦ σου, φυλάσσειν καὶ ποιεῖν πάσας τὰς ἐντολὰς ταύτας ἃς ἐγὼ ἐντέλλομαί σοι σήμερον, καὶ δώσει σε Κύριος ὁ θεός σου ὑπεράνω ἐπὶ πάντα τὰ ἔθνη τῆς γῆς·",
+        "VUL": "Si autem audieris vocem Domini Dei tui, ut facias atque custodias omnia mandata ejus, quæ ego præcipio tibi hodie, faciet te Dominus Deus tuus excelsiorem cunctis gentibus, quæ versantur in terra.",
+        "SYN": "Если ты, когда перейдете [за Иордан в землю, которую Господь Бог ваш дает вам], будешь слушать гласа Господа Бога твоего, тщательно исполнять все заповеди Его, которые заповедую тебе сегодня, то Господь Бог твой поставит тебя выше всех народов земли;",
+        "NEO": "Si tu obéis exactement à la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, en observant et en mettant en pratique tous ses commandements que je te prescris aujourd’hui, \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te donnera la supériorité sur toutes les nations de la terre.",
+        "NAB": "\"Thus, then, shall it be: if you continue to heed the voice of the LORD, your God, and are careful to observe all his commandments which I enjoin on you today, the LORD, your God, will raise you high above all the nations of the earth.",
+        "VAT_ES": "Si escuchas la voz del Señor, tu Dios, y te empeñas en practicar todos los mandamientos que hoy te prescribo, él te pondrá muy por encima de todas las naciones de la tierra.",
+        "CEI": "Se tu obbedirai fedelmente alla voce del Signore tuo Dio, preoccupandoti di mettere in pratica tutti i suoi comandi che io ti prescrivo, il Signore tuo Dio ti metterà sopra tutte le nazioni della terra;"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וּ/בָ֧אוּ עָלֶ֛י/ךָ כָּל הַ/בְּרָכ֥וֹת הָ/אֵ֖לֶּה וְ/הִשִּׂיגֻ֑/ךָ כִּ֣י תִשְׁמַ֔ע בְּ/ק֖וֹל יְהוָ֥ה אֱלֹהֶֽי/ךָ׃",
+        "LXX": "καὶ ἥξουσιν ἐπὶ σὲ πᾶσαι αἱ εὐλογίαι αὗται καὶ εὑρήσουσίν σε, ἐὰν ἀκοῇ ἀκούσῃς τῆς φωνῆς Κυρίου τοῦ θεοῦ σου.",
+        "VUL": "Venientque super te universæ benedictiones istæ, et apprehendent te : si tamen præcepta ejus audieris.",
+        "SYN": "и придут на тебя все благословения сии и исполнятся на тебе, если будешь слушать гласа Господа, Бога твоего.",
+        "NEO": "Voici toutes les bénédictions qui viendront sur toi et t’atteindront, si tu obéis à la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu :",
+        "NAB": "When you hearken to the voice of the LORD, your God, all these blessings will come upon you and overwhelm you:",
+        "VAT_ES": "Y por haber escuchado la voz del Señor, tu Dios, vendrán sobre ti y te alcanzarán todas estas bendiciones:",
+        "CEI": "perché tu avrai ascoltato la voce del Signore tuo Dio, verranno su di te e ti raggiungeranno tutte queste benedizioni:"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "בָּר֥וּךְ אַתָּ֖ה בָּ/עִ֑יר וּ/בָר֥וּךְ אַתָּ֖ה בַּ/שָּׂדֶֽה׃",
+        "LXX": "εὐλογημένος σὺ ἐν πόλει, καὶ εὐλογημένος σὺ ἐν ἀγρῷ·",
+        "VUL": "Benedictus tu in civitate, et benedictus in agro.",
+        "SYN": "Благословен ты в городе и благословен на поле.",
+        "NEO": "Tu seras béni dans la ville et tu seras béni dans les champs.",
+        "NAB": "\"May you be blessed in the city, and blessed in the country!",
+        "VAT_ES": "Bendito serás en la ciudad y bendito en el campo.",
+        "CEI": "Sarai benedetto nella città e benedetto nella campagna."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "בָּר֧וּךְ פְּרִֽי בִטְנְ/ךָ֛ וּ/פְרִ֥י אַדְמָתְ/ךָ֖ וּ/פְרִ֣י בְהֶמְתֶּ֑/ךָ שְׁגַ֥ר אֲלָפֶ֖י/ךָ וְ/עַשְׁתְּר֥וֹת צֹאנֶֽ/ךָ׃",
+        "LXX": "εὐλογημένα τὰ ἔκγονα τῆς κοιλίας σου, τὰ βουκόλια τῶν βοῶν σου καὶ τὰ ποίμνια τῶν προβάτων σου·",
+        "VUL": "Benedictus fructus ventris tui, et fructus terræ tuæ, fructusque jumentorum tuorum, greges armentorum tuorum, et caulæ ovium tuarum.",
+        "SYN": "Благословен плод чрева твоего, и плод земли твоей, и плод скота твоего, и плод твоих волов, и плод овец твоих.",
+        "NEO": "Béni sera le fruit de tes entrailles, le fruit de ton sol, le fruit de tes troupeaux, les portées de ton gros et de ton menu bétail.",
+        "NAB": "\"Blessed be the fruit of your womb, the produce of your soil and the offspring of your livestock, the issue of your herds and the young of your flocks!",
+        "VAT_ES": "Benditos serán el fruto de tus entrarás y el fruto de tu suelo, los partos de tu ganado y las crías de tus vacas y tus ovejas.",
+        "CEI": "Benedetto sarà il frutto del tuo seno, il frutto del tuo suolo e il frutto del tuo bestiame; benedetti i parti delle tue vacche e i nati delle tue pecore."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בָּר֥וּךְ טַנְאֲ/ךָ֖ וּ/מִשְׁאַרְתֶּֽ/ךָ׃",
+        "LXX": "εὐλογημέναι αἱ ἀποθῆκαί σου καὶ τὰ ἐνκαταλίμματά σου.",
+        "VUL": "Benedicta horrea tua, et benedictæ reliquiæ tuæ.",
+        "SYN": "Благословенны житницы твои и кладовые твои.",
+        "NEO": "Bénies seront ta corbeille et ta huche.",
+        "NAB": "\"Blessed be your grain bin and your kneading bowl!",
+        "VAT_ES": "Bendita será tu canasta y bendito el recipiente donde amasas tu pan.",
+        "CEI": "Benedette saranno la tua cesta e la tua madia."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בָּר֥וּךְ אַתָּ֖ה בְּ/בֹאֶ֑/ךָ וּ/בָר֥וּךְ אַתָּ֖ה בְּ/צֵאתֶֽ/ךָ׃",
+        "LXX": "εὐλογημένος σὺ ἐν τῷ εἰσπορεύεσθαί σε, καὶ εὐλογημένος σὺ ἐν τῷ ἐκπορεύεσθαί σε.",
+        "VUL": "Benedictus eris tu ingrediens et egrediens.",
+        "SYN": "Благословен ты при входе твоем и благословен ты при выходе твоем.",
+        "NEO": "Tu seras béni à ton entrée, et tu seras béni à ta sortie.",
+        "NAB": "\"May you be blessed in your coming in, and blessed in your going out!",
+        "VAT_ES": "Bendito serás al salir y bendito al entrar.",
+        "CEI": "Sarai benedetto quando entri e benedetto quando esci."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יִתֵּ֨ן יְהוָ֤ה אֶת אֹיְבֶ֨י/ךָ֙ הַ/קָּמִ֣ים עָלֶ֔י/ךָ נִגָּפִ֖ים לְ/פָנֶ֑י/ךָ בְּ/דֶ֤רֶךְ אֶחָד֙ יֵצְא֣וּ אֵלֶ֔י/ךָ וּ/בְ/שִׁבְעָ֥ה דְרָכִ֖ים יָנ֥וּסוּ לְ/פָנֶֽי/ךָ׃",
+        "LXX": "παραδῷ Κύριος ὁ θεός σου τοὺς ἐχθρούς σου τοὺς ἀνθεστηκότας σοι συντετριμμένους πρὸ προσώπου σου· ὁδῷ μιᾷ ἐξελεύσονται πρὸς σέ, καὶ ἐν ἑπτὰ ὁδοῖς φεύξονται ἀπὸ προσώπου σου.",
+        "VUL": "Dabit Dominus inimicos tuos, qui consurgunt adversum te, corruentes in conspectu tuo : per unam viam venient contra te, et per septem fugient a facie tua.",
+        "SYN": "Поразит пред тобою Господь врагов твоих, восстающих на тебя; одним путем они выступят против тебя, а семью путями побегут от тебя.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** fera que les ennemis qui s’élèveront contre toi soient mis en déroute devant toi ; venus contre toi par un seul chemin, ils s’enfuiront devant toi par sept chemins.",
+        "NAB": "\"The LORD will beat down before you the enemies that rise up against you; though they come out against you from but one direction, they will flee before you in seven.",
+        "VAT_ES": "El Señor hará que caigan derrotados todos los enemigos que se alcen contra ti vendrán a atacarte por un camino y por siete caminos huirán de ti.",
+        "CEI": "Il Signore lascerà sconfiggere davanti a te i tuoi nemici, che insorgeranno contro di te: per una sola via verranno contro di te e per sette vie fuggiranno davanti a te."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "יְצַ֨ו יְהוָ֤ה אִתְּ/ךָ֙ אֶת הַ/בְּרָכָ֔ה בַּ/אֲסָמֶ֕י/ךָ וּ/בְ/כֹ֖ל מִשְׁלַ֣ח יָדֶ֑/ךָ וּ/בֵ֣רַכְ/ךָ֔ בָּ/אָ֕רֶץ אֲשֶׁר יְהוָ֥ה אֱלֹהֶ֖י/ךָ נֹתֵ֥ן לָֽ/ךְ׃",
+        "LXX": "ἀποστείλαι Κύριος ἐπὶ σὲ τὴν εὐλογίαν ἐν τοῖς ταμείοις σου, καὶ ἐπὶ πάντα οὗ ἂν ἐπιβάλῃς τὴν χεῖρά σου ἐπὶ τῆς γῆς ἧς Κύριος ὁ θεός σου δίδωσίν σοι.",
+        "VUL": "Emittet Dominus benedictionem super cellaria tua, et super omnia opera manuum tuarum : benedicetque tibi in terra, quam acceperis.",
+        "SYN": "Пошлет Господь тебе благословение в житницах твоих и во всяком деле рук твоих; и благословит тебя на земле, которую Господь Бог твой дает тебе.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** commandera à la bénédiction d’être avec toi dans tes greniers et dans tout travail de tes mains ! Il te bénira dans le pays que te donne \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu.",
+        "NAB": "The LORD will affirm his blessing upon you, on your barns and on all your undertakings, blessing you in the land that the LORD, your God, gives you.",
+        "VAT_ES": "El Señor ordenará que la bendición esté contigo en tus graneros y en todas tus empresas, y te bendecirá en la tierra que él te da.",
+        "CEI": "Il Signore ordinerà alla benedizione di essere con te nei tuoi granai e in tutto ciò a cui metterai mano; ti benedirà nel paese che il Signore tuo Dio sta per darti."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "יְקִֽימְ/ךָ֨ יְהוָ֥ה ל/וֹ֙ לְ/עַ֣ם קָד֔וֹשׁ כַּ/אֲשֶׁ֖ר נִֽשְׁבַּֽע לָ֑/ךְ כִּ֣י תִשְׁמֹ֗ר אֶת מִצְוֺת֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ וְ/הָלַכְתָּ֖ בִּ/דְרָכָֽי/ו׃",
+        "LXX": "ἀναστήσαι σε Κύριος ἑαυτῷ λαὸν ἅγιον, ὃν τρόπον ὤμοσεν τοῖς πατράσιν σου, ἐὰν ἀκούσῃς τῆς φωνῆς Κυρίου τοῦ θεοῦ σου καὶ πορευθῇς ἐν πάσαις ταῖς ὁδοῖς αὐτοῦ·",
+        "VUL": "Suscitabit te Dominus sibi in populum sanctum, sicut juravit tibi : si custodieris mandata Domini Dei tui, et ambulaveris in viis ejus.",
+        "SYN": "Поставит тебя Господь [Бог твой] народом святым Своим, как Он клялся тебе [и отцам твоим], если ты будешь соблюдать заповеди Господа Бога твоего и будешь ходить путями Его;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** te fera subsister pour lui comme un peuple saint, ainsi qu’il te l’a juré, si tu observes les commandements de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, et si tu marches dans ses voies ;",
+        "NAB": "Provided that you keep the commandments of the LORD, your God, and walk in his ways, he will establish you as a people sacred to himself, as he swore to you;",
+        "VAT_ES": "El Señor hará de ti su pueblo santo, como te lo juró, si cumples sus mandamientos y sigues sus caminos.",
+        "CEI": "Il Signore ti renderà popolo a lui consacrato, come ti ha giurato, se osserverai i comandi del Signore tuo Dio e se camminerai per le sue vie;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/רָאוּ֙ כָּל עַמֵּ֣י הָ/אָ֔רֶץ כִּ֛י שֵׁ֥ם יְהוָ֖ה נִקְרָ֣א עָלֶ֑י/ךָ וְ/יָֽרְא֖וּ מִמֶּֽ/ךָּ׃",
+        "LXX": "καὶ ὄψονταί σε πάντα τὰ ἔθνη τῆς γῆς ὅτι τὸ ὄνομα Κυρίου ἐπικέκληταί σοι, καὶ φοβηθήσονταί σε.",
+        "VUL": "Videbuntque omnes terrarum populi quod nomen Domini invocatum sit super te, et timebunt te.",
+        "SYN": "и увидят все народы земли, что имя Господа [Бога твоего] нарицается на тебе, и убоятся тебя.",
+        "NEO": "et tous les peuples verront que le nom de \\+w Yahweh|strong=\"H3068\"\\+w** est nommé sur toi, et ils te craindront.",
+        "NAB": "so that, when all the nations of the earth see you bearing the name of the LORD, they will stand in awe of you.",
+        "VAT_ES": "Entonces todos los pueblos de la tierra verán que tú eres llamado con el nombre del Señor, tu Dios, y te temerán.",
+        "CEI": "tutti i popoli della terra vedranno che porti il nome del Signore e ti temeranno."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/הוֹתִֽרְ/ךָ֤ יְהוָה֙ לְ/טוֹבָ֔ה בִּ/פְרִ֧י בִטְנְ/ךָ֛ וּ/בִ/פְרִ֥י בְהַמְתְּ/ךָ֖ וּ/בִ/פְרִ֣י אַדְמָתֶ֑/ךָ עַ֚ל הָ/אֲדָמָ֔ה אֲשֶׁ֨ר נִשְׁבַּ֧ע יְהוָ֛ה לַ/אֲבֹתֶ֖י/ךָ לָ֥/תֶת לָֽ/ךְ׃",
+        "LXX": "καὶ πληθυνεῖ σε Κύριος ὁ θεός σου εἰς ἀγαθὰ ἐν τοῖς ἐκγόνοις τῆς κοιλίας σου καὶ ἐπὶ τοῖς γενήμασιν τῆς γῆς σου καὶ ἐπὶ τοῖς ἐκγόνοις τῶν κτηνῶν σου, ἐπὶ τῆς γῆς ἧς ὤμοσεν Κύριος τοῖς πατράσιν σου δοῦναί σοι.",
+        "VUL": "Abundare te faciet Dominus omnibus bonis, fructu uteri tui, et fructu jumentorum tuorum, fructu terræ tuæ, quam juravit Dominus patribus tuis ut daret tibi.",
+        "SYN": "И даст тебе Господь [Бог твой] изобилие во всех благах, в плоде чрева твоего, и в плоде скота твоего, и в плоде полей твоих на земле, которую Господь клялся отцам твоим дать тебе.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** te comblera de biens, en multipliant le fruit de tes entrailles, le fruit de tes troupeaux et le fruit de ton sol, dans le pays que \\+w Yahweh|strong=\"H3068\"\\+w** a juré à tes pères de te donner.",
+        "NAB": "The LORD will increase in more than goodly measure the fruit of your womb, the offspring of your livestock, and the produce of your soil, in the land which he swore to your fathers he would give you.",
+        "VAT_ES": "El Señor te dará sobreabundancia de bienes en el fruto de tus entrañas, en las crías de tu ganado y en los productos de tu suelo, de la tierra que él te da, porque así lo juro a tus padres.",
+        "CEI": "Il Signore tuo Dio ti concederà abbondanza di beni, quanto al frutto del tuo grembo, al frutto del tuo bestiame e al frutto del tuo suolo, nel paese che il Signore ha giurato ai tuoi padri di darti."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "יִפְתַּ֣ח יְהוָ֣ה לְ֠/ךָ אֶת אוֹצָר֨/וֹ הַ/טּ֜וֹב אֶת הַ/שָּׁמַ֗יִם לָ/תֵ֤ת מְטַֽר אַרְצְ/ךָ֙ בְּ/עִתּ֔/וֹ וּ/לְ/בָרֵ֕ךְ אֵ֖ת כָּל מַעֲשֵׂ֣ה יָדֶ֑/ךָ וְ/הִלְוִ֨יתָ֙ גּוֹיִ֣ם רַבִּ֔ים וְ/אַתָּ֖ה לֹ֥א תִלְוֶֽה׃",
+        "LXX": "ἀνοίξαι σοι Κύριος τὸν θησαυρὸν αὐτοῦ τὸν ἀγαθόν, τὸν οὐρανόν, δοῦναι τὸν ὑετὸν τῇ γῇ σου ἐπὶ καιροῦ, εὐλογῆσαι πάντα τὰ ἔργα τῶν χειρῶν σου· καὶ δανιεῖς ἔθνεσιν πολλοῖς, σὺ δὲ οὐ δανιῇ.",
+        "VUL": "Aperiet Dominus thesaurum suum optimum, cælum, ut tribuat pluviam terræ tuæ in tempore suo : benedicetque cunctis operibus manuum tuarum. Et fnerabis gentibus multis, et ipse a nullo fnus accipies.",
+        "SYN": "Откроет тебе Господь добрую сокровищницу Свою, небо, чтоб оно давало дождь земле твоей во время свое, и чтобы благословлять все дела рук твоих: и будешь давать взаймы многим народам, а сам не будешь брать взаймы [и будешь господствовать над многими народами, а они над тобою не будут господствовать].",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** t’ouvrira son bon trésor, le ciel, pour envoyer à ton pays la pluie en son temps, et pour bénir tout le travail de tes mains. Tu prêteras à beaucoup de nations, et tu n’emprunteras pas.",
+        "NAB": "The LORD will open up for you his rich treasure house of the heavens, to give your land rain in due season, blessing all your undertakings, so that you will lend to many nations and borrow from none.",
+        "VAT_ES": "El te abrirá el cielo –su rico tesoro– para proveer de lluvia a tu tierra en el momento oportuno, y para bendecir todos tus trabajos. Serás acreedor de muchas naciones y deudor de ninguna.",
+        "CEI": "Il Signore aprirà per te il suo benefico tesoro, il cielo, per dare alla tua terra la pioggia a suo tempo e per benedire tutto il lavoro delle tue mani; così presterai a molte nazioni, mentre tu non domanderai prestiti."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וּ/נְתָֽנְ/ךָ֨ יְהוָ֤ה לְ/רֹאשׁ֙ וְ/לֹ֣א לְ/זָנָ֔ב וְ/הָיִ֨יתָ֙ רַ֣ק לְ/מַ֔עְלָ/ה וְ/לֹ֥א תִהְיֶ֖ה לְ/מָ֑טָּה כִּֽי תִשְׁמַ֞ע אֶל מִצְוֺ֣ת יְהוָ֣ה אֱלֹהֶ֗י/ךָ אֲשֶׁ֨ר אָנֹכִ֧י מְצַוְּ/ךָ֛ הַ/יּ֖וֹם לִ/שְׁמֹ֥ר וְ/לַ/עֲשֽׂוֹת׃",
+        "LXX": "καταστήσαι σε Κύριος ὁ θεός σου εἰς κεφαλὴν καὶ μὴ εἰς οὐράν, καὶ ἔσῃ τότε ἐπάνω καὶ οὐκ ἔσῃ ὑποκάτω, ἐὰν ἀκούσῃς τῆς φωνῆς Κυρίου τοῦ θεοῦ σου ὅσα ἐγὼ ἐντέλλομαί σοι σήμερον φυλάσσειν·",
+        "VUL": "Constituet te Dominus in caput, et non in caudam : et eris semper supra, et non subter : si tamen audieris mandata Domini Dei tui quæ ego præcipio tibi hodie, et custodieris et feceris,",
+        "SYN": "Сделает тебя Господь [Бог твой] главою, а не хвостом, и будешь только на высоте, а не будешь внизу, если будешь повиноваться заповедям Господа Бога твоего, которые заповедую тебе сегодня хранить и исполнять,",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** te mettra à la tête, et non à la queue ; tu seras toujours en haut, et tu ne seras jamais en bas, si tu obéis aux commandements de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, que je te prescris aujourd’hui, si tu les observes et les mets en pratique,",
+        "NAB": "The LORD will make you the head, not the tail, and you will always mount higher and not decline, as long as you obey the commandments of the LORD, your God, which I order you today to observe carefully;",
+        "VAT_ES": "El Señor te podrá al frente, no detrás. Siempre estarás arriba, nunca abajo, con tal que obedezcas los mandamientos del Señor, tu Dios, que hoy te ordenó practicar cuidadosamente,",
+        "CEI": "Il Signore ti metterà in testa e non in coda e sarai sempre in alto e mai in basso, se obbedirai ai comandi del Signore tuo Dio, che oggi io ti prescrivo, perché tu li osservi e li metta in pratica,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/לֹ֣א תָס֗וּר מִ/כָּל הַ/דְּבָרִים֙ אֲשֶׁ֨ר אָנֹכִ֜י מְצַוֶּ֥ה אֶתְ/כֶ֛ם הַ/יּ֖וֹם יָמִ֣ין וּ/שְׂמֹ֑אול לָ/לֶ֗כֶת אַחֲרֵ֛י אֱלֹהִ֥ים אֲחֵרִ֖ים לְ/עָבְדָֽ/ם׃",
+        "LXX": "οὐ παραβήσῃ ἀπὸ πασῶν τῶν ἐντολῶν ὧν ἐγὼ ἐντέλλομαί σοι σήμερον δεξιὰ οὐδὲ ἀριστερά, πορεύεσθαι ὀπίσω θεῶν ἑτέρων λατρεύειν αὐτοῖς.",
+        "VUL": "ac non declinaveris ab eis nec ad dexteram, nec ad sinistram, nec secutus fueris deos alienos, neque colueris eos.",
+        "SYN": "и не отступишь от всех слов, которые заповедую вам сегодня, ни направо ни налево, чтобы пойти вслед иных богов _и_ служить им.",
+        "NEO": "et si tu ne t’écartes, ni à droite ni à gauche, de tous les commandements que je vous prescris aujourd’hui, pour aller après d’autres dieux et les servir.",
+        "NAB": "not turning aside to the right or to the left from any of the commandments which I now give you, in order to follow other gods and serve them.",
+        "VAT_ES": "sin apartarte, ni a la derecha ni a la izquierda. de las palabras que hoy te prescribo, y sin ir detrás de otros dioses para servirlos.",
+        "CEI": "e se non devierai né a destra né a sinistra da alcuna delle cose che oggi vi comando, per seguire altri dei e servirli."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה אִם לֹ֤א תִשְׁמַע֙ בְּ/קוֹל֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ לִ/שְׁמֹ֤ר לַ/עֲשׂוֹת֙ אֶת כָּל מִצְוֺתָ֣י/ו וְ/חֻקֹּתָ֔י/ו אֲשֶׁ֛ר אָנֹכִ֥י מְצַוְּ/ךָ֖ הַ/יּ֑וֹם וּ/בָ֧אוּ עָלֶ֛י/ךָ כָּל הַ/קְּלָל֥וֹת הָ/אֵ֖לֶּה וְ/הִשִּׂיגֽוּ/ךָ׃",
+        "LXX": "Καὶ ἔσται ἐὰν μὴ εἰσακούσῃς τῆς φωνῆς Κυρίου τοῦ θεοῦ σου, φυλάσσεσθαι πάσας τὰς ἐντολὰς αὐτοῦ ὅσας ἐγὼ ἐντέλλομαί σοι σήμερον, καὶ ἐλεύσονται ἐπὶ σὲ πᾶσαι αἱ κατάραι αὗται καὶ καταλήμψονταί σε.",
+        "VUL": "Quod si audire nolueris vocem Domini Dei tui, ut custodias, et facias omnia mandata ejus et cæremonias, quas ego præcipio tibi hodie, venient super te omnes maledictiones istæ, et apprehendent te.",
+        "SYN": "Если же не будешь слушать гласа Господа Бога твоего и не будешь стараться исполнять все заповеди Его и постановления Его, которые я заповедую тебе сегодня, то придут на тебя все проклятия сии и постигнут тебя.",
+        "NEO": "Mais si tu n’obéis pas à la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, pour observer et mettre en pratique tous ses commandements et toutes ses lois que je te prescris aujourd’hui, voici toutes les malédictions qui viendront sur toi et t’atteindront :",
+        "NAB": "\"But if you do not hearken to the voice of the LORD, your God, and are not careful to observe all his commandments which I enjoin on you today, all these curses shall come upon you and overwhelm you:",
+        "VAT_ES": "Pero si no escuchas la voz del Señor, tu Dios y no te empeñas en practicar todos los mandamientos y preceptos que hoy te prescribo, caerán sobre ti y te alcanzarán todas estas maldiciones:",
+        "CEI": "Ma se non obbedirai alla voce del Signore tuo Dio, se non cercherai di eseguire tutti i suoi comandi e tutte le sue leggi che oggi io ti prescrivo, verranno su di te e ti raggiungeranno tutte queste maledizioni:"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אָר֥וּר אַתָּ֖ה בָּ/עִ֑יר וְ/אָר֥וּר אַתָּ֖ה בַּ/שָּׂדֶֽה׃",
+        "LXX": "ἐπικατάρατος σὺ ἐν πόλει, καὶ ἐπικατάρατος σὺ ἐν ἀγρῷ·",
+        "VUL": "Maledictus eris in civitate, maledictus in agro.",
+        "SYN": "Проклят ты [будешь] в городе и проклят ты [будешь] на поле.",
+        "NEO": "Tu seras maudit dans la ville et tu seras maudit dans les champs.",
+        "NAB": "\"May you be cursed in the city, and cursed in the country!",
+        "VAT_ES": "Maldito serás en la ciudad y maldito en el campo.",
+        "CEI": "sarai maledetto nella città e maledetto nella campagna."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אָר֥וּר טַנְאֲ/ךָ֖ וּ/מִשְׁאַרְתֶּֽ/ךָ׃",
+        "LXX": "ἐπικατάρατοι αἱ ἀποθῆκαί σου καὶ τὰ ἐγκαταλίμματά σου·",
+        "VUL": "Maledictum horreum tuum, et maledictæ reliquiæ tuæ.",
+        "SYN": "Прокляты [будут] житницы твои и кладовые твои.",
+        "NEO": "Seront maudites ta corbeille et ta huche.",
+        "NAB": "\"Cursed be your grain bin and your kneading bowl!",
+        "VAT_ES": "Maldita será tu canasta y maldito el recipiente donde amasas tu pan.",
+        "CEI": "Maledette saranno la tua cesta e la tua madia."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "אָר֥וּר פְּרִֽי בִטְנְ/ךָ֖ וּ/פְרִ֣י אַדְמָתֶ֑/ךָ שְׁגַ֥ר אֲלָפֶ֖י/ךָ וְ/עַשְׁתְּר֥וֹת צֹאנֶֽ/ךָ׃",
+        "LXX": "ἐπικατάρατα τὰ ἔκγονα τῆς κοιλίας σου καὶ τὰ γενήματα τῆς γῆς σου, τὰ βουκόλια τῶν βοῶν σου καὶ τὰ ποίμνια τῶν προβάτων σου·",
+        "VUL": "Maledictus fructus ventris tui, et fructus terræ tuæ, armenta boum tuorum, et greges ovium tuarum.",
+        "SYN": "Проклят [будет] плод чрева твоего и плод земли твоей, плод твоих волов и плод овец твоих.",
+        "NEO": "Seront maudits le fruit de tes entrailles, le fruit de ton sol, les portées de ton gros et de ton menu bétail.",
+        "NAB": "\"Cursed be the fruit of your womb, the produce of your soil and the offspring of your livestock, the issue of your herds and the young of your flocks!",
+        "VAT_ES": "Malditos serán el fruto de tus entrañas y el fruto de tu suelo, las crías de tus vacas y los partos de tus ovejas.",
+        "CEI": "Maledetto sarà il frutto del tuo seno e il frutto del tuo suolo; maledetti i parti delle tue vacche e i nati delle tue pecore."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "אָר֥וּר אַתָּ֖ה בְּ/בֹאֶ֑/ךָ וְ/אָר֥וּר אַתָּ֖ה בְּ/צֵאתֶֽ/ךָ׃",
+        "LXX": "ἐπικατάρατος σὺ ἐν τῷ ἐκπορεύεσθαί σε, καὶ ἐπικατάρατος σὺ ἐν τῷ εἰσπορεύεσθαί σε.",
+        "VUL": "Maledictus eris ingrediens, et maledictus egrediens.",
+        "SYN": "Проклят ты [будешь] при входе твоем и проклят при выходе твоем.",
+        "NEO": "Tu seras maudit à ton entrée, et tu seras maudit à ta sortie.",
+        "NAB": "\"May you be cursed in your coming in, and cursed in your going out!",
+        "VAT_ES": "Maldito serás al entrar y maldito al salir.",
+        "CEI": "Maledetto sarai quando entri e maledetto quando esci."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "יְשַׁלַּ֣ח יְהוָ֣ה בְּ֠/ךָ אֶת הַ/מְּאֵרָ֤ה אֶת הַ/מְּהוּמָה֙ וְ/אֶת הַ/מִּגְעֶ֔רֶת בְּ/כָל מִשְׁלַ֥ח יָדְ/ךָ֖ אֲשֶׁ֣ר תַּעֲשֶׂ֑ה עַ֣ד הִשָּֽׁמֶדְ/ךָ֤ וְ/עַד אֲבָדְ/ךָ֙ מַהֵ֔ר מִ/פְּנֵ֛י רֹ֥עַ מַֽעֲלָלֶ֖י/ךָ אֲשֶׁ֥ר עֲזַבְתָּֽ/נִי׃",
+        "LXX": "ἀποστείλαι Κύριος ἐπὶ σὲ τὴν ἔνδειαν καὶ τὴν ἐκλιμίαν καὶ τὴν ἀνάλωσιν ἐπὶ πάντα οὗ ἂν ἐπιβάλῃς τὴν χεῖρά σου, ἕως ἂν ἐξολεθρεύσῃ σε, καὶ ἕως ἂν ἀπολέσῃ σε ἐν τάχει διὰ τὰ πονηρὰ ἐπιτηδεύματά σου, διότι ἐνκατέλιπές με.",
+        "VUL": "Mittet Dominus super te famem et esuriem, et increpationem in omnia opera tua, quæ tu facies : donec conterat te, et perdat velociter, propter adinventiones tuas pessimas in quibus reliquisti me.",
+        "SYN": "Пошлет Господь на тебя проклятие, смятение и несчастье во всяком деле рук твоих, какое ни станешь ты делать, доколе не будешь истреблен, -- и ты скоро погибнешь за злые дела твои, за то, что ты оставил Меня.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** enverra contre toi la malédiction, le trouble et la menace, dans tout ce que tu entreprendras de faire, jusqu’à ce que tu sois détruit et jusqu’à ce que tu périsses bientôt, à cause de la perversité de tes actions, par lesquelles tu m’auras abandonné.",
+        "NAB": "\"The LORD will put a curse on you, defeat and frustration in every enterprise you undertake, until you are speedily destroyed and perish for the evil you have done in forsaking me.",
+        "VAT_ES": "El Señor enviará contra ti la maldición, el pánico y el fracaso sobre todas tus empresas, hasta que seas exterminado y desaparezca rápidamente, a causa de tu mal proceder, por haberme abandonado.",
+        "CEI": "Il Signore lancerà contro di te la maledizione, la costernazione e la minaccia in ogni lavoro a cui metterai mano, finché tu sia distrutto e perisca rapidamente a causa delle tue azioni malvage per avermi abbandonato."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "יַדְבֵּ֧ק יְהוָ֛ה בְּ/ךָ֖ אֶת הַ/דָּ֑בֶר עַ֚ד כַּלֹּת֣/וֹ אֹֽתְ/ךָ֔ מֵ/עַל֙ הָֽ/אֲדָמָ֔ה אֲשֶׁר אַתָּ֥ה בָא שָׁ֖מָּ/ה לְ/רִשְׁתָּֽ/הּ׃",
+        "LXX": "προσκολλήσαι Κύριος εἰς σὲ τὸν θάνατον, ἕως ἂν ἐξαναλώσῃ σε ἀπὸ τῆς γῆς εἰς ἣν εἰσπορεύῃ ἐκεῖ κληρονομῆσαι αὐτήν.",
+        "VUL": "Adjungat tibi Dominus pestilentiam, donec consumat te de terra ad quam ingredieris possidendam.",
+        "SYN": "Пошлет Господь на тебя моровую язву, доколе не истребит Он тебя с земли, в которую ты идешь, чтобы владеть ею.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** attachera à toi la peste, jusqu’à ce qu’elle t’ait consumé de dessus la terre où tu vas entrer pour la posséder.",
+        "NAB": "The LORD will bring a pestilence upon you that will persist until he has exterminated you from the land you are entering to occupy.",
+        "VAT_ES": "El Señor hará que se te contagie la peste, hasta que seas eliminado de la tierra que vas a tomar en posesión.",
+        "CEI": "Il Signore ti farà attaccare la peste, finché essa non ti abbia eliminato dal paese, di cui stai per entrare a prender possesso."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "יַכְּ/כָ֣ה יְ֠הוָה בַּ/שַּׁחֶ֨פֶת וּ/בַ/קַּדַּ֜חַת וּ/בַ/דַּלֶּ֗קֶת וּ/בַֽ/חַרְחֻר֙ וּ/בַ/חֶ֔רֶב וּ/בַ/שִּׁדָּפ֖וֹן וּ/בַ/יֵּרָק֑וֹן וּ/רְדָפ֖וּ/ךָ עַ֥ד אָבְדֶֽ/ךָ׃",
+        "LXX": "πατάξαι σε Κύριος ἐν ἀπορίᾳ καὶ πυρετῷ καὶ ῥίγει καὶ ἐρεθισμῷ καὶ ἀνεμοφθορίᾳ καὶ τῇ ὤχρᾳ, καὶ καταδιώξονταί σε ἕως ἂν ἀπολέσωσίν σε.",
+        "VUL": "Percutiat te Dominus egestate, febri et frigore, ardore et æstu, et aëre corrupto ac rubigine, et persequatur donec pereas.",
+        "SYN": "Поразит тебя Господь чахлостью, горячкою, лихорадкою, воспалением, засухою, палящим ветром и ржавчиною, и они будут преследовать тебя, доколе не погибнешь.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** te frappera de langueur, de fièvre, d’inflammation, de chaleur brûlante, de sécheresse, de charbon et de nielle, fléaux qui te poursuivront jusqu’à ce que tu périsses.",
+        "NAB": "The LORD will strike you with wasting and fever, with scorching, fiery drought, with blight and searing wind, that will plague you until you perish.",
+        "VAT_ES": "El Señor te castigará con tisis, fiebre, inflamación, ardores, aridez, quemadura y pulgón que te hostigarán hasta que desaparezca.",
+        "CEI": "Il Signore ti colpirà con la consunzione, con la febbre, con l'infiammazione, con l'arsura, con la siccità, il carbonchio e la ruggine, che ti perseguiteranno finché tu non sia perito."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/הָי֥וּ שָׁמֶ֛י/ךָ אֲשֶׁ֥ר עַל רֹאשְׁ/ךָ֖ נְחֹ֑שֶׁת וְ/הָ/אָ֥רֶץ אֲשֶׁר תַּחְתֶּ֖י/ךָ בַּרְזֶֽל׃",
+        "LXX": "καὶ ἔσται σοι ὁ οὐρανὸς ὁ ὑπὲρ κεφαλῆς σου χαλκοῦς, καὶ ἡ γῆ ἡ ὑποκάτω σου σιδηρᾶ.",
+        "VUL": "Sit cælum, quod supra te est, æneum : et terra, quam calcas, ferrea.",
+        "SYN": "И небеса твои, которые над головою твоею, сделаются медью, и земля под тобою железом;",
+        "NEO": "Ton ciel sur ta tête sera d’airain, et la terre sous tes pieds sera de fer.",
+        "NAB": "The sky over your heads will be like bronze and the earth under your feet like iron.",
+        "VAT_ES": "El cielo sobre tu cabeza será de bronce, y la tierra bajo tus pies será de hierro.",
+        "CEI": "Il cielo sarà di rame sopra il tuo capo e la terra sotto di te sarà di ferro."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "יִתֵּ֧ן יְהוָ֛ה אֶת מְטַ֥ר אַרְצְ/ךָ֖ אָבָ֣ק וְ/עָפָ֑ר מִן הַ/שָּׁמַ֨יִם֙ יֵרֵ֣ד עָלֶ֔י/ךָ עַ֖ד הִשָּׁמְדָֽ/ךְ׃",
+        "LXX": "δῴη Κύριος ὁ θεός σου τὸν ὑετὸν τῇ γῇ σου κονιορτόν, καὶ χοῦς ἐκ τοῦ οὐρανοῦ καταβήσεται, ἕως ἂν ἐκτρίψῃ σε, καὶ ἕως ἂν ἀπολέσῃ σε ἐν τάχει.",
+        "VUL": "Det Dominus imbrem terræ tuæ pulverem, et de cælo descendat super te cinis, donec conteraris.",
+        "SYN": "вместо дождя Господь даст земле твоей пыль, и прах с неба будет падать, падать на тебя, [доколе не погубит тебя и] доколе не будешь истреблен.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** enverra pour pluie à ton pays de la poussière et du sable qui descendront du ciel sur toi jusqu’à ce que tu sois détruit.",
+        "NAB": "For rain the LORD will give your land powdery dust, which will come down upon you from the sky until you are destroyed.",
+        "VAT_ES": "En lugar de lluvia, el Señor enviará polvo a tu tierra, y sobre ti caerá arena desde el cielo, hasta que seas exterminado.",
+        "CEI": "Il Signore darà come pioggia al tuo paese sabbia e polvere, che scenderanno dal cielo su di te finché tu sia distrutto."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "יִתֶּנְ/ךָ֨ יְהוָ֥ה נִגָּף֮ לִ/פְנֵ֣י אֹיְבֶי/ךָ֒ בְּ/דֶ֤רֶךְ אֶחָד֙ תֵּצֵ֣א אֵלָ֔י/ו וּ/בְ/שִׁבְעָ֥ה דְרָכִ֖ים תָּנ֣וּס לְ/פָנָ֑י/ו וְ/הָיִ֣יתָ לְ/זַעֲוָ֔ה לְ/כֹ֖ל מַמְלְכ֥וֹת הָ/אָֽרֶץ׃",
+        "LXX": "δῴη σε Κύριος ἐπισκοπὴν ἐναντίον τῶν ἐχθρῶν· ἐν ὁδῷ μιᾷ ἐξελεύσῃ πρὸς αὐτούς, καὶ ἐν ἑπτὰ ὁδοῖς φεύξῃ ἀπὸ προσώπου αὐτῶν, καὶ ἔσῃ διασπορὰ ἐν πάσαις βασιλείαις τῆς γῆς.",
+        "VUL": "Tradat te Dominus corruentem ante hostes tuos : per unam viam egrediaris contra eos, et per septem fugias, et dispergaris per omnia regna terræ,",
+        "SYN": "Предаст тебя Господь на поражение врагам твоим; одним путем выступишь против них, а семью путями побежишь от них; и будешь рассеян по всем царствам земли.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** fera que tu sois battu devant tes ennemis ; tu sortiras contre eux par un seul chemin, et par sept chemins tu fuiras devant eux, et tu seras un objet de terreur parmi tous les royaumes de la terre.",
+        "NAB": "The LORD will let you be beaten down before your enemies; though you advance against them from one direction, you will flee before them in seven, so that you will become a terrifying example to all the kingdoms of the earth.",
+        "VAT_ES": "El Señor te hará caer derrotado ante tus enemigos: saldrás a atacarlo por un camino y por siete caminos huirás de ellos; y todos los reinos de la tierra sentirán horror de ti,",
+        "CEI": "Il Signore ti farà sconfiggere dai tuoi nemici: per una sola via andrai contro di loro e per sette vie fuggirai davanti a loro; diventerai oggetto di orrore per tutti i regni della terra."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/הָיְתָ֤ה נִבְלָֽתְ/ךָ֙ לְ/מַאֲכָ֔ל לְ/כָל ע֥וֹף הַ/שָּׁמַ֖יִם וּ/לְ/בֶהֱמַ֣ת הָ/אָ֑רֶץ וְ/אֵ֖ין מַחֲרִֽיד׃",
+        "LXX": "καὶ ἔσονται οἱ νεκροὶ ὑμῶν κατάβρωμα τοῖς πετεινοῖς τοῦ οὐρανοῦ καὶ τοῖς θηρίοις τῆς γῆς, καὶ οὐκ ἔσται ὁ ἐκφοβῶν.",
+        "VUL": "sitque cadaver tuum in escam cunctis volatilibus cæli, et bestiis terræ, et non sit qui abigat.",
+        "SYN": "И будут трупы твои пищею всем птицам небесным и зверям, и не будет отгоняющего их.",
+        "NEO": "Ton cadavre servira de pâture à tous les oiseaux du ciel et aux bêtes de la terre, et il n’y aura personne pour les effrayer.",
+        "NAB": "Your carcasses will become food for all the birds of the air and for the beasts of the field, with no one to frighten them off.",
+        "VAT_ES": "Tus cadáveres serán pasto de todas las aves del cielo y de todos los animales de la tierra, y no habrá nadie que los espante.",
+        "CEI": "Il tuo cadavere diventerà pasto di tutti gli uccelli del cielo e delle bestie selvatiche e nessuno li scaccerà."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "יַכְּ/כָ֨ה יְהוָ֜ה בִּ/שְׁחִ֤ין מִצְרַ֨יִם֙ ו/ב/עפלים וּ/בַ/טְּחֹרִ֔ים וּ/בַ/גָּרָ֖ב וּ/בֶ/חָ֑רֶס אֲשֶׁ֥ר לֹא תוּכַ֖ל לְ/הֵרָפֵֽא׃",
+        "LXX": "πατάξαι σε Κύριος ἕλκει Αἰγυπτίῳ εἰς τὴν ἕδραν καὶ ψώρᾳ ἀγρίᾳ καὶ κνήφῃ, ὥστε μὴ δύνασθαί σε ἰαθῆναι.",
+        "VUL": "Percutiat te Dominus ulcere Ægypti, et partem corporis, per quam stercora egeruntur, scabie quoque et prurigine : ita ut curari nequeas.",
+        "SYN": "Поразит тебя Господь проказою Египетскою, почечуем, коростою и чесоткою, от которых ты не возможешь исцелиться;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** te frappera de l’ulcère d’Égypte, d’hémorroïdes, de dartres et de gale, dont tu ne pourras guérir.",
+        "NAB": "The LORD will strike you with Egyptian boils and with tumors, eczema and the itch, until you cannot be cured.",
+        "VAT_ES": "El Señor te herirá con forúnculos de Egipto, con tumores, sarna y tiña, de los que no podrás curarte.",
+        "CEI": "Il Signore ti colpirà con le ulcere d'Egitto, con bubboni, scabbia e prurigine, da cui non potrai guarire."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "יַכְּ/כָ֣ה יְהוָ֔ה בְּ/שִׁגָּע֖וֹן וּ/בְ/עִוָּר֑וֹן וּ/בְ/תִמְה֖וֹן לֵבָֽב׃",
+        "LXX": "πατάξαι σε Κύριος παραπληξίᾳ ἀορασίας καὶ ἐκστάσει διανοίας·",
+        "VUL": "Percutiat te Dominus amentia et cæcitate ac furore mentis,",
+        "SYN": "поразит тебя Господь сумасшествием, слепотою и оцепенением сердца.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** te frappera de délire, d’aveuglement et d’égarement d’esprit ;",
+        "NAB": "And the LORD will strike you with madness, blindness and panic,",
+        "VAT_ES": "El Señor te castigará con locura, ceguera y delirio,",
+        "CEI": "Il Signore ti colpirà di delirio, di cecità e di pazzia,"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/הָיִ֜יתָ מְמַשֵּׁ֣שׁ בַּֽ/צָּהֳרַ֗יִם כַּ/אֲשֶׁ֨ר יְמַשֵּׁ֤שׁ הָ/עִוֵּר֙ בָּ/אֲפֵלָ֔ה וְ/לֹ֥א תַצְלִ֖יחַ אֶת דְּרָכֶ֑י/ךָ וְ/הָיִ֜יתָ אַ֣ךְ עָשׁ֧וּק וְ/גָז֛וּל כָּל הַ/יָּמִ֖ים וְ/אֵ֥ין מוֹשִֽׁיעַ׃",
+        "LXX": "καὶ ἔσῃ ψηλαφῶν μεσημβρίας, ὡς εἴ τις ψηλαφήσαι τυφλὸς ἐν τῷ σκότει, καὶ οὐκ εὐοδώσει τὰς ὁδούς σου· καὶ ἔσῃ τότε ἀδικούμενος καὶ διαρπαζόμενος πάσας τὰς ἡμέρας, καὶ οὐκ ἔσται ὁ βοηθῶν.",
+        "VUL": "et palpes in meridie sicut palpare solet cæcus in tenebris, et non dirigas vias tuas. Omnique tempore calumniam sustineas, et opprimaris violentia, nec habeas qui liberet te.",
+        "SYN": "И ты будешь ощупью ходить в полдень, как слепой ощупью ходит впотьмах, и не будешь иметь успеха в путях твоих, и будут теснить и обижать тебя всякий день, и никто не защитит тебя.",
+        "NEO": "tu tâtonneras en plein midi, comme l’aveugle dans l’obscurité ; tu ne réussiras pas dans tes voies ; tu seras tous les jours opprimé et dépouillé, sans personne qui vienne à ton secours.",
+        "NAB": "so that even at midday you will grope like a blind man in the dark, unable to find your way. \"You will be oppressed and robbed continually, with no one to come to your aid.",
+        "VAT_ES": "y andarás a tientas en pleno día, como anda a tientas un ciego, envuelto en la oscuridad. Nunca verás realizados tus proyectos: serás oprimido y despojado constantemente y nadie saldrá en tu defensa.",
+        "CEI": "così che andrai brancolando in pieno giorno come il cieco brancola nel buio. Non riuscirai nelle tue imprese, sarai ogni giorno oppresso e spogliato e nessuno ti aiuterà."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "אִשָּׁ֣ה תְאָרֵ֗שׂ וְ/אִ֤ישׁ אַחֵר֙ ישגל/נה יִשְׁכָּבֶ֔/נָּה בַּ֥יִת תִּבְנֶ֖ה וְ/לֹא תֵשֵׁ֣ב בּ֑/וֹ כֶּ֥רֶם תִּטַּ֖ע וְ/לֹ֥א תְחַלְּלֶּֽ/נּוּ׃",
+        "LXX": "γυναῖκα λήμψῃ, καὶ ἀνήρ ἕτερος ἕξει αὐτήν· οἰκίαν οἰκοδομήσεις, καὶ οὐκ οἰκήσεις ἐν αὐτῇ· ἀμπελῶνα φυτεύσεις, καὶ οὐ τρυγήσεις αὐτόν.",
+        "VUL": "Uxorem accipias, et alius dormiat cum ea. Domum ædifices, et non habites in ea. Plantes vineam, et non vindemies eam.",
+        "SYN": "С женою обручишься, и другой будет спать с нею; дом построишь, и не будешь жить в нем; виноградник насадишь, и не будешь пользоваться им.",
+        "NEO": "Tu te fianceras à une femme, et un autre la possédera ; tu bâtiras une maison, et tu ne l’habiteras pas ; tu planteras une vigne, et tu n’en jouiras pas.",
+        "NAB": "Though you betroth a wife, another man will have her. Though you build a house, you will not live in it. Though you plant a vineyard, you will not enjoy its fruits.",
+        "VAT_ES": "Te casarás con una mujer y otro gozará de ella. Construirás una casa y no la habitarás. Plantarás una viña y no recogerás sus frutos.",
+        "CEI": "Ti fidanzerai con una donna, un altro la praticherà; costruirai una casa, ma non vi abiterai; pianterai una vigna e non ne potrai cogliere i primi frutti."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "שׁוֹרְ/ךָ֞ טָב֣וּחַ לְ/עֵינֶ֗י/ךָ וְ/לֹ֣א תֹאכַל֮ מִמֶּ/נּוּ֒ חֲמֹֽרְ/ךָ֙ גָּז֣וּל מִ/לְּ/פָנֶ֔י/ךָ וְ/לֹ֥א יָשׁ֖וּב לָ֑/ךְ צֹֽאנְ/ךָ֙ נְתֻנ֣וֹת לְ/אֹיְבֶ֔י/ךָ וְ/אֵ֥ין לְ/ךָ֖ מוֹשִֽׁיעַ׃",
+        "LXX": "ὁ μόσχος σου ἐσφαγμένος ἐναντίον σου, καὶ οὐ φάγῃ ἐξ αὐτοῦ· ὁ ὄνος σου ἡρπασμένος ἀπὸ σοῦ, καὶ οὐκ ἀποδοθήσεταί σοι· τὰ πρόβατά σου δεδομένα τοῖς ἐχθροῖς σου,",
+        "VUL": "Bos tuus immoletur coram te, et non comedas ex eo. Asinus tuus rapiatur in conspectu tuo, et non reddatur tibi. Oves tuæ dentur inimicis tuis, et non sit qui te adjuvet.",
+        "SYN": "Вола твоего заколют в глазах твоих, и не будешь есть его; осла твоего уведут от тебя и не возвратят тебе; овцы твои отданы будут врагам твоим, и никто не защитит тебя.",
+        "NEO": "Ton bœuf sera égorgé sous tes yeux, et tu n’en mangeras pas ; ton âne sera enlevé de devant toi, et on ne te le rendra pas ; tes brebis seront livrées à tes ennemis, et personne ne viendra à ton secours.",
+        "NAB": "Your ox will be slaughtered before your eyes, and you will not eat of its flesh. Your ass will be stolen in your presence, but you will not recover it. Your flocks will be given to your enemies, with no one to come to your aid.",
+        "VAT_ES": "Tu buey será degollado delante de tus ojos y no lo podrás comer. Tu asno será arrebatado de tu misma presencia y no te lo devolverán. Tus ovejas serán entregadas a tus enemigos y nadie saldrá en tu defensa.",
+        "CEI": "Il tuo bue sarà ammazzato sotto i tuoi occhi e tu non ne mangerai; il tuo asino ti sarà portato via in tua presenza e non tornerà più a te; il tuo gregge sarà dato ai tuoi nemici e nessuno ti aiuterà."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "בָּנֶ֨י/ךָ וּ/בְנֹתֶ֜י/ךָ נְתֻנִ֨ים לְ/עַ֤ם אַחֵר֙ וְ/עֵינֶ֣י/ךָ רֹא֔וֹת וְ/כָל֥וֹת אֲלֵי/הֶ֖ם כָּל הַ/יּ֑וֹם וְ/אֵ֥ין לְ/אֵ֖ל יָדֶֽ/ךָ׃",
+        "LXX": "καὶ οἱ ὀφθαλμοί σου βλέψονται σφακελίζοντες εἰς αὐτά· οὐκ ἰσχύσει σου ἡ χείρ.",
+        "VUL": "Filii tui et filiæ tuæ tradantur alteri populo, videntibus oculis tuis, et deficientibus ad conspectum eorum tota die, et non sit fortitudo in manu tua.",
+        "SYN": "Сыновья твои и дочери твои будут отданы другому народу; глаза твои будут видеть и всякий день истаевать о них, и не будет силы в руках твоих.",
+        "NEO": "Tes fils et tes filles seront livrés à un autre peuple ; tes yeux le verront et languiront tout le jour après eux, et ta main sera impuissante.",
+        "NAB": "Your sons and daughters will be given to a foreign nation while you look on and grieve for them in constant helplessness.",
+        "VAT_ES": "Tus hijos y tus hijas serán entregados a otro pueblo; y tu vista se consumirá de tanto mirar hacia ellos, pero no podrás hacer nada.",
+        "CEI": "I tuoi figli e le tue figlie saranno consegnati a un popolo straniero, mentre i tuoi occhi vedranno e languiranno di pianto per loro ogni giorno, ma niente potrà fare la tua mano."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "פְּרִ֤י אַדְמָֽתְ/ךָ֙ וְ/כָל יְגִ֣יעֲ/ךָ֔ יֹאכַ֥ל עַ֖ם אֲשֶׁ֣ר לֹא יָדָ֑עְתָּ וְ/הָיִ֗יתָ רַ֛ק עָשׁ֥וּק וְ/רָצ֖וּץ כָּל הַ/יָּמִֽים׃",
+        "LXX": "τὰ ἐκφόρια τῆς γῆς σου καὶ πάντας τοὺς πόνους σου φάγεται ἔθνος ὃ οὐκ ἐπίστασαι, καὶ ἔσῃ ἀδικούμενος καὶ τεθραυσμένος πάσας τὰς ἡμέρας.",
+        "VUL": "Fructus terræ tuæ, et omnes labores tuos, comedat populus quem ignoras : et sis semper calumniam sustinens, et oppressus cunctis diebus,",
+        "SYN": "Плоды земли твоей и все труды твои будет есть народ, которого ты не знал; и ты будешь только притесняем и мучим во все дни.",
+        "NEO": "Le fruit de ton sol et tout le produit de ton travail, un peuple que tu n’as pas connu le mangera, et tu seras opprimé et écrasé tous les jours.",
+        "NAB": "A people whom you do not know will consume the fruit of your soil and of all your labor, and you will be oppressed and crushed at all times without surcease,",
+        "VAT_ES": "Un pueblo que no conoces comerá el fruto de tu suelo y todo el producto de tus fatigas. Serás oprimido y explotado constantemente,",
+        "CEI": "Un popolo, che tu non conosci, mangerà il frutto della tua terra e di tutta la tua fatica; sarai oppresso e schiacciato ogni giorno;"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְ/הָיִ֖יתָ מְשֻׁגָּ֑ע מִ/מַּרְאֵ֥ה עֵינֶ֖י/ךָ אֲשֶׁ֥ר תִּרְאֶֽה׃",
+        "LXX": "καὶ ἔσῃ παράπληκτος διὰ τὰ ὁράματα τῶν ὀφθαλμῶν σου ἃ βλέψῃ.",
+        "VUL": "et stupens ad terrorem eorum quæ videbunt oculi tui.",
+        "SYN": "И сойдешь с ума от того, что будут видеть глаза твои.",
+        "NEO": "Tu deviendras fou à la vue des choses que tu verras de tes yeux.",
+        "NAB": "until you are driven mad by what your eyes must look upon.",
+        "VAT_ES": "hasta volverte loco a causa de lo que verán tus ojos.",
+        "CEI": "diventerai pazzo per ciò che i tuoi occhi dovranno vedere."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "יַכְּ/כָ֨ה יְהוָ֜ה בִּ/שְׁחִ֣ין רָ֗ע עַל הַ/בִּרְכַּ֨יִם֙ וְ/עַל הַ/שֹּׁקַ֔יִם אֲשֶׁ֥ר לֹא תוּכַ֖ל לְ/הֵרָפֵ֑א מִ/כַּ֥ף רַגְלְ/ךָ֖ וְ/עַ֥ד קָדְקֳדֶֽ/ךָ׃",
+        "LXX": "πατάξαι σε Κύριος ἐν ἕλκει πονηρῷ ἐπὶ τὰ γόνατα καὶ ἐπὶ τὰς κνήμας, ὥστε μὴ δύνασθαί σε ἰαθῆναι, ἀπὸ ἴχνους τῶν ποδῶν σου ἕως τῆς κορυφῆς σου.",
+        "VUL": "Percutiat te Dominus ulcere pessimo in genibus et in suris, sanarique non possis a planta pedis usque ad verticem tuum.",
+        "SYN": "Поразит тебя Господь злою проказою на коленях и голенях, от которой ты не возможешь исцелиться, от подошвы ноги твоей до самого темени [головы] твоей.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** te frappera aux genoux et aux cuisses d’un ulcère malin, dont tu ne pourras guérir ; il te couvrira depuis la plante du pied jusqu’au sommet de la tête.",
+        "NAB": "The LORD will strike you with malignant boils of which you cannot be cured, on your knees and legs, and from the soles of your feet to the crown of your head.",
+        "VAT_ES": "El Señor te herirá con forúnculos malignos e incurables en las rodillas y en las piernas, desde la planta de los pies hasta la cabeza.",
+        "CEI": "Il Signore ti colpirà alle ginocchia e alle cosce con una ulcera maligna, della quale non potrai guarire; ti colpirà dalla pianta dei piedi alla sommità del capo."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "יוֹלֵ֨ךְ יְהוָ֜ה אֹֽתְ/ךָ֗ וְ/אֶֽת מַלְכְּ/ךָ֙ אֲשֶׁ֣ר תָּקִ֣ים עָלֶ֔י/ךָ אֶל גּ֕וֹי אֲשֶׁ֥ר לֹא יָדַ֖עְתָּ אַתָּ֣ה וַ/אֲבֹתֶ֑י/ךָ וְ/עָבַ֥דְתָּ שָּׁ֛ם אֱלֹהִ֥ים אֲחֵרִ֖ים עֵ֥ץ וָ/אָֽבֶן׃",
+        "LXX": "ἀπαγάγοι Κύριός σε καὶ τοὺς ἄρχοντάς σου οὓς ἐὰν καταστήσῃς ἐπὶ σεαυτὸν ἐπ’ ἔθνος ὃ οὐκ ἐπίστασαι σὺ καὶ οἱ πατέρες σου, καὶ λατρεύσεις ἐκεῖ θεοῖς ἑτέροις, ξύλοις καὶ λίθοις.",
+        "VUL": "Ducet te Dominus, et regem tuum, quem constitueris super te, in gentem, quam ignoras tu et patres tui : et servies ibi diis alienis, ligno et lapidi.",
+        "SYN": "Отведет Господь тебя и царя твоего, которого ты поставишь над собою, к народу, которого не знал ни ты, ни отцы твои, и там будешь служить иным богам, деревянным и каменным;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** te fera marcher, toi et ton roi que tu auras mis à ta tête, vers une nation que tu n’auras pas connue, ni toi, ni tes pères, et là tu serviras d’autres dieux, du bois et de la pierre,",
+        "NAB": "\"The LORD will bring you, and your king whom you have set over you, to a nation which you and your fathers have not known, and there you will serve strange gods of wood and stone,",
+        "VAT_ES": "El Señor los deportará, a ti y al rey que hayas puesto para que te gobierne, a una nación que ni tú ni tus padres conocían, y allí servirás a otros dioses, dioses de maderas y de piedra.",
+        "CEI": "Il Signore deporterà te e il re, che ti sarai costituito, in una nazione che né tu né i padri tuoi avete conosciuto; là servirai dei stranieri, dei di legno e di pietra;"
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וְ/הָיִ֣יתָ לְ/שַׁמָּ֔ה לְ/מָשָׁ֖ל וְ/לִ/שְׁנִינָ֑ה בְּ/כֹל֙ הָֽ/עַמִּ֔ים אֲשֶׁר יְנַהֶגְ/ךָ֥ יְהוָ֖ה שָֽׁמָּ/ה׃",
+        "LXX": "καὶ ἔσῃ ἐκεῖ ἐν αἰνίγματι καὶ παραβολῇ καὶ διηγήματι ἐν πᾶσιν τοῖς ἔθνεσιν εἰς οὓς ἀπαγάγῃ σε Κύριος ἐκεῖ.",
+        "VUL": "Et eris perditus in proverbium ac fabulam omnibus populis, ad quos te introduxerit Dominus.",
+        "SYN": "и будешь ужасом, притчею и посмешищем у всех народов, к которым отведет тебя Господь [Бог].",
+        "NEO": "et tu deviendras un sujet d’étonnement, de fable et de raillerie, parmi tous les peuples chez lesquels \\+w Yahweh|strong=\"H3068\"\\+w** te mènera.",
+        "NAB": "and will call forth amazement, reproach and barbed scorn from all the nations to which the LORD will lead you.",
+        "VAT_ES": "Entonces serás motivo de consternación y de burla en todos los pueblos adonde el Señor te conduzca.",
+        "CEI": "diventerai oggetto di stupore, di motteggio e di scherno per tutti i popoli fra i quali il Signore ti avrà condotto."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "זֶ֥רַע רַ֖ב תּוֹצִ֣יא הַ/שָּׂדֶ֑ה וּ/מְעַ֣ט תֶּאֱסֹ֔ף כִּ֥י יַחְסְלֶ֖/נּוּ הָ/אַרְבֶּֽה׃",
+        "LXX": "σπέρμα πολὺ ἐξοίσεις εἰς τὸ πεδίον, καὶ ὀλίγα εἰσοίσεις, ὅτι κατέδεται αὐτὰ ἡ ἀκρίς.",
+        "VUL": "Sementem multam jacies in terram, et modicum congregabis : quia locustæ devorabunt omnia.",
+        "SYN": "Семян много вынесешь в поле, а соберешь мало, потому что поест их саранча.",
+        "NEO": "Tu porteras sur ton champ beaucoup de semence, et tu recueilleras peu, car les sauterelles la dévoreront.",
+        "NAB": "\"Though you spend much seed on your field, you will harvest but little, for the locusts will devour the crop.",
+        "VAT_ES": "Sembrarás en tus campos mucha semilla, pero cosecharás muy poco, porque la devorará la langosta.",
+        "CEI": "Porterai molta semente al campo e raccoglierai poco, perché la locusta la divorerà."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "כְּרָמִ֥ים תִּטַּ֖ע וְ/עָבָ֑דְתָּ וְ/יַ֤יִן לֹֽא תִשְׁתֶּה֙ וְ/לֹ֣א תֶאֱגֹ֔ר כִּ֥י תֹאכְלֶ֖/נּוּ הַ/תֹּלָֽעַת׃",
+        "LXX": "ἀμπελῶνα φυτεύσεις καὶ κατεργᾷ, καὶ οἶνον οὐ πίεσαι οὐδὲ εὐφρανθήσῃ ἐξ αὐτοῦ, ὅτι καταφάγεται αὐτὰ ὁ σκώληξ.",
+        "VUL": "Vineam plantabis, et fodies : et vinum non bibes, nec colliges ex ea quippiam : quoniam vastabitur vermibus.",
+        "SYN": "Виноградники будешь садить и возделывать, а вина не будешь пить, и не соберешь _плодов_ [их], потому что поест их червь.",
+        "NEO": "Tu planteras des vignes et tu les cultiveras, et tu ne boiras pas de vin et tu ne récolteras rien, car les vers les mangeront.",
+        "NAB": "Though you plant and cultivate vineyards, you will not drink or store up the wine, for the grubs will eat the vines clean.",
+        "VAT_ES": "Plantarás viñas y las cultivarás, pero no podrás beber ni almacenar el vino, porque se las comerá el gusano.",
+        "CEI": "Pianterai vigne e le coltiverai, ma non berrai vino né coglierai uva, perché il verme le roderà."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "זֵיתִ֛ים יִהְי֥וּ לְ/ךָ֖ בְּ/כָל גְּבוּלֶ֑/ךָ וְ/שֶׁ֨מֶן֙ לֹ֣א תָס֔וּךְ כִּ֥י יִשַּׁ֖ל זֵיתֶֽ/ךָ׃",
+        "LXX": "ἐλαῖαι ἔσονταί σοι ἐν πᾶσι τοῖς ὁρίοις σου, καὶ ἔλαιον οὐ χρίσῃ, ὅτι ἐκρυήσεται ἡ ἐλαία σου.",
+        "VUL": "Olivas habebis in omnibus terminis tuis, et non ungeris oleo : quia defluent, et peribunt.",
+        "SYN": "Маслины будут у тебя во всех пределах твоих, но елеем не помажешься, потому что осыплется маслина твоя.",
+        "NEO": "Tu auras des oliviers sur tout ton territoire, et tu ne t’oindras pas d’huile, car tes olives tomberont.",
+        "NAB": "Though you have olive trees throughout your country, you will have no oil for ointment, for your olives will drop off unripe.",
+        "VAT_ES": "Tendrás olivares en todo tu territorio, pero no podrás ungirte con aceite, porque se caerán las aceitunas.",
+        "CEI": "Avrai oliveti in tutto il tuo territorio, ma non ti ungerai di olio, perché le tue olive cadranno immature."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "בָּנִ֥ים וּ/בָנ֖וֹת תּוֹלִ֑יד וְ/לֹא יִהְי֣וּ לָ֔/ךְ כִּ֥י יֵלְכ֖וּ בַּ/שֶּֽׁבִי׃",
+        "LXX": "υἱοὺς καὶ θυγατέρας γεννήσεις, καὶ οὐκ ἔσονται· ἀπελεύσονται γὰρ ἐν αἰχμαλωσίᾳ.",
+        "VUL": "Filios generabis et filias, et non frueris eis : quoniam ducentur in captivitatem.",
+        "SYN": "Сынов и дочерей родишь, но их не будет у тебя, потому что пойдут в плен.",
+        "NEO": "Tu engendreras des fils et des filles, et ils ne seront pas à toi, car ils iront en captivité.",
+        "NAB": "Though you beget sons and daughters, they will not remain with you, but will go into captivity.",
+        "VAT_ES": "Tendrás hijos e hijas, pero no te pertenecerán, porque serán llevados cautivos.",
+        "CEI": "Genererai figli e figlie, ma non saranno tuoi, perché andranno in prigionia."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "כָּל עֵצְ/ךָ֖ וּ/פְרִ֣י אַדְמָתֶ֑/ךָ יְיָרֵ֖שׁ הַ/צְּלָצַֽל׃",
+        "LXX": "πάντα τὰ ξύλινά σου καὶ τὰ γενήματα τῆς γῆς σου ἐξαναλώσει ἡ ἐρυσίβη.",
+        "VUL": "Omnes arbores tuas et fruges terræ tuæ rubigo consumet.",
+        "SYN": "Все дерева твои и плоды земли твоей погубит ржавчина.",
+        "NEO": "Les insectes s’empareront de tous tes arbres et des fruits de ton sol.",
+        "NAB": "Buzzing insects will infest all your trees and the crops of your soil.",
+        "VAT_ES": "Los insectos arrasarán con todos tus árboles y con todos los frutos de tu suelo.",
+        "CEI": "Tutti i tuoi alberi e il frutto del tuo suolo saranno preda di un esercito d'insetti."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "הַ/גֵּר֙ אֲשֶׁ֣ר בְּ/קִרְבְּ/ךָ֔ יַעֲלֶ֥ה עָלֶ֖י/ךָ מַ֣עְלָ/ה מָּ֑עְלָ/ה וְ/אַתָּ֥ה תֵרֵ֖ד מַ֥טָּה מָּֽטָּה׃",
+        "LXX": "ὁ προσήλυτος ὁ ἐν σοὶ ἀναβήσεται ἄνω ἄνω, σὺ δὲ καταβήσῃ κάτω κάτω.",
+        "VUL": "Advena, qui tecum versatur in terra, ascendet super te, eritque sublimior : tu autem descendes, et eris inferior.",
+        "SYN": "Пришелец, который среди тебя, будет возвышаться над тобою выше и выше, а ты опускаться будешь ниже и ниже;",
+        "NEO": "L’étranger qui vit au milieu de toi s’élèvera de plus en plus au-dessus de toi, tandis que toi, tu descendras toujours plus bas ;",
+        "NAB": "The alien residing among you will rise higher and higher above you, while you sink lower and lower.",
+        "VAT_ES": "El extranjero que viva en tu país subirá cada vez más alto mientras que tú caerás cada vez más bajo.",
+        "CEI": "Il forestiero che sarà in mezzo a te si innalzerà sempre più sopra di te e tu scenderai sempre più in basso."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "ה֣וּא יַלְוְ/ךָ֔ וְ/אַתָּ֖ה לֹ֣א תַלְוֶ֑/נּוּ ה֚וּא יִהְיֶ֣ה לְ/רֹ֔אשׁ וְ/אַתָּ֖ה תִּֽהְיֶ֥ה לְ/זָנָֽב׃",
+        "LXX": "οὗτος δανιεῖ σοι, σὺ δὲ τούτῳ οὐ δανιεῖς· οὗτος ἔσται κεφαλή, σὺ δὲ ἔσῃ οὐρά.",
+        "VUL": "Ipse fnerabit tibi, et tu non fnerabis ei. Ipse erit in caput, et tu eris in caudam.",
+        "SYN": "он будет давать тебе взаймы, а ты не будешь давать ему взаймы; он будет главою, а ты будешь хвостом.",
+        "NEO": "il te prêtera, et tu ne lui prêteras pas : il sera en tête, et tu seras à la queue.",
+        "NAB": "He will lend to you, not you to him. He will become the head, you the tail.",
+        "VAT_ES": "El será tu acreedor, y tú, su deudor; él estará al frente, y tú detrás.",
+        "CEI": "Egli presterà a te e tu non presterai a lui; egli sarà in testa e tu in coda."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וּ/בָ֨אוּ עָלֶ֜י/ךָ כָּל הַ/קְּלָל֣וֹת הָ/אֵ֗לֶּה וּ/רְדָפ֨וּ/ךָ֙ וְ/הִשִּׂיג֔וּ/ךָ עַ֖ד הִשָּֽׁמְדָ֑/ךְ כִּי לֹ֣א שָׁמַ֗עְתָּ בְּ/קוֹל֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ לִ/שְׁמֹ֛ר מִצְוֺתָ֥י/ו וְ/חֻקֹּתָ֖י/ו אֲשֶׁ֥ר צִוָּֽ/ךְ׃",
+        "LXX": "καὶ ἐλεύσονται ἐπὶ σὲ πᾶσαι αἱ κατάραι αὗται καὶ καταδιώξονταί σε καὶ καταλήμψονταί σε, ἕως ἂν ἐξολεθρεύσῃ σε καὶ ἕως ἂν ἀπολέσῃ σε· ὅτι οὐκ εἰσήκουσας τῆς φωνῆς Κυρίου τοῦ θεοῦ σου, φυλάξαι τὰς ἐντολὰς αὐτοῦ καὶ τὰ δικαιώματα ὅσα ἐνετείλατό σοι.",
+        "VUL": "Et venient super te omnes maledictiones istæ, et persequentes apprehendent te, donec intereas : quia non audisti vocem Domini Dei tui, nec servasti mandata ejus et cæremonias, quas præcepit tibi.",
+        "SYN": "И придут на тебя все проклятия сии, и будут преследовать тебя и постигнут тебя, доколе не будешь истреблен, за то, что ты не слушал гласа Господа Бога твоего и не соблюдал заповедей Его и постановлений Его, которые Он заповедал тебе:",
+        "NEO": "Toutes ces malédictions viendront sur toi, elles te poursuivront et t’atteindront, jusqu’à ce que tu sois détruit, parce que tu n’auras pas obéi à la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, pour observer ses lois et ses commandements qu’il t’a prescrits.",
+        "NAB": "\"All these curses will come upon you, pursuing you and overwhelming you, until you are destroyed, because you would not hearken to the voice of the LORD, your God, nor keep the commandments and statutes he gave you.",
+        "VAT_ES": "Todas estas maldiciones caerán sobre ti, te perseguirán y te alcanzarán hasta exterminarte, por no haber escuchado la voz del Señor, tu Dios, observando los mandamientos y los preceptos que él te prescribió.",
+        "CEI": "Tutte queste maledizioni verranno su di te, ti perseguiteranno e ti raggiungeranno, finché tu sia distrutto, perché non avrai obbedito alla voce del Signore tuo Dio, osservando i comandi e le leggi che egli ti ha dato."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "וְ/הָי֣וּ בְ/ךָ֔ לְ/א֖וֹת וּ/לְ/מוֹפֵ֑ת וּֽ/בְ/זַרְעֲ/ךָ֖ עַד עוֹלָֽם׃",
+        "LXX": "καὶ ἔσται ἐν σοὶ σημεῖα καὶ τέρατα ἐν τῷ σπέρματί σου ἕως τοῦ αἰῶνος,",
+        "VUL": "Et erunt in te signa atque prodigia, et in semine tuo usque in sempiternum :",
+        "SYN": "они будут знамением и указанием на тебе и на семени твоем вовек.",
+        "NEO": "Elles seront pour toi un signe et un prodige, et pour ta postérité à jamais.",
+        "NAB": "They will light on you and your descendants as a sign and a wonder for all time.",
+        "VAT_ES": "Ellas estarán siempre sobre ti y sobre tus descendientes, como una señal y una advertencia.",
+        "CEI": "Esse per te e per la tua discendenza saranno sempre un segno e un prodigio."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "תַּ֗חַת אֲשֶׁ֤ר לֹא עָבַ֨דְתָּ֙ אֶת יְהוָ֣ה אֱלֹהֶ֔י/ךָ בְּ/שִׂמְחָ֖ה וּ/בְ/ט֣וּב לֵבָ֑ב מֵ/רֹ֖ב כֹּֽל׃",
+        "LXX": "ἀνθ’ ὧν οὐκ ἐλάτρευσας Κυρίῳ τῷ θεῷ σου ἐν εὐφροσύνῃ καὶ ἀγαθῇ διανοίᾳ διὰ τὸ πλῆθος πάντων.",
+        "VUL": "eo quod non servieris Domino Deo tuo in gaudio, cordisque lætitia, propter rerum omnium abundantiam.",
+        "SYN": "За то, что ты не служил Господу Богу твоему с веселием и радостью сердца, при изобилии всего,",
+        "NEO": "Parce que tu n’auras pas servi \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, avec joie et de bon cœur, en retour de l’abondance de toutes choses,",
+        "NAB": "Since you would not serve the LORD, your God, with joy and gratitude for abundance of every kind,",
+        "VAT_ES": "Por no haber servido al Señor, tu Dios con alegría y de todo corazón, mientras lo tenías todo en abundancia,",
+        "CEI": "Poiché non avrai servito il Signore tuo Dio con gioia e di buon cuore in mezzo all'abbondanza di ogni cosa,"
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "וְ/עָבַדְתָּ֣ אֶת אֹיְבֶ֗י/ךָ אֲשֶׁ֨ר יְשַׁלְּחֶ֤/נּוּ יְהוָה֙ בָּ֔/ךְ בְּ/רָעָ֧ב וּ/בְ/צָמָ֛א וּ/בְ/עֵירֹ֖ם וּ/בְ/חֹ֣סֶר כֹּ֑ל וְ/נָתַ֞ן עֹ֤ל בַּרְזֶל֙ עַל צַוָּארֶ֔/ךָ עַ֥ד הִשְׁמִיד֖/וֹ אֹתָֽ/ךְ׃",
+        "LXX": "καὶ λατρεύσεις τοῖς ἐχθροῖς σου, οὓς ἐπαποστελεῖ Κύριος ἐπὶ σέ, ἐν λιμῷ καὶ ἐν ἐκλείψει πάντων· καὶ ἐπιθήσει κλοιὸν σιδηροῦν ἐπὶ τὸν τράχηλόν σου, ἕως ἂν ἐξολεθρεύσῃ σε.",
+        "VUL": "Servies inimico tuo, quem immittet tibi Dominus, in fame, et siti, et nuditate, et omni penuria : et ponet jugum ferreum super cervicem tuam, donec te conterat.",
+        "SYN": "будешь служить врагу твоему, которого пошлет на тебя Господь [Бог твой], в голоде, и жажде, и наготе и во всяком недостатке; он возложит на шею твою железное ярмо, так что измучит тебя.",
+        "NEO": "tu serviras, dans la faim, dans la soif, dans la nudité, dans la disette de toutes choses, tes ennemis que \\+w Yahweh|strong=\"H3068\"\\+w** enverra contre toi ; il mettra un joug de fer sur ton cou, jusqu’à ce qu’il t’ait détruit.",
+        "NAB": "therefore in hunger and thirst, in nakedness and utter poverty, you will serve the enemies whom the LORD will send against you. He will put an iron yoke on your neck, until he destroys you.",
+        "VAT_ES": "servirás a los enemigos que el Señor enviará contra ti, en medio del hambre y la sed, de la desnudez y de toda clase de privaciones. Y él pondrá en tu cuello un yuyo de hierro, hasta destruirte.",
+        "CEI": "servirai i tuoi nemici, che il Signore manderà contro di te, in mezzo alla fame, alla sete, alla nudità e alla mancanza di ogni cosa; essi ti metteranno un giogo di ferro sul collo, finché ti abbiano distrutto."
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "יִשָּׂ֣א יְהוָה֩ עָלֶ֨י/ךָ גּ֤וֹי מֵ/רָחוֹק֙ מִ/קְצֵ֣ה הָ/אָ֔רֶץ כַּ/אֲשֶׁ֥ר יִדְאֶ֖ה הַ/נָּ֑שֶׁר גּ֕וֹי אֲשֶׁ֥ר לֹא תִשְׁמַ֖ע לְשֹׁנֽ/וֹ׃",
+        "LXX": "ἐπάξει Κύριος ἐπὶ σὲ ἔθνος μακρόθεν ἀπ’ ἐσχάτου τῆς γῆς ὡσεὶ ὅρμημα ἀετοῦ, ἔθνος ὃ οὐκ ἀκούσῃ τῆς φωνῆς αὐτοῦ,",
+        "VUL": "Adducet Dominus super te gentem de longinquo, et de extremis terræ finibus in similitudinem aquilæ volantis cum impetu, cujus linguam intelligere non possis :",
+        "SYN": "Пошлет на тебя Господь народ издалека, от края земли: как орел налетит народ, которого языка ты не разумеешь,",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** fera partir contre toi de loin, des extrémités de la terre, une nation à la marche rapide comme le vol de l’aigle, nation dont tu n’entendras pas le langage,",
+        "NAB": "\"The LORD will raise up against you a nation from afar, from the end of the earth, that swoops down like an eagle, a nation whose tongue you do not understand,",
+        "VAT_ES": "El Señor alzará contra ti a una nación lejana, que avanzará desde los extremos de la tierra con la velocidad del águila. Será una nación cuya lengua no entiendes,",
+        "CEI": "Il Signore solleverà contro di te da lontano, dalle estremità della terra, una nazione che si slancia a volo come aquila: una nazione della quale non capirai la lingua,"
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "WLC": "גּ֖וֹי עַ֣ז פָּנִ֑ים אֲשֶׁ֨ר לֹא יִשָּׂ֤א פָנִים֙ לְ/זָקֵ֔ן וְ/נַ֖עַר לֹ֥א יָחֹֽן׃",
+        "LXX": "ἔθνος ἀναιδὲς προσώπῳ, ὅστις οὐ θαυμάσει πρόσωπον πρεσβύτου καὶ νέον οὐκ ἐλεήσει.",
+        "VUL": "gentem procacissimam, quæ non deferat seni, nec misereatur parvuli,",
+        "SYN": "народ наглый, который не уважит старца и не пощадит юноши;",
+        "NEO": "nation à l’aspect farouche, qui n’aura ni égards pour le vieillard, ni pitié pour l’enfant.",
+        "NAB": "a nation of stern visage, that shows neither respect for the aged nor pity for the young.",
+        "VAT_ES": "un pueblo de aspecto feroz, que no sentirá compasión del anciano ni se apiadará del niño.",
+        "CEI": "una nazione dall'aspetto feroce, che non avrà riguardo al vecchio né avrà compassione del fanciullo;"
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "WLC": "וְ֠/אָכַל פְּרִ֨י בְהֶמְתְּ/ךָ֥ וּ/פְרִֽי אַדְמָתְ/ךָ֮ עַ֣ד הִשָּֽׁמְדָ/ךְ֒ אֲשֶׁ֨ר לֹֽא יַשְׁאִ֜יר לְ/ךָ֗ דָּגָן֙ תִּיר֣וֹשׁ וְ/יִצְהָ֔ר שְׁגַ֥ר אֲלָפֶ֖י/ךָ וְ/עַשְׁתְּרֹ֣ת צֹאנֶ֑/ךָ עַ֥ד הַאֲבִיד֖/וֹ אֹתָֽ/ךְ׃",
+        "LXX": "καὶ κατέδεται τὰ ἔκγονα τῶν κτηνῶν σου καὶ τὰ γενήματα τῆς γῆς σου, ὥστε μὴ καταλιπεῖν σοι σῖτον, οἶνον, ἔλαιον, τὰ βουκόλια τῶν βοῶν σου καὶ τὰ ποίμνια τῶν προβάτων σου, ἕως ἂν ἀπολέσῃ σε",
+        "VUL": "et devoret fructum jumentorum tuorum, ac fruges terræ tuæ : donec intereas, et non relinquat tibi triticum, vinum, et oleum, armenta boum, et greges ovium : donec te disperdat,",
+        "SYN": "и будет он есть плод скота твоего и плод земли твоей, доколе не разорит тебя, так что не оставит тебе ни хлеба, ни вина, ни елея, ни плода волов твоих, ни плода овец твоих, доколе не погубит тебя;",
+        "NEO": "Elle dévorera le fruit de tes troupeaux et le fruit de ton sol, jusqu’à ce que tu sois détruit ; elle ne te laissera ni blé, ni vin nouveau, ni huile, ni les portées de ton gros et de ton menu bétail, jusqu’à ce qu’elle t’ait fait périr.",
+        "NAB": "They will consume the offspring of your livestock and the produce of your soil, until you are destroyed; they will leave you no grain or wine or oil, no issue of your herds or young of your flocks, until they have brought about your ruin.",
+        "VAT_ES": "Ella se comerá los productos de tu ganado y los frutos de tu suelo, hasta que quedes exterminado, porque te dejará totalmente desprovisto de trigo, de vino y de aceite, de las crías de tus vacas y tus ovejas, hasta hacerte desaparecer.",
+        "CEI": "che mangerà il frutto del tuo bestiame e il frutto del tuo suolo, finché tu sia distrutto, e non ti lascerà alcun residuo di frumento, di mosto, di olio, dei parti delle tue vacche e dei nati delle tue pecore, finché ti avrà fatto perire."
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "WLC": "וְ/הֵצַ֨ר לְ/ךָ֜ בְּ/כָל שְׁעָרֶ֗י/ךָ עַ֣ד רֶ֤דֶת חֹמֹתֶ֨י/ךָ֙ הַ/גְּבֹה֣וֹת וְ/הַ/בְּצֻר֔וֹת אֲשֶׁ֥ר אַתָּ֛ה בֹּטֵ֥חַ בָּ/הֵ֖ן בְּ/כָל אַרְצֶ֑/ךָ וְ/הֵצַ֤ר לְ/ךָ֙ בְּ/כָל שְׁעָרֶ֔י/ךָ בְּ/כָ֨ל אַרְצְ/ךָ֔ אֲשֶׁ֥ר נָתַ֛ן יְהוָ֥ה אֱלֹהֶ֖י/ךָ לָֽ/ךְ׃",
+        "LXX": "καὶ ἐκτρίψῃ σε ἐν ταῖς πόλεσίν σου, ἕως ἂν καθαιρεθῶσιν τὰ τείχη τὰ ὑψηλὰ καὶ τὰ ὀχυρά, ἐφ’ οἷς σὺ πέποιθας ἐπ’ αὐτοῖς, ἐν πάσῃ τῇ γῇ σου· καὶ θλίψει σε ἐν ταῖς πόλεσίν σου αἷς ἔδωκέν σοι.",
+        "VUL": "et conterat in cunctis urbibus tuis, et destruantur muri tui firmi atque sublimes, in quibus habebas fiduciam in omni terra tua. Obsideberis intra portas tuas in omni terra tua, quam dabit tibi Dominus Deus tuus :",
+        "SYN": "и будет теснить тебя во всех жилищах твоих, доколе во всей земле твоей не разрушит высоких и крепких стен твоих, на которые ты надеешься; и будет теснить тебя во всех жилищах твоих, во всей земле твоей, которую Господь Бог твой дал тебе.",
+        "NEO": "Elle t’assiégera dans toutes tes portes, jusqu’à ce que tombent dans tout ton pays tes murailles, hautes et fortes, dans lesquelles tu auras mis ta confiance ; elle t’assiégera dans toutes tes portes, dans tout le pays que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’aura donné.",
+        "NAB": "They will besiege you in each of your communities, until the great, unscalable walls you trust in come tumbling down all over your land. They will so besiege you in every community throughout the land which the LORD, your God, has given you,",
+        "VAT_ES": "Sitiará a todas tus ciudades, hasta que se derrumben esas murallas altas e inaccesibles en que habías depositado tu confianza, Sí, él te sitiará en todas las ciudades que estén dentro de la tierra que el Señor, tu Dios, te da.",
+        "CEI": "Ti assedierà in tutte le tue città, finché in tutto il tuo paese cadano le mura alte e forti, nelle quali avrai riposto la fiducia. Ti assedierà in tutte le tue città, in tutto il paese che il Signore tuo Dio ti avrà dato."
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "WLC": "וְ/אָכַלְתָּ֣ פְרִֽי בִטְנְ/ךָ֗ בְּשַׂ֤ר בָּנֶ֨י/ךָ֙ וּ/בְנֹתֶ֔י/ךָ אֲשֶׁ֥ר נָֽתַן לְ/ךָ֖ יְהוָ֣ה אֱלֹהֶ֑י/ךָ בְּ/מָצוֹר֙ וּ/בְ/מָצ֔וֹק אֲשֶׁר יָצִ֥יק לְ/ךָ֖ אֹיְבֶֽ/ךָ׃",
+        "LXX": "καὶ φάγῃ τὰ ἔκγονα τῆς κοιλίας σου, κρέα υἱῶν σου καὶ θυγατέρων σου ὅσα ἔδωκέν σοι, ἐν τῇ στενοχωρίᾳ σου καὶ ἐν τῇ θλίψει σου ᾗ θλίψει σε ὁ ἐχθρός σου.",
+        "VUL": "et comedes fructum uteri tui, et carnes filiorum tuorum et filiarum tuarum, quas dederit tibi Dominus Deus tuus, in angustia et vastitate qua opprimet te hostis tuus.",
+        "SYN": "И ты будешь есть плод чрева твоего, плоть сынов твоих и дочерей твоих, которых Господь Бог твой дал тебе, в осаде и в стеснении, в котором стеснит тебя враг твой.",
+        "NEO": "Tu mangeras le fruit de tes entrailles, la chair de tes fils et de tes filles que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’aura donnés, tant sera grande l’angoisse et la détresse où te réduira ton ennemi.",
+        "NAB": "that in the distress of the siege to which your enemy subjects you, you will eat the fruit of your womb, the flesh of your own sons and daughters whom the LORD, your God, has given you.",
+        "VAT_ES": "Y durante el asedio, será tal la penuria a que te reducirá tu enemigo, que te comerás hasta el fruto de tus entrañas, la carne de tus hijos y de tus hijas, los mismos que el Señor, tu Dios, te había dado.",
+        "CEI": "Durante l'assedio e l'angoscia alla quale ti ridurrà il tuo nemico, mangerai il frutto delle tue viscere, le carni dei tuoi figli e delle tue figlie, che il Signore tuo Dio ti avrà dato."
+      }
+    },
+    "54": {
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "WLC": "הָ/אִישׁ֙ הָ/רַ֣ךְ בְּ/ךָ֔ וְ/הֶ/עָנֹ֖ג מְאֹ֑ד תֵּרַ֨ע עֵינ֤/וֹ בְ/אָחִי/ו֙ וּ/בְ/אֵ֣שֶׁת חֵיק֔/וֹ וּ/בְ/יֶ֥תֶר בָּנָ֖י/ו אֲשֶׁ֥ר יוֹתִֽיר׃",
+        "LXX": "ὁ ἁπαλὸς ὁ ἐν σοὶ καὶ ὁ τρυφερὸς σφόδρα βασκανεῖ τῷ ὀφθαλμῷ τὸν ἀδελφὸν καὶ τὴν γυναῖκα τὴν ἐν κόλπῳ καὶ τὰ καταλελιμμένα τέκνα ἃ ἂν καταλειφθῇ,",
+        "VUL": "Homo delicatus in te, et luxuriosus valde, invidebit fratri suo, et uxori, quæ cubat in sinu suo,",
+        "SYN": "Муж, изнеженный и живший между вами в великой роскоши, безжалостным оком будет смотреть на брата своего, на жену недра своего и на остальных детей своих, которые останутся у него,",
+        "NEO": "L’homme d’entre vous le plus délicat et le plus habitué au luxe regardera d’un œil jaloux son frère, la femme qui repose sur son sein et le reste de ses enfants qu’il aura épargnés ;",
+        "NAB": "The most refined and fastidious man among you will begrudge his brother and his beloved wife and his surviving children,",
+        "VAT_ES": "El más fino y delicado entre los hombres de tu pueblo mirará con odio a su hermano, a la esposa que dormía en sus brazos y a los hijos que todavía le queden,",
+        "CEI": "L'uomo più raffinato tra di voi e più delicato guarderà di malocchio il suo fratello e la sua stessa sposa e il resto dei suoi figli che ancora sopravvivono,"
+      }
+    },
+    "55": {
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "WLC": "מִ/תֵּ֣ת לְ/אַחַ֣ד מֵ/הֶ֗ם מִ/בְּשַׂ֤ר בָּנָי/ו֙ אֲשֶׁ֣ר יֹאכֵ֔ל מִ/בְּלִ֥י הִשְׁאִֽיר ל֖/וֹ כֹּ֑ל בְּ/מָצוֹר֙ וּ/בְ/מָצ֔וֹק אֲשֶׁ֨ר יָצִ֥יק לְ/ךָ֛ אֹיִבְ/ךָ֖ בְּ/כָל שְׁעָרֶֽי/ךָ׃",
+        "LXX": "ὥστε δοῦναι ἑνὶ αὐτῶν ἀπὸ τῶν σαρκῶν τῶν τέκνων αὐτοῦ ὧν ἂν κατέσθῃ, διὰ τὸ μὴ καταλιφθῆναι αὐτῷ οὐδὲν ἐν τῇ στενοχωρίᾳ σου καὶ ἐν τῇ θλίψει σου ᾗ ἂν θλίψωσίν σε οἱ ἐχθροί σου ἐν πάσαις ταῖς πόλεσίν σου.",
+        "VUL": "ne det eis de carnibus filiorum suorum, quas comedet : eo quod nihil aliud habeat in obsidione et penuria, qua vastaverint te inimici tui intra omnes portas tuas.",
+        "SYN": "и не даст ни одному из них плоти детей своих, которых он будет есть, потому что у него не останется ничего в осаде и в стеснении, в котором стеснит тебя враг твой во всех жилищах твоих.",
+        "NEO": "il ne donnera à aucun d’eux de la chair de ses enfants dont il se nourrira, parce qu’il ne lui restera plus rien, tant seront grandes l’angoisse et la détresse où te réduira ton ennemi dans toutes tes portes.",
+        "NAB": "any share in the flesh of his children that he himself is using for food when nothing else is left him in the straits of the siege to which your enemy will subject you in all your communities.",
+        "VAT_ES": "para no compartir con ellos la carne de sus hijos: se la comerá él solo, porque ya no le quedará nada, en medio del asedio y la penuria a que te reducirá tu enemigo en todas tus ciudades.",
+        "CEI": "per non dare ad alcuno di loro le carni dei suoi figli delle quali si ciberà; perché non gli sarà rimasto più nulla durante l'assedio e l'angoscia alla quale i nemici ti avranno ridotto entro tutte le tue città."
+      }
+    },
+    "56": {
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "WLC": "הָ/רַכָּ֨ה בְ/ךָ֜ וְ/הָ/עֲנֻגָּ֗ה אֲשֶׁ֨ר לֹא נִסְּתָ֤ה כַף רַגְלָ/הּ֙ הַצֵּ֣ג עַל הָ/אָ֔רֶץ מֵ/הִתְעַנֵּ֖ג וּ/מֵ/רֹ֑ךְ תֵּרַ֤ע עֵינָ/הּ֙ בְּ/אִ֣ישׁ חֵיקָ֔/הּ וּ/בִ/בְנָ֖/הּ וּ/בְ/בִתָּֽ/הּ׃",
+        "LXX": "καὶ ἡ ἁπαλὴ ἐν ὑμῖν καὶ ἡ τρυφερά, ἧς οὐχὶ πεῖραν ἔλαβεν ὁ ποὺς αὐτῆς βαίνειν ἐπὶ τῆς γῆς διὰ τὴν τρυφερότητα, βασκανεῖ τῷ ὀφθαλμῷ αὐτῆς τὸν ἄνδρα αὐτης τὸν ἐν κόλπῳ αὐτῆς καὶ τὸν υἱὸν καὶ τὴν θυγατέρα αὐτῆς,",
+        "VUL": "Tenera mulier et delicata, quæ super terram ingredi non valebat, nec pedis vestigium figere, propter mollitiem et teneritudinem nimiam, invidebit viro suo, qui cubat in sinu ejus, super filii et filiæ carnibus,",
+        "SYN": "[Женщина] жившая у тебя в неге и роскоши, которая никогда ноги своей не ставила на землю по причине роскоши и изнеженности, будет безжалостным оком смотреть на мужа недра своего и на сына своего и на дочь свою",
+        "NEO": "La femme d’entre vous la plus délicate et la plus habituée au luxe, trop tendre et trop délicate pour essayer de poser à terre la plante de son pied, regardera d’un œil jaloux le mari qui reposait sur son sein, ainsi que son fils et sa fille,",
+        "NAB": "The most refined and delicate woman among you, so delicate and refined that she would not venture to set the sole of her foot on the ground, will begrudge her beloved husband and her son and daughter",
+        "VAT_ES": "La más fina y delicada entre las mujeres de tu pueblo –tan fina y delicada que ni siquiera se hubiera atrevido a pisar el suelo con la planta de sus pies– mirará con odio al esposo de su corazón, a su hijo y a su hija,",
+        "CEI": "La donna più raffinata e delicata tra di voi, che per delicatezza e raffinatezza non si sarebbe provata a posare in terra la pianta del piede, guarderà di malocchio il proprio marito, il figlio e la figlia"
+      }
+    },
+    "57": {
+      "seq": 57,
+      "v_in": {
+        "MT": 57,
+        "VUL": 57,
+        "LXX": 57
+      },
+      "text": {
+        "WLC": "וּֽ/בְ/שִׁלְיָתָ֞/הּ הַ/יּוֹצֵ֣ת מִ/בֵּ֣ין רַגְלֶ֗י/הָ וּ/בְ/בָנֶ֨י/הָ֙ אֲשֶׁ֣ר תֵּלֵ֔ד כִּֽי תֹאכְלֵ֥/ם בְּ/חֹֽסֶר כֹּ֖ל בַּ/סָּ֑תֶר בְּ/מָצוֹר֙ וּ/בְ/מָצ֔וֹק אֲשֶׁ֨ר יָצִ֥יק לְ/ךָ֛ אֹיִבְ/ךָ֖ בִּ/שְׁעָרֶֽי/ךָ׃",
+        "LXX": "καὶ τὸ χόριον αὐτῆς τὸ ἐξελθὸν διὰ τῶν μηρῶν αὐτῆς καὶ τὸ τέκνον ὃ ἂν τέκῃ· καταφάγεται γὰρ αὐτὰ διὰ τὴν ἔνδειαν πάντων κρυφῇ ἐν τῇ στενοχωρίᾳ σου καὶ ἐν τῇ θλίψει σου ᾗ θλίψει σε ὁ ἐχθρός σου ἐν ταῖς πόλεσίν σου·",
+        "VUL": "et illuvie secundarum, quæ egrediuntur de medio feminum ejus, et super liberis qui eadem hora nati sunt. Comedent enim eos clam propter rerum omnium penuriam in obsidione et vastitate, qua opprimet te inimicus tuus intra portas tuas.",
+        "SYN": "и _не_ _даст_ им последа, выходящего из среды ног ее, и детей, которых она родит; потому что она, при недостатке во всем, тайно будет есть их, в осаде и стеснении, в котором стеснит тебя враг твой в жилищах твоих.",
+        "NEO": "à cause de l’arrière-faix sorti d’entre ses pieds et de ses enfants qu’elle aura mis au monde ; car, manquant de tout, elle s’en nourrira en secret, tant sera grande l’angoisse et la détresse où te réduira ton ennemi dans tes portes.",
+        "NAB": "the afterbirth that issues from her womb and the infant she brings forth when she secretly uses them for food for want of anything else, in the straits of the siege to which your enemy will subject you in your communities.",
+        "VAT_ES": "y se ocultará para comer la placenta salida de su seno a los hijos que dé a luz, porque estará privada de todo, en medio del asedio y la penuria a que te reducirá tu enemigo.",
+        "CEI": "e si ciberà di nascosto di quanto esce dai suoi fianchi e dei bambini che deve ancora partorire, mancando di tutto durante l'assedio e l'angoscia alla quale i nemici ti avranno ridotto entro tutte le tue città."
+      }
+    },
+    "58": {
+      "seq": 58,
+      "v_in": {
+        "MT": 58,
+        "VUL": 58,
+        "LXX": 58
+      },
+      "text": {
+        "WLC": "אִם לֹ֨א תִשְׁמֹ֜ר לַ/עֲשׂ֗וֹת אֶת כָּל דִּבְרֵי֙ הַ/תּוֹרָ֣ה הַ/זֹּ֔את הַ/כְּתוּבִ֖ים בַּ/סֵּ֣פֶר הַ/זֶּ֑ה לְ֠/יִרְאָה אֶת הַ/שֵּׁ֞ם הַ/נִּכְבָּ֤ד וְ/הַ/נּוֹרָא֙ הַ/זֶּ֔ה אֵ֖ת יְהוָ֥ה אֱלֹהֶֽי/ךָ׃",
+        "LXX": "ἐὰν μὴ εἰσακούσῃς ποιεῖν πάντα τὰ ῥήματα τοῦ νόμου τούτου τὰ γεγραμμένα ἐν τῷ βιβλίῳ τούτῳ, φοβεῖσθαι τὸ ὄνομα τὸ ἔντιμον τὸ θαυμαστὸν τοῦτο, Κύριον τὸν θεόν σου.",
+        "VUL": "Nisi custodieris et feceris omnia verba legis hujus, quæ scripta sunt in hoc volumine, et timueris nomen ejus gloriosum et terribile, hoc est, Dominum Deum tuum :",
+        "SYN": "Если не будешь стараться исполнять все слова закона сего, написанные в книге сей, и не будешь бояться сего славного и страшного имени Господа Бога твоего,",
+        "NEO": "Si tu n’as pas soin de mettre en pratique toutes les paroles de cette loi, écrites dans ce livre, craignant ce nom glorieux et redoutable : \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu,",
+        "NAB": "\"If you are not careful to observe every word of the law which is written in this book, and to revere the glorious and awesome name of the LORD, your God,",
+        "VAT_ES": "Si no te empeñas en practicar todas las palabras de esta Ley, como están escritas en este Libro, temiendo el Nombre glorioso y terrible del Señor, tu Dios,",
+        "CEI": "Se non cercherai di eseguire tutte le parole di questa legge, scritte in questo libro, avendo timore di questo nome glorioso e terribile del Signore tuo Dio,"
+      }
+    },
+    "59": {
+      "seq": 59,
+      "v_in": {
+        "MT": 59,
+        "VUL": 59,
+        "LXX": 59
+      },
+      "text": {
+        "WLC": "וְ/הִפְלָ֤א יְהוָה֙ אֶת מַכֹּ֣תְ/ךָ֔ וְ/אֵ֖ת מַכּ֣וֹת זַרְעֶ֑/ךָ מַכּ֤וֹת גְּדֹלוֹת֙ וְ/נֶ֣אֱמָנ֔וֹת וָ/חֳלָיִ֥ם רָעִ֖ים וְ/נֶאֱמָנִֽים׃",
+        "LXX": "καὶ παραδοξάσει Κύριος τὰς πληγάς σου καὶ τὰς πληγὰς τοῦ σπέρματός σου, πληγὰς μεγάλας καὶ θαυμαστάς, καὶ νόσους πονηρὰς καὶ πιστάς.",
+        "VUL": "augebit Dominus plagas tuas, et plagas seminis tui, plagas magnas et perseverantes, infirmitates pessimas et perpetuas :",
+        "SYN": "то Господь поразит тебя и потомство твое необычайными язвами, язвами великими и постоянными, и болезнями злыми и постоянными;",
+        "NEO": "— \\+w Yahweh|strong=\"H3068\"\\+w** rendra extraordinaires tes plaies et les plaies de ta postérité, plaies grandes et continues, maladies graves et opiniâtres.",
+        "NAB": "he will smite you and your descendants with severe and constant blows, malignant and lasting maladies.",
+        "VAT_ES": "él te castigará, a ti y a tu descendencia, con calamidades extraordinarias. Serán calamidades grades y persistentes, enfermedades malignas e incurables.",
+        "CEI": "allora il Signore colpirà te e i tuoi discendenti con flagelli prodigiosi: flagelli grandi e duraturi, malattie maligne e ostinate."
+      }
+    },
+    "60": {
+      "seq": 60,
+      "v_in": {
+        "MT": 60,
+        "VUL": 60,
+        "LXX": 60
+      },
+      "text": {
+        "WLC": "וְ/הֵשִׁ֣יב בְּ/ךָ֗ אֵ֚ת כָּל מַדְוֵ֣ה מִצְרַ֔יִם אֲשֶׁ֥ר יָגֹ֖רְתָּ מִ/פְּנֵי/הֶ֑ם וְ/דָבְק֖וּ בָּֽ/ךְ׃",
+        "LXX": "καὶ ἐπιστρέψει πᾶσαν τὴν ὀδύνην Αἰγύπτου τὴν πονηρὰν ἣν διευλαβοῦ ἀπὸ προσώπου αὐτῶν, καὶ κολληθήσονται ἐν σοί.",
+        "VUL": "et convertet in te omnes afflictiones Ægypti, quas timuisti, et adhærebunt tibi.",
+        "SYN": "и наведет на тебя все [злые] язвы Египетские, которых ты боялся, и они прилипнут к тебе;",
+        "NEO": "Il fera revenir sur toi toutes les maladies d’Égypte, devant lesquelles tu tremblais, et elles s’attacheront à toi.",
+        "NAB": "He will again afflict you with all the diseases of Egypt which you dread, and they will persist among you.",
+        "VAT_ES": "El hará recaer sobre ti todas las plagas de Egipto, esas que tanto te horrorizaron.",
+        "CEI": "Farà tornare su di te le infermità dell'Egitto, delle quali tu avevi paura, e si attaccheranno a te."
+      }
+    },
+    "61": {
+      "seq": 61,
+      "v_in": {
+        "MT": 61,
+        "VUL": 61,
+        "LXX": 61
+      },
+      "text": {
+        "WLC": "גַּ֤ם כָּל חֳלִי֙ וְ/כָל מַכָּ֔ה אֲשֶׁר֙ לֹ֣א כָת֔וּב בְּ/סֵ֖פֶר הַ/תּוֹרָ֣ה הַ/זֹּ֑את יַעְלֵ֤/ם יְהוָה֙ עָלֶ֔י/ךָ עַ֖ד הִשָּׁמְדָֽ/ךְ׃",
+        "LXX": "καὶ πᾶσαν μαλακίαν καὶ πᾶσαν πληγὴν τὴν μὴ γεγραμμένην ἐν τῷ βιβλίῳ τοῦ νόμου τούτου ἐπάξει Κύριος ἐπὶ σέ, ἕως ἂν ἐξολεθρεύσῃ σε.",
+        "VUL": "Insuper et universos languores, et plagas, quæ non sunt scriptæ in volumine legis hujus, inducet Dominus super te, donec te conterat :",
+        "SYN": "и всякую болезнь и всякую язву, не написанную [и всякую написанную] в книге закона сего, Господь наведет на тебя, доколе не будешь истреблен;",
+        "NEO": "De plus, \\+w Yahweh|strong=\"H3068\"\\+w** fera venir sur toi toutes sortes de maladies et de plaies, qui ne sont pas écrites dans le livre de cette loi, jusqu’à ce que tu sois détruit.",
+        "NAB": "Should there be any kind of sickness or calamity not mentioned in this book of the law, that too the LORD will bring upon you until you are destroyed.",
+        "VAT_ES": "Además, el Señor te enviará todas las enfermedades y todas las desgracias que no están escritas en el libro de esta Ley, hasta que seas exterminado.",
+        "CEI": "Anche ogni altra malattia e ogni flagello, che non sta scritto nel libro di questa legge, il Signore manderà contro di te, finché tu non sia distrutto."
+      }
+    },
+    "62": {
+      "seq": 62,
+      "v_in": {
+        "MT": 62,
+        "VUL": 62,
+        "LXX": 62
+      },
+      "text": {
+        "WLC": "וְ/נִשְׁאַרְתֶּם֙ בִּ/מְתֵ֣י מְעָ֔ט תַּ֚חַת אֲשֶׁ֣ר הֱיִיתֶ֔ם כְּ/כוֹכְבֵ֥י הַ/שָּׁמַ֖יִם לָ/רֹ֑ב כִּי לֹ֣א שָׁמַ֔עְתָּ בְּ/ק֖וֹל יְהוָ֥ה אֱלֹהֶֽי/ךָ׃",
+        "LXX": "καὶ καταλειφθήσεσθε ἐν ἀριθμῷ βραχεῖ, ἀνθ’ ὧν ὅτι ἦτε ὡσεὶ τὰ ἄστρα τοῦ οὐρανοῦ τῷ πλήθει, ὅτι οὐκ εἰσήκουσας τῆς φωνῆς Κυρίου τοῦ θεοῦ σου.",
+        "VUL": "et remanebitis pauci numero, qui prius eratis sicut astra cæli præ multitudine, quoniam non audisti vocem Domini Dei tui.",
+        "SYN": "и останется вас немного, тогда как множеством вы подобны были звездам небесным, ибо ты не слушал гласа Господа Бога твоего.",
+        "NEO": "Vous ne resterez plus qu’un petit nombre, après avoir été nombreux comme les étoiles du ciel, parce que tu n’auras pas obéi à la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu.",
+        "NAB": "Of you who were numerous as the stars in the sky, only a few will be left, because you would not hearken to the voice of the LORD, your God.",
+        "VAT_ES": "Después de haber sido numeroso, como las estrellas del cielo, quedarás reducido a un pequeño número, por no haber escuchado la voz del Señor, tu Dios.",
+        "CEI": "Voi rimarrete in pochi uomini, dopo essere stati numerosi come le stelle del cielo, perché non avrai obbedito alla voce del Signore tuo Dio."
+      }
+    },
+    "63": {
+      "seq": 63,
+      "v_in": {
+        "MT": 63,
+        "VUL": 63,
+        "LXX": 63
+      },
+      "text": {
+        "WLC": "וְ֠/הָיָה כַּ/אֲשֶׁר שָׂ֨שׂ יְהוָ֜ה עֲלֵי/כֶ֗ם לְ/הֵיטִ֣יב אֶתְ/כֶם֮ וּ/לְ/הַרְבּ֣וֹת אֶתְ/כֶם֒ כֵּ֣ן יָשִׂ֤ישׂ יְהוָה֙ עֲלֵי/כֶ֔ם לְ/הַאֲבִ֥יד אֶתְ/כֶ֖ם וּ/לְ/הַשְׁמִ֣יד אֶתְ/כֶ֑ם וְ/נִסַּחְתֶּם֙ מֵ/עַ֣ל הָֽ/אֲדָמָ֔ה אֲשֶׁר אַתָּ֥ה בָא שָׁ֖מָּ/ה לְ/רִשְׁתָּֽ/הּ׃",
+        "LXX": "καὶ ἔσται ὃν τρόπον εὐφράνθη ⸆ Κύριος ἐφ’ ὑμῖν εὖ ποιῆσαι ὑμᾶς, οὕτως εὐφρανθήσεται Κύριος ἐφ’ ὑμῖν ἐξολεθρεῦσαι ὑμᾶς· καὶ ἐξαρθήσεσθε ἐν τάχει ἀπὸ τῆς γῆς εἰς ἣν εἰσπορεύῃ ἐκεῖ κληρονομεῖν αὐτήν.",
+        "VUL": "Et sicut ante lætatus est Dominus super vos, bene vobis faciens, vosque multiplicans : sic lætabitur disperdens vos atque subvertens, ut auferamini de terra, ad quam ingredieris possidendam.",
+        "SYN": "И как радовался Господь, делая вам добро и умножая вас, так будет радоваться Господь, погубляя вас и истребляя вас, и извержены будете из земли, в которую ты идешь, чтобы владеть ею.",
+        "NEO": "De même que \\+w Yahweh|strong=\"H3068\"\\+w** prenait plaisir à vous faire du bien et à vous multiplier, ainsi \\+w Yahweh|strong=\"H3068\"\\+w** prendra plaisir à vous faire périr et à vous détruire ; et vous serez arrachés de la terre où tu vas entrer pour la posséder.",
+        "NAB": "\"Just as the LORD once took delight in making you grow and prosper, so will he now take delight in ruining and destroying you, and you will be plucked out of the land you are now entering to occupy.",
+        "VAT_ES": "Y así como antes él complacía en hacerlos felices y numerosos, luego se complacerá en destruirlos y exterminarlos. Y ustedes serán arrancados de la tierra, donde vas a entrar para tomar posesión de ella.",
+        "CEI": "Come il Signore gioiva a vostro riguardo nel beneficarvi e moltiplicarvi, così il Signore gioirà a vostro riguardo nel farvi perire e distruggervi; sarete strappati dal suolo, che vai a prendere in possesso."
+      }
+    },
+    "64": {
+      "seq": 64,
+      "v_in": {
+        "MT": 64,
+        "VUL": 64,
+        "LXX": 64
+      },
+      "text": {
+        "WLC": "וֶ/הֱפִֽיצְ/ךָ֤ יְהוָה֙ בְּ/כָל הָ֣/עַמִּ֔ים מִ/קְצֵ֥ה הָ/אָ֖רֶץ וְ/עַד קְצֵ֣ה הָ/אָ֑רֶץ וְ/עָבַ֨דְתָּ שָּׁ֜ם אֱלֹהִ֣ים אֲחֵרִ֗ים אֲשֶׁ֧ר לֹא יָדַ֛עְתָּ אַתָּ֥ה וַ/אֲבֹתֶ֖י/ךָ עֵ֥ץ וָ/אָֽבֶן׃",
+        "LXX": "καὶ διασπερεῖ σε Κύριος ὁ θεός σου εἰς πάντα τὰ ἔθνη, ἀπ’ ἄκρου τῆς γῆς ἕως ἄκρου τῆς γῆς, καὶ δουλεύσεις ἐκεῖ θεοῖς ἑτέροις, ξύλοις καὶ λίθοις, οὓς οὐκ ἠπίστω σὺ καὶ οἱ πατέρες σου.",
+        "VUL": "Disperget te Dominus in omnes populos, a summitate terræ usque ad terminos ejus : et servies ibi diis alienis, quos et tu ignoras et patres tui, lignis et lapidibus.",
+        "SYN": "И рассеет тебя Господь [Бог твой] по всем народам, от края земли до края земли, и будешь там служить иным богам, которых не знал ни ты, ни отцы твои, дереву и камням.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** te dispersera parmi tous les peuples, d’une extrémité de la terre à l’autre, et là, tu serviras d’autres dieux que n’ont connus ni toi ni tes pères, du bois et de la pierre.",
+        "NAB": "The LORD will scatter you among all the nations from one end of the earth to the other, and there you will serve strange gods of wood and stone, such as you and your fathers have not known.",
+        "VAT_ES": "El Señor te dispersará entre todos los pueblos, de un extremo al otro de la tierra, y allí servirás a otros dioses que ni tú ni tus padres conocían, dioses de madera y de piedra.",
+        "CEI": "Il Signore ti disperderà fra tutti i popoli, da un'estremità fino all'altra; là servirai altri dei, che né tu, né i tuoi padri avete conosciuti, dei di legno e di pietra."
+      }
+    },
+    "65": {
+      "seq": 65,
+      "v_in": {
+        "MT": 65,
+        "VUL": 65,
+        "LXX": 65
+      },
+      "text": {
+        "WLC": "וּ/בַ/גּוֹיִ֤ם הָ/הֵם֙ לֹ֣א תַרְגִּ֔יעַ וְ/לֹא יִהְיֶ֥ה מָנ֖וֹחַ לְ/כַף רַגְלֶ֑/ךָ וְ/נָתַן֩ יְהוָ֨ה לְ/ךָ֥ שָׁם֙ לֵ֣ב רַגָּ֔ז וְ/כִלְי֥וֹן עֵינַ֖יִם וְ/דַֽאֲב֥וֹן נָֽפֶשׁ׃",
+        "LXX": "ἀλλὰ καὶ ἐν τοῖς ἔθνεσιν ἐκείνοις οὐκ ἀναπαύσει σε, οὐδ’ οὐ μὴ γένηται στάσις τῷ ἴχνει τοῦ ποδός σου· καὶ δώσει σοι Κύριος ἐκεῖ καρδίαν ἑτέραν ἀπειθοῦσαν καὶ ἐκλιπόντας ὀφθαλμοὺς καὶ τηκομένην ψυχήν.",
+        "VUL": "In gentibus quoque illis non quiesces, neque erit requies vestigio pedis tui. Dabit enim tibi Dominus ibi cor pavidum, et deficientes oculos, et animam consumptam mrore :",
+        "SYN": "Но и между этими народами не успокоишься, и не будет места покоя для ноги твоей, и Господь даст тебе там трепещущее сердце, истаевание очей и изнывание души;",
+        "NEO": "Parmi ces nations mêmes, tu ne seras pas tranquille, et il n’y aura pas un lieu de repos pour la plante de tes pieds ; là \\+w Yahweh|strong=\"H3068\"\\+w** te donnera un cœur tremblant, des yeux éteints, et une âme languissante.",
+        "NAB": "Among these nations you will find no repose, not a foot of ground to stand upon, for there the LORD will give you an anguished heart and wasted eyes and a dismayed spirit.",
+        "VAT_ES": "No tendrás paz en medio de aquellas naciones y tu pie no encontrará descanso. El Señor llenará de angustia tu corazón, nublará tus ojos y abatirá tu ánimo.",
+        "CEI": "Fra quelle nazioni non troverai sollievo e non vi sarà luogo di riposo per la pianta dei tuoi piedi; là il Signore ti darà un cuore trepidante, languore di occhi e angoscia di anima."
+      }
+    },
+    "66": {
+      "seq": 66,
+      "v_in": {
+        "MT": 66,
+        "VUL": 66,
+        "LXX": 66
+      },
+      "text": {
+        "WLC": "וְ/הָי֣וּ חַיֶּ֔י/ךָ תְּלֻאִ֥ים לְ/ךָ֖ מִ/נֶּ֑גֶד וּ/פָֽחַדְתָּ֙ לַ֣יְלָה וְ/יוֹמָ֔ם וְ/לֹ֥א תַאֲמִ֖ין בְּ/חַיֶּֽי/ךָ׃",
+        "LXX": "καὶ ἔσται ἡ ζωή σου κρεμαμένη ἀπέναντι τῶν ὀφθαλμῶν σου, καὶ φοβηθήσῃ ἡμέρας καὶ νυκτός, καὶ οὐ πιστεύσεις τῇ ζωῇ σου·",
+        "VUL": "et erit vita tua quasi pendens ante te. Timebis nocte et die, et non credes vitæ tuæ.",
+        "SYN": "жизнь твоя будет висеть пред тобою, и будешь трепетать ночью и днем, и не будешь уверен в жизни твоей;",
+        "NEO": "Ta vie sera comme en suspens devant toi, tu trembleras la nuit et le jour, et tu ne croiras pas à ta vie.",
+        "NAB": "You will live in constant suspense and stand in dread both day and night, never sure of your existence.",
+        "VAT_ES": "Tu vida estará pendiente de un hijo, día y noche sentirás temor y no tendrás ninguna seguridad de sobrevivir.",
+        "CEI": "La tua vita ti sarà dinanzi come sospesa a un filo; temerai notte e giorno e non sarai sicuro della tua vita."
+      }
+    },
+    "67": {
+      "seq": 67,
+      "v_in": {
+        "MT": 67,
+        "VUL": 67,
+        "LXX": 67
+      },
+      "text": {
+        "WLC": "בַּ/בֹּ֤קֶר תֹּאמַר֙ מִֽי יִתֵּ֣ן עֶ֔רֶב וּ/בָ/עֶ֥רֶב תֹּאמַ֖ר מִֽי יִתֵּ֣ן בֹּ֑קֶר מִ/פַּ֤חַד לְבָֽבְ/ךָ֙ אֲשֶׁ֣ר תִּפְחָ֔ד וּ/מִ/מַּרְאֵ֥ה עֵינֶ֖י/ךָ אֲשֶׁ֥ר תִּרְאֶֽה׃",
+        "LXX": "τὸ πρωὶ ἐρεῖς Πῶς ἂν γένοιτο ἑσπέρα; καὶ τὸ ἑσπέρας ἐρεῖς Πῶς ἂν γένοιτο πρωί; ἀπὸ τοῦ φόβου τῆς καρδίας σου ἃ φοβηθήσῃ, καὶ ἀπὸ τῶν ὁραμάτων τῶν ὀφθαλμῶν σου ὧν ὄψῃ.",
+        "VUL": "Mane dices : Quis mihi det vesperum ? et vespere : Quis mihi det mane ? propter cordis tui formidinem, qua terreberis, et propter ea, quæ tuis videbis oculis.",
+        "SYN": "от трепета сердца твоего, которым ты будешь объят, и от того, что ты будешь видеть глазами твоими, утром ты скажешь: \"о, если бы пришел вечер!\", а вечером скажешь: \"о, если бы наступило утро!\"",
+        "NEO": "Le matin tu diras : « Que ne suis-je au soir ? » et le soir tu diras : « Que ne suis-je au matin ? » — à cause de la crainte qui agitera ton cœur et des choses que tes yeux verront.",
+        "NAB": "In the morning you will say, 'Would that it were evening!' and in the evening you will say, 'Would that it were morning!' for the dread that your heart must feel and the sight that your eyes must see.",
+        "VAT_ES": "Por la mañana dirás» «&iexcl;Ojalá fuera de tarde!», a causa del temor que sentirás y de lo que verán tus ojos.",
+        "CEI": "Alla mattina dirai: Se fosse sera! e alla sera dirai: Se fosse mattina!, a causa del timore che ti agiterà il cuore e delle cose che i tuoi occhi vedranno."
+      }
+    },
+    "68": {
+      "seq": 68,
+      "v_in": {
+        "MT": 68,
+        "VUL": 68,
+        "LXX": 68
+      },
+      "text": {
+        "WLC": "וֶֽ/הֱשִֽׁיבְ/ךָ֨ יְהוָ֥ה מִצְרַיִם֮ בָּ/אֳנִיּוֹת֒ בַּ/דֶּ֨רֶךְ֙ אֲשֶׁ֣ר אָמַ֣רְתִּֽי לְ/ךָ֔ לֹא תֹסִ֥יף ע֖וֹד לִ/רְאֹתָ֑/הּ וְ/הִתְמַכַּרְתֶּ֨ם שָׁ֧ם לְ/אֹיְבֶ֛י/ךָ לַ/עֲבָדִ֥ים וְ/לִ/שְׁפָח֖וֹת וְ/אֵ֥ין קֹנֶֽה׃",
+        "LXX": "καὶ ἀποστρέψει σε Κύριος εἰς Αἴγυπτον ἐν πλοίοις, ἐν τῇ ὁδῷ ᾗ εἶπα Οὐ προσθήσει ἔτι ἰδεῖν αὐτήν· καὶ πραθήσεσθε ἐκεῖ τοῖς ἐχθροῖς ὑμῶν εἰς παῖδας καὶ παιδίσκας, καὶ οὐκ ἔσται ὁ κτώμενος.",
+        "VUL": "Reducet te Dominus classibus in Ægyptum per viam de qua dixit tibi ut eam amplius non videres. Ibi venderis inimicis tuis in servos et ancillas, et non erit qui emat.",
+        "SYN": "и возвратит тебя Господь в Египет на кораблях тем путем, о котором я сказал тебе: \"ты более не увидишь его\"; и там будете продаваться врагам вашим в рабов и в рабынь, и не будет покупающего.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** te fera retourner sur des navires en Égypte, par le chemin dont je t’avais dit : « Tu ne le verras plus. » Et là vous vous offrirez en vente à vos ennemis, comme esclaves et comme servantes, et il n’y aura personne qui vous achète. »",
+        "NAB": "The LORD will send you back in galleys to Egypt, to the region I told you that you were never to see again; and there you will offer yourselves for sale to your enemies as male and female slaves, but there will be no buyer.\"",
+        "VAT_ES": "El Señor te hará volver en barcos a Egipto, por eses camino del que yo te venderán a sus enemigos como esclavos y esclavas, pero nadie querrá comprarlos.",
+        "CEI": "Il Signore ti farà tornare in Egitto, per mezzo di navi, per una via della quale ti ho detto: Non dovrete più rivederla! e là vi metterete in vendita ai vostri nemici come schiavi e schiave, ma nessuno vi acquisterà\"."
+      }
+    }
+  }
+}

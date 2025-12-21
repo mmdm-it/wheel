@@ -1,0 +1,304 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ZACH_011",
+  "book_key": "ZACH",
+  "sequence": 11,
+  "chapter_in": {
+    "MT": 11,
+    "VUL": 11,
+    "LXX": 11
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "פְּתַ֥ח לְבָנ֖וֹן דְּלָתֶ֑י/ךָ וְ/תֹאכַ֥ל אֵ֖שׁ בַּ/אֲרָזֶֽי/ךָ׃",
+        "LXX": "Διάνοιξον ὁ Λίβανος τὰς θύρας σου, καὶ καταφαγέτω πῦρ τὰς κέδρους σου·",
+        "SYN": "Отворяй, Ливан, ворота твои, и да пожрет огонь кедры твои.",
+        "NEO": "Ouvre tes portes, Liban, et que le feu dévore tes cèdres !",
+        "NAB": "Open your doors, O Lebanon, that the fire may devour your cedars!",
+        "VAT_ES": "Abre tus puertas, Líbano, y que tus cedros sean presa de las llamas.",
+        "CEI": "Apri, Libano, le tue porte, e il fuoco divori i tuoi cedri."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "הֵילֵ֤ל בְּרוֹשׁ֙ כִּֽי נָ֣פַל אֶ֔רֶז אֲשֶׁ֥ר אַדִּרִ֖ים שֻׁדָּ֑דוּ הֵילִ֨ילוּ֙ אַלּוֹנֵ֣י בָשָׁ֔ן כִּ֥י יָרַ֖ד יַ֥עַר ה/בצור הַ/בָּצִֽיר׃",
+        "LXX": "ὀλολυξάτω πίτυς, διότι πέπτωκεν κέδρος, ὅτι μεγάλως μεγιστᾶνες ἐταλαιπώρησαν· ὀλολύξατε, δρύες τῆς Βασανείτιδος, ὅτι κατεσπάσθη ὁ δρυμὸς ὁ σύμφυτος.",
+        "SYN": "Рыдай, кипарис, ибо упал кедр, ибо и величавые опустошены; рыдайте, дубы Васанские, ибо повалился непроходимый лес.",
+        "NEO": "Lamente-toi, cyprès, car le cèdre est tombé, les arbres magnifiques ont été ravagés ! Lamentez-vous, chênes de Basan, car la forêt impénétrable est abattue !",
+        "NAB": "Wail, you cypress trees, for the cedars are fallen, the mighty have been despoiled. Wail, you oaks of Bashan, for the impenetrable forest is cut down!",
+        "VAT_ES": "Gime, ciprés, porque ha caído el cedro, porque los poderosos han sido arrasados. Giman, encinas de Basán, porque ha sido abatida la selva impenetrable.",
+        "CEI": "Urla, cipresso, perché il cedro è caduto, gli splendidi alberi sono distrutti. Urlate, querce di Basàn, perché la foresta impenetrabile è abbattuta!"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "ק֚וֹל יִֽלְלַ֣ת הָ/רֹעִ֔ים כִּ֥י שֻׁדְּדָ֖ה אַדַּרְתָּ֑/ם ק֚וֹל שַׁאֲגַ֣ת כְּפִירִ֔ים כִּ֥י שֻׁדַּ֖ד גְּא֥וֹן הַ/יַּרְדֵּֽן׃",
+        "LXX": "φωνὴ θρηνούντων ποιμένων, ὅτι τεταλαιπώρηκεν ἡ μεγαλοσύνη αὐτῶν· φωνὴ ὠρυομένων λεόντων, ὅτι τεταλαιπώρηκεν τὸ φρύαγμα τοῦ Ἰορδάνου.",
+        "SYN": "Слышен голос рыдания пастухов, потому что опустошено приволье их; слышно рыкание молодых львов, потому что опустошена краса Иордана.",
+        "NEO": "On entend la lamentation des bergers, parce que leur gloire est ruinée ; on entend le rugissement des lionceaux, car ce qui faisait l’orgueil du Jourdain a été ruiné.",
+        "NAB": "Hark! the wailing of the shepherds, their glory has been ruined. Hark! the roaring of the young lions, the jungle of the Jordan is laid waste.",
+        "VAT_ES": "Escuchen el gemido de los pastores, porque ha sido arrasado su esplendor; escuchen el rugido de los leones, porque ha sido arrasado el orgullo del Jordán.",
+        "CEI": "Si ode il lamento dei pastori, perché la loro gloria è distrutta! Si ode il ruggito dei leoncelli, perché è devastata la magnificenza del Giordano!"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כֹּ֥ה אָמַ֖ר יְהוָ֣ה אֱלֹהָ֑/י רְעֵ֖ה אֶת צֹ֥אן הַ/הֲרֵגָֽה׃",
+        "LXX": "τάδε λέγει Κύριος Παντοκράτωρ Ποιμαίνετε τὰ πρόβατα τῆς σφαγῆς,",
+        "SYN": "Так говорит Господь Бог мой: паси овец, обреченных на заклание,",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, mon Dieu : « Sois pasteur du troupeau de carnage+ 11:4 \\+it Le troupeau de carnage\\+it*, les brebis que des maîtres et des bergers cruels mènent à leur perte, c.-à-d. la nation israélite, chefs et peuple. La parole est adressée au prophète, qui, dans la suite, joue d’abord le rôle du bon berger ; puis, lorsque l’entreprise du bon berger a échoué, devient le mauvais berger.*",
+        "NAB": "Thus said the LORD, my God: Shepherd the flock to be slaughtered.",
+        "VAT_ES": "Así habla el Señor, mi Dios: Apacienta las ovejas destinadas al matadero,",
+        "CEI": "Così parla il Signore mio Dio: \"Pasci quelle pecore da macello"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֨ר קֹנֵי/הֶ֤ן יַֽהֲרְגֻ/ן֙ וְ/לֹ֣א יֶאְשָׁ֔מוּ וּ/מֹכְרֵי/הֶ֣ן יֹאמַ֔ר בָּר֥וּךְ יְהוָ֖ה וַ/אעְשִׁ֑ר וְ/רֹ֣עֵי/הֶ֔ם לֹ֥א יַחְמ֖וֹל עֲלֵי/הֶֽן׃",
+        "LXX": "ἃ οἱ κτησάμενοι κατέσφαζον καὶ οὐ μετεμέλοντο, καὶ οἱ πωλοῦντες αὐτὰ ἔλεγον Εὐλογητὸς Κύριος, καὶ πεπλουτήκαμεν· καὶ οἱ ποιμένες αὐτῶν οὐκ ἔπασχον οὐδὲν ἐπ’ αὐτοῖς.",
+        "SYN": "которых купившие убивают ненаказанно, а продавшие говорят: \"благословен Господь; я разбогател!\" и пастухи их не жалеют о них.",
+        "NEO": "que leurs acheteurs tuent impunément, et dont les vendeurs disent : Béni soit \\+w Yahweh|strong=\"H3068\"\\+w** ! je m’enrichis, — et que leurs bergers n’épargnent point.",
+        "NAB": "For they who buy them slay them with impunity; while those who sell them say, \"Blessed be the LORD, I have become rich!\" Even their own shepherds do not feel for them.",
+        "VAT_ES": "aquellas que sus compradores matan impunemente, mientras los vendedores dicen: «&iexcl;Bendito sea el Señor, ya soy rico!», y los pastores no se compadecen de ellas.",
+        "CEI": "che i compratori sgozzano impunemente, e i venditori dicono: Sia benedetto il Signore, mi sono arricchito, e i pastori non se ne curano affatto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כִּ֠י לֹ֣א אֶחְמ֥וֹל ע֛וֹד עַל יֹשְׁבֵ֥י הָ/אָ֖רֶץ נְאֻם יְהוָ֑ה וְ/הִנֵּ֨ה אָנֹכִ֜י מַמְצִ֣יא אֶת הָ/אָדָ֗ם אִ֤ישׁ בְּ/יַד רֵעֵ֨/הוּ֙ וּ/בְ/יַ֣ד מַלְכּ֔/וֹ וְ/כִתְּתוּ֙ אֶת הָ/אָ֔רֶץ וְ/לֹ֥א אַצִּ֖יל מִ/יָּדָֽ/ם׃",
+        "LXX": "διὰ τοῦτο οὐ φείσομαι οὐκέτι ἐπὶ τοὺς ⸆ κατοικοῦντας τὴν γῆν, λέγει Κύριος· καὶ ἰδοὺ ἐγὼ παραδίδωμι τοὺς ἀνθρώπους, ἕκαστον εἰς χεῖρας τοῦ πλησίον αὐτοῦ καὶ εἰς χεῖρας βασιλέως αὐτοῦ, καὶ κατακόψουσιν τὴν γῆν, καὶ οὐ μὴ ἐξέλωμαι ἐκ χειρὸς αὐτῶν.",
+        "SYN": "Ибо Я не буду более миловать жителей земли сей, говорит Господь; и вот, Я предам людей, каждого в руки ближнего его и в руки царя его, и они будут поражать землю, и Я не избавлю от рук их.",
+        "NEO": "Car je n’épargnerai plus les habitants du pays, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** ; voici que moi-même je livrerai les hommes aux mains les uns des autres et aux mains de leur roi ; ils dévasteront le pays, et je ne délivrerai pas de leur main. »",
+        "NAB": "(Nor shall I spare the inhabitants of the earth any more, says the LORD. Yes, I will deliver each of them into the power of his neighbor, or into the power of his king; they shall crush the earth, and I will not deliver it out of their power.)",
+        "VAT_ES": "No, ya no tendré compasión de los habitantes del país –oráculo del Señor– y entregaré a cada uno en manos de su vecino y en manos de su rey; ellos aplastarán el país, y yo no los libraré de sus manos.",
+        "CEI": "Neppur io perdonerò agli abitanti del paese. Oracolo del Signore. Ecco, io abbandonerò gli uomini l'uno in balìa dell'altro, in balìa del loro re, perché devastino il paese - non mi curerò di liberarli dalle loro mani\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וָֽ/אֶרְעֶה֙ אֶת צֹ֣אן הַֽ/הֲרֵגָ֔ה לָ/כֵ֖ן עֲנִיֵּ֣י הַ/צֹּ֑אן וָ/אֶקַּֽח לִ֞/י שְׁנֵ֣י מַקְל֗וֹת לְ/אַחַ֞ד קָרָ֤אתִי נֹ֨עַם֙ וּ/לְ/אַחַד֙ קָרָ֣אתִי חֹֽבְלִ֔ים וָ/אֶרְעֶ֖ה אֶת הַ/צֹּֽאן׃",
+        "LXX": "καὶ ποιμανῶ τὰ πρόβατα τῆς σφαγῆς εἰς τὴν Χαναανῖτιν· καὶ λήμψομαι ἐμαυτῷ δύο ῥάβδους, τὴν μὲν μίαν ἐκάλεσα Κάλλος, καὶ τὴν ἑτέραν ἐκάλεσα Σχοίνισμα, καὶ ποιμανῶ τὰ πρόβατα.",
+        "SYN": "И буду пасти овец, обреченных на заклание, овец поистине бедных. И возьму Себе два жезла, и назову один - благоволением, другой - узами, и ими буду пасти овец.",
+        "NEO": "Alors je me fis pasteur du troupeau de carnage, et aussi des plus misérables+ 11:7 \\+it Les plus misérables\\+it*, dont on aurait été tenté de ne pas s’occuper, mais qui furent les plus fidèles au divin pasteur. — \\+it Grâce, Lien\\+it* ; voir vers. 10 et 14.* du troupeau. Je pris deux houlettes ; je nommai l’une Grâce, et je nommai l’autre Lien, et je fis paître le troupeau.",
+        "NAB": "So I became the shepherd of the flock to be slaughtered for the sheep merchants. I took two staffs, one of which I called \"Favor,\" and the other, \"Bonds,\" and I fed the flock.",
+        "VAT_ES": "Entonces apacenté las ovejas destinadas al matadero por los traficantes de ovejas. Tomé dos bastones: a uno lo llamé «Favor» y al otro «Vínculo». Me puse a apacentar las ovejas,",
+        "CEI": "Io dunque mi misi a pascolare le pecore da macello da parte dei mercanti di pecore. Presi due bastoni: uno lo chiamai Benevolenza e l'altro Unione e condussi al pascolo le pecore."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וָ/אַכְחִ֛ד אֶת שְׁלֹ֥שֶׁת הָ/רֹעִ֖ים בְּ/יֶ֣רַח אֶחָ֑ד וַ/תִּקְצַ֤ר נַפְשִׁ/י֙ בָּ/הֶ֔ם וְ/גַם נַפְשָׁ֖/ם בָּחֲלָ֥ה בִֽ/י׃",
+        "LXX": "καὶ ἐξαρῶ τοὺς τρεῖς ποιμένας ἐν μηνὶ ἑνί, καὶ βαρυνθήσεται ἡ ψυχή μου ἐπ’ αὐτούς, καὶ γὰρ αἱ ψυχαὶ αὐτῶν ἐπωρύοντο ἐπ’ ἐμέ.",
+        "SYN": "И истреблю трех из пастырей в один месяц; и отвратится душа Моя от них, как и их душа отвращается от Меня.",
+        "NEO": "Je retranchai les trois pasteurs+ 11:8 \\+it Les trois pasteurs\\+it*, les autorités existantes : chefs politiques, prêtres, prophètes. À moins qu’il ne s’agisse d’individualités précises, v. g. de trois rois. — \\+it En un seul mois\\+it* : expression symbolique ; un mois suffit au pasteur pour éprouver la docilité de son troupeau.* en un seul mois.",
+        "NAB": "In a single month I did away with the three shepherds. I wearied of them, and they behaved badly toward me.",
+        "VAT_ES": "e hice desaparecer a los tres pastores en un mes. Pero yo perdí la paciencia con ellas, y ellas también se hastiaron de mí.",
+        "CEI": "Nel volgere d'un sol mese eliminai tre pastori. Ma io mi irritai contro di esse, perché anch'esse si erano tediate di me."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וָ/אֹמַ֕ר לֹ֥א אֶרְעֶ֖ה אֶתְ/כֶ֑ם הַ/מֵּתָ֣ה תָמ֗וּת וְ/הַ/נִּכְחֶ֨דֶת֙ תִּכָּחֵ֔ד וְ/הַ֨/נִּשְׁאָר֔וֹת תֹּאכַ֕לְנָה אִשָּׁ֖ה אֶת בְּשַׂ֥ר רְעוּתָֽ/הּ׃",
+        "LXX": "καὶ εἶπα Οὐ ποιμανῶ ὑμᾶς· τὸ ἀποθνῆσκον ἀποθνησκέτω, καὶ τὸ ἐκλιπὸν ἐκλιπέτω, καὶ τὰ λοιπὰ κατεσθιέτωσαν ἕκαστος τὰς σάρκας τοῦ πλησίον αὐτοῦ.",
+        "SYN": "Тогда скажу: не буду пасти вас: умирающая - пусть умирает, и гибнущая - пусть гибнет, а остающиеся пусть едят плоть одна другой.",
+        "NEO": "Et je dis : « Je ne vous paîtrai plus ; que celle qui meurt, meure ; que celle qui disparaît, disparaisse, et que celles qui restent se dévorent les unes les autres ! »",
+        "NAB": "\"I will not feed you,\" I said. \"What is to die, let it die; what is to perish, let it perish, and let those that are left devour one another's flesh.\"",
+        "VAT_ES": "Yo dije: «&iexcl;No las apacentaré más! &iexcl;La que quiera morir, que muera! &iexcl;La que quiera desaparecer, que desaparezca! &iexcl;Y las que queden, que se devoren entre sí!».",
+        "CEI": "Perciò io dissi: \"Non sarò più il vostro pastore. Chi vuol morire, muoia; chi vuol perire, perisca; quelle che rimangono si divorino pure fra di loro!\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וָ/אֶקַּ֤ח אֶת מַקְלִ/י֙ אֶת נֹ֔עַם וָ/אֶגְדַּ֖ע אֹת֑/וֹ לְ/הָפֵיר֙ אֶת בְּרִיתִ֔/י אֲשֶׁ֥ר כָּרַ֖תִּי אֶת כָּל הָ/עַמִּֽים׃",
+        "LXX": "καὶ λήμψονται τὴν ῥάβδον μου τὴν καλήν, καὶ ἀπορρίψω τοῦ διασκεδάσαι τὴν διαθήκην μου ἣν διεθέμην πρὸς πάντας τοὺς λαούς·",
+        "SYN": "И возьму жезл Мой - благоволения и переломлю его, чтобы уничтожить завет, который заключил Я со всеми народами.",
+        "NEO": "Je pris ma houlette Grâce et je la brisai, pour rompre mon alliance que j’avais faite avec tous les peuples.",
+        "NAB": "Then I took my staff \"Favor\" and snapped it asunder, breaking off the covenant which I had made with all peoples;",
+        "VAT_ES": "Después tomé mi bastón «Favor», y lo quebré para romper mi pacto, el que yo había establecido con todos los pueblos.",
+        "CEI": "Presi il bastone chiamato Benevolenza e lo spezzai: ruppi così l'alleanza da me stabilita con tutti i popoli."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/תֻּפַ֖ר בַּ/יּ֣וֹם הַ/ה֑וּא וַ/יֵּדְע֨וּ כֵ֜ן עֲנִיֵּ֤י הַ/צֹּאן֙ הַ/שֹּׁמְרִ֣ים אֹתִ֔/י כִּ֥י דְבַר יְהוָ֖ה הֽוּא׃",
+        "LXX": "καὶ διασκεδασθήσεται ἐν τῇ ἡμέρᾳ ἐκείνῃ, καὶ γνώσονται οἱ Χαναναῖοι τὰ πρόβατα τὰ φυλασσόμενά μοι· διότι λόγος Κυρίου ἐστίν.",
+        "SYN": "И он уничтожен будет в тот день, и тогда узнают бедные из овец, ожидающие Меня, что это слово Господа.",
+        "NEO": "Elle fut brisée en ce jour-là, et ainsi les plus misérables du troupeau, qui faisaient cas de moi+ 11:11 \\+it Qui faisaient cas de moi\\+it* ; litt., \\+it qui m’observaient\\+it*.*, connurent que telle était la parole de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "that day it was broken off. The sheep merchants who were watching me understood that this was the word of the LORD.",
+        "VAT_ES": "El pacto quedó roto ese día, y los traficantes de ovejas que me observaban reconocieron que esa era una palabra del Señor.",
+        "CEI": "Lo ruppi in quel medesimo giorno; i mercanti di pecore che mi osservavano, riconobbero che quello era l'ordine del Signore."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וָ/אֹמַ֣ר אֲלֵי/הֶ֗ם אִם ט֧וֹב בְּ/עֵינֵי/כֶ֛ם הָב֥וּ שְׂכָרִ֖/י וְ/אִם לֹ֣א חֲדָ֑לוּ וַ/יִּשְׁקְל֥וּ אֶת שְׂכָרִ֖/י שְׁלֹשִׁ֥ים כָּֽסֶף׃",
+        "LXX": "καὶ ἐρῶ πρὸς αὐτούς Εἰ καλὸν ἐνώπιον ὑμῶν ἐστιν, δότε τὸν μισθόν μου ἢ ἀπείπασθε· καὶ ἔστησαν τὸν μισθόν μου τριάκοντα ἀργυροῦς.",
+        "SYN": "И скажу им: если угодно вам, то дайте Мне плату Мою; если же нет, - не давайте; и они отвесят в уплату Мне тридцать сребренников.",
+        "NEO": "Et je leur dis : « Si vous le trouvez bon, donnez-moi mon salaire ; sinon, n’en faites rien. » Et ils pesèrent mon salaire, trente sicles d’argent+ 11:12 \\+it Trente sicles d’argent\\+it*, environ quatre-vingt-dix francs de notre monnaie ; c’était le prix d’un esclave (Exod. xxi, 32).*.",
+        "NAB": "I said to them, \"If it seems good to you, give me my wages; but if not, let it go.\" And they counted out my wages, thirty pieces of silver.",
+        "VAT_ES": "Yo les dije: «Si les parece bien, páguenme mi salario; y si no, déjenlo». Ellos pesaron mi salario: treinta siclos de plata.",
+        "CEI": "Poi dissi loro: \"Se vi pare giusto, datemi la mia paga; se no, lasciate stare\". Essi allora pesarono trenta sicli d'argento come mia paga."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֜ה אֵלַ֗/י הַשְׁלִיכֵ֨/הוּ֙ אֶל הַ/יּוֹצֵ֔ר אֶ֣דֶר הַ/יְקָ֔ר אֲשֶׁ֥ר יָקַ֖רְתִּי מֵֽ/עֲלֵי/הֶ֑ם וָֽ/אֶקְחָ/ה֙ שְׁלֹשִׁ֣ים הַ/כֶּ֔סֶף וָ/אַשְׁלִ֥יךְ אֹת֛/וֹ בֵּ֥ית יְהוָ֖ה אֶל הַ/יּוֹצֵֽר׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς μέ Κάθες αὐτοὺς εἰς τὸ χωνευτήριον, καὶ σκέψομαι εἰ δόκιμόν ἐστιν, ὃν τρόπον ἐδοκιμάσθη ὑπὲρ αὐτῶν. καὶ ἔλαβον τοὺς τριάκοντα ἀργυροῦς καὶ ἐνέβαλον αὐτοὺς εἰς τὸν οἶκον Κυρίου εἰς τὸ χωνευτήριον.",
+        "SYN": "И сказал мне Господь: брось их в церковное хранилище, - высокая цена, в какую они оценили Меня! И взял Я тридцать сребренников и бросил их в дом Господень для горшечника.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** me dit : « Jette-le au potier+ 11:13 \\+it Jette-le au potier\\+it*, avec mépris. — \\+it Ce prix magnifique\\+it* : ironie.*, ce prix magnifique auquel j’ai été estimé par eux ! » Et je pris les trente sicles d’argent et je les jetai dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, au potier.",
+        "NAB": "But the LORD said to me, \"Throw it in the treasury, the handsome price at which they valued me.\" So I took the thirty pieces of silver and threw them into the treasury in the house of the LORD.",
+        "VAT_ES": "Pero el Señor me dijo: «&iexcl;Echa al Tesoro ese lindo precio en que he sido valuado por ellos!». Yo tomé los treinta siclos de plata y los eché en el Tesoro de la Casa del Señor.",
+        "CEI": "Ma il Signore mi disse: \"Getta nel tesoro questa bella somma, con cui sono stato da loro valutato!\". Io presi i trenta sicli d'argento e li gettai nel tesoro della casa del Signore."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וָֽ/אֶגְדַּע֙ אֶת מַקְלִ֣/י הַ/שֵּׁנִ֔י אֵ֖ת הַ/חֹֽבְלִ֑ים לְ/הָפֵר֙ אֶת הָֽ/אַחֲוָ֔ה בֵּ֥ין יְהוּדָ֖ה וּ/בֵ֥ין יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἀπέρριψα τὴν ῥάβδον τὴν δευτέραν, τὸ σχοίνισμα, τοῦ διασκεδάσαι τὴν κατάσχεσιν ἀνὰ μέσον Ἰούδα καὶ ἀνὰ μέσον Ἰσραήλ.",
+        "SYN": "И переломил Я другой жезл Мой - \"узы\", чтобы расторгнуть братство между Иудою и Израилем.",
+        "NEO": "Je brisai ensuite ma seconde houlette Lien, pour rompre la fraternité entre Juda et Israël.+ 11:14 Suite du départ du bon pasteur : schisme et manque d’unité.*",
+        "NAB": "Then I snapped asunder my other staff, \"Bonds,\" breaking off the brotherhood between Judah and Israel.",
+        "VAT_ES": "Después quebré mi segundo bastón «Vínculo», para romper la fraternidad entre Judá e Israel.",
+        "CEI": "Poi feci a pezzi il secondo bastone chiamato Unione per rompere così la fratellanza fra Giuda e Israele."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר יְהוָ֖ה אֵלָ֑/י ע֣וֹד קַח לְ/ךָ֔ כְּלִ֖י רֹעֶ֥ה אֱוִלִֽי׃",
+        "LXX": "Καὶ εἶπεν Κύριος πρὸς μέ Ἔτι λάβε σεαυτῷ σκεύη ποιμενικὰ ποιμένος ἀπείρου.",
+        "SYN": "И Господь сказал мне: еще возьми себе снаряд одного из глупых пастухов.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** me dit : « Prends maintenant l’attirail d’un nouveau pasteur.+ 11:15 Après avoir repoussé le bon pasteur, Israël vivra désormais sous la conduite de mauvais pasteurs.*",
+        "NAB": "The LORD said to me: This time take the gear of a foolish shepherd.",
+        "VAT_ES": "El Señor me dijo: Toma ahora la mochila de un pastor insensato.",
+        "CEI": "Quindi il Signore mi disse: \"Prenditi gli attrezzi di un pastore insensato,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "כִּ֣י הִנֵּֽה אָנֹכִי֩ מֵקִ֨ים רֹעֶ֜ה בָּ/אָ֗רֶץ הַ/נִּכְחָד֤וֹת לֹֽא יִפְקֹד֙ הַ/נַּ֣עַר לֹֽא יְבַקֵּ֔שׁ וְ/הַ/נִּשְׁבֶּ֖רֶת לֹ֣א יְרַפֵּ֑א הַ/נִּצָּבָה֙ לֹ֣א יְכַלְכֵּ֔ל וּ/בְשַׂ֤ר הַ/בְּרִיאָה֙ יֹאכַ֔ל וּ/פַרְסֵי/הֶ֖ן יְפָרֵֽק׃",
+        "LXX": "διότι ἰδοὺ ἐξεγείρω ποιμένα ἐπὶ τὴν γῆν· τὸ ἐκλιμπάνον οὐ μὴ ἐπισκέψηται, καὶ τὸ ἐσκορπισμένον οὐ μὴ ζητήσῃ, καὶ τὸ συντετριμμένον οὐ μὴ ἰάσηται, καὶ τὸ ὁλόκληρον οὐ μὴ κατευθύνῃ, καὶ τὰ κρέα τῶν ἐκλεκτῶν καταφάγεται, καὶ τοὺς ἀστραγάλους αὐτῶν ἐκστρέψει.",
+        "SYN": "Ибо вот, Я поставлю на этой земле пастуха, который о погибающих не позаботится, потерявшихся не будет искать и больных не будет лечить, здоровых не будет кормить, а мясо тучных будет есть и копыта их оторвет.",
+        "NEO": "Car voici que moi-même je vais susciter sur le pays un berger qui n’aura pas souci des brebis qui se perdent, qui ne cherchera pas ce qui est dispersé, qui ne guérira pas celle qui est blessée ; il ne nourrira pas celle qui est saine, il mangera la chair de celle qui est grasse et fendra leur sabot.",
+        "NAB": "For I will raise up a shepherd in the land who will take no note of those that perish, nor seek the strays, nor heal the injured, nor feed what survives - he will eat the flesh of the fat ones and tear off their hoofs!",
+        "VAT_ES": "Porque yo voy a suscitar en el país un pastor que no se preocupará de la oveja perdida, ni buscará a la extraviada, ni curará a la herida, ni alimentará a la sana, sino que comerá la carne de las más gordas y les arrancará hasta las pezuñas.",
+        "CEI": "poiché ecco, io susciterò nel paese un pastore, che non avrà cura di quelle che si perdono, non cercherà le disperse, non curerà le malate, non nutrirà le affamate; mangerà invece le carni delle più grasse e strapperà loro perfino le unghie."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "ה֣וֹי רֹעִ֤י הָֽ/אֱלִיל֙ עֹזְבִ֣י הַ/צֹּ֔אן חֶ֥רֶב עַל זְרוֹע֖/וֹ וְ/עַל עֵ֣ין יְמִינ֑/וֹ זְרֹע/וֹ֙ יָב֣וֹשׁ תִּיבָ֔שׁ וְ/עֵ֥ין יְמִינ֖/וֹ כָּהֹ֥ה תִכְהֶֽה׃",
+        "LXX": "ὢ οἱ ποιμαίνοντες τὰ μάταια καὶ καταλελοιπότες τὰ πρόβατα· μάχαιρα ἐπὶ τοὺς βραχίονας αὐτοῦ καὶ ἐπὶ τὸν ὀφθαλμὸν ⸂⸆⸃ τὸν δεξιὸν αὐτοῦ· ὁ βραχίων αὐτοῦ ξηραινόμενος ξηρανθήσεται, καὶ ὀφθαλμὸς ὁ δεξιὸς αὐτοῦ ἐκτυφλούμενος ἐκτυφλωθήσεται.",
+        "SYN": "Горе негодному пастуху, оставляющему стадо! меч на руку его и на правый глаз его! рука его совершенно иссохнет, и правый глаз его совершенно потускнет.",
+        "NEO": "Malheur au pasteur de néant qui délaisse le troupeau ! Que le glaive soit sur son bras et sur son œil droit ! Que son bras se dessèche,et que son œil droit s’éteigne ! »+ 11:17 Condamnation du mauvais pasteur.*",
+        "NAB": "Woe to my foolish shepherd who forsakes the flock! May the sword fall upon his arm and upon his right eye; Let his arm wither away entirely, and his right eye be blind forever!",
+        "VAT_ES": "&iexcl;Pobre del pastor inútil que abandona el rebaño! &iexcl;La espada caiga sobre su brazo y sobre su ojo derecho! &iexcl;Que su brazo se seque por completo y que su ojo derecho se apague totalmente!",
+        "CEI": "Guai al pastore stolto che abbandona il gregge! Una spada sta sopra il suo braccio e sul suo occhio destro. Tutto il suo braccio si inaridisca e tutto il suo occhio destro resti accecato\"."
+      }
+    }
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_029",
+  "book_key": "ISA",
+  "sequence": 29,
+  "chapter_in": {
+    "MT": 29,
+    "VUL": 29,
+    "LXX": 29
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "ה֚וֹי אֲרִיאֵ֣ל אֲרִיאֵ֔ל קִרְיַ֖ת חָנָ֣ה דָוִ֑ד סְפ֥וּ שָׁנָ֛ה עַל שָׁנָ֖ה חַגִּ֥ים יִנְקֹֽפוּ׃",
+        "LXX": "Οὐαὶ Ἀριὴλ πόλις, ἣν ἐπολέμησεν Δαυείδ. συναγάγετε γενήματα ἐνιαυτὸν ἐπὶ ἐνιαυτόν· φάγεσθε, φάγεσθε γὰρ σὺν Μωάβ.",
+        "VUL": "[Væ Ariel, Ariel/ civitas, quam expugnavit David !/ additus est annus ad annum :/ solemnitates evolutæ sunt./",
+        "SYN": "Горе Ариилу, Ариилу, городу, в котором жил Давид! приложите год к году; пусть заколают жертвы.",
+        "NEO": "Malheur à Ariel, à Ariel, à la cité où David a dressé sa tente ! Ajoutez année à année, que les solennités parcourent leur cycle,",
+        "NAB": "Woe to Ariel, Ariel, the city where David encamped! Add year to year, let the feasts come round.",
+        "VAT_ES": "&iexcl;Ay, Ariel, Ariel, ciudad contra la que acampó David! Añadan un año a otro año, que las fiestas completen su ciclo:",
+        "CEI": "Guai ad Arièl, ad Arièl, città dove pose il campo Davide! Aggiungete anno ad anno, si avvicendino i cicli festivi."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/הֲצִיק֖וֹתִי לַֽ/אֲרִיאֵ֑ל וְ/הָיְתָ֤ה תַֽאֲנִיָּה֙ וַֽ/אֲנִיָּ֔ה וְ/הָ֥יְתָה לִּ֖/י כַּ/אֲרִיאֵֽל׃",
+        "LXX": "ἐκθλίψω γὰρ Ἀριήλ, καὶ ἔσται αὐτῆς ἡ ἰσχὺς καὶ ὁ πλοῦτος ἐμοί.",
+        "VUL": "Et circumvallabo Ariel,/ et erit tristis et mrens,/ et erit mihi quasi Ariel./",
+        "SYN": "Но Я стесню Ариил, и будет плач и сетование; и он останется у Меня, как Ариил.",
+        "NEO": "et je serrerai de près Ariel, et il n’y aura que plaintes et gémissements !",
+        "NAB": "But I will bring distress upon Ariel, with mourning and grief. You shall be to me like Ariel,",
+        "VAT_ES": "entonces yo oprimiré a Ariel, habrá gemidos y quejidos, y tú serás para mí como un «ariel».",
+        "CEI": "Io metterò alle strette Arièl, ci saranno gemiti e lamenti. Tu sarai per me come un vero Arièl,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/חָנִ֥יתִי כַ/דּ֖וּר עָלָ֑יִ/ךְ וְ/צַרְתִּ֤י עָלַ֨יִ/ךְ֙ מֻצָּ֔ב וַ/הֲקִֽימֹתִ֥י עָלַ֖יִ/ךְ מְצֻרֹֽת׃",
+        "LXX": "καὶ κυκλώσω ὡς Δαυεὶδ ἐπὶ σέ, καὶ βαλῶ περὶ σὲ χάρακα, καὶ θήσω περὶ σὲ πύργους,",
+        "VUL": "Et circumdabo quasi sphæram in circuitu tuo,/ et jaciam contra te aggerem,/ et munimenta ponam in obsidionem tuam./",
+        "SYN": "Я расположусь станом вокруг тебя и стесню тебя стражею наблюдательною, и воздвигну против тебя укрепления.",
+        "NEO": "je camperai tout autour de toi, je t’environnerai de postes armés, et j’établirai contre toi des retranchements.",
+        "NAB": "I will encamp like David against you; I will encircle you with outposts and set up siege works against you.",
+        "VAT_ES": "Yo acamparé contra ti, como David, te cercaré con empalizadas y levantaré contra ti torres de asalto,",
+        "CEI": "io mi accamperò come Davide contro di te e ti circonderò di trincee, innalzerò contro di te un vallo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/שָׁפַלְתְּ֙ מֵ/אֶ֣רֶץ תְּדַבֵּ֔רִי וּ/מֵֽ/עָפָ֖ר תִּשַּׁ֣ח אִמְרָתֵ֑/ךְ וְֽ֠/הָיָה כְּ/א֤וֹב מֵ/אֶ֨רֶץ֙ קוֹלֵ֔/ךְ וּ/מֵ/עָפָ֖ר אִמְרָתֵ֥/ךְ תְּצַפְצֵֽף׃",
+        "LXX": "καὶ ταπεινωθήσονται εἰς τὴν γῆν οἱ λόγοι σου, καὶ εἰς τὴν γῆν οἱ λόγοι σου δύσονται· καὶ ἔσονται ὡς οἱ φωνοῦντες ἐκ τῆς γῆς ἡ φωνή σου, καὶ πρὸς τὸ ἔδαφος ἡ φωνή σου ἀσθενήσει.",
+        "VUL": "Humiliaberis, de terra loqueris,/ et de humo audietur eloquium tuum ;/ et erit quasi pythonis de terra vox tua,/ et de humo eloquium tuum mussitabit./",
+        "SYN": "И будешь унижен, с земли будешь говорить, и глуха будет речь твоя из-под праха, и голос твой будет, как голос чревовещателя, и из-под праха шептать будет речь твоя.",
+        "NEO": "Tu seras abaissée ; c’est de la terre que s’élèvera ta voix, et de la poussière que se feront entendre tes sourds accents ; ta voix sortira de terre, comme celle d’un spectre, et ta parole montera de la poussière comme un murmure. —",
+        "NAB": "Prostrate you shall speak from the earth, and from the base dust your words shall come. Your voice shall be like a ghost's from the earth, and your words like chirping from the dust.",
+        "VAT_ES": "Abatida, hablarás desde la tierra y tu palabra saldrá débilmente del polvo; tu voz vendrá de la tierra, como la de un espectro, y tu palabra será un susurro desde el polvo.",
+        "CEI": "Allora prostrata parlerai da terra e dalla polvere saliranno fioche le tue parole; sembrerà di un fantasma la tua voce dalla terra, e dalla polvere la tua parola risuonerà come bisbiglio."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֛ה כְּ/אָבָ֥ק דַּ֖ק הֲמ֣וֹן זָרָ֑יִ/ךְ וּ/כְ/מֹ֤ץ עֹבֵר֙ הֲמ֣וֹן עָֽרִיצִ֔ים וְ/הָיָ֖ה לְ/פֶ֥תַע פִּתְאֹֽם׃",
+        "LXX": "καὶ ἔσται ὡς κονιορτὸς ἀπὸ τοίχου ὁ πλοῦτος τῶν ἀσεβῶν, καὶ ὡς χνοῦς φερόμενος τὸ πλῆθος τῶν καταδυναστευόντων σε, καὶ ἔσται ὡς στιγμὴ παραχρῆμα",
+        "VUL": "Et erit sicut pulvis tenuis multitudo ventilantium te,/ et sicut favilla pertransiens multitudo eorum qui contra te prævaluerunt ;/",
+        "SYN": "Множество врагов твоих будет, как мелкая пыль, и полчище лютых, как разлетающаяся плева; и это совершится внезапно, в одно мгновение.",
+        "NEO": "Et la multitude de tes ennemis sera comme une fine poussière, et la multitude des guerriers comme la paille qui s’envole.",
+        "NAB": "The horde of your arrogant shall be like fine dust, the horde of the tyrants like flying chaff. Then suddenly, in an instant,",
+        "VAT_ES": "Pero el tropel de tus adversarios quedará reducido a polvo, y el tropel de los tiranos será como paja que se lleva el viento. De repente, en un instante,",
+        "CEI": "Sarà come polvere fine la massa dei tuoi oppressori e come pula dispersa la massa dei tuoi tiranni. Ma d'improvviso, subito,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "מֵ/עִ֨ם יְהוָ֤ה צְבָאוֹת֙ תִּפָּקֵ֔ד בְּ/רַ֥עַם וּ/בְ/רַ֖עַשׁ וְ/ק֣וֹל גָּד֑וֹל סוּפָה֙ וּ/סְעָרָ֔ה וְ/לַ֖הַב אֵ֥שׁ אוֹכֵלָֽה׃",
+        "LXX": "παρὰ Κυρίου σαβαώθ· ἐπισκοπὴ γὰρ ἔσται μετὰ βροντῆς καὶ σεισμοῦ καὶ φωνὴ μεγάλη, καταιγὶς φερομένη καὶ φλὸξ πυρὸς κατεσθίουσα.",
+        "VUL": "eritque repente confestim./ A Domino exercituum visitabitur/ in tonitruo, et commotione terræ, et voce magna/ turbinis et tempestatis, et flammæ ignis devorantis./",
+        "SYN": "Господь Саваоф посетит тебя громом и землетрясением, и сильным гласом, бурею и вихрем, и пламенем всепожирающего огня.",
+        "NEO": "Et il arrivera que soudain, en un instant, tu seras visitée, par \\+w Yahweh|strong=\"H3068\"\\+w** des armées avec fracas, tonnerre et grand bruit, tourbillon, tempête et flamme de feu dévorant.",
+        "NAB": "you shall be visited by the LORD of hosts, With thunder, earthquake, and great noise, whirlwind, storm, and the flame of consuming fire.",
+        "VAT_ES": "serás visitada por el Señor de los ejércitos, con trueno, fragor y gran estruendo, huracán, tempestad y llama de fuego devorador.",
+        "CEI": "dal Signore degli eserciti sarai visitata con tuoni, rimbombi e rumore assordante, con uragano e tempesta e fiamma di fuoco divoratore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה כַּֽ/חֲלוֹם֙ חֲז֣וֹן לַ֔יְלָה הֲמוֹן֙ כָּל הַ/גּוֹיִ֔ם הַ/צֹּבְאִ֖ים עַל אֲרִיאֵ֑ל וְ/כָל צֹבֶ֨י/הָ֙ וּ/מְצֹ֣דָתָ֔/הּ וְ/הַ/מְּצִיקִ֖ים לָֽ/הּ׃",
+        "LXX": "καὶ ἔσται ὡς ἐνυπνιαζόμενος καθ’ ὕπνους νυκτὸς ὁ πλοῦτος ἁπάντων τῶν ἐθνῶν ὅσοι ἐπεστράτευσαν ἐπὶ Ἰερουσαλήμ, καὶ πάντες οἱ στρατευόμενοι ἐπὶ Ἰερουσαλήμ, καὶ πάντες οἱ συνηγμένοι ἐπ’ αὐτὴν καὶ οἱ θλίβοντες αὐτήν.",
+        "VUL": "Et erit sicut somnium visionis nocturnæ/ multitudo omnium gentium quæ dimicaverunt contra Ariel,/ et omnes qui militaverunt, et obsederunt,/ et prævaluerunt adversus eam./",
+        "SYN": "И как сон, как ночное сновидение, будет множество всех народов, воюющих против Ариила, и всех выступивших против него и укреплений его и стеснивших его.",
+        "NEO": "Et il en sera comme d’un songe, vision de la nuit, de la multitude de toutes les nations qui combattront contre Ariel, et de tous ceux qui combattront contre elle et sa forteresse et la serreront de près.",
+        "NAB": "Then like a dream, a vision in the night, Shall be the horde of all the nations who war against Ariel with all the earthworks of her besiegers.",
+        "VAT_ES": "Pasará como un sueño, una visión nocturna, el tropel de todas las naciones que atacaban a Ariel, todos los que combatían contra ella y su fortaleza y la tenían cercada.",
+        "CEI": "E sarà come un sogno, come una visione notturna, la massa di tutte le nazioni che marciano su Arièl, di quanti la attaccano e delle macchine poste contro di essa."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֡ה כַּ/אֲשֶׁר֩ יַחֲלֹ֨ם הָ/רָעֵ֜ב וְ/הִנֵּ֣ה אוֹכֵ֗ל וְ/הֵקִיץ֮ וְ/רֵיקָ֣ה נַפְשׁ/וֹ֒ וְ/כַ/אֲשֶׁ֨ר יַחֲלֹ֤ם הַ/צָּמֵא֙ וְ/הִנֵּ֣ה שֹׁתֶ֔ה וְ/הֵקִיץ֙ וְ/הִנֵּ֣ה עָיֵ֔ף וְ/נַפְשׁ֖/וֹ שׁוֹקֵקָ֑ה כֵּ֣ן יִֽהְיֶ֗ה הֲמוֹן֙ כָּל הַ/גּוֹיִ֔ם הַ/צֹּבְאִ֖ים עַל הַ֥ר צִיּֽוֹן׃",
+        "LXX": "καὶ ὡς οἱ ἐν τῷ ὕπνῳ πίνοντες καὶ ἔσθοντες, καὶ ἐξαναστάντων μάταιον τὸ ἐνύπνιον· καὶ ὃν τρόπον ἐνυπνιάζεται ὁ διψῶν ὡς πίνων, καὶ ἐξαναστὰς ἔτι διψᾷ, ἡ δὲ ψυχὴ αὐτοῦ εἰς κενὸν ἤλπισεν, οὕτως ἔσται ὁ πλοῦτος πάντων τῶν ἐθνῶν ὅσοι ἐπεστράτευσαν ἐπὶ τὸ ὄρος Σειών.",
+        "VUL": "Et sicut somniat esuriens, et comedit,/ cum autem fuerit expergefactus, vacua est anima ejus ;/ et sicut somniat sitiens et bibit,/ et postquam fuerit expergefactus, lassus adhuc sitit,/ et anima ejus vacua est :/ sic erit multitudo omnium gentium/ quæ dimicaverunt contra montem Sion./",
+        "SYN": "И как голодному снится, будто он ест, но пробуждается, и душа его тоща; и как жаждущему снится, будто он пьет, но пробуждается, и вот он томится, и душа его жаждет: то же будет и множеству всех народов, воюющих против горы Сиона.",
+        "NEO": "Comme celui qui a faim rêve qu’il mange, et, à son réveil, son âme est vide ; et comme un homme qui a soif rêve qu’il boit, et, à son réveil, il est épuisé et toujours altéré ; ainsi il en sera de la multitude de toutes les nations, qui marchent contre la montagne de Sion.",
+        "NAB": "As when a hungry man dreams he is eating and awakens with an empty stomach, Or when a thirsty man dreams he is drinking and awakens faint and dry, So shall the horde of all the nations be, who make war against Zion.",
+        "VAT_ES": "Como el hambriento sueña que come, y se despierta con el estómago vacío; como el sediento sueña que bebe, y se despierta exhausto, con la garganta seca, así le sucederá al tropel de todas las naciones que atacan a la montaña de Sión.",
+        "CEI": "Avverrà come quando un affamato sogna di mangiare, ma si sveglia con lo stomaco vuoto; come quando un assetato sogna di bere, ma si sveglia stanco e con la gola riarsa: così succederà alla folla di tutte le nazioni che marciano contro il monte Sion."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הִתְמַהְמְה֣וּ וּ/תְמָ֔הוּ הִשְׁתַּֽעַשְׁע֖וּ וָ/שֹׁ֑עוּ שָֽׁכְר֣וּ וְ/לֹא יַ֔יִן נָע֖וּ וְ/לֹ֥א שֵׁכָֽר׃",
+        "LXX": "Ἐκλύθητε καὶ ἔκστητε, κραιπαλήσατε οὐκ ἀπὸ σίκερα οὐδὲ ἀπὸ οἴνου·",
+        "VUL": "Obstupescite et admiramini ;/ fluctuate et vacillate ;/ inebriamini, et non a vino ;/ movemini, et non ab ebrietate./",
+        "SYN": "Изумляйтесь и дивитесь: они ослепили других, и сами ослепли; они пьяны, но не от вина, - шатаются, но не от сикеры;",
+        "NEO": "Etonnez-vous et soyez dans la stupeur ! Aveuglez-vous et soyez aveuglés ! Ils sont ivres, mais pas de vin ; ils chancellent, mais pas de liqueurs fortes.",
+        "NAB": "Be irresolute, stupefied; blind yourselves and stay blind! Be drunk, but not from wine, stagger, but not from strong drink!",
+        "VAT_ES": "&iexcl;Pásmense y quédense pasmados, enceguézcanse y quédense ciegos! &iexcl;Embriáguense, pero no con vino, vacilen, pero no por la bebida!",
+        "CEI": "Stupite pure così da restare sbalorditi, chiudete gli occhi in modo da rimanere ciechi; ubriacatevi ma non di vino, barcollate ma non per effetto di bevande inebrianti."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּֽי נָסַ֨ךְ עֲלֵי/כֶ֤ם יְהוָה֙ ר֣וּחַ תַּרְדֵּמָ֔ה וַ/יְעַצֵּ֖ם אֶת עֵֽינֵי/כֶ֑ם אֶת הַ/נְּבִיאִ֛ים וְ/אֶת רָאשֵׁי/כֶ֥ם הַ/חֹזִ֖ים כִּסָּֽה׃",
+        "LXX": "ὅτι πεπότικεν ὑμᾶς Κύριος πνεύματι κατανύξεως, καὶ καμμύσει τοὺς ὀφθαλμοὺς αὐτῶν καὶ τῶν προφητῶν αὐτῶν καὶ τῶν ἀρχόντων αὐτῶν, οἱ ὁρῶντες τὰ κρυπτά.",
+        "VUL": "Quoniam miscuit vobis Dominus/ spiritum soporis ; claudet oculos vestros :/ prophetas et principes vestros, qui vident visiones, operiet./",
+        "SYN": "ибо навел на вас Господь дух усыпления и сомкнул глаза ваши, пророки, и закрыл ваши головы, прозорливцы.",
+        "NEO": "Car \\+w Yahweh|strong=\"H3068\"\\+w** a répandu sur vous un esprit de léthargie ; il a fermé vos yeux — les prophètes ; il a jeté un voile sur vos têtes — les voyants.",
+        "NAB": "For the LORD has poured out on you a spirit of deep sleep. He has shut your eyes (the prophets) and covered your heads (the seers).",
+        "VAT_ES": "Porque el Señor ha derramado sobre ustedes un espíritu de letargo, les ha cerrado los ojos –los profetas– les ha cubierto sus cabezas –los videntes –",
+        "CEI": "Poiché il Signore ha versato su di voi uno spirito di torpore, ha chiuso i vostri occhi, ha velato i vostri capi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/תְּהִ֨י לָ/כֶ֜ם חָז֣וּת הַ/כֹּ֗ל כְּ/דִבְרֵי֮ הַ/סֵּ֣פֶר הֶֽ/חָתוּם֒ אֲשֶֽׁר יִתְּנ֣וּ אֹת֗/וֹ אֶל יוֹדֵ֥עַ ה/ספר סֵ֛פֶר לֵ/אמֹ֖ר קְרָ֣א נָא זֶ֑ה וְ/אָמַר֙ לֹ֣א אוּכַ֔ל כִּ֥י חָת֖וּם הֽוּא׃",
+        "LXX": "καὶ ἔσται ὑμῖν τὰ ῥήματα πάντα ταῦτα ὡς οἱ λόγοι τοῦ βιβλίου τοῦ ἐσφραγισμένου, ὃ ἂν δῶσιν αὐτὸ ἀνθρώπῳ ἐπισταμένῳ γράμματα λέγοντες Ἀνάγνωθι ταῦτα, καὶ ἐρεῖ Οὐ δύναμαι ⸂⸆⸃ ἀναγνῶναι, ἐσφράγισται γάρ.",
+        "VUL": "Et erit vobis visio omnium/ sicut verba libri signati,/ quem cum dederint scienti litteras,/ dicent : Lege istum :/ et respondebit : Non possum, signatus est enim./",
+        "SYN": "И всякое пророчество для вас то же, что слова в запечатанной книге, которую подают умеющему читать книгу и говорят: \"прочитай ее\"; и тот отвечает: \"не могу, потому что она запечатана\".",
+        "NEO": "Et toute vision est devenue pour vous comme les paroles d’un livre scellé. On le présente à un homme qui sait lire, en disant : « Lis cela ! » et il dit : « Je ne puis, car ce livre est scellé. »",
+        "NAB": "For you the revelation of all this has become like the words of a sealed scroll. When it is handed to one who can read, with the request, \"Read this,\" he replies, \"I cannot; it is sealed.\"",
+        "VAT_ES": "y toda visión es para ustedes como las palabras de un libro sellado. Se lo dan a uno que sabe leer, diciéndole: «Lee esto». Pero él responde: «No puedo, porque el libro está sellado».",
+        "CEI": "Per voi ogni visione sarà come le parole di un libro sigillato: si dà a uno che sappia leggere dicendogli: \"Leggilo\", ma quegli risponde: \"Non posso, perché è sigillato\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/נִתַּ֣ן הַ/סֵּ֗פֶר עַל֩ אֲשֶׁ֨ר לֹֽא יָדַ֥ע סֵ֛פֶר לֵ/אמֹ֖ר קְרָ֣א נָא זֶ֑ה וְ/אָמַ֕ר לֹ֥א יָדַ֖עְתִּי סֵֽפֶר׃",
+        "LXX": "καὶ δοθήσεται τὸ βιβλίον τοῦτο εἰς χεῖρας ἀνθρώπου μὴ ἐπισταμένου γράμματα, καὶ ἐρεῖ αὐτῷ Ἀνάγνωθι τοῦτο· καὶ ἐρεῖ Οὐκ ἐπίσταμαι γράμματα.",
+        "VUL": "Et dabitur liber nescienti litteras,/ diceturque ei : Lege ;/ et respondebit : Nescio litteras./",
+        "SYN": "И передают книгу тому, кто читать не умеет, и говорят: \"прочитай ее\"; и тот отвечает: \"я не умею читать\".",
+        "NEO": "On le présente à un homme qui ne sait pas lire, en disant : « Lis cela ! » et il dit : « Je ne sais pas lire. »",
+        "NAB": "When it is handed to one who cannot read, with the request, \"Read this,\" he replies, \"I cannot read.\"",
+        "VAT_ES": "Le dan el libro a uno que no sabe leer, diciéndole: «Lee esto». Y él responde: «No sé leer».",
+        "CEI": "Oppure si dà il libro a chi non sa leggere dicendogli: \"Leggilo\", ma quegli risponde: \"Non so leggere\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֲדֹנָ֗/י יַ֚עַן כִּ֤י נִגַּשׁ֙ הָ/עָ֣ם הַ/זֶּ֔ה בְּ/פִ֤י/ו וּ/בִ/שְׂפָתָי/ו֙ כִּבְּד֔וּ/נִי וְ/לִבּ֖/וֹ רִחַ֣ק מִמֶּ֑/נִּי וַ/תְּהִ֤י יִרְאָתָ/ם֙ אֹתִ֔/י מִצְוַ֥ת אֲנָשִׁ֖ים מְלֻמָּדָֽה׃",
+        "LXX": "καὶ εἶπεν Κύριος Ἐγγίζει μοι ὁ λαὸς οὗτος ἐν τῷ στόματι αὐτοῦ, καὶ ἐν τοῖς χείλεσιν αὐτῶν τιμῶσίν με, ἡ δὲ καρδία αὐτῶν πόρρω ἀπέχει ἀπ’ ἐμοῦ· μάτην δὲ σέβονταί με διδάσκοντες ἐντάλματα ἀνθρώπων καὶ διδασκαλίας.",
+        "VUL": "Et dixit Dominus : Eo quod appropinquat populus iste ore suo,/ et labiis suis glorificat me,/ cor autem ejus longe est a me,/ et timuerunt me mandato hominum et doctrinis,/",
+        "SYN": "И сказал Господь: так как этот народ приближается ко Мне устами своими, и языком своим чтит Меня, сердце же его далеко отстоит от Меня, и благоговение их предо Мною есть изучение заповедей человеческих;",
+        "NEO": "Le Seigneur dit : Puisque ce peuple s’approche en paroles et m’honore des lèvres, tandis qu’il tient son cœur éloigné de moi, et que le culte qu’il me rend est un précepte appris des hommes,",
+        "NAB": "The Lord said: Since this people draws near with words only and honors me with their lips alone, though their hearts are far from me, And their reverence for me has become routine observance of the precepts of men,",
+        "VAT_ES": "El Señor ha dicho: Este pueblo se acerca a mi con la boca y me honra con los labios, pero su corazón está lejos de mi, y el temor que me tiene no es más que un precepto humano, aprendido por rutina.",
+        "CEI": "Dice il Signore: \"Poiché questo popolo si avvicina a me solo a parole e mi onora con le labbra, mentre il suo cuore è lontano da me e il culto che mi rendono è un imparaticcio di usi umani,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לָ/כֵ֗ן הִנְ/נִ֥י יוֹסִ֛ף לְ/הַפְלִ֥יא אֶת הָֽ/עָם הַ/זֶּ֖ה הַפְלֵ֣א וָ/פֶ֑לֶא וְ/אָֽבְדָה֙ חָכְמַ֣ת חֲכָמָ֔י/ו וּ/בִינַ֥ת נְבֹנָ֖י/ו תִּסְתַּתָּֽר׃",
+        "LXX": "διὰ τοῦτο ἰδοὺ προσθήσω τοῦ μεταθεῖναι τὸν λαὸν τοῦτον· καὶ μεταθήσω αὐτούς, καὶ ἀπολῶ τὴν σοφίαν τῶν σοφῶν, καὶ τὴν σύνεσιν τῶν συνετῶν κρύψω.",
+        "VUL": "ideo ecce ego addam ut admirationem faciam/ populo huic miraculo grandi et stupendo ;/ peribit enim sapientia a sapientibus ejus,/ et intellectus prudentium ejus abscondetur./",
+        "SYN": "то вот, Я еще необычайно поступлю с этим народом, чудно и дивно, так что мудрость мудрецов его погибнет, и разума у разумных его не станет.",
+        "NEO": "à cause de cela, je continuerai à user de prodiges, avec ce peuple, de prodiges étranges. Et la sagesse de ses sages périra, et l’intelligence de ses docteurs s’obscurcira.",
+        "NAB": "Therefore I will again deal with this people in surprising and wondrous fashion: The wisdom of its wise men shall perish and the understanding of its prudent men be hid.",
+        "VAT_ES": "Por eso, yo seguiré haciendo prodigios, prodigios estupendos, en medio de este pueblo: desaparecerá la sabiduría de sus sabios y se eclipsará la inteligencia de sus inteligentes.",
+        "CEI": "perciò, eccomi, continuerò a operare meraviglie e prodigi con questo popolo; perirà la sapienza dei suoi sapienti e si eclisserà l'intelligenza dei suoi intelligenti\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "ה֛וֹי הַ/מַּעֲמִיקִ֥ים מֵֽ/יהוָ֖ה לַ/סְתִּ֣ר עֵצָ֑ה וְ/הָיָ֤ה בְ/מַחְשָׁךְ֙ מַֽעֲשֵׂי/הֶ֔ם וַ/יֹּ֣אמְר֔וּ מִ֥י רֹאֵ֖/נוּ וּ/מִ֥י יוֹדְעֵֽ/נוּ׃",
+        "LXX": "Οὐαὶ οἱ βαθέως βουλὴν ποιοῦντες καὶ ἔσται ἐν σκότει τὰ ἔργα αὐτῶν, καὶ ἐροῦσιν Τίς ἑόρακεν ἡμᾶς; καὶ τίς ἡμᾶς γνώσεται ἢ ἃ ἡμεῖς ποιοῦμεν;",
+        "VUL": "Væ qui profundi estis corde,/ ut a Domino abscondatis consilium ;/ quorum sunt in tenebris opera,/ et dicunt : Quis videt nos ?/ et quis novit nos ?/",
+        "SYN": "Горе тем, которые думают скрыться в глубину, чтобы замысл свой утаить от Господа, которые делают дела свои во мраке и говорят: \"кто увидит нас? и кто узнает нас?\"",
+        "NEO": "Malheur à ceux qui cachent profondément à \\+w Yahweh|strong=\"H3068\"\\+w** le secret de leurs desseins, dont l’œuvre s’accomplit dans les ténèbres, et qui disent : « Qui nous voit, qui nous connaît ? »",
+        "NAB": "Woe to those who would hide their plans too deep for the LORD! Who work in the dark, saying, \"Who sees us, or who knows us?\"",
+        "VAT_ES": "Ay de los que traman secretamente para ocultar sus proyectos al Señor, de los que actúan en la oscuridad y dicen: «&iquest;Quién nos ve y quién nos conoce?».",
+        "CEI": "Guai a quanti vogliono sottrarsi alla vista del Signore per dissimulare i loro piani, a coloro che agiscono nelle tenebre, dicendo: \"Chi ci vede? Chi ci conosce?\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "הַ֨פְכְּ/כֶ֔ם אִם כְּ/חֹ֥מֶר הַ/יֹּצֵ֖ר יֵֽחָשֵׁ֑ב כִּֽי יֹאמַ֨ר מַעֲשֶׂ֤ה לְ/עֹשֵׂ֨/הוּ֙ לֹ֣א עָשָׂ֔/נִי וְ/יֵ֛צֶר אָמַ֥ר לְ/יוֹצְר֖/וֹ לֹ֥א הֵבִֽין׃",
+        "LXX": "οὐχ ὡς ὁ πηλὸς τοῦ κεραμέως λογισθήσεσθε; μὴ ἐρεῖ τὸ πλάσμα τῷ πλάσαντι αὐτό Οὐ σύ με ἔπλασας; ἢ τὸ ποίημα τῷ ποιήσαντι Οὐ συνετῶς με ἐποίησας;",
+        "VUL": "Perversa est hæc vestra cogitatio ;/ quasi si lutum contra figulum cogitet,/ et dicat opus factori suo : Non fecisti me ;/ et figmentum dicat fictori suo : Non intelligis./",
+        "SYN": "Какое безрассудство! Разве можно считать горшечника, как глину? Скажет ли изделие о сделавшем его: \"не он сделал меня\"? и скажет ли произведение о художнике своем: \"он не разумеет\"?",
+        "NEO": "Quelle folie ! Le potier sera-t-il donc estimé pour de l’argile, que l’œuvre dise de l’ouvrier : « Il ne m’a pas faite ; » et que le vase dise du potier : « Il n’y entend rien ? »",
+        "NAB": "Your perversity is as though the potter were taken to be the clay: As though what is made should say of its maker, \"He made me not!\" Or the vessel should say of the potter, \"He does not understand.\"",
+        "VAT_ES": "&iexcl;Qué desatino el de ustedes! &iquest;Acaso se puede pensar que el alfarero es igual al barro para que la obra diga al que la hizo: «No me ha hecho él». y la vasija diga de su alfarero: «No entiende nada»?",
+        "CEI": "Quanto siete perversi! Forse che il vasaio è stimato pari alla creta? Un oggetto può dire del suo autore: \"Non mi ha fatto lui\"? E un vaso può dire del vasaio: \"Non capisce\"?"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "הֲ/לוֹא עוֹד֙ מְעַ֣ט מִזְעָ֔ר וְ/שָׁ֥ב לְבָנ֖וֹן לַ/כַּרְמֶ֑ל וְ/הַ/כַּרְמֶ֖ל לַ/יַּ֥עַר יֵחָשֵֽׁב׃",
+        "LXX": "οὐκέτι μικρὸν καὶ μετατεθήσεται ὁ Λίβανος ὡς τὸ ὄρος τὸ Χερμέλ, καὶ τὸ Χερμὲλ εἰς δρυμὸν λογισθήσεται.",
+        "VUL": "Nonne adhuc in modico et in brevi/ convertetur Libanus in carmel,/ et carmel in saltum reputabitur ?/",
+        "SYN": "Еще немного, очень немного, и Ливан не превратится ли в сад, а сад не будут ли почитать, как лес?",
+        "NEO": "Est-ce que dans un peu de temps, le Liban ne sera pas changé en verger, et le verger ne sera pas réputé une forêt ?",
+        "NAB": "But a very little while, and Lebanon shall be changed into an orchard, and the orchard be regarded as a forest!",
+        "VAT_ES": "&iquest;No falta poco, muy poco tiempo, para que Líbano se vuelva un vergel y el vergel parezca un bosque?",
+        "CEI": "Certo, ancora un pò e il Libano si cambierà in un frutteto e il frutteto sarà considerato una selva."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/שָׁמְע֧וּ בַ/יּוֹם הַ/ה֛וּא הַ/חֵרְשִׁ֖ים דִּבְרֵי סֵ֑פֶר וּ/מֵ/אֹ֣פֶל וּ/מֵ/חֹ֔שֶׁךְ עֵינֵ֥י עִוְרִ֖ים תִּרְאֶֽינָה׃",
+        "LXX": "καὶ ἀκούσονται ἐν τῇ ἡμέρᾳ ἐκείνῃ κωφοὶ λόγους βιβλίου, καὶ οἱ ἐν τῷ σκότει καὶ οἱ ἐν τῇ ὁμίχλῃ ὀφθαλμοὶ τυφλῶν ὄψονται,",
+        "VUL": "Et audient in die illa surdi verba libri,/ et de tenebris et caligine oculi cæcorum videbunt./",
+        "SYN": "И в тот день глухие услышат слова книги, и прозрят из тьмы и мрака глаза слепых.",
+        "NEO": "En ce jour-là, les sourds entendront les paroles du livre, et, sortant des ténèbres et de l’obscurité, les aveugles verront.",
+        "NAB": "On that day the deaf shall hear the words of a book; And out of gloom and darkness, the eyes of the blind shall see.",
+        "VAT_ES": "Aquel día, los sordos oirán las palabras del libro, y verán los ojos de los ciegos, libres de tinieblas y oscuridad.",
+        "CEI": "Udranno in quel giorno i sordi le parole di un libro; liberati dall'oscurità e dalle tenebre, gli occhi dei ciechi vedranno."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/יָסְפ֧וּ עֲנָוִ֛ים בַּֽ/יהוָ֖ה שִׂמְחָ֑ה וְ/אֶבְיוֹנֵ֣י אָדָ֔ם בִּ/קְד֥וֹשׁ יִשְׂרָאֵ֖ל יָגִֽילוּ׃",
+        "LXX": "καὶ ἀγαλλιάσονται πτωχοὶ διὰ Κύριον ἐν εὐφροσύνῃ, καὶ οἱ ἀπηλπισμένοι τῶν ἀνθρώπων ἐμπλησθήσονται εὐφροσύνης.",
+        "VUL": "Et addent mites in Domino lætitiam,/ et pauperes homines in Sancto Israël exsultabunt ;/",
+        "SYN": "И страждущие более и более будут радоваться о Господе, и бедные люди будут торжествовать о Святом Израиля,",
+        "NEO": "Les humbles se réjouiront de plus en plus en \\+w Yahweh|strong=\"H3068\"\\+w**, et les plus pauvres tressailliront dans le Saint d’Israël.",
+        "NAB": "The lowly will ever find joy in the LORD, and the poor rejoice in the Holy One of Israel.",
+        "VAT_ES": "Los humildes de alegrarán más y más en el Señor y los más indigentes se regocijarán en el Santo de Israel.",
+        "CEI": "Gli umili si rallegreranno di nuovo nel Signore, i più poveri gioiranno nel Santo di Israele."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "כִּֽי אָפֵ֥ס עָרִ֖יץ וְ/כָ֣לָה לֵ֑ץ וְ/נִכְרְת֖וּ כָּל שֹׁ֥קְדֵי אָֽוֶן׃",
+        "LXX": "ἐξέλιπεν ἄνομος, καὶ ἀπώλετο ὑπερήφανος, καὶ ἐξωλεθρεύθησαν οἱ ἀνομοῦντες ἐπὶ κακίᾳ,",
+        "VUL": "quoniam defecit qui prævalebat, consummatus est illusor,/ et succisi sunt omnes qui vigilabant super iniquitatem,/",
+        "SYN": "потому что не будет более обидчика, и хульник исчезнет, и будут истреблены все поборники неправды,",
+        "NEO": "Car l’oppresseur aura disparu, et le moqueur aura péri, et tous ceux qui méditent l’iniquité seront exterminés,",
+        "NAB": "For the tyrant will be no more and the arrogant will have gone; All who are alert to do evil will be cut off,",
+        "VAT_ES": "Porque se acabarán los tiranos, desaparecerá el insolente, y serán extirpados los que acechan para hacer el mal,",
+        "CEI": "Perché il tiranno non sarà più, sparirà il beffardo, saranno eliminati quanti tramano iniquità,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "מַחֲטִיאֵ֤י אָדָם֙ בְּ/דָבָ֔ר וְ/לַ/מּוֹכִ֥יחַ בַּ/שַּׁ֖עַר יְקֹשׁ֑וּ/ן וַ/יַּטּ֥וּ בַ/תֹּ֖הוּ צַדִּֽיק׃",
+        "LXX": "καὶ οἱ ποιοῦντες ἁμαρτεῖν ἀνθρώπους ἐν λόγῳ· πάντας δὲ τοὺς ἐλέγχοντας ἐν πύλαις πρόσκομμα θήσουσιν, ὅτι ἐπλαγίασαν ἐν ἀδίκοις δίκαιον.",
+        "VUL": "qui peccare faciebant homines in verbo,/ et arguentem in porta supplantabant,/ et declinaverunt frustra a justo./",
+        "SYN": "которые запутывают человека в словах, и требующему суда у ворот расставляют сети, и отталкивают правого.",
+        "NEO": "ceux qui condamnent un homme pour un mot, qui tendent des pièges à celui qui les confond à la porte, et qui perdent le juste par leurs mensonges.",
+        "NAB": "those whose mere word condemns a man, Who ensnare his defender at the gate, and leave the just man with an empty claim.",
+        "VAT_ES": "los que con una palabra hacen condenar a un hombre, los que tienden trampas al que actúa en un juicio, y porque sí nomás perjudican al justo.",
+        "CEI": "quanti con la parola rendono colpevoli gli altri, quanti alla porta tendono tranelli al giudice e rovinano il giusto per un nulla."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "לָ/כֵ֗ן כֹּֽה אָמַ֤ר יְהוָה֙ אֶל בֵּ֣ית יַֽעֲקֹ֔ב אֲשֶׁ֥ר פָּדָ֖ה אֶת אַבְרָהָ֑ם לֹֽא עַתָּ֤ה יֵבוֹשׁ֙ יַֽעֲקֹ֔ב וְ/לֹ֥א עַתָּ֖ה פָּנָ֥י/ו יֶחֱוָֽרוּ׃",
+        "LXX": "διὰ τοῦτο τάδε λέγει Κύριος ἐπὶ τὸν οἶκον Ἰακώβ, ὃν ἀφώρισεν ἐξ Ἀβραάμ Οὐ νῦν αἰσχυνθήσεται Ἰακώβ, οὐδὲ νῦν τὸ πρόσωπον μεταβαλεῖ·",
+        "VUL": "Propter hoc, hæc dicit Dominus ad domum Jacob,/ qui redemit Abraham :/ Non modo confundetur Jacob,/ nec modo vultus ejus erubescet ;/",
+        "SYN": "Посему так говорит о доме Иакова Господь, Который искупил Авраама: тогда Иаков не будет в стыде, и лице его более не побледнеет.",
+        "NEO": "C’est pourquoi ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** à la maison de Jacob, lui qui a racheté Abraham : Jacob n’aura plus désormais à rougir, et son front désormais ne pâlira plus.",
+        "NAB": "Therefore thus says the LORD, the God of the house of Jacob, who redeemed Abraham: Now Jacob shall have nothing to be ashamed of, nor shall his face grow pale.",
+        "VAT_ES": "Por eso, así habla el Señor, el Dios de la casa de Jacob, el que rescató a Abraham: En adelante, Jacob no se avergonzará ni se pondrá pálido su rostro",
+        "CEI": "Pertanto, dice alla casa di Giacobbe il Signore che riscattò Abramo: \"D'ora in poi Giacobbe non dovrà più arrossire, il suo viso non impallidirà più,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "כִּ֣י בִ֠/רְאֹת/וֹ יְלָדָ֞י/ו מַעֲשֵׂ֥ה יָדַ֛/י בְּ/קִרְבּ֖/וֹ יַקְדִּ֣ישֽׁוּ שְׁמִ֑/י וְ/הִקְדִּ֨ישׁוּ֙ אֶת קְד֣וֹשׁ יַֽעֲקֹ֔ב וְ/אֶת אֱלֹהֵ֥י יִשְׂרָאֵ֖ל יַעֲרִֽיצוּ׃",
+        "LXX": "ἀλλ’ ὅταν ἴδωσιν τὰ τέκνα αὐτῶν τὰ ἔργα μου, δι’ ἐμὲ ἁγιάσωσιν τὸ ὄνομά ⸆ μου, καὶ ἁγιάσωσιν τὸν ἅγιον Ἰακώβ, καὶ τὸν θεὸν τοῦ Ἰσραὴλ φοβηθήσονται.",
+        "VUL": "sed cum viderit filios suos,/ opera manuum mearum in medio sui/ sanctificantes nomen meum,/ et sanctificabunt Sanctum Jacob,/ et Deum Israël prædicabunt ;/",
+        "SYN": "Ибо когда увидит у себя детей своих, дело рук Моих, то они свято будут чтить имя Мое и свято чтить Святаго Иаковлева, и благоговеть пред Богом Израилевым.",
+        "NEO": "Car, lorsqu’il verra, lui et ses enfants, l’œuvre de mes mains au milieu d’eux, ils sanctifieront mon nom, ils sanctifieront le Saint de Jacob, et ils révéreront le Dieu d’Israël.",
+        "NAB": "When his children see the work of my hands in his midst, They shall keep my name holy; they shall reverence the Holy One of Jacob, and be in awe of the God of Israel.",
+        "VAT_ES": "Porque, al ver lo que hago en medio de él, proclamarán que mi Nombre es santo, proclamarán santo al Santo de Jacob y temerán al Dios de Israel.",
+        "CEI": "poiché vedendo il lavoro delle mie mani tra di loro, santificheranno il mio nome, santificheranno il Santo di Giacobbe e temeranno il Dio di Israele."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/יָדְע֥וּ תֹֽעֵי ר֖וּחַ בִּינָ֑ה וְ/רוֹגְנִ֖ים יִלְמְדוּ לֶֽקַח׃",
+        "LXX": "καὶ γνώσονται πλανώμενοι τῷ πνεύματι σύνεσιν, οἱ δὲ γογγύζοντες μαθήσονται ὑπακούειν, καὶ αἱ γλῶσσαι αἱ ψελλίζουσαι μαθήσονται λαλεῖν εἰρήνην.",
+        "VUL": "et scient errantes spiritu intellectum,/ et mussitatores discent legem.]",
+        "SYN": "Тогда блуждающие духом познают мудрость, и непокорные научатся послушанию.",
+        "NEO": "Ceux qui avaient l’esprit égaré apprendront la sagesse, et ceux qui murmuraient recevront l’instruction.",
+        "NAB": "Those who err in spirit shall acquire understanding, and those who find fault shall receive instruction.",
+        "VAT_ES": "Los espíritus extraviados llegarán a entender y los recalcitrantes aceptarán la enseñanza.",
+        "CEI": "Gli spiriti traviati apprenderanno la sapienza e i brontoloni impareranno la lezione\"."
+      }
+    }
+  }
+}

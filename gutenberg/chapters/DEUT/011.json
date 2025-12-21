@@ -1,0 +1,591 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_011",
+  "book_key": "DEUT",
+  "sequence": 11,
+  "chapter_in": {
+    "MT": 11,
+    "VUL": 11,
+    "LXX": 11
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/אָ֣הַבְתָּ֔ אֵ֖ת יְהוָ֣ה אֱלֹהֶ֑י/ךָ וְ/שָׁמַרְתָּ֣ מִשְׁמַרְתּ֗/וֹ וְ/חֻקֹּתָ֧י/ו וּ/מִשְׁפָּטָ֛י/ו וּ/מִצְוֺתָ֖י/ו כָּל הַ/יָּמִֽים׃",
+        "LXX": "Καὶ ἀγαπήσεις Κύριον τὸν θεόν σου, καὶ φυλάξῃ τὰ φυλάγματα αὐτοῦ καὶ τὰ δικαιώματα αὐτοῦ καὶ τὰς κρίσεις αὐτοῦ πάσας τὰς ἡμέρας.",
+        "VUL": "Ama itaque Dominum Deum tuum, et observa præcepta ejus et cæremonias, judicia atque mandata, omni tempore.",
+        "SYN": "Итак люби Господа, Бога твоего, и соблюдай, что повелено Им соблюдать, и постановления Его и законы Его и заповеди Его во все дни.",
+        "NEO": "Tu aimeras \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, et tu observeras ce qu’il demande de toi, ses lois, ses ordonnances et ses commandements, tous les jours de ta vie.",
+        "NAB": "\"Love the LORD, your God, therefore, and always heed his charge: his statutes, decrees and commandments.",
+        "VAT_ES": "Amarás al Señor, tu Dios, y observarás siempre sus prescripciones, sus preceptos, sus leyes y sus mandamientos.",
+        "CEI": "Ama dunque il Signore tuo Dio e osserva le sue prescrizioni: le sue leggi, le sue norme e i suoi comandi."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וִֽ/ידַעְתֶּם֮ הַ/יּוֹם֒ כִּ֣י לֹ֣א אֶת בְּנֵי/כֶ֗ם אֲשֶׁ֤ר לֹֽא יָדְעוּ֙ וַ/אֲשֶׁ֣ר לֹא רָא֔וּ אֶת מוּסַ֖ר יְהוָ֣ה אֱלֹהֵי/כֶ֑ם אֶת גָּדְל֕/וֹ אֶת יָד/וֹ֙ הַ/חֲזָקָ֔ה וּ/זְרֹע֖/וֹ הַ/נְּטוּיָֽה׃",
+        "LXX": "καὶ γνώσεσθε σήμερον ὅτι οὐχὶ τὰ παιδία ὑμῶν, ὅσοι οὐκ οἴδασιν οὐδὲ ἴδοσαν τὴν παιδίαν Κυρίου τοῦ θεοῦ σου καὶ τὰ μεγαλεῖα αὐτοῦ καὶ τὴν χεῖρα τὴν κραταιὰν καὶ τὸν βραχίονα τὸν ὑψηλόν,",
+        "VUL": "Cognoscite hodie quæ ignorant filii vestri, qui non viderunt disciplinam Domini Dei vestri, magnalia ejus et robustam manum, extentumque brachium,",
+        "SYN": "И вспомните ныне, -- ибо _я_ _говорю_ не с сынами вашими, которые не знают и не видели наказания Господа Бога вашего, -- Его величие [и] Его крепкую руку и высокую мышцу его,",
+        "NEO": "Reconnaissez aujourd’hui, — car je ne m’adresse pas à vos enfants, qui ne connaissent pas et qui n’ont pas vu les leçons de \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, — reconnaissez sa grandeur, sa main forte et son bras étendu ;",
+        "NAB": "It is not your children, who have not known it from experience, but you yourselves who must now understand the discipline of the LORD, your God; his majesty, his strong hand and outstretched arm;",
+        "VAT_ES": "Ustedes –y no sus hijos, que no han conocido ni experimentado la lección del Señor– son los que conocen hoy su grandeza, el poder de su mano y la fuerza de su brazo;",
+        "CEI": "Voi riconoscete oggi - poiché non parlo ai vostri figli che non hanno conosciuto né hanno visto le lezioni del Signore vostro Dio - voi riconoscete la sua grandezza, la sua mano potente, il suo braccio teso,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/אֶת אֹֽתֹתָי/ו֙ וְ/אֶֽת מַעֲשָׂ֔י/ו אֲשֶׁ֥ר עָשָׂ֖ה בְּ/ת֣וֹךְ מִצְרָ֑יִם לְ/פַרְעֹ֥ה מֶֽלֶךְ מִצְרַ֖יִם וּ/לְ/כָל אַרְצֽ/וֹ׃",
+        "LXX": "καὶ τὰ σημεῖα αὐτοῦ καὶ τὰ τέρατα αὐτοῦ ὅσα ἐποίησεν ἐν μέσῳ Αἰγύπτου Φαραὼ βασιλεῖ Αἰγύπτου καὶ πάσῃ τῇ γῇ αὐτοῦ,",
+        "VUL": "signa et opera quæ fecit in medio Ægypti Pharaoni regi, et universæ terræ ejus,",
+        "SYN": "знамения Его и дела Его, которые Он сделал среди Египта с фараоном, царем Египетским, и со всею землею его,",
+        "NEO": "ses prodiges et ses œuvres qu’il a faits au milieu de l’Égypte, contre Pharaon, roi d’Égypte, et contre tout son pays ;",
+        "NAB": "the signs and deeds he wrought among the Egyptians, on Pharaoh, king of Egypt, and on all his land;",
+        "VAT_ES": "los signos y las obras que realizó en Egipto contra el Faraón, rey de Egipto, y contra todo su país;",
+        "CEI": "i suoi portenti, le opere che ha fatte in mezzo all'Egitto, contro il faraone, re d'Egitto, e contro il suo paese;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/אֲשֶׁ֣ר עָשָׂה֩ לְ/חֵ֨יל מִצְרַ֜יִם לְ/סוּסָ֣י/ו וּ/לְ/רִכְבּ֗/וֹ אֲשֶׁ֨ר הֵצִ֜יף אֶת מֵ֤י יַם סוּף֙ עַל פְּנֵי/הֶ֔ם בְּ/רָדְפָ֖/ם אַחֲרֵי/כֶ֑ם וַ/יְאַבְּדֵ֣/ם יְהוָ֔ה עַ֖ד הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ ὅσα ἐποίησεν τὴν δύναμιν τῶν Αἰγυπτίων, τὰ ἅρματα αὐτῶν καὶ τὴν ἵππον αὐτῶν καὶ τὴν δύναμιν αὐτῶν, ὡς ἐπέκλυσεν τὸ ὕδωρ τῆς θαλάσσης τῆς ἐρυθρᾶς ἐπὶ προσώπου αὐτῶν, καταδιωκόντων αὐτῶν ἐκ τῶν ὀπίσω ὑμῶν, καὶ ἀπώλεσεν αὐτοὺς Κύριος ἕως τῆς σήμερον ἡμέρας,",
+        "VUL": "omnique exercitui Ægyptiorum, et equis ac curribus : quomodo operuerint eos aquæ maris Rubri, cum vos persequerentur, et deleverit eos Dominus usque in præsentem diem :",
+        "SYN": "и что Он сделал с войском Египетским, с конями его и колесницами его, которых Он потопил в водах Чермного моря, когда они гнались за вами, -- и погубил их Господь [Бог] даже до сего дня;",
+        "NEO": "ce qu’il a fait à l’armée d’Égypte, à ses chevaux et à ses chars, comment il a précipité sur eux les eaux de la mer Rouge, lorsqu’ils vous poursuivaient, et comment \\+w Yahweh|strong=\"H3068\"\\+w** les a détruits jusqu’à ce jour.",
+        "NAB": "what he did to the Egyptian army and to their horses and chariots, engulfing them in the water of the Red Sea as they pursued you, and bringing ruin upon them even to this day;",
+        "VAT_ES": "lo que hizo con el ejército egipcio, con su caballería y sus carros de guerra, cuando se lanzaron en persecución de ustedes y él desencadenó contra ellos las aguas del Mar Rojo, y los hizo desaparecer hasta el día de hoy;",
+        "CEI": "e ciò che ha fatto all'esercito d'Egitto, ai suoi cavalli e ai suoi carri, come ha fatto rifluire su di loro le acque del Mare Rosso, quando essi vi inseguivano e come li ha distrutti per sempre;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/אֲשֶׁ֥ר עָשָׂ֛ה לָ/כֶ֖ם בַּ/מִּדְבָּ֑ר עַד בֹּאֲ/כֶ֖ם עַד הַ/מָּק֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ ὅσα ἐποίησεν ἡμῖν ἐν τῇ ἐρήμῳ ἕως ἤλθετε εἰς τὸν τόπον τοῦτον,",
+        "VUL": "vobisque quæ fecerit in solitudine donec veniretis ad hunc locum :",
+        "SYN": "и что Он делал для вас в пустыне, доколе вы не дошли до места сего,",
+        "NEO": "Reconnaissez ce qu’il a fait pour vous dans le désert, jusqu’à votre arrivée en ce lieu ;",
+        "NAB": "what he did for you in the desert until you arrived in this place;",
+        "VAT_ES": "lo que hizo por ustedes en el desierto, hasta que llegaron a este lugar;",
+        "CEI": "ciò che ha fatto per voi nel deserto, fino al vostro arrivo in questo luogo;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/אֲשֶׁ֨ר עָשָׂ֜ה לְ/דָתָ֣ן וְ/לַ/אֲבִירָ֗ם בְּנֵ֣י אֱלִיאָב֮ בֶּן רְאוּבֵן֒ אֲשֶׁ֨ר פָּצְתָ֤ה הָ/אָ֨רֶץ֙ אֶת פִּ֔י/הָ וַ/תִּבְלָעֵ֥/ם וְ/אֶת בָּתֵּי/הֶ֖ם וְ/אֶת אָהֳלֵי/הֶ֑ם וְ/אֵ֤ת כָּל הַ/יְקוּם֙ אֲשֶׁ֣ר בְּ/רַגְלֵי/הֶ֔ם בְּ/קֶ֖רֶב כָּל יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ὅσα ἐποίησεν τῷ Δαθὰν καὶ Ἀβειρὼν υἱοῖς Ἐλιὰβ υἱοῦ Ῥουβήν, οὓς ἀνοίξασα ἡ γῆ τὸ στόμα αὐτῆς κατέπιεν αὐτοὺς καὶ τοὺς οἴκους αὐτῶν καὶ τὰς σκηνὰς αὐτῶν καὶ πᾶσαν αὐτῶν τὴν ὑπόστασιν τὴν μετ’ αὐτῶν ἐν μέσῳ παντὸς Ἰσραήλ·",
+        "VUL": "et Dathan atque Abiron filiis Eliab, qui fuit filius Ruben : quos aperto ore suo terra absorbuit, cum domibus et tabernaculis, et universa substantia eorum, quam habebant in medio Israël.",
+        "SYN": "и что Он сделал с Дафаном и Авироном, сынами Елиава, сына Рувимова, когда земля разверзла уста свои и среди всего Израиля поглотила их и семейства их, и шатры их, и все имущество их, которое было у них;",
+        "NEO": "ce qu’il a fait à Dathan et Abiron, fils d’Eliab, fils de Ruben, que la terre, ouvrant sa bouche, engloutit, avec leurs maisons, leurs tentes et toutes les personnes de leur suite, au milieu de tout Israël.",
+        "NAB": "and what he did to the Reubenites Dathan and Abiram, sons of Eliab, when the ground opened its mouth and swallowed them up out of the midst of Israel, with their families and tents and every living thing that belonged to them.",
+        "VAT_ES": "y la manera como trató a Datán a Abirón, los hijos de Eliab, el rubenita, cuando la tierra abrió sus fauces y los devoró junto con sus familias, sus carpas, y todos sus secuaces, en medio de todo Israel.",
+        "CEI": "ciò che ha fatto a Datan e ad Abiram, figli di Eliab, figlio di Ruben; come la terra ha spalancato la bocca e li ha inghiottiti con le loro famiglie, le loro tende e quanto a loro apparteneva, in mezzo a tutto Israele."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּ֤י עֵֽינֵי/כֶם֙ הָֽ/רֹאֹ֔ת אֶת כָּל מַעֲשֵׂ֥ה יְהוָ֖ה הַ/גָּדֹ֑ל אֲשֶׁ֖ר עָשָֽׂה׃",
+        "LXX": "ὅτι οἱ ὀφθαλμοὶ ὑμῶν ἑώρακαν πάντα τὰ ἔργα Κυρίου ὅσα ἐποίησεν ὑμῖν σήμερον.",
+        "VUL": "Oculi vestri viderunt opera Domini magna quæ fecit,",
+        "SYN": "ибо глаза ваши видели все великие дела Господа, которые Он сделал.",
+        "NEO": "Car vos yeux ont vu toutes les grandes œuvres que \\+w Yahweh|strong=\"H3068\"\\+w** a faites.",
+        "NAB": "With your own eyes you have seen all these great deeds that the LORD has done.",
+        "VAT_ES": "Sí, son ustedes los que han visto, con sus propios ojos, la gran obra que realizó el Señor.",
+        "CEI": "Perché i vostri occhi hanno visto le grandi cose che il Signore ha operate."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וּ/שְׁמַרְתֶּם֙ אֶת כָּל הַ/מִּצְוָ֔ה אֲשֶׁ֛ר אָנֹכִ֥י מְצַוְּ/ךָ֖ הַ/יּ֑וֹם לְמַ֣עַן תֶּחֶזְק֗וּ וּ/בָאתֶם֙ וִֽ/ירִשְׁתֶּ֣ם אֶת הָ/אָ֔רֶץ אֲשֶׁ֥ר אַתֶּ֛ם עֹבְרִ֥ים שָׁ֖מָּ/ה לְ/רִשְׁתָּֽ/הּ׃",
+        "LXX": "καὶ φυλάξεσθε πάσας τὰς ἐντολὰς αὐτοῦ ὅσας ἐγὼ ἐντέλλομαί σοι σήμερον, ἵνα ζῆτε καὶ πολυπλασιασθῆτε, καὶ εἰσελθόντες κληρονομήσετε τὴν γῆν εἰς ἣν ὑμεῖς διαβαίνετε τὸν Ἰορδάνην ἐκεῖ κληρονομῆσαι αὐτήν·",
+        "VUL": "ut custodiatis universa mandata illius, quæ ego hodie præcipio vobis, et possitis introire, et possidere terram, ad quam ingredimini,",
+        "SYN": "Итак соблюдайте все заповеди [Его], которые я заповедую вам сегодня, дабы вы [были живы,] укрепились и пошли и овладели землею, в которую вы переходите [за Иордан], чтоб овладеть ею;",
+        "NEO": "Vous observerez donc tous les commandements que je vous prescris aujourd’hui, afin que vous soyez forts, que vous entriez et que vous vous rendiez maîtres du pays où vous allez passer pour en prendre possession,",
+        "NAB": "Keep all the commandments, then, which I enjoin on you today, that you may be strong enough to enter in and take possession of the land into which you are crossing,",
+        "VAT_ES": "Observen todos los mandamientos que hoy les prescribo. Así tendrán la fuerza necesaria para ir a conquistar el país del que ustedes van a tomar posesión.",
+        "CEI": "Osserverete dunque tutti i comandi che oggi vi dò, perché siate forti e possiate conquistare il paese che state per entrare a prendere in possesso"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וּ/לְמַ֨עַן תַּאֲרִ֤יכוּ יָמִים֙ עַל הָ֣/אֲדָמָ֔ה אֲשֶׁר֩ נִשְׁבַּ֨ע יְהוָ֧ה לַ/אֲבֹתֵי/כֶ֛ם לָ/תֵ֥ת לָ/הֶ֖ם וּ/לְ/זַרְעָ֑/ם אֶ֛רֶץ זָבַ֥ת חָלָ֖ב וּ/דְבָֽשׁ׃",
+        "LXX": "ἵνα μακροημερεύσητε ἐπὶ τῆς γῆς ἧς ὤμοσεν Κύριος τοῖς πατράσιν ὑμῶν δοῦναι αὐτοῖς καὶ τῷ σπέρματι αὐτῶν μετ’ αὐτούς, γῆν ῥέουσαν γάλα καὶ μέλι.",
+        "VUL": "multoque in ea vivatis tempore : quam sub juramento pollicitus est Dominus patribus vestris, et semini eorum, lacte et melle manantem.",
+        "SYN": "и дабы вы жили много времени на той земле, которую клялся Господь отцам вашим дать им и семени их, на земле, в которой течет молоко и мед.",
+        "NEO": "et afin que vous prolongiez vos jours sur la terre que \\+w Yahweh|strong=\"H3068\"\\+w** a juré à vos pères de leur donner, à eux et à leur postérité, pays où coulent le lait et le miel.",
+        "NAB": "and that you may have long life on the land which the LORD swore to your fathers he would give to them and their descendants, a land flowing with milk and honey.",
+        "VAT_ES": "y podrán vivir largo tiempo en la tierra que el Señor juró dar a sus padres y a su descendencia, tierra que mana leche y miel.",
+        "CEI": "e perché restiate a lungo sul suolo che il Signore ha giurato di dare ai vostri padri e alla loro discendenza: terra dove scorre latte e miele."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּ֣י הָ/אָ֗רֶץ אֲשֶׁ֨ר אַתָּ֤ה בָא שָׁ֨מָּ/ה֙ לְ/רִשְׁתָּ֔/הּ לֹ֣א כְ/אֶ֤רֶץ מִצְרַ֨יִם֙ הִ֔וא אֲשֶׁ֥ר יְצָאתֶ֖ם מִ/שָּׁ֑ם אֲשֶׁ֤ר תִּזְרַע֙ אֶֽת זַרְעֲ/ךָ֔ וְ/הִשְׁקִ֥יתָ בְ/רַגְלְ/ךָ֖ כְּ/גַ֥ן הַ/יָּרָֽק׃",
+        "LXX": "ἔστιν γὰρ ἡ γῆ εἰς ἣν εἰσπορεύῃ ἐκεῖ κληρονομῆσαι αὐτήν, οὐχ ὥσπερ γῆ Αἰγύπτου ἐστίν, ὅθεν ἐκπεπόρευσθε ἐκεῖθεν, ὅταν σπείρωσιν τὸν σπόρον καὶ ποτίζωσιν τοῖς ποσὶν αὐτῶν ὡσεὶ κῆπον λαχανίας·",
+        "VUL": "Terra enim, ad quam ingrederis possidendam, non est sicut terra Ægypti, de qua existi, ubi jacto semine in hortorum morem aquæ ducuntur irriguæ :",
+        "SYN": "Ибо земля, в которую ты идешь, чтоб овладеть ею, не такова, как земля Египетская, из которой вышли вы, где ты, посеяв семя твое, поливал [ее] при помощи ног твоих, как масличный сад;",
+        "NEO": "Car le pays où tu vas entrer pour le posséder n’est pas comme le pays d’Égypte, d’où vous êtes sortis, que tu ensemençais et que tu arrosais avec ton pied, comme un jardin potager.",
+        "NAB": "\"For the land which you are to enter and occupy is not like the land of Egypt from which you have come, where you would sow your seed and then water it by hand, as in a vegetable garden.",
+        "VAT_ES": "Porque la tierra que tú vas a tomar en posesión no es como Egipto, el país de donde ustedes salieron. Allí sembrabas tu semilla, y luego tenías que regar con tu pie, como se riega una huerta.",
+        "CEI": "Perché il paese di cui stai per entrare in possesso non è come il paese d'Egitto da cui siete usciti e dove gettavi il tuo seme e poi lo irrigavi con il piede, come fosse un orto di erbaggi;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/הָ/אָ֗רֶץ אֲשֶׁ֨ר אַתֶּ֜ם עֹבְרִ֥ים שָׁ֨מָּ/ה֙ לְ/רִשְׁתָּ֔/הּ אֶ֥רֶץ הָרִ֖ים וּ/בְקָעֹ֑ת לִ/מְטַ֥ר הַ/שָּׁמַ֖יִם תִּשְׁתֶּה מָּֽיִם׃",
+        "LXX": "ἡ δὲ γῆ εἰς ἣν εἰσπορεύῃ ἐκεῖ κληρονομῆσαι αὐτὴν γῆ ὀρεινὴ καὶ πεδινή, ἐκ τοῦ ὑετοῦ τοῦ οὐρανοῦ πίεται ὕδωρ·",
+        "VUL": "sed montuosa est et campestris, de cælo expectans pluvias,",
+        "SYN": "но земля, в которую вы переходите, чтоб овладеть ею, есть земля с горами и долинами, и от дождя небесного напояется водою, --",
+        "NEO": "Mais le pays où vous allez passer pour le posséder est un pays de montagnes et de vallées, qui boit les eaux de la pluie du ciel ;",
+        "NAB": "No, the land into which you are crossing for conquest is a land of hills and valleys that drinks in rain from the heavens,",
+        "VAT_ES": "En cambio, la tierra que vas a tomar en posesión es una región de montañas y valles regados por la lluvia del cielo,",
+        "CEI": "ma il paese che andate a prendere in possesso è un paese di monti e di valli, beve l'acqua della pioggia che viene dal cielo:"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אֶ֕רֶץ אֲשֶׁר יְהוָ֥ה אֱלֹהֶ֖י/ךָ דֹּרֵ֣שׁ אֹתָ֑/הּ תָּמִ֗יד עֵינֵ֨י יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ בָּ֔/הּ מֵֽ/רֵשִׁית֙ הַ/שָּׁנָ֔ה וְ/עַ֖ד אַחֲרִ֥ית שָׁנָֽה׃",
+        "LXX": "γῆ ἣν Κύριος ὁ θεός σου ἐπισκοπεῖται αὐτὴν διὰ παντός, οἱ ὀφθαλμοὶ Κυρίου τοῦ θεοῦ σου ἐπ’ αὐτῆς ἀπ’ ἀρχῆς τοῦ ἐνιαυτοῦ καὶ ἕως συντελείας τοῦ ἐνιαυτοῦ.",
+        "VUL": "quam Dominus Deus tuus semper invisit, et oculi illius in ea sunt a principio anni usque ad finem ejus.",
+        "SYN": "земля, о которой Господь, Бог твой, печется: очи Господа, Бога твоего, непрестанно на ней, от начала года и до конца года.",
+        "NEO": "un pays dont \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, prend soin, et sur lequel \\+w Yahweh|strong=\"H3068\"\\+w** a continuellement les yeux, depuis le commencement de l’année jusqu’à la fin de l’année.",
+        "NAB": "a land which the LORD, your God, looks after; his eyes are upon it continually from the beginning of the year to the end.",
+        "VAT_ES": "y está bajo el cuidado constante del Señor, tu Dios. Sobre ella permanecen fijos los ojos del Señor, tu Dios, desde el comienzo hasta el fin del año.",
+        "CEI": "paese del quale il Signore tuo Dio ha cura e sul quale si posano sempre gli occhi del Signore tuo Dio dal principio dell'anno sino alla fine."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה אִם שָׁמֹ֤עַ תִּשְׁמְעוּ֙ אֶל מִצְוֺתַ֔/י אֲשֶׁ֧ר אָנֹכִ֛י מְצַוֶּ֥ה אֶתְ/כֶ֖ם הַ/יּ֑וֹם לְ/אַהֲבָ֞ה אֶת יְהוָ֤ה אֱלֹֽהֵי/כֶם֙ וּ/לְ/עָבְד֔/וֹ בְּ/כָל לְבַבְ/כֶ֖ם וּ/בְ/כָל נַפְשְׁ/כֶֽם׃",
+        "LXX": "Ἐὰν δὲ ἀκοῇ εἰσακούσητε πάσας τὰς ἐντολὰς ἃς ἐγὼ ἐντέλλομαί σοι σήμερον, ἀγαπᾷν Κύριον τὸν θεόν σου καὶ λατρεύειν αὐτῷ ἐξ ὅλης τῆς καρδίας σου καὶ ἐξ ὅλης τῆς ψυχῆς σου,",
+        "VUL": "Si ergo obedieritis mandatis meis, quæ ego hodie præcipio vobis, ut diligatis Dominum Deum vestrum, et serviatis ei in toto corde vestro, et in tota anima vestra :",
+        "SYN": "Если вы будете слушать заповеди Мои, которые заповедую вам сегодня, любить Господа, Бога вашего, и служить Ему от всего сердца вашего и от всей души вашей,",
+        "NEO": "Si vous obéissez à mes commandements que je vous prescris aujourd’hui, aimant \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, et le servant de tout votre cœur et de toute votre âme,",
+        "NAB": "If, then, you truly heed my commandments which I enjoin on you today, loving and serving the LORD, your God, with all your heart and all your soul,",
+        "VAT_ES": "Y si ustedes obedecen fielmente los mandamientos que hoy les impongo, amando al Señor, su Dios, y sirviéndolo de todo corazón y con toda el alma,",
+        "CEI": "Ora, se obbedirete diligentemente ai comandi che oggi vi dò, amando il Signore vostro Dio e servendolo con tutto il cuore e con tutta l'anima,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/נָתַתִּ֧י מְטַֽר אַרְצְ/כֶ֛ם בְּ/עִתּ֖/וֹ יוֹרֶ֣ה וּ/מַלְק֑וֹשׁ וְ/אָסַפְתָּ֣ דְגָנֶ֔/ךָ וְ/תִֽירֹשְׁ/ךָ֖ וְ/יִצְהָרֶֽ/ךָ׃",
+        "LXX": "καὶ δώσει τὸν ὑετὸν τῇ γῇ σου καθ’ ὥραν πρόιμον καὶ ὄψιμον, καὶ εἰσοίσεις τὸν σῖτόν σου καὶ τὸν οἶνόν σου καὶ τὸ ἔλαιόν σου·",
+        "VUL": "dabit pluviam terræ vestræ temporaneam et serotinam, ut colligatis frumentum, et vinum, et oleum,",
+        "SYN": "то дам земле вашей дождь в свое время, ранний и поздний; и ты соберешь хлеб твой и вино твое и елей твой;",
+        "NEO": "je donnerai à votre pays la pluie en son temps, la pluie de la première et celle de la dernière saison, et tu recueilleras ton blé, ton vin nouveau et ton huile ;",
+        "NAB": "I will give the seasonal rain to your land, the early rain and the late rain, that you may have your grain, wine and oil to gather in;",
+        "VAT_ES": "yo enviaré lluvia a la tierra en el momento oportuno –lluvia de otoño y de primavera– y podrás recoger tu trigo, tu vino nuevo y tu aceite.",
+        "CEI": "io darò al vostro paese la pioggia al suo tempo: la pioggia d'autunno e la pioggia di primavera, perché tu possa raccogliere il tuo frumento, il tuo vino e il tuo olio;"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/נָתַתִּ֛י עֵ֥שֶׂב בְּ/שָׂדְ/ךָ֖ לִ/בְהֶמְתֶּ֑/ךָ וְ/אָכַלְתָּ֖ וְ/שָׂבָֽעְתָּ׃",
+        "LXX": "καὶ δώσει χορτάσματα ἐν τοῖς ἀγροῖς σου τοῖς κτήνεσίν σου.",
+        "VUL": "fnumque ex agris ad pascenda jumenta, et ut ipsi comedatis ac saturemini.",
+        "SYN": "и дам траву на поле твоем для скота твоего, и будешь есть и насыщаться.",
+        "NEO": "je mettrai aussi de l’herbe dans tes champs pour ton bétail, et tu mangeras et te rassasieras.",
+        "NAB": "and I will bring forth grass in your fields for your animals. Thus you may eat your fill.",
+        "VAT_ES": "Haré crecer en tus campos pasto para tu ganado, y comerás hasta saciarte.",
+        "CEI": "farò anche crescere nella tua campagna l'erba per il tuo bestiame; tu mangerai e sarai saziato."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "הִשָּֽׁמְר֣וּ לָ/כֶ֔ם פֶּ֥ן יִפְתֶּ֖ה לְבַבְ/כֶ֑ם וְ/סַרְתֶּ֗ם וַ/עֲבַדְתֶּם֙ אֱלֹהִ֣ים אֲחֵרִ֔ים וְ/הִשְׁתַּחֲוִיתֶ֖ם לָ/הֶֽם׃",
+        "LXX": "καὶ φαγὼν καὶ ἐμπλησθεὶς πρόσεχε σεαυτῷ μὴ πλατυνθῇ ἡ καρδία σου, καὶ παραβῆτε καὶ λατρεύσητε θεοῖς ἑτέροις καὶ προσκυνήσητε αὐτοῖς·",
+        "VUL": "Cavete ne forte decipiatur cor vestrum, et recedatis a Domino, serviatisque diis alienis, et adoretis eos :",
+        "SYN": "Берегитесь, чтобы не обольстилось сердце ваше, и вы не уклонились и не стали служить иным богам и не поклонились им;",
+        "NEO": "Prenez garde à vous, de peur que votre cœur ne soit séduit, que vous ne vous détourniez et ne serviez d’autres dieux et ne vous prosterniez devant eux.",
+        "NAB": "But be careful lest your heart be so lured away that you serve other gods and worship them.",
+        "VAT_ES": "Pero tengan cuidado, no sea que sus corazones se dejen seducir, y ustedes se extravíen, sirviendo a otros dioses y postrándose delante de ellos.",
+        "CEI": "State in guardia perché il vostro cuore non si lasci sedurre e voi vi allontaniate, servendo dei stranieri o prostrandovi davanti a loro."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/חָרָ֨ה אַף יְהוָ֜ה בָּ/כֶ֗ם וְ/עָצַ֤ר אֶת הַ/שָּׁמַ֨יִם֙ וְ/לֹֽא יִהְיֶ֣ה מָטָ֔ר וְ/הָ֣/אֲדָמָ֔ה לֹ֥א תִתֵּ֖ן אֶת יְבוּלָ֑/הּ וַ/אֲבַדְתֶּ֣ם מְהֵרָ֗ה מֵ/עַל֙ הָ/אָ֣רֶץ הַ/טֹּבָ֔ה אֲשֶׁ֥ר יְהוָ֖ה נֹתֵ֥ן לָ/כֶֽם׃",
+        "LXX": "καὶ θυμωθεὶς ὀργῇ Κύριος ἐφ’ ὑμῖν καὶ συνσχῇ τὸν οὐρανόν, καὶ οὐκ ἔσται ὁ ὑετὸς καὶ ἡ γῆ οὐ δώσει τὸν καρπὸν αὐτῆς, καὶ ἀπολεῖσθε ἐν τάχει ἀπὸ τῆς γῆς τῆς ἀγαθῆς ἧς ἔδωκεν ὁ κύριος ὑμῖν.",
+        "VUL": "iratusque Dominus claudat cælum, et pluviæ non descendant, nec terra det germen suum, pereatisque velociter de terra optima, quam Dominus daturus est vobis.",
+        "SYN": "и тогда воспламенится гнев Господа на вас, и заключит Он небо, и не будет дождя, и земля не принесет произведений своих, и вы скоро погибнете с доброй земли, которую Господь дает вам.",
+        "NEO": "La colère de \\+w Yahweh|strong=\"H3068\"\\+w** s’enflammerait contre vous ; il fermerait le ciel, et il n’y aurait pas de pluie ; la terre ne donnerait pas ses produits et vous péririez promptement dans le bon pays que \\+w Yahweh|strong=\"H3068\"\\+w** vous donne.",
+        "NAB": "For then the wrath of the LORD will flare up against you and he will close up the heavens, so that no rain will fall, and the soil will not yield its crops, and you will soon perish from the good land he is giving you.",
+        "VAT_ES": "Porque entonces la ira del Señor arderá contra ustedes: él cerrará el cielo y ya no habrá más lluvia; el suelo dejará de dar sus frutos, y ustedes no tardarán en desaparecer de esta tierra fértil que les da el Señor.",
+        "CEI": "Allora si accenderebbe contro di voi l'ira del Signore ed egli chiuderebbe i cieli e non vi sarebbe più pioggia e la terra non darebbe più i prodotti e voi perireste ben presto, scomparendo dalla fertile terra che il Signore sta per darvi."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/שַׂמְתֶּם֙ אֶת דְּבָרַ֣/י אֵ֔לֶּה עַל לְבַבְ/כֶ֖ם וְ/עַֽל נַפְשְׁ/כֶ֑ם וּ/קְשַׁרְתֶּ֨ם אֹתָ֤/ם לְ/אוֹת֙ עַל יֶדְ/כֶ֔ם וְ/הָי֥וּ לְ/טוֹטָפֹ֖ת בֵּ֥ין עֵינֵי/כֶֽם׃",
+        "LXX": "καὶ ἐμβαλεῖτε τὰ ῥήματα ταῦτα εἰς τὴν καρδίαν ὑμῶν καὶ εἰς τὴν ψυχὴν ὑμῶν, καὶ ἀφάψετε αὐτὰ εἰς σημεῖον ἐπὶ τῆς χειρὸς ὑμῶν, καὶ ἔσται ἀσάλευτον πρὸ ὀφθαλμῶν ὑμῶν·",
+        "VUL": "Ponite hæc verba mea in cordibus et in animis vestris, et suspendite ea pro signo in manibus, et inter oculos vestros collocate.",
+        "SYN": "Итак положите сии слова Мои в сердце ваше и в душу вашу, и навяжите их в знак на руку свою, и да будут они повязкою над глазами вашими;",
+        "NEO": "Mettez donc sur votre cœur et sur votre âme ces paroles que je vous dis. Vous les lierez comme un signe sur vos mains, et elles seront comme des fronteaux entre vos yeux.",
+        "NAB": "\"Therefore, take these words of mine into your heart and soul. Bind them at your wrist as a sign, and let them be a pendant on your forehead.",
+        "VAT_ES": "Graben estas palabras en lo más íntimo de su corazón. Atenlas a sus manos como un signo, y que sean como una marca sobre su frente.",
+        "CEI": "Porrete dunque nel cuore e nell'anima queste mie parole; ve le legherete alla mano come un segno e le terrete come un pendaglio tra gli occhi;"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/לִמַּדְתֶּ֥ם אֹתָ֛/ם אֶת בְּנֵי/כֶ֖ם לְ/דַבֵּ֣ר בָּ֑/ם בְּ/שִׁבְתְּ/ךָ֤ בְּ/בֵיתֶ֨/ךָ֙ וּ/בְ/לֶכְתְּ/ךָ֣ בַ/דֶּ֔רֶךְ וּֽ/בְ/שָׁכְבְּ/ךָ֖ וּ/בְ/קוּמֶֽ/ךָ׃",
+        "LXX": "καὶ διδάξετε αὐτὰ τὰ τέκνα ὑμῶν λαλεῖν ἐν αὐτοῖς, καθημένου σου ἐν οἴκῳ καὶ πορευομένου σου ἐν ὁδῷ, καὶ καθεύδοντός σου καὶ διανισταμένου σου·",
+        "VUL": "Docete filios vestros ut illa meditentur : quando sederis in domo tua, et ambulaveris in via, et accubueris atque surrexeris.",
+        "SYN": "и учите им сыновей своих, говоря о них, когда ты сидишь в доме твоем, и когда идешь дорогою, и когда ложишься, и когда встаешь;",
+        "NEO": "Vous les enseignerez à vos enfants, et vous leur en parlerez, soit quand tu resteras dans ta maison, ou que tu iras en voyage, soit quand tu te coucheras ou que tu te lèveras.",
+        "NAB": "Teach them to your children, speaking of them at home and abroad, whether you are busy or at rest.",
+        "VAT_ES": "Enséñalas a tus hijos, inculcándoselas cuando estés en tu casa y cuando vayas de viaje, al acostarte y al levantarte.",
+        "CEI": "le insegnerete ai vostri figli, parlandone quando sarai seduto in casa tua e quando camminerai per via, quando ti coricherai e quando ti alzerai;"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וּ/כְתַבְתָּ֛/ם עַל מְזוּז֥וֹת בֵּיתֶ֖/ךָ וּ/בִ/שְׁעָרֶֽי/ךָ׃",
+        "LXX": "καὶ γράψετε αὐτὰ ἐπὶ τὰς φλιὰς τῶν οἰκιῶν ὑμῶν καὶ τῶν πυλῶν ὑμῶν,",
+        "VUL": "Scribes ea super postes et januas domus tuæ,",
+        "SYN": "и напиши их на косяках дома твоего и на воротах твоих,",
+        "NEO": "Tu les écriras sur les poteaux de ta maison et sur tes portes :",
+        "NAB": "And write them on the doorposts of your houses and on your gates,",
+        "VAT_ES": "Escríbelas en las puertas de tu casa y en sus postes.",
+        "CEI": "le scriverai sugli stipiti della tua casa e sulle tue porte,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "לְמַ֨עַן יִרְבּ֤וּ יְמֵי/כֶם֙ וִ/ימֵ֣י בְנֵי/כֶ֔ם עַ֚ל הָֽ/אֲדָמָ֔ה אֲשֶׁ֨ר נִשְׁבַּ֧ע יְהוָ֛ה לַ/אֲבֹתֵי/כֶ֖ם לָ/תֵ֣ת לָ/הֶ֑ם כִּ/ימֵ֥י הַ/שָּׁמַ֖יִם עַל הָ/אָֽרֶץ׃",
+        "LXX": "ἵνα μακροημερεύσητε, καὶ αἱ ἡμέραι τῶν υἱῶν ὑμῶν ἐπὶ τῆς γῆς ἧς ὤμοσεν Κύριος τοῖς πατράσιν ὑμῶν δοῦναι αὐτοῖς καθὼς αἱ ἡμέραι τοῦ οὐρανοῦ ἐπὶ τῆς γῆς.",
+        "VUL": "ut multiplicentur dies tui, et filiorum tuorum in terra, quam juravit Dominus patribus tuis, ut daret eis quamdiu cælum imminet terræ.",
+        "SYN": "дабы столько же много было дней ваших и дней детей ваших на той земле, которую Господь клялся дать отцам вашим, сколько дней небо будет над землею.",
+        "NEO": "afin que vos jours et les jours de vos enfants, dans le pays que \\+w Yahweh|strong=\"H3068\"\\+w** a juré à vos pères de leur donner, soient aussi nombreux que les jours des cieux au-dessus de la terre.",
+        "NAB": "so that, as long as the heavens are above the earth, you and your children may live on in the land which the LORD swore to your fathers he would give them.",
+        "VAT_ES": "Así, mientras haya cielo sobre la tierra, durarán tus días y los de tus hijos en el suelo que el Señor juró dar a tus padres.",
+        "CEI": "perché i vostri giorni e i giorni dei vostri figli, nel paese che il Signore ha giurato ai vostri padri di dare loro, siano numerosi come i giorni dei cieli sopra la terra."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כִּי֩ אִם שָׁמֹ֨ר תִּשְׁמְר֜וּ/ן אֶת כָּל הַ/מִּצְוָ֣ה הַ/זֹּ֗את אֲשֶׁ֧ר אָנֹכִ֛י מְצַוֶּ֥ה אֶתְ/כֶ֖ם לַ/עֲשֹׂתָ֑/הּ לְ/אַהֲבָ֞ה אֶת יְהוָ֧ה אֱלֹהֵי/כֶ֛ם לָ/לֶ֥כֶת בְּ/כָל דְּרָכָ֖י/ו וּ/לְ/דָבְקָה בֽ/וֹ׃",
+        "LXX": "καὶ ἔσται ἐὰν ἀκοῇ ἀκούσητε πάσας τὰς ἐντολὰς ταύτας ὅσας ἐγὼ ἐντέλλομαί σοι σήμερον ποιεῖν, ἀγαπᾷν Κύριον τὸν θεὸν ἡμῶν καὶ πορεύεσθαι ἐν πάσαις ταῖς ὁδοῖς αὐτοῦ προσκολλᾶσθαι αὐτῷ·",
+        "VUL": "Si enim custodieritis mandata quæ ego præcipio vobis, et feceritis ea, ut diligatis Dominum Deum vestrum, et ambuletis in omnibus viis ejus, adhærentes ei,",
+        "SYN": "Ибо если вы будете соблюдать все заповеди сии, которые заповедую вам исполнять, будете любить Господа, Бога вашего, ходить всеми путями Его и прилепляться к Нему,",
+        "NEO": "Car si vous observez soigneusement tous ces commandements que je vous prescris d’accomplir, aimant \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, marchant dans toutes ses voies et vous attachant à lui,",
+        "NAB": "\"For if you are careful to observe all these commandments I enjoin on you, loving the LORD, your God, and following his ways exactly, and holding fast to him,",
+        "VAT_ES": "Porque si observan realmente todo este mandamiento que yo les doy, amando al Señor, su Dios, siguiendo siempre sus caminos y siendo en todo fieles a él.",
+        "CEI": "Poiché se osserverete diligentemente tutti questi comandi che vi dò e li metterete in pratica, amando il Signore vostro Dio, camminando in tutte le sue vie e tenendovi uniti a lui,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/הוֹרִ֧ישׁ יְהוָ֛ה אֶת כָּל הַ/גּוֹיִ֥ם הָ/אֵ֖לֶּה מִ/לִּ/פְנֵי/כֶ֑ם וִֽ/ירִשְׁתֶּ֣ם גּוֹיִ֔ם גְּדֹלִ֥ים וַ/עֲצֻמִ֖ים מִ/כֶּֽם׃",
+        "LXX": "καὶ ἐκβαλεῖ Κύριος πάντα τὰ ἔθνη ταῦτα ἀπὸ προσώπου ὑμῶν, καὶ κληρονομήσετε ἔθνη μεγάλα καὶ ἰσχυρὰ μᾶλλον ἢ ὑμεῖς.",
+        "VUL": "disperdet Dominus omnes gentes istas ante faciem vestram, et possidebitis eas, quæ majores et fortiores vobis sunt.",
+        "SYN": "то изгонит Господь все народы сии от лица вашего, и вы овладеете народами, которые больше и сильнее вас;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** chassera toutes ces nations devant vous, et vous vous rendrez maîtres de nations plus grandes et plus puissantes que vous.",
+        "NAB": "the LORD will drive all these nations out of your way, and you will dispossess nations greater and mightier than yourselves.",
+        "VAT_ES": "el Señor desposeerá delante de ustedes a todas esas naciones, y así podrán conquistarlas, aunque sean más grandes y fuertes que ustedes.",
+        "CEI": "il Signore scaccerà dinanzi a voi tutte quelle nazioni e voi v'impadronirete di nazioni più grandi e più potenti di voi."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "כָּל הַ/מָּק֗וֹם אֲשֶׁ֨ר תִּדְרֹ֧ךְ כַּֽף רַגְלְ/כֶ֛ם בּ֖/וֹ לָ/כֶ֣ם יִהְיֶ֑ה מִן הַ/מִּדְבָּ֨ר וְ/הַ/לְּבָנ֜וֹן מִן הַ/נָּהָ֣ר נְהַר פְּרָ֗ת וְ/עַד֙ הַ/יָּ֣ם הָֽ/אַחֲר֔וֹן יִהְיֶ֖ה גְּבֻלְ/כֶֽם׃",
+        "LXX": "πάντα τὸν τόπον οὗ ἐὰν πατήσῃ τὸ ἴχνος τοῦ ποδὸς ὑμῶν, ὑμῖν ἔσται· ἀπὸ τῆς ἐρήμου καὶ Ἀντιλιβάνου, καὶ ἀπὸ τοῦ ποταμοῦ τοῦ μεγάλου, ποταμοῦ Εὐφράτου, καὶ ἕως τῆς θαλάσσης τῆς ἐπὶ δυσμῶν ἔσται τὰ ὅριά σου.",
+        "VUL": "Omnis locus, quem calcaverit pes vester, vester erit. A deserto, et a Libano, a flumine magno Euphrate usque ad mare occidentale erunt termini vestri.",
+        "SYN": "всякое место, на которое ступит нога ваша, будет ваше; от пустыни и Ливана, от реки, реки Евфрата, даже до моря западного будут пределы ваши;",
+        "NEO": "Tout lieu que foulera la plante de vos pieds sera à vous ; votre frontière s’étendra du désert au Liban, et du fleuve de l’Euphrate jusqu’à la mer occidentale.",
+        "NAB": "Every place where you set foot shall be yours: from the desert and from Lebanon, from the Euphrates River to the Western Sea, shall be your territory.",
+        "VAT_ES": "Todos los lugares donde pongan la planta de sus pies, les pertenecerán. Y estas serán sus fronteras; desde el desierto, el Líbano y el río Eufrates, hasta el mar occidental.",
+        "CEI": "Ogni luogo che la pianta del vostro piede calcherà sarà vostro; i vostri confini si estenderanno dal deserto al Libano, dal fiume, il fiume Eufràte, al Mar Mediterraneo."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "לֹא יִתְיַצֵּ֥ב אִ֖ישׁ בִּ/פְנֵי/כֶ֑ם פַּחְדְּ/כֶ֨ם וּ/מֽוֹרַאֲ/כֶ֜ם יִתֵּ֣ן יְהוָ֣ה אֱלֹֽהֵי/כֶ֗ם עַל פְּנֵ֤י כָל הָ/אָ֨רֶץ֙ אֲשֶׁ֣ר תִּדְרְכוּ בָ֔/הּ כַּ/אֲשֶׁ֖ר דִּבֶּ֥ר לָ/כֶֽם׃",
+        "LXX": "οὐκ ἀντιστήσεται οὐδεὶς κατὰ πρόσωπον ὑμῶν· τὸν τρόμον ὑμῶν καὶ τὸν φόβον ὑμῶν ἐπιθήσει Κύριος ὁ θεὸς ὑμῶν ἐπὶ πρόσωπον πάσης τῆς γῆς ἐφ’ ἧς ἐὰν ἐπιβῆτε ἐπ’ αὐτῆς, ὃν τρόπον ἐλάλησεν πρὸς ὑμᾶς.",
+        "VUL": "Nullus stabit contra vos : terrorem vestrum et formidinem dabit Dominus Deus vester super omnem terram quam calcaturi estis, sicut locutus est vobis.",
+        "SYN": "никто не устоит против вас: Господь, Бог ваш, наведет страх и трепет пред вами на всякую землю, на которую вы ступите, как Он говорил вам.",
+        "NEO": "Nul ne tiendra devant vous ; \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, répandra devant vous, comme il vous l’a dit, la crainte et l’effroi sur tout le pays où vous mettrez le pied.",
+        "NAB": "None shall stand up against you; the LORD, your God, will spread the fear and dread of you through any land where you set foot, as he promised you.",
+        "VAT_ES": "Nadie podrá resistirles, porque el Señor, su Dios, sembrará el pánico y el terror en todo el territorio por donde ustedes pasen, como él mismo les ha prometido.",
+        "CEI": "Nessuno potrà resistere a voi; il Signore vostro Dio, come vi ha detto, diffonderà la paura e il terrore di voi su tutta la terra che voi calpesterete."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "רְאֵ֗ה אָנֹכִ֛י נֹתֵ֥ן לִ/פְנֵי/כֶ֖ם הַ/יּ֑וֹם בְּרָכָ֖ה וּ/קְלָלָֽה׃",
+        "LXX": "Ἰδοὺ ἐγὼ δίδωμι ἐνώπιον ὑμῶν σήμερον τὴν εὐλογίαν καὶ τὴν κατάραν·",
+        "VUL": "En propono in conspectu vestro hodie benedictionem et maledictionem :",
+        "SYN": "Вот, я предлагаю вам сегодня благословение и проклятие:",
+        "NEO": "Voici que je mets aujourd’hui devant vous une bénédiction et une malédiction :",
+        "NAB": "\"I set before you here, this day, a blessing and a curse:",
+        "VAT_ES": "Yo pongo hoy delante de ustedes una bendición y una maldición.",
+        "CEI": "Vedete, io pongo oggi davanti a voi una benedizione e una maledizione:"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "אֶֽת הַ/בְּרָכָ֑ה אֲשֶׁ֣ר תִּשְׁמְע֗וּ אֶל מִצְוֺת֙ יְהוָ֣ה אֱלֹֽהֵי/כֶ֔ם אֲשֶׁ֧ר אָנֹכִ֛י מְצַוֶּ֥ה אֶתְ/כֶ֖ם הַ/יּֽוֹם׃",
+        "LXX": "τὴν εὐλογίαν, ἐὰν ἀκούσητε τὰς ἐντολὰς Κυρίου τοῦ θεοῦ ὑμῶν ἃς ἐγὼ ἐντέλλομαι ὑμῖν σήμερον·",
+        "VUL": "benedictionem, si obedieritis mandatis Domini Dei vestri, quæ ego hodie præcipio vobis :",
+        "SYN": "благословение, если послушаете заповедей Господа, Бога вашего, которые я заповедую вам сегодня,",
+        "NEO": "la bénédiction, si vous obéissez aux commandements de \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, que je vous prescris aujourd’hui ;",
+        "NAB": "a blessing for obeying the commandments of the LORD, your God, which I enjoin on you today;",
+        "VAT_ES": "Bendición, si obedecen los mandamientos del Señor, su Dios, que hoy les impongo.",
+        "CEI": "la benedizione, se obbedite ai comandi del Signore vostro Dio, che oggi vi dò;"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/הַ/קְּלָלָ֗ה אִם לֹ֤א תִשְׁמְעוּ֙ אֶל מִצְוֺת֙ יְהוָ֣ה אֱלֹֽהֵי/כֶ֔ם וְ/סַרְתֶּ֣ם מִן הַ/דֶּ֔רֶךְ אֲשֶׁ֧ר אָנֹכִ֛י מְצַוֶּ֥ה אֶתְ/כֶ֖ם הַ/יּ֑וֹם לָ/לֶ֗כֶת אַחֲרֵ֛י אֱלֹהִ֥ים אֲחֵרִ֖ים אֲשֶׁ֥ר לֹֽא יְדַעְתֶּֽם׃",
+        "LXX": "καὶ αἱ κατάραι, ἐὰν μὴ ἀκούσητε τὰς ἐντολὰς Κυρίου τοῦ θεοῦ ὑμῶν ὅσα ἐγὼ ἐντέλλομαι ὑμῖν σήμερον, καὶ πλανηθῆτε ἀπὸ τῆς ὁδοῦ ἧς ἐνετειλάμην ὑμῖν, πορευθέντες λατρεύειν θεοῖς ἑτέροις οὓς οὐκ οἴδατε.",
+        "VUL": "maledictionem, si non obedieritis mandatis Domini Dei vestri, sed recesseritis de via, quam ego nunc ostendo vobis, et ambulaveritis post deos alienos, quos ignoratis.",
+        "SYN": "а проклятие, если не послушаете заповедей Господа, Бога вашего, и уклонитесь от пути, который заповедую вам сегодня, и пойдете вслед богов иных, которых вы не знаете.",
+        "NEO": "la malédiction, si vous n’obéissez pas aux commandements de \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, et si vous vous détournez de la voie que je vous prescris en ce jour, pour aller après d’autres dieux que vous n’avez pas connus.",
+        "NAB": "a curse if you do not obey the commandments of the LORD, your God, but turn aside from the way I ordain for you today, to follow other gods, whom you have not known.",
+        "VAT_ES": "Maldición, si desobedecen esos mandamientos y se apartan del camino que yo les señalo, para ir detrás de dioses extraños, que ustedes no han conocido.",
+        "CEI": "la maledizione, se non obbedite ai comandi del Signore vostro Dio e se vi allontanate dalla via che oggi vi prescrivo, per seguire dei stranieri, che voi non avete conosciuti."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה כִּ֤י יְבִֽיאֲ/ךָ֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ אֶל הָ/אָ֕רֶץ אֲשֶׁר אַתָּ֥ה בָא שָׁ֖מָּ/ה לְ/רִשְׁתָּ֑/הּ וְ/נָתַתָּ֤ה אֶת הַ/בְּרָכָה֙ עַל הַ֣ר גְּרִזִ֔ים וְ/אֶת הַ/קְּלָלָ֖ה עַל הַ֥ר עֵיבָֽל׃",
+        "LXX": "καὶ ἔσται ὅταν εἰσαγάγῃ σε Κύριος ὁ θεός σου εἰς τὴν γῆν εἰς ἣν διαβαίνεις ἐκεῖ κληρονομῆσαι αὐτήν, καὶ δώσεις εὐλογίαν ἐπ’ ὄρος Γαριζεὶν καὶ τὴν κατάραν ἐπ’ ὄρος Γαιβάλ.",
+        "VUL": "Cum vero introduxerit te Dominus Deus tuus in terram, ad quam pergis habitandam, pones benedictionem super montem Garizim, maledictionem super montem Hebal :",
+        "SYN": "Когда введет тебя Господь, Бог твой, в ту землю, в которую ты идешь, чтоб овладеть ею, тогда произнеси благословение на горе Гаризим, а проклятие на горе Гевал:",
+        "NEO": "Et lorsque \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’aura fait entrer dans le pays où tu vas pour en prendre possession, tu prononceras la bénédiction sur le mont Garizim, et la malédiction sur le mont Ebal.",
+        "NAB": "When the LORD, your God, brings you into the land which you are to enter and occupy, then you shall pronounce the blessing on Mount Gerizim, the curse on Mount Ebal.",
+        "VAT_ES": "Y cuando el Señor, tu Dios, te introduzca en la tierra de la que vas a tomar posesión, pondrás la bendición sobre el monte Ebal.",
+        "CEI": "Quando il Signore tuo Dio ti avrà introdotto nel paese che vai a prendere in possesso, tu porrai la benedizione sul monte Garizim e la maledizione sul monte Ebal."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "הֲ/לֹא הֵ֜מָּה בְּ/עֵ֣בֶר הַ/יַּרְדֵּ֗ן אַֽחֲרֵי֙ דֶּ֚רֶךְ מְב֣וֹא הַ/שֶּׁ֔מֶשׁ בְּ/אֶ֨רֶץ֙ הַֽ/כְּנַעֲנִ֔י הַ/יֹּשֵׁ֖ב בָּ/עֲרָבָ֑ה מ֚וּל הַ/גִּלְגָּ֔ל אֵ֖צֶל אֵלוֹנֵ֥י מֹרֶֽה׃",
+        "LXX": "οὐκ ἰδοὺ ταῦτα πέραν τοῦ Ἰορδάνου ὀπίσω ὁδὸν δυσμῶν ἡλίου ἐν γῇ Χανάαν, τὸ κατοικοῦν ἐπὶ δυσμῶν ἐχόμενον τοῦ Γολγόλ, πλησίον τῆς δρυὸς τῆς ὑψηλῆς;",
+        "VUL": "qui sunt trans Jordanem, post viam quæ vergit ad solis occubitum in terra Chananæi, qui habitat in campestribus contra Galgalam, quæ est juxta vallem tendentem et intrantem procul.",
+        "SYN": "вот они за Иорданом, по дороге к захождению солнца, в земле Хананеев, живущих на равнине, против Галгала, близ дубравы Море.",
+        "NEO": "Ces montagnes ne sont-elles pas de l’autre côté du Jourdain, derrière le chemin de l’occident, au pays des Chananéens qui habitent dans l’Arabah, vis-à-vis de Galgala, près des térébinthes de Moré ?",
+        "NAB": "(Are they not beyond the Jordan, on the other side of the western road in the country of the Canaanites who live in the Arabah, opposite the Gilgal beside the terebinth of Moreh?)",
+        "VAT_ES": "Estas montañas se encuentran, como es sabido, al otro lado del Jordán, detrás del camino del oeste, en el país de los cananeos que habitan en la Arabá, frente a Guilgal, cerca de la encina de Moré.",
+        "CEI": "Questi monti si trovano appunto oltre il Giordano, dietro la via verso occidente, nel paese dei Cananei che abitano l'Araba di fronte a Gàlgala presso le Querce di More."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "כִּ֤י אַתֶּם֙ עֹבְרִ֣ים אֶת הַ/יַּרְדֵּ֔ן לָ/בֹא֙ לָ/רֶ֣שֶׁת אֶת הָ/אָ֔רֶץ אֲשֶׁר יְהוָ֥ה אֱלֹהֵי/כֶ֖ם נֹתֵ֣ן לָ/כֶ֑ם וִֽ/ירִשְׁתֶּ֥ם אֹתָ֖/הּ וִֽ/ישַׁבְתֶּם בָּֽ/הּ׃",
+        "LXX": "ὑμεῖς γὰρ διαβαίνετε τὸν Ἰορδάνην, εἰσελθόντες κληρονομῆσαι τὴν γῆν ἣν Κύριος ὁ θεὸς ὑμῶν δίδωσιν ὑμῖν ἐν κλήρῳ πάσας τὰς ἡμέρας, καὶ κατοικήσετε ἐν αὐτῇ.",
+        "VUL": "Vos enim transibitis Jordanem, ut possideatis terram quam Dominus Deus vester daturus est vobis, ut habeatis et possideatis illam.",
+        "SYN": "Ибо вы переходите Иордан, чтобы пойти овладеть землею, которую Господь, Бог ваш, дает вам [в удел навсегда], и овладеете ею и будете жить на ней.",
+        "NEO": "Car vous allez passer le Jourdain pour entrer en possession du pays que \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, vous donne ; vous le posséderez et vous y habiterez.",
+        "NAB": "For you are about to cross the Jordan to enter and occupy the land which the LORD, your God, is giving you. When, therefore, you take possession of it and settle there,",
+        "VAT_ES": "Porque ustedes van a cruzar el Jordán para ir a tomar posesión de la tierra que les da el Señor, su Dios Cuando la posean y vivan en ella.",
+        "CEI": "Voi infatti state per passare il Giordano per prendere in possesso il paese, che il Signore vostro Dio vi dà; voi lo possiederete e lo abiterete."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וּ/שְׁמַרְתֶּ֣ם לַ/עֲשׂ֔וֹת אֵ֥ת כָּל הַֽ/חֻקִּ֖ים וְ/אֶת הַ/מִּשְׁפָּטִ֑ים אֲשֶׁ֧ר אָנֹכִ֛י נֹתֵ֥ן לִ/פְנֵי/כֶ֖ם הַ/יּֽוֹם׃",
+        "LXX": "καὶ φυλάξεσθε τοῦ ποιεῖν πάντα τὰ προστάγματα αὐτοῦ καὶ τὰς κρίσεις ταύτας ὅσας ἐγὼ δίδωμι ἐνώπιον ὑμῶν σήμερον.",
+        "VUL": "Videte ergo ut impleatis cæremonias atque judicia, quæ ego hodie ponam in conspectu vestro.",
+        "SYN": "Итак старайтесь соблюдать все постановления и законы [Его], которые предлагаю я вам сегодня.",
+        "NEO": "Vous aurez donc soin d’observer toutes les lois et toutes les ordonnances que je mets aujourd’hui devant vous. »",
+        "NAB": "be careful to observe all the statutes and decrees that I set before you today.",
+        "VAT_ES": "cumplan fielmente todos los preceptos y leyes que hoy les impongo.",
+        "CEI": "Avrete cura di mettere in pratica tutte le leggi e le norme che oggi io pongo dinanzi a voi."
+      }
+    }
+  }
+}

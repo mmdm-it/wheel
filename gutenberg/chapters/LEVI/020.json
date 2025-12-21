@@ -1,0 +1,501 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LEVI_020",
+  "book_key": "LEVI",
+  "sequence": 20,
+  "chapter_in": {
+    "MT": 20,
+    "VUL": 20,
+    "LXX": 20
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "Y el Señor dijo a Moisés:",
+        "CEI": "Il Signore disse ancora a Mosè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/אֶל בְּנֵ֣י יִשְׂרָאֵ֘ל תֹּאמַר֒ אִ֣ישׁ אִישׁ֩ מִ/בְּנֵ֨י יִשְׂרָאֵ֜ל וּ/מִן הַ/גֵּ֣ר הַ/גָּ֣ר בְּ/יִשְׂרָאֵ֗ל אֲשֶׁ֨ר יִתֵּ֧ן מִ/זַּרְע֛/וֹ לַ/מֹּ֖לֶךְ מ֣וֹת יוּמָ֑ת עַ֥ם הָ/אָ֖רֶץ יִרְגְּמֻ֥/הוּ בָ/אָֽבֶן׃",
+        "LXX": "Καὶ τοῖς υἱοῖς Ἰσραὴλ λαλήσεις Ἐάν τις ἀπὸ τῶν υἱῶν Ἰσραὴλ ἢ ἀπὸ τῶν γεγενημένων προσηλύτων ἐν Ἰσραὴλ ὃς ἂν δῷ τοῦ σπέρματος αὐτοῦ ἄρχοντι, θανάτῳ θανατούσθω· τὸ ἔθνος τὸ ἐπὶ τῆς γῆς λιθοβολήσουσιν αὐτὸν ἐν λίθοις.",
+        "VUL": "Hæc loqueris filiis Israël : Homo de filiis Israël, et de advenis qui habitant in Israël, si quis dederit de semine suo idolo Moloch, morte moriatur : populus terræ lapidabit eum.",
+        "SYN": "скажи сие сынам Израилевым: кто из сынов Израилевых и из пришельцев, живущих между Израильтянами, даст из детей своих Молоху, тот да будет предан смерти: народ земли да побьет его камнями;",
+        "NEO": "« Tu diras aux enfants d’Israël :",
+        "NAB": "\"Tell the Israelites: Anyone, whether an Israelite or an alien residing in Israel, who gives any of his offspring to Molech shall be put to death. Let his fellow citizens stone him.",
+        "VAT_ES": "Tú les dirás a los israelitas: Cualquier hombre entre ustedes, o entre los extranjeros residentes en Israel, que entregue a alguno de sus descendientes a Moloc, será castigado con la muerte: el pueblo del país lo hará morir a pedradas.",
+        "CEI": "\"Dirai agli Israeliti: Chiunque tra gli Israeliti o tra i forestieri che soggiornano in Israele darà qualcuno dei suoi figli a Moloch, dovrà essere messo a morte; il popolo del paese lo lapiderà."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֞י אֶתֵּ֤ן אֶת פָּנַ/י֙ בָּ/אִ֣ישׁ הַ/ה֔וּא וְ/הִכְרַתִּ֥י אֹת֖/וֹ מִ/קֶּ֣רֶב עַמּ֑/וֹ כִּ֤י מִ/זַּרְע/וֹ֙ נָתַ֣ן לַ/מֹּ֔לֶךְ לְמַ֗עַן טַמֵּא֙ אֶת מִקְדָּשִׁ֔/י וּ/לְ/חַלֵּ֖ל אֶת שֵׁ֥ם קָדְשִֽׁ/י׃",
+        "LXX": "καὶ ἐγὼ ἐπιστήσω τὸ πρόσωπόν μου ἐπὶ τὸν ἄνθρωπον ἐκεῖνον καὶ ἀπολῶ αὐτὸν ἐκ τοῦ λαοῦ αὐτοῦ, ὅτι τοῦ σπέρματος αὐτοῦ ἔδωκεν ἄρχοντι, ἵνα μιάνῃ τὰ ἅγιά μου καὶ βεβηλώσῃ τὸ ὄνομα τῶν ἡγιασμένων μοι.",
+        "VUL": "Et ego ponam faciem meam contra illum : succidamque eum de medio populi sui, eo quod dederit de semine suo Moloch, et contaminaverit sanctuarium meum, ac polluerit nomen sanctum meum.",
+        "SYN": "и Я обращу лице Мое на человека того и истреблю его из народа его за то, что он дал из детей своих Молоху, чтоб осквернить святилище Мое и обесчестить святое имя Мое;",
+        "NEO": "Et moi, je tournerai ma face contre cet homme, et je le retrancherai du milieu de son peuple, parce qu’il aura livré un de ses enfants à Moloch, pour souiller mon sanctuaire et profaner mon saint nom.",
+        "NAB": "I myself will turn against such a man and cut him off from the body of his people; for in giving his offspring to Molech, he has defiled my sanctuary and profaned my holy name.",
+        "VAT_ES": "Yo volveré mi rostro contra ese hombre y lo extirparé de su pueblo, porque él dio un descendiente suyo a Moloc, y así manchó mi Santuario y profanó mi santo Nombre.",
+        "CEI": "Anch'io volgerò la faccia contro quell'uomo e lo eliminerò dal suo popolo, perché ha dato qualcuno dei suoi figli a Moloch con l'intenzione di contaminare il mio santuario e profanare il mio santo nome."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/אִ֡ם הַעְלֵ֣ם יַעְלִימֽוּ֩ עַ֨ם הָ/אָ֜רֶץ אֶת עֵֽינֵי/הֶם֙ מִן הָ/אִ֣ישׁ הַ/ה֔וּא בְּ/תִתּ֥/וֹ מִ/זַּרְע֖/וֹ לַ/מֹּ֑לֶךְ לְ/בִלְתִּ֖י הָמִ֥ית אֹתֽ/וֹ׃",
+        "LXX": "ἐὰν δὲ ὑπερόψει ὑπερίδωσιν οἱ αὐτόχθονες τῆς γῆς τοῖς ὀφθαλμοῖς αὐτῶν ἀπὸ τοῦ ἀνθρώπου ἐκείνου, ἐν τῷ δοῦναι αὐτὸν τοῦ σπέρματος αὐτοῦ ἄρχοντι, τοῦ μὴ ἀποκτεῖναι αὐτόν·",
+        "VUL": "Quod si negligens populus terræ, et quasi parvipendens imperium meum, dimiserit hominem qui dedit de semine suo Moloch, nec voluerit eum occidere :",
+        "SYN": "и если народ земли не обратит очей своих на человека того, когда он даст из детей своих Молоху, и не умертвит его,",
+        "NEO": "Si le peuple du pays ferme les yeux sur cet homme quand il donnera de ses enfants à Moloch, et ne le fait pas mourir,",
+        "NAB": "Even if his fellow citizens connive at such a man's crime of giving his offspring to Molech, and fail to put him to death,",
+        "VAT_ES": "Y si el pueblo del país cierra sus ojos ante ese hombre, cuando él entrega un descendiente suyo a Moloc, y no lo mata,",
+        "CEI": "Se il popolo del paese chiude gli occhi quando quell'uomo dà qualcuno dei suoi figli a Moloch e non lo mette a morte,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/שַׂמְתִּ֨י אֲנִ֧י אֶת פָּנַ֛/י בָּ/אִ֥ישׁ הַ/ה֖וּא וּ/בְ/מִשְׁפַּחְתּ֑/וֹ וְ/הִכְרַתִּ֨י אֹת֜/וֹ וְ/אֵ֣ת כָּל הַ/זֹּנִ֣ים אַחֲרָ֗י/ו לִ/זְנ֛וֹת אַחֲרֵ֥י הַ/מֹּ֖לֶךְ מִ/קֶּ֥רֶב עַמָּֽ/ם׃",
+        "LXX": "καὶ ἐπιστήσω τὸ πρόσωπόν μου ἐπὶ τὸν ἄνθρωπον ἐκεῖνον καὶ τὴν συγγενίαν αὐτοῦ, καὶ ἀπολῶ αὐτὸν καὶ πάντας τοὺς ὁμονοοῦντας αὐτῷ, ὥστε ἐκπορνεύειν αὐτὸν εἰς τοὺς ἄρχοντας, ἐκ τοῦ λαοῦ αὐτῶν.",
+        "VUL": "ponam faciem meam super hominem illum, et super cognationem ejus, succidamque et ipsum, et omnes qui consenserunt ei ut fornicarentur cum Moloch, de medio populi sui.",
+        "SYN": "то Я обращу лице Мое на человека того и на род его и истреблю его из народа его, и всех блудящих по следам его, чтобы блудно ходить вслед Молоха.",
+        "NEO": "moi, je tournerai ma face contre cet homme et contre sa famille, et je le retrancherai du milieu de son peuple, avec tous ceux qui se prostituent comme lui en se prostituant à Moloch.",
+        "NAB": "I myself will set my face against that man and his family and will cut off from their people both him and all who join him in his wanton worship of Molech.",
+        "VAT_ES": "yo mismo volveré mi rostro contra ese hombre y su familia, y lo extirparé de su pueblo, junto con todos aquellos que lo sigan, prostituyéndose detrás de Moloc.",
+        "CEI": "io volgerò la faccia contro quell'uomo e contro la sua famiglia ed eliminerò dal suo popolo lui con quanti si danno all'idolatria come lui, abbassandosi a venerare Moloch."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/הַ/נֶּ֗פֶשׁ אֲשֶׁ֨ר תִּפְנֶ֤ה אֶל הָֽ/אֹבֹת֙ וְ/אֶל הַ/יִּדְּעֹנִ֔ים לִ/זְנ֖וֹת אַחֲרֵי/הֶ֑ם וְ/נָתַתִּ֤י אֶת פָּנַ/י֙ בַּ/נֶּ֣פֶשׁ הַ/הִ֔וא וְ/הִכְרַתִּ֥י אֹת֖/וֹ מִ/קֶּ֥רֶב עַמּֽ/וֹ׃",
+        "LXX": "καὶ ψυχὴ ἣ ἐὰν ἐπακολουθήσῃ ἐνγαστριμύθοις ἢ ἐπαοιδοῖς ὥστε ἐκπορνεῦσαι ὀπίσω αὐτῶν, ἐπιστήσω τὸ πρόσωπόν μου ἐπὶ τὴν ψυχὴν ἐκείνην καὶ ἀπολῶ αὐτὴν ἐκ τοῦ λαοῦ αὐτῆς.",
+        "VUL": "Anima, quæ declinaverit ad magos et ariolos, et fornicata fuerit cum eis, ponam faciem meam contra eam, et interficiam illam de medio populi sui.",
+        "SYN": "И если какая душа обратится к вызывающим мертвых и к волшебникам, чтобы блудно ходить вслед их, то Я обращу лице Мое на ту душу и истреблю ее из народа ее.",
+        "NEO": "Si quelqu’un s’adresse à ceux qui évoquent les esprits et aux devins, pour se prostituer après eux, je tournerai ma face contre cet homme et je le retrancherai du milieu de son peuple.",
+        "NAB": "Should anyone turn to mediums and fortune-tellers and follow their wanton ways, I will turn against such a one and cut him off from his people.",
+        "VAT_ES": "Y si una persona consulta a los espíritus de los muertos o a otros espíritus, y se prostituye detrás de ellos, yo volveré mi rostro contra esa persona y la extirparé de su pueblo.",
+        "CEI": "Se un uomo si rivolge ai negromanti e agli indovini per darsi alle superstizioni dietro a loro, io volgerò la faccia contro quella persona e la eliminerò dal suo popolo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הִ֨תְקַדִּשְׁתֶּ֔ם וִ/הְיִיתֶ֖ם קְדֹשִׁ֑ים כִּ֛י אֲנִ֥י יְהוָ֖ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "καὶ ἔσεσθε ἅγιοι, ὅτι ἅγιος ἐγὼ Κύριος ὁ θεὸς ὑμῶν·",
+        "VUL": "Sanctificamini et estote sancti, quia ego sum Dominus Deus vester.",
+        "SYN": "Освящайте себя и будьте святы, ибо Я Господь, Бог ваш, [свят].",
+        "NEO": "Vous vous sanctifierez et vous serez saints, car je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu.",
+        "NAB": "Sanctify yourselves, then, and be holy; for I, the LORD, your God, am holy.",
+        "VAT_ES": "Ustedes se santificarán y serán santos, porque yo soy el Señor, su Dios.",
+        "CEI": "Santificatevi dunque e siate santi, perché io sono il Signore, vostro Dio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וּ/שְׁמַרְתֶּם֙ אֶת חֻקֹּתַ֔/י וַ/עֲשִׂיתֶ֖ם אֹתָ֑/ם אֲנִ֥י יְהוָ֖ה מְקַדִּשְׁ/כֶֽם׃",
+        "LXX": "καὶ φυλάξεσθε τὰ προστάγματά μου καὶ ποιήσετε αὐτά, ἐγὼ Κύριος ὁ ἁγιάζων ὑμᾶς.",
+        "VUL": "Custodite præcepta mea, et facite ea : ego Dominus qui sanctifico vos.",
+        "SYN": "Соблюдайте постановления Мои и исполняйте их, ибо Я Господь, освящающий вас.",
+        "NEO": "Vous observerez mes lois et vous les mettrez en pratique. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, qui vous sanctifie.",
+        "NAB": "Be careful, therefore, to observe what I, the LORD, who make you holy, have prescribed.",
+        "VAT_ES": "Observarán fielmente mis preceptos, Yo soy el Señor, que los santifico.",
+        "CEI": "Osservate le mie leggi e mettetele in pratica. Io sono il Signore che vi vuole fare santi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "כִּֽי אִ֣ישׁ אִ֗ישׁ אֲשֶׁ֨ר יְקַלֵּ֧ל אֶת אָבִ֛י/ו וְ/אֶת אִמּ֖/וֹ מ֣וֹת יוּמָ֑ת אָבִ֧י/ו וְ/אִמּ֛/וֹ קִלֵּ֖ל דָּמָ֥י/ו בּֽ/וֹ׃",
+        "LXX": "ἄνθρωπος ἄνθρωπος ὃς ἂν κακῶς εἴπῃ τὸν πατέρα αὐτοῦ ἢ τὴν μητέρα αὐτοῦ θανάτῳ θανατούσθω· πατέρα αὐτοῦ ἢ μητέρα αὐτοῦ κακῶς εἶπεν, ἔνοχος ἔσται.",
+        "VUL": "Qui maledixerit patri suo, aut matri, morte moriatur : patri matrique maledixit : sanguis ejus sit super eum.",
+        "SYN": "Кто будет злословить отца своего или мать свою, тот да будет предан смерти; отца своего и мать свою он злословил: кровь его на нем.",
+        "NEO": "Quiconque maudit son père ou sa mère sera puni de mort ; il a maudit son père ou sa mère : son sang est sur lui.",
+        "NAB": "\"Anyone who curses his father or mother shall be put to death; since he has cursed his father or mother, he has forfeited his life.",
+        "VAT_ES": "Si alguien insulta a su padre o a su madre, será castigado con la muerte, él ha insultado a su padre y a su madre, y por eso su propia sangre caerá sobre él.",
+        "CEI": "Chiunque maltratta suo padre o sua madre dovrà essere messo a morte; ha maltrattato suo padre o sua madre: il suo sangue ricadrà su di lui."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/אִ֗ישׁ אֲשֶׁ֤ר יִנְאַף֙ אֶת אֵ֣שֶׁת אִ֔ישׁ אֲשֶׁ֥ר יִנְאַ֖ף אֶת אֵ֣שֶׁת רֵעֵ֑/הוּ מֽוֹת יוּמַ֥ת הַ/נֹּאֵ֖ף וְ/הַ/נֹּאָֽפֶת׃",
+        "LXX": "ἄνθρωπος ὃς ἂν μοιχεύσηται γυναῖκα ἀνδρός, ἢ ὃς ἂν μοιχεύσηται γυναῖκα τοῦ πλησίον, θανάτῳ θανατούσθωσαν ὁ μοιχεύων καὶ ἡ μοιχευομένη.",
+        "VUL": "Si mchatus quis fuerit cum uxore alterius, et adulterium perpetraverit cum conjuge proximi sui, morte moriantur et mchus et adultera.",
+        "SYN": "Если кто будет прелюбодействовать с женой замужнею, если кто будет прелюбодействовать с женою ближнего своего, -- да будут преданы смерти и прелюбодей и прелюбодейка.",
+        "NEO": "Si un homme commet adultère avec une femme mariée, et s’il commet adultère avec la femme de son prochain, ils seront tous deux punis de mort, l’homme et la femme adultères.",
+        "NAB": "If a man commits adultery with his neighbor's wife, both the adulterer and the adulteress shall be put to death.",
+        "VAT_ES": "Si un hombre comete adulterio con la mujer de su prójimo, los dos serán castigados con la muerte.",
+        "CEI": "Se uno commette adulterio con la moglie del suo prossimo, l'adultero e l'adùltera dovranno esser messi a morte."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/אִ֗ישׁ אֲשֶׁ֤ר יִשְׁכַּב֙ אֶת אֵ֣שֶׁת אָבִ֔י/ו עֶרְוַ֥ת אָבִ֖י/ו גִּלָּ֑ה מֽוֹת יוּמְת֥וּ שְׁנֵי/הֶ֖ם דְּמֵי/הֶ֥ם בָּֽ/ם׃",
+        "LXX": "ἐάν τις κοιμηθῇ μετὰ γυναικὸς τοῦ πατρὸς αὐτοῦ, ἀσχημοσύνην τοῦ πατρὸς αὐτοῦ ἀπεκάλυψεν, θανατούσθω· ἀμφότεροι ἔνοχοί εἰσιν.",
+        "VUL": "Qui dormierit cum noverca sua, et revelaverit ignominiam patris sui, morte moriantur ambo : sanguis eorum sit super eos.",
+        "SYN": "Кто ляжет с женою отца своего, тот открыл наготу отца своего: оба они да будут преданы смерти, кровь их на них.",
+        "NEO": "Si un homme couche avec la femme de son père, et découvre ainsi la nudité de son père, ils seront tous deux punis de mort : leur sang est sur eux.",
+        "NAB": "If a man disgraces his father by lying with his father's wife, both the man and his stepmother shall be put to death; they have forfeited their lives.",
+        "VAT_ES": "Si un hombre se acuesta con la mujer de su padre, es como si tuviera relaciones con su propio padre; por eso los dos serán castigados con la muerte, y su sangre caerá sobre ellos.",
+        "CEI": "Se uno ha rapporti con la matrigna, egli scopre la nudità del padre; tutti e due dovranno essere messi a morte; il loro sangue ricadrà su di essi."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/אִ֗ישׁ אֲשֶׁ֤ר יִשְׁכַּב֙ אֶת כַּלָּת֔/וֹ מ֥וֹת יוּמְת֖וּ שְׁנֵי/הֶ֑ם תֶּ֥בֶל עָשׂ֖וּ דְּמֵי/הֶ֥ם בָּֽ/ם׃",
+        "LXX": "καὶ ἐάν τις κοιμηθῇ μετὰ νύμφης αὐτοῦ, θανάτῳ θανατούσθωσαν ἀμφότεροι· ἠσεβήκασιν γάρ, ἔνοχοί εἰσιν.",
+        "VUL": "Si quis dormierit cum nuru sua, uterque moriatur, quia scelus operati sunt : sanguis eorum sit super eos.",
+        "SYN": "Если кто ляжет с невесткою своею, то оба они да будут преданы смерти: мерзость сделали они, кровь их на них.",
+        "NEO": "Si un homme couche avec sa belle-fille, ils seront tous deux punis de mort ; ils ont fait une chose honteuse : leur sang est sur eux.",
+        "NAB": "If a man lies with his daughter-in-law, both of them shall be put to death; since they have committed an abhorrent deed, they have forfeited their lives.",
+        "VAT_ES": "Si un hombre se acuesta con su nuera, los dos serán castigados con la muerte; ellos han cometido un incesto, y por eso su sangre caerá sobre ellos.",
+        "CEI": "Se uno ha rapporti con la nuora, tutti e due dovranno essere messi a morte; hanno commesso un abominio; il loro sangue ricadrà su di essi."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/אִ֗ישׁ אֲשֶׁ֨ר יִשְׁכַּ֤ב אֶת זָכָר֙ מִשְׁכְּבֵ֣י אִשָּׁ֔ה תּוֹעֵבָ֥ה עָשׂ֖וּ שְׁנֵי/הֶ֑ם מ֥וֹת יוּמָ֖תוּ דְּמֵי/הֶ֥ם בָּֽ/ם׃",
+        "LXX": "καὶ ὃς ἂν κοιμηθῇ μετὰ ἄρσενος κοίτην γυναικός, βδέλυγμα ἐποίησαν ἀμφότεροι· θανατούσθωσαν, ἔνοχοί εἰσιν.",
+        "VUL": "Qui dormierit cum masculo coitu femineo, uterque operatus est nefas : morte moriantur : sit sanguis eorum super eos.",
+        "SYN": "Если кто ляжет с мужчиною, как с женщиною, то оба они сделали мерзость: да будут преданы смерти, кровь их на них.",
+        "NEO": "Si un homme couche avec un homme comme on fait avec une femme, ils ont fait tous deux une chose abominable, ils seront punis de mort : leur sang est sur eux.",
+        "NAB": "If a man lies with a male as with a woman, both of them shall be put to death for their abominable deed; they have forfeited their lives.",
+        "VAT_ES": "Si un hombre se acuesta con otro hombre como si fuera una mujer, los dos cometen una cosa abominable; por eso serán castigados con la muerte y su sangre caerá sobre ellos.",
+        "CEI": "Se uno ha rapporti con un uomo come con una donna, tutti e due hanno commesso un abominio; dovranno essere messi a morte; il loro sangue ricadrà su di loro."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/אִ֗ישׁ אֲשֶׁ֨ר יִקַּ֧ח אֶת אִשָּׁ֛ה וְ/אֶת אִמָּ֖/הּ זִמָּ֣ה הִ֑וא בָּ/אֵ֞שׁ יִשְׂרְפ֤וּ אֹת/וֹ֙ וְ/אֶתְ/הֶ֔ן וְ/לֹא תִהְיֶ֥ה זִמָּ֖ה בְּ/תוֹכְ/כֶֽם׃",
+        "LXX": "ὃς ἐὰν λάβῃ γυναῖκα καὶ τὴν μητέρα αὐτῆς, ἀνόμημά ἐστιν· ἐν πυρὶ κατακαύσουσιν αὐτὸν καὶ αὐτὰς, καὶ οὐκ ἔσται ἀνομία ἐν ὑμῖν.",
+        "VUL": "Qui supra uxorem filiam, duxerit matrem ejus, scelus operatus est : vivus ardebit cum eis, nec permanebit tantum nefas in medio vestri.",
+        "SYN": "Если кто возьмет себе жену и мать ее: это беззаконие; на огне должно сжечь его и их, чтобы не было беззакония между вами.",
+        "NEO": "Si un homme prend pour femmes la fille et la mère, c’est un crime ; on les livrera au feu, lui et elles, afin que ce crime n’existe pas parmi vous.",
+        "NAB": "If a man marries a woman and her mother also, the man and the two women as well shall be burned to death for their shameful conduct, so that such shamefulness may not be found among you.",
+        "VAT_ES": "Si un hombre se casa con una mujer y con la madre de esta, lo que hace es una depravación: tanto él como ellas serán quemados, para que no haya tal depravación entre ustedes.",
+        "CEI": "Se uno prende in moglie la figlia e la madre, è un delitto; si bruceranno con il fuoco lui ed esse, perché non ci sia fra di voi tale delitto."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/אִ֗ישׁ אֲשֶׁ֨ר יִתֵּ֧ן שְׁכָבְתּ֛/וֹ בִּ/בְהֵמָ֖ה מ֣וֹת יוּמָ֑ת וְ/אֶת הַ/בְּהֵמָ֖ה תַּהֲרֹֽגוּ׃",
+        "LXX": "καὶ ὃς ἂν δῷ κοιτασίαν αὐτοῦ ἐν τετράποδι, θανάτῳ θανατούσθω, καὶ τὸ τετράπουν ἀποκτενεῖτε.",
+        "VUL": "Qui cum jumento et pecore coierit, morte moriatur : pecus quoque occidite.",
+        "SYN": "Кто смесится со скотиною, того предать смерти, и скотину убейте.",
+        "NEO": "L’homme qui aura commerce avec une bête sera puni de mort, et vous tuerez la bête.",
+        "NAB": "If a man has carnal relations with an animal, the man shall be put to death, and the animal shall be slain.",
+        "VAT_ES": "Si un hombre tiene trato sexual con una bestia, será castigado con la muerte, y también matarán a la bestia.",
+        "CEI": "L'uomo che si abbrutisce con una bestia dovrà essere messo a morte; dovrete uccidere anche la bestia."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/אִשָּׁ֗ה אֲשֶׁ֨ר תִּקְרַ֤ב אֶל כָּל בְּהֵמָה֙ לְ/רִבְעָ֣ה אֹתָ֔/הּ וְ/הָרַגְתָּ֥ אֶת הָ/אִשָּׁ֖ה וְ/אֶת הַ/בְּהֵמָ֑ה מ֥וֹת יוּמָ֖תוּ דְּמֵי/הֶ֥ם בָּֽ/ם׃",
+        "LXX": "καὶ γυνὴ ἥτις προσελεύσεται πρὸς πᾶν κτῆνος βιβασθῆναι αὐτὴν ὑπ’ αὐτοῦ, ἀποκτενεῖτε τὴν γυναῖκα καὶ τὸ κτῆνος· θανάτῳ θανατούσθω, ἔνοχοί εἰσιν.",
+        "VUL": "Mulier, quæ succubuerit cuilibet jumento, simul interficietur cum eo : sanguis eorum sit super eos.",
+        "SYN": "Если женщина пойдет к какой-нибудь скотине, чтобы совокупиться с нею, то убей женщину и скотину: да будут они преданы смерти, кровь их на них.",
+        "NEO": "Si une femme s’approche d’une bête pour se prostituer à elle, tu tueras la femme et la bête ; elles seront mises à mort : leur sang est sur elles.",
+        "NAB": "If a woman goes up to any animal to mate with it, the woman and the animal shall be slain; let them both be put to death; their lives are forfeit.",
+        "VAT_ES": "Si una mujer se acerca a una bestia para unirse con ella, matarán a la mujer y a la bestia: ambas serán castigadas con la muerte y su sangre caerá sobre ellas.",
+        "CEI": "Se una donna si accosta a una bestia per lordarsi con essa, ucciderai la donna e la bestia; tutte e due dovranno essere messe a morte; il loro sangue ricadrà su di loro."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/אִ֣ישׁ אֲשֶׁר יִקַּ֣ח אֶת אֲחֹת֡/וֹ בַּת אָבִ֣י/ו א֣וֹ בַת אִ֠מּ/וֹ וְ/רָאָ֨ה אֶת עֶרְוָתָ֜/הּ וְ/הִֽיא תִרְאֶ֤ה אֶת עֶרְוָת/וֹ֙ חֶ֣סֶד ה֔וּא וְ/נִ֨כְרְת֔וּ לְ/עֵינֵ֖י בְּנֵ֣י עַמָּ֑/ם עֶרְוַ֧ת אֲחֹת֛/וֹ גִּלָּ֖ה עֲוֺנ֥/וֹ יִשָּֽׂא׃",
+        "LXX": "ὃς ἐὰν λάβῃ τὴν ἀδελφὴν αὐτοῦ ἐκ πατρὸς αὐτοῦ ἢ ἐκ μητρὸς αὐτοῦ, καὶ ἴδῃ τὴν ἀσχημοσύνην αὐτῆς καὶ αὕτη ἴδῃ τὴν ἀσχημοσύνην αὐτοῦ, ὄνειδός ἐστιν, ἐξολεθρευθήσονται ἐνώπιον υἱῶν γένους αὐτῶν· ἀσχημοσύνην ἀδελφῆς αὐτοῦ ἀπεκάλυψεν, ἁμαρτίαν κομιοῦνται.",
+        "VUL": "Qui acceperit sororem suam filiam patris sui, vel filiam matris suæ, et viderit turpitudinem ejus, illaque conspexerit fratris ignominiam, nefariam rem operati sunt : occidentur in conspectu populi sui, eo quod turpitudinem suam mutuo revelaverint, et portabunt iniquitatem suam.",
+        "SYN": "Если кто возьмет сестру свою, дочь отца своего или дочь матери своей, и увидит наготу ее, и она увидит наготу его: это срам, да будут они истреблены пред глазами сынов народа своего; он открыл наготу сестры своей: грех свой понесет он.",
+        "NEO": "Si un homme prend sa sœur, fille de son père ou fille de sa mère, s’il voit sa nudité et qu’elle voie la sienne, c’est une infamie ; ils seront retranchés sous les yeux des enfants de leur peuple. Il a découvert la nudité de sa sœur, il portera son iniquité.",
+        "NAB": "If a man consummates marriage with his sister or his half-sister, they shall be publicly cut off from their people for this shameful deed; the man shall pay the penalty of having had intercourse with his own sister.",
+        "VAT_ES": "Si alguien se casa con su hermana –sea hija de su padre o de su madre– de manera que él ve la desnudez de ella, y ella la de él, cometen una ignominia: ambos serán extirpados a la vista de sus compatriotas. Por haber tenido relaciones con su hermana, él deberá cargar con su culpa.",
+        "CEI": "Se uno prende la propria sorella, figlia di suo padre o figlia di sua madre, e vede la nudità di lei ed essa vede la nudità di lui, è un'infamia; tutti e due saranno eliminati alla presenza dei figli del loro popolo; quel tale ha scoperto la nudità della propria sorella; dovrà portare la pena della sua iniquità."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ֠/אִישׁ אֲשֶׁר יִשְׁכַּ֨ב אֶת אִשָּׁ֜ה דָּוָ֗ה וְ/גִלָּ֤ה אֶת עֶרְוָתָ/הּ֙ אֶת מְקֹרָ֣/הּ הֶֽעֱרָ֔ה וְ/הִ֕יא גִּלְּתָ֖ה אֶת מְק֣וֹר דָּמֶ֑י/הָ וְ/נִכְרְת֥וּ שְׁנֵי/הֶ֖ם מִ/קֶּ֥רֶב עַמָּֽ/ם׃",
+        "LXX": "καὶ ἀνὴρ ὃς ἂν κοιμηθῇ μετὰ γυναικὸς ἀποκαθημένης καὶ ἀποκαλύψῃ τὴν ἀσχημοσύνην αὐτῆς, τὴν πηγὴν αὐτῆς ἀπεκάλυψεν, καὶ αὕτη ἀπεκάλυψεν τὴν ῥύσιν τοῦ αἵματος αὐτῆς· ἐξολεθρευθήσονται ἀμφότεροι ἐκ τοῦ γένους αὐτῶν.",
+        "VUL": "Qui coierit cum muliere in fluxu menstruo, et revelaverit turpitudinem ejus, ipsaque aperuerit fontem sanguinis sui, interficientur ambo de medio populi sui.",
+        "SYN": "Если кто ляжет с женою во время болезни _кровоочищения_ и откроет наготу ее, то он обнажил истечения ее, и она открыла течение кровей своих: оба они да будут истреблены из народа своего.",
+        "NEO": "Si un homme couche avec une femme qui a son indisposition menstruelle, et découvre sa nudité, il a découvert son flux, et elle a découvert le flux de son sang ; ils seront retranchés tous deux du milieu de leur peuple.",
+        "NAB": "If a man lies in sexual intercourse with a woman during her menstrual period, both of them shall be cut off from their people, because they have laid bare the flowing fountain of her blood.",
+        "VAT_ES": "Si un hombre se acuesta con una mujer en su período menstrual y tiene relaciones con ella, los dos serán extirpados de su pueblo, por él ha puesto al desnudo la fuente del flujo de la mujer y ella la ha descubierto.",
+        "CEI": "Se uno ha un rapporto con una donna durante le sue regole e ne scopre la nudità, quel tale ha scoperto la sorgente di lei ed essa ha scoperto la sorgente del proprio sangue; perciò tutti e due saranno eliminati dal loro popolo."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/עֶרְוַ֨ת אֲח֧וֹת אִמְּ/ךָ֛ וַ/אֲח֥וֹת אָבִ֖י/ךָ לֹ֣א תְגַלֵּ֑ה כִּ֧י אֶת שְׁאֵר֛/וֹ הֶעֱרָ֖ה עֲוֺנָ֥/ם יִשָּֽׂאוּ׃",
+        "LXX": "καὶ ἀσχημοσύνην ἀδελφῆς πατρός σου καὶ ἀδελφῆς μητρός σου οὐκ ἀποκαλύψεις· τὴν γὰρ οἰκειότητα ἀπεκάλυψεν, ἁμαρτίαν ἀποίσονται.",
+        "VUL": "Turpitudinem materteræ et amitæ tuæ non discooperies : qui hoc fecerit, ignominiam carnis suæ nudavit ; portabunt ambo iniquitatem suam.",
+        "SYN": "Наготы сестры матери твоей и сестры отца твоего не открывай, ибо таковой обнажает плоть свою: грех свой понесут они.",
+        "NEO": "Tu ne découvriras pas la nudité de la sœur de ta mère, ni de la sœur de ton père, car c’est découvrir sa propre chair : ils porteront leur iniquité.",
+        "NAB": "You shall not have intercourse with your mother's sister or your father's sister; whoever does so shall pay the penalty of incest.",
+        "VAT_ES": "No tendrás relaciones con la hermana de tu madre ni con la hermana de tu padre, porque eso sería como tener relaciones con uno mismo: los que lo hagan cargarán con su culpa.",
+        "CEI": "Non scoprirai la nudità della sorella di tua madre o della sorella di tuo padre; chi lo fa scopre la sua stessa carne; tutti e due porteranno la pena della loro iniquità."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/אִ֗ישׁ אֲשֶׁ֤ר יִשְׁכַּב֙ אֶת דֹּ֣דָת֔/וֹ עֶרְוַ֥ת דֹּד֖/וֹ גִּלָּ֑ה חֶטְאָ֥/ם יִשָּׂ֖אוּ עֲרִירִ֥ים יָמֻֽתוּ׃",
+        "LXX": "ὃς ἂν κοιμηθῇ μετὰ τῆς συγγενοῦς αὐτοῦ, ἀσχημοσύνην τῆς συγγενοῦς αὐτοῦ ἀπεκάλυψεν· ἄτεκνοι ἀποθανοῦνται.",
+        "VUL": "Qui coierit cum uxore patrui vel avunculi sui, et revelaverit ignominiam cognationis suæ, portabunt ambo peccatum suum : absque liberis morientur.",
+        "SYN": "Кто ляжет с теткою своею, тот открыл наготу дяди своего; грех свой понесут они, бездетными умрут.",
+        "NEO": "Si un homme couche avec sa tante, il découvre la nudité de son oncle ; ils porteront leur péché : ils mourront sans enfants.",
+        "NAB": "If a man disgraces his uncle by having intercourse with his uncle's wife, the man and his aunt shall pay the penalty by dying childless.",
+        "VAT_ES": "Si un hombre se acuesta con la mujer de su tío paterno, es como si tuviera relaciones con este último: los que lo hagan cargarán con su culpa y morirán sin tener hijos.",
+        "CEI": "Se uno ha rapporti con la moglie di suo zio, scopre la nudità di suo zio; tutti e due porteranno la pena del loro peccato; dovranno morire senza figli."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/אִ֗ישׁ אֲשֶׁ֥ר יִקַּ֛ח אֶת אֵ֥שֶׁת אָחִ֖י/ו נִדָּ֣ה הִ֑וא עֶרְוַ֥ת אָחִ֛י/ו גִּלָּ֖ה עֲרִירִ֥ים יִהְיֽוּ׃",
+        "LXX": "ὃς ἂν λάβῃ τὴν γυναῖκα τοῦ ἀδελφοῦ αὐτοῦ, ἀκαθαρσία αὐτοῦ ἐστίν· ἀσχημοσύνην ἀδελφοῦ αὐτοῦ ἀπεκάλυψεν, ἄτεκνοι ἀποθανοῦνται.",
+        "VUL": "Qui duxerit uxorem fratris sui, rem facit illicitam : turpitudinem fratris sui revelavit : absque liberis erunt.",
+        "SYN": "Если кто возьмет жену брата своего: это гнусно; он открыл наготу брата своего, бездетны будут они.",
+        "NEO": "Si un homme prend la femme de son frère, c’est une impureté ; il a découvert la nudité de son frère : ils seront sans enfants.",
+        "NAB": "If a man marries his brother's wife and thus disgraces his brother, they shall be childless because of this incest.",
+        "VAT_ES": "Si un hombre se casa con la mujer de su hermano, lo que hace es una indecencia, porque es como si tuviera relaciones con su hermano: los que lo hagan no tendrán hijos.",
+        "CEI": "Se uno prende la moglie del fratello, è una impurità, egli ha scoperto la nudità del fratello; non avranno figli."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וּ/שְׁמַרְתֶּ֤ם אֶת כָּל חֻקֹּתַ/י֙ וְ/אֶת כָּל מִשְׁפָּטַ֔/י וַ/עֲשִׂיתֶ֖ם אֹתָ֑/ם וְ/לֹא תָקִ֤יא אֶתְ/כֶם֙ הָ/אָ֔רֶץ אֲשֶׁ֨ר אֲנִ֜י מֵבִ֥יא אֶתְ/כֶ֛ם שָׁ֖מָּ/ה לָ/שֶׁ֥בֶת בָּֽ/הּ׃",
+        "LXX": "Καὶ φυλάξασθε πάντα τὰ προστάγματά μου καὶ τὰ κρίματά μου, καὶ ποιήσετε αὐτά· καὶ οὐ μὴ προσοχθίσῃ ὑμῖν ἡ γῆ εἰς ἣν ἐγὼ εἰσάγω ὑμᾶς ἐκεῖ κατοικεῖν ἐπ’ αὐτῆς.",
+        "VUL": "Custodite leges meas, atque judicia, et facite ea : ne et vos evomat terra quam intraturi estis et habitaturi.",
+        "SYN": "Соблюдайте все уставы Мои и все законы Мои и исполняйте их, -- и не свергнет вас с себя земля, в которую Я веду вас жить.",
+        "NEO": "Vous observerez toutes mes lois et toutes mes ordonnances et vous les mettrez en pratique, afin que le pays où je vous mène pour y habiter ne vous vomisse pas.",
+        "NAB": "\"Be careful to observe all my statutes and all my decrees; otherwise the land where I am bringing you to dwell will vomit you out.",
+        "VAT_ES": "Observen todos mis preceptos y mis leyes, y pónganlos en práctica: entonces no los vomitaré de la tierra adonde yo los haré entrar para que vivan en ella.",
+        "CEI": "Osserverete dunque tutte le mie leggi e tutte le mie prescrizioni e le metterete in pratica, perché il paese dove io vi conduco ad abitare non vi rigetti."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/לֹ֤א תֵֽלְכוּ֙ בְּ/חֻקֹּ֣ת הַ/גּ֔וֹי אֲשֶׁר אֲנִ֥י מְשַׁלֵּ֖חַ מִ/פְּנֵי/כֶ֑ם כִּ֤י אֶת כָּל אֵ֨לֶּה֙ עָשׂ֔וּ וָ/אָקֻ֖ץ בָּֽ/ם׃",
+        "LXX": "καὶ οὐχὶ πορεύεσθε τοῖς νομίμοις τῶν ἐθνῶν, οὓς ἐξαποστέλλω ἀφ’ ὑμῶν· ὅτι ταῦτα πάντα ἐποίησαν, καὶ ἐβδελυξάμην αὐτούς.",
+        "VUL": "Nolite ambulare in legitimis nationum, quas ego expulsurus sum ante vos. Omnia enim hæc fecerunt, et abominatus sum eas.",
+        "SYN": "Не поступайте по обычаям народа, который Я прогоняю от вас; ибо они всё это делали, и Я вознегодовал на них,",
+        "NEO": "Vous ne suivrez pas les usages des nations que je vais chasser de devant vous ; car elles ont fait toutes ces choses, et je les ai en dégoût.",
+        "NAB": "Do not conform, therefore, to the customs of the nations whom I am driving out of your way, because all these things that they have done have filled me with disgust for them.",
+        "VAT_ES": "No sigan los preceptos de la nación que yo expulsaré delante de ustedes. Precisamente porque ellos hicieron todas estas cosas, yo les tomé repulsión",
+        "CEI": "Non seguirete le usanze delle nazioni che io sto per scacciare dinanzi a voi; esse hanno fatto tutte quelle cose, perciò le ho in abominio"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וָ/אֹמַ֣ר לָ/כֶ֗ם אַתֶּם֮ תִּֽירְשׁ֣וּ אֶת אַדְמָתָ/ם֒ וַ/אֲנִ֞י אֶתְּנֶ֤/נָּה לָ/כֶם֙ לָ/רֶ֣שֶׁת אֹתָ֔/הּ אֶ֛רֶץ זָבַ֥ת חָלָ֖ב וּ/דְבָ֑שׁ אֲנִי֙ יְהוָ֣ה אֱלֹֽהֵי/כֶ֔ם אֲשֶׁר הִבְדַּ֥לְתִּי אֶתְ/כֶ֖ם מִן הָֽ/עַמִּֽים׃",
+        "LXX": "καὶ εἶπα ὑμῖν Ὑμεῖς κληρονομήσατε τὴν γῆν αὐτῶν, καὶ ἐγὼ δώσω ὑμῖν αὐτὴν ἐν κτήσει, γῆν ῥέουσαν γάλα καὶ μέλι· ἐγὼ Κύριος ὁ θεὸς ὑμῶν, ὃς διώρισα ὑμᾶς ἀπὸ πάντων τῶν ἐθνῶν.",
+        "VUL": "Vobis autem loquor. Possidete terram eorum, quam dabo vobis in hæreditatem, terram fluentem lacte et melle. Ego Dominus Deus vester, qui separavi vos a ceteris populis.",
+        "SYN": "и сказал Я вам: вы владейте землею их, и вам отдаю в наследие землю, в которой течет молоко и мед. Я Господь, Бог ваш, Который отделил вас от всех народов.",
+        "NEO": "Je vous ai dit : C’est vous qui posséderez leur terre ; je vous la donnerai pour la posséder ; c’est un pays où coulent le lait et le miel. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, qui vous ai séparés des autres peuples.",
+        "NAB": "But to you I have said: Their land shall be your possession, a land flowing with milk and honey. I am giving it to you as your own, I, the LORD, your God, who have set you apart from the other nations.",
+        "VAT_ES": "y les aseguré a ustedes que poseerían su suelo, esa tierra que mana leche y miel, la tierra que yo les daré en posesión.",
+        "CEI": "e vi ho detto: Voi possiederete il loro paese; ve lo darò in proprietà; è un paese dove scorre il latte e il miele. Io il Signore vostro Dio vi ho separati dagli altri popoli."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/הִבְדַּלְתֶּ֞ם בֵּֽין הַ/בְּהֵמָ֤ה הַ/טְּהֹרָה֙ לַ/טְּמֵאָ֔ה וּ/בֵין הָ/ע֥וֹף הַ/טָּמֵ֖א לַ/טָּהֹ֑ר וְ/לֹֽא תְשַׁקְּצ֨וּ אֶת נַפְשֹֽׁתֵי/כֶ֜ם בַּ/בְּהֵמָ֣ה וּ/בָ/ע֗וֹף וּ/בְ/כֹל֙ אֲשֶׁ֣ר תִּרְמֹ֣שׂ הָֽ/אֲדָמָ֔ה אֲשֶׁר הִבְדַּ֥לְתִּי לָ/כֶ֖ם לְ/טַמֵּֽא׃",
+        "LXX": "καὶ ἀφοριεῖτε αὐτοὺς ἀνὰ μέσον τῶν κτηνῶν τῶν καθαρῶν καὶ ἀνὰ μέσον τῶν κτηνῶν τῶν ἀκαθάρτων, καὶ ἀνὰ μέσον τῶν πετεινῶν τῶν καθαρῶν καὶ τῶν ἀκαθάρτων· καὶ οὐ βδελύξετε τὰς ψυχὰς ὑμῶν ἐν τοῖς κτήνεσιν καὶ ἐν τοῖς πετεινοῖς καὶ ἐν πᾶσιν τοῖς ἑρπετοῖς τῆς γῆς, ἃ ἐγὼ ἀφώρισα ὑμῖν ἐν ἀκαθαρσίᾳ.",
+        "VUL": "Separate ergo et vos jumentum mundum ab immundo, et avem mundam ab immunda : ne polluatis animas vestras in pecore, et avibus, et cunctis quæ moventur in terra, et quæ vobis ostendi esse polluta.",
+        "SYN": "Отличайте скот чистый от нечистого и птицу чистую от нечистой и не оскверняйте душ ваших скотом и птицею и всем пресмыкающимся по земле, что отличил Я, как нечистое.",
+        "NEO": "Vous distinguerez entre les animaux purs et impurs, entre les oiseaux purs et impurs, et vous ne vous rendrez pas abominables par des animaux, par des oiseaux et par tout ce qui se meut sur la terre, que je vous ai appris à distinguer comme impurs.",
+        "NAB": "You, too, must set apart, then, the clean animals from the unclean, and the clean birds from the unclean, so that you may not be contaminated with the uncleanness of any beast or bird or of any swarming creature in the land that I have set apart for you.",
+        "VAT_ES": "Por eso ustedes deberán separar los animales puros de los impuros, y los pájaros impuros de los puros. No se hagan abominables a causa de un animal, de un pájaro o de cualquier alimaña que se arrastra por el suelo, porque yo los separé para que a ustedes los consideren impuros.",
+        "CEI": "Farete dunque distinzione tra animali mondi e immondi, fra uccelli immondi e mondi e non vi renderete abominevoli, mangiando animali, uccelli o esseri che strisciano sulla terra e che io vi ho fatto distinguere come immondi."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וִ/הְיִ֤יתֶם לִ/י֙ קְדֹשִׁ֔ים כִּ֥י קָד֖וֹשׁ אֲנִ֣י יְהוָ֑ה וָ/אַבְדִּ֥ל אֶתְ/כֶ֛ם מִן הָֽ/עַמִּ֖ים לִ/הְי֥וֹת לִֽ/י׃",
+        "LXX": "καὶ ἔσεσθέ μοι ἅγιοι, ὅτι ἐγὼ ἅγιος, Κύριος ὁ θεὸς ὑμῶν, ὁ ἀφορίσας ὑμᾶς ἀπὸ πάντων τῶν ἐθνῶν εἶναι ἐμοί.",
+        "VUL": "Eritis mihi sancti, quia sanctus sum ego Dominus, et separavi vos a ceteris populis, ut essetis mei.",
+        "SYN": "Будьте предо Мною святы, ибо Я свят Господь [Бог ваш], и Я отделил вас от народов, чтобы вы были Мои.",
+        "NEO": "Vous serez saints pour moi, car je suis saint, moi \\+w Yahweh|strong=\"H3068\"\\+w**, et je vous ai séparés des autres peuples, afin que vous soyez à moi.",
+        "NAB": "To me, therefore, you shall be sacred; for I, the LORD, am sacred, I, who have set you apart from the other nations to be my own.",
+        "VAT_ES": "Ustedes serán santos, porque yo, el Señor, soy santo, y los separé de los otros pueblos, para que me pertenezcan.",
+        "CEI": "Sarete santi per me, poiché io, il Signore, sono santo e vi ho separati dagli altri popoli, perché siate miei."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/אִ֣ישׁ אֽוֹ אִשָּׁ֗ה כִּֽי יִהְיֶ֨ה בָ/הֶ֥ם א֛וֹב א֥וֹ יִדְּעֹנִ֖י מ֣וֹת יוּמָ֑תוּ בָּ/אֶ֛בֶן יִרְגְּמ֥וּ אֹתָ֖/ם דְּמֵי/הֶ֥ם בָּֽ/ם׃",
+        "LXX": "Καὶ ἀνὴρ ἢ γυνὴ ὃς ἂν γένηται αὐτῶν ἐνγαστρίμυθος ἢ ἐπαοιδός, θανάτῳ θανατούσθωσαν ἀμφότεροι· λίθοις λιθοβολήσατε αὐτούς, ἔνοχοί εἰσιν.",
+        "VUL": "Vir, sive mulier, in quibus pythonicus, vel divinationis fuerit spiritus, morte moriantur : lapidibus obruent eos : sanguis eorum sit super illos.",
+        "SYN": "Мужчина ли или женщина, если будут они вызывать мертвых или волхвовать, да будут преданы смерти: камнями должно побить их, кровь их на них.",
+        "NEO": "Tout homme ou femme qui évoque les esprits ou s’adonne à la divination sera mis à mort ; on les lapidera : leur sang est sur eux. »",
+        "NAB": "\"A man or a woman who acts as a medium or fortune-teller shall be put to death by stoning; they have no one but themselves to blame for their death.\"",
+        "VAT_ES": "El hombre o la mujer que consulten a los muertos o a otros espíritus, serán castigados con la muerte: los matarán a pedradas, y su sangre caerá sobre ellos.",
+        "CEI": "Se uomo o donna, in mezzo a voi, eserciteranno la negromanzia o la divinazione, dovranno essere messi a morte; saranno lapidati e il loro sangue ricadrà su di essi\"."
+      }
+    }
+  }
+}

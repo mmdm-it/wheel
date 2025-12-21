@@ -1,0 +1,409 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_038",
+  "book_key": "ISA",
+  "sequence": 38,
+  "chapter_in": {
+    "MT": 38,
+    "VUL": 38,
+    "LXX": 38
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בַּ/יָּמִ֣ים הָ/הֵ֔ם חָלָ֥ה חִזְקִיָּ֖הוּ לָ/מ֑וּת וַ/יָּב֣וֹא אֵ֠לָי/ו יְשַׁעְיָ֨הוּ בֶן אָמ֜וֹץ הַ/נָּבִ֗יא וַ/יֹּ֨אמֶר אֵלָ֜י/ו כֹּֽה אָמַ֤ר יְהוָה֙ צַ֣ו לְ/בֵיתֶ֔/ךָ כִּ֛י מֵ֥ת אַתָּ֖ה וְ/לֹ֥א תִֽחְיֶֽה׃",
+        "LXX": "Ἐγένετο δὲ ἐν τῷ καιρῷ ἐκείνῳ ἐμαλακίσθη Ἑζεκίας ἕως θανάτου· ⸆ καὶ ἦλθεν πρὸς αὐτὸν Ἠσαίας υἱὸς Ἀμὼς ὁ προφήτης καὶ εἶπεν πρὸς ⸂⸆⸃ αὐτόν Τάδε λέγει Κύριος Τάξαι περὶ τοῦ οἴκου σου, ἀποθνήσκεις γὰρ σὺ καὶ οὐ ζήσῃ.",
+        "VUL": "In diebus illis ægrotavit Ezechias usque ad mortem ; et introivit ad eum Isaias, filius Amos, propheta, et dixit ei : Hæc dicit Dominus : Dispone domui tuæ, quia morieris tu, et non vives.",
+        "SYN": "В те дни Езекия заболел смертельно. И пришел к нему пророк Исаия, сын Амосов, и сказал ему: так говорит Господь: сделай завещание для дома твоего, ибо ты умрешь, не выздоровеешь.",
+        "NEO": "En ce temps-là, Ezéchias fut malade à la mort. Le prophète Isaïe, fils d’Amos, vint auprès de lui et lui dit : « Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : Donne tes ordres à ta maison, car tu vas mourir, et tu ne vivras plus. »",
+        "NAB": "In those days, when Hezekiah was mortally ill, the prophet Isaiah, son of Amoz, came and said to him: \"Thus says the LORD: Put your house in order, for you are about to die; you shall not recover.\"",
+        "VAT_ES": "En aquellos días, Ezequías cayó gravemente enfermo. El profeta Isaías, hijo de Amós, fue a verlo y le dijo: «Así habla el Señor: Ordena los asuntos de tu casa, porque vas a morir. Ya no vivirás más».",
+        "CEI": "In quei giorni Ezechia si ammalò gravemente. Il profeta Isaia figlio di Amoz si recò da lui e gli parlò: \"Dice il Signore: Disponi riguardo alle cose della tua casa, perché morirai e non guarirai\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יַּסֵּ֧ב חִזְקִיָּ֛הוּ פָּנָ֖י/ו אֶל הַ/קִּ֑יר וַ/יִּתְפַּלֵּ֖ל אֶל יְהוָֽה׃",
+        "LXX": "καὶ ἀπέστρεψεν Ἑζεκίας τὸ πρόσωπον αὐτοῦ πρὸς τὸν τοῖχον, καὶ προσεύξατο πρὸς Κύριον",
+        "VUL": "Et convertit Ezechias faciem suam ad parietem, et oravit ad Dominum,",
+        "SYN": "Тогда Езекия отворотился лицем к стене и молился Господу, говоря:",
+        "NEO": "Ezéchias tourna son visage contre le mur et pria \\+w Yahweh|strong=\"H3068\"\\+w** ; il dit :",
+        "NAB": "Then Hezekiah turned his face to the wall and prayed to the LORD:",
+        "VAT_ES": "Ezequías volvió su rostro hacia la pared y oró al Señor.",
+        "CEI": "Ezechia allora voltò la faccia verso la parete e pregò il Signore."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמַ֗ר אָנָּ֤ה יְהוָה֙ זְכָר נָ֞א אֵ֣ת אֲשֶׁ֧ר הִתְהַלַּ֣כְתִּי לְ/פָנֶ֗י/ךָ בֶּֽ/אֱמֶת֙ וּ/בְ/לֵ֣ב שָׁלֵ֔ם וְ/הַ/טּ֥וֹב בְּ/עֵינֶ֖י/ךָ עָשִׂ֑יתִי וַ/יֵּ֥בְךְּ חִזְקִיָּ֖הוּ בְּכִ֥י גָדֽוֹל׃",
+        "LXX": "λέγων Μνήσθητι, Κύριε, ὡς ἐπορεύθην ἐνώπιόν σου μετὰ ἀληθείας ἐν καρδίᾳ ἀληθινῇ, καὶ τὰ ἀρεστὰ ἐνώπιόν σου ἐποίησα· καὶ ἔκλαυσεν Ἑζεκίας κλαυθμῷ μεγάλῳ.",
+        "VUL": "et dixit : Obsecro, Domine, memento, quæso, quomodo ambulaverim coram te in veritate et in corde perfecto, et quod bonum est in oculis tuis fecerim. Et flevit Ezechias fletu magno.",
+        "SYN": "\"о, Господи! вспомни, что я ходил пред лицем Твоим верно и с преданным _Тебе_ сердцем и делал угодное в очах Твоих\". И заплакал Езекия сильно.",
+        "NEO": "« Souvenez-vous, ô \\+w Yahweh|strong=\"H3068\"\\+w**, que j’ai marché devant votre face avec fidélité et intégrité, et que j’ai fait ce qui est bien à vos yeux ! » Et Ezéchias versa des larmes abondantes.",
+        "NAB": "\"O LORD, remember how faithfully and wholeheartedly I conducted myself in your presence, doing what was pleasing to you!\" And Hezekiah wept bitterly.",
+        "VAT_ES": "diciendo: «&iexcl;Ah, Señor! Recuerda que yo he caminado delante de ti con fidelidad e integridad de corazón, y que hice lo que es bueno a tus ojos». Y Ezequías se deshizo en llanto.",
+        "CEI": "Egli disse: \"Signore, ricordati che ho passato la vita dinanzi a te con fedeltà e con cuore sincero e ho compiuto ciò che era gradito ai tuoi occhi\". Ezechia pianse molto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ דְּבַר יְהוָ֔ה אֶֽל יְשַׁעְיָ֖הוּ לֵ/אמֹֽר׃",
+        "LXX": "καὶ ἐγένετο λόγος Κυρίου πρὸς Ἠσαίαν λέγων",
+        "VUL": "Et factum est verbum Domini ad Isaiam, dicens :",
+        "SYN": "И было слово Господне к Исаии, и сказано:",
+        "NEO": "Et la parole de \\+w Yahweh|strong=\"H3068\"\\+w** fut adressée à Isaïe en ces termes :",
+        "NAB": "Then the word of the LORD came to Isaiah:",
+        "VAT_ES": "Entonces la palabra del Señor llegó a Isaías en estos términos:",
+        "CEI": "Allora la parola del Signore fu rivolta a Isaia:"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הָל֞וֹךְ וְ/אָמַרְתָּ֣ אֶל חִזְקִיָּ֗הוּ כֹּֽה אָמַ֤ר יְהוָה֙ אֱלֹהֵי֙ דָּוִ֣ד אָבִ֔י/ךָ שָׁמַ֨עְתִּי֙ אֶת תְּפִלָּתֶ֔/ךָ רָאִ֖יתִי אֶת דִּמְעָתֶ֑/ךָ הִנְ/נִי֙ יוֹסִ֣ף עַל יָמֶ֔י/ךָ חֲמֵ֥שׁ עֶשְׂרֵ֖ה שָׁנָֽה׃",
+        "LXX": "Πορεύθητι καὶ εἰπὸν Ἑζεκίᾳ Τάδε λέγει Κύριος ὁ θεὸς Δαυεὶδ τοῦ πατρός σου Ἤκουσα τῆς προσευχῆς σου καὶ εἶδον τὰ δάκρυά σου· ἰδοὺ προστίθημι πρὸς τὸν χρόνον σου ἔτη δέκα πέντε·",
+        "VUL": "Vade, et dic Ezechiæ : Hæc dicit Dominus Deus David patris tui : Audivi orationem tuam, et vidi lacrimas tuas ; ecce ego adjiciam super dies tuos quindecim annos,",
+        "SYN": "пойди и скажи Езекии: так говорит Господь, Бог Давида, отца твоего: Я услышал молитву твою, увидел слезы твои, и вот, Я прибавлю к дням твоим пятнадцать лет,",
+        "NEO": "« Va, et dis à Ezéchias : « Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu de David, ton père, : J’ai entendu ta prière, j’ai vu tes larmes ; voici que j’ajouterai à tes jours quinze années.",
+        "NAB": "\"Go, tell Hezekiah: Thus says the LORD, the God of your father David: I have heard your prayer and seen your tears. I will heal you: in three days you shall go up to the LORD'S temple; I will add fifteen years to your life.",
+        "VAT_ES": "«Ve a decir a Ezequías: Así habla el Señor, el Dios de tu padre David: He oído tu súplica, he visto tus lágrimas. Yo añadiré otros quince años a tu vida;",
+        "CEI": "\"Và e riferisci a Ezechia: Dice il Signore Dio di Davide tuo padre: Ho ascoltato la tua preghiera e ho visto le tue lacrime; ecco io aggiungerò alla tua vita quindici anni."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וּ/מִ/כַּ֤ף מֶֽלֶךְ אַשּׁוּר֙ אַצִּ֣ילְ/ךָ֔ וְ/אֵ֖ת הָ/עִ֣יר הַ/זֹּ֑את וְ/גַנּוֹתִ֖י עַל הָ/עִ֥יר הַ/זֹּֽאת׃",
+        "LXX": "καὶ ἐκ χειρὸς βασιλέως Ἀσσυρίων ῥύσομαί σε καὶ τὴν πόλιν ταύτην, καὶ ὑπερασπιῶ ὑπὲρ τῆς πόλεως ταύτης.",
+        "VUL": "et de manu regis Assyriorum eruam te, et civitatem istam, et protegam eam.",
+        "SYN": "и от руки царя Ассирийского спасу тебя и город сей и защищу город сей.",
+        "NEO": "Je te délivrerai, toi et cette ville, de la main du roi d’Assyrie ; je protégerai cette ville.",
+        "NAB": "I will rescue you and this city from the hand of the king of Assyria; I will be a shield to this city.\"",
+        "VAT_ES": "te libraré, a ti y a esta ciudad, de manos del rey de Asiria, y defenderé a esta ciudad».",
+        "CEI": "Libererò te e questa città dalla mano del re di Assiria; proteggerò questa città."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/זֶה לְּ/ךָ֥ הָ/א֖וֹת מֵ/אֵ֣ת יְהוָ֑ה אֲשֶׁר֙ יַעֲשֶׂ֣ה יְהוָ֔ה אֶת הַ/דָּבָ֥ר הַ/זֶּ֖ה אֲשֶׁ֥ר דִּבֵּֽר׃",
+        "LXX": "τοῦτο δέ σοι τὸ σημεῖον παρὰ Κυρίου ὅτι ποιήσει ὁ θεὸς τὸ ῥῆμα τοῦτο·",
+        "VUL": "Hoc autem tibi erit signum a Domino, quia faciet Dominus verbum hoc quod locutus est :",
+        "SYN": "И вот тебе знамение от Господа, что Господь исполнит слово, которое Он изрек.",
+        "NEO": "Et voici pour toi le signe donné par \\+w Yahweh|strong=\"H3068\"\\+w**, auquel tu connaîtras que \\+w Yahweh|strong=\"H3068\"\\+w** accomplira cette parole qu’il a dite :",
+        "NAB": "(Isaiah answered:) \"This will be the sign for you from the LORD that he will do what he has promised:",
+        "VAT_ES": "«Esta es la señal que te da el Señor para confirmar la palabra que ha pronunciado:",
+        "CEI": "Da parte del Signore questo ti sia come segno che egli manterrà la promessa che ti ha fatto."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הִנְ/נִ֣י מֵשִׁ֣יב אֶת צֵ֣ל הַֽ/מַּעֲל֡וֹת אֲשֶׁ֣ר יָרְדָה֩ בְ/מַעֲל֨וֹת אָחָ֥ז בַּ/שֶּׁ֛מֶשׁ אֲחֹרַנִּ֖ית עֶ֣שֶׂר מַעֲל֑וֹת וַ/תָּ֤שָׁב הַ/שֶּׁ֨מֶשׁ֙ עֶ֣שֶׂר מַעֲל֔וֹת בַּֽ/מַּעֲל֖וֹת אֲשֶׁ֥ר יָרָֽדָה׃",
+        "LXX": "ἰδοὺ ἐγὼ στρέφω τὴν σκιὰν τῶν ἀναβαθμῶν οὓς κατέβη τοὺς δέκα ἀναβαθμοὺς τοῦ οἴκου τοῦ πατρός σου ὁ ἥλιος, ἀποστρέψω τὸν ἥλιον τοὺς δέκα ἀναβαθμούς. καὶ ἀνέβη ὁ ἥλιος τοὺς δέκα ἀναβαθμοὺς οὓς κατέβη ἡ σκιά.",
+        "VUL": "ecce ego reverti faciam umbram linearum per quas descenderat in horologio Achaz in sole, retrorsum decem lineis. Et reversus est sol decem lineis per gradus quos descenderat.",
+        "SYN": "Вот, я возвращу назад на десять ступеней солнечную тень, которая прошла по ступеням Ахазовым. И возвратилось солнце на десять ступеней по ступеням, по которым оно сходило.",
+        "NEO": "Voici que je vais faire reculer l’ombre en arrière, des degrés qu’elle a descendus sur les degrés d’Achaz sous l’influence du soleil, soit de dix degrés. Et le soleil recula de dix degrés sur les degrés qu’il avait descendus.",
+        "NAB": "See, I will make the shadow cast by the sun on the stairway to the terrace of Ahaz go back the ten steps it has advanced.\" So the sun came back the ten steps it had advanced.",
+        "VAT_ES": "En el reloj de sol de Ajaz, yo haré retroceder diez grados la sombra que ha descendido». Y el sol retrocedió en el reloj los diez grados que había descendido.",
+        "CEI": "Ecco, io faccio tornare indietro di dieci gradi l'ombra sulla meridiana, che è già scesa con il sole sull'orologio di Acaz\". E il sole retrocesse di dieci gradi sulla scala che aveva disceso."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "מִכְתָּ֖ב לְ/חִזְקִיָּ֣הוּ מֶֽלֶךְ יְהוּדָ֑ה בַּ/חֲלֹת֕/וֹ וַ/יְחִ֖י מֵ/חָלְיֽ/וֹ׃",
+        "LXX": "Προσευχὴ Ἑζεκίου βασιλέως Ἰουδαίας ἡνίκα ἐμαλακίσθη καὶ ἀνέστη ἐκ τῆς μαλακίας αὐτοῦ.",
+        "VUL": "Scriptura Ezechiæ, regis Juda, cum ægrotasset et convaluisset de infirmitate sua.",
+        "SYN": "Молитва Езекии, царя Иудейского, когда он болен был и выздоровел от болезни:",
+        "NEO": "Ecrit d’Ezéchias, roi de Juda, lorsqu’il fut malade et qu’il guérit de sa maladie :",
+        "NAB": "The song of Hezekiah, king of Judah, after he had been sick and had recovered from his illness:",
+        "VAT_ES": "Escrito de Ezequías, rey de Judá, cuando cayó enfermo y se repuso de su enfermedad:",
+        "CEI": "Cantico di Ezechia re di Giuda, quando cadde malato e guarì dalla malattia."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אֲנִ֣י אָמַ֗רְתִּי בִּ/דְמִ֥י יָמַ֛/י אֵלֵ֖כָה בְּ/שַׁעֲרֵ֣י שְׁא֑וֹל פֻּקַּ֖דְתִּי יֶ֥תֶר שְׁנוֹתָֽ/י׃",
+        "LXX": "Ἐγὼ εἶπα Ἐν τῷ ὕψει τῶν ἡμερῶν μου ἐν πύλαις ᾅδου καταλείψω τὰ ἔτη τὰ ἐπίλοιπα.",
+        "VUL": "[Ego dixi in dimidio dierum meorum :/ Vadam ad portas inferi ;/ quæsivi residuum annorum meorum./",
+        "SYN": "\"Я сказал в себе: в преполовение дней моих должен я идти во врата преисподней; я лишен остатка лет моих.",
+        "NEO": "Je disais : Dans la paix de mes jours je m’en vais aux portes du schéol ; je suis privé du reste de mes ans !",
+        "NAB": "Once I said, \"In the noontime of life I must depart! To the gates of the nether world I shall be consigned for the rest of my years.\"",
+        "VAT_ES": "«Yo decía: En lo mejor de mis días me tengo que ir: he sido destinado a las puertas del Abismo por el resto de mis años.",
+        "CEI": "Io dicevo: \"A metà della mia vita me ne vado alle porte degli inferi; sono privato del resto dei miei anni\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "אָמַ֨רְתִּי֙ לֹא אֶרְאֶ֣ה יָ֔הּ יָ֖הּ בְּ/אֶ֣רֶץ הַ/חַיִּ֑ים לֹא אַבִּ֥יט אָדָ֛ם ע֖וֹד עִם י֥וֹשְׁבֵי חָֽדֶל׃",
+        "LXX": "εἶπα Οὐκέτι μὴ ἴδω τὸ σωτήριον τοῦ θεοῦ ἐπὶ γῆς ζώντων, οὐκέτι μὴ ἴδω τὸ σωτήριον τοῦ Ἰσραὴλ ἐπὶ γῆς, οὐκέτι μὴ ἴδω ἄνθρωπον.",
+        "VUL": "Dixi : Non videbo Dominum Deum/ in terra viventium ;/ non aspiciam hominem ultra,/ et habitatorem quietis./",
+        "SYN": "Я говорил: не увижу я Господа, Господа на земле живых; не увижу больше человека между живущими в мире;",
+        "NEO": "Je disais : Je ne verrai plus \\+w Yahweh|strong=\"H3068\"\\+w**, \\+w Yahweh|strong=\"H3068\"\\+w** sur la terre des vivants ; je ne verrai plus les hommes, parmi les habitants du silencieux séjour !",
+        "NAB": "I said, \"I shall see the LORD no more in the land of the living. No longer shall I behold my fellow men among those who dwell in the world.\"",
+        "VAT_ES": "Yo decía: Ya no contemplaré al Señor en la tierra de los vivientes; no verá más a los hombres entre los habitantes del mundo.",
+        "CEI": "Dicevo: \"Non vedrò più il Signore sulla terra dei viventi, non vedrò più nessuno fra gli abitanti di questo mondo."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "דּוֹרִ֗/י נִסַּ֧ע וְ/נִגְלָ֛ה מִ/נִּ֖י כְּ/אֹ֣הֶל רֹעִ֑/י קִפַּ֨דְתִּי כָ/אֹרֵ֤ג חַיַּ/י֙ מִ/דַּלָּ֣ה יְבַצְּעֵ֔/נִי מִ/יּ֥וֹם עַד לַ֖יְלָה תַּשְׁלִימֵֽ/נִי׃",
+        "LXX": "ἐξέλιπεν ἐκ τῆς συγγενίας μου, κατέλιπον τὸ ἐπίλοιπον τῆς ζωῆς μου, ἐξῆλθεν καὶ ἀπῆλθεν ἀπ’ ἐμοῦ ὥσπερ ὁ σκηνὴν καταλύων πήξας· ὡς ἱστὸς τὸ πνεῦμά μου παρ’ ἐμοὶ ἐγένετο ἐρίθου ἐγγιζούσης ἐκτεμεῖν.",
+        "VUL": "Generatio mea ablata est, et convoluta est a me,/ quasi tabernaculum pastorum./ Præcisa est velut a texente vita mea ;/ dum adhuc ordirer, succidit me :/ de mane usque ad vesperam finies me./",
+        "SYN": "жилище мое снимается с места и уносится от меня, как шалаш пастушеский; я должен отрезать подобно ткачу жизнь мою; Он отрежет меня от основы; день и ночь я ждал, что Ты пошлешь мне кончину.",
+        "NEO": "Ma demeure est enlevée, emportée loin de moi comme une tente de bergers. Comme un tisserand, j’ourdissais ma vie ; il me retranche du métier !",
+        "NAB": "My dwelling, like a shepherd's tent, is struck down and borne away from me; You have folded up my life, like a weaver who severs the last thread. Day and night you give me over to torment;",
+        "VAT_ES": "Arrancan mi morada y me la arrebatan, como una carpa de pastores. Como un tejedor, yo enrollaba mi vida, pero él me corta de la trama: &iexcl;de la mañana a la noche terminas conmigo!",
+        "CEI": "La mia tenda è stata divelta e gettata lontano da me, come una tenda di pastori. Come un tessitore hai arrotolato la mia vita, mi recidi dall'ordito. In un giorno e una notte mi conduci alla fine\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "שִׁוִּ֤יתִי עַד בֹּ֨קֶר֙ כָּֽ/אֲרִ֔י כֵּ֥ן יְשַׁבֵּ֖ר כָּל עַצְמוֹתָ֑/י מִ/יּ֥וֹם עַד לַ֖יְלָה תַּשְׁלִימֵֽ/נִי׃",
+        "LXX": "ἐν τῇ ἡμέρᾳ ἐκείνῃ παρεδόθην ἕως πρωὶ ὡς λέοντι. συνέτριψεν πάντα τὰ ὀστᾶ μου· ἀπὸ γὰρ τῆς ἡμέρας ἕως νυκτὸς παρεδόθην.",
+        "VUL": "Sperabam usque ad mane ;/ quasi leo, sic contrivit omnia ossa mea :/ de mane usque ad vesperam finies me./",
+        "SYN": "Я ждал до утра; подобно льву, Он сокрушал все кости мои; день и ночь я ждал, что Ты пошлешь мне кончину.",
+        "NEO": "Je me suis tu jusqu’au matin ; comme un lion, il brisait tous mes os ; du jour à la nuit tu en auras fini avec moi !",
+        "NAB": "I cry out until the dawn. Like a lion he breaks all my bones; (day and night you give me over to torment).",
+        "VAT_ES": "Pido auxilio hasta la mañana; él quiebra todos mis huesos como un león: &iexcl;de la mañana a la noche terminas conmigo!",
+        "CEI": "Io ho gridato fino al mattino. Come un leone, così egli stritola tutte le mie ossa."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כְּ/ס֤וּס עָגוּר֙ כֵּ֣ן אֲצַפְצֵ֔ף אֶהְגֶּ֖ה כַּ/יּוֹנָ֑ה דַּלּ֤וּ עֵינַ/י֙ לַ/מָּר֔וֹם אֲדֹנָ֖/י עָֽשְׁקָה לִּ֥/י עָרְבֵֽ/נִי׃",
+        "LXX": "ὡς χελιδών, οὕτως φωνήσω, καὶ ὡς περιστερά, οὕτως μελετῶ· ἐξέλιπον γάρ μου οἱ ὀφθαλμοὶ τοῦ βλέπειν εἰς τὸ ὕψος τοῦ οὐρανοῦ πρὸς τὸν κύριον, ὃς ἐξείλατό με καὶ ἀφείλατό μου τὴν ὀδύνην τῆς ψυχῆς.",
+        "VUL": "Sicut pullus hirundinis, sic clamabo ;/ meditabor ut columba./ Attenuati sunt oculi mei, suspicientes in excelsum./ Domine, vim patior : responde pro me./",
+        "SYN": "Как журавль, как ласточка издавал я звуки, тосковал как голубь; уныло смотрели глаза мои к небу: Господи! тесно мне; спаси меня.",
+        "NEO": "Comme l’hirondelle, comme la grue, je crie ; je gémis comme la colombe ; mes yeux se sont lassés à regarder en haut : « \\+w Yahweh|strong=\"H3068\"\\+w**, on me fait violence ; sois mon garant ! »",
+        "NAB": "Like a swallow I utter shrill cries; I moan like a dove. My eyes grow weak, gazing heavenward: O Lord, I am in straits; be my surety!",
+        "VAT_ES": "Estoy piando como una golondrina, gimo como una paloma. Mis ojos se consumen de mirar a lo alto: &iexcl;me oprimen, Señor, sé tú mi fiador!",
+        "CEI": "Come una rondine io pigolo, gemo come una colomba. Sono stanchi i miei occhi di guardare in alto. Signore, io sono oppresso; proteggimi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "מָֽה אֲדַבֵּ֥ר וְ/אָֽמַר לִ֖/י וְ/ה֣וּא עָשָׂ֑ה אֶדַּדֶּ֥ה כָל שְׁנוֹתַ֖/י עַל מַ֥ר נַפְשִֽׁ/י׃",
+        "VUL": "Quid dicam, aut quid respondebit mihi,/ cum ipse fecerit ?/ Recogitabo tibi omnes annos meos/ in amaritudine animæ meæ./",
+        "SYN": "Что скажу я? Он сказал мне, Он и сделал. Тихо буду проводить все годы жизни моей, помня горесть души моей.",
+        "NEO": "Que dirais-je ? Il m’a dit, il l’a fait. Je marcherai humblement pendant toutes mes années, me souvenant de l’amertume de mon âme.",
+        "NAB": "What am I to say or tell him? He has done it! I shall go on through all my years despite the bitterness of my soul.",
+        "VAT_ES": "&iquest;Qué diré para que me responda, si es él quien lo hace? Andaré errante a lo largo de mis años, con amargura en el alma.",
+        "CEI": "Che dirò? Sto in pena poiché è lui che mi ha fatto questo. Il sonno si è allontanato da me per l'amarezza dell'anima mia."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אֲדֹנָ֖/י עֲלֵי/הֶ֣ם יִֽחְי֑וּ וּ/לְ/כָל בָּ/הֶן֙ חַיֵּ֣י רוּחִ֔/י וְ/תַחֲלִימֵ֖/נִי וְ/הַחֲיֵֽ/נִי׃",
+        "LXX": "Κύριε, περὶ αὐτῆς γὰρ ἀνηγγέλη σοι, καὶ ἐξήγειράς μου τὴν πνοήν, καὶ παρακληθεὶς ἔζησα.",
+        "VUL": "Domine, si sic vivitur,/ et in talibus vita spiritus mei,/ corripies me, et vivificabis me./",
+        "SYN": "Господи! так живут, и во всем этом жизнь моего духа; Ты исцелишь меня, даруешь мне жизнь.",
+        "NEO": "Seigneur, c’est en cela qu’est la vie, en tout cela est la vie de mon esprit. Vous me guérissez, vous me rendez la vie :",
+        "NAB": "Those live whom the LORD protects; yours. . . the life of my spirit. You have given me health and life;",
+        "VAT_ES": "Los que el Señor protege, vivirán, y su espíritu animará todo lo que hay en ellos: tú me restablecerás y me harás revivir.",
+        "CEI": "Signore, in te spera il mio cuore; si ravvivi il mio spirito. Guariscimi e rendimi la vita."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "הִנֵּ֥ה לְ/שָׁל֖וֹם מַר לִ֣/י מָ֑ר וְ/אַתָּ֞ה חָשַׁ֤קְתָּ נַפְשִׁ/י֙ מִ/שַּׁ֣חַת בְּלִ֔י כִּ֥י הִשְׁלַ֛כְתָּ אַחֲרֵ֥י גֵוְ/ךָ֖ כָּל חֲטָאָֽ/י׃",
+        "LXX": "εἵλου γάρ μου τὴν ψυχὴν ἵνα μὴ ἀπόληται, καὶ ἀπέριψας ὀπίσω μου πάσας τὰς ἁμαρτίας.",
+        "VUL": "Ecce in pace amaritudo mea amarissima./ Tu autem eruisti animam meam/ ut non periret ;/ projecisti post tergum tuum/ omnia peccata mea./",
+        "SYN": "Вот, во благо мне была сильная горесть, и Ты избавил душу мою от рва погибели, бросил все грехи мои за хребет Свой.",
+        "NEO": "voici que ma suprême amertume se change en paix !",
+        "NAB": "thus is my bitterness transformed into peace. You have preserved my life from the pit of destruction, When you cast behind your back all my sins.",
+        "VAT_ES": "Mi amargura se cambió en bienestar: tú has preservado mi vida de la fosa del aniquilamiento, porque has arrojado detrás de tus espaldas todos mis pecados.",
+        "CEI": "Ecco, la mia infermità si è cambiata in salute! Tu hai preservato la mia vita dalla fossa della distruzione, perché ti sei gettato dietro le spalle tutti i miei peccati."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כִּ֣י לֹ֥א שְׁא֛וֹל תּוֹדֶ֖/ךָּ מָ֣וֶת יְהַלְלֶ֑/ךָּ לֹֽא יְשַׂבְּר֥וּ יֽוֹרְדֵי ב֖וֹר אֶל אֲמִתֶּֽ/ךָ׃",
+        "LXX": "οὐ γὰρ οἱ ἐν ᾅδου αἰνέσουσίν σε, οὐδὲ οἱ ἀποθανόντες εὐλογήσουσίν σε, οὐδὲ ἐλπιοῦσιν οἱ ἐν ᾅδου τὴν ἐλεημοσύνην σου.",
+        "VUL": "Quia non infernus confitebitur tibi,/ neque mors laudabit te :/ non exspectabunt qui descendunt in lacum/ veritatem tuam./",
+        "SYN": "Ибо не преисподняя славит Тебя, не смерть восхваляет Тебя, не нисшедшие в могилу уповают на истину Твою.",
+        "NEO": "Car le schéol ne vous célèbre pas, la mort ne chante pas vos louanges ; ceux qui descendent dans la fosse n’espèrent plus en votre fidélité.",
+        "NAB": "For it is not the nether world that gives you thanks, nor death that praises you; Neither do those who go down into the pit await your kindness.",
+        "VAT_ES": "No, el Abismo no te da gracias, la Muerte no te alaba, los que bajan a la Fosa no esperan en tu fidelidad.",
+        "CEI": "Poiché non gli inferi ti lodano, né la morte ti canta inni; quanti scendono nella fossa non sperano nella tua fedeltà."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "חַ֥י חַ֛י ה֥וּא יוֹדֶ֖/ךָ כָּמ֣וֹ/נִי הַ/יּ֑וֹם אָ֣ב לְ/בָנִ֔ים יוֹדִ֖יעַ אֶל אֲמִתֶּֽ/ךָ׃",
+        "LXX": "οἱ ζῶντες εὐλογήσουσίν σε ὃν τρόπον κἀγώ· ἀπὸ γὰρ τῆς σήμερον παιδία ποιήσω, ἅ ἀναγγελοῦσιν τὴν δικαιοσύνην σου,",
+        "VUL": "Vivens, vivens ipse confitebitur tibi,/ sicut et ego hodie ;/ pater filiis notam faciet/ veritatem tuam./",
+        "SYN": "Живой, только живой прославит Тебя, как я ныне: отец возвестит детям истину Твою.",
+        "NEO": "Le vivant, le vivant, c’est lui qui vous célèbre, comme je le fais en ce jour ; père fera connaître à ses enfants votre fidélité.",
+        "NAB": "The living, the living give you thanks, as I do today. Fathers declare to their sons, O God, your faithfulness.",
+        "VAT_ES": "El viviente, el que vive, te da gracias, como yo en el día de hoy. De padres a hijos, se da a conocer tu fidelidad.",
+        "CEI": "Il vivente, il vivente ti rende grazie come io oggi faccio. Il padre farà conoscere ai figli la tua fedeltà."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "יְהוָ֖ה לְ/הוֹשִׁיעֵ֑/נִי וּ/נְגִנוֹתַ֧י נְנַגֵּ֛ן כָּל יְמֵ֥י חַיֵּ֖י/נוּ עַל בֵּ֥ית יְהוָֽה׃",
+        "LXX": "θεὲ τῆς σωτηρίας μου· καὶ οὐ παύσομαι εὐλογῶν σε μετὰ ψαλτηρίου πάσας τὰς ἡμέρας τῆς ζωῆς μου κατέναντι τοῦ οἴκου τοῦ θεοῦ.",
+        "VUL": "Domine, salvum me fac !/ et psalmos nostros cantabimus/ cunctis diebus vitæ nostræ/ in domo Domini.]",
+        "SYN": "Господь спасет меня; и мы во все дни жизни нашей _со_ _звуками_ струн моих будем воспевать песни в доме Господнем\".",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** a été prompt à me sauver ; nous ferons résonner les cordes de ma harpe ; tous les jours de notre vie, devant la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The LORD is our savior; we shall sing to stringed instruments In the house of the LORD all the days of our life.",
+        "VAT_ES": "Porque tú me salvaste, Señor, haremos resonar nuestras liras todos los días de nuestra vida junto a la Casa del Señor».",
+        "CEI": "Il Signore si è degnato di aiutarmi; per questo canteremo sulle cetre tutti i giorni della nostra vita, canteremo nel tempio del Signore."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְשַׁעְיָ֔הוּ יִשְׂא֖וּ דְּבֶ֣לֶת תְּאֵנִ֑ים וְ/יִמְרְח֥וּ עַֽל הַ/שְּׁחִ֖ין וְ/יֶֽחִי׃",
+        "LXX": "Καὶ εἶπεν Ἠσαίας πρὸς Ἑζεκίαν Λάβε παλάθην ἐκ σύκων καὶ τρίψον καὶ κατάπλασαι, καὶ ὑγιὴς ἔσῃ.",
+        "VUL": "Et jussit Isaias ut tollerent massam de ficis, et cataplasmarent super vulnus, et sanaretur.",
+        "SYN": "И сказал Исаия: пусть принесут пласт смокв и обложат им нарыв; и он выздоровеет.",
+        "NEO": "Isaïe dit : « Qu’on apporte une masse de figues, et qu’on l’applique sur l’ulcère et que le roi guérisse ! » Et Ezéchias dit : « A quel signe connaîtrai-je que je monterai à la maison de \\+w Yahweh|strong=\"H3068\"\\+w** ? »",
+        "NAB": "Isaiah then ordered a poultice of figs to be taken and applied to the boil, that he might recover.",
+        "VAT_ES": "Luego dijo Isaías: «Traigan un emplasto de higos; aplíquenlo sobre la úlcera, y el rey sanará».",
+        "CEI": "Isaia disse: \"Si prenda un impiastro di fichi e si applichi sulla ferita, così guarirà\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר חִזְקִיָּ֖הוּ מָ֣ה א֑וֹת כִּ֥י אֶעֱלֶ֖ה בֵּ֥ית יְהוָֽה׃",
+        "LXX": "καὶ εἶπεν Ἑζεκίας Τοῦτο σημεῖον πρὸς Ἑζεκίαν ὅτι ἀναβήσομαι εἰς τὸν οἶκον τοῦ θεοῦ.",
+        "VUL": "Et dixit Ezechias : Quod erit signum quia ascendam in domum Domini ?",
+        "SYN": "А Езекия сказал: какое знамение, что я буду ходить в дом Господень?",
+        "NAB": "Then Hezekiah asked, \"What is the sign that I shall go up to the temple of the LORD?\"",
+        "VAT_ES": "Ezequías respondió: «&iquest;Cuál es la señal de que podré subir a la Casa del Señor?».",
+        "CEI": "Ezechia disse: \"Qual è il segno per cui io entrerò nel tempio?\"."
+      }
+    }
+  }
+}

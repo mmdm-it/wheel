@@ -1,0 +1,287 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_COR_002",
+  "book_key": "I_COR",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Κἀγὼ ἐλθὼν πρὸς ὑμᾶς, ἀδελφοί, ἦλθον οὐ καθ’ ὑπεροχὴν λόγου ἢ σοφίας καταγγέλλων ὑμῖν τὸ μαρτύριον τοῦ θεοῦ.",
+        "VUL": "Et ego, cum venissem ad vos, fratres, veni non in sublimitate sermonis, aut sapientiæ, annuntians vobis testimonium Christi.",
+        "SYN": "И когда я приходил к вам, братия, приходил возвещать вам свидетельство Божие не в превосходстве слова или мудрости,",
+        "NEO": "Moi aussi, mes frères, lorsque je suis venu chez vous, ce n’est pas avec une supériorité de langage ou de sagesse que je suis venu vous annoncer le témoignage de Dieu.+ 2:1 II, 1. Le témoignage de Dieu (Vulg. \\+qt du Christ\\+qt*) et le \\+qt témoignage du Christ\\+qt* (i, 6 ; II Tim. i, 8) sont au fond la même chose : les Apôtres attestent au sujet de Dieu ce qu’il a fait par J.-C. pour le salut des hommes.*",
+        "NAB": "When I came to you, brothers, proclaiming the mystery of God, I did not come with sublimity of words or of wisdom.",
+        "VAT_ES": "Por mi parte, hermanos, cuando los visité para anunciarles el misterio de Dios, no llegué con el prestigio de la elocuencia o de la sabiduría.",
+        "CEI": "Sappiamo infatti che quando verrà disfatto questo corpo, nostra abitazione sulla terra, riceveremo un'abitazione da Dio, una dimora eterna, non costruita da mani di uomo, nei cieli."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Οὐ γὰρ ἔκρινα τοῦ εἰδέναι τι ἐν ὑμῖν, εἰ μὴ Ἰησοῦν χριστόν, καὶ τοῦτον ἐσταυρωμένον.",
+        "VUL": "Non enim judicavi me scire aliquid inter vos, nisi Jesum Christum, et hunc crucifixum.",
+        "SYN": "ибо я рассудил быть у вас незнающим ничего, кроме Иисуса Христа, и притом распятого,",
+        "NEO": "Car je n’ai pas jugé que je dusse savoir parmi vous autre chose que Jésus-Christ, et Jésus-Christ crucifié.",
+        "NAB": "For I resolved to know nothing while I was with you except Jesus Christ, and him crucified.",
+        "VAT_ES": "Al contrario, no quise saber nada, fuera de Jesucristo, y Jesucristo crucificado.",
+        "CEI": "Perciò sospiriamo in questo nostro stato, desiderosi di rivestirci del nostro corpo celeste:"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Καὶ ἐγὼ ἐν ἀσθενείᾳ καὶ ἐν φόβῳ καὶ ἐν τρόμῳ πολλῷ ἐγενόμην πρὸς ὑμᾶς.",
+        "VUL": "Et ego in infirmitate, et timore, et tremore multo fui apud vos :",
+        "SYN": "и был я у вас в немощи и в страхе и в великом трепете.",
+        "NEO": "Mais c’est dans la faiblesse, dans la crainte, et dans un grand tremblement que je me suis présenté chez vous ;+ 2:3 3. (Act. xvii, 33 sv).*",
+        "NAB": "I came to you in weakness and fear and much trembling,",
+        "VAT_ES": "Por eso, me presenté ante ustedes débil, temeroso y vacilante.",
+        "CEI": "a condizione però di esser trovati già vestiti, non nudi."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Καὶ ὁ λόγος μου καὶ τὸ κήρυγμά μου οὐκ ἐν πειθοῖς ἀνθρωπίνης σοφίας λόγοις, ἀλλ’ ἐν ἀποδείξει πνεύματος καὶ δυνάμεως·",
+        "VUL": "et sermo meus, et prædicatio mea non in persuasibilibus humanæ sapientiæ verbis, sed in ostensione spiritus et virtutis :",
+        "SYN": "И слово мое и проповедь моя не в убедительных словах человеческой мудрости, но в явлении духа и силы,",
+        "NEO": "et ma parole et ma prédication n’avaient rien du langage persuasif de la sagesse,+ 2:4 4. De la sagesse (la Vulg. ajoute \\+qt humaine\\+qt*), des sages, des philosophes.* mais l’Esprit-Saint* et la force de Dieu en démontraient la vérité :",
+        "NAB": "and my message and my proclamation were not with persuasive (words of) wisdom, but with a demonstration of spirit and power,",
+        "VAT_ES": "Mi palabra y mi predicación no tenían nada de la argumentación persuasiva de la sabiduría humana, sino que eran demostración del poder del Espíritu,",
+        "CEI": "In realtà quanti siamo in questo corpo, sospiriamo come sotto un peso, non volendo venire spogliati ma sopravvestiti, perché ciò che è mortale venga assorbito dalla vita."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "ἵνα ἡ πίστις ὑμῶν μὴ ᾖ ἐν σοφίᾳ ἀνθρώπων, ἀλλ’ ἐν δυνάμει θεοῦ.",
+        "VUL": "ut fides vestra non sit in sapientia hominum, sed in virtute Dei.",
+        "SYN": "чтобы вера ваша _утверждалась_ не на мудрости человеческой, но на силе Божией.",
+        "NEO": "afin que votre foi repose, non sur la sagesse des hommes, mais sur la puissance de Dieu.",
+        "NAB": "so that your faith might rest not on human wisdom but on the power of God.",
+        "VAT_ES": "para que ustedes no basaran su fe en la sabiduría de los hombres, sino en el poder de Dios.",
+        "CEI": "È Dio che ci ha fatti per questo e ci ha dato la caparra dello Spirito."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "¶Σοφίαν δὲ λαλοῦμεν ἐν τοῖς τελείοις· σοφίαν δὲ οὐ τοῦ αἰῶνος τούτου, οὐδὲ τῶν ἀρχόντων τοῦ αἰῶνος τούτου, τῶν καταργουμένων·",
+        "VUL": "Sapientiam autem loquimur inter perfectos : sapientiam vero non hujus sæculi, neque principum hujus sæculi, qui destruuntur :",
+        "SYN": "Мудрость же мы проповедуем между совершенными, но мудрость не века сего и не властей века сего преходящих,",
+        "NEO": "Pourtant il est une sagesse que nous prêchons parmi les parfaits,+ 2:6 6. Les parfaits (ailleurs les \\+qt spirituels\\+qt*), ce sont les fidèles arrivés à la maturité de la vie chrétienne, capables d’une science plus profonde des mystères de l’Évangile, par opposition à ceux que Paul appelle \\+qt enfants en J.-C.\\+qt*, et auxquels convient le lait de la doctrine (iii, 1, 2), c.‑à-d. un enseignement élémentaire (Hébr. v, 14).* sagesse qui n’est pas celle de ce siècle, ni des princes de ce siècle, dont le règne va finir.",
+        "NAB": "Yet we do speak a wisdom to those who are mature, but not a wisdom of this age, nor of the rulers of this age who are passing away.",
+        "VAT_ES": "Es verdad que anunciamos una sabiduría entre aquellos que son personas espiritualmente maduras, pero no la sabiduría de este mundo ni la que ostentan los dominadores de este mundo, condenados a la destrucción.",
+        "CEI": "Così, dunque, siamo sempre pieni di fiducia e sapendo che finché abitiamo nel corpo siamo in esilio lontano dal Signore,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "ἀλλὰ λαλοῦμεν σοφίαν θεοῦ ἐν μυστηρίῳ, τὴν ἀποκεκρυμμένην, ἣν προώρισεν ὁ θεὸς πρὸ τῶν αἰώνων εἰς δόξαν ἡμῶν·",
+        "VUL": "sed loquimur Dei sapientiam in mysterio, quæ abscondita est, quam prædestinavit Deus ante sæcula in gloriam nostram,",
+        "SYN": "но проповедуем премудрость Божию, тайную, сокровенную, которую предназначил Бог прежде веков к славе нашей,",
+        "NEO": "Nous prêchons une sagesse de Dieu mystérieuse et cachée, que Dieu, avant les siècles, avait destinée pour notre glorification.",
+        "NAB": "Rather, we speak God's wisdom, mysterious, hidden, which God predetermined before the ages for our glory,",
+        "VAT_ES": "Lo que anunciamos es una sabiduría de Dios, misteriosa y secreta, que él preparó para nuestra gloria antes que existiera el mundo;",
+        "CEI": "camminiamo nella fede e non ancora in visione."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "ἣν οὐδεὶς τῶν ἀρχόντων τοῦ αἰῶνος τούτου ἔγνωκεν· εἰ γὰρ ἔγνωσαν, οὐκ ἂν τὸν κύριον τῆς δόξης ἐσταύρωσαν·",
+        "VUL": "quam nemo principum hujus sæculi cognovit : si enim cognovissent, numquam Dominum gloriæ crucifixissent.",
+        "SYN": "которой никто из властей века сего не познал; ибо если бы познали, то не распяли бы Господа славы.",
+        "NEO": "Cette sagesse, nul des princes de ce siècle ne l’a connue ; — car, s’ils l’avaient connue, ils n’auraient pas crucifié le Seigneur de la gloire.",
+        "NAB": "and which none of the rulers of this age knew; for if they had known it, they would not have crucified the Lord of glory.",
+        "VAT_ES": "aquella que ninguno de los dominadores de este mundo alcanzó a conocer, porque si la hubieran conocido no habrían crucificado al Señor de la gloria.",
+        "CEI": "Siamo pieni di fiducia e preferiamo andare in esilio dal corpo ed abitare presso il Signore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "ἀλλὰ καθὼς γέγραπται, Ἃ ὀφθαλμὸς οὐκ εἶδεν, καὶ οὖς οὐκ ἤκουσεν, καὶ ἐπὶ καρδίαν ἀνθρώπου οὐκ ἀνέβη, ἃ ἡτοίμασεν ὁ θεὸς τοῖς ἀγαπῶσιν αὐτόν.",
+        "VUL": "Sed sicut scriptum est : Quod oculus non vidit, nec auris audivit, nec in cor hominis ascendit, quæ præparavit Deus iis qui diligunt illum :",
+        "SYN": "Но, как написано: не видел того глаз, не слышало ухо, и не приходило то на сердце человеку, что приготовил Бог любящим Его.",
+        "NEO": "Mais ce sont, comme il est écrit, « des choses que l’œil n’a pas vues, que l’oreille n’a pas entendues, et qui ne sont pas montées au cœur de l’homme, — des choses que Dieu a préparées pour ceux qui l’aiment. »+ 2:9 9. Citation, dit S. Jérôme, composée de divers passages d’Isaïe (lxiv, 4 ; lxv, 17) qui se mêlaient dans les souvenirs de l’Apôtre.*",
+        "NAB": "But as it is written: \"What eye has not seen, and ear has not heard, and what has not entered the human heart, what God has prepared for those who love him,\"",
+        "VAT_ES": "Nosotros anunciamos, como dice la Escritura, lo que nadie vio ni oyó y ni siquiera pudo pensar, aquello que Dios preparó para los que lo aman.",
+        "CEI": "Perciò ci sforziamo, sia dimorando nel corpo sia esulando da esso, di essere a lui graditi."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Ἡμῖν δὲ ὁ θεὸς ἀπεκάλυψεν διὰ τοῦ πνεύματος αὐτοῦ· τὸ γὰρ πνεῦμα πάντα ἐρευνᾷ, καὶ τὰ βάθη τοῦ θεοῦ.",
+        "VUL": "nobis autem revelavit Deus per Spiritum suum : Spiritus enim omnia scrutatur, etiam profunda Dei.",
+        "SYN": "А нам Бог открыл _это_ Духом Своим; ибо Дух все проницает, и глубины Божии.",
+        "NEO": "C’est à nous que Dieu les a révélées par son Esprit ; car l’Esprit pénètre tout, même les profondeurs de Dieu.",
+        "NAB": "this God has revealed to us through the Spirit.For the Spirit scrutinizes everything, even the depths of God.",
+        "VAT_ES": "Dios nos reveló todo esto por medio del Espíritu, porque el Espíritu lo penetra todo, hasta lo más íntimo de Dios.",
+        "CEI": "Tutti infatti dobbiamo comparire davanti al tribunale di Cristo, ciascuno per ricevere la ricompensa delle opere compiute finché era nel corpo, sia in bene che in male."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Τίς γὰρ οἶδεν ἀνθρώπων τὰ τοῦ ἀνθρώπου, εἰ μὴ τὸ πνεῦμα τοῦ ἀνθρώπου τὸ ἐν αὐτῷ; Οὕτως καὶ τὰ τοῦ θεοῦ οὐδεὶς οἶδεν, εἰ μὴ τὸ πνεῦμα τοῦ θεοῦ.",
+        "VUL": "Quis enim hominum scit quæ sunt hominis, nisi spiritus hominis, qui in ipso est ? ita et quæ Dei sunt, nemo cognovit, nisi Spiritus Dei.",
+        "SYN": "Ибо кто из человеков знает, что в человеке, кроме духа человеческого, живущего в нем? Так и Божьего никто не знает, кроме Духа Божия.",
+        "NEO": "Car qui d’entre les hommes connaît ce qui se passe dans l’homme, si ce n’est l’esprit de l’homme qui est en lui ? De même personne ne connaît ce qui est en Dieu, si ce n’est l’Esprit de Dieu.",
+        "NAB": "Among human beings, who knows what pertains to a person except the spirit of the person that is within? Similarly, no one knows what pertains to God except the Spirit of God.",
+        "VAT_ES": "&iquest;Quién puede conocer lo más íntimo del hombre, sino el espíritu del mismo hombre? De la misma manera, nadie conoce los secretos de Dios, sino el Espíritu de Dios.",
+        "CEI": "Consapevoli dunque del timore del Signore, noi cerchiamo di convincere gli uomini; per quanto invece riguarda Dio, gli siamo ben noti. E spero di esserlo anche davanti alle vostre coscienze."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Ἡμεῖς δὲ οὐ τὸ πνεῦμα τοῦ κόσμου ἐλάβομεν, ἀλλὰ τὸ πνεῦμα τὸ ἐκ τοῦ θεοῦ, ἵνα εἰδῶμεν τὰ ὑπὸ τοῦ θεοῦ χαρισθέντα ἡμῖν.",
+        "VUL": "Nos autem non spiritum hujus mundi accepimus, sed Spiritum qui ex Deo est, ut sciamus quæ a Deo donata sunt nobis :",
+        "SYN": "Но мы приняли не духа мира сего, а Духа от Бога, дабы знать дарованное нам от Бога,",
+        "NEO": "Pour nous, nous avons reçu non l’esprit du monde, mais l’Esprit qui vient de Dieu, afin que nous connaissions les choses que Dieu nous a données par sa grâce.",
+        "NAB": "We have not received the spirit of the world but the Spirit that is from God, so that we may understand the things freely given us by God.",
+        "VAT_ES": "Y nosotros no hemos recibido el espíritu del mundo, sino el Espíritu que viene de Dios, para que reconozcamos los dones gratuitos que Dios nos ha dado.",
+        "CEI": "Non ricominciamo a raccomandarci a voi, ma è solo per darvi occasione di vanto a nostro riguardo, perché abbiate di che rispondere a coloro il cui vanto è esteriore e non nel cuore."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Ἃ καὶ λαλοῦμεν, οὐκ ἐν διδακτοῖς ἀνθρωπίνης σοφίας λόγοις, ἀλλ’ ἐν διδακτοῖς πνεύματος ἁγίου, πνευματικοῖς πνευματικὰ συγκρίνοντες.",
+        "VUL": "quæ et loquimur non in doctis humanæ sapientiæ verbis, sed in doctrina Spiritus, spiritualibus spiritualia comparantes.",
+        "SYN": "что и возвещаем не от человеческой мудрости изученными словами, но изученными от Духа Святаго, соображая духовное с духовным.",
+        "NEO": "Et nous en parlons, non avec des paroles qu’enseigne la sagesse humaine, mais avec celles qu’enseigne l’Esprit, en exprimant les choses spirituelles par un langage spirituel.+ 2:13 13. Litt. unissant ou \\+qt adaptant un langage spirituel aux choses spirituelles\\+qt*, aux vérités révélées.*",
+        "NAB": "And we speak about them not with words taught by human wisdom, but with words taught by the Spirit, describing spiritual realities in spiritual terms.",
+        "VAT_ES": "Nosotros no hablamos de estas cosas con palabras aprendidas de la sabiduría humana, sino con el lenguaje que el Espíritu de Dios nos ha enseñado, expresando en términos espirituales las realidades del Espíritu.",
+        "CEI": "Se infatti siamo stati fuori di senno, era per Dio; se siamo assennati, è per voi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ψυχικὸς δὲ ἄνθρωπος οὐ δέχεται τὰ τοῦ πνεύματος τοῦ θεοῦ· μωρία γὰρ αὐτῷ ἐστιν, καὶ οὐ δύναται γνῶναι, ὅτι πνευματικῶς ἀνακρίνεται.",
+        "VUL": "Animalis autem homo non percipit ea quæ sunt Spiritus Dei : stultitia enim est illi, et non potest intelligere : quia spiritualiter examinatur.",
+        "SYN": "Душевный человек не принимает того, что от Духа Божия, потому что он почитает это безумием; и не может разуметь, потому что о сем _надобно_ судить духовно.",
+        "NEO": "Mais l’homme naturel+ 2:14 14. Animal ne rend pas le sens : litt. '* ne reçoit pas les choses de l’Esprit de Dieu, car elles sont une folie pour lui, et il ne peut les connaître, parce que c’est par l’Esprit qu’on en juge.",
+        "NAB": "Now the natural person does not accept what pertains to the Spirit of God, for to him it is foolishness, and he cannot understand it, because it is judged spiritually.",
+        "VAT_ES": "El hombre puramente natural no valora lo que viene del Espíritu de Dios: es una locura para él y no lo puede entender, porque para juzgarlo necesita del Espíritu.",
+        "CEI": "Poiché l'amore del Cristo ci spinge, al pensiero che uno è morto per tutti e quindi tutti sono morti."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ πνευματικὸς ἀνακρίνει μὲν πάντα, αὐτὸς δὲ ὑπ’ οὐδενὸς ἀνακρίνεται.",
+        "VUL": "Spiritualis autem judicat omnia : et ipse a nemine judicatur.",
+        "SYN": "Но духовный судит о всем, а о нем судить никто не может.",
+        "NEO": "L’homme spirituel, au contraire, juge de tout, et il n’est lui-même jugé par personne.",
+        "NAB": "The spiritual person, however, can judge everything but is not subject to judgment by anyone.",
+        "VAT_ES": "El hombre espiritual, en cambio, todo lo juzga, y no puede ser juzgado por nadie.",
+        "CEI": "Ed egli è morto per tutti, perché quelli che vivono non vivano più per se stessi, ma per colui che è morto e risuscitato per loro."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Τίς γὰρ ἔγνω νοῦν κυρίου, ὃς συμβιβάσει αὐτόν; Ἡμεῖς δὲ νοῦν χριστοῦ ἔχομεν.",
+        "VUL": "Quis enim cognovit sensum Domini, qui instruat eum ? nos autem sensum Christi habemus.",
+        "SYN": "Ибо кто познал ум Господень, чтобы _мог_ судить его? А мы имеем ум Христов.",
+        "NEO": "Car « qui a connu la pensée du Seigneur, pour pouvoir l’instruire ? » Mais nous, nous avons la pensée du Christ.+ 2:16 16. Citation libre d’Isaïe xl, 13, d’après les Septante.*",
+        "NAB": "For \"who has known the mind of the Lord, so as to counsel him?\" But we have the mind of Christ.",
+        "VAT_ES": "Porque &iquest;quién penetró en el pensamiento del Señor, para poder enseñarle? Pero nosotros tenemos el pensamiento de Cristo.",
+        "CEI": "Cosicché ormai noi non conosciamo più nessuno secondo la carne; e anche se abbiamo conosciuto Cristo secondo la carne, ora non lo conosciamo più così."
+      }
+    }
+  }
+}

@@ -1,0 +1,843 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MATHE_025",
+  "book_key": "MATHE",
+  "sequence": 25,
+  "chapter_in": {
+    "MT": 25,
+    "VUL": 25,
+    "LXX": 25
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "Tunc simile erit regnum cælorum decem virginibus : quæ accipientes lampades suas exierunt obviam sponso et sponsæ.",
+        "LXX": "Τότε ὁμοιωθήσεται ἡ βασιλεία τῶν οὐρανῶν δέκα παρθένοις, αἵτινες λαβοῦσαι τὰς λαμπάδας αὐτῶν ἐξῆλθον εἰς ἀπάντησιν τοῦ νυμφίου.",
+        "SYN": "Тогда подобно будет Царство Небесное десяти девам, которые, взяв светильники свои, вышли навстречу жениху.",
+        "BYZ": "Τότε ὁμοιωθήσεται ἡ βασιλεία τῶν οὐρανῶν δέκα παρθένοις, αἵτινες λαβοῦσαι τὰς λαμπάδας αὐτῶν ἐξῆλθον εἰς ἀπάντησιν τοῦ νυμφίου.",
+        "NEO": "« Alors le royaume des cieux sera semblable à dix vierges qui, ayant pris leurs lampes, s’en allèrent au-devant de l’époux.",
+        "NAB": "\"Then the kingdom of heaven will be like ten virgins who took their lamps and went out to meet the bridegroom.",
+        "VAT_ES": "Por eso, el Reino de los Cielos será semejante a diez jóvenes que fueron con sus lámparas al encuentro del esposo.",
+        "CEI": "Il regno dei cieli è simile a dieci vergini che, prese le loro lampade, uscirono incontro allo sposo."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "Quinque autem ex eis erant fatuæ, et quinque prudentes :",
+        "LXX": "Πέντε δὲ ἦσαν ἐξ αὐτῶν φρόνιμοι, καὶ αἱ πέντε μωραί.",
+        "SYN": "Из них пять было мудрых и пять неразумных.",
+        "BYZ": "Πέντε δὲ ἦσαν ἐξ αὐτῶν φρόνιμοι, καὶ αἱ πέντε μωραί.",
+        "NEO": "Il y en avait cinq qui étaient folles, et cinq qui étaient sages.",
+        "NAB": "Five of them were foolish and five were wise.",
+        "VAT_ES": "Cinco de ellas eran necias y cinco, prudentes.",
+        "CEI": "Cinque di esse erano stolte e cinque sagge;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "sed quinque fatuæ, acceptis lampadibus, non sumpserunt oleum secum :",
+        "LXX": "Αἵτινες μωραί, λαβοῦσαι τὰς λαμπάδας αὐτῶν, οὐκ ἔλαβον μεθ’ ἑαυτῶν ἔλαιον·",
+        "SYN": "Неразумные, взяв светильники свои, не взяли с собою масла.",
+        "BYZ": "Αἵτινες μωραί, λαβοῦσαι τὰς λαμπάδας αὐτῶν, οὐκ ἔλαβον μεθ’ ἑαυτῶν ἔλαιον·",
+        "NEO": "Les cinq folles, ayant pris leurs lampes, ne prirent pas d’huile avec elles ;",
+        "NAB": "The foolish ones, when taking their lamps, brought no oil with them,",
+        "VAT_ES": "Las necias tomaron sus lámparas, pero sin proveerse de aceite,",
+        "CEI": "le stolte presero le lampade, ma non presero con sé olio;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "prudentes vero acceperunt oleum in vasis suis cum lampadibus.",
+        "LXX": "αἱ δὲ φρόνιμοι ἔλαβον ἔλαιον ἐν τοῖς ἀγγείοις αὐτῶν μετὰ τῶν λαμπάδων αὐτῶν.",
+        "SYN": "Мудрые же, вместе со светильниками своими, взяли масла в сосудах своих.",
+        "BYZ": "αἱ δὲ φρόνιμοι ἔλαβον ἔλαιον ἐν τοῖς ἀγγείοις αὐτῶν μετὰ τῶν λαμπάδων αὐτῶν.",
+        "NEO": "mais les sages prirent de l’huile dans leurs vases avec leurs lampes.",
+        "NAB": "but the wise brought flasks of oil with their lamps.",
+        "VAT_ES": "mientras que las prudentes tomaron sus lámparas y también llenaron de aceite sus frascos.",
+        "CEI": "le sagge invece, insieme alle lampade, presero anche dell'olio in piccoli vasi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Moram autem faciente sponso, dormitaverunt omnes et dormierunt.",
+        "LXX": "Χρονίζοντος δὲ τοῦ νυμφίου, ἐνύσταξαν πᾶσαι καὶ ἐκάθευδον.",
+        "SYN": "И как жених замедлил, то задремали все и уснули.",
+        "BYZ": "Χρονίζοντος δὲ τοῦ νυμφίου, ἐνύσταξαν πᾶσαι καὶ ἐκάθευδον.",
+        "NEO": "Comme l’époux tardait à venir, elles s’assoupirent toutes et s’endormirent.",
+        "NAB": "Since the bridegroom was long delayed, they all became drowsy and fell asleep.",
+        "VAT_ES": "Como el esposo se hacía esperar, les entró sueño a todas y se quedaron dormidas.",
+        "CEI": "Poiché lo sposo tardava, si assopirono tutte e dormirono."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "Media autem nocte clamor factus est : Ecce sponsus venit, exite obviam ei.",
+        "LXX": "Μέσης δὲ νυκτὸς κραυγὴ γέγονεν, Ἰδού, ὁ νυμφίος ἔρχεται, ἐξέρχεσθε εἰς ἀπάντησιν αὐτοῦ.",
+        "SYN": "Но в полночь раздался крик: вот, жених идет, выходите навстречу ему.",
+        "BYZ": "Μέσης δὲ νυκτὸς κραυγὴ γέγονεν, Ἰδού, ὁ νυμφίος ἔρχεται, ἐξέρχεσθε εἰς ἀπάντησιν αὐτοῦ.",
+        "NEO": "Au milieu de la nuit, un cri s’éleva : Voici l’époux qui vient, allez au-devant de lui.",
+        "NAB": "At midnight, there was a cry, 'Behold, the bridegroom! Come out to meet him!'",
+        "VAT_ES": "Pero a medianoche se oyó un grito: \"&iexcl;Ya viene el esposo, salgan a su encuentro!\".",
+        "CEI": "A mezzanotte si levò un grido: Ecco lo sposo, andategli incontro!"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Tunc surrexerunt omnes virgines illæ, et ornaverunt lampades suas.",
+        "LXX": "Τότε ἠγέρθησαν πᾶσαι αἱ παρθένοι ἐκεῖναι, καὶ ἐκόσμησαν τὰς λαμπάδας αὐτῶν.",
+        "SYN": "Тогда встали все девы те и поправили светильники свои.",
+        "BYZ": "Τότε ἠγέρθησαν πᾶσαι αἱ παρθένοι ἐκεῖναι, καὶ ἐκόσμησαν τὰς λαμπάδας αὐτῶν.",
+        "NEO": "Alors toutes ces vierges se levèrent et préparèrent leurs lampes.",
+        "NAB": "Then all those virgins got up and trimmed their lamps.",
+        "VAT_ES": "Entonces las jóvenes se despertaron y prepararon sus lámparas.",
+        "CEI": "Allora tutte quelle vergini si destarono e prepararono le loro lampade."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Fatuæ autem sapientibus dixerunt : Date nobis de oleo vestro, quia lampades nostræ extinguuntur.",
+        "LXX": "Αἱ δὲ μωραὶ ταῖς φρονίμοις εἶπον, Δότε ἡμῖν ἐκ τοῦ ἐλαίου ὑμῶν, ὅτι αἱ λαμπάδες ἡμῶν σβέννυνται.",
+        "SYN": "Неразумные же сказали мудрым: дайте нам вашего масла, потому что светильники наши гаснут.",
+        "BYZ": "Αἱ δὲ μωραὶ ταῖς φρονίμοις εἶπον, Δότε ἡμῖν ἐκ τοῦ ἐλαίου ὑμῶν, ὅτι αἱ λαμπάδες ἡμῶν σβέννυνται.",
+        "NEO": "Et les folles dirent aux sages : Donnez-nous de votre huile, car nos lampes s’éteignent.",
+        "NAB": "The foolish ones said to the wise, 'Give us some of your oil, for our lamps are going out.'",
+        "VAT_ES": "Las necias dijeron a las prudentes: \"&iquest;Podrían darnos un poco de aceite, porque nuestras lámparas se apagan?\".",
+        "CEI": "E le stolte dissero alle sagge: Dateci del vostro olio, perché le nostre lampade si spengono."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "Responderunt prudentes, dicentes : Ne forte non sufficiat nobis, et vobis, ite potius ad vendentes, et emite vobis.",
+        "LXX": "Ἀπεκρίθησαν δὲ αἱ φρόνιμοι, λέγουσαι, Μήποτε οὐκ ἀρκέσῃ ἡμῖν καὶ ὑμῖν· πορεύεσθε δὲ μᾶλλον πρὸς τοὺς πωλοῦντας καὶ ἀγοράσατε ἑαυταῖς.",
+        "SYN": "А мудрые отвечали: чтобы не случилось недостатка и у нас и у вас, пойдите лучше к продающим и купите себе.",
+        "BYZ": "Ἀπεκρίθησαν δὲ αἱ φρόνιμοι, λέγουσαι, Μήποτε οὐκ ἀρκέσῃ ἡμῖν καὶ ὑμῖν· πορεύεσθε δὲ μᾶλλον πρὸς τοὺς πωλοῦντας καὶ ἀγοράσατε ἑαυταῖς.",
+        "NEO": "Les sages répondirent : De crainte qu’il n’y en ait pas assez pour nous et pour vous ; allez plutôt chez ceux qui en vendent, et achetez-en pour vous.",
+        "NAB": "But the wise ones replied, 'No, for there may not be enough for us and you. Go instead to the merchants and buy some for yourselves.'",
+        "VAT_ES": "Pero estas les respondieron: \"No va a alcanzar para todas. Es mejor que vayan a comprarlo al mercado\".",
+        "CEI": "Ma le sagge risposero: No, che non abbia a mancare per noi e per voi; andate piuttosto dai venditori e compratevene."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Dum autem irent emere, venit sponsus : et quæ paratæ erant, intraverunt cum eo ad nuptias, et clausa est janua.",
+        "LXX": "Ἀπερχομένων δὲ αὐτῶν ἀγοράσαι, ἦλθεν ὁ νυμφίος· καὶ αἱ ἕτοιμοι εἰσῆλθον μετ’ αὐτοῦ εἰς τοὺς γάμους, καὶ ἐκλείσθη ἡ θύρα.",
+        "SYN": "Когда же пошли они покупать, пришел жених, и готовые вошли с ним на брачный пир, и двери затворились;",
+        "BYZ": "Ἀπερχομένων δὲ αὐτῶν ἀγοράσαι, ἦλθεν ὁ νυμφίος· καὶ αἱ ἕτοιμοι εἰσῆλθον μετ’ αὐτοῦ εἰς τοὺς γάμους, καὶ ἐκλείσθη ἡ θύρα.",
+        "NEO": "Mais, pendant qu’elles allaient en acheter, l’époux arriva, et celles qui étaient prêtes entrèrent avec lui dans la salle des noces, et la porte fut fermée.",
+        "NAB": "While they went off to buy it, the bridegroom came and those who were ready went into the wedding feast with him. Then the door was locked.",
+        "VAT_ES": "Mientras tanto, llegó el esposo: las que estaban preparadas entraron con él en la sala nupcial y se cerró la puerta.",
+        "CEI": "Ora, mentre quelle andavano per comprare l'olio, arrivò lo sposo e le vergini che erano pronte entrarono con lui alle nozze, e la porta fu chiusa."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Novissime vero veniunt et reliquæ virgines, dicentes : Domine, domine, aperi nobis.",
+        "LXX": "Ὕστερον δὲ ἔρχονται καὶ αἱ λοιπαὶ παρθένοι, λέγουσαι, Κύριε, κύριε, ἄνοιξον ἡμῖν.",
+        "SYN": "после приходят и прочие девы, и говорят: Господи! Господи! отвори нам.",
+        "BYZ": "Ὕστερον δὲ ἔρχονται καὶ αἱ λοιπαὶ παρθένοι, λέγουσαι, Κύριε, κύριε, ἄνοιξον ἡμῖν.",
+        "NEO": "Plus tard, les autres vierges vinrent aussi, disant : Seigneur, Seigneur, ouvrez-nous.",
+        "NAB": "Afterwards the other virgins came and said, 'Lord, Lord, open the door for us!'",
+        "VAT_ES": "Después llegaron las otras jóvenes y dijeron: \"Señor, señor, ábrenos\",",
+        "CEI": "Più tardi arrivarono anche le altre vergini e incominciarono a dire: Signore, signore, aprici!"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "At ille respondens, ait : Amen dico vobis, nescio vos.",
+        "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Ἀμὴν λέγω ὑμῖν, οὐκ οἶδα ὑμᾶς.",
+        "SYN": "Он же сказал им в ответ: истинно говорю вам: не знаю вас.",
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Ἀμὴν λέγω ὑμῖν, οὐκ οἶδα ὑμᾶς.",
+        "NEO": "Il leur répondit : En vérité, je vous le dis, je ne vous connais pas.",
+        "NAB": "But he said in reply, 'Amen, I say to you, I do not know you.'",
+        "VAT_ES": "pero él respondió: \"Les aseguro que no las conozco\".",
+        "CEI": "Ma egli rispose: In verità vi dico: non vi conosco."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "Vigilate itaque, quia nescitis diem, neque horam.",
+        "LXX": "Γρηγορεῖτε οὖν, ὅτι οὐκ οἴδατε τὴν ἡμέραν οὐδὲ τὴν ὥραν, ἐν ᾗ ὁ υἱὸς τοῦ ἀνθρώπου ἔρχεται.",
+        "SYN": "Итак, бодрствуйте, потому что не знаете ни дня, ни часа, в который приидет Сын Человеческий.",
+        "BYZ": "Γρηγορεῖτε οὖν, ὅτι οὐκ οἴδατε τὴν ἡμέραν οὐδὲ τὴν ὥραν, ἐν ᾗ ὁ υἱὸς τοῦ ἀνθρώπου ἔρχεται.",
+        "NEO": "« Veillez donc, car vous ne savez ni le jour, ni l’heure.",
+        "NAB": "Therefore, stay awake, for you know neither the day nor the hour.",
+        "VAT_ES": "Estén prevenidos, porque no saben el día ni la hora.",
+        "CEI": "Vegliate dunque, perché non sapete né il giorno né l'ora."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Sicut enim homo peregre proficiscens, vocavit servos suos, et tradidit illis bona sua.",
+        "LXX": "Ὥσπερ γὰρ ἄνθρωπος ἀποδημῶν ἐκάλεσεν τοὺς ἰδίους δούλους, καὶ παρέδωκεν αὐτοῖς τὰ ὑπάρχοντα αὐτοῦ·",
+        "SYN": "Ибо _Он_ _поступит,_ как человек, который, отправляясь в чужую страну, призвал рабов своих и поручил им имение свое:",
+        "BYZ": "¶Ὥσπερ γὰρ ἄνθρωπος ἀποδημῶν ἐκάλεσεν τοὺς ἰδίους δούλους, καὶ παρέδωκεν αὐτοῖς τὰ ὑπάρχοντα αὐτοῦ·",
+        "NEO": "« Car il en sera comme d’un homme qui, partant pour un voyage, appela ses serviteurs et leur remit ses biens.",
+        "NAB": "\"It will be as when a man who was going on a journey called in his servants and entrusted his possessions to them.",
+        "VAT_ES": "El reino de los Cielos es también como un hombre que, al salir de viaje, llamó a sus servidores y les confió sus bienes.",
+        "CEI": "Avverrà come di un uomo che, partendo per un viaggio, chiamò i suoi servi e consegnò loro i suoi beni."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Et uni dedit quinque talenta, alii autem duo, alii vero unum, unicuique secundum propriam virtutem : et profectus est statim.",
+        "LXX": "καὶ ᾧ μὲν ἔδωκεν πέντε τάλαντα, ᾧ δὲ δύο, ᾧ δὲ ἕν, ἑκάστῳ κατὰ τὴν ἰδίαν δύναμιν· καὶ ἀπεδήμησεν εὐθέως.",
+        "SYN": "и одному дал он пять талантов, другому два, иному один, каждому по его силе; и тотчас отправился.",
+        "BYZ": "καὶ ᾧ μὲν ἔδωκεν πέντε τάλαντα, ᾧ δὲ δύο, ᾧ δὲ ἕν, ἑκάστῳ κατὰ τὴν ἰδίαν δύναμιν· καὶ ἀπεδήμησεν εὐθέως.",
+        "NEO": "À l’un il donna cinq talents, à un autre deux, à un autre un, selon la capacité de chacun, et il partit aussitôt.",
+        "NAB": "To one he gave five talents; to another, two; to a third, one - to each according to his ability. Then he went away. Immediately",
+        "VAT_ES": "A uno le dio cinco talentos, a otro dos, y uno solo a un tercero, a cada uno según su capacidad; y después partió. En seguida,",
+        "CEI": "A uno diede cinque talenti, a un altro due, a un altro uno, a ciascuno secondo la sua capacità, e partì."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "Abiit autem qui quinque talenta acceperat, et operatus est in eis, et lucratus est alia quinque.",
+        "LXX": "Πορευθεὶς δὲ ὁ τὰ πέντε τάλαντα λαβὼν εἰργάσατο ἐν αὐτοῖς, καὶ ἐποίησεν ἄλλα πέντε τάλαντα.",
+        "SYN": "Получивший пять талантов пошел, употребил их в дело и приобрел другие пять талантов;",
+        "BYZ": "Πορευθεὶς δὲ ὁ τὰ πέντε τάλαντα λαβὼν εἰργάσατο ἐν αὐτοῖς, καὶ ἐποίησεν ἄλλα πέντε τάλαντα.",
+        "NEO": "Celui qui avait reçu cinq talents, s’en étant allé, les fit valoir, et en gagna cinq autres.",
+        "NAB": "the one who received five talents went and traded with them, and made another five.",
+        "VAT_ES": "el que había recibido cinco talentos, fue a negociar con ellos y ganó otros cinco.",
+        "CEI": "Colui che aveva ricevuto cinque talenti, andò subito a impiegarli e ne guadagnò altri cinque."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Similiter et qui duo acceperat, lucratus est alia duo.",
+        "LXX": "Ὡσαύτως καὶ ὁ τὰ δύο ἐκέρδησεν καὶ αὐτὸς ἄλλα δύο.",
+        "SYN": "точно так же и получивший два таланта приобрел другие два;",
+        "BYZ": "Ὡσαύτως καὶ ὁ τὰ δύο ἐκέρδησεν καὶ αὐτὸς ἄλλα δύο.",
+        "NEO": "De la même manière, celui qui en avait reçu deux, en gagna deux autres.",
+        "NAB": "Likewise, the one who received two made another two.",
+        "VAT_ES": "De la misma manera, el que recibió dos, ganó otros dos,",
+        "CEI": "Così anche quello che ne aveva ricevuti due, ne guadagnò altri due."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Qui autem unum acceperat, abiens fodit in terram, et abscondit pecuniam domini sui.",
+        "LXX": "Ὁ δὲ τὸ ἓν λαβὼν ἀπελθὼν ὤρυξεν ἐν τῇ γῇ, καὶ ἀπέκρυψεν τὸ ἀργύριον τοῦ κυρίου αὐτοῦ.",
+        "SYN": "получивший же один талант пошел и закопал _его_ в землю и скрыл серебро господина своего.",
+        "BYZ": "Ὁ δὲ τὸ ἓν λαβὼν ἀπελθὼν ὤρυξεν ἐν τῇ γῇ, καὶ ἀπέκρυψεν τὸ ἀργύριον τοῦ κυρίου αὐτοῦ.",
+        "NEO": "Mais celui qui n’en avait reçu qu’un, s’en alla creuser la terre, et y cacha l’argent de son maître.",
+        "NAB": "But the man who received one went off and dug a hole in the ground and buried his master's money.",
+        "VAT_ES": "pero el que recibió uno solo, hizo un pozo y enterró el dinero de su señor.",
+        "CEI": "Colui invece che aveva ricevuto un solo talento, andò a fare una buca nel terreno e vi nascose il denaro del suo padrone."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "Post multum vero temporis venit dominus servorum illorum, et posuit rationem cum eis.",
+        "LXX": "Μετὰ δὲ χρόνον πολὺν ἔρχεται ὁ κύριος τῶν δούλων ἐκείνων, καὶ συναίρει μετ’ αὐτῶν λόγον.",
+        "SYN": "По долгом времени, приходит господин рабов тех и требует у них отчета.",
+        "BYZ": "Μετὰ δὲ χρόνον πολὺν ἔρχεται ὁ κύριος τῶν δούλων ἐκείνων, καὶ συναίρει μετ’ αὐτῶν λόγον.",
+        "NEO": "Longtemps après, le maître de ces serviteurs étant revenu, leur fit rendre compte.",
+        "NAB": "After a long time the master of those servants came back and settled accounts with them.",
+        "VAT_ES": "Después de un largo tiempo, llegó el señor y arregló las cuentas con sus servidores.",
+        "CEI": "Dopo molto tempo il padrone di quei servi tornò, e volle regolare i conti con loro."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "Et accedens qui quinque talenta acceperat, obtulit alia quinque talenta, dicens : Domine, quinque talenta tradidisti mihi, ecce alia quinque superlucratus sum.",
+        "LXX": "Καὶ προσελθὼν ὁ τὰ πέντε τάλαντα λαβὼν προσήνεγκεν ἄλλα πέντε τάλαντα, λέγων, Κύριε, πέντε τάλαντά μοι παρέδωκας· ἴδε, ἄλλα πέντε τάλαντα ἐκέρδησα ἐπ’ αὐτοῖς.",
+        "SYN": "И, подойдя, получивший пять талантов принес другие пять талантов и говорит: господин! пять талантов ты дал мне; вот, другие пять талантов я приобрел на них.",
+        "BYZ": "Καὶ προσελθὼν ὁ τὰ πέντε τάλαντα λαβὼν προσήνεγκεν ἄλλα πέντε τάλαντα, λέγων, Κύριε, πέντε τάλαντά μοι παρέδωκας· ἴδε, ἄλλα πέντε τάλαντα ἐκέρδησα ἐπ’ αὐτοῖς.",
+        "NEO": "Celui qui avait reçu cinq talents s’approcha et lui en présenta cinq autres, en disant : Seigneur, vous m’aviez remis cinq talents ; en voici de plus cinq autres que j’ai gagnés.",
+        "NAB": "The one who had received five talents came forward bringing the additional five. He said, 'Master, you gave me five talents. See, I have made five more.'",
+        "VAT_ES": "El que había recibido los cinco talentos se adelantó y le presentó otros cinco. \"Señor, le dijo, me has confiado cinco talentos: aquí están los otros cinco que he ganado\".",
+        "CEI": "Colui che aveva ricevuto cinque talenti, ne presentò altri cinque, dicendo: Signore, mi hai consegnato cinque talenti; ecco, ne ho guadagnati altri cinque."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Ait illi dominus ejus : Euge serve bone, et fidelis : quia super pauca fuisti fidelis, super multa te constituam ; intra in gaudium domini tui.",
+        "LXX": "Ἔφη δὲ αὐτῷ ὁ κύριος αὐτοῦ, Εὖ, δοῦλε ἀγαθὲ καὶ πιστέ, ἐπὶ ὀλίγα ἦς πιστός, ἐπὶ πολλῶν σε καταστήσω· εἴσελθε εἰς τὴν χαρὰν τοῦ κυρίου σου.",
+        "SYN": "Господин его сказал ему: хорошо, добрый и верный раб! в малом ты был верен, над многим тебя поставлю; войди в радость господина твоего.",
+        "BYZ": "Ἔφη δὲ αὐτῷ ὁ κύριος αὐτοῦ, Εὖ, δοῦλε ἀγαθὲ καὶ πιστέ, ἐπὶ ὀλίγα ἦς πιστός, ἐπὶ πολλῶν σε καταστήσω· εἴσελθε εἰς τὴν χαρὰν τοῦ κυρίου σου.",
+        "NEO": "Son maître lui dit : C’est bien, serviteur bon et fidèle ; parce que tu as été fidèle en peu de choses, je t’établirai sur beaucoup : entre dans la joie de ton maître.",
+        "NAB": "His master said to him, 'Well done, my good and faithful servant. Since you were faithful in small matters, I will give you great responsibilities. Come, share your master's joy.'",
+        "VAT_ES": "\"Está bien, servidor bueno y fiel, le dijo su señor, ya que respondiste fielmente en lo poco, te encargaré de mucho más: entra a participar del gozo de tu señor\".",
+        "CEI": "Bene, servo buono e fedele, gli disse il suo padrone, sei stato fedele nel poco, ti darò autorità su molto; prendi parte alla gioia del tuo padrone."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Accessit autem et qui duo talenta acceperat, et ait : Domine, duo talenta tradidisti mihi, ecce alia duo lucratus sum.",
+        "LXX": "Προσελθὼν δὲ καὶ ὁ τὰ δύο τάλαντα λαβὼν εἶπεν, Κύριε, δύο τάλαντά μοι παρέδωκας· ἴδε, ἄλλα δύο τάλαντα ἐκέρδησα ἐπ’ αὐτοῖς.",
+        "SYN": "Подошел также и получивший два таланта и сказал: господин! два таланта ты дал мне; вот, другие два таланта я приобрел на них.",
+        "BYZ": "Προσελθὼν δὲ καὶ ὁ τὰ δύο τάλαντα λαβὼν εἶπεν, Κύριε, δύο τάλαντά μοι παρέδωκας· ἴδε, ἄλλα δύο τάλαντα ἐκέρδησα ἐπ’ αὐτοῖς.",
+        "NEO": "Celui qui avait reçu deux talents, vint aussi, et dit : Seigneur, vous m’aviez remis deux talents, en voici deux autres que j’ai gagnés.",
+        "NAB": "(Then) the one who had received two talents also came forward and said, 'Master, you gave me two talents. See, I have made two more.'",
+        "VAT_ES": "Llegó luego el que había recibido dos talentos y le dijo: \"Señor, me has confiado dos talentos: aquí están los otros dos que he ganado\".",
+        "CEI": "Presentatosi poi colui che aveva ricevuto due talenti, disse: Signore, mi hai consegnato due talenti; vedi, ne ho guadagnati altri due."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "Ait illi dominus ejus : Euge serve bone, et fidelis : quia super pauca fuisti fidelis, super multa te constituam ; intra in gaudium domini tui.",
+        "LXX": "Ἔφη αὐτῷ ὁ κύριος αὐτοῦ, Εὖ, δοῦλε ἀγαθὲ καὶ πιστέ, ἐπὶ ὀλίγα ἦς πιστός, ἐπὶ πολλῶν σε καταστήσω· εἴσελθε εἰς τὴν χαρὰν τοῦ κυρίου σου.",
+        "SYN": "Господин его сказал ему: хорошо, добрый и верный раб! в малом ты был верен, над многим тебя поставлю; войди в радость господина твоего.",
+        "BYZ": "Ἔφη αὐτῷ ὁ κύριος αὐτοῦ, Εὖ, δοῦλε ἀγαθὲ καὶ πιστέ, ἐπὶ ὀλίγα ἦς πιστός, ἐπὶ πολλῶν σε καταστήσω· εἴσελθε εἰς τὴν χαρὰν τοῦ κυρίου σου.",
+        "NEO": "Son maître lui dit : C’est bien, serviteur bon et fidèle, parce que tu as été fidèle en peu de choses, je t’établirai sur beaucoup : entre dans la joie de ton maître.",
+        "NAB": "His master said to him, 'Well done, my good and faithful servant. Since you were faithful in small matters, I will give you great responsibilities. Come, share your master's joy.'",
+        "VAT_ES": "\"Está bien, servidor bueno y fiel, ya que respondiste fielmente en lo poco, te encargaré de mucho más: entra a participar del gozo de tu señor\".",
+        "CEI": "Bene, servo buono e fedele, gli rispose il padrone, sei stato fedele nel poco, ti darò autorità su molto; prendi parte alla gioia del tuo padrone."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Accedens autem et qui unum talentum acceperat, ait : Domine, scio quia homo durus es ; metis ubi non seminasti, et congregas ubi non sparsisti :",
+        "LXX": "Προσελθὼν δὲ καὶ ὁ τὸ ἓν τάλαντον εἰληφὼς εἶπεν, Κύριε, ἔγνων σε ὅτι σκληρὸς εἶ ἄνθρωπος, θερίζων ὅπου οὐκ ἔσπειρας, καὶ συνάγων ὅθεν οὐ διεσκόρπισας·",
+        "SYN": "Подошел и получивший один талант и сказал: господин! я знал тебя, что ты человек жестокий, жнешь, где не сеял, и собираешь, где не рассыпал,",
+        "BYZ": "Προσελθὼν δὲ καὶ ὁ τὸ ἓν τάλαντον εἰληφὼς εἶπεν, Κύριε, ἔγνων σε ὅτι σκληρὸς εἶ ἄνθρωπος, θερίζων ὅπου οὐκ ἔσπειρας, καὶ συνάγων ὅθεν οὐ διεσκόρπισας·",
+        "NEO": "S’approchant à son tour, celui qui n’avait reçu qu’un talent, dit : Seigneur, je savais que tu es un homme dur, qui moissonne où tu n’as pas semé, et recueille où tu n’as pas vanné+ 25:24 XXV, 24. Vanné: litt. \\+qt répandu, dispersé\\+qt*.*.",
+        "NAB": "Then the one who had received the one talent came forward and said, 'Master, I knew you were a demanding person, harvesting where you did not plant and gathering where you did not scatter;",
+        "VAT_ES": "Llegó luego el que había recibido un solo talento. \"Señor, le dijo, sé que eres un hombre exigente: cosechas donde no has sembrado y recoges donde no has esparcido.",
+        "CEI": "Venuto infine colui che aveva ricevuto un solo talento, disse: Signore, so che sei un uomo duro, che mieti dove non hai seminato e raccogli dove non hai sparso;"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "et timens abii, et abscondi talentum tuum in terra : ecce habes quod tuum est.",
+        "LXX": "καὶ φοβηθείς, ἀπελθὼν ἔκρυψα τὸ τάλαντόν σου ἐν τῇ γῇ· ἴδε, ἔχεις τὸ σόν.",
+        "SYN": "и, убоявшись, пошел и скрыл талант твой в земле; вот тебе твое.",
+        "BYZ": "καὶ φοβηθείς, ἀπελθὼν ἔκρυψα τὸ τάλαντόν σου ἐν τῇ γῇ· ἴδε, ἔχεις τὸ σόν.",
+        "NEO": "J’ai eu peur, et j’ai été cacher ton talent dans la terre ; le voici, je te rends ce qui est à toi.",
+        "NAB": "so out of fear I went off and buried your talent in the ground. Here it is back.'",
+        "VAT_ES": "Por eso tuve miedo y fui a enterrar tu talento: &iexcl;aquí tienes lo tuyo!\".",
+        "CEI": "per paura andai a nascondere il tuo talento sotterra; ecco qui il tuo."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Respondens autem dominus ejus, dixit ei : Serve male, et piger, sciebas quia meto ubi non semino, et congrego ubi non sparsi :",
+        "LXX": "Ἀποκριθεὶς δὲ ὁ κύριος αὐτοῦ εἶπεν αὐτῷ, Πονηρὲ δοῦλε καὶ ὀκνηρέ, ᾔδεις ὅτι θερίζω ὅπου οὐκ ἔσπειρα, καὶ συνάγω ὅθεν οὐ διεσκόρπισα·",
+        "SYN": "Господин же его сказал ему в ответ: лукавый раб и ленивый! ты знал, что я жну, где не сеял, и собираю, где не рассыпал;",
+        "BYZ": "Ἀποκριθεὶς δὲ ὁ κύριος αὐτοῦ εἶπεν αὐτῷ, Πονηρὲ δοῦλε καὶ ὀκνηρέ, ᾔδεις ὅτι θερίζω ὅπου οὐκ ἔσπειρα, καὶ συνάγω ὅθεν οὐ διεσκόρπισα·",
+        "NEO": "Son maître lui répondit : Serviteur méchant et paresseux, tu savais que je moissonne où je n’ai pas semé, et que je recueille où je n’ai pas vanné ;",
+        "NAB": "His master said to him in reply, 'You wicked, lazy servant! So you knew that I harvest where I did not plant and gather where I did not scatter?",
+        "VAT_ES": "Pero el señor le respondió: \"Servidor malo y perezoso, si sabías que cosecho donde no he sembrado y recojo donde no he esparcido,",
+        "CEI": "Il padrone gli rispose: Servo malvagio e infingardo, sapevi che mieto dove non ho seminato e raccolgo dove non ho sparso;"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "oportuit ergo te committere pecuniam meam numulariis, et veniens ego recepissem utique quod meum est cum usura.",
+        "LXX": "ἔδει οὖν σε βαλεῖν τὸ ἀργύριόν μου τοῖς τραπεζίταις, καὶ ἐλθὼν ἐγὼ ἐκομισάμην ἂν τὸ ἐμὸν σὺν τόκῳ.",
+        "SYN": "посему надлежало тебе отдать серебро мое торгующим, и я, придя, получил бы мое с прибылью;",
+        "BYZ": "ἔδει οὖν σε βαλεῖν τὸ ἀργύριόν μου τοῖς τραπεζίταις, καὶ ἐλθὼν ἐγὼ ἐκομισάμην ἂν τὸ ἐμὸν σὺν τόκῳ.",
+        "NEO": "il te fallait donc porter mon argent aux banquiers, et, à mon retour, j’aurais retiré ce qui m’appartient avec un intérêt.",
+        "NAB": "Should you not then have put my money in the bank so that I could have got it back with interest on my return?",
+        "VAT_ES": "tendrías que haber colocado el dinero en el banco, y así, a mi regreso, lo hubiera recuperado con intereses.",
+        "CEI": "avresti dovuto affidare il mio denaro ai banchieri e così, ritornando, avrei ritirato il mio con l'interesse."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "Tollite itaque ab eo talentum, et date ei qui habet decem talenta :",
+        "LXX": "Ἄρατε οὖν ἀπ’ αὐτοῦ τὸ τάλαντον, καὶ δότε τῷ ἔχοντι τὰ δέκα τάλαντα.",
+        "SYN": "итак, возьмите у него талант и дайте имеющему десять талантов,",
+        "BYZ": "Ἄρατε οὖν ἀπ’ αὐτοῦ τὸ τάλαντον, καὶ δότε τῷ ἔχοντι τὰ δέκα τάλαντα.",
+        "NEO": "Ôtez-lui ce talent, et donnez-le à celui qui en a dix.",
+        "NAB": "Now then! Take the talent from him and give it to the one with ten.",
+        "VAT_ES": "Quítenle el talento para dárselo al que tiene diez,",
+        "CEI": "Toglietegli dunque il talento, e datelo a chi ha i dieci talenti."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "omni enim habenti dabitur, et abundabit : ei autem qui non habet, et quod videtur habere, auferetur ab eo.",
+        "LXX": "Τῷ γὰρ ἔχοντι παντὶ δοθήσεται καὶ περισσευθήσεται· ἀπὸ δὲ τοῦ μὴ ἔχοντος, καὶ ὃ ἔχει ἀρθήσεται ἀπ’ αὐτοῦ.",
+        "SYN": "ибо всякому имеющему дастся и приумножится, а у неимеющего отнимется и то, что имеет;",
+        "BYZ": "Τῷ γὰρ ἔχοντι παντὶ δοθήσεται καὶ περισσευθήσεται· ἀπὸ δὲ τοῦ μὴ ἔχοντος, καὶ ὃ ἔχει ἀρθήσεται ἀπ’ αὐτοῦ.",
+        "NEO": "Car on donnera à celui qui a, et il sera dans l’abondance ; mais à celui qui n’a pas, on ôtera même ce qu’il a+ 25:29 29. Même ce qu’il a: Vulg., \\+qt ce qu’il semble avoir\\+qt*.*.",
+        "NAB": "For to everyone who has, more will be given and he will grow rich; but from the one who has not, even what he has will be taken away.",
+        "VAT_ES": "porque a quien tiene, se le dará y tendrá de más, pero al que no tiene, se le quitará aun lo que tiene.",
+        "CEI": "Perché a chiunque ha sarà dato e sarà nell'abbondanza; ma a chi non ha sarà tolto anche quello che ha."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "Et inutilem servum ejicite in tenebras exteriores : illic erit fletus, et stridor dentium.",
+        "LXX": "Καὶ τὸν ἀχρεῖον δοῦλον ἐκβάλετε εἰς τὸ σκότος τὸ ἐξώτερον. Ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
+        "SYN": "а негодного раба выбросьте во тьму внешнюю: там будет плач и скрежет зубов. Сказав сие, возгласил: кто имеет уши слышать, да слышит!",
+        "BYZ": "Καὶ τὸν ἀχρεῖον δοῦλον ἐκβάλετε εἰς τὸ σκότος τὸ ἐξώτερον. Ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
+        "NEO": "Et ce serviteur inutile, jetez-le dans les ténèbres extérieures : c’est là qu’il y aura des pleurs et des grincements de dents.",
+        "NAB": "And throw this useless servant into the darkness outside, where there will be wailing and grinding of teeth.'",
+        "VAT_ES": "Echen afuera, a las tinieblas, a este servidor inútil; allí habrá llanto y rechinar de dientes\".",
+        "CEI": "E il servo fannullone gettatelo fuori nelle tenebre; là sarà pianto e stridore di denti."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "Cum autem venerit Filius hominis in majestate sua, et omnes angeli cum eo, tunc sedebit super sedem majestatis suæ :",
+        "LXX": "Ὅταν δὲ ἔλθῃ ὁ υἱὸς τοῦ ἀνθρώπου ἐν τῇ δόξῃ αὐτοῦ, καὶ πάντες οἱ ἅγιοι ἄγγελοι μετ’ αὐτοῦ, τότε καθίσει ἐπὶ θρόνου δόξης αὐτοῦ,",
+        "SYN": "Когда же приидет Сын Человеческий во славе Своей и все святые Ангелы с Ним, тогда сядет на престоле славы Своей,",
+        "BYZ": "¶Ὅταν δὲ ἔλθῃ ὁ υἱὸς τοῦ ἀνθρώπου ἐν τῇ δόξῃ αὐτοῦ, καὶ πάντες οἱ ἅγιοι ἄγγελοι μετ’ αὐτοῦ, τότε καθίσει ἐπὶ θρόνου δόξης αὐτοῦ,",
+        "NEO": "« Lorsque le Fils de l’homme viendra dans sa gloire, et tous les anges avec lui, il s’assiéra sur le trône de sa gloire.",
+        "NAB": "\"When the Son of Man comes in his glory, and all the angels with him, he will sit upon his glorious throne,",
+        "VAT_ES": "Cuando el Hijo del hombre venga en su gloria rodeado de todos los ángeles, se sentará en su trono glorioso.",
+        "CEI": "Quando il Figlio dell'uomo verrà nella sua gloria con tutti i suoi angeli, si siederà sul trono della sua gloria."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "et congregabuntur ante eum omnes gentes, et separabit eos ab invicem, sicut pastor segregat oves ab hædis :",
+        "LXX": "καὶ συναχθήσεται ἔμπροσθεν αὐτοῦ πάντα τὰ ἔθνη, καὶ ἀφοριεῖ αὐτοὺς ἀπ’ ἀλλήλων, ὥσπερ ὁ ποιμὴν ἀφορίζει τὰ πρόβατα ἀπὸ τῶν ἐρίφων·",
+        "SYN": "и соберутся пред Ним все народы; и отделит одних от других, как пастырь отделяет овец от козлов;",
+        "BYZ": "καὶ συναχθήσεται ἔμπροσθεν αὐτοῦ πάντα τὰ ἔθνη, καὶ ἀφοριεῖ αὐτοὺς ἀπ’ ἀλλήλων, ὥσπερ ὁ ποιμὴν ἀφορίζει τὰ πρόβατα ἀπὸ τῶν ἐρίφων·",
+        "NEO": "Et, toutes les nations étant rassemblées devant lui, il séparera les uns d’avec les autres, comme le pasteur sépare les brebis d’avec les boucs.",
+        "NAB": "and all the nations will be assembled before him. And he will separate them one from another, as a shepherd separates the sheep from the goats.",
+        "VAT_ES": "Todas las naciones serán reunidas en su presencia, y él separará a unos de otros, como el pastor separa las ovejas de los cabritos,",
+        "CEI": "E saranno riunite davanti a lui tutte le genti, ed egli separerà gli uni dagli altri, come il pastore separa le pecore dai capri,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "et statuet oves quidem a dextris suis, hædos autem a sinistris.",
+        "LXX": "καὶ στήσει τὰ μὲν πρόβατα ἐκ δεξιῶν αὐτοῦ, τὰ δὲ ἐρίφια ἐξ εὐωνύμων.",
+        "SYN": "и поставит овец по правую Свою сторону, а козлов -- по левую.",
+        "BYZ": "καὶ στήσει τὰ μὲν πρόβατα ἐκ δεξιῶν αὐτοῦ, τὰ δὲ ἐρίφια ἐξ εὐωνύμων.",
+        "NEO": "Et il mettra les brebis à sa droite, et les boucs à sa gauche+ 25:33 33. Les brebis et les \\+qt boucs\\+qt*, litt. \\+qt les chevreaux\\+qt* : cette espèce, moins docile et plus turbulente, figure les méchants, comme les brebis, douces et pacifiques sont le symbole des bons.*.",
+        "NAB": "He will place the sheep on his right and the goats on his left.",
+        "VAT_ES": "y pondrá a aquellas a su derecha y a estos a su izquierda.",
+        "CEI": "e porrà le pecore alla sua destra e i capri alla sinistra."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Tunc dicet rex his qui a dextris ejus erunt : Venite benedicti Patris mei, possidete paratum vobis regnum a constitutione mundi :",
+        "LXX": "Τότε ἐρεῖ ὁ βασιλεὺς τοῖς ἐκ δεξιῶν αὐτοῦ, Δεῦτε, οἱ εὐλογημένοι τοῦ πατρός μου, κληρονομήσατε τὴν ἡτοιμασμένην ὑμῖν βασιλείαν ἀπὸ καταβολῆς κόσμου.",
+        "SYN": "Тогда скажет Царь тем, которые по правую сторону Его: приидите, благословенные Отца Моего, наследуйте Царство, уготованное вам от создания мира:",
+        "BYZ": "Τότε ἐρεῖ ὁ βασιλεὺς τοῖς ἐκ δεξιῶν αὐτοῦ, Δεῦτε, οἱ εὐλογημένοι τοῦ πατρός μου, κληρονομήσατε τὴν ἡτοιμασμένην ὑμῖν βασιλείαν ἀπὸ καταβολῆς κόσμου.",
+        "NEO": "Alors le Roi dira à ceux qui sont à sa droite : Venez, les bénis de mon Père : prenez possession du royaume qui vous a été préparé dès l’origine du monde.",
+        "NAB": "Then the king will say to those on his right, 'Come, you who are blessed by my Father. Inherit the kingdom prepared for you from the foundation of the world.",
+        "VAT_ES": "Entonces el Rey dirá a los que tenga a su derecha: \"Vengan, benditos de mi Padre, y reciban en herencia el Reino que les fue preparado desde el comienzo del mundo,",
+        "CEI": "Allora il re dirà a quelli che stanno alla sua destra: Venite, benedetti del Padre mio, ricevete in eredità il regno preparato per voi fin dalla fondazione del mondo."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "VUL": "esurivi enim, et dedistis mihi manducare : sitivi, et dedistis mihi bibere : hospes eram, et collegistis me :",
+        "LXX": "Ἐπείνασα γάρ, καὶ ἐδώκατέ μοι φαγεῖν· ἐδίψησα, καὶ ἐποτίσατέ με· ξένος ἤμην, καὶ συνηγάγετέ με·",
+        "SYN": "ибо алкал Я, и вы дали Мне есть; жаждал, и вы напоили Меня; был странником, и вы приняли Меня;",
+        "BYZ": "Ἐπείνασα γάρ, καὶ ἐδώκατέ μοι φαγεῖν· ἐδίψησα, καὶ ἐποτίσατέ με· ξένος ἤμην, καὶ συνηγάγετέ με·",
+        "NEO": "Car j’ai eu faim, et vous m’avez donné à manger ; j’ai eu soif, et vous m’avez donné à boire ; j’étais étranger, et vous m’avez recueilli ;",
+        "NAB": "For I was hungry and you gave me food, I was thirsty and you gave me drink, a stranger and you welcomed me,",
+        "VAT_ES": "porque tuve hambre, y ustedes me dieron de comer; tuve sed, y me dieron de beber; estaba de paso, y me alojaron;",
+        "CEI": "Perché io ho avuto fame e mi avete dato da mangiare, ho avuto sete e mi avete dato da bere; ero forestiero e mi avete ospitato,"
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "VUL": "nudus, et cooperuistis me : infirmus, et visitastis me : in carcere eram, et venistis ad me.",
+        "LXX": "γυμνός, καὶ περιεβάλετέ με· ἠσθένησα, καὶ ἐπεσκέψασθέ με· ἐν φυλακῇ ἤμην, καὶ ἤλθετε πρός με.",
+        "SYN": "был наг, и вы одели Меня; был болен, и вы посетили Меня; в темнице был, и вы пришли ко Мне.",
+        "BYZ": "γυμνός, καὶ περιεβάλετέ με· ἠσθένησα, καὶ ἐπεσκέψασθέ με· ἐν φυλακῇ ἤμην, καὶ ἤλθετε πρός με.",
+        "NEO": "nu, et vous m’avez vêtu ; malade, et vous m’avez visité ; en prison, et vous êtes venus à moi.",
+        "NAB": "naked and you clothed me, ill and you cared for me, in prison and you visited me.'",
+        "VAT_ES": "desnudo, y me vistieron; enfermo, y me visitaron; preso, y me vinieron a ver\".",
+        "CEI": "nudo e mi avete vestito, malato e mi avete visitato, carcerato e siete venuti a trovarmi."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "VUL": "Tunc respondebunt ei justi, dicentes : Domine, quando te vidimus esurientem, et pavimus te : sitientem, et dedimus tibi potum ?",
+        "LXX": "Τότε ἀποκριθήσονται αὐτῷ οἱ δίκαιοι, λέγοντες, Κύριε, πότε σὲ εἴδομεν πεινῶντα, καὶ ἐθρέψαμεν; Ἢ διψῶντα, καὶ ἐποτίσαμεν;",
+        "SYN": "Тогда праведники скажут Ему в ответ: Господи! когда мы видели Тебя алчущим, и накормили? или жаждущим, и напоили?",
+        "BYZ": "Τότε ἀποκριθήσονται αὐτῷ οἱ δίκαιοι, λέγοντες, Κύριε, πότε σὲ εἴδομεν πεινῶντα, καὶ ἐθρέψαμεν; Ἢ διψῶντα, καὶ ἐποτίσαμεν;",
+        "NEO": "Les justes lui répondront : Seigneur, quand vous avons-nous vu avoir faim, et vous avons-nous donné à manger ; avoir soif, et vous avons-nous donné à boire ?",
+        "NAB": "Then the righteous will answer him and say, 'Lord, when did we see you hungry and feed you, or thirsty and give you drink?",
+        "VAT_ES": "Los justos le responderán: \"Señor, &iquest;cuándo te vimos hambriento, y te dimos de comer; sediento, y te dimos de beber?",
+        "CEI": "Allora i giusti gli risponderanno: Signore, quando mai ti abbiamo veduto affamato e ti abbiamo dato da mangiare, assetato e ti abbiamo dato da bere?"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "VUL": "quando autem te vidimus hospitem, et collegimus te : aut nudum, et cooperuimus te ?",
+        "LXX": "Πότε δέ σε εἴδομεν ξένον, καὶ συνηγάγομεν; Ἢ γυμνόν, καὶ περιεβάλομεν;",
+        "SYN": "когда мы видели Тебя странником, и приняли? или нагим, и одели?",
+        "BYZ": "Πότε δέ σε εἴδομεν ξένον, καὶ συνηγάγομεν; Ἢ γυμνόν, καὶ περιεβάλομεν;",
+        "NEO": "Quand vous avons-nous vu étranger, et vous avons-nous recueilli ; nu, et vous avons-nous vêtu ?",
+        "NAB": "When did we see you a stranger and welcome you, or naked and clothe you?",
+        "VAT_ES": "&iquest;Cuándo te vimos de paso, y te alojamos; desnudo, y te vestimos?",
+        "CEI": "Quando ti abbiamo visto forestiero e ti abbiamo ospitato, o nudo e ti abbiamo vestito?"
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "VUL": "aut quando te vidimus infirmum, aut in carcere, et venimus ad te ?",
+        "LXX": "Πότε δέ σε εἴδομεν ἀσθενῆ, ἢ ἐν φυλακῇ, καὶ ἤλθομεν πρός σε;",
+        "SYN": "когда мы видели Тебя больным, или в темнице, и пришли к Тебе?",
+        "BYZ": "Πότε δέ σε εἴδομεν ἀσθενῆ, ἢ ἐν φυλακῇ, καὶ ἤλθομεν πρός σε;",
+        "NEO": "Quand vous avons-nous vu malade ou en prison, et sommes-nous venus à vous ?",
+        "NAB": "When did we see you ill or in prison, and visit you?'",
+        "VAT_ES": "&iquest;Cuándo te vimos enfermo o preso, y fuimos a verte?\".",
+        "CEI": "E quando ti abbiamo visto ammalato o in carcere e siamo venuti a visitarti?"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "VUL": "Et respondens rex, dicet illis : Amen dico vobis, quamdiu fecistis uni ex his fratribus meis minimis, mihi fecistis.",
+        "LXX": "Καὶ ἀποκριθεὶς ὁ βασιλεὺς ἐρεῖ αὐτοῖς, Ἀμὴν λέγω ὑμῖν, ἐφ’ ὅσον ἐποιήσατε ἑνὶ τούτων τῶν ἀδελφῶν μου τῶν ἐλαχίστων, ἐμοὶ ἐποιήσατε.",
+        "SYN": "И Царь скажет им в ответ: истинно говорю вам: так как вы сделали это одному из сих братьев Моих меньших, то сделали Мне.",
+        "BYZ": "Καὶ ἀποκριθεὶς ὁ βασιλεὺς ἐρεῖ αὐτοῖς, Ἀμὴν λέγω ὑμῖν, ἐφ’ ὅσον ἐποιήσατε ἑνὶ τούτων τῶν ἀδελφῶν μου τῶν ἐλαχίστων, ἐμοὶ ἐποιήσατε.",
+        "NEO": "Et le Roi leur répondra : En vérité, je vous le dis, toutes les fois que vous l’avez fait à l’un de ces plus petits de mes frères, c’est à moi que vous l’avez fait.",
+        "NAB": "And the king will say to them in reply, 'Amen, I say to you, whatever you did for one of these least brothers of mine, you did for me.'",
+        "VAT_ES": "Y el Rey les responderá: \"Les aseguro que cada vez que lo hicieron con el más pequeño de mis hermanos, lo hicieron conmigo\".",
+        "CEI": "Rispondendo, il re dirà loro: In verità vi dico: ogni volta che avete fatto queste cose a uno solo di questi miei fratelli più piccoli, l'avete fatto a me."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "VUL": "Tunc dicet et his qui a sinistris erunt : Discedite a me maledicti in ignem æternum, qui paratus est diabolo, et angelis ejus :",
+        "LXX": "Τότε ἐρεῖ καὶ τοῖς ἐξ εὐωνύμων, Πορεύεσθε ἀπ’ ἐμοῦ, οἱ κατηραμένοι, εἰς τὸ πῦρ τὸ αἰώνιον, τὸ ἡτοιμασμένον τῷ διαβόλῳ καὶ τοῖς ἀγγέλοις αὐτοῦ.",
+        "SYN": "Тогда скажет и тем, которые по левую сторону: идите от Меня, проклятые, в огонь вечный, уготованный диаволу и ангелам его:",
+        "BYZ": "Τότε ἐρεῖ καὶ τοῖς ἐξ εὐωνύμων, Πορεύεσθε ἀπ’ ἐμοῦ, οἱ κατηραμένοι, εἰς τὸ πῦρ τὸ αἰώνιον, τὸ ἡτοιμασμένον τῷ διαβόλῳ καὶ τοῖς ἀγγέλοις αὐτοῦ.",
+        "NEO": "S’adressant ensuite à ceux qui seront à sa gauche, il dira : Retirez-vous de moi, maudits, allez* au feu éternel, qui a été préparé pour le diable et ses anges.",
+        "NAB": "Then he will say to those on his left, 'Depart from me, you accursed, into the eternal fire prepared for the devil and his angels.",
+        "VAT_ES": "Luego dirá a los de su izquierda: \"Aléjense de mí, malditos; vayan al fuego eterno que fue preparado para el demonio y sus ángeles,",
+        "CEI": "Poi dirà a quelli alla sua sinistra: Via, lontano da me, maledetti, nel fuoco eterno, preparato per il diavolo e per i suoi angeli."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "VUL": "esurivi enim, et non dedistis mihi manducare : sitivi, et non dedistis mihi potum :",
+        "LXX": "Ἐπείνασα γάρ, καὶ οὐκ ἐδώκατέ μοι φαγεῖν· ἐδίψησα, καὶ οὐκ ἐποτίσατέ με·",
+        "SYN": "ибо алкал Я, и вы не дали Мне есть; жаждал, и вы не напоили Меня;",
+        "BYZ": "Ἐπείνασα γάρ, καὶ οὐκ ἐδώκατέ μοι φαγεῖν· ἐδίψησα, καὶ οὐκ ἐποτίσατέ με·",
+        "NEO": "Car j’ai eu faim, et vous ne m’avez pas donné à manger ; j’ai eu soif, et vous ne m’avez pas donné à boire ;",
+        "NAB": "For I was hungry and you gave me no food, I was thirsty and you gave me no drink,",
+        "VAT_ES": "porque tuve hambre, y ustedes no me dieron de comer; tuve sed, y no me dieron de beber;",
+        "CEI": "Perché ho avuto fame e non mi avete dato da mangiare; ho avuto sete e non mi avete dato da bere;"
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "VUL": "hospes eram, et non collegistis me : nudus, et non cooperuistis me : infirmus, et in carcere, et non visitastis me.",
+        "LXX": "ξένος ἤμην, καὶ οὐ συνηγάγετέ με· γυμνός, καὶ οὐ περιεβάλετέ με· ἀσθενής, καὶ ἐν φυλακῇ, καὶ οὐκ ἐπεσκέψασθέ με.",
+        "SYN": "был странником, и не приняли Меня; был наг, и не одели Меня; болен и в темнице, и не посетили Меня.",
+        "BYZ": "ξένος ἤμην, καὶ οὐ συνηγάγετέ με· γυμνός, καὶ οὐ περιεβάλετέ με· ἀσθενής, καὶ ἐν φυλακῇ, καὶ οὐκ ἐπεσκέψασθέ με.",
+        "NEO": "j’étais étranger, et vous ne m’avez pas recueilli ; nu, et vous ne m’avez pas vêtu ; malade et en prison, et vous ne m’avez pas visité.",
+        "NAB": "a stranger and you gave me no welcome, naked and you gave me no clothing, ill and in prison, and you did not care for me.'",
+        "VAT_ES": "estaba de paso, y no me alojaron; desnudo, y no me vistieron; enfermo y preso, y no me visitaron\".",
+        "CEI": "ero forestiero e non mi avete ospitato, nudo e non mi avete vestito, malato e in carcere e non mi avete visitato."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "VUL": "Tunc respondebunt ei et ipsi, dicentes : Domine, quando te vidimus esurientem, aut sitientem, aut hospitem, aut nudum, aut infirmum, aut in carcere, et non ministravimus tibi ?",
+        "LXX": "Τότε ἀποκριθήσονται καὶ αὐτοί, λέγοντες, Κύριε, πότε σὲ εἴδομεν πεινῶντα, ἢ διψῶντα, ἢ ξένον, ἢ γυμνόν, ἢ ἀσθενῆ, ἢ ἐν φυλακῇ, καὶ οὐ διηκονήσαμέν σοι;",
+        "SYN": "Тогда и они скажут Ему в ответ: Господи! когда мы видели Тебя алчущим, или жаждущим, или странником, или нагим, или больным, или в темнице, и не послужили Тебе?",
+        "BYZ": "Τότε ἀποκριθήσονται καὶ αὐτοί, λέγοντες, Κύριε, πότε σὲ εἴδομεν πεινῶντα, ἢ διψῶντα, ἢ ξένον, ἢ γυμνόν, ἢ ἀσθενῆ, ἢ ἐν φυλακῇ, καὶ οὐ διηκονήσαμέν σοι;",
+        "NEO": "Alors eux aussi lui diront : Seigneur, quand vous avons-nous vu avoir faim ou soif, ou être étranger, ou nu, ou malade, ou en prison, et ne vous avons-nous pas assisté ?",
+        "NAB": "Then they will answer and say, 'Lord, when did we see you hungry or thirsty or a stranger or naked or ill or in prison, and not minister to your needs?'",
+        "VAT_ES": "Estos, a su vez, le preguntarán: \"Señor, &iquest;cuando te vimos hambriento o sediento, de paso o desnudo, enfermo o preso, y no te hemos socorrido?\".",
+        "CEI": "Anch'essi allora risponderanno: Signore, quando mai ti abbiamo visto affamato o assetato o forestiero o nudo o malato o in carcere e non ti abbiamo assistito?"
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "VUL": "Tunc respondebit illis, dicens : Amen dico vobis : Quamdiu non fecistis uni de minoribus his, nec mihi fecistis.",
+        "LXX": "Τότε ἀποκριθήσεται αὐτοῖς, λέγων, Ἀμὴν λέγω ὑμῖν, ἐφ’ ὅσον οὐκ ἐποιήσατε ἑνὶ τούτων τῶν ἐλαχίστων, οὐδὲ ἐμοὶ ἐποιήσατε.",
+        "SYN": "Тогда скажет им в ответ: истинно говорю вам: так как вы не сделали этого одному из сих меньших, то не сделали Мне.",
+        "BYZ": "Τότε ἀποκριθήσεται αὐτοῖς, λέγων, Ἀμὴν λέγω ὑμῖν, ἐφ’ ὅσον οὐκ ἐποιήσατε ἑνὶ τούτων τῶν ἐλαχίστων, οὐδὲ ἐμοὶ ἐποιήσατε.",
+        "NEO": "Et il leur répondra : En vérité, je vous le dis, chaque fois que vous ne l’avez pas fait à l’un de ces plus petits, c’est à moi que vous ne l’avez pas fait.",
+        "NAB": "He will answer them, 'Amen, I say to you, what you did not do for one of these least ones, you did not do for me.'",
+        "VAT_ES": "Y él les responderá: \"Les aseguro que cada vez que no lo hicieron con el más pequeño de mis hermanos, tampoco lo hicieron conmigo\".",
+        "CEI": "Ma egli risponderà: In verità vi dico: ogni volta che non avete fatto queste cose a uno di questi miei fratelli più piccoli, non l'avete fatto a me."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "VUL": "Et ibunt hi in supplicium æternum : justi autem in vitam æternam.",
+        "LXX": "Καὶ ἀπελεύσονται οὗτοι εἰς κόλασιν αἰώνιον· οἱ δὲ δίκαιοι εἰς ζωὴν αἰώνιον.",
+        "SYN": "И пойдут сии в муку вечную, а праведники в жизнь вечную.",
+        "BYZ": "Καὶ ἀπελεύσονται οὗτοι εἰς κόλασιν αἰώνιον· οἱ δὲ δίκαιοι εἰς ζωὴν αἰώνιον.",
+        "NEO": "Et ceux-ci s’en iront à l’éternel supplice, et les justes à la vie éternelle. »",
+        "NAB": "And these will go off to eternal punishment, but the righteous to eternal life.\"",
+        "VAT_ES": "Estos irán al castigo eterno, y los justos a la Vida eterna».",
+        "CEI": "E se ne andranno, questi al supplizio eterno, e i giusti alla vita eterna\"."
+      }
+    }
+  }
+}

@@ -1,0 +1,537 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_035",
+  "book_key": "GENE",
+  "sequence": 35,
+  "chapter_in": {
+    "MT": 35,
+    "VUL": 35,
+    "LXX": 35
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֱלֹהִים֙ אֶֽל יַעֲקֹ֔ב ק֛וּם עֲלֵ֥ה בֵֽית אֵ֖ל וְ/שֶׁב שָׁ֑ם וַ/עֲשֵׂה שָׁ֣ם מִזְבֵּ֔חַ לָ/אֵל֙ הַ/נִּרְאֶ֣ה אֵלֶ֔י/ךָ בְּ/בָרְחֲ/ךָ֔ מִ/פְּנֵ֖י עֵשָׂ֥ו אָחִֽי/ךָ׃",
+        "VUL": "Interea locutus est Deus ad Jacob : Surge, et ascende Bethel, et habita ibi, facque altare Deo qui apparuit tibi quando fugiebas Esau fratrem tuum.",
+        "LXX": "Εἶπεν δὲ ὁ θεὸς πρὸς Ἰακώβ Ἀναστὰς ἀνάβηθι εἰς τὸν τόπον Βαιθήλ, καὶ οἴκει ἐκεῖ· καὶ ποίησον ἐκεῖ θυσιαστήριον τῷ θεῷ τῷ ὀφθέντι σοι ἐν τῷ ἀποδιδράσκειν σε ἀπὸ προσώπου Ἠσαὺ τοῦ ἀδελφοῦ σου.",
+        "NAB": "God said to Jacob: \"Go up now to Bethel. Settle there and build an altar there to the God who appeared to you while you were fleeing from your brother Esau.\"",
+        "SYN": "Бог сказал Иакову: встань, пойди в Вефиль и живи там, и устрой там жертвенник Богу, явившемуся тебе, когда ты бежал от лица Исава, брата твоего.",
+        "NEO": "Dieu dit à Jacob : « Lève-toi, monte à Béthel et demeures-y, et dresse là un autel au Dieu qui t’est apparu quand tu fuyais devant Esaü, ton frère. »",
+        "VAT_ES": "Dios dijo a Jacob: «Sube a Betel y permanece allí. Levanta allí un altar al Dios que se te apareció cuando huías de tu hermano Esaú».",
+        "CEI": "Dio disse a Giacobbe: \"Alzati, và a Betel e abita là; costruisci in quel luogo un altare al Dio che ti è apparso quando fuggivi Esaù, tuo fratello\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יַעֲקֹב֙ אֶל בֵּית֔/וֹ וְ/אֶ֖ל כָּל אֲשֶׁ֣ר עִמּ֑/וֹ הָסִ֜רוּ אֶת אֱלֹהֵ֤י הַ/נֵּכָר֙ אֲשֶׁ֣ר בְּ/תֹכְ/כֶ֔ם וְ/הִֽטַּהֲר֔וּ וְ/הַחֲלִ֖יפוּ שִׂמְלֹתֵי/כֶֽם׃",
+        "VUL": "Jacob vero convocata omni domo sua, ait : Abjicite deos alienos qui in medio vestri sunt, et mundamini, ac mutate vestimenta vestra.",
+        "LXX": "εἶπεν δὲ Ἰακὼβ τῷ οἴκῳ αὐτοῦ καὶ πᾶσιν τοῖς μετ’ αὐτοῦ Ἄρατε τοὺς θεοὺς τοὺς ἀλλοτρίους ἐκ μέσου ὑμῶν, καὶ καθαρίσασθε, καὶ ἀλλάξατε τὰς στολὰς ὑμῶν·",
+        "NAB": "So Jacob told his family and all the others who were with him: \"Get rid of the foreign gods that you have among you; then purify yourselves and put on fresh clothes.",
+        "SYN": "И сказал Иаков дому своему и всем бывшим с ним: бросьте богов чужих, находящихся у вас, и очиститесь, и перемените одежды ваши;",
+        "NEO": "Jacob dit à sa famille et à tous ceux qui étaient avec lui : « Otez les dieux étrangers qui sont au milieu de vous ; purifiez-vous et changez de vêtements.",
+        "VAT_ES": "Entonces Jacob dijo a sus familiares y a todos los demás que estaban con él: «Dejen de lado todos los dioses extraños que tengan con ustedes, purifíquense y cámbiense de ropa.",
+        "CEI": "Allora Giacobbe disse alla sua famiglia e a quanti erano con lui: \"Eliminate gli dei stranieri che avete con voi, purificatevi e cambiate gli abiti."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/נָק֥וּמָה וְ/נַעֲלֶ֖ה בֵּֽית אֵ֑ל וְ/אֶֽעֱשֶׂה שָּׁ֣ם מִזְבֵּ֗חַ לָ/אֵ֞ל הָ/עֹנֶ֤ה אֹתִ/י֙ בְּ/י֣וֹם צָֽרָתִ֔/י וַ/יְהִי֙ עִמָּדִ֔/י בַּ/דֶּ֖רֶךְ אֲשֶׁ֥ר הָלָֽכְתִּי׃",
+        "VUL": "Surgite, et ascendamus in Bethel, ut faciamus ibi altare Deo : qui exaudivit me in die tribulationis meæ, et socius fuit itineris mei.",
+        "LXX": "καὶ ἀναστάντες ἀναβῶμεν εἰς Βαιθήλ, καὶ ποιήσωμεν ἐκεῖ θυσιαστήριον τῷ θεῷ τῷ ἐπακούσαντί μοι ἐν ἡμέρᾳ θλίψεως, ὃς ἦν μετ’ ἐμοῦ καὶ διέσωσέν με ἐν τῇ ὁδῷ ᾗ ἐπορευόμην.",
+        "NAB": "We are now to go up to Bethel, and I will build an altar there to the God who answered me in my hour of distress and who has been with me wherever I have gone.\"",
+        "SYN": "встанем и пойдем в Вефиль; там устрою я жертвенник Богу, Который услышал меня в день бедствия моего и был со мною [и хранил меня] в пути, которым я ходил.",
+        "NEO": "Nous nous lèverons et nous monterons à Béthel, et là je dresserai un autel au Dieu qui m’a exaucé au jour de mon angoisse, et qui a été avec moi, dans le voyage que j’ai fait. »",
+        "VAT_ES": "Ahora subiremos a Betel, y allí levantaré un altar al Dios que me respondió cuando estuve angustiado, y que estuvo conmigo en el viaje que realicé».",
+        "CEI": "Poi alziamoci e andiamo a Betel, dove io costruirò un altare al Dio che mi ha esaudito al tempo della mia angoscia e che è stato con me nel cammino che ho percorso\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יִּתְּנ֣וּ אֶֽל יַעֲקֹ֗ב אֵ֣ת כָּל אֱלֹהֵ֤י הַ/נֵּכָר֙ אֲשֶׁ֣ר בְּ/יָדָ֔/ם וְ/אֶת הַ/נְּזָמִ֖ים אֲשֶׁ֣ר בְּ/אָזְנֵי/הֶ֑ם וַ/יִּטְמֹ֤ן אֹתָ/ם֙ יַעֲקֹ֔ב תַּ֥חַת הָ/אֵלָ֖ה אֲשֶׁ֥ר עִם שְׁכֶֽם׃",
+        "VUL": "Dederunt ergo ei omnes deos alienos quos habebant, et inaures quæ erant in auribus eorum : at ille infodit ea subter terebinthum, quæ est post urbem Sichem.",
+        "LXX": "καὶ ἔδωκαν τῷ Ἰακὼβ τοὺς θεοὺς τοὺς ἀλλοτρίους οἳ ἦσαν ἐν ταῖς χερσὶν αὐτῶν, καὶ τὰ ἐνώτια τὰ ἐν τοῖς ὠσὶν αὐτῶν· καὶ κατέκρυψεν αὐτὰ Ἰακὼβ ὑπὸ τὴν τερέβινθον τὴν ἐν Σικίμοις, καὶ ἀπώλεσεν αὐτὰ ἕως τῆς σήμερον ἡμέρας.",
+        "NAB": "They therefore handed over to Jacob all the foreign gods in their possession and also the rings they had in their ears.",
+        "SYN": "И отдали Иакову всех богов чужих, бывших в руках их, и серьги, бывшие в ушах у них, и закопал их Иаков под дубом, который близ Сихема. [И оставил их безвестными даже до нынешнего дня.]",
+        "NEO": "Et ils donnèrent à Jacob tous les dieux étrangers qui étaient entre leurs mains et les boucles qu’ils avaient aux oreilles, et Jacob les enfouit sous le térébinthe qui est à Sichem.",
+        "VAT_ES": "Ellos entregaron a Jacob todos los dioses extraños que tenían consigo y los aros que llevaban en sus orejas. Y Jacob los enterró debajo de la encina que está cerca de Siquem.",
+        "CEI": "Essi consegnarono a Giacobbe tutti gli dei stranieri che possedevano e i pendenti che avevano agli orecchi; Giacobbe li sotterrò sotto la quercia presso Sichem."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּסָּ֑עוּ וַ/יְהִ֣י חִתַּ֣ת אֱלֹהִ֗ים עַל הֶֽ/עָרִים֙ אֲשֶׁר֙ סְבִיבֹ֣תֵי/הֶ֔ם וְ/לֹ֣א רָֽדְפ֔וּ אַחֲרֵ֖י בְּנֵ֥י יַעֲקֹֽב׃",
+        "VUL": "Cumque profecti essent, terror Dei invasit omnes per circuitum civitates, et non sunt ausi persequi recedentes.",
+        "LXX": "καὶ ἐξῆρεν Ἰσραὴλ ἐκ Σικίμων· καὶ ἐγένετο φόβος θεοῦ ἐπὶ τὰς πόλεις τὰς κύκλῳ αὐτῶν, καὶ οὐ κατεδίωξαν ὀπίσω τῶν υἱῶν Ἰσραήλ.",
+        "NAB": "Then, as they set out, a terror from God fell upon the towns round about, so that no one pursued the sons of Jacob.",
+        "SYN": "И отправились они [от Сихема]. И был ужас Божий на окрестных городах, и не преследовали сынов Иаковлевых.",
+        "NEO": "Ils partirent, et la terreur de Dieu se répandit sur les villes d’alentour, et on ne poursuivit pas les fils de Jacob.",
+        "VAT_ES": "Cuando partieron, Dios hizo cundir el pánico entre las poblaciones vecinas, de manera que nadie persiguió a los hijos de Jacob.",
+        "CEI": "Poi levarono l'accampamento e un terrore molto forte assalì i popoli che stavano attorno a loro, così che non inseguirono i figli di Giacobbe."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֨א יַעֲקֹ֜ב ל֗וּזָ/ה אֲשֶׁר֙ בְּ/אֶ֣רֶץ כְּנַ֔עַן הִ֖וא בֵּֽית אֵ֑ל ה֖וּא וְ/כָל הָ/עָ֥ם אֲשֶׁר עִמּֽ/וֹ׃",
+        "VUL": "Venit igitur Jacob Luzam, quæ est in terra Chanaan, cognomento Bethel : ipse et omnis populus cum eo.",
+        "LXX": "ἦλθεν δὲ Ἰακὼβ εἰς Λοῦζα ἥ ἐστιν ἐν γῇ Χανάαν, ἥ ἐστιν Βαιθήλ, αὐτὸς καὶ πᾶς ὁ λαὸς ὃς ἦν μετ’ αὐτοῦ.",
+        "NAB": "Thus Jacob and all the people who were with him arrived in Luz (that is, Bethel) in the land of Canaan.",
+        "SYN": "И пришел Иаков в Луз, что в земле Ханаанской, то есть в Вефиль, сам и все люди, бывшие с ним,",
+        "NEO": "Jacob, avec tous les gens qui étaient avec lui, arriva à Luz, au pays de Canaan : c’est Béthel.",
+        "VAT_ES": "Así Jacob llegó a Luz –o sea, Betel– en la tierra de Canaán, junto con toda la gente que lo acompañaba.",
+        "CEI": "Giacobbe e tutta la gente ch'era con lui arrivarono a Luz, cioè Betel, che è nel paese di Cànaan."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יִּ֤בֶן שָׁם֙ מִזְבֵּ֔חַ וַ/יִּקְרָא֙ לַ/מָּק֔וֹם אֵ֖ל בֵּֽית אֵ֑ל כִּ֣י שָׁ֗ם נִגְל֤וּ אֵלָי/ו֙ הָֽ/אֱלֹהִ֔ים בְּ/בָרְח֖/וֹ מִ/פְּנֵ֥י אָחִֽי/ו׃",
+        "VUL": "Ædificavitque ibi altare, et appellavit nomen loci illius, Domus Dei : ibi enim apparuit ei Deus cum fugeret fratrem suum.",
+        "LXX": "καὶ ᾠκοδόμησεν ἐκεῖ θυσιαστήριον, καὶ ἐκάλεσεν τὸ ὄνομα τοῦ τόπου Βαιθήλ· ἐκεῖ γὰρ ἐπεφάνη αὐτῷ ὁ θεὸς ἐν τῷ ἀποδιδράσκειν αὐτὸν ἀπὸ προσώπου Ἠσαὺ τοῦ ἀδελφοῦ αὐτοῦ.",
+        "NAB": "There he built an altar and named the place Bethel, for it was there that God had revealed himself to him when he was fleeing from his brother.",
+        "SYN": "и устроил там жертвенник, и назвал сие место: Эл-Вефиль, ибо тут явился ему Бог, когда он бежал от лица [Исава] брата своего.",
+        "NEO": "Il y bâtit un autel, et il appela ce lieu El-Béthel, car c’est là que Dieu lui était apparu lorsqu’il fuyait devant son frère.",
+        "VAT_ES": "Allí erigió un altar, y puso a ese lugar el nombre de Betel, porque allí se le había revelado Dios, cuando él huía de su hermano.",
+        "CEI": "Qui egli costruì un altare e chiamò quel luogo \"El-Betel\", perché là Dio gli si era rivelato, quando sfuggiva al fratello."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/תָּ֤מָת דְּבֹרָה֙ מֵינֶ֣קֶת רִבְקָ֔ה וַ/תִּקָּבֵ֛ר מִ/תַּ֥חַת לְ/בֵֽית אֵ֖ל תַּ֣חַת הָֽ/אַלּ֑וֹן וַ/יִּקְרָ֥א שְׁמ֖/וֹ אַלּ֥וֹן בָּכֽוּת׃",
+        "VUL": "Eodem tempore mortua est Debora nutrix Rebeccæ, et sepulta est ad radices Bethel subter quercum : vocatumque est nomen loci illius, Quercus fletus.",
+        "LXX": "ἀπέθανεν δὲ Δεββωρὰ ἡ τροφὸς Ῥεβέκκας κατώτερον Βαιθὴλ ὑπὸ τὴν βάλανον· καὶ ἐκάλεσεν Ἰακὼβ τὸ ὄνομα αὐτῆς Βάλανος πένθους.",
+        "NAB": "Death came to Rebekah's nurse Deborah; she was buried under the oak below Bethel, and so it was called Allonbacuth.",
+        "SYN": "И умерла Девора, кормилица Ревеккина, и погребена ниже Вефиля под дубом, который и назвал _Иаков_ дубом плача.",
+        "NEO": "Alors mourut Débora, nourrice de Rebecca, et elle fut enterrée au-dessous de Béthel, au pied du chêne auquel on donna le nom de Chêne des pleurs.",
+        "VAT_ES": "Mientras tanto murió Débora, la nodriza de Rebeca, y fue sepultada bajo la encina que se encuentra antes de llegar a Betel. Por eso se la llamó «Encina del llanto».",
+        "CEI": "Allora morì Dèbora, la nutrice di Rebecca, e fu sepolta al disotto di Betel, ai piedi della quercia, che perciò si chiamò Quercia del Pianto."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֵּרָ֨א אֱלֹהִ֤ים אֶֽל יַעֲקֹב֙ ע֔וֹד בְּ/בֹא֖/וֹ מִ/פַּדַּ֣ן אֲרָ֑ם וַ/יְבָ֖רֶךְ אֹתֽ/וֹ׃",
+        "VUL": "Apparuit autem iterum Deus Jacob postquam reversus est de Mesopotamia Syriæ, benedixitque ei",
+        "LXX": "Ὤφθη δὲ ὁ θεὸς Ἰακὼβ ἔτι ἐν Λοῦζα, ὅτε παρεγένετο ἐκ Μεσοποταμίας τῆς Συρίας, καὶ ηὐλόγησεν αὐτὸν ὁ θεός.",
+        "NAB": "On Jacob's arrival from Paddan-aram, God appeared to him again and blessed him.",
+        "SYN": "И явился Бог Иакову [в Лузе] по возвращении его из Месопотамии, и благословил его,",
+        "NEO": "Dieu apparut encore à Jacob, après son retour de Paddan-Aram, et il le bénit.",
+        "VAT_ES": "Cuando Jacob regresó de Padán Aram, Dios se le apareció de nuevo y lo bendijo,",
+        "CEI": "Dio apparve un'altra volta a Giacobbe, quando tornava da Paddan-Aram, e lo benedisse."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֹּֽאמֶר ל֥/וֹ אֱלֹהִ֖ים שִׁמְ/ךָ֣ יַעֲקֹ֑ב לֹֽא יִקָּרֵא֩ שִׁמְ/ךָ֨ ע֜וֹד יַעֲקֹ֗ב כִּ֤י אִם יִשְׂרָאֵל֙ יִהְיֶ֣ה שְׁמֶ֔/ךָ וַ/יִּקְרָ֥א אֶת שְׁמ֖/וֹ יִשְׂרָאֵֽל׃",
+        "VUL": "dicens : Non vocaberis ultra Jacob, sed Israël erit nomen tuum. Et appellavit eum Israël,",
+        "LXX": "καὶ εἶπεν αὐτῷ ὁ θεός Τὸ ὄνομά σου οὐ κληθήσεται ἔτι Ἰακώβ, ἀλλ’ Ἰσραὴλ ἔσται τὸ ὄνομά σου.",
+        "NAB": "God said to him: \"You whose name is Jacob shall no longer be called Jacob, but Israel shall be your name.\" Thus he was named Israel.",
+        "SYN": "и сказал ему Бог: имя твое Иаков; отныне ты не будешь называться Иаковом, но будет имя тебе: Израиль. И нарек ему имя: Израиль.",
+        "NEO": "Dieu lui dit : « Ton nom est Jacob ; tu ne seras plus appelé Jacob, mais Israël sera ton nom. » Et il le nomma Israël.",
+        "VAT_ES": "diciéndole: «Tu nombre es Jacob. Pero en adelante no te llamarás Jacob, sino Israel». Así le puso el nombre de Israel.",
+        "CEI": "Dio gli disse: \"Il tuo nome è Giacobbe. Non ti chiamerai più Giacobbe, ma Israele sarà il tuo nome\". Così lo si chiamò Israele."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֩ ל֨/וֹ אֱלֹהִ֜ים אֲנִ֨י אֵ֤ל שַׁדַּי֙ פְּרֵ֣ה וּ/רְבֵ֔ה גּ֛וֹי וּ/קְהַ֥ל גּוֹיִ֖ם יִהְיֶ֣ה מִמֶּ֑/ךָּ וּ/מְלָכִ֖ים מֵ/חֲלָצֶ֥י/ךָ יֵצֵֽאוּ׃",
+        "VUL": "dixitque ei : Ego Deus omnipotens : cresce, et multiplicare : gentes et populi nationum ex te erunt, reges de lumbis tuis egredientur,",
+        "LXX": "εἶπεν δὲ αὐτῷ ὁ θεός Ἐγὼ ὁ θεός σου, αὐξάνου καὶ πληθύνου· καὶ ἔθνη καὶ συναγωγαὶ ἐθνῶν ἔσονται ἐκ σοῦ, καὶ βασιλεῖς ἐκ τῆς ὀσφύος σου ἐξελεύσονται.",
+        "NAB": "God also said to him: \"I am God Almighty; be fruitful and multiply. A nation, indeed an assembly of nations, shall stem from you, and kings shall issue from your loins.",
+        "SYN": "И сказал ему Бог: Я Бог Всемогущий; плодись и умножайся; народ и множество народов будет от тебя, и цари произойдут из чресл твоих;",
+        "NEO": "Dieu lui dit : « Je suis le Dieu tout-puissant. Sois fécond et multiplie ; il naîtra de toi une nation et une assemblée de nations, et de tes reins sortiront des rois.",
+        "VAT_ES": "Luego añadió: «Yo soy el Dios Todopoderoso. Sé fecundo y multiplícate. De ti nacerá una nación, más aún, una asamblea de naciones, y saldrán reyes de tus entrañas.",
+        "CEI": "Dio gli disse: \"Io sono Dio onnipotente. Sii fecondo e diventa numeroso, popolo e assemblea di popoli verranno da te, re usciranno dai tuoi fianchi."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/אֶת הָ/אָ֗רֶץ אֲשֶׁ֥ר נָתַ֛תִּי לְ/אַבְרָהָ֥ם וּ/לְ/יִצְחָ֖ק לְ/ךָ֣ אֶתְּנֶ֑/נָּה וּֽ/לְ/זַרְעֲ/ךָ֥ אַחֲרֶ֖י/ךָ אֶתֵּ֥ן אֶת הָ/אָֽרֶץ׃",
+        "VUL": "terramque quam dedi Abraham et Isaac, dabo tibi et semini tuo post te.",
+        "LXX": "καὶ τὴν γῆν ἣν δέδωκα Ἀβραὰμ καὶ Ἰσαάκ, σοὶ δέδωκα αὐτήν, καὶ τῷ σπέρματί σου μετὰ σὲ δώσω τὴν γῆν ταύτην.",
+        "NAB": "The land I once gave to Abraham and Isaac I now give to you; And to your descendants after you will I give this land.\"",
+        "SYN": "землю, которую Я дал Аврааму и Исааку, Я дам тебе, и потомству твоему по тебе дам землю сию.",
+        "NEO": "Le pays que j’ai donné à Abraham et à Isaac, je te le donnerai, et je donnerai ce pays à ta postérité après toi. »",
+        "VAT_ES": "La tierra que di a Abraham y a Isaac, ahora te la doy a ti y a tu descendencia».",
+        "CEI": "Il paese che ho concesso ad Abramo e a Isacco darò a te e alla tua stirpe dopo di te darò il paese\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַל מֵ/עָלָ֖י/ו אֱלֹהִ֑ים בַּ/מָּק֖וֹם אֲשֶׁר דִּבֶּ֥ר אִתּֽ/וֹ׃",
+        "VUL": "Et recessit ab eo.",
+        "LXX": "ἀνέβη δὲ ὁ θεὸς ἀπ’ αὐτοῦ ἐκ τοῦ τόπου οὗ ἐλάλησεν μετ’ αὐτοῦ.",
+        "NAB": "Then God departed from him.",
+        "SYN": "И восшел от него Бог с места, на котором говорил ему.",
+        "NEO": "Et Dieu remonta d’auprès de lui, dans le lieu où il lui avait parlé.",
+        "VAT_ES": "Y Dios se alejó de él.",
+        "CEI": "Dio scomparve da lui, nel luogo dove gli aveva parlato."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יַּצֵּ֨ב יַעֲקֹ֜ב מַצֵּבָ֗ה בַּ/מָּק֛וֹם אֲשֶׁר דִּבֶּ֥ר אִתּ֖/וֹ מַצֶּ֣בֶת אָ֑בֶן וַ/יַּסֵּ֤ךְ עָלֶ֨י/הָ֙ נֶ֔סֶךְ וַ/יִּצֹ֥ק עָלֶ֖י/הָ שָֽׁמֶן׃",
+        "VUL": "Ille vero erexit titulum lapideum in loco quo locutus fuerat ei Deus : libans super eum libamina, et effundens oleum :",
+        "LXX": "καὶ ἔστησεν Ἰακὼβ στήλην ἐν τῷ τόπῳ ᾧ ἐλάλησεν μετ’ αὐτοῦ, στήλην λιθίνην· καὶ ἔσπεισεν ἐπ’ αὐτὴν σπονδήν, καὶ ἐπέχεεν ἐπ’ αὐτὴν ἔλαιον.",
+        "NAB": "On the site where God had spoken with him, Jacob set up a memorial stone, and upon it he made a libation and poured out oil.",
+        "SYN": "И поставил Иаков памятник на месте, на котором говорил ему [Бог], памятник каменный, и возлил на него возлияние, и возлил на него елей;",
+        "NEO": "Et dans le lieu où il lui avait parlé, Jacob dressa un monument de pierre, sur lequel il fit une libation et versa de l’huile.",
+        "VAT_ES": "Jacob erigió una piedra conmemorativa en el lugar donde Dios le había hablado. En seguida ofreció una libación sobre ella y ungió la piedra con aceite.",
+        "CEI": "Allora Giacobbe eresse una stele, dove gli aveva parlato, una stele di pietra, e su di essa fece una libazione e versò olio."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֨א יַעֲקֹ֜ב אֶת שֵׁ֣ם הַ/מָּק֗וֹם אֲשֶׁר֩ דִּבֶּ֨ר אִתּ֥/וֹ שָׁ֛ם אֱלֹהִ֖ים בֵּֽית אֵֽל׃",
+        "VUL": "vocansque nomen loci illius Bethel.",
+        "LXX": "καὶ ἐκάλεσεν Ἰακὼβ τὸ ὄνομα τοῦ τόπου, ἐν ᾧ ἐλάλησεν μετ’ αὐτοῦ ἐκεῖ ὁ θεός Βαιθήλ.",
+        "NAB": "Jacob named the site Bethel, because God had spoken with him there.",
+        "SYN": "и нарек Иаков имя месту, на котором Бог говорил ему: Вефиль.",
+        "NEO": "Il donna le nom de Béthel au lieu où Dieu lui avait parlé.",
+        "VAT_ES": "Jacob llamó Betel a aquel lugar, porque allí Dios había hablado con él.",
+        "CEI": "Giacobbe chiamò Betel il luogo dove Dio gli aveva parlato."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יִּסְעוּ֙ מִ/בֵּ֣ית אֵ֔ל וַֽ/יְהִי ע֥וֹד כִּבְרַת הָ/אָ֖רֶץ לָ/ב֣וֹא אֶפְרָ֑תָה וַ/תֵּ֥לֶד רָחֵ֖ל וַ/תְּקַ֥שׁ בְּ/לִדְתָּֽ/הּ׃",
+        "VUL": "Egressus autem inde, venit verno tempore ad terram quæ ducit Ephratam : in qua cum parturiret Rachel,",
+        "LXX": "Ἀπάρας δὲ Ἰακὼβ ἐκ Βαιθὴλ ἔπηξεν τὴν σκηνὴν αὐτοῦ ἐπέκεινα τοῦ πύργου Γάδερ. ἐγένετο δὲ ἡνίκα ἤγγισεν χαβραθὰ εἰς γῆν ἐλθεῖν Ἐφράθα, ἔτεκεν Ῥαχήλ· καὶ ἐδυστόκησεν ἐν τῷ τοκετῷ.",
+        "NAB": "Then they departed from Bethel; but while they still had some distance to go on the way to Ephrath, Rachel began to be in labor and to suffer great distress.",
+        "SYN": "И отправились из Вефиля. [И раскинул он шатер свой за башнею Гадер.] И когда еще оставалось некоторое расстояние земли до Ефрафы, Рахиль родила, и роды ее были трудны.",
+        "NEO": "Ils partirent de Béthel. Il y avait encore une certaine distance avant d’arriver à Ephrata, lorsque Rachel enfanta, et son accouchement fut pénible.",
+        "VAT_ES": "Partieron de Betel, y cuando todavía faltaba un trecho para llegar a Efratá, a Raquel le llegó el momento de dar a luz, y tuvo un parto difícil.",
+        "CEI": "Poi levarono l'accampamento da Betel. Mancava ancora un tratto di cammino per arrivare ad Efrata, quando Rachele partorì ed ebbe un parto difficile."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י בְ/הַקְשֹׁתָ֖/הּ בְּ/לִדְתָּ֑/הּ וַ/תֹּ֨אמֶר לָ֤/הּ הַ/מְיַלֶּ֨דֶת֙ אַל תִּ֣ירְאִ֔י כִּֽי גַם זֶ֥ה לָ֖/ךְ בֵּֽן׃",
+        "VUL": "ob difficultatem partus periclitari cpit. Dixitque ei obstetrix : Noli timere, quia et hunc habebis filium.",
+        "LXX": "ἐγένετο δὲ ἐν τῷ σκληρῶς αὐτὴν τίκτειν εἶπεν αὐτῇ ἡ μαῖα Θάρσει, καὶ γὰρ οὗτός ἐστιν υἱός.",
+        "NAB": "When her pangs were most severe, her midwife said to her, \"Have no fear! This time, too, you have a son.\"",
+        "SYN": "Когда же она страдала в родах, повивальная бабка сказала ей: не бойся, ибо и это тебе сын.",
+        "NEO": "Pendant les douleurs de l’enfantement, la sage-femme lui dit : « Ne crains point, car c’est encore un fils que tu vas avoir. »",
+        "VAT_ES": "Como daba a luz muy penosamente, la partera le dijo» «&iexcl;No temas, porque tienes otro hijo varón!».",
+        "CEI": "Mentre penava a partorire, la levatrice le disse: \"Non temere: anche questo è un figlio!\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֞י בְּ/צֵ֤את נַפְשָׁ/הּ֙ כִּ֣י מֵ֔תָה וַ/תִּקְרָ֥א שְׁמ֖/וֹ בֶּן אוֹנִ֑י וְ/אָבִ֖י/ו קָֽרָא ל֥/וֹ בִנְיָמִֽין׃",
+        "VUL": "Egrediente autem anima præ dolore, et imminente jam morte, vocavit nomen filii sui Benoni, id est, Filius doloris mei : pater vero appellavit eum Benjamin, id est, Filius dextræ.",
+        "LXX": "ἐγένετο δὲ ἐν τῷ ἀφιέναι αὐτὴν τὴν ψυχήν, ἀπέθνησκεν γάρ, ἐκάλεσεν τὸ ὄνομα αὐτοῦ Υἱὸς ὀδύνης μου· ὁ δὲ πατὴρ αὐτοῦ ἐκάλεσεν αὐτὸν Βενιαμείν.",
+        "NAB": "With her last breath - for she was at the point of death-she called him Ben-oni; his father, however, named him Benjamin.",
+        "SYN": "И когда выходила из нее душа, ибо она умирала, то нарекла ему имя: Бенони. Но отец его назвал его Вениамином.",
+        "NEO": "Comme son âme s’en allait, — car elle était mourante, — elle le nomma Bénoni ; mais son père l’appela Benjamin.",
+        "VAT_ES": "Con su último aliento –porque ya se moría– lo llamó Ben Oní; pero su padre le puso el nombre de Benjamín.",
+        "CEI": "Mentre esalava l'ultimo respiro, perché stava morendo, essa lo chiamò Ben-Oni, ma suo padre lo chiamò Beniamino."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/תָּ֖מָת רָחֵ֑ל וַ/תִּקָּבֵר֙ בְּ/דֶ֣רֶךְ אֶפְרָ֔תָה הִ֖וא בֵּ֥ית לָֽחֶם׃",
+        "VUL": "Mortua est ergo Rachel, et sepulta est in via quæ ducit Ephratam, hæc est Bethlehem.",
+        "LXX": "ἀπέθανεν δὲ Ῥαχήλ, καὶ ἐτάφη ἐν τῇ ὁδῷ Ἐφράθα· αὕτη ἐστὶν Βηθλέεμ.",
+        "NAB": "Thus Rachel died; and she was buried on the road to Ephrath (that is, Bethlehem).",
+        "SYN": "И умерла Рахиль, и погребена на дороге в Ефрафу, то есть Вифлеем.",
+        "NEO": "Rachel mourut, et elle fut enterrée au chemin d’Ephrata, qui est Bethléem.",
+        "VAT_ES": "Así murió Raquel, y fue enterrada junto al camino de Efratá, o sea, de Belén.",
+        "CEI": "Così Rachele morì e fu sepolta lungo la strada verso Efrata, cioè Betlemme."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יַּצֵּ֧ב יַעֲקֹ֛ב מַצֵּבָ֖ה עַל קְבֻרָתָ֑/הּ הִ֛וא מַצֶּ֥בֶת קְבֻֽרַת רָחֵ֖ל עַד הַ/יּֽוֹם׃",
+        "VUL": "Erexitque Jacob titulum super sepulchrum ejus : hic est titulus monumenti Rachel, usque in præsentem diem.",
+        "LXX": "καὶ ἔστησεν Ἰακὼβ στήλην ἐπὶ τοῦ μνημείου αὐτῆς· αὕτη ἐστὶν στήλη μνημείου Ῥαχὴλ ἕως τῆς σήμερον ἡμέρας.",
+        "NAB": "Jacob set up a memorial stone on her grave, and the same monument marks Rachel's grave to this day.",
+        "SYN": "Иаков поставил над гробом ее памятник. Это надгробный памятник Рахили до сего дня.",
+        "NEO": "Jacob éleva un monument sur sa tombe ; c’est le monument de la Tombe de Rachel, qui subsiste encore aujourd’hui.",
+        "VAT_ES": "Sobre su tumba Jacob erigió un monumento, el mismo que está en esa tumba hasta el día de hoy.",
+        "CEI": "Giacobbe eresse sulla sua tomba una stele. Questa stele della tomba di Rachele esiste fino ad oggi."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּסַּ֖ע יִשְׂרָאֵ֑ל וַ/יֵּ֣ט אָֽהֳלֹ֔/ה מֵ/הָ֖לְאָה לְ/מִגְדַּל עֵֽדֶר׃",
+        "VUL": "Egressus inde, fixit tabernaculum trans Turrem gregis.",
+        "LXX": "ἐγένετο δὲ ἡνίκα κατῴκησεν Ἰσραὴλ ἐν τῇ γῇ ἐκείνῃ, ἐπορεύθη Ῥουβὴν καὶ ἐκοιμήθη μετὰ Βάλλας τῆς παλλακῆς τοῦ πατρὸς αὐτοῦ· καὶ ἤκουσεν Ἰσραήλ, καὶ πονηρὸν ἐφάνη ἐναντίον αὐτοῦ.",
+        "NAB": "Israel moved on and pitched his tent beyond Migdal-eder.",
+        "SYN": "И отправился [оттуда] Израиль и раскинул шатер свой за башнею Гадер.",
+        "NEO": "Israël partit, et il dressa sa tente au delà de Migdal-Eder.",
+        "VAT_ES": "Israel siguió avanzando, y estableció su campamento más allá de Migdal Eder.",
+        "CEI": "Poi Israele levò l'accampamento e piantò la tenda al di là di Migdal-Eder."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י בִּ/שְׁכֹּ֤ן יִשְׂרָאֵל֙ בָּ/אָ֣רֶץ הַ/הִ֔וא וַ/יֵּ֣לֶךְ רְאוּבֵ֔ן וַ/יִּשְׁכַּב֙ אֶת בִּלְהָה֙ פִּילֶ֣גֶשׁ אָבִ֔י/ו וַ/יִּשְׁמַ֖ע יִשְׂרָאֵ֑ל וַ/יִּֽהְי֥וּ בְנֵֽי יַעֲקֹ֖ב שְׁנֵ֥ים עָשָֽׂר׃",
+        "VUL": "Cumque habitaret in illa regione, abiit Ruben, et dormivit cum Bala concubina patris sui : quod illum minime latuit. Erant autem filii Jacob duodecim.",
+        "LXX": "Ἦσαν δὲ οἱ υἱοὶ Ἰακὼβ δώδεκα·",
+        "NAB": "While Israel was encamped in that region, Reuben went and lay with Bilhah, his father's concubine. When Israel heard of it, he was greatly offended. The sons of Jacob were now twelve.",
+        "SYN": "Во время пребывания Израиля в той стране, Рувим пошел и переспал с Валлою, наложницею отца своего [Иакова]. И услышал Израиль [и принял то с огорчением]. Сынов же у Иакова было двенадцать.",
+        "NEO": "Pendant qu’Israël demeurait dans cette contrée, Ruben vint et coucha avec Bala, concubine de son père ; et Israël l’apprit.",
+        "VAT_ES": "Mientras acampaba en aquella región, Rubén se acostó con Bilhá, la concubina de su padre, e Israel se enteró.",
+        "CEI": "Mentre Israele abitava in quel paese, Ruben andò a unirsi con Bila, concubina del padre, e Israele lo venne a sapere. I figli di Giacobbe furono dodici."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "בְּנֵ֣י לֵאָ֔ה בְּכ֥וֹר יַעֲקֹ֖ב רְאוּבֵ֑ן וְ/שִׁמְעוֹן֙ וְ/לֵוִ֣י וִֽ/יהוּדָ֔ה וְ/יִשָּׂשכָ֖ר וּ/זְבוּלֻֽן׃",
+        "VUL": "Filii Liæ : primogenitus Ruben, et Simeon, et Levi, et Judas, et Issachar, et Zabulon.",
+        "LXX": "υἱοὶ Λείας πρωτότοκος Ἰακὼβ Ῥουβήν, Συμεών, Λευείς, Ἰούδας, Ἰσσαχάρ, Ζαβουλών·",
+        "NAB": "The sons of Leah: Reuben, Jacob's first-born, Simeon, Levi, Judah, Issachar, and Zebulun;",
+        "SYN": "Сыновья Лии: первенец Иакова Рувим, _по_ _нем_ Симеон, Левий, Иуда, Иссахар и Завулон.",
+        "NEO": "Fils de Lia : Ruben, premier-né de Jacob, Siméon, Lévi, Juda, Issachar et Zabulon.",
+        "VAT_ES": "Los hijos de Lía fueron Rubén, el primogénito de Jacob, Simeón, Leví, Judá, Isacar y Zabulón.",
+        "CEI": "I figli di Lia: il primogenito di Giacobbe, Ruben, poi Simeone, Levi, Giuda, Issacar e Zàbulon."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "בְּנֵ֣י רָחֵ֔ל יוֹסֵ֖ף וּ/בִנְיָמִֽן׃",
+        "VUL": "Filii Rachel : Joseph et Benjamin.",
+        "LXX": "υἱοὶ δὲ Ῥαχὴλ Ἰωσὴφ καὶ Βενιαμείν·",
+        "NAB": "the sons of Rachel: Joseph and Benjamin;",
+        "SYN": "Сыновья Рахили: Иосиф и Вениамин.",
+        "NEO": "Fils de Rachel : Joseph et Benjamin.",
+        "VAT_ES": "Los hijos de Raquel fueron José y Benjamín.",
+        "CEI": "I figli di Rachele: Giuseppe e Beniamino."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֤י בִלְהָה֙ שִׁפְחַ֣ת רָחֵ֔ל דָּ֖ן וְ/נַפְתָּלִֽי׃",
+        "VUL": "Filii Balæ ancillæ Rachelis : Dan et Nephthali.",
+        "LXX": "υἱοὶ δὲ Βάλλας παιδίσκης Ῥαχὴλ Δὰν καὶ Νεφθαλείμ·",
+        "NAB": "the sons of Rachel's maid Bilhah: Dan and Naphtali;",
+        "SYN": "Сыновья Валлы, служанки Рахилиной: Дан и Неффалим.",
+        "NEO": "Fils de Bala, servante de Rachel : Dan et Nephthali.",
+        "VAT_ES": "Los hijos de Bilhá, la esclava de Raquel, fueron Dan y Neftalí.",
+        "CEI": "I figli di Bila, schiava di Rachele: Dan e Nèftali."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֥י זִלְפָּ֛ה שִׁפְחַ֥ת לֵאָ֖ה גָּ֣ד וְ/אָשֵׁ֑ר אֵ֚לֶּה בְּנֵ֣י יַעֲקֹ֔ב אֲשֶׁ֥ר יֻלַּד ל֖/וֹ בְּ/פַדַּ֥ן אֲרָֽם׃",
+        "VUL": "Filii Zelphæ ancillæ Liæ : Gad et Aser : hi sunt filii Jacob, qui nati sunt ei in Mesopotamia Syriæ.",
+        "LXX": "υἱοὶ δὲ Ζέλφας παιδίσκης Λείας Γὰδ καὶ Ἀσήρ· οὗτοι οἱ υἱοὶ Ἰακώβ, οἳ ἐγένοντο αὐτῷ ἐν Μεσοποταμίᾳ τῆς Συρίας.",
+        "NAB": "the sons of Leah's maid Zilpah: Gad and Asher. These are the sons of Jacob who were born to him in Paddan-aram.",
+        "SYN": "Сыновья Зелфы, служанки Лииной: Гад и Асир. Сии сыновья Иакова, родившиеся ему в Месопотамии.",
+        "NEO": "Fils de Zelpha, servante de Lia : Gad et Aser. Ce sont là les fils de Jacob, qui lui naquirent à Paddan-Aram.",
+        "VAT_ES": "Los hijos de Zilpá, la esclava de Lía, fueron Gad y Aser. Estos son los hijos que le nacieron a Jacob en Padán Aram.",
+        "CEI": "I figli di Zilpa, schiava di Lia: Gad e Aser. Questi sono i figli di Giacobbe che gli nacquero in Paddan-Aram."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֤א יַעֲקֹב֙ אֶל יִצְחָ֣ק אָבִ֔י/ו מַמְרֵ֖א קִרְיַ֣ת הָֽאַרְבַּ֑ע הִ֣וא חֶבְר֔וֹן אֲשֶׁר גָּֽר שָׁ֥ם אַבְרָהָ֖ם וְ/יִצְחָֽק׃",
+        "VUL": "Venit etiam ad Isaac patrem suum in Mambre, civitatem Arbee, hæc est Hebron, in qua peregrinatus est Abraham et Isaac.",
+        "LXX": "Ἦλθεν δὲ Ἰακὼβ πρὸς Ἰσαὰκ τὸν πατέρα αὐτοῦ εἰς Μαμβρή, εἰς πόλιν τοῦ πεδίου· αὕτη ἐστὶν Χεβρὼν ἐν γῇ Χανάαν, οὗ παρῴκησεν Ἀβραὰμ καὶ Ἰσαάκ.",
+        "NAB": "Jacob went home to his father Isaac at Mamre, in Kiriath-arba (that is, Hebron), where Abraham and Isaac had stayed.",
+        "SYN": "И пришел Иаков к Исааку, отцу своему, [ибо он был еще жив,] в Мамре, в Кириаф-Арбу, то есть Хеврон [в земле Ханаанской,] где странствовал Авраам и Исаак.",
+        "NEO": "Jacob arriva auprès d’Isaac, son père, à Mambré, à Qiryath-Arbé, qui est Hébron, où avaient séjourné Abraham et Isaac.",
+        "VAT_ES": "Jacob llegó a la casa de su padre Isaac, en Mamré, En Quiriat Arbá –la actual Hebrón– donde también había residido Abraham.",
+        "CEI": "Poi Giacobbe venne da suo padre Isacco a Mamre, a Kiriat-Arba, cioè Ebron, dove Abramo e Isacco avevano soggiornato come forestieri."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יִּֽהְי֖וּ יְמֵ֣י יִצְחָ֑ק מְאַ֥ת שָׁנָ֖ה וּ/שְׁמֹנִ֥ים שָׁנָֽה׃",
+        "VUL": "Et completi sunt dies Isaac centum octoginta annorum.",
+        "LXX": "ἐγένοντο δὲ αἱ ἡμέραι Ἰσαὰκ ἃς ἔζησεν ἔτη ἑκατὸν ὀγδοήκοντα.",
+        "NAB": "The lifetime of Isaac was one hundred and eighty years;",
+        "SYN": "И было дней [жизни] Исааковой сто восемьдесят лет.",
+        "NEO": "Les jours d’Isaac furent de cent quatre-vingts ans.",
+        "VAT_ES": "Isaac vivió ciento ochenta años.",
+        "CEI": "Isacco raggiunse l'età di centottant'anni."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יִּגְוַ֨ע יִצְחָ֤ק וַ/יָּ֨מָת֙ וַ/יֵּאָ֣סֶף אֶל עַמָּ֔י/ו זָקֵ֖ן וּ/שְׂבַ֣ע יָמִ֑ים וַ/יִּקְבְּר֣וּ אֹת֔/וֹ עֵשָׂ֥ו וְ/יַעֲקֹ֖ב בָּנָֽי/ו׃",
+        "VUL": "Consumptusque ætate mortuus est : et appositus est populo suo senex et plenus dierum : et sepelierunt eum Esau et Jacob filii sui.",
+        "LXX": "καὶ ἐκλιπὼν ἀπέθανεν καὶ προσετέθη πρὸς τὸ γένος αὐτοῦ πρεσβύτερος καὶ πλήρης ἡμερῶν· καὶ ἔθαψαν αὐτὸν Ἠσαὺ καὶ Ἰακὼβ οἱ υἱοὶ αὐτοῦ.",
+        "NAB": "then he breathed his last. After a full life, he died as an old man and was taken to his kinsmen. His sons Esau and Jacob buried him.",
+        "SYN": "И испустил Исаак дух и умер, и приложился к народу своему, будучи стар и насыщен жизнью; и погребли его Исав и Иаков, сыновья его.",
+        "NEO": "Isaac expira et mourut, et il fut réuni à son peuple, vieux et rassasié de jours. Esaü et Jacob, ses fils, l’enterrèrent.",
+        "VAT_ES": "Al término de ellos murió, anciano y cargado de años, y fue a reunirse con los suyos. Sus hijos Esaú y Jacob le dieron sepultura.",
+        "CEI": "Poi Isacco spirò, morì e si riunì al suo parentado, vecchio e sazio di giorni. Lo seppellirono i suoi figli Esaù e Giacobbe."
+      }
+    }
+  }
+}

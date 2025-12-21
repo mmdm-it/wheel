@@ -1,0 +1,143 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "APOC_015",
+  "book_key": "APOC",
+  "sequence": 15,
+  "chapter_in": {
+    "MT": 15,
+    "VUL": 15,
+    "LXX": 15
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Apocalypsis",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Καὶ εἶδον ἄλλο σημεῖον ἐν τῷ οὐρανῷ μέγα καὶ θαυμαστόν, ἀγγέλους ἑπτὰ ἔχοντας πληγὰς ἑπτὰ τὰς ἐσχάτας, ὅτι ἐν αὐταῖς ἐτελέσθη ὁ θυμὸς τοῦ θεοῦ.",
+        "VUL": "Et vidi aliud signum in cælo magnum et mirabile, angelos septem, habentes plagas septem novissimas : quoniam in illis consummata est ira Dei.",
+        "SYN": "И увидел я иное знамение на небе, великое и чудное: семь Ангелов, имеющих семь последних язв, которыми оканчивалась ярость Божия.",
+        "NEO": "Puis je vis dans le ciel un autre signe,+ 15:1 XV, 1. Un autre signe: c’est le du groupe, et, comme le sceau et la trompette, il sert de transition aux visions suivantes.* grand et étonnant : sept anges qui tenaient en main sept plaies, les dernières, car c’est par elles que doit se consommer la colère de Dieu.",
+        "NAB": "Then I saw in heaven another sign, great and awe-inspiring: seven angels with the seven last plagues, for through them God's fury is accomplished.",
+        "VAT_ES": "Y oí una voz potente que provenía del Templo y ordenaba a los siete Angeles: «Vayan y derramen sobre la tierra las siete copas de la ira de Dios»."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "¶Καὶ εἶδον ὡς θάλασσαν ὑαλίνην μεμιγμένην πυρί, καὶ τοὺς νικῶντας ἐκ τοῦ θηρίου καὶ ἐκ τῆς εἰκόνος αὐτοῦ καὶ ἐκ τοῦ ἀριθμοῦ τοῦ ὀνόματος αὐτοῦ, ἑστῶτας ἐπὶ τὴν θάλασσαν τὴν ὑαλίνην, ἔχοντας κιθάρας τοῦ θεοῦ.",
+        "VUL": "Et vidi tamquam mare vitreum mistum igne, et eos, qui vicerunt bestiam, et imaginem ejus, et numerum nominis ejus, stantes super mare vitreum, habentes citharas Dei :",
+        "SYN": "И видел я как бы стеклянное море, смешанное с огнем; и победившие зверя и образ его, и начертание его и число имени его, стоят на этом стеклянном море, держа гусли Божии,",
+        "NEO": "Et je vis comme une mer de verre, mêlée de feu, et au bord de cette mer étaient debout les vainqueurs de la bête, de son image et du nombre de son nom, tenant les harpes sacrées.+ 15:2 2. Allusion symbolique à la mer Rouge, en tant qu’elle a ouvert un passage aux Hébreux, et englouti les impies, comme le montrent le vers. 3, où il est fait mention du cantique de Moïse, et l’analogie des plaies qui vont suivre avec les plaies d’Égypte.*",
+        "NAB": "Then I saw something like a sea of glass mingled with fire. On the sea of glass were standing those who had won the victory over the beast and its image and the number that signified its name. They were holding God's harps,",
+        "VAT_ES": "El primer Angel fue y derramó su copa sobre la tierra, provocando una llaga maligna y dolorosa en todos los hombres que llevaban la marca de la Bestia y adoraban su imagen."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Καὶ ᾄδουσιν τὴν ᾠδὴν Μωϋσέως τοῦ δούλου τοῦ θεοῦ, καὶ τὴν ᾠδὴν τοῦ ἀρνίου, λέγοντες, Μεγάλα καὶ θαυμαστὰ τὰ ἔργα σου, κύριε ὁ θεὸς ὁ παντοκράτωρ· δίκαιαι καὶ ἀληθιναὶ αἱ ὁδοί σου, ὁ βασιλεὺς τῶν ἐθνῶν.",
+        "VUL": "et cantantes canticum Moysi servi Dei, et canticum Agni, dicentes : Magna et mirabilia sunt opera tua, Domine Deus omnipotens : justæ et veræ sunt viæ tuæ, Rex sæculorum.",
+        "SYN": "и поют песнь Моисея, раба Божия, и песнь Агнца, говоря: велики и чудны дела Твои, Господи Боже Вседержитель! Праведны и истинны пути Твои, Царь святых!",
+        "NEO": "Ils chantaient le cantique de Moïse, le serviteur de Dieu, et le cantique de l’Agneau disant : « Grandes et admirables sont vos œuvres, Seigneur, Dieu tout-puissant ! Justes et véritables sont vos voies, ô Roi des siècles !+ 15:3 3. Exod. xv, 1 sv. comp. Deut. xxxii.*",
+        "NAB": "and they sang the song of Moses, the servant of God, and the song of the Lamb: \"Great and wonderful are your works, Lord God almighty. Just and true are your ways, O king of the nations.",
+        "VAT_ES": "El segundo derramó su copa sobre el mar: éste se convirtió en sangre, como si se hubiera cometido un crimen, y perecieron todos los seres vivientes que había en el mar."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Τίς οὐ μὴ φοβηθῇ σε, κύριε, καὶ δοξάσῃ τὸ ὄνομά σου; Ὅτι μόνος ἅγιος· ὅτι πάντα τὰ ἔθνη ἥξουσιν καὶ προσκυνήσουσιν ἐνώπιόν σου, ὅτι τὰ δικαιώματά σου ἐφανερώθησαν.",
+        "VUL": "Quis non timebit te, Domine, et magnificabit nomen tuum ? quia solus pius es : quoniam omnes gentes venient, et adorabunt in conspectu tuo, quoniam judicia tua manifesta sunt.",
+        "SYN": "Кто не убоится Тебя, Господи, и не прославит имени Твоего? ибо Ты един свят. Все народы придут и поклонятся пред Тобою, ибо открылись суды Твои.",
+        "NEO": "Qui ne craindrait, Seigneur, et ne glorifierait votre nom ? Car vous seul êtes saint. Et toutes les nations viendront se prosterner devant vous, parce que vos jugements ont éclaté. »+ 15:4 4. Quelques manuscrits avec le texte reçu ont σε, toi : Qui ne vous craindrait ?*",
+        "NAB": "Who will not fear you, Lord, or glorify your name? For you alone are holy. All the nations will come and worship before you, for your righteous acts have been revealed.\"",
+        "VAT_ES": "El tercero derramó su copa sobre los ríos y sobre los manantiales, y estos se convirtieron en sangre."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "¶Καὶ μετὰ ταῦτα εἶδον, καὶ ἠνοίγη ὁ ναὸς τῆς σκηνῆς τοῦ μαρτυρίου ἐν τῷ οὐρανῷ·",
+        "VUL": "Et post hæc vidi : et ecce apertum est templum tabernaculi testimonii in cælo,",
+        "SYN": "И после сего я взглянул, и вот, отверзся храм скинии свидетельства на небе.",
+        "NEO": "Après cela, je vis s’ouvrir dans le ciel le sanctuaire du tabernacle+ 15:5 5-6. Le tabernacle du témoignage, ou tente de l’alliance, où l’on conservait dans l’arche les tables sacrées du décalogue, ce témoignage immédiat de Dieu à son peuple (voy. Exod. xxv, 16 ; xxvii, 21).* du témoignage.",
+        "NAB": "After this I had another vision. The temple that is the heavenly tent of testimony opened,",
+        "VAT_ES": "Y oí al Angel de las aguas que decía: «Tú, el que es y el que era, el Santo, obras con justicia al castigarlos así:"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "καὶ ἐξῆλθον οἱ ἑπτὰ ἄγγελοι οἱ ἔχοντες τὰς ἑπτὰ πληγὰς ἐκ τοῦ ναοῦ, οἳ ἦσαν ἐνδεδυμένοι λίνον καθαρὸν λαμπρόν, καὶ περιεζωσμένοι περὶ τὰ στήθη ζώνας χρυσᾶς·",
+        "VUL": "et exierunt septem angeli habentes septem plagas de templo, vestiti lino mundo et candido, et præcincti circa pectora zonis aureis.",
+        "SYN": "И вышли из храма семь Ангелов, имеющие семь язв, облеченные в чистую и светлую льняную одежду и опоясанные по персям золотыми поясами.",
+        "NEO": "Et les sept anges qui ont en main les sept plaies sortirent du sanctuaire ; ils étaient vêtus d’un lin pur et éclatant, et portaient des ceintures d’or autour de la poitrine.",
+        "NAB": "and the seven angels with the seven plagues came out of the temple. They were dressed in clean white linen, with a gold sash around their chests.",
+        "VAT_ES": "se merecían que les dieras de beber la misma sangre de los santos y de los profetas que ellos han derramado»."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "καὶ ἓν ἐκ τῶν τεσσάρων ζῴων ἔδωκεν τοῖς ἑπτὰ ἀγγέλοις ἑπτὰ φιάλας χρυσᾶς γεμούσας τοῦ θυμοῦ τοῦ θεοῦ τοῦ ζῶντος εἰς τοὺς αἰῶνας τῶν αἰώνων.",
+        "VUL": "Et unum de quatuor animalibus dedit septem angelis septem phialas aureas, plenas iracundiæ Dei viventis in sæcula sæculorum.",
+        "SYN": "И одно из четырех животных дало семи Ангелам семь золотых чаш, наполненных гневом Бога, живущего во веки веков.",
+        "NEO": "Alors l’un des quatre animaux+ 15:7 7. L’un des quatre animaux, représentant les forces de la nature qui vont servir à exécuter les desseins de Dieu (iv, 6-8).* donna aux sept anges sept coupes d’or, pleines de la colère du Dieu qui vit aux siècles des siècles.",
+        "NAB": "One of the four living creatures gave the seven angels seven gold bowls filled with the fury of God, who lives forever and ever.",
+        "VAT_ES": "Y escuché al altar, que decía: «Sí, Señor, Dios todopoderoso, tus juicios son verdaderos y justos»."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Καὶ ἐγεμίσθη ὁ ναὸς καπνοῦ ἐκ τῆς δόξης τοῦ θεοῦ, καὶ ἐκ τῆς δυνάμεως αὐτοῦ· καὶ οὐδεὶς ἐδύνατο εἰσελθεῖν εἰς τὸν ναόν, ἄχρι τελεσθῶσιν αἱ ἑπτὰ πληγαὶ τῶν ἑπτὰ ἀγγέλων.",
+        "VUL": "Et impletum est templum fumo a majestate Dei, et de virtute ejus : et nemo poterat introire in templum, donec consummarentur septem plagæ septem angelorum.",
+        "SYN": "И наполнился храм дымом от славы Божией и от силы Его, и никто не мог войти в храм, доколе не окончились семь язв семи Ангелов.",
+        "NEO": "Et le sanctuaire fut rempli de fumée par la gloire de Dieu et par sa puissance, et personne ne pouvait entrer dans le sanctuaire, jusqu’à ce que fussent consommées les sept plaies des sept anges.+ 15:8 8. Exod. xl, 32.*",
+        "NAB": "Then the temple became so filled with the smoke from God's glory and might that no one could enter it until the seven plagues of the seven angels had been accomplished.",
+        "VAT_ES": "El cuarto Angel derramó su copa sobre el sol y se le permitió quemar a los hombres con fuego:"
+      }
+    }
+  }
+}

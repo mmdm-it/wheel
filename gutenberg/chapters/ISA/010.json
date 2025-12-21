@@ -1,0 +1,624 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_010",
+  "book_key": "ISA",
+  "sequence": 10,
+  "chapter_in": {
+    "MT": 10,
+    "VUL": 10,
+    "LXX": 10
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "ה֥וֹי הַ/חֹֽקְקִ֖ים חִקְקֵי אָ֑וֶן וּֽ/מְכַתְּבִ֥ים עָמָ֖ל כִּתֵּֽבוּ׃",
+        "LXX": "Οὐαὶ τοῖς γράφουσιν πονηρίαν· γράφοντες γὰρ πονηρίαν γράφουσιν,",
+        "VUL": "[Væ qui condunt leges iniquas,/ et scribentes injustitiam scripserunt,/",
+        "SYN": "Горе тем, которые постановляют несправедливые законы и пишут жестокие решения,",
+        "NEO": "Malheur à ceux qui rendent des arrêts iniques, et aux scribes qui écrivent des sentences injustes,",
+        "NAB": "Woe to those who enact unjust statutes and who write oppressive decrees,",
+        "VAT_ES": "&iexcl;Ay de los que promulgan decretos inicuos y redactan prescripciones onerosas,",
+        "CEI": "Guai a coloro che fanno decreti iniqui e scrivono in fretta sentenze oppressive,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "לְ/הַטּ֤וֹת מִ/דִּין֙ דַּלִּ֔ים וְ/לִ/גְזֹ֕ל מִשְׁפַּ֖ט עֲנִיֵּ֣י עַמִּ֑/י לִ/הְי֤וֹת אַלְמָנוֹת֙ שְׁלָלָ֔/ם וְ/אֶת יְתוֹמִ֖ים יָבֹֽזּוּ׃",
+        "LXX": "ἐκκλίνοντες κρίσιν πτωχῶν, ἁρπάζοντες κρίμα πενήτων τοῦ λαοῦ μου, ὥστε εἶναι αὐτοῖς χήραν εἰς ἁρπαγὴν καὶ ὀρφανὸν εἰς προνομήν.",
+        "VUL": "ut opprimerent in judicio pauperes,/ et vim facerent causæ humilium populi mei ;/ ut essent viduæ præda eorum,/ et pupillos diriperent./",
+        "SYN": "чтобы устранить бедных от правосудия и похитить права у малосильных из народа Моего, чтобы вдов сделать добычею своею и ограбить сирот.",
+        "NEO": "écartant du tribunal les faibles, et dépouillant de leur droit les affligés de mon peuple, faisant des veuves leur proie, et pillant les orphelins !",
+        "NAB": "Depriving the needy of judgment and robbing my people's poor of their rights, Making widows their plunder, and orphans their prey!",
+        "VAT_ES": "para impedir que se haga justicia a los débiles y privar de su derecho a los pobres de mi pueblo, para hacer de las viudas su presa y expoliar a los huérfanos!",
+        "CEI": "per negare la giustizia ai miseri e per frodare del diritto i poveri del mio popolo, per fare delle vedove la loro preda e per spogliare gli orfani."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וּ/מַֽה תַּעֲשׂוּ֙ לְ/י֣וֹם פְּקֻדָּ֔ה וּ/לְ/שׁוֹאָ֖ה מִ/מֶּרְחָ֣ק תָּב֑וֹא עַל מִי֙ תָּנ֣וּסוּ לְ/עֶזְרָ֔ה וְ/אָ֥נָה תַעַזְב֖וּ כְּבוֹדְ/כֶֽם׃",
+        "LXX": "καὶ τί ποιήσουσιν τῇ ἡμέρᾳ τῆς ἐπισκοπῆς; ἡ γὰρ θλίψις ὑμῖν πόρρωθεν ἥξει· καὶ πρὸς τίνα καταφεύξεσθε τοῦ βοηθηθῆναι; καὶ ποῦ καταλείψετε τὴν δόξαν ὑμῶν",
+        "VUL": "Quid facietis in die visitationis,/ et calamitatis de longe venientis ?/ ad cujus confugietis auxilium ?/ et ubi derelinquetis gloriam vestram,/",
+        "SYN": "И что вы будете делать в день посещения, когда придет гибель издалека? К кому прибегнете за помощью? И где оставите богатство ваше?",
+        "NEO": "Que ferez-vous au jour de la visite, et dans la catastrophe qui viendra de loin ? Vers qui fuirez-vous pour avoir du secours, et où déposerez-vous vos trésors ?",
+        "NAB": "What will you do on the day of punishment, when ruin comes from afar? To whom will you flee for help? Where will you leave your wealth,",
+        "VAT_ES": "&iquest;Qué harán ustedes el día del castigo, cuando llegue de lejos la tormenta? &iquest;Hacia quién huirán en busca de auxilio y dónde depositarán sus riquezas?",
+        "CEI": "Ma che farete nel giorno del castigo, quando da lontano sopraggiungerà la rovina? A chi ricorrerete per protezione? Dove lascerete la vostra ricchezza?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "בִּלְתִּ֤י כָרַע֙ תַּ֣חַת אַסִּ֔יר וְ/תַ֥חַת הֲרוּגִ֖ים יִפֹּ֑לוּ בְּ/כָל זֹאת֙ לֹא שָׁ֣ב אַפּ֔/וֹ וְ/ע֖וֹד יָד֥/וֹ נְטוּיָֽה׃",
+        "LXX": "τοῦ μὴ ἐμπεσεῖν εἰς ἀπαγωγήν; ἐπὶ πᾶσι τούτοις οὐκ ἀπεστράφη ἡ ὀργή, ἀλλ’ ἔτι ἡ χεὶρ ὑψηλή.",
+        "VUL": "ne incurvemini sub vinculo,/ et cum interfectis cadatis ?/ Super omnibus his non est aversus furor ejus,/ sed adhuc manus ejus extenta.]",
+        "SYN": "Без Меня согнутся между узниками и падут между убитыми. При всем этом не отвратится гнев Его, и рука Его еще простерта.",
+        "NEO": "Il ne reste qu’à se courber parmi les captifs, ou à tomber parmi les tués. Avec tout cela, sa colère ne s’est pas détournée, et sa main reste étendue.",
+        "NAB": "Lest it sink beneath the captive or fall beneath the slain? For all this, his wrath is not turned back, his hand is still outstretched!",
+        "VAT_ES": "No habrá más remedio que encorvarse con los prisioneros y sucumbir con los que caen muertos. A pesar de todo esto, no se aplacó su ira y su mano está aún extendida.",
+        "CEI": "Non vi resterà che piegarvi tra i prigionieri o cadere tra i morti. Con tutto ciò non si calma la sua ira e ancora la sua mano rimane stesa."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "ה֥וֹי אַשּׁ֖וּר שֵׁ֣בֶט אַפִּ֑/י וּ/מַטֶּה ה֥וּא בְ/יָדָ֖/ם זַעְמִֽ/י׃",
+        "LXX": "Οὐαὶ Ἀσσυρίοις, ἡ ῥάβδος τοῦ θυμοῦ μου καὶ ἡ ὀργή ἐστιν ἐν ταῖς χερσὶν αὐτῶν.",
+        "VUL": "[Væ Assur ! virga furoris mei et baculus ipse est ;/ in manu eorum indignatio mea./",
+        "SYN": "О, Ассур, жезл гнева Моего! и бич в руке его - Мое негодование!",
+        "NEO": "Malheur à Assur, verge de ma colère ! Le bâton qui est dans sa main est l’instrument de ma fureur ;",
+        "NAB": "Woe to Assyria! My rod in anger, my staff in wrath.",
+        "VAT_ES": "&iexcl;Ay de Asiria! El es el bastón de mi ira y la vara de mi furor está en su mano.",
+        "CEI": "Oh! Assiria, verga del mio furore, bastone del mio sdegno."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בְּ/ג֤וֹי חָנֵף֙ אֲשַׁלְּחֶ֔/נּוּ וְ/עַל עַ֥ם עֶבְרָתִ֖/י אֲצַוֶּ֑/נּוּ לִ/שְׁלֹ֤ל שָׁלָל֙ וְ/לָ/בֹ֣ז בַּ֔ז ו/ל/שימ/ו וּ/לְ/שׂוּמ֥/וֹ מִרְמָ֖ס כְּ/חֹ֥מֶר חוּצֽוֹת׃",
+        "LXX": "τὴν ὀργήν μου εἰς ἔθνος ἄνομον ἀποστελῶ, καὶ τῷ ἐμῷ λαῷ συντάξω ποιῆσαι σκῦλα καὶ προνομήν, καὶ καταπατεῖν τὰς πόλεις καὶ θεῖναι αὐτὰς εἰς κονιορτόν.",
+        "VUL": "Ad gentem fallacem mittam eum,/ et contra populum furoris mei mandabo illi,/ ut auferat spolia, et diripiat prædam,/ et ponat illum in conculcationem quasi lutum platearum./",
+        "SYN": "Я пошлю его против народа нечестивого и против народа гнева Моего, дам ему повеление ограбить грабежом и добыть добычу и попирать его, как грязь на улицах.",
+        "NEO": "je l’envoie contre une nation impie, je lui donne mes ordres contre le peuple de mon courroux, pour le mettre au pillage et faire du butin, et le fouler au pied comme la boue des rues.",
+        "NAB": "Against an impious nation I send him, and against a people under my wrath I order him To seize plunder, carry off loot, and tread them down like the mud of the streets.",
+        "VAT_ES": "Yo lo envío contra una nación impía. lo mando contra un pueblo que provocó mi furor. para saquear los despojos y arrebatar el botín. y pisotearlo como al barro de las calles,",
+        "CEI": "Contro una nazione empia io la mando e la comando contro un popolo con cui sono in collera perché lo saccheggi, lo depredi e lo calpesti come fango di strada."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הוּא֙ לֹא כֵ֣ן יְדַמֶּ֔ה וּ/לְבָב֖/וֹ לֹא כֵ֣ן יַחְשֹׁ֑ב כִּ֚י לְ/הַשְׁמִ֣יד בִּ/לְבָב֔/וֹ וּ/לְ/הַכְרִ֥ית גּוֹיִ֖ם לֹ֥א מְעָֽט׃",
+        "LXX": "αὐτὸς δὲ οὐχ οὕτως ἐνεθυμήθη, καὶ τῇ ψυχῇ οὐχ οὕτως λελόγισται· ἀλλὰ ἀπαλλάξει ὁ νοῦς αὐτοῦ, καὶ τοῦ ἔθνη ἐξολοθρεῦσαι οὐκ ὀλίγα.",
+        "VUL": "Ipse autem non sic arbitrabitur,/ et cor ejus non ita existimabit ;/ sed ad conterendum erit cor ejus,/ et ad internecionem gentium non paucarum./",
+        "SYN": "Но он не так подумает и не так помыслит сердце его; у него будет на сердце - разорить и истребить немало народов.",
+        "NEO": "Mais lui, ce n’est pas ainsi qu’il l’entend, et telle n’est pas la pensée de son cœur ; car il ne songe qu’à détruire, et à exterminer des nations, non en petit nombre.",
+        "NAB": "But this is not what he intends, nor does he have this in mind; Rather, it is in his heart to destroy, to make an end of nations not a few.",
+        "VAT_ES": "Pero él no lo entiende así, no es eso lo que se propone: él no piensa más que en destruir y en barrer una nación tras otra.",
+        "CEI": "Essa però non pensa così e così non giudica il suo cuore, ma vuole distruggere e annientare non poche nazioni."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּ֖י יֹאמַ֑ר הֲ/לֹ֥א שָׂרַ֛/י יַחְדָּ֖ו מְלָכִֽים׃",
+        "LXX": "καὶ ἐὰν εἴπωσιν αὐτῷ Σὺ μόνος εἶ ἄρχων,",
+        "VUL": "Dicet enim :",
+        "SYN": "Ибо он скажет: \"не все ли цари князья мои?",
+        "NEO": "Il dit : « Mes princes ne sont-ils pas tous des rois ?",
+        "NAB": "\"Are not my commanders all kings?\" he says,",
+        "VAT_ES": "El dice, en efecto: «&iquest;No son reyes todos mis jefes?",
+        "CEI": "Anzi dice: \"Forse i miei capi non sono altrettanti re?"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הֲ/לֹ֥א כְּ/כַרְכְּמִ֖ישׁ כַּלְנ֑וֹ אִם לֹ֤א כְ/אַרְפַּד֙ חֲמָ֔ת אִם לֹ֥א כְ/דַמֶּ֖שֶׂק שֹׁמְרֽוֹן׃",
+        "LXX": "καὶ ἐρεῖ Οὐκ ἔλαβον τὴν χώραν τὴν ἐπάνω Βαβυλῶνος καὶ Χαλαννή, οὗ ὁ πύργος ᾠκοδομήθη; καὶ ἔλαβον Ἀραβίαν καὶ Δαμασκὸν καὶ Σαμάρειαν·",
+        "VUL": "Numquid non principes mei simul reges sunt ?/ numquid non ut Charcamis, sic Calano ?/ et ut Arphad, sic Emath ?/ numquid non ut Damascus, sic Samaria ?/",
+        "SYN": "Халне не то же ли, что Кархемис? Емаф не то же ли, что Арпад? Самария не то же ли, что Дамаск?",
+        "NEO": "N’en a-t-il pas été de Calno comme de Carchémis, et de Hamath comme d’Arphad, et de Samarie comme de Damas ?",
+        "NAB": "\"Is not Calno like Carchemish, Or Hamath like Arpad, or Samaria like Damascus?",
+        "VAT_ES": "&iquest;No le pasó a Calnó lo mismo que a Carquemis? &iquest;No es Jamat como Arpad y Samaría como Damasco?",
+        "CEI": "Forse come Càrchemis non è anche Calne? Come Arpad non è forse Amat? Come Damasco non è forse Samaria?"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כַּ/אֲשֶׁר֙ מָצְאָ֣ה יָדִ֔/י לְ/מַמְלְכֹ֖ת הָ/אֱלִ֑יל וּ/פְסִ֣ילֵי/הֶ֔ם מִ/ירֽוּשָׁלִַ֖ם וּ/מִ/שֹּׁמְרֽוֹן׃",
+        "LXX": "ὃν τρόπον ταύτας ἔλαβον, καὶ πάσας τὰς ἀρχὰς λήμψομαι. ὀλολύξατε, τὰ γλυπτὰ ἐν Ἰερουσαλὴμ καὶ ἐν Σαμαρείᾳ·",
+        "VUL": "Quomodo invenit manus mea regna idoli,/ sic et simulacra eorum de Jerusalem et de Samaria./",
+        "SYN": "Так как рука моя овладела царствами идольскими, в которых кумиров более, нежели в Иерусалиме и Самарии, -",
+        "NEO": "Comme ma main a atteint les royaumes des divinités impuissantes, dont les idoles l’emportaient sur celles de Jérusalem et de Samarie ; comme j’ai fait à Samarie et à ses dieux,",
+        "NAB": "Just as my hand reached out to idolatrous kingdoms that had more images than Jerusalem and Samaria,",
+        "VAT_ES": "Así como mi mano alcanzó a los reinos de los ídolos, cuyas estatuas superaban las de Jerusalén y Samaría.",
+        "CEI": "Come la mia mano ha raggiunto quei regni degli idoli, le cui statue erano più numerose di quelle di Gerusalemme e di Samaria,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "הֲ/לֹ֗א כַּ/אֲשֶׁ֥ר עָשִׂ֛יתִי לְ/שֹׁמְר֖וֹן וְ/לֶ/אֱלִילֶ֑י/הָ כֵּ֛ן אֶעֱשֶׂ֥ה לִ/ירוּשָׁלִַ֖ם וְ/לַ/עֲצַבֶּֽי/הָ׃",
+        "LXX": "ὃν τρόπον γὰρ ἐποίησα Σαμαρείᾳ καὶ τοῖς χειροποιήτοις αὐτῆς, οὕτως ποιήσω καὶ Ἰερουσαλὴμ καὶ τοῖς εἰδώλοις αὐτῆς.",
+        "VUL": "Numquid non sicut feci Samariæ et idolis ejus,/ sic faciam Jerusalem et simulacris ejus ?/",
+        "SYN": "то не сделаю ли того же с Иерусалимом и изваяниями его, что сделал с Самариею и идолами ее?\"",
+        "NEO": "ne ferai-je pas de même à Jérusalem et à ses images ? »",
+        "NAB": "Just as I treated Samaria and her idols, shall I not do to Jerusalem and her graven images?\"",
+        "VAT_ES": "lo mismo que hice con Samaría y sus imágenes. &iquest;no lo haré con Jerusalén y sus ídolos?».",
+        "CEI": "non posso io forse, come ho fatto a Samaria e ai suoi idoli, fare anche a Gerusalemme e ai suoi simulacri?\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה כִּֽי יְבַצַּ֤ע אֲדֹנָ/י֙ אֶת כָּל מַֽעֲשֵׂ֔/הוּ בְּ/הַ֥ר צִיּ֖וֹן וּ/בִ/ירוּשָׁלִָ֑ם אֶפְקֹ֗ד עַל פְּרִי גֹ֨דֶל֙ לְבַ֣ב מֶֽלֶךְ אַשּׁ֔וּר וְ/עַל תִּפְאֶ֖רֶת ר֥וּם עֵינָֽי/ו׃",
+        "LXX": "Καὶ ἔσται ὅταν συντελέσῃ Κύριος πάντα ποιῶν ἐν τῷ ὄρει Σειὼν καὶ Ἰερουσαλήμ, ἐπάξει ἐπὶ τὸν νοῦν ⸂⸆⸃ τὸν μέγαν, ἐπὶ τὸν ἄρχοντα τῶν Ἀσσυρίων, καὶ ἐπὶ τὸ ὕψος τῆς δόξης τῶν ὀφθαλμῶν αὐτοῦ.",
+        "VUL": "Et erit, cum impleverit Dominus/ cuncta opera sua/ in monte Sion et in Jerusalem,/ visitabo super fructum magnifici cordis regis Assur,/ et super gloriam altitudinis oculorum ejus./",
+        "SYN": "И будет, когда Господь совершит все Свое дело на горе Сионе и в Иерусалиме, скажет: посмотрю на успех надменного сердца царя Ассирийского и на тщеславие высоко поднятых глаз его.",
+        "NEO": "Mais il arrivera : Quand le Seigneur aura accompli toute son œuvre, sur la montagne de Sion et à Jérusalem : « Je visiterai le fruit du cœur hautain du roi d’Assyrie, et l’arrogance de ses regards altiers. »",
+        "NAB": "(But when the LORD has brought to an end all his work on Mount Zion and in Jerusalem, I will punish the utterance of the king of Assyria's proud heart,",
+        "VAT_ES": "Pero cuando el Señor termine de realizar toda su obra en el monte Sión y en Jerusalén, castigará al rey de Asiria por este fruto de su corazón arrogante y por la orgullosa altivez de su mirada.",
+        "CEI": "Quando il Signore avrà terminato tutta l'opera sua sul monte Sion e a Gerusalemme, punirà l'operato orgoglioso della mente del re di Assiria e ciò di cui si gloria l'alterigia dei suoi occhi."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כִּ֣י אָמַ֗ר בְּ/כֹ֤חַ יָדִ/י֙ עָשִׂ֔יתִי וּ/בְ/חָכְמָתִ֖/י כִּ֣י נְבֻנ֑וֹתִי וְ/אָסִ֣יר גְּבוּלֹ֣ת עַמִּ֗ים ו/עתידתי/הם וַ/עֲתוּדֽוֹתֵי/הֶם֙ שׁוֹשֵׂ֔תִי וְ/אוֹרִ֥יד כַּ/אבִּ֖יר יוֹשְׁבִֽים׃",
+        "LXX": "εἶπεν γάρ Ἐν τῇ ἰσχύι ποιήσω, καὶ ἐν τῇ σοφίᾳ τῆς συνέσεως ἀφελῶ ὅρια ἐθνῶν, καὶ τὴν ἰσχὺν αὐτῶν προνομεύσω·",
+        "VUL": "Dixit enim : In fortitudine manus meæ feci,/ et in sapientia mea intellexi ;/ et abstuli terminos populorum,/ et principes eorum deprædatus sum,/ et detraxi quasi potens in sublimi residentes./",
+        "SYN": "Он говорит: \"силою руки моей и моею мудростью я сделал это, потому что я умен: и переставляю пределы народов, и расхищаю сокровища их, и низвергаю с престолов, как исполин;",
+        "NEO": "Car il a dit : « Par la force de ma main j’ai fait cela, et par ma sagesse, car je suis intelligent ! J’ai déplacé les bornes des peuples, j’ai pillé leurs trésors, et, comme un héros, j’ai renversé du trône ceux qui y étaient assis.",
+        "NAB": "and the boastfulness of his haughty eyes. For he says:) \"By my own power I have done it, and by my wisdom, for I am shrewd. I have moved the boundaries of peoples, their treasures I have pillaged, and, like a giant, I have put down the enthroned.",
+        "VAT_ES": "Porque el ha dicho: «Yo he obrado con la fuerza de mi mano, y con mi sabiduría, porque soy inteligente. He desplazado las fronteras de los pueblos y he saqueado sus reservas: como un héroe, he derribado a los que se sientan en tronos.",
+        "CEI": "Poiché ha detto: \"Con la forza della mia mano ho agito e con la mia sapienza, perché sono intelligente; ho rimosso i confini dei popoli e ho saccheggiato i loro tesori, ho abbattuto come un gigante coloro che sedevano sul trono."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/תִּמְצָ֨א כַ/קֵּ֤ן יָדִ/י֙ לְ/חֵ֣יל הָֽ/עַמִּ֔ים וְ/כֶ/אֱסֹף֙ בֵּיצִ֣ים עֲזֻב֔וֹת כָּל הָ/אָ֖רֶץ אֲנִ֣י אָסָ֑פְתִּי וְ/לֹ֤א הָיָה֙ נֹדֵ֣ד כָּנָ֔ף וּ/פֹצֶ֥ה פֶ֖ה וּ/מְצַפְצֵֽף׃",
+        "LXX": "καὶ σείσω πόλεις κατοικουμένας, καὶ τὴν οἰκουμένην ὅλην καταλήμψομαι τῇ χειρὶ ὡς νοσσιάν, καὶ ὡς καταλελιμμένα ὠὰ ἀρῶ· καὶ οὐκ ἔστιν ὃς διαφεύξεταί με ἢ ἀντείπῃ μοι.",
+        "VUL": "Et invenit quasi nidum manus mea/ fortitudinem populorum ;/ et sicut colliguntur ova quæ derelicta sunt,/ sic universam terram ego congregavi ;/ et non fuit qui moveret pennam,/ et aperiret os, et ganniret./",
+        "SYN": "и рука моя захватила богатство народов, как гнезда; и как забирают оставленные в них яйца, так забрал я всю землю, и никто не пошевелил крылом, и не открыл рта, и не пискнул\".",
+        "NEO": "Ma main a saisi, comme un nid, les richesses des peuples, et, comme on ramasse des œufs abandonnés, j’ai ramassé toute la terre, sans que nul ait remué l’aile, ouvert le bec ou poussé un cri ! » —",
+        "NAB": "My hand has seized like a nest the riches of nations; As one takes eggs left alone, so I took in all the earth; No one fluttered a wing, or opened a mouth, or chirped!\"",
+        "VAT_ES": "Mi mano tomó como un nido las riquezas de los pueblos: como se juntan huevos abandonados, así he depredado toda la tierra, y no hubo nadie que batiera las alas o abriera el pico para piar».",
+        "CEI": "La mia mano, come in un nido, ha scovato la ricchezza dei popoli. Come si raccolgono le uova abbandonate, così ho raccolto tutta la terra; non vi fu battito d'ala, nessuno apriva il becco o pigolava\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "הֲ/יִתְפָּאֵר֙ הַ/גַּרְזֶ֔ן עַ֖ל הַ/חֹצֵ֣ב בּ֑/וֹ אִם יִתְגַּדֵּ֤ל הַ/מַּשּׂוֹר֙ עַל מְנִיפ֔/וֹ כְּ/הָנִ֥יף שֵׁ֨בֶט֙ וְ/אֶת מְרִימָ֔י/ו כְּ/הָרִ֥ים מַטֶּ֖ה לֹא עֵֽץ׃",
+        "LXX": "μὴ δοξασθήσεται ἀξίνη ἄνευ τοῦ κόπτοντος ἐν αὐτῇ; ἢ ὑψωθήσεται πρίων ἄνευ τοῦ ἕλκοντος αὐτόν; ὡς ἄν τις ἄρῃ ῥάβδον ἢ ξύλον, καὶ οὐχ οὕτως;",
+        "VUL": "Numquid gloriabitur securis contra eum qui secat in ea ?/ aut exaltabitur serra contra eum a quo trahitur ?/ Quomodo si elevetur virga contra elevantem se,/ et exaltetur baculus, qui utique lignum est./",
+        "SYN": "Величается ли секира пред тем, кто рубит ею? Пила гордится ли пред тем, кто двигает ее? Как будто жезл восстает против того, кто поднимает его; как будто палка поднимается на того, кто не дерево!",
+        "NEO": "La hache se glorifie-t-elle contre la main qui la brandit, la scie s’élève-t’elle contre celui qui la meut ? Comme si la verge faisait mouvoir celui qui la lève, comme si le bâton soulevait ce qui n’est pas du bois !",
+        "NAB": "Will the axe boast against him who hews with it? Will the saw exalt itself above him who wields it? As if a rod could sway him who lifts it, or a staff him who is not wood!",
+        "VAT_ES": "&iquest;Se gloria el hacha contra el leñador? &iquest;Se envanece la sierra contra el que la maneja? Como si el bastón manejara al que lo empuña y el palo levantar al que no es un leño!",
+        "CEI": "Può forse vantarsi la scure con chi taglia per suo mezzo o la sega insuperbirsi contro chi la maneggia? Come se un bastone volesse brandire chi lo impugna e una verga sollevare ciò che non è di legno!"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "לָ֠/כֵן יְשַׁלַּ֨ח הָ/אָד֜וֹן יְהוָ֧ה צְבָא֛וֹת בְּ/מִשְׁמַנָּ֖י/ו רָז֑וֹן וְ/תַ֧חַת כְּבֹד֛/וֹ יֵקַ֥ד יְקֹ֖ד כִּ/יק֥וֹד אֵֽשׁ׃",
+        "LXX": "ἀλλὰ ἀποστελεῖ Κύριος σαβαὼθ εἰς τὴν σὴν τιμὴν ἀτιμίαν, καὶ εἰς τὴν σὴν δόξαν πῦρ καιόμενον καυθήσεται·",
+        "VUL": "Propter hoc mittet Dominator, Dominus exercituum,/ in pinguibus ejus tenuitatem ;/ et subtus gloriam ejus succensa ardebit/ quasi combustio ignis./",
+        "SYN": "За то Господь, Господь Саваоф, пошлет чахлость на тучных его, и между знаменитыми его возжет пламя, как пламя огня.",
+        "NEO": "C’est pourquoi le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** des armées, enverra le dépérissement sur ses robustes guerriers, et sous sa magnificence s’embrasera un feu, comme le feu d’un incendie.",
+        "NAB": "Therefore the Lord, the LORD of hosts, will send among his fat ones leanness, And instead of his glory there will be kindling like the kindling of fire.",
+        "VAT_ES": "Por eso el Señor de los ejércitos hará que la enfermedad consuma su vigor y dentro de su carne hará arder una fiebre, como el ardor del fuego."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֤ה אֽוֹר יִשְׂרָאֵל֙ לְ/אֵ֔שׁ וּ/קְדוֹשׁ֖/וֹ לְ/לֶהָבָ֑ה וּ/בָעֲרָ֗ה וְ/אָֽכְלָ֛ה שִׁית֥/וֹ וּ/שְׁמִיר֖/וֹ בְּ/י֥וֹם אֶחָֽד׃",
+        "LXX": "καὶ ἔσται τὸ φῶς τοῦ Ἰσραὴλ εἰς πῦρ, καὶ ἁγιάσει αὐτὸν ἐν πυρὶ καιομένῳ, καὶ φάγεται ὡσεὶ χόρτον τὴν ὕλην.",
+        "VUL": "Et erit lumen Israël in igne,/ et Sanctus ejus in flamma ;/ et succendetur, et devorabitur/ spina ejus et vepres in die una./",
+        "SYN": "Свет Израиля будет огнем, и Святый его - пламенем, которое сожжет и пожрет терны его и волчцы его в один день;",
+        "NEO": "La lumière d’Israël sera un feu, et son Saint, une flamme, qui consumera et dévorera ses épines et ses ronces, en un seul jour.",
+        "NAB": "The Light of Israel will become a fire, Israel's Holy One a flame, That burns and consumes his briers and his thorns in a single day.",
+        "VAT_ES": "La luz de Israel se convertirá en un fuego y su Santo en una llama, que arderá y devorará sus zarzas y sus espinas en un solo día."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וּ/כְב֤וֹד יַעְר/וֹ֙ וְ/כַרְמִלּ֔/וֹ מִ/נֶּ֥פֶשׁ וְ/עַד בָּשָׂ֖ר יְכַלֶּ֑ה וְ/הָיָ֖ה כִּ/מְסֹ֥ס נֹסֵֽס׃",
+        "LXX": "τῇ ἡμέρᾳ ἐκείνῃ ἀποσβεσθήσεται τὰ ὄρη καὶ οἱ βουνοὶ καὶ οἱ δρυμοί, καὶ καταφάγεται ἀπὸ ψυχῆς ἕως σαρκῶν· καὶ ἔσται ὁ φεύγων ὡς ὁ φεύγων ἀπὸ φλογὸς καιομένης·",
+        "VUL": "Et gloria saltus ejus, et carmeli ejus,/ ab anima usque ad carnem consumetur ;/ et erit terrore profugus./",
+        "SYN": "и славный лес его и сад его, от души до тела, истребит; и он будет, как чахлый умирающий.",
+        "NEO": "Et la gloire de sa forêt et de son verger, il l’anéantira de l’âme au corps ; ce sera comme un malade qui meurt de consomption.",
+        "NAB": "His splendid forests and orchards will be consumed, soul and body;",
+        "VAT_ES": "La gloria de su bosque y su vergel, como se va extinguiendo un agonizante:"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וּ/שְׁאָ֥ר עֵ֛ץ יַעְר֖/וֹ מִסְפָּ֣ר יִֽהְי֑וּ וְ/נַ֖עַר יִכְתְּבֵֽ/ם׃",
+        "LXX": "καὶ οἱ καταλειφθέντες ἀπ’ αὐτῶν ἔσονται ἀριθμός, καὶ παιδίον γράψει αὐτούς.",
+        "VUL": "Et reliquiæ ligni saltus ejus præ paucitate numerabuntur,/ et puer scribet eos.]",
+        "SYN": "И остаток дерев леса его так будет малочислен, что дитя в состоянии будет сделать опись.",
+        "NEO": "Le reste des arbres de sa forêt pourra être compté ; un enfant les inscrirait.",
+        "NAB": "And the remnant of the trees in his forest will be so few, Like poles set up for signals, that any boy can record them.",
+        "VAT_ES": "y el resto de los árboles de su bosque será un número tan reducido que un niño los podrá anotar.",
+        "CEI": "il resto degli alberi nella selva si conterà facilmente, persino un ragazzo potrebbe farne il conto."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֣ה בַּ/יּ֣וֹם הַ/ה֗וּא לֹֽא יוֹסִ֨יף ע֜וֹד שְׁאָ֤ר יִשְׂרָאֵל֙ וּ/פְלֵיטַ֣ת בֵּֽית יַעֲקֹ֔ב לְ/הִשָּׁעֵ֖ן עַל מַכֵּ֑/הוּ וְ/נִשְׁעַ֗ן עַל יְהוָ֛ה קְד֥וֹשׁ יִשְׂרָאֵ֖ל בֶּ/אֱמֶֽת׃",
+        "LXX": "Καὶ ἔσται ἐν τῇ ἡμέρᾳ ἐκείνῃ οὐκέτι προστεθήσεται τὸ καταλειφθὲν Ἰσραήλ, καὶ οἱ σωθέντες τοῦ Ἰακὼβ οὐκέτι μὴ πεποιθότες ὦσιν ἐπὶ τοὺς ἀδικήσαντας αὐτούς, ἀλλὰ ἔσονται πεποιθότες ἐπὶ τὸν θεὸν τὸν ἃγιον τοῦ Ἰσραὴλ τῇ ἀληθείᾳ.",
+        "VUL": "[Et erit in die illa :/ non adjiciet residuum Israël,/ et hi qui fugerint de domo Jacob,/ inniti super eo qui percutit eos ;/ sed innitetur super Dominum,/ Sanctum Israël, in veritate./",
+        "SYN": "И будет в тот день: остаток Израиля и спасшиеся из дома Иакова не будут более полагаться на того, кто поразил их, но возложат упование на Господа, Святаго Израилева, чистосердечно.",
+        "NEO": "Et il arrivera en ce jour-là : Le reste d’Israël et les réchappés de la maison de Jacob ne continueront pas de s’appuyer sur celui qui les frappait, mais ils s’appuieront sur \\+w Yahweh|strong=\"H3068\"\\+w**, le Saint d’Israël, avec fidélité.",
+        "NAB": "On that day The remnant of Israel, the survivors of the house of Jacob, will no more lean upon him who struck them; But they lean upon the LORD, the Holy One of Israel, in truth.",
+        "VAT_ES": "Aquel día, el resto de Israel y los sobrevivientes de la casa de Jacob dejarán de apoyarse en aquel que los golpea, y se apoyarán con lealtad en el Señor, el Santo de Israel.",
+        "CEI": "In quel giorno il resto di Israele e i superstiti della casa di Giacobbe non si appoggeranno più su chi li ha percossi, ma si appoggeranno sul Signore, sul Santo di Israele, con lealtà."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "שְׁאָ֥ר יָשׁ֖וּב שְׁאָ֣ר יַעֲקֹ֑ב אֶל אֵ֖ל גִּבּֽוֹר׃",
+        "LXX": "καὶ ἔσται τὸ καταλειφθὲν τοῦ Ἰακὼβ ἐπὶ θεὸν ἰσχύοντα.",
+        "VUL": "Reliquiæ convertentur ; reliquiæ, inquam, Jacob/ ad Deum fortem./",
+        "SYN": "Остаток обратится, остаток Иакова - к Богу сильному.",
+        "NEO": "Un reste reviendra, un reste de Jacob, vers le Dieu fort.",
+        "NAB": "A remnant will return, the remnant of Jacob, to the mighty God.",
+        "VAT_ES": "«Un resto volverá», un resto de Jacob, al Dios Fuerte.",
+        "CEI": "Tornerà il resto, il resto di Giacobbe, al Dio forte."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כִּ֣י אִם יִהְיֶ֞ה עַמְּ/ךָ֤ יִשְׂרָאֵל֙ כְּ/ח֣וֹל הַ/יָּ֔ם שְׁאָ֖ר יָשׁ֣וּב בּ֑/וֹ כִּלָּי֥וֹן חָר֖וּץ שׁוֹטֵ֥ף צְדָקָֽה׃",
+        "LXX": "καὶ ἐὰν γένηται ὁ λαὸς Ἰσραὴλ ὡς ἡ ἄμμος τῆς θαλάσσης, τὸ κατάλιμμα αὐτῶν σωθήσεται· λόγον συντελῶν καὶ συντέμνων ἐν δικαιοσύνῃ,",
+        "VUL": "Si enim fuerit populus tuus, Israël, quasi arena maris,/ reliquiæ convertentur ex eo ;/ consummatio abbreviata/ inundabit justitiam./",
+        "SYN": "Ибо, хотя бы народа у тебя, Израиль, _было_ столько, сколько песку морского, только остаток его обратится; истребление определено изобилующею правдою;",
+        "NEO": "Car, quand ton peuple, ô Israël, serait comme le sable de la mer, c’est un reste qui reviendra ; la destruction est résolue, elle fera déborder la justice.",
+        "NAB": "For though your people, O Israel, were like the sand of the sea, Only a remnant of them will return; their destruction is decreed as overwhelming justice demands.",
+        "VAT_ES": "Sí, aunque tu pueblo, Israel, sea como la arena del mar, sólo un resto volverá. La destrucción está decidida. desbordante de justicia.",
+        "CEI": "Poiché anche se il tuo popolo, o Israele, fosse come la sabbia del mare, solo un suo resto ritornerà; è decretato uno sterminio che farà traboccare la giustizia,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "כִּ֥י כָלָ֖ה וְ/נֶחֱרָצָ֑ה אֲדֹנָ֤/י יְהוִה֙ צְבָא֔וֹת עֹשֶׂ֖ה בְּ/קֶ֥רֶב כָּל הָ/אָֽרֶץ׃",
+        "LXX": "ὅτι λόγον συντετμημένον ποιήσει Κύριος ἐν τῇ οἰκουμένῃ ὅλῃ.",
+        "VUL": "Consummationem enim et abbreviationem/ Dominus Deus exercituum faciet in medio omnis terræ./",
+        "SYN": "ибо определенное истребление совершит Господь, Господь Саваоф, во всей земле.",
+        "NEO": "Car la destruction qu’il a décrétée, le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** des armées l’accomplira dans tout le pays.",
+        "NAB": "Yes, the destruction he has decreed, the Lord, the GOD of hosts, will carry out within the whole land.",
+        "VAT_ES": "Porque el Señor de los ejércitos ejecutará este decreto de exterminio en medio de todo el país.",
+        "CEI": "poiché un decreto di rovina eseguirà il Signore, Dio degli eserciti, su tutta la regione."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "לָ/כֵ֗ן כֹּֽה אָמַ֞ר אֲדֹנָ֤/י יְהוִה֙ צְבָא֔וֹת אַל תִּירָ֥א עַמִּ֛/י יֹשֵׁ֥ב צִיּ֖וֹן מֵֽ/אַשּׁ֑וּר בַּ/שֵּׁ֣בֶט יַכֶּ֔/כָּה וּ/מַטֵּ֥/הוּ יִשָּֽׂא עָלֶ֖י/ךָ בְּ/דֶ֥רֶךְ מִצְרָֽיִם׃",
+        "LXX": "Διὰ τοῦτο τάδε λέγει Κύριος σαβαώθ Μὴ φοβοῦ, ὁ λαός μου, οἱ κατοικοῦντες ⸆ ἐν Σειών, ἀπὸ Ἀσσυρίων, ὅτι ἐν ῥάβδῳ πατάξει σε· πληγὴν γὰρ ἐπάγω ἐπὶ σέ, τοῦ ἰδεῖν ὁδὸν Αἰγύπτου.",
+        "VUL": "Propter hoc, hæc dicit Dominus Deus exercituum :/ Noli timere, populus meus,/ habitator Sion, ab Assur :/ in virga percutiet te,/ et baculum suum levabit super te,/ in via Ægypti./",
+        "SYN": "Посему так говорит Господь, Господь Саваоф: народ Мой, живущий на Сионе! не бойся Ассура. Он поразит тебя жезлом и трость свою поднимет на тебя, как Египет.",
+        "NEO": "C’est pourquoi ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** des armées : « Ne crains rien d’Assur, ô mon peuple, qui habite Sion, quand il te frappera de la verge, et qu’il lèvera sur toi le bâton, comme autrefois l’Égypte.",
+        "NAB": "Therefore thus says the Lord, the GOD of hosts: O my people, who dwell in Zion, do not fear the Assyrian, though he strikes you with a rod, and raises his staff against you.",
+        "VAT_ES": "Por eso, así habla el Señor de los ejércitos: Pueblo mío, que habitas en Sión, no temas nada de Asiria, que te golpea con el bastón y alza su vara contra ti a la manera de Egipto.",
+        "CEI": "Pertanto così dice il Signore, Dio degli eserciti: \"Popolo mio, che abiti in Sion, non temere l'Assiria che ti percuote con la verga e alza il bastone contro di te come già l'Egitto."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "כִּי ע֖וֹד מְעַ֣ט מִזְעָ֑ר וְ/כָ֣לָה זַ֔עַם וְ/אַפִּ֖/י עַל תַּבְלִיתָֽ/ם׃",
+        "LXX": "ἔτι γὰρ μικρὸν καὶ παύσεται ἡ ὀργή, ὁ δὲ θυμός μου ἐπὶ τὴν βουλὴν αὐτῶν·",
+        "VUL": "Adhuc enim paululum modicumque,/ et consummabitur indignatio/ et furor meus super scelus eorum./",
+        "SYN": "Еще немного, очень немного, и пройдет Мое негодование, и ярость Моя _обратится_ на истребление их.",
+        "NEO": "Car, encore bien peu de temps, et mon courroux cessera, et ma colère se tournera contre eux pour les détruire.",
+        "NAB": "For only a brief moment more, and my anger shall be over; but them I will destroy in wrath.",
+        "VAT_ES": "Porque dentro de poco, de muy poco tiempo, se acabará mi furor contra ti, y mi ira los destruirá.",
+        "CEI": "Perché ancora un poco, ben poco, e il mio sdegno avrà fine; la mia ira li annienterà\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/עוֹרֵ֨ר עָלָ֜י/ו יְהוָ֤ה צְבָאוֹת֙ שׁ֔וֹט כְּ/מַכַּ֥ת מִדְיָ֖ן בְּ/צ֣וּר עוֹרֵ֑ב וּ/מַטֵּ֨/הוּ֙ עַל הַ/יָּ֔ם וּ/נְשָׂא֖/וֹ בְּ/דֶ֥רֶךְ מִצְרָֽיִם׃",
+        "LXX": "καὶ ἐγερεῖ ὁ θεὸς ἐπ’ αὐτοὺς κατὰ τὴν πληγὴν Μαδιὰμ ἐν τόπῳ θλίψεως, καὶ ὁ θυμὸς αὐτοῦ τῇ ὁδῷ τῇ κατὰ θάλασσαν, εἰς τὴν ὁδὸν τὴν κατ’ Αἴγυπτον.",
+        "VUL": "Et suscitabit super eum Dominus exercituum flagellum,/ juxta plagam Madian in petra Oreb :/ et virgam suam super mare,/ et levabit eam in via Ægypti./",
+        "SYN": "И поднимет Господь Саваоф бич на него, как во время поражения Мадиама у скалы Орива, или как _простер_ на море жезл, и поднимет его, как на Египет.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** des armées lèvera contre eux le fouet, comme il frappa Madian au rocher d’Oreb, et comme son bâton fut sur la mer ; et il le lèvera, comme autrefois en Égypte.",
+        "NAB": "Then the LORD of hosts will raise against them a scourge such as struck Midian at the rock of Oreb; and he will raise his staff over the sea as he did against Egypt.",
+        "VAT_ES": "El Señor de los ejércitos blandirá el látigo contra él, como cuando golpeó a Madián en el mar, como la alzó en Egipto.",
+        "CEI": "Contro di essa il Signore degli eserciti agiterà il flagello, come quando colpì Madian sulla rupe dell'Oreb; alzerà la sua verga sul mare come fece con l'Egitto."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֣ה בַּ/יּ֣וֹם הַ/ה֗וּא יָס֤וּר סֻבֳּל/וֹ֙ מֵ/עַ֣ל שִׁכְמֶ֔/ךָ וְ/עֻלּ֖/וֹ מֵ/עַ֣ל צַוָּארֶ֑/ךָ וְ/חֻבַּ֥ל עֹ֖ל מִ/פְּנֵי שָֽׁמֶן׃",
+        "LXX": "καὶ ἔσται ἐν τῇ ἡμέρᾳ ἐκείνῃ ἀφαιρεθήσεται ὁ ζυγὸς αὐτοῦ ἀπὸ τοῦ ὤμου σου, καὶ ὁ φόβος αὐτοῦ ἀπὸ σοῦ, καὶ καταφθαρήσεται ὁ ζυγὸς ἀπὸ τῶν ὤμων ὑμῶν.",
+        "VUL": "Et erit in die illa :/ auferetur onus ejus de humero tuo/ et jugum ejus de collo tuo,/ et computrescet jugum a facie olei.]",
+        "SYN": "И будет в тот день: снимется с рамен твоих бремя его, и ярмо его - с шеи твоей; и распадется ярмо от тука.",
+        "NEO": "Et il arrivera en ce jour-là : Le fardeau d’Assur sera ôté de ton épaule, et son joug de dessus ton cou, et ta vigueur fera éclater le joug.",
+        "NAB": "On that day, His burden shall be taken from your shoulder, and his yoke shattered from your neck. He has come up from the direction of Rimmon,",
+        "VAT_ES": "Aquel día, su carga será quitada de tus espaldas y su yugo se apartará de tu cuello.",
+        "CEI": "In quel giorno sarà tolto il suo fardello dalla tua spalla e il suo giogo cesserà di pesare sul tuo collo. Il distruttore viene da Rimmòn,"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "בָּ֥א עַל עַיַּ֖ת עָבַ֣ר בְּ/מִגְר֑וֹן לְ/מִכְמָ֖שׂ יַפְקִ֥יד כֵּלָֽי/ו׃",
+        "LXX": "ἥξει γὰρ εἰς τὴν πόλιν Ἀγγαί,",
+        "VUL": "[Veniet in Ajath, transibit in Magron,/ apud Machmas commendabit vasa sua./",
+        "SYN": "Он идет на Аиаф, проходит Мигрон, в Михмасе складывает свои запасы.",
+        "NEO": "Il est venu à Ajath, il a passé à Magron, il laisse son bagage à Machmas.",
+        "NAB": "he has reached Aiath, passed through Migron, at Michmash his supplies are stored.",
+        "VAT_ES": "llega hasta Aiat. atraviesa Migrón, deja su equipaje en Micmás.",
+        "CEI": "raggiunge Aiàt, attraversa Migròn, in Micmàs depone il bagaglio."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "עָֽבְרוּ֙ מַעְבָּרָ֔ה גֶּ֖בַע מָל֣וֹן לָ֑/נוּ חָֽרְדָה֙ הָֽ/רָמָ֔ה גִּבְעַ֥ת שָׁא֖וּל נָֽסָה׃",
+        "LXX": "καὶ παρελεύσεται εἰς Μαγεδώ, καὶ ἐν Μαχμὰς θήσει τὰ σκεύη αὐτοῦ· καὶ παρελεύσεται φάραγγα καὶ ἥξει εἰς Ἀγγαί, φόβος λήμψεται Ῥαμὰ πόλιν Σαούλ. φεύξεται",
+        "VUL": "Transierunt cursim,/ Gaba sedes nostra ;/ obstupuit Rama,/ Gabaath Saulis fugit./",
+        "SYN": "Проходят теснины; в Геве ночлег их; Рама трясется; Гива Саулова разбежалась.",
+        "NEO": "Ils ont passé le défilé ; ils ont campé la nuit à Gaba ; Rama est dans l’épouvante ; Gabaa de Saül prend la fuite.",
+        "NAB": "They cross the ravine: \"We will spend the night at Geba.\" Ramah is in terror, Gibeah of Saul has fled.",
+        "VAT_ES": "Cruzan el desfiladero, en Gueba pasan la noche, tiembla Ramá, huye Guibeá de Saúl.",
+        "CEI": "Attraversano il passo; in Gheba si accampano; Rama trema, fugge Gàbaa di Saul."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "צַהֲלִ֥י קוֹלֵ֖/ךְ בַּת גַּלִּ֑ים הַקְשִׁ֥יבִי לַ֖יְשָׁה עֲנִיָּ֥ה עֲנָתֽוֹת׃",
+        "LXX": "ἡ θυγάτηρ Γαλείμ, ἐπακούσεται ἐν Σά, ἐπακούσεται ἐν Ἀναθώθ·",
+        "VUL": "Hinni voce tua, filia Gallim,/ attende Laisa, paupercula Anathoth./",
+        "SYN": "Вой голосом твоим, дочь Галима; пусть услышит тебя Лаис, бедный Анафоф!",
+        "NEO": "Pousse des cris de détresse, fille de Gallim ! Prête l’oreille, Laïs ! Pauvre Anathoth !",
+        "NAB": "Cry and shriek, O daughter of Gallim! Hearken, Laishah! Answer her, Anathoth!",
+        "VAT_ES": "&iexcl;Grita con toda tu voz, Bat Galím, presta atención, Laisa. respóndele, Anatot!",
+        "CEI": "Grida con tutta la tua voce, Bat-Gallìm, stà attenta, Làisa, rispondile, Anatòt!"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "נָדְדָ֖ה מַדְמֵנָ֑ה יֹשְׁבֵ֥י הַ/גֵּבִ֖ים הֵעִֽיזוּ׃",
+        "LXX": "καὶ ἐξέστη Μαδεβηνὰ καὶ οἱ κατοικοῦντες Γιββείρ.",
+        "VUL": "Migravit Medemena ;/ habitatores Gabim, confortamini./",
+        "SYN": "Мадмена разбежалась, жители Гевима спешат уходить.",
+        "NEO": "Medména se disperse, les habitants de Gabim sont en fuite.",
+        "NAB": "Madmenah is in flight, the inhabitants of Gebim seek refuge.",
+        "VAT_ES": "Se desbanda Madmená, buscan refugio los habitantes de Guebín.",
+        "CEI": "Madmenà è in fuga, e alla fuga si danno gli abitanti di Ghebim."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "ע֥וֹד הַ/יּ֖וֹם בְּ/נֹ֣ב לַֽ/עֲמֹ֑ד יְנֹפֵ֤ף יָד/וֹ֙ הַ֣ר בית בַּת צִיּ֔וֹן גִּבְעַ֖ת יְרוּשָׁלִָֽם׃",
+        "LXX": "παρακαλεῖτε σήμερον ἐν ὁδῷ τοῦ μεῖναι, τῇ χειρὶ παρακαλεῖτε τὸ ὄρος τὴν θυγατέρα Σειών, καὶ οἱ βουνοὶ οἱ ἐν Ἰερουσαλήμ.",
+        "VUL": "Adhuc dies est ut in Nobe stetur ;/ agitabit manum suam super montem filiæ Sion,/ collem Jerusalem./",
+        "SYN": "Еще день простоит он в Нове; грозит рукою своею горе Сиону, холму Иерусалимскому.",
+        "NEO": "Encore un jour et il sera à Nobé ; il lèvera sa main contre la montagne de la fille de Sion, contre la colline de Jérusalem !...",
+        "NAB": "Even today he will halt at Nob, he will shake his fist at the mount of daughter Zion, the hill of Jerusalem!",
+        "VAT_ES": "Un día más, para hacer alto en Nob, y él agitará su mano hacia la montaña de la hija de Sión, hacia la colina de Jerusalén.",
+        "CEI": "Oggi stesso farà sosta a Nob, agiterà la mano verso il monte della figlia di Sion, verso il colle di Gerusalemme."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "הִנֵּ֤ה הָ/אָדוֹן֙ יְהוָ֣ה צְבָא֔וֹת מְסָעֵ֥ף פֻּארָ֖ה בְּ/מַעֲרָצָ֑ה וְ/רָמֵ֤י הַ/קּוֹמָה֙ גְּדוּעִ֔ים וְ/הַ/גְּבֹהִ֖ים יִשְׁפָּֽלוּ׃",
+        "LXX": "ἰδοὺ ὁ δεσπότης Κύριος σαβαὼθ συνταράσσει τοὺς ἐνδόξους μετὰ ἰσχύος, καὶ οἱ ὑψηλοὶ τῇ ὕβρει συντριβήσονται, καὶ οἱ ὑψηλοὶ ταπεινωθήσονται,",
+        "VUL": "Ecce Dominator, Dominus exercituum,/ confringet lagunculam in terrore ;/ et excelsi statura succidentur,/ et sublimes humiliabuntur./",
+        "SYN": "Вот, Господь, Господь Саваоф, страшною силою сорвет ветви дерев, и величающиеся ростом будут срублены, высокие - повержены на землю.",
+        "NEO": "Voici que le Seigneur, \\+w Yahweh|strong=\"H3068\"\\+w** des armées, abat avec fracas la ramure des arbres ; les plus hauts sont coupés, les plus élevés sont jetés par terre.",
+        "NAB": "Behold, the Lord, the LORD of hosts, lops off the boughs with terrible violence; The tall of stature are felled, and the lofty ones brought low;",
+        "VAT_ES": "&iexcl;Miren! El Señor, el Señor de los ejércitos, desgaja con ímpetu el ramaje: los árboles más altos son talados, los más elevados, abatidos:",
+        "CEI": "Ecco il Signore, Dio degli eserciti, che strappa i rami con fracasso; le punte più alte sono troncate, le cime sono abbattute."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְ/נִקַּ֛ף סִֽבְכֵ֥י הַ/יַּ֖עַר בַּ/בַּרְזֶ֑ל וְ/הַ/לְּבָנ֖וֹן בְּ/אַדִּ֥יר יִפּֽוֹל׃",
+        "LXX": "καὶ πεσοῦνται ὑψηλοὶ μαχαίρᾳ, ὁ δὲ Λίβανος σὺν τοῖς ὑψηλοῖς πεσεῖται.",
+        "VUL": "Et subvertentur condensa saltus ferro ;/ et Libanus cum excelsis cadet.]",
+        "SYN": "И посечет чащу леса железом, и Ливан падет от Всемогущего.",
+        "NEO": "Les fourrés de la forêt sont taillés avec le fer, et le Liban tombe sous les coups d’un Puissant.",
+        "NAB": "The forest thickets are felled with the axe, and Lebanon in its splendor falls.",
+        "VAT_ES": "él corta con el hierro la espesura del bosque, y cae el Líbano con su esplendor.",
+        "CEI": "È reciso con il ferro il folto della selva e il Libano cade con la sua magnificenza."
+      }
+    }
+  }
+}

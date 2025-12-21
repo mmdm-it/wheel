@@ -1,0 +1,573 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_040",
+  "book_key": "ISA",
+  "sequence": 40,
+  "chapter_in": {
+    "MT": 40,
+    "VUL": 40,
+    "LXX": 40
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "נַחֲמ֥וּ נַחֲמ֖וּ עַמִּ֑/י יֹאמַ֖ר אֱלֹהֵי/כֶֽם׃",
+        "LXX": "Παρακαλεῖτε παρακαλεῖτε τὸν λαόν μου, λέγει ὁ θεός.",
+        "VUL": "[Consolamini, consolamini, popule meus,/ dicit Deus vester./",
+        "SYN": "Утешайте, утешайте народ Мой, говорит Бог ваш;",
+        "NEO": "Consolez, consolez mon peuple, dit votre Dieu.",
+        "NAB": "Comfort, give comfort to my people, says your God.",
+        "VAT_ES": "&iexcl;Consuelen, consuelen a mi pueblo, dice su Dios!",
+        "CEI": "\"Consolate, consolate il mio popolo, dice il vostro Dio."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "דַּבְּר֞וּ עַל לֵ֤ב יְרֽוּשָׁלִַ֨ם֙ וְ/קִרְא֣וּ אֵלֶ֔י/הָ כִּ֤י מָֽלְאָה֙ צְבָאָ֔/הּ כִּ֥י נִרְצָ֖ה עֲוֺנָ֑/הּ כִּ֤י לָקְחָה֙ מִ/יַּ֣ד יְהוָ֔ה כִּפְלַ֖יִם בְּ/כָל חַטֹּאתֶֽי/הָ׃",
+        "LXX": "ἱερεῖς, λαλήσατε εἰς τὴν καρδίαν Ἰερουσαλήμ, παρακαλέσατε αὐτήν, ὅτι ἐπλήσθη ἡ ταπείνωσις αὐτῆς· λέλυται αὐτῆς ἡ ἁμαρτία, ὅτι ἐδέξατο ἐκ χειρὸς Κυρίου διπλᾶ τὰ ἁμαρτήματα αὐτῆς.",
+        "VUL": "Loquimini ad cor Jerusalem,/ et advocate eam,/ quoniam completa est malitia ejus,/ dimissa est iniquitas illius :/ suscepit de manu Domini duplicia/ pro omnibus peccatis suis./",
+        "SYN": "говорите к сердцу Иерусалима и возвещайте ему, что исполнилось время борьбы его, что за неправды его сделано удовлетворение, ибо он от руки Господней принял вдвое за все грехи свои.",
+        "NEO": "Parlez au cœur de Jérusalem, et criez-lui : Que sa servitude est finie, que son iniquité est expiée, qu’elle a reçu de la main de \\+w Yahweh|strong=\"H3068\"\\+w** le double pour ses péchés.",
+        "NAB": "Speak tenderly to Jerusalem, and proclaim to her that her service is at an end, her guilt is expiated; Indeed, she has received from the hand of the LORD double for all her sins.",
+        "VAT_ES": "Hablen al corazón de Jerusalén y anúncienle que su tiempo de servicio se ha cumplido, que su culpa está paga, que ha recibido de la mano del Señor doble castigo por todos sus pecados.",
+        "CEI": "Parlate al cuore di Gerusalemme e gridatele che è finita la sua schiavitù, è stata scontata la sua iniquità, perché ha ricevuto dalla mano del Signore doppio castigo per tutti i suoi peccati\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "ק֣וֹל קוֹרֵ֔א בַּ/מִּדְבָּ֕ר פַּנּ֖וּ דֶּ֣רֶךְ יְהוָ֑ה יַשְּׁרוּ֙ בָּ/עֲרָבָ֔ה מְסִלָּ֖ה לֵ/אלֹהֵֽי/נוּ׃",
+        "LXX": "Φωνὴ βοῶντος ἐν τῇ ἐρήμῳ Ἑτοιμάσατε τὴν ὁδὸν Κυρίου, εὐθείας ποιεῖτε τὰς τρίβους τοῦ θεοῦ ἡμῶν.",
+        "VUL": "Vox clamantis in deserto :/ Parate viam Domini,/ rectas facite in solitudine semitas Dei nostri./",
+        "SYN": "Глас вопиющего в пустыне: приготовьте путь Господу, прямыми сделайте в степи стези Богу нашему;",
+        "NEO": "Une voix crie : Frayez dans le désert le chemin de \\+w Yahweh|strong=\"H3068\"\\+w**, aplanissez dans la steppe une route pour notre Dieu !",
+        "NAB": "A voice cries out: In the desert prepare the way of the LORD! Make straight in the wasteland a highway for our God!",
+        "VAT_ES": "Una voz proclama: &iexcl;Preparen en el desierto el camino del Señor, tracen en la estepa un sendero para nuestro Dios!",
+        "CEI": "Una voce grida: \"Nel deserto preparate la via al Signore, appianate nella steppa la strada per il nostro Dio."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כָּל גֶּיא֙ יִנָּשֵׂ֔א וְ/כָל הַ֥ר וְ/גִבְעָ֖ה יִשְׁפָּ֑לוּ וְ/הָיָ֤ה הֶֽ/עָקֹב֙ לְ/מִישׁ֔וֹר וְ/הָ/רְכָסִ֖ים לְ/בִקְעָֽה׃",
+        "LXX": "πᾶσα φάραγξ πληρωθήσεται, καὶ πᾶν ὄρος καὶ βουνὸς ταπεινωθήσεται· καὶ ἔσται πάντα τὰ σκολιὰ εἰς εὐθεῖαν, καὶ ἡ τραχεῖα εἰς πεδία,",
+        "VUL": "Omnis vallis exaltabitur,/ et omnis mons et collis humiliabitur,/ et erunt prava in directa,/ et aspera in vias planas :/",
+        "SYN": "всякий дол да наполнится, и всякая гора и холм да понизятся, кривизны выпрямятся и неровные пути сделаются гладкими;",
+        "NEO": "Que toute vallée soit relevée, toute montagne et toute colline abaissées ; que la hauteur devienne une plaine, et les roches escarpées un vallon !",
+        "NAB": "Every valley shall be filled in, every mountain and hill shall be made low; The rugged land shall be made a plain, the rough country, a broad valley.",
+        "VAT_ES": "&iexcl;Que se rellenen todos los valles y se aplanen todas las montañas y colinas; que las quebradas se conviertan en llanuras y los terrenos escarpados, en planicies!",
+        "CEI": "Ogni valle sia colmata, ogni monte e colle siano abbassati; il terreno accidentato si trasformi in piano e quello scosceso in pianura."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/נִגְלָ֖ה כְּב֣וֹד יְהוָ֑ה וְ/רָא֤וּ כָל בָּשָׂר֙ יַחְדָּ֔ו כִּ֛י פִּ֥י יְהוָ֖ה דִּבֵּֽר׃",
+        "LXX": "καὶ ὀφθήσεται ἡ δόξα Κυρίου, καὶ ὄψεται πᾶσα σὰρξ τὸ σωτήριον τοῦ θεοῦ, ὅτι Κύριος ἐλάλησεν.",
+        "VUL": "et revelabitur gloria Domini,/ et videbit omnis caro pariter/ quod os Domini locutum est./",
+        "SYN": "и явится слава Господня, и узрит всякая плоть [спасение Божие]; ибо уста Господни изрекли это.",
+        "NEO": "Alors la gloire de \\+w Yahweh|strong=\"H3068\"\\+w** apparaîtra, et toute chair sans exception la verra ; car la bouche de \\+w Yahweh|strong=\"H3068\"\\+w** a parlé.",
+        "NAB": "Then the glory of the LORD shall be revealed, and all mankind shall see it together; for the mouth of the LORD has spoken.",
+        "VAT_ES": "Entonces se revelará la gloria del Señor y todos los hombres la verán juntamente, porque ha hablado la boca del Señor.",
+        "CEI": "Allora si rivelerà la gloria del Signore e ogni uomo la vedrà, poiché la bocca del Signore ha parlato\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "ק֚וֹל אֹמֵ֣ר קְרָ֔א וְ/אָמַ֖ר מָ֣ה אֶקְרָ֑א כָּל הַ/בָּשָׂ֣ר חָצִ֔יר וְ/כָל חַסְדּ֖/וֹ כְּ/צִ֥יץ הַ/שָּׂדֶֽה׃",
+        "LXX": "φωνὴ λέγοντος Βόησον. καὶ εἶπα Τί βοήσω; Πᾶσα σὰρξ χόρτος, καὶ πᾶσα δόξα ἀνθρώπου ὡς ἄνθος χόρτου·",
+        "VUL": "Vox dicentis : Clama./ Et dixi : Quid clamabo ?/ Omnis caro fnum,/ et omnis gloria ejus quasi flos agri./",
+        "SYN": "Голос говорит: возвещай! И сказал: что мне возвещать? Всякая плоть - трава, и вся красота ее - как цвет полевой.",
+        "NEO": "Une voix dit : « Crie ! » et on répond : « Que crierai-je ? » — « Toute chair est comme l’herbe, et toute sa grâce comme la fleur des champs :",
+        "NAB": "One man helps another, one says to the other, \"Keep on!\"",
+        "VAT_ES": "Una voz dice: «&iexcl;Proclama!». Y yo respondo: «&iquest;Qué proclamaré?». «Toda carne es hierba y toda su consistencia, como la flor de los campos:",
+        "CEI": "Una voce dice: \"Grida\" e io rispondo: \"Che dovrò gridare?\". Ogni uomo è come l'erba e tutta la sua gloria è come un fiore del campo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יָבֵ֤שׁ חָצִיר֙ נָ֣בֵֽל צִ֔יץ כִּ֛י ר֥וּחַ יְהוָ֖ה נָ֣שְׁבָה בּ֑/וֹ אָכֵ֥ן חָצִ֖יר הָ/עָֽם׃",
+        "LXX": "ἐξηράνθη ὁ χόρτος καὶ τὸ ἄνθος ἐξέπεσεν,",
+        "VUL": "Exsiccatum est fnum, et cecidit flos,/ quia spiritus Domini sufflavit in eo./ Vere fnum est populus :/",
+        "SYN": "Засыхает трава, увядает цвет, когда дунет на него дуновение Господа: так и народ - трава.",
+        "NEO": "L’herbe se dessèche, la fleur se flétrit, quand le souffle de \\+w Yahweh|strong=\"H3068\"\\+w** passe sur elle. Oui, l’homme est comme l’herbe !",
+        "NAB": "The craftsman encourages the goldsmith, the one who beats with the hammer, him who strikes on the anvil; He says the soldering is good, and he fastens it with nails to steady it.",
+        "VAT_ES": "la hierba se seca, la flor se marchita cuando sopla sobre ella el aliento del Señor. Sí, el pueblo es la hierba.",
+        "CEI": "Secca l'erba, il fiore appassisce quando il soffio del Signore spira su di essi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "יָבֵ֥שׁ חָצִ֖יר נָ֣בֵֽל צִ֑יץ וּ/דְבַר אֱלֹהֵ֖י/נוּ יָק֥וּם לְ/עוֹלָֽם׃",
+        "LXX": "τὸ δὲ ῥῆμα τοῦ θεοῦ ἡμῶν μένει εἰς τὸν αἰῶνα.",
+        "VUL": "exsiccatum est fnum, et cecidit flos ;/ verbum autem Domini nostri manet in æternum./",
+        "SYN": "Трава засыхает, цвет увядает, а слово Бога нашего пребудет вечно.",
+        "NEO": "L’herbe se dessèche, la fleur se flétrit ; mais la parole de Dieu subsiste à jamais ! »",
+        "NAB": "Though the grass withers and the flower wilts, the word of our God stands forever.\"",
+        "VAT_ES": "La hierba se seca, la flor se marchita, pero la palabra de nuestro Dios permanece para siempre».",
+        "CEI": "Secca l'erba, appassisce il fiore, ma la parola del nostro Dio dura sempre. Veramente il popolo è come l'erba."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "עַ֣ל הַר גָּבֹ֤הַ עֲלִי לָ/ךְ֙ מְבַשֶּׂ֣רֶת צִיּ֔וֹן הָרִ֤ימִי בַ/כֹּ֨חַ֙ קוֹלֵ֔/ךְ מְבַשֶּׂ֖רֶת יְרוּשָׁלִָ֑ם הָרִ֨ימִי֙ אַל תִּירָ֔אִי אִמְרִי֙ לְ/עָרֵ֣י יְהוּדָ֔ה הִנֵּ֖ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "Ἐπ’ ὄρος ὑψηλὸν ἀνάβηθι, ὁ εὐαγγελιζόμενος Σειών· ὕψωσον τῇ ἰσχύι τὴν φωνήν σου, ὁ εὐαγγελιζόμενος Ἰερουσαλήμ· ὑψώσατε, μὴ φοβεῖσθε· εἰπὸν ταῖς πόλεσιν Ἰούδα Ἰδοὺ ὁ θεὸς ὑμῶν.",
+        "VUL": "Super montem excelsum ascende,/ tu qui evangelizas Sion ;/ exalta in fortitudine vocem tuam,/ qui evangelizas Jerusalem :/ exalta, noli timere./ Dic civitatibus Juda :/ Ecce Deus vester :/",
+        "SYN": "Взойди на высокую гору, благовествующий Сион! возвысь с силою голос твой, благовествующий Иерусалим! возвысь, не бойся; скажи городам Иудиным: вот Бог ваш!",
+        "NEO": "Monte sur une haute montagne, toi qui portes à Sion la bonne nouvelle ; élève la voix avec force, toi qui portes à Jérusalem la bonne nouvelle ; élève-la, ne crains point ; dis aux villes de Juda : « Voici votre Dieu ! »",
+        "NAB": "Go up onto a high mountain, Zion, herald of glad tidings; Cry out at the top of your voice, Jerusalem, herald of good news! Fear not to cry out and say to the cities of Judah: Here is your God!",
+        "VAT_ES": "Súbete a una montaña elevada, tú que llevas la buena noticia a Sión; levanta con fuerza tu voz, tú que llevas la buena noticia a Jerusalén. Levántala sin temor, di a las ciudades de Judá: «&iexcl;Aquí está tu Dios!».",
+        "CEI": "Sali su un alto monte, tu che rechi liete notizie in Sion; alza la voce con forza, tu che rechi liete notizie in Gerusalemme. Alza la voce, non temere; annunzia alle città di Giuda: \"Ecco il vostro Dio!"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "הִנֵּ֨ה אֲדֹנָ֤/י יְהוִה֙ בְּ/חָזָ֣ק יָב֔וֹא וּ/זְרֹע֖/וֹ מֹ֣שְׁלָה ל֑/וֹ הִנֵּ֤ה שְׂכָר/וֹ֙ אִתּ֔/וֹ וּ/פְעֻלָּת֖/וֹ לְ/פָנָֽי/ו׃",
+        "LXX": "ἰδοὺ κύριος Κύριος μετὰ ἰσχύος ἔρχεται, καὶ ὁ βραχίων μετὰ κυρίας· ἰδοὺ ὁ μισθὸς αὐτοῦ μετ’ αὐτοῦ, καὶ τὸ ἔργον ἐναντίον αὐτοῦ.",
+        "VUL": "ecce Dominus Deus in fortitudine veniet,/ et brachium ejus dominabitur :/ ecce merces ejus cum eo,/ et opus illius coram illo./",
+        "SYN": "Вот, Господь Бог грядет с силою, и мышца Его со властью. Вот, награда Его с Ним и воздаяние Его пред лицем Его.",
+        "NEO": "Voici que le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** vient avec puissance ; son bras exerce la domination ; Voici que sa récompense est avec lui, et son salaire est devant lui.",
+        "NAB": "Here comes with power the Lord GOD, who rules by his strong arm; Here is his reward with him, his recompense before him.",
+        "VAT_ES": "Ya llega el Señor con poder y su brazo le asegura el dominio: el premio de su victoria lo acompaña y su recompensa lo precede.",
+        "CEI": "Ecco, il Signore Dio viene con potenza, con il braccio egli detiene il dominio. Ecco, egli ha con sé il premio e i suoi trofei lo precedono."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כְּ/רֹעֶה֙ עֶדְר֣/וֹ יִרְעֶ֔ה בִּ/זְרֹע/וֹ֙ יְקַבֵּ֣ץ טְלָאִ֔ים וּ/בְ/חֵיק֖/וֹ יִשָּׂ֑א עָל֖וֹת יְנַהֵֽל׃",
+        "LXX": "ὡς ποιμὴν ποιμανεῖ τὸ ποίμνιον αὐτοῦ, καὶ τῷ βραχίονι αὐτοῦ συνάξει ἄρνας, καὶ ἐν γαστρὶ ἐχούσας παρακαλέσει.",
+        "VUL": "Sicut pastor gregem suum pascet,/ in brachio suo congregabit agnos,/ et in sinu suo levabit ;/ ftas ipse portabit./",
+        "SYN": "Как пастырь Он будет пасти стадо Свое; агнцев будет брать на руки и носить на груди Своей, и водить дойных.",
+        "NEO": "Comme un berger, il fera paître son troupeau ; il recueillera les agneaux dans ses bras, et les portera dans son sein ; il conduira doucement celles qui allaitent.",
+        "NAB": "Like a shepherd he feeds his flock; in his arms he gathers the lambs, Carrying them in his bosom, and leading the ewes with care.",
+        "VAT_ES": "Como un pastor, él apacienta su rebaño, lo reúne con su brazo; lleva sobre su pecho a los corderos y guía con cuidado a las que han dado a luz",
+        "CEI": "Come un pastore egli fa pascolare il gregge e con il suo braccio lo raduna; porta gli agnellini sul seno e conduce pian piano le pecore madri\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "מִֽי מָדַ֨ד בְּ/שָׁעֳל֜/וֹ מַ֗יִם וְ/שָׁמַ֨יִם֙ בַּ/זֶּ֣רֶת תִּכֵּ֔ן וְ/כָ֥ל בַּ/שָּׁלִ֖שׁ עֲפַ֣ר הָ/אָ֑רֶץ וְ/שָׁקַ֤ל בַּ/פֶּ֨לֶס֙ הָרִ֔ים וּ/גְבָע֖וֹת בְּ/מֹאזְנָֽיִם׃",
+        "LXX": "Τίς ἐμέτρησεν τῇ χειρὶ τὸ ὕδωρ, καὶ τὸν οὐρανὸν σπιθαμῇ, καὶ πᾶσαν τὴν γῆν δρακί; τίς ἔστησεν τὰ ὄρη σταθμῷ καὶ τὰς νάπας ζυγῷ;",
+        "VUL": "Quis mensus est pugillo aquas,/ et cælos palmo ponderavit ?/ quis appendit tribus digitis molem terræ,/ et libravit in pondere montes,/ et colles in statera ?/",
+        "SYN": "Кто исчерпал воды горстью своею и пядью измерил небеса, и вместил в меру прах земли, и взвесил на весах горы и на чашах весовых холмы?",
+        "NEO": "Qui a mesuré les eaux dans le creux de sa main, estimé l’étendue des cieux à l’empan, jaugé au boisseau toute la poussière de la terre, pesé les montagnes au crochet, et les collines à la balance ?",
+        "NAB": "Who has cupped in his hand the waters of the sea, and marked off the heavens with a span? Who has held in a measure the dust of the earth, weighed the mountains in scales and the hills in a balance?",
+        "VAT_ES": "&iquest;Quién midió las aguas en el hueco de su mano y abarcó con la palma las dimensiones del cielo? &iquest;Quién hizo caber en una medida el polvo de la tierra o pesó en una báscula las montañas y en una balanza la colinas?",
+        "CEI": "Chi ha misurato con il cavo della mano le acque del mare e ha calcolato l'estensione dei cieli con il palmo? Chi ha misurato con il moggio la polvere della terra, ha pesato con la stadera le montagne e i colli con la bilancia?"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "מִֽי תִכֵּ֥ן אֶת ר֖וּחַ יְהוָ֑ה וְ/אִ֥ישׁ עֲצָת֖/וֹ יוֹדִיעֶֽ/נּוּ׃",
+        "LXX": "τίς ἔγνω νοῦν Κυρίου, καὶ τίς αὐτοῦ σύμβουλος ἐγένετο, ὃς συμβιβᾷ αὐτόν;",
+        "VUL": "Quis adjuvit spiritum Domini ?/ aut quis consiliarius ejus fuit, et ostendit illi ?/",
+        "SYN": "Кто уразумел дух Господа, и был советником у Него и учил Его?",
+        "NEO": "Qui a dirigé l’esprit de \\+w Yahweh|strong=\"H3068\"\\+w**, et quel a été son conseiller pour l’instruire ?",
+        "NAB": "Who has directed the spirit of the LORD, or has instructed him as his counselor?",
+        "VAT_ES": "&iquest;Quién abarcó el espíritu del Señor y qué consejero lo instruyó?",
+        "CEI": "Chi ha diretto lo spirito del Signore e come suo consigliere gli ha dato suggerimenti?"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אֶת מִ֤י נוֹעָץ֙ וַ/יְבִינֵ֔/הוּ וַֽ/יְלַמְּדֵ֖/הוּ בְּ/אֹ֣רַח מִשְׁפָּ֑ט וַ/יְלַמְּדֵ֣/הוּ דַ֔עַת וְ/דֶ֥רֶךְ תְּבוּנ֖וֹת יוֹדִיעֶֽ/נּוּ׃",
+        "LXX": "ἢ πρὸς τίνα συνεβουλεύσατο καὶ συνεβίβασεν αὐτόν; ἢ τίς ἔδειξεν αὐτῷ κρίσιν; ἢ ὁδὸν συνέσεως τίς ἔδειξεν αὐτῷ;",
+        "VUL": "cum quo iniit consilium, et instruxit eum,/ et docuit eum semitam justitiæ,/ et erudivit eum scientiam,/ et viam prudentiæ ostendit illi ?/",
+        "SYN": "С кем советуется Он, и кто вразумляет Его и наставляет Его на путь правды, и учит Его знанию, и указывает Ему путь мудрости?",
+        "NEO": "Avec qui a-t-il tenu conseil, pour qu’il l’éclaire, pour qu’il lui enseigne le sentier de la justice, pour qu’il lui enseigne la sagesse, et lui montre le chemin de l’intelligence ?",
+        "NAB": "Whom did he consult to gain knowledge? Who taught him the path of judgment, or showed him the way of understanding?",
+        "VAT_ES": "&iquest;Con quién se aconsejó para que le hiciera comprender, para que le enseñara el sendero del derecho, para que le enseñara la ciencia y le hiciera conocer el camino de la inteligencia?",
+        "CEI": "A chi ha chiesto consiglio, perché lo istruisse e gli insegnasse il sentiero della giustizia e lo ammaestrasse nella scienza e gli rivelasse la via della prudenza?"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "הֵ֤ן גּוֹיִם֙ כְּ/מַ֣ר מִ/דְּלִ֔י וּ/כְ/שַׁ֥חַק מֹאזְנַ֖יִם נֶחְשָׁ֑בוּ הֵ֥ן אִיִּ֖ים כַּ/דַּ֥ק יִטּֽוֹל׃",
+        "LXX": "εἰ πάντα τὰ ἔθνη ὡς σταγὼν ἀπὸ κάδου καὶ ὡς ῥοπὴ ζυγοῦ ἐλογίσθησαν, ὡς σίελος λογισθήσονται·",
+        "VUL": "Ecce gentes quasi stilla situlæ,/ et quasi momentum stateræ reputatæ sunt ;/ ecce insulæ quasi pulvis exiguus./",
+        "SYN": "Вот народы - как капля из ведра, и считаются как пылинка на весах. Вот, острова как порошинку поднимает Он.",
+        "NEO": "Voici que les nations sont comme la goutte suspendue à un seau, elles sont réputées comme la poussière dans la balance ; voici que les îles sont la poudre menue qui s’envole.",
+        "NAB": "Behold, the nations count as a drop in the bucket, as dust on the scales; the coastlands weigh no more than powder.",
+        "VAT_ES": "Sí, las naciones son como una gota que cae de un balde, cuentan como un grano de polvo en la balanza; las islas pesan lo mismo que el polvillo.",
+        "CEI": "Ecco, le nazioni son come una goccia da un secchio, contano come il pulviscolo sulla bilancia; ecco, le isole pesano quanto un granello di polvere."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וּ/לְבָנ֕וֹן אֵ֥ין דֵּ֖י בָּעֵ֑ר וְ/חַיָּת֔/וֹ אֵ֥ין דֵּ֖י עוֹלָֽה׃",
+        "LXX": "ὁ δὲ Λίβανος οὐχ ἱκανὸς εἰς καῦσιν, καὶ πάντα τὰ τετράποδα οὐχ ἱκανὰ εἰς ὁλοκάρπωσιν,",
+        "VUL": "Et Libanus non sufficiet ad succendendum,/ et animalia ejus non sufficient ad holocaustum./",
+        "SYN": "И Ливана недостаточно для жертвенного огня, и животных на нем - для всесожжения.",
+        "NEO": "Le Liban ne suffit pas pour le feu, et ses animaux ne suffisent pas pour l’holocauste.",
+        "NAB": "Lebanon would not suffice for fuel, nor its animals be enough for holocausts.",
+        "VAT_ES": "El Líbano no bastarías para encender fogatas, sus animales no bastarían para los holocaustos.",
+        "CEI": "Il Libano non basterebbe per accendere il rogo, né le sue bestie per l'olocausto."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כָּל הַ/גּוֹיִ֖ם כְּ/אַ֣יִן נֶגְדּ֑/וֹ מֵ/אֶ֥פֶס וָ/תֹ֖הוּ נֶחְשְׁבוּ לֽ/וֹ׃",
+        "LXX": "καὶ πάντα τὰ ἔθνη ὡς οὐδέν εἰσι καὶ εἰς οὐθὲν ἐλογίσθησαν.",
+        "VUL": "Omnes gentes quasi non sint, sic sunt coram eo,/ et quasi nihilum et inane reputatæ sunt ei.]",
+        "SYN": "Все народы пред Ним как ничто, - менее ничтожества и пустоты считаются у Него.",
+        "NEO": "Toutes les nations sont devant lui comme rien ; il les compte pour néant et vanité.",
+        "NAB": "Before him all the nations are as nought, as nothing and void he accounts them.",
+        "VAT_ES": "Todas las naciones son como nada ante él, cuentan para él como la nada y el vacío.",
+        "CEI": "Tutte le nazioni sono come un nulla davanti a lui, come niente e vanità sono da lui ritenute."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/אֶל מִ֖י תְּדַמְּי֣וּ/ן אֵ֑ל וּ/מַה דְּמ֖וּת תַּ֥עַרְכוּ לֽ/וֹ׃",
+        "LXX": "τίνι ὡμοιώσατε Κύριον, καὶ τίνι ὁμοιώματι ὡμοιώσατε αὐτόν;",
+        "VUL": "[Cui ergo similem fecisti Deum ?/ aut quam imaginem ponetis ei ?/",
+        "SYN": "Итак кому уподобите вы Бога? И какое подобие найдете Ему?",
+        "NEO": "A qui donc comparerez-vous Dieu, et quelle image lui préparerez-vous ?",
+        "NAB": "To whom can you liken God? With what equal can you confront him?",
+        "VAT_ES": "&iquest;A quién asemejarán ustedes a Dios y con qué imagen lo representarán?",
+        "CEI": "A chi potreste paragonare Dio e quale immagine mettergli a confronto?"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "הַ/פֶּ֨סֶל֙ נָסַ֣ךְ חָרָ֔שׁ וְ/צֹרֵ֖ף בַּ/זָּהָ֣ב יְרַקְּעֶ֑/נּוּ וּ/רְתֻק֥וֹת כֶּ֖סֶף צוֹרֵֽף׃",
+        "LXX": "μὴ εἰκόνα ἐποίησεν τέκτων, ἢ χρυσοχόος χωνεύσας χρυσίον περιεχρύσωσεν αὐτόν; ὁμοίωμα κατεσκεύασεν αὐτόν;",
+        "VUL": "Numquid sculptile conflavit faber ?/ aut aurifex auro figuravit illud,/ et laminis argenteis argentarius ?/",
+        "SYN": "Идола выливает художник, и золотильщик покрывает его золотом и приделывает серебряные цепочки.",
+        "NEO": "Quand l’ouvrier a coulé une idole, l’orfèvre la recouvre d’or, et il lui fond des chaînettes d’argent.",
+        "NAB": "An idol, cast by a craftsman, which the smith plates with gold and fits with silver chains?",
+        "VAT_ES": "Al ídolo, lo funde un artesano, un orfebre lo recubre de oro y le suelda cadenas de plata.",
+        "CEI": "Il fabbro fonde l'idolo, l'orafo lo riveste di oro e fonde catenelle d'argento. (41,6)Si aiutano l'un l'altro; uno dice al compagno: \"Coraggio!\". Il fabbro incoraggia l'orafo; (41,7)chi leviga con il martello incoraggia chi batte l'incudine, dicendo della saldatura: \"Va bene\" e fissa l'idolo con chiodi perché non si muova."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "הַֽ/מְסֻכָּ֣ן תְּרוּמָ֔ה עֵ֥ץ לֹֽא יִרְקַ֖ב יִבְחָ֑ר חָרָ֤שׁ חָכָם֙ יְבַקֶּשׁ ל֔/וֹ לְ/הָכִ֥ין פֶּ֖סֶל לֹ֥א יִמּֽוֹט׃",
+        "LXX": "ξύλον γὰρ ἄσηπτον ἐκλέγεται τέκτων, καὶ σοφῶς ζητήσει πῶς στήσει αὐτοῦ εἰκόνα καὶ ἵνα μὴ σαλεύηται.",
+        "VUL": "Forte lignum et imputribile elegit ;/ artifex sapiens quærit/ quomodo statuat simulacrum, quod non moveatur./",
+        "SYN": "А кто беден для такого приношения, выбирает негниющее дерево, приискивает себе искусного художника, чтобы сделать идола, который стоял бы твердо.",
+        "NEO": "Le pauvre, qui ne peut offrir beaucoup, choisit un bois qui ne pourrisse point ; et il va chercher un ouvrier habile, pour faire une idole qui ne branle point.",
+        "NAB": "Mulberry wood, the choice portion which a skilled craftsman picks out for himself, Choosing timber that will not rot, to set up an idol that will not be unsteady?",
+        "VAT_ES": "El que es demasiado pobre para hacer esa ofrenda elige una madera que no se pudra y se busca un hábil artesano para erigir un ídolo que no se tambalee.",
+        "CEI": "Chi ha poco da offrire sceglie un legno che non marcisce; si cerca un artista abile, perché gli faccia una statua che non si muova."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "הֲ/ל֤וֹא תֵֽדְעוּ֙ הֲ/ל֣וֹא תִשְׁמָ֔עוּ הֲ/ל֛וֹא הֻגַּ֥ד מֵ/רֹ֖אשׁ לָ/כֶ֑ם הֲ/לוֹא֙ הֲבִ֣ינֹתֶ֔ם מוֹסְד֖וֹת הָ/אָֽרֶץ׃",
+        "LXX": "οὐ γνώσεσθε; οὐκ ἀκούσεσθε; οὐκ ἀνηγγέλη ἐξ ἀρχῆς ὑμῖν; οὐκ ἔγνωτε τὰ θεμέλια τῆς γῆς;",
+        "VUL": "Numquid non scitis ? numquid non audistis ?/ numquid non annuntiatum est vobis ab initio ?/ numquid non intellexistis fundamenta terræ ?/",
+        "SYN": "Разве не знаете? разве вы не слышали? разве вам не говорено было от начала? разве вы не уразумели из оснований земли?",
+        "NEO": "Ne savez-vous pas ? N’avez-vous pas entendu dire ? Ne vous a-t-on pas annoncé dès le commencement ? N’avez-vous pas appris qui a posé les fondements de la terre ?",
+        "NAB": "Do you not know? Have you not heard? Was it not foretold you from the beginning? Have you not understood? Since the earth was founded",
+        "VAT_ES": "&iquest;No lo saben acaso? &iquest;Nunca lo han escuchado? &iquest;No se les anunció desde el principio? &iquest;No han comprendido cómo se fundó la tierra?",
+        "CEI": "Non lo sapete forse? Non lo avete udito? Non vi fu forse annunziato dal principio? Non avete capito le fondamenta della terra?"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "הַ/יֹּשֵׁב֙ עַל ח֣וּג הָ/אָ֔רֶץ וְ/יֹשְׁבֶ֖י/הָ כַּ/חֲגָבִ֑ים הַ/נּוֹטֶ֤ה כַ/דֹּק֙ שָׁמַ֔יִם וַ/יִּמְתָּחֵ֥/ם כָּ/אֹ֖הֶל לָ/שָֽׁבֶת׃",
+        "LXX": "ὁ κατέχων τὸν γῦρον τῆς γῆς, καὶ οἱ ἐνοικοῦντες ἐν αὐτῇ ὡς ἀκρίδες, ὁ στήσας ὡς καμάραν τὸν οὐρανὸν καὶ διατείνας ὡς σκηνὴν κατοικεῖν,",
+        "VUL": "Qui sedet super gyrum terræ,/ et habitatores ejus sunt quasi locustæ ;/ qui extendit velut nihilum cælos,/ et expandit eos sicut tabernaculum ad inhabitandum ;/",
+        "SYN": "Он есть Тот, Который восседает над кругом земли, и живущие на ней - как саранча _пред Ним;_ Он распростер небеса, как тонкую ткань, и раскинул их, как шатер для жилья.",
+        "NEO": "Il trône par dessus la voûte de la terre, — et ses habitants sont comme des sauterelles ; — il étend les cieux comme un voile, et les déploie comme une tente pour y habiter ;",
+        "NAB": "He sits enthroned above the vault of the earth, and its inhabitants are like grasshoppers; He stretches out the heavens like a veil, spreads them out like a tent to dwell in.",
+        "VAT_ES": "El está sentado sobre la cúpula de la tierra, donde los habitantes son como langostas. El extiende los cielos como un tul, los despliega como una carpa para habitar en ellos.",
+        "CEI": "Egli siede sopra la volta del mondo, da dove gli abitanti sembrano cavallette. Egli stende il cielo come un velo, lo spiega come una tenda dove abitare;"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "הַ/נּוֹתֵ֥ן רוֹזְנִ֖ים לְ/אָ֑יִן שֹׁ֥פְטֵי אֶ֖רֶץ כַּ/תֹּ֥הוּ עָשָֽׂה׃",
+        "LXX": "ὁ διδοὺς ἄρχοντας ὡς οὐδὲν ἄρχειν, τὴν δὲ γῆν ὡς οὐδὲν ἐποίησεν.",
+        "VUL": "qui dat secretorum scrutatores quasi non sint,/ judices terræ velut inane fecit./",
+        "SYN": "Он обращает князей в ничто, делает чем-то пустым судей земли.",
+        "NEO": "Il livre au néant les puissants, et réduit à rien les juges de la terre :",
+        "NAB": "He brings princes to nought and makes the rulers of the earth as nothing.",
+        "VAT_ES": "El aniquila a los soberanos y reduce a nada a los árbitros de la tierra:",
+        "CEI": "egli riduce a nulla i potenti e annienta i signori della terra."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אַ֣ף בַּל נִטָּ֗עוּ אַ֚ף בַּל זֹרָ֔עוּ אַ֛ף בַּל שֹׁרֵ֥שׁ בָּ/אָ֖רֶץ גִּזְעָ֑/ם וְ/גַם נָשַׁ֤ף בָּ/הֶם֙ וַ/יִּבָ֔שׁוּ וּ/סְעָרָ֖ה כַּ/קַּ֥שׁ תִּשָּׂאֵֽ/ם׃",
+        "LXX": "οὐ γὰρ μὴ φυτεύσωσιν οὐδὲ μὴ σπείρωσιν, οὐδὲ μὴ ῥιζωθῇ εἰς τὴν γῆν ἡ ῥίζα αὐτῶν· ἔπνευσεν ἐπ’ αὐτοὺς καὶ ἐξηράνθησαν, καὶ καταιγὶς ὡς φρύγανα λήμψεται αὐτούς.",
+        "VUL": "Et quidem neque plantatus, neque satus,/ neque radicatus in terra truncus eorum ;/ repente flavit in eos, et aruerunt,/ et turbo quasi stipulam auferet eos./",
+        "SYN": "Едва они посажены, едва посеяны, едва укоренился в земле ствол их, и как только Он дохнул на них, они высохли, и вихрь унес их, как солому.",
+        "NEO": "à peine sont-ils plantés, à peine sont-ils semés, à peine leur tronc a-t-il pris racine en terre, il souffle sur eux, et ils sèchent, et l’ouragan les emporte comme le chaume.",
+        "NAB": "Scarcely are they planted or sown, scarcely is their stem rooted in the earth, When he breathes upon them and they wither, and the stormwind carries them away like straw.",
+        "VAT_ES": "apenas plantados, apenas sembrados, apenas su tallo echa raíz en la tierra, él sopla sobre ellos y se secan, y el huracán se los lleva como paja.",
+        "CEI": "Sono appena piantati, appena seminati, appena i loro steli hanno messo radici nella terra, egli soffia su di loro ed essi seccano e l'uragano li strappa via come paglia."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/אֶל מִ֥י תְדַמְּי֖וּ/נִי וְ/אֶשְׁוֶ֑ה יֹאמַ֖ר קָדֽוֹשׁ׃",
+        "LXX": "νῦν οὖν τίνι με ὡμοιώσατε, καὶ ὑψωθήσομαι; εἶπεν ὁ ἅγιος.",
+        "VUL": "Et cui assimilastis me, et adæquastis ?/ dicit Sanctus./",
+        "SYN": "Кому же вы уподобите Меня и с кем сравните? говорит Святый.",
+        "NEO": "A qui donc me comparerez-vous, que je lui sois pareil, dit le Saint ?",
+        "NAB": "To whom can you liken me as an equal? says the Holy One.",
+        "VAT_ES": "«&iquest;A quién me va a asemejar, para que yo me iguale a él?» dice el Santo.",
+        "CEI": "\"A chi potreste paragonarmi quasi che io gli sia pari?\" dice il Santo."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "שְׂאוּ מָר֨וֹם עֵינֵי/כֶ֤ם וּ/רְאוּ֙ מִי בָרָ֣א אֵ֔לֶּה הַ/מּוֹצִ֥יא בְ/מִסְפָּ֖ר צְבָאָ֑/ם לְ/כֻלָּ/ם֙ בְּ/שֵׁ֣ם יִקְרָ֔א מֵ/רֹ֤ב אוֹנִים֙ וְ/אַמִּ֣יץ כֹּ֔חַ אִ֖ישׁ לֹ֥א נֶעְדָּֽר׃",
+        "LXX": "ἀναβλέψατε εἰς ὕψος τοὺς ὀφθαλμοὺς ὑμῶν καὶ ἴδετε· τίς κατέδειξεν πάντα ταῦτα; ὁ ἐκφέρων κατ’ ἀριθμὸν τὸν κόσμον αὐτοῦ, πάντας ἐπ’ ὀνόματι καλέσει ἀπὸ πολλῆς δόξης, καὶ ἐν κράτει ἰσχύος οὐδέν σε ἔλαθεν.",
+        "VUL": "Levate in excelsum oculos vestros, et videte/ quis creavit hæc :/ qui educit in numero militiam eorum,/ et omnes ex nomine vocat ;/ præ multitudine fortitudinis et roboris, virtutisque ejus,/ neque unum reliquum fuit./",
+        "SYN": "Поднимите глаза ваши на высоту _небес_ и посмотрите, кто сотворил их? Кто выводит воинство их счетом? Он всех их называет по имени: по множеству могущества и великой силе у Него ничто не выбывает.",
+        "NEO": "Levez les yeux en haut et regardez : qui a créé ces choses ? Celui qui fait marcher en ordre leur armée, et qui les appelle toutes par leur nom ; et, à cause de la grandeur de sa puissance et de l’énergie de sa force, pas une ne fait défaut.",
+        "NAB": "Lift up your eyes on high and see who has created these: He leads out their army and numbers them, calling them all by name. By his great might and the strength of his power not one of them is missing!",
+        "VAT_ES": "Levanten los ojos a lo alto y miren: &iquest;quién creó todos estos seres? El que hace salir a su ejército uno por uno y los llama a todos por su nombre: &iexcl;su vigor es tan grande, tan firme su fuerza, que no falta ni uno solo!",
+        "CEI": "Levate in alto i vostri occhi e guardate: chi ha creato quegli astri? Egli fa uscire in numero preciso il loro esercito e li chiama tutti per nome; per la sua onnipotenza e il vigore della sua forza non ne manca alcuno."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "לָ֤/מָּה תֹאמַר֙ יַֽעֲקֹ֔ב וּ/תְדַבֵּ֖ר יִשְׂרָאֵ֑ל נִסְתְּרָ֤ה דַרְכִּ/י֙ מֵֽ/יְהוָ֔ה וּ/מֵ/אֱלֹהַ֖/י מִשְׁפָּטִ֥/י יַעֲבֽוֹר׃",
+        "LXX": "Μὴ γὰρ εἴπῃς, Ἰακώβ, καὶ τί ἐλάλησας, Ἰσραήλ Ἀπεκρύβη ἡ ὁδός μου ἀπὸ τοῦ θεοῦ, καὶ ὁ θεός μου τὴν κρίσιν ἀφεῖλεν καὶ ἀπέστη;",
+        "VUL": "Quare dicis, Jacob,/ et loqueris, Israël :/ Abscondita est via mea a Domino,/ et a Deo meo judicium meum transivit ?/",
+        "SYN": "Как же говоришь ты, Иаков, и высказываешь, Израиль: \"путь мой сокрыт от Господа, и дело мое забыто у Бога моего\"?",
+        "NEO": "Pourquoi dis-tu, ô Jacob, et parles-tu ainsi, ô Israël : « Ma voie est cachée à \\+w Yahweh|strong=\"H3068\"\\+w**, et mon droit passe inaperçu devant mon Dieu ? »",
+        "NAB": "Why, O Jacob, do you say, and declare, O Israel, \"My way is hidden from the LORD, and my right is disregarded by my God\"?",
+        "VAT_ES": "&iquest;Por qué dices Jacob, y lo repites tú, Israel: «Al Señor se le oculta mi camino y mi derecho pasa desapercibido a mi Dios?",
+        "CEI": "Perché dici, Giacobbe, e tu, Israele, ripeti: \"La mia sorte è nascosta al Signore e il mio diritto è trascurato dal mio Dio?\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "הֲ/ל֨וֹא יָדַ֜עְתָּ אִם לֹ֣א שָׁמַ֗עְתָּ אֱלֹהֵ֨י עוֹלָ֤ם יְהוָה֙ בּוֹרֵא֙ קְצ֣וֹת הָ/אָ֔רֶץ לֹ֥א יִיעַ֖ף וְ/לֹ֣א יִיגָ֑ע אֵ֥ין חֵ֖קֶר לִ/תְבוּנָתֽ/וֹ׃",
+        "LXX": "καὶ νῦν οὐκ ἔγνως; εἰ μὴ ἤκουσας; θεὸς αἰώνιος, ὁ θεὸς ὁ κατασκευάσας τὰ ἄκρα τῆς γῆς, οὐ πεινάσει οὐδὲ κοπιάσει, οὐδὲ ἔστιν ἐξεύρεσις τῆς φρονήσεως αὐτοῦ,",
+        "VUL": "Numquid nescis, aut non audisti ?/ Deus sempiternus Dominus,/ qui creavit terminos terræ :/ non deficiet, neque laborabit,/ nec est investigatio sapientiæ ejus./",
+        "SYN": "Разве ты не знаешь? разве ты не слышал, что вечный Господь Бог, сотворивший концы земли, не утомляется и не изнемогает? разум Его неисследим.",
+        "NEO": "Ne sais-tu pas, n’as-tu pas entendu ? \\+w Yahweh|strong=\"H3068\"\\+w** est un Dieu éternel, qui a créé les extrémités de la terre, qui ne se fatigue ni ne se lasse, et dont la sagesse est insondable.",
+        "NAB": "Do you not know or have you not heard? The LORD is the eternal God, creator of the ends of the earth. He does not faint nor grow weary, and his knowledge is beyond scrutiny.",
+        "VAT_ES": "&iquest;No lo saber acaso? &iquest;Nunca lo has escuchado? El Señor es un Dios eterno, él crea los confines de la tierra: no se fatiga ni se agota, su inteligencia es inescrutable.",
+        "CEI": "Non lo sai forse? Non lo hai udito? Dio eterno è il Signore, creatore di tutta la terra. Egli non si affatica né si stanca, la sua intelligenza è inscrutabile."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "נֹתֵ֥ן לַ/יָּעֵ֖ף כֹּ֑חַ וּ/לְ/אֵ֥ין אוֹנִ֖ים עָצְמָ֥ה יַרְבֶּֽה׃",
+        "LXX": "διδοὺς τοῖς πεινῶσιν ἰσχὺν καὶ τοῖς μὴ ὀδυνωμένοις λύπην.",
+        "VUL": "Qui dat lasso virtutem,/ et his qui non sunt, fortitudinem et robur multiplicat./",
+        "SYN": "Он дает утомленному силу, и изнемогшему дарует крепость.",
+        "NEO": "Il donne de la force à celui qui est fatigué et redouble la vigueur de celui qui est défaillant.",
+        "NAB": "He gives strength to the fainting; for the weak he makes vigor abound.",
+        "VAT_ES": "El fortalece al que está fatigado y acrecienta la fuerza del que no tiene vigor.",
+        "CEI": "Egli dà forza allo stanco e moltiplica il vigore allo spossato."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/יִֽעֲפ֥וּ נְעָרִ֖ים וְ/יִגָ֑עוּ וּ/בַחוּרִ֖ים כָּשׁ֥וֹל יִכָּשֵֽׁלוּ׃",
+        "LXX": "πεινάσουσιν γὰρ νεώτεροι, καὶ κοπιάσουσιν νεανίσκοι, καὶ ἐκλεκτοὶ ἀνίσχυες ἔσονται·",
+        "VUL": "Deficient pueri, et laborabunt,/ et juvenes in infirmitate cadent ;/",
+        "SYN": "Утомляются и юноши и ослабевают, и молодые люди падают,",
+        "NEO": "Les jeunes gens se fatiguent et se lassent, et les jeunes gens chancellent,",
+        "NAB": "Though young men faint and grow weary, and youths stagger and fall,",
+        "VAT_ES": "Los jóvenes se fatigan y se agotan, los muchachos tropiezan y caen.",
+        "CEI": "Anche i giovani faticano e si stancano, gli adulti inciampano e cadono;"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/קוֹיֵ֤ יְהוָה֙ יַחֲלִ֣יפוּ כֹ֔חַ יַעֲל֥וּ אֵ֖בֶר כַּ/נְּשָׁרִ֑ים יָר֨וּצוּ֙ וְ/לֹ֣א יִיגָ֔עוּ יֵלְכ֖וּ וְ/לֹ֥א יִיעָֽפוּ׃",
+        "LXX": "οἱ δὲ ὑπομένοντες τὸν θεὸν ἀλλάξουσιν ἰσχύν, πτεροφυήσουσιν ὡς ἀετοί, δραμοῦνται καὶ οὐ κοπιάσουσιν, βαδιοῦνται καὶ οὐ πεινάσουσιν.",
+        "VUL": "qui autem sperant in Domino mutabunt fortitudinem,/ assument pennas sicut aquilæ :/ current et non laborabunt,/ ambulabunt et non deficient.]",
+        "SYN": "а надеющиеся на Господа обновятся в силе: поднимут крылья, как орлы, потекут - и не устанут, пойдут - и не утомятся.",
+        "NEO": "Mais ceux qui se confient en \\+w Yahweh|strong=\"H3068\"\\+w** renouvellent leurs forces ; ils élèveront leur vol comme les aigles ; ils courront et ne se fatigueront point ; ils marcheront et ne se lasseront point.",
+        "NAB": "They that hope in the LORD will renew their strength, they will soar as with eagles' wings; They will run and not grow weary, walk and not grow faint.",
+        "VAT_ES": "Pero los que esperan en el Señor renuevan sus fuerzas, despliegan alas como las águilas; corren y no se agotan, avanzan y no se fatigan.",
+        "CEI": "ma quanti sperano nel Signore riacquistano forza, mettono ali come aquile, corrono senza affannarsi, camminano senza stancarsi."
+      }
+    }
+  }
+}

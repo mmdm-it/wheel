@@ -1,0 +1,627 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MATHE_020",
+  "book_key": "MATHE",
+  "sequence": 20,
+  "chapter_in": {
+    "MT": 20,
+    "VUL": 20,
+    "LXX": 20
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "Simile est regnum cælorum homini patrifamilias, qui exiit primo mane conducere operarios in vineam suam.",
+        "LXX": "Ὁμοία γάρ ἐστιν ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ οἰκοδεσπότῃ, ὅστις ἐξῆλθεν ἅμα πρωῒ μισθώσασθαι ἐργάτας εἰς τὸν ἀμπελῶνα αὐτοῦ.",
+        "SYN": "Ибо Царство Небесное подобно хозяину дома, который вышел рано поутру нанять работников в виноградник свой",
+        "BYZ": "Ὁμοία γάρ ἐστιν ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ οἰκοδεσπότῃ, ὅστις ἐξῆλθεν ἅμα πρωῒ μισθώσασθαι ἐργάτας εἰς τὸν ἀμπελῶνα αὐτοῦ.",
+        "NEO": "« Car le royaume des cieux est semblable à un père de famille qui sortit de grand matin afin de louer des ouvriers pour sa vigne.",
+        "NAB": "\"The kingdom of heaven is like a landowner who went out at dawn to hire laborers for his vineyard.",
+        "VAT_ES": "Porque el Reino de los Cielos se parece a un propietario que salió muy de madrugada a contratar obreros para trabajar en su viña.",
+        "CEI": "\"Il regno dei cieli è simile a un padrone di casa che uscì all'alba per prendere a giornata lavoratori per la sua vigna."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "Conventione autem facta cum operariis ex denario diurno, misit eos in vineam suam.",
+        "LXX": "Καὶ συμφωνήσας μετὰ τῶν ἐργατῶν ἐκ δηναρίου τὴν ἡμέραν, ἀπέστειλεν αὐτοὺς εἰς τὸν ἀμπελῶνα αὐτοῦ.",
+        "SYN": "и, договорившись с работниками по динарию на день, послал их в виноградник свой;",
+        "BYZ": "Καὶ συμφωνήσας μετὰ τῶν ἐργατῶν ἐκ δηναρίου τὴν ἡμέραν, ἀπέστειλεν αὐτοὺς εἰς τὸν ἀμπελῶνα αὐτοῦ.",
+        "NEO": "Étant convenu avec les ouvriers d’un denier par jour, il les envoya à sa vigne.",
+        "NAB": "After agreeing with them for the usual daily wage, he sent them into his vineyard.",
+        "VAT_ES": "Trató con ellos un denario por día y los envío a su viña.",
+        "CEI": "Accordatosi con loro per un denaro al giorno, li mandò nella sua vigna."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "Et egressus circa horam tertiam, vidit alios stantes in foro otiosos,",
+        "LXX": "Καὶ ἐξελθὼν περὶ τρίτην ὥραν, εἶδεν ἄλλους ἑστῶτας ἐν τῇ ἀγορᾷ ἀργούς·",
+        "SYN": "выйдя около третьего часа, он увидел других, стоящих на торжище праздно,",
+        "BYZ": "Καὶ ἐξελθὼν περὶ τρίτην ὥραν, εἶδεν ἄλλους ἑστῶτας ἐν τῇ ἀγορᾷ ἀργούς·",
+        "NEO": "Il sortit vers la troisième heure et en vit d’autres qui se tenaient sur la place sans rien faire.",
+        "NAB": "Going out about nine o'clock, he saw others standing idle in the marketplace,",
+        "VAT_ES": "Volvió a salir a media mañana y, al ver a otros desocupados en la plaza,",
+        "CEI": "Uscito poi verso le nove del mattino, ne vide altri che stavano sulla piazza disoccupati"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "et dixit illis : Ite et vos in vineam meam, et quod justum fuerit dabo vobis.",
+        "LXX": "καὶ ἐκείνοις εἶπεν, Ὑπάγετε καὶ ὑμεῖς εἰς τὸν ἀμπελῶνα, καὶ ὃ ἐὰν ᾖ δίκαιον δώσω ὑμῖν.",
+        "SYN": "и им сказал: идите и вы в виноградник мой, и что следовать будет, дам вам. Они пошли.",
+        "BYZ": "καὶ ἐκείνοις εἶπεν, Ὑπάγετε καὶ ὑμεῖς εἰς τὸν ἀμπελῶνα, καὶ ὃ ἐὰν ᾖ δίκαιον δώσω ὑμῖν.",
+        "NEO": "Il leur dit : Allez aussi à ma vigne, et je vous donnerai ce qui sera juste ;",
+        "NAB": "and he said to them, 'You too go into my vineyard, and I will give you what is just.'",
+        "VAT_ES": "les dijo: \"Vayan ustedes también a mi viña y les pagaré lo que sea justo\".",
+        "CEI": "e disse loro: Andate anche voi nella mia vigna; quello che è giusto ve lo darò. Ed essi andarono."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Illi autem abierunt. Iterum autem exiit circa sextam et nonam horam : et fecit similiter.",
+        "LXX": "Οἱ δὲ ἀπῆλθον. Πάλιν ἐξελθὼν περὶ ἕκτην καὶ ἐνάτην ὥραν, ἐποίησεν ὡσαύτως.",
+        "SYN": "Опять выйдя около шестого и девятого часа, сделал то же.",
+        "BYZ": "Οἱ δὲ ἀπῆλθον. Πάλιν ἐξελθὼν περὶ ἕκτην καὶ ἐνάτην ὥραν, ἐποίησεν ὡσαύτως.",
+        "NEO": "et ils y allèrent. Il sortit encore vers la sixième et vers la neuvième heure, et fit la même chose.",
+        "NAB": "So they went off. (And) he went out again around noon, and around three o'clock, and did likewise.",
+        "VAT_ES": "Y ellos fueron. Volvió a salir al mediodía y a media tarde, e hizo lo mismo.",
+        "CEI": "Uscì di nuovo verso mezzogiorno e verso le tre e fece altrettanto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "Circa undecimam vero exiit, et invenit alios stantes, et dicit illis : Quid hic statis tota die otiosi ?",
+        "LXX": "Περὶ δὲ τὴν ἑνδεκάτην ὥραν ἐξελθών, εὗρεν ἄλλους ἑστῶτας ἀργούς, καὶ λέγει αὐτοῖς, Τί ὧδε ἑστήκατε ὅλην τὴν ἡμέραν ἀργοί;",
+        "SYN": "Наконец, выйдя около одиннадцатого часа, он нашел других, стоящих праздно, и говорит им: что вы стоите здесь целый день праздно?",
+        "BYZ": "Περὶ δὲ τὴν ἑνδεκάτην ὥραν ἐξελθών, εὗρεν ἄλλους ἑστῶτας ἀργούς, καὶ λέγει αὐτοῖς, Τί ὧδε ἑστήκατε ὅλην τὴν ἡμέραν ἀργοί;",
+        "NEO": "Enfin, étant sorti vers la onzième heure, il en trouva d’autres qui étaient là oisifs, et il leur dit : Pourquoi vous tenez-vous ici toute la journée sans rien faire ?",
+        "NAB": "Going out about five o'clock, he found others standing around, and said to them, 'Why do you stand here idle all day?'",
+        "VAT_ES": "Al caer la tarde salió de nuevo y, encontrando todavía a otros, les dijo: \"&iquest;Cómo se han quedado todo el día aquí, sin hacer nada?\".",
+        "CEI": "Uscito ancora verso le cinque, ne vide altri che se ne stavano là e disse loro: Perché ve ne state qui tutto il giorno oziosi?"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Dicunt ei : Quia nemo nos conduxit. Dicit illis : Ite et vos in vineam meam.",
+        "LXX": "Λέγουσιν αὐτῷ, Ὅτι οὐδεὶς ἡμᾶς ἐμισθώσατο. Λέγει αὐτοῖς, Ὑπάγετε καὶ ὑμεῖς εἰς τὸν ἀμπελῶνα, καὶ ὃ ἐὰν ᾖ δίκαιον λήψεσθε.",
+        "SYN": "Они говорят ему: никто нас не нанял. Он говорит им: идите и вы в виноградник мой, и что следовать будет, получите.",
+        "BYZ": "Λέγουσιν αὐτῷ, Ὅτι οὐδεὶς ἡμᾶς ἐμισθώσατο. Λέγει αὐτοῖς, Ὑπάγετε καὶ ὑμεῖς εἰς τὸν ἀμπελῶνα, καὶ ὃ ἐὰν ᾖ δίκαιον λήψεσθε.",
+        "NEO": "Ils lui répondirent : C’est que personne ne nous a loués. Il leur dit : Allez, vous aussi, à ma vigne.",
+        "NAB": "They answered, 'Because no one has hired us.' He said to them, 'You too go into my vineyard.'",
+        "VAT_ES": "Ellos les respondieron: \"Nadie nos ha contratado\". Entonces les dijo: \"Vayan también ustedes a mi viña\".",
+        "CEI": "Gli risposero: Perché nessuno ci ha presi a giornata. Ed egli disse loro: Andate anche voi nella mia vigna."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Cum sero autem factum esset, dicit dominus vineæ procuratori suo : Voca operarios, et redde illis mercedem incipiens a novissimis usque ad primos.",
+        "LXX": "Ὀψίας δὲ γενομένης λέγει ὁ κύριος τοῦ ἀμπελῶνος τῷ ἐπιτρόπῳ αὐτοῦ, Κάλεσον τοὺς ἐργάτας, καὶ ἀπόδος αὐτοῖς τὸν μισθόν, ἀρξάμενος ἀπὸ τῶν ἐσχάτων ἕως τῶν πρώτων.",
+        "SYN": "Когда же наступил вечер, говорит господин виноградника управителю своему: позови работников и отдай им плату, начав с последних до первых.",
+        "BYZ": "Ὀψίας δὲ γενομένης λέγει ὁ κύριος τοῦ ἀμπελῶνος τῷ ἐπιτρόπῳ αὐτοῦ, Κάλεσον τοὺς ἐργάτας, καὶ ἀπόδος αὐτοῖς τὸν μισθόν, ἀρξάμενος ἀπὸ τῶν ἐσχάτων ἕως τῶν πρώτων.",
+        "NEO": "Le soir étant venu, le maître de la vigne dit à son intendant : Appelle les ouvriers et paie leur salaire, en allant des derniers aux premiers.",
+        "NAB": "When it was evening the owner of the vineyard said to his foreman, 'Summon the laborers and give them their pay, beginning with the last and ending with the first.'",
+        "VAT_ES": "Al terminar el día, el propietario llamó a su mayordomo y le dijo: \"Llama a los obreros y págales el jornal, comenzando por los últimos y terminando por los primeros\".",
+        "CEI": "Quando fu sera, il padrone della vigna disse al suo fattore: Chiama gli operai e dà loro la paga, incominciando dagli ultimi fino ai primi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "Cum venissent ergo qui circa undecimam horam venerant, acceperunt singulos denarios.",
+        "LXX": "Καὶ ἐλθόντες οἱ περὶ τὴν ἑνδεκάτην ὥραν ἔλαβον ἀνὰ δηνάριον.",
+        "SYN": "И пришедшие около одиннадцатого часа получили по динарию.",
+        "BYZ": "Καὶ ἐλθόντες οἱ περὶ τὴν ἑνδεκάτην ὥραν ἔλαβον ἀνὰ δηνάριον.",
+        "NEO": "Ceux de la onzième heure vinrent et reçurent chacun un denier.+ 20:9 XX, 9. Pour les uns, le denier c’est la vie éternelle, pour d’autres et mieux, la grâce de la foi, de l’entrée dans l’Église ; car au point de vue de la grâce de la foi, la gratuité est absolue, tandis que par rapport à la vie éternelle, le mérite entre en ligne de compte.*",
+        "NAB": "When those who had started about five o'clock came, each received the usual daily wage.",
+        "VAT_ES": "Fueron entonces los que habían llegado al caer la tarde y recibieron cada uno un denario.",
+        "CEI": "Venuti quelli delle cinque del pomeriggio, ricevettero ciascuno un denaro."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Venientes autem et primi, arbitrati sunt quod plus essent accepturi : acceperunt autem et ipsi singulos denarios.",
+        "LXX": "Ἐλθόντες δὲ οἱ πρῶτοι ἐνόμισαν ὅτι πλείονα λήψονται· καὶ ἔλαβον καὶ αὐτοὶ ἀνὰ δηνάριον.",
+        "SYN": "Пришедшие же первыми думали, что они получат больше, но получили и они по динарию;",
+        "BYZ": "Ἐλθόντες δὲ οἱ πρῶτοι ἐνόμισαν ὅτι πλείονα λήψονται· καὶ ἔλαβον καὶ αὐτοὶ ἀνὰ δηνάριον.",
+        "NEO": "Les premiers, venant à leur tour, pensaient qu’ils recevraient davantage ; mais ils reçurent aussi chacun un denier.",
+        "NAB": "So when the first came, they thought that they would receive more, but each of them also got the usual wage.",
+        "VAT_ES": "Llegaron después los primeros, creyendo que iban a recibir algo más, pero recibieron igualmente un denario.",
+        "CEI": "Quando arrivarono i primi, pensavano che avrebbero ricevuto di più. Ma anch'essi ricevettero un denaro per ciascuno."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Et accipientes murmurabant adversus patremfamilias,",
+        "LXX": "Λαβόντες δὲ ἐγόγγυζον κατὰ τοῦ οἰκοδεσπότου,",
+        "SYN": "и, получив, стали роптать на хозяина дома",
+        "BYZ": "Λαβόντες δὲ ἐγόγγυζον κατὰ τοῦ οἰκοδεσπότου,",
+        "NEO": "En le recevant, ils murmuraient contre le père de famille,",
+        "NAB": "And on receiving it they grumbled against the landowner,",
+        "VAT_ES": "Y al recibirlo, protestaban contra el propietario,",
+        "CEI": "Nel ritirarlo però, mormoravano contro il padrone dicendo:"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "dicentes : Hi novissimi una hora fecerunt, et pares illos nobis fecisti, qui portavimus pondus diei, et æstus.",
+        "LXX": "λέγοντες ὅτι Οὗτοι οἱ ἔσχατοι μίαν ὥραν ἐποίησαν, καὶ ἴσους ἡμῖν αὐτοὺς ἐποίησας, τοῖς βαστάσασιν τὸ βάρος τῆς ἡμέρας καὶ τὸν καύσωνα.",
+        "SYN": "и говорили: эти последние работали один час, и ты сравнял их с нами, перенесшими тягость дня и зной.",
+        "BYZ": "λέγοντες ὅτι Οὗτοι οἱ ἔσχατοι μίαν ὥραν ἐποίησαν, καὶ ἴσους ἡμῖν αὐτοὺς ἐποίησας, τοῖς βαστάσασιν τὸ βάρος τῆς ἡμέρας καὶ τὸν καύσωνα.",
+        "NEO": "en disant : Ces derniers n’ont travaillé qu’une heure, et tu leur donnes autant qu’à nous, qui avons porté le poids du jour et de la chaleur.",
+        "NAB": "saying, 'These last ones worked only one hour, and you have made them equal to us, who bore the day's burden and the heat.'",
+        "VAT_ES": "diciendo: \"Estos últimos trabajaron nada más que una hora, y tú les das lo mismo que a nosotros, que hemos soportado el peso del trabajo y el calor durante toda la jornada\".",
+        "CEI": "Questi ultimi hanno lavorato un'ora soltanto e li hai trattati come noi, che abbiamo sopportato il peso della giornata e il caldo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "At ille respondens uni eorum, dixit : Amice, non facio tibi injuriam : nonne ex denario convenisti mecum ?",
+        "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν ἑνὶ αὐτῶν, Ἑταῖρε, οὐκ ἀδικῶ σε· οὐχὶ δηναρίου συνεφώνησάς μοι;",
+        "SYN": "Он же в ответ сказал одному из них: друг! я не обижаю тебя; не за динарий ли ты договорился со мною?",
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν ἑνὶ αὐτῶν, Ἑταῖρε, οὐκ ἀδικῶ σε· οὐχὶ δηναρίου συνεφώνησάς μοι;",
+        "NEO": "Mais le Maître s’adressant à l’un d’eux, répondit : Mon ami, je ne te fais pas d’injustice : n’es-tu pas convenu avec moi d’un denier ?",
+        "NAB": "He said to one of them in reply, 'My friend, I am not cheating you. Did you not agree with me for the usual daily wage?",
+        "VAT_ES": "El propietario respondió a uno de ellos: \"Amigo, no soy injusto contigo, &iquest;acaso no habíamos tratado en un denario?",
+        "CEI": "Ma il padrone, rispondendo a uno di loro, disse: Amico, io non ti faccio torto. Non hai forse convenuto con me per un denaro?"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Tolle quod tuum est, et vade : volo autem et huic novissimo dare sicut et tibi.",
+        "LXX": "Ἆρον τὸ σὸν καὶ ὕπαγε· θέλω δὲ τούτῳ τῷ ἐσχάτῳ δοῦναι ὡς καὶ σοί.",
+        "SYN": "возьми свое и пойди; я же хочу дать этому последнему _то_ _же,_ что и тебе;",
+        "BYZ": "Ἆρον τὸ σὸν καὶ ὕπαγε· θέλω δὲ τούτῳ τῷ ἐσχάτῳ δοῦναι ὡς καὶ σοί.",
+        "NEO": "Prends ce qui te revient, et va-t’en. Pour moi, je veux donner à ce dernier autant qu’à toi.",
+        "NAB": "Take what is yours and go. What if I wish to give this last one the same as you?",
+        "VAT_ES": "Toma lo que es tuyo y vete. Quiero dar a este que llega último lo mismo que a ti.",
+        "CEI": "Prendi il tuo e vattene; ma io voglio dare anche a quest'ultimo quanto a te."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Aut non licet mihi quod volo, facere ? an oculus tuus nequam est, quia ego bonus sum ?",
+        "LXX": "Ἢ οὐκ ἔξεστίν μοι ποιῆσαι ὃ θέλω ἐν τοῖς ἐμοῖς; Εἰ ὁ ὀφθαλμός σου πονηρός ἐστιν, ὅτι ἐγὼ ἀγαθός εἰμι;",
+        "SYN": "разве я не властен в своем делать, что хочу? или глаз твой завистлив оттого, что я добр?",
+        "BYZ": "Ἢ οὐκ ἔξεστίν μοι ποιῆσαι ὃ θέλω ἐν τοῖς ἐμοῖς; Εἰ ὁ ὀφθαλμός σου πονηρός ἐστιν, ὅτι ἐγὼ ἀγαθός εἰμι;",
+        "NEO": "Ne m’est-il pas permis de faire de mon bien ce que je veux ? Et ton œil sera-t-il mauvais parce que je suis bon ?",
+        "NAB": "(Or) am I not free to do as I wish with my own money? Are you envious because I am generous?'",
+        "VAT_ES": "&iquest;No tengo derecho a disponer de mis bienes como me parece? &iquest;Por qué tomas a mal que yo sea bueno?\".",
+        "CEI": "Non posso fare delle mie cose quello che voglio? Oppure tu sei invidioso perché io sono buono?"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "Sic erunt novissimi primi, et primi novissimi. Multi enim sunt vocati, pauci vero electi.",
+        "LXX": "Οὕτως ἔσονται οἱ ἔσχατοι πρῶτοι, καὶ οἱ πρῶτοι ἔσχατοι· πολλοὶ γάρ εἰσιν κλητοί, ὀλίγοι δὲ ἐκλεκτοί.",
+        "SYN": "Так будут последние первыми, и первые последними, ибо много званых, а мало избранных.",
+        "BYZ": "Οὕτως ἔσονται οἱ ἔσχατοι πρῶτοι, καὶ οἱ πρῶτοι ἔσχατοι· πολλοὶ γάρ εἰσιν κλητοί, ὀλίγοι δὲ ἐκλεκτοί.",
+        "NEO": "Ainsi les derniers seront les premiers, et les premiers, les derniers ; car il y a beaucoup d’appelés, mais peu d’élus+ 20:16 16. Beaucoup d’appelés, peu d’élus, cette sentence ne se trouve pas ici dans un nombre de manuscrits grecs et des meilleurs. Il est d’ailleurs difficile de la rattacher à la sentence précédente, au lieu qu’elle vient très bien au chap. xxii, 14, où nous la retrouvons.*. »",
+        "NAB": "Thus, the last will be first, and the first will be last.\"",
+        "VAT_ES": "Así, los últimos serán los primeros y los primeros serán los últimos».",
+        "CEI": "Così gli ultimi saranno primi, e i primi ultimi\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Et ascendens Jesus Jerosolymam, assumpsit duodecim discipulos secreto, et ait illis :",
+        "LXX": "Καὶ ἀναβαίνων ὁ Ἰησοῦς εἰς Ἱεροσόλυμα παρέλαβεν τοὺς δώδεκα μαθητὰς κατ’ ἰδίαν ἐν τῇ ὁδῷ, καὶ εἶπεν αὐτοῖς,",
+        "SYN": "И, восходя в Иерусалим, Иисус дорогою отозвал двенадцать учеников одних, и сказал им:",
+        "BYZ": "Καὶ ἀναβαίνων ὁ Ἰησοῦς εἰς Ἱεροσόλυμα παρέλαβεν τοὺς δώδεκα μαθητὰς κατ’ ἰδίαν ἐν τῇ ὁδῷ, καὶ εἶπεν αὐτοῖς,",
+        "NEO": "Pendant que Jésus montait à Jérusalem, il prit à part les douze disciples et leur dit en chemin :",
+        "NAB": "As Jesus was going up to Jerusalem, he took the twelve (disciples) aside by themselves, and said to them on the way,",
+        "VAT_ES": "Cuando Jesús se dispuso a subir a Jerusalén, llevó consigo sólo a los Doce, y en el camino les dijo:",
+        "CEI": "Mentre saliva a Gerusalemme, Gesù prese in disparte i dodici e lungo la via disse loro:"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Ecce ascendimus Jerosolymam, et Filius hominis tradetur principibus sacerdotum, et scribis, et condemnabunt eum morte,",
+        "LXX": "Ἰδού, ἀναβαίνομεν εἰς Ἱεροσόλυμα, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδοθήσεται τοῖς ἀρχιερεῦσιν καὶ γραμματεῦσιν, καὶ κατακρινοῦσιν αὐτὸν θανάτῳ,",
+        "SYN": "вот, мы восходим в Иерусалим, и Сын Человеческий предан будет первосвященникам и книжникам, и осудят Его на смерть;",
+        "BYZ": "Ἰδού, ἀναβαίνομεν εἰς Ἱεροσόλυμα, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδοθήσεται τοῖς ἀρχιερεῦσιν καὶ γραμματεῦσιν, καὶ κατακρινοῦσιν αὐτὸν θανάτῳ,",
+        "NEO": "« Voici que nous montons à Jérusalem, et le Fils de l’homme sera livré aux Princes des prêtres et aux Scribes. Ils le condamneront à mort,+ 20:18 17. Cf. Marc, x, 32-35 ; Luc, xviii, 31-34.*",
+        "NAB": "\"Behold, we are going up to Jerusalem, and the Son of Man will be handed over to the chief priests and the scribes, and they will condemn him to death,",
+        "VAT_ES": "«Ahora subimos a Jerusalén, donde el Hijo del hombre va a ser entregado a los sumos sacerdotes y a los escribas. Ellos lo condenarán a muerte",
+        "CEI": "\"Ecco, noi stiamo salendo a Gerusalemme e il Figlio dell'uomo sarà consegnato ai sommi sacerdoti e agli scribi, che lo condanneranno a morte"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "et tradent eum gentibus ad illudendum, et flagellandum, et crucifigendum, et tertia die resurget.",
+        "LXX": "καὶ παραδώσουσιν αὐτὸν τοῖς ἔθνεσιν εἰς τὸ ἐμπαῖξαι καὶ μαστιγῶσαι καὶ σταυρῶσαι· καὶ τῇ τρίτῃ ἡμέρᾳ ἀναστήσεται.",
+        "SYN": "и предадут Его язычникам на поругание и биение и распятие; и в третий день воскреснет.",
+        "BYZ": "καὶ παραδώσουσιν αὐτὸν τοῖς ἔθνεσιν εἰς τὸ ἐμπαῖξαι καὶ μαστιγῶσαι καὶ σταυρῶσαι· καὶ τῇ τρίτῃ ἡμέρᾳ ἀναστήσεται.",
+        "NEO": "et le livreront aux Gentils pour être moqué, flagellé et crucifié ; et il ressuscitera le troisième jour. »",
+        "NAB": "and hand him over to the Gentiles to be mocked and scourged and crucified, and he will be raised on the third day.\"",
+        "VAT_ES": "y lo entregarán a los paganos para que sea maltratado, azotado y crucificado, pero al tercer día resucitará».",
+        "CEI": "e lo consegneranno ai pagani perché sia schernito e flagellato e crocifisso; ma il terzo giorno risusciterà\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "Tunc accessit ad eum mater filiorum Zebedæi cum filiis suis, adorans et petens aliquid ab eo.",
+        "LXX": "Τότε προσῆλθεν αὐτῷ ἡ μήτηρ τῶν υἱῶν Ζεβεδαίου μετὰ τῶν υἱῶν αὐτῆς, προσκυνοῦσα καὶ αἰτοῦσά τι παρ’ αὐτοῦ.",
+        "SYN": "Тогда приступила к Нему мать сыновей Зеведеевых с сыновьями своими, кланяясь и чего-то прося у Него.",
+        "BYZ": "¶Τότε προσῆλθεν αὐτῷ ἡ μήτηρ τῶν υἱῶν Ζεβεδαίου μετὰ τῶν υἱῶν αὐτῆς, προσκυνοῦσα καὶ αἰτοῦσά τι παρ’ αὐτοῦ.",
+        "NEO": "Alors la mère des fils de Zébédée s’approcha de Jésus avec ses fils, et se prosterna devant lui pour lui demander quelque chose.",
+        "NAB": "Then the mother of the sons of Zebedee approached him with her sons and did him homage, wishing to ask him for something.",
+        "VAT_ES": "Entonces la madre de los hijos de Zebedeo se acercó a Jesús, junto con sus hijos, y se postró ante él para pedirle algo.",
+        "CEI": "Allora gli si avvicinò la madre dei figli di Zebedèo con i suoi figli, e si prostrò per chiedergli qualcosa."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Qui dixit ei : Quid vis ? Ait illi : Dic ut sedeant hi duo filii mei, unus ad dexteram tuam, et unus ad sinistram in regno tuo.",
+        "LXX": "Ὁ δὲ εἶπεν αὐτῇ, Τί θέλεις; Λέγει αὐτῷ, Εἰπὲ ἵνα καθίσωσιν οὗτοι οἱ δύο υἱοί μου, εἷς ἐκ δεξιῶν σου, καὶ εἷς ἐξ εὐωνύμων σου, ἐν τῇ βασιλείᾳ σου.",
+        "SYN": "Он сказал ей: чего ты хочешь? Она говорит Ему: скажи, чтобы сии два сына мои сели у Тебя один по правую сторону, а другой по левую в Царстве Твоем.",
+        "BYZ": "Ὁ δὲ εἶπεν αὐτῇ, Τί θέλεις; Λέγει αὐτῷ, Εἰπὲ ἵνα καθίσωσιν οὗτοι οἱ δύο υἱοί μου, εἷς ἐκ δεξιῶν σου, καὶ εἷς ἐξ εὐωνύμων σου, ἐν τῇ βασιλείᾳ σου.",
+        "NEO": "Il lui dit : « Que veux-tu ? » Elle répondit : « Ordonne que mes deux fils, que voici, soient assis l’un à ta droite, l’autre à ta gauche, dans ton royaume. »",
+        "NAB": "He said to her, \"What do you wish?\" She answered him, \"Command that these two sons of mine sit, one at your right and the other at your left, in your kingdom.\"",
+        "VAT_ES": "«&iquest;Qué quieres?», le preguntó Jesús. Ella le dijo: «Manda que mis dos hijos se sienten en tu Reino, uno a tu derecha y el otro a tu izquierda».",
+        "CEI": "Egli le disse: \"Che cosa vuoi?\". Gli rispose: \"Dì che questi miei figli siedano uno alla tua destra e uno alla tua sinistra nel tuo regno\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Respondens autem Jesus, dixit : Nescitis quid petatis. Potestis bibere calicem, quem ego bibiturus sum ? Dicunt ei : Possumus.",
+        "LXX": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν, Οὐκ οἴδατε τί αἰτεῖσθε. Δύνασθε πιεῖν τὸ ποτήριον ὃ ἐγὼ μέλλω πίνειν, ἢ τὸ βάπτισμα ὃ ἐγὼ βαπτίζομαι βαπτισθῆναι; Λέγουσιν αὐτῷ, Δυνάμεθα.",
+        "SYN": "Иисус сказал в ответ: не знаете, чего просите. Можете ли пить чашу, которую Я буду пить, или креститься крещением, которым Я крещусь? Они говорят Ему: можем.",
+        "BYZ": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν, Οὐκ οἴδατε τί αἰτεῖσθε. Δύνασθε πιεῖν τὸ ποτήριον ὃ ἐγὼ μέλλω πίνειν, ἢ τὸ βάπτισμα ὃ ἐγὼ βαπτίζομαι βαπτισθῆναι; Λέγουσιν αὐτῷ, Δυνάμεθα.",
+        "NEO": "Jésus leur dit : « Vous ne savez pas ce que vous demandez. Pouvez-vous boire le calice que je dois boire ? — Nous le pouvons », lui dirent-ils.",
+        "NAB": "Jesus said in reply, \"You do not know what you are asking. Can you drink the cup that I am going to drink?\" They said to him, \"We can.\"",
+        "VAT_ES": "«No saben lo que piden», respondió Jesús. «&iquest;Pueden beber el cáliz que yo beberé?». «Podemos», le respondieron.",
+        "CEI": "Rispose Gesù: \"Voi non sapete quello che chiedete. Potete bere il calice che io sto per bere?\". Gli dicono: \"Lo possiamo\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "Ait illis : Calicem quidem meum bibetis : sedere autem ad dexteram meam vel sinistram non est meum dare vobis, sed quibus paratum est a Patre meo.",
+        "LXX": "Καὶ λέγει αὐτοῖς, Τὸ μὲν ποτήριόν μου πίεσθε, καὶ τὸ βάπτισμα ὃ ἐγὼ βαπτίζομαι βαπτισθήσεσθε· τὸ δὲ καθίσαι ἐκ δεξιῶν μου καὶ ἐξ εὐωνύμων μου οὐκ ἔστιν ἐμὸν δοῦναι, ἀλλ’ οἷς ἡτοίμασται ὑπὸ τοῦ πατρός μου.",
+        "SYN": "И говорит им: чашу Мою будете пить, и крещением, которым Я крещусь, будете креститься, но дать сесть у Меня по правую сторону и по левую -- не от Меня _зависит,_ но кому уготовано Отцем Моим.",
+        "BYZ": "Καὶ λέγει αὐτοῖς, Τὸ μὲν ποτήριόν μου πίεσθε, καὶ τὸ βάπτισμα ὃ ἐγὼ βαπτίζομαι βαπτισθήσεσθε· τὸ δὲ καθίσαι ἐκ δεξιῶν μου καὶ ἐξ εὐωνύμων μου οὐκ ἔστιν ἐμὸν δοῦναι, ἀλλ’ οἷς ἡτοίμασται ὑπὸ τοῦ πατρός μου.",
+        "NEO": "Il leur répondit : « Vous boirez en effet mon calice ; quant à être assis à ma droite ou à ma gauche, ce n’est pas à moi de l’accorder ; si ce n’est à ceux à qui mon Père l’a préparé. »",
+        "NAB": "He replied, \"My cup you will indeed drink, but to sit at my right and at my left (, this) is not mine to give but is for those for whom it has been prepared by my Father.\"",
+        "VAT_ES": "«Está bien, les dijo Jesús, ustedes beberán mi cáliz. En cuanto a sentarse a mi derecha o a mi izquierda, no me toca a mí concederlo, sino que esos puestos son para quienes se los ha destinado mi Padre».",
+        "CEI": "Ed egli soggiunse: \"Il mio calice lo berrete; però non sta a me concedere che vi sediate alla mia destra o alla mia sinistra, ma è per coloro per i quali è stato preparato dal Padre mio\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Et audientes decem, indignati sunt de duobus fratribus.",
+        "LXX": "Καὶ ἀκούσαντες οἱ δέκα ἠγανάκτησαν περὶ τῶν δύο ἀδελφῶν.",
+        "SYN": "Услышав _сие,_ _прочие_ десять _учеников_ вознегодовали на двух братьев.",
+        "BYZ": "Καὶ ἀκούσαντες οἱ δέκα ἠγανάκτησαν περὶ τῶν δύο ἀδελφῶν.",
+        "NEO": "Ayant entendu cela, les dix autres furent indignés contre les deux frères.",
+        "NAB": "When the ten heard this, they became indignant at the two brothers.",
+        "VAT_ES": "Al oír esto, los otros diez se indignaron contra los dos hermanos.",
+        "CEI": "Gli altri dieci, udito questo, si sdegnarono con i due fratelli;"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "Jesus autem vocavit eos ad se, et ait : Scitis quia principes gentium dominantur eorum : et qui majores sunt, potestatem exercent in eos.",
+        "LXX": "Ὁ δὲ Ἰησοῦς προσκαλεσάμενος αὐτοὺς εἶπεν, Οἴδατε ὅτι οἱ ἄρχοντες τῶν ἐθνῶν κατακυριεύουσιν αὐτῶν, καὶ οἱ μεγάλοι κατεξουσιάζουσιν αὐτῶν.",
+        "SYN": "Иисус же, подозвав их, сказал: вы знаете, что князья народов господствуют над ними, и вельможи властвуют ими;",
+        "BYZ": "Ὁ δὲ Ἰησοῦς προσκαλεσάμενος αὐτοὺς εἶπεν, Οἴδατε ὅτι οἱ ἄρχοντες τῶν ἐθνῶν κατακυριεύουσιν αὐτῶν, καὶ οἱ μεγάλοι κατεξουσιάζουσιν αὐτῶν.",
+        "NEO": "Mais Jésus les appela et leur dit : « Vous savez que les chefs des nations leur commandent en maîtres, et que les grands exercent l’empire sur elles.",
+        "NAB": "But Jesus summoned them and said, \"You know that the rulers of the Gentiles lord it over them, and the great ones make their authority over them felt.",
+        "VAT_ES": "Pero Jesús los llamó y les dijo: «Ustedes saben que los jefes de las naciones dominan sobre ellas y los poderosos les hacen sentir su autoridad.",
+        "CEI": "ma Gesù, chiamatili a sé, disse: \"I capi delle nazioni, voi lo sapete, dominano su di esse e i grandi esercitano su di esse il potere."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Non ita erit inter vos : sed quicumque voluerit inter vos major fieri, sit vester minister :",
+        "LXX": "Οὐχ οὕτως δὲ ἔσται ἐν ὑμῖν· ἀλλ’ ὃς ἐὰν θέλῃ ἐν ὑμῖν μέγας γενέσθαι ἔσται ὑμῶν διάκονος·",
+        "SYN": "но между вами да не будет так: а кто хочет между вами быть большим, да будет вам слугою;",
+        "BYZ": "Οὐχ οὕτως δὲ ἔσται ἐν ὑμῖν· ἀλλ’ ὃς ἐὰν θέλῃ ἐν ὑμῖν μέγας γενέσθαι ἔσται ὑμῶν διάκονος·",
+        "NEO": "Il n’en sera pas ainsi parmi vous ; mais quiconque veut être grand parmi vous, qu’il se fasse votre serviteur ;",
+        "NAB": "But it shall not be so among you. Rather, whoever wishes to be great among you shall be your servant;",
+        "VAT_ES": "Entre ustedes no debe suceder así. Al contrario, el que quiera ser grande, que se haga servidor de ustedes;",
+        "CEI": "Non così dovrà essere tra voi; ma colui che vorrà diventare grande tra voi, si farà vostro servo,"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "et qui voluerit inter vos primus esse, erit vester servus.",
+        "LXX": "καὶ ὃς ἐὰν θέλῃ ἐν ὑμῖν εἶναι πρῶτος, ἔστω ὑμῶν δοῦλος·",
+        "SYN": "и кто хочет между вами быть первым, да будет вам рабом;",
+        "BYZ": "καὶ ὃς ἐὰν θέλῃ ἐν ὑμῖν εἶναι πρῶτος, ἔστω ὑμῶν δοῦλος·",
+        "NEO": "et quiconque veut être le premier parmi vous, qu’il se fasse votre esclave.",
+        "NAB": "whoever wishes to be first among you shall be your slave.",
+        "VAT_ES": "y el que quiera ser el primero que se haga su esclavo:",
+        "CEI": "e colui che vorrà essere il primo tra voi, si farà vostro schiavo;"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "Sicut Filius hominis non venit ministrari, sed ministrare, et dare animam suam redemptionem pro multis.",
+        "LXX": "ὥσπερ ὁ υἱὸς τοῦ ἀνθρώπου οὐκ ἦλθεν διακονηθῆναι, ἀλλὰ διακονῆσαι, καὶ δοῦναι τὴν ψυχὴν αὐτοῦ λύτρον ἀντὶ πολλῶν.",
+        "SYN": "так как Сын Человеческий не _для_ _того_ пришел, чтобы Ему служили, но чтобы послужить и отдать душу Свою для искупления многих.",
+        "BYZ": "ὥσπερ ὁ υἱὸς τοῦ ἀνθρώπου οὐκ ἦλθεν διακονηθῆναι, ἀλλὰ διακονῆσαι, καὶ δοῦναι τὴν ψυχὴν αὐτοῦ λύτρον ἀντὶ πολλῶν.",
+        "NEO": "C’est ainsi que le Fils de l’homme est venu, non pour être servi, mais pour servir, et donner sa vie pour la rançon de la multitude. »+ 20:28 28. On traduit souvent : Donner sa vie pour la rançon d’un grand nombre ou de plusieurs, et on explique ainsi cette expression : les écrivains du Nouveau Testament, pour exprimer cette pensée, disent tantôt pour tous, tantôt pour un grand nombre, selon qu’ils ont à l’esprit la volonté de Notre-Seigneur de mourir peur tous les hommes, ou bien les hommes qui devaient, par la foi et la charité, s’appliquer en effet le fruit de sa rédemption (S. Jérôme). Il faut cependant remarquer que πολλοὶ \\+qt multi\\+qt*, n’a pas ici le sens restrictif d’un \\+qt grand nombre\\+qt* par rapport au tout, mais la signification de \\+qt la multitude\\+qt*, \\+qt la masse\\+qt* par opposition à \\+qt un seul\\+qt*. Il est souvent l’équivalent de οἱ πολλοὶ, comme dans Is. liii, 11-12 et Ep. Rom. v, 15-16.*",
+        "NAB": "Just so, the Son of Man did not come to be served but to serve and to give his life as a ransom for many.\"",
+        "VAT_ES": "como el Hijo del hombre, que no vino para ser servido, sino para servir y dar su vida en rescate por una multitud».",
+        "CEI": "appunto come il Figlio dell'uomo, che non è venuto per essere servito, ma per servire e dare la sua vita in riscatto per molti\"."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "Et egredientibus illis ab Jericho, secuta est eum turba multa,",
+        "LXX": "Καὶ ἐκπορευομένων αὐτῶν ἀπὸ Ἰεριχώ, ἠκολούθησεν αὐτῷ ὄχλος πολύς.",
+        "SYN": "И когда выходили они из Иерихона, за Ним следовало множество народа.",
+        "BYZ": "¶Καὶ ἐκπορευομένων αὐτῶν ἀπὸ Ἰεριχώ, ἠκολούθησεν αὐτῷ ὄχλος πολύς.",
+        "NEO": "Comme ils sortaient de Jéricho, une grande foule le suivit.+ 20:29 29. Cf. Marc, x, 46-52 ; Luc, xvii, 35-43*",
+        "NAB": "As they left Jericho, a great crowd followed him.",
+        "VAT_ES": "Cuando salieron de Jericó, mucha gente siguió a Jesús.",
+        "CEI": "Mentre uscivano da Gerico, una gran folla seguiva Gesù."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "et ecce duo cæci sedentes secus viam audierunt quia Jesus transiret : et clamaverunt, dicentes : Domine, miserere nostri, fili David.",
+        "LXX": "Καὶ ἰδού, δύο τυφλοὶ καθήμενοι παρὰ τὴν ὁδόν, ἀκούσαντες ὅτι Ἰησοῦς παράγει, ἔκραξαν, λέγοντες, Ἐλέησον ἡμᾶς, κύριε, υἱὸς Δαυίδ.",
+        "SYN": "И вот, двое слепых, сидевшие у дороги, услышав, что Иисус идет мимо, начали кричать: помилуй нас, Господи, Сын Давидов!",
+        "BYZ": "Καὶ ἰδού, δύο τυφλοὶ καθήμενοι παρὰ τὴν ὁδόν, ἀκούσαντες ὅτι Ἰησοῦς παράγει, ἔκραξαν, λέγοντες, Ἐλέησον ἡμᾶς, κύριε, υἱὸς Δαυίδ.",
+        "NEO": "Et voilà que deux aveugles, qui étaient assis sur le bord du chemin, entendant dire que Jésus passait, se mirent à crier : « Seigneur, fils de David, ayez pitié de nous. »",
+        "NAB": "Two blind men were sitting by the roadside, and when they heard that Jesus was passing by, they cried out, \"[Lord,] Son of David, have pity on us!\"",
+        "VAT_ES": "Había dos ciegos sentados al borde del camino y, al enterarse de que pasaba Jesús, comenzaron a gritar: «&iexcl;Señor, Hijo de David, ten piedad de nosotros!».",
+        "CEI": "Ed ecco che due ciechi, seduti lungo la strada, sentendo che passava, si misero a gridare: \"Signore, abbi pietà di noi, figlio di Davide!\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "Turba autem increpabat eos ut tacerent. At illi magis clamabant, dicentes : Domine, miserere nostri, fili David.",
+        "LXX": "Ὁ δὲ ὄχλος ἐπετίμησεν αὐτοῖς ἵνα σιωπήσωσιν. Οἱ δὲ μεῖζον ἔκραζον, λέγοντες, Ἐλέησον ἡμᾶς, κύριε, υἱὸς Δαυίδ.",
+        "SYN": "Народ же заставлял их молчать; но они еще громче стали кричать: помилуй нас, Господи, Сын Давидов!",
+        "BYZ": "Ὁ δὲ ὄχλος ἐπετίμησεν αὐτοῖς ἵνα σιωπήσωσιν. Οἱ δὲ μεῖζον ἔκραζον, λέγοντες, Ἐλέησον ἡμᾶς, κύριε, υἱὸς Δαυίδ.",
+        "NEO": "La foule les gourmandait pour les faire taire ; mais ils criaient plus fort : « Seigneur, fils de David, ayez pitié de nous. »",
+        "NAB": "The crowd warned them to be silent, but they called out all the more, \"Lord, Son of David, have pity on us!\"",
+        "VAT_ES": "La multitud los reprendía para que se callaran, pero ellos gritaban más: «&iexcl;Señor, Hijo de David, ten piedad de nosotros!».",
+        "CEI": "La folla li sgridava perché tacessero; ma essi gridavano ancora più forte: \"Signore, figlio di Davide, abbi pietà di noi!\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "Et stetit Jesus, et vocavit eos, et ait : Quid vultis ut faciam vobis ?",
+        "LXX": "Καὶ στὰς ὁ Ἰησοῦς ἐφώνησεν αὐτούς, καὶ εἶπεν, Τί θέλετε ποιήσω ὑμῖν;",
+        "SYN": "Иисус, остановившись, подозвал их и сказал: чего вы хотите от Меня?",
+        "BYZ": "Καὶ στὰς ὁ Ἰησοῦς ἐφώνησεν αὐτούς, καὶ εἶπεν, Τί θέλετε ποιήσω ὑμῖν;",
+        "NEO": "Jésus, s’étant arrêté, les appela et dit : « Que voulez-vous que je vous fasse ? —",
+        "NAB": "Jesus stopped and called them and said, \"What do you want me to do for you?\"",
+        "VAT_ES": "Jesús se detuvo, los llamó y les preguntó: «&iquest;Qué quieren que haga por ustedes?».",
+        "CEI": "Gesù, fermatosi, li chiamò e disse: \"Che volete che io vi faccia?\"."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "Dicunt illi : Domine, ut aperiantur oculi nostri.",
+        "LXX": "Λέγουσιν αὐτῷ, Κύριε, ἵνα ἀνοιχθῶσιν ἡμῶν οἱ ὀφθαλμοί.",
+        "SYN": "Они говорят Ему: Господи! чтобы открылись глаза наши.",
+        "BYZ": "Λέγουσιν αὐτῷ, Κύριε, ἵνα ἀνοιχθῶσιν ἡμῶν οἱ ὀφθαλμοί.",
+        "NEO": "Seigneur, lui dirent-ils, que nos yeux s’ouvrent. »",
+        "NAB": "They answered him, \"Lord, let our eyes be opened.\"",
+        "VAT_ES": "Ellos le respondieron: «Señor, que se abran nuestros ojos».",
+        "CEI": "Gli risposero: \"Signore, che i nostri occhi si aprano!\"."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Misertus autem eorum Jesus, tetigit oculos eorum. Et confestim viderunt, et secuti sunt eum.",
+        "LXX": "Σπλαγχνισθεὶς δὲ ὁ Ἰησοῦς ἥψατο τῶν ὀφθαλμῶν αὐτῶν· καὶ εὐθέως ἀνέβλεψαν αὐτῶν οἱ ὀφθαλμοί, καὶ ἠκολούθησαν αὐτῷ.",
+        "SYN": "Иисус же, умилосердившись, прикоснулся к глазам их; и тотчас прозрели глаза их, и они пошли за Ним.",
+        "BYZ": "Σπλαγχνισθεὶς δὲ ὁ Ἰησοῦς ἥψατο τῶν ὀφθαλμῶν αὐτῶν· καὶ εὐθέως ἀνέβλεψαν αὐτῶν οἱ ὀφθαλμοί, καὶ ἠκολούθησαν αὐτῷ.",
+        "NEO": "Ému de compassion, Jésus toucha leurs yeux, et aussitôt ils recouvrèrent la vue et le suivirent.",
+        "NAB": "Moved with pity, Jesus touched their eyes. Immediately they received their sight, and followed him.",
+        "VAT_ES": "Jesús se compadeció de ellos y tocó sus ojos. Inmediatamente, recobraron la vista y lo siguieron.",
+        "CEI": "Gesù si commosse, toccò loro gli occhi e subito ricuperarono la vista e lo seguirono."
+      }
+    }
+  }
+}

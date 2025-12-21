@@ -1,0 +1,270 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "AMO_003",
+  "book_key": "AMO",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שִׁמְע֞וּ אֶת הַ/דָּבָ֣ר הַ/זֶּ֗ה אֲשֶׁ֨ר דִּבֶּ֧ר יְהוָ֛ה עֲלֵי/כֶ֖ם בְּנֵ֣י יִשְׂרָאֵ֑ל עַ֚ל כָּל הַ/מִּשְׁפָּחָ֔ה אֲשֶׁ֧ר הֶעֱלֵ֛יתִי מֵ/אֶ֥רֶץ מִצְרַ֖יִם לֵ/אמֹֽר׃",
+        "VUL": "[Audite verbum quod locutus est Dominus super vos, filii Israël,/ super omnem cognationem quam eduxi de terra Ægypti, dicens :/",
+        "SYN": "Слушайте слово сие, которое Господь изрек на вас, сыны Израилевы, на все племя, которое вывел Я из земли Египетской, говоря:",
+        "NEO": "Ecoutez cette parole que \\+w Yahweh|strong=\"H3068\"\\+w** a prononcée sur vous, enfants d’Israël, « sur toute la famille que j’ai fait monter du pays d’Égypte », — en ces termes :",
+        "NAB": "Hear this word, O men of Israel, that the LORD pronounces over you, over the whole family that I brought up from the land of Egypt:",
+        "VAT_ES": "Escuchen esta palabra que el Señor pronuncia contra ustedes, israelitas, contra toda la familia que yo hice subir del país de Egipto:",
+        "CEI": "Ascoltate questa parola che il Signore ha detto riguardo a voi, Israeliti, e riguardo a tutta la stirpe che ho fatto uscire dall'Egitto:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "רַ֚ק אֶתְ/כֶ֣ם יָדַ֔עְתִּי מִ/כֹּ֖ל מִשְׁפְּח֣וֹת הָ/אֲדָמָ֑ה עַל כֵּן֙ אֶפְקֹ֣ד עֲלֵי/כֶ֔ם אֵ֖ת כָּל עֲוֺנֹֽתֵי/כֶֽם׃",
+        "VUL": "Tantummodo vos cognovi ex omnibus cognationibus terræ ;/ idcirco visitabo super vos omnes iniquitates vestras./",
+        "SYN": "только вас признал Я из всех племен земли, потому и взыщу с вас за все беззакония ваши.",
+        "NEO": "Je n’ai connu que vous seuls parmi toutes les familles de la terre ; c’est pourquoi je vous punirai de toutes vos iniquités.",
+        "NAB": "You alone have I favored, more than all the families of the earth; Therefore I will punish you for all your crimes.",
+        "VAT_ES": "Sólo a ustedes los elegí entre todas las familias de la tierra; por eso les haré rendir cuenta de todas sus iniquidades.",
+        "CEI": "\"Soltanto voi ho eletto tra tutte le stirpi della terra; perciò io vi farò scontare tutte le vostre iniquità\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הֲ/יֵלְכ֥וּ שְׁנַ֖יִם יַחְדָּ֑ו בִּלְתִּ֖י אִם נוֹעָֽדוּ׃",
+        "VUL": "Numquid ambulabunt duo pariter,/ nisi convenerit eis ?/",
+        "SYN": "Пойдут ли двое вместе, не сговорившись между собою?",
+        "NEO": "Deux hommes marchent-ils ensemble, sans qu’ils se soient accordés ?",
+        "NAB": "Do two walk together unless they have agreed?",
+        "VAT_ES": "&iquest;Van juntos dos hombres sin haberse puesto de acuerdo?",
+        "CEI": "Camminano forse due uomini insieme senza essersi messi d'accordo?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הֲ/יִשְׁאַ֤ג אַרְיֵה֙ בַּ/יַּ֔עַר וְ/טֶ֖רֶף אֵ֣ין ל֑/וֹ הֲ/יִתֵּ֨ן כְּפִ֤יר קוֹל/וֹ֙ מִ/מְּעֹ֣נָת֔/וֹ בִּלְתִּ֖י אִם לָכָֽד׃",
+        "VUL": "numquid rugiet leo in saltu,/ nisi habuerit prædam ?/ numquid dabit catulus leonis vocem de cubili suo,/ nisi aliquid apprehenderit ?/",
+        "SYN": "Ревет ли лев в лесу, когда нет перед ним добычи? подает ли свой голос львенок из логовища своего, когда он ничего не поймал?",
+        "NEO": "Le lion rugit-il dans la forêt, sans avoir une proie ? Le lionceau fait-il retentir sa voix du fond de sa tanière, sans qu’il ait rien pris ?",
+        "NAB": "Does a lion roar in the forest when it has no prey? Does a young lion cry out from its den unless it has seized something?",
+        "VAT_ES": "&iquest;Ruge el león en la selva sin tener una presa? &iquest;Alza la voz el cachorro desde su guarida sin haber cazado nada?",
+        "CEI": "Ruggisce forse il leone nella foresta, se non ha qualche preda? Il leoncello manda un grido dalla sua tana se non ha preso nulla?"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הֲ/תִפֹּ֤ל צִפּוֹר֙ עַל פַּ֣ח הָ/אָ֔רֶץ וּ/מוֹקֵ֖שׁ אֵ֣ין לָ֑/הּ הֲ/יַֽעֲלֶה פַּח֙ מִן הָ֣/אֲדָמָ֔ה וְ/לָכ֖וֹד לֹ֥א יִלְכּֽוֹד׃",
+        "VUL": "numquid cadet avis in laqueum terræ/ absque aucupe ?/ numquid auferetur laqueus de terra/ antequam quid ceperit ?/",
+        "SYN": "Попадет ли птица в петлю на земле, когда силка нет для нее? Поднимется ли с земли петля, когда ничего не попало в нее?",
+        "NEO": "Le passereau tombe-t-il dans le filet à terre, sans qu’il y ait un appât pour lui ! Le filet se lève-t-il du sol, sans qu’il ait pris quelque chose ?",
+        "NAB": "Is a bird brought to earth by a snare when there is no lure for it? Does a snare spring up from the ground without catching anything?",
+        "VAT_ES": "&iquest;Cae el pájaro a tierra sobre una trampa si no hay un cebo? &iquest;Salta la trampa del suelo sin haber atrapado nada?",
+        "CEI": "Cade forse l'uccello a terra, se non gli è stata tesa un'insidia? Scatta forse la tagliola dal suolo, se non ha preso qualche cosa?"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אִם יִתָּקַ֤ע שׁוֹפָר֙ בְּ/עִ֔יר וְ/עָ֖ם לֹ֣א יֶחֱרָ֑דוּ אִם תִּהְיֶ֤ה רָעָה֙ בְּ/עִ֔יר וַ/יהוָ֖ה לֹ֥א עָשָֽׂה׃",
+        "VUL": "si clanget tuba in civitate,/ et populus non expavescet ?/ si erit malum in civitate,/ quod Dominus non fecerit ?/",
+        "SYN": "Трубит ли в городе труба, - и народ не испугался бы? Бывает ли в городе бедствие, которое не Господь попустил бы?",
+        "NEO": "Sonne-t-on de la trompette dans une ville, sans que le peuple s’épouvante ? Arrive-t-il un malheur dans une ville, sans que \\+w Yahweh|strong=\"H3068\"\\+w** en soit l’auteur ?",
+        "NAB": "If the trumpet sounds in a city, will the people not be frightened? If evil befalls a city, has not the LORD caused it?",
+        "VAT_ES": "&iquest;Suena la trompeta en una ciudad sin que el pueblo se alarme? &iquest;Sucede una desgracia en la ciudad sin que el Señor la provoque?",
+        "CEI": "Risuona forse la tromba nella città, senza che il popolo si metta in allarme? che non sia causata dal Signore?"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּ֣י לֹ֧א יַעֲשֶׂ֛ה אֲדֹנָ֥/י יְהוִ֖ה דָּבָ֑ר כִּ֚י אִם גָּלָ֣ה סוֹד֔/וֹ אֶל עֲבָדָ֖י/ו הַ/נְּבִיאִֽים׃",
+        "VUL": "Quia non facit Dominus Deus verbum,/ nisi revelaverit secretum suum ad servos suos prophetas./",
+        "SYN": "Ибо Господь Бог ничего не делает, не открыв Своей тайны рабам Своим, пророкам.",
+        "NEO": "Car le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** ne fait rien sans qu’il ait révélé son secret à ses serviteurs, les prophètes.",
+        "NAB": "Indeed, the Lord GOD does nothing without revealing his plan to his servants, the prophets.",
+        "VAT_ES": "Porque el Señor no hace nada sin revelar su secreto a sus servidores los profetas.",
+        "CEI": "In verità, il Signore non fa cosa alcuna senza aver rivelato il suo consiglio ai suoi servitori, i profeti."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אַרְיֵ֥ה שָׁאָ֖ג מִ֣י לֹ֣א יִירָ֑א אֲדֹנָ֤/י יְהוִה֙ דִּבֶּ֔ר מִ֖י לֹ֥א יִנָּבֵֽא׃",
+        "VUL": "Leo rugiet, quis non timebit ?/ Dominus Deus locutus est, quis non prophetabit ?/",
+        "SYN": "Лев начал рыкать, - кто не содрогнется? Господь Бог сказал, - кто не будет пророчествовать?",
+        "NEO": "Le lion a rugi : qui ne craindrait ? Le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** a parlé : qui ne prophétiserait ?",
+        "NAB": "The lion roars - who will not be afraid! The Lord GOD speaks - who will not prophesy!",
+        "VAT_ES": "El león ha rugido: &iquest;quién no temerá? El Señor ha hablado: &iquest;quién no profetizará?",
+        "CEI": "Ruggisce il leone: chi mai non trema? Il Signore Dio ha parlato: chi può non profetare?"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הַשְׁמִ֨יעוּ֙ עַל אַרְמְנ֣וֹת בְּ/אַשְׁדּ֔וֹד וְ/עַֽל אַרְמְנ֖וֹת בְּ/אֶ֣רֶץ מִצְרָ֑יִם וְ/אִמְר֗וּ הֵאָֽסְפוּ֙ עַל הָרֵ֣י שֹׁמְר֔וֹן וּ/רְא֞וּ מְהוּמֹ֤ת רַבּוֹת֙ בְּ/תוֹכָ֔/הּ וַ/עֲשׁוּקִ֖ים בְּ/קִרְבָּֽ/הּ׃",
+        "VUL": "Auditum facite in ædibus Azoti,/ et in ædibus terræ Ægypti,/ et dicite : Congregamini super montes Samariæ,/ et videte insanias multas in medio ejus,/ et calumniam patientes in penetralibus ejus./",
+        "SYN": "Провозгласите на кровлях в Азоте и на кровлях в земле Египетской и скажите: соберитесь на горы Самарии и посмотрите на великое бесчинство в ней и на притеснения среди нее.",
+        "NEO": "Faites entendre cette parole sur les palais dans Azot, et sur les palais dans la terre d’Égypte, et dites : Rassemblez-vous sur les montagnes de Samarie, et voyez quels nombreux désordres sont au milieu d’elle, et quelles violences dans son sein.",
+        "NAB": "Proclaim this in the castles of Ashdod, in the castles of the land of Egypt: \"Gather about the mountain of Samaria, and see the great disorders within her, the oppression in her midst.\"",
+        "VAT_ES": "Hagan oír su voz en los palacios de Asiria y en los palacios de Egipto, y digan: Reúnanse en las montañas de Samaría, y vean cuántos desórdenes hay en medio de ella, cuántas opresiones en su interior.",
+        "CEI": "Fatelo udire nei palazzi di Asdòd e nei palazzi del paese d'Egitto e dite: e osservate quanti disordini sono in essa, e quali violenze sono nel suo seno."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא יָדְע֥וּ עֲשׂוֹת נְכֹחָ֖ה נְאֻם יְהוָ֑ה הָ/אֽוֹצְרִ֛ים חָמָ֥ס וָ/שֹׁ֖ד בְּ/אַרְמְנֽוֹתֵי/הֶֽם׃",
+        "VUL": "Et nescierunt facere rectum, dicit Dominus,/ thesaurizantes iniquitatem et rapinas in ædibus suis./",
+        "SYN": "Они не умеют поступать справедливо, говорит Господь: насилием и грабежом собирают сокровища в чертоги свои.",
+        "NEO": "Et ils ne savent pas agir avec droiture, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, eux qui entassent la violence et le pillage dans leurs palais.",
+        "NAB": "For they know not how to do what is right, says the LORD, Storing up in their castles what they have extorted and robbed.",
+        "VAT_ES": "No saben obrar con rectitud –oráculo del Señor– esos que amontonan violencia y devastación en sus palacios.",
+        "CEI": "Non sanno agire con rettitudine, dice il Signore, violenza e rapina accumulano nei loro palazzi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "לָ/כֵ֗ן כֹּ֤ה אָמַר֙ אֲדֹנָ֣/י יְהוִ֔ה צַ֖ר וּ/סְבִ֣יב הָ/אָ֑רֶץ וְ/הוֹרִ֤ד מִמֵּ/ךְ֙ עֻזֵּ֔/ךְ וְ/נָבֹ֖זּוּ אַרְמְנוֹתָֽיִ/ךְ׃",
+        "VUL": "Propterea hæc dicit Dominus Deus :/ Tribulabitur et circuietur terra :/ et detrahetur ex te fortitudo tua,/ et diripientur ædes tuæ./",
+        "SYN": "Посему так говорит Господь Бог: вот неприятель, и притом вокруг всей земли! он низложит могущество твое, и ограблены будут чертоги твои.",
+        "NEO": "C’est pourquoi ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Voici l’ennemi, il enserre le pays ; il te dépouillera de ta force, et tes palais seront pillés.",
+        "NAB": "Therefore, thus says the Lord GOD: An enemy shall surround the land, and strip you of your strength, and pillage your castles,",
+        "VAT_ES": "Por eso, así habla el Señor: El enemigo cercará el país, te despojará de tu poderío y tus palacios serán saqueados.",
+        "CEI": "Perciò così dice il Signore Dio: Il nemico circonderà il paese, sarà abbattuta la tua potenza e i tuoi palazzi saranno saccheggiati."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כֹּה֮ אָמַ֣ר יְהוָה֒ כַּ/אֲשֶׁר֩ יַצִּ֨יל הָ/רֹעֶ֜ה מִ/פִּ֧י הָ/אֲרִ֛י שְׁתֵּ֥י כְרָעַ֖יִם א֣וֹ בְדַל אֹ֑זֶן כֵּ֣ן יִנָּצְל֞וּ בְּנֵ֣י יִשְׂרָאֵ֗ל הַ/יֹּֽשְׁבִים֙ בְּ/שֹׁ֣מְר֔וֹן בִּ/פְאַ֥ת מִטָּ֖ה וּ/בִ/דְמֶ֥שֶׁק עָֽרֶשׂ׃",
+        "VUL": "Hæc dicit Dominus :/ Quomodo si eruat pastor de ore leonis/ duo crura, aut extremum auriculæ,/ sic eruentur filii Israël, qui habitant in Samaria/ in plaga lectuli, et in Damasci grabato./",
+        "SYN": "Так говорит Господь: как _иногда_ пастух исторгает из пасти львиной две голени или часть уха, так спасены будут сыны Израилевы, сидящие в Самарии в углу постели и в Дамаске на ложе.",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Comme le berger arrache de la gueule du lion deux jarrets ou un bout d’oreille, ainsi seront sauvés les enfants d’Israël, qui sont assis à Samarie, au coin d’un divan, sur des coussins de Damas.",
+        "NAB": "Thus says the LORD: As the shepherd snatches from the mouth of the lion a pair of legs or the tip of an ear of his sheep, So the Israelites who dwell in Samaria shall escape with the corner of a couch or a piece of a cot.",
+        "VAT_ES": "Así habla el Señor: Como el pastor arranca de las fauces del león dos patas o la punta de una oreja, así serán sentados en Samaría, en un rincón del diván, sobre un lecho confortable.",
+        "CEI": "Così dice il Signore: Come il pastore strappa dalla bocca del leone due zampe o il lobo d'un orecchio, così scamperanno gli Israeliti che abitano a Samaria su un cantuccio di divano o su una coperta da letto."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "שִׁמְע֥וּ וְ/הָעִ֖ידוּ בְּ/בֵ֣ית יַֽעֲקֹ֑ב נְאֻם אֲדֹנָ֥/י יְהוִ֖ה אֱלֹהֵ֥י הַ/צְּבָאֽוֹת׃",
+        "VUL": "Audite, et contestamini in domo Jacob,/ dicit Dominus Deus exercituum ;/",
+        "SYN": "Слушайте и засвидетельствуйте дому Иакова, говорит Господь Бог, Бог Саваоф.",
+        "NEO": "Écoutez, et attestez ceci dans la maison de Jacob, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu des armées :",
+        "NAB": "Hear and bear witness against the house of Jacob, says the Lord GOD, the God of hosts:",
+        "VAT_ES": "Escuchen y atestig&uuml;en contra la casa de Jacob –oráculo del Señor de los ejércitos–:",
+        "CEI": "Ascoltate e attestatelo nella casa di Giacobbe, dice il Signore Dio, Dio degli eserciti:"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כִּ֗י בְּ/י֛וֹם פָּקְדִ֥/י פִשְׁעֵֽי יִשְׂרָאֵ֖ל עָלָ֑י/ו וּ/פָֽקַדְתִּי֙ עַל מִזְבְּח֣וֹת בֵּֽית אֵ֔ל וְ/נִגְדְּעוּ֙ קַרְנ֣וֹת הַ/מִּזְבֵּ֔חַ וְ/נָפְל֖וּ לָ/אָֽרֶץ׃",
+        "VUL": "quia in die cum visitare cpero prævaricationes Israël,/ super eum visitabo, et super altaria Bethel ;/ et amputabuntur cornua altaris, et cadent in terram./",
+        "SYN": "Ибо в тот день, когда Я взыщу с Израиля за преступления его, взыщу и за жертвенники в Вефиле, и отсечены будут роги алтаря, и падут на землю.",
+        "NEO": "Le jour où je vengerai sur lui les transgressions d’Israël, je vengerai aussi les autels de Béthel ; les cornes de l’autel seront brisées, et elles tomberont à terre.",
+        "NAB": "On the day when I punish Israel for his crimes, I will visit also the altars of Bethel: The horns of the altar shall be broken off and fall to the ground.",
+        "VAT_ES": "El día en que yo castigue a Israel por sus crímenes, castigaré los altares de Betel; los ángulos del altar serán demolidos y caerán por tierra.",
+        "CEI": "Quando farò giustizia dei misfatti d'Israele, io infierirò contro gli altari di Betel; saranno spezzati i corni dell'altare e cadranno a terra."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/הִכֵּיתִ֥י בֵית הַ/חֹ֖רֶף עַל בֵּ֣ית הַ/קָּ֑יִץ וְ/אָבְד֞וּ בָּתֵּ֣י הַ/שֵּׁ֗ן וְ/סָפ֛וּ בָּתִּ֥ים רַבִּ֖ים נְאֻם יְהוָֽה׃",
+        "VUL": "Et percutiam domum hiemalem cum domo æstiva,/ et peribunt domus eburneæ,/ et dissipabuntur ædes multæ,/ dicit Dominus.]",
+        "SYN": "И поражу дом зимний вместе с домом летним, и исчезнут домы с украшениями из слоновой кости, и не станет многих домов, говорит Господь.",
+        "NEO": "Je frapperai la maison d’hiver, avec la maison d’été ; les maisons d’ivoire seront dévastées, et de nombreuses maisons seront détruites, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Then will I strike the winter house and the summer house; The ivory apartments shall be ruined, and their many rooms shall be no more, says the LORD.",
+        "VAT_ES": "Derribaré la casa de invierno junto con la casa de verano; desaparecerán las casas de marfil y las mansiones se derrumbarán –oráculo del Señor–.",
+        "CEI": "Demolirò la casa d'inverno insieme con al sua casa d'estate e andranno in rovina le case d'avorio e scompariranno i grandi palazzi. Oracolo del Signore."
+      }
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "APOC_020",
+  "book_key": "APOC",
+  "sequence": 20,
+  "chapter_in": {
+    "MT": 20,
+    "VUL": 20,
+    "LXX": 20
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Apocalypsis",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Καὶ εἶδον ἄγγελον καταβαίνοντα ἐκ τοῦ οὐρανοῦ, ἔχοντα τὴν κλεῖν τῆς ἀβύσσου, καὶ ἅλυσιν μεγάλην ἐπὶ τὴν χεῖρα αὐτοῦ.",
+        "VUL": "Et vidi angelum descendentem de cælo, habentem clavem abyssi, et catenam magnam in manu sua.",
+        "SYN": "И увидел я Ангела, сходящего с неба, который имел ключ от бездны и большую цепь в руке своей.",
+        "NEO": "Et je vis descendre du ciel un ange qui tenait dans sa main la clef de l’abîme et une grande chaîne ;+ 20:1 XX, 1. Cette vision a pour but de compléter et de terminer l’histoire du dragon, commencée au chap. xii, puis interrompue au début de la dernière persécution, pour laquelle il s’est en quelque sorte substitué la bête et le faux prophète, que nous venons de voir vaincus et châtiés par le Christ, à son second avènement.*",
+        "NAB": "Then I saw an angel come down from heaven, holding in his hand the key to the abyss and a heavy chain.",
+        "VAT_ES": "Después vi un cielo nuevo y una tierra nueva, porque el primer cielo y la primera tierra desaparecieron, y el mar ya no existe más."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Καὶ ἐκράτησεν τὸν δράκοντα, τὸν ὄφιν τὸν ἀρχαῖον, ὅς ἐστιν διάβολος καὶ ὁ Σατανᾶς, ὁ πλανῶν τὴν οἰκουμένην ὅλην, καὶ ἔδησεν αὐτὸν χίλια ἔτη,",
+        "VUL": "Et apprehendit draconem, serpentem antiquum, qui est diabolus, et Satanas, et ligavit eum per annos mille :",
+        "SYN": "Он взял дракона, змия древнего, который есть диавол и сатана, и сковал его на тысячу лет,",
+        "NEO": "il saisit le dragon, le serpent ancien, qui est le diable et Satan, et il l’enchaîna pour mille ans.+ 20:2 2. Mille ans: durée assez longue, mais probablement indéterminée ; elle représente le temps qui doit s’écouler depuis la restriction du pouvoir de Satan, au premier avènement du Sauveur, jusqu’à l’époque où il sera de nouveau déchaîné, peu avant, la fin du monde (v. 3), c’est-à-dire, en définitive, presque toute la durée de l’Église militante.*",
+        "NAB": "He seized the dragon, the ancient serpent, which is the Devil or Satan, and tied it up for a thousand years",
+        "VAT_ES": "Vi la Ciudad santa, la nueva Jerusalén, que descendía del cielo y venía de Dios, embellecida como una novia preparada para recibir a su esposo."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "καὶ ἔβαλεν αὐτὸν εἰς τὴν ἄβυσσον, καὶ ἔκλεισεν καὶ ἐσφράγισεν ἐπάνω αὐτοῦ, ἵνα μὴ πλανᾷ ἔτι τὰ ἔθνη, ἄχρι τελεσθῇ τὰ χίλια ἔτη· καὶ μετὰ ταῦτα δεῖ αὐτὸν λυθῆναι μικρὸν χρόνον.",
+        "VUL": "et misit eum in abyssum, et clausit, et signavit super illum ut non seducat amplius gentes, donec consummentur mille anni : et post hæc oportet illum solvi modico tempore.",
+        "SYN": "и низверг его в бездну, и заключил его, и положил над ним печать, дабы не прельщал уже народы, доколе не окончится тысяча лет; после же сего ему должно быть освобожденным на малое время.",
+        "NEO": "Et il le jeta dans l’abîme, qu’il ferma à clef et scella sur lui, afin qu’il ne séduisit plus les nations, jusqu’à ce que les mille ans fussent écoulés. Après cela, il doit être délié pour un peu de temps.",
+        "NAB": "and threw it into the abyss, which he locked over it and sealed, so that it could no longer lead the nations astray until the thousand years are completed. After this, it is to be released for a short time.",
+        "VAT_ES": "Y oí una voz potente que decía desde el trono: «Esta es la morada de Dios entre los hombres: él habitará con ellos, ellos serán su pueblo, y el mismo Dios estará con ellos."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "¶Καὶ εἶδον θρόνους, καὶ ἐκάθισαν ἐπ’ αὐτούς, καὶ κρίμα ἐδόθη αὐτοῖς· καὶ τὰς ψυχὰς τῶν πεπελεκισμένων διὰ τὴν μαρτυρίαν Ἰησοῦ, καὶ διὰ τὸν λόγον τοῦ θεοῦ, καὶ οἵτινες οὐ προσεκύνησαν τὸ θηρίον, οὐδὲ τὴν εἰκόνα αὐτοῦ, καὶ οὐκ ἔλαβον τὸ χάραγμα ἐπὶ τὸ μέτωπον, καὶ ἐπὶ τὴν χεῖρα αὐτῶν· καὶ ἔζησαν, καὶ ἐβασίλευσαν μετὰ τοῦ χριστοῦ τὰ χίλια ἔτη.",
+        "VUL": "Et vidi sedes, et sederunt super eas, et judicium datum est illis : et animas decollatorum propter testimonium Jesu, et propter verbum Dei, et qui non adoraverunt bestiam, neque imaginem ejus, nec acceperunt caracterem ejus in frontibus, aut in manibus suis, et vixerunt, et regnaverunt cum Christo mille annis.",
+        "SYN": "И увидел я престолы и сидящих на них, которым дано было судить, и души обезглавленных за свидетельство Иисуса и за слово Божие, которые не поклонились зверю, ни образу его, и не приняли начертания на чело свое и на руку свою. Они ожили и царствовали со Христом тысячу лет.",
+        "NEO": "Puis je vis, des trônes, où s’assirent des personnes à qui le pouvoir de juger fut donné, et je vis* les âmes de ceux qui avaient été décapités à cause du témoignage de Jésus et à cause de la parole de Dieu, et ceux qui n’avaient point adoré la bête ni son image, et qui n’avaient pas reçu sa marque sur leur front et sur leur main. Ils eurent la vie, et régnèrent avec le Christ pendant [les] mille ans.+ 20:4 4. Ils s’y assirent, etc. La phrase est coupée par une parenthèse ; avant de nous dire quels étaient les personnages, il nous les dépeint, comme il les aperçut lui-même, prenant possession de leurs trônes et de leur pouvoir de juges (I Cor. vi, 2 sv.). — \\+qt Les mille ans\\+qt* : l’article \\+qt les\\+qt* manque dans plusieurs manuscrits grecs, mais il est suffisamment appuyé par les textes grecs et la version syriaque ; d’ailleurs, le contexte suffit à prouver qu’il n’est question, dans tout ce passage, que d’une seule et même période millénaire.*",
+        "NAB": "Then I saw thrones; those who sat on them were entrusted with judgment. I also saw the souls of those who had been beheaded for their witness to Jesus and for the word of God, and who had not worshiped the beast or its image nor had accepted its mark on their foreheads or hands. They came to life and they reigned with Christ for a thousand years.",
+        "VAT_ES": "El secará todas sus lágrimas, y no habrá más muerte, ni pena, ni queja, ni dolor, porque todo lo de antes pasó»."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Καὶ οἱ λοιποὶ τῶν νεκρῶν οὐκ ἔζησαν ἄχρι τελεσθῇ τὰ χίλια ἔτη. Αὕτη ἡ ἀνάστασις ἡ πρώτη.",
+        "VUL": "Ceteri mortuorum non vixerunt, donec consummentur mille anni. Hæc est resurrectio prima.",
+        "SYN": "Прочие же из умерших не ожили, доколе не окончится тысяча лет. Это -- первое воскресение.",
+        "NEO": "Mais les autres morts n’eurent point la vie, jusqu’à ce que les mille ans fussent écoulés. — C’est la première résurrection !+ 20:5 5. La première résurrection: c’est-à-dire, selon la manière de parler des Juifs à cette époque, la première phase de la \\+qt vie éternelle\\+qt*.* —",
+        "NAB": "The rest of the dead did not come to life until the thousand years were over. This is the first resurrection.",
+        "VAT_ES": "Y el que estaba sentado en el trono dijo: «Yo hago nuevas todas las cosas». Y agregó: «Escribe que estas palabras son verdaderas y dignas de crédito."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Μακάριος καὶ ἅγιος ὁ ἔχων μέρος ἐν τῇ ἀναστάσει τῇ πρώτῃ· ἐπὶ τούτων ὁ δεύτερος θάνατος οὐκ ἔχει ἐξουσίαν, ἀλλ’ ἔσονται ἱερεῖς τοῦ θεοῦ καὶ τοῦ χριστοῦ, καὶ βασιλεύσουσιν μετ’ αὐτοῦ χίλια ἔτη.",
+        "VUL": "Beatus, et sanctus, qui habet partem in resurrectione prima : in his secunda mors non habet potestatem : sed erunt sacerdotes Dei et Christi, et regnabunt cum illo mille annis.",
+        "SYN": "Блажен и свят имеющий участие в воскресении первом: над ними смерть вторая не имеет власти, но они будут священниками Бога и Христа и будут царствовать с Ним тысячу лет.",
+        "NEO": "Heureux et saint celui qui a part à la première résurrection ! La seconde mort n’a point de pouvoir sur eux ; ils seront prêtres de Dieu et du Christ, et ils régneront avec lui pendant mille ans.",
+        "NAB": "Blessed and holy is the one who shares in the first resurrection. The second death has no power over these; they will be priests of God and of Christ, and they will reign with him for (the) thousand years.",
+        "VAT_ES": "&iexcl;Ya está! Yo soy el Alfa y la Omega, el Principio y el Fin. Al que tiene sed, yo le daré de beber gratuitamente de la fuente del agua de la vida."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "¶Καὶ ὅταν τελεσθῇ τὰ χίλια ἔτη, λυθήσεται ὁ Σατανᾶς ἐκ τῆς φυλακῆς αὐτοῦ,",
+        "VUL": "Et cum consummati fuerint mille anni, solvetur Satanas de carcere suo, et exibit, et seducet gentes, quæ sunt super quatuor angulos terræ, Gog, et Magog, et congregabit eos in prælium, quorum numerus est sicut arena maris.",
+        "SYN": "Когда же окончится тысяча лет, сатана будет освобожден из темницы своей и выйдет обольщать народы, находящиеся на четырех углах земли, Гога и Магога, и собирать их на брань; число их как песок морской.",
+        "NEO": "Quand les mille ans seront accomplis, Satan sera relâché de sa prison, et il en sortira pour séduire les nations qui sont aux quatre extrémités de la terre, Gog et Magog,+ 20:7 7. Gog et Magog: ces deux noms sont placés ici comme par parenthèse, pour nous rappeler que cette dernière conspiration des nations impies contre l’Église, le peuple de Dieu, a déjà été annoncée et allégoriquement décrite par Ézéchiel, sous la figure d’une invasion terrible de Gog, du pays de Magog, venant surprendre le pays d’Israël, à la tête d’une armée innombrable, formée de diverses nations. En effet, les chap, xxxviii et xxxix d’Ézéchiel ne sont que le développement allégorique des faits rapportés ici et au chap, xix, 17 sv. — \\+qt Les rassembler\\+qt*, pour la bataille d’Armagédon, comme il est dit xvi, 13 sv. et encore xix, 19.* afin de les rassembler pour le combat : leur nombre est comme le sable de la mer.",
+        "NAB": "When the thousand years are completed, Satan will be released from his prison.",
+        "VAT_ES": "El vencedor heredará estas cosas, y yo seré su Dios y él será mi hijo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "καὶ ἐξελεύσεται πλανῆσαι τὰ ἔθνη τὰ ἐν ταῖς τέσσαρσιν γωνίαις τῆς γῆς, τὸν Γὼγ καὶ τὸν Μαγώγ, συναγαγεῖν αὐτοὺς εἰς τὸν πόλεμον· ὧν ὁ ἀριθμὸς ὡς ἡ ἄμμος τῆς θαλάσσης.",
+        "VUL": "Et ascenderunt super latitudinem terræ, et circuierunt castra sanctorum, et civitatem dilectam.",
+        "SYN": "И вышли на широту земли, и окружили стан святых и город возлюбленный.",
+        "NEO": "Elles montèrent sur la surface de la terre, et elles cernèrent le camp des saints et la ville bien-aimée ;",
+        "NAB": "He will go out to deceive the nations at the four corners of the earth, Gog and Magog, to gather them for battle; their number is like the sand of the sea.",
+        "VAT_ES": "Pero los cobardes, los incrédulos, los depravados, los asesinos, los lujuriosos, los hechiceros, los idólatras y todos los falsos, tendrán su herencia en el estanque de azufre ardiente, que es la segunda muerte»."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Καὶ ἀνέβησαν ἐπὶ τὸ πλάτος τῆς γῆς, καὶ ἐκύκλωσαν τὴν παρεμβολὴν τῶν ἁγίων καὶ τὴν πόλιν τὴν ἠγαπημένην· καὶ κατέβη πῦρ ἐκ τοῦ οὐρανοῦ ἀπὸ τοῦ θεοῦ, καὶ κατέφαγεν αὐτούς.",
+        "VUL": "Et descendit ignis a Deo de cælo, et devoravit eos : et diabolus, qui seducebat eos, missus est in stagnum ignis, et sulphuris, ubi et bestia",
+        "SYN": "И ниспал огонь с неба от Бога и пожрал их;",
+        "NEO": "mais Dieu fit tomber un feu du ciel qui les dévora. Et le diable, leur séducteur, fut jeté dans l’étang de feu et de soufre, où sont la bête",
+        "NAB": "They invaded the breadth of the earth and surrounded the camp of the holy ones and the beloved city. But fire came down from heaven and consumed them.",
+        "VAT_ES": "Luego se acercó uno de los siete Angeles que tenían las siete copas llenas de las siete últimas plagas, y me dijo: «Ven que te mostraré a la novia, a la esposa del Cordero»."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Καὶ ὁ διάβολος ὁ πλανῶν αὐτοὺς ἐβλήθη εἰς τὴν λίμνην τοῦ πυρὸς καὶ θείου, ὅπου καὶ τὸ θηρίον καὶ ὁ ψευδοπροφήτης· καὶ βασανισθήσονται ἡμέρας καὶ νυκτὸς εἰς τοὺς αἰῶνας τῶν αἰώνων.",
+        "VUL": "et pseudopropheta cruciabuntur die ac nocte in sæcula sæculorum.",
+        "SYN": "а диавол, прельщавший их, ввержен в озеро огненное и серное, где зверь и лжепророк, и будут мучиться день и ночь во веки веков.",
+        "NEO": "et le faux prophète, et ils seront tourmentés jour et nuit aux siècles des siècles.",
+        "NAB": "The Devil who had led them astray was thrown into the pool of fire and sulfur, where the beast and the false prophet were. There they will be tormented day and night forever and ever.",
+        "VAT_ES": "Me llevó en espíritu a una montaña de enorme altura, y me mostró la Ciudad santa, Jerusalén, que descendía del cielo y venía de Dios."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "¶Καὶ εἶδον θρόνον μέγαν λευκόν, καὶ τὸν καθήμενον ἐπ’ αὐτόν, οὗ ἀπὸ προσώπου ἔφυγεν ἡ γῆ καὶ ὁ οὐρανός, καὶ τόπος οὐχ εὑρέθη αὐτοῖς.",
+        "VUL": "Et vidi thronum magnum candidum, et sedentem super eum, a cujus conspectu fugit terra, et cælum, et locus non est inventus eis.",
+        "SYN": "И увидел я великий белый престол и Сидящего на нем, от лица Которого бежало небо и земля, и не нашлось им места.",
+        "NEO": "Puis je vis un grand trône éclatant de lumière et Celui qui était assis dessus : devant sa face la terre et le ciel s’enfuirent et il ne fut plus trouvé de place pour eux.",
+        "NAB": "Next I saw a large white throne and the one who was sitting on it. The earth and the sky fled from his presence and there was no place for them.",
+        "VAT_ES": "La gloria de Dios estaba en ella y resplandecía como la más preciosa de las perlas, como una piedra de jaspe cristalino."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Καὶ εἶδον τοὺς νεκρούς, τοὺς μεγάλους καὶ τοὺς μικρούς, ἑστῶτας ἐνώπιον τοῦ θρόνου, καὶ βιβλία ἠνεῴχθησαν· καὶ ἄλλο βιβλίον ἠνεῴχθη, ὅ ἐστιν τῆς ζωῆς· καὶ ἐκρίθησαν οἱ νεκροὶ ἐκ τῶν γεγραμμένων ἐν τοῖς βιβλίοις, κατὰ τὰ ἔργα αὐτῶν.",
+        "VUL": "Et vidi mortuos, magnos et pusillos, stantes in conspectu throni, et libri aperti sunt : et alius liber apertus est, qui est vitæ : et judicati sunt mortui ex his, quæ scripta erant in libris, secundum opera ipsorum :",
+        "SYN": "И увидел я мертвых, малых и великих, стоящих пред Богом, и книги раскрыты были, и иная книга раскрыта, которая есть книга жизни; и судимы были мертвые по написанному в книгах, сообразно с делами своими.",
+        "NEO": "Et je vis les morts, grands et petits, debout devant le trône. Des livres furent ouverts ; on ouvrit encore un autre livre, qui est le livre de la vie ; et les morts furent jugés, d’après ce qui était écrit dans ces livres, selon leurs œuvres.",
+        "NAB": "I saw the dead, the great and the lowly, standing before the throne, and scrolls were opened. Then another scroll was opened, the book of life. The dead were judged according to their deeds, by what was written in the scrolls.",
+        "VAT_ES": "Estaba rodeada por una muralla de gran altura que tenía doce puertas: sobre ellas había doce ángeles y estaban escritos los nombres de las doce tribus de Israel."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Καὶ ἔδωκεν ἡ θάλασσα τοὺς νεκροὺς τοὺς ἐν αὐτῇ, καὶ ὁ Θάνατος καὶ ὁ ᾍδης ἔδωκαν τοὺς νεκροὺς τοὺς ἐν αὐτοῖς· καὶ ἐκρίθησαν ἕκαστος κατὰ τὰ ἔργα αὐτῶν.",
+        "VUL": "et dedit mare mortuos, qui in eo erant : et mors et infernus dederunt mortuos suos, qui in ipsis erant : et judicatum est de singulis secundum opera ipsorum.",
+        "SYN": "Тогда отдало море мертвых, бывших в нем, и смерть и ад отдали мертвых, которые были в них; и судим был каждый по делам своим.",
+        "NEO": "La mer rendit ses morts ; la Mort et l’Enfer rendirent les leurs ; et ils furent jugés chacun selon ses œuvres.",
+        "NAB": "The sea gave up its dead; then Death and Hades gave up their dead. All the dead were judged according to their deeds.",
+        "VAT_ES": "Tres puertas miraban al este, otras tres al norte, tres al sur, y tres al oeste."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Καὶ ὁ Θάνατος καὶ ὁ ᾍδης ἐβλήθησαν εἰς τὴν λίμνην τοῦ πυρός· οὗτος ὁ θάνατος ὁ δεύτερός ἐστιν, ἡ λίμνη τοῦ πυρός.",
+        "VUL": "Et infernus et mors missi sunt in stagnum ignis. Hæc est mors secunda.",
+        "SYN": "И смерть и ад повержены в озеро огненное. Это смерть вторая.",
+        "NEO": "Puis la Mort et l’Enfer furent jetés dans l’étang de feu : — c’est la seconde mort, l’étang de feu.",
+        "NAB": "Then Death and Hades were thrown into the pool of fire. (This pool of fire is the second death. )",
+        "VAT_ES": "La muralla de la Ciudad se asentaba sobre doce cimientos, y cada uno de ellos tenía el nombre de uno de los doce Apóstoles del Cordero."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Καὶ εἴ τις οὐχ εὑρέθη ἐν τῷ βιβλίῳ τῆς ζωῆς γεγραμμένος, ἐβλήθη εἰς τὴν λίμνην τοῦ πυρός.",
+        "VUL": "Et qui non inventus est in libro vitæ scriptus, missus est in stagnum ignis.",
+        "SYN": "И кто не был записан в книге жизни, тот был брошен в озеро огненное.",
+        "NEO": "Quiconque ne fut pas trouvé inscrit dans le livre de la vie fut jeté dans l’étang de feu.",
+        "NAB": "Anyone whose name was not found written in the book of life was thrown into the pool of fire.",
+        "VAT_ES": "El que me estaba hablando tenía una vara de oro para medir la Ciudad, sus puertos y su muralla."
+      }
+    }
+  }
+}

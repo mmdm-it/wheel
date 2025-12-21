@@ -1,0 +1,207 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "TOBI_010",
+  "book_key": "TOBI",
+  "sequence": 10,
+  "chapter_in": {
+    "MT": 10,
+    "VUL": 10,
+    "LXX": 10
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Καὶ Τωβεὶτ ὁ πατὴρ αὐτοῦ ἐλογίσατο ἑκάστης ἡμέρας· καὶ ὡς ἐπληρώθησαν αἱ ἡμέραι τῆς πορείας καὶ οὐκ ἤρχετο,",
+        "VUL": "Cum vero moras faceret Tobias, causa nuptiarum, sollicitus erat pater ejus Tobias, dicens : Putas quare moratur filius meus, aut quare detentus est ibi ?",
+        "SYN": "Товит, отец его, считал каждый день. И когда исполнились дни путешествия, а он не приходил,",
+        "NEO": "Pendant ce temps, Tobit comptait chaque jour les jours nécessaires pour le voyage aller et le voyage retour. Le nombre complet passait, et son fils n’était toujours pas revenu.",
+        "NAB": "Meanwhile, day by day, Tobit was keeping track of the time Tobiah would need to go and to return. When the number of days was reached and his son did not appear,",
+        "VAT_ES": "Mientras tanto, Tobit contaba uno por uno los días que debía durar el viaje de ida y vuelta. Cuando se cumplió el plazo, sin que su hijo hubiera vuelto,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "εἶπεν Μή ποτε κατῄσχυνται; ἢ μή ποτε ἀπέθανεν Γαβαήλ, καὶ οὐδεὶς δίδωσιν αὐτῷ τὸ ἀργύριον;",
+        "VUL": "Putasne Gabelus mortuus est, et nemo reddet illi pecuniam ?",
+        "SYN": "Товит сказал: не задержали ли их? или не умер ли Гаваил, и некому отдать им серебра?",
+        "NEO": "Il se dit alors : « J’espère qu’il n’a pas été retenu là-bas ! J’espère que Gabaël n’est pas mort. Il n’y a peut-être personne pour lui remettre l’argent. »",
+        "NAB": "he said, \"I wonder what has happened. Perhaps he has been detained there; or perhaps Gabael is dead, and there is no one to give him the money.\"",
+        "VAT_ES": "pensó: «&iquest;Lo habrán retenido allí? A lo mejor, ha muerto Gabael y no hay nadie que le entregue el dinero»."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "καὶ ἐλυπεῖτο λίαν.",
+        "VUL": "Cpit autem contristari nimis ipse, et Anna uxor ejus cum eo : et cperunt ambo simul flere, eo quod die statuto minime reverteretur filius eorum ad eos.",
+        "SYN": "И очень печалился.",
+        "NEO": "Et il commença à s’inquiéter.",
+        "NAB": "And he began to worry.",
+        "VAT_ES": "Y comenzó a preocuparse."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "εἶπεν δὲ αὐτῷ ἡ γυνή Ἀπώλετο τὸ παιδίον, διότι κεχρόνικεν· καὶ ἤρξατο θρηνεῖν αὐτὸν καὶ εἶπεν",
+        "VUL": "Flebat igitur mater ejus irremediabilibus lacrimis, atque dicebat : Heu, heu me, fili mi ! ut quid te misimus peregrinari, lumen oculorum nostrorum, baculum senectutis nostræ, solatium vitæ nostræ, spem posteritatis nostræ ?",
+        "SYN": "Жена же его сказала ему: погиб сын наш, потому и не приходит. И начала плакать по нем и говорила:",
+        "NEO": "Anna, sa femme, ne cessait de dire : « Mon enfant est mort ! Il n’est plus parmi les vivants. Et elle se mit à pleurer et à se lamenter sur son fils. Elle ne cessait de dire,",
+        "NAB": "His wife Anna said, \"My son has perished and is no longer among the living!\" And she began to weep aloud and to wail over her son:",
+        "VAT_ES": "Ana, su mujer, decía: «&iexcl;Mi hijo ha muerto, ya no está entre los vivos!». Y se puso a llorar y a lamentarse por su hijo, diciendo:"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "Οὐ μέλει μοι, τέκνον, ὅτι ἀφῆκά σε τὸ φῶς τῶν ὀφθαλμῶν μου;",
+        "VUL": "omnia simul in te uno habentes, te non debuimus dimittere a nobis.",
+        "SYN": "ничто не занимает меня, сын мой, потому что я отпустила тебя, свет очей моих!",
+        "NEO": "« Quel malheur ! Je n’aurais jamais dû te laisser me quitter, mon enfant, toi, la lumière de mes yeux ».",
+        "NAB": "\"Alas, my child, light of my eyes, that I let you make this journey!\"",
+        "VAT_ES": "«&iexcl;Qué desgracia, hijo mío! Yo te dejé ir, a ti, la luz de mis ojos!»."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "καὶ Τωβεὶτ λέγει αὐτῇ Σίγα, μὴ λόγον ἔχε, ὑγιαίνει.",
+        "VUL": "Cui dicebat Tobias : Tace, et noli turbari : sanus est filius noster : satis fidelis est vir ille, cum quo misimus eum.",
+        "SYN": "Товит говорит ей: молчи, не тревожься, он здоров.",
+        "NEO": "Et Tobit répondait : « Du calme, ma sœur ! Ne t’inquiète pas. Tout va bien pour lui. Il s’est passé quelque chose là-bas pour les retarder. Son compagnon est quelqu’un en qui nous pouvons avoir confiance, un de nos proches en plus. Ne perds pas courage, ma sœur. Il sera bientôt là. »",
+        "NAB": "But Tobit kept telling her: \"Hush, do not think about it, my love; he is safe! Probably they have to take care of some unexpected business there. The man who is traveling with him is trustworthy, and is one of our own kinsmen. So do not worry over him, my love. He will be here soon.\"",
+        "VAT_ES": "Tobit le decía: «&iexcl;Tranquilízate, hermana, no pienses eso! El está bien. Habrán tenido algún contratiempo. Su compañero es persona de confianza, es uno de nuestros hermanos. No te preocupes por él. Llegará de un momento a otro»."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτῷ Σίγα, μὴ πλάνα με· ἀπώλετο τὸ παιδίον μου. καὶ ἐπορεύετο καθ’ ἡμέραν εἰς τὴν ὁδὸν ἔξω οἵας ἀπῆλθεν, ἡμέρας τε ἄρτον οὐκ ἤσθιεν, τὰς δὲ νύκτας οὐ διελίμπανεν θρηνοῦσα Τωβείαν τὸν υἱὸν αὐτῆς, ἕως οὗ συνετελέσθησαν αἱ δέκα τέσσαρες ἡμέραι τοῦ γάμου ἃς ὤμοσεν Ῥαγουὴλ ποιῆσαι αὐτὸν ἐκεῖ. Εἶπεν δὲ Τωβείας τῷ Ῥαγουήλ Ἐξαπόστειλόν με, ὅτι ὁ πατήρ μου καὶ ἡ μήτηρ μου οὐκέτι ἐλπίζουσιν ὄψεσθαί με.",
+        "VUL": "Illa autem nullo modo consolari poterat, sed quotidie exiliens circumspiciebat, et circuibat vias omnes per quas spes remeandi videbatur, ut procul videret eum, si fieri posset, venientem.",
+        "SYN": "А она сказала ему: молчи ты, не обманывай меня; погибло детище мое. - И ежедневно ходила за город на дорогу, по которой они отправились; днем не ела хлеба, а по ночам не переставала плакать о сыне своем Товии, пока не окончились четырнадцать дней брачного пира, которые Рагуил заклял его провести там. Тогда Товия сказал Рагуилу: отпусти меня, потому что отец мой и мать моя не надеются уже видеть меня.",
+        "NEO": "Mais tout ce qu’elle disait, c’était : « Laisse-moi tranquille, n’essaye pas de me tromper. Mon enfant est mort. » Et chaque jour, elle sortait brusquement pour surveiller la route par laquelle son fils était parti. Elle ne se fiait qu’à ses propres yeux. Une fois le soleil couché, elle rentrait à la maison, pour pleurer et gémir toute la nuit, incapable de dormir. Après les quatorze jours de fête que Ragouël avait juré de garder pour le mariage de sa fille, Tobias vint le trouver et lui dit : « Laisse-moi partir maintenant ; mon père et ma mère doivent avoir perdu tout espoir de me revoir. Je te prie, père, de me laisser retourner dans la maison de mon père ; je t’ai dit dans quel état il était quand je l’ai quitté. »",
+        "NAB": "But she retorted, \"Stop it, and do not lie to me! My child has perished!\" She would go out and keep watch all day at the road her son had taken, and she ate nothing. At sunset she would go back home to wail and cry the whole night through, getting no sleep at all.Now at the end of the fourteen-day wedding celebration which Raguel had sworn to hold for his daughter, Tobiah went to him and said: \"Please let me go, for I know that my father and mother do not believe they will ever see me again. So I beg you, father, let me go back to my father. I have already told you how I left him.\"",
+        "VAT_ES": "Pero ella replicaba: «Déjame, no trates de engañarme. Mi hijo ha muerto». Y todos los días salía a mirar el camino por donde se había ido su hijo, porque no se fiaba de nadie. Al caer la tarde, entraba en su casa y pasaba las noches llorando y lamentándose sin poder dormir. Cuando pasaron los catorce días de la fiesta que Rag&uuml;el había prometido celebrar en honor de su hija, Tobías fue a decirle: «Déjame partir, porque seguramente mi padre y mi madre piensan que ya no volverán a verme. Te ruego, padre, que me dejes volver a la casa de mi padre. Ya te dije en qué estado lo dejé»."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "εἶπεν δὲ αὐτῷ ὁ πενθερός Μεῖνον παρ’ ἐμοί, κἀγὼ ἐξαποστελῶ πρὸς τὸν πατέρα σου καὶ δηλώσουσιν αὐτῷ τὰ κατὰ σέ.",
+        "VUL": "At vero Raguel dicebat ad generum suum : Mane hic, et ego mittam nuntium salutis de te ad Tobiam patrem tuum.",
+        "SYN": "Тесть же сказал ему: побудь у меня; я пошлю к отцу твоему, и известят его о тебе.",
+        "NEO": "Ragouël dit à Tobias : « Reste, mon fils, reste avec moi. J’enverrai des messagers à ton père Tobit pour lui donner de tes nouvelles ».",
+        "NAB": "Raguel said to Tobiah: \"Stay, my child, stay with me. I am sending messengers to your father Tobit, and they will give him news of you.\"",
+        "VAT_ES": "Rag&uuml;el respondió a Tobías: «Quédate conmigo, hijo mío. Yo enviaré mensajeros a tu padre Tobit, para que le lleven noticias tuyas»."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "καὶ Τωβείας λέγει Ἐξαπόστειλόν με πρὸς τὸν πατέρα μου.",
+        "VUL": "Cui Tobias ait : Ego novi quia pater meus et mater mea modo dies computant, et cruciatur spiritus eorum in ipsis.",
+        "SYN": "А Товия говорит: нет, отпусти меня к отцу моему.",
+        "NEO": "Mais Tobias le pressa : « Non, je te prie de me laisser retourner dans la maison de mon père. »",
+        "NAB": "But Tobiah insisted, \"No, I beg you to let me go back to my father.\"",
+        "VAT_ES": "Tobías insistió: «No, por favor. Déjame volver al lado de mi padre»."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ἀναστὰς δὲ Ῥαγουὴλ ἔδωκεν αὐτῷ Σάρραν τὴν γυναῖκα αὐτοῦ καὶ τὰ ἥμισυ τῶν ὑπαρχόντων, σώματα καὶ κτήνη, ἀργύριον·",
+        "VUL": "Cumque verbis multis rogaret Raguel Tobiam, et ille eum nulla ratione vellet audire, tradidit ei Saram, et dimidiam partem omnis substantiæ suæ in pueris, in puellis, in pecudibus, in camelis, et in vaccis, et in pecunia multa : et salvum atque gaudentem dimisit eum a se,",
+        "SYN": "И встал Рагуил и отдал ему Сарру, жену его, и половину имения, рабов и скота и серебро,",
+        "NEO": "Sans plus attendre, Ragouël lui remit Sarra, son épouse. Il donna à Tobias la moitié de ses biens, esclaves, hommes et femmes, bœufs et moutons, ânes et chameaux, vêtements, argent et objets domestiques.",
+        "NAB": "Raguel then promptly handed over to Tobiah Sarah his wife, together with half of all his property: male and female slaves, oxen and sheep, asses and camels, clothing, money, and household goods.",
+        "VAT_ES": "Rag&uuml;el le entregó en seguida a Sara, con la mitad de todos sus bienes en servidores y servidoras, en bueyes, camellos, asnos y camellos, en vestidos, plata y utensilios."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "καὶ εὐλογήσας αὐτοὺς ἐξαπέστειλεν λέγων Εὐοδώσει ὑμᾶς, τέκνα, ὁ θεὸς τοῦ οὐρανοῦ πρὸ τοῦ μὲ ἀποθανεῖν.",
+        "VUL": "dicens : Angelus Domini sanctus sit in itinere vestro, perducatque vos incolumes, et inveniatis omnia recte circa parentes vestros, et videant oculi mei filios vestros priusquam moriar.",
+        "SYN": "и, благословив их, отпустил и сказал: дети! да благопоспешит вам Бог Небесный, прежде нежели я умру.",
+        "NEO": "Et il les laissa partir heureux. Il dit à Tobias ces paroles d’adieu : « Bonne santé, mon enfant, et bon voyage ! Que le Seigneur du ciel te fasse grâce, à toi et à ta femme Sarra ! J’espère bien voir vos enfants avant de mourir ».",
+        "NAB": "Bidding them farewell, he let them go. He embraced Tobiah and said to him: \"Good-bye, my son. Have a safe journey. May the Lord of heaven grant prosperity to you and to your wife Sarah. And may I see children of yours before I die!\"",
+        "VAT_ES": "Así los hizo partir contentos. Al despedirse de Tobías, le dijo: «&iexcl;Salud, hijo mío, y buen viaje! &iexcl;Que el Señor del Cielo los guíe, a ti y a tu esposa Sara, y que yo pueda ver a sus hijos antes de morir!»."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν τῇ θυγατρὶ αὐτοῦ Τίμα τοὺς πενθερούς σου, αὐτοὶ νῦν γονεῖς σού εἰσιν· ἀκούσαιμί σου ἀκοὴν καλήν. καὶ ἐφίλησεν αὐτήν. καὶ Ἔδνα εἶπεν πρὸς Τωβείαν Ἀδελφὲ ἀγαπητέ, ἀποκαταστήσει σε ὁ κύριος τοῦ οὐρανοῦ, καὶ δῴη μοι ἰδεῖν σου παιδία ἐκ Σάρρας τῆς θυγατρός μου, ἵνα εὐφρανθῶ ἐνώπιον τοῦ κυρίου· καὶ ἰδοὺ παρατίθεμαί σοι τὴν θυγατέρα μου ἐν παρακαταθήκῃ, μὴ λυπήσῃς αὐτήν.",
+        "VUL": "Et apprehendentes parentes filiam suam, osculati sunt eam : et dimiserunt ire,",
+        "SYN": "Потом сказал дочери своей: почитай твоего свекра и свекровь; теперь они - родители твои; желаю слышать добрый слух о тебе. И поцеловал ее. И Една сказала Товии: возлюбленный брат, да восставит тебя Господь Небесный и дарует мне видеть детей от Сарры дочери моей, дабы я возрадовалась пред Господом. И вот, отдаю тебе дочь мою на сохранение; не огорчай ее.",
+        "NEO": "Il dit à sa fille Sarra : « Va maintenant dans la maison de ton beau-père, car ils sont désormais tes parents au même titre que ceux qui t’ont donné la vie. Va en paix, ma fille, j’espère n’entendre que du bien de toi, aussi longtemps que je vivrai. » Il leur dit adieu et les laissa partir.",
+        "NAB": "Then he kissed his daughter Sarah and said to her: \"My daughter, honor your father-in-law and your mother-in-law, because from now on they are as much your parents as the ones who brought you into the world. Go in peace, my daughter; let me hear good reports about you as long as I live.\" Finally he said good-bye to them and sent them away.",
+        "VAT_ES": "A su hija Sara le dijo: «Ve a la casa de tu suegro. Desde ahora ellos son tus padres, como los que te hemos dado la vida. Vete en paz, hija mía. &iexcl;Ojalá toda mi vida pueda oír buenas noticias tuyas!». Y después de abrazarlos, los dejó partir."
+      }
+    }
+  }
+}

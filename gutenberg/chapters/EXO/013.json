@@ -1,0 +1,411 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_013",
+  "book_key": "EXO",
+  "sequence": 13,
+  "chapter_in": {
+    "MT": 13,
+    "VUL": 13,
+    "LXX": 13
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Εἶπεν δὲ Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD spoke to Moses and said,",
+        "VAT_ES": "El Señor habló a Moisés en estos términos:",
+        "CEI": "Il Signore disse a Mosè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "קַדֶּשׁ לִ֨/י כָל בְּכ֜וֹר פֶּ֤טֶר כָּל רֶ֨חֶם֙ בִּ/בְנֵ֣י יִשְׂרָאֵ֔ל בָּ/אָדָ֖ם וּ/בַ/בְּהֵמָ֑ה לִ֖/י הֽוּא׃",
+        "LXX": "Ἁγίασόν μοι πᾶν πρωτότοκον πρωτογενὲς διανοῖγον πᾶσαν μήτραν ἐν τοῖς υἱοῖς Ἰσραὴλ ἀπὸ ἀνθρώπου ἕως κτήνους· ἐμοί ἐστιν.",
+        "VUL": "Sanctifica mihi omne primogenitum quod aperit vulvam in filiis Israël, tam de hominibus quam de jumentis : mea sunt enim omnia.",
+        "SYN": "освяти Мне каждого первенца, разверзающего всякие ложесна между сынами Израилевыми, от человека до скота, [потому что] Мои они.",
+        "NEO": "« Consacre-moi tout premier-né+ 13:2 \\+it Premier-né\\+it* : ce qui ouvre la matrice.*, tout premier-né parmi les enfants d’Israël, aussi bien des hommes que des animaux ; il m’appartient. »",
+        "NAB": "\"Consecrate to me every first-born that opens the womb among the Israelites, both of man and beast, for it belongs to me.\"",
+        "VAT_ES": "Conságrame a todos los primogénitos. Porque las primicias del seno materno entre los israelitas, sean hombres o animales, me pertenecen.",
+        "CEI": "\"Consacrami ogni primogenito, il primo parto di ogni madre tra gli Israeliti - di uomini o di animali -: esso appartiene a me\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר מֹשֶׁ֜ה אֶל הָ/עָ֗ם זָכ֞וֹר אֶת הַ/יּ֤וֹם הַ/זֶּה֙ אֲשֶׁ֨ר יְצָאתֶ֤ם מִ/מִּצְרַ֨יִם֙ מִ/בֵּ֣ית עֲבָדִ֔ים כִּ֚י בְּ/חֹ֣זֶק יָ֔ד הוֹצִ֧יא יְהֹוָ֛ה אֶתְ/כֶ֖ם מִ/זֶּ֑ה וְ/לֹ֥א יֵאָכֵ֖ל חָמֵֽץ׃",
+        "LXX": "Εἶπεν δὲ Μωυσῆς πρὸς τὸν λαόν Μνημονεύετε τὴν ἡμέραν ταύτην ἐν ᾗ ἐξήλθατε ἐκ γῆς Αἰγύπτου, ἐξ οἴκου δουλίας· ἐν γὰρ χειρὶ κραταιᾷ ἐξήγαγεν ὑμᾶς Κύριος ἐντεῦθεν· καὶ οὐ βρωθήσεται ζύμη.",
+        "VUL": "Et ait Moyses ad populum : Mementote diei hujus in qua egressi estis de Ægypto et de domo servitutis, quoniam in manu forti eduxit vos Dominus de loco isto : ut non comedatis fermentatum panem.",
+        "SYN": "И сказал Моисей народу: помните сей день, в который вышли вы из Египта, из дома рабства, ибо рукою крепкою вывел вас Господь оттоле, и не ешьте квасного:",
+        "NEO": "Moïse dit au peuple : « Souvenez-vous du jour où vous êtes sortis d’Égypte, de la maison de servitude ; car c’est par la puissance de sa main que \\+w Yahweh|strong=\"H3068\"\\+w** vous en a fait sortir. On ne mangera pas de pain levé.",
+        "NAB": "Moses said to the people, \"Remember this day on which you came out of Egypt, that place of slavery. It was with a strong hand that the LORD brought you away. Nothing made with leaven must be eaten.",
+        "VAT_ES": "Moisés dijo al pueblo: Guarden el recuerdo de este día en que ustedes salieron de Egipto, ese lugar de esclavitud, porque el Señor los sacó de allí con el poder de su mano. Este día, no comerán pan fermentado.",
+        "CEI": "Mosè disse al popolo: \"Ricordati di questo giorno, nel quale siete usciti dall'Egitto, dalla condizione servile, perché con mano potente il Signore vi ha fatti uscire di là: non si mangi ciò che è lievitato."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הַ/יּ֖וֹם אַתֶּ֣ם יֹצְאִ֑ים בְּ/חֹ֖דֶשׁ הָ/אָבִֽיב׃",
+        "LXX": "ἐν γὰρ τῇ σήμερον ὑμεῖς ἐκπορεύεσθε ἐν μηνὶ τῶν νέων.",
+        "VUL": "Hodie egredimini mense novarum frugum.",
+        "SYN": "сегодня выходите вы, в месяце Авиве.",
+        "NEO": "Vous sortez aujourd’hui, dans le mois des épis.",
+        "NAB": "This day of your departure is in the month of Abib.",
+        "VAT_ES": "Hoy, en el mes de Abib, ustedes salen de Egipto.",
+        "CEI": "Oggi voi uscite nel mese di Abib."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֣ה כִֽי יְבִֽיאֲ/ךָ֣ יְהוָ֡ה אֶל אֶ֣רֶץ הַֽ֠/כְּנַעֲנִי וְ/הַ/חִתִּ֨י וְ/הָ/אֱמֹרִ֜י וְ/הַ/חִוִּ֣י וְ/הַ/יְבוּסִ֗י אֲשֶׁ֨ר נִשְׁבַּ֤ע לַ/אֲבֹתֶ֨י/ךָ֙ לָ֣/תֶת לָ֔/ךְ אֶ֛רֶץ זָבַ֥ת חָלָ֖ב וּ/דְבָ֑שׁ וְ/עָבַדְתָּ֛ אֶת הָ/עֲבֹדָ֥ה הַ/זֹּ֖את בַּ/חֹ֥דֶשׁ הַ/זֶּֽה׃",
+        "LXX": "καὶ ἔσται ἡνίκα ἐὰν εἰσαγάγῃ σε Κύριος ὁ θεός σου εἰς τὴν γῆν τῶν Χαναναίων καὶ Χετταίων καὶ Εὑαίων καὶ Γεργεσαίων καὶ Ἀμορραίων καὶ Φερεζαίων καὶ Ἰεβουσαίων, ἣν ὤμοσεν τοῖς πατράσιν σου δοῦναί σοι, γῆν ῥέουσαν γάλα καὶ μέλι, καὶ ποιήσεις τὴν λατρίαν ταύτην ἐν τῷ μηνὶ τούτῳ.",
+        "VUL": "Cumque introduxerit te Dominus in terram Chananæi, et Hethæi, et Amorrhæi, et Hevæi, et Jebusæi, quam juravit patribus tuis ut daret tibi, terram fluentem lacte et melle, celebrabis hunc morem sacrorum mense isto.",
+        "SYN": "И когда введет тебя Господь [Бог твой] в землю Хананеев и Хеттеев, и Аморреев, и Евеев, и Иевусеев, [Гергесеев, и Ферезеев,] о которой клялся Он отцам твоим, что даст тебе землю, где течет молоко и мед, то совершай сие служение в сем месяце;",
+        "NEO": "Quand \\+w Yahweh|strong=\"H3068\"\\+w** t’aura fait entrer dans le pays des Chananéens, des Hittites, des Amorrhéens, des Hévéens et des Jébuséens, qu’il a juré à tes pères de te donner, pays où coulent le lait et le miel, tu observeras ce rite dans ce même mois.",
+        "NAB": "Therefore, it is in this month that you must celebrate this rite, after the LORD, your God, has brought you into the land of the Canaanites, Hittites, Amorites, Hivites and Jebusites, which he swore to your fathers he would give you, a land flowing with milk and honey.",
+        "VAT_ES": "Y cuando el Señor te introduzca en el país de los cananeos, los hititas, los amorreos, los jivitas y los jebuseos, en el país que el Señor te dará porque así lo juró a tus padres –esa tierra que mana leche y miel– celebrarás el siguiente rito en este mismo mes:",
+        "CEI": "Quando il Signore ti avrà fatto entrare nel paese del Cananeo, dell'Hittita, dell'Amorreo, dell'Eveo e del Gebuseo, che ha giurato ai tuoi padri di dare a te, terra dove scorre latte e miele, allora tu compirai questo rito in questo mese."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "שִׁבְעַ֥ת יָמִ֖ים תֹּאכַ֣ל מַצֹּ֑ת וּ/בַ/יּוֹם֙ הַ/שְּׁבִיעִ֔י חַ֖ג לַ/יהוָֽה׃",
+        "LXX": "ἓξ ἡμέρας ἔδεσθε ἄζυμα, τῇ δὲ ἡμέρᾳ τῇ ἑβδόμῃ ἑορτὴ Κυρίου·",
+        "VUL": "Septem diebus vesceris azymis : et in die septimo erit solemnitas Domini.",
+        "SYN": "семь дней ешь пресный хлеб, и в седьмой день -- праздник Господу;",
+        "NEO": "Pendant sept jours, tu mangeras des pains sans levain, et le septième jour, il y aura une fête en l’honneur de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "For seven days you shall eat unleavened bread, and the seventh day shall also be a festival to the LORD.",
+        "VAT_ES": "Durante siete días, comerás pan sin levadura, y el séptimo día habrá una fiesta en honor del Señor.",
+        "CEI": "Per sette giorni mangerai azzimi. Nel settimo vi sarà una festa in onore del Signore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "מַצּוֹת֙ יֵֽאָכֵ֔ל אֵ֖ת שִׁבְעַ֣ת הַ/יָּמִ֑ים וְ/לֹֽא יֵרָאֶ֨ה לְ/ךָ֜ חָמֵ֗ץ וְ/לֹֽא יֵרָאֶ֥ה לְ/ךָ֛ שְׂאֹ֖ר בְּ/כָל גְּבֻלֶֽ/ךָ׃",
+        "LXX": "ἄζυμα ἔδεσθε ἑπτὰ ἡμέρας, οὐκ ὀφθήσεταί σοι ζυμωτὸν οὐδὲ ἔσται σοι ζύμη ἐν πᾶσιν τοῖς ὁρίοις σου.",
+        "VUL": "Azyma comedetis septem diebus : non apparebit apud te aliquid fermentatum, nec in cunctis finibus tuis.",
+        "SYN": "пресный хлеб должно есть семь дней, и не должно находиться у тебя квасного хлеба, и не должно находиться у тебя квасного во всех пределах твоих.",
+        "NEO": "On mangera des pains sans levain pendant les sept jours ; on ne verra pas chez toi de pain levé, on ne verra pas chez toi de levain, dans toute l’étendue de ton pays.",
+        "NAB": "Only unleavened bread may be eaten during the seven days; no leaven and nothing leavened may be found in all your territory.",
+        "VAT_ES": "Durante los siete días, el pan fermentado y la levadura no se verán en todo tu territorio.",
+        "CEI": "Nei sette giorni si mangeranno azzimi e non ci sarà presso di te ciò che è lievitato; non ci sarà presso di te il lievito, entro tutti i tuoi confini."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/הִגַּדְתָּ֣ לְ/בִנְ/ךָ֔ בַּ/יּ֥וֹם הַ/ה֖וּא לֵ/אמֹ֑ר בַּ/עֲב֣וּר זֶ֗ה עָשָׂ֤ה יְהוָה֙ לִ֔/י בְּ/צֵאתִ֖/י מִ/מִּצְרָֽיִם׃",
+        "LXX": "καὶ ἀναγγελεῖς τῷ υἱῷ σου ἐν τῇ ἡμέρᾳ ἐκείνῃ λέγων Διὰ τοῦτο ἐποίησεν Κύριος ὁ θεός μοι, ὡς ἐξεπορευόμην ἐξ Αἰγύπτου.",
+        "VUL": "Narrabisque filio tuo in die illo, dicens : Hoc est quod fecit mihi Dominus quando egressus sum de Ægypto.",
+        "SYN": "И объяви в день тот сыну твоему, говоря: это ради того, что Господь [Бог] сделал со мною, когда я вышел из Египта.",
+        "NEO": "Tu diras alors à ton fils : C’est en mémoire de ce que \\+w Yahweh|strong=\"H3068\"\\+w** a fait pour moi, lorsque je suis sorti d’Égypte.",
+        "NAB": "On this day you shall explain to your son, 'This is because of what the LORD did for me when I came out of Egypt.'",
+        "VAT_ES": "Y ese día darás a tu hijo la siguiente explicación: «Esto es así, a causa de lo que el Señor hizo por mí cuando salí de Egipto».",
+        "CEI": "In quel giorno tu istruirai tuo figlio: È a causa di quanto ha fatto il Signore per me, quando sono uscito dall'Egitto."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֩ לְ/ךָ֨ לְ/א֜וֹת עַל יָדְ/ךָ֗ וּ/לְ/זִכָּרוֹן֙ בֵּ֣ין עֵינֶ֔י/ךָ לְמַ֗עַן תִּהְיֶ֛ה תּוֹרַ֥ת יְהוָ֖ה בְּ/פִ֑י/ךָ כִּ֚י בְּ/יָ֣ד חֲזָקָ֔ה הוֹצִֽאֲ/ךָ֥ יְהֹוָ֖ה מִ/מִּצְרָֽיִם׃",
+        "LXX": "καὶ ἔσται σοι σημεῖον ἐπὶ τῆς χειρός σου καὶ μνημόσυνον πρὸ ὀφθαλμῶν σου, ὅπως ἂν γένηται ὁ νόμος Κυρίου ἐν τῷ στόματί σου· ἐν γὰρ χειρὶ κραταιᾷ ἐξήγαγέν σε Κύριος ὁ θεὸς ἐξ Αἰγύπτου.",
+        "VUL": "Et erit quasi signum in manu tua, et quasi monimentum ante oculos tuos : et ut lex Domini semper sit in ore tuo, in manu enim forti eduxit te Dominus de Ægypto.",
+        "SYN": "И да будет тебе это знаком на руке твоей и памятником пред глазами твоими, дабы закон Господень был в устах твоих, ибо рукою крепкою вывел тебя Господь [Бог] из Египта.",
+        "NEO": "Ce sera pour toi comme un signe sur ta main et comme un souvenir entre tes yeux, afin que la loi de \\+w Yahweh|strong=\"H3068\"\\+w** soit dans ta bouche ; car c’est par sa main puissante que \\+w Yahweh|strong=\"H3068\"\\+w** t’a fait sortir d’Égypte.",
+        "NAB": "It shall be as a sign on your hand and as a reminder on your forehead; thus the law of the LORD will ever be on your lips, because with a strong hand the LORD brought you out of Egypt.",
+        "VAT_ES": "Este rito será como un signo en tu mano y como un memorial ante tus ojos, para que la ley del Señor esté siempre en tus labios por que el Señor te sacó de Egipto con mano poderosa.",
+        "CEI": "Sarà per te segno sulla tua mano e ricordo fra i tuoi occhi, perché la legge del Signore sia sulla tua bocca. Con mano potente infatti il Signore ti ha fatto uscire dall'Egitto."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/שָׁמַרְתָּ֛ אֶת הַ/חֻקָּ֥ה הַ/זֹּ֖את לְ/מוֹעֲדָ֑/הּ מִ/יָּמִ֖ים יָמִֽימָ/ה׃",
+        "LXX": "καὶ φυλάξεσθε τὸν νόμον τοῦτον ἀφ’ ἡμερῶν εἰς ἡμέρας.",
+        "VUL": "Custodies hujuscemodi cultum statuto tempore a diebus in dies.",
+        "SYN": "Исполняй же устав сей в назначенное время, из года в год.",
+        "NEO": "Tu observeras cette ordonnance au temps fixé, d’année en année.",
+        "NAB": "Therefore, you shall keep this prescribed rite at its appointed time from year to year.",
+        "VAT_ES": "Observa cada año esta prescripción, a su debido tiempo.",
+        "CEI": "Osserverai questo rito alla sua ricorrenza ogni anno."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֞ה כִּֽי יְבִֽאֲ/ךָ֤ יְהוָה֙ אֶל אֶ֣רֶץ הַֽ/כְּנַעֲנִ֔י כַּ/אֲשֶׁ֛ר נִשְׁבַּ֥ע לְ/ךָ֖ וְ/לַֽ/אֲבֹתֶ֑י/ךָ וּ/נְתָנָ֖/הּ לָֽ/ךְ׃",
+        "LXX": "Καὶ ἔσται ὡς ἂν εἰσαγάγῃ σε Κύριος ὁ θεός σου εἰς τὴν γῆν τῶν Χαναναίων, ὃν τρόπον ὤμοσεν τοῖς πατράσιν σου, καὶ δώσει σοι αὐτήν,",
+        "VUL": "Cumque introduxerit te Dominus in terram Chananæi, sicut juravit tibi et patribus tuis, et dederit tibi eam :",
+        "SYN": "И когда введет тебя Господь [Бог твой] в землю Ханаанскую, как Он клялся тебе и отцам твоим, и даст ее тебе, --",
+        "NEO": "Quand \\+w Yahweh|strong=\"H3068\"\\+w** t’aura fait entrer dans le pays des Chananéens, comme il l’a juré à toi et à tes pères, et qu’il te l’aura donné,",
+        "NAB": "\"When the LORD, your God, has brought you into the land of the Canaanites, which he swore to you and your fathers he would give you,",
+        "VAT_ES": "Cuando el Señor te introduzca en el país de los cananeos, como lo juró a ti y a tus padres, y cuando te lo haya dado,",
+        "CEI": "Quando il Signore ti avrà fatto entrare nel paese del Cananeo, come ha giurato a te e ai tuoi padri, e te lo avrà dato in possesso,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/הַעֲבַרְתָּ֥ כָל פֶּֽטֶר רֶ֖חֶם לַֽ/יהֹוָ֑ה וְ/כָל פֶּ֣טֶר שֶׁ֣גֶר בְּהֵמָ֗ה אֲשֶׁ֨ר יִהְיֶ֥ה לְ/ךָ֛ הַ/זְּכָרִ֖ים לַ/יהוָֽה׃",
+        "LXX": "καὶ ἀφελεῖς πᾶν διανοῖγον μήτραν, τὰ ἀρσενικά, τῷ κυρίῳ· πᾶν διανοῖγον μήτραν ἐκ τῶν βουκολίων ἢ ἐν τοῖς κτήνεσίν σου ὅσα ἐὰν γένηταί σοι, τὰ ἀρσενικὰ ἁγιάσεις τῷ κυρίῳ.",
+        "VUL": "separabis omne quod aperit vulvam Domino, et quod primitivum est in pecoribus tuis : quidquid habueris masculini sexus, consecrabis Domino.",
+        "SYN": "отделяй Господу все [мужеского пола] разверзающее ложесна; и все первородное из скота, какой у тебя будет, мужеского пола, [посвящай] Господу,",
+        "NEO": "tu consacreras à \\+w Yahweh|strong=\"H3068\"\\+w** tout premier-né, même tout premier-né des animaux qui seront à toi : les mâles appartiennent à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "you shall dedicate to the LORD every son that opens the womb; and all the male firstlings of your animals shall belong to the LORD.",
+        "VAT_ES": "consagrarás al Señor todos los primogénitos; y el primogénito de tus animales, si es macho, también pertenecerá al Señor.",
+        "CEI": "tu riserverai per il Signore ogni primogenito del seno materno; ogni primo parto del bestiame, se di sesso maschile, appartiene al Signore."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/כָל פֶּ֤טֶר חֲמֹר֙ תִּפְדֶּ֣ה בְ/שֶׂ֔ה וְ/אִם לֹ֥א תִפְדֶּ֖ה וַ/עֲרַפְתּ֑/וֹ וְ/כֹ֨ל בְּכ֥וֹר אָדָ֛ם בְּ/בָנֶ֖י/ךָ תִּפְדֶּֽה׃",
+        "LXX": "πᾶν διανοῖγον μήτραν ὄνου ἀλλάξεις προβάτῳ· ἐὰν δὲ μὴ ἀλλάξῃς, λυτρώσῃ αὐτό· πᾶν πρωτότοκον ἀνθρώπου τῶν υἱῶν σου λυτρώσῃ.",
+        "VUL": "Primogenitum asini mutabis ove : quod si non redemeris, interficies. Omne autem primogenitum hominis de filiis tuis, pretio redimes.",
+        "SYN": "а всякого из ослов, разверзающего [утробу], заменяй агнцем; а если не заменишь, выкупи его; и каждого первенца человеческого из сынов твоих выкупай.",
+        "NEO": "Tu rachèteras avec un agneau tout premier-né de l’âne, et, si tu ne le rachètes pas, tu lui briseras la nuque. Tu rachèteras aussi tout premier-né de l’homme parmi tes fils.",
+        "NAB": "Every first-born of an ass you shall redeem with a sheep. If you do not redeem it, you shall break its neck. Every first-born son you must redeem.",
+        "VAT_ES": "Al primogénito del asno, en cambio, lo rescatarás con un cordero; y si no lo rescatas, deberás desnucarlo. También rescatarás a tu hijo primogénito.",
+        "CEI": "Riscatterai ogni primo parto dell'asino mediante un capo di bestiame minuto; se non lo riscatti, gli spaccherai la nuca. Riscatterai ogni primogenito dell'uomo tra i tuoi figli."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֞ה כִּֽי יִשְׁאָלְ/ךָ֥ בִנְ/ךָ֛ מָחָ֖ר לֵ/אמֹ֣ר מַה זֹּ֑את וְ/אָמַרְתָּ֣ אֵלָ֔י/ו בְּ/חֹ֣זֶק יָ֗ד הוֹצִיאָ֧/נוּ יְהוָ֛ה מִ/מִּצְרַ֖יִם מִ/בֵּ֥ית עֲבָדִֽים׃",
+        "LXX": "ἐὰν δὲ ἐρωτήσῃ σε ὁ υἱός σου μετὰ ταῦτα λέγων Τί τοῦτο; καὶ ἐρεῖς αὐτῷ ὅτι Ἐν χειρὶ κραταιᾷ ἐξήγαγεν Κύριος ἡμᾶς ἐκ γῆς Αἰγύπτου, ἐξ οἴκου δουλίας·",
+        "VUL": "Cumque interrogaverit te filius tuus cras, dicens : Quid est hoc ? respondebis ei : In manu forti eduxit nos Dominus de terra Ægypti, de domo servitutis.",
+        "SYN": "И когда после спросит тебя сын твой, говоря: что это? то скажи ему: рукою крепкою вывел нас Господь из Египта, из дома рабства;",
+        "NEO": "Et lorsque ton fils t’interrogera un jour, en disant : Que signifie cela ? tu lui répondras : Par sa main puissante \\+w Yahweh|strong=\"H3068\"\\+w** nous a fait sortir d’Égypte, de la maison de servitude.",
+        "NAB": "If your son should ask you later on, 'What does this mean?' you shall tell him, 'With a strong hand the LORD brought us out of Egypt, that place of slavery.",
+        "VAT_ES": "Y cuando, el día de mañana, tu hijo te pregunte qué significa esto, tú le responderás: «Con el poder de su mano, el Señor nos sacó de Egipto, donde fuimos esclavos.",
+        "CEI": "Quando tuo figlio domani ti chiederà: Che significa ciò?, tu gli risponderai: Con braccio potente il Signore ci ha fatti uscire dall'Egitto, dalla condizione servile."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י כִּֽי הִקְשָׁ֣ה פַרְעֹה֮ לְ/שַׁלְּחֵ/נוּ֒ וַ/יַּהֲרֹ֨ג יְהֹוָ֤ה כָּל בְּכוֹר֙ בְּ/אֶ֣רֶץ מִצְרַ֔יִם מִ/בְּכֹ֥ר אָדָ֖ם וְ/עַד בְּכ֣וֹר בְּהֵמָ֑ה עַל כֵּן֩ אֲנִ֨י זֹבֵ֜חַ לַֽ/יהוָ֗ה כָּל פֶּ֤טֶר רֶ֨חֶם֙ הַ/זְּכָרִ֔ים וְ/כָל בְּכ֥וֹר בָּנַ֖/י אֶפְדֶּֽה׃",
+        "LXX": "ἡνίκα δὲ ἐσκλήρυνεν Φαραὼ ἐξαποστεῖλαι ἡμᾶς, ἀπέκτεινεν πᾶν πρωτότοκον ἐν γῇ Αἰγύπτῳ ἀπὸ πρωτοτόκων ἀνθρώπων ἕως πρωτοτόκων κτηνῶν· διὰ τοῦτο ἐγὼ θύω πᾶν πρωτότοκον τῷ κυρίῳ, πᾶν διανοῖγον μήτραν, τὰ ἀρσενικὰ, καὶ πᾶν πρωτότοκον τῶν υἱῶν μου λυτρώσομαι.",
+        "VUL": "Nam cum induratus esset Pharao, et nollet nos dimittere, occidit Dominus omne primogenitum in terra Ægypti, a primogenito hominis usque ad primogenitum jumentorum : idcirco immolo Domino omne quod aperit vulvam masculini sexus, et omnia primogenita filiorum meorum redimo.",
+        "SYN": "ибо когда фараон упорствовал отпустить нас, Господь умертвил всех первенцев в земле Египетской, от первенца человеческого до первенца из скота, -- посему я приношу в жертву Господу все, разверзающее ложесна, мужеского пола, а всякого первенца _из_ сынов моих выкупаю;",
+        "NEO": "Comme Pharaon s’obstinait à ne pas nous laisser aller, \\+w Yahweh|strong=\"H3068\"\\+w** fit mourir tous les premiers-nés dans le pays d’Égypte, depuis les premiers-nés des hommes jusqu’aux premiers-nés des animaux. Voilà pourquoi j’offre en sacrifice à \\+w Yahweh|strong=\"H3068\"\\+w** tout mâle premier-né des animaux, et je rachète tout premier-né de mes fils.",
+        "NAB": "When Pharaoh stubbornly refused to let us go, the LORD killed every first-born in the land of Egypt, every first-born of man and of beast. That is why I sacrifice to the LORD everything of the male sex that opens the womb, and why I redeem every first-born of my sons.'",
+        "VAT_ES": "Como el Faraón se había obstinado en no dejarnos partir, el Señor hizo morir a todos los primogénitos machos de mi ganado, y rescató a mi hijo primogénito».",
+        "CEI": "Poiché il faraone si ostinava a non lasciarci partire, il Signore ha ucciso ogni primogenito nel paese d'Egitto, i primogeniti degli uomini e i primogeniti del bestiame. Per questo io sacrifico al Signore ogni primo frutto del seno materno, se di sesso maschile, e riscatto ogni primogenito dei miei figli."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֤ה לְ/אוֹת֙ עַל יָ֣דְ/כָ֔ה וּ/לְ/טוֹטָפֹ֖ת בֵּ֣ין עֵינֶ֑י/ךָ כִּ֚י בְּ/חֹ֣זֶק יָ֔ד הוֹצִיאָ֥/נוּ יְהוָ֖ה מִ/מִּצְרָֽיִם׃",
+        "LXX": "καὶ ἔσται εἰς σημεῖον ἐπὶ τῆς χειρός σου, καὶ ἀσάλευτον πρὸ ὀφθαλμῶν σου· ἐν γὰρ χειρὶ κραταιᾷ ἐξήγαγέν σε Κύριος ἐξ Αἰγύπτου.",
+        "VUL": "Erit igitur quasi signum in manu tua, et quasi appensum quid, ob recordationem, inter oculos tuos : eo quod in manu forti eduxit nos Dominus de Ægypto.",
+        "SYN": "и да будет это знаком на руке твоей и вместо повязки над глазами твоими, ибо рукою крепкою Господь вывел нас из Египта.",
+        "NEO": "Ce sera comme un signe sur ta main et comme des fronteaux entre tes yeux ; car c’est par la puissance de sa main que \\+w Yahweh|strong=\"H3068\"\\+w** nous a fait sortir d’Égypte. »",
+        "NAB": "Let this, then, be as a sign on your hand and as a pendant on your forehead: with a strong hand the LORD brought us out of Egypt.\"",
+        "VAT_ES": "Esto será como un signo en tu mano y como una marca sobre tu frente, porque el Señor nos hizo salir de Egipto con el poder de su mano.",
+        "CEI": "Questo sarà un segno sulla tua mano, sarà un ornamento fra i tuoi occhi, per ricordare che con braccio potente il Signore ci ha fatti uscire dall'Egitto\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י בְּ/שַׁלַּ֣ח פַּרְעֹה֮ אֶת הָ/עָם֒ וְ/לֹא נָחָ֣/ם אֱלֹהִ֗ים דֶּ֚רֶךְ אֶ֣רֶץ פְּלִשְׁתִּ֔ים כִּ֥י קָר֖וֹב ה֑וּא כִּ֣י אָמַ֣ר אֱלֹהִ֗ים פֶּֽן יִנָּחֵ֥ם הָ/עָ֛ם בִּ/רְאֹתָ֥/ם מִלְחָמָ֖ה וְ/שָׁ֥בוּ מִצְרָֽיְמָ/ה׃",
+        "LXX": "Ὡς δὲ ἐξαπέστειλεν Φαραὼ τὸν λαόν, οὐχ ὡδήγησεν αὐτοὺς ὁ θεὸς ὁδὸν γῆς Φυλιστιείμ, ὅτι ἐγγὺς ἦν· εἶπεν γὰρ ὁ θεός Μή ποτε μεταμελήσῃ τῷ λαῷ ἰδόντι πόλεμον, καὶ ἀποστρέψῃ εἰς Αἴγυπτον.",
+        "VUL": "Igitur cum emisisset Pharao populum, non eos duxit Deus per viam terræ Philisthiim quæ vicina est : reputans ne forte pniteret eum, si vidisset adversum se bella consurgere, et reverteretur in Ægyptum.",
+        "SYN": "Когда же фараон отпустил народ, Бог не повел _его_ по дороге земли Филистимской, потому что она близка; ибо сказал Бог: чтобы не раскаялся народ, увидев войну, и не возвратился в Египет.",
+        "NEO": "Lorsque Pharaon laissa aller le peuple, Dieu ne le conduisit pas par le chemin du pays des Philistins, quoique le plus court ; car Dieu dit : « Le peuple pourrait se repentir en voyant la guerre, et retourner en Égypte. »",
+        "NAB": "Now, when Pharaoh let the people go, God did not lead them by way of the Philistines' land, though this was the nearest; for he thought, should the people see that they would have to fight, they might change their minds and return to Egypt.",
+        "VAT_ES": "Cuando el Faraón dejó partir al pueblo, Dios no lo llevó por la ruta que atraviesa el país de los filisteos, aunque es la más directa, porque pensó: «Es posible que al verse atacados se arrepientan y regresen a Egipto».",
+        "CEI": "Quando il faraone lasciò partire il popolo, Dio non lo condusse per la strada del paese dei Filistei, benché fosse più corta, perché Dio pensava: \"Altrimenti il popolo, vedendo imminente la guerra, potrebbe pentirsi e tornare in Egitto\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יַּסֵּ֨ב אֱלֹהִ֧ים אֶת הָ/עָ֛ם דֶּ֥רֶךְ הַ/מִּדְבָּ֖ר יַם ס֑וּף וַ/חֲמֻשִׁ֛ים עָל֥וּ בְנֵי יִשְׂרָאֵ֖ל מֵ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "καὶ ἐκύκλωσεν ὁ θεὸς τὸν λαὸν ὁδὸν τὴν εἰς τὴν ἔρημον, εἰς τὴν ἐρυθρὰν θάλασσαν· πέμπτῃ δὲ γενεᾷ ἀνέβησαν οἱ υἱοὶ Ἰσραὴλ ἐκ γῆς Αἰγύπτου.",
+        "VUL": "Sed circumduxit per viam deserti, quæ est juxta mare Rubrum : et armati ascenderunt filii Israël de terra Ægypti.",
+        "SYN": "И обвел Бог народ дорогою пустынною к Чермному морю. И вышли сыны Израилевы вооруженные из земли Египетской.",
+        "NEO": "Mais Dieu fit faire au peuple un détour par le chemin du désert, vers la mer Rouge. Les enfants d’Israël montèrent en bon ordre hors du pays d’Égypte.",
+        "NAB": "Instead, he rerouted them toward the Red Sea by way of the desert road. In battle array the Israelites marched out of Egypt.",
+        "VAT_ES": "Por eso les hizo dar un rodeo, y los llevó hacia el Mar Rojo por el camino del desierto. Al salir de Egipto, los israelitas iban muy bien equipados.",
+        "CEI": "Dio guidò il popolo per la strada del deserto verso il Mare Rosso. Gli Israeliti, ben armati uscivano dal paese d'Egitto."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֥ח מֹשֶׁ֛ה אֶת עַצְמ֥וֹת יוֹסֵ֖ף עִמּ֑/וֹ כִּי֩ הַשְׁבֵּ֨עַ הִשְׁבִּ֜יעַ אֶת בְּנֵ֤י יִשְׂרָאֵל֙ לֵ/אמֹ֔ר פָּקֹ֨ד יִפְקֹ֤ד אֱלֹהִים֙ אֶתְ/כֶ֔ם וְ/הַעֲלִיתֶ֧ם אֶת עַצְמֹתַ֛/י מִ/זֶּ֖ה אִתְּ/כֶֽם׃",
+        "LXX": "Καὶ ἔλαβεν Μωυσῆς τὰ ὀστᾶ Ἰωσὴφ μεθ’ ἑαυτοῦ· ὅρκῳ γὰρ ὥρκισεν τοὺς υἱοὺς Ἰσραὴλ λέγων Ἐπισκοπῇ ἐπισκέψεται ὑμᾶς Κύριος, καὶ συνανοίσετέ μου τὰ ὀστᾶ ἐντεῦθεν μεθ’ ὑμῶν.",
+        "VUL": "Tulit quoque Moyses ossa Joseph secum : eo quod adjurasset filios Israël, dicens : Visitabit vos Deus ; efferte ossa mea hinc vobiscum.",
+        "SYN": "И взял Моисей с собою кости Иосифа, ибо [Иосиф] клятвою заклял сынов Израилевых, сказав: посетит вас Бог, и вы с собою вынесите кости мои отсюда.",
+        "NEO": "Moïse prit avec lui les os de Joseph ; car Joseph avait fait jurer les enfants d’Israël, en disant : « Dieu vous visitera, et vous emporterez avec vous mes os loin d’ici. »",
+        "NAB": "Moses also took Joseph's bones along, for Joseph had made the Israelites swear solemnly that, when God should come to them, they would carry his bones away with them.",
+        "VAT_ES": "Moisés tomó consigo los restos de José, porque este había comprometido a los israelitas con un juramento solemne, diciéndoles: «El Señor vendrá a visitarlos, y entonces ustedes se llevarán mis huesos de aquí».",
+        "CEI": "Mosè prese con sé le ossa di Giuseppe, perché questi aveva fatto giurare solennemente gli Israeliti: \"Dio, certo, verrà a visitarvi; voi allora vi porterete via le mie ossa\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/סֻּכֹּ֑ת וַ/יַּחֲנ֣וּ בְ/אֵתָ֔ם בִּ/קְצֵ֖ה הַ/מִּדְבָּֽר׃",
+        "LXX": "Ἐξάραντες δὲ οἱ υἱοὶ Ἰσραὴλ ἐκ Σοκχὼθ ἐστρατοπέδευσαν ἐν Ὀθὸμ παρὰ τὴν ἔρημον.",
+        "VUL": "Profectique de Socoth castrametati sunt in Etham, in extremis finibus solitudinis.",
+        "SYN": "И двинулись [сыны Израилевы] из Сокхофа и расположились станом в Ефаме, в конце пустыни.",
+        "NEO": "Etant sortis de Socoth, ils campèrent à Etham, à l’extrémité du désert.",
+        "NAB": "Setting out from Succoth, they camped at Etham near the edge of the desert.",
+        "VAT_ES": "Después que partieron de Sucot, acamparon en Etam, al borde del desierto.",
+        "CEI": "Partirono da Succot e si accamparono a Etam, sul limite del deserto."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַֽ/יהוָ֡ה הֹלֵךְ֩ לִ/פְנֵי/הֶ֨ם יוֹמָ֜ם בְּ/עַמּ֤וּד עָנָן֙ לַ/נְחֹתָ֣/ם הַ/דֶּ֔רֶךְ וְ/לַ֛יְלָה בְּ/עַמּ֥וּד אֵ֖שׁ לְ/הָאִ֣יר לָ/הֶ֑ם לָ/לֶ֖כֶת יוֹמָ֥ם וָ/לָֽיְלָה׃",
+        "LXX": "ὁ δὲ θεὸς ἡγεῖτο αὐτῶν, ἡμέρας μὲν ἐν στύλῳ νεφέλης δεῖξαι αὐτοῖς τὴν ὁδόν, τὴν δὲ νύκτα ἐν στύλῳ πυρός·",
+        "VUL": "Dominus autem præcedebat eos ad ostendendam viam per diem in columna nubis, et per noctem in columna ignis : ut dux esset itineris utroque tempore.",
+        "SYN": "Господь же шел пред ними днем в столпе облачном, показывая им путь, а ночью в столпе огненном, светя им, дабы идти им и днем и ночью.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** allait devant eux, le jour dans une colonne de nuée, pour les guider dans leur chemin, et la nuit dans une colonne de feu, pour les éclairer, afin qu’ils pussent marcher le jour et la nuit.",
+        "NAB": "The LORD preceded them, in the daytime by means of a column of cloud to show them the way, and at night by means of a column of fire to give them light. Thus they could travel both day and night.",
+        "VAT_ES": "El Señor iba al frente de ellos, de día en una columna de nube, para guiarlos por el camino; y de noche en una columna de fuego, para iluminarlos, de manera que pudieran avanzar de día y de noche.",
+        "CEI": "Il Signore marciava alla loro testa di giorno con una colonna di nube, per guidarli sulla via da percorrere, e di notte con una colonna di fuoco per far loro luce, così che potessero viaggiare giorno e notte."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "לֹֽא יָמִ֞ישׁ עַמּ֤וּד הֶֽ/עָנָן֙ יוֹמָ֔ם וְ/עַמּ֥וּד הָ/אֵ֖שׁ לָ֑יְלָה לִ/פְנֵ֖י הָ/עָֽם׃",
+        "LXX": "οὐκ ἐξέλιπεν δὲ ὁ στύλος τῆς νεφέλης ἡμέρας καὶ ὁ στύλος τοῦ πυρὸς νυκτὸς ἐναντίον τοῦ λαοῦ παντός.",
+        "VUL": "Numquam defuit columna nubis per diem, nec columna ignis per noctem, coram populo.",
+        "SYN": "Не отлучался столп облачный днем и столп огненный ночью от лица [всего] народа.",
+        "NEO": "La colonne de nuée ne se retira pas de devant le peuple pendant le jour, ni la colonne de feu pendant la nuit.",
+        "NAB": "Neither the column of cloud by day nor the column of fire by night ever left its place in front of the people.",
+        "VAT_ES": "La columna de nube no se apartaba del pueblo durante el día, ni la columna de fuego durante la noche.",
+        "CEI": "Di giorno la colonna di nube non si ritirava mai dalla vista del popolo, né la colonna di fuoco durante la notte."
+      }
+    }
+  }
+}

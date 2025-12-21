@@ -1,0 +1,373 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_032",
+  "book_key": "ISA",
+  "sequence": 32,
+  "chapter_in": {
+    "MT": 32,
+    "VUL": 32,
+    "LXX": 32
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "הֵ֥ן לְ/צֶ֖דֶק יִמְלָךְ מֶ֑לֶךְ וּ/לְ/שָׂרִ֖ים לְ/מִשְׁפָּ֥ט יָשֹֽׂרוּ׃",
+        "LXX": "ἰδοὺ γὰρ βασιλεὺς δίκαιος βασιλεύσει, καὶ ἄρχοντες μετὰ κρίσεως ἄρξουσιν.",
+        "VUL": "[Ecce in justitia regnabit rex,/ et principes in judicio præerunt./",
+        "SYN": "Вот, Царь будет царствовать по правде, и князья будут править по закону;",
+        "NEO": "Voici qu’un roi régnera selon la justice, et les princes gouverneront avec droiture.",
+        "NAB": "See, a king will reign justly and princes will rule rightly.",
+        "VAT_ES": "Sí, un rey reinará conforme a la justicia y los príncipes gobernarán según el derecho.",
+        "CEI": "Ecco, un re regnerà secondo giustizia e i principi governeranno secondo il diritto."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/הָיָה אִ֥ישׁ כְּ/מַֽחֲבֵא ר֖וּחַ וְ/סֵ֣תֶר זָ֑רֶם כְּ/פַלְגֵי מַ֣יִם בְּ/צָי֔וֹן כְּ/צֵ֥ל סֶֽלַע כָּבֵ֖ד בְּ/אֶ֥רֶץ עֲיֵפָֽה׃",
+        "LXX": "καὶ ἔσται ὁ ἄνθρωπος κρύπτων τοὺς λόγους αὐτοῦ, καὶ κρυβήσεται ὡς ἀφ’ ὕδατος φερομένου· ⸆ καὶ φανήσεται ἐν Σειὼν ὡς ποταμὸς φερόμενος ἔνδοξος ἐν γῇ διψώσῃ.",
+        "VUL": "Et erit vir sicut qui absconditur a vento,/ et celat se a tempestate ;/ sicut rivi aquarum in siti,/ et umbra petræ prominentis in terra deserta./",
+        "SYN": "и каждый из них будет как защита от ветра и покров от непогоды, как источники вод в степи, как тень от высокой скалы в земле жаждущей.",
+        "NEO": "Et chacun d’eux sera un abri contre le vent et un refuge contre la tempête, comme des courants d’eau dans une terre aride, comme l’ombre d’un grand rocher dans un pays désolé.",
+        "NAB": "Each of them will be a shelter from the wind, a retreat from the rain. They will be like streams of water in a dry country, like the shade of a great rock in a parched land.",
+        "VAT_ES": "Ellos serán como un refugio contra el viento, como un reparo contra la tormenta, como una corriente de agua en suelo árido, como la sombra de un peñasco en tierra reseca",
+        "CEI": "Ognuno sarà come un riparo contro il vento e uno schermo dall'acquazzone, come canali d'acqua in una steppa, come l'ombra di una grande roccia su arida terra."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/לֹ֥א תִשְׁעֶ֖ינָה עֵינֵ֣י רֹאִ֑ים וְ/אָזְנֵ֥י שֹׁמְעִ֖ים תִּקְשַֽׁבְנָה׃",
+        "LXX": "καὶ οὐκέτι ἔσονται πεποιθότες ἐπ’ ἀνθρώποις, ἀλλὰ τὰ ὦτα ἀκούειν δώσουσιν·",
+        "VUL": "Non caligabunt oculi videntium,/ et aures audientium diligenter auscultabunt./",
+        "SYN": "И очи видящих не будут закрываемы, и уши слышащих будут внимать.",
+        "NEO": "Les yeux de ceux qui voient ne seront plus aveuglés, et les oreilles de ceux qui entendent seront attentives.",
+        "NAB": "The eyes of those who see will not be closed;. the ears of those who hear will be attentive,",
+        "VAT_ES": "No se obnubilarán los ojos de los que ven y los oídos de los que oyen estarán atentos;",
+        "CEI": "Non si chiuderanno più gli occhi di chi vede e gli orecchi di chi sente staranno attenti."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וּ/לְבַ֥ב נִמְהָרִ֖ים יָבִ֣ין לָ/דָ֑עַת וּ/לְשׁ֣וֹן עִלְּגִ֔ים תְּמַהֵ֖ר לְ/דַבֵּ֥ר צָחֽוֹת׃",
+        "LXX": "καὶ ἡ καρδία τῶν ἀσθενούντων προσήξει τοῦ ἀκούειν, καὶ αἱ γλῶσσαι αἱ ψελλίζουσαι ταχὺ μαθήσονται λαλεῖν εἰρήνην·",
+        "VUL": "Et cor stultorum intelliget scientiam,/ et lingua balborum velociter loquetur et plane./",
+        "SYN": "И сердце легкомысленных будет уметь рассуждать; и косноязычные будут говорить ясно.",
+        "NEO": "Le cœur des hommes légers sera habile à comprendre, et la langue des bègues adroite à parler nettement.",
+        "NAB": "No more will the fool be called noble, nor the trickster be considered honorable,",
+        "VAT_ES": "el irreflexivo aprenderá a comprender y la lengua tartamuda hablará con soltura y claridad.",
+        "CEI": "Gli animi volubili si applicheranno a comprendere e la lingua dei balbuzienti parlerà spedita e con chiarezza."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לֹֽא יִקָּרֵ֥א ע֛וֹד לְ/נָבָ֖ל נָדִ֑יב וּ/לְ/כִילַ֕י לֹ֥א יֵֽאָמֵ֖ר שֽׁוֹעַ׃",
+        "LXX": "καὶ οὐκέτι μὴ εἴπωσιν τῷ μωρῷ ἄρχειν, καὶ οὐκέτι μὴ εἴπωσιν οἱ ὑπηρέται σου Σίγα.",
+        "VUL": "Non vocabitur ultra is qui insipiens est, princeps,/ neque fraudulentus appellabitur major ;/",
+        "SYN": "Невежду уже не будут называть почтенным, и о коварном не скажут, что он честный.",
+        "NEO": "L’insensé ne sera plus appelé noble, et on ne dira plus du fourbe qu’il est magnanime.",
+        "VAT_ES": "Ya no se llamará noble al necio ni se dará al sinverg&uuml;enza un título honorífico.",
+        "CEI": "L'abietto non sarà chiamato più nobile né l'imbroglione sarà detto gentiluomo,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כִּ֤י נָבָל֙ נְבָלָ֣ה יְדַבֵּ֔ר וְ/לִבּ֖/וֹ יַעֲשֶׂה אָ֑וֶן לַ/עֲשׂ֣וֹת חֹ֗נֶף וּ/לְ/דַבֵּ֤ר אֶל יְהוָה֙ תּוֹעָ֔ה לְ/הָרִיק֙ נֶ֣פֶשׁ רָעֵ֔ב וּ/מַשְׁקֶ֥ה צָמֵ֖א יַחְסִֽיר׃",
+        "LXX": "ὁ γὰρ μωρὸς μωρὰ λαλήσει, καὶ ἡ καρδία αὐτοῦ μάταια νοήσει, τοῦ συντελεῖν ἄνομα καὶ λαλεῖν πρὸς Κύριον πλάνησιν, τοῦ διασπεῖραι ψυχὰς πεινώσας, καὶ τὰς ψυχὰς τὰς διψώσας κενὰς ποιήσει.",
+        "VUL": "stultus enim fatua loquetur,/ et cor ejus faciet iniquitatem,/ ut perficiat simulationem,/ et loquatur ad Dominum fraudulenter,/ et vacuam faciat animam esurientis,/ et potum sitienti auferat./",
+        "SYN": "Ибо невежда говорит глупое, и сердце его помышляет о беззаконном, чтобы действовать лицемерно и произносить хулу на Господа, душу голодного лишать хлеба и отнимать питье у жаждущего.",
+        "NEO": "Car l’insensé parle follement, et son cœur s’adonne à l’iniquité, pour faire des choses impies, et proférer des paroles fausses contre \\+w Yahweh|strong=\"H3068\"\\+w**, pour laisser avide l’âme de celui qui a faim, et ôter le breuvage à celui qui a soif.",
+        "NAB": "For the fool speaks foolishly, planning evil in his heart:. How to do wickedness, to speak perversely against the LORD, To let the hungry go empty and the thirsty be without drink,",
+        "VAT_ES": "Porque el necio dice necedades y su corazón maquina el mal, para proceder con impiedad y proferir aberraciones contra el Señor para dejar al hambriento con el estómago vacío y privar de bebida al sediento.",
+        "CEI": "poiché l'abietto fa discorsi abietti e il suo cuore trama iniquità, per commettere empietà e affermare errori intorno al Signore, per lasciare vuoto lo stomaco dell'affamato e far mancare la bevanda all'assetato."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/כֵלַ֖י כֵּלָ֣י/ו רָעִ֑ים ה֚וּא זִמּ֣וֹת יָעָ֔ץ לְ/חַבֵּ֤ל ענוים עֲנִיִּים֙ בְּ/אִמְרֵי שֶׁ֔קֶר וּ/בְ/דַבֵּ֥ר אֶבְי֖וֹן מִשְׁפָּֽט׃",
+        "LXX": "ἡ γὰρ βουλὴ τῶν πονηρῶν ἄνομα βουλεύσεται, καταφθεῖραι ταπεινοὺς ἐν λόγοις ἀδίκοις καὶ διασκεδάσαι λόγους ταπεινῶν ἐν κρίσει.",
+        "VUL": "Fraudulenti vasa pessima sunt ;/ ipse enim cogitationes concinnavit/ ad perdendos mites in sermone mendacii,/ cum loqueretur pauper judicium./",
+        "SYN": "У коварного и действования гибельные: он замышляет ковы, чтобы погубить бедного словами лжи, хотя бы бедный был и прав.",
+        "NEO": "Les armes du fourbe sont déloyales ; il ourdit des intrigues, pour perdre les humbles par des mensonges, et le pauvre alors même qu’il parle justice.",
+        "NAB": "And the trickster uses wicked trickery, planning crimes: How to ruin the poor with lies, and the needy when they plead their case.",
+        "VAT_ES": "En cuanto al sinverg&uuml;enza. usa malas artes, no planea más que infamias, para arruinar a los indigentes con engaños, cuando el pobre reclama su derecho.",
+        "CEI": "L'imbroglione - iniqui sono i suoi imbrogli - macchina scelleratezze per rovinare gli oppressi con parole menzognere, anche quando il povero può provare il suo diritto."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/נָדִ֖יב נְדִיב֣וֹת יָעָ֑ץ וְ/ה֖וּא עַל נְדִיב֥וֹת יָקֽוּם׃",
+        "LXX": "οἱ δὲ εὐσεβεῖς συνετὰ ἐβουλεύσαντο, καὶ αὕτη ἡ βουλὴ μενεῖ.",
+        "VUL": "Princeps vero ea quæ digna sunt principe cogitabit,/ et ipse super duces stabit.]",
+        "SYN": "А честный и мыслит о честном и твердо стоит во всем, что честно.",
+        "NEO": "Mais le noble a de nobles desseins, et il se lèvera pour de nobles actions.",
+        "NAB": "But the noble man plans noble things, and by noble things he stands.",
+        "VAT_ES": "El hombre noble, en cambio, piensa noblemente y se mantiene firme en su nobleza.",
+        "CEI": "Il nobile invece si propone cose nobili e agisce sempre con nobiltà."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "נָשִׁים֙ שַֽׁאֲנַנּ֔וֹת קֹ֖מְנָה שְׁמַ֣עְנָה קוֹלִ֑/י בָּנוֹת֙ בֹּֽטח֔וֹת הַאְזֵ֖נָּה אִמְרָתִֽ/י׃",
+        "LXX": "Γυναῖκες πλούσιαι, ἀνάστητε καὶ ἀκούσατε τῆς φωνῆς μου· θυγατέρες ἐν ἐλπίδι, εἰσακούσατε λόγους μου.",
+        "VUL": "[Mulieres opulentæ, surgite,/ et audite vocem meam ;/ filiæ confidentes,/ percipite auribus eloquium meum./",
+        "SYN": "Женщины беспечные! встаньте, послушайте голоса моего; дочери беззаботные! приклоните слух к моим словам.",
+        "NEO": "Femmes nonchalantes, levez-vous, écoutez ma voix ! Filles sans souci, prêtez l’oreille à ma parole !",
+        "NAB": "O complacent ladies, rise up and hear my voice, overconfident women, give heed to my words.",
+        "VAT_ES": "&iexcl;De pie, mujeres indolentes, escuchen mi voz! &iexcl;Presten oído a mi palabra, mujeres demasiado confiadas!",
+        "CEI": "Donne spensierate, suvvia ascoltate la mia voce; figlie baldanzose, porgete l'orecchio alle mie parole."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "יָמִים֙ עַל שָׁנָ֔ה תִּרְגַּ֖זְנָה בֹּֽטְח֑וֹת כִּ֚י כָּלָ֣ה בָצִ֔יר אֹ֖סֶף בְּלִ֥י יָבֽוֹא׃",
+        "LXX": "ἡμέρας ἐνιαυτοῦ μνείαν ποιήσασθε ἐν ὀδύνῃ μετ’ ἐλπίδος· ἀνήλωται ὁ τρυγητός, πέπαυται, οὐκέτι μὴ ἔλθῃ.",
+        "VUL": "Post dies enim et annum,/ vos conturbabimini confidentes ;/ consummata est enim vindemia,/ collectio ultra non veniet./",
+        "SYN": "Еще несколько дней сверх года, и ужаснетесь, беспечные! ибо не будет обирания винограда, и время жатвы не настанет.",
+        "NEO": "Dans un an et quelques jours vous tremblerez, insouciantes, car il n’y aura pas de vendange ; la récolte des fruits ne se fera pas.",
+        "NAB": "In a little more than a year you overconfident ones will be shaken; The vintage will fail, there will be no harvest.",
+        "VAT_ES": "Dentro de un año y nos días, ustedes temblarán, mujeres confiadas, porque terminará la vendimia y no llegará la cosecha.",
+        "CEI": "Fra un anno e più giorni voi tremerete, o baldanzose, perché finita la vendemmia non ci sarà più raccolto."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "חִרְדוּ֙ שַֽׁאֲנַנּ֔וֹת רְגָ֖זָה בֹּֽטְח֑וֹת פְּשֹׁ֣טָֽה וְ/עֹ֔רָה וַ/חֲג֖וֹרָה עַל חֲלָצָֽיִם׃",
+        "LXX": "ἔκστητε, λυπήθητε αἱ πεποιθυῖαι, ἐκδύσασθε, γυμναὶ γένεσθε, περιζώσασθε τὰς ὀσφῦς",
+        "VUL": "Obstupescite, opulentæ ;/ conturbamini, confidentes :/ exuite vos et confundimini ;/ accingite lumbos vestros./",
+        "SYN": "Содрогнитесь, беззаботные! ужаснитесь, беспечные! сбросьте одежды, обнажитесь и препояшьте чресла.",
+        "NEO": "Soyez dans l’effroi, nonchalantes ! Tremblez, insouciantes ! Otez vos riches vêtements, dépouillez-vous, ceignez vos reins de sacs.",
+        "NAB": "Tremble, you who are complacent! Shudder, you who are overconfident! Strip yourselves bare, with only a loincloth to cover you,",
+        "VAT_ES": "&iexcl;Tiemblen, indolentes, estremézcanse, confiadas, desvístanse, desnúdense, cíñanse la cintura!",
+        "CEI": "Temete, o spensierate; tremate, o baldanzose, deponete le vesti, spogliatevi, cingetevi i fianchi di sacco."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "עַל שָׁדַ֖יִם סֹֽפְדִ֑ים עַל שְׂדֵי חֶ֕מֶד עַל גֶּ֖פֶן פֹּרִיָּֽה׃",
+        "LXX": "καὶ ἐπὶ τῶν μαστῶν κόπτεσθε, ἀπὸ ἀγροῦ ἐπιθυμήματος καὶ ἀμπέλου γενήματος.",
+        "VUL": "Super ubera plangite,/ super regione desiderabili,/ super vinea fertili./",
+        "SYN": "Будут бить себя в грудь о прекрасных полях, о виноградной лозе плодовитой.",
+        "NEO": "On se lamente, en se frappant le sein, sur les belles campagnes, sur les vignes fécondes.",
+        "NAB": "Beat your breasts for the pleasant fields, the fruitful vine,",
+        "VAT_ES": "Laméntense por los campos, por los campos deliciosos, por las viñas fértiles,",
+        "CEI": "Battetevi il petto per le campagne amene, per i fertili vigneti,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "עַ֚ל אַדְמַ֣ת עַמִּ֔/י ק֥וֹץ שָׁמִ֖יר תַּֽעֲלֶ֑ה כִּ֚י עַל כָּל בָּתֵּ֣י מָשׂ֔וֹשׂ קִרְיָ֖ה עַלִּיזָֽה׃",
+        "LXX": "ἡ γῆ τοῦ λαοῦ μου, ἄκανθα καὶ χόρτος ἀναβήσεται, καὶ ἐκ πάσης οἰκίας εὐφροσύνη ἀρθήσεται· πόλις πλουσία,",
+        "VUL": "Super humum populi mei/ spinæ et vepres ascendent :/ quanto magis super omnes domos gaudii/ civitatis exsultantis !/",
+        "SYN": "На земле народа моего будут расти терны и волчцы, равно и на всех домах веселья в ликующем городе;",
+        "NEO": "Sur la terre de mon peuple croissent les épines et les ronces, même sur toutes les maisons de plaisir de la cité joyeuse.",
+        "NAB": "And the soil of my people, overgrown whth thorns and briers; For all the joyful houses, the wanton city.",
+        "VAT_ES": "por el suelo de mi pueblo, porque crecerán espinas y zarzas en todas las casas felices de la ciudad alegre.",
+        "CEI": "per la terra del mio popolo, nella quale cresceranno spine e pruni, per tutte le case in gioia, per la città gaudente;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כִּֽי אַרְמ֣וֹן נֻטָּ֔שׁ הֲמ֥וֹן עִ֖יר עֻזָּ֑ב עֹ֣פֶל וָ/בַ֜חַן הָיָ֨ה בְעַ֤ד מְעָרוֹת֙ עַד עוֹלָ֔ם מְשׂ֥וֹשׂ פְּרָאִ֖ים מִרְעֵ֥ה עֲדָרִֽים׃",
+        "LXX": "οἶκοι ἐγκαταλελιμμένοι πλοῦτον πόλεως ἀφήσουσιν, οἴκους ἐπιθυμήματος· καὶ ἔσονται αἱ κῶμαι σπήλαια ἕως τοῦ αἰῶνος, εὐφροσύνη ὄνων ἀγρίων, βοσκήματα ποιμένων,",
+        "VUL": "Domus enim dimissa est,/ multitudo urbis relicta est,/ tenebræ et palpatio/ factæ sunt super speluncas usque in æternum ;/ gaudium onagrorum,/ pascua gregum./",
+        "SYN": "ибо чертоги будут оставлены; шумный город будет покинут; Офел и башня навсегда будут служить, вместо пещер, убежищем диких ослов и пасущихся стад,",
+        "NEO": "Car le palais est abandonné, la ville bruyante est devenue une solitude ; Ophel et la Tour de garde servent à jamais de repaires, de lieux d’ébats aux ânes sauvages, et de pâturage aux troupeaux.",
+        "NAB": "Yes, the castle will be forsaken, the noisy city deserted;",
+        "VAT_ES": "Sí, la ciudadela ha quedado desierta y la ciudad tumultuosa, abandonada, Ofel y la Torre de guardia serán madrigueras para siempre, delicia de los asnos salvajes, pastizal para los rebaños...",
+        "CEI": "poiché il palazzo sarà abbandonato, la città rumorosa sarà deserta, l'Ofel e il torrione diventeranno caverne per sempre, gioia degli asini selvatici, pascolo di mandrie."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "עַד יֵ֨עָרֶ֥ה עָלֵ֛י/נוּ ר֖וּחַ מִ/מָּר֑וֹם וְ/הָיָ֤ה מִדְבָּר֙ לַ/כַּרְמֶ֔ל ו/כרמל וְ/הַ/כַּרְמֶ֖ל לַ/יַּ֥עַר יֵחָשֵֽׁב׃",
+        "LXX": "ἕως ἂν ἔλθῃ ἐφ’ ὑμᾶς πνεῦμα ἀφ’ ὑψηλοῦ. καὶ ἔσται ἔρημος ὁ Χερμέλ, καὶ ὁ Χερμὲλ εἰς δρυμὸν λογισθήσεται.",
+        "VUL": "Donec effundatur super nos/ spiritus de excelso,/ et erit desertum in carmel,/ et carmel in saltum reputabitur./",
+        "SYN": "доколе не излиется на нас Дух свыше, и пустыня не сделается садом, а сад не будут считать лесом.",
+        "NEO": "Jusqu’à ce que soit répandu sur nous un esprit d’en haut, et que le désert devienne un verger, et que le verger soit réputé une forêt.",
+        "NAB": "Until the spirit from on high is poured out on us. Then will the desert become an orchard and the orchard be regarded as a forest.",
+        "CEI": "Ma infine in noi sarà infuso uno spirito dall'alto; allora il deserto diventerà un giardino e il giardino sarà considerato una selva."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/שָׁכַ֥ן בַּ/מִּדְבָּ֖ר מִשְׁפָּ֑ט וּ/צְדָקָ֖ה בַּ/כַּרְמֶ֥ל תֵּשֵֽׁב׃",
+        "LXX": "καὶ ἀναπαύσεται ἐν τῇ ἐρήμῳ κρίμα, καὶ δικαιοσύνη ἐν τῷ Καρμήλῳ κατοικήσει·",
+        "VUL": "Et habitabit in solitudine judicium,/ et justitia in carmel sedebit./",
+        "SYN": "Тогда суд водворится в этой пустыне, и правосудие будет пребывать на плодоносном поле.",
+        "NEO": "Alors la droiture habitera dans le désert, et la justice s’établira dans le verger,",
+        "NAB": "Right will dwell in the desert and justice abide in the orchard.",
+        "VAT_ES": "En el desierto habitará el derecho y la justicia morará en el vergel.",
+        "CEI": "Nel deserto prenderà dimora il diritto e la giustizia regnerà nel giardino."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֛ה מַעֲשֵׂ֥ה הַ/צְּדָקָ֖ה שָׁל֑וֹם וַֽ/עֲבֹדַת֙ הַ/צְּדָקָ֔ה הַשְׁקֵ֥ט וָ/בֶ֖טַח עַד עוֹלָֽם׃",
+        "LXX": "καὶ ἔσται τὰ ἔργα τῆς δικαιοσύνης εἰρήνη, καὶ κρατήσει ἡ δικαιοσύνη ἀνάπαυσιν, καὶ πεποιθότες ἕως τοῦ αἰῶνος·",
+        "VUL": "Et erit opus justitiæ pax,/ et cultus justitiæ silentium,/ et securitas usque in sempiternum./",
+        "SYN": "И делом правды будет мир, и плодом правосудия - спокойствие и безопасность вовеки.",
+        "NEO": "Et le produit de la justice sera la paix, et le fruit de la justice le repos et la sécurité pour jamais.",
+        "NAB": "Justice will bring about peace; right will produce calm and security.",
+        "VAT_ES": "La obra de la justicia será la paz, y el fruto de la justicia, la tranquilidad y la seguridad para siempre.",
+        "CEI": "Effetto della giustizia sarà la pace, frutto del diritto una perenne sicurezza."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/יָשַׁ֥ב עַמִּ֖/י בִּ/נְוֵ֣ה שָׁל֑וֹם וּֽ/בְ/מִשְׁכְּנוֹת֙ מִבְטַחִ֔ים וּ/בִ/מְנוּחֹ֖ת שַׁאֲנַנּֽוֹת׃",
+        "LXX": "καὶ οἰκήσει ὁ λαὸς αὐτοῦ ἐν πόλει εἰρήνης καὶ ἐνοικήσει πεποιθώς, καὶ ἀναπαύσονται μετὰ πλούτου.",
+        "VUL": "Et sedebit populus meus in pulchritudine pacis,/ et in tabernaculis fiduciæ,/ et in requie opulenta./",
+        "SYN": "Тогда народ мой будет жить в обители мира и в селениях безопасных, и в покоищах блаженных.",
+        "NEO": "Mon peuple habitera dans un séjour de paix, dans des habitations sûres, dans des demeures tranquilles.",
+        "NAB": "My people will live in peaceful country, in secure dwellings and quiet resting places.",
+        "VAT_ES": "Mi pueblo habitará en un lugar de paz, en moradas seguras, en descansos tranquilos",
+        "CEI": "Il mio popolo abiterà in una dimora di pace, in abitazioni tranquille, in luoghi sicuri,"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וּ/בָרַ֖ד בְּ/רֶ֣דֶת הַ/יָּ֑עַר וּ/בַ/שִּׁפְלָ֖ה תִּשְׁפַּ֥ל הָ/עִֽיר׃",
+        "LXX": "ἡ δὲ χάλαζα ἐὰν καταβῇ, οὐκ ἐφ’ ὑμᾶς ἥξει. καὶ ἔσονται οἱ ἐνοικοῦντες ἐν τοῖς δρυμοῖς πεποιθότες ὡς ἐν τῇ πεδινῇ.",
+        "VUL": "Grando autem in descensione saltus,/ et humilitate humiliabitur civitas./",
+        "SYN": "И град будет падать на лес, и город спустится в долину.",
+        "NEO": "Mais la forêt sera tombée sous la grêle, et la ville profondément abaissée.",
+        "NAB": "Down it comes, as trees come down in the forest! The city will be utterly laid low. Hill and tower will become wasteland forever for wild asses to frolic in, and flocks to pasture,",
+        "VAT_ES": "–pero la selva caerá abatida y la ciudad será humillada por completo–.",
+        "CEI": "anche se la selva cadrà e la città sarà sprofondata."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "אַשְׁרֵי/כֶ֕ם זֹרְעֵ֖י עַל כָּל מָ֑יִם מְשַׁלְּחֵ֥י רֶֽגֶל הַ/שּׁ֖וֹר וְ/הַ/חֲמֽוֹר׃",
+        "LXX": "μακάριοι οἱ σπείροντες ἐπὶ πᾶν ὕδωρ, οὗ βοῦς καὶ ὄνος πατεῖ.",
+        "VUL": "Beati qui seminatis super omnes aquas,/ immittentes pedem bovis et asini.]",
+        "SYN": "Блаженны вы, сеющие при всех водах и посылающие туда вола и осла.",
+        "NEO": "Heureux, vous qui semez partout près des eaux et qui laissez en liberté le pied du bœuf et de l’âne !",
+        "NAB": "Happy are you who sow beside every stream, and let the ox and the ass go freely!",
+        "VAT_ES": "&iexcl;Felices ustedes, los que siembran junto al agua. los que dejan sueltos al buey y al asno!",
+        "CEI": "Beati voi! Seminerete in riva a tutti i ruscelli e lascerete in libertà buoi e asini."
+      }
+    }
+  }
+}

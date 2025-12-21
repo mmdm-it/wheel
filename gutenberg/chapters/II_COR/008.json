@@ -1,0 +1,420 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "II_COR_008",
+  "book_key": "II_COR",
+  "sequence": 8,
+  "chapter_in": {
+    "MT": 8,
+    "VUL": 8,
+    "LXX": 8
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Γνωρίζομεν δὲ ὑμῖν, ἀδελφοί, τὴν χάριν τοῦ θεοῦ τὴν δεδομένην ἐν ταῖς ἐκκλησίαις τῆς Μακεδονίας·",
+        "VUL": "Notam autem facimus vobis, fratres, gratiam Dei, quæ data est in ecclesiis Macedoniæ :",
+        "SYN": "Уведомляем вас, братия, о благодати Божией, данной церквам Македонским,",
+        "NEO": "Nous vous faisons connaître, frères, la grâce que Dieu a faite aux fidèles des* Églises de Macédoine.",
+        "NAB": "We want you to know, brothers, of the grace of God that has been given to the churches of Macedonia,",
+        "VAT_ES": "Ahora, hermanos, queremos informarles acerca de la gracia que Dios ha concedido a las Iglesias de Macedonia.",
+        "CEI": "Per il resto, fratelli mei, state lieti nel Signore. A me non pesa e a voi è utile che vi scriva le stesse cose:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "ὅτι ἐν πολλῇ δοκιμῇ θλίψεως ἡ περισσεία τῆς χαρᾶς αὐτῶν καὶ ἡ κατὰ βάθους πτωχεία αὐτῶν ἐπερίσσευσεν εἰς τὸν πλοῦτον τῆς ἁπλότητος αὐτῶν.",
+        "VUL": "quod in multo experimento tribulationis abundantia gaudii ipsorum fuit, et altissima paupertas eorum, abundavit in divitias simplicitatis eorum :",
+        "SYN": "ибо они среди великого испытания скорбями преизобилуют радостью; и глубокая нищета их преизбыточествует в богатстве их радушия.",
+        "NEO": "Au milieu de beaucoup de tribulations qui les ont éprouvés, leur joie a été pleine, et leur profonde pauvreté a produit les abondantes largesses de leur simplicité.",
+        "NAB": "for in a severe test of affliction, the abundance of their joy and their profound poverty overflowed in a wealth of generosity on their part.",
+        "VAT_ES": "Porque, a pesar de las grandes tribulaciones con que fueron probadas, la abundancia de su gozo y su extrema pobreza han desbordado en tesoros de generosidad.",
+        "CEI": "guardatevi dai cani, guardatevi dai cattivi operai, guardatevi da quelli che si fanno circoncidere!"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Ὅτι κατὰ δύναμιν, μαρτυρῶ, καὶ ὑπὲρ δύναμιν αὐθαίρετοι,",
+        "VUL": "quia secundum virtutem testimonium illis reddo, et supra virtutem voluntarii fuerunt,",
+        "SYN": "Ибо они доброхотны по силам и сверх сил -- я свидетель:",
+        "NEO": "Je l’atteste, ils ont donné volontairement selon leurs moyens, et même au delà de leurs moyens,",
+        "NAB": "For according to their means, I can testify, and beyond their means, spontaneously,",
+        "VAT_ES": "Puedo asegurarles que ellos estaban dispuestos a dar según sus posibilidades y más todavía: por propia iniciativa,",
+        "CEI": "Siamo infatti noi i veri circoncisi, noi che rendiamo il culto mossi dallo Spirito di Dio e ci gloriamo in Cristo Gesù, senza avere fiducia nella carne,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "μετὰ πολλῆς παρακλήσεως δεόμενοι ἡμῶν, τὴν χάριν καὶ τὴν κοινωνίαν τῆς διακονίας τῆς εἰς τοὺς ἁγίους·",
+        "VUL": "cum multa exhortatione obsecrantes nos gratiam, et communicationem ministerii, quod fit in sanctos.",
+        "SYN": "они весьма убедительно просили нас принять дар и участие _их_ в служении святым;",
+        "NEO": "nous demandant avec de grandes instances la grâce de prendre part à ce ministère en faveur des saints.+ 8:4 VIII, 4. Aux saints, aux chrétiens pauvres de Jérusalem (Rom. xv, 26 ; I Cor. xvi, 1).*",
+        "NAB": "they begged us insistently for the favor of taking part in the service to the holy ones,",
+        "VAT_ES": "ellos nos pidieron, con viva insistencia, que les permitiéramos participar de este servicio en favor de los hermanos de Jerusalén.",
+        "CEI": "sebbene io possa vantarmi anche nella carne. Se alcuno ritiene di poter confidare nella carne, io più di lui:"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "καὶ οὐ καθὼς ἠλπίσαμεν, ἀλλ’ ἑαυτοὺς ἔδωκαν πρῶτον τῷ κυρίῳ, καὶ ἡμῖν διὰ θελήματος θεοῦ",
+        "VUL": "Et non sicut speravimus, sed semetipsos dederunt primum Domino, deinde nobis per voluntatem Dei,",
+        "SYN": "и не только то, чего мы надеялись, но они отдали самих себя, во-первых, Господу, _потом_ и нам по воле Божией;",
+        "NEO": "Et non seulement ils ont rempli notre espérance, mais ils se sont donnés eux-mêmes, d’abord+ 8:5 5. D’abord et \\+qt puis\\+qt* (ce dernier mot ne se trouve que dans la Vulgate) marquent un ordre, non de succession, mais de dignité.* au Seigneur, puis à nous, sous l’impulsion de Dieu.",
+        "NAB": "and this, not as we expected, but they gave themselves first to the Lord and to us through the will of God,",
+        "VAT_ES": "Y superando nuestras esperanzas, ellos se entregaron, en primer lugar al Señor, y luego a nosotros, por la voluntad de Dios.",
+        "CEI": "circonciso l'ottavo giorno, della stirpe d'Israele, della tribù di Beniamino, ebreo da Ebrei, fariseo quanto alla legge;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "εἰς τὸ παρακαλέσαι ἡμᾶς Τίτον, ἵνα καθὼς προενήρξατο, οὕτως καὶ ἐπιτελέσῃ εἰς ὑμᾶς καὶ τὴν χάριν ταύτην.",
+        "VUL": "ita ut rogaremus Titum, ut quemadmodum cpit, ita et perficiat in vobis etiam gratiam istam.",
+        "SYN": "поэтому мы просили Тита, чтобы он, как начал, так и окончил у вас и это доброе дело.",
+        "NEO": "Nous avons donc prié Tite d’aller aussi chez vous achever cette œuvre de charité, comme il l’avait commencée.",
+        "NAB": "so that we urged Titus that, as he had already begun, he should also complete for you this gracious act also.",
+        "VAT_ES": "Por eso, hemos rogado a Tito que lleve a feliz término entre ustedes esta obra de generosidad, de la misma manera que la había comenzado.",
+        "CEI": "quanto a zelo, persecutore della Chiesa; irreprensibile quanto alla giustizia che deriva dall'osservanza della legge."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ ὥσπερ ἐν παντὶ περισσεύετε, πίστει, καὶ λόγῳ, καὶ γνώσει, καὶ πάσῃ σπουδῇ, καὶ τῇ ἐξ ὑμῶν ἐν ἡμῖν ἀγάπῃ, ἵνα καὶ ἐν ταύτῃ τῇ χάριτι περισσεύητε.",
+        "VUL": "Sed sicut in omnibus abundatis fide, et sermone, et scientia, et omni sollicitudine, insuper et caritate vestra in nos, ut et in hac gratia abundetis.",
+        "SYN": "А как вы изобилуете всем: верою и словом, и познанием, и всяким усердием, и любовью вашею к нам, -- так изобилуйте и сею добродетелью.",
+        "NEO": "De même que vous excellez en toutes choses, en foi, en parole, en connaissance, en zèle à tous égards et en affection pour nous, faites en sorte d’exceller aussi dans cette œuvre de bienfaisance.",
+        "NAB": "Now as you excel in every respect, in faith, discourse, knowledge, all earnestness, and in the love we have for you, may you excel in this gracious act also.",
+        "VAT_ES": "Y ya que ustedes se distinguen en todo: en fe, en elocuencia, en ciencia, en toda clase de solicitud por los demás, y en el amor que nosotros les hemos comunicado, espero que también se distingan en generosidad.",
+        "CEI": "Ma quello che poteva essere per me un guadagno, l'ho considerato una perdita a motivo di Cristo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Οὐ κατ’ ἐπιταγὴν λέγω, ἀλλὰ διὰ τῆς ἑτέρων σπουδῆς καὶ τὸ τῆς ὑμετέρας ἀγάπης γνήσιον δοκιμάζων.",
+        "VUL": "Non quasi imperans dico : sed per aliorum sollicitudinem, etiam vestræ caritatis ingenium bonum comprobans.",
+        "SYN": "Говорю это не в виде повеления, но усердием других испытываю искренность и вашей любви.",
+        "NEO": "Je ne dis pas cela pour donner un ordre, mais je profite du zèle des autres pour mettre aussi à l’épreuve la sincérité de votre propre charité.",
+        "NAB": "I say this not by way of command, but to test the genuineness of your love by your concern for others.",
+        "VAT_ES": "Esta no es una orden: solamente quiero que manifiesten la sinceridad de su amor, mediante la solicitud por los demás.",
+        "CEI": "Anzi, tutto ormai io reputo una perdita di fronte alla sublimità della conoscenza di Cristo Gesù, mio Signore, per il quale ho lasciato perdere tutte queste cose e le considero come spazzatura, al fine di guadagnare Cristo"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Γινώσκετε γὰρ τὴν χάριν τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ, ὅτι δι’ ὑμᾶς ἐπτώχευσεν, πλούσιος ὤν, ἵνα ὑμεῖς τῇ ἐκείνου πτωχείᾳ πλουτήσητε.",
+        "VUL": "Scitis enim gratiam Domini nostri Jesu Christi, quoniam propter vos egenus factus est, cum esset dives, ut illius inopia vos divites essetis.",
+        "SYN": "Ибо вы знаете благодать Господа нашего Иисуса Христа, что Он, будучи богат, обнищал ради вас, дабы вы обогатились Его нищетою.",
+        "NEO": "Car vous savez la grâce de notre Seigneur Jésus-Christ, qui pour vous s’est fait pauvre, de riche qu’il était, afin de vous faire riches par sa pauvreté.",
+        "NAB": "For you know the gracious act of our Lord Jesus Christ, that for your sake he became poor although he was rich, so that by his poverty you might become rich.",
+        "VAT_ES": "Ya conocen la generosidad de nuestro Señor Jesucristo que, siendo rico, se hizo pobre por nosotros, a fin de enriquecernos con su pobreza.",
+        "CEI": "e di essere trovato in lui, non con una mia giustizia derivante dalla legge, ma con quella che deriva dalla fede in Cristo, cioè con la giustizia che deriva da Dio, basata sulla fede."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Καὶ γνώμην ἐν τούτῳ δίδωμι· τοῦτο γὰρ ὑμῖν συμφέρει, οἵτινες οὐ μόνον τὸ ποιῆσαι ἀλλὰ καὶ τὸ θέλειν προενήρξασθε ἀπὸ πέρυσι.",
+        "VUL": "Et consilium in hoc do : hoc enim vobis utile est, qui non solum facere, sed et velle cpistis ab anno priore :",
+        "SYN": "Я даю на это совет: ибо это полезно вам, которые не только начали делать сие, но и желали того еще с прошедшего года.",
+        "NEO": "C’est un avis que je donne ici, car vous n’avez pas besoin d’autre chose, vous qui, les premiers, avez commencé dès l’an passé non seulement à exécuter, mais aussi à former le dessein.",
+        "NAB": "And I am giving counsel in this matter, for it is appropriate for you who began not only to act but to act willingly last year:",
+        "VAT_ES": "Por eso, quiero darles un consejo que les será provechoso, ya que ustedes, el año pasado, fueron los primeros, no sólo en emprender esta obra, sino también en decidir su realización.",
+        "CEI": "E questo perché io possa conoscere lui, la potenza della sua risurrezione, la partecipazione alle sue sofferenze, diventandogli conforme nella morte,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Νυνὶ δὲ καὶ τὸ ποιῆσαι ἐπιτελέσατε, ὅπως, καθάπερ ἡ προθυμία τοῦ θέλειν, οὕτως καὶ τὸ ἐπιτελέσαι ἐκ τοῦ ἔχειν.",
+        "VUL": "nunc vero et facto perficite : ut quemadmodum promptus est animus voluntatis, ita sit et perficiendi ex eo quod habetis.",
+        "SYN": "Совершите же теперь самое дело, дабы, чего усердно желали, то и исполнено было по достатку.",
+        "NEO": "Maintenant donc achevez aussi l’œuvre elle-même, afin que l’exécution selon vos moyens réponde chez vous à l’empressement de la volonté.",
+        "NAB": "complete it now, so that your eager willingness may be matched by your completion of it out of what you have.",
+        "VAT_ES": "Llévenla ahora a término, para que los hechos respondan, según las posibilidades de cada uno, a la decisión de la voluntad.",
+        "CEI": "con la speranza di giungere alla risurrezione dai morti."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Εἰ γὰρ ἡ προθυμία πρόκειται, καθὸ ἐὰν ἔχῃ τις, εὐπρόσδεκτος, οὐ καθὸ οὐκ ἔχει.",
+        "VUL": "Si enim voluntas prompta est, secundum id quod habet, accepta est, non secundum id quod non habet.",
+        "SYN": "Ибо если есть усердие, то оно принимается смотря по тому, кто что имеет, а не по тому, чего не имеет.",
+        "NEO": "Quand la bonne volonté existe, elle est agréable, à raison de ce que l’on a, et non de ce que l’on n’a pas.",
+        "NAB": "For if the eagerness is there, it is acceptable according to what one has, not according to what one does not have;",
+        "VAT_ES": "Porque cuando existe esa decisión, a uno se lo acepta con lo que tiene y no se hace cuestión de lo que no tiene.",
+        "CEI": "Non però che io abbia già conquistato il premio o sia ormai arrivato alla perfezione; solo mi sforzo di correre per conquistarlo, perché anch'io sono stato conquistato da Gesù Cristo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Οὐ γὰρ ἵνα ἄλλοις ἄνεσις, ὑμῖν δὲ θλίψις· ἀλλ’ ἐξ ἰσότητος, ἐν τῷ νῦν καιρῷ τὸ ὑμῶν περίσσευμα εἰς τὸ ἐκείνων ὑστέρημα,",
+        "VUL": "Non enim ut aliis sit remissio, vobis autem tribulatio, sed ex æqualitate.",
+        "SYN": "Не _требуется,_ чтобы другим _было_ облегчение, а вам тяжесть, но чтобы была равномерность.",
+        "NEO": "Car il ne faut pas qu’il y ait soulagement pour les autres, et détresse pour vous, mais égalité :",
+        "NAB": "not that others should have relief while you are burdened, but that as a matter of equality",
+        "VAT_ES": "No se trata de que ustedes sufran necesidad para que otros vivan en la abundancia, sino de que haya igualdad.",
+        "CEI": "Fratelli, io non ritengo ancora di esservi giunto, questo soltanto so: dimentico del passato e proteso verso il futuro,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "ἵνα καὶ τὸ ἐκείνων περίσσευμα γένηται εἰς τὸ ὑμῶν ὑστέρημα· ὅπως γένηται ἰσότης,",
+        "VUL": "In præsenti tempore vestra abundantia illorum inopiam suppleat : ut et illorum abundantia vestræ inopiæ sit supplementum, ut fiat æqualitas, sicut scriptum est :",
+        "SYN": "Ныне ваш избыток в _восполнение_ их недостатка; а после их избыток в _восполнение_ вашего недостатка, чтобы была равномерность,",
+        "NEO": "dans la circonstance présente, votre superflu supplée à ce qui leur manque, afin que pareillement leur superflu+ 8:14 14. Leur superflu doit s’entendre ici surtout des biens spirituels que les prières des fervents chrétiens de Jérusalem obtiendront du Seigneur pour les Corinthiens (Rom. xv, 27). — \\+qt Écrit\\+qt*, Ex. xvi, 18, où il est question de la manne.* pourvoie à vos besoins, en sorte qu’il y ait égalité,",
+        "NAB": "your surplus at the present time should supply their needs, so that their surplus may also supply your needs, that there may be equality.",
+        "VAT_ES": "En el caso presente, la abundancia de ustedes suple la necesidad de ellos, para que un día, la abundancia de ellos supla la necesidad de ustedes. Así habrá igualdad,",
+        "CEI": "corro verso la mèta per arrivare al premio che Dio ci chiama a ricevere lassù, in Cristo Gesù."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "καθὼς γέγραπται, Ὁ τὸ πολύ, οὐκ ἐπλεόνασεν· καὶ ὁ τὸ ὀλίγον, οὐκ ἠλαττόνησεν.",
+        "VUL": "Qui multum, non abundavit : et qui modicum, non minoravit.",
+        "SYN": "как написано: кто собрал много, не имел лишнего; и кто мало, не имел недостатка.",
+        "NEO": "selon qu’il est écrit : “Celui qui avait recueilli beaucoup n’avait rien de trop, et celui qui avait peu recueilli ne manquait de rien.”",
+        "NAB": "As it is written: \"Whoever had much did not have more, and whoever had little did not have less.\"",
+        "VAT_ES": "de acuerdo con lo que dice la Escritura: El que había recogido mucho no tuvo de sobra, y el que había recogido poco no sufrió escasez.",
+        "CEI": "Quanti dunque siamo perfetti, dobbiamo avere questi sentimenti; se in qualche cosa pensate diversamente, Dio vi illuminerà anche su questo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "¶Χάρις δὲ τῷ θεῷ τῷ διδόντι τὴν αὐτὴν σπουδὴν ὑπὲρ ὑμῶν ἐν τῇ καρδίᾳ Τίτου.",
+        "VUL": "Gratias autem Deo, qui dedit eamdem sollicitudinem pro vobis in corde Titi,",
+        "SYN": "Благодарение Богу, вложившему в сердце Титово такое усердие к вам.",
+        "NEO": "Grâces soient rendues à Dieu de ce qu’il a mis le même zèle pour vous dans le cœur de Tite ;",
+        "NAB": "But thanks be to God who put the same concern for you into the heart of Titus,",
+        "VAT_ES": "Doy gracias a Dios, porque ha puesto en el corazón de Tito la misma solicitud que yo tengo por ustedes.",
+        "CEI": "Intanto, dal punto a cui siamo arrivati continuiamo ad avanzare sulla stessa linea."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Ὅτι τὴν μὲν παράκλησιν ἐδέξατο, σπουδαιότερος δὲ ὑπάρχων, αὐθαίρετος ἐξῆλθεν πρὸς ὑμᾶς.",
+        "VUL": "quoniam exhortationem quidem suscepit : sed cum sollicitior esset, sua voluntate profectus est ad vos.",
+        "SYN": "Ибо, хотя и я просил его, впрочем он, будучи очень усерден, пошел к вам добровольно.",
+        "NEO": "non seulement il a bien accueilli notre prière, mais il se montre actuellement plus empressé et c’est de son plein gré qu’il part pour aller chez vous.",
+        "NAB": "for he not only welcomed our appeal but, since he is very concerned, he has gone to you of his own accord.",
+        "VAT_ES": "El, no solamente respondió a mi llamado, sino que, con más solicitud que nunca y por propia iniciativa, ha decidido ir a verlos.",
+        "CEI": "Fatevi miei imitatori, fratelli, e guardate a quelli che si comportano secondo l'esempio che avete in noi."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Συνεπέμψαμεν δὲ μετ’ αὐτοῦ τὸν ἀδελφόν, οὗ ὁ ἔπαινος ἐν τῷ εὐαγγελίῳ διὰ πασῶν τῶν ἐκκλησιῶν·",
+        "VUL": "Misimus etiam cum illo fratrem, cujus laus est in Evangelio per omnes ecclesias :",
+        "SYN": "С ним послали мы также брата, во всех церквах похваляемого за благовествование,",
+        "NEO": "Nous envoyons avec lui le frère+ 8:18 18-19. Le frère, peut-être Silas, ou S. Luc. Ce dernier () cesse de parler à la première personne au moment où notre épître fut écrite : il aurait donc été choisi pour porter à Jérusalem, en compagnie de S. Paul, la collecte qu’il avait aidé à recueillir. — Le mot \\+qt destinatam\\+qt* de la Vulgate n’est pas dans le grec.* dont toutes les Églises font l’éloge pour sa prédication de* l’Évangile,",
+        "NAB": "With him we have sent the brother who is praised in all the churches for his preaching of the gospel.",
+        "VAT_ES": "Con él les enviamos al hermano que ha merecido el elogio de todas las Iglesias, por el servicio que ha prestado al Evangelio.",
+        "CEI": "Perché molti, ve l'ho già detto più volte e ora con le lacrime agli occhi ve lo ripeto, si comportano da nemici della croce di Cristo:"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "οὐ μόνον δέ, ἀλλὰ καὶ χειροτονηθεὶς ὑπὸ τῶν ἐκκλησιῶν συνέκδημος ἡμῶν σὺν τῇ χάριτι ταύτῃ τῇ διακονουμένῃ ὑφ’ ἡμῶν πρὸς τὴν αὐτοῦ τοῦ κυρίου δόξαν καὶ προθυμίαν ἡμῶν·",
+        "VUL": "non solum autem, sed et ordinatus est ab ecclesiis comes peregrinationis nostræ in hanc gratiam, quæ ministratur a nobis ad Domini gloriam, et destinatam voluntatem nostram :",
+        "SYN": "и притом избранного от церквей сопутствовать нам для сего благотворения, которому мы служим во славу Самого Господа и _в_ _соответствие_ вашему усердию,",
+        "NEO": "et qui, de plus, a été désigné par le suffrage des Églises pour être notre compagnon de voyage, dans cette œuvre de charité que nous accomplissons à la gloire du Seigneur même, et en preuve* de notre bonne volonté.",
+        "NAB": "And not only that, but he has also been appointed our traveling companion by the churches in this gracious work administered by us for the glory of the Lord (himself) and for the expression of our eagerness.",
+        "VAT_ES": "Además, él ha sido designado por las Iglesias como nuestro compañero de viaje en esta obra de generosidad, a la cual nos consagramos para gloria del Señor y como prueba de nuestra buena voluntad.",
+        "CEI": "la perdizione però sarà la loro fine, perché essi, che hanno come dio il loro ventre, si vantano di ciò di cui dovrebbero vergognarsi, tutti intenti alle cose della terra."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "στελλόμενοι τοῦτο, μή τις ἡμᾶς μωμήσηται ἐν τῇ ἁδρότητι ταύτῃ τῇ διακονουμένῃ ὑφ’ ἡμῶν·",
+        "VUL": "devitantes hoc, ne quis nos vituperet in hac plenitudine, quæ ministratur a nobis.",
+        "SYN": "остерегаясь, чтобы нам не подвергнуться от кого нареканию при таком обилии приношений, вверяемых нашему служению;",
+        "NEO": "Nous prenons cette mesure, afin que personne ne puisse nous blâmer au sujet de cette abondante collecte à laquelle nous donnons nos soins ;",
+        "NAB": "This we desire to avoid, that anyone blame us about this lavish gift administered by us,",
+        "VAT_ES": "Nuestra intención, es evitar toda crítica con respecto a la abundante colecta que tenemos a nuestro cuidado,",
+        "CEI": "La nostra patria invece è nei cieli e di là aspettiamo come salvatore il Signore Gesù Cristo,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "προνοούμενοι καλὰ οὐ μόνον ἐνώπιον κυρίου ἀλλὰ καὶ ἐνώπιον ἀνθρώπων.",
+        "VUL": "Providemus enim bona non solum coram Deo, sed etiam coram hominibus.",
+        "SYN": "ибо мы стараемся о добром не только пред Господом, но и пред людьми.",
+        "NEO": "car nous nous préoccupons de ce qui est bien, non seulement devant Dieu, mais aussi devant les hommes.",
+        "NAB": "for we are concerned for what is honorable not only in the sight of the Lord but also in the sight of others.",
+        "VAT_ES": "procurando hacer lo que está bien, no solamente delante de Dios, sino también delante de los hombres.",
+        "CEI": "il quale trasfigurerà il nostro misero corpo per conformarlo al suo corpo glorioso, in virtù del potere che ha di sottomettere a sé tutte le cose."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Συνεπέμψαμεν δὲ αὐτοῖς τὸν ἀδελφὸν ἡμῶν, ὃν ἐδοκιμάσαμεν ἐν πολλοῖς πολλάκις σπουδαῖον ὄντα, νυνὶ δὲ πολὺ σπουδαιότερον, πεποιθήσει πολλῇ τῇ εἰς ὑμᾶς.",
+        "VUL": "Misimus autem cum illis et fratrem nostrum, quem probavimus in multis sæpe sollicitum esse : nunc autem multo sollicitiorem, confidentia multa in vos,",
+        "SYN": "Мы послали с ними и брата нашего, которого усердие много раз испытали во многом и который ныне еще усерднее по великой уверенности в вас.",
+        "NEO": "Avec eux nous envoyons [aussi] notre frère, dont nous avons souvent éprouvé le zèle en mainte occasion, et qui en montre encore plus cette fois à cause de sa grande confiance en vous.",
+        "NAB": "And with them we have sent our brother whom we often tested in many ways and found earnest, but who is now much more earnest because of his great confidence in you.",
+        "VAT_ES": "Con ellos, les enviamos a otro de nuestros hermanos, cuyo celo hemos comprobado muchas veces y de varias maneras, y que ahora se muestra más solícito todavía, por la confianza que les tiene."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Εἴτε ὑπὲρ Τίτου, κοινωνὸς ἐμὸς καὶ εἰς ὑμᾶς συνεργός· εἴτε ἀδελφοὶ ἡμῶν, ἀπόστολοι ἐκκλησιῶν, δόξα χριστοῦ.",
+        "VUL": "sive pro Tito, qui est socius meus, et in vos adjutor, sive fratres nostri, Apostoli ecclesiarum, gloria Christi.",
+        "SYN": "Что касается до Тита, это -- мой товарищ и сотрудник у вас; а что до братьев наших, это -- посланники церквей, слава Христова.",
+        "NEO": "Ainsi, pour Tite, il est mon compagnon et mon collaborateur auprès de vous ; et quant à nos frères, ils sont les envoyés des Églises, la gloire du Christ.",
+        "NAB": "As for Titus, he is my partner and co-worker for you; as for our brothers, they are apostles of the churches, the glory of Christ.",
+        "VAT_ES": "En cuanto a Tito, él es mi compañero y mi colaborador entre ustedes, y los demás hermanos son los delegados de las Iglesias y la gloria de Cristo."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Τὴν οὖν ἔνδειξιν τῆς ἀγάπης ὑμῶν, καὶ ἡμῶν καυχήσεως ὑπὲρ ὑμῶν, εἰς αὐτοὺς ἐνδείξασθε εἰς πρόσωπον τῶν ἐκκλησιῶν.",
+        "VUL": "Ostensionem ergo, quæ est caritatis vestræ, et nostræ gloriæ pro vobis, in illos ostendite in faciem ecclesiarum.",
+        "SYN": "Итак перед лицем церквей дайте им доказательство любви вашей и того, что мы _справедливо_ хвалимся вами.",
+        "NEO": "Donnez-leur donc, à la face des Églises, des preuves de votre charité, et ne démentez pas le juste orgueil que nous leur avons témoigné à votre sujet.",
+        "NAB": "So give proof before the churches of your love and of our boasting about you to them.",
+        "VAT_ES": "Pruébenles entonces su amor, y lo bien fundado de nuestro orgullo por ustedes delante de las Iglesias."
+      }
+    }
+  }
+}

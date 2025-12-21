@@ -1,0 +1,429 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IERE_018",
+  "book_key": "IERE",
+  "sequence": 18,
+  "chapter_in": {
+    "MT": 18,
+    "VUL": 18,
+    "LXX": 18
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "הַ/דָּבָר֙ אֲשֶׁ֣ר הָיָ֣ה אֶֽל יִרְמְיָ֔הוּ מֵ/אֵ֥ת יְהוָ֖ה לֵ/אמֹֽר׃",
+        "LXX": "Ὁ λόγος ὁ γενόμενος παρὰ Κυρίου πρὸς Ἰερεμίαν λέγων",
+        "VUL": "Verbum quod factum est ad Jeremiam a Domino, dicens :",
+        "SYN": "Слово, которое было к Иеремии от Господа:",
+        "NEO": "La parole qui fut adressée à Jérémie par \\+w Yahweh|strong=\"H3068\"\\+w**, en ces termes :",
+        "NAB": "This word came to Jeremiah from the LORD:",
+        "VAT_ES": "Palabra que llegó a Jeremías de parte del Señor, en estos términos:",
+        "CEI": "Questa parola fu rivolta a Geremia da parte del Signore:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "ק֥וּם וְ/יָרַדְתָּ֖ בֵּ֣ית הַ/יּוֹצֵ֑ר וְ/שָׁ֖מָּ/ה אַשְׁמִֽיעֲ/ךָ֥ אֶת דְּבָרָֽ/י׃",
+        "LXX": "Ἀνάστηθι καὶ κατάβηθι εἰς οἶκον τοῦ κεραμέως, καὶ ἐκεῖ ἀκούσῃ τοὺς λόγους μου.",
+        "VUL": "Surge, et descende in domum figuli, et ibi audies verba mea.",
+        "SYN": "встань и сойди в дом горшечника, и там Я возвещу тебе слова Мои.",
+        "NEO": "« Lève-toi et descends à la maison du potier, et là je te ferai entendre ma parole. »",
+        "NAB": "Rise up, be off to the potter's house; there I will give you my message.",
+        "VAT_ES": "«Baja ahora mismo al taller del alfarero, y allí te haré oír mis palabras».",
+        "CEI": "\"Prendi e scendi nella bottega del vasaio; là ti farò udire la mia parola\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וָ/אֵרֵ֖ד בֵּ֣ית הַ/יּוֹצֵ֑ר ו/הנ/הו וְ/הִנֵּה ה֛וּא עֹשֶׂ֥ה מְלָאכָ֖ה עַל הָ/אָבְנָֽיִם׃",
+        "LXX": "καὶ κατέβην εἰς οἶκον τοῦ κεραμέως, καὶ ἰδοὺ αὐτὸς ἐποίει ἔργον ἐπὶ τῶν λίθων,",
+        "VUL": "Et descendi in domum figuli, et ecce ipse faciebat opus super rotam.",
+        "SYN": "И сошел я в дом горшечника, и вот, он работал свою работу на кружале.",
+        "NEO": "Je descendis à la maison du potier ; et voici qu’il faisait son ouvrage sur les roues.",
+        "NAB": "I went down to the potter's house and there he was, working at the wheel.",
+        "VAT_ES": "Yo bajé al taller del alfarero, mientras el trabajaba en el torno.",
+        "CEI": "Io sono sceso nella bottega del vasaio ed ecco, egli stava lavorando al tornio."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/נִשְׁחַ֣ת הַ/כְּלִ֗י אֲשֶׁ֨ר ה֥וּא עֹשֶׂ֛ה בַּ/חֹ֖מֶר בְּ/יַ֣ד הַ/יּוֹצֵ֑ר וְ/שָׁ֗ב וַֽ/יַּעֲשֵׂ֨/הוּ֙ כְּלִ֣י אַחֵ֔ר כַּ/אֲשֶׁ֥ר יָשַׁ֛ר בְּ/עֵינֵ֥י הַ/יּוֹצֵ֖ר לַ/עֲשֽׂוֹת׃",
+        "LXX": "καὶ ἔπεσεν τὸ ἄγγιον ὃ αὐτὸς ἐποίει ἐν ταῖς χερσὶν αὐτοῦ· καὶ πάλιν αὐτὸς ἐποίησεν αὐτὸ ἄγγιον ἕτερον καθὼς ἤρεσεν ἐνώπιον αὐτοῦ ποιῆσαι.",
+        "VUL": "Et dissipatum est vas quod ipse faciebat e luto manibus suis : conversusque fecit illud vas alterum, sicut placuerat in oculis ejus ut faceret.",
+        "SYN": "И сосуд, который горшечник делал из глины, развалился в руке его; и он снова сделал из него другой сосуд, какой горшечнику вздумалось сделать.",
+        "NEO": "Et le vase qu’il faisait manqua, comme il arrive à l’argile dans la main du potier ; et il refit un autre vase, comme il parut bon aux yeux du potier de le faire.",
+        "NAB": "Whenever the object of clay which he was making turned out badly in his hand, he tried again, making of the clay another object of whatever sort he pleased.",
+        "VAT_ES": "Y cuando la vasija que estaba haciendo le salía mal, como suele pasar con la arcilla en manos del alfarero, él volvía a hacer otra, según le parecía mejor.",
+        "CEI": "Ora, se si guastava il vaso che egli stava modellando, come capita con la creta in mano al vasaio, egli rifaceva con essa un altro vaso, come ai suoi occhi pareva giusto."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֽוֹר׃",
+        "LXX": "καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factum est verbum Domini ad me, dicens :",
+        "SYN": "И было слово Господне ко мне:",
+        "NEO": "Et la parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Then the word of the Lord came to me:",
+        "VAT_ES": "Entonces la palabra del Señor me llego en estos términos:",
+        "CEI": "Allora mi fu rivolta la parola del Signore:"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "הֲ/כַ/יּוֹצֵ֨ר הַ/זֶּ֜ה לֹא אוּכַ֨ל לַ/עֲשׂ֥וֹת לָ/כֶ֛ם בֵּ֥ית יִשְׂרָאֵ֖ל נְאֻם יְהוָ֑ה הִנֵּ֤ה כַ/חֹ֨מֶר֙ בְּ/יַ֣ד הַ/יּוֹצֵ֔ר כֵּן אַתֶּ֥ם בְּ/יָדִ֖/י בֵּ֥ית יִשְׂרָאֵֽל׃",
+        "LXX": "Εἰ καθὼς ὁ κεραμεὺς οὗτος οὐ δυνήσομαι τοῦ ποιῆσαι ὑμᾶς, οἶκος Ἰσραήλ; ἰδοὺ ὡς ὁ πηλὸς τοῦ κεραμέως ὑμεῖς ἐστὲ ἐν χερσίν μου.",
+        "VUL": "[Numquid sicut figulus iste,/ non potero vobis facere, domus Israël ? ait Dominus :/ ecce sicut lutum in manu figuli,/ sic vos in manu mea, domus Israël./",
+        "SYN": "не могу ли Я поступить с вами, дом Израилев, подобно горшечнику сему? говорит Господь. Вот, что глина в руке горшечника, то вы в Моей руке, дом Израилев.",
+        "NEO": "Est-ce que je ne puis pas vous faire comme a fait ce potier, maison d’Israël ; — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** ? Oui, comme l’argile est dans la main du potier, ainsi vous êtes dans ma main, maison d’Israël.",
+        "NAB": "Can I not do to you, house of Israel, as this potter has done? says the LORD. Indeed, like clay in the hand of the potter, so are you in my hand, house of Israel.",
+        "VAT_ES": "&iquest;No puedo yo tratarlos a ustedes, casa de Israel, como ese alfarero? –oráculo del Señor–. Sí, como la arcilla en la mano del alfarero, así están ustedes en mi mano, casa de Israel.",
+        "CEI": "\"Forse non potrei agire con voi, casa di Israele, come questo vasaio? Oracolo del Signore. Ecco, come l'argilla è nelle mani del vasaio, così voi siete nelle mie mani, casa di Israele."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "רֶ֣גַע אֲדַבֵּ֔ר עַל גּ֖וֹי וְ/עַל מַמְלָכָ֑ה לִ/נְת֥וֹשׁ וְ/לִ/נְת֖וֹץ וּֽ/לְ/הַאֲבִֽיד׃",
+        "LXX": "πέρας λαλήσω ἐπὶ ἔθνος ἢ ἐπὶ βασιλείαν τοῦ ἐξᾶραι αὐτοὺς καὶ τοῦ ἀπολλύειν,",
+        "VUL": "Repente loquar adversum gentem et adversus regnum,/ ut eradicem, et destruam, et disperdam illud :/",
+        "SYN": "Иногда Я скажу о каком-либо народе и царстве, что искореню, сокрушу и погублю его;",
+        "NEO": "Tantôt je parle, touchant une nation et touchant un royaume, d’arracher, d’abattre et de détruire.",
+        "NAB": "Sometimes I threaten to uproot and tear down and destroy a nation or a kingdom.",
+        "VAT_ES": "A veces yo hablo, con respecto a una nación o a un reino, de arrancar, derribar y perder;",
+        "CEI": "Talvolta nei riguardi di un popolo o di un regno io decido di sradicare, di abbattere e di distruggere;"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/שָׁב֙ הַ/גּ֣וֹי הַ/ה֔וּא מֵ/רָ֣עָת֔/וֹ אֲשֶׁ֥ר דִּבַּ֖רְתִּי עָלָ֑י/ו וְ/נִֽחַמְתִּי֙ עַל הָ֣/רָעָ֔ה אֲשֶׁ֥ר חָשַׁ֖בְתִּי לַ/עֲשׂ֥וֹת לֽ/וֹ׃",
+        "LXX": "καὶ ἐπιστραφῇ τὸ ἔθνος ἐκεῖνο ἀπὸ πάντων τῶν κακῶν αὐτῶν, καὶ μετανοήσω περὶ τῶν κακῶν ὧν ἐλογισάμην τοῦ ποιῆσαι αὐτοῖς.",
+        "VUL": "si pnitentiam egerit gens illa a malo suo/ quod locutus sum adversus eam,/ agam et ego pnitentiam super malo/ quod cogitavi ut facerem ei./",
+        "SYN": "но если народ этот, на который Я это изрек, обратится от своих злых дел, Я отлагаю то зло, которое помыслил сделать ему.",
+        "NEO": "Mais cette nation, contre laquelle j’ai parlé, revient-elle de sa méchanceté, alors je me repens du mal que j’avais résolu de lui faire.",
+        "NAB": "But if that nation which I have threatened turns from its evil, I also repent of the evil which I threatened to do.",
+        "VAT_ES": "Pero la nación de la que hablé se convierte de su maldad, entonces me arrepiento del mal que había pensado infligirle.",
+        "CEI": "ma se questo popolo, contro il quale avevo parlato, si converte dalla sua malvagità, io mi pento del male che avevo pensato di fargli."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/רֶ֣גַע אֲדַבֵּ֔ר עַל גּ֖וֹי וְ/עַל מַמְלָכָ֑ה לִ/בְנֹ֖ת וְ/לִ/נְטֹֽעַ׃",
+        "LXX": "καὶ πέρας λαλήσω ἐπὶ ἔθνος καὶ βασιλείαν τοῦ ἀνοικοδομεῖσθαι καὶ τοῦ καταφυτεύεσθαι,",
+        "VUL": "Et subito loquar de gente et de regno,/ ut ædificem et plantem illud./",
+        "SYN": "А иногда скажу о каком-либо народе и царстве, что устрою и утвержу его;",
+        "NEO": "Tantôt je parle, touchant une nation et touchant un royaume, de bâtir et de planter.",
+        "NAB": "Sometimes, again, I promise to build up and plant a nation or a kingdom.",
+        "VAT_ES": "Otras veces hablo, con respecto a una nación o a un reino, de edificar y plantar;",
+        "CEI": "Altra volta nei riguardi di un popolo o di un regno io decido di edificare e di piantare;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/עָשָׂ֤ה ה/רעה הָ/רַע֙ בְּ/עֵינַ֔/י לְ/בִלְתִּ֖י שְׁמֹ֣עַ בְּ/קוֹלִ֑/י וְ/נִֽחַמְתִּי֙ עַל הַ/טּוֹבָ֔ה אֲשֶׁ֥ר אָמַ֖רְתִּי לְ/הֵיטִ֥יב אוֹתֽ/וֹ׃",
+        "LXX": "καὶ ποιήσωσιν τὰ πονηρὰ ἐναντίον μου τοῦ μὴ ἀκούειν τῆς φωνῆς μου, καὶ μετανοήσω περὶ τῶν ἀγαθῶν ὧν ἐλάλησα τοῦ ποιῆσαι αὐτοῖς.",
+        "VUL": "Si fecerit malum in oculis meis,/ ut non audiat vocem meam,/ pnitentiam agam super bono quod locutus sum ut facerem ei./",
+        "SYN": "но если он будет делать злое пред очами Моими и не слушаться гласа Моего, Я отменю то добро, которым хотел облагодетельствовать его.",
+        "NEO": "Mais cette nation fait-elle ce qui est mal à mes yeux, en n’écoutant pas ma voix, alors je me repens du bien que j’avais dit que je lui ferais.",
+        "NAB": "But if that nation does what is evil in my eyes, refusing to obey my voice, I repent of the good with which I promised to bless it.",
+        "VAT_ES": "pero si esa nación hace lo malo a mis ojos, sin escuchar mi voz, entonces me arrepiento del bien que había prometido hacerle.",
+        "CEI": "ma se esso compie ciò che è male ai miei occhi non ascoltando la mia voce, io mi pentirò del bene che avevo promesso di fargli."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֡ה אֱמָר נָ֣א אֶל אִישׁ יְהוּדָה֩ וְ/עַל יוֹשְׁבֵ֨י יְרוּשָׁלִַ֜ם לֵ/אמֹ֗ר כֹּ֚ה אָמַ֣ר יְהוָ֔ה הִנֵּ֨ה אָנֹכִ֜י יוֹצֵ֤ר עֲלֵי/כֶם֙ רָעָ֔ה וְ/חֹשֵׁ֥ב עֲלֵי/כֶ֖ם מַֽחֲשָׁבָ֑ה שׁ֣וּבוּ נָ֗א אִ֚ישׁ מִ/דַּרְכּ֣/וֹ הָֽ/רָעָ֔ה וְ/הֵיטִ֥יבוּ דַרְכֵי/כֶ֖ם וּ/מַעַלְלֵי/כֶֽם׃",
+        "LXX": "καὶ νῦν εἰπὸν πρὸς ἄνδρας Ἰούδα καὶ πρὸς τοὺς κατοικοῦντας Ἰερουσαλήμ Ἰδοὺ ἐγὼ πλάσσω ἐφ’ ὑμᾶς κακά, καὶ λογίζομαι ἐφ’ ὑμᾶς λογισμόν· ἀποστραφήτω δὴ ἕκαστος ἀπὸ ὁδοῦ αὐτοῦ τῆς πονηρᾶς, καὶ καλλίονα ποιήσετε τὰ ἐπιτηδεύματα ὑμῶν.",
+        "VUL": "Nunc ergo dic viro Juda, et habitatoribus Jerusalem, dicens :/ Hæc dicit Dominus :/ Ecce ego fingo contra vos malum,/ et cogito contra vos cogitationem :/ revertatur unusquisque a via sua mala,/ et dirigite vias vestras et studia vestra./",
+        "SYN": "Итак скажи мужам Иуды и жителям Иерусалима: так говорит Господь: вот, Я готовлю вам зло и замышляю против вас; итак обратитесь каждый от злого пути своего и исправьте пути ваши и поступки ваши.",
+        "NEO": "Et maintenant parle donc aux hommes de Juda, et aux habitants de Jérusalem, en ces termes : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Voici que je façonne contre vous un malheur, et que je médite un dessein contre vous. Revenez donc chacun de votre voie mauvaise, et réformez vos voies et vos œuvres.",
+        "NAB": "And now, tell this to the men of Judah and the citizens of Jerusalem: Thus says the LORD: Take care! I am fashioning evil against you and making a plan. Return, each of you, from his evil way; reform your ways and your deeds.",
+        "VAT_ES": "Y ahora, habla en estos términos a los hombres de Judá y a los habitantes de Jerusalén: Así habla el Señor: Miren que yo fabrico contra ustedes una desgracia y medito contra ustedes un proyecto, Vuelvan de su mal camino, enmienden su conducta y sus acciones.",
+        "CEI": "Ora annunzia, dunque, agli uomini di Giuda e agli abitanti di Gerusalemme: Dice il Signore: Ecco preparo contro di voi una calamità e medito contro di voi un progetto. Su, abbandonate la vostra condotta perversa, migliorate le vostre abitudini e le vostre azioni\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/אָמְר֖וּ נוֹאָ֑שׁ כִּֽי אַחֲרֵ֤י מַחְשְׁבוֹתֵ֨י/נוּ֙ נֵלֵ֔ךְ וְ/אִ֛ישׁ שְׁרִר֥וּת לִבּֽ/וֹ הָ/רָ֖ע נַעֲשֶֽׂה׃",
+        "LXX": "καὶ εἶπαν Ἀνδριούμεθα, ὅτι ὀπίσω τῶν ἀποστροφῶν ἡμῶν πορευσόμεθα, καὶ ἕκαστος τὰ ἀρεστὰ τῆς καρδίας αὐτοῦ τῆς πονηρᾶς ποιήσομεν.",
+        "VUL": "Qui dixerunt : Desperavimus :/ post cogitationes enim nostras ibimus,/ et unusquisque pravitatem cordis sui mali faciemus./",
+        "SYN": "Но они говорят: \"не надейся; мы будем жить по своим помыслам и будем поступать каждый по упорству злого своего сердца\".",
+        "NEO": "Mais ils disent : « C’est en vain ! Nous suivrons nos pensées, nous agirons chacun selon l’obstination de notre mauvais cœur. »",
+        "NAB": "But they will say, \"No use! We will follow our own devices; each one of us will behave according to the stubbornness of his evil heart!\"",
+        "VAT_ES": "Pero ellos dirán: «&iexcl;Es inútil! Queremos seguir nuestros propios designios, obraremos cada uno según los impulsos de nuestro corazón obstinado y perverso».",
+        "CEI": "Ma essi diranno: \"È inutile, noi vogliamo seguire i nostri progetti; ognuno di noi agirà secondo la caparbietà del suo cuore malvagio\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "לָ/כֵ֗ן כֹּ֚ה אָמַ֣ר יְהוָ֔ה שַֽׁאֲלוּ נָא֙ בַּ/גּוֹיִ֔ם מִ֥י שָׁמַ֖ע כָּ/אֵ֑לֶּה שַֽׁעֲרֻרִת֙ עָשְׂתָ֣ה מְאֹ֔ד בְּתוּלַ֖ת יִשְׂרָאֵֽל׃",
+        "LXX": "Διὰ τοῦτο τάδε λέγει Κύριος Ἐρωτήσατε δὴ ἐν ἔθνεσιν Τίς ἤκουσεν τοιαῦτα φρικτὰ ἃ ἐποίησεν σφόδρα παρθένος Ἰσραήλ;",
+        "VUL": "Ideo hæc dicit Dominus :/ Interrogate gentes :/ Quis audivit talia horribilia,/ quæ fecit nimis virgo Israël ?/",
+        "SYN": "Посему так говорит Господь: спросите между народами, слыхал ли кто подобное сему? крайне гнусные дела совершила дева Израилева.",
+        "NEO": "C’est pourquoi ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Interrogez les nations : Qui a jamais entendu pareille chose ? Elle a commis d’horribles abominations, la vierge d’Israël !",
+        "NAB": "Therefore thus says the LORD: Ask among the nations - who has ever heard the like? Truly horrible things has virgin Israel done!",
+        "VAT_ES": "Por eso, así habla el Señor: Pregunten entre las naciones: &iquest;Quién ha oído nada igual? Ha cometido la cosa más horrible la virgen de Israel,",
+        "CEI": "Perciò così dice il Signore: \"Informatevi tra le nazioni: chi ha mai udito cose simili? Enormi, orribili cose ha commesso la vergine di Israele."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הֲ/יַעֲזֹ֥ב מִ/צּ֛וּר שָׂדַ֖י שֶׁ֣לֶג לְבָנ֑וֹן אִם יִנָּתְשׁ֗וּ מַ֛יִם זָרִ֥ים קָרִ֖ים נוֹזְלִֽים׃",
+        "LXX": "μὴ ἐκλείψουσιν ἀπὸ πέτρας μαστοί, ἢ χιὼν ἀπὸ τοῦ Λιβάνου; μὴ ἐκκλινεῖ ὕδωρ βιαίως ἀνέμῳ φερόμενον;",
+        "VUL": "Numquid deficiet de petra agri nix Libani ?/ aut evelli possunt aquæ erumpentes frigidæ, et defluentes ?/",
+        "SYN": "Оставляет ли снег Ливанский скалу горы? и иссякают ли из других мест текущие холодные воды?",
+        "NEO": "Quitte-t-elle le rocher de la plaine, la neige du Liban ? Voit-on tarir les eaux qui viennent de loin, fraîches et courantes ?",
+        "NAB": "Does the snow of Lebanon desert the rocky heights? Do the gushing waters dry up that flow fresh down the mountains?",
+        "VAT_ES": "&iquest;Abandona las cuestas rocosas la nieve del Líbano? &iquest;Se agotan las aguas de las montañas frescas y fluyentes?",
+        "CEI": "Scompare forse dalle alte rocce la neve del Libano? Forse si inaridiscono le acque delle montagne che scorrono gelide?"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כִּֽי שְׁכֵחֻ֥/נִי עַמִּ֖/י לַ/שָּׁ֣וְא יְקַטֵּ֑רוּ וַ/יַּכְשִׁל֤וּ/ם בְּ/דַרְכֵי/הֶם֙ שְׁבִילֵ֣י עוֹלָ֔ם לָ/לֶ֣כֶת נְתִיב֔וֹת דֶּ֖רֶךְ לֹ֥א סְלוּלָֽה׃",
+        "LXX": "ὅτι ἐπελάθοντό μου λαός μου, εἰς κενὸν ἐθυμίασαν, καὶ ἀσθενήσουσιν ἐν ταῖς ὁδοῖς αὐτῶν σχοίνους αἰωνίους τοῦ ἐπιβῆναι τρίβους οὐκ ἔχοντας ὁδὸν εἰς πορείαν,",
+        "VUL": "Quia oblitus est mei populus meus,/ frustra libantes,/ et impingentes in viis suis,/ in semitis sæculi,/ ut ambularent per eas in itinere non trito,/",
+        "SYN": "А народ Мой оставил Меня; они кадят суетным, споткнулись на путях своих, оставили пути древние, чтобы ходить по стезям пути непроложенного,",
+        "NEO": "Or mon peuple m’a oublié ; il offre de l’encens au néant. Les idoles les font chanceler dans leurs voies, les chemins d’autrefois, pour suivre des sentiers, une route non frayée ;",
+        "NAB": "Yet my people have forgotten me: they burn incense to a thing that does not exist. They stumble out of their ways, the paths of old, To travel on bypaths, not the beaten track.",
+        "VAT_ES": "&iexcl;Mi pueblo, en cambio, se ha olvidado de mí! Ellos queman incienso a la Nada y han tropezado en sus caminos, en los senderos antiguos, para ir por sendas desviadas, por un camino sin trazar.",
+        "CEI": "Eppure il mio popolo mi ha dimenticato; essi offrono incenso a un idolo vano. Così hanno inciampato nelle loro strade, nei sentieri di una volta, per camminare su viottoli, per una via non appianata."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "לָ/שׂ֥וּם אַרְצָ֛/ם לְ/שַׁמָּ֖ה שרוקת שְׁרִיק֣וֹת עוֹלָ֑ם כֹּ֚ל עוֹבֵ֣ר עָלֶ֔י/הָ יִשֹּׁ֖ם וְ/יָנִ֥יד בְּ/רֹאשֽׁ/וֹ׃",
+        "LXX": "τοῦ τάξαι τὴν γῆν αὐτῶν εἰς ἀφανισμὸν καὶ σύριγμα αἰώνιον· πάντες οἱ διαπορευόμενοι αὐτῆς ἐκστήσονται καὶ κινήσουσιν τὴν κεφαλὴν αὐτῶν.",
+        "VUL": "ut fieret terra eorum in desolationem,/ et in sibilum sempiternum :/ omnis qui præterierit per eam obstupescet,/ et movebit caput suum./",
+        "SYN": "чтобы сделать землю свою ужасом, всегдашним посмеянием, так что каждый, проходящий по ней, изумится и покачает головою своею.",
+        "NEO": "Pour faire de leur pays une désolation, un objet d’éternelle moquerie ; tous ceux qui y passeront seront stupéfaits ; et hocheront la tête.",
+        "NAB": "Their land shall be turned into a desert, an object of lasting ridicule: All passers-by will be amazed, will shake their heads.",
+        "VAT_ES": "Así han hecho de su país una devastación, un motivo de burla perpetua. Todo el que pase por allí se quedará pasmado y moverá la cabeza.",
+        "CEI": "Il loro paese è una desolazione, un oggetto di scherno perenne. Chiunque passa ne rimarrà stupito e scuoterà il capo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כְּ/רֽוּחַ קָדִ֥ים אֲפִיצֵ֖/ם לִ/פְנֵ֣י אוֹיֵ֑ב עֹ֧רֶף וְ/לֹֽא פָנִ֛ים אֶרְאֵ֖/ם בְּ/י֥וֹם אֵידָֽ/ם׃",
+        "LXX": "ὡς ἄνεμον καύσωνα διασπερῶ αὐτοὺς κατὰ πρόσωπον ἐχθρῶν αὐτῶν, δείξω αὐτοῖς ἡμέραν ἀπωλείας αὐτῶν.",
+        "VUL": "Sicut ventus urens dispergam eos coram inimico :/ dorsum, et non faciem, ostendam eis in die perditionis eorum.]",
+        "SYN": "Как восточным ветром развею их пред лицем врага; спиною, а не лицем обращусь к ним в день бедствия их.",
+        "NEO": "Pareil au vent d’orient, je les disperserai devant l’ennemi ; je leur montrerai le dos et non la face, au jour de leur désastre.",
+        "NAB": "Like the east wind, I will scatter them before their enemies; I will show them my back, not my face, in their day of disaster.",
+        "VAT_ES": "Yo los dispersaré como el viento del este delante del enemigo: yo les mostraré la espalda, no el rostro, en el día de su ruina.",
+        "CEI": "Come fa il vento d'oriente io li disperderò davanti al loro nemico. Mostrerò loro le spalle e non il volto nel giorno della loro rovina\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֗וּ לְכ֨וּ וְ/נַחְשְׁבָ֣ה עַֽל יִרְמְיָהוּ֮ מַחֲשָׁבוֹת֒ כִּי֩ לֹא תֹאבַ֨ד תּוֹרָ֜ה מִ/כֹּהֵ֗ן וְ/עֵצָה֙ מֵֽ/חָכָ֔ם וְ/דָבָ֖ר מִ/נָּבִ֑יא לְכוּ֙ וְ/נַכֵּ֣/הוּ בַ/לָּשׁ֔וֹן וְ/אַל נַקְשִׁ֖יבָה אֶל כָּל דְּבָרָֽי/ו׃",
+        "LXX": "Καὶ εἶπαν Δεῦτε λογισώμεθα ἐπὶ Ἰερεμίαν λογισμόν, ὅτι οὐκ ἀπολεῖται νόμος ἀπὸ ἱερέως καὶ βουλὴ ἀπὸ συνετοῦ καὶ λόγος ἀπὸ προφήτου· δεῦτε καὶ πατάξωμεν αὐτὸν ἐν γλώσσῃ, καὶ ἀκουσόμεθα πάντας τοὺς λόγους αὐτοῦ.",
+        "VUL": "Et dixerunt : [Venite, et cogitemus contra Jeremiam cogitationes :/ non enim peribit lex a sacerdote,/ neque consilium a sapiente,/ nec sermo a propheta :/ venite, et percutiamus eum lingua,/ et non attendamus ad universos sermones ejus.]",
+        "SYN": "А они сказали: \"придите, составим замысел против Иеремии; ибо не исчез же закон у священника и совет у мудрого, и слово у пророка; придите, сразим его языком и не будем внимать словам его\".",
+        "NEO": "Et ils ont dit : « Venez, formons un complot contre Jérémie ; car la loi ne périra pas chez le prêtre, ni le conseil chez le sage, ni la parole de Dieu chez le prophète ! Venez, frappons-le avec la langue, et ne prêtons pas l’oreille à tous ses discours. »",
+        "NAB": "\"Come,\" they said, \"let us contrive a plot against Jeremiah. It will not mean the loss of instruction from the priests, nor of counsel from the wise, nor of messages from the prophets. And so, let us destroy him by his own tongue; let us carefully note his every word.\"",
+        "VAT_ES": "Ellos dijeron: «&iexcl;Vengan, tramemos un plan contra Jeremías, porque no le faltará la instrucción al sacerdote, ni el consejo al sabio, ni la palabra al profeta! Vengan, inventemos algún cargo contra él, y no prestemos atención a sus palabras».",
+        "CEI": "Ora essi dissero: \"Venite e tramiamo insidie contro Geremia, perché la legge non verrà meno ai sacerdoti, né il consiglio ai saggi, né l'oracolo ai profeti. Venite, colpiamolo per la sua lingua e non badiamo a tutte le sue parole\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "הַקְשִׁ֥יבָ/ה יְהוָ֖ה אֵלָ֑/י וּ/שְׁמַ֖ע לְ/ק֥וֹל יְרִיבָֽ/י׃",
+        "LXX": "Εἰσάκουσόν μου, Κύριε, καὶ εἰσάκουσον τῆς φωνῆς τοῦ δικαιώματός μου.",
+        "VUL": "[Attende, Domine, ad me,/ et audi vocem adversariorum meorum./",
+        "SYN": "Внемли мне, Господи, и услышь голос моих противников.",
+        "NEO": "Prête moi l’oreille, \\+w Yahweh|strong=\"H3068\"\\+w**, et entends la voix de mes adversaires !",
+        "NAB": "Heed me, O LORD, and listen to what my adversaries say.",
+        "VAT_ES": "&iexcl;Préstame atención, Señor, y oye la voz de los que me acusan!",
+        "CEI": "Prestami ascolto, Signore, e odi la voce dei miei avversari."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "הַ/יְשֻׁלַּ֤ם תַּֽחַת טוֹבָה֙ רָעָ֔ה כִּֽי כָר֥וּ שׁוּחָ֖ה לְ/נַפְשִׁ֑/י זְכֹ֣ר עָמְדִ֣/י לְ/פָנֶ֗י/ךָ לְ/דַבֵּ֤ר עֲלֵי/הֶם֙ טוֹבָ֔ה לְ/הָשִׁ֥יב אֶת חֲמָתְ/ךָ֖ מֵ/הֶֽם׃",
+        "LXX": "εἰ ἀνταποδίδοται ἀντὶ ἀγαθῶν κακά; ὅτι συνελάλησαν ῥήματα κατὰ τῆς ψυχῆς μου, καὶ τὴν κόλασιν αὐτῶν ἔκρυψάν μοι· μνήσθητι ἑστηκότος μου κατὰ πρόσωπόν σου τοῦ λαλῆσαι ὑπὲρ αὐτῶν ἀγαθά, τοῦ ἀποστρέψαι τὸν θυμόν σου ἀπ’ αὐτῶν.",
+        "VUL": "Numquid redditur pro bono malum,/ quia foderunt foveam animæ meæ ?/ Recordare quod steterim in conspectu tuo/ ut loquerer pro eis bonum,/ et averterem indignationem tuam ab eis./",
+        "SYN": "Должно ли воздавать злом за добро? а они роют яму душе моей. Вспомни, что я стою пред лицем Твоим, чтобы говорить за них доброе, чтобы отвратить от них гнев Твой.",
+        "NEO": "Le mal sera-t-il rendu pour le bien, qu’ils creusent une fosse pour mon âme ? souviens-toi comment je me suis tenu devant toi, pour te parler en leur faveur, pour détourner d’eux ta colère.",
+        "NAB": "Must good be repaid with evil that they should dig a pit to take my life? Remember that I stood before you to speak in their behalf, to turn away your wrath from them.",
+        "VAT_ES": "&iquest;Acaso se devuelve mal por bien para que me hayan cavado una fosa? Recuerda que yo me presenté delante de ti para hablar en favor de ellos, para apartar de ellos tu furor.",
+        "CEI": "Si rende forse male per bene? Poiché essi hanno scavato una fossa alla mia vita. Ricordati quando mi presentavo a te, per parlare in loro favore, per stornare da loro la tua ira."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "לָ/כֵן֩ תֵּ֨ן אֶת בְּנֵי/הֶ֜ם לָ/רָעָ֗ב וְ/הַגִּרֵ/ם֮ עַל יְדֵי חֶרֶב֒ וְ/תִֽהְיֶ֨נָה נְשֵׁי/הֶ֤ם שַׁכֻּלוֹת֙ וְ/אַלְמָנ֔וֹת וְ/אַ֨נְשֵׁי/הֶ֔ם יִֽהְי֖וּ הֲרֻ֣גֵי מָ֑וֶת בַּח֣וּרֵי/הֶ֔ם מֻכֵּי חֶ֖רֶב בַּ/מִּלְחָמָֽה׃",
+        "LXX": "διὰ τοῦτο δὸς τοὺς υἱοὺς αὐτῶν εἰς λιμόν, καὶ ἄθροισον αὐτοὺς εἰς χεῖρας μαχαίρας· γενέσθωσαν αἱ γυναῖκες αὐτῶν ἄτεκνοι καὶ χῆραι, καὶ οἱ ἄνδρες αὐτῶν γενέσθωσαν ἀνῃρημένοι θανάτῳ, καὶ οἱ νεανίσκοι αὐτῶν πεπτωκότες μαχαίρᾳ ἐν πολέμῳ.",
+        "VUL": "Propterea da filios eorum in famem,/ et deduc eos in manus gladii :/ fiant uxores eorum absque liberis, et viduæ :/ et viri earum interficiantur morte :/ juvenes eorum confodiantur gladio in prælio :/",
+        "SYN": "Итак предай сыновей их голоду и подвергни их мечу; да будут жены их бездетными и вдовами, и мужья их да будут поражены смертью, и юноши их умерщвлены мечом на войне.",
+        "NEO": "C’est pourquoi, livre leurs enfants à la famine, et abandonne-les au tranchant du glaive ! Que leurs femmes perdent leurs enfants et leurs époux ; que leurs hommes meurent par la peste, et que leurs jeunes gens soient frappés par l’épée dans le combat !",
+        "NAB": "So now, deliver their children to famine, do away with them by the sword. Let their wives be made childless and widows; let their men die of pestilence, their young men be slain by the sword in battle.",
+        "VAT_ES": "Por eso, entrega sus hijos al hambre y déjalos a merced de la espada. &iexcl;Que sus mujeres se queden sin hijos y sin marido, que sus hombres mueran víctimas de la peste, que sus jóvenes caigan bajo la espada en el combate!",
+        "CEI": "Abbandona perciò i loro figli alla fame, gettali in potere della spada; le loro donne restino senza figli e vedove, i loro uomini siano colpiti dalla morte e i loro giovani uccisi dalla spada in battaglia."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "תִּשָּׁמַ֤ע זְעָקָה֙ מִ/בָּ֣תֵּי/הֶ֔ם כִּֽי תָבִ֧יא עֲלֵי/הֶ֛ם גְּד֖וּד פִּתְאֹ֑ם כִּֽי כָר֤וּ שיחה שׁוּחָה֙ לְ/לָכְדֵ֔/נִי וּ/פַחִ֖ים טָמְנ֥וּ לְ/רַגְלָֽ/י׃",
+        "LXX": "γενηθήτω κραυγὴ ἐν ταῖς οἰκίαις αὐτῶν, ἐπάξεις ἐπ’ αὐτοὺς λῃστὰς ἄφνω, ὅτι ἐνεχείρησαν λόγον εἰς σύνλημψίν μου καὶ παγίδας ἔκρυψαν ἐπ’ ἐμέ.",
+        "VUL": "audiatur clamor de domibus eorum :/ adduces enim super eos latronem repente,/ quia foderunt foveam ut caperent me,/ et laqueos absconderunt pedibus meis./",
+        "SYN": "Да будет слышен вопль из домов их, когда приведешь на них полки внезапно; ибо они роют яму, чтобы поймать меня, и тайно расставили сети для ног моих.",
+        "NEO": "Qu’on entende leur cri sortir de leurs maisons, quand tu feras venir subitement sur eux des bandes armées ! Car ils ont creusé une fosse pour me prendre, et ils ont caché des filets devant mes pieds.",
+        "NAB": "May cries be heard from their homes, when suddenly you send plunderers against them. For they have dug a pit to capture me, they have hid snares for my feet;",
+        "VAT_ES": "&iexcl;Que se oiga el clamor que sale de sus casas, cuando mandes de repente salteadores contra ellos! Porque han cavado una fosa para atraparme y han ocultado trampas bajo mis pies.",
+        "CEI": "Si odano grida dalle loro case, quando improvvisa tu farai piombare su di loro una torma di briganti, poiché hanno scavato una fossa per catturarmi e hanno teso lacci ai miei piedi."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֣ה יְ֠הוָה יָדַ֜עְתָּ אֶֽת כָּל עֲצָתָ֤/ם עָלַ/י֙ לַ/מָּ֔וֶת אַל תְּכַפֵּר֙ עַל עֲוֺנָ֔/ם וְ/חַטָּאתָ֖/ם מִ/לְּ/פָנֶ֣י/ךָ אַל תֶּ֑מְחִי ו/היו וְ/יִהְי֤וּ מֻכְשָׁלִים֙ לְ/פָנֶ֔י/ךָ בְּ/עֵ֥ת אַפְּ/ךָ֖ עֲשֵׂ֥ה בָ/הֶֽם׃",
+        "LXX": "καὶ σύ, Κύριε, ἔγνως ἅπασαν τὴν βουλὴν αὐτῶν ἐπ’ ἐμὲ εἰς θάνατον· μὴ ἀθῳώσῃς τὰς ἀδικίας αὐτῶν, καὶ τὰς ἁμαρτίας αὐτῶν ἀπὸ προσώπου σου μὴ ἐξαλείψῃς· γενέσθω ἡ ἀσθένεια αὐτῶν ἐναντίον σου, ἐν καιρῷ θυμοῦ σου ποίησον ἐν αὐτοῖς.",
+        "VUL": "Tu autem, Domine, scis omne consilium eorum/ adversum me in mortem :/ ne propitieris iniquitati eorum,/ et peccatum eorum a facie tua non deleatur :/ fiant corruentes in conspectu tuo ;/ in tempore furoris tui abutere eis.]",
+        "SYN": "Но Ты, Господи, знаешь все замыслы их против меня, чтобы умертвить меня; не прости неправды их и греха их не изгладь пред лицем Твоим; да будут они низвержены пред Тобою; поступи с ними во время гнева Твоего.",
+        "NEO": "Et toi, \\+w Yahweh|strong=\"H3068\"\\+w**, tu connais tous leurs complots pour me faire mourir. Ne pardonne pas leur iniquité, n’efface pas leur péché de devant toi ; qu’ils s’affaissent devant toi ; agis contre eux au temps de ta colère !",
+        "NAB": "But you, O LORD, know all their plans to slay me. Forgive not their crime, blot not out their sin in your sight! Let them go down before you, proceed against them in the time of your anger.",
+        "VAT_ES": "Pero tú, Señor, conoces bien sus planes asesinos contra mí. &iexcl;No les perdones su iniquidad, que su pecado no se borre de tu vista! &iexcl;Que tropiecen delante de ti, y en el tiempo de tu ira, obra contra ellos!",
+        "CEI": "Ma tu conosci, Signore, ogni loro progetto di morte contro di me; non lasciare impunita la loro iniquità e non cancellare il loro peccato dalla tua presenza. Inciampino alla tua presenza; al momento del tuo sdegno agisci contro di essi!"
+      }
+    }
+  }
+}

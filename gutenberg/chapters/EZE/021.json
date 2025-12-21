@@ -1,0 +1,591 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EZE_021",
+  "book_key": "EZE",
+  "sequence": 21,
+  "chapter_in": {
+    "MT": 21,
+    "VUL": 21,
+    "LXX": 21
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu rivolta questa parola del Signore:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֗ם שִׂ֤ים פָּנֶ֨י/ךָ֙ דֶּ֣רֶךְ תֵּימָ֔נָ/ה וְ/הַטֵּ֖ף אֶל דָּר֑וֹם וְ/הִנָּבֵ֛א אֶל יַ֥עַר הַ/שָּׂדֶ֖ה נֶֽגֶב׃",
+        "LXX": "Διὰ τοῦτο προφήτευσον, υἱὲ ἀνθρώπου, στήρισον τὸ πρόσωπόν σου ἐπὶ Ἰερουσαλὴμ καὶ ἐπίβλεψον ἐπὶ τὰ ἅγια αὐτῶν, καὶ προφητεύσεις ἐπὶ τὴν γῆν τοῦ Ἰσραήλ.",
+        "VUL": "[Fili hominis, pone faciem tuam ad Jerusalem,/ et stilla ad sanctuaria,/ et propheta contra humum Israël./",
+        "SYN": "сын человеческий! обрати лице твое к Иерусалиму и произнеси слово на святилища, и изреки пророчество на землю Израилеву,",
+        "NEO": "« Fils de l’homme, tourne ta face dans la direction de Théman ; fais découler ta parole vers le sud, et prophétise contre la forêt de la campagne du midi ;",
+        "NAB": "Son of man, look southward, preach toward the south, and prophesy against the forest of the southern land.",
+        "VAT_ES": "Hijo de hombre, vuelve tu rostro en dirección al sur, vaticina hacia el sur y profetiza contra el bosque del campo del Négueb.",
+        "CEI": "\"Figlio dell'uomo, volgi la faccia verso il mezzogiorno, parla alla regione australe e predici contro la selva del mezzogiorno."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/אָֽמַרְתָּ֙ לְ/יַ֣עַר הַ/נֶּ֔גֶב שְׁמַ֖ע דְּבַר יְהוָ֑ה כֹּֽה אָמַ֣ר אֲדֹנָ֣/י יְהוִ֡ה הִנְ/נִ֣י מַֽצִּית בְּ/ךָ֣ אֵ֡שׁ וְ/אָכְלָ֣ה בְ/ךָ֣ כָל עֵֽץ לַח֩ וְ/כָל עֵ֨ץ יָבֵ֤שׁ לֹֽא תִכְבֶּה֙ לַהֶ֣בֶת שַׁלְהֶ֔בֶת וְ/נִצְרְבוּ בָ֥/הּ כָּל פָּנִ֖ים מִ/נֶּ֥גֶב צָפֽוֹנָ/ה׃",
+        "LXX": "καὶ ἐρεῖς πρὸς τὴν γῆν τοῦ Ἰσραήλ Ἰδοὺ ἐγὼ πρὸς σέ, καὶ ἐκσπάσω τὸ ἐγχειρίδιόν μου ἐκ τοῦ κολεοῦ αὐτοῦ, καὶ ἐξολεθρεύσω ἐκ σοῦ ἄδικον καὶ ἄνομον.",
+        "VUL": "Et dices terræ Israël :/ Hæc dicit Dominus Deus :/ Ecce ego ad te,/ et ejiciam gladium meum de vagina sua,/ et occidam in te justum et impium./",
+        "SYN": "и скажи земле Израилевой: так говорит Господь Бог: вот, Я - на тебя, и извлеку меч Мой из ножен его и истреблю у тебя праведного и нечестивого.",
+        "NEO": "et dis à la forêt du midi : Ecoute la parole de \\+w Yahweh|strong=\"H3068\"\\+w** ! Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Voici que je vais allumer au milieu de toi un feu, et il dévorera en toi tout arbre vert et tout arbre sec ; la flamme dévorante ne s’éteindra point, et toute face sera brûlée par elle, du midi au septentrion.",
+        "NAB": "Hear the word of the LORD! you shall say to the southern forest. Thus says the Lord GOD: See! I am kindling a fire in you that shall devour all trees, the green as well as the dry. The blazing flame shall not be quenched, but from south to north every face shall be scorched by it.",
+        "VAT_ES": "Tú dirás al bosque del Négueb: Escucha la palabra del Señor. Así habla el Señor: Yo voy a prenderte fuego, y él consumirá todo árbol verde y todo árbol seco. La llama ardiente no se extinguirá y arderá toda la superficie, desde el Négueb hasta el norte.",
+        "CEI": "Dirai alla selva del mezzogiorno: Ascolta la parola del Signore: Dice il Signore Dio: Ecco, io accenderò in te un fuoco che divorerà in te ogni albero verde e ogni albero secco: la fiamma ardente non si spegnerà e ogni sembiante sarà bruciato dal mezzogiorno al settentrione."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/רָאוּ֙ כָּל בָּשָׂ֔ר כִּ֛י אֲנִ֥י יְהוָ֖ה בִּֽעַרְתִּ֑י/הָ לֹ֖א תִּכְבֶּֽה׃",
+        "LXX": "ἀνθ’ ὧν ἐξολεθρεύσω ἐκ σοῦ ἄδικον καὶ ἄνομον, οὕτως ἐξελεύσεται τὸ ἐγχειρίδιόν μου ἐκ τοῦ κολεοῦ αὐτοῦ ἐπὶ πᾶσαν σάρκα ἀπὸ ἀπηλιώτου ἕως βορρᾶ,",
+        "VUL": "Pro eo autem quod occidi in te justum et impium,/ idcirco egredietur gladius meus de vagina sua/ ad omnem carnem, ab austro usque ad aquilonem :/",
+        "SYN": "А для того, чтобы истребить у тебя праведного и нечестивого, меч Мой из ножен своих пойдет на всякую плоть от юга до севера.",
+        "NEO": "Et toute chair verra que c’est moi, \\+w Yahweh|strong=\"H3068\"\\+w**, qui l’ai allumée, et elle ne s’éteindra pas.",
+        "NAB": "Everyone shall see that I, the LORD, have kindled it, and it shall not be quenched.",
+        "VAT_ES": "Y todos los mortales verán que yo, el Señor, soy el que encendí ese fuego, que no se extinguirá.",
+        "CEI": "Ogni vivente vedrà che io, il Signore, l'ho incendiato e non si spegnerà\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וָ/אֹמַ֕ר אֲהָ֖הּ אֲדֹנָ֣/י יְהוִ֑ה הֵ֚מָּה אֹמְרִ֣ים לִ֔/י הֲ/לֹ֛א מְמַשֵּׁ֥ל מְשָׁלִ֖ים הֽוּא׃",
+        "LXX": "καὶ ἐπιγνώσεται πᾶσα σὰρξ διότι ἐγὼ Κύριος ἐξέσπασα τὸ ἐγχειρίδιόν μου ἐκ τοῦ κολεοῦ αὐτοῦ, οὐκ ἀποστρέψει οὐκέτι.",
+        "VUL": "ut sciat omnis caro quia ego Dominus,/ eduxi gladium meum de vagina sua irrevocabilem./",
+        "SYN": "И узнает всякая плоть, что Я, Господь, извлек меч Мой из ножен его, и он уже не возвратится.",
+        "NEO": "Et je dis : « Ah ! Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**, ils disent de moi : Est-ce qu’il ne parle pas en paraboles ? »",
+        "NAB": "But I said, \"Alas! Lord GOD, they say to me, 'Is not this the one who is forever spinning parables?'\"",
+        "VAT_ES": "Yo exclamé: &iexcl;Ay, Señor! Ellos andan diciendo de mí: «&iexcl;Este no es más que un fabulador!».",
+        "CEI": "Io dissi: \"Ah! Signore Dio, essi vanno dicendo di me: Non è forse costui uno che racconta delle favole?\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "καὶ σύ, υἱὲ ἀνθρώπου, καταστέναξον ἐν συντριβῇ ὀσφύος σου, καὶ ἐν ὀδύναις στενάξεις κατ’ ὀφθαλμοὺς αὐτῶν.",
+        "VUL": "Et tu, fili hominis, ingemisce in contritione lumborum,/ et in amaritudinibus ingemisce coram eis./",
+        "SYN": "Ты же, сын человеческий, стенай, сокрушая бедра твои, и в горести стенай перед глазами их.",
+        "NEO": "Et la parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Then the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu rivolta questa parola del Signore:"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֗ם שִׂ֤ים פָּנֶ֨י/ךָ֙ אֶל יְר֣וּשָׁלִַ֔ם וְ/הַטֵּ֖ף אֶל מִקְדָּשִׁ֑ים וְ/הִנָּבֵ֖א אֶל אַדְמַ֥ת יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἔσται ἐὰν εἴπωσιν πρὸς σέ Ἕνεκα τίνος σὺ στενάζεις; καὶ ἐρεῖς Ἐπὶ τῇ ἀγγελίᾳ διότι ἔρχεται, καὶ θραυσθήσεται πᾶσα καρδία, καὶ πᾶσαι χεῖρες παραλυθήσονται, καὶ ἐκψύξει πᾶσα σὰρξ καὶ πᾶν πνεῦμα, καὶ πάντες μηροὶ μολυνθήσονται ὑγρασίᾳ· ἰδοὺ ἔρχεται, λέγει κύριος Κύριος.",
+        "VUL": "Cumque dixerint ad te : Quare tu gemis ?/ dices : Pro auditu :/ quia venit, et tabescet omne cor,/ et dissolventur universæ manus,/ et infirmabitur omnis spiritus,/ et per cuncta genua fluent aquæ :/ ecce venit, et fiet, ait Dominus Deus.]",
+        "SYN": "И когда скажут тебе: \"отчего ты стенаешь?\", скажи: \"от слуха, что идет\", - и растает всякое сердце, и все руки опустятся, и всякий дух изнеможет, и все колени задрожат, как вода. Вот, это придет и сбудется, говорит Господь Бог.",
+        "NEO": "« Fils de l’homme, tourne ta face vers Jérusalem, et fais découler ta parole vers les lieux saints, et prophétise contre la terre d’Israël.",
+        "NAB": "Son of man, look toward Jerusalem, preach against their sanctuary, and prophesy against the land of Israel,",
+        "VAT_ES": "Hijo del hombre, vuelve tu rostro hacia Jerusalén, vaticina contra sus santuarios y profetiza contra la tierra de Israel.",
+        "CEI": "\"Figlio dell'uomo, volgi la faccia verso Gerusalemme e parla contro i suoi santuari, predici contro il paese d'Israele."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אָמַרְתָּ֞ לְ/אַדְמַ֣ת יִשְׂרָאֵ֗ל כֹּ֚ה אָמַ֣ר יְהוָ֔ה הִנְ/נִ֣י אֵלַ֔יִ/ךְ וְ/הוֹצֵאתִ֥י חַרְבִּ֖/י מִ/תַּעְרָ֑/הּ וְ/הִכְרַתִּ֥י מִמֵּ֖/ךְ צַדִּ֥יק וְ/רָשָֽׁע׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "Dis à la terre d’Israël : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Voici que je viens à toi ; je tirerai mon épée de son fourreau, et j’exterminerai de ton sein juste et méchant.",
+        "NAB": "saying to the land of Israel: Thus says the LORD: See! I am coming at you; I will draw my sword from its sheath and cut off from you the virtuous and the wicked.",
+        "VAT_ES": "Tú dirás a la tierra de Israel: Así habla el Señor: Aquí estoy contra ti: yo sacaré mi espada de su vaina y extirparé de ti al justo y al impío.",
+        "CEI": "Tu riferirai al paese d'Israele: Così dice il Signore Dio: Eccomi contro di te. Sguainerò la spada e ucciderò in te il giusto e il peccatore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "יַ֛עַן אֲשֶׁר הִכְרַ֥תִּי מִמֵּ֖/ךְ צַדִּ֣יק וְ/רָשָׁ֑ע לָ֠/כֵן תֵּצֵ֨א חַרְבִּ֧/י מִ/תַּעְרָ֛/הּ אֶל כָּל בָּשָׂ֖ר מִ/נֶּ֥גֶב צָפֽוֹן׃",
+        "LXX": "Υἱὲ ἀνθρώπου, προφήτευσον καὶ ἐρεῖς Τάδε λέγει Κύριος Εἰπόν Ῥομφαία ῥομφαία, ὀξύνου καὶ θυμώθητι,",
+        "VUL": "Fili hominis, propheta, et dices : Hæc dicit Dominus Deus : loquere : [Gladius, gladius exacutus est, et limatus :/",
+        "SYN": "сын человеческий! изреки пророчество и скажи: так говорит Господь Бог: скажи: меч, меч наострен и вычищен;",
+        "NEO": "Et parce que je vais exterminer de ton sein juste et méchant, à cause de cela, mon épée sortira de son fourreau contre toute chair, du midi au septentrion.",
+        "NAB": "Thus my sword shall leave its sheath against everyone from south to north,",
+        "VAT_ES": "Porque quiero extirpar de ti al justo y al impío, por eso saldrá mi espada de su vaina contra todos ustedes, desde el sur hasta el norte.",
+        "CEI": "Se ucciderò in te il giusto e il peccatore, significa che la spada sguainata sarà contro ogni carne, dal mezzogiorno al settentrione."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/יָֽדְעוּ֙ כָּל בָּשָׂ֔ר כִּ֚י אֲנִ֣י יְהוָ֔ה הוֹצֵ֥אתִי חַרְבִּ֖/י מִ/תַּעְרָ֑/הּ לֹ֥א תָשׁ֖וּב עֽוֹד׃",
+        "LXX": "ὅπως σφάξῃς σφάγια, ὀξύνου ὅπως γένῃ εἰς στίλβωσιν, ἑτοίμη εἰς παράλυσιν· σφάζε, ἐξουδένει, ἀπωθοῦ πᾶν ξύλον.",
+        "VUL": "ut cædat victimas, exacutus est :/ ut splendeat, limatus est :/ qui moves sceptrum filii mei, succidisti omne lignum./",
+        "SYN": "наострен для того, чтобы больше заколать; вычищен, чтобы сверкал, как молния. Радоваться ли нам, что жезл сына Моего презирает всякое дерево?",
+        "NEO": "Et toute chair saura que c’est moi, \\+w Yahweh|strong=\"H3068\"\\+w**, qui ai tiré mon épée du fourreau ; elle n’y rentrera plus.",
+        "NAB": "and everyone shall know that I, the LORD, have drawn my sword from its sheath, and it shall not be sheathed again.",
+        "VAT_ES": "Y todos los mortales sabrán que yo, el Señor, he sacado mi espada de su vaina, y no volverá a ser envainada.",
+        "CEI": "Così ogni vivente saprà che io, il Signore, ho sguainato la spada ed essa non rientrerà nel fodero."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֥ה בֶן אָדָ֖ם הֵֽאָנַ֑ח בְּ/שִׁבְר֤וֹן מָתְנַ֨יִם֙ וּ/בִ/מְרִיר֔וּת תֵּֽאָנַ֖ח לְ/עֵינֵי/הֶֽם׃",
+        "LXX": "καὶ ἔδωκεν αὐτὴν ἑτοίμην τοῦ κρατεῖν χεῖρα αὐτοῦ· ἐξηκονήθη ἡ ῥομφαία, ἐστὶν ἑτοίμη τοῦ δοῦναι αὐτὴν εἰς χεῖρα ἀποκεντοῦντος.",
+        "VUL": "Et dedi eum ad levigandum, ut teneatur manu :/ iste exacutus est gladius, et iste limatus est,/ ut sit in manu interficientis./",
+        "SYN": "Я дал его вычистить, чтобы взять в руку; уже наострен этот меч и вычищен, чтобы отдать его в руку убийцы.",
+        "NEO": "Et toi, fils de l’homme, gémis ; jusqu’à te rompre les reins avec amertume, gémis devant eux.",
+        "NAB": "As for you, son of man, groan! with shattered strength groan bitterly while they look on.",
+        "VAT_ES": "Y tú, hijo de hombre, gime; agobiado por el dolor, gime amargamente a la vista de ellos.",
+        "CEI": "Tu, figlio dell'uomo, piangi: piangi davanti a loro con il cuore infranto e pieno d'amarezza."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֙ כִּֽי יֹאמְר֣וּ אֵלֶ֔י/ךָ עַל מָ֖ה אַתָּ֣ה נֶאֱנָ֑ח וְ/אָמַרְתָּ֡ אֶל שְׁמוּעָ֣ה כִֽי בָאָ֡ה וְ/נָמֵ֣ס כָּל לֵב֩ וְ/רָפ֨וּ כָל יָדַ֜יִם וְ/כִהֲתָ֣ה כָל ר֗וּחַ וְ/כָל בִּרְכַּ֨יִם֙ תֵּלַ֣כְנָה מַּ֔יִם הִנֵּ֤ה בָאָה֙ וְ/נִֽהְיָ֔תָה נְאֻ֖ם אֲדֹנָ֥/י יְהוִֽה׃",
+        "LXX": "ἀνάκραγε καὶ ὀλόλυξον, υἱὲ ἀνθρώπου, ὅτι αὕτη ἐγένετο ἐν τῷ λαῷ μου, αὕτη ἐν πᾶσιν τοῖς ἀφηγουμένοις τοῦ Ἰσραήλ· παροικήσουσιν, ἐπὶ ῥομφαίᾳ ἐγένετο ἐν τῷ λαῷ μου· διὰ τοῦτο κρότησον ἐπὶ τὴν χεῖρά σου.",
+        "VUL": "Clama et ulula, fili hominis,/ quia hic factus est in populo meo,/ hic in cunctis ducibus Israël qui fugerant :/ gladio traditi sunt cum populo meo :/ idcirco plaude super femur,",
+        "SYN": "Стенай и рыдай, сын человеческий, ибо он - на народ Мой, на всех князей Израиля; они отданы будут под меч с народом Моим; посему ударяй себя по бедрам.",
+        "NEO": "Et quand ils te diront : pourquoi gémis-tu ? Tu répondras : A cause d’une nouvelle qui arrive. Et tout cœur se fondra, toute main faiblira, tout esprit sera dans le trouble, tout genou s’en ira en eau. Voici qu’elle arrive ; c’est fait, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "And when they ask you, \"Why are you groaning?\", you shall say: Because of a report; when it comes every heart shall fail, every hand shall fall helpless, every spirit shall be daunted, and every knee shall run with water. See, it is coming, it is here! says the Lord GOD.",
+        "VAT_ES": "Y cuando te pregunten: «&iquest;Por qué gimes?», tú les responderás: Es por una noticia. Apenas llegue, desfallecerán todos los corazones, se paralizarán todas las manos, decaerán todos los espíritus y flaquearán todas las rodillas. Y a está por llegar, ya va a suceder –oráculo del Señor–.",
+        "CEI": "Quando ti domanderanno: Perché piangi?, risponderai: Perché è giunta la notizia che il cuore verrà meno, le mani s'indeboliranno, lo spirito sarà costernato, le ginocchia vacilleranno. Ecco è giunta e si compie\". Parola del Signore Dio."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "ὅτι δεδικαίωται· καὶ φυλὴ ἀπωσθῇ; οὐκ ἔσται, λέγει κύριος Κύριος.",
+        "VUL": "quia probatus est :/ et hoc, cum sceptrum subverterit, et non erit,/ dicit Dominus Deus./",
+        "SYN": "Ибо он уже испытан. И что, если он презирает и жезл? сей не устоит, говорит Господь Бог.",
+        "NEO": "Et la parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu rivolta questa parola del Signore:"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֕ם הִנָּבֵא֙ וְ/אָ֣מַרְתָּ֔ כֹּ֖ה אָמַ֣ר אֲדֹנָ֑/י אֱמֹ֕ר חֶ֥רֶב חֶ֛רֶב הוּחַ֖דָּה וְ/גַם מְרוּטָֽה׃",
+        "LXX": "καὶ σύ, υἱὲ ἀνθρώπου, προφήτευσον καὶ κρότησον χεῖρα ἐπὶ χεῖρα καὶ διπλασίασον ῥομφαίαν· ἡ τρίτη ῥομφαία τραυματιῶν ἐστιν, ῥομφαία τραυματιῶν ἡ μεγάλη. καὶ ἐκστήσεις αὐτούς,",
+        "VUL": "Tu ergo, fili hominis, propheta,/ et percute manu ad manum :/ et duplicetur gladius,/ ac triplicetur gladius interfectorum :/ hic est gladius occisionis magnæ,/ qui obstupescere eos facit/",
+        "SYN": "Ты же, сын человеческий, пророчествуй и ударяй рукою об руку; и удвоится меч и утроится, меч на поражаемых, меч на поражение великого, проникающий во внутренность жилищ их.",
+        "NEO": "« Fils de l’homme, prophétise et dis : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Dis : L’épée, l’épée est aiguisée et fourbie :",
+        "NAB": "Son of man, prophesy! say: Thus says the LORD: A sword, a sword has been sharpened, a sword, a sword has been burnished:",
+        "VAT_ES": "Profetiza, hijo de hombre, y di: Así habla el Señor: &iexcl;Una espada, una espada afilada y bruñida!",
+        "CEI": "\"Figlio dell'uomo, profetizza e dì loro: Così dice il Signore Dio: Spada, spada aguzza e affilata,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "לְמַ֨עַן טְבֹ֤חַ טֶ֨בַח֙ הוּחַ֔דָּה לְמַעַן הֱיֵה לָ֥/הּ בָּ֖רָק מֹרָ֑טָּה א֣וֹ נָשִׂ֔ישׂ שֵׁ֥בֶט בְּנִ֖/י מֹאֶ֥סֶת כָּל עֵֽץ׃",
+        "LXX": "ὅπως μὴ θραυσθῇ ἡ καρδία, καὶ πληθυνθῶσιν οἱ ἀσθενοῦντες ἐπὶ πᾶσαν πύλην· παραδέδονται εἰς σφάγια ῥομφαίας, εὖ γέγονεν εἰς σφαγήν, εὖ γέγονεν εἰς στίλβωσιν.",
+        "VUL": "et corde tabescere,/ et multiplicat ruinas./ In omnibus portis eorum dedi conturbationem gladii acuti,/ et limati ad fulgendum,/ amicti ad cædem./",
+        "SYN": "Чтобы растаяли сердца и чтобы павших было более, Я у всех ворот их поставлю грозный меч, увы! сверкающий, как молния, наостренный для заклания.",
+        "NEO": "c’est pour faire un massacre qu’elle est aiguisée, pour faire briller l’éclair qu’elle est fourbie. Ou bien nous réjouirons-nous en disant : « Le sceptre de mon fils méprise tout bois ? »",
+        "NAB": "To work slaughter has it been sharpened, to flash lightning has it been burnished. Why should I now withdraw it? You have spurned the rod and every judgment!",
+        "VAT_ES": "Afilada para provocar una masacre, bruñida para fulgurar como el rayo,",
+        "CEI": "aguzza per scannare, affilata per lampeggiare!"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֥ן אֹתָ֛/הּ לְ/מָרְטָ֖ה לִ/תְפֹּ֣שׂ בַּ/כָּ֑ף הִֽיא הוּחַ֤דָּה חֶ֨רֶב֙ וְ/הִ֣יא מֹרָ֔טָּה לָ/תֵ֥ת אוֹתָ֖/הּ בְּ/יַד הוֹרֵֽג׃",
+        "LXX": "διαπορεύου, ὀξύνου ἐκ δεξιῶν καὶ ἐξ εὐωνύμων, οὗ ἂν τὸ πρόσωπόν σου ἐξεγείρηται.",
+        "VUL": "Exacuere, vade ad dexteram sive ad sinistram,/ quocumque faciei tuæ est appetitus./",
+        "SYN": "Соберись и иди направо или иди налево, куда бы ни обратилось лице твое.",
+        "NEO": "On l’a donnée à fourbir pour qu’on la prenne en main ; c’est une épée aiguisée, et elle est fourbie, pour qu’on la mette dans la main de l’égorgeur.",
+        "NAB": "I have given it over to the burnisher that he might hold it in his hand, A sword sharpened and burnished to be put in the hand of a slayer.",
+        "VAT_ES": "Se la hizo bruñir para empuñarla: la espada fue afilada y bruñida para ponerla en mano de un verdugo.",
+        "CEI": "L'ha fatta affilare perché la si impugni, l'ha aguzzata e affilata per darla in mano al massacratore!"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "זְעַ֤ק וְ/הֵילֵל֙ בֶּן אָדָ֔ם כִּי הִיא֙ הָיתָ֣ה בְ/עַמִּ֔/י הִ֖יא בְּ/כָל נְשִׂיאֵ֣י יִשְׂרָאֵ֑ל מְגוּרֵ֤י אֶל חֶ֨רֶב֙ הָי֣וּ אֶת עַמִּ֔/י לָ/כֵ֖ן סְפֹ֥ק אֶל יָרֵֽךְ׃",
+        "LXX": "καὶ ἐγὼ δὲ κροτήσω χεῖρά μου πρὸς χεῖρά μου καὶ ἐναφήσω θυμόν μου· ἐγὼ Κύριος λελάληκα.",
+        "VUL": "Quin et ego plaudam manu ad manum,/ et implebo indignationem meam :/ ego Dominus locutus sum.]",
+        "SYN": "И Я буду рукоплескать и утолю гнев Мой; Я, Господь, сказал.",
+        "NEO": "Crie et hurle, fils de l’homme, car elle est pour mon peuple, elle est pour tous les princes d’Israël. Ils sont livrés à l’épée avec mon peuple ; frappe donc sur ta cuisse !",
+        "NAB": "Cry out and wail, son of man, for it is destined for my people; It is for all the princes of Israel, victims of the sword with my people. Therefore, slap your thigh,",
+        "VAT_ES": "&iexcl;Grita, laméntate, hijo de hombre, porque ella se alza contra mi pueblo, contra todos los príncipes de Israel, entregados a la espada junto con mi pueblo! Por eso, golpéate el pecho,",
+        "CEI": "Grida e lamèntati, o figlio dell'uomo, perché essa pesa sul mio popolo, su tutti i prìncipi d'Israele: essi cadranno di spada insieme con il mio popolo. Perciò battiti il fianco,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כִּ֣י בֹ֔חַן וּ/מָ֕ה אִם גַּם שֵׁ֥בֶט מֹאֶ֖סֶת לֹ֣א יִֽהְיֶ֑ה נְאֻ֖ם אֲדֹנָ֥/י יְהוִֽה׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "Car l’épreuve est faite : et quoi donc ? Si ce sceptre continue de mépriser, mes menaces ne se réaliseraient pas, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** !",
+        "NAB": "for the sword has been tested; and why should it not be so? says the Lord GOD, since you have spurned the rod.",
+        "VAT_ES": "porque es el momento de la prueba... –oráculo del Señor–.",
+        "CEI": "perché è una prova: che cosa accadrebbe se nemmeno un bastone sprezzante ci fosse Parola del Signore Dio."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֣ה בֶן אָדָ֔ם הִנָּבֵ֕א וְ/הַ֖ךְ כַּ֣ף אֶל כָּ֑ף וְ/תִכָּפֵ֞ל חֶ֤רֶב שְׁלִישִׁ֨תָ/ה֙ חֶ֣רֶב חֲלָלִ֔ים הִ֗יא חֶ֚רֶב חָלָ֣ל הַ/גָּד֔וֹל הַ/חֹדֶ֖רֶת לָ/הֶֽם׃",
+        "LXX": "Καὶ σύ, υἱὲ ἀνθρώπου, διάταξον σεαυτῷ δύο ὁδοὺς",
+        "VUL": "Et tu, fili hominis, pone tibi duas vias, ut veniat gladius regis Babylonis : de terra una egredientur ambæ : et manu capiet conjecturam ; in capite viæ civitatis conjiciet.",
+        "SYN": "и ты, сын человеческий, представь себе две дороги, по которым должно идти мечу царя Вавилонского, - обе они должны выходить из одной земли; и начертай руку, начертай при начале дорог в города.",
+        "NEO": "Et toi, fils de l’homme, prophétise et frappe main contre main : Que l’épée double, triple ses coups ! C’est l’épée du carnage, l’épée du grand carnage, qui les encercle.",
+        "NAB": "As for you, son of man, prophesy, brushing one hand against the other: While the sword is doubled and tripled, this sword of slaughter, This great sword of slaughter which threatens all around,",
+        "VAT_ES": "Y tú, hijo de hombre, profetiza, golpea con las palmas de tus manos. Que la espada duplique y triplique sus golpes: ella es la espada de las matanzas, la gran espada de la matanza que los tiene acorralados.",
+        "CEI": "Tu, o figlio dell'uomo, predici e batti le mani: la spada si raddoppi e si triplichi, è la spada dei massacri, la grande spada del massacro che li circonda."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "לְמַ֣עַן לָ/מ֣וּג לֵ֗ב וְ/הַרְבֵּה֙ הַ/מִּכְשֹׁלִ֔ים עַ֚ל כָּל שַׁ֣עֲרֵי/הֶ֔ם נָתַ֖תִּי אִבְחַת חָ֑רֶב אָ֛ח עֲשׂוּיָ֥ה לְ/בָרָ֖ק מְעֻטָּ֥ה לְ/טָֽבַח׃",
+        "LXX": "τοῦ εἰσελθεῖν ῥομφαίαν βασιλέως Βαβυλῶνος· ἐκ χώρας μιᾶς ἐξελεύσονται αἱ δύο, καὶ χεὶρ ἐν ἀρχῇ ὁδοῦ πόλεως, ἐπ’ ἀρχῆς ὁδοῦ διατάξεις τοῦ εἰσελθεῖν ῥομφαίαν ἐπὶ Ῥαββὰθ υἱῶν Ἀμμὼν καὶ ἐπὶ τὴν Ἰουδαίαν καὶ ἐπὶ Ἰερουσαλὴμ ἐν μέσῳ αὐτῆς.",
+        "VUL": "Viam pones ut veniat gladius ad Rabbath filiorum Ammon, et ad Judam in Jerusalem munitissimam.",
+        "SYN": "Представь дорогу, по которой меч шел бы в Равву сынов Аммоновых и в Иудею, в укрепленный Иерусалим;",
+        "NEO": "Pour que les cœurs se fondent, et pour multiplier les victimes, j’ai mis à toutes les portes l’épée meurtrière. Ah ! elle est préparée pour lancer l’éclair, elle est aiguisée pour le carnage !",
+        "NAB": "That every heart may tremble; for many will be the fallen. At all their gates I have appointed the sword for slaughter, Fashioned to flash lightning, burnished for slaughter.",
+        "VAT_ES": "Para que desfallezcan los corazones y haya muchas víctimas, yo he puesto en todas las puertas una espada, hecha para fulgurar como el rayo, bruñida para provocar una masacre.",
+        "CEI": "Perché i cuori si struggano e si moltiplichino le vittime, ho messo ad ogni porta la punta della spada, fatta per lampeggiare, affilata per il massacro."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "הִתְאַחֲדִ֥י הֵימִ֖נִי הָשִׂ֣ימִי הַשְׂמִ֑ילִי אָ֖נָה פָּנַ֥יִ/ךְ מֻעָדֽוֹת׃",
+        "LXX": "διότι στήσεται βασιλεὺς Βαβυλῶνος ἐπὶ τὴν ἀρχαίαν ὁδόν, ἐπ’ ἀρχῆς τῶν δύο ὁδῶν, τοῦ μαντεύσασθαι μαντείαν, τοῦ ἀναβράσαι ῥάβδον καὶ ἐπερωτῆσαι ἐν τοῖς γλυπτοῖς καὶ ἡπατοσκοπήσασθαι ἐκ δεξιῶν αὐτοῦ.",
+        "VUL": "Stetit enim rex Babylonis in bivio, in capite duarum viarum, divinationem quærens, commiscens sagittas : interrogavit idola, exta consuluit.",
+        "SYN": "потому что царь Вавилонский остановился на распутье, при начале двух дорог, для гаданья: трясет стрелы, вопрошает терафимов, рассматривает печень.",
+        "NEO": "En position à droite ! En place à gauche ! Fais face de tous côtés.",
+        "NAB": "Cleave to the right! destroy! to the left! wherever your edge is turned.",
+        "VAT_ES": "&iexcl;Muestra tu filo a la derecha, toma posición a la izquierda, donde quiera seas dirigida!",
+        "CEI": "Volgiti a destra, volgiti a sinistra, ovunque si diriga la tua lama."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/גַם אֲנִ֗י אַכֶּ֤ה כַפִּ/י֙ אֶל כַּפִּ֔/י וַ/הֲנִחֹתִ֖י חֲמָתִ֑/י אֲנִ֥י יְהוָ֖ה דִּבַּֽרְתִּי׃",
+        "LXX": "ἐγένετο τὸ μαντεῖον ἐπὶ Ἰερουσαλὴμ τοῦ βαλεῖν χάρακα, τοῦ διανοῖξαι στόμα ἐν βοῇ, ὑψῶσαι φωνὴν μετὰ κραυγῆς, τοῦ βαλεῖν χάρακα ἐπὶ τὰς πύλας αὐτῆς καὶ βαλεῖν χῶμα καὶ οἰκοδομῆσαι βελοστάσεις.",
+        "VUL": "Ad dexteram ejus facta est divinatio super Jerusalem, ut ponat arietes, ut aperiat os in cæde, ut elevet vocem in ululatu, ut ponat arietes contra portas, ut comportet aggerem, ut ædificet munitiones.",
+        "SYN": "В правой руке у него гаданье: \"в Иерусалим\", где должно поставить тараны, открыть для побоища уста, возвысить голос для военного крика, подвести тараны к воротам, насыпать вал, построить осадные башни.",
+        "NEO": "Moi aussi, je frapperai main contre main ; et j’assouvirai mon courroux. Moi, \\+w Yahweh|strong=\"H3068\"\\+w**, j’ai parlé. »",
+        "NAB": "Then I, too, shall brush one hand against the other and wreak my fury. I, the LORD, have spoken.",
+        "VAT_ES": "Yo también golpearé con las palmas de mis manos y aplacaré mi furor. Yo, el Señor, he hablado.",
+        "CEI": "Anch'io batterò le mani e sazierò la mia ira. Io, il Signore, ho parlato\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "καὶ αὐτὸς αὐτοῖς ὡς μαντευόμενος μαντείαν ἐνώπιον αὐτῶν, καὶ αὐτὸς ἀναμιμνήσκων ἀδικίας αὐτοῦ μνησθῆναι.",
+        "VUL": "Eritque quasi consulens frustra oraculum in oculis eorum, et sabbatorum otium imitans : ipse autem recordabitur iniquitatis ad capiendum.",
+        "SYN": "Это гаданье показалось в глазах их лживым; но так как они клялись клятвою, то он, вспомнив о таком их вероломстве, положил взять его.",
+        "NEO": "Et la parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu rivolta questa parola del Signore:"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֨ה בֶן אָדָ֜ם שִׂים לְ/ךָ֣ שְׁנַ֣יִם דְּרָכִ֗ים לָ/בוֹא֙ חֶ֣רֶב מֶֽלֶךְ בָּבֶ֔ל מֵ/אֶ֥רֶץ אֶחָ֖ד יֵצְא֣וּ שְׁנֵי/הֶ֑ם וְ/יָ֣ד בָּרֵ֔א בְּ/רֹ֥אשׁ דֶּֽרֶךְ עִ֖יר בָּרֵֽא׃",
+        "LXX": "διὰ τοῦτο τάδε λέγει Κύριος Ἀνθ’ ὧν ἀνεμνήσατε τὰς ἀδικίας ὑμῶν ἐν τῷ ἀποκαλυφθῆναι τὰς ἀσεβείας ὑμῶν, τοῦ ὁραθῆναι ἁμαρτίας ὑμῶν ἐν πάσαις ταῖς ἀσεβείαις ὑμῶν καὶ ἐν τοῖς ἐπιτηδεύμασιν ὑμῶν· ἀνθ’ ὧν ἀνεμνήσατε, ἐν τούτοις ἁλώσεσθε.",
+        "VUL": "Idcirco hæc dicit Dominus Deus : Pro eo quod recordati estis iniquitatis vestræ, et revelastis prævaricationes vestras, et apparuerunt peccata vestra in omnibus cogitationibus vestris, pro eo, inquam, quod recordati estis, manu capiemini.",
+        "SYN": "Посему так говорит Господь Бог: так как вы сами приводите на память беззаконие ваше, делая явными преступления ваши, выставляя на вид грехи ваши во всех делах ваших, и сами приводите это на память, то вы будете взяты руками.",
+        "NEO": "« Toi, fils de l’homme, trace deux chemins par où puisse aller l’épée du roi de Babylone ; que tous deux partent du même pays, et grave un signe, grave-le à l’entrée du chemin d’une ville.",
+        "NAB": "Son of man, make for yourself two roads over which the sword of the king of Babylon can come. Both roads shall lead out from the same land. Then put a signpost at the head of each road,",
+        "VAT_ES": "Y tú, hijo de hombre, traza dos caminos para que llegue la espada del rey de Babilonia. Los dos caminos arrancarán de un mismo país. A la entrada de cada camino, pondrás una señal indicando la dirección de una ciudad.",
+        "CEI": "\"Figlio dell'uomo, traccia due strade per il passaggio della spada del re di Babilonia; proverranno tutte e due dallo stesso paese; tu metti un segnale a capo della strada che conduce nella città."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "דֶּ֣רֶךְ תָּשִׂ֔ים לָ/ב֣וֹא חֶ֔רֶב אֵ֖ת רַבַּ֣ת בְּנֵֽי עַמּ֑וֹן וְ/אֶת יְהוּדָ֥ה בִ/ירוּשָׁלִַ֖ם בְּצוּרָֽה׃",
+        "LXX": "καὶ σύ, ἄνομε βέβηλε ἀφηγούμενε τοῦ Ἰσραήλ, οὗ ἥκει ἡ ἡμέρα ἐν καιρῷ ἀδικίας πέρας,",
+        "VUL": "Tu autem, profane, impie dux Israël, cujus venit dies in tempore iniquitatis præfinita :",
+        "SYN": "И ты, недостойный, преступный вождь Израиля, которого день наступил ныне, когда нечестию его положен будет конец!",
+        "NEO": "Tu traceras un chemin à l’épée pour aller à Rabbath, capitale des fils d’Ammon, ou en Juda, contre Jérusalem, ville forte.",
+        "NAB": "so that the sword can come to Rabbah of the Ammonites or to Judah's capital, Jerusalem.",
+        "VAT_ES": "Tú trazarás el camino para que la espada llegue a Rabá de los amonitas, y a Judá, que tiene su plaza fuerte en Jerusalén.",
+        "CEI": "Traccia la strada per cui la spada giunga a Rabbà degli Ammoniti e in Giuda, a Gerusalemme nella città fortificata."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "כִּֽי עָמַ֨ד מֶלֶךְ בָּבֶ֜ל אֶל אֵ֣ם הַ/דֶּ֗רֶךְ בְּ/רֹ֛אשׁ שְׁנֵ֥י הַ/דְּרָכִ֖ים לִ/קְסָם קָ֑סֶם קִלְקַ֤ל בַּֽ/חִצִּים֙ שָׁאַ֣ל בַּ/תְּרָפִ֔ים רָאָ֖ה בַּ/כָּבֵֽד׃",
+        "LXX": "τάδε λέγει Κύριος Ἀφείλου τὴν κίδαριν καὶ ἐπέθου τὸν στέφανον· αὐτὴ οὐ τοιαύτη ἔσται· ἐταπείνωσας τὸ ὑψηλόν, καὶ ὕψωσας τὸ ταπεινόν.",
+        "VUL": "hæc dicit Dominus Deus : Aufer cidarim, tolle coronam : nonne hæc est quæ humilem sublevavit, et sublimem humiliavit ?",
+        "SYN": "так говорит Господь Бог: сними с себя диадему и сложи венец; этого уже не будет; униженное возвысится и высокое унизится.",
+        "NEO": "Car le roi de Babylone s’est arrêté au carrefour, à la tête des deux chemins, pour tirer des présages : il secoue les flèches, il interroge les théraphim, il examine le foie.",
+        "NAB": "For at the fork where the two roads divide stands the king of Babylon, divining; he has shaken the arrows, inquired of the teraphim, inspected the liver.",
+        "VAT_ES": "Porque el rey de Babilonia se ha detenido en la encrucijada, allí donde se bifurcan los caminos, para consultar los presagios: sacude las flechas, consulta a los ídolos y examina el hígado de las víctimas.",
+        "CEI": "Infatti il re di Babilonia è fermo al bivio, all'inizio delle due strade, per interrogare le sorti: agita le frecce, interroga gli dei domestici, osserva il fegato."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "בִּֽ/ימִינ֞/וֹ הָיָ֣ה הַ/קֶּ֣סֶם יְרוּשָׁלִַ֗ם לָ/שׂ֤וּם כָּרִים֙ לִ/פְתֹּ֤חַ פֶּה֙ בְּ/רֶ֔צַח לְ/הָרִ֥ים ק֖וֹל בִּ/תְרוּעָ֑ה לָ/שׂ֤וּם כָּרִים֙ עַל שְׁעָרִ֔ים לִ/שְׁפֹּ֥ךְ סֹלְלָ֖ה לִ/בְנ֥וֹת דָּיֵֽק׃",
+        "LXX": "ἀδικίαν ἀδικίαν ἀδικίαν θήσομαι αὐτήν, οὐαὶ αὐτῇ· τοιαύτη ἔσται ἕως οὗ ἔλθῃ ᾧ καθήκει, καὶ παραδώσω αὐτῷ.",
+        "VUL": "Iniquitatem, iniquitatem, iniquitatem ponam eam : et hoc non factum est, donec veniret cujus est judicium, et tradam ei.",
+        "SYN": "Низложу, низложу, низложу и его не будет, доколе не придет Тот, Кому _принадлежит_ он, и Я дам Ему.",
+        "NEO": "Dans sa droite est le présage « Jérusalem », pour dresser des béliers contre les murailles, pour ouvrir une entrée par une brèche, pour pousser à haute voix le cri de guerre, pour dresser des béliers contre les portes, pour élever des terrasses, pour construire des murs.",
+        "NAB": "In his right hand is the divining arrow marked \"Jerusalem,\" bidding him to give the order for slaying, to raise his voice in the battle cry, to post battering rams at the gates, to cast up a ramp, to build a siege tower.",
+        "VAT_ES": "En su mano derecha está el presagio que señala «Jerusalén», para ordenar la matanza, lanzar el grito de guerra, colocar arietes contra las puertas, levantar terraplenes y construir torres de asalto.",
+        "CEI": "Nella sua destra è uscito il responso: Gerusalemme, per porre contro di essa gli arieti, per farle udire l'ordine del massacro, echeggiare grida di guerra, disporre gli arieti contro le sue porte, innalzare terrapieni, costruire trincee."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֨ה לָ/הֶ֤ם כ/קסום כִּ/קְסָם שָׁוְא֙ בְּ/עֵ֣ינֵי/הֶ֔ם שְׁבֻעֵ֥י שְׁבֻע֖וֹת לָ/הֶ֑ם וְ/הֽוּא מַזְכִּ֥יר עָוֺ֖ן לְ/הִתָּפֵֽשׂ׃",
+        "LXX": "Καὶ σύ, υἱὲ ἀνθρώπου, προφήτευσον καὶ ἐρεῖς Τάδε λέγει Κύριος πρὸς τοὺς υἱοὺς Ἀμμὼν καὶ πρὸς τὸν ὀνειδισμὸν αὐτῶν, καὶ ἐρεῖς Ῥομφαία ῥομφαία ἐσπασμένη εἰς σφάγια καὶ ἐσπασμένη εἰς συντέλειαν, ἐγείρου ὅπως στίλβῃς.",
+        "VUL": "Et tu, fili hominis, propheta, et dic : Hæc dicit Dominus Deus ad filios Ammon, et ad opprobrium eorum : et dices : [Mucro, mucro, evaginate ad occidendum :/ limate ut interficias et fulgeas :/",
+        "SYN": "И ты, сын человеческий, изреки пророчество и скажи: так говорит Господь Бог о сынах Аммона и о поношении их; и скажи: меч, меч обнажен для заклания, вычищен для истребления, чтобы сверкал, как молния,",
+        "NEO": "A leurs yeux, ce n’est qu’une divination mensongère ; ils ont pour eux les serments les plus sacrés ; mais lui les fera souvenir de leurs iniquités lorsqu’ils seront pris.",
+        "NAB": "In their eyes this is but a lying oracle; yet they are bound by the oaths they have sworn, and the arrow taken in hand marks their guilt.",
+        "VAT_ES": "A los habitantes de Jerusalén les parecerá que ese presagio es falso, porque tienen a su favor un juramento solemne. Pero él les recordará su delito, y serán capturados.",
+        "CEI": "Ma questo non è che un vano presagio agli occhi di quelli che hanno fatto loro solenni giuramenti. Egli però ricorda loro l'iniquità per cui saranno catturati\"."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "לָ/כֵ֗ן כֹּֽה אָמַר֮ אֲדֹנָ֣/י יְהוִה֒ יַ֗עַן הַזְכַּרְ/כֶם֙ עֲוֺ֣נְ/כֶ֔ם בְּ/הִגָּל֣וֹת פִּשְׁעֵי/כֶ֗ם לְ/הֵֽרָאוֹת֙ חַטֹּ֣אותֵי/כֶ֔ם בְּ/כֹ֖ל עֲלִילֽוֹתֵי/כֶ֑ם יַ֚עַן הִזָּ֣כֶרְ/כֶ֔ם בַּ/כַּ֖ף תִּתָּפֵֽשׂוּ׃",
+        "LXX": "ἐν τῇ ὁράσει σου τῇ ματαίᾳ, καὶ ἐν τῷ μαντεύεσθαί σε ψευδῆ, τοῦ παραδοῦναί σε ἐπὶ τραχήλους τραυματιῶν ἀνόμων, ἥκει ἡ ἡμέρα ἐν καιρῷ ἀδικίας πέρας.",
+        "VUL": "cum tibi viderentur vana,/ et divinarentur mendacia,/ ut dareris super colla vulneratorum impiorum,/ quorum venit dies in tempore iniquitatis præfinita./",
+        "SYN": "чтобы, тогда как представляют тебе пустые видения и ложно гадают тебе, и тебя приложил к обезглавленным нечестивцам, которых день наступил, когда нечестию их положен будет конец.",
+        "NEO": "C’est pourquoi ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Parce que vous avez rappelé votre iniquité en manifestant vos transgressions, en faisant voir vos péchés dans toutes vos actions, parce que vous vous êtes rappelés au souvenir, vous serez pris avec la main.",
+        "NAB": "Therefore thus says the Lord GOD: Because you have drawn attention to your guilt, with your crimes laid bare and your sinfulness in all your wicked deeds revealed (because attention has been drawn to you), you shall be taken in hand.",
+        "VAT_ES": "Por eso, así habla el Señor: Porque ustedes, al ser descubiertas sus rebeldías, al ponerse en evidencia los pecados que han cometido en todas sus acciones, han hecho que se les recordara su delito; y por que se han acordado de ustedes, por eso, serán capturados.",
+        "CEI": "Perciò dice il Signore: \"Poiché voi avete fatto ricordare le vostre iniquità, rendendo manifeste le vostre trasgressioni e palesi i vostri peccati in tutto il vostro modo di agire, poiché ve ne vantate, voi resterete presi al laccio."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/אַתָּה֙ חָלָ֣ל רָשָׁ֔ע נְשִׂ֖יא יִשְׂרָאֵ֑ל אֲשֶׁר בָּ֣א יוֹמ֔/וֹ בְּ/עֵ֖ת עֲוֺ֥ן קֵֽץ׃",
+        "LXX": "ἀπόστρεφε, μὴ καταλύσῃς ἐν τῷ τόπῳ τούτῳ ᾧ γεγέννησαι· ἐν τῇ γῇ τῇ ἰδίᾳ σου κρινῶ σε.",
+        "VUL": "Revertere ad vaginam tuam,/ in loco in quo creatus es :/ in terra nativitatis tuæ judicabo te./",
+        "SYN": "Возвратить ли его в ножны его? - на месте, где ты сотворен, на земле происхождения твоего буду судить тебя:",
+        "NEO": "Et toi, profane, méchant prince d’Israël, dont le jour est venu, maintenant que l’iniquité est à son terme,",
+        "NAB": "And as for you, depraved and wicked prince of Israel, whose day is coming when your life of crime will be ended,",
+        "VAT_ES": "En cuanto a ti, infame malvado, príncipe de Israel, cuyo día ha llegado al mismo tiempo que la expiación final,",
+        "CEI": "A te, sconsacrato, empio principe d'Israele, di cui è giunto il giorno con il tempo della tua iniquità finale,"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "כֹּ֤ה אָמַר֙ אֲדֹנָ֣/י יְהוִ֔ה הָסִיר֙ הַ/מִּצְנֶ֔פֶת וְ/הָרִ֖ים הָֽ/עֲטָרָ֑ה זֹ֣את לֹא זֹ֔את הַ/שָּׁפָ֣לָה הַגְבֵּ֔הַ וְ/הַ/גָּבֹ֖הַ הַשְׁפִּֽיל׃",
+        "LXX": "καὶ ἐκχεῶ ἐπὶ σὲ ὀργήν μου, ἐν πυρὶ ὀργῆς μου ἐμφυσήσω ἐπὶ σέ, καὶ παραδώσω σε εἰς χεῖρας ἀνδρῶν βαρβάρων τεκταινόντων διαφθοράς.",
+        "VUL": "Et effundam super te indignationem meam ;/ in igne furoris mei sufflabo in te :/ daboque te in manus hominum insipientium,/ et fabricantium interitum./",
+        "SYN": "и изолью на тебя негодование Мое, дохну на тебя огнем ярости Моей и отдам тебя в руки людей свирепых, опытных в убийстве.",
+        "NEO": "ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : La tiare va être ôtée et la couronne enlevée ; tout sera bouleversé ; ce qui est bas sera élevé, ce qui est haut sera abaissé.",
+        "NAB": "thus says the Lord GOD: Off with the turban and away with the crown! Nothing shall be as it was! Up with the low and down with the high!",
+        "VAT_ES": "así habla el Señor: &iexcl;Saquen el turbante, quiten la diadema! Esto ya no será más así: lo humilde será elevado, lo excelso será humillado.",
+        "CEI": "così dice il Signore Dio: Deponi il turbante e togliti la corona: tutto sarà cambiato: ciò che è basso sarà elevato e ciò che è alto sarà abbassato."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "עַוָּ֥ה עַוָּ֖ה עַוָּ֣ה אֲשִׂימֶ֑/נָּה גַּם זֹאת֙ לֹ֣א הָיָ֔ה עַד בֹּ֛א אֲשֶׁר ל֥/וֹ הַ/מִּשְׁפָּ֖ט וּ/נְתַתִּֽי/ו׃",
+        "LXX": "ἐν πυρὶ ἔσῃ κατάβρωμα, τὸ αἷμά σου ἔσται ἐν μέσῳ τῆς γῆς σου· οὐ μὴ γένηταί σου μνεία, διότι ἐγὼ Κύριος λελάληκα.",
+        "VUL": "Igni eris cibus ;/ sanguis tuus erit in medio terræ ;/ oblivioni traderis :/ quia ego Dominus locutus sum.]",
+        "SYN": "Ты будешь пищею огню, кровь твоя останется на земле; не будут и вспоминать о тебе; ибо Я, Господь, сказал это.",
+        "NEO": "J’en ferai une ruine, une ruine, une ruine ; cela ne sera plus, jusqu’à ce que vienne celui à qui appartient le jugement et à qui je le remettrai.",
+        "NAB": "Twisted, twisted, twisted will I leave it; it shall not be the same until he comes who has the claim against the city; and to him I will hand it over.",
+        "VAT_ES": "&iexcl;Ruinas, ruinas, todo lo convierto en ruinas! Pero esto no sucederá hasta que llegue aquel a quien le pertenece el juicio, y a él se lo daré.",
+        "CEI": "In rovina, in rovina, in rovina la ridurrò e non si rialzerà più finché non giunga colui al quale appartiene di diritto e al quale io la darò\"."
+      }
+    }
+  }
+}

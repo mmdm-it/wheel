@@ -1,0 +1,170 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_052",
+  "book_key": "PSAL",
+  "sequence": 52,
+  "chapter_in": {
+    "MT": 52,
+    "VUL": 51,
+    "LXX": 51
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֗חַ מַשְׂכִּ֥יל לְ/דָוִֽד׃",
+        "LXX": "Εἰς τὸ τέλος, ὑπὲρ μαελέθ· συνέσεως τῷ Δαυείδ.",
+        "VUL": "In finem, pro Maëleth intelligentiæ David. [Dixit insipiens in corde suo : Non est Deus./",
+        "SYN": "Начальнику хора. На духовом _орудии._ Учение Давида.",
+        "NEO": "Au maître de chant. Cantique de David.",
+        "NAB": "For the leader. A maskil of David,",
+        "CEI": "Al maestro del coro. Maskil. Di Davide."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בְּ/ב֤וֹא דּוֹאֵ֣ג הָ/אֲדֹמִי֮ וַ/יַּגֵּ֪ד לְ/שָׁ֫א֥וּל וַ/יֹּ֥אמֶר ל֑/וֹ בָּ֥א דָ֝וִ֗ד אֶל בֵּ֥ית אֲחִימֶֽלֶךְ׃",
+        "LXX": "Εἶπεν ἄφρων ἐν καρδίᾳ αὐτοῦ Οὐκ ἔστιν θεός. διέφθειραν καὶ ἐβδελύχθησαν ἐν ἀνομίαις, οὐκ ἔστιν ὁ ποιῶν ἀγαθόν.",
+        "VUL": "Corrupti sunt, et abominabiles facti sunt in iniquitatibus ;/ non est qui faciat bonum./",
+        "SYN": "Сказал безумец в сердце своем: \"нет Бога\". Развратились они и совершили гнусные преступления; нет делающего добро.",
+        "NEO": "Lorsque Doëg l’Edomite vint faire à Saül ce rapport : David s’est rendu dans la maison d’Achimélech.",
+        "NAB": "when Doeg the Edomite went and told Saul, \"David went to the house of Ahimelech.\"",
+        "VAT_ES": "Cuando el edomita Doeg vino a avisar a Saúl, diciéndole: «David ha entrado en casa de Ajimélec».",
+        "CEI": "Dopo che l'idumeo Doeg venne da Saul per informarlo e dirgli: \"Davide è entrato in casa di Abimelech\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "מַה תִּתְהַלֵּ֣ל בְּ֭/רָעָה הַ/גִּבּ֑וֹר חֶ֥סֶד אֵ֝֗ל כָּל הַ/יּֽוֹם׃",
+        "LXX": "ὁ θεὸς ἐκ τοῦ οὐρανοῦ διέκυψεν ἐπὶ τοὺς υἱοὺς τῶν ἀνθρώπων, τοῦ ἰδεῖν εἰ ἔστιν συνίων ἢ ἐκζητῶν τὸν θεόν.",
+        "VUL": "Deus de cælo prospexit super filios hominum,/ ut videat si est intelligens, aut requirens Deum./",
+        "SYN": "Бог с небес призрел на сынов человеческих, чтобы видеть, есть ли разумеющий, ищущий Бога.",
+        "NEO": "Pourquoi te glorifies-tu dans le mal, ô héros ! — La bonté de Dieu subsiste toujours ! —",
+        "NAB": "Why do you glory in evil, you scandalous liar? All day long",
+        "VAT_ES": "&iquest;Por qué te jactas de tu malicia,",
+        "CEI": "Perché ti vanti del male o prepotente nella tua iniquità?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הַ֭וּוֹת תַּחְשֹׁ֣ב לְשׁוֹנֶ֑/ךָ כְּ/תַ֥עַר מְ֝לֻטָּ֗שׁ עֹשֵׂ֥ה רְמִיָּֽה׃",
+        "LXX": "πάντες ἐξέκλιναν, ἅμα ἠχρεώθησαν, οὐκ ἔστιν ποιῶν ἀγαθόν, οὐκ ἔστιν ἕως ἑνός.",
+        "VUL": "Omnes declinaverunt ; simul inutiles facti sunt :/ non est qui faciat bonum, non est usque ad unum./",
+        "SYN": "Все уклонились, сделались равно непотребными; нет делающего добро, нет ни одного.",
+        "NEO": "Ta langue ne médite que malice, comme une lame affilée, fourbe que tu es !",
+        "NAB": "you plot destruction; your tongue is like a sharpened razor, you skillful deceiver.",
+        "VAT_ES": "Estás todo el día tramando maldades,",
+        "CEI": "Ordisci insidie ogni giorno; la tua lingua è come lama affilata, artefice di inganni."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אָהַ֣בְתָּ רָּ֣ע מִ/טּ֑וֹב שֶׁ֓קֶר מִ/דַּבֵּ֖ר צֶ֣דֶק סֶֽלָה׃",
+        "LXX": "οὐχὶ γνώσονται πάντες οἱ ἐργαζόμενοι τὴν ἀνομίαν, οἱ ἔσθοντες τὸν λαόν μου βρώσει ἄρτου; τὸν θεὸν οὐκ ἐπεκαλέσαντο.",
+        "VUL": "Nonne scient omnes qui operantur iniquitatem,/ qui devorant plebem meam ut cibum panis ?/",
+        "SYN": "Неужели не вразумятся делающие беззаконие, съедающие народ мой, _как_ едят хлеб, и не призывающие Бога?",
+        "NEO": "Tu aimes le mal plutôt que le bien, le mensonge plutôt que la droiture. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "You love evil rather than good, lies rather than honest speech. Selah",
+        "VAT_ES": "Prefieres el mal al bien,",
+        "CEI": "Tu preferisci il male al bene, la menzogna al parlare sincero."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אָהַ֥בְתָּ כָֽל דִּבְרֵי בָ֗לַע לְשׁ֣וֹן מִרְמָֽה׃",
+        "LXX": "ἐκεῖ φοβηθήσονται φόβον οὗ οὐκ ἦν φόβος, ὅτι ὁ θεὸς διεσκόρπισεν ὀστᾶ ἀνθρωπαρέσκων· κατῃσχύνθησαν, ὅτι ὁ θεὸς ἐξουδένωσεν αὐτούς.",
+        "VUL": "Deum non invocaverunt ;/ illic trepidaverunt timore, ubi non erat timor./ Quoniam Deus dissipavit ossa eorum qui hominibus placent :/ confusi sunt, quoniam Deus sprevit eos./",
+        "SYN": "Там убоятся они страха, где нет страха, ибо рассыплет Бог кости ополчающихся против тебя. Ты постыдишь их, потому что Бог отверг их.",
+        "NEO": "Tu aimes toutes les paroles de perdition, ô langue menteuse !",
+        "NAB": "You love any word that destroys, you deceitful tongue.",
+        "VAT_ES": "amas las palabras hirientes,",
+        "CEI": "Ami ogni parola di rovina, o lingua di impostura."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "גַּם אֵל֮ יִתָּצְ/ךָ֪ לָ֫/נֶ֥צַח יַחְתְּ/ךָ֣ וְ/יִסָּחֲ/ךָ֣ מֵ/אֹ֑הֶל וְ/שֵֽׁרֶשְׁ/ךָ֨ מֵ/אֶ֖רֶץ חַיִּ֣ים סֶֽלָה׃",
+        "LXX": "τίς δώσει ἐκ Σιὼν τὸ σωτήριον τοῦ Ἰσραήλ; ἐν τῷ ἀποστρέψαι Κύριον τὴν αἰχμαλωσίαν τοῦ λαοῦ αὐτοῦ ἀγαλλιάσεται Ἰακὼβ καὶ εὐφρανθήσεται Ἰσραήλ.",
+        "VUL": "Quis dabit ex Sion salutare Israël ?/ cum converterit Deus captivitatem plebis suæ,/ exsultabit Jacob, et lætabitur Israël.]",
+        "SYN": "Кто даст с Сиона спасение Израилю! Когда Бог возвратит пленение народа Своего, тогда возрадуется Иаков и возвеселится Израиль.",
+        "NEO": "Aussi Dieu va te renverser pour toujours, il te saisira et t’arrachera de la tente, il te déracinera de la terre des vivants. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "Now God will strike you down, leave you crushed forever, Pluck you from your tent, uproot you from the land of the living. Selah",
+        "VAT_ES": "Por eso Dios te derribará,",
+        "CEI": "Perciò Dio ti demolirà per sempre, ti spezzerà e ti strapperà dalla tenda e ti sradicherà dalla terra dei viventi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/יִרְא֖וּ צַדִּיקִ֥ים וְ/יִירָ֗אוּ וְ/עָלָ֥י/ו יִשְׂחָֽקוּ׃",
+        "NEO": "Les justes le verront et ils seront effrayés, et ils se riront de lui :",
+        "NAB": "The righteous will look on with awe; they will jeer and say:",
+        "VAT_ES": "Al ver esto, los justos sentirán temor",
+        "CEI": "Vedendo, i giusti saran presi da timore e di lui rideranno:"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הִנֵּ֤ה הַ/גֶּ֗בֶר לֹ֤א יָשִׂ֥ים אֱלֹהִ֗ים מָֽע֫וּזּ֥/וֹ וַ֭/יִּבְטַח בְּ/רֹ֣ב עָשְׁר֑/וֹ יָ֝עֹ֗ז בְּ/הַוָּתֽ/וֹ׃",
+        "NEO": "« Voilà l’homme qui ne prenait pas Dieu pour sa forteresse, mais qui se confiait dans la grandeur de ses richesses, et se faisait fort de sa malice ! »",
+        "NAB": "\"That one did not take God as a refuge, but trusted in great wealth, relied on devious plots.\"",
+        "VAT_ES": "«Este es el hombre que no puso su refugio en Dios,",
+        "CEI": "\"Ecco l'uomo che non ha posto in Dio la sua difesa, ma confidava nella sua grande ricchezza e si faceva forte dei suoi crimini\"."
+      }
+    }
+  }
+}

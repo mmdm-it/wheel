@@ -1,0 +1,411 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOB_008",
+  "book_key": "IOB",
+  "sequence": 8,
+  "chapter_in": {
+    "MT": 8,
+    "VUL": 8,
+    "LXX": 8
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ֭/יַּעַן בִּלְדַּ֥ד הַ/שּׁוּחִ֗י וַ/יֹאמַֽר׃",
+        "LXX": "Ὑπολαβὼν δὲ Βαλδὰδ ὁ Σαυχείτης λέγει",
+        "VUL": "Respondens autem Baldad Suhites, dixit :",
+        "SYN": "И отвечал Вилдад Савхеянин и сказал:",
+        "NEO": "Alors Baldad de Suhé prit la parole et dit :",
+        "NAB": "Bildad the Shuhite spoke out and said:",
+        "VAT_ES": "Bildad de Súaj replicó, diciendo:",
+        "CEI": "Allora prese a dire Bildad il Suchita:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עַד אָ֥ן תְּמַלֶּל אֵ֑לֶּה וְ/ר֥וּחַ כַּ֝בִּיר אִמְרֵי פִֽי/ךָ׃",
+        "LXX": "Μέχρι τίνος λαλήσεις ταῦτα; πνεῦμα πολυρῆμον τοῦ στόματός σου.",
+        "VUL": "[Usquequo loqueris talia,/ et spiritus multiplex sermones oris tui ?/",
+        "SYN": "долго ли ты будешь говорить так? -- слова уст твоих бурный ветер!",
+        "NEO": "Jusques à quand tiendras-tu ces discours, et tes paroles seront-elles comme un souffle de tempête ?",
+        "NAB": "How long will you utter such things? The words from your mouth are like a mighty wind!",
+        "VAT_ES": "&iquest;Hasta cuándo hablarás de esta manera y tus palabras serán un viento impetuoso?",
+        "CEI": "Fino a quando dirai queste cose e vento impetuoso saranno le parole della tua bocca?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הַ֭/אֵל יְעַוֵּ֣ת מִשְׁפָּ֑ט וְ/אִם שַׁ֝דַּ֗י יְעַוֵּֽת צֶֽדֶק׃",
+        "LXX": "μὴ ὁ κύριος ἀδικήσει κρίνων; ἢ ὁ τὰ πάντα ποιήσας ταράξει τὸ δίκαιον;",
+        "VUL": "Numquid Deus supplantat judicium ?/ aut Omnipotens subvertit quod justum est ?/",
+        "SYN": "Неужели Бог извращает суд, и Вседержитель превращает правду?",
+        "NEO": "Est-ce que Dieu fait fléchir le droit, ou bien le Tout-Puissant renverse-t-il la justice ?",
+        "NAB": "Does God pervert judgment, and does the Almighty distort justice?",
+        "VAT_ES": "&iquest;Acaso Dios distorsiona el derecho y el Todopoderoso tergiversa la justicia?",
+        "CEI": "Può forse Dio deviare il diritto o l'Onnipotente sovvertire la giustizia?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אִם בָּנֶ֥י/ךָ חָֽטְאוּ ל֑/וֹ וַֽ֝/יְשַׁלְּחֵ֗/ם בְּ/יַד פִּשְׁעָֽ/ם׃",
+        "LXX": "εἰ οἱ υἱοί σου ἥμαρτον ἐναντίον αὐτοῦ, ἀπέστειλεν ἐν χειρὶ ἀνομίας αὐτῶν.",
+        "VUL": "Etiam si filii tui peccaverunt ei,/ et dimisit eos in manu iniquitatis suæ :/",
+        "SYN": "Если сыновья твои согрешили пред Ним, то Он и предал их в руку беззакония их.",
+        "NEO": "Si tes fils ont péché contre lui, il les a livrés aux mains de leur iniquité.",
+        "NAB": "If your children have sinned against him and he has left them in the grip of their guilt,",
+        "VAT_ES": "Si tus hijos pecaron contra él, él los dejó librados a sus propios delitos.",
+        "CEI": "Se i tuoi figli hanno peccato contro di lui, li ha messi in balìa della loro iniquità."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אִם אַ֭תָּה תְּשַׁחֵ֣ר אֶל אֵ֑ל וְ/אֶל שַׁ֝דַּ֗י תִּתְחַנָּֽן׃",
+        "LXX": "σὺ δὲ ὄρθριζε πρὸς Κύριον Παντοκράτορα δεόμενος.",
+        "VUL": "tu tamen si diluculo consurrexeris ad Deum,/ et Omnipotentem fueris deprecatus ;/",
+        "SYN": "Если же ты взыщешь Бога и помолишься Вседержителю,",
+        "NEO": "Pour toi, si tu as recours à Dieu, si tu implores le Tout-Puissant,",
+        "NAB": "Still, if you yourself have recourse to God and make supplication to the Almighty,",
+        "VAT_ES": "En cambio, si tú recurres a Dios e imploras al Todopoderoso,",
+        "CEI": "Se tu cercherai Dio e implorerai l'Onnipotente,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אִם זַ֥ךְ וְ/יָשָׁ֗ר אָ֥תָּה כִּי עַ֭תָּה יָעִ֣יר עָלֶ֑י/ךָ וְ֝/שִׁלַּ֗ם נְוַ֣ת צִדְקֶֽ/ךָ׃",
+        "LXX": "εἰ καθαρὸς εἶ καὶ ἀληθινός, δεήσεως ἐπακούσεταί σου, ἀποκαταστήσει δέ σοι δίαιταν δικαιοσύνης·",
+        "VUL": "si mundus et rectus incesseris :/ statim evigilabit ad te,/ et pacatum reddet habitaculum justitiæ tuæ,/",
+        "SYN": "и если ты чист и прав, то Он ныне же встанет над тобою и умиротворит жилище правды твоей.",
+        "NEO": "si tu es droit et pur, alors il veillera sur toi, il rendra le bonheur à la demeure de ta justice ;",
+        "NAB": "Should you be blameless and upright, surely now he will awake for you and restore your rightful domain;",
+        "VAT_ES": "si te mantienes puro y recto, seguramente, él pronto velará por ti y restablecerá tu morada de hombre justo.",
+        "CEI": "se puro e integro tu sei, fin d'ora veglierà su di te e ristabilirà la dimora della tua giustizia;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֣ה רֵאשִׁיתְ/ךָ֣ מִצְעָ֑ר וְ֝/אַחֲרִיתְ/ךָ֗ יִשְׂגֶּ֥ה מְאֹֽד׃",
+        "LXX": "ἔσται οὖν τὰ μὲν πρῶτά σου ὀλίγα, τὰ δὲ ἔσχατά σου ἀμύθητα.",
+        "VUL": "in tantum ut si priora tua fuerint parva,/ et novissima tua multiplicentur nimis./",
+        "SYN": "И если вначале у тебя было мало, то впоследствии будет весьма много.",
+        "NEO": "ton premier état semblera peu de chose, tant le second sera florissant.",
+        "NAB": "Your former state will be of little moment, for in time to come you will flourish indeed.",
+        "VAT_ES": "Tus comienzos habrán sido poca cosa, frente a la grandeza de tu porvenir.",
+        "CEI": "piccola cosa sarà la tua condizione di prima, di fronte alla grandezza che avrà la futura."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּֽי שְׁאַל נָ֭א לְ/דֹ֣ר רִישׁ֑וֹן וְ֝/כוֹנֵ֗ן לְ/חֵ֣קֶר אֲבוֹתָֽ/ם׃",
+        "LXX": "ἐπερώτησον γὰρ γενεὰν πρώτην, ἐξιχνίασον δὲ κατὰ γένος πατέρων·",
+        "VUL": "Interroga enim generationem pristinam,/ et diligenter investiga patrum memoriam/",
+        "SYN": "Ибо спроси у прежних родов и вникни в наблюдения отцов их;",
+        "NEO": "Interroge les générations passées, sois attentif à l’expérience des pères : —",
+        "NAB": "If you inquire of the former generations, and give heed to the experience of the fathers",
+        "VAT_ES": "Interroga, si no, a las generaciones pasadas, considera lo que experimentaron sus padres.",
+        "CEI": "Chiedilo infatti alle generazioni passate, poni mente all'esperienza dei loro padri,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "כִּֽי תְמ֣וֹל אֲ֭נַחְנוּ וְ/לֹ֣א נֵדָ֑ע כִּ֤י צֵ֖ל יָמֵ֣י/נוּ עֲלֵי אָֽרֶץ׃",
+        "LXX": "χθιζοὶ γάρ ἐσμεν καὶ οὐκ οἴδαμεν, σκιὰ γάρ ἐστιν ἡμῶν ἐπὶ τῆς γῆς ὁ βίος.",
+        "VUL": "(hesterni quippe sumus, et ignoramus,/ quoniam sicut umbra dies nostri sunt super terram),/",
+        "SYN": "а мы -- вчерашние и ничего не знаем, потому что наши дни на земле тень.",
+        "NEO": "car nous sommes d’hier, et nous ne savons rien, nos jours sur la terre passent comme l’ombre ; —",
+        "NAB": "(As we are but of yesterday and have no knowledge, because our days on earth are but a shadow),",
+        "VAT_ES": "Nosotros somos de ayer y no sabemos nada, nuestros días sobre la tierra son una sombra.",
+        "CEI": "perché noi siamo di ieri e nulla sappiamo, come un'ombra sono i nostri giorni sulla terra."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "הֲ/לֹא הֵ֣ם י֭וֹרוּ/ךָ יֹ֣אמְרוּ לָ֑/ךְ וּ֝/מִ/לִּבָּ֗/ם יוֹצִ֥אוּ מִלִּֽים׃",
+        "LXX": "ἢ οὐχ οὗτοί σε διδάξουσιν καὶ ἀναγγελοῦσιν, καὶ ἐκ καρδίας ἐξάξουσιν ῥήματα;",
+        "VUL": "et ipsi docebunt te, loquentur tibi,/ et de corde suo proferent eloquia./",
+        "SYN": "Вот они научат тебя, скажут тебе и от сердца своего произнесут слова:",
+        "NEO": "ne vont-ils pas t’enseigner, te parler, et de leur cœur tirer des sentences :",
+        "NAB": "Will they not teach you and tell you and utter their words of understanding?",
+        "VAT_ES": "Ellos te instruirán y te hablarán, sacarán de su corazón estas palabras.",
+        "CEI": "Essi forse non ti istruiranno e ti parleranno traendo le parole dal cuore?"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "הֲ/יִֽגְאֶה גֹּ֭מֶא בְּ/לֹ֣א בִצָּ֑ה יִשְׂגֶּה אָ֥חוּ בְלִי מָֽיִם׃",
+        "LXX": "μὴ θάλλει πάπυρος ἄνευ ὕδατος; ἢ ὑψωθήσεται βούτομον ἄνευ πότου;",
+        "VUL": "Numquid virere potest scirpus absque humore ?/ aut crescere carectum sine aqua ?/",
+        "SYN": "поднимается ли тростник без влаги? растет ли камыш без воды?",
+        "NEO": "« Le papyrus croît-il en dehors des marais ? Le jonc s’élève-t-il sans eau ?",
+        "NAB": "Can the papyrus grow up without mire? Can the reed grass flourish without water?",
+        "VAT_ES": "&iquest;Brota el papiro fuera de los pantanos? &iquest;Crece el junco donde no hay agua?",
+        "CEI": "Cresce forse il papiro fuori della palude e si sviluppa forse il giunco senz'acqua?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "עֹדֶ֣/נּוּ בְ֭/אִבּ/וֹ לֹ֣א יִקָּטֵ֑ף וְ/לִ/פְנֵ֖י כָל חָצִ֣יר יִיבָֽשׁ׃",
+        "LXX": "ἔτι ὂν ἐπὶ ῥίζης, καὶ οὐ μὴ θερισθῇ· πρὸ τοῦ πιεῖν πᾶσα βοτάνη οὐχὶ ξηραίνεται;",
+        "VUL": "Cum adhuc sit in flore, nec carpatur manu,/ ante omnes herbas arescit./",
+        "SYN": "Еще он в свежести своей и не срезан, а прежде всякой травы засыхает.",
+        "NEO": "Encore tendre, sans qu’on le coupe, il sèche avant toute herbe.",
+        "NAB": "While it is yet green and uncut, it withers quicker than any grass.",
+        "VAT_ES": "Tierno aún, y sin que nadie lo corte, se seca más pronto que cualquier otra hierba.",
+        "CEI": "È ancora verde, non buono per tagliarlo, e inaridisce prima d'ogn'altra erba."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כֵּ֗ן אָ֭רְחוֹת כָּל שֹׁ֣כְחֵי אֵ֑ל וְ/תִקְוַ֖ת חָנֵ֣ף תֹּאבֵֽד׃",
+        "LXX": "οὕτως τοίνυν ἔσται τὰ ἔσχατα πάντων τῶν ἐπιλανθανομένων τοῦ κυρίου· ἐλπὶς γὰρ ἀσεβοῦς ἀπολεῖται.",
+        "VUL": "Sic viæ omnium qui obliviscuntur Deum,/ et spes hypocritæ peribit./",
+        "SYN": "Таковы пути всех забывающих Бога, и надежда лицемера погибнет;",
+        "NEO": "Telles sont les voies de tous ceux qui oublient Dieu ; l’espérance de l’impie périra.",
+        "NAB": "So is the end of everyone who forgets God, and so shall the hope of the godless man perish.",
+        "VAT_ES": "Tal es la suerte de los que olvidan a Dios, así perece la esperanza del impío.",
+        "CEI": "Tale il destino di chi dimentica Dio, così svanisce la speranza dell'empio;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אֲשֶׁר יָק֥וֹט כִּסְל֑/וֹ וּ/בֵ֥ית עַ֝כָּבִ֗ישׁ מִבְטַחֽ/וֹ׃",
+        "LXX": "ἀοίκητος γὰρ αὐτοῦ ἔσται ὁ οἶκος, ἀράχνη δὲ αὐτοῦ ἀποβήσεται ἡ σκηνή.",
+        "VUL": "Non ei placebit vecordia sua,/ et sicut tela aranearum fiducia ejus./",
+        "SYN": "упование его подсечено, и уверенность его -- дом паука.",
+        "NEO": "Sa confiance sera brisée ; son assurance ressemble à la toile de l’araignée.",
+        "NAB": "His confidence is but a gossamer thread and his trust is a spider's web.",
+        "VAT_ES": "Su confianza es apenas un hilo, su seguridad, una tela de araña.",
+        "CEI": "la sua fiducia è come un filo e una tela di ragno è la sua sicurezza:"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "יִשָּׁעֵ֣ן עַל בֵּ֭ית/וֹ וְ/לֹ֣א יַעֲמֹ֑ד יַחֲזִ֥יק בּ֝֗/וֹ וְ/לֹ֣א יָקֽוּם׃",
+        "LXX": "ἐὰν ὑπερείσῃ τὴν οἰκίαν αὐτοῦ, οὐ μὴ στῇ· ἐπιλαβομένου δὲ αὐτοῦ οὐ μὴ ὑπομείνῃ·",
+        "VUL": "Innitetur super domum suam, et non stabit ;/ fulciet eam, et non consurget./",
+        "SYN": "Обопрется о дом свой и не устоит; ухватится за него и не удержится.",
+        "NEO": "Il s’appuie sur sa maison, et elle ne tient pas ; il s’y attache, et elle ne reste pas debout.",
+        "NAB": "He shall rely upon his family, but it shall not last; he shall cling to it, but it shall not endure.",
+        "VAT_ES": "Se apoya sobre su casa, y ella no resiste, se aferra a ella, y no queda en pie.",
+        "CEI": "si appoggi alla sua casa, essa non resiste, vi si aggrappi, ma essa non regge."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "רָטֹ֣ב ה֭וּא לִ/פְנֵי שָׁ֑מֶשׁ וְ/עַ֥ל גַּ֝נָּת֗/וֹ יֹֽנַקְתּ֥/וֹ תֵצֵֽא׃",
+        "LXX": "ὑγρὸς γάρ ἐστιν ὑπὸ ἡλίου, καὶ ἐκ σαπρίας αὐτοῦ ὁ ῥάδαμνος αὐτοῦ ἐξελεύσεται.",
+        "VUL": "Humectus videtur antequam veniat sol,/ et in ortu suo germen ejus egredietur./",
+        "SYN": "Зеленеет он пред солнцем, за сад простираются ветви его;",
+        "NEO": "Il est plein de vigueur, au soleil, ses rameaux s’étendent sur son jardin,",
+        "NAB": "He is full of sap before sunrise, and beyond his garden his shoots go forth;",
+        "VAT_ES": "Ahí está lleno de savia ante los rayos del sol, sus retoños se extienden sobre su jardín;",
+        "CEI": "Rigoglioso sia pure in faccia al sole e sopra il giardino si spandano i suoi rami,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "עַל גַּ֭ל שָֽׁרָשָׁ֣י/ו יְסֻבָּ֑כוּ בֵּ֖ית אֲבָנִ֣ים יֶחֱזֶֽה׃",
+        "LXX": "ἐπὶ συναγωγὴν λίθων κοιμᾶται, ἐν δὲ μέσῳ χαλίκων ζήσεται.",
+        "VUL": "Super acervum petrarum radices ejus densabuntur,/ et inter lapides commorabitur./",
+        "SYN": "в кучу _камней_ вплетаются корни его, между камнями врезываются.",
+        "NEO": "ses racines s’entrelacent parmi les pierres, il plonge jusqu’aux profondeurs du roc.",
+        "NAB": "About a heap of stones are his roots entwined; among the rocks he takes hold.",
+        "VAT_ES": "sus raíces se entrelazan en el pedregal, se prenden al terreno rocoso.",
+        "CEI": "sul terreno sassoso s'intreccino le sue radici, tra le pietre attinga la vita."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "אִם יְבַלְּעֶ֥/נּוּ מִ/מְּקוֹמ֑/וֹ וְ/כִ֥חֶשׁ בּ֝֗/וֹ לֹ֣א רְאִיתִֽי/ךָ׃",
+        "LXX": "ἐὰν καταπίῃ, ὁ τόπος ψεύσεται αὐτόν· οὐχ ἑόρακας τοιαῦτα.",
+        "VUL": "Si absorbuerit eum de loco suo,/ negabit eum, et dicet : Non novi te./",
+        "SYN": "Но когда вырвут его с места его, оно откажется от него: \"я не видало тебя!\"",
+        "NEO": "Si Dieu l’arrache de sa place, sa place le renie : Je ne t’ai jamais vu.",
+        "NAB": "Yet if one tears him from his place, it will disown him: \"I have never seen you!\"",
+        "VAT_ES": "Pero apenas lo arrancan de su sitio, este reniega de él, diciendo: «Nunca te vi».",
+        "CEI": "Se lo si toglie dal suo luogo, questo lo rinnega: \"Non t'ho mai visto!\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "הֶן ה֭וּא מְשׂ֣וֹשׂ דַּרְכּ֑/וֹ וּ֝/מֵ/עָפָ֗ר אַחֵ֥ר יִצְמָֽחוּ׃",
+        "LXX": "ὅτι καταστροφὴ ἀσεβοῦς τοιαύτη, ἐκ δὲ γῆς ἄλλον ἀναβλαστήσει.",
+        "VUL": "Hæc est enim lætitia viæ ejus,/ ut rursum de terra alii germinentur./",
+        "SYN": "Вот радость пути его! а из земли вырастают другие.",
+        "NEO": "C’est là que sa joie se termine, et du même sol d’autres s’élèveront après lui. »",
+        "NAB": "There he lies rotting beside the road, and out of the soil another sprouts.",
+        "VAT_ES": "&iexcl;Esa es la buena suerte que le toca, mientras otro brota del polvo!",
+        "CEI": "Ecco la gioia del suo destino e dalla terra altri rispuntano."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "הֶן אֵ֭ל לֹ֣א יִמְאַס תָּ֑ם וְ/לֹֽא יַ֝חֲזִ֗יק בְּ/יַד מְרֵעִֽים׃",
+        "LXX": "ὁ γὰρ κύριος οὐ μὴ ἀποποιήσηται τὸν ἄκακον, πᾶν δὲ δῶρον ἀσεβοῦς οὐ δέξεται.",
+        "VUL": "Deus non projiciet simplicem,/ nec porriget manum malignis,/",
+        "SYN": "Видишь, Бог не отвергает непорочного и не поддерживает руки злодеев.",
+        "NEO": "Non, Dieu ne rejette pas l’innocent, il ne prend pas la main des malfaiteurs.",
+        "NAB": "Behold, God will not cast away the upright; neither will he take the hand of the wicked.",
+        "VAT_ES": "No, Dios no desdeña al hombre íntegro, ni toma de la mano a los malvados.",
+        "CEI": "Dunque, Dio non rigetta l'uomo integro, e non sostiene la mano dei malfattori."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "עַד יְמַלֵּ֣ה שְׂח֣וֹק פִּ֑י/ךָ וּ/שְׂפָתֶ֥י/ךָ תְרוּעָֽה׃",
+        "LXX": "ἀληθινῶν δὲ στόμα ἐμπλήσει γέλωτος, τὰ δὲ χείλη αὐτῶν ἐξομολογήσεως·",
+        "VUL": "donec impleatur risu os tuum,/ et labia tua jubilo./",
+        "SYN": "Он еще наполнит смехом уста твои и губы твои радостным восклицанием.",
+        "NEO": "Il remplira ta bouche d’éclats de rire, et mettra sur tes lèvres des chants d’allégresse.",
+        "NAB": "Once more will he fill your mouth with laughter, and your lips with rejoicing.",
+        "VAT_ES": "El llenará otra vez tu boca de risas y tus labios de aclamaciones jubilosas.",
+        "CEI": "Colmerà di nuovo la tua bocca di sorriso e le tue labbra di gioia."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "שֹׂנְאֶ֥י/ךָ יִלְבְּשׁוּ בֹ֑שֶׁת וְ/אֹ֖הֶל רְשָׁעִ֣ים אֵינֶֽ/נּוּ׃",
+        "LXX": "οἱ δὲ ἐχθροὶ αὐτῶν ἐνδύσονται αἰσχύνην, δίαιτα δὲ ἀσεβοῦς οὐκ ἔσται.",
+        "VUL": "Qui oderunt te induentur confusione,/ et tabernaculum impiorum non subsistet.]",
+        "SYN": "Ненавидящие тебя облекутся в стыд, и шатра нечестивых не станет.",
+        "NEO": "Tes ennemis seront couverts de honte, et la tente des méchants disparaîtra.",
+        "NAB": "They that hate you shall be clothed with shame, and the tent of the wicked shall be no more.",
+        "VAT_ES": "Los que te odian se cubrirán de verg&uuml;enza, y la carpa de los malvados no existirá más",
+        "CEI": "I tuoi nemici saran coperti di vergogna e la tenda degli empi più non sarà."
+      }
+    }
+  }
+}

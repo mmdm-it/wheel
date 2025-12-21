@@ -1,0 +1,555 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_006",
+  "book_key": "EXO",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֶל מֹשֶׁ֔ה עַתָּ֣ה תִרְאֶ֔ה אֲשֶׁ֥ר אֶֽעֱשֶׂ֖ה לְ/פַרְעֹ֑ה כִּ֣י בְ/יָ֤ד חֲזָקָה֙ יְשַׁלְּחֵ֔/ם וּ/בְ/יָ֣ד חֲזָקָ֔ה יְגָרְשֵׁ֖/ם מֵ/אַרְצֽ/וֹ׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς Μωυσῆν Ἤδη ὄψει ἃ ποιήσω τῷ Φαραώ· ἐν γὰρ χειρὶ κραταιᾷ ἐξαποστελεῖ αὐτούς, καὶ ἐν βραχίονι ὑψηλῷ ἐκβαλεῖ αὐτοὺς ἐκ τῆς γῆς αὐτοῦ.",
+        "VUL": "Dixitque Dominus ad Moysen : Nunc videbis quæ facturus sim Pharaoni : per manum enim fortem dimittet eos, et in manu robusta ejiciet illos de terra sua.",
+        "SYN": "И сказал Господь Моисею: теперь увидишь ты, что Я сделаю с фараоном; по действию руки крепкой он отпустит их; по действию руки крепкой даже выгонит их из земли своей.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Tu verras bientôt ce que je ferai à Pharaon : contraint par une main puissante, il les laissera aller ; contraint par une main puissante, il les chassera de son pays. »",
+        "NAB": "Then the LORD answered Moses, \"Now you shall see what I will do to Pharaoh. Forced by my mighty hand, he will send them away; compelled by my outstretched arm, he will drive them from his land.\"",
+        "VAT_ES": "El Señor le respondió: «&iexcl;Ahora verás lo que haré al Faraón! Tendrá que dejarlos partir por la fuerza, e incluso, se verá obligado a expulsarlos de su país».",
+        "CEI": "Il Signore disse a Mosè: \"Ora vedrai quello che sto per fare al faraone con mano potente, li lascerà andare, anzi con mano potente li caccerà dal suo paese!\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר אֱלֹהִ֖ים אֶל מֹשֶׁ֑ה וַ/יֹּ֥אמֶר אֵלָ֖י/ו אֲנִ֥י יְהוָֽה׃",
+        "LXX": "Ἐλάλησεν δὲ ὁ θεὸς πρὸς Μωυσῆν καὶ εἶπεν πρὸς αὐτόν Ἐγὼ Κύριος·",
+        "VUL": "Locutusque est Dominus ad Moysen dicens : Ego Dominus",
+        "SYN": "И говорил Бог Моисею и сказал ему: Я Господь.",
+        "NEO": "Dieu parla à Moïse, en disant : « Je suis \\+w Yahweh|strong=\"H3068\"\\+w**.+ 6:2 La révélation ancienne est présentée comme celle de \\+it El Shaddaï\\+it*, traduit (très conjecturalement) : \\+it Dieu Tout-Puissant\\+it*.*",
+        "NAB": "God also said to Moses, \"I am the LORD.",
+        "VAT_ES": "Dios habló a Moisés y le dijo: «Yo soy el Señor.",
+        "CEI": "Dio parlò a Mosè e gli disse: \"Io sono il Signore!"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וָ/אֵרָ֗א אֶל אַבְרָהָ֛ם אֶל יִצְחָ֥ק וְ/אֶֽל יַעֲקֹ֖ב בְּ/אֵ֣ל שַׁדָּ֑י וּ/שְׁמִ֣/י יְהוָ֔ה לֹ֥א נוֹדַ֖עְתִּי לָ/הֶֽם׃",
+        "LXX": "καὶ ὤφθην πρὸς Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακώβ, θεὸς ὢν αὐτῶν, καὶ τὸ ὄνομά μου Κύριος οὐκ ἐδήλωσα αὐτοῖς·",
+        "VUL": "qui apparui Abraham, Isaac et Jacob in Deo omnipotente : et nomen meum Adonai non indicavi eis.",
+        "SYN": "Являлся Я Аврааму, Исааку и Иакову с _именем_ \"Бог Всемогущий\", а с именем _Моим_ \"Господь\" не открылся им;",
+        "NEO": "Je suis apparu à Abraham, à Isaac et à Jacob comme Dieu tout-puissant, mais sous mon nom de \\+w Yahweh|strong=\"H3068\"\\+w**, je ne me suis pas fait connaître à eux.",
+        "NAB": "As God the Almighty I appeared to Abraham, Isaac and Jacob, but my name, LORD, I did not make known to them.",
+        "VAT_ES": "Yo me aparecí a Abraham, a Isaac y a Jacob como el Dios Todopoderoso, pero no me di a conocer a ellos con mi nombre «el Señor».",
+        "CEI": "Sono apparso ad Abramo, a Isacco, a Giacobbe come Dio onnipotente, ma con il mio nome di Signore non mi son manifestato a loro."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/גַ֨ם הֲקִמֹ֤תִי אֶת בְּרִיתִ/י֙ אִתָּ֔/ם לָ/תֵ֥ת לָ/הֶ֖ם אֶת אֶ֣רֶץ כְּנָ֑עַן אֵ֛ת אֶ֥רֶץ מְגֻרֵי/הֶ֖ם אֲשֶׁר גָּ֥רוּ בָֽ/הּ׃",
+        "LXX": "καὶ ἔστησα τὴν διαθήκην μου πρὸς αὐτοὺς ὥστε δοῦναι αὐτοῖς τὴν γῆν τῶν Χαναναίων, τὴν γῆν ἣν παρῳκήκασιν, ἐν ᾗ καὶ παρῴκησαν ἐπ’ αὐτῆς.",
+        "VUL": "Pepigique fdus cum eis, ut darem eis terram Chanaan, terram peregrinationis eorum, in qua fuerunt advenæ.",
+        "SYN": "и Я поставил завет Мой с ними, чтобы дать им землю Ханаанскую, землю странствования их, в которой они странствовали.",
+        "NEO": "J’ai aussi établi mon alliance avec eux pour leur donner le pays de Canaan, le pays de leurs pèlerinages, où ils ont séjourné en étrangers.",
+        "NAB": "I also established my covenant with them, to give them the land of Canaan, the land in which they were living as aliens.",
+        "VAT_ES": "También establecí mi alianza con ellos, para darles la tierra de Canaán, esa tierra donde ellos residieron como extranjeros.",
+        "CEI": "Ho anche stabilito la mia alleanza con loro, per dar loro il paese di Cànaan, quel paese dov'essi soggiornarono come forestieri."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/גַ֣ם אֲנִ֣י שָׁמַ֗עְתִּי אֶֽת נַאֲקַת֙ בְּנֵ֣י יִשְׂרָאֵ֔ל אֲשֶׁ֥ר מִצְרַ֖יִם מַעֲבִדִ֣ים אֹתָ֑/ם וָ/אֶזְכֹּ֖ר אֶת בְּרִיתִֽ/י׃",
+        "LXX": "καὶ ἐγὼ εἰσήκουσα τὸν στεναγμὸν τῶν υἱῶν Ἰσραήλ, ὃν οἱ Αἰγύπτιοι καταδουλοῦνται αὐτούς, καὶ ἐμνήσθην τῆς διαθήκης ὑμῶν.",
+        "VUL": "Ego audivi gemitum filiorum Israël, quo Ægyptii oppresserunt eos : et recordatus sum pacti mei.",
+        "SYN": "И Я услышал стенание сынов Израилевых о том, что Египтяне держат их в рабстве, и вспомнил завет Мой.",
+        "NEO": "J’ai entendu le gémissement des enfants d’Israël que les Égyptiens tiennent dans la servitude, et je me suis souvenu de mon alliance.",
+        "NAB": "And now that I have heard the groaning of the Israelites, whom the Egyptians are treating as slaves, I am mindful of my covenant.",
+        "VAT_ES": "Y cuando escuché los gemidos de los israelitas, esclavizados por los egipcios, me acordé de mi alianza.",
+        "CEI": "Sono ancora io che ho udito il lamento degli Israeliti asserviti dagli Egiziani e mi sono ricordato della mia alleanza."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "לָ/כֵ֞ן אֱמֹ֥ר לִ/בְנֵֽי יִשְׂרָאֵ֘ל אֲנִ֣י יְהוָה֒ וְ/הוֹצֵאתִ֣י אֶתְ/כֶ֗ם מִ/תַּ֨חַת֙ סִבְלֹ֣ת מִצְרַ֔יִם וְ/הִצַּלְתִּ֥י אֶתְ/כֶ֖ם מֵ/עֲבֹדָתָ֑/ם וְ/גָאַלְתִּ֤י אֶתְ/כֶם֙ בִּ/זְר֣וֹעַ נְטוּיָ֔ה וּ/בִ/שְׁפָטִ֖ים גְּדֹלִֽים׃",
+        "LXX": "βάδιζε εἰπὸν τοῖς υἱοῖς Ἰσραὴλ λέγων Ἐγὼ Κύριος, καὶ ἐξάξω ὑμᾶς ἀπὸ τῆς δυναστείας τῶν Αἰγυπτίων, καὶ ῥύσομαι ὑμᾶς ἐκ τῆς δουλίας, καὶ λυτρώσομαι ὑμᾶς ἐν βραχίονι ὑψηλῷ καὶ κρίσει μεγάλῃ·",
+        "VUL": "Ideo dic filiis Israël : Ego Dominus qui educam vos de ergastulo Ægyptiorum, et eruam de servitute, ac redimam in brachio excelso et judiciis magnis.",
+        "SYN": "Итак скажи сынам Израилевым: Я Господь, и выведу вас из-под ига Египтян, и избавлю вас от рабства их, и спасу вас мышцею простертою и судами великими;",
+        "NEO": "C’est pourquoi dis aux enfants d’Israël : Je suis \\+w Yahweh|strong=\"H3068\"\\+w** ; je vous affranchirai des corvées des Égyptiens, je vous délivrerai de leur servitude, et je vous sauverai+ 6:6 \\+it Sauver\\+it* rend ici le verbe \\+it Gaal\\+it*, aux sens multiples (venger, racheter) : Dieu, le plus proche d’Israël prend en mains ses intérêts, se fait le vengeur, son redempteur…* avec un bras étendu et par de grands jugements.",
+        "NAB": "Therefore, say to the Israelites: I am the LORD. I will free you from the forced labor of the Egyptians and will deliver you from their slavery. I will rescue you by my outstretched arm and with mighty acts of judgment.",
+        "VAT_ES": "Por eso, anuncia esto a los israelitas» Yo soy el Señor. Yo los libraré de los trabajos forzados que les imponen los egipcios, los salvaré de la esclavitud a que ellos los someten, y los rescataré con el poder de mi brazo, infligiendo severos y justos castigos.",
+        "CEI": "Per questo dì agli Israeliti: Io sono il Signore! Vi sottrarrò ai gravami degli Egiziani, vi libererò dalla loro schiavitù e vi libererò con braccio teso e con grandi castighi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/לָקַחְתִּ֨י אֶתְ/כֶ֥ם לִ/י֙ לְ/עָ֔ם וְ/הָיִ֥יתִי לָ/כֶ֖ם לֵֽ/אלֹהִ֑ים וִֽ/ידַעְתֶּ֗ם כִּ֣י אֲנִ֤י יְהוָה֙ אֱלֹ֣הֵי/כֶ֔ם הַ/מּוֹצִ֣יא אֶתְ/כֶ֔ם מִ/תַּ֖חַת סִבְל֥וֹת מִצְרָֽיִם׃",
+        "LXX": "καὶ λήμψομαι ἐμαυτῷ ὑμᾶς λαὸν ἐμοί, καὶ ἔσομαι ὑμῶν θεός, καὶ γνώσεσθε ὅτι ἐγὼ Κύριος ὁ θεὸς ὑμῶν ὁ ἐξαγαγὼν ὑμᾶς ἐκ τῆς καταδυναστείας τῶν Αἰγυπτίων·",
+        "VUL": "Et assumam vos mihi in populum, et ero vester Deus : et scietis quod ego sum Dominus Deus vester qui eduxerim vos de ergastulo Ægyptiorum,",
+        "SYN": "и приму вас Себе в народ и буду вам Богом, и вы узнаете, что Я Господь, Бог ваш, изведший вас [из земли Египетской] из-под ига Египетского;",
+        "NEO": "Je vous prendrai pour mon peuple, je serai votre Dieu, et vous saurez que je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, qui vous affranchis des corvées des Égyptiens.",
+        "NAB": "I will take you as my own people, and you shall have me as your God. You will know that I, the LORD, am your God when I free you from the labor of the Egyptians",
+        "VAT_ES": "Haré de ustedes mi Pueblo y yo seré su Dios. Así tendrán que reconocer que soy yo, el Señor, el que los libró de los trabajos forzados de Egipto.",
+        "CEI": "Io vi prenderò come mio popolo e diventerò il vostro Dio. Voi saprete che io sono il Signore, il vostro Dio, che vi sottrarrà ai gravami degli Egiziani."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/הֵבֵאתִ֤י אֶתְ/כֶם֙ אֶל הָ/אָ֔רֶץ אֲשֶׁ֤ר נָשָׂ֨אתִי֙ אֶת יָדִ֔/י לָ/תֵ֣ת אֹתָ֔/הּ לְ/אַבְרָהָ֥ם לְ/יִצְחָ֖ק וּֽ/לְ/יַעֲקֹ֑ב וְ/נָתַתִּ֨י אֹתָ֥/הּ לָ/כֶ֛ם מוֹרָשָׁ֖ה אֲנִ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἐξάξω ὑμᾶς εἰς τὴν γῆν εἰς ἣν ἐξέτεινα τὴν χεῖρά μου δοῦναι αὐτὴν τῷ Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακώβ, καὶ δώσω ὑμῖν αὐτὴν ἐν κλήρῳ· ἐγὼ Κύριος.",
+        "VUL": "et induxerim in terram, super quam levavi manum meam ut darem eam Abraham, Isaac et Jacob : daboque illam vobis possidendam. Ego Dominus.",
+        "SYN": "и введу вас в ту землю, о которой Я, подняв руку Мою, _клялся_ дать ее Аврааму, Исааку и Иакову, и дам вам ее в наследие. Я Господь.",
+        "NEO": "Je vous ferai entrer dans le pays que j’ai juré de donner à Abraham, à Isaac et à Jacob ; je vous le donnerai en possession : je suis \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "and bring you into the land which I swore to give to Abraham, Isaac and Jacob. I will give it to you as your own possession - I, the LORD!\"",
+        "VAT_ES": "Después los introduciré en la tierra que juré dar a Abraham, a Isaac y a Jacob, y se la daré en posesión. Yo soy el Señor.",
+        "CEI": "Vi farò entrare nel paese che ho giurato a mano alzata di dare ad Abramo, a Isacco e a Giacobbe, e ve lo darò in possesso: io sono il Signore!\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר מֹשֶׁ֛ה כֵּ֖ן אֶל בְּנֵ֣י יִשְׂרָאֵ֑ל וְ/לֹ֤א שָֽׁמְעוּ֙ אֶל מֹשֶׁ֔ה מִ/קֹּ֣צֶר ר֔וּחַ וּ/מֵ/עֲבֹדָ֖ה קָשָֽׁה׃",
+        "LXX": "ἐλάλησεν δὲ Μωυσῆς οὕτως τοῖς υἱοῖς Ἰσραήλ· καὶ οὐκ εἰσήκουσαν Μωυσῇ ἀπὸ τῆς ὀλιγοψυχίας καὶ ἀπὸ τῶν ἔργων τῶν σκληρῶν.",
+        "VUL": "Narravit ergo Moyses omnia filiis Israël : qui non acquieverunt ei propter angustiam spiritus, et opus durissimum.",
+        "SYN": "Моисей пересказал это сынам Израилевым; но они не послушали Моисея по малодушию и тяжести работ.",
+        "NEO": "Ainsi parla Moïse aux enfants d’Israël ; mais ils n’écoutèrent pas Moïse, à cause de leur angoisse et de leur dure servitude.",
+        "NAB": "But when Moses told this to the Israelites, they would not listen to him because of their dejection and hard slavery.",
+        "VAT_ES": "Moisés refirió estas palabras a los israelitas, pero ellos no quisieron escucharlo, porque estaban desalentados a causa de la dura servidumbre.",
+        "CEI": "Mosè parlò così agli Israeliti, ma essi non ascoltarono Mosè, perché erano all'estremo della sopportazione per la dura schiavitù."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Εἶπεν δὲ Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "Then the LORD said to Moses,",
+        "VAT_ES": "Entonces el Señor dijo a Moisés:",
+        "CEI": "Il Signore parlò a Mosè:"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "בֹּ֣א דַבֵּ֔ר אֶל פַּרְעֹ֖ה מֶ֣לֶךְ מִצְרָ֑יִם וִֽ/ישַׁלַּ֥ח אֶת בְּנֵֽי יִשְׂרָאֵ֖ל מֵ/אַרְצֽ/וֹ׃",
+        "LXX": "Εἴσελθε λάλησον Φαραὼ βασιλεῖ Αἰγύπτου ἵνα ἐξαποστείλῃ τοὺς υἱοὺς Ἰσραὴλ ἐκ τῆς γῆς αὐτοῦ.",
+        "VUL": "Ingredere, et loquere ad Pharaonem regem Ægypti, ut dimittat filios Israël de terra sua.",
+        "SYN": "войди, скажи фараону, царю Египетскому, чтобы он отпустил сынов Израилевых из земли своей.",
+        "NEO": "« Va parler à Pharaon, roi d’Égypte, pour qu’il laisse aller les enfants d’Israël hors de son pays. »",
+        "NAB": "\"Go and tell Pharaoh, king of Egypt, to let the Israelites leave his land.\"",
+        "VAT_ES": "«Preséntate al Faraón, el rey de Egipto, y dile que deje partir de su país a los israelitas».",
+        "CEI": "\"Và e parla al faraone re d'Egitto, perché lasci partire dal suo paese gli Israeliti!\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר מֹשֶׁ֔ה לִ/פְנֵ֥י יְהוָ֖ה לֵ/אמֹ֑ר הֵ֤ן בְּנֵֽי יִשְׂרָאֵל֙ לֹֽא שָׁמְע֣וּ אֵלַ֔/י וְ/אֵיךְ֙ יִשְׁמָעֵ֣/נִי פַרְעֹ֔ה וַ/אֲנִ֖י עֲרַ֥ל שְׂפָתָֽיִם׃",
+        "LXX": "ἐλάλησεν δὲ Μωυσῆς ἔναντι Κυρίου λέγων Ἰδοὺ οἱ υἱοὶ Ἰσραὴλ οὐκ εἰσήκουσάν μου, καὶ πῶς εἰσακούσεταί μου Φαραώ; ἐγὼ δὲ ἄλογός εἰμι.",
+        "VUL": "Respondit Moyses coram Domino : Ecce filii Israël non audiunt me : et quomodo audiet Pharao, præsertim cum incircumcisus sim labiis ?",
+        "SYN": "И сказал Моисей пред Господом, говоря: вот, сыны Израилевы не слушают меня; как же послушает меня фараон? а я не словесен.",
+        "NEO": "Moïse répondit en présence de \\+w Yahweh|strong=\"H3068\"\\+w** : « Voici, les enfants d’Israël ne m’ont pas écouté ; comment Pharaon m’écoutera-t-il, moi qui ai la parole difficile ? »+ 6:12 Litt. \\+it lèvres incirconcises\\+it*, autrement dit \\+it parole embarassée\\+it*.*",
+        "NAB": "But Moses protested to the LORD, \"If the Israelites would not listen to me, how can it be that Pharaoh will listen to me, poor speaker that I am!\"",
+        "VAT_ES": "Moisés se excusó ante el Señor, diciendo: «Si los israelitas no quisieron escucharme, &iquest;cómo me va a escuchar el Faraón, a mí que no tengo facilidad de palabra?».",
+        "CEI": "Mosè disse alla presenza del Signore: \"Ecco gli Israeliti non mi hanno ascoltato: come vorrà ascoltarmi il faraone, mentre io ho la parola impacciata?\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר יְהוָה֮ אֶל מֹשֶׁ֣ה וְ/אֶֽל אַהֲרֹן֒ וַ/יְצַוֵּ/ם֙ אֶל בְּנֵ֣י יִשְׂרָאֵ֔ל וְ/אֶל פַּרְעֹ֖ה מֶ֣לֶךְ מִצְרָ֑יִם לְ/הוֹצִ֥יא אֶת בְּנֵֽי יִשְׂרָאֵ֖ל מֵ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "εἶπεν δὲ Κύριος πρὸς Μωυσῆν καὶ Ἀαρών, καὶ συνέταξεν αὐτοῖς πρὸς Φαραὼ βασιλέα Αἰγύπτου ὥστε ἐξαποστεῖλαι τοὺς υἱοὺς Ἰσραὴλ ἐκ γῆς Αἰγύπτου.",
+        "VUL": "Locutusque est Dominus ad Moysen et Aaron, et dedit mandatum ad filios Israël, et ad Pharaonem regem Ægypti ut educerent filios Israël de terra Ægypti.",
+        "SYN": "И говорил Господь Моисею и Аарону, и давал им повеления к сынам Израилевым и к фараону, царю Египетскому, чтобы вывести сынов Израилевых из земли Египетской.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse et à Aaron, et leur donna des ordres au sujet des enfants d’Israël et au sujet de Pharaon, roi d’Égypte, pour faire sortir les enfants d’Israël du pays d’Égypte.",
+        "NAB": "Still, the LORD, to bring the Israelites out of Egypt, spoke to Moses and Aaron and gave them his orders regarding both the Israelites and Pharaoh, king of Egypt.",
+        "VAT_ES": "Pero el Señor habló a Moisés y a Aarón, y les dio órdenes para los israelitas y para el Faraón, rey de Egipto, a fin de hacer salir de Egipto a los israelitas.",
+        "CEI": "Il Signore parlò a Mosè e ad Aronne e diede loro un incarico presso gli Israeliti e presso il faraone re d'Egitto, per far uscire gli Israeliti dal paese d'Egitto."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אֵ֖לֶּה רָאשֵׁ֣י בֵית אֲבֹתָ֑/ם בְּנֵ֨י רְאוּבֵ֜ן בְּכֹ֣ר יִשְׂרָאֵ֗ל חֲנ֤וֹךְ וּ/פַלּוּא֙ חֶצְר֣וֹן וְ/כַרְמִ֔י אֵ֖לֶּה מִשְׁפְּחֹ֥ת רְאוּבֵֽן׃",
+        "LXX": "Καὶ οὗτοι ἀρχηγοὶ οἴκων πατριῶν αὐτῶν. υἱοὶ Ῥουβὴν πρωτοτόκου Ἰσραήλ· Ἑνὼχ καὶ Φαλλούς, Ἁσρὼν καὶ Χαρμεί· αὕτη ἡ συγγενία Ῥουβήν.",
+        "VUL": "Isti sunt principes domorum per familias suas. Filii Ruben primogeniti Israëlis : Henoch et Phallu, Hesron et Charmi :",
+        "SYN": "Вот начальники поколений их: сыны Рувима, первенца Израилева: Ханох и Фаллу, Хецрон и Харми: это семейства Рувимовы.",
+        "NEO": "Voici les chefs de leurs maisons :",
+        "NAB": "These are the heads of the ancestral houses. The sons of Reuben, the first-born of Israel, were Hanoch, Pallu, Hezron and Carmi; these are the clans of Reuben.",
+        "VAT_ES": "Los jefes de las familias de Israel fueron los siguientes: Los hijos de Rubén, el primogénito de Israel, fueron Henoc, Palú, Jesrón y Carmí. Estos son los clanes de Rubén.",
+        "CEI": "Questi sono i capi delle loro famiglie. Figli di Ruben, primogenito d'Israele: Enoch, Pallu, Chezron e Carmi; queste sono le famiglie di Ruben."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י שִׁמְע֗וֹן יְמוּאֵ֨ל וְ/יָמִ֤ין וְ/אֹ֨הַד֙ וְ/יָכִ֣ין וְ/צֹ֔חַר וְ/שָׁא֖וּל בֶּן הַֽ/כְּנַעֲנִ֑ית אֵ֖לֶּה מִשְׁפְּחֹ֥ת שִׁמְעֽוֹן׃",
+        "LXX": "καὶ υἱοὶ Συμεών· Ἰεμιὴλ καὶ Ἰαμεὶν καὶ Ἰώαδ καὶ Ἰαχεὶν καὶ Σάαρ καὶ Σαοὺλ ὁ ἐκ τῆς Φοινίσσης· αὗται αἱ πατριαὶ τῶν υἱῶν Συμεών.",
+        "VUL": "hæ cognationes Ruben. Filii Simeon : Jamuel, et Jamin, et Ahod, et Jachin, et Soar, et Saul filius Chananitidis : hæ progenies Simeon.",
+        "SYN": "Сыны Симеона: Иемуил и Иамин, и Огад, и Иахин, и Цохар, и Саул, сын Хананеянки: это семейства Симеона.",
+        "NEO": "Fils de Siméon : Jamuel, Jamin, Ahod, Jachin, Soar, et Saul, fils de la Chananéenne ; ce sont là les familles de Siméon.",
+        "NAB": "The sons of Simeon were Jenuel, Jamin, Ohad, Jachin, Zohar and Shaul, who was the son of a Canaanite woman; these are the clans of Simeon.",
+        "VAT_ES": "Los hijos de Simeón fueron Iemuel, Iamín, Ohad, Iaquín, Sójar y Saúl, el hijo de la cananea. Estos son los clanes de Simeón.",
+        "CEI": "Figli di Simeone: Iemuel, Iamin, Oad, Iachin, Socar e Saul, figlio della Cananea; queste sono le famiglie di Simeone."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨לֶּה שְׁמ֤וֹת בְּנֵֽי לֵוִי֙ לְ/תֹ֣לְדֹתָ֔/ם גֵּרְשׁ֕וֹן וּ/קְהָ֖ת וּ/מְרָרִ֑י וּ/שְׁנֵי֙ חַיֵּ֣י לֵוִ֔י שֶׁ֧בַע וּ/שְׁלֹשִׁ֛ים וּ/מְאַ֖ת שָׁנָֽה׃",
+        "LXX": "καὶ ταῦτα τὰ ὀνόματα τῶν υἱῶν Λευεὶ κατὰ συγγενίας αὐτῶν· Γεδσὼν καὶ Καὰθ καὶ Μεραρεί· καὶ τὰ ἔτη τῆς ζωῆς Λευεὶ ἑκατὸν τριάκοντα ἑπτά.",
+        "VUL": "Et hæc nomina filiorum Levi per cognationes suas : Gerson, et Caath, et Merari. Anni autem vitæ Levi fuerunt centum triginta septem.",
+        "SYN": "Вот имена сынов Левия по родам их: Гирсон и Кааф и Мерари. А лет жизни Левия было сто тридцать семь.",
+        "NEO": "Voici les noms des fils de Lévi avec leurs postérités : Gerson, Caath et Mérari. Les années de la vie de Lévi furent de cent trente-sept ans. —",
+        "NAB": "The names of the sons of Levi, in their genealogical order, are Gershon, Kohath and Merari. Levi lived one hundred and thirty-seven years.",
+        "VAT_ES": "Los nombres de los hijos de Leví, con sus descendientes, fueron estos: Gersón, Quehat y Merarí. Leví vivió ciento treinta y siete años.",
+        "CEI": "Questi sono i nomi dei figli di Levi secondo le loro generazioni: Gherson, Keat, Merari. Ora gli anni della vita di Levi furono centotrentasette."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "בְּנֵ֥י גֵרְשׁ֛וֹן לִבְנִ֥י וְ/שִׁמְעִ֖י לְ/מִשְׁפְּחֹתָֽ/ם׃",
+        "LXX": "καὶ οὗτοι υἱοὶ Γεδσών· Λοβενὶ καὶ Σεμεεί, οἶκοι πατριᾶς αὐτῶν.",
+        "VUL": "Filii Gerson : Lobni et Semei, per cognationes suas.",
+        "SYN": "Сыны Гирсона: Ливни и Шимеи с семействами их.",
+        "NEO": "Fils de Gerson : Lobni et Séméi, selon leurs familles. —",
+        "NAB": "The sons of Gershon, as heads of clans, were Libni and Shimei.",
+        "VAT_ES": "Los hijos de Gersón fueron Libní y Simei con sus clanes.",
+        "CEI": "Figli di Gherson: Libni e Simei secondo le loro famiglie."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י קְהָ֔ת עַמְרָ֣ם וְ/יִצְהָ֔ר וְ/חֶבְר֖וֹן וְ/עֻזִּיאֵ֑ל וּ/שְׁנֵי֙ חַיֵּ֣י קְהָ֔ת שָׁלֹ֧שׁ וּ/שְׁלֹשִׁ֛ים וּ/מְאַ֖ת שָׁנָֽה׃",
+        "LXX": "καὶ υἱοὶ Καάθ· Ἀμβρὰμ καὶ Ἰσσαχάρ, Χεβρὼν καὶ Ὀζειήλ· καὶ τὰ ἔτη τῆς ζωῆς Καὰθ ἑκατὸν τριάκοντα ἔτη.",
+        "VUL": "Filii Caath : Amram, et Isaar, et Hebron, et Oziel ; anni quoque vitæ Caath, centum triginta tres.",
+        "SYN": "Сыны Каафовы: Амрам и Ицгар, и Хеврон, и Узиил. А лет жизни Каафа было сто тридцать три года.",
+        "NEO": "Fils de Caath : Amram, Isaar, Hébron et Oziel. Les années de la vie de Caath furent de cent trente-trois ans. —",
+        "NAB": "The sons of Kohath were Amram, Izhar, Hebron and Uzziel. Kohath lived one hundred and thirty-three years.",
+        "VAT_ES": "Los hijos de Quehat fueron Amram, Isar, Hebrón y Uziel. Quehat vivió ciento treinta y tres años.",
+        "CEI": "Figli di Keat: Amran, Isear, Ebron e Uzziel. Ora gli anni della vita di Keat furono centotrentatré."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֥י מְרָרִ֖י מַחְלִ֣י וּ/מוּשִׁ֑י אֵ֛לֶּה מִשְׁפְּחֹ֥ת הַ/לֵּוִ֖י לְ/תֹלְדֹתָֽ/ם׃",
+        "LXX": "καὶ υἱοὶ Μεραρεί· Μοολεὶ καὶ Ὀμουσεί. οὗτοι οἶκοι πατριῶν Λευεὶ κατὰ συγγενίαν αὐτῶν.",
+        "VUL": "Filii Merari : Moholi et Musi : hæ cognationes Levi per familias suas.",
+        "SYN": "Сыны Мерари: Махли и Муши. Это семейства Левия по родам их.",
+        "NEO": "Fils de Mérari : Moholi et Musi. — Ce sont là les familles de Lévi avec leurs postérités.",
+        "NAB": "The sons of Merari were Mahli and Mushi. These are the clans of Levi in their genealogical order.",
+        "VAT_ES": "Los hijos de Merarí fueron Majlí y Musí. Estos son los clanes de Leví con sus descendientes.",
+        "CEI": "Figli di Merari: Macli e Musi; queste sono le famiglie di Levi secondo le loro generazioni."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֨ח עַמְרָ֜ם אֶת יוֹכֶ֤בֶד דֹּֽדָת/וֹ֙ ל֣/וֹ לְ/אִשָּׁ֔ה וַ/תֵּ֣לֶד ל֔/וֹ אֶֽת אַהֲרֹ֖ן וְ/אֶת מֹשֶׁ֑ה וּ/שְׁנֵי֙ חַיֵּ֣י עַמְרָ֔ם שֶׁ֧בַע וּ/שְׁלֹשִׁ֛ים וּ/מְאַ֖ת שָׁנָֽה׃",
+        "LXX": "καὶ ἔλαβεν Ἀμβρὰν τὴν Ἰωχάβεδ θυγατέρα τοῦ ἀδελφοῦ τοῦ πατρὸς αὐτοῦ ἑαυτῷ εἰς γυναῖκα, καὶ ἐγέννησεν αὐτῷ τόν τε Ἀαρὼν καὶ Μωυσῆν καὶ Μαριὰμ τὴν ἀδελφὴν αὐτῶν· τὰ δὲ ἔτη τῆς ζωῆς Ἀμβρὰν ἑκατὸν τριάκοντα δύο ἔτη.",
+        "VUL": "Accepit autem Amram uxorem Jochabed patruelem suam : quæ peperit ei Aaron et Moysen. Fueruntque anni vitæ Amram, centum triginta septem.",
+        "SYN": "Амрам взял Иохаведу, тетку свою, себе в жену, и она родила ему Аарона и Моисея [и Мариам, сестру их]. А лет жизни Амрама было сто тридцать семь.",
+        "NEO": "Amram prit pour femme Jochabed, sa tante, qui lui enfanta Aaron et Moïse. Les années de la vie d’Amram furent de cent trente-sept ans. —",
+        "NAB": "Amram married his aunt Jochebed, who bore him Aaron, Moses and Miriam. Amram lived one hundred and thirty-seven years.",
+        "VAT_ES": "Amram se casó con Ioquébed, su tía, y de ella le nacieron Aarón y Moisés. Amram vivió ciento treinta y siete años.",
+        "CEI": "Amram prese in moglie Iochebed, sua zia, la quale gli partorì Aronne e Mosè. Ora gli anni della vita di Amram furono centotrentasette."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֖י יִצְהָ֑ר קֹ֥רַח וָ/נֶ֖פֶג וְ/זִכְרִֽי׃",
+        "LXX": "καὶ υἱοὶ Ἰσσαάρ· Κόρε καὶ Νάφεκ καὶ Ζεχρεί.",
+        "VUL": "Filii quoque Isaar : Core, et Nepheg, et Zechri.",
+        "SYN": "Сыны Ицгаровы: Корей и Нефег и Зихри.",
+        "NEO": "Fils d’Isaar : Coré, Nepheg et Zéchri.",
+        "NAB": "The sons of Izhar were Korah, Nepheg and Zichri.",
+        "VAT_ES": "Los hijos de Isar fueron Coré, Néfeg y Zicrí;",
+        "CEI": "Figli di Isear: Core, Nefeg e Zicri."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֖י עֻזִּיאֵ֑ל מִֽישָׁאֵ֥ל וְ/אֶלְצָפָ֖ן וְ/סִתְרִֽי׃",
+        "LXX": "καὶ υἱοὶ Ὀζειήλ· Ἐλισαφὰν καὶ Σεγρεί.",
+        "VUL": "Filii quoque Oziel : Misaël, et Elisaphan, et Sethri.",
+        "SYN": "Сыны Узииловы: Мисаил и Елцафан и Сифри.",
+        "NEO": "Fils d’Oziel : Misaël, Elisaphan et Séthri.",
+        "NAB": "The sons of Uzziel were Mishael, Elzaphan and Sithri.",
+        "VAT_ES": "y los hijos de Uziel, fueron Misael, Elsafán y Sitrí.",
+        "CEI": "Figli di Uzziel: Misael, Elsafan, Sitri."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֨ח אַהֲרֹ֜ן אֶת אֱלִישֶׁ֧בַע בַּת עַמִּינָדָ֛ב אֲח֥וֹת נַחְשׁ֖וֹן ל֣/וֹ לְ/אִשָּׁ֑ה וַ/תֵּ֣לֶד ל֗/וֹ אֶת נָדָב֙ וְ/אֶת אֲבִיה֔וּא אֶת אֶלְעָזָ֖ר וְ/אֶת אִֽיתָמָֽר׃",
+        "LXX": "ἔλαβεν δὲ Ἀαρὼν τὴν Ἐλεισάβεθ θυγατέρα Ἀμειναδὰβ ἀδελφὴν Ναασσὼν αὐτῷ γυναῖκα, καὶ ἔτεκεν αὐτῷ τόν τε Ναδὰβ καὶ τὸν Ἀβιοὺδ καὶ τὸν Ἐλεαζὰρ καὶ Ἰθαμάρ.",
+        "VUL": "Accepit autem Aaron uxorem Elisabeth filiam Aminadab, sororem Nahason, quæ peperit ei Nadab, et Abiu, et Eleazar, et Ithamar.",
+        "SYN": "Аарон взял себе в жену Елисавету, дочь Аминадава, сестру Наассона, и она родила ему Надава и Авиуда, Елеазара и Ифамара.",
+        "NEO": "Aaron prit pour femme Elisabeth, fille d’Aminadab, sœur de Naasson ; et elle lui enfanta Nadab, Abiu, Eléazar et Ithamar.",
+        "NAB": "Aaron married Amminadab's daughter, Elisheba, the sister of Nahshon; she bore him Nadab, Abihu, Eleazar and Ithamar.",
+        "VAT_ES": "Aarón se casó con Eliseba, hija de Aminadab y hermana de Najsón; de ella le nacieron Nadab, Abihú, Eleazar e Itamar.",
+        "CEI": "Aronne prese in moglie Elisabetta, figlia di Amminadab, sorella di Nacason, dalla quale ebbe i figli Nadab, Abiu, Eleazaro e Itamar."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י קֹ֔רַח אַסִּ֥יר וְ/אֶלְקָנָ֖ה וַ/אֲבִיאָסָ֑ף אֵ֖לֶּה מִשְׁפְּחֹ֥ת הַ/קָּרְחִֽי׃",
+        "LXX": "υἱοὶ δὲ Κόρε· Ἀσεὶρ καὶ Ἐλκανὰ καὶ Ἀβιασάρ· αὗται αἱ γενέσεις Κόρε.",
+        "VUL": "Filii quoque Core : Aser, et Elcana, et Abiasaph : hæ sunt cognationes Coritarum.",
+        "SYN": "Сыны Корея: Асир, Елкана и Авиасаф: это семейства Кореевы.",
+        "NEO": "Fils de Coré : Aser, Elcana et Abiasaph ; ce sont là les familles des Corites.",
+        "NAB": "The sons of Korah were Assir, Elkanah and Abiasaph. These are the clans of the Korahites.",
+        "VAT_ES": "Los hijos de Coré fueron Asir, Elcaná y Abiasaf. Estos son los clanes de los coreítas.",
+        "CEI": "Figli di Core: Assir, Elkana e Abiasaf; queste sono le famiglie dei Coreiti."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/אֶלְעָזָ֨ר בֶּֽן אַהֲרֹ֜ן לָקַֽח ל֨/וֹ מִ/בְּנ֤וֹת פּֽוּטִיאֵל֙ ל֣/וֹ לְ/אִשָּׁ֔ה וַ/תֵּ֥לֶד ל֖/וֹ אֶת פִּֽינְחָ֑ס אֵ֗לֶּה רָאשֵׁ֛י אֲב֥וֹת הַ/לְוִיִּ֖ם לְ/מִשְׁפְּחֹתָֽ/ם׃",
+        "LXX": "καὶ Ἐλεαζὰρ ὁ τοῦ Ἀαρὼν ἔλαβεν τῶν θυγατέρων Φουτιὴλ αὐτῷ γυναῖκα, καὶ ἔτεκεν αὐτῷ τὸν Φινεές· αὗται αἱ ἀρχαὶ πατριᾶς Λευειτῶν κατὰ γενέσεις αὐτῶν.",
+        "VUL": "At vero Eleazar filius Aaron accepit uxorem de filiabus Phutiel : quæ peperit ei Phinees. Hi sunt principes familiarum Leviticarum per cognationes suas.",
+        "SYN": "Елеазар, сын Аарона, взял себе в жену _одну_ из дочерей Футииловых, и она родила ему Финееса. Вот начальники поколений левитских по семействам их.",
+        "NEO": "Eléazar, fils d’Aaron, prit pour femme une des filles de Phuthiel, qui lui enfanta Phinées.",
+        "NAB": "Aaron's son, Eleazar, married one of Putiel's daughters, who bore him Phinehas. These are the heads of the ancestral clans of the Levites.",
+        "VAT_ES": "Eleazar, hijo de Aarón, se casó con una de las hijas de Putiel, que fue madre de Pinjás. Estos son los jefes de las familias levíticas, con sus respectivos clanes.",
+        "CEI": "Eleazaro, figlio di Aronne, prese in moglie una figlia di Putiel, la quale gli partorì Pincas. Questi sono i capi delle casate dei leviti, ordinati con le loro famiglie."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "ה֥וּא אַהֲרֹ֖ן וּ/מֹשֶׁ֑ה אֲשֶׁ֨ר אָמַ֤ר יְהוָה֙ לָ/הֶ֔ם הוֹצִ֜יאוּ אֶת בְּנֵ֧י יִשְׂרָאֵ֛ל מֵ/אֶ֥רֶץ מִצְרַ֖יִם עַל צִבְאֹתָֽ/ם׃",
+        "LXX": "οὗτος Ἀαρὼν καὶ Μωυσῆς, οἷς εἶπεν αὐτοῖς ὁ θεὸς ἐξαγαγεῖν τοὺς υἱοὺς Ἰσραὴλ ἐκ γῆς Αἰγύπτου σὺν δυνάμει αὐτῶν.",
+        "VUL": "Iste est Aaron et Moyses, quibus præcepit Dominus ut educerent filios Israël de terra Ægypti per turmas suas.",
+        "SYN": "Аарон и Моисей, это -- те, которым сказал Господь: выведите сынов Израилевых из земли Египетской по ополчениям их.",
+        "NEO": "Ce sont là l’Aaron et le Moïse auxquels \\+w Yahweh|strong=\"H3068\"\\+w** dit : « Faites sortir du pays d’Égypte les enfants d’Israël selon leurs armées. »",
+        "NAB": "This is the Aaron and this the Moses to whom the LORD said, \"Lead the Israelites from the land of Egypt, company by company.\"",
+        "VAT_ES": "Moisés y Aarón son los mismos que recibieron del Señor la orden de sacar de Egipto a los israelitas, distribuidos en grupos.",
+        "CEI": "Sono questi quell'Aronne e quel Mosè ai quali il Signore disse: \"Fate uscire dal paese d'Egitto gli Israeliti, secondo le loro schiere!\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "הֵ֗ם הַֽ/מְדַבְּרִים֙ אֶל פַּרְעֹ֣ה מֶֽלֶךְ מִצְרַ֔יִם לְ/הוֹצִ֥יא אֶת בְּנֵֽי יִשְׂרָאֵ֖ל מִ/מִּצְרָ֑יִם ה֥וּא מֹשֶׁ֖ה וְ/אַהֲרֹֽן׃",
+        "LXX": "οὗτοί εἰσιν οἱ διαλεγόμενοι πρὸς Φαραὼ βασιλέα Αἰγύπτου· καὶ ἐξήγαγον τοὺς υἱοὺς Ἰσραὴλ ἐκ γῆς Αἰγύπτου, αὐτὸς Ἀαρὼν καὶ Μωυσῆς.",
+        "VUL": "Hi sunt, qui loquuntur ad Pharaonem regem Ægypti, ut educant filios Israël de Ægypto : iste est Moyses et Aaron,",
+        "SYN": "Они-то говорили фараону, царю Египетскому, чтобы вывести сынов Израилевых из Египта; это -- Моисей и Аарон.",
+        "NEO": "Ce sont eux qui parlèrent à Pharaon, roi d’Égypte, pour faire sortir d’Égypte les enfants d’Israël ; c’est ce Moïse et cet Aaron.",
+        "NAB": "These are the ones who spoke to Pharaoh, king of Egypt, to bring the Israelites out of Egypt - the same Moses and Aaron.",
+        "VAT_ES": "Ellos fueron los que hablaron al Faraón, el rey de Egipto, para hacer salir a los israelitas. Son los mismos Moisés y Aarón.",
+        "CEI": "Questi dissero al faraone re d'Egitto di lasciar uscire dall'Egitto gli Israeliti: Sono Mosè e Aronne."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י בְּ/י֨וֹם דִּבֶּ֧ר יְהוָ֛ה אֶל מֹשֶׁ֖ה בְּ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "ᾟ ἡμέρᾳ ἐλάλησεν Κύριος Μωυσῇ ἐν γῇ Αἰγύπτῳ",
+        "VUL": "in die qua locutus est Dominus ad Moysen, in terra Ægypti.",
+        "SYN": "Итак в то время, когда Господь говорил Моисею в земле Египетской,",
+        "NEO": "Lorsque \\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse dans le pays d’Égypte,",
+        "NAB": "On the day the LORD spoke to Moses in Egypt",
+        "VAT_ES": "El día en que el Señor habló a Moisés en Egipto,",
+        "CEI": "Questo avvenne quando il Signore parlò a Mosè nel paese di Egitto:"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֧ר יְהוָ֛ה אֶל מֹשֶׁ֥ה לֵּ/אמֹ֖ר אֲנִ֣י יְהוָ֑ה דַּבֵּ֗ר אֶל פַּרְעֹה֙ מֶ֣לֶךְ מִצְרַ֔יִם אֵ֛ת כָּל אֲשֶׁ֥ר אֲנִ֖י דֹּבֵ֥ר אֵלֶֽי/ךָ׃",
+        "LXX": "καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων Ἐγὼ Κύριος· λάλησον πρὸς Φαραὼ βασιλέα Αἰγύπτου, καὶ ἐγὼ λέγω πρὸς σέ.",
+        "VUL": "Et locutus est Dominus ad Moysen, dicens : Ego Dominus : loquere ad Pharaonem regem Ægypti, omnia quæ ego loquor tibi.",
+        "SYN": "Господь сказал Моисею, говоря: Я Господь! скажи фараону, царю Египетскому, всё, что Я говорю тебе.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Je suis \\+w Yahweh|strong=\"H3068\"\\+w**. Dis à Pharaon, roi d’Égypte, tout ce que je te dis. »",
+        "NAB": "he said, \"I am the LORD. Repeat to Pharaoh, king of Egypt, all that I tell you.\"",
+        "VAT_ES": "les dijo: «Yo soy el Señor. Repite al Faraón, el rey de Egipto, todo lo que yo te diga».",
+        "CEI": "il Signore disse a Mosè: \"Io sono il Signore! Riferisci al faraone, re d'Egitto, quanto io ti dico\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר מֹשֶׁ֖ה לִ/פְנֵ֣י יְהוָ֑ה הֵ֤ן אֲנִי֙ עֲרַ֣ל שְׂפָתַ֔יִם וְ/אֵ֕יךְ יִשְׁמַ֥ע אֵלַ֖/י פַּרְעֹֽה׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς ἐναντίον Κυρίου Ἰδοὺ ἐγὼ ἰσχνόφωνός εἰμι, καὶ πῶς εἰσακούσεταί μου Φαραώ;",
+        "VUL": "Et ait Moyses coram Domino : En incircumcisus labiis sum, quomodo audiet me Pharao ?",
+        "SYN": "Моисей же сказал пред Господом: вот, я несловесен: как же послушает меня фараон?",
+        "NEO": "Et Moïse répondit en présence de \\+w Yahweh|strong=\"H3068\"\\+w** : « Voici, j’ai la parole difficile ; comment Pharaon m’écoutera-t-il ? »",
+        "NAB": "But Moses protested to the LORD, \"Since I am a poor speaker, how can it be that Pharaoh will listen to me?\"",
+        "VAT_ES": "Pero Moisés puso al Señor este pretexto: «Yo tengo dificultad para hablar. &iquest;Cómo me va a escuchar el Faraón?",
+        "CEI": "Mosè disse alla presenza del Signore: \"Ecco ho la parola impacciata e come il faraone vorrà ascoltarmi?\"."
+      }
+    }
+  }
+}

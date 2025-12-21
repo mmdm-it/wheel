@@ -1,0 +1,336 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EZE_008",
+  "book_key": "EZE",
+  "sequence": 8,
+  "chapter_in": {
+    "MT": 8,
+    "VUL": 8,
+    "LXX": 8
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י בַּ/שָּׁנָ֣ה הַ/שִּׁשִּׁ֗ית בַּ/שִּׁשִּׁי֙ בַּ/חֲמִשָּׁ֣ה לַ/חֹ֔דֶשׁ אֲנִי֙ יוֹשֵׁ֣ב בְּ/בֵיתִ֔/י וְ/זִקְנֵ֥י יְהוּדָ֖ה יוֹשְׁבִ֣ים לְ/פָנָ֑/י וַ/תִּפֹּ֤ל עָלַ/י֙ שָׁ֔ם יַ֖ד אֲדֹנָ֥/י יְהֹוִֽה׃",
+        "LXX": "Καὶ ἐγένετο ἐν τῷ ἕκτῳ ἔτει ἐν τῷ πέμπτῳ μηνὶ πέμπτῃ τοῦ μηνὸς ἐγὼ ἐκαθήμην ἐν τῷ οἴκῳ, καὶ οἱ πρεσβύτεροι Ἰούδα ἐκάθηντο ἐνώπιόν μου. καὶ ἐγένετο ἐπ’ ἐμὲ χεὶρ Κυρίου,",
+        "VUL": "Et factum est in anno sexto, in sexto mense, in quinta mensis, ego sedebam in domo mea, et senes Juda sedebant coram me, et cecidit ibi super me manus Domini Dei.",
+        "SYN": "И было в шестом году, в шестом _месяце,_ в пятый день месяца, сидел я в доме моем, и старейшины Иудейские сидели перед лицем моим, и низошла на меня там рука Господа Бога.",
+        "NEO": "La sixième année, au sixième mois, le cinquième jour du mois, comme j’étais assis dans ma maison, et que les anciens de Juda étaient assis devant moi, la main du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** tomba sur moi.",
+        "VAT_ES": "El sexto año, el quinto del sexto mes, mientras yo estaba sentado en mi casa y los ancianos de Judá estaban sentados delante de mí, descendió sobre mí la mano del Señor.",
+        "CEI": "Al quinto giorno del sesto mese dell'anno sesto, mentre mi trovavo in casa e dinanzi a me sedevano gli anziani di Giuda, la mano del Signore Dio si posò su di me"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וָ/אֶרְאֶ֗ה וְ/הִנֵּ֤ה דְמוּת֙ כְּ/מַרְאֵה אֵ֔שׁ מִ/מַּרְאֵ֥ה מָתְנָ֛י/ו וּ/לְ/מַ֖טָּה אֵ֑שׁ וּ/מִ/מָּתְנָ֣י/ו וּ/לְ/מַ֔עְלָ/ה כְּ/מַרְאֵה זֹ֖הַר כְּ/עֵ֥ין הַ/חַשְׁמַֽלָ/ה׃",
+        "LXX": "καὶ ἴδον, καὶ ἰδοὺ ὁμοίωμα ἀνδρός· ἀπὸ τῆς ὀσφύος αὐτοῦ καὶ ἕως κάτω πῦρ, καὶ ἀπὸ τῆς ὀσφύος αὐτοῦ ὑπεράνω ὡς ὅρασις ἠλέκτρου.",
+        "VUL": "Et vidi : et ecce similitudo quasi aspectus ignis : ab aspectu lumborum ejus et deorsum, ignis : et a lumbis ejus et sursum, quasi aspectus splendoris, ut visio electri.",
+        "SYN": "И увидел я: и вот подобие [мужа], как бы огненное, и от чресл его и ниже - огонь, и от чресл его и выше - как бы сияние, как бы свет пламени.",
+        "NEO": "Et je vis ; et voici une figure qui avait l’aspect du feu ; depuis ce qui paraissait ses reins jusqu’en bas, c’était du feu ; et depuis ses reins jusqu’en haut, c’était comme l’aspect d’une clarté, comme l’aspect d’un métal.",
+        "VAT_ES": "Yo miré y vi una figura con aspecto humano. Desde lo que parecía ser su cintura para abajo, había fuego, y desde su cintura para arriba, había una especie de claridad, un fulgor como de electro.",
+        "CEI": "e vidi qualcosa dall'aspetto d'uomo: da ciò che sembravano i suoi fianchi in giù, appariva come di fuoco e dai fianchi in su appariva come uno splendore simile all'elettro."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַח֙ תַּבְנִ֣ית יָ֔ד וַ/יִּקָּחֵ֖/נִי בְּ/צִיצִ֣ת רֹאשִׁ֑/י וַ/תִּשָּׂ֣א אֹתִ֣/י ר֣וּחַ בֵּֽין הָ/אָ֣רֶץ וּ/בֵ֣ין הַ/שָּׁמַ֡יִם וַ/תָּבֵא֩ אֹתִ֨/י יְרוּשָׁלְַ֜מָ/ה בְּ/מַרְא֣וֹת אֱלֹהִ֗ים אֶל פֶּ֜תַח שַׁ֤עַר הַ/פְּנִימִית֙ הַ/פּוֹנֶ֣ה צָפ֔וֹנָ/ה אֲשֶׁר שָׁ֣ם מוֹשַׁ֔ב סֵ֖מֶל הַ/קִּנְאָ֥ה הַ/מַּקְנֶֽה׃",
+        "LXX": "καὶ ἐξέτεινεν ὁμοίωμα χειρὸς καὶ ἀνέλαβέν με τῆς κορυφῆς μου, καὶ ἀνέλαβέν με πνεῦμα ἀνὰ μέσον τῆς γῆς καὶ οὐρανοῦ καὶ ἤγαγέν με εἰς Ἰερουσαλὴμ ἐν ὁράσει θεοῦ ἐπὶ τὰ πρόθυρα τῆς πύλης τῆς βλεπούσης εἰς βορρᾶν, οὗ ἦν ἡ στήλη τοῦ κτωμένου.",
+        "VUL": "Et emissa similitudo manus apprehendit me in cincinno capitis mei, et elevavit me spiritus inter terram et cælum : et adduxit me in Jerusalem, in visione Dei, juxta ostium interius quod respiciebat ad aquilonem, ubi erat statutum idolum zeli ad provocandam æmulationem.",
+        "SYN": "И простер Он как бы руку, и взял меня за волоса головы моей, и поднял меня дух между землею и небом, и принес меня в видениях Божиих в Иерусалим ко входу внутренних ворот, обращенных к северу, где поставлен был идол ревности, возбуждающий ревнование.",
+        "NEO": "Et il étendit une forme de main, et il me saisit par les boucles de mes cheveux, et l’Esprit m’enleva entre la terre et le ciel ; et il m’amena à Jérusalem, en des visions divines, à l’entrée de la porte intérieure qui regarde au septentrion, où était placée l’idole de jalousie qui provoque la jalousie.",
+        "NAB": "Spirit lifted me up in the air and brought me in divine visions to Jerusalem, to the entrance of the north gate, where stood the statue of jealousy which stirs up jealousy.",
+        "VAT_ES": "Extendió algo así como una mano y me tomó por un mechón de mis cabellos. Un espíritu me levantó entre la tierra y el cielo y me llevó en una visión divina a Jerusalén, hasta la entrada de la puerta interior que da hacia el norte, allí donde está emplazado el Idolo de los celos que provoca los celos de Dios.",
+        "CEI": "Stese come una mano e mi afferrò per i capelli: uno spirito mi sollevò fra terra e cielo e mi portò in visioni divine a Gerusalemme, all'ingresso del cortile interno, che guarda a settentrione, dove era collocato l'idolo della gelosia, che provocava la gelosia."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/הִ֨נֵּה שָׁ֔ם כְּב֖וֹד אֱלֹהֵ֣י יִשְׂרָאֵ֑ל כַּ/מַּרְאֶ֕ה אֲשֶׁ֥ר רָאִ֖יתִי בַּ/בִּקְעָֽה׃",
+        "LXX": "καὶ ἰδοὺ ἐκεῖ ἦν δόξα Κυρίου θεοῦ Ἰσραὴλ κατὰ τὴν ὅρασιν ἣν ἴδον ἐν τῷ πεδίῳ.",
+        "VUL": "Et ecce ibi gloria Dei Israël, secundum visionem quam videram in campo.",
+        "SYN": "И вот, там была слава Бога Израилева, подобная той, какую я видел на поле.",
+        "NEO": "Et voici que là était la gloire du Dieu d’Israël selon l’aspect que j’avais vu dans la plaine.",
+        "VAT_ES": "Allí estaba la gloria del Dios de Israel, tal como yo la había visto en el valle.",
+        "CEI": "Ed ecco là era la gloria del Dio d'Israele, simile a quella che avevo visto nella valle."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֵלַ֔/י בֶּן אָדָ֕ם שָׂא נָ֥א עֵינֶ֖י/ךָ דֶּ֣רֶךְ צָפ֑וֹנָ/ה וָ/אֶשָּׂ֤א עֵינַ/י֙ דֶּ֣רֶךְ צָפ֔וֹנָ/ה וְ/הִנֵּ֤ה מִ/צָּפוֹן֙ לְ/שַׁ֣עַר הַ/מִּזְבֵּ֔חַ סֵ֛מֶל הַ/קִּנְאָ֥ה הַ/זֶּ֖ה בַּ/בִּאָֽה׃",
+        "LXX": "καὶ εἶπεν πρὸς μέ Υἱὲ ἀνθρώπου, ἀνάβλεψον τοῖς ὀφθαλμοῖς σου πρὸς βορρᾶν. καὶ ἀνέβλεψα τοῖς ὀφθαλμοῖς μου πρὸς βορρᾶν, καὶ ἰδοὺ ἀπὸ βορρᾶ ἐπὶ τὴν πύλην τῆς πρὸς ἀνατολάς.",
+        "VUL": "Et dixit ad me : Fili hominis, leva oculos tuos ad viam aquilonis. Et levavi oculos meos ad viam aquilonis, et ecce ab aquilone portæ altaris idolum zeli in ipso introitu.",
+        "SYN": "И сказал мне: сын человеческий! подними глаза твои к северу. И я поднял глаза мои к северу, и вот, с северной стороны у ворот жертвенника - тот идол ревности при входе.",
+        "NEO": "Il me dit : « Fils de l’homme, lève donc tes yeux dans la direction du septentrion. » Et je levai mes yeux dans la direction du septentrion, et voici qu’au nord de la porte de l’autel, il y avait cette idole de jalousie, à l’entrée.",
+        "NAB": "He said to me: Son of man, look toward the north! I looked toward the north and saw northward of the gate the altar of the statue of jealousy.",
+        "VAT_ES": "El me dijo: «Hijo de hombre, levanta tus ojos hacia el norte». Yo levanté mis ojos hacia el norte y vi que al norte de la puerta del altar, justo a la entrada, estaba el Idolo de los celos.",
+        "CEI": "Mi disse: \"Figlio dell'uomo, alza gli occhi verso settentrione!\". Ed ecco a settentrione della porta dell'altare l'idolo della gelosia, proprio all'ingresso."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֵלַ֔/י בֶּן אָדָ֕ם הֲ/רֹאֶ֥ה אַתָּ֖ה מ/הם מָ֣ה הֵ֣ם עֹשִׂ֑ים תּוֹעֵב֨וֹת גְּדֹל֜וֹת אֲשֶׁ֥ר בֵּֽית יִשְׂרָאֵ֣ל עֹשִׂ֣ים פֹּ֗ה לְ/רָֽחֳקָה֙ מֵ/עַ֣ל מִקְדָּשִׁ֔/י וְ/עוֹד֙ תָּשׁ֣וּב תִּרְאֶ֔ה תּוֹעֵב֖וֹת גְּדֹלֽוֹת׃",
+        "LXX": "καὶ εἶπεν πρὸς μέ Υἱὲ ἀνθρώπου, ἑώρακας τί οὗτοι ποιοῦσιν; ἀνομίας μεγάλας ποιοῦσιν ὧδε, τοῦ ἀπέχεσθαι ἀπὸ τῶν ἁγίων μου· καὶ ἔτι ὄψῃ ἀνομίας μείζονας.",
+        "VUL": "Et dixit ad me : Fili hominis, putasne vides tu quid isti faciunt, abominationes magnas quas domus Israël facit hic, ut procul recedam a sanctuario meo ? et adhuc conversus videbis abominationes majores.",
+        "SYN": "И сказал Он мне: сын человеческий! видишь ли ты, что они делают? великие мерзости, какие делает дом Израилев здесь, чтобы Я удалился от святилища Моего? но обратись, и ты увидишь еще большие мерзости.",
+        "NEO": "Et il me dit : « Fils de l’homme, vois-tu ce qu’ils font, les grandes abominations que la maison d’Israël commet ici, afin que je m’éloigne de mon sanctuaire. Et tu verras encore d’autres grandes abominations. »",
+        "NAB": "Son of man, he asked me, do you see what they are doing? Do you see the great abominations that the house of Israel is practicing here, so that I must depart from my sanctuary? But you shall see still greater abominations!",
+        "VAT_ES": "El me dijo: «Hijo de hombres, &iquest;ves lo que lo que hacen? &iquest;Ves las grandes abominaciones que cometen aquí los israelitas para que yo me aleje de mi Santuario? Pero tú verás abominaciones más grandes todavía».",
+        "CEI": "Mi disse: \"Figlio dell'uomo, vedi che fanno costoro? Guarda i grandi abomini che la casa d'Israele commette qui per allontanarmi dal mio santuario! Ne vedrai altri ancora peggiori\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יָּבֵ֥א אֹתִ֖/י אֶל פֶּ֣תַח הֶֽ/חָצֵ֑ר וָ/אֶרְאֶ֕ה וְ/הִנֵּ֥ה חֹר אֶחָ֖ד בַּ/קִּֽיר׃",
+        "LXX": "καὶ εἰσήγαγέν με ἐπὶ τὰ πρόθυρα τῆς αὐλῆς,",
+        "VUL": "Et introduxit me ad ostium atrii, et vidi, et ecce foramen unum in pariete.",
+        "SYN": "И привел меня ко входу во двор, и я взглянул, и вот в стене скважина.",
+        "NEO": "Et il me conduisit à l’entrée du parvis, et je vis : et voici qu’il y avait un trou dans le mur !",
+        "NAB": "Then he brought me to the entrance of the court, where I saw there was a hole in the wall.",
+        "VAT_ES": "Después me llevó a la entrada del atrio; yo miré y vi que había un agujero en el muro.",
+        "CEI": "Mi condusse allora all'ingresso del cortile e vidi un foro nella parete."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֵלַ֔/י בֶּן אָדָ֖ם חֲתָר נָ֣א בַ/קִּ֑יר וָ/אֶחְתֹּ֣ר בַּ/קִּ֔יר וְ/הִנֵּ֖ה פֶּ֥תַח אֶחָֽד׃",
+        "LXX": "καὶ εἶπεν πρὸς μέ Υἱὲ ἀνθρώπου, ὄρυξον. καὶ ὤρυξα, καὶ ἰδοὺ θύρα.",
+        "VUL": "Et dixit ad me : Fili hominis, fode parietem. Et cum fodissem parietem, apparuit ostium unum.",
+        "SYN": "И сказал мне: сын человеческий! прокопай стену; и я прокопал стену, и вот какая-то дверь.",
+        "NEO": "et il me dit : « Fils de l’homme, perce donc la muraille. » Et je perçai la muraille, et voici qu’il y avait une porte.",
+        "NAB": "Son of man, he ordered, dig through the wall. I dug through the wall and saw a door.",
+        "VAT_ES": "El me dijo: «Hijo de hombre, abre un boquete en el muro». Yo abrí un boquete y vi que había una puerta.",
+        "CEI": "Mi disse: \"Figlio dell'uomo, sfonda la parete\". Sfondai la parete, ed ecco apparve una porta."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֖אמֶר אֵלָ֑/י בֹּ֤א וּ/רְאֵה֙ אֶת הַ/תּוֹעֵב֣וֹת הָ/רָע֔וֹת אֲשֶׁ֛ר הֵ֥ם עֹשִׂ֖ים פֹּֽה׃",
+        "LXX": "καὶ εἶπεν πρὸς μέ Εἴσελθε καὶ ἴδε τὰς ἀνομίας ἃς οὗτοι ποιοῦσιν ὧδε.",
+        "VUL": "Et dixit ad me : Ingredere, et vide abominationes pessimas quas isti faciunt hic.",
+        "SYN": "И сказал мне: войди и посмотри на отвратительные мерзости, какие они делают здесь.",
+        "NEO": "Et il me dit : « Viens et vois les horribles abominations qu’ils commettent ici. »",
+        "NAB": "Enter, he said to me, and see the abominable evils which they are doing here.",
+        "VAT_ES": "El me dijo: «Entra y mira las abominaciones que están cometiendo ahí».",
+        "CEI": "Mi disse: \"Entra e osserva gli abomini malvagi che commettono costoro\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וָ/אָבוֹא֮ וָֽ/אֶרְאֶה֒ וְ/הִנֵּ֨ה כָל תַּבְנִ֜ית רֶ֤מֶשׂ וּ/בְהֵמָה֙ שֶׁ֔קֶץ וְ/כָל גִּלּוּלֵ֖י בֵּ֣ית יִשְׂרָאֵ֑ל מְחֻקֶּ֥ה עַל הַ/קִּ֖יר סָבִ֥יב סָבִֽיב׃",
+        "LXX": "καὶ εἰσῆλθον καὶ ἴδον, καὶ ἰδοὺ μάταια βδελύγματα καὶ πάντα τὰ εἴδωλα οἴκου Ἰσραὴλ διαγεγραμμένα ἐπ’ αὐτοῦ κύκλῳ.",
+        "VUL": "Et ingressus vidi, et ecce omnis similitudo reptilium et animalium, abominatio, et universa idola domus Israël, depicta erant in pariete in circuitu per totum :",
+        "SYN": "И вошел я, и вижу, и вот всякие изображения пресмыкающихся и нечистых животных и всякие идолы дома Израилева, написанные по стенам кругом.",
+        "NEO": "Et je vins et je vis : et voici qu’il y avait toutes sortes de figures de reptiles et d’animaux immondes, et toutes les horreurs de la maison d’Israël dessinées sur la muraille tout autour.",
+        "NAB": "I entered and saw that all around upon the wall were pictured the figures of all kinds of creeping things and loathsome beasts (all the idols of the house of Israel).",
+        "VAT_ES": "Yo entré y miré, y vi que había toda clase de reptiles y de animales horribles y todos los ídolos de la casa de Israel, grabados en todas las paredes.",
+        "CEI": "Io entrai e vidi ogni sorta di rettili e di animali abominevoli e tutti gli idoli del popolo d'Israele raffigurati intorno alle pareti"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/שִׁבְעִ֣ים אִ֣ישׁ מִ/זִּקְנֵ֣י בֵֽית יִ֠שְׂרָאֵל וְ/יַאֲזַנְיָ֨הוּ בֶן שָׁפָ֜ן עֹמֵ֤ד בְּ/תוֹכָ/ם֙ עֹמְדִ֣ים לִ/פְנֵי/הֶ֔ם וְ/אִ֥ישׁ מִקְטַרְתּ֖/וֹ בְּ/יָד֑/וֹ וַ/עֲתַ֥ר עֲנַֽן הַ/קְּטֹ֖רֶת עֹלֶֽה׃",
+        "LXX": "καὶ ἑβδομήκοντα ἄνδρες ἐκ τῶν πρεσβυτέρων οἴκου Ἰσραήλ· Ἰεχονίας ὁ τοῦ Σαφὰν ἐν μέσῳ αὐτῶν ἱστήκει πρὸ προσώπου αὐτῶν, καὶ ἕκαστος θυμιατήριον αὐτοῦ εἶχεν ἐν τῇ χειρί, καὶ ἡ ἀτμὶς τοῦ θυμιάματος ἀνέβαινεν.",
+        "VUL": "et septuaginta viri de senioribus domus Israël : et Jezonias filius Saphan stabat in medio eorum stantium ante picturas : et unusquisque habebat thuribulum in manu sua, et vapor nebulæ de thure consurgebat.",
+        "SYN": "И семьдесят мужей из старейшин дома Израилева стоят перед ними, и Иезания, сын Сафанов, среди них; и у каждого в руке свое кадило, и густое облако курений возносится кверху.",
+        "NEO": "Et soixante-dix hommes d’entre les anciens de la maison d’Israël, parmi lesquels était Jézonias, fils de Saphan, se tenaient debout devant elles, et chacun avait à la main son encensoir, d’où s’élevait le parfum d’un nuage d’encens.",
+        "NAB": "Before these stood seventy of the elders of the house of Israel, among whom stood Jaazaniah, son of Shaphan, each of them with his censer in his hand, and the fragrance of the incense was rising upward.",
+        "VAT_ES": "Setenta hombres de entre los ancianos del pueblo de Israel –entre los cuales se encontraba Iazanías, hijo de Satán– estaban de pie delante de ellos: cada uno tenía un incensario en la mano, y subía el perfume de una nube de incienso.",
+        "CEI": "e settanta anziani della casa d'Israele, fra i quali Iazanià figlio di Safàn, in piedi, davanti ad essi, ciascuno con il turibolo in mano, mentre il profumo saliva in nubi d'incenso."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֵלַ/י֮ הֲ/רָאִ֣יתָ בֶן אָדָם֒ אֲשֶׁ֨ר זִקְנֵ֤י בֵֽית יִשְׂרָאֵל֙ עֹשִׂ֣ים בַּ/חֹ֔שֶׁךְ אִ֖ישׁ בְּ/חַדְרֵ֣י מַשְׂכִּית֑/וֹ כִּ֣י אֹמְרִ֗ים אֵ֤ין יְהוָה֙ רֹאֶ֣ה אֹתָ֔/נוּ עָזַ֥ב יְהוָ֖ה אֶת הָ/אָֽרֶץ׃",
+        "LXX": "καὶ εἶπεν πρὸς μέ Ἑόρακας, υἱὲ ἀνθρώπου, ἃ οἱ πρεσβύτεροι τοῦ οἴκου Ἰσραὴλ ποιοῦσιν, ἕκαστος αὐτῶν ἐν τῷ κοιτῶνι τῷ κρυπτῷ αὐτῶν; διότι εἶπαν Οὐχ ὁρᾷ ὁ κύριος, ἐγκαταλέλοιπεν Κύριος τὴν γῆν.",
+        "VUL": "Et dixit ad me : Certe vides, fili hominis, quæ seniores domus Israël faciunt in tenebris, unusquisque in abscondito cubiculi sui : dicunt enim : Non videt Dominus nos ; dereliquit Dominus terram.",
+        "SYN": "И сказал мне: видишь ли, сын человеческий, что делают старейшины дома Израилева в темноте, каждый в расписанной своей комнате? ибо говорят: \"не видит нас Господь, оставил Господь землю сию\".",
+        "NEO": "Et il me dit : « As-tu vu, fils de l’homme, ce que les anciens de la maison d’Israël font dans les ténèbres, chacun dans ses appartements couverts de figures, car ils disent : \\+w Yahweh|strong=\"H3068\"\\+w** ne nous voit pas ; \\+w Yahweh|strong=\"H3068\"\\+w** a abandonné le pays ! »",
+        "NAB": "Then he said to me: Do you see, son of man, what each of these elders of the house of Israel is doing in his idol room? They think: \"The LORD cannot see us; the LORD has forsaken the land.\"",
+        "VAT_ES": "El me dijo: «Hijo de hombre, &iquest;ves lo que los ancianos del pueblo de Israel hacen a escondidas, cada uno en su habitación adornada de pinturas? Porque ellos piensan: El Señor no nos ve; el Señor ha abandonado el país».",
+        "CEI": "Mi disse: \"Hai visto, figlio dell'uomo, quello che fanno gli anziani del popolo d'Israele nelle tenebre, ciascuno nella stanza recondita del proprio idolo? Vanno dicendo: Il Signore non ci vede... il Signore ha abbandonato il paese...\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֖אמֶר אֵלָ֑/י ע֣וֹד תָּשׁ֥וּב תִּרְאֶ֛ה תּוֹעֵב֥וֹת גְּדֹל֖וֹת אֲשֶׁר הֵ֥מָּה עֹשִֽׂים׃",
+        "LXX": "καὶ εἶπεν πρὸς μέ Ἔτι ὄψει ἀνομίας μείζονας ἃς οὗτοι ποιοῦσιν.",
+        "VUL": "Et dixit ad me : Adhuc conversus videbis abominationes majores, quas isti faciunt.",
+        "SYN": "И сказал мне: обратись, и увидишь еще большие мерзости, какие они делают.",
+        "NEO": "Et il me dit : « Tu verras encore d’autres grandes abominations qu’ils commettent. »",
+        "NAB": "He continued: You shall see still greater abominations that they are practicing.",
+        "VAT_ES": "Después, él me dijo: «Verás que cometen abominaciones más grandes todavía».",
+        "CEI": "Poi mi disse: \"Hai visto, figlio dell'uomo? Vedrai che si commettono nefandezze peggiori di queste\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יָּבֵ֣א אֹתִ֗/י אֶל פֶּ֨תַח֙ שַׁ֣עַר בֵּית יְהוָ֔ה אֲשֶׁ֖ר אֶל הַ/צָּפ֑וֹנָ/ה וְ/הִנֵּה שָׁם֙ הַ/נָּשִׁ֣ים יֹֽשְׁב֔וֹת מְבַכּ֖וֹת אֶת הַ/תַּמּֽוּז׃",
+        "LXX": "καὶ εἰσήγαγέν με ἐπὶ τὰ πρόθυρα τῆς πύλης οἴκου Κυρίου τῆς βλεπούσης πρὸς βορρᾶν, καὶ ἰδοὺ ἐκεῖ γυναῖκες καθήμεναι θρηνοῦσαι τὸν Θαμμούζ.",
+        "VUL": "Et introduxit me per ostium portæ domus Domini quod respiciebat ad aquilonem, et ecce ibi mulieres sedebant plangentes Adonidem.",
+        "SYN": "И привел меня ко входу в ворота дома Господня, которые к северу, и вот, там сидят женщины, плачущие по Фаммузе,",
+        "NEO": "Et il me conduisit à l’entrée de la porte de la maison de \\+w Yahweh|strong=\"H3068\"\\+w** qui regarde le septentrion ; et voici que les femmes y étaient assises, pleurant le dieu Thammuz.",
+        "NAB": "Then he brought me to the entrance of the north gate of the temple, and I saw sitting there the women who were weeping for Tammuz.",
+        "VAT_ES": "Y me llevó hasta la entrada de la puerta de la Casa del Señor, lo que da hacia el norte, y vi que allí había unas mujeres sentadas llorando a Tamuz.",
+        "CEI": "Mi condusse all'ingresso del portico della casa del Signore che guarda a settentrione e vidi donne sedute che piangevano Tammuz."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר אֵלַ֖/י הֲ/רָאִ֣יתָ בֶן אָדָ֑ם ע֣וֹד תָּשׁ֥וּב תִּרְאֶ֛ה תּוֹעֵב֥וֹת גְּדֹל֖וֹת מֵ/אֵֽלֶּה׃",
+        "LXX": "καὶ εἶπεν πρὸς μέ Υἱὲ ἀνθρώπου, ἑόρακας; καὶ ἔτι ὄψει ἐπιτηδεύματα μείζονα τούτων.",
+        "VUL": "Et dixit ad me : Certe vidisti, fili hominis : adhuc conversus videbis abominationes majores his.",
+        "SYN": "и сказал мне: видишь ли, сын человеческий? обратись, и еще увидишь большие мерзости.",
+        "NEO": "Et il me dit : « As-tu vu, fils de l’homme ? Tu verras encore d’autres abominations plus grandes que celles-là. »",
+        "NAB": "Then he said to me: Do you see this, son of man? You shall see other abominations, greater than these!",
+        "VAT_ES": "El me dijo: «&iquest;Has visto, hijo de hombre? Tú verás abominaciones más grandes todavía».",
+        "CEI": "Mi disse: \"Hai visto, figlio dell'uomo? Vedrai abomini peggiori di questi\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יָּבֵ֣א אֹתִ֗/י אֶל חֲצַ֣ר בֵּית יְהוָה֮ הַ/פְּנִימִית֒ וְ/הִנֵּה פֶ֜תַח הֵיכַ֣ל יְהוָ֗ה בֵּ֤ין הָֽ/אוּלָם֙ וּ/בֵ֣ין הַ/מִּזְבֵּ֔חַ כְּ/עֶשְׂרִ֥ים וַ/חֲמִשָּׁ֖ה אִ֑ישׁ אֲחֹ֨רֵי/הֶ֜ם אֶל הֵיכַ֤ל יְהוָה֙ וּ/פְנֵי/הֶ֣ם קֵ֔דְמָ/ה וְ/הֵ֛מָּה מִשְׁתַּחֲוִיתֶ֥ם קֵ֖דְמָ/ה לַ/שָּֽׁמֶשׁ׃",
+        "LXX": "καὶ εἰσήγαγέν με εἰς τὴν αὐλὴν οἴκου Κυρίου τὴν ἐσωτέραν, καὶ ἐπὶ τῶν προθύρων τοῦ ναοῦ Κυρίου ἀνὰ μέσον τῶν αἰλὰμ καὶ ἀνὰ μέσον τοῦ θυσιαστηρίου ὡς εἴκοσι ἄνδρες, τὰ ὀπίσθια αὐτῶν πρὸς τὸν ναὸν τοῦ κυρίου καὶ τὰ πρόσωπα αὐτῶν ἀπέναντι, καὶ οὗτοι προσκυνοῦσιν τῷ ἡλίῳ.",
+        "VUL": "Et introduxit me in atrium domus Domini interius, et ecce in ostio templi Domini, inter vestibulum et altare, quasi viginti quinque viri dorsa habentes contra templum Domini, et facies ad orientem : et adorabant ad ortum solis.",
+        "SYN": "И ввел меня во внутренний двор дома Господня, и вот у дверей храма Господня, между притвором и жертвенником, около двадцати пяти мужей _стоят_ спинами своими ко храму Господню, а лицами своими на восток, и кланяются на восток солнцу.",
+        "NEO": "Et il me conduisit alors dans le parvis intérieur de la maison de \\+w Yahweh|strong=\"H3068\"\\+w** ; et voici qu’à l’entrée de la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, entre le portique et l’autel, il y avait environ vingt-cinq hommes, le dos tourné au temple de \\+w Yahweh|strong=\"H3068\"\\+w**, et le visage vers l’orient ; et ils se prosternaient à l’orient devant le soleil.",
+        "NAB": "Then he brought me into the inner court of the LORD'S house, and there at the door of the LORD'S temple, between the vestibule and the altar, were about twenty-five men with their backs to the LORD'S temple and their faces toward the east; they were bowing down to the sun.",
+        "VAT_ES": "Luego me llevó hacia el atrio interior de la Casa del Señor, y vi que a la entrada del Templo del Señor, entre el vestíbulo y el altar, había unos veinticinco hombres, dando la espalda al Templo del Señor, y con sus rostros vueltos hacia el oriente; y ellos se postraron hacia el oriente, delante del sol.",
+        "CEI": "Mi condusse nell'atrio interno del tempio; ed ecco all'ingresso del tempio, fra il vestibolo e l'altare, circa venticinque uomini, con le spalle voltate al tempio e la faccia a oriente che, prostrati, adoravano il sole."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֵלַ/י֮ הֲ/רָאִ֣יתָ בֶן אָדָם֒ הֲ/נָקֵל֙ לְ/בֵ֣ית יְהוּדָ֔ה מֵ/עֲשׂ֕וֹת אֶת הַ/תּוֹעֵב֖וֹת אֲשֶׁ֣ר עָֽשׂוּ פֹ֑ה כִּֽי מָלְא֨וּ אֶת הָ/אָ֜רֶץ חָמָ֗ס וַ/יָּשֻׁ֨בוּ֙ לְ/הַכְעִיסֵ֔/נִי וְ/הִנָּ֛/ם שֹׁלְחִ֥ים אֶת הַ/זְּמוֹרָ֖ה אֶל אַפָּֽ/ם׃",
+        "LXX": "καὶ εἶπεν πρὸς μέ Ἑόρακας, υἱὲ ἀνθρώπου; μὴ μικρὰ τῷ οἴκῳ Ἰούδα τοῦ ποιεῖν τὰς ἀνομίας ἃς πεποιήκασιν ὧδε; διότι ἔπλησαν τὴν γῆν ἀνομίας, καὶ ἰδοὺ αὐτοὶ ὡς μυκτηρίζοντες.",
+        "VUL": "Et dixit ad me : Certe vidisti, fili hominis : numquid leve est hoc domui Juda, ut facerent abominationes istas quas fecerunt hic, quia replentes terram iniquitate, conversi sunt ad irritandum me ? et ecce applicant ramum ad nares suas.",
+        "SYN": "И сказал мне: видишь ли, сын человеческий? мало ли дому Иудину, чтобы делать такие мерзости, какие они делают здесь? но они еще землю наполнили нечестием, и сугубо прогневляют Меня; и вот, они ветви подносят к носам своим.",
+        "NEO": "Et il me dit : « As-tu vu, fils de l’homme ? Est-ce trop peu pour la maison de Juda de commettre les abominations qu’ils commettent ici ? Faut-il qu’ils remplissent encore le pays de violence, et qu’ils recommencent toujours à m’irriter ? Voici qu’ils portent le rameau à leur nez.",
+        "NAB": "Do you see, son of man? he asked me. Is it such a trivial matter for the house of Judah to do the abominable things they have done here - for they have filled the land with violence, and again and again they have provoked me - that now they must also put the branch to my nose?",
+        "VAT_ES": "El me dijo: «&iquest;Has visto, hijo de hombre? &iquest;No le basta al pueblo de Judá cometer las abominaciones que aquí cometen, que también han llenado el país de violencia y no cesan de irritarme? Ellos llevan el ramo hasta su nariz.",
+        "CEI": "Mi disse: \"Hai visto, figlio dell'uomo? Come se fosse piccola cosa per la casa di Giuda, commettere simili nefandezze in questo luogo, hanno riempito il paese di violenze, per provocare la mia collera. Eccoli, vedi, che si portano il ramoscello sacro alle narici."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/גַם אֲנִי֙ אֶעֱשֶׂ֣ה בְ/חֵמָ֔ה לֹֽא תָח֥וֹס עֵינִ֖/י וְ/לֹ֣א אֶחְמֹ֑ל וְ/קָרְא֤וּ בְ/אָזְנַ/י֙ ק֣וֹל גָּד֔וֹל וְ/לֹ֥א אֶשְׁמַ֖ע אוֹתָֽ/ם׃",
+        "LXX": "καὶ ἐγὼ ποιήσω αὐτοῖς μετὰ θυμοῦ· οὐ φείσεται ὁ ὀφθαλμός μου, οὐδὲ μὴ ἐλεήσω.",
+        "VUL": "Ergo et ego faciam in furore : non parcet oculus meus, nec miserebor : et cum clamaverint ad aures meas voce magna, non exaudiam eos.",
+        "SYN": "За то и Я стану действовать с яростью; не пожалеет око Мое, и не помилую; и хотя бы они взывали в уши Мои громким голосом, не услышу их.",
+        "NEO": "Et moi aussi, j’agirai avec colère ; mon œil n’épargnera point, et je serai sans pitié ; ils crieront à haute voix à mes oreilles, et je ne les entendrai point. »",
+        "NAB": "Therefore I in turn will act furiously: I will not look upon them with pity nor will I show mercy.",
+        "VAT_ES": "Yo también obraré con furor, sin una mirada de piedad y sin tener compasión. Gritarán con toda su voz a mis oídos, pero no los escucharé.",
+        "CEI": "Ebbene anch'io agirò con furore. Il mio occhio non s'impietosirà; non avrò compassione: manderanno alte grida ai miei orecchi, ma non li ascolterò\"."
+      }
+    }
+  }
+}

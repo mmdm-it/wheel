@@ -1,0 +1,501 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_SAM_010",
+  "book_key": "I_SAM",
+  "sequence": 10,
+  "chapter_in": {
+    "MT": 10,
+    "VUL": 10,
+    "LXX": 10
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֨ח שְׁמוּאֵ֜ל אֶת פַּ֥ךְ הַ/שֶּׁ֛מֶן וַ/יִּצֹ֥ק עַל רֹאשׁ֖/וֹ וַ/יִּשָּׁקֵ֑/הוּ וַ/יֹּ֕אמֶר הֲ/ל֗וֹא כִּֽי מְשָׁחֲ/ךָ֧ יְהוָ֛ה עַל נַחֲלָת֖/וֹ לְ/נָגִֽיד׃",
+        "LXX": "καὶ ἔλαβεν Σαμουὴλ τὸν φακὸν τοῦ ἐλαίου καὶ ἐπέχεεν ἐπὶ τὴν κεφαλὴν αὐτοῦ, καὶ ἐφίλησεν αὐτὸν καὶ εἶπεν αὐτῷ Οὐχὶ κέχρικέν σε Κύριος εἰς ἄρχοντα ἐπὶ τὸν λαὸν αὐτοῦ, ἐπὶ Ἰσραήλ; καὶ σὺ ἄρξεις ἐν λαῷ Κυρίου, καὶ σὺ σώσεις αὐτὸν ἐκ χειρὸς ἐχθρῶν αὐτοῦ κυκλόθεν.",
+        "VUL": "Tulit autem Samuel lenticulam olei, et effudit super caput ejus : et deosculatus est eum, et ait : Ecce unxit te Dominus super hæreditatem suam in principem, et liberabis populum suum de manibus inimicorum ejus qui in circuitu ejus sunt. Et hoc tibi signum, quia unxit te Deus in principem.",
+        "SYN": "И взял Самуил сосуд с елеем и вылил на голову его, и поцеловал его и сказал: вот, Господь помазывает тебя в правителя наследия Своего [в Израиле, и ты будешь царствовать над народом Господним и спасешь их от руки врагов их, окружающих их, и вот тебе знамение, что помазал тебя Господь в царя над наследием Своим]:",
+        "NEO": "Samuel prit une fiole d’huile, et la versa sur la tête de Saül ; puis il le baisa et dit : « \\+w Yahweh|strong=\"H3068\"\\+w** ne t’a-t-il pas oint pour chef sur son héritage ?",
+        "NAB": "Then, from a flask he had with him, Samuel poured oil on Saul's head; he also kissed him, saying: \"The LORD anoints you commander over his heritage. You are to govern the LORD'S people Israel, and to save them from the grasp of their enemies round about. \"This will be the sign for you that the LORD has anointed you commander over his heritage:",
+        "VAT_ES": "Samuel tomó el frasco de aceite y lo derramó sobre la cabeza de Saúl: Luego lo besó y dijo: «&iexcl;El Señor te ha ungido como jefe de su herencia!",
+        "CEI": "Samuele prese allora l'ampolla dell'olio e gliela versò sulla testa, poi lo baciò dicendo: \"Ecco: il Signore ti ha unto capo sopra Israele suo popolo. Tu avrai potere sul popolo del Signore e tu lo libererai dalle mani dei nemici che gli stanno intorno. Questo ti sarà il segno che proprio il Signore ti ha unto capo sulla sua casa:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בְּ/לֶכְתְּ/ךָ֤ הַ/יּוֹם֙ מֵ/עִמָּדִ֔/י וּ/מָצָאתָ֩ שְׁנֵ֨י אֲנָשִׁ֜ים עִם קְבֻרַ֥ת רָחֵ֛ל בִּ/גְב֥וּל בִּנְיָמִ֖ן בְּ/צֶלְצַ֑ח וְ/אָמְר֣וּ אֵלֶ֗י/ךָ נִמְצְא֤וּ הָ/אֲתֹנוֹת֙ אֲשֶׁ֣ר הָלַ֣כְתָּ לְ/בַקֵּ֔שׁ וְ/הִנֵּ֨ה נָטַ֤שׁ אָבִ֨י/ךָ֙ אֶת דִּבְרֵ֣י הָ/אֲתֹנ֔וֹת וְ/דָאַ֤ג לָ/כֶם֙ לֵ/אמֹ֔ר מָ֥ה אֶעֱשֶׂ֖ה לִ/בְנִֽ/י׃",
+        "LXX": "καὶ τοῦτό σοι τὸ σημεῖον ὅτι ἔχρισέν σε Κύριος ἐπὶ κληρονομίαν αὐτοῦ εἰς ἄρχοντα· ὡς ἂν ἀπέλθῃς σήμερον ἀπ’ ἐμοῦ, καὶ εὑρήσεις δύο ἄνδρας πρὸς τοῖς τάφοις Ῥαχὴλ ἐν τῷ ὄρει Βενιαμεὶν ἁλλομένους μεγάλα, καὶ ἐροῦσίν σοι Εὕρηνται αἱ ὄνοι ἃς ἐπορεύθητε ζητεῖν· καὶ ἰδοὺ ὁ πατήρ σου ἀποτετίνακται τὸ ῥῆμα τῶν ὄνων, καὶ ἐδαψιλεύσατο δι’ ὑμᾶς λέγων Τί ποιήσω ὑπὲρ τοῦ υἱοῦ μου;",
+        "VUL": "Cum abieris hodie a me, invenies duos viros juxta sepulchrum Rachel in finibus Benjamin, in meridie : dicentque tibi : Inventæ sunt asinæ ad quas ieras perquirendas : et intermissis pater tuus asinis, sollicitus est pro vobis, et dicit : Quid faciam de filio meo ?",
+        "SYN": "когда ты теперь пойдешь от меня, то встретишь двух человек близ гроба Рахили, на пределах Вениаминовых, в Целцахе, и они скажут тебе: \"нашлись ослицы, которых ты ходил искать, и вот отец твой, забыв об ослицах, беспокоится о вас, говоря: что с сыном моим?\"",
+        "NEO": "Quand tu m’auras quitté aujourd’hui, tu trouveras deux hommes près du sépulcre de Rachel, dans le territoire de Benjamin, à Selsach ; ils te diront : « Les ânesses que tu es allé chercher sont retrouvées ; et voici, ton père a perdu de vue l’affaire des ânesses, mais il est en peine de vous et dit : Que dois-je faire au sujet de mon fils ? »",
+        "NAB": "When you leave me today, you will meet two men near Rachel's tomb at Zelzah in the territory of Benjamin, who will say to you, 'The asses you went to look for have been found. Your father is no longer worried about the asses, but is anxious about you and says, What shall I do about my son?'",
+        "VAT_ES": "Hoy mismo, cuando te hayas alejado de mí, encontrarás a dos hombres cerca de la tumba de Raquel, en territorio de Benjamín, en Selsáj. Ellos te dirán: «Han hallado las asnas que habías ido a buscar. Ahora tu padre ya no piensa más en ese asunto, y está inquieto por ustedes, diciendo: &iquest;Qué puedo hacer por mi hijo?».",
+        "CEI": "oggi, quando sarai partito da me, troverai due uomini presso il sepolcro di Rachele sul confine con Beniamino in Zelzach. Essi ti diranno: Sono state ritrovate le asine che sei andato a cercare. Ecco tuo padre non bada più alla faccenda delle asine, ma è preoccupato di voi e va dicendo: Che devo fare per mio figlio?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/חָלַפְתָּ֨ מִ/שָּׁ֜ם וָ/הָ֗לְאָה וּ/בָ֨אתָ֙ עַד אֵל֣וֹן תָּב֔וֹר וּ/מְצָא֤וּ/ךָ שָּׁם֙ שְׁלֹשָׁ֣ה אֲנָשִׁ֔ים עֹלִ֥ים אֶל הָ/אֱלֹהִ֖ים בֵּֽית אֵ֑ל אֶחָ֞ד נֹשֵׂ֣א שְׁלֹשָׁ֣ה גְדָיִ֗ים וְ/אֶחָד֙ נֹשֵׂ֗א שְׁלֹ֨שֶׁת֙ כִּכְּר֣וֹת לֶ֔חֶם וְ/אֶחָ֥ד נֹשֵׂ֖א נֵֽבֶל יָֽיִן׃",
+        "LXX": "καὶ ἀπελεύσει ἐκεῖθεν καὶ ἐπέκεινα ἥξεις ἕως τῆς δρυὸς Θαβώρ, καὶ εὑρήσεις ἐκεῖ τρεῖς ἄνδρας ἀναβαίνοντας πρὸς τὸν θεὸν εἰς Βαιθήλ, ἕνα αἴροντα τρία αἰγίδια καὶ ἕνα αἴροντα τρία ἀγγεῖα ἄρτων καὶ ἕνα αἴροντα ἀσκὸν οἴνου·",
+        "VUL": "Cumque abieris inde, et ultra transieris, et veneris ad quercum Thabor, invenient te ibi tres viri ascendentes ad Deum in Bethel, unus portans tres hædos, et alius tres tortas panis, et alius portans lagenam vini.",
+        "SYN": "И пойдешь оттуда далее и придешь к дубраве Фаворской, и встретят тебя там три человека, идущих к Богу в Вефиль: один несет трех козлят, другой несет три хлеба, а третий несет мех с вином;",
+        "NEO": "De là, poursuivant ta route, tu arriveras au chêne de Thabor, et là tu seras rencontré par trois hommes montant vers Dieu à Béthel, et portant l’un trois chevreaux, l’autre trois miches de pain, et l’autre une outre de vin.",
+        "NAB": "Farther on, when you arrive at the terebinth of Tabor, you will be met by three men going up to God at Bethel; one will be bringing three kids, another three loaves of bread, and the third a skin of wine.",
+        "VAT_ES": "Más adelante, cuando llegues a la Encina de Tabor, te encontrarás con tres hombres que suben a dar culto a Dios en Betel, llevando uno tres cabritos, otro tres hogazas de pan y otro un odre de vino.",
+        "CEI": "Passerai in fretta di là e andrai oltre; quando arriverai alla quercia del Tabor, vi troverete tre uomini in viaggio per salire a Dio in Betel: uno porterà tre capretti, l'altro porterà tre pani rotondi, il terzo porterà un otre di vino."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/שָׁאֲל֥וּ לְ/ךָ֖ לְ/שָׁל֑וֹם וְ/נָתְנ֤וּ לְ/ךָ֙ שְׁתֵּי לֶ֔חֶם וְ/לָקַחְתָּ֖ מִ/יָּדָֽ/ם׃",
+        "LXX": "καὶ ἐρωτήσουσίν σε τὰ εἰς εἰρήνην καὶ δώσουσίν σοι δύο ἀπαρχὰς ἄρτων, καὶ λήμψῃ ἐκ τῆς χειρὸς αὐτῶν.",
+        "VUL": "Cumque te salutaverint, dabunt tibi duos panes, et accipies de manu eorum.",
+        "SYN": "и будут приветствовать они тебя и дадут тебе два хлеба, и ты возьмешь из рук их.",
+        "NEO": "Après qu’ils t’auront salué, ils te donneront deux pains, et tu les recevras de leurs mains.",
+        "NAB": "They will greet you and offer you two wave offerings of bread, which you will take from them.",
+        "VAT_ES": "Ellos te saludarán y te darán dos panes, y tú los aceptarás.",
+        "CEI": "Ti domanderanno se stai bene e ti daranno due pani, che tu prenderai dalle loro mani."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אַ֣חַר כֵּ֗ן תָּבוֹא֙ גִּבְעַ֣ת הָ/אֱלֹהִ֔ים אֲשֶׁר שָׁ֖ם נְצִבֵ֣י פְלִשְׁתִּ֑ים וִ/יהִי֩ כְ/בֹאֲ/ךָ֨ שָׁ֜ם הָ/עִ֗יר וּ/פָגַעְתָּ֞ חֶ֤בֶל נְבִיאִים֙ יֹרְדִ֣ים מֵֽ/הַ/בָּמָ֔ה וְ/לִ/פְנֵי/הֶ֞ם נֵ֤בֶל וְ/תֹף֙ וְ/חָלִ֣יל וְ/כִנּ֔וֹר וְ/הֵ֖מָּה מִֽתְנַבְּאִֽים׃",
+        "LXX": "καὶ μετὰ ταῦτα εἰσελεύσῃ εἰς τὸν βουνὸν τοῦ θεοῦ, οὗ ἐστιν ἐκεῖ τὸ ἀνάστεμα τῶν ἀλλοφύλων, ἐκεῖ Νασεὶβ ὁ ἀλλόφυλος· καὶ ἔσται ὡς ἂν εἰσέλθητε ἐκεῖ εἰς τὴν πόλιν, καὶ ἀπαντήσεις χορῷ προφητῶν καταβαινόντων ἐκ τῆς Βαμά, καὶ ἔμπροσθεν αὐτῶν νάβαλ καὶ τύμπανον καὶ αὐλὸς καὶ κινύρα, καὶ αὐτοὶ προφητεύοντες·",
+        "VUL": "Post hæc venies in collem Dei, ubi est statio Philisthinorum : et cum ingressus fueris ibi urbem, obvium habebis gregem prophetarum descendentium de excelso, et ante eos psalterium, et tympanum, et tibiam, et citharam, ipsosque prophetantes.",
+        "SYN": "После того ты придешь на холм Божий, где охранный отряд Филистимский; [там начальники Филистимские;] и когда войдешь там в город, встретишь сонм пророков, сходящих с высоты, и пред ними псалтирь и тимпан, и свирель и гусли, и они пророчествуют;",
+        "NEO": "Après cela, tu viendras à Gabaa de Dieu, où se trouve un poste de Philistins. En entrant dans la ville, tu rencontreras une troupe de prophètes descendant du haut lieu, précédés de luths, tambourins, flûtes et harpes, et prophétisant.",
+        "NAB": "After that you will come to Gibeath-elohim, where there is a garrison of the Philistines. As you enter that city, you will meet a band of prophets, in a prophetic state, coming down from the high place preceded by lyres, tambourines, flutes and harps.",
+        "VAT_ES": "Después llegarás a Guibeá de Dios, donde está la guarnición filistea. Apenas entres en la ciudad, tropezarás con un grupo de profetas que bajan del lugar alto, precedidos de arpas, tamborines, flautas y cítaras, en estado de trance profético.",
+        "CEI": "Giungerai poi a Gàbaa di Dio, dove c'è una guarnigione di Filistei e mentre entrerai in città, incontrerai un gruppo di profeti che scenderanno dall'altura preceduti da arpe, timpani, flauti e cetre, in atto di fare i profeti."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/צָלְחָ֤ה עָלֶ֨י/ךָ֙ ר֣וּחַ יְהוָ֔ה וְ/הִתְנַבִּ֖יתָ עִמָּ֑/ם וְ/נֶהְפַּכְתָּ֖ לְ/אִ֥ישׁ אַחֵֽר׃",
+        "LXX": "καὶ ἐφαλεῖται ἐπὶ σὲ πνεῦμα Κυρίου καὶ προφητεύσεις μετ’ αὐτῶν, καὶ στραφήσῃ εἰς ἄνδρα ἄλλον.",
+        "VUL": "Et insiliet in te spiritus Domini, et prophetabis cum eis, et mutaberis in virum alium.",
+        "SYN": "и найдет на тебя Дух Господень, и ты будешь пророчествовать с ними и сделаешься иным человеком.",
+        "NEO": "L’Esprit de \\+w Yahweh|strong=\"H3068\"\\+w** te saisira, et tu prophétiseras avec eux, et tu seras changé en un autre homme.",
+        "NAB": "The spirit of the LORD will rush upon you, and you will join them in their prophetic state and will be changed into another man.",
+        "VAT_ES": "Entonces te invadirá el espíritu del Señor; entrarás en trance con ellos y serán cambiado en otro hombre.",
+        "CEI": "Lo spirito del Signore investirà anche te e ti metterai a fare il profeta insieme con loro e sarai trasformato in un altro uomo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה כִּ֥י תבאינה תָבֹ֛אנָה הָ/אֹת֥וֹת הָ/אֵ֖לֶּה לָ֑/ךְ עֲשֵׂ֤ה לְ/ךָ֙ אֲשֶׁ֣ר תִּמְצָ֣א יָדֶ֔/ךָ כִּ֥י הָ/אֱלֹהִ֖ים עִמָּֽ/ךְ׃",
+        "LXX": "καὶ ἔσται ὅταν ἥξει τὰ σημεῖα ταῦτα ἐπὶ σέ, ποίει πάντα ὅσα ἐὰν εὕρῃ ἡ χείρ σου, ὅτι θεὸς μετὰ σοῦ.",
+        "VUL": "Quando ergo evenerint signa hæc omnia tibi, fac quæcumque invenerit manus tua, quia Dominus tecum est.",
+        "SYN": "Когда эти знамения сбудутся с тобою, тогда делай, что может рука твоя, ибо с тобою Бог.",
+        "NEO": "Lorsque ces signes se seront accomplis pour toi, fais ce qui se présentera, car Dieu est avec toi.",
+        "NAB": "When you see these signs fulfilled, do whatever you judge feasible, because God is with you.",
+        "VAT_ES": "Cuando te hayan sucedido todas estas señales, haz todo lo que sea conveniente, porque Dios está contigo.",
+        "CEI": "Quando questi segni che ti riguardano saranno accaduti, farai come vorrai, perché Dio sarà con te."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/יָרַדְתָּ֣ לְ/פָנַ/י֮ הַ/גִּלְגָּל֒ וְ/הִנֵּ֤ה אָֽנֹכִי֙ יֹרֵ֣ד אֵלֶ֔י/ךָ לְ/הַעֲל֣וֹת עֹל֔וֹת לִ/זְבֹּ֖חַ זִבְחֵ֣י שְׁלָמִ֑ים שִׁבְעַ֨ת יָמִ֤ים תּוֹחֵל֙ עַד בּוֹאִ֣/י אֵלֶ֔י/ךָ וְ/הוֹדַעְתִּ֣י לְ/ךָ֔ אֵ֖ת אֲשֶׁ֥ר תַּעֲשֶֽׂה׃",
+        "LXX": "καὶ καταβήσῃ ἔμπροσθεν τῆς Γαλαάδ, καὶ ἰδοὺ καταβαίνω πρὸς σὲ ἀνενεγκεῖν ὁλοκαύτωσιν καὶ θυσίας εἰρηνικάς· ἑπτὰ ἡμέρας διαλείψεις ἕως τοῦ ἐλθεῖν με πρὸς σέ, καὶ γνωρίσω σοι ἃ ποιήσεις.",
+        "VUL": "Et descendes ante me in Galgala (ego quippe descendam ad te), ut offeras oblationem, et immoles victimas pacificas : septem diebus expectabis, donec veniam ad te, et ostendam tibi quid facias.",
+        "SYN": "И ты пойди прежде меня в Галгал, куда и я приду к тебе для принесения всесожжений и мирных жертв; семь дней жди, доколе я не приду к тебе, и тогда укажу тебе, что тебе делать.",
+        "NEO": "Et tu descendras avant moi à Galgala ; et voici, je descendrai vers toi, pour offrir des holocaustes et des sacrifices pacifiques. Tu attendras sept jours jusqu’à ce que je sois venu vers toi et je te ferai connaître ce que tu dois faire. »",
+        "NAB": "Now go down ahead of me to Gilgal, for I shall come down to you, to offer holocausts and to sacrifice peace offerings. Wait seven days until I come to you; I shall then tell you what you must do.\"",
+        "VAT_ES": "Tú bajarás a Guilgal antes que yo, y yo bajaré a unirme contigo para ofrecer holocaustos y sacrificios de comunión. Espera siete días hasta que yo llegue y te comunique lo que debes hacer».",
+        "CEI": "Tu poi scenderai a Gàlgala precedendomi. Io scenderò in seguito presso di te per offrire olocausti e immolare sacrifici di comunione. Sette giorni aspetterai, finché io verrò a te e ti indicherò quello che dovrai fare\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה כְּ/הַפְנֹת֤/וֹ שִׁכְמ/וֹ֙ לָ/לֶ֨כֶת֙ מֵ/עִ֣ם שְׁמוּאֵ֔ל וַ/יַּהֲפָךְ ל֥/וֹ אֱלֹהִ֖ים לֵ֣ב אַחֵ֑ר וַ/יָּבֹ֛אוּ כָּל הָ/אֹת֥וֹת הָ/אֵ֖לֶּה בַּ/יּ֥וֹם הַ/הֽוּא׃",
+        "LXX": "Καὶ ἐγενήθη ὥστε ἐπιστραφῆναι τῷ ὤμῳ αὐτοῦ ἀπελθεῖν ἀπὸ Σαμουήλ, μετέστρεψεν αὐτῷ ὁ θεὸς καρδίαν ἄλλην· καὶ ἦλθεν πάντα τὰ σημεῖα ἐν τῇ ἡμέρᾳ ἐκείνῃ.",
+        "VUL": "Itaque cum avertisset humerum suum ut abiret a Samuele, immutavit ei Deus cor aliud, et venerunt omnia signa hæc in die illa.",
+        "SYN": "Как скоро Саул обратился, чтоб идти от Самуила, Бог дал ему иное сердце, и сбылись все те знамения в тот же день.",
+        "NEO": "Dès que Saül eut tourné le dos pour se séparer de Samuel, Dieu lui donna un autre cœur, et tous ces signes s’accomplirent le même jour.",
+        "NAB": "As Saul turned to leave Samuel, God gave him another heart. That very day all these signs came to pass. . . .",
+        "VAT_ES": "Apenas Saúl se dio vuelta para alejarse de Samuel, Dios le cambió el corazón, y aquel mismo día se cumplieron las señales.",
+        "CEI": "Ed ecco, quando quegli ebbe voltato le spalle per partire da Samuele, Dio gli mutò il cuore e tutti questi segni si verificarono il giorno stesso."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֤אוּ שָׁם֙ הַ/גִּבְעָ֔תָ/ה וְ/הִנֵּ֥ה חֶֽבֶל נְבִאִ֖ים לִ/קְרָאת֑/וֹ וַ/תִּצְלַ֤ח עָלָי/ו֙ ר֣וּחַ אֱלֹהִ֔ים וַ/יִּתְנַבֵּ֖א בְּ/תוֹכָֽ/ם׃",
+        "LXX": "καὶ ἔρχεται ἐκεῖθεν εἰς τὸν βουνόν, καὶ ἰδοὺ χορὸς προφητῶν ἐξ ἐναντίας αὐτοῦ· καὶ ἥλατο ἐπ’ αὐτὸν πνεῦμα θεοῦ καὶ ἐπροφήτευσεν ἐν μέσῳ αὐτῶν.",
+        "VUL": "Veneruntque ad prædictum collem, et ecce cuneus prophetarum obvius ei : et insiluit super eum spiritus Domini, et prophetavit in medio eorum.",
+        "SYN": "Когда пришли они к холму, вот встречается им сонм пророков, и сошел на него Дух Божий, и он пророчествовал среди них.",
+        "NEO": "Quand ils arrivèrent à Gabaa, voici qu’une troupe de prophètes vint à sa rencontre ; et l’Esprit de Dieu le saisit, et il prophétisa au milieu d’eux.",
+        "NAB": "When they were going from there to Gibeah, a band of prophets met him, and the spirit of God rushed upon him, so that he joined them in their prophetic state.",
+        "VAT_ES": "Desde allí, se dirigieron a Guibeá, y se encontraron con un grupo de profetas. Entonces lo invadió el espíritu de Dios y entró en trance en medio de ellos.",
+        "CEI": "I due arrivarono là a Gàbaa ed ecco, mentre una schiera di profeti avanzava di fronte a loro, lo spirito di Dio lo investì e si mise a fare il profeta in mezzo a loro."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י כָּל יֽוֹדְע/וֹ֙ מֵ/אִתְּמ֣וֹל שִׁלְשׁ֔וֹם וַ/יִּרְא֕וּ וְ/הִנֵּ֥ה עִם נְבִאִ֖ים נִבָּ֑א וַ/יֹּ֨אמֶר הָ/עָ֜ם אִ֣ישׁ אֶל רֵעֵ֗/הוּ מַה זֶּה֙ הָיָ֣ה לְ/בֶן קִ֔ישׁ הֲ/גַ֥ם שָׁא֖וּל בַּ/נְּבִיאִֽים׃",
+        "LXX": "καὶ ἐγενήθησαν πάντες οἱ εἰδότες αὐτὸν ἐχθὲς καὶ τρίτην καὶ εἶδον, καὶ ἰδοὺ αὐτὸς ἐν μέσῳ τῶν προφητῶν· καὶ εἶπεν ὁ λαὸς ἕκαστος πρὸς τὸν πλησίον αὐτοῦ Τί τοῦτο τὸ γεγονὸς τῷ υἱῷ Κείς; ἢ καὶ Σαοὺλ ἐν προφήταις;",
+        "VUL": "Videntes autem omnes qui noverant eum heri et nudiustertius quod esset cum prophetis, et prophetaret, dixerunt ad invicem : Quænam res accidit filio Cis ? num et Saul inter prophetas ?",
+        "SYN": "Все знавшие его вчера и третьего дня, увидев, что он с пророками пророчествует, говорили в народе друг другу: что это сталось с сыном Кисовым? неужели и Саул во пророках?",
+        "NEO": "Quand tous ceux qui le connaissaient auparavant virent qu’il prophétisait avec les prophètes, tous ces gens se dirent l’un à l’autre : « Qu’est-il arrivé au fils de Cis ? Saül est-il donc aussi parmi les prophètes ? »",
+        "NAB": "When all who had known him previously saw him in a prophetic state among the prophets, they said to one another, \"What has happened to the son of Kish? Is Saul also among the prophets?\"",
+        "VAT_ES": "Todos los que lo conocían de antes, al verlo en trance en medio de los profetas, se decían unos a otros: «&iquest;Qué le ha sucedido al hijo de Quis? &iquest;También Saúl está entre los profetas?».",
+        "CEI": "Allora quanti lo avevano conosciuto prima, vedendolo d'un tratto fare il profeta con i profeti, si dissero l'un l'altro fra la gente: \"Che è accaduto al figlio di Kis? È dunque anche Saul tra i profeti?\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַן אִ֥ישׁ מִ/שָּׁ֛ם וַ/יֹּ֖אמֶר וּ/מִ֣י אֲבִי/הֶ֑ם עַל כֵּן֙ הָיְתָ֣ה לְ/מָשָׁ֔ל הֲ/גַ֥ם שָׁא֖וּל בַּ/נְּבִאִֽים׃",
+        "LXX": "καὶ ἀπεκρίθη τις αὐτῶν καὶ εἶπεν Καὶ τίς πατὴρ αὐτοῦ; διὰ τοῦτο ἐγενήθη εἰς παραβολήν Ἢ καὶ Σαοὺλ ἐν προφήταις;",
+        "VUL": "Responditque alius ad alterum, dicens : Et quis pater eorum ? Propterea versum est in proverbium : Num et Saul inter prophetas ?",
+        "SYN": "И отвечал один из бывших там и сказал: а у тех кто отец? Посему вошло в пословицу: \"неужели и Саул во пророках?\"",
+        "NEO": "Quelqu’un de la foule prit la parole et dit : « Et qui est leur père ? » — C’est pourquoi cela est passé en proverbe : « Saül est-il aussi parmi les prophètes ? » —",
+        "NAB": "And someone from that district added, \"And who is their father?\" Thus the proverb arose, \"Is Saul also among the prophets?\"",
+        "VAT_ES": "Uno de los presentes intervino, diciendo: «&iquest;Quién es el padre de estos?». Así se hizo proverbial la frase: «&iquest;También Saúl está entre los profetas?».",
+        "CEI": "Uno del luogo disse: \"E chi è il loro padre?\". Per questo passò in proverbio l'espressione: \"È dunque anche Saul tra i profeti?\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יְכַל֙ מֵֽ/הִתְנַבּ֔וֹת וַ/יָּבֹ֖א הַ/בָּמָֽה׃",
+        "LXX": "καὶ συνετέλεσεν προφητεύων, καὶ ἔρχεται εἰς τὸν βουνόν.",
+        "VUL": "Cessavit autem prophetare, et venit ad excelsum.",
+        "SYN": "И перестал он пророчествовать, и пошел на высоту.",
+        "NEO": "Lorsqu’il eut cessé de prophétiser, il se rendit en haut lieu.",
+        "NAB": "When he came out of the prophetic state, he went home.",
+        "VAT_ES": "Cuando salió de su trance profético, Saúl regresó a su casa.",
+        "CEI": "Quando ebbe terminato di profetare andò sull'altura."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֩ דּ֨וֹד שָׁא֥וּל אֵלָ֛י/ו וְ/אֶֽל נַעֲר֖/וֹ אָ֣ן הֲלַכְתֶּ֑ם וַ/יֹּ֕אמֶר לְ/בַקֵּשׁ֙ אֶת הָ֣/אֲתֹנ֔וֹת וַ/נִּרְאֶ֣ה כִי אַ֔יִן וַ/נָּב֖וֹא אֶל שְׁמוּאֵֽל׃",
+        "LXX": "Καὶ εἶπεν ὁ οἰκεῖος αὐτοῦ πρὸς αὐτὸν καὶ πρὸς τὸ παιδάριον αὐτοῦ Ποῦ ἐπορεύθητε; καὶ εἶπαν Ζητεῖν τὰς ὄνους· καὶ εἴδαμεν ὅτι οὐκ εἰσίν, καὶ εἰσήλθομεν πρὸς Σαμουήλ.",
+        "VUL": "Dixitque patruus Saul ad eum, et ad puerum ejus : Quo abistis ? Qui responderunt : Quærere asinas : quas cum non reperissemus, venimus ad Samuelem.",
+        "SYN": "И сказал дядя Саулов ему и слуге его: куда вы ходили? Он сказал: искать ослиц, но, видя, что _их_ нет, зашли к Самуилу.",
+        "NEO": "L’oncle de Saül dit à Saül et à son serviteur : « Où êtes-vous allés ? » Saül répondit : « Chercher les ânesses ; mais ne les ayant vues nulle part, nous sommes allés vers Samuel. »",
+        "NAB": "Saul's uncle inquired of him and his servant, \"Where have you been?\" Saul replied, \"To look for the asses. When we could not find them, we went to Samuel.\"",
+        "VAT_ES": "Su tío les preguntó a él y a su servidor» «&iquest;A dónde fueron?». «A buscar las asnas, respondió; pero como no aparecían por ninguna parte, acudimos a Samuel».",
+        "CEI": "Lo zio di Saul chiese poi a lui e al suo servo: \"Dove siete andati?\". Rispose: \"A cercare le asine e, vedendo che non c'erano, ci siamo recati da Samuele\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֖אמֶר דּ֣וֹד שָׁא֑וּל הַגִּֽידָ/ה נָּ֣א לִ֔/י מָֽה אָמַ֥ר לָ/כֶ֖ם שְׁמוּאֵֽל׃",
+        "LXX": "καὶ εἶπεν ὁ οἰκεῖος πρὸς Σαούλ Ἀπάγγειλον δή μοι τί εἶπέν σοι Σαμουήλ.",
+        "VUL": "Et dixit ei patruus suus : Indica mihi quid dixerit tibi Samuel.",
+        "SYN": "И сказал дядя Саулов: расскажи мне, что сказал вам Самуил.",
+        "NEO": "L’oncle de Saül dit : « Raconte-moi ce que vous a dit Samuel. »",
+        "NAB": "Then Saul's uncle said, \"Tell me, then, what Samuel said to you.\"",
+        "VAT_ES": "El tío de Saúl dijo: «Cuéntame lo que les dijo Samuel».",
+        "CEI": "Lo zio di Saul soggiunse: \"Suvvia, raccontami quello che vi ha detto Samuele\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר שָׁאוּל֙ אֶל דּוֹד֔/וֹ הַגֵּ֤ד הִגִּיד֙ לָ֔/נוּ כִּ֥י נִמְצְא֖וּ הָ/אֲתֹנ֑וֹת וְ/אֶת דְּבַ֤ר הַ/מְּלוּכָה֙ לֹֽא הִגִּ֣יד ל֔/וֹ אֲשֶׁ֖ר אָמַ֥ר שְׁמוּאֵֽל׃",
+        "LXX": "καὶ εἶπεν Σαοὺλ πρὸς τὸν οἰκεῖον αὐτοῦ Ἀπήγγειλεν ἀπαγγέλλων μοι ὅτι εὕρηνται αἱ ὄνοι· τὸ δὲ ῥῆμα τῆς βασιλείας οὐκ ἀπήγγειλεν αὐτῷ.",
+        "VUL": "Et ait Saul ad patruum suum : Indicavit nobis quia inventæ essent asinæ. De sermone autem regni non indicavit ei quem locutus fuerat ei Samuel.",
+        "SYN": "И сказал Саул дяде своему: он объявил нам, что ослицы нашлись. А того, что сказал ему Самуил о царстве, не открыл ему.",
+        "NEO": "Et Saül répondit à son oncle : « Il nous a appris que les ânesses étaient retrouvées. » Mais quant à l’affaire de la royauté, il ne lui rapporta pas ce qu’avait dit Samuel.",
+        "NAB": "Saul said to his uncle, \"He assured us that the asses had been found.\" But he mentioned nothing to him of what Samuel had said about the kingship.",
+        "VAT_ES": "Saúl respondió a su tío: «Nos dijo solamente que las asnas habían sido halladas». Pero no le contó nada de lo que había dicho Samuel sobre el asunto del reino.",
+        "CEI": "Saul rispose allo zio: \"Ci ha assicurato che le asine erano state ritrovate\". Ma non gli riferì il discorso del regno, che gli aveva tenuto Samuele."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יַּצְעֵ֤ק שְׁמוּאֵל֙ אֶת הָ/עָ֔ם אֶל יְהוָ֖ה הַ/מִּצְפָּֽה׃",
+        "LXX": "Καὶ παρήγγειλεν Σαμουὴλ παντὶ τῷ λαῷ πρὸς Κύριον εἰς Μασσηφά,",
+        "VUL": "Et convocavit Samuel populum ad Dominum in Maspha :",
+        "SYN": "И созвал Самуил народ к Господу в Массифу",
+        "NEO": "Samuel convoqua le peuple devant \\+w Yahweh|strong=\"H3068\"\\+w** à Maspha,",
+        "NAB": "Samuel called the people together to the LORD at Mizpah",
+        "VAT_ES": "Samuel convocó a todo el pueblo delante del Señor en Mispá,",
+        "CEI": "Samuele radunò il popolo davanti a Dio in Mizpa"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֶל בְּנֵ֣י יִשְׂרָאֵ֗ל כֹּֽה אָמַ֤ר יְהוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל אָנֹכִ֛י הֶעֱלֵ֥יתִי אֶת יִשְׂרָאֵ֖ל מִ/מִּצְרָ֑יִם וָ/אַצִּ֤יל אֶתְ/כֶם֙ מִ/יַּ֣ד מִצְרַ֔יִם וּ/מִ/יַּד֙ כָּל הַ/מַּמְלָכ֔וֹת הַ/לֹּחֲצִ֖ים אֶתְ/כֶֽם׃",
+        "LXX": "καὶ εἶπεν πρὸς υἱοὺς Ἰσραήλ Τάδε εἶπεν Κύριος ὁ θεὸς Ἰσραὴλ λέγων Ἐγὼ ἀνήγαγον τοὺς υἱοὺς Ἰσραὴλ ἐξ Αἰγύπτου, καὶ ἐξειλάμην ὑμᾶς ἐκ χειρὸς Φαραὼ βασιλέως Αἰγύπτου καὶ ἐκ πασῶν τῶν βασιλειῶν τῶν θλιβουσῶν ὑμᾶς.",
+        "VUL": "et ait ad filios Israël : Hæc dicit Dominus Deus Israël : Ego eduxi Israël de Ægypto, et erui vos de manu Ægyptiorum, et de manu omnium regum qui affligebant vos.",
+        "SYN": "и сказал сынам Израилевым: так говорит Господь Бог Израилев: Я вывел Израиля из Египта и избавил вас от руки Египтян и от руки всех царств, угнетавших вас.",
+        "NEO": "et il dit aux enfants d’Israël : « Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël : J’ai fait monter Israël d’Égypte, et je vous ai délivrés de la main des Egyptiens et de la main de tous les royaumes qui vous opprimaient.",
+        "NAB": "and addressed the Israelites: \"Thus says the LORD, the God of Israel, 'It was I who brought Israel up from Egypt and delivered you from the power of the Egyptians and from the power of all the kingdoms that oppressed you.'",
+        "VAT_ES": "y dijo a los israelitas: «Así habla el Señor, el Dios de Israel: Yo hice subir a Israel de Egipto, y los libré a ustedes de la mano de los egipcios y de la mano de todos los reinos que los oprimían.",
+        "CEI": "e disse a tutti gli Israeliti: \"Dice il Signore Dio d'Israele: Io ho fatto uscire Israele dall'Egitto e l'ho liberato dalla mano degli Egiziani e dalla mano di tutti i regni che vi opprimevano."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/אַתֶּ֨ם הַ/יּ֜וֹם מְאַסְתֶּ֣ם אֶת אֱלֹהֵי/כֶ֗ם אֲשֶׁר ה֣וּא מוֹשִׁ֣יעַ לָ/כֶם֮ מִ/כָּל רָעוֹתֵי/כֶ֣ם וְ/צָרֹֽתֵי/כֶם֒ וַ/תֹּ֣אמְרוּ ל֔/וֹ כִּי מֶ֖לֶךְ תָּשִׂ֣ים עָלֵ֑י/נוּ וְ/עַתָּ֗ה הִֽתְיַצְּבוּ֙ לִ/פְנֵ֣י יְהוָ֔ה לְ/שִׁבְטֵי/כֶ֖ם וּ/לְ/אַלְפֵי/כֶֽם׃",
+        "LXX": "καὶ ὑμεῖς σήμερον ἐξουθενήκατε τὸν θεόν, ὃς αὐτός ἐστιν ὑμῶν σωτὴρ ἐκ πάντων τῶν κακῶν ὑμῶν καὶ θλίψεων ὑμῶν, καὶ εἴπατε Οὐχί, ἀλλ’ ἢ ὅτι βασιλέα στήσεις ἐφ’ ἡμῶν. καὶ νῦν κατάστητε ἐνώπιον Κυρίου κατὰ τὰ σκῆπτρα ὑμῶν καὶ κατὰ τὰς φυλὰς ὑμῶν.",
+        "VUL": "Vos autem hodie projecistis Deum vestrum, qui solus salvavit vos de universis malis et tribulationibus vestris : et dixistis : Nequaquam : sed regem constitue super nos. Nunc ergo state coram Domino per tribus vestras, et per familias.",
+        "SYN": "А вы теперь отвергли Бога вашего, Который спасает вас от всех бедствий ваших и скорбей ваших, и сказали Ему: \"царя поставь над нами\". Итак предстаньте теперь пред Господом по коленам вашим и по племенам вашим.",
+        "NEO": "Et vous, aujourd’hui, vous rejetez votre Dieu, qui vous a délivrés de tous vos maux et de toutes vos souffrances, et vous lui dites : Etablis un roi sur nous ! Présentez-vous maintenant devant \\+w Yahweh|strong=\"H3068\"\\+w**, selon vos tribus et selon vos familles. »",
+        "NAB": "But today you have rejected your God, who delivers you from all your evils and calamities, by saying to him, 'Not so, but you must appoint a king over us.' Now, therefore, take your stand before the LORD according to tribes and families.\"",
+        "VAT_ES": "Pero ustedes han rechazado hoy a su Dios, a él, que los libra de todos sus males y angustias, y le han dicho: «&iexcl;No! &iexcl;Tú nos darás un rey!». Por eso preséntense ahora delante del Señor por tribus y por clanes».",
+        "CEI": "Ma voi oggi avete ripudiato il vostro Dio, il quale solo vi salva da tutti i vostri mali e da tutte le angosce. E avete detto: No, costituisci un re sopra di noi! Ora presentatevi a Dio distinti per tribù e per famiglie\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יַּקְרֵ֣ב שְׁמוּאֵ֔ל אֵ֖ת כָּל שִׁבְטֵ֣י יִשְׂרָאֵ֑ל וַ/יִּלָּכֵ֖ד שֵׁ֥בֶט בִּנְיָמִֽן׃",
+        "LXX": "καὶ προσήγαγεν Σαμουὴλ πάντα τὰ σκῆπτρα Ἰσραήλ, καὶ κατακληροῦται σκῆπτρον Βενιαμείν·",
+        "VUL": "Et applicuit Samuel omnes tribus Israël, et cecidit sors tribus Benjamin.",
+        "SYN": "И велел Самуил подходить всем коленам Израилевым, и указано колено Вениаминово.",
+        "NEO": "Samuel fit approcher toutes les tribus d’Israël, et la tribu de Benjamin fut désignée par le sort.",
+        "NAB": "So Samuel had all the tribes of Israel come forward, and the tribe of Benjamin was chosen.",
+        "VAT_ES": "Samuel hizo que se acercaran todas las tribus de Israel, y la suerte cayó sobre la tribu de Benjamín.",
+        "CEI": "Samuele fece accostare ogni tribù d'Israele e fu sorteggiata la tribù di Beniamino."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יַּקְרֵ֞ב אֶת שֵׁ֤בֶט בִּנְיָמִן֙ ל/משפחת/ו לְ/מִשְׁפְּחֹתָ֔י/ו וַ/תִּלָּכֵ֖ד מִשְׁפַּ֣חַת הַ/מַּטְרִ֑י וַ/יִּלָּכֵד֙ שָׁא֣וּל בֶּן קִ֔ישׁ וַ/יְבַקְשֻׁ֖/הוּ וְ/לֹ֥א נִמְצָֽא׃",
+        "LXX": "καὶ προσάγει σκῆπτρον Βενιαμεὶν εἰς φυλάς, καὶ κατακληροῦται φυλὴ Ματταρεί· καὶ προσάγουσιν τὴν φυλὴν Ματταρεὶ εἰς ἄνδρας, καὶ κατακληροῦται Σαοὺλ υἱὸς Κείς. καὶ ἐζήτει αὐτόν, καὶ οὐχ εὑρίσκετο.",
+        "VUL": "Et applicuit tribum Benjamin et cognationes ejus, et cecidit cognatio Metri : et pervenit usque ad Saul filium Cis. Quæsierunt ergo eum, et non est inventus.",
+        "SYN": "И велел подходить колену Вениаминову по племенам его, и указано племя Матриево; и приводят племя Матриево по мужам, и назван Саул, сын Кисов; и искали его, и не находили.",
+        "NEO": "Il fit approcher la tribu de Benjamin par familles, et la famille de Métri fut désignée ; puis Saül, fis de Cis fut désigné. On le chercha, mais on ne le trouva point.",
+        "NAB": "Next he had the tribe of Benjamin come forward in clans, and the clan of Matri was chosen, and finally Saul, son of Kish, was chosen. But they looked for him in vain.",
+        "VAT_ES": "Luego hizo que se acercara la tribu de Benjamín por clanes, y la suerte cayó sobre el clan de Matrí. Después hizo que se acercara el clan de Matrí, hombre por hombre, y la suerte cayó sobre Saúl, hijo de Quis. Pero lo buscaron y no lo encontraron.",
+        "CEI": "Fece poi accostare la tribù di Beniamino distinta per famiglie e fu sorteggiata la famiglia di Matri. Fece allora venire la famiglia di Matri per singoli individui e fu sorteggiato Saul figlio di Kis. Si misero a cercarlo ma non si riuscì a trovarlo."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁאֲלוּ עוֹד֙ בַּֽ/יהוָ֔ה הֲ/בָ֥א ע֖וֹד הֲלֹ֣ם אִ֑ישׁ וַ/יֹּ֣אמֶר יְהוָ֔ה הִנֵּה ה֥וּא נֶחְבָּ֖א אֶל הַ/כֵּלִֽים׃",
+        "LXX": "καὶ ἐπηρώτησεν Σαμουὴλ ἔτι ἐν Κυρίῳ Εἰ ἔρχεται ὁ ἀνὴρ ἐνταῦθα; καὶ εἶπεν Κύριος Ἰδοὺ αὐτὸς κέκρυπται ἐν τοῖς σκεύεσιν.",
+        "VUL": "Et consuluerunt post hæc Dominum utrumnam venturus esset illuc. Responditque Dominus : Ecce absconditus est domi.",
+        "SYN": "И вопросили еще Господа: придет ли еще он сюда? И сказал Господь: вот он скрывается в обозе.",
+        "NEO": "Alors ils interrogèrent de nouveau \\+w Yahweh|strong=\"H3068\"\\+w** : « Est-il venu ici encore quelqu’un ? » \\+w Yahweh|strong=\"H3068\"\\+w** répondit : « Voici, il est caché parmi les bagages. »",
+        "NAB": "Again they consulted the LORD, \"Has he come here?\" The LORD answered, \"He is hiding among the baggage.\"",
+        "VAT_ES": "Entonces volvieron a consultar al Señor: «&iquest;Ha venido aquí este hombre?». El Señor respondió: «Está allí, escondido entre los equipajes».",
+        "CEI": "Allora consultarono di nuovo il Signore: \"È venuto qui l'uomo o no?\". Rispose il Signore: \"Eccolo nascosto in mezzo ai bagagli\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יָּרֻ֨צוּ֙ וַ/יִּקָּחֻ֣/הוּ מִ/שָּׁ֔ם וַ/יִּתְיַצֵּ֖ב בְּ/ת֣וֹךְ הָ/עָ֑ם וַ/יִּגְבַּהּ֙ מִ/כָּל הָ/עָ֔ם מִ/שִּׁכְמ֖/וֹ וָ/מָֽעְלָ/ה׃",
+        "LXX": "καὶ ἔδραμεν καὶ λαμβάνει αὐτὸν ἐκεῖθεν, καὶ κατέστησεν ἐν μέσῳ τοῦ λαοῦ· καὶ ὑψώθη ὑπὲρ πάντα τὸν λαὸν ὑπερωμίαν καὶ ἐπάνω.",
+        "VUL": "Cucurrerunt itaque et tulerunt eum inde : stetitque in medio populi, et altior fuit universo populo ab humero et sursum.",
+        "SYN": "И побежали и взяли его оттуда, и он стал среди народа и был от плеч своих выше всего народа.",
+        "NEO": "On courut le tirer de là, et il se tint au milieu du peuple, dépassant tout le peuple de l’épaule et au delà.",
+        "NAB": "They ran to bring him from there; and when he stood among the people, he was head and shoulders above all the crowd.",
+        "VAT_ES": "Fueron corriendo a sacarlo de allí; y cuando se presentó en medio del pueblo, sobresalía por encima de todos, de los hombros para arriba.",
+        "CEI": "Corsero a prenderlo di là e fu presentato al popolo: egli sopravanzava dalla spalla in su tutto il popolo."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר שְׁמוּאֵ֜ל אֶל כָּל הָ/עָ֗ם הַ/רְּאִיתֶם֙ אֲשֶׁ֣ר בָּֽחַר בּ֣/וֹ יְהוָ֔ה כִּ֛י אֵ֥ין כָּמֹ֖/הוּ בְּ/כָל הָ/עָ֑ם וַ/יָּרִ֧עוּ כָל הָ/עָ֛ם וַ/יֹּאמְר֖וּ יְחִ֥י הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ εἶπεν Σαμουὴλ πρὸς πάντα τὸν λαόν Εἰ ἑοράκατε ὃν ἐκλέλεκται ἑαυτῷ Κύριος, ὅτι οὐκ ἔστιν αὐτῷ ὅμοιος ἐν πᾶσιν ὑμῖν; καὶ ἔγνωσαν πᾶς ὁ λαὸς καὶ εἶπαν Ζήτω ὁ βασιλεύς.",
+        "VUL": "Et ait Samuel ad omnem populum : Certe videtis quem elegit Dominus, quoniam non sit similis illi in omni populo. Et clamavit omnis populus, et ait : Vivat rex.",
+        "SYN": "И сказал Самуил всему народу: видите ли, кого избрал Господь? подобного ему нет во всем народе. Тогда весь народ воскликнул и сказал: да живет царь!",
+        "NEO": "Et Samuel dit à tout le peuple : « Voyez-vous celui que \\+w Yahweh|strong=\"H3068\"\\+w** a choisi ? Il n’y a personne dans tout le peuple qui soit semblable à lui. » Et tout le peuple poussa des cris en disant : « Vive le roi ! »",
+        "NAB": "Samuel said to all the people, \"Do you see the man whom the LORD has chosen? There is none like him among all the people!\" Then all the people shouted, \"Long live the king!\"",
+        "VAT_ES": "Samuel dijo a todo el pueblo: «&iquest;Vieron al que ha elegido el Señor? No hay nadie como él en todo el pueblo». Y todo el pueblo lanzó una ovación, gritando: «&iexcl;Viva el rey!».",
+        "CEI": "Samuele disse a tutta la folla: \"Vedete dunque che l'ha proprio eletto il Signore, perché non c'è nessuno in tutto il popolo come lui\". Tutto il popolo proruppe in un grido: \"Viva il re!\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֨ר שְׁמוּאֵ֜ל אֶל הָ/עָ֗ם אֵ֚ת מִשְׁפַּ֣ט הַ/מְּלֻכָ֔ה וַ/יִּכְתֹּ֣ב בַּ/סֵּ֔פֶר וַ/יַּנַּ֖ח לִ/פְנֵ֣י יְהוָ֑ה וַ/יְשַׁלַּ֧ח שְׁמוּאֵ֛ל אֶת כָּל הָ/עָ֖ם אִ֥ישׁ לְ/בֵיתֽ/וֹ׃",
+        "LXX": "Καὶ εἶπεν Σαμουὴλ πρὸς τὸν λαὸν τὸ δικαίωμα τοῦ βασιλέως, καὶ ἔγραψεν ἐν βιβλίῳ καὶ ἔθηκεν ἐνώπιον Κυρίου· καὶ ἐξαπέστειλεν Σαμουὴλ πάντα τὸν λαόν, καὶ ἀπῆλθεν ἕκαστος εἰς τὸν τόπον αὐτοῦ.",
+        "VUL": "Locutus est autem Samuel ad populum legem regni, et scripsit in libro, et reposuit coram Domino : et dimisit Samuel omnem populum, singulos in domum suam.",
+        "SYN": "И изложил Самуил народу права царства, и написал в книгу, и положил пред Господом. И отпустил весь народ, каждого в дом свой.",
+        "NEO": "Alors Samuel exposa au peuple le droit de la royauté, et il l’écrivit dans le livre, qu’il déposa devant \\+w Yahweh|strong=\"H3068\"\\+w** ; puis il renvoya tout le peuple, chacun dans sa maison.",
+        "NAB": "Samuel next explained to the people the law of royalty and wrote it in a book, which he placed in the presence of the LORD. This done, Samuel dismissed the people, each to his own place.",
+        "VAT_ES": "Samuel expuso al pueblo el derecho de la realeza, y lo escribió en un libro que depositó delante del Señor. Luego Samuel despidió a todo el pueblo, y se fue cada uno a su casa.",
+        "CEI": "Samuele espose a tutto il popolo i diritti del regno e li scrisse in un libro che depositò davanti al Signore. Poi Samuele congedò tutto il popolo perché andasse ognuno a casa sua."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/גַ֨ם שָׁא֔וּל הָלַ֥ךְ לְ/בֵית֖/וֹ גִּבְעָ֑תָ/ה וַ/יֵּלְכ֣וּ עִמּ֔/וֹ הַ/חַ֕יִל אֲשֶׁר נָגַ֥ע אֱלֹהִ֖ים בְּ/לִבָּֽ/ם׃",
+        "LXX": "καὶ Σαοὺλ ἀπῆλθεν εἰς τὸν οἶκον αὐτοῦ εἰς Γαβαά· καὶ ἐπορεύθησαν υἱοὶ δυνάμεων ὧν ἥψατο Κύριος καρδίας αὐτῶν μετὰ Σαούλ.",
+        "VUL": "Sed et Saul abiit in domum suam in Gabaa : et abiit cum eo pars exercitus, quorum tetigerat Deus corda.",
+        "SYN": "Также и Саул пошел в дом свой, в Гиву; и пошли с ним храбрые, которых сердца коснулся Бог.",
+        "NEO": "Saül aussi s’en alla dans sa maison à Gabaa, accompagné d’hommes de valeur, dont Dieu avait touché le cœur.",
+        "NAB": "Saul also went home to Gibeah, accompanied by warriors whose hearts the LORD had touched.",
+        "VAT_ES": "También Saúl se fue a su casa, a Guibeá, y lo acompañaron los valientes a quienes Dios había tocado el corazón.",
+        "CEI": "Anche Saul tornò a casa in Gàbaa e con lui si accompagnarono uomini valenti ai quali Dio aveva toccato il cuore."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֧י בְלִיַּ֣עַל אָמְר֗וּ מַה יֹּשִׁעֵ֨/נוּ֙ זֶ֔ה וַ/יִּבְזֻ֕/הוּ וְ/לֹֽא הֵבִ֥יאוּ ל֖/וֹ מִנְחָ֑ה וַ/יְהִ֖י כְּ/מַחֲרִֽישׁ׃",
+        "LXX": "καὶ υἱοὶ λοιμοὶ εἶπαν Τίς σώσει ἡμᾶς οὗτος; καὶ ἠτίμασαν αὐτόν, καὶ οὐκ ἤνεγκαν αὐτῷ δῶρα.",
+        "VUL": "Filii vero Belial dixerunt : Num salvare nos poterit iste ? Et despexerunt eum, et non attulerunt ei munera : ille vero dissimulabat se audire.",
+        "SYN": "А негодные люди говорили: ему ли спасать нас? И презрели его и не поднесли ему даров; но он как бы не замечал того.",
+        "NEO": "Toutefois les hommes de Bélial disaient : « Est-ce celui-là qui nous sauvera ? » Et ils le méprisèrent et ne lui apportèrent pas de présents. Mais Saül n’y prit pas garde.",
+        "NAB": "But certain worthless men said, \"How can this fellow save us?\" They despised him and brought him no present.",
+        "VAT_ES": "Pero algunos hombres ruines dijeron: «&iexcl;Qué va a salvarnos este!». Así lo despreciaron y no le ofrecieron ningún presente.",
+        "CEI": "Ma altri, individui spregevoli, dissero: \"Potrà forse salvarci costui?\". Così lo disprezzarono e non vollero portargli alcun dono."
+      }
+    }
+  }
+}

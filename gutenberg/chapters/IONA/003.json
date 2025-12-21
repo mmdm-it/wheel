@@ -1,0 +1,194 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IONA_003",
+  "book_key": "IONA",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֧י דְבַר יְהוָ֛ה אֶל יוֹנָ֖ה שֵׁנִ֥ית לֵ/אמֹֽר׃",
+        "VUL": "Et factum est verbum Domini ad Jonam secundo, dicens :",
+        "SYN": "И было слово Господне к Ионе вторично:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** fut adressée une seconde fois à Jonas, en ces termes :",
+        "NAB": "The word of the LORD came to Jonah a second time:",
+        "VAT_ES": "La palabra del Señor fue dirigida por segunda vez a Jonás, en estos términos:",
+        "CEI": "Fu rivolta a Giona una seconda volta questa parola del Signore:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "ק֛וּם לֵ֥ךְ אֶל נִֽינְוֵ֖ה הָ/עִ֣יר הַ/גְּדוֹלָ֑ה וִּ/קְרָ֤א אֵלֶ֨י/הָ֙ אֶת הַ/קְּרִיאָ֔ה אֲשֶׁ֥ר אָנֹכִ֖י דֹּבֵ֥ר אֵלֶֽי/ךָ׃",
+        "VUL": "Surge, et vade in Niniven, civitatem magnam, et prædica in ea prædicationem quam ego loquor ad te.",
+        "SYN": "встань, иди в Ниневию, город великий, и проповедуй в ней, что Я повелел тебе.",
+        "NEO": "« Lève-toi, va à Ninive, la grande ville, et prêche-lui la prédication que je te dirai. »",
+        "NAB": "\"Set out for the great city of Nineveh, and announce to it the message that I will tell you.\"",
+        "VAT_ES": "«Parte ahora mismo para Nínive, la gran ciudad, y anúnciale el mensaje que yo te indicaré».",
+        "CEI": "\"Alzati, và a Ninive la grande città e annunzia loro quanto ti dirò\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣קָם יוֹנָ֗ה וַ/יֵּ֛לֶךְ אֶל נִֽינְוֶ֖ה כִּ/דְבַ֣ר יְהוָ֑ה וְ/נִֽינְוֵ֗ה הָיְתָ֤ה עִיר גְּדוֹלָה֙ לֵֽ/אלֹהִ֔ים מַהֲלַ֖ךְ שְׁלֹ֥שֶׁת יָמִֽים׃",
+        "VUL": "Et surrexit Jonas, et abiit in Niniven juxta verbum Domini : et Ninive erat civitas magna, itinere trium dierum.",
+        "SYN": "И встал Иона и пошел в Ниневию, по слову Господню; Ниневия же была город великий у Бога, на три дня ходьбы.",
+        "NEO": "Et Jonas se leva et alla à Ninive, selon la parole de \\+w Yahweh|strong=\"H3068\"\\+w**. Or Ninive était une ville grande devant Dieu, de trois journées de marche.",
+        "NAB": "So Jonah made ready and went to Nineveh, according to the LORD'S bidding. Now Nineveh was an enormously large city; it took three days to go through it.",
+        "VAT_ES": "Jonás partió para Nínive, conforme a la palabra del Señor. Nínive era una ciudad enormemente grande: se necesitaban tres días para recorrerla.",
+        "CEI": "Giona si alzò e andò a Ninive secondo la parola del Signore. Ninive era una città molto grande, di tre giornate di cammino."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יָּ֤חֶל יוֹנָה֙ לָ/ב֣וֹא בָ/עִ֔יר מַהֲלַ֖ךְ י֣וֹם אֶחָ֑ד וַ/יִּקְרָא֙ וַ/יֹּאמַ֔ר ע֚וֹד אַרְבָּעִ֣ים י֔וֹם וְ/נִֽינְוֵ֖ה נֶהְפָּֽכֶת׃",
+        "VUL": "Et cpit Jonas introire in civitatem itinere diei unius : et clamavit, et dixit : Adhuc quadraginta dies, et Ninive subvertetur.",
+        "SYN": "И начал Иона ходить по городу, сколько можно пройти в один день, и проповедывал, говоря: еще сорок дней и Ниневия будет разрушена!",
+        "NEO": "Jonas commença à pénétrer dans la ville la marche d’une journée ; et il prêcha et dit : « Encore quarante jours et Ninive sera détruite !... »",
+        "NAB": "Jonah began his journey through the city, and had gone but a single day's walk announcing, \"Forty days more and Nineveh shall be destroyed,\"",
+        "VAT_ES": "Jonás comenzó a internarse en la ciudad y caminó durante todo un día, proclamando: «Dentro de cuarenta días, Nínive será destruida».",
+        "CEI": "Giona cominciò a percorrere la città, per un giorno di cammino e predicava: \"Ancora quaranta giorni e Ninive sarà distrutta\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַֽ/יַּאֲמִ֛ינוּ אַנְשֵׁ֥י נִֽינְוֵ֖ה בֵּֽ/אלֹהִ֑ים וַ/יִּקְרְאוּ צוֹם֙ וַ/יִּלְבְּשׁ֣וּ שַׂקִּ֔ים מִ/גְּדוֹלָ֖/ם וְ/עַד קְטַנָּֽ/ם׃",
+        "VUL": "Et crediderunt viri Ninivitæ in Deum, et prædicaverunt jejunium, et vestiti sunt saccis, a majore usque ad minorem.",
+        "SYN": "И поверили Ниневитяне Богу, и объявили пост, и оделись во вретища, от большого из них до малого.",
+        "NEO": "Les gens de Ninive crurent en Dieu ; ils publièrent un jeûne et se revêtirent de sacs, depuis le plus grand jusqu’au plus petit.",
+        "NAB": "when the people of Nineveh believed God; they proclaimed a fast and all of them, great and small, put on sackcloth.",
+        "VAT_ES": "Los ninivitas creyeron en Dios, decretaron un ayuno y se vistieron con ropa de penitencia, desde el más grande hasta el más pequeño.",
+        "CEI": "I cittadini di Ninive credettero a Dio e bandirono un digiuno, vestirono il sacco, dal più grande al più piccolo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּגַּ֤ע הַ/דָּבָר֙ אֶל מֶ֣לֶך נִֽינְוֵ֔ה וַ/יָּ֨קָם֙ מִ/כִּסְא֔/וֹ וַ/יַּעֲבֵ֥ר אַדַּרְתּ֖/וֹ מֵֽ/עָלָ֑י/ו וַ/יְכַ֣ס שַׂ֔ק וַ/יֵּ֖שֶׁב עַל הָ/אֵֽפֶר׃",
+        "VUL": "Et pervenit verbum ad regem Ninive : et surrexit de solio suo, et abjecit vestimentum suum a se, et indutus est sacco, et sedit in cinere.",
+        "SYN": "Это слово дошло до царя Ниневии, и он встал с престола своего, и снял с себя царское облачение свое, и оделся во вретище, и сел на пепле,",
+        "NEO": "La chose étant parvenue au roi de Ninive, il se leva de son trône, ôta son manteau, se couvrit d’un sac et s’assît sur la cendre.",
+        "NAB": "When the news reached the king of Nineveh, he rose from his throne, laid aside his robe, covered himself with sackcloth, and sat in the ashes.",
+        "VAT_ES": "Cuando la noticia llegó al rey de Nínive, este se levantó de su trono, se quitó su vestidura real, se vistió con ropa de penitencia y se sentó sobre ceniza.",
+        "CEI": "Giunta la notizia fino al re di Ninive, egli si alzò dal trono, si tolse il manto, si coprì di sacco e si mise a sedere sulla cenere."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יַּזְעֵ֗ק וַ/יֹּ֨אמֶר֙ בְּ/נִֽינְוֵ֔ה מִ/טַּ֧עַם הַ/מֶּ֛לֶךְ וּ/גְדֹלָ֖י/ו לֵ/אמֹ֑ר הָ/אָדָ֨ם וְ/הַ/בְּהֵמָ֜ה הַ/בָּקָ֣ר וְ/הַ/צֹּ֗אן אַֽל יִטְעֲמוּ֙ מְא֔וּמָה אַ֨ל יִרְע֔וּ וּ/מַ֖יִם אַל יִשְׁתּֽוּ׃",
+        "VUL": "Et clamavit, et dixit in Ninive ex ore regis et principum ejus, dicens : Homines, et jumenta, et boves, et pecora non gustent quidquam : nec pascantur, et aquam non bibant.",
+        "SYN": "и повелел провозгласить и сказать в Ниневии от имени царя и вельмож его: \"чтобы ни люди, ни скот, ни волы, ни овцы ничего не ели, не ходили на пастбище и воды не пили,",
+        "NEO": "Et on cria dans Ninive et on dit, par décret du roi et de ses grands, ces paroles : « Que ni hommes ni bêtes, bœufs et brebis, ne goûtent rien, ne paissent pas et ne boivent pas d’eau ;",
+        "NAB": "Then he had this proclaimed throughout Nineveh, by decree of the king and his nobles: \"Neither man nor beast, neither cattle nor sheep, shall taste anything; they shall not eat, nor shall they drink water.",
+        "VAT_ES": "Además, mandó proclamar en Nínive el siguiente anuncio: «Por decreto del rey y de sus funcionarios, ningún hombre ni animal, ni el ganado mayor ni el menor, deberán probar bocado: no pasten ni beban agua;",
+        "CEI": "Poi fu proclamato in Ninive questo decreto, per ordine del re e dei suoi grandi: \"Uomini e animali, grandi e piccoli, non gustino nulla, non pascolino, non bevano acqua."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/יִתְכַּסּ֣וּ שַׂקִּ֗ים הָֽ/אָדָם֙ וְ/הַ/בְּהֵמָ֔ה וְ/יִקְרְא֥וּ אֶל אֱלֹהִ֖ים בְּ/חָזְקָ֑ה וְ/יָשֻׁ֗בוּ אִ֚ישׁ מִ/דַּרְכּ֣/וֹ הָֽ/רָעָ֔ה וּ/מִן הֶ/חָמָ֖ס אֲשֶׁ֥ר בְּ/כַפֵּי/הֶֽם׃",
+        "VUL": "Et operiantur saccis homines et jumenta, et clament ad Dominum in fortitudine : et convertatur vir a via sua mala, et ab iniquitate quæ est in manibus eorum.",
+        "SYN": "и чтобы покрыты были вретищем люди и скот и крепко вопияли к Богу, и чтобы каждый обратился от злого пути своего и от насилия рук своих.",
+        "NEO": "qu’ils se couvrent de sacs, hommes et bêtes, qu’ils crient à Dieu avec force, et qu’ils se détournent chacun de sa mauvaise voie et des actions* de violence que commettent ses mains+ 3:8 \\+it Que commettent ses mains\\+it* ; m. à m. \\+it qui sont dans leurs mains\\+it*.* !",
+        "NAB": "Man and beast shall be covered with sackcloth and call loudly to God; every man shall turn from his evil way and from the violence he has in hand.",
+        "VAT_ES": "vístanse con ropa de penitencia hombres y animales; clamen a Dios con todas sus fuerzas y conviértase cada uno de su mala conducta y de la violencia que hay en sus manos.",
+        "CEI": "Uomini e bestie si coprano di sacco e si invochi Dio con tutte le forze; ognuno si converta dalla sua condotta malvagia e dalla violenza che è nelle sue mani."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "מִֽי יוֹדֵ֣עַ יָשׁ֔וּב וְ/נִחַ֖ם הָ/אֱלֹהִ֑ים וְ/שָׁ֛ב מֵ/חֲר֥וֹן אַפּ֖/וֹ וְ/לֹ֥א נֹאבֵֽד׃",
+        "VUL": "Quis scit si convertatur et ignoscat Deus, et revertatur a furore iræ suæ, et non peribimus ?",
+        "SYN": "Кто знает, может быть, еще Бог умилосердится и отвратит от нас пылающий гнев Свой, и мы не погибнем\".",
+        "NEO": "Qui sait si Dieu ne viendra pas à se repentir, et s’il ne reviendra pas de l’ardeur de sa colère, en sorte que nous ne périssions pas ? »",
+        "NAB": "Who knows, God may relent and forgive, and withhold his blazing wrath, so that we shall not perish.\"",
+        "VAT_ES": "Tal vez Dios se vuelva atrás y se arrepienta, y aplaque el ardor de su ira, de manera que no perezcamos».",
+        "CEI": "Chi sa che Dio non cambi, si impietosisca, deponga il suo ardente sdegno sì che noi non moriamo?\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤רְא הָֽ/אֱלֹהִים֙ אֶֽת מַ֣עֲשֵׂי/הֶ֔ם כִּי שָׁ֖בוּ מִ/דַּרְכָּ֣/ם הָ/רָעָ֑ה וַ/יִּנָּ֣חֶם הָ/אֱלֹהִ֗ים עַל הָ/רָעָ֛ה אֲשֶׁר דִּבֶּ֥ר לַ/עֲשׂוֹת לָ/הֶ֖ם וְ/לֹ֥א עָשָֽׂה׃",
+        "VUL": "Et vidit Deus opera eorum, quia conversi sunt de via sua mala : et misertus est Deus super malitiam quam locutus fuerat ut faceret eis, et non fecit.",
+        "SYN": "И увидел Бог дела их, что они обратились от злого пути своего, и пожалел Бог о бедствии, о котором сказал, что наведет на них, и не навел.",
+        "NEO": "Dieu vit ce qu’ils faisaient, comment ils se détournaient de leur mauvaise voie ; et Dieu se repentit du mal qu’il avait annoncé qu’il leur ferait ; et il ne le fit pas.+ 3:10 Le but de tout le récit est de montrer que Yahweh est le Dieu non seulement d’Israël, mais de toutes les nations, et de mettre en relief l’appel de toutes les nations au salut. Pour sauver Ninive, Dieu n’a pas hésité à lui envoyé son prophète.*",
+        "NAB": "When God saw by their actions how they turned from their evil way, he repented of the evil that he had threatened to do to them; he did not carry it out.",
+        "VAT_ES": "Al ver todo lo que los ninivitas hacían para convertirse de su mala conducta, Dios se arrepintió de las amenazas que les había hecho y no las cumplió.",
+        "CEI": "Dio vide le loro opere, che cioè si erano convertiti dalla loro condotta malvagia, e Dio si impietosì riguardo al male che aveva minacciato di fare loro e non lo fece."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {}
+    }
+  }
+}

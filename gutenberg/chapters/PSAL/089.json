@@ -1,0 +1,845 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_089",
+  "book_key": "PSAL",
+  "sequence": 89,
+  "chapter_in": {
+    "MT": 89,
+    "VUL": 88,
+    "LXX": 88
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מַ֝שְׂכִּ֗יל לְ/אֵיתָ֥ן הָֽ/אֶזְרָחִֽי׃",
+        "LXX": "Προσευχὴ τοῦ Μωυσῆ ἀνθρώπου τοῦ θεοῦ. Κύριε, καταφυγὴ ἡμῖν ἐγενήθης ἐν γενεᾷ καὶ γενεᾷ·",
+        "VUL": "Oratio Moysi, hominis Dei. [Domine, refugium factus es nobis/ a generatione in generationem./",
+        "SYN": "Молитва Моисея, человека Божия.",
+        "NEO": "Cantique d’Ethan l’Ezrahite.",
+        "NAB": "A maskil of Ethan the Ezrahite.",
+        "CEI": "Maskil. Di Etan l'Ezraita."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "חַֽסְדֵ֣י יְ֭הוָה עוֹלָ֣ם אָשִׁ֑ירָה לְ/דֹ֥ר וָ/דֹ֓ר אוֹדִ֖יעַ אֱמוּנָתְ/ךָ֣ בְּ/פִֽ/י׃",
+        "LXX": "πρὸ τοῦ ὄρη γενηθῆναι καὶ πλασθῆναι τὴν γῆν καὶ τὴν οἰκουμένην, καὶ ἀπὸ τοῦ αἰῶνος ἕως τοῦ αἰῶνος σὺ εἶ.",
+        "VUL": "Priusquam montes fierent,/ aut formaretur terra et orbis,/ a sæculo et usque in sæculum tu es, Deus./",
+        "SYN": "Господи! Ты нам прибежище в род и род.",
+        "NEO": "Je veux chanter à jamais les bontés de \\+w Yahweh|strong=\"H3068\"\\+w** ; à toutes les générations ma bouche fera connaître ta fidélité.",
+        "NAB": "The promises of the LORD I will sing forever, proclaim your loyalty through all ages.",
+        "VAT_ES": "Cantaré eternamente el amor del Señor,",
+        "CEI": "Canterò senza fine le grazie del Signore, con la mia bocca annunzierò la tua fedeltà nei secoli,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כִּֽי אָמַ֗רְתִּי ע֭וֹלָם חֶ֣סֶד יִבָּנֶ֑ה שָׁמַ֓יִם תָּכִ֖ן אֱמוּנָתְ/ךָ֣ בָ/הֶֽם׃",
+        "LXX": "μὴ ἀποστρέψῃς ἄνθρωπον εἰς ταπείνωσιν, καὶ εἶπας Ἐπιστρέψατε υἱοὶ ἀνθρώπων;",
+        "VUL": "Ne avertas hominem in humilitatem :/ et dixisti : Convertimini, filii hominum./",
+        "SYN": "Прежде нежели родились горы, и Ты образовал землю и вселенную, и от века и до века Ты - Бог.",
+        "NEO": "Car je dis : La bonté est un édifice éternel, dans les cieux tu as établi ta fidélité.",
+        "NAB": "For you said, \"My love is established forever; my loyalty will stand as long as the heavens.",
+        "VAT_ES": "Porque tú has dicho: «Mi amor se mantendrá eternamente,",
+        "CEI": "perché hai detto: \"La mia grazia rimane per sempre\"; la tua fedeltà è fondata nei cieli."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כָּרַ֣תִּֽי בְ֭רִית לִ/בְחִירִ֑/י נִ֝שְׁבַּ֗עְתִּי לְ/דָוִ֥ד עַבְדִּֽ/י׃",
+        "LXX": "ὅτι χίλια ἔτη ἐν ὀφθαλμοῖς σου ὡς ἡ ἡμέρα ἡ ἐχθὲς ἥτις διῆλθεν, καὶ φυλακὴ ἐν νυκτί.",
+        "VUL": "Quoniam mille anni ante oculos tuos/ tamquam dies hesterna quæ præteriit :/ et custodia in nocte",
+        "SYN": "Ты возвращаешь человека в тление и говоришь: [возвратитесь, сыны человеческие!]",
+        "NEO": "« J’ai contracté alliance avec mon élu ; j’ai fait ce serment à David, mon serviteur :",
+        "NAB": "I have made a covenant with my chosen one; I have sworn to David my servant:",
+        "VAT_ES": "Yo sellé una alianza con mi elegido,",
+        "CEI": "\"Ho stretto un'alleanza con il mio eletto, ho giurato a Davide mio servo:"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "עַד ע֭וֹלָם אָכִ֣ין זַרְעֶ֑/ךָ וּ/בָנִ֨יתִי לְ/דֹר וָ/ד֖וֹר כִּסְאֲ/ךָ֣ סֶֽלָה׃",
+        "LXX": "τὰ ἐξουδενώματα αὐτῶν ἔτη ἔσονται, τὸ πρωὶ ὡσεὶ χλόη παρέλθοι·",
+        "VUL": "quæ pro nihilo habentur,/ eorum anni erunt./",
+        "SYN": "Ибо пред очами Твоими тысяча лет, как день вчерашний, когда он прошел, и _как_ стража в ночи.",
+        "NEO": "je veux affermir ta race pour toujours, établir ton trône pour toutes les générations. » — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "I will make your dynasty stand forever and establish your throne through all ages.\" Selah",
+        "VAT_ES": "«Estableceré tu descendencia para siempre,",
+        "CEI": "stabilirò per sempre la tua discendenza, ti darò un trono che duri nei secoli\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/י֘וֹד֤וּ שָׁמַ֣יִם פִּלְאֲ/ךָ֣ יְהוָ֑ה אַף אֱ֝מֽוּנָתְ/ךָ֗ בִּ/קְהַ֥ל קְדֹשִֽׁים׃",
+        "LXX": "τὸ πρωὶ ἀνθήσαι καὶ παρέλθοι, τὸ ἑσπέρας ἀποπέσοι, σκληρυνθείη καὶ ξηρανθείη.",
+        "VUL": "Mane sicut herba transeat ;/ mane floreat, et transeat ;/ vespere decidat, induret, et arescat./",
+        "SYN": "Ты _как_ наводнением уносишь их; они - _как_ сон, как трава, которая утром вырастает, утром цветет и зеленеет, вечером подсекается и засыхает;",
+        "NEO": "Les cieux célèbrent tes merveilles, \\+w Yahweh|strong=\"H3068\"\\+w**, et ta fidélité dans l’assemblée des saints.",
+        "NAB": "The heavens praise your marvels, LORD, your loyalty in the assembly of the holy ones.",
+        "VAT_ES": "El cielo celebre tus maravillas, Señor,",
+        "CEI": "I cieli cantano le tue meraviglie, Signore, la tua fedeltà nell'assemblea dei santi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּ֤י מִ֣י בַ֭/שַּׁחַק יַעֲרֹ֣ךְ לַ/יהוָ֑ה יִדְמֶ֥ה לַ֝/יהוָ֗ה בִּ/בְנֵ֥י אֵלִים׃",
+        "LXX": "ὅτι ἐξελίπομεν ἐν τῇ ὀργῇ σου, καὶ ἐν τῷ θυμῷ σου ἐταράχθημεν·",
+        "VUL": "Quia defecimus in ira tua,/ et in furore tuo turbati sumus./",
+        "SYN": "ибо мы исчезаем от гнева Твоего и от ярости Твоей мы в смятении.",
+        "NEO": "Car qui pourrait, dans le ciel, se comparer à \\+w Yahweh|strong=\"H3068\"\\+w** ? Qui est semblable à \\+w Yahweh|strong=\"H3068\"\\+w** parmi les fils de Dieu ?",
+        "NAB": "Who in the skies ranks with the LORD? Who is like the LORD among the gods?",
+        "VAT_ES": "porque &iquest;quién es comparable al Señor en las alturas?",
+        "CEI": "Chi sulle nubi è uguale al Signore, chi è simile al Signore tra gli angeli di Dio?"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אֵ֣ל נַ֭עֲרָץ בְּ/סוֹד קְדֹשִׁ֣ים רַבָּ֑ה וְ֝/נוֹרָ֗א עַל כָּל סְבִיבָֽי/ו׃",
+        "LXX": "ἔθου τὰς ἀνομίας ἡμῶν ἐνώπιόν σου, ὁ αἰὼν ἡμῶν εἰς φωτισμὸν τοῦ προσώπου σου.",
+        "VUL": "Posuisti iniquitates nostras in conspectu tuo ;/ sæculum nostrum in illuminatione vultus tui./",
+        "SYN": "Ты положил беззакония наши пред Тобою и тайное наше пред светом лица Твоего.",
+        "NEO": "Dieu est terrible dans la grande assemblée des saints, il est redoutable pour tous ceux qui l’entourent.",
+        "NAB": "A God dreaded in the council of the holy ones, greater and more awesome than all who sit there!",
+        "VAT_ES": "Dios es temible en el consejo de los santos,",
+        "CEI": "Dio è tremendo nell'assemblea dei santi, grande e terribile tra quanti lo circondano."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "יְהוָ֤ה אֱלֹ֘הֵ֤י צְבָא֗וֹת מִֽי כָֽמ֖וֹ/ךָ חֲסִ֥ין יָ֑הּ וֶ֝/אֱמֽוּנָתְ/ךָ֗ סְבִיבוֹתֶֽי/ךָ׃",
+        "LXX": "ὅτι πᾶσαι αἱ ἡμέραι ἡμῶν ἐξέλιπον, καὶ ἐν τῇ ὀργῇ σου ἐξελίπομεν· τὰ ἔτη ἡμῶν ὡς ἀράχνην ἐμελέτων.",
+        "VUL": "Quoniam omnes dies nostri defecerunt,/ et in ira tua defecimus./ Anni nostri sicut aranea meditabuntur ;/",
+        "SYN": "Все дни наши прошли во гневе Твоем; мы теряем лета наши, как звук.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, Dieu des armées, qui est comme toi ? Tu es puissant, \\+w Yahweh|strong=\"H3068\"\\+w**, et ta fidélité t’environne.",
+        "NAB": "LORD, God of hosts, who is like you? Mighty LORD, your loyalty is always present.",
+        "VAT_ES": "Señor, Dios del universo, &iquest;hay alguien como tú?",
+        "CEI": "Chi è uguale a te, Signore, Dio degli eserciti? Sei potente, Signore, e la tua fedeltà ti fa corona."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אַתָּ֣ה מ֭וֹשֵׁל בְּ/גֵא֣וּת הַ/יָּ֑ם בְּ/שׂ֥וֹא גַ֝לָּ֗י/ו אַתָּ֥ה תְשַׁבְּחֵֽ/ם׃",
+        "LXX": "αἱ ἡμέραι τῶν ἐτῶν ἡμῶν ἐν ἐνιαυτοῖς ἑβδομήκοντα ἔτη, ἐὰν δὲ ἐν δυναστείαις, ὀγδοήκοντα ἔτη, καὶ τὸ πλεῖον αὐτῶν κόπος καὶ πόνος· ὅτι ἐπῆλθεν πραύτης ἐφ’ ἡμᾶς, καὶ παιδευθησόμεθα.",
+        "VUL": "dies annorum nostrorum in ipsis septuaginta anni./ Si autem in potentatibus octoginta anni,/ et amplius eorum labor et dolor ;/ quoniam supervenit mansuetudo, et corripiemur./",
+        "SYN": "Дней лет наших - семьдесят лет, а при большей крепости - восемьдесят лет; и самая лучшая пора их - труд и болезнь, ибо проходят быстро, и мы летим.",
+        "NEO": "C’est toi qui domptes l’orgueil de la mer ; quand ses flots se soulèvent, c’est toi qui les apaises.",
+        "NAB": "You rule the raging sea; you still its swelling waves.",
+        "VAT_ES": "Tú dominas la soberbia del mar",
+        "CEI": "Tu domini l'orgoglio del mare, tu plachi il tumulto dei suoi flutti."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "אַתָּ֤ה דִכִּ֣אתָ כֶ/חָלָ֣ל רָ֑הַב בִּ/זְר֥וֹעַ עֻ֝זְּ/ךָ֗ פִּזַּ֥רְתָּ אוֹיְבֶֽי/ךָ׃",
+        "LXX": "τίς γινώσκει τὸ κράτος τῆς ὀργῆς σου, καὶ ἀπὸ τοῦ φόβου τοῦ θυμοῦ σου ἐξαριθμήσασθαι;",
+        "VUL": "Quis novit potestatem iræ tuæ,/ et præ timore tuo iram tuam",
+        "SYN": "Кто знает силу гнева Твоего, и ярость Твою по мере страха Твоего?",
+        "NEO": "C’est toi qui écrasas Rahab comme un cadavre, qui dispersas tes ennemis par la force de ton bras.",
+        "NAB": "You crushed Rahab with a mortal blow; your strong arm scattered your foes.",
+        "VAT_ES": "tú aplastaste a Rahab como a un cadáver,",
+        "CEI": "Tu hai calpestato Raab come un vinto, con braccio potente hai disperso i tuoi nemici."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "לְ/ךָ֣ שָׁ֭מַיִם אַף לְ/ךָ֥ אָ֑רֶץ תֵּבֵ֥ל וּ֝/מְלֹאָ֗/הּ אַתָּ֥ה יְסַדְתָּֽ/ם׃",
+        "LXX": "τὴν δεξιάν σου γνώρισον, καὶ τοὺς πεπαιδευμένους τῇ καρδίᾳ ἐν σοφίᾳ.",
+        "VUL": "dinumerare ?/ Dexteram tuam sic notam fac,/ et eruditos corde in sapientia./",
+        "SYN": "Научи нас так счислять дни наши, чтобы нам приобрести сердце мудрое.",
+        "NEO": "A toi sont les cieux, à toi aussi la terre ; le monde et ce qu’il contient, c’est toi qui l’as fondé.",
+        "NAB": "Yours are the heavens, yours the earth; you founded the world and everything in it.",
+        "VAT_ES": "Tuyo es el cielo, tuya la tierra:",
+        "CEI": "Tuoi sono i cieli, tua è la terra, tu hai fondato il mondo e quanto contiene;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "צָפ֣וֹן וְ֭/יָמִין אַתָּ֣ה בְרָאתָ֑/ם תָּב֥וֹר וְ֝/חֶרְמ֗וֹן בְּ/שִׁמְ/ךָ֥ יְרַנֵּֽנוּ׃",
+        "LXX": "ἐπίστρεψον, Κύριε· ἕως πότε; καὶ παρακλήθητι ἐπὶ τοῖς δούλοις σου.",
+        "VUL": "Convertere, Domine ; usquequo ?/ et deprecabilis esto super servos tuos./",
+        "SYN": "Обратись, Господи! Доколе? Умилосердись над рабами Твоими.",
+        "NEO": "Tu as créé le nord et le midi ; le Thabor et l’Hermon tressaillent à ton nom.",
+        "NAB": "Zaphon and Amanus you created; Tabor and Hermon rejoice in your name.",
+        "VAT_ES": "tú has creado el norte y el sur,",
+        "CEI": "il settentrione e il mezzogiorno tu li hai creati, il Tabor e l'Ermon cantano il tuo nome."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לְ/ךָ֣ זְ֭רוֹעַ עִם גְּבוּרָ֑ה תָּעֹ֥ז יָ֝דְ/ךָ֗ תָּר֥וּם יְמִינֶֽ/ךָ׃",
+        "LXX": "ἐνεπλήσθημεν τὸ πρωὶ τοῦ ἐλέους σου, καὶ ἠγαλλιασάμεθα καὶ εὐφράνθημεν ἐν πάσαις ταῖς ἡμέραις ἡμῶν,",
+        "VUL": "Repleti sumus mane misericordia tua ;/ et exsultavimus, et delectati sumus omnibus diebus nostris./",
+        "SYN": "Рано насыти нас милостью Твоею, и мы будем радоваться и веселиться во все дни наши.",
+        "NEO": "Ton bras est armé de puissance, ta main est forte, ta droite élevée.",
+        "NAB": "Mighty your arm, strong your hand, your right hand is ever exalted.",
+        "VAT_ES": "Tu brazo está lleno de poder,",
+        "CEI": "È potente il tuo braccio, forte la tua mano, alta la tua destra."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "צֶ֣דֶק וּ֭/מִשְׁפָּט מְכ֣וֹן כִּסְאֶ֑/ךָ חֶ֥סֶד וֶ֝/אֱמֶ֗ת יְֽקַדְּמ֥וּ פָנֶֽי/ךָ׃",
+        "LXX": "ἀνθ’ ὧν ἡμερῶν ἐταπείνωσας ἡμᾶς, ἐτῶν ὧν εἴδομεν κακά.",
+        "VUL": "Lætati sumus pro diebus quibus nos humiliasti ;/ annis quibus vidimus mala./",
+        "SYN": "Возвесели нас за дни, _в которые_ Ты поражал нас, за лета, _в которые_ мы видели бедствие.",
+        "NEO": "La justice et l’équité sont le fondement de ton trône, la bonté et la fidélité se tiennent devant ta face.",
+        "NAB": "Justice and judgment are the foundation of your throne; love and loyalty march before you.",
+        "VAT_ES": "la Justicia y el Derecho son la base de tu trono,",
+        "CEI": "Giustizia e diritto sono la base del tuo trono, grazia e fedeltà precedono il tuo volto."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אַשְׁרֵ֣י הָ֭/עָם יוֹדְעֵ֣י תְרוּעָ֑ה יְ֝הוָ֗ה בְּֽ/אוֹר פָּנֶ֥י/ךָ יְהַלֵּכֽוּ/ן׃",
+        "LXX": "καὶ ἴδε ἐπὶ τοὺς δούλους σου καὶ τὰ ἔργα σου, καὶ ὁδήγησον τοὺς υἱοὺς αὐτῶν.",
+        "VUL": "Respice in servos tuos et in opera tua,/ et dirige filios eorum./",
+        "SYN": "Да явится на рабах Твоих дело Твое и на сынах их слава Твоя;",
+        "NEO": "Heureux le peuple qui connaît les joyeuses acclamations, qui marche à la clarté de ta face, \\+w Yahweh|strong=\"H3068\"\\+w** !",
+        "NAB": "Happy the people who know you, LORD, who walk in the radiance of your face.",
+        "VAT_ES": "&iexcl;Feliz el pueblo que sabe aclamarte!",
+        "CEI": "Beato il popolo che ti sa acclamare e cammina, o Signore, alla luce del tuo volto:"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "בְּ֭/שִׁמְ/ךָ יְגִיל֣וּ/ן כָּל הַ/יּ֑וֹם וּ/בְ/צִדְקָתְ/ךָ֥ יָרֽוּמוּ׃",
+        "LXX": "καὶ ἔστω ἡ λαμπρότης Κυρίου θεοῦ ἡμῶν ἐφ’ ἡμᾶς, καὶ τὰ ἔργα τῶν χειρῶν ἡμῶν κατεύθυνον ἐφ’ ἡμᾶς.",
+        "VUL": "Et sit splendor Domini Dei nostri super nos,/ et opera manuum nostrarum dirige super nos,/ et opus manuum nostrarum dirige.]",
+        "SYN": "и да будет благоволение Господа Бога нашего на нас, и в деле рук наших споспешествуй нам, в деле рук наших споспешествуй.",
+        "NEO": "Il se réjouit sans cesse en ton nom, et il s’élève par ta justice.",
+        "NAB": "In your name they sing joyfully all the day; at your victory they raise the festal shout.",
+        "VAT_ES": "se alegrarán sin cesar en tu Nombre,",
+        "CEI": "esulta tutto il giorno nel tuo nome, nella tua giustizia trova la sua gloria."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כִּֽי תִפְאֶ֣רֶת עֻזָּ֣/מוֹ אָ֑תָּה וּ֝/בִ/רְצֹנְ/ךָ֗ תרים תָּר֥וּם קַרְנֵֽ/נוּ׃",
+        "NEO": "Car tu es sa gloire et sa puissance, et ta faveur élève notre force.",
+        "NAB": "You are their majestic strength; by your favor our horn is exalted.",
+        "VAT_ES": "Porque tú eres su gloria y su fuerza;",
+        "CEI": "Perché tu sei il vanto della sua forza e con il tuo favore innalzi la nostra potenza."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כִּ֣י לַֽ֭/יהוָה מָֽגִנֵּ֑/נוּ וְ/לִ/קְד֖וֹשׁ יִשְׂרָאֵ֣ל מַלְכֵּֽ/נוּ׃",
+        "NEO": "Car de \\+w Yahweh|strong=\"H3068\"\\+w** vient notre bouclier, et du Saint d’Israël notre roi.",
+        "NAB": "Truly the LORD is our shield, the Holy One of Israel, our king!",
+        "VAT_ES": "Sí, el Señor es nuestro escudo,",
+        "CEI": "Perché del Signore è il nostro scudo, il nostro re, del Santo d'Israele."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "אָ֤ז דִּבַּ֥רְתָּֽ בְ/חָ֡זוֹן לַֽ/חֲסִידֶ֗י/ךָ וַ/תֹּ֗אמֶר שִׁוִּ֣יתִי עֵ֭זֶר עַל גִּבּ֑וֹר הֲרִימ֖וֹתִי בָח֣וּר מֵ/עָֽם׃",
+        "NEO": "Tu parlas jadis dans une vision à ton bien-aimé, en disant : « J’ai prêté assistance à un héros, j’ai élevé un jeune homme du milieu du peuple.",
+        "NAB": "Once you spoke in vision; to your faithful ones you said: \"I have set a leader over the warriors; I have raised up a hero from the army.",
+        "VAT_ES": "Tú hablaste una vez en una visión",
+        "CEI": "Un tempo parlasti in visione ai tuoi santi dicendo: \"Ho portato aiuto a un prode, ho innalzato un eletto tra il mio popolo."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "מָ֭צָאתִי דָּוִ֣ד עַבְדִּ֑/י בְּ/שֶׁ֖מֶן קָדְשִׁ֣/י מְשַׁחְתִּֽי/ו׃",
+        "NEO": "J’ai trouvé David, mon serviteur, je l’ai oint de mon huile sainte.",
+        "NAB": "I have chosen David, my servant; with my holy oil I have anointed him.",
+        "VAT_ES": "Encontré a David, mi servidor,",
+        "CEI": "Ho trovato Davide, mio servo, con il mio santo olio l'ho consacrato;"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֣ר יָ֭דִ/י תִּכּ֣וֹן עִמּ֑/וֹ אַף זְרוֹעִ֥/י תְאַמְּצֶֽ/נּוּ׃",
+        "NEO": "Ma main sera constamment avec lui, et mon bras le fortifiera.",
+        "NAB": "My hand will be with him; my arm will make him strong.",
+        "VAT_ES": "para que mi mano esté siempre con él",
+        "CEI": "la mia mano è il suo sostegno, il mio braccio è la sua forza."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "לֹֽא יַשִּׁ֣א אוֹיֵ֣ב בּ֑/וֹ וּ/בֶן עַ֝וְלָ֗ה לֹ֣א יְעַנֶּֽ/נּוּ׃",
+        "NEO": "« L’ennemi ne le surprendra pas, et le fils d’iniquité ne l’emportera pas sur lui.",
+        "NAB": "No enemy shall outwit him, nor shall the wicked defeat him.",
+        "VAT_ES": "El enemigo no lo aventajará,",
+        "CEI": "Su di lui non trionferà il nemico, né l'opprimerà l'iniquo."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/כַתּוֹתִ֣י מִ/פָּנָ֣י/ו צָרָ֑י/ו וּ/מְשַׂנְאָ֥י/ו אֶגּֽוֹף׃",
+        "NEO": "J’écraserai devant lui ses adversaires, et je frapperai ceux qui le haïssent.",
+        "NAB": "I will crush his foes before him, strike down those who hate him.",
+        "VAT_ES": "yo aplastaré a sus adversarios ante él",
+        "CEI": "Annienterò davanti a lui i suoi nemici e colpirò quelli che lo odiano."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וֶֽ/אֶֽמוּנָתִ֣/י וְ/חַסְדִּ֣/י עִמּ֑/וֹ וּ֝/בִ/שְׁמִ֗/י תָּר֥וּם קַרְנֽ/וֹ׃",
+        "NEO": "Ma fidélité et ma bonté seront avec lui, et par mon nom grandira sa puissance.",
+        "NAB": "My loyalty and love will be with him; through my name his horn will be exalted.",
+        "VAT_ES": "Mi fidelidad y mi amor lo acompañarán,",
+        "CEI": "La mia fedeltà e la mia grazia saranno con lui e nel mio nome si innalzerà la sua potenza."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/שַׂמְתִּ֣י בַ/יָּ֣ם יָד֑/וֹ וּֽ/בַ/נְּהָר֥וֹת יְמִינֽ/וֹ׃",
+        "NEO": "J’étendrai sa main sur la mer et sa droite sur les fleuves.",
+        "NAB": "I will set his hand upon the sea, his right hand upon the rivers.",
+        "VAT_ES": "extenderé su mano sobre el mar",
+        "CEI": "Stenderò sul mare la sua mano e sui fiumi la sua destra."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "ה֣וּא יִ֭קְרָאֵ/נִי אָ֣בִ/י אָ֑תָּה אֵ֝לִ֗/י וְ/צ֣וּר יְשׁוּעָתִֽ/י׃",
+        "NEO": "« Il m’invoquera : Tu es mon père, mon Dieu et le rocher de mon salut.",
+        "NAB": "He shall cry to me,'You are my father, my God, the Rock that brings me victory!'",
+        "VAT_ES": "El me dirá: «Tú eres mi padre,",
+        "CEI": "Egli mi invocherà: Tu sei mio padre, mio Dio e roccia della mia salvezza."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "אַף אָ֭נִי בְּכ֣וֹר אֶתְּנֵ֑/הוּ עֶ֝לְי֗וֹן לְ/מַלְכֵי אָֽרֶץ׃",
+        "NEO": "Et moi je ferai de lui le premier-né, le plus élevé des rois de la terre.",
+        "NAB": "I myself make him firstborn, Most High over the kings of the earth.",
+        "VAT_ES": "Yo lo constituiré mi primogénito,",
+        "CEI": "Io lo costituirò mio primogenito, il più alto tra i re della terra."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "לְ֭/עוֹלָ֗ם אשמור אֶשְׁמָר ל֣/וֹ חַסְדִּ֑/י וּ֝/בְרִיתִ֗/י נֶאֱמֶ֥נֶת לֽ/וֹ׃",
+        "NEO": "Je lui conserverai ma bonté à jamais, et mon alliance lui sera fidèle.",
+        "NAB": "Forever I will maintain my love for him; my covenant with him stands firm.",
+        "VAT_ES": "Le aseguraré mi amor eternamente,",
+        "CEI": "Gli conserverò sempre la mia grazia, la mia alleanza gli sarà fedele."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/שַׂמְתִּ֣י לָ/עַ֣ד זַרְע֑/וֹ וְ֝/כִסְא֗/וֹ כִּ/ימֵ֥י שָׁמָֽיִם׃",
+        "NEO": "J’établirai sa postérité pour jamais, et son trône aura les jours des cieux.",
+        "NAB": "I will establish his dynasty forever, his throne as the days of the heavens.",
+        "VAT_ES": "le daré una descendencia eterna",
+        "CEI": "Stabilirò per sempre la sua discendenza, il suo trono come i giorni del cielo."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "אִם יַֽעַזְב֣וּ בָ֭נָי/ו תּוֹרָתִ֑/י וּ֝/בְ/מִשְׁפָּטַ֗/י לֹ֣א יֵלֵכֽוּ/ן׃",
+        "NEO": "« Si ses fils abandonnent ma loi, et ne marchent pas selon mes ordonnances ;",
+        "NAB": "If his descendants forsake my law, do not follow my decrees,",
+        "VAT_ES": "Si sus hijos abandonan mi enseñanza",
+        "CEI": "Se i suoi figli abbandoneranno la mia legge e non seguiranno i miei decreti,"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "אִם חֻקֹּתַ֥/י יְחַלֵּ֑לוּ וּ֝/מִצְוֺתַ֗/י לֹ֣א יִשְׁמֹֽרוּ׃",
+        "NEO": "s’ils violent mes préceptes, et n’observent pas mes commandements ;",
+        "NAB": "If they fail to observe my statutes, do not keep my commandments,",
+        "VAT_ES": "si profanan mis preceptos",
+        "CEI": "se violeranno i miei statuti e non osserveranno i miei comandi,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וּ/פָקַדְתִּ֣י בְ/שֵׁ֣בֶט פִּשְׁעָ֑/ם וּ/בִ/נְגָעִ֥ים עֲוֺנָֽ/ם׃",
+        "NEO": "je punirai de la verge leurs transgressions, et par des coups leurs iniquités ;",
+        "NAB": "I will punish their crime with a rod and their guilt with lashes.",
+        "VAT_ES": "castigaré sus rebeldías con la vara",
+        "CEI": "punirò con la verga il loro peccato e con flagelli la loro colpa."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְ֭/חַסְדִּ/י לֹֽא אָפִ֣יר מֵֽ/עִמּ֑/וֹ וְ/לֹֽא אֲ֝שַׁקֵּ֗ר בֶּ/אֱמוּנָתִֽ/י׃",
+        "NEO": "mais je ne lui retirerai pas ma bonté, et je ne ferai pas mentir ma fidélité.",
+        "NAB": "But I will not take my love from him, nor will I betray my bond of loyalty.",
+        "VAT_ES": "Pero a él no le retiraré mi amor",
+        "CEI": "Ma non gli toglierò la mia grazia e alla mia fedeltà non verrò mai meno."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "לֹא אֲחַלֵּ֥ל בְּרִיתִ֑/י וּ/מוֹצָ֥א שְׂ֝פָתַ֗/י לֹ֣א אֲשַׁנֶּֽה׃",
+        "NEO": "« Je ne violerai pas mon alliance, et je ne changerai pas la parole sortie de mes lèvres.",
+        "NAB": "I will not violate my covenant; the promise of my lips I will not alter.",
+        "VAT_ES": "no quebrantaré mi alianza",
+        "CEI": "Non violerò la mia alleanza, non muterò la mia promessa."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "אַ֭חַת נִשְׁבַּ֣עְתִּי בְ/קָדְשִׁ֑/י אִֽם לְ/דָוִ֥ד אֲכַזֵּֽב׃",
+        "NEO": "Je l’ai juré une fois par ma sainteté ; non, je ne mentirai pas à David.",
+        "NAB": "By my holiness I swore once for all: I will never be false to David.",
+        "VAT_ES": "Una vez juré por mi santidad",
+        "CEI": "Sulla mia santità ho giurato una volta per sempre: certo non mentirò a Davide."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "זַ֭רְע/וֹ לְ/עוֹלָ֣ם יִהְיֶ֑ה וְ/כִסְא֖/וֹ כַ/שֶּׁ֣מֶשׁ נֶגְדִּֽ/י׃",
+        "NEO": "Sa postérité subsistera éternellement, son trône sera devant moi comme le soleil ;",
+        "NAB": "His dynasty will continue forever, his throne, like the sun before me.",
+        "VAT_ES": "«Su descendencia permanecerá para siempre",
+        "CEI": "In eterno durerà la sua discendenza, il suo trono davanti a me quanto il sole,"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "כְּ֭/יָרֵחַ יִכּ֣וֹן עוֹלָ֑ם וְ/עֵ֥ד בַּ֝/שַּׁ֗חַק נֶאֱמָ֥ן סֶֽלָה׃",
+        "NEO": "comme la lune, il est établi pour toujours, et le témoin qui est au ciel est fidèle. » — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "Like the moon it will stand eternal, forever firm like the sky!\" Selah",
+        "VAT_ES": "como la luna, que permanece para siempre,",
+        "CEI": "sempre saldo come la luna, testimone fedele nel cielo\"."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֣ה זָ֭נַחְתָּ וַ/תִּמְאָ֑ס הִ֝תְעַבַּ֗רְתָּ עִם מְשִׁיחֶֽ/ךָ׃",
+        "NEO": "Et toi, tu as rejeté, et tu as dédaigné, et tu t’es irrité contre ton Oint !",
+        "NAB": "But now you have rejected and spurned, been enraged at your anointed.",
+        "VAT_ES": "Pero tú te has irritado contra tu Ungido,",
+        "CEI": "Ma tu lo hai respinto e ripudiato, ti sei adirato contro il tuo consacrato;"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "נֵ֭אַרְתָּה בְּרִ֣ית עַבְדֶּ֑/ךָ חִלַּ֖לְתָּ לָ/אָ֣רֶץ נִזְרֽ/וֹ׃",
+        "NEO": "Tu as pris en dégoût l’alliance avec son serviteur, tu as jeté à terre son diadème profané.",
+        "NAB": "You renounced the covenant with your servant, defiled his crown in the dust.",
+        "VAT_ES": "desdeñaste la alianza con tu servidor,",
+        "CEI": "hai rotto l'alleanza con il tuo servo, hai profanato nel fango la sua corona."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "פָּרַ֥צְתָּ כָל גְּדֵרֹתָ֑י/ו שַׂ֖מְתָּ מִבְצָרָ֣י/ו מְחִתָּה׃",
+        "NEO": "Tu as renversé toutes ses murailles, tu as mis en ruines ses forteresses.",
+        "NAB": "You broke down all his defenses, left his strongholds in ruins.",
+        "VAT_ES": "Abrirse brechas en todas sus murallas,",
+        "CEI": "Hai abbattuto tutte le sue mura e diroccato le sue fortezze;"
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "שַׁ֭סֻּ/הוּ כָּל עֹ֣בְרֵי דָ֑רֶךְ הָיָ֥ה חֶ֝רְפָּ֗ה לִ/שְׁכֵנָֽי/ו׃",
+        "NEO": "Tous les passants le dépouillent ; il est devenu l’opprobre de ses voisins.",
+        "NAB": "All who pass through seize plunder; his neighbors deride him.",
+        "VAT_ES": "los que pasan por el camino lo despojan,",
+        "CEI": "tutti i passanti lo hanno depredato, è divenuto lo scherno dei suoi vicini."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "הֲ֭רִימוֹתָ יְמִ֣ין צָרָ֑י/ו הִ֝שְׂמַ֗חְתָּ כָּל אוֹיְבָֽי/ו׃",
+        "NEO": "Tu as élevé la droite de ses oppresseurs, tu as réjoui tous ses ennemis.",
+        "NAB": "You have exalted the right hand of his foes, have gladdened all his enemies.",
+        "VAT_ES": "Alzaste la mano de sus adversarios,",
+        "CEI": "Hai fatto trionfare la destra dei suoi rivali, hai fatto gioire tutti i suoi nemici."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "אַף תָּ֭שִׁיב צ֣וּר חַרְבּ֑/וֹ וְ/לֹ֥א הֲ֝קֵימֹת֗/וֹ בַּ/מִּלְחָמָֽה׃",
+        "NEO": "Tu as fait retourner en arrière le tranchant de son glaive, et tu ne l’as pas soutenu dans le combat.",
+        "NAB": "You turned back his sharp sword, did not support him in battle.",
+        "VAT_ES": "mellaste el filo de su espada",
+        "CEI": "Hai smussato il filo della sua spada e non l'hai sostenuto nella battaglia."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "הִשְׁבַּ֥תָּ מִ/טְּהָר֑/וֹ וְ֝/כִסְא֗/וֹ לָ/אָ֥רֶץ מִגַּֽרְתָּה׃",
+        "NEO": "Tu l’as dépouillé de sa splendeur, et tu as jeté par terre son trône.",
+        "NAB": "You brought to an end his splendor, hurled his throne to the ground.",
+        "VAT_ES": "Le quitaste su cetro glorioso",
+        "CEI": "Hai posto fine al suo splendore, hai rovesciato a terra il suo trono."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "הִ֭קְצַרְתָּ יְמֵ֣י עֲלוּמָ֑י/ו הֶֽעֱטִ֨יתָ עָלָ֖י/ו בּוּשָׁ֣ה סֶֽלָה׃",
+        "NEO": "Tu as abrégé les jours de sa jeunesse, et tu l’as couvert d’ignominie. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "You cut short the days of his youth, covered him with shame. Selah",
+        "VAT_ES": "abreviaste los días de su juventud",
+        "CEI": "Hai abbreviato i giorni della sua giovinezza e lo hai coperto di vergogna."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "עַד מָ֣ה יְ֭הוָה תִּסָּתֵ֣ר לָ/נֶ֑צַח תִּבְעַ֖ר כְּמוֹ אֵ֣שׁ חֲמָתֶֽ/ךָ׃",
+        "NEO": "Jusques à quand, \\+w Yahweh|strong=\"H3068\"\\+w**, te cacheras-tu pour toujours, et ta fureur s’embrasera-t-elle comme le feu ?",
+        "NAB": "How long, LORD? Will you stay hidden forever? Must your wrath smolder like fire?",
+        "VAT_ES": "&iquest;Hasta cuándo, Señor? &iquest;Te ocultarás para siempre?",
+        "CEI": "Fino a quando, Signore, continuerai a tenerti nascosto, arderà come fuoco la tua ira?"
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "זְכָר אֲנִ֥י מֶה חָ֑לֶד עַל מַה שָּׁ֝֗וְא בָּרָ֥אתָ כָל בְּנֵי אָדָֽם׃",
+        "NEO": "Rappelle-toi la brièveté de ma vie, et pour quelle vanité tu as créé les fils de l’homme !",
+        "NAB": "Remember how brief is my life, how frail the race you created!",
+        "VAT_ES": "Recuerda, Señor, qué corta es mi vida",
+        "CEI": "Ricorda quant'è breve la mia vita. Perché quasi un nulla hai creato ogni uomo?"
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "מִ֤י גֶ֣בֶר יִֽ֭חְיֶה וְ/לֹ֣א יִרְאֶה מָּ֑וֶת יְמַלֵּ֨ט נַפְשׁ֖/וֹ מִ/יַּד שְׁא֣וֹל סֶֽלָה׃",
+        "NEO": "Quel est le vivant qui ne verra pas la mort, qui soustraira son âme au pouvoir du schéol ? — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "What mortal can live and not see death? Who can escape the power of Sheol? Selah",
+        "VAT_ES": "&iquest;Quién vivirá sin ver la muerte?",
+        "CEI": "Quale vivente non vedrà la morte, sfuggirà al potere degli inferi?"
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "WLC": "אַיֵּ֤ה חֲסָדֶ֖י/ךָ הָ/רִאשֹׁנִ֥ים אֲדֹנָ֑/י נִשְׁבַּ֥עְתָּ לְ֝/דָוִ֗ד בֶּ/אֱמוּנָתֶֽ/ךָ׃",
+        "NEO": "Où sont, Seigneur, tes bontés d’autrefois, que tu juras à David dans ta fidélité ?",
+        "NAB": "Where are your promises of old, Lord, the loyalty sworn to David?",
+        "VAT_ES": "&iquest;Dónde está, Señor, tu amor de otro tiempo,",
+        "CEI": "Dove sono, Signore, le tue grazie di un tempo, che per la tua fedeltà hai giurato a Davide?"
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "WLC": "זְכֹ֣ר אֲ֭דֹנָ/י חֶרְפַּ֣ת עֲבָדֶ֑י/ךָ שְׂאֵתִ֥/י בְ֝/חֵיקִ֗/י כָּל רַבִּ֥ים עַמִּֽים׃",
+        "NEO": "Souviens-toi, Seigneur, de l’opprobre de tes serviteurs ; souviens-toi que je porte dans mon sein les outrages de tant de peuples nombreux ;",
+        "NAB": "Remember, Lord, the insults to your servants, how I bear all the slanders of the nations.",
+        "VAT_ES": "Recuerda, Señor, las afrentas de tu servidor:",
+        "CEI": "Ricorda, Signore, l'oltraggio dei tuoi servi: porto nel cuore le ingiurie di molti popoli,"
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֤ר חֵרְפ֖וּ אוֹיְבֶ֥י/ךָ יְהוָ֑ה אֲשֶׁ֥ר חֵ֝רְפ֗וּ עִקְּב֥וֹת מְשִׁיחֶֽ/ךָ׃",
+        "NEO": "souviens-toi des outrages de tes ennemis, \\+w Yahweh|strong=\"H3068\"\\+w**, de leurs outrages contre les pas de ton Oint.",
+        "NAB": "Your enemies, LORD, insult your anointed; they insult my every endeavor.",
+        "VAT_ES": "&iexcl;Cómo afrentan las huellas de tu Ungido!",
+        "CEI": "con le quali, Signore, i tuoi nemici insultano, insultano i passi del tuo consacrato."
+      }
+    }
+  }
+}

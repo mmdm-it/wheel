@@ -1,0 +1,645 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IUDI_008",
+  "book_key": "IUDI",
+  "sequence": 8,
+  "chapter_in": {
+    "MT": 8,
+    "VUL": 8,
+    "LXX": 8
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֨וּ אֵלָ֜י/ו אִ֣ישׁ אֶפְרַ֗יִם מָֽה הַ/דָּבָ֤ר הַ/זֶּה֙ עָשִׂ֣יתָ לָּ֔/נוּ לְ/בִלְתִּי֙ קְרֹ֣אות לָ֔/נוּ כִּ֥י הָלַ֖כְתָּ לְ/הִלָּחֵ֣ם בְּ/מִדְיָ֑ן וַ/יְרִיב֥וּ/ן אִתּ֖/וֹ בְּ/חָזְקָֽה׃",
+        "LXX": "καὶ εἶπαν πρὸς Γεδεὼν ἀνὴρ Ἐφράιμ Τί τὸ ῥῆμα τοῦτο ἐποίησας ἡμῖν τοῦ μὴ καλέσαι ἡμᾶς ὅτε ἐπορεύθης παρατάξασθαι ἐν Μαδιάμ; καὶ διελέξαντο πρὸς αὐτὸν ἰσχυρῶς.",
+        "VUL": "Dixeruntque ad eum viri Ephraim : Quid est hoc quod facere voluisti, ut nos non vocares, cum ad pugnam pergeres contra Madian ? jurgantes fortiter, et prope vim inferentes.",
+        "SYN": "И сказали ему Ефремляне: зачем ты это сделал, что не позвал нас, когда шел воевать с Мадианитянами? И сильно ссорились с ним.",
+        "NEO": "Les hommes d’Ephraïm dirent à Gédéon : « Que signifie ta conduite envers nous, de ne pas nous appeler quand tu allais combattre Madian ? » Et ils le querellèrent avec violence.",
+        "NAB": "But the Ephraimites said to him, \"What have you done to us, not calling us when you went to fight against Midian?\" And they quarreled bitterly with him.",
+        "VAT_ES": "La gente de Efraím dijo a Gedeón: «&iquest;Qué nos has hecho? &iquest;Por qué no nos llamaste cuando fuiste a combatir contra Madián?». Y se lo reprocharon violentamente.",
+        "CEI": "Ma gli uomini di Efraim gli dissero: \"Che azione ci hai fatto, non chiamandoci quando sei andato a combattere contro Madian?\". Litigarono con lui violentemente."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֲלֵי/הֶ֔ם מֶה עָשִׂ֥יתִי עַתָּ֖ה כָּ/כֶ֑ם הֲ/ל֗וֹא ט֛וֹב עֹלְל֥וֹת אֶפְרַ֖יִם מִ/בְצִ֥יר אֲבִיעֶֽזֶר׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτούς Τί ἐποίησα νῦν καθὼς ὑμεῖς; ἢ οὐχὶ κρεῖσσον ἐπιφυλλὶς Ἐφράιμ ἢ τρυγητὸς Ἀβιέζερ;",
+        "VUL": "Quibus ille respondit : Quid enim tale facere potui, quale vos fecistis ? nonne melior est racemus Ephraim, vindemiis Abiezer ?",
+        "SYN": "[Гедеон] отвечал им: сделал ли я что такое, как вы ныне? Не счастливее ли Ефрем добирал виноград, нежели Авиезер обирал?",
+        "NEO": "Gédéon leur répondit : « Qu’ai-je fait en comparaison de vous ? Le grappillage d’Ephraïm ne vaut-il pas mieux que la vendange d’Abiéser ?",
+        "NAB": "\"What have I accomplished now in comparison with you?\" he answered them. \"Is not the gleaning of Ephraim better than the vintage of Abiezer?",
+        "VAT_ES": "Pero él les respondió: «&iquest;Qué hice yo comparado con lo que hicieron ustedes? Un solo racimo de Efraím vale más que toda la vendimia de Abiézer.",
+        "CEI": "Egli rispose loro: \"Che ho fatto io in confronto a voi? La racimolatura di Efraim non vale più della vendemmia di Abiezer?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "בְּ/יֶדְ/כֶם֩ נָתַ֨ן אֱלֹהִ֜ים אֶת שָׂרֵ֤י מִדְיָן֙ אֶת עֹרֵ֣ב וְ/אֶת זְאֵ֔ב וּ/מַה יָּכֹ֖לְתִּי עֲשׂ֣וֹת כָּ/כֶ֑ם אָ֗ז רָפְתָ֤ה רוּחָ/ם֙ מֵֽ/עָלָ֔י/ו בְּ/דַבְּר֖/וֹ הַ/דָּבָ֥ר הַ/זֶּֽה׃",
+        "LXX": "ἐν χειρὶ ὑμῶν παρέδωκεν Κύριος τοὺς ἄρχοντας Μαδιάμ, τὸν Ὠρὴβ καὶ τὸν Ζήβ· καὶ τί ἠδυνήθην ποιῆσαι ὡς ὑμεῖς; τότε ἀνέθη τὸ πνεῦμα αὐτῶν ἀπ’ αὐτοῦ ἐν τῷ λαλῆσαι αὐτὸν τὸν λόγον τοῦτον.",
+        "VUL": "In manus vestras Dominus tradidit principes Madian, Oreb et Zeb : quid tale facere potui, quale vos fecistis ? Quod cum locutus esset, requievit spiritus eorum, quo tumebant contra eum.",
+        "SYN": "В ваши руки предал Бог князей Мадиамских Орива и Зива, и что мог сделать я такое, как вы? Тогда успокоился дух их против него, когда сказал он им такие слова.",
+        "NEO": "C’est entre vos mains que \\+w Yahweh|strong=\"H3068\"\\+w** a livré les princes de Madian, Oreb et Zeb. Que pouvais-je faire en comparaison de vous ? » Lorsqu’il eut ainsi parlé, leur colère contre lui s’apaisa.",
+        "NAB": "Into your power God delivered the princes of Midian, Oreb and Zeeb. What have I been able to do in comparison with you?\" When he said this, their anger against him subsided.",
+        "VAT_ES": "Dios puso en manos de ustedes a los jefes de Madián, Oreb y Zeeb. Comparado con esto, &iquest;qué he logrado hacer yo?». Después que les dijo estas palabras, se calmó su animosidad contra él.",
+        "CEI": "Dio vi ha messo nelle mani i capi di Madian, Oreb e Zeeb; che dunque ho potuto fare io in confronto a voi?\". A tali parole, la loro ira contro di lui si calmò."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֥א גִדְע֖וֹן הַ/יַּרְדֵּ֑נָ/ה עֹבֵ֣ר ה֗וּא וּ/שְׁלֹשׁ מֵא֤וֹת הָ/אִישׁ֙ אֲשֶׁ֣ר אִתּ֔/וֹ עֲיֵפִ֖ים וְ/רֹדְפִֽים׃",
+        "LXX": "Καὶ ἦλθεν Γεδεὼν ἐπὶ τὸν Ἰορδάνην, καὶ διέβη αὐτὸς καὶ οἱ τριακόσιοι ἄνδρες οἱ μετ’ αὐτοῦ πεινῶντες καὶ διώκοντες.",
+        "VUL": "Cumque venisset Gedeon ad Jordanem, transivit eum cum trecentis viris, qui secum erant : et præ lassitudine, fugientes persequi non poterant.",
+        "SYN": "И пришел Гедеон к Иордану, и перешел сам и триста человек, бывшие с ним. Они были утомлены [и голодны], преследуя _врагов._",
+        "NEO": "Gédéon arriva au Jourdain, et il le passa, lui et les trois cents hommes qui étaient avec lui, fatigués et continuant à poursuivre.",
+        "NAB": "When Gideon reached the Jordan and crossed it with his three hundred men, they were exhausted and famished.",
+        "VAT_ES": "Gedeón llegó hasta el Jordán y lo cruzó. El y los trescientos hombres que lo acompañaban estaban cansados y hambrientos.",
+        "CEI": "Gedeone arrivò al Giordano e lo attraversò. Ma egli e i suoi trecento uomini erano stanchi e affamati."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ לְ/אַנְשֵׁ֣י סֻכּ֔וֹת תְּנוּ נָא֙ כִּכְּר֣וֹת לֶ֔חֶם לָ/עָ֖ם אֲשֶׁ֣ר בְּ/רַגְלָ֑/י כִּי עֲיֵפִ֣ים הֵ֔ם וְ/אָנֹכִ֗י רֹדֵ֛ף אַחֲרֵ֛י זֶ֥בַח וְ/צַלְמֻנָּ֖ע מַלְכֵ֥י מִדְיָֽן׃",
+        "LXX": "καὶ εἶπεν τοῖς ἀνδράσιν Σοκχώθ Δότε δὴ ἄρτους εἰς τροφὴν τῷ λαῷ τούτῳ τῷ ἐν ποσίν μου, ὅτι ἐκλείπουσιν· καὶ ἰδοὺ ἐγώ εἰμι διώκων ὀπίσω τοῦ Ζέβεε καὶ Σελμανὰ βασιλέων Μαδιάμ.",
+        "VUL": "Dixitque ad viros Soccoth : Date, obsecro, panes populo qui mecum est, quia valde defecerunt : ut possimus persequi Zebee et Salmana reges Madian.",
+        "SYN": "И сказал он жителям Сокхофа: дайте хлеба народу, который идет за мною; они утомились, а я преследую Зевея и Салмана, царей Мадиамских.",
+        "NEO": "Il dit aux gens de Soccoth : « Donnez, je vous prie, des galettes de pain au peuple qui m’accompagne, car ils sont fatigués, et je suis à la poursuite de Zébée et de Salmana, rois de Madian. »",
+        "NAB": "So he said to the men of Succoth, \"Will you give my followers some loaves of bread? They are exhausted, and I am pursuing Zebah and Zalmunna, kings of Midian.\"",
+        "VAT_ES": "Entonces dijo a la gente de Sucot: «Por favor, traigan un poco de pan para la tropa que me acompaña, porque están agotados de cansancio, y yo estoy persiguiendo a Zébaj y a Salmuná, reyes de Madián».",
+        "CEI": "Disse a quelli di Succot: \"Date focacce di pane alla gente che mi segue, perché è stanca e io sto inseguendo Zebach e Zalmunna, re di Madian\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ שָׂרֵ֣י סֻכּ֔וֹת הֲ֠/כַף זֶ֧בַח וְ/צַלְמֻנָּ֛ע עַתָּ֖ה בְּ/יָדֶ֑/ךָ כִּֽי נִתֵּ֥ן לִֽ/צְבָאֲ/ךָ֖ לָֽחֶם׃",
+        "LXX": "καὶ εἶπον οἱ ἄρχοντες Σοκχώθ Μὴ χεὶρ Ζέβεε καὶ Σελμανὰ νῦν ἐν χειρί σου; οὐ δώσομεν τῇ δυνάμει σου ἄρτους.",
+        "VUL": "Responderunt principes Soccoth : Forsitan palmæ manuum Zebee et Salmana in manu tua sunt, et idcirco postulas ut demus exercitui tuo panes.",
+        "SYN": "Князья Сокхофа сказали: разве рука Зевея и Салмана уже в твоей руке, чтобы нам войску твоему давать хлеб?",
+        "NEO": "Les chefs de Soccoth répondirent : « Le poing de Zébée et de Salmana est-il déjà dans ta main, pour que nous donnions du pain à ta troupe ? »",
+        "NAB": "But the princes of Succoth replied, \"Are the hands of Zebah and Zalmunna already in your possession, that we should give food to your army?\"",
+        "VAT_ES": "Pero los jefes de Sucot le respondieron: «&iquest;Acaso tienes prisioneros a Zébaj y a Salmuná para que le demos pan a tu ejército?».",
+        "CEI": "Ma i capi di Succot risposero: \"Tieni forse già nelle tue mani i polsi di Zebach e di Zalmunna, perché dobbiamo dare il pane al tuo esercito?\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר גִּדְע֔וֹן לָ/כֵ֗ן בְּ/תֵ֧ת יְהוָ֛ה אֶת זֶ֥בַח וְ/אֶת צַלְמֻנָּ֖ע בְּ/יָדִ֑/י וְ/דַשְׁתִּי֙ אֶת בְּשַׂרְ/כֶ֔ם אֶת קוֹצֵ֥י הַ/מִּדְבָּ֖ר וְ/אֶת הַֽ/בַּרְקֳנִֽים׃",
+        "LXX": "καὶ εἶπεν Γεδεών Διὰ τοῦτο ἐν τῷ δοῦναι Κύριον τὸν Ζέβεε καὶ Σελμανὰ ἐν χειρί μου, καὶ ἐγὼ ἀλοήσω τὰς σάρκας ὑμῶν ἐν ταῖς ἀκάνθαις τῆς ἐρήμου καὶ ἐν ταῖς ἁβαρκηνείν.",
+        "VUL": "Quibus ille ait : Cum ergo tradiderit Dominus Zebee et Salmana in manus meas, conteram carnes vestras cum spinis tribulisque deserti.",
+        "SYN": "И сказал Гедеон: за это, когда предаст Господь Зевея и Салмана в руки мои, я растерзаю тело ваше терновником пустынным и молотильными зубчатыми досками.",
+        "NEO": "Gédéon leur dit : « Eh bien, lorsque \\+w Yahweh|strong=\"H3068\"\\+w** aura livré entre mes mains Zébée et Salmana, je déchirerai votre chair avec des épines du désert et des chardons. »",
+        "NAB": "Gideon said, \"Very well; when the LORD has delivered Zebah and Zalmunna into my power, I will grind your flesh in with the thorns and briers of the desert.\"",
+        "VAT_ES": "«Está bien, respondió Gedeón; cuando el Señor ponga en mis manos a Zébaj y a Salmuná, desgarraré la carne de ustedes con espinas y cardos del desierto».",
+        "CEI": "Gedeone disse: \"Ebbene, quando il Signore mi avrà messo nelle mani Zebach e Zalmunna, vi strazierò le carni con le spine del deserto e con i cardi\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤עַל מִ/שָּׁם֙ פְּנוּאֵ֔ל וַ/יְדַבֵּ֥ר אֲלֵי/הֶ֖ם כָּ/זֹ֑את וַ/יַּעֲנ֤וּ אוֹת/וֹ֙ אַנְשֵׁ֣י פְנוּאֵ֔ל כַּ/אֲשֶׁ֥ר עָנ֖וּ אַנְשֵׁ֥י סֻכּֽוֹת׃",
+        "LXX": "καὶ ἀνέβη ἐκεῖθεν εἰς Φανουήλ, καὶ ἐλάλησεν πρὸς αὐτοὺς ὡσαύτως· καὶ ἀπεκρίθησαν αὐτῷ οἱ ἄνδρες Φανουὴλ ὃν τρόπον ἀπεκρίθησαν ἄνδρες Σοκχώθ.",
+        "VUL": "Et inde conscendens, venit in Phanuel : locutusque est ad viros loci illius similia. Cui et illi responderunt, sicut responderant viri Soccoth.",
+        "SYN": "Оттуда пошел он в Пенуэл и то же сказал жителям его, и жители Пенуэла отвечали ему то же, что отвечали жители Сокхофа.",
+        "NEO": "De là il monta à Phanuel, et il adressa aux gens de Phanuel la même parole. Les gens de Phanuel lui répondirent comme avaient répondu les gens de Soccoth.",
+        "NAB": "He went up from there to Penuel and made the same request of them, but the men of Penuel answered him as had the men of Succoth.",
+        "VAT_ES": "De allí subió a Penuel y les hizo el mismo pedido. Pero la gente de Penuel le respondió lo mismo que la gente de Sucot.",
+        "CEI": "Di là salì a Penuel e parlò agli uomini di Penuel nello stesso modo; essi gli risposero come avevano fatto quelli di Succot."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֛אמֶר גַּם לְ/אַנְשֵׁ֥י פְנוּאֵ֖ל לֵ/אמֹ֑ר בְּ/שׁוּבִ֣/י בְ/שָׁל֔וֹם אֶתֹּ֖ץ אֶת הַ/מִּגְדָּ֥ל הַ/זֶּֽה׃",
+        "LXX": "καὶ εἶπεν Γεδεὼν πρὸς ἄνδρας Φανουήλ Ἐν ἐπιστροφῇ μου μετ’ εἰρήνης τὸν πύργον τοῦτον κατασκάψω.",
+        "VUL": "Dixit itaque et eis : Cum reversus fuero victor in pace, destruam turrim hanc.",
+        "SYN": "Он сказал и жителям Пенуэла: когда я возвращусь в мире, разрушу башню сию.",
+        "NEO": "Et il dit aux gens de Phanuel : « Quand je reviendrai vainqueur, je raserai cette tour. »",
+        "NAB": "So to the men of Penuel, too, he said, \"When I return in triumph, I will demolish this tower.\"",
+        "VAT_ES": "Entonces Gedeón dijo a los de Penuel: «Cuando vuelva victorioso, derribaré esta torre».",
+        "CEI": "Egli disse anche agli uomini di Penuel: \"Quando tornerò in pace, abbatterò questa torre\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/זֶ֨בַח וְ/צַלְמֻנָּ֜ע בַּ/קַּרְקֹ֗ר וּ/מַחֲנֵי/הֶ֤ם עִמָּ/ם֙ כַּ/חֲמֵ֤שֶׁת עָשָׂר֙ אֶ֔לֶף כֹּ֚ל הַ/נּ֣וֹתָרִ֔ים מִ/כֹּ֖ל מַחֲנֵ֣ה בְנֵי קֶ֑דֶם וְ/הַ/נֹּ֣פְלִ֔ים מֵאָ֨ה וְ/עֶשְׂרִ֥ים אֶ֛לֶף אִ֖ישׁ שֹׁ֥לֵֽף חָֽרֶב׃",
+        "LXX": "Καὶ Ζέβεε καὶ Σελμανὰ ἐν Καρκάρ, καὶ ἡ παρεμβολὴ αὐτῶν μετ’ αὐτῶν ὡσεὶ δέκα πέντε χιλιάδες, πάντες οἱ καταλελιμμένοι ἀπὸ πάσης παρεμβολῆς ἀλλοφύλων· καὶ οἱ πεπτωκότες ἑκατὸν εἴκοσι χιλιάδες ἀνδρῶν σπωμένων ῥομφαίαν.",
+        "VUL": "Zebee autem et Salmana requiescebant cum omni exercitu suo. Quindecim enim millia viri remanserant ex omnibus turmis orientalium populorum, cæsis centum viginti millibus bellatorum educentium gladium.",
+        "SYN": "Зевей же и Салман были в Каркоре и с ними их ополчение до пятнадцати тысяч, все, что осталось из всего ополчения жителей востока; пало же сто двадцать тысяч человек, обнажающих меч.",
+        "NEO": "Zébée et Salmana étaient à Carcor, et leur armée avec eux, quinze mille hommes environ, tous ceux qui étaient restés de l’armée entière des fils de l’Orient ; car il était tombé cent vingt mille hommes tirant l’épée.",
+        "NAB": "Now Zebah and Zalmunna were in Karkor with their force of about fifteen thousand men; these were all who were left of the whole Kedemite army, a hundred and twenty thousand swordsmen having fallen.",
+        "VAT_ES": "Zébaj y Salmuná estaban en Carcor con su ejército. Eran unos quince mil hombres, es decir, todos los sobrevivientes del campamento de los Orientales. Los que habían caído eran ciento veinte mil armados de espada.",
+        "CEI": "Zebach e Zalmunna erano a Karkor con il loro accampamento di circa quindicimila uomini, quanti erano rimasti dell'intero esercito dei figli dell'oriente; centoventimila uomini armati di spada erano caduti."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַל גִּדְע֗וֹן דֶּ֚רֶךְ הַ/שְּׁכוּנֵ֣י בָֽ/אֳהָלִ֔ים מִ/קֶּ֥דֶם לְ/נֹ֖בַח וְ/יָגְבֳּהָ֑ה וַ/יַּךְ֙ אֶת הַֽ/מַּחֲנֶ֔ה וְ/הַֽ/מַּחֲנֶ֖ה הָ֥יָה בֶֽטַח׃",
+        "LXX": "καὶ ἀνέβη Γεδεὼν ὁδὸν τῶν σκηνούντων ἐν σκηναῖς ἀπὸ ἀνατολῶν τῆς Νάβαι καὶ Ἰεγεβάλ· καὶ ἐπάταξεν τὴν παρεμβολήν, καὶ ἡ παρεμβολὴ ἦν πεποιθυῖα.",
+        "VUL": "Ascendensque Gedeon per viam eorum, qui in tabernaculis morabantur, ad orientalem partem Nobe et Jegbaa, percussit castra hostium, qui securi erant, et nihil adversi suspicabantur.",
+        "SYN": "Гедеон пошел к живущим в шатрах на восток от Новы и Иогбеги и поразил стан, когда стан стоял беспечно.",
+        "NEO": "Gédéon monta par le chemin de ceux qui habitent sous des tentes, à l’orient de Nobé et de Jegbaa, et il battit le camp, qui se croyait en sûreté.",
+        "NAB": "Gideon went up by the route of the nomads east of Nobah and Jogbehah, and attacked the camp when it felt secure.",
+        "VAT_ES": "Gedeón subió por el camino de los nómadas, al este de Nóbaj y de Iogbohá, y derrotó al ejército, cuando ya se creían seguros.",
+        "CEI": "Gedeone salì per la via dei nomadi a oriente di Nobach e di Iogbea e mise in rotta l'esercito che si credeva sicuro."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יָּנ֗וּסוּ זֶ֚בַח וְ/צַלְמֻנָּ֔ע וַ/יִּרְדֹּ֖ף אַחֲרֵי/הֶ֑ם וַ/יִּלְכֹּ֞ד אֶת שְׁנֵ֣י מַלְכֵ֣י מִדְיָ֗ן אֶת זֶ֨בַח֙ וְ/אֶת צַלְמֻנָּ֔ע וְ/כָל הַֽ/מַּחֲנֶ֖ה הֶחֱרִֽיד׃",
+        "LXX": "καὶ ἔφυγον Ζέβεε καὶ Σελμανά· καὶ ἐδίωξεν ὀπίσω αὐτῶν, καὶ ἐκράτησεν τοὺς δύο βασιλεῖς Μαδιάμ, τὸν Ζέβεε καὶ τὸν Σελμανά, καὶ πᾶσαν τὴν παρεμβολὴν ἐξέστησεν.",
+        "VUL": "Fugeruntque Zebee et Salmana, quos persequens Gedeon comprehendit, turbato omni exercitu eorum.",
+        "SYN": "Зевей и Салман побежали; он погнался за ними и схватил обоих царей Мадиамских, Зевея и Салмана, и весь стан привел в замешательство.",
+        "NEO": "Zébée et Salmana prirent la fuite ; il les poursuivit et s’empara des deux rois de Madian, Zébée et Salmana, et il mit en déroute tout le camp.",
+        "NAB": "Zebah and Zalmunna fled. He pursued them and took the two kings of Midian, Zebah and Zalmunna, captive, throwing the entire army into panic.",
+        "VAT_ES": "Zébaj y Salmuná, reyes de Madián, trataron de huir, pero Gedeón los persiguió, los capturó a los dos y sembró el pánico en todo el ejército.",
+        "CEI": "Zebach e Zalmunna si diedero alla fuga, ma egli li inseguì, prese i due re di Madian, Zebach e Zalmunna, e sbaragliò tutto l'esercito."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יָּ֛שָׁב גִּדְע֥וֹן בֶּן יוֹאָ֖שׁ מִן הַ/מִּלְחָמָ֑ה מִֽ/לְ/מַעֲלֵ֖ה הֶ/חָֽרֶס׃",
+        "LXX": "καὶ ἐπέστρεψεν Γεδεὼν υἱὸς Ἰωὰς ἀπὸ τῆς παρατάξεως ἀπὸ ἐπάνωθεν τῆς παρατάξεως Ἅρες.",
+        "VUL": "Revertensque de bello ante solis ortum,",
+        "SYN": "И возвратился Гедеон, сын Иоаса, с войны от возвышенности Хереса.",
+        "NEO": "Gédéon, fils de Joas, revint de la bataille par la montée de Harès.",
+        "NAB": "Then Gideon, son of Joash, returned from battle by the pass of Heres.",
+        "VAT_ES": "Después del combate, Gedeón, hijo de Joás, regresó por la pendiente de Jares.",
+        "CEI": "Poi Gedeone, figlio di Ioas, tornò dalla battaglia per la salita di Cheres."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּלְכָּד נַ֛עַר מֵ/אַנְשֵׁ֥י סֻכּ֖וֹת וַ/יִּשְׁאָלֵ֑/הוּ וַ/יִּכְתֹּ֨ב אֵלָ֜י/ו אֶת שָׂרֵ֤י סֻכּוֹת֙ וְ/אֶת זְקֵנֶ֔י/הָ שִׁבְעִ֥ים וְ/שִׁבְעָ֖ה אִֽישׁ׃",
+        "LXX": "καὶ συνέλαβεν παιδάριον ἀπὸ τῶν ἀνδρῶν Σοκχώθ, καὶ ἐπηρώτησεν αὐτόν· καὶ ἔγραψεν πρὸς αὐτὸν τὰ ὀνόματα τῶν ἀρχόντων Σοκχὼθ καὶ τῶν πρεσβυτέρων αὐτῶν, ἑβδομήκοντα καὶ ἑπτὰ ἄνδρας.",
+        "VUL": "apprehendit puerum de viris Soccoth : interrogavitque eum nomina principum et seniorum Soccoth, et descripsit septuaginta septem viros.",
+        "SYN": "И захватил юношу из жителей Сокхофа и выспросил у него; и он написал ему князей и старейшин Сокхофских семьдесят семь человек.",
+        "NEO": "Ayant saisi un jeune homme d’entre les gens de Soccoth, il l’interrogea, et celui-ci lui écrivit les noms des chefs et des anciens de Soccoth, soixante-dix-sept hommes.",
+        "NAB": "He captured a young man of Succoth, who upon being questioned listed for him the seventy-seven princes and elders of Succoth.",
+        "VAT_ES": "Entonces detuvo a un joven de Sucot, lo interrogó, y él le dio por escrito los nombres de los jefes y los ancianos de Sucot. Eran setenta y siete hombres.",
+        "CEI": "Catturò un giovane della gente di Succot e lo interrogò; quegli gli mise per iscritto i nomi dei capi e degli anziani di Succot: settantasette uomini."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹא֙ אֶל אַנְשֵׁ֣י סֻכּ֔וֹת וַ/יֹּ֕אמֶר הִנֵּ֖ה זֶ֣בַח וְ/צַלְמֻנָּ֑ע אֲשֶׁר֩ חֵרַפְתֶּ֨ם אוֹתִ֜/י לֵ/אמֹ֗ר הֲ֠/כַף זֶ֣בַח וְ/צַלְמֻנָּ֤ע עַתָּה֙ בְּ/יָדֶ֔/ךָ כִּ֥י נִתֵּ֛ן לַ/אֲנָשֶׁ֥י/ךָ הַ/יְּעֵפִ֖ים לָֽחֶם׃",
+        "LXX": "καὶ παρεγένετο Γεδεὼν πρὸς τοὺς ἄρχοντας Σοκχὼθ καὶ εἶπεν Ἰδοὺ Ζέβεε καὶ Σελμανά, ἐν οἷς ὠνειδίσατέ με λέγοντες Μὴ χεὶρ Ζέβεε καὶ Σελμανὰ νῦν ἐν χειρί σου, ὅτι δώσομεν τοῖς ἀνδράσιν τοῖς ἐκλιποῦσιν ἄρτους;",
+        "VUL": "Venitque ad Soccoth, et dixit eis : En Zebee et Salmana, super quibus exprobrastis mihi, dicentes : Forsitan manus Zebee et Salmana in manibus tuis sunt, et idcirco postulas ut demus viris, qui lassi sunt et defecerunt, panes.",
+        "SYN": "И пришел он к жителям Сокхофским, и сказал: вот Зевей и Салман, за которых вы посмеялись надо мною, говоря: разве рука Зевея и Салмана уже в твоей руке, чтобы нам давать хлеб утомившимся людям твоим?",
+        "NEO": "Alors Gédéon vint vers les gens de Soccoth et dit : « Voici Zébée et Salmana, au sujet desquels vous m’avez insulté, en disant : Le poing de Zébée et de Salmana est-il déjà dans ta main pour que nous donnions du pain à tes gens fatigués ? »",
+        "NAB": "So he went to the men of Succoth and said, \"Here are Zebah and Zalmunna, with whom you taunted me, 'Are the hands of Zebah and Zalmunna already in your possession, that we should give food to your weary followers?'\"",
+        "VAT_ES": "Luego se presentó ante los hombres de Sucot y les dijo: «Aquí están Zébaj y Salmuná, los hombres por los que ustedes se burlaron de mí, diciendo: «&iquest;Acaso ya tienes en tu poder a Zébaj y Salmuná para que les demos pan a tus tropas hambrientas?».",
+        "CEI": "Poi venne alla gente di Succot e disse: \"Ecco Zebach e Zalmunna, a proposito dei quali mi avete insultato dicendo: Hai tu forse già nelle mani i polsi di Zebach e Zalmunna perché dobbiamo dare il pane alla tua gente stanca?\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּח֙ אֶת זִקְנֵ֣י הָ/עִ֔יר וְ/אֶת קוֹצֵ֥י הַ/מִּדְבָּ֖ר וְ/אֶת הַֽ/בַּרְקֳנִ֑ים וַ/יֹּ֣דַע בָּ/הֶ֔ם אֵ֖ת אַנְשֵׁ֥י סֻכּֽוֹת׃",
+        "LXX": "καὶ ἔλαβεν τοὺς πρεσβυτέρους τῆς πόλεως ἐν ταῖς ἀκάνθαις τῆς ἐρήμου καὶ ταῖς βαρακηνείμ, καὶ ἠλόησεν ἐν αὐτοῖς τοὺς ἄνδρας τῆς πόλεως·",
+        "VUL": "Tulit ergo seniores civitatis et spinas deserti ac tribulos, et contrivit cum eis atque comminuit viros Soccoth.",
+        "SYN": "И взял старейшин города и терновник пустынный и зубчатые молотильные доски и наказал ими жителей Сокхофа;",
+        "NEO": "Il saisit les anciens de la ville et, ayant pris des épines du désert et des ronces, il en châtia les gens de Soccoth.",
+        "NAB": "He took the elders of the city, and thorns and briers of the desert, and ground these men of Succoth into them.",
+        "VAT_ES": "Después tomó a los ancianos de la ciudad, recogió espinas y cardos del desierto e hirió con ellos a los hombres de Sucot.",
+        "CEI": "Prese gli anziani della città e con le spine del deserto e con i cardi castigò gli uomini di Succot."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/אֶת מִגְדַּ֥ל פְּנוּאֵ֖ל נָתָ֑ץ וַֽ/יַּהֲרֹ֖ג אֶת אַנְשֵׁ֥י הָ/עִֽיר׃",
+        "LXX": "καὶ τὸν πύργον Φανουὴλ κατέστρεψεν, καὶ ἀπέκτεινεν τοὺς ἄνδρας τῆς πόλεως.",
+        "VUL": "Turrim quoque Phanuel subvertit, occisis habitatoribus civitatis.",
+        "SYN": "и башню Пенуэльскую разрушил, и перебил жителей города.",
+        "NEO": "Il rasa aussi la tour de Phanuel, et tua les hommes de la ville.",
+        "NAB": "He also demolished the tower of Penuel and slew the men of the city.",
+        "VAT_ES": "También derribó la torre de Penuel y mató a los hombres de la ciudad.",
+        "CEI": "Demolì la torre di Penuel e uccise gli uomini della città."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר אֶל זֶ֨בַח֙ וְ/אֶל צַלְמֻנָּ֔ע אֵיפֹה֙ הָ/אֲנָשִׁ֔ים אֲשֶׁ֥ר הֲרַגְתֶּ֖ם בְּ/תָב֑וֹר וַֽ/יֹּאמרוּ֙ כָּמ֣וֹ/ךָ כְמוֹ/הֶ֔ם אֶחָ֕ד כְּ/תֹ֖אַר בְּנֵ֥י הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ εἶπεν πρὸς Ζέβεε καὶ Σελμανά Ποῦ οἱ ἄνδρες οὓς ἀπεκτείνατε ἐν Θαβώρ; καὶ εἶπαν Ὡς σὺ ὣς αὐτοί, εἰς ὁμοίωμα υἱοῦ βασιλέως.",
+        "VUL": "Dixitque ad Zebee et Salmana : Quales fuerunt viri, quos occidistis in Thabor ? Qui responderunt : Similes tui, et unus ex eis quasi filius regis.",
+        "SYN": "И сказал Зевею и Салману: каковы были те, которых вы убили на Фаворе? Они сказали: они были такие, как ты, каждый имел вид сынов царских.",
+        "NEO": "Il dit à Zébée et à Salmana : « Comment étaient les hommes que vous avez tués au Thabor ? » ils dirent : « Ils étaient comme toi ; chacun d’eux avait l’air d’un fils de roi. »",
+        "NAB": "Then he said to Zebah and Zalmunna, \"Where now are the men you killed at Tabor?\" \"They all resembled you,\" they replied. \"They appeared to be princes.\"",
+        "VAT_ES": "Gedeón dijo a Zébaj y a Salmuná: «&iquest;Cómo eran los hombres que ustedes mataron en Tabor?». «Se parecían a ti, respondieron ellos; todos tenían aspecto de príncipes».",
+        "CEI": "Poi disse a Zebach e a Zalmunna: \"Come erano gli uomini che avete uccisi al Tabor?\". Quelli risposero: \"Erano come te; ognuno di loro aveva l'aspetto di un figlio di re\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמַ֕ר אַחַ֥/י בְּנֵֽי אִמִּ֖/י הֵ֑ם חַי יְהוָ֗ה ל֚וּ הַחֲיִתֶ֣ם אוֹתָ֔/ם לֹ֥א הָרַ֖גְתִּי אֶתְ/כֶֽם׃",
+        "LXX": "καὶ εἶπεν Γεδεών Ἀδελφοί μου καὶ υἱοὶ τῆς μητρός μου ἦσαν· ζῇ Κύριος, εἰ ἐζωογονήκειτε αὐτούς, οὐκ ἂν ἀπέκτεινα ὑμᾶς.",
+        "VUL": "Quibus ille respondit : Fratres mei fuerunt, filii matris meæ. Vivit Dominus, quia si servassetis eos, non vos occiderem.",
+        "SYN": "[Гедеон] сказал: это были братья мои, сыны матери моей. Жив Господь! если бы вы оставили их в живых, я не убил бы вас.",
+        "NEO": "Il dit : « C’étaient mes frères, fils de ma mère : \\+w Yahweh|strong=\"H3068\"\\+w** est vivant ! si vous les aviez laissés vivre, je ne vous tuerais pas. »",
+        "NAB": "\"They were my brothers, my mother's sons,\" he said. \"As the LORD lives, if you had spared their lives, I should not kill you.\"",
+        "VAT_ES": "Gedeón les respondió: «Ellos eran mis hermanos, hijos de mi madres, &iexcl;Juro por la vida del Señor, que si ustedes les hubieran perdonado la vida, ahora no los mataría!».",
+        "CEI": "Egli riprese: \"Erano miei fratelli, figli di mia madre; per la vita del Signore, se aveste risparmiato loro la vita, io non vi ucciderei!\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ לְ/יֶ֣תֶר בְּכוֹר֔/וֹ ק֖וּם הֲרֹ֣ג אוֹתָ֑/ם וְ/לֹא שָׁלַ֨ף הַ/נַּ֤עַר חַרְבּ/וֹ֙ כִּ֣י יָרֵ֔א כִּ֥י עוֹדֶ֖/נּוּ נָֽעַר׃",
+        "LXX": "καὶ εἶπεν Ἰέθερ τῷ πρωτοτόκῳ αὐτοῦ Ἀναστὰς ἀπόκτεινον αὐτούς· καὶ οὐκ ἔσπασεν τὸ παιδάριον τὴν ῥομφαίαν αὐτοῦ· ὅτι ἐφοβήθη, ὅτι ἔτι νεώτερος ἦν.",
+        "VUL": "Dixitque Jether primogenito suo : Surge, et interfice eos. Qui non eduxit gladium : timebat enim, quia adhuc puer erat.",
+        "SYN": "И сказал Иеферу, первенцу своему: встань, убей их. Но юноша не извлек меча своего, потому что боялся, так как был еще молод.",
+        "NEO": "Et il dit à Jéther, son premier-né : « Lève-toi, tue-les. » Mais le jeune homme ne tira pas son épée, parce qu’il avait peur, car il était encore un jeune garçon.",
+        "NAB": "Then he said to his first-born, Jether, \"Go, kill them.\" Since Jether was still a boy, he was afraid and did not draw his sword.",
+        "VAT_ES": "Entonces dijo a Iéter, su hijo mayor: «Mátalos aquí mismo». Pero el muchacho tuvo miedo de sacar la espada, porque todavía era muy joven.",
+        "CEI": "Poi disse a Ieter, suo primogenito: \"Su, uccidili!\". Ma il giovane non estrasse la spada, perché aveva paura, poiché era ancora giovane."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֜אמֶר זֶ֣בַח וְ/צַלְמֻנָּ֗ע ק֤וּם אַתָּה֙ וּ/פְגַע בָּ֔/נוּ כִּ֥י כָ/אִ֖ישׁ גְּבוּרָת֑/וֹ וַ/יָּ֣קָם גִּדְע֗וֹן וַֽ/יַּהֲרֹג֙ אֶת זֶ֣בַח וְ/אֶת צַלְמֻנָּ֔ע וַ/יִּקַּח֙ אֶת הַ/שַּׂ֣הֲרֹנִ֔ים אֲשֶׁ֖ר בְּ/צַוְּארֵ֥י גְמַלֵּי/הֶֽם׃",
+        "LXX": "καὶ εἶπεν Ζέβεε καὶ Σελμανά Ἀνάστα σὺ καὶ συνάντησον ἡμῖν, ὅτι ὡς ἀνδρὸς ἡ δύναμίς σου. καὶ ἀνέστη Γεδεὼν καὶ ἀπέκτεινεν τὸν Ζέβεε καὶ τὸν Σαλμανά, καὶ ἔλαβεν τοὺς μηνίσκους τοὺς ἐν τοῖς τραχήλοις τῶν καμήλων αὐτῶν.",
+        "VUL": "Dixeruntque Zebee et Salmana : Tu surge, et irrue in nos : quia juxta ætatem robur est hominis. Surrexit Gedeon, et interfecit Zebee et Salmana : et tulit ornamenta ac bullas quibus colla regalium camelorum decorari solent.",
+        "SYN": "И сказали Зевей и Салман: встань сам и порази нас, потому что по человеку и сила его. И встал Гедеон, и убил Зевея и Салмана, и взял пряжки, бывшие на шеях верблюдов их.",
+        "NEO": "Zébée et Salmana dirent : « Lève-toi toi-même et tombe sur nous ; car tel est l’homme, telle est sa force. » Gédéon se leva et tua Zébée et Salmana ; et il prit les croissants qui étaient aux cous de leurs chameaux.",
+        "NAB": "Zebah and Zalmunna said, \"Come, kill us yourself, for a man's strength is like the man.\" So Gideon stepped forward and killed Zebah and Zalmunna. He also took the crescents that were on the necks of their camels.",
+        "VAT_ES": "Zébaj y Salmuná dijeron: «Mátanos tú, porque un hombre se mide por su valor». Gedeón se levantó, mató a Zébaj y a Salmuná, y se guardó los adornos que sus camellos llevaban en el cuello.",
+        "CEI": "Zebach e Zalmunna dissero: \"Suvvia, colpisci tu stesso, poiché qual è l'uomo, tale è la sua forza\". Gedeone si alzò e uccise Zebach e Zalmunna e prese le lunette che i loro cammelli portavano al collo."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֤וּ אִֽישׁ יִשְׂרָאֵל֙ אֶל גִּדְע֔וֹן מְשָׁל בָּ֨/נוּ֙ גַּם אַתָּ֔ה גַּם בִּנְ/ךָ֖ גַּ֣ם בֶּן בְּנֶ֑/ךָ כִּ֥י הוֹשַׁעְתָּ֖/נוּ מִ/יַּ֥ד מִדְיָֽן׃",
+        "LXX": "Καὶ εἶπον ἀνὴρ Ἰσραὴλ πρὸς Γεδεών Κύριε, ἄρξον ἡμῶν καὶ σὺ καὶ ὁ υἱός σου· ὅτι σὺ ἔσωσας ἡμᾶς ἐκ χειρὸς Μαδιάμ.",
+        "VUL": "Dixeruntque omnes viri Israël ad Gedeon : Dominare nostri tu, et filius tuus, et filius filii tui : quia liberasti nos de manu Madian.",
+        "SYN": "И сказали Израильтяне Гедеону: владей нами ты и сын твой и сын сына твоего, ибо ты спас нас из руки Мадианитян.",
+        "NEO": "Les hommes d’Israël dirent à Gédéon : « Règne sur nous, toi et ton fils, et le fils de ton fils, car tu nous as délivrés des mains de Madian. »",
+        "NAB": "The Israelites then said to Gideon, \"Rule over us - you, your son, and your son's son - for you rescued us from the power of Midian.\"",
+        "VAT_ES": "Los hombres de Israel dijeron a Gedeón: «Gobiérnanos tú, y que después de ti nos gobiernen tu hijo y tu nieto, porque nos salvaste del poder de Madián».",
+        "CEI": "Allora gli Israeliti dissero a Gedeone: \"Regna su di noi tu e i tuoi discendenti, poiché ci hai liberati dalla mano di Madian\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֲלֵ/הֶם֙ גִּדְע֔וֹן לֹֽא אֶמְשֹׁ֤ל אֲנִי֙ בָּ/כֶ֔ם וְ/לֹֽא יִמְשֹׁ֥ל בְּנִ֖/י בָּ/כֶ֑ם יְהוָ֖ה יִמְשֹׁ֥ל בָּ/כֶֽם׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτοὺς Γεδεών Οὐκ ἄρξω ἐγώ, καὶ οὐκ ἄρξει ὁ υἱός μου ἐν ὑμῖν· Κύριος ἄρξει ὑμῶν.",
+        "VUL": "Quibus ille ait : Non dominabor vestri, nec dominabitur in vos filius meus, sed dominabitur vobis Dominus.",
+        "SYN": "Гедеон сказал им: ни я не буду владеть вами, ни мой сын не будет владеть вами; Господь да владеет вами.",
+        "NEO": "Gédéon leur dit : « Je ne dominerai pas sur vous et mon fils ne dominera pas sur vous : c’est \\+w Yahweh|strong=\"H3068\"\\+w** qui dominera sur vous. »",
+        "NAB": "But Gideon answered them, \"I will not rule over you, nor shall my son rule over you. The LORD must rule over you.\"",
+        "VAT_ES": "Pero Gedeón les respondió: «Ni yo los gobernaré ni tampoco mi hijo; sólo el Señor los gobernará».",
+        "CEI": "Ma Gedeone rispose loro: \"Io non regnerò su di voi né mio figlio regnerà; il Signore regnerà su di voi\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֲלֵ/הֶ֜ם גִּדְע֗וֹן אֶשְׁאֲלָ֤ה מִ/כֶּם֙ שְׁאֵלָ֔ה וּ/תְנוּ לִ֕/י אִ֖ישׁ נֶ֣זֶם שְׁלָל֑/וֹ כִּֽי נִזְמֵ֤י זָהָב֙ לָ/הֶ֔ם כִּ֥י יִשְׁמְעֵאלִ֖ים הֵֽם׃",
+        "LXX": "καὶ εἶπεν Γεδεὼν πρὸς αὐτούς Αἰτήσομαι παρ’ ὑμῶν αἴτημα, καὶ δότε μοι ἀνὴρ ἐνώτιον ἐκ σκύλων αὐτοῦ· ὅτι ἐνώτια χρυσᾶ αὐτοῖς, ὅτι Ἰσμαηλεῖται ἦσαν.",
+        "VUL": "Dixitque ad eos : Unam petitionem postulo a vobis : date mihi inaures ex præda vestra. Inaures enim aureas Ismaëlitæ habere consueverant.",
+        "SYN": "И сказал им Гедеон: прошу у вас одного, дайте мне каждый по серьге из добычи своей. [Ибо у _неприятелей_ много было золотых серег, потому что они были Измаильтяне.]",
+        "NEO": "Gédéon leur dit : « J’ai une demande à vous faire : donnez-moi chacun les anneaux de votre butin. » — Les ennemis avaient des anneaux d’or, car ils étaient Ismaélites. —",
+        "NAB": "Gideon went on to say, \"I should like to make a request of you. Will each of you give me a ring from his booty?\" (For being Ishmaelites, the enemy had gold rings.)",
+        "VAT_ES": "Luego añadió: «Les voy a pedir una cosa: que cada uno me dé un anillo de lo que le ha tocado como botín». Porque los vencidos eran ismaelitas, y por eso tenían anillos de oro.",
+        "CEI": "Poi Gedeone disse loro: \"Una cosa voglio chiedervi: ognuno di voi mi dia un pendente del suo bottino\". I nemici avevano pendenti d'oro, perché erano Ismaeliti."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֖וּ נָת֣וֹן נִתֵּ֑ן וַֽ/יִּפְרְשׂוּ֙ אֶת הַ/שִּׂמְלָ֔ה וַ/יַּשְׁלִ֣יכוּ שָׁ֔מָּ/ה אִ֖ישׁ נֶ֥זֶם שְׁלָלֽ/וֹ׃",
+        "LXX": "καὶ εἶπαν Διδόντες δώσομεν· καὶ ἀνέπτυξεν τὸ ἱμάτιον αὐτοῦ, καὶ ἔβαλεν ἐκεῖ ἀνὴρ ἐνώτιον σκύλων αὐτοῦ.",
+        "VUL": "Qui responderunt : Libentissime dabimus. Expandentesque super terram pallium, projecerunt in eo inaures de præda :",
+        "SYN": "Они сказали: дадим. И разостлали одежду и бросали туда каждый по серьге из добычи своей.",
+        "NEO": "Ils dirent : « Nous les donnerons volontiers. » Et ils étendirent un manteau, sur lequel chacun jeta les anneaux de son butin.",
+        "NAB": "\"We will gladly give them,\" they replied, and spread out a cloak into which everyone threw a ring from his booty.",
+        "VAT_ES": "«Te los daremos con mucho gusto», respondieron ellos. Entonces él extendió su manto, y cada israelita depositó en él un anillo de su botín.",
+        "CEI": "Risposero: \"Li daremo volentieri\". Egli stese allora il mantello e ognuno vi gettò un pendente del suo bottino\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י מִשְׁקַ֞ל נִזְמֵ֤י הַ/זָּהָב֙ אֲשֶׁ֣ר שָׁאָ֔ל אֶ֥לֶף וּ/שְׁבַע מֵא֖וֹת זָהָ֑ב לְ֠/בַד מִן הַ/שַּׂהֲרֹנִ֨ים וְ/הַ/נְּטִפ֜וֹת וּ/בִגְדֵ֣י הָ/אַרְגָּמָ֗ן שֶׁ/עַל֙ מַלְכֵ֣י מִדְיָ֔ן וּ/לְ/בַד֙ מִן הָ֣/עֲנָק֔וֹת אֲשֶׁ֖ר בְּ/צַוְּארֵ֥י גְמַלֵּי/הֶֽם׃",
+        "LXX": "καὶ ἐγένετο ὁ σταθμὸς τῶν ἐνωτίων τῶν χρυσῶν ὧν ᾔτησεν χίλιοι καὶ πεντακόσιοι χρυσοῖ, παρὲξ τῶν μηνίσκων καὶ τῶν στραγγαλίδων καὶ τῶν ἱματίων καὶ πορφυρίδων τῶν ἐπὶ βασιλεῦσι Μαδιάμ, καὶ ἐκτὸς τῶν περιθεμάτων ἃ ἦν ἐν τοῖς τραχήλοις τῶν καμήλων αὐτῶν.",
+        "VUL": "et fuit pondus postulatarum inaurium, mille septingenti auri sicli, absque ornamentis, et monilibus, et veste purpurea, quibus reges Madian uti soliti erant, et præter torques aureas camelorum.",
+        "SYN": "Весу в золотых серьгах, которые он выпросил, было тысяча семьсот золотых [сиклей], кроме пряжек, пуговиц и пурпуровых одежд, которые были на царях Мадиамских, и кроме [золотых] цепочек, которые были на шее у верблюдов их.",
+        "NEO": "Le poids des anneaux d’or qu’avait demandés Gédéon fut de mille sept cents sicles d’or, sans les croissants, les pendants d’oreilles et les vêtements de pourpre que portaient les rois de Madian, et sans les colliers qui étaient aux cous de leurs chameaux.",
+        "NAB": "The gold rings that he requested weighed seventeen hundred gold shekels, in addition to the crescents and pendants, the purple garments worn by the kings of Midian, and the trappings that were on the necks of their camels.",
+        "VAT_ES": "El peso de los anillos que recogió fue de mil setecientos siclos de oro, sin contar los prendedores, los aros y los vestidos de púrpura que llevaban los reyes de Madián, y sin contar tampoco los collares de los camellos.",
+        "CEI": "Il peso dei pendenti d'oro, che egli aveva chiesti, fu di millesettecento sicli d'oro, oltre le lunette, le catenelle e le vesti di porpora, che i re di Madian avevano addosso, e oltre le collane che i loro cammelli avevano al collo."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יַּעַשׂ֩ אוֹת֨/וֹ גִדְע֜וֹן לְ/אֵפ֗וֹד וַ/יַּצֵּ֨ג אוֹת֤/וֹ בְ/עִיר/וֹ֙ בְּ/עָפְרָ֔ה וַ/יִּזְנ֧וּ כָֽל יִשְׂרָאֵ֛ל אַחֲרָ֖י/ו שָׁ֑ם וַ/יְהִ֛י לְ/גִדְע֥וֹן וּ/לְ/בֵית֖/וֹ לְ/מוֹקֵֽשׁ׃",
+        "LXX": "καὶ ἐποίησεν αὐτὸ Γεδεὼν εἰς ἐφώθ, καὶ ἔστησεν αὐτὸ ἐν πόλει αὐτοῦ Ἐφραθά· καὶ ἐξεπόρνευσεν πᾶς Ἰσραὴλ ὀπίσω αὐτοῦ ἐκεῖ, καὶ ἐγένετο τῷ Γεδεὼν καὶ τῷ οἴκῳ αὐτοῦ εἰς σκῶλον.",
+        "VUL": "Fecitque ex eo Gedeon ephod, et posuit illud in civitate sua Ephra. Fornicatusque est omnis Israël in eo, et factum est Gedeoni et omni domui ejus in ruinam.",
+        "SYN": "Из этого сделал Гедеон ефод и положил его в своем городе, в Офре, и стали все Израильтяне блудно ходить туда за ним, и был он сетью Гедеону и всему дому его.",
+        "NEO": "Avec cet or, Gédéon fit un éphod, et il le déposa dans sa ville, à Ephra. Tout Israël alla se prostituer là après cet éphod, et il fut un piège pour Gédéon et pour sa maison.",
+        "NAB": "Gideon made an ephod out of the gold and placed it in his city Ophrah. However, all Israel paid idolatrous homage to it there, and caused the ruin of Gideon and his family.",
+        "VAT_ES": "Con todo eso, Gedeón hizo un efod, y lo instaló en su ciudad, en Ofrá. Todo Israel fue a prostituirse allí, delante del efod, que se convirtió en una trampa para Gedeón y su familia.",
+        "CEI": "Gedeone ne fece un efod che pose in Ofra sua città; tutto Israele vi si prostrò davanti in quel luogo e ciò divenne una causa di rovina per Gedeone e per la sua casa."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יִּכָּנַ֣ע מִדְיָ֗ן לִ/פְנֵי֙ בְּנֵ֣י יִשְׂרָאֵ֔ל וְ/לֹ֥א יָסְפ֖וּ לָ/שֵׂ֣את רֹאשָׁ֑/ם וַ/תִּשְׁקֹ֥ט הָ/אָ֛רֶץ אַרְבָּעִ֥ים שָׁנָ֖ה בִּ/ימֵ֥י גִדְעֽוֹן׃",
+        "LXX": "καὶ συνεστάλη Μαδιὰμ ἐνώπιον υἱῶν Ἰσραήλ, καὶ οὐ προσέθηκαν ἆραι κεφαλὴν αὐτῶν. καὶ ἡσύχασεν ἡ γῆ τεσσεράκοντα ἔτη ἐν ἡμέραις Γεδεών.",
+        "VUL": "Humiliatus est autem Madian coram filiis Israël, nec potuerunt ultra cervices elevare : sed quievit terra per quadraginta annos, quibus Gedeon præfuit.",
+        "SYN": "Так смирились Мадианитяне пред сынами Израиля и не стали уже поднимать головы своей, и покоилась земля сорок лет во дни Гедеона.",
+        "NEO": "Madian fut humilié devant les enfants d’Israël et il ne leva plus la tête ; et le pays fut en repos pendant quarante ans, aux jours de Gédéon.",
+        "NAB": "Thus was Midian brought into subjection by the Israelites; no longer did they hold their heads high. And the land had rest for forty years, during the lifetime of Gideon.",
+        "VAT_ES": "Madián quedó humillado delante de los israelitas, y no volvió a levantar cabeza. El país estuvo tranquilo durante cuarenta años, mientras vivió Gedeón.",
+        "CEI": "Così Madian fu umiliato davanti agli Israeliti e non alzò più il capo; il paese rimase in pace per quarant'anni, durante la vita di Gedeone."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֛לֶךְ יְרֻבַּ֥עַל בֶּן יוֹאָ֖שׁ וַ/יֵּ֥שֶׁב בְּ/בֵיתֽ/וֹ׃",
+        "LXX": "Καὶ ἐπορεύθη Ἰεαροβάαλ υἱὸς Ἰωὰς καὶ ἐκάθισεν ἐν οἴκῳ αὐτοῦ.",
+        "VUL": "Abiit itaque Jerobaal filius Joas, et habitavit in domo sua :",
+        "SYN": "И пошел Иероваал, сын Иоасов, и жил в доме своем.",
+        "NEO": "Jérobaal, fils de Joas, s’en retourna et demeura dans sa maison.",
+        "NAB": "Then Jerubbaal, son of Joash, went back home to stay.",
+        "VAT_ES": "Ierubaal, hijo de Joás, se fue y permaneció en su casa.",
+        "CEI": "Ierub-Baal, figlio di Ioas, tornò a dimorare a casa sua."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וּ/לְ/גִדְע֗וֹן הָיוּ֙ שִׁבְעִ֣ים בָּנִ֔ים יֹצְאֵ֖י יְרֵכ֑/וֹ כִּֽי נָשִׁ֥ים רַבּ֖וֹת הָ֥יוּ לֽ/וֹ׃",
+        "LXX": "καὶ τῷ Γεδεὼν ἦσαν ἑβδομήκοντα υἱοὶ ἐκπεπορευμένοι ἐκ μηρῶν αὐτοῦ, ὅτι γυναῖκες πολλαὶ ἦσαν αὐτῷ.",
+        "VUL": "habuitque septuaginta filios, qui egressi sunt de femore ejus : eo quod plures haberet uxores.",
+        "SYN": "У Гедеона было семьдесят сыновей, происшедших от чресл его, потому что у него много было жен.",
+        "NEO": "Gédéon eut soixante-dix fils, issus de lui, car il eut de nombreuses femmes.",
+        "NAB": "Now Gideon had seventy sons, his direct descendants, for he had many wives.",
+        "VAT_ES": "Gedeón tuvo setenta hijos propios, porque tenía muchas mujeres.",
+        "CEI": "Gedeone ebbe settanta figli che gli erano nati dalle molte mogli."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וּ/פִֽילַגְשׁ/וֹ֙ אֲשֶׁ֣ר בִּ/שְׁכֶ֔ם יָֽלְדָה לּ֥/וֹ גַם הִ֖יא בֵּ֑ן וַ/יָּ֥שֶׂם אֶת שְׁמ֖/וֹ אֲבִימֶֽלֶךְ׃",
+        "LXX": "καὶ παλλακὴ αὐτοῦ ἦν ἐν Συχέμ· καὶ ἔτεκεν αὐτῷ καί γε αὐτὴ υἱόν, καὶ ἔθηκεν τὸ ὄνομα αὐτοῦ Ἀβειμέλεχ.",
+        "VUL": "Concubina autem illius, quam habebat in Sichem, genuit ei filium nomine Abimelech.",
+        "SYN": "Также и наложница, жившая в Сихеме, родила ему сына, и он дал ему имя Авимелех.",
+        "NEO": "Sa concubine, qui était à Sichem, lui enfanta, elle aussi, un fils qui reçut le tient d’Abimélek.",
+        "NAB": "His concubine who lived in Shechem also bore him a son, whom he named Abimelech.",
+        "VAT_ES": "La concubina que tenía en Siquem también le dio un hijo, a quien puso el nombre de Abimélec.",
+        "CEI": "Anche la sua concubina che stava a Sichem gli partorì un figlio, che chiamò Abimèlech."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יָּ֛מָת גִּדְע֥וֹן בֶּן יוֹאָ֖שׁ בְּ/שֵׂיבָ֣ה טוֹבָ֑ה וַ/יִּקָּבֵ֗ר בְּ/קֶ֨בֶר֙ יוֹאָ֣שׁ אָבִ֔י/ו בְּ/עָפְרָ֖ה אֲבִ֥י הָֽעֶזְרִֽי׃",
+        "LXX": "καὶ ἀπέθανεν Γεδεὼν υἱὸς Ἰωὰς ἐν πόλει αὐτοῦ, καὶ ἐτάφη ἐν τῷ τάφῳ Ἰωὰς τοῦ πατρὸς αὐτοῦ ἐν Ἐφραθὰ Ἀβιεσδρί.",
+        "VUL": "Mortuusque est Gedeon filius Joas in senectute bona, et sepultus est in sepulchro Joas patris sui in Ephra de familia Ezri.",
+        "SYN": "И умер Гедеон, сын Иоасов, в глубокой старости, и погребен во гробе отца своего Иоаса, в Офре Авиезеровой.",
+        "NEO": "Gédéon, fils de Joas, mourut dans une heureuse vieillesse, et il fut enterré dans le sépulcre de Joas, son père, à Ephra d’Abiéser.",
+        "NAB": "At a good old age Gideon, son of Joash, died and was buried in the tomb of his father Joash in Ophrah of the Abiezrites.",
+        "VAT_ES": "Gedeón, hijo de Joás, murió después de una feliz vejez, y fue enterrado en la tumba de su padre Joás, en Ofrá de Abiézer.",
+        "CEI": "Poi Gedeone, figlio di Ioas, morì in buona vecchiaia e fu sepolto nella tomba di Ioas suo padre a Ofra degli Abiezeriti."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י כַּֽ/אֲשֶׁר֙ מֵ֣ת גִּדְע֔וֹן וַ/יָּשׁ֨וּבוּ֙ בְּנֵ֣י יִשְׂרָאֵ֔ל וַ/יִּזְנ֖וּ אַחֲרֵ֣י הַ/בְּעָלִ֑ים וַ/יָּשִׂ֧ימוּ לָ/הֶ֛ם בַּ֥עַל בְּרִ֖ית לֵ/אלֹהִֽים׃",
+        "LXX": "Καὶ ἐγένετο καθὼς ἀπέθανεν Γεδεών, καὶ ἐπέστρεψαν οἱ υἱοὶ Ἰσραὴλ καὶ ἐξεπόρνευσαν ὀπίσω τῶν Βααλείμ, καὶ ἔθηκαν ἑαυτοῖς τῷ Βάαλ διαθήκην τοῦ εἶναι αὐτοῖς αὐτὸν εἰς θεόν.",
+        "VUL": "Postquam autem mortuus est Gedeon, aversi sunt filii Israël, et fornicati sunt cum Baalim. Percusseruntque cum Baal fdus, ut esset eis in deum :",
+        "SYN": "Когда умер Гедеон, сыны Израилевы опять стали блудно ходить вслед Ваалов и поставили себе богом Ваалверифа;",
+        "NEO": "Lorsque Gédéon fut mort, les enfants d’Israël se prostituèrent de nouveau aux Baals, et ils prirent Baal-Berith pour leur dieu.",
+        "NAB": "But after Gideon was dead, the Israelites again abandoned themselves to the Baals, making Baal of Berith their god",
+        "VAT_ES": "Después de la muerte de Gedeón, los israelitas volvieron a prostituirse ante los Baales y tomaron como dios a Baal Berit.",
+        "CEI": "Dopo la morte di Gedeone gli Israeliti tornarono a prostituirsi a Baal e presero Baal-Berit come loro dio."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְ/לֹ֤א זָֽכְרוּ֙ בְּנֵ֣י יִשְׂרָאֵ֔ל אֶת יְהוָ֖ה אֱלֹהֵי/הֶ֑ם הַ/מַּצִּ֥יל אוֹתָ֛/ם מִ/יַּ֥ד כָּל אֹיְבֵי/הֶ֖ם מִ/סָּבִֽיב׃",
+        "LXX": "καὶ οὐκ ἐμνήσθησαν οἱ υἱοὶ Ἰσραὴλ Κυρίου τοῦ θεοῦ τοῦ ῥυσαμένου αὐτοὺς ἐκ χειρὸς πάντων τῶν θλιβόντων αὐτοὺς κυκλόθεν.",
+        "VUL": "nec recordati sunt Domini Dei sui, qui eruit eos de manibus inimicorum suorum omnium per circuitum :",
+        "SYN": "и не вспомнили сыны Израилевы Господа Бога своего, Который избавлял их из руки всех врагов, окружавших их;",
+        "NEO": "Les enfants d’Israël ne se souvinrent plus de \\+w Yahweh|strong=\"H3068\"\\+w**, leur Dieu, qui les avait délivrés de la main de tous leurs ennemis autour d’eux ;",
+        "NAB": "and forgetting the LORD, their God, who had delivered them from the power of their enemies all around them.",
+        "VAT_ES": "Así se olvidaron del Señor, su Dios, que los había librado de todos los enemigos de alrededor.",
+        "CEI": "Gli Israeliti non si ricordarono del Signore loro Dio che li aveva liberati dalle mani di tutti i loro nemici all'intorno"
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא עָשׂ֣וּ חֶ֔סֶד עִם בֵּ֥ית יְרֻבַּ֖עַל גִּדְע֑וֹן כְּ/כָל הַ/טּוֹבָ֔ה אֲשֶׁ֥ר עָשָׂ֖ה עִם יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ οὐκ ἐποίησαν ἔλεος μετὰ τοῦ οἴκου Ἰεροβάαλ, αὐτός ἐστιν Γεδεών, κατὰ πάντα τὰ ἀγαθὰ ἃ ἐποίησεν μετὰ Ἰσραήλ.",
+        "VUL": "nec fecerunt misericordiam cum domo Jerobaal Gedeon, juxta omnia bona quæ fecerat Israëli.",
+        "SYN": "и дому Иероваалову, _или_ Гедеонову, не сделали милости за все благодеяния, какие он сделал Израилю.",
+        "NEO": "et ils ne montrèrent pas d’attachement à la maison de Jérobaal-Gédéon, selon tout le bien qu’il avait fait à Israël.",
+        "NAB": "Nor were they grateful to the family of Jerubbaal (Gideon) for all the good he had done for Israel.",
+        "VAT_ES": "Y no agradecieron a la casa de Ierubaal Gedeón todo el bien que él había a Israel.",
+        "CEI": "e non dimostrarono gratitudine alla casa di Ierub-Baal, cioè di Gedeone, per tutto il bene che egli aveva fatto a Israele."
+      }
+    }
+  }
+}

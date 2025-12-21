@@ -1,0 +1,303 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LEVI_017",
+  "book_key": "LEVI",
+  "sequence": 17,
+  "chapter_in": {
+    "MT": 17,
+    "VUL": 17,
+    "LXX": 17
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Et locutus est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse ancora a Mosè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "דַּבֵּ֨ר אֶֽל אַהֲרֹ֜ן וְ/אֶל בָּנָ֗י/ו וְ/אֶל֙ כָּל בְּנֵ֣י יִשְׂרָאֵ֔ל וְ/אָמַרְתָּ֖ אֲלֵי/הֶ֑ם זֶ֣ה הַ/דָּבָ֔ר אֲשֶׁר צִוָּ֥ה יְהוָ֖ה לֵ/אמֹֽר׃",
+        "LXX": "Λάλησον πρὸς Ἀαρὼν καὶ πρὸς τοὺς υἱοὺς αὐτοῦ καὶ πρὸς πάντας υἱοὺς Ἰσραὴλ καὶ ἐρεῖς πρὸς αὐτούς Τοῦτο τὸ ῥῆμα ὃ ἐνετείλατο Κύριος λέγων",
+        "VUL": "Loquere Aaron et filiis ejus, et cunctis filiis Israël, dicens ad eos : Iste est sermo quem mandavit Dominus, dicens :",
+        "SYN": "объяви Аарону и сынам его и всем сынам Израилевым и скажи им: вот что повелевает Господь:",
+        "NEO": "« Parle à Aaron et à ses fils, et à tous les enfants d’Israël, et tu leur diras : Voici ce que \\+w Yahweh|strong=\"H3068\"\\+w** a ordonné.",
+        "NAB": "\"Speak to Aaron and his sons, as well as to all the Israelites, and tell them: This is what the LORD has commanded.",
+        "VAT_ES": "Habla a Aarón, a sus hijos y a todos los israelitas, y diles: El Señor ha dado esta orden:",
+        "CEI": "\"Parla ad Aronne, ai suoi figli e a tutti gli Israeliti e riferisci loro: Questo il Signore ha ordinato:"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אִ֥ישׁ אִישׁ֙ מִ/בֵּ֣ית יִשְׂרָאֵ֔ל אֲשֶׁ֨ר יִשְׁחַ֜ט שׁ֥וֹר אוֹ כֶ֛שֶׂב אוֹ עֵ֖ז בַּֽ/מַּחֲנֶ֑ה א֚וֹ אֲשֶׁ֣ר יִשְׁחַ֔ט מִ/ח֖וּץ לַֽ/מַּחֲנֶֽה׃",
+        "LXX": "Ἄνθρωπος ἄνθρωπος τῶν υἱῶν Ἰσραὴλ ἢ τῶν προσηλύτων ἢ τῶν προσκειμένων ἐν ὑμῖν ὃς ἂν σφάξῃ μόσχον ἢ πρόβατον ἢ αἶγα ἐν τῇ παρεμβολῇ καὶ ὃς ἂν σφάξῃ ἔξω τῆς παρεμβολῆς",
+        "VUL": "Homo quilibet de domo Israël, si occiderit bovem aut ovem, sive capram, in castris vel extra castra,",
+        "SYN": "если кто из дома Израилева [или из пришельцев, присоединившихся к вам] заколет тельца или овцу или козу в стане, или если кто заколет вне стана",
+        "NEO": "Tout homme de la maison d’Israël qui, dans le camp ou hors du camp, égorge un bœuf, une brebis ou une chèvre,",
+        "NAB": "Any Israelite who slaughters an ox or a sheep or a goat, whether in the camp or outside of it,",
+        "VAT_ES": "Si un hombre de la casa de Israel inmola un buey, una oveja o una cabra dentro del campamento o fuera de él,",
+        "CEI": "Qualunque Israelita scanna un bue o un agnello o una capra entro il campo o fuori del campo"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/אֶל פֶּ֜תַח אֹ֣הֶל מוֹעֵד֮ לֹ֣א הֱבִיא/וֹ֒ לְ/הַקְרִ֤יב קָרְבָּן֙ לַֽ/יהוָ֔ה לִ/פְנֵ֖י מִשְׁכַּ֣ן יְהוָ֑ה דָּ֣ם יֵחָשֵׁ֞ב לָ/אִ֤ישׁ הַ/הוּא֙ דָּ֣ם שָׁפָ֔ךְ וְ/נִכְרַ֛ת הָ/אִ֥ישׁ הַ/ה֖וּא מִ/קֶּ֥רֶב עַמּֽ/וֹ׃",
+        "LXX": "καὶ ἐπὶ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου μὴ ἐνέγκῃ ὥστε ποιῆσαι αὐτὸ εἰς ὁλοκαύτωμα ἢ σωτήριον Κυρίῳ δεκτὸν εἰς ὀσμὴν εὐωδίας, καὶ ὃς ἂν σφάξῃ ἔξω καὶ ἐπὶ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου μὴ ἐνέγκῃ αὐτὸ ὥστε μὴ προσενέγκαι δῶρον Κυρίῳ ἀπέναντι τῆς σκηνῆς Κυρίου, καὶ λογισθήσεται τῷ ἀνθρώπῳ ἐκείνῳ αἷμα· αἷμα ἐξέχεεν, ἐξολεθρευθήσεται ἡ ψυχὴ ἐκείνη ἐκ τοῦ λαοῦ αὐτῆς.",
+        "VUL": "et non obtulerit ad ostium tabernaculi oblationem Domino, sanguinis reus erit : quasi si sanguinem fuderit, sic peribit de medio populi sui.",
+        "SYN": "и не приведет ко входу скинии собрания, [чтобы принести во всесожжение или в жертву о спасении, угодную Господу, в приятное благоухание, и если кто заколет вне _стана_ и ко входу скинии собрания не принесет,] чтобы представить в жертву Господу пред жилищем Господним, то человеку тому вменена будет кровь: он пролил кровь, и истребится человек тот из народа своего;",
+        "NEO": "sans l’amener à l’entrée de la tente de réunion pour le présenter en offrande à \\+w Yahweh|strong=\"H3068\"\\+w** devant la Demeure de \\+w Yahweh|strong=\"H3068\"\\+w**, le sang sera imputé à cet homme ; il a répandu le sang, cet homme sera retranché du milieu de son peuple.",
+        "NAB": "without first bringing it to the entrance of the meeting tent to present it as an offering to the LORD in front of his Dwelling, shall be judged guilty of bloodshed; and for this, such a man shall be cut off from among his people.",
+        "VAT_ES": "y no lo lleva a la entrada de la Carpa del Encuentro para presentarlo como ofrenda al Señor, delante de su Morada, será considerado reo de sangre: él ha derramado sangre, y por eso será excluido de su pueblo.",
+        "CEI": "e non lo conduce all'ingresso della tenda del convegno per presentarlo come offerta al Signore davanti alla Dimora del Signore, sarà considerato colpevole di delitto di sangue: ha sparso il sangue e questo uomo sarà eliminato dal suo popolo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לְמַעַן֩ אֲשֶׁ֨ר יָבִ֜יאוּ בְּנֵ֣י יִשְׂרָאֵ֗ל אֶֽת זִבְחֵי/הֶם֮ אֲשֶׁ֣ר הֵ֣ם זֹבְחִים֮ עַל פְּנֵ֣י הַ/שָּׂדֶה֒ וֶֽ/הֱבִיאֻ֣/ם לַֽ/יהוָ֗ה אֶל פֶּ֛תַח אֹ֥הֶל מוֹעֵ֖ד אֶל הַ/כֹּהֵ֑ן וְ/זָ֨בְח֜וּ זִבְחֵ֧י שְׁלָמִ֛ים לַֽ/יהוָ֖ה אוֹתָֽ/ם׃",
+        "LXX": "ὅπως ἀναφέρωσιν οἱ υἱοὶ Ἰσραὴλ τὰς θυσίας αὐτῶν ὅσας ἂν αὐτοὶ σφάξουσιν ἐν τοῖς πεδίοις, καὶ οἴσουσιν τῷ κυρίῳ ἐπὶ τὰς θύρας τῆς σκηνῆς τοῦ μαρτυρίου πρὸς τὸν ἱερέα, καὶ θύσουσιν θυσίαν σωτηρίου τῷ κυρίῳ αὐτά·",
+        "VUL": "Ideo sacerdoti offerre debent filii Israël hostias suas, quas occident in agro, ut sanctificentur Domino ante ostium tabernaculi testimonii, et immolent eas hostias pacificas Domino.",
+        "SYN": "_это_ для того, чтобы приводили сыны Израилевы жертвы свои, которые они заколают на поле, чтобы приводили их пред Господа ко входу скинии собрания, к священнику, и заколали их Господу в жертвы мирные;",
+        "NEO": "C’est afin que les enfants d’Israël, au lieu d’immoler leurs victimes dans la campagne, les amènent au prêtre devant \\+w Yahweh|strong=\"H3068\"\\+w**, à l’entrée de la tente de réunion, et qu’ils les offrent à \\+w Yahweh|strong=\"H3068\"\\+w** en sacrifice pacifique.",
+        "NAB": "Therefore, such sacrifices as they used to offer up in the open field the Israelites shall henceforth offer to the LORD, bringing them to the priest at the entrance of the meeting tent and sacrificing them there as peace offerings to the LORD.",
+        "VAT_ES": "Así está mandado, a fin de que los israelitas traigan las víctimas que ellos suelen sacrificar en campo abierto, y las presenten al Señor, a la entrada de la Carpa del Encuentro, entregándolas al sacerdote para que sean ofrecidas al Señor como sacrificio de comunión.",
+        "CEI": "Perciò gli Israeliti, invece d'immolare, come fanno, le loro vittime nei campi, li portino al Signore, presentandoli al sacerdote all'ingresso della tenda del convegno, e li offrano al Signore come sacrifici di comunione."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/זָרַ֨ק הַ/כֹּהֵ֤ן אֶת הַ/דָּם֙ עַל מִזְבַּ֣ח יְהוָ֔ה פֶּ֖תַח אֹ֣הֶל מוֹעֵ֑ד וְ/הִקְטִ֣יר הַ/חֵ֔לֶב לְ/רֵ֥יחַ נִיחֹ֖חַ לַ/יהוָֽה׃",
+        "LXX": "καὶ προσχεεῖ ὁ ἱερεὺς τὸ αἷμα ἐπὶ τὸ θυσιαστήριον κύκλῳ ἀπέναντι Κυρίου παρὰ τὰς θύρας τῆς σκηνῆς τοῦ μαρτυρίου, καὶ ἀνοίσει τὸ στέαρ εἰς ὀσμὴν εὐωδίας Κυρίῳ·",
+        "VUL": "Fundetque sacerdos sanguinem super altare Domini ad ostium tabernaculi testimonii, et adolebit adipem in odorem suavitatis Domino :",
+        "SYN": "и покропит священник кровью на жертвенник Господень у входа скинии собрания и воскурит тук в приятное благоухание Господу,",
+        "NEO": "Le prêtre répandra le sang sur l’autel de \\+w Yahweh|strong=\"H3068\"\\+w**, à l’entrée de la tente de réunion, et il fera fumer la graisse en odeur agréable à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The priest shall splash the blood on the altar of the LORD at the entrance of the meeting tent and there burn the fat for an odor pleasing to the LORD.",
+        "VAT_ES": "Entonces el sacerdote rociará con esa sangre el altar del Señor, a la entrada de la Carpa del Encuentro, y hará arder las partes grasosas como aroma agradable al Señor.",
+        "CEI": "Il sacerdote ne spanderà il sangue sull'altare del Signore, all'ingresso della tenda del convegno, e brucerà il grasso in profumo soave per il Signore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/לֹא יִזְבְּח֥וּ עוֹד֙ אֶת זִבְחֵי/הֶ֔ם לַ/שְּׂעִירִ֕ם אֲשֶׁ֛ר הֵ֥ם זֹנִ֖ים אַחֲרֵי/הֶ֑ם חֻקַּ֥ת עוֹלָ֛ם תִּֽהְיֶה זֹּ֥את לָ/הֶ֖ם לְ/דֹרֹתָֽ/ם׃",
+        "LXX": "καὶ οὐ θύσουσιν ἔτι τὰς θυσίας αὐτῶν τοῖς ματαίοις, οἷς αὐτοὶ ἐκπορνεύουσιν ὀπίσω αὐτῶν· νόμιμον αἰώνιον ἔσται ὑμῖν εἰς τὰς γενεὰς ὑμῶν.",
+        "VUL": "et nequaquam ultra immolabunt hostias suas dæmonibus, cum quibus fornicati sunt. Legitimum sempiternum erit illis et posteris eorum.",
+        "SYN": "чтоб они впредь не приносили жертв своих идолам, за которыми блудно ходят они. Сие да будет для них постановлением вечным в роды их.",
+        "NEO": "Ils n’offriront plus leurs sacrifices aux satyres, avec lesquels ils se prostituent. Ce sera pour eux une loi perpétuelle de génération en génération.",
+        "NAB": "No longer shall they offer their sacrifices to the satyrs to whom they used to render their wanton worship. This shall be an everlasting ordinance for them and their descendants.",
+        "VAT_ES": "De esta manera, los israelitas dejarán de ofrecer sacrificios a los sátiros, detrás de los cuales se están prostituyendo. Este será para ellos un decreto válido para siempre, a lo largo de las generaciones.",
+        "CEI": "Essi non offriranno più i loro sacrifici ai satiri, ai quali sogliono prostituirsi. Questa sarà per loro una legge perenne, di generazione in generazione."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/אֲלֵ/הֶ֣ם תֹּאמַ֔ר אִ֥ישׁ אִישׁ֙ מִ/בֵּ֣ית יִשְׂרָאֵ֔ל וּ/מִן הַ/גֵּ֖ר אֲשֶׁר יָג֣וּר בְּ/תוֹכָ֑/ם אֲשֶׁר יַעֲלֶ֥ה עֹלָ֖ה אוֹ זָֽבַח׃",
+        "LXX": "Καὶ ἐρεῖς πρὸς αὐτούς Ἄνθρωπος ἄνθρωπος τῶν υἱῶν Ἰσραὴλ καὶ ἀπὸ τῶν υἱῶν τῶν προσηλύτων τῶν προσκειμένων ἐν ὑμῖν ὃς ἂν ποιήσῃ ὁλοκαύτωμα ἢ θυσίαν",
+        "VUL": "Et ad ipsos dices : Homo de domo Israël, et de advenis qui peregrinantur apud vos, qui obtulerit holocaustum sive victimam,",
+        "SYN": "_Еще_ скажи им: если кто из дома Израилева и из пришельцев, которые живут между вами, приносит всесожжение или жертву",
+        "NEO": "Tu leur diras encore : Tout homme de la maison d’Israël ou d’entre les étrangers séjournant au milieu d’eux qui offrira un holocauste ou un autre sacrifice,",
+        "NAB": "\"Tell them, therefore: Anyone, whether of the house of Israel or of the aliens residing among them, who offers a holocaust or sacrifice",
+        "VAT_ES": "Diles además: Si un hombre de la casa de Israel o alguno de los extranjeros que residen en medio de ustedes, ofrece un holocausto o un sacrificio,",
+        "CEI": "Dirai loro ancora: Ogni uomo, Israelita o straniero dimorante in mezzo a loro che offrirà un olocausto o un sacrificio,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/אֶל פֶּ֜תַח אֹ֤הֶל מוֹעֵד֙ לֹ֣א יְבִיאֶ֔/נּוּ לַ/עֲשׂ֥וֹת אֹת֖/וֹ לַ/יהוָ֑ה וְ/נִכְרַ֛ת הָ/אִ֥ישׁ הַ/ה֖וּא מֵ/עַמָּֽי/ו׃",
+        "LXX": "καὶ ἐπὶ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου μὴ ἐνέγκῃ ποιῆσαι αὐτὸ τῷ κυρίῳ, ἐξολεθρευθήσεται ὁ ἄνθρωπος ἐκεῖνος ἐκ τοῦ λαοῦ αὐτοῦ.",
+        "VUL": "et ad ostium tabernaculi testimonii non adduxerit eam, ut offeratur Domino, interibit de populo suo.",
+        "SYN": "и не приведет ко входу скинии собрания, чтобы совершить ее Господу, то истребится человек тот из народа своего.",
+        "NEO": "et n’amènera pas la victime à l’entrée de la tente de réunion pour l’offrir en sacrifice à \\+w Yahweh|strong=\"H3068\"\\+w**, cet homme sera retranché du milieu de son peuple.",
+        "NAB": "without bringing it to the entrance of the meeting tent to offer it to the LORD, shall be cut off from his kinsmen.",
+        "VAT_ES": "y no lo lleva a la entrada de la Carpa del Encuentro para ofrecerlo al Señor, será excluido de su pueblo.",
+        "CEI": "senza portarlo all'ingresso della tenda del convegno per immolarlo al Signore, quest'uomo sarà eliminato dal suo popolo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/אִ֨ישׁ אִ֜ישׁ מִ/בֵּ֣ית יִשְׂרָאֵ֗ל וּ/מִן הַ/גֵּר֙ הַ/גָּ֣ר בְּ/תוֹכָ֔/ם אֲשֶׁ֥ר יֹאכַ֖ל כָּל דָּ֑ם וְ/נָתַתִּ֣י פָנַ֗/י בַּ/נֶּ֨פֶשׁ֙ הָ/אֹכֶ֣לֶת אֶת הַ/דָּ֔ם וְ/הִכְרַתִּ֥י אֹתָ֖/הּ מִ/קֶּ֥רֶב עַמָּֽ/הּ׃",
+        "LXX": "Καὶ ἄνθρωπος ἄνθρωπος τῶν υἱῶν Ἰσραὴλ ἢ τῶν προσηλύτων τῶν προσκειμένων ἐν ὑμῖν ὃς ἂν φάγῃ πᾶν αἷμα, καὶ ἐπιστήσω τὸ πρόσωπόν μου ἐπὶ τὴν ψυχὴν τὴν ἔσθουσαν τὸ αἷμα καὶ ἀπολῶ αὐτὴν ἐκ τοῦ λαοῦ αὐτῆς.",
+        "VUL": "Homo quilibet de domo Israël et de advenis qui peregrinantur inter eos, si comederit sanguinem, obfirmabo faciem meam contra animam illius, et disperdam eam de populo suo,",
+        "SYN": "Если кто из дома Израилева и из пришельцев, которые живут между вами, будет есть какую-нибудь кровь, то обращу лице Мое на душу того, кто будет есть кровь, и истреблю ее из народа ее,",
+        "NEO": "Tout homme de la maison d’Israël ou d’entre les étrangers séjournant au milieu d’eux qui mangera le sang d’un animal quelconque, je tournerai ma face contre celui qui mange le sang, et je le retrancherai du milieu de son peuple ;",
+        "NAB": "And if anyone, whether of the house of Israel or of the aliens residing among them, partakes of any blood, I will set myself against that one who partakes of blood and will cut him off from among his people.",
+        "VAT_ES": "Si un hombre de la casa de Israel o alguno de los extranjeros que residen en medio de ustedes, como cualquier clase de sangre, yo volveré mi rostro contra esa persona y la excluiré de su pueblo.",
+        "CEI": "Ogni uomo, Israelita o straniero dimorante in mezzo a loro, che mangi di qualsiasi specie di sangue, contro di lui, che ha mangiato il sangue, io volgerò la faccia e lo eliminerò dal suo popolo."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּ֣י נֶ֣פֶשׁ הַ/בָּשָׂר֮ בַּ/דָּ֣ם הִוא֒ וַ/אֲנִ֞י נְתַתִּ֤י/ו לָ/כֶם֙ עַל הַ/מִּזְבֵּ֔חַ לְ/כַפֵּ֖ר עַל נַפְשֹׁתֵי/כֶ֑ם כִּֽי הַ/דָּ֥ם ה֖וּא בַּ/נֶּ֥פֶשׁ יְכַפֵּֽר׃",
+        "LXX": "ἡ γὰρ ψυχὴ πάσης σαρκὸς αἷμα αὐτοῦ ἐστιν, καὶ ἐγὼ δέδωκα αὐτὸ ὑμῖν ἐπὶ τοῦ θυσιαστηρίου ἐξιλάσκεσθαι περὶ τῶν ψυχῶν ὑμῶν· τὸ γὰρ αἷμα αὐτοῦ ἀντὶ τῆς ψυχῆς ἐξιλάσεται.",
+        "VUL": "quia anima carnis in sanguine est : et ego dedi illum vobis, ut super altare in eo expietis pro animabus vestris, et sanguis pro animæ piaculo sit.",
+        "SYN": "потому что душа тела в крови, и Я назначил ее вам для жертвенника, чтобы очищать души ваши, ибо кровь сия душу очищает;",
+        "NEO": "car l’âme de la chair est dans le sang, et je vous l’ai donné en vue de l’autel pour qu’il servit d’expiation pour vos âmes ; car c’est par l’âme que le sang fait expiation.",
+        "NAB": "Since the life of a living body is in its blood, I have made you put it on the altar, so that atonement may thereby be made for your own lives, because it is the blood, as the seat of life, that makes atonement.",
+        "VAT_ES": "Porque la vida de la carne está en la sangre, y yo mismo les he puesto la sangre sobre el altar, para que les sirva de expiación, ya que la sangre es la que realiza la expiación, en virtud de la vida que hay en ella.",
+        "CEI": "Poiché la vita della carne è nel sangue. Perciò vi ho concesso di porlo sull'altare in espiazione per le vostre vite; perché il sangue espia, in quanto è la vita."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "עַל כֵּ֤ן אָמַ֨רְתִּי֙ לִ/בְנֵ֣י יִשְׂרָאֵ֔ל כָּל נֶ֥פֶשׁ מִ/כֶּ֖ם לֹא תֹ֣אכַל דָּ֑ם וְ/הַ/גֵּ֛ר הַ/גָּ֥ר בְּ/תוֹכְ/כֶ֖ם לֹא יֹ֥אכַל דָּֽם׃",
+        "LXX": "διὰ τοῦτο εἴρηκα τοῖς υἱοῖς Ἰσραήλ Πᾶσα ψυχὴ ἐξ ὑμῶν οὐ φὰγεται αἷμα, καὶ ὁ προσήλυτος ὁ προσκείμενος ἐν ὑμῖν οὐ φάγεται αἷμα.",
+        "VUL": "Idcirco dixi filiis Israël : Omnis anima ex vobis non comedet sanguinem, nec ex advenis qui peregrinantur apud vos.",
+        "SYN": "потому Я и сказал сынам Израилевым: ни одна душа из вас не должна есть крови, и пришлец, живущий между вами, не должен есть крови.",
+        "NEO": "C’est pourquoi j’ai dit aux enfants d’Israël : Personne d’entre vous ne mangera du sang, et l’étranger qui séjourne au milieu de vous ne mangera pas du sang.",
+        "NAB": "That is why I have told the Israelites: No one among you, not even a resident alien, may partake of blood.",
+        "VAT_ES": "Por eso dije a los israelitas: «Ninguno de ustedes comerá sangre, no tampoco lo hará el extranjero que resida en medio de ustedes».",
+        "CEI": "Perciò ho detto agli Israeliti: Nessuno tra voi mangerà il sangue, neppure lo straniero che soggiorna fra voi mangerà sangue."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/אִ֨ישׁ אִ֜ישׁ מִ/בְּנֵ֣י יִשְׂרָאֵ֗ל וּ/מִן הַ/גֵּר֙ הַ/גָּ֣ר בְּ/תוֹכָ֔/ם אֲשֶׁ֨ר יָצ֜וּד צֵ֥יד חַיָּ֛ה אוֹ ע֖וֹף אֲשֶׁ֣ר יֵאָכֵ֑ל וְ/שָׁפַךְ֙ אֶת דָּמ֔/וֹ וְ/כִסָּ֖/הוּ בֶּ/עָפָֽר׃",
+        "LXX": "καὶ ἄνθρωπος ἄνθρωπος τῶν υἱῶν Ἰσραὴλ καὶ τῶν προσηλύτων τῶν προσκειμένων ἐν ὑμῖν ὃς ἂν θηρεύσῃ θήρευμα θηρίον ἢ πετεινὸν ὃ ἔσθεται, καὶ ἐκχεεῖ τὸ αἷμα καὶ καλύψει αὐτὸ τῇ γῇ·",
+        "VUL": "Homo quicumque de filiis Israël, et de advenis qui peregrinantur apud vos, si venatione atque aucupio ceperit feram, vel avem, quibus vesci licitum est, fundat sanguinem ejus, et operiat illum terra.",
+        "SYN": "Если кто из сынов Израилевых и из пришельцев, живущих между вами, на ловле поймает зверя или птицу, которую можно есть, то он должен дать вытечь крови ее и покрыть ее землею,",
+        "NEO": "Tout homme d’entre les enfants d’Israël ou d’entre les étrangers séjournant au milieu d’eux qui prend à la chasse un animal ou un oiseau qui se mange, il en versera le sang et le couvrira de terre ;",
+        "NAB": "\"Anyone hunting, whether of the Israelites or of the aliens residing among them, who catches an animal or a bird that may be eaten, shall pour out its blood and cover it with earth.",
+        "VAT_ES": "Y cualquier israelita o cualquiera de los extranjeros que residen en medio de ustedes, caza un animal o un pájaro de esos que está permitido comer, derramará su sangre y la cubrirá con tierra.",
+        "CEI": "Se uno qualunque degli Israeliti o degli stranieri che soggiornano fra di loro prende alla caccia un animale o un uccello che si può mangiare, ne deve spargere il sangue e coprirlo di terra;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כִּֽי נֶ֣פֶשׁ כָּל בָּשָׂ֗ר דָּמ֣/וֹ בְ/נַפְשׁ/וֹ֮ הוּא֒ וָֽ/אֹמַר֙ לִ/בְנֵ֣י יִשְׂרָאֵ֔ל דַּ֥ם כָּל בָּשָׂ֖ר לֹ֣א תֹאכֵ֑לוּ כִּ֣י נֶ֤פֶשׁ כָּל בָּשָׂר֙ דָּמ֣/וֹ הִ֔וא כָּל אֹכְלָ֖י/ו יִכָּרֵֽת׃",
+        "LXX": "ἡ γὰρ ψυχὴ πάσης σαρκὸς αἷμα αὐτοῦ ἐστιν, καὶ εἶπα τοῖς υἱοῖς Ἰσραήλ Αἷμα πάσης σαρκὸς οὐ φάγεσθε, ὅτι ἡ ψυχὴ πάσης σαρκὸς αἷμα αὐτοῦ ἐστίν· πᾶς ὁ ἔσθων αὐτὸ ἐξολεθρευθήσεται.",
+        "VUL": "Anima enim omnis carnis in sanguine est : unde dixi filiis Israël : Sanguinem universæ carnis non comedetis, quia anima carnis in sanguine est : et quicumque comederit illum, interibit.",
+        "SYN": "ибо душа всякого тела _есть_ кровь его, она душа его; потому Я сказал сынам Израилевым: не ешьте крови ни из какого тела, потому что душа всякого тела есть кровь его: всякий, кто будет есть ее, истребится.",
+        "NEO": "car l’âme de toute chair, c’est son sang il en est son âme. C’est pourquoi j’ai dit aux enfants d’Israël : Vous ne mangerez le sang d’aucune chair ; car l’âme de toute chair, c’est son sang : quiconque en mangera sera retranché.",
+        "NAB": "Since the life of every living body is its blood, I have told the Israelites: You shall not partake of the blood of any meat. Since the life of every living body is its blood, anyone who partakes of it shall be cut off.",
+        "VAT_ES": "Porque la vida de toda carne es su sangre. Por eso dije a los israelitas: «No coman la sangre de ninguna carne, porque la vida de toda carne es su sangre. El que la coma, será extirpado».",
+        "CEI": "perché la vita di ogni essere vivente è il suo sangue, in quanto sua vita; perciò ho ordinato agli Israeliti: Non mangerete sangue di alcuna specie di essere vivente, perché il sangue è la vita d'ogni carne; chiunque ne mangerà sarà eliminato."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/כָל נֶ֗פֶשׁ אֲשֶׁ֨ר תֹּאכַ֤ל נְבֵלָה֙ וּ/טְרֵפָ֔ה בָּ/אֶזְרָ֖ח וּ/בַ/גֵּ֑ר וְ/כִבֶּ֨ס בְּגָדָ֜י/ו וְ/רָחַ֥ץ בַּ/מַּ֛יִם וְ/טָמֵ֥א עַד הָ/עֶ֖רֶב וְ/טָהֵֽר׃",
+        "LXX": "καὶ πᾶσα ψυχὴ ἥτις φάγεται θνησιμαῖον ἢ θηριάλωτον, ἐν τοῖς αὐτόχθοσιν ἢ ἐν τοῖς προσηλύτοις, πλυνεῖ τὰ ἱμάτια αὐτοῦ καὶ λούσεται ὕδατι, καὶ ἀκάθαρτος ἕως ἑσπέρας, καὶ καθαρὸς ἔσται.",
+        "VUL": "Anima, quæ comederit morticinum, vel captum a bestia, tam de indigenis, quam de advenis, lavabit vestimenta sua et semetipsum aqua, et contaminatus erit usque ad vesperum : et hoc ordine mundus fiet.",
+        "SYN": "И всякий, кто будет есть мертвечину или растерзанное зверем, туземец или пришлец, должен вымыть одежды свои и омыться водою, и нечист будет до вечера, а _потом_ будет чист;",
+        "NEO": "Toute personne, née dans le pays ou étrangère, qui mangera d’une bête morte ou déchirée, lavera ses vêtements, se baignera dans l’eau, et sera impure jusqu’au soir ; puis elle sera pure.",
+        "NAB": "\"Everyone, whether a native or an alien, who eats of an animal that died of itself or was killed by a wild beast, shall wash his garments, bathe in water, and be unclean until evening, and then he will be clean.",
+        "VAT_ES": "Cualquiera, sea nativo o extranjero, que coma un animal muerto o despedazado por las fieras, deberá lavar su ropa y bañarse con agua, y será impuro hasta la tarde. Después será puro.",
+        "CEI": "Qualunque persona, nativa del paese o straniera, che mangerà carne di bestia morta naturalmente o sbranata, dovrà lavarsi le vesti, bagnarsi nell'acqua e sarà immonda fino alla sera; allora sarà monda."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/אִם֙ לֹ֣א יְכַבֵּ֔ס וּ/בְשָׂר֖/וֹ לֹ֣א יִרְחָ֑ץ וְ/נָשָׂ֖א עֲוֺנֽ/וֹ׃",
+        "LXX": "ἐὰν δὲ μὴ πλύνῃ τὰ ἱμάτια καὶ τὸ σῶμα μὴ λούσηται ὕδατι, καὶ λήμψεται ἀνόμημα αὐτοῦ.",
+        "VUL": "Quod si non laverit vestimenta sua et corpus, portabit iniquitatem suam.",
+        "SYN": "если же не вымоет [одежд своих] и не омоет тела своего, то понесет на себе беззаконие свое.",
+        "NEO": "Si elle ne lave pas ses vêtements et son corps, elle portera son iniquité. »",
+        "NAB": "If he does not wash or does not bathe his body, he shall have the guilt to bear.\"",
+        "VAT_ES": "Y si no lava su ropa ni se baña, cargará con su iniquidad,",
+        "CEI": "Ma se non si lava le vesti e il corpo, porterà la pena della sua iniquità\"."
+      }
+    }
+  }
+}

@@ -1,0 +1,472 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_049",
+  "book_key": "ISA",
+  "sequence": 49,
+  "chapter_in": {
+    "MT": 49,
+    "VUL": 49,
+    "LXX": 49
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שִׁמְע֤וּ אִיִּים֙ אֵלַ֔/י וְ/הַקְשִׁ֥יבוּ לְאֻמִּ֖ים מֵ/רָח֑וֹק יְהוָה֙ מִ/בֶּ֣טֶן קְרָאָ֔/נִי מִ/מְּעֵ֥י אִמִּ֖/י הִזְכִּ֥יר שְׁמִֽ/י׃",
+        "LXX": "Ἀκούσατέ μου, νῆσοι, καὶ προσέχετε, ἔθνη· διὰ χρόνου πολλοῦ στήσεται, λέγει Κύριος. ἐκ κοιλίας μητρός μου ἐκάλεσε τὸ ὄνομά μου,",
+        "VUL": "[Audite, insulæ,/ et attendite, populi de longe :/ Dominus ab utero vocavit me ;/ de ventre matris meæ recordatus est nominis mei./",
+        "SYN": "Слушайте Меня, острова, и внимайте, народы дальние: Господь призвал Меня от чрева, от утробы матери Моей называл имя Мое;",
+        "NEO": "Iles, entendez-moi : peuples lointains, soyez attentifs ! \\+w Yahweh|strong=\"H3068\"\\+w** m’a appelé dès le sein maternel, dès les entrailles de ma mère il a proclamé mon nom.",
+        "NAB": "Hear me, O coastlands, listen, O distant peoples. The LORD called me from birth, from my mother's womb he gave me my name.",
+        "VAT_ES": "&iexcl;Baja y siéntate en el polvo, virgen, hija de Babilonia! &iexcl;Siéntate en el suelo, sin trono, hija de los caldeos! Porque ya no volverán a llamarte «Delicada» y «Refinada».",
+        "CEI": "Ascoltatemi, o isole, udite attentamente, nazioni lontane; il Signore dal seno materno mi ha chiamato, fino dal grembo di mia madre ha pronunziato il mio nome."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יָּ֤שֶׂם פִּ/י֙ כְּ/חֶ֣רֶב חַדָּ֔ה בְּ/צֵ֥ל יָד֖/וֹ הֶחְבִּיאָ֑/נִי וַ/יְשִׂימֵ֨/נִי֙ לְ/חֵ֣ץ בָּר֔וּר בְּ/אַשְׁפָּת֖/וֹ הִסְתִּירָֽ/נִי׃",
+        "LXX": "καὶ ἔθηκεν τὸ στόμα μου ὡς μάχαιραν ὀξεῖαν, καὶ ὑπὸ τὴν σκέπην τῆς χειρὸς αὐτοῦ ἔκρυψέν με· ἔθηκέν με ὡς βέλος ἐκλεκτόν, καὶ ἐν τῇ φαρέτρᾳ αὐτοῦ ἔκρυψέν με,",
+        "VUL": "Et posuit os meum quasi gladium acutum,/ in umbra manus suæ protexit me,/ et posuit me sicut sagittam electam :/ in pharetra sua abscondit me./",
+        "SYN": "и соделал уста Мои как острый меч; тенью руки Своей покрывал Меня, и соделал Меня стрелою изостренною; в колчане Своем хранил Меня;",
+        "NEO": "Il a fait de ma bouche une épée tranchante ; il m’a abrité sous l’ombre de sa main ; il a fait de moi une flèche aiguë, il m’a caché dans son carquois.",
+        "NAB": "He made of me a sharp-edged sword and concealed me in the shadow of his arm. He made me a polished arrow, in his quiver he hid me.",
+        "VAT_ES": "&iexcl;Toma el mortero y muele la harina; quítate el velo, levántate el vestido, descúbrete el muslo, cruza los ríos!",
+        "CEI": "Ha reso la mia bocca come spada affilata, mi ha nascosto all'ombra della sua mano, mi ha reso freccia appuntita, mi ha riposto nella sua farètra."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר לִ֖/י עַבְדִּ/י אָ֑תָּה יִשְׂרָאֵ֕ל אֲשֶׁר בְּ/ךָ֖ אֶתְפָּאָֽר׃",
+        "LXX": "καὶ εἶπέν μοι Δοῦλός μου εἶ σύ, Ἰσραήλ, καὶ ἐν σοὶ ἐνδοξασθήσομαι.",
+        "VUL": "Et dixit mihi : Servus meus es tu Israël,/ quia in te gloriabor./",
+        "SYN": "и сказал Мне: Ты раб Мой, Израиль, в Тебе Я прославлюсь.",
+        "NEO": "Et il m’a dit : « Tu es mon serviteur, Israël, en qui je me glorifierai. »",
+        "NAB": "You are my servant, he said to me, Israel, through whom I show my glory.",
+        "VAT_ES": "&iexcl;Que se descubra tu desnudez y que se vea tu ignominia! Yo me vengaré y nadie se me opondrá,",
+        "CEI": "Mi ha detto: \"Mio servo tu sei, Israele, sul quale manifesterò la mia gloria\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֤י אָמַ֨רְתִּי֙ לְ/רִ֣יק יָגַ֔עְתִּי לְ/תֹ֥הוּ וְ/הֶ֖בֶל כֹּחִ֣/י כִלֵּ֑יתִי אָכֵן֙ מִשְׁפָּטִ֣/י אֶת יְהוָ֔ה וּ/פְעֻלָּתִ֖/י אֶת אֱלֹהָֽ/י׃",
+        "LXX": "καὶ ἐγὼ εἶπα Κενῶς ἐκοπίασα, εἰς μάταιον καὶ εἰς οὐδὲν ἔδωκα τὴν ἰσχύν μου· διὰ τοῦτο ἡ κρίσις μου παρὰ Κυρίῳ, καὶ ὁ πόνος μου ἐναντίον τοῦ θεοῦ μου.",
+        "VUL": "Et ego dixi : In vacuum laboravi ;/ sine causa et vane fortitudinem meam consumpsi :/ ergo judicium meum cum Domino,/ et opus meum cum Deo meo./",
+        "SYN": "А Я сказал: напрасно Я трудился, ни на что и вотще истощал силу Свою. Но Мое право у Господа, и награда Моя у Бога Моего.",
+        "NEO": "Et moi j’ai dit : « En vain je me suis fatigué ; inutilement, pour rien, j’ai consumé ma force ; mais mon droit est auprès de \\+w Yahweh|strong=\"H3068\"\\+w**, et ma récompense auprès de mon Dieu. »",
+        "NAB": "Though I thought I had toiled in vain, and for nothing, uselessly, spent my strength, Yet my reward is with the LORD, my recompense is with my God.",
+        "VAT_ES": "dice nuestro redentor: su nombre es Señor de los ejércitos, el Santo de Israel.",
+        "CEI": "Io ho risposto: \"Invano ho faticato, per nulla e invano ho consumato le mie forze. Ma, certo, il mio diritto è presso il Signore, la mia ricompensa presso il mio Dio\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֣ה אָמַ֣ר יְהוָ֗ה יֹצְרִ֤/י מִ/בֶּ֨טֶן֙ לְ/עֶ֣בֶד ל֔/וֹ לְ/שׁוֹבֵ֤ב יַֽעֲקֹב֙ אֵלָ֔י/ו וְ/יִשְׂרָאֵ֖ל לא ל֣/וֹ יֵאָסֵ֑ף וְ/אֶכָּבֵד֙ בְּ/עֵינֵ֣י יְהוָ֔ה וֵ/אלֹהַ֖/י הָיָ֥ה עֻזִּֽ/י׃",
+        "LXX": "καὶ νῦν οὕτως λέγει Κύριος ὁ πλάσας με ἐκ κοιλίας δοῦλον ἑαυτῷ τοῦ συναγαγεῖν τὸν Ἰακὼβ πρὸς αὐτὸν καὶ Ἰσραήλ Συναχθήσομαι καὶ δοξασθήσομαι ἐναντίον Κυρίου, καὶ ὁ θεὸς ἔσται μοι ἰσχύς.",
+        "VUL": "Et nunc dicit Dominus,/ formans me ex utero servum sibi,/ ut reducam Jacob ad eum,/ et Israël non congregabitur ;/ et glorificatus sum in oculis Domini,/ et Deus meus factus est fortitudo mea./",
+        "SYN": "И ныне говорит Господь, образовавший Меня от чрева в раба Себе, чтобы обратить к Нему Иакова и чтобы Израиль собрался к Нему; Я почтен в очах Господа, и Бог Мой - сила Моя.",
+        "NEO": "Et maintenant \\+w Yahweh|strong=\"H3068\"\\+w** parle, lui qui m’a formé dès le sein de ma mère pour être son Serviteur, pour ramener à lui Jacob, et pour qu’Israël lui soit réuni.",
+        "NAB": "For now the LORD has spoken who formed me as his servant from the womb, That Jacob may be brought back to him and Israel gathered to him; And I am made glorious in the sight of the LORD, and my God is now my strength!",
+        "VAT_ES": "&iexcl;Siéntate en silencio y entra en las tinieblas, hija de los caldeos! Porque ya no volverán a llamarte «Soberana de los reinos».",
+        "CEI": "Ora disse il Signore che mi ha plasmato suo servo dal seno materno per ricondurre a lui Giacobbe e a lui riunire Israele, - poiché ero stato stimato dal Signore e Dio era stato la mia forza -"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר נָקֵ֨ל מִֽ/הְיוֹתְ/ךָ֥ לִ/י֙ עֶ֔בֶד לְ/הָקִים֙ אֶת שִׁבְטֵ֣י יַעֲקֹ֔ב ו/נצירי וּ/נְצוּרֵ֥י יִשְׂרָאֵ֖ל לְ/הָשִׁ֑יב וּ/נְתַתִּ֨י/ךָ֙ לְ/א֣וֹר גּוֹיִ֔ם לִֽ/הְי֥וֹת יְשׁוּעָתִ֖/י עַד קְצֵ֥ה הָ/אָֽרֶץ׃",
+        "LXX": "καὶ εἶπέν μοι Μέγα σοί ἐστιν τοῦ κληθῆναί σε παῖδά μου, τοῦ στῆσαι τὰς φυλὰς Ἰακὼβ καὶ τὴν διασπορὰν τοῦ Ἰσραὴλ ἐπιστρέψαι· ἰδοὺ δέδωκά σε εἰς διαθήκην γένους, εἰς φῶς ἐθνῶν, τοῦ εἶναί σε εἰς σωτηρίαν ἕως ἐσχάτου τῆς γῆς.",
+        "VUL": "Et dixit : Parum est ut sis mihi servus/ ad suscitandas tribus Jacob,/ et fæces Israël convertendas :/ ecce dedi te in lucem gentium,/ ut sis salus mea/ usque ad extremum terræ./",
+        "SYN": "И Он сказал: мало того, что Ты будешь рабом Моим для восстановления колен Иаковлевых и для возвращения остатков Израиля, но Я сделаю Тебя светом народов, чтобы спасение Мое простерлось до концов земли.",
+        "NEO": "Il a dit : « C’est peu que tu sois mon Serviteur, pour rétablir les tribus de Jacob et pour ramener les préservés d’Israël ; je t’établirai lumière des nations, pour que mon salut arrive jusqu’aux extrémités de la terre. »",
+        "NAB": "It is too little, he says, for you to be my servant, to raise up the tribes of Jacob, and restore the survivors of Israel; I will make you a light to the nations, that my salvation may reach to the ends of the earth.",
+        "VAT_ES": "Yo estaba irritado contra mi pueblo profané mi herencia, y los entregué en tus manos. Tú no les tuviste compasión: hasta al anciano lo abrumaste con el peso de tu yugo.",
+        "CEI": "mi disse: \"È troppo poco che tu sia mio servo per restaurare le tribù di Giacobbe e ricondurre i superstiti di Israele. Ma io ti renderò luce delle nazioni perché porti la mia salvezza fino all'estremità della terra\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כֹּ֣ה אָֽמַר יְהוָה֩ גֹּאֵ֨ל יִשְׂרָאֵ֜ל קְדוֹשׁ֗/וֹ לִ/בְזֹה נֶ֜פֶשׁ לִ/מְתָ֤עֵֽב גּוֹי֙ לְ/עֶ֣בֶד מֹשְׁלִ֔ים מְלָכִים֙ יִרְא֣וּ וָ/קָ֔מוּ שָׂרִ֖ים וְ/יִֽשְׁתַּחֲוּ֑וּ לְמַ֤עַן יְהוָה֙ אֲשֶׁ֣ר נֶאֱמָ֔ן קְדֹ֥שׁ יִשְׂרָאֵ֖ל וַ/יִּבְחָרֶֽ/ךָּ׃",
+        "LXX": "οὕτως λέγει Κύριος ὁ ῥυσάμενός σε θεὸς Ἰσραήλ Ἁγιάσατε τὸν φαυλίζοντα τὴν ψυχὴν αὐτοῦ, τὸν βδελυσσόμενον ὑπὸ τῶν ἐθνῶν τῶν δούλων τῶν ἀρχόντων· βασιλεῖς ὄψονται αὐτόν, καὶ ἀναστήσονται ἄρχοντες καὶ προσκυνήσουσιν αὐτῷ ἕνεκεν Κυρίου· ὅτι πιστός ἐστιν ὁ ἅγιος Ἰσραήλ, καὶ ἐξελεξάμην σε.",
+        "VUL": "Hæc dicit Dominus,/ redemptor Israël, Sanctus ejus,/ ad contemptibilem animam, ad abominatam gentem,/ ad servum dominorum :/ Reges videbunt,/ et consurgent principes, et adorabunt/ propter Dominum, quia fidelis est,/ et Sanctum Israël qui elegit te.]",
+        "SYN": "Так говорит Господь, Искупитель Израиля, Святый Его, презираемому всеми, поносимому народом, рабу властелинов: цари увидят, и встанут; князья поклонятся ради Господа, Который верен, ради Святаго Израилева, Который избрал Тебя.",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, le rédempteur et le Saint d’Israël ; à celui qui est méprisé, abominable au peuple, à l’esclave des tyrans : Des rois te verront et se lèveront, des princes, et ils se prosterneront, à cause de \\+w Yahweh|strong=\"H3068\"\\+w** qui est fidèle, et du Saint d’Israël qui t’a choisi.",
+        "NAB": "Thus says the LORD, the redeemer and the Holy One of Israel, To the one despised, whom the nations abhor, the slave of rulers: When kings see you, they shall stand up, and princes shall prostrate themselves Because of the LORD who is faithful, the Holy One of Israel who has chosen you.",
+        "VAT_ES": "Tú decías: «Seré siempre soberana, a lo largo de los siglos». Pero no te preocupabas por esto, no tenías presente el futuro.",
+        "CEI": "Dice il Signore, il redentore di Israele, il suo Santo, a colui la cui vita è disprezzata, al reietto delle nazioni, al servo dei potenti: \"I re vedranno e si alzeranno in piedi, i principi vedranno e si prostreranno, a causa del Signore che è fedele, a causa del Santo di Israele che ti ha scelto\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כֹּ֣ה אָמַ֣ר יְהוָ֗ה בְּ/עֵ֤ת רָצוֹן֙ עֲנִיתִ֔י/ךָ וּ/בְ/י֥וֹם יְשׁוּעָ֖ה עֲזַרְתִּ֑י/ךָ וְ/אֶצָּרְ/ךָ֗ וְ/אֶתֶּנְ/ךָ֙ לִ/בְרִ֣ית עָ֔ם לְ/הָקִ֣ים אֶ֔רֶץ לְ/הַנְחִ֖יל נְחָל֥וֹת שֹׁמֵמֽוֹת׃",
+        "LXX": "οὕτως λέγει Κύριος Καιρῷ δεκτῷ ἐπήκουσά σου, καὶ ἐν ἡμέρᾳ σωτηρίας ἐβοήθησά σοι, καὶ ἔπλασά σε καὶ ἔδωκά σε εἰς διαθήκην ἐθνῶν, τοῦ καταστῆσαι τὴν γῆν καὶ κληρονομῆσαι κληρονομίας ἐρήμους,",
+        "VUL": "[Hæc dicit Dominus :/ In tempore placito exaudivi te,/ et in die salutis auxiliatus sum tui :/ et servavi te, et dedi te in fdus populi,/ ut suscitares terram,/ et possideres hæreditates dissipatas ;/",
+        "SYN": "Так говорит Господь: во время благоприятное Я услышал Тебя, и в день спасения помог Тебе; и Я буду охранять Тебя, и сделаю Тебя заветом народа, чтобы восстановить землю, чтобы возвратить наследникам наследия опустошенные,",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Au temps de la grâce je t’exauce, et au jour du salut, je te viens en aide ; je t’ai gardé et établi Alliance du peuple, pour relever le pays, pour partager les héritages dévastés ;",
+        "NAB": "Thus says the LORD: In a time of favor I answer you, on the day of salvation I help you, To restore the land and allot the desolate heritages,",
+        "VAT_ES": "Y ahora, escucha esto, voluptuosa, tú, que reinas confiada y dices en tu corazón: «&iexcl;Yo, y nadie más que yo! &iexcl;Nunca me quedaré viuda ni me veré privada de hijos!».",
+        "CEI": "Dice il Signore: \"Al tempo della misericordia ti ho ascoltato, nel giorno della salvezza ti ho aiutato. Ti ho formato e posto come alleanza per il popolo, per far risorgere il paese, per farti rioccupare l'eredità devastata,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לֵ/אמֹ֤ר לַֽ/אֲסוּרִים֙ צֵ֔אוּ לַ/אֲשֶׁ֥ר בַּ/חֹ֖שֶׁךְ הִגָּל֑וּ עַל דְּרָכִ֣ים יִרְע֔וּ וּ/בְ/כָל שְׁפָיִ֖ים מַרְעִיתָֽ/ם׃",
+        "LXX": "λέγοντα τοῖς ἐν δεσμοῖς Ἐξέλθατε, καὶ τοῖς ἐν τῷ σκότει ἀνακαλυφθῆναι. ἐν πάσαις ταῖς ὁδοῖς βοσκηθήσονται, καὶ ἐν πᾶσιν τρίβοις ἡ νομὴ αὐτῶν·",
+        "VUL": "ut diceres his qui vincti sunt : Exite,/ et his qui in tenebris : Revelamini./ Super vias pascentur,/ et in omnibus planis pascua eorum./",
+        "SYN": "сказать узникам: \"выходите\", и тем, которые во тьме: \"покажитесь\". Они при дорогах будут пасти, и по всем холмам будут пажити их;",
+        "NEO": "pour dire aux captifs : « Sortez ! » à ceux qui sont dans les ténèbres : « Venez à la lumière ! »",
+        "NAB": "Saying to the prisoners: Come out! To those in darkness: Show yourselves! Along the ways they shall find pasture, on every bare height shall their pastures be.",
+        "VAT_ES": "Estas dos cosas te sobrevendrán, de repente, en un solo día: la privación de tus hijos y la viudez vendrán sobre ti con todo su rigor, pese a tus muchos sortilegios y al cúmulo de tus encantamientos.",
+        "CEI": "per dire ai prigionieri: Uscite, e a quanti sono nelle tenebre: Venite fuori. Essi pascoleranno lungo tutte le strade, e su ogni altura troveranno pascoli."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "לֹ֤א יִרְעָ֨בוּ֙ וְ/לֹ֣א יִצְמָ֔אוּ וְ/לֹא יַכֵּ֥/ם שָׁרָ֖ב וָ/שָׁ֑מֶשׁ כִּי מְרַחֲמָ֣/ם יְנַהֲגֵ֔/ם וְ/עַל מַבּ֥וּעֵי מַ֖יִם יְנַהֲלֵֽ/ם׃",
+        "LXX": "οὐ πεινάσουσιν, οὐδὲ διψάσουσιν, οὐδὲ πατάξει αὐτοὺς καύσων οὐδὲ ὁ ἥλιος, ἀλλ’ ὁ ἐλεῶν αὐτοὺς παρακαλέσει, καὶ διὰ πηγῶν ὑδάτων ἄξει αὐτούς·",
+        "VUL": "Non esurient neque sitient,/ et non percutiet eos æstus et sol,/ quia miserator eorum reget eos,/ et ad fontes aquarum potabit eos./",
+        "SYN": "не будут терпеть голода и жажды, и не поразит их зной и солнце; ибо Милующий их будет вести их и приведет их к источникам вод.",
+        "NEO": "ils n’auront pas faim, ils n’auront pas soif ; ni le sable brûlant, ni le soleil ne les atteindront. Car celui qui a pitié d’eux sera leur guide, et les conduira aux eaux jaillissantes.",
+        "NAB": "They shall not hunger or thirst, nor shall the scorching wind or the sun strike them; For he who pities them leads them and guides them beside springs of water.",
+        "VAT_ES": "Tú te fiabas de tu maldad, pensando: «Nadie me ve». Tu sabiduría y tu ciencia te hicieron perder la cabeza, mientras decías en tu corazón: «&iexcl;Yo, y nadie más que yo!».",
+        "CEI": "Non soffriranno né fame né sete e non li colpirà né l'arsura né il sole, perché colui che ha pietà di loro li guiderà, li condurrà alle sorgenti di acqua."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/שַׂמְתִּ֥י כָל הָרַ֖/י לַ/דָּ֑רֶךְ וּ/מְסִלֹּתַ֖/י יְרֻמֽוּ/ן׃",
+        "LXX": "καὶ θήσω πᾶν ὄρος εἰς ὁδὸν καὶ πᾶσαν τρίβον εἰς βόσκημα αὐτοῖς.",
+        "VUL": "Et ponam omnes montes meos in viam,/ et semitæ meæ exaltabuntur./",
+        "SYN": "И все горы Мои сделаю путем, и дороги Мои будут подняты.",
+        "NEO": "Je ferai de toutes mes montagnes des chemins, et mes routes seront relevées.",
+        "NAB": "I will cut a road through all my mountains, and make my highways level.",
+        "VAT_ES": "Pero te va a suceder una desgracia, que no sabrás conjurar; va a caer sobre ti un desastre que no podrás aplacar, te va a sobrevenir de improviso una catástrofe que no imaginabas.",
+        "CEI": "Io trasformerò i monti in strade e le mie vie saranno elevate."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "הִנֵּה אֵ֕לֶּה מֵ/רָח֖וֹק יָבֹ֑אוּ וְ/הִֽנֵּה אֵ֨לֶּה֙ מִ/צָּפ֣וֹן וּ/מִ/יָּ֔ם וְ/אֵ֖לֶּה מֵ/אֶ֥רֶץ סִינִֽים׃",
+        "LXX": "ἰδοὺ οὗτοι πόρρωθεν ἥξουσιν, οὗτοι ἀπὸ βορρᾶ καὶ θαλάσσης, ἄλλοι δὲ ἐκ γῆς Περσῶν.",
+        "VUL": "Ecce isti de longe venient,/ et ecce illi ab aquilone et mari,/ et isti de terra australi./",
+        "SYN": "Вот, одни придут издалека; и вот, одни от севера и моря, а другие из земли Синим.",
+        "NEO": "En voici qui viennent de loin ; en voici du septentrion et du couchant ; et ceux-là du pays des Sinim.",
+        "NAB": "See, some shall come from afar, others from the north and the west, and some from the land of Syene.",
+        "VAT_ES": "Persiste en tus encantamientos y en tus muchos sortilegios, por los que has bregado desde tu juventud: &iexcl;tal vez puedan servirte de algo, tal vez logres infundir terror!",
+        "CEI": "Ecco, questi vengono da lontano, ed ecco, quelli vengono da mezzogiorno e da occidente e quelli dalla regione di Assuan\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "רָנּ֤וּ שָׁמַ֨יִם֙ וְ/גִ֣ילִי אָ֔רֶץ יפצחו וּ/פִצְח֥וּ הָרִ֖ים רִנָּ֑ה כִּֽי נִחַ֤ם יְהוָה֙ עַמּ֔/וֹ וַ/עֲנִיָּ֖/ו יְרַחֵֽם׃",
+        "LXX": "εὐφραίνεσθε, οὐρανοί, καὶ ἀγαλλιάσθω ἡ γῆ, ῥηξάτωσαν τὰ ὄρη εὐφροσύνην, ὅτι ἠλέησεν ὁ θεὸς τὸν λαὸν αὐτοῦ, καὶ τοὺς ταπεινοὺς τοῦ λαοῦ αὐτοῦ παρεκάλεσεν.",
+        "VUL": "Laudate, cæli, et exsulta, terra ;/ jubilate, montes, laudem,/ quia consolatus est Dominus populum suum,/ et pauperum suorum miserebitur.]",
+        "SYN": "Радуйтесь, небеса, и веселись, земля, и восклицайте, горы, от радости; ибо утешил Господь народ Свой и помиловал страдальцев Своих.",
+        "NEO": "Cieux, poussez des cris de joie ! Terre, tressaille ! Montagnes, éclatez en cris joyeux ! Car \\+w Yahweh|strong=\"H3068\"\\+w** a consolé son peuple, et il a compassion de ses affligés.",
+        "NAB": "Sing out, O heavens, and rejoice, O earth, break forth into song, you mountains. For the LORD comforts his people and shows mercy to his afflicted.",
+        "VAT_ES": "&iexcl;Te has cansado de recibir consejos! &iexcl;Que se presenten y te salven los que investigan el cielo, los que observan las estrellas, los que pronostican cada luna nueva lo que te va a suceder!",
+        "CEI": "Giubilate, o cieli; rallegrati, o terra, gridate di gioia, o monti, perché il Signore consola il suo popolo e ha pietà dei suoi miseri."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֥אמֶר צִיּ֖וֹן עֲזָבַ֣/נִי יְהוָ֑ה וַ/אדֹנָ֖/י שְׁכֵחָֽ/נִי׃",
+        "LXX": "Εἶπεν δὲ Σειών Ἐγκατέλειπέν με Κύριος· καὶ ὅτι Κύριος ἐπελάθετό μου.",
+        "VUL": "[Et dixit Sion : Dereliquit me Dominus,/ et Dominus oblitus est mei./",
+        "SYN": "А Сион говорил: \"оставил меня Господь, и Бог мой забыл меня!\"",
+        "NEO": "Sion disait : « \\+w Yahweh|strong=\"H3068\"\\+w** m’a abandonnée ; le Seigneur m’a oubliée ! »",
+        "NAB": "But Zion said, \"The LORD has forsaken me; my Lord has forgotten me.\"",
+        "VAT_ES": "Pero ellos serán como paja: el fuego los quemará; no podrán librarse a sí mismos del poder de las llamas; no serán brasas para dar calor ni fuego para sentarse ante él.",
+        "CEI": "Sion ha detto: \"Il Signore mi ha abbandonato, il Signore mi ha dimenticato\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "הֲ/תִשְׁכַּ֤ח אִשָּׁה֙ עוּלָ֔/הּ מֵ/רַחֵ֖ם בֶּן בִּטְנָ֑/הּ גַּם אֵ֣לֶּה תִשְׁכַּ֔חְנָה וְ/אָנֹכִ֖י לֹ֥א אֶשְׁכָּחֵֽ/ךְ׃",
+        "LXX": "μὴ ἐπιλήσεται γυνὴ τοῦ παιδίου αὐτῆς, ἢ τοῦ μὴ ἐλεῆσαι τὰ ἔκγονα τῆς κοιλίας αὐτῆς; εἰ δὲ καὶ ταῦτα ἐπιλάθοιτο γυνή, ἀλλ’ ἐγὼ οὐκ ἐπιλήσομαι σοῦ, εἶπεν Κύριος.",
+        "VUL": "Numquid oblivisci potest mulier infantem suum,/ ut non misereatur filio uteri sui ?/ Etsi illa oblita fuerit,/ ego tamen non obliviscar tui./",
+        "SYN": "Забудет ли женщина грудное дитя свое, чтобы не пожалеть сына чрева своего? но если бы и она забыла, то Я не забуду тебя.",
+        "NEO": "Une femme oubliera-t-elle son nourrisson, n’aura-t-elle pas pitié du fruit de ses entrailles ? Quand même les mères oublieraient, moi, je ne t’oublierai point !",
+        "NAB": "Can a mother forget her infant, be without tenderness for the child of her womb? Even should she forget, I will never forget you.",
+        "VAT_ES": "Eso son para ti tus adivinos, por los que has bregado desde tu juventud: ellos andan errantes, cada uno por su lado, no hay nadie que pueda salvarte.",
+        "CEI": "Si dimentica forse una donna del suo bambino, così da non commuoversi per il figlio delle sue viscere? Anche se queste donne si dimenticassero, io invece non ti dimenticherò mai."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "הֵ֥ן עַל כַּפַּ֖יִם חַקֹּתִ֑י/ךְ חוֹמֹתַ֥יִ/ךְ נֶגְדִּ֖/י תָּמִֽיד׃",
+        "LXX": "ἰδοὺ ἐπὶ τῶν χειρῶν μου ἐζωγράφηκά σου τὰ τείχη, καὶ ἐνώπιόν μου εἶ διὰ παντός,",
+        "VUL": "Ecce in manibus meis descripsi te ;/ muri tui coram oculis meis semper./",
+        "SYN": "Вот, Я начертал тебя на дланях _Моих;_ стены твои всегда предо Мною.",
+        "NEO": "Vois, je t’aie gravée sur la paume de mes mains ; tes murs sont toujours devant mes yeux.",
+        "NAB": "See, upon the palms of my hands I have written your name; your walls are ever before me.",
+        "CEI": "Ecco, ti ho disegnato sulle palme delle mie mani, le tue mura sono sempre davanti a me."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "מִֽהֲר֖וּ בָּנָ֑יִ/ךְ מְהָֽרְסַ֥יִ/ךְ וּ/מַחֲרִבַ֖יִ/ךְ מִמֵּ֥/ךְ יֵצֵֽאוּ׃",
+        "LXX": "καὶ ταχὺ οἰκοδομηθήσῃ ὑφ’ ὧν καθῃρέθης, καὶ οἱ ἐρημώσαντές σε ἐκ σοῦ ἐξελεύσονται.",
+        "VUL": "Venerunt structores tui ;/ destruentes te et dissipantes a te exibunt./",
+        "SYN": "Сыновья твои поспешат _к тебе,_ а разорители и опустошители твои уйдут от тебя.",
+        "NEO": "Tes fils accourent ; ceux qui t’avaient détruite et dévastée s’éloignent de toi.",
+        "NAB": "Your rebuilders make haste, as those who tore you down and laid you waste go forth from you;",
+        "CEI": "I tuoi costruttori accorrono, i tuoi distruttori e i tuoi devastatori si allontanano da te."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "שְׂאִֽי סָבִ֤יב עֵינַ֨יִ/ךְ֙ וּ/רְאִ֔י כֻּלָּ֖/ם נִקְבְּצ֣וּ בָֽאוּ לָ֑/ךְ חַי אָ֣נִי נְאֻם יְהוָ֗ה כִּ֤י כֻלָּ/ם֙ כָּ/עֲדִ֣י תִלְבָּ֔שִׁי וּֽ/תְקַשְּׁרִ֖י/ם כַּ/כַּלָּֽה׃",
+        "LXX": "ἆρον κύκλῳ τοὺς ὀφθαλμούς σου καὶ ἴδε πάντας, ἰδοὺ συνήχθησαν καὶ ἤλθοσαν πρὸς σέ· ζῶ ἐγώ, λέγει Κύριος, ὅτι πάντας αὐτοὺς ὡς κόσμον ἐνδύσῃ, καὶ περιθήσεις αὐτοὺς ὡς κόσμον, ὡς νύμφη.",
+        "VUL": "Leva in circuitu oculos tuos, et vide :/ omnes isti congregati sunt, venerunt tibi./ Vivo ego, dicit Dominus,/ quia omnibus his velut ornamento vestieris,/ et circumdabis tibi eos quasi sponsa ;/",
+        "SYN": "Возведи очи твои и посмотри вокруг, - все они собираются, идут к тебе. Живу Я! говорит Господь, - всеми ими ты облечешься, как убранством, и нарядишься ими, как невеста.",
+        "NEO": "Lève les yeux autour de toi et regarde : ils se rassemblent tous, ils viennent à toi. Je suis vivant, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, tu te revêtiras d’eux tous comme d’une parure, tu t’en ceindras comme d’une ceinture de fiancée.",
+        "NAB": "Look about and see, they are all gathering and coming to you. As I live, says the LORD, you shall be arrayed with them all as with adornments, like a bride you shall fasten them on you.",
+        "CEI": "Alza gli occhi intorno e guarda: tutti costoro si radunano, vengono da te. \"Com'è vero ch'io vivo - oracolo del Signore - ti vestirai di tutti loro come di ornamento, te ne ornerai come una sposa\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כִּ֤י חָרְבֹתַ֨יִ/ךְ֙ וְ/שֹׁ֣מְמֹתַ֔יִ/ךְ וְ/אֶ֖רֶץ הֲרִֽסֻתֵ֑י/ךְ כִּ֤י עַתָּה֙ תֵּצְרִ֣י מִ/יּוֹשֵׁ֔ב וְ/רָחֲק֖וּ מְבַלְּעָֽיִ/ךְ׃",
+        "LXX": "ὅτι τὰ ἔρημά σου καὶ τὰ κατεφθαρμένα καὶ τὰ πεπτωκότα, νῦν στενοχωρήσει ἀπὸ τῶν κατοικούντων, καὶ μακρυνθήσονται ἀπὸ σοῦ οἱ καταπίνοντές σε.",
+        "VUL": "quia deserta tua, et solitudines tuæ,/ et terra ruinæ tuæ,/ nunc angusta erunt præ habitatoribus ;/ et longe fugabuntur qui absorbebant te./",
+        "SYN": "Ибо развалины твои и пустыни твои, и разоренная земля твоя будут теперь слишком тесны для жителей, и поглощавшие тебя удалятся от тебя.",
+        "NEO": "Car tes ruines, tes déserts, ton pays dévasté, tout cela maintenant sera trop étroit pour tes habitants ; et ceux qui te dévoraient se sont éloignés.",
+        "NAB": "Though you were waste and desolate, a land of ruins, Now you shall be too small for your inhabitants, while those who swallowed you up will be far away.",
+        "CEI": "Poiché le tue rovine e le tue devastazioni e il tuo paese desolato saranno ora troppo stretti per i tuoi abitanti, benché siano lontani i tuoi divoratori."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "ע֚וֹד יֹאמְר֣וּ בְ/אָזְנַ֔יִ/ךְ בְּנֵ֖י שִׁכֻּלָ֑יִ/ךְ צַר לִ֥/י הַ/מָּק֖וֹם גְּשָׁ/ה לִּ֥/י וְ/אֵשֵֽׁבָה׃",
+        "LXX": "ἐροῦσιν γὰρ εἰς τὰ ὦτά σου οἱ υἱοί σου οὓς ἀπολώλεκας Στενός μοι ὁ τόπος, ποίησόν μοι τόπον ἵνα κατοικήσω.",
+        "VUL": "Adhuc dicent in auribus tuis/ filii sterilitatis tuæ :/ Angustus est mihi locus ;/ fac spatium mihi ut habitem./",
+        "SYN": "Дети, которые будут у тебя после потери прежних, будут говорить вслух тебе: \"тесно для меня место; уступи мне, чтобы я мог жить\".",
+        "NEO": "Alors ils diront à tes oreilles, tes fils, dont tu étais privée : « L’espace est trop étroit pour moi ; fais-moi de la place pour que je puisse habiter. »",
+        "NAB": "The children whom you had lost shall yet say to you, \"This place is too small for me, make room for me to live in.\"",
+        "CEI": "Di nuovo ti diranno agli orecchi i figli di cui fosti privata: \"Troppo stretto è per me questo posto; scostati, e mi accomoderò\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/אָמַ֣רְתְּ בִּ/לְבָבֵ֗/ךְ מִ֤י יָֽלַד לִ/י֙ אֶת אֵ֔לֶּה וַ/אֲנִ֥י שְׁכוּלָ֖ה וְ/גַלְמוּדָ֑ה גֹּלָ֣ה וְ/סוּרָ֗ה וְ/אֵ֨לֶּה֙ מִ֣י גִדֵּ֔ל הֵ֤ן אֲנִי֙ נִשְׁאַ֣רְתִּי לְ/בַדִּ֔/י אֵ֖לֶּה אֵיפֹ֥ה הֵֽם׃",
+        "LXX": "καὶ ἐρεῖς ἐν τῇ καρδίᾳ σου Τίς ἐγέννησέν μοι τούτους; ἐγὼ δὲ ἄτεκνος καὶ χήρα, τούτους δὲ τίς ἐξέθρεψέν μοι; ἐγὼ δὲ κατελείφθην μόνη, οὗτοι δέ μοι ποῦ ἦσαν;",
+        "VUL": "Et dices in corde tuo :/ Quis genuit mihi istos ?/ ego sterilis et non pariens,/ transmigrata, et captiva ;/ et istos quis enutrivit ?/ ego destituta et sola ;/ et isti ubi erant ?/",
+        "SYN": "И ты скажешь в сердце твоем: кто мне родил их? я была бездетна и бесплодна, отведена в плен и удалена; кто же возрастил их? вот, я оставалась одинокою; где же они были?",
+        "NEO": "Et tu diras en ton cœur : « Qui m’a enfanté ceux-ci ? J’étais privée d’enfants, stérile, bannie et répudiée ; et ceux-ci, qui les a élevés ? Voici que j’étais restée seule ; ceux-ci, où étaient-ils ? »",
+        "NAB": "You shall ask yourself: \"Who has borne me these? I was bereft and barren (exiled and repudiated); who has reared them? I was left all alone; where then do these come from?\"",
+        "CEI": "Tu penserai: \"Chi mi ha generato costoro? Io ero priva di figli e sterile; questi chi li ha allevati? Ecco, ero rimasta sola e costoro dove erano?\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כֹּֽה אָמַ֞ר אֲדֹנָ֣/י יְהוִ֗ה הִנֵּ֨ה אֶשָּׂ֤א אֶל גּוֹיִם֙ יָדִ֔/י וְ/אֶל עַמִּ֖ים אָרִ֣ים נִסִּ֑/י וְ/הֵבִ֤יאוּ בָנַ֨יִ/ךְ֙ בְּ/חֹ֔צֶן וּ/בְנֹתַ֖יִ/ךְ עַל כָּתֵ֥ף תִּנָּשֶֽׂאנָה׃",
+        "LXX": "Οὕτως λέγει Κύριος Ἰδοὺ αἴρω εἰς τὰ ἔθνη τὴν χεῖρά μου, καὶ εἰς τὰς νήσους ἀρῶ σύσσημόν μου, καὶ ἄξουσιν τοὺς υἱούς σου ἐν κόλπῳ, τὰς δὲ θυγατέρας σου ἐπ’ ὤμων ἀροῦσιν,",
+        "VUL": "Hæc dicit Dominus Deus :/ Ecce levabo ad gentes manum meam,/ et ad populos exaltabo signum meum :/ et afferent filios tuos in ulnis,/ et filias tuas super humeros portabunt./",
+        "SYN": "Так говорит Господь Бог: вот, Я подниму руку Мою к народам, и выставлю знамя Мое племенам, и принесут сыновей твоих на руках и дочерей твоих на плечах.",
+        "NEO": "Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Voici que je lèverai ma main vers les nations, que je dresserai mon étendard vers les peuples ; et ils ramèneront tes fils entre leurs bras, et ils rapporteront tes filles sur leurs épaules.",
+        "NAB": "Thus says the Lord GOD: See, I will lift up my hand to the nations, and raise my signal to the peoples; They shall bring your sons in their arms, and your daughters shall be carried on their shoulders.",
+        "CEI": "Così dice il Signore Dio: \"Ecco, io farò cenno con la mano ai popoli, per le nazioni isserò il mio vessillo. Riporteranno i tuoi figli in braccio, le tue figlie saran portate sulle spalle."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/הָי֨וּ מְלָכִ֜ים אֹֽמְנַ֗יִ/ךְ וְ/שָׂרֽוֹתֵי/הֶם֙ מֵינִ֣יקֹתַ֔יִ/ךְ אַפַּ֗יִם אֶ֚רֶץ יִשְׁתַּ֣חֲווּ לָ֔/ךְ וַ/עֲפַ֥ר רַגְלַ֖יִ/ךְ יְלַחֵ֑כוּ וְ/יָדַ֨עַתְּ֙ כִּֽי אֲנִ֣י יְהוָ֔ה אֲשֶׁ֥ר לֹֽא יֵבֹ֖שׁוּ קוָֹֽ/י׃",
+        "LXX": "καὶ ἔσονται βασιλεῖς τιθηνοί σου, αἱ δὲ ἄρχουσαι αὐτῶν τροφοί σου· ἐπὶ πρόσωπον τῆς γῆς προσκυνήσουσίν σοι, καὶ τὸν χοῦν τῶν ποδῶν σου λίξουσιν· καὶ γνώσῃ ὅτι ἐγὼ Κύριος, καὶ οὐκ αἰσχυνθήσονται οἱ ὑπομένοντές με.",
+        "VUL": "Et erunt reges nutritii tui,/ et reginæ nutrices tuæ ;/ vultu in terram demisso adorabunt te,/ et pulverem pedum tuorum lingent./ Et scies quia ego Dominus,/ super quo non confundentur qui exspectant eum./",
+        "SYN": "И будут цари питателями твоими, и царицы их кормилицами твоими; лицом до земли будут кланяться тебе и лизать прах ног твоих, и узнаешь, что Я Господь, что надеющиеся на Меня не постыдятся.",
+        "NEO": "Des rois seront tes nourriciers, et leurs princesses tes nourrices ; ils se prosterneront devant toi la face contre terre, et ils lècheront la poussière de tes pieds ; et tu sauras que je suis \\+w Yahweh|strong=\"H3068\"\\+w**, et que ceux qui espèrent en moi ne seront pas confondus.",
+        "NAB": "Kings shall be your foster fathers, their princesses your nurses; Bowing to the ground, they shall worship you and lick the dust at your feet. Then you shall know that I am the LORD, and those who hope in me shall never be disappointed.",
+        "CEI": "I re saranno i tuoi tutori, le loro principesse tue nutrici. Con la faccia a terra essi si prostreranno davanti a te, baceranno la polvere dei tuoi piedi; allora tu saprai che io sono il Signore e che non saranno delusi quanti sperano in me\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "הֲ/יֻקַּ֥ח מִ/גִּבּ֖וֹר מַלְק֑וֹחַ וְ/אִם שְׁבִ֥י צַדִּ֖יק יִמָּלֵֽט׃",
+        "LXX": "μὴ λήμψεταί τις παρὰ γίγαντος σκῦλα; καὶ ἐὰν αἰχμαλωτεύσῃ τις ἀδίκως, σωθήσεται;",
+        "VUL": "Numquid tolletur a forti præda ?/ aut quod captum fuerit a robusto, salvum esse poterit ?/",
+        "SYN": "Может ли быть отнята у сильного добыча, и могут ли быть отняты у победителя взятые в плен?",
+        "NEO": "Mais arrachera-t-on au puissant sa proie, et les justes qu’on a faits captifs échapperont-ils ? —",
+        "NAB": "Thus says the LORD: Can booty be taken from a warrior? or captives be rescued from a tyrant?",
+        "CEI": "Si può forse strappare la preda al forte? Oppure può un prigioniero sfuggire al tiranno?"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "כִּי כֹ֣ה אָמַ֣ר יְהוָ֗ה גַּם שְׁבִ֤י גִבּוֹר֙ יֻקָּ֔ח וּ/מַלְק֥וֹחַ עָרִ֖יץ יִמָּלֵ֑ט וְ/אֶת יְרִיבֵ/ךְ֙ אָנֹכִ֣י אָרִ֔יב וְ/אֶת בָּנַ֖יִ/ךְ אָנֹכִ֥י אוֹשִֽׁיעַ׃",
+        "LXX": "οὕτως λέγει Κύριος Ἐάν τις αἰχμαλωτεύσῃ γίγαντα, λήμψεται σκῦλα· λαμβάνων δὲ παρὰ ἰσχύοντος σωθήσεται· ἐγὼ δὲ τὴν κρίσιν σου κρινῶ, καὶ ἐγὼ τοὺς υἱούς σου ῥύσομαι·",
+        "VUL": "Quia hæc dicit Dominus :/ Equidem, et captivitas a forti tolletur,/ et quod ablatum fuerit a robusto, salvabitur./ Eos vero qui judicaverunt te, ego judicabo,/ et filios tuos ego salvabo./",
+        "SYN": "Да! так говорит Господь: и плененные сильным будут отняты, и добыча тирана будет избавлена; потому что Я буду состязаться с противниками твоими и сыновей твоих Я спасу;",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Même la proie du puissant lui sera arrachée, et la proie du violent lui échappera. Tes adversaires, moi, je les combattrai ; tes fils, moi, je les sauverai.",
+        "NAB": "Yes, captives can be taken from a warrior, and booty be rescued from a tyrant; Those who oppose you I will oppose, and your sons I will save.",
+        "CEI": "Eppure dice il Signore: \"Anche il prigioniero sarà strappato al forte, la preda sfuggirà al tiranno. Io avverserò i tuoi avversari; io salverò i tuoi figli."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/הַאֲכַלְתִּ֤י אֶת מוֹנַ֨יִ/ךְ֙ אֶת בְּשָׂרָ֔/ם וְ/כֶ/עָסִ֖יס דָּמָ֣/ם יִשְׁכָּר֑וּ/ן וְ/יָדְע֣וּ כָל בָּשָׂ֗ר כִּ֣י אֲנִ֤י יְהוָה֙ מֽוֹשִׁיעֵ֔/ךְ וְ/גֹאֲלֵ֖/ךְ אֲבִ֥יר יַעֲקֹֽב׃",
+        "LXX": "καὶ φάγονται οἱ θλίψαντές σε τὰς σάρκας αὐτῶν, καὶ πίονται ὡς οἶνον νέον τὸ αἷμα αὐτῶν καὶ μεθυσθήσονται, καὶ αἰσθανθήσεται πᾶσα σὰρξ ὅτι ἐγὼ Κύριος ὁ ῥυσάμενός σε καὶ ἀντιλαμβανόμενος ἰσχύος Ἰακώβ.",
+        "VUL": "Et cibabo hostes tuos carnibus suis,/ et quasi musto, sanguine suo inebriabuntur,/ et sciet omnis caro/ quia ego Dominus salvans te,/ et redemptor tuus fortis Jacob.]",
+        "SYN": "и притеснителей твоих накормлю собственною их плотью, и они будут упоены кровью своею, как молодым вином; и всякая плоть узнает, что Я Господь, Спаситель твой и Искупитель твой, Сильный Иаковлев.",
+        "NEO": "Je ferai manger à tes oppresseurs leur propre chair, ils s’enivreront de leur sang comme d’un vin nouveau ; et toute chair saura que moi, \\+w Yahweh|strong=\"H3068\"\\+w**, je suis ton Sauveur, et que ton rédempteur est le Puissant de Jacob !",
+        "NAB": "I will make your oppressors eat their own flesh, and they shall be drunk with their own blood as with the juice of the grape. All mankind shall know that I, the LORD, am your savior, your redeemer, the Mighty One of Jacob.",
+        "CEI": "Farò mangiare le loro stesse carni ai tuoi oppressori, si ubriacheranno del proprio sangue come di mosto. Allora ogni uomo saprà che io sono il Signore, tuo salvatore, io il tuo redentore e il Forte di Giacobbe\"."
+      }
+    }
+  }
+}

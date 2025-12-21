@@ -1,0 +1,571 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_047",
+  "book_key": "GENE",
+  "sequence": 47,
+  "chapter_in": {
+    "MT": 47,
+    "VUL": 47,
+    "LXX": 47
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֣א יוֹסֵף֮ וַ/יַּגֵּ֣ד לְ/פַרְעֹה֒ וַ/יֹּ֗אמֶר אָבִ֨/י וְ/אַחַ֜/י וְ/צֹאנָ֤/ם וּ/בְקָרָ/ם֙ וְ/כָל אֲשֶׁ֣ר לָ/הֶ֔ם בָּ֖אוּ מֵ/אֶ֣רֶץ כְּנָ֑עַן וְ/הִנָּ֖/ם בְּ/אֶ֥רֶץ גֹּֽשֶׁן׃",
+        "VUL": "Ingressus ergo Joseph nuntiavit Pharaoni, dicens : Pater meus et fratres, oves eorum et armenta, et cuncta quæ possident, venerunt de terra Chanaan : et ecce consistunt in terra Gessen.",
+        "LXX": "Ἐλθὼν δὲ Ἰωσὴφ ἀπήγγειλεν τῷ Φαραὼ λέγων Ὁ πατὴρ καὶ οἱ ἀδελφοὶ καὶ τὰ κτήνη καὶ οἱ βόες αὐτῶν καὶ πάντα τὰ αὐτῶν ἦλθον ἐκ γῆς Χανάαν, καὶ ἰδού εἰσιν ἐν γῇ Γέσεμ.",
+        "NAB": "Joseph went and told Pharaoh, \"My father and my brothers have come from the land of Canaan, with their flocks and herds and everything else they own; and they are now in the region of Goshen.\"",
+        "SYN": "И пришел Иосиф и известил фараона и сказал: отец мой и братья мои, с мелким и крупным скотом своим и со всем, что у них, пришли из земли Ханаанской; и вот, они в земле Гесем.",
+        "NEO": "Joseph alla porter la nouvelle à Pharaon, en disant : « Mon père et mes frères sont venus du pays de Canaan avec leurs brebis et leurs bœufs, et tout ce qui leur appartient, et les voici dans le pays de Gessen. »",
+        "VAT_ES": "Luego José fue a informar al Faraón, diciendo: «Mi padre y mis hermanos vinieron de Canaán con sus ovejas, sus vacas y todo lo que poseen, y ahora están en la región de Gosen».",
+        "CEI": "Giuseppe andò ad informare il faraone dicendogli: \"Mio padre e i miei fratelli con i loro greggi e armenti e con tutti i loro averi sono venuti dal paese di Cànaan; eccoli nel paese di Gosen\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וּ/מִ/קְצֵ֣ה אֶחָ֔י/ו לָקַ֖ח חֲמִשָּׁ֣ה אֲנָשִׁ֑ים וַ/יַּצִּגֵ֖/ם לִ/פְנֵ֥י פַרְעֹֽה׃",
+        "VUL": "Extremos quoque fratrum suorum quinque viros constituit coram rege :",
+        "LXX": "ἀπὸ δὲ τῶν ἀδελφῶν παρέλαβεν πέντε ἄνδρας καὶ ἔστησεν αὐτοὺς ἐναντίον Φαραώ.",
+        "NAB": "He then presented to Pharaoh five of his brothers whom he had selected from their full number.",
+        "SYN": "И из братьев своих он взял пять человек и представил их фараону.",
+        "NEO": "Ayant pris cinq de ses frères, il les présenta à Pharaon ;",
+        "VAT_ES": "Además, él se había hecho acompañar por algunos de sus hermanos y se los presentó al Faraón.",
+        "CEI": "Intanto prese cinque uomini dal gruppo dei suoi fratelli e li presentò al faraone."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמֶר פַּרְעֹ֛ה אֶל אֶחָ֖י/ו מַה מַּעֲשֵׂי/כֶ֑ם וַ/יֹּאמְר֣וּ אֶל פַּרְעֹ֗ה רֹעֵ֥ה צֹאן֙ עֲבָדֶ֔י/ךָ גַּם אֲנַ֖חְנוּ גַּם אֲבוֹתֵֽי/נוּ׃",
+        "VUL": "quos ille interrogavit : Quid habetis operis ? Responderunt : Pastores ovium sumus servi tui, et nos et patres nostri.",
+        "LXX": "καὶ εἶπεν Φαραὼ τοῖς ἀδελφοῖς Ἰωσήφ Τί τὸ ἔργον ὑμῶν; οἱ δὲ εἶπαν τῷ Φαραώ Ποιμένες προβάτων οἱ παῖδές σου, καὶ ἡμεῖς καὶ οἱ πατέρες ἡμῶν.",
+        "NAB": "When Pharaoh asked them what their occupation was, they answered, \"We, your servants, like our ancestors, are shepherds.",
+        "SYN": "И сказал фараон братьям его: какое ваше занятие? Они сказали фараону: пастухи овец рабы твои, и мы и отцы наши.",
+        "NEO": "et Pharaon leur dit : « Quelle est votre occupation ? » Ils répondirent à Pharaon : « Nous, tes serviteurs, sommes bergers, comme l’étaient nos pères. »",
+        "VAT_ES": "Este les preguntó: «Y ustedes, &iquest;de qué se ocupan?». «Somos pastores, como también lo fueron nuestros antepasados», respondieron ellos.",
+        "CEI": "Il faraone disse ai suoi fratelli: \"Qual è il vostro mestiere?\". Essi risposero al faraone: \"Pastori di greggi sono i tuoi servi, noi e i nostri padri\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֣וּ אֶל פַּרְעֹ֗ה לָ/ג֣וּר בָּ/אָרֶץ֮ בָּאנוּ֒ כִּי אֵ֣ין מִרְעֶ֗ה לַ/צֹּאן֙ אֲשֶׁ֣ר לַ/עֲבָדֶ֔י/ךָ כִּֽי כָבֵ֥ד הָ/רָעָ֖ב בְּ/אֶ֣רֶץ כְּנָ֑עַן וְ/עַתָּ֛ה יֵֽשְׁבוּ נָ֥א עֲבָדֶ֖י/ךָ בְּ/אֶ֥רֶץ גֹּֽשֶׁן׃",
+        "VUL": "Ad peregrinandum in terra tua venimus : quoniam non est herba gregibus servorum tuorum, ingravescente fame in terra Chanaan : petimusque ut esse nos jubeas servos tuos in terra Gessen.",
+        "LXX": "εἶπαν δὲ τῷ Φαραώ Παροικεῖν ἐν τῇ γῇ ἥκαμεν· οὐ γάρ ἐστιν νομὴ τοῖς κτήνεσιν τῶν παίδων σου, ἐνίσχυσεν γὰρ ὁ λιμὸς ἐν γῇ Χανάαν· νῦν οὖν κατοικήσομεν ἐν γῇ Γέσεμ.",
+        "NAB": "We have come,\" they continued, \"in order to stay in this country, for there is no pasture for your servants' flocks in the land of Canaan, so severe has the famine been there. Please, therefore, let your servants settle in the region of Goshen.\"",
+        "SYN": "И сказали они фараону: мы пришли пожить в этой земле, потому что нет пажити для скота рабов твоих, ибо в земле Ханаанской сильный голод; итак позволь поселиться рабам твоим в земле Гесем.",
+        "NEO": "Ils dirent encore à Pharaon : « Nous sommes venus pour séjourner dans le pays, car il n’y a plus de pâture pour les brebis de tes serviteurs, la famine s’étant appesantie sur le pays de Canaan. Permets donc à tes serviteurs d’habiter dans le pays de Gessen. »",
+        "VAT_ES": "Y añadieron: «Hemos venido a residir en este país, porque en Canaán no hay pastos para nuestros rebaños, ya que el país está asolado por el hambre. Por eso te rogamos que nos dejes permanecer en la región de Gosen».",
+        "CEI": "Poi dissero al faraone: \"Siamo venuti per soggiornare come forestieri nel paese perché non c'è più pascolo per il gregge dei tuoi servi; infatti è grave la carestia nel paese di Cànaan. E ora lascia che i tuoi servi risiedano nel paese di Gosen!\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר פַּרְעֹ֔ה אֶל יוֹסֵ֖ף לֵ/אמֹ֑ר אָבִ֥י/ךָ וְ/אַחֶ֖י/ךָ בָּ֥אוּ אֵלֶֽי/ךָ׃",
+        "VUL": "Dixit itaque rex ad Joseph : Pater tuus et fratres tui venerunt ad te.",
+        "LXX": "εἶπεν δὲ Φαραὼ τῷ Ἰωσήφ Κατοικείτωσαν ἐν γῇ Γέσεμ· εἰ δὲ ἐπίστῃ ὅτι εἰσὶν ἐν αὐτοῖς ἄνδρες δυνατοί, κατάστησον αὐτοὺς ἄρχοντας τῶν ἐμῶν κτηνῶν. ἦλθον δὲ εἰς Αἴγυπτον πρὸς Ἰωσὴφ Ἰακὼβ καὶ οἱ υἱοὶ αὐτοῦ· καὶ ἤκουσεν Φαραὼ βασιλεὺς Αἰγύπτου. καὶ εἶπεν Φαραὼ πρὸς Ἰωσὴφ λέγων Ὁ πατήρ σου καὶ οἱ ἀδελφοί σου ἥκασι πρὸς σέ·",
+        "NAB": "Pharaoh said to Joseph, \"They may settle in the region of Goshen; and if you know any of them to be qualified, you may put them in charge of my own livestock.\" Thus, when Jacob and his sons came to Joseph in Egypt, and Pharaoh, king of Egypt, heard about it, Pharaoh said to Joseph, \"Now that your father and brothers have come to you,",
+        "SYN": "И сказал фараон Иосифу: отец твой и братья твои пришли к тебе;",
+        "NEO": "Pharaon dit à Joseph : « Ton père et tes frères sont venus auprès de toi. Le pays d’Égypte est devant toi : établis ton père et tes frères dans la meilleure partie du pays.",
+        "CEI": "Allora il faraone disse a Giuseppe: \"Tuo padre e i tuoi fratelli sono dunque venuti da te."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אֶ֤רֶץ מִצְרַ֨יִם֙ לְ/פָנֶ֣י/ךָ הִ֔וא בְּ/מֵיטַ֣ב הָ/אָ֔רֶץ הוֹשֵׁ֥ב אֶת אָבִ֖י/ךָ וְ/אֶת אַחֶ֑י/ךָ יֵשְׁבוּ֙ בְּ/אֶ֣רֶץ גֹּ֔שֶׁן וְ/אִם יָדַ֗עְתָּ וְ/יֶשׁ בָּ/ם֙ אַנְשֵׁי חַ֔יִל וְ/שַׂמְתָּ֛/ם שָׂרֵ֥י מִקְנֶ֖ה עַל אֲשֶׁר לִֽ/י׃",
+        "VUL": "Terra Ægypti in conspectu tuo est : in optimo loco fac eos habitare, et trade eis terram Gessen. Quod si nosti in eis esse viros industrios, constitue illos magistros pecorum meorum.",
+        "LXX": "ἰδοὺ ἡ γῆ Αἰγύπτου ἐναντίον σού ἐστιν· ἐν τῇ βελτίστῃ γῇ κατοίκισον τὸν πατέρα σου καὶ τοὺς ἀδελφούς σου.",
+        "NAB": "the land of Egypt is at your disposal; settle your father and brothers in the pick of the land.\"",
+        "SYN": "земля Египетская пред тобою; на лучшем месте земли посели отца твоего и братьев твоих; пусть живут они в земле Гесем; и если знаешь, что между ними есть способные люди, поставь их смотрителями над моим скотом.",
+        "NEO": "Qu’ils demeurent dans le pays de Gessen ; et, si tu trouves parmi eux des hommes capables, mets-les à la tête des troupeaux qui m’appartiennent. »",
+        "CEI": "Ebbene, il paese d'Egitto è a tua disposizione: fà risiedere tuo padre e i tuoi fratelli nella parte migliore del paese. Risiedano pure nel paese di Gosen. Se tu sai che vi sono tra di loro uomini capaci, costituiscili sopra i miei averi in qualità di sovrintendenti al bestiame\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יָּבֵ֤א יוֹסֵף֙ אֶת יַֽעֲקֹ֣ב אָבִ֔י/ו וַ/יַּֽעֲמִדֵ֖/הוּ לִ/פְנֵ֣י פַרְעֹ֑ה וַ/יְבָ֥רֶךְ יַעֲקֹ֖ב אֶת פַּרְעֹֽה׃",
+        "VUL": "Post hæc introduxit Joseph patrem suum ad regem, et statuit eum coram eo : qui benedicens illi,",
+        "LXX": "εἰσήγαγεν δὲ Ἰωσὴφ Ἰακὼβ τὸν πατέρα αὐτοῦ καὶ ἔστησεν αὐτὸν ἐναντίον Φαραώ· καὶ εὐλόγησεν Ἰακὼβ τὸν Φαραώ.",
+        "NAB": "Then Joseph brought his father Jacob and presented him to Pharaoh. After Jacob had paid his respects to Pharaoh,",
+        "SYN": "И привел Иосиф Иакова, отца своего, и представил его фараону; и благословил Иаков фараона.",
+        "NEO": "Joseph fit venir Jacob, son père, et le présenta à Pharaon. Jacob bénit Pharaon ;",
+        "VAT_ES": "José hizo venir a su padre Jacob y se lo presentó al Faraón. Jacob saludó respetuosamente al Faraón,",
+        "CEI": "Poi Giuseppe introdusse Giacobbe, suo padre, e lo presentò al faraone e Giacobbe benedisse il faraone."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר פַּרְעֹ֖ה אֶֽל יַעֲקֹ֑ב כַּ/מָּ֕ה יְמֵ֖י שְׁנֵ֥י חַיֶּֽי/ךָ׃",
+        "VUL": "et interrogatus ab eo : Quot sunt dies annorum vitæ tuæ ?",
+        "LXX": "εἶπεν δὲ Φαραὼ τῷ Ἰακώβ Πόσα ἔτη ἡμερῶν τῆς ζωῆς σου;",
+        "NAB": "Pharaoh asked him, \"How many years have you lived?\"",
+        "SYN": "Фараон сказал Иакову: сколько лет жизни твоей?",
+        "NEO": "et Pharaon dit à Jacob : « Quel est le nombre de jours des années de ta vie ? »",
+        "VAT_ES": "y este le preguntó: «&iquest;Cuántos años tienes?».",
+        "CEI": "Il faraone domandò a Giacobbe: \"Quanti anni hai?\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יַעֲקֹב֙ אֶל פַּרְעֹ֔ה יְמֵי֙ שְׁנֵ֣י מְגוּרַ֔/י שְׁלֹשִׁ֥ים וּ/מְאַ֖ת שָׁנָ֑ה מְעַ֣ט וְ/רָעִ֗ים הָיוּ֙ יְמֵי֙ שְׁנֵ֣י חַיַּ֔/י וְ/לֹ֣א הִשִּׂ֗יגוּ אֶת יְמֵי֙ שְׁנֵי֙ חַיֵּ֣י אֲבֹתַ֔/י בִּ/ימֵ֖י מְגוּרֵי/הֶֽם׃",
+        "VUL": "respondit : Dies peregrinationis meæ centum triginta annorum sunt, parvi et mali, et non pervenerunt usque ad dies patrum meorum quibus peregrinati sunt.",
+        "LXX": "καὶ εἶπεν Ἰακὼβ τῷ Φαραώ Αἱ ἡμέραι τῶν ἐτῶν τῆς ζωῆς μου ἃς παροικῶ ἑκατὸν τριάκοντα ἔτη· μικραὶ καὶ πονηραὶ γεγόνασιν αἱ ἡμέραι τῶν ἐτῶν τῆς ζωῆς μου· οὐκ ἀφίκοντο εἰς τὰς ἡμέρας τῶν ἐτῶν τῆς ζωῆς τῶν πατέρων μου, ἃς ἡμέρας παρῴκησαν.",
+        "NAB": "Jacob replied: \"The years I have lived as a wayfarer amount to a hundred and thirty. Few and hard have been these years of my life, and they do not compare with the years that my ancestors lived as wayfarers.\"",
+        "SYN": "Иаков сказал фараону: дней странствования моего сто тридцать лет; малы и несчастны дни жизни моей и не достигли до лет жизни отцов моих во днях странствования их.",
+        "NEO": "Jacob répondit à Pharaon : « Les jours des années de mon pèlerinage sont de cent trente ans. Courts et mauvais ont été les jours des années de ma vie, et ils n’ont pas atteint les jours des années de la vie de mes pères durant leur pèlerinage. »",
+        "VAT_ES": "Jacob respondió al Faraón: «Los años que se me han concedido suman ya ciento treinta. Pocos y desdichados han sido estos años de mi vida, y ni siquiera se acercan a los que fueron concedidos a mis padres».",
+        "CEI": "Giacobbe rispose al faraone: \"Centotrenta di vita errabonda, pochi e tristi sono stati gli anni della mia vita e non hanno raggiunto il numero degli anni dei miei padri, al tempo della loro vita nomade\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יְבָ֥רֶךְ יַעֲקֹ֖ב אֶת פַּרְעֹ֑ה וַ/יֵּצֵ֖א מִ/לִּ/פְנֵ֥י פַרְעֹֽה׃",
+        "VUL": "Et benedicto rege, egressus est foras.",
+        "LXX": "καὶ εὐλογήσας Ἰακὼβ τὸν Φαραὼ ἐξῆλθεν ἀπ’ αὐτοῦ.",
+        "NAB": "Then Jacob bade Pharaoh farewell and withdrew from his presence.",
+        "SYN": "И благословил фараона Иаков и вышел от фараона.",
+        "NEO": "Jacob bénit encore Pharaon et se retira de devant Pharaon.",
+        "VAT_ES": "Luego Jacob volvió a saludar al Faraón y salió de allí.",
+        "CEI": "Poi Giacobbe benedisse il faraone e si allontanò dal faraone."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יּוֹשֵׁ֣ב יוֹסֵף֮ אֶת אָבִ֣י/ו וְ/אֶת אֶחָי/ו֒ וַ/יִּתֵּ֨ן לָ/הֶ֤ם אֲחֻזָּה֙ בְּ/אֶ֣רֶץ מִצְרַ֔יִם בְּ/מֵיטַ֥ב הָ/אָ֖רֶץ בְּ/אֶ֣רֶץ רַעְמְסֵ֑ס כַּ/אֲשֶׁ֖ר צִוָּ֥ה פַרְעֹֽה׃",
+        "VUL": "Joseph vero patri et fratribus suis dedit possessionem in Ægypto in optimo terræ loco, Ramesses, ut præceperat Pharao.",
+        "LXX": "καὶ κατῴκισεν Ἰωσὴφ τὸν πατέρα καὶ τοὺς ἀδελφοὺς αὐτοῦ καὶ ἔδωκεν αὐτοῖς κατάσχεσιν ἐν γῇ Αἰγύπτου, ἐν τῇ βελτίστῃ γῇ, ἐν γῇ Ῥαμεσσή, καθὰ προσέταξεν Φαραώ.",
+        "NAB": "As Pharaoh had ordered, Joseph settled his father and brothers and gave them holdings in Egypt on the pick of the land, in the region of Rameses.",
+        "SYN": "И поселил Иосиф отца своего и братьев своих, и дал им владение в земле Египетской, в лучшей части земли, в земле Раамсес, как повелел фараон.",
+        "NEO": "Joseph établit son père et ses frères, et leur assigna une propriété dans le pays d’Égypte, dans la meilleure partie du pays, dans la contrée de Ramsès, ainsi que Pharaon l’avait ordonné ;",
+        "VAT_ES": "José instaló a su padre y a sus hermanos, dándoles una propiedad en Egipto, en las mejores tierras –en la región de Ramsés– como el Faraón lo había dispuesto.",
+        "CEI": "Giuseppe fece risiedere suo padre e i suoi fratelli e diede loro una proprietà nel paese d'Egitto, nella parte migliore del paese, nel territorio di Ramses, come aveva comandato il faraone."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יְכַלְכֵּ֤ל יוֹסֵף֙ אֶת אָבִ֣י/ו וְ/אֶת אֶחָ֔י/ו וְ/אֵ֖ת כָּל בֵּ֣ית אָבִ֑י/ו לֶ֖חֶם לְ/פִ֥י הַ/טָּֽף׃",
+        "VUL": "Et alebat eos, omnemque domum patris sui, præbens cibaria singulis.",
+        "LXX": "καὶ ἐσιτομέτρει Ἰωσὴφ τῷ πατρὶ αὐτοῦ καὶ τοῖς ἀδελφοῖς καὶ παντὶ τῷ οἴκῳ τοῦ πατρὸς αὐτοῦ σῖτον κατὰ σῶμα.",
+        "NAB": "And Joseph sustained his father and brothers and his father's whole household, down to the youngest, with food.",
+        "SYN": "И снабжал Иосиф отца своего и братьев своих и весь дом отца своего хлебом, по потребностям каждого семейства.",
+        "NEO": "et Joseph fournit de pain son père et ses frères, et toute la famille de son père, selon le nombre des enfants.",
+        "VAT_ES": "Y también proveyó al sostenimiento de su padre, de sus hermanos, y de toda la familia de su padre, según las necesidades de cada uno.",
+        "CEI": "Giuseppe diede il sostentamento al padre, ai fratelli e a tutta la famiglia di suo padre, fornendo pane secondo il numero dei bambini."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/לֶ֤חֶם אֵין֙ בְּ/כָל הָ/אָ֔רֶץ כִּֽי כָבֵ֥ד הָ/רָעָ֖ב מְאֹ֑ד וַ/תֵּ֜לַהּ אֶ֤רֶץ מִצְרַ֨יִם֙ וְ/אֶ֣רֶץ כְּנַ֔עַן מִ/פְּנֵ֖י הָ/רָעָֽב׃",
+        "VUL": "In toto enim orbe panis deerat, et oppresserat fames terram, maxime Ægypti et Chanaan.",
+        "LXX": "Σῖτος δὲ οὐκ ἦν ἐν πάσῃ τῇ γῇ, ἐνίσχυσεν γὰρ ὁ λιμὸς σφόδρα· ἐξέλιπεν δὲ ἡ γῆ Αἰγύπτου καὶ ἡ γῆ Χανάαν ἀπὸ τοῦ λιμοῦ·",
+        "NAB": "Since there was no food in any country because of the extreme severity of the famine, and the lands of Egypt and Canaan were languishing from hunger,",
+        "SYN": "И не было хлеба по всей земле, потому что голод весьма усилился, и изнурены были от голода земля Египетская и земля Ханаанская.",
+        "NEO": "Il n’y avait plus de pain dans tout le pays, car la famine était très grande ; le pays d’Égypte et le pays de Canaan étaient épuisés à cause de la famine.",
+        "VAT_ES": "Como la escasez era muy grande, en ningún país había alimentos, y tanto Egipto como Canaán estaban exhaustos por el hambre.",
+        "CEI": "Ora non c'era pane in tutto il paese, perché la carestia era molto grave: il paese d'Egitto e il paese di Cànaan languivano per la carestia."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יְלַקֵּ֣ט יוֹסֵ֗ף אֶת כָּל הַ/כֶּ֨סֶף֙ הַ/נִּמְצָ֤א בְ/אֶֽרֶץ מִצְרַ֨יִם֙ וּ/בְ/אֶ֣רֶץ כְּנַ֔עַן בַּ/שֶּׁ֖בֶר אֲשֶׁר הֵ֣ם שֹׁבְרִ֑ים וַ/יָּבֵ֥א יוֹסֵ֛ף אֶת הַ/כֶּ֖סֶף בֵּ֥יתָ/ה פַרְעֹֽה׃",
+        "VUL": "E quibus omnem pecuniam congregavit pro venditione frumenti, et intulit eam in ærarium regis.",
+        "LXX": "συνήγαγεν δὲ Ἰωσὴφ πᾶν τὸ ἀργύριον τὸ εὑρεθὲν ἐν γῇ Αἰγύπτου καὶ ἐν γῇ Χανάαν τοῦ σίτου ὃ ἠγόραζον, καὶ ἐσιτομέτρει αὐτοῖς· καὶ εἰσήνεγκεν Ἰωσὴφ πᾶν τὸ ἀργύριον εἰς τὸν οἶκον Φαραώ.",
+        "NAB": "Joseph gathered in, as payment for the rations that were being dispensed, all the money that was to be found in Egypt and Canaan, and he put it in Pharaoh's palace.",
+        "SYN": "Иосиф собрал все серебро, какое было в земле Египетской и в земле Ханаанской, за хлеб, который покупали, и внес Иосиф серебро в дом фараонов.",
+        "NEO": "Joseph recueillit tout l’argent qui se trouvait dans le pays d’Égypte et dans le pays de Canaan, contre le blé qu’on achetait, et il fit entrer cet argent dans la maison de Pharaon.",
+        "VAT_ES": "Así José pudo recaudar todo el dinero que circulaba en Egipto y en Canaán, como pago por los víveres que compraban, y guardó ese dinero en el palacio del Faraón.",
+        "CEI": "Giuseppe raccolse tutto il denaro che si trovava nel paese d'Egitto e nel paese di Cànaan in cambio del grano che essi acquistavano; Giuseppe consegnò questo denaro alla casa del faraone."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּתֹּ֣ם הַ/כֶּ֗סֶף מֵ/אֶ֣רֶץ מִצְרַיִם֮ וּ/מֵ/אֶ֣רֶץ כְּנַעַן֒ וַ/יָּבֹאוּ֩ כָל מִצְרַ֨יִם אֶל יוֹסֵ֤ף לֵ/אמֹר֙ הָֽבָ/ה לָּ֣/נוּ לֶ֔חֶם וְ/לָ֥/מָּה נָמ֖וּת נֶגְדֶּ֑/ךָ כִּ֥י אָפֵ֖ס כָּֽסֶף׃",
+        "VUL": "Cumque defecisset emptoribus pretium, venit cuncta Ægyptus ad Joseph, dicens : Da nobis panes : quare morimur coram te, deficiente pecunia ?",
+        "LXX": "καὶ ἐξέλιπεν τὸ ἀργύριον πᾶν ἐκ γῆς Αἰγύπτου καὶ ἐκ γῆς Χανάαν· ἦλθον δὲ πάντες οἱ Αἰγύπτιοι πρὸς Ἰωσὴφ λέγοντες Δὸς ἡμῖν ἄρτους· καὶ ἵνα τί ἀποθνήσκομεν ἐναντίον σου; ἐκλέλοιπεν γὰρ τὸ ἀργύριον ἡμῶν.",
+        "NAB": "When all the money in Egypt and Canaan was spent, all the Egyptians came to Joseph, pleading, \"Give us food or we shall perish under your eyes; for our money is gone.\"",
+        "SYN": "И серебро истощилось в земле Египетской и в земле Ханаанской. Все Египтяне пришли к Иосифу и говорили: дай нам хлеба; зачем нам умирать пред тобою, потому что серебро вышло у нас?",
+        "NEO": "Quand il n’y eut plus d’argent dans le pays d’Égypte et dans le pays de Canaan, tous les Egyptiens vinrent à Joseph, en disant : « Donne-nous du pain ! Pourquoi mourrions-nous en ta présence ? Car nous sommes à bout d’argent. »",
+        "VAT_ES": "Y cuando ya no hubo más dinero ni en Egipto ni en Canaán, los egipcios acudieron en masa a José para decirle: «Danos de comer. &iquest;Por qué tendremos que morir ante tus propios ojos, por falta de dinero?».",
+        "CEI": "Quando fu esaurito il denaro del paese di Egitto e del paese di Cànaan, tutti gli Egiziani vennero da Giuseppe a dire: \"Dacci il pane! Perché dovremmo morire sotto i tuoi occhi? Infatti non c'è più denaro\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יוֹסֵף֙ הָב֣וּ מִקְנֵי/כֶ֔ם וְ/אֶתְּנָ֥ה לָ/כֶ֖ם בְּ/מִקְנֵי/כֶ֑ם אִם אָפֵ֖ס כָּֽסֶף׃",
+        "VUL": "Quibus ille respondit : Adducite pecora vestra, et dabo vobis pro eis cibos, si pretium non habetis.",
+        "LXX": "εἶπεν δὲ αὐτοῖς Ἰωσήφ Φέρετε τὰ κτήνη ὑμῶν, καὶ δώσω ὑμῖν ἄρτους ἀντὶ τῶν κτηνῶν ὑμῶν, ⸂⸆⸃ εἰ ἐκλέλοιπεν τὸ ἀργύριον ὑμῶν.",
+        "NAB": "\"Since your money is gone,\" replied Joseph, \"give me your livestock, and I will sell you bread in return for your livestock.\"",
+        "SYN": "Иосиф сказал: пригоняйте скот ваш, и я буду давать вам [хлеб] за скот ваш, если серебро вышло у вас.",
+        "NEO": "Joseph dit : « Amenez vos troupeaux, et je vous donnerai du pain en échange de vos troupeaux, puisque vous êtes à bout d’argent. »",
+        "VAT_ES": "José respondió: «Si ya no hay más dinero, entreguen su ganado y yo les daré pan a cambio de él».",
+        "CEI": "Rispose Giuseppe: \"Cedetemi il vostro bestiame e io vi darò pane in cambio del vostro bestiame, se non c'è più denaro\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יָּבִ֣יאוּ אֶת מִקְנֵי/הֶם֮ אֶל יוֹסֵף֒ וַ/יִּתֵּ֣ן לָ/הֶם֩ יוֹסֵ֨ף לֶ֜חֶם בַּ/סּוּסִ֗ים וּ/בְ/מִקְנֵ֥ה הַ/צֹּ֛אן וּ/בְ/מִקְנֵ֥ה הַ/בָּקָ֖ר וּ/בַ/חֲמֹרִ֑ים וַ/יְנַהֲלֵ֤/ם בַּ/לֶּ֨חֶם֙ בְּ/כָל מִקְנֵ/הֶ֔ם בַּ/שָּׁנָ֖ה הַ/הִֽוא׃",
+        "VUL": "Quæ cum adduxissent, dedit eis alimenta pro equis, et ovibus, et bobus, et asinis : sustentavitque eos illo anno pro commutatione pecorum.",
+        "LXX": "ἤγαγον δὲ τὰ κτήνη πρὸς Ἰωσήφ, καὶ ἔδωκεν αὐτοῖς Ἰωσὴφ ἄρτους ἀντὶ τῶν ἵππων καὶ ἀντὶ τῶν προβάτων καὶ ἀντὶ τῶν βοῶν καὶ ἀντὶ τῶν ὄνων· καὶ ἐξέθρεψεν αὐτοὺς ἐν ἄρτοις ἀντὶ πάντων τῶν κτηνῶν αὐτῶν ἐν τῷ ἐνιαυτῷ ἐκείνῳ.",
+        "NAB": "So they brought their livestock to Joseph, and he sold them food in return for their horses, their flocks of sheep and herds of cattle, and their donkeys. Thus he got them through that year with bread in exchange for all their livestock.",
+        "SYN": "И пригоняли они к Иосифу скот свой; и давал им Иосиф хлеб за лошадей, и за стада мелкого скота, и за стада крупного скота, и за ослов; и снабжал их хлебом в тот год за весь скот их.",
+        "NEO": "Ils amenèrent leurs troupeaux à Joseph, et Joseph leur donna du pain en échange des chevaux, des troupeaux de brebis et de bœufs, et des ânes. Il leur fournit ainsi du pain cette année-là, en échange de tous leurs troupeaux.",
+        "VAT_ES": "Ellos trajeron sus animales a José, y él les dio pan a cambio de caballos, ovejas, vacas y asnos. Y durante aquel año los abasteció de víveres a cambio de todos sus animales.",
+        "CEI": "Allora condussero a Giuseppe il loro bestiame e Giuseppe diede loro il pane in cambio dei cavalli e delle pecore, dei buoi e degli asini; così in quell'anno li nutrì di pane in cambio di tutto il loro bestiame."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/תִּתֹּם֮ הַ/שָּׁנָ֣ה הַ/הִוא֒ וַ/יָּבֹ֨אוּ אֵלָ֜י/ו בַּ/שָּׁנָ֣ה הַ/שֵּׁנִ֗ית וַ/יֹּ֤אמְרוּ ל/וֹ֙ לֹֽא נְכַחֵ֣ד מֵֽ/אֲדֹנִ֔/י כִּ֚י אִם תַּ֣ם הַ/כֶּ֔סֶף וּ/מִקְנֵ֥ה הַ/בְּהֵמָ֖ה אֶל אֲדֹנִ֑/י לֹ֤א נִשְׁאַר֙ לִ/פְנֵ֣י אֲדֹנִ֔/י בִּלְתִּ֥י אִם גְּוִיָּתֵ֖/נוּ וְ/אַדְמָתֵֽ/נוּ׃",
+        "VUL": "Venerunt quoque anno secundo, et dixerunt ei : Non celabimus dominum nostrum quod deficiente pecunia, pecora simul defecerunt : nec clam te est, quod absque corporibus et terra nihil habeamus.",
+        "LXX": "ἐξῆλθεν δὲ τὸ ἔτος ἐκεῖνο, καὶ ἦλθαν πρὸς αὐτὸν ἐν τῷ ἔτει τῷ δευτέρῳ καὶ εἶπαν αὐτῷ Μή ποτε ἐκτριβῶμεν ἀπὸ τοῦ κυρίου ἡμῶν· εἰ γὰρ ἐκλέλοιπεν τὸ ἀργύριον ἡμῶν καὶ τὰ ὑπάρχοντα καὶ τὰ κτήνη πρὸς σὲ τὸν κύριον, καὶ οὐχ ὑπολείπεται ἡμῖν ἐναντίον τοῦ κυρίου ἀλλ’ ἢ τὸ ἴδιον σῶμα καὶ ἡ γῆ ἡμῶν.",
+        "NAB": "When that year ended, they came to him in the following one and said: \"We cannot hide from my lord that, with our money spent and our livestock made over to my lord, there is nothing left to put at my lord's disposal except our bodies and our farm land.",
+        "SYN": "И прошел этот год; и пришли к нему на другой год и сказали ему: не скроем от господина нашего, что серебро истощилось и стада скота нашего у господина нашего; ничего не осталось у нас пред господином нашим, кроме тел наших и земель наших;",
+        "NEO": "Lorsque cette année fut écoulée, ils vinrent à Joseph l’année suivante, et lui dirent : « Nous ne cacherons pas à mon seigneur que l’argent est épuisé et que les troupeaux de bétail ont été donnés à mon seigneur ; il ne reste devant mon seigneur que nos corps et nos terres.",
+        "VAT_ES": "Pero pasó ese año, y al año siguiente vinieron otra vez y dijeron a José: «Ya se ha terminado todo el dinero y los animales te pertenecen. No podemos ocultarte que no queda nada a tu disposición, fuera de nuestras personas y nuestras tierras.",
+        "CEI": "Passato quell'anno, vennero a lui l'anno dopo e gli dissero: \"Non nascondiamo al mio signore che si è esaurito il denaro e anche il possesso del bestiame è passato al mio signore, non rimane più a disposizione del mio signore se non il nostro corpo e il nostro terreno."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "לָ֧/מָּה נָמ֣וּת לְ/עֵינֶ֗י/ךָ גַּם אֲנַ֨חְנוּ֙ גַּ֣ם אַדְמָתֵ֔/נוּ קְנֵֽה אֹתָ֥/נוּ וְ/אֶת אַדְמָתֵ֖/נוּ בַּ/לָּ֑חֶם וְ/נִֽהְיֶ֞ה אֲנַ֤חְנוּ וְ/אַדְמָתֵ֨/נוּ֙ עֲבָדִ֣ים לְ/פַרְעֹ֔ה וְ/תֶן זֶ֗רַע וְ/נִֽחְיֶה֙ וְ/לֹ֣א נָמ֔וּת וְ/הָ/אֲדָמָ֖ה לֹ֥א תֵשָֽׁם׃",
+        "VUL": "Cur ergo moriemur te vidente ? et nos et terra nostra tui erimus : eme nos in servitutem regiam, et præbe semina, ne pereunte cultore redigatur terra in solitudinem.",
+        "LXX": "ἵνα μὴ ἀποθάνωμεν ἐναντίον σου καὶ ἡ γῆ ἐρημωθῇ, κτῆσαι ἡμᾶς καὶ τὴν γῆν ἡμῶν ἀντὶ ἄρτων, καὶ ἐσόμεθα ἡμεῖς καὶ ἡ γῆ ἡμῶν παῖδες Φαραώ· δὸς σπέρμα ἵνα σπείρωμεν καὶ μὴ ἀποθάνωμεν, καὶ ἡ γῆ ἐρημωθήσεται.",
+        "NAB": "Why should we and our land perish before your very eyes? Take us and our land in exchange for food, and we will become Pharaoh's slaves and our land his property; only give us seed, that we may survive and not perish, and that our land may not turn into a waste.\"",
+        "SYN": "для чего нам погибать в глазах твоих, и нам и землям нашим? купи нас и земли наши за хлеб, и мы с землями нашими будем рабами фараону, а ты дай нам семян, чтобы нам быть живыми и не умереть, и чтобы не опустела земля.",
+        "NEO": "Pourquoi péririons-nous sous tes yeux, nous et nos terres ? Achète-nous, ainsi que nos terres, pour du pain, et nous serons, nous et nos terres, serfs de Pharaon ; et donne-nous de quoi semer, afin que nous vivions et que nous ne mourions pas, et que nos terres ne soient pas désolées. »",
+        "VAT_ES": "Pero &iquest;por qué tendremos que morir ante tus propios ojos, nosotros y nuestras tierras: Aduéñate de nosotros y de nuestras tierras a cambio de pan. Así el Faraón será dueño de nosotros y de nuestras tierras. Danos solamente semilla para que podamos sobrevivir. De lo contrario, nosotros moriremos, y el suelo se convertirá en un desierto».",
+        "CEI": "Perché dovremmo perire sotto i tuoi occhi, noi e la nostra terra? Acquista noi e la nostra terra in cambio di pane e diventeremo servi del faraone noi con la nostra terra; ma dacci di che seminare, così che possiamo vivere e non morire e il suolo non diventi un deserto!\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּ֨קֶן יוֹסֵ֜ף אֶת כָּל אַדְמַ֤ת מִצְרַ֨יִם֙ לְ/פַרְעֹ֔ה כִּֽי מָכְר֤וּ מִצְרַ֨יִם֙ אִ֣ישׁ שָׂדֵ֔/הוּ כִּֽי חָזַ֥ק עֲלֵ/הֶ֖ם הָ/רָעָ֑ב וַ/תְּהִ֥י הָ/אָ֖רֶץ לְ/פַרְעֹֽה׃",
+        "VUL": "Emit igitur Joseph omnem terram Ægypti, vendentibus singulis possessiones suas præ magnitudine famis. Subjecitque eam Pharaoni,",
+        "LXX": "καὶ ἐκτήσατο Ἰωσὴφ πᾶσαν τὴν γῆν τῶν Αἰγυπτίων τῷ Φαραώ· ἀπέδοντο γὰρ οἱ Αἰγύπτιοι τὴν γῆν αὐτῶν τῷ Φαραώ, ἐπεκράτησεν γὰρ αὐτῶν ὁ λιμός· καὶ ἐγένετο ἡ γῆ Φαραώ,",
+        "NAB": "Thus Joseph acquired all the farm land of Egypt for Pharaoh, since with the famine too much for them to bear, every Egyptian sold his field; so the land passed over to Pharaoh,",
+        "SYN": "И купил Иосиф всю землю Египетскую для фараона, потому что продали Египтяне каждый свое поле, ибо голод одолевал их. И досталась земля фараону.",
+        "NEO": "Joseph acquit ainsi toutes les terres de l’Égypte à Pharaon ; car les Egyptiens vendirent chacun leur champ, parce que la famine les pressait, et le pays devint la propriété de Pharaon.",
+        "VAT_ES": "De esa manera, José adquirió para el Faraón todas las tierras de Egipto, porque los egipcios, acosados por el hambre, vendieron cada uno su campo. La tierra pasó a ser propiedad del Faraón,",
+        "CEI": "Allora Giuseppe acquistò per il faraone tutto il terreno dell'Egitto, perché gli Egiziani vendettero ciascuno il proprio campo, tanto infieriva su di loro la carestia. Così la terra divenne proprietà del faraone."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/אֶ֨ת הָ/עָ֔ם הֶעֱבִ֥יר אֹת֖/וֹ לֶ/עָרִ֑ים מִ/קְצֵ֥ה גְבוּל מִצְרַ֖יִם וְ/עַד קָצֵֽ/הוּ׃",
+        "VUL": "et cunctos populos ejus a novissimis terminis Ægypti usque ad extremos fines ejus,",
+        "LXX": "καὶ τὸν λαὸν κατεδουλώσατο αὐτῷ εἰς παῖδας, ἀπ’ ἄκρων ὁρίων Αἰγύπτου ἕως τῶν ἄκρων,",
+        "NAB": "and the people were reduced to slavery, from one end of Egypt's territory to the other.",
+        "SYN": "И народ сделал он рабами от одного конца Египта до другого.",
+        "NEO": "Il fit passer le peuple dans les villes, d’une extrémité à l’autre du territoire de l’Égypte.",
+        "VAT_ES": "y el pueblo quedó sometido a servidumbre de un extremo al otro del territorio egipcio.",
+        "CEI": "Quanto al popolo, egli lo fece passare nelle città da un capo all'altro della frontiera egiziana."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "רַ֛ק אַדְמַ֥ת הַ/כֹּהֲנִ֖ים לֹ֣א קָנָ֑ה כִּי֩ חֹ֨ק לַ/כֹּהֲנִ֜ים מֵ/אֵ֣ת פַּרְעֹ֗ה וְ/אָֽכְל֤וּ אֶת חֻקָּ/ם֙ אֲשֶׁ֨ר נָתַ֤ן לָ/הֶם֙ פַּרְעֹ֔ה עַל כֵּ֕ן לֹ֥א מָכְר֖וּ אֶת אַדְמָתָֽ/ם׃",
+        "VUL": "præter terram sacerdotum, quæ a rege tradita fuerat eis : quibus et statuta cibaria ex horreis publicis præbebantur, et idcirco non sunt compulsi vendere possessiones suas.",
+        "LXX": "χωρὶς τῆς γῆς τῶν ἱερέων μόνον· οὐκ ἐκτήσατο ταύτην Ἰωσήφ· ἐν δόσει γὰρ ἔδωκεν δόμα τοῖς ἱερεῦσιν Φαραώ, καὶ ἤσθιον τὴν δόσιν ἣν ἔδωκεν αὐτοῖς Φαραώ· διὰ τοῦτο οὐκ ἀπέδοντο τὴν γῆν αὐτῶν. ⸆",
+        "NAB": "Only the priests' lands Joseph did not take over. Since the priests had a fixed allowance from Pharaoh and lived off the allowance Pharaoh had granted them, they did not have to sell their land.",
+        "SYN": "Только земли жрецов не купил [Иосиф], ибо жрецам от фараона положен был участок, и они питались своим участком, который дал им фараон; посему и не продали земли своей.",
+        "NEO": "Il n’y eut que les terres des prêtres qu’il n’acquit pas ; car les prêtres recevaient de Pharaon une portion déterminée, et ils vécurent de leur revenu que Pharaon leur assignait : c’est pourquoi ils ne vendirent pas leurs terres.",
+        "VAT_ES": "Los únicos terrenos que José no compró fueron los que pertenecían a los sacerdotes, porque a ellos el Faraón le había asignado una ración fija de alimentos; como vivían de la ración que les daba el Faraón, no tuvieron que vender sus tierras.",
+        "CEI": "Soltanto il terreno dei sacerdoti egli non acquistò, perché i sacerdoti avevano un'assegnazione fissa da parte del faraone e si nutrivano dell'assegnazione che il faraone passava loro; per questo non vendettero il loro terreno."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יוֹסֵף֙ אֶל הָ/עָ֔ם הֵן֩ קָנִ֨יתִי אֶתְ/כֶ֥ם הַ/יּ֛וֹם וְ/אֶת אַדְמַתְ/כֶ֖ם לְ/פַרְעֹ֑ה הֵֽא לָ/כֶ֣ם זֶ֔רַע וּ/זְרַעְתֶּ֖ם אֶת הָ/אֲדָמָֽה׃",
+        "VUL": "Dixit ergo Joseph ad populos : En ut cernitis, et vos et terram vestram Pharao possidet : accipite semina, et serite agros,",
+        "LXX": "εἶπεν δὲ Ἰωσὴφ πᾶσι τοῖς Αἰγυπτίοις Ἰδοὺ κέκτημαι ὑμᾶς καὶ τὴν γῆν ὑμῶν σήμερον τῷ Φαραώ, λάβετε αὑτοῖς σπέρμα καὶ σπείρατε τὴν γῆν·",
+        "NAB": "Joseph told the people: \"Now that I have acquired you and your land for Pharaoh, here is your seed for sowing the land.",
+        "SYN": "И сказал Иосиф народу: вот, я купил теперь для фараона вас и землю вашу; вот вам семена, и засевайте землю;",
+        "NEO": "Joseph dit au peuple : « Je vous ai acquis aujourd’hui avec vos terres pour Pharaon. Voici pour vous de la semence, ensemencez la terre.",
+        "VAT_ES": "Entonces José dijo al pueblo: «Ahora ustedes y sus tierras pertenecen al Faraón, porque yo los he comprado. Aquí tienen semilla para sembrar esas tierras.",
+        "CEI": "Poi Giuseppe disse al popolo: \"Vedete, io ho acquistato oggi per il faraone voi e il vostro terreno. Eccovi il seme: seminate il terreno."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֙ בַּ/תְּבוּאֹ֔ת וּ/נְתַתֶּ֥ם חֲמִישִׁ֖ית לְ/פַרְעֹ֑ה וְ/אַרְבַּ֣ע הַ/יָּדֹ֡ת יִהְיֶ֣ה לָ/כֶם֩ לְ/זֶ֨רַע הַ/שָּׂדֶ֧ה וּֽ/לְ/אָכְלְ/כֶ֛ם וְ/לַ/אֲשֶׁ֥ר בְּ/בָתֵּי/כֶ֖ם וְ/לֶ/אֱכֹ֥ל לְ/טַפְּ/כֶֽם׃",
+        "VUL": "ut fruges habere possitis. Quintam partem regi dabitis : quatuor reliquas permitto vobis in sementem, et in cibum familiis et liberis vestris.",
+        "LXX": "καὶ ἔσται τὰ γενήματα αὐτῆς, δώσετε τὸ πέμπτον μέρος τῷ Φαραώ· τὰ δὲ τέσσερα μέρη ἔσται ὑμῖν αὐτοῖς εἰς σπέρμα τῇ γῇ καὶ εἰς βρῶσιν ὑμῖν καὶ πᾶσιν τοῖς οἴκοις ὑμῶν.",
+        "NAB": "But when the harvest is in, you must give a fifth of it to Pharaoh, while you keep four-fifths as seed for your fields and as food for yourselves and your families (and as food for your children).\"",
+        "SYN": "когда будет жатва, давайте пятую часть фараону, а четыре части останутся вам на засеяние полей, на пропитание вам и тем, кто в домах ваших, и на пропитание детям вашим.",
+        "NEO": "A la récolte, vous donnerez le cinquième à Pharaon, et vous aurez les quatre autres parties pour ensemencer vos champs et pour vous nourrir, vous et ceux qui sont dans vos maisons, et pour nourrir vos enfants. »",
+        "VAT_ES": "Pero cuando llegue la cosecha, ustedes deberán entregar al Faraón una quinta parte de los productos, y conservarán las cuatro partes restantes para sembrar la tierra, para alimentarse ustedes y sus familias, y para dar de comer a los niños».",
+        "CEI": "Ma quando vi sarà il raccolto, voi ne darete un quinto al faraone e quattro parti saranno vostre, per la semina dei campi, per il nutrimento vostro e di quelli di casa vostra e per il nutrimento dei vostri bambini\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֖וּ הֶחֱיִתָ֑/נוּ נִמְצָא חֵן֙ בְּ/עֵינֵ֣י אֲדֹנִ֔/י וְ/הָיִ֥ינוּ עֲבָדִ֖ים לְ/פַרְעֹֽה׃",
+        "VUL": "Qui responderunt : Salus nostra in manu tua est : respiciat nos tantum dominus noster, et læti serviemus regi.",
+        "LXX": "καὶ εἶπαν Σέσωκας ἡμᾶς, εὕρομεν χάριν ἐναντίον τοῦ κυρίου ἡμῶν, καὶ ἐσόμεθα παῖδες Φαραώ.",
+        "NAB": "\"You have saved our lives!\" they answered. \"We are grateful to my lord that we can be Pharaoh's slaves.\"",
+        "SYN": "Они сказали: ты спас нам жизнь; да обретем милость в очах господина нашего и да будем рабами фараону.",
+        "NEO": "Ils dirent : « Nous te devons la vie ! Que nous trouvions grâce auprès de mon seigneur, et nous serons esclaves de Pharaon. »",
+        "VAT_ES": "Ellos exclamaron: «Tú nos salvaste la vida. Te agradecemos que nos hayas puesto al servicio del Faraón».",
+        "CEI": "Gli risposero: \"Ci hai salvato la vita! Ci sia solo concesso di trovar grazia agli occhi del mio signore e saremo servi del faraone!\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣שֶׂם אֹתָ֣/הּ יוֹסֵ֡ף לְ/חֹק֩ עַד הַ/יּ֨וֹם הַ/זֶּ֜ה עַל אַדְמַ֥ת מִצְרַ֛יִם לְ/פַרְעֹ֖ה לַ/חֹ֑מֶשׁ רַ֞ק אַדְמַ֤ת הַ/כֹּֽהֲנִים֙ לְ/בַדָּ֔/ם לֹ֥א הָיְתָ֖ה לְ/פַרְעֹֽה׃",
+        "VUL": "Ex eo tempore usque in præsentem diem, in universa terra Ægypti regibus quinta pars solvitur, et factum est quasi in legem, absque terra sacerdotali, quæ libera ab hac conditione fuit.",
+        "LXX": "καὶ ἔθετο αὐτοῖς Ἰωσὴφ εἰς πρόσταγμα ἕως τῆς ἡμέρας ταύτης ἐπὶ γῆν Αἰγύπτου τῷ Φαραὼ ἀποπεμπτοῦν, χωρὶς τῆς γῆς τῶν ἱερέων μόνον· οὐκ ἦν τῷ Φαραώ.",
+        "NAB": "Thus Joseph made it a law for the land in Egypt, which is still in force, that a fifth of its produce should go to Pharaoh. Only the land of the priests did not pass over to Pharaoh.",
+        "SYN": "И поставил Иосиф в закон земле Египетской, даже до сего дня: пятую часть давать фараону, исключая только землю жрецов, которая не принадлежала фараону.",
+        "NEO": "Joseph fit de cela une loi, qui subsiste jusqu’à ce jour, et en vertu de laquelle le cinquième du produit des terres d’Égypte appartient à Pharaon ; seules les terres des prêtres ne sont pas à lui.",
+        "VAT_ES": "Entonces José promulgó una ley agraria en Egipto –que todavía hoy está en vigencia– por la cual una quinta parte de las cosechas corresponde al Faraón. Sólo las tierras de los sacerdotes no pasaron a ser propiedad del Faraón.",
+        "CEI": "Così Giuseppe fece di questo una legge che vige fino ad oggi sui terreni d'Egitto, per la quale si deve dare la quinta parte al faraone. Soltanto i terreni dei sacerdoti non divennero del faraone."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֧שֶׁב יִשְׂרָאֵ֛ל בְּ/אֶ֥רֶץ מִצְרַ֖יִם בְּ/אֶ֣רֶץ גֹּ֑שֶׁן וַ/יֵּאָחֲז֣וּ בָ֔/הּ וַ/יִּפְר֥וּ וַ/יִּרְבּ֖וּ מְאֹֽד׃",
+        "VUL": "Habitavit ergo Israël in Ægypto, id est, in terra Gessen, et possedit eam : auctusque est, et multiplicatus nimis.",
+        "LXX": "κατῴκησεν δὲ Ἰσραὴλ ἐν γῇ Αἰγύπτῳ ἐπὶ τῆς γῆς Γέσεμ· καὶ ἐκληρονόμησαν ἐπ’ αὐτῆς, καὶ ἐπληθύνθησαν σφόδρα.",
+        "NAB": "Thus Israel settled in the land of Egypt, in the region of Goshen. There they acquired property, were fertile, and increased greatly.",
+        "SYN": "И жил Израиль в земле Египетской, в земле Гесем, и владели они ею, и плодились, и весьма умножились.",
+        "NEO": "Israël habita au pays d’Égypte, dans la contrée de Gessen ; ils y acquirent des possessions, ils furent féconds et multiplièrent beaucoup.",
+        "VAT_ES": "Los israelitas se establecieron en Egipto, en la región de Gosen, y allí adquirieron propiedades, tuvieron muchos hijos y llegaron a ser muy numerosos.",
+        "CEI": "Gli Israeliti intanto si stabilirono nel paese d'Egitto, nel territorio di Gosen, ebbero proprietà e furono fecondi e divennero molto numerosi."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יְחִ֤י יַעֲקֹב֙ בְּ/אֶ֣רֶץ מִצְרַ֔יִם שְׁבַ֥ע עֶשְׂרֵ֖ה שָׁנָ֑ה וַ/יְהִ֤י יְמֵֽי יַעֲקֹב֙ שְׁנֵ֣י חַיָּ֔י/ו שֶׁ֣בַע שָׁנִ֔ים וְ/אַרְבָּעִ֥ים וּ/מְאַ֖ת שָׁנָֽה׃",
+        "VUL": "Et vixit in ea decem et septem annis : factique sunt omnes dies vitæ illius, centum quadraginta septem annorum.",
+        "LXX": "Ἐπέζησεν δὲ Ἰακὼβ ἐν γῇ Αἰγύπτῳ ἔτη δέκα ἑπτά· ἐγένοντο δὲ αἱ ἡμέραι Ἰακὼβ ἐνιαυτῶν τῆς ζωῆς αὐτοῦ ἑκατὸν τεσσεράκοντα ἑπτὰ ἔτη.",
+        "NAB": "Jacob lived in the land of Egypt for seventeen years; the span of his life came to a hundred and forty-seven years.",
+        "SYN": "И жил Иаков в земле Египетской семнадцать лет; и было дней Иакова, годов жизни его, сто сорок семь лет.",
+        "NEO": "Jacob vécut dix-sept ans dans le pays d’Égypte ; et les jours de Jacob, les années de sa vie furent de cent quarante-sept ans.",
+        "VAT_ES": "Jacob vivió diecisiete años en Egipto, y en total vivió ciento cuarenta y siete años.",
+        "CEI": "Giacobbe visse nel paese d'Egitto diciassette anni e gli anni della sua vita furono centoquarantasette."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרְב֣וּ יְמֵֽי יִשְׂרָאֵ֘ל לָ/מוּת֒ וַ/יִּקְרָ֣א לִ/בְנ֣/וֹ לְ/יוֹסֵ֗ף וַ/יֹּ֤אמֶר ל/וֹ֙ אִם נָ֨א מָצָ֤אתִי חֵן֙ בְּ/עֵינֶ֔י/ךָ שִֽׂים נָ֥א יָדְ/ךָ֖ תַּ֣חַת יְרֵכִ֑/י וְ/עָשִׂ֤יתָ עִמָּדִ/י֙ חֶ֣סֶד וֶ/אֱמֶ֔ת אַל נָ֥א תִקְבְּרֵ֖/נִי בְּ/מִצְרָֽיִם׃",
+        "VUL": "Cumque appropinquare cerneret diem mortis suæ, vocavit filium suum Joseph, et dixit ad eum : Si inveni gratiam in conspectu tuo, pone manum tuam sub femore meo : et facies mihi misericordiam et veritatem, ut non sepelias me in Ægypto :",
+        "LXX": "ἤγγισαν δὲ αἱ ἡμέραι Ἰσραὴλ ἀποθανεῖν, καὶ ἐκάλεσεν τὸν υἱὸν αὐτοῦ Ἰωσὴφ καὶ εἶπεν αὐτῷ Εἰ εὕρηκα χάριν ἐναντίον σου, ὑπόθες τὴν χεῖρά σου ὑπὸ τὸν μηρόν μου, καὶ ποιήσεις ἐπ’ ἐμὲ ἐλεημοσύνην καὶ ἀλήθειαν τοῦ μή με θάψαι ἐν Αἰγύπτῳ·",
+        "NAB": "When the time approached for Israel to die, he called his son Joseph and said to him: \"If you really wish to please me, put your hand under my thigh as a sign of your constant loyalty to me; do not let me be buried in Egypt.",
+        "SYN": "И пришло время Израилю умереть, и призвал он сына своего Иосифа и сказал ему: если я нашел благоволение в очах твоих, положи руку твою под стегно мое и _клянись,_ что ты окажешь мне милость и правду, не похоронишь меня в Египте,",
+        "NEO": "Quand les jours d’Israël approchèrent de leur fin, il appela son fils Joseph et lui dit : « Si j’ai trouvé grâce à tes yeux, mets, je te prie, ta main sous ma cuisse, et use envers moi de bonté et de fidélité : ne m’enterre pas en Égypte.",
+        "VAT_ES": "Cuando estaba a punto de morir, llamó a su hijo José y le dijo: «Si realmente me tienes afecto, coloca tu mano debajo de mi muslo, como prueba de tu constante lealtad hacia mí, y no me entierres en Egipto.",
+        "CEI": "Quando fu vicino il tempo della sua morte, Israele chiamò il figlio Giuseppe e gli disse: \"Se ho trovato grazia ai tuoi occhi, metti la mano sotto la mia coscia e usa con me bontà e fedeltà: non seppellirmi in Egitto!"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/שָֽׁכַבְתִּי֙ עִם אֲבֹתַ֔/י וּ/נְשָׂאתַ֨/נִי֙ מִ/מִּצְרַ֔יִם וּ/קְבַרְתַּ֖/נִי בִּ/קְבֻרָתָ֑/ם וַ/יֹּאמַ֕ר אָנֹכִ֖י אֶֽעֱשֶׂ֥ה כִ/דְבָרֶֽ/ךָ׃",
+        "VUL": "sed dormiam cum patribus meis, et auferas me de terra hac, condasque in sepulchro majorum meorum. Cui respondit Joseph : Ego faciam quod jussisti.",
+        "LXX": "ἀλλὰ κοιμηθήσομαι μετὰ τῶν πατέρων μου, καὶ ἀρεῖς με ἐξ Αἰγύπτου καὶ θάψεις με ἐν τῷ τάφῳ αὐτῶν. ὁ δὲ εἶπεν Ἐγὼ ποιήσω κατὰ τὸ ῥῆμά σου.",
+        "NAB": "When I lie down with my ancestors, have me taken out of Egypt and buried in their burial place.\"",
+        "SYN": "дабы мне лечь с отцами моими; вынесешь меня из Египта и похоронишь меня в их гробнице. _Иосиф_ сказал: сделаю по слову твоему.",
+        "NEO": "Quand je serai couché avec mes pères, tu me transporteras hors de l’Égypte, et tu m’enterreras dans leurs sépulcres. » Joseph répondit : « Je ferai selon ta parole. »",
+        "VAT_ES": "Cuando vaya a descansar junto con mis padres, sácame de Egipto y entiérrame en su sepulcro». José respondió: «Haré lo que dices».",
+        "CEI": "Quando io mi sarò coricato con i miei padri, portami via dall'Egitto e seppelliscimi nel loro sepolcro\". Rispose: \"Io agirò come hai detto\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר הִשָּֽׁבְעָ/ה֙ לִ֔/י וַ/יִּשָּׁבַ֖ע ל֑/וֹ וַ/יִּשְׁתַּ֥חוּ יִשְׂרָאֵ֖ל עַל רֹ֥אשׁ הַ/מִּטָּֽה׃",
+        "VUL": "Et ille : Jura ergo, inquit, mihi. Quo jurante, adoravit Israël Deum, conversus ad lectuli caput.",
+        "LXX": "εἶπεν δέ Ὄμοσόν μοι. καὶ ὤμοσεν αὐτῷ· καὶ προσεκύνησεν Ἰσραὴλ ἐπὶ τὸ ἄκρον τῆς ῥάβδου αὐτοῦ.",
+        "NAB": "\"I will do as you say,\" he replied. But his father demanded, \"Swear it to me!\" So Joseph swore to him. Then Israel bowed at the head of the bed.",
+        "SYN": "И сказал: клянись мне. И клялся ему. И поклонился Израиль на возглавие постели.",
+        "NEO": "Et Jacob dit : « Jure-le-moi. » Joseph le lui jura ; et Israël se prosterna sur le chevet du lit.",
+        "VAT_ES": "Pero su padre insistió: «Júramelo». El se lo juró, e Israel se reclinó sobre la cabecera de su lecho.",
+        "CEI": "Riprese: \"Giuramelo!\". E glielo giurò; allora Israele si prostrò sul capezzale del letto."
+      }
+    }
+  }
+}

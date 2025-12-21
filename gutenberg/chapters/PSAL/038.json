@@ -1,0 +1,386 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_038",
+  "book_key": "PSAL",
+  "sequence": 38,
+  "chapter_in": {
+    "MT": 38,
+    "VUL": 37,
+    "LXX": 37
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מִזְמ֖וֹר לְ/דָוִ֣ד לְ/הַזְכִּֽיר׃",
+        "LXX": "Εἰς τὸ τέλος, τῷ Ἰδιθούν· ᾠδὴ τῷ Δαυείδ.",
+        "VUL": "In finem, ipsi Idithun. Canticum David.",
+        "SYN": "Начальнику хора, Идифуму. Псалом Давида.",
+        "NEO": "Psaume de David. Pour faire souvenir.",
+        "NAB": "A psalm of David. For remembrance.",
+        "CEI": "Salmo. Di Davide. In memoria."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "יְֽהוָ֗ה אַל בְּ/קֶצְפְּ/ךָ֥ תוֹכִיחֵ֑/נִי וּֽ/בַ/חֲמָתְ/ךָ֥ תְיַסְּרֵֽ/נִי׃",
+        "LXX": "Εἶπα Φυλάξω τὰς ὁδούς μου τοῦ μὴ ἁμαρτάνειν ἐν γλώσσῃ μου· ἐθέμην τῷ στόματί μου φυλακὴν ἐν τῷ συστῆναι τὸν ἁμαρτωλὸν ἐναντίον μου.",
+        "VUL": "[Dixi : Custodiam vias meas :/ ut non delinquam in lingua mea./ Posui ori meo custodiam,/ cum consisteret peccator adversum me./",
+        "SYN": "Я сказал: буду я наблюдать за путями моими, чтобы не согрешать мне языком моим; буду обуздывать уста мои, доколе нечестивый предо мною.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, ne me punis pas dans ta colère, et ne me châtie pas dans ta fureur.",
+        "NAB": "LORD, punish me no more in your anger; in your wrath do not chastise me!",
+        "VAT_ES": "Señor, no me reprendas por tu enojo",
+        "CEI": "Signore, non castigarmi nel tuo sdegno, non punirmi nella tua ira."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כִּֽי חִ֭צֶּי/ךָ נִ֣חֲתוּ בִ֑/י וַ/תִּנְחַ֖ת עָלַ֣/י יָדֶֽ/ךָ׃",
+        "LXX": "ἐκωφώθην καὶ ἐταπεινώθην καὶ ἐσίγησα ἐξ ἀγαθῶν, καὶ τὸ ἄλγημά μου ἀνεκαινίσθη.",
+        "VUL": "Obmutui, et humiliatus sum, et silui a bonis ;/ et dolor meus renovatus est./",
+        "SYN": "Я был нем и безгласен, и молчал _даже_ о добром; и скорбь моя подвиглась.",
+        "NEO": "Car tes flèches m’ont atteint, et ta main s’est appesantie sur moi.",
+        "NAB": "Your arrows have sunk deep in me; your hand has come down upon me.",
+        "VAT_ES": "Porque me han traspasado tus flechas",
+        "CEI": "Le tue frecce mi hanno trafitto, su di me è scesa la tua mano."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אֵין מְתֹ֣ם בִּ֭/בְשָׂרִ/י מִ/פְּנֵ֣י זַעְמֶ֑/ךָ אֵין שָׁל֥וֹם בַּ֝/עֲצָמַ֗/י מִ/פְּנֵ֥י חַטָּאתִֽ/י׃",
+        "LXX": "ἐθερμάνθη ἡ καρδία μου ἐντός μου, καὶ ἐν τῇ μελέτῃ μου ἐκκαυθήσεται πῦρ· ἐλάλησα ἐν γλώσσῃ μου",
+        "VUL": "Concaluit cor meum intra me ;/ et in meditatione mea exardescet ignis./",
+        "SYN": "Воспламенилось сердце мое во мне; в мыслях моих возгорелся огонь; я стал говорить языком моим:",
+        "NEO": "Il n’y a rien de sain dans ma chair à cause de ta colère, il n’y a rien de sauf dans mes os à cause de mon péché.",
+        "NAB": "My flesh is afflicted because of your anger; my frame aches because of my sin.",
+        "VAT_ES": "no hay parte sana en mi carne,",
+        "CEI": "Per il tuo sdegno non c'è in me nulla di sano, nulla è intatto nelle mie ossa per i miei peccati."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּ֣י עֲ֭וֺנֹתַ/י עָבְר֣וּ רֹאשִׁ֑/י כְּ/מַשָּׂ֥א כָ֝בֵ֗ד יִכְבְּד֥וּ מִמֶּֽ/נִּי׃",
+        "LXX": "Γνώρισόν μοι, Κύριε, τὸ πέρας μου, καὶ τὸν ἀριθμὸν τῶν ἡμερῶν μου τίς ἐστιν, ἵνα γνῶ τί ὑστερῶ ἐγώ.",
+        "VUL": "Locutus sum in lingua mea :/ Notum fac mihi, Domine, finem meum,/ et numerum dierum meorum quis est,/ ut sciam quid desit mihi./",
+        "SYN": "скажи мне, Господи, кончину мою и число дней моих, какое оно, дабы я знал, какой век мой.",
+        "NEO": "Car mes iniquités s’élèvent au-dessus de ma tête ; comme un lourd fardeau, elles m’accablent de leur poids.",
+        "NAB": "My iniquities overwhelm me, a burden beyond my strength.",
+        "VAT_ES": "me siento ahogado por mis culpas:",
+        "CEI": "Le mie iniquità hanno superato il mio capo, come carico pesante mi hanno oppresso."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "הִבְאִ֣ישׁוּ נָ֭מַקּוּ חַבּוּרֹתָ֑/י מִ֝/פְּנֵ֗י אִוַּלְתִּֽ/י׃",
+        "LXX": "ἰδοὺ παλαιὰς ἔθου τὰς ἡμέρας μου, καὶ ἡ ὑπόστασίς μου ὡσεὶ οὐδὲν ἐνώπιόν σου· πλὴν τὰ σύμπαντα ματαιότης, πᾶς ἄνθρωπος ζῶν. διάψαλμα.",
+        "VUL": "Ecce mensurabiles posuisti dies meos,/ et substantia mea tamquam nihilum ante te./ Verumtamen universa vanitas, omnis homo vivens./",
+        "SYN": "Вот, Ты дал мне дни, _как_ пяди, и век мой как ничто пред Тобою. Подлинно, совершенная суета - всякий человек живущий.",
+        "NEO": "Mes meurtrissures sont infectes et purulentes, par l’effet de ma folie.",
+        "NAB": "Foul and festering are my sores because of my folly.",
+        "VAT_ES": "Mis heridas hieden y supuran,",
+        "CEI": "Putride e fetide sono le mie piaghe a causa della mia stoltezza."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "נַעֲוֵ֣יתִי שַׁחֹ֣תִי עַד מְאֹ֑ד כָּל הַ֝/יּ֗וֹם קֹדֵ֥ר הִלָּֽכְתִּי׃",
+        "LXX": "μέντοι γε ἐν εἰκόνι διαπορεύεται ἄνθρωπος, πλὴν μάτην ταράσσονται· θησαυρίζει, καὶ οὐ γινώσκει τίνι συνάξει αὐτά.",
+        "VUL": "Verumtamen in imagine pertransit homo ;/ sed et frustra conturbatur :/ thesaurizat, et ignorat cui congregabit ea./",
+        "SYN": "Подлинно, человек ходит подобно призраку; напрасно он суетится, собирает и не знает, кому достанется то.",
+        "NEO": "Je suis courbé, abattu à l’excès ; tout le jour je marche dans le deuil.",
+        "NAB": "I am stooped and deeply bowed; all day I go about mourning.",
+        "VAT_ES": "estoy agobiado, decaído hasta el extremo,",
+        "CEI": "Sono curvo e accasciato, triste mi aggiro tutto il giorno."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּֽי כְ֭סָלַ/י מָלְא֣וּ נִקְלֶ֑ה וְ/אֵ֥ין מְ֝תֹ֗ם בִּ/בְשָׂרִֽ/י׃",
+        "LXX": "καὶ νῦν τίς ἡ ὑπομονή μου; οὐχὶ ὁ κύριος; καὶ ἡ ὑπόστασίς μου παρὰ σοῦ ἐστιν.",
+        "VUL": "Et nunc quæ est exspectatio mea : nonne Dominus ?/ et substantia mea apud te est./",
+        "SYN": "И ныне чего ожидать мне, Господи? надежда моя - на Тебя.",
+        "NEO": "Un mal brûlant dévore mes reins, et il n’y a rien de sain dans ma chair.",
+        "NAB": "My loins burn with fever; my flesh is afflicted.",
+        "VAT_ES": "Siento un ardor en mis entrañas,",
+        "CEI": "Sono torturati i miei fianchi, in me non c'è nulla di sano."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "נְפוּג֣וֹתִי וְ/נִדְכֵּ֣יתִי עַד מְאֹ֑ד שָׁ֝אַ֗גְתִּי מִֽ/נַּהֲמַ֥ת לִבִּֽ/י׃",
+        "LXX": "ἀπὸ πασῶν τῶν ἀνομιῶν μου ῥῦσαί με, ὄνειδος ἄφρονι ἔδωκάς με.",
+        "VUL": "Ab omnibus iniquitatibus meis erue me :/ opprobrium insipienti dedisti me./",
+        "SYN": "От всех беззаконий моих избавь меня, не предавай меня на поругание безумному.",
+        "NEO": "Je suis sans force, brisé outre mesure ; le trouble de mon cœur m’arrache des gémissements.",
+        "NAB": "I am numb and utterly crushed; I wail with anguish of heart.",
+        "VAT_ES": "estoy agotado, deshecho totalmente,",
+        "CEI": "Afflitto e sfinito all'estremo, ruggisco per il fremito del mio cuore."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אֲֽדֹנָ/י נֶגְדְּ/ךָ֥ כָל תַּאֲוָתִ֑/י וְ֝/אַנְחָתִ֗/י מִמְּ/ךָ֥ לֹא נִסְתָּֽרָה׃",
+        "LXX": "ἐκωφώθην καὶ οὐκ ἤνοιξα τὸ στόμα μου, ὅτι σὺ εἶ ὁ ποιήσας με.",
+        "VUL": "Obmutui, et non aperui os meum,/ quoniam tu fecisti ;/",
+        "SYN": "Я стал нем, не открываю уст моих; потому что Ты соделал это.",
+        "NEO": "Seigneur, tous mes désirs sont devant toi, et mes soupirs ne te sont pas cachés.",
+        "NAB": "My Lord, my deepest yearning is before you; my groaning is not hidden from you.",
+        "VAT_ES": "Tú, Señor, conoces todos mis deseos,",
+        "CEI": "Signore, davanti a te ogni mio desiderio e il mio gemito a te non è nascosto."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "לִבִּ֣/י סְ֭חַרְחַר עֲזָבַ֣/נִי כֹחִ֑/י וְֽ/אוֹר עֵינַ֥/י גַּם הֵ֝֗ם אֵ֣ין אִתִּֽ/י׃",
+        "LXX": "ἀπόστησον ἀπ’ ἐμοῦ τὰς μάστιγάς σου· ἀπὸ τῆς ἰσχύος τῆς χειρός σου ἐγὼ ἐξέλιπον.",
+        "VUL": "amove a me plagas tuas./",
+        "SYN": "Отклони от меня удары Твои; я исчезаю от поражающей руки Твоей.",
+        "NEO": "Mon cœur palpite, ma force m’abandonne, et la lumière même de mes yeux n’est plus avec moi.",
+        "NAB": "My heart shudders, my strength forsakes me; the very light of my eyes has failed.",
+        "VAT_ES": "mi corazón palpita, se me acaban las fuerzas",
+        "CEI": "Palpita il mio cuore, la forza mi abbandona, si spegne la luce dei miei occhi."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אֹֽהֲבַ֨/י וְ/רֵעַ֗/י מִ/נֶּ֣גֶד נִגְעִ֣/י יַעֲמֹ֑דוּ וּ֝/קְרוֹבַ֗/י מֵ/רָחֹ֥ק עָמָֽדוּ׃",
+        "LXX": "ἐν ἐλεγμοῖς ὑπὲρ ἀνομίας ἐπαίδευσας ἄνθρωπον, καὶ ἐξέτηξας ὡς ἀράχνην τὴν ψυχὴν αὐτοῦ· πλὴν μάτην ταράσσεται πᾶς ἄνθρωπος. διάψαλμα.",
+        "VUL": "A fortitudine manus tuæ ego defeci in increpationibus :/ propter iniquitatem corripuisti hominem./ Et tabescere fecisti sicut araneam animam ejus :/ verumtamen vane conturbatur omnis homo./",
+        "SYN": "Если Ты обличениями будешь наказывать человека за преступления, то рассыплется, как от моли, краса его. Так, суетен всякий человек!",
+        "NEO": "Mes amis et mes compagnons s’éloignent de ma plaie ; et mes proches se tiennent à l’écart.",
+        "NAB": "Friends and companions shun my pain; my neighbors stand far off.",
+        "VAT_ES": "Mis amigos y vecinos se apartan de mis llagas,",
+        "CEI": "Amici e compagni si scostano dalle mie piaghe, i miei vicini stanno a distanza."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יְנַקְשׁ֤וּ מְבַקְשֵׁ֬י נַפְשִׁ֗/י וְ/דֹרְשֵׁ֣י רָ֭עָתִ/י דִּבְּר֣וּ הַוּ֑וֹת וּ֝/מִרְמ֗וֹת כָּל הַ/יּ֥וֹם יֶהְגּֽוּ׃",
+        "LXX": "εἰσάκουσον τῆς προσευχῆς μου καὶ τῆς δεήσεώς μου, ἐνώτισαι τῶν δακρύων μου. μὴ παρασιωπήσῃς· ὅτι πάροικος ἐγώ εἰμι ἐν τῇ γῇ καὶ παρεπίδημος, καθὼς πάντες οἱ πατέρες μου.",
+        "VUL": "Exaudi orationem meam, Domine, et deprecationem meam ;/ auribus percipe lacrimas meas./ Ne sileas, quoniam advena ego sum apud te,/ et peregrinus sicut omnes patres mei./",
+        "SYN": "Услышь, Господи, молитву мою и внемли воплю моему; не будь безмолвен к слезам моим, ибо странник я у Тебя _и_ пришлец, как и все отцы мои.",
+        "NEO": "Ceux qui en veulent à ma vie tendent leurs pièges ; ceux qui cherchent mon malheur profèrent des menaces, et tout le jour ils méditent des embûches.",
+        "NAB": "Those who seek my life lay snares for me; they seek my misfortune, they speak of ruin; they plot treachery all the day.",
+        "VAT_ES": "los que atentan contra mí me tienden lazos,",
+        "CEI": "Tende lacci chi attenta alla mia vita, trama insidie chi cerca la mia rovina. e tutto il giorno medita inganni."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֣י כְ֭/חֵרֵשׁ לֹ֣א אֶשְׁמָ֑ע וּ֝/כְ/אִלֵּ֗ם לֹ֣א יִפְתַּח פִּֽי/ו׃",
+        "LXX": "ἄνες μοι ἵνα ἀναψύξω πρὸ τοῦ με ἀπελθεῖν καὶ οὐκέτι μὴ ὑπάρξω.",
+        "VUL": "Remitte mihi, ut refrigerer/ priusquam abeam et amplius non ero.]",
+        "SYN": "Отступи от меня, чтобы я мог подкрепиться, прежде нежели отойду и не будет меня.",
+        "NEO": "Et moi, je suis comme un sourd, je n’entends pas ; je suis comme un muet, qui n’ouvre pas la bouche.",
+        "NAB": "But I am like the deaf, hearing nothing, like the dumb, saying nothing,",
+        "VAT_ES": "Pero yo, como un sordo, no escucho;",
+        "CEI": "Io, come un sordo, non ascolto e come un muto non apro la bocca;"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וָ/אֱהִ֗י כְּ֭/אִישׁ אֲשֶׁ֣ר לֹא שֹׁמֵ֑עַ וְ/אֵ֥ין בְּ֝/פִ֗י/ו תּוֹכָחֽוֹת׃",
+        "NEO": "Je suis comme un homme qui n’entend pas, et dans la bouche duquel il n’y a pas de réplique.",
+        "NAB": "Like someone who does not hear, who has no answer ready.",
+        "VAT_ES": "me parezco a uno que no oye",
+        "CEI": "sono come un uomo che non sente e non risponde."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "כִּֽי לְ/ךָ֣ יְהוָ֣ה הוֹחָ֑לְתִּי אַתָּ֥ה תַ֝עֲנֶ֗ה אֲדֹנָ֥/י אֱלֹהָֽ/י׃",
+        "NEO": "C’est en toi, \\+w Yahweh|strong=\"H3068\"\\+w**, que j’espère ; toi, tu répondras, Seigneur, mon Dieu !",
+        "NAB": "LORD, I wait for you; O Lord, my God, answer me.",
+        "VAT_ES": "Yo espero en ti, Señor:",
+        "CEI": "In te spero, Signore; tu mi risponderai, Signore Dio mio."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כִּֽי אָ֭מַרְתִּי פֶּן יִשְׂמְחוּ לִ֑/י בְּ/מ֥וֹט רַ֝גְלִ֗/י עָלַ֥/י הִגְדִּֽילוּ׃",
+        "NEO": "Car je dis : « Qu’ils ne se réjouissent pas à mon sujet, qu’ils ne s’élèvent pas contre moi, si mon pied chancelle. »",
+        "NAB": "For I fear they will gloat, exult over me if I stumble.",
+        "VAT_ES": "Sólo te pido que no se rían de mí,",
+        "CEI": "Ho detto: \"Di me non godano, contro di me non si vantino quando il mio piede vacilla\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כִּֽי אֲ֭נִי לְ/צֶ֣לַע נָכ֑וֹן וּ/מַכְאוֹבִ֖/י נֶגְדִּ֣/י תָמִֽיד׃",
+        "NEO": "Car je suis près de tomber, Et ma douleur est toujours devant moi.",
+        "NAB": "I am very near to falling; my pain is with me always.",
+        "VAT_ES": "Porque estoy a punto de caer",
+        "CEI": "Poiché io sto per cadere e ho sempre dinanzi la mia pena."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כִּֽי עֲוֺנִ֥/י אַגִּ֑יד אֶ֝דְאַ֗ג מֵֽ/חַטָּאתִֽ/י׃",
+        "NEO": "Car je confesse mon iniquité, Je suis dans la crainte à cause de mon péché.",
+        "NAB": "I acknowledge my guilt and grieve over my sin.",
+        "VAT_ES": "sí, yo confieso mi culpa",
+        "CEI": "Ecco, confesso la mia colpa, sono in ansia per il mio peccato."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְֽ֭/אֹיְבַ/י חַיִּ֣ים עָצֵ֑מוּ וְ/רַבּ֖וּ שֹׂנְאַ֣/י שָֽׁקֶר׃",
+        "NEO": "Et mes ennemis sont pleins de vie, ils sont puissants ; Ceux qui me haïssent sans cause se sont multipliés.",
+        "NAB": "But many are my foes without cause, a multitude of enemies without reason,",
+        "VAT_ES": "Mi enemigos mortales son fuertes;",
+        "CEI": "I miei nemici sono vivi e forti, troppi mi odiano senza motivo,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וּ/מְשַׁלְּמֵ֣י רָ֭עָה תַּ֣חַת טוֹבָ֑ה יִ֝שְׂטְנ֗וּ/נִי תַּ֣חַת רדופ/י רָֽדְפִ/י טֽוֹב׃",
+        "NEO": "Ils me rendent le mal pour le bien ; ils me sont hostiles, parce que je cherche la justice.",
+        "NAB": "Repaying me evil for good, harassing me for pursuing good.",
+        "VAT_ES": "los que me retribuyen con maldades",
+        "CEI": "mi pagano il bene col male, mi accusano perché cerco il bene."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "אַל תַּֽעַזְבֵ֥/נִי יְהוָ֑ה אֱ֝לֹהַ֗/י אַל תִּרְחַ֥ק מִמֶּֽ/נִּי׃",
+        "NEO": "Ne m’abandonne pas, \\+w Yahweh|strong=\"H3068\"\\+w** ! Mon Dieu, ne t’éloigne pas de moi !",
+        "NAB": "Forsake me not, O LORD; my God, be not far from me!",
+        "VAT_ES": "Pero tú, Señor, no me abandones,",
+        "CEI": "Non abbandonarmi, Signore, Dio mio, da me non stare lontano;"
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_012",
+  "book_key": "PSAL",
+  "sequence": 12,
+  "chapter_in": {
+    "MT": 12,
+    "VUL": 11,
+    "LXX": 11
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֥חַ עַֽל הַ/שְּׁמִינִ֗ית מִזְמ֥וֹר לְ/דָוִֽד׃",
+        "LXX": "Εἰς τὸ τέλος· ψαλμὸς τῷ Δαυείδ.",
+        "VUL": "In finem. Psalmus David. [Usquequo, Domine, oblivisceris me in finem ?/ usquequo avertis faciem tuam a me ?/",
+        "SYN": "Начальнику хора. Псалом Давида.",
+        "NEO": "Au maître de chant. Sur l’octave. Chant de David.",
+        "NAB": "For the leader; \"upon the eighth.\" A psalm of David.",
+        "CEI": "Al maestro del coro. Sull'ottava. Salmo. Di Davide."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "הוֹשִׁ֣יעָ/ה יְ֭הוָה כִּי גָמַ֣ר חָסִ֑יד כִּי פַ֥סּוּ אֱ֝מוּנִ֗ים מִ/בְּנֵ֥י אָדָֽם׃",
+        "LXX": "Ἕως πότε, Κύριε, ἐπιλήσῃ μου εἰς τέλος; ἕως πότε ἀποστρέψεις τὸ πρόσωπόν σου ἀπ’ ἐμοῦ;",
+        "VUL": "quamdiu ponam consilia in anima mea ;/ dolorem in corde meo per diem ?/",
+        "SYN": "Доколе, Господи, будешь забывать меня вконец, доколе будешь скрывать лице Твое от меня?",
+        "NEO": "Sauve, \\+w Yahweh|strong=\"H3068\"\\+w** ! car les hommes pieux s’en vont, les fidèles disparaissent d’entre les enfants des hommes.",
+        "NAB": "Help, LORD, for no one loyal remains; the faithful have vanished from the human race",
+        "VAT_ES": "&iexcl;Sálvanos, Señor, porque ya no hay gente buena,",
+        "CEI": "Salvami, Signore! Non c'è più un uomo fedele; è scomparsa la fedeltà tra i figli dell'uomo."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "שָׁ֤וְא יְֽדַבְּרוּ֮ אִ֤ישׁ אֶת רֵ֫עֵ֥/הוּ שְׂפַ֥ת חֲלָק֑וֹת בְּ/לֵ֖ב וָ/לֵ֣ב יְדַבֵּֽרוּ׃",
+        "LXX": "ἕως τίνος θήσομαι βουλὰς ἐν ψυχῇ μου, ὀδύνας ἐν καρδίᾳ μου ἡμέρας; ἕως πότε ὑψωθήσεται ὁ ἐχθρός μου ἐπ’ ἐμέ;",
+        "VUL": "usquequo exaltabitur inimicus meus super me ?/",
+        "SYN": "Доколе мне слагать советы в душе моей, скорбь в сердце моем день [и ночь]? Доколе врагу моему возноситься надо мною?",
+        "NEO": "On se dit des mensonges les uns aux autres ; on parle avec des lèvres flatteuses et un cœur double.",
+        "NAB": "Those who tell lies to one another speak with deceiving lips and a double heart.",
+        "VAT_ES": "No hacen más que mentirse unos a otros,",
+        "CEI": "Si dicono menzogne l'uno all'altro, labbra bugiarde parlano con cuore doppio."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "יַכְרֵ֣ת יְ֭הוָה כָּל שִׂפְתֵ֣י חֲלָק֑וֹת לָ֝שׁ֗וֹן מְדַבֶּ֥רֶת גְּדֹלֽוֹת׃",
+        "LXX": "ἐπίβλεψον, εἰσάκουσόν μου, Κύριε ὁ θεός μου· φώτισον τοὺς ὀφθαλμούς, μή ποτε ὑπνώσω εἰς θάνατον,",
+        "VUL": "Respice, et exaudi me, Domine Deus meus./ Illumina oculos meos, ne umquam obdormiam in morte ;/",
+        "SYN": "Призри, услышь меня, Господи Боже мой! Просвети очи мои, да не усну я _сном_ смертным;",
+        "NEO": "Que \\+w Yahweh|strong=\"H3068\"\\+w** retranche toutes les lèvres flatteuses, la langue qui discourt avec jactance,",
+        "NAB": "May the LORD cut off all deceiving lips, and every boastful tongue,",
+        "VAT_ES": "Que el Señor elimine los labios engañosos",
+        "CEI": "Recida il Signore le labbra bugiarde, la lingua che dice parole arroganti,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֤ר אָֽמְר֨וּ לִ/לְשֹׁנֵ֣/נוּ נַ֭גְבִּיר שְׂפָתֵ֣י/נוּ אִתָּ֑/נוּ מִ֖י אָד֣וֹן לָֽ/נוּ׃",
+        "LXX": "μή ποτε εἴπῃ ὁ ἐχθρός μου Ἴσχυσα πρὸς αὐτόν· οἱ θλίβοντές με ἀγαλλιάσονται ἐὰν σαλευθῶ.",
+        "VUL": "nequando dicat inimicus meus : Prævalui adversus eum./ Qui tribulant me exsultabunt si motus fuero ;/",
+        "SYN": "да не скажет враг мой: [я одолел его]. Да не возрадуются гонители мои, если я поколеблюсь.",
+        "NEO": "ceux qui disent : « Par notre langue nous sommes forts ; nous avons avec nous nos lèvres : qui serait notre maître ? »",
+        "NAB": "Those who say, \"By our tongues we prevail; when our lips speak, who can lord it over us?\"",
+        "VAT_ES": "«En la lengua está nuestra fuerza;",
+        "CEI": "quanti dicono: \"Per la nostra lingua siamo forti, ci difendiamo con le nostre labbra: chi sarà nostro padrone?\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "מִ/שֹּׁ֥ד עֲנִיִּים֮ מֵ/אַנְקַ֪ת אֶבְי֫וֹנִ֥ים עַתָּ֣ה אָ֭קוּם יֹאמַ֣ר יְהוָ֑ה אָשִׁ֥ית בְּ֝/יֵ֗שַׁע יָפִ֥יחַֽ לֽ/וֹ׃",
+        "LXX": "ἐγὼ δὲ ἐπὶ τῷ ἐλέει σου ἤλπισα· ἀγαλλιάσεται ἡ καρδία μου ἐν τῷ σωτηρίῳ σου· ᾄσω τῷ κυρίῳ τῷ εὐεργετήσαντί με, καὶ ψαλῶ τῷ ὀνόματι Κυρίου τοῦ ὑψίστου.",
+        "VUL": "ego autem in misericordia tua speravi./ Exsultabit cor meum in salutari tuo./ Cantabo Domino qui bona tribuit mihi ;/ et psallam nomini Domini altissimi.]",
+        "SYN": "Я же уповаю на милость Твою; сердце мое возрадуется о спасении Твоем; воспою Господу, облагодетельствовавшему меня, [и буду петь имени Господа Всевышнего].",
+        "NEO": "« A cause de l’oppression des affligés, du gémissement des pauvres, je veux maintenant me lever, dit \\+w Yahweh|strong=\"H3068\"\\+w** ; je leur apporterai le salut après lequel ils soupirent. »",
+        "NAB": "\"Because they rob the weak, and the needy groan, I will now arise,\" says the LORD; \"I will grant safety to whoever longs for it.\"",
+        "VAT_ES": "«Por los sollozos del humilde y los gemidos del pobre,",
+        "CEI": "\"Per l'oppressione dei miseri e il gemito dei poveri, io sorgerò - dice il Signore - metterò in salvo chi è disprezzato\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אִֽמֲר֣וֹת יְהוָה֮ אֲמָר֪וֹת טְהֹ֫ר֥וֹת כֶּ֣סֶף צָ֭רוּף בַּ/עֲלִ֣יל לָ/אָ֑רֶץ מְ֝זֻקָּ֗ק שִׁבְעָתָֽיִם׃",
+        "NEO": "Les paroles de \\+w Yahweh|strong=\"H3068\"\\+w** sont des paroles pures, un argent fondu dans un creuset sur la terre, sept fois purifié.",
+        "NAB": "The promises of the LORD are sure, silver refined in a crucible, silver purified seven times.",
+        "VAT_ES": "Las promesas del Señor son sinceras",
+        "CEI": "I detti del Signore sono puri, argento raffinato nel crogiuolo, purificato nel fuoco sette volte."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אַתָּֽה יְהוָ֥ה תִּשְׁמְרֵ֑/ם תִּצְּרֶ֓/נּוּ מִן הַ/דּ֖וֹר ז֣וּ לְ/עוֹלָֽם׃",
+        "NEO": "Toi, \\+w Yahweh|strong=\"H3068\"\\+w**, tu les garderas ; tu les préserveras à jamais de cette génération.",
+        "NAB": "LORD, protect us always; preserve us from this generation.",
+        "VAT_ES": "Tú nos protegerás, Señor,",
+        "CEI": "Tu, o Signore, ci custodirai, ci guarderai da questa gente per sempre."
+      }
+    }
+  }
+}

@@ -1,0 +1,807 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LEVI_023",
+  "book_key": "LEVI",
+  "sequence": 23,
+  "chapter_in": {
+    "MT": 23,
+    "VUL": 23,
+    "LXX": 23
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ εἶπεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse ancora a Mosè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "דַּבֵּ֞ר אֶל בְּנֵ֤י יִשְׂרָאֵל֙ וְ/אָמַרְתָּ֣ אֲלֵ/הֶ֔ם מוֹעֲדֵ֣י יְהוָ֔ה אֲשֶׁר תִּקְרְא֥וּ אֹתָ֖/ם מִקְרָאֵ֣י קֹ֑דֶשׁ אֵ֥לֶּה הֵ֖ם מוֹעֲדָֽ/י׃",
+        "LXX": "Λάλησον τοῖς υἱοῖς Ἰσραὴλ καὶ ἐρεῖς πρὸς αὐτούς Αἱ ἑορταὶ Κυρίου ἃς καλέσετε αὐτὰς κλητὰς ἁγίας, αὗταί εἰσιν ἑορταί μου.",
+        "VUL": "Loquere filiis Israël, et dices ad eos : Hæ sunt feriæ Domini, quas vocabitis sanctas.",
+        "SYN": "объяви сынам Израилевым и скажи им о праздниках Господних, в которые должно созывать священные собрания. Вот праздники Мои:",
+        "NEO": "« Parle aux enfants d’Israël, et dis-leur : Voici les solennités de \\+w Yahweh|strong=\"H3068\"\\+w** que vous publierez pour être de saintes assemblées ; ce sont mes solennités.",
+        "NAB": "\"Speak to the Israelites and tell them: The following are the festivals of the LORD, my feast days, which you shall celebrate with a sacred assembly.",
+        "VAT_ES": "Habla en estos términos a los israelitas: Estas son mis fiestas, las fiestas del Señor en las que ustedes convocarán las asambleas litúrgicas:",
+        "CEI": "\"Parla agli Israeliti e riferisci loro: Ecco le solennità del Signore, che voi proclamerete come sante convocazioni. Queste sono le mie solennità."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "שֵׁ֣שֶׁת יָמִים֮ תֵּעָשֶׂ֣ה מְלָאכָה֒ וּ/בַ/יּ֣וֹם הַ/שְּׁבִיעִ֗י שַׁבַּ֤ת שַׁבָּתוֹן֙ מִקְרָא קֹ֔דֶשׁ כָּל מְלָאכָ֖ה לֹ֣א תַעֲשׂ֑וּ שַׁבָּ֥ת הִוא֙ לַֽ/יהוָ֔ה בְּ/כֹ֖ל מֽוֹשְׁבֹתֵי/כֶֽם׃",
+        "LXX": "Ἓξ ἡμέρας ποιήσεις ἔργα, καὶ τῇ ἡμέρᾳ τῇ ἑβδόμῃ σάββατα ἀνάπαυσις κλητὴ ἁγία τῷ κυρίῳ· πᾶν ἔργον οὐ ποιήσεις, σάββατά ἐστιν τῷ κυρίῳ ὑμῶν ἐν πάσῃ κατοικίᾳ ὑμῶν.",
+        "VUL": "Sex diebus facietis opus : dies septimus, quia sabbati requies est, vocabitur sanctus : omne opus non facietis in eo : sabbatum Domini est in cunctis habitationibus vestris.",
+        "SYN": "шесть дней можно делать дела, а в седьмой день суббота покоя, священное собрание; никакого дела не делайте; это суббота Господня во всех жилищах ваших.",
+        "NEO": "On travaillera durant six jours ; mais le septième jour est un sabbat, un repos complet : il y aura une sainte assemblée. Vous ne ferez aucun ouvrage. C’est un repos consacré à \\+w Yahweh|strong=\"H3068\"\\+w**, dans tous les lieux que vous habiterez.",
+        "NAB": "\"For six days work may be done; but the seventh day is the sabbath rest, a day for sacred assembly, on which you shall do no work. The sabbath shall belong to the LORD wherever you dwell.",
+        "VAT_ES": "Durante seis días se trabajará, pero el séptimo será un día de reposo, de asamblea litúrgica, en el que ustedes no harán ningún trabajo. Será un sábado consagrado al Señor, cualquiera sea el lugar donde habiten.",
+        "CEI": "Durante sei giorni si attenderà al lavoro; ma il settimo giorno è sabato, giorno di assoluto riposo e di santa convocazione. Non farete in esso lavoro alcuno; è un riposo in onore del Signore in tutti i luoghi dove abiterete."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אֵ֚לֶּה מוֹעֲדֵ֣י יְהוָ֔ה מִקְרָאֵ֖י קֹ֑דֶשׁ אֲשֶׁר תִּקְרְא֥וּ אֹתָ֖/ם בְּ/מוֹעֲדָֽ/ם׃",
+        "LXX": "Αὗται αἱ ἑορταὶ τῷ κυρίῳ, καὶ αὗται, ἁγίας καλέσατε αὐτὰς ἐν τοῖς καιροῖς αὐτῶν.",
+        "VUL": "Hæ sunt ergo feriæ Domini sanctæ, quas celebrare debetis temporibus suis.",
+        "SYN": "Вот праздники Господни, священные собрания, которые вы должны созывать в свое время:",
+        "NEO": "Voici les fêtes de \\+w Yahweh|strong=\"H3068\"\\+w**, les saintes assemblées que vous publierez en leur temps.",
+        "NAB": "\"These, then, are the festivals of the LORD which you shall celebrate at their proper time with a sacred assembly.",
+        "VAT_ES": "Las fiestas del Señor, las asambleas litúrgicas que ustedes convocarán a su debido tiempo, son las siguientes:",
+        "CEI": "Queste sono le solennità del Signore, le sante convocazioni che proclamerete nei tempi stabiliti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בַּ/חֹ֣דֶשׁ הָ/רִאשׁ֗וֹן בְּ/אַרְבָּעָ֥ה עָשָׂ֛ר לַ/חֹ֖דֶשׁ בֵּ֣ין הָ/עַרְבָּ֑יִם פֶּ֖סַח לַ/יהוָֽה׃",
+        "LXX": "ἐν τῷ πρώτῳ μηνὶ ἐν τῇ τεσσαρεσκαιδεκάτῃ ἡμέρᾳ τοῦ μηνὸς ἀνὰ μέσον τῶν ἑσπερινῶν πάσχα τῷ κυρίῳ.",
+        "VUL": "Mense primo, quartadecima die mensis ad vesperum, Phase Domini est :",
+        "SYN": "в первый месяц, в четырнадцатый [день] месяца вечером Пасха Господня;",
+        "NEO": "Au premier mois, le quatorzième jour du mois, entre les deux soirs, c’est la Pâque de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The Passover of the LORD falls on the fourteenth day of the first month, at the evening twilight.",
+        "VAT_ES": "En el primer mes, el día catorce, al ponerse el sol, se celebrará la Pascua del señor,",
+        "CEI": "Il primo mese, al decimoquarto giorno, al tramonto del sole sarà la pasqua del Signore;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וּ/בַ/חֲמִשָּׁ֨ה עָשָׂ֥ר יוֹם֙ לַ/חֹ֣דֶשׁ הַ/זֶּ֔ה חַ֥ג הַ/מַּצּ֖וֹת לַ/יהוָ֑ה שִׁבְעַ֥ת יָמִ֖ים מַצּ֥וֹת תֹּאכֵֽלוּ׃",
+        "LXX": "καὶ ἐν τῇ πεντεκαιδεκάτῃ ἡμέρᾳ τοῦ μηνὸς τούτου ἑορτὴ τῶν ἀζύμων τῷ κυρίῳ· ἑπτὰ ἡμέρας ἄζυμα ἔδεσθε.",
+        "VUL": "et quintadecima die mensis hujus, solemnitas azymorum Domini est. Septem diebus azyma comedetis.",
+        "SYN": "и в пятнадцатый день того же месяца праздник опресноков Господу; семь дней ешьте опресноки;",
+        "NEO": "Et le quinzième jour de ce mois, c’est la fête des pains sans levain en l’honneur de \\+w Yahweh|strong=\"H3068\"\\+w** : pendant sept jours, vous mangerez des pains sans levain.",
+        "NAB": "The fifteenth day of this month is the LORD'S feast of Unleavened Bread. For seven days you shall eat unleavened bread.",
+        "VAT_ES": "y el quince de ese mismo mes tendrá lugar la fiesta de los Acimos en honor del Señor. Durante siete días comerán panes sin levadura.",
+        "CEI": "il quindici dello stesso mese sarà la festa degli azzimi in onore del Signore; per sette giorni mangerete pane senza lievito."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "בַּ/יּוֹם֙ הָֽ/רִאשׁ֔וֹן מִקְרָא קֹ֖דֶשׁ יִהְיֶ֣ה לָ/כֶ֑ם כָּל מְלֶ֥אכֶת עֲבֹדָ֖ה לֹ֥א תַעֲשֽׂוּ׃",
+        "LXX": "καὶ ἡ ἡμέρα ἡ πρώτη κλητὴ ἁγία ἔσται ὑμῖν, πᾶν ἔργον λατρευτὸν οὐ ποιήσετε·",
+        "VUL": "Dies primus erit vobis celeberrimus, sanctusque : omne opus servile non facietis in eo,",
+        "SYN": "в первый день да будет у вас священное собрание; никакой работы не работайте;",
+        "NEO": "Le premier jour vous aurez une sainte assemblée : vous ne ferez aucune œuvre servile.",
+        "NAB": "On the first of these days you shall hold a sacred assembly and do no sort of work.",
+        "VAT_ES": "El primer día tendrán una asamblea litúrgica y no harán ningún trabajo servil.",
+        "CEI": "Il primo giorno sarà per voi santa convocazione; non farete in esso alcun lavoro servile;"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/הִקְרַבְתֶּ֥ם אִשֶּׁ֛ה לַ/יהוָ֖ה שִׁבְעַ֣ת יָמִ֑ים בַּ/יּ֤וֹם הַ/שְּׁבִיעִי֙ מִקְרָא קֹ֔דֶשׁ כָּל מְלֶ֥אכֶת עֲבֹדָ֖ה לֹ֥א תַעֲשֽׂוּ׃",
+        "LXX": "καὶ προσάξετε ὁλοκαυτώματα τῷ κυρίῳ ἑπτὰ ἡμέρας, καὶ ἡ ἑβδόμη ἡμέρα κλητὴ ἁγία ἔσται ὑμῖν· πᾶν ἔργον λατρευτὸν οὐ ποιήσετε.",
+        "VUL": "sed offeretis sacrificium in igne Domino septem diebus. Dies autem septimus erit celebrior et sanctior : nullumque servile opus facietis in eo.",
+        "SYN": "и в течение семи дней приносите жертвы Господу; в седьмой день также священное собрание; никакой работы не работайте.",
+        "NEO": "Vous offrirez à \\+w Yahweh|strong=\"H3068\"\\+w**, pendant sept jours, des sacrifices faits par le feu. Le septième jour, il y aura une sainte assemblée : vous ne ferez aucune œuvre servile. »",
+        "NAB": "On each of the seven days you shall offer an oblation to the LORD. Then on the seventh day you shall again hold a sacred assembly and do no sort of work.\"",
+        "VAT_ES": "Durante siete días ofrecerán una ofrenda que se quema para el Señor. El séptimo día habrá una asamblea litúrgica y ustedes no harán ningún trabajo servil.",
+        "CEI": "per sette giorni offrirete al Signore sacrifici consumati dal fuoco. Il settimo giorno vi sarà la santa convocazione: non farete alcun lavoro servile\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo Moisés:",
+        "CEI": "Il Signore aggiunse a Mosè:"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "דַּבֵּ֞ר אֶל בְּנֵ֤י יִשְׂרָאֵל֙ וְ/אָמַרְתָּ֣ אֲלֵ/הֶ֔ם כִּֽי תָבֹ֣אוּ אֶל הָ/אָ֗רֶץ אֲשֶׁ֤ר אֲנִי֙ נֹתֵ֣ן לָ/כֶ֔ם וּ/קְצַרְתֶּ֖ם אֶת קְצִירָ֑/הּ וַ/הֲבֵאתֶ֥ם אֶת עֹ֛מֶר רֵאשִׁ֥ית קְצִירְ/כֶ֖ם אֶל הַ/כֹּהֵֽן׃",
+        "LXX": "Εἰπὸν τοῖς υἱοῖς Ἰσραὴλ καὶ ἐρεῖς πρὸς αὐτούς Ὅταν εἰσέλθητε εἰς τὴν γῆν ἣν ἐγὼ δίδωμι ὑμῖν καὶ θερίζητε τὸν θερισμὸν αὐτῆς, καὶ οἴσετε δράγμα ἀπαρχὴν τοῦ θερισμοῦ ὑμῶν πρὸς τὸν ἱερέα·",
+        "VUL": "Loquere filiis Israël, et dices ad eos : Cum ingressi fueritis terram, quam ego dabo vobis, et messueritis segetem, feretis manipulos spicarum, primitias messis vestræ, ad sacerdotem :",
+        "SYN": "объяви сынам Израилевым и скажи им: когда придете в землю, которую Я даю вам, и будете жать на ней жатву, то принесите первый сноп жатвы вашей к священнику;",
+        "NEO": "« Parle aux enfants d’Israël, et dis-leur :",
+        "NAB": "\"Speak to the Israelites and tell them: When you come into the land which I am giving you, and reap your harvest, you shall bring a sheaf of the first fruits of your harvest to the priest,",
+        "VAT_ES": "Habla en estos términos a los israelitas: Cuando entren en la tierra que yo les doy y cuando recojan la cosecha, entregarán al sacerdote la primera gavilla.",
+        "CEI": "\"Parla agli Israeliti e ordina loro: Quando sarete entrati nel paese che io vi dò e ne mieterete la messe, porterete al sacerdote un covone, come primizia del vostro raccolto;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/הֵנִ֧יף אֶת הָ/עֹ֛מֶר לִ/פְנֵ֥י יְהוָ֖ה לִֽ/רְצֹנְ/כֶ֑ם מִֽ/מָּחֳרַת֙ הַ/שַּׁבָּ֔ת יְנִיפֶ֖/נּוּ הַ/כֹּהֵֽן׃",
+        "LXX": "καὶ ἀνοίσει τὸ δράγμα ἔναντι Κυρίου δεκτὸν ὑμῖν, τῇ ἐπαύριον τῆς πρώτης ἀνοίσει αὐτὸ ὁ ἱερεύς.",
+        "VUL": "qui elevabit fasciculum coram Domino, ut acceptabile sit pro vobis, altero die sabbati, et sanctificabit illum.",
+        "SYN": "он вознесет этот сноп пред Господом, чтобы вам приобрести благоволение; на другой день праздника вознесет его священник;",
+        "NEO": "Il balancera cette gerbe devant \\+w Yahweh|strong=\"H3068\"\\+w**, pour qu’il vous soit favorable ; le prêtre la balancera le lendemain du sabbat.",
+        "NAB": "who shall wave the sheaf before the LORD that it may be acceptable for you. On the day after the sabbath the priest shall do this.",
+        "VAT_ES": "El día siguiente al sábado, él la ofrecerá al Señor con el gesto de presentación, para que les sea aceptada;",
+        "CEI": "il sacerdote agiterà con gesto rituale il covone davanti al Signore, perché sia gradito per il vostro bene; il sacerdote l'agiterà il giorno dopo il sabato."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/עֲשִׂיתֶ֕ם בְּ/י֥וֹם הֲנִֽיפְ/כֶ֖ם אֶת הָ/עֹ֑מֶר כֶּ֣בֶשׂ תָּמִ֧ים בֶּן שְׁנָת֛/וֹ לְ/עֹלָ֖ה לַ/יהוָֽה׃",
+        "LXX": "καὶ ποιήσετε ἐν τῇ ἡμέρᾳ ἐν ᾗ ἂν φέρητε τὸ δράγμα πρόβατον ἄμωμον ἐνιαύσιον εἰς ὁλοκαύτωμα τῷ κυρίῳ,",
+        "VUL": "Atque in eodem die quo manipulus consecratur, cædetur agnus immaculatus anniculus in holocaustum Domini.",
+        "SYN": "и в день возношения снопа принесите во всесожжение Господу агнца однолетнего, без порока,",
+        "NEO": "Le jour où vous balancerez la gerbe, vous sacrifierez en holocauste à \\+w Yahweh|strong=\"H3068\"\\+w** un agneau d’un an, sans défaut ;",
+        "NAB": "On this day, when your sheaf is waved, you shall offer to the LORD for a holocaust an unblemished yearling lamb.",
+        "VAT_ES": "y ese mismo día ustedes sacrificarán como holocausto al Señor un cordero de un año y sin defecto.",
+        "CEI": "Quando farete il rito di agitazione del covone, offrirete un agnello di un anno, senza difetto, in olocausto al Signore."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וּ/מִנְחָת/וֹ֩ שְׁנֵ֨י עֶשְׂרֹנִ֜ים סֹ֣לֶת בְּלוּלָ֥ה בַ/שֶּׁ֛מֶן אִשֶּׁ֥ה לַ/יהוָ֖ה רֵ֣יחַ נִיחֹ֑חַ וְ/נִסְכֹּ֥/ה יַ֖יִן רְבִיעִ֥ת הַ/הִֽין׃",
+        "LXX": "καὶ τὴν θυσίαν αὐτοῦ δύο δέκατα σεμιδάλεως ἀναπεποιημένης ἐν ἐλαίῳ· θυσία τῷ κυρίῳ, ὀσμὴ εὐωδίας Κυρίῳ· καὶ σπονδὴ αὐτοῦ τὸ τέταρτον τοῦ ἳν οἴνου.",
+        "VUL": "Et libamenta offerentur cum eo, duæ decimæ similæ conspersæ oleo in incensum Domini, odoremque suavissimum : liba quoque vini, quarta pars hin.",
+        "SYN": "и с ним хлебного приношения две десятых части _ефы_ пшеничной муки, смешанной с елеем, в жертву Господу, в приятное благоухание, и возлияния к нему четверть гина вина;",
+        "NEO": "l’oblation qui l’accompagnera sera de deux dixièmes de fleur de farine pétrie à l’huile, comme offrande faite par le feu, d’une agréable odeur à \\+w Yahweh|strong=\"H3068\"\\+w** ; la libation sera de vin, le quart d’un hin.",
+        "NAB": "Its cereal offering shall be two tenths of an ephah of fine flour mixed with oil, as a sweet-smelling oblation to the LORD; and its libation shall be a fourth of a hin of wine.",
+        "VAT_ES": "Juntamente con él, presentarán –como ofrenda que se quema con aroma agradable al Señor– una oblación consistente en dos décimas de harina de la mejor calidad mezclada con aceite; y añadirán como libación un litro y medio de vino.",
+        "CEI": "L'oblazione che l'accompagna sarà di due decimi di efa di fior di farina intrisa nell'olio, come sacrificio consumato dal fuoco, profumo soave in onore del Signore; la libazione sarà di un quarto di hin di vino."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/לֶחֶם֩ וְ/קָלִ֨י וְ/כַרְמֶ֜ל לֹ֣א תֹֽאכְל֗וּ עַד עֶ֨צֶם֙ הַ/יּ֣וֹם הַ/זֶּ֔ה עַ֚ד הֲבִ֣יאֲ/כֶ֔ם אֶת קָרְבַּ֖ן אֱלֹהֵי/כֶ֑ם חֻקַּ֤ת עוֹלָם֙ לְ/דֹרֹ֣תֵי/כֶ֔ם בְּ/כֹ֖ל מֹשְׁבֹֽתֵי/כֶֽם׃",
+        "LXX": "καὶ ἄρτον καὶ πεφρυγμένα χίδρα νέα οὐ φάγεσθε ἕως εἰς αὐτὴν τὴν ἡμέραν ταύτην, ἕως ἂν προσενέγκητε ὑμεῖς τὰ δῶρα τῷ θεῷ ὑμῶν· νόμιμον αἰώνιον εἰς τὰς γενεὰς ὑμῶν ἐν πάσῃ κατοικίᾳ ὑμῶν.",
+        "VUL": "Panem, et polentam, et pultes non comedetis ex segete, usque ad diem qua offeretis ex ea Deo vestro. Præceptum est sempiternum in generationibus, cunctisque habitaculis vestris.",
+        "SYN": "никакого _нового_ хлеба, ни сушеных зерен, ни зерен сырых не ешьте до того дня, в который принесете приношения Богу вашему: это вечное постановление в роды ваши во всех жилищах ваших.",
+        "NEO": "Vous ne mangerez ni pain, ni épis grillés, ni épis frais, jusqu’à ce jour même, jusqu’à ce que vous apportiez l’offrande de votre Dieu. C’est une loi perpétuelle pour vos descendants, dans tous les lieux que vous habiterez.",
+        "NAB": "Until this day, when you bring your God this offering, you shall not eat any bread or roasted grain or fresh kernels. This shall be a perpetual statute for you and your descendants wherever you dwell.",
+        "VAT_ES": "Antes de ese día, o sea, antes de entregar la ofrenda de su Dios, no comerán pan, grano tostado ni espigas tiernas. Este es un decreto válido para siempre, a lo largo de las generaciones, cualquiera sea el lugar donde habiten.",
+        "CEI": "Non mangerete pane, né grano abbrustolito, né spighe fresche, prima di quel giorno, prima di aver portato l'offerta al vostro Dio. È una legge perenne di generazione in generazione, in tutti i luoghi dove abiterete."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וּ/סְפַרְתֶּ֤ם לָ/כֶם֙ מִ/מָּחֳרַ֣ת הַ/שַּׁבָּ֔ת מִ/יּוֹם֙ הֲבִ֣יאֲ/כֶ֔ם אֶת עֹ֖מֶר הַ/תְּנוּפָ֑ה שֶׁ֥בַע שַׁבָּת֖וֹת תְּמִימֹ֥ת תִּהְיֶֽינָה׃",
+        "LXX": "Καὶ ἀριθμήσετε ὑμεῖς ἀπὸ τῆς ἐπαύριον τῶν σαββάτων, ἀπὸ τῆς ἡμέρας ἧς ἂν προσενέγκητε τὸ δράγμα τοῦ ἐπιθέματος, ἑπτὰ ἑβδομάδας ὁλοκλήρους·",
+        "VUL": "Numerabitis ergo ab altero die sabbati, in quo obtulistis manipulum primitiarum, septem hebdomadas plenas,",
+        "SYN": "Отсчитайте себе от первого дня после праздника, от того дня, в который приносите сноп потрясания, семь полных недель,",
+        "NEO": "A partir du lendemain du sabbat, du jour où vous aurez apporté la gerbe pour être balancée, vous compterez sept semaines entières.",
+        "NAB": "\"Beginning with the day after the sabbath, the day on which you bring the wave-offering sheaf, you shall count seven full weeks,",
+        "VAT_ES": "También contarán siete semanas, a partir del día en que entreguen la gavilla ofrecida con el gesto de presentación, o sea a partir del día siguiente al sábado. Las semanas deberán ser completas.",
+        "CEI": "Dal giorno dopo il sabato, cioè dal giorno che avrete portato il covone da offrire con il rito di agitazione, conterete sette settimane complete."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "עַ֣ד מִֽ/מָּחֳרַ֤ת הַ/שַּׁבָּת֙ הַ/שְּׁבִיעִ֔ת תִּסְפְּר֖וּ חֲמִשִּׁ֣ים י֑וֹם וְ/הִקְרַבְתֶּ֛ם מִנְחָ֥ה חֲדָשָׁ֖ה לַ/יהוָֽה׃",
+        "LXX": "ἕως τῆς ἐπαύριον τῆς ἐσχάτης ἑβδομάδος ἀριθμήσετε πεντήκοντα ἡμέρας, καὶ προσοίσετε θυσίαν νέαν τῷ κυρίῳ.",
+        "VUL": "usque ad alteram diem expletionis hebdomadæ septimæ, id est, quinquaginta dies : et sic offeretis sacrificium novum Domino",
+        "SYN": "до первого дня после седьмой недели отсчитайте пятьдесят дней, _и_ _тогда_ принесите новое хлебное приношение Господу:",
+        "NEO": "Vous compterez cinquante jours jusqu’au lendemain du septième sabbat, et vous offrirez à \\+w Yahweh|strong=\"H3068\"\\+w** une oblation nouvelle.",
+        "NAB": "and then on the day after the seventh week, the fiftieth day, you shall present the new cereal offering to the LORD.",
+        "VAT_ES": "Por eso tendrán que contar hasta el día siguiente al séptimo sábado: cincuenta días en total. Entonces ofrecerán al Señor una ofrenda de grano nuevo.",
+        "CEI": "Conterete cinquanta giorni fino all'indomani del settimo sabato e offrirete al Signore una nuova oblazione."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "מִ/מּוֹשְׁבֹ֨תֵי/כֶ֜ם תָּבִ֣יאּוּ לֶ֣חֶם תְּנוּפָ֗ה שְׁ֚תַּיִם שְׁנֵ֣י עֶשְׂרֹנִ֔ים סֹ֣לֶת תִּהְיֶ֔ינָה חָמֵ֖ץ תֵּאָפֶ֑ינָה בִּכּוּרִ֖ים לַֽ/יהוָֽה׃",
+        "LXX": "ἀπὸ τῆς κατοικίας ὑμῶν προσοίσετε ἄρτους ἐπίθεμα, δύο ἄρτους· ἐκ δύο δεκάτων σεμιδάλεως ἔσονται, ἐζυμωμένοι πεφθήσονται πρωτογενημάτων τῷ κυρίῳ.",
+        "VUL": "ex omnibus habitaculis vestris, panes primitiarum duos de duabus decimis similæ fermentatæ, quos coquetis in primitias Domini.",
+        "SYN": "от жилищ ваших приносите два хлеба возношения, которые должны состоять из двух десятых частей _ефы_ пшеничной муки и должны быть испечены кислые, _как_ первый плод Господу;",
+        "NEO": "Vous apporterez de vos demeures deux pains pour offrande balancée ; ils seront faits avec deux dixièmes d’épha de fleur de farine, et cuits avec du levain : ce sont les prémices de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "For the wave offering of your first fruits to the LORD, you shall bring with you from wherever you live two loaves of bread made of two tenths of an ephah of fine flour and baked with leaven.",
+        "VAT_ES": "Ustedes traerán desde sus casas dos panes, para que sean ofrecidos con el gesto de presentación. Cada pan deberá estar preparado con dos décimas de harina de la mejor calidad y cocido después de fermentar: son las primicias para el Señor.",
+        "CEI": "Porterete dai luoghi dove abiterete due pani per offerta con rito di agitazione, i quali saranno di due decimi di efa di fior di farina e li farete cuocere lievitati; sono le primizie in onore del Signore."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/הִקְרַבְתֶּ֣ם עַל הַ/לֶּ֗חֶם שִׁבְעַ֨ת כְּבָשִׂ֤ים תְּמִימִם֙ בְּנֵ֣י שָׁנָ֔ה וּ/פַ֧ר בֶּן בָּקָ֛ר אֶחָ֖ד וְ/אֵילִ֣ם שְׁנָ֑יִם יִהְי֤וּ עֹלָה֙ לַֽ/יהוָ֔ה וּ/מִנְחָתָ/ם֙ וְ/נִסְכֵּי/הֶ֔ם אִשֵּׁ֥ה רֵֽיחַ נִיחֹ֖חַ לַ/יהוָֽה׃",
+        "LXX": "καὶ προσάξει μετὰ τῶν ἄρτων ἑπτὰ ἀμνοὺς ἀμώμους ἐνιαυσίους καὶ μόσχον ἕνα ἐκ βουκολίου καὶ κριοὺς δύο ἀμώμους· ἔσονται ὁλοκαύτωμα τῷ κυρίῳ, καὶ αἱ θυσίαι αὐτῶν καὶ αἱ σπονδαὶ αὐτῶν· θυσίαν ὀσμὴν εὐωδίας τῷ κυρίῳ.",
+        "VUL": "Offeretisque cum panibus septem agnos immaculatos anniculos, et vitulum de armento unum, et arietes duos, et erunt in holocaustum cum libamentis suis, in odorem suavissimum Domini.",
+        "SYN": "вместе с хлебами представьте семь агнцев без порока, однолетних, и из крупного скота одного тельца и двух овнов [без порока]; да будет это во всесожжение Господу, и хлебное приношение и возлияние к ним, в жертву, в приятное благоухание Господу.",
+        "NEO": "Avec ces pains, vous offrirez en holocauste à \\+w Yahweh|strong=\"H3068\"\\+w** sept agneaux d’un an, sans défaut, un jeune taureau et deux béliers, en y joignant l’oblation et la libation ordinaires : ce sera un sacrifice fait par le feu, d’une agréable odeur à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Besides the bread, you shall offer to the LORD a holocaust of seven unblemished yearling lambs, one young bull, and two rams, along with their cereal offering and libations, as a sweet-smelling oblation to the LORD.",
+        "VAT_ES": "junto con el pan, ofrecerán en holocausto al Señor siete corderos de un año y sin defecto, un novillo y dos carneros, con sus correspondientes oblaciones y libaciones, como ofrenda que se quema con aroma agradable al Señor.",
+        "CEI": "Oltre quei pani offrirete sette agnelli dell'anno, senza difetto, un torello e due arieti: saranno un olocausto per il Signore insieme con la loro oblazione e le loro libazioni; sarà un sacrificio di soave profumo, consumato dal fuoco in onore del Signore."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/עֲשִׂיתֶ֛ם שְׂעִיר עִזִּ֥ים אֶחָ֖ד לְ/חַטָּ֑את וּ/שְׁנֵ֧י כְבָשִׂ֛ים בְּנֵ֥י שָׁנָ֖ה לְ/זֶ֥בַח שְׁלָמִֽים׃",
+        "LXX": "καὶ ποιήσουσιν χίμαρον ἐξ αἰγῶν ἕνα περὶ ἁμαρτίας καὶ δύο ἀμνοὺς ἐνιαυσίους εἰς θυσίαν σωτηρίου μετὰ τῶν ἄρτων τοῦ πρωτογενήματος·",
+        "VUL": "Facietis et hircum pro peccato, duosque agnos anniculos hostias pacificorum.",
+        "SYN": "Приготовьте также из _стада_ коз одного козла в жертву за грех и двух однолетних агнцев в жертву мирную [вместе с хлебом первого плода];",
+        "NEO": "Vous immolerez aussi un bouc en sacrifice pour le péché, et deux agneaux d’un an en sacrifice pacifique.",
+        "NAB": "One male goat shall be sacrificed as a sin offering, and two yearling lambs as a peace offering.",
+        "VAT_ES": "También ofrecerán un chivo como sacrificio por el pecado, y dos corderos de un año como sacrificio de comunión.",
+        "CEI": "Offrirete un capro come sacrificio espiatorio e due agnelli dell'anno come sacrificio di comunione."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/הֵנִ֣יף הַ/כֹּהֵ֣ן אֹתָ֡/ם עַל֩ לֶ֨חֶם הַ/בִּכּוּרִ֤ים תְּנוּפָה֙ לִ/פְנֵ֣י יְהוָ֔ה עַל שְׁנֵ֖י כְּבָשִׂ֑ים קֹ֛דֶשׁ יִהְי֥וּ לַ/יהוָ֖ה לַ/כֹּהֵֽן׃",
+        "LXX": "καὶ ἐπιθήσει αὐτὰ ὁ ἱερεὺς μετὰ τῶν ἄρτων τοῦ πρωτογενήματος ἐπίθεμα ἔναντι Κυρίου μετὰ τῶν δύο ἀμνῶν· ἅγια ἔσονται τῷ κυρίῳ· τῷ ἱερεῖ τῷ προσφέροντι αὐτά, αὐτῷ ἔσται.",
+        "VUL": "Cumque elevaverit eos sacerdos cum panibus primitiarum coram Domino, cedent in usum ejus.",
+        "SYN": "священник должен принести это, потрясая пред Господом, вместе с потрясаемыми хлебами первого плода и с двумя агнцами, и это будет святынею Господу; священнику, [который приносит, это принадлежит];",
+        "NEO": "Le prêtre balancera les victimes avec les pains des prémices en offrande balancée devant \\+w Yahweh|strong=\"H3068\"\\+w**, avec les deux agneaux ; ils seront consacrés à \\+w Yahweh|strong=\"H3068\"\\+w** et appartiendront au prêtre.",
+        "NAB": "The priest shall wave the bread of the first fruits and the two lambs as a wave offer ing before the LORD; these shall be sacred to the LORD and belong to the priest.",
+        "VAT_ES": "El sacerdote los ofrecerá al Señor con el gesto de presentación, junto con el pan de las primicias y dos corderos. Todo esto es una cosa consagrada al Señor y pertenecerá al sacerdote.",
+        "CEI": "Il sacerdote agiterà ritualmente gli agnelli insieme con il pane delle primizie come offerta da agitare davanti al Signore; tanto i pani, quanto i due agnelli consacrati al Signore saranno riservati al sacerdote."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וּ/קְרָאתֶ֞ם בְּ/עֶ֣צֶם הַ/יּ֣וֹם הַ/זֶּ֗ה מִֽקְרָא קֹ֨דֶשׁ֙ יִהְיֶ֣ה לָ/כֶ֔ם כָּל מְלֶ֥אכֶת עֲבֹדָ֖ה לֹ֣א תַעֲשׂ֑וּ חֻקַּ֥ת עוֹלָ֛ם בְּ/כָל מוֹשְׁבֹ֥תֵי/כֶ֖ם לְ/דֹרֹֽתֵי/כֶֽם׃",
+        "LXX": "καὶ καλέσετε ταύτην τὴν ἡμέραν κλητήν· ἁγία ἔσται ὑμῖν, πᾶν ἔργον λατρευτὸν οὐ ποιήσετε ἐν αὐτῇ· νόμιμον αἰώνιον εἰς τὰς γενεὰς ὑμῶν ἐν πάσῃ τῇ κατοικίᾳ ὑμῶν.",
+        "VUL": "Et vocabitis hunc diem celeberrimum, atque sanctissimum : omne opus servile non facietis in eo. Legitimum sempiternum erit in cunctis habitaculis, et generationibus vestris.",
+        "SYN": "и созывайте _народ_ в сей день, священное собрание да будет у вас, никакой работы не работайте: это постановление вечное во всех жилищах ваших в роды ваши.",
+        "NEO": "Ce jour-là même, vous publierez la fête, et vous aurez une sainte assemblée : vous ne ferez aucune œuvre servile. C’est une loi perpétuelle pour vos descendants, dans tous les lieux où vous habiterez.",
+        "NAB": "On this same day you shall by proclamation have a sacred assembly, and no sort of work may be done. This shall be a perpetual statute for you and your descendants wherever you dwell.",
+        "VAT_ES": "Ese mismo día harán una convocatoria: ustedes tendrán una asamblea litúrgica y no se podrá realizar ningún trabajo servil. Este es un decreto válido para siempre, a lo largo de las generaciones, cualquiera sea el lugar donde habiten,",
+        "CEI": "In quel medesimo giorno dovrete indire una festa e avrete la santa convocazione. Non farete alcun lavoro servile. È una legge perenne, di generazione in generazione, in tutti i luoghi dove abiterete."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וּֽ/בְ/קֻצְרְ/כֶ֞ם אֶת קְצִ֣יר אַרְצְ/כֶ֗ם לֹֽא תְכַלֶּ֞ה פְּאַ֤ת שָֽׂדְ/ךָ֙ בְּ/קֻצְרֶ֔/ךָ וְ/לֶ֥קֶט קְצִירְ/ךָ֖ לֹ֣א תְלַקֵּ֑ט לֶֽ/עָנִ֤י וְ/לַ/גֵּר֙ תַּעֲזֹ֣ב אֹתָ֔/ם אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "Καὶ ὅταν θερίζητε τὸν θερισμὸν τῆς γῆς ὑμῶν, οὐ συντελέσετε τὸ λοιπὸν τοῦ θερισμοῦ τοῦ ἀγροῦ σου ἐν τῷ θερίζειν σε, καὶ τὰ ἀποπίπτοντα τοῦ θερισμοῦ σου οὐ συλλέξεις· τῷ πτωχῷ καὶ τῷ προσηλύτῳ ὑπολείψῃ αὐτό· ἐγὼ Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Postquam autem messueritis segetem terræ vestræ, nec secabitis eam usque ad solum, nec remanentes spicas colligetis : sed pauperibus et peregrinis dimittetis eas. Ego sum Dominus Deus vester.",
+        "SYN": "Когда будете жать жатву на земле вашей, не дожинай до края поля твоего, когда жнешь, и оставшегося от жатвы твоей не подбирай; бедному и пришельцу оставь это. Я Господь, Бог ваш.",
+        "NEO": "Quand vous ferez la moisson dans votre pays, tu ne moissonneras pas jusqu’à la limite extrême de ton champ, et tu ne ramasseras pas de ta moisson ce qui reste à glaner ; tu laisseras cela pour le pauvre et pour l’étranger. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu. »",
+        "NAB": "\"When you reap the harvest of your land, you shall not be so thorough that you reap the field to its very edge, nor shall you glean the stray ears of your grain. These things you shall leave for the poor and the alien. I, the LORD, am your God.\"",
+        "VAT_ES": "En el momento de recoger la cosecha de tu tierra, no segarás todo el campo hasta sus bordes, ni volverás a buscar las espigas caídas: las dejarás para el pobre y el extranjero. Yo soy el Señor, tu Dios.",
+        "CEI": "Quando mieterete la messe della vostra terra, non mieterete fino al margine del campo e non raccoglierai ciò che resta da spigolare del tuo raccolto; lo lascerai per il povero e per il forestiero. Io sono il Signore, il vostro Dio\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse a Mosè:"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "דַּבֵּ֛ר אֶל בְּנֵ֥י יִשְׂרָאֵ֖ל לֵ/אמֹ֑ר בַּ/חֹ֨דֶשׁ הַ/שְּׁבִיעִ֜י בְּ/אֶחָ֣ד לַ/חֹ֗דֶשׁ יִהְיֶ֤ה לָ/כֶם֙ שַׁבָּת֔וֹן זִכְר֥וֹן תְּרוּעָ֖ה מִקְרָא קֹֽדֶשׁ׃",
+        "LXX": "Λάλησον τοῖς υἱοῖς Ἰσραὴλ λέγων Τοῦ μηνὸς τοῦ ἑβδόμου μιᾷ τοῦ μηνὸς ἔσται ὑμῖν ἀνάπαυσις, μνημόσυνον σαλπίγγων, κλητὴ ἁγία ἔσται ὑμῖν·",
+        "VUL": "Loquere filiis Israël : Mense septimo, prima die mensis, erit vobis sabbatum, memoriale, clangentibus tubis, et vocabitur sanctum :",
+        "SYN": "скажи сынам Израилевым: в седьмой месяц, в первый [день] месяца да будет у вас покой, праздник труб, священное собрание [да будет у вас];",
+        "NEO": "« Parle aux enfants d’Israël et dis-leur :",
+        "NAB": "\"Tell the Israelites: On the first day of the seventh month you shall keep a sabbath rest, with a sacred assembly and with the trumpet blasts as a reminder;",
+        "VAT_ES": "Habla en estos términos a los israelitas: El primer día del séptimo mes será para ustedes un día de descanso, una conmemoración anunciada con toque de trompetas, y habrá una asamblea litúrgica.",
+        "CEI": "\"Parla agli Israeliti e ordina loro: Nel settimo mese, il primo giorno del mese sarà per voi riposo assoluto, una proclamazione fatta a suon di tromba, una santa convocazione."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "כָּל מְלֶ֥אכֶת עֲבֹדָ֖ה לֹ֣א תַעֲשׂ֑וּ וְ/הִקְרַבְתֶּ֥ם אִשֶּׁ֖ה לַ/יהוָֽה׃",
+        "LXX": "πᾶν ἔργον λατρευτὸν οὐ ποιήσετε, καὶ προσάξετε ὁλοκαύτωμα Κυρίῳ.",
+        "VUL": "omne opus servile non facietis in eo, et offeretis holocaustum Domino.",
+        "SYN": "никакой работы не работайте и приносите жертву Господу.",
+        "NEO": "Vous ne ferez aucune œuvre servile, et vous offrirez à \\+w Yahweh|strong=\"H3068\"\\+w** des sacrifices faits par le feu. »",
+        "NAB": "you shall then do no sort of work, and you shall offer an oblation to the LORD.\"",
+        "VAT_ES": "No harán ningún trabajo servil y presentarás una ofrenda que se quema en homenaje al Señor.",
+        "CEI": "Non farete alcun lavoro servile e offrirete sacrifici consumati dal fuoco in onore del Signore\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse ancora a Mosè:"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "אַ֡ךְ בֶּ/עָשׂ֣וֹר לַ/חֹדֶשׁ֩ הַ/שְּׁבִיעִ֨י הַ/זֶּ֜ה י֧וֹם הַ/כִּפֻּרִ֣ים ה֗וּא מִֽקְרָא קֹ֨דֶשׁ֙ יִהְיֶ֣ה לָ/כֶ֔ם וְ/עִנִּיתֶ֖ם אֶת נַפְשֹׁתֵי/כֶ֑ם וְ/הִקְרַבְתֶּ֥ם אִשֶּׁ֖ה לַ/יהוָֽה׃",
+        "LXX": "Καὶ τῇ δεκάτῃ τοῦ μηνὸς τοῦ ἑβδόμου τούτου ἡμέρα ἐξιλασμοῦ, κλητὴ ἁγία ἔσται ὑμῖν· καὶ ταπεινώσετε τὰς ψυχὰς ὑμῶν, καὶ προσάξετε ὁλοκαύτωμα τῷ κυρίῳ.",
+        "VUL": "Decimo die mensis hujus septimi, dies expiationum erit celeberrimus, et vocabitur sanctus : affligetisque animas vestras in eo, et offeretis holocaustum Domino.",
+        "SYN": "также в девятый [день] седьмого месяца сего, день очищения, да будет у вас священное собрание; смиряйте души ваши и приносите жертву Господу;",
+        "NEO": "« Le dixième jour de ce septième mois est le jour des Expiations : vous aurez une sainte assemblée, vous affligerez vos âmes, et vous offrirez à \\+w Yahweh|strong=\"H3068\"\\+w** des sacrifices faits par le feu.",
+        "NAB": "\"The tenth of this seventh month is the Day of Atonement, when you shall hold a sacred assembly and mortify yourselves and offer an oblation to the LORD.",
+        "VAT_ES": "Además, el décimo día de ese séptimo mes, será el día de la Expiación. Habrá una asamblea litúrgica, observarán el ayuno y presentarán una ofrenda que se quema para el Señor.",
+        "CEI": "\"Il decimo giorno di questo settimo mese sarà il giorno dell'espiazione; terrete una santa convocazione, vi mortificherete e offrirete sacrifici consumati dal fuoco in onore del Signore."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/כָל מְלָאכָה֙ לֹ֣א תַעֲשׂ֔וּ בְּ/עֶ֖צֶם הַ/יּ֣וֹם הַ/זֶּ֑ה כִּ֣י י֤וֹם כִּפֻּרִים֙ ה֔וּא לְ/כַפֵּ֣ר עֲלֵי/כֶ֔ם לִ/פְנֵ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "πᾶν ἔργον οὐ ποιήσετε ἐν αὐτῇ τῇ ἡμέρᾳ ταύτῃ· ἔστιν γὰρ ἡμέρα ἐξιλασμοῦ αὕτη ὑμῖν, ἐξιλάσασθαι περὶ ὑμῶν ἔναντι Κυρίου τοῦ θεοῦ ὑμῶν.",
+        "VUL": "Omne opus servile non facietis in tempore diei hujus : quia dies propitiationis est, ut propitietur vobis Dominus Deus vester.",
+        "SYN": "никакого дела не делайте в день сей, ибо это день очищения, дабы очистить вас пред лицем Господа, Бога вашего;",
+        "NEO": "Vous ne ferez ce jour-là aucun travail, car c’est un jour d’expiation, où doit être faite l’expiation pour vous devant \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu.",
+        "NAB": "On this day you shall not do any work, because it is the Day of Atonement, when atonement is made for you before the LORD, your God.",
+        "VAT_ES": "En el transcurso de todo ese día no harán ningún trabajo, porque es el día de la Expiación, en que se practicará el rito de expiación en favor de ustedes, delante del Señor, su Dios.",
+        "CEI": "In quel giorno non farete alcun lavoro; poiché è il giorno dell'espiazione, per espiare per voi davanti al Signore, vostro Dio."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "כִּ֤י כָל הַ/נֶּ֨פֶשׁ֙ אֲשֶׁ֣ר לֹֽא תְעֻנֶּ֔ה בְּ/עֶ֖צֶם הַ/יּ֣וֹם הַ/זֶּ֑ה וְ/נִכְרְתָ֖ה מֵֽ/עַמֶּֽי/הָ׃",
+        "LXX": "πᾶσα ψυχὴ ἥτις μὴ ταπεινωθήσεται ἐν αὐτῇ τῇ ἡμέρᾳ ταύτῃ ἐξολεθρευθήσεται ἐκ τοῦ λαοῦ αὐτῆς.",
+        "VUL": "Omnis anima, quæ afflicta non fuerit die hac, peribit de populis suis :",
+        "SYN": "а всякая душа, которая не смирит себя в этот день, истребится из народа своего;",
+        "NEO": "Toute personne qui ne s’affligera pas ce jour-là sera retranchée de son peuple ;",
+        "NAB": "Anyone who does not mortify himself on this day shall be cut off from his people,",
+        "VAT_ES": "El que no observe el ayuno a lo largo de ese día, será excluido de su pueblo.",
+        "CEI": "Ogni persona che non si mortificherà in quel giorno, sarà eliminata dal suo popolo."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/כָל הַ/נֶּ֗פֶשׁ אֲשֶׁ֤ר תַּעֲשֶׂה֙ כָּל מְלָאכָ֔ה בְּ/עֶ֖צֶם הַ/יּ֣וֹם הַ/זֶּ֑ה וְ/הַֽאֲבַדְתִּ֛י אֶת הַ/נֶּ֥פֶשׁ הַ/הִ֖וא מִ/קֶּ֥רֶב עַמָּֽ/הּ׃",
+        "LXX": "καὶ πᾶσα ψυχὴ ἥτις ποιήσει ἔργον ἐν αὐτῇ τῇ ἡμέρᾳ ταύτῃ, ἀπολεῖται ἡ ψυχὴ ἐκείνη ἐκ τοῦ λαοῦ αὐτῆς.",
+        "VUL": "et quæ operis quippiam fecerit, delebo eam de populo suo.",
+        "SYN": "и если какая душа будет делать какое-нибудь дело в день сей, Я истреблю ту душу из народа ее;",
+        "NEO": "et toute personne qui fera ce jour-là un ouvrage quelconque, je la ferai périr du milieu de son peuple.",
+        "NAB": "and if anyone does any work on this day, I will remove him from the midst of his people.",
+        "VAT_ES": "Y yo haré desaparecer de su pueblo al que realice cualquier clase de trabajo.",
+        "CEI": "Ogni persona che farà in quel giorno un qualunque lavoro, io la eliminerò dal suo popolo."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "כָּל מְלָאכָ֖ה לֹ֣א תַעֲשׂ֑וּ חֻקַּ֤ת עוֹלָם֙ לְ/דֹרֹ֣תֵי/כֶ֔ם בְּ/כֹ֖ל מֹֽשְׁבֹֽתֵי/כֶֽם׃",
+        "LXX": "πᾶν ἔργον οὐ ποιήσετε· νόμιμον αἰώνιον εἰς τὰς γενεὰς ὑμῶν ἐν πάσαις κατοικίαις ὑμῶν.",
+        "VUL": "Nihil ergo operis facietis in eo : legitimum sempiternum erit vobis in cunctis generationibus, et habitationibus vestris.",
+        "SYN": "никакого дела не делайте: это постановление вечное в роды ваши, во всех жилищах ваших;",
+        "NEO": "Vous ne ferez aucun travail. C’est une loi perpétuelle pour vos descendants, dans tous les lieux où vous demeurerez.",
+        "NAB": "This is a perpetual statute for you and your descendants wherever you dwell: you shall do no work,",
+        "VAT_ES": "Ustedes no harán ningún trabajo. Es un decreto válido para siempre, a lo largo de las generaciones, cualquiera sea el lugar donde habiten.",
+        "CEI": "Non farete alcun lavoro. È una legge perenne di generazione in generazione, in tutti i luoghi dove abiterete."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "שַׁבַּ֨ת שַׁבָּת֥וֹן הוּא֙ לָ/כֶ֔ם וְ/עִנִּיתֶ֖ם אֶת נַפְשֹׁתֵי/כֶ֑ם בְּ/תִשְׁעָ֤ה לַ/חֹ֨דֶשׁ֙ בָּ/עֶ֔רֶב מֵ/עֶ֣רֶב עַד עֶ֔רֶב תִּשְׁבְּת֖וּ שַׁבַּתְּ/כֶֽם׃",
+        "LXX": "σάββατα σαββάτων ἔσται ὑμῖν, καὶ ταπεινώσετε τὰς ψυχὰς ὑμῶν· ἀπὸ ἐνάτης τοῦ μηνὸς ἀπὸ ἑσπέρας ἕως ἑσπέρας σαββατιεῖτε τὰ σάββατα ὑμῶν.",
+        "VUL": "Sabbatum requietionis est, et affligetis animas vestras die nono mensis : a vespera usque ad vesperam celebrabitis sabbata vestra.",
+        "SYN": "это для вас суббота покоя, и смиряйте души ваши, с вечера девятого [дня] месяца; от вечера до вечера [десятого дня месяца] празднуйте субботу вашу.",
+        "NEO": "Ce sera pour vous un sabbat, un repos absolu, et vous affligerez vos âmes ; le neuvième jour du mois, au soir, du soir jusqu’au soir suivant, vous observerez votre sabbat. »",
+        "NAB": "but shall keep a sabbath of complete rest and mortify yourselves. Beginning on the evening of the ninth of the month, you shall keep this sabbath of yours from evening to evening.\"",
+        "VAT_ES": "Este será para ustedes un día de descanso, en el que observarán el ayuno, El noveno día del mes por la tarde, desde esa tarde hasta la siguiente, observarán este descanso.",
+        "CEI": "Sarà per voi un sabato di assoluto riposo e dovrete mortificarvi: il nono giorno del mese, dalla sera alla sera dopo, celebrerete il vostro sabato\"."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Et locutus est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore aggiunse a Mosè:"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "דַּבֵּ֛ר אֶל בְּנֵ֥י יִשְׂרָאֵ֖ל לֵ/אמֹ֑ר בַּ/חֲמִשָּׁ֨ה עָשָׂ֜ר י֗וֹם לַ/חֹ֤דֶשׁ הַ/שְּׁבִיעִי֙ הַ/זֶּ֔ה חַ֧ג הַ/סֻּכּ֛וֹת שִׁבְעַ֥ת יָמִ֖ים לַ/יהֹוָֽה׃",
+        "LXX": "Λάλησον τοῖς υἱοῖς Ἰσραὴλ λέγων Τῇ πεντεκαιδεκάτῃ τοῦ μηνὸς τοῦ ἑβδόμου τούτου ἑορτὴ σκηνῶν ἑπτὰ ἡμέρας τῷ κυρίῳ.",
+        "VUL": "Loquere filiis Israël : A quintodecimo die mensis hujus septimi, erunt feriæ tabernaculorum septem diebus Domino.",
+        "SYN": "скажи сынам Израилевым: с пятнадцатого дня того же седьмого месяца праздник кущей, семь дней Господу;",
+        "NEO": "« Parle aux enfants d’Israël, et dis-leur :",
+        "NAB": "\"Tell the Israelites: The fifteenth day of this seventh month is the LORD'S feast of Booths, which shall continue for seven days.",
+        "VAT_ES": "Habla en estos términos a los israelitas: Además, el día quince de este séptimo mes se celebrará la fiesta de las Chozas en honor del Señor, durante siete días.",
+        "CEI": "\"Parla agli Israeliti e riferisci loro: Il quindici di questo settimo mese sarà la festa delle capanne per sette giorni, in onore del Signore."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "בַּ/יּ֥וֹם הָ/רִאשׁ֖וֹן מִקְרָא קֹ֑דֶשׁ כָּל מְלֶ֥אכֶת עֲבֹדָ֖ה לֹ֥א תַעֲשֽׂוּ׃",
+        "LXX": "καὶ ἡ ἡμέρα ἡ πρώτη κλητὴ ἁγία, πᾶν ἔργον λατρευτὸν οὐ ποιήσετε.",
+        "VUL": "Dies primus vocabitur celeberrimus atque sanctissimus : omne opus servile non facietis in eo.",
+        "SYN": "в первый день священное собрание, никакой работы не работайте;",
+        "NEO": "Le premier jour, il y aura une sainte assemblée ; vous ne ferez aucune œuvre servile.",
+        "NAB": "On the first day there shall be a sacred assembly, and you shall do no sort of work.",
+        "VAT_ES": "El primer día habrá una asamblea litúrgica, y ustedes no harán ningún trabajo servil.",
+        "CEI": "Il primo giorno vi sarà una santa convocazione; non farete alcun lavoro servile."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "שִׁבְעַ֣ת יָמִ֔ים תַּקְרִ֥יבוּ אִשֶּׁ֖ה לַ/יהוָ֑ה בַּ/יּ֣וֹם הַ/שְּׁמִינִ֡י מִקְרָא קֹדֶשׁ֩ יִהְיֶ֨ה לָ/כֶ֜ם וְ/הִקְרַבְתֶּ֨ם אִשֶּׁ֤ה לַֽ/יהוָה֙ עֲצֶ֣רֶת הִ֔וא כָּל מְלֶ֥אכֶת עֲבֹדָ֖ה לֹ֥א תַעֲשֽׂוּ׃",
+        "LXX": "ἑπτὰ ἡμέρας προσάξετε ὁλοκαυτώματα τῷ κυρίῳ· καὶ ἡ ἡμέρα ἡ ὀγδόη ἁγία κλητὴ ἔσται ὑμῖν, καὶ προσάξετε ὁλοκαυτώματα Κυρίῳ· ἐξόδιόν ἐστιν, πᾶν ἔργον λατρευτὸν οὐ ποιήσετε.",
+        "VUL": "Et septem diebus offeretis holocausta Domino. Dies quoque octavus erit celeberrimus, atque sanctissimus, et offeretis holocaustum Domino : est enim ctus atque collectæ : omne opus servile non facietis in eo.",
+        "SYN": "в _течение_ семи дней приносите жертву Господу; в восьмой день священное собрание да будет у вас, и приносите жертву Господу: это отдание праздника, никакой работы не работайте.",
+        "NEO": "Pendant sept jours, vous offrirez à \\+w Yahweh|strong=\"H3068\"\\+w** des sacrifices faits par le feu. Le huitième jour, vous aurez une sainte assemblée, et vous offrirez à \\+w Yahweh|strong=\"H3068\"\\+w** des sacrifices faits par le feu ; c’est une fête de clôture : vous ne ferez aucune œuvre servile.",
+        "NAB": "For seven days you shall offer an oblation to the LORD, and on the eighth day you shall again hold a sacred assembly and offer an oblation to the LORD. On that solemn closing you shall do no sort of work.",
+        "VAT_ES": "Durante siete días presentarán una ofrenda que se quema para el Señor. Al octavo día, celebrarán una asamblea litúrgica y presentarán una ofrenda que se quema para el Señor: es una asamblea solemne y ustedes no harán ningún trabajo.",
+        "CEI": "Per sette giorni offrirete vittime consumate dal fuoco in onore del Signore. L'ottavo giorno terrete la santa convocazione e offrirete al Signore sacrifici consumati con il fuoco. È giorno di riunione; non farete alcun lavoro servile."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "אֵ֚לֶּה מוֹעֲדֵ֣י יְהוָ֔ה אֲשֶׁר תִּקְרְא֥וּ אֹתָ֖/ם מִקְרָאֵ֣י קֹ֑דֶשׁ לְ/הַקְרִ֨יב אִשֶּׁ֜ה לַ/יהוָ֗ה עֹלָ֧ה וּ/מִנְחָ֛ה זֶ֥בַח וּ/נְסָכִ֖ים דְּבַר י֥וֹם בְּ/יוֹמֽ/וֹ׃",
+        "LXX": "αὗται αἱ ἑορταὶ Κυρὶῳ ἃς καλέσετε κλητὰς ἁγίας, ὥστε προσενέγκαι καρπώματα τῷ κυρίῳ, ὁλοκαυτώματα καὶ θυσίας αὐτῶν καὶ σπονδὰς αὐτῶν τὸ καθ’ ἡμέραν εἰς ἡμέραν·",
+        "VUL": "Hæ sunt feriæ Domini, quas vocabitis celeberrimas atque sanctissimas, offeretisque in eis oblationes Domino, holocausta et libamenta juxta ritum uniuscujusque diei :",
+        "SYN": "Вот праздники Господни, в которые должно созывать священные собрания, чтобы приносить в жертву Господу всесожжение, хлебное приношение, заколаемые жертвы и возлияния, каждое в свой день,",
+        "NEO": "Telles sont les fêtes de \\+w Yahweh|strong=\"H3068\"\\+w** que vous publierez pour y tenir de saintes assemblées, pour offrir à \\+w Yahweh|strong=\"H3068\"\\+w** des sacrifices faits par le feu, des holocaustes, des oblations, des victimes et des libations, chacun d’eux à son jour :",
+        "NAB": "\"These, therefore, are the festivals of the LORD on which you shall proclaim a sacred assembly, and offer as an oblation to the LORD holocausts and cereal offerings, sacrifices and libations, as prescribed for each day,",
+        "VAT_ES": "Estas son las fiestas del Señor, en las que ustedes convocarán las asambleas litúrgicas y presentarán ofrendas que se queman para el Señor –holocaustos, oblaciones, sacrificios y libaciones, según corresponda a cada día–",
+        "CEI": "Queste sono le solennità del Signore nelle quali proclamerete sante convocazioni, perché si offrano al Signore sacrifici consumati dal fuoco, olocausti e oblazioni, vittime e libazioni, ogni cosa nel giorno stabilito, oltre i sabati del Signore,"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "מִ/לְּ/בַ֖ד שַׁבְּתֹ֣ת יְּהוָ֑ה וּ/מִ/לְּ/בַ֣ד מַתְּנֽוֹתֵי/כֶ֗ם וּ/מִ/לְּ/בַ֤ד כָּל נִדְרֵי/כֶם֙ וּ/מִ/לְּ/בַד֙ כָּל נִדְב֣וֹתֵי/כֶ֔ם אֲשֶׁ֥ר תִּתְּנ֖וּ לַ/יהוָֽה׃",
+        "LXX": "πλὴν τῶν σαββάτων Κυρίου καὶ πλὴν τῶν δομάτων ὑμῶν καὶ πλὴν πασῶν τῶν εὐχῶν ὑμῶν καὶ πλὴν τῶν ἑκουσίων ὑμῶν ἃ ἂν δῶτε τῷ κυρίῳ.",
+        "VUL": "exceptis sabbatis Domini, donisque vestris, et quæ offeretis ex voto, vel quæ sponte tribuetis Domino.",
+        "SYN": "кроме суббот Господних и кроме даров ваших, и кроме всех обетов ваших и кроме всего _приносимого_ по усердию вашему, что вы даете Господу.",
+        "NEO": "indépendamment des sabbats de \\+w Yahweh|strong=\"H3068\"\\+w**, indépendamment de vos dons, indépendamment de tous vos vœux et indépendamment de toutes vos offrandes volontaires que vous présenterez à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "in addition to those of the LORD'S sabbaths, your donations, your various votive offerings and the free-will offerings that you present to the LORD.",
+        "VAT_ES": "además de los sábados del Señor, y de los dones, las ofrendas votivas y las ofrendas voluntarias que ustedes ofrezcan al Señor.",
+        "CEI": "oltre i vostri doni, oltre tutti i vostri voti e tutte le offerte volontarie che presenterete al Signore."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "אַ֡ךְ בַּ/חֲמִשָּׁה֩ עָשָׂ֨ר י֜וֹם לַ/חֹ֣דֶשׁ הַ/שְּׁבִיעִ֗י בְּ/אָסְפְּ/כֶם֙ אֶת תְּבוּאַ֣ת הָ/אָ֔רֶץ תָּחֹ֥גּוּ אֶת חַג יְהוָ֖ה שִׁבְעַ֣ת יָמִ֑ים בַּ/יּ֤וֹם הָֽ/רִאשׁוֹן֙ שַׁבָּת֔וֹן וּ/בַ/יּ֥וֹם הַ/שְּׁמִינִ֖י שַׁבָּתֽוֹן׃",
+        "LXX": "Καὶ ἐν τῇ πεντεκαιδεκάτῃ ἡμέρᾳ τοῦ μηνὸς τοῦ ἑβδόμου τούτου, ὅταν συντελέσητε τὰ γενήματα τῆς γῆς, ἑορτάσατε τῷ κυρίῳ ζ’ ἡμέρας· τῇ ἡμέρᾳ τῇ πρώτῃ ἀνάπαυσις, καὶ τῇ ἡμέρᾳ τῇ ὀγδόῃ ἀνάπαυσις.",
+        "VUL": "A quintodecimo ergo die mensis septimi, quando congregaveritis omnes fructus terræ vestræ, celebrabitis ferias Domini septem diebus : die primo et die octavo erit sabbatum, id est, requies.",
+        "SYN": "А в пятнадцатый день седьмого месяца, когда вы собираете произведения земли, празднуйте праздник Господень семь дней: в первый день покой и в восьмой день покой;",
+        "NEO": "Le quinzième jour du septième mois, quand vous aurez récolté les produits du pays, vous célébrerez la fête de \\+w Yahweh|strong=\"H3068\"\\+w** pendant sept jours ; le premier jour sera un repos solennel, et le huitième jour un repos solennel.",
+        "NAB": "\"On the fifteenth day, then, of the seventh month, when you have gathered in the produce of the land, you shall celebrate a pilgrim feast of the LORD for a whole week. The first and the eighth day shall be days of complete rest.",
+        "VAT_ES": "El día quince del séptimo mes, cuando hayan cosechado los productos de la tierra, celebrarán la Fiesta del Señor durante siete días. El primero y el octavo día serán de descanso.",
+        "CEI": "Ora il quindici del settimo mese, quando avrete raccolto i frutti della terra, celebrerete una festa al Signore per sette giorni; il primo giorno sarà di assoluto riposo e così l'ottavo giorno."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וּ/לְקַחְתֶּ֨ם לָ/כֶ֜ם בַּ/יּ֣וֹם הָ/רִאשׁ֗וֹן פְּרִ֨י עֵ֤ץ הָדָר֙ כַּפֹּ֣ת תְּמָרִ֔ים וַ/עֲנַ֥ף עֵץ עָבֹ֖ת וְ/עַרְבֵי נָ֑חַל וּ/שְׂמַחְתֶּ֗ם לִ/פְנֵ֛י יְהוָ֥ה אֱלֹהֵי/כֶ֖ם שִׁבְעַ֥ת יָמִֽים׃",
+        "LXX": "καὶ λήμψεσθε τῇ πρώτῃ καρπὸν ξύλου ὡραῖον καὶ κάλλυνθρα φοινίκων καὶ κλάδους ξύλου δασεῖς καὶ ἰτέας καὶ ἄγνου κλάδους ἐκ χειμάρρου, εὐφρανθῆναι ἔναντι Κυρίου τοῦ θεοῦ ὑμῶν ἑπτὰ ἡμέρας τοῦ ἐνιαυτοῦ·",
+        "VUL": "Sumetisque vobis die primo fructus arboris pulcherrimæ, spatulasque palmarum, et ramos ligni densarum frondium, et salices de torrente, et lætabimini coram Domino Deo vestro.",
+        "SYN": "в первый день возьмите себе ветви красивых дерев, ветви пальмовые и ветви дерев широколиственных и верб речных, и веселитесь пред Господом Богом вашим семь дней;",
+        "NEO": "Vous prendrez, le premier jour, du fruit de beaux arbres, des branches de palmiers, des rameaux d’arbres touffus et des saules de rivière ; et vous vous réjouirez devant \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, pendant sept jours.",
+        "NAB": "On the first day you shall gather foliage from majestic trees, branches of palms and boughs of myrtles and of valley poplars, and then for a week you shall make merry before the LORD, your God.",
+        "VAT_ES": "El primer día ustedes tomarán frutos de los mejores árboles frondosos y sauces del río, y se alegrarán en la presencia del Señor, su Dios, durante siete días.",
+        "CEI": "Il primo giorno prenderete frutti degli alberi migliori: rami di palma, rami con dense foglie e salici di torrente e gioirete davanti al Signore vostro Dio per sette giorni."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וְ/חַגֹּתֶ֤ם אֹת/וֹ֙ חַ֣ג לַֽ/יהוָ֔ה שִׁבְעַ֥ת יָמִ֖ים בַּ/שָּׁנָ֑ה חֻקַּ֤ת עוֹלָם֙ לְ/דֹרֹ֣תֵי/כֶ֔ם בַּ/חֹ֥דֶשׁ הַ/שְּׁבִיעִ֖י תָּחֹ֥גּוּ אֹתֽ/וֹ׃",
+        "LXX": "νόμιμον αἰώνιον εἰς τὰς γενεὰς ὑμῶν. ἐν τῷ μηνὶ τῷ ἑβδόμῳ ἑορτάσετε αὐτήν·",
+        "VUL": "Celebrabitisque solemnitatem ejus septem diebus per annum : legitimum sempiternum erit in generationibus vestris. Mense septimo festa celebrabitis,",
+        "SYN": "и празднуйте этот праздник Господень семь дней в году: это постановление вечное в роды ваши; в седьмой месяц празднуйте его;",
+        "NEO": "Vous célébrerez cette fête en l’honneur de \\+w Yahweh|strong=\"H3068\"\\+w** sept jours chaque année. C’est une loi perpétuelle pour vos descendants ; vous la célébrerez le septième mois.",
+        "NAB": "By perpetual statute for you and your descendants you shall keep this pilgrim feast of the LORD for one whole week in the seventh month of the year.",
+        "VAT_ES": "Así celebrarán la Fiesta del Señor durante siete días cada año, en el séptimo mes. Este es un decreto válido para siempre, a lo largo de las generaciones.",
+        "CEI": "Celebrerete questa festa in onore del Signore, per sette giorni, ogni anno. È una legge perenne di generazione in generazione. La celebrerete il settimo mese."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "בַּ/סֻּכֹּ֥ת תֵּשְׁב֖וּ שִׁבְעַ֣ת יָמִ֑ים כָּל הָֽ/אֶזְרָח֙ בְּ/יִשְׂרָאֵ֔ל יֵשְׁב֖וּ בַּ/סֻּכֹּֽת׃",
+        "LXX": "ἐν σκηναῖς κατοικήσετε ἑπτὰ ἡμέρας, πᾶς ὁ αὐτόχθων ἐν Ἰσραὴλ κατοικήσει ἐν σκηναῖς·",
+        "VUL": "et habitabitis in umbraculis septem diebus : omnis, qui de genere est Israël, manebit in tabernaculis,",
+        "SYN": "в кущах живите семь дней; всякий туземец Израильтянин должен жить в кущах,",
+        "NEO": "Vous demeurerez pendant sept jours sous des huttes de feuillage : tous les indigènes en Israël demeureront dans des huttes ;",
+        "NAB": "During this week every native Israelite among you shall dwell in booths,",
+        "VAT_ES": "Durante siete días vivirán en chozas. Así tendrán que hacerlo todos los nativos de Israel,",
+        "CEI": "Dimorerete in capanne per sette giorni; tutti i cittadini d'Israele dimoreranno in capanne,"
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "לְמַעַן֮ יֵדְע֣וּ דֹרֹֽתֵי/כֶם֒ כִּ֣י בַ/סֻּכּ֗וֹת הוֹשַׁ֨בְתִּי֙ אֶת בְּנֵ֣י יִשְׂרָאֵ֔ל בְּ/הוֹצִיאִ֥/י אוֹתָ֖/ם מֵ/אֶ֣רֶץ מִצְרָ֑יִם אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "ὅπως ἴδωσιν αἱ γενεαὶ ὑμῶν ὅτι ἐν σκηναῖς κατοίκισα τοὺς υἱοὺς Ἰσραὴλ ἐν τῷ ἐξαγαγεῖν με αὐτοὺς ἐκ γῆς Αἰγύπτου. ἐγὼ Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "ut discant posteri vestri quod in tabernaculis habitare fecerim filios Israël, cum educerem eos de terra Ægypti. Ego Dominus Deus vester.",
+        "SYN": "чтобы знали роды ваши, что в кущах поселил Я сынов Израилевых, когда вывел их из земли Египетской. Я Господь, Бог ваш.",
+        "NEO": "afin que vos descendants sachent que j’ai fait habiter sous des huttes les enfants d’Israël, lorsque je les ai fait sortir du pays d’Égypte. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu. »",
+        "NAB": "that your descendants may realize that, when I led the Israelites out of the land of Egypt, I made them dwell in booths. I, the LORD, am your God.\"",
+        "VAT_ES": "para que las generaciones futuras sepan que yo hice vivir en chozas a los israelitas, cuando los hice salir del país de Egipto. Yo soy el Señor, su Dios.",
+        "CEI": "perché i vostri discendenti sappiano che io ho fatto dimorare in capanne gli Israeliti, quando li ho condotti fuori dal paese d'Egitto. Io sono il Signore vostro Dio\"."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר מֹשֶׁ֔ה אֶת מֹעֲדֵ֖י יְהוָ֑ה אֶל בְּנֵ֖י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐλάλησεν Μωυσῆς τὰς ἑορτὰς Κυρίου τοῖς υἱοῖς Ἰσραήλ.",
+        "VUL": "Locutusque est Moyses super solemnitatibus Domini ad filios Israël.",
+        "SYN": "И объявил Моисей сынам Израилевым о праздниках Господних.",
+        "NEO": "Moïse fit ainsi connaître aux enfants d’Israël les fêtes de \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "Thus did Moses announce to the Israelites the festivals of the LORD.",
+        "VAT_ES": "De esta manera, Moisés declaró a los israelitas cuáles eran las fiestas del Señor.",
+        "CEI": "E Mosè diede così agli Israeliti le istruzioni relative alle solennità del Signore."
+      }
+    }
+  }
+}

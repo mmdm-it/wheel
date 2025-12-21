@@ -1,0 +1,304 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IACO_004",
+  "book_key": "IACO",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Πόθεν πόλεμοι καὶ μάχαι ἐν ὑμῖν; Οὐκ ἐντεῦθεν, ἐκ τῶν ἡδονῶν ὑμῶν τῶν στρατευομένων ἐν τοῖς μέλεσιν ὑμῶν;",
+        "VUL": "Unde bella et lites in vobis ? nonne hinc : ex concupiscentiis vestris, quæ militant in membris vestris ?",
+        "SYN": "Откуда у вас вражды и распри? не отсюда ли, от вожделений ваших, воюющих в членах ваших?",
+        "NEO": "D’où viennent les guerres et les luttes parmi vous ? N’est-ce pas de vos passions qui combattent dans vos membres ?",
+        "NAB": "Where do the wars and where do the conflicts among you come from? Is it not from your passions that make war within your members?",
+        "VAT_ES": "Ustedes, los ricos, lloren y giman por las desgracias que les van a sobrevenir.",
+        "CEI": "All'angelo della Chiesa di Sardi scrivi: Così parla Colui che possiede i sette spiriti di Dio e le sette stelle: Conosco le tue opere; ti si crede vivo e invece sei morto."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Ἐπιθυμεῖτε, καὶ οὐκ ἔχετε· φονεύετε καὶ ζηλοῦτε, καὶ οὐ δύνασθε ἐπιτυχεῖν· μάχεσθε καὶ πολεμεῖτε, οὐκ ἔχετε διὰ τὸ μὴ αἰτεῖσθαι ὑμᾶς·",
+        "VUL": "concupiscitis, et non habetis : occiditis, et zelatis : et non potestis adipisci : litigatis, et belligeratis, et non habetis, propter quod non postulatis.",
+        "SYN": "Желаете -- и не имеете; убиваете и завидуете -- и не можете достигнуть; препираетесь и враждуете -- и не имеете, потому что не просите.",
+        "NEO": "Vous convoitez, et vous n’avez pas ; vous êtes meurtriers, vous êtes jaloux, et vous n’arrivez pas à obtenir ; vous êtes dans un état de lutte et de guerre ; et vous n’obtenez pas, parce que vous ne demandez pas ;",
+        "NAB": "You covet but do not possess. You kill and envy but you cannot obtain; you fight and wage war. You do not possess because you do not ask.",
+        "VAT_ES": "Porque sus riquezas se han echado a perder y sus vestidos están roídos por la polilla.",
+        "CEI": "Svegliati e rinvigorisci ciò che rimane e sta per morire, perché non ho trovato le tue opere perfette davanti al mio Dio."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "αἰτεῖτε, καὶ οὐ λαμβάνετε, διότι κακῶς αἰτεῖσθε, ἵνα ἐν ταῖς ἡδοναῖς ὑμῶν δαπανήσητε.",
+        "VUL": "Petitis, et non accipitis : eo quod male petatis : ut in concupiscentiis vestris insumatis.",
+        "SYN": "Просите, и не получаете, потому что просите не на добро, а чтобы употребить для ваших вожделений.",
+        "NEO": "vous demandez, et vous ne recevez pas, parce que vous demandez mal, avec l’intention de satisfaire vos passions.",
+        "NAB": "You ask but do not receive, because you ask wrongly, to spend it on your passions.",
+        "VAT_ES": "Su oro y su plata se han herrumbrado, y esa herrumbre dará testimonio contra ustedes y devorará sus cuerpos como un fuego. &iexcl;Ustedes han amontonado riquezas, ahora que es el tiempo final!",
+        "CEI": "Ricorda dunque come hai accolto la parola, osservala e ravvediti, perché se non sarai vigilante, verrò come un ladro senza che tu sappia in quale ora io verrò da te."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Μοιχοὶ καὶ μοιχαλίδες, οὐκ οἴδατε ὅτι ἡ φιλία τοῦ κόσμου ἔχθρα τοῦ θεοῦ ἐστίν; Ὃς ἂν οὖν βουληθῇ φίλος εἶναι τοῦ κόσμου, ἐχθρὸς τοῦ θεοῦ καθίσταται.",
+        "VUL": "Adulteri, nescitis quia amicitia hujus mundi inimica est Dei ? quicumque ergo voluerit amicus esse sæculi hujus, inimicus Dei constituitur.",
+        "SYN": "Прелюбодеи и прелюбодейцы! не знаете ли, что дружба с миром есть вражда против Бога? Итак, кто хочет быть другом миру, тот становится врагом Богу.",
+        "NEO": "Adultères, ne savez-vous pas que l’amitié du monde c’est l’inimitié contre Dieu ? Quiconque veut être ami du monde se rend ennemi de Dieu.",
+        "NAB": "Adulterers! Do you not know that to be a lover of the world means enmity with God? Therefore, whoever wants to be a lover of the world makes himself an enemy of God.",
+        "VAT_ES": "Sepan que el salario que han retenido a los que trabajaron en sus campos está clamando, y el clamor de los cosechadores ha llegado a los oídos del Señor del universo.",
+        "CEI": "Tuttavia a Sardi vi sono alcuni che non hanno macchiato le loro vesti; essi mi scorteranno in vesti bianche, perché ne sono degni."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ἢ δοκεῖτε ὅτι κενῶς ἡ γραφὴ λέγει; Πρὸς φθόνον ἐπιποθεῖ τὸ πνεῦμα ὃ κατῴκησεν ἐν ἡμῖν.",
+        "VUL": "An putatis quia inaniter Scriptura dicat : Ad invidiam concupiscit spiritus qui habitat in vobis ?",
+        "SYN": "Или вы думаете, что напрасно говорит Писание: \"до ревности любит дух, живущий в нас\"?",
+        "NEO": "Ou bien pensez-vous que l’Écriture dise en vain : « C’est jusqu’à la jalousie que vous aime l’Esprit qu’il a mis en vous ? »+ 4:5 IV, 5-6. Au lieu de κατῴκισεν d’autres disent κατῴκησεν et entendent spiritus de l’Esprit-Saint : \\+qt Pensez-vous que l’Écriture parle en vain ? L’Esprit\\+qt*-Saint, \\+qt qui habite en vous, aimerait-il l’envie ?\\+qt* Non certes ; \\+qt il donne\\+qt* (il inspire) \\+qt une grâce meilleure\\+qt*, l’humilité, \\+qt selon ce que dit l’Écriture : « Dieu résiste aux orgueilleux »\\+qt* (Prov. iii, 34), etc.Vulgate : \\+qt Pensez-vous que l’Écriture dise en vain : « l’Esprit qui habite en vous tend\\+qt* (est naturellement porté) \\+qt à l’envie ?\\+qt* » Non ; mais elle donne (inspire) \\+qt une grâce plus excellente\\+qt* l’humilité, \\+qt lorsqu’elle dit\\+qt*, etc.*",
+        "NAB": "Or do you suppose that the scripture speaks without meaning when it says, \"The spirit that he has made to dwell in us tends toward jealousy\"?",
+        "VAT_ES": "Ustedes llevaron en este mundo una vida de lujo y de placer, y se han cebado a sí mismos para el día de la matanza.",
+        "CEI": "Il vincitore sarà dunque vestito di bianche vesti, non cancellerò il suo nome dal libro della vita, ma lo riconoscerò davanti al Padre mio e davanti ai suoi angeli."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Μείζονα δὲ δίδωσιν χάριν· διὸ λέγει, Ὁ θεὸς ὑπερηφάνοις ἀντιτάσσεται, ταπεινοῖς δὲ δίδωσιν χάριν.",
+        "VUL": "majorem autem dat gratiam. Propter quod dicit : Deus superbis resistit, humilibus autem dat gratiam.",
+        "SYN": "Но тем большую дает благодать; посему и сказано: Бог гордым противится, а смиренным дает благодать.",
+        "NEO": "Mais il donne une grâce d’autant plus grande, selon ce que dit l’Écriture : « Dieu résiste aux orgueilleux, et il accorde sa grâce aux humbles. »",
+        "NAB": "But he bestows a greater grace; therefore, it says: \"God resists the proud, but gives grace to the humble.\"",
+        "VAT_ES": "Han condenado y han matado al justo, sin que él les opusiera resistencia.",
+        "CEI": "Chi ha orecchi, ascolti ciò che lo Spirito dice alle Chiese."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ὑποτάγητε οὖν τῷ θεῷ· ἀντίστητε δὲ τῷ διαβόλῳ, καὶ φεύξεται ἀφ’ ὑμῶν.",
+        "VUL": "Subditi ergo estote Deo, resistite autem diabolo, et fugiet a vobis.",
+        "SYN": "Итак покоритесь Богу; противостаньте диаволу, и убежит от вас.",
+        "NEO": "Soumettez-vous donc à Dieu ; résistez au diable, et il s’enfuira de vous.",
+        "NAB": "So submit yourselves to God. Resist the devil, and he will flee from you.",
+        "VAT_ES": "Tengan paciencia, hermanos, hasta que llegue el Señor. Miren cómo el sembrador espera el fruto precioso de la tierra, aguardando pacientemente hasta que caigan las lluvias del otoño y de la primavera.",
+        "CEI": "All'angelo della Chiesa di Filadelfia scrivi: Così parla il Santo, il Verace, Colui che ha la chiave di Davide: quando egli apre nessuno chiude, e quando chiude nessuno apre."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἐγγίσατε τῷ θεῷ, καὶ ἐγγιεῖ ὑμῖν· καθαρίσατε χεῖρας, ἁμαρτωλοί, καὶ ἁγνίσατε καρδίας, δίψυχοι.",
+        "VUL": "Appropinquate Deo, et appropinquabit vobis. Emundate manus, peccatores : et purificate corda, duplices animo.",
+        "SYN": "Приблизьтесь к Богу, и приблизится к вам; очистите руки, грешники, исправьте сердца, двоедушные.",
+        "NEO": "Approchez-vous de Dieu, et il s’approchera de vous. Nettoyez vos mains, pécheurs ; purifiez vos cœurs, hommes à l’âme double.",
+        "NAB": "Draw near to God, and he will draw near to you. Cleanse your hands, you sinners, and purify your hearts, you of two minds.",
+        "VAT_ES": "Tengan paciencia y anímense, porque la Venida del Señor está próxima.",
+        "CEI": "Conosco le tue opere. Ho aperto davanti a te una porta che nessuno può chiudere. Per quanto tu abbia poca forza, pure hai osservato la mia parola e non hai rinnegato il mio nome."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Ταλαιπωρήσατε καὶ πενθήσατε καὶ κλαύσατε· ὁ γέλως ὑμῶν εἰς πένθος μεταστραφήτω, καὶ ἡ χαρὰ εἰς κατήφειαν.",
+        "VUL": "Miseri estote, et lugete, et plorate : risus vester in luctum convertatur, et gaudium in mrorem.",
+        "SYN": "Сокрушайтесь, плачьте и рыдайте; смех ваш да обратится в плач, и радость -- в печаль.",
+        "NEO": "Sentez votre misère ; prenez le deuil, et pleurez : que votre rire se change en pleurs, et votre joie en tristesse.",
+        "NAB": "Begin to lament, to mourn, to weep. Let your laughter be turned into mourning and your joy into dejection.",
+        "VAT_ES": "Hermanos, no se quejen los unos de los otros, para no ser condenados. Miren que el Juez ya está a la puerta.",
+        "CEI": "Ebbene, ti faccio dono di alcuni della sinagoga di satana - di quelli che si dicono Giudei, ma mentiscono perché non lo sono -: li farò venire perché si prostrino ai tuoi piedi e sappiano che io ti ho amato."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Ταπεινώθητε ἐνώπιον τοῦ κυρίου, καὶ ὑψώσει ὑμᾶς.",
+        "VUL": "Humiliamini in conspectu Domini, et exaltabit vos.",
+        "SYN": "Смиритесь пред Господом, и вознесет вас.",
+        "NEO": "Humiliez-vous devant le Seigneur, et il vous élèvera.",
+        "NAB": "Humble yourselves before the Lord and he will exalt you.",
+        "VAT_ES": "Tomen como ejemplo de fortaleza y de paciencia a los profetas que hablaron en nombre del Señor.",
+        "CEI": "Poiché hai osservato con costanza la mia parola, anch'io ti preserverò nell'ora della tentazione che sta per venire sul mondo intero, per mettere alla prova gli abitanti della terra."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "¶Μὴ καταλαλεῖτε ἀλλήλων, ἀδελφοί. Ὁ καταλαλῶν ἀδελφοῦ, καὶ κρίνων τὸν ἀδελφὸν αὐτοῦ, καταλαλεῖ νόμου, καὶ κρίνει νόμον· εἰ δὲ νόμον κρίνεις, οὐκ εἶ ποιητὴς νόμου, ἀλλὰ κριτής.",
+        "VUL": "Nolite detrahere alterutrum fratres. Qui detrahit fratri, aut qui judicat fratrem suum, detrahit legi, et judicat legem. Si autem judicas legem, non es factor legis, sed judex.",
+        "SYN": "Не злословьте друг друга, братия: кто злословит брата или судит брата своего, того злословит закон и судит закон; а если ты судишь закон, то ты не исполнитель закона, но судья.",
+        "NEO": "Frères, ne dites pas de mal les uns des autres. Celui qui parle mal de son frère ou qui juge son frère, parle mal de la loi et juge la loi. Or, si tu juges la loi, tu n’es plus un observateur de la loi, mais tu t’en fais juge.",
+        "NAB": "Do not speak evil of one another, brothers. Whoever speaks evil of a brother or judges his brother speaks evil of the law and judges the law. If you judge the law, you are not a doer of the law but a judge.",
+        "VAT_ES": "Porque nosotros llamamos felices a los que sufrieron con paciencia. Ustedes oyeron hablar de la paciencia de Job, y saben lo que hizo el Señor con él, porque el Señor es compasivo y misericordioso.",
+        "CEI": "Verrò presto. Tieni saldo quello che hai, perché nessuno ti tolga la corona."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Εἷς ἐστὶν ὁ νομοθέτης, ὁ δυνάμενος σῶσαι καὶ ἀπολέσαι· σὺ δὲ τίς εἶ ὃς κρίνεις τὸν ἕτερον;",
+        "VUL": "Unus est legislator et judex, qui potest perdere et liberare.",
+        "SYN": "Един Законодатель и Судия, могущий спасти и погубить; а ты кто, который судишь другого?",
+        "NEO": "Il n’y a qu’un seul législateur et qu’un seul juge, celui qui a la puissance de sauver et de perdre.+ 4:12 12. Matth. x, 28.*",
+        "NAB": "There is one lawgiver and judge who is able to save or to destroy. Who then are you to judge your neighbor?",
+        "VAT_ES": "Pero ante todo, hermanos, no juren ni por el cielo, ni por la tierra, ni de ninguna manera: que cuando digan «sí», sea sí; y cuando digan «no», sea no, para no ser condenados.",
+        "CEI": "Il vincitore lo porrò come una colonna nel tempio del mio Dio e non ne uscirà mai più. Inciderò su di lui il nome del mio Dio e il nome della città del mio Dio, della nuova Gerusalemme che discende dal cielo, da presso il mio Dio, insieme con il mio nome nuovo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "¶Ἄγε νῦν οἱ λέγοντες, Σήμερον καὶ αὔριον πορευσώμεθα εἰς τήνδε τὴν πόλιν, καὶ ποιήσωμεν ἐκεῖ ἐνιαυτὸν ἕνα, καὶ ἐμπορευσώμεθα, καὶ κερδήσωμεν·",
+        "VUL": "Tu autem quis es, qui judicas proximum ? Ecce nunc qui dicitis : Hodie, aut crastino ibimus in illam civitatem, et faciemus ibi quidem annum, et mercabimur, et lucrum faciemus :",
+        "SYN": "Теперь послушайте вы, говорящие: \"сегодня или завтра отправимся в такой-то город, и проживем там один год, и будем торговать и получать прибыль\";",
+        "NEO": "Mais qui es-tu, toi qui juges le prochain ?",
+        "NAB": "Come now, you who say, \"Today or tomorrow we shall go into such and such a town, spend a year there doing business, and make a profit\" -",
+        "VAT_ES": "Si alguien está afligido, que ore. Si está alegre, que cante salmos.",
+        "CEI": "Chi ha orecchi, ascolti ciò che lo Spirito dice alle Chiese."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "οἵτινες οὐκ ἐπίστασθε τὸ τῆς αὔριον. Ποία γὰρ ἡ ζωὴ ὑμῶν; Ἀτμὶς γὰρ ἔσται ἡ πρὸς ὀλίγον φαινομένη, ἔπειτα δὲ καὶ ἀφανιζομένη.",
+        "VUL": "qui ignoratis quid erit in crastino.",
+        "SYN": "вы, которые не знаете, что случится завтра: ибо что такое жизнь ваша? пар, являющийся на малое время, а потом исчезающий.",
+        "NEO": "— vous qui ne savez pas ce qui arrivera demain ; —+ 4:14 14. Prov. xxvii, 1.*",
+        "NAB": "you have no idea what your life will be like tomorrow. You are a puff of smoke that appears briefly and then disappears.",
+        "VAT_ES": "Si está enfermo, que llame a los presbíteros de la Iglesia, para que oren por él y lo unjan con óleo en el nombre del Señor.",
+        "CEI": "All'angelo della Chiesa di Laodicèa scrivi: Così parla l'Amen, il Testimone fedele e verace, il Principio della creazione di Dio:"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ἀντὶ τοῦ λέγειν ὑμᾶς, Ἐὰν ὁ κύριος θελήσῃ, καὶ ζήσωμεν, καὶ ποιήσωμεν τοῦτο ἢ ἐκεῖνο.",
+        "VUL": "Quæ est enim vita vestra ? vapor est ad modicum parens, et deinceps exterminabitur ; pro eo ut dicatis : Si Dominus voluerit. Et : Si vixerimus, faciemus hoc, aut illud.",
+        "SYN": "Вместо того, чтобы вам говорить: \"если угодно будет Господу и живы будем, то сделаем то или другое\", --",
+        "NEO": "car qu’est-ce que votre vie ? Vous êtes une vapeur qui paraît un instant et s’évanouit ensuite : — au lieu de dire : « Si le Seigneur le veut », ou : « Si nous sommes en vie, nous ferons ceci ou cela. »+ 4:15 15. Comp. Job, viii, 9.*",
+        "NAB": "Instead you should say, \"If the Lord wills it, we shall live to do this or that.\"",
+        "VAT_ES": "La oración que nace de la fe salvará al enfermo, el Señor lo aliviará, y si tuviera pecados, le serán perdonados.",
+        "CEI": "Conosco le tue opere: tu non sei né freddo né caldo. Magari tu fossi freddo o caldo!"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Νῦν δὲ καυχᾶσθε ἐν ταῖς ἀλαζονείαις ὑμῶν· πᾶσα καύχησις τοιαύτη πονηρά ἐστιν.",
+        "VUL": "Nunc autem exsultatis in superbiis vestris. Omnis exsultatio talis, maligna est.",
+        "SYN": "вы, по своей надменности, тщеславитесь: всякое такое тщеславие есть зло.",
+        "NEO": "Mais maintenant vous vous vantez dans votre présomption. Toute jactance de cette sorte est mauvaise.",
+        "NAB": "But now you are boasting in your arrogance. All such boasting is evil.",
+        "VAT_ES": "Confiesen mutuamente sus pecados y oren los unos por los otros, para ser curados. La oración perseverante del justo es poderosa.",
+        "CEI": "Ma poiché sei tiepido, non sei cioè né freddo né caldo, sto per vomitarti dalla mia bocca."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Εἰδότι οὖν καλὸν ποιεῖν καὶ μὴ ποιοῦντι, ἁμαρτία αὐτῷ ἐστίν.",
+        "VUL": "Scienti igitur bonum facere, et non facienti, peccatum est illi.",
+        "SYN": "Итак, кто разумеет делать добро и не делает, тому грех.",
+        "NEO": "Celui donc qui sait faire ce qui est bien et qui ne le fait pas, commet un péché.",
+        "NAB": "So for one who knows the right thing to do and does not do it, it is a sin.",
+        "VAT_ES": "Elías era un hombre como nosotros, y sin embargo, cuando oró con insistencia para que no lloviera, no llovió sobre la tierra durante tres años y seis meses.",
+        "CEI": "Tu dici: \"Sono ricco, mi sono arricchito; non ho bisogno di nulla\", ma non sai di essere un infelice, un miserabile, un povero, cieco e nudo."
+      }
+    }
+  }
+}

@@ -1,0 +1,574 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_018",
+  "book_key": "ECCLU",
+  "sequence": 18,
+  "chapter_in": {
+    "MT": 18,
+    "VUL": 18,
+    "LXX": 18
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Ὁ ζῶν εἰς τὸν αἰῶνα ἔκτισεν τὰ πάντα κοινῇ·",
+        "VUL": "[Qui vivit in æternum creavit omnia simul./ Deus solus justificabitur,/ et manet invictus rex in æternum./",
+        "SYN": "Все вообще создал Живущий вовеки; Господь один праведен.",
+        "NEO": "Celui qui vit éternellement a tout créé sans exception ;",
+        "NAB": "The Eternal is the judge of all things without exception; the LORD alone is just.",
+        "VAT_ES": "El que vive para siempre creó todas las cosas por igual;",
+        "CEI": "Colui che vive per sempre ha creato l'intero universo."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "Κύριος μόνος δικαιωθήσεται.",
+        "VUL": "Quis sufficit enarrare opera illius ?/",
+        "SYN": "Никому не предоставил Он изъяснять дела Его.",
+        "NEO": "le Seigneur seul est juste.",
+        "NAB": "Whom has he made equal to describing his works, and who can probe his mighty deeds?",
+        "VAT_ES": "sólo el Señor será hallado justo y no hay otro fuera de él.",
+        "CEI": "Il Signore soltanto è riconosciuto giusto."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "quis enim investigabit magnalia ejus ?/",
+        "SYN": "И кто может исследовать великие дела Его?",
+        "NEO": "Il n’a donné à personne de raconter ses œuvres ; et qui pourra découvrir ses grandeurs ?",
+        "NAB": "Who can measure his majestic power, or exhaust the tale of his mercies?",
+        "VAT_ES": "El gobierna el mundo con la palma de la mano y todo obedece a su voluntad, ya que él, por su poder, es el Rey de todas las cosas y separa las sagradas de las profanas.",
+        "CEI": "A nessuno è possibile svelare le sue opere e chi può indagare le sue grandezze?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "οὐθενὶ ἐξεποίησεν ἐξαγγεῖλαι τὰ ἔργα αὐτοῦ· καὶ τίς ἐξιχνιάσει τὰ μεγαλεῖα αὐτοῦ;",
+        "VUL": "virtutem autem magnitudinis ejus quis enuntiabit ?/ aut quis adjiciet enarrare misericordiam ejus ?/",
+        "SYN": "Кто может измерить силу величия Его? и кто может также изречь милости Его?",
+        "NEO": "Qui exprimera la toute-puissance de sa majesté, et qui encore redira ses miséricordes ?",
+        "NAB": "One cannot lessen, nor increase, nor penetrate the wonders of the LORD.",
+        "VAT_ES": "A nadie le dio el poder de anunciar sus obras: &iquest;quién rastreará su grandeza?",
+        "CEI": "La potenza della sua maestà chi potrà misurarla? Chi riuscirà a narrare le sue misericordie?"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "κράτος μεγαλωσύνης αὐτοῦ τίς ἐξαριθμήσεται; καὶ τίς προσθήσει ἐκδιηγήσασθαι τὰ ἐλέη αὐτοῦ;",
+        "VUL": "Non est minuere neque adjicere,/ nec est invenire magnalia Dei./",
+        "SYN": "Невозможно ни умалить, ни увеличить, и невозможно исследовать дивных дел Господа.",
+        "NEO": "Rien à diminuer, rien à ajouter ; impossible de pénétrer les merveilles du Seigneur.",
+        "NAB": "When a man ends he is only beginning, and when he stops he is still bewildered.",
+        "VAT_ES": "&iquest;Quién podrá medir la magnitud de su fuerza y quién pretenderá narrar sus misericordias?",
+        "CEI": "Non c'è nulla da togliere e nulla da aggiungere; non è possibile indagare le meraviglie del Signore."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "οὐκ ἔστιν ἐλαττῶσαι οὐδὲ προσθεῖναι, καὶ οὐκ ἔστιν ἐξιχνιάσαι τὰ θαυμάσια τοῦ κυρίου·",
+        "VUL": "Cum consummaverit homo, tunc incipiet :/ et cum quieverit, aporiabitur./",
+        "SYN": "Когда человек окончил бы, тогда он только начинает, и когда перестанет, придет в изумление.",
+        "NEO": "Quand l’homme a fini de chercher, il n’est qu’au commencement, et, quand il s’arrête, il ne sait que penser.",
+        "NAB": "What is man, of what worth is he? the good, the evil in him, what are these?",
+        "VAT_ES": "No hay nada que quitar, nada que añadir, y es imposible rastrear las maravillas del Señor.",
+        "CEI": "Quando uno ha finito, allora comincia; quando si ferma, allora rimane perplesso."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "ὅταν συντελέσῃ ἄνθρωπος τότε ἄρχεται, καὶ ὅταν παύσηται τότε ἀπορηθήσεται.",
+        "VUL": "Quid est homo ? et quæ est gratia illius ?/ et quid bonum aut quid nequam illius ?/",
+        "SYN": "Что есть человек и что польза его? что благо его и что зло его?",
+        "NEO": "Qu’est-ce que l’homme et à quoi est-il bon ? Quel est son bonheur et quel est son malheur ?",
+        "NAB": "The sum of a man's days is great if it reaches a hundred years:",
+        "VAT_ES": "Cuando el hombre llega al fin, está sólo al comienzo; cuando se detiene, no sale de su estupor.",
+        "CEI": "Che è l'uomo? E a che può servire? Qual è il suo bene e qual è il suo male?"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "τί ἄνθρωπος καὶ τί ἡ χρῆσις αὐτοῦ; τί τὸ ἀγαθὸν αὐτοῦ, καὶ τί τὸ κακὸν αὐτοῦ;",
+        "VUL": "Numerus dierum hominum, ut multum centum anni,/ quasi gutta aquæ maris deputati sunt :/ et sicut calculus arenæ, sic exigui anni in die ævi./",
+        "SYN": "Число дней человека - много, если сто лет: как капля воды из моря или крупинка песка, так малы лета его в дне вечности.",
+        "NEO": "Le nombre des jours de l’homme est au plus de cent ans.",
+        "NAB": "Like a drop of sea water, like a grain of sand, so are these few years among the days of eternity.",
+        "VAT_ES": "&iquest;Qué es el hombre? &iquest;Para qué sirve? &iquest;Cuál es su bien y cuál es su mal?",
+        "CEI": "Quanto al numero dei giorni dell'uomo, cento anni sono già molti."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "ἀριθμὸς ἡμερῶν ἀνθρώπου πολλὰ ἔτη ἑκατόν·",
+        "VUL": "Propter hoc patiens est Deus in illis,/ et effundit super eos misericordiam suam./",
+        "SYN": "Посему Господь долготерпелив к людям и изливает на них милость Свою.",
+        "NEO": "Comme une goutte d’eau prise dans la mer et comme un grain de sable, ainsi ses quelques années au jour de l’éternité.",
+        "NAB": "That is why the LORD is patient with men and showers upon them his mercy.",
+        "VAT_ES": "La vida de un hombre dura cien años a lo más:",
+        "CEI": "Come una goccia d'acqua nel mare e un grano di sabbia così questi pochi anni in un giorno dell'eternità."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ὡς σταγὼν ὕδατος ἀπὸ θαλάσσης καὶ ψῆφος ἄμμου, οὕτως ὀλίγα ἔτη ἐν ἡμέρᾳ αἰῶνος.",
+        "VUL": "Vidit præsumptionem cordis eorum, quoniam mala est :/ et cognovit subversionem illorum, quoniam nequam est./",
+        "SYN": "Он видит и знает, что конец их очень бедствен,",
+        "NEO": "C’est pourquoi le Seigneur est patient à l’égard des hommes et il répand sur eux sa miséricorde.",
+        "NAB": "He sees and understands that their death is grievous, and so he forgives them all the more.",
+        "VAT_ES": "como una gota del mar y como un grano de arena, son sus pocos años frente a la eternidad.",
+        "CEI": "Per questo il Signore è paziente con gli uomini e riversa su di essi la sua misericordia."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "διὰ τοῦτο ἐμακροθύμησεν Κύριος ἐπ’ αὐτοῖς, καὶ ἐξέχεεν ἐπ’ αὐτοὺς τὸ ἔλεος αὐτοῦ·",
+        "VUL": "Ideo adimplevit propitiationem suam in illis,/ et ostendit eis viam æquitatis./",
+        "SYN": "и потому умножает милости Свои.",
+        "NEO": "Il voit et il reconnaît que leur fin est déplorable ; c’est pourquoi il est libéral à pardonner.",
+        "NAB": "Man may be merciful to his fellow man, but the LORD'S mercy reaches all flesh,",
+        "VAT_ES": "Por eso el Señor es paciente con ellos y derrama sobre ellos su misericordia.",
+        "CEI": "Vede e conosce che la loro sorte è misera, per questo moltiplica il perdono."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "ἴδεν καὶ ἐπέγνω τὴν καταστροφὴν αὐτῶν ὅτι πονηρά, διὰ τοῦτο ἐπλήθυνεν τὸν ἐξιλασμὸν αὐτοῦ.",
+        "VUL": "Miseratio hominis circa proximum suum :/ misericordia autem Dei super omnem carnem./",
+        "SYN": "Милость человека - к ближнему его, а милость Господа - на всякую плоть.",
+        "NEO": "La miséricorde de l’homme s’exerce envers son prochain, mais la miséricorde de Dieu s’étend à toute chair. Il reprend, il corrige, il instruit, et ramène au bercail, comme le berger son troupeau.",
+        "NAB": "Reproving, admonishing, teaching, as a shepherd guides his flock;",
+        "VAT_ES": "El ve y conoce qué miserable es su fin, y por eso multiplica su perdón.",
+        "CEI": "La misericordia dell'uomo riguarda il prossimo, la misericordia del Signore ogni essere vivente."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "ἔλεος ἀνθρώπου ἐπὶ τὸν πλησίον αὐτοῦ, ἔλεος δὲ Κυρίου ἐπὶ πᾶσαν σάρκα· ἐλέγχων καὶ παιδεύων καὶ διδάσκων καὶ ἐπιστρέφων ὡς ποιμὴν τὸ ποίμνιον αὐτοῦ.",
+        "VUL": "Qui misericordiam habet, docet et erudit/ quasi pastor gregem suum./",
+        "SYN": "Он обличает и вразумляет, и поучает и обращает, как пастырь стадо свое.",
+        "NEO": "Il a pitié de ceux qui reçoivent la correction, et de ceux qui s’empressent d’accomplir ses préceptes.",
+        "NAB": "Merciful to those who accept his guidance, who are diligent in his precepts.",
+        "VAT_ES": "El hombre sólo tiene misericordia de su prójimo, pero el Señor es misericordioso con todos los vivientes. El reprende, corrige y enseña, y los hace volver como el pastor a su rebaño.",
+        "CEI": "Egli rimprovera, corregge, ammaestra e guida come un pastore il suo gregge."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "τοὺς ἐκδεχομένους παιδείαν ἐλεᾷ, καὶ τοὺς κατασπεύδοντας ἐπὶ τὰ κρίματα αὐτοῦ.",
+        "VUL": "Miseretur excipientis doctrinam miserationis,/ et qui festinat in judiciis ejus.]",
+        "SYN": "Он милует принимающих вразумление и усердно обращающихся к закону Его.",
+        "NEO": "Mon fils, à tes bienfaits n’ajoute pas l’injure, ni à tous tes dons les paroles qui excitent la tristesse.",
+        "NAB": "My son, to your charity add no reproach, nor spoil any gift by harsh words.",
+        "VAT_ES": "El tiene misericordia con los que aceptan la instrucción y está siempre dispuestos a cumplir sus decretos.",
+        "CEI": "Ha pietà di quanti accettano la dottrina e di quanti sono zelanti per le sue decisioni."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "Τέκνον, ἐν ἀγαθοῖς μὴ δῷς μῶμον, καὶ ἐν πάσῃ δόσει λύπην λόγων.",
+        "VUL": "[Fili, in bonis non des querelam,/ et in omni dato non des tristitiam verbi mali./",
+        "SYN": "Сын мой! при благотворениях не делай упреков, и при всяком даре не оскорбляй словами.",
+        "NEO": "La rosée ne rafraîchit-elle pas les ardeurs du vent ? De même une parole vaut mieux qu’un don.",
+        "NAB": "Like dew that abates a burning wind, so does a word improve a gift.",
+        "VAT_ES": "Hijo mío, no eches en cara los beneficios que haces ni acompañes tus dones con palabras ofensivas.",
+        "CEI": "Figlio, ai benefici non aggiungere il rimprovero, e a ogni dono parole amare."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "οὐχὶ καύσωνα ἀναπαύσει δρόσος; οὕτως κρείσσων λόγος ἢ δόσις,",
+        "VUL": "Nonne ardorem refrigerabit ros ?/ sic et verbum melius quam datum./",
+        "SYN": "Роса не охлаждает ли зноя? так слово - лучше, нежели даяние.",
+        "NEO": "Ne vois-tu pas que la parole est meilleure que le don ? L’homme gracieux unit les deux ensemble.",
+        "NAB": "Sometimes the word means more than the gift; both are offered by a kindly man.",
+        "VAT_ES": "&iquest;No calma el rocío el calor ardiente? Así, una buena palabra puede más que un regalo.",
+        "CEI": "La rugiada non mitiga forse il calore? Così una parola è più pregiata del dono."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "οὐκ ἰδοὺ λόγος ὑπὲρ δόμα ἀγαθόν; καὶ ἀμφότερα παρὰ ἀνδρὶ κεχαριτωμένῳ·",
+        "VUL": "Nonne ecce verbum super datum bonum ?/ sed utraque cum homine justificato./",
+        "SYN": "Поэтому не выше ли доброго даяния слово? а у человека доброжелательного и то и другое.",
+        "NEO": "L’insensé fait d’aigres reproches, et le don de l’envieux dessèche les yeux.",
+        "NAB": "Only a fool upbraids before giving; a grudging gift wears out the expectant eyes.",
+        "VAT_ES": "&iquest;Acaso no vale más una palabra que un obsequio? Pero el hombre caritativo sabe unir las dos cosas.",
+        "CEI": "Ecco, non vale una parola più di un ricco dono? L'uomo caritatevole offre l'una e l'altro."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "μωρὸς ἀχαρίστως ὀνειδιεῖ, καὶ δόσις βασκάνου ἐκτήκει ὀφθαλμούς.",
+        "VUL": "Stultus acriter improperabit :/ et datus indisciplinati tabescere facit oculos./",
+        "SYN": "Глупый немилосердно укоряет, и подаяние неблагорасположенного иссушает глаза.",
+        "NEO": "Avant de parler, instruis-toi ; avant la maladie, soigne-toi.",
+        "NAB": "Be informed before speaking; before sickness prepare the cure.",
+        "VAT_ES": "El necio reprende sin ningún miramiento y el don del avaro hace correr las lágrimas.",
+        "CEI": "Lo stolto rimprovera senza riguardo, il dono dell'invidioso fa languire gli occhi."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "πρὶν ἢ λαλῆσαι μάνθανε, καὶ πρὸ ἀρρωστείας θεραπεύου·",
+        "VUL": "Ante judicium para justitiam tibi,/ et antequam loquaris, disce./",
+        "SYN": "Прежде, нежели начнешь говорить, обдумывай, и прежде болезни заботься о себе.",
+        "NEO": "Avant le jugement, examine-toi, et, à l’heure de l’enquête, tu trouveras grâce.",
+        "NAB": "Before you are judged, seek merit for yourself, and at the time of visitation you will have a ransom.",
+        "VAT_ES": "Antes de hablar, instrúyete, y cuídate antes de caer enfermo.",
+        "CEI": "Prima di parlare, impara; curati ancor prima di ammalarti."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "πρὸ κρίσεως ἐξέταζε σεαυτόν, καὶ ἐν ὥρᾳ ἐπισκοπῆς εὑρήσεις ἐξιλασμόν·",
+        "VUL": "Ante languorem adhibe medicinam :/ et ante judicium interroga teipsum,/ et in conspectu Dei invenies propitiationem./",
+        "SYN": "Испытывай себя прежде суда, и во время посещения найдешь милость.",
+        "NEO": "Avant d’être malade, humilie-toi, et, quand tu es dans le péché, reviens à Dieu.",
+        "NAB": "Before you have fallen, humble yourself; when you have sinned, show repentance.",
+        "VAT_ES": "Antes de juzgar, examínate a ti mismo, y hallarás perdón cuando el Señor te visite.",
+        "CEI": "Prima del giudizio esamina te stesso, così al momento del verdetto troverai perdono."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "πρὶν ἀρρωστῆσαί σε ταπεινώθητι, καὶ ἐν καιρῷ ἁμαρτημάτων δεῖξον ἐπιστροφήν.",
+        "VUL": "Ante languorem humilia te,/ et in tempore infirmitatis ostende conversationem tuam./",
+        "SYN": "Прежде, нежели почувствуешь слабость, смиряйся, и во время грехов покажи обращение.",
+        "NEO": "Que rien ne t’empêche d’accomplir ton vœu dans le temps voulu, et n’attend pas jusqu’à la mort pour t’acquitter.",
+        "NAB": "Delay not to forsake sins, neglect it not till you are in distress.",
+        "VAT_ES": "Humíllate antes de caer enfermo y arrepiéntete apenas hayas pecado.",
+        "CEI": "Umìliati, prima di cadere malato, e quando hai peccato, mostra il pentimento."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "μὴ ἐμποδισθῇς τοῦ ἀποδοῦναι εὐχὴν εὐκαίρως, καὶ μὴ μείνῃς ἕως θανάτου δικαιωθῆναι·",
+        "VUL": "Non impediaris orare semper,/ et ne verearis usque ad mortem justificari,/ quoniam merces Dei manet in æternum./",
+        "SYN": "Ничто да не препятствует тебе исполнить обет благовременно, и не откладывай оправдания до смерти.",
+        "NEO": "Avant de faire un vœu, prépare-toi, et ne sois pas comme un homme qui tente le Seigneur.",
+        "NAB": "Let nothing prevent the prompt payment of your vows; wait not to fulfill them when you are dying.",
+        "VAT_ES": "Que nada te impida cumplir tus votos en el momento debido, y no esperes hasta la muerte para estar en regla.",
+        "CEI": "Nulla ti impedisca di soddisfare a tempo un voto, non aspettare fino alla morte per sdebitarti."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "πρὶν εὔξασθαι ἑτοίμασον σεαυτόν, καὶ μὴ γίνου ὡς ἄνθρωπος πειράζων τὸν κύριον.",
+        "VUL": "Ante orationem præpara animam tuam,/ et noli esse quasi homo qui tentat Deum./",
+        "SYN": "Прежде, нежели начнешь молиться, приготовь себя, и не будь как человек, искушающий Господа.",
+        "NEO": "Songe à la colère du dernier jour, au temps de la vengeance, où Dieu détournera son visage.",
+        "NAB": "Before making a vow have the means to fulfill it; be not one who tries the LORD.",
+        "VAT_ES": "Antes de hacer un voto, prepárate a cumplirlo, y no seas como un hombre que tienta al Señor.",
+        "CEI": "Prima di fare un voto prepara te stesso, non fare come un uomo che tenta il Signore."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "μνήσθητι θυμοῦ ἐν ἡμέραις τελευτῆς, καὶ καιρὸν ἐκδικήσεως ἐν ἀποστροφῇ προσώπου.",
+        "VUL": "Memento iræ in die consummationis,/ et tempus retributionis in conversatione faciei./",
+        "SYN": "Припоминай о гневе в день смерти и о времени отмщения, когда Господь отвратит лице Свое.",
+        "NEO": "Au temps de l’abondance, pense au temps de la faim ; aux jours de la richesse, pense à la pauvreté et à la disette.",
+        "NAB": "Think of wrath and the day of death, the time of vengeance when he will hide his face.",
+        "VAT_ES": "Recuerda la ira de los últimos días y el tiempo del castigo, cuando el Señor apartará su rostro.",
+        "CEI": "Pensa all'ira del giorno della morte, al tempo della vendetta, quando egli distoglierà lo sguardo da te."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "μνήσθητι καιρὸν λιμοῦ ἐν καιρῷ πλησμονῆς, πτωχείαν καὶ ἔνδειαν ἐν ἡμέραις πλούτου.",
+        "VUL": "Memento paupertatis in tempore abundantiæ,/ et necessitatum paupertatis in die divitiarum./",
+        "SYN": "Во время сытости вспоминай о времени голода и во дни богатства - о бедности и нужде.",
+        "NEO": "Du matin au soir le temps change : ainsi tout changement est rapide devant le Seigneur.",
+        "NAB": "Remember the time of hunger in the time of plenty, poverty and want in the day of wealth.",
+        "VAT_ES": "En tiempo de abundancia, recuerda el tiempo de hambre, y en los días de riqueza, la pobreza y la penuria.",
+        "CEI": "Pensa alla carestia nel tempo dell'abbondanza; alla povertà e all'indigenza nei giorni di ricchezza."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "ἀπὸ πρωίθεν ἕως ἑσπέρας μεταβάλλει καιρός, καὶ πάντα ἐστὶν ταχινὰ ἔναντι Κυρίου.",
+        "VUL": "A mane usque ad vesperam immutabitur tempus,/ et hæc omnia citata in oculis Dei./",
+        "SYN": "От утра до вечера изменяется время, и все скоротечно пред Господом.",
+        "NEO": "L’homme sage est en toute chose sur ses gardes ; aux jours de péché, il se préserve de la faute.",
+        "NAB": "Between morning and evening the weather changes; before the LORD all things are fleeting.",
+        "VAT_ES": "De la mañana a la tarde, el tiempo cambia, y todo pasa rápidamente delante del Señor.",
+        "CEI": "Dal mattino alla sera il tempo cambia; e tutto è effimero davanti al Signore."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "ἄνθρωπος σοφὸς ἐν παντὶ εὐλαβηθήσεται, καὶ ἐν ἡμέραις ἁμαρτιῶν προσέξει ἀπὸ πλημμελίας.",
+        "VUL": "Homo sapiens in omnibus metuet,/ et in diebus delictorum attendet ab inertia./",
+        "SYN": "Человек мудрый во всем будет осторожен и во дни грехов удержится от беспечности.",
+        "NEO": "Tout homme sensé connaît la sagesse, et rend hommage à celui qui l’a trouvée.",
+        "NAB": "A wise man is circumspect in all things; when sin is rife he keeps himself from wrongdoing.",
+        "VAT_ES": "El hombre sabio está siempre alerta, y en la ocasión de pecado, se cuida para no faltar.",
+        "CEI": "Un uomo saggio è circospetto in ogni cosa; nei giorni del peccato si astiene dalla colpa."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "πᾶς συνετὸς ἔγνω σοφίαν, καὶ τῷ εὑρόντι αὐτὴν δώσει ἐξομολόγησιν.",
+        "VUL": "Omnis astutus agnoscit sapientiam,/ et invenienti eam dabit confessionem./",
+        "SYN": "Всякий разумный познает премудрость и нашедшему ее воздаст хвалу.",
+        "NEO": "Ceux qui saisissent les discours des sages sont eux-mêmes des sages, et ils font pleuvoir les maximes parfaites.",
+        "NAB": "Any learned man should make wisdom known, and he who attains to her should declare her praise;",
+        "VAT_ES": "Todo hombre prudente conoce la sabiduría y rinde homenaje al que la encuentra.",
+        "CEI": "Ogni uomo assennato conosce la sapienza e a colui che l'ha trovata rende omaggio."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "συνετοὶ ἐν λόγοις καὶ αὐτοὶ ἐσοφίσαντο, καὶ ἀνώμβρησαν παροιμίας ἀκριβεῖς.",
+        "VUL": "Sensati in verbis et ipsi sapienter egerunt,/ et intellexerunt veritatem et justitiam,/ et impluerunt proverbia et judicia.]",
+        "SYN": "Рассудительные в словах и сами умудряются, и источают основательные притчи.",
+        "NEO": "Ne te laisse pas aller à tes convoitises, et garde-toi de tes désirs.",
+        "NAB": "Those trained in her words must show their wisdom, dispensing sound proverbs like life-giving waters.",
+        "VAT_ES": "Los que hablan con sensatez son sabios ellos mismos y derraman como lluvia proverbios acertados",
+        "CEI": "Quelli istruiti nel parlare anch'essi diventano saggi, fanno piovere massime eccellenti."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "Ἐγκράτεια ψυχῆς. Ὀπίσω τῶν ἐπιθυμιῶν σου μὴ πορεύου, καὶ ἀπὸ τῶν ὀρέξεών σου κωλύου·",
+        "VUL": "[Post concupiscentias tuas non eas,/ et a voluntate tua avertere./",
+        "SYN": "Не ходи вслед похотей твоих и воздерживайся от пожеланий твоих.",
+        "NEO": "Si tu accordes à ton âme la satisfaction de ses convoitises, elle fera de toi la risée de tes ennemis.",
+        "NAB": "Go not after your lusts, but keep your desires in check.",
+        "VAT_ES": "No te dejes guiar por tus pasiones, sino refrena tus deseos.",
+        "CEI": "Non seguire le passioni; poni un freno ai tuoi desideri."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "ἐὰν χορηγήσεις τῇ ψυχῇ σου εὐδοκίαν ἐπιθυμίας, ποιήσει σε ἐπίχαρμα τῶν ἐχθρῶν σου.",
+        "VUL": "Si præstes animæ tuæ concupiscentias ejus,/ faciet te in gaudium inimicis tuis./",
+        "SYN": "Если будешь доставлять душе твоей приятное для вожделений, то она сделает тебя потехою для врагов твоих.",
+        "NEO": "Ne mets pas ta joie dans l’abondance de la bonne chère, et ne lie pas société avec elle.",
+        "NAB": "If you satisfy your lustful appetites they will make you the sport of your enemies.",
+        "VAT_ES": "Si cedes a los impulsos de la pasión, ella hará de ti la irrisión de tus enemigos.",
+        "CEI": "Se ti concedi la soddisfazione della passione, essa ti renderà oggetto di scherno ai tuoi nemici."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "LXX": "μὴ εὐφραίνου ἐπὶ πολλῇ τρυφῇ, μὴ προσδεθῇς συμβολῇ αὐτῆς·",
+        "VUL": "Ne oblecteris in turbis nec in modicis :/ assidua enim est commissio illorum./",
+        "SYN": "Не ищи увеселения в большой роскоши и не привязывайся к пиршествам.",
+        "NEO": "Ne t’appauvris pas en donnant des banquets avec de l’argent emprunté, et quand tu n’as rien dans ta bourse.",
+        "NAB": "Have no joy in the pleasures of a moment which bring on poverty redoubled;",
+        "VAT_ES": "Que tu alegría no consista en darte todos los gustos ni te endeudes para pagar lo que ellos cuestan.",
+        "CEI": "Non godere una vita di piaceri, sua conseguenza è una doppia povertà."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "LXX": "μὴ γίνου πτωχὸς συμβολοκοπῶν ἐκ δανισμοῦ, καὶ οὐδέν σοί ἐστιν ἐν μαρσιππίῳ.",
+        "VUL": "Ne fueris mediocris in contentione ex fnore,/ et est tibi nihil in sacculo :/ eris enim invidus vitæ tuæ.]",
+        "SYN": "Не сделайся нищим, пиршествуя на занятые деньги, когда ничего нет у тебя в кошельке.",
+        "NAB": "Become not a glutton and a winebibber with nothing in your purse.",
+        "VAT_ES": "No te empobrezcas yendo de fiesta con dinero prestado, cuando no tienes nada en el bolsillo.",
+        "CEI": "Non impoverire scialacquando con denaro preso a prestito, quando non hai nulla nella borsa."
+      }
+    }
+  }
+}

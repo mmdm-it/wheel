@@ -1,0 +1,536 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_003",
+  "book_key": "ECCLU",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Ἐμοῦ τοῦ πατρὸς ἀκούσατε, τέκνα, καὶ οὕτως ποιήσατε, ἵνα σωθῆτε.",
+        "VUL": "[Filii sapientiæ ecclesia justorum,/ et natio illorum obedientia et dilectio./",
+        "SYN": "Дети, послушайте меня, отца, и поступайте так, чтобы вам спастись,",
+        "NEO": "Mes enfants, écoutez-moi, moi qui suis votre père, et faites en sorte que vous obteniez le salut.",
+        "NAB": "Children, pay heed to a father's right; do so that you may live.",
+        "VAT_ES": "Hijos, escúchenme a mí, que soy su padre; hagan lo que les digo, y así se salvarán.",
+        "CEI": "Figli, ascoltatemi, sono vostro padre; agite in modo da essere salvati."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ὁ γὰρ Κύριος ἐδόξασεν πατέρα ἐπὶ τέκνοις, καὶ κρίσιν μητρὸς ἐστερέωσεν ἐφ’ υἱοῖς.",
+        "VUL": "Judicium patris audite, filii,/ et sic facite, ut salvi sitis./",
+        "SYN": "ибо Господь возвысил отца над детьми и утвердил суд матери над сыновьями.",
+        "NEO": "Car le Seigneur veut que le père soit honoré par ses enfants, et il a affermi sur les fils l’autorité de la mère.",
+        "NAB": "For the LORD sets a father in honor over his children; a mother's authority he confirms over her sons.",
+        "VAT_ES": "Porque el Señor quiere que el padre sea respetado por sus hijos y confirmó el derecho de la madre sobre ellos.",
+        "CEI": "Il Signore vuole che il padre sia onorato dai figli, ha stabilito il diritto della madre sulla prole."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ὁ τιμῶν πατέρα ἐξιλάσεται ἁμαρτίας·",
+        "VUL": "Deus enim honoravit patrem in filiis :/ et judicium matris exquirens, firmavit in filios./",
+        "SYN": "Почитающий отца очистится от грехов,",
+        "NEO": "Celui qui honore son père expie ses péchés,",
+        "NAB": "He who honors his father atones for sins;",
+        "VAT_ES": "El que honra a su padre expía sus pecados",
+        "CEI": "Chi onora il padre espia i peccati;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "καὶ ὡς ὁ ἀποθησαυρίζων ὁ δοξάζων μητέρα αὐτοῦ.",
+        "VUL": "Qui diligit Deum exorabit pro peccatis,/ et continebit se ab illis,/ et in oratione dierum exaudietur./",
+        "SYN": "и уважающий мать свою - как приобретающий сокровища.",
+        "NEO": "et c’est amasser un trésor que d’honorer sa mère.",
+        "NAB": "he stores up riches who reveres his mother.",
+        "VAT_ES": "y el que respeta a su madre es como quien acumula un tesoro.",
+        "CEI": "chi riverisce la madre è come chi accumula tesori."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "ὁ τιμῶν πατέρα εὐφρανθήσεται ὑπὸ τέκνων, καὶ ὡς ὁ ἀποθησαυρίζων ὁ δοξάζων μητέρα αὐτοῦ· καὶ ἐν ἡμέρᾳ προσευχῆς αὐτοῦ εἰσακουσθήσεται.",
+        "VUL": "Et sicut qui thesaurizat,/ ita et qui honorificat matrem suam./",
+        "SYN": "Почитающий отца будет иметь радость от детей своих и в день молитвы своей будет услышан.",
+        "NEO": "Celui qui honore son père sera réjoui par ses enfants, et il sera exaucé au jour de sa prière.",
+        "NAB": "He who honors his father is gladdened by children, and when he prays he is heard.",
+        "VAT_ES": "El que honra a su padre encontrará alegría en sus hijos y cuando ore, será escuchado.",
+        "CEI": "Chi onora il padre avrà gioia dai propri figli e sarà esaudito nel giorno della sua preghiera."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ὁ δοξάζων πατέρα μακροημερεύσει, καὶ ὁ εἰσακούων Κυρίου ἀναπαύσει μητέρα αὐτοῦ,",
+        "VUL": "Qui honorat patrem suum jucundabitur in filiis,/ et in die orationis suæ exaudietur./",
+        "SYN": "Уважающий отца будет долгоденствовать, и послушный Господу успокоит мать свою.",
+        "NEO": "Celui qui honore son père aura de longs jours ; celui qui obéit au Seigneur donnera consolation à sa mère.",
+        "NAB": "He who reveres his father will live a long life; he obeys the LORD who brings comfort to his mother.",
+        "VAT_ES": "El que respeta a su padre tendrá larga vida y el que obedece al Señor da tranquilidad a su madre.",
+        "CEI": "Chi riverisce il padre vivrà a lungo; chi obbedisce al Signore dà consolazione alla madre."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "καὶ ὡς δεσπόταις δουλεύσει ἐν τοῖς γεννήσασιν αὐτόν.",
+        "VUL": "Qui honorat patrem suum vita vivet longiore,/ et qui obedit patri refrigerabit matrem./",
+        "SYN": "Боящийся Господа почтит отца и, как владыкам, послужит родившим его.",
+        "NEO": "[Celui qui craint le Seigneur honore ses parents ;] et sert comme des maîtres ceux qui lui ont donné le jour.",
+        "NAB": "He who fears the LORD honors his father, and serves his parents as rulers.",
+        "VAT_ES": "El que teme al Señor honra a su padre y sirve como a sus dueños a quienes le dieron la vida.",
+        "CEI": "Chi teme il Signore rispetta il padre e serve come padroni i genitori."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "ἐν ἔργῳ καὶ λόγῳ τίμα τὸν πατέρα σου, ἵνα ἐπέλθῃ σοι εὐλογία παρ’ αὐτοῦ·",
+        "VUL": "Qui timet Dominum honorat parentes,/ et quasi dominis serviet his qui se genuerunt./",
+        "SYN": "Делом и словом почитай отца твоего и мать, чтобы пришло на тебя благословение от них,",
+        "NEO": "En action et en parole honore ton père, afin que sa bénédiction vienne sur toi ;",
+        "NAB": "In word and deed honor your father that his blessing may come upon you;",
+        "VAT_ES": "Honra a tu padre con obras y de palabra, para que su bendición descienda sobre ti,",
+        "CEI": "Onora tuo padre a fatti e a parole, perché scenda su di te la sua benedizione."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "εὐλογία γὰρ πατρὸς στηρίζει οἴκους τέκνων, κατάρα δὲ μητρὸς ἐκριζοῖ θεμέλια.",
+        "VUL": "In opere, et sermone, et omni patientia, honora patrem tuum,/",
+        "SYN": "ибо благословение отца утверждает домы детей, а клятва матери разрушает до основания.",
+        "NEO": "car la bénédiction du père affermit les maisons des enfants ; mais la malédiction de la mère déracine les fondations.",
+        "NAB": "For a father's blessing gives a family firm roots, but a mother's curse uproots the growing plant.",
+        "VAT_ES": "porque la bendición de un padre afianza la casa de sus hijos, pero la maldición de una madre arranca sus cimientos.",
+        "CEI": "La benedizione del padre consolida le case dei figli, la maledizione della madre ne scalza le fondamenta."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "μὴ δοξάζου ἐν ἀτιμίᾳ πατρός σου, οὐ γάρ ἐστίν σοι δόξα πρὸς ἀτιμίαν·",
+        "VUL": "ut superveniat tibi benedictio ab eo,/ et benedictio illius in novissimo maneat./",
+        "SYN": "Не ищи славы в бесчестии отца твоего, ибо не слава тебе бесчестие отца.",
+        "NEO": "Ne te glorifie pas de l’opprobre de ton père, car sa confusion ne saurait te faire honneur ;",
+        "NAB": "Glory not in your father's shame, for his shame is no glory to you!",
+        "VAT_ES": "No busques tu gloria a costa del deshonor de tu padre, porque su deshonor no es una gloria para ti:",
+        "CEI": "Non vantarti del disonore di tuo padre, perché il disonore del padre non è gloria per te;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἡ γὰρ δόξα ἀνθρώπου ἐκ τιμῆς πατρὸς αὐτοῦ, καὶ ὄνειδος τέκνοις μήτηρ ἐν ἀδοξίᾳ.",
+        "VUL": "Benedictio patris firmat domos filiorum :/ maledictio autem matris eradicat fundamenta./",
+        "SYN": "Слава человека - от чести отца его, и позор детям - мать в бесславии.",
+        "NEO": "car la gloire d’un homme lui vient de l’honneur de son père, et une mère méprisée est la honte de ses enfants.",
+        "NAB": "His father's honor is a man's glory; disgrace for her children, a mother's shame.",
+        "VAT_ES": "la gloria de un hombre proviene del honor de su padre y una madre despreciada es un oprobio para los hijos.",
+        "CEI": "la gloria di un uomo dipende dall'onore del padre, vergogna per i figli è una madre nel disonore."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "τέκνον, ἀντιλαβοῦ ἐν γήρᾳ πατρός σου, καὶ μὴ λυπήσῃς αὐτὸν ἐν τῇ ζωῇ αὐτοῦ·",
+        "VUL": "Ne glorieris in contumelia patris tui :/ non enim est tibi gloria ejus confusio./",
+        "SYN": "Сын! прими отца твоего в старости его и не огорчай его в жизни его.",
+        "NEO": "Mon fils, soutiens ton père dans sa vieillesse, et ne le contriste pas durant sa vie.",
+        "NAB": "My son, take care of your father when he is old; grieve him not as long as he lives.",
+        "VAT_ES": "Hijo mío, socorre a tu padre en su vejez y no le causes tristeza mientras viva.",
+        "CEI": "Figlio, soccorri tuo padre nella vecchiaia, non contristarlo durante la sua vita."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "κἂν ἀπολείπῃ σύνεσιν, συγγνώμην ἔχε, καὶ μὴ ἀτιμάσῃς αὐτὸν ἐν πάσῃ ἰσχύι σου.",
+        "VUL": "Gloria enim hominis ex honore patris sui,/ et dedecus filii pater sine honore./",
+        "SYN": "Хотя бы он и оскудел разумом, имей снисхождение и не пренебрегай им при полноте силы твоей,",
+        "NEO": "Son esprit viendrait-il à s’affaiblir, sois indulgent, et ne le méprise pas dans la plénitude de tes forces.",
+        "NAB": "Even if his mind fail, be considerate with him; revile him not in the fullness of your strength.",
+        "VAT_ES": "Aunque pierda su lucidez, sé indulgente con él; no lo desprecies, tú que estás en pleno vigor.",
+        "CEI": "Anche se perdesse il senno, compatiscilo e non disprezzarlo, mentre sei nel pieno vigore."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "ἐλεημοσύνη γὰρ πατρὸς οὐκ ἐπιλησθήσεται, καὶ ἀντὶ ἁμαρτιῶν προσανοικοδομηθήσεταί σοι·",
+        "VUL": "Fili, suscipe senectam patris tui,/ et non contristes eum in vita illius :/",
+        "SYN": "ибо милосердие к отцу не будет забыто; несмотря на грехи твои, благосостояние твое умножится.",
+        "NEO": "Car le bien fait à un père ne sera pas mis en oubli, et, à la place de tes péchés, ta maison deviendra prospère.",
+        "NAB": "For kindness to a father will not be forgotten, it will serve as a sin offering - it will take lasting root.",
+        "VAT_ES": "La ayuda prestada a un padre no caerá en el olvido y te servirá de reparación por tus pecados.",
+        "CEI": "Poiché la pietà verso il padre non sarà dimenticata, ti sarà computata a sconto dei peccati."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ἐν ἡμέρᾳ θλίψεώς σου ἀναμνησθήσεταί σου· ὡς εὐδία ἐπὶ παγετῷ, οὕτως ἀναλυθήσονταί σου αἱ ἁμαρτίαι.",
+        "VUL": "et si defecerit sensu, veniam da,/ et ne spernas eum in virtute tua :/ eleemosyna enim patris non erit in oblivione./",
+        "SYN": "В день скорби твоей воспомянется о тебе: как лед от теплоты, разрешатся грехи твои.",
+        "NEO": "Au jour de la tribulation, le Seigneur se souviendra de toi ; comme la glace se fond par un temps serein, ainsi se dissiperont tes péchés.",
+        "NAB": "In time of tribulation it will be recalled to your advantage, like warmth upon frost it will melt away your sins.",
+        "VAT_ES": "Cuando estés en la aflicción, el Señor se acordará de ti, y se disolverán tus pecados como la escarcha con el calor.",
+        "CEI": "Nel giorno della tua tribolazione Dio si ricorderà di te; come fa il calore sulla brina, si scioglieranno i tuoi peccati."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ὡς βλάσφημος ὁ ἐγκαταλιπὼν πατέρα, καὶ κεκατηραμένος ὑπὸ Κυρίου ὁ παροργίζων μητέρα αὐτοῦ.",
+        "VUL": "Nam pro peccato matris restituetur tibi bonum :/",
+        "SYN": "Оставляющий отца - то же, что богохульник, и проклят от Господа раздражающий мать свою.",
+        "NEO": "Il ressemble au blasphémateur celui qui délaisse son père ; il est maudit du Seigneur celui qui irrite sa mère.",
+        "NAB": "A blasphemer is he who despises his father; accursed of his Creator, he who angers his mother.",
+        "VAT_ES": "El que abandona a su padre es como un blasfemo y el que irrita a su madre es maldecido por el Señor.",
+        "CEI": "Chi abbandona il padre è come un bestemmiatore, chi insulta la madre è maledetto dal Signore."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "Τέκνον, ἐν πρᾳύτητι τὰ ἔργα σου διέξαγε, καὶ ὑπὸ ἀνθρώπου δεκτοῦ ἀγαπηθήσῃ·",
+        "VUL": "et in justitia ædificabitur tibi,/ et in die tribulationis commemorabitur tui,/ et sicut in sereno glacies, solventur peccata tua./",
+        "SYN": "Сын мой! веди дела твои с кротостью, и будешь любим богоугодным человеком.",
+        "NEO": "Mon fils, accomplis tes œuvres avec mansuétude, et tu seras aimé de l’homme agréable à Dieu.",
+        "NAB": "My son, conduct your affairs with humility, and you will be loved more than a giver of gifts.",
+        "VAT_ES": "Hijo mío, realiza tus obras con modestia y serás amado por los que agradan a Dios.",
+        "CEI": "Figlio, nella tua attività sii modesto, sarai amato dall'uomo gradito a Dio."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "ὅσῳ μέγας εἶ, τοσούτῳ ταπεινοῦ σεαυτόν, καὶ ἔναντι Κυρίου εὑρήσεις χάριν·",
+        "VUL": "Quam malæ famæ est qui derelinquit patrem,/ et est maledictus a Deo qui exasperat matrem !]",
+        "SYN": "Сколько ты велик, столько смиряйся, и найдешь благодать у Господа.",
+        "NEO": "Humilie-toi d’autant plus que tu es plus grand, et tu trouveras grâce devant le Seigneur ;",
+        "NAB": "Humble yourself the more, the greater you are, and you will find favor with God.",
+        "VAT_ES": "Cuanto más grande seas, más humilde debes ser, y así obtendrás el favor del Señor,",
+        "CEI": "Quanto più sei grande, tanto più umìliati; così troverai grazia davanti al Signore;"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "[Fili, in mansuetudine opera tua perfice,/ et super hominum gloriam diligeris./",
+        "SYN": "Много высоких и славных, но тайны открываются смиренным,",
+        "NEO": "car la puissance du Seigneur est grande, et il est glorifié par les humbles.",
+        "NAB": "For great is the power of God; by the humble he is glorified.",
+        "VAT_ES": "[Son muchos los hombres altivos y gloriosos, pero el Señor revela sus secretos a los humildes.]",
+        "CEI": "perché grande è la potenza del Signore"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ὅτι μεγάλη ἡ δυναστεία τοῦ κυρίου καὶ ὑπὸ τῶν ταπεινῶν δοξάζεται.",
+        "VUL": "Quanto magnus es, humilia te in omnibus,/ et coram Deo invenies gratiam :/",
+        "SYN": "ибо велико могущество Господа, и Он смиренными прославляется.",
+        "NEO": "Ne cherche pas ce qui est trop difficile pour toi, et ne scrute pas ce qui dépasse tes forces.",
+        "NAB": "What is too sublime for you, seek not, into things beyond your strength search not.",
+        "VAT_ES": "porque el poder del Señor es grande y él es glorificado por los humildes.",
+        "CEI": "e dagli umili egli è glorificato."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "χαλεπώτερά σου μὴ ζήτει, καὶ ἰσχυρότερά σου μὴ ἐξέταζε.",
+        "VUL": "quoniam magna potentia Dei solius,/ et ab humilibus honoratur./",
+        "SYN": "Чрез меру трудного для тебя не ищи, и, что свыше сил твоих, того не испытывай.",
+        "NEO": "Ce qui t’est commandé, voilà à quoi tu dois penser, car tu n’as que faire des choses cachées.",
+        "NAB": "What is committed to you, attend to; for what is hidden is not your concern.",
+        "VAT_ES": "No pretendas lo que es demasiado difícil para ti, ni trates de indagar lo que supera tus fuerzas:",
+        "CEI": "Non cercare le cose troppo difficili per te, non indagare le cose per te troppo grandi."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ἃ προσετάγη σοι, ταῦτα διανοοῦ· οὐ γάρ ἐστίν σοι χρεία τῶν κρυπτῶν.",
+        "VUL": "Altiora te ne quæsieris,/ et fortiora te ne scrutatus fueris :/ sed quæ præcepit tibi Deus, illa cogita semper,/ et in pluribus operibus ejus ne fueris curiosus./",
+        "SYN": "Что заповедано тебе, о том размышляй; ибо не нужно тебе, что сокрыто.",
+        "NEO": "Ne t’applique pas aux occupations superflues, car on t’en a déjà montré plus que l’esprit humain ne peut saisir.",
+        "NAB": "With what is too much for you meddle not, when shown things beyond human understanding.",
+        "VAT_ES": "reflexiona sobre lo que te ha sido mandado, porque a ti no te conciernen las cosas secretas.",
+        "CEI": "Bada a quello che ti è stato comandato, poiché tu non devi occuparti delle cose misteriose."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "ἐν τοῖς περισσοῖς τῶν ἔργων σου μὴ περιεργάζου· πλείονα γὰρ συνέσεως ἀνθρώπων ὑπεδείχθη σοι.",
+        "VUL": "Non est enim tibi necessarium/ ea, quæ abscondita sunt, videre oculis tuis./",
+        "SYN": "При многих занятиях твоих, о лишнем не заботься: тебе открыто очень много из человеческого знания;",
+        "NEO": "Leur propre illusion en a égaré un grand nombre, et une présomption coupable a fait dévier leurs pensées.",
+        "NAB": "Their own opinion has misled many, and false reasoning unbalanced their judgment.",
+        "VAT_ES": "No te ocupes de cosas que están por encima de ti: lo que te ha sido revelado ya es demasiado para la inteligencia.",
+        "CEI": "Non sforzarti in ciò che trascende le tue capacità, poiché ti è stato mostrato più di quanto comprende un'intelligenza umana."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "πολλοὺς γὰρ ἐπλάνησεν ἡ ὑπόλημψις αὐτῶν, καὶ ὑπόνοια πονηρὰ ὠλίσθησεν διανοίας αὐτῶν.",
+        "VUL": "In supervacuis rebus noli scrutari multipliciter,/ et in pluribus operibus ejus non eris curiosus./",
+        "SYN": "ибо многих ввели в заблуждение их предположения, и лукавые мечты поколебали ум их.",
+        "NEO": "Celui qui aime le danger y trouvera sa perte : et le cœur dur tombe à la fin dans le malheur.",
+        "NAB": "Where the pupil of the eye is missing, there is no light, and where there is no knowledge, there is no wisdom.",
+        "VAT_ES": "Porque muchos se extraviaron por sus especulaciones y su imaginación perversa falseó sus pensamientos.",
+        "CEI": "Molti ha fatto smarrire la loro presunzione, una misera illusione ha fuorviato i loro pensieri."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "Plurima enim super sensum hominum ostensa sunt tibi :/",
+        "SYN": "Кто любит опасность, тот впадет в нее;",
+        "NEO": "Le cœur dur sera accablé d’afflictions, et le pécheur entasse péchés sur péchés.",
+        "NAB": "A stubborn man will fare badly in the end, and he who loves danger will perish in it.",
+        "VAT_ES": "Si no tienes pupilas, te faltará la luz; si careces de ciencia, no afirmes nada.",
+        "CEI": "Un cuore ostinato alla fine cadrà nel male; chi ama il pericolo in esso si perderà."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "καὶ ὁ ἀγαπῶν κίνδυνον ἐν αὐτῷ ἐμπεσεῖται· καρδία σκληρὰ κακωθήσεται ἐπ’ ἐσχάτων, καρδία σκληρὰ βαρυνθήσεται ἐπ’ ἐσχάτων.",
+        "VUL": "multos quoque supplantavit suspicio illorum,/ et in vanitate detinuit sensus illorum./",
+        "SYN": "упорное сердце напоследок потерпит зло:",
+        "NEO": "Le malheur de l’orgueilleux est sans remède, car la plante du mal a jeté en lui ses racines.",
+        "NAB": "A stubborn man will be burdened with sorrow; a sinner will heap sin upon sin.",
+        "VAT_ES": "El hombre obstinado termina mal, y el que ama el peligro perecerá en él.",
+        "CEI": "Un cuore ostinato sarà oppresso da affanni, il peccatore aggiungerà peccato a peccato."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "καρδία σκληρὰ βαρυνθήσεται πόνοις, καὶ ὁ ἁμαρτωλὸς προσθήσει ἁμαρτίαν ἐφ’ ἁμαρτίαις.",
+        "VUL": "Cor durum habebit male in novissimo,/ et qui amat periculum in illo peribit./",
+        "SYN": "упорное сердце будет обременено скорбями, и грешник приложит грехи ко грехам.",
+        "NEO": "Le cœur de l’homme intelligent médite la parabole ; trouver une oreille attentive est le désir du sage.",
+        "NAB": "For the affliction of the proud man there is no cure; he is the offshoot of an evil plant.",
+        "VAT_ES": "El corazón obstinado soportará muchos males, y el pecador acumula un pecado sobre otro.",
+        "CEI": "La sventura non guarisce il superbo, perché la pianta del male si è radicata in lui."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "ἐπαγωγῇ ὑπερηφάνου οὐκ ἔστιν ἴασις, φυτὸν γὰρ πονηρίας ἐρρίζωκεν ἐν αὐτῷ.",
+        "VUL": "Cor ingrediens duas vias non habebit successus,/ et pravus corde in illis scandalizabitur./",
+        "SYN": "Испытания не служат врачевством для гордого, потому что злое растение укоренилось в нем.",
+        "NEO": "L’eau éteint le feu le plus ardent, et l’aumône expie les péchés.",
+        "NAB": "The mind of a sage appreciates proverbs, and an attentive ear is the wise man's joy.",
+        "VAT_ES": "No hay remedio para el mal del orgulloso, porque una planta maligna ha echado raíces en él.",
+        "CEI": "Una mente saggia medita le parabole, un orecchio attento è quanto desidera il saggio."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "καρδία συνετοῦ διανοηθήσεται παραβολήν, καὶ οὖς ἀκροατοῦ ἐπιθυμία σοφοῦ.",
+        "VUL": "Cor nequam gravabitur in doloribus,/ et peccator adjiciet ad peccandum./",
+        "SYN": "Сердце разумного обдумает притчу, и внимательное ухо есть желание мудрого.",
+        "NEO": "Celui qui paie de retour les bienfaits songe à l’avenir, et, au jour du malheur, il trouvera un appui.",
+        "NAB": "Water quenches a flaming fire, and alms atone for sins.",
+        "VAT_ES": "El corazón inteligente medita los proverbios y el sabio desea tener un oído atento.",
+        "CEI": "L'acqua spegne un fuoco acceso, l'elemosina espia i peccati."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "πῦρ φλογιζόμενον ἀποσβέσει ὕδωρ, καὶ ἐλεημοσύνη ἐξιλάσεται ἁμαρτίας.",
+        "VUL": "Synagogæ superborum non erit sanitas,/ frutex enim peccati radicabitur in illis, et non intelligetur./",
+        "SYN": "Вода угасит пламень огня, и милостыня очистит грехи.",
+        "NAB": "He who does a kindness is remembered afterward; when he falls, he finds a support.",
+        "VAT_ES": "El agua apaga las llamas del fuego y la limosna expía los pecados.",
+        "CEI": "Chi ricambia il bene provvede all'avvenire, al momento della sua caduta troverà un sostegno."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "ὁ ἀνταποδιδοὺς χάριτας μέμνηται εἰς τὰ μετὰ ταῦτα, καὶ ἐν καιρῷ πτώσεως εὑρήσει στήριγμα.",
+        "VUL": "Cor sapientis intelligitur in sapientia,/ et auris bona audiet cum omni concupiscentia sapientiam./",
+        "SYN": "Кто воздает за благодеяния, тот помышляет о будущем и во время падения найдет опору.",
+        "VAT_ES": "El que devuelve los favores piensa en lo que vendrá después, y cuando esté por caer, encontrará un apoyo."
+      }
+    }
+  }
+}

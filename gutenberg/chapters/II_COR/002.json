@@ -1,0 +1,304 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "II_COR_002",
+  "book_key": "II_COR",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Ἔκρινα δὲ ἐμαυτῷ τοῦτο, τὸ μὴ πάλιν ἐν λύπῃ πρὸς ὑμᾶς ἐλθεῖν.",
+        "VUL": "Statui autem hoc ipsum apud me, ne iterum in tristitia venirem ad vos.",
+        "SYN": "Итак я рассудил сам в себе не приходить к вам опять с огорчением.",
+        "NEO": "Je me suis donc promis à moi-même de ne pas retourner chez vous dans la tristesse.+ 2:1 II, 1. Vulg. En moi-même.*",
+        "NAB": "For I decided not to come to you again in painful circumstances.",
+        "VAT_ES": "Estoy decidido a no hacerles otra visita que sea para ustedes motivo de tristeza.",
+        "CEI": "Per questo, io Paolo, il prigioniero di Cristo per voi Gentili..."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Εἰ γὰρ ἐγὼ λυπῶ ὑμᾶς, καὶ τίς ἐστιν ὁ εὐφραίνων με, εἰ μὴ ὁ λυπούμενος ἐξ ἐμοῦ;",
+        "VUL": "Si enim ego contristo vos : et quis est, qui me lætificet, nisi qui contristatur ex me ?",
+        "SYN": "Ибо если я огорчаю вас, то кто обрадует меня, как не тот, кто огорчен мною?",
+        "NEO": "Car si moi-même je vous attriste, de qui puis-je attendre de la joie ? N’est-ce pas de celui même que j’aurais affligé ?",
+        "NAB": "For if I inflict pain upon you, then who is there to cheer me except the one pained by me?",
+        "VAT_ES": "Porque si yo los entristezco, &iquest;quién me podrá alegrar, sino el mismo a quien yo entristecí?",
+        "CEI": "penso che abbiate sentito parlare del ministero della grazia di Dio, a me affidato a vostro beneficio:"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Καὶ ἔγραψα ὑμῖν τοῦτο αὐτό, ἵνα μὴ ἐλθὼν λύπην ἔχω ἀφ’ ὧν ἔδει με χαίρειν, πεποιθὼς ἐπὶ πάντας ὑμᾶς, ὅτι ἡ ἐμὴ χαρὰ πάντων ὑμῶν ἐστίν.",
+        "VUL": "Et hoc ipsum scripsi vobis, ut non cum venero, tristitiam super tristitiam habeam, de quibus oportuerat me gaudere : confidens in omnibus vobis, quia meum gaudium, omnium vestrum est.",
+        "SYN": "Это самое и писал я вам, дабы, придя, не иметь огорчения от тех, о которых мне надлежало радоваться: ибо я во всех вас уверен, что моя радость есть _радость_ и для всех вас.",
+        "NEO": "Je vous ai écrit comme je l’ai fait, pour ne pas éprouver, à mon arrivée, de la tristesse de la part de ceux qui devaient me donner de la joie, ayant en vous tous cette confiance, que vous faites tous votre joie de la mienne.",
+        "NAB": "And I wrote as I did so that when I came I might not be pained by those in whom I should have rejoiced, confident about all of you that my joy is that of all of you.",
+        "VAT_ES": "Y si les he escrito lo que ustedes ya saben, fue para no apenarme al llegar, a causa de aquellos que debían alegrarme, porque estoy convencido de que mi alegría es también la de ustedes.",
+        "CEI": "come per rivelazione mi è stato fatto conoscere il mistero di cui sopra vi ho scritto brevemente."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ἐκ γὰρ πολλῆς θλίψεως καὶ συνοχῆς καρδίας ἔγραψα ὑμῖν διὰ πολλῶν δακρύων, οὐχ ἵνα λυπηθῆτε, ἀλλὰ τὴν ἀγάπην ἵνα γνῶτε ἣν ἔχω περισσοτέρως εἰς ὑμᾶς.",
+        "VUL": "Nam ex multa tribulatione et angustia cordis scripsi vobis per multas lacrimas : non ut contristemini, sed ut sciatis, quam caritatem habeam abundantius in vobis.",
+        "SYN": "От великой скорби и стесненного сердца я писал вам со многими слезами, не для того, чтобы огорчить вас, но чтобы вы познали любовь, какую я в избытке имею к вам.",
+        "NEO": "Car c’est dans une grande affliction, dans l’angoisse de mon cœur, et avec beaucoup de larmes, que je vous ai écrit, non dans le dessein de vous attrister, mais pour vous faire connaître l’amour que j’ai pour vous.",
+        "NAB": "For out of much affliction and anguish of heart I wrote to you with many tears, not that you might be pained but that you might know the abundant love I have for you.",
+        "VAT_ES": "Verdaderamente les escribí con gran aflicción y angustia, y con muchas lágrimas, no para entristecerlos, sino para demostrarles el profundo afecto que les tengo.",
+        "CEI": "Dalla lettura di ciò che ho scritto potete ben capire la mia comprensione del mistero di Cristo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "¶Εἰ δέ τις λελύπηκεν, οὐκ ἐμὲ λελύπηκεν, ἀλλὰ ἀπὸ μέρους- ἵνα μὴ ἐπιβαρῶ- πάντας ὑμᾶς.",
+        "VUL": "Si quis autem contristavit, non me contristavit : sed ex parte, ut non onerem omnes vos.",
+        "SYN": "Если же кто огорчил, то не меня огорчил, но частью, -- чтобы не сказать много, -- и всех вас.",
+        "NEO": "Si quelqu’un a été une cause de tristesse, ce n’est pas moi qu’il a attristé, mais c’est vous tous en quelque sorte, pour ne pas trop le charger.+ 2:5 5. Si quelqu’un: d’après l’opinion la plus générale et qui s’appuie sur le sentiment des Pères (Tertullien excepté. De pudic. 13), il s’agirait de l’incestueux, dont il est parlé dans l’épître précédente, chap. v, 1 sv. De nos jours de nombreux critiques pensent que l’Apôtre vise peut-être plutôt quelqu’autre personnage, qui l’aurait personnellement offensé.*",
+        "NAB": "If anyone has caused pain, he has caused it not to me, but in some measure (not to exaggerate) to all of you.",
+        "VAT_ES": "Si alguien me entristeció, no me entristeció a mí solamente sino también, en cierta medida –lo digo sin exagerar– a todos ustedes.",
+        "CEI": "Questo mistero non è stato manifestato agli uomini delle precedenti generazioni come al presente è stato rivelato ai suoi santi apostoli e profeti per mezzo dello Spirito:"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ἱκανὸν τῷ τοιούτῳ ἡ ἐπιτιμία αὕτη ἡ ὑπὸ τῶν πλειόνων·",
+        "VUL": "Sufficit illi, qui ejusmodi est, objurgatio hæc, quæ fit a pluribus :",
+        "SYN": "Для такого довольно сего наказания от многих,",
+        "NEO": "C’est assez pour cet homme du châtiment qui lui a été infligé par le plus grand nombre,",
+        "NAB": "This punishment by the majority is enough for such a person,",
+        "VAT_ES": "Pienso que es suficiente el castigo que la mayoría ha impuesto al ofensor.",
+        "CEI": "che i Gentili cioè sono chiamati, in Cristo Gesù, a partecipare alla stessa eredità, a formare lo stesso corpo, e ad essere partecipi della promessa per mezzo del vangelo,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "ὥστε τοὐναντίον μᾶλλον ὑμᾶς χαρίσασθαι καὶ παρακαλέσαι, μήπως τῇ περισσοτέρᾳ λύπῃ καταποθῇ ὁ τοιοῦτος.",
+        "VUL": "ita ut e contrario magis donetis, et consolemini, ne forte abundantiori tristitia absorbeatur qui ejusmodi est.",
+        "SYN": "так что вам лучше уже простить его и утешить, дабы он не был поглощен чрезмерною печалью.",
+        "NEO": "en sorte que vous devez bien plutôt lui faire grâce et le consoler, de peur qu’il ne soit absorbé par une tristesse excessive.",
+        "NAB": "so that on the contrary you should forgive and encourage him instead, or else the person may be overwhelmed by excessive pain.",
+        "VAT_ES": "Conviene ahora perdonarlo y animarlo para que el pobre no quede agobiado por una pena excesiva.",
+        "CEI": "del quale sono divenuto ministro per il dono della grazia di Dio a me concessa in virtù dell'efficacia della sua potenza."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Διὸ παρακαλῶ ὑμᾶς κυρῶσαι εἰς αὐτὸν ἀγάπην.",
+        "VUL": "Propter quod obsecro vos, ut confirmetis in illum caritatem.",
+        "SYN": "И потому прошу вас оказать ему любовь.",
+        "NEO": "Je vous invite donc à prendre envers lui une décision charitable.",
+        "NAB": "Therefore, I urge you to reaffirm your love for him.",
+        "VAT_ES": "Por eso, les ruego que en este caso hagan prevalecer el amor.",
+        "CEI": "A me, che sono l'infimo fra tutti i santi, è stata concessa questa grazia di annunziare ai Gentili le imperscrutabili ricchezze di Cristo,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Εἰς τοῦτο γὰρ καὶ ἔγραψα, ἵνα γνῶ τὴν δοκιμὴν ὑμῶν, εἰ εἰς πάντα ὑπήκοοί ἐστε.",
+        "VUL": "Ideo enim et scripsi, ut cognoscam experimentum vestrum, an in omnibus obedientes sitis.",
+        "SYN": "Ибо я для того и писал, чтобы узнать на опыте, во всем ли вы послушны.",
+        "NEO": "Car, en vous écrivant, mon but était aussi de connaître, à l’épreuve, si vous m’obéiriez en toutes choses.",
+        "NAB": "For this is why I wrote, to know your proven character, whether you were obedient in everything.",
+        "VAT_ES": "Antes les escribí para ponerlos a prueba y ver si son capaces de obedecer en todo.",
+        "CEI": "e di far risplendere agli occhi di tutti qual è l'adempimento del mistero nascosto da secoli nella mente di Dio, creatore dell'universo,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "ᾯ δέ τι χαρίζεσθε, καὶ ἐγώ· καὶ γὰρ ἐγὼ εἴ τι κεχάρισμαι, ᾧ κεχάρισμαι, δι’ ὑμᾶς ἐν προσώπῳ χριστοῦ,",
+        "VUL": "Cui autem aliquid donastis, et ego : nam et ego quod donavi, si quid donavi, propter vos in persona Christi,",
+        "SYN": "А кого вы в чем прощаете, того и я; ибо и я, если в чем простил кого, простил для вас от лица Христова,",
+        "NEO": "À qui vous pardonnez, je pardonne également ; car, pour moi si j’ai pardonné, si tant est que je pardonne quelque chose, c’est à cause de vous, et à la face du Christ,+ 2:10 10-11. D’autres, avec la Vulg. dans a personne du Christ.*",
+        "NAB": "Whomever you forgive anything, so do I. For indeed what I have forgiven, if I have forgiven anything, has been for you in the presence of Christ,",
+        "VAT_ES": "Pero ahora, yo también perdono al que ustedes perdonaron, y lo hago en la presencia de Cristo por amor de ustedes,",
+        "CEI": "perché sia manifestata ora nel cielo, per mezzo della Chiesa, ai Principati e alle Potestà la multiforme sapienza di Dio,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "ἵνα μὴ πλεονεκτηθῶμεν ὑπὸ τοῦ Σατανᾶ· οὐ γὰρ αὐτοῦ τὰ νοήματα ἀγνοοῦμεν.",
+        "VUL": "ut non circumveniamur a Satana : non enim ignoramus cogitationes ejus.",
+        "SYN": "чтобы не сделал нам ущерба сатана, ибо нам не безызвестны его умыслы.",
+        "NEO": "afin de ne pas laisser à Satan l’avantage sur nous ; car nous n’ignorons pas ses desseins.",
+        "NAB": "so that we might not be taken advantage of by Satan, for we are not unaware of his purposes.",
+        "VAT_ES": "para que Satanás no saque ventaja de nosotros, ya que conocemos bien sus intenciones.",
+        "CEI": "secondo il disegno eterno che ha attuato in Cristo Gesù nostro Signore,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "¶Ἐλθὼν δὲ εἰς τὴν Τρῳάδα εἰς τὸ εὐαγγέλιον τοῦ χριστοῦ, καὶ θύρας μοι ἀνεῳγμένης ἐν κυρίῳ,",
+        "VUL": "Cum venissem autem Troadem propter Evangelium Christi, et ostium mihi apertum esset in Domino,",
+        "SYN": "Придя в Троаду для благовествования о Христе, хотя мне и отверста была дверь Господом,",
+        "NEO": "Lorsque je fus arrivé à Troas pour l’Évangile du Christ, quoiqu’une porte m’y fût ouverte dans le Seigneur,+ 2:12 12-13. Une porte, une occasion favorable (comp. I Cor. xvi, 9).*",
+        "NAB": "When I went to Troas for the gospel of Christ, although a door was opened for me in the Lord,",
+        "VAT_ES": "Cuando llegué a Tróade para anunciar la Buena Noticia de Jesús, aunque el Señor abrió una puerta para mi predicación,",
+        "CEI": "il quale ci dà il coraggio di avvicinarci in piena fiducia a Dio per la fede in lui."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "οὐκ ἔσχηκα ἄνεσιν τῷ πνεύματί μου, τῷ μὴ εὑρεῖν με Τίτον τὸν ἀδελφόν μου· ἀλλὰ ἀποταξάμενος αὐτοῖς ἐξῆλθον εἰς Μακεδονίαν.",
+        "VUL": "non habui requiem spiritui meo, eo quod non invenerim Titum fratrem meum, sed valefaciens eis, profectus sum in Macedoniam.",
+        "SYN": "я не имел покоя духу моему, потому что не нашел _там_ брата моего Тита; но, простившись с ними, я пошел в Македонию.",
+        "NEO": "je n’eus pas l’esprit en repos, parce que je n’y trouvais pas Tite, mon frère ; c’est pourquoi, ayant pris congé des frères, je partis pour la Macédoine.",
+        "NAB": "I had no relief in my spirit because I did not find my brother Titus. So I took leave of them and went on to Macedonia.",
+        "VAT_ES": "estaba muy preocupado porque no encontré a mi hermano Tito; por eso, me despedí de ellos y partí para Macedonia.",
+        "CEI": "Vi prego quindi di non perdervi d'animo per le mie tribolazioni per voi; sono gloria vostra."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Τῷ δὲ θεῷ χάρις τῷ πάντοτε θριαμβεύοντι ἡμᾶς ἐν τῷ χριστῷ, καὶ τὴν ὀσμὴν τῆς γνώσεως αὐτοῦ φανεροῦντι δι’ ἡμῶν ἐν παντὶ τόπῳ.",
+        "VUL": "Deo autem gratias, qui semper triumphat nos in Christo Jesu, et odorem notitiæ suæ manifestat per nos in omni loco :",
+        "SYN": "Но благодарение Богу, Который всегда дает нам торжествовать во Христе и благоухание познания о Себе распространяет нами во всяком месте.",
+        "NEO": "Mais grâces soient rendues à Dieu qui nous fait triompher en tout temps dans le Christ, et par nous répand en tout lieu le parfum de sa connaissance !",
+        "NAB": "But thanks be to God, who always leads us in triumph in Christ and manifests through us the odor of the knowledge of him in every place.",
+        "VAT_ES": "Demos gracias a Dios, que siempre nos hace triunfar en Cristo, y por intermedio nuestro propaga en todas partes la fragancia de su conocimiento.",
+        "CEI": "Per questo, dico, io piego le ginocchia davanti al Padre,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ὅτι χριστοῦ εὐωδία ἐσμὲν τῷ θεῷ ἐν τοῖς σῳζομένοις καὶ ἐν τοῖς ἀπολλυμένοις·",
+        "VUL": "quia Christi bonus odor sumus Deo in iis qui salvi fiunt, et in iis qui pereunt :",
+        "SYN": "Ибо мы Христово благоухание Богу в спасаемых и в погибающих:",
+        "NEO": "En effet, nous sommes pour Dieu la bonne odeur du Christ parmi ceux qui sont sauvés et parmi ceux qui se perdent :",
+        "NAB": "For we are the aroma of Christ for God among those who are being saved and among those who are perishing,",
+        "VAT_ES": "Porque nosotros somos la fragancia de Cristo al servicio de Dios, tanto entre los que se salvan, como entre los que se pierden:",
+        "CEI": "dal quale ogni paternità nei cieli e sulla terra prende nome,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "οἷς μὲν ὀσμὴ θανάτου εἰς θάνατον, οἷς δὲ ὀσμὴ ζωῆς εἰς ζωήν. Καὶ πρὸς ταῦτα τίς ἱκανός;",
+        "VUL": "aliis quidem odor mortis in mortem : aliis autem odor vitæ in vitam. Et ad hæc quis tam idoneus ?",
+        "SYN": "для одних запах смертоносный на смерть, а для других запах живительный на жизнь. И кто способен к сему?",
+        "NEO": "aux uns, une odeur de mort, qui donne la mort ; aux autres, une odeur de vie, qui donne la vie. — Et qui donc est capable d’un tel ministère ?",
+        "NAB": "to the latter an odor of death that leads to death, to the former an odor of life that leads to life. Who is qualified for this?",
+        "VAT_ES": "para estos, aroma de muerte, que conduce a la muerte; para aquellos, aroma de vida, que conduce a la Vida. &iquest;Y quién es capaz de cumplir semejante tarea?",
+        "CEI": "perché vi conceda, secondo la ricchezza della sua gloria, di essere potentemente rafforzati dal suo Spirito nell'uomo interiore."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Οὐ γάρ ἐσμεν ὡς οἱ λοιποί, καπηλεύοντες τὸν λόγον τοῦ θεοῦ· ἀλλ’ ὡς ἐξ εἰλικρινείας, ἀλλ’ ὡς ἐκ θεοῦ, κατενώπιον τοῦ θεοῦ, ἐν χριστῷ λαλοῦμεν.",
+        "VUL": "non enim sumus sicut plurimi, adulterantes verbum Dei, sed ex sinceritate, sed sicut ex Deo, coram Deo, in Christo loquimur.",
+        "SYN": "Ибо мы не повреждаем слова Божия, как многие, но проповедуем искренно, как от Бога, пред Богом, во Христе.",
+        "NEO": "Car nous ne sommes pas comme la plupart, nous ne frelatons pas la parole de Dieu ; mais c’est dans sa pureté, telle qu’elle vient de Dieu, que nous la prêchons devant Dieu en Jésus-Christ.",
+        "NAB": "For we are not like the many who trade on the word of God; but as out of sincerity, indeed as from God and in the presence of God, we speak in Christ.",
+        "VAT_ES": "Pero nosotros no somos como muchos que trafican con la Palabra de Dios, sino que hablamos con sinceridad en nombre de Cristo, como enviados de Dios y en presencia del mismo Dios.",
+        "CEI": "Che il Cristo abiti per la fede nei vostri cuori e così, radicati e fondati nella carità,"
+      }
+    }
+  }
+}

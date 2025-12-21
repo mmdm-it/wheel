@@ -1,0 +1,429 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_SAM_022",
+  "book_key": "I_SAM",
+  "sequence": 22,
+  "chapter_in": {
+    "MT": 22,
+    "VUL": 22,
+    "LXX": 22
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֤לֶךְ דָּוִד֙ מִ/שָּׁ֔ם וַ/יִּמָּלֵ֖ט אֶל מְעָרַ֣ת עֲדֻלָּ֑ם וַ/יִּשְׁמְע֤וּ אֶחָי/ו֙ וְ/כָל בֵּ֣ית אָבִ֔י/ו וַ/יֵּרְד֥וּ אֵלָ֖י/ו שָֽׁמָּ/ה׃",
+        "LXX": "Καὶ ἀπῆλθεν ἐκεῖθεν Δαυεὶδ καὶ διεσώθη, καὶ ἔρχεται εἰς τὸ σπήλαιον τὸ Ὀδολλάμ· καὶ ἀκούουσιν οἱ ἀδελφοὶ αὐτοῦ καὶ ὁ οἶκος τοῦ πατρὸς αὐτοῦ, καὶ καταβαίνουσιν πρὸς αὐτὸν ἐκεῖ.",
+        "VUL": "Abiit ergo David inde, et fugit in speluncam Odollam. Quod cum audissent fratres ejus, et omnis domus patris ejus, descenderunt ad eum illuc.",
+        "SYN": "И вышел Давид оттуда и убежал в пещеру Одолламскую, и услышали братья его и весь дом отца его и пришли к нему туда.",
+        "NEO": "David partit de là et s’enfuit dans la caverne d’Odollam. Ses frères et toute la maison de son père l’ayant appris, ils descendirent là, vers lui.",
+        "NAB": "David left Gath and escaped to the cave of Adullam. When his brothers and the rest of his family heard about it, they came down to him there.",
+        "VAT_ES": "David partió de allí y se puso a salvo en la caverna de Adulam. Al enterarse, sus hermanos y toda la casa de su padre bajaron a unirse con él.",
+        "CEI": "Davide partì di là e si rifugiò nella grotta di Adullàm. Lo seppero i suoi fratelli e tutta la casa di suo padre e scesero là."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּֽתְקַבְּצ֣וּ אֵ֠לָי/ו כָּל אִ֨ישׁ מָצ֜וֹק וְ/כָל אִ֨ישׁ אֲשֶׁר ל֤/וֹ נֹשֶׁא֙ וְ/כָל אִ֣ישׁ מַר נֶ֔פֶשׁ וַ/יְהִ֥י עֲלֵי/הֶ֖ם לְ/שָׂ֑ר וַ/יִּהְי֣וּ עִמּ֔/וֹ כְּ/אַרְבַּ֥ע מֵא֖וֹת אִֽישׁ׃",
+        "LXX": "καὶ συνήγοντο πρὸς αὐτὸν πᾶς ἐν ἀνάγκῃ καὶ πᾶς ὑπόχρεως καὶ πᾶς κατώδυνος ψυχῇ, καὶ ἦν ἐπ’ αὐτῶν ἡγούμενος· καὶ ἦσαν μετ’ αὐτοῦ ὡς τετρακόσιοι ἄνδρες.",
+        "VUL": "Et convenerunt ad eum omnes qui erant in angustia constituti, et oppressi ære alieno, et amaro animo : et factus est eorum princeps, fueruntque cum eo quasi quadringenti viri.",
+        "SYN": "И собрались к нему все притесненные и все должники и все огорченные душею, и сделался он начальником над ними; и было с ним около четырехсот человек.",
+        "NEO": "Tous les opprimés, tous ceux qui avaient des créanciers et tous ceux qui étaient dans l’amertume, se rassemblèrent auprès de lui, et il devint leur chef ; il y eut ainsi avec lui environ quatre cents hommes.",
+        "NAB": "He was joined by all those who were in difficulties or in debt, or who were embittered, and he became their leader. About four hundred men were with him.",
+        "VAT_ES": "Además, se le juntaron todos los que estaban en algún aprieto, cargados de deudas o descontentos de la vida. Así llegó a ser jefe de unos cuatrocientos hombres.",
+        "CEI": "Si radunarono allora con lui quanti erano in strettezze, quelli che avevano debiti e tutti gli scontenti, ed egli diventò loro capo. Stettero così con lui circa quattrocento uomini."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֧לֶךְ דָּוִ֛ד מִ/שָּׁ֖ם מִצְפֵּ֣ה מוֹאָ֑ב וַ/יֹּ֣אמֶר אֶל מֶ֣לֶךְ מוֹאָ֗ב יֵֽצֵא נָ֞א אָבִ֤/י וְ/אִמִּ/י֙ אִתְּ/כֶ֔ם עַ֚ד אֲשֶׁ֣ר אֵדַ֔ע מַה יַּֽעֲשֶׂה לִּ֖/י אֱלֹהִֽים׃",
+        "LXX": "Καὶ ἀπῆλθεν Δαυεὶδ ἐκεῖθεν εἰς Μασσηφὰ τῆς Μωάβ, καὶ εἶπεν πρὸς βασιλέα Μωάβ Γινέσθωσαν δὴ ὁ πατήρ μου καὶ ἡ μήτηρ μου παρὰ σοί, ἕως ὅτου γνῶ τί ποιήσει μοι ὁ θεός.",
+        "VUL": "Et profectus est David inde in Maspha, quæ est Moab : et dixit ad regem Moab : Maneat, oro, pater meus et mater mea vobiscum, donec sciam quid faciat mihi Deus.",
+        "SYN": "Оттуда пошел Давид в Массифу Моавитскую и сказал царю Моавитскому: пусть отец мой и мать моя побудут у вас, доколе я не узнаю, что сделает со мною Бог.",
+        "NEO": "De là, David s’en alla à Maspha de Moab. Il dit au roi de Moab : « Que mon père et ma mère puissent, je te prie, se retirer chez vous, jusqu’à ce que je sache ce que Dieu fera de moi. »",
+        "NAB": "From there David went to Mizpeh of Moab and said to the king of Moab, \"Let my father and mother stay with you, until I learn what God will do for me.\"",
+        "VAT_ES": "De allí David se fue a Mispé de Moab y dijo al rey de Moab: «Deja que mi padre y mi madre vivan entre ustedes, hasta que yo sepa lo que Dios va a hacer conmigo».",
+        "CEI": "Davide partì di là e andò a Mizpa di Moab e disse al re di Moab: \"Permetti che restino con voi mio padre e mia madre, finché sappia che cosa Dio vuol fare di me\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יַּנְחֵ֕/ם אֶת פְּנֵ֖י מֶ֣לֶךְ מוֹאָ֑ב וַ/יֵּשְׁב֣וּ עִמּ֔/וֹ כָּל יְמֵ֥י הֱיוֹת דָּוִ֖ד בַּ/מְּצוּדָֽה׃",
+        "LXX": "καὶ παρεκάλεσεν τὸ πρόσωπον τοῦ βασιλέως Μωάβ, καὶ κατῴκουν μετ’ αὐτοῦ πάσας τὰς ἡμέρας ὄντος τοῦ Δαυεὶδ ἐν τῇ περιοχῇ.",
+        "VUL": "Et reliquit eos ante faciem regis Moab : manseruntque apud eum cunctis diebus quibus David fuit in præsidio.",
+        "SYN": "И привел их к царю Моавитскому, и жили они у него все время, доколе Давид был в оном убежище.",
+        "NEO": "Et il les amena devant le roi de Moab, et ils demeurèrent chez lui tout le temps que David fut dans le lieu fort.",
+        "NAB": "He left them with the king of Moab, and they stayed with him as long as David remained in the refuge.",
+        "VAT_ES": "Luego los llevó a la presencia del rey de Moab, y ellos se quedaron con él todo el tiempo que David estuvo en el refugio.",
+        "CEI": "Li presentò al re di Moab e rimasero con lui finché Davide rimase nel rifugio."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֩ גָּ֨ד הַ/נָּבִ֜יא אֶל דָּוִ֗ד לֹ֤א תֵשֵׁב֙ בַּ/מְּצוּדָ֔ה לֵ֥ךְ וּ/בָֽאתָ לְּ/ךָ֖ אֶ֣רֶץ יְהוּדָ֑ה וַ/יֵּ֣לֶךְ דָּוִ֔ד וַ/יָּבֹ֖א יַ֥עַר חָֽרֶת׃",
+        "LXX": "καὶ εἶπεν Γὰδ ὁ προφήτης πρὸς Δαυείδ Μὴ κάθου ἐν τῇ περιοχῇ, πορεύου καὶ ἥξεις εἰς γῆν Ἰούδα. καὶ ἐπορεύθη Δαυείδ, καὶ ἦλθεν καὶ ἐκάθισεν ἐν πόλει Σαρείκ.",
+        "VUL": "Dixitque Gad propheta ad David : Noli manere in præsidio : proficiscere, et vade in terram Juda. Et profectus est David, et venit in saltum Haret.",
+        "SYN": "Но пророк Гад сказал Давиду: не оставайся в этом убежище, но ступай, иди в землю Иудину. И пошел Давид и пришел в лес Херет.",
+        "NEO": "Le prophète Gad dit à David : « Ne reste pas dans le lieu fort ; va-t’en et reviens dans le pays de Juda. » Et David s’en alla et se rendit à la forêt de Haret.",
+        "NAB": "But the prophet Gad said to David: \"Do not remain in the refuge. Leave, and go to the land of Judah.\" And so David left and went to the forest of Hereth.",
+        "VAT_ES": "El profeta Gad dijo a David: «&iexcl;No te quedes en el refugio! Entra en el país de Judá». Entonces David partió y entró en el bosque de Járet.",
+        "CEI": "Il profeta Gad disse a Davide: \"Non restare più in questo rifugio. Parti e và nel paese di Giuda\". Davide partì e andò nella foresta di Cheret."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֣ע שָׁא֔וּל כִּ֚י נוֹדַ֣ע דָּוִ֔ד וַ/אֲנָשִׁ֖ים אֲשֶׁ֣ר אִתּ֑/וֹ וְ/שָׁאוּל֩ יוֹשֵׁ֨ב בַּ/גִּבְעָ֜ה תַּֽחַת הָ/אֶ֤שֶׁל בָּֽ/רָמָה֙ וַ/חֲנִית֣/וֹ בְ/יָד֔/וֹ וְ/כָל עֲבָדָ֖י/ו נִצָּבִ֥ים עָלָֽי/ו׃",
+        "LXX": "Καὶ ἤκουσεν Σαοὺλ ὅτι ἔγνωσται Δαυεὶδ καὶ οἱ ἄνδρες οἱ μετ’ αὐτοῦ· καὶ Σαοὺλ ἐκάθητο ἐν τῷ βουνῷ ὑπὸ τὴν ἄρουραν τὴν ἐν Βαμά, καὶ τὸ δόρυ ἐν τῇ χειρὶ αὐτοῦ, καὶ πάντες οἱ παῖδες αὐτοῦ παρειστήκεισαν αὐτῷ.",
+        "VUL": "Et audivit Saul quod apparuisset David, et viri qui erant cum eo. Saul autem cum maneret in Gabaa, et esset in nemore quod est in Rama, hastam manu tenens, cunctique servi ejus circumstarent eum,",
+        "SYN": "И услышал Саул, что Давид появился и люди, бывшие с ним. Саул сидел тогда в Гиве под дубом на горе, с копьем в руке, и все слуги его окружали его.",
+        "NEO": "Saül apprit que David et les gens qui étaient avec lui avaient été reconnus. Or Saül était assis, à Gabaa, sous le tamarisque, sur la hauteur, sa lance à la main, et tous ses serviteurs étaient rangés devant lui.",
+        "NAB": "Now Saul heard that David and his men had been located. At the time he was sitting in Gibeah under a tamarisk tree on the high place, holding his spear, while all his servants were standing by.",
+        "VAT_ES": "Saúl se enteró de que David y sus compañeros habían sido descubiertos. El se encontraba entonces en Guibeá, sentado debajo del tamarisco del lugar alto; tenía su espada en la mano y todos sus servidores estaban de pie en torno de él.",
+        "CEI": "Saul venne a sapere che era stato avvistato Davide con gli uomini che erano con lui. Saul era seduto in Gàbaa, sotto il tamarisco sull'altura, con la lancia in mano e i ministri intorno."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שָׁא֗וּל לַֽ/עֲבָדָי/ו֙ הַ/נִּצָּבִ֣ים עָלָ֔י/ו שִׁמְעוּ נָ֖א בְּנֵ֣י יְמִינִ֑י גַּם לְ/כֻלְּ/כֶ֗ם יִתֵּ֤ן בֶּן יִשַׁי֙ שָׂד֣וֹת וּ/כְרָמִ֔ים לְ/כֻלְּ/כֶ֣ם יָשִׂ֔ים שָׂרֵ֥י אֲלָפִ֖ים וְ/שָׂרֵ֥י מֵאֽוֹת׃",
+        "LXX": "καὶ εἶπεν Σαοὺλ πρὸς τοὺς παῖδας αὐτοῦ τοὺς παρεστηκότας αὐτῷ· καὶ εἶπεν αὐτοῖς Ἀκούσατε δή, υἱοὶ Βενιαμείν· εἰ ἀληθῶς πᾶσιν ὑμῖν δώσει ὁ υἱὸς Ἰεσσαὶ ἀγροὺς καὶ ἀμπελῶνας, καὶ πάντας ὑμᾶς τάξει ἑκατοντάρχους καὶ χιλιάρχους;",
+        "VUL": "ait ad servos suos qui assistebant ei : Audite nunc, filii Jemini : numquid omnibus vobis dabit filius Isai agros et vineas, et universos vos faciet tribunos et centuriones ?",
+        "SYN": "И сказал Саул слугам своим, окружавшим его: послушайте, сыны Вениаминовы, неужели всем вам даст сын Иессея поля и виноградники и всех вас поставит тысяченачальниками и сотниками,",
+        "NEO": "Saül dit à ses serviteurs qui étaient rangés devant lui : « Ecoutez, Benjamites : le fils d’Isaï vous donnera-t-il aussi à tous des champs et des vignes, fera-t-il de vous tous des chefs de milliers et des chefs de centaines,",
+        "NAB": "So he said to them: \"Listen, men of Benjamin! Will the son of Jesse give all of you fields and vineyards? Will he make each of you an officer over a thousand or a hundred men,",
+        "VAT_ES": "Saúl dijo a sus servidores: «&iexcl;Escuchen, benjaminitas! &iquest;Acaso el hijo de Jesé también les dará a todos ustedes campos y viñas, y los hará a todos jefes de mil y de cien hombres,",
+        "CEI": "Saul disse allora ai ministri che gli stavano intorno: \"Ascoltate, voi Beniaminiti, voi tutti che siete qui. Forse il figlio di Iesse darà a tutti voi campi e vigne, vi farà capi di migliaia e capi di centinaia,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּי֩ קְשַׁרְתֶּ֨ם כֻּלְּ/כֶ֜ם עָלַ֗/י וְ/אֵין גֹּלֶ֤ה אֶת אָזְנִ/י֙ בִּ/כְרָת בְּנִ֣/י עִם בֶּן יִשַׁ֔י וְ/אֵין חֹלֶ֥ה מִ/כֶּ֛ם עָלַ֖/י וְ/גֹלֶ֣ה אֶת אָזְנִ֑/י כִּ֣י הֵקִים֩ בְּנִ֨/י אֶת עַבְדִּ֥/י עָלַ֛/י לְ/אֹרֵ֖ב כַּ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "ὅτι σύγκεισθε πάντες ὑμεῖς ἐπ’ ἐμέ, καὶ οὐκ ἔστιν ὁ ἀποκαλύπτων τὸ ὠτίον μου ἐν τῷ διαθέσθαι τὸν υἱόν μου διαθήκην μετὰ τοῦ υἱοῦ Ἰεσσαί, καὶ οὐκ ἔστιν πονῶν περὶ ἐμοῦ ἐξ ὑμῶν καὶ ἀποκαλύπτων τὸ ὠτίον μου, ὅτι ἐπήγειρεν ὁ υἱός μου τὸν δοῦλόν μου ἐπ’ ἐμὲ εἰς ἐχθρόν, ὡς ἡ ἡμέρα αὕτη.",
+        "VUL": "quoniam conjurastis omnes adversum me, et non est qui mihi renuntiet, maxime cum et filius meus fdus inierit cum filio Isai. Non est qui vicem meam doleat ex vobis, nec qui annuntiet mihi : eo quod suscitaverit filius meus servum meum adversum me, insidiantem mihi usque hodie.",
+        "SYN": "что вы все сговорились против меня, и никто не открыл мне, когда сын мой вступил в дружбу с сыном Иессея, и никто из вас не пожалел о мне и не открыл мне, что сын мой возбудил против меня раба моего строить мне ковы, как это ныне видно?",
+        "NEO": "que vous vous soyez tous ligués contre moi, qu’il n’y ait personne qui m’ait informé que mon fils a fait alliance avec le fils d’Isaï, et que nul de vous n’en souffre pour moi et ne m’avertisse que mon fils a soulevé mon serviteur contre moi, pour me dresser des embûches, comme il le fait aujourd’hui ? »",
+        "NAB": "that you have all conspired against me and no one tells me that my son has made an agreement with the son of Jesse? None of you shows sympathy for me or discloses to me that my son has stirred up my servant to be an enemy against me, as is the case today.\"",
+        "VAT_ES": "para que hayan conspirado contra mí? Nadie me avisa nada cuando mi hijo pacta con el hijo de Jesé. Ninguno de ustedes se conduele conmigo, ni me revela que mi hijo sublevó contra mí a mi esclavo, para que me tienda acechanzas, como sucede en el día de hoy?»",
+        "CEI": "perché voi tutti siate d'accordo contro di me? Nessuno mi avverte dell'alleanza di mio figlio con il figlio di Iesse, nessuno di voi si interessa di me e nessuno mi confida che mio figlio ha sollevato il mio servo contro di me per ordire insidie, come avviene oggi\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יַּ֜עַן דֹּאֵ֣ג הָ/אֲדֹמִ֗י וְ/ה֛וּא נִצָּ֥ב עַל עַבְדֵֽי שָׁא֖וּל וַ/יֹּאמַ֑ר רָאִ֨יתִי֙ אֶת בֶּן יִשַׁ֔י בָּ֣א נֹ֔בֶ/ה אֶל אֲחִימֶ֖לֶךְ בֶּן אֲחִטֽוּב׃",
+        "LXX": "καὶ ἀποκρίνεται Δωὴκ ὁ Σύρος ὁ καθεστηκὼς ἐπὶ τὰς ἡμιόνους Σαοὺλ καὶ εἶπεν Ἑόρακα τὸν υἱὸν Ἰεσσαὶ παραγινόμενον εἰς Νόμβα πρὸς Ἀβειμέλεχ υἱὸν Ἀχιτὼβ τὸν ἱερέα·",
+        "VUL": "Respondens autem Doëg Idumæus, qui assistebat, et erat primus inter servos Saul : Vidi, inquit, filium Isai in Nobe apud Achimelech filium Achitob sacerdotem.",
+        "SYN": "И отвечал Доик Идумеянин, стоявший со слугами Сауловыми, и сказал: я видел, как сын Иессея приходил в Номву к Ахимелеху, сыну Ахитува,",
+        "NEO": "Doëg, l’Edomite, qui était le chef des serviteurs de Saül, répondit et dit : « J’ai vu le fils d’Isaï venir à Nobé, auprès d’Achimélech, fils d’Achitob.",
+        "NAB": "Then Doeg the Edomite, who was standing with the officers of Saul, spoke up: \"I saw the son of Jesse come to Ahimelech, son of Ahitub, in Nob.",
+        "VAT_ES": "Entonces intervino Doeg, el edomita, que estaba de pie junto a los servidores de Saúl, y dijo: «Yo vi al hijo de Jesé cuando llegó a Nob, a ver a Ajimélec, hijo de Ajitub.",
+        "CEI": "Rispose Doeg l'Idumeo, che stava con i ministri di Saul: \"Ho visto il figlio di Iesse quando venne a Nob da Achimelech figlio di Achitub"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁאַל ל/וֹ֙ בַּֽ/יהוָ֔ה וְ/צֵידָ֖ה נָ֣תַן ל֑/וֹ וְ/אֵ֗ת חֶ֛רֶב גָּלְיָ֥ת הַ/פְּלִשְׁתִּ֖י נָ֥תַן לֽ/וֹ׃",
+        "LXX": "καὶ ἠρώτα αὐτῷ διὰ τοῦ θεοῦ, καὶ ἐπισιτισμὸν ἔδωκεν αὐτῷ, καὶ τὴν ῥομφαίαν Γολιὰδ τοῦ ἀλλοφύλου ἔδωκεν αὐτῷ.",
+        "VUL": "Qui consuluit pro eo Dominum, et cibaria dedit ei : sed et gladium Goliath Philisthæi dedit illi.",
+        "SYN": "и тот вопросил о нем Господа, и дал ему продовольствие, и меч Голиафа Филистимлянина отдал ему.",
+        "NEO": "Achimélech a consulté pour lui \\+w Yahweh|strong=\"H3068\"\\+w**, et il lui a donné des vivres ; il lui a aussi donné l’épée de Goliath, le Philistin. »",
+        "NAB": "He consulted the LORD for him and gave him supplies, and the sword of Goliath the Philistine as well.\"",
+        "VAT_ES": "Ajimélec consultó por él al Señor, le dio provisiones y le entregó la espada de Goliat, el filisteo».",
+        "CEI": "e costui ha consultato il Signore per lui, gli ha dato da mangiare e gli ha consegnato la spada di Golia il Filisteo\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֣ח הַ/מֶּ֡לֶךְ לִ/קְרֹא֩ אֶת אֲחִימֶ֨לֶךְ בֶּן אֲחִיט֜וּב הַ/כֹּהֵ֗ן וְ/אֵ֨ת כָּל בֵּ֥ית אָבִ֛י/ו הַ/כֹּהֲנִ֖ים אֲשֶׁ֣ר בְּ/נֹ֑ב וַ/יָּבֹ֥אוּ כֻלָּ֖/ם אֶל הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ ἀπέστειλεν ὁ βασιλεὺς καλέσαι τὸν Ἀβειμέλεχ υἱὸν Ἀχιτὼβ καὶ πάντας τοὺς υἱοὺς τοῦ πατρὸς αὐτοῦ τοὺς ἱερεῖς τοὺς ἐν Νόμμα· καὶ παρεγένοντο πάντες πρὸς τὸν βασιλέα.",
+        "VUL": "Misit ergo rex ad accersendum Achimelech sacerdotem filium Achitob, et omnem domum patris ejus, sacerdotum qui erant in Nobe, qui universi venerunt ad regem.",
+        "SYN": "И послал царь призвать Ахимелеха, сына Ахитувова, священника, и весь дом отца его, священников, что в Номве; и пришли они все к царю.",
+        "NEO": "Le roi envoya appeler le prêtre Achimélech, fils d’Achitob, et toute la maison de son père, les prêtres qui étaient à Nobé.",
+        "NAB": "At this the king sent a summons to Ahimelech the priest, son of Ahitub, and to all his family who were priests in Nob; and they all came to the king.",
+        "VAT_ES": "El rey mandó llamar al sacerdote Ajimélec, hijo de Ajitub, y a toda su casa paterna, los sacerdotes de Nob. Todos ellos comparecieron ante el rey,",
+        "CEI": "Il re subito convocò il sacerdote Achimelech figlio di Achitub e tutti i sacerdoti della casa di suo padre che erano in Nob ed essi vennero tutti dal re."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שָׁא֔וּל שְֽׁמַֽע נָ֖א בֶּן אֲחִיט֑וּב וַ/יֹּ֖אמֶר הִנְ/נִ֥י אֲדֹנִֽ/י׃",
+        "LXX": "καὶ εἶπεν Σαούλ Ἄκουε δή, υἱὲ Ἀχιτώβ· καὶ εἶπεν Ἰδοὺ ἐγώ· λάλει, κύριε.",
+        "VUL": "Et ait Saul ad Achimelech : Audi, fili Achitob. Qui respondit : Præsto sum, domine.",
+        "SYN": "И сказал Саул: послушай, сын Ахитува. И тот отвечал: вот я, господин мой.",
+        "NEO": "Ils vinrent tous vers le roi ; et Saül dit : « Ecoute, fils d’Achitob ! » Il répondit : « Me voici, mon seigneur. »",
+        "NAB": "Then Saul said, \"Listen, son of Ahitub!\" He replied, \"Yes, my lord.\"",
+        "VAT_ES": "y Saúl dijo: «&iexcl;Escucha bien, hijo de Ajitub!». «A tus órdenes, rey», respondió él.",
+        "CEI": "Disse Saul: \"Ascolta, figlio di Achitub\". Rispose: \"Eccomi, signor mio\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אל/ו אֵלָי/ו֙ שָׁא֔וּל לָ֚/מָּה קְשַׁרְתֶּ֣ם עָלַ֔/י אַתָּ֖ה וּ/בֶן יִשָׁ֑י בְּ/תִתְּ/ךָ֨ ל֜/וֹ לֶ֣חֶם וְ/חֶ֗רֶב וְ/שָׁא֥וֹל ל/וֹ֙ בֵּֽ/אלֹהִ֔ים לָ/ק֥וּם אֵלַ֛/י לְ/אֹרֵ֖ב כַּ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ εἶπεν αὐτῷ Σαούλ Ἵνα τί συνέθου κατ’ ἐμοῦ σὺ καὶ ὁ υἱὸς Ἰεσσαί, δοῦναί σε αὐτῷ ἄρτον καὶ ῥομφαίαν, καὶ ἐρωτᾷν αὐτῷ διὰ τοῦ θεοῦ, θέσθαι αὐτὸν ἐπ’ ἐμὲ εἰς ἐχθρόν, ὡς ἡ ἡμέρα αὕτη;",
+        "VUL": "Dixitque ad eum Saul : Quare conjurastis adversum me, tu et filius Isai, et dedisti ei panes et gladium, et consuluisti pro eo Deum, ut consurgeret adversum me, insidiator usque hodie permanens ?",
+        "SYN": "И сказал ему Саул: для чего вы сговорились против меня, ты и сын Иессея, что ты дал ему хлебы и меч и вопросил о нем Бога, чтоб он восстал против меня и строил мне ковы, как это ныне видно?",
+        "NEO": "Saül lui dit : « Pourquoi vous êtes-vous ligués contre moi, toi et le fils d’Isaï ? Tu lui as donné du pain et une épée, et tu as consulté Dieu pour lui, pour qu’il s’élève contre moi et me dresse des embûches, comme il le fait aujourd’hui ? »",
+        "NAB": "Saul asked him, \"Why did you conspire against me with the son of Jesse by giving him food and a sword and by consulting God for him, that he might rebel against me and become my enemy, as is the case today?\"",
+        "VAT_ES": "Saúl añadió: «&iquest;Por qué han conspirado contra mí, tú y el hijo de Jesé? Tú le has dado pan y una espada, y has consultado a Dios por él, para que se subleve contra mí y me tienda acechanzas, como sucede en el día de hoy».",
+        "CEI": "Saul gli disse: \"Perché vi siete accordati contro di me, tu e il figlio di Iesse, dal momento che gli hai fornito pane e spada e hai consultato l'oracolo di Dio per lui, allo scopo di sollevarmi oggi un nemico?\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יַּ֧עַן אֲחִימֶ֛לֶךְ אֶת הַ/מֶּ֖לֶךְ וַ/יֹּאמַ֑ר וּ/מִ֤י בְ/כָל עֲבָדֶ֨י/ךָ֙ כְּ/דָוִ֣ד נֶאֱמָ֔ן וַ/חֲתַ֥ן הַ/מֶּ֛לֶךְ וְ/סָ֥ר אֶל מִשְׁמַעְתֶּ֖/ךָ וְ/נִכְבָּ֥ד בְּ/בֵיתֶֽ/ךָ׃",
+        "LXX": "καὶ ἀπεκρίθη τῷ βασιλεῖ καὶ εἶπεν Καὶ τίς ἐν πᾶσιν τοῖς δούλοις σου ὡς Δαυεὶδ πιστός, καὶ γαμβρὸς τοῦ βασιλέως καὶ ἄρχων παντὸς παραγγέλματός σου καὶ ἔνδοξος ἐν τῷ οἴκῳ σου;",
+        "VUL": "Respondensque Achimelech regi, ait : Et quis in omnibus servis tuis sicut David, fidelis, et gener regis, et pergens ad imperium tuum, et gloriosus in domo tua ?",
+        "SYN": "И отвечал Ахимелех царю и сказал: кто из всех рабов твоих верен как Давид? он и зять царя, и исполнитель повелений твоих, и почтен в доме твоем.",
+        "NEO": "Achimélech répondit au roi et dit : « Lequel d’entre tous tes serviteurs est, comme David, d’une fidélité éprouvée, gendre du roi, admis à tes conseils et honoré dans ta maison ?",
+        "NAB": "Ahimelech answered the king: \"And who among all your servants is as loyal as David, the king's son-in-law, captain of your bodyguard, and honored in your own house?",
+        "VAT_ES": "Ajimélec respondió al rey: «&iquest;Hay entre todos tus servidores alguien tan de confianza como David? El es yerno del rey, es jefe de tu guardia personal y todos lo honran en tu casa.",
+        "CEI": "Achimelech rispose al re: \"E chi è come Davide tra tutti i ministri del re? È fedele, è genero del re, capo della tua guardia e onorato in casa tua."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "הַ/יּ֧וֹם הַחִלֹּ֛תִי ל/שאול לִ/שְׁאָל ל֥/וֹ בֵ/אלֹהִ֖ים חָלִ֣ילָ/ה לִּ֑/י אַל יָשֵׂם֩ הַ/מֶּ֨לֶךְ בְּ/עַבְדּ֤/וֹ דָבָר֙ בְּ/כָל בֵּ֣ית אָבִ֔/י כִּ֠י לֹֽא יָדַ֤ע עַבְדְּ/ךָ֙ בְּ/כָל זֹ֔את דָּבָ֥ר קָטֹ֖ן א֥וֹ גָדֽוֹל׃",
+        "LXX": "ἢ σήμερον ἦργμαι ἐρωτᾷν αὐτῷ διὰ τοῦ θεοῦ; μηδαμῶς· μὴ δότω ὁ βασιλεὺς κατὰ τοῦ δούλου αὐτοῦ λόγον καὶ ἐφ’ ὅλον τὸν οἶκον τοῦ πατρὸς αὐτοῦ, ὅτι οὐκ ᾔδει ὁ δοῦλος ὁ σὸς ἐν πᾶσιν τούτοις ῥῆμα μικρὸν ἢ μέγα.",
+        "VUL": "num hodie cpi pro eo consulere Deum ? absit hoc a me : ne suspicetur rex adversus servum suum rem hujuscemodi, in universa domo patris mei : non enim scivit servus tuus quidquam super hoc negotio, vel modicum vel grande.",
+        "SYN": "Теперь ли я стал вопрошать для него Бога? Нет, не обвиняй в этом, царь, раба твоего и весь дом отца моего, ибо во всем этом деле не знает раб твой ни малого, ни великого.",
+        "NEO": "Est-ce aujourd’hui que j’aurais commencé à consulter Dieu pour lui ? Loin de moi ! Que le roi ne mette pas à la charge de son serviteur une chose qui pèserait sur toute la maison de mon père, car ton serviteur n’a rien su de tout cela, ni peu ni beaucoup. »",
+        "NAB": "Is this the first time I have consulted God for him? No indeed! Let not the king accuse his servant or anyone in my family of such a thing. Your servant knows nothing at all, great or small, about the whole matter.\"",
+        "VAT_ES": "&iquest;O acaso es esta la primera vez que consulto a Dios por él? &iexcl;No, lejos de mí! Que el rey no levante ningún cargo contra tu servidor ni contra toda su casa paterna, porque tu servidor no sabía absolutamente nada de este asunto».",
+        "CEI": "È forse oggi la prima volta che consulto Dio per lui? Lungi da me! Non getti il re questa colpa sul suo servo né su tutta la casa di mio padre, poiché il tuo servo non sapeva di questa faccenda cosa alcuna, né piccola né grande\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר הַ/מֶּ֔לֶךְ מ֥וֹת תָּמ֖וּת אֲחִימֶ֑לֶךְ אַתָּ֖ה וְ/כָל בֵּ֥ית אָבִֽי/ךָ׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεὺς Σαούλ Θανάτῳ ἀποθανῇ, Ἀβειμέλεχ, σὺ καὶ πᾶς ὁ οἶκος τοῦ πατρός σου.",
+        "VUL": "Dixitque rex : Morte morieris Achimelech, tu et omnis domus patris tui.",
+        "SYN": "И сказал царь: ты должен умереть, Ахимелех, ты и весь дом отца твоего.",
+        "NEO": "Le roi dit : « Tu mourras, Achimélech, toi et toute la maison de ton père. »",
+        "NAB": "But the king said, \"You shall die, Ahimelech, with all your family.\"",
+        "VAT_ES": "Pero el rey replicó: «&iexcl;Morirás sin remedio, Ajimélec, tú y toda tu casa paterna!».",
+        "CEI": "Ma il re disse: \"Devi morire, Achimelech, tu e tutta la casa di tuo padre\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר הַ/מֶּ֡לֶךְ לָ/רָצִים֩ הַ/נִּצָּבִ֨ים עָלָ֜י/ו סֹ֥בּוּ וְ/הָמִ֣יתוּ כֹּהֲנֵ֣י יְהוָ֗ה כִּ֤י גַם יָדָ/ם֙ עִם דָּוִ֔ד וְ/כִ֤י יָֽדְעוּ֙ כִּֽי בֹרֵ֣חַ ה֔וּא וְ/לֹ֥א גָל֖וּ אֶת אזנ/ו אָזְנִ֑/י וְ/לֹֽא אָב֞וּ עַבְדֵ֤י הַ/מֶּ֨לֶךְ֙ לִ/שְׁלֹ֣חַ אֶת יָדָ֔/ם לִ/פְגֹ֖עַ בְּ/כֹהֲנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεὺς τοῖς παρατρέχουσιν τοῖς ἐφεστηκόσιν πρὸς αὐτόν Προσαγάγετε καὶ θανατοῦτε τοὺς ἱερεῖς τοῦ κυρίου, ὅτι ἡ χεὶρ αὐτῶν μετὰ Δαυείδ, καὶ ὅτι ἔγνωσαν ὅτι φεύγει αὐτὸς καὶ οὐκ ἀπεκάλυψαν τὸ ὠτίον μου· καὶ οὐκ ἐβουλήθησαν οἱ παῖδες τοῦ βασιλέως ἐπενεγκεῖν τὰς χεῖρας αὐτῶν ἁμαρτῆσαι εἰς τοὺς ἱερεῖς Κυρίου.",
+        "VUL": "Et ait rex emissariis qui circumstabant eum : Convertimini, et interficite sacerdotes Domini, nam manus eorum cum David est : scientes quod fugisset, et non indicaverunt mihi. Noluerunt autem servi regis extendere manus suas in sacerdotes Domini.",
+        "SYN": "И сказал царь телохранителям, стоявшим при нем: ступайте, умертвите священников Господних, ибо и их рука с Давидом, и они знали, что он убежал, и не открыли мне. Но слуги царя не хотели поднять рук своих на убиение священников Господних.",
+        "NEO": "Et le roi dit aux gardes qui se tenaient près de lui : « Tournez-vous et mettez à mort les prêtres de \\+w Yahweh|strong=\"H3068\"\\+w** ; car leur main est avec David et, sachant bien qu’il était en fuite, ils ne m’en ont pas informé. » Mais les serviteurs du roi ne voulurent pas étendre la main pour frapper les prêtres de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The king then commanded his henchmen standing by: \"Make the rounds and kill the priests of the LORD, for they assisted David. They knew he was a fugitive and yet failed to inform me.\" But the king's servants refused to lift a hand to strike the priests of the LORD.",
+        "VAT_ES": "Luego el rey dijo a los de su escolta, que estaban apostados junto a él: «&iexcl;Vuélvanse y maten a los sacerdotes del Señor, porque también ellos están de parte de David! Aun sabiendo que él huía, no me lo denunciaron». Pero los servidores del rey no quisieron extender su mano para ultimar a los sacerdotes del Señor.",
+        "CEI": "Il re disse ai corrieri che stavano attorno a lui: \"Accostatevi e mettete a morte i sacerdoti del Signore, perché hanno prestato mano a Davide e non mi hanno avvertito pur sapendo che egli fuggiva\". Ma i ministri del re non vollero stendere le mani per colpire i sacerdoti del Signore."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר הַ/מֶּ֨לֶךְ֙ ל/דויג לְ/דוֹאֵ֔ג סֹ֣ב אַתָּ֔ה וּ/פְגַ֖ע בַּ/כֹּהֲנִ֑ים וַ/יִּסֹּ֞ב דויג דּוֹאֵ֣ג הָ/אֲדֹמִ֗י וַ/יִּפְגַּע הוּא֙ בַּ/כֹּ֣הֲנִ֔ים וַ/יָּ֣מֶת בַּ/יּ֣וֹם הַ/ה֗וּא שְׁמֹנִ֤ים וַ/חֲמִשָּׁה֙ אִ֔ישׁ נֹשֵׂ֖א אֵפ֥וֹד בָּֽד׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεὺς τῷ Δωήκ Ἐπιστρέφου σὺ καὶ ἀπάντα εἰς τοὺς ἱερεῖς· καὶ ἐπεστράφη Δωὴκ ὁ Σύρος καὶ ἐθανάτωσεν τοὺς ἱερεῖς Κυρίου ἐν τῇ ἡμέρᾳ ἐκείνῃ, τριακοσίους καὶ πέντε ἄνδρας, πάντας αἴροντας ἐφούδ.",
+        "VUL": "Et ait rex ad Doëg : Convertere tu, et irrue in sacerdotes. Conversusque Doëg Idumæus, irruit in sacerdotes, et trucidavit in die illa octoginta quinque viros vestitos ephod lineo.",
+        "SYN": "И сказал царь Доику: ступай ты и умертви священников. И пошел Доик Идумеянин, и напал на священников, и умертвил в тот день восемьдесят пять мужей, носивших льняной ефод;",
+        "NEO": "Alors le roi dit à Doëg : « Tourne-toi et frappe les prêtres. » Et Doëg l’Edomite se tourna, et ce fut lui qui frappa les prêtres ; il mit à mort en ce jour quatre-vingt-cinq hommes portant l’éphod de lin.",
+        "NAB": "The king therefore commanded Doeg, \"You make the rounds and kill the priests!\" So Doeg the Edomite went from one to the next and killed the priests himself, slaying on that day eighty-five who wore the linen ephod.",
+        "VAT_ES": "Entonces el rey dijo a Doeg: «Vuélvete y mátalos tú». Doeg se volvió y acometió contra los sacerdotes; así mató aquel día a ochenta y cinco hombres que vestían el efod de lino.",
+        "CEI": "Allora il re disse a Doeg: \"Accostati tu e colpisci i sacerdoti\". Doeg l'Idumeo si fece avanti e colpì di sua mano i sacerdoti e uccise in quel giorno ottantacinque uomini che portavano l'efod di lino."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨ת נֹ֤ב עִיר הַ/כֹּֽהֲנִים֙ הִכָּ֣ה לְ/פִי חֶ֔רֶב מֵ/אִישׁ֙ וְ/עַד אִשָּׁ֔ה מֵ/עוֹלֵ֖ל וְ/עַד יוֹנֵ֑ק וְ/שׁ֧וֹר וַ/חֲמ֛וֹר וָ/שֶׂ֖ה לְ/פִי חָֽרֶב׃",
+        "LXX": "καὶ τὴν Νόμβα τὴν πόλιν τῶν ἱερέων ἐπάταξεν ἐν στόματι ῥομφαίας ἀπὸ ἀνδρὸς ἕως γυναικός, ἀπὸ νηπίου ἕως θηλάζοντος, καὶ μόσχου καὶ ὄνου καὶ προβάτου.",
+        "VUL": "Nobe autem civitatem sacerdotum percussit in ore gladii, viros et mulieres, et parvulos et lactentes, bovemque, et asinum, et ovem in ore gladii.",
+        "SYN": "и Номву, город священников, поразил мечом; и мужчин и женщин, и юношей и младенцев, и волов и ослов и овец поразил мечом.",
+        "NEO": "Saül frappa encore du tranchant de l’épée Nobé, ville sacerdotale : hommes et femmes, enfants et nourrissons, bœufs, ânes et brebis, furent passés au fil de l’épée.",
+        "NAB": "Saul also put the priestly city of Nob to the sword, including men and women, children and infants, and oxen, asses and sheep.",
+        "VAT_ES": "En Nob, la ciudad de los sacerdotes, Saúl pasó al filo de la espada a hombres y mujeres, niños y pequeños, bueyes, asnos y ovejas.",
+        "CEI": "Saul passò a fil di spada Nob, la città dei sacerdoti: uomini e donne, fanciulli e lattanti; anche buoi, asini e pecore passò a fil di spada."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּמָּלֵ֣ט בֵּן אֶחָ֗ד לַ/אֲחִימֶ֨לֶךְ֙ בֶּן אֲחִט֔וּב וּ/שְׁמ֖/וֹ אֶבְיָתָ֑ר וַ/יִּבְרַ֖ח אַחֲרֵ֥י דָוִֽד׃",
+        "LXX": "Καὶ διασώζεται υἱὸς εἷς τῷ Ἀβειμέλεχ υἱῷ Ἀχειτώβ, καὶ ὄνομα αὐτῷ Ἀβιαθάρ, καὶ ἔφυγεν ὀπίσω Δαυείδ.",
+        "VUL": "Evadens autem unus filius Achimelech filii Achitob, cujus nomen erat Abiathar, fugit ad David,",
+        "SYN": "Спасся один только сын Ахимелеха, сына Ахитува, по имени Авиафар, и убежал к Давиду.",
+        "NEO": "Un seul fils d’Achimélech, fils d’Achitob, s’échappa ; son nom était Abiathar, et il se réfugia auprès de David.",
+        "NAB": "One son of Ahimelech, son of Ahitub, named Abiathar, escaped and fled to David.",
+        "VAT_ES": "Sólo pudo escapar un hijo de Ajimélec, hijo de Ajitub, llamado Abiatar, que huyó a reunirse con David",
+        "CEI": "Scampò un figlio di Achimelech, figlio di Achitub, che si chiamava Ebiatar, il quale fuggì presso Davide."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יַּגֵּ֥ד אֶבְיָתָ֖ר לְ/דָוִ֑ד כִּ֚י הָרַ֣ג שָׁא֔וּל אֵ֖ת כֹּהֲנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἀπήγγειλεν Ἀβιαθὰρ τῷ Δαυεὶδ ὅτι ἐθανάτωσεν Σαοὺλ πάντας τοὺς ἱερεῖς τοῦ κυρίου.",
+        "VUL": "et annuntiavit ei quod occidisset Saul sacerdotes Domini.",
+        "SYN": "И рассказал Авиафар Давиду, что Саул умертвил священников Господних.",
+        "NEO": "Abiathar annonça à David que Saül avait tué les prêtres de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "When Abiathar told David that Saul had slain the priests of the LORD,",
+        "VAT_ES": "y le contó que Saúl había dado muerte a los sacerdotes del Señor.",
+        "CEI": "Ebiatar narrò a Davide che Saul aveva trucidato i sacerdoti del Signore."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר דָּוִ֜ד לְ/אֶבְיָתָ֗ר יָדַ֜עְתִּי בַּ/יּ֤וֹם הַ/הוּא֙ כִּֽי שָׁם֙ דויג דּוֹאֵ֣ג הָ/אֲדֹמִ֔י כִּֽי הַגֵּ֥ד יַגִּ֖יד לְ/שָׁא֑וּל אָנֹכִ֣י סַבֹּ֔תִי בְּ/כָל נֶ֖פֶשׁ בֵּ֥ית אָבִֽי/ךָ׃",
+        "LXX": "καὶ εἶπεν Δαυεὶδ τῷ Ἀβιαθάρ ᾜδειν ὅτι ἐν τῇ ἡμέρᾳ ἐκείνῃ ὅτι Δωὴκ ὁ Σύρος ὅτι ἀπαγγέλλων ἀπαγγελεῖ τῷ Σαούλ· ἐγώ εἰμι αἴτιος τῶν ψυχῶν οἴκου τοῦ πατρός σου.",
+        "VUL": "Et ait David ad Abiathar : Sciebam in die illa quod cum ibi esset Doëg Idumæus, procul dubio annuntiaret Sauli : ego sum reus omnium animarum patris tui.",
+        "SYN": "И сказал Давид Авиафару: я знал в тот день, когда там был Доик Идумеянин, что он непременно донесет Саулу; я виновен во всех душах дома отца твоего;",
+        "NEO": "Et David dit à Abiathar : « Je savais bien, en ce jour-là, que Doëg l’Edomite, qui était là, ne manquerai pas d’informer Saül. C’est moi qui suis cause de la mort de toute la maison de ton père.",
+        "NAB": "David said to him: \"I knew that day, when Doeg the Edomite was there, that he would surely tell Saul. I am responsible for the death of all your family.",
+        "VAT_ES": "David dijo a Abiatar: «Ya sabía yo aquel día que Doeg, el edomita, estaba allí presente y que no dejaría de informar a Saúl. Yo hice que las cosas se volvieran contra toda su casa paterna.",
+        "CEI": "Davide rispose ad Ebiatar: \"Quel giorno sapevo, data la presenza di Doeg l'Idumeo, che avrebbe riferito tutto a Saul. Io devo rispondere di tutte le vite della casa di tuo padre."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "שְׁבָ֤/ה אִתִּ/י֙ אַל תִּירָ֔א כִּ֛י אֲשֶׁר יְבַקֵּ֥שׁ אֶת נַפְשִׁ֖/י יְבַקֵּ֣שׁ אֶת נַפְשֶׁ֑/ךָ כִּֽי מִשְׁמֶ֥רֶת אַתָּ֖ה עִמָּדִֽ/י׃",
+        "LXX": "κάθου μετ’ ἐμοῦ, μὴ φοβοῦ· ὅτι οὗ ἐὰν ζητῶ τῇ ψυχῇ μοῦ τόπον, ζητήσω καὶ τῇ ψυχῇ σοῦ, ὅτι πεφύλαξαι σὺ παρ’ ἐμοί.",
+        "VUL": "Mane mecum : ne timeas : si quis quæsierit animam meam, quæret et animam tuam, mecumque servaberis.",
+        "SYN": "останься у меня, не бойся, ибо кто будет искать моей души, будет искать и твоей души; ты будешь у меня под охранением.",
+        "NEO": "Reste avec moi, ne crains rien ; car celui qui en veut à ma vie en veut à ta vie, et près de moi tu auras bonne garde. »",
+        "NAB": "Stay with me. Fear nothing; he that seeks your life must seek my life also. You are under my protection.\"",
+        "VAT_ES": "Pero quédate conmigo y no temas. El que atenta contra tu vida, atenta contra la mía. Junto a mí, estarás bien protegido».",
+        "CEI": "Rimani con me e non temere: chiunque vorrà la tua vita, vorrà la mia, perché tu starai presso di me come un deposito da custodire\"."
+      }
+    }
+  }
+}

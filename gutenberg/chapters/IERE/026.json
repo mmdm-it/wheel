@@ -1,0 +1,447 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IERE_026",
+  "book_key": "IERE",
+  "sequence": 26,
+  "chapter_in": {
+    "MT": 26,
+    "VUL": 26,
+    "LXX": 26
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בְּ/רֵאשִׁ֗ית מַמְלְכ֛וּת יְהוֹיָקִ֥ים בֶּן יֹאשִׁיָּ֖הוּ מֶ֣לֶךְ יְהוּדָ֑ה הָיָה֙ הַ/דָּבָ֣ר הַ/זֶּ֔ה מֵ/אֵ֥ת יְהוָ֖ה לֵ/אמֹֽר׃",
+        "LXX": "ἐν ἀρχῇ βασιλεύοντος Σεδεκίον βασιλέως ἐγένετο ὁ λόγος οὗτος περὶ Αἰλάμ.",
+        "VUL": "In principio regni Joakim filii Josiæ regis Juda, factum est verbum istud a Domino, dicens :",
+        "SYN": "В начале царствования Иоакима, сына Иосии, царя Иудейского, было такое слово от Господа:",
+        "NEO": "Au commencement du règne de Joakim, fils de Josias, roi de Juda, cette parole fut adressée à Jérémie de la part de \\+w Yahweh|strong=\"H3068\"\\+w** :",
+        "NAB": "In the beginning of the reign of Jehoiakim, son of Josiah, king of Judah, this message came from the LORD:",
+        "VAT_ES": "Al comienzo del reinado de Joaquím, hijo de Josías, rey de Judá, llegó esta palabra a Jeremías, de parte del Señor :",
+        "CEI": "All'inizio del regno di Ioiakìm figlio di Giosia, re di Giuda, fu rivolta a Geremia questa parola da parte del Signore."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כֹּ֣ה אָמַ֣ר יְהוָ֗ה עֲמֹד֮ בַּ/חֲצַ֣ר בֵּית יְהוָה֒ וְ/דִבַּרְתָּ֞ עַל כָּל עָרֵ֣י יְהוּדָ֗ה הַ/בָּאִים֙ לְ/הִשְׁתַּחֲוֺ֣ת בֵּית יְהוָ֔ה אֵ֚ת כָּל הַ/דְּבָרִ֔ים אֲשֶׁ֥ר צִוִּיתִ֖י/ךָ לְ/דַבֵּ֣ר אֲלֵי/הֶ֑ם אַל תִּגְרַ֖ע דָּבָֽר׃",
+        "LXX": "Τῇ Αἰγύπτῳ ἐπὶ δύναμιν Φαραὼ Νεχαὼ βασιλέως Αἰγύπτου, ὃς ἦν ἐπὶ τῷ ποταμῷ Εὐφράτῃ ἐν Χαρμείς, ὃν ἐπάταξε Ναβουχοδονόσορ βασιλεὺς Βαβυλῶνος ἐν τῷ ἔτει τῷ τετάρτῳ Ἰωακεὶμ βασιλέως Ἰούδα.",
+        "VUL": "Hæc dicit Dominus : Sta in atrio domus Domini, et loqueris ad omnes civitates Juda, de quibus veniunt ut adorent in domo Domini universos sermones quos ego mandavi tibi ut loquaris ad eos : noli subtrahere verbum,",
+        "SYN": "так говорит Господь: стань на дворе дома Господня и скажи ко всем городам Иудеи, приходящим на поклонение в дом Господень, все те слова, какие повелю тебе сказать им; не убавь ни слова.",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Tiens-toi dans le parvis de la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, et dis à ceux de toutes les villes de Juda qui viennent adorer dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, toutes les paroles que je t’ai commandé de leur dire ; n’en retranche pas un mot.",
+        "NAB": "Thus says the LORD: Stand in the court of the house of the LORD and speak to the people of all the cities of Judah who come to worship in the house of the LORD; whatever I command you, tell them, and omit nothing.",
+        "VAT_ES": "Así habla el Señor: Párate en el atrio de la Casa del Señor y di a toda la gente de las ciudades de Judá que vienen a postrarse en la Casa del Señor todas las palabras que yo te mandé decirles, sin omitir ni una sola.",
+        "CEI": "Disse il Signore: \"Và nell'atrio del tempio del Signore e riferisci a tutte le città di Giuda che vengono per adorare nel tempio del Signore tutte le parole che ti ho comandato di annunziare loro; non tralasciare neppure una parola."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אוּלַ֣י יִשְׁמְע֔וּ וְ/יָשֻׁ֕בוּ אִ֖ישׁ מִ/דַּרְכּ֣/וֹ הָ/רָעָ֑ה וְ/נִחַמְתִּ֣י אֶל הָ/רָעָ֗ה אֲשֶׁ֨ר אָנֹכִ֤י חֹשֵׁב֙ לַ/עֲשׂ֣וֹת לָ/הֶ֔ם מִ/פְּנֵ֖י רֹ֥עַ מַעַלְלֵי/הֶֽם׃",
+        "LXX": "Ἀναλάβετε ὅπλα καὶ ἀσπίδας, καὶ προσαγάγετε εἰς πόλεμον,",
+        "VUL": "si forte audiant, et convertantur unusquisque a via sua mala, et pniteat me mali quod cogito facere eis propter malitiam studiorum eorum.",
+        "SYN": "Может быть, они послушают и обратятся каждый от злого пути своего, и тогда Я отменю то бедствие, которое думаю сделать им за злые деяния их.",
+        "NEO": "Peut-être écouteront-ils et reviendront-ils chacun de leur mauvaise voie ; alors je me repentirai du mal que j’ai dessein de leur faire à cause de la méchanceté de leurs actions.",
+        "NAB": "Perhaps they will listen and turn back, each from his evil way, so that I may repent of the evil I have planned to inflict upon them for their evil deeds.",
+        "VAT_ES": "Tal vez escuchen y se conviertan de su mal camino; entonces yo me arrepentiré del mal que pienso hacerles a causa de la maldad de sus acciones.",
+        "CEI": "Forse ti ascolteranno e ognuno abbandonerà la propria condotta perversa; in tal caso disdirò tutto il male che pensavo di fare loro a causa della malvagità delle loro azioni."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/אָמַרְתָּ֣ אֲלֵי/הֶ֔ם כֹּ֖ה אָמַ֣ר יְהוָ֑ה אִם לֹ֤א תִשְׁמְעוּ֙ אֵלַ֔/י לָ/לֶ֨כֶת֙ בְּ/ת֣וֹרָתִ֔/י אֲשֶׁ֥ר נָתַ֖תִּי לִ/פְנֵי/כֶֽם׃",
+        "LXX": "καὶ ἐπισάξατε τοὺς ἵππους· ἐπίβητε, οἱ ἱππεῖς, καὶ κατάστητε ἐν ταῖς περικεφαλαίαις ὑμῶν, προσβάλετε τὰ δόρατα καὶ ἐνδύσασθε τοὺς θώρακας ὑμῶν.",
+        "VUL": "Et dices ad eos : Hæc dicit Dominus : Si non audieritis me, ut ambuletis in lege mea quam dedi vobis,",
+        "SYN": "И скажи им: так говорит Господь: если вы не послушаетесь Меня в том, чтобы поступать по закону Моему, который Я дал вам,",
+        "NEO": "Tu leur diras : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Si vous ne m’obéissez pas, en suivant la loi que j’ai mise devant vous,",
+        "NAB": "Say to them: Thus says the LORD: If you disobey me, not living according to the law I placed before you",
+        "VAT_ES": "Tú les dirás: Así habla el Señor: Si ustedes no me escuchan ni caminan según la Ley que yo les propuse;",
+        "CEI": "Tu dirai dunque loro: Dice il Signore: Se non mi ascolterete, se non camminerete secondo la legge che ho posto davanti a voi"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לִ/שְׁמֹ֗עַ עַל דִּבְרֵ֨י עֲבָדַ֣/י הַ/נְּבִאִ֔ים אֲשֶׁ֥ר אָנֹכִ֖י שֹׁלֵ֣חַ אֲלֵי/כֶ֑ם וְ/הַשְׁכֵּ֥ם וְ/שָׁלֹ֖חַ וְ/לֹ֥א שְׁמַעְתֶּֽם׃",
+        "LXX": "τί ὅτι αὐτοὶ πτοοῦνται καὶ ἀποχωροῦσιν εἰς τὸ ὀπίσω;διότι οἱ ἰσχυροὶ αὐτῶν κοπήσονται, φυγῇ ἔφυγον καὶ οὐκ ἀνέστρεψαν περιεχόμενοι κυκλόθεν, λέγει Κύριος.",
+        "VUL": "ut audiatis sermones servorum meorum prophetarum quos ego misi ad vos, de nocte consurgens, et dirigens, et non audistis :",
+        "SYN": "чтобы внимать словам рабов Моих, пророков, которых Я посылаю к вам, посылаю с раннего утра, и которых вы не слушаете, -",
+        "NEO": "en écoutant les paroles de mes serviteurs les prophètes, que j’envoie vers vous, que j’ai envoyés dès le matin, et que vous n’avez pas écoutés,",
+        "NAB": "and not listening to the words of my servants the prophets, whom I send you constantly though you do not obey them,",
+        "VAT_ES": "si no escuchan las palabras de mis servidores los profetas, que yo les envío incansablemente y a quienes ustedes no han escuchado,",
+        "CEI": "e se non ascolterete le parole dei profeti miei servi che ho inviato a voi con costante premura, ma che voi non avete ascoltato,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/נָתַתִּ֛י אֶת הַ/בַּ֥יִת הַ/זֶּ֖ה כְּ/שִׁלֹ֑ה וְ/אֶת הָ/עִ֤יר ה/זאתה הַ/זֹּאת֙ אֶתֵּ֣ן לִ/קְלָלָ֔ה לְ/כֹ֖ל גּוֹיֵ֥י הָ/אָֽרֶץ׃",
+        "LXX": "μὴ φευγέτω ὁ κοῦφος, καὶ μὴ ἀνασωζέσθω ὁ ἰσχυρὸς ἐπὶ βορρᾶν· τὰ παρὰ τὸν Εὐφράτην ἠσθένησεν, καὶ πεπτώκασιν.",
+        "VUL": "dabo domum istam sicut Silo, et urbem hanc dabo in maledictionem cunctis gentibus terræ.",
+        "SYN": "то с домом сим Я сделаю то же, что с Силомом, и город сей предам на проклятие всем народам земли.",
+        "NEO": "je traiterai cette maison comme Silo, et je ferai de cette ville un objet de malédiction pour toutes les nations de la terre.",
+        "NAB": "I will treat this house like Shiloh, and make this the city which all the nations of the earth shall refer to when cursing another.",
+        "VAT_ES": "entonces yo trataré a esta Casa como traté a Silo y haré de esta ciudad una maldición para todas las naciones de la tierra.",
+        "CEI": "io ridurrò questo tempio come quello di Silo e farò di questa città un esempio di maledizione per tutti i popoli della terra\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַֽ/יִּשְׁמְע֛וּ הַ/כֹּהֲנִ֥ים וְ/הַ/נְּבִאִ֖ים וְ/כָל הָ/עָ֑ם אֶֽת יִרְמְיָ֔הוּ מְדַבֵּ֛ר אֶת הַ/דְּבָרִ֥ים הָ/אֵ֖לֶּה בְּ/בֵ֥ית יְהוָֽה׃",
+        "LXX": "τίς οὗτος ὡς ποταμὸς ἀναβήσεται, καὶ ὡς ποταμοὶ κυμαίνουσιν ὕδωρ;",
+        "VUL": "Et audierunt sacerdotes, et prophetæ, et omnis populus, Jeremiam loquentem verba hæc in domo Domini.",
+        "SYN": "Священники и пророки и весь народ слушали Иеремию, когда он говорил сии слова в доме Господнем.",
+        "NEO": "Les prêtres, les prophètes et tout le peuple entendirent Jérémie prononcer ces paroles dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Now the priests, the prophets, and all the people heard Jeremiah speak these words in the house of the LORD.",
+        "VAT_ES": "Los sacerdotes, los profetas y todo el pueblo oyeron a Jeremías mientras él pronunciaba estas palabras en la Casa del Señor.",
+        "CEI": "I sacerdoti, i profeti e tutto il popolo udirono Geremia che diceva queste parole nel tempio del Signore."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י כְּ/כַלּ֣וֹת יִרְמְיָ֗הוּ לְ/דַבֵּר֙ אֵ֣ת כָּל אֲשֶׁר צִוָּ֣ה יְהוָ֔ה לְ/דַבֵּ֖ר אֶל כָּל הָ/עָ֑ם וַ/יִּתְפְּשׂ֨וּ אֹת֜/וֹ הַ/כֹּהֲנִ֧ים וְ/הַ/נְּבִאִ֛ים וְ/כָל הָ/עָ֥ם לֵ/אמֹ֖ר מ֥וֹת תָּמֽוּת׃",
+        "LXX": "ὕδατα Αἰγύπτου ὡσεὶ ποταμὸς ἀναβήσεται, καὶ εἶπεν Ἀναβήσομαι καὶ κατακαλύψω τὴν γῆν καὶ ἀπολῶ τοὺς κατοικοῦντας ἐν αὐτῇ.",
+        "VUL": "Cumque complesset Jeremias, loquens omnia quæ præceperat ei Dominus ut loqueretur ad universum populum, apprehenderunt eum sacerdotes, et prophetæ, et omnis populus, dicens : Morte moriatur.",
+        "SYN": "И когда Иеремия сказал все, что Господь повелел ему сказать всему народу, тогда схватили его священники и пророки и весь народ, и сказали: \"ты должен умереть;",
+        "NEO": "Et quand Jérémie eut achevé de dire tout ce que \\+w Yahweh|strong=\"H3068\"\\+w** lui avait commandé de dire à tout le peuple, les prêtres, les prophètes et tout le peuple se saisirent de lui, en disant : « Tu mourras !",
+        "NAB": "When Jeremiah finished speaking all that the LORD bade him speak to all the people, the priests and prophets laid hold of him, crying, \"You must be put to death!",
+        "VAT_ES": "Y apenas Jeremías terminó de decir todo lo que el Señor le había ordenado decir al pueblo, los sacerdotes y los profetas se le echaron encima, diciendo: «&iexcl;Vas a morir!",
+        "CEI": "Ora, quando Geremia finì di riferire quanto il Signore gli aveva comandato di dire a tutto il popolo, i sacerdoti e i profeti lo arrestarono dicendo: \"Devi morire!"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "מַדּוּעַ֩ נִבֵּ֨יתָ בְ/שֵׁם יְהוָ֜ה לֵ/אמֹ֗ר כְּ/שִׁלוֹ֙ יִֽהְיֶה֙ הַ/בַּ֣יִת הַ/זֶּ֔ה וְ/הָ/עִ֥יר הַ/זֹּ֛את תֶּחֱרַ֖ב מֵ/אֵ֣ין יוֹשֵׁ֑ב וַ/יִּקָּהֵ֧ל כָּל הָ/עָ֛ם אֶֽל יִרְמְיָ֖הוּ בְּ/בֵ֥ית יְהוָֽה׃",
+        "LXX": "ἐπίβητε ἐπὶ τοὺς ἵππους, παρασκευάσατε τὰ ἅρματα· ἐξέλθατε, οἱ μαχηταὶ Αἰθιόπων καὶ Λίβυες καθωπλισμένοι ὅπλοις καὶ Λυδοί, ἀνάβητε, ἐντείνατε τόξον,",
+        "VUL": "Quare prophetavit in nomine Domini, dicens : Sicut Silo erit domus hæc, et urbs ista desolabitur eo quod non sit habitator ? Et congregatus est omnis populus adversus Jeremiam in domo Domini.",
+        "SYN": "зачем ты пророчествуешь именем Господа и говоришь: дом сей будет как Силом, и город сей опустеет, _останется_ без жителей?\" И собрался весь народ против Иеремии в доме Господнем.",
+        "NEO": "Pourquoi prophétises-tu au nom de \\+w Yahweh|strong=\"H3068\"\\+w** en disant : Cette maison sera comme Silo, et cette ville sera dévastée et sans habitants ? » Et tout le peuple se rassembla autour de Jérémie dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Why do you prophesy in the name of the LORD: 'This house shall be like Shiloh,' and 'This city shall be desolate and deserted'?\" And all the people gathered about Jeremiah in the house of the LORD.",
+        "VAT_ES": "Porque has profetizado en nombre del Señor, diciendo: Esta Casa será como Silo, y esta ciudad será arrasada y quedará deshabitada». Entonces todo el pueblo se amontonó alrededor de Jeremías den la Casa del Señor.",
+        "CEI": "Perché hai predetto nel nome del Signore: Questo tempio diventerà come Silo e questa città sarà devastata, disabitata?\". Tutto il popolo si radunò contro Geremia nel tempio del Signore."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַֽ/יִּשְׁמְע֣וּ שָׂרֵ֣י יְהוּדָ֗ה אֵ֚ת הַ/דְּבָרִ֣ים הָ/אֵ֔לֶּה וַ/יַּעֲל֥וּ מִ/בֵּית הַ/מֶּ֖לֶךְ בֵּ֣ית יְהוָ֑ה וַ/יֵּֽשְׁב֛וּ בְּ/פֶ֥תַח שַֽׁעַר יְהוָ֖ה הֶ/חָדָֽשׁ׃",
+        "LXX": "καὶ ἡ ἡμέρα ἐκείνη Κυρίῳ τῷ θεῷ ἡμῶν ἡμέρα ἐκδικήσεως τοῦ ἐκδικῆσαι τοὺς ἐχθροὺς αὐτοῦ· καὶ καταφάγεται ἡ μάχαιρα Κυρίου, καὶ πλησθήσεται καὶ μεθυσθήσεται ἀπὸ τοῦ αἵματος αὐτῶν· ὅτι θυσία τῷ κυρίῳ ἀπὸ γῆς βορρᾶ ἐπὶ ποταμῷ Εὐφράτῃ.",
+        "VUL": "Et audierunt principes Juda verba hæc, et ascenderunt de domo regis in domum Domini, et sederunt in introitu portæ domus Domini novæ.",
+        "SYN": "Когда услышали об этом князья Иудейские, то пришли из дома царя к дому Господню и сели у входа в новые ворота _дома_ Господня.",
+        "NEO": "Les princes de Juda, ayant appris ces choses, montèrent de la maison du roi à la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, et s’assirent à l’entrée de la porte Neuve de la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "When the princes of Judah were informed of these things, they came up from the king's palace to the house of the LORD and held court at the New Gate of the house of the LORD.",
+        "VAT_ES": "Al enterarse de esto, los jefes de Judá subieron de la casa del rey a la Casa del Señor, y se sentaron para el juicio a la entrada de la puerta Nueva de la Casa del Señor.",
+        "CEI": "I capi di Giuda vennero a sapere queste cose e salirono dalla reggia nel tempio del Signore e sedettero all'ingresso della Porta Nuova del tempio del Signore."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמְר֜וּ הַ/כֹּהֲנִ֤ים וְ/הַ/נְּבִאִים֙ אֶל הַ/שָּׂרִ֔ים וְ/אֶל כָּל הָ/עָ֖ם לֵ/אמֹ֑ר מִשְׁפַּט מָ֨וֶת֙ לָ/אִ֣ישׁ הַ/זֶּ֔ה כִּ֤י נִבָּא֙ אֶל הָ/עִ֣יר הַ/זֹּ֔את כַּ/אֲשֶׁ֥ר שְׁמַעְתֶּ֖ם בְּ/אָזְנֵי/כֶֽם׃",
+        "LXX": "ἀνάβηθι, Γαλαάδ, καὶ λάβε ῥητίνην τῇ παρθένῳ θυγατρὶ Αἰγύπτου· εἰς τὸ κενὸν ἐπλήθυνας ἰάματά σου, ὠφέλεια οὐκ ἔστιν σοί.",
+        "VUL": "Et locuti sunt sacerdotes et prophetæ ad principes, et ad omnem populum, dicentes : Judicium mortis est viro huic, quia prophetavit adversus civitatem istam, sicut audistis auribus vestris.",
+        "SYN": "Тогда священники и пророки так сказали князьям и всему народу: \"смертный приговор этому человеку! потому что он пророчествует против города сего, как вы слышали своими ушами\".",
+        "NEO": "Alors les prêtres et les prophètes dirent aux princes et à tout le peuple : Cet homme mérite la mort, car il a prophétisé contre cette ville, comme vous l’avez entendu de vos oreilles.",
+        "NAB": "The priests and prophets said to the princes and to all the people, \"This man deserves death; he has prophesied against this city, as you have heard with your own ears.\"",
+        "VAT_ES": "Los sacerdotes y los profetas dijeron a los jefes y a todo el pueblo: «Este hombre es reo de muerte, porque ha profetizado contra esta ciudad, como ustedes lo han escuchado con sus propios oídos».",
+        "CEI": "Allora i sacerdoti e i profeti dissero ai capi e a tutto il popolo: \"Una sentenza di morte merita quest'uomo, perché ha profetizzato contro questa città come avete udito con i vostri orecchi!\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יִרְמְיָ֨הוּ֙ אֶל כָּל הַ/שָּׂרִ֔ים וְ/אֶל כָּל הָ/עָ֖ם לֵ/אמֹ֑ר יְהוָ֣ה שְׁלָחַ֗/נִי לְ/הִנָּבֵ֞א אֶל הַ/בַּ֤יִת הַ/זֶּה֙ וְ/אֶל הָ/עִ֣יר הַ/זֹּ֔את אֵ֥ת כָּל הַ/דְּבָרִ֖ים אֲשֶׁ֥ר שְׁמַעְתֶּֽם׃",
+        "LXX": "ἤκουσαν ἔθνη φωνήν σου, καὶ τῆς κραυγῆς σου ἐπλήσθη ἡ γῆ, ὅτι μαχητὴς πρὸς μαχητὴν ἠσθένησεν, ἐπὶ τὸ αὐτὸ ἔπεσαν ἀμφότεροι.",
+        "VUL": "Et ait Jeremias ad omnes principes, et ad universum populum, dicens : Dominus misit me ut prophetarem ad domum istam, et ad civitatem hanc, omnia verba quæ audistis.",
+        "SYN": "И сказал Иеремия всем князьям и всему народу: \"Господь послал меня пророчествовать против дома сего и против города сего все те слова, которые вы слышали;",
+        "NEO": "Et Jérémie parla à tous les princes et à tout le peuple en disant : « C’est \\+w Yahweh|strong=\"H3068\"\\+w** qui m’a envoyé prophétiser, contre cette maison et contre cette ville, toutes les choses que vous avez entendues.",
+        "NAB": "Jeremiah gave this answer to the princes and all the people: \"It was the LORD who sent me to prophesy against this house and city all that you have heard.",
+        "VAT_ES": "Pero Jeremías dijo a los jefes y a todo el pueblo: «El Señor es el que me envió a profetizar contra esta Casa y contra esta ciudad todas las palabras que ustedes han oído.",
+        "CEI": "Ma Geremia rispose a tutti i capi e a tutto il popolo: \"Il Signore mi ha mandato a profetizzare contro questo tempio e contro questa città le cose che avete ascoltate."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה הֵיטִ֤יבוּ דַרְכֵי/כֶם֙ וּ/מַ֣עַלְלֵי/כֶ֔ם וְ/שִׁמְע֕וּ בְּ/ק֖וֹל יְהוָ֣ה אֱלֹהֵי/כֶ֑ם וְ/יִנָּחֵ֣ם יְהוָ֔ה אֶל הָ֣/רָעָ֔ה אֲשֶׁ֥ר דִּבֶּ֖ר עֲלֵי/כֶֽם׃",
+        "LXX": "Ἃ ἐλάλησεν Κύριος ἐν χειρὶ Ἰερεμίου, τοῦ ἐλθεῖν τὸν βασιλέα Βαβυλῶνος τοῦ κόψαι γῆν Αἰγύπτου.",
+        "VUL": "Nunc ergo bonas facite vias vestras et studia vestra, et audite vocem Domini Dei vestri, et pnitebit Dominum mali quod locutus est adversum vos.",
+        "SYN": "итак исправьте пути ваши и деяния ваши и послушайтесь гласа Господа Бога вашего, и Господь отменит бедствие, которое изрек на вас;",
+        "NEO": "Maintenant, améliorez vos voies et vos œuvres, et écoutez la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, et \\+w Yahweh|strong=\"H3068\"\\+w** se repentira du mal qu’il a prononcé contre vous.",
+        "NAB": "Now, therefore, reform your ways and your deeds; listen to the voice of the LORD your God, so that the LORD will repent of the evil with which he threatens you.",
+        "VAT_ES": "Y ahora, enmienden su conducta y sus acciones, y escuchen la voz del Señor, su Dios, y el Señor se arrepentirá del mal con que los ha amenazado.",
+        "CEI": "Or dunque migliorate la vostra condotta e le vostre azioni e ascoltate la voce del Signore vostro Dio e il Signore ritratterà il male che ha annunziato contro di voi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֖י הִנְ/נִ֣י בְ/יֶדְ/כֶ֑ם עֲשׂוּ לִ֛/י כַּ/טּ֥וֹב וְ/כַ/יָּשָׁ֖ר בְּ/עֵינֵי/כֶֽם׃",
+        "LXX": "Ἀναγγείλατε εἰς Μάγδωλον, καὶ παραγγείλατε εἰς Μέμφιν· εἴπατε Ἐπίστηθι καὶ ἑτοίμασον, ὅτι κατέφαγεν μάχαιρα τὴν σμίλακά σου.",
+        "VUL": "Ego autem ecce in manibus vestris sum : facite mihi quod bonum et rectum est in oculis vestris.",
+        "SYN": "а что до меня, вот - я в ваших руках; делайте со мною, что в глазах ваших покажется хорошим и справедливым;",
+        "NEO": "Pour moi, me voici entre vos mains ; faites de moi selon qu’il paraîtra bon et juste à vos yeux.",
+        "NAB": "As for me, I am in your hands; do with me what you think good and right.",
+        "VAT_ES": "En cuanto a mí, hagan conmigo lo que les parezca bueno y justo.",
+        "CEI": "Quanto a me, eccomi in mano vostra, fate di me come vi sembra bene e giusto;"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אַ֣ךְ יָדֹ֣עַ תֵּדְע֗וּ כִּ֣י אִם מְמִתִ֣ים אַתֶּם֮ אֹתִ/י֒ כִּי דָ֣ם נָקִ֗י אַתֶּם֙ נֹתְנִ֣ים עֲלֵי/כֶ֔ם וְ/אֶל הָ/עִ֥יר הַ/זֹּ֖את וְ/אֶל יֹשְׁבֶ֑י/הָ כִּ֣י בֶ/אֱמֶ֗ת שְׁלָחַ֤/נִי יְהוָה֙ עֲלֵי/כֶ֔ם לְ/דַבֵּר֙ בְּ/אָזְנֵי/כֶ֔ם אֵ֥ת כָּל הַ/דְּבָרִ֖ים הָ/אֵֽלֶּה׃",
+        "LXX": "διὰ τί ἔφυγεν ἀπὸ σοῦ ὁ Ἆπις; ὁ μόσχος ὁ ἐκλεκτός σου οὐκ ἔμεινεν, ὅτι Κύριος παρέλυσεν αὐτόν.",
+        "VUL": "Verumtamen scitote et cognoscite quod, si occideritis me, sanguinem innocentem tradetis contra vosmetipsos, et contra civitatem istam, et habitatores ejus : in veritate enim misit me Dominus ad vos, ut loquerer in auribus vestris omnia verba hæc.",
+        "SYN": "только твердо знайте, что если вы умертвите меня, то невинную кровь возложите на себя и на город сей и на жителей его; ибо истинно Господь послал меня к вам сказать все те слова в уши ваши\".",
+        "NEO": "Seulement sachez que si vous me faites mourir, c’est du sang innocent que vous mettrez sur vous, sur cette ville et ses habitants ; car en vérité \\+w Yahweh|strong=\"H3068\"\\+w** m’a envoyé vers vous pour faire entendre à vos oreilles toutes ces paroles. »",
+        "NAB": "But mark well: if you put me to death, it is innocent blood you bring on yourselves, on this city and its citizens. For in truth it was the LORD who sent me to you, to speak all these things for you to hear.\"",
+        "VAT_ES": "Pero sepan que si ustedes me hacen morir, arrojan sangre inocente sobre ustedes mismo, sobre esta ciudad y sobre sus habitantes. Porque verdaderamente el Señor me ha enviado a ustedes para decirles todas estas palabras».",
+        "CEI": "ma sappiate bene che, se voi mi ucciderete, attirerete sangue innocente su di voi, su questa città e sui suoi abitanti, perché il Signore mi ha veramente inviato a voi per esporre ai vostri orecchi tutte queste cose\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֤וּ הַ/שָּׂרִים֙ וְ/כָל הָ/עָ֔ם אֶל הַ/כֹּהֲנִ֖ים וְ/אֶל הַ/נְּבִיאִ֑ים אֵין לָ/אִ֤ישׁ הַ/זֶּה֙ מִשְׁפַּט מָ֔וֶת כִּ֗י בְּ/שֵׁ֛ם יְהוָ֥ה אֱלֹהֵ֖י/נוּ דִּבֶּ֥ר אֵלֵֽי/נוּ׃",
+        "LXX": "καὶ τὸ πλῆθός σου ἠσθένησεν καὶ ἔπεσαν, καὶ ἕκαστος πρὸς τὸν πλησίον αὐτοῦ ἐλάλει Ἀναστῶμεν καὶ ἀναστρέψωμεν πρὸς τὸν λαὸν ἡμῶν εἰς τὴν πατρίδα ἡμῶν ἀπὸ προσώπου μαχαίρας Ἑλληνικῆς.",
+        "VUL": "Et dixerunt principes et omnis populus ad sacerdotes et ad prophetas : Non est viro huic judicium mortis, quia in nomine Domini Dei nostri locutus est ad nos.",
+        "SYN": "Тогда князья и весь народ сказали священникам и пророкам: \"этот человек не подлежит смертному приговору, потому что он говорил нам именем Господа Бога нашего\".",
+        "NEO": "Alors les princes et tout le peuple dirent aux prêtres et aux prophètes : « Cet homme ne mérite pas la mort, car c’est au nom de \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, qu’il nous a parlé. »",
+        "NAB": "Thereupon the princes and all the people said to the priests and the prophets, \"This man does not deserve death; it is in the name of the LORD, our God, that he speaks to us.\"",
+        "VAT_ES": "Los jefes y todo el pueblo dijeron a los sacerdotes y a los profetas: «Este hombre no es reo de muerte, porque nos ha hablado en nombre del Señor, nuestro Dios».",
+        "CEI": "I capi e tutto il popolo dissero ai sacerdoti e ai profeti: \"Non ci deve essere sentenza di morte per quest'uomo, perché ci ha parlato nel nome del Signore nostro Dio\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יָּקֻ֣מוּ אֲנָשִׁ֔ים מִ/זִּקְנֵ֖י הָ/אָ֑רֶץ וַ/יֹּ֣אמְר֔וּ אֶל כָּל קְהַ֥ל הָ/עָ֖ם לֵ/אמֹֽר׃",
+        "LXX": "καλέσατε τὸ ὄνομα Φαραὼ Νεχαὼ βασιλέως Αἰγύπτου Σαὼν Ἑσβεὶ Ἑμωήδ.",
+        "VUL": "Surrexerunt ergo viri de senioribus terræ, et dixerunt ad omnem ctum populi, loquentes :",
+        "SYN": "И из старейшин земли встали некоторые и сказали всему народному собранию:",
+        "NEO": "Et quelques-uns des anciens du pays, s’étant levés, dirent à toute l’assemblée du peuple :",
+        "NAB": "At this, some of the elders of the land came forward and said to all the people assembled,",
+        "VAT_ES": "Entonces se levantaron algunos hombres de entre los ancianos del país, y dijeron a toda la asamblea del pueblo:",
+        "CEI": "Allora si alzarono alcuni anziani del paese e dissero a tutta l'assemblea del popolo:"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "מיכיה מִיכָה֙ הַ/מּ֣וֹרַשְׁתִּ֔י הָיָ֣ה נִבָּ֔א בִּ/ימֵ֖י חִזְקִיָּ֣הוּ מֶֽלֶךְ יְהוּדָ֑ה וַ/יֹּ֣אמֶר אֶל כָּל עַם֩ יְהוּדָ֨ה לֵ/אמֹ֜ר כֹּֽה אָמַ֣ר יְהוָ֣ה צְבָא֗וֹת צִיּ֞וֹן שָׂדֶ֤ה תֵֽחָרֵשׁ֙ וִ/ירוּשָׁלַ֨יִם֙ עִיִּ֣ים תִּֽהְיֶ֔ה וְ/הַ֥ר הַ/בַּ֖יִת לְ/בָמ֥וֹת יָֽעַר׃",
+        "LXX": "ζῶ ἐγώ, λέγει Κύριος ὁ θεός, ὅτι ὡς τὸ Ἰταβύριον ἐν τοῖς ὄρεσιν καὶ ὡς ὁ Κάρμηλος ὁ ἐν τῇ θαλάσσῃ, ἥξει.",
+        "VUL": "Michæas de Morasthi fuit propheta in diebus Ezechiæ regis Juda, et ait ad omnem populum Juda, dicens : [Hæc dicit Dominus exercituum :/ Sion quasi ager arabitur,/ et Jerusalem in acervum lapidum erit,/ et mons domus in excelsa silvarum.]",
+        "SYN": "\"Михей Морасфитянин пророчествовал во дни Езекии, царя Иудейского, и сказал всему народу Иудейскому: так говорит Господь Саваоф: Сион будет вспахан, как поле, и Иерусалим сделается грудою развалин, и гора дома сего - лесистым холмом.",
+        "NEO": "« Michée de Moréscheth prophétisait aux jours d’Ezéchias, roi de Juda, et il parla ainsi à tout le peuple de Juda en ces termes :",
+        "NAB": "\"Micah of Moresheth used to prophesy in the days of Hezekiah, king of Judah, and he told all the people of Judah: Thus says the LORD of hosts: Zion shall become a plowed field, Jerusalem a heap of ruins, and the temple mount a forest ridge.",
+        "VAT_ES": "«Miqueas de Moréset profetizó en los días de Ezequías, rey de Judá, y dijo a todo el pueblo de Judá: Así habla el Señor de los ejércitos: Sión será un campo arado, Jerusalén, un montón de ruinas, y la montaña del Templo, una altura boscosa.",
+        "CEI": "\"Michea il Morastita, che profetizzava al tempo di Ezechia, re di Giuda, affermò a tutto il popolo di Giuda: Dice il Signore degli eserciti: Sion sarà arata come un campo, Gerusalemme diventerà un cumulo di rovine, il monte del tempio un'altura boscosa!"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "הֶ/הָמֵ֣ת הֱ֠מִתֻ/הוּ חִזְקִיָּ֨הוּ מֶֽלֶךְ יְהוּדָ֜ה וְ/כָל יְהוּדָ֗ה הֲ/לֹא֮ יָרֵ֣א אֶת יְהוָה֒ וַ/יְחַל֙ אֶת פְּנֵ֣י יְהוָ֔ה וַ/יִּנָּ֣חֶם יְהוָ֔ה אֶל הָ/רָעָ֖ה אֲשֶׁר דִּבֶּ֣ר עֲלֵי/הֶ֑ם וַ/אֲנַ֗חְנוּ עֹשִׂ֛ים רָעָ֥ה גְדוֹלָ֖ה עַל נַפְשׁוֹתֵֽי/נוּ׃",
+        "LXX": "σκεύη ἀποικισμοῦ ποίησον σεαυτῇ, κατοικοῦσα θύγατερ Αἰγύπτου· ὅτι Μέμφις εἰς ἀφανισμὸν ἔσται, καὶ κληθήσεται Οὐαί, διὰ τὸ μὴ ὑπάρχειν κατοικοῦντας ἐν αὐτῇ.",
+        "VUL": "Numquid morte condemnavit eum Ezechias rex Juda, et omnis Juda ? numquid non timuerunt Dominum, et deprecati sunt faciem Domini, et pnituit Dominum mali quod locutus fuerat adversum eos ? Itaque nos facimus malum grande contra animas nostras.",
+        "SYN": "Умертвили ли его за это Езекия, царь Иудейский, и весь Иуда? Не убоялся ли он Господа и не умолял ли Господа? и Господь отменил бедствие, которое изрек на них; а мы хотим сделать большое зло душам нашим?",
+        "NEO": "Ezéchias, roi de Juda, et tout Juda l’ont-ils donc fait mourir ? N’ont-ils pas plutôt craint \\+w Yahweh|strong=\"H3068\"\\+w** ? N’ont-t-ils pas imploré \\+w Yahweh|strong=\"H3068\"\\+w** ? Et \\+w Yahweh|strong=\"H3068\"\\+w** s’est repenti de ce qu’il avait prononcé contre eux. Et nous, nous commettrions un grand crime au préjudice de nos âmes !... »",
+        "NAB": "Did Hezekiah, king of Judah, and all Judah condemn him to death? Did they not rather fear the LORD and entreat the favor of the LORD, so that he repented of the evil with which he had threatened them? But we are on the point of committing this great evil to our own undoing.\"",
+        "VAT_ES": "&iquest;Acaso Ezequías, rey de Judá, y todo Judá lo hicieron morir? &iquest;No temió él al Señor y aplacó el rostro del Señor, de suerte que el Señor se arrepintió del mal con que los había amenazado? Nosotros, en cambio, estamos por hacernos un daño enorme a nosotros mismos».",
+        "CEI": "Forse Ezechia re di Giuda e tutti quelli di Giuda lo uccisero? Non temettero piuttosto il Signore e non placarono il volto del Signore e così il Signore disdisse il male che aveva loro annunziato? Noi, invece, stiamo per commettere una grave iniquità a nostro danno\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/גַם אִ֗ישׁ הָיָ֤ה מִתְנַבֵּא֙ בְּ/שֵׁ֣ם יְהוָ֔ה אֽוּרִיָּ֨הוּ֙ בֶּֽן שְׁמַעְיָ֔הוּ מִ/קִּרְיַ֖ת הַיְּעָרִ֑ים וַ/יִּנָּבֵ֞א עַל הָ/עִ֤יר הַ/זֹּאת֙ וְ/עַל הָ/אָ֣רֶץ הַ/זֹּ֔את כְּ/כֹ֖ל דִּבְרֵ֥י יִרְמְיָֽהוּ׃",
+        "LXX": "δάμαλις κεκαλλωπισμένη Αἴγυπτος· ἀπόσπασμα ἀπὸ βορρᾶ ἦλθεν ἐπ’ αὐτήν,",
+        "VUL": "Fuit quoque vir prophetans in nomine Domini, Urias filius Semei de Cariathiarim, et prophetavit adversus civitatem istam, et adversus terram hanc, juxta omnia verba Jeremiæ.",
+        "SYN": "Пророчествовал также именем Господа некто Урия, сын Шемаии, из Кариаф-Иарима, - и пророчествовал против города сего и против земли сей точно такими же словами, как Иеремия.",
+        "NEO": "Il y eut aussi un homme qui prophétisait au nom de \\+w Yahweh|strong=\"H3068\"\\+w**, Urie, fils de Séméï, de Cariathiarim ; il prophétisa contre cette ville et contre ce pays exactement les mêmes choses que Jérémie.",
+        "NAB": "There was another man who prophesied in the name of the LORD, Uriah, son of Shemaiah, from Kiriath-jearim; he prophesied the same things against this city and land as Jeremiah did.",
+        "VAT_ES": "Hubo además otro hombre que profetizaba en nombre del Señor: Urías, hijo de Semaías, de Quiriat Iearím. El profetizó contra esta ciudad y contra este país en los mismos términos que Jeremías.",
+        "CEI": "C'era anche un altro uomo che profetizzava nel nome del Signore, Uria figlio di Semaià da Kiriat-Iearìm; egli profetizzò contro questa città e contro questo paese con parole simili a quelle di Geremia."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֣ע הַ/מֶּֽלֶךְ יְ֠הוֹיָקִים וְ/כָל גִּבּוֹרָ֤י/ו וְ/כָל הַ/שָּׂרִים֙ אֶת דְּבָרָ֔י/ו וַ/יְבַקֵּ֥שׁ הַ/מֶּ֖לֶךְ הֲמִית֑/וֹ וַ/יִּשְׁמַ֤ע אוּרִיָּ֨הוּ֙ וַ/יִּרָ֔א וַ/יִּבְרַ֖ח וַ/יָּבֹ֥א מִצְרָֽיִם׃",
+        "LXX": "καὶ οἱ μισθωτοὶ αὐτῆς ἐν αὐτῇ ὥσπερ μόσχοι σιτευτοὶ τρεφόμενοι ἐν αὐτῇ· διότι καὶ αὐτοὶ ἀπεστράφησαν καὶ ἔφυγον ὁμοθυμαδόν· οὐκ ἔστησαν, ὅτι ἡμέρα ἀπωλείας ἦλθεν ἐπ’ αὐτούς καὶ καιρὸς ἐκδικήσεως αὐτῶν.",
+        "VUL": "Et audivit rex Joakim, et omnes potentes et principes ejus, verba hæc, et quæsivit rex interficere eum : et audivit Urias, et timuit, fugitque, et ingressus est Ægyptum.",
+        "SYN": "Когда услышал слова его царь Иоаким и все вельможи его и все князья, то искал царь умертвить его. Услышав об этом, Урия убоялся и убежал, и удалился в Египет.",
+        "NEO": "Le roi Joakim, tous ses hommes vaillants et tous ses princes entendirent ses paroles, et le roi chercha à le faire mourir. Urie en fut informé, il eut peur et s’enfuit en Égypte.",
+        "NAB": "When King Jehoiakim and all his officers and princes were informed of his words, the king sought to kill him. But Uriah heard of it and fled in fear to Egypt.",
+        "VAT_ES": "El rey Joaquím, todos sus guardias y los jefes oyeron sus palabras, y el rey intentó darle muerte. Al enterarse, Urías sintió temor y huyó a Egipto.",
+        "CEI": "Il re Ioiakìm, tutti i suoi prodi e tutti i magistrati udirono le sue parole e il re cercò di ucciderlo, ma Uria lo venne a sapere e per timore fuggì andandosene in Egitto."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֞ח הַ/מֶּ֧לֶךְ יְהוֹיָקִ֛ים אֲנָשִׁ֖ים מִצְרָ֑יִם אֵ֣ת אֶלְנָתָ֧ן בֶּן עַכְבּ֛וֹר וַ/אֲנָשִׁ֥ים אִתּ֖/וֹ אֶל מִצְרָֽיִם׃",
+        "LXX": "φωνὴ ὡς ὄφεως συρίζοντος, ὅτι ἐν ἄμμῳ πορεύονται, ἐν ἀξίναις ἥξουσιν ἐπ’ αὐτήν·",
+        "VUL": "Et misit rex Joakim viros in Ægyptum, Elnathan filium Achobor, et viros cum eo, in Ægyptum,",
+        "SYN": "Но царь Иоаким и в Египет послал людей: Елнафана, сына Ахборова, и других с ним.",
+        "NEO": "Mais le roi Joakim envoya des hommes en Égypte, Elnathan, fils d’Achobor, et des hommes avec lui, en Égypte.",
+        "NAB": "Thereupon King Jehoiakim sent Elnathan, son of Achbor, and others with him into Egypt",
+        "VAT_ES": "Pero el rey Joaquím envió a Egipto a Elnatán acompañado de algunos hombres.",
+        "CEI": "Allora il re Ioiakìm inviò in Egitto uomini come Elnatàn figlio di Acbòr, e altri con lui."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יּוֹצִ֨יאוּ אֶת אוּרִיָּ֜הוּ מִ/מִּצְרַ֗יִם וַ/יְבִאֻ֨/הוּ֙ אֶל הַ/מֶּ֣לֶךְ יְהוֹיָקִ֔ים וַ/יַּכֵּ֖/הוּ בֶּ/חָ֑רֶב וַ/יַּשְׁלֵךְ֙ אֶת נִבְלָת֔/וֹ אֶל קִבְרֵ֖י בְּנֵ֥י הָ/עָֽם׃",
+        "LXX": "ὡς κόπτοντες ξύλα ἐκκόψουσιν τὸν δρυμὸν αὐτῆς, λέγει Κύριος, ὅτι οὐ μὴ εἰκασθῇ, ὅτι πληθύνει ὑπὲρ ἀκρίδα καὶ οὐκ ἔστιν αὐτοῖς ἀριθμός.",
+        "VUL": "et eduxerunt Uriam de Ægypto, et adduxerunt eum ad regem Joakim, et percussit eum gladio, et projecit cadaver ejus in sepulchris vulgi ignobilis.",
+        "SYN": "И вывели Урию из Египта и привели его к царю Иоакиму, и он умертвил его мечом и бросил труп его, где были простонародные гробницы.",
+        "NEO": "Ils firent sortir Urie d’Égypte et l’emmenèrent au roi Joakim, qui le fit périr par l’épée et jeta son cadavre dans les sépulcres du commun peuple.",
+        "NAB": "to bring Uriah back to the king, who had him slain by the sword and his corpse cast into the common grave.",
+        "VAT_ES": "Ellos sacaron a Urías de Egipto y lo llevaron ante el rey Joaquím, que lo hizo matar con la espada y arrojó su cadáver a la fosa común.",
+        "CEI": "Costoro fecero uscire dall'Egitto Uria e lo condussero al re Ioiakìm che lo fece uccidere di spada e fece gettare il suo cadavere nelle fosse della gente del popolo."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אַ֗ךְ יַ֚ד אֲחִיקָ֣ם בֶּן שָׁפָ֔ן הָיְתָ֖ה אֶֽת יִרְמְיָ֑הוּ לְ/בִלְתִּ֛י תֵּת אֹת֥/וֹ בְ/יַד הָ/עָ֖ם לַ/הֲמִיתֽ/וֹ׃",
+        "LXX": "κατῃσχύνθη ἡ θυγάτηρ Αἰγύπτου, παρεδόθη εἰς χεῖρας λαοῦ ἀπὸ βορρᾶ.",
+        "VUL": "Igitur manus Ahicam filii Saphan fuit cum Jeremia, ut non traderetur in manus populi, et interficerent eum.",
+        "SYN": "Но рука Ахикама, сына Сафанова, была за Иеремию, чтобы не отдавать его в руки народа на убиение\".",
+        "NEO": "Or la main d’Ahicam, fils de Saphan, soutint Jérémie, en sorte qu’on ne le livra pas au peuple pour être mis à mort.",
+        "NAB": "But Ahikam, son of Shaphan, protected Jeremiah, so that he was not handed over to the people to be put to death.",
+        "VAT_ES": "Sin embargo, Ajicam, hijo de Safán, protegió a Jeremías e impidió que fuera entregado en manos del pueblo para ser ejecutado.",
+        "CEI": "Ma la mano di Achikàm figlio di Safàn fu a favore di Geremia, perché non lo consegnassero in potere del popolo per metterlo a morte."
+      }
+    }
+  }
+}

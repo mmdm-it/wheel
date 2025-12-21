@@ -1,0 +1,518 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "III_REG_003",
+  "book_key": "III_REG",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יִּתְחַתֵּ֣ן שְׁלֹמֹ֔ה אֶת פַּרְעֹ֖ה מֶ֣לֶךְ מִצְרָ֑יִם וַ/יִּקַּ֣ח אֶת בַּת פַּרְעֹ֗ה וַ/יְבִיאֶ֨/הָ֙ אֶל עִ֣יר דָּוִ֔ד עַ֣ד כַּלֹּת֗/וֹ לִ/בְנ֤וֹת אֶת בֵּית/וֹ֙ וְ/אֶת בֵּ֣ית יְהוָ֔ה וְ/אֶת חוֹמַ֥ת יְרוּשָׁלִַ֖ם סָבִֽיב׃",
+        "VUL": "Confirmatum est igitur regnum in manu Salomonis, et affinitate conjunctus est Pharaoni regi Ægypti : accepit namque filiam ejus, et adduxit in civitatem David, donec compleret ædificans domum suam, et domum Domini, et murum Jerusalem per circuitum.",
+        "SYN": "[Когда утвердилось царство в руках Соломона,] Соломон породнился с фараоном, царем Египетским, и взял за себя дочь фараона и ввел ее в город Давидов, доколе не построил дома своего и дома Господня и стены вокруг Иерусалима.",
+        "NEO": "Salomon s’allia par un mariage avec Pharaon, roi d’Égypte. Il prit pour femme la fille de Pharaon, et il l’amena dans la cité de David, jusqu’à ce qu’il eût achevé de bâtir sa maison et la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, ainsi que le mur d’enceinte de Jérusalem.",
+        "NAB": "With the royal power firmly in his grasp, Solomon allied himself by marriage with Pharaoh, king of Egypt. The daughter of Pharaoh, whom he married, he brought to the City of David, until he should finish building his palace, and the temple of the LORD, and the wall around Jerusalem.",
+        "VAT_ES": "Salomón se emparentó con el Faraón, rey de Egipto; tomó por esposa a la hija del Faraón y la llevó a la Ciudad de David, hasta que terminó de construir su propia casa, la Casa del Señor y el muro en torno de Jerusalén.",
+        "CEI": "Salomone si imparentò con il faraone, re di Egitto. Sposò la figlia del faraone, che introdusse nella città di Davide, ove rimase finché non terminò di costruire la propria casa, il tempio del Signore e le mura di cinta di Gerusalemme."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "רַ֣ק הָ/עָ֔ם מְזַבְּחִ֖ים בַּ/בָּמ֑וֹת כִּ֠י לֹא נִבְנָ֥ה בַ֨יִת֙ לְ/שֵׁ֣ם יְהוָ֔ה עַ֖ד הַ/יָּמִ֥ים הָ/הֵֽם׃",
+        "LXX": "θυμιῶντες ἐπὶ τοῖς ὑψηλοῖς, ὅτι οὐκ ᾠκοδομήθη οἶκος τῷ κυρίῳ ἕως νῦν.",
+        "VUL": "Attamen populus immolabat in excelsis : non enim ædificatum erat templum nomini Domini usque in diem illum.",
+        "SYN": "Народ еще приносил жертвы на высотах, ибо не был построен дом имени Господа до того времени.",
+        "NEO": "Seulement le peuple sacrifiait sur les hauts lieux, car il n’avait pas été bâti de maison au nom de \\+w Yahweh|strong=\"H3068\"\\+w** jusqu’à ces jours.",
+        "NAB": "However, the people were sacrificing on the high places, for up to that time no temple had been built to the name of the LORD.",
+        "VAT_ES": "Cro 1.3-13",
+        "CEI": "Il popolo allora offriva sacrifici sulle alture, perché ancora non era stato costruito un tempio in onore del nome del Signore."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֶּאֱהַ֤ב שְׁלֹמֹה֙ אֶת יְהוָ֔ה לָ/לֶ֕כֶת בְּ/חֻקּ֖וֹת דָּוִ֣ד אָבִ֑י/ו רַ֚ק בַּ/בָּמ֔וֹת ה֥וּא מְזַבֵּ֖חַ וּ/מַקְטִֽיר׃",
+        "LXX": "καὶ ἠγάπησεν Σαλωμὼν τὸν κύριον, πορεύεσθαι ἐν τοῖς προστάγμασιν Δαυεὶδ τοῦ πατρὸς αὐτοῦ, πλὴν ἐν τοῖς ὑψηλοῖς ἔθυεν καὶ ἐθυμία.",
+        "VUL": "Dilexit autem Salomon Dominum, ambulans in præceptis David patris sui, excepto quod in excelsis immolabat, et accendebat thymiama.",
+        "SYN": "И возлюбил Соломон Господа, ходя по уставу Давида, отца своего; но и он приносил жертвы и курения на высотах.",
+        "NEO": "Salomon aimait \\+w Yahweh|strong=\"H3068\"\\+w**, marchant selon les préceptes de David, son père ; seulement il offrait des sacrifices sur les hauts lieux et y brûlait des parfums.",
+        "NAB": "Solomon loved the LORD, and obeyed the statutes of his father David; yet he offered sacrifice and burned incense on the high places.",
+        "VAT_ES": "Salomón amaba al Señor y caminaba según las prescripciones de su padre David. Sin embargo, ofrecía sacrificios y quemaba incienso en los lugares altos.",
+        "CEI": "Salomone amava il Signore e nella sua condotta seguiva i principi di Davide suo padre; solamente offriva sacrifici e bruciava incenso sulle alture."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨לֶךְ הַ/מֶּ֤לֶךְ גִּבְעֹ֨נָ/ה֙ לִ/זְבֹּ֣חַ שָׁ֔ם כִּ֥י הִ֖יא הַ/בָּמָ֣ה הַ/גְּדוֹלָ֑ה אֶ֤לֶף עֹלוֹת֙ יַעֲלֶ֣ה שְׁלֹמֹ֔ה עַ֖ל הַ/מִּזְבֵּ֥חַ הַ/הֽוּא׃",
+        "LXX": "καὶ ἀνέστη καὶ ἐπορεύθη εἰς Γαβαὼν θῦσαι ἐκεῖ, ὅτι αὐτὴ ὑψηλοτάτη καὶ μεγάλη· χιλίαν ὁλοκαύτωσιν ἀνήνεγκεν Σαλωμὼν ἐπὶ τὸ θυσιαστήριον ἐν Γαβαών.",
+        "VUL": "Abiit itaque in Gabaon, ut immolaret ibi : illud quippe erat excelsum maximum : mille hostias in holocaustum obtulit Salomon super altare illud in Gabaon.",
+        "SYN": "И пошел царь в Гаваон, чтобы принести там жертву, ибо там был главный жертвенник. Тысячу всесожжений вознес Соломон на том жертвеннике.",
+        "NEO": "Le roi se rendit à Gabaon pour y sacrifier, car c’était le grand haut lieu. Salomon offrit mille holocaustes sur cet autel.",
+        "NAB": "The king went to Gibeon to sacrifice there, because that was the most renowned high place. Upon its altar Solomon offered a thousand holocausts.",
+        "VAT_ES": "El rey fue a Gabaón para ofrecer sacrificios allí, porque ese era el principal lugar alto. Sobre ese altar, Salomón ofreció mil holocaustos.",
+        "CEI": "Il re andò a Gàbaon per offrirvi sacrifici perché ivi sorgeva la più grande altura. Su quell'altare Salomone offrì mille olocausti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בְּ/גִבְע֗וֹן נִרְאָ֧ה יְהֹוָ֛ה אֶל שְׁלֹמֹ֖ה בַּ/חֲל֣וֹם הַ/לָּ֑יְלָה וַ/יֹּ֣אמֶר אֱלֹהִ֔ים שְׁאַ֖ל מָ֥ה אֶתֶּן לָֽ/ךְ׃",
+        "LXX": "καὶ ὤφθη Κύριος τῷ Σαλωμὼν ἐν ὕπνῳ τὴν νύκτα· καὶ εἶπεν Κύριος πρὸς Σαλωμών Αἴτησαί τι αἴτημα σαυτῷ.",
+        "VUL": "Apparuit autem Dominus Salomoni per somnium nocte, dicens : Postula quod vis ut dem tibi.",
+        "SYN": "В Гаваоне явился Господь Соломону во сне ночью, и сказал Бог: проси, что дать тебе.",
+        "NEO": "A Gabaon, \\+w Yahweh|strong=\"H3068\"\\+w** apparut en songe à Salomon pendant la nuit, et Dieu lui dit : « Demande ce que tu veux que je te donne. »",
+        "NAB": "In Gibeon the LORD appeared to Solomon in a dream at night. God said, \"Ask something of me and I will give it to you.\"",
+        "VAT_ES": "En Gabaón, el Señor se apareció a Salomón en un sueño, durante la noche. Dios le dijo: «Pídeme lo que quieras».",
+        "CEI": "In Gàbaon il Signore apparve a Salomone in sogno durante la notte e gli disse: \"Chiedimi ciò che io devo concederti\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שְׁלֹמֹ֗ה אַתָּ֨ה עָשִׂ֜יתָ עִם עַבְדְּ/ךָ֙ דָוִ֣ד אָבִ/י֮ חֶ֣סֶד גָּדוֹל֒ כַּ/אֲשֶׁר֩ הָלַ֨ךְ לְ/פָנֶ֜י/ךָ בֶּ/אֱמֶ֧ת וּ/בִ/צְדָקָ֛ה וּ/בְ/יִשְׁרַ֥ת לֵבָ֖ב עִמָּ֑/ךְ וַ/תִּשְׁמָר ל֗/וֹ אֶת הַ/חֶ֤סֶד הַ/גָּדוֹל֙ הַ/זֶּ֔ה וַ/תִּתֶּן ל֥/וֹ בֵ֛ן יֹשֵׁ֥ב עַל כִּסְא֖/וֹ כַּ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ εἶπεν Σαλωμών Σὺ ἐποίησας μετὰ τοῦ δούλου σου Δαυεὶδ τοῦ πατρός μου ἔλεος μέγα, καθὼς διῆλθεν ἐνώπιόν σου ἐν ἀληθείᾳ καὶ ἐν δικαιοσύνῃ καὶ ἐν εὐθύτητι καρδίας μετὰ σοῦ, καὶ ἐφύλαξας αὐτῷ τὸ ἔλεος τὸ μέγα τοῦτο, δοῦναι τὸν υἱὸν αὐτοῦ ἐπὶ τοῦ θρόνου αὐτοῦ ὡς ἡ ἡμέρα αὕτη.",
+        "VUL": "Et ait Salomon : Tu fecisti cum servo tuo David patre meo misericordiam magnam, sicut ambulavit in conspectu tuo in veritate et justitia, et recto corde tecum : custodisti ei misericordiam tuam grandem, et dedisti ei filium sedentem super thronum ejus, sicut est hodie.",
+        "SYN": "И сказал Соломон: Ты сделал рабу Твоему Давиду, отцу моему, великую милость; и за то, что он ходил пред Тобою в истине и правде и с искренним сердцем пред Тобою, Ты сохранил ему эту великую милость и даровал ему сына, который сидел бы на престоле его, как это и есть ныне;",
+        "NEO": "Salomon répondit : « Vous avez montré une grande bienveillance envers votre serviteur David, mon père, selon qu’il marchait en votre présence dans la fidélité, dans la justice et dans la droiture de cœur envers vous ; vous lui avez conservé cette grande bienveillance, et vous lui avez donné un fils qui est assis sur son trône, comme il paraît aujourd’hui.",
+        "NAB": "Solomon answered: \"You have shown great favor to your servant, my father David, because he behaved faithfully toward you, with justice and an upright heart; and you have continued this great favor toward him, even today, seating a son of his on his throne.",
+        "VAT_ES": "Salomón respondió: «Tú has tratado a tu servidor, David, mi padre, con gran fidelidad, porque él caminó en tu presencia con lealtad, con justicia y rectitud de corazón; tú le has atestiguado esta gran fidelidad, dándole un hijo que hoy está sentado en su trono.",
+        "CEI": "Salomone disse: \"Tu hai trattato il tuo servo Davide mio padre con grande benevolenza, perché egli aveva camminato davanti a te con fedeltà, con giustizia e con cuore retto verso di te. Tu gli hai conservato questa grande benevolenza e gli hai dato un figlio che sedesse sul suo trono, come avviene oggi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/עַתָּה֙ יְהוָ֣ה אֱלֹהָ֔/י אַתָּה֙ הִמְלַ֣כְתָּ אֶֽת עַבְדְּ/ךָ֔ תַּ֖חַת דָּוִ֣ד אָבִ֑/י וְ/אָֽנֹכִי֙ נַ֣עַר קָטֹ֔ן לֹ֥א אֵדַ֖ע צֵ֥את וָ/בֹֽא׃",
+        "LXX": "καὶ νῦν, Κύριε ὁ θεός μου, σὺ ἔδωκας τὸν δοῦλόν σου ἀντὶ Δαυεὶδ τοῦ πατρός μου· καὶ ἐγώ εἰμι παιδάριον μικρόν, καὶ οὐκ οἶδα τὴν ἔξοδόν μου καὶ τὴν εἴσοδόν μου.",
+        "VUL": "Et nunc Domine Deus, tu regnare fecisti servum tuum pro David patre meo : ego autem sum puer parvulus, et ignorans egressum et introitum meum.",
+        "SYN": "и ныне, Господи Боже мой, Ты поставил раба Твоего царем вместо Давида, отца моего; но я отрок малый, не знаю ни моего выхода, ни входа;",
+        "NEO": "Maintenant, \\+w Yahweh|strong=\"H3068\"\\+w**, mon Dieu, vous avez fait régner votre serviteur à la place de David, mon père ; et moi je ne suis qu’un tout jeune homme, ne sachant pas comment me conduire.",
+        "NAB": "O LORD, my God, you have made me, your servant, king to succeed my father David; but I am a mere youth, not knowing at all how to act.",
+        "VAT_ES": "Y ahora, Señor, Dios mío, has hecho reinar a tu servidor en lugar de mi padre David, a mí, que soy apenas un muchacho y no sé valerme por mí mismo.",
+        "CEI": "Ora, Signore mio Dio, tu hai fatto regnare il tuo servo al posto di Davide mio padre. Ebbene io sono un ragazzo; non so come regolarmi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/עַ֨בְדְּ/ךָ֔ בְּ/ת֥וֹךְ עַמְּ/ךָ֖ אֲשֶׁ֣ר בָּחָ֑רְתָּ עַם רָ֕ב אֲשֶׁ֧ר לֹֽא יִמָּנֶ֛ה וְ/לֹ֥א יִסָּפֵ֖ר מֵ/רֹֽב׃",
+        "LXX": "ὁ δὲ δοῦλός σου ἐν μέσῳ τοῦ λαοῦ σου, ὃν ἐξελέξω λαὸν πολὺν ὃς οὐκ ἀριθμηθήσεται.",
+        "VUL": "Et servus tuus in medio est populi quem elegisti, populi infiniti, qui numerari et supputari non potest præ multitudine.",
+        "SYN": "и раб Твой -- среди народа Твоего, который избрал Ты, народа столь многочисленного, что по множеству его нельзя ни исчислить его, ни обозреть;",
+        "NEO": "Votre serviteur est au milieu de votre peuple que vous avez choisi, peuple immense, qui ne peut être évalué ni compté, tant il est nombreux.",
+        "NAB": "I serve you in the midst of the people whom you have chosen, a people so vast that it cannot be numbered or counted.",
+        "VAT_ES": "Tu servidor está en medio de tu pueblo, el que tú has elegido, un pueblo tan numeroso que no se puede contar ni calcular.",
+        "CEI": "Il tuo servo è in mezzo al tuo popolo che ti sei scelto, popolo così numeroso che non si può calcolare né contare."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/נָתַתָּ֨ לְ/עַבְדְּ/ךָ֜ לֵ֤ב שֹׁמֵ֨עַ֙ לִ/שְׁפֹּ֣ט אֶֽת עַמְּ/ךָ֔ לְ/הָבִ֖ין בֵּֽין ט֣וֹב לְ/רָ֑ע כִּ֣י מִ֤י יוּכַל֙ לִ/שְׁפֹּ֔ט אֶת עַמְּ/ךָ֥ הַ/כָּבֵ֖ד הַ/זֶּֽה׃",
+        "LXX": "καὶ δώσεις τῷ δούλῳ σου καρδίαν ἀκούειν καὶ διακρίνειν τὸν λαόν σου ἐν δικαιοσύνῃ, καὶ τοῦ συνίειν ἀνὰ μέσον ἀγαθοῦ καὶ κακοῦ· ὅτι τίς δυνήσεται κρίνειν τὸν λαόν σου τὸν βαρὺν τοῦτον;",
+        "VUL": "Dabis ergo servo tuo cor docile, ut populum tuum judicare possit, et discernere inter bonum et malum. Quis enim poterit judicare populum istum, populum tuum hunc multum ?",
+        "SYN": "даруй же рабу Твоему сердце разумное, чтобы судить народ Твой и различать, что добро и что зло; ибо кто может управлять этим многочисленным народом Твоим?",
+        "NEO": "Accordez donc à votre serviteur un cœur attentif pour juger votre peuple, pour discerner le bien et le mal. Car qui pourrait juger votre peuple, ce peuple si nombreux ? »",
+        "NAB": "Give your servant, therefore, an understanding heart to judge your people and to distinguish right from wrong. For who is able to govern this vast people of yours?\"",
+        "VAT_ES": "Concede entonces a tu servidor un corazón comprensivo, para juzgar a tu pueblo, para discernir entre el bien y el mal. De lo contrario, &iquest;quién sería capaz de juzgar a un pueblo tan grande como el tuyo?».",
+        "CEI": "Concedi al tuo servo un cuore docile perché sappia rendere giustizia al tuo popolo e sappia distinguere il bene dal male, perché chi potrebbe governare questo tuo popolo così numeroso?\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּיטַ֥ב הַ/דָּבָ֖ר בְּ/עֵינֵ֣י אֲדֹנָ֑/י כִּ֚י שָׁאַ֣ל שְׁלֹמֹ֔ה אֶת הַ/דָּבָ֖ר הַ/זֶּֽה׃",
+        "LXX": "καὶ ἤρεσεν ἐνώπιον Κυρίου ὅτι ᾐτήσατο Σαλωμὼν τὸ ῥῆμα τοῦτο.",
+        "VUL": "Placuit ergo sermo coram Domino, quod Salomon postulasset hujuscemodi rem.",
+        "SYN": "И благоугодно было Господу, что Соломон просил этого.",
+        "NEO": "Le Seigneur eut pour agréable que Salomon lui eût fait cette demande,",
+        "NAB": "The LORD was pleased that Solomon made this request.",
+        "VAT_ES": "Al Señor le agradó que Salomón le hiciera este pedido,",
+        "CEI": "Al Signore piacque che Salomone avesse domandato la saggezza nel governare."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֱלֹהִ֜ים אֵלָ֗י/ו יַעַן֩ אֲשֶׁ֨ר שָׁאַ֜לְתָּ אֶת הַ/דָּבָ֣ר הַ/זֶּ֗ה וְ/לֹֽא שָׁאַ֨לְתָּ לְּ/ךָ֜ יָמִ֣ים רַבִּ֗ים וְ/לֹֽא שָׁאַ֤לְתָּ לְּ/ךָ֙ עֹ֔שֶׁר וְ/לֹ֥א שָׁאַ֖לְתָּ נֶ֣פֶשׁ אֹיְבֶ֑י/ךָ וְ/שָׁאַ֧לְתָּ לְּ/ךָ֛ הָבִ֖ין לִ/שְׁמֹ֥עַ מִשְׁפָּֽט׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς αὐτόν Ἀνθ’ ὧν ᾐτήσω παρ’ ἐμοῦ τὸ ῥῆμα τοῦτο, καὶ οὐκ ᾐτήσω σαυτῷ ἡμέρας πολλὰς καὶ οὐκ ᾐτήσω πλοῦτον οὐδὲ ᾐτήσω ψυχάς ἐχθρῶν σου, ἀλλ’ ᾐτήσω σαυτῷ τοῦ συνίειν τοῦ εἰσακούειν κρίμα·",
+        "VUL": "Et dixit Dominus Salomoni : Quia postulasti verbum hoc, et non petisti tibi dies multos, nec divitias, aut animas inimicorum tuorum, sed postulasti tibi sapientiam ad discernendum judicium :",
+        "SYN": "И сказал ему Бог: за то, что ты просил этого и не просил себе долгой жизни, не просил себе богатства, не просил себе душ врагов твоих, но просил себе разума, чтоб уметь судить, --",
+        "NEO": "et Dieu lui dit : « Parce que tu as fait cette demande, et que tu n’as pas demandé pour toi de longs jours, et que tu n’as pas demandé pour toi des richesses, et que tu n’as pas demandé pour toi la mort de tes ennemis, mais que tu as demandé pour toi de l’intelligence pour exercer la justice,",
+        "NAB": "So God said to him: \"Because you have asked for this - not for a long life for yourself, nor for riches, nor for the life of your enemies, but for understanding so that you may know what is right -",
+        "VAT_ES": "y Dios le dijo: «Porque tú has pedido esto, y no has pedido para ti una larga vida, ni riqueza, ni la vida de tus enemigos, sino que has pedido el discernimiento necesario para juzgar con rectitud,",
+        "CEI": "Dio gli disse: \"Perché hai domandato questa cosa e non hai domandato per te né una lunga vita, né la ricchezza, né la morte dei tuoi nemici, ma hai domandato per te il discernimento per ascoltare le cause,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "הִנֵּ֥ה עָשִׂ֖יתִי כִּ/דְבָרֶ֑י/ךָ הִנֵּ֣ה נָתַ֣תִּי לְ/ךָ֗ לֵ֚ב חָכָ֣ם וְ/נָב֔וֹן אֲשֶׁ֤ר כָּמ֨וֹ/ךָ֙ לֹא הָיָ֣ה לְ/פָנֶ֔י/ךָ וְ/אַחֲרֶ֖י/ךָ לֹא יָק֥וּם כָּמֽוֹ/ךָ׃",
+        "LXX": "ἰδοὺ πεποίηκα τὸ ῥῆμά σου· ἰδοὺ δέδωκά σοι καρδίαν φρονίμην καὶ σοφήν· ὡς σὺ οὐ γέγονεν ἔμπροσθέν σου, καὶ μετὰ σὲ οὐκ ἀναστήσεται ὅμοιός σοι.",
+        "VUL": "ecce feci tibi secundum sermones tuos, et dedi tibi cor sapiens et intelligens, in tantum ut nullus ante te similis tui fuerit, nec post te surrecturus sit.",
+        "SYN": "вот, Я сделаю по слову твоему: вот, Я даю тебе сердце мудрое и разумное, так что подобного тебе не было прежде тебя, и после тебя не восстанет подобный тебе;",
+        "NEO": "voici que je fais selon ta parole : voici que je te donne un cœur sage et intelligent, de telle sorte qu’il n’y ait eu personne avant toi qui te soit semblable, et qu’il ne s’élèvera personne après toi qui te soit semblable.",
+        "NAB": "I do as you requested. I give you a heart so wise and understanding that there has never been anyone like you up to now, and after you there will come no one to equal you.",
+        "VAT_ES": "yo voy a obrar conforme a lo que dices: Te doy un corazón sabio y prudente, de manera que no ha habido nadie como tú antes de ti, ni habrá nadie como tú después de ti.",
+        "CEI": "ecco faccio come tu hai detto. Ecco, ti concedo un cuore saggio e intelligente: come te non ci fu alcuno prima di te né sorgerà dopo di te."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/גַ֨ם אֲשֶׁ֤ר לֹֽא שָׁאַ֨לְתָּ֙ נָתַ֣תִּי לָ֔/ךְ גַּם עֹ֖שֶׁר גַּם כָּב֑וֹד אֲ֠שֶׁר לֹא הָיָ֨ה כָמ֥וֹ/ךָ אִ֛ישׁ בַּ/מְּלָכִ֖ים כָּל יָמֶֽי/ךָ׃",
+        "LXX": "καὶ ἃ οὐκ ᾐτήσω δέδωκά σοι, καὶ πλοῦτον καὶ δόξαν, ὡς οὐ γέγονεν ἀνὴρ ὅμοιός σοι ἐν βασιλεῦσιν·",
+        "VUL": "Sed et hæc quæ non postulasti, dedi tibi : divitias scilicet, et gloriam, ut nemo fuerit similis tui in regibus cunctis retro diebus.",
+        "SYN": "и то, чего ты не просил, Я даю тебе, и богатство и славу, так что не будет подобного тебе между царями во все дни твои;",
+        "NEO": "Et même ce que tu n’as pas demandé, je te le donne, richesses et gloire, au point que parmi les rois il n’y aura personne comme toi, pendant tous tes jours.",
+        "NAB": "In addition, I give you what you have not asked for, such riches and glory that among kings there is not your like.",
+        "VAT_ES": "Y también te doy aquello que no has pedido: tanta riqueza y gloria que no habrá nadie como tú entre los reyes, durante toda tu vida.",
+        "CEI": "Ti concedo anche quanto non hai domandato, cioè ricchezza e gloria come nessun re ebbe mai."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/אִ֣ם תֵּלֵ֣ךְ בִּ/דְרָכַ֗/י לִ/שְׁמֹ֤ר חֻקַּ/י֙ וּ/מִצְוֺתַ֔/י כַּ/אֲשֶׁ֥ר הָלַ֖ךְ דָּוִ֣יד אָבִ֑י/ךָ וְ/הַאַרַכְתִּ֖י אֶת יָמֶֽי/ךָ׃",
+        "LXX": "καὶ ἐὰν πορευθῇς ἐν τῇ ὁδῷ μου φυλάσσειν τὰς ἐντολάς μου καὶ τὰ προστάγματά μου ὡς ἐπορεύθη Δαυεὶδ ὁ πατήρ σου, καὶ πληθυνῶ τὰς ἡμέρας σου.",
+        "VUL": "Si autem ambulaveris in viis meis, et custodieris præcepta mea et mandata mea, sicut ambulavit pater tuus, longos faciam dies tuos.",
+        "SYN": "и если будешь ходить путем Моим, сохраняя уставы Мои и заповеди Мои, как ходил отец твой Давид, Я продолжу и дни твои.",
+        "NEO": "Et si tu marches dans mes voies, en observant mes lois et mes commandements, comme a marché David, ton père, je prolongerai tes jours. »",
+        "NAB": "And if you follow me by keeping my statutes and commandments, as your father David did, I will give you a long life.\"",
+        "VAT_ES": "Y si vas por mis caminos, observando mis preceptos y mis mandamientos, como lo hizo tu padre David, también te daré larga vida».",
+        "CEI": "Se poi camminerai nelle mie vie osservando i miei decreti e i miei comandi, come ha fatto Davide tuo padre, prolungherò anche la tua vita\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּקַ֥ץ שְׁלֹמֹ֖ה וְ/הִנֵּ֣ה חֲל֑וֹם וַ/יָּב֨וֹא יְרוּשָׁלִַ֜ם וַֽ/יַּעֲמֹ֣ד לִ/פְנֵ֣י אֲר֣וֹן בְּרִית אֲדֹנָ֗/י וַ/יַּ֤עַל עֹלוֹת֙ וַ/יַּ֣עַשׂ שְׁלָמִ֔ים וַ/יַּ֥עַשׂ מִשְׁתֶּ֖ה לְ/כָל עֲבָדָֽי/ו׃",
+        "LXX": "καὶ ἐξυπνίσθη Σαλωμών, καὶ ἰδοὺ ἐνύπνιον· καὶ ἀνέστη καὶ παραγίνεται εἰς Ἰερουσαλήμ, καὶ ἔστη κατὰ πρόσωπον τοῦ θυσιαστηρίου τοῦ κατὰ πρόσωπον κιβωτοῦ διαθήκης Κυρίου ἐν Σειών, καὶ ἀνήγαγεν ὁλοκαυτώσεις καὶ ἐποίησεν εἰρηνικάς, καὶ ἐποίησεν πότον μέγαν ἑαυτῷ καὶ πᾶσιν τοῖς παισὶν ἑαυτοῦ.",
+        "VUL": "Igitur evigilavit Salomon, et intellexit quod esset somnium : cumque venisset Jerusalem, stetit coram arca fderis Domini, et obtulit holocausta, et fecit victimas pacificas, et grande convivium universis famulis suis.",
+        "SYN": "И пробудился Соломон, и вот, _это_ _было_ сновидение. И пошел он в Иерусалим и стал [пред жертвенником] пред ковчегом завета Господня, и принес всесожжения и совершил _жертвы_ мирные, и сделал большой пир для всех слуг своих.",
+        "NEO": "Salomon s’éveilla, et il comprit que c’était un songe. De retour à Jérusalem, il se tint devant l’arche de l’alliance de \\+w Yahweh|strong=\"H3068\"\\+w** ; il offrit des holocaustes et des sacrifices pacifiques, et il donna un festin à tous ses serviteurs.",
+        "NAB": "When Solomon awoke from his dream, he went to Jerusalem, stood before the ark of the covenant of the LORD, offered holocausts and peace offerings, and gave a banquet for all his servants.",
+        "VAT_ES": "Salomón se despertó, y comprendió que había tenido un sueño. Luego regresó a Jerusalén y se presentó ante el Arca de la Alianza del Señor; ofreció holocaustos y sacrificios de comunión, e hizo un banquete para todos sus servidores.",
+        "CEI": "Salomone si svegliò; ecco, era stato un sogno. Andò in Gerusalemme; davanti all'arca dell'alleanza del Signore offrì olocausti, compì sacrifici di comunione e diede un banchetto per tutti i suoi servi."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אָ֣ז תָּבֹ֗אנָה שְׁתַּ֛יִם נָשִׁ֥ים זֹנ֖וֹת אֶל הַ/מֶּ֑לֶךְ וַֽ/תַּעֲמֹ֖דְנָה לְ/פָנָֽי/ו׃",
+        "LXX": "Τότε ὤφθησαν δύο γυναῖκες πόρναι τῷ βασιλεῖ καὶ ἔστησαν ἐνώπιον αὐτοῦ.",
+        "VUL": "Tunc venerunt duæ mulieres meretrices ad regem, steteruntque coram eo :",
+        "SYN": "Тогда пришли две женщины блудницы к царю и стали пред ним.",
+        "NEO": "Alors deux femmes de mauvaise vie vinrent vers le roi et se tinrent devant lui.",
+        "NAB": "Later, two harlots came to the king and stood before him.",
+        "VAT_ES": "Una vez, dos prostitutas fueron a presentarse ante el rey.",
+        "CEI": "Un giorno andarono dal re due prostitute e si presentarono innanzi a lui."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֜אמֶר הָ/אִשָּׁ֤ה הָֽ/אַחַת֙ בִּ֣י אֲדֹנִ֔/י אֲנִי֙ וְ/הָ/אִשָּׁ֣ה הַ/זֹּ֔את יֹשְׁבֹ֖ת בְּ/בַ֣יִת אֶחָ֑ד וָ/אֵלֵ֥ד עִמָּ֖/הּ בַּ/בָּֽיִת׃",
+        "LXX": "καὶ εἶπεν ἡ γυνὴ ἡ μία Ἐν ἐμοί, κύριε· ἐγὼ καὶ ἡ γυνὴ αὕτη οἰκοῦμεν ἐν οἴκῳ ἑνί, καὶ ἐτέκομεν ἐν τῷ οἴκῳ.",
+        "VUL": "quarum una ait : Obsecro, mi domine : ego et mulier hæc habitabamus in domo una, et peperi apud eam in cubiculo.",
+        "SYN": "И сказала одна женщина: о, господин мой! я и эта женщина живем в одном доме; и я родила при ней в этом доме;",
+        "NEO": "L’une des femmes dit : « De grâce, mon seigneur ! Cette femme et moi, nous demeurions dans la même maison, et j’ai mis au monde un enfant près d’elle dans la maison.",
+        "NAB": "One woman said: \"By your leave, my lord, this woman and I live in the same house, and I gave birth in the house while she was present.",
+        "VAT_ES": "Una de las mujeres le dijo: «&iexcl;Por favor, señor mío! Yo y esta mujer vivimos en la misma casa, y yo di a luz estando con ella en la casa.",
+        "CEI": "Una delle due disse: \"Ascoltami, signore! Io e questa donna abitiamo nella stessa casa; io ho partorito mentre essa sola era in casa."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֞י בַּ/יּ֤וֹם הַ/שְּׁלִישִׁי֙ לְ/לִדְתִּ֔/י וַ/תֵּ֖לֶד גַּם הָ/אִשָּׁ֣ה הַ/זֹּ֑את וַ/אֲנַ֣חְנוּ יַחְדָּ֗ו אֵֽין זָ֤ר אִתָּ֨/נוּ֙ בַּ/בַּ֔יִת זוּלָתִ֥י שְׁתַּֽיִם אֲנַ֖חְנוּ בַּ/בָּֽיִת׃",
+        "LXX": "καὶ ἐγενήθη ἐν τῇ ἡμέρᾳ τῇ τρίτῃ τεκούσης μου καὶ ἔτεκεν καὶ ἡ γυνὴ αὕτη· καὶ ἡμεῖς κατὰ τὸ αὐτό, καὶ οὐκ ἔστιν οὐθεὶς μεθ’ ἡμῶν παρὲξ ἀμφοτέρων ἡμῶν ἐν τῷ οἴκῳ.",
+        "VUL": "Tertia autem die postquam ego peperi, peperit et hæc : et eramus simul, nullusque alius nobiscum in domo, exceptis nobis duabus.",
+        "SYN": "на третий день после того, как я родила, родила и эта женщина; и были мы вместе, и в доме никого постороннего с нами не было; только мы две были в доме;",
+        "NEO": "Trois jours après que j’avais mis au monde mon enfant, cette femme a mis aussi au monde un enfant. Nous étions ensemble ; aucun étranger n’était avec nous dans la maison, il n’y avait que nous deux dans la maison.",
+        "NAB": "On the third day after I gave birth, this woman also gave birth. We were alone in the house; there was no one there but us two.",
+        "VAT_ES": "Tres días después de mi parto, dio a luz también ella. Estábamos juntas; no había ningún extraño con nosotras en la casa, fuera de nosotros dos.",
+        "CEI": "Tre giorni dopo il mio parto, anche questa donna ha partorito; noi stiamo insieme e non c'è nessun estraneo in casa fuori di noi due."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יָּ֛מָת בֶּן הָ/אִשָּׁ֥ה הַ/זֹּ֖את לָ֑יְלָה אֲשֶׁ֥ר שָׁכְבָ֖ה עָלָֽי/ו׃",
+        "LXX": "καὶ ἀπέθανεν ὁ υἱὸς τῆς γυναικὸς ταύτης τὴν νύκτα, ὡς ἐπεκοιμήθη ἐπ’ αὐτόν·",
+        "VUL": "Mortuus est autem filius mulieris hujus nocte : dormiens quippe oppressit eum.",
+        "SYN": "и умер сын этой женщины ночью, ибо она заспала его;",
+        "NEO": "Le fils de cette femme mourut pendant la nuit, parce qu’elle s’était couchée sur lui.",
+        "NAB": "This woman's son died during the night; she smothered him by lying on him.",
+        "VAT_ES": "Pero una noche murió el hijo de esta mujer, porque ella se recostó encima de él.",
+        "CEI": "Il figlio di questa donna è morto durante la notte, perché essa gli si era coricata sopra."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/תָּקָם֩ בְּ/ת֨וֹךְ הַ/לַּ֜יְלָה וַ/תִּקַּ֧ח אֶת בְּנִ֣/י מֵֽ/אֶצְלִ֗/י וַ/אֲמָֽתְ/ךָ֙ יְשֵׁנָ֔ה וַ/תַּשְׁכִּיבֵ֖/הוּ בְּ/חֵיקָ֑/הּ וְ/אֶת בְּנָ֥/הּ הַ/מֵּ֖ת הִשְׁכִּ֥יבָה בְ/חֵיקִֽ/י׃",
+        "LXX": "καὶ ἀνέστη μέσης τῆς νυκτὸς καὶ ἔλαβεν τὸν υἱόν μου ἐκ τῶν ἀγκαλῶν μου καὶ ἐκοίμισεν αὐτὸν ἐν τῷ κόλπῳ αὐτῆς, καὶ τὸν υἱὸν αὐτῆς τὸν τεθνηκότα ἐκοίμισεν ἐν τῷ κόλπῳ μου.",
+        "VUL": "Et consurgens intempestæ noctis silentio, tulit filium meum de latere meo, ancillæ tuæ dormientis, et collocavit in sinu suo : suum autem filium, qui erat mortuus, posuit in sinu meo.",
+        "SYN": "и встала она ночью, и взяла сына моего от меня, когда я, раба твоя, спала, и положила его к своей груди, а своего мертвого сына положила к моей груди;",
+        "NEO": "Elle se leva au milieu de la nuit, elle prit mon fils à mes côtés tandis que la servante dormait, et elle le coucha dans son sein, et son fils qui était mort, elle le coucha dans mon sein.",
+        "NAB": "Later that night she got up and took my son from my side, as I, your handmaid, was sleeping. Then she laid him in her bosom, after she had laid her dead child in my bosom.",
+        "VAT_ES": "Entonces se levantó en medio de la noche, tomó de mi lado a mi hijo mientras tu servidora dormía, y lo acostó sobre su pecho; a su hijo muerto, en cambio, lo acostó en mi regazo.",
+        "CEI": "Essa si è alzata nel cuore della notte, ha preso il mio figlio dal mio fianco - la tua schiava dormiva - e se lo è messo in seno e sul mio seno ha messo il figlio morto."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וָ/אָקֻ֥ם בַּ/בֹּ֛קֶר לְ/הֵינִ֥יק אֶת בְּנִ֖/י וְ/הִנֵּה מֵ֑ת וָ/אֶתְבּוֹנֵ֤ן אֵלָי/ו֙ בַּ/בֹּ֔קֶר וְ/הִנֵּ֛ה לֹֽא הָיָ֥ה בְנִ֖/י אֲשֶׁ֥ר יָלָֽדְתִּי׃",
+        "LXX": "καὶ ἀνέστην τὸ πρωὶ θηλάσαι τὸν υἱόν μου, καὶ ἐκεῖνος ἦν τεθνηκώς· καὶ ἰδοὺ κατενόησα αὐτὸν πρωί, καὶ ἰδοὺ οὐκ ἦν ὁ υἱός μου ὃν ἔτεκον.",
+        "VUL": "Cumque surrexissem mane ut darem lac filio meo, apparuit mortuus : quem diligentius intuens clara luce, deprehendi non esse meum quem genueram.",
+        "SYN": "утром я встала, чтобы покормить сына моего, и вот, он был мертвый; а когда я всмотрелась в него утром, то это был не мой сын, которого я родила.",
+        "NEO": "Lorsque je me suis levée le matin pour allaiter mon fils, voici qu’il était mort ; mais, l’ayant considéré attentivement le matin, je m’aperçus que ce n’était pas mon fils que j’avais enfanté. »",
+        "NAB": "I rose in the morning to nurse my child, and I found him dead. But when I examined him in the morning light, I saw it was not the son whom I had borne.\"",
+        "VAT_ES": "A la mañana siguiente, me levanté para amamantar a mi hijo, y vi que estaba muerto. Pero cuando lo observé con mayor atención a la luz del día, advertí que no era mi hijo, el que yo había tenido».",
+        "CEI": "Al mattino mi sono alzata per allattare mio figlio, ma ecco, era morto. L'ho osservato bene; ecco, non era il figlio che avevo partorito io\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/תֹּאמֶר֩ הָ/אִשָּׁ֨ה הָ/אַחֶ֜רֶת לֹ֣א כִ֗י בְּנִ֤/י הַ/חַי֙ וּ/בְנֵ֣/ךְ הַ/מֵּ֔ת וְ/זֹ֤את אֹמֶ֨רֶת֙ לֹ֣א כִ֔י בְּנֵ֥/ךְ הַ/מֵּ֖ת וּ/בְנִ֣/י הֶ/חָ֑י וַ/תְּדַבֵּ֖רְנָה לִ/פְנֵ֥י הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ εἶπεν ἡ γυνὴ ἡ ἑτέρα Οὐχί, ἀλλὰ ὁ υἱός μου ὁ ζῶν, ὁ δὲ υἱός σου ὁ τεθνηκώς· καὶ ἐλάλησαν ἐνώπιον τοῦ βασιλέως.",
+        "VUL": "Responditque altera mulier : Non est ita ut dicis, sed filius tuus mortuus est, meus autem vivit. E contrario illa dicebat : Mentiris : filius quippe meus vivit, et filius tuus mortuus est. Atque in hunc modum contendebant coram rege.",
+        "SYN": "И сказала другая женщина: нет, мой сын живой, а твой сын мертвый. А та говорила ей: нет, твой сын мертвый, а мой живой. И говорили они так пред царем.",
+        "NEO": "L’autre femme dit : « Non ! C’est mon fils qui est vivant, et c’est ton fils qui est mort. » Mais la première répliqua : « Nullement, c’est ton fils qui est mort, et c’est mon fils qui est vivant. » Et elles se disputaient devant le roi.",
+        "NAB": "The other woman answered, \"It is not so! The living one is my son, the dead one is yours.\" But the first kept saying, \"No, the dead one is your child, the living one is mine!\" Thus they argued before the king.",
+        "VAT_ES": "La otra mujer protestó: «&iexcl;No! &iexcl;El que vive es mi hijo!». Y así discutían en presencia del rey.",
+        "CEI": "L'altra donna disse: \"Non è vero! Mio figlio è quello vivo, il tuo è quello morto\". E quella, al contrario, diceva: \"Non è vero! Quello morto è tuo figlio, il mio è quello vivo\". Discutevano così alla presenza del re."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר הַ/מֶּ֔לֶךְ זֹ֣את אֹמֶ֔רֶת זֶה בְּנִ֥/י הַ/חַ֖י וּ/בְנֵ֣/ךְ הַ/מֵּ֑ת וְ/זֹ֤את אֹמֶ֨רֶת֙ לֹ֣א כִ֔י בְּנֵ֥/ךְ הַ/מֵּ֖ת וּ/בְנִ֥/י הֶ/חָֽי׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεὺς αὐταῖς Σὺ λέγεις Οὗτος ὁ υἱός μου ὁ ζῶν, καὶ ὁ υἱὸς ταύτης ὁ τεθνηκώς· καὶ σὺ λέγεις Οὐχί, ἀλλὰ ὁ υἱός μου ὁ ζῶν, καὶ ὁ υἱός σου ὁ τεθνηκώς.",
+        "VUL": "Tunc rex ait : Hæc dicit : Filius meus vivit, et filius tuus mortuus est : et ista respondit : Non, sed filius tuus mortuus est, meus autem vivit.",
+        "SYN": "И сказал царь: эта говорит: мой сын живой, а твой сын мертвый; а та говорит: нет, твой сын мертвый, а мой сын живой.",
+        "NEO": "Le roi dit : « L’une dit : C’est mon fils qui est vivant, et c’est ton fils qui est mort ; et l’autre dit : Nullement, c’est ton fils qui est mort, et c’est mon fils qui est vivant. »",
+        "NAB": "Then the king said: \"One woman claims, 'This, the living one, is my child, and the dead one is yours.' The other answers, 'No! The dead one is your child; the living one is mine.'\"",
+        "VAT_ES": "El rey dijo: «Esta mujer afirma: «Mi hijo es este, el que está vivo; el que está muerto es el tuyo». Esta otra dice: «No, tu hijo es el muerto; el que está vivo es el mío».",
+        "CEI": "Egli disse: \"Costei dice: Mio figlio è quello vivo, il tuo è quello morto e quella dice: Non è vero! Tuo figlio è quello morto e il mio è quello vivo\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר הַ/מֶּ֖לֶךְ קְח֣וּ לִ/י חָ֑רֶב וַ/יָּבִ֥אוּ הַ/חֶ֖רֶב לִ/פְנֵ֥י הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεύς Λάβετε μάχαιραν· καὶ προσήνεγκαν τὴν μάχαιραν ἐνώπιον τοῦ βασιλέως.",
+        "VUL": "Dixit ergo rex : Afferte mihi gladium. Cumque attulissent gladium coram rege,",
+        "SYN": "И сказал царь: подайте мне меч. И принесли меч к царю.",
+        "NEO": "Et le roi dit : « Apportez-moi une épée. » On apporta l’épée devant le roi.",
+        "NAB": "The king continued, \"Get me a sword.\" When they brought the sword before him,",
+        "VAT_ES": "Y en seguida añadió: «Tráiganme una espada». Le presentaron la espada,",
+        "CEI": "Allora il re ordinò: \"Prendetemi una spada!\". Portarono una spada alla presenza del re."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר הַ/מֶּ֔לֶךְ גִּזְר֛וּ אֶת הַ/יֶּ֥לֶד הַ/חַ֖י לִ/שְׁנָ֑יִם וּ/תְנ֤וּ אֶֽת הַ/חֲצִי֙ לְ/אַחַ֔ת וְ/אֶֽת הַ/חֲצִ֖י לְ/אֶחָֽת׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεύς Διέλετε τὸ παιδίον τὸ θηλάζον τὸ ζῶν εἰς δύο, καὶ δότε τὸ ἥμισυ αὐτοῦ ταύτῃ καὶ τὸ ἥμισυ αὐτοῦ ταύτῃ.",
+        "VUL": "Dividite, inquit, infantem vivum in duas partes, et date dimidiam partem uni, et dimidiam partem alteri.",
+        "SYN": "И сказал царь: рассеките живое дитя надвое и отдайте половину одной и половину другой.",
+        "NEO": "Et le roi dit : « Partagez en deux l’enfant qui vit, et donnez-en la moitié à l’une et la moitié à l’autre. »",
+        "NAB": "he said, \"Cut the living child in two, and give half to one woman and half to the other.\"",
+        "VAT_ES": "y el rey ordenó: «Partan en dos al niño vivo, y entreguen una mitad a una y otra mitad a la otra».",
+        "CEI": "Quindi il re aggiunse: \"Tagliate in due il figlio vivo e datene una metà all'una e una metà all'altra\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֣אמֶר הָ/אִשָּׁה֩ אֲשֶׁר בְּנָ֨/הּ הַ/חַ֜י אֶל הַ/מֶּ֗לֶךְ כִּֽי נִכְמְר֣וּ רַחֲמֶי/הָ֮ עַל בְּנָ/הּ֒ וַ/תֹּ֣אמֶר בִּ֣י אֲדֹנִ֗/י תְּנוּ לָ/הּ֙ אֶת הַ/יָּל֣וּד הַ/חַ֔י וְ/הָמֵ֖ת אַל תְּמִיתֻ֑/הוּ וְ/זֹ֣את אֹמֶ֗רֶת גַּם לִ֥/י גַם לָ֛/ךְ לֹ֥א יִהְיֶ֖ה גְּזֹֽרוּ׃",
+        "LXX": "καὶ ἀπεκρίθη ἡ γυνὴ ἧς ἦν ὁ υἱὸς ὁ ζῶν καὶ εἶπεν πρὸς τὸν βασιλέα, ὅτι ἐταράχθη ἡ μήτρα αὐτῆς ἐπὶ τῷ υἱῷ αὐτῆς, καὶ εἶπεν Ἐν ἐμοί, κύριε, δότε αὐτῇ τὸ παιδίον καὶ θανάτῳ μὴ θανατώσητε αὐτόν· καὶ αὕτη εἶπεν Μήτε ἐμοὶ μήτε αὐτῇ ἔστω· διέλετε.",
+        "VUL": "Dixit autem mulier, cujus filius erat vivus, ad regem (commota sunt quippe viscera ejus super filio suo) : Obsecro, domine, date illi infantem vivum, et nolite interficere eum. E contrario illa dicebat : Nec mihi nec tibi sit, sed dividatur.",
+        "SYN": "И отвечала та женщина, которой сын был живой, царю, ибо взволновалась вся внутренность ее от жалости к сыну своему: о, господин мой! отдайте ей этого ребенка живого и не умерщвляйте его. А другая говорила: пусть же не будет ни мне, ни тебе, рубите.",
+        "NEO": "Alors la femme dont le fils était vivant dit au roi, car elle sentait ses entrailles s’émouvoir pour son fils : « Ah ! mon seigneur, donnez-lui l’enfant qui vit, et qu’on ne le tue pas ! » Et l’autre disait : « Qu’il ne soit ni à moi ni à toi ; partagez-le. »",
+        "NAB": "The woman whose son it was, in the anguish she felt for it, said to the king, \"Please, my lord, give her the living child - please do not kill it!\" The other, however, said, \"It shall be neither mine nor yours. Divide it!\"",
+        "VAT_ES": "Entonces la mujer cuyo hijo vivía se dirigió al rey, porque se le conmovieron las entrañas por su hijo, y exclamó: «&iexcl;Por favor, señor mío! &iexcl;Denle a ella el niño vivo, no lo maten!». La otra, en cambio, decía: «&iexcl;No será ni para mí ni para ti! &iexcl;Que lo dividan!».",
+        "CEI": "La madre del bimbo vivo si rivolse al re, poiché le sue viscere si erano commosse per il suo figlio, e disse: \"Signore, date a lei il bambino vivo; non uccidetelo affatto!\". L'altra disse: \"Non sia né mio né tuo; dividetelo in due!\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַן הַ/מֶּ֜לֶךְ וַ/יֹּ֗אמֶר תְּנוּ לָ/הּ֙ אֶת הַ/יָּל֣וּד הַ/חַ֔י וְ/הָמֵ֖ת לֹ֣א תְמִיתֻ֑/הוּ הִ֖יא אִמּֽ/וֹ׃",
+        "LXX": "καὶ ἀπεκρίθη ὁ βασιλεὺς καὶ εἶπεν Δότε τὸ παιδίον τῇ εἰπούσῃ Δότε αὐτῇ αὐτὸ καὶ θανάτῳ μὴ θανατώσητε αὐτόν· αὐτὴ ἡ μήτηρ αὐτοῦ.",
+        "VUL": "Respondit rex, et ait : Date huic infantem vivum, et non occidatur : hæc est enim mater ejus.",
+        "SYN": "И отвечал царь и сказал: отдайте этой живое дитя, и не умерщвляйте его: она -- его мать.",
+        "NEO": "Et le roi répondit et dit : « Donnez à la première l’enfant qui vit, et qu’on ne le tue pas ; c’est elle qui est sa mère. »",
+        "NAB": "The king then answered, \"Give the first one the living child! By no means kill it, for she is the mother.\"",
+        "VAT_ES": "Pero el rey tomó la palabra y dijo: «Entréguenle el niño vivo a la primera mujer, no lo maten: &iexcl;ella es su madre!».",
+        "CEI": "Presa la parola, il re disse: \"Date alla prima il bambino vivo; non uccidetelo. Quella è sua madre\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמְע֣וּ כָל יִשְׂרָאֵ֗ל אֶת הַ/מִּשְׁפָּט֙ אֲשֶׁ֣ר שָׁפַ֣ט הַ/מֶּ֔לֶךְ וַ/יִּֽרְא֖וּ מִ/פְּנֵ֣י הַ/מֶּ֑לֶךְ כִּ֣י רָא֔וּ כִּֽי חָכְמַ֧ת אֱלֹהִ֛ים בְּ/קִרְבּ֖/וֹ לַ/עֲשׂ֥וֹת מִשְׁפָּֽט׃",
+        "LXX": "καὶ ἤκουσαν πᾶς Ἰσραὴλ τὸ κρίμα τοῦτο ὃ ἔκρινεν ὁ βασιλεύς· καὶ ἐφοβήθησαν ἀπὸ προσώπου τοῦ βασιλέως, ὅτι εἶδον ὅτι φρόνησις θεοῦ ἐν αὐτῷ τοῦ ποιεῖν δικαίωμα.",
+        "VUL": "Audivit itaque omnis Israël judicium quod judicasset rex, et timuerunt regem, videntes sapientiam Dei esse in eo ad faciendum judicium.",
+        "SYN": "И услышал весь Израиль о суде, как рассудил царь; и стали бояться царя, ибо увидели, что мудрость Божия в нем, чтобы производить суд.",
+        "NEO": "Tout Israël apprit le jugement que le roi avait prononcé, et l’on craignit le roi, en voyant qu’il y avait en lui une sagesse divine pour rendre la justice.",
+        "NAB": "When all Israel heard the judgment the king had given, they were in awe of him, because they saw that the king had in him the wisdom of God for giving judgment.",
+        "VAT_ES": "Todo Israel oyó hablar de la sentencia que había pronunciado el rey; y sintieron por él un gran respeto, porque vieron que había en él una sabiduría divina para hacer justicia.",
+        "CEI": "Tutti gli Israeliti seppero della sentenza pronunziata dal re e concepirono rispetto per il re, perché avevano constatato che la saggezza di Dio era in lui per render giustizia."
+      }
+    }
+  }
+}

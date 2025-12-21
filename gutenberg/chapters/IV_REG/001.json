@@ -1,0 +1,339 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IV_REG_001",
+  "book_key": "IV_REG",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יִּפְשַׁ֤ע מוֹאָב֙ בְּ/יִשְׂרָאֵ֔ל אַחֲרֵ֖י מ֥וֹת אַחְאָֽב׃",
+        "LXX": "ΚΑΙ ἠθέτησεν Μωὰβ ἐν Ἰσραὴλ μετὰ τὸ ἀποθανεῖν Ἀχαάβ.",
+        "VUL": "Prævaricatus est autem Moab in Israël, postquam mortuus est Achab.",
+        "SYN": "И отложился Моав от Израиля по смерти Ахава.",
+        "NEO": "Moab se révolta contre Israël, après la mort d’Achab.",
+        "NAB": "After Ahab's death, Moab rebelled against Israel.",
+        "VAT_ES": "Después de la muerte de Ajab, Moab se sublevó contra Israel.",
+        "CEI": "Dopo la morte di Acab Moab si ribellò a Israele."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּפֹּ֨ל אֲחַזְיָ֜ה בְּעַ֣ד הַ/שְּׂבָכָ֗ה בַּ/עֲלִיָּת֛/וֹ אֲשֶׁ֥ר בְּ/שֹׁמְר֖וֹן וַ/יָּ֑חַל וַ/יִּשְׁלַ֣ח מַלְאָכִ֔ים וַ/יֹּ֤אמֶר אֲלֵ/הֶם֙ לְכ֣וּ דִרְשׁ֗וּ בְּ/בַ֤עַל זְבוּב֙ אֱלֹהֵ֣י עֶקְר֔וֹן אִם אֶחְיֶ֖ה מֵ/חֳלִ֥י זֶֽה׃",
+        "LXX": "καὶ ἔπεσεν Ὀχοζείας διὰ τοῦ δικτυωτοῦ τοῦ ἐν τῷ ὑπερῴῳ αὐτοῦ τῷ ἐν Σαμαρείᾳ, καὶ ἠρρώστησεν· καὶ ἀπέστειλεν ἀγγέλους καὶ εἶπεν πρὸς αὐτούς Δεῦτε καὶ ἐπιζητήσατε ἐν τῷ Βάαλ μυῖαν θεὸν Ἀκκαρών, εἰ ζήσομαι ἐκ τῆς ἀρρωστίας μου ταύτης· καὶ ἐπορεύθησαν ἐπερωτῆσαι δι’ αὐτοῦ.",
+        "VUL": "Ceciditque Ochozias per cancellos cnaculi sui, quod habebat in Samaria, et ægrotavit : misitque nuntios, dicens ad eos : Ite, consulite Beelzebub deum Accaron, utrum vivere queam de infirmitate mea hac.",
+        "SYN": "Охозия же упал чрез решетку с горницы своей, что в Самарии, и занемог. И послал послов, и сказал им: пойдите, спросите у Веельзевула, божества Аккаронского: выздоровею ли я от сей болезни? [И пошли они спрашивать.]",
+        "NEO": "Ochozias tomba par la fenêtre en treillis de sa chambre haute à Samarie, et il fut malade. Il envoya des messagers et leur dit : « Allez consulter Béel-Zébub, dieu d’Accaron, pour savoir si je guérirai de cette maladie. »",
+        "NAB": "Ahaziah had fallen through the lattice of his roof terrace at Samaria and had been injured. So he sent out messengers with the instructions: \"Go and inquire of Baalzebub, the god of Ekron, whether I shall recover from this injury.\"",
+        "VAT_ES": "Ocozías se cayó por el balcón del piso alto de su casa, en Samaría, y quedó malherido. Entonces envió unos mensajeros con este encargo: «Vayan a consultar a Baal Zebub, el dios de Ecrón, si me repondré de mis heridas».",
+        "CEI": "Acazia cadde dalla finestra del piano di sopra in Samaria e rimase ferito. Allora inviò messaggeri con quest'ordine: \"Andate e interrogate Baal-Zebub, dio di Ekròn, per sapere se guarirò da questa infermità\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וּ/מַלְאַ֣ךְ יְהוָ֗ה דִּבֶּר֙ אֶל אֵלִיָּ֣ה הַ/תִּשְׁבִּ֔י ק֣וּם עֲלֵ֔ה לִ/קְרַ֖את מַלְאֲכֵ֣י מֶֽלֶךְ שֹׁמְר֑וֹן וְ/דַבֵּ֣ר אֲלֵ/הֶ֔ם הַֽ/מִ/בְּלִ֤י אֵין אֱלֹהִים֙ בְּ/יִשְׂרָאֵ֔ל אַתֶּם֙ הֹֽלְכִ֔ים לִ/דְרֹ֕שׁ בְּ/בַ֥עַל זְב֖וּב אֱלֹהֵ֥י עֶקְרֽוֹן׃",
+        "LXX": "καὶ ἄγγελος Κυρίου ἐκάλεσεν Ἠλειοὺ τὸν Θεσβείτην λέγων Ἀναστὰς δεῦρο εἰς συνάντησιν τῶν ἀγγέλων Ὀχοζείου βασιλέως Σαμαρείας καὶ λαλήσεις πρὸς αὐτούς Εἰ παρὰ τὸ μὴ εἶναι θεὸν ἐν Ἰσραὴλ ὑμεῖς πορεύεσθε ἐπιζητῆσαι ἐν τῷ Βάαλ μυῖαν θεὸν Ἀκκαρών; καὶ οὐχ οὕτως·",
+        "VUL": "Angelus autem Domini locutus est ad Eliam Thesbiten, dicens : Surge, et ascende in occursum nuntiorum regis Samariæ, et dices ad eos : Numquid non est Deus in Israël, ut eatis ad consulendum Beelzebub deum Accaron ?",
+        "SYN": "Тогда Ангел Господень сказал Илии Фесвитянину: встань, пойди навстречу посланным от царя Самарийского и скажи им: разве нет Бога в Израиле, что вы идете вопрошать Веельзевула, божество Аккаронское?",
+        "NEO": "Mais l’ange de \\+w Yahweh|strong=\"H3068\"\\+w** dit à Elie, le Thesbite : « Lève-toi, monte à la rencontre des messagers du roi de Samarie, et dis-leur : “Est-ce parce qu’il n’y a pas de Dieu en Israël que vous allez consulter Béel-Zébub, dieu d’Accaron ?”",
+        "NAB": "Meanwhile, the angel of the LORD said to Elijah the Tishbite: \"Go, intercept the messengers of Samaria's king, and ask them, 'Is it because there is no God in Israel that you are going to inquire of Baalzebub, the god of Ekron?'",
+        "VAT_ES": "Pero el Angel del Señor dijo a Elías, el tisbita: Sube al encuentro de los mensajeros del rey de Samaría, y diles: &iquest;Acaso no hay Dios en Israel, para que ustedes vayan a consultar a Baal Zebub, el dios de Ecrón?",
+        "CEI": "Ora l'angelo del Signore disse a Elia il Tisbita: \"Su, và incontro ai messaggeri del re di Samaria. Dì loro: Non c'è forse un Dio in Israele, perché andiate a interrogare Baal-Zebub, dio di Ekròn?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/לָ/כֵן֙ כֹּֽה אָמַ֣ר יְהוָ֔ה הַ/מִּטָּ֞ה אֲשֶׁר עָלִ֥יתָ שָּׁ֛ם לֹֽא תֵרֵ֥ד מִמֶּ֖/נָּה כִּ֣י מ֣וֹת תָּמ֑וּת וַ/יֵּ֖לֶךְ אֵלִיָּֽה׃",
+        "LXX": "ὅτι τάδε λέγει Κύριος Ἡ κλίνη ἐφ’ ἧς ἀνέβης ἐκεῖ οὐ καταβήσῃ ἀπ’ αὐτῆς, ὅτι θανάτῳ ἀποθανῇ. καὶ ἐπορεύθη Ἠλειοὺ καὶ εἶπεν πρὸς αὐτούς.",
+        "VUL": "Quam ob rem hæc dicit Dominus : De lectulo, super quem ascendisti, non descendes, sed morte morieris. Et abiit Elias.",
+        "SYN": "За это так говорит Господь: с постели, на которую ты лег, не сойдешь с нее, но умрешь. И пошел Илия, [и сказал им].",
+        "NEO": "C’est pourquoi ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : “Du lit sur lequel tu es monté, tu ne descendras pas, tu mourras certainement.” » Et Elie s’en alla.",
+        "NAB": "For this, the LORD says: 'You shall not leave the bed upon which you lie; instead, you shall die.'\" And with that, Elijah departed.",
+        "VAT_ES": "Por eso, así habla el Señor: No te levantarás del lecho en el que has acostado, porque morirás irremediablemente». Y Elías se fue.",
+        "CEI": "Pertanto così dice il Signore: Dal letto, in cui sei salito, non scenderai, ma di certo morirai\". Ed Elia se ne andò."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יָּשׁ֥וּבוּ הַ/מַּלְאָכִ֖ים אֵלָ֑י/ו וַ/יֹּ֥אמֶר אֲלֵי/הֶ֖ם מַה זֶּ֥ה שַׁבְתֶּֽם׃",
+        "LXX": "καὶ ἐπεστράφησαν οἱ ἄγγελοι πρὸς αὐτόν, καὶ εἶπεν πρὸς αὐτούς Τί ὅτι ἐπεστρέψατε;",
+        "VUL": "Reversique sunt nuntii ad Ochoziam. Qui dixit eis : Quare reversi estis ?",
+        "SYN": "И возвратились к _Охозии_ посланные. И он сказал им: что это вы возвратились?",
+        "NEO": "Les messagers retournèrent auprès d’Ochozias, et il leur dit : « Pourquoi revenez-vous ? »",
+        "NAB": "The messengers then returned to Ahaziah, who asked them. \"Why have you returned?\"",
+        "VAT_ES": "Los mensajeros regresaron, y el rey les preguntó: «&iquest;Cómo es que están de vuelta?».",
+        "CEI": "I messaggeri ritornarono dal re, che domandò loro: \"Perché siete tornati?\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֨וּ אֵלָ֜י/ו אִ֣ישׁ עָלָ֣ה לִ/קְרָאתֵ֗/נוּ וַ/יֹּ֣אמֶר אֵלֵי/נוּ֮ לְכ֣וּ שׁוּבוּ֮ אֶל הַ/מֶּ֣לֶךְ אֲשֶׁר שָׁלַ֣ח אֶתְ/כֶם֒ וְ/דִבַּרְתֶּ֣ם אֵלָ֗י/ו כֹּ֚ה אָמַ֣ר יְהוָ֔ה הַֽ/מִ/בְּלִ֤י אֵין אֱלֹהִים֙ בְּ/יִשְׂרָאֵ֔ל אַתָּ֣ה שֹׁלֵ֔חַ לִ/דְרֹ֕שׁ בְּ/בַ֥עַל זְב֖וּב אֱלֹהֵ֣י עֶקְר֑וֹן לָ֠/כֵן הַ/מִּטָּ֞ה אֲשֶׁר עָלִ֥יתָ שָּׁ֛ם לֹֽא תֵרֵ֥ד מִמֶּ֖/נָּה כִּֽי מ֥וֹת תָּמֽוּת׃",
+        "LXX": "καὶ εἶπαν πρὸς αὐτόν Ἀνὴρ ἀνέβη εἰς συνάντησιν ἡμῶν καὶ εἶπεν πρὸς ἡμᾶς Δεῦτε ἐπιστράφητε πρὸς τὸν βασιλέα τὸν ἀποστείλαντα ὑμᾶς καὶ λαλήσατε πρὸς αὐτόν Τάδε λέγει Κύριος Εἰ παρὰ τὸ μὴ εἶναι θεὸν ἐν Ἰσραὴλ σὺ πορεύῃ ζητῆσαι ἐν τῇ Βάαλ μυῖαν θεὸν Ἀκκαρών; οὐχ οὕτως· ἡ κλίνη ἐφ’ ἧς ἀνέβης ὅτι οὐ καταβήσῃ ἀπ’ αὐτῆς, ὅτι θανάτῳ ἀποθανῇ.",
+        "VUL": "At illi responderunt ei : Vir occurrit nobis, et dixit ad nos : Ite, et revertimini ad regem qui misit vos, et dicetis ei : Hæc dicit Dominus : Numquid quia non erat Deus in Israël, mittis ut consulatur Beelzebub deus Accaron ? idcirco de lectulo, super quem ascendisti, non descendes, sed morte morieris.",
+        "SYN": "И сказали ему: навстречу нам вышел человек и сказал нам: пойдите, возвратитесь к царю, который послал вас, и скажите ему: так говорит Господь: разве нет Бога в Израиле, что ты посылаешь вопрошать Веельзевула, божество Аккаронское? За то с постели, на которую ты лег, не сойдешь с нее, но умрешь.",
+        "NEO": "Ils lui répondirent : « Un homme est monté à notre rencontre et nous a dit : Allez, retournez vers le roi qui vous a envoyés, et dites-lui : Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : Est-ce parce qu’il n’y a pas de Dieu en Israël que tu envoies consulter Béel-Zébub, dieu d’Accaron ? C’est pourquoi du lit sur lequel tu es monté, tu ne descendras pas, mais tu mourras certainement. »",
+        "NAB": "\"A man came up to us,\" they answered, \"who said to us, 'Go back to the king who sent you and tell him: The LORD says, Is it because there is no God in Israel that you are sending to inquire of Baalzebub, the god of Ekron? For this you shall not leave the bed upon which you lie; instead, you shall die.'\"",
+        "VAT_ES": "Ellos le dijeron: «Un hombre nos salió al encuentro y nos dijo: Vuelvan a ver al rey que los ha enviado y díganle: Así habla el Señor: &iquest;Acaso no hay Dios en Israel, para que tú mandes a consultar a Baal Zebub, el dios de Ecrón? Por eso, no te levantarás del lecho en el que te has acostado, porque morirás irremediablemente».",
+        "CEI": "Gli dissero: \"Ci è venuto incontro un uomo, che ci ha detto: Su, tornate dal re che vi ha inviati e ditegli: Così dice il Signore: Non c'è forse un Dio in Israele, perché tu mandi a interrogare Baal-Zebub, dio di Ekròn? Pertanto, dal letto, in cui sei salito, non scenderai, ma di certo morirai\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר אֲלֵ/הֶ֔ם מֶ֚ה מִשְׁפַּ֣ט הָ/אִ֔ישׁ אֲשֶׁ֥ר עָלָ֖ה לִ/קְרַאתְ/כֶ֑ם וַ/יְדַבֵּ֣ר אֲלֵי/כֶ֔ם אֶת הַ/דְּבָרִ֖ים הָ/אֵֽלֶּה׃",
+        "LXX": "καὶ ἐλάλησεν πρὸς αὐτούς Τίς ἡ κρίσις τοῦ ἀνδρὸς τοῦ ἀναβάντος εἰς συνάντησιν ὑμῖν καὶ λαλήσαντος πρὸς ὑμᾶς τοὺς λόγους τούτους;",
+        "VUL": "Qui dixit eis : Cujus figuræ et habitus est vir ille, qui occurrit vobis, et locutus est verba hæc ?",
+        "SYN": "И сказал им: каков видом тот человек, который вышел навстречу вам и говорил вам слова сии?",
+        "NEO": "Ochozias leur dit : « Quel était l’aspect de l’homme qui est monté à votre rencontre et qui vous a dit ces paroles ? »",
+        "NAB": "The king asked them, \"What was the man like who came up to you and said these things to you?\"",
+        "VAT_ES": "El rey les preguntó: «&iquest;Cómo era el hombre que subió al encuentro de ustedes y les dijo esas palabras?».",
+        "CEI": "Domandò loro: \"Com'era l'uomo che vi è venuto incontro e vi ha detto simili parole?\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֣וּ אֵלָ֗י/ו אִ֚ישׁ בַּ֣עַל שֵׂעָ֔ר וְ/אֵז֥וֹר ע֖וֹר אָז֣וּר בְּ/מָתְנָ֑י/ו וַ/יֹּאמַ֕ר אֵלִיָּ֥ה הַ/תִּשְׁבִּ֖י הֽוּא׃",
+        "LXX": "καὶ εἶπον πρὸς αὐτόν Ἀνὴρ δασὺς καὶ ζώνην δερματίνην περιεζωσμένος τὴν ὀσφὺν αὐτοῦ· καὶ εἶπεν Ἠλειοὺ ὁ Θεσβείτης οὗτός ἐστιν.",
+        "VUL": "At illi dixerunt : Vir pilosus, et zona pellicea accinctus renibus. Qui ait : Elias Thesbites est.",
+        "SYN": "Они сказали ему: человек тот весь в волосах и кожаным поясом подпоясан по чреслам своим. И сказал он: это Илия Фесвитянин.",
+        "NEO": "Ils lui répondirent : « C’était un homme velu, avec une ceinture de cuir autour des reins. » Et Ochozias dit : « C’est Elie, le Thesbite. »",
+        "NAB": "\"Wearing a hairy garment,\" they replied, \"with a leather girdle about his loins.\" \"It is Elijah the Tishbite!\" he exclaimed.",
+        "VAT_ES": "Ellos le respondieron: «Era un hombre con un manto de piel y con un cinturón de cuero ajustado a la cintura. Entonces el rey exclamó: «&iexcl;Es Elías, el tisbita!».",
+        "CEI": "Risposero: \"Era un uomo peloso; una cintura di cuoio gli cingeva i fianchi\". Egli disse: \"Quello è Elia il Tisbita!\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֥ח אֵלָ֛י/ו שַׂר חֲמִשִּׁ֖ים וַ/חֲמִשָּׁ֑י/ו וַ/יַּ֣עַל אֵלָ֗י/ו וְ/הִנֵּה֙ יֹשֵׁב֙ עַל רֹ֣אשׁ הָ/הָ֔ר וַ/יְדַבֵּ֣ר אֵלָ֔י/ו אִ֚ישׁ הָֽ/אֱלֹהִ֔ים הַ/מֶּ֥לֶךְ דִּבֶּ֖ר רֵֽדָ/ה׃",
+        "LXX": "καὶ ἀπέστειλεν πρὸς αὐτὸν πεντηκόνταρχον καὶ τοὺς πεντήκοντα αὐτοῦ, καὶ ἀνέβη πρὸς αὐτόν· καὶ ἰδοὺ Ἠλειοὺ ἐκάθητο ἐπὶ τῆς κορυφῆς τοῦ ὄρους. καὶ ἐλάλησεν ὁ πεντηκόνταρχος πρὸς αὐτὸν καὶ εἶπεν Ἄνθρωπε τοῦ θεοῦ, ὁ βασιλεὺς ἐκάλεσέν σε, κατάβηθι.",
+        "VUL": "Misitque ad eum quinquagenarium principem, et quinquaginta qui erant sub eo. Qui ascendit ad eum : sedentique in vertice montis, ait : Homo Dei, rex præcepit ut descendas.",
+        "SYN": "И послал к нему пятидесятника с его пятидесятком. И он взошел к нему, когда Илия сидел на верху горы, и сказал ему: человек Божий! царь говорит: сойди.",
+        "NEO": "Aussitôt il envoya vers lui un chef de cinquante avec ses cinquante hommes. Ce chef monta auprès d’Elie, et voici qu’il était assis sur le sommet de la montagne, et il lui dit : « Homme de Dieu, le roi a dit : Descends ! »",
+        "NAB": "Then the king sent a captain with his company of fifty men after Elijah. The prophet was seated on a hilltop when he found him. \"Man of God,\" he ordered, \"the king commands you to come down.\"",
+        "VAT_ES": "El rey envió a un oficial con sus cincuenta hombres para buscar a Elías. Cuando él subió a buscarlo, lo encontró sentado en la cumbre la montaña, y le dijo: «Hombre de Dios, el rey ha dicho que bajes».",
+        "CEI": "Allora gli mandò il capo di una cinquantina con i suoi cinquanta uomini. Questi andò da lui, che era seduto sulla cima del monte, e gli disse: \"Uomo di Dio, il re ti ordina di scendere!\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲנֶ֣ה אֵלִיָּ֗הוּ וַ/יְדַבֵּר֮ אֶל שַׂ֣ר הַ/חֲמִשִּׁים֒ וְ/אִם אִ֤ישׁ אֱלֹהִים֙ אָ֔נִי תֵּ֤רֶד אֵשׁ֙ מִן הַ/שָּׁמַ֔יִם וְ/תֹאכַ֥ל אֹתְ/ךָ֖ וְ/אֶת חֲמִשֶּׁ֑י/ךָ וַ/תֵּ֤רֶד אֵשׁ֙ מִן הַ/שָּׁמַ֔יִם וַ/תֹּ֥אכַל אֹת֖/וֹ וְ/אֶת חֲמִשָּֽׁי/ו׃",
+        "LXX": "καὶ ἀπεκρίθη Ἠλειοὺ καὶ εἶπεν πρὸς τὸν πεντηκόνταρχον Καὶ εἰ ἄνθρωπος θεοῦ ἐγώ, καταβήσεται πῦρ ἐκ τοῦ οὐρανοῦ καὶ καταφάγεται σὲ καὶ τοὺς πεντήκοντά σου· καὶ κατέβη πῦρ ἐκ τοῦ οὐρανοῦ καὶ κατέφαγεν αὐτὸν καὶ τοὺς πεντήκοντα αὐτοῦ.",
+        "VUL": "Respondensque Elias, dixit quinquagenario : Si homo Dei sum, descendat ignis de cælo, et devoret te, et quinquaginta tuos. Descendit itaque ignis de cælo, et devoravit eum, et quinquaginta qui erant cum eo.",
+        "SYN": "И отвечал Илия, и сказал пятидесятнику: если я человек Божий, то пусть сойдет огонь с неба и попалит тебя и твой пятидесяток. И сошел огонь с неба и попалил его и пятидесяток его.",
+        "NEO": "Elie répondit et dit au chef de cinquante : « Si je suis un homme de Dieu, que le feu descende du ciel et vous consume, toi et tes cinquante hommes ? » Et le feu descendit du ciel et les consuma, lui et ses cinquante hommes.",
+        "NAB": "\"If I am a man of God,\" Elijah answered the captain, \"may fire come down from heaven and consume you and your fifty men.\" And fire came down from heaven and consumed him and his fifty men.",
+        "VAT_ES": "Elías respondió al oficial: «Si yo soy un hombre de Dios, que baje fuego del cielo y te devore, a ti y a tus cincuenta hombres». Y bajó fuego del cielo y lo devoró, a él y a sus cincuenta hombres.",
+        "CEI": "Elia rispose al capo della cinquantina: \"Se sono uomo di Dio, scenda il fuoco dal cielo e divori te e i tuoi cinquanta\". Scese un fuoco dal cielo e divorò quello con i suoi cinquanta."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יָּ֜שָׁב וַ/יִּשְׁלַ֥ח אֵלָ֛י/ו שַׂר חֲמִשִּׁ֥ים אַחֵ֖ר וַ/חֲמִשָּׁ֑י/ו וַ/יַּ֨עַן֙ וַ/יְדַבֵּ֣ר אֵלָ֔י/ו אִ֚ישׁ הָ/אֱלֹהִ֔ים כֹּֽה אָמַ֥ר הַ/מֶּ֖לֶךְ מְהֵרָ֥ה רֵֽדָ/ה׃",
+        "LXX": "καὶ προσέθετο ὁ βασιλεὺς καὶ ἀπέστειλεν πρὸς αὐτὸν ἄλλον πεντηκόνταρχον καὶ τοὺς πεντήκοντα αὐτοῦ· καὶ ἐλάλησεν ὁ πεντηκόνταρχος πρὸς αὐτὸν καὶ εἶπεν Ἄνθρωπε τοῦ θεοῦ, τάδε λέγει ὁ βασιλεύς Ταχέως κατάβηθι.",
+        "VUL": "Rursumque misit ad eum principem quinquagenarium alterum, et quinquaginta cum eo. Qui locutus est illi : Homo Dei, hæc dicit rex : Festina, descende.",
+        "SYN": "И послал к нему царь другого пятидесятника с его пятидесятком. И он стал говорить ему: человек Божий! так сказал царь: сойди скорее.",
+        "NEO": "Ochozias envoya encore un autre chef de cinquante avec ses cinquante hommes. Ce chef, prenant la parole, dit à Elie : « Homme de Dieu, ainsi a dit le roi : Hâte-toi, descends ! »",
+        "NAB": "Ahaziah sent another captain with his company of fifty men after Elijah. \"Man of God,\" he called out to Elijah, \"the king commands you to come down immediately.\"",
+        "VAT_ES": "El rey le volvió a enviar otro oficial con sus cincuenta hombres. Este tomó la palabra y dijo a Elías: «Hombre de Dios, así habla el rey: Baja en seguida».",
+        "CEI": "Il re mandò da lui ancora un altro capo di una cinquantina con i suoi cinquanta uomini. Questi andò da lui e gli disse: \"Uomo di Dio, il re ti ordina di scendere subito\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַן אֵלִיָּה֮ וַ/יְדַבֵּ֣ר אֲלֵי/הֶם֒ אִם אִ֤ישׁ הָֽ/אֱלֹהִים֙ אָ֔נִי תֵּ֤רֶד אֵשׁ֙ מִן הַ/שָּׁמַ֔יִם וְ/תֹאכַ֥ל אֹתְ/ךָ֖ וְ/אֶת חֲמִשֶּׁ֑י/ךָ וַ/תֵּ֤רֶד אֵשׁ אֱלֹהִים֙ מִן הַ/שָּׁמַ֔יִם וַ/תֹּ֥אכַל אֹת֖/וֹ וְ/אֶת חֲמִשָּֽׁי/ו׃",
+        "LXX": "καὶ ἀπεκρίθη Ἠλειοὺ καὶ ἐλάλησεν πρὸς αὐτὸν καὶ εἶπεν Εἰ ἄνθρωπος θεοῦ ἐγώ, καταβήσεται πῦρ ἐκ τοῦ οὐρανοῦ καὶ καταφάγεταί σε καὶ τοὺς πεντήκοντά σου· καὶ κατέβη πῦρ ἐκ τοῦ οὐρανοῦ καὶ κατέφαγεν αὐτὸν καὶ τοὺς πεντήκοντα αὐτοῦ.",
+        "VUL": "Respondens Elias, ait : Si homo Dei ego sum, descendat ignis de cælo, et devoret te, et quinquaginta tuos. Descendit ergo ignis de cælo, et devoravit illum, et quinquaginta ejus.",
+        "SYN": "И отвечал Илия и сказал ему: если я человек Божий, то пусть сойдет огонь с неба и попалит тебя и твой пятидесяток. И сошел огонь Божий с неба, и попалил его и пятидесяток его.",
+        "NEO": "Elie répondit et leur dit : « Si je suis un homme de Dieu, que le feu descende du ciel et vous consume, toi et tes cinquante hommes ! » Et le feu de Dieu descendit du ciel, et les consuma, lui et ses cinquante hommes.",
+        "NAB": "\"If I am a man of God,\" Elijah answered him, \"may fire come down from heaven and consume you and your fifty men.\" And divine fire came down from heaven, consuming him and his fifty men.",
+        "VAT_ES": "Elías le respondió: «Si yo soy un hombre de Dios, que baje fuego del cielo y te devore, a ti y a tus cincuenta hombres». Y bajo fuego del cielo y lo devoró, a él y a sus cincuenta hombres.",
+        "CEI": "Elia rispose: \"Se sono uomo di Dio, scenda un fuoco dal cielo e divori te e i tuoi cinquanta\". Scese un fuoco dal cielo e divorò quello con i suoi cinquanta."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יָּ֗שָׁב וַ/יִּשְׁלַ֛ח שַׂר חֲמִשִּׁ֥ים שְׁלִשִׁ֖ים וַ/חֲמִשָּׁ֑י/ו וַ/יַּ֡עַל וַ/יָּבֹא֩ שַׂר הַ/חֲמִשִּׁ֨ים הַ/שְּׁלִישִׁ֜י וַ/יִּכְרַ֥ע עַל בִּרְכָּ֣י/ו לְ/נֶ֣גֶד אֵלִיָּ֗הוּ וַ/יִּתְחַנֵּ֤ן אֵלָי/ו֙ וַ/יְדַבֵּ֣ר אֵלָ֔י/ו אִ֚ישׁ הָֽ/אֱלֹהִ֔ים תִּֽיקַר נָ֣א נַפְשִׁ֗/י וְ/נֶ֨פֶשׁ עֲבָדֶ֥י/ךָֽ אֵ֛לֶּה חֲמִשִּׁ֖ים בְּ/עֵינֶֽי/ךָ׃",
+        "LXX": "καὶ προσέθετο ὁ βασιλεὺς ἔτι ἀποστεῖλαι ἡγούμενον καὶ τοὺς πεντήκοντα αὐτοῦ· καὶ ἦλθεν ὁ πεντηκόνταρχος ὁ τρίτος καὶ ἔκαμψεν ἐπὶ τὰ γόνατα αὐτοῦ κατέναντι Ἠλειού, καὶ ἐδεήθη αὐτοῦ καὶ ἐλάλησεν πρὸς αὐτὸν καὶ εἶπεν Ἄνθρωπε τοῦ θεοῦ, ἐντιμωθήτω ἡ ψυχή μου καὶ ἡ ψυχὴ τῶν δούλων σου τούτων ἐν ὀφθαλμοῖς σου·",
+        "VUL": "Iterum misit principem quinquagenarium tertium, et quinquaginta qui erant cum eo. Qui cum venisset, curvavit genua contra Eliam, et precatus est eum, et ait : Homo Dei, noli despicere animam meam, et animas servorum tuorum qui mecum sunt.",
+        "SYN": "И еще послал в третий раз пятидесятника с его пятидесятком. И поднялся, и пришел пятидесятник третий, и пал на колена свои пред Илиею, и умолял его, и говорил ему: человек Божий! да не будет презрена душа моя и душа рабов твоих -- сих пятидесяти -- пред очами твоими;",
+        "NEO": "De nouveau Ochozias envoya un troisième chef de cinquante avec ses cinquante hommes. Le troisième chef de cinquante monta, et, étant arrivé, il fléchit les genoux devant Elie, et lui dit en suppliant : « Homme de Dieu, de grâce, que ma vie et que la vie de ces cinquante hommes, tes serviteurs, soit précieuse à tes yeux !",
+        "NAB": "Again, for the third time, Ahaziah sent a captain with his company of fifty men. When the third captain arrived, he fell to his knees before Elijah, pleading with him. \"Man of God,\" he implored him, \"let my life and the lives of these fifty men, your servants, count for something in your sight!",
+        "VAT_ES": "El rey volvió a enviar a un tercer oficial con sus cincuenta hombres. El tercer oficial subió y, al llegar, se puso de rodillas frente a Elías y le suplicó, diciendo: «Hombre de Dios, por favor, que mi vida y la vida de estos cincuenta servidores tuyos tengan algún valor a tus ojos.",
+        "CEI": "Il re mandò ancora un terzo capo con i suoi cinquanta uomini. Questo terzo capo di una cinquantina andò, si inginocchiò davanti ad Elia e supplicò: \"Uomo di Dio, valgano qualche cosa ai tuoi occhi la mia vita e la vita di questi tuoi cinquanta servi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הִ֠נֵּה יָ֤רְדָה אֵשׁ֙ מִן הַ/שָּׁמַ֔יִם וַ֠/תֹּאכַל אֶת שְׁנֵ֞י שָׂרֵ֧י הַ/חֲמִשִּׁ֛ים הָ/רִאשֹׁנִ֖ים וְ/אֶת חֲמִשֵּׁי/הֶ֑ם וְ/עַתָּ֕ה תִּיקַ֥ר נַפְשִׁ֖/י בְּ/עֵינֶֽי/ךָ׃",
+        "LXX": "ἰδοὺ κατέβη πῦρ ἐκ τοῦ οὐρανοῦ καὶ κατέφαγεν τοὺς δύο πεντηκοντάρχους τοὺς πρώτους· καὶ νῦν ἐντιμωθήτω δὴ ἡ ψυχή μου ἐν ὀφθαλμοῖς σου.",
+        "VUL": "Ecce descendit ignis de cælo, et devoravit duos principes quinquagenarios primos, et quinquagenos qui cum eis erant : sed nunc obsecro ut miserearis animæ meæ.",
+        "SYN": "вот, сошел огонь с неба, и попалил двух пятидесятников прежних с их пятидесятками; но теперь да не будет презрена душа моя пред очами твоими!",
+        "NEO": "Voici que le feu est descendu du ciel et a consumé les deux premiers chefs de cinquante et leur cinquante hommes ; mais maintenant que ma vie soit précieuse à tes yeux ! »",
+        "NAB": "Already fire has come down from heaven, consuming two captains with their companies of fifty men. But now, let my life mean something to you!\"",
+        "VAT_ES": "Ya ha bajado fuego del cielo y ha devorado a los dos oficiales anteriores con sus cincuenta hombres. Pero ahora, &iexcl;que mi vida tenga algún valor a tus ojos!».",
+        "CEI": "Ecco è sceso il fuoco dal cielo e ha divorato i due altri capi di cinquantina con i loro uomini. Ora la mia vita valga qualche cosa ai tuoi occhi\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֞ר מַלְאַ֤ךְ יְהוָה֙ אֶל אֵ֣לִיָּ֔הוּ רֵ֣ד אוֹת֔/וֹ אַל תִּירָ֖א מִ/פָּנָ֑י/ו וַ/יָּ֛קָם וַ/יֵּ֥רֶד אוֹת֖/וֹ אֶל הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ ἐλάλησεν ἄγγελος Κυρίου πρὸς Ἠλειοὺ καὶ εἶπεν Κατάβηθι μετ’ αὐτοῦ, μὴ φοβηθῇς ἀπὸ προσώπου αὐτῶν· καὶ ἀνέστη Ἠλειοὺ καὶ κατέβη μετ’ αὐτοῦ πρὸς τὸν βασιλέα.",
+        "VUL": "Locutus est autem angelus Domini ad Eliam, dicens : Descende cum eo : ne timeas. Surrexit igitur, et descendit cum eo ad regem,",
+        "SYN": "И сказал Ангел Господень Илии: пойди с ним, не бойся его. И он встал, и пошел с ним к царю.",
+        "NEO": "L’ange de \\+w Yahweh|strong=\"H3068\"\\+w** dit à Elie : « Descends avec lui, et ne crains pas devant lui. » Elie se leva et descendit avec lui vers le roi.",
+        "NAB": "Then the angel of the LORD said to Elijah, \"Go down with him; you need not be afraid of him.\"",
+        "VAT_ES": "El Angel del Señor dijo a Elías: «Baja con él, no le temas». Elías se levantó, bajó con él a presentarse ante el rey,",
+        "CEI": "L'angelo del Signore disse a Elia: \"Scendi con lui e non aver paura di lui\". Si alzò e scese con lui dal re"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֨ר אֵלָ֜י/ו כֹּֽה אָמַ֣ר יְהוָ֗ה יַ֜עַן אֲשֶׁר שָׁלַ֣חְתָּ מַלְאָכִים֮ לִ/דְרֹשׁ֮ בְּ/בַ֣עַל זְבוּב֮ אֱלֹהֵ֣י עֶקְרוֹן֒ הַֽ/מִ/בְּלִ֤י אֵין אֱלֹהִים֙ בְּ/יִשְׂרָאֵ֔ל לִ/דְרֹ֖שׁ בִּ/דְבָר֑/וֹ לָ֠/כֵן הַ/מִּטָּ֞ה אֲשֶׁר עָלִ֥יתָ שָּׁ֛ם לֹֽא תֵרֵ֥ד מִמֶּ֖/נָּה כִּֽי מ֥וֹת תָּמֽוּת׃",
+        "LXX": "καὶ ἐλάλησεν πρὸς αὐτὸν καὶ εἶπεν Ἠλειού Τάδε λέγει Κύριος Τί ὅτι ἀπέστειλας ζητῆσαι ἐν τῇ Βάαλ μυῖαν θεὸν Ἀκκαρών; οὐχ οὕτως· ἡ κλίνη ἐφ’ ἧς ἀνέβης ἐκεῖ οὐ καταβήσῃ ἀπ’ αὐτῆς, ὅτι θανάτῳ ἀποθανῇ.",
+        "VUL": "et locutus est ei : Hæc dicit Dominus : Quia misisti nuntios ad consulendum Beelzebub deum Accaron, quasi non esset Deus in Israël a quo posses interrogare sermonem, ideo de lectulo super quem ascendisti, non descendes, sed morte morieris.",
+        "SYN": "И сказал ему: так говорит Господь: за то, что ты посылал послов вопрошать Веельзевула, божество Аккаронское, как будто в Израиле нет Бога, чтобы вопрошать о слове Его, -- с постели, на которую ты лег, не сойдешь с нее, но умрешь.",
+        "NEO": "Il lui dit : « Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : Parce que tu as envoyé des messagers consulter Béel-Zébub, dieu d’Accaron, — n’y a-t-il pas de Dieu en Israël dont on puisse consulter la parole ? — à cause de cela, du lit sur lequel tu es monté tu ne descendras pas, mais tu mourras certainement. »",
+        "NAB": "So Elijah left and went down with him and stated to the king: \"Thus says the LORD: 'Because you sent messengers to inquire of Baalzebub, the god of Ekron, you shall not leave the bed upon which you lie; instead you shall die.'\"",
+        "VAT_ES": "y le dijo: «Así habla el Señor: Por haber enviado mensajeros a consultar a Baal Zebub, el dios de Ecrón, como si no hubiera Dios en Israel para consultar su palabra, por eso, no te levantarás del lecho donde te has acostado: morirás irremediablemente».",
+        "CEI": "e gli disse: \"Così dice il Signore: Poiché hai mandato messaggeri a consultare Baal-Zebub, dio di Ekròn, come se in Israele ci fosse, fuori di me, un Dio da interrogare, per questo, dal letto, su cui sei salito, non scenderai, ma certamente morirai\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יָּ֜מָת כִּ/דְבַ֥ר יְהוָ֣ה אֲשֶׁר דִּבֶּ֣ר אֵלִיָּ֗הוּ וַ/יִּמְלֹ֤ךְ יְהוֹרָם֙ תַּחְתָּ֔י/ו בִּ/שְׁנַ֣ת שְׁתַּ֔יִם לִ/יהוֹרָ֥ם בֶּן יְהוֹשָׁפָ֖ט מֶ֣לֶךְ יְהוּדָ֑ה כִּ֛י לֹֽא הָ֥יָה ל֖/וֹ בֵּֽן׃",
+        "LXX": "καὶ ἀπέθανεν κατὰ τὸ ῥῆμα Κυρίου ὃ ἐλάλησεν Ἠλειού.",
+        "VUL": "Mortuus est ergo juxta sermonem Domini quem locutus est Elias, et regnavit Joram frater ejus pro eo, anno secundo Joram filii Josaphat regis Judæ : non enim habebat filium.",
+        "SYN": "И умер он по слову Господню, которое изрек Илия. И воцарился Иорам [брат Охозии], вместо него, во второй год Иорама, сына Иосафатова, царя Иудейского, так как сына у того не было.",
+        "NEO": "Ochozias mourut, selon la parole de \\+w Yahweh|strong=\"H3068\"\\+w** qu’Elie avait dite ; et Joram devint roi à sa place, la seconde année de Joram, fils de Josaphat, roi de Juda ; car il n’avait pas de fils.",
+        "NAB": "Ahaziah died in fulfillment of the prophecy of the LORD spoken by Elijah. Since he had no son, his brother Joram succeeded him as king, in the second year of Jehoram, son of Jehoshaphat, king of Judah.",
+        "VAT_ES": "El rey murió, conforme a la palabra del Señor que había pronunciado Elías. En lugar de él reinó su hermano Joram, en el segundo año de Joram, hijo de Josafat, rey de Judá; porque Ocozías no tenía hijos.",
+        "CEI": "Difatti morì, secondo la predizione fatta dal Signore per mezzo di Elia e al suo posto divenne re suo fratello Ioram, nell'anno secondo di Ioram figlio di Giòsafat, re di Giuda, perché egli non aveva figli."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/יֶ֛תֶר דִּבְרֵ֥י אֲחַזְיָ֖הוּ אֲשֶׁ֣ר עָשָׂ֑ה הֲ/לֽוֹא הֵ֣מָּה כְתוּבִ֗ים עַל סֵ֛פֶר דִּבְרֵ֥י הַ/יָּמִ֖ים לְ/מַלְכֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ τὰ λοιπὰ τῶν λόγων Ὀχοζείου ἃ ἐποίησεν, οὐκ ἰδοὺ ταῦτα γεγραμμένα ἐπὶ βιβλίῳ λόγων τῶν ἡμερῶν τοῖς βασιλεῦσιν Ἰσραήλ; [1] καὶ Ἰωρὰμ υἱὸς Ἀχαὰβ βασιλεύει ἐπὶ Ἰσραὴλ ἐν Σαμαρείᾳ ἔτη δέκα δύο, ἐν ἔτει ὀκτωκαιδεκάτῳ Ἰωσαφὰθ βασιλέως Ἰούδα. [2] καὶ ἐποίησεν τὸ πονηρὸν ἐνώπιον Κυρίου, πλὴν οὐχ ὡς οἱ ἀδελφοὶ αὐτοῦ οὐδὲ ὡς ἡ μήτηρ αὐτοῦ· [3] καὶ ἀπέστειλεν τὰς στήλας τοῦ Βάαλ ἃς ἐποίησεν ὁ πατὴρ αὐτοῦ καὶ συνέτριψεν αὐτάς· πλὴν ἐν ταῖς ἁμαρτίαις οἴκου Ἰεροβοὰμ ὃς ἐξήμαρτεν τὸν Ἰσραὴλ ἐκολλήθη, οὐκ ἀπέστη ἀπ’ αὐτῶν. [4] καὶ ἐθυμώθη ὀργῇ Κύριος εἰς τὸν οἶκον Ἀχαάβ.",
+        "VUL": "Reliqua autem verborum Ochoziæ quæ operatus est, nonne hæc scripta sunt in libro sermonum dierum regum Israël ?",
+        "SYN": "Прочее об Охозии, что он сделал, написано в летописи царей Израильских.",
+        "NEO": "Le reste des actes d’Ochozias, ce qu’il a fait, cela n’est-il pas écrit dans le livre des Chroniques des rois d’Israël ?",
+        "NAB": "The rest of the acts of Ahaziah are recorded in the book of chronicles of the kings of Israel.",
+        "VAT_ES": "El resto de los hechos de Ocozías, lo que él hizo, &iquest;no está escrito en el libro de los Anales de los reyes de Israel?",
+        "CEI": "Le altre gesta di Acazia, le sue azioni, sono descritte nel libro delle Cronache dei re di Israele."
+      }
+    }
+  }
+}

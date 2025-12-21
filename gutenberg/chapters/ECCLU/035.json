@@ -1,0 +1,446 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_035",
+  "book_key": "ECCLU",
+  "sequence": 35,
+  "chapter_in": {
+    "MT": 35,
+    "VUL": 35,
+    "LXX": 35
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Ἡγούμενόν σε κατέστησαν; μὴ ἐπαίρου· γίνου ἐν αὐτοῖς ὡς εἷς ἐξ αὐτῶν, φρόντισον αὐτῶν καὶ οὕτω κάθισον·",
+        "VUL": "[Qui conservat legem/ multiplicat oblationem./",
+        "SYN": "Кто соблюдает закон, тот умножает приношения; кто держится заповедей, тот приносит жертву спасения.",
+        "NEO": "Qui observe la loi fait de nombreuses offrandes ;",
+        "NAB": "To keep the law is a great oblation, and he who observes the commandments sacrifices a peace offering.",
+        "VAT_ES": "Observar la Ley es como presentar muchas ofrendas y ser fiel a los mandamientos es ofrecer un sacrificio de comunión;",
+        "CEI": "Chi osserva la legge moltiplica le offerte; chi adempie i comandamenti offre un sacrificio di comunione."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "καὶ πᾶσαν τὴν χρείαν σου ποιήσας ἀνάπεσε, ἵνα εὐφρανθῇς δι’ αὐτούς, καὶ εὐκοσμίας χάριν λάβῃς στέφανον.",
+        "VUL": "Sacrificium salutare est attendere mandatis,/ et discedere ab omni iniquitate./",
+        "SYN": "Кто воздает благодарность, тот приносит семидал; а подающий милостыню приносит жертву хвалы.",
+        "NEO": "qui s’attache aux préceptes offre un sacrifice pacifique.",
+        "NAB": "In works of charity one offers fine flour, and when he gives alms he presents his sacrifice of praise.",
+        "VAT_ES": "devolver un favor es hacer una oblación de harina y hacer limosna es ofrecer un sacrifico de alabanza.",
+        "CEI": "Chi serba riconoscenza offre fior di farina, chi pratica l'elemosina fa sacrifici di lode."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "Λάλησον, πρεσβύτερε, πρέπει γάρ σοι, ἐν ἀκριβεῖ ἐπιστήμῃ, καὶ μὴ ἐμποδίσῃς μουσικά.",
+        "VUL": "Et propitiationem litare sacrificii super injustitias :/ et deprecatio pro peccatis, recedere ab injustitia./",
+        "SYN": "Благоугождение Господу - отступление от зла, и умилостивление Его - уклонение от неправды.",
+        "NEO": "Qui rend grâces fait une offrande de fleur de farine ;",
+        "NAB": "To refrain from evil pleases the LORD, and to avoid injustice is an atonement.",
+        "VAT_ES": "La manera de agradar al Señor es apartarse del mal, y apartarse de la injusticia es un sacrificio de expiación.",
+        "CEI": "Cosa gradita al Signore è astenersi dalla malvagità, sacrificio espiatorio è astenersi dall'ingiustizia."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ὅπου ἀκρόαμα, μὴ ἐκχέῃς λαλιάν, καὶ ἀκαίρως μὴ σοφίζου.",
+        "VUL": "Retribuet gratiam qui offert similaginem :/ et qui facit misericordiam offert sacrificium./",
+        "SYN": "Не являйся пред лице Господа с пустыми руками, ибо все это - по заповеди.",
+        "NEO": "qui pratique la miséricorde offre un sacrifice de louange.",
+        "NAB": "Appear not before the LORD empty-handed, for all that you offer is in fulfillment of the precepts.",
+        "VAT_ES": "No te presentes ante el Señor con las manos vacías, porque todo esto lo prescriben los mandamientos.",
+        "CEI": "Non presentarti a mani vuote davanti al Signore, tutto questo è richiesto dai comandamenti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "σφραγὶς ἄνθρακος ἐπὶ κόσμῳ χρυσῷ, σύγκριμα μουσικῶν ἐν συμποσίῳ οἴνου·",
+        "VUL": "Beneplacitum est Domino recedere ab iniquitate :/ et deprecatio pro peccatis recedere ab injustitia./",
+        "SYN": "Приношение праведного утучняет алтарь, и благоухание его - пред Всевышним;",
+        "NEO": "Ce qui plaît au Seigneur, c’est qu’on s’éloigne du mal ; ce qui obtient son pardon, c’est la fuite de l’injustice.",
+        "NAB": "The just man's offering enriches the altar and rises as a sweet odor before the Most High.",
+        "VAT_ES": "Cuando la ofrenda del justo engrasa el altar, su fragancia llega a la presencia del Altísimo.",
+        "CEI": "L'offerta del giusto arricchisce l'altare, il suo profumo sale davanti all'Altissimo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ἐν κατασκευάσματι χρυσῷ σφραγὶς σμαράγδου, μέλος μουσικῶν ἐφ’ ἡδεῖ οἴνῳ.",
+        "VUL": "Non apparebis ante conspectum Domini vacuus :/",
+        "SYN": "жертва праведного мужа благоприятна, и память о ней незабвенна будет.",
+        "NEO": "Pourtant ne te présente pas devant le Seigneur les mains vides,",
+        "NAB": "The just man's sacrifice is most pleasing, nor will it ever be forgotten.",
+        "VAT_ES": "El sacrificio del justo es aceptado y su memorial no caerá en el olvido.",
+        "CEI": "Il sacrificio dell'uomo giusto è gradito, il suo memoriale non sarà dimenticato."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "λάλησον, νεανίσκε, εἰ χρεία σου, μόλις δὶς ἐὰν ἐπερωτηθῇς·",
+        "VUL": "hæc enim omnia propter mandatum Dei fiunt./",
+        "SYN": "С веселым оком прославляй Господа и не умаляй начатков трудов твоих;",
+        "NEO": "car toutes ces offrandes doivent être faites à cause du précepte.",
+        "NAB": "In generous spirit pay homage to the LORD, be not sparing of freewill gifts.",
+        "VAT_ES": "Glorifica al Señor con generosidad y no mezquines las primicias de tus manos.",
+        "CEI": "Glorifica il Signore con animo generoso, non essere avaro nelle primizie che offri."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "κεφαλαίωσον λόγον, ἐν ὀλίγοις πολλά· γίνου ὡς γινώσκων καὶ ἅμα σιωπῶν.",
+        "VUL": "Oblatio justi impinguat altare,/ et odor suavitatis est in conspectu Altissimi./",
+        "SYN": "при всяком даре имей лице веселое и в радости посвящай десятину.",
+        "NEO": "L’offrande du juste engraisse l’autel, et sa suave odeur s’élève devant le Seigneur.",
+        "NAB": "With each contribution show a cheerful countenance, and pay your tithes in a spirit of joy.",
+        "VAT_ES": "Da siempre con el rostro radiante y consagra el diezmo con alegría.",
+        "CEI": "In ogni offerta mostra lieto il tuo volto, consacra con gioia la decima."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "ἐν μέσῳ μεγιστάνων μὴ ἐξισάζου, καὶ ἑτέρου λέγοντος μὴ πολλὰ ἀδολέσχει.",
+        "VUL": "Sacrificium justi acceptum est,/ et memoriam ejus non obliviscetur Dominus./",
+        "SYN": "Давай Всевышнему по даянию Его, и с веселым оком - по мере приобретения рукою твоею,",
+        "NEO": "Le sacrifice de l’homme juste est agréable, et son souvenir ne sera pas oublié",
+        "NAB": "Give to the Most High as he has given to you, generously, according to your means.",
+        "VAT_ES": "Da al Altísimo según lo que él te dio, y con generosidad, conforme a tus recursos,",
+        "CEI": "Dà all'Altissimo in base al dono da lui ricevuto, dà di buon animo secondo la tua possibilità,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "πρὸ βροντῆς κατασπεύδει ἀστραπή, καὶ πρὸ αἰσχυντηροῦ προελεύσεται χάρις.",
+        "VUL": "Bono animo gloriam redde Deo,/ et non minuas primitias manuum tuarum./",
+        "SYN": "ибо Господь есть воздаятель и воздаст тебе всемеро.",
+        "NEO": "Glorifie le Seigneur d’un cœur libéral, et ne retranche rien aux prémices de tes mains.",
+        "NAB": "For the LORD is one who always repays, and he will give back to you sevenfold.",
+        "VAT_ES": "porque el Señor sabe retribuir y te dará siete veces más.",
+        "CEI": "perché il Signore è uno che ripaga, e sette volte ti restituirà."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἐν ὥρᾳ ἐξεγείρου καὶ μὴ οὐράγει, ἀπότρεχε εἰς οἶκον καὶ μὴ ῥᾳθύμει·",
+        "VUL": "In omni dato hilarem fac vultum tuum,/ et in exsultatione sanctifica decimas tuas./",
+        "SYN": "Не уменьшай даров, ибо Он не примет их: и не надейся на неправедную жертву,",
+        "NEO": "Dans toutes tes offrandes, aie le visage joyeux, et consacre ta dîme avec allégresse.",
+        "NAB": "But offer no bribes, these he does not accept! Trust not in sacrifice of the fruits of extortion,",
+        "VAT_ES": "No pretendas sobornarlo con un don, porque no lo aceptaría, y no te apoyes en un sacrificio injusto.",
+        "CEI": "Non cercare di corromperlo con doni, non accetterà, non confidare su una vittima ingiusta,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "ἐκεῖ παῖζε καὶ ποίει τὰ ἐνθυμήματά σου, καὶ μὴ ἁμάρτῃς λόγῳ ὑπερηφάνῳ.",
+        "VUL": "Da Altissimo secundum datum ejus,/ et in bono oculo adinventionem facito manuum tuarum,/",
+        "SYN": "ибо Господь есть судия, и нет у Него лицеприятия:",
+        "NEO": "Donne au Très-Haut selon ce qu’il t’a donné, d’un cœur libéral, selon ce que tes mains ont acquis.",
+        "NAB": "For he is a God of justice, who knows no favorites.",
+        "VAT_ES": "Porque el Señor es juez y no hace distinción de personas:",
+        "CEI": "perché il Signore è giudice e non v'è presso di lui preferenza di persone."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "καὶ ἐπὶ τούτοις εὐλόγησον τὸν ποιήσαντά σε καὶ μεθύσκοντά σε ἀπὸ τῶν ἀγαθῶν αὐτοῦ.",
+        "VUL": "quoniam Dominus retribuens est,/ et septies tantum reddet tibi./",
+        "SYN": "Он не уважит лица пред бедным и молитву обиженного услышит;",
+        "NEO": "Car le Seigneur paie de retour, et il te rendra sept fois autant.",
+        "NAB": "Though not unduly partial toward the weak, yet he hears the cry of the oppressed.",
+        "VAT_ES": "no se muestra parcial contra el pobre y escucha la súplica del oprimido;",
+        "CEI": "Non è parziale con nessuno contro il povero, anzi ascolta proprio la preghiera dell'oppresso."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "Ὁ φοβούμενος Κύριον ἐκδέξεται παιδίαν, καὶ οἱ ὀρθρίζοντες εὑρήσουσιν εὐδοκίαν·",
+        "VUL": "Noli offerre munera prava,/ non enim suscipiet illa./",
+        "SYN": "Он не презрит моления сироты, ни вдовы, когда она будет изливать прошение свое.",
+        "NEO": "Ne cherche pas à le corrompre par des dons, car il ne les recevrait pas",
+        "NAB": "He is not deaf to the wail of the orphan, nor to the widow when she pours out her complaint;",
+        "VAT_ES": "no desoye la plegaria del huérfano, ni a la viuda, cuando expone su queja.",
+        "CEI": "Non trascura la supplica dell'orfano né la vedova, quando si sfoga nel lamento."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ὁ ζητῶν νόμον ἐμπλησθήσεται αὐτοῦ, καὶ ὁ ὑποκρινόμενος σκανδαλισθήσεται ἐν αὐτῷ·",
+        "VUL": "Et noli inspicere sacrificium injustum,/ quoniam Dominus judex est,/ et non est apud illum gloria personæ./",
+        "SYN": "Не слезы ли вдовы льются по щекам, и не вопиет ли она против того, кто вынуждает их?",
+        "NEO": "et ne t’appuie pas sur une offrande injuste. Car le Seigneur est un juge, et il n’a pas égard au rang des personnes.",
+        "NAB": "Do not the tears that stream down her cheek cry out against him that causes them to fall?",
+        "VAT_ES": "&iquest;No corren las lágrimas por las mejillas de la viuda y su clamor no acusa al que las hace derramar?",
+        "CEI": "Le lacrime della vedova non scendono forse sulle sue guance e il suo grido non si alza contro chi gliele fa versare?"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "οἱ φοβούμενοι Κύριον εὑρήσουσιν κρίμα, καὶ δικαιώματα ὡς φῶς ἐξάψουσιν.",
+        "VUL": "Non accipiet Dominus personam in pauperem,/ et deprecationem læsi exaudiet./",
+        "SYN": "Служащий Богу будет принят с благоволением, и молитва его дойдет до облаков.",
+        "NEO": "Il ne fait acception de personne au détriment du pauvre, et il écoute la prière de l’opprimé.",
+        "NAB": "He who serves God willingly is heard; his petition reaches the heavens.",
+        "VAT_ES": "El que rinde el culto que agrada al Señor, es aceptado, y su plegaria llega hasta las nubes.",
+        "CEI": "Chi venera Dio sarà accolto con benevolenza, la sua preghiera giungerà fino alle nubi."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "ἄνθρωπος ἁμαρτωλὸς ἐκκλινεῖ ἐλεγμόν, καὶ κατὰ τὸ θέλημα αὐτοῦ εὑρήσει σύγκριμα.",
+        "VUL": "Non despiciet preces pupilli,/ nec viduam, si effundat loquelam gemitus./",
+        "SYN": "Молитва смиренного проникнет сквозь облака, и он не утешится, доколе она не приблизится к Богу",
+        "NEO": "Il ne dédaigne pas l’orphelin qui supplie, ni la veuve qui répand sa plainte.",
+        "NAB": "The prayer of the lowly pierces the clouds; it does not rest till it reaches its goal,",
+        "VAT_ES": "La súplica del humilde atraviesa las nubes y mientras no llega a su destino, él no se consuela:",
+        "CEI": "La preghiera dell'umile penetra le nubi, finché non sia arrivata, non si contenta;"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "ἀνὴρ βουλῆς οὐ μὴ παρίδῃ διανόημα, ἀλλότριος καὶ ὑπερήφανος οὐ καταπτήξει φόβον, καὶ μετὰ τὸ ποιῆσαι μετ’ αὐτοῦ ἄνευ βουλῆς.",
+        "VUL": "Nonne lacrimæ viduæ ad maxillam descendunt,/ et exclamatio ejus super deducentem eas ?/",
+        "SYN": "и не отступит, доколе Всевышний не призрит и не рассудит справедливо и не произнесет решения.",
+        "NEO": "Les larmes de la veuve ne coulent-elles pas sur ses joues,",
+        "NAB": "Nor will it withdraw till the Most High responds, judges justly and affirms the right.",
+        "VAT_ES": "no desiste hasta que el Altísimo interviene, para juzgar a los justos y hacerles justicia.",
+        "CEI": "non desiste finché l'Altissimo non sia intervenuto, rendendo soddisfazione ai giusti e ristabilendo l'equità."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ἄνευ βουλῆς μηθὲν ποιήσῃς, καὶ ἐν τῷ ποιῆσαί σε μὴ μεταμελοῦ.",
+        "VUL": "A maxilla enim ascendunt usque ad cælum,/ et Dominus exauditor non delectabitur in illis./",
+        "SYN": "И Господь не замедлит и не потерпит, доколе не сокрушит чресл немилосердых;",
+        "NEO": "et son cri n’éclate-t-il pas sur celui qui les fait verser ?",
+        "NAB": "God indeed will not delay, and like a warrior, will not be still",
+        "VAT_ES": "El Señor no tardará y no tendrá paciencia con los impíos,",
+        "CEI": "Il Signore non tarderà e non si mostrerà indulgente sul loro conto,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ἐν ὁδῷ ἀντιπτώματος μὴ πορεύου, καὶ μὴ προσκόψῃς ἐν λιθώδεσιν·",
+        "VUL": "Qui adorat Deum in oblectatione suscipietur,/ et deprecatio illius usque ad nubes propinquabit.]",
+        "SYN": "Он будет воздавать отмщение и народам, доколе не истребит сонма притеснителей и не сокрушит скипетров неправедных,",
+        "NEO": "Celui qui honore Dieu de la manière qui lui plaît sera bien accueilli, et sa prière monte jusqu’aux nues.",
+        "NAB": "Till he breaks the backs of the merciless and wreaks vengeance upon the proud;",
+        "VAT_ES": "hasta quebrar el poderío de los despiadados y dar su merecido a las naciones;",
+        "CEI": "finché non abbia spezzato le reni agli spietati e si sia vendicato delle nazioni;"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "μὴ πιστεύσῃς ἐν ὁδῷ ἀπροσκόπῳ,",
+        "VUL": "[Oratio humiliantis se nubes penetrabit,/ et donec propinquet non consolabitur,/ et non discedet donec Altissimus aspiciat./",
+        "SYN": "доколе не воздаст человеку по делам его, и за дела людей - по намерениям их,",
+        "NEO": "La prière de l’humble pénétrera les nues ; il ne sera pas consolé qu’elle ne soit arrivée jusqu’à Dieu ; il ne cessera pas que le Très-Haut ne l’ait regardé, et le Seigneur jugera selon l’équité et rendra justice.",
+        "NAB": "Till he destroys the haughty root and branch, and smashes the scepter of the wicked;",
+        "VAT_ES": "hasta extirpar la multitud de los prepotentes y quebrar el cetro de los injustos;",
+        "CEI": "finché non abbia estirpato la moltitudine dei violenti e frantumato lo scettro degli ingiusti;"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "καὶ ἀπὸ τῶν τέκνων σου φύλαξαι.",
+        "VUL": "Et Dominus non elongabit :/ et judicabit justos, et faciet judicium :/ et Fortissimus non habebit in illis patientiam,/ ut contribulet dorsum ipsorum :/",
+        "SYN": "доколе не совершит суда над народом Своим и не обрадует их Своею милостью.",
+        "NEO": "Le Seigneur ne fera pas attendre, il n’aura plus de patience à l’égard des oppresseurs ; jusqu’à ce qu’il ait brisé les reins de ces hommes sans pitié,",
+        "NAB": "Till he requites mankind according to its deeds, and repays men according to their thoughts;",
+        "VAT_ES": "hasta retribuir a cada hombre según sus acciones, remunerando las obras de los hombres según sus intenciones;",
+        "CEI": "finché non abbia reso a ognuno secondo le sue azioni e vagliato le opere degli uomini secondo le loro intenzioni;"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "ἐν παντὶ ἔργῳ πίστευε τῇ ψυχῇ σου, καὶ γὰρ τοῦτό ἐστιν τήρησις ἐντολῶν.",
+        "VUL": "et gentibus reddet vindictam,/ donec tollat plenitudinem superborum,/ et sceptra iniquorum contribulet :/",
+        "SYN": "Благовременна милость во время скорби, как дождевые облака во время засухи.",
+        "NEO": "et qu’il ait tiré vengeance des nations ; jusqu’à ce qu’il ait anéanti la foule des blasphémateurs, et mis en pièces les sceptres des impies ;",
+        "NAB": "Till he defends the cause of his people, and gladdens them by his mercy.",
+        "VAT_ES": "hasta juzgar la causa de su pueblo y alegrarlo con su misericordia.",
+        "CEI": "finché non abbia fatto giustizia al suo popolo e non lo abbia allietato con la sua misericordia."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "ὁ πιστεύων νόμῳ προσέχει ἐντολαῖς, καὶ ὁ πεποιθὼς Κυρίῳ οὐκ ἐλαττωθήσεται.",
+        "VUL": "donec reddat hominibus secundum actus suos,/ et secundum opera Adæ, et secundum præsumptionem illius :/",
+        "NEO": "jusqu’à ce qu’il ait rendu à l’homme selon ses actes, et rémunéré les œuvres des hommes selon leurs pensées ;",
+        "NAB": "Welcome is his mercy in time of distress as rain clouds in time of drought.",
+        "VAT_ES": "&iexcl;Qué hermosa es la misericordia en el momento de la aflicción, como las nubes de lluvia en tiempo de sequía!",
+        "CEI": "Bella è la misericordia al tempo dell'afflizione, come le nubi apportatrici di pioggia in tempo di siccità."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "donec judicet judicium plebis suæ,/ et oblectabit justos misericordia sua./",
+        "NEO": "jusqu’à ce qu’il ait pris en main la cause de son peuple, et qu’il l’ait réjoui par sa miséricorde."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Speciosa misericordia Dei in tempore tribulationis,/ quasi nubes pluviæ in tempore siccitatis.]",
+        "NEO": "La miséricorde est belle au temps de l’oppression d’Israël, comme les nuées chargées de pluie au temps de la sécheresse."
+      }
+    }
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "TOBI_005",
+  "book_key": "TOBI",
+  "sequence": 5,
+  "chapter_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Καὶ ἀποκριθεὶς Τωβίας εἶπεν αὐτῷ Πάτερ, ποιήσω πάντα ὅσα ἐντέταλσαί μοι.",
+        "VUL": "Tunc respondit Tobias patri suo, et dixit : Omnia quæcumque præcepisti mihi faciam, pater.",
+        "SYN": "И сказал Товия в ответ ему: отец _мой_, я исполню все, что ты завещаешь мне;",
+        "NEO": "Tobias répondit alors à son père Tobit : « Père, je ferai tout ce que tu m’as dit.",
+        "NAB": "Then Tobiah replied to his father Tobit: \"Everything that you have commanded me, father, I will do.",
+        "VAT_ES": "Entonces Tobías respondió a su padre Tobit: «Yo haré, padre, todo lo que me has ordenado."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ἀλλὰ πῶς δυνήσομαι λαβεῖν τὸ ἀργύριον, καὶ οὐ γινώσκω αὐτόν;",
+        "VUL": "Quomodo autem pecuniam hanc requiram, ignoro : ille me nescit, et ego eum ignoro : quod signum dabo ei ? sed neque viam per quam pergatur illuc aliquando cognovi.",
+        "SYN": "но как я могу получить серебро, не зная того _человека_?",
+        "NEO": "Mais comment vais-je récupérer l’argent auprès de lui ? Il ne me connaît pas et je ne le connais pas non plus. Quel gage vais-je lui donner pour qu’il me croie et me remette l’argent ? Et d’ailleurs, je ne sais pas quels chemins prendre pour ce voyage en Médie. »",
+        "NAB": "But how shall I be able to obtain the money from him, since he does not know me nor do I know him? What can I show him to make him recognize me and trust me, so that he will give me the money? I do not even know which roads to take for the journey into Media!\"",
+        "VAT_ES": "Pero &iquest;cómo podré recuperar ese dinero que tiene Gabael? El no me conoce a mí, ni yo a él. &iquest;Qué señal le daré para que me reconozca, me crea y me entregue el dinero? Además, no sé qué camino hay que tomar para ir a Media»."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "καὶ ἔδωκεν αὐτῷ τὸ χειρόγραφον, καὶ εἶπεν αὐτῷ Ζήτησον σεαυτῷ ἄνθρωπον ὃς συμπορεύσεταί σοι, καὶ δώσω αὐτῷ μισθὸν ἕως ζῶ, καὶ λάβε πορευθεὶς τὸ ἀργύριον.",
+        "VUL": "Tunc pater suus respondit illi, et dixit : Chirographum quidem illius penes me habeo : quod dum illi ostenderis, statim restituet.",
+        "SYN": "Тогда _отец_ дал ему расписку и сказал: найди себе человека, который сопутствовал бы тебе; я дам ему плату, пока еще жив, и ступайте за серебром.",
+        "NEO": "Tobit répondit à son fils Tobias : « Chacun de nous a apposé sa signature sur un billet que j’ai coupé en deux, afin que chacun en garde la moitié. J’ai pris un morceau, et j’ai mis l’autre avec l’argent. Et dire qu’il y a vingt ans que j’ai laissé cet argent à sa garde ! Et maintenant, mon enfant, trouve un compagnon de voyage digne de confiance - nous le paierons pour son temps jusqu’à ton retour - et ensuite va chercher l’argent chez Gabaël ».",
+        "NAB": "Tobit answered his son Tobiah: \"We exchanged signatures on a document written in duplicate; I divided it into two parts, and each of us kept one; his copy I put with the money. Think of it, twenty years have already passed since I deposited that money! So now, my son, find yourself a trustworthy man who will make the journey with you. We will, of course, give him a salary when you return; but get back that money from Gabael.\"",
+        "VAT_ES": "Tobit le dijo: «El me dio un recibo y yo le di otro; lo dividí en dos partes, cada uno tomó la suya y yo puse mi parte con el dinero. Ya hace veinte años que deposité esa suma. Ahora, hijo mío, busca una persona de confianza para que te acompañe; le pagaremos un sueldo hasta que vuelvas. Ve entonces a recuperar ese dinero»."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "καὶ ἐπορεύθη ζητῆσαι ἄνθρωπον, καὶ εὗρεν Ῥαφαὴλ ὃς ἦν ἄγγελος, καὶ οὐκ ᾔδει·",
+        "VUL": "Sed perge nunc, et inquire tibi aliquem fidelem virum, qui eat tecum salva mercede sua, ut dum adhuc vivo, recipias eam.",
+        "SYN": "И пошел он искать человека и встретил Рафаила. Это был Ангел, но он не знал",
+        "NEO": "Tobias sortit pour chercher un homme qui connaissait le chemin pour l’accompagner en Médie. Dehors, il trouva l’ange Raphaël debout face à lui, bien qu’il ne devinât pas qu’il s’agissait d’un ange de Dieu.",
+        "NAB": "Tobiah went to look for someone acquainted with the roads who would travel with him to Media. As soon as he went out, he found the angel Raphael standing before him, though he did not know that this was an angel of God.",
+        "VAT_ES": "Tobías salió a buscar un buen guía, que conociera el camino para ir con él a Media. Afuera encontró al ángel Rafael, que estaba de pie frente a él y, sin sospechar que era un ángel de Dios,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτῷ Εἰ δύναμαι πορευθῆναι μετὰ σοῦ ἐν Ῥάγοις τῆς Μηδείας, καὶ εἰ ἔμπειρος εἶ τῶν τόπων;",
+        "VUL": "Tunc egressus Tobias, invenit juvenem splendidum stantem præcinctum, et quasi paratum ad ambulandum.",
+        "SYN": "и сказал ему: можешь ли ты идти со мною в Раги Мидийские и знаешь ли эти места?",
+        "NEO": "Il dit : « D’où viens-tu, mon ami ? L’ange répondit : « Je suis l’un de tes frères israélites, je suis venu dans ces contrées pour chercher du travail ». Tobias demanda : « Connais-tu la route de la Médie ?",
+        "NAB": "Tobiah said to him, \"Who are you, young man?\" He replied \"I am an Israelite, one of your kinsmen. I have come here to work.\" Tobiah said, \"Do you know the way to Media?\"",
+        "VAT_ES": "le preguntó: «&iquest;De dónde eres, amigo?». El ángel le respondió: «Soy uno de tus hermanos israelitas, y he venido a buscar trabajo aquí». Tobías le dijo: «&iquest;Conoces el camino para ir a Media?»."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτῷ ὁ ἄγγελος Πορεύσομαι μετὰ σοῦ, καὶ τῆς ὁδοῦ ἐμπειρῶ, καὶ παρὰ Γαβαὴλ τὸν ἀδελφὸν ἡμῶν ηὐλίσθην.",
+        "VUL": "Et ignorans quod angelus Dei esset, salutavit eum, et dixit : Unde te habemus, bone juvenis ?",
+        "SYN": "Ангел отвечал: могу идти с тобою и дорогу знаю; я уже останавливался у Гаваила, брата нашего.",
+        "NEO": "L’autre répondit : « Bien sûr que oui, j’y suis allé plusieurs fois, je connais et j’ai l’expérience de tous les chemins. Je suis souvent allé à Media et j’ai logé chez Gabaël, un de nos parents, qui habite à Rhagès, à Media. Il faut généralement deux jours entiers pour aller d’Ecbatane à Rhagès ; Rhagès se trouve dans les montagnes, et Ecbatane est au milieu de la plaine ».",
+        "NAB": "The other replied: \"Yes, I have been there many times. I know the place well and I know all the routes. I have often traveled to Media; I used to stay with our kinsman Gabael, who lives at Rages in Media. It is a good two days' travel from Ecbatana to Rages, for Rages is situated at the mountains, Ecbatana out on the plateau.\"",
+        "VAT_ES": "«&iexcl;Por supuesto!, le respondió el ángel. He estado allí muchas veces y conozco todos los caminos de memoria. He ido frecuentemente a Media y me he alojado en casa de Gabael, uno de nuestros hermanos, que vive en Ragués de Media. Hay dos días de camino desde Ecbátana hasta Ragués, porque Ragués está situada en la montaña y Ecbátana en medio de la llanura»."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτῷ Τωβίας Ὑπόμεινόν με, καὶ ἐρῶ τῷ πατρί.",
+        "VUL": "At ille respondit : Ex filiis Israël. Et Tobias dixit ei : Nosti viam quæ ducit in regionem Medorum ?",
+        "SYN": "И сказал ему Товия: подожди меня, я скажу отцу моему.",
+        "NEO": "Tobias dit : « Attends-moi, mon ami, pendant que je vais prévenir mon père ; j’ai besoin que tu viennes avec moi ; je te paierai pour ton temps ».",
+        "NAB": "Tobiah said to him, \"Wait for me, young man, till I go back and tell my father; for I need you to make the journey with me. I will, of course, pay you.\"",
+        "VAT_ES": "Tobías le dijo: «Espérame, amigo, mientras voy a avisar a mi padre, porque necesito que vengas conmigo. Yo te pagaré tu sueldo»."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτῷ Πορεύου καὶ μὴ χρονίσῃς.",
+        "VUL": "Cui respondit : Novi : et omnia itinera ejus frequenter ambulavi, et mansi apud Gabelum fratrem nostrum, qui moratur in Rages civitate Medorum, quæ posita est in monte Ecbatanis.",
+        "SYN": "Тот сказал: ступай, только не медли.",
+        "NEO": "L’autre répondit : « Bien, j’attendrai, mais ne tarde pas. »",
+        "NAB": "Raphael replied, \"Very well, I will wait for you; but do not be long.\"",
+        "VAT_ES": "El ángel le respondió: «Te espero aquí, pero no tardes»."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "Καὶ εἰσελθὼν εἶπεν τῷ πατρί Ἰδοὺ εὕρηκα ὃς συνπορεύσεταί μοι. ὁ δὲ εἶπεν Φώνησον αὐτὸν πρὸς μέ, ἵνα ἐπιγνῶ ποίας φυλῆς ἐστιν, καὶ εἰ πιστὸς τοῦ πορευθῆναι μετὰ σοῦ.",
+        "VUL": "Cui Tobias ait : Sustine me obsecro, donec hæc ipsa nuntiem patri meo.",
+        "SYN": "Он, придя, сказал отцу: вот я нашел себе спутника. _Отец_ сказал: пригласи его ко мне; я узнаю, из какого он колена и надежный ли спутник тебе.",
+        "NEO": "Tobias entra et dit à son père qu’il avait trouvé un de leurs frères israélites. Le père dit : « Fais-le entrer, je veux connaître sa famille et sa tribu. Je veux savoir s’il sera pour toi, mon enfant, un compagnon fiable ». Tobias sortit donc et l’appela : « Ami, dit-il, mon père te demande.+ 5:9 La Vulg. ajoute : \\+it 12 « Quelle joie puis-je avoir, répondit Tobie, moi qui suis assis dans les ténèbres et qui ne vois pas la lumière du ciel ? » 13 Le jeune homme lui dit : « Aie bon courage ! Il est facile à Dieu de te guérir. » 14 Ensuite Tobie lui dit : « Pourrais-tu bien conduire mon fils chez Gabélus, à Ragès, ville des Mèdes ? A ton retour, je te donnerai ton salaire. » — 15 « Je le conduirai, répondit l’ange, et je le ramènerai auprès de toi. »\\+it**",
+        "NAB": "Tobiah went back to tell his father Tobit what had happened. He said to him, \"I have just found a man who is one of our own Israelite kinsmen!\" Tobit said, \"Call the man, so that I may find out what family and tribe he comes from, and whether he is trustworthy enough to travel with you, son.\" Tobiah went out to summon the man, saying, \"Young man, my father would like to see you.\"",
+        "VAT_ES": "Tobías entró a avisar a su padre que había encontrado a uno de sus hermanos israelitas. Y Tobit le dijo: Preséntamelo, para que yo sepa a qué familia y a qué tribu pertenece. Quiero saber si se puede confiar en él para que te acompañe». Tobías salió a llamarlo y le dijo: «Amigo, mi padre te llama»."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "καὶ ἐκάλεσεν αὐτόν· καὶ εἰσῆλθεν, καὶ ἠσπάσαντο ἀλλήλους.",
+        "VUL": "Tunc ingressus Tobias, indicavit universa hæc patri suo. Super quæ admiratus pater, rogavit ut introiret ad eum.",
+        "SYN": "И позвал его, и он вошел, и приветствовали друг друга.",
+        "NEO": "L’ange entra dans la maison ; Tobit le salua, et l’autre lui répondit en lui souhaitant du bonheur en abondance. Tobit répondit : « Pourrai-je jamais être heureux ? Je suis un aveugle, je ne vois plus la lumière du ciel, je suis plongé dans les ténèbres comme les morts qui ne voient plus la lumière. Je suis un homme enterré vivant, j’entends parler les gens, mais je ne les vois pas ». L’ange lui dit : « Console-toi, bientôt Dieu te guérira. Console-toi. Tobit dit : « Mon fils Tobias veut aller à Media. Veux-tu lui servir de guide ? Frère, je te paierai. Il répondit : « Je veux bien aller avec lui ; je connais tous les chemins ; je suis allé souvent à Médie, j’ai traversé toutes ses plaines et toutes ses montagnes, et je connais toutes ses routes.",
+        "NAB": "When Raphael entered the house, Tobit greeted him first. Raphael said, \"Hearty greetings to you!\" Tobit replied: \"What joy is left for me any more? Here I am, a blind man who cannot see God's sunlight, but must remain in darkness, like the dead who no longer see the light! Though alive, I am among the dead. I can hear a man's voice, but I cannot see him.\" Raphael said, \"Take courage! God has healing in store for you; so take courage!\" Tobit then said: \"My son Tobiah wants to go to Media. Can you go with him to show him the way? I will of course pay you, brother.\" Raphael answered: \"Yes, I can go with him, for I know all the routes. I have often traveled to Media and crossed all its plains and mountains; so I know every road well.\"",
+        "VAT_ES": "El ángel entró en la casa, Tobit lo saludó primero y aquel le respondió: «Mis parabienes, hermano». Pero Tobit le dijo: «&iquest;Qué alegría puedo tener? Estoy ciego, no veo más la luz del sol y me encuentro sumergido en la oscuridad, como los muertos que ya no contemplan la luz. Estoy enterrado en vida; oigo la voz de los hombres, pero no los veo». El ángel le dijo: «&iexcl;Animo! Dios te curará pronto». Tobit añadió: «Mi hijo Tobías desea ir a Media. &iquest;Podrías tú acompañarlo como guía? Yo te pagaré un sueldo, hermano». El ángel le respondió: «Estoy dispuesto a acompañarlo. Conozco todos los caminos; he ido varias veces a Media , he atravesado todas sus llanuras y conozco muy bien los senderos de sus montañas»."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτῷ Τωβείτ Ἀδελφέ, ἐκ ποίας φυλῆς καὶ ἐκ ποίας πατρίδος σὺ εἶ; ὑπόδειξόν μοι.",
+        "VUL": "Ingressus itaque salutavit eum, et dixit : Gaudium tibi sit semper.",
+        "SYN": "Товит спросил: скажи мне, брат, из какого ты колена и из какого рода?",
+        "NEO": "Tobit dit : « Frère, à quelle famille et à quelle tribu appartiens-tu ? Veux-tu me le dire, mon frère ?",
+        "NAB": "Tobit asked, \"Brother, tell me, please, what family and tribe are you from?\"",
+        "VAT_ES": "Tobit le preguntó: «&iquest;Quieres decirme, hermano, de qué familia y de qué tribu eres?»."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτῷ Φυλὴν καὶ πατριὰν σὺ ζητεῖς, ἢ μίσθιον ὃς συμπορεύσεται μετὰ τοῦ υἱοῦ σου; καὶ εἶπεν αὐτῷ Τωβείτ Βούλομαι, ἀδελφέ, ἐπιγνῶναι τὸ γένος σου καὶ τὸ ὄνομα.",
+        "VUL": "Et ait Tobias : Quale gaudium mihi erit, qui in tenebris sedeo, et lumen cæli non video ?",
+        "SYN": "Он отвечал: колена и рода ты ищешь или наемника, который пошел бы с сыном твоим? И сказал ему Товит: брат, мне хочется знать род твой и имя твое.",
+        "NEO": "« Que t’importe ma tribu ? » dit l’ange. Tobit répondit : « Je veux être sûr de qui tu es le fils et de ton nom.",
+        "NAB": "Raphael said: \"Why? Do you need a tribe and a family? Or are you looking for a hired man to travel with your son?\" Tobit replied, \"I wish to know truthfully whose son you are, brother, and what your name is.\"",
+        "VAT_ES": "«&iquest;Qué importa mi tribu?», le dijo el ángel. Tobit insistió: «Quiero saber con seguridad de quién eres hijo y cómo te llamas»."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "ὃς δὲ εἶπεν Ἐγὼ Ἀζαρίας Ἁνανίου τοῦ μεγάλου, τῶν ἀδελφῶν σου.",
+        "VUL": "Cui ait juvenis : Forti animo esto : in proximo est ut a Deo cureris.",
+        "SYN": "Он сказал: я Азария, _из рода_ Анании великого, из братьев твоих.",
+        "NEO": "L’ange dit : « Je suis Azarias, fils du grand Ananias, l’un de tes parents ».",
+        "NAB": "Raphael answered, \"I am Azariah, son of Hananiah the elder, one of your own kinsmen.\"",
+        "VAT_ES": "El ángel le respondió: «Yo soy Azarías, hijo de Ananías el Grande, uno de tus hermanos»."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτῷ Ὑγιαίνων ἔλθοις, ἀδελφέ· καὶ μή μοι ὀργισθῇς ὅτι ἐζήτησα τὴν φυλήν σου καὶ τὴν πατριάν σου ἐπιγνῶναι. καὶ σὺ τυγχάνεις ἀδελφός μου ἐκ τῆς καλῆς καὶ ἀγαθῆς γενεᾶς· ἐπεγίνωσκον γὰρ ἐγὼ Ἁνανίαν καὶ Ἰαθὰν τοὺς υἱοὺς Σεμεοῦ τοῦ μεγάλου, ὡς ἐπορευόμεθα κοινῶς εἰς Ἰεροσόλυμα προσκυνεῖν, ἀναφέροντες τὰ πρωτότοκα καὶ τὰς δεκάτας τῶν γενημάτων, καὶ οὐκ ἐπλανήθησαν ἐν τῇ πλάνῃ τῶν ἀδελφῶν ἡμῶν· ἐκ ῥίζης καλῆς εἶ, ἀδελφέ.",
+        "VUL": "Dixit itaque illi Tobias : Numquid poteris perducere filium meum ad Gabelum in Rages civitatem Medorum ? et cum redieris, restituam tibi mercedem tuam.",
+        "SYN": "Тогда _Товит_ сказал ему: брат, иди благополучно, и не гневайся на меня за то, что я спросил о колене и роде твоем. Ты доводишься брат мне, из честного и доброго рода. Я знал Ананию и Ионафана, сыновей Семея великого; мы вместе ходили в Иерусалим на поклонение, с первородными и десятинами _земных_ произведений, ибо не увлекались заблуждением братьев наших: ты, брат, от хорошего корня!",
+        "NEO": "« Bienvenue et bonjour, mon frère ! Ne t’offense pas de ce que je veuille connaître le nom de ta famille ; je trouve que tu es mon parent d’une bonne et honorable lignée. Je connais Ananias et Nathan, les deux fils du grand Shemaiah. Ils avaient l’habitude d’aller à Jérusalem avec moi ; nous y avons adoré ensemble et ils ne se sont jamais écartés du droit chemin. Tes frères sont des hommes de valeur ; tu es de bonne souche ; sois le bienvenu ».",
+        "NAB": "Tobit exclaimed: \"Welcome! God save you, brother! Do not be provoked with me, brother, for wanting to learn the truth about your family. So it turns out that you are a kinsman, and from a noble and good line! I knew Hananiah and Nathaniah, the two sons of Shemaiah the elder; with me they used to make the pilgrimage to Jerusalem, where we would worship together. No, they did not stray from the right path; your kinsmen are good men. You are certainly of good lineage, and welcome!\"",
+        "VAT_ES": "Tobit le dijo: «&iexcl;Bienvenido, hermano , y Salud! No tomes a mal que haya querido conocer la verdad acerca de tu familia, Por lo visto, eres un hermano de respetable y noble origen. Conozco a Ananías y a Natán, los dos hijos de Semeías el Grande. Ellos me acompañaban a Jerusalén; allí adoraban junto conmigo, y nunca se apartaron del buen camino. Tus hermanos son hombres de bien y tú eres de buena estirpe. &iexcl;Sé bienvenido!»."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ἀλλ’ εἰπόν μοι τίνα σοι ἔσομαι μισθὸν διδόναι; δραχμὴν τῆς ἡμέρας καὶ τὰ δέοντά σοι ὡς καὶ τῷ υἱῷ μου;",
+        "VUL": "Et dixit ei angelus : Ego ducam, et reducam eum ad te.",
+        "SYN": "Но скажи мне: какую плату я должен буду дать тебе? Я дам тебе драхму на день и все необходимое для тебя и для сына моего,",
+        "NEO": "Il poursuivit : « Je t’engage à une drachme par jour, avec les mêmes frais que ceux de mon propre fils. Fais le voyage avec mon fils",
+        "NAB": "Then he added: \"For each day you are away I will give you the normal wages, plus expenses for you and for my son. If you go with my son,",
+        "VAT_ES": "Luego siguió diciendo: «Te pagaré como sueldo una dracma diaria, y tendrás todo lo que necesite, lo mismo que mi hijo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "καὶ ἔτι προσθήσω σοι ἐπὶ τὸν μισθόν, ἐὰν ὑγιαίνοντες ἐπιστρέψητε.",
+        "VUL": "Cui Tobias respondit : Rogo te, indica mihi de qua domo aut de qua tribu es tu.",
+        "SYN": "и еще прибавлю тебе сверх этой платы, если благополучно возвратитесь.",
+        "NEO": "et je dépasserai le salaire convenu. L’ange répondit : « Je ferai le voyage avec lui. N’aie pas peur. A l’aller, tout ira bien ; au retour, tout ira bien ; la route est sûre ».",
+        "NAB": "I will even add a bonus to your wages!\" Raphael replied: \"I will go with him; have no fear. In good health we shall leave you, and in good health we shall return to you, for the way is safe.\"",
+        "VAT_ES": "Acompáñalo, y yo te daré un sobresueldo». El ángel respondió: «Sí, iré con él, no tengas miedo. Volveremos tan bien como hemos salido, porque el camino es seguro»."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "εὐδόκησαν οὕτως· καὶ εἶπεν πρὸς Τωβίαν Ἕτοιμος γίνου πρὸς τὴν ὁδόν· καὶ εὐοδωθείητε. καὶ ἡτοίμασεν ὁ υἱὸς αὐτοῦ τὰ πρὸς τὴν ὁδόν· καὶ εἶπεν αὐτῷ ὁ πατὴρ αὐτοῦ Πορεύου μετὰ τοῦ ἀνθρώπου· ὁ δὲ ἐν τῷ οὐρανῷ οἰκῶν θεὸς εὐοδώσει τὴν ὁδὸν ὑμῶν, καὶ ὁ ἄγγελος αὐτοῦ συνπορευθήτω ὑμῖν. καὶ ἐξῆλθαν ἀμφότεροι ἀπελθεῖν, καὶ ὁ κύων τοῦ παιδαρίου μετ’ αὐτῶν.",
+        "VUL": "Cui Raphaël angelus dixit : Genus quæris mercenarii, an ipsum mercenarium qui cum filio tuo eat ?",
+        "SYN": "Так и условились. Тогда он сказал Товии: будь готов в путь, и отправляйтесь благополучно. И приготовил сын его нужное для пути. И сказал ему отец: иди с этим человеком; живущий же на небесах Бог да благоустроит путь ваш, и Ангел Его да сопутствует вам! - И отправились оба, и собака юноши с ними.",
+        "NEO": "Tobit dit : « Béni sois-tu, mon frère ». Puis il se tourna vers son fils. Mon enfant, dit-il, prépare ce qu’il te faut pour le voyage, et mets-toi en route avec ton frère. Que le Dieu du ciel vous protège à l’étranger et vous ramène tous deux sains et saufs auprès de moi ! Que son ange vous accompagne et vous protège, mon enfant. Tobias quitta la maison pour se mettre en route et embrassa son père et sa mère. Tobias dit : « Bon voyage ! ».+ 5:17 La Vulg. ajoute : \\+it Et l’ange lui dit : « Je conduirai ton fils sain et sauf, et je te le ramènerai sain et sauf. »\\+it**",
+        "NAB": "Tobit said, \"God bless you, brother.\" Then he called his son and said to him: \"My son, prepare whatever you need for the journey, and set out with your kinsman. May God in heaven protect you on the way and bring you back to me safe and sound; and may his angel accompany you for safety, my son.\" Before setting out on his journey, Tobiah kissed his father and mother. Tobit said to him, \"Have a safe journey.\"",
+        "VAT_ES": "Tobit exclamó: «&iexcl;Bendito seas, hermano!». Después llamó a su hijo y le dijo: «Hijo mío, prepara lo necesario para el viaje y parte con tu hermano. El Dios que está en el cielo los proteja y los haga volver a mi lado sanos y salvos. &iexcl;Que su ángel los acompañe con su protección, hijo mío!». Tobías salió para ponerse en camino, y abrazó a su padre y a su madre. Tobit le dijo: «&iexcl;Buen viaje!»."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "Ἔκλαυσεν δὲ Ἅννα ἡ μήτηρ αὐτοῦ, καὶ εἶπεν πρὸς Τωβείτ Τί ἐξαπέστειλας τὸ παιδίον ἡμῶν; ἢ οὐχὶ ἡ ῥάβδος τῆς χειρὸς ἡμῶν ἐστιν ἐν τῷ εἰσπορεύεσθαι αὐτὸν καὶ ἐκπορεύεσθαι ἐνώπιον ἡμῶν;",
+        "VUL": "sed ne forte sollicitum te reddam, ego sum Azarias Ananiæ magni filius.",
+        "SYN": "Анна, мать его, заплакала и сказала Товиту: зачем отпустил ты сына нашего? Не он ли был опорою рук наших, когда входил и выходил пред нами?",
+        "NEO": "Sa mère fondit en larmes et dit à Tobias : « Pourquoi dois-tu renvoyer mon enfant ? N’est-il pas le bâton de nos mains, quand il marche devant nous ?",
+        "NAB": "But his mother began to weep. She said to Tobit: \"Why have you decided to send my child away? Is he not the staff to which we cling, ever there with us in all that we do?",
+        "VAT_ES": "Su madre se puso a llorar y dijo a Tobit: «&iquest;Por qué has hecho partir a mi hijo? &iquest;Acaso no es el bastón de nuestra mano, el que guía nuestros pasos?"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ἀργύριον τῷ ἀργυρίῳ μὴ φθάσαι, ἀλλὰ περίψημα τοῦ παιδίου ἡμῶν γένοιτο.",
+        "VUL": "Et Tobias respondit : Ex magno genere es tu. Sed peto ne irascaris quod voluerim cognoscere genus tuum.",
+        "SYN": "Не предпочитай серебра серебру; пусть оно будет как сор _в сравнении_ с сыном нашим!",
+        "NEO": "L’argent n’est-il pas la seule chose qui compte ? N’est-il pas aussi précieux que notre enfant ?",
+        "NAB": "I hope more money is not your chief concern! Rather let it be a ransom for our son!",
+        "VAT_ES": "&iquest;Para qué acumular más dinero? No importa nada comparado con nuestro hijo."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ὡς γὰρ δέδοται ἡμῖν ζῇν παρὰ τοῦ κυρίου, τοῦτο ἱκανὸν ἡμῖν ὑπάρχει.",
+        "VUL": "Dixit autem illi angelus : Ego sanum ducam, et sanum tibi reducam filium tuum.",
+        "SYN": "Ибо, сколько Господом определено нам жить, на это у нас довольно есть.",
+        "NEO": "Le mode de vie que Dieu nous avait déjà donné était suffisant.",
+        "NAB": "What the Lord has given us to live on is certainly enough for us.\"",
+        "VAT_ES": "Con lo que el Señor nos daba para vivir ya teníamos bastante»."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτῇ Τωβείτ Μὴ λόγον ἔχε, ἀδελφή· ὑγιαίνων ἐλεύσεται, καὶ οἱ ὀφθαλμοί σου ὄψονται αὐτόν.",
+        "VUL": "Respondens autem Tobias, ait : Bene ambuletis, et sit Deus in itinere vestro, et angelus ejus comitetur vobiscum.",
+        "SYN": "Товит сказал ей: не печалься, сестра; он придет здоровым, и глаза твои увидят его,",
+        "NEO": "Il dit : « N’ayez pas de telles pensées. En partant et en revenant, tout ira bien pour notre enfant. Tu verras par toi-même quand il reviendra sain et sauf ! Ne pense pas à cela, ne t’inquiète pas pour eux, ma sœur.",
+        "NAB": "Tobit reassured her: \"Have no such thought. Our son will leave in good health and come back to us in good health. Your own eyes will see the day when he returns to you safe and sound.",
+        "VAT_ES": "Tobit le respondió: «&iexcl;No pienses eso! Nuestro hijo se va muy bien y volverá junto a nosotros con toda felicidad; tus propios ojos verán el día en que regresará sano y salvo. No te preocupes ni temas por ellos, hermana."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ἄγγελος γὰρ ἀγαθὸς συνπορεύσεται αὐτῷ, καὶ εὐοδωθήσεται ἡ ὁδὸς αὐτοῦ, καὶ ὑποστρέψει ὑγιαίνων.",
+        "VUL": "Tunc paratis omnibus quæ erant in via portanda, fecit Tobias vale patri suo et matri suæ, et ambulaverunt ambo simul.",
+        "SYN": "ибо ему будет сопутствовать добрый Ангел; путь его будет благоуспешен, и он возвратится здоровым.",
+        "NEO": "Un bon ange l’accompagnera ; il fera un bon voyage et nous reviendra sain et sauf. »",
+        "NAB": "So, no such thought; do not worry about them, my love. For a good angel will go with him, his journey will be successful, and he will return unharmed.\"",
+        "VAT_ES": "Un ángel bueno lo acompañará, él hará un buen viaje y volverá sano». Y ella dejó de llorar."
+      }
+    }
+  }
+}

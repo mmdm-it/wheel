@@ -1,0 +1,457 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "SAPI_011",
+  "book_key": "SAPI",
+  "sequence": 11,
+  "chapter_in": {
+    "MT": 11,
+    "VUL": 11,
+    "LXX": 11
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Εὐόδωσεν τὰ ἔργα αὐτῶν ἐν χειρὶ προφήτου ἁγίου.",
+        "VUL": "[Direxit opera eorum in manibus prophetæ sancti./",
+        "SYN": "Она благоустроила дела их рукою святого пророка:",
+        "NEO": "Elle fit réussir leurs œuvres par la main d’un saint prophète.",
+        "NAB": "She made their affairs prosper through the holy prophet.",
+        "VAT_ES": "Ella hizo prosperar sus empresas gracias a un santo profeta.",
+        "CEI": "Essa fece riuscire le loro imprese per mezzo di un santo profeta:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "διώδευσαν ἔρημον ἀοίκητον, καὶ ἐν ἀβάτοις ἔπηξαν σκηνάς·",
+        "VUL": "Iter fecerunt per deserta quæ non habitabantur,/ et in locis desertis fixerunt casas./",
+        "SYN": "они прошли по необитаемой пустыне, и на непроходных  местах поставили шатры;",
+        "NEO": "Ils firent route à travers un désert inhabité, et dressèrent leurs tentes dans des régions sans chemin.",
+        "NAB": "They journeyed through the uninhabited desert, and in solitudes they pitched their tents;",
+        "VAT_ES": "Ellos atravesaron un desierto inhabitable y levantaron sus carpas en lugares intransitados;",
+        "CEI": "attraversarono un deserto inospitale, fissarono le tende in terreni impraticabili,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ἀντέστησαν πολεμίοις, καὶ ἠμύναντο ἐχθρούς.",
+        "VUL": "Steterunt contra hostes,/ et de inimicis se vindicaverunt./",
+        "SYN": "противостали неприятелям и отмстили врагам;",
+        "NEO": "Ils résistèrent à leurs ennemis, et tirèrent vengeance de leurs adversaires+ 11:3 Allusion aux différents combats des Hébreux contre les Amalécites (Exo 17:8), contre les Chananéens et leur roi Arad (Nom 21:1), contre les Amorrhéens (Nom 21:21), etc.*.",
+        "NAB": "they withstood enemies and took vengeance on their foes.",
+        "VAT_ES": "enfrentaron a sus enemigos y rechazaron a sus adversarios.",
+        "CEI": "resistettero agli avversari, respinsero i nemici."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ἐδίψησαν καὶ ἐπεκαλέσαντό σε, καὶ ἐδόθη αὐτοῖς ἐκ πέτρας ἀκροτόμου ὕδωρ, καὶ ἴαμα δίψης ἐκ λίθου σκληροῦ.",
+        "VUL": "Sitierunt, et invocaverunt te,/ et data est illis aqua de petra altissima,/ et requies sitis de lapide duro.]",
+        "SYN": "томились жаждою и воззвали к Тебе, и дана им была вода из утесистой скалы и утоление жажды - из твердого камня.",
+        "NEO": "Ils éprouvèrent la soif et vous invoquèrent, et l’eau leur fut donnée d’un rocher escarpé, et d’une pierre, l’apaisement de leur soif.+ 11:4 Voir Exo 17:4-6 ; Nom 20:8-11. Les versets suiv. établissent un parallèle entre le miracle qui fit jaillir l’eau du rocher en faveur des Israélites, et celui qui avait changé en sang les eaux du Nil pour punir les Egyptiens : le premier fut un bienfait pour les Hébreux, le second un châtiment pour les Égyptiens.*",
+        "NAB": "When they thirsted, they called upon you, and water was given them from the sheer rock, assuagement for their thirst from the hard stone.",
+        "VAT_ES": "Cuando estaban sedientos, te invocaron, y una roca escarpada les dio agua, una dura piedra les calmó la sed.",
+        "CEI": "Quando ebbero sete, ti invocarono e fu data loro acqua da una rupe scoscesa, rimedio contro la sete da una dura roccia."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "δι’ ὧν γὰρ ἐκολάσθησαν οἱ ἐχθροὶ αὐτῶν, διὰ τούτων αὐτοὶ ἀποροῦντες εὐεργετήθησαν.",
+        "VUL": "[Per quæ enim pnas passi sunt inimici illorum/ a defectione potus sui,/ et in eis cum abundarent filii Israël lætati sunt :/",
+        "SYN": "Ибо, чем наказаны были враги их,",
+        "NEO": "Ce qui avait fait le châtiment de leurs ennemis devint pour eux une bénédiction dans leur détresse.",
+        "NAB": "For by the things through which their foes were punished they in their need were benefited.",
+        "VAT_ES": "Así, lo mismo que sirvió de castigo a sus enemigos fue para ellos un beneficio en sus dificultades.",
+        "CEI": "Ciò che era servito a punire i loro nemici, nel bisogno fu per loro un beneficio."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ἀντὶ μὲν πηγῆς ἀενάου ποταμοῦ αἵματι λυθρώδει ταραχθέντες",
+        "VUL": "per hæc, cum illis deessent, bene cum illis actum est./",
+        "SYN": "тем они, находясь в затруднении, были облагодетельствованы:",
+        "NEO": "En effet, tandis que les eaux d’un fleuve intarissable étaient troublées par un sang impur,",
+        "NAB": "Instead of a spring, when the perennial river was troubled with impure blood",
+        "VAT_ES": "En lugar de la vertiente perenne de un río, enturbiado por una mezcla de sangre y barro,",
+        "CEI": "Invece della corrente di un fiume perenne, sconvolto da putrido sangue"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "εἰς ἔλεγχον νηπιοκτόνου διατάγματος, ἔδωκας αὐτοῖς δαψιλὲς ὕδωρ ἀνελπίστως,",
+        "VUL": "Nam pro fonte quidem sempiterni fluminis,/ humanum sanguinem dedisti injustis./",
+        "SYN": "вместо источника постоянно текущей реки, смрадною кровью возмущенной,",
+        "NEO": "en punition du décret qui frappait de mort les enfants+ 11:7 D’un décret qui ordonnait de noyer dans le fleuve les enfants mâles des Hébreux (Ex 1:15-18.22).*, vous donniez à vos fidèles*, contre tout espoir, une eau abondante,",
+        "NAB": "as a rebuke to the decree for the slaying of infants, You gave them abundant water in an unhoped-for way,",
+        "VAT_ES": "como castigo por un decreto infanticida, les diste, contra toda esperanza, un agua abundante,",
+        "CEI": "in punizione di un decreto infanticida, tu desti loro inaspettatamente acqua abbondante,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "δείξας διὰ τοῦ τότε δίψους πῶς τοὺς ὑπεναντίους ἐκόλασας.",
+        "VUL": "Qui cum minuerentur in traductione infantium occisorum,/ dedisti illis abundantem aquam insperate,/",
+        "SYN": "в обличение их детоубийственного повеления, Ты неожиданно дал им обильную воду,",
+        "NEO": "leur montrant ainsi*, par la soif qu’ils ressentirent alors, de quel châtiment vous frappiez vos adversaires.",
+        "NAB": "once you had shown by the thirst they then had how you punished their adversaries.",
+        "VAT_ES": "mostrándoles por la sed que soportaron entonces cómo habías castigado a sus adversarios.",
+        "CEI": "mostrando per la sete di allora, come avevi punito i loro avversari."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "ὅτε γὰρ ἐπειράσθησαν, καίπερ ἐν ἐλέει παιδευόμενοι, ἔγνωσαν πῶς ἐν ὀργῇ κρινόμενοι ἀσεβεῖς ἐβασανίζοντο·",
+        "VUL": "ostendens per sitim quæ tunc fuit,/ quemadmodum tuos exaltares,/ et adversarios illorum necares./",
+        "SYN": "показав тогда чрез жажду, как Ты наказал их противников.",
+        "NEO": "Après cette épreuve, quoique punis avec miséricorde, ils surent comment étaient tourmentés les impies jugés dans la colère.",
+        "NAB": "For when they had been tried, though only mildly chastised, they recognized how the wicked, condemned in anger, were being tormented.",
+        "VAT_ES": "Por la prueba a que fueron sometidos, aunque eran corregidos con misericordia, comprendieron los tormentos que soportaban los impíos, al ser juzgados con ira.",
+        "CEI": "Difatti, messi alla prova, sebbene puniti con misericordia, compresero quali tormenti avevan sofferto gli empi, giudicati nella collera,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "τούτους μὲν γὰρ ὡς πατὴρ νουθετῶν ἐδοκίμασας, ἐκείνους δὲ ὡς ἀπότομος βασιλεὺς καταδικάζων ἐξήτασας.",
+        "VUL": "Cum enim tentati sunt,/ et quidem cum misericordia disciplinam accipientes,/ scierunt quemadmodum cum ira judicati impii tormenta paterentur./",
+        "SYN": "Ибо, когда они были испытываемы, подвергаясь, впрочем, милостивому вразумлению, тогда познали, как мучились во гневе судимые нечестивые;",
+        "NEO": "Vous avez éprouvé les uns comme un père qui avertit, et vous avez châtié les autres comme un roi sévère qui condamne.",
+        "NAB": "the latter you tested, admonishing them as a father; the former as a stern king you probed and condemned.",
+        "VAT_ES": "Porque a ellos los probaste como un padre que reprende, pero a los otros los sentenciaste como un rey implacable que condena.",
+        "CEI": "perché tu provasti gli uni come un padre che corregge, mentre vagliasti gli altri come un re severo che condanna."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "καὶ ἀπόντες δὲ καὶ παρόντες ὁμοίως ἐτρύχοντο·",
+        "VUL": "Hos quidem tamquam pater monens probasti ;/ illos autem tamquam durus rex interrogans condemnasti./",
+        "SYN": "потому что их Ты испытывал, как отец, поучая, а тех, как гневный царь, осуждая, истязал.",
+        "NEO": "Absents ou présents+ 11:11 \\+it Absents ou présents\\+it*. Ces mots paraissent se rapporter aux Égyptiens considérés par rapport aux Israélites : absents du milieu des Israélites, alors que ceux-ci avaient passé la mer Rouge, mais auparavant présents au milieu de ces mêmes Israélites. Termes obscurs, susceptibles de plusieurs interprétations.*, ils furent également tourmentés.",
+        "NAB": "Both those afar off and those close by were afflicted:",
+        "VAT_ES": "Y tanto lejos como cerca de los tuyos, estaban igualmente atribulados,",
+        "CEI": "Lontani o vicini erano ugualmente tribolati,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "διπλῆ γὰρ αὐτοὺς ἔλαβεν λύπη καὶ στεναγμὸς μνημῶν τῶν παρελθουσῶν.",
+        "VUL": "Absentes enim, et præsentes, similiter torquebantur./",
+        "SYN": "И отсутствовавшие и присутствовавшие одинаково пострадали:",
+        "NEO": "Un double chagrin les saisit, et ils gémissaient au souvenir de ce qui était arrivé.",
+        "NAB": "For a twofold grief took hold of them and a groaning at the remembrance of the ones who had departed.",
+        "VAT_ES": "ya que una doble tristeza se apoderó de ellos y gimieron al recordar el pasado:",
+        "CEI": "perché un duplice dolore li colse e un pianto per i ricordi del passato."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "ὅτε γὰρ ἤκουσαν διὰ τῶν ἰδίων κολάσεων εὐεργετουμένους αὐτούς, ᾔσθοντο τοῦ κυρίου.",
+        "VUL": "Duplex enim illos acceperat tædium et gemitus,/ cum memoria præteritorum./",
+        "SYN": "их постигла сугубая скорбь и стенание от воспоминания о прошедшем.",
+        "NEO": "Car en apprenant que leurs propres tourments tournaient à l’avantage des fugitifs*, ils reconnurent la main* du Seigneur.",
+        "NAB": "For when they heard that the cause of their own torments was a benefit to these others, they recognized the Lord.",
+        "VAT_ES": "cuando comprendieron que lo que a ellos los castigaba había sido un beneficio para los otros, sintieron la mano del Señor.",
+        "CEI": "Quando infatti seppero che dal loro castigo quegli altri ricevevano benefici, sentirono la presenza del Signore;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "τὸν γὰρ ἐν ἐκθέσει πάλαι ῥιφέντα ἀπεῖπον χλευάζοντες· ἐπὶ τέλει τῶν ἐκβάσεων ἐθαύμασαν, οὐχ ὅμοια δικαίοις διψήσαντες.",
+        "VUL": "Cum enim audirent per sua tormenta bene secum agi,/ commemorati sunt Dominum, admirantes in finem exitus./",
+        "SYN": "Они, когда услышали, что чрез их наказания те были облагодетельствованы, познали Господа.",
+        "NEO": "Celui qu’ils avaient autrefois exposé et rejeté avec mépris, ils l*’admirèrent à la fin des événements, lorsqu’ils eurent souffert une soif bien différente de celle des justes.",
+        "NAB": "Him who of old had been cast out in exposure they indeed mockingly rejected; but in the end of events, they marveled at him, since their thirst proved unlike that of the just.",
+        "VAT_ES": "Al que antes habían hecho exponer al peligro, y luego rechazaron con desprecio, lo admiraron al final de los acontecimientos, admiraron al que antes habían abandonado en las aguas después de sufrir una sed muy diferente a la de los justos.",
+        "CEI": "poiché colui che avevano una volta esposto e quindi respinto con scherni, lo ammiravano alla fine degli eventi, dopo aver patito una sete ben diversa da quella dei giusti."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ἀντὶ δὲ λογισμῶν ἀσυνέτων ἀδικίας αὐτῶν, ἐν οἷς πλανηθέντες ἐθρήσκευον ἄλογα ἑρπετὰ καὶ κνώδαλα εὐτελῆ, ἐπαπέστειλας αὐτοῖς πλῆθος ἀλόγων ζῴων εἰς ἐκδίκησιν,",
+        "VUL": "Quem enim in expositione prava projectum deriserunt,/ in finem eventus mirati sunt,/ non similiter justis sitientes./",
+        "SYN": "Кого они прежде, как отверженного, отреклись с ругательством, Тому в последствие событий удивлялись, потерпев неодинаковую с праведными жажду.",
+        "NEO": "En punition des pensées extravagantes de leur perversité, qui les égaraient et leur faisaient adorer des reptiles sans raison et de vils animaux, tu leur envoyas en châtiment une multitude de bêtes stupides :",
+        "NAB": "And in return for their senseless, wicked thoughts, which misled them into worshiping dumb serpents and worthless insects, You sent upon them swarms of dumb creatures for vengeance;",
+        "VAT_ES": "A causa de sus insensatos e injustos pensamientos, que los extraviaban hasta hacerles rendir culto a reptiles irracionales y a insectos despreciables, tú les enviaste como castigo una multitud de animales irracionales,",
+        "CEI": "Per i ragionamenti insensati della loro ingiustizia, da essi ingannati, venerarono rettili senza ragione e vili bestiole. Tu inviasti loro in castigo una massa di animali senza ragione,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ἵνα γνῶσιν ὅτι δι’ ὧν τις ἁμαρτάνει, διὰ τούτων κολάζεται.",
+        "VUL": "Pro cogitationibus autem insensatis iniquitatis illorum,/ quod quidam errantes colebant mutos serpentes/ et bestias supervacuas,/ immisisti illis multitudinem mutorum animalium in vindictam ;/",
+        "SYN": "А за неразумные помышления их неправды, по которым они в заблуждении служили бессловесным пресмыкающимся и презренным чудовищам, Ты в наказание наслал на них множество бессловесных животных,",
+        "NEO": "pour leur apprendre que l’on est puni par où l’on a péché.",
+        "NAB": "that they might recognize that a man is punished by the very things through which he sins.",
+        "VAT_ES": "para que comprendieran que uno es castigado con lo mismo que le sirve para pecar.",
+        "CEI": "perché capissero che con quelle stesse cose per cui uno pecca, con esse è poi castigato."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "οὐ γὰρ ἠπόρει ἡ παντοδύναμός σου χεὶρ καὶ κτίσασα τὸν κόσμον ἐξ ἀμόρφου ὕλης ἐπιπέμψαι αὐτοῖς πλῆθος ἄρκων ἢ θρασεῖς λέοντας,",
+        "VUL": "ut scirent quia per quæ peccat quis, per hæc et torquetur./",
+        "SYN": "чтобы они познали, что, чем кто согрешает, тем и наказывается.",
+        "NEO": "Il n’était pas difficile à ta main toute-puissante, qui a fait le monde d’une matière informe+ 11:17 \\+it Matière informe\\+it* : la Genèse nous montre au commencement les éléments à l’état de \\+it tohu vâbôhu\\+it*, c.-à-d. de confusion, en attendant que la main de Dieu y mette de l’ordre et en façonne le monde actuel et tous les êtres qui l’habitent.*, d’envoyer contre eux une multitude d’ours ou de lions féroces,",
+        "NAB": "For not without means was your almighty hand, that had fashioned the universe from formless matter, to send upon them a drove of bears or fierce lions,",
+        "VAT_ES": "Ya que tu mano omnipotente, aquella que creó el mundo de una materia informe bien podía enviar contra ellos una multitud de osos o de leones feroces,",
+        "CEI": "Certo, non aveva difficoltà la tua mano onnipotente, che aveva creato il mondo da una materia senza forma, a mandare loro una moltitudine di orsi e leoni feroci"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "ἢ νεοκτίστους θυμοῦ πλήρεις θῆρας ἀγνώστους, ἤτοι πυρπνόον φυσῶντας ἆσθμα, ἤ βρόμους λικμωμένους καπνοῦ, ἢ δεινοὺς ἀπ’ ὀμμάτων σπινθῆρας ἀστράπτοντας,",
+        "VUL": "Non enim impossibilis erat omnipotens manus tua,/ quæ creavit orbem terrarum ex materia invisa,/ immittere illis multitudinem ursorum, aut audaces leones,/",
+        "SYN": "Не невозможно было бы для всемогущей руки Твоей, создавшей мир из необразного вещества, наслать на них множество медведей или свирепых львов,",
+        "NEO": "ou des bêtes nouvellement créées, pleines de fureur et inconnues, respirant une vapeur enflammée, exhalant une fumée infecte, ou lançant par les yeux de terribles éclairs,",
+        "NAB": "Or new-created, wrathful, unknown beasts to breathe forth fiery breath, Or pour out roaring smoke, or flash terrible sparks from their eyes.",
+        "VAT_ES": "o fieras desconocidas creadas expresamente, llenas de furor, que exhalaran un aliento de fuego, despidieran un humo nauseabundo, o lanzaran de sus ojos terribles rayos:",
+        "CEI": "o belve ignote, create apposta, piene di furore, o sbuffanti un alito infuocato o esalanti vapori pestiferi o folgoranti con le terribili scintille degli occhi,"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ὧν οὐ μόνον ἡ βλάβη ἠδύνατο συνεκτρῖψαι αὐτούς, ἀλλὰ καὶ ἡ ὄψις ἐκφοβήσασα διολέσαι.",
+        "VUL": "aut novi generis ira plenas ignotas bestias,/ aut vaporem ignium spirantes,/ aut fumi odorem proferentes,/ aut horrendas ab oculis scintillas emittentes ;/",
+        "SYN": "или неизвестных новосозданных лютых зверей, или дышащих огненным дыханием, или извергающих клубы дыма, или бросающих из глаз ужасные искры,",
+        "NEO": "capables, non seulement de donner la mort par une blessure, mais de foudroyer de peur par leur seul aspect.",
+        "NAB": "Not only could these attack and completely destroy them; even their frightful appearance itself could slay.",
+        "VAT_ES": "animales capaces, no sólo de destruirlos de un zarpazo, sino de hacerlos perecer con su aspecto terrorífico.",
+        "CEI": "bestie di cui non solo l'assalto poteva sterminarli, ma annientarli anche l'aspetto terrificante."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "καὶ χωρὶς δὲ τούτων ἑνὶ πνεύματι πεσεῖν ἐδύναντο ὑπὸ τῆς δίκης διωχθέντες, καὶ λικμηθέντες ὑπὸ πνεύματος δυνάμεώς σου· ἀλλὰ πάντα μέτρῳ καὶ ἀριθμῷ καὶ σταθμῷ διέταξας.",
+        "VUL": "quarum non solum læsura poterat illos exterminare,/ sed et aspectus per timorem occidere./",
+        "SYN": "которые не только повреждением могли истребить их, но и ужасающим видом погубить.",
+        "NEO": "Et, sans cela même, ils pouvaient périr par un simple* souffle, poursuivis par la justice, et dispersés par le souffle de ta puissance.",
+        "NAB": "Even without these, they could have been killed at a single blast, pursued by retribution and winnowed out by your mighty spirit; But you have disposed all things by measure and number and weight.",
+        "VAT_ES": "Aún sin esto, ellos podían ser derribados de un soplo, perseguidos por la Justicia, barridos por el soplo de tu poder. Pero tú lo has dispuesto todo con medida, número y peso.",
+        "CEI": "Anche senza questo potevan soccombere con un soffio, perseguitati dalla giustizia e dispersi dallo spirito della tua potenza. Ma tu hai tutto disposto con misura, calcolo e peso."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "τὸ γὰρ μεγάλως ἰσχύειν πάρεστίν σοι πάντοτε, καὶ κράτει βραχίονός σου τίς ἀντιστήσεται;",
+        "VUL": "Sed et sine his uno spiritu poterant occidi,/ persecutionem passi ab ipsis factis suis,/ et dispersi per spiritum virtutis tuæ :/ sed omnia in mensura, et numero et pondere disposuisti./",
+        "SYN": "Да и без этого они могли погибнуть от одного дуновения, преследуемые правосудием и рассеваемые духом силы Твоей; но Ты все расположил мерою, числом и весом.",
+        "NEO": "Car la souveraine puissance est toujours à tes ordres, et qui donc résisterait à la force de ton bras ?",
+        "NAB": "For with you great strength abides always; who can resist the might of your arm?",
+        "VAT_ES": "Tu inmenso poder está siempre a tu disposición, &iquest;y quién puede resistir a la fuerza de tu brazo?",
+        "CEI": "Prevalere con la forza ti è sempre possibile; chi potrà opporsi al potere del tuo braccio?"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ὅτι ὡς ῥοπὴ ἐκ πλαστίγγων ὅλος ὁ κόσμος ἐναντὶον σου, καὶ ὡς ῥανὶς δρόσου ὀρθρινὴ κατελθοῦσα ἐπὶ γῆν.",
+        "VUL": "Multum enim valere, tibi soli supererat semper :/ et virtuti brachii tui quis resistet ?/",
+        "SYN": "Ибо великая сила всегда присуща Тебе, и кто противостанет силе мышцы Твоей?",
+        "NEO": "Le monde entier est devant vous comme l’atome qui fait pencher la balance, comme la goutte de rosée matinale qui tombe sur la terre.",
+        "NAB": "Indeed, before you the whole universe is as a grain from a balance, or a drop of morning dew come down upon the earth.",
+        "VAT_ES": "El mundo entero es delante de ti como un grano de polvo que apenas inclina la balanza, como una gota de rocío matinal que cae sobre la tierra.",
+        "CEI": "Tutto il mondo davanti a te, come polvere sulla bilancia, come una stilla di rugiada mattutina caduta sulla terra."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "ἐλεεῖς δὲ πάντας, ὅτι πάντα δύνασαι, καὶ παρορᾷς ἁμαρτήματα ἀνθρώπων εἰς μετάνοιαν.",
+        "VUL": "Quoniam tamquam momentum stateræ,/ sic est ante te orbis terrarum,/ et tamquam gutta roris antelucani quæ descendit in terram./",
+        "SYN": "Весь мир пред Тобою, как колебание чашки весов, или как капля утренней росы, сходящей на землю.",
+        "NEO": "Mais, parce que tu peux tout, tu as pitié de tous, et tu fermes les yeux sur les péchés des hommes pour qu’ils se repentent.",
+        "NAB": "But you have mercy on all, because you can do all things; and you overlook the sins of men that they may repent.",
+        "VAT_ES": "Tú te compadeces de todos, porque todo lo puedes, y apartas los ojos de los pecados de los hombres para que ellos se conviertan.",
+        "CEI": "Hai compassione di tutti, perché tutto tu puoi, non guardi ai peccati degli uomini, in vista del pentimento."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "ἀγαπᾷς γὰρ τὰ ὄντα πάντα, καὶ οὐδὲν βδελύσσῃ ὧν ἐποίησας, οὐδὲ γὰρ ἂν μισῶν τι κατεσκεύασας.",
+        "VUL": "Sed misereris omnium, quia omnia potes ;/ et dissimulas peccata hominum, propter pnitentiam./",
+        "SYN": "Ты всех милуешь, потому что все можешь, и покрываешь грехи людей ради покаяния.",
+        "NEO": "Car tu aimes toutes les créatures, et tu ne haïs rien de ce que tu as fait ; si tu avais haï une chose, tu ne l’aurais pas faite.",
+        "NAB": "For you love all things that are and loathe nothing that you have made; for what you hated, you would not have fashioned.",
+        "VAT_ES": "Tú amas todo lo que existe y no aborreces nada de lo que has hecho, porque si hubieras odiado algo, no lo habrías creado.",
+        "CEI": "Poiché tu ami tutte le cose esistenti e nulla disprezzi di quanto hai creato; se avessi odiato qualcosa, non l'avresti neppure creata."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "πῶς δὲ ἔμεινεν ἄν τι εἰ μὴ σὺ ἠθέλησας, ἢ τὸ μὴ κληθὲν ὑπὸ σοῦ διετηρήθη;",
+        "VUL": "Diligis enim omnia quæ sunt,/ et nihil odisti eorum quæ fecisti ;/ nec enim odiens aliquid constituisti aut fecisti./",
+        "SYN": "Ты любишь все существующее, и ничем не гнушаешься, что сотворил, ибо не создал бы, если бы что ненавидел.",
+        "NEO": "Et comment un être subsisterait-il, si tu ne le voulais, se conserverait-il, si tu ne l’avais appelé à l’existence ?",
+        "NAB": "And how could a thing remain, unless you willed it; or be preserved, had it not been called forth by you?",
+        "VAT_ES": "&iquest;Cómo podría subsistir una cosa si tú no quisieras? &iquest;Cómo se conservaría si no la hubieras llamado?",
+        "CEI": "Come potrebbe sussistere una cosa, se tu non vuoi? O conservarsi se tu non l'avessi chiamata all'esistenza?"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "φείδῃ δὲ πάντων, ὅτι σά ἐστιν, Δέσποτα φιλόψυχε.",
+        "VUL": "Quomodo autem posset aliquid permanere, nisi tu voluisses ?/ aut quod a te vocatum non esset conservaretur ?/",
+        "SYN": "И как могло бы пребывать что-либо, если бы Ты не восхотел? Или как сохранилось бы то, что не было призвано Тобою?",
+        "NEO": "Mais tu pardonnes à tous, parce que tout est à toi, Seigneur, qui aimes les âmes+ 11:26 \\+it Qui aimes les âmes\\+it*, litt. ami de la vie.*.",
+        "NAB": "But you spare all things, because they are yours, O LORD and lover of souls,",
+        "VAT_ES": "Pero tú eres indulgente con todos, ya que todo es tuyo, Señor que amas la vida,",
+        "CEI": "Tu risparmi tutte le cose, perché tutte son tue, Signore, amante della vita,"
+      }
+    }
+  }
+}

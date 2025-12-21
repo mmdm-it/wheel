@@ -1,0 +1,454 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_013",
+  "book_key": "ECCLU",
+  "sequence": 13,
+  "chapter_in": {
+    "MT": 13,
+    "VUL": 13,
+    "LXX": 13
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Ὁ ἁπτόμενος πίσσης μολυνθήσεται, καὶ ὁ κοινωνῶν ὑπερηφάνῳ ὁμοιωθήσεται αὐτῷ.",
+        "VUL": "[Qui tetigerit picem inquinabitur ab ea :/ et qui communicaverit superbo induet superbiam./",
+        "SYN": "Кто прикасается к смоле, тот очернится, и кто входит в общение с гордым, сделается подобным ему.",
+        "NEO": "Qui touche à la poix se souille, et qui se lie avec l’orgueilleux lui devient semblable.",
+        "NAB": "He who touches pitch blackens his hand; he who associates with an impious man learns his ways.",
+        "VAT_ES": "El que toca el betún se queda manchado, y el que trata con el orgulloso se vuelve igual a él.",
+        "CEI": "Chi maneggia la pece si sporca, chi frequenta il superbo diviene simile a lui."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "βάρος ὑπὲρ σὲ μὴ ἄρῃς, καὶ ἰσχυροτέρῳ σου καὶ πλουσιωτέρῳ μὴ κοινώνει. τί κοινωνήσει χύτρα πρὸς λέβητα; αὕτη προσκρούσει, καὶ αὕτη συντριβήσεται.",
+        "VUL": "Pondus super se tollet qui honestiori se communicat,/ et ditiori te ne socius fueris./",
+        "SYN": "Не поднимай тяжести свыше твоей силы, и не входи в общение с тем, кто сильнее и богаче тебя.",
+        "NEO": "Ne mets pas sur tes épaules un lourd fardeau, et ne te lie pas avec un homme plus fort et plus riche que toi. Quelle association peut-il y avoir entre le pot de terre et le chaudron ? Le chaudron heurtera le pot, et celui-ci sera brisé.",
+        "NAB": "Bear no burden too heavy for you; go with no one greater or wealthier than yourself. How can the earthen pot go with the metal cauldron? When they knock together, the pot will be smashed:",
+        "VAT_ES": "No levantes una carga demasiado pesada, ni trates con uno más fuerte y más rico que tú: &iquest;puede el vaso de arcilla juntarse con la olla? Esta lo golpeará y aquel se romperá.",
+        "CEI": "Non portare un peso troppo grave, non associarti ad uno più forte e più ricco di te. Come una pentola di coccio farà società con una caldaia? Questa l'urterà e quella andrà in frantumi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "πλούσιος ἠδίκησεν, καὶ αὐτὸς προσενεβριμήσατο· πτωχὸς ἠδίκηται, καὶ αὐτὸς προσδεηθήσεται.",
+        "VUL": "Quid communicabit cacabus ad ollam ?/ quando enim se colliserint, confringetur./",
+        "SYN": "Какое общение у горшка с котлом? Этот толкнет его, и он разобьется.",
+        "NEO": "Le riche commet une injustice, et il frémit d’indignation ; le pauvre est maltraité, et il demande excuse.",
+        "NAB": "The rich man does wrong and boasts of it, the poor man is wronged and begs forgiveness.",
+        "VAT_ES": "El rico agravia, y encima se envalentona; el pobre es agraviado, y encima pide disculpas.",
+        "CEI": "Il ricco commette ingiustizia e per di più grida forte, il povero riceve ingiustizia e per di più deve scusarsi."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ἐὰν χρησιμεύσῃς, ἐργᾶται ἐν σοί· καὶ ἐὰν ὑστερήσῃς, καταλείψει σε·",
+        "VUL": "Dives injuste egit, et fremet :/ pauper autem læsus tacebit./",
+        "SYN": "Богач обидел, и сам же грозит; бедняк обижен, и сам же упрашивает.",
+        "NEO": "Tant que tu pourras lui être utile, il se servira de toi, et quand tu n’auras plus rien, il te délaissera.",
+        "NAB": "As long as the rich man can use you he will enslave you, but when you are exhausted, he will abandon you.",
+        "VAT_ES": "Mientras le seas útil, te explotará, pero si no tienes nada, te abandonará.",
+        "CEI": "Se puoi essergli utile, approfitterà di te; se hai bisogno, ti abbandonerà."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "ἐὰν ἔχῃς, συμβιώσεταί σοι καὶ ἀποκενώσει σε, καὶ αὐτὸς οὐ πονέσει·",
+        "VUL": "Si largitus fueris, assumet te :/ et si non habueris, derelinquet te./",
+        "SYN": "Если ты выгоден для него, он употребит тебя; а если обеднеешь, он оставит тебя.",
+        "NEO": "Si tu as du bien, il vivra avec toi, il te dépouillera, et n’aura nul souci.",
+        "NAB": "As long as you have anything he will speak fair words to you, and with smiles he will win your confidence;",
+        "VAT_ES": "Si posees algo, vivirá contigo y te despojará sin lástima.",
+        "CEI": "Se possiedi, vivrà con te; ti spoglierà e non ne avrà alcuna pena."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "χρείαν ἔσχηκέν σου, καὶ ἀποπλανήσει σε, καὶ προσγελάσεταί σοι καὶ δώσει σοι ἐλπίδα· λαλήσει σοι καλὰ καὶ ἐρεῖ Τίς ἡ χρεία σου;",
+        "VUL": "Si habes, convivet tecum, et evacuabit te :/ et ipse non dolebit super te./",
+        "SYN": "Если ты достаточен, он будет жить с тобою и истощит тебя, а сам не поболезнует.",
+        "NEO": "Lui es-tu nécessaire ? il t’enjôlera, il te sourira et te donnera des espérances, il te dira de belles paroles et te dira : « De quoi as-tu besoin ? »",
+        "NAB": "When he needs something from you he will cajole you, then without regret he will impoverish you.",
+        "VAT_ES": "Cuando te necesite, tratará de engañarte, te sonreirá y te dará esperanzas; te dirigirá hermosas palabras y te preguntará: «&iquest;Qué te hace falta?».",
+        "CEI": "Ha bisogno di te? Ti imbroglierà, ti sorriderà e ti darà una speranza, ti rivolgerà belle parole e domanderà: \"Di che cosa hai bisogno?\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "καὶ αἰσχυνεῖ σε ἐν τοῖς βρώμασιν αὐτοῦ, ἕως οὗ ἀποκενώσῃ σε δὶς ἢ τρίς, καὶ ἐπ’ ἐσχάτῳ καταμωκήσεταί σου· μετὰ ταῦτα ὄψεταί σε καὶ καταλείψει σε, καὶ τὴν κεφαλήν αὐτοῦ κινήσει ἐπὶ σοί.",
+        "VUL": "Si necessarius illi fueris, supplantabit te,/ et subridens spem dabit, narrans tibi bona,/ et dicet : Quid opus est tibi ?/",
+        "SYN": "Возымел он в тебе нужду,- будет льстить тебе, будет улыбаться тебе и обнадеживать тебя, ласково будет говорить с тобою и скажет: \"не нужно ли тебе чего?\"",
+        "NEO": "Il te rendra confus par ses festins, jusqu’à ce qu’il t’ait dépouillé deux ou trois fois, et, à la fin, il se rira de toi ; après quoi, il te verra et te délaissera, et secouera la tête devant toi.",
+        "NAB": "While it serves his purpose he will beguile you, then twice or three times he will terrify you; When later he sees you he will pass you by, and shake his head over you.",
+        "VAT_ES": "Te comprometerá con sus festejos hasta despojarte dos y tres veces, y al final se burlará de ti; después, cuando te vez, pasará de largo y meneará la cabeza delante de ti.",
+        "CEI": "Ti farà arrossire con i suoi banchetti, finché non ti avrà spremuto due o tre volte. Alla fine ti deriderà; poi vedendoti ti eviterà e scuoterà il capo davanti a te."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "πρόσεχε μὴ ἀποπλανηθῇς, καὶ μὴ ταπεινωθῇς ἐν εὐφροσύνῃ σου.",
+        "VUL": "Et confundet te in cibis suis,/ donec te exinaniat bis et ter :/ et in novissimo deridebit te,/ et postea videns derelinquet te,/ et caput suum movebit ad te./",
+        "SYN": "Своими угощениями он будет пристыжать тебя, доколе, два или три раза ограбив тебя, не насмеется наконец над тобою.",
+        "NEO": "Prends garde de te laisser séduire, et, au sein de la prospérité, de tomber dans l’humiliation.",
+        "NAB": "Guard against being presumptuous; be not as those who lack sense.",
+        "VAT_ES": "Presta atención, para no dejarte engañar ni ser humillado por tu insensatez.",
+        "CEI": "Stà attento a non lasciarti imbrogliare né umiliare per la tua stoltezza."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "προσκαλεσαμένου σε δυνάστου ὑποχωρῶν γίνου, καὶ τόσῳ μᾶλλον προσκαλέσεταί σε·",
+        "VUL": "Humiliare Deo, et exspecta manus ejus./",
+        "SYN": "После того он, увидев тебя, уклонится от тебя и будет кивать головою при встрече с тобою.",
+        "NEO": "Si un puissant t’appelle, retire-toi en arrière ; il ne fera que t’inviter avec plus d’instances.",
+        "NAB": "When invited by a man of influence, keep your distance; then he will urge you all the more.",
+        "VAT_ES": "Cuando te invite un poderoso, quédate a distancia, y te invitará con más insistencia.",
+        "CEI": "Quando un potente ti chiama, allontànati; egli ti chiamerà sempre di più."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "μὴ ἔμπιπτε, ἵνα μὴ ἀπωσθῇς, καὶ μὴ μακρὰν ἀφίστω, ἵνα μὴ ἐπιλησθῇς.",
+        "VUL": "Attende ne seductus in stultitiam humilieris./",
+        "SYN": "Наблюдай, чтобы тебе не быть обманутым",
+        "NEO": "Ne tombe pas sur lui à l’improviste, de peur d’être repoussé, et ne te tiens pas trop loin de lui, de peur d’être oublié.",
+        "NAB": "Be not bold with him lest you be rebuffed, but keep not too far away lest you be forgotten.",
+        "VAT_ES": "No te precipites, para no ser rechazado, ni te quedes muy lejos, para no ser olvidado.",
+        "CEI": "Non essere invadente per non essere respinto, ma non allontanarti troppo per non essere dimenticato."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "μὴ ἔπεχε ἰσηγορεῖσθαι μετ’ αὐτοῦ, καὶ μὴ πίστευε τοῖς πλείοσιν λόγοις αὐτοῦ· ἐκ πολλῆς γὰρ λαλιᾶς πειράσει σε, καὶ ὡς προσγελῶν ἐξετάσει σε·",
+        "VUL": "Noli esse humilis in sapientia tua,/ ne humiliatus in stultitiam seducaris./",
+        "SYN": "и не быть униженным в твоем веселье.",
+        "NEO": "Ne t’imagine pas de causer avec lui d’égal à égal, et ne te fie pas à ses nombreux discours.",
+        "NAB": "Engage not freely in discussion with him, trust not his many words; For by prolonged talk he will test you, and though smiling he will probe you.",
+        "VAT_ES": "No pretendas hablarle de igual a igual ni te fíes si conversa demasiado: él te pone a prueba con su locuacidad y te examina entre risa y risa.",
+        "CEI": "Non credere di trattare alla pari con lui e non fidarti delle sue molte parole;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "ἀνελεήμων ὁ μὴ συντηρῶν λόγους, καὶ οὐ μὴ φείσηται περὶ κακώσεως καὶ δεσμῶν.",
+        "VUL": "Advocatus a potentiore, discede :/ ex hoc enim magis te advocabit./",
+        "SYN": "Когда сильный будет приглашать тебя, уклоняйся, и тем более он будет приглашать тебя.",
+        "NEO": "Car par son flux de paroles il te tentera, et il t’interrogera comme en souriant. Homme sans pitié, il ne gardera pas pour lui tes paroles, et il ne t’épargnera ni les coups ni les chaînes.",
+        "NAB": "Mercilessly he will make of you a laughingstock, and will not refrain from injury or chains.",
+        "VAT_ES": "El que no se modera al hablar, es un despiadado, y no te ahorrará ni los golpes ni las cadenas.",
+        "CEI": "con la sua molta loquacità ti metterà alla prova e quasi sorridendo ti esaminerà."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "συντήρησον καὶ πρόσεχε σφοδρῶς, ὅτι μετὰ τῆς πτώσεώς σου περιπατεῖς.",
+        "VUL": "Ne improbus sis, ne impingaris :/ et ne longe sis ab eo, ne eas in oblivionem./",
+        "SYN": "Не будь навязчив, чтобы не оттолкнули тебя, и не слишком удаляйся, чтобы не забыли о тебе.",
+        "NEO": "Prends garde et fais bien attention, car tu marches avec ta ruine.",
+        "NAB": "Be on your guard and take care never to accompany men of violence.",
+        "VAT_ES": "Observa bien y presta mucha atención, porque estás caminando al borde de tu ruina.",
+        "CEI": "Spietato chi non mantiene le parole, non ti risparmierà maltrattamenti e catene."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Ne retineas ex æquo loqui cum illo,/ nec credas multis verbis illius :/ ex multa enim loquela tentabit te,/ et subridens interrogabit te de absconditis tuis./",
+        "SYN": "Не дозволяй себе говорить с ним, как с равным тебе, и не верь слишком многим словам его; ибо долгим разговором он будет искушать тебя и, как бы шутя, изведывать тебя.",
+        "NEO": "Toute créature vivante aime son semblable, et tout homme son prochain.",
+        "NAB": "Every living thing loves its own kind, every man a man like himself.",
+        "VAT_ES": "[Cuando oigas esto en tu sueño, despiértate; ama al Señor toda tu vida e invócalo para tu salvación.]",
+        "CEI": "Guardati e stà attento, perché cammini insieme alla tua rovina."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "πᾶν ζῷον ἀγαπᾷ τὸ ὅμοιον αὐτῷ, καὶ πᾶς ἄνθρωπος τὸν πλησίον αὐτοῦ·",
+        "VUL": "Immitis animus illius conservabit verba tua :/ et non parcet de malitia, et de vinculis./",
+        "SYN": "Немилостив к себе, кто не удерживает себя в словах своих, и он не убережет себя от оскорбления и от уз.",
+        "NEO": "Toute chair s’unit selon son espèce, et tout homme s’associe à son semblable.",
+        "NAB": "Every being is drawn to its own kind; with his own kind every man associates.",
+        "VAT_ES": "Todo animal quiere a su semejante y todo hombre, al de su misma condición;",
+        "CEI": "Ogni creatura vivente ama il suo simile, ogni uomo il suo vicino."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "πᾶσα σὰρξ κατὰ γένος συνάγεται, καὶ τῷ ὁμοίῳ αὐτοῦ προσκολληθήσεται ἀνήρ.",
+        "VUL": "Cave tibi, et attende diligenter auditui tuo,/ quoniam cum subversione tua ambulas :/",
+        "SYN": "Будь осторожен и весьма внимателен, ибо ты ходишь с падением твоим.",
+        "NEO": "Quelle union peut-il y avoir entre le loup et l’agneau ? Il en est de même entre le pécheur et l’homme pieux.",
+        "NAB": "Is a wolf ever allied with a lamb? So it is with the sinner and the just.",
+        "VAT_ES": "todo ser viviente se une a los de su especie y el hombre, a uno semejante a él.",
+        "CEI": "Ogni essere si accoppia secondo la sua specie; l'uomo si associa a chi gli è simile."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "τί κοινωνήσει λύκος ἀμνῷ; οὕτως ἁμαρτωλὸς πρὸς εὐσεβῆ.",
+        "VUL": "audiens vero illa,/ quasi in somnis vide, et vigilabis./",
+        "SYN": "Услышав это во сне твоем, не засыпай.",
+        "NEO": "Quelle paix peut avoir l’hyène avec le chien ? Quelle paix le riche avec le pauvre ?",
+        "NAB": "Can there be peace between the hyena and the dog? Or between the rich and the poor can there be peace?",
+        "VAT_ES": "&iquest;Qué tienen de común el lobo y el cordero? Así pasa con el pecador y el hombre bueno.",
+        "CEI": "Che cosa vi può essere in comune tra il lupo e l'agnello? Lo stesso accade fra il peccatore e il pio."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "τίς εἰρήνη ὑαίνῃ πρὸς κύνα; καὶ τίς εἰρήνη πλουσίῳ πρὸς πένητα;",
+        "VUL": "Omni vita tua dilige Deum,/ et invoca illum in salute tua./",
+        "SYN": "Во всю жизнь люби Господа и взывай к Нему о спасении твоем.",
+        "NEO": "Les onagres sont la proie des lions dans le désert ; ainsi les pauvres sont la proie des riches.",
+        "NAB": "Lion's prey are the wild asses of the desert; so too the poor are feeding grounds for the rich.",
+        "VAT_ES": "&iquest;Qué paz puede haber entre la hiena y el perro? &iquest;Y qué paz entre el rico y el pobre?",
+        "CEI": "Quale pace può esservi fra la iena e il cane? Quale intesa tra il ricco e il povero?"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "κυνήγια λεόντων ὄναγροι ἐν ἐρήμῳ· οὕτως νομαὶ πλουσίων πτωχοί.",
+        "VUL": "Omne animal diligit simile sibi,/ sic et omnis homo proximum sibi./",
+        "SYN": "Всякое животное любит подобное себе, и всякий человек - ближнего своего.",
+        "NEO": "L’orgueilleux a en horreur l’humiliation : ainsi le riche a en horreur le pauvre.",
+        "NAB": "A proud man abhors lowliness; so does the rich man abhor the poor.",
+        "VAT_ES": "Los asnos salvajes en el desierto son presa de los leones: así los pobres son pasto de los ricos.",
+        "CEI": "Sono preda dei leoni gli ònagri nel deserto; così pascolo dei ricchi sono i poveri."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "βδέλυγμα ὑπερηφάνῳ ταπεινότης, οὕτως βδέλυγμα πλουσίῳ πτωχός.",
+        "VUL": "Omnis caro ad similem sibi conjungetur,/ et omnis homo simili sui sociabitur./",
+        "SYN": "Всякая плоть соединяется по роду своему, и человек прилепляется к подобному себе.",
+        "NEO": "Le riche vient-il à chanceler, ses amis le soutiennent ; mais quand l’humble tombe, il est encore repoussé par ses amis.",
+        "NAB": "When a rich man stumbles he is supported by a friend; when a poor man trips he is pushed down by a friend.",
+        "VAT_ES": "La humillación es abominable para el soberbio: así el rico abomina del pobre.",
+        "CEI": "La condizione umile è in abominio al superbo, così il povero è in abominio al ricco."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "πλούσιος σαλευόμενος στηρίζεται ὑπὸ φίλων, ταπεινὸς δὲ πεσὼν προσαπωθεῖται ὑπὸ φίλων.",
+        "VUL": "Si communicabit lupus agno aliquando,/ sic peccator justo./",
+        "SYN": "Какое общение у волка с ягненком? Так и у грешника - с благочестивым.",
+        "NEO": "Quand le riche fait une chute, beaucoup lui viennent en aide ; il tient des discours insensés, et on l’approuve. Quand l’humble fait une chute, il a encore des reproches.",
+        "NAB": "Many are the supporters for a rich man when he speaks; though what he says is odious, it wins approval. When a poor man speaks they make sport of him; he speaks wisely and no attention is paid him.",
+        "VAT_ES": "Cuando un rico da un mal paso, sus amigos lo sostienen; cuando un pobre cae, sus amigos lo rechazan.",
+        "CEI": "Se il ricco vacilla, è sostenuto dagli amici; se il povero cade, anche dagli amici è respinto."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "πλουσίου σφαλέντος πολλοὶ ἀντιλήμπτορες, ἐλάλησεν ἀπόρρητα καὶ ἐδικαίωσαν αὐτόν· ταπεινὸς ἔσφαλεν καὶ προσεπετίμησαν αὐτῷ, ἐφθέγξατο σύνεσιν καὶ οὐκ ἐδόθη αὐτῷ τόπος.",
+        "VUL": "Quæ communicatio sancto homini ad canem ?/ aut quæ pars diviti ad pauperem ?/",
+        "SYN": "Какой мир у гиены с собакою? И какой мир у богатого с бедным?",
+        "NEO": "Le riche parle, et tout le monde se tait ; et on élève son discours jusqu’aux nues. Le pauvre parle, et l’on dit : « Quel est celui-là ? » et, s’il heurte, on le culbute.",
+        "NAB": "A rich man speaks and all are silent, his wisdom they extol to the clouds. A poor man speaks and they say: \"Who is that?\" If he slips they cast him down.",
+        "VAT_ES": "Si un rico resbala, muchos corren en su ayuda; dice cosas irrepetibles, y le dan la razón. Resbala el humilde, y lo critican; se expresa con sensatez, y nadie le hace caso.",
+        "CEI": "Se cade il ricco, molti lo aiutano; dice cose insulse? Eppure lo si felicità. Se cade il povero, lo si rimprovera; se dice cose assennate, non ci si bada."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "πλούσιος ἐλάλησεν καὶ πάντες ἐσίγησαν, καὶ τὸν λόγον αὐτοῦ ἀνύψωσαν ἕως τῶν νεφελῶν· πτωχὸς ἐλάλησεν καὶ εἶπαν Τίς οὗτος; κἂν προσκόψῃ, προσανατρέψουσιν αὐτόν.",
+        "VUL": "Venatio leonis onager in eremo :/ sic et pascua divitum sunt pauperes./",
+        "SYN": "Ловля у львов - дикие ослы в пустыне, так пастбища богатых - бедные.",
+        "NEO": "La richesse est bonne quand elle n’est pas unie au péché, et la pauvreté est mauvaise dans la bouche de l’impie.",
+        "NAB": "Wealth is good when there is no sin; but poverty is evil by the standards of the proud.",
+        "VAT_ES": "Si el rico habla, todos se callan y ponen sus palabras por las nubes; habla el pobre, y preguntan: «&iquest;Quién es este?», y si tropieza, le dan un empujón.",
+        "CEI": "Parla il ricco, tutti tacciono ed esaltano fino alle nuvole il suo discorso. Parla il povero e dicono: \"Chi è costui?\". Se inciampa, l'aiutano a cadere."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "ἀγαθὸς ὁ πλοῦτος ᾧ μή ἐστιν ἁμαρτία, καὶ πονηρὰ ἡ πτωχεία ἐν στόμασιν εὐσεβοῦς.",
+        "VUL": "Et sicut abominatio est superbo humilitas,/ sic et execratio divitis pauper./",
+        "SYN": "Отвратительно для гордого смирение: так отвратителен для богатого бедный.",
+        "NEO": "Le cœur de l’homme change son visage, soit en bien, soit en mal.",
+        "NAB": "The heart of a man changes his countenance, either for good or for evil.",
+        "VAT_ES": "Buena es la riqueza, si está libre de pecado, y mala es la pobreza a juicio del impío.",
+        "CEI": "La ricchezza è buona, se è senza peccato; la povertà è cattiva a detta dell'empio."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "καρδία ἀνθρώπου ἀλλοιοῖ τὸ πρόσωπον αὐτοῦ, ἐὰν εἰς ἀγαθὰ ἐάν τε εἰς κακά.",
+        "VUL": "Dives commotus confirmatur ab amicis suis :/ humilis autem cum ceciderit, expelletur et a notis./",
+        "SYN": "Когда пошатнется богатый, он поддерживается друзьями; а когда упадет бедный, то отталкивается и друзьями.",
+        "NEO": "Le signe d’un cœur content est un visage joyeux ; pour trouver de sages maximes, il faut le labeur de la réflexion.",
+        "NAB": "The sign of a good heart is a cheerful countenance; withdrawn and perplexed is the laborious schemer.",
+        "VAT_ES": "El corazón de un hombre lo hace cambiar de semblante, tanto para bien como para mal:",
+        "CEI": "Il cuore dell'uomo cambia il suo volto o in bene o in male."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "ἴχνος καρδίας ἐν ἀγαθοῖς πρόσωπον ἱλαρόν, καὶ εὕρεσις παραβολῶν διαλογισμοὶ μετὰ κόπου.",
+        "VUL": "Diviti decepto multi recuperatores :/ locutus est superba, et justificaverunt illum./",
+        "SYN": "Когда подвергнется несчастью богатый, у него много помощников; сказал нелепость, и оправдали его.",
+        "VAT_ES": "un rostro alegre refleja la dicha del corazón, y la invención de proverbios exige penosas reflexiones.",
+        "CEI": "Indice di un cuore buono è una faccia gioiosa, ma la scoperta di proverbi è un lavoro ben faticoso."
+      }
+    }
+  }
+}

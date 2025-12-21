@@ -1,0 +1,500 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PROV_004",
+  "book_key": "PROV",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שִׁמְע֣וּ בָ֭נִים מ֣וּסַר אָ֑ב וְ֝/הַקְשִׁ֗יבוּ לָ/דַ֥עַת בִּינָֽה׃",
+        "LXX": "Ἀκούσατε, παῖδες, παιδείαν πατρός, καὶ προσέχετε γνῶναι ἔννοιαν.",
+        "VUL": "[Audite, filii, disciplinam patris,/ et attendite ut sciatis prudentiam./",
+        "SYN": "Слушайте, дети, наставление отца, и внимайте, чтобы научиться разуму,",
+        "NEO": "Ecoutez, mes fils, l’instruction d’un père, et soyez attentifs, pour apprendre l’intelligence ;",
+        "NAB": "Hear, O children, a father's instruction, be attentive, that you may gain understanding!",
+        "VAT_ES": "Escuchen, hijos, la instrucción de un padre, presten atención, para poder comprender:",
+        "CEI": "Ascoltate, o figli, l'istruzione di un padre e fate attenzione per conoscere la verità,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כִּ֤י לֶ֣קַח ט֭וֹב נָתַ֣תִּי לָ/כֶ֑ם תּֽ֝וֹרָתִ֗/י אַֽל תַּעֲזֹֽבוּ׃",
+        "LXX": "δῶρον γὰρ ἀγαθὸν δωροῦμαι ὑμῖν, τὸν ἐμὸν νόμον μὴ ἐγκαταλίπητε.",
+        "VUL": "Donum bonum tribuam vobis :/ legem meam ne derelinquatis./",
+        "SYN": "потому что я преподал вам доброе учение. Не оставляйте заповеди моей.",
+        "NEO": "car je vous donne une bonne doctrine : n’abandonnez pas mon enseignement.",
+        "NAB": "Yes, excellent advice I give you; my teaching do not forsake.",
+        "VAT_ES": "lo que yo les doy es una sana doctrina, no abandonen mi esperanza.",
+        "CEI": "poiché io vi do una buona dottrina; non abbandonate il mio insegnamento."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כִּי בֵ֭ן הָיִ֣יתִי לְ/אָבִ֑/י רַ֥ךְ וְ֝/יָחִ֗יד לִ/פְנֵ֥י אִמִּֽ/י׃",
+        "LXX": "υἱὸς γὰρ ἐγενόμην κἀγὼ πατρὶ ὑπήκοος καὶ ἀγαπώμενος ἐν προσώπῳ μητρός,",
+        "VUL": "Nam et ego filius fui patris mei,/ tenellus et unigenitus coram matre mea./",
+        "SYN": "Ибо и я был сын у отца моего, нежно любимый и единственный у матери моей,",
+        "NEO": "Moi aussi j’ai été un fils pour mon père, un fils tendre et unique auprès de ma mère.",
+        "NAB": "When I was my father's child, frail, yet the darling of my mother,",
+        "VAT_ES": "Yo también fui un hijo para mi padre, tierno y muy querido a los ojos de mi madre.",
+        "CEI": "Anch'io sono stato un figlio per mio padre, tenero e caro agli occhi di mia madre."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֹּרֵ֗/נִי וַ/יֹּ֥אמֶר לִ֗/י יִֽתְמָךְ דְּבָרַ֥/י לִבֶּ֑/ךָ שְׁמֹ֖ר מִצְוֺתַ֣/י וֶֽ/חְיֵֽה׃",
+        "LXX": "οἳ ἔλεγον καὶ ἐδίδασκόν με Ἐρειδέτω ὁ ἡμέτερος λόγος εἰς σὴν καρδίαν· φύλασσε ἐντολάς,",
+        "VUL": "Et docebat me, atque dicebat :/ Suscipiat verba mea cor tuum ;/ custodi præcepta mea, et vives./",
+        "SYN": "и он учил меня и говорил мне: да удержит сердце твое слова мои; храни заповеди мои, и живи.",
+        "NEO": "Il m’instruisait et il me disait : « Que ton cœur retienne mes paroles, observe mes préceptes, et tu vivras.",
+        "NAB": "He taught me, and said to me: \"Let your heart hold fast my words: keep my commands, that you may live!",
+        "VAT_ES": "El me decía para instruirme: Que tu corazón retenga mis palabras, observa mis mandamientos y vivirás.",
+        "CEI": "Egli mi istruiva dicendomi: \"Il tuo cuore ritenga le mie parole; custodisci i miei precetti e vivrai."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "קְנֵ֣ה חָ֭כְמָה קְנֵ֣ה בִינָ֑ה אַל תִּשְׁכַּ֥ח וְ/אַל תֵּ֝֗ט מֵֽ/אִמְרֵי פִֽ/י׃",
+        "LXX": "μὴ ἐπιλάθῃ· μηδὲ παρίδῃς ῥῆσιν ἐμοῦ στόματος",
+        "VUL": "Posside sapientiam, posside prudentiam :/ ne obliviscaris, neque declines a verbis oris mei./",
+        "SYN": "Приобретай мудрость, приобретай разум: не забывай этого и не уклоняйся от слов уст моих.",
+        "NEO": "Acquiers la sagesse, acquiers l’intelligence ; n’oublie pas les paroles de ma bouche, et ne t’en détourne pas.",
+        "NAB": "\"Get wisdom, get understanding! Do not forget or turn aside from the words I utter.",
+        "VAT_ES": "Adquiere la sabiduría, adquiere la inteligencia, no olvides las palabras de mi boca ni te desvíes de ellas.",
+        "CEI": "Acquista la sapienza, acquista l'intelligenza; non dimenticare le parole della mia bocca e non allontanartene mai."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אַל תַּעַזְבֶ֥/הָ וְ/תִשְׁמְרֶ֑/ךָּ אֱהָבֶ֥/הָ וְ/תִצְּרֶֽ/ךָּ׃",
+        "LXX": "μηδὲ ἐγκαταλίπῃς αὐτήν, καὶ ἀνθέξεταί σου· ἐράσθητι αὐτῆς, καὶ τηρήσει σε.",
+        "VUL": "Ne dimittas eam, et custodiet te :/ dilige eam, et conservabit te./",
+        "SYN": "Не оставляй ее, и она будет охранять тебя; люби ее, и она будет оберегать тебя.",
+        "NEO": "Ne l’abandonne pas, et elle te gardera ; aime-la, et elle te conservera.",
+        "NAB": "Forsake her not, and she will preserve you; love her, and she will safeguard you;",
+        "VAT_ES": "No la abandones, y ella te protegerá, ámala, y ella te cuidará.",
+        "CEI": "Non abbandonarla ed essa ti custodirà, amala e veglierà su di te."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "רֵאשִׁ֣ית חָ֭כְמָה קְנֵ֣ה חָכְמָ֑ה וּ/בְ/כָל קִ֝נְיָנְ/ךָ֗ קְנֵ֣ה בִינָֽה׃",
+        "VUL": "Principium sapientiæ : posside sapientiam,/ et in omni possessione tua acquire prudentiam./",
+        "SYN": "Главное - мудрость: приобретай мудрость, и всем имением твоим приобретай разум.",
+        "NEO": "Voici le commencement de la sagesse : acquiers la sagesse ; au prix de tout ce que tu possèdes, acquiers l’intelligence.",
+        "NAB": "The beginning of wisdom is: get wisdom; at the cost of all you have, get understanding.",
+        "VAT_ES": "El comienzo de la sabiduría es tratar de adquirirla; con todo lo que poseas, adquiere la inteligencia.",
+        "CEI": "Principio della sapienza: acquista la sapienza; a costo di tutto ciò che possiedi acquista l'intelligenza."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "סַלְסְלֶ֥/הָ וּֽ/תְרוֹמְמֶ֑/ךָּ תְּ֝כַבֵּ֗דְ/ךָ כִּ֣י תְחַבְּקֶֽ/נָּה׃",
+        "LXX": "περιχαράκωσον αὐτήν, καὶ ὑψώσει σε· τίμησον αὐτήν, ἵνα σε περιλάβῃ·",
+        "VUL": "Arripe illam, et exaltabit te ;/ glorificaberis ab ea cum eam fueris amplexatus./",
+        "SYN": "Высоко цени ее, и она возвысит тебя; она прославит тебя, если ты прилепишься к ней;",
+        "NEO": "Tiens-la en haute estime, et elle t’exaltera ; elle fera ta gloire, si tu l’embrasses.",
+        "NAB": "Extol her, and she will exalt you; she will bring you honors if you embrace her;",
+        "VAT_ES": "Apréciala al máximo, y ella te encumbrará; te glorificará, si tú la abrazas.",
+        "CEI": "Stimala ed essa ti esalterà, sarà la tua gloria, se l'abbraccerai."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "תִּתֵּ֣ן לְ֭/רֹאשְׁ/ךָ לִוְיַת חֵ֑ן עֲטֶ֖רֶת תִּפְאֶ֣רֶת תְּמַגְּנֶֽ/ךָּ׃",
+        "LXX": "ἵνα δῷ τῇ σῇ κεφαλῇ στέφανον χαρίτων, στεφάνῳ δὲ τρυφῆς ὑπερασπίσῃ σου.",
+        "VUL": "Dabit capiti tuo augmenta gratiarum,/ et corona inclyta proteget te.]",
+        "SYN": "возложит на голову твою прекрасный венок, доставит тебе великолепный венец.",
+        "NEO": "Elle mettra sur ta tête une couronne de grâce, elle t’ornera d’un magnifique diadème. »",
+        "NAB": "She will put on your head a graceful diadem; a glorious crown will she bestow on you.\"",
+        "VAT_ES": "Pondrá en tu cabeza una diadema de gracia, te obsequiará una corona de gloria.",
+        "CEI": "Una corona di grazia porrà sul tuo capo, con un diadema di gloria ti cingerà\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "שְׁמַ֣ע בְּ֭נִ/י וְ/קַ֣ח אֲמָרָ֑/י וְ/יִרְבּ֥וּ לְ֝/ךָ֗ שְׁנ֣וֹת חַיִּֽים׃",
+        "LXX": "Ἄκουε, υἱέ, καὶ δέξαι ἐμοὺς λόγους, καὶ πληθυνθήσεται ἔτη ζωῆς σου, ἵνα σοι γένωνται πολλαὶ ὁδοὶ βίου.",
+        "VUL": "[Audi, fili mi, et suscipe verba mea,/ ut multiplicentur tibi anni vitæ./",
+        "SYN": "Слушай, сын мой, и прими слова мои, - и умножатся тебе лета жизни.",
+        "NEO": "Ecoute, mon fils, et reçois mes paroles, et les années de ta vie se multiplieront.",
+        "NAB": "Hear, my son, and receive my words, and the years of your life shall be many.",
+        "VAT_ES": "Escucha, hijo mío, y recibe mis palabras. y tus años de vida se multiplicarán.",
+        "CEI": "Ascolta, figlio mio, e accogli le mie parole ed esse moltiplicheranno gli anni della tua vita."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "בְּ/דֶ֣רֶךְ חָ֭כְמָה הֹרֵתִ֑י/ךָ הִ֝דְרַכְתִּ֗י/ךָ בְּ/מַעְגְּלֵי יֹֽשֶׁר׃",
+        "LXX": "ὁδοὺς γὰρ σοφίας διδάσκω σε, ἐμβιβάζω δέ σε τροχιαῖς ὀρθαῖς.",
+        "VUL": "Viam sapientiæ monstrabo tibi ;/ ducam te per semitas æquitatis :/",
+        "SYN": "Я указываю тебе путь мудрости, веду тебя по стезям прямым.",
+        "NEO": "Je t’enseigne la voie de la sagesse, je te conduis dans les sentiers de la droiture.",
+        "NAB": "On the way of wisdom I direct you, I lead you on straightforward paths.",
+        "VAT_ES": "Yo te instruyo sobre el camino de la sabiduría, te encamino por senderos rectos.",
+        "CEI": "Ti indico la via della sapienza; ti guido per i sentieri della rettitudine."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "בְּֽ֭/לֶכְתְּ/ךָ לֹא יֵצַ֣ר צַעֲדֶ֑/ךָ וְ/אִם תָּ֝ר֗וּץ לֹ֣א תִכָּשֵֽׁל׃",
+        "LXX": "ἐὰν γὰρ πορεύῃ, οὐ συνκλεισθήσεταί σου τὰ διαβήματα· ἐὰν δὲ τρέχῃς, οὐ κοπιάσεις.",
+        "VUL": "quas cum ingressus fueris, non arctabuntur gressus tui,/ et currens non habebis offendiculum./",
+        "SYN": "Когда пойдешь, не будет стеснен ход твой, и когда побежишь, не споткнешься.",
+        "NEO": "Si tu marches, tes pas ne seront pas à l’étroit, et si tu cours, tu ne trébucheras pas.",
+        "NAB": "When you walk, your step will not be impeded, and should you run, you will not stumble.",
+        "VAT_ES": "Cuando camines, no se acortará tu paso, y si corres, no tropezarás.",
+        "CEI": "Quando cammini non saranno intralciati i tuoi passi, e se corri, non inciamperai."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הַחֲזֵ֣ק בַּ/מּוּסָ֣ר אַל תֶּ֑רֶף נִ֝צְּרֶ֗/הָ כִּי הִ֥יא חַיֶּֽי/ךָ׃",
+        "LXX": "ἐπιλαβοῦ ἐμῆς παιδείας, μὴ ἀφῇς, ἀλλὰ φύλαξον αὐτὴν σεαυτῷ εἰς ζωήν σου.",
+        "VUL": "Tene disciplinam, ne dimittas eam ;/ custodi illam, quia ipsa est vita tua./",
+        "SYN": "Крепко держись наставления, не оставляй, храни его, потому что оно - жизнь твоя.",
+        "NEO": "Retiens l’instruction, ne l’abandonne pas ; garde-la, car elle est ta vie.",
+        "NAB": "Hold fast to instruction, never let her go; keep her, for she is your life.",
+        "VAT_ES": "Aférrate a la instrucción, no la sueltes; guárdala bien, porque ella es tu vida.",
+        "CEI": "Attieniti alla disciplina, non lasciarla, pràticala, perché essa è la tua vita."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "בְּ/אֹ֣רַח רְ֭שָׁעִים אַל תָּבֹ֑א וְ/אַל תְּ֝אַשֵּׁ֗ר בְּ/דֶ֣רֶךְ רָעִֽים׃",
+        "LXX": "ὁδοὺς ἀσεβῶν μὴ ἐπέλθῃς, μηδὲ ζηλώσῃς ὁδοὺς παρανόμων·",
+        "VUL": "Ne delecteris in semitis impiorum,/ nec tibi placeat malorum via./",
+        "SYN": "Не вступай на стезю нечестивых и не ходи по пути злых;",
+        "NEO": "N’entre pas dans le sentier des méchants, et ne marche pas dans la voie des hommes mauvais.",
+        "NAB": "The path of the wicked enter not, walk not on the way of evil men;",
+        "VAT_ES": "No entres en la senda de los malvados ni avances por el camino de los malos.",
+        "CEI": "Non battere la strada degli empi e non procedere per la via dei malvagi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "פְּרָעֵ֥/הוּ אַל תַּעֲבָר בּ֑/וֹ שְׂטֵ֖ה מֵ/עָלָ֣י/ו וַ/עֲבֽוֹר׃",
+        "LXX": "ἐν ᾧ ἂν τόπῳ στρατοπεδεύσωσιν, μὴ ἐπέλθῃς ἐκεῖ, ἔκκλινον δὲ ἀπ’ αὐτῶν καὶ παράλλαξον.",
+        "VUL": "Fuge ab ea, nec transeas per illam ;/ declina, et desere eam./",
+        "SYN": "оставь его, не ходи по нему, уклонись от него и пройди мимо;",
+        "NEO": "Evite-la, n’y passe point, détourne-t’en et passe.",
+        "NAB": "Shun it, cross it not, turn aside from it, and pass on.",
+        "VAT_ES": "Evítalo, no pases por allí, desvíate de él, y pasa de largo.",
+        "CEI": "Evita quella strada, non passarvi, stà lontano e passa oltre."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "כִּ֤י לֹ֣א יִֽ֭שְׁנוּ אִם לֹ֣א יָרֵ֑עוּ וְֽ/נִגְזְלָ֥ה שְׁ֝נָתָ֗/ם אִם לֹ֥א יכשולו יַכְשִֽׁילוּ׃",
+        "LXX": "οὐ γὰρ μὴ ὑπνώσωσιν, ἐὰν μὴ κακοποιήσωσιν· ἀφῄρηται ὁ ὕπνος αὐτῶν, καὶ οὐ κοιμῶνται·",
+        "VUL": "Non enim dormiunt nisi malefecerint,/ et rapitur somnus ab eis nisi supplantaverint./",
+        "SYN": "потому что они не заснут, если не сделают зла; пропадает сон у них, если они не доведут кого до падения;",
+        "NEO": "Car ils ne dorment pas, s’ils ne font le mal ; leur sommeil s’enfuit s’ils ne font tomber personne.",
+        "NAB": "For they cannot rest unless they have done evil; to have made no one stumble steals away their sleep.",
+        "VAT_ES": "Porque ellos no duermen, si no hacen el mal; pierden el sueño, si no hacen caer a alguien,",
+        "CEI": "Essi non dormono, se non fanno del male; non si lasciano prendere dal sonno, se non fanno cadere qualcuno;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כִּ֣י לָ֭חֲמוּ לֶ֣חֶם רֶ֑שַׁע וְ/יֵ֖ין חֲמָסִ֣ים יִשְׁתּֽוּ׃",
+        "LXX": "οἵδε γὰρ σιτοῦνται σῖτα ἀσεβείας, οἴνῳ δὲ παρανόμῳ μεθύσκονται.",
+        "VUL": "Comedunt panem impietatis,/ et vinum iniquitatis bibunt./",
+        "SYN": "ибо они едят хлеб беззакония и пьют вино хищения.",
+        "NEO": "Car ils mangent le pain du crime, ils boivent le vin de la violence.",
+        "NAB": "For they eat the bread of wickedness and drink the wine of violence.",
+        "VAT_ES": "ya que se alimentan con el pan de la maldad y beben el vino de la violencia.",
+        "CEI": "mangiano il pane dell'empietà e bevono il vino della violenza."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/אֹ֣רַח צַ֭דִּיקִים כְּ/א֣וֹר נֹ֑גַהּ הוֹלֵ֥ךְ וָ֝/א֗וֹר עַד נְכ֥וֹן הַ/יּֽוֹם׃",
+        "LXX": "αἱ δὲ ὁδοὶ τῶν δικαίων ὁμοίως φωτὶ λάμπουσιν, προπορεύονται καὶ φωτίζουσιν ἕως κατορθώσῃ ἡ ἡμέρα.",
+        "VUL": "Justorum autem semita quasi lux splendens procedit,/ et crescit usque ad perfectam diem./",
+        "SYN": "Стезя праведных - как светило лучезарное, которое более и более светлеет до полного дня.",
+        "NEO": "Le sentier des justes est comme la brillante lumière du matin, dont l’éclat va croissant jusqu’à ce que paraisse le jour.",
+        "NAB": "But the path of the just is like shining light, that grows in brilliance till perfect day.",
+        "VAT_ES": "La senda de los justos es como la luz del alba, que va en aumento hasta que es pleno día.",
+        "CEI": "La strada dei giusti è come la luce dell'alba, che aumenta lo splendore fino al meriggio."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "דֶּ֣רֶךְ רְ֭שָׁעִים כָּֽ/אֲפֵלָ֑ה לֹ֥א יָ֝דְע֗וּ בַּ/מֶּ֥ה יִכָּשֵֽׁלוּ׃",
+        "LXX": "αἱ δὲ ὁδοὶ τῶν ἀσεβῶν σκοτειναί, οὐκ οἴδασιν πῶς προσκόπτουσιν.",
+        "VUL": "Via impiorum tenebrosa ;/ nesciunt ubi corruant./",
+        "SYN": "Путь же беззаконных - как тьма; они не знают, обо что споткнутся.",
+        "NEO": "La voie des méchants est comme les ténèbres ; ils n’aperçoivent pas ce qui les fera tomber.",
+        "NAB": "The way of the wicked is like darkness; they know not on what they stumble.",
+        "VAT_ES": "Pero el camino de los malos es como una densa oscuridad: ellos no saben dónde van a tropezar.",
+        "CEI": "La via degli empi è come l'oscurità: non sanno dove saranno spinti a cadere."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "בְּ֭נִ/י לִ/דְבָרַ֣/י הַקְשִׁ֑יבָ/ה לַ֝/אֲמָרַ֗/י הַט אָזְנֶֽ/ךָ׃",
+        "LXX": "Υἱέ, ἐμῇ ῥήσει πρόσεχε, τοῖς δὲ ἐμοῖς λόγοις παράβαλε σὸν οὖς,",
+        "VUL": "Fili mi, ausculta sermones meos,/ et ad eloquia mea inclina aurem tuam./",
+        "SYN": "Сын мой! словам моим внимай, и к речам моим приклони ухо твое;",
+        "NEO": "Mon fils, sois attentif à mes paroles, prête l’oreille à mes discours.",
+        "NAB": "My son, to my words be attentive, to my sayings incline your ear;",
+        "VAT_ES": "Hijo mío, presta atención a lo que te digo, inclina tu oído a mis palabras.",
+        "CEI": "Figlio mio, fà attenzione alle mie parole, porgi l'orecchio ai miei detti;"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "אַל יַלִּ֥יזוּ מֵ/עֵינֶ֑י/ךָ שָׁ֝מְרֵ֗/ם בְּ/ת֣וֹךְ לְבָבֶֽ/ךָ׃",
+        "LXX": "ὅπως μὴ ἐκλίπωσίν σε αἱ πηγαί σου, φύλασσε αὐτὰς ἐν καρδίᾳ·",
+        "VUL": "Ne recedant ab oculis tuis :/ custodi ea in medio cordis tui :/",
+        "SYN": "да не отходят они от глаз твоих; храни их внутри сердца твоего:",
+        "NEO": "Qu’ils ne s’éloignent pas de tes yeux, garde-les au milieu de ton cœur.",
+        "NAB": "Let them not slip out of your sight, keep them within your heart;",
+        "VAT_ES": "Que ellas no se aparten de tus ojos, guárdalas bien dentro de tu corazón,",
+        "CEI": "non perderli mai di vista, custodiscili nel tuo cuore,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כִּֽי חַיִּ֣ים הֵ֭ם לְ/מֹצְאֵי/הֶ֑ם וּֽ/לְ/כָל בְּשָׂר֥/וֹ מַרְפֵּֽא׃",
+        "LXX": "ζωὴ γάρ ἐστιν τοῖς εὑρίσκουσιν αὐτήν, καὶ πάσῃ σαρκὶ ἴασις.",
+        "VUL": "vita enim sunt invenientibus ea,/ et universæ carni sanitas./",
+        "SYN": "потому что они жизнь для того, кто нашел их, и здравие для всего тела его.",
+        "NEO": "Car ils sont vie pour ceux qui les trouvent, santé pour tout leur corps.",
+        "NAB": "For they are life to those who find them, to man's whole being they are health.",
+        "VAT_ES": "porque son vida para los que las encuentran y salud para todo ser viviente.",
+        "CEI": "perché essi sono vita per chi li trova e salute per tutto il suo corpo."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "מִֽ/כָּל מִ֭שְׁמָר נְצֹ֣ר לִבֶּ֑/ךָ כִּֽי מִ֝מֶּ֗/נּוּ תּוֹצְא֥וֹת חַיִּֽים׃",
+        "LXX": "πάσῃ φυλακῇ τήρει σὴν καρδίαν· ἐκ γὰρ τούτων ἔξοδοι ζωῆς.",
+        "VUL": "Omni custodia serva cor tuum,/ quia ex ipso vita procedit./",
+        "SYN": "Больше всего хранимого храни сердце твое, потому что из него источники жизни.",
+        "NEO": "Garde ton cœur avant toute chose, car de lui jaillissent les sources de la vie.",
+        "NAB": "With closest custody, guard your heart, for in it are the sources of life.",
+        "VAT_ES": "Con todo cuidado vigila tu corazón, porque de él brotan las fuentes de la vida.",
+        "CEI": "Con ogni cura vigila sul cuore perché da esso sgorga la vita."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "הָסֵ֣ר מִ֭מְּ/ךָ עִקְּשׁ֣וּת פֶּ֑ה וּ/לְז֥וּת שְׂ֝פָתַ֗יִם הַרְחֵ֥ק מִמֶּֽ/ךָּ׃",
+        "LXX": "περίελε σεαυτοῦ σκολιὸν στόμα, καὶ ἄδικα χείλη ἀπὸ σοῦ μακρὰν ἄπωσαι.",
+        "VUL": "Remove a te os pravum,/ et detrahentia labia sint procul a te./",
+        "SYN": "Отвергни от себя лживость уст, и лукавство языка удали от себя.",
+        "NEO": "Ecarte de ta bouche les paroles tortueuses, et éloigne de tes lèvres la fausseté.",
+        "NAB": "Put away from you dishonest talk, deceitful speech put far from you.",
+        "VAT_ES": "Aparta de ti las palabras perversas y aleja de tus labios la malicia.",
+        "CEI": "Tieni lungi da te la bocca perversa e allontana da te le labbra fallaci."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "עֵ֭ינֶי/ךָ לְ/נֹ֣כַח יַבִּ֑יטוּ וְ֝/עַפְעַפֶּ֗י/ךָ יַיְשִׁ֥רוּ נֶגְדֶּֽ/ךָ׃",
+        "LXX": "οἱ ὀφθαλμοί σου ὀρθὰ βλεπέτωσαν, τὰ δὲ βλέφαρά σου νευέτω δίκαια.",
+        "VUL": "Oculi tui recta videant,/ et palpebræ tuæ præcedant gressus tuos./",
+        "SYN": "Глаза твои пусть прямо смотрят, и ресницы твои да направлены будут прямо пред тобою.",
+        "NEO": "Que tes yeux regardent en face, et que tes paupières se dirigent devant toi.",
+        "NAB": "Let your eyes look straight ahead and your glance be directly forward.",
+        "VAT_ES": "Que tus ojos miren de frente y tu mirada vaya derecho hacia adelante.",
+        "CEI": "I tuoi occhi guardino diritto e le tue pupille mirino diritto davanti a te."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "פַּ֭לֵּס מַעְגַּ֣ל רַגְלֶ֑/ךָ וְֽ/כָל דְּרָכֶ֥י/ךָ יִכֹּֽנוּ׃",
+        "LXX": "ὀρθὰς τροχιὰς ποίει σοῖς ποσίν, καὶ τὰς ὁδούς σου κατεύθυνε.",
+        "VUL": "Dirige semitam pedibus tuis,/ et omnes viæ tuæ stabilientur./",
+        "SYN": "Обдумай стезю для ноги твоей, и все пути твои да будут тверды.",
+        "NEO": "Fais à tes pieds un chemin uni, et que toutes tes voies soient droites.",
+        "NAB": "Survey the path for your feet, and let all your ways be sure.",
+        "VAT_ES": "Fíjate bien dónde pones los pies y que sean firmes todos tus caminos.",
+        "CEI": "Bada alla strada dove metti il piede e tutte le tue vie siano ben rassodate."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "אַֽל תֵּט יָמִ֥ין וּ/שְׂמֹ֑אול הָסֵ֖ר רַגְלְ/ךָ֣ מֵ/רָֽע׃",
+        "LXX": "μὴ ἐκκλίνῃς εἰς τὰ δεξιὰ μηδὲ εἰς τὰ ἀριστερά, ἀπόστρεψον δὲ σὸν πόδα ἀπὸ ὁδοῦ κακῆς. [1] ὁδοὺς γὰρ τὰς ἐκ δεξιῶν οἶδεν ὁ θεός, διεστραμμέναι δέ εἰσιν αἱ ἐξ ἀριστερῶν· [2] αὐτὸς δὲ ὀρθὰς ποιήσει τὰς τροχιάς σου, τὰς δὲ πορείας σου ἐν εἰρήνῃ προάξει.",
+        "VUL": "Ne declines ad dexteram neque ad sinistram ;/ averte pedem tuum a malo :/ vias enim quæ a dextris sunt novit Dominus :/ perversæ vero sunt quæ a sinistris sunt./ Ipse autem rectos faciet cursus tuos,/ itinera autem tua in pace producet.]",
+        "SYN": "Не уклоняйся ни направо, ни налево; удали ногу твою от зла,",
+        "NEO": "N’incline ni à droite ni à gauche, et détourne ton pied du mal.",
+        "NAB": "Turn neither to right nor to left, keep your foot far from evil.",
+        "VAT_ES": "No te desvíes ni a derecha ni a izquierda, aparta tus pies lejos del mal.",
+        "CEI": "Non deviare né a destra né a sinistra, tieni lontano il piede dal male."
+      }
+    }
+  }
+}

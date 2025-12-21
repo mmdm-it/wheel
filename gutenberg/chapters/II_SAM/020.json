@@ -1,0 +1,482 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "II_SAM_020",
+  "book_key": "II_SAM",
+  "sequence": 20,
+  "chapter_in": {
+    "MT": 20,
+    "VUL": 20,
+    "LXX": 20
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/שָׁ֨ם נִקְרָ֜א אִ֣ישׁ בְּלִיַּ֗עַל וּ/שְׁמ֛/וֹ שֶׁ֥בַע בֶּן בִּכְרִ֖י אִ֣ישׁ יְמִינִ֑י וַ/יִּתְקַ֣ע בַּ/שֹּׁפָ֗ר וַ֠/יֹּאמֶר אֵֽין לָ֨/נוּ חֵ֜לֶק בְּ/דָוִ֗ד וְ/לֹ֤א נַֽחֲלָה לָ֨/נוּ֙ בְּ/בֶן יִשַׁ֔י אִ֥ישׁ לְ/אֹהָלָ֖י/ו יִשְׂרָאֵֽל׃",
+        "LXX": "Καὶ ἐκεῖ ἐπικαλούμενος υἱὸς παράνομος καὶ ὄνομα αὐτῷ Σάβεε, υἱὸς Βοχορεί, ἀνὴρ ὁ Ἱεμενεί· καὶ ἐσάλπισεν τῇ κερατίνῃ καὶ εἶπεν Οὐκ ἔστιν ἡμῖν μερὶς ἐν Δαυεὶδ οὐδὲ κληρονομία ἡμῖν ἐν τῷ υἱῷ Ἰεσσαί· ἀνὴρ εἰς τὰ σκηνώματά σου, Ἰσραήλ.",
+        "VUL": "Accidit quoque ut ibi esset vir Belial, nomine Seba, filius Bochri, vir Jemineus : et cecinit buccina, et ait : Non est nobis pars in David, neque hæreditas in filio Isai : revertere in tabernacula tua, Israël.",
+        "SYN": "Там случайно находился один негодный человек, по имени Савей, сын Бихри, Вениамитянин; он затрубил трубою и сказал: нет нам части в Давиде, и нет нам доли в сыне Иессеевом; все по шатрам своим, Израильтяне!",
+        "NEO": "Il se trouvait là un homme de Bélial, nommé Séba, fils de Bochri, Benjamite ; il sonna de la trompette et dit : « Nous n’avons pas de part avec David, nous n’avons pas d’héritage avec les fils de Jessé. Chacun à ses tentes, Israël ! »",
+        "NAB": "Now a rebellious individual from Benjamin named Sheba, the son of Bichri, happened to be there. He sounded the horn and cried out, \"We have no portion in David, nor any share in the son of Jesse. Every man to his tent, O Israel!\"",
+        "VAT_ES": "Casualmente se encontraba allí un malvado llamado Seba, hijo de Bicrí, un benjaminita. El tocó la trompeta y exclamó: «Nosotros no tenemos parte con David ni herencia común con el hijo de Jesé, &iexcl;Cada uno a su carpa, Israel!».",
+        "CEI": "Ora si trovava là un uomo iniquo chiamato Sèba, figlio di Bicrì, un Beniaminita, il quale suonò la tromba e disse: \"Non abbiamo alcuna parte con Davide e non abbiamo un'eredità con il figlio di Iesse. Ognuno alle proprie tende, Israele!\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יַּ֜עַל כָּל אִ֤ישׁ יִשְׂרָאֵל֙ מֵ/אַחֲרֵ֣י דָוִ֔ד אַחֲרֵ֖י שֶׁ֣בַע בֶּן בִּכְרִ֑י וְ/אִ֤ישׁ יְהוּדָה֙ דָּבְק֣וּ בְ/מַלְכָּ֔/ם מִן הַ/יַּרְדֵּ֖ן וְ/עַד יְרוּשָׁלִָֽם׃",
+        "LXX": "καὶ ἀνέβη πᾶς Ἰσραὴλ ἀπὸ ὄπισθεν Δαυεὶδ ὀπίσω Σάβεε υἱοῦ Βοχορεί· καὶ ἀνὴρ Ἰούδα ἐκολλήθη τῷ βασιλεῖ αὐτῶν ἀπὸ τοῦ Ἰορδάνου καὶ ἕως Ἰερουσαλήμ.",
+        "VUL": "Et separatus est omnis Israël a David, secutusque est Seba filium Bochri : viri autem Juda adhæserunt regi suo a Jordane usque Jerusalem.",
+        "SYN": "И отделились все Израильтяне от Давида _и_ _пошли_ за Савеем, сыном Бихри; Иудеи же остались на стороне царя своего, от Иордана до Иерусалима.",
+        "NEO": "Et tous les hommes d’Israël s’éloignèrent de David et suivirent Séba, fils de Bochri. Mais les hommes de Juda s’attachèrent à leur roi, depuis le Jourdain jusqu’à Jérusalem.",
+        "NAB": "So all the Israelites left David for Sheba, son of Bichri. But from the Jordan to Jerusalem the Judahites remained loyal to their king.",
+        "VAT_ES": "Todos los hombres de Israel se apartaron de David para seguir a Seba, hijo de Bicrí; pero los hombres de Judá se mantuvieron unidos a su rey, desde el Jordán hasta Jerusalén.",
+        "CEI": "Tutti gli Israeliti si allontanarono da Davide per seguire Sèba, figlio di Bicrì; ma gli uomini di Giuda rimasero attaccati al loro re e lo accompagnarono dal Giordano fino a Gerusalemme."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֨א דָוִ֣ד אֶל בֵּית/וֹ֮ יְרֽוּשָׁלִַם֒ וַ/יִּקַּ֣ח הַ/מֶּ֡לֶךְ אֵ֣ת עֶֽשֶׂר נָשִׁ֣ים פִּלַגְשִׁ֡ים אֲשֶׁ֣ר הִנִּיחַ֩ לִ/שְׁמֹ֨ר הַ/בַּ֜יִת וַֽ/יִּתְּנֵ֤/ם בֵּית מִשְׁמֶ֨רֶת֙ וַֽ/יְכַלְכְּלֵ֔/ם וַ/אֲלֵי/הֶ֖ם לֹא בָ֑א וַ/תִּהְיֶ֧ינָה צְרֻר֛וֹת עַד י֥וֹם מֻתָ֖/ן אַלְמְנ֥וּת חַיּֽוּת׃",
+        "LXX": "Καὶ εἰσῆλθεν Δαυεὶδ εἰς τὸν οἶκον αὐτοῦ εἰς Ἰερουσαλήμ· καὶ ἔλαβεν ὁ βασιλεὺς τὰς δέκα γυναῖκας τὰς παλλακὰς αὐτοῦ, ἃς ἀφῆκεν φυλάσσειν τὸν οἶκον, καὶ ἔδωκεν αὐτὰς ἐν οἴκῳ φυλακῆς, καὶ διέθρεψεν αὐτὰς καὶ πρὸς αὐτὰς οὐκ εἰσῆλθεν, καὶ ἦσαν συνεχόμεναι ἕως ἡμέρας θανάτου αὐτῶν, χῆραι ζῶσαι.",
+        "VUL": "Cumque venisset rex in domum suam in Jerusalem, tulit decem mulieres concubinas quas dereliquerat ad custodiendam domum, et tradidit eas in custodiam, alimenta eis præbens : et non est ingressus ad eas, sed erant clausæ usque in diem mortis suæ in viduitate viventes.",
+        "SYN": "И пришел Давид в свой дом в Иерусалиме, и взял царь десять жен наложниц, которых он оставлял стеречь дом, и поместил их в особый дом под надзор, и содержал их, но не ходил к ним. И содержались они там до дня смерти своей, живя как вдовы.",
+        "NEO": "David revint dans sa maison, à Jérusalem, et le roi prit les dix concubines qu’il avait laissées pour veiller sur la maison, et les mit dans une maison gardée. Il pourvut à leur entretien, mais il n’alla plus vers elles ; et elles furent enfermées jusqu’au jour de leur mort, vivant ainsi dans l’état de veuvage.",
+        "NAB": "When King David came to his palace in Jerusalem, he took the ten concubines whom he had left behind to take care of the palace and placed them in confinement. He provided for them, but had no further relations with them. And so they remained in confinement to the day of their death, lifelong widows.",
+        "VAT_ES": "David entró a su casa en Jerusalén. Entonces el rey tomó a las diez concubinas que había dejado al cuidado de la casa y las puso en un recinto bien custodiado. El proveía a su mantenimiento, pero no tuvo más relaciones con ellas, y así estuvieron recluidas, viviendo como viudas, hasta el día de su muerte.",
+        "CEI": "Davide entrò nella reggia a Gerusalemme. Il re prese le dieci concubine che aveva lasciate a custodia della reggia e le mise in un domicilio sorvegliato; egli somministrava loro gli alimenti, ma non si accostava loro; rimasero così recluse fino al giorno della loro morte, in stato di vedovanza perenne."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר הַ/מֶּ֨לֶךְ֙ אֶל עֲמָשָׂ֔א הַזְעֶק לִ֥/י אֶת אִישׁ יְהוּדָ֖ה שְׁלֹ֣שֶׁת יָמִ֑ים וְ/אַתָּ֖ה פֹּ֥ה עֲמֹֽד׃",
+        "LXX": "Καὶ εἶπεν ὁ βασιλεὺς πρὸς Ἀμεσσαεί Βόησόν μοι τὸν ἄνδρα Ἰούδα τρεῖς ἡμέρας, σὺ δὲ αὐτοῦ στῆθι.",
+        "VUL": "Dixit autem rex Amasæ : Convoca mihi omnes viros Juda in diem tertium, et tu adesto præsens.",
+        "SYN": "И сказал Давид Амессаю: созови ко мне Иудеев в течение трех дней и сам явись сюда.",
+        "NEO": "Le roi dit à Amasa : « Convoque-moi d’ici à trois jours les hommes de Juda ; et toi, sois ici présent. »",
+        "NAB": "Then the king said to Amasa: \"Summon the Judahites for me within three days. Then present yourself here.\"",
+        "VAT_ES": "El rey dijo a Amasá: «Convócame a los hombres de Judá en tres días. Luego preséntate aquí».",
+        "CEI": "Poi il re disse ad Amasà: \"Radunami tutti gli uomini di Giuda in tre giorni; poi vieni qui\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֥לֶךְ עֲמָשָׂ֖א לְ/הַזְעִ֣יק אֶת יְהוּדָ֑ה ו/ייחר וַ/יּ֕וֹחֶר מִן הַ/מּוֹעֵ֖ד אֲשֶׁ֥ר יְעָדֽ/וֹ׃",
+        "LXX": "καὶ ἐπορεύθη Ἀμεσσαεὶ τοῦ βοῆσαι τὸν Ἰούδαν, καὶ ἐχρόνισεν ἀπὸ τοῦ καιροῦ οὗ ἐτάξατο αὐτῷ.",
+        "VUL": "Abiit ergo Amasa ut convocaret Judam, et moratus est extra placitum quod ei constituerat rex.",
+        "SYN": "И пошел Амессай созвать Иудеев, но промедлил более назначенного ему времени.",
+        "NEO": "Amasa partit pour convoquer Juda ; mais il tarda au-delà du temps que le roi avait fixé.",
+        "NAB": "Accordingly Amasa set out to summon Judah, but delayed beyond the time set for him by David.",
+        "VAT_ES": "Amasá fue a convocar a Judá, pero se excedió del plazo que David le había fijado.",
+        "CEI": "Amasà dunque partì per adunare gli uomini di Giuda; ma tardò più del tempo fissato."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר דָּוִד֙ אֶל אֲבִישַׁ֔י עַתָּ֗ה יֵ֧רַֽע לָ֛/נוּ שֶׁ֥בַע בֶּן בִּכְרִ֖י מִן אַבְשָׁל֑וֹם אַ֠תָּה קַ֞ח אֶת עַבְדֵ֤י אֲדֹנֶ֨י/ךָ֙ וּ/רְדֹ֣ף אַחֲרָ֔י/ו פֶּן מָ֥צָא ל֛/וֹ עָרִ֥ים בְּצֻר֖וֹת וְ/הִצִּ֥יל עֵינֵֽ/נוּ׃",
+        "LXX": "καὶ εἶπεν Δαυεὶδ πρὸς Ἀβεισά Νῦν κακοποιήσει ἡμᾶς Σάβεε υἱὸς Βοχορεὶ ὑπὲρ Ἀβεσσαλώμ· καὶ νῦν σὺ λάβε μετὰ σεαυτοῦ τοὺς παῖδας τοῦ κυρίου σου καὶ καταδίωξον ὀπίσω αὐτοῦ, μή ποτε ἑαυτῷ εὕρῃ πόλεις ὀχυρὰς καὶ σκιάσει τοὺς ὀφθαλμοὺς ἡμῶν.",
+        "VUL": "Ait autem David ad Abisai : Nunc magis afflicturus est nos Seba filius Bochri quam Absalom : tolle igitur servos domini tui, et persequere eum, ne forte inveniat civitates munitas, et effugiat nos.",
+        "SYN": "Тогда Давид сказал Авессе: теперь наделает нам зла Савей, сын Бихри, больше нежели Авессалом; возьми ты слуг господина твоего и преследуй его, чтобы он не нашел себе укрепленных городов и не скрылся от глаз наших.",
+        "NEO": "Alors David dit à Abisaï : « Séba, fils de Bochri, va maintenant nous faire plus de mal qu’Absalom. Toi donc, prends les serviteurs de ton maître et poursuis-le, de peur qu’il ne trouve des villes fortes et ne se dérobe à nos yeux. »",
+        "NAB": "Then David said to Abishai: \"Sheba, son of Bichri, may now do us more harm than Absalom did. Take your lord's servants and pursue him, lest he find fortified cities and take shelter while we look on.\"",
+        "VAT_ES": "Entonces David dijo a Abisai: «Ahora Seba, hijo de Bicrí, va a causarnos más daño que Absalón. Recluta tú mismo a los servidores de tu señor y persíguelo, no sea que ocupe algunas plazas fuertes y se nos escape».",
+        "CEI": "Allora Davide disse ad Abisài: \"Sèba figlio di Bicrì ci farà ora più male di Assalonne; prendi i servi del tuo signore e inseguilo, perché non trovi fortezze e ci sfugga\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֵּצְא֤וּ אַֽחֲרָי/ו֙ אַנְשֵׁ֣י יוֹאָ֔ב וְ/הַ/כְּרֵתִ֥י וְ/הַ/פְּלֵתִ֖י וְ/כָל הַ/גִּבֹּרִ֑ים וַ/יֵּֽצְאוּ֙ מִ/יר֣וּשָׁלִַ֔ם לִ/רְדֹּ֕ף אַחֲרֵ֖י שֶׁ֥בַע בֶּן בִּכְרִֽי׃",
+        "LXX": "καὶ ἐξῆλθεν ὀπίσω αὐτοῦ Ἀβεσσὰ καὶ οἱ ἄνδρες Ἰωὰβ καὶ ὁ Χελεθθεὶ καὶ ὁ Φελεθθεὶ καὶ πάντες οἱ δυνατοί, καὶ ἐξῆλθαν ἐξ Ἰερουσαλὴμ διῶξαι ὀπίσω Σάβεε υἱοῦ Βοχορεί.",
+        "VUL": "Egressi sunt ergo cum eo viri Joab, Cerethi quoque et Phelethi : et omnes robusti exierunt de Jerusalem ad persequendum Seba filium Bochri.",
+        "SYN": "И вышли за ним люди Иоавовы, и Хелефеи и Фелефеи, и все храбрые пошли из Иерусалима преследовать Савея, сына Бихри.",
+        "NEO": "Derrière Abisaï partirent les gens de Joab, les Céréthiens et les Phéléthiens, et tous les vaillants hommes ; ils sortirent de Jérusalem afin de poursuivre Séba, fils de Bochri.",
+        "NAB": "So Joab and the Cherethites and Pelethites and all the warriors marched out behind Abishai from Jerusalem to campaign in pursuit of Sheba, son of Bichri.",
+        "VAT_ES": "Así partieron detrás de Abisai los hombres de Joab, los quereteos, los peleteos y todos los Guerreros, saliendo de Jerusalén en persecución de Seba, hijo de Bicrí.",
+        "CEI": "Abisài uscì per la spedizione, seguito dalla gente di Ioab, dai Cretei, dai Peletei e da tutti i prodi; uscirono da Gerusalemme per inseguire Sèba figlio di Bicrì."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הֵ֗ם עִם הָ/אֶ֤בֶן הַ/גְּדוֹלָה֙ אֲשֶׁ֣ר בְּ/גִבְע֔וֹן וַ/עֲמָשָׂ֖א בָּ֣א לִ/פְנֵי/הֶ֑ם וְ/יוֹאָ֞ב חָג֣וּר מִדּ֣/וֹ לְבֻשׁ֗/וּ ו/על/ו וְ/עָלָ֞י/ו חֲג֥וֹר חֶ֨רֶב֙ מְצֻמֶּ֤דֶת עַל מָתְנָי/ו֙ בְּ/תַעְרָ֔/הּ וְ/ה֥וּא יָצָ֖א וַ/תִּפֹּֽל׃",
+        "LXX": "καὶ αὐτοὶ παρὰ τῷ λίθῳ τῷ μεγάλῳ τῷ ἐν Γαβαών, καὶ Ἀμεσσαεὶ ἦλθεν ἔμπροσθεν αὐτῶν· καὶ Ἰωὰβ περιεζωσμένος μανδύαν τὸ ἔνδυμα αὐτοῦ, καὶ ἐπ’ αὐτῷ περιεζωσμένος μάχαιραν ἐζευγμένην ἐπὶ τῆς ὀσφύος αὐτοῦ ἐν κολεῷ αὐτῆς· καὶ ἡ μάχαιρα ἐξῆλθεν, καὶ αὐτὴ ἐξῆλθεν καὶ ἔπεσεν.",
+        "VUL": "Cumque illi essent juxta lapidem grandem qui est in Gabaon, Amasa veniens occurrit eis. Porro Joab vestitus erat tunica stricta ad mensuram habitus sui, et desuper accinctus gladio dependente usque ad ilia, in vagina, qui fabricatus levi motu egredi poterat, et percutere.",
+        "SYN": "И когда они были близ большого камня, что у Гаваона, то встретился с ними Амессай. Иоав был одет в воинское одеяние свое и препоясан мечом, который висел при бедре в ножнах и который легко выходил из них и входил.",
+        "NEO": "Lorsqu’ils furent près de la grande pierre qui est à Gabaon, Amasa arriva devant eux. Joab avait pour vêtement une tunique militaire, et sur cette tunique était ceinte une épée attachée à ses reins dans son fourreau. Comme il s’avançait, l’épée tomba.",
+        "NAB": "They were at the great stone in Gibeon when Amasa met them. Now Joab had a belt over his tunic, from which was slung, in its sheath near his thigh, a sword that could be drawn with a downward movement.",
+        "VAT_ES": "Cuando estaban junto a la piedra grande que hay en Gabaón, Amasá se presentó delante de ellos. Joab, que iba vestido con su indumentaria militar, llevaba encima de ella un cinturón con una espada envainada y ajustada a la cintura. Y cuando se adelantó, se le cayó la espada.",
+        "CEI": "Si trovavano presso la grande pietra che è in Gàbaon, quando Amasà venne loro incontro. Ioab indossava la veste militare, sopra la quale portava la cintura con la spada pendente dai fianchi nel fodero; egli la fece uscire e cadere."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יוֹאָב֙ לַ/עֲמָשָׂ֔א הֲ/שָׁל֥וֹם אַתָּ֖ה אָחִ֑/י וַ/תֹּ֜חֶז יַד יְמִ֥ין יוֹאָ֛ב בִּ/זְקַ֥ן עֲמָשָׂ֖א לִ/נְשָׁק לֽ/וֹ׃",
+        "LXX": "καὶ εἶπεν Ἰωὰβ τῷ Ἀμεσσαεί Εἰ ὑγιαίνεις, ἀδελφέ; καὶ ἐκράτησεν ἡ χεὶρ ἡ δεξιὰ Ἰωὰβ τοῦ πώγωνος Ἀμεσσαεὶ τοῦ καταφιλῆσαι αὐτόν.",
+        "VUL": "Dixit itaque Joab ad Amasam : Salve mi frater. Et tenuit manu dextera mentum Amasæ, quasi osculans eum.",
+        "SYN": "И сказал Иоав Амессаю: здоров ли ты, брат мой? И взял Иоав правою рукою Амессая за бороду, чтобы поцеловать его.",
+        "NEO": "Et Joab dit à Amasa : « Te portes-tu bien, mon frère ? » Et la main droite de Joab saisit la barbe d’Amasa pour le baiser.",
+        "NAB": "And Joab asked Amasa, \"How are you, my brother?\" With his right hand Joab held Amasa's beard as if to kiss him.",
+        "VAT_ES": "Joab dijo a Amasá: «&iquest;Estás bien, hermano?», y le tomó la barba con la mano derecha para besarlo.",
+        "CEI": "Ioab disse ad Amasà: \"Stai bene, fratello mio?\" e con la destra prese Amasà per la barba per baciarlo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/עֲמָשָׂ֨א לֹֽא נִשְׁמַ֜ר בַּ/חֶ֣רֶב אֲשֶׁ֣ר בְּ/יַד יוֹאָ֗ב וַ/יַּכֵּ/הוּ֩ בָ֨/הּ אֶל הַ/חֹ֜מֶשׁ וַ/יִּשְׁפֹּ֨ךְ מֵעָ֥י/ו אַ֛רְצָ/ה וְ/לֹא שָׁ֥נָה ל֖/וֹ וַ/יָּמֹ֑ת וְ/יוֹאָב֙ וַ/אֲבִישַׁ֣י אָחִ֔י/ו רָדַ֕ף אַחֲרֵ֖י שֶׁ֥בַע בֶּן בִּכְרִֽי׃",
+        "LXX": "καὶ Ἀμεσσαεὶ οὐκ ἐφυλάξατο τὴν μάχαιραν τὴν ἐν τῇ χειρὶ Ἰωάβ· καὶ ἔπαισεν αὐτὸν ἐν αὐτῇ Ἰωὰβ εἰς τὴν ψόαν, καὶ ἐξεχύθη ἡ κοιλία αὐτοῦ εἰς τὴν γῆν, καὶ οὐκ ἐδευτέρωσεν αὐτῷ, καὶ ἀπέθανεν. καὶ Ἰωὰβ καὶ Ἀβεισὰ ὁ ἀδελφὸς αὐτοῦ ἐδίωξεν ὀπίσω Σάβεε υἱοῦ Βοχορεί.",
+        "VUL": "Porro Amasa non observavit gladium quem habebat Joab : qui percussit eum in latere, et effudit intestina ejus in terram, nec secundum vulnus apposuit : et mortuus est. Joab autem, et Abisai frater ejus, persecuti sunt Seba filium Bochri.",
+        "SYN": "Амессай же не остерегся меча, бывшего в руке Иоава, и тот поразил его им в живот, так что выпали внутренности его на землю, и не повторил ему _удара,_ и он умер. Иоав и Авесса, брат его, погнались за Савеем, сыном Бихри.",
+        "NEO": "Amasa ne prit pas garde à l’épée qui était dans la main de Joab ; et Joab l’en frappa au ventre et répandit ses entrailles à terre et, sans qu’on lui portât un second coup, Amasa mourut. Joab et son frère Abisaï se mirent à la poursuite de Séba, fils de Bochri.",
+        "NAB": "And since Amasa was not on his guard against the sword in Joab's other hand, Joab stabbed him in the abdomen with it, so that his entrails burst forth to the ground, and he died without receiving a second thrust. Then Joab and his brother Abishai pursued Sheba, son of Bichri.",
+        "VAT_ES": "Pero Amasá no había prestado atención a la espada que tenía Joab en la mano izquierda, y este lo hirió en el bajo vientre, desparramando sus entrañas por el suelo. Así murió Amasá, sin que Joab tuviera que repetir el golpe. Luego Joab y su hermano Abisai se lanzaron en persecución de Seba, hijo de Bicrí.",
+        "CEI": "Amasà non fece attenzione alla spada che Ioab aveva nell'altra mano; Ioab lo colpì al basso ventre e ne sparse le viscere a terra; non lo colpì una seconda volta perché era già morto. Poi Ioab e Abisài suo fratello inseguirono Sèba, figlio di Bicrì."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/אִישׁ֙ עָמַ֣ד עָלָ֔י/ו מִֽ/נַּעֲרֵ֖י יוֹאָ֑ב וַ/יֹּ֗אמֶר מִי֩ אֲשֶׁ֨ר חָפֵ֧ץ בְּ/יוֹאָ֛ב וּ/מִ֥י אֲשֶׁר לְ/דָוִ֖ד אַחֲרֵ֥י יוֹאָֽב׃",
+        "LXX": "καὶ ἀνὴρ ἔστη ἐπ’ αὐτὸν τῶν παιδαρίων Ἰωὰβ καὶ εἶπεν Τίς ὁ βουλόμενος Ἰωάβ, καὶ τίς τοῦ Δαυεὶδ ὀπίσω Ἰωάβ;",
+        "VUL": "Interea quidam viri, cum stetissent juxta cadaver Amasæ, de sociis Joab, dixerunt : Ecce qui esse voluit pro Joab comes David.",
+        "SYN": "Один из отроков Иоавовых стоял над _Амессаем_ и говорил: тот, кто предан Иоаву и кто за Давида, _пусть_ _идет_ за Иоавом!",
+        "NEO": "Mais un des jeunes hommes de Joab resta près d’Amasa, et il disait : « Qui est favorable à Joab, et qui est pour David, qu’il suive Joab ! »",
+        "NAB": "One of Joab's attendants stood by Amasa and said, \"Let him who favors Joab and is for David follow Joab.\"",
+        "VAT_ES": "Uno de los jóvenes de Joab se paró al lado de Amasá y exclamó: «El que es partidario de Joab y está con David, &iexcl;que siga a Joab!».",
+        "CEI": "Uno dei giovani di Ioab era rimasto presso Amasà e diceva: \"Chi ama Ioab e chi è per Davide segua Ioab!\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/עֲמָשָׂ֛א מִתְגֹּלֵ֥ל בַּ/דָּ֖ם בְּ/ת֣וֹךְ הַֽ/מְסִּלָּ֑ה וַ/יַּ֨רְא הָ/אִ֜ישׁ כִּֽי עָמַ֣ד כָּל הָ/עָ֗ם וַ/יַּסֵּב֩ אֶת עֲמָשָׂ֨א מִן הַֽ/מְסִלָּ֤ה הַ/שָּׂדֶה֙ וַ/יַּשְׁלֵ֤ךְ עָלָי/ו֙ בֶּ֔גֶד כַּ/אֲשֶׁ֣ר רָאָ֔ה כָּל הַ/בָּ֥א עָלָ֖י/ו וְ/עָמָֽד׃",
+        "LXX": "καὶ Ἀμεσσαεὶ πεφυρμένος ἐν τῷ αἵματι ἐν μέσῳ τῆς τρίβου, καὶ εἶδεν ἀνὴρ ὅτι εἱστήκει πᾶς ὁ λαός· καὶ ἀπέστρεψαν τὸν Ἀμεσσαεὶ ἐκ τῆς τρίβου εἰς ἀγρὸν καὶ ἐπέρριψεν ἐπ’ αὐτὸν ἱμάτιον, καθότι εἶδεν πάντα τὸν ἐρχόμενον ἐπ’ αὐτὸν ἑστηκότα.",
+        "VUL": "Amasa autem conspersus sanguine jacebat in media via. Vidit hoc quidam vir, quod subsisteret omnis populus ad videndum eum, et amovit Amasam de via in agrum, operuitque eum vestimento, ne subsisterent transeuntes propter eum.",
+        "SYN": "Амессай же [мертвый] лежал в крови среди дороги; и тот человек, увидев, что весь народ останавливается над ним, стащил Амессая с дороги в поле и набросил на него одежду, так как он видел, что всякий проходящий останавливался над ним.",
+        "NEO": "Or Amasa s’était roulé dans son sang, au milieu de la route. Cet homme, voyant que tout le peuple s’arrêtait, tira Amasa hors de la route dans un champ, et jeta sur lui un manteau, parce qu’il voyait que tous ceux qui arrivaient près de lui s’arrêtaient.",
+        "NAB": "Amasa lay covered with blood in the middle of the highroad, and the man noticed that all the soldiers were stopping. So he removed Amasa from the road to the field and placed a garment over him, because all who came up to him were stopping.",
+        "VAT_ES": "Mientras tanto, Amasá, bañado en sangre, se revolcaba en medio del camino. Al ver que todos se detenían, aquel hombre retiró a Amasá del camino y arrojó sobre él su manto, porque veía que todos los que llegaban junto a él se paraban.",
+        "CEI": "Intanto Amasà si rotolava nel sangue in mezzo alla strada e quell'uomo si accorse che tutto il popolo si fermava. Allora trascinò Amasà fuori della strada in un campo e gli buttò addosso una veste, perché quanti gli arrivavano vicino lo vedevano e si fermavano."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כַּ/אֲשֶׁ֥ר הֹגָ֖ה מִן הַֽ/מְסִלָּ֑ה עָבַ֤ר כָּל אִישׁ֙ אַחֲרֵ֣י יוֹאָ֔ב לִ/רְדֹּ֕ף אַחֲרֵ֖י שֶׁ֥בַע בֶּן בִּכְרִֽי׃",
+        "LXX": "ἡνίκα δὲ ἔφθασεν ἐκ τῆς τρίβου, παρῆλθεν πᾶς ἀνὴρ Ἰσραὴλ ὀπίσω Ἰωὰβ τοῦ διῶξαι ὀπίσω Σάβεε υἱοῦ Βοχορεὶ.",
+        "VUL": "Amoto ergo illo de via, transibat omnis vir sequens Joab ad persequendum Seba filium Bochri.",
+        "SYN": "Но когда он был стащен с дороги, то весь народ Израильский пошел вслед за Иоавом преследовать Савея, сына Бихри.",
+        "NEO": "Lorsqu’il fut ôté de la route, chacun passa après Joab, à la poursuite de Séba, fils de Bochri.",
+        "NAB": "When he had been removed from the road, everyone went on after Joab in pursuit of Sheba, son of Bichri.",
+        "VAT_ES": "Y una vez que lo apartó del camino, todos siguieron adelante detrás de Joab, para perseguir a Seba, hijo de Bicrí.",
+        "CEI": "Quando esso fu tolto dalla strada, tutti passarono al seguito di Ioab per dare la caccia a Sèba, figlio di Bicrì."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַֽ/יַּעֲבֹ֞ר בְּ/כָל שִׁבְטֵ֣י יִשְׂרָאֵ֗ל אָבֵ֛לָ/ה וּ/בֵ֥ית מַעֲכָ֖ה וְ/כָל הַ/בֵּרִ֑ים ו/יקלהו וַ/יִּקָּ֣הֲל֔וּ וַ/יָּבֹ֖אוּ אַף אַחֲרָֽי/ו׃",
+        "LXX": "καὶ διῆλθεν ἐν πάσαις φυλαῖς Ἰσραὴλ εἰς Ἀβὲλ καὶ εἰς Βαιθμαχά, καὶ πάντες ἐν Χαρρεὶ καὶ ἐξεκκλησιάσθησαν· καὶ ἦλθεν κατόπισθεν αὐτοῦ.",
+        "VUL": "Porro ille transierat per omnes tribus Israël in Abelam et Bethmaacha : omnesque viri electi congregati fuerant ad eum.",
+        "SYN": "А он прошел чрез все колена Израильские до Авела-Беф-Мааха и чрез весь Берим; и [все жители городов] собирались и шли за ним.",
+        "NEO": "Joab traversa toutes les tribus d’Israël jusqu’à Abel et Beth-Maacha, et tous les hommes d’élite se rassemblèrent et le suivirent.",
+        "NAB": "Sheba passed through all the tribes of Israel to Abel Beth-maacah. Then all the Bichrites assembled and they too entered the city after him.",
+        "VAT_ES": "Seba recorrió todas las tribus de Israel hasta Abel Bet Maacá, y todos los del clan de Bicrí se reunieron y también lo siguieron.",
+        "CEI": "Attraversarono il territorio di tutte le tribù d'Israele fino ad Abel-Bet-Maacà, dove tutti quelli della famiglia di Bicrì erano stati convocati ed erano entrati al seguito di Sèba."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֜אוּ וַ/יָּצֻ֣רוּ עָלָ֗י/ו בְּ/אָבֵ֨לָ/ה֙ בֵּ֣ית הַֽמַּעֲכָ֔ה וַ/יִּשְׁפְּכ֤וּ סֹֽלְלָה֙ אֶל הָ/עִ֔יר וַֽ/תַּעֲמֹ֖ד בַּ/חֵ֑ל וְ/כָל הָ/עָם֙ אֲשֶׁ֣ר אֶת יוֹאָ֔ב מַשְׁחִיתִ֖ם לְ/הַפִּ֥יל הַ/חוֹמָֽה׃",
+        "LXX": "καὶ παρεγενήθησαν καὶ ἐπολιόρκουν ἐπ’ αὐτὸν ἐν Ἀβὲλ τὴν Βαιθμαχά, καὶ ἐξέχεαν πρόσχωμα πρὸς τὴν πόλιν καὶ ἔστη ἐν τῷ προτειχίσματι· καὶ πᾶς ὁ λαὸς ὁ μετὰ Ἰωὰβ ἐνοοῦσαν καταβαλεῖν τὸ τεῖχος·",
+        "VUL": "Venerunt itaque, et oppugnabant eum in Abela et in Bethmaacha, et circumdederunt munitionibus civitatem, et obsessa est urbs : omnis autem turba quæ erat cum Joab, moliebatur destruere muros.",
+        "SYN": "И пришли и осадили его в Авеле-Беф-Маахе; и насыпали вал пред городом и подступили к стене, и все люди, бывшие с Иоавом, старались разрушить стену.",
+        "NEO": "Ils vinrent assiéger Séba dans Abel-Beth-Maacha, et ils élevèrent contre la ville une terrasse, qui atteignait le rempart ; et tout le peuple qui était avec Joab s’efforçait à faire tomber la muraille.",
+        "NAB": "So David's servants came and besieged him in Abel Beth-maacah. They threw up a mound against the city, and all the soldiers who were with Joab began battering the wall to throw it down.",
+        "VAT_ES": "Pero los otros fueron a sitiarlo en Abel Bet Maacá y levantaron contra la ciudad un terraplén que llegaba al antemuro. Como toda la tropa que estaba con Joab se puso a socavar el muro para hacerlo caer,",
+        "CEI": "Vennero dunque, assediarono Sèba in Abel-Bet-Maacà e innalzarono contro la città un terrapieno; tutto il popolo che era con Ioab scavava per demolire le mura."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/תִּקְרָ֛א אִשָּׁ֥ה חֲכָמָ֖ה מִן הָ/עִ֑יר שִׁמְע֤וּ שִׁמְעוּ֙ אִמְרוּ נָ֣א אֶל יוֹאָ֔ב קְרַ֣ב עַד הֵ֔נָּה וַ/אֲדַבְּרָ֖ה אֵלֶֽי/ךָ׃",
+        "LXX": "καὶ ἐβόησεν γυνὴ σοφὴ ἐκ τοῦ τείχους καὶ εἶπεν Ἀκούσατε ἀκούσατε, εἴπατε δὴ πρὸς Ἰωάβ Ἔγγισον ἕως ὧδε, καὶ λαλήσω πρὸς αὐτόν.",
+        "VUL": "Et exclamavit mulier sapiens de civitate : Audite, audite : dicite Joab : Appropinqua huc, et loquar tecum.",
+        "SYN": "_Тогда_ одна умная женщина закричала со стены города: послушайте, послушайте, скажите Иоаву, чтоб он подошел сюда, и я поговорю с ним.",
+        "NEO": "Alors une femme avisée se mit à crier de la ville : « Ecoutez, écoutez, je vous prie ! Dites à Joab : Approche jusqu’ici, je veux te parler. »",
+        "NAB": "Then a wise woman from the city stood on the outworks and called out, \"Listen, listen! Tell Joab to come here, that I may speak with him.\"",
+        "VAT_ES": "una mujer sagaz gritó desde la ciudad: «&iexcl;Escuchen, escuchen! Díganle por favor a Joab que se acerque aquí, para que yo le hable».",
+        "CEI": "Allora una donna saggia gridò dalla città: \"Ascoltate, ascoltate! Dite a Ioab di avvicinarsi, gli voglio parlare!\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרַ֣ב אֵלֶ֔י/הָ וַ/תֹּ֧אמֶר הָ/אִשָּׁ֛ה הַ/אַתָּ֥ה יוֹאָ֖ב וַ/יֹּ֣אמֶר אָ֑נִי וַ/תֹּ֣אמֶר ל֗/וֹ שְׁמַע֙ דִּבְרֵ֣י אֲמָתֶ֔/ךָ וַ/יֹּ֖אמֶר שֹׁמֵ֥עַ אָנֹֽכִי׃",
+        "LXX": "καὶ προσήγγισεν πρὸς αὐτήν, καὶ εἶπεν ἡ γυνή Εἰ σὺ εἶ Ἰωάβ; ὁ δὲ εἶπεν Ἐγώ. εἶπεν δὲ αὐτῷ Ἄκουσον τοὺς λόγους τῆς δούλης σου· καὶ εἶπεν Ἰωάβ Ἀκούω ἐγώ εἰμι.",
+        "VUL": "Qui cum accessisset ad eam, ait illi : Tu es Joab ? Et ille respondit : Ego. Ad quem sic locuta est : Audi sermones ancillæ tuæ. Qui respondit : Audio.",
+        "SYN": "И подошел к ней Иоав, и сказала женщина: ты ли Иоав? И сказал: я. Она сказала: послушай слов рабы твоей. И сказал он: слушаю.",
+        "NEO": "Il s’approcha d’elle et la femme dit : « Es-tu Joab ? » Il répondit : « C’est moi. » Et elle lui dit : « Ecoute les paroles de ta servante. » Il répondit : « J’écoute. »",
+        "NAB": "When Joab had come near her, the woman said, \"Are you Joab?\" And he replied, \"Yes.\" She said to him, \"Listen to what your maidservant has to say.\" He replied. \"I am listening.\"",
+        "VAT_ES": "El se le acercó y la mujer le dijo: «&iquest;Tú eres Joab?». «Sí, soy yo», respondió él. Ella continuó diciendo: «&iexcl;Escucha las palabras de tu servidora!». Joab respondió: «Te escucho».",
+        "CEI": "Quando egli si fu avvicinato, la donna gli chiese: \"Sei tu Ioab?\". Egli rispose: \"Sì\". Allora essa gli disse: \"Ascolta la parola della tua schiava\". Egli rispose: \"Ascolto\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֖אמֶר לֵ/אמֹ֑ר דַּבֵּ֨ר יְדַבְּר֤וּ בָ/רִֽאשֹׁנָה֙ לֵ/אמֹ֔ר שָׁאֹ֧ל יְשָׁאֲל֛וּ בְּ/אָבֵ֖ל וְ/כֵ֥ן הֵתַֽמּוּ׃",
+        "LXX": "καὶ εἶπεν λέγουσα Λόγον ἐλάλησαν ἐν πρώτοις λέγοντες Ἠρωτημένος ἠρωτήθη ἐν τῇ Ἀβὲλ καὶ ἐν Δὰν εἰ ἐξέλιπον ἃ ἔθεντο οἱ πιστοὶ τοῦ Ἰσραήλ· ἐρῶντες ἐπερωτήσουσιν ἕνα ἐν Ἀβὲλ καὶ οὕτως, εἰ ἐξέλιπον.",
+        "VUL": "Rursumque illa : Sermo, inquit, dicebatur in veteri proverbio : Qui interrogant, interrogent in Abela : et sic perficiebant.",
+        "SYN": "Она сказала: прежде говаривали: \"кто хочет спросить, спроси в Авеле\"; и так решали дело. [Остались ли такие, которые положили пребыть верными Израильтянами? Пусть спросят в Авеле: остались ли?]",
+        "NEO": "Et elle dit : « Autrefois on avait coutume de dire : Que l’on consulte Abel, — et tout s’arrangeait ainsi.",
+        "NAB": "Then she went on to say: \"There is an ancient saying, 'Let them ask if they will in Abel",
+        "VAT_ES": "Entonces la mujer habló en estos términos: «Antes se solía decir: \"Que se consulte a los de Abel, y asunto concluido\".",
+        "CEI": "Riprese: \"Una volta si soleva dire: Si interroghi bene ad Abel e a Dan per sapere se sono venute meno le costumanze"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "אָנֹכִ֕י שְׁלֻמֵ֖י אֱמוּנֵ֣י יִשְׂרָאֵ֑ל אַתָּ֣ה מְבַקֵּ֗שׁ לְ/הָמִ֨ית עִ֤יר וְ/אֵם֙ בְּ/יִשְׂרָאֵ֔ל לָ֥/מָּה תְבַלַּ֖ע נַחֲלַ֥ת יְהוָֽה׃",
+        "LXX": "ἐγώ εἰμι εἰρηνικὰ τῶν στηριγμάτων Ἰσραήλ, σὺ δὲ ζητεῖς θανατῶσαι πόλιν καὶ μητρόπολιν ἐν Ἰσραήλ· ἵνα τί καταποντίζεις κληρονομίαν Κυρίου;",
+        "VUL": "Nonne ego sum quæ respondeo veritatem in Israël, et tu quæris subvertere civitatem et evertere matrem in Israël ? quare præcipitas hæreditatem Domini ?",
+        "SYN": "Я из мирных, верных _городов_ Израиля; а ты хочешь уничтожить город, и _притом_ мать [городов] в Израиле; для чего тебе разрушать наследие Господне?",
+        "NEO": "Je suis une des villes paisibles et fidèles en Israël ; toi, tu cherches à détruire une ville qui est une mère en Israël ! Pourquoi détruirais-tu l’héritage de \\+w Yahweh|strong=\"H3068\"\\+w** ! »",
+        "NAB": "or in Dan whether loyalty is finished or ended in Israel.' You are seeking to beat down a city that is a mother in Israel. Why do you wish to destroy the inheritance of the LORD?\"",
+        "VAT_ES": "Nosotros somos de lo más pacífico y leal en Israel. &iexcl;Y tú pretendes destruir una ciudad que es madre en Israel! &iquest;Por qué quieres aniquilar la herencia del Señor?».",
+        "CEI": "stabilite dai fedeli d'Israele. Tu cerchi di far perire una città che è una madre in Israele. Perché vuoi distruggere l'eredità del Signore?\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַן יוֹאָ֖ב וַ/יֹּאמַ֑ר חָלִ֤ילָ/ה חָלִ֨ילָ/ה֙ לִ֔/י אִם אֲבַלַּ֖ע וְ/אִם אַשְׁחִֽית׃",
+        "LXX": "καὶ ἀπεκρίθη Ἰωὰβ καὶ εἶπεν Ἵλεώς μοι ἵλεώς μοι, εἰ καταποντιῶ καὶ εἰ φθερῶ·",
+        "VUL": "Respondensque Joab, ait : Absit, absit hoc a me : non præcipito, neque demolior.",
+        "SYN": "И отвечал Иоав и сказал: да не будет этого от меня, чтобы я уничтожил или разрушил!",
+        "NEO": "Joab répondit : « Loin, bien loin de moi ! Je ne veux ni détruire ni ruiner ?",
+        "NAB": "Joab answered, \"Not at all, not at all! I do not wish to destroy or to ruin anything.",
+        "VAT_ES": "Pero Joab respondió: «&iexcl;Lejos de mí destruir y arruinar!",
+        "CEI": "Ioab rispose: \"Lungi, lungi da me l'idea di distruggere e di rovinare."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "לֹא כֵ֣ן הַ/דָּבָ֗ר כִּ֡י אִישׁ֩ מֵ/הַ֨ר אֶפְרַ֜יִם שֶׁ֧בַע בֶּן בִּכְרִ֣י שְׁמ֗/וֹ נָשָׂ֤א יָד/וֹ֙ בַּ/מֶּ֣לֶךְ בְּ/דָוִ֔ד תְּנֽוּ אֹת֣/וֹ לְ/בַדּ֔/וֹ וְ/אֵלְכָ֖ה מֵ/עַ֣ל הָ/עִ֑יר וַ/תֹּ֤אמֶר הָֽ/אִשָּׁה֙ אֶל יוֹאָ֔ב הִנֵּ֥ה רֹאשׁ֛/וֹ מֻשְׁלָ֥ךְ אֵלֶ֖י/ךָ בְּעַ֥ד הַ/חוֹמָֽה׃",
+        "LXX": "οὐχ οὗτος ὁ λόγος· ὅτι ἀνὴρ ἐξ ὄρους Ἐφράιμ, Σάβεε υἱὸς Βοχορεὶ ὄνομα αὐτοῦ, καὶ ἐπῆρεν τὴν χεῖρα αὐτοῦ ἐπὶ τὸν βασιλέα Δαυείδ. δότε αὐτόν μοι μόνον, καὶ ἀπελεύσομαι ἀπάνωθεν τῆς πόλεως. καὶ εἶπεν ἡ γυνὴ πρὸς Ἰωάβ Ἰδοὺ ἡ κεφαλὴ αὐτοῦ ῥιφήσεται πρὸς σὲ διὰ τοῦ τείχους.",
+        "VUL": "Non sic se habet res, sed homo de monte Ephraim, Seba filius Bochri cognomine, levavit manum suam contra regem David : tradite illum solum, et recedemus a civitate. Et ait mulier ad Joab : Ecce caput ejus mittetur ad te per murum.",
+        "SYN": "Это не так; но человек с горы Ефремовой, по имени Савей, сын Бихри, поднял руку свою на царя Давида; выдайте мне его одного, и я отступлю от города. И сказала женщина Иоаву: вот, голова его _будет_ тебе брошена со стены.",
+        "NEO": "La chose n’est pas ainsi. Mais un homme de la montagne d’Ephraïm, nommé Séba, fils de Bochri, a levé sa main contre le roi David ; livrez-le, lui seul, et je m’éloignerai de la ville. » La femme dit à Joab : « Voici que sa tête te sera jetée par-dessus la muraille. »",
+        "NAB": "That is not the case at all. A man named Sheba, son of Bichri, from the hill country of Ephraim has rebelled against King David. Surrender him alone, and I will withdraw from the city.\" Then the woman said to Joab, \"His head shall be thrown to you across the wall.\"",
+        "VAT_ES": "No se trata de eso; lo que pasa es que un hombre de la montaña de Efraím, llamado Seba, hijo de Bicrí, ha alzado su mano contra el rey David. Entréguenlo a él solo, y yo me retiraré de la ciudad». La mujer dijo a Joab: «En seguida te arrojarán su cabeza por encima del muro».",
+        "CEI": "La questione è diversa: un uomo delle montagne di Efraim, chiamato Sèba, figlio di Bicrì, ha alzato la mano contro il re Davide. Consegnatemi lui solo e io mi allontanerò dalla città\". La donna disse a Ioab: \"Ecco, la sua testa ti sarà gettata dall'alto delle mura\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/תָּבוֹא֩ הָ/אִשָּׁ֨ה אֶל כָּל הָ/עָ֜ם בְּ/חָכְמָתָ֗/הּ וַֽ/יִּכְרְת֞וּ אֶת רֹ֨אשׁ שֶׁ֤בַע בֶּן בִּכְרִי֙ וַ/יַּשְׁלִ֣כוּ אֶל יוֹאָ֔ב וַ/יִּתְקַע֙ בַּ/שּׁוֹפָ֔ר וַ/יָּפֻ֥צוּ מֵֽ/עַל הָ/עִ֖יר אִ֣ישׁ לְ/אֹהָלָ֑י/ו וְ/יוֹאָ֛ב שָׁ֥ב יְרוּשָׁלִַ֖ם אֶל הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ εἰσῆλθεν ἡ γυνὴ πρὸς πάντα τὸν λαόν, καὶ ἐλάλησεν πρὸς πᾶσαν τὴν πόλιν ἐν τῇ σοφίᾳ αὐτῆς· καὶ ἀφεῖλεν τὴν κεφαλὴν Σάβεε υἱοῦ Βοχορεί, καὶ ἀφεῖλεν καὶ ἔβαλεν πρὸς Ἰωάβ. καὶ ἐσάλπισεν ἐν κερατίνῃ, καὶ διεσπάρησαν ἀπὸ τῆς πόλεως ἀπ’ αὐτοῦ ἀνὴρ εἰς τὰ σκηνώματα αὐτοῦ· καὶ Ἰωὰβ ἀπέστρεψεν εἰς Ἰερουσαλὴμ πρὸς τὸν βασιλέα.",
+        "VUL": "Ingressa est ergo ad omnem populum, et locuta est eis sapienter : qui abscissum caput Seba filii Bochri projecerunt ad Joab. Et ille cecinit tuba, et recesserunt ab urbe, unusquisque in tabernacula sua : Joab autem reversus est Jerusalem ad regem.",
+        "SYN": "И пошла женщина по всему народу со своим умным словом [и говорила ко всему городу, чтобы отсекли голову Савею, сыну Бихри]; и отсекли голову Савею, сыну Бихри, и бросили Иоаву. Тогда [Иоав] затрубил трубою, и разошлись от города все [люди] по своим шатрам; Иоав же возвратился в Иерусалим к царю.",
+        "NEO": "La femme alla vers tout le peuple et lui parla sagement ; et ils coupèrent la tête à Séba, fils de Bochri, et la jetèrent à Joab. Joab fit sonner de la trompette, et l’on se dispersa loin de la ville, chacun vers ses tentes ; et Joab retourna à Jérusalem vers le roi.",
+        "NAB": "She went to all the people with her advice, and they cut off the head of Sheba, son of Bichri, and threw it out to Joab. He then sounded the horn, and they scattered from the city to their own tents, while Joab returned to Jerusalem to the king.",
+        "VAT_ES": "La mujer se dirigió a todo el pueblo con tanta cordura, que ellos le cortaron la cabeza a Seba, hijo de Bicrí, y se la arrojaron a Joab. Este hizo sonar la trompeta y levantaron el asedio, yéndose cada uno a su carpa. Joab, por su parte, se volvió a Jerusalén, junto al rey.",
+        "CEI": "Allora la donna rientrò in città e parlò a tutto il popolo con saggezza; così quelli tagliarono la testa a Sèba, figlio di Bicrì, e la gettarono a Ioab. Egli fece suonare la tromba; tutti si dispersero lontano dalla città e ognuno andò alla propria tenda. Poi Ioab tornò a Gerusalemme presso il re."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/יוֹאָ֕ב אֶ֥ל כָּל הַ/צָּבָ֖א יִשְׂרָאֵ֑ל וּ/בְנָיָה֙ בֶּן יְה֣וֹיָדָ֔ע עַל ה/כרי הַ/כְּרֵתִ֖י וְ/עַל הַ/פְּלֵתִֽי׃",
+        "LXX": "Καὶ Ἰωὰβ πρὸς πάσῃ τῇ δυνάμει Ἰσραήλ, καὶ Βαναίας υἱὸς Ἀχειλοὺθ ἐπὶ τοῦ Χελεθθεὶ καὶ ἐπὶ τοῦ Φελεθθεί,",
+        "VUL": "Fuit ergo Joab super omnem exercitum Israël : Banaias autem filius Jojadæ super Cerethæos et Phelethæos :",
+        "SYN": "И был Иоав _поставлен_ над всем войском Израильским, а Ванея, сын Иодаев, -- над Хелефеями и над Фелефеями;",
+        "NEO": "Joab commandait toute l’armée d’Israël ; Banaïas, fils de Joïada, commandait les Céréthiens et les Phéléthiens ;",
+        "NAB": "Joab was in command of the whole army of Israel. Benaiah, son of Jehoiada, was in command of the Cherethites and Pelethites.",
+        "VAT_ES": "Joab comandaba todo el ejército de Israel; Benaías, hijo de Iehoiadá, estaba al frente de los queretos y peleteos.",
+        "CEI": "Ioab era a capo di tutto l'esercito d'Israele; Benaià, figlio di Ioiadà, era capo dei Cretei e dei Peletei;"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/אֲדֹרָ֖ם עַל הַ/מַּ֑ס וִ/יהוֹשָׁפָ֥ט בֶּן אֲחִיל֖וּד הַ/מַּזְכִּֽיר׃",
+        "LXX": "καὶ Ἀδωνειρὰμ ἐπὶ τοῦ φόρου, καὶ Ἰωσαφὰθ υἱὸς Ἀχειλοὺθ ἀναμιμνήσκων,",
+        "VUL": "Aduram vero super tributa : porro Josaphat filius Ahilud, a commentariis :",
+        "SYN": "Адорам -- над сбором податей; Иосафат, сын Ахилуда -- дееписателем;",
+        "NEO": "Aduram était préposé aux corvées ; Josaphat, fils d’Ahilud, était archiviste ; Siva était secrétaire ;",
+        "NAB": "Adoram was in charge of the forced labor. Jehoshaphat, son of Ahilud, was the chancellor.",
+        "VAT_ES": "Adoram era el encargado del reclutamiento de trabajadores; Josafat, hijo de Ajilud, el archivista;",
+        "CEI": "Adoràm sovrintendeva ai lavori forzati; Giosafat, figlio di Achilùd, era archivista;"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "ו/שיא וּ/שְׁוָ֖א סֹפֵ֑ר וְ/צָד֥וֹק וְ/אֶבְיָתָ֖ר כֹּהֲנִֽים׃",
+        "LXX": "καὶ Ἰησοῦς ὁ γραμματεύς, καὶ Σαδὼκ καὶ Ἀβιαθὰρ ἱερεῖς,",
+        "VUL": "Siva autem, scriba : Sadoc vero et Abiathar, sacerdotes.",
+        "SYN": "Суса -- писцом; Садок и Авиафар -- священниками;",
+        "NEO": "Sadoc et Abiathar étaient prêtres,",
+        "NAB": "Shawsha was the scribe. Zadok and Abiathar were priests.",
+        "VAT_ES": "Seiá, el secretario; Sadoc y Abiatar, los sacerdotes.",
+        "CEI": "Seraià era scriba; Zadòk ed Ebiatàr erano sacerdoti e anche Ira lo Iairita era ministro di Davide."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/גַ֗ם עִירָא֙ הַ/יָּ֣אִרִ֔י הָיָ֥ה כֹהֵ֖ן לְ/דָוִֽד׃",
+        "LXX": "καί γε Εἴρας ὁ Ἰαρεὶν ἦν ἱερεὺς τοῦ Δαυείδ.",
+        "VUL": "Ira autem Jairites erat sacerdos David.",
+        "SYN": "также и Ира Иаритянин был священником у Давида.",
+        "NEO": "et Ira le Jaïrite était aussi conseiller intime de David.",
+        "NAB": "Ira the Jairite was also David's priest.",
+        "VAT_ES": "También Irá, el jairita, era sacerdote de David."
+      }
+    }
+  }
+}

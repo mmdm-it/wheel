@@ -1,0 +1,460 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_026",
+  "book_key": "ECCLU",
+  "sequence": 26,
+  "chapter_in": {
+    "MT": 26,
+    "VUL": 26,
+    "LXX": 26
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Γυναικὸς ἀγαθῆς μακάριος ὁ ἀνήρ, καὶ ἀριθμὸς τῶν ἡμερῶν αὐτοῦ διπλάσιος.",
+        "VUL": "[Mulieris bonæ beatus vir :/ numerus enim annorum illius duplex./",
+        "SYN": "Счастлив муж доброй жены, и число дней его - сугубое.",
+        "NEO": "Heureux est le mari d’une femme vertueuse, et le nombre de ses jours sera doublé.",
+        "NAB": "Happy the husband of a good wife, twice-lengthened are his days;",
+        "VAT_ES": "&iexcl;Feliz el marido de una buena esposa: se duplicará el número de sus días!",
+        "CEI": "Beato il marito di una donna virtuosa; il numero dei suoi giorni sarà doppio."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "γυνὴ ἀνδρεία εὐφραίνει τὸν ἄνδρα αὐτῆς, καὶ τὰ ἔτη αὐτοῦ πληρώσει ἐν εἰρήνῃ.",
+        "VUL": "Mulier fortis oblectat virum suum,/ et annos vitæ illius in pace implebit./",
+        "SYN": "Жена добродетельная радует своего мужа и лета его исполнит миром;",
+        "NEO": "La femme forte est la joie de son mari, et il passe ses années dans la paix.",
+        "NAB": "A worthy wife brings joy to her husband, peaceful and full is his life.",
+        "VAT_ES": "La mujer hacendosa es la alegría de su marido y él vivirá en paz hasta el último de sus días.",
+        "CEI": "Una brava moglie è la gioia del marito, questi trascorrerà gli anni in pace."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "γυνὴ ἀγαθὴ μερὶς ἀγαθή, ἐν μερίδι φοβουμένων Κύριον δοθήσεται.",
+        "VUL": "Pars bona mulier bona,/ in parte timentium Deum dabitur viro pro factis bonis :/",
+        "SYN": "добрая жена - счастливая доля: она дается в удел боящимся Господа;",
+        "NEO": "La femme vertueuse est une bonne part ; elle sera donnée en partage à ceux qui craignent le Seigneur.",
+        "NAB": "A good wife is a generous gift bestowed upon him who fears the LORD;",
+        "VAT_ES": "Una buena esposa es una gran fortuna, reservada en suerte a los que temen al Señor:",
+        "CEI": "Una donna virtuosa è una buona sorte, viene assegnata a chi teme il Signore."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "πλουσίου δὲ καὶ πτωχοῦ καρδία ἀγαθή, ἐν παντὶ καιρῷ πρόσωπον ἱλαρόν.",
+        "VUL": "divitis autem et pauperis cor bonum,/ in omni tempore vultus illorum hilaris./",
+        "SYN": "с нею у богатого и бедного - сердце довольное и лице во всякое время веселое.",
+        "NEO": "Riche ou pauvre, son mari a le cœur joyeux, en tout temps son visage est gai.",
+        "NAB": "Be he rich or poor, his heart is content, and a smile is ever on his face.",
+        "VAT_ES": "sea rico o pobre, su corazón será dichoso y su rostro estará radiante en todo momento.",
+        "CEI": "Ricco o povero il cuore di lui ne gioisce, in ogni tempo il suo volto appare sereno."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "ἀπὸ τριῶν εὐλαβήθη ἡ καρδία μου, καὶ ἐπὶ τῷ τετάρτῳ προσώπῳ ἐδεήθην· διαβολὴν πόλεως, καὶ ἐκκλησίαν ὄχλου, καὶ καταψευσμόν, ὑπὲρ θάνατον πάντα μοχθηρά.",
+        "VUL": "A tribus timuit cor meum,/ et in quarto facies mea metuit :/",
+        "SYN": "Трех страшится сердце мое, а при четвертом я молюсь:",
+        "NEO": "Il y a trois choses que redoute mon cœur, et au sujet de la quatrième, je prie devant le Seigneur : les méchants propos de toute une ville, la malédiction de la foule et la calomnie : toutes ces choses me sont plus odieuses que la mort ;",
+        "NAB": "There are three things at which my heart quakes, a fourth before which I quail: Though false charges in public, trial before all the people, and lying testimony are harder to bear than death,",
+        "VAT_ES": "Hay tres cosas que me inspiran temor, y por la cuarta imploro misericordia: ciudad dividida, multitud amotinada y falsa acusación son más penosas que la muerte.",
+        "CEI": "Tre cose teme il mio cuore, per la quarta sono spaventato: una calunnia diffusa in città, un tumulto di popolo e una falsa accusa: tutto questo è peggiore della morte;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ἄλγος καρδίας καὶ πένθος γυνὴ ἀντίζηλος ἐπὶ γυναικί, καὶ μάστιξ γλώσσης πᾶσιν ἐπικοινωνοῦσα.",
+        "VUL": "delaturam civitatis, et collectionem populi :/",
+        "SYN": "городского злословия, возмущения черни и оболгания на смерть,- все это ужасно.",
+        "NEO": "mais la douleur du cœur et l’affliction, c’est une femme jalouse d’une autre, et le fouet d’une langue qui raconte à tous ses griefs.",
+        "NAB": "A jealous wife is heartache and mourning and a scourging tongue like the other three.",
+        "VAT_ES": "Pero pesadumbre y duelo es la mujer celosa de su rival, y en todo está presente el flagelo de la lengua.",
+        "CEI": "ma crepacuore e lutto è una donna gelosa di un'altra e il flagello della sua lingua si lega con tutti."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "βοοζύγιον σαλευόμενον γυνὴ πονηρά, ὁ κρατῶν αὐτῆς ὡς ὁ δρασσόμενος σκορπίου.",
+        "VUL": "calumniam mendacem super mortem omnia gravia :/",
+        "SYN": "Болезнь сердца и печаль - жена, ревнивая к другой жене,",
+        "NEO": "Une méchante épouse, c’est une paire de bœufs en désaccord ; celui qui la tient est pareil à celui qui a saisi un scorpion.",
+        "NAB": "A bad wife is a chafing yoke; he who marries her seizes a scorpion.",
+        "VAT_ES": "Un yugo mal ajustado es una mala mujer: tratar de sujetarla es agarrar un escorpión.",
+        "CEI": "Giogo di buoi sconnesso è una donna malvagia, colui che la domina è come chi acchiappa uno scorpione."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "ὀργὴ μεγάλη γυνὴ μέθυσος, καὶ ἀσχημοσύνην αὐτῆς οὐ συνκαλύψει.",
+        "VUL": "dolor cordis et luctus, mulier zelotypa./",
+        "SYN": "и бич языка ее, ко всем приражающийся.",
+        "NEO": "C’est un grand sujet de colère qu’une femme adonnée au vin ; elle ne voilera pas même sa honte.",
+        "NAB": "A drunken wife arouses great anger, for she does not hide her shame.",
+        "VAT_ES": "Una mujer bebedora provoca indignación: ella no podrá ocultar si ignominia.",
+        "CEI": "Gran motivo di sdegno una donna ubriaca, non riuscirà a nascondere la vergogna."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "πορνεία γυναικὸς ἐν μετεωρισμοῖς ὀφθαλμῶν, καὶ ἐν τοῖς βλεφάροις αὐτῆς γνωσθήσεται.",
+        "VUL": "In muliere zelotypa flagellum linguæ,/ omnibus communicans./",
+        "SYN": "Движущееся туда и сюда воловье ярмо - злая жена; берущий ее - то же, что хватающий скорпиона.",
+        "NEO": "A l’effronterie de son regard, au clignotement de ses paupières, on reconnaît l’impudicité d’une femme.",
+        "NAB": "By her eyelids and her haughty stare an unchaste wife can be recognized.",
+        "VAT_ES": "en el descaro de la mirada y en sus pupilas se reconoce la procacidad de una mujer.",
+        "CEI": "La scostumatezza di una donna è nell'eccitazione degli sguardi, si riconosce dalle sue occhiate."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ἐπὶ θυγατρὶ ἀδιατρέπτως στερέωσον φυλακήν, ἵνα μὴ εὑροῦσα ἄνεσιν ἑαυτῇ χρήσηται·",
+        "VUL": "Sicut boum jugum quod movetur, ita et mulier nequam :/ qui tenet illam quasi qui apprehendit scorpionem./",
+        "SYN": "Большая досада - жена, преданная пьянству, и она не скроет своего срама.",
+        "NEO": "Fais bonne garde auprès d’une fille indocile, de peur que, voyant ta négligence, elle ne se livre à la débauche.",
+        "NAB": "Keep a strict watch over an unruly wife, lest, finding an opportunity, she make use of it;",
+        "VAT_ES": "Redobla la guardia ante una joven atrevida, no sea que descubra una ocasión se aproveche.",
+        "CEI": "Fà buona guardia a una figlia libertina, perché non ne approfitti, se trova indulgenza."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ὀπίσω ἀναιδοῦς ὀφθαλμοῦ φύλαξαι, καὶ μὴ θαυμάσῃς ἐὰν εἰς σὲ πλημμελήσῃ·",
+        "VUL": "Mulier ebriosa ira magna, et contumelia :/ et turpitudo illius non tegetur./",
+        "SYN": "Наклонность женщины к блуду узнается по поднятию глаз и век ее.",
+        "NEO": "Garde-toi de suivre un œil impudent ; autrement ne t’étonne pas qu’il t’entraîne au péché.",
+        "NAB": "Follow close if her eyes are bold, and be not surprised if she betrays you:",
+        "VAT_ES": "Cuídate de las miradas provocativas y no te sorprendas si te incitan al mal.",
+        "CEI": "Guàrdati dal seguire un occhio impudente, non meravigliarti se ti spinge verso il male."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "ὡς διψῶν ὁδοιπόρος τὸ στόμα ἀνοίγει, καὶ ἀπὸ παντὸς ὕδατος τοῦ σύνεγγυς πίεται, κατέναντι παντὸς πασσάλου καθήσεται, καὶ ἔναντι βέλους ἀνοίξει φαρέτραν.",
+        "VUL": "Fornicatio mulieris in extollentia oculorum,/ et in palpebris illius agnoscetur./",
+        "SYN": "Над бесстыдною дочерью поставь крепкую стражу, чтобы она, улучив послабление, не злоупотребила собою.",
+        "NEO": "Comme le voyageur altéré ouvre sa bouche, et boit de toute eau qu’il rencontre, l’impudique s’assied devant chaque poteau, et devant la flèche ouvre son carquois.",
+        "NAB": "As a thirsty traveler with eager mouth drinks from any water that he finds, So she settles down before every tent peg and opens her quiver for every arrow.",
+        "VAT_ES": "Ella abre la boca como un viajero sediento y bebe toda el agua que se le ofrece; se sienta ante cualquier estaca y abre su aljaba a todas las flechas.",
+        "CEI": "Come un viandante assetato apre la bocca e beve qualsiasi acqua a lui vicina, così essa siede davanti a ogni palo e apre a qualsiasi freccia la farètra."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "χάρις γυναικὸς τέρψει τὸν ἄνδρα αὐτῆς, καὶ τὰ ὀστᾶ αὐτοῦ πιανεῖ ἡ ἐπιστήμη αὐτῆς.",
+        "VUL": "In filia non avertente se, firma custodiam,/ ne inventa occasione utatur se./",
+        "SYN": "Берегись бесстыдного глаза, и не удивляйся, если он согрешит против тебя:",
+        "NEO": "La grâce d’une femme fait la joie de son mari, et son intelligence répand la vigueur en ses os.",
+        "NAB": "A gracious wife delights her husband, her thoughtfulness puts flesh on his bones;",
+        "VAT_ES": "La gracia de una mujer deleita a su marido y su buen juicio lo llena de vigor.",
+        "CEI": "La grazia di una donna allieta il marito, la sua scienza gli rinvigorisce le ossa."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "δόσις Κυρίου γυνὴ σιγηρά, καὶ οὐκ ἔστιν ἀντάλλαγμα πεπαιδευμένης ψυχῆς·",
+        "VUL": "Ab omni irreverentia oculorum ejus cave,/ et ne mireris si te neglexerit./",
+        "SYN": "как томимый жаждою путник открывает уста и пьет всякую близкую воду,",
+        "NEO": "C’est un don de Dieu qu’une femme silencieuse, et rien n’est comparable à une femme bien élevée.",
+        "NAB": "A gift from the LORD is her governed speech, and her firm virtue is of surpassing worth.",
+        "VAT_ES": "Una mujer discreta es un don del Señor y no tiene precio la esposa bien educada.",
+        "CEI": "È un dono del Signore una donna silenziosa, non c'è compenso per una donna educata."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "χάρις ἐπὶ χάριτι γυνὴ αἰσχυντηρά, καὶ οὐκ ἔστιν σταθμὸς πᾶς ἄξιος ἐγκρατοῦς ψυχῆς.",
+        "VUL": "Sicut viator sitiens ad fontem os aperiet,/ et ab omni aqua proxima bibet,/ et contra omnem palum sedebit,/ et contra omnem sagittam aperiet pharetram donec deficiat./",
+        "SYN": "так она сядет напротив всякого шатра и пред стрелою откроет колчан.",
+        "NEO": "C’est une grâce au-dessus de toute grâce qu’une femme pudique, et aucun trésor ne vaut une femme chaste.",
+        "NAB": "Choicest of blessings is a modest wife, priceless her chaste person.",
+        "VAT_ES": "Una mujer pudorosa es la mayor de las gracias y no hay escala para medir a la que es dueña de sí misma.",
+        "CEI": "Grazia su grazia è una donna pudica, non si può valutare il peso di un'anima modesta."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ἥλιος ἀνατέλλων ἐν ὑψίστοις Κυρίου, καὶ κάλλος ἀγαθῆς γυναικὸς ἐν κόσμῳ οἰκίας αὐτοῦ·",
+        "VUL": "Gratia mulieris sedulæ delectabit virum suum,/ et ossa illius impinguabit./",
+        "SYN": "Любезность жены усладит ее мужа, и благоразумие ее утучнит кости его.",
+        "NEO": "Le soleil se lève dans les hauteurs du Seigneur : ainsi la beauté d’une femme brille dans sa maison bien ornée.",
+        "NAB": "Like the sun rising in the LORD'S heavens, the beauty of a virtuous wife is the radiance of her home.",
+        "VAT_ES": "Como el sol que se eleva por las alturas del Señor, así es el encanto de la buena esposa es una casa ordenada.",
+        "CEI": "Il sole risplende sulle montagne del Signore, la bellezza di una donna virtuosa adorna la sua casa."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "λύχνος ἐκλάμπων ἐπὶ λυχνίας ἁγίας, καὶ κάλλος προσώπου ἐπὶ ἡλικίᾳ στασίμῃ·",
+        "VUL": "Disciplina illius datum Dei est./",
+        "SYN": "Кроткая жена - дар Господа, и нет цены благовоспитанной душе.",
+        "NEO": "Comme le flambeau qui luit sur le chandelier sacré, ainsi est la beauté du visage sur une noble stature.",
+        "NAB": "Like the light which shines above the holy lampstand, are her beauty of face and graceful figure.",
+        "VAT_ES": "Como una lámpara que brilla sobre el candelabro sagrado, así es la belleza del rostro sobre un cuerpo esbelto.",
+        "CEI": "Lampada che arde sul candelabro santo, così la bellezza del volto su giusta statura."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "στύλοι χρύσεοι ἐπὶ βάσεως ἀργυρᾶς, καὶ πόδες ὡραῖοι ἐπὶ στέρνοις εὐσταθοῦς.",
+        "VUL": "Mulier sensata et tacita,/ non est immutatio eruditæ animæ./",
+        "SYN": "Благодать на благодать - жена стыдливая,",
+        "NEO": "Comme des colonnes d’or sur des bases d’argent, tels sont des pieds élégants sur des talons solides.",
+        "NAB": "Golden columns on silver bases are her shapely limbs and steady feet.",
+        "VAT_ES": "Columnas de oro sobre un zócalo de plata son las piernas hermosas sobres talones firmes.",
+        "CEI": "Colonne d'oro su base d'argento, tali sono gambe graziose su solidi piedi."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "Gratia super gratiam/ mulier sancta et pudorata./",
+        "SYN": "и нет достойной меры для воздержной души.",
+        "NEO": "Deux choses attristent mon cœur, et la troisième excite mon indignation : l’homme de guerre qui souffre de la pauvreté, les hommes intelligents qui sont l’objet du mépris ; celui qui passe de la justice au péché, le Seigneur le prépare pour l’épée.",
+        "NAB": "These two bring grief to my heart, and the third arouses my horror: A wealthy man reduced to want; illustrious men held in contempt; And the man who passes from justice to sin, for whom the LORD makes ready the sword.",
+        "CEI": "Due cose mi serrano il cuore, la terza mi provoca all'ira: un guerriero che languisca nella miseria, uomini saggi trattati con disprezzo, chi passa dalla giustizia al peccato; il Signore lo tiene pronto per la spada."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "Omnis autem ponderatio non est digna/ continentis animæ./",
+        "SYN": "Что солнце, восходящее на высотах Господних,",
+        "NEO": "Difficilement l’homme du négoce évitera la faute, et le marchand de vin ne sera pas exempt de péché.",
+        "NAB": "A merchant can hardly remain upright, nor a shopkeeper free from sin;",
+        "CEI": "A stento un commerciante sarà esente da colpe, un rivenditore non sarà immune dal peccato."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Sicut sol oriens mundo in altissimis Dei,/ sic mulieris bonæ species in ornamentum domus ejus./",
+        "SYN": "то красота доброй жены в убранстве дома ее;"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Lucerna splendens super candelabrum sanctum,/ et species faciei super ætatem stabilem./",
+        "SYN": "что светильник, сияющий на святом свещнике, то красота лица ее в зрелом возрасте;"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "Columnæ aureæ super bases argenteas,/ et pedes firmi super plantas stabilis mulieris./",
+        "SYN": "что золотые столбы на серебряном основании, то прекрасные ноги ее на твердых пятах."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Fundamenta æterna supra petram solidam,/ et mandata Dei in corde mulieris sanctæ.]",
+        "SYN": "От двух скорбело сердце мое, а при третьем возбуждалось во мне негодование:"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "[In duobus contristatum est cor meum,/ et in tertio iracundia mihi advenit :/",
+        "SYN": "если воин терпит от бедности, и разумные мужи бывают в пренебрежении;"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "vir bellator deficiens per inopiam ;/ et vir sensatus contemptus ;/",
+        "SYN": "и если кто обращается от праведности ко греху, Господь уготовит того на меч."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "et qui transgreditur a justitia ad peccatum :/ Deus paravit eum ad rhomphæam.]",
+        "SYN": "Купец едва может избежать погрешности, а корчемник не спасется от греха."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "Ἐπὶ δυσὶ λελύπηται ἡ καρδία μου, καὶ ἐπὶ τῷ τρίτῳ θυμός μοι ἐπῆλθεν· ἀνὴρ πολεμιστὴς ὑστερῶν δι’ ἔνδειαν, καὶ ἄνδρες συνετοὶ ἐὰν σκυβαλισθῶσιν, ἐπανάγων ἀπὸ δικαιοσύνης ἐπὶ ἁμαρτίαν· ὁ κύριος ἑτοιμάσει εἰς ῥομφαίαν αὐτόν.",
+        "VUL": "[Duæ species difficiles et periculosæ mihi apparuerunt :/ difficile exuitur negotians a negligentia,/ et non justificabitur caupo a peccatis labiorum.]",
+        "VAT_ES": "Hay dos cosas que me entristecen y por una tercera se enciende mi enojo: un guerrero sumido en la indigencia, los hombres inteligentes tratados con desprecio y el que vuelve de la justicia al pecado: a este, el Señor lo destina a la espada."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "Μόλις ἐξελεῖται ἔμπορος ἀπὸ πλημμελείας, καὶ οὐ δικαιωθήσεται κάπηλος ἀπὸ ἁμαρτίας.",
+        "VAT_ES": "Difícilmente un comerciante se libra de incurrir en falta, y un negociante no estará exento de pecado."
+      }
+    }
+  }
+}

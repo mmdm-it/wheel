@@ -1,0 +1,393 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOB_018",
+  "book_key": "IOB",
+  "sequence": 18,
+  "chapter_in": {
+    "MT": 18,
+    "VUL": 18,
+    "LXX": 18
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ֭/יַּעַן בִּלְדַּ֥ד הַ/שֻּׁחִ֗י וַ/יֹּאמַֽר׃",
+        "LXX": "Ὑπολαβὼν δὲ Βαλδὰδ ὁ Σαυχίτης λέγει",
+        "VUL": "Respondens autem Baldad Suhites, dixit :",
+        "SYN": "И отвечал Вилдад Савхеянин и сказал:",
+        "NEO": "Alors Baldad de Suhé prit la parole et dit :",
+        "NAB": "Then Bildad the Shuhite replied and said:",
+        "VAT_ES": "Bildad de Súaj respondió, diciendo:",
+        "CEI": "Bildad il Suchita prese a dire:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עַד אָ֤נָה תְּשִׂימ֣וּ/ן קִנְצֵ֣י לְ/מִלִּ֑ין תָּ֝בִ֗ינוּ וְ/אַחַ֥ר נְדַבֵּֽר׃",
+        "LXX": "Μέχρι τίνος οὐ παύσῃ; ἐπίσχες, ἵνα καὶ αὐτοὶ λαλήσωμεν.",
+        "VUL": "[Usque ad quem finem verba jactabitis ?/ intelligite prius, et sic loquamur./",
+        "SYN": "когда же положите вы конец таким речам? обдумайте, и потом будем говорить.",
+        "NEO": "Quand donc mettrez-vous un terme à ces discours ? Ayez de l’intelligence, puis nous parlerons.",
+        "NAB": "When will you put an end to words? Reflect, and then we can have discussion.",
+        "VAT_ES": "&iquest;Hasta cuándo nos impedirás hablar? Reflexiona, y luego hablaremos.",
+        "CEI": "Quando porrai fine alle tue chiacchiere? Rifletti bene e poi parleremo."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "מַ֭דּוּעַ נֶחְשַׁ֣בְנוּ כַ/בְּהֵמָ֑ה נִ֝טְמִ֗ינוּ בְּ/עֵינֵי/כֶֽם׃",
+        "LXX": "διὰ τί ὥσπερ τετράποδα σεσιωπήκαμεν ἐναντίον σου;",
+        "VUL": "Quare reputati sumus ut jumenta,/ et sorduimus coram vobis ?/",
+        "SYN": "Зачем считаться нам за животных и быть униженными в собственных глазах ваших?",
+        "NEO": "Pourquoi nous regardez-vous comme des brutes, et sommes-nous stupides à vos yeux ?",
+        "NAB": "Why are we accounted like the beasts, their equals in your sight?",
+        "VAT_ES": "&iquest;Por qué seremos tenidos por animales y pasaremos por torpes ante tus ojos?",
+        "CEI": "Perché considerarci come bestie, ci fai passare per bruti ai tuoi occhi?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "טֹֽרֵ֥ף נַפְשׁ֗/וֹ בְּ/אַ֫פּ֥/וֹ הַ֭/לְמַעַנְ/ךָ תֵּעָ֣זַב אָ֑רֶץ וְ/יֶעְתַּק צ֝֗וּר מִ/מְּקֹמֽ/וֹ׃",
+        "LXX": "κέχρηταί σοι ὀργή. τί γάρ; ἐὰν σὺ ἀποθάνῃς, ἀοίκητος ἡ ὑπ’ οὐρανόν; ἢ καταστραφήσεται ὄρη ἐκ θεμελίων;",
+        "VUL": "Qui perdis animam tuam in furore tuo,/ numquid propter te derelinquetur terra,/ et transferentur rupes de loco suo ?/",
+        "SYN": "_О_ _ты,_ раздирающий душу твою в гневе твоем! Неужели для тебя опустеть земле, и скале сдвинуться с места своего?",
+        "NEO": "Toi qui te déchires dans ta fureur, veux-tu qu’à cause de toi la terre devienne déserte, que le rocher soit transporté hors de sa place ?",
+        "NAB": "You who tear yourself in your anger, shall the earth be neglected on your account (or the rock be moved out of its place)?",
+        "VAT_ES": "Tú, que te desgarras en tu enojo: &iquest;acaso la tierra quedará desierta por tu causa o la roca será removida de su sitio?",
+        "CEI": "Tu che ti rodi l'anima nel tuo furore, forse per causa tua sarà abbandonata la terra e le rupi si staccheranno dal loro posto?"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "גַּ֤ם א֣וֹר רְשָׁעִ֣ים יִדְעָ֑ךְ וְ/לֹֽא יִ֝גַּ֗הּ שְׁבִ֣יב אִשּֽׁ/וֹ׃",
+        "LXX": "καὶ φῶς ἀσεβῶν σβεσθήσεται, καὶ οὐκ ἀποβήσεται αὐτῶν ἡ φλόξ.",
+        "VUL": "Nonne lux impii extinguetur,/ nec splendebit flamma ignis ejus ?/",
+        "SYN": "Да, свет у беззаконного потухнет, и не останется искры от огня его.",
+        "NEO": "Oui, la lumière du méchant s’éteindra, et la flamme de son foyer cessera de briller.",
+        "NAB": "Truly, the light of the wicked is extinguished; no flame brightens his hearth.",
+        "VAT_ES": "Sí, la luz del malvado se extingue y la llama de su fuego no brilla más.",
+        "CEI": "Certamente la luce del malvagio si spegnerà e più non brillerà la fiamma del suo focolare."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "א֭וֹר חָשַׁ֣ךְ בְּ/אָהֳל֑/וֹ וְ֝/נֵר֗/וֹ עָלָ֥י/ו יִדְעָֽךְ׃",
+        "LXX": "τὸ φῶς αὐτοῦ σκότος ἐν διαίτῃ, ὁ δὲ λύχνος αὐτῷ σβεσθήσεται.",
+        "VUL": "Lux obtenebrescet in tabernaculo illius,/ et lucerna quæ super eum est extinguetur./",
+        "SYN": "Померкнет свет в шатре его, и светильник его угаснет над ним.",
+        "NEO": "Le jour s’obscurcira sous sa tente, sa lampe s’éteindra au-dessus de lui.",
+        "NAB": "The light is darkened in his tent; in spite of him, his lamp goes out.",
+        "VAT_ES": "La luz se oscurece en su carpa y su lámpara se apaga sobre él.",
+        "CEI": "La luce si offuscherà nella sua tenda e la lucerna si estinguerà sopra di lui."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יֵֽ֭צְרוּ צַעֲדֵ֣י אוֹנ֑/וֹ וְֽ/תַשְׁלִיכֵ֥/הוּ עֲצָתֽ/וֹ׃",
+        "LXX": "θηρεύσαισαν ἐλάχιστοι τὰ ὑπάρχοντα αὐτοῦ, σφάλαι δὲ αὐτοῦ ἡ βουλή.",
+        "VUL": "Arctabuntur gressus virtutis ejus,/ et præcipitabit eum consilium suum./",
+        "SYN": "Сократятся шаги могущества его, и низложит его собственный замысл его,",
+        "NEO": "Ses pas si fermes seront à l’étroit, son propre conseil précipite sa chute.",
+        "NAB": "His vigorous steps are hemmed in, and his own counsel casts him down.",
+        "VAT_ES": "Se acortan sus pasos vigorosos, su propio designio lo hace tropezar.",
+        "CEI": "Il suo energico passo s'accorcerà e i suoi progetti lo faran precipitare,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּֽי שֻׁלַּ֣ח בְּ/רֶ֣שֶׁת בְּ/רַגְלָ֑י/ו וְ/עַל שְׂ֝בָכָ֗ה יִתְהַלָּֽךְ׃",
+        "LXX": "ἐμβέβληται δὲ ὁ ποὺς αὐτοῦ ἐν παγίδι· ἐν δικτύῳ ἑλιχθείη.",
+        "VUL": "Immisit enim in rete pedes suos,/ et in maculis ejus ambulat./",
+        "SYN": "ибо он попадет в сеть своими ногами и по тенетам ходить будет.",
+        "NEO": "Ses pieds le jettent dans les rets, il marche sur le piège.",
+        "NAB": "For he rushes headlong into a net, and he wanders into a pitfall.",
+        "VAT_ES": "Porque sus pies lo meten en una trampa y va caminando entre redes:",
+        "CEI": "poiché incapperà in una rete con i suoi piedi e sopra un tranello camminerà."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "יֹאחֵ֣ז בְּ/עָקֵ֣ב פָּ֑ח יַחֲזֵ֖ק עָלָ֣י/ו צַמִּֽים׃",
+        "LXX": "ἔλθοισαν δὲ ἐπ’ αὐτὸν παγίδες· ⸆ κατισχύσει ἐπ’ αὐτὸν διψῶντας.",
+        "VUL": "Tenebitur planta illius laqueo,/ et exardescet contra eum sitis./",
+        "SYN": "Петля зацепит за ногу его, и грабитель уловит его.",
+        "NEO": "Le filet saisit ses talons ; il est serré dans ses nœuds.",
+        "NAB": "A trap seizes him by the heel, and a snare lays hold of him.",
+        "VAT_ES": "un lazo le aprisiona el talón y un cepo se cierra sobre él.",
+        "CEI": "Un laccio l'afferrerà per il calcagno, un nodo scorsoio lo stringerà."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "טָמ֣וּן בָּ/אָ֣רֶץ חַבְל֑/וֹ וּ֝/מַלְכֻּדְתּ֗/וֹ עֲלֵ֣י נָתִֽיב׃",
+        "LXX": "κέκρυπται ἐν τῇ γῇ σχοινίον αὐτοῦ, καὶ ἡ σύλλημψις αὐτοῦ ἐπὶ τρίβων.",
+        "VUL": "Abscondita est in terra pedica ejus,/ et decipula illius super semitam./",
+        "SYN": "Скрытно разложены по земле силки для него и западни на дороге.",
+        "NEO": "Pour lui les lacs sont cachés sous terre, et la trappe est sur son sentier.",
+        "NAB": "A noose for him is hid on the ground, and the toils for him on the way.",
+        "VAT_ES": "Lo espera una cuerda oculta en el suelo y una trampa tendida sobre el camino.",
+        "CEI": "Gli è nascosta per terra una fune e gli è tesa una trappola sul sentiero."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "סָ֭בִיב בִּֽעֲתֻ֣/הוּ בַלָּה֑וֹת וֶ/הֱפִיצֻ֥/הוּ לְ/רַגְלָֽי/ו׃",
+        "LXX": "κύκλῳ ὀλέσαισαν αὐτὸν ὀδύναι· πολλοὶ δὲ περὶ πόδα αὐτοῦ ἔλθοισαν ἐν λιμῷ στενῷ,",
+        "VUL": "Undique terrebunt eum formidines,/ et involvent pedes ejus./",
+        "SYN": "Со всех сторон будут страшить его ужасы и заставят его бросаться туда и сюда.",
+        "NEO": "De tous côtés des terreurs l’assiègent, et le poursuivent pas à pas.",
+        "NAB": "On every side terrors affright him; they harry him at each step.",
+        "VAT_ES": "Lo asaltan terrores por todas partes y lo amenazan a cada paso.",
+        "CEI": "Lo spaventano da tutte le parti terrori e lo inseguono alle calcagna."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "יְהִי רָעֵ֥ב אֹנ֑/וֹ וְ֝/אֵ֗יד נָכ֥וֹן לְ/צַלְעֽ/וֹ׃",
+        "LXX": "πτῶμα δὲ αὐτῷ ἡτοίμασται ἐξαίσιον.",
+        "VUL": "Attenuetur fame robur ejus,/ et inedia invadat costas illius./",
+        "SYN": "Истощится от голода сила его, и гибель готова, сбоку у него.",
+        "NEO": "La disette est son châtiment, et la ruine est prête pour sa chute.",
+        "NAB": "Disaster is ready at his side,",
+        "VAT_ES": "Su vigor se convierte en hambre y la ruina permanece a su lado;",
+        "CEI": "Diventerà carestia la sua opulenza e la rovina è lì in piedi al suo fianco."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "יֹ֭אכַל בַּדֵּ֣י עוֹר֑/וֹ יֹאכַ֥ל בַּ֝דָּ֗י/ו בְּכ֣וֹר מָֽוֶת׃",
+        "LXX": "βρωθείησαν αὐτοῦ κλῶνες ποδῶν, κατέδεται δὲ τὰ ὡραῖα αὐτοῦ θάνατος.",
+        "VUL": "Devoret pulchritudinem cutis ejus ;/ consumat brachia illius primogenita mors./",
+        "SYN": "Съест члены тела его, съест члены его первенец смерти.",
+        "NEO": "La peau de ses membres est dévorée ; ses membres sont dévorés par le premier-né de la mort.",
+        "NAB": "the first-born of death consumes his limbs.",
+        "VAT_ES": "la enfermedad corroe su piel, el Primogénito de la Muerte devora sus miembros.",
+        "CEI": "Un malanno divorerà la sua pelle, roderà le sue membra il primogenito della morte."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "יִנָּתֵ֣ק מֵ֭/אָהֳל/וֹ מִבְטַח֑/וֹ וְ֝/תַצְעִדֵ֗/הוּ לְ/מֶ֣לֶךְ בַּלָּהֽוֹת׃",
+        "LXX": "ἐκραγείη δὲ ἐκ διαίτης αὐτοῦ ἴασις, σχοίη δὲ αὐτὸν ἀνάγκη αἰτίᾳ βασιλικῇ.",
+        "VUL": "Avellatur de tabernaculo suo fiducia ejus,/ et calcet super eum, quasi rex, interitus./",
+        "SYN": "Изгнана будет из шатра его надежда его, и это низведет его к царю ужасов.",
+        "NEO": "Il est arraché de sa tente, où il se croyait en sûreté ; on le traîne vers le Roi des frayeurs.",
+        "NAB": "Fiery destruction lodges in his tent, and marches him off to the king of terrors. He is plucked from the security of his tent;",
+        "VAT_ES": "Lo arrancan de la seguridad de su carpa y lo llevan ante el Rey de los terrores.",
+        "CEI": "Sarà tolto dalla tenda in cui fidava, per essere trascinato al re dei terrori!"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "תִּשְׁכּ֣וֹן בְּ֭/אָהֳל/וֹ מִ/בְּלִי ל֑/וֹ יְזֹרֶ֖ה עַל נָוֵ֣/הוּ גָפְרִֽית׃",
+        "LXX": "κατασκηνώσει ἐν τῇ σκηνῇ αὐτοῦ ἐν νυκτὶ αὐτοῦ, κατασπαρήσονται τὰ εὐπρεπῆ αὐτοῦ θείῳ.",
+        "VUL": "Habitent in tabernaculo illius socii ejus qui non est ;/ aspergatur in tabernaculo ejus sulphur./",
+        "SYN": "Поселятся в шатре его, потому что он уже не его; жилище его посыпано будет серою.",
+        "NEO": "Nul des siens n’habite dans sa tente, le soufre est semé sur sa demeure.",
+        "NAB": "over his abode brimstone is scattered.",
+        "VAT_ES": "El fuego se instala en su carpa y se esparce azufre sobre su morada.",
+        "CEI": "Potresti abitare nella tenda che non è più sua; sulla sua dimora si spargerà zolfo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "מִ֭/תַּחַת שָֽׁרָשָׁ֣י/ו יִבָ֑שׁוּ וּ֝/מִ/מַּ֗עַל יִמַּ֥ל קְצִירֽ/וֹ׃",
+        "LXX": "ὑποκάτωθεν αἱ ῥίζαι αὐτοῦ ξηρανθήσονται, καὶ ἐπάνωθεν ἐπιπεσεῖται θερισμὸς αὐτοῦ.",
+        "VUL": "Deorsum radices ejus siccentur :/ sursum autem atteratur messis ejus./",
+        "SYN": "Снизу подсохнут корни его, и сверху увянут ветви его.",
+        "NEO": "En bas, ses racines se dessèchent, en haut, ses rameaux sont coupés.",
+        "NAB": "Below, his roots dry up, and above, his branches wither.",
+        "VAT_ES": "Por debajo se secan sus raíces y por arriba se marchita su ramaje.",
+        "CEI": "Al di sotto, le sue radici si seccheranno, sopra, saranno tagliati i suoi rami."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "זִֽכְר/וֹ אָ֭בַד מִנִּי אָ֑רֶץ וְ/לֹא שֵׁ֥ם ל֝֗/וֹ עַל פְּנֵי חֽוּץ׃",
+        "LXX": "τὸ μνημόσυνον αὐτοῦ ἀπόλοιτο ἐκ γῆς, καὶ ὑπάρχει ὄνομα αὐτῷ ἐπὶ πρόσωπον ἐξωτέρω·",
+        "VUL": "Memoria illius pereat de terra,/ et non celebretur nomen ejus in plateis./",
+        "SYN": "Память о нем исчезнет с земли, и имени его не будет на площади.",
+        "NEO": "Sa mémoire a disparu de la terre, il n’a plus de nom dans la contrée.",
+        "NAB": "His memory perishes from the land, and he has no name on the earth.",
+        "VAT_ES": "Su recuerdo desaparece de la tierra y se borra su nombre en la región.",
+        "CEI": "Il suo ricordo sparirà dalla terra e il suo nome più non si udrà per la contrada."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "יֶ֭הְדְּפֻ/הוּ מֵ/א֣וֹר אֶל חֹ֑שֶׁךְ וּֽ/מִ/תֵּבֵ֥ל יְנִדֻּֽ/הוּ׃",
+        "LXX": "ἀπώσειεν αὐτὸν ἐκ φωτὸς εἰς σκότος.",
+        "VUL": "Expellet eum de luce in tenebras,/ et de orbe transferet eum./",
+        "SYN": "Изгонят его из света во тьму и сотрут его с лица земли.",
+        "NEO": "On le chasse de la lumière dans les ténèbres, on le bannit de l’univers.",
+        "NAB": "He is driven from light into darkness, and banished out of the world.",
+        "VAT_ES": "Lo arrojan de la luz a las tinieblas y lo arrastran fuera del mundo.",
+        "CEI": "Lo getteranno dalla luce nel buio e dal mondo lo stermineranno."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "לֹ֘א נִ֤ין ל֣/וֹ וְ/לֹא נֶ֣כֶד בְּ/עַמּ֑/וֹ וְ/אֵ֥ין שָׂ֝רִ֗יד בִּ/מְגוּרָֽי/ו׃",
+        "LXX": "οὐκ ἔσται ἐπίγνωστος ἐν λαῷ αὐτοῦ, οὐδὲ σεσωσμένος ἐν τῇ ὑπ’ οὐρανὸν ὁ οἶκος αὐτοῦ, ἀλλ’ ἐν τοῖς αὐτοῦ ζήσονται ἕτεροι.",
+        "VUL": "Non erit semen ejus, neque progenies in populo suo,/ nec ullæ reliquiæ in regionibus ejus./",
+        "SYN": "Ни сына его, ни внука не будет в народе его, и никого не останется в жилищах его.",
+        "NEO": "Il ne laisse ni descendance ni postérité dans sa tribu ; aucun survivant dans son séjour.",
+        "NAB": "He has neither son nor grandson among his people, nor any survior where once he dwelt.",
+        "VAT_ES": "No tiene estirpe ni posteridad en su pueblo, no quedan sobrevivientes donde él habitaba.",
+        "CEI": "Non famiglia, non discendenza avrà nel suo popolo, non superstiti nei luoghi della sua dimora."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "עַל י֭וֹמ/וֹ נָשַׁ֣מּוּ אַחֲרֹנִ֑ים וְ֝/קַדְמֹנִ֗ים אָ֣חֲזוּ שָֽׂעַר׃",
+        "LXX": "ἐπ’ αὐτῷ ἐστέναξαν ἔσχατοι, πρώτους δὲ ἔσχεν θαῦμα.",
+        "VUL": "In die ejus stupebunt novissimi,/ et primos invadet horror./",
+        "SYN": "О дне его ужаснутся потомки, и современники будут объяты трепетом.",
+        "NEO": "Les peuples de l’Occident sont stupéfaits de sa ruine, et ceux de l’Orient en sont saisis d’horreur.",
+        "NAB": "They who come after shall be appalled at his fate; they who went before are struck with horror.",
+        "VAT_ES": "El Occidente se estremece por su destino y el Oriente es presa del horror.",
+        "CEI": "Della sua fine stupirà l'occidente e l'oriente ne prenderà orrore."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "אַךְ אֵ֭לֶּה מִשְׁכְּנ֣וֹת עַוָּ֑ל וְ֝/זֶ֗ה מְק֣וֹם לֹא יָדַֽע אֵֽל׃",
+        "LXX": "οὗτοί εἰσιν οἱ οἶκοι ἀδίκων, οὗτος δὲ ὁ τόπος τῶν μὴ εἰδότων τὸν κύριον.",
+        "VUL": "Hæc sunt ergo tabernacula iniqui,/ et iste locus ejus qui ignorat Deum.]",
+        "SYN": "Таковы жилища беззаконного, и таково место того, кто не знает Бога.",
+        "NEO": "Telle est la demeure de l’impie, telle est la place de l’homme qui ne connaît pas Dieu.",
+        "NAB": "So is it then with the dwelling of the impious man, and such is the place of him who knows not God!",
+        "VAT_ES": "Sí, tales son las moradas del injusto, este es el lugar del que no conoce a Dios.",
+        "CEI": "Ecco qual è la sorte dell'iniquo: questa è la dimora di chi misconosce Dio."
+      }
+    }
+  }
+}

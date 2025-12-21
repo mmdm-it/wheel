@@ -1,0 +1,690 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DAN_014",
+  "book_key": "DAN",
+  "sequence": 14,
+  "chapter_in": {
+    "VUL": 14,
+    "LXX": 14
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "exists_in": [
+    "VUL",
+    "LXX"
+  ],
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "Erat autem Daniel conviva regis, et honoratus super omnes amicos ejus.",
+        "SYN": "Царь Астиаг приложился к отцам своим, и Кир, Персиянин, принял царство его.",
+        "NEO": "Le roi Astyage ayant été réuni à ses pères, Cyrus le Perse reçut le royaume.",
+        "NAB": "After King Astyages was laid with his fathers, Cyrus the Persian succeeded to his kingdom.",
+        "VAT_ES": "El rey Astiages fue a reunirse con sus padres y le sucedió Ciro el Persa.",
+        "CEI": "Il re Astiage si riunì ai suoi padri e gli succedette nel regno Ciro il Persiano."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "Erat quoque idolum apud Babylonios nomine Bel : et impendebantur in eo per dies singulos similæ artabæ duodecim, et oves quadraginta, vinique amphoræ sex.",
+        "SYN": "И Даниил жил вместе с царем и был славнее всех друзей его.",
+        "NEO": "Or Daniel mangeait à la table du roi, et il était honoré plus que tous ses autres amis.",
+        "NAB": "Daniel was the king's favorite and was held in higher esteem than any of the friends of the king.",
+        "VAT_ES": "Daniel vivía junto al rey, el cual lo estimaba más que a cualquier otro de sus amigos.",
+        "CEI": "Ora Daniele viveva accanto al re, ed era il più onorato di tutti gli amici del re."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "Rex quoque colebat eum, et ibat per singulos dies adorare eum : porro Daniel adorabat Deum suum. Dixitque ei rex : Quare non adoras Bel ?",
+        "SYN": "Был у Вавилонян идол, по имени Вил, и издерживали на него каждый день двадцать больших мер пшеничной муки, сорок овец и вина шесть мер.",
+        "NEO": "Il y avait chez les Babyloniens une idole nommée Bel ; on dépensait chaque jour pour elle douze artabes de farine, quarante brebis et six métrètes de vin.",
+        "NAB": "The Babylonians had an idol called Bel, and every day they provided for it six barrels of fine flour, forty sheep, and six measures of wine.",
+        "VAT_ES": "Había en Babilonia un ídolo llamado Bel, a quien se le ofrecía todos los días más de seiscientos kilos de harina, de la mejor calidad, cuarenta ovejas y más de doscientos litros de vino.",
+        "CEI": "I Babilonesi avevano un idolo chiamato Bel, al quale offrivano ogni giorno dodici sacchi di fior di farina, quaranta pecore e sei barili di vino."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "Qui respondens ait ei : Quia non colo idola manufacta, sed viventem Deum, qui creavit cælum, et terram, et habet potestatem omnis carnis.",
+        "SYN": "Царь чтил его и ходил каждый день поклоняться ему; Даниил же поклонялся Богу своему. И сказал ему царь: почему ты не поклоняешься Вилу?",
+        "NEO": "Le roi aussi la vénérait, et il allait chaque jour l’adorer ; mais Daniel adorait son Dieu.",
+        "NAB": "The king worshiped it and went every day to adore it; but Daniel adored only his God.",
+        "VAT_ES": "El rey veneraba al ídolo e iba todos los días a adorarlo; Daniel, en cambio, adoraba a su Dios.",
+        "CEI": "Anche il re venerava questo idolo e andava ogni giorno ad adorarlo. Daniele però adorava il suo Dio e perciò il re gli disse: \"Perché non adori Bel?\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Et dixit rex ad eum : Non videtur tibi esse Bel vivens deus ? an non vides quanta comedat et bibat quotidie ?",
+        "SYN": "Он отвечал: потому что я не поклоняюсь идолам, сделанным руками, но _поклоняюсь_ живому Богу, сотворившему небо и землю и владычествующему над всякою плотью.",
+        "NEO": "Le roi lui dit : « Pourquoi n’adores-tu pas Bel ? » Il lui répondit : « Parce que je ne vénère pas des idoles faites de main d’homme, mais le Dieu vivant qui a fait le ciel et la terre et qui a puissance sur toute chair. »",
+        "NAB": "When the king asked him, \"Why do you not adore Bel?\" Daniel replied, \"Because I worship not idols made with hands, but only the living God who made heaven and earth and has dominion over all mankind.\"",
+        "VAT_ES": "El rey le dijo: «&iquest;Por qué no adoras a Bel?» El le respondió: «Yo no venero ídolos hechos por la mano del hombre, sino sólo al Dios viviente que ha creado el cielo y la tierra y que tiene dominio sobre todo ser viviente».",
+        "CEI": "Daniele rispose: \"Io non adoro idoli fatti da mani d'uomo, ma soltanto il Dio vivo che ha fatto il cielo e la terra e che è signore di ogni essere vivente\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "Et ait Daniel arridens : Ne erres, rex : iste enim intrinsecus luteus est, et forinsecus æreus, neque comedit aliquando.",
+        "SYN": "Царь сказал: не думаешь ли ты, что Вил неживой бог? не видишь ли, сколько он ест и пьет каждый день?",
+        "NEO": "Le roi lui dit : « Est-ce que Bel ne te semble pas un être vivant ? Ne vois-tu pas tout ce qu’il mange et boit chaque jour ? »",
+        "NAB": "Then the king continued, \"You do not think Bel is a living god? Do you not see how much he eats and drinks every day?\"",
+        "VAT_ES": "Entonces dijo el rey: «&iquest;Tú no crees que Bel es un dios vivo? &iquest;No ves lo que come y bebe diariamente?».",
+        "CEI": "\"Non credi tu - aggiunse il re - che Bel sia un dio vivo? Non vedi quanto beve e mangia ogni giorno?\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Et iratus rex vocavit sacerdotes ejus, et ait eis : Nisi dixeritis mihi quis est qui comedat impensas has, moriemini.",
+        "SYN": "Даниил, улыбнувшись, сказал: не обманывайся, царь; ибо он внутри глина, а снаружи медь, и никогда ни ел, ни пил.",
+        "NEO": "Daniel répondit en souriant : « Ne t’y trompes pas, ô roi ; car il est de boue en dedans et d’airain à l’extérieur, et il n’a jamais rien mangé. »",
+        "NAB": "Daniel began to laugh. \"Do not be deceived, O king,\" he said; \"it is only clay inside and bronze outside; it has never taken any food or drink.\"",
+        "VAT_ES": "Daniel se puso a reír y le dijo: «No te engañes, rey, por dentro es de arcilla y por fuera de bronce, y no ha comido ni bebido jamás».",
+        "CEI": "Rispose Daniele ridendo: \"Non t'ingannare, o re: quell'idolo di dentro è d'argilla e di fuori è di bronzo e non ha mai mangiato né bevuto\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Si autem ostenderitis quoniam Bel comedat hæc, morietur Daniel, quia blasphemavit in Bel. Et dixit Daniel regi : Fiat juxta verbum tuum.",
+        "SYN": "Тогда царь, разгневавшись, призвал жрецов своих и сказал им: если вы не скажете мне, кто съедает все это, то умрете.",
+        "NEO": "Le roi irrité appela les prêtres de Bel et leur dit : « Si vous ne me dites pas qui est celui qui mange ces offrandes, vous mourrez ; mais si vous me démontrez que c’est Bel qui les mange, Daniel mourra, parce qu’il a blasphémé contre Bel. »",
+        "NAB": "Enraged, the king called his priests and said to them, \"Unless you tell me who it is that consumes these provisions, you shall die.",
+        "VAT_ES": "El rey se enfureció, mandó llamar a los sacerdotes de Bel y les dijo: «Si no me dicen quién consume este alimento ustedes morirán, pero si demuestran que es Bel el que lo come, morirá Daniel por haber blasfemado contra Bel».",
+        "CEI": "Il re s'indignò e convocati i sacerdoti di Bel, disse loro: \"Se voi non mi dite chi è che mangia tutto questo cibo, morirete; se invece mi proverete che è Bel che lo mangia, morirà Daniele, perché ha insultato Bel\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "Erant autem sacerdotes Bel septuaginta, exceptis uxoribus, et parvulis, et filiis.\\ Et venit rex cum Daniele in templum Bel.",
+        "SYN": "Если же вы докажете мне, что съедает это Вил, то умрет Даниил, потому что произнес хулу на Вила. И сказал Даниил царю: да будет по слову твоему.",
+        "NEO": "Or il y avait soixante-dix prêtres de Bel, sans compter leurs femmes et leurs enfants. Et le roi se rendit avec Daniel au temple de Bel.",
+        "NAB": "But if you can show that Bel consumes them, Daniel shall die for blaspheming Bel.\" Daniel said to the king, \"Let it be as you say!\"",
+        "VAT_ES": "Daniel dijo al rey: «Que se haga según tu palabra». Los sacerdotes eran setenta, sin contar las mujeres y los niños.",
+        "CEI": "Daniele disse al re: \"Sia fatto come tu hai detto\". Isacerdoti di Bel erano settanta, senza contare le mogli e i figli."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Et dixerunt sacerdotes Bel : Ecce nos egredimur foras : et tu, rex, pone escas, et vinum misce, et claude ostium, et signa annulo tuo :",
+        "SYN": "Жрецов Вила было семьдесят, кроме жен и детей.",
+        "NEO": "Les prêtres de Bel dirent : « Voici que nous allons sortir ; toi, ô roi, fais placer les mets et apporter le vin, après l’avoir mélangé ; puis ferme la porte, et scelle-la avec ton anneau.",
+        "NAB": "There were seventy priests of Bel, besides their wives and children. When the king went with Daniel into the temple of Bel,",
+        "VAT_ES": "El rey fue con Daniel al templo de Bel,",
+        "CEI": "Il re si recò insieme con Daniele al tempio di Bel"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "et cum ingressus fueris mane, nisi inveneris omnia comesta a Bel, morte moriemur, vel Daniel qui mentitus est adversum nos.",
+        "SYN": "И пришел царь с Даниилом в храм Вила, и сказали жрецы Вила: вот, мы выйдем вон, а ты, царь, поставь пищу и, налив вина, запри двери и запечатай перстнем твоим.",
+        "NEO": "Et quand tu entreras demain matin, si tu ne trouves pas que tout a été mangé par Bel, nous mourrons ; ou bien ce sera Daniel, qui a menti contre nous. »",
+        "NAB": "the priests of Bel said, \"See, we are going to leave. Do you, O king, set out the food and prepare the wine; then shut the door and seal it with your ring.",
+        "VAT_ES": "y los sacerdotes de Bel le dijeron: «Nosotros vamos a salir de aquí y tú, rey, vas a servir la comida y a ofrecer el vino aromatizado; luego cierra la puerta y séllala con tu anillo. Cuando vengas mañana por la mañana, si no compruebas que Bel se lo ha comido todo, moriremos nosotros; si no, morirá Daniel, que ha mentido contra nosotros».",
+        "CEI": "e i sacerdoti di Bel gli dissero: \"Ecco, noi usciamo di qui e tu, re, disponi le vivande e mesci il vino temperato; poi chiudi la porta e sigillala con il tuo anello. Se domani mattina, venendo, tu riscontrerai che tutto non è stato mangiato da Bel, moriremo noi, altrimenti morirà Daniele che ci ha calunniati\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "Contemnebant autem, quia fecerant sub mensa absconditum introitum, et per illum ingrediebantur semper, et devorabant ea.",
+        "SYN": "И если завтра ты придешь и не найдешь, что все съедено Вилом, мы умрем, или Даниил, который солгал на нас.",
+        "NEO": "Ils songeaient qu’ils avaient fait sous la table une ouverture secrète, par laquelle ils s’introduisaient toujours et venaient consommer les offrandes.",
+        "NAB": "If you do not find that Bel has eaten it all when you return in the morning, we are to die; otherwise Daniel shall die for his lies against us.\"",
+        "VAT_ES": "Ellos estaban seguros de sí mismos, porque habían hecho debajo de la mesa una entrada secreta, por donde penetraban todos los días para llevarse las ofrendas.",
+        "CEI": "Essi però non se ne preoccuparono perché avevano praticato un passaggio segreto sotto la tavola per il quale passavano abitualmente e consumavano tutto."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "Factum est igitur postquam egressi sunt illi, rex posuit cibos ante Bel : præcepit Daniel pueris suis, et attulerunt cinerem, et cribravit per totum templum coram rege : et egressi clauserunt ostium, et signantes annulo regis abierunt.",
+        "SYN": "Они не обращали на это внимания, потому что под столом сделали потаенный вход, и им всегда входили, и съедали это.",
+        "NEO": "Lorsqu’ils furent sortis et que le roi eut fait mettre les aliments devant Bel, Daniel commanda à ses serviteurs d’apporter de la cendre, et il la répandirent par tout le temple en présence du roi seul ; puis ils sortirent, fermèrent la porte en la scellant avec l’anneau du roi, et s’en allèrent.",
+        "NAB": "They were not perturbed, because under the table they had made a secret entrance through which they always came in to consume the food.",
+        "VAT_ES": "Cuando salieron, el rey hizo poner los alimentos delante de Bel.",
+        "CEI": "Dopo che essi se ne furono andati, il re fece porre i cibi davanti a Bel:"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Sacerdotes autem ingressi sunt nocte juxta consuetudinem suam, et uxores et filii eorum, et comederunt omnia, et biberunt.",
+        "SYN": "Когда они вышли, царь поставил пищу перед Вилом, а Даниил приказал слугам своим, и они принесли пепел, и посыпали весь храм в присутствии одного царя, и, выйдя, заперли двери, и запечатали царским перстнем, и отошли.",
+        "NEO": "Pendant la nuit, les prêtres entrèrent selon leur coutume avec leurs femmes et leurs enfants, et ils mangèrent et burent tout ce qui était là.",
+        "NAB": "After they departed the king set the food before Bel, while Daniel ordered his servants to bring some ashes, which they scattered through the whole temple; the king alone was present. Then they went outside, sealed the closed door with the king's ring, and departed.",
+        "VAT_ES": "Pero Daniel mandó a sus servidores que trajeran ceniza y la esparcieran por todo el suelo del templo, sin más testigos que el rey. Después salieron, cerraron la puerta, la sellaron con el anillo real y se fueron.",
+        "CEI": "Daniele ordinò ai servi del re di portare un pò di cenere e la sparsero su tutto il pavimento del tempio alla presenza soltanto del re; poi uscirono, chiusero la porta, la sigillarono con l'anello del re e se ne andarono."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Surrexit autem rex primo diluculo, et Daniel cum eo.",
+        "SYN": "Жрецы же, по обычаю своему, пришли ночью с женами и детьми своими, и все съели и выпили.",
+        "NEO": "Le roi se leva dès le point du jour, et Daniel avec lui.",
+        "NAB": "The priests entered that night as usual, with their wives and children, and they ate and drank everything.",
+        "VAT_ES": "Los sacerdotes fueron de noche, como de costumbre, con sus mujeres y sus hijos, y comieron y bebieron todo.",
+        "CEI": "I sacerdoti vennero di notte, secondo il loro consueto, con le mogli, i figli, e mangiarono e bevvero tutto."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "Et ait rex : Salvane sunt signacula, Daniel ? Qui respondit : Salva, rex.",
+        "SYN": "На другой день царь встал рано и Даниил с ним,",
+        "NEO": "Le roi dit : « Les sceaux sont-ils intacts, Daniel ? » Celui-ci répondit : « Ils sont intacts, ô roi. »",
+        "NAB": "Early the next morning, the king came with Daniel.",
+        "VAT_ES": "Muy de madrugada, el rey fue junto con Daniel",
+        "CEI": "Di buon mattino il re si alzò, come anche Daniele."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Statimque cum aperuisset ostium, intuitus rex mensam, exclamavit voce magna : Magnus es, Bel, et non est apud te dolus quisquam.",
+        "SYN": "и сказал: целы ли печати, Даниил? Он сказал: целы, царь.",
+        "NEO": "Dès qu’il eut ouvert la porte et regardé la table, le roi s’écria à haute voix : « Tu es grand, ô Bel, et il n’y a pas la moindre tromperie en toi. »",
+        "NAB": "\"Are the seals unbroken, Daniel?\" he asked. And Daniel answered, \"They are unbroken, O king.\"",
+        "VAT_ES": "y le preguntó: «Daniel, &iquest;los sellos están intactos?». «Están intactos, rey», le respondió.",
+        "CEI": "Il re domandò: \"Sono intatti i sigilli, Daniele?\". \"Intatti, re\" rispose."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Et risit Daniel, et tenuit regem ne ingrederetur intro : et dixit : Ecce pavimentum : animadverte cujus vestigia sint hæc.",
+        "SYN": "И как скоро отворены были двери, царь, взглянув на стол, воскликнул громким голосом: велик ты, Вил, и нет никакого обмана в тебе!",
+        "NEO": "Daniel se prit à rire et, retenant le roi pour qu’il n’entrât pas plus avant, il lui dit : « Regarde le pavé, considère de qui sont ces pas. »",
+        "NAB": "As soon as he had opened the door, the king looked at the table and cried aloud, \"Great you are, O Bel; there is no trickery in you.\"",
+        "VAT_ES": "Apenas abrió la puerta, el rey miró la mesa y exclamó: «Tú eres grande, Bel, y en ti no hay engaño».",
+        "CEI": "Aperta la porta, il re guardò la tavola ed esclamò: \"Tu sei grande, Bel, e nessun inganno è in te!\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "Et dixit rex : Video vestigia virorum, et mulierum, et infantium. Et iratus est rex.",
+        "SYN": "Даниил, улыбнувшись, удержал царя, чтобы он не входил внутрь, и сказал: посмотри на пол и заметь, чьи это следы.",
+        "NEO": "Le roi dit : « je vois des pas d’hommes, de femmes et d’enfants ; » et le roi entra dans une grande colère.",
+        "NAB": "But Daniel laughed and kept the king from entering. \"Look at the floor,\" he said; \"whose footprints are these?\"",
+        "VAT_ES": "Daniel se puso a reír, retuvo al rey para que no avanzara más adentro y dijo: «Fíjate en el suelo y reconoce de quién son esas huellas».",
+        "CEI": "Daniele sorrise e, trattenendo il re perché non entrasse, disse: \"Guarda il pavimento ed esamina di chi sono quelle orme\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "Tunc apprehendit sacerdotes, et uxores, et filios eorum : et ostenderunt ei abscondita ostiola, per quæ ingrediebantur, et consumebant quæ erant super mensam.",
+        "SYN": "Царь сказал: вижу следы мужчин, женщин и детей.",
+        "NEO": "Alors il fit saisir les prêtres, leurs femmes et leurs enfants, et ils lui montrèrent les portes secrètes par où ils s’introduisaient et venaient manger ce qui était sur la table.",
+        "NAB": "\"I see the footprints of men, women, and children!\" said the king.",
+        "VAT_ES": "«Veo huellas de hombres, de mujeres y de niños», dijo el rey,",
+        "CEI": "Il re disse: \"Vedo orme d'uomini, di donne e di ragazzi!\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Occidit ergo illos rex, et tradidit Bel in potestatem Danielis : qui subvertit eum, et templum ejus.",
+        "SYN": "И, разгневавшись, царь приказал схватить жрецов, жен их и детей и они показали потаенные двери, которыми они входили и съедали, что было на столе.",
+        "NEO": "Il les fit mettre à mort et livra Bel au pouvoir de Daniel, qui le détruisit ainsi que son temple.",
+        "NAB": "The angry king arrested the priests, their wives, and their children. They showed him the secret door by which they used to enter to consume what was on the table.",
+        "VAT_ES": "y lleno de furia mandó arrestar a los sacerdotes, con sus mujeres y sus hijos. Ellos le mostraron entonces la puerta secreta por donde entraban para consumir lo que estaba sobre la mesa.",
+        "CEI": "Acceso d'ira, fece arrestare i sacerdoti con le mogli e i figli; gli furono mostrate le porte segrete per le quali entravano a consumare quanto si trovava sulla tavola."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Et erat draco magnus in loco illo, et colebant eum Babylonii.",
+        "SYN": "Тогда царь повелел умертвить их и отдал Вила Даниилу, и он разрушил его и храм его.",
+        "NEO": "Il y avait aussi un grand dragon, et les Babyloniens le vénéraient.",
+        "NAB": "He put them to death, and handed Bel over to Daniel, who destroyed it and its temple.",
+        "VAT_ES": "El rey los mandó matar y entregó a Bel en manos de Daniel, que destruyó el ídolo y su templo.",
+        "CEI": "Quindi il re li fece mettere a morte, consegnò Bel in potere di Daniele che lo distrusse insieme con il tempio."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "Et dixit rex Danieli : Ecce nunc non potes dicere quia iste non sit deus vivens : adora ergo eum.",
+        "SYN": "Был на том месте большой дракон, и Вавилоняне чтили его.",
+        "NEO": "Le roi dit à Daniel : « Diras-tu encore que celui-ci est d’airain ? Vois, il vit, il mange et boit. Maintenant, tu ne pourras pas dire que ce n’est pas un dieu vivant. »",
+        "NAB": "There was a great dragon which the Babylonians worshiped.",
+        "VAT_ES": "También había un gran Dragón, que era venerado por los babilonios.",
+        "CEI": "Vi era un gran drago e i Babilonesi lo veneravano."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Dixitque Daniel : Dominum Deum meum adoro, quia ipse est Deus vivens : iste autem non est deus vivens.",
+        "SYN": "И сказал царь Даниилу: не скажешь ли и об этом, что он медь? вот, он живой, и ест и пьет; ты не можешь сказать, что этот бог неживой; итак поклонись ему.",
+        "NEO": "Daniel répondit : « J’adore le Seigneur, mon Dieu, car lui est un Dieu vivant ; mais celui-ci n’est pas un dieu vivant.",
+        "NAB": "\"Look!\" said the king to Daniel, \"you cannot deny that this is a living god, so adore it.\"",
+        "VAT_ES": "El rey dijo a Daniel: «&iquest;Vas a decir que también este es de bronce? Míralo, él vive, come y bebe; no puedes negar que es un dios vivo: adóralo, entonces».",
+        "CEI": "Il re disse a Daniele: \"Non potrai dire che questo non è un dio vivente; adoralo, dunque\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "Tu autem, rex, da mihi potestatem, et interficiam draconem absque gladio et fuste. Et ait rex : Do tibi.",
+        "SYN": "Даниил сказал: Господу Богу моему поклоняюсь, потому что Он Бог живой.",
+        "NEO": "Toi, ô roi, donne-moi la permission, et je tuerai ce dragon sans épée ni bâton. » Le roi dit : « Je te la donne. »",
+        "NAB": "But Daniel answered, \"I adore the Lord, my God, for he is the living God.",
+        "VAT_ES": "Daniel le respondió: «Yo adoro al Señor, mi Dios, porque él es el Dios viviente. Si tú me lo permites, rey, yo mataré a este Dragón sin espada ni palo».",
+        "CEI": "Daniele rispose: \"Io adoro il Signore mio Dio, perché egli è il Dio vivente; se tu me lo permetti, o re, io, senza spada e senza bastone, ucciderò il drago\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Tulit ergo Daniel picem, et adipem, et pilos, et coxit pariter : fecitque massas, et dedit in os draconis, et diruptus est draco. Et dixit : Ecce quem colebatis.",
+        "SYN": "Но ты, царь, дай мне позволение, и я умерщвлю дракона без меча и жезла. Царь сказал: даю тебе.",
+        "NEO": "Alors Daniel prit de la poix, de la graisse et des poils, fit bouillir le tout ensemble et en fit des boules qu’il jeta dans la gueule du dragon. Et le dragon creva. Et il dit : « Voilà celui que vous vénériez ! »",
+        "NAB": "Give me permission, O king, and I will kill this dragon without sword or club.\" \"I give you permission,\" the king said.",
+        "VAT_ES": "El rey se lo permitió.",
+        "CEI": "Soggiunse il re: \"Te lo permetto\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "Quod cum audissent Babylonii, indignati sunt vehementer : et congregati adversum regem, dixerunt : Judæus factus est rex : Bel destruxit, draconem interfecit, et sacerdotes occidit.",
+        "SYN": "Тогда Даниил взял смолы, жира и волос, сварил это вместе и, сделав из этого ком, бросил его в пасть дракону, и дракон расселся. И сказал _Даниил:_ вот ваши святыни!",
+        "NEO": "Les Babyloniens, l’ayant appris, furent saisis d’une vive indignation ; ils se rassemblèrent contre le roi et dirent : « Le roi est devenu juif ; il a détruit Bel, fait mourir le dragon et massacrer les prêtres. »",
+        "NAB": "Then Daniel took some pitch, fat, and hair; these he boiled together and made into cakes. He put them into the mouth of the dragon, and when the dragon ate them, he burst asunder. \"This,\" he said, \"is what you worshiped.\"",
+        "VAT_ES": "Entonces Daniel tomó resina, grasa y crines, las coció, hizo con todo esto unas bolitas, y las echó en las fauces del Dragón. Este se las tragó y reventó. Daniel dijo: «&iexcl;Miren lo que ustedes veneran!».",
+        "CEI": "Daniele prese allora pece, grasso e peli e li fece cuocere insieme, poi ne preparò focacce e le gettò in bocca al drago che le inghiottì e scoppiò; quindi soggiunse: \"Ecco che cosa adoravate!\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "Et dixerunt cum venissent ad regem : Trade nobis Danielem, alioquin interficiemus te, et domum tuam.",
+        "SYN": "Когда же Вавилоняне услышали о том, сильно вознегодовали и восстали против царя, и сказали: царь сделался Иудеем, Вила разрушил и убил дракона, и предал смерти жрецов,",
+        "NEO": "Ils vinrent donc trouver le roi et lui dirent : « Livre-nous Daniel ; sinon, nous te ferons mourir, toi et ta maison. »",
+        "NAB": "When the Babylonians heard this, they were angry and turned against the king. \"The king has become a Jew,\" they said; \"he has destroyed Bel, killed the dragon, and put the priests to death.\"",
+        "VAT_ES": "Cuando los babilonios se enteraron, se enfurecieron y se amotinaron contra el rey, diciendo: «El rey se hizo judío: destruyó la estatua de Bel, mató al Dragón y masacró a los sacerdotes».",
+        "CEI": "Quando i Babilonesi lo seppero, ne furono molto indignati e insorsero contro il re, dicendo: \"Il re è diventato Giudeo: ha distrutto Bel, ha ucciso il drago, ha messo a morte i sacerdoti\"."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "Vidit ergo rex quod irruerent in eum vehementer : et necessitate compulsus, tradidit eis Danielem.",
+        "SYN": "и, придя к царю, сказали: предай нам Даниила, иначе мы умертвим тебя и дом твой.",
+        "NEO": "Le roi vit qu’ils se jetaient sur lui avec violence ; cédant à la nécessité, il leur livra Daniel.",
+        "NAB": "They went to the king and demanded: \"Hand Daniel over to us, or we will kill you and your family.\"",
+        "VAT_ES": "Después fueron a decir al rey: «Entréganos a Daniel; si no, te mataremos a ti y a tu familia».",
+        "CEI": "Andarono da lui dicendo: \"Consegnaci Daniele, altrimenti uccidiamo te e la tua famiglia!\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "Qui miserunt eum in lacum leonum, et erat ibi diebus sex.",
+        "SYN": "И когда царь увидел, что они сильно настаивают, принужден был предать им Даниила,",
+        "NEO": "Ils le jetèrent dans la fosse aux lions, et il y demeura six jours.",
+        "NAB": "When he saw himself threatened with violence, the king was forced to hand Daniel over to them.",
+        "VAT_ES": "Ante esta amenaza, el rey se vio obligado a entregarles a Daniel.",
+        "CEI": "Quando il re vide che lo assalivano con violenza, costretto dalla necessità consegnò loro Daniele."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "Porro in lacu erant leones septem, et dabantur eis duo corpora quotidie, et duæ oves : et tunc non data sunt eis, ut devorarent Danielem.",
+        "SYN": "они же бросили его в ров львиный, и он пробыл там шесть дней.",
+        "NEO": "Dans la fosse, il y avait sept lions, et on leur donnait chaque jour deux corps et deux brebis ; mais alors on ne leur donna pas cette pâture, afin qu’ils dévorassent Daniel.",
+        "NAB": "They threw Daniel into a lions' den, where he remained six days.",
+        "VAT_ES": "Ellos lo arrojaron al foso de los leones, donde permaneció seis días.",
+        "CEI": "Ed essi lo gettarono nella fossa dei leoni, dove rimase sei giorni."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "Erat autem Habacuc propheta in Judæa, et ipse coxerat pulmentum, et intriverat panes in alveolo : et ibat in campum ut ferret messoribus.",
+        "SYN": "Во рве было семь львов, и давалось им каждый день по два тела и по две овцы; в это время им не давали их, чтобы они съели Даниила.",
+        "NEO": "Or le prophète Habacuc était en Judée ; après avoir fait cuire une bouillie et émietté du pain dans un vase, il allait aux champs le porter à ses moissonneurs.",
+        "NAB": "In the den were seven lions, and two carcasses and two sheep had been given to them daily. But now they were given nothing, so that they would devour Daniel.",
+        "VAT_ES": "En el foso había siete leones a los que se daba diariamente dos personas y dos ovejas, pero esta vez no les dieron nada, para que devoraran a Daniel.",
+        "CEI": "Nella fossa vi erano sette leoni, ai quali venivano dati ogni giorno due cadaveri e due pecore: ma quella volta non fu dato loro niente perché divorassero Daniele."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "Dixitque angelus Domini ad Habacuc : Fer prandium quod habes in Babylonem Danieli, qui est in lacu leonum.",
+        "SYN": "Был в Иудее пророк Аввакум, который, сварив похлебку и накрошив хлеба в блюдо, шел на поле, чтобы отнести это жрецам.",
+        "NEO": "L’ange du Seigneur dit à Habacuc : « Porte le repas que tu tiens à Babylone, à Daniel, qui est dans la fosse aux lions. »",
+        "NAB": "In Judea there was a prophet, Habakkuk; he mixed some bread in a bowl with the stew he had boiled, and was going to bring it to the reapers in the field,",
+        "VAT_ES": "En ese momento, el profeta Habacuc, que estaba en Judea, acababa de hacer preparar un guiso y de poner pequeños trozos de pan en una canasta, e iba hacia el campo a llevar su comida a los segadores.",
+        "CEI": "Si trovava allora in Giudea il profeta Abacuc il quale aveva fatto una minestra e spezzettato il pane in un recipiente e andava a portarlo nel campo ai mietitori."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Et dixit Habacuc : Domine, Babylonem non vidi, et lacum nescio.",
+        "SYN": "Но Ангел Господень сказал Аввакуму: отнеси этот обед, который у тебя, в Вавилон к Даниилу, в ров львиный.",
+        "NEO": "Habacuc dit : « Seigneur, je n’ai jamais vu Babylone, et je ne connais pas la fosse. »",
+        "NAB": "when an angel of the Lord told him, \"Take the lunch you have to Daniel in the lions' den at Babylon.\"",
+        "VAT_ES": "El Angel del Señor dijo a Habacuc: «Lleva la comida que tienes a Daniel, que está en Babilonia, en el foso de los leones».",
+        "CEI": "L'angelo del Signore gli disse: \"Porta questo cibo a Daniele in Babilonia nella fossa dei leoni\"."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "VUL": "Et apprehendit eum angelus Domini in vertice ejus, et portavit eum capillo capitis sui, posuitque eum in Babylone supra lacum in impetu spiritus sui.",
+        "SYN": "Аввакум сказал: господин! Вавилона я _никогда_ не видал и рва не знаю.",
+        "NEO": "Alors l’ange le prit par le haut de la tête, le porta, par les cheveux de sa tête, et le déposa à Babylone, au-dessus de la fosse, avec toute l’agilité de sa nature spirituelle.",
+        "NAB": "But Habakkuk answered, \"Babylon, sir, I have never seen, and I do not know the den!\"",
+        "VAT_ES": "«Señor, respondió Habacuc, nunca he visto a Babilonia y no conozco ese foso».",
+        "CEI": "Ma Abacuc rispose: \"Signore, Babilonia non l'ho mai vista e la fossa non la conosco\"."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "VUL": "Et clamavit Habacuc, dicens : Daniel serve Dei, tolle prandium quod misit tibi Deus.",
+        "SYN": "Тогда Ангел Господень взял его за темя и, подняв его за волосы головы его, поставил его в Вавилоне над рвом силою духа своего.",
+        "NEO": "Et Habacuc cria : « Daniel, serviteur de Dieu, prends le repas que Dieu t’envoie. »",
+        "NAB": "The angel of the Lord seized him by the crown of his head and carried him by the hair; with the speed of the wind, he set him down in Babylon above the den.",
+        "VAT_ES": "El Angel del Señor lo tomó por la cabeza y lo llevó de los cabellos hasta Babilonia, al borde del foso, con la rapidez de su espíritu.",
+        "CEI": "Allora l'angelo del Signore lo prese per i capelli e con la velocità del vento lo trasportò in Babilonia e lo posò sull'orlo della fossa dei leoni."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "VUL": "Et ait Daniel : Recordatus es mei, Deus, et non dereliquisti diligentes te.",
+        "SYN": "И воззвал Аввакум и сказал: Даниил! Даниил! возьми обед, который Бог послал тебе.",
+        "NEO": "Daniel répondit : « Vous vous êtes, en effet, souvenu de moi, ô Dieu, et vous n’avez pas abandonné ceux qui vous aiment. »",
+        "NAB": "\"Daniel, Daniel,\" cried Habakkuk, \"take the lunch God has sent you.\"",
+        "VAT_ES": "Habacuc exclamó: «Daniel, Daniel, toma la comida que el Señor te envía».",
+        "CEI": "Gridò Abacuc: \"Daniele, Daniele, prendi il cibo che Dio ti ha mandato\"."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "VUL": "Surgensque Daniel comedit. Porro angelus Domini restituit Habacuc confestim in loco suo.",
+        "SYN": "Даниил сказал: вспомнил Ты обо мне, Боже, и не оставил любящих Тебя.",
+        "NEO": "Et Daniel se leva et mangea. Et l’ange du Seigneur remit aussitôt Habacuc en son lieu.",
+        "NAB": "\"You have remembered me, O God,\" said Daniel; \"you have not forsaken those who love you.\"",
+        "VAT_ES": "Y Daniel dijo: «Tú, Dios, te acordaste de mí, y no abandonaste a los que te aman».",
+        "CEI": "Daniele esclamò: \"Dio, ti sei ricordato di me e non hai abbandonato coloro che ti amano\"."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "VUL": "Venit ergo rex die septimo ut lugeret Danielem : et venit ad lacum, et introspexit, et ecce Daniel sedens in medio leonum.",
+        "SYN": "И встал Даниил и ел; Ангел же Божий мгновенно поставил Аввакума на его место.",
+        "NEO": "Le septième jour, le roi vint pour pleurer Daniel ; étant venu vers la fosse, il regarda, et voici que Daniel était assis au milieu des lions.",
+        "NAB": "While Daniel began to eat, the angel of the Lord at once brought Habakkuk back to his own place.",
+        "VAT_ES": "Después se levantó y comió, mientras que el Angel de Dios volvió a llevar en seguida a Habacuc a su lugar.",
+        "CEI": "Alzatosi, Daniele si mise a mangiare, mentre l'angelo di Dio riportava subito Abacuc nel luogo di prima."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "VUL": "Et exclamavit voce magna rex, dicens : Magnus es, Domine Deus Danielis. Et extraxit eum de lacu leonum.",
+        "SYN": "В седьмой день пришел царь, чтобы поскорбеть о Данииле и, подойдя ко рву, взглянул в него, и вот, Даниил сидел.",
+        "NEO": "Il cria à haute voix et dit : « Vous êtes grand, Seigneur, Dieu de Daniel, et il n’y en a pas d’autre que vous ! » Et il le retira de la fosse aux lions.",
+        "NAB": "On the seventh day the king came to mourn for Daniel. As he came to the den and looked in, there was Daniel, sitting there!",
+        "VAT_ES": "El séptimo día, el rey fue a llorar a Daniel. Se acercó al foso, miró y vio que Daniel estaba tranquilamente sentado.",
+        "CEI": "Il settimo giorno il re andò per piangere Daniele e giunto alla fossa guardò e vide Daniele seduto."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "VUL": "Porro illos, qui perditionis ejus causa fuerant, intromisit in lacum, et devorati sunt in momento coram eo.",
+        "SYN": "И воскликнул царь громким голосом, и сказал: велик Ты, Господь Бог Даниилов, и нет иного кроме Тебя!",
+        "NEO": "Puis il fit jeter dans la fosse ceux qui avaient voulu le perdre, et ils furent dévorés sous ses yeux, en un instant.",
+        "NAB": "The king cried aloud, \"You are great, O Lord, the God of Daniel, and there is no other besides you!\"",
+        "VAT_ES": "Entonces exclamó: «&iexcl;Tú eres grande, Señor, Dios de Daniel, y no hay otro Dios fuera de ti!».",
+        "CEI": "Allora esclamò ad alta voce: \"Grande tu sei, Signore Dio di Daniele, e non c'è altro dio all'infuori di te!\"."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "VUL": "Tunc rex ait : Paveant omnes habitantes in universa terra Deum Danielis : quia ipse est salvator, faciens signa et mirabilia in terra : qui liberavit Danielem de lacu leonum.",
+        "SYN": "И приказал вынуть _Даниила,_ а виновников его погубления бросить в ров, - и они тотчас были съедены в присутствии его.",
+        "NEO": "Alors le roi dit : « Que tous les habitants de la terre entière craignent le Dieu de Daniel, car c’est lui qui est le Sauveur, qui fait des signes et des prodiges sur la terre, lui qui a délivré Daniel de la fosse aux lions ! »",
+        "NAB": "Daniel he took out, but those who had tried to destroy him he threw into the den, and they were devoured in a moment before his eyes.",
+        "VAT_ES": "Después hizo salir a Daniel del foso y mandó arrojar en él a los que habían querido destruirlo, y al instante ellos fueron devorados en su presencia.",
+        "CEI": "Poi fece uscire Daniele dalla fossa e vi fece gettare coloro che volevano la sua rovina ed essi furono subito divorati sotto i suoi occhi."
+      }
+    }
+  }
+}

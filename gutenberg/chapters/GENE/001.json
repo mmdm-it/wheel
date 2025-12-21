@@ -1,0 +1,574 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_001",
+  "book_key": "GENE",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בְּ/רֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים אֵ֥ת הַ/שָּׁמַ֖יִם וְ/אֵ֥ת הָ/אָֽרֶץ׃",
+        "VUL": "In principio creavit Deus cælum et terram.",
+        "LXX": "ΕΝ ΑΡΧΗ ἐποίησεν ὁ θεὸς τὸν οὐρανὸν καὶ τὴν γῆν.",
+        "NAB": "In the beginning, when God created the heavens and the earth,",
+        "SYN": "В начале сотворил Бог небо и землю.",
+        "NEO": "Au Commencement Dieu créa le ciel et la terre.",
+        "VAT_ES": "Al principio Dios creó el cielo y la tierra.",
+        "CEI": "In principio Dio creò il cielo e la terra.",
+        "POR": "No princípio, criou Deus os céus e a terra."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/הָ/אָ֗רֶץ הָיְתָ֥ה תֹ֨הוּ֙ וָ/בֹ֔הוּ וְ/חֹ֖שֶׁךְ עַל פְּנֵ֣י תְה֑וֹם וְ/ר֣וּחַ אֱלֹהִ֔ים מְרַחֶ֖פֶת עַל פְּנֵ֥י הַ/מָּֽיִם׃",
+        "VUL": "Terra autem erat inanis et vacua, et tenebræ erant super faciem abyssi : et spiritus Dei ferebatur super aquas.",
+        "LXX": "ἡ δὲ γῆ ἦν ἀόρατος καὶ ἀκατασκεύαστος, καὶ σκότος ἐπάνω τῆς ἀβύσσου· καὶ πνεῦμα θεοῦ ἐπεφέρετο ἐπάνω τοῦ ὕδατος.",
+        "NAB": "the earth was a formless wasteland, and darkness covered the abyss, while a mighty wind swept over the waters.",
+        "SYN": "Земля же была безвидна и пуста, и тьма над бездною, и Дух Божий носился над водою.",
+        "NEO": "La terre était informe et vide ; les ténèbres couvraient l’abîme, et l’Esprit de Dieu se mouvait au-dessus des eaux.",
+        "VAT_ES": "La tierra era algo informe y vacío, las tinieblas cubrían el abismo, y el soplo de Dios se cernía sobre las aguas.",
+        "CEI": "Ora la terra era informe e deserta e le tenebre ricoprivano l'abisso e lo spirito di Dio aleggiava sulle acque."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר אֱלֹהִ֖ים יְהִ֣י א֑וֹר וַֽ/יְהִי אֽוֹר׃",
+        "VUL": "Dixitque Deus : Fiat lux. Et facta est lux.",
+        "LXX": "καὶ εἶπεν ὁ θεός Γενηθήτω φῶς· καὶ ἐγένετο φῶς.",
+        "NAB": "Then God said, \"Let there be light,\" and there was light.",
+        "SYN": "И сказал Бог: да будет свет. И стал свет.",
+        "NEO": "Dieu dit : « Que la lumière soit ! » et la lumière fut.",
+        "VAT_ES": "Entonces Dios dijo: «Que exista la luz». Y la luz existió.",
+        "CEI": "Dio disse: \"Sia la luce!\". E la luce fu."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יַּ֧רְא אֱלֹהִ֛ים אֶת הָ/א֖וֹר כִּי ט֑וֹב וַ/יַּבְדֵּ֣ל אֱלֹהִ֔ים בֵּ֥ין הָ/א֖וֹר וּ/בֵ֥ין הַ/חֹֽשֶׁךְ׃",
+        "VUL": "Et vidit Deus lucem quod esset bona : et divisit lucem a tenebris.",
+        "LXX": "καὶ ἴδεν ὁ θεὸς τὸ φῶς ὅτι καλόν· καὶ διεχώρισεν ὁ θεὸς ἀνὰ μέσον τοῦ φωτὸς καὶ ἀνὰ μέσον τοῦ σκότους.",
+        "NAB": "God saw how good the light was. God then separated the light from the darkness.",
+        "SYN": "И увидел Бог свет, что он хорош, и отделил Бог свет от тьмы.",
+        "NEO": "Et Dieu vit que la lumière était bonne ; et Dieu sépara la lumière et les ténèbres.",
+        "VAT_ES": "Dios vio que la luz era buena, y separó la luz de las tinieblas;",
+        "CEI": "Dio vide che la luce era cosa buona e separò la luce dalle tenebre"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֨א אֱלֹהִ֤ים לָ/אוֹר֙ י֔וֹם וְ/לַ/חֹ֖שֶׁךְ קָ֣רָא לָ֑יְלָה וַֽ/יְהִי עֶ֥רֶב וַֽ/יְהִי בֹ֖קֶר י֥וֹם אֶחָֽד׃",
+        "VUL": "Appellavitque lucem Diem, et tenebras Noctem : factumque est vespere et mane, dies unus.",
+        "LXX": "καὶ ἐκάλεσεν ὁ θεὸς τὸ φῶς ἡμέραν, καὶ τὸ σκότος ἐκάλεσεν νύκτα. καὶ ἐγένετο ἑσπέρα καὶ ἐγένετο πρωί, ἡμέρα μία.",
+        "NAB": "God called the light \"day,\" and the darkness he called \"night.\" Thus evening came, and morning followed - the first day.",
+        "SYN": "И назвал Бог свет днем, а тьму ночью. И был вечер, и было утро: день один.",
+        "NEO": "Dieu appela la lumière jour, et les ténèbres Nuit.",
+        "VAT_ES": "y llamó Día a la luz y Noche a las tinieblas. Así hubo una tarde y una mañana: este fue el primer día.",
+        "CEI": "e chiamò la luce giorno e le tenebre notte. E fu sera e fu mattina: primo giorno."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֱלֹהִ֔ים יְהִ֥י רָקִ֖יעַ בְּ/ת֣וֹךְ הַ/מָּ֑יִם וִ/יהִ֣י מַבְדִּ֔יל בֵּ֥ין מַ֖יִם לָ/מָֽיִם׃",
+        "VUL": "Dixit quoque Deus : Fiat firmamentum in medio aquarum : et dividat aquas ab aquis.",
+        "LXX": "Καὶ εἶπεν ὁ θεός Γενηθήτω στερέωμα ἐν μέσῳ τοῦ ὕδατος, καὶ ἔστω διαχωρίζον ἀνὰ μέσον ὕδατος καὶ ὕδατος· καὶ ἐγένετο οὕτως.",
+        "NAB": "Then God said, \"Let there be a dome in the middle of the waters, to separate one body of water from the other.\" And so it happened:",
+        "SYN": "И сказал Бог: да будет твердь посреди воды, и да отделяет она воду от воды. [И стало так.]",
+        "NEO": "Dieu dit : « Qu’il y ait un firmament entre les eaux, et qu’il sépare les eaux d’avec les eaux. »",
+        "VAT_ES": "Dios dijo: «Que haya un firmamento en medio de las aguas, para que establezca una separación entre ellas». Y así sucedió.",
+        "CEI": "Dio disse: \"Sia il firmamento in mezzo alle acque per separare le acque dalle acque\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ אֱלֹהִים֮ אֶת הָ/רָקִיעַ֒ וַ/יַּבְדֵּ֗ל בֵּ֤ין הַ/מַּ֨יִם֙ אֲשֶׁר֙ מִ/תַּ֣חַת לָ/רָקִ֔יעַ וּ/בֵ֣ין הַ/מַּ֔יִם אֲשֶׁ֖ר מֵ/עַ֣ל לָ/רָקִ֑יעַ וַֽ/יְהִי כֵֽן׃",
+        "VUL": "Et fecit Deus firmamentum, divisitque aquas, quæ erant sub firmamento, ab his, quæ erant super firmamentum. Et factum est ita.",
+        "LXX": "καὶ ἐποίησεν ὁ θεὸς τὸ στερέωμα· καὶ διεχώρισεν ὁ θεὸς ἀνὰ μέσον τοῦ ὕδατος ὃ ἦν ὑποκάτω τοῦ στερεώματος, καὶ ἀνὰ μέσον τοῦ ὕδατος τοῦ ἐπάνω τοῦ στερεώματος.",
+        "NAB": "God made the dome, and it separated the water above the dome from the water below it.",
+        "SYN": "И создал Бог твердь, и отделил воду, которая под твердью, от воды, которая над твердью. И стало так.",
+        "NEO": "Et Dieu fit le firmament, et il sépara les eaux qui sont au-dessous du firmament d’avec les eaux qui sont au-dessus du firmament. Et cela fut ainsi.",
+        "VAT_ES": "Dios hizo el firmamento, y este separó las aguas que están debajo de él, de las que están encima de él;",
+        "CEI": "Dio fece il firmamento e separò le acque, che sono sotto il firmamento, dalle acque, che son sopra il firmamento. E così avvenne."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֧א אֱלֹהִ֛ים לָֽ/רָקִ֖יעַ שָׁמָ֑יִם וַֽ/יְהִי עֶ֥רֶב וַֽ/יְהִי בֹ֖קֶר י֥וֹם שֵׁנִֽי׃",
+        "VUL": "Vocavitque Deus firmamentum, Cælum : et factum est vespere et mane, dies secundus.",
+        "LXX": "καὶ ἐκάλεσεν ὁ θεὸς τὸ στερέωμα οὐρανόν· καὶ ἴδεν ὁ θεὸς ὅτι καλόν. καὶ ἐγένετο ἑσπέρα καὶ ἐγένετο πρωί, ἡμέρα δευτέρα.",
+        "NAB": "God called the dome \"the sky.\" Evening came, and morning followed - the second day.",
+        "SYN": "И назвал Бог твердь небом. [И увидел Бог, что _это_ хорошо.] И был вечер, и было утро: день второй.",
+        "NEO": "Dieu appela le firmament Ciel.",
+        "VAT_ES": "y Dios llamó Cielo al firmamento. Así hubo una tarde y una mañana: este fue el segundo día.",
+        "CEI": "Dio chiamò il firmamento cielo. E fu sera e fu mattina: secondo giorno."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֱלֹהִ֗ים יִקָּו֨וּ הַ/מַּ֜יִם מִ/תַּ֤חַת הַ/שָּׁמַ֨יִם֙ אֶל מָק֣וֹם אֶחָ֔ד וְ/תֵרָאֶ֖ה הַ/יַּבָּשָׁ֑ה וַֽ/יְהִי כֵֽן׃",
+        "VUL": "Dixit vero Deus : Congregentur aquæ, quæ sub cælo sunt, in locum unum : et appareat arida. Et factum est ita.",
+        "LXX": "Καὶ εἶπεν ὁ θεός Συναχθήτω τὸ ὕδωρ τὸ ὑποκάτω τοῦ οὐρανοῦ εἰς συναγωγὴν μίαν, καὶ ὀφθήτω ἡ ξηρά· καὶ ἐγένετο οὕτως. καὶ συνήχθη τὸ ὕδωρ τὸ ὑποκάτω τοῦ οὐρανοῦ εἰς τὰς συναγωγὰς αὐτῶν, καὶ ὤφθη ἡ ξηρά.",
+        "NAB": "Then God said, \"Let the water under the sky be gathered into a single basin, so that the dry land may appear.\" And so it happened: the water under the sky was gathered into its basin, and the dry land appeared.",
+        "SYN": "И сказал Бог: да соберется вода, которая под небом, в одно место, и да явится суша. И стало так. [И собралась вода под небом в свои места, и явилась суша.]",
+        "NEO": "Dieu dit : « Que les eaux qui sont au-dessous du ciel se rassemblent en un seul lieu, et que le sec paraisse. » Et cela fut ainsi.",
+        "VAT_ES": "Dios dijo: «Que se reúnan en un solo lugar las aguas que están bajo el cielo, y que aparezca el suelo firme». Y así sucedió.",
+        "CEI": "Dio disse: \"Le acque che sono sotto il cielo, si raccolgano in un solo luogo e appaia l'asciutto\". E così avvenne."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֨א אֱלֹהִ֤ים לַ/יַּבָּשָׁה֙ אֶ֔רֶץ וּ/לְ/מִקְוֵ֥ה הַ/מַּ֖יִם קָרָ֣א יַמִּ֑ים וַ/יַּ֥רְא אֱלֹהִ֖ים כִּי טֽוֹב׃",
+        "VUL": "Et vocavit Deus aridam Terram, congregationesque aquarum appellavit Maria. Et vidit Deus quod esset bonum.",
+        "LXX": "καὶ ἐκάλεσεν ὁ θεὸς τὴν ξηρὰν γῆν, καὶ τὰ συστέματα τῶν ὑδάτων ἐκάλεσεν θαλάσσας· καὶ ἴδεν ὁ θεὸς ὅτι καλόν.",
+        "NAB": "God called the dry land \"the earth,\" and the basin of the water he called \"the sea.\" God saw how good it was.",
+        "SYN": "И назвал Бог сушу землею, а собрание вод назвал морями. И увидел Бог, что _это_ хорошо.",
+        "NEO": "Dieu appela le sec Terre, et il appela Mer l’amas des eaux. Et Dieu vit que cela était bon.",
+        "VAT_ES": "Dios llamó Tierra al suelo firme y Mar al conjunto de las aguas. Y Dios vio que esto era bueno.",
+        "CEI": "Dio chiamò l'asciutto terra e la massa delle acque mare. E Dio vide che era cosa buona."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֱלֹהִ֗ים תַּֽדְשֵׁ֤א הָ/אָ֨רֶץ֙ דֶּ֔שֶׁא עֵ֚שֶׂב מַזְרִ֣יעַ זֶ֔רַע עֵ֣ץ פְּרִ֞י עֹ֤שֶׂה פְּרִי֙ לְ/מִינ֔/וֹ אֲשֶׁ֥ר זַרְע/וֹ ב֖/וֹ עַל הָ/אָ֑רֶץ וַֽ/יְהִי כֵֽן׃",
+        "VUL": "Et ait : Germinet terra herbam virentem, et facientem semen, et lignum pomiferum faciens fructum juxta genus suum, cujus semen in semetipso sit super terram. Et factum est ita.",
+        "LXX": "καὶ εἶπεν ὁ θεός Βλαστησάτω ἡ γῆ βοτάνην χόρτου, σπεῖρον σπέρμα κατὰ γένος καὶ καθ’ ὁμοιότητα, καὶ ξύλον κάρπιμον ποιοῦν καρπόν, οὗ τὸ σπέρμα αὐτοῦ ἐν αὐτῷ κατὰ γένος εἰς ὁμοιότητα ἐπὶ τῆς γῆς· καὶ ἐγένετο οὕτως.",
+        "NAB": "Then God said, \"Let the earth bring forth vegetation: every kind of plant that bears seed and every kind of fruit tree on earth that bears fruit with its seed in it.\" And so it happened:",
+        "SYN": "И сказал Бог: да произрастит земля зелень, траву, сеющую семя [по роду и по подобию _ее,_ и] дерево плодовитое, приносящее по роду своему плод, в котором семя его на земле. И стало так.",
+        "NEO": "Puis Dieu dit : « Que la terre fasse pousser du gazon, des herbes portant semence, des arbres à fruit produisant, selon leur espèce, du fruit ayant en soi sa semence, sur la terre. » Et cela fut ainsi.",
+        "VAT_ES": "Entonces dijo: «Que la tierra produzca vegetales, hierbas que den semilla y árboles frutales, que den sobre la tierra frutos de su misma especie con su semilla adentro». Y así sucedió.",
+        "CEI": "E Dio disse: \"La terra produca germogli, erbe che producono seme e alberi da frutto, che facciano sulla terra frutto con il seme, ciascuno secondo la sua specie\". E così avvenne:"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/תּוֹצֵ֨א הָ/אָ֜רֶץ דֶּ֠שֶׁא עֵ֣שֶׂב מַזְרִ֤יעַ זֶ֨רַע֙ לְ/מִינֵ֔/הוּ וְ/עֵ֧ץ עֹֽשֶׂה פְּרִ֛י אֲשֶׁ֥ר זַרְע/וֹ ב֖/וֹ לְ/מִינֵ֑/הוּ וַ/יַּ֥רְא אֱלֹהִ֖ים כִּי טֽוֹב׃",
+        "VUL": "Et protulit terra herbam virentem, et facientem semen juxta genus suum, lignumque faciens fructum, et habens unumquodque sementem secundum speciem suam. Et vidit Deus quod esset bonum.",
+        "LXX": "καὶ ἐξήνεγκεν ἡ γῆ βοτάνην χόρτου, σπεῖρον σπέρμα κατὰ γένος καὶ καθ’ ὁμοιότητα, καὶ ξύλον κάρπιμον ποιοῦν καρπόν, οὗ τὸ σπέρμα αὐτοῦ ἐν αὐτῷ κατὰ γένος ἐπὶ τῆς γῆς. καὶ ἴδεν ὁ θεὸς ὅτι καλόν.",
+        "NAB": "the earth brought forth every kind of plant that bears seed and every kind of fruit tree on earth that bears fruit with its seed in it. God saw how good it was.",
+        "SYN": "И произвела земля зелень, траву, сеющую семя по роду [и по подобию] ее, и дерево [плодовитое], приносящее плод, в котором семя его по роду его [на земле]. И увидел Бог, что _это_ хорошо.",
+        "NEO": "Et la terre fit sortir du gazon, des herbes portant semence selon leur espèce, et des arbres produisant, selon leur espèce, du fruit ayant en soi sa semence. Et Dieu vit que cela était bon.",
+        "VAT_ES": "La tierra hizo brotar vegetales, hierba que da semilla según su especie y árboles que dan fruto de su misma especie con su semilla adentro. Y Dios vio que esto era bueno.",
+        "CEI": "la terra produsse germogli, erbe che producono seme, ciascuna secondo la propria specie e alberi che fanno ciascuno frutto con il seme, secondo la propria specie. Dio vide che era cosa buona."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי עֶ֥רֶב וַֽ/יְהִי בֹ֖קֶר י֥וֹם שְׁלִישִֽׁי׃",
+        "VUL": "Et factum est vespere et mane, dies tertius.",
+        "LXX": "καὶ ἐγένετο ⸂⸆⸃ ἑσπέρα καὶ ἐγένετο πρωί, ἡμέρα τρίτη.",
+        "NAB": "Evening came, and morning followed - the third day.",
+        "SYN": "И был вечер, и было утро: день третий.",
+        "NEO": "Et il y eut un soir, et il y eut un matin ; ce fut le troisième jour.",
+        "VAT_ES": "Así hubo una tarde y una mañana: este fue el tercer día.",
+        "CEI": "E fu sera e fu mattina: terzo giorno."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֱלֹהִ֗ים יְהִ֤י מְאֹרֹת֙ בִּ/רְקִ֣יעַ הַ/שָּׁמַ֔יִם לְ/הַבְדִּ֕יל בֵּ֥ין הַ/יּ֖וֹם וּ/בֵ֣ין הַ/לָּ֑יְלָה וְ/הָי֤וּ לְ/אֹתֹת֙ וּ/לְ/מ֣וֹעֲדִ֔ים וּ/לְ/יָמִ֖ים וְ/שָׁנִֽים׃",
+        "VUL": "Dixit autem Deus : Fiant luminaria in firmamento cæli, et dividant diem ac noctem, et sint in signa et tempora, et dies et annos :",
+        "LXX": "Καὶ εἶπεν ὁ θεός Γενηθήτωσαν φωστῆρες ἐν τῷ στερεώματι τοῦ οὐρανοῦ εἰς φαῦσιν τῆς γῆς, καὶ ἄρχειν τῆς ἡμέρας καὶ τῆς νυκτὸς καὶ διαχωρίζειν ⸆ ἀνὰ μέσον τῆς ἡμέρας καὶ ἀνὰ μέσον τῆς νυκτός· καὶ ἔστωσαν εἰς σημεῖα καὶ εἰς καιροὺς καὶ εἰς ἡμέρας καὶ εἰς ἐνιαυτούς·",
+        "NAB": "Then God said: \"Let there be lights in the dome of the sky, to separate day from night. Let them mark the fixed times, the days and the years,",
+        "SYN": "И сказал Бог: да будут светила на тверди небесной [для освещения земли и] для отделения дня от ночи, и для знамений, и времен, и дней, и годов;",
+        "NEO": "Dieu dit : « Qu’il y ait des luminaires dans le firmament du ciel pour séparer le jour et la nuit ; qu’ils soient des signes, qu’ils marquent les époques, les jours et les années,",
+        "VAT_ES": "Dios dijo: «Que haya astros en el firmamento del cielo para distinguir el día de la noche; que ellos señalen las fiestas, los días y los años,",
+        "CEI": "Dio disse: \"Ci siano luci nel firmamento del cielo, per distinguere il giorno dalla notte; servano da segni per le stagioni, per i giorni e per gli anni"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/הָי֤וּ לִ/מְאוֹרֹת֙ בִּ/רְקִ֣יעַ הַ/שָּׁמַ֔יִם לְ/הָאִ֖יר עַל הָ/אָ֑רֶץ וַֽ/יְהִי כֵֽן׃",
+        "VUL": "ut luceant in firmamento cæli, et illuminent terram. Et factum est ita.",
+        "LXX": "καὶ ἔστωσαν εἰς φαῦσιν ἐν τῷ στερεώματι τοῦ οὐρανοῦ, ὥστε φαίνειν ἐπὶ τῆς γῆς. καὶ ἐγένετο οὕτως.",
+        "NAB": "and serve as luminaries in the dome of the sky, to shed light upon the earth.\" And so it happened:",
+        "SYN": "и да будут они светильниками на тверди небесной, чтобы светить на землю. И стало так.",
+        "NEO": "et qu’ils servent de luminaires dans le firmament du ciel pour éclairer la terre. » Et cela fut ainsi.",
+        "VAT_ES": "y que estén como lámparas en el firmamento del cielo para iluminar la tierra». Y así sucedió.",
+        "CEI": "e servano da luci nel firmamento del cielo per illuminare la terra\". E così avvenne:"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ אֱלֹהִ֔ים אֶת שְׁנֵ֥י הַ/מְּאֹרֹ֖ת הַ/גְּדֹלִ֑ים אֶת הַ/מָּא֤וֹר הַ/גָּדֹל֙ לְ/מֶמְשֶׁ֣לֶת הַ/יּ֔וֹם וְ/אֶת הַ/מָּא֤וֹר הַ/קָּטֹן֙ לְ/מֶמְשֶׁ֣לֶת הַ/לַּ֔יְלָה וְ/אֵ֖ת הַ/כּוֹכָבִֽים׃",
+        "VUL": "Fecitque Deus duo luminaria magna : luminare majus, ut præesset diei : et luminare minus, ut præesset nocti : et stellas.",
+        "LXX": "καὶ ἐποίησεν ὁ θεὸς τοὺς δύο φωστῆρας τοὺς μεγάλους, τὸν φωστῆρα τὸν μέγαν εἰς ἀρχὰς τῆς ἡμέρας καὶ τὸν φωστῆρα τὸν ἐλάσσω εἰς ἀρχὰς τῆς νυκτός, καὶ τοὺς ἀστέρας.",
+        "NAB": "God made the two great lights, the greater one to govern the day, and the lesser one to govern the night; and he made the stars.",
+        "SYN": "И создал Бог два светила великие: светило большее, для управления днем, и светило меньшее, для управления ночью, и звезды;",
+        "NEO": "Dieu fit les deux grands luminaires, le plus grand luminaire pour présider au jour, le plus petit luminaire pour présider à la nuit ; il fit aussi les étoiles.",
+        "VAT_ES": "Dios hizo que dos grandes astros –el astro mayor para presidir el día y el menor para presidir la noche– y también hizo las estrellas.",
+        "CEI": "Dio fece le due luci grandi, la luce maggiore per regolare il giorno e la luce minore per regolare la notte, e le stelle."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֥ן אֹתָ֛/ם אֱלֹהִ֖ים בִּ/רְקִ֣יעַ הַ/שָּׁמָ֑יִם לְ/הָאִ֖יר עַל הָ/אָֽרֶץ׃",
+        "VUL": "Et posuit eas in firmamento cæli, ut lucerent super terram,",
+        "LXX": "καὶ ἔθετο αὐτοὺς ὁ θεὸς ἐν τῷ στερεώματι τοῦ οὐρανοῦ, ὥστε φαίνειν ἐπὶ τῆς γῆς,",
+        "NAB": "God set them in the dome of the sky, to shed light upon the earth,",
+        "SYN": "и поставил их Бог на тверди небесной, чтобы светить на землю,",
+        "NEO": "Dieu les plaça dans le firmament du ciel pour éclairer la terre,",
+        "VAT_ES": "Y los puso en el firmamento del cielo para iluminar la tierra,",
+        "CEI": "Dio le pose nel firmamento del cielo per illuminare la terra"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/לִ/מְשֹׁל֙ בַּ/יּ֣וֹם וּ/בַ/לַּ֔יְלָה וּֽ/לֲ/הַבְדִּ֔יל בֵּ֥ין הָ/א֖וֹר וּ/בֵ֣ין הַ/חֹ֑שֶׁךְ וַ/יַּ֥רְא אֱלֹהִ֖ים כִּי טֽוֹב׃",
+        "VUL": "et præessent diei ac nocti, et dividerent lucem ac tenebras. Et vidit Deus quod esset bonum.",
+        "LXX": "καὶ ἄρχειν τῆς ἡμέρας καὶ τῆς νυκτός, καὶ διαχωρίζειν ἀνὰ μέσον τοῦ φωτὸς καὶ ἀνὰ μέσον τοῦ σκότους· καὶ ἴδεν ὁ θεὸς ὅτι καλόν.",
+        "NAB": "to govern the day and the night, and to separate the light from the darkness. God saw how good it was.",
+        "SYN": "и управлять днем и ночью, и отделять свет от тьмы. И увидел Бог, что _это_ хорошо.",
+        "NEO": "pour présider au jour et à la nuit, et pour séparer la lumière et les ténèbres. Et Dieu vit que cela était bon.",
+        "VAT_ES": "para presidir el día y la noche, y para separar la luz de las tinieblas. Y Dios vio que esto era bueno.",
+        "CEI": "e per regolare giorno e notte e per separare la luce dalle tenebre. E Dio vide che era cosa buona."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי עֶ֥רֶב וַֽ/יְהִי בֹ֖קֶר י֥וֹם רְבִיעִֽי׃",
+        "VUL": "Et factum est vespere et mane, dies quartus.",
+        "LXX": "καὶ ἐγένετο ἑσπέρα καὶ ἐγένετο πρωί, ἡμέρα τετάρτη. ⸆",
+        "NAB": "Evening came, and morning followed - the fourth day.",
+        "SYN": "И был вечер, и было утро: день четвёртый.",
+        "NEO": "Et il y eut un soir, et il y eut un matin : ce fut le quatrième jour.",
+        "VAT_ES": "Así hubo una tarde y una mañana: este fue el cuarto día.",
+        "CEI": "E fu sera e fu mattina: quarto giorno."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֱלֹהִ֔ים יִשְׁרְצ֣וּ הַ/מַּ֔יִם שֶׁ֖רֶץ נֶ֣פֶשׁ חַיָּ֑ה וְ/עוֹף֙ יְעוֹפֵ֣ף עַל הָ/אָ֔רֶץ עַל פְּנֵ֖י רְקִ֥יעַ הַ/שָּׁמָֽיִם׃",
+        "VUL": "Dixit etiam Deus : Producant aquæ reptile animæ viventis, et volatile super terram sub firmamento cæli.",
+        "LXX": "Καὶ εἶπεν ὁ θεός Ἐξαγαγέτω τὰ ὕδατα ἑρπετὰ ψυχῶν ζωσῶν καὶ πετεινὰ πετόμεν[α] ἐπὶ τῆς γῆς κατὰ τὸ στερέωμ[α τοῦ] οὐρανοῦ· καὶ ἐγένετο οὕτως.",
+        "NAB": "Then God said, \"Let the water teem with an abundance of living creatures, and on the earth let birds fly beneath the dome of the sky.\" And so it happened:",
+        "SYN": "И сказал Бог: да произведет вода пресмыкающихся, душу живую; и птицы да полетят над землею, по тверди небесной. [И стало так.]",
+        "NEO": "Dieu dit : « Que les eaux foisonnent d’une multitude d’êtres vivants, et que les oiseaux volent sur la terre, sur la face du firmament du ciel. »",
+        "VAT_ES": "Dios dijo: «Que las aguas se llenen de una multitud de seres vivientes y que vuelen pájaros sobre la tierra, por el firmamento del cielo».",
+        "CEI": "Dio disse: \"Le acque brulichino di esseri viventi e uccelli volino sopra la terra, davanti al firmamento del cielo\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּבְרָ֣א אֱלֹהִ֔ים אֶת הַ/תַּנִּינִ֖ם הַ/גְּדֹלִ֑ים וְ/אֵ֣ת כָּל נֶ֣פֶשׁ הַֽ/חַיָּ֣ה הָֽ/רֹמֶ֡שֶׂת אֲשֶׁר֩ שָׁרְצ֨וּ הַ/מַּ֜יִם לְ/מִֽינֵ/הֶ֗ם וְ/אֵ֨ת כָּל ע֤וֹף כָּנָף֙ לְ/מִינֵ֔/הוּ וַ/יַּ֥רְא אֱלֹהִ֖ים כִּי טֽוֹב׃",
+        "VUL": "Creavitque Deus cete grandia, et omnem animam viventem atque motabilem, quam produxerant aquæ in species suas, et omne volatile secundum genus suum. Et vidit Deus quod esset bonum.",
+        "LXX": "καὶ ἐποίησεν ὁ θεὸς τὰ κήτη [τὰ με]γάλα καὶ πᾶσαν ψυχὴν [ζῴων ἑρπε]τῶν, ἃ ἐξήγαγεν [τὰ ὕδατα κατὰ γένη αὐτῶν], καὶ πᾶν πετεινὸν πτ[ερωτὸν] κατὰ γένος· καὶ ἴδεν ὁ [θεὸς ὅτι καλά].",
+        "NAB": "God created the great sea monsters and all kinds of swimming creatures with which the water teems, and all kinds of winged birds. God saw how good it was,",
+        "SYN": "И сотворил Бог рыб больших и всякую душу животных пресмыкающихся, которых произвела вода, по роду их, и всякую птицу пернатую по роду ее. И увидел Бог, что _это_ хорошо.",
+        "NEO": "Et Dieu créa les grands animaux aquatiques, et tout être vivant qui se meut, foisonnant dans les eaux, selon leur espèce, et tout volatile ailé selon son espèce. Et Dieu vit que cela était bon.",
+        "VAT_ES": "Dios creó los grandes monstruos marinos, las diversas clases de seres vivientes que llenan las aguas deslizándose en ellas y todas las especies de animales con alas. Y Dios vio que esto era bueno.",
+        "CEI": "Dio creò i grandi mostri marini e tutti gli esseri viventi che guizzano e brulicano nelle acque, secondo la loro specie, e tutti gli uccelli alati secondo la loro specie. E Dio vide che era cosa buona."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יְבָ֧רֶךְ אֹתָ֛/ם אֱלֹהִ֖ים לֵ/אמֹ֑ר פְּר֣וּ וּ/רְב֗וּ וּ/מִלְא֤וּ אֶת הַ/מַּ֨יִם֙ בַּ/יַּמִּ֔ים וְ/הָ/ע֖וֹף יִ֥רֶב בָּ/אָֽרֶץ׃",
+        "VUL": "Benedixitque eis, dicens : Crescite, et multiplicamini, et replete aquas maris : avesque multiplicentur super terram.",
+        "LXX": "καὶ ηὐλόγησεν αὐτὰ ὁ θ[εὸς λέγων] Αὐξάνεσθε καὶ πληθ[ύνεσθε, καὶ] πληρώσατε τὰ ὕδατα [ἐν ταῖς θα]λάσσαις, καὶ τὰ πετε[ινὰ πληθυ]νέσθωσαν ἐπὶ τῆς [γῆς.",
+        "NAB": "and God blessed them, saying, \"Be fertile, multiply, and fill the water of the seas; and let the birds multiply on the earth.\"",
+        "SYN": "И благословил их Бог, говоря: плодитесь и размножайтесь, и наполняйте воды в морях, и птицы да размножаются на земле.",
+        "NEO": "Et Dieu les bénit, en disant : « Soyez féconds et multipliez, et remplissez les eaux de la mer, et que les oiseaux multiplient sur la terre. »",
+        "VAT_ES": "Entonces los bendijo, diciendo: «Sean fecundos y multiplíquense; llenen las aguas de los mares y que las aves se multipliquen sobre la tierra».",
+        "CEI": "Dio li benedisse: \"Siate fecondi e moltiplicatevi e riempite le acque dei mari; gli uccelli si moltiplichino sulla terra\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי עֶ֥רֶב וַֽ/יְהִי בֹ֖קֶר י֥וֹם חֲמִישִֽׁי׃",
+        "VUL": "Et factum est vespere et mane, dies quintus.",
+        "LXX": "καὶ ἐγέ]νετο ἑσπέρα καὶ ἐγ[ένετο πρωί], ἡμέρα πέμπτη.",
+        "NAB": "Evening came, and morning followed - the fifth day.",
+        "SYN": "И был вечер, и было утро: день пятый.",
+        "NEO": "Et il y eut un soir, et il y eut un matin : ce fut le cinquième jour.",
+        "VAT_ES": "Así hubo una tarde y una mañana: este fue el quinto día.",
+        "CEI": "E fu sera e fu mattina: quinto giorno."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֱלֹהִ֗ים תּוֹצֵ֨א הָ/אָ֜רֶץ נֶ֤פֶשׁ חַיָּה֙ לְ/מִינָ֔/הּ בְּהֵמָ֥ה וָ/רֶ֛מֶשׂ וְ/חַֽיְתוֹ אֶ֖רֶץ לְ/מִינָ֑/הּ וַֽ/יְהִי כֵֽן׃",
+        "VUL": "Dixit quoque Deus : Producat terra animam viventem in genere suo, jumenta, et reptilia, et bestias terræ secundum species suas. Factumque est ita.",
+        "LXX": "Καὶ εἶπεν ὁ θεός Ἐξαγαγ[έτω ἡ γῆ ψυχὴν] ζῶσαν κατὰ γένος, [τετράποδα] καὶ ἑρπετὰ καὶ θηρί[α τῆς γῆς κατὰ] γένος, καὶ ἐγένετο [οὕτως].",
+        "NAB": "Then God said, \"Let the earth bring forth all kinds of living creatures: cattle, creeping things, and wild animals of all kinds.\" And so it happened:",
+        "SYN": "И сказал Бог: да произведет земля душу живую по роду ее, скотов, и гадов, и зверей земных по роду их. И стало так.",
+        "NEO": "Dieu dit : « Que la terre fasse sortir des êtres animés selon leur espèce, des animaux domestiques, des reptiles et des bêtes de la terre selon leur espèce. » Et cela fut ainsi.",
+        "VAT_ES": "Dios dijo: «Que la tierra produzca toda clase de seres vivientes: ganado, reptiles y animales salvajes de toda especie». Y así sucedió.",
+        "CEI": "Dio disse: \"La terra produca esseri viventi secondo la loro specie: bestiame, rettili e bestie selvatiche secondo la loro specie\". E così avvenne:"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ אֱלֹהִים֩ אֶת חַיַּ֨ת הָ/אָ֜רֶץ לְ/מִינָ֗/הּ וְ/אֶת הַ/בְּהֵמָה֙ לְ/מִינָ֔/הּ וְ/אֵ֛ת כָּל רֶ֥מֶשׂ הָֽ/אֲדָמָ֖ה לְ/מִינֵ֑/הוּ וַ/יַּ֥רְא אֱלֹהִ֖ים כִּי טֽוֹב׃",
+        "VUL": "Et fecit Deus bestias terræ juxta species suas, et jumenta, et omne reptile terræ in genere suo.\\ Et vidit Deus quod esset bonum,",
+        "LXX": "καὶ ἐποίησεν ὁ θεὸς τὰ [θηρία τῆς γῆς] κατὰ γένος καὶ τὰ κτ[ήνη κατὰ γέ]νος καὶ πάντα τὰ ἑρπ[ετὰ τῆς γῆς] κατὰ γένος αὐτῶν· καὶ ἴδεν ὁ θεὸς ὅτι καλά.",
+        "NAB": "God made all kinds of wild animals, all kinds of cattle, and all kinds of creeping things of the earth. God saw how good it was.",
+        "SYN": "И создал Бог зверей земных по роду их, и скот по роду его, и всех гадов земных по роду их. И увидел Бог, что _это_ хорошо.",
+        "NEO": "Dieu fit les bêtes de la terre selon leur espèce, les animaux domestiques selon leur espèce, et tout ce qui rampe sur la terre selon son espèce. Et Dieu vit que cela était bon.",
+        "VAT_ES": "Dios hizo las diversas clases de animales del campo, las diversas clases de ganado y todos los reptiles de la tierra, cualquiera sea su especie. Y Dios vio que esto era bueno.",
+        "CEI": "Dio fece le bestie selvatiche secondo la loro specie e il bestiame secondo la propria specie e tutti i rettili del suolo secondo la loro specie. E Dio vide che era cosa buona."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֱלֹהִ֔ים נַֽעֲשֶׂ֥ה אָדָ֛ם בְּ/צַלְמֵ֖/נוּ כִּ/דְמוּתֵ֑/נוּ וְ/יִרְדּוּ֩ בִ/דְגַ֨ת הַ/יָּ֜ם וּ/בְ/ע֣וֹף הַ/שָּׁמַ֗יִם וּ/בַ/בְּהֵמָה֙ וּ/בְ/כָל הָ/אָ֔רֶץ וּ/בְ/כָל הָ/רֶ֖מֶשׂ הָֽ/רֹמֵ֥שׂ עַל הָ/אָֽרֶץ׃",
+        "VUL": "et ait : Faciamus hominem ad imaginem et similitudinem nostram : et præsit piscibus maris, et volatilibus cæli, et bestiis, universæque terræ, omnique reptili, quod movetur in terra.",
+        "LXX": "⸂⸆⸃ καὶ εἶπεν ὁ θεός Ποιήσωμεν ἄνθρωπον κατ’ εἰκόνα ἡμετέραν καὶ καθ’ ὁμοίωσιν· καὶ ἀρχέτωσαν τῶν ἰχθύων τῆς θαλάσσης καὶ τῶν πετεινῶν τοῦ οὐρανοῦ καὶ τῶν κτηνῶν καὶ πάσης τῆς γῆς καὶ πάντων τῶν ἑρπετῶν τῶν ἑρπόντων ἐπὶ τῆς γῆς.",
+        "NAB": "Then God said: \"Let us make man in our image, after our likeness. Let them have dominion over the fish of the sea, the birds of the air, and the cattle, and over all the wild animals and all the creatures that crawl on the ground.\"",
+        "SYN": "И сказал Бог: сотворим человека по образу Нашему [и] по подобию Нашему, и да владычествуют они над рыбами морскими, и над птицами небесными, [и над зверями,] и над скотом, и над всею землею, и над всеми гадами, пресмыкающимися по земле.",
+        "NEO": "Puis Dieu dit : « Faisons l’homme à notre image, selon notre ressemblance, et qu’il domine sur les poissons de la mer, sur les oiseaux du ciel, sur les animaux domestiques et sur toute la terre, et sur les reptiles qui rampent sur la terre. »",
+        "VAT_ES": "Dios dijo: «Hagamos al hombre a nuestra imagen, según nuestra semejanza; y que le estén sometidos los peces del mar y las aves del cielo, el ganado, las fieras de la tierra, y todos los animales que se arrastran por el suelo».",
+        "CEI": "E Dio disse: \"Facciamo l'uomo a nostra immagine, a nostra somiglianza, e domini sui pesci del mare e sugli uccelli del cielo, sul bestiame, su tutte le bestie selvatiche e su tutti i rettili che strisciano sulla terra\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יִּבְרָ֨א אֱלֹהִ֤ים אֶת הָֽ/אָדָם֙ בְּ/צַלְמ֔/וֹ בְּ/צֶ֥לֶם אֱלֹהִ֖ים בָּרָ֣א אֹת֑/וֹ זָכָ֥ר וּ/נְקֵבָ֖ה בָּרָ֥א אֹתָֽ/ם׃",
+        "VUL": "Et creavit Deus hominem ad imaginem suam : ad imaginem Dei creavit illum, masculum et feminam creavit eos.",
+        "LXX": "καὶ ἐποίησεν ὁ θεὸς τὸν ἄνθρωπον, κατ’ εἰκόνα θεοῦ ἐποίησεν αὐτόν· ἄρσεν καὶ θῆλυ ἐποίησεν αὐτούς.",
+        "NAB": "God created man in his image; in the divine image he created him; male and female he created them.",
+        "SYN": "И сотворил Бог человека по образу Своему, по образу Божию сотворил его; мужчину и женщину сотворил их.",
+        "NEO": "Et Dieu créa l’homme à son image ; il le créa à l’image de Dieu : il les créa mâle et femelle.",
+        "VAT_ES": "Y Dios creó al hombre a su imagen; lo creó a imagen de Dios, los creó varón y mujer.",
+        "CEI": "Dio creò l'uomo a sua immagine; a immagine di Dio lo creò; maschio e femmina li creò."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יְבָ֣רֶךְ אֹתָ/ם֮ אֱלֹהִים֒ וַ/יֹּ֨אמֶר לָ/הֶ֜ם אֱלֹהִ֗ים פְּר֥וּ וּ/רְב֛וּ וּ/מִלְא֥וּ אֶת הָ/אָ֖רֶץ וְ/כִבְשֻׁ֑/הָ וּ/רְד֞וּ בִּ/דְגַ֤ת הַ/יָּם֙ וּ/בְ/ע֣וֹף הַ/שָּׁמַ֔יִם וּ/בְ/כָל חַיָּ֖ה הָֽ/רֹמֶ֥שֶׂת עַל הָ/אָֽרֶץ׃",
+        "VUL": "Benedixitque illis Deus, et ait : Crescite et multiplicamini, et replete terram, et subjicite eam, et dominamini piscibus maris, et volatilibus cæli, et universis animantibus, quæ moventur super terram.",
+        "LXX": "καὶ ηὐλόγησεν αὐτοὺς ὁ θεὸς λέγων Αὐξάνεσθε καὶ πληθύνεσθε, καὶ πληρώσατε τὴν γῆν καὶ κατακυριεύσατε αὐτῆς, καὶ ἄρχετε τῶν ἰχθύων τῆς θαλάσσης καὶ τῶν πετεινῶν τοῦ οὐρανοῦ καὶ πάντων τῶν κτηνῶν καὶ πάσης τῆς γῆς καὶ πάντων τῶν ἑρπετῶν τῶν ἑρπόντων ἐπὶ τῆς γῆς.",
+        "NAB": "God blessed them, saying: \"Be fertile and multiply; fill the earth and subdue it. Have dominion over the fish of the sea, the birds of the air, and all the living things that move on the earth.\"",
+        "SYN": "И благословил их Бог, и сказал им Бог: плодитесь и размножайтесь, и наполняйте землю, и обладайте ею, и владычествуйте над рыбами морскими [и над зверями,] и над птицами небесными, [и над всяким скотом, и над всею землею,] и над всяким животным, пресмыкающимся по земле.",
+        "NEO": "Et Dieu les bénit, et il leur dit : « Soyez féconds, multipliez, remplissez la terre et soumettez-la, et dominez sur les poissons de la mer, sur les oiseaux du ciel et sur tout animal qui se meut sur la terre. »",
+        "VAT_ES": "Y los bendijo, diciéndoles: «Sean fecundos, multiplíquense, llenen la tierra y sométanla; dominen a los peces del mar, a las aves del cielo y a todos los vivientes que se mueven sobre la tierra».",
+        "CEI": "Dio li benedisse e disse loro: \"Siate fecondi e moltiplicatevi, riempite la terra; soggiogatela e dominate sui pesci del mare e sugli uccelli del cielo e su ogni essere vivente, che striscia sulla terra\"."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֱלֹהִ֗ים הִנֵּה֩ נָתַ֨תִּי לָ/כֶ֜ם אֶת כָּל עֵ֣שֶׂב זֹרֵ֣עַ זֶ֗רַע אֲשֶׁר֙ עַל פְּנֵ֣י כָל הָ/אָ֔רֶץ וְ/אֶת כָּל הָ/עֵ֛ץ אֲשֶׁר בּ֥/וֹ פְרִי עֵ֖ץ זֹרֵ֣עַ זָ֑רַע לָ/כֶ֥ם יִֽהְיֶ֖ה לְ/אָכְלָֽה׃",
+        "VUL": "Dixitque Deus : Ecce dedi vobis omnem herbam afferentem semen super terram, et universa ligna quæ habent in semetipsis sementem generis sui, ut sint vobis in escam :",
+        "LXX": "καὶ εἶπεν ὁ θεός Ἰδοὺ δέδωκα ὑμῖν πᾶν χόρτον σπόριμον σπεῖρον σπέρμα, ὅ ἐστιν ἐπάνω πάσης τῆς γῆς· καὶ πᾶν ξύλον, ὃ ἔχει ἐν ἑαυτῷ καρπὸν σπέρματος σπορίμου· [ὑ]μῖν ἔσται εἰς βρῶσιν,",
+        "NAB": "God also said: \"See, I give you every seed-bearing plant all over the earth and every tree that has seed-bearing fruit on it to be your food;",
+        "SYN": "И сказал Бог: вот, Я дал вам всякую траву, сеющую семя, какая есть на всей земле, и всякое дерево, у которого плод древесный, сеющий семя; -- вам _сие_ будет в пищу;",
+        "NEO": "Et Dieu dit : « Voici que je vous donne toute herbe portant semence à la surface de toute la terre, et tout arbre qui porte un fruit d’arbre ayant semence ; ce sera pour votre nourriture.",
+        "VAT_ES": "Y continuó diciendo: «Yo les doy todas las plantas que producen semilla sobre la tierra, y todos los árboles que dan frutos con semilla: ellos les servirán de alimento.",
+        "CEI": "Poi Dio disse: \"Ecco, io vi do ogni erba che produce seme e che è su tutta la terra e ogni albero in cui è il frutto, che produce seme: saranno il vostro cibo."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וּֽ/לְ/כָל חַיַּ֣ת הָ֠/אָרֶץ וּ/לְ/כָל ע֨וֹף הַ/שָּׁמַ֜יִם וּ/לְ/כֹ֣ל רוֹמֵ֣שׂ עַל הָ/אָ֗רֶץ אֲשֶׁר בּ/וֹ֙ נֶ֣פֶשׁ חַיָּ֔ה אֶת כָּל יֶ֥רֶק עֵ֖שֶׂב לְ/אָכְלָ֑ה וַֽ/יְהִי כֵֽן׃",
+        "VUL": "et cunctis animantibus terræ, omnique volucri cæli, et universis quæ moventur in terra, et in quibus est anima vivens, ut habeant ad vescendum. Et factum est ita.",
+        "LXX": "καὶ πᾶσι [τοῖ]ς θηρίοις τῆς γῆς καὶ πᾶσι [τοῖ]ς πετεινοῖς τοῦ οὐρανοῦ [καὶ π]αντὶ ἑρπετῷ τῷ ἕρπον[τι ἐπὶ τῆς] γῆς, ὃ ἔχει ἐν ἑαυτῷ [ψυχὴ]ν ζωῆς· καὶ πάντα χόρ[τον χλ]ωρὸν εἰς βρῶσιν. καὶ [ἐγένετ]ο οὕτως.",
+        "NAB": "and to all the animals of the land, all the birds of the air, and all the living creatures that crawl on the ground, I give all the green plants for food.\" And so it happened.",
+        "SYN": "а всем зверям земным, и всем птицам небесным, и всякому [гаду,] пресмыкающемуся по земле, в котором душа живая, _дал_ Я всю зелень травную в пищу. И стало так.",
+        "NEO": "Et à tout animal de la terre, et à tout oiseau du ciel, et à tout ce qui se meut sur la terre, ayant en soi un souffle de vie, je donne toute herbe verte pour nourriture. » Et cela fut ainsi.",
+        "VAT_ES": "Y a todas la fieras de la tierra, a todos los pájaros del cielo y a todos los vivientes que se arrastran por el suelo, les doy como alimento el pasto verde». Y así sucedió.",
+        "CEI": "A tutte le bestie selvatiche, a tutti gli uccelli del cielo e a tutti gli esseri che strisciano sulla terra e nei quali è alito di vita, io do in cibo ogni erba verde\". E così avvenne."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤רְא אֱלֹהִים֙ אֶת כָּל אֲשֶׁ֣ר עָשָׂ֔ה וְ/הִנֵּה ט֖וֹב מְאֹ֑ד וַֽ/יְהִי עֶ֥רֶב וַֽ/יְהִי בֹ֖קֶר י֥וֹם הַ/שִּׁשִּֽׁי׃",
+        "VUL": "Viditque Deus cuncta quæ fecerat, et erant valde bona. Et factum est vespere et mane, dies sextus.",
+        "LXX": "[καὶ ἴδεν ὁ] θεὸς τὰ πάντα ὅσα ἐποίη[σεν, καὶ] ἰδοὺ καλὰ λίαν. καὶ ἐγέ[νετο ἑσ]πέρα καὶ ἐγένετο πρωί, [ἡμέρα ἕ]κτη. ⸆",
+        "NAB": "God looked at everything he had made, and he found it very good. Evening came, and morning followed - the sixth day.",
+        "SYN": "И увидел Бог все, что Он создал, и вот, хорошо весьма. И был вечер, и было утро: день шестой.",
+        "NEO": "Et Dieu vit tout ce qu’il avait fait, et voici cela était très bon.",
+        "VAT_ES": "Dios miró todo lo que había hecho, y vio que era muy bueno. Así hubo una tarde y una mañana: este fue el sexto día.",
+        "CEI": "Dio vide quanto aveva fatto, ed ecco, era cosa molto buona. E fu sera e fu mattina: sesto giorno."
+      }
+    }
+  }
+}

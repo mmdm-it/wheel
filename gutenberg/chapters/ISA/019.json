@@ -1,0 +1,463 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_019",
+  "book_key": "ISA",
+  "sequence": 19,
+  "chapter_in": {
+    "MT": 19,
+    "VUL": 19,
+    "LXX": 19
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מַשָּׂ֖א מִצְרָ֑יִם הִנֵּ֨ה יְהוָ֜ה רֹכֵ֨ב עַל עָ֥ב קַל֙ וּ/בָ֣א מִצְרַ֔יִם וְ/נָע֞וּ אֱלִילֵ֤י מִצְרַ֨יִם֙ מִ/פָּנָ֔י/ו וּ/לְבַ֥ב מִצְרַ֖יִם יִמַּ֥ס בְּ/קִרְבּֽ/וֹ׃",
+        "LXX": "Ὅρασις Αἰγύπτου. Ἰδοὺ Κύριος κάθηται ἐπὶ νεφέλης κούφης καὶ ἥξει εἰς Αἴγυπτον, καὶ σεισθήσεται τὰ χειροποίητα Αἰγύπτου ἀπὸ προσώπου αὐτοῦ, καὶ ἡ καρδία αὐτῶν ἡττηθήσεται ἐν αὐτοῖς.",
+        "VUL": "Onus Ægypti. [Ecce Dominus ascendet super nubem levem,/ et ingredietur Ægyptum,/ et commovebuntur simulacra Ægypti a facie ejus,/ et cor Ægypti tabescet in medio ejus,/",
+        "SYN": "Пророчество о Египте. - Вот, Господь восседит на облаке легком и грядет в Египет. И потрясутся от лица Его идолы Египетские, и сердце Египта растает в нем.",
+        "NEO": "Oracle sur l’Égypte.",
+        "NAB": "Oracle on Egypt: See, the LORD is riding on a swift cloud on his way to Egypt; The idols of Egypt tremble before him, the hearts of the Egyptians melt within them.",
+        "VAT_ES": "Oráculo sobre Egipto. &iexcl;Miren al Señor que entra en Egipto, montado sobre una nube ligera! Ante él vacilan los ídolos de Egipto, y el corazón de Egipto se disuelve en su interior.",
+        "CEI": "Oracolo sull'Egitto. Ecco, il Signore cavalca una nube leggera ed entra in Egitto. Crollano gli idoli d'Egitto davanti a lui e agli Egiziani vien meno il cuore nel petto."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/סִכְסַכְתִּ֤י מִצְרַ֨יִם֙ בְּ/מִצְרַ֔יִם וְ/נִלְחֲמ֥וּ אִישׁ בְּ/אָחִ֖י/ו וְ/אִ֣ישׁ בְּ/רֵעֵ֑/הוּ עִ֣יר בְּ/עִ֔יר מַמְלָכָ֖ה בְּ/מַמְלָכָֽה׃",
+        "LXX": "καὶ ἐπεγερθήσονται Αἰγύπτιοι ἐπ’ Αἰγυπτίους, καὶ πολεμήσει ἄνθρωπος τὸν ἀδελφὸν αὐτοῦ καὶ ἄνθρωπος τὸν πλησίον αὐτοῦ, πόλις ἐπὶ πόλιν καὶ νομὸς ἐπὶ νομόν.",
+        "VUL": "et concurrere faciam Ægyptios adversus Ægyptios ;/ et pugnabit vir contra fratrem suum, et vir contra amicum suum,/ civitas adversus civitatem, regnum adversus regnum./",
+        "SYN": "Я вооружу Египтян против Египтян; и будут сражаться брат против брата и друг против друга, город с городом, царство с царством.",
+        "NEO": "Je pousserai l’Égypte contre l’Égypte, et ils se battront frère contre frère, ami contre ami, ville contre ville, royaume contre royaume.",
+        "NAB": "I will rouse Egypt against Egypt: brother will war against brother, Neighbor against neighbor, city against city, kingdom against kindgom.",
+        "VAT_ES": "Yo incitaré a egipcios contra egipcios y combatirán hermano contra hermano, amigo contra amigo, ciudad contra ciudad, reino contra reino.",
+        "CEI": "Aizzerò gli Egiziani contro gli Egiziani: combatterà fratello contro fratello, uomo contro uomo, città contro città, regno contro regno."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/נָבְקָ֤ה רֽוּחַ מִצְרַ֨יִם֙ בְּ/קִרְבּ֔/וֹ וַ/עֲצָת֖/וֹ אֲבַלֵּ֑עַ וְ/דָרְשׁ֤וּ אֶל הָֽ/אֱלִילִים֙ וְ/אֶל הָ֣/אִטִּ֔ים וְ/אֶל הָ/אֹב֖וֹת וְ/אֶל הַ/יִּדְּעֹנִֽים׃",
+        "LXX": "καὶ ταραχθήσεται τὸ πνεῦμα τῶν Αἰγυπτίων ἐν αὐτοῖς, καὶ τὴν βουλὴν αὐτῶν διασκεδάσω, καὶ ἐπερωτήσουσιν τοὺς θεοὺς αὐτῶν καὶ τὰ ἀγάλματα αὐτῶν καὶ τοὺς ἐκ τῆς γῆς φωνοῦντας καὶ τοὺς ἐγγαστριμύθους.",
+        "VUL": "Et dirumpetur spiritus Ægypti in visceribus ejus,/ et consilium ejus præcipitabo ;/ et interrogabunt simulacra sua, et divinos suos,/ et pythones, et ariolos./",
+        "SYN": "И дух Египта изнеможет в нем, и разрушу совет его, и прибегнут они к идолам и к чародеям, и к вызывающим мертвых и к гадателям.",
+        "NEO": "L’esprit de l’Égypte s’évanouira en elle, et j’anéantirai son conseil ; ils interrogeront les idoles et les enchanteurs, les nécromanciens et les devins.",
+        "NAB": "The courage of the Egyptians ebbs away within them, and I will bring to nought their counsel; They shall consult idols and charmers, ghosts and spirits.",
+        "VAT_ES": "El espíritu de Egipto se desvanecerá en su interior, yo confundiré sus designios, y ellos consultarán a ídolos y encantadores, a nigromantes y adivinos.",
+        "CEI": "Gli Egiziani perderanno il senno e io distruggerò il loro consiglio; per questo ricorreranno agli idoli e ai maghi, ai negromanti e agli indovini."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/סִכַּרְתִּי֙ אֶת מִצְרַ֔יִם בְּ/יַ֖ד אֲדֹנִ֣ים קָשֶׁ֑ה וּ/מֶ֤לֶךְ עַז֙ יִמְשָׁל בָּ֔/ם נְאֻ֥ם הָ/אָד֖וֹן יְהוָ֥ה צְבָאֽוֹת׃",
+        "LXX": "καὶ παραδώσω Αἴγυπτον εἰς χεῖρας ἀνθρώπων κυρίων σκληρῶν, καὶ βασιλεῖς σκληροὶ κυριεύσουσιν αὐτῶν. τάδε λέγει Κύριος σαβαώθ.",
+        "VUL": "Et tradam Ægyptum in manu dominorum crudelium,/ et rex fortis dominabitur eorum,/ ait Dominus Deus exercituum./",
+        "SYN": "И предам Египтян в руки властителя жестокого, и свирепый царь будет господствовать над ними, говорит Господь, Господь Саваоф.",
+        "NEO": "Je livrerai l’Égypte entre les mains d’un maître dur, et un roi redoutable dominera sur eux, — oracle du Seigneur, \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "I will deliver Egypt into the power of a cruel master, A harsh king who shall rule over them, says the Lord, the LORD of hosts.",
+        "VAT_ES": "Entregaré a los egipcios en manos de un amo implacable, y un rey cruel los dominará –oráculo del Señor de los ejércitos–.",
+        "CEI": "Ma io metterò gli Egiziani in mano a un duro padrone, un re crudele li dominerà. Oracolo del Signore, Dio degli eserciti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/נִשְּׁתוּ מַ֖יִם מֵֽ/הַ/יָּ֑ם וְ/נָהָ֖ר יֶחֱרַ֥ב וְ/יָבֵֽשׁ׃",
+        "LXX": "καὶ πίονται οἱ Αἰγύπτιοι ὕδωρ τὸ παρὰ θάλασσαν, ὁ δὲ ποταμὸς ἐκλείψει καὶ ξηρανθήσεται·",
+        "VUL": "Et arescet aqua de mari,/ et fluvius desolabitur atque siccabitur./",
+        "SYN": "И истощатся воды в море и река иссякнет и высохнет;",
+        "NEO": "Les eaux de la mer tariront, le fleuve s’épuisera et se desséchera.",
+        "NAB": "The waters shall be drained from the sea, the river shall shrivel and dry up;",
+        "VAT_ES": "Las aguas del mar se secarán y el Río quedará árido y reseco;",
+        "CEI": "Si prosciugheranno le acque del mare, il fiume si inaridirà e seccherà."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/הֶאֶזְנִ֣יחוּ נְהָר֔וֹת דָּלֲל֥וּ וְ/חָרְב֖וּ יְאֹרֵ֣י מָצ֑וֹר קָנֶ֥ה וָ/ס֖וּף קָמֵֽלוּ׃",
+        "LXX": "καὶ ἐκλείψουσιν οἱ ποταμοὶ καὶ αἱ διώρυχες τοῦ ποταμοῦ, καὶ ξηρανθήσεται πᾶσα συναγωγὴ ὕδατος καὶ ἐν παντὶ ἕλει καλάμου καὶ παπύρου,",
+        "VUL": "Et deficient flumina,/ attenuabuntur et siccabuntur rivi aggerum,/ calamus et juncus marcescet./",
+        "SYN": "и оскудеют реки, и каналы Египетские обмелеют и высохнут; камыш и тростник завянут.",
+        "NEO": "Les rivières deviendront infectes ; les canaux d’Égypte baisseront et se dessécheront ; les joncs et les roseaux se flétriront.",
+        "NAB": "Its streams shall become foul, and the canals of Egypt shall dwindle and dry up. Reeds and rushes shall wither away,",
+        "VAT_ES": "los canales apestarán, los Nilos de Egipto bajarán hasta secarse, las cañas y los juncos se marchitarán.",
+        "CEI": "I suoi canali diventeranno putridi, diminuiranno e seccheranno i torrenti dell'Egitto, canne e giunchi ingialliranno."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "עָר֥וֹת עַל יְא֖וֹר עַל פִּ֣י יְא֑וֹר וְ/כֹל֙ מִזְרַ֣ע יְא֔וֹר יִיבַ֥שׁ נִדַּ֖ף וְ/אֵינֶֽ/נּוּ׃",
+        "LXX": "καὶ τὸ ἄχι τὸ χλωρὸν πᾶν τὸ κύκλῳ τοῦ ποταμοῦ καὶ τὸ σπειρόμενον διὰ τοῦ ποταμοῦ ξηρανθήσεται ἀνεμόφθορον.",
+        "VUL": "Nudabitur alveus rivi a fonte suo,/ et omnis sementis irrigua/ siccabitur, arescet, et non erit./",
+        "SYN": "Поля при реке, по берегам реки, и все, посеянное при реке, засохнет, развеется и исчезнет.",
+        "NEO": "Les prairies le long du Nil, sur les bords du Nil, tous les champs ensemencés le long du Nil, sécheront, s’évanouiront, et il n’y en aura plus.",
+        "NAB": "and bulrushes on the bank of the Nile; All the sown land along the Nile shall dry up and blow away, and be no more.",
+        "VAT_ES": "Toda la vegetación de los bordes del Nilo y todas las plantas sembradas junto a él se secarán: serán arrasadas y desaparecerán.",
+        "CEI": "I giunchi sulle rive e alla foce del Nilo e tutti i seminati del Nilo seccheranno, saranno dispersi dal vento, non saranno più."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אָנוּ֙ הַ/דַּיָּגִ֔ים וְ/אָ֣בְל֔וּ כָּל מַשְׁלִיכֵ֥י בַ/יְא֖וֹר חַכָּ֑ה וּ/פֹרְשֵׂ֥י מִכְמֹ֛רֶת עַל פְּנֵי מַ֖יִם אֻמְלָֽלוּ׃",
+        "LXX": "καὶ στενάξουσιν οἱ ἁλεεῖς, καὶ στενάξουσιν πάντες οἱ βάλλοντες ἄγκιστρα εἰς τὸν ποταμόν, καὶ οἱ βάλλοντες σαγήνας καὶ οἱ ἀμφιβολεῖς πενθήσουσιν.",
+        "VUL": "Et mrebunt piscatores,/ et lugebunt omnes mittentes in flumen hamum ;/ et expandentes rete super faciem aquarum emarcescent./",
+        "SYN": "И восплачут рыбаки, и возрыдают все, бросающие уду в реку, и ставящие сети в воде впадут в уныние;",
+        "NEO": "Les pêcheurs gémiront et se lamenteront, tous ceux qui jettent l’hameçon dans le fleuve ; ceux qui tendent le filet sur la face des eaux seront désolés.",
+        "NAB": "The fishermen shall mourn and lament, all who cast hook in the Nile; Those who spread their nets in the water shall pine away.",
+        "VAT_ES": "Gemirán los pescadores, los que arrojan al anzuelo en el Nilo estarán de duelo, y desfallecerán los que echan la red sobre las aguas.",
+        "CEI": "I pescatori si lamenteranno, gemeranno quanti gettano l'amo nel Nilo, quanti stendono le reti sull'acqua saranno desolati."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וּ/בֹ֛שׁוּ עֹבְדֵ֥י פִשְׁתִּ֖ים שְׂרִיק֑וֹת וְ/אֹרְגִ֖ים חוֹרָֽי׃",
+        "LXX": "καὶ αἰσχύνη λήμψεται τοὺς ἐργαζομένους τὸ λίνον τὸ σχιστὸν καὶ τοὺς ἐργαζομένους τὴν βύσσον,",
+        "VUL": "Confundentur qui operabantur linum,/ pectentes et texentes subtilia./",
+        "SYN": "и будут в смущении обрабатывающие лен и ткачи белых полотен;",
+        "NEO": "Ceux qui travaillent le lin peigné, et ceux qui tissent le coton seront consternés.",
+        "NAB": "The linen-workers shall be disappointed, the combers and weavers shall turn pale;",
+        "VAT_ES": "Los que trabajan el lino quedarán defraudados, las cardadoras y los tejedores se pondrán lívidos,",
+        "CEI": "Saranno delusi i lavoratori del lino, le cardatrici e i tessitori impallidiranno;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/הָי֥וּ שָׁתֹתֶ֖י/הָ מְדֻכָּאִ֑ים כָּל עֹ֥שֵׂי שֶׂ֖כֶר אַגְמֵי נָֽפֶשׁ׃",
+        "LXX": "καὶ ἔσονται οἱ ἐργαζόμενοι αὐτὰ ἐν ὀδύνῃ, καὶ πάντες οἱ ποιοῦντες τὸν ζῦθον λυπηθήσονται καὶ τὰς ψυχὰς πονέσουσιν.",
+        "VUL": "Et erunt irrigua ejus flaccentia :/ omnes qui faciebant lacunas ad capiendos pisces./",
+        "SYN": "и будут сокрушены сети, и все, которые содержат садки для живой рыбы, упадут в духе.",
+        "NEO": "Les colonnes de l’Égypte seront brisées, tous les artisans seront dans l’abattement.",
+        "NAB": "The spinners shall be crushed, all the hired laborers shall be despondent.",
+        "VAT_ES": "sus tejedores se sentirán acongojados y todos los asalariados, afligidos.",
+        "CEI": "i tessitori saranno avviliti, tutti i salariati saranno costernati."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "אַךְ אֱוִלִים֙ שָׂ֣רֵי צֹ֔עַן חַכְמֵי֙ יֹעֲצֵ֣י פַרְעֹ֔ה עֵצָ֖ה נִבְעָרָ֑ה אֵ֚יךְ תֹּאמְר֣וּ אֶל פַּרְעֹ֔ה בֶּן חֲכָמִ֥ים אֲנִ֖י בֶּן מַלְכֵי קֶֽדֶם׃",
+        "LXX": "καὶ μωροὶ ἔσονται οἱ ἄρχοντες Τάνεως· οἱ σοφοὶ σύμβουλοι τοῦ βασιλέως, ἡ βουλὴ αὐτῶν μωρανθήσεται. πῶς ἐρεῖτε τῷ βασιλεῖ Υἱοὶ συνετῶν ἡμεῖς, υἱοὶ βασιλέων τῶν ἐξ ἀρχῆς;",
+        "VUL": "Stulti principes Taneos,/ sapientes consiliarii Pharaonis/ dederunt consilium insipiens./ Quomodo dicetis Pharaoni :/ Filius sapientium ego,/ filius regum antiquorum ?/",
+        "SYN": "Так! обезумели князья Цоанские; совет мудрых советников фараоновых стал бессмысленным. Как скажете вы фараону: \"я сын мудрецов, сын царей древних?\"",
+        "NEO": "Les princes de Tanis ne sont que des insensés ; des sages conseillers de Pharaon les conseils sont stupides. Comment osez-vous dire à Pharaon : « Je suis fils des sages, fils des rois antiques ? »",
+        "NAB": "Utter fools are the princes of Zoan! the wisest of Pharaoh's advisers give stupid counsel. How can you say to Pharaoh, \"I am a disciple of wise men, of ancient kings\"?",
+        "VAT_ES": "&iexcl;Qué necios son los príncipes de Soán! &iexcl;Los más sabios consejeros del Faraón forman un consejo de estúpidos! &iquest;Como pueden ustedes decir al Faraón: «Yo soy hijo de sabios, hijo de antiguos reyes»?",
+        "CEI": "Quanto sono stolti i principi di Tanis! I più saggi consiglieri del faraone sono uno stupido consiglio. Come osate dire al faraone: \"Sono figlio di saggi, figlio di re antichi\"?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אַיָּ/ם֙ אֵפ֣וֹא חֲכָמֶ֔י/ךָ וְ/יַגִּ֥ידוּ נָ֖א לָ֑/ךְ וְ/יֵ֣דְע֔וּ מַה יָּעַ֛ץ יְהוָ֥ה צְבָא֖וֹת עַל מִצְרָֽיִם׃",
+        "LXX": "ποῦ εἰσιν νῦν οἱ σοφοί σου; καὶ ἀναγγειλάτωσάν σοι καὶ εἰπάτωσαν τί βεβούλευται Κύριος σαβαὼθ ἐπ’ Αἴγυπτον.",
+        "VUL": "Ubi nunc sunt sapientes tui ?/ annuntient tibi, et indicent/ quid cogitaverit Dominus exercituum super Ægyptum./",
+        "SYN": "Где они? где твои мудрецы? пусть они теперь скажут тебе; пусть узнают, что Господь Саваоф определил о Египте.",
+        "NEO": "Où sont-ils, tes sages ? Qu’ils t’annoncent donc, qu’ils devinent ce que \\+w Yahweh|strong=\"H3068\"\\+w** des armées a décrété contre l’Égypte !",
+        "NAB": "Where then are your wise men? Let them tell you and make known What the LORD of hosts has planned against Egypt.",
+        "VAT_ES": "&iquest;Dónde están tus sabios? &iexcl;Vamos, que te anuncien y te den a conocer lo que el Señor de los ejércitos han proyectado contra Egipto!",
+        "CEI": "Dove sono, dunque, i tuoi saggi? Ti rivelino e manifestino quanto ha deciso il Signore degli eserciti a proposito dell'Egitto."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "נֽוֹאֲלוּ֙ שָׂ֣רֵי צֹ֔עַן נִשְּׁא֖וּ שָׂ֣רֵי נֹ֑ף הִתְע֥וּ אֶת מִצְרַ֖יִם פִּנַּ֥ת שְׁבָטֶֽי/הָ׃",
+        "LXX": "ἐξέλιπον οἱ ἄρχοντες Τάνεως, καὶ ὑψώθησαν οἱ ἄρχοντες Μέμφεως, καὶ πλανήσουσιν Αἴγυπτον κατὰ φυλάς.",
+        "VUL": "Stulti facti sunt principes Taneos,/ emarcuerunt principes Mempheos ;/ deceperunt Ægyptum, angulum populorum ejus./",
+        "SYN": "Обезумели князья Цоанские; обманулись князья Мемфисские, и совратил Египет с пути главы племен его.",
+        "NEO": "Les princes de Tanis ont perdu le sens, les princes de Memphis sont dans l’illusion ; ils égarent l’Égypte, eux, la pierre angulaire de ses castes.",
+        "NAB": "The princes of Zoan have become fools, the princes of Memphis have been deceived. The chiefs of her tribes have led Egypt astray.",
+        "VAT_ES": "&iexcl;Se han enloquecido los príncipes de Soán, se ilusionan los príncipes de Nof, las piedras angulares de sus tribus han extraviado a Egipto!",
+        "CEI": "Stolti sono i principi di Tanis; si ingannano i principi di Menfi. Hanno fatto traviare l'Egitto i capi delle sue tribù."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "יְהוָ֛ה מָסַ֥ךְ בְּ/קִרְבָּ֖/הּ ר֣וּחַ עִוְעִ֑ים וְ/הִתְע֤וּ אֶת מִצְרַ֨יִם֙ בְּ/כָֽל מַעֲשֵׂ֔/הוּ כְּ/הִתָּע֥וֹת שִׁכּ֖וֹר בְּ/קִיאֽ/וֹ׃",
+        "LXX": "Κύριος γὰρ ἐκέρασεν αὐτοῖς πνεῦμα πλανήσεως, καὶ ἐπλάνησαν Αἴγυπτον ἐν πᾶσι τοῖς ἔργοις αὐτῶν, ὡς πλανᾶται ὁ μεθύων καὶ ὁ ἐμῶν ἅμα.",
+        "VUL": "Dominus miscuit in medio ejus spiritum vertiginis ;/ et errare fecerunt Ægyptum in omni opere suo,/ sicut errat ebrius et vomens./",
+        "SYN": "Господь послал в него дух опьянения; и они ввели Египет в заблуждение во всех делах его, подобно тому, как пьяный бродит по блевотине своей.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** a répandu au milieu d’elle un esprit de vertige, et ils font errer l’Égypte dans tout ce qu’elle fait, comme erre un homme ivre dans son vomissement.",
+        "NAB": "The LORD has prepared among them a spirit of dizziness, And they have made Egypt stagger in whatever she does, as a drunkard staggers in his vomit.",
+        "VAT_ES": "El Señor ha derramado en medio de ellos un espíritu de vértigo, y ellos extravían a Egipto en todo lo que emprende, como pierde pie el borracho cuando vomita.",
+        "CEI": "Il Signore ha mandato in mezzo a loro uno spirito di smarrimento; essi fanno smarrire l'Egitto in ogni impresa, come barcolla un ubriaco nel vomito."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא יִהְיֶ֥ה לְ/מִצְרַ֖יִם מַֽעֲשֶׂ֑ה אֲשֶׁ֧ר יַעֲשֶׂ֛ה רֹ֥אשׁ וְ/זָנָ֖ב כִּפָּ֥ה וְ/אַגְמֽוֹן׃",
+        "LXX": "καὶ οὐκ ἔσται τοῖς Αἰγυπτίοις ἔργον ὃ ποιήσει κεφαλὴν καὶ οὐρὰν καὶ ἀρχὴν καὶ τέλος.",
+        "VUL": "Et non erit Ægypto opus/ quod faciat caput et caudam,/ incurvantem et refrenantem./",
+        "SYN": "И не будет в Египте такого дела, которое совершить умели бы голова и хвост, пальма и трость.",
+        "NEO": "Et il n’y aura aucune œuvre qui profite à l’Égypte, de tout ce que pourra faire la tête ou la queue, la palme ou le jonc.",
+        "NAB": "Egypt shall have no work to do for head or tail, palm branch or reed.",
+        "VAT_ES": "Y no será para provecho de Egipto nada de lo que hagan la cabeza y la cola, la palmera y el junco.",
+        "CEI": "Non riuscirà all'Egitto qualunque opera faccia: il capo o la coda, la palma o il giunco."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "בַּ/יּ֣וֹם הַ/ה֔וּא יִֽהְיֶ֥ה מִצְרַ֖יִם כַּ/נָּשִׁ֑ים וְ/חָרַ֣ד וּ/פָחַ֗ד מִ/פְּנֵי֙ תְּנוּפַת֙ יַד יְהוָ֣ה צְבָא֔וֹת אֲשֶׁר ה֖וּא מֵנִ֥יף עָלָֽי/ו׃",
+        "LXX": "Τῇ δὲ ἡμέρᾳ ἐκείνῃ ἔσονται οἱ Αἰγύπτιοι ὡς γυναῖκες ἐν φόβῳ καὶ ἐν τρόμῳ ἀπὸ προσώπου τῆς χειρὸς Κυρίου σαβαὼθ ἣν αὐτὸς ἐπιβαλεῖ αὐτοῖς.",
+        "VUL": "In die illa erit Ægyptus quasi mulieres ;/ et stupebunt, et timebunt/ a facie commotionis manus Domini exercituum,/ quam ipse movebit super eam./",
+        "SYN": "В тот день Египтяне будут подобны женщинам, и вострепещут и убоятся движения руки Господа Саваофа, которую Он поднимет на них.",
+        "NEO": "En ce jour-là, l’Égypte sera comme les femmes : elle tremblera et s’épouvantera en voyant se lever la main de \\+w Yahweh|strong=\"H3068\"\\+w** des armées ; qu’il lève contre elle.",
+        "NAB": "On that day the Egyptians shall be like women, trembling with fear, because of the LORD of hosts shaking his fist at them.",
+        "VAT_ES": "Aquel día, los egipcios serán como mujeres; temblarán y estarán aterrorizados ante la mano amenazadora del Señor de los ejércitos, que él agitará contra ellos.",
+        "CEI": "In quel giorno gli Egiziani diventeranno come femmine, tremeranno e temeranno all'agitarsi della mano che il Signore degli eserciti agiterà contro di loro."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ֠/הָיְתָה אַדְמַ֨ת יְהוּדָ֤ה לְ/מִצְרַ֨יִם֙ לְ/חָגָּ֔א כֹּל֩ אֲשֶׁ֨ר יַזְכִּ֥יר אֹתָ֛/הּ אֵלָ֖י/ו יִפְחָ֑ד מִ/פְּנֵ֗י עֲצַת֙ יְהוָ֣ה צְבָא֔וֹת אֲשֶׁר ה֖וּא יוֹעֵ֥ץ עָלָֽי/ו׃",
+        "LXX": "καὶ ἔσται ἡ χώρα τῶν Ἰουδαίων τοῖς Αἰγυπτίοις εἰς φόβηθρον· πᾶς ὃς ἐὰν ὀνομάσῃ αὐτὴν αὐτοῖς, φοβηθήσονται διὰ τὴν βουλὴν ἣν βεβούλευται Κύριος ἐπ’ αὐτήν.",
+        "VUL": "Et erit terra Juda/ Ægypto in pavorem ;/ omnis qui illius fuerit recordatus pavebit/ a facie consilii Domini exercituum,/ quod ipse cogitavit super eam./",
+        "SYN": "Земля Иудина сделается ужасом для Египта; кто вспомнит о ней, тот затрепещет от определения Господа Саваофа, которое Он постановил о нем.",
+        "NEO": "Et le pays de Juda sera pour l’Égypte un sujet de terreur ; chaque fois qu’on le lui rappellera, elle tremblera, à cause de l’arrêt de \\+w Yahweh|strong=\"H3068\"\\+w** des armées, qu’il a porté contre elle.",
+        "NAB": "And the land of Judah shall be a terror to the Egyptians. Every time they remember Judah, they shall stand in dread because of the plan which the LORD of hosts has in mind for them.",
+        "VAT_ES": "La tierra de Judá será el espanto de Egipto: cada vez que se la mencione, Egipto temblará a causa del designio que el Señor ha proyectado contra él.",
+        "CEI": "Il paese di Giuda sarà il terrore degli Egiziani; quando se ne parlerà, ne avranno spavento, a causa del proposito che il Signore degli eserciti ha formulato sopra di esso."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "בַּ/יּ֣וֹם הַ/ה֡וּא יִהְיוּ֩ חָמֵ֨שׁ עָרִ֜ים בְּ/אֶ֣רֶץ מִצְרַ֗יִם מְדַבְּרוֹת֙ שְׂפַ֣ת כְּנַ֔עַן וְ/נִשְׁבָּע֖וֹת לַ/יהוָ֣ה צְבָא֑וֹת עִ֣יר הַ/הֶ֔רֶס יֵאָמֵ֖ר לְ/אֶחָֽת׃",
+        "LXX": "Τῇ ἡμέρᾳ ἐκείνῃ ἔσονται πέντε πόλεις ἐν Αἰγύπτῳ λαλοῦσαι τῇ γλώσσῃ τῇ Χαναανείτιδι καὶ ὀμνύντες τῷ ὀνόματι Κυρίου· πόλις ἀσεδὲκ κληθήσεται ἡ μία πόλις.",
+        "VUL": "In die illa erunt quinque civitates/ in terra Ægypti/ loquentes lingua Chanaan,/ et jurantes per Dominum exercituum :/ Civitas solis vocabitur una./",
+        "SYN": "В тот день пять городов в земле Египетской будут говорить языком Ханаанским и клясться Господом Саваофом; один назовется городом солнца.",
+        "NEO": "En ce jour-là, il y aura cinq villes sur la terre d’Égypte, qui parleront la langue de Chanan, et qui prêteront serment à \\+w Yahweh|strong=\"H3068\"\\+w** des armées ; l’une d’elles s’appellera Ville du Soleil.",
+        "NAB": "On that day there shall be five cities in the land of Egypt speaking the language of Canaan and swearing by the LORD of hosts; one shall be called \"City of the Sun.\"",
+        "VAT_ES": "Aquel día, habrá en la tierra de Egipto cinco ciudades que hablarán la lengua de Canaán y jurarán por el Señor de los ejércitos; una de ellas se llamará Ciudad del Sol.",
+        "CEI": "In quel giorno ci saranno cinque città nell'Egitto che parleranno la lingua di Cànaan e giureranno per il Signore degli eserciti; una di esse si chiamerà Città del sole."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "בַּ/יּ֣וֹם הַ/ה֗וּא יִֽהְיֶ֤ה מִזְבֵּ֨חַ֙ לַֽ/יהוָ֔ה בְּ/ת֖וֹךְ אֶ֣רֶץ מִצְרָ֑יִם וּ/מַצֵּבָ֥ה אֵֽצֶל גְּבוּלָ֖/הּ לַֽ/יהוָֽה׃",
+        "LXX": "Τῇ ἡμέρᾳ ἐκείνῃ ἔσται θυσιαστήριον τῷ κυρίῳ ἐν χώρᾳ Αἰγυπτίων, καὶ στήλη πρὸς τὸ ὅριον αὐτῆς τῷ κυρίῳ,",
+        "VUL": "In die illa erit altare Domini/ in medio terræ Ægypti,/ et titulus Domini juxta terminum ejus./",
+        "SYN": "В тот день жертвенник Господу будет посреди земли Египетской, и памятник Господу - у пределов ее.",
+        "NEO": "En ce jour-là, il y aura un autel pour \\+w Yahweh|strong=\"H3068\"\\+w** au milieu du pays d’Égypte, et près de la frontière une stèle pour \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "On that day there shall be an altar to the LORD in the land of Egypt, and a sacred pillar to the LORD near the boundary.",
+        "VAT_ES": "Aquel día, habrá un altar para el Señor en medio del país de Egipto, y una estela para el Señor junto a la frontera.",
+        "CEI": "In quel giorno ci sarà un altare dedicato al Signore in mezzo al paese d'Egitto e una stele in onore del Signore presso la sua frontiera:"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֨ה לְ/א֥וֹת וּ/לְ/עֵ֛ד לַֽ/יהוָ֥ה צְבָא֖וֹת בְּ/אֶ֣רֶץ מִצְרָ֑יִם כִּֽי יִצְעֲק֤וּ אֶל יְהוָה֙ מִ/פְּנֵ֣י לֹֽחֲצִ֔ים וְ/יִשְׁלַ֥ח לָ/הֶ֛ם מוֹשִׁ֥יעַ וָ/רָ֖ב וְ/הִצִּילָֽ/ם׃",
+        "LXX": "καὶ ἔσται εἰς σημεῖον εἰς τὸν αἰῶνα Κυρίῳ ἐν χώρᾳ Αἰγύπτου· ὅτι κεκράξονται πρὸς Κύριον διὰ τοὺς θλίβοντας αὐτούς, καὶ ἀποστελεῖ αὐτοῖς ἄνθρωπον ὃς σώσει αὐτούς, κρίνων σώσει αὐτούς.",
+        "VUL": "Erit in signum et in testimonium Domino exercituum/ in terra Ægypti ;/ clamabunt enim ad Dominum a facie tribulationis,/ et mittet eis salvatorem/ et propugnatorem qui liberet eos./",
+        "SYN": "И будет он знамением и свидетельством о Господе Саваофе в земле Египетской, потому что они воззовут к Господу по причине притеснителей, и Он пошлет им спасителя и заступника, и избавит их.",
+        "NEO": "Et ce sera pour \\+w Yahweh|strong=\"H3068\"\\+w** des armées un signal, et un témoignage sur la terre d’Égypte ; quand ils crieront vers \\+w Yahweh|strong=\"H3068\"\\+w**, à cause des oppresseurs, il leur enverra un sauveur et un champion pour les délivrer.",
+        "NAB": "It shall be a sign and a witness to the LORD of hosts in the land of Egypt, when they cry out to the LORD against their oppressors, and he sends them a savior to defend and deliver them.",
+        "VAT_ES": "Esto servirá de señal y de testimonio para el Señor de los ejércitos en el país de Egipto. Cuando ellos clamen al Señor a causa de sus opresores, él les enviará un salvador y un defensor, para que los libre.",
+        "CEI": "sarà un segno e una testimonianza per il Signore degli eserciti nel paese d'Egitto. Quando, di fronte agli avversari, invocheranno il Signore, allora egli manderà loro un salvatore che li difenderà e li libererà."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/נוֹדַ֤ע יְהוָה֙ לְ/מִצְרַ֔יִם וְ/יָדְע֥וּ מִצְרַ֛יִם אֶת יְהוָ֖ה בַּ/יּ֣וֹם הַ/ה֑וּא וְ/עָֽבְדוּ֙ זֶ֣בַח וּ/מִנְחָ֔ה וְ/נָדְרוּ נֵ֥דֶר לַֽ/יהוָ֖ה וְ/שִׁלֵּֽמוּ׃",
+        "LXX": "καὶ γνωστὸς ἔσται Κύριος τοῖς Αἰγυπτίοις· καὶ γνώσονται οἱ Αἰγύπτιοι τὸν κύριον ἐν τῇ ἡμέρᾳ ἐκείνῃ, καὶ ποιήσουσιν θυσίας, καὶ εὔξονται εὐχὰς τῷ κυρίῳ καὶ ἀποδώσουσιν.",
+        "VUL": "Et cognoscetur Dominus ab Ægypto,/ et cognoscent Ægyptii Dominum/ in die illa ;/ et colent eum in hostiis et in muneribus ;/ et vota vovebunt Domino, et solvent./",
+        "SYN": "И Господь явит Себя в Египте; и Египтяне в тот день познают Господа и принесут жертвы и дары, и дадут обеты Господу, и исполнят.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** se fera connaître de l’Égypte, et l’Égypte connaîtra \\+w Yahweh|strong=\"H3068\"\\+w**, en ce jour-là ; ils feront des sacrifices et des offrandes ; ils feront des vœux à \\+w Yahweh|strong=\"H3068\"\\+w** et les accompliront.",
+        "NAB": "The LORD shall make himself known to Egypt, and the Egyptians shall know the LORD in that day; they shall offer sacrifices and oblations, and fulfill the vows they make to the LORD.",
+        "VAT_ES": "El Señor se dará a conocer a los egipcios, y los egipcios conocerán al Señor en aquel día. Lo servirán con sacrificios y oblaciones; harán votos al Señor y los cumplirán.",
+        "CEI": "Il Signore si rivelerà agli Egiziani e gli Egiziani riconosceranno in quel giorno il Signore, lo serviranno con sacrifici e offerte, faranno voti al Signore e li adempiranno."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/נָגַ֧ף יְהוָ֛ה אֶת מִצְרַ֖יִם נָגֹ֣ף וְ/רָפ֑וֹא וְ/שָׁ֨בוּ֙ עַד יְהוָ֔ה וְ/נֶעְתַּ֥ר לָ/הֶ֖ם וּ/רְפָאָֽ/ם׃",
+        "LXX": "καὶ πατάξει Κύριος τοὺς Αἰγυπτίους πληγῇ, καὶ ἰάσεται αὐτοὺς ἰάσει, καὶ ἐπιστραφήσονται πρὸς Κύριον, καὶ εἰσακούσεται αὐτῶν καὶ ἰάσεται αὐτούς.",
+        "VUL": "Et percutiet Dominus Ægyptum plaga,/ et sanabit eam ;/ et revertentur ad Dominum,/ et placabitur eis, et sanabit eos./",
+        "SYN": "И поразит Господь Египет; поразит и исцелит; они обратятся к Господу, и Он услышит их, и исцелит их.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** frappera l’Égypte, frappant et guérissant. Ils se convertiront à \\+w Yahweh|strong=\"H3068\"\\+w**, et il se laissera fléchir par eux et les guérira.",
+        "NAB": "Although the LORD shall smite Egypt severely, he shall heal them; they shall turn to the LORD and he shall be won over and heal them.",
+        "VAT_ES": "El Señor herirá a Egipto, pero sólo para sanarlo. Ellos se volverán al Señor, y él los escuchará y los sanará.",
+        "CEI": "Il Signore percuoterà ancora gli Egiziani ma, una volta colpiti, li risanerà. Essi faranno ritorno al Signore ed egli si placherà e li risanerà."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "בַּ/יּ֣וֹם הַ/ה֗וּא תִּהְיֶ֨ה מְסִלָּ֤ה מִ/מִּצְרַ֨יִם֙ אַשּׁ֔וּרָ/ה וּ/בָֽא אַשּׁ֥וּר בְּ/מִצְרַ֖יִם וּ/מִצְרַ֣יִם בְּ/אַשּׁ֑וּר וְ/עָבְד֥וּ מִצְרַ֖יִם אֶת אַשּֽׁוּר׃",
+        "LXX": "Τῇ ἡμέρᾳ ἐκείνῃ ἔσται ἡ ὁδὸς Αἰγύπτου πρὸς Ἀσσυρίους, καὶ εἰσελεύσονται Ἀσσύριοι εἰς Αἴγυπτον· καὶ Αἰγύπτιοι πορεύσονται πρὸς Ἀσσυρίους, καὶ δουλεύσουσιν Αἰγύπτιοι τοῖς Ἀσσυρίοις.",
+        "VUL": "In die illa erit via/ de Ægypto in Assyrios ;/ et intrabit Assyrius Ægyptum,/ et Ægyptius in Assyrios,/ et servient Ægyptii Assur./",
+        "SYN": "В тот день из Египта в Ассирию будет большая дорога, и будет приходить Ассур в Египет, и Египтяне - в Ассирию; и Египтяне вместе с Ассириянами будут служить Господу.",
+        "NEO": "En ce jour-là, il y aura une route d’Égypte en Assyrie ; l’Assyrien viendra en Égypte, et l’Egyptien ira en Assyrie, et l’Égypte servira \\+w Yahweh|strong=\"H3068\"\\+w** avec Assur.",
+        "NAB": "On that day there shall be a highway from Egypt to Assyria; the Assyrians shall enter Egypt, and the Egyptians enter Assyria, and Egypt shall serve Assyria.",
+        "VAT_ES": "Aquel día, habrá un camino entre Egipto y Asiria: los asirios irán a Egipto, y los egipcios a Asiria; y Egipto rendirá culto junto con Asiria.",
+        "CEI": "In quel giorno ci sarà una strada dall'Egitto verso l'Assiria; l'Assiro andrà in Egitto e l'Egiziano in Assiria; gli Egiziani serviranno il Signore insieme con gli Assiri."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "בַּ/יּ֣וֹם הַ/ה֗וּא יִהְיֶ֤ה יִשְׂרָאֵל֙ שְׁלִ֣ישִׁיָּ֔ה לְ/מִצְרַ֖יִם וּ/לְ/אַשּׁ֑וּר בְּרָכָ֖ה בְּ/קֶ֥רֶב הָ/אָֽרֶץ׃",
+        "LXX": "Τῇ ἡμέρᾳ ἐκείνῃ ἔσται Ἰσραὴλ τρίτος ἐν τοῖς Αἰγυπτίοις καὶ ἐν τοῖς Ἀσσυρίοις, εὐλογημένος ἐν τῇ γῇ",
+        "VUL": "In die illa erit Israël tertius/ Ægyptio et Assyrio ;/ benedictio in medio terræ/",
+        "SYN": "В тот день Израиль будет третьим с Египтом и Ассириею; благословение будет посреди земли,",
+        "NEO": "En ce jour-là, Israël s’unira, lui troisième, à l’Égypte et à l’Assyrie, pour être une bénédiction au milieu de la terre.",
+        "NAB": "On that day Israel shall be a third party with Egypt and Assyria, a blessing in the midst of the land,",
+        "CEI": "In quel giorno Israele sarà il terzo con l'Egitto e l'Assiria, una benedizione in mezzo alla terra."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֧ר בֵּרֲכ֛/וֹ יְהוָ֥ה צְבָא֖וֹת לֵ/אמֹ֑ר בָּר֨וּךְ עַמִּ֜/י מִצְרַ֗יִם וּ/מַעֲשֵׂ֤ה יָדַ/י֙ אַשּׁ֔וּר וְ/נַחֲלָתִ֖/י יִשְׂרָאֵֽל׃",
+        "LXX": "ἣν εὐλόγησεν Κύριος σαβαὼθ λέγων Εὐλογημένος ὁ λαός μου ὁ ἐν Αἰγύπτῳ καὶ ὁ ἐν Ἀσσυρίοις, καὶ ἡ γῆ κληρονομία μου, Ἰσραήλ.",
+        "VUL": "cui benedixit Dominus exercituum, dicens :/ Benedictus populus meus Ægypti,/ et opus manuum mearum Assyrio ;/ hæreditas autem mea Israël.]",
+        "SYN": "которую благословит Господь Саваоф, говоря: благословен народ Мой - Египтяне, и дело рук Моих - Ассирияне, и наследие Мое - Израиль.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** des armées les bénira en disant : « Bénis soient l’Égypte, mon peuple, et Assur, l’ouvrage de mes mains, et Israël, mon héritage ! »",
+        "NAB": "when the LORD of hosts blesses it: \"Blessed be my people Egypt, and the work of my hands Assyria, and my inheritance, Israel.\"",
+        "CEI": "Li benedirà il Signore degli eserciti: \"Benedetto sia l'Egiziano mio popolo, l'Assiro opera delle mie mani e Israele mia eredità\"."
+      }
+    }
+  }
+}

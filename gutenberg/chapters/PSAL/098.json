@@ -1,0 +1,176 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_098",
+  "book_key": "PSAL",
+  "sequence": 98,
+  "chapter_in": {
+    "MT": 98,
+    "VUL": 97,
+    "LXX": 97
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מִזְמ֡וֹר שִׁ֤ירוּ לַֽ/יהוָ֨ה שִׁ֣יר חָ֭דָשׁ כִּֽי נִפְלָא֣וֹת עָשָׂ֑ה הוֹשִֽׁיעָה לּ֥/וֹ יְ֝מִינ֗/וֹ וּ/זְר֥וֹעַ קָדְשֽׁ/וֹ׃",
+        "LXX": "Ψαλμὸς τῷ Δαυείδ. Κύριος ἐβασίλευσεν, ὀργιζέσθωσαν λαοί· ὁ καθήμενος ἐπὶ τῶν χερουβείμ, σαλευθήτω ἡ γῆ.",
+        "VUL": "Psalmus ipsi David. [Dominus regnavit : irascantur populi ;/ qui sedet super cherubim : moveatur terra./",
+        "SYN": "Господь царствует: да трепещут народы! Он восседает на Херувимах: да трясется земля!",
+        "NEO": "Psaume.",
+        "NAB": "A psalm. Sing a new song to the LORD, who has done marvelous deeds, Whose right hand and holy arm have won the victory.",
+        "CEI": "Salmo. Cantate al Signore un canto nuovo, perché ha compiuto prodigi. Gli ha dato vittoria la sua destra e il suo braccio santo."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "הוֹדִ֣יעַ יְ֭הוָה יְשׁוּעָת֑/וֹ לְ/עֵינֵ֥י הַ֝/גּוֹיִ֗ם גִּלָּ֥ה צִדְקָתֽ/וֹ׃",
+        "LXX": "Κύριος ἐν Σειὼν μέγας, καὶ ὑψηλός ἐστιν ἐπὶ πάντας τοὺς λαούς.",
+        "VUL": "Dominus in Sion magnus,/ et excelsus super omnes populos./",
+        "SYN": "Господь на Сионе велик, и высок Он над всеми народами.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** a manifesté son salut, il a révélé sa justice aux yeux des nations.",
+        "NAB": "The LORD has made his victory known; has revealed his triumph for the nations to see,",
+        "VAT_ES": "El Señor manifestó su victoria,",
+        "CEI": "Il Signore ha manifestato la sua salvezza, agli occhi dei popoli ha rivelato la sua giustizia."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "זָ֘כַ֤ר חַסְדּ֨/וֹ וֶֽ/אֱֽמוּנָת/וֹ֮ לְ/בֵ֪ית יִשְׂרָ֫אֵ֥ל רָא֥וּ כָל אַפְסֵי אָ֑רֶץ אֵ֝֗ת יְשׁוּעַ֥ת אֱלֹהֵֽי/נוּ׃",
+        "LXX": "ἐξομολογησάσθωσαν πάντες τῷ ὀνόματί σου τῷ μεγάλῳ, ὅτι φοβερὸν καὶ ἅγιόν ἐστιν.",
+        "VUL": "Confiteantur nomini tuo magno,/ quoniam terribile et sanctum est,/",
+        "SYN": "Да славят великое и страшное имя Твое: свято оно!",
+        "NEO": "Il s’est souvenu de sa bonté et de sa fidélité envers la maison d’Israël ; toutes les extrémités de la terre ont vu le salut de notre Dieu.",
+        "NAB": "Has remembered faithful love toward the house of Israel. All the ends of the earth have seen the victory of our God.",
+        "VAT_ES": "se acordó de su amor y su fidelidad",
+        "CEI": "Egli si è ricordato del suo amore, della sua fedeltà alla casa di Israele. Tutti i confini della terra hanno veduto la salvezza del nostro Dio."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הָרִ֣יעוּ לַֽ֭/יהוָה כָּל הָ/אָ֑רֶץ פִּצְח֖וּ וְ/רַנְּנ֣וּ וְ/זַמֵּֽרוּ׃",
+        "LXX": "καὶ τιμὴ βασιλέως κρίσιν ἀγαπᾷ· σὺ ἡτοίμασας εὐθύτητας, κρίσιν καὶ δικαιοσύνην ἐν Ἰακὼβ σὺ ἐποίησας.",
+        "VUL": "et honor regis judicium diligit./ Tu parasti directiones ;/ judicium et justitiam in Jacob tu fecisti./",
+        "SYN": "И могущество царя любит суд. Ты утвердил справедливость; суд и правду Ты совершил в Иакове.",
+        "NEO": "Poussez vers \\+w Yahweh|strong=\"H3068\"\\+w** des cris de joie, vous, habitants de toute la terre, faites éclater votre allégresse au son des instruments !",
+        "NAB": "Shout with joy to the LORD, all the earth; break into song; sing praise.",
+        "VAT_ES": "Aclame al Señor toda la tierra,",
+        "CEI": "Acclami al Signore tutta la terra, gridate, esultate con canti di gioia."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "זַמְּר֣וּ לַ/יהוָ֣ה בְּ/כִנּ֑וֹר בְּ֝/כִנּ֗וֹר וְ/ק֣וֹל זִמְרָֽה׃",
+        "LXX": "ὑψοῦτε Κύριον τὸν θεὸν ἡμῶν, καὶ προσκυνεῖτε τῷ ὑποποδίῳ τῶν ποδῶν αὐτοῦ.",
+        "VUL": "Exaltate Dominum Deum nostrum,/ et adorate scabellum pedum ejus,/ quoniam sanctum est./",
+        "SYN": "Превозносите Господа, Бога нашего, и поклоняйтесь подножию Его: свято оно!",
+        "NEO": "Célébrez \\+w Yahweh|strong=\"H3068\"\\+w** sur la harpe, sur la harpe et au son des cantiques !",
+        "NAB": "Sing praise to the LORD with the harp, with the harp and melodious song.",
+        "VAT_ES": "Canten al Señor con el arpa",
+        "CEI": "Cantate inni al Signore con l'arpa, con l'arpa e con suono melodioso;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בַּ֭/חֲצֹ֣צְרוֹת וְ/ק֣וֹל שׁוֹפָ֑ר הָ֝רִ֗יעוּ לִ/פְנֵ֤י הַ/מֶּ֬לֶךְ יְהוָֽה׃",
+        "LXX": "ἅγιός ἐστιν Μωυσῆς καὶ Ἀαρὼν ἐν τοῖς ἱερεῦσιν αὐτοῦ καὶ Σαμουὴλ ἐν τοῖς ἐπικαλουμένοις τὸ ὄνομα αὐτοῦ· ἐπεκαλοῦντο τὸν κύριον, καὶ αὐτὸς ἐπήκουσεν αὐτοῖς,",
+        "VUL": "Moyses et Aaron in sacerdotibus ejus,/ et Samuel inter eos qui invocant nomen ejus :/ invocabant Dominum, et ipse exaudiebat eos ;/",
+        "SYN": "Моисей и Аарон между священниками и Самуил между призывающими имя Его взывали к Господу, и Он внимал им.",
+        "NEO": "Avec les trompettes et au son du cor, poussez des cris de joie devant le Roi \\+w Yahweh|strong=\"H3068\"\\+w** !",
+        "NAB": "With trumpets and the sound of the horn shout with joy to the King, the LORD.",
+        "VAT_ES": "con clarines y sonidos de trompeta",
+        "CEI": "con la tromba e al suono del corno acclamate davanti al re, il Signore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יִרְעַ֣ם הַ֭/יָּם וּ/מְלֹא֑/וֹ תֵּ֝בֵ֗ל וְ/יֹ֣שְׁבֵי בָֽ/הּ׃",
+        "LXX": "ἐν στύλῳ νεφέλης ἐλάλει πρὸς αὐτούς· ἐφύλασσον τὰ μαρτύρια αὐτοῦ, καὶ τὰ προστάγματα ἃ ἔδωκεν αὐτοῖς.",
+        "VUL": "in columna nubis loquebatur ad eos./ Custodiebant testimonia ejus,/ et præceptum quod dedit illis./",
+        "SYN": "В столпе облачном говорил Он к ним; они хранили Его заповеди и устав, который Он дал им.",
+        "NEO": "Que la mer s’agite avec tout ce qu’elle renferme, que la terre et ses habitants fassent éclater leurs transports.",
+        "NAB": "Let the sea and what fills it resound, the world and those who dwell there.",
+        "VAT_ES": "Resuene el mar y todo lo que hay en él,",
+        "CEI": "Frema il mare e quanto racchiude, il mondo e i suoi abitanti."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "נְהָר֥וֹת יִמְחֲאוּ כָ֑ף יַ֝֗חַד הָרִ֥ים יְרַנֵּֽנוּ׃",
+        "LXX": "Κύριε ὁ θεὸς ἡμῶν, σὺ ἐπήκουες αὐτῶν· ὁ θεός, εὐίλατος ἐγίνου αὐτοῖς, καὶ ἐκδικῶν ἐπὶ πάντα τὰ ἐπιτηδεύματα αὐτῶν.",
+        "VUL": "Domine Deus noster, tu exaudiebas eos ;/ Deus, tu propitius fuisti eis,/ et ulciscens in omnes adinventiones eorum./",
+        "SYN": "Господи, Боже наш! Ты внимал им; Ты был для них Богом прощающим и наказывающим за дела их.",
+        "NEO": "Que les fleuves applaudissent, qu’ensemble les montagnes poussent des cris de joie,",
+        "NAB": "Let the rivers clap their hands, the mountains shout with them for joy,",
+        "VAT_ES": "aplaudan las corrientes del océano,",
+        "CEI": "I fiumi battano le mani, esultino insieme le montagne"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לִֽ/פְֽנֵי יְהוָ֗ה כִּ֥י בָא֮ לִ/שְׁפֹּ֪ט הָ֫/אָ֥רֶץ יִשְׁפֹּֽט תֵּבֵ֥ל בְּ/צֶ֑דֶק וְ֝/עַמִּ֗ים בְּ/מֵישָׁרִֽים׃",
+        "LXX": "ὑψοῦτε Κύριον τὸν θεὸν ἡμῶν, καὶ προσκυνεῖτε εἰς ὄρος ἅγιον αὐτοῦ, ὅτι ἅγιος Κύριος ὁ θεὸς ἡμῶν.",
+        "VUL": "Exaltate Dominum Deum nostrum,/ et adorate in monte sancto ejus,/ quoniam sanctus Dominus Deus noster.]",
+        "SYN": "Превозносите Господа, Бога нашего, и поклоняйтесь на святой горе Его, ибо свят Господь, Бог наш.",
+        "NEO": "devant \\+w Yahweh|strong=\"H3068\"\\+w** — car il vient pour juger la terre ; il jugera le monde avec justice, et les peuples avec équité.",
+        "NAB": "Before the LORD who comes, who comes to govern the earth, To govern the world with justice and the peoples with fairness.",
+        "VAT_ES": "Griten de gozo delante del Señor,",
+        "CEI": "davanti al Signore che viene, che viene a giudicare la terra. Giudicherà il mondo con giustizia e i popoli con rettitudine."
+      }
+    }
+  }
+}

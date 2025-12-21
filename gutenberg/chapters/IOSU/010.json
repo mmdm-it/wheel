@@ -1,0 +1,787 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOSU_010",
+  "book_key": "IOSU",
+  "sequence": 10,
+  "chapter_in": {
+    "MT": 10,
+    "VUL": 10,
+    "LXX": 10
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֩ כִ/שְׁמֹ֨עַ אֲדֹֽנִי צֶ֜דֶק מֶ֣לֶךְ יְרוּשָׁלִַ֗ם כִּֽי לָכַ֨ד יְהוֹשֻׁ֣עַ אֶת הָ/עַי֮ וַ/יַּחֲרִימָ/הּ֒ כַּ/אֲשֶׁ֨ר עָשָׂ֤ה לִֽ/ירִיחוֹ֙ וּ/לְ/מַלְכָּ֔/הּ כֵּן עָשָׂ֥ה לָ/עַ֖י וּ/לְ/מַלְכָּ֑/הּ וְ/כִ֨י הִשְׁלִ֜ימוּ יֹשְׁבֵ֤י גִבְעוֹן֙ אֶת יִשְׂרָאֵ֔ל וַ/יִּֽהְי֖וּ בְּ/קִרְבָּֽ/ם׃",
+        "LXX": "Ὡς δὲ ἤκουσεν Ἀδωνιβέζεκ βασιλεὺς Ἰερουσαλὴμ ὅτι ἔλαβεν Ἰησοῦς τὴν Γαὶ καὶ ἐξωλέθρευσεν αὐτήν· ὃν τρόπον ἐποίησαν τὴν Ἰερειχὼ καὶ τὸν βασιλέα αὐτῆς, οὕτως ἐποίησαν τὴν Γαὶ καὶ τὸν βασιλέα αὐτῆς, καὶ ὅτι αὐτομόλησαν οἱ κατοικοῦντες Γαβαὼν πρὸς Ἰησοῦν καὶ πρὸς Ἰσραήλ·",
+        "VUL": "Quæ cum audisset Adonisedec rex Jerusalem, quod scilicet cepisset Josue Hai, et subvertisset eam (sicut enim fecerat Jericho et regi ejus, sic fecit Hai et regi illius), et quod transfugissent Gabaonitæ ad Israël, et essent fderati eorum,",
+        "SYN": "Когда Адониседек, царь Иерусалимский, услышал, что Иисус взял Гай и предал его заклятию, и что так же поступил с Гаем и царем его, как поступил с Иерихоном и царем его, и что жители Гаваона заключили мир [с Иисусом и] с Израилем и остались среди их,",
+        "NEO": "Adonisédec, roi de Jérusalem, apprit que Josué s’était emparé d’Haï et l’avait dévouée par anathème, qu’il avait traité Haï et son roi comme il avait traité Jéricho et son roi, et que les habitants de Gabaon, ayant fait la paix avec Israël, étaient au milieu d’eux.",
+        "NAB": "Now Adonizedek, king of Jerusalem, heard that, in the capture and destruction of Ai, Joshua had done to that city and its king as he had done to Jericho and its king. He heard also that the inhabitants of Gibeon had made their peace with Israel, remaining among them,",
+        "VAT_ES": "Adonisedec, rey de Jerusalén, se enteró de que Josué se había apoderado de Ai y la había consagrado al exterminio, tratando a Ai y a su rey como antes había tratado a Jericó y a su rey. También se enteró de que los gabonitas habían hecho las paces con Israel y se les habían sometido.",
+        "CEI": "Quando Adoni-Zedek, re di Gerusalemme, venne a sapere che Giosuè aveva preso Ai e l'aveva votata allo sterminio, e che, come aveva fatto a Gerico e al suo re, aveva fatto ad Ai e al suo re e che gli abitanti di Gàbaon avevano fatto pace con gli Israeliti e si trovavano ormai in mezzo a loro,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּֽירְא֣וּ מְאֹ֔ד כִּ֣י עִ֤יר גְּדוֹלָה֙ גִּבְע֔וֹן כְּ/אַחַ֖ת עָרֵ֣י הַ/מַּמְלָכָ֑ה וְ/כִ֨י הִ֤יא גְדוֹלָה֙ מִן הָ/עַ֔י וְ/כָל אֲנָשֶׁ֖י/הָ גִּבֹּרִֽים׃",
+        "LXX": "καὶ ἐφοβήθησαν ἀπ’ αὐτῶν σφόδρα· ᾔδει γὰρ ὅτι μεγάλη πόλις Γαβαὼν ὡσεὶ μία τῶν μητροπόλεων, καὶ πάντες οἱ ἄνδρες αὐτῆς ἰσχυροί.",
+        "VUL": "timuit valde. Urbs enim magna erat Gabaon, et una civitatum regalium, et major oppido Hai, omnesque bellatores ejus fortissimi.",
+        "SYN": "тогда он весьма испугался, потому что Гаваон [был] город большой, как один из царских городов, и больше Гая, и все жители его люди храбрые.",
+        "NEO": "Il eut alors une grande crainte ; car Gabaon était une grande ville, comme une des villes royales, plus grande même qu’Haï, et tous ses hommes étaient vaillants.",
+        "NAB": "and that there was great fear abroad, because Gibeon was large enough for a royal city, larger even than the city of Ai, and all its men were brave.",
+        "VAT_ES": "Esto le produjo un gran temor, porque Gabaón era tan importante como una ciudad real y más grande aún que Ai. Además, todos sus habitantes eran aguerridos.",
+        "CEI": "ebbe grande paura, perché Gàbaon, una delle città regali, era più grande di Ai e tutti i suoi uomini erano valorosi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֨ח אֲדֹנִי צֶ֜דֶק מֶ֣לֶךְ יְרוּשָׁלִַ֗ם אֶל הוֹהָ֣ם מֶֽלֶךְ חֶ֠בְרוֹן וְ/אֶל פִּרְאָ֨ם מֶֽלֶךְ יַרְמ֜וּת וְ/אֶל יָפִ֧יעַ מֶֽלֶךְ לָכִ֛ישׁ וְ/אֶל דְּבִ֥יר מֶֽלֶךְ עֶגְל֖וֹן לֵ/אמֹֽר׃",
+        "LXX": "καὶ ἀπέστειλεν Ἀδωνιβέζεκ βασιλεὺς Ἰερουσαλὴμ πρὸς Αἰλὰμ βασιλέα Χεβρὼν καὶ πρὸς Φειδὼν βασιλέα Ἰερειμοὺθ καὶ πρὸς Ἰέφθα βασιλέα Λαχεὶς καὶ πρὸς Δαβεὶν βασιλέα Ὀδολλὰμ λέγων",
+        "VUL": "Misit ergo Adonisedec rex Jerusalem ad Oham regem Hebron, et ad Pharam regem Jerimoth, ad Japhia quoque regem Lachis, et ad Dabir regem Eglon, dicens :",
+        "SYN": "Посему Адониседек, царь Иерусалимский, послал к Гогаму, царю Хевронскому, и к Фираму, царю Иармуфскому, и к Яфию, царю Лахисскому, и к Девиру, царю Еглонскому, чтобы сказать:",
+        "NEO": "Adonisédec, roi de Jérusalem, envoya dire à Oham, roi d’Hébron, à Pharam, roi de Jérimoth, à Japhia, roi de Lachis, et à Dabir, roi d’Eglon :",
+        "NAB": "So Adonizedek, king of Jerusalem, sent for Hoham, king of Hebron, Piram, king of Jarmuth, Japhia, king of Lachish, and Debir, king of Eglon,",
+        "VAT_ES": "Entonces Adonisedec, rey de Jerusalén, hizo llegar a Hohán, rey de Hebrón, a Pirán, rey de Iarmut, a Iafia, rey de Laquís, y a Debir, rey de Eglón, el siguiente mensaje:",
+        "CEI": "Allora Adoni-Zedek, re di Gerusalemme, mandò a dire a Oam, re di Ebron, a Piream, re di Iarmut, a Iafia, re di Lachis e a Debir, re di Eglon:"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "עֲלֽוּ אֵלַ֣/י וְ/עִזְרֻ֔/נִי וְ/נַכֶּ֖ה אֶת גִּבְע֑וֹן כִּֽי הִשְׁלִ֥ימָה אֶת יְהוֹשֻׁ֖עַ וְ/אֶת בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "Δεῦτε ἀνάβητε πρὸς μὲ καὶ βοηθήσατέ μοι, καὶ ἐκπολεμήσωμεν Γαβαών· αὐτομόλησαν γὰρ πρὸς Ἰησοῦν καὶ πρὸς τοὺς υἱοὺς Ἰσραήλ.",
+        "VUL": "Ad me ascendite, et ferte præsidium, ut expugnemus Gabaon, quare transfugerit ad Josue, et ad filios Israël.",
+        "SYN": "придите ко мне и помогите мне поразить Гаваон за то, что он заключил мир с Иисусом и сынами Израилевыми.",
+        "NEO": "« Montez vers moi et venez à mon aide, afin que nous frappions Gabaon, car elle a fait la paix avec Josué et avec les enfants d’Israël. »",
+        "NAB": "to come to his aid for an attack on Gibeon, since it had concluded peace with Joshua and the Israelites.",
+        "VAT_ES": "«Vengan conmigo y derrotaremos a Gabaón, porque ellos han hecho las paces con Josué y con los israelitas».",
+        "CEI": "\"Venite da me, aiutatemi e assaltiamo Gàbaon, perché ha fatto pace con Giosuè e con gli Israeliti\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֵּאָסְפ֨וּ וַֽ/יַּעֲל֜וּ חֲמֵ֣שֶׁת מַלְכֵ֣י הָ/אֱמֹרִ֗י מֶ֣לֶךְ יְרוּשָׁלִַ֜ם מֶֽלֶךְ חֶבְר֤וֹן מֶֽלֶךְ יַרְמוּת֙ מֶֽלֶךְ לָכִ֣ישׁ מֶֽלֶךְ עֶגְל֔וֹן הֵ֖ם וְ/כָל מַֽחֲנֵי/הֶ֑ם וַֽ/יַּחֲנוּ֙ עַל גִּבְע֔וֹן וַ/יִּֽלָּחֲמ֖וּ עָלֶֽי/הָ׃",
+        "LXX": "καὶ ἀνέβησαν οἱ πέντε βασιλεῖς τῶν Ἰεβουσαίων, βασιλεὺς Ἰερουσαλὴμ καὶ βασιλεὺς Χεβρὼν καὶ βασιλεὺς Ἰερειμοὺθ καὶ βασιλεὺς Λαχεὶς καὶ βασιλεὺς Ὀδολλάμ, αὐτοὶ καὶ πᾶς ὁ λαὸς αὐτῶν, καὶ περιεκάθισαν τὴν Γαβαὼν καὶ ἐξεπολιόρκουν αὐτήν.",
+        "VUL": "Congregati igitur ascenderunt quinque reges Amorrhæorum : rex Jerusalem, rex Hebron, rex Jerimoth, rex Lachis, rex Eglon, simul cum exercitibus suis : et castrametati sunt circa Gabaon, oppugnantes eam.",
+        "SYN": "Они собрались, и пошли пять царей Аморрейских: царь Иерусалимский, царь Хевронский, царь Иармуфский, царь Лахисский, царь Еглонский, они и все ополчение их, и расположились станом подле Гаваона, чтобы воевать против него.",
+        "NEO": "Ainsi cinq rois des Amorrhéens, le roi de Jérusalem, le roi d’Hébron, le roi de Jérimoth, le roi de Lachis et le roi d’Eglon, se rassemblèrent et montèrent avec toutes leurs armées ; ils établirent leur camp près de Gabaon et l’assiégèrent.",
+        "NAB": "The five Amorite kings, of Jerusalem, Hebron, Jarmuth, Lachish and Eglon, united all their forces and marched against Gibeon, where they took up siege positions.",
+        "VAT_ES": "Una vez reunidos, los cinco reyes amorreos –los reyes de Jerusalén, de Hebrón, de Iarmut, de Laquís y de Eglón– marcharon con sus tropas, acamparon frente a Gabaón, y se dispusieron a atacarla.",
+        "CEI": "Quelli si unirono e i cinque re amorrèi, il re di Gerusalemme, il re di Ebron, il re di Iarmut, il re di Lachis ed il re di Eglon, vennero con tutte le loro truppe, si accamparono contro Gàbaon e le diedero battaglia."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלְח֣וּ אַנְשֵׁי֩ גִבְע֨וֹן אֶל יְהוֹשֻׁ֤עַ אֶל הַֽ/מַּחֲנֶה֙ הַ/גִּלְגָּ֣לָ/ה לֵ/אמֹ֔ר אַל תֶּ֥רֶף יָדֶ֖י/ךָ מֵֽ/עֲבָדֶ֑י/ךָ עֲלֵ֧ה אֵלֵ֣י/נוּ מְהֵרָ֗ה וְ/הוֹשִׁ֤יעָ/ה לָּ֨/נוּ֙ וְ/עָזְרֵ֔/נוּ כִּ֚י נִקְבְּצ֣וּ אֵלֵ֔י/נוּ כָּל מַלְכֵ֥י הָ/אֱמֹרִ֖י יֹשְׁבֵ֥י הָ/הָֽר׃",
+        "LXX": "καὶ ἀπέστειλαν οἱ κατοικοῦντες Γαβαὼν πρὸς Ἰησοῦν εἰς τὴν παρεμβολὴν Ἰσραὴλ εἰς Γάλγαλα λέγοντες Μὴ ἐκλύσῃς τὰς χεῖράς σου ἀπὸ τῶν παίδων σου· ἀνάβηθι πρὸς ἡμᾶς τὸ τάχος καὶ ἐξελοῦ ἡμᾶς καὶ βοήθησον ἡμῖν· ὅτι συνηγμένοι εἰσὶν ἐφ’ ἡμᾶς πάντες οἱ βασιλεῖς τῶν Ἀμορραίων οἱ κατοικοῦντες τὴν ὀρεινήν.",
+        "VUL": "Habitatores autem Gabaon urbis obsessæ miserunt ad Josue, qui tunc morabatur in castris apud Galgalam, et dixerunt ei : Ne retrahas manus tuas ab auxilio servorum tuorum : ascende cito, et libera nos, ferque præsidium : convenerunt enim adversum nos omnes reges Amorrhæorum, qui habitant in montanis.",
+        "SYN": "Жители Гаваона послали к Иисусу в стан [Израильский], в Галгал, сказать: не отними руки твоей от рабов твоих; приди к нам скорее, спаси нас и подай нам помощь; ибо собрались против нас все цари Аморрейские, живущие на горах.",
+        "NEO": "Les gens de Gabaon envoyèrent dire à Josué, au camp de Galgala : « Ne refuse pas ta main à tes serviteurs, hâte-toi de monter vers nous, délivre-nous, donne-nous du secours ; car tous les rois des Amorrhéens qui habitent la montagne se sont ligués contre nous. »",
+        "NAB": "Thereupon, the men of Gibeon sent an appeal to Joshua in his camp at Gilgal: \"Do not abandon your servants. Come up here quickly and save us. Help us, because all the Amorite kings of the mountain country have joined forces against us.\"",
+        "VAT_ES": "Entonces los gabaonitas mandaron decir a Josué, que estaba en el campamento de Guilgal: «No dejes solos a tus servidores. Ven a salvarnos lo antes posible. Ayúdanos, porque todos los reyes amorreos que habitan en la montaña se han reunido contra nosotros».",
+        "CEI": "Allora gli uomini di Gàbaon mandarono a dire a Giosuè, all'accampamento di Gàlgala: \"Non privare del tuo aiuto i tuoi servi. Vieni presto da noi; salvaci e aiutaci, perché si sono alleati contro di noi tutti i re degli Amorrèi, che abitano sulle montagne\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַל יְהוֹשֻׁ֜עַ מִן הַ/גִּלְגָּ֗ל ה֚וּא וְ/כָל עַ֤ם הַ/מִּלְחָמָה֙ עִמּ֔/וֹ וְ/כֹ֖ל גִּבּוֹרֵ֥י הֶ/חָֽיִל׃",
+        "LXX": "καὶ ἀνέβη Ἰησοῦς ἐκ Γαλγάλων, αὐτὸς καὶ πᾶς ὁ λαὸς ὁ πολεμιστὴς μετ’ αὐτοῦ, πᾶς δυνατὸς ἐν ἰσχύι.",
+        "VUL": "Ascenditque Josue de Galgalis, et omnis exercitus bellatorum cum eo, viri fortissimi.",
+        "SYN": "Иисус пошел из Галгала сам, и с ним весь народ, способный к войне, и все мужи храбрые.",
+        "NEO": "Josué monta de Galgala, lui et tous les gens de guerre avec lui, et tous les vaillants guerriers.",
+        "NAB": "So Joshua marched up from Gilgal with his picked troops and the rest of his soldiers.",
+        "VAT_ES": "Josué subió desde Guilgal con todos los combatientes y con todos los guerreros valerosos,",
+        "CEI": "Giosuè partì da Gàlgala con tutta la gente di guerra e tutti i prodi guerrieri."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֤ה אֶל יְהוֹשֻׁ֨עַ֙ אַל תִּירָ֣א מֵ/הֶ֔ם כִּ֥י בְ/יָדְ/ךָ֖ נְתַתִּ֑י/ם לֹֽא יַעֲמֹ֥ד אִ֛ישׁ מֵ/הֶ֖ם בְּ/פָנֶֽי/ךָ׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς Ἰησοῦν Μὴ φοβηθῇς αὐτούς, εἰς γὰρ τὰς χεῖράς σου παραδέδωκα αὐτούς· οὐχ ὑπολειφθήσεται ἐξ αὐτῶν οὐθεὶς ἐνώπιον ὑμῶν.",
+        "VUL": "Dixitque Dominus ad Josue : Ne timeas eos : in manus enim tuas tradidi illos : nullus ex eis tibi resistere poterit.",
+        "SYN": "И сказал Господь Иисусу: не бойся их, ибо Я предал их в руки твои: никто из них не устоит пред лицем твоим.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Josué : « Ne les crains point, car je les ai livrés entre tes mains, et pas un d’eux ne tiendra devant toi. »",
+        "NAB": "Meanwhile the LORD said to Joshua, \"Do not fear them, for I have delivered them into your power. Not one of them will be able to withstand you.\"",
+        "VAT_ES": "y el Señor le dijo: «No les temas, porque yo los he puesto en tus manos; ninguno de ellos te podrá resistir».",
+        "CEI": "Allora il Signore disse a Giosuè: \"Non aver paura di loro, perché li metto in tuo potere; nessuno di loro resisterà davanti a te\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֧א אֲלֵי/הֶ֛ם יְהוֹשֻׁ֖עַ פִּתְאֹ֑ם כָּל הַ/לַּ֕יְלָה עָלָ֖ה מִן הַ/גִּלְגָּֽל׃",
+        "LXX": "καὶ ἐπεὶ παρεγένετο ἐπ’ αὐτοὺς Ἰησοῦς ἄφνω, ὅλην τὴν νύκτα εἰσεπορεύθη ἐκ Γαλγάλων.",
+        "VUL": "Irruit itaque Josue super eos repente, tota nocte ascendens de Galgalis.",
+        "SYN": "И пришел на них Иисус внезапно, [потому что] всю ночь шел он из Галгала.",
+        "NEO": "Josué vint sur eux subitement ; il avait monté de Galgala toute la nuit.",
+        "NAB": "And when Joshua made his surprise attack upon them after an all-night march from Gilgal,",
+        "VAT_ES": "Después de marchar toda la noche desde Guilgal, Josué cayó sobre ellos sorpresivamente.",
+        "CEI": "Giosuè piombò su di loro d'improvviso: tutta la notte aveva marciato, partendo da Gàlgala."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יְהֻמֵּ֤/ם יְהוָה֙ לִ/פְנֵ֣י יִשְׂרָאֵ֔ל וַ/יַּכֵּ֥/ם מַכָּֽה גְדוֹלָ֖ה בְּ/גִבְע֑וֹן וַֽ/יִּרְדְּפֵ֗/ם דֶּ֚רֶךְ מַעֲלֵ֣ה בֵית חוֹרֹ֔ן וַ/יַּכֵּ֥/ם עַד עֲזֵקָ֖ה וְ/עַד מַקֵּדָֽה׃",
+        "LXX": "καὶ ἐξέστησεν αὐτοὺς Κύριος ἀπὸ προσώπου τῶν υἱῶν Ἰσραήλ, καὶ συνέτριψεν αὐτοὺς Κύριος συντρίψει μεγάλῃ ἐν Γαβαών· καὶ κατεδίωξαν αὐτοὺς ὁδὸν ἀναβάσεως Ὡρωνείν, καὶ κατέκοπτον αὐτοὺς ἕως Ἀζηκὰ καὶ ἕως Μακηδά.",
+        "VUL": "Et conturbavit eos Dominus a facie Israël : contrivitque plaga magna in Gabaon, ac persecutus est eos per viam ascensus Bethoron, et percussit usque Azeca et Maceda.",
+        "SYN": "Господь привел их в смятение при виде Израильтян, и они поразили их в Гаваоне сильным поражением, и преследовали их по дороге к возвышенности Вефорона, и поражали их до Азека и до Македа.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** jeta sur eux le trouble devant Israël ; Israël leur infligea une grande défaite près de Gabaon, les poursuivit sur le chemin qui monte à Béthoron, et les battit jusqu’à Azéca et Macéda.",
+        "NAB": "the LORD threw them into disorder before him. The Israelites inflicted a great slaughter on them at Gibeon and pursued them down the Beth-horon slope, harrassing them as far as Azekah and Makkedah.",
+        "VAT_ES": "Y el Señor hizo que huyeran despavoridos delante de Israel, de manera que este les infligió una gran derrota en Gabaón. Luego los persiguieron en dirección a la subida de Bet Jorón, y continuaron exterminándolos hasta Azecá y Maquedá.",
+        "CEI": "Il Signore mise lo scompiglio in mezzo a loro dinanzi ad Israele, che inflisse loro in Gàbaon una grande disfatta, li inseguì verso la salita di Bet-Coron e li battè fino ad Azekà e fino a Makkeda."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֞י בְּ/נֻסָ֣/ם מִ/פְּנֵ֣י יִשְׂרָאֵ֗ל הֵ֞ם בְּ/מוֹרַ֤ד בֵּית חוֹרֹן֙ וַֽ/יהוָ֡ה הִשְׁלִ֣יךְ עֲלֵי/הֶם֩ אֲבָנִ֨ים גְּדֹל֧וֹת מִן הַ/שָּׁמַ֛יִם עַד עֲזֵקָ֖ה וַ/יָּמֻ֑תוּ רַבִּ֗ים אֲשֶׁר מֵ֨תוּ֙ בְּ/אַבְנֵ֣י הַ/בָּרָ֔ד מֵ/אֲשֶׁ֥ר הָרְג֛וּ בְּנֵ֥י יִשְׂרָאֵ֖ל בֶּ/חָֽרֶב׃",
+        "LXX": "ἐν τῷ δὲ φεύγειν αὐτοὺς ἀπὸ προσώπου τῶν υἱῶν Ἰσραὴλ ἐπὶ τῆς καταβάσεως Ὡρωνείν, καὶ Κύριος ἐπέρριψεν αὐτοῖς λίθους χαλάζης ἐκ τοῦ οὐρανοῦ ἕως Ἁζηκά· καὶ ἐγένοντο πλείους οἱ ἀποθανόντες διὰ τοὺς λίθους τῆς χαλάζης ἢ οὓς ἀπέκτειναν οἱ υἱοὶ Ἰσραὴλ μαχαίρᾳ ἐν τῷ πολέμῳ.",
+        "VUL": "Cumque fugerent filios Israël, et essent in descensu Bethoron, Dominus misit super eos lapides magnos de cælo usque ad Azeca : et mortui sunt multo plures lapidibus grandinis, quam quos gladio percusserant filii Israël.",
+        "SYN": "Когда же они бежали от Израильтян по скату горы Вефоронской, Господь бросал на них с небес большие камни [града] до самого Азека, и они умирали; больше было тех, которые умерли от камней града, нежели тех, которых умертвили сыны Израилевы мечом [на сражении].",
+        "NEO": "Comme ils fuyaient devant Israël, à la descente de Béthoron, \\+w Yahweh|strong=\"H3068\"\\+w** fit tomber du ciel sur eux de grosses pierres jusqu’à Azéca, et ils moururent ; ceux qui moururent par les pierres de grêle furent plus nombreux que ceux qui furent tués par l’épée des enfants d’Israël.",
+        "NAB": "While they fled before Israel along the descent from Beth-horon, the LORD hurled great stones from the sky above them all the way to Azekah, killing many. More died from these hailstones than the Israelites slew with the sword.",
+        "VAT_ES": "Mientras huían delante de Israel –precisamente cuando estaban en la bajada de Bet Jorón– el Señor arrojó sobre ellos desde el cielo, hasta la altura de Azecá, unas piedras tan grandes que les provocaban la muerte. Fueron más los que murieron a causa del granizo que los que mató Israel al filo de la espada.",
+        "CEI": "Mentre essi fuggivano dinanzi ad Israele ed erano alla discesa di Bet-Coron, il Signore lanciò dal cielo su di essi come grosse pietre fino ad Azekà e molti morirono. Coloro che morirono per le pietre della grandine furono più di quanti ne uccidessero gli Israeliti con la spada."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אָ֣ז יְדַבֵּ֤ר יְהוֹשֻׁעַ֙ לַֽ/יהוָ֔ה בְּ/י֗וֹם תֵּ֤ת יְהוָה֙ אֶת הָ֣/אֱמֹרִ֔י לִ/פְנֵ֖י בְּנֵ֣י יִשְׂרָאֵ֑ל וַ/יֹּ֣אמֶר לְ/עֵינֵ֣י יִשְׂרָאֵ֗ל שֶׁ֚מֶשׁ בְּ/גִבְע֣וֹן דּ֔וֹם וְ/יָרֵ֖חַ בְּ/עֵ֥מֶק אַיָּלֽוֹן׃",
+        "LXX": "Τότε ἐλάλησεν Ἰησοῦς πρὸς Κύριον, ᾗ ἡμέρᾳ παρέδωκεν ὁ θεὸς τὸν Ἀμορραῖον ὑποχείριον Ἰσραήλ, ἡνίκα συνέτριψεν αὐτοὺς ἐν Γαβαὼν καὶ συνετρίβησαν ἀπὸ προσώπου υἱῶν Ἰσραήλ· καὶ εἶπεν Ἰησοῦς Στήτω ὁ ἥλιος κατὰ Γαβαών, καὶ ἡ σελήνη κατὰ φάραγγα Αἰλών.",
+        "VUL": "Tunc locutus est Josue Domino, in die qua tradidit Amorrhæum in conspectu filiorum Israël, dixitque coram eis : [Sol, contra Gabaon ne movearis,/ et luna contra vallem Ajalon./",
+        "SYN": "Иисус воззвал к Господу в тот день, в который предал Господь [Бог] Аморрея в руки Израилю, когда побил их в Гаваоне, и они побиты были пред лицем сынов Израилевых, и сказал пред Израильтянами: стой, солнце, над Гаваоном, и луна, над долиною Аиалонскою!",
+        "NEO": "Alors Josué parla à \\+w Yahweh|strong=\"H3068\"\\+w**, le jour où \\+w Yahweh|strong=\"H3068\"\\+w** livra les Amorrhéens aux enfants d’Israël, et il dit à la vue d’Israël :",
+        "NAB": "On this day, when the LORD delivered up the Amorites to the Israelites, Joshua prayed to the LORD, and said in the presence of Israel: Stand still, O sun, at Gibeon, O moon, in the valley of Aijalon!",
+        "VAT_ES": "Aquella vez, cuando el Señor puso a los amorreos en manos de los israelitas, Josué se dirigió al Señor y exclamó, en presencia de Israel: «Detente, sol, en Gabaón, y tú, luna, en el valle de Aialón».",
+        "CEI": "Allora, quando il Signore mise gli Amorrèi nelle mani degli Israeliti, Giosuè disse al Signore sotto gli occhi di Israele: \"Sole, fèrmati in Gàbaon e tu, luna, sulla valle di Aialon\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יִּדֹּ֨ם הַ/שֶּׁ֜מֶשׁ וְ/יָרֵ֣חַ עָמָ֗ד עַד יִקֹּ֥ם גּוֹי֙ אֹֽיְבָ֔י/ו הֲ/לֹא הִ֥יא כְתוּבָ֖ה עַל סֵ֣פֶר הַ/יָּשָׁ֑ר וַ/יַּעֲמֹ֤ד הַ/שֶּׁ֨מֶשׁ֙ בַּ/חֲצִ֣י הַ/שָּׁמַ֔יִם וְ/לֹא אָ֥ץ לָ/ב֖וֹא כְּ/י֥וֹם תָּמִֽים׃",
+        "LXX": "καὶ ἔστη ὁ ἥλιος καὶ ἡ σελήνη ἐν στάσει, ἕως ἠμύνατο ὁ θεὸς τοὺς ἐχθροὺς αὐτῶν. καὶ ἔστη ὁ ἥλιος κατὰ μέσον τοῦ οὐρανοῦ, οὐ προεπορεύετο εἰς δυσμὰς εἰς τέλος ἡμέρας μιᾶς.",
+        "VUL": "Steteruntque sol et luna,/ donec ulcisceretur se gens de inimicis suis.] Nonne scriptum est hoc in libro justorum ? Stetit itaque sol in medio cæli, et non festinavit occumbere spatio unius diei.",
+        "SYN": "И остановилось солнце, и луна стояла, доколе народ мстил врагам своим. Не это ли написано в книге Праведного: \"стояло солнце среди неба и не спешило к западу почти целый день\"?",
+        "NEO": "Et le soleil s’arrêta, et la lune se tint immobile, jusqu’à ce que la nation se fut vengée de ses ennemis.",
+        "NAB": "And the sun stood still, and the moon stayed, while the nation took vengeance on its foes. Is this not recorded in the Book of Jashar? The sun halted in the middle of the sky; not for a whole day did it resume its swift course.",
+        "VAT_ES": "Y el sol se detuvo, y la luna permaneció inmóvil, hasta que el pueblo se vengó de sus enemigos. &iquest;No está eso escrito en el libro del Justo? El sol se mantuvo inmóvil en medio del cielo y dejó de correr hacia el poniente casi un día entero.",
+        "CEI": "Si fermò il sole e la luna rimase immobile finché il popolo non si vendicò dei nemici. Non è forse scritto nel libro del Giusto: \"Stette fermo il sole in mezzo al cielo e non si affrettò a calare quasi un giorno intero."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/לֹ֨א הָיָ֜ה כַּ/יּ֤וֹם הַ/הוּא֙ לְ/פָנָ֣י/ו וְ/אַחֲרָ֔י/ו לִ/שְׁמֹ֥עַ יְהוָ֖ה בְּ/ק֣וֹל אִ֑ישׁ כִּ֣י יְהוָ֔ה נִלְחָ֖ם לְ/יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ οὐκ ἐγένετο ἡμέρα τοιαύτη οὐδὲ τὸ πρότερον οὐδὲ τὸ ἔσχατον ὥστε ἐπακοῦσαι θεὸν ἀνθρώπου· ὅτι Κύριος συνεπολέμησεν τῷ Ἰσραήλ.",
+        "VUL": "Non fuit antea nec postea tam longa dies, obediente Domino voci hominis, et pugnante pro Israël.",
+        "SYN": "И не было такого дня ни прежде ни после того, в который Господь [так] слушал бы гласа человеческого. Ибо Господь сражался за Израиля.",
+        "NEO": "Il n’y eut pas, ni avant ni après, de jour comme celui-là, où \\+w Yahweh|strong=\"H3068\"\\+w** obéit à la voix d’un homme ; car \\+w Yahweh|strong=\"H3068\"\\+w** combattait pour Israël.",
+        "NAB": "Never before or since was there a day like this, when the LORD obeyed the voice of a man; for the LORD fought for Israel.",
+        "VAT_ES": "Jamás hubo otro día, ni antes ni después, en que el Señor obedeciera a la voz de un hombre. Realmente, el Señor combatía en favor de Israel.",
+        "CEI": "Non ci fu giorno come quello, né prima né dopo, perché aveva ascoltato il Signore la voce d'un uomo, perché il Signore combatteva per Israele\"?"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יָּ֤שָׁב יְהוֹשֻׁ֨עַ֙ וְ/כָל יִשְׂרָאֵ֣ל עִמּ֔/וֹ אֶל הַֽ/מַּחֲנֶ֖ה הַ/גִּלְגָּֽלָ/ה׃",
+        "VUL": "Reversusque est Josue cum omni Israël in castra Galgalæ.",
+        "SYN": "Потом возвратился Иисус и весь Израиль с ним в стан, в Галгал.",
+        "NEO": "Et Josué, et tout Israël avec lui, retourna au camp à Galgala.",
+        "NAB": "(Then Joshua and all Israel returned to the camp at Gilgal.)",
+        "VAT_ES": "Luego Josué regresó al campamento de Guilgal, acompañado de todo Israel.",
+        "CEI": "Poi Giosuè con tutto Israele ritornò all'accampamento di Gàlgala."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יָּנֻ֕סוּ חֲמֵ֖שֶׁת הַ/מְּלָכִ֣ים הָ/אֵ֑לֶּה וַ/יֵּחָבְא֥וּ בַ/מְּעָרָ֖ה בְּ/מַקֵּדָֽה׃",
+        "LXX": "Καὶ ἔφυγον οἱ πέντε βασιλεῖς οὗτοι, καὶ κατεκρύβησαν εἰς τὸ σπήλαιον τὸ ἐν Μακηδά.",
+        "VUL": "Fugerant enim quinque reges et se absconderant in spelunca urbis Maceda.",
+        "SYN": "А те пять царей убежали и скрылись в пещере в Македе.",
+        "NEO": "Les cinq rois s’enfuirent et se cachèrent dans la caverne, à Macéda.",
+        "NAB": "Meanwhile the five kings who had fled, hid in a cave at Makkedah.",
+        "VAT_ES": "Aquellos cinco reyes, por su parte, habían logrado escapar, refugiándose en una caverna, cerca de Maquedá.",
+        "CEI": "Quei cinque re erano fuggiti e si erano nascosti nella grotta in Makkeda."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֻּגַּ֖ד לִ/יהוֹשֻׁ֣עַ לֵ/אמֹ֑ר נִמְצְאוּ֙ חֲמֵ֣שֶׁת הַ/מְּלָכִ֔ים נֶחְבְּאִ֥ים בַּ/מְּעָרָ֖ה בְּ/מַקֵּדָֽה׃",
+        "LXX": "καὶ ἀπηγγέλη τῷ Ἰησοῦ λέγοντες Εὕρηνται οἱ πέντε βασιλεῖς κεκρυμμένοι ἐν τῷ σπηλαίῳ τῷ ἐν Μακηδά.",
+        "VUL": "Nuntiatumque est Josue quod inventi essent quinque reges latentes in spelunca urbis Maceda.",
+        "SYN": "Когда донесено было Иисусу и сказано: \"нашлись пять царей, они скрываются в пещере в Македе\",",
+        "NEO": "On le rapporta à Josué, en disant : « Les cinq rois ont été trouvés cachés dans la caverne à Macéda. »",
+        "NAB": "When Joshua was told that the five kings had been discovered hiding in a cave at Makkedah,",
+        "VAT_ES": "Cuando se notificó a Josué que habían encontrado a los cinco reyes escondidos en esa caverna,",
+        "CEI": "Fu portata a Giosuè la notizia: \"Sono stati trovati i cinque re, nascosti nella grotta in Makkeda\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוֹשֻׁ֔עַ גֹּ֛לּוּ אֲבָנִ֥ים גְּדֹל֖וֹת אֶל פִּ֣י הַ/מְּעָרָ֑ה וְ/הַפְקִ֧ידוּ עָלֶ֛י/הָ אֲנָשִׁ֖ים לְ/שָׁמְרָֽ/ם׃",
+        "LXX": "καὶ εἶπεν Ἰησοῦς Κυλίσατε λίθους ἐπὶ τὸ στόμα τοῦ σπηλαίου, καὶ καταστήσατε ἄνδρας φυλάσσειν ἐπ’ αὐτούς·",
+        "VUL": "Qui præcepit sociis, et ait : Volvite saxa ingentia ad os speluncæ, et ponite viros industrios, qui clausos custodiant :",
+        "SYN": "Иисус сказал: \"привалите большие камни к отверстию пещеры и приставьте к ней людей стеречь их;",
+        "NEO": "Josué dit : « Roulez de grosses pierres à l’entrée de la caverne, et mettez-y des hommes pour les garder.",
+        "NAB": "he said, \"Roll large stones to the mouth of the cave and post men over it to guard them.",
+        "VAT_ES": "les ordenó: «Hagan rodar unas piedras bien grandes hasta la entrada de la caverna, y dejen allí apostados a unos cuantos hombres para que los vigilen.",
+        "CEI": "Disse loro Giosuè: \"Rotolate grosse pietre contro l'entrata della grotta e fate restare presso di essa uomini per sorvegliarli."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/אַתֶּם֙ אַֽל תַּעֲמֹ֔דוּ רִדְפוּ֙ אַחֲרֵ֣י אֹֽיְבֵי/כֶ֔ם וְ/זִנַּבְתֶּ֖ם אוֹתָ֑/ם אַֽל תִּתְּנ֗וּ/ם לָ/בוֹא֙ אֶל עָ֣רֵי/הֶ֔ם כִּ֧י נְתָנָ֛/ם יְהוָ֥ה אֱלֹהֵי/כֶ֖ם בְּ/יֶדְ/כֶֽם׃",
+        "LXX": "ὑμεῖς δὲ μὴ ἑστήκατε καταδιώκοντες ὀπίσω τῶν ἐχθρῶν ὑμῶν, καὶ καταλάβετε τὴν οὐραγίαν αὐτῶν καὶ μὴ ἀφῆτε εἰσελθεῖν εἰς τὰς πόλεις αὐτῶν· παρέδωκεν γὰρ αὐτοὺς Κύριος ὁ θεὸς ἡμῶν εἰς τὰς χεῖρας ἡμῶν.",
+        "VUL": "vos autem nolite stare, sed persequimini hostes, et extremos quosque fugientium cædite : nec dimittatis eos urbium suarum intrare præsidia, quos tradidit Dominus Deus in manus vestras.",
+        "SYN": "а вы не останавливайтесь [здесь], но преследуйте врагов ваших и истребляйте заднюю часть войска их и не давайте им уйти в города их, ибо Господь Бог ваш предал их в руки ваши\".",
+        "NEO": "Et vous, ne vous arrêtez pas ; poursuivez vos ennemis et frappez-les en queue ; ne les laissez pas entrer dans leurs villes, car \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, les a livrés entre vos mains. »",
+        "NAB": "But do not remain there yourselves. Pursue your enemies, and harry them in the rear. Do not allow them to escape to their cities, for the LORD, your God, has delivered them into your power.\"",
+        "VAT_ES": "Pero ustedes no se detengan: persigan a sus enemigos y córtenles la retirada, para impedirles que entren en sus ciudades. Porque el Señor se los ha entregado».",
+        "CEI": "Voi però non fermatevi, inseguite i vostri nemici, attaccateli nella retroguardia e non permettete loro di entrare nelle loro città, perché il Signore Dio vostro li mette nelle vostre mani\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֩ כְּ/כַלּ֨וֹת יְהוֹשֻׁ֜עַ וּ/בְנֵ֣י יִשְׂרָאֵ֗ל לְ/הַכּוֹתָ֛/ם מַכָּ֥ה גְדוֹלָֽה מְאֹ֖ד עַד תֻּמָּ֑/ם וְ/הַ/שְּׂרִידִים֙ שָׂרְד֣וּ מֵ/הֶ֔ם וַ/יָּבֹ֖אוּ אֶל עָרֵ֥י הַ/מִּבְצָֽר׃",
+        "LXX": "καὶ ἐγένετο ὡς κατέπαυσεν Ἰησοῦς καὶ πᾶς υἱὸς Ἰσραὴλ κόπτοντες αὐτοὺς κοπὴν μεγάλην σφόδρα ἕως εἰς τέλος, καὶ οἱ διασωζόμενοι διεσώθησαν εἰς τὰς πόλεις τὰς ὀχυράς.",
+        "VUL": "Cæsis ergo adversariis plaga magna, et usque ad internecionem pene consumptis, hi qui Israël effugere potuerunt, ingressi sunt civitates munitas.",
+        "SYN": "После того, как Иисус и сыны Израилевы совершенно поразили их весьма великим поражением, и оставшиеся из них убежали в города укрепленные,",
+        "NEO": "Lorsque Josué et les enfants d’Israël eurent achevé de leur infliger une très grande défaite jusqu’à les exterminer, ceux qui purent s’échapper s’étant réfugiés dans les villes fortifiées,",
+        "NAB": "Once Joshua and the Israelites had finally inflicted the last blows in this very great slaughter, and the survivors had escaped from them into the fortified cities,",
+        "VAT_ES": "Y cuando Josué y los israelitas los derrotaron por completo, hasta aniquilarlos –sólo algunos fugitivos habían escapado de ellos y se habían refugiado en las ciudades fortificadas–",
+        "CEI": "Quando Giosuè e gli Israeliti ebbero terminato di infliggere loro una strage enorme così da finirli, e i superstiti furono loro sfuggiti ed entrati nelle fortezze,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יָּשֻׁבוּ֩ כָל הָ/עָ֨ם אֶל הַ/מַּחֲנֶ֧ה אֶל יְהוֹשֻׁ֛עַ מַקֵּדָ֖ה בְּ/שָׁל֑וֹם לֹֽא חָרַ֞ץ לִ/בְנֵ֧י יִשְׂרָאֵ֛ל לְ/אִ֖ישׁ אֶת לְשֹׁנֽ/וֹ׃",
+        "LXX": "καὶ ἀπεστράφη πᾶς ὁ λαὸς πρὸς Ἰησοῦν εἰς Μακηδὰ ὑγιεῖς, καὶ οὐκ ἔγρυξεν οὐθεὶς τῶν υἱῶν Ἰσραὴλ τῇ γλώσσῃ αὐτοῦ.",
+        "VUL": "Reversusque est omnis exercitus ad Josue in Maceda, ubi tunc erant castra, sani et integro numero : nullusque contra filios Israël mutire ausus est.",
+        "SYN": "весь народ возвратился в стан к Иисусу в Макед с миром, и никто на сынов Израилевых не пошевелил языком своим.",
+        "NEO": "tout le peuple revint tranquillement au camp, vers Josué, à Macéda, sans que personne remuât la langue contre les enfants d’Israël.",
+        "NAB": "all the army returned safely to Joshua and the camp at Makkedah, no man uttering a sound against the Israelites.",
+        "VAT_ES": "todo el ejército regresó sano y salvo al campamento de Josué, en Maquedá. Nadie había podido causar el menor daño a los israelitas.",
+        "CEI": "ritornò tutto il popolo all'accampamento presso Giosuè, in Makkeda, in pace. Nessuno mosse più la lingua contro gli Israeliti."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוֹשֻׁ֔עַ פִּתְח֖וּ אֶת פִּ֣י הַ/מְּעָרָ֑ה וְ/הוֹצִ֣יאוּ אֵלַ֗/י אֶת חֲמֵ֛שֶׁת הַ/מְּלָכִ֥ים הָ/אֵ֖לֶּה מִן הַ/מְּעָרָֽה׃",
+        "LXX": "καὶ εἶπεν Ἰησοῦς Ἀνοίξατε τὸ σπήλαιον, καὶ ἐξαγάγετε τοὺς πέντε βασιλεῖς τούτους ἐκ τοῦ σπηλαίου·",
+        "VUL": "Præcepitque Josue, dicens : Aperite os speluncæ, et producite ad me quinque reges, qui in ea latitant.",
+        "SYN": "Тогда Иисус сказал: откройте отверстие пещеры и выведите ко мне из пещеры пятерых царей тех.",
+        "NEO": "Josué dit : « Ouvrez l’entrée de la caverne, faites sortir, pour me les amener, ces cinq rois de la caverne. »",
+        "NAB": "Then Joshua said, \"Open the mouth of the cave and bring out those five kings to me.\"",
+        "VAT_ES": "Entonces Josué dijo: «Despejen la abertura de la caverna, hagan salir a esos cinco reyes, y tráiganlos aquí».",
+        "CEI": "Disse allora Giosuè: \"Aprite l'ingresso della grotta e fatemi uscire dalla grotta quei cinque re\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עֲשׂוּ כֵ֔ן וַ/יֹּצִ֣יאוּ אֵלָ֗י/ו אֶת חֲמֵ֛שֶׁת הַ/מְּלָכִ֥ים הָ/אֵ֖לֶּה מִן הַ/מְּעָרָ֑ה אֵ֣ת מֶ֣לֶךְ יְרוּשָׁלִַ֗ם אֶת מֶ֤לֶךְ חֶבְרוֹן֙ אֶת מֶ֣לֶךְ יַרְמ֔וּת אֶת מֶ֥לֶךְ לָכִ֖ישׁ אֶת מֶ֥לֶךְ עֶגְלֽוֹן׃",
+        "LXX": "καὶ ἐξηγάγοσαν τοὺς πέντε βασιλεῖς ἐκ τοῦ σπηλαίου, τὸν βασιλέα Ἰερουσαλὴμ καὶ τὸν βασιλέα Χεβρὼν καὶ τὸν βασιλέα Ἰερειμοὺθ καὶ τὸν βασιλέα Λαχεὶς καὶ τὸν βασιλέα Ὀδολλάμ.",
+        "VUL": "Feceruntque ministri ut sibi fuerat imperatum : et eduxerunt ad eum quinque reges de spelunca, regem Jerusalem, regem Hebron, regem Jerimoth, regem Lachis, regem Eglon.",
+        "SYN": "Так и сделали: вывели к нему из пещеры пятерых царей тех: царя Иерусалимского, царя Хевронского, царя Иармуфского, царя Лахисского и царя Еглонского.",
+        "NEO": "Ils firent ainsi, et lui amenèrent les cinq rois, qu’ils avaient fait sortir de la caverne, le roi de Jérusalem, le roi d’Hébron, le roi de Jérimoth, le roi de Lachis et le roi d’Eglon.",
+        "NAB": "Obediently, they brought out to him from the cave the five kings, of Jerusalem, Hebron, Jarmuth, Lachish and Eglon.",
+        "VAT_ES": "Así lo hicieron: sacaron de la caverna a los cinco reyes –los reyes de Jerusalén, de Hebrón, de Iarmut, de Laquís y de Eglón–",
+        "CEI": "Così fecero e condussero a lui fuori dalla grotta quei cinque re, il re di Gerusalemme, il re di Ebron, il re di Iarmut, il re di Lachis e il re di Eglon."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ֠/יְהִי כְּֽ/הוֹצִיאָ֞/ם אֶת הַ/מְּלָכִ֣ים הָ/אֵלֶּה֮ אֶל יְהוֹשֻׁעַ֒ וַ/יִּקְרָ֨א יְהוֹשֻׁ֜עַ אֶל כָּל אִ֣ישׁ יִשְׂרָאֵ֗ל וַ֠/יֹּאמֶר אֶל קְצִינֵ֞י אַנְשֵׁ֤י הַ/מִּלְחָמָה֙ הֶ/הָלְכ֣וּא אִתּ֔/וֹ קִרְב֗וּ שִׂ֚ימוּ אֶת רַגְלֵי/כֶ֔ם עַֽל צַוְּארֵ֖י הַ/מְּלָכִ֣ים הָ/אֵ֑לֶּה וַֽ/יִּקְרְב֔וּ וַ/יָּשִׂ֥ימוּ אֶת רַגְלֵי/הֶ֖ם עַל צַוְּארֵי/הֶֽם׃",
+        "LXX": "καὶ ἐπεὶ ἐξήγαγον αὐτοὺς πρὸς Ἰησοῦν, καὶ συνεκάλεσεν Ἰησοῦς πάντα Ἰσραὴλ καὶ τοὺς ἐναρχομένους τοῦ πολέμου τοὺς συνπορευομένους αὐτῷ λέγων αὐτοῖς Προπορεύεσθε καὶ ἐπίθετε τοὺς πόδας ὑμῶν ἐπὶ τοὺς τραχήλους αὐτῶν. καὶ προσελθόντες ἐπέθηκαν τοὺς πόδας αὐτῶν ἐπὶ τοὺς τραχήλους αὐτῶν.",
+        "VUL": "Cumque educti essent ad eum, vocavit omnes viros Israël, et ait ad principes exercitus qui secum erant : Ite, et ponite pedes super colla regum istorum. Qui cum perrexissent, et subjectorum colla pedibus calcarent,",
+        "SYN": "Когда вывели царей сих к Иисусу, Иисус призвал всех Израильтян и сказал вождям воинов, ходившим с ним: подойдите, наступите ногами вашими на выи царей сих. Они подошли и наступили ногами своими на выи их.",
+        "NEO": "Lorsqu’ils eurent fait sortir ces rois devant Josué, Josué appela tous les hommes d’Israël et dit aux chefs des gens de guerre qui l’avaient accompagné : « Approchez-vous, mettez vos pieds sur le cou de ces rois. » Ils s’approchèrent et mirent leurs pieds sur leurs cous.",
+        "NAB": "When they had done so, Joshua summoned all the men of Israel and said to the commanders of the soldiers who had marched with him, \"Come forward and put your feet on the necks of these kings.\" They came forward and put their feet upon their necks.",
+        "VAT_ES": "y una vez que los tuvieron afuera, se los llevaron a Josué. Este convocó a todos los hombres de Israel y dijo a los oficiales que lo habían acompañado: «Acérquense y pongan sus pies sobre la nuca de estos reyes». Ellos se acercaron y les pusieron el pie sobre la nuca.",
+        "CEI": "Quando quei cinque re furono fatti uscire dinanzi a Giosuè, egli convocò tutti gli Israeliti e disse ai capi dei guerrieri che avevano marciato con lui: \"Accostatevi e ponete i vostri piedi sul collo di questi re!\". Quelli s'accostarono e posero i piedi sul loro collo."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֲלֵי/הֶם֙ יְהוֹשֻׁ֔עַ אַל תִּֽירְא֖וּ וְ/אַל תֵּחָ֑תּוּ חִזְק֣וּ וְ/אִמְצ֔וּ כִּ֣י כָ֗כָה יַעֲשֶׂ֤ה יְהוָה֙ לְ/כָל אֹ֣יְבֵי/כֶ֔ם אֲשֶׁ֥ר אַתֶּ֖ם נִלְחָמִ֥ים אוֹתָֽ/ם׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτοὺς Ἰησοῦς Μὴ φοβηθῆτε αὐτοὺς μηδὲ δειλιάσητε· ἀνδρίζεσθε καὶ ἰσχύετε, ὅτι οὕτως ποιήσει Κύριος πᾶσι τοῖς ἐχθροῖς ὑμῶν οὓς ὑμεῖς καταπολεμεῖτε αὐτούς.",
+        "VUL": "rursum ait ad eos : Nolite timere, nec paveatis : confortamini, et estote robusti : sic enim faciet Dominus cunctis hostibus vestris, adversum quos dimicatis.",
+        "SYN": "Иисус сказал им: не бойтесь и не ужасайтесь, будьте тверды и мужественны; ибо так поступит Господь со всеми врагами вашими, с которыми будете воевать.",
+        "NEO": "Et Josué leur dit : « Ne craignez pas et ne vous effrayez point, soyez fermes et courageux, car c’est ainsi que \\+w Yahweh|strong=\"H3068\"\\+w** traitera tous vos ennemis contre lesquels vous combattez. »",
+        "NAB": "Then Joshua said to them, \"Do not be afraid or dismayed, be firm and steadfast. This is what the LORD will do to all the enemies against whom you fight.\"",
+        "VAT_ES": "Luego continuó diciéndoles: «No tengan miedo ni se acobarden; sean fuertes y valientes, porque el Señor hará lo mismo con todos los enemigos, contra los que ustedes tengan que luchar».",
+        "CEI": "Disse loro Giosuè: \"Non temete e non spaventatevi! Siate forti e coraggiosi, perché così farà il Signore a tutti i nemici, contro cui dovrete combattere\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יַּכֵּ֨/ם יְהוֹשֻׁ֤עַ אַֽחֲרֵי כֵן֙ וַ/יְמִיתֵ֔/ם וַ/יִּתְלֵ֕/ם עַ֖ל חֲמִשָּׁ֣ה עֵצִ֑ים וַ/יִּֽהְי֛וּ תְּלוּיִ֥ם עַל הָ/עֵצִ֖ים עַד הָ/עָֽרֶב׃",
+        "LXX": "καὶ ἀπέκτεινεν αὐτοὺς Ἰησοῦς, καὶ ἐκρέμασεν αὐτοὺς ἐπὶ πέντε ξύλων· καὶ ἦσαν κρεμάμενοι ἐπὶ τῶν ξύλων ἕως ἑσπέρας.",
+        "VUL": "Percussitque Josue, et interfecit eos, atque suspendit super quinque stipites : fueruntque suspensi usque ad vesperum.",
+        "SYN": "Потом поразил их Иисус и убил их и повесил их на пяти деревах; и висели они на деревах до вечера.",
+        "NEO": "Après cela Josué les frappa de l’épée et les fit mourir ; il les pendit à cinq arbres, et ils y restèrent pendus jusqu’au soir.",
+        "NAB": "Thereupon Joshua struck and killed them, and hanged them on five trees, where they remained hanging until evening.",
+        "VAT_ES": "Después de esto, Josué los mandó matar y los hizo colgar de cinco árboles. Allí quedaron suspendidos hasta la tarde,",
+        "CEI": "Dopo di ciò, Giosuè li colpì e li uccise e li fece impiccare a cinque alberi, ai quali rimasero appesi fino alla sera."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֞י לְ/עֵ֣ת בּ֣וֹא הַ/שֶּׁ֗מֶשׁ צִוָּ֤ה יְהוֹשֻׁ֨עַ֙ וַ/יֹּֽרִידוּ/ם֙ מֵ/עַ֣ל הָ/עֵצִ֔ים וַ/יַּ֨שְׁלִכֻ֔/ם אֶל הַ/מְּעָרָ֖ה אֲשֶׁ֣ר נֶחְבְּאוּ שָׁ֑ם וַ/יָּשִׂ֜מוּ אֲבָנִ֤ים גְּדֹלוֹת֙ עַל פִּ֣י הַ/מְּעָרָ֔ה עַד עֶ֖צֶם הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ ἐγενήθη πρὸς ἡλίου δυσμὰς ἐνετείλατο Ἰησοῦς, καὶ καθεῖλον αὐτοὺς ἀπὸ τῶν ξύλων, καὶ ἔρριψαν αὐτοὺς εἰς τὸ σπήλαιον εἰς ὃ κατεφύγοσαν ἐκεῖ, καὶ ἐκύλισαν λίθους ἐπὶ τὸ σπήλαιον ἕως τῆς σήμερον ἡμέρας.",
+        "VUL": "Cumque occumberet sol, præcepit sociis ut deponerent eos de patibulis. Qui depositos projecerunt in speluncam in qua latuerant, et posuerunt super os ejus saxa ingentia, quæ permanent usque in præsens.",
+        "SYN": "При захождении солнца приказал Иисус, и сняли их с дерев, и бросили их в пещеру, в которой они скрывались, и привалили большие камни к отверстию пещеры, _которые_ _там_ даже до сего дня.",
+        "NEO": "Vers le coucher du soleil, Josué les fit descendre des arbres ; on les jeta dans la caverne où ils s’étaient cachés, et l’on mit à l’entrée de la caverne de grosses pierres, qui y sont restées jusqu’à ce jour même.",
+        "NAB": "At sunset they were removed from the trees at the command of Joshua and cast into the cave where they had hidden; over the mouth of the cave large stones were placed, which remain until this very day.",
+        "VAT_ES": "y a la puesta del sol, Josué mandó que los descolgaran de los árboles. Luego los arrojaron en la cueva donde habían estado escondidos, y a la entrada de la misma pusieron grandes piedras, que todavía están allí.",
+        "CEI": "All'ora del tramonto, per ordine di Giosuè, li calarono dagli alberi, li gettarono nella grotta dove si erano nascosti e posero grosse pietre all'ingresso della grotta: vi sono fino ad oggi."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/אֶת מַקֵּדָה֩ לָכַ֨ד יְהוֹשֻׁ֜עַ בַּ/יּ֣וֹם הַ/ה֗וּא וַ/יַּכֶּ֣/הָ לְ/פִי חֶרֶב֮ וְ/אֶת מַלְכָּ/הּ֒ הֶחֱרִ֣ם אוֹתָ֗/ם וְ/אֶת כָּל הַ/נֶּ֨פֶשׁ֙ אֲשֶׁר בָּ֔/הּ לֹ֥א הִשְׁאִ֖יר שָׂרִ֑יד וַ/יַּ֨עַשׂ֙ לְ/מֶ֣לֶךְ מַקֵּדָ֔ה כַּ/אֲשֶׁ֥ר עָשָׂ֖ה לְ/מֶ֥לֶךְ יְרִיחֽוֹ׃",
+        "LXX": "Καὶ τὴν Μακηδὰν ἐλάβοσαν ἐν τῇ ἡμέρᾳ ἐκείνῃ, καὶ ἐφόνευσαν αὐτὴν ἐν στόματι μαχαίρας καὶ ἐξωλέθρευσαν πᾶν ἔνπνεον ἐν αὐτῇ, καὶ οὐ κατελείφθη ἐν αὐτῇ οὐδεὶς διασεσωσμένος καὶ διαπεφευγώς· καὶ ἐποίησαν τῷ βασιλεῖ Μακηδὰν ὃν τρόπον ἐποίησαν τῷ βασιλεῖ Ἰερειχώ.",
+        "VUL": "Eodem quoque die, Macedam cepit Josue, et percussit eam in ore gladii, regemque illius interfecit, et omnes habitatores ejus : non dimisit in ea saltem parvas reliquias. Fecitque regi Maceda sicut fecerat regi Jericho.",
+        "SYN": "В тот же день взял Иисус Макед, и поразил [его] мечом и царя его, и предал заклятию их и все дышащее, что находилось в нем: никого не оставил, кто бы уцелел [и избежал]; и поступил с царем Македским так же, как поступил с царем Иерихонским.",
+        "NEO": "Le même jour, Josué s’empara de Macéda et la frappa, elle et son roi, du tranchant de l’épée ; il dévoua par anathème la ville et tous les êtres vivants qui s’y trouvaient, sans laisser échapper personne, et il traita le roi de Macéda comme il avait traité le roi de Jéricho.",
+        "NAB": "Makkedah, too, Joshua captured and put to the sword at that time. He fulfilled the doom on the city, on its king, and on every person in it, leaving no survivors. Thus he did to the king of Makkedah what he had done to the king of Jericho.",
+        "VAT_ES": "Aquel mismo día, Josué se apoderó de Maquedá y pasó al filo de la espada a la ciudad y a su rey, consagrándolos al exterminio junto con todos los seres vivientes que había en ella. No dejó a nadie con vida, y trató al rey de Maquedá como había tratado al rey de Jericó.",
+        "CEI": "Giosuè in quel giorno si impadronì di Makkeda, la passò a fil di spada con il suo re, votò allo sterminio loro e ogni essere vivente che era in essa, non lasciò un superstite e trattò il re di Makkeda come aveva trattato il re di Gerico."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲבֹ֣ר יְ֠הוֹשֻׁעַ וְ/כָֽל יִשְׂרָאֵ֥ל עִמּ֛/וֹ מִ/מַּקֵּדָ֖ה לִבְנָ֑ה וַ/יִּלָּ֖חֶם עִם לִבְנָֽה׃",
+        "LXX": "Καὶ ἀπῆλθεν Ἰησοῦς καὶ πᾶς Ἰσραὴλ μετ’ αὐτοῦ ἐκ Μακηδὰ εἰς Λεβνά, καὶ ἐπολιόρκει Λεβνά.",
+        "VUL": "Transivit autem cum omni Israël de Maceda in Lebna, et pugnabat contra eam :",
+        "SYN": "И пошел Иисус и все Израильтяне с ним из Македа к Ливне и воевал против Ливны;",
+        "NEO": "Josué, et tout Israël avec lui, passa de Macéda à Lebna, et il attaqua Lebna.",
+        "NAB": "Joshua then passed on with all Israel from Makkedah to Libnah, which he attacked.",
+        "VAT_ES": "Luego Josué, con todo Israel pasó de Maquedá a Libná y la atacó.",
+        "CEI": "Giosuè poi, e con lui Israele, passò da Makkeda a Libna e mosse guerra contro Libna."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּן֩ יְהוָ֨ה גַּם אוֹתָ֜/הּ בְּ/יַ֣ד יִשְׂרָאֵ֘ל וְ/אֶת מַלְכָּ/הּ֒ וַ/יַּכֶּ֣/הָ לְ/פִי חֶ֗רֶב וְ/אֶת כָּל הַ/נֶּ֨פֶשׁ֙ אֲשֶׁר בָּ֔/הּ לֹֽא הִשְׁאִ֥יר בָּ֖/הּ שָׂרִ֑יד וַ/יַּ֣עַשׂ לְ/מַלְכָּ֔/הּ כַּ/אֲשֶׁ֥ר עָשָׂ֖ה לְ/מֶ֥לֶךְ יְרִיחֽוֹ׃",
+        "LXX": "καὶ παρέδωκεν αὐτὴν Κύριος εἰς χεῖρας Ἰσραήλ, καὶ ἔλαβον αὐτὴν καὶ τὸν βασιλέα αὐτῆς, καὶ ἐφόνευσεν αὐτὴν ἐν στόματι ξίφους καὶ πᾶν ἔνπνεον ἐν αὐτῇ, καὶ οὐ κατελείφθη ἐν αὐτῇ διασεσωσμένος καὶ διαπεφευγώς· καὶ ἐποίησαν τῷ βασιλεῖ αὐτῆς ὃν τρόπον ἐποίησαν τῷ βασιλεῖ Ἰερειχώ.",
+        "VUL": "quam tradidit Dominus cum rege suo in manus Israël : percusseruntque urbem in ore gladii, et omnes habitatores ejus : non dimiserunt in ea ullas reliquias. Feceruntque regi Lebna sicut fecerant regi Jericho.",
+        "SYN": "и предал Господь и ее в руки Израиля, [и взяли ее] и царя ее, и истребил ее Иисус мечом и все дышащее, что _находилось_ в ней: никого не оставил в ней, кто бы уцелел [и избежал], и поступил с царем ее так же, как поступил с царем Иерихонским.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** la livra aussi, avec son roi, entre les mains d’Israël, et il la frappa du tranchant de l’épée, elle et tous les êtres vivants qui s’y trouvaient, sans en laisser échapper aucun, et il traita son roi comme il avait traité le roi de Jéricho.",
+        "NAB": "Libnah also, with its king, the LORD delivered into the power of Israel. He put it to the sword with every person there, leaving no survivors. Thus he did to its king what he had done to the king of Jericho.",
+        "VAT_ES": "El Señor puso a la ciudad y al rey en manos de Israel, que la pasó al fino de la espada con todos los seres vivientes que había en ella. No dejó a nadie con vida, y trató a su rey como había tratado al rey de Jericó.",
+        "CEI": "Il Signore mise anch'essa e il suo re in potere di Israele, che la passò a fil di spada con ogni essere vivente che era in essa; non vi lasciò alcun superstite e trattò il suo re come aveva trattato il re di Gerico."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲבֹ֣ר יְ֠הוֹשֻׁעַ וְ/כָל יִשְׂרָאֵ֥ל עִמּ֛/וֹ מִ/לִּבְנָ֖ה לָכִ֑ישָׁ/ה וַ/יִּ֣חַן עָלֶ֔י/הָ וַ/יִּלָּ֖חֶם בָּֽ/הּ׃",
+        "LXX": "Καὶ ἀπῆλθεν Ἰησοῦς καὶ πᾶς Ἰσραὴλ μετ’ αὐτοῦ ἐκ Λεβνὰ εἰς Λαχείς, καὶ περιεκάθισεν αὐτὴν καὶ ἐπολιόρκει αὐτήν.",
+        "VUL": "De Lebna transivit in Lachis cum omni Israël : et exercitu per gyrum disposito, oppugnabat eam.",
+        "SYN": "Из Ливны пошел Иисус и все Израильтяне с ним к Лахису и расположился подле него станом и воевал против него;",
+        "NEO": "Josué, et tout Israël avec lui, passa de Lebna à Lachis ; il établit son camp devant elle et l’attaqua.",
+        "NAB": "Joshua next passed on with all Israel from Libnah to Lachish, where they set up a camp during the attack.",
+        "VAT_ES": "Después Josué, con todo Israel, pasó de Libná a Laquís, la asedió y la atacó.",
+        "CEI": "Poi Giosuè, e con lui tutto Israele, passò da Libna a Lachis e si accampò contro di essa e le mosse guerra."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּן֩ יְהוָ֨ה אֶת לָכִ֜ישׁ בְּ/יַ֣ד יִשְׂרָאֵ֗ל וַֽ/יִּלְכְּדָ/הּ֙ בַּ/יּ֣וֹם הַ/שֵּׁנִ֔י וַ/יַּכֶּ֣/הָ לְ/פִי חֶ֔רֶב וְ/אֶת כָּל הַ/נֶּ֖פֶשׁ אֲשֶׁר בָּ֑/הּ כְּ/כֹ֥ל אֲשֶׁר עָשָׂ֖ה לְ/לִבְנָֽה׃",
+        "LXX": "καὶ παρέδωκεν Κύριος τὴν Λαχεὶς εἰς τὰς χεῖρας Ἰσραήλ, καὶ ἔλαβεν αὐτὴν ἐν τῇ ἡμέρᾳ τῇ δευτέρᾳ, καὶ ἐφόνευσαν αὐτὴν ἐν στόματι ξίφους, καὶ ἐξωλέθρευσαν αὐτὴν ὃν τρόπον ἐποίησαν τὴν Λεβνά.",
+        "VUL": "Tradiditque Dominus Lachis in manus Israël, et cepit eam die altero, atque percussit in ore gladii, omnemque animam quæ fuerat in ea, sicut fecerat Lebna.",
+        "SYN": "и предал Господь Лахис в руки Израиля, и взял он его на другой день, и поразил его мечом и все дышащее, что было в нем, [и истребил его] так, как поступил с Ливною.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** livra Lachis entre les mains d’Israël, qui la prit le second jour, et la frappa du tranchant de l’épée, elle et tous les êtres vivants qui s’y trouvaient, comme il avait fait pour Lebna. —",
+        "NAB": "The LORD delivered Lachish into the power of Israel, so that on the second day Joshua captured it and put it to the sword with every person in it, just as he had done to Libnah.",
+        "VAT_ES": "El Señor puso también a Laquís en manos de Israel, que la conquistó al segundo día, y la pasó al filo de la espada con todos los seres vivientes que había en ella, exactamente como había hecho con Libná.",
+        "CEI": "Il Signore mise Lachis in potere di Israele, che la prese il secondo giorno e la passò a fil di spada con ogni essere vivente che era in essa, come aveva fatto a Libna."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "אָ֣ז עָלָ֗ה הֹרָם֙ מֶ֣לֶךְ גֶּ֔זֶר לַ/עְזֹ֖ר אֶת לָכִ֑ישׁ וַ/יַּכֵּ֤/הוּ יְהוֹשֻׁ֨עַ֙ וְ/אֶת עַמּ֔/וֹ עַד בִּלְתִּ֥י הִשְׁאִֽיר ל֖/וֹ שָׂרִֽיד׃",
+        "LXX": "Τότε ἀνέβη Αἱλὰμ βασιλεὺς Γάζης βοηθήσων τῇ Λαχείς· καὶ ἐπάταξεν αὐτὸν Ἰησοῦς ἐν στόματι ξίφους καὶ τὸν λαὸν αὐτοῦ, ἕως τοῦ μὴ καταλειφθῆναι αὐτῶν σεσωσμένον καὶ διαπεφευγότα.",
+        "VUL": "Eo tempore ascendit Horam rex Gazer, ut auxiliaretur Lachis : quem percussit Josue cum omni populo ejus usque ad internecionem.",
+        "SYN": "Тогда пришел на помощь Лахису Горам, царь Газерский; но Иисус поразил его и народ его [мечом] так, что никого у него не оставил, кто бы уцелел [и избежал].",
+        "NEO": "Alors Horam, roi de Gaser, monta pour secourir Lachis ; Josué le battit, lui et son peuple, sans laisser échapper personne.",
+        "NAB": "At that time Horam, king of Gezer, came up to help Lachish, but Joshua defeated him and his people, leaving him no survivors.",
+        "VAT_ES": "Mientras tanto, Horam, rey de Guézer, subió en ayuda de Laquís; pero Josué lo derrotó, a él y a su ejército, hasta no dejar ningún sobreviviente.",
+        "CEI": "Allora, per venire in aiuto a Lachis, era partito Oam, re di Ghezer, e Giosuè battè lui e il suo popolo, fino a non lasciargli alcun superstite."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲבֹ֣ר יְ֠הוֹשֻׁעַ וְ/כָל יִשְׂרָאֵ֥ל עִמּ֛/וֹ מִ/לָּכִ֖ישׁ עֶגְלֹ֑נָ/ה וַ/יַּחֲנ֣וּ עָלֶ֔י/הָ וַ/יִּֽלָּחֲמ֖וּ עָלֶֽי/הָ׃",
+        "LXX": "Καὶ ἀπῆλθεν Ἰησοῦς καὶ πᾶς Ἰσραὴλ μετ’ αὐτοῦ ἐκ Λαχεὶς εἰς Ὀδολλάμ, καὶ περιεκάθισεν αὐτὴν καὶ ἐπολιόρκησεν αὐτήν.",
+        "VUL": "Transivitque de Lachis in Eglon, et circumdedit,",
+        "SYN": "И пошел Иисус и все Израильтяне с ним из Лахиса к Еглону и расположились подле него станом и воевали против него;",
+        "NEO": "Josué, et tout Israël avec lui, passa de Lachis à Eglon ; ils établirent leur camp devant elle et l’attaquèrent.",
+        "NAB": "From Lachish, Joshua passed on with all Israel to Eglon; encamping near it, they attacked it",
+        "VAT_ES": "Luego Josué, con todo Israel, subió de Eglón a Hebrón. La sitiaron, la atacaron,",
+        "CEI": "Poi Giosuè, e con lui tutto Israele, passò da Lachis ad Eglon, si accamparono contro di essa e le mossero guerra."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַֽ/יִּלְכְּד֜וּ/הָ בַּ/יּ֤וֹם הַ/הוּא֙ וַ/יַּכּ֣וּ/הָ לְ/פִי חֶ֔רֶב וְ/אֵת֙ כָּל הַ/נֶּ֣פֶשׁ אֲשֶׁר בָּ֔/הּ בַּ/יּ֥וֹם הַ/ה֖וּא הֶחֱרִ֑ים כְּ/כֹ֥ל אֲשֶׁר עָשָׂ֖ה לְ/לָכִֽישׁ׃",
+        "LXX": "καὶ παρέδωκεν αὐτὴν Κύριος ἐν χειρὶ Ἰσραήλ, καὶ ἔλαβεν αὐτὴν ἐν τῇ ἡμέρᾳ ἐκείνῃ, καὶ ἐφόνευσεν, ὃν τρόπον ἐποίησαν τῇ Λαχείς.",
+        "VUL": "atque expugnavit eam eadem die : percussitque in ore gladii omnes animas quæ erant in ea, juxta omnia quæ fecerat Lachis.",
+        "SYN": "[и предал его Господь в руки Израиля,] и взяли его в тот же день и поразили его мечом, и все дышащее, что находилось в нем в тот день, предал он заклятию, как поступил с Лахисом.",
+        "NEO": "Ils la prirent le même jour, et la frappèrent du tranchant de l’épée ; tous les êtres vivants qui s’y trouvaient, Josué les dévoua par anathème ce jour-là, selon tout ce qu’il avait fait pour Lachis.",
+        "NAB": "and captured it the same day, putting it to the sword. He fulfilled the doom that day on every person in it, just as he had done at Lachish.",
+        "VAT_ES": "y ese mismo día la tomaron y la pasaron al filo de la espada. Aquel día Josué consagró al exterminio a todos los seres vivientes que había en la ciudad, exactamente como había hecho con Laquís.",
+        "CEI": "In quel giorno la presero e la passarono a fil di spada e votarono allo sterminio, in quel giorno, ogni essere vivente che era in essa, come aveva fatto a Lachis."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַל יְ֠הוֹשֻׁעַ וְ/כָֽל יִשְׂרָאֵ֥ל עִמּ֛/וֹ מֵ/עֶגְל֖וֹנָ/ה חֶבְר֑וֹנָ/ה וַ/יִּֽלָּחֲמ֖וּ עָלֶֽי/הָ׃",
+        "LXX": "Καὶ ἀπῆλθεν Ἰησοῦς καὶ πᾶς Ἰσραὴλ μετ’ αὐτοῦ εἰς Χεβρών, καὶ περιεκάθισεν αὐτήν.",
+        "VUL": "Ascendit quoque cum omni Israël de Eglon in Hebron, et pugnavit contra eam :",
+        "SYN": "И пошел Иисус и все Израильтяне с ним из Еглона к Хеврону и воевали против него;",
+        "NEO": "Josué, et tout Israël avec lui, monta d’Eglon à Hébron, et ils l’attaquèrent.",
+        "NAB": "From Eglon, Joshua went up with all Israel to Hebron, which they attacked",
+        "VAT_ES": "Después Josué, con todo Israel, subió de Eglón a Hebrón. La atacaron,",
+        "CEI": "Giosuè poi, e con lui tutto Israele, salì da Eglon ad Ebron e le mossero guerra."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/יִּלְכְּד֣וּ/הָ וַ/יַּכּֽוּ/הָ לְ/פִי חֶ֠רֶב וְ/אֶת מַלְכָּ֨/הּ וְ/אֶת כָּל עָרֶ֜י/הָ וְ/אֶת כָּל הַ/נֶּ֤פֶשׁ אֲשֶׁר בָּ/הּ֙ לֹֽא הִשְׁאִ֣יר שָׂרִ֔יד כְּ/כֹ֥ל אֲשֶׁר עָשָׂ֖ה לְ/עֶגְל֑וֹן וַ/יַּחֲרֵ֣ם אוֹתָ֔/הּ וְ/אֶת כָּל הַ/נֶּ֖פֶשׁ אֲשֶׁר בָּֽ/הּ׃",
+        "LXX": "⸂⸆⸃ καὶ ἐπάταξεν αὐτὴν ἐν στόματι ξίφους καὶ πᾶν ἐνπνέον ὅσα ἦν ἐν αὐτῇ· οὐκ ἦν διασεσωσμένος· ὃν τρόπον ἐποίησαν τὴν Ὀδολλάμ, ἐξωλέθρευσαν αὐτὴν καὶ ὅσα ἦν ἐν αὐτῇ.",
+        "VUL": "cepit eam, et percussit in ore gladii, regem quoque ejus, et omnia oppida regionis illius, universasque animas quæ in ea fuerant commoratæ : non reliquit in ea ullas reliquias : sicut fecerat Eglon, sic fecit et Hebron, cuncta quæ in ea reperit consumens gladio.",
+        "SYN": "и взяли его и поразили его мечом, и царя его, и все города его, и все дышащее, что находилось в нем; никого не оставил, кто уцелел бы, как поступил он и с Еглоном: предал заклятию его и все дышащее, что находилось в нем.",
+        "NEO": "L’ayant prise, ils la frappèrent du tranchant de l’épée, elle, son roi, toutes les villes de sa dépendance et tous les êtres vivants qui s’y trouvaient, sans laisser échapper personne, comme Josué avait fait pour Eglon ; et il la dévoua par anathème, avec tous les êtres vivants qui s’y trouvaient.",
+        "NAB": "and captured. They put it to the sword with its king, all its towns, and every person there, leaving no survivors, just as Joshua had done to Eglon. He fulfilled the doom on it and on every person there.",
+        "VAT_ES": "la tomaron, y pasaron al filo de la espada a la ciudad, a su rey, y a todos los seres vivientes que había en ella. Josué no dejó a nadie con vida, sino que hizo con ella lo mismo que había hecho con Eglón: consagró al exterminio a la ciudad y a todos los seres vivientes que había en ella.",
+        "CEI": "La presero e la passarono a fil di spada con il suo re, tutti i suoi villaggi e ogni essere vivente che era in essa; non lasciò alcun superstite; come aveva fatto ad Eglon, la votò allo sterminio con ogni essere vivente che era in essa."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יָּ֧שָׁב יְהוֹשֻׁ֛עַ וְ/כָל יִשְׂרָאֵ֥ל עִמּ֖/וֹ דְּבִ֑רָ/ה וַ/יִּלָּ֖חֶם עָלֶֽי/הָ׃",
+        "LXX": "Καὶ ἀπέστρεψεν Ἰησοῦς καὶ πᾶς Ἰσραὴλ εἰς Δαβείρ, καὶ περικαθίσαντες αὐτὴν",
+        "VUL": "Inde reversus in Dabir,",
+        "SYN": "Потом обратился Иисус и весь Израиль с ним к Давиру и воевал против него;",
+        "NEO": "Josué, et tout Israël avec lui, se tourna vers Dabir, et il l’attaqua.",
+        "NAB": "Then Joshua and all Israel turned back to Debir and attacked it,",
+        "VAT_ES": "Luego Josué, con todo Israel, volvió atrás hasta Debir, la atacó,",
+        "CEI": "Poi Giosuè, e con lui tutto Israele, si rivolse a Debir e le mosse guerra."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַֽ/יִּלְכְּדָ֞/הּ וְ/אֶת מַלְכָּ֤/הּ וְ/אֶת כָּל עָרֶ֨י/הָ֙ וַ/יַּכּ֣וּ/ם לְ/פִי חֶ֔רֶב וַֽ/יַּחֲרִ֨ימוּ֙ אֶת כָּל נֶ֣פֶשׁ אֲשֶׁר בָּ֔/הּ לֹ֥א הִשְׁאִ֖יר שָׂרִ֑יד כַּ/אֲשֶׁ֨ר עָשָׂ֜ה לְ/חֶבְר֗וֹן כֵּן עָשָׂ֤ה לִ/דְבִ֨רָ/ה֙ וּ/לְ/מַלְכָּ֔/הּ וְ/כַ/אֲשֶׁ֥ר עָשָׂ֛ה לְ/לִבְנָ֖ה וּ/לְ/מַלְכָּֽ/הּ׃",
+        "LXX": "ἔλαβον αὐτὴν καὶ τὸν βασιλέα αὐτῆς καὶ τὰς κώμας αὐτῆς, καὶ ἐπάταξαν αὐτὴν ἐν στόματι ξίφους, καὶ ἐξωλέθρευσαν αὐτὴν καὶ πᾶν ἐνπνέον ἐν αὐτῇ, καὶ οὐ κατέλιπον αὐτῇ οὐδένα διασεσωσμένον. ὃν τρόπον ἐποίησαν τὴν Χεβρὼν καὶ τῷ βασιλεῖ αὐτῆς, οὕτως ἐποίησαν τῇ Δαβεὶρ καὶ τῷ βασιλεῖ αὐτῆς.",
+        "VUL": "cepit eam atque vastavit : regem quoque ejus atque omnia per circuitum oppida percussit in ore gladii : non dimisit in ea ullas reliquias : sicut fecerat Hebron et Lebna et regibus earum, sic fecit Dabir et regi illius.",
+        "SYN": "и взял его и царя его и все города его, и поразили их мечом, и предали заклятию [их и] все дышащее, что находилось в нем: никого не осталось, кто уцелел бы; как поступил с Хевроном и царем его, так поступил с Давиром и царем его, и как поступил с Ливною и царем ее.",
+        "NEO": "Il la prit, elle, son roi et toutes les villes de sa dépendance ; et ils les frappèrent du tranchant de l’épée, et ils dévouèrent par anathème tous les êtres vivants qui s’y trouvaient, sans laisser échapper personne. Josué traita Dabir et son roi comme il avait traité Hébron, et comme il avait traité Lebna et son roi.",
+        "NAB": "capturing it with its king and all its towns. They put them to the sword and fulfilled the doom on every person there, leaving no survivors. Thus was done to Debir and its king what had been done to Hebron, as well as to Libnah and its king.",
+        "VAT_ES": "y se apoderó de la ciudad, de su rey y de todas sus otras ciudades. Los israelitas los pasaron al filo de la espada, y consagraron al exterminio a todos los seres vivientes que había en la ciudad, sin dejar a nadie con vida. Josué trató a Debir como había tratado a Hebrón y a su rey, y como había tratado a Libná y a su rey.",
+        "CEI": "La prese con il suo re e tutti i suoi villaggi; li passarono a fil di spada e votarono allo sterminio ogni essere vivente che era in essa; non lasciò alcun superstite. Trattò Debir e il suo re come aveva trattato Ebron e come aveva trattato Libna e il suo re."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וַ/יַּכֶּ֣ה יְהוֹשֻׁ֣עַ אֶת כָּל הָ/אָ֡רֶץ הָ/הָר֩ וְ/הַ/נֶּ֨גֶב וְ/הַ/שְּׁפֵלָ֜ה וְ/הָ/אֲשֵׁד֗וֹת וְ/אֵת֙ כָּל מַלְכֵי/הֶ֔ם לֹ֥א הִשְׁאִ֖יר שָׂרִ֑יד וְ/אֵ֤ת כָּל הַ/נְּשָׁמָה֙ הֶחֱרִ֔ים כַּ/אֲשֶׁ֣ר צִוָּ֔ה יְהוָ֖ה אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "Καὶ ἐπάταξεν Ἰησοῦς πᾶσαν τὴν γῆν τῆς ὀρεινῆς καὶ τὴν Ναβαὶ καὶ τὴν πεδινὴν καὶ τὴν Ἀσηδὼθ καὶ τοὺς βασιλεῖς αὐτῆς· οὐ κατέλιπον αὐτῶν σεσωσμένον, καὶ πᾶν ἐνπνέον ζωῆς ἐξωλέθρευσεν, ὃν τρόπον ἐνετείλατο Κύριος ὁ θεὸς Ἰσραήλ.",
+        "VUL": "Percussit itaque Josue omnem terram montanam et meridianam atque campestrem, et Asedoth, cum regibus suis : non dimisit in ea ullas reliquias, sed omne quod spirare poterat interfecit, sicut præceperat ei Dominus Deus Israël,",
+        "SYN": "И поразил Иисус всю землю нагорную и полуденную, и низменные места и землю, лежащую у гор, и всех царей их: никого не оставил, кто уцелел бы, и все дышащее предал заклятию, как повелел Господь Бог Израилев;",
+        "NEO": "Josué frappa tout le pays : la Montagne, le Négéb, le bas pays et les coteaux, avec tous leurs rois, sans laisser échapper personne, dévouant par anathème tout ce qui avait vie, comme l’avait ordonné \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël.",
+        "NAB": "Joshua conquered the entire country; the mountain regions, the Negeb, the foothills, and the mountain slopes, with all their kings. He left no survivors, but fulfilled the doom on all who lived there, just as the LORD, the God of Israel, had commanded.",
+        "VAT_ES": "Así Josué conquistó toda la región: la Montaña, con todos sus reyes. No dejó a nadie con vida, sino que consagró al exterminio a todos los seres vivientes, como el Señor, Dios de Israel, le había ordenado.",
+        "CEI": "Così Giosuè battè tutto il paese: le montagne, il Negheb, il bassopiano, le pendici e tutti i loro re. Non lasciò alcun superstite e votò allo sterminio ogni essere che respira, come aveva comandato il Signore, Dio di Israele."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וַ/יַּכֵּ֧/ם יְהוֹשֻׁ֛עַ מִ/קָּדֵ֥שׁ בַּרְנֵ֖עַ וְ/עַד עַזָּ֑ה וְ/אֵ֛ת כָּל אֶ֥רֶץ גֹּ֖שֶׁן וְ/עַד גִּבְעֽוֹן׃",
+        "LXX": "ἀπὸ Καδής Βαρνὴ ἕως Γάζης, πᾶσαν τὴν Γόσομ ἕως τῆς Γαβαών.",
+        "VUL": "a Cadesbarne usque Gazam. Omnem terram Gosen usque Gabaon,",
+        "SYN": "поразил их Иисус от Кадес-Варни до Газы, и всю землю Гошен даже до Гаваона;",
+        "NEO": "Josué les battit de Cadès-Barné à Gaza, et tout le pays de Gosen jusqu’à Gabaon.",
+        "NAB": "Joshua conquered from Kadesh-barnea to Gaza, and all the land of Goshen to Gibeon.",
+        "VAT_ES": "Josué conquistó desde Cades Barné hasta Gaza, y toda la región de Gosen hasta Gabaón.",
+        "CEI": "Giosuè li colpì da Kades-Barnea fino a Gaza e tutto il paese di Gosen fino a Gàbaon."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨ת כָּל הַ/מְּלָכִ֤ים הָ/אֵ֨לֶּה֙ וְ/אֶת אַרְצָ֔/ם לָכַ֥ד יְהוֹשֻׁ֖עַ פַּ֣עַם אֶחָ֑ת כִּ֗י יְהוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל נִלְחָ֖ם לְ/יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ πάντας τούς βασιλεῖς αὐτῶν καὶ τὴν γῆν αὐτῶν ἐπάταξεν Ἰησοῦς εἰς ἅπαξ· ὅτι Κύριος ὁ θεὸς Ἰσραὴλ συνεπολέμει τῷ Ἰσραήλ.",
+        "VUL": "universosque reges, et regiones eorum uno impetu cepit atque vastavit : Dominus enim Deus Israël pugnavit pro eo.",
+        "SYN": "и всех царей сих и земли их Иисус взял одним разом, ибо Господь Бог Израилев сражался за Израиля.",
+        "NEO": "Josué prit tous ces rois et tout leur pays dans une seule expédition, car \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël, combattait pour Israël.",
+        "NAB": "All these kings and their lands Joshua captured in a single campaign, for the LORD, the God of Israel, fought for Israel.",
+        "VAT_ES": "En una sola campaña se apoderó de todos estos reyes y de sus territorios, porque el Señor, el Dios de Israel, combatía a favor de los israelitas.",
+        "CEI": "Giosuè prese tutti questi re e il loro paese in una sola volta, perché il Signore, Dio di Israele, combatteva per Israele."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וַ/יָּ֤שָׁב יְהוֹשֻׁ֨עַ֙ וְ/כָל יִשְׂרָאֵ֣ל עִמּ֔/וֹ אֶל הַֽ/מַּחֲנֶ֖ה הַ/גִּלְגָּֽלָ/ה׃",
+        "VUL": "Reversusque est cum omni Israël ad locum castrorum in Galgala.",
+        "SYN": "Потом Иисус и все Израильтяне с ним возвратились в стан, в Галгал.",
+        "NEO": "Puis Josué, et tout Israël avec lui, retourna au camp, à Galgala.",
+        "NAB": "Thereupon Joshua with all Israel returned to the camp at Gilgal.",
+        "VAT_ES": "Finalmente, Josué regresó al campamento de Guilgal, acompañado de todo Israel.",
+        "CEI": "Poi Giosuè con tutto Israele tornò all'accampamento di Gàlgala."
+      }
+    }
+  }
+}

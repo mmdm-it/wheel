@@ -1,0 +1,726 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOB_031",
+  "book_key": "IOB",
+  "sequence": 31,
+  "chapter_in": {
+    "MT": 31,
+    "VUL": 31,
+    "LXX": 31
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בְּ֭רִית כָּרַ֣תִּי לְ/עֵינָ֑/י וּ/מָ֥ה אֶ֝תְבּוֹנֵ֗ן עַל בְּתוּלָֽה׃",
+        "LXX": "διαθήκην ἐθέμην τοῖς ὀφθαλμοῖς μου. καὶ οὐ συνήσω ἐπὶ παρθένον.",
+        "VUL": "[Pepigi fdus cum oculis meis,/ ut ne cogitarem quidem de virgine./",
+        "SYN": "Завет положил я с глазами моими, чтобы не помышлять мне о девице.",
+        "NEO": "J’avais fait un pacte avec mes yeux, et comment aurais-je arrêté mes regards sur une vierge. —",
+        "NAB": "If I have made an agreement with my eyes and entertained any thoughts against a maiden;",
+        "VAT_ES": "Pero ahora se ríe de mí hasta la gente más joven que yo., a cuyos padres yo no consideraba dignos de juntarlos con los perros de mis rebaños.",
+        "CEI": "Avevo stretto con gli occhi un patto di non fissare neppure una vergine."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וּ/מֶ֤ה חֵ֣לֶק אֱל֣וֹהַּ מִ/מָּ֑עַל וְֽ/נַחֲלַ֥ת שַׁ֝דַּ֗י מִ/מְּרֹמִֽים׃",
+        "LXX": "καὶ ἔτι ἐμέρισεν ὁ θεὸς ἄνωθεν, καὶ κληρονομία Ἱκανοῦ ἐξ ὑψίστων.",
+        "VUL": "Quam enim partem haberet in me Deus desuper,/ et hæreditatem Omnipotens de excelsis ?/",
+        "SYN": "Какая же участь _мне_ от Бога свыше? И какое наследие от Вседержителя с небес?",
+        "NEO": "Quelle part, me disais-je, Dieu me réserverait-il d’en haut ? Quel sort le Tout-Puissant me ferait-il de son ciel ?",
+        "NAB": "But what is man's lot from God above, his inheritance from the Almighty on high?",
+        "VAT_ES": "&iquest;De qué me hubiera servido la fuerza de sus manos? Ellos habían perdido todo su vigor:",
+        "CEI": "Che parte mi assegna Dio di lassù e che porzione mi assegna l'Onnipotente dall'alto?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הֲ/לֹא אֵ֥יד לְ/עַוָּ֑ל וְ֝/נֵ֗כֶר לְ/פֹ֣עֲלֵי אָֽוֶן׃",
+        "LXX": "οὐαί, ἀπώλεια τῷ ἀδίκῳ, καὶ ἀπαλλοτρίωσις τοῖς ποιοῦσιν ἀνομίαν.",
+        "VUL": "Numquid non perditio est iniquo,/ et alienatio operantibus injustitiam ?/",
+        "SYN": "Не для нечестивого ли гибель, и не для делающего ли зло напасть?",
+        "NEO": "La ruine n’est-elle pas pour le méchant, et le malheur pour les artisans d’iniquité ?",
+        "NAB": "Is it not calamity for the unrighteous, and woe for evildoers?",
+        "VAT_ES": "agotados por la penuria y el hambre, roían el suelo reseco, la tierra desierta y desolada.",
+        "CEI": "Non è forse la rovina riservata all'iniquo e la sventura per chi compie il male?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הֲ/לֹא ה֭וּא יִרְאֶ֣ה דְרָכָ֑/י וְֽ/כָל צְעָדַ֥/י יִסְפּֽוֹר׃",
+        "LXX": "οὐχὶ αὐτὸς ὄψεται ὁδόν μου, καὶ πάντα τὰ διαβήματά μου ἐξαριθμηθήσεται;",
+        "VUL": "Nonne ipse considerat vias meas,/ et cunctos gressus meos dinumerat ?/",
+        "SYN": "Не видел ли Он путей моих, и не считал ли всех моих шагов?",
+        "NEO": "Dieu ne connaît-il pas mes voies, ne compte-t-il pas tous mes pas ?",
+        "NAB": "Does he not see my ways, and number all my steps?",
+        "VAT_ES": "Arrancaban malezas de los matorrales y raíces de retama eran su alimento.",
+        "CEI": "Non vede egli la mia condotta e non conta tutti i miei passi?"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אִם הָלַ֥כְתִּי עִם שָׁ֑וְא וַ/תַּ֖חַשׁ עַל מִרְמָ֣ה רַגְלִֽ/י׃",
+        "LXX": "εἰ δὲ ἤμην πεπορευμένος μετὰ γελοιαστῶν, εἰ δὲ καὶ ἐσπούδασεν ὁ πούς μου εἰς δόλον·",
+        "VUL": "Si ambulavi in vanitate,/ et festinavit in dolo pes meus,/",
+        "SYN": "Если я ходил в суете, и если нога моя спешила на лукавство, --",
+        "NEO": "Si j’ai marché dans le sentier du mensonge, si mon pied a couru après la fraude, —",
+        "NAB": "If I have walked in falsehood and my foot has hastened to deceit;",
+        "VAT_ES": "Se los expulsaba de en medio de los hombres; se los echaba a gritos, como a un ladrón.",
+        "CEI": "Se ho agito con falsità e il mio piede si è affrettato verso la frode,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "יִשְׁקְלֵ֥/נִי בְ/מֹאזְנֵי צֶ֑דֶק וְ/יֵדַ֥ע אֱ֝ל֗וֹהַּ תֻּמָּתִֽ/י׃",
+        "LXX": "⸂⸆⸃ ἕσταμαι γὰρ ἐν ζυγῷ δικαίῳ, οἶδεν δὲ ὁ κύριος τὴν ἀκακίαν μου·",
+        "VUL": "appendat me in statera justa,/ et sciat Deus simplicitatem meam./",
+        "SYN": "пусть взвесят меня на весах правды, и Бог узнает мою непорочность.",
+        "NEO": "que Dieu me pèse dans de justes balances, et il reconnaîtra mon innocence !",
+        "NAB": "Let God weigh me in the scales of justice; thus will he know my innocence!",
+        "VAT_ES": "Habitaban en los barrancos de los torrentes, en las grietas del suelo y los peñascos.",
+        "CEI": "mi pesi pure sulla bilancia della giustizia e Dio riconoscerà la mia integrità."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אִ֥ם תִּטֶּ֣ה אַשֻּׁרִ/י֮ מִנִּ֪י הַ֫/דָּ֥רֶךְ וְ/אַחַ֣ר עֵ֭ינַ/י הָלַ֣ךְ לִבִּ֑/י וּ֝/בְ/כַפַּ֗/י דָּ֣בַק מֻאֽוּם׃",
+        "LXX": "εἰ ἐξέκλινεν ὁ πούς μου ἐκ τῆς ὁδοῦ, εἰ δὲ καὶ τῷ ὀφθαλμῷ ἐπηκολούθησεν ἡ καρδία μου, εἰ δὲ καὶ ταῖς χερσίν μου ἡψάμην δώρων·",
+        "VUL": "Si declinavit gressus meus de via,/ et si secutum est oculos meos cor meum,/ et si manibus meis adhæsit macula,/",
+        "SYN": "Если стопы мои уклонялись от пути и сердце мое следовало за глазами моими, и если что-либо _нечистое_ пристало к рукам моим,",
+        "NEO": "Si mes pas se sont écartés du droit chemin, si mon cœur a suivi mes yeux, si quelque souillure s’est attachée à mes mains, —",
+        "NAB": "If my steps have turned out of the way, and my heart has followed my eyes, or any stain clings to my hands,",
+        "VAT_ES": "Rebuznaban entre los matorrales, se apretujaban bajo los cardos",
+        "CEI": "Se il mio passo è andato fuori strada e il mio cuore ha seguito i miei occhi, se alla mia mano si è attaccata sozzura,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אֶ֭זְרְעָה וְ/אַחֵ֣ר יֹאכֵ֑ל וְֽ/צֶאֱצָאַ֥/י יְשֹׁרָֽשׁוּ׃",
+        "LXX": "σπείραιμι ἄρα καὶ ἄλλοι φάγοισαν, ἄριζος δὲ γενοίμην ἐπὶ γῆς.",
+        "VUL": "seram, et alius comedat,/ et progenies mea eradicetur./",
+        "SYN": "то пусть я сею, а другой ест, и пусть отрасли мои искоренены будут.",
+        "NEO": "que je sème, et qu’un autre mange, que mes rejetons soient déracinés !",
+        "NAB": "Then may I sow, but another eat of it, or may my planting be rooted up!",
+        "VAT_ES": "&iexcl;Gente envilecida, raza sin nombre, echados a golpes del país!",
+        "CEI": "io semini e un altro ne mangi il frutto e siano sradicati i miei germogli."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אִם נִפְתָּ֣ה לִ֭בִּ/י עַל אִשָּׁ֑ה וְ/עַל פֶּ֖תַח רֵעִ֣/י אָרָֽבְתִּי׃",
+        "LXX": "εἰ ἐξηκολούθησεν ἡ καρδία μου γυναικὶ ἀνδρὸς ἑτέρου, εἰ καὶ ἐνκάθετος ἐγενόμην ἐπὶ θύραις αὐτῆς·",
+        "VUL": "Si deceptum est cor meum super muliere,/ et si ad ostium amici mei insidiatus sum,/",
+        "SYN": "Если сердце мое прельщалось женщиною и я строил ковы у дверей моего ближнего, --",
+        "NEO": "Si mon cœur a été séduit par une femme, si j’ai fait le guet à la porte de mon prochain, —",
+        "NAB": "If my heart has been enticed toward a woman, and I have lain in wait at my neighbor's door;",
+        "VAT_ES": "&iexcl;Y ahora, ellos me hacen burla con sus cantos, soy el tema de sus dichos jocosos!",
+        "CEI": "Se il mio cuore fu sedotto da una donna e ho spiato alla porta del mio prossimo,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "תִּטְחַ֣ן לְ/אַחֵ֣ר אִשְׁתִּ֑/י וְ֝/עָלֶ֗י/הָ יִכְרְע֥וּ/ן אֲחֵרִֽין׃",
+        "LXX": "ἀρέσαι ἄρα καὶ ἡ γυνή μου ἑτέρῳ, τὰ δὲ νήπιά μου ταπεινωθείη.",
+        "VUL": "scortum alterius sit uxor mea,/ et super illam incurventur alii./",
+        "SYN": "пусть моя жена мелет на другого, и пусть другие издеваются над нею,",
+        "NEO": "que ma femme tourne la meule pour un autre, que des étrangers la déshonorent !",
+        "NAB": "Then may my wife grind for another, and may others cohabit with her!",
+        "VAT_ES": "Abominan y se alejan de mí no les importa escupirme en la cara.",
+        "CEI": "mia moglie macini per un altro e altri ne abusino;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּי הוא הִ֥יא זִמָּ֑ה ו/היא וְ֝/ה֗וּא עָוֺ֥ן פְּלִילִֽים׃",
+        "LXX": "θυμὸς γὰρ ὀργῆς ἀκατάσχετος, τὸ μιᾶναι ἀνδρὸς γυναῖκα·",
+        "VUL": "Hoc enim nefas est,/ et iniquitas maxima./",
+        "SYN": "потому что это -- преступление, это -- беззаконие, подлежащее суду;",
+        "NEO": "Car c’est là un crime horrible, un forfait que punissent les juges ;",
+        "NAB": "For that would be heinous, a crime to be condemned;",
+        "VAT_ES": "Porque Dios aflojó mi cuerda y me humilló, ellos también pierden el freno ante mí.",
+        "CEI": "difatti quello è uno scandalo, un delitto da deferire ai giudici,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כִּ֤י אֵ֣שׁ הִ֭יא עַד אֲבַדּ֣וֹן תֹּאכֵ֑ל וּֽ/בְ/כָל תְּב֖וּאָתִ֣/י תְשָׁרֵֽשׁ׃",
+        "LXX": "πῦρ γάρ ἐστιν καιόμενον ἐπὶ πάντων τῶν μερῶν· οὗ δ’ ἂν ἐπέλθῃ, ἐκ ῥιζῶν ἀπώλεσεν.",
+        "VUL": "Ignis est usque ad perditionem devorans,/ et omnia eradicans genimina./",
+        "SYN": "это -- огонь, поядающий до истребления, который искоренил бы все добро мое.",
+        "NEO": "un feu qui dévore jusqu’à la ruine, qui aurait détruit tous mes biens.",
+        "NAB": "A fire that should burn down to the abyss till it consumed all my possessions to the roots.",
+        "VAT_ES": "A mi derecha se levanta una turba: se abren camino hasta mi para arruinarme.",
+        "CEI": "quello è un fuoco che divora fino alla distruzione e avrebbe consumato tutto il mio raccolto."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "אִם אֶמְאַ֗ס מִשְׁפַּ֣ט עַ֭בְדִּ/י וַ/אֲמָתִ֑/י בְּ֝/רִבָ֗/ם עִמָּדִֽ/י׃",
+        "LXX": "εἰ δὲ καὶ ἐφαύλισα κρίμα θεράποντός μου ἢ θεραπαίνης, κρινομένων αὐτῶν πρὸς μέ·",
+        "VUL": "Si contempsi subire judicium cum servo meo et ancilla mea,/ cum disceptarent adversum me :/",
+        "SYN": "Если я пренебрегал правами слуги и служанки моей, когда они имели спор со мною,",
+        "NEO": "Si j’ai méconnu le droit de mon serviteur ou de ma servante, quand ils étaient en contestation avec moi : —",
+        "NAB": "Had I refused justice to my manservant or to my maid, when they had a claim against me,",
+        "VAT_ES": "destruyen mi sendero para perderme: atacan sin que nadie los detenga,",
+        "CEI": "Se ho negato i diritti del mio schiavo e della schiava in lite con me,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וּ/מָ֣ה אֶֽ֭עֱשֶׂה כִּֽי יָק֣וּם אֵ֑ל וְ/כִֽי יִ֝פְקֹ֗ד מָ֣ה אֲשִׁיבֶֽ/נּוּ׃",
+        "LXX": "τί γὰρ ποιήσω ἐὰν ἔτασίν μου ποιῆται ὁ κύριος; ἐὰν δὲ καὶ ἐπισκοπήν, τίνα ἀπόκρισιν ποιήσομαι;",
+        "VUL": "quid enim faciam cum surrexerit ad judicandum Deus ?/ et cum quæsierit, quid respondebo illi ?/",
+        "SYN": "то что стал бы я делать, когда бы Бог восстал? И когда бы Он взглянул на меня, что мог бы я отвечать Ему?",
+        "NEO": "Que faire, quand Dieu se lèvera ? Au jour de sa visite, que lui répondrai-je ?",
+        "NAB": "What then should I do when God rose up; what could I answer when he demanded an account?",
+        "VAT_ES": "irrumpen como por una ancha brecha, avanzan rodando como un torbellino.",
+        "CEI": "che farei, quando Dio si alzerà, e, quando farà l'inchiesta, che risponderei?"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "הֲֽ֝/לֹא בַ֭/בֶּטֶן עֹשֵׂ֣/נִי עָשָׂ֑/הוּ וַ֝/יְכֻנֶ֗/נּוּ בָּ/רֶ֥חֶם אֶחָֽד׃",
+        "LXX": "πότερον οὐχ ὡς καὶ ἐγὼ ἐγενόμην ἐν γαστρί, καὶ ἐκεῖνοι γεγόνασιν; γεγόναμεν δὲ ἐν τῇ αὐτῇ κοιλίᾳ.",
+        "VUL": "Numquid non in utero fecit me, qui et illum operatus est,/ et formavit me in vulva unus ?/",
+        "SYN": "Не Он ли, Который создал меня во чреве, создал и его и равно образовал нас в утробе?",
+        "NEO": "Celui qui m’a fait dans le sein de ma mère ne l’a-t-il pas fait aussi ? Un même Créateur ne nous a-t-il pas formés ?",
+        "NAB": "Did not he who made me in the womb make him? Did not the same One fashion us before our birth?",
+        "VAT_ES": "Los terrores se han vuelto contra mí. mi dignidad es arrastrada como por el viento, mi esperanza de salvación ha pasado como una nube.",
+        "CEI": "Chi ha fatto me nel seno materno, non ha fatto anche lui? Non fu lo stesso a formarci nel seno?"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אִם אֶ֭מְנַע מֵ/חֵ֣פֶץ דַּלִּ֑ים וְ/עֵינֵ֖י אַלְמָנָ֣ה אֲכַלֶּֽה׃",
+        "LXX": "ἀδύνατοι δὲ χρείαν ἥν ποτ’ εἶχον οὐκ ἀπέτυχον, χήρας δὲ τὸν ὀφθαλμὸν οὐκ ἐξέτηξα·",
+        "VUL": "Si negavi quod volebant pauperibus,/ et oculos viduæ expectare feci ;/",
+        "SYN": "Отказывал ли я нуждающимся в их просьбе и томил ли глаза вдовы?",
+        "NEO": "Si j’ai refusé aux pauvres ce qu’ils désiraient, si j’ai fait languir les yeux de la veuve,",
+        "NAB": "If I have denied anything to the poor, or allowed the eyes of the widow to languish",
+        "VAT_ES": "Y ahora mi vida se diluye en mi interior, me han tocado días de aflicción.",
+        "CEI": "Mai ho rifiutato quanto brama il povero, né ho lasciato languire gli occhi della vedova;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/אֹכַ֣ל פִּתִּ֣/י לְ/בַדִּ֑/י וְ/לֹא אָכַ֖ל יָת֣וֹם מִמֶּֽ/נָּה׃",
+        "LXX": "εἰ δὲ καὶ τὸν ψωμόν μου ἔφαγον μόνος, καὶ οὐχὶ ὀρφανῷ μετέδωκα·",
+        "VUL": "si comedi buccellam meam solus,/ et non comedit pupillus ex ea/",
+        "SYN": "Один ли я съедал кусок мой, и не ел ли от него и сирота?",
+        "NEO": "si j’ai mangé seul mon morceau de pain, sans que l’orphelin en ait eu sa part : —",
+        "NAB": "While I ate my portion alone, with no share in it for the fatherless,",
+        "VAT_ES": "De noche, siento taladrar mis huesos, los que me roen no se dan descanso.",
+        "CEI": "mai da solo ho mangiato il mio tozzo di pane, senza che ne mangiasse l'orfano,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כִּ֣י מִ֭/נְּעוּרַ/י גְּדֵלַ֣/נִי כְ/אָ֑ב וּ/מִ/בֶּ֖טֶן אִמִּ֣/י אַנְחֶֽ/נָּה׃",
+        "LXX": "ὅτι ἐκ νεότητός μου ἐξέτρεφον ὡς πατήρ, καὶ ἐκ γαστρὸς μητρός μου ὡδήγησα·",
+        "VUL": "(quia ab infantia mea crevit mecum miseratio,/ et de utero matris meæ egressa est mecum) ;/",
+        "SYN": "Ибо с детства он рос со мною, как с отцом, и от чрева матери моей я руководил _вдову._",
+        "NEO": "dès mon enfance il m’a gardé comme un père ; dès ma naissance il a guidé mes pas.",
+        "NAB": "Though like a father God has reared me from my youth, guiding me even from my mother's womb -",
+        "VAT_ES": "El me toma de la ropa con gran fuerza, me ciñe como el cuello de mi túnica.",
+        "CEI": "poiché Dio, come un padre, mi ha allevato fin dall'infanzia e fin dal ventre di mia madre mi ha guidato."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "אִם אֶרְאֶ֣ה א֭וֹבֵד מִ/בְּלִ֣י לְב֑וּשׁ וְ/אֵ֥ין כְּ֝ס֗וּת לָ/אֶבְיֽוֹן׃",
+        "LXX": "εἰ δὲ καὶ ὑπερεῖδον γυμνὸν ἀπολλύμενον καὶ οὐκ ἠμφίασα αὐτόν·",
+        "VUL": "si despexi pereuntem, eo quod non habuerit indumentum,/ et absque operimento pauperem ;/",
+        "SYN": "Если я видел кого погибавшим без одежды и бедного без покрова, --",
+        "NEO": "Si j’ai vu le malheureux périr sans vêtements, l’indigent manquer de couverture,",
+        "NAB": "If I have seen a wanderer without clothing, or a poor man without covering,",
+        "VAT_ES": "El me ha arrojado en el fango, y me asemejó al polvo y la ceniza.",
+        "CEI": "Se mai ho visto un misero privo di vesti o un povero che non aveva di che coprirsi,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "אִם לֹ֣א בֵרֲכ֣וּ/נִי חלצ/ו חֲלָצָ֑י/ו וּ/מִ/גֵּ֥ז כְּ֝בָשַׂ/י יִתְחַמָּֽם׃",
+        "LXX": "ἀδύνατοι δὲ εἰ μὴ εὐλόγησάν με, ἀπὸ δὲ κουρᾶς ἀμνῶν μου ἐθερμάνθησαν οἱ ὦμοι αὐτῶν·",
+        "VUL": "si non benedixerunt mihi latera ejus,/ et de velleribus ovium mearum calefactus est ;/",
+        "SYN": "не благословляли ли меня чресла его, и не был ли он согрет шерстью овец моих?",
+        "NEO": "sans que ses reins m’aient béni, sans que la toison de mes agneaux l’ait réchauffé ;",
+        "NAB": "Whose limbs have not blessed me when warmed with the fleece of my sheep;",
+        "VAT_ES": "Clamo a ti, y no me respondes; me presento, y no me haces caso.",
+        "CEI": "se non hanno dovuto benedirmi i suoi fianchi, o con la lana dei miei agnelli non si è riscaldato;"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "אִם הֲנִיפ֣וֹתִי עַל יָת֣וֹם יָדִ֑/י כִּֽי אֶרְאֶ֥ה בַ֝/שַּׁ֗עַר עֶזְרָתִֽ/י׃",
+        "LXX": "εἰ ἐπῆρα ὀρφανῷ χεῖρα, πεποιθὼς ὅτι πολλή μοι βοήθεια περίεστιν,",
+        "VUL": "si levavi super pupillum manum meam,/ etiam cum viderem me in porta superiorem :/",
+        "SYN": "Если я поднимал руку мою на сироту, когда видел помощь себе у ворот,",
+        "NEO": "si j’ai levé la main contre l’orphelin, parce que je me voyais un appui dans les juges, —",
+        "NAB": "If I have raised my hand against the innocent because I saw that I had supporters at the gate -",
+        "VAT_ES": "Te has vuelto despiadado conmigo, me atacas con todo el rigor de tu mano.",
+        "CEI": "se contro un innocente ho alzato la mano, perché vedevo alla porta chi mi spalleggiava,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כְּ֭תֵפִ/י מִ/שִּׁכְמָ֣/ה תִפּ֑וֹל וְ֝/אֶזְרֹעִ֗/י מִ/קָּנָ֥/ה תִשָּׁבֵֽר׃",
+        "LXX": "ἀποσταίη ἄρα ὁ ὦμός μου ἀπὸ τῆς κλειδός, ὁ δὲ βραχίων μου ἀπὸ τοῦ ἀγκῶνος συντριβείη.",
+        "VUL": "humerus meus a junctura sua cadat,/ et brachium meum cum suis ossibus confringatur./",
+        "SYN": "то пусть плечо мое отпадет от спины, и рука моя пусть отломится от локтя,",
+        "NEO": "que mon épaule se détache du tronc, que mon bras soit arraché de l’humérus.",
+        "NAB": "Then may my arm fall from the shoulder, my forearm be broken at the elbow!",
+        "VAT_ES": "Me levantas y me haces cabalgar en el viento, y me deshaces con la tempestad.",
+        "CEI": "mi si stacchi la spalla dalla nuca e si rompa al gomito il mio braccio,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "כִּ֤י פַ֣חַד אֵ֭לַ/י אֵ֣יד אֵ֑ל וּ֝/מִ/שְּׂאֵת֗/וֹ לֹ֣א אוּכָֽל׃",
+        "LXX": "φόβος γὰρ συνέσχεν με, καὶ ἀπὸ τοῦ λήμματος αὐτοῦ οὐχ ὑποίσω.",
+        "VUL": "Semper enim quasi tumentes super me fluctus timui Deum,/ et pondus ejus ferre non potui./",
+        "SYN": "ибо страшно для меня наказание от Бога: пред величием Его не устоял бы я.",
+        "NEO": "Car je crains la vengeance de Dieu, et devant sa majesté je ne puis subsister.",
+        "NAB": "For the dread of God will be upon me, and his majesty will overpower me.",
+        "VAT_ES": "Sí, ya lo sé, me llevas a la muerte, al lugar de reunión de todos los vivientes.",
+        "CEI": "perché mi incute timore la mano di Dio e davanti alla sua maestà non posso resistere."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אִם שַׂ֣מְתִּי זָהָ֣ב כִּסְלִ֑/י וְ֝/לַ/כֶּ֗תֶם אָמַ֥רְתִּי מִבְטַחִֽ/י׃",
+        "LXX": "εἰ ἔταξα χρυσίον εἰς χοῦν μου, εἰ δὲ καὶ λίθῳ πολυτελεῖ ἐπεποίθησα,",
+        "VUL": "Si putavi aurum robur meum,/ et obrizo dixi : Fiducia mea ;/",
+        "SYN": "Полагал ли я в золоте опору мою и говорил ли сокровищу: ты -- надежда моя?",
+        "NEO": "Si j’ai mis dans l’or mon assurance, si j’ai dit à l’or pur : « Tu es mon espoir ; »",
+        "NAB": "Had I put my trust in gold or called fine gold my security;",
+        "VAT_ES": "&iquest;Acaso no tendí mi mano al pobre cuando en su desgracia me pedía auxilio?",
+        "CEI": "Se ho riposto la mia speranza nell'oro e all'oro fino ho detto: \"Tu sei la mia fiducia\";"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "אִם אֶ֭שְׂמַח כִּי רַ֣ב חֵילִ֑/י וְ/כִֽי כַ֝בִּ֗יר מָצְאָ֥ה יָדִֽ/י׃",
+        "LXX": "εἰ δὲ καὶ εὐφράνθην πολλοῦ πλούτου μου γενομένου, εἰ δὲ καὶ ἐπ’ ἀναριθμήτοις ἐθέμην χεῖρά μου·",
+        "VUL": "si lætatus sum super multis divitiis meis,/ et quia plurima reperit manus mea ;/",
+        "SYN": "Радовался ли я, что богатство мое было велико, и что рука моя приобрела много?",
+        "NEO": "si je me suis réjoui de l’abondance de mes biens, des trésors amassés par mes mains ;",
+        "NAB": "Or had I rejoiced that my wealth was great, or that my hand had acquired abundance -",
+        "VAT_ES": "&iquest;No lloré con el que vivía duramente y mi corazón no se afligió por el pobre?",
+        "CEI": "se godevo perché grandi erano i miei beni e guadagnava molto la mia mano;"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "אִם אֶרְאֶ֣ה א֖וֹר כִּ֣י יָהֵ֑ל וְ֝/יָרֵ֗חַ יָקָ֥ר הֹלֵֽךְ׃",
+        "LXX": "ἢ οὐχ ὁρῶμεν ἥλιον τὸν ἐπιφαύσκοντα ἐκλείποντα, σελήνην δὲ φθίνουσαν; οὐ γὰρ ἐπ’ αὐτοῖς ἐστιν·",
+        "VUL": "si vidi solem cum fulgeret,/ et lunam incedentem clare,/",
+        "SYN": "Смотря на солнце, как оно сияет, и на луну, как она величественно шествует,",
+        "NEO": "si, en voyant le soleil jeter ses feux, et la lune s’avancer dans sa splendeur,",
+        "NAB": "Had I looked upon the sun as it shone, or the moon in the splendor of its progress,",
+        "VAT_ES": "Yo esperaba lo bueno y llegó lo malo, aguardaba la luz y llegó la oscuridad.",
+        "CEI": "se vedendo il sole risplendere e la luna chiara avanzare,"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יִּ֣פְתְּ בַּ/סֵּ֣תֶר לִבִּ֑/י וַ/תִּשַּׁ֖ק יָדִ֣/י לְ/פִֽ/י׃",
+        "LXX": "καὶ εἰ ἠπατήθη λάθρα ἡ καρδία μου, εἰ δὲ χεῖρά μου ἐπιθεὶς ἐπὶ στόματί μου ἐφίλησα·",
+        "VUL": "et lætatum est in abscondito cor meum,/ et osculatus sum manum meam ore meo :/",
+        "SYN": "прельстился ли я в тайне сердца моего, и целовали ли уста мои руку мою?",
+        "NEO": "mon cœur s’est laissé séduire en secret, si ma main s’est portée à ma bouche, —",
+        "NAB": "And had my heart been secretly enticed to waft them a kiss with my hand;",
+        "VAT_ES": "Me hierven las entrañas incesantemente, me han sobrevenido días de aflicción.",
+        "CEI": "si è lasciato sedurre in segreto il mio cuore e con la mano alla bocca ho mandato un bacio,"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "גַּם ה֭וּא עָוֺ֣ן פְּלִילִ֑י כִּֽי כִחַ֖שְׁתִּי לָ/אֵ֣ל מִ/מָּֽעַל׃",
+        "LXX": "καὶ τοῦτό μοι ἄρα ἀνομία ἡ μεγίστη λογισθείη, ὅτι ἐψευσάμην ἐναντίον Κυρίου τοῦ ὑψίστου.",
+        "VUL": "quæ est iniquitas maxima,/ et negatio contra Deum altissimum./",
+        "SYN": "Это также было бы преступление, подлежащее суду, потому что я отрекся бы _тогда_ от Бога Всевышнего.",
+        "NEO": "c’est là encore un crime que punit le juge ; j’aurais renié le Dieu très-haut.",
+        "NAB": "This too would be a crime for condemnation, for I should have denied God above.",
+        "VAT_ES": "Ando ensombrecido y sin consuelo, me alzo en la asamblea y pido auxilio.",
+        "CEI": "anche questo sarebbe stato un delitto da tribunale, perché avrei rinnegato Dio che sta in alto."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "אִם אֶ֭שְׂמַח בְּ/פִ֣יד מְשַׂנְאִ֑/י וְ֝/הִתְעֹרַ֗רְתִּי כִּֽי מְצָ֥א/וֹ רָֽע׃",
+        "LXX": "εἰ δὲ καὶ ἐπιχαρὴς ἐγενόμην πτώματι ἐχθρῶν μου, καὶ εἶπεν ἡ καρδία μου Εὖγε·",
+        "VUL": "Si gavisus sum ad ruinam ejus qui me oderat,/ et exsultavi quod invenisset eum malum :/",
+        "SYN": "Радовался ли я погибели врага моего и торжествовал ли, когда несчастье постигало его?",
+        "NEO": "Si j’ai été joyeux de la ruine de mon ennemi, si j’ai tressailli d’allégresse quand le malheur l’a frappé : —",
+        "NAB": "Had I rejoiced at the destruction of my enemy or exulted when evil fell upon him,",
+        "VAT_ES": "Me he convertido en hermano de los chacales y en compañero de los avestruces.",
+        "CEI": "Ho gioito forse della disgrazia del mio nemico e ho esultato perché lo colpiva la sventura,"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/לֹא נָתַ֣תִּי לַ/חֲטֹ֣א חִכִּ֑/י לִ/שְׁאֹ֖ל בְּ/אָלָ֣ה נַפְשֽׁ/וֹ׃",
+        "LXX": "ἀκούσαι ἄρα τὸ οὖς μου τὴν κατάραν μου, θρυληθείην δὲ ἄρα ὑπὸ λαοῦ μου κακούμενος.",
+        "VUL": "non enim dedi ad peccandum guttur meum,/ ut expeterem maledicens animam ejus./",
+        "SYN": "Не позволял я устам моим грешить проклятием души его.",
+        "NEO": "Non, je n’ai pas permis à ma langue de pécher, en demandant sa mort avec imprécation !...",
+        "NAB": "Even though I had not suffered my mouth to sin by uttering a curse against his life -",
+        "VAT_ES": "Mi piel ennegrecida se me cae, mis huesos arden por la fiebre.",
+        "CEI": "io che non ho permesso alla mia lingua di peccare, augurando la sua morte con imprecazioni?"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "אִם לֹ֣א אָ֭מְרוּ מְתֵ֣י אָהֳלִ֑/י מִֽי יִתֵּ֥ן מִ֝/בְּשָׂר֗/וֹ לֹ֣א נִשְׂבָּֽע׃",
+        "LXX": "εἰ δὲ καὶ πολλάκις εἶπον αἱ θεράπαιναί μου Τίς ἂν δῴη ἡμῖν τῶν σαρκῶν αὐτοῦ πλησθῆναι; λίαν μου χρηστοῦ ὄντος·",
+        "VUL": "Si non dixerunt viri tabernaculi mei :/ Quis det de carnibus ejus, ut saturemur ?/",
+        "SYN": "Не говорили ли люди шатра моего: о, если бы мы от мяс его не насытились?",
+        "NEO": "Si les gens de ma tente ne disaient pas : « Où trouver quelqu’un qui ne soit pas rassasiés de sa table ? »",
+        "NAB": "Had not the men of my tent exclaimed, \"Who has not been fed with his meat!\"",
+        "VAT_ES": "Mi cítara sólo sirve para el duelo y mi flauta para acompañar a los que lloran.",
+        "CEI": "Non diceva forse la gente della mia tenda: \"A chi non ha dato delle sue carni per saziarsi?\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "בַּ֭/חוּץ לֹא יָלִ֣ין גֵּ֑ר דְּ֝לָתַ֗/י לָ/אֹ֥רַח אֶפְתָּֽח׃",
+        "LXX": "ἔξω δὲ οὐκ ηὐλίζετο ξένος, ἡ δὲ θύρα μου παντὶ ἐλθόντι ἀνέῳκτο·",
+        "VUL": "foris non mansit peregrinus :/ ostium meum viatori patuit./",
+        "SYN": "Странник не ночевал на улице; двери мои я отворял прохожему.",
+        "NEO": "si l’étranger passait la nuit en dehors, si je n’ouvrais pas la porte au voyageur !...",
+        "NAB": "Because no stranger lodged in the street, but I opened my door to wayfarers -",
+        "CEI": "All'aperto non passava la notte lo straniero e al viandante aprivo le mie porte."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "אִם כִּסִּ֣יתִי כְ/אָדָ֣ם פְּשָׁעָ֑/י לִ/טְמ֖וֹן בְּ/חֻבִּ֣/י עֲוֺֽנִ/י׃",
+        "LXX": "εἰ δὲ καὶ ἁμαρτὼν ἀκουσίως ἔκρυψα τὴν ἁμαρτίαν μου,",
+        "VUL": "Si abscondi quasi homo peccatum meum,/ et celavi in sinu meo iniquitatem meam ;/",
+        "SYN": "Если бы я скрывал проступки мои, как человек, утаивая в груди моей пороки мои,",
+        "NEO": "Si j’ai, comme font les hommes, déguisé mes fautes, et renfermé mes iniquités dans mon sein,",
+        "NAB": "Had I, out of human weakness, hidden my sins and buried my guilt in my bosom",
+        "CEI": "Non ho nascosto, alla maniera degli uomini, la mia colpa, tenendo celato il mio delitto in petto,"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "כִּ֤י אֶֽעֱר֨וֹץ הָ֘מ֤וֹן רַבָּ֗ה וּ/בוּז מִשְׁפָּח֥וֹת יְחִתֵּ֑/נִי וָ֝/אֶדֹּ֗ם לֹא אֵ֥צֵא פָֽתַח׃",
+        "LXX": "οὐ γὰρ διετράπην πολυοχλίαν πλήθους τοῦ μὴ ἐξαγορεῦσαι ἐνώπιον αὐτῶν· εἰ δὲ καὶ εἴασα ἀδύνατον ἐξελθεῖν θύραν μου κόλπῳ κενῷ·",
+        "VUL": "si expavi ad multitudinem nimiam,/ et despectio propinquorum terruit me :/ et non magis tacui, nec egressus sum ostium./",
+        "SYN": "то я боялся бы большого общества, и презрение одноплеменников страшило бы меня, и я молчал бы и не выходил бы за двери.",
+        "NEO": "par peur de la grande assemblée, par crainte du mépris des familles, au point de me taire, et de n’oser franchir le seuil de ma porte !...",
+        "NAB": "Because I feared the noisy multitude and the scorn of the tribes terrified me - then I should have remained silent, and not come out of doors!",
+        "CEI": "come se temessi molto la folla, e il disprezzo delle tribù mi spaventasse, sì da starmene zitto senza uscire di casa."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "מִ֤י יִתֶּן לִ֨/י שֹׁ֘מֵ֤עַֽ לִ֗/י הֶן תָּ֭וִ/י שַׁדַּ֣י יַעֲנֵ֑/נִי וְ/סֵ֥פֶר כָּ֝תַ֗ב אִ֣ישׁ רִיבִֽ/י׃",
+        "LXX": "τίς δῴη ἀκούοντά μου; χεῖρα δὲ Κυρίου εἰ μὴ ἐδεδοίκειν, συγγραφὴν δὲ ἣν εἶχον κατά τινος",
+        "VUL": "Quis mihi tribuat auditorem,/ ut desiderium meum audiat Omnipotens,/ et librum scribat ipse qui judicat,/",
+        "SYN": "О, если бы кто выслушал меня! Вот мое желание, чтобы Вседержитель отвечал мне, и чтобы защитник мой составил запись.",
+        "NEO": "Oh ! Qui me fera trouver quelqu’un qui m’écoute ? Voilà ma signature : que le Tout-Puissant me réponde ! Que mon adversaire écrive aussi sa cédule !",
+        "NAB": "Oh, that I had one to hear my case, and that my accuser would write out his indictment!",
+        "CEI": "Oh, avessi uno che mi ascoltasse! Ecco qui la mia firma! L'Onnipotente mi risponda! Il documento scritto dal mio avversario"
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "אִם לֹ֣א עַל שִׁ֭כְמִ/י אֶשָּׂאֶ֑/נּוּ אֶֽעֶנְדֶ֖/נּוּ עֲטָר֣וֹת לִֽ/י׃",
+        "LXX": "ἐπ’ ὤμοις ἂν περιθέμενος στέφανον ἀνεγίνωσκον,",
+        "VUL": "ut in humero meo portem illum,/ et circumdem illum quasi coronam mihi ?/",
+        "SYN": "Я носил бы ее на плечах моих и возлагал бы ее, как венец;",
+        "NEO": "On verra si je ne la mets pas sur mon épaule, si je n’en ceins pas mon front comme d’un diadème !",
+        "NAB": "Surely, I should wear it on my shoulder or put it on me like a diadem;",
+        "CEI": "vorrei certo portarlo sulle mie spalle e cingerlo come mio diadema!"
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "מִסְפַּ֣ר צְ֭עָדַ/י אַגִּידֶ֑/נּוּ כְּמוֹ נָ֝גִ֗יד אֲקָרֲבֶֽ/נּוּ׃",
+        "LXX": "καὶ εἰ μὴ ῥήξας αὐτὴν ἀπέδωκα, οὐθὲν λαβὼν παρὰ χρεοφιλέτου·",
+        "VUL": "Per singulos gradus meos pronuntiabo illum,/ et quasi principi offeram eum./",
+        "SYN": "объявил бы ему число шагов моих, сблизился бы с ним, как с князем.",
+        "NEO": "Je rendrai compte à mon juge de tous mes pas, je m’approcherai de lui comme un prince.",
+        "NAB": "Of all my steps I should give him an account; like a prince I should present myself before him. This is my final plea; let the Almighty answer me! The words of Job are ended.",
+        "CEI": "Il numero dei miei passi gli manifesterei e mi presenterei a lui come sovrano."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "אִם עָ֭לַ/י אַדְמָתִ֣/י תִזְעָ֑ק וְ֝/יַ֗חַד תְּלָמֶ֥י/הָ יִבְכָּיֽוּ/ן׃",
+        "LXX": "εἰ ἐπ’ ἐμοί ποτε ἡ γῆ ἐστέναξεν, εἰ δὲ καὶ οἱ αὔλακες αὐτῆς ἔκλαυσαν ὁμοθυμαδόν·",
+        "VUL": "Si adversum me terra mea clamat,/ et cum ipsa sulci ejus deflent :/",
+        "SYN": "Если вопияла на меня земля моя и жаловались на меня борозды ее;",
+        "NEO": "Si ma terre crie contre moi, si j’ai fait pleurer ses sillons ;",
+        "NAB": "If my land has cried out against me till its very furrows complained;",
+        "CEI": "Se contro di me grida la mia terrae i suoi solchi piangono con essa;"
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "אִם כֹּ֭חָ/הּ אָכַ֣לְתִּי בְלִי כָ֑סֶף וְ/נֶ֖פֶשׁ בְּעָלֶ֣י/הָ הִפָּֽחְתִּי׃",
+        "LXX": "εἰ δὲ καὶ τὴν ἰσχὺν αὐτῆς ἔφαγον μόνος ἄνευ τιμῆς, εἰ δὲ καὶ ψυχὴν κυρίου τῆς γῆς ἐκλαβὼν ἐλύπησα·",
+        "VUL": "si fructus ejus comedi absque pecunia,/ et animam agricolarum ejus afflixi :/",
+        "SYN": "если я ел плоды ее без платы и отягощал жизнь земледельцев,",
+        "NEO": "si j’ai mangé ses produits sans l’avoir payée, si je l’ai arrachée à ses légitimes possesseurs, —",
+        "NAB": "If I have eaten its produce without payment and grieved the hearts of its tenants;",
+        "CEI": "se ho mangiato il suo frutto senza pagaree ho fatto sospirare dalla fame i suoi coltivatori,"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "תַּ֤חַת חִטָּ֨ה יֵ֥צֵא ח֗וֹחַ וְ/תַֽחַת שְׂעֹרָ֥ה בָאְשָׁ֑ה תַּ֝֗מּוּ דִּבְרֵ֥י אִיּֽוֹב׃",
+        "LXX": "ἀντὶ πυροῦ ἄρα ἐξέλθοι μοι κνίδη, ἀντὶ δὲ κριθῆς βάτος·",
+        "VUL": "pro frumento oriatur mihi tribulus,/ et pro hordeo spina.] Finita sunt verba Job.",
+        "SYN": "то пусть вместо пшеницы вырастает волчец и вместо ячменя куколь. Слова Иова кончились.",
+        "NEO": "qu’au lieu de froment il y naisse des épines, et de l’ivraie au lieu d’orge ! Ici finissent les discours de Job.",
+        "NAB": "Then let the thistles grow instead of wheat and noxious weeds instead of barley!",
+        "CEI": "e in luogo di frumento, getti spine, ed erbaccia al posto dell'orzo."
+      }
+    }
+  }
+}

@@ -1,0 +1,663 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IUDI_001",
+  "book_key": "IUDI",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י אַחֲרֵי֙ מ֣וֹת יְהוֹשֻׁ֔עַ וַֽ/יִּשְׁאֲלוּ֙ בְּנֵ֣י יִשְׂרָאֵ֔ל בַּ/יהוָ֖ה לֵ/אמֹ֑ר מִ֣י יַעֲלֶה לָּ֧/נוּ אֶל הַֽ/כְּנַעֲנִ֛י בַּ/תְּחִלָּ֖ה לְ/הִלָּ֥חֶם בּֽ/וֹ׃",
+        "LXX": "ΚΑΙ ἐγένετο μετὰ τὴν τελευτὴν Ἰησοῦ καὶ ἐπηρώτων οἱ υἱοὶ Ἰσραὴλ διὰ τοῦ Κυρίου λέγοντες Τίς ἀναβήσεται ἡμῖν πρὸς τοὺς Χαναναίους ἀφηγούμενος τοῦ πολεμῆσαι πρὸς αὐτούς;",
+        "VUL": "Post mortem Josue, consuluerunt filii Israël Dominum, dicentes : Quis ascendet ante nos contra Chananæum, et erit dux belli ?",
+        "SYN": "По смерти Иисуса вопрошали сыны Израилевы Господа, говоря: кто из нас прежде пойдет на Хананеев - воевать с ними?",
+        "NEO": "Après la mort de Josué, les enfants d’Israël consultèrent \\+w Yahweh|strong=\"H3068\"\\+w**, en disant : « Qui de nous montera le premier contre les Chananéens pour les combattre ? »",
+        "NAB": "After the death of Joshua the Israelites consulted the LORD, asking, \"Who shall be first among us to attack the Canaanites and to do battle with them?\"",
+        "VAT_ES": "Después de la muerte de Josué, los israelitas consultaron al Señor, diciendo: «&iquest;Quién de nosotros será el primero en subir a luchar contra los cananeos?».",
+        "CEI": "Dopo la morte di Giosuè, gli Israeliti consultarono il Signore dicendo: \"Chi di noi andrà per primo a combattere contro i Cananei?\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוָ֖ה יְהוּדָ֣ה יַעֲלֶ֑ה הִנֵּ֛ה נָתַ֥תִּי אֶת הָ/אָ֖רֶץ בְּ/יָדֽ/וֹ׃",
+        "LXX": "καὶ εἶπεν Κύριος Ἰούδας ἀναβήσεται, ἰδοὺ δέδωκα τὴν γῆν ἐν τῇ χειρὶ αὐτοῦ.",
+        "VUL": "Dixitque Dominus : Judas ascendet : ecce tradidi terram in manus ejus.",
+        "SYN": "И сказал Господь: Иуда пойдет; вот, Я предаю землю в руки его.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** répondit : « Juda montera ; voici que j’ai livré le pays entre ses mains. »",
+        "NAB": "The LORD answered, \"Judah shall attack: I have delivered the land into his power.\"",
+        "VAT_ES": "El Señor respondió: «Que suba Judá, porque yo he puesto el país en sus manos».",
+        "CEI": "Il Signore rispose: \"Andrà Giuda: ecco, ho messo il paese nelle sue mani\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוּדָה֩ לְ/שִׁמְע֨וֹן אָחִ֜י/ו עֲלֵ֧ה אִתִּ֣/י בְ/גוֹרָלִ֗/י וְ/נִֽלָּחֲמָה֙ בַּֽ/כְּנַעֲנִ֔י וְ/הָלַכְתִּ֧י גַם אֲנִ֛י אִתְּ/ךָ֖ בְּ/גוֹרָלֶ֑/ךָ וַ/יֵּ֥לֶךְ אִתּ֖/וֹ שִׁמְעֽוֹן׃",
+        "LXX": "καὶ εἶπεν Ἰούδας τῷ Συμεὼν ἀδελφῷ αὐτοῦ Ἀνάβηθι μετ’ ἐμοῦ ἐν τῷ κλήρῳ μου, καὶ παραταξώμεθα πρὸς τοὺς Χαναναίους, καὶ πορεύσομαι κἀγὼ μετὰ σοῦ ἐν τῷ κλήρῳ σου. καὶ ἐπορεύθη μετ’ αὐτοῦ Συμεών.",
+        "VUL": "Et ait Judas Simeoni fratri suo : Ascende mecum in sortem meam, et pugna contra Chananæum, ut et ego pergam tecum in sortem tuam. Et abiit cum eo Simeon.",
+        "SYN": "Иуда же сказал Симеону, брату своему: войди со мною в жребий мой, и будем воевать с Хананеями; и я войду с тобою в твой жребий. И пошел с ним Симеон.",
+        "NEO": "Et Juda dit à Siméon, son frère : « Monte avec moi dans le pays que le sort m’a assigné, et nous combattrons les Chananéens ; j’irai aussi avec toi dans le pays que le sort t’a assigné. » Et Siméon alla avec lui.",
+        "NAB": "Judah then said to his brother Simeon, \"Come up with me into the territory allotted to me, and let us engage the Canaanites in battle. I will likewise accompany you into the territory allotted to you.\" So Simeon went with him.",
+        "VAT_ES": "Entonces Judá dijo a su hermano Simeón: «Sube conmigo al territorio que me ha tocado en suerte. Atacaremos a los cananeos, y después yo iré contigo al territorio que te ha sido asignado». Y Simeón lo acompañó.",
+        "CEI": "Allora Giuda disse a Simeone suo fratello: \"Vieni con me nel paese, che mi è toccato in sorte, e combattiamo contro i Cananei; poi anch'io verrò con te in quello che ti è toccato in sorte\". Simeone andò con lui."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַל יְהוּדָ֔ה וַ/יִּתֵּ֧ן יְהוָ֛ה אֶת הַ/כְּנַעֲנִ֥י וְ/הַ/פְּרִזִּ֖י בְּ/יָדָ֑/ם וַ/יַּכּ֣וּ/ם בְּ/בֶ֔זֶק עֲשֶׂ֥רֶת אֲלָפִ֖ים אִֽישׁ׃",
+        "LXX": "καὶ ἀνέβη Ἰούδας· καὶ παρέδωκεν Κύριος τὸν Χαναναῖον καὶ τὸν Φερεζαῖον εἰς τὰς χεῖρας αὐτῶν, καὶ ἔκοψαν αὐτοὺς ἐν Βέζεκ, εἰς δέκα χιλιάδας ἀνδρῶν,",
+        "VUL": "Ascenditque Judas, et tradidit Dominus Chananæum ac Pherezæum in manus eorum : et percusserunt in Bezec decem millia virorum.",
+        "SYN": "И пошел Иуда, и предал Господь Хананеев и Ферезеев в руки их, и побили они из них в Везеке десять тысяч человек.",
+        "NEO": "Juda monta, et \\+w Yahweh|strong=\"H3068\"\\+w** livra entre leurs mains les Chananéens et les Phérézéens ; ils battirent dix mille hommes à Bézec.",
+        "NAB": "When the forces of Judah attacked, the LORD delivered the Canaanites and Perizzites into their power, and they slew ten thousand of them in Bezek.",
+        "VAT_ES": "Cuando Judá subió, el Señor puso en sus manos a los cananeos y a los perizitas, y derrotaron en Bézec a diez mil hombres.",
+        "CEI": "Giuda dunque si mosse e il Signore mise nelle loro mani i Cananei e i Perizziti; sconfissero a Bezek diecimila uomini."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַֽ֠/יִּמְצְאוּ אֶת אֲדֹנִ֥י בֶ֨זֶק֙ בְּ/בֶ֔זֶק וַ/יִּֽלָּחֲמ֖וּ בּ֑/וֹ וַ/יַּכּ֕וּ אֶת הַֽ/כְּנַעֲנִ֖י וְ/אֶת הַ/פְּרִזִּֽי׃",
+        "LXX": "καὶ κατέλαβον τὸν Ἀδωνιβέζεκ ἐν τῇ Βέζεκ, καὶ παρετάξαντο πρὸς αὐτόν· καὶ ἔκοψαν τὸν Χαναναῖον καὶ Φερεζαῖον.",
+        "VUL": "Inveneruntque Adonibezec in Bezec, et pugnaverunt contra eum, ac percusserunt Chananæum et Pherezæum.",
+        "SYN": "В Везеке встретились они с Адони-Везеком, сразились с ним и разбили Хананеев и Ферезеев.",
+        "NEO": "Ayant trouvé à Bézec Adoni-Bésec, ils l’attaquèrent et ils battirent les Chananéens et les Phérézéens.",
+        "NAB": "It was in Bezek that they came upon Adonibezek and fought against him. When they defeated the Canaanites and Perizzites,",
+        "VAT_ES": "Allí se encontraron con Adoní Bézec, combatieron contra él y derrotaron a los cananeos y a los perizitas.",
+        "CEI": "Incontrato Adoni-Bezek a Bezek, l'attaccarono e sconfissero i Cananei e i Perizziti."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יָּ֨נָס֙ אֲדֹ֣נִי בֶ֔זֶק וַֽ/יִּרְדְּפ֖וּ אַחֲרָ֑י/ו וַ/יֹּאחֲז֣וּ אֹת֔/וֹ וַֽ/יְקַצְּצ֔וּ אֶת בְּהֹנ֥וֹת יָדָ֖י/ו וְ/רַגְלָֽי/ו׃",
+        "LXX": "καὶ ἔφυγεν Ἀδωνιβέζεκ· καὶ κατέδραμον ὀπίσω αὐτοῦ καὶ κατελάβοσαν αὐτόν, καὶ ἀπέκοψαν τὰ ἄκρα τῶν χειρῶν αὐτοῦ καὶ τὰ ἄκρα τῶν ποδῶν αὐτοῦ.",
+        "VUL": "Fugit autem Adonibezec : quem persecuti comprehenderunt, cæsis summitatibus manuum ejus ac pedum.",
+        "SYN": "Адони-Везек побежал, но они погнались за ним и поймали его и отсекли большие пальцы на руках его и на ногах его.",
+        "NEO": "Adoni-Bésec prit la fuite, mais ils le poursuivirent et, l’ayant saisi, ils lui coupèrent les pouces des mains et des pieds.",
+        "NAB": "Adonibezek fled. They set out in pursuit, and when they caught him, cut off his thumbs and his big toes.",
+        "VAT_ES": "Adoní Bézec trató de escapar, pero ellos lo persiguieron, lo capturaron y le cortaron el dedo pulgar de las manos y de los pies.",
+        "CEI": "Adoni-Bezek fuggì, ma essi lo inseguirono, lo catturarono e gli amputarono i pollici delle mani e dei piedi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֲדֹֽנִי בֶ֗זֶק שִׁבְעִ֣ים מְלָכִ֡ים בְּֽהֹנוֹת֩ יְדֵי/הֶ֨ם וְ/רַגְלֵי/הֶ֜ם מְקֻצָּצִ֗ים הָי֤וּ מְלַקְּטִים֙ תַּ֣חַת שֻׁלְחָנִ֔/י כַּ/אֲשֶׁ֣ר עָשִׂ֔יתִי כֵּ֥ן שִׁלַּם לִ֖/י אֱלֹהִ֑ים וַ/יְבִיאֻ֥/הוּ יְרוּשָׁלִַ֖ם וַ/יָּ֥מָת שָֽׁם׃",
+        "LXX": "καὶ εἶπεν Ἀδωνιβέζεκ Ἑβδομήκοντα βασιλεῖς τὰ ἄκρα τῶν χειρῶν αὐτῶν καὶ τὰ ἄκρα τῶν ποδῶν αὐτῶν ἀποκεκομμένοι ἦσαν συλλέγοντες τὰ ὑποκάτω τῆς τραπέζης μου· καθὼς οὖν ἐποίησα, οὕτως ἀνταπέδωκέν μοι ὁ θεός. καὶ ἄγουσιν αὐτὸν εἰς Ἰερουσαλήμ, καὶ ἀπέθανεν ἐκεῖ.",
+        "VUL": "Dixitque Adonibezec : Septuaginta reges amputatis manuum ac pedum summitatibus colligebant sub mensa mea ciborum reliquias : sicut feci, ita reddidit mihi Deus. Adduxeruntque eum in Jerusalem, et ibi mortuus est.",
+        "SYN": "Тогда сказал Адони-Везек: семьдесят царей с отсеченными на руках и на ногах их большими пальцами собирали [крохи] под столом моим; как делал я, так и мне воздал Бог. И привели его в Иерусалим, и он умер там.",
+        "NEO": "Adoni-Bésec dit : « Soixante-dix rois, ayant les pouces des pieds et des mains coupés, ramassaient les miettes sous ma table ; ce que j’ai fait, Dieu me le rend. » On l’emmena à Jérusalem, et il y mourut.",
+        "NAB": "At this Adonibezek said, \"Seventy kings, with their thumbs and big toes cut off, used to pick up scraps under my table. As I have done, so has God repaid me.\" He was brought to Jerusalem, and there he died.",
+        "VAT_ES": "Entonces Adoní Bézec exclamó: «Setenta reyes, con los pulgares de sus manos y de sus pies cortados, recogían migajas debajo de mi mesa. Y ahora Dios me retribuye de acuerdo con lo que hice». Luego lo llevaron a Jerusalén, y allí murió.",
+        "CEI": "Adoni-Bezek disse: \"Settanta re con i pollici delle mani e dei piedi amputati, raccattavano gli avanzi sotto la mia tavola. Quello che ho fatto io, Dio me lo ripaga\". Lo condussero poi a Gerusalemme dove morì."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּלָּחֲמ֤וּ בְנֵֽי יְהוּדָה֙ בִּ/יר֣וּשָׁלִַ֔ם וַ/יִּלְכְּד֣וּ אוֹתָ֔/הּ וַ/יַּכּ֖וּ/הָ לְ/פִי חָ֑רֶב וְ/אֶת הָ/עִ֖יר שִׁלְּח֥וּ בָ/אֵֽשׁ׃",
+        "LXX": "Καὶ ἐπολέμουν οἱ υἱοὶ Ἰούδα τὴν Ἰερουσαλήμ, καὶ κατελάβοντο αὐτὴν καὶ ἐπάταξαν αὐτὴν ἐν στόματι ῥομφαίας, καὶ τὴν πόλιν ἐνέπρησαν ἐν πυρί.",
+        "VUL": "Oppugnantes ergo filii Juda Jerusalem, ceperunt eam, et percusserunt in ore gladii, tradentes cunctam incendio civitatem.",
+        "SYN": "И воевали сыны Иудины против Иерусалима и взяли его, и поразили его мечом и город предали огню.",
+        "NEO": "Les fils de Juda attaquèrent Jérusalem et, l’ayant prise, ils la frappèrent du tranchant de l’épée et mirent le feu à la ville.",
+        "NAB": "(The Judahites fought against Jerusalem and captured it, putting it to the sword; then they destroyed the city by fire.)",
+        "VAT_ES": "La tribu de Judá atacó a Jerusalén; la tomaron, pasaron a sus habitantes al filo de la espada e incendiaron la ciudad.",
+        "CEI": "I figli di Giuda attaccarono Gerusalemme e la presero; la passarono a fil di spada e l'abbandonarono alle fiamme."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/אַחַ֗ר יָֽרְדוּ֙ בְּנֵ֣י יְהוּדָ֔ה לְ/הִלָּחֵ֖ם בַּֽ/כְּנַעֲנִ֑י יוֹשֵׁ֣ב הָ/הָ֔ר וְ/הַ/נֶּ֖גֶב וְ/הַ/שְּׁפֵלָֽה׃",
+        "LXX": "καὶ μετὰ ταῦτα κατέβησαν οἱ υἱοὶ Ἰούδα τοῦ πολεμῆσαι πρὸς τὸν Χαναναῖον τὸν κατοικοῦντα τὴν ὀρεινὴν καὶ τὸν νότον καὶ τὴν πεδινήν.",
+        "VUL": "Et postea descendentes pugnaverunt contra Chananæum, qui habitabat in montanis, et ad meridiem, et in campestribus.",
+        "SYN": "Потом пошли сыны Иудины воевать с Хананеями, которые жили на горах и на полуденной земле и на низменных местах.",
+        "NEO": "Ensuite les fils de Juda descendirent pour combattre les Chananéens qui habitaient la montagne, le Négéb et la Séphéla.",
+        "NAB": "Afterward the Judahites went down to fight against the Canaanites who lived in the mountain region, in the Negeb, and in the foothills.",
+        "VAT_ES": "Luego la tribu de Judá fue a combatir contra los cananeos que habitaban en la Montaña, el Négueb y la Sefelá.",
+        "CEI": "Poi andarono a combattere contro i Cananei che abitavano le montagne, il Negheb e la Sefela."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֣לֶךְ יְהוּדָ֗ה אֶל הַֽ/כְּנַעֲנִי֙ הַ/יּוֹשֵׁ֣ב בְּ/חֶבְר֔וֹן וְ/שֵׁם חֶבְר֥וֹן לְ/פָנִ֖ים קִרְיַ֣ת אַרְבַּ֑ע וַ/יַּכּ֛וּ אֶת שֵׁשַׁ֥י וְ/אֶת אֲחִימַ֖ן וְ/אֶת תַּלְמָֽי׃",
+        "LXX": "καὶ ἐπορεύθη Ἰούδας πρὸς τὸν Χαναναῖον τὸν κατοικοῦντα ἐν Χεβρών, καὶ ἐξῆλθεν Χεβρὼν ἐξ ἐναντίας· καὶ τὸ ὄνομα ἦν Χεβρὼν τὸ πρότερον Καριαρβοξέφερ· καὶ ἐπάταξαν τὸν Σεσσεὶ καὶ Ἀχιναὰν καὶ Θολμείν, γεννήματα τοῦ Ἐνάκ.",
+        "VUL": "Pergensque Judas contra Chananæum, qui habitabat in Hebron (cujus nomen fuit antiquitus Cariath Arbe), percussit Sesai, et Ahiman, et Tholmai :",
+        "SYN": "И пошел Иуда на Хананеев, которые жили в Хевроне [имя же Хеврону _было_ прежде Кириаф-Арбы], и поразили Шешая, Ахимана и Фалмая [от рода Енакова].",
+        "NEO": "Juda marcha contre les Chananéens qui habitaient à Hébron, appelée autrefois Cariath-Arbé, et il battit Sésaï, Ahiman et Tholmaï.",
+        "NAB": "Judah also marched against the Canaanites who dwelt in Hebron, which was formerly called Kiriath-arba, and defeated Sheshai, Ahiman and Talmai.",
+        "VAT_ES": "Judá avanzó contra los cananeos que habitaban en Hebrón –Hebrón se llamaba antiguamente Quiriat Arabá– y derrotó a Sesai, Ajimán y Talmai.",
+        "CEI": "Giuda marciò contro i Cananei che abitavano a Ebron, che prima si chiamava Kiriat-Arba, e sconfisse Sesai, Achiman e Talmai."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֣לֶךְ מִ/שָּׁ֔ם אֶל יוֹשְׁבֵ֖י דְּבִ֑יר וְ/שֵׁם דְּבִ֥יר לְ/פָנִ֖ים קִרְיַת סֵֽפֶר׃",
+        "LXX": "καὶ ἀνέβησαν ἐκεῖθεν πρὸς τοὺς κατοικοῦντας Δαβείρ· τὸ δὲ ὄνομα τῆς Δαβεὶρ ἦν ἔμπροσθεν Καριασσῶφαρ, πόλις γραμμάτων.",
+        "VUL": "atque inde profectus abiit ad habitatores Dabir, cujus nomen vetus erat Cariath Sepher, id est, civitas litterarum.",
+        "SYN": "Оттуда пошел он против жителей Давира; имя Давиру _было_ прежде Кириаф-Сефер.",
+        "NEO": "Il marcha de là contre les habitants de Dabir, qui s’appelait autrefois Cariath-Sépher.",
+        "NAB": "From there they marched against the inhabitants of Debir, which was formerly called Kiriath-sepher.",
+        "VAT_ES": "Desde allí subió contra los habitantes de Debir, que antes se llamaba Quiriat Séfer.",
+        "CEI": "Di là andò contro gli abitanti di Debir, che prima si chiamava Kiriat-Sefer."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר כָּלֵ֔ב אֲשֶׁר יַכֶּ֥ה אֶת קִרְיַת סֵ֖פֶר וּ/לְכָדָ֑/הּ וְ/נָתַ֥תִּי ל֛/וֹ אֶת עַכְסָ֥ה בִתִּ֖/י לְ/אִשָּֽׁה׃",
+        "LXX": "καὶ εἶπεν Χαλέβ Ὃς ἐὰν πατάξῃ τὴν πόλιν τῶν γραμμάτων καὶ προκαταλάβηται αὐτήν, δώσω αὐτῷ τὴν Ἀζὰ θυγατέρα μου εἰς γυναῖκα.",
+        "VUL": "Dixitque Caleb : Qui percusserit Cariath Sepher, et vastaverit eam, dabo ei Axam filiam meam uxorem.",
+        "SYN": "И сказал Халев: кто поразит Кириаф-Сефер и возьмет его, тому отдам Ахсу, дочь мою, в жену.",
+        "NEO": "Caleb dit : « A celui qui frappera Cariath-Sépher et qui la prendra, je donnerai pour femme ma fille Axa. »",
+        "NAB": "And Caleb said, \"I will give my daughter Achsah in marriage to the one who attacks Kiriath-sepher and captures it.\"",
+        "VAT_ES": "Entonces Caleb dijo: «Al que derrote y conquiste a Quiriat Séfer, yo le daré como esposa a mi hija Acsá».",
+        "CEI": "Allora Caleb disse: \"A chi batterà Kiriat-Sefer e la prenderà io darò in moglie Acsa mia figlia\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַֽ/יִּלְכְּדָ/הּ֙ עָתְנִיאֵ֣ל בֶּן קְנַ֔ז אֲחִ֥י כָלֵ֖ב הַ/קָּטֹ֣ן מִמֶּ֑/נּוּ וַ/יִּתֶּן ל֛/וֹ אֶת עַכְסָ֥ה בִתּ֖/וֹ לְ/אִשָּֽׁה׃",
+        "LXX": "καὶ προκατελάβετο αὐτὴν Γοθονιὴλ υἱὸς Κενὲζ ἀδελφοῦ Χαλὲβ ὁ νεώτερος· καὶ ἔδωκεν αὐτῷ Χαλὲβ τὴν Ἀζὰ θυγατέρα αὐτοῦ εἰς γυναῖκα.",
+        "VUL": "Cumque cepisset eam Othoniel filius Cenez frater Caleb minor, dedit ei Axam filiam suam conjugem.",
+        "SYN": "И взял его Гофониил, сын Кеназа, младшего брата Халевова, и _Халев_ отдал в жену ему Ахсу, дочь свою.",
+        "NEO": "Othoniel, fils de Cénez, frère cadet de Caleb, s’en empara, et Caleb lui donna sa fille Axa pour femme.",
+        "NAB": "Othniel, son of Caleb's younger brother Kenaz, captured it; so Caleb gave him his daughter Achsah in marriage.",
+        "VAT_ES": "El que la conquistó fue Otniel, hijo de Quenaz y hermano menor de Caleb, y este le dio como esposa a su hija Acsá.",
+        "CEI": "La prese Otniel, figlio di Kenaz, fratello minore di Caleb, e questi gli diede in moglie sua figlia Acsa."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י בְּ/בוֹאָ֗/הּ וַ/תְּסִיתֵ֨/הוּ֙ לִ/שְׁא֤וֹל מֵֽ/אֵת אָבִ֨י/הָ֙ הַ/שָּׂדֶ֔ה וַ/תִּצְנַ֖ח מֵ/עַ֣ל הַ/חֲמ֑וֹר וַ/יֹּֽאמֶר לָ֥/הּ כָּלֵ֖ב מַה לָּֽ/ךְ׃",
+        "LXX": "καὶ ἐγένετο ἐν τῇ εἰσόδῳ αὐτῆς καὶ ἐπέσεισεν αὐτὴν Γοθονιὴλ τοῦ αἰτῆσαι παρὰ τοῦ πατρὸς αὐτῆς ἀγρόν· καὶ ἐγόγγυζεν καὶ ἔκραξεν ἀπὸ τοῦ ὑποζυγίου Εῖς γῆν νότου ἐκδέδοσαί με. καὶ εἶπεν αὐτῇ Χαλέβ Τί ἐστίν σοι;",
+        "VUL": "Quam pergentem in itinere monuit vir suus ut peteret a patre suo agrum. Quæ cum suspirasset sedens in asino, dixit ei Caleb : Quid habes ?",
+        "SYN": "Когда надлежало ей идти, _Гофониил_ научил ее просить у отца ее поле, и она сошла с осла. Халев сказал ей: что тебе?",
+        "NEO": "Lorsqu’elle alla chez Othoniel, elle l’excita à demander à son père un champ. Elle descendit de son âne, et Caleb lui dit : « Qu’as-tu ? »",
+        "NAB": "On the day of her marriage to Othniel she induced him to ask her father for some land. Then, as she alighted from the ass, Caleb asked her, \"What is troubling you?\"",
+        "VAT_ES": "Cuando ella llegó a la casa de su esposo, este le sugirió que pidiera un campo a su padre. Ella se bajó del asno, y Caleb le preguntó: «Qué quieres?».",
+        "CEI": "Ora, mentre andava dal marito, egli la indusse a chiedere un campo a suo padre. Essa scese dall'asino e Caleb le disse: \"Che hai?\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר ל֜/וֹ הָֽבָ/ה לִּ֣/י בְרָכָ֗ה כִּ֣י אֶ֤רֶץ הַ/נֶּ֨גֶב֙ נְתַתָּ֔/נִי וְ/נָתַתָּ֥ה לִ֖/י גֻּלֹּ֣ת מָ֑יִם וַ/יִּתֶּן לָ֣/הּ כָּלֵ֗ב אֵ֚ת גֻּלֹּ֣ת עִלִּ֔ית וְ/אֵ֖ת גֻּלֹּ֥ת תַּחְתִּֽית׃",
+        "LXX": "καὶ εἶπεν αὐτῷ Ἀσχά Δὸς δή μοι εὐλογίαν, ὅτι εἰς γῆν νότου ἐκδέδοσαί με, καὶ δώσεις μοι λύτρωσιν ὕδατος. καὶ ἔδωκεν αὐτῇ Χαλὲβ κατὰ τὴν καρδίαν αὐτῆς λύτρωσιν μετεώρων καὶ λύτρωσιν ταπεινῶν.",
+        "VUL": "At illa respondit : Da mihi benedictionem, quia terram arentem dedisti mihi : da et irriguam aquis. Dedit ergo ei Caleb irriguum superius, et irriguum inferius.",
+        "SYN": "[Ахса] сказала ему: дай мне благословение; ты дал мне землю полуденную, дай мне и источники воды. И дал ей [Халев по желанию ее] источники верхние и источники нижние.",
+        "NEO": "Elle lui répondit : « Fais-moi une faveur, car tu m’as établie dans un pays desséché ; donne-moi des sources d’eau. » Et Caleb lui donna les sources supérieures et les sources inférieures.",
+        "NAB": "Give me an additional gift,\" she answered. \"Since you have assigned land in the Negeb to me, give me also pools of water.\" So Caleb gave her the upper and the lower pool.",
+        "VAT_ES": "«Quiero que me hagas un regalo, le respondió; ya que me has mandado al territorio de Négueb, concédeme al menos un manantial». Y él le dio el manantial de Arriba y el manantial de Abajo.",
+        "CEI": "Essa rispose: \"Fammi un dono; poiché tu mi hai dato una terra arida, dammi anche qualche fonte d'acqua\". Egli le donò la sorgente superiore e la sorgente inferiore."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י קֵינִי֩ חֹתֵ֨ן מֹשֶׁ֜ה עָל֨וּ מֵ/עִ֤יר הַ/תְּמָרִים֙ אֶת בְּנֵ֣י יְהוּדָ֔ה מִדְבַּ֣ר יְהוּדָ֔ה אֲשֶׁ֖ר בְּ/נֶ֣גֶב עֲרָ֑ד וַ/יֵּ֖לֶךְ וַ/יֵּ֥שֶׁב אֶת הָ/עָֽם׃",
+        "LXX": "Καὶ οἱ υἱοὶ Ἰοθὸρ τοῦ Κειναίου τοῦ γαμβροῦ Μωυσέως ἀνέβησαν ἐκ πόλεως τῶν φοινίκων μετὰ τῶν υἱῶν Ἰούδα εἰς τὴν ἔρημον τὴν οὖσαν ἐν τῷ νότῳ Ἰούδα, ἥ ἐστιν ἐπὶ καταβάσεως Ἀράδ. κατῴκησαν μετὰ τοῦ λαοῦ.",
+        "VUL": "Filii autem Cinæi cognati Moysi ascenderunt de civitate palmarum cum filiis Juda, in desertum sortis ejus, quod est ad meridiem Arad, et habitaverunt cum eo.",
+        "SYN": "И сыны [Иофора] Кенеянина, тестя Моисеева, пошли из города Пальм с сынами Иудиными в пустыню Иудину, которая на юг от Арада, и пришли и поселились среди народа.",
+        "NEO": "Les fils du Cinéen, beau-frère de Moïse, montèrent de la ville des palmiers, avec les fils de Juda, dans le désert de Juda, au midi d’Arad, et ils vinrent s’établir avec le peuple.",
+        "NAB": "The descendants of the Kenite, Moses' father-in-law, came up with the Judahites from the city of palms to the desert at Arad (which is in the Negeb). But they later left and settled among the Amalekites.",
+        "VAT_ES": "Los del clan de Jobab, el quenita, que había sido suegro de Moisés, subieron con la tribu de Judá desde la ciudad de las Palmeras hasta el desierto de Judá, al sur de Arad, y se establecieron entre los amalecitas.",
+        "CEI": "I figli del suocero di Mosè, il Kenita, salirono dalla città delle Palme con i figli di Giuda nel deserto di Giuda, a mezzogiorno di Arad; andarono dunque e si stabilirono in mezzo al popolo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֤לֶךְ יְהוּדָה֙ אֶת שִׁמְע֣וֹן אָחִ֔י/ו וַ/יַּכּ֕וּ אֶת הַֽ/כְּנַעֲנִ֖י יוֹשֵׁ֣ב צְפַ֑ת וַ/יַּחֲרִ֣ימוּ אוֹתָ֔/הּ וַ/יִּקְרָ֥א אֶת שֵׁם הָ/עִ֖יר חָרְמָֽה׃",
+        "LXX": "καὶ ἐπορεύθη Ἰούδας μετὰ Συμεὼν τοῦ ἀδελφοῦ αὐτοῦ καὶ ἔκοψεν τὸν Χαναναῖον τὸν κατοικοῦντα Σεφέκ, καὶ ἐξωλέθρευσαν αὐτούς· καὶ ἐκάλεσεν τὸ ὄνομα τῆς πόλεως Ἀνάθεμα.",
+        "VUL": "Abiit autem Judas cum Simeone fratre suo, et percusserunt simul Chananæum qui habitabat in Sephaath, et interfecerunt eum. Vocatumque est nomen urbis, Horma, id est, anathema.",
+        "SYN": "И пошел Иуда с Симеоном, братом своим, и поразили Хананеев, живших в Цефафе, и предали его заклятию, и _оттого_ называется город сей Хорма.",
+        "NEO": "Juda se mit en marche avec Siméon, son frère, et ils battirent les Chananéens qui habitaient Séphaath ; ils dévouèrent la ville par anathème, et on l’appela Horma.",
+        "NAB": "Judah then went with his brother Simeon, and they defeated the Canaanites who dwelt in Zephath. After having doomed the city to destruction, they renamed it Hormah.",
+        "VAT_ES": "Judá, por su parte, su fue con su hermano Simeón. Ellos derrotaron a los cananeos que habitaban en Sefat y consagraron la ciudad al exterminio total; por eso, la ciudad se llamó Jormá.",
+        "CEI": "Poi Giuda marciò con Simeone suo fratello: sconfissero i Cananei che abitavano in Sefat, votarono allo sterminio la città, che fu chiamata Corma."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּלְכֹּ֤ד יְהוּדָה֙ אֶת עַזָּ֣ה וְ/אֶת גְּבוּלָ֔/הּ וְ/אֶֽת אַשְׁקְל֖וֹן וְ/אֶת גְּבוּלָ֑/הּ וְ/אֶת עֶקְר֖וֹן וְ/אֶת גְּבוּלָֽ/הּ׃",
+        "LXX": "καὶ οὐκ ἐκληρονόμησεν Ἰούδας τὴν Γάζαν οὐδὲ τὰ ὅρια αὐτῆς, οὐδὲ τὴν Ἀσκάλωνα οὐδὲ τὰ ὅρια αὐτῆς, οὐδὲ τὴν Ἀκκαρὼν οὐδὲ τὰ ὅρια αὐτῆς, οὐδὲ τὴν Ἄζωτον οὐδὲ τὰ περισπόρια αὐτῆς.",
+        "VUL": "Cepitque Judas Gazam cum finibus suis, et Ascalonem, atque Accaron cum terminis suis.",
+        "SYN": "Иуда взял также Газу с пределами ее, Аскалон с пределами его, и Екрон с пределами его [и Азот с окрестностями его].",
+        "NEO": "Juda s’empara aussi de Gaza et de son territoire, d’Ascalon et de son territoire, d’Accaron et de son territoire.",
+        "NAB": "Judah, however, did not occupy Gaza with its territory, Ashkelon with its territory, or Ekron with its territory.",
+        "VAT_ES": "Pero Judá no pudo apoderarse de Gaza y su territorio, ni de Ascalón y su territorio, ni de Ecrón y su territorio.",
+        "CEI": "Giuda prese anche Gaza con il suo territorio, Ascalòn con il suo territorio ed Ekron con il suo territorio."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֤י יְהוָה֙ אֶתּ יְהוּדָ֔ה וַ/יֹּ֖רֶשׁ אֶת הָ/הָ֑ר כִּ֣י לֹ֤א לְ/הוֹרִישׁ֙ אֶת יֹשְׁבֵ֣י הָ/עֵ֔מֶק כִּי רֶ֥כֶב בַּרְזֶ֖ל לָ/הֶֽם׃",
+        "LXX": "καὶ ἦν Κύριος μετὰ Ἰούδα· καὶ ἐκληρονόμησεν τὸ ὄρος, ὅτι οὐκ ἠδυνάσθησαν ἐξολεθρεῦσαι τοὺς κατοικοῦντας τὴν κοιλάδα, ὅτι Ῥηχὰβ διεστείλατο αὐτοῖς.",
+        "VUL": "Fuitque Dominus cum Juda, et montana possedit : nec potuit delere habitatores vallis, quia falcatis curribus abundabant.",
+        "SYN": "Господь был с Иудою, и он овладел горою; но жителей долины не мог прогнать, потому что у них были железные колесницы.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** fut avec Juda ; et Juda prit possession de la montagne, mais il ne put chasser les habitants de la plaine, parce qu’ils avaient des chars de fer.",
+        "NAB": "Since the LORD was with Judah, he gained possession of the mountain region. Yet he could not dislodge those who lived on the plain, because they had iron chariots.",
+        "VAT_ES": "El Señor estaba con Judá, y este pudo ocupar la Montaña, pero no logró desposeer a los habitantes de la llanura, porque estaban equipados con carros de hierro.",
+        "CEI": "Il Signore fu con Giuda, che scacciò gli abitanti delle montagne, ma non potè espellere gli abitanti della pianura, perché muniti di carri di ferro."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּתְּנ֤וּ לְ/כָלֵב֙ אֶת חֶבְר֔וֹן כַּֽ/אֲשֶׁ֖ר דִּבֶּ֣ר מֹשֶׁ֑ה וַ/יּ֣וֹרֶשׁ מִ/שָּׁ֔ם אֶת שְׁלֹשָׁ֖ה בְּנֵ֥י הָ/עֲנָֽק׃",
+        "LXX": "καὶ ἔδωκαν τῷ Χαλὲβ τὴν Χεβρών, καθὼς ἐλάλησεν Μωσῆς· καὶ ἐκληρονόμησεν ἐκεῖθεν τὰς τρεῖς πόλεις τῶν υἱῶν Ἐνάκ.",
+        "VUL": "Dederuntque Caleb Hebron, sicut dixerat Moyses, qui delevit ex ea tres filios Enac.",
+        "SYN": "И отдали Халеву Хеврон, как говорил Моисей, [и получил он там в наследие три города сынов Енаковых] и изгнал оттуда трех сынов Енаковых.",
+        "NEO": "On donna Hébron à Caleb, comme l’avait dit Moïse, et il en chassa les trois fils d’Enac.",
+        "NAB": "As Moses had commanded, Hebron was given to Caleb, who then drove from it the three sons of Anak.",
+        "VAT_ES": "De acuerdo con lo establecido por Moisés, Hebrón fue asignada a Caleb, y él expulsó de allí a los tres hijos de Anac.",
+        "CEI": "Come Mosè aveva ordinato, Ebron fu data a Caleb, che da essa scacciò i tre figli di Anak."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/יְבוּסִי֙ יֹשֵׁ֣ב יְרֽוּשָׁלִַ֔ם לֹ֥א הוֹרִ֖ישׁוּ בְּנֵ֣י בִנְיָמִ֑ן וַ/יֵּ֨שֶׁב הַ/יְבוּסִ֜י אֶת בְּנֵ֤י בִנְיָמִן֙ בִּ/יר֣וּשָׁלִַ֔ם עַ֖ד הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ τὸν Ἰεβουσαῖον τὸν κατοικοῦντα ἐν Ἰερουσαλὴμ οὐκ ἐκληρονόμησαν οἱ υἱοὶ Βενιαμείν· καὶ κατῴκησεν ὁ Ἰεβουσαῖος μετὰ τῶν υἱῶν Βενιαμεὶν ἐν Ἰερουσαλὴμ ἕως τῆς ἡμέρας ταύτης.",
+        "VUL": "Jebusæum autem habitatorem Jerusalem non deleverunt filii Benjamin : habitavitque Jebusæus cum filiis Benjamin in Jerusalem, usque in præsentem diem.",
+        "SYN": "Но Иевусеев, которые жили в Иерусалиме, не изгнали сыны Вениаминовы, и живут Иевусеи с сынами Вениамина в Иерусалиме до сего дня.",
+        "NEO": "Les fils de Benjamin ne chassèrent pas les Jébuséens qui habitaient Jérusalem, et les Jébuséens ont habité à Jérusalem avec les fils de Benjamin, jusqu’à ce jour.",
+        "NAB": "The Benjaminites did not dislodge the Jebusites who dwelt in Jerusalem, with the result that the Jebusites live in Jerusalem beside the Benjaminites to the present day.",
+        "VAT_ES": "La tribu de Benjamín, en cambio, no pudo desposeer a los jebuseos que habitaban en Jerusalén. Por eso los Jebuseos continúan habitando en Jerusalén con la tribu de Benjamín, hasta el día de hoy.",
+        "CEI": "I figli di Beniamino non scacciarono i Gebusei che abitavano Gerusalemme, perciò i Gebusei abitano con i figli di Beniamino in Gerusalemme fino ad oggi."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲל֧וּ בֵית יוֹסֵ֛ף גַּם הֵ֖ם בֵּֽית אֵ֑ל וַֽ/יהוָ֖ה עִמָּֽ/ם׃",
+        "LXX": "Καὶ ἀνέβησαν οἱ υἱοὶ Ἰωσὴφ καί γε αὐτοὶ εἰς Βαιθήλ, καὶ Κύριος ἦν μετ’ αὐτῶν.",
+        "VUL": "Domus quoque Joseph ascendit in Bethel, fuitque Dominus cum eis.",
+        "SYN": "И сыны Иосифа пошли также на Вефиль, и Господь был с ними.",
+        "NEO": "La maison de Joseph, elle aussi, monta contre Béthel, et \\+w Yahweh|strong=\"H3068\"\\+w** fut avec eux.",
+        "NAB": "The house of Joseph, too, marched up against Bethel, and the LORD was with them.",
+        "VAT_ES": "La casa de José, por su parte, subió contra Betel, y el Señor estaba con ella.",
+        "CEI": "Anche la casa di Giuseppe marciò contro Betel e il Signore fu con loro."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יָּתִ֥ירוּ בֵית יוֹסֵ֖ף בְּ/בֵֽית אֵ֑ל וְ/שֵׁם הָ/עִ֥יר לְ/פָנִ֖ים לֽוּז׃",
+        "LXX": "καὶ παρενέβαλον καὶ κατεσκέψαντο Βαιθήλ· τὸ δὲ ὄνομα τῆς πόλεως αὐτῶν ἦν ἔμπροσθεν Λοῦζα.",
+        "VUL": "Nam cum obsiderent urbem, quæ prius Luza vocabatur,",
+        "SYN": "[И остановились] и высматривали сыны Иосифовы Вефиль [имя же городу _было_ прежде Луз].",
+        "NEO": "La maison de Joseph fit faire une reconnaissance à Béthel, ville dont le nom était autrefois Luz.",
+        "NAB": "The house of Joseph had a reconnaissance made of Bethel, which formerly was called Luz.",
+        "VAT_ES": "La casa de José envió espías a Betel –la ciudad que antiguamente se llamaba Luz–",
+        "CEI": "La casa di Giuseppe mandò a esplorare Betel, città che prima si chiamava Luz."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּרְאוּ֙ הַ/שֹּׁ֣מְרִ֔ים אִ֖ישׁ יוֹצֵ֣א מִן הָ/עִ֑יר וַ/יֹּ֣אמְרוּ ל֗/וֹ הַרְאֵ֤/נוּ נָא֙ אֶת מְב֣וֹא הָ/עִ֔יר וְ/עָשִׂ֥ינוּ עִמְּ/ךָ֖ חָֽסֶד׃",
+        "LXX": "καὶ εἶδον οἱ φυλάσσοντες, καὶ ἰδοὺ ἀνὴρ ἐξεπορεύετο ἐκ τῆς πόλεως· καὶ ἔλαβον αὐτόν, καὶ εἶπον αὐτῷ Δεῖξον ἡμῖν τῆς πόλεως τὴν εἴσοδον, καὶ ποιήσομεν μετὰ σοῦ ἔλεος.",
+        "VUL": "viderunt hominem egredientem de civitate, dixeruntque ad eum : Ostende nobis introitum civitatis, et faciemus tecum misericordiam.",
+        "SYN": "И увидели стражи человека, идущего из города, [и взяли его] и сказали ему: покажи нам вход в город, и сделаем с тобою милость.",
+        "NEO": "Les gardes, ayant aperçu un homme qui sortait de la ville, ils lui dirent : « Montre-nous par où on peut entrer dans la ville, et nous te ferons grâce. »",
+        "NAB": "The scouts saw a man coming out of the city and said to him, \"Show us a way into the city, and we will spare you.\"",
+        "VAT_ES": "y cuando los espías vieron a un hombre que salía de la ciudad, le dijeron: «Muéstranos el acceso a la ciudad, y te perdonaremos la vida».",
+        "CEI": "Gli esploratori videro un uomo che usciva dalla città e gli dissero: \"Insegnaci una via di accesso alla città e noi ti faremo grazia\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יַּרְאֵ/ם֙ אֶת מְב֣וֹא הָ/עִ֔יר וַ/יַּכּ֥וּ אֶת הָ/עִ֖יר לְ/פִי חָ֑רֶב וְ/אֶת הָ/אִ֥ישׁ וְ/אֶת כָּל מִשְׁפַּחְתּ֖/וֹ שִׁלֵּֽחוּ׃",
+        "LXX": "καὶ ἔδειξεν αὐτοῖς τὴν εἴσοδον τῆς πόλεως· καὶ ἐπάταξαν τὴν πόλιν ἐν στόματι ῥομφαίας, τὸν δὲ ἄνδρα καὶ τὴν συγγενίαν αὐτοῦ ἐξαπέστειλαν.",
+        "VUL": "Qui cum ostendisset eis, percusserunt urbem in ore gladii : hominem autem illum, et omnem cognationem ejus, dimiserunt.",
+        "SYN": "Он показал им вход в город, и поразили они город мечом, а человека сего и все родство его отпустили.",
+        "NEO": "Il leur montra par où ils pourraient entrer dans la ville, et ils frappèrent la ville du tranchant de l’épée, mais ils laissèrent aller cet homme avec toute sa famille.",
+        "NAB": "He showed them a way into the city, which they then put to the sword; but they let the man and his whole clan go free.",
+        "VAT_ES": "El les indicó el acceso a la ciudad, y ellos pasaron a sus habitantes al filo de la espada, pero dejaron ir a aquel hombre con toda su familia.",
+        "CEI": "Egli insegnò loro la via di accesso alla città ed essi passarono la città a fil di spada, ma risparmiarono quell'uomo con tutta la sua famiglia."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֣לֶךְ הָ/אִ֔ישׁ אֶ֖רֶץ הַ/חִתִּ֑ים וַ/יִּ֣בֶן עִ֗יר וַ/יִּקְרָ֤א שְׁמָ/הּ֙ ל֔וּז ה֣וּא שְׁמָ֔/הּ עַ֖ד הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ ἐπορεύθη ὁ ἀνὴρ εἰς γῆν Χεττείν, καὶ ᾠκοδόμησεν ἐκεῖ πόλιν καὶ ἐκάλεσεν τὸ ὄνομα αὐτῆς Λοῦζα. τοῦτο τὸ ὄνομα αὐτῆς ἕως τῆς ἡμέρας ταύτης.",
+        "VUL": "Qui dimissus, abiit in terram Hetthim, et ædificavit ibi civitatem, vocavitque eam Luzam : quæ ita appellatur usque in præsentem diem.",
+        "SYN": "Человек сей пошел в землю Хеттеев, и построил [там] город и нарек имя ему Луз. Это имя его до сего дня.",
+        "NEO": "Cet homme se rendit dans le pays des Hittites ; il bâtit une ville et la nomma Luz, et c’est son nom jusqu’à ce jour.",
+        "NAB": "He then went to the land of the Hittites, where he built a city and called it Luz, as it is still called.",
+        "VAT_ES": "El hombre se dirigió al país de los hititas, y fundó una ciudad, a la que llamó Luz. Este es el nombre que tiene hasta el día de hoy.",
+        "CEI": "Quell'uomo andò nel paese degli Hittiti e vi edificò una città che chiamò Luz: questo è il suo nome fino ad oggi."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/לֹא הוֹרִ֣ישׁ מְנַשֶּׁ֗ה אֶת בֵּית שְׁאָ֣ן וְ/אֶת בְּנוֹתֶי/הָ֮ וְ/אֶת תַּעְנַ֣ךְ וְ/אֶת בְּנֹתֶי/הָ֒ וְ/אֶת ישב יֹשְׁבֵ֨י ד֜וֹר וְ/אֶת בְּנוֹתֶ֗י/הָ וְ/אֶת יוֹשְׁבֵ֤י יִבְלְעָם֙ וְ/אֶת בְּנֹתֶ֔י/הָ וְ/אֶת יוֹשְׁבֵ֥י מְגִדּ֖וֹ וְ/אֶת בְּנוֹתֶ֑י/הָ וַ/יּ֨וֹאֶל֙ הַֽ/כְּנַעֲנִ֔י לָ/שֶׁ֖בֶת בָּ/אָ֥רֶץ הַ/זֹּֽאת׃",
+        "LXX": "Καὶ οὐκ ἐξῆρεν Μανασσὴ τὴν Βαιθσάν, ἥ ἐστιν Σκυθῶν πόλις, οὐδὲ τὰς θυγατέρας αὐτῆς οὐδὲ τὰ περίοικα αὐτῆς, οὐδὲ τὴν Θανὰκ οὐδὲ τὰς θυγατέρας αὐτῆς, οὐδὲ τὸν κατοικοῦντας Δὼρ οὐδὲ τὰς θυγατέρας αὐτῆς, οὐδὲ τὸν κατοικοῦντα Βαλὰκ οὐδὲ τὰ περίοικα αὐτῆς οὐδὲ τὰς θυγατέρας αὐτῆς, οὐδὲ τοὺς κατοικοῦντας Μαγεδὼ οὐδὲ τὰ περίοικα αὐτῆς οὐδὲ τὰς θυγατέρας αὐτῆς, οὐδὲ τοὺς κατοικοῦντας Ἰεβλαὰμ οὐδὲ τὰ περίοικα αὐτῆς οὐδὲ τὰς θυγατἐρας αὐτῆς· καὶ ἤρξατο ὁ Χαναναῖος κατοικεῖν ἐν τῇ γῇ ταύτῃ.",
+        "VUL": "Manasses quoque non delevit Bethsan, et Thanac cum viculis suis, et habitatores Dor, et Jeblaam, et Mageddo cum viculis suis, cpitque Chananæus habitare cum eis.",
+        "SYN": "И Манассия не выгнал _жителей_ Бефсана [который есть Скифополь] и зависящих от него городов, Фаанаха и зависящих от него городов, жителей Дора и зависящих от него городов, жителей Ивлеама и зависящих от него городов, жителей Мегиддона и зависящих от него городов; и остались Хананеи жить в земле сей.",
+        "NEO": "Manassé ne chassa pas les habitants de Bethsan et des villes de sa dépendance, ni ceux de Thanac et des villes de sa dépendance, ni les habitants de Dor et des villes de sa dépendance, ni les habitants de Jéblaam et des villes de sa dépendance, ni les habitants de Mageddo et des villes de sa dépendance ; et les Chananéens s’enhardirent à rester dans ce pays.",
+        "NAB": "Manasseh did not take possession of Beth-shean with its towns or of Taanach with its towns. Neither did he dislodge the inhabitants of Dor and its towns, those of Ibleam and its towns, or those of Megiddo and its towns. The Canaanites kept their hold in this district.",
+        "VAT_ES": "Manasés, en cambio, no pudo adueñarse de Bet Seán y de Tanac con sus respectivas ciudades dependientes. Tampoco desposeyó a los habitantes de Dor, de Ibleam y de Meguido, con sus respectivas ciudades dependientes, sino que los cananeos continuaron ocupando ese territorio.",
+        "CEI": "Manàsse non scacciò gli abitanti di Beisan e delle sue dipendenze, né quelli di Taanach e delle sue dipendenze, né quelli di Dor e delle sue dipendenze, né quelli d'Ibleam e delle sue dipendenze, né quelli di Meghiddo e delle sue dipendenze; i Cananei continuarono ad abitare in quel paese."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ כִּֽי חָזַ֣ק יִשְׂרָאֵ֔ל וַ/יָּ֥שֶׂם אֶת הַֽ/כְּנַעֲנִ֖י לָ/מַ֑ס וְ/הוֹרֵ֖ישׁ לֹ֥א הוֹרִישֽׁ/וֹ׃",
+        "LXX": "καὶ ἐγένετο ὅτε ἐνίσχυσεν Ἰσραήλ, καὶ ἐποίησεν τὸν Χαναναῖον εἰς φόρον, καὶ ἐξαίρων οὐκ ἐξῆρεν αὐτόν.",
+        "VUL": "Postquam autem confortatus est Israël, fecit eos tributarios, et delere noluit.",
+        "SYN": "Когда Израиль пришел в силу, тогда сделал он Хананеев данниками, но изгнать не изгнал их.",
+        "NEO": "Lorsqu’Israël fut devenu assez fort, il assujettit les Chananéens à un tribut, et ne les chassa point.",
+        "NAB": "When the Israelites grew stronger, they impressed the Canaanites as laborers, but did not drive them out.",
+        "VAT_ES": "Pero cuando Israel se hizo más fuerte, obligó a los cananeos a pagar tributo, aunque no llegó a desposeerlos.",
+        "CEI": "Quando Israele divenne più forte, costrinse ai lavori forzati i Cananei, ma non li scacciò del tutto."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/אֶפְרַ֨יִם֙ לֹ֣א הוֹרִ֔ישׁ אֶת הַֽ/כְּנַעֲנִ֖י הַ/יּוֹשֵׁ֣ב בְּ/גָ֑זֶר וַ/יֵּ֧שֶׁב הַֽ/כְּנַעֲנִ֛י בְּ/קִרְבּ֖/וֹ בְּ/גָֽזֶר׃",
+        "LXX": "Καὶ Ἐφράιμ οὐκ ἐξῆρεν τὸν Χαναναῖον τὸν κατοικοῦντα ἐν Γάζερ· καὶ κατῴκησεν ὁ Χαναναῖος ἐν μέσῳ αὐτοῦ ἐν Γάζερ, καὶ ἐγένετο εἰς φόρον.",
+        "VUL": "Ephraim etiam non interfecit Chananæum, qui habitabat in Gazer, sed habitavit cum eo.",
+        "SYN": "И Ефрем не изгнал Хананеев, живущих в Газере; и жили Хананеи среди их в Газере [и платили им дань].",
+        "NEO": "Ephraïm ne chassa pas les Chananéens qui habitaient à Gaser, et les Chananéens habitèrent au milieu d’Ephraïm, à Gaser.",
+        "NAB": "Similarly, the Ephraimites did not drive out the Canaanites living in Gezer, and so the Canaanites live in Gezer in their midst.",
+        "VAT_ES": "Efraím no pudo desposeer a los cananeos que habitaban en Guézer, de manera que estos continuaron viviendo en medio de él, en Guézer.",
+        "CEI": "Nemmeno Efraim scacciò i Cananei, che abitavano a Ghezer, perciò i Cananei abitarono in Ghezer in mezzo ad Efraim."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "זְבוּלֻ֗ן לֹ֤א הוֹרִישׁ֙ אֶת יוֹשְׁבֵ֣י קִטְר֔וֹן וְ/אֶת יוֹשְׁבֵ֖י נַהֲלֹ֑ל וַ/יֵּ֤שֶׁב הַֽ/כְּנַעֲנִי֙ בְּ/קִרְבּ֔/וֹ וַ/יִּֽהְי֖וּ לָ/מַֽס׃",
+        "LXX": "Καὶ Ζαβουλὼν οὐκ ἐξῆρεν τοὺς κατοικοῦντας Κεδρὼν οὐδὲ τοὺς κατοικοῦντας Δωμανά· καὶ κατῴκησεν ὁ Χαναναῖος ἐν μέσῳ αὐτῶν, καὶ ἐγένετο αὐτῷ εἰς φόρον.",
+        "VUL": "Zabulon non delevit habitatores Cetron, et Naalol : sed habitavit Chananæus in medio ejus, factusque est ei tributarius.",
+        "SYN": "И Завулон не изгнал жителей Китрона и жителей Наглола, и жили Хананеи среди их и платили им дань.",
+        "NEO": "Zabulon ne chassa pas les habitants de Cétron, ni les habitants de Naalol ; et les Chananéens habitèrent au milieu de Zabulon, mais ils furent soumis à un tribut.",
+        "NAB": "Zebulun did not dislodge the inhabitants of Kitron or those of Nahalol; the Canaanites live among them, but have become forced laborers.",
+        "VAT_ES": "Zabulón no desposeyó a los habitantes de Quitrón ni a los de Nahalol: los cananeos continuaron viviendo en medio de él, pero fueron obligados a pagar tributo.",
+        "CEI": "Zàbulon non scacciò gli abitanti di Kitron, né gli abitanti di Naalol; i Cananei abitarono in mezzo a Zàbulon e furono ridotti in schiavitù."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "אָשֵׁ֗ר לֹ֤א הוֹרִישׁ֙ אֶת יֹשְׁבֵ֣י עַכּ֔וֹ וְ/אֶת יוֹשְׁבֵ֖י צִיד֑וֹן וְ/אֶת אַחְלָ֤ב וְ/אֶת אַכְזִיב֙ וְ/אֶת חֶלְבָּ֔ה וְ/אֶת אֲפִ֖יק וְ/אֶת רְחֹֽב׃",
+        "LXX": "Καὶ Ἀσὴρ οὐκ ἐξῆρεν τοὺς κατοικοῦντας Ἀκχώ, καὶ ἐγένετο αὐτῷ εἰς φόρον, καὶ τοὺς κατοικοῦντας Δὼρ καὶ τοὺς κατοικοῦντας Σιδῶνα καὶ τοὺς κατοικοῦντας Δαλάφ, τὸν Ἀσχαζεὶ καὶ τὸν Χεβδὰ καὶ τὸν Ναεὶ καὶ τὸν Ἐρεώ.",
+        "VUL": "Aser quoque non delevit habitatores Accho, et Sidonis, Ahalab, et Achazib, et Helba, et Aphec, et Rohob :",
+        "SYN": "И Асир не изгнал жителей Акко [которые платили ему дань, и жителей Дора] и жителей Сидона и Ахлава, Ахзива, Хелвы, Афека и Рехова.",
+        "NEO": "Aser ne chassa pas les habitants d’Accho, ni les habitants de Sidon, ni ceux d’Ahalab, d’Achazib, d’Helba, d’Aphec et de Rohob ;",
+        "NAB": "Nor did Asher drive out the inhabitants of Acco or those of Sidon, or take possession of Mahaleb, Achzib, Helbah, Aphik or Rehob.",
+        "VAT_ES": "Aser no pudo desposeer a los habitantes de Acó, de Sidón, de Majleb, de Aczib, de Afric y de Rejob.",
+        "CEI": "Aser non scacciò gli abitanti di Acco, né gli abitanti di Sidòne, né quelli di Aclab, di Aczib, di Elba, di Afik, di Recob;"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨שֶׁב֙ הָ/אָ֣שֵׁרִ֔י בְּ/קֶ֥רֶב הַֽ/כְּנַעֲנִ֖י יֹשְׁבֵ֣י הָ/אָ֑רֶץ כִּ֖י לֹ֥א הוֹרִישֽׁ/וֹ׃",
+        "LXX": "καὶ κατῴκησεν ὁ Ἀσὴρ ἐν μέσῳ τοῦ Χαναναίου τοῦ κατοικοῦντος τὴν γῆν, ὅτι οὐκ ἠδυνήθη ἐξᾶραι αὐτόν.",
+        "VUL": "habitavitque in medio Chananæi habitatoris illius terræ, nec interfecit eum.",
+        "SYN": "И жил Асир среди Хананеев, жителей земли той, ибо не изгнал их.",
+        "NEO": "et les fils d’Aser demeurèrent au milieu des Chananéens, habitants du pays, car ils ne les chassèrent point.",
+        "NAB": "The Asherites live among the Canaanite natives of the land, whom they have not dislodged.",
+        "VAT_ES": "Por eso la tribu de Aser se estableció en medio de los cananeos que ocupaban el país, ya que no pudieron desposeerlos.",
+        "CEI": "i figli di Aser si stabilirono in mezzo ai Cananei che abitavano il paese, perché non li avevano scacciati."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "נַפְתָּלִ֗י לֹֽא הוֹרִ֞ישׁ אֶת יֹשְׁבֵ֤י בֵֽית שֶׁ֨מֶשׁ֙ וְ/אֶת יֹשְׁבֵ֣י בֵית עֲנָ֔ת וַ/יֵּ֕שֶׁב בְּ/קֶ֥רֶב הַֽ/כְּנַעֲנִ֖י יֹשְׁבֵ֣י הָ/אָ֑רֶץ וְ/יֹשְׁבֵ֤י בֵֽית שֶׁ֨מֶשׁ֙ וּ/בֵ֣ית עֲנָ֔ת הָי֥וּ לָ/הֶ֖ם לָ/מַֽס׃",
+        "LXX": "Καὶ Νεφθαλεὶ οὐκ ἐξῆρεν τοὺς κατοικοῦντας Βαιθσάμυς καὶ τοὺς κατοικοῦντας Βαιθανάχ· καὶ κατῴκησεν Νεφθαλεὶ ἐν μέσῳ τοῦ Χαναναίου τοῦ κατοικοῦντος τὴν γῆν, οἱ δὲ κατοικοῦντες Βαιθσάμυς καὶ τὴν Βαιθενὲθ ἐγένοντο αὐτοῖς εἰς φόρον.",
+        "VUL": "Nephthali quoque non delevit habitatores Bethsames, et Bethanath : et habitavit inter Chananæum habitatorem terræ, fueruntque ei Bethsamitæ et Bethanitæ tributarii.",
+        "SYN": "И Неффалим не изгнал жителей Вефсамиса и жителей Бефанафа и жил среди Хананеев, жителей земли той; жители же Вефсамиса и Бефанафа были его данниками.",
+        "NEO": "Nephthali ne chassa pas les habitants de Beth-Samès, ni les habitants de Beth-Anath, et il demeura au milieu des Chananéens, habitants du pays ; mais les habitants de Beth-Samès et de Beth-Anath furent soumis à un tribut en sa faveur.",
+        "NAB": "Naphtali did not drive out the inhabitants of Beth-shemesh or those of Beth-anath, and so they live among the Canaanite natives of the land. However, the inhabitants of Beth-shemesh and Beth-anath have become forced laborers for them.",
+        "VAT_ES": "Tampoco Neftalí pudo desposeer a los habitantes de Bet Semes, ni a los de Bet Anát, y se estableció en medio de los cananeos que habitaban en el país, Pero los habitantes de Bet Semes y de Bet Anát fueron obligados a pagar tributo.",
+        "CEI": "Nèftali non scacciò gli abitanti di Bet-Semes, né gli abitanti di Bet-Anat e si stabilì in mezzo ai Cananei che abitavano il paese; ma gli abitanti di Bet-Semes e di Bet-Anat furono da loro costretti ai lavori forzati."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יִּלְחֲצ֧וּ הָ/אֱמֹרִ֛י אֶת בְּנֵי דָ֖ן הָ/הָ֑רָ/ה כִּי לֹ֥א נְתָנ֖/וֹ לָ/רֶ֥דֶת לָ/עֵֽמֶק׃",
+        "LXX": "Καὶ ἐξέθλιψεν ὁ Ἀμορραῖος τοὺς υἱοὺς Δὰν εἰς τὸ ὄρος, ὅτι οὐκ ἀφῆκαν αὐτὸν καταβῆναι εἰς τὴν κοιλάδα.",
+        "VUL": "Arctavitque Amorrhæus filios Dan in monte, nec dedit eis locum ut ad planiora descenderent :",
+        "SYN": "И стеснили Аморреи сынов Дановых в горах, ибо не давали им сходить на долину.",
+        "NEO": "Les Amorrhéens refoulèrent dans la montagne les fils de Dan, et ne les laissèrent pas descendre dans la plaine.",
+        "NAB": "The Amorites hemmed in the Danites in the mountain region, not permitting them to go down into the plain.",
+        "VAT_ES": "Los amorreos obligaron a la tribu de Dan a replegarse hacia la región montañosa, impidiéndosele bajar hasta el llano.",
+        "CEI": "Gli Amorrèi respinsero i figli di Dan sulle montagne e non li lasciarono scendere nella pianura."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יּ֤וֹאֶל הָֽ/אֱמֹרִי֙ לָ/שֶׁ֣בֶת בְּ/הַר חֶ֔רֶס בְּ/אַיָּל֖וֹן וּ/בְ/שַֽׁעַלְבִ֑ים וַ/תִּכְבַּד֙ יַ֣ד בֵּית יוֹסֵ֔ף וַ/יִּהְי֖וּ לָ/מַֽס׃",
+        "LXX": "καὶ ἤρξατο ὁ Ἀμορραῖος κατοικεῖν ἐν τῷ ὄρει τῷ ὀστρακώδει, ἐν ᾧ αἱ ἄρκοι καὶ ἐν ᾧ αἱ ἀλώπηκες, ἐν τῷ Μυρσινῶνι καὶ ἐν Θαλαβείν· καὶ ἐβαρύνθη χεὶρ οἴκου Ἰωσὴφ ἐπὶ τὸν Ἀμορραῖον, καὶ ἐγενήθη αὐτοῖς εἰς φόρον.",
+        "VUL": "habitavitque in monte Hares, quod interpretatur testaceo, in Ajalon et Salebim. Et aggravata est manus domus Joseph, factusque est ei tributarius.",
+        "SYN": "И остались Аморреи жить на горе Херес [где медведи и лисицы], в Аиалоне и Шаалвиме; но рука сынов Иосифовых одолела [Аморреев], и сделались они данниками им.",
+        "NEO": "Les Amorrhéens s’enhardirent à rester à Har-Harés, à Ajalon et à Salebim ; mais la main de la maison de Joseph s’appesantit sur eux, et ils furent soumis à un tribut.",
+        "NAB": "The Amorites had a firm hold in Harheres, Aijalon and Shaalbim, but as the house of Joseph gained the upper hand, they were impressed as laborers.",
+        "VAT_ES": "Los amorreos pudieron permanecer en Har Jéres, en Aialón y en Salbím, pero cuando la casa de José afianzó su poder, fueron obligados a pagar tributo.",
+        "CEI": "Gli Amorrèi continuarono ad abitare Ar-Cheres, Aialon e Saalbim; ma la mano della casa di Giuseppe si aggravò su di loro e furono costretti ai lavori forzati."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וּ/גְבוּל֙ הָ/אֱמֹרִ֔י מִֽ/מַּעֲלֵ֖ה עַקְרַבִּ֑ים מֵ/הַ/סֶּ֖לַע וָ/מָֽעְלָ/ה׃",
+        "LXX": "καὶ τὸ ὅριον τοῦ Ἀμορραίου ἀπὸ τῆς ἀναβάσεως Ἀκραβεὶν ἀπὸ τῆς Πέτρας καὶ ἐπάνω.",
+        "VUL": "Fuit autem terminus Amorrhæi ab ascensu Scorpionis, petra, et superiora loca.",
+        "SYN": "Пределы Аморреев от возвышенности Акравим и от Селы простирались и далее.",
+        "NEO": "Le territoire des Amorrhéens s’étendait de la montée d’Acrabbim, de Séla, et au-dessus.",
+        "NAB": "The territory of the Amorites extended from the Akrabbim pass to Sela and beyond.",
+        "VAT_ES": "En cuanto a los edomitas, su frontera se extiende desde la cuesta de Acrabím, a partir de la Roca, y continúa hacia arriba.",
+        "CEI": "Il confine degli Amorrèi si estendeva dalla salita di Akrabbim, da Sela in su."
+      }
+    }
+  }
+}

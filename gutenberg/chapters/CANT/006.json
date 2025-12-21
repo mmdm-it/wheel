@@ -1,0 +1,240 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "CANT_006",
+  "book_key": "CANT",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אָ֚נָה הָלַ֣ךְ דּוֹדֵ֔/ךְ הַ/יָּפָ֖ה בַּ/נָּשִׁ֑ים אָ֚נָה פָּנָ֣ה דוֹדֵ֔/ךְ וּ/נְבַקְשֶׁ֖/נּוּ עִמָּֽ/ךְ׃",
+        "LXX": "Ἀδελφός μου κατέβη εἰς κῆπον αὐτοῦ εἰς φιάλας τοῦ ἀρώματος, ποιμαίνειν ἐν κήποις καὶ συλλέγειν κρίνα.",
+        "VUL": "[<Sponsa>Dilectus meus descendit in hortum suum ad areolam aromatum,/ ut pascatur in hortis, et lilia colligat./",
+        "SYN": "\"Куда пошел возлюбленный твой, прекраснейшая из женщин? куда обратился возлюбленный твой? мы поищем его с тобою\".",
+        "NEO": "Où est allé ton bien-aimé, ô la plus belle des femmes ? De quel côté ton bien-aimé s’est-il tourné, pour que nous le cherchions avec toi ?",
+        "NAB": "D Where has your lover gone, O most beautiful among women? Where has your lover gone that we may seek him with you?",
+        "VAT_ES": "&iquest;Adónde se ha ido tu amado, tú, la más hermosa de las mujeres? &iquest;Adónde se dirigió tu amado, para que lo busquemos contigo?",
+        "CEI": "Dov'è andato il tuo diletto, o bella fra le donne? Dove si è recato il tuo diletto, perché noi lo possiamo cercare con te?"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "דּוֹדִ/י֙ יָרַ֣ד לְ/גַנּ֔/וֹ לַ/עֲרוּג֖וֹת הַ/בֹּ֑שֶׂם לִ/רְעוֹת֙ בַּ/גַּנִּ֔ים וְ/לִ/לְקֹ֖ט שֽׁוֹשַׁנִּֽים׃",
+        "LXX": "ἐγὼ τῷ ἀδελφιδῷ μου καὶ ἀδελφιδός μου ἐμοί, ὁ ποιμαίνων ἐν τοῖς κρίνοις.",
+        "VUL": "Ego dilecto meo, et dilectus meus mihi,/ qui pascitur inter lilia./",
+        "SYN": "Мой возлюбленный пошел в сад свой, в цветники ароматные, чтобы пасти в садах и собирать лилии.",
+        "NEO": "Mon bien-aimé est descendu dans son jardin, aux parterres de baumiers, pour faire paître son troupeau dans les jardins, et pour cueillir des lis.",
+        "NAB": "B My lover has come down to his garden, to the beds of spice, To browse in the garden and to gather lilies.",
+        "VAT_ES": "Mi amado ha bajado a su jardín, a los canteros perfumados, para apacentar su rebaño en los jardines, para recoger lirios.",
+        "CEI": "Il mio diletto era sceso nel suo giardino fra le aiuole del balsamo a pascolare il gregge nei giardini e a cogliere gigli."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אֲנִ֤י לְ/דוֹדִ/י֙ וְ/דוֹדִ֣/י לִ֔/י הָ/רֹעֶ֖ה בַּ/שׁוֹשַׁנִּֽים׃",
+        "LXX": "Καλὴ εἶ πλησίον μου, ὡς εὐδοκία, ὡραία ὡς Ἰερουσαλήμ, θάμβος ὡς τεταγμέναι.",
+        "VUL": "<Sponsus>Pulchra es, amica mea ;/ suavis, et decora sicut Jerusalem ;/ terribilis ut castrorum acies ordinata./",
+        "SYN": "Я принадлежу возлюбленному моему, а возлюбленный мой - мне; он пасет между лилиями.",
+        "NEO": "Je suis à mon bien-aimé, et mon bien-aimé est à moi ; il fait paître son troupeau parmi les lis.",
+        "NAB": "My lover belongs to me and I to him; he browses among the lilies.",
+        "VAT_ES": "&iexcl;Mi amado es para mí, y yo soy para mi amado, que apacienta su rebaño entre los lirios!",
+        "CEI": "Io sono per il mio diletto e il mio diletto è per me; egli pascola il gregge tra i gigli."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "יָפָ֨ה אַ֤תְּ רַעְיָתִ/י֙ כְּ/תִרְצָ֔ה נָאוָ֖ה כִּ/ירוּשָׁלִָ֑ם אֲיֻמָּ֖ה כַּ/נִּדְגָּלֽוֹת׃",
+        "LXX": "ἀπόστρεψον ὀφθαλμούς σου ἀπεναντίον μου, ὅτι αὐτοὶ ἀνεπτέρωσάν με. τρίχωμά σου ὡς ἀγέλαι τῶν αἰγῶν αἳ ἀνεφάνησαν ἀπὸ τοῦ Γαλαάδ,",
+        "VUL": "Averte oculos tuos a me,/ quia ipsi me avolare fecerunt./ Capilli tui sicut grex caprarum/ quæ apparuerunt de Galaad./",
+        "SYN": "Прекрасна ты, возлюбленная моя, как Фирца, любезна, как Иерусалим, грозна, как полки со знаменами.",
+        "NEO": "Tu es belle, mon amie, comme Thirsa, charmante comme Jérusalem, mais terrible comme des bataillons.",
+        "NAB": "G You are as beautiful as Tirzah, my beloved, as lovely as Jerusalem, as awe-inspiring as bannered troops.",
+        "VAT_ES": "&iexcl;Eres bella, amiga mía, como Tirsá, hermosa como Jerusalén!",
+        "CEI": "Tu sei bella, amica mia, come Tirza, leggiadra come Gerusalemme, terribile come schiere a vessilli spiegati."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הָסֵ֤בִּי עֵינַ֨יִ/ךְ֙ מִ/נֶּגְדִּ֔/י שֶׁ֥/הֵ֖ם הִרְהִיבֻ֑/נִי שַׂעְרֵ/ךְ֙ כְּ/עֵ֣דֶר הָֽ/עִזִּ֔ים שֶׁ/גָּלְשׁ֖וּ מִן הַ/גִּלְעָֽד׃",
+        "LXX": "ὀδόντες σου ὡς ἀγέλαι τῶν κεκαρμένων αἳ ἀνέβησαν ἀπὸ τοῦ λουτροῦ, αἱ πᾶσαι διδυμεύουσαι, καὶ ἀτεκνοῦσα οὐκ ἔστιν ἐν αὐταῖς. ὡς σπαρτίον τὸ κόκκινον χείλη σου, καὶ ἡ λαλιά σου ὡραία.",
+        "VUL": "Dentes tui sicut grex ovium/ quæ ascenderunt de lavacro :/ omnes gemellis ftibus,/ et sterilis non est in eis./",
+        "SYN": "Уклони очи твои от меня, потому что они волнуют меня.",
+        "NEO": "Détourne de moi tes yeux, car ils me troublent. Tes cheveux sont comme un troupeau de chèvres, suspendues aux flancs de la montagne de Galaad.",
+        "NAB": "Turn your eyes from me, for they torment me. Your hair is like a flock of goats streaming down from Gilead.",
+        "VAT_ES": "Aparta de mí tus ojos, porque me fascinan. Tus cabellos son un rebaño de cabras que bajan por las laderas de Galaad.",
+        "CEI": "Distogli da me i tuoi occhi: il loro sguardo mi turba. Le tue chiome sono come un gregge di capre che scendono dal Gàlaad."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "שִׁנַּ֨יִ/ךְ֙ כְּ/עֵ֣דֶר הָֽ/רְחֵלִ֔ים שֶׁ/עָל֖וּ מִן הָ/רַחְצָ֑ה שֶׁ/כֻּלָּ/ם֙ מַתְאִימ֔וֹת וְ/שַׁכֻּלָ֖ה אֵ֥ין בָּ/הֶֽם׃",
+        "LXX": "ὡς λέπυρον ῥόας μῆλόν σου ἐκτὸς τῆς σιωπήσεώς σου.",
+        "VUL": "Sicut cortex mali punici, sic genæ tuæ,/ absque occultis tuis./",
+        "SYN": "Волосы твои - как стадо коз, сходящих с Галаада; зубы твои - как стадо овец, выходящих из купальни, из которых у каждой пара ягнят, и бесплодной нет между ними;",
+        "NEO": "Tes dents sont comme un troupeau de brebis, qui remontent du lavoir ; chacune porte deux jumeaux ; et parmi elles, il n’est pas de stérile.",
+        "NAB": "Your teeth are like a flock of ewes which come up from the washing, All of them big with twins, none of them thin and barren.",
+        "VAT_ES": "Tus dientes, como un rebaño de ovejas que acaban de bañarse: todas ellas han tenido mellizos y no hay ninguna estéril.",
+        "CEI": "I tuoi denti come un gregge di pecore che risalgono dal bagno. Tutte procedono appaiate e nessuna è senza compagna."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כְּ/פֶ֤לַח הָ/רִמּוֹן֙ רַקָּתֵ֔/ךְ מִ/בַּ֖עַד לְ/צַמָּתֵֽ/ךְ׃",
+        "LXX": "ἑξήκοντά εἰσιν βασίλισσαι, καὶ ὀγδοήκοντα παλλακαί, καὶ νεάνιδες ὧν οὐκ ἔστιν ἀριθμός·",
+        "VUL": "Sexaginta sunt reginæ, et octoginta concubinæ,/ et adolescentularum non est numerus./",
+        "SYN": "как половинки гранатового яблока - ланиты твои под кудрями твоими.",
+        "NEO": "Ta joue est comme une moitié de grenade, derrière ton voile.",
+        "NAB": "Your cheek is like a half-pomegranate behind your veil.",
+        "VAT_ES": "Como cortes de granada son tus mejillas, detrás de tu velo.",
+        "CEI": "Come spicchio di melagrana la tua gota, attraverso il tuo velo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "שִׁשִּׁ֥ים הֵ֨מָּה֙ מְּלָכ֔וֹת וּ/שְׁמֹנִ֖ים פִּֽילַגְשִׁ֑ים וַ/עֲלָמ֖וֹת אֵ֥ין מִסְפָּֽר׃",
+        "LXX": "μία ἐστὶν περιστερά μου, τελεία μου, μία ἐστὶν τῇ μητρὶ αὐτῆς, ἐκλεκτή ἐστιν τῇ τεκούσῃ αὐτῆς. εἴδοσαν αὐτὴν θυγατέρες καὶ μακαριοῦσιν αὐτήν, βασίλισσαι καί γε παλλακαί, καὶ αἰνέσουσιν αὐτήν.",
+        "VUL": "Una est columba mea, perfecta mea,/ una est matris suæ, electa genetrici suæ./ Viderunt eam filiæ, et beatissimam prædicaverunt ;/ reginæ et concubinæ, et laudaverunt eam./",
+        "SYN": "Есть шестьдесят цариц и восемьдесят наложниц и девиц без числа,",
+        "NEO": "Il y a soixante reines, quatre-vingts concubines, et des jeunes filles sans nombre :",
+        "NAB": "There are sixty queens, eighty concubines, and maidens without number -",
+        "VAT_ES": "Son sesenta las reinas, ochenta las concubinas, e innumerables las jóvenes.",
+        "CEI": "Sessanta sono le regine, ottanta le altre spose, le fanciulle senza numero."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אַחַ֥ת הִיא֙ יוֹנָתִ֣/י תַמָּתִ֔/י אַחַ֥ת הִיא֙ לְ/אִמָּ֔/הּ בָּרָ֥ה הִ֖יא לְ/יֽוֹלַדְתָּ֑/הּ רָא֤וּ/הָ בָנוֹת֙ וַֽ/יְאַשְּׁר֔וּ/הָ מְלָכ֥וֹת וּ/פִֽילַגְשִׁ֖ים וַֽ/יְהַלְלֽוּ/הָ׃",
+        "LXX": "Τίς αὕτη ἡ ἐκκύπτουσα ὡσεὶ ὄρθρος, καλὴ ὡς σελήνη, ἐκλεκτὴ ὡς ὁ ἥλιος, θάμβος ὡς τεταγμέναι;",
+        "VUL": "Quæ est ista quæ progreditur quasi aurora consurgens,/ pulchra ut luna, electa ut sol,/ terribilis ut castrorum acies ordinata ?/",
+        "SYN": "но единственная - она, голубица моя, чистая моя; единственная она у матери своей, отличенная у родительницы своей. Увидели ее девицы, и - превознесли ее, царицы и наложницы, и - восхвалили ее.",
+        "NEO": "une seule est ma colombe, mon immaculée ; elle est l’unique de sa mère, la préférée de celle qui lui donna le jour. Les jeunes filles l’ont vue et l’ont proclamée bienheureuse ; les reines et les concubines l’ont vue et l’ont louée :",
+        "NAB": "One alone is my dove, my perfect one, her mother's chosen, the dear one of her parent. The daughters saw her and declared her fortunate, the queens and concubines, and they sang her praises;",
+        "VAT_ES": "Pero una sola es mi paloma mi preciosa. Ella es la única de su madre, la preferida de la que la engendró: al verla, la felicitan las jóvenes, las reinas y concubinas la elogian.",
+        "CEI": "Ma unica è la mia colomba la mia perfetta, ella è l'unica di sua madre, la preferita della sua genitrice. L'hanno vista le giovani e l'hanno detta beata, le regine e le altre spose ne hanno intessuto le lodi."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "מִי זֹ֥את הַ/נִּשְׁקָפָ֖ה כְּמוֹ שָׁ֑חַר יָפָ֣ה כַ/לְּבָנָ֗ה בָּרָה֙ כַּֽ/חַמָּ֔ה אֲיֻמָּ֖ה כַּ/נִּדְגָּלֽוֹת׃",
+        "LXX": "Εἰς κῆπον καρύας κατέβην ἰδεῖν ἐν γενήμασιν τοῦ χειμάρρου, ἰδεῖν εἰ ἤνθησεν ἡ ἄμπελος, ἐξήνθησαν αἱ ῥόαι· ἐκεῖ δώσω τοὺς μαστούς μου σοί.",
+        "VUL": "<Sponsa>Descendi in hortum nucum,/ ut viderem poma convallium,/ et inspicerem si floruisset vinea,/ et germinassent mala punica./",
+        "SYN": "Кто эта, блистающая, как заря, прекрасная, как луна, светлая, как солнце, грозная, как полки со знаменами?",
+        "NEO": "« Quelle est celle-ci qui apparaît comme l’aurore, belle comme la lune, pure comme le soleil, mais terrible comme des bataillons ? »",
+        "NAB": "D Who is this that comes forth like the dawn, as beautiful as the moon, as resplendent as the sun, as awe-inspiring as bannered troops?",
+        "VAT_ES": "«&iquest;Quién es esa que surge como la aurora, bella como la luna, resplandeciente como el sol, imponente como escuadrones con sus insignias?».",
+        "CEI": "\"Chi è costei che sorge come l'aurora, bella come la luna, fulgida come il sole, terribile come schiere a vessilli spiegati?\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "אֶל גִּנַּ֤ת אֱגוֹז֙ יָרַ֔דְתִּי לִ/רְא֖וֹת בְּ/אִבֵּ֣י הַ/נָּ֑חַל לִ/רְאוֹת֙ הֲ/פָֽרְחָ֣ה הַ/גֶּ֔פֶן הֵנֵ֖צוּ הָ/רִמֹּנִֽים׃",
+        "LXX": "οὐκ ἔγνω ἡ ψυχή μου· ἔθετό με ἅρματα Ἀμειναδάβ.",
+        "VUL": "Nescivi : anima mea conturbavit me,/ propter quadrigas Aminadab./",
+        "SYN": "Я сошла в ореховый сад посмотреть на зелень долины, поглядеть, распустилась ли виноградная лоза, расцвели ли гранатовые яблоки?",
+        "NEO": "J’étais descendu au jardin des noyers, pour voir les herbes de la vallée, pour voir si la vigne pousse, si les grenadiers sont en fleurs.",
+        "NAB": "B I came down to the nut garden to look at the fresh growth of the valley, To see if the vines were in bloom. if the pomegranates had blossomed.",
+        "VAT_ES": "Yo bajé al jardín de los nogales, a ver los retoños del valle, a ver si brotaba la viña, si florecían los granados...",
+        "CEI": "Nel giardino dei noci io sono sceso, per vedere il verdeggiare della valle, per vedere se la vite metteva germogli, se fiorivano i melograni."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "לֹ֣א יָדַ֔עְתִּי נַפְשִׁ֣/י שָׂמַ֔תְ/נִי מַרְכְּב֖וֹת עַמִּ/י נָדִֽיב׃",
+        "LXX": "Ἐπίστρεφε, ἐπίστρεφε, ἡ Σουμανεῖτις· ἐπίστρεφε, ἐπίστρεφε, καὶ ὀφόμεθα ἐν σοί.",
+        "VUL": "<Chorus>Revertere, revertere, Sulamitis !/ revertere, revertere ut intueamur te.]",
+        "SYN": "Не знаю, как душа моя влекла меня к колесницам знатных народа моего.",
+        "NEO": "Je ne sais, mais mon amour m’a fait monter sur les chars de mon noble peuple.",
+        "NAB": "Before I knew it, my heart had made me the blessed one of my kinswomen.",
+        "VAT_ES": "Y sin que yo me diera cuenta, me encontré en la carroza con mi príncipe.",
+        "CEI": "Non lo so, ma il mio desiderio mi ha posto sui carri di Ammi-nadìb."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {}
+    }
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_147",
+  "book_key": "PSAL",
+  "sequence": 147,
+  "chapter_in": {
+    "MT": 147,
+    "VUL": 146,
+    "LXX": 146
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "הַ֥לְלוּ יָ֨הּ כִּי ט֭וֹב זַמְּרָ֣ה אֱלֹהֵ֑י/נוּ כִּֽי נָ֝עִים נָאוָ֥ה תְהִלָּֽה׃",
+        "LXX": "Ἁλληλουιά· Ἁγγαίου καὶ Ζαχαρίου. Ἐπαίνει, Ἰερουσαλήμ, τὸν κύριον, αἴνει τὸν θεόν σου, Σειών·",
+        "VUL": "Alleluja. [Lauda, Jerusalem, Dominum ;/ lauda Deum tuum, Sion./",
+        "SYN": "Хвали, Иерусалим, Господа; хвали, Сион, Бога твоего,",
+        "NEO": "Alleluia — Louez \\+w Yahweh|strong=\"H3068\"\\+w**, car il est bon de célébrer notre Dieu, car il est doux, il est bienséant de le louer.",
+        "NAB": "Hallelujah! How good to celebrate our God in song; how sweet to give fitting praise.",
+        "VAT_ES": "&iexcl;Aleluya!",
+        "CEI": "Alleluia. Lodate il Signore: è bello cantare al nostro Dio, dolce è lodarlo come a lui conviene."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בּוֹנֵ֣ה יְרוּשָׁלִַ֣ם יְהוָ֑ה נִדְחֵ֖י יִשְׂרָאֵ֣ל יְכַנֵּֽס׃",
+        "LXX": "ὅτι ἐνίσχυσεν τοὺς μοχλοὺς τῶν πυλῶν σου, εὐλόγησεν τοὺς υἱούς σου ἐν σοί.",
+        "VUL": "Quoniam confortavit seras portarum tuarum ;/ benedixit filiis tuis in te./",
+        "SYN": "ибо Он укрепляет вереи ворот твоих, благословляет сынов твоих среди тебя;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** rebâtit Jérusalem, il rassemble les dispersés d’Israël.",
+        "NAB": "The LORD rebuilds Jerusalem, gathers the dispersed of Israel,",
+        "VAT_ES": "El Señor reconstruye a Jerusalén",
+        "CEI": "Il Signore ricostruisce Gerusalemme, raduna i dispersi d'Israele."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הָ֭/רֹפֵא לִ/שְׁב֣וּרֵי לֵ֑ב וּ֝/מְחַבֵּ֗שׁ לְ/עַצְּבוֹתָֽ/ם׃",
+        "LXX": "ὁ τιθεὶς τὰ ὅριά σου εἰρήνην, καὶ στέαρ πυροῦ ἐμπιπλῶν σε·",
+        "VUL": "Qui posuit fines tuos pacem,/ et adipe frumenti satiat te./",
+        "SYN": "утверждает в пределах твоих мир; туком пшеницы насыщает тебя;",
+        "NEO": "Il guérit ceux qui ont le cœur brisé, et il panse leurs blessures.",
+        "NAB": "Heals the brokenhearted, binds up their wounds,",
+        "VAT_ES": "sana a los que están afligidos",
+        "CEI": "Risana i cuori affranti e fascia le loro ferite;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "מוֹנֶ֣ה מִ֭סְפָּר לַ/כּוֹכָבִ֑ים לְ֝/כֻלָּ֗/ם שֵׁמ֥וֹת יִקְרָֽא׃",
+        "LXX": "ὁ ἀποστέλλων τὸ λόγιον αὐτοῦ τῇ γῇ, ἕως τάχους δραμεῖται ὁ λόγος αὐτοῦ·",
+        "VUL": "Qui emittit eloquium suum terræ :/ velociter currit sermo ejus./",
+        "SYN": "посылает слово Свое на землю; быстро течет слово Его;",
+        "NEO": "Il compte le nombre des étoiles, il les appelle toutes par leur nom.",
+        "NAB": "Numbers all the stars, calls each of them by name.",
+        "VAT_ES": "El cuenta el número de las estrellas",
+        "CEI": "egli conta il numero delle stelle e chiama ciascuna per nome."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "גָּד֣וֹל אֲדוֹנֵ֣י/נוּ וְ/רַב כֹּ֑חַ לִ֝/תְבוּנָת֗/וֹ אֵ֣ין מִסְפָּֽר׃",
+        "LXX": "τοῦ διδόντος χιόνα ὡσεὶ ἔριον, ὁμίχλην ὡσεὶ σποδὸν πάσσοντος·",
+        "VUL": "Qui dat nivem sicut lanam ;/ nebulam sicut cinerem spargit./",
+        "SYN": "дает снег, как волну; сыплет иней, как пепел;",
+        "NEO": "Notre Seigneur est grand, et sa force est infinie, et son intelligence n’a pas de limites.",
+        "NAB": "Great is our Lord, vast in power, with wisdom beyond measure.",
+        "VAT_ES": "nuestro Señor es grande y poderoso,",
+        "CEI": "Grande è il Signore, onnipotente, la sua sapienza non ha confini."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "מְעוֹדֵ֣ד עֲנָוִ֣ים יְהוָ֑ה מַשְׁפִּ֖יל רְשָׁעִ֣ים עֲדֵי אָֽרֶץ׃",
+        "LXX": "βάλλοντος κρύσταλλον αὐτοῦ ὡσεὶ ψωμούς, κατὰ πρόσωπον ψύχους αὐτοῦ τίς ὑποστήσεται;",
+        "VUL": "Mittit crystallum suam sicut buccellas :/ ante faciem frigoris ejus quis sustinebit ?/",
+        "SYN": "бросает град Свой кусками; перед морозом Его кто устоит?",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** vient en aide aux humbles, il abaisse les méchants jusqu’à terre.",
+        "NAB": "The LORD sustains the poor, but casts the wicked to the ground.",
+        "VAT_ES": "El Señor eleva a los oprimidos",
+        "CEI": "Il Signore sostiene gli umili ma abbassa fino a terra gli empi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "עֱנ֣וּ לַ/יהוָ֣ה בְּ/תוֹדָ֑ה זַמְּר֖וּ לֵ/אלֹהֵ֣י/נוּ בְ/כִנּֽוֹר׃",
+        "LXX": "ἀποστελεῖ τὸν λόγον αὐτοῦ καὶ τήξει αὐτά· πνεύσει τὸ πνεῦμα αὐτοῦ, καὶ ῥυήσεται ὕδατα.",
+        "VUL": "Emittet verbum suum, et liquefaciet ea ;/ flabit spiritus ejus, et fluent aquæ./",
+        "SYN": "Пошлет слово Свое, и все растает; подует ветром Своим, и потекут воды.",
+        "NEO": "Chantez à \\+w Yahweh|strong=\"H3068\"\\+w** un cantique d’actions de grâces ; célébrez notre Dieu sur la harpe !",
+        "NAB": "Sing to the LORD with thanksgiving; with the lyre celebrate our God,",
+        "VAT_ES": "Respondan al Señor dándole gracias,",
+        "CEI": "Cantate al Signore un canto di grazie, intonate sulla cetra inni al nostro Dio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הַֽ/מְכַסֶּ֬ה שָׁמַ֨יִם בְּ/עָבִ֗ים הַ/מֵּכִ֣ין לָ/אָ֣רֶץ מָטָ֑ר הַ/מַּצְמִ֖יחַ הָרִ֣ים חָצִֽיר׃",
+        "LXX": "ἀπαγγέλλων τὸν λόγον αὐτοῦ τῷ Ἰακώβ, δικαιώματα καὶ κρίματα αὐτοῦ τῷ Ἰσραήλ.",
+        "VUL": "Qui annuntiat verbum suum Jacob,/ justitias et judicia sua Israël./",
+        "SYN": "Он возвестил слово Свое Иакову, уставы Свои и суды Свои Израилю.",
+        "NEO": "Il couvre les cieux de nuages, et prépare la pluie pour la terre ; il fait croître l’herbe sur les montagnes.",
+        "NAB": "Who covers the heavens with clouds, provides rain for the earth, makes grass sprout on the mountains,",
+        "VAT_ES": "El cubre el cielo de nubes",
+        "CEI": "Egli copre il cielo di nubi, prepara la pioggia per la terra, fa germogliare l'erba sui monti."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "נוֹתֵ֣ן לִ/בְהֵמָ֣ה לַחְמָ֑/הּ לִ/בְנֵ֥י עֹ֝רֵ֗ב אֲשֶׁ֣ר יִקְרָֽאוּ׃",
+        "LXX": "οὐκ ἐποίησεν οὕτως παντὶ ἔθνει, καὶ τὰ κρίματα αὐτοῦ οὐκ ἐδήλωσεν αὐτοῖς.",
+        "VUL": "Non fecit taliter omni nationi,/ et judicia sua non manifestavit eis./ Alleluja.]",
+        "SYN": "Не сделал Он того никакому _другому_ народу, и судов Его они не знают. Аллилуия.",
+        "NEO": "Il donne la nourriture au bétail, aux petits du corbeau qui crient vers lui.",
+        "NAB": "Who gives animals their food and ravens what they cry for.",
+        "VAT_ES": "dispensa su alimento al ganado,",
+        "CEI": "Provvede il cibo al bestiame, ai piccoli del corvo che gridano a lui."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "לֹ֤א בִ/גְבוּרַ֣ת הַ/סּ֣וּס יֶחְפָּ֑ץ לֹֽא בְ/שׁוֹקֵ֖י הָ/אִ֣ישׁ יִרְצֶֽה׃",
+        "NEO": "Ce n’est pas dans la vigueur du cheval qu’il se complaît, ni dans les jambes de l’homme qu’il met son plaisir ;",
+        "NAB": "God takes no delight in the strength of horses, no pleasure in the runner's stride.",
+        "VAT_ES": "No le agrada el vigor de los caballos",
+        "CEI": "Non fa conto del vigore del cavallo, non apprezza l'agile corsa dell'uomo."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "רוֹצֶ֣ה יְ֭הוָה אֶת יְרֵאָ֑י/ו אֶת הַֽ/מְיַחֲלִ֥ים לְ/חַסְדּֽ/וֹ׃",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** met son plaisir en ceux qui le craignent, en ceux qui espèrent en sa bonté.",
+        "NAB": "Rather the LORD takes pleasure in the devout, those who await his faithful care.",
+        "VAT_ES": "el Señor ama a los que lo temen",
+        "CEI": "Il Signore si compiace di chi lo teme, di chi spera nella sua grazia."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "שַׁבְּחִ֣י יְ֭רוּשָׁלִַם אֶת יְהוָ֑ה הַֽלְלִ֖י אֱלֹהַ֣יִ/ךְ צִיּֽוֹן׃",
+        "NEO": "Jérusalem, célèbre \\+w Yahweh|strong=\"H3068\"\\+w** ; Sion, loue ton Dieu.",
+        "NAB": "Glorify the LORD, Jerusalem; Zion, offer praise to your God,",
+        "VAT_ES": "&iexcl;Glorifica al Señor, Jerusalén,",
+        "CEI": "Alleluia. Glorifica il Signore, Gerusalemme, loda il tuo Dio, Sion."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כִּֽי חִ֭זַּק בְּרִיחֵ֣י שְׁעָרָ֑יִ/ךְ בֵּרַ֖ךְ בָּנַ֣יִ/ךְ בְּ/קִרְבֵּֽ/ךְ׃",
+        "NEO": "Car il affermit les verrous de tes portes, il bénit tes fils au milieu de toi ;",
+        "NAB": "Who has strengthened the bars of your gates, blessed your children within you,",
+        "VAT_ES": "El reforzó los cerrojos de tus puertas",
+        "CEI": "Perché ha rinforzato le sbarre delle tue porte, in mezzo a te ha benedetto i tuoi figli."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הַ/שָּׂם גְּבוּלֵ֥/ךְ שָׁל֑וֹם חֵ֥לֶב חִ֝טִּ֗ים יַשְׂבִּיעֵֽ/ךְ׃",
+        "NEO": "il assure la paix à tes frontières, il te rassasie de la fleur du froment.",
+        "NAB": "Brought peace to your borders, and filled you with finest wheat.",
+        "VAT_ES": "él asegura la paz en tus fronteras",
+        "CEI": "Egli ha messo pace nei tuoi confini e ti sazia con fior di frumento."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "הַ/שֹּׁלֵ֣חַ אִמְרָת֣/וֹ אָ֑רֶץ עַד מְ֝הֵרָ֗ה יָר֥וּץ דְּבָרֽ/וֹ׃",
+        "NEO": "Il envoie ses ordres à la terre ; sa parole court avec vitesse.",
+        "NAB": "The LORD sends a command to earth; his word runs swiftly!",
+        "VAT_ES": "Envía su mensaje a la tierra,",
+        "CEI": "Manda sulla terra la sua parola, il suo messaggio corre veloce."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "הַ/נֹּתֵ֣ן שֶׁ֣לֶג כַּ/צָּ֑מֶר כְּ֝פ֗וֹר כָּ/אֵ֥פֶר יְפַזֵּֽר׃",
+        "NEO": "Il fait tomber la neige comme de la laine, il répand le givre comme de la cendre.",
+        "NAB": "Thus snow is spread like wool, frost is scattered like ash,",
+        "VAT_ES": "reparte la nieve como lana",
+        "CEI": "Fa scendere la neve come lana, come polvere sparge la brina."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "מַשְׁלִ֣יךְ קַֽרְח֣/וֹ כְ/פִתִּ֑ים לִ/פְנֵ֥י קָ֝רָת֗/וֹ מִ֣י יַעֲמֹֽד׃",
+        "NEO": "Il jette ses glaçons par morceaux : qui peut tenir devant ses frimas ?",
+        "NAB": "Hail is dispersed like crumbs; before such cold the waters freeze.",
+        "VAT_ES": "El arroja su hielo como migas,",
+        "CEI": "Getta come briciole la grandine, di fronte al suo gelo chi resiste?"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "יִשְׁלַ֣ח דְּבָר֣/וֹ וְ/יַמְסֵ֑/ם יַשֵּׁ֥ב ר֝וּח֗/וֹ יִזְּלוּ מָֽיִם׃",
+        "NEO": "Il envoie sa parole, et il les fond ; il fait souffler son vent, et les eaux coulent.",
+        "NAB": "Again he sends his word and they melt; the wind is unleashed and the waters flow.",
+        "VAT_ES": "da una orden y se derriten,",
+        "CEI": "Manda una sua parola ed ecco si scioglie, fa soffiare il vento e scorrono le acque."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "מַגִּ֣יד דבר/ו דְּבָרָ֣י/ו לְ/יַעֲקֹ֑ב חֻקָּ֥י/ו וּ֝/מִשְׁפָּטָ֗י/ו לְ/יִשְׂרָאֵֽל׃",
+        "NEO": "C’est lui qui a révélé sa parole à Jacob, ses lois et ses ordonnances à Israël.",
+        "NAB": "The LORD also proclaims his word to Jacob, decrees and laws to Israel.",
+        "VAT_ES": "Revela su palabra a Jacob,",
+        "CEI": "Annunzia a Giacobbe la sua parola, le sue leggi e i suoi decreti a Israele."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "לֹ֘א עָ֤שָׂה כֵ֨ן לְ/כָל גּ֗וֹי וּ/מִשְׁפָּטִ֥ים בַּל יְדָע֗וּ/ם הַֽלְלוּ יָֽהּ׃",
+        "NEO": "Il n’a pas fait de même pour toutes les autres nations ; elles ne connaissent pas ses ordonnances. Alleluia !",
+        "NAB": "God has not done this for other nations; of such laws they know nothing. Hallelujah!",
+        "VAT_ES": "a ningún otro pueblo trató así",
+        "CEI": "Così non ha fatto con nessun altro popolo, non ha manifestato ad altri i suoi precetti. Alleluia."
+      }
+    }
+  }
+}

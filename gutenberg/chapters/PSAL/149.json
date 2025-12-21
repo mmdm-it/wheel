@@ -1,0 +1,177 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_149",
+  "book_key": "PSAL",
+  "sequence": 149,
+  "chapter_in": {
+    "MT": 149,
+    "VUL": 149,
+    "LXX": 149
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "הַ֥לְלוּ יָ֨הּ שִׁ֣ירוּ לַֽ֭/יהוָה שִׁ֣יר חָדָ֑שׁ תְּ֝הִלָּת֗/וֹ בִּ/קְהַ֥ל חֲסִידִֽים׃",
+        "LXX": "Ἁλληλουιά. ᾌσατε τῷ κυρίῳ ᾆσμα καινόν, ἡ αἴνεσις αὐτοῦ ἐν ἐκκλησίᾳ ὁσίων.",
+        "VUL": "Alleluja. [Cantate Domino canticum novum ;/ laus ejus in ecclesia sanctorum./",
+        "SYN": "Пойте Господу песнь новую; хвала Ему в собрании святых.",
+        "NEO": "Alleluia !",
+        "NAB": "Hallelujah! Sing to the LORD a new song, a hymn in the assembly of the faithful.",
+        "VAT_ES": "&iexcl;Aleluya!",
+        "CEI": "Alleluia. Cantate al Signore un canto nuovo; la sua lode nell'assemblea dei fedeli."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "יִשְׂמַ֣ח יִשְׂרָאֵ֣ל בְּ/עֹשָׂ֑י/ו בְּנֵֽי צִ֝יּ֗וֹן יָגִ֥ילוּ בְ/מַלְכָּֽ/ם׃",
+        "LXX": "εὐφρανθήτω Ἰσραὴλ ἐπὶ τῷ ποιήσαντι αὐτόν, καὶ υἱοὶ Σειὼν ἀγαλλιάσθωσαν ἐπὶ τῷ βασιλεῖ αὐτῶν·",
+        "VUL": "Lætetur Israël in eo qui fecit eum,/ et filii Sion exsultent in rege suo./",
+        "SYN": "Да веселится Израиль о Создателе своем; сыны Сиона да радуются о Царе своем.",
+        "NEO": "Qu’Israël se réjouisse en son Créateur, que les fils de Sion tressaillent en leur Roi !",
+        "NAB": "Let Israel be glad in their maker, the people of Zion rejoice in their king.",
+        "VAT_ES": "que Israel se alegre por su Creador",
+        "CEI": "Gioisca Israele nel suo Creatore, esultino nel loro Re i figli di Sion."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "יְהַֽלְל֣וּ שְׁמ֣/וֹ בְ/מָח֑וֹל בְּ/תֹ֥ף וְ֝/כִנּ֗וֹר יְזַמְּרוּ לֽ/וֹ׃",
+        "LXX": "αἰνεσάτωσαν τὸ ὄνομα αὐτοῦ ἐν χορῷ, ἐν τυμπάνῳ καὶ ψαλτηρίῳ ψαλάτωσαν αὐτῷ.",
+        "VUL": "Laudent nomen ejus in choro ;/ in tympano et psalterio psallant ei./",
+        "SYN": "да хвалят имя Его с ликами, на тимпане и гуслях да поют Ему,",
+        "NEO": "Qu’ils louent son nom dans leurs danses, qu’ils le chantent avec le tambourin et la harpe !",
+        "NAB": "Let them praise his name in festive dance, make music with tambourine and lyre.",
+        "VAT_ES": "Celebran su Nombre con danzas,",
+        "CEI": "Lodino il suo nome con danze, con timpani e cetre gli cantino inni."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּֽי רוֹצֶ֣ה יְהוָ֣ה בְּ/עַמּ֑/וֹ יְפָאֵ֥ר עֲ֝נָוִ֗ים בִּ/ישׁוּעָֽה׃",
+        "LXX": "ὅτι εὐδοκεῖ Κύριος ἐν λαῷ αὐτοῦ, καὶ ὑψώσει πρᾳεῖς ἐν σωτηρίᾳ.",
+        "VUL": "Quia beneplacitum est Domino in populo suo,/ et exaltabit mansuetos in salutem./",
+        "SYN": "ибо благоволит Господь к народу Своему, прославляет смиренных спасением.",
+        "NEO": "Car \\+w Yahweh|strong=\"H3068\"\\+w** se complaît dans son peuple, il glorifie les humbles en les sauvant.",
+        "NAB": "For the LORD takes delight in his people, honors the poor with victory.",
+        "VAT_ES": "porque el Señor tiene predilección por su pueblo",
+        "CEI": "Il Signore ama il suo popolo, incorona gli umili di vittoria."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "יַעְלְז֣וּ חֲסִידִ֣ים בְּ/כָב֑וֹד יְ֝רַנְּנ֗וּ עַל מִשְׁכְּבוֹתָֽ/ם׃",
+        "LXX": "καυχήσονται ὅσιοι ἐν δόξῃ, καὶ ἀγαλλιάσονται ἐπὶ τῶν κοιτῶν αὐτῶν.",
+        "VUL": "Exsultabunt sancti in gloria ;/ lætabuntur in cubilibus suis./",
+        "SYN": "Да торжествуют святые во славе, да радуются на ложах своих.",
+        "NEO": "Les fidèles triomphent dans la gloire, ils tressaillent de joie sur leur couche.",
+        "NAB": "Let the faithful rejoice in their glory, cry out for joy at their banquet,",
+        "VAT_ES": "Que los fieles se alegren por su gloria",
+        "CEI": "Esultino i fedeli nella gloria, sorgano lieti dai loro giacigli."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "רוֹמְמ֣וֹת אֵ֭ל בִּ/גְרוֹנָ֑/ם וְ/חֶ֖רֶב פִּֽיפִיּ֣וֹת בְּ/יָדָֽ/ם׃",
+        "LXX": "αἱ ὑψώσεις τοῦ θεοῦ ἐν λάρυγγι αὐτῶν, καὶ ῥομφαῖαι δίστομοι ἐν ταῖς χερσὶν αὐτῶν,",
+        "VUL": "Exaltationes Dei in gutture eorum,/ et gladii ancipites in manibus eorum :/",
+        "SYN": "Да будут славословия Богу в устах их, и меч обоюдоострый в руке их,",
+        "NEO": "Les louanges de Dieu sont dans leur bouche, et ils ont dans leurs mains un glaive à deux tranchants.",
+        "NAB": "With the praise of God in their mouths, and a two-edged sword in their hands,",
+        "VAT_ES": "Glorifiquen a Dios con sus gargantas",
+        "CEI": "Le lodi di Dio sulla loro bocca e la spada a due tagli nelle loro mani,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "לַ/עֲשׂ֣וֹת נְ֭קָמָה בַּ/גּוֹיִ֑ם תּֽ֝וֹכֵחֹ֗ת בַּל אֻמִּֽים׃",
+        "LXX": "τοῦ ποιῆσαι ἐκδίκησιν ἐν τοῖς ἔθνεσιν, ἐλεγμοὺς ἐν τοῖς λαοῖς,",
+        "VUL": "ad faciendam vindictam in nationibus,/ increpationes in populis ;/",
+        "SYN": "для того, чтобы совершать мщение над народами, наказание над племенами,",
+        "NEO": "Pour exercer la vengeance sur les nations, et porter le châtiment chez les peuples ;",
+        "NAB": "To bring retribution on the nations, punishment on the peoples,",
+        "VAT_ES": "para tomar venganza de los pueblos",
+        "CEI": "per compiere la vendetta tra i popoli e punire le genti;"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "לֶ/אְסֹ֣ר מַלְכֵי/הֶ֣ם בְּ/זִקִּ֑ים וְ֝/נִכְבְּדֵי/הֶ֗ם בְּ/כַבְלֵ֥י בַרְזֶֽל׃",
+        "LXX": "τοῦ δῆσαι τοὺς βασιλεῖς αὐτῶν ἐν πέδαις καὶ τοὺς ἐνδόξους αὐτῶν ἐν χειροπέδαις σιδηραῖς,",
+        "VUL": "ad alligandos reges eorum in compedibus,/ et nobiles eorum in manicis ferreis ;/",
+        "SYN": "заключать царей их в узы и вельмож их в оковы железные,",
+        "NEO": "pour lier leurs rois avec des chaînes, et leurs grands avec des ceps de fer ;",
+        "NAB": "To bind their kings with chains, shackle their nobles with irons,",
+        "VAT_ES": "para atar con cadenas a sus reyes,",
+        "CEI": "per stringere in catene i loro capi, i loro nobili in ceppi di ferro;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לַ/עֲשׂ֤וֹת בָּ/הֶ֨ם מִשְׁפָּ֬ט כָּת֗וּב הָדָ֣ר ה֭וּא לְ/כָל חֲסִידָ֗י/ו הַֽלְלוּ יָֽהּ׃",
+        "LXX": "τοῦ ποιῆσαι ἐν αὐτοῖς κρίμα ἔνγραπτον· δόξα αὕτη ἐστὶν πᾶσι τοῖς ὁσίοις αὐτοῦ.",
+        "VUL": "ut faciant in eis judicium conscriptum :/ gloria hæc est omnibus sanctis ejus./ Alleluja.]",
+        "SYN": "производить над ними суд писанный. Честь сия - всем святым Его. Аллилуия.",
+        "NEO": "pour exécuter contre eux l’arrêt écrit : c’est là la gloire réservée à tous ses fidèles. Alleluia !",
+        "NAB": "To execute the judgments decreed for them - such is the glory of all God's faithful. Hallelujah!",
+        "VAT_ES": "Así se les aplicará la sentencia dictada:",
+        "CEI": "per eseguire su di essi il giudizio già scritto: questa è la gloria per tutti i suoi fedeli. Alleluia."
+      }
+    }
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_002",
+  "book_key": "GENE",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְכֻלּ֛וּ הַ/שָּׁמַ֥יִם וְ/הָ/אָ֖רֶץ וְ/כָל צְבָאָֽ/ם׃",
+        "VUL": "Igitur perfecti sunt cæli et terra, et omnis ornatus eorum.",
+        "LXX": "[Καὶ συνετε]λέσθησαν [ὁ οὐρανὸς κ]αὶ ἡ γῆ καὶ πᾶς ὁ κόσμος [αὐτῶν.",
+        "NAB": "Thus the heavens and the earth and all their array were completed.",
+        "SYN": "Так совершены небо и земля и все воинство их.",
+        "NEO": "Ainsi furent achevés le ciel et la terre, et toute leur armée.",
+        "VAT_ES": "Así fueron terminados el cielo y la tierra,, y todos los seres que hay en ellos.",
+        "CEI": "Così furono portati a compimento il cielo e la terra e tutte le loro schiere."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יְכַ֤ל אֱלֹהִים֙ בַּ/יּ֣וֹם הַ/שְּׁבִיעִ֔י מְלַאכְתּ֖/וֹ אֲשֶׁ֣ר עָשָׂ֑ה וַ/יִּשְׁבֹּת֙ בַּ/יּ֣וֹם הַ/שְּׁבִיעִ֔י מִ/כָּל מְלַאכְתּ֖/וֹ אֲשֶׁ֥ר עָשָֽׂה׃",
+        "VUL": "Complevitque Deus die septimo opus suum quod fecerat : et requievit die septimo ab universo opere quod patrarat.",
+        "LXX": "κ]αὶ συνετέλεσεν ὁ θεὸς [ἐν τῇ ἡμέρᾳ] τῇ ἕκτῃ τὰ ἔργα αὐτοῦ [ἃ ἐποίησ]εν· καὶ κατέπαυσεν [τῇ ἡμ]έρᾳ τῇ ἑβδόμῃ ἀπὸ πάν[των τῶ]ν ἔργων αὐτοῦ ὧν [ἐποίησ]εν.",
+        "NAB": "Since on the seventh day God was finished with the work he had been doing, he rested on the seventh day from all the work he had undertaken.",
+        "SYN": "И совершил Бог к седьмому дню дела Свои, которые Он делал, и почил в день седьмый от всех дел Своих, которые делал.",
+        "NEO": "Et Dieu eut achevé le septième jour son œuvre qu’il avait faite, et il se reposa le septième jour de toute son œuvre qu’il avait faite.",
+        "VAT_ES": "El séptimo día, Dios concluyó la obra que había hecho, y cesó de hacer la obra que había emprendido.",
+        "CEI": "Allora Dio, nel settimo giorno portò a termine il lavoro che aveva fatto e cessò nel settimo giorno da ogni suo lavoro."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יְבָ֤רֶךְ אֱלֹהִים֙ אֶת י֣וֹם הַ/שְּׁבִיעִ֔י וַ/יְקַדֵּ֖שׁ אֹת֑/וֹ כִּ֣י ב֤/וֹ שָׁבַת֙ מִ/כָּל מְלַאכְתּ֔/וֹ אֲשֶׁר בָּרָ֥א אֱלֹהִ֖ים לַ/עֲשֽׂוֹת׃",
+        "VUL": "Et benedixit diei septimo, et sanctificavit illum, quia in ipso cessaverat ab omni opere suo quod creavit Deus ut faceret.",
+        "LXX": "καὶ ηὐλόγησεν [ὁ θεὸς τὴν] ἡμέραν τὴν ἑβδόμην καὶ ἡγίασεν αὐτήν, ὅτι ἐν αὐτῇ κατέπαυσεν ἀπὸ πάντων τῶν ἔργων αὐτοῦ ὧν ἤρξατο ὁ θεὸς ποιῆσαι.",
+        "NAB": "So God blessed the seventh day and made it holy, because on it he rested from all the work he had done in creation.",
+        "SYN": "И благословил Бог седьмой день, и освятил его, ибо в оный почил от всех дел Своих, которые Бог творил и созидал.",
+        "NEO": "Et Dieu bénit le septième jour et le sanctifia, parce qu’en ce jour-là il s’était reposé de toute l’œuvre qu’il avait créée en la faisant.",
+        "VAT_ES": "Dios bendijo el séptimo día y lo consagró, porque en él cesó de hacer la obra que había creado."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אֵ֣לֶּה תוֹלְד֧וֹת הַ/שָּׁמַ֛יִם וְ/הָ/אָ֖רֶץ בְּ/הִבָּֽרְאָ֑/ם בְּ/י֗וֹם עֲשׂ֛וֹת יְהוָ֥ה אֱלֹהִ֖ים אֶ֥רֶץ וְ/שָׁמָֽיִם׃",
+        "VUL": "Istæ sunt generationes cæli et terræ, quando creata sunt, in die quo fecit Dominus Deus cælum et terram,",
+        "LXX": "Αὕτη ἡ βίβλος γενέσεως οὐρανοῦ καὶ γῆς, ὅτε ἐγένετο· ᾗ ἡμέρᾳ ἐποίησεν Κύριος ὁ θεὸς τὸν οὐρανὸν καὶ τὴν γῆν,",
+        "NAB": "Such is the story of the heavens and the earth at their creation. At the time when the LORD God made the earth and the heavens -",
+        "SYN": "Вот происхождение неба и земли, при сотворении их, в то время, когда Господь Бог создал землю и небо,",
+        "NEO": "Voici l’histoire du ciel et de la terre quand ils furent créés, lorsque \\+w Yahweh|strong=\"H3068\"\\+w** Dieu eut fait une terre et un ciel.",
+        "VAT_ES": "Este fue el origen del cielo y de la tierra cuando fueron creados."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/כֹ֣ל שִׂ֣יחַ הַ/שָּׂדֶ֗ה טֶ֚רֶם יִֽהְיֶ֣ה בָ/אָ֔רֶץ וְ/כָל עֵ֥שֶׂב הַ/שָּׂדֶ֖ה טֶ֣רֶם יִצְמָ֑ח כִּי֩ לֹ֨א הִמְטִ֜יר יְהוָ֤ה אֱלֹהִים֙ עַל הָ/אָ֔רֶץ וְ/אָדָ֣ם אַ֔יִן לַֽ/עֲבֹ֖ד אֶת הָֽ/אֲדָמָֽה׃",
+        "VUL": "et omne virgultum agri antequam oriretur in terra, omnemque herbam regionis priusquam germinaret : non enim pluerat Dominus Deus super terram, et homo non erat qui operaretur terram :",
+        "LXX": "καὶ πᾶν χλωρὸν ἀγροῦ πρὸ τοῦ γενέσθαι ἐπὶ τῆς γῆς, καὶ πάντα χόρτον ἀγροῦ πρὸ τοῦ ἀνατεῖλαι. οὐ γὰρ ἔβρεξεν ὁ θεὸς ἐπὶ τὴν γῆν, καὶ ἄνθρωπος οὐκ ἦν ἐργάζεσθαι τὴν γῆν·",
+        "NAB": "while as yet there was no field shrub on earth and no grass of the field had sprouted, for the LORD God had sent no rain upon the earth and there was no man to till the soil,",
+        "SYN": "и всякий полевой кустарник, которого еще не было на земле, и всякую полевую траву, которая еще не росла, ибо Господь Бог не посылал дождя на землю, и не было человека для возделывания земли,",
+        "NEO": "Il n’y avait encore sur la terre aucun arbrisseau des champs, et aucune herbe des champs n’avait encore germé ; car \\+w Yahweh|strong=\"H3068\"\\+w** Dieu n’avait pas fait pleuvoir sur la terre, et il n’y avait pas d’homme pour cultiver le sol.",
+        "VAT_ES": "aún no había ningún arbusto del campo sobre la tierra ni había brotado ninguna hierba, porque el Señor Dios no había hecho llover sobre la tierra. Tampoco había ningún hombre para cultivar el suelo,",
+        "CEI": "nessun cespuglio campestre era sulla terra, nessuna erba campestre era spuntata - perché il Signore Dio non aveva fatto piovere sulla terra e nessuno lavorava il suolo"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/אֵ֖ד יַֽעֲלֶ֣ה מִן הָ/אָ֑רֶץ וְ/הִשְׁקָ֖ה אֶֽת כָּל פְּנֵֽי הָֽ/אֲדָמָֽה׃",
+        "VUL": "sed fons ascendebat e terra, irrigans universam superficiem terræ.",
+        "LXX": "πηγὴ δὲ ἀνέβαινεν ἐκ τῆς γῆς καὶ ἐπότιζεν πᾶν τὸ πρόσωπον τῆς γῆς.",
+        "NAB": "but a stream was welling up out of the earth and was watering all the surface of the ground -",
+        "SYN": "но пар поднимался с земли и орошал все лице земли.",
+        "NEO": "Mais une vapeur montait de la terre et arrosait toute la surface du sol.",
+        "VAT_ES": "pero un manantial surgía de la tierra y regaba toda la superficie del suelo.",
+        "CEI": "e faceva salire dalla terra l'acqua dei canali per irrigare tutto il suolo -;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יִּיצֶר֩ יְהוָ֨ה אֱלֹהִ֜ים אֶת הָֽ/אָדָ֗ם עָפָר֙ מִן הָ֣/אֲדָמָ֔ה וַ/יִּפַּ֥ח בְּ/אַפָּ֖י/ו נִשְׁמַ֣ת חַיִּ֑ים וַֽ/יְהִ֥י הָֽ/אָדָ֖ם לְ/נֶ֥פֶשׁ חַיָּֽה׃",
+        "VUL": "Formavit igitur Dominus Deus hominem de limo terræ, et inspiravit in faciem ejus spiraculum vitæ, et factus est homo in animam viventem.",
+        "LXX": "καὶ ἔπλασεν ὁ θεὸς τὸν ἄνθρωπον χοῦν ἀπὸ τῆς γῆς· καὶ ἐνεφύσησεν εἰς τὸ πρόσωπον αὐτοῦ πνοὴν ζωῆς, καὶ ἐγένετο ὁ ἄνθρωπος εἰς ψυχὴν ζῶσαν.",
+        "NAB": "the LORD God formed man out of the clay of the ground and blew into his nostrils the breath of life, and so man became a living being.",
+        "SYN": "И создал Господь Бог человека из праха земного, и вдунул в лице его дыхание жизни, и стал человек душею живою.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** Dieu forma l’homme de la poussière du sol, et il souffla dans ses narines un souffle de vie, et l’homme devint un être vivant.",
+        "VAT_ES": "Entonces el Señor Dios modeló al hombre con arcilla del suelo y sopló en su nariz un aliento de vida. Así el hombre se convirtió en un ser viviente.",
+        "CEI": "allora il Signore Dio plasmò l'uomo con polvere del suolo e soffiò nelle sue narici un alito di vita e l'uomo divenne un essere vivente."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּטַּ֞ע יְהוָ֧ה אֱלֹהִ֛ים גַּן בְ/עֵ֖דֶן מִ/קֶּ֑דֶם וַ/יָּ֣שֶׂם שָׁ֔ם אֶת הָֽ/אָדָ֖ם אֲשֶׁ֥ר יָצָֽר׃",
+        "VUL": "Plantaverat autem Dominus Deus paradisum voluptatis a principio, in quo posuit hominem quem formaverat.",
+        "LXX": "Καὶ ἐφύτευσεν Κύριος ὁ θεὸς παράδεισον ἐν Ἔδεμ κατὰ ἀνατολάς, καὶ ἔθετο ἐκεῖ τὸν ἄνθρωπον ὃν ἔπλασεν.",
+        "NAB": "Then the LORD God planted a garden in Eden, in the east, and he placed there the man whom he had formed.",
+        "SYN": "И насадил Господь Бог рай в Едеме на востоке, и поместил там человека, которого создал.",
+        "NEO": "Puis \\+w Yahweh|strong=\"H3068\"\\+w** Dieu planta un jardin en Eden du côté de l’Orient, et il y mit l’homme qu’il avait formé.",
+        "VAT_ES": "El Señor Dios plantó un jardín en Edén, al oriente, y puso allí al hombre que había formado.",
+        "CEI": "Poi il Signore Dio piantò un giardino in Eden, a oriente, e vi collocò l'uomo che aveva plasmato."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יַּצְמַ֞ח יְהוָ֤ה אֱלֹהִים֙ מִן הָ֣/אֲדָמָ֔ה כָּל עֵ֛ץ נֶחְמָ֥ד לְ/מַרְאֶ֖ה וְ/ט֣וֹב לְ/מַאֲכָ֑ל וְ/עֵ֤ץ הַֽ/חַיִּים֙ בְּ/ת֣וֹךְ הַ/גָּ֔ן וְ/עֵ֕ץ הַ/דַּ֖עַת ט֥וֹב וָ/רָֽע׃",
+        "VUL": "Produxitque Dominus Deus de humo omne lignum pulchrum visu, et ad vescendum suave lignum etiam vitæ in medio paradisi, lignumque scientiæ boni et mali.",
+        "LXX": "καὶ ἐξανέτειλεν ὁ θεὸς ἔτι ἐκ τῆς γῆς πᾶν ξύλον ὡραῖον εἰς ὅρασιν καὶ καλὸν εἰς βρῶσιν· καὶ τὸ ξύλον τῆς ζωῆς ἐν μέσῳ τῷ παραδείσῳ, καὶ τὸ ξύλον τοῦ εἰδέναι γνωστὸν καλοῦ καὶ πονηροῦ.",
+        "NAB": "Out of the ground the LORD God made various trees grow that were delightful to look at and good for food, with the tree of life in the middle of the garden and the tree of the knowledge of good and bad.",
+        "SYN": "И произрастил Господь Бог из земли всякое дерево, приятное на вид и хорошее для пищи, и дерево жизни посреди рая, и дерево познания добра и зла.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** Dieu fit pousser du sol toute espèce d’arbres agréables à voir et bons à manger, et l’arbre de la vie au milieu du jardin, et l’arbre de la connaissance du bien et du mal.",
+        "VAT_ES": "Y el Señor Dios hizo brotar del suelo toda clase de árboles, que eran atrayentes para la vista y apetitosos para comer; hizo brotar el árbol del conocimiento del bien y del mal.",
+        "CEI": "Il Signore Dio fece germogliare dal suolo ogni sorta di alberi graditi alla vista e buoni da mangiare, tra cui l'albero della vita in mezzo al giardino e l'albero della conoscenza del bene e del male."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/נָהָרּ֙ יֹצֵ֣א מֵ/עֵ֔דֶן לְ/הַשְׁק֖וֹת אֶת הַ/גָּ֑ן וּ/מִ/שָּׁם֙ יִפָּרֵ֔ד וְ/הָיָ֖ה לְ/אַרְבָּעָ֥ה רָאשִֽׁים׃",
+        "VUL": "Et fluvius egrediebatur de loco voluptatis ad irrigandum paradisum, qui inde dividitur in quatuor capita.",
+        "LXX": "ποταμὸς δὲ ἐκπορεύεται ἐξ Ἔδεμ ποτίζειν τὸν παράδεισον· ἐκεῖθεν ἀφορίζεται εἰς τέσσαρας ἀρχάς.",
+        "NAB": "A river rises in Eden to water the garden; beyond there it divides and becomes four branches.",
+        "SYN": "Из Едема выходила река для орошения рая; и потом разделялась на четыре реки.",
+        "NEO": "Un fleuve sortait d’Eden pour arroser le jardin, et de là il se partageait en quatre bras.",
+        "VAT_ES": "De Edén nace un río que riega el jardín, y desde allí se divide en cuatro brazos.",
+        "CEI": "Un fiume usciva da Eden per irrigare il giardino, poi di lì si divideva e formava quattro corsi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "שֵׁ֥ם הָֽ/אֶחָ֖ד פִּישׁ֑וֹן ה֣וּא הַ/סֹּבֵ֗ב אֵ֚ת כָּל אֶ֣רֶץ הַֽ/חֲוִילָ֔ה אֲשֶׁר שָׁ֖ם הַ/זָּהָֽב׃",
+        "VUL": "Nomen uni Phison : ipse est qui circuit omnem terram Hevilath, ubi nascitur aurum :",
+        "LXX": "ὄνομα τῷ ἑνὶ Φεισών· οὗτος ὁ κυκλῶν πᾶσαν τὴν γῆν Εὑειλάτ, ἐκεῖ οὗ ἐστιν τὸ χρυσίον·",
+        "NAB": "The name of the first is the Pishon; it is the one that winds through the whole land of Havilah, where there is gold.",
+        "SYN": "Имя одной Фисон: она обтекает всю землю Хавила, ту, где золото;",
+        "NEO": "Le nom du premier est Phison ; c’est celui qui entoure tout le pays d’Hévilath, où se trouve l’or.",
+        "VAT_ES": "El primero se llama Pisón: es el que recorre toda la región de Javilá, donde hay oro.",
+        "CEI": "Il primo fiume si chiama Pison: esso scorre intorno a tutto il paese di Avìla, dove c'è l'oro"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וּֽ/זֲהַ֛ב הָ/אָ֥רֶץ הַ/הִ֖וא ט֑וֹב שָׁ֥ם הַ/בְּדֹ֖לַח וְ/אֶ֥בֶן הַ/שֹּֽׁהַם׃",
+        "VUL": "et aurum terræ illius optimum est ; ibi invenitur bdellium, et lapis onychinus.",
+        "LXX": "τὸ δὲ χρυσίον τῆς γῆς ἐκείνης καλόν· καὶ ἐκεῖ ἐστιν ὁ ἄνθραξ καὶ ὁ λίθος ὁ πράσινος.",
+        "NAB": "The gold of that land is excellent; bdellium and lapis lazuli are also there.",
+        "SYN": "и золото той земли хорошее; там бдолах и камень оникс.",
+        "NEO": "Et l’or de ce pays est bon ; là aussi se trouvent le bdellium et la pierre d’onyx.",
+        "VAT_ES": "El oro de esa región es excelente, y en ella hay también bedelio y lapislázuli.",
+        "CEI": "e l'oro di quella terra è fine; qui c'è anche la resina odorosa e la pietra d'ònice."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/שֵֽׁם הַ/נָּהָ֥ר הַ/שֵּׁנִ֖י גִּיח֑וֹן ה֣וּא הַ/סּוֹבֵ֔ב אֵ֖ת כָּל אֶ֥רֶץ כּֽוּשׁ׃",
+        "VUL": "Et nomen fluvii secundi Gehon ; ipse est qui circumit omnem terram Æthiopiæ.",
+        "LXX": "καὶ ὄνομα τῷ ποταμῷ τῷ δευτέρῳ Γηών· οὗτος ὁ κυκλῶν πᾶσαν τὴν γῆν Αἰθιοπίας.",
+        "NAB": "The name of the second river is the Gihon; it is the one that winds all through the land of Cush.",
+        "SYN": "Имя второй реки Гихон [Геон]: она обтекает всю землю Куш.",
+        "NEO": "Le nom du second fleuve est Géhon ; c’est celui qui entoure toute la terre de Cousch.",
+        "VAT_ES": "El segundo río se llama Guijón: es el que recorre toda la tierra de Cus.",
+        "CEI": "Il secondo fiume si chiama Ghicon: esso scorre intorno a tutto il paese d'Etiopia."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/שֵׁ֨ם הַ/נָּהָ֤ר הַ/שְּׁלִישִׁי֙ חִדֶּ֔קֶל ה֥וּא הַֽ/הֹלֵ֖ךְ קִדְמַ֣ת אַשּׁ֑וּר וְ/הַ/נָּהָ֥ר הָֽ/רְבִיעִ֖י ה֥וּא פְרָֽת׃",
+        "VUL": "Nomen vero fluminis tertii, Tigris : ipse vadit contra Assyrios. Fluvius autem quartus, ipse est Euphrates.",
+        "LXX": "καὶ ὁ ποταμὸς ὁ τρίτος Τίγρις· οὗτος ὁ πορευόμενος κατέναντι Ἀσσυρίων. ὁ δὲ ποταμὸς ὁ τέταρτος, οὗτος Εὐφράτης.",
+        "NAB": "The name of the third river is the Tigris; it is the one that flows east of Asshur. The fourth river is the Euphrates.",
+        "SYN": "Имя третьей реки Хиддекель [Тигр]: она протекает пред Ассириею. Четвертая река Евфрат.",
+        "NEO": "Le nom du troisième est le Tigre ; c’est celui qui coule à l’orient d’Assur. Le quatrième fleuve est l’Euphrate.",
+        "VAT_ES": "El tercero se llama Tigris: es el que pasa al este de Asur. El cuarto es el Eufrates.",
+        "CEI": "Il terzo fiume si chiama Tigri: esso scorre ad oriente di Assur. Il quarto fiume è l'Eufràte."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֛ח יְהוָ֥ה אֱלֹהִ֖ים אֶת הָֽ/אָדָ֑ם וַ/יַּנִּחֵ֣/הוּ בְ/גַן עֵ֔דֶן לְ/עָבְדָ֖/הּ וּ/לְ/שָׁמְרָֽ/הּ׃",
+        "VUL": "Tulit ergo Dominus Deus hominem, et posuit eum in paradiso voluptatis, ut operaretur, et custodiret illum :",
+        "LXX": "καὶ ἔλαβεν Κύριος ὁ θεὸς τὸν ἄνθρωπον ὃν ἔπλασεν καὶ ἔθετο αὐτὸν ἐν τῷ παραδείσῳ, ἐργάζεσθαι αὐτὸν καὶ φυλάσσειν.",
+        "NAB": "The LORD God then took the man and settled him in the garden of Eden, to cultivate and care for it.",
+        "SYN": "И взял Господь Бог человека, [которого создал,] и поселил его в саду Едемском, чтобы возделывать его и хранить его.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** Dieu prit l’homme et le plaça dans le jardin d’Eden pour le cultiver et pour le garder.",
+        "VAT_ES": "El Señor Dios tomó al hombre y lo puso en el jardín de Edén, para que lo cultivara y lo cuidara.",
+        "CEI": "Il Signore Dio prese l'uomo e lo pose nel giardino di Eden, perché lo coltivasse e lo custodisse."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יְצַו֙ יְהוָ֣ה אֱלֹהִ֔ים עַל הָֽ/אָדָ֖ם לֵ/אמֹ֑ר מִ/כֹּ֥ל עֵֽץ הַ/גָּ֖ן אָכֹ֥ל תֹּאכֵֽל׃",
+        "VUL": "præcepitque ei, dicens : Ex omni ligno paradisi comede ;",
+        "LXX": "καὶ ἐνετείλατο Κύριος ὁ θεὸς τῷ Ἀδὰμ λέγων Ἀπὸ παντὸς ξύλου τοῦ ἐν τῷ παραδείσῳ βρώσει φάγῃ·",
+        "NAB": "The LORD God gave man this order: \"You are free to eat from any of the trees of the garden",
+        "SYN": "И заповедал Господь Бог человеку, говоря: от всякого дерева в саду ты будешь есть,",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** Dieu donna à l’homme cet ordre : « Tu peux manger de tous les arbres du jardin ;",
+        "VAT_ES": "Y le dio esta orden: «Puedes comer de todos los árboles que hay en el jardín,",
+        "CEI": "Il Signore Dio diede questo comando all'uomo: \"Tu potrai mangiare di tutti gli alberi del giardino,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וּ/מֵ/עֵ֗ץ הַ/דַּ֨עַת֙ ט֣וֹב וָ/רָ֔ע לֹ֥א תֹאכַ֖ל מִמֶּ֑/נּוּ כִּ֗י בְּ/י֛וֹם אֲכָלְ/ךָ֥ מִמֶּ֖/נּוּ מ֥וֹת תָּמֽוּת׃",
+        "VUL": "de ligno autem scientiæ boni et mali ne comedas : in quocumque enim die comederis ex eo, morte morieris.",
+        "LXX": "ἀπὸ δὲ τοῦ ξύλου τοῦ γινώσκειν καλὸν καὶ πονηρόν, οὐ φάγεσθε ἀπ’ αὐτοῦ· ᾗ δ’ ἂν ἡμέρᾳ φάγησθε ἀπ’ αὐτοῦ, θανάτῳ ἀποθανεῖσθε.",
+        "NAB": "except the tree of knowledge of good and bad. From that tree you shall not eat; the moment you eat from it you are surely doomed to die.\"",
+        "SYN": "а от дерева познания добра и зла не ешь от него, ибо в день, в который ты вкусишь от него, смертью умрешь.",
+        "NEO": "mais tu ne mangeras pas de l’arbre de la connaissance du bien et du mal, car le jour où tu en mangeras, tu mourras certainement. »",
+        "VAT_ES": "exceptuando únicamente el árbol del conocimiento del bien y del mal. De él no deberás comer, porque el día que lo hagas quedarás sujeto a la muerte».",
+        "CEI": "ma dell'albero della conoscenza del bene e del male non devi mangiare, perché, quando tu ne mangiassi, certamente moriresti\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ יְהוָ֣ה אֱלֹהִ֔ים לֹא ט֛וֹב הֱי֥וֹת הָֽ/אָדָ֖ם לְ/בַדּ֑/וֹ אֶֽעֱשֶׂהּ לּ֥/וֹ עֵ֖זֶר כְּ/נֶגְדּֽ/וֹ׃",
+        "VUL": "Dixit quoque Dominus Deus : Non est bonum esse hominem solum : faciamus ei adjutorium simile sibi.",
+        "LXX": "Καὶ εἶπεν Κύριος ὁ θεός Οὐ καλὸν εἶναι τὸν ἄνθρωπον μόνον· ποιήσωμεν αὐτῷ βοηθὸν κατ’ αὐτόν.",
+        "NAB": "The LORD God said: \"It is not good for the man to be alone. I will make a suitable partner for him.\"",
+        "SYN": "И сказал Господь Бог: не хорошо быть человеку одному; сотворим ему помощника, соответственного ему.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** Dieu dit : « Il n’est pas bon que l’homme soit seul ; je lui ferai une aide semblable à lui. »",
+        "VAT_ES": "Después dijo el Señor Dios: «No conviene que el hombre esté solo. Voy a hacerle una ayuda adecuada».",
+        "CEI": "Poi il Signore Dio disse: \"Non è bene che l'uomo sia solo: gli voglio fare un aiuto che gli sia simile\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יִּצֶר֩ יְהוָ֨ה אֱלֹהִ֜ים מִן הָֽ/אֲדָמָ֗ה כָּל חַיַּ֤ת הַ/שָּׂדֶה֙ וְ/אֵת֙ כָּל ע֣וֹף הַ/שָּׁמַ֔יִם וַ/יָּבֵא֙ אֶל הָ֣/אָדָ֔ם לִ/רְא֖וֹת מַה יִּקְרָא ל֑/וֹ וְ/כֹל֩ אֲשֶׁ֨ר יִקְרָא ל֧/וֹ הָֽ/אָדָ֛ם נֶ֥פֶשׁ חַיָּ֖ה ה֥וּא שְׁמֽ/וֹ׃",
+        "VUL": "Formatis igitur Dominus Deus de humo cunctis animantibus terræ, et universis volatilibus cæli, adduxit ea ad Adam, ut videret quid vocaret ea : omne enim quod vocavit Adam animæ viventis, ipsum est nomen ejus.",
+        "LXX": "καὶ ἔπλασεν ὁ θεὸς ἔτι ἐκ τῆς γῆς πάντα τὰ θηρία τοῦ ἀγροῦ καὶ πάντα τὰ πετεινὰ τοῦ οὐρανοῦ, καὶ ἤγαγεν αὐτὰ πρὸς τὸν Ἀδὰμ ἰδεῖν τί καλέσει αὐτά· καὶ πᾶν ὃ ἐὰν ἐκάλεσεν αὐτὸ Ἀδὰμ ψυχὴν ζῶσαν, τοῦτο ὄνομα αὐτοῦ.",
+        "NAB": "So the LORD God formed out of the ground various wild animals and various birds of the air, and he brought them to the man to see what he would call them; whatever the man called each of them would be its name.",
+        "SYN": "Господь Бог образовал из земли всех животных полевых и всех птиц небесных, и привел [их] к человеку, чтобы видеть, как он назовет их, и чтобы, как наречет человек всякую душу живую, так и было имя ей.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** Dieu, qui avait formé du sol tous les animaux des champs et tous les oiseaux du ciel, les fit venir vers l’homme pour voir comment il les appellerait, et pour que tout être vivant portât le nom que lui donnerait l’homme.",
+        "VAT_ES": "Entonces el Señor Dios modeló con arcilla del suelo a todos los animales de campo y a todos los pájaros del cielo, y los presentó al hombre para ver qué nombre les pondría. Porque cada ser viviente debía tener el nombre que le pusiera el hombre.",
+        "CEI": "Allora il Signore Dio plasmò dal suolo ogni sorta di bestie selvatiche e tutti gli uccelli del cielo e li condusse all'uomo, per vedere come li avrebbe chiamati: in qualunque modo l'uomo avesse chiamato ognuno degli esseri viventi, quello doveva essere il suo nome."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֨א הָֽ/אָדָ֜ם שֵׁמ֗וֹת לְ/כָל הַ/בְּהֵמָה֙ וּ/לְ/ע֣וֹף הַ/שָּׁמַ֔יִם וּ/לְ/כֹ֖ל חַיַּ֣ת הַ/שָּׂדֶ֑ה וּ/לְ/אָדָ֕ם לֹֽא מָצָ֥א עֵ֖זֶר כְּ/נֶגְדּֽ/וֹ׃",
+        "VUL": "Appellavitque Adam nominibus suis cuncta animantia, et universa volatilia cæli, et omnes bestias terræ : Adæ vero non inveniebatur adjutor similis ejus.",
+        "LXX": "καὶ ἐκάλεσεν Ἀδὰμ ὀνόματα πᾶσιν τοῖς κτήνεσιν καὶ πᾶσι τοῖς πετεινοῖς τοῦ οὐρανοῦ καὶ πᾶσι τοῖς θηρίοις τοῦ ἀγροῦ· τῷ τε Ἀδὰμ οὐχ εὑρέθη βοηθὸς ὅμοιος αὐτῷ.",
+        "NAB": "The man gave names to all the cattle, all the birds of the air, and all the wild animals; but none proved to be the suitable partner for the man.",
+        "SYN": "И нарек человек имена всем скотам и птицам небесным и всем зверям полевым; но для человека не нашлось помощника, подобного ему.",
+        "NEO": "Et l’homme donna des noms à tous les animaux domestiques, aux oiseaux du ciel et à tous les animaux des champs ; mais il ne trouva pas pour l’homme une aide semblable à lui.",
+        "VAT_ES": "El hombre puso un nombre a todos los animales domésticos, a todas las aves del cielo y a todos los animales del campo; pero entre ellos no encontró la ayuda adecuada.",
+        "CEI": "Così l'uomo impose nomi a tutto il bestiame, a tutti gli uccelli del cielo e a tutte le bestie selvatiche, ma l'uomo non trovò un aiuto che gli fosse simile."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יַּפֵּל֩ יְהוָ֨ה אֱלֹהִ֧ים תַּרְדֵּמָ֛ה עַל הָ/אָדָ֖ם וַ/יִּישָׁ֑ן וַ/יִּקַּ֗ח אַחַת֙ מִ/צַּלְעֹתָ֔י/ו וַ/יִּסְגֹּ֥ר בָּשָׂ֖ר תַּחְתֶּֽ/נָּה׃",
+        "VUL": "Immisit ergo Dominus Deus soporem in Adam : cumque obdormisset, tulit unam de costis ejus, et replevit carnem pro ea.",
+        "LXX": "καὶ ἐπέβαλεν ὁ θεὸς ἔκστασιν ἐπὶ τὸν Ἀδάμ, καὶ ὕπνωσεν· καὶ ἔλαβεν μίαν τῶν πλευρῶν αὐτοῦ καὶ ἀνεπλήρωσεν σάρκα ἀντ’ αὐτῆς.",
+        "NAB": "So the LORD God cast a deep sleep on the man, and while he was asleep, he took out one of his ribs and closed up its place with flesh.",
+        "SYN": "И навел Господь Бог на человека крепкий сон; и, когда он уснул, взял одно из ребр его, и закрыл то место плотию.",
+        "NEO": "Alors \\+w Yahweh|strong=\"H3068\"\\+w** Dieu fit tomber un profond sommeil sur l’homme, qui s’endormit, et il prit une de ses côtes et referma la chair à sa place.",
+        "VAT_ES": "Entonces el Señor Dios hizo caer sobre el hombre un profundo sueño, y cuando este se durmió, tomó una de sus costillas y cerró con carne el lugar vacío.",
+        "CEI": "Allora il Signore Dio fece scendere un torpore sull'uomo, che si addormentò; gli tolse una delle costole e rinchiuse la carne al suo posto."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּבֶן֩ יְהוָ֨ה אֱלֹהִ֧ים אֶֽת הַ/צֵּלָ֛ע אֲשֶׁר לָקַ֥ח מִן הָֽ/אָדָ֖ם לְ/אִשָּׁ֑ה וַ/יְבִאֶ֖/הָ אֶל הָֽ/אָדָֽם׃",
+        "VUL": "Et ædificavit Dominus Deus costam, quam tulerat de Adam, in mulierem : et adduxit eam ad Adam.",
+        "LXX": "καὶ ᾠκοδόμησεν Κύριος ὁ θεὸς τὴν πλευράν, ἣν ἔλαβεν ἀπὸ τοῦ Ἀδάμ, εἰς γυναῖκα· καὶ ἤγαγεν αὐτὴν πρὸς τὸν Ἀδάμ.",
+        "NAB": "The LORD God then built up into a woman the rib that he had taken from the man. When he brought her to the man,",
+        "SYN": "И создал Господь Бог из ребра, взятого у человека, жену, и привел ее к человеку.",
+        "NEO": "De la côte qu’il avait prise de l’homme, \\+w Yahweh|strong=\"H3068\"\\+w** Dieu forma une femme, et il l’amena à l’homme.",
+        "VAT_ES": "Luego, con la costilla que había sacado del hombre, el Señor Dios formó una mujer y se la presentó al hombre.",
+        "CEI": "Il Signore Dio plasmò con la costola, che aveva tolta all'uomo, una donna e la condusse all'uomo."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֮ הָֽ/אָדָם֒ זֹ֣את הַ/פַּ֗עַם עֶ֚צֶם מֵֽ/עֲצָמַ֔/י וּ/בָשָׂ֖ר מִ/בְּשָׂרִ֑/י לְ/זֹאת֙ יִקָּרֵ֣א אִשָּׁ֔ה כִּ֥י מֵ/אִ֖ישׁ לֻֽקֳחָה זֹּֽאת׃",
+        "VUL": "Dixitque Adam : Hoc nunc os ex ossibus meis, et caro de carne mea : hæc vocabitur Virago, quoniam de viro sumpta est.",
+        "LXX": "καὶ εἶπεν Ἀδάμ Τοῦτο νῦν ὀστοῦν ἐκ τῶν ὀστέων μου καὶ σὰρξ ἐκ τῆς σαρκός μου· αὕτη κληθήσεται Γυνή, ὅτι ἐκ τοῦ ἀνδρὸς αὐτῆς ἐλήμφθη αὕτη.",
+        "NAB": "the man said: \"This one, at last, is bone of my bones and flesh of my flesh; This one shall be called 'woman,' for out of 'her man' this one has been taken.\"",
+        "SYN": "И сказал человек: вот, это кость от костей моих и плоть от плоти моей; она будет называться женою, ибо взята от мужа [своего].",
+        "NEO": "Et l’homme dit : « Celle-ci cette fois est os de mes os et chair de ma chair ! Celle-ci sera appelée femme, parce qu’elle a été prise de l’homme. »",
+        "VAT_ES": "El hombre exclamó: «&iexcl;Esta sí que es hueso de mis huesos y carne de mi carne! Se llamará Mujer, porque ha sido sacada del hombre».",
+        "CEI": "Allora l'uomo disse: \"Questa volta essa è carne dalla mia carne e osso dalle mie ossa. La si chiamerà donna,perché dall'uomo è stata tolta\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "עַל כֵּן֙ יַֽעֲזָב אִ֔ישׁ אֶת אָבִ֖י/ו וְ/אֶת אִמּ֑/וֹ וְ/דָבַ֣ק בְּ/אִשְׁתּ֔/וֹ וְ/הָי֖וּ לְ/בָשָׂ֥ר אֶחָֽד׃",
+        "VUL": "Quam ob rem relinquet homo patrem suum, et matrem, et adhærebit uxori suæ : et erunt duo in carne una.",
+        "LXX": "ἕνεκεν τούτου καταλείψει ἄνθρωπος τὸν πατέρα αὐτοῦ καὶ τὴν μητέρα αὐτοῦ, καὶ ⸂⸆⸃ προσκολληθήσεται τῇ γυναικὶ αὐτοῦ· καὶ ἔσονται οἱ δύο εἰς σάρκα μίαν.",
+        "NAB": "That is why a man leaves his father and mother and clings to his wife, and the two of them become one body.",
+        "SYN": "Потому оставит человек отца своего и мать свою и прилепится к жене своей; и будут [два] одна плоть.",
+        "NEO": "C’est pourquoi l’homme quittera son père et sa mère, et s’attachera à sa femme, et ils deviendront une seule chair.",
+        "VAT_ES": "Por eso el hombre deja a su padre y a su madre y se une a su mujer, y los dos llegan a ser una sola carne.",
+        "CEI": "Per questo l'uomo abbandonerà suo padre e sua madre e si unirà a sua moglie e i due saranno una sola carne."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יִּֽהְי֤וּ שְׁנֵי/הֶם֙ עֲרוּמִּ֔ים הָֽ/אָדָ֖ם וְ/אִשְׁתּ֑/וֹ וְ/לֹ֖א יִתְבֹּשָֽׁשׁוּ׃",
+        "VUL": "Erat autem uterque nudus, Adam scilicet et uxor ejus : et non erubescebant.",
+        "NAB": "The man and his wife were both naked, yet they felt no shame.",
+        "SYN": "И были оба наги, Адам и жена его, и не стыдились.",
+        "NEO": "Ils étaient nus tous deux, l’homme et sa femme, sans en avoir honte.",
+        "VAT_ES": "Los dos, el hombre y la mujer, estaban desnudos, pero no sentían verg&uuml;enza.",
+        "CEI": "Ora tutti e due erano nudi, l'uomo e sua moglie, ma non ne provavano vergogna."
+      }
+    }
+  }
+}

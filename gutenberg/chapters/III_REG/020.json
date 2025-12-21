@@ -1,0 +1,773 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "III_REG_020",
+  "book_key": "III_REG",
+  "sequence": 20,
+  "chapter_in": {
+    "MT": 20,
+    "VUL": 20,
+    "LXX": 20
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וּ/בֶן הֲדַ֣ד מֶֽלֶךְ אֲרָ֗ם קָבַץ֙ אֶת כָּל חֵיל֔/וֹ וּ/שְׁלֹשִׁ֨ים וּ/שְׁנַ֥יִם מֶ֛לֶךְ אִתּ֖/וֹ וְ/ס֣וּס וָ/רָ֑כֶב וַ/יַּ֗עַל וַ/יָּ֨צַר֙ עַל שֹׁ֣מְר֔וֹן וַ/יִּלָּ֖חֶם בָּֽ/הּ׃",
+        "LXX": "Καὶ ἀμπελὼν εἷς ἦν τῷ Ναβουθαὶ τῷ Ἰσραηλείτῃ παρὰ τῷ ἅλῳ Ἀχαὰβ βασιλέως Σαμαρείας.",
+        "VUL": "Porro Benadad rex Syriæ congregavit omnem exercitum suum, et triginta duos reges secum, et equos, et currus : et ascendens pugnabat contra Samariam, et obsidebat eam.",
+        "SYN": "Венадад, царь Сирийский, собрал все свое войско, и с ним были тридцать два царя, и кони и колесницы, и пошел, осадил Самарию и воевал против нее.",
+        "NEO": "Benhadad, roi de Syrie, rassembla toute son armée ; il y avait avec lui trente-deux rois, des chevaux et des chars. Il monta et, ayant mis le siège devant Samarie, il l’attaqua.",
+        "NAB": "Ben-hadad, king of Aram, gathered all his forces, and accompanied by thirty-two kings with horses and chariotry, proceeded to invest and attack Samaria.",
+        "VAT_ES": "Ben Hadad, rey de Aram, reunió todo su ejército, y acompañado de treinta y dos reyes, con caballería y carros de guerra, subió a combatir contra Samaría y la sitió.",
+        "CEI": "Ben-Hadàd, re di Aram, radunò tutto il suo esercito; con lui c'erano trentadue re con cavalli e carri. Egli marciò contro Samaria per cingerla d'assedio ed espugnarla."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֧ח מַלְאָכִ֛ים אֶל אַחְאָ֥ב מֶֽלֶךְ יִשְׂרָאֵ֖ל הָ/עִֽירָ/ה׃",
+        "LXX": "καὶ ἐλάλησεν Ἀχαὰβ πρὸς Ναβουθαὶ λέγων Δός μοι τὸν ἀμπελῶνά σου καὶ ἔσται μοι εἰς κῆπον λαχάνων, ὅτι ἐγγίων οὗτος τῷ οἴκῳ μου, καὶ δώσω σοι ἀμπελῶνα ἄλλον ἀγαθὸν ὑπὲρ αὐτόν· εἰ δὲ ἀρέσκει ἐνώπιόν σου, δώσω σοι ἀργύριον ἄλλαγμα ἀμπελῶνός σου τούτου, καὶ ἔσται μοι εἰς κῆπον λαχάνων.",
+        "VUL": "Mittensque nuntios ad Achab regem Israël in civitatem,",
+        "SYN": "И послал послов к Ахаву, царю Израильскому, в город,",
+        "NEO": "Il envoya dans la ville des messagers à Achab, roi d’Israël,",
+        "NAB": "He sent couriers to Ahab, king of Israel, within the city,",
+        "VAT_ES": "Entonces envió mensajeros a la ciudad, a Ajab, rey de Israel,",
+        "CEI": "Inviò messaggeri in città ad Acab, re di Israele,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר ל֗/וֹ כֹּ֚ה אָמַ֣ר בֶּן הֲדַ֔ד כַּסְפְּ/ךָ֥ וּֽ/זְהָבְ/ךָ֖ לִֽ/י ה֑וּא וְ/נָשֶׁ֧י/ךָ וּ/בָנֶ֛י/ךָ הַ/טּוֹבִ֖ים לִ/י הֵֽם׃",
+        "LXX": "καὶ εἶπεν Ναβουθαὶ πρὸς Ἀχαάβ Μὴ γένοιτό μοι παρὰ θεοῦ μου δοῦναι κληρονομίαν πατέρων μου σοί.",
+        "VUL": "ait : Hæc dicit Benadad : Argentum tuum, et aurum tuum meum est : et uxores tuæ, et filii tui optimi, mei sunt.",
+        "SYN": "и сказал ему: так говорит Венадад: серебро твое и золото твое -- мои, и жены твои и лучшие сыновья твои -- мои.",
+        "NEO": "pour lui dire : « Ainsi dit Benhadad : Ton argent et ton or sont à moi, tes femmes et tes plus beaux enfants sont à moi. »",
+        "NAB": "and said to him, \"This is Ben-hadad's message: 'Your silver and gold are mine, and your wives and your promising sons are mine.'\"",
+        "VAT_ES": "para decirle: «Así habla Ben Hadad: Tu plata y tu oro me pertenecen, y también me pertenecen tus mujeres y tus hermosos hijos».",
+        "CEI": "per dirgli: \"Dice Ben-Hadàd: Il tuo argento e il tuo oro appartiene a me e le tue donne e i tuoi figli minori sono per me\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤עַן מֶֽלֶךְ יִשְׂרָאֵל֙ וַ/יֹּ֔אמֶר כִּ/דְבָרְ/ךָ֖ אֲדֹנִ֣/י הַ/מֶּ֑לֶךְ לְ/ךָ֥ אֲנִ֖י וְ/כָל אֲשֶׁר לִֽ/י׃",
+        "LXX": "καὶ ἐγένετο τὸ πνεῦμα Ἀχαὰβ τεταραγμένον, καὶ ἐκοιμήθη ἐπὶ τῆς κλίνης αὐτοῦ καὶ συνεκάλυψεν τὸ πρόσωπον αὐτοῦ, καὶ οὐκ ἔφαγεν ἄρτον.",
+        "VUL": "Responditque rex Israël : Juxta verbum tuum, domine mi rex, tuus sum ego, et omnia mea.",
+        "SYN": "И отвечал царь Израильский и сказал: да будет по слову твоему, господин мой царь: я и все мое -- твое.",
+        "NEO": "Le roi d’Israël répondit : « Comme tu le dis, ô roi, mon seigneur ; je suis à toi avec tout ce que j’ai. »",
+        "NAB": "The king of Israel answered, \"As you say, my lord king, I and all I have are yours.\"",
+        "VAT_ES": "El rey de Israel respondió diciendo: «&iexcl;A tus órdenes, rey, mi señor! A ti pertenecemos yo y todos mis bienes».",
+        "CEI": "Il re di Israele rispose: \"Sia come dici tu, signore re; io e quanto ho siamo tuoi\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יָּשֻׁ֨בוּ֙ הַ/מַּלְאָכִ֔ים וַ/יֹּ֣אמְר֔וּ כֹּֽה אָמַ֥ר בֶּן הֲדַ֖ד לֵ/אמֹ֑ר כִּֽי שָׁלַ֤חְתִּי אֵלֶ֨י/ךָ֙ לֵ/אמֹ֔ר כַּסְפְּ/ךָ֧ וּ/זְהָבְ/ךָ֛ וְ/נָשֶׁ֥י/ךָ וּ/בָנֶ֖י/ךָ לִ֥/י תִתֵּֽן׃",
+        "LXX": "καὶ εἰσῆλθεν Ἰεζάβελ ἡ γυνὴ αὐτοῦ πρὸς αὐτὸν καὶ ἐλάλησεν πρὸς αὐτόν Τί τὸ πνεῦμά σου τεταραγμένον, καὶ οὐκ εἶ σὺ ἐσθίων ἄρτον;",
+        "VUL": "Revertentesque nuntii, dixerunt : Hæc dicit Benadad, qui misit nos ad te : Argentum tuum, et aurum tuum, et uxores tuas, et filios tuos, dabis mihi.",
+        "SYN": "И опять пришли послы и сказали: так говорит Венадад: я послал к тебе сказать: \"серебро твое, и золото твое, и жён твоих, и сыновей твоих отдай мне\";",
+        "NEO": "Les messagers revinrent et dirent : « Ainsi dit Benhadad : Je t’ai envoyé dire : Tu me livreras ton argent et ton or, tes femmes et tes enfants.",
+        "NAB": "But the couriers came again and said, \"This is Ben-hadad's message: 'I sent you word to give me your silver and gold, your wives and your sons.",
+        "VAT_ES": "Pero los mensajeros regresaron y dijeron: «Así habla Ben Hadad: Mando a decirte que me entregues tu plata y tu oro, tus mujeres y tus hijos.",
+        "CEI": "Ma i messaggeri tornarono di nuovo e dissero: \"Dice Ben-Hadàd, il quale ci manda a te: Mi consegnerai il tuo argento, il tuo oro, le tue donne e i tuoi figli."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כִּ֣י אִם כָּ/עֵ֣ת מָחָ֗ר אֶשְׁלַ֤ח אֶת עֲבָדַ/י֙ אֵלֶ֔י/ךָ וְ/חִפְּשׂוּ֙ אֶת בֵּ֣יתְ/ךָ֔ וְ/אֵ֖ת בָּתֵּ֣י עֲבָדֶ֑י/ךָ וְ/הָיָה֙ כָּל מַחְמַ֣ד עֵינֶ֔י/ךָ יָשִׂ֥ימוּ בְ/יָדָ֖/ם וְ/לָקָֽחוּ׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτήν Ὅτι ἐλάλησα πρὸς Ναβουθαὶ τὸν Ἰσραηλείτην λέγων Δός μοι τὸν ἀμπελῶνά σου ἀργυρίου· εἰ δὲ βούλει, δώσω σοι ἀμπελῶνα ἄλλον ἀντ’ αὐτοῦ· καὶ εἶπεν Οὐ δώσω σοι κληρονομίαν πατέρων μου.",
+        "VUL": "Cras igitur hac eadem hora mittam servos meos ad te, et scrutabuntur domum tuam, et domum servorum tuorum : et omne quod eis placuerit, ponent in manibus suis, et auferent.",
+        "SYN": "поэтому я завтра, к этому времени, пришлю к тебе рабов моих, чтобы они осмотрели твой дом и домы служащих при тебе, и все дорогое для глаз твоих взяли в свои руки и унесли.",
+        "NEO": "Or quand demain, à cette heure, j’enverrai mes serviteurs chez toi, ils fouilleront ta maison et les maisons de tes serviteurs, et tout ce qui est précieux à tes yeux, ils le prendront de leurs mains et ils l’emporteront. »",
+        "NAB": "Now, however, at this time tomorrow I will send my servants to you, and they shall ransack your house and the houses of your servants. They shall seize and take away whatever they consider valuable.'\"",
+        "VAT_ES": "Así que mañana, a esta misma hora, te enviaré a mis servidores: ellos registrarán tu casa y las casas de tus súbditos: se apoderarán de todo lo que tú más quieres, y se lo llevarán».",
+        "CEI": "Domani, dunque, a quest'ora, manderò i miei servi che perquisiranno la tua casa e le case dei tuoi servi; essi prenderanno e asporteranno quanto sarà prezioso ai loro occhi\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֤א מֶֽלֶךְ יִשְׂרָאֵל֙ לְ/כָל זִקְנֵ֣י הָ/אָ֔רֶץ וַ/יֹּ֨אמֶר֙ דְּעֽוּ נָ֣א וּ/רְא֔וּ כִּ֥י רָעָ֖ה זֶ֣ה מְבַקֵּ֑שׁ כִּֽי שָׁלַ֨ח אֵלַ֜/י לְ/נָשַׁ֤/י וּ/לְ/בָנַ/י֙ וּ/לְ/כַסְפִּ֣/י וְ/לִ/זְהָבִ֔/י וְ/לֹ֥א מָנַ֖עְתִּי מִמֶּֽ/נּוּ׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτὸν Ἰεζάβελ ἡ γυνὴ αὐτοῦ Σὺ νῦν οὕτως ποιεῖς βασιλέα ἐπὶ Ἰσραήλ; ἀνάστηθι, φάγε ἄρτον καὶ σαυτοῦ γενοῦ· ἐγὼ δώσω σοι τὸν ἀμπελῶνα Ναβουθαὶ τοῦ Ἰσραηλείτου.",
+        "VUL": "Vocavit autem rex Israël omnes seniores terræ, et ait : Animadvertite, et videte quoniam insidietur nobis : misit enim ad me pro uxoribus meis, et filiis, et pro argento et auro : et non abnui.",
+        "SYN": "И созвал царь Израильский всех старейшин земли и сказал: замечайте и смотрите, он замышляет зло; когда он присылал ко мне за жёнами моими, и сыновьями моими, и серебром моим, и золотом моим, я ему не отказал.",
+        "NEO": "Le roi d’Israël convoqua tous les anciens du pays, et il dit : « Reconnaissez et voyez que cet homme veut notre malheur ; car il m’a envoyé demander mes femmes et mes enfants, mon argent et mon or, et je ne lui avais pas refusé.",
+        "NAB": "The king of Israel then summoned all the elders of the land and said: \"Understand clearly that this man wants to ruin us. When he sent to me for my wives and sons, my silver and my gold, I did not refuse him.\"",
+        "VAT_ES": "El rey convocó a los ancianos del país y les dijo: «&iexcl;Fíjense bien cómo ese hombre trata de arruinarme! Porque cuando me reclamó mis mujeres y mis hijos, mi plata y mi oro, yo no le negué nada».",
+        "CEI": "Il re di Israele convocò tutti gli anziani della regione, ai quali disse: \"Sappiate e vedete come costui ci voglia far del male. Difatti mi ha mandato a chiedere anche le mie donne e i miei figli, dopo che io non gli avevo rifiutato il mio argento e il mio oro\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֥וּ אֵלָ֛י/ו כָּל הַ/זְּקֵנִ֖ים וְ/כָל הָ/עָ֑ם אַל תִּשְׁמַ֖ע וְ/ל֥וֹא תֹאבֶֽה׃",
+        "LXX": "καὶ ἔγραψεν βιβλίον ἐπὶ τῷ ὀνόματι Ἀχαὰβ καὶ ἐσφραγίσατο τῇ σφραγῖδι αὐτοῦ, καὶ ἀπέστειλεν τὸ βιβλίον πρὸς τοὺς πρεσβυτέρους καὶ τοὺς ἐλευθέρους τοὺς κατοικοῦντας μετὰ Ναβουθαί.",
+        "VUL": "Dixeruntque omnes majores natu, et universus populus, ad eum : Non audias, neque acquiescas illi.",
+        "SYN": "И сказали ему все старейшины и весь народ: не слушай и не соглашайся.",
+        "NEO": "Tous les anciens et tout le peuple dirent à Achab : « Ne l’écoute pas et ne consens pas. »",
+        "NAB": "All the elders and all the people said to him, \"Do not listen. Do not give in.\"",
+        "VAT_ES": "Todos los ancianos y todo el pueblo le dijeron: «&iexcl;No lo escuches! &iexcl;No aceptes!».",
+        "CEI": "Tutti gli anziani e tutto il popolo dissero: \"Non ascoltarlo e non consentire!\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֜אמֶר לְ/מַלְאֲכֵ֣י בֶן הֲדַ֗ד אִמְר֞וּ לַֽ/אדֹנִ֤/י הַ/מֶּ֨לֶךְ֙ כֹּל֩ אֲשֶׁר שָׁלַ֨חְתָּ אֶל עַבְדְּ/ךָ֤ בָ/רִֽאשֹׁנָה֙ אֶעֱשֶׂ֔ה וְ/הַ/דָּבָ֣ר הַ/זֶּ֔ה לֹ֥א אוּכַ֖ל לַ/עֲשׂ֑וֹת וַ/יֵּֽלְכוּ֙ הַ/מַּלְאָכִ֔ים וַ/יְשִׁבֻ֖/הוּ דָּבָֽר׃",
+        "LXX": "καὶ ἐγέγραπτο ἐν τοῖς βιβλίοις λέγων Νηστεύσατε νηστείαν, καὶ καθίσατε τὸν Ναβουθαὶ ἐν ἀρχῇ τοῦ λαοῦ·",
+        "VUL": "Respondit itaque nuntiis Benadad : Dicite domino meo regi : Omnia propter quæ misisti ad me servum tuum in initio, faciam : hanc autem rem facere non possum.",
+        "SYN": "И сказал он послам Венадада: скажите господину моему царю: все, о чем ты присылал в первый раз к рабу твоему, я готов сделать, а этого не могу сделать. И пошли послы и отнесли ему ответ.",
+        "NEO": "Achab répondit donc aux messagers de Benhadad : Dites à mon seigneur le roi : Tout ce que tu as envoyé demander à ton serviteur la première fois, je le ferai, mais pour cette chose, je ne puis la faire. » Les messagers s’en allèrent, et lui portèrent la réponse.",
+        "NAB": "Accordingly he directed the couriers of Ben-hadad, \"Say to my lord the king, 'I will do all that you demanded of your servant the first time. But this I cannot do.'\" The couriers left and reported this.",
+        "VAT_ES": "Entonces él replicó a los mensajeros de Ben Had: «Díganle al rey, mi señor: Haré todo lo que me mandaste la primera vez; pero esto otro no lo puedo hacer». Los mensajeros se fueron y llevaron la respuesta.",
+        "CEI": "Egli disse ai messaggeri di Ben-Hadàd: \"Dite al re vostro signore: Quanto hai imposto prima al tuo servo lo farò, ma la nuova richiesta non posso soddisfarla\". I messaggeri andarono a riferire la risposta."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח אֵלָי/ו֙ בֶּן הֲדַ֔ד וַ/יֹּ֕אמֶר כֹּֽה יַעֲשׂ֥וּ/ן לִ֛/י אֱלֹהִ֖ים וְ/כֹ֣ה יוֹסִ֑פוּ אִם יִשְׂפֹּק֙ עֲפַ֣ר שֹׁמְר֔וֹן לִ/שְׁעָלִ֕ים לְ/כָל הָ/עָ֖ם אֲשֶׁ֥ר בְּ/רַגְלָֽ/י׃",
+        "LXX": "καὶ ἐνκαθίσατε δύο ἄνδρας, υἱοὺς παρανόμων.",
+        "VUL": "Reversique nuntii retulerunt ei. Qui remisit, et ait : Hæc faciant mihi dii, et hæc addant, si suffecerit pulvis Samariæ pugillis omnis populi qui sequitur me.",
+        "SYN": "И прислал к нему Венадад сказать: пусть то и то сделают мне боги, и еще больше сделают, если праха Самарийского достанет по горсти для всех людей, идущих за мною.",
+        "NEO": "Benhadad envoya dire à Achab : « Que les dieux me traitent dans toute leur rigueur, si la poussière de Samarie suffit pour remplir le creux de la main de tout le peuple qui me suit ! »",
+        "NAB": "Ben-hadad then sent him the message, \"May the gods do thus and so to me if there is enough dust in Samaria to make handfuls for all my followers.\"",
+        "VAT_ES": "Ben Hadad le mandó a decir: «Que los dioses me castiguen, si queda bastante polvo en Samaría para que cada uno de mis hombres recoja un puñado».",
+        "CEI": "Ben-Hadàd allora gli mandò a dire: \"Gli dei mi facciano questo e anche di peggio, se la polvere di Samaria basterà per riempire il pugno di coloro che mi seguono\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤עַן מֶֽלֶךְ יִשְׂרָאֵל֙ וַ/יֹּ֣אמֶר דַּבְּר֔וּ אַל יִתְהַלֵּ֥ל חֹגֵ֖ר כִּ/מְפַתֵּֽחַ׃",
+        "VUL": "Et respondens rex Israël, ait : Dicite ei : Ne glorietur, accinctus æque ut discinctus.",
+        "SYN": "И отвечал царь Израильский и сказал: скажите: пусть не хвалится подпоясывающийся, как распоясывающийся.",
+        "NEO": "Et le roi d’Israël répondit et dit : « Dites-lui : Que celui qui revêt son armure ne se glorifie pas comme celui qui la dépose ! »",
+        "NAB": "The king of Israel replied, \"Tell him, 'It is not for the man who is buckling his armor to boast as though he were taking it off.'\"",
+        "VAT_ES": "Y el rey de Israel respondió: «Díganle» &iexcl;No hay que cantar victoria antes de tiempo!».",
+        "CEI": "Il re di Israele rispose: \"Riferitegli: Chi cinge le armi non si vanti come chi le depone\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י כִּ/שְׁמֹ֨עַ֙ אֶת הַ/דָּבָ֣ר הַ/זֶּ֔ה וְ/ה֥וּא שֹׁתֶ֛ה ה֥וּא וְ/הַ/מְּלָכִ֖ים בַּ/סֻּכּ֑וֹת וַ/יֹּ֤אמֶר אֶל עֲבָדָי/ו֙ שִׂ֔ימוּ וַ/יָּשִׂ֖ימוּ עַל הָ/עִֽיר׃",
+        "VUL": "Factum est autem cum audisset Benadad verbum istud, bibebat ipse et reges in umbraculis : et ait servis suis : Circumdate civitatem. Et circumdederunt eam.",
+        "SYN": "Услышав это слово, Венадад, который пил вместе с царями в палатках, сказал рабам своим: осаждайте город. И они осадили город.",
+        "NEO": "Lorsque Benhadad entendit cette réponse, — il était à boire avec les rois sous les huttes, — il dit à ses serviteurs : « Prenez vos positions ! » Et ils prirent leurs positions contre la ville.",
+        "NAB": "Ben-hadad was drinking in the pavilions with the kings when he heard this reply. \"Prepare the assault,\" he commanded his servants; and they made ready to storm the city.",
+        "VAT_ES": "Apenas oyó esta palabra, Ben Hadad, que estaba bebiendo con los reyes en las tiendas de campaña, ordenó a sus servidores: «&iexcl;A sus puestos!». Y ellos tomaron posiciones frente a la ciudad.",
+        "CEI": "Nell'udire questa risposta - egli stava insieme con i re a bere sotto le tende - disse ai suoi ufficiali: \"Circondate la città!\". Ed essi la circondarono."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּ֣ה נָבִ֣יא אֶחָ֗ד נִגַּשׁ֮ אֶל אַחְאָ֣ב מֶֽלֶךְ יִשְׂרָאֵל֒ וַ/יֹּ֗אמֶר כֹּ֚ה אָמַ֣ר יְהוָ֔ה הְֽ/רָאִ֔יתָ אֵ֛ת כָּל הֶ/הָמ֥וֹן הַ/גָּד֖וֹל הַ/זֶּ֑ה הִנְ/נִ֨י נֹתְנ֤/וֹ בְ/יָֽדְ/ךָ֙ הַ/יּ֔וֹם וְ/יָדַעְתָּ֖ כִּֽי אֲנִ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἐκάθισαν ἐξ ἐναντίας αὐτοῦ, καὶ κατεμαρτύρησαν αὐτοῦ λέγοντες Ηὐλόγηκας θεὸν καὶ βασιλέα· καὶ ἐξήγαγον αὐτὸν ἔξω τῆς πόλεως καὶ ἐλιθοβόλησαν αὐτὸν λίθοις, καὶ ἀπέθανεν.",
+        "VUL": "Et ecce propheta unus accedens ad Achab regem Israël, ait ei : Hæc dicit Dominus : Certe vidisti omnem multitudinem hanc nimiam ? ecce ego tradam eam in manu tua hodie, ut scias quia ego sum Dominus.",
+        "SYN": "И вот, один пророк подошел к Ахаву, царю Израильскому, и сказал: так говорит Господь: видишь ли все это большое полчище? вот, Я сегодня предам его в руку твою, чтобы ты знал, что Я Господь.",
+        "NEO": "Mais voici qu’un prophète, s’approchant d’Achab, roi d’Israël, lui dit : « Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : Tu vois toute cette grande multitude ? Voici que je vais la livrer aujourd’hui entre tes mains, afin que tu saches que je suis \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "Then a prophet came up to Ahab, king of Israel and said: \"The LORD says, 'Do you see all this huge army? When I deliver it up to you today, you will know that I am the LORD.'\"",
+        "VAT_ES": "Mientras tanto, un profeta se acercó a Ajab, rey de Israel, y dijo: «Así habla el Señor: &iquest;Ves toda esa gran multitud? Hoy mismo la voy a poner en tus manos. Así sabrás que yo soy el Señor».",
+        "CEI": "Ed ecco un profeta si avvicinò ad Acab, re di Israele, per dirgli: \"Così dice il Signore: Vedi tutta questa moltitudine immensa? Ebbene oggi la metto in tuo potere; saprai che io sono il Signore\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אַחְאָב֙ בְּ/מִ֔י וַ/יֹּ֨אמֶר֙ כֹּֽה אָמַ֣ר יְהוָ֔ה בְּ/נַעֲרֵ֖י שָׂרֵ֣י הַ/מְּדִינ֑וֹת וַ/יֹּ֛אמֶר מִֽי יֶאְסֹ֥ר הַ/מִּלְחָמָ֖ה וַ/יֹּ֥אמֶר אָֽתָּה׃",
+        "LXX": "καὶ ἀπέστειλαν πρὸς Ἰεζάβελ λέγοντες Λελιθοβόληται Ναβουθαὶ καὶ τέθνηκεν.",
+        "VUL": "Et ait Achab : Per quem ? Dixitque ei : Hæc dicit Dominus : Per pedissequos principum provinciarum. Et ait : Quis incipiet præliari ? Et ille dixit : Tu.",
+        "SYN": "И сказал Ахав: чрез кого? Он сказал: так говорит Господь: чрез слуг областных начальников. И сказал [Ахав]: кто начнет сражение? Он сказал: ты.",
+        "NEO": "Achab dit : « Par qui ? » Et il répondit : « Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : Par les serviteurs des chefs des provinces. » Achab dit : « Qui engagera le combat ? » Et il répondit : « Toi. »",
+        "NAB": "But Ahab asked, \"Through whom will it be delivered up?\" He answered, \"The LORD says, 'Through the retainers of the governors of the provinces.'\" Then Ahab asked, \"Who is to attack?\" He replied, \"You are.\"",
+        "VAT_ES": "«&iquest;Por medio de los cuerpos de cadetes que están a las órdenes de los jefes de distritos». Ajab insistió: «&iquest;Y quién librará la batalla?». «Tú», respondió él.",
+        "CEI": "Acab disse: \"Per mezzo di chi?\". Quegli rispose: \"Così dice il Signore: Per mezzo dei giovani dei capi delle province\". Domandò: \"Chi attaccherà la battaglia?\". Rispose: \"Tu!\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּפְקֹ֗ד אֶֽת נַעֲרֵי֙ שָׂרֵ֣י הַ/מְּדִינ֔וֹת וַ/יִּהְי֕וּ מָאתַ֖יִם שְׁנַ֣יִם וּ/שְׁלֹשִׁ֑ים וְ/אַחֲרֵי/הֶ֗ם פָּקַ֧ד אֶת כָּל הָ/עָ֛ם כָּל בְּנֵ֥י יִשְׂרָאֵ֖ל שִׁבְעַ֥ת אֲלָפִֽים׃",
+        "LXX": "καὶ ἐγένετο ὡς ἤκουσεν Ἰεζάβελ, καὶ εἶπεν πρὸς Ἀχαάβ Ἀνάστα, κληρονόμει τὸν ἀμπελῶνα Ναβουθαὶ τοῦ Ἰσραηλείτου ὃς οὐκ ἔδωκέν σοι ἀργυρίου, ὅτι οὐκ ἔστιν Ναβουθαὶ ζῶν, ὅτι τέθνηκεν.",
+        "VUL": "Recensuit ergo pueros principum provinciarum, et reperit numerum ducentorum triginta duorum : et recensuit post eos populum, omnes filios Israël, septem millia.",
+        "SYN": "[Ахав] счел слуг областных начальников, и нашлось их двести тридцать два; после них счел весь народ, всех сынов Израилевых, семь тысяч.",
+        "NEO": "Alors Achab passa en revue les serviteurs des chefs des provinces, et il s’en trouva deux cent trente-deux ; après eux, il passa en revue tout le peuple, tous les enfants d’Israël : ils étaient sept mille.",
+        "NAB": "So Ahab called up the retainers of the governors of the provinces, two hundred thirty-two of them. Behind them he mustered all the Israelite soldiery, who numbered seven thousand.",
+        "VAT_ES": "Ajab pasó revista a los cadetes de los jefes de distritos, y eran doscientos treinta y dos. A continuación revistó a toda la tropa, a todos los israelitas, y sumaban siete mil.",
+        "CEI": "Acab ispezionò i giovani dei capi delle province; erano duecentotrentadue. Dopo di loro ispezionò tutto il popolo, tutti gli Israeliti: erano settemila."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֵּצְא֖וּ בַּֽ/צָּהֳרָ֑יִם וּ/בֶן הֲדַד֩ שֹׁתֶ֨ה שִׁכּ֜וֹר בַּ/סֻּכּ֗וֹת ה֧וּא וְ/הַ/מְּלָכִ֛ים שְׁלֹשִֽׁים וּ/שְׁנַ֥יִם מֶ֖לֶךְ עֹזֵ֥ר אֹתֽ/וֹ׃",
+        "LXX": "καὶ ἐγένετο ὡς ἤκουσεν Ἀχαὰβ ὅτι τέθνηκεν Ναβουθαὶ ὁ Ἰσραηλείτης, καὶ διέρρηξεν τὰ ἱμάτια ἑαυτοῦ καὶ περιεβάλετο σάκκον· καὶ ἐγένετο μετὰ ταῦτα καὶ ἀνέστη καὶ κατέβη Ἀχαὰβ εἰς τὸν ἀμπελῶνα Ναβουθαὶ τοῦ Ἰσραηλείτου κληρονομῆσαι αὐτόν.",
+        "VUL": "Et egressi sunt meridie. Benadad autem bibebat temulentus in umbraculo suo, et reges triginta duo cum eo, qui ad auxilium ejus venerant.",
+        "SYN": "И они выступили в полдень. Венадад же напился допьяна в палатках вместе с царями, с тридцатью двумя царями, помогавшими ему.",
+        "NEO": "Ils firent une sortie à midi, pendant que Benhadad buvait et s’enivrait sous les huttes, lui et les trente-deux rois, ses auxiliaires.",
+        "NAB": "They marched out at noon, while Ben-hadad was drinking heavily in the pavilions with the thirty-two kings who were his allies.",
+        "VAT_ES": "Al mediodía comenzaron a salir, mientras Ben Hadad se embriagaba en las tiendas de campaña, junto con los treinta y dos reyes aliados.",
+        "CEI": "A mezzogiorno fecero una sortita. Ben-Hadàd stava bevendo sotto le tende insieme con i trentadue re suoi alleati."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֵּצְא֗וּ נַעֲרֵ֛י שָׂרֵ֥י הַ/מְּדִינ֖וֹת בָּ/רִֽאשֹׁנָ֑ה וַ/יִּשְׁלַ֣ח בֶּן הֲדַ֗ד וַ/יַּגִּ֤ידוּ ל/וֹ֙ לֵ/אמֹ֔ר אֲנָשִׁ֕ים יָצְא֖וּ מִ/שֹּׁמְרֽוֹן׃",
+        "LXX": "Καὶ εἶπεν Κύριος πρὸς Ἠλειοὺ τὸν Θεσβείτην λέγων",
+        "VUL": "Egressi sunt autem pueri principum provinciarum in prima fronte. Misit itaque Benadad : qui nuntiaverunt ei, dicentes : Viri egressi sunt de Samaria.",
+        "SYN": "И выступили прежде слуги областных начальников. И послал Венадад, и донесли ему, что люди вышли из Самарии.",
+        "NEO": "Les serviteurs des chefs des provinces étaient sortis les premiers. Benhadad envoya aux informations, et on lui fit ce rapport : « Des hommes sont sortis de Samarie. »",
+        "NAB": "When the retainers of the governors of the provinces marched out first, Ben-hadad received word that some men had marched out of Samaria.",
+        "VAT_ES": "Los cadetes de los jefes de distritos salieron en primer lugar. Entonces le avisaron a Ben Hadad: «Unos hombres han salido de Samaría».",
+        "CEI": "Per primi uscirono i giovani dei capi delle province. Fu mandato ad avvertire Ben-Hadàd: \"Alcuni uomini sono usciti da Samaria!\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֛אמֶר אִם לְ/שָׁל֥וֹם יָצָ֖אוּ תִּפְשׂ֣וּ/ם חַיִּ֑ים וְ/אִ֧ם לְ/מִלְחָמָ֛ה יָצָ֖אוּ חַיִּ֥ים תִּפְשֽׂוּ/ם׃",
+        "LXX": "Ἀνάστηθι καὶ κατάβηθι εἰς ἀπαντὴν Ἀχαὰβ βασιλέως Ἰσραὴλ τοῦ ἐν Σαμαρείᾳ, ὅτι οὗτος ἐν ἀμπελῶνι Ναβουθαί, ὅτι καταβέβηκεν ἐκεῖ κληρονομῆσαι αὐτόν.",
+        "VUL": "Et ille ait : Sive pro pace veniunt, apprehendite eos vivos : sive ut prælientur, vivos eos capite.",
+        "SYN": "Он сказал: если за миром вышли они, то схватите их живыми, и если на войну вышли, также схватите их живыми.",
+        "NEO": "Il dit : « S’ils sortent pour la paix, prenez-les vivants ; s’ils sortent pour le combat, prenez-les vivants. »",
+        "NAB": "He answered, \"Whether they have come out for peace or for war, in any case take them alive.\"",
+        "VAT_ES": "El ordenó: «Si salieron en son de paz, captúrenlos vivos, y si salieron en plan de guerra, también captúrenlos vivos».",
+        "CEI": "Quegli disse: \"Se sono usciti con intenzioni pacifiche, catturateli vivi; se sono usciti per combattere, catturateli ugualmente vivi\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨לֶּה֙ יָצְא֣וּ מִן הָ/עִ֔יר נַעֲרֵ֖י שָׂרֵ֣י הַ/מְּדִינ֑וֹת וְ/הַ/חַ֖יִל אֲשֶׁ֥ר אַחֲרֵי/הֶֽם׃",
+        "LXX": "καὶ λαλήσεις πρὸς αὐτὸν λέγων Τάδε λέγει Κύριος Ὡς σὺ ἐφόνευσας καὶ ἐκληρονόμησας, διὰ τοῦτο τάδε λέγει Κύριος Ἐν παντὶ τόπῳ ᾧ ἔλιξαν αἱ ὕες καὶ οἱ κύνες τὸ αἷμα Ναβουθαί, ἐκεῖ λίξουσιν οἱ κύνες τὸ αἷμά σου, καὶ αἱ πόρναι λούσονται ἐν τῷ αἵματί σου.",
+        "VUL": "Egressi sunt ergo pueri principum provinciarum, ac reliquus exercitus sequebatur :",
+        "SYN": "Вышли из города слуги областных начальников, и войско за ними.",
+        "NEO": "Lorsque les serviteurs des chefs des provinces, ainsi que l’armée qui venait après eux, furent sortis de la ville,",
+        "NAB": "But when these had come out of the city - the soldiers of the governors of the provinces with the army following them -",
+        "VAT_ES": "Una vez que salieron de la ciudad los cadetes de los jefes de distritos, con el ejército detrás de ellos,",
+        "CEI": "Usciti dunque quelli dalla città, cioè i giovani dei capi delle province e l'esercito che li seguiva,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יַּכּוּ֙ אִ֣ישׁ אִישׁ֔/וֹ וַ/יָּנֻ֣סוּ אֲרָ֔ם וַֽ/יִּרְדְּפֵ֖/ם יִשְׂרָאֵ֑ל וַ/יִּמָּלֵ֗ט בֶּן הֲדַד֙ מֶ֣לֶךְ אֲרָ֔ם עַל ס֖וּס וּ/פָרָשִֽׁים׃",
+        "LXX": "καὶ εἶπεν Ἀχαὰβ πρὸς Ἠλειού Εἰ εὕρηκάς με, ὁ ἐχθρός μου; καὶ εἶπεν Εὕρηκα, διότι μάτην πέπρασαι ποιῆσαι τὸ πονηρὸν ἐνώπιον Κυρίου, παροργίσαι αὐτόν.",
+        "VUL": "et percussit unusquisque virum qui contra se veniebat : fugeruntque Syri, et persecutus est eos Israël. Fugit quoque Benadad rex Syriæ in equo cum equitibus suis.",
+        "SYN": "И поражал каждый противника своего; и побежали Сирияне, а Израильтяне погнались за ними. Венадад же, царь Сирийский, спасся на коне с всадниками.",
+        "NEO": "ils frappèrent chacun son homme, et les Syriens prirent la fuite. Israël les poursuivit. Benhadad, roi de Syrie, se sauva sur un cheval, avec des cavaliers.",
+        "NAB": "each of them struck down his man. The Arameans fled with Israel pursuing them, while Ben-hadad, king of Aram, escaped on a chariot steed.",
+        "VAT_ES": "cada uno mató al que se le puso delante. Los arameos huyeron, perseguidos por los israelitas. Ben Hadad, rey de Aram, se salvó a caballo con algunos jinetes.",
+        "CEI": "ognuno di loro uccise chi gli si fece davanti. Gli Aramei fuggirono, inseguiti da Israele. Ben-Hadàd, re di Aram, scampò a cavallo insieme con alcuni cavalieri."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵא֙ מֶ֣לֶךְ יִשְׂרָאֵ֔ל וַ/יַּ֥ךְ אֶת הַ/סּ֖וּס וְ/אֶת הָ/רָ֑כֶב וְ/הִכָּ֥ה בַ/אֲרָ֖ם מַכָּ֥ה גְדוֹלָֽה׃",
+        "LXX": "ἰδοὺ ἐγὼ ἐπάγω ἐπὶ σὲ κακά, καὶ ἐκκαύσω ὀπίσω σου καὶ ἐξολεθρεύσω τοῦ Ἀχαὰβ οὐροῦντα πρὸς τοῖχον καὶ συνεχόμενον καὶ ἐνκαταλελειμμένον ἐν Ἰσραήλ·",
+        "VUL": "Necnon egressus rex Israël percussit equos et currus, et percussit Syriam plaga magna.",
+        "SYN": "И вышел царь Израильский, и взял коней и колесниц, и произвел большое поражение у Сириян.",
+        "NEO": "Le roi d’Israël sortit, frappa les chevaux et les chars, et fit éprouver aux Syriens une grande défaite.",
+        "NAB": "The king of Israel went out, took the horses and chariots, and inflicted a severe defeat on Aram.",
+        "VAT_ES": "Entonces salió el rey de Israel y se apoderó de los caballos y los carros, infligiendo a Aram una gran derrota.",
+        "CEI": "Uscì quindi il re di Israele, che si impadronì dei cavalli e dei carri e inflisse ad Aram una grande sconfitta."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּגַּ֤שׁ הַ/נָּבִיא֙ אֶל מֶ֣לֶךְ יִשְׂרָאֵ֔ל וַ/יֹּ֤אמֶר ל/וֹ֙ לֵ֣ךְ הִתְחַזַּ֔ק וְ/דַ֥ע וּ/רְאֵ֖ה אֵ֣ת אֲשֶֽׁר תַּעֲשֶׂ֑ה כִּ֚י לִ/תְשׁוּבַ֣ת הַ/שָּׁנָ֔ה מֶ֥לֶךְ אֲרָ֖ם עֹלֶ֥ה עָלֶֽי/ךָ׃",
+        "LXX": "καὶ δώσω τὸν οἶκόν σου ὡς τὸν οἶκον Ἰεροβοὰμ υἱοῦ Ναβὰθ καὶ ὡς τὸν οἶκον Βαασὰ υἱοῦ Ἀχειά, περὶ τῶν παροργισμάτων ὧν παρώργισας καὶ ἐξήμαρτες τὸν Ἰσραὴλ.",
+        "VUL": "Accedens autem propheta ad regem Israël, dixit ei : Vade, et confortare, et scito, et vide quid facias : sequenti enim anno rex Syriæ ascendet contra te.",
+        "SYN": "И подошел пророк к царю Израильскому и сказал ему: пойди, укрепись, и знай и смотри, что тебе делать, ибо по прошествии года царь Сирийский опять пойдет против тебя.",
+        "NEO": "Alors le prophète s’approcha du roi d’Israël et lui dit : « Va, fortifie-toi, examine et vois ce que tu as à faire ; car, au retour de l’année, le roi de Syrie montera contre toi. »",
+        "NAB": "Then the prophet went up to the king of Israel and said to him: \"Go, regroup your forces. Mark well what you do, for at the beginning of the year the king of Aram will attack you.\"",
+        "VAT_ES": "El profeta se acercó al rey de Israel y le dijo: «Refuerza tu ejército y piensa bien lo que vas a hacer, porque el año que viene el rey de Aram volverá a subir contra ti».",
+        "CEI": "Allora il profeta si avvicinò al re di Israele e gli disse: \"Su, sii forte; sappi e vedi quanto dovrai fare, perché l'anno prossimo il re di Aram muoverà contro di te\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/עַבְדֵ֨י מֶֽלֶךְ אֲרָ֜ם אָמְר֣וּ אֵלָ֗י/ו אֱלֹהֵ֤י הָרִים֙ אֱלֹ֣הֵי/הֶ֔ם עַל כֵּ֖ן חָזְק֣וּ מִמֶּ֑/נּוּ וְ/אוּלָ֗ם נִלָּחֵ֤ם אִתָּ/ם֙ בַּ/מִּישׁ֔וֹר אִם לֹ֥א נֶחֱזַ֖ק מֵ/הֶֽם׃",
+        "LXX": "καὶ τῇ Ἰεζάβελ ἐλάλησεν Κύριος λέγων Οἱ κύνες καταφάγονται αὐτὴν ἐν τῷ προτειχίσματι τοῦ Ἰσραήλ.",
+        "VUL": "Servi vero regis Syriæ dixerunt ei : Dii montium sunt dii eorum, ideo superaverunt nos : sed melius est ut pugnemus contra eos in campestribus, et obtinebimus eos.",
+        "SYN": "Слуги царя Сирийского сказали ему: Бог их есть Бог гор, [а не Бог долин,] поэтому они одолели нас; если же мы сразимся с ними на равнине, то верно одолеем их.",
+        "NEO": "Les serviteurs du roi de Syrie lui dirent : « Leurs dieux sont des dieux de montagnes ; c’est pourquoi ils ont été plus forts que nous ; mais combattons-les dans la plaine, et sûrement nous serons plus forts qu’eux.",
+        "NAB": "On the other hand, the servants of the king of Aram said to him: \"Their gods are gods of mountains. That is why they defeated us. But if we fight them on level ground, we shall be sure to defeat them.",
+        "VAT_ES": "Por su parte, los servidores del rey de Aram dijeron a este: «El Dios de los israelitas es un Dios de las montañas; por eso nos han vencido. Pero luchemos contra ellos en la llanura, y seguramente los venceremos.",
+        "CEI": "Ma i servi del re di Aram dissero a lui: \"Il loro Dio è un Dio dei monti; per questo ci sono stati superiori; forse se li attaccassimo in pianura, saremmo superiori a loro."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/דָּבָ֥ר הַ/זֶּ֖ה עֲשֵׂ֑ה הָסֵ֤ר הַ/מְּלָכִים֙ אִ֣ישׁ מִ/מְּקֹמ֔/וֹ וְ/שִׂ֥ים פַּח֖וֹת תַּחְתֵּי/הֶֽם׃",
+        "LXX": "τὸν τεθνηκότα τοῦ Ἀχαὰβ ἐν τῇ πόλει φάγονται οἱ κύνες, καὶ τὸν τεθνηκότα αὐτοῦ ἐν τῷ πεδίῳ φάγονται τὰ πετεινὰ τοῦ οὐρανοῦ.",
+        "VUL": "Tu ergo verbum hoc fac : amove reges singulos ab exercitu tuo, et pone principes pro eis :",
+        "SYN": "Итак вот что сделай: удали царей, каждого с места его, и вместо них поставь областеначальников;",
+        "NEO": "Fais encore ceci : ôte chacun des rois de son poste, et mets des chefs à leur place,",
+        "NAB": "This is what you must do: Take the kings from their posts and put prefects in their places.",
+        "VAT_ES": "Actúa de esta manera: destituye a cada uno de esos reyes y reemplázalos por gobernadores.",
+        "CEI": "Eseguisci questo progetto: ritira i re, ognuno dal suo luogo, e sostituiscili con governatori."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֣ה תִֽמְנֶה לְ/ךָ֣ חַ֡יִל כַּ/חַיִל֩ הַ/נֹּפֵ֨ל מֵ/אוֹתָ֜/ךְ וְ/ס֣וּס כַּ/סּ֣וּס וְ/רֶ֣כֶב כָּ/רֶ֗כֶב וְ/נִֽלָּחֲמָ֤ה אוֹתָ/ם֙ בַּ/מִּישׁ֔וֹר אִם לֹ֥א נֶחֱזַ֖ק מֵ/הֶ֑ם וַ/יִּשְׁמַ֥ע לְ/קֹלָ֖/ם וַ/יַּ֥עַשׂ כֵּֽן׃",
+        "LXX": "πλὴν ματαίως Ἀχαάβ, ὡς ἐπράθη ποιῆσαι τὸ πονηρὸν ἐνώπιον Κυρίου, ὡς μετέθηκεν αὐτὸν Ἰεζάβελ ἡ γυνὴ αὐτοῦ·",
+        "VUL": "et instaura numerum militum qui ceciderunt de tuis, et equos secundum equos pristinos, et currus secundum currus quos ante habuisti : et pugnabimus contra eos in campestribus, et videbis quod obtinebimus eos. Credidit consilio eorum, et fecit ita.",
+        "SYN": "и набери себе войска столько, сколько пало у тебя, и коней, сколько было коней, и колесниц, сколько было колесниц; и сразимся с ними на равнине, и тогда верно одолеем их. И послушался он голоса их и сделал так.",
+        "NEO": "et forme-toi une armée égale à celle que tu as perdue, avec autant de chevaux et autant de chariots. Nous les combattrons alors dans la plaine, et sûrement nous serons plus forts qu’eux. » Il écouta leur parole et fit ainsi.",
+        "NAB": "Mobilize an army as large as the army that has deserted you, horse for horse, chariot for chariot. Let us fight them on level ground, and we shall surely defeat them.\" He took their advice and did this.",
+        "VAT_ES": "Recluta además un ejército tan numeroso como el que perdiste, con otros tantos caballos y carros. Luego lucharemos contra ellos en la llanura, y seguramente los venceremos». El rey escuchó su parecer y procedió así.",
+        "CEI": "Tu prepara un esercito come quello che hai perduto: cavalli come quei cavalli e carri come quei carri; quindi li attaccheremo in pianura e senza dubbio li batteremo\". Egli ascoltò la loro proposta e agì in tal modo."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ לִ/תְשׁוּבַ֣ת הַ/שָּׁנָ֔ה וַ/יִּפְקֹ֥ד בֶּן הֲדַ֖ד אֶת אֲרָ֑ם וַ/יַּ֣עַל אֲפֵ֔קָ/ה לַ/מִּלְחָמָ֖ה עִם יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐβδελύχθη σφόδρα πορεύεσθαι ὀπίσω τῶν βδελυγμάτων κατὰ πάντα ἃ ἐποίησεν ὁ Ἀμορραῖος, ὃν ἐξωλέθρευσεν Κύριος ἀπὸ προσώπου υἱῶν Ἰσραήλ.",
+        "VUL": "Igitur postquam annus transierat, recensuit Benadad Syros, et ascendit in Aphec ut pugnaret contra Israël.",
+        "SYN": "По прошествии года Венадад собрал Сириян и выступил к Афеку, чтобы сразиться с Израилем.",
+        "NEO": "Au retour de l’année, Benhadad passa les Syriens en revue, et monta vers Aphec pour combattre Israël.",
+        "NAB": "At the beginning of the year, Ben-hadad mobilized Aram and went up to Aphek to fight against Israel.",
+        "VAT_ES": "Al año siguiente, Ben Hadad pasó revista a los arameos y subió a Afec para librar batalla contra Israel.",
+        "CEI": "L'anno dopo, Ben-Hadàd ispezionò gli Aramei, quindi andò ad Afèk per attaccare gli Israeliti."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י יִשְׂרָאֵ֗ל הָתְפָּקְדוּ֙ וְ/כָלְכְּל֔וּ וַ/יֵּלְכ֖וּ לִ/קְרָאתָ֑/ם וַ/יַּחֲנ֨וּ בְנֵֽי יִשְׂרָאֵ֜ל נֶגְדָּ֗/ם כִּ/שְׁנֵי֙ חֲשִׂפֵ֣י עִזִּ֔ים וַ/אֲרָ֖ם מִלְא֥וּ אֶת הָ/אָֽרֶץ׃",
+        "LXX": "καὶ ὑπὲρ τοῦ λόγου ὡς κατενύγη Ἀχαὰβ ἀπὸ προσώπου τοῦ κυρίου, καὶ ἐπορεύετο κλαίων καὶ διέρρηξεν τὸν χιτῶνα αὐτοῦ καὶ ἐζώσατο σάκκον ἐπὶ τὸ σῶμα αὐτοῦ καὶ ἐνήστευσεν· καὶ περιεβάλετο σάκκον ἐν τῇ ἡμέρᾳ ᾗ ἐπάταξεν Ναβουθαὶ τὸν Ἰσραηλείτην, καὶ ἐπορεύθη.",
+        "VUL": "Porro filii Israël recensiti sunt, et acceptis cibariis profecti ex adverso, castraque metati sunt contra eos, quasi duo parvi greges caprarum : Syri autem repleverunt terram.",
+        "SYN": "Собраны были и сыны Израилевы и, взяв продовольствие, пошли навстречу им. И расположились сыны Израилевы станом пред ними, как бы два небольшие стада коз, а Сирияне наполнили землю.",
+        "NEO": "Les enfants d’Israël furent aussi passés en revue ; ils reçurent des vivres et ils s’avancèrent à la rencontre des Syriens. Les enfants d’Israël campèrent vis-à-vis d’eux, semblables à deux petits troupeaux de chèvres, tandis que les Syriens remplissaient le pays.",
+        "NAB": "The Israelites, too, were called to arms and supplied with provisions; then they went out to engage the foe. The Israelites, encamped opposite them, seemed like a couple of small flocks of goats, while Aram covered the countryside.",
+        "VAT_ES": "También los israelitas fueron revistados y abastecidos de víveres, y partieron a su encuentro. Los israelitas acamparon frente a ellos, como dos rebaños de cabras, mientras que los arameos llenaban el país.",
+        "CEI": "Gli Israeliti, organizzati e approvvigionati, mossero loro incontro, accampandosi di fronte; sembravano due greggi di capre, mentre gli Aramei inondavano il paese."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יִּגַּ֞שׁ אִ֣ישׁ הָ/אֱלֹהִ֗ים וַ/יֹּאמֶר֮ אֶל מֶ֣לֶךְ יִשְׂרָאֵל֒ וַ/יֹּ֜אמֶר כֹּֽה אָמַ֣ר יְהוָ֗ה יַ֠עַן אֲשֶׁ֨ר אָמְר֤וּ אֲרָם֙ אֱלֹהֵ֤י הָרִים֙ יְהוָ֔ה וְ/לֹֽא אֱלֹהֵ֥י עֲמָקִ֖ים ה֑וּא וְ֠/נָתַתִּי אֶת כָּל הֶ/הָמ֨וֹן הַ/גָּ֤דוֹל הַ/זֶּה֙ בְּ/יָדֶ֔/ךָ וִֽ/ידַעְתֶּ֖ם כִּֽי אֲנִ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἐγένετο ῥῆμα Κυρίου ἐν χειρὶ δούλου αὐτοῦ Ἠλειοὺ περὶ Ἀχαάβ, καὶ εἶπεν Κύριος",
+        "VUL": "(Et accedens unus vir Dei, dixit ad regem Israël : Hæc dicit Dominus : Quia dixerunt Syri : Deus montium est Dominus, et non est Deus vallium : dabo omnem multitudinem hanc grandem in manu tua, et scietis quia ego sum Dominus.)",
+        "SYN": "И подошел человек Божий, и сказал царю Израильскому: так говорит Господь: за то, что Сирияне говорят: \"Господь есть Бог гор, а не Бог долин\", Я все это большое полчище предам в руку твою, чтобы вы знали, что Я -- Господь.",
+        "NEO": "Un homme de Dieu s’approcha et dit au roi d’Israël : « Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : Parce que les Syriens ont dit : \\+w Yahweh|strong=\"H3068\"\\+w** est un dieu des montagnes, et non un dieu des vallées, je livrerai entre tes mains toute cette grande multitude, et vous saurez que je suis \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "A man of God came up and said to the king of Israel: \"The LORD says, 'Because Aram has said the LORD is a god of mountains, not a god of plains, I will deliver up to you all this large army, that you may know I am the LORD.'\"",
+        "VAT_ES": "El hombre de Dios se acercó y dijo al rey de Israel: «Así habla el Señor: Por haber dicho Aram: «El Señor es un Dios de las montañas y no de las llanuras», yo pondré en tus manos esta gran multitud. Así ustedes sabrán que yo soy el Señor».",
+        "CEI": "Un uomo di Dio si avvicinò al re d'Israele e gli disse: \"Così dice il Signore: Poiché gli Aramei hanno affermato: Il Signore è Dio dei monti e non Dio delle valli, io metterò in tuo potere tutta questa moltitudine immensa; così saprai che io sono il Signore\"."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַֽ/יַּחֲנ֧וּ אֵ֦לֶּה נֹ֥כַח אֵ֖לֶּה שִׁבְעַ֣ת יָמִ֑ים וַ/יְהִ֣י בַּ/יּ֣וֹם הַ/שְּׁבִיעִ֗י וַ/תִּקְרַב֙ הַ/מִּלְחָמָ֔ה וַ/יַּכּ֨וּ בְנֵֽי יִשְׂרָאֵ֧ל אֶת אֲרָ֛ם מֵאָה אֶ֥לֶף רַגְלִ֖י בְּ/י֥וֹם אֶחָֽד׃",
+        "LXX": "Ἑώρακας ὡς κατενύγη Ἀχαὰβ ἀπὸ προσώπου μου; οὐκ ἐπάξω τὴν κακίαν ἐν ταῖς ἡμέραις αὐτοῦ· καὶ ἐν ταῖς ἡμέραις υἱοῦ αὐτοῦ ἐπάξω τὴν κακίαν.",
+        "VUL": "Dirigebantque septem diebus ex adverso hi atque illi acies, septima autem die commissum est bellum : percusseruntque filii Israël de Syris centum millia peditum in die una.",
+        "SYN": "И стояли станом одни против других семь дней. В седьмой день началась битва, и сыны Израилевы поразили сто тысяч пеших Сириян в один день.",
+        "NEO": "Ils campèrent sept jours en face les uns des autres. Le septième jour, le combat s’engagea, et les enfants d’Israël tuèrent aux Syriens cent mille hommes de pied en un jour.",
+        "NAB": "They were encamped opposite each other for seven days. On the seventh day battle was joined, and the Israelites struck down one hundred thousand foot soldiers of Aram in one day.",
+        "VAT_ES": "Durante siete días estuvieron acampados unos frente a otros. Al séptimo día se libró la batalla, y los israelitas derrotaron a los arameos: &iexcl;cien mil hombres de a pie en un solo día!",
+        "CEI": "Per sette giorni stettero accampati gli uni di fronte agli altri. Al settimo giorno si attaccò battaglia. Gli Israeliti in un giorno uccisero centomila fanti aramei."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יָּנֻ֨סוּ הַ/נּוֹתָרִ֥ים אֲפֵקָ/ה֮ אֶל הָ/עִיר֒ וַ/תִּפֹּל֙ הַ/חוֹמָ֔ה עַל עֶשְׂרִ֨ים וְ/שִׁבְעָ֥ה אֶ֛לֶף אִ֖ישׁ הַ/נּוֹתָרִ֑ים וּ/בֶן הֲדַ֣ד נָ֔ס וַ/יָּבֹ֥א אֶל הָ/עִ֖יר חֶ֥דֶר בְּ/חָֽדֶר׃",
+        "VUL": "Fugerunt autem qui remanserant in Aphec, in civitatem : et cecidit murus super viginti septem millia hominum qui remanserant. Porro Benadad fugiens ingressus est civitatem, in cubiculum quod erat intra cubiculum.",
+        "SYN": "Остальные убежали в город Афек; _там_ упала стена на остальных двадцать семь тысяч человек. А Венадад ушел в город и бегал из одной внутренней комнаты в другую.",
+        "NEO": "Le reste s’enfuit à Aphec, à la ville, et la muraille tomba sur vingt-sept mille hommes qui restaient.",
+        "NAB": "The survivors, twenty-seven thousand of them, fled into the city of Aphek, and there the wall collapsed. Ben-hadad, too, fled, and took refuge within the city, in an inside room.",
+        "VAT_ES": "Los demás huyeron a la ciudad de Afec, pero la muralla se desplomó sobre los veinte mil hombres que aún quedaban. Ben Hadad se refugió en la ciudad, huyendo de un lugar a otro.",
+        "CEI": "I superstiti fuggirono in Afèk, nella città, le cui mura caddero sui ventisettemila superstiti. Ben-Hadàd fuggì; entrato in una casa, per nascondersi passava da una stanza all'altra."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֣וּ אֵלָי/ו֮ עֲבָדָי/ו֒ הִנֵּֽה נָ֣א שָׁמַ֔עְנוּ כִּ֗י מַלְכֵי֙ בֵּ֣ית יִשְׂרָאֵ֔ל כִּֽי מַלְכֵ֥י חֶ֖סֶד הֵ֑ם נָשִׂ֣ימָה נָּא֩ שַׂקִּ֨ים בְּ/מָתְנֵ֜י/נוּ וַ/חֲבָלִ֣ים בְּ/רֹאשֵׁ֗/נוּ וְ/נֵצֵא֙ אֶל מֶ֣לֶךְ יִשְׂרָאֵ֔ל אוּלַ֖י יְחַיֶּ֥ה אֶת נַפְשֶֽׁ/ךָ׃",
+        "VUL": "Dixeruntque ei servi sui : Ecce, audivimus quod reges domus Israël clementes sint : ponamus itaque saccos in lumbis nostris, et funiculos in capitibus nostris, et egrediamur ad regem Israël : forsitan salvabit animas nostras.",
+        "SYN": "И сказали ему слуги его: мы слышали, что цари дома Израилева цари милостивые; позволь нам возложить вретища на чресла свои и веревки на головы свои и пойти к царю Израильскому; может быть, он пощадит жизнь твою.",
+        "NEO": "Ses serviteurs lui dirent : « Voici, nous avons appris que les rois de la maison d’Israël sont des rois cléments ; permets que nous mettions des sacs sur nos reins et des cordes à nos têtes, et que nous sortions vers le roi d’Israël : peut-être qu’il te laissera la vie. »",
+        "NAB": "His servants said to him: \"We have heard that the kings of the land of Israel are merciful kings. Allow us, therefore, to garb ourselves in sackcloth, with cords around our heads, and go out to the king of Israel. Perhaps he will spare your life.\"",
+        "VAT_ES": "Pero sus servidores le dijeron: «Mira, hemos oído decir que los reyes de la casa de Israel son misericordiosos. Pongámonos un sayal y atémonos cuerdas a la cabeza, y rindámonos al rey de Israel. Tal vez así te perdone la vida».",
+        "CEI": "I suoi ministri gli dissero: \"Ecco, abbiamo sentito che i re di Israele sono re clementi. Indossiamo sacchi ai fianchi e mettiamoci corde sulla testa e usciamo incontro al re di Israele. Forse ti lascerà in vita\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יַּחְגְּרוּ֩ שַׂקִּ֨ים בְּ/מָתְנֵי/הֶ֜ם וַ/חֲבָלִ֣ים בְּ/רָאשֵׁי/הֶ֗ם וַ/יָּבֹ֨אוּ֙ אֶל מֶ֣לֶךְ יִשְׂרָאֵ֔ל וַ/יֹּ֣אמְר֔וּ עַבְדְּ/ךָ֧ בֶן הֲדַ֛ד אָמַ֖ר תְּחִֽי נָ֣א נַפְשִׁ֑/י וַ/יֹּ֛אמֶר הַ/עוֹדֶ֥/נּוּ חַ֖י אָחִ֥/י הֽוּא׃",
+        "VUL": "Accinxerunt saccis lumbos suos, et posuerunt funiculos in capitibus suis, veneruntque ad regem Israël, et dixerunt ei : Servus tuus Benadad dicit : Vivat, oro te, anima mea. Et ille ait : Si adhuc vivit, frater meus est.",
+        "SYN": "И опоясали они вретищами чресла свои и возложили веревки на головы свои, и пришли к царю Израильскому и сказали: раб твой Венадад говорит: \"пощади жизнь мою\". Тот сказал: разве он жив? он брат мой.",
+        "NEO": "Ils se mirent des sacs sur les reins et des cordes à la tête et, s’étant rendus auprès du roi d’Israël, ils dirent : « Ton serviteur Benhadad dit : Daigne me laisser la vie ! » Achab répondit : « Est-il encore vivant ? Il est mon frère. »",
+        "NAB": "So they dressed in sackcloth girded at the waist, and wearing cords around their heads, they went to the king of Israel. \"Your servant Ben-hadad pleads for his life,\" they said. \"Is he still alive?\" the king asked. \"He is my brother.\"",
+        "VAT_ES": "Ellos se ciñeron un sayal y se ataron cuerdas a la cabeza; luego se presentaron al rey de Israel y le dijeron: «Tu servidor Ben Hadad ha dicho: Perdóname la vida». El respondió: «&iquest;Vive todavía? &iexcl;Es mi hermano!».",
+        "CEI": "Si legarono sacchi ai fianchi e corde sulla testa, quindi si presentarono al re di Israele e dissero: \"Il tuo servo Ben-Hadàd dice: Su, lasciami in vita!\". Quegli domandò: \"È ancora vivo? Egli è mio fratello!\"."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/הָ/אֲנָשִׁים֩ יְנַחֲשׁ֨וּ וַֽ/יְמַהֲר֜וּ וַ/יַּחְלְט֣וּ הֲ/מִמֶּ֗/נּוּ וַ/יֹּֽאמְרוּ֙ אָחִ֣י/ךָ בֶן הֲדַ֔ד וַ/יֹּ֖אמֶר בֹּ֣אוּ קָחֻ֑/הוּ וַ/יֵּצֵ֤א אֵלָי/ו֙ בֶּן הֲדַ֔ד וַֽ/יַּעֲלֵ֖/הוּ עַל הַ/מֶּרְכָּבָֽה׃",
+        "VUL": "Quod acceperunt viri pro omine : et festinantes rapuerunt verbum ex ore ejus, atque dixerunt : Frater tuus Benadad. Et dixit eis : Ite, et adducite eum ad me. Egressus est ergo ad eum Benadad, et levavit eum in currum suum.",
+        "SYN": "Люди сии приняли это за _хороший_ знак и поспешно подхватили слово из уст его и сказали: брат твой Венадад. И сказал он: пойдите, приведите его. И вышел к нему Венадад, и он посадил его _с_ _собою_ на колесницу.",
+        "NEO": "Ces hommes tirèrent de là un heureux augure, et se hâtant de lui ravir cette parole, ils dirent : « Benhadad est ton frère. » Et il dit : « Allez le prendre. » Benhadad vint vers lui, et Achab le fit monter sur son char.",
+        "NAB": "Hearing this as a good omen, the men quickly took him at his word and said, \"Ben-hadad is your brother.\" He answered, \"Go and get him.\" When Ben-hadad came out to him, the king had him mount his chariot.",
+        "VAT_ES": "Los hombres vieron en esto un buen augurio, y se apresuraron a tomarle la palabra, diciendo: «&iexcl;Ben Hadad es tu hermano!». El rey añadió: «Vayan a buscarlo». Entonces salió Ben Hadad y él lo hizo subir a su propio carro.",
+        "CEI": "Gli uomini vi scorsero un buon auspicio, si affrettarono a cercarne una conferma da lui. Dissero: \"Ben-Hadàd è tuo fratello!\". Quegli soggiunse: \"Andate a prenderlo\". Ben-Hadàd si recò da lui, che lo fece salire sul carro."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֵלָ֡י/ו הֶ/עָרִ֣ים אֲשֶׁר לָֽקַח אָבִ/י֩ מֵ/אֵ֨ת אָבִ֜י/ךָ אָשִׁ֗יב וְ֠/חוּצוֹת תָּשִׂ֨ים לְ/ךָ֤ בְ/דַמֶּ֨שֶׂק֙ כַּ/אֲשֶׁר שָׂ֤ם אָבִ/י֙ בְּ/שֹׁ֣מְר֔וֹן וַ/אֲנִ֖י בַּ/בְּרִ֣ית אֲשַׁלְּחֶ֑/ךָּ וַ/יִּכְרָת ל֥/וֹ בְרִ֖ית וַֽ/יְשַׁלְּחֵֽ/הוּ׃",
+        "VUL": "Qui dixit ei : Civitates quas tulit pater meus a patre tuo, reddam : et plateas fac tibi in Damasco, sicut fecit pater meus in Samaria, et ego fderatus recedam a te. Pepigit ergo fdus, et dimisit eum.",
+        "SYN": "И сказал ему _Венадад:_ города, которые взял мой отец у твоего отца, я возвращу, и площади ты можешь иметь для себя в Дамаске, как отец мой имел в Самарии. _Ахав_ _сказал:_ после договора я отпущу тебя. И, заключив с ним договор, отпустил его.",
+        "NEO": "Benhadad lui dit : « Je te rendrai les villes que mon père a prises à ton père, et tu établiras pour toi des rues à Damas, comme mon père en avait établi à Samarie. » Et Achab répondit : « Et moi, je te laisserai aller moyennant un traité d’alliance. » Il conclut une alliance avec lui, et le laissa aller.",
+        "NAB": "Ben-hadad said to him, \"I will restore the cities which my father took from your father, and you may make yourself bazaars in Damascus, as my father did in Samaria.\" \"On these terms,\" Ahab replied, \"I will set you free.\" So he made an agreement with him and then set him free.",
+        "VAT_ES": "Ben Hadad le dijo: «Restituiré las ciudades que mi padre le quitó al tuyo, y tú podrás instalar bazares en Damasco, como mi padre los había instalado en Samaría». Yo, por mi parte, replicó Ajab, mediante un pacto, te dejaré partir». Ajab concluyó un pacto en favor de él, y lo dejó partir.",
+        "CEI": "Ben-Hadàd gli disse: \"Restituirò le città che mio padre ha prese a tuo padre; tu potrai disporre di mercati in Damasco come mio padre ne aveva in Samaria\". Ed egli: \"Io a questo patto ti lascerò andare\". E concluse con lui l'alleanza e lo lasciò andare."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וְ/אִ֨ישׁ אֶחָ֜ד מִ/בְּנֵ֣י הַ/נְּבִיאִ֗ים אָמַ֧ר אֶל רֵעֵ֛/הוּ בִּ/דְבַ֥ר יְהוָ֖ה הַכֵּ֣י/נִי נָ֑א וַ/יְמָאֵ֥ן הָ/אִ֖ישׁ לְ/הַכֹּתֽ/וֹ׃",
+        "VUL": "Tunc vir quidam de filiis prophetarum dixit ad socium suum in sermone Domini : Percute me. At ille noluit percutere.",
+        "SYN": "Тогда один человек из сынов пророческих сказал другому, по слову Господа: бей меня. Но этот человек не согласился бить его.",
+        "NEO": "Un des fils des prophètes dit à son compagnon, dans la parole de \\+w Yahweh|strong=\"H3068\"\\+w** : « Frappe-moi, je te prie. » Mais cet homme refusa de le frapper.",
+        "NAB": "One of the guild prophets was prompted by the LORD to say to his companion, \"Strike me.\" But he refused to strike him.",
+        "VAT_ES": "Uno de la comunidad de los profetas dijo a su compañero, por orden del Señor: «&iexcl;Golpéame!». Pero el otro se negó a golpearlo.",
+        "CEI": "Allora uno dei figli dei profeti disse al compagno per ordine del Signore: \"Picchiami!\". L'uomo si rifiutò di picchiarlo."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר ל֗/וֹ יַ֚עַן אֲשֶׁ֤ר לֹֽא שָׁמַ֨עְתָּ֙ בְּ/ק֣וֹל יְהוָ֔ה הִנְּ/ךָ֤ הוֹלֵךְ֙ מֵֽ/אִתִּ֔/י וְ/הִכְּ/ךָ֖ הָ/אַרְיֵ֑ה וַ/יֵּ֨לֶךְ֙ מֵֽ/אֶצְל֔/וֹ וַ/יִּמְצָאֵ֥/הוּ הָ/אַרְיֵ֖ה וַ/יַּכֵּֽ/הוּ׃",
+        "VUL": "Cui ait : Quia noluisti audire vocem Domini, ecce recedes a me, et percutiet te leo. Cumque paululum recessisset ab eo, invenit eum leo, atque percussit.",
+        "SYN": "И сказал ему: за то, что ты не слушаешь гласа Господня, убьет тебя лев, когда пойдешь от меня. Он пошел от него, и лев, встретив его, убил его.",
+        "NEO": "Et il lui dit : « Parce que tu n’as pas écouté la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, voici, dès que tu m’auras quitté, le lion te frappera. » Et l’homme s’en alla d’auprès de lui, et le lion, l’ayant rencontré, le frappa.",
+        "NAB": "Then he said to him, \"Since you did not obey the voice of the LORD, a lion will kill you when you leave me.\" When they parted company, a lion came upon him and killed him.",
+        "VAT_ES": "El le dijo: «Porque no has escuchado la voz del Señor, apenas te alejes de mí te matará el león». Y apenas el otro se alejó de su lado, lo encontró el león y lo mató.",
+        "CEI": "Quegli disse: \"Poiché non hai obbedito alla voce del Signore, appena ti sarai separato da me, un leone ti ucciderà\". Mentre si allontanava, incontrò un leone che l'uccise."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/יִּמְצָא֙ אִ֣ישׁ אַחֵ֔ר וַ/יֹּ֖אמֶר הַכֵּ֣י/נִי נָ֑א וַ/יַּכֵּ֥/הוּ הָ/אִ֖ישׁ הַכֵּ֥ה וּ/פָצֹֽעַ׃",
+        "VUL": "Sed et alterum inveniens virum, dixit ad eum : Percute me. Qui percussit eum, et vulneravit.",
+        "SYN": "И нашел он другого человека, и сказал: бей меня. Этот человек бил его до того, что изранил побоями.",
+        "NEO": "Il trouva un autre homme, et il lui dit : « Frappe-moi, je te prie. » Cet homme le frappa et le blessa.",
+        "NAB": "The prophet met another man and said, \"Strike me.\" The man struck him a blow and wounded him.",
+        "VAT_ES": "El profeta encontró a otro hombre y le dijo: «&iexcl;Golpéame!». El hombre lo golpeó y lo dejó maltrecho.",
+        "CEI": "Quegli, incontrato un altro uomo, gli disse: \"Picchiami!\". E quegli lo percosse a sangue."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨לֶךְ֙ הַ/נָּבִ֔יא וַ/יַּעֲמֹ֥ד לַ/מֶּ֖לֶךְ עַל הַ/דָּ֑רֶךְ וַ/יִּתְחַפֵּ֥שׂ בָּ/אֲפֵ֖ר עַל עֵינָֽי/ו׃",
+        "VUL": "Abiit ergo propheta, et occurrit regi in via, et mutavit aspersione pulveris os et oculos suos.",
+        "SYN": "И пошел пророк и предстал пред царя на дороге, прикрыв покрывалом глаза свои.",
+        "NEO": "Alors le prophète alla se placer sur le chemin du roi, et il se déguisa avec un bandeau sur ses yeux.",
+        "NAB": "The prophet went on and waited for the king on the road, having disguised himself with a bandage over his eyes.",
+        "VAT_ES": "Luego el profeta fue a apostarse en el camino, a la espera del rey, cubriéndose los ojos con una venda para no ser reconocido.",
+        "CEI": "Il profeta andò ad attendere il re sulla strada, dopo essersi reso irriconoscibile con una benda agli occhi."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֤י הַ/מֶּ֨לֶךְ֙ עֹבֵ֔ר וְ/ה֖וּא צָעַ֣ק אֶל הַ/מֶּ֑לֶךְ וַ/יֹּ֜אמֶר עַבְדְּ/ךָ֣ יָצָ֣א בְ/קֶֽרֶב הַ/מִּלְחָמָ֗ה וְ/הִנֵּֽה אִ֨ישׁ סָ֜ר וַ/יָּבֵ֧א אֵלַ֣/י אִ֗ישׁ וַ/יֹּ֨אמֶר֙ שְׁמֹר֙ אֶת הָ/אִ֣ישׁ הַ/זֶּ֔ה אִם הִפָּקֵד֙ יִפָּקֵ֔ד וְ/הָיְתָ֤ה נַפְשְׁ/ךָ֙ תַּ֣חַת נַפְשׁ֔/וֹ א֥וֹ כִכַּר כֶּ֖סֶף תִּשְׁקֽוֹל׃",
+        "VUL": "Cumque rex transisset, clamavit ad regem, et ait : Servus tuus egressus est ad præliandum cominus : cumque fugisset vir unus, adduxit eum quidam ad me, et ait : Custodi virum istum : qui si lapsus fuerit, erit anima tua pro anima ejus, aut talentum argenti appendes.",
+        "SYN": "Когда царь проезжал мимо, он закричал царю и сказал: раб твой ходил на сражение, и вот, один человек, отошедший в сторону, подвел ко мне человека и сказал: \"стереги этого человека; если его не станет, то твоя душа будет за его душу, или ты должен будешь отвесить талант серебра\".",
+        "NEO": "Lorsque le roi passa, il cria vers le roi, en disant : « Ton serviteur était sorti au milieu du combat ; voici qu’un homme s’éloigna et m’amena un homme en disant : Garde cet homme. S’il vient à s’échapper, ta vie sera pour sa vie, ou tu paieras un talent d’argent.",
+        "NAB": "As the king was passing, he called out to the king and said: \"Your servant went into the thick of the battle, and suddenly someone turned and brought me a man and said, 'Guard this man. If he is missing, you shall have to pay for his life with your life or pay out a talent of silver.'",
+        "VAT_ES": "Cuando el rey pasaba, le gritó: «Tu servidor avanzaba para entrar en batalla, y de pronto un soldado, abandonando las filas, me trajo un hombre y me dijo: «Vigila a este hombre. Si llega a faltar, responderás por él con tu vida, o bien pagarás un talento de plata».",
+        "CEI": "Quando passò il re, gli gridò: \"Il tuo servo era nel cuore della battaglia, quando un uomo si staccò e mi portò un individuo dicendomi: Fà la guardia a quest'uomo! Se ti scappa, la tua vita pagherà per la sua oppure dovrai sborsare un talento d'argento."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י עַבְדְּ/ךָ֗ עֹשֵׂ֥ה הֵ֛נָּה וָ/הֵ֖נָּה וְ/ה֣וּא אֵינֶ֑/נּוּ וַ/יֹּ֨אמֶר אֵלָ֧י/ו מֶֽלֶךְ יִשְׂרָאֵ֛ל כֵּ֥ן מִשְׁפָּטֶ֖/ךָ אַתָּ֥ה חָרָֽצְתָּ׃",
+        "VUL": "Dum autem ego turbatus huc illucque me verterem, subito non comparuit. Et ait rex Israël ad eum : Hoc est judicium tuum, quod ipse decrevisti.",
+        "SYN": "Когда раб твой занялся теми и другими делами, его не стало. -- И сказал ему царь Израильский: таков тебе и приговор, ты сам решил.",
+        "NEO": "Et pendant que ton serviteur agissait çà et là, l’homme disparut. » Le roi d’Israël lui dit : « C’est là ton jugement ; tu l’as rendu toi-même. »",
+        "NAB": "But while your servant was looking here and there, the man disappeared.\" The king of Israel said to him, \"That is your sentence. You have decided it yourself.\"",
+        "VAT_ES": "Pero mientras yo estaba ocupado, yendo de acá para allá, el hombre desapareció». El rey le replicó: «&iexcl;Está clara tu sentencia! La has pronunciado tú mismo».",
+        "CEI": "Mentre il tuo servo era occupato qua e là, quegli scomparve\". Il re di Israele disse a lui: \"La tua condanna è giusta; l'hai proferita tu stesso!\"."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וַ/יְמַהֵ֕ר וַ/יָּ֨סַר֙ אֶת הָ֣/אֲפֵ֔ר מ/על מֵ/עֲלֵ֖י עֵינָ֑י/ו וַ/יַּכֵּ֤ר אֹת/וֹ֙ מֶ֣לֶךְ יִשְׂרָאֵ֔ל כִּ֥י מֵֽ/הַ/נְּבִאִ֖ים הֽוּא׃",
+        "VUL": "At ille statim abstersit pulverem de facie sua, et cognovit eum rex Israël, quod esset de prophetis.",
+        "SYN": "Он тотчас снял покрывало с глаз своих, и узнал его царь, что он из пророков.",
+        "NEO": "Aussitôt le prophète ôta le bandeau de ses yeux et le roi d’Israël le reconnut pour un des prophètes.",
+        "NAB": "He immediately removed the bandage from his eyes, and the king of Israel recognized him as one of the prophets.",
+        "VAT_ES": "El se apresuró a quitarse la venda de los ojos, y el rey de Israel reconoció que era uno de los profetas.",
+        "CEI": "Ma quegli immediatamente si tolse la benda dagli occhi e il re di Israele riconobbe che era uno dei profeti."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֵלָ֗י/ו כֹּ֚ה אָמַ֣ר יְהוָ֔ה יַ֛עַן שִׁלַּ֥חְתָּ אֶת אִישׁ חֶרְמִ֖/י מִ/יָּ֑ד וְ/הָיְתָ֤ה נַפְשְׁ/ךָ֙ תַּ֣חַת נַפְשׁ֔/וֹ וְ/עַמְּ/ךָ֖ תַּ֥חַת עַמּֽ/וֹ׃",
+        "VUL": "Qui ait ad eum : Hæc dicit Dominus : Quia dimisisti virum dignum morte de manu tua, erit anima tua pro anima ejus, et populus tuus pro populo ejus.",
+        "SYN": "И сказал ему: так говорит Господь: за то, что ты выпустил из рук твоих человека, заклятого Мною, душа твоя будет вместо его души, народ твой вместо его народа.",
+        "NEO": "Alors il dit au roi : « Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : Parce que tu as laissé échapper de tes mains l’homme que j’avais voué à l’anathème, ta vie sera pour sa vie et ton peuple pour son peuple. »",
+        "NAB": "He said to him: \"The LORD says, 'Because you have set free the man I doomed to destruction, your life shall pay for his life, your people for his people.'\"",
+        "VAT_ES": "Entonces dijo al rey: «Así habla el Señor: Porque has dejado escapar al hombre que yo había consagrado al exterminio, tu vida responderá por su vida y tu pueblo por su pueblo».",
+        "CEI": "Costui gli disse: \"Così dice il Signore: Perché hai lasciato andare libero quell'uomo da me votato allo sterminio, la tua vita pagherà per la sua, il tuo popolo per il suo popolo\"."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֧לֶךְ מֶֽלֶךְ יִשְׂרָאֵ֛ל עַל בֵּית֖/וֹ סַ֣ר וְ/זָעֵ֑ף וַ/יָּבֹ֖א שֹׁמְרֽוֹנָ/ה׃",
+        "VUL": "Reversus est igitur rex Israël in domum suam, audire contemnens, et furibundus venit in Samariam.",
+        "SYN": "И отправился царь Израильский домой встревоженный и огорченный, и прибыл в Самарию.",
+        "NEO": "Le roi d’Israël s’en alla chez lui, sombre et irrité, et il arriva à Samarie.",
+        "NAB": "Disturbed and angry, the king of Israel went off homeward and entered Samaria.",
+        "VAT_ES": "El rey de Israel se fue a su casa malhumorado y muy irritado, y entró en Samaría.",
+        "CEI": "Il re di Israele se ne andò a casa amareggiato e irritato ed entrò in Samaria."
+      }
+    }
+  }
+}

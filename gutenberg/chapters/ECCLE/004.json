@@ -1,0 +1,303 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLE_004",
+  "book_key": "ECCLE",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/שַׁ֣בְתִּֽי אֲנִ֗י וָ/אֶרְאֶה֙ אֶת כָּל הָ֣/עֲשֻׁקִ֔ים אֲשֶׁ֥ר נַעֲשִׂ֖ים תַּ֣חַת הַ/שָּׁ֑מֶשׁ וְ/הִנֵּ֣ה דִּמְעַ֣ת הָ/עֲשֻׁקִ֗ים וְ/אֵ֤ין לָ/הֶם֙ מְנַחֵ֔ם וּ/מִ/יַּ֤ד עֹֽשְׁקֵי/הֶם֙ כֹּ֔חַ וְ/אֵ֥ין לָ/הֶ֖ם מְנַחֵֽם׃",
+        "LXX": "Καὶ ἐπέστρεψα ἐγὼ καὶ εἶδον συμπάσας τὰς συκοφαντίας τὰς γινομένας ὑπὸ τὸν ἥλιον· ἰδοὺ δάκρυον τῶν συκοφαντουμένων, καὶ οὐκ ἔστιν αὐτοῖς παρακαλῶν, καὶ ἀπὸ χειρὸς συκοφαντούντων αὐτοὺς ἰσχύς, καὶ οὐκ ἔστιν αὐτοῖς παρακαλῶν.",
+        "VUL": "[Verti me ad alia, et vidi calumnias/ quæ sub sole geruntur,/ et lacrimas innocentium,/ et neminem consolatorem,/ nec posse resistere eorum violentiæ,/ cunctorum auxilio destitutos,/",
+        "SYN": "И обратился я и увидел всякие угнетения, какие делаются под солнцем: и вот слезы угнетенных, а утешителя у них нет; и в руке угнетающих их - сила, а утешителя у них нет.",
+        "NEO": "Je me suis tourné et j’ai vu toutes les oppressions qui se commettent sous le soleil : et voici que les opprimés sont dans les larmes, et personne ne les console ! Ils sont en butte à la violence de leurs oppresseurs, et personne ne les console !",
+        "NAB": "Again I considered all the oppressions that take place under the sun: the tears of the victims with none to comfort them! From the hand of their oppressors comes violence, and there is none to comfort them!",
+        "VAT_ES": "Yo volví mis ojos a todas las opresiones que se cometen bajo el sol: ahí están las lágrimas de los oprimidos, y no hay quien los consuele. La fuerza está del lado de los opresores, y no hay nadie que les dé su merecido.",
+        "CEI": "Ho poi considerato tutte le oppressioni che si commettono sotto il sole. Ecco il pianto degli oppressi che non hanno chi li consoli; da parte dei loro oppressori sta la violenza, mentre per essi non c'è chi li consoli."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/שַׁבֵּ֧חַ אֲנִ֛י אֶת הַ/מֵּתִ֖ים שֶׁ/כְּבָ֣ר מֵ֑תוּ מִן הַ֣/חַיִּ֔ים אֲשֶׁ֛ר הֵ֥מָּה חַיִּ֖ים עֲדֶֽנָ/ה׃",
+        "LXX": "καὶ ἐπῄνεσα ἐγὼ σύμπαντας τοὺς τεθνηκότας τοὺς ἤδη ἀποθανόντας ὑπὲρ τοὺς ζῶντας, ὅσοι αὐτοὶ ζῶσιν ἕως τοῦ νῦν·",
+        "VUL": "et laudavi magis mortuos quam viventes ;/",
+        "SYN": "И ублажил я мертвых, которые давно умерли, более живых, которые живут доселе;",
+        "NEO": "Et j’ai proclamé les morts qui sont déjà morts plus heureux que les vivants qui sont encore vivants,",
+        "NAB": "And those now dead, I declared more fortunate in death than are the living to be still alive.",
+        "VAT_ES": "Entonces tuve por más felices a los muertos, porque ya están muertos, que a los vivos, porque viven todavía;",
+        "CEI": "Allora ho proclamato più felici i morti, ormai trapassati, dei viventi che sono ancora in vita;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/טוֹב֙ מִ/שְּׁנֵי/הֶ֔ם אֵ֥ת אֲשֶׁר עֲדֶ֖ן לֹ֣א הָיָ֑ה אֲשֶׁ֤ר לֹֽא רָאָה֙ אֶת הַ/מַּעֲשֶׂ֣ה הָ/רָ֔ע אֲשֶׁ֥ר נַעֲשָׂ֖ה תַּ֥חַת הַ/שָּֽׁמֶשׁ׃",
+        "LXX": "καὶ ἀγαθὸς ὑπὲρ τοὺς δύο τούτους ὅστις οὔπω ἐγένετο, ὃς οὐκ εἶδεν σὺν πᾶν τὸ ποίημα τὸ πονηρὸν τὸ πεποιημένον ὑπὸ τὸν ἥλιον.",
+        "VUL": "et feliciorem utroque judicavi/ qui necdum natus est,/ nec vidit mala quæ sub sole fiunt./",
+        "SYN": "а блаженнее их обоих тот, кто еще не существовал, кто не видал злых дел, какие делаются под солнцем.",
+        "NEO": "et plus heureux que les uns et les autres celui qui n’est pas encore arrivé à l’existence, qui n’a pas vu les mauvaises actions qui se commettent sous le soleil.",
+        "NAB": "And better off than both is the yet unborn, who has not seen the wicked work that is done under the sun.",
+        "VAT_ES": "y consideré más feliz aún al que todavía no ha existido, porque no ha visto las infamias que se cometen bajo el sol.",
+        "CEI": "ma ancor più felice degli uni e degli altri chi ancora non è e non ha visto le azioni malvagie che si commettono sotto il sole."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/רָאִ֨יתִֽי אֲנִ֜י אֶת כָּל עָמָ֗ל וְ/אֵת֙ כָּל כִּשְׁר֣וֹן הַֽ/מַּעֲשֶׂ֔ה כִּ֛י הִ֥יא קִנְאַת אִ֖ישׁ מֵ/רֵעֵ֑/הוּ גַּם זֶ֥ה הֶ֖בֶל וּ/רְע֥וּת רֽוּחַ׃",
+        "LXX": "Καὶ ἴδον ἐγὼ σύμπαντα τὸν μόχθον καὶ σύμπασαν ἀνδρείαν τοῦ ποιήματος, ὅτι τὸ ζῆλος ἀνδρὶ ἀπὸ τοῦ ἑταίρου αὐτοῦ· καί γε τοῦτο ματαιότης καὶ προαίρεσις πνεύματος.",
+        "VUL": "Rursum contemplatus sum omnes labores hominum,/ et industrias animadverti patere invidiæ proximi ;/ et in hoc ergo vanitas et cura superflua est./",
+        "SYN": "Видел я также, что всякий труд и всякий успех в делах производят взаимную между людьми зависть. И это - суета и томление духа!",
+        "NEO": "J’ai vu que tout travail et que toute habileté dans un ouvrage n’est que jalousie contre un homme de la part de son prochain : cela encore est vanité et poursuite du vent.",
+        "NAB": "Then I saw that all toil and skillful work is the rivalry of one man for another. This also is vanity and a chase after wind.",
+        "VAT_ES": "Yo vi que todo el esfuerzo y toda la eficacia de una obra no son más que rivalidad de unos contra otros. También esto es vanidad y correr tras el viento.",
+        "CEI": "Ho osservato anche che ogni fatica e tutta l'abilità messe in un lavoro non sono che invidia dell'uno con l'altro. Anche questo è vanità e un inseguire il vento."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הַ/כְּסִיל֙ חֹבֵ֣ק אֶת יָדָ֔י/ו וְ/אֹכֵ֖ל אֶת בְּשָׂרֽ/וֹ׃",
+        "LXX": "ὁ ἄφρων περιέλαβεν τὰς χεῖρας αὐτοῦ καὶ ἔφαγεν τὰς σάρκας αὐτοῦ.",
+        "VUL": "Stultus complicat manus suas,/ et comedit carnes suas, dicens :/",
+        "SYN": "Глупый _сидит,_ сложив свои руки, и съедает плоть свою.",
+        "NEO": "L’insensé se croise les mains, et mange sa propre chair.",
+        "NAB": "\"The fool folds his arms and consumes his own flesh\" -",
+        "VAT_ES": "El necio se cruza de brazos y se devora a sí mismo.",
+        "CEI": "Lo stolto incrocia le braccia e divora la sua carne."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "ט֕וֹב מְלֹ֥א כַ֖ף נָ֑חַת מִ/מְּלֹ֥א חָפְנַ֛יִם עָמָ֖ל וּ/רְע֥וּת רֽוּחַ׃",
+        "LXX": "ἀγαθὸν πλήρωμα δρακὸς ἀναπαύσεως ὑπὲρ πλήρωμα δύο δρακῶν μόχθου καὶ προαιρέσεως πνεύματος.",
+        "VUL": "Melior est pugillus cum requie,/ quam plena utraque manus cum labore et afflictione animi./",
+        "SYN": "Лучше горсть с покоем, нежели пригоршни с трудом и томлением духа.",
+        "NEO": "Mieux vaut une main pleine de repos, que les deux pleines de labeur et de poursuite du vent.",
+        "NAB": "Better is one handful with tranquility than two with toil and a chase after wind!",
+        "VAT_ES": "Más vale un puñado con tranquilidad, que las dos manos bien llenas a costa de fatigas y de correr tras el viento.",
+        "CEI": "Meglio una manciata con riposo che due manciate con fatica."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/שַׁ֧בְתִּי אֲנִ֛י וָ/אֶרְאֶ֥ה הֶ֖בֶל תַּ֥חַת הַ/שָּֽׁמֶשׁ׃",
+        "LXX": "Καὶ ἐπέστρεψα ἐγὼ καὶ ἴδον ματαιότητα ὑπὸ τὸν ἥλιον.",
+        "VUL": "Considerans, reperi et aliam vanitatem sub sole./",
+        "SYN": "И обратился я и увидел еще суету под солнцем;",
+        "NEO": "Je me suis tourné et j’ai vu une autre vanité sous le soleil.",
+        "NAB": "Again I found this vanity under the sun:",
+        "VAT_ES": "Luego volví mis ojos a otra cosa vana bajo el sol:",
+        "CEI": "Inoltre ho considerato un'altra vanità sotto il sole:"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "יֵ֣שׁ אֶחָד֩ וְ/אֵ֨ין שֵׁנִ֜י גַּ֣ם בֵּ֧ן וָ/אָ֣ח אֵֽין ל֗/וֹ וְ/אֵ֥ין קֵץ֙ לְ/כָל עֲמָל֔/וֹ גַּם עיני/ו עֵינ֖/וֹ לֹא תִשְׂבַּ֣ע עֹ֑שֶׁר וּ/לְ/מִ֣י אֲנִ֣י עָמֵ֗ל וּ/מְחַסֵּ֤ר אֶת נַפְשִׁ/י֙ מִ/טּוֹבָ֔ה גַּם זֶ֥ה הֶ֛בֶל וְ/עִנְיַ֥ן רָ֖ע הֽוּא׃",
+        "LXX": "ἔστιν εἷς καὶ οὐκ ἔστιν δεύτερος, καί γε υἱὸς καί γε ἀδελφὸς οὐκ ἔστιν αὐτῷ· καὶ οὐκ ἔστιν περασμὸς τῷ παντὶ μόχθῳ αὐτοῦ, καί γε ὀφθαλμὸς αὐτοῦ οὐκ ἐμπίπλαται πλούτου. καὶ τίνι ἐγὼ μοχθῶ καὶ στερίσκω τὴν ψυχήν μου ἀπὸ ἀγαθωσύνης; καί γε τοῦτο ματαιότης καὶ περισπασμὸς πονηρός ἐστιν.",
+        "VUL": "Unus est, et secundum non habet,/ non filium, non fratrem,/ et tamen laborare non cessat,/ nec satiantur oculi ejus divitiis ;/ nec recogitat, dicens :/ Cui laboro, et fraudo animam meam bonis ?/ In hoc quoque vanitas est et afflictio pessima.]",
+        "SYN": "_человек_ одинокий, и другого нет; ни сына, ни брата нет у него; а всем трудам его нет конца, и глаз его не насыщается богатством. \"Для кого же я тружусь и лишаю душу мою блага?\" И это - суета и недоброе дело!",
+        "NEO": "Tel homme est seul et n’a pas de second, il n’a ni fils ni frère, et pourtant il n’y a pas de fin à tout son travail, et ses yeux ne sont jamais rassasiés de richesses : « Pour qui donc est-ce que je travaille, et que je prive mon âme de jouissance ? » Cela encore est vanité, et mauvaise occupation.",
+        "NAB": "a solitary man with no companion; with neither son nor brother. Yet there is no end to all his toil, and riches do not satisfy his greed. \"For whom do I toil and deprive myself of good things?\" This also is vanity and a worthless task.",
+        "VAT_ES": "un hombre está completamente solo, no tiene hijo ni hermano, pero nunca pone fin a su esfuerzo ni se sacia de ambicionar riquezas. Entonces, &iquest;para quién me esfuerzo y me privo del bienestar? También esto es vanidad y una tarea ingrata.",
+        "CEI": "uno è solo, senza eredi, non ha un figlio, non un fratello. Eppure non smette mai di faticare, né il suo occhio è sazio di ricchezza: \"Per chi mi affatico e mi privo dei beni?\". Anche questo è vanità e un cattivo affannarsi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "טוֹבִ֥ים הַ/שְּׁנַ֖יִם מִן הָ/אֶחָ֑ד אֲשֶׁ֧ר יֵשׁ לָ/הֶ֛ם שָׂכָ֥ר ט֖וֹב בַּ/עֲמָלָֽ/ם׃",
+        "LXX": "ἀγαθοὶ δύο ὑπὲρ τὸν ἕνα, οἷς ἐστιν αὐτοῖς μισθὸς ἀγαθὸς ἐν μόχθῳ αὐτῶν·",
+        "VUL": "[Melius est ergo duos esse simul quam unum ;/ habent enim emolumentum societatis suæ./",
+        "SYN": "Двоим лучше, нежели одному; потому что у них есть доброе вознаграждение в труде их:",
+        "NEO": "Mieux vaut vivre à deux que solitaire ; il y a pour les deux un bon salaire dans leur travail ;",
+        "NAB": "Two are better than one: they get a good wage for their labor.",
+        "VAT_ES": "Valen más dos juntos que uno solo, porque es mayor la recompensa del esfuerzo.",
+        "CEI": "Meglio essere in due che uno solo, perché due hanno un miglior compenso nella fatica."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּ֣י אִם יִפֹּ֔לוּ הָ/אֶחָ֖ד יָקִ֣ים אֶת חֲבֵר֑/וֹ וְ/אִ֣י/ל֗/וֹ הָֽ/אֶחָד֙ שֶׁ/יִּפּ֔וֹל וְ/אֵ֥ין שֵׁנִ֖י לַ/הֲקִימֽ/וֹ׃",
+        "LXX": "ὅτι ἐὰν πέσωσιν, ὁ εἷς ἐγερεῖ τὸν μέτοχον αὐτοῦ· καὶ οὐαὶ αὐτῷ τῷ ἑνὶ ὅταν πέσῃ καὶ μὴ ᾖ δεύτερος ἐγεῖραι αὐτόν.",
+        "VUL": "Si unus ceciderit, ab altero fulcietur./ Væ soli, quia cum ceciderit, non habet sublevantem se./",
+        "SYN": "ибо если упадет один, то другой поднимет товарища своего. Но горе одному, когда упадет, а другого нет, который поднял бы его.",
+        "NEO": "car s’ils tombent, l’un peut relever son compagnon. Mais malheur à celui qui est seul, et qui tombe sans avoir un second pour le relever !",
+        "NAB": "If the one falls, the other will lift up his companion. Woe to the solitary man! For if he should fall, he has no one to lift him up.",
+        "VAT_ES": "Si caen, uno levanta a su compañero; pero &iexcl;pobre del que está solo y se cae, sin tener a nadie que lo levante!",
+        "CEI": "Infatti, se vengono a cadere, l'uno rialza l'altro. Guai invece a chi è solo: se cade, non ha nessuno che lo rialzi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "גַּ֛ם אִם יִשְׁכְּב֥וּ שְׁנַ֖יִם וְ/חַ֣ם לָ/הֶ֑ם וּ/לְ/אֶחָ֖ד אֵ֥יךְ יֵחָֽם׃",
+        "LXX": "καί γε ἂν κοιμηθῶσιν δύο, καὶ θέρμη αὐτοῖς· καὶ ὁ εἷς πῶς θερμανθῇ;",
+        "VUL": "Et si dormierint duo, fovebuntur mutuo ;/ unus quomodo calefiet ?/",
+        "SYN": "Также, если лежат двое, то тепло им; а одному как согреться?",
+        "NEO": "De même, si deux couchent ensemble, ils se réchauffent ; mais un homme seul, comment aurait-il chaud !",
+        "NAB": "So also, if two sleep together, they keep each other warm. How can one alone keep warm?",
+        "VAT_ES": "Además, si se acuestan juntos, sienten calor, pero uno solo &iquest;cómo se calentará?",
+        "CEI": "Inoltre, se due dormono insieme, si possono riscaldare; ma uno solo come fa a riscaldarsi?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/אִֽם יִתְקְפ/וֹ֙ הָ/אֶחָ֔ד הַ/שְּׁנַ֖יִם יַעַמְד֣וּ נֶגְדּ֑/וֹ וְ/הַ/חוּט֙ הַֽ/מְשֻׁלָּ֔שׁ לֹ֥א בִ/מְהֵרָ֖ה יִנָּתֵֽק׃",
+        "LXX": "καὶ ἐὰν ἐπικραταιωθῇ ὁ εἷς, οἱ δύο στήσονται κατέναντι αὐτοῦ, καὶ τὸ σπαρτίον τὸ ἔντριτον οὐ ταχὺ ἀπορραγήσεται.",
+        "VUL": "Et si quispiam prævaluerit contra unum,/ duo resistunt ei ;/ funiculus triplex difficile rumpitur./",
+        "SYN": "И если станет преодолевать кто-либо одного, то двое устоят против него: и нитка, втрое скрученная, нескоро порвется.",
+        "NEO": "Et si quelqu’un maîtrise celui qui est seul, les deux pourront lui résister, et le fil triplé ne rompt pas facilement.",
+        "NAB": "Where a lone man may be overcome, two together can resist. A three-ply cord is not easily broken.",
+        "VAT_ES": "Y a uno solo se lo domina, pero los dos podrán resistir, porque la cuerda trenzada no se rompe fácilmente.",
+        "CEI": "Se uno aggredisce, in due gli possono resistere e una corda a tre capi non si rompe tanto presto."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "ט֛וֹב יֶ֥לֶד מִסְכֵּ֖ן וְ/חָכָ֑ם מִ/מֶּ֤לֶךְ זָקֵן֙ וּ/כְסִ֔יל אֲשֶׁ֛ר לֹא יָדַ֥ע לְ/הִזָּהֵ֖ר עֽוֹד׃",
+        "LXX": "Ἀγαθὸς παῖς πένης καὶ σοφὸς ὑπὲρ βασιλέα πρεσβύτερον καὶ ἄφρονα, ὃς οὐκ ἔγνω τοῦ προσέχειν ἔτι·",
+        "VUL": "Melior est puer pauper et sapiens,/ rege sene et stulto,/ qui nescit prævidere in posterum./",
+        "SYN": "Лучше бедный, но умный юноша, нежели старый, но неразумный царь, который не умеет принимать советы;",
+        "NEO": "Mieux vaut un jeune homme pauvre et sage qu’un roi vieux et insensé qui ne sait plus écouter les avis ;",
+        "NAB": "Better is a poor but wise youth than an old but foolish king who no longer knows caution;",
+        "VAT_ES": "Más vale un joven pobre y sabio que un rey viejo y necio, que ya no es capaz de hacerse aconsejar.",
+        "CEI": "Meglio un ragazzo povero ma accorto, che un re vecchio e stolto che non sa ascoltare i consigli."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כִּֽי מִ/בֵּ֥ית הָ/סוּרִ֖ים יָצָ֣א לִ/מְלֹ֑ךְ כִּ֛י גַּ֥ם בְּ/מַלְכוּת֖/וֹ נוֹלַ֥ד רָֽשׁ׃",
+        "LXX": "ὅτι ἐξ οἴκου τῶν δεσμίων ἐξελεύσεται τοῦ βασιλεῦσαι, ὅτι καί γε ἐν βασιλείᾳ αὐτοῦ ἐγενήθη πένης.",
+        "VUL": "Quod de carcere catenisque interdum quis egrediatur ad regnum ;/ et alius, natus in regno, inopia consumatur./",
+        "SYN": "ибо тот из темницы выйдет на царство, хотя родился в царстве своем бедным.",
+        "NEO": "car il sort de prison pour régner, quoiqu’il soit né pauvre dans son royaume.",
+        "NAB": "for from a prison house one comes forth to rule, since even in his royalty he was poor at birth.",
+        "VAT_ES": "Aunque aquel salió de la cárcel para reinar y había sido pobre en su propio reino,",
+        "CEI": "Il ragazzo infatti può uscir di prigione ed esser proclamato re, anche se, mentre quegli regnava, è nato povero."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "רָאִ֨יתִי֙ אֶת כָּל הַ֣/חַיִּ֔ים הַֽ/מְהַלְּכִ֖ים תַּ֣חַת הַ/שָּׁ֑מֶשׁ עִ֚ם הַ/יֶּ֣לֶד הַ/שֵּׁנִ֔י אֲשֶׁ֥ר יַעֲמֹ֖ד תַּחְתָּֽי/ו׃",
+        "LXX": "ἴδον σύμπαντας τοὺς ζῶντας τοὺς περιπατοῦντας ὑπὸ τὸν ἥλιον μετὰ τοῦ νεανίσκου τοῦ δευτέρου, ὃς στήσεται ἀντ’ αὐτοῦ·",
+        "VUL": "Vidi cunctos viventes qui ambulant sub sole/ cum adolescente secundo, qui consurget pro eo./",
+        "SYN": "Видел я всех живущих, которые ходят под солнцем, с этим другим юношею, который займет место того.",
+        "NEO": "J’ai vu tous les vivants qui marchent sous le soleil près du jeune homme qui s’élevait à la place du vieux roi.",
+        "NAB": "Then I saw all those who are to live and move about under the sun with the heir apparent who will succeed to his place.",
+        "VAT_ES": "yo vi a todos los vivientes que caminan bajo el sol ponerse de parte del joven sucesor, que se erigió en lugar del otro.",
+        "CEI": "Ho visto tutti i viventi che si muovono sotto il sole, stare con quel ragazzo, il secondo, cioè l'usurpatore."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אֵֽין קֵ֣ץ לְ/כָל הָ/עָ֗ם לְ/כֹ֤ל אֲשֶׁר הָיָה֙ לִ/פְנֵי/הֶ֔ם גַּ֥ם הָ/אַחֲרוֹנִ֖ים לֹ֣א יִשְׂמְחוּ ב֑/וֹ כִּֽי גַם זֶ֥ה הֶ֖בֶל וְ/רַעְי֥וֹן רֽוּחַ׃",
+        "LXX": "οὐκ ἔστιν περασμὸς τῷ παντὶ λαῷ, τοῖς πᾶσιν οἳ ἐγένοντο ἔμπροσθεν αὐτῶν· καί γε οἱ ἔσχατοι οὐκ εὐφρανθήσονται ἐπ’ αὐτῷ. ὅτι καί γε τοῦτο ματαιότης καὶ προαίρεσις πνεύματος.",
+        "VUL": "Infinitus numerus est populi/ omnium qui fuerunt ante eum,/ et qui postea futuri sunt non lætabuntur in eo ;/ sed et hoc vanitas et afflictio spiritus.]",
+        "SYN": "Не было числа всему народу, который был перед ним, хотя позднейшие не порадуются им. И это - суета и томление духа!",
+        "NEO": "Il n’y avait pas de fin à toute cette foule, à tous ceux à la tête desquels il était. Et cependant les descendants ne se réjouiront pas à son sujet. Cela encore est vanité et poursuite du vent.",
+        "NAB": "There is no end to all these people, to all over whom he takes precedence; yet the later generations will not applaud him. This also is vanity and a chase after wind.",
+        "VAT_ES": "Era una multitud interminable la que él encabezaba. Pero los que vendrán después tampoco estarán contentos con él, porque también esto es vanidad y correr tras el viento.",
+        "CEI": "Era una folla immensa quella di cui egli era alla testa. Ma coloro che verranno dopo non avranno da rallegrarsi di lui. Anche questo è vanità e un inseguire il vento."
+      }
+    }
+  }
+}

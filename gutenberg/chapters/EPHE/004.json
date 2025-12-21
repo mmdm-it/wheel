@@ -1,0 +1,542 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EPHE_004",
+  "book_key": "EPHE",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Παρακαλῶ οὖν ὑμᾶς ἐγώ, ὁ δέσμιος ἐν κυρίῳ, ἀξίως περιπατῆσαι τῆς κλήσεως ἧς ἐκλήθητε,",
+        "VUL": "Obsecro itaque vos ego vinctus in Domino, ut digne ambuletis vocatione, qua vocati estis,",
+        "SYN": "Итак я, узник в Господе, умоляю вас поступать достойно звания, в которое вы призваны,",
+        "NEO": "Je vous prie donc instamment, moi qui suis prisonnier dans le Seigneur, d’avoir une conduite digne de la vocation à laquelle vous avez été appelés,",
+        "NAB": "I, then, a prisoner for the Lord, urge you to live in a manner worthy of the call you have received,",
+        "VAT_ES": "Traten de imitar a Dios, como hijos suyos muy queridos.",
+        "CEI": "Ti raccomando dunque, prima di tutto, che si facciano domande, suppliche, preghiere e ringraziamenti per tutti gli uomini,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "μετὰ πάσης ταπεινοφροσύνης καὶ πρᾳότητος, μετὰ μακροθυμίας, ἀνεχόμενοι ἀλλήλων ἐν ἀγάπῃ,",
+        "VUL": "cum omni humilitate, et mansuetudine, cum patientia, supportantes invicem in caritate,",
+        "SYN": "со всяким смиренномудрием и кротостью и долготерпением, снисходя друг ко другу любовью,",
+        "NEO": "en toute humilité et douceur, avec patience, vous supportant mutuellement avec charité,",
+        "NAB": "with all humility and gentleness, with patience, bearing with one another through love,",
+        "VAT_ES": "Practiquen el amor, a ejemplo de Cristo, que nos amó y se entregó por nosotros, como ofrenda y sacrificio agradable a Dios.",
+        "CEI": "per i re e per tutti quelli che stanno al potere, perché possiamo trascorrere una vita calma e tranquilla con tutta pietà e dignità."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "σπουδάζοντες τηρεῖν τὴν ἑνότητα τοῦ πνεύματος ἐν τῷ συνδέσμῳ τῆς εἰρήνης.",
+        "VUL": "solliciti servare unitatem Spiritus in vinculo pacis.",
+        "SYN": "стараясь сохранять единство духа в союзе мира.",
+        "NEO": "vous efforçant de conserver l’unité de l’esprit par le lien de la paix.",
+        "NAB": "striving to preserve the unity of the spirit through the bond of peace:",
+        "VAT_ES": "En cuanto al pecado carnal y cualquier clase de impureza o avaricia, ni siquiera se los mencione entre ustedes, como conviene a los santos.",
+        "CEI": "Questa è una cosa bella e gradita al cospetto di Dio, nostro salvatore,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ἓν σῶμα καὶ ἓν πνεῦμα, καθὼς καὶ ἐκλήθητε ἐν μιᾷ ἐλπίδι τῆς κλήσεως ὑμῶν·",
+        "VUL": "Unum corpus, et unus Spiritus, sicut vocati estis in una spe vocationis vestræ.",
+        "SYN": "Одно тело и один дух, как вы и призваны к одной надежде вашего звания;",
+        "NEO": "Il n’y a qu’un seul corps et un seul Esprit, comme aussi vous avez été appelés par votre vocation à une même espérance.",
+        "NAB": "one body and one Spirit, as you were also called to the one hope of your call;",
+        "VAT_ES": "Lo mismo digo acerca de las obscenidades, de las malas conversaciones y de las bromas groseras: todo esto está fuera de lugar. Lo que deben hacer es dar gracias a Dios.",
+        "CEI": "il quale vuole che tutti gli uomini siano salvati e arrivino alla conoscenza della verità."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "εἷς κύριος, μία πίστις, ἓν βάπτισμα,",
+        "VUL": "Unus Dominus, una fides, unum baptisma.",
+        "SYN": "один Господь, одна вера, одно крещение,",
+        "NEO": "Il n’y a qu’un Seigneur, une foi, un baptême,",
+        "NAB": "one Lord, one faith, one baptism;",
+        "VAT_ES": "Y sépanlo bien: ni el hombre lujurioso, ni el impuro, ni el avaro –que es un idólatra– tendrán parte en la herencia del Reino de Cristo y de Dios.",
+        "CEI": "Uno solo, infatti, è Dio e uno solo il mediatore fra Dio e gli uomini, l'uomo Cristo Gesù,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "εἷς θεὸς καὶ πατὴρ πάντων, ὁ ἐπὶ πάντων, καὶ διὰ πάντων, καὶ ἐν πᾶσιν ἡμῖν.",
+        "VUL": "Unus Deus et Pater omnium, qui est super omnes, et per omnia, et in omnibus nobis.",
+        "SYN": "один Бог и Отец всех, Который над всеми, и через всех, и во всех нас.",
+        "NEO": "un Dieu, Père de tous, qui est au-dessus de tous, qui agit* par tous, qui est* en tous.",
+        "NAB": "one God and Father of all, who is over all and through all and in all.",
+        "VAT_ES": "No se dejen engañar por falsas razones: todo eso atrae la ira de Dios sobre los que se resisten a obedecerle.",
+        "CEI": "che ha dato se stesso in riscatto per tutti. Questa testimonianza egli l'ha data nei tempi stabiliti,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ἑνὶ δὲ ἑκάστῳ ἡμῶν ἐδόθη ἡ χάρις κατὰ τὸ μέτρον τῆς δωρεᾶς τοῦ χριστοῦ.",
+        "VUL": "Unicuique autem nostrum data est gratia secundum mensuram donationis Christi.",
+        "SYN": "Каждому же из нас дана благодать по мере дара Христова.",
+        "NEO": "Mais à chacun de nous la grâce+ 4:7 IV, 7. La grâce, les charismes, les dons surnaturels conférant une aptitude à remplir les divers emplois et fonctions dans l’Église (vers. II : comp. Rom. xii, 4, 7 ; I Cor. xii, 7 sv., 27 sv.).* a été donnée selon la mesure du don du Christ.",
+        "NAB": "But grace was given to each of us according to the measure of Christ's gift.",
+        "VAT_ES": "No se hagan cómplices de los que obran así!",
+        "CEI": "e di essa io sono stato fatto banditore e apostolo - dico la verità, non mentisco -, maestro dei pagani nella fede e nella verità."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Διὸ λέγει, Ἀναβὰς εἰς ὕψος ᾐχμαλώτευσεν αἰχμαλωσίαν, καὶ ἔδωκεν δόματα τοῖς ἀνθρώποις.",
+        "VUL": "Propter quod dicit : Ascendens in altum, captivam duxit captivitatem : dedit dona hominibus.",
+        "SYN": "Посему и сказано: восшед на высоту, пленил плен и дал дары человекам.",
+        "NEO": "C’est pourquoi il est dit : « Il est monté dans les hauteurs, il a emmené des captifs, et il a fait des largesses aux hommes. »+ 4:8 8. L’Écriture, Ps. lxviii (67), 19. Au lieu de : \\+qt il a fait des dons aux hommes\\+qt*, l’hébreu porte, \\+qt il a reçu les présents des hommes\\+qt*. Ou bien l’Apôtre, avec quelques anciens, a traduit le mot hébreu \\+qt laqach\\+qt* par \\+qt il a donné\\+qt*, ou bien il l’a interprété en ce sens : \\+qt il a reçu pour donner aussitôt\\+qt*.*",
+        "NAB": "Therefore, it says: \"He ascended on high and took prisoners captive; he gave gifts to men.\"",
+        "VAT_ES": "Antes, ustedes eran tinieblas, pero ahora son luz en el Señor. Vivan como hijos de la luz.",
+        "CEI": "Voglio dunque che gli uomini preghino, dovunque si trovino, alzando al cielo mani pure senza ira e senza contese."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Τὸ δέ, Ἀνέβη, τί ἐστιν εἰ μὴ ὅτι καὶ κατέβη πρῶτον εἰς τὰ κατώτερα μέρη τῆς γῆς;",
+        "VUL": "Quod autem ascendit, quid est, nisi quia et descendit primum in inferiores partes terræ ?",
+        "SYN": "А \"восшел\" что означает, как не то, что Он и нисходил прежде в преисподние места земли?",
+        "NEO": "Or que signifie : « Il est monté », sinon qu’il était descendu [d’abord] dans les régions inférieures de la terre ?+ 4:9 9-10. Ps. cxxxix (138), 15 ; Is. xliv, 23 (hébr. et Sept.).*",
+        "NAB": "What does \"he ascended\" mean except that he also descended into the lower (regions) of the earth?",
+        "VAT_ES": "Ahora bien, el fruto de la luz es la bondad, la justicia y la verdad.",
+        "CEI": "Alla stessa maniera facciano le donne, con abiti decenti, adornandosi di pudore e riservatezza, non di trecce e ornamenti d'oro, di perle o di vesti sontuose,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Ὁ καταβάς, αὐτός ἐστιν καὶ ὁ ἀναβὰς ὑπεράνω πάντων τῶν οὐρανῶν, ἵνα πληρώσῃ τὰ πάντα.",
+        "VUL": "Qui descendit, ipse est et qui ascendit super omnes cælos, ut impleret omnia.",
+        "SYN": "Нисшедший, Он же есть и восшедший превыше всех небес, дабы наполнить все.",
+        "NEO": "Celui qui est descendu est celui-là même qui est monté au-dessus de tous les cieux, afin de tout remplir.",
+        "NAB": "The one who descended is also the one who ascended far above all the heavens, that he might fill all things.",
+        "VAT_ES": "Sepan discernir lo que agrada al Señor,",
+        "CEI": "ma di opere buone, come conviene a donne che fanno professione di pietà."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Καὶ αὐτὸς ἔδωκεν τοὺς μὲν ἀποστόλους, τοὺς δὲ προφήτας, τοὺς δὲ εὐαγγελιστάς, τοὺς δὲ ποιμένας καὶ διδασκάλους,",
+        "VUL": "Et ipse dedit quosdam quidem apostolos, quosdam autem prophetas, alios vero evangelistas, alios autem pastores et doctores,",
+        "SYN": "И Он поставил одних Апостолами, других пророками, иных Евангелистами, иных пастырями и учителями,",
+        "NEO": "C’est lui aussi qui a fait les uns apôtres,+ 4:11 11. Apôtres au sens plus large : ceux à qui Dieu a confié une mission analogue à celle des Douze ; \\+qt prophètes\\+qt*, parlant sous l’inspiration dans les assemblées (I Cor. xii, 29) ; \\+qt évangélistes\\+qt*, auxiliaires des apôtres, missionnaires (Act. xxi, 8) ; \\+qt pasteurs et docteurs\\+qt*, préposés aux communautés chrétiennes.* d’autres prophètes, d’autres évangélistes, d’autres pasteurs et docteurs,",
+        "NAB": "And he gave some as apostles, others as prophets, others as evangelists, others as pastors and teachers,",
+        "VAT_ES": "y no participen de las obras estériles de las tinieblas; al contrario, pónganlas en evidencia.",
+        "CEI": "La donna impari in silenzio, con tutta sottomissione."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "πρὸς τὸν καταρτισμὸν τῶν ἁγίων, εἰς ἔργον διακονίας, εἰς οἰκοδομὴν τοῦ σώματος τοῦ χριστοῦ·",
+        "VUL": "ad consummationem sanctorum in opus ministerii, in ædificationem corporis Christi :",
+        "SYN": "к совершению святых, на дело служения, для созидания Тела Христова,",
+        "NEO": "en vue du perfectionnement des saints, pour l’œuvre du ministère, pour l’édification du corps du Christ,",
+        "NAB": "to equip the holy ones for the work of ministry, for building up the body of Christ,",
+        "VAT_ES": "Es verdad que resulta vergonzoso aun mencionar las cosas que esa gente hace ocultamente.",
+        "CEI": "Non concedo a nessuna donna di insegnare, né di dettare legge all'uomo; piuttosto se ne stia in atteggiamento tranquillo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "μέχρι καταντήσωμεν οἱ πάντες εἰς τὴν ἑνότητα τῆς πίστεως καὶ τῆς ἐπιγνώσεως τοῦ υἱοῦ τοῦ θεοῦ, εἰς ἄνδρα τέλειον, εἰς μέτρον ἡλικίας τοῦ πληρώματος τοῦ χριστοῦ·",
+        "VUL": "donec occurramus omnes in unitatem fidei, et agnitionis Filii Dei, in virum perfectum, in mensuram ætatis plenitudinis Christi :",
+        "SYN": "доколе все придем в единство веры и познания Сына Божия, в мужа совершенного, в меру полного возраста Христова;",
+        "NEO": "jusqu’à ce que nous soyons tous parvenus à l’unité de la foi et de la connaissance du Fils de Dieu, à l’état d’homme fait, à la mesure de la stature parfaite du Christ,",
+        "NAB": "until we all attain to the unity of faith and knowledge of the Son of God, to mature manhood, to the extent of the full stature of Christ,",
+        "VAT_ES": "Pero cuando se las pone de manifiesto, aparecen iluminadas por la luz,",
+        "CEI": "Perché prima è stato formato Adamo e poi Eva;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "ἵνα μηκέτι ὦμεν νήπιοι, κλυδωνιζόμενοι καὶ περιφερόμενοι παντὶ ἀνέμῳ τῆς διδασκαλίας, ἐν τῇ κυβείᾳ τῶν ἀνθρώπων, ἐν πανουργίᾳ πρὸς τὴν μεθοδείαν τῆς πλάνης·",
+        "VUL": "ut jam non simus parvuli fluctuantes, et circumferamur omni vento doctrinæ in nequitia hominum, in astutia ad circumventionem erroris.",
+        "SYN": "дабы мы не были более младенцами, колеблющимися и увлекающимися всяким ветром учения, по лукавству человеков, по хитрому искусству обольщения,",
+        "NEO": "afin que nous ne soyons plus des enfants, flottants et emportés à tout vent de doctrine, par la tromperie des hommes, par leur astuce pour induire en erreur ;",
+        "NAB": "so that we may no longer be infants, tossed by waves and swept along by every wind of teaching arising from human trickery, from their cunning in the interests of deceitful scheming.",
+        "VAT_ES": "porque todo lo que se pone de manifiesto es luz. Por eso se dice:",
+        "CEI": "e non fu Adamo ad essere ingannato, ma fu la donna che, ingannata, si rese colpevole di trasgressione."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "ἀληθεύοντες δὲ ἐν ἀγάπῃ αὐξήσωμεν εἰς αὐτὸν τὰ πάντα, ὅς ἐστιν ἡ κεφαλή, ὁ χριστός,",
+        "VUL": "Veritatem autem facientes in caritate, crescamus in illo per omnia, qui est caput Christus :",
+        "SYN": "но истинною любовью все возращали в Того, Который есть глава Христос,",
+        "NEO": "mais que, confessant la vérité, nous continuions à croître à tous égards dans la charité en union avec celui qui est le chef, le Christ.+ 4:15 15. Vulgate : que, pratiquant la vérité dans la charité, nous croissions en intimité avec celui, etc.*",
+        "NAB": "Rather, living the truth in love, we should grow in every way into him who is the head, Christ,",
+        "VAT_ES": "Cuiden mucho su conducta y no procedan como necios, sino como personas sensatas",
+        "CEI": "Essa potrà essere salvata partorendo figli, a condizione di perseverare nella fede, nella carità e nella santificazione, con modestia."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "ἐξ οὗ πᾶν τὸ σῶμα συναρμολογούμενον καὶ συμβιβαζόμενον διὰ πάσης ἁφῆς τῆς ἐπιχορηγίας, κατ’ ἐνέργειαν ἐν μέτρῳ ἑνὸς ἑκάστου μέρους, τὴν αὔξησιν τοῦ σώματος ποιεῖται εἰς οἰκοδομὴν ἑαυτοῦ ἐν ἀγάπῃ.",
+        "VUL": "ex quo totum corpus compactum et connexum per omnem juncturam subministrationis, secundum operationem in mensuram uniuscujusque membri, augmentum corporis facit in ædificationem sui in caritate.",
+        "SYN": "из Которого все тело, составляемое и совокупляемое посредством всяких взаимно скрепляющих связей, при действии в свою меру каждого члена, получает приращение для созидания самого себя в любви.",
+        "NEO": "C’est de lui que tout le corps, coordonné et uni par les liens des membres qui se prêtent un mutuel secours et dont chacun opère selon sa mesure d’activité, grandit et se perfectionne dans la charité.",
+        "NAB": "from whom the whole body, joined and held together by every supporting ligament, with the proper functioning of each part, brings about the body's growth and builds itself up in love.",
+        "VAT_ES": "que saben aprovechar bien el momento presente, porque estos tiempos son malos."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "¶Τοῦτο οὖν λέγω καὶ μαρτύρομαι ἐν κυρίῳ, μηκέτι ὑμᾶς περιπατεῖν, καθὼς καὶ τὰ λοιπὰ ἔθνη περιπατεῖ ἐν ματαιότητι τοῦ νοὸς αὐτῶν,",
+        "VUL": "Hoc igitur dico, et testificor in Domino, ut jam non ambuletis, sicut et gentes ambulant in vanitate sensus sui,",
+        "SYN": "Посему я говорю и заклинаю Господом, чтобы вы более не поступали, как поступают прочие народы, по суетности ума своего,",
+        "NEO": "Voici donc ce que je dis et ce que je déclare dans le Seigneur, c’est que vous ne vous conduisiez plus comme les païens, qui suivent la vanité de leurs pensées.",
+        "NAB": "So I declare and testify in the Lord that you must no longer live as the Gentiles do, in the futility of their minds;",
+        "VAT_ES": "No sean irresponsables, sino traten de saber cuál es la voluntad del Señor."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "ἐσκοτισμένοι τῇ διανοίᾳ, ὄντες ἀπηλλοτριωμένοι τῆς ζωῆς τοῦ θεοῦ διὰ τὴν ἄγνοιαν τὴν οὖσαν ἐν αὐτοῖς, διὰ τὴν πώρωσιν τῆς καρδίας αὐτῶν·",
+        "VUL": "tenebris obscuratum habentes intellectum, alienati a vita Dei per ignorantiam, quæ est in illis, propter cæcitatem cordis ipsorum,",
+        "SYN": "будучи помрачены в разуме, отчуждены от жизни Божией, по причине их невежества и ожесточения сердца их.",
+        "NEO": "Ils ont l’intelligence obscurcie, et* sont éloignés de la vie de Dieu, par l’ignorance et l’aveuglement de leur cœur.",
+        "NAB": "darkened in understanding, alienated from the life of God because of their ignorance, because of their hardness of heart,",
+        "VAT_ES": "No abusen del vino que lleva al libertinaje; más bien, llénense del Espíritu Santo."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "οἵτινες ἀπηλγηκότες ἑαυτοὺς παρέδωκαν τῇ ἀσελγείᾳ, εἰς ἐργασίαν ἀκαθαρσίας πάσης ἐν πλεονεξίᾳ.",
+        "VUL": "qui desperantes, semetipsos tradiderunt impudicitiæ, in operationem immunditiæ omnis in avaritiam.",
+        "SYN": "Они, дойдя до бесчувствия, предались распутству так, что делают всякую нечистоту с ненасытимостью.",
+        "NEO": "Ayant perdu tout sens, ils se sont livrés aux désordres, à toute espèce d’impureté, avec une ardeur insatiable.+ 4:19 19. Tout sens: la Vulgate, d’après une autre leçon, toute \\+qt espérance\\+qt* pour le monde à venir. — \\+qt Avec une ardeur insatiable\\+qt* ; d’autres, \\+qt en y joignant la cupidité\\+qt*.*",
+        "NAB": "they have become callous and have handed themselves over to licentiousness for the practice of every kind of impurity to excess.",
+        "VAT_ES": "Cuando se reúnan, reciten salmos, himnos y cantos espirituales, cantando y celebrando al Señor de todo corazón."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Ὑμεῖς δὲ οὐχ οὕτως ἐμάθετε τὸν χριστόν,",
+        "VUL": "Vos autem non ita didicistis Christum,",
+        "SYN": "Но вы не так познали Христа;",
+        "NEO": "Mais vous, ce n’est pas ainsi que vous avez appris à connaître le Christ,",
+        "NAB": "That is not how you learned Christ,",
+        "VAT_ES": "Siempre y por cualquier motivo, den gracias a Dios, nuestro Padre, en nombre de nuestro Señor Jesucristo."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "εἴγε αὐτὸν ἠκούσατε καὶ ἐν αὐτῷ ἐδιδάχθητε, καθώς ἐστιν ἀλήθεια ἐν τῷ Ἰησοῦ·",
+        "VUL": "si tamen illum audistis, et in ipso edocti estis, sicut est veritas in Jesu,",
+        "SYN": "потому что вы слышали о Нем и в Нем научились, -- так как истина во Иисусе, --",
+        "NEO": "si cependant vous l’avez bien compris, et que vous ayez été instruits, suivant la vérité qui est en Jésus,",
+        "NAB": "assuming that you have heard of him and were taught in him, as truth is in Jesus,",
+        "VAT_ES": "Sométanse los unos a los otros, por consideración a Cristo."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "ἀποθέσθαι ὑμᾶς, κατὰ τὴν προτέραν ἀναστροφήν, τὸν παλαιὸν ἄνθρωπον, τὸν φθειρόμενον κατὰ τὰς ἐπιθυμίας τῆς ἀπάτης·",
+        "VUL": "deponere vos secundum pristinam conversationem veterem hominem, qui corrumpitur secundum desideria erroris.",
+        "SYN": "отложить прежний образ жизни ветхого человека, истлевающего в обольстительных похотях,",
+        "NEO": "à vous dépouiller, en ce qui concerne votre vie passée, du vieil homme corrompu par les convoitises trompeuses,",
+        "NAB": "that you should put away the old self of your former way of life, corrupted through deceitful desires,",
+        "VAT_ES": "Las mujeres deben respetar a su marido como al Señor,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "ἀνανεοῦσθαι δὲ τῷ πνεύματι τοῦ νοὸς ὑμῶν,",
+        "VUL": "Renovamini autem spiritu mentis vestræ,",
+        "SYN": "а обновиться духом ума вашего",
+        "NEO": "à vous renouveler dans votre esprit et dans vos pensées,+ 4:23 23. Ici et vers. 24, la Vulgate met les verbes à l’impératif.*",
+        "NAB": "and be renewed in the spirit of your minds,",
+        "VAT_ES": "porque el varón es la cabeza de la mujer, como Cristo es la Cabeza y el Salvador de la Iglesia, que es su Cuerpo."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "καὶ ἐνδύσασθαι τὸν καινὸν ἄνθρωπον, τὸν κατὰ θεὸν κτισθέντα ἐν δικαιοσύνῃ καὶ ὁσιότητι τῆς ἀληθείας.",
+        "VUL": "et induite novum hominem, qui secundum Deum creatus est in justitia, et sanctitate veritatis.",
+        "SYN": "и облечься в нового человека, созданного по Богу, в праведности и святости истины.",
+        "NEO": "et à revêtir l’homme nouveau, créé selon Dieu+ 4:24 24. Selon Dieu, à l’image de Dieu (Col. iii, 10. Comp. Gen. i, 27), ainsi que l’homme avait été créé à l’origine.* dans une justice et une sainteté véritables.",
+        "NAB": "and put on the new self, created in God's way in righteousness and holiness of truth.",
+        "VAT_ES": "Así como la Iglesia está sometida a Cristo, de la misma manera las mujeres deben respetar en todo a su marido."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "¶Διὸ ἀποθέμενοι τὸ ψεῦδος λαλεῖτε ἀλήθειαν ἕκαστος μετὰ τοῦ πλησίον αὐτοῦ· ὅτι ἐσμὲν ἀλλήλων μέλη.",
+        "VUL": "Propter quod deponentes mendacium, loquimini veritatem unusquisque cum proximo suo : quoniam sumus invicem membra.",
+        "SYN": "Посему, отвергнув ложь, говорите истину каждый ближнему своему, потому что мы члены друг другу.",
+        "NEO": "C’est pourquoi, renonçant au mensonge, parlez selon la vérité, chacun dans ses rapports avec son prochain, car nous sommes membres les uns des autres.",
+        "NAB": "Therefore, putting away falsehood, speak the truth, each one to his neighbor, for we are members one of another.",
+        "VAT_ES": "Maridos, amen a su esposa, como Cristo amó a la Iglesia y se entregó por ella,"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Ὀργίζεσθε καὶ μὴ ἁμαρτάνετε· ὁ ἥλιος μὴ ἐπιδυέτω ἐπὶ τῷ παροργισμῷ ὑμῶν·",
+        "VUL": "Irascimini, et nolite peccare : sol non occidat super iracundiam vestram.",
+        "SYN": "Гневаясь, не согрешайте: солнце да не зайдет во гневе вашем;",
+        "NEO": "« Êtes-vous en colère, ne péchez pas ; » que le soleil ne se couche pas sur votre irritation.",
+        "NAB": "Be angry but do not sin; do not let the sun set on your anger,",
+        "VAT_ES": "para santificarla. El la purificó con el bautismo del agua y la palabra,"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "μηδὲ δίδοτε τόπον τῷ διαβόλῳ.",
+        "VUL": "Nolite locum dare diabolo :",
+        "SYN": "и не давайте места диаволу.",
+        "NEO": "Ne donnez pas non plus accès au diable.",
+        "NAB": "and do not leave room for the devil.",
+        "VAT_ES": "porque quiso para sí una Iglesia resplandeciente, sin mancha ni arruga y sin ningún defecto, sino santa e inmaculada."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Ὁ κλέπτων μηκέτι κλεπτέτω· μᾶλλον δὲ κοπιάτω, ἐργαζόμενος τὸ ἀγαθὸν ταῖς χερσίν, ἵνα ἔχῃ μεταδιδόναι τῷ χρείαν ἔχοντι.",
+        "VUL": "qui furabatur, jam non furetur : magis autem laboret, operando manibus suis, quod bonum est, ut habeat unde tribuat necessitatem patienti.",
+        "SYN": "Кто крал, вперед не кради, а лучше трудись, делая своими руками полезное, чтобы было из чего уделять нуждающемуся.",
+        "NEO": "Que celui qui dérobait ne dérobe plus ; mais plutôt qu’il s’occupe en travaillant de ses mains à quelque honnête ouvrage, afin d’avoir de quoi donner à celui qui est dans le besoin.",
+        "NAB": "The thief must no longer steal, but rather labor, doing honest work with his (own) hands, so that he may have something to share with one in need.",
+        "VAT_ES": "Del mismo modo, los maridos deben amar a su mujer como a su propio cuerpo. El que ama a su esposa se ama a sí mismo."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Πᾶς λόγος σαπρὸς ἐκ τοῦ στόματος ὑμῶν μὴ ἐκπορευέσθω, ἀλλ’ εἴ τις ἀγαθὸς πρὸς οἰκοδομὴν τῆς χρείας, ἵνα δῷ χάριν τοῖς ἀκούουσιν.",
+        "VUL": "Omnis sermo malus ex ore vestro non procedat : sed si quis bonus ad ædificationem fidei ut det gratiam audientibus.",
+        "SYN": "Никакое гнилое слово да не исходит из уст ваших, а только доброе для назидания в вере, дабы оно доставляло благодать слушающим.",
+        "NEO": "Qu’il ne sorte de votre bouche aucune parole mauvaise ; mais quelque bon discours propre à édifier, selon le besoin,+ 4:29 29. Selon le besoin. La Vulgate, d’après une autre leçon, \\+qt pour l’édification de la foi\\+qt*.* afin qu’il fasse du bien à ceux qui l’entendent.",
+        "NAB": "No foul language should come out of your mouths, but only such as is good for needed edification, that it may impart grace to those who hear.",
+        "VAT_ES": "Nadie menosprecia a su propio cuerpo, sino que lo alimenta y lo cuida. Así hace Cristo por la Iglesia,"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Καὶ μὴ λυπεῖτε τὸ πνεῦμα τὸ ἅγιον τοῦ θεοῦ, ἐν ᾧ ἐσφραγίσθητε εἰς ἡμέραν ἀπολυτρώσεως.",
+        "VUL": "Et nolite contristare Spiritum Sanctum Dei : in quo signati estis in diem redemptionis.",
+        "SYN": "И не оскорбляйте Святаго Духа Божия, Которым вы запечатлены в день искупления.",
+        "NEO": "N’attristez pas le Saint-Esprit de Dieu, par lequel vous avez été marqués d’un sceau pour le jour de la rédemption.",
+        "NAB": "And do not grieve the holy Spirit of God, with which you were sealed for the day of redemption.",
+        "VAT_ES": "por nosotros, que somos los miembros de su Cuerpo."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "Πᾶσα πικρία καὶ θυμὸς καὶ ὀργὴ καὶ κραυγὴ καὶ βλασφημία ἀρθήτω ἀφ’ ὑμῶν, σὺν πάσῃ κακίᾳ·",
+        "VUL": "Omnis amaritudo, et ira, et indignatio, et clamor, et blasphemia tollatur a vobis cum omni malitia.",
+        "SYN": "Всякое раздражение и ярость, и гнев, и крик, и злоречие со всякою злобою да будут удалены от вас;",
+        "NEO": "Que toute aigreur, toute animosité, toute colère, toute clameur, toute médisance soient bannies du milieu de vous, ainsi que toute méchanceté.",
+        "NAB": "All bitterness, fury, anger, shouting, and reviling must be removed from you, along with all malice.",
+        "VAT_ES": "Por eso, el hombre dejará a su padre y a su madre para unirse a su mujer, y los dos serán una sola carne."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "γίνεσθε δὲ εἰς ἀλλήλους χρηστοί, εὔσπλαγχνοι, χαριζόμενοι ἑαυτοῖς, καθὼς καὶ ὁ θεὸς ἐν χριστῷ ἐχαρίσατο ἡμῖν.",
+        "VUL": "Estote autem invicem benigni, misericordes, donantes invicem sicut et Deus in Christo donavit vobis.",
+        "SYN": "но будьте друг ко другу добры, сострадательны, прощайте друг друга, как и Бог во Христе простил вас.",
+        "NEO": "Soyez bons les uns envers les autres, miséricordieux, vous pardonnant mutuellement, comme Dieu vous a pardonné dans le Christ.",
+        "NAB": "(And) be kind to one another, compassionate, forgiving one another as God has forgiven you in Christ.",
+        "VAT_ES": "Este es un gran misterio: y yo digo que se refiere a Cristo y a la Iglesia."
+      }
+    }
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "OSE_002",
+  "book_key": "OSE",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְֽ֠/הָיָה מִסְפַּ֤ר בְּנֵֽי יִשְׂרָאֵל֙ כְּ/ח֣וֹל הַ/יָּ֔ם אֲשֶׁ֥ר לֹֽא יִמַּ֖ד וְ/לֹ֣א יִסָּפֵ֑ר וְֽ֠/הָיָה בִּ/מְק֞וֹם אֲשֶׁר יֵאָמֵ֤ר לָ/הֶם֙ לֹֽא עַמִּ֣/י אַתֶּ֔ם יֵאָמֵ֥ר לָ/הֶ֖ם בְּנֵ֥י אֵֽל חָֽי׃",
+        "LXX": "εἴπατε τῷ ἀδελφῷ ὑμῶν Λαός μου, καὶ τῇ ἀδελφῇ ὑμῶν Ἐλεημένη.",
+        "VUL": "Dicite fratribus vestris : Populus meus ; et sorori vestræ : Misericordiam consecuta.",
+        "SYN": "Говорите братьям вашим: \"Мой народ\", и сестрам вашим: \"Помилованная\".",
+        "NEO": "Le nombre des enfants d’Israël sera comme le sable de la mer, qui ne se mesure, ni ne se compte ; et au lieu où on leur disait : « Vous n’êtes pas mon peuple, » on leur dira : « Fils du Dieu vivant !",
+        "NAB": "Protest against your mother, protest! for she is not my wife, and I am not her husband. Let her remove her harlotry from before her, her adultery from between her breasts,",
+        "VAT_ES": "El número de los israelitas será como la arena del mar, que no se puede medir ni contar; y en lugar de decirles: «Ustedes no son mi pueblo», les dirán: «Hijos del Dios viviente».",
+        "CEI": "Il numero degli Israeliti sarà come la sabbia del mare, che non si può misurare né contare. Invece di sentirsi dire: \"Non siete mio popolo\", saranno chiamati figli del Dio vivente."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ֠/נִקְבְּצוּ בְּנֵֽי יְהוּדָ֤ה וּ/בְנֵֽי יִשְׂרָאֵל֙ יַחְדָּ֔ו וְ/שָׂמ֥וּ לָ/הֶ֛ם רֹ֥אשׁ אֶחָ֖ד וְ/עָל֣וּ מִן הָ/אָ֑רֶץ כִּ֥י גָד֖וֹל י֥וֹם יִזְרְעֶֽאל׃",
+        "LXX": "Κρίθητε πρὸς τὴν μητέρα ὑμῶν, κρίθητε, ὅτι αὕτη οὐ γυνή μου καὶ ἐγὼ οὐκ ἀνὴρ αὐτῆς. καὶ ἐξαρῶ τὴν πορνίαν αὐτῆς ἐκ προσώπου μου καὶ τὴν μοιχείαν αὐτῆς ἐκ μέσου μαστῶν αὐτῆς,",
+        "VUL": "[Judicate matrem vestram, judicate,/ quoniam ipsa non uxor mea,/ et ego non vir ejus./ Auferat fornicationes suas a facie sua,/ et adulteria sua de medio uberum suorum ;/",
+        "SYN": "Судитесь с вашею матерью, судитесь; ибо она не жена Моя, и Я не муж ее; пусть она удалит блуд от лица своего и прелюбодеяние от грудей своих,",
+        "NEO": "Et les enfants de Juda et les enfants d’Israël se réuniront, ils se donneront un même chef et monteront hors du pays, car grande sera la journée de Jezrahel.",
+        "NAB": "Or I will strip her naked, leaving her as on the day of her birth; I will make her like the desert, reduce her to an arid land, and slay her with thirst.",
+        "VAT_ES": "Entonces los hijos de Judá se reunirán con los hijos de Israel: designarán para sí un jefe único y desbordarán del país, porque será grande el día de Izreel.",
+        "CEI": "I figli di Giuda e i figli d'Israele si riuniranno insieme, si daranno un unico capo e saliranno dal proprio territorio, perchè grande sarà il giorno di Izreèl!"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אִמְר֥וּ לַ/אֲחֵי/כֶ֖ם עַמִּ֑/י וְ/לַ/אֲחֽוֹתֵי/כֶ֖ם רֻחָֽמָה׃",
+        "LXX": "ὅπως ἂν ἐκδύσω αὐτὴν γυμνήν, καὶ ἀποκαταστήσω αὐτὴν καθὼς ἡ ἡμέρα γενέσεως αὐτῆς· καὶ θήσω αὐτὴν ἔρημον καὶ τάξω αὐτὴν ὡς γῆν ἄνυδρον, καὶ ἀποκτενῶ αὐτὴν ἐν δίψει·",
+        "VUL": "ne forte expoliem eam nudam,/ et statuam eam secundum diem nativitatis suæ,/ et ponam eam quasi solitudinem,/ et statuam eam velut terram inviam,/ et interficiam eam siti./",
+        "SYN": "дабы Я не разоблачил ее донага и не выставил ее, как в день рождения ее, не сделал ее пустынею, не обратил ее в землю сухую и не уморил ее жаждою.",
+        "NEO": "Dites à vos frères : « Ammi ! » et à vos sœurs : « Ruchama ! »",
+        "NAB": "I will have no pity on her children, for they are the children of harlotry.",
+        "VAT_ES": "Digan a sus hermanos: «Mi pueblo» y a sus hermanas: «compadecida».",
+        "CEI": "Dite ai vostri fratelli: \"Popolo mio\" e alle vostre sorelle: \"Amata\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "רִ֤יבוּ בְ/אִמְּ/כֶם֙ רִ֔יבוּ כִּֽי הִיא֙ לֹ֣א אִשְׁתִּ֔/י וְ/אָנֹכִ֖י לֹ֣א אִישָׁ֑/הּ וְ/תָסֵ֤ר זְנוּנֶ֨י/הָ֙ מִ/פָּנֶ֔י/ה וְ/נַאֲפוּפֶ֖י/הָ מִ/בֵּ֥ין שָׁדֶֽי/הָ׃",
+        "LXX": "καὶ τὰ τέκνα αὐτῆς οὐ μὴ ἐλεήσω, ὅτι τέκνα πορνείας ἐστίν.",
+        "VUL": "Et filiorum illius non miserebor,/ quoniam filii fornicationum sunt./",
+        "SYN": "И детей ее не помилую, потому что они дети блуда.",
+        "NEO": "Plaidez contre votre mère, plaidez ! car elle n’est plus ma femme, et moi je ne suis plus son mari. Qu’elle éloigne de sa face ses prostitutions, et ses adultères du milieu de ses seins,",
+        "NAB": "Yes, their mother has played the harlot; she that conceived them has acted shamefully. \"I will go after my lovers,\" she said, \"who give me my bread and my water, my wool and my flax, my oil and my drink.\"",
+        "VAT_ES": "&iexcl;Acusen a su madre, acúsenla! Porque ella no es mi mujer ni yo soy su marido. Que aparte de su rostro sus prostituciones, y sus adulterios de entre sus senos.",
+        "CEI": "Accusate vostra madre, accusatela, perchè essa non è più mia moglie e io non sono più suo marito! Si tolga dalla faccia i segni delle sue prostituzioni e i segni del suo adulterio dal suo petto;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "פֶּן אַפְשִׁיטֶ֣/נָּה עֲרֻמָּ֔ה וְ/הִ֨צַּגְתִּ֔י/הָ כְּ/י֖וֹם הִוָּֽלְדָ֑/הּ וְ/שַׂמְתִּ֣י/הָ כַ/מִּדְבָּ֗ר וְ/שַׁתִּ֨/הָ֙ כְּ/אֶ֣רֶץ צִיָּ֔ה וַ/הֲמִתִּ֖י/הָ בַּ/צָּמָֽא׃",
+        "LXX": "ὅτι ἐξεπόρνευσεν ἡ μήτηρ αὐτῶν, κατῄσχυνεν ἡ τεκοῦσα αὐτά, ὅτι εἶπεν Πορεύσομαι ὀπίσω τῶν ἐραστῶν μου τῶν διδόντων μοι τοὺς ἄρτους μου καὶ τὸ ὕδωρ μου καὶ τὰ ἱμάτιά μου καὶ τὰ ὀθόνιά μου, τὸ ἔλαιόν μου καὶ πάντα ὅσα μοι καθήκει.",
+        "VUL": "Quia fornicata est mater eorum,/ confusa est quæ concepit eos ;/ quia dixit : Vadam post amatores meos,/ qui dant panes mihi, et aquas meas,/ lanam meam, et linum meum,/ oleum meum, et potum meum./",
+        "SYN": "Ибо блудодействовала мать их и осрамила себя зачавшая их; ибо говорила: \"пойду за любовниками моими, которые дают мне хлеб и воду, шерсть и лен, елей и напитки\".",
+        "NEO": "de peur que je ne la déshabille à nu, et que je ne la mette telle qu’au jour de sa naissance, que je ne la rende pareille au désert, faisant d’elle une terre desséchée, et que je ne la fasse mourir de soif.",
+        "NAB": "Since she has not known that it was I who gave her the grain, the wine, and the oil, And her abundance of silver, and of gold, which they used for Baal,",
+        "VAT_ES": "Si no, la desnudaré por completo y la dejaré como el día en que nació; haré de ella un desierto, la convertiré en tierra árida y la haré morir de sed.",
+        "CEI": "altrimenti la spoglierò tutta nuda e la renderò come quando nacque e la ridurrò a un deserto, come una terra arida, e la farò morire di sete."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/אֶת בָּנֶ֖י/הָ לֹ֣א אֲרַחֵ֑ם כִּֽי בְנֵ֥י זְנוּנִ֖ים הֵֽמָּה׃",
+        "LXX": "διὰ τοῦτο ἰδοὺ ἐγὼ φράσσω τὴν ὁδὸν αὐτῆς ἐν σκόλοψιν, καὶ ἀνοικοδομήσω τὰς ὁδοὺς καὶ τὴν τρίβον αὐτῆς οὐ μὴ εὕρῃ·",
+        "VUL": "Propter hoc ecce ego sepiam viam tuam spinis,/ et sepiam eam maceria, et semitas suas non inveniet./",
+        "SYN": "За то вот, Я загорожу путь ее тернами и обнесу ее оградою, и она не найдет стезей своих,",
+        "NEO": "Je n’aurai pas compassion de ses enfants, car ce sont des enfants de prostitution.",
+        "NAB": "Therefore I will take back my grain in its time, and my wine in its season; I will snatch away my wool and my flax, with which she covers her nakedness.",
+        "VAT_ES": "Y no tendré compasión de sus hijos, porque son hijos de prostitución.",
+        "CEI": "I suoi figli non li amerò, perchè sono figli di prostituzione."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּ֤י זָֽנְתָה֙ אִמָּ֔/ם הֹבִ֖ישָׁה הֽוֹרָתָ֑/ם כִּ֣י אָמְרָ֗ה אֵלְכָ֞ה אַחֲרֵ֤י מְאַהֲבַ/י֙ נֹתְנֵ֤י לַחְמִ/י֙ וּ/מֵימַ֔/י צַמְרִ֣/י וּ/פִשְׁתִּ֔/י שַׁמְנִ֖/י וְ/שִׁקּוּיָֽ/י׃",
+        "LXX": "καὶ καταδιώξεται τοὺς ἐραστὰς αὐτῆς καὶ οὐ μὴ καταλάβῃ αὐτούς, καὶ ζητήσει αὐτοὺς καὶ οὐ μὴ εὕρῃ αὐτούς, καὶ ἐρεῖ Πορεύσομαι καὶ ἐπιστρέψω πρὸς τὸν ἄνδρα μου τὸν πρότερον, ὅτι καλῶς μοι ἦν τότε ἢ νῦν.",
+        "VUL": "Et sequetur amatores suos, et non apprehendet eos ;/ et quæret eos, et non inveniet :/ et dicet : Vadam, et revertar ad virum meum priorem,/ quia bene mihi erat tunc magis quam nunc./",
+        "SYN": "и погонится за любовниками своими, но не догонит их, и будет искать их, но не найдет, и скажет: \"пойду я, и возвращусь к первому мужу моему; ибо тогда лучше было мне, нежели теперь\".",
+        "NEO": "Car leur mère s’est prostituée, celle qui les a conçus a fait des choses honteuses ; elle a dit : « J’irai après mes amants, qui me donnent mon pain et mon eau, ma laine et mon lin, mon huile et ma boisson. »",
+        "NAB": "So now I will lay bare her shame before the eyes of her lovers, and no one can deliver her out of my hand.",
+        "VAT_ES": "Sí, su madre se prostituyó, la que los concibió se cubrió de verg&uuml;enza, porque dijo: «Iré detrás de mis amantes, los que me dan mi pan y mi agua, mi lana y mi lino, mi aceite y mis bebidas».",
+        "CEI": "La loro madre si è prostituita, la loro genitrice si è coperta di vergogna. Essa ha detto: \"Seguirò i miei amanti, che mi danno il mio pane e la mia acqua, la mia lana, il mio lino, il mio olio e le mie bevande\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "לָ/כֵ֛ן הִנְ/נִי שָׂ֥ךְ אֶת דַּרְכֵּ֖/ךְ בַּ/סִּירִ֑ים וְ/גָֽדַרְתִּי֙ אֶת גְּדֵרָ֔/הּ וּ/נְתִיבוֹתֶ֖י/הָ לֹ֥א תִמְצָֽא׃",
+        "LXX": "καὶ αὕτη οὐκ ἔγνω ὅτι ἐγὼ ἔδωκα αὐτῇ τὸν σῖτον καὶ τὸν οἶνον καὶ τὸ ἔλαιον, καὶ ἀργύριον ἐπλήθυνα αὐτῇ· αὕτη δὲ ἀργυρᾶ καὶ χρυσᾶ ἐποίησεν τῇ Βάαλ.",
+        "VUL": "Et hæc nescivit, quia ego dedi ei frumentum, et vinum, et oleum,/ et argentum multiplicavi ei, et aurum,/ quæ fecerunt Baal./",
+        "SYN": "А не знала она, что Я, Я давал ей хлеб и вино и елей и умножил у нее серебро и золото, из которого сделали _истукана_ Ваала.",
+        "NEO": "C’est pourquoi voici que je vais fermer ton chemin avec des ronces ; j’élèverai un mur, et elle ne trouvera plus ses sentiers.",
+        "NAB": "I will bring an end to all her joy, her feasts, her new moons, her sabbaths, and all her solemnities.",
+        "VAT_ES": "Por eso voy a obstruir su camino con espinas, la cercaré con un muro, y no encontrará sus senderos.",
+        "CEI": "Perciò ecco, ti sbarrerò la strada di spine e ne cingerò il recinto di barriere e non ritroverà i suoi sentieri."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/רִדְּפָ֤ה אֶת מְאַהֲבֶ֨י/הָ֙ וְ/לֹֽא תַשִּׂ֣יג אֹתָ֔/ם וּ/בִקְשָׁ֖תַ/ם וְ/לֹ֣א תִמְצָ֑א וְ/אָמְרָ֗ה אֵלְכָ֤ה וְ/אָשׁ֨וּבָה֙ אֶל אִישִׁ֣/י הָֽ/רִאשׁ֔וֹן כִּ֣י ט֥וֹב לִ֛/י אָ֖ז מֵ/עָֽתָּה׃",
+        "LXX": "διὰ τοῦτο ἐπιστρέψω καὶ κομιοῦμαι τὸν σῖτόν μου καθ’ ὥραν αὐτοῦ καὶ τὸν οἶνόν μου ἐν καιρῷ αὐτοῦ, καὶ ἀφελοῦμαι τὰ ἱμάτιά μου καὶ τὰ ὀθόνιά μου τοῦ μὴ καλύπτειν τὴν ἀσχημοσύνην αὐτῆς·",
+        "VUL": "Idcirco convertar, et sumam frumentum meum in tempore suo,/ et vinum meum in tempore suo./ Et liberabo lanam meam et linum meum,/ quæ operiebant ignominiam ejus./",
+        "SYN": "За то Я возьму назад хлеб Мой в его время и вино Мое в его пору и отниму шерсть и лен Мой, чем покрывается нагота ее.",
+        "NEO": "Elle poursuivra ses amants et ne les atteindra pas ; elle les cherchera et ne les trouvera pas. Puis elle dira : « J’irai et je retournerai vers mon premier mari, car j’étais plus heureuse alors que maintenant. »",
+        "NAB": "I will lay waste her vines and fig trees, of which she said, \"These are the hire my lovers have given me\"; I will turn them into rank growth and wild beasts shall devour them.",
+        "VAT_ES": "Irá detrás de sus amantes y no los alcanzará, los buscará y no los encontrará. Entonces dirá: Volveré con mi primer marido, porque antes me iba mejor que ahora».",
+        "CEI": "Inseguirà i suoi amanti, ma non li raggiungerà, li cercherà senza trovarli. Allora dirà: \"Ritornerò al mio marito di prima perchè ero più felice di ora\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/הִיא֙ לֹ֣א יָֽדְעָ֔ה כִּ֤י אָֽנֹכִי֙ נָתַ֣תִּי לָ֔/הּ הַ/דָּגָ֖ן וְ/הַ/תִּיר֣וֹשׁ וְ/הַ/יִּצְהָ֑ר וְ/כֶ֨סֶף הִרְבֵּ֥יתִי לָ֛/הּ וְ/זָהָ֖ב עָשׂ֥וּ לַ/בָּֽעַל׃",
+        "LXX": "καὶ νῦν ἀποκαλύψω τὴν ἀκαθαρσίαν αὐτῆς ἐνώπιον τῶν ἐραστῶν αὐτῆς, καὶ οὐδεὶς οὐ μὴ ἐξέληται αὐτὴν ἐκ χειρός μου·",
+        "VUL": "Et nunc revelabo stultitiam ejus in oculis amatorum ejus ;/ et vir non eruet eam de manu mea ;/",
+        "SYN": "И ныне открою срамоту ее пред глазами любовников ее, и никто не исторгнет ее из руки Моей.",
+        "NEO": "Elle n’a pas reconnu que c’est moi qui lui ai donné le froment, le vin nouveau et l’huile, qui lui ai multiplié l’argent et l’or, qu’ils ont employés pour Baal.",
+        "NAB": "I will punish her for the days of the Baals, for whom she burnt incense While she decked herself out with her rings and her jewels, and, in going after her lovers, forgot me, says the LORD.",
+        "VAT_ES": "Ella no reconoció que era yo el que le daba el trigo, el vino nuevo y el aceite fresco; el que le prodigaba la plata y el oro que ellos emplearon para Baal.",
+        "CEI": "Non capì che io le davo grano, vino nuovo e olio e le prodigavo l'argento e l'oro che hanno usato per Baal."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "לָ/כֵ֣ן אָשׁ֔וּב וְ/לָקַחְתִּ֤י דְגָנִ/י֙ בְּ/עִתּ֔/וֹ וְ/תִירוֹשִׁ֖/י בְּ/מֽוֹעֲד֑/וֹ וְ/הִצַּלְתִּי֙ צַמְרִ֣/י וּ/פִשְׁתִּ֔/י לְ/כַסּ֖וֹת אֶת עֶרְוָתָֽ/הּ׃",
+        "LXX": "καὶ ἀποστρέψω πάσας τὰς εὐφροσύνας αὐτῆς, ἑορτὰς αὐτῆς καὶ τὰς νουμηνίας αὐτῆς καὶ τὰ σάββατα αὐτῆς καὶ πάσας τὰς πανηγύρεις αὐτῆς·",
+        "VUL": "et cessare faciam omne gaudium ejus,/ solemnitatem ejus, neomeniam ejus, sabbatum ejus,/ et omnia festa tempora ejus./",
+        "SYN": "И прекращу у нее всякое веселье, праздники ее и новомесячия ее, и субботы ее, и все торжества ее.",
+        "NEO": "C’est pourquoi je reprendrai mon froment en son temps, et mon vin nouveau dans sa saison, et je retirerai ma laine et mon lin, qui servent à couvrir sa nudité.",
+        "NAB": "Therefore, I will hedge in her way with thorns and erect a wall against her, so that she cannot find her paths.",
+        "VAT_ES": "Por eso retiraré mi trigo a su tiempo y mi vino en su estación; arrancaré mi lana y mi lino, con los que cubría su desnudez.",
+        "CEI": "Perciò anch'io tornerò a riprendere il mio grano, a suo tempo, il mio vino nuovo nella sua stagione; ritirerò la lana e il lino che dovevan coprire le sue nudità."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֛ה אֲגַלֶּ֥ה אֶת נַבְלֻתָ֖/הּ לְ/עֵינֵ֣י מְאַהֲבֶ֑י/הָ וְ/אִ֖ישׁ לֹֽא יַצִּילֶ֥/נָּה מִ/יָּדִֽ/י׃",
+        "LXX": "καὶ ἀφανιῶ ἄμπελον αὐτῆς καὶ τὰς συκᾶς αὐτῆς, ὅσα εἶπεν Μισθώματά μου ταῦτά ἐστιν ἃ ἔδωκάν μοι οἱ ἐρασταί μου, καὶ θήσομαι αὐτὰ εἰς μαρτύριον, καὶ καταφάγεται αὐτὰ τὰ θηρία τοῦ ἀγροῦ καὶ τὰ πετεινὰ τοῦ οὐρανοῦ καὶ τὰ ἑρπετὰ τῆς γῆς·",
+        "VUL": "Et corrumpam vineam ejus, et ficum ejus,/ de quibus dixit : Mercedes hæ meæ sunt,/ quas dederunt mihi amatores mei ;/ et ponam eam in saltum,/ et comedet eam bestia agri./",
+        "SYN": "И опустошу виноградные лозы ее и смоковницы ее, о которых она говорит: \"это у меня подарки, которые надарили мне любовники мои\"; и Я превращу их в лес, и полевые звери поедят их.",
+        "NEO": "Et maintenant je découvrirai sa honte, aux yeux de ses amants, et personne ne la dégagera de ma main.",
+        "NAB": "If she runs after her lovers, she shall not overtake them; if she looks for them she shall not find them. Then she shall say, \"I will go back to my first husband, for it was better with me then than now.\"",
+        "VAT_ES": "Ahora descubriré su deshonra a la vista de todos sus amantes, y nadie la librará de mi mano.",
+        "CEI": "Scoprirò allora le sue vergogne agli occhi dei suoi amanti e nessuno la toglierà dalle mie mani."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/הִשְׁבַּתִּי֙ כָּל מְשׂוֹשָׂ֔/הּ חַגָּ֖/הּ חָדְשָׁ֣/הּ וְ/שַׁבַּתָּ֑/הּ וְ/כֹ֖ל מוֹעֲדָֽ/הּ׃",
+        "LXX": "καὶ ἐκδικήσω ἐπ’ αὐτὴν τὰς ἡμέρας τῶν Βααλεὶμ ἐν αἷς ἐπέθυεν αὐτοῖς, καὶ περιετίθετο τὰ ἐνώτια αὐτῆς καὶ τὰ καθόρμια αὐτῆς καὶ ἐπορεύετο ὀπίσω τῶν ἐραστῶν αὐτῆς, ἐμοῦ δὲ ἐπελάθετο, λέγει Κύριος.",
+        "VUL": "Et visitabo super eam dies Baalim,/ quibus accendebat incensum,/ et ornabatur inaure sua, et monili suo./ Et ibat post amatores suos,/ et mei obliviscebatur, dicit Dominus./",
+        "SYN": "И накажу ее за дни служения Ваалам, когда она кадила им и, украсив себя серьгами и ожерельями, ходила за любовниками своими, а Меня забывала, говорит Господь.",
+        "NEO": "Je ferai cesser toutes ses réjouissances, ses fêtes, ses nouvelles lunes, ses sabbats, et toutes ses solennités.",
+        "NAB": "So I will allure her; I will lead her into the desert and speak to her heart.",
+        "VAT_ES": "Haré cesar toda su alegría, sus fiestas, sus novilunios, sus sábados y todas sus solemnidades.",
+        "CEI": "Farò cessare tutte le sue gioie, le feste, i noviluni, i sabati, tutte le sue solennità."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/הֲשִׁמֹּתִ֗י גַּפְנָ/הּ֙ וּ/תְאֵ֣נָתָ֔/הּ אֲשֶׁ֣ר אָמְרָ֗ה אֶתְנָ֥ה הֵ֨מָּה֙ לִ֔/י אֲשֶׁ֥ר נָֽתְנוּ לִ֖/י מְאַֽהֲבָ֑/י וְ/שַׂמְתִּ֣י/ם לְ/יַ֔עַר וַ/אֲכָלָ֖תַ/ם חַיַּ֥ת הַ/שָּׂדֶֽה׃",
+        "LXX": "διὰ τοῦτο ἰδοὺ ἐγὼ πλανῶ αὐτὴν καὶ τάξω αὐτὴν ὡς ἔρημον, καὶ λαλήσω ἐπὶ τὴν καρδίαν αὐτῆς,",
+        "VUL": "Propter hoc ecce ego lactabo eam,/ et ducam eam in solitudinem,/ et loquar ad cor ejus./",
+        "SYN": "Посему вот, и Я увлеку ее, приведу ее в пустыню, и буду говорить к сердцу ее.",
+        "NEO": "Je dévasterai ses vignes et ses figuiers dont elle disait : « C’est le salaire que m’ont donné mes amants ; » et je les réduirai en forêts, et les bêtes sauvages les dévoreront.",
+        "NAB": "From there I will give her the vineyards she had, and the valley of Achor as a door of hope. She shall respond there as in the days of her youth, when she came up from the land of Egypt.",
+        "VAT_ES": "Devastaré su viña y su higuera, de las que ella decía: «Este es el salario que me dieron mis amantes». Las convertiré en una selva y las devorarán los animales del campo.",
+        "CEI": "Devasterò le sue viti e i suoi fichi, di cui essa diceva: \"Ecco il dono che mi han dato i miei amanti\". La ridurrò a una sterpaglia e a un pascolo di animali selvatici."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וּ/פָקַדְתִּ֣י עָלֶ֗י/הָ אֶת יְמֵ֤י הַ/בְּעָלִים֙ אֲשֶׁ֣ר תַּקְטִ֣יר לָ/הֶ֔ם וַ/תַּ֤עַד נִזְמָ/הּ֙ וְ/חֶלְיָתָ֔/הּ וַ/תֵּ֖לֶךְ אַחֲרֵ֣י מְאַהֲבֶ֑י/הָ וְ/אֹתִ֥/י שָׁכְחָ֖ה נְאֻם יְהוָֽה׃",
+        "LXX": "καὶ δώσω αὐτῇ τὰ κτήματα αὐτῆς ἐκεῖθεν καὶ τὴν κοιλάδα Ἀχὼρ διανοῖξαι σύνεσιν αὐτῆς· καὶ ταπεινωθήσεται ἐκεῖ κατὰ τὰς ἡμέρας νηπιότητος αὐτῆς καὶ κατὰ τὰς ἡμέρας ἀναβάσεως αὐτῆς ἐκ γῆς Αἰγύπτου.",
+        "VUL": "Et dabo ei vinitores ejus ex eodem loco,/ et vallem Achor, ad aperiendam spem ;/ et canet ibi juxta dies juventutis suæ,/ et juxta dies ascensionis suæ de terra Ægypti./",
+        "SYN": "И дам ей оттуда виноградники ее и долину Ахор, в преддверие надежды; и она будет петь там, как во дни юности своей и как в день выхода своего из земли Египетской.",
+        "NEO": "Je la punirai pour les jours des Baals ; auxquels elle offrait de l’encens ; alors qu’elle se parait de son anneau et de son collier et allait après ses amants ; et moi, elle m’oubliait, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "On that day, says the LORD, She shall call me \"My husband,\" and never again \"My baal.\"",
+        "VAT_ES": "Le pediré cuenta por los días de los Baales, a los que ella quemaba incienso, cuando se adornaba con su anillo y su collar e iba detrás de sus amantes, olvidándose de mí –oráculo del Señor–.",
+        "CEI": "Le farò scontare i giorni dei Baal, quando bruciava loro i profumi, si adornava di anelli e di collane e seguiva i suoi amanti mentre dimenticava me! - Oracolo del Signore."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "לָ/כֵ֗ן הִנֵּ֤ה אָֽנֹכִי֙ מְפַתֶּ֔י/הָ וְ/הֹֽלַכְתִּ֖י/הָ הַ/מִּדְבָּ֑ר וְ/דִבַּרְתִּ֖י עַל לִבָּֽ/הּ׃",
+        "LXX": "καὶ ἔσται ἐν τῇ ἡμέρᾳ ἐκείνῃ, λέγει Κύριος, καλέσει με Ὁ ἀνήρ μου, καὶ οὐ καλέσει με ἔτι Βααλείμ·",
+        "VUL": "Et erit in die illa, ait Dominus :/ vocabit me, Vir meus,/ et non vocabit me ultra Baali./",
+        "SYN": "И будет в тот день, говорит Господь, ты будешь звать Меня: \"муж мой\", и не будешь более звать Меня: \"Ваали\".",
+        "NEO": "C’est pourquoi, voici que moi je l’attirerai, et la conduirai au désert, et je lui parlerai au cœur ;",
+        "NAB": "Then will I remove from her mouth the names of the Baals, so that they shall no longer be invoked.",
+        "VAT_ES": "Por eso, yo la seduciré, la llevaré al desierto y le hablaré de su corazón.",
+        "CEI": "Perciò, ecco, la attirerò a me, la condurrò nel deserto e parlerò al suo cuore."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/נָתַ֨תִּי לָ֤/הּ אֶת כְּרָמֶ֨י/הָ֙ מִ/שָּׁ֔ם וְ/אֶת עֵ֥מֶק עָכ֖וֹר לְ/פֶ֣תַח תִּקְוָ֑ה וְ/עָ֤נְתָה שָּׁ֨מָּ/ה֙ כִּ/ימֵ֣י נְעוּרֶ֔י/הָ וִּ/כְ/י֖וֹם עֲלֹתָ֥/הּ מֵ/אֶֽרֶץ מִצְרָֽיִם׃",
+        "LXX": "καὶ ἐξαρῶ τὰ ὀνόματα τῶν Βααλεὶμ ἐκ στόματος αὐτῆς, καὶ οὐ μὴ μνησθῶσιν οὐκέτι τὰ ὀνόματα αὐτῶν.",
+        "VUL": "Et auferam nomina Baalim de ore ejus,/ et non recordabitur ultra nominis eorum./",
+        "SYN": "И удалю имена Ваалов от уст ее, и не будут более вспоминаемы имена их.",
+        "NEO": "et de là je lui donnerai ses vignes, et la vallée d’Achor comme une porte d’espérance ; et elle répondra là comme aux jours de sa jeunesse, et comme au jour où elle monta hors du pays d’Égypte.",
+        "NAB": "I will make a covenant for them on that day, with the beasts of the field, With the birds of the air, and with the things that crawl on the ground. Bow and sword and war I will destroy from the land, and I will let them take their rest in security.",
+        "VAT_ES": "Desde allí, le daré sus viñedos y haré del valle de Acor una puerta de esperanza. Allí, ella responderá como en los días de su juventud, como el día en que subía del país de Egipto.",
+        "CEI": "Le renderò le sue vigne e trasformerò la valle di Acòr in porta di speranza. Là canterà come nei giorni della sua giovinezza, come quando uscì dal paese d'Egitto."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֤ה בַ/יּוֹם הַ/הוּא֙ נְאֻם יְהוָ֔ה תִּקְרְאִ֖י אִישִׁ֑/י וְ/לֹֽא תִקְרְאִי לִ֥/י ע֖וֹד בַּעְלִֽ/י׃",
+        "LXX": "καὶ διαθήσομαι αὐτοῖς διαθήκην ἐν τῇ ἡμέρᾳ ἐκείνῃ μετὰ τῶν θηρίων τοῦ ἀγροῦ καὶ μετὰ τῶν πετεινῶν τοῦ οὐρανοῦ καὶ τῶν ἑρπετῶν τῆς γῆς· καὶ τόξον καὶ ῥομφαίαν καὶ πόλεμον συντρίψω ἀπὸ τῆς γῆς, καὶ κατοικιῶ σε ἐπ’ ἐλπίδι.",
+        "VUL": "Et percutiam cum eis fdus in die illa, cum bestia agri,/ et cum volucre cæli, et cum reptili terræ ;/ et arcum, et gladium, et bellum conteram de terra,/ et dormire eos faciam fiducialiter./",
+        "SYN": "И заключу в то время для них союз с полевыми зверями и с птицами небесными, и с пресмыкающимися по земле; и лук, и меч, и войну истреблю от земли той, и дам им жить в безопасности.",
+        "NEO": "En ce jour-là, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, tu m’appelleras : « Mon mari », et tu ne m’appelleras plus : « Mon Baal ».",
+        "NAB": "I will espouse you to me forever: I will espouse you in right and in justice, in love and in mercy;",
+        "VAT_ES": "Aquel día –oráculo del Señor– tú me llamarás: «Mi esposo» y ya no me llamarás: «Mi Baal».",
+        "CEI": "E avverrà in quel giorno - oracolo del Signore - mi chiamerai: Marito mio, e non mi chiamerai più: Mio padrone."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/הֲסִרֹתִ֛י אֶת שְׁמ֥וֹת הַ/בְּעָלִ֖ים מִ/פִּ֑י/הָ וְ/לֹֽא יִזָּכְר֥וּ ע֖וֹד בִּ/שְׁמָֽ/ם׃",
+        "LXX": "καὶ μνηστεύσομαί σε ἐμαυτῷ εἰς τὸν αἰῶνα, καὶ μνηστεύσομαί σε ἐμαυτῷ ἐν δικαιοσύνῃ καὶ ἐν κρίματι καὶ ἐν ἐλέει καὶ ἐν οἰκτειρμοῖς,",
+        "VUL": "Et sponsabo te mihi in sempiternum ;/ et sponsabo te mihi in justitia, et judicio,/ et in misericordia, et in miserationibus./",
+        "SYN": "И обручу тебя Мне навек, и обручу тебя Мне в правде и суде, в благости и милосердии.",
+        "NEO": "J’ôterai de sa bouche les noms des Baals, et ils ne seront plus mentionnés par leur nom.",
+        "NAB": "I will espouse you in fidelity, and you shall know the LORD.",
+        "VAT_ES": "Le apartaré de la boca los nombres de los Baales, y nunca más serán mencionados por su nombre.",
+        "CEI": "Le toglierò dalla bocca i nomi dei Baal, che non saranno più ricordati."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/כָרַתִּ֨י לָ/הֶ֤ם בְּרִית֙ בַּ/יּ֣וֹם הַ/ה֔וּא עִם חַיַּ֤ת הַ/שָּׂדֶה֙ וְ/עִם ע֣וֹף הַ/שָּׁמַ֔יִם וְ/רֶ֖מֶשׂ הָֽ/אֲדָמָ֑ה וְ/קֶ֨שֶׁת וְ/חֶ֤רֶב וּ/מִלְחָמָה֙ אֶשְׁבּ֣וֹר מִן הָ/אָ֔רֶץ וְ/הִשְׁכַּבְתִּ֖י/ם לָ/בֶֽטַח׃",
+        "LXX": "καὶ μνηστεύσομαί σε ἐμαυτῷ ἐν πίστει, καὶ ἐπιγνώσῃ τὸν κύριον.",
+        "VUL": "Et sponsabo te mihi in fide ;/ et scies quia ego Dominus./",
+        "SYN": "И обручу тебя Мне в верности, и ты познаешь Господа.",
+        "NEO": "Je ferai pour eux un pacte, en ce jour, avec les bêtes sauvages, avec les oiseaux du ciel, et les reptiles de la terre ; je ferai disparaître du pays l’arc, l’épée et la guerre, et je les ferai reposer en sécurité.",
+        "NAB": "On that day I will respond, says the LORD; I will respond to the heavens, and they shall respond to the earth;",
+        "VAT_ES": "Yo estableceré para ellos, en aquel día una alianza con los animales del campo, con las aves del cielo y los reptiles de la tierra; extirparé del país el arco, la espada y la guerra, y haré que descansen seguros.",
+        "CEI": "In quel tempo farò per loro un'alleanza con le bestie della terra e gli uccelli del cielo e con i rettili del suolo; arco e spada e guerra eliminerò dal paese; e li farò riposare tranquilli."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/אֵרַשְׂתִּ֥י/ךְ לִ֖/י לְ/עוֹלָ֑ם וְ/אֵרַשְׂתִּ֥י/ךְ לִ/י֙ בְּ/צֶ֣דֶק וּ/בְ/מִשְׁפָּ֔ט וּ/בְ/חֶ֖סֶד וּֽ/בְ/רַחֲמִֽים׃",
+        "LXX": "καὶ ἔσται ἐν τῇ ἡμέρᾳ ἐκείνῃ, λέγει Κύριος, ἐπακούσομαι τῷ οὐρανῷ, καὶ αὐτὸς ἐπακούσεται τῇ γῇ,",
+        "VUL": "Et erit in die illa :/ exaudiam, dicit Dominus, exaudiam cælos,/ et illi exaudient terram./",
+        "SYN": "И будет в тот день, Я услышу, говорит Господь, услышу небо, и оно услышит землю,",
+        "NEO": "Je te fiancerai à moi pour toujours ; je te fiancerai à moi dans la justice et le jugement, dans la grâce et la tendresse ;",
+        "NAB": "The earth shall respond to the grain, and wine, and oil, and these shall respond to Jezreel.",
+        "VAT_ES": "Yo te desposaré para siempre, te desposaré en la justicia y el derecho, en el amor y la misericordia;",
+        "CEI": "Ti farò mia sposa per sempre, ti farò mia sposa nella giustizia e nel diritto, nella benevolenza e nell'amore,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/אֵרַשְׂתִּ֥י/ךְ לִ֖/י בֶּ/אֱמוּנָ֑ה וְ/יָדַ֖עַתְּ אֶת יְהוָֽה׃",
+        "LXX": "καὶ ἡ γῆ ἐπακούσεται τὸν σῖτον καὶ τὸν οἶνον καὶ τὸ ἔλαιον, καὶ αὐτὰ ἐπακούσεται τῷ Ἰεζραέλ.",
+        "VUL": "Et terra exaudiet triticum, et vinum, et oleum,/ et hæc exaudient Jezrahel./",
+        "SYN": "и земля услышит хлеб и вино и елей; а сии услышат Изреель.",
+        "NEO": "je te fiancerai à moi dans la fidélité, et tu connaîtras \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "I will sow him for myself in the land, and I will have pity on Lo-ruhama. I will say to Lo-ammi, \"You are my people,\" and he shall say, \"My God!\"",
+        "VAT_ES": "te desposaré en la fidelidad, y tú conocerás al Señor.",
+        "CEI": "ti fidanzerò con me nella fedeltà e tu conoscerai il Signore."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֣ה בַּ/יּ֣וֹם הַ/ה֗וּא אֶֽעֱנֶה֙ נְאֻם יְהוָ֔ה אֶעֱנֶ֖ה אֶת הַ/שָּׁמָ֑יִם וְ/הֵ֖ם יַעֲנ֥וּ אֶת הָ/אָֽרֶץ׃",
+        "LXX": "καὶ σπερῶ αὐτὴν ἐμαυτῷ ἐπὶ τῆς γῆς, καὶ ἀγαπήσω τὴν Οὐκ ἠγαπημένην, καὶ ἐρῶ τῷ Οὐ λαῷ μου Λαός μου εἶ σύ, καὶ αὐτὸς ἐρεῖ Κύριος ὁ θεός μου εἶ σύ.",
+        "VUL": "Et seminabo eam mihi in terra,/ et miserebor ejus quæ fuit Absque misericordia./",
+        "SYN": "И посею ее для Себя на земле, и помилую Непомилованную, и скажу не Моему народу: \"ты Мой народ\", а он скажет: \"Ты мой Бог!\"",
+        "NEO": "Et il arrivera en ce jour, je répondrai, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, je répondrai aux cieux, et eux répondront à la terre ;",
+        "VAT_ES": "Aquel día yo responderé –oráculo del Señor– responderé a los cielos y ellos responderán a la tierra;",
+        "CEI": "E avverrà in quel giorno - oracolo del Signore - io risponderò al cielo ed esso risponderà alla terra;"
+      }
+    }
+  }
+}

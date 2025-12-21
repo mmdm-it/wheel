@@ -1,0 +1,508 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_050",
+  "book_key": "ECCLU",
+  "sequence": 50,
+  "chapter_in": {
+    "MT": 50,
+    "VUL": 50,
+    "LXX": 50
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Σίμων Ὀνίου υἱὸς ἱερεὺς ὁ μέγας, ὃς ἐν ζωῇ αὐτοῦ ὑπέραψεν οἶκον, καὶ ἐν ἡμέραις αὐτοῦ ἐστερέωσεν τὸν ναόν·",
+        "VUL": "[Simon, Oniæ filius, sacerdos magnus,/ qui in vita sua suffulsit domum,/ et in diebus suis corroboravit templum./",
+        "SYN": "Симон, сын Онии, великий священник, при жизни своей исправил дом и во дни свои укрепил храм:",
+        "NEO": "Simon, fils d’Onias, est le grand prêtre qui, pendant sa vie, répara la maison du Seigneur, et, durant ses jours, affermit le temple.",
+        "NAB": "The greatest among his brethren, the glory of his people, was SIMON the priest, son of Jochanan, In whose time the house of God was renovated, in whose days the temple was reinforced.",
+        "VAT_ES": "Simón, hijo de Onías, fue el Sumo Sacerdote que durante su vida restauró la Casa y en sus días consolidó el Santuario.",
+        "CEI": "Simone, figlio di Onia, sommo sacerdote, nella sua vita riparò il tempio, e nei suoi giorni fortificò il santuario."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "καὶ ὑπ’ αὐτοῦ ἐθεμελιώθη ὕψος διπλῆς, ἀνάλημμα ὑψηλὸν περιβόλου ἱεροῦ·",
+        "VUL": "Templi etiam altitudo ab ipso fundata est,/ duplex ædificatio, et excelsi parietes templi./",
+        "SYN": "им положено основание двойного возвышения - возведение высокой ограды храма;",
+        "NEO": "Par lui furent posées les fondations pour porter au double le mur élevé qui soutient l’enceinte du temple.",
+        "NAB": "In his time also the wall was built with powerful turrets for the temple precincts;",
+        "VAT_ES": "El puso los cimientos de las torres de refuerzo, del alto contrafuerte que rodea al Templo.",
+        "CEI": "Da lui furon poste le fondamenta del doppio rialzo, l'alto contrafforte della cinta del tempio."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ἐν ἡμέραις αὐτοῦ ἠλαττώθη ἀποδοχεῖον ὑδάτων, χαλκὸς ὡσεὶ θαλάσσης τὸ περίμετρον·",
+        "VUL": "In diebus ipsius emanaverunt putei aquarum,/ et quasi mare adimpleti sunt supra modum./",
+        "SYN": "во дни его уменьшено водохранилище, окружность медного моря;",
+        "NEO": "De son temps fut fabriqué le réservoir des eaux ; l’airain dont il était formé avait le périmètre de la mer.",
+        "NAB": "In his time the reservoir was dug, the pool with a vastness like the sea's.",
+        "VAT_ES": "En sus días fue excavado el depósito de las aguas, un estanque amplio como el mar.",
+        "CEI": "Ai suoi tempi fu scavato il deposito per le acque, un serbatoio ampio come il mare."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ὁ φροντίζων τοῦ λαοῦ αὐτοῦ ἀπὸ πτώσεως, καὶ ἐνισχύσας πόλιν ἐνπολιορκῆσαι.",
+        "VUL": "Qui curavit gentem suam,/ et liberavit eam a perditione :/",
+        "SYN": "чтобы предохранить народ свой от бедствия, он укрепил город против осады.",
+        "NEO": "Il prit soin de son peuple pour le préserver de la ruine, et fortifia la ville contre un siège.",
+        "NAB": "He protected his people against brigands and strengthened his city against the enemy.",
+        "VAT_ES": "Preocupado por preservar a su pueblo de la caída, fortificó la ciudad contra el asedio.",
+        "CEI": "Premuroso di impedire la caduta del suo popolo, fortificò la città contro un assedio."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "ὡς ἐδοξάσθη ἐν περιστροφῇ λαοῦ, ἐν ἐξόδῳ οἴκου καταπετάσματος·",
+        "VUL": "qui prævaluit amplificare civitatem,/ qui adeptus est gloriam in conversatione gentis,/ et ingressum domus et atrii amplificavit./",
+        "SYN": "Как величествен был он среди народа, при выходе из завесы храма!",
+        "NEO": "Qu’il était majestueux au milieu du peuple rassemblé tout autour, lorsqu’il sortait de la maison du voile !",
+        "NAB": "How splendid he was as he appeared from the tent, as he came from within the veil!",
+        "VAT_ES": "&iexcl;Qué glorioso era, rodeado de su pueblo, cuando salía detrás del velo!",
+        "CEI": "Come era stupendo quando si aggirava fra il popolo, quando usciva dal santuario dietro il velo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ὡς ἀστὴρ ἑωθινὸς ἐν μέσῳ νεφέλης, ὡς σελήνη πλήρης ἐν ἡμέραις·",
+        "VUL": "Quasi stella matutina in medio nebulæ,/ et quasi luna plena, in diebus suis lucet :/",
+        "SYN": "Как утренняя звезда среди облаков, как луна полная во днях,",
+        "NEO": "Il était comme l’étoile du matin qui étincelle à travers le nuage, comme la lune aux jours de son plein,",
+        "NAB": "Like a star shining among the clouds, like the full moon at the holyday season;",
+        "VAT_ES": "Como lucero del alba en medio de nubes, como luna en su plenilunio,",
+        "CEI": "Come un astro mattutino fra le nubi, come la luna nei giorni in cui è piena,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "ὡς ἥλιος ἐκλάμπων ἐπὶ ναὸν Ὑψίστου, καὶ ὡς τόξον φωτίζον ἐν νεφέλαις δόξης·",
+        "VUL": "et quasi sol refulgens,/ sic ille effulsit in templo Dei./",
+        "SYN": "как солнце, сияющее над храмом Всевышнего, и как радуга, сияющая в величественных облаках,",
+        "NEO": "comme le soleil qui resplendit sur le temple du Très-Haut, et comme l’arc-en-ciel qui brille au milieu des nuées lumineuses ;",
+        "NAB": "Like the sun shining upon the temple, like the rainbow appearing in the cloudy sky;",
+        "VAT_ES": "como sol resplandeciente sobre el Templo del Altísimo, como arco iris que brilla entre nubes de gloria,",
+        "CEI": "come il sole sfolgorante sul tempio dell'Altissimo, come l'arcobaleno splendente fra nubi di gloria,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "ὡς ἄνθος ῥόδων ἐν ἡμέραις νέων, ὡς κρίνα ἐπ’ ἐξόδων ὕδατος, ὡς βλαστὸς Λιβάνου ἐν ἡμέραις θέρους·",
+        "VUL": "Quasi arcus refulgens inter nebulas gloriæ,/ et quasi flos rosarum in diebus vernis,/ et quasi lilia quæ sunt in transitu aquæ,/ et quasi thus redolens in diebus æstatis :/",
+        "SYN": "как цвет роз в весенние дни, как лилии при источниках вод, как ветвь ливана в летние дни,",
+        "NEO": "comme la fleur des roses aux jours du printemps, comme les lys sur le bord des eaux, comme le rameau de l’arbre odoriférant aux jours de l’été,",
+        "NAB": "Like the blossoms on the branches in springtime, like a lily on the banks of a stream; Like the trees of Lebanon in summer,",
+        "VAT_ES": "como rosa en los días de primavera, como lirio junto a un manantial, como brote del Líbano en los días de verano,",
+        "CEI": "come il fiore delle rose nella stagione di primavera, come un giglio lungo un corso d'acqua, come un germoglio d'albero d'incenso nella stagione estiva"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "ὡς πῦρ καὶ λίβανος ἐπὶ πυρίου· ὡς σκεῦος χρυσίου ὁλοσφύρητον κεκοσμημένον παντὶ λίθῳ πολυτελεῖ·",
+        "VUL": "quasi ignis effulgens,/ et thus ardens in igne :/",
+        "SYN": "как огонь с ладаном в кадильнице,",
+        "NEO": "comme le parfum sur le feu de l’encensoir, comme un vase d’or massif, orné de toutes sortes de pierres précieuses,",
+        "NAB": "like the fire of incense at the sacrifice; Like a vessel of beaten gold, studded with precious stones;",
+        "VAT_ES": "como fuego e incienso en el incensario, como vaso de oro macizo adornado con toda clase de piedras preciosas,",
+        "CEI": "come fuoco e incenso su un braciere, come un vaso d'oro massiccio, ornato con ogni specie di pietre preziose,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ὡς ἐλαία ἀναθάλλουσα καρπούς. καὶ ὡς κυπάρισσος ὑψουμένη ἐν νεφέλαις,",
+        "VUL": "quasi vas auri solidum,/ ornatum omni lapide pretioso :/",
+        "SYN": "как кованый золотой сосуд, украшенный всякими драгоценными камнями,",
+        "NEO": "comme l’olivier qui pousse ses fruits, et comme le cyprès qui s’élève dans les nuages.",
+        "NAB": "Like a luxuriant olive tree thick with fruit, like a cypress standing against the clouds;",
+        "VAT_ES": "como olivo cargado de frutos, como ciprés que se eleva hasta las nubes.",
+        "CEI": "come un ulivo verdeggiante pieno di frutti, e come un cipresso svettante tra le nuvole."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἐν τῷ ἀναλαμβάνειν αὐτὸν στολὴν δόξης, καὶ ἐνδιδύσκεσθαι αὐτὸν συντέλειαν καυχήματος, ἐν ἀναβάσει θυσιαστηρίου ἁγίου ἐδόξασεν περιβολὴν ἁγιάσματος·",
+        "VUL": "quasi oliva pullulans, et cypressus in altitudinem se extollens,/ in accipiendo ipsum stolam gloriæ,/ et vestiri eum in consummationem virtutis./",
+        "SYN": "как маслина с плодами и как возвышающийся до облаков кипарис.",
+        "NEO": "Quand il avait pris la robe d’honneur, et revêtu tous ses ornements, et qu’il montait à l’autel saint, il faisait resplendir les abords du sanctuaire.",
+        "NAB": "Vested in his magnificent robes, and wearing his garments of splendor, As he ascended the glorious altar and lent majesty to the court of the sanctuary.",
+        "VAT_ES": "Cuando se ponía la vestidura de fiesta y se revestía de sus espléndidos ornamentos, cuando subía al santo altar, él llenaba de gloria el recinto del Santuario.",
+        "CEI": "Quando indossava i paramenti solenni, quando si rivestiva con gli ornamenti più belli, salendo i gradini del santo altare dei sacrifici, riempiva di gloria l'intero santuario."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "ἐν δὲ τῷ δέχεσθαι μέλη ἐκ χειρῶν ἱερέων, καὶ αὐτὸς ἑστὼς παρ’ ἐσχάρᾳ βωμοῦ, κυκλόθεν αὐτὸς στέφανος ἀδελφῶν ὡς βλάστημα κέδρου ἐν τῷ Λιβάνῳ, καὶ ἐκύκλωσαν αὐτὸν ὡς στελέχη φοινίκων·",
+        "VUL": "In ascensu altaris sancti/ gloriam dedit sanctitatis amictum./",
+        "SYN": "Когда он принимал великолепную одежду и облекался во все величественное украшение, то, при восхождении к святому жертвеннику, освещал блеском окружность святилища.",
+        "NEO": "Mais quand il recevait les parties des victimes des mains des prêtres, et se tenait debout près du foyer de l’autel, ses frères formant une couronne autour de lui, alors il paraissait comme un cèdre majestueux sur le Liban, et les prêtres l’entouraient comme des troncs de palmiers.",
+        "NAB": "When he received the sundered victims from the priests while he stood before the sacrificial wood, His brethren ringed him about like a garland, like a stand of cedars on Lebanon;",
+        "VAT_ES": "Cuando recibía las porciones de manos de los sacerdotes y estaba él mismo de pie, junto al fuego del altar, con una corona de hermanos a su alrededor como retoños de cedro en el Líbano lo rodeaban como troncos de palmera",
+        "CEI": "Quando riceveva le parti delle vittime dalle mani dei sacerdoti, mentre stava presso il braciere dell'altare, circondato dalla corona dei fratelli come fronde di cedri nel Libano, e lo circondavano come fusti di palme,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "καὶ πάντες οἱ υἱοὶ Ἀαρὼν ἐν δόξῃ αὐτῶν, καὶ προσφορὰ Κυρίου ἐν χερσὶν αὐτῶν ἔναντι πάσης ἐκκλησίας Ἰσραήλ·",
+        "VUL": "In accipiendo autem partes de manu sacerdotum,/ et ipse stans juxta aram :/ et circa illum corona fratrum :/ quasi plantatio cedri in monte Libano,/",
+        "SYN": "Также, когда он принимал жертвенные части из рук священников, стоя у огня жертвенника, -",
+        "NEO": "Tous les fils d’Aaron étaient revêtus de leurs magnifiques ornements, et ils tenaient dans leurs mains l’offrande pour le Seigneur, devant toute l’assemblée d’Israël.",
+        "NAB": "All the sons of Aaron in their dignity clustered around him like poplars, With the offerings to the LORD in their hands, in the presence of the whole assembly of Israel.",
+        "VAT_ES": "todos los hijos de Aarón en su esplendor, con la ofrenda del Señor en sus manos, delante de toda la asamblea de Israel.",
+        "CEI": "mentre tutti i figli di Aronne nella loro gloria, con le offerte del Signore nelle mani, stavano davanti a tutta l'assemblea di Israele,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "καὶ συντέλειαν λειτουργῶν ἐπὶ βωμῶν, κοσμῆσαι προσφορὰν Ὑψίστου Παντοκράτορος,",
+        "VUL": "sic circa illum steterunt quasi rami palmæ :/ et omnes filii Aaron in gloria sua./",
+        "SYN": "вокруг него был венец братьев, как отрасли кедра на Ливане, и они окружали его как финиковые ветви,",
+        "NEO": "Et lorsqu’il avait achevé le service sur les autels, afin d’embellir l’offrande du Très-Haut tout-puissant, il étendait la main sur la coupe aux libations, et répandait le sang de la grappe.",
+        "NAB": "Once he had completed the services at the altar with the arranging of the sacrifices for the Most High,",
+        "VAT_ES": "Mientras oficiaba en los altares y disponía la ofrenda para el Altísimo todopoderoso,",
+        "CEI": "egli compiva il rito liturgico sugli altari, preparando l'offerta all'Altissimo onnipotente."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ἐξέτεινεν ἐπὶ σπονδείου χεῖρα αὐτοῦ, καὶ ἔσπεισεν ἐξ αἵματος σταφυλῆς, ἐξέχεεν εἰς θεμέλια θυσιαστηρίου ὀσμὴν εὐωδίας Ὑψίστῳ Πανβασιλεῖ.",
+        "VUL": "Oblatio autem Domini in manibus ipsorum/ coram omni synagoga Israël :/ et consummatione fungens in ara,/ amplificare oblationem excelsi Regis,/",
+        "SYN": "и все сыны Аарона в славе своей, и приношение Господу в руках их пред всем собранием Израиля.",
+        "NEO": "Il le versait sur la base de l’autel, parfum d’agréable odeur au Très-Haut, au grand Roi.",
+        "NAB": "And had stretched forth his hand for the cup, to offer blood of the grape, And poured it out at the foot of the altar, a sweet-smelling odor to the Most High God,",
+        "VAT_ES": "él extendía la mano sobre la copa, derramaba la libación la sangre de la uva y la vertía al pie del altar, como perfume agradable al Altísimo, Rey del universo.",
+        "CEI": "Egli stendeva la mano sulla coppa e versava succo di uva, lo spargeva alle basi dell'altare come profumo soave all'Altissimo, re di tutte le cose."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "τότε ἀνέκραγον υἱοὶ Ἀαρών, ἐν σάλπιγξιν ἐλαταῖς ἤχησαν, ἀκουστὴν ἐποίησαν φωνὴν μεγάλην εἰς μνημόσυνον ἔναντι Ὑψίστου·",
+        "VUL": "porrexit manum suam in libatione,/ et libavit de sanguine uvæ./",
+        "SYN": "В довершение служб на алтаре, чтобы увенчать приношение Всевышнему Вседержителю,",
+        "NEO": "Alors les fils d’Aaron poussaient des cris, ils sonnaient de leurs trompettes de métal battu, et faisaient entendre d’éclatantes clameurs, en souvenir devant le Très-Haut.",
+        "NAB": "The sons of Aaron would sound a blast, the priests, on their trumpets of beaten metal; A blast to resound mightily as a reminder before the Most High.",
+        "VAT_ES": "entonces, los hijos de Aarón prorrumpían en aclamaciones, tocaban sus trompetas de metal batido y hacían oír un sonido imponente, como memorial delante del Altísimo.",
+        "CEI": "Allora i figli di Aronne alzavano la voce, suonavano le trombe di metallo lavorato e facevano udire un suono potente come richiamo davanti all'Altissimo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "τότε πᾶς ὁ λαὸς κοινῇ κατέσπευσεν, καὶ ἔπεσαν ἐπὶ πρόσωπον ἐπὶ τὴν γῆν προσκυνῆσαι τῷ κυρίῳ αὐτῶν Παντοκράτορι θεῷ τῷ ὑψίστῳ·",
+        "VUL": "Effudit in fundamento altaris/ odorem divinum excelso Principi./",
+        "SYN": "он простирал свою руку к жертвенной чаше, лил в нее из винограда кровь и выливал ее к подножию жертвенника в воню благоухания Вышнему Всецарю.",
+        "NEO": "Et tout le peuple à la fois s’empressait, et tombait la face contre terre, pour adorer leur Seigneur, le Dieu tout-puissant, le Très-Haut.",
+        "NAB": "Then all the people with one accord would quickly fall prostrate to the ground In adoration before the Most High, before the Holy One of Israel.",
+        "VAT_ES": "En seguida, todo el pueblo, unánimemente, caía con el rostro en tierra para adorar a su Señor, el Todopoderoso, el Dios Altísimo.",
+        "CEI": "E subito tutto il popolo insieme si prostrava con la faccia a terra, per adorare il Signore, Dio onnipotente e altissimo."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "καὶ ᾔνεσαν οἱ ψαλμῳδοὶ ἐν φωναῖς αὐτῶν, ἐν πλείστῳ οἴκῳ ἐγλυκάνθη μέλος·",
+        "VUL": "Tunc exclamaverunt filii Aaron,/ in tubis productilibus sonuerunt :/ et auditam fecerunt vocem magnam in memoriam coram Deo./",
+        "SYN": "Тогда сыны Аароновы восклицали, трубили коваными трубами и издавали громкий голос в напоминание пред Всевышним.",
+        "NEO": "Et les chantres, en déployant leur voix, le louaient ; le vaste temple retentissait de doux accords.",
+        "NAB": "Then hymns would re-echo, and over the throng sweet strains of praise resound.",
+        "VAT_ES": "También los cantones entonaban sus alabanzas: en medio del estruendo se oía una dulce melodía.",
+        "CEI": "I cantori intonavano canti di lodi, il loro canto era addolcito da una musica melodiosa."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "καὶ ἐδεήθη ὁ λαὸς Κυρίου Ὑψίστου ἐν προσευχῇ κατέναντι Ἐλεήμονος, ἕως συντελεσθῇ κόσμος Κυρίου καὶ τὴν λειτουργίαν αὐτοῦ ἐτελείωσαν.",
+        "VUL": "Tunc omnis populus simul properaverunt,/ et ceciderunt in faciem super terram,/ adorare Dominum Deum suum,/ et dare preces omnipotenti Deo excelso./",
+        "SYN": "Тогда весь народ вместе спешил падать лицем на землю, чтобы поклониться Господу своему, Вседержителю, Богу Вышнему;",
+        "NEO": "Et le peuple suppliait le Seigneur très haut, se tenant en prière devant le Miséricordieux, jusqu’à ce que la cérémonie du Seigneur fût achevée, et que les prêtres eussent accompli les fonctions sacrées.",
+        "NAB": "All the people of the land would shout for joy, praying to the Merciful One, As the high priest completed the services at the altar by presenting to God the sacrifice due;",
+        "VAT_ES": "El pueblo suplicaba al Señor Altísimo, dirigía sus plegarias ante el Misericordioso, hasta que terminaba el culto del Señor y se ponía fin a la liturgia.",
+        "CEI": "Il popolo supplicava il Signore altissimo in preghiera davanti al Misericordioso, finché fosse compiuto il servizio del Signore e terminasse la funzione liturgica."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "τότε καταβὰς ἐπῆρεν χεῖρας αὐτοῦ ἐπὶ πᾶσαν ἐκκλησίαν υἱῶν Ἰσραήλ, δοῦναι εὐλογίαν Κυρίῳ ἐκ χειλέων αὐτοῦ καὶ ἐν ὀνόματι αὐτοῦ καυχᾶσθαι·",
+        "VUL": "Et amplificaverunt psallentes in vocibus suis,/ et in magna domo auctus est sonus suavitatis plenus./",
+        "SYN": "а песнопевцы восхваляли Его своими голосами; в пространном храме раздавалось сладостное пение,",
+        "NEO": "Alors le grand prêtre descendait et élevait sa main sur toute l’assemblée des enfants d’Israël, pour donner de ses lèvres la bénédiction du Seigneur, et se glorifier en son nom.",
+        "NAB": "Then coming down he would raise his hands over all the congregation of Israel. The blessing of the LORD would be upon his lips, the name of the LORD would be his glory.",
+        "VAT_ES": "Entonces, él descendía y elevaba las manos sobre toda la asamblea de los israelitas, para dar con sus labios la bendición del Señor y tener el honor de pronunciar su Nombre.",
+        "CEI": "Allora, scendendo, egli alzava le mani su tutta l'assemblea dei figli di Israele per dare con le sue labbra la benedizione del Signore, gloriandosi del nome di lui."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "καὶ ἐδευτέρωσεν ἐν προσκυνήσει ἐπιδείξασθαι τὴν εὐλογίαν παρὰ Ὑψίστου.",
+        "VUL": "Et rogavit populus Dominum excelsum in prece,/ usque dum perfectus est honor Domini,/ et munus suum perfecerunt./",
+        "SYN": "и народ молился Господу Всевышнему молитвою пред Милосердым, доколе совершалось славословие Господа, - и так оканчивали они службу Ему.",
+        "NEO": "Et le peuple se prosternait de nouveau pour recevoir la bénédiction de la part du Très-Haut.",
+        "NAB": "Then again the people would lie prostrate to receive from him the blessing of the Most High.",
+        "VAT_ES": "Y por segunda vez, el pueblo se postraba para recibir la bendición del Altísimo.",
+        "CEI": "Tutti si prostravano di nuovo per ricevere la benedizione dell'Altissimo."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "καὶ νῦν εὐλογήσατε τῷ θεῷ πάντες τῷ μεγαλοποιοῦντι πάντη, τὸν ὑψοῦντα ἡμέρας ἡμῶν ἐκ μήτρας, καὶ ποιοῦντα μεθ’ ἡμῶν κατὰ τὸ ἔλεος αὐτοῦ·",
+        "VUL": "Tunc descendens, manus suas extulit/ in omnem congregationem filiorum Israël,/ dare gloriam Deo a labiis suis,/ et in nomine ipsius gloriari :/",
+        "SYN": "Тогда он, сойдя, поднимал руки свои на все собрание сынов Израилевых, чтобы устами своими преподать благословение Господа и похвалиться именем Его;",
+        "NEO": "Et maintenant, bénissez le Seigneur de l’univers, qui fait partout de grandes choses, qui a exalté nos jours depuis l’origine, et nous a traités selon sa miséricorde.",
+        "NAB": "And now, bless the God of all, who has done wondrous things on earth; Who fosters men's growth from their mother's womb, and fashions them according to his will!",
+        "VAT_ES": "Y ahora bendigan al Dios del universo que hace grandes cosas por todas partes, al que nos exaltó desde el seno materno y nos trató según su misericordia.",
+        "CEI": "Ora benedite il Dio dell'universo, che compie in ogni luogo grandi cose, che ha esaltato i nostri giorni fino dalla nascita, che ha agito con noi secondo la sua misericordia."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "δῴη ὑμῖν εὐφροσύνην καρδίας, καὶ γενέσθαι εἰρήνην ἐν ἡμέραις ἡμῶν ἐν Ἰσραὴλ κατὰ τὰς ἡμέρας τοῦ αἰῶνος,",
+        "VUL": "et iteravit orationem suam,/ volens ostendere virtutem Dei./",
+        "SYN": "народ повторял поклонение, чтобы принять благословение от Всевышнего.",
+        "NEO": "Qu’il nous donne la joie du cœur, et que la paix soit de nos jours en Israël comme aux jours du passé !",
+        "NAB": "May he grant you joy of heart and may peace abide among you;",
+        "VAT_ES": "Que él nos dé la alegría del corazón, y conceda la paz en nuestros días, a Israel, por los siglos de los siglos.",
+        "CEI": "Ci conceda la gioia del cuore e ci sia pace nei nostri giorni in Israele, per tutti i giorni futuri."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "ἐνπιστεῦσαι μεθ’ ἡμῶν τὸ ἔλεος αὐτοῦ, καὶ ἐν ταῖς ἡμέραις αὐτοῦ λυτρωσάσθω ἡμᾶς.",
+        "VUL": "Et nunc orate Deum omnium, qui magna fecit in omni terra,/ qui auxit dies nostros a ventre matris nostræ,/ et fecit nobiscum secundum suam misericordiam :/",
+        "SYN": "И ныне все благословляйте Бога, Который везде совершает великие дела, Который продлил дни наши от утробы и поступает с нами по милости Своей:",
+        "NEO": "Que sa miséricorde demeure perpétuellement avec nous, et qu’il nous délivre quand son jour sera venu !",
+        "NAB": "May his goodness toward us endure in Israel as long as the heavens are above.",
+        "VAT_ES": "Que su misericordia permanezca fielmente con nosotros y que nos libre en nuestros días.",
+        "CEI": "La sua misericordia resti fedelmente con noi e ci riscatti nei nostri giorni."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "ἐν δυσὶν ἔθνεσιν προσώχθισεν ἡ ψυχή μου, καὶ τὸ τρίτον οὐκ ἔστιν ἔθνος·",
+        "VUL": "det nobis jucunditatem cordis,/ et fieri pacem in diebus nostris in Israël per dies sempiternos :/",
+        "SYN": "да даст Он нам веселие сердца, и да будет во дни наши мир в Израиле до дней века;",
+        "NEO": "Il y a deux nations que déteste mon âme, et la troisième n’est pas même une nation :",
+        "NAB": "My whole being loathes two nations, the third is not even a people:",
+        "VAT_ES": "Hay dos naciones que detesta mi alma, y la tercera, no es una nación:",
+        "CEI": "Contro due popoli sono irritato, il terzo non è neppure un popolo:"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "οἱ καθήμενοι ἐν ὄρει Σαμαρείας, Φυλιστιείμ, καὶ ὁ λαὸς μωρὸς ὁ κατοικῶν ἐν Σικίμοις.",
+        "VUL": "credere Israël nobiscum esse Dei misericordiam,/ ut liberet nos in diebus suis.]",
+        "SYN": "да сохранит милость Свою к нам и в свое время да избавит нас!",
+        "NEO": "ceux qui demeurent dans la montagne de Séir, les Philistins, et le peuple insensé qui habite Sichem.",
+        "NAB": "Those who live in Seir and Philistia, and the degenerate folk who dwell in Shechem.",
+        "VAT_ES": "los que habitan en la montaña de Seír, los filisteos, y el pueblo necio que habita en Siquem.",
+        "CEI": "quanti abitano sul monte Seir e i Filistei e lo stolto popolo che abita in Sichem."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "Παιδείαν συνέσεως καὶ ἐπιστήμης ἐχάραξα ἐν τῷ βιβλίῳ τούτῳ, Ἰησοῦς υἱὸς Σειρὰχ Ἐλεαζὰρ ὁ Ἰεροσολυμείτης, ὃς ἀνώμβρησεν σοφίαν ἀπὸ καρδίας αὐτοῦ.",
+        "VUL": "[Duas gentes odit anima mea :/ tertia autem non est gens quam oderim :/",
+        "SYN": "Двумя народами гнушается душа моя, а третий не есть народ:",
+        "NEO": "J’ai consigné dans ce livre un enseignement d’intelligence et de science, moi, Jésus, fils de Sirach, de Jérusalem, qui ai fait couler à flots la sagesse de mon cœur.",
+        "NAB": "Wise instruction, appropriate proverbs, I have written in this book, I, Jesus, son of Eleazar, son of Sirach, as they gushed forth from my heart's understanding.",
+        "VAT_ES": "Una instrucción de sabiduría y de ciencia es la que dejó grabada en este libro Jesús, hijo de Sirá, hijo de Eleazar, de Jerusalén, que derramó como lluvia la sabiduría de su corazón.",
+        "CEI": "Una dottrina di sapienza e di scienza ha condensato in questo libro Gesù figlio di Sirach, figlio di Eleàzaro, di Gerusalemme, che ha riversato come pioggia la sapienza dal cuore."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "μακάριος ὃς ἐν τούτοις ἀναστραφήσεται, καὶ θεὶς αὐτὰ ἐπὶ καρδίαν αὐτοῦ σοφισθήσεται·",
+        "VUL": "qui sedent in monte Seir, et Philisthiim,/ et stultus populus qui habitat in Sichimis.]",
+        "SYN": "это сидящие на горе Сеир, Филистимляне и глупый народ, живущий в Сикимах.",
+        "NEO": "Heureux celui qui s’adonnera à ces enseignements ! Celui qui les recueille dans son cœur deviendra sage ;",
+        "NAB": "Happy the man who meditates upon these things, wise the man who takes them to heart!",
+        "VAT_ES": "&iexcl;Feliz el que vuelve continuamente sobre estas palabras! El que las ponga en su corazón, será sabio.",
+        "CEI": "Beato chi mediterà queste cose; le fissi bene nel cuore e diventerà saggio;"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "ἐὰν γὰρ αὐτὰ ποιήσῃ, πρὸς πάντα ἰσχύσει· ὅτι φῶς Κυρίου τὸ ἴχνος αὐτοῦ.",
+        "VUL": "[Doctrinam sapientiæ et disciplinæ scripsit in codice isto/ Jesus, filius Sirach, Jerosolymita,/ qui renovavit sapientiam de corde suo./",
+        "SYN": "Учение мудрости и благоразумия начертал в книге сей я, Иисус, сын Сирахов, Иерусалимлянин, который излил мудрость от сердца своего.",
+        "NEO": "car s’il les met en pratique, il triomphera de tout, parce que la lumière du Seigneur est son sentier.",
+        "NAB": "If he puts them into practice, he can cope with anything, for the fear of the LORD is his lamp.",
+        "VAT_ES": "Si las practica, será capaz de afrontarlo todo, porque la luz del Señor marca su huella.",
+        "CEI": "se le metterà in pratica, sarà forte in tutto, perché la luce del Signore è la sua strada."
+      }
+    }
+  }
+}

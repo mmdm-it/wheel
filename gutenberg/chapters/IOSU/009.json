@@ -1,0 +1,501 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOSU_009",
+  "book_key": "IOSU",
+  "sequence": 9,
+  "chapter_in": {
+    "MT": 9,
+    "VUL": 9,
+    "LXX": 9
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י כִ/שְׁמֹ֣עַ כָּֽל הַ/מְּלָכִ֡ים אֲשֶׁר֩ בְּ/עֵ֨בֶר הַ/יַּרְדֵּ֜ן בָּ/הָ֣ר וּ/בַ/שְּׁפֵלָ֗ה וּ/בְ/כֹל֙ ח֚וֹף הַ/יָּ֣ם הַ/גָּד֔וֹל אֶל מ֖וּל הַ/לְּבָנ֑וֹן הַֽ/חִתִּי֙ וְ/הָ֣/אֱמֹרִ֔י הַֽ/כְּנַעֲנִי֙ הַ/פְּרִזִּ֔י הַ/חִוִּ֖י וְ/הַ/יְבוּסִֽי׃",
+        "LXX": "Ὡς δ’ ἤκουσαν οἱ βασιλεῖς τῶν Ἀμορραίων οἱ ἐν τῷ πέραν τοῦ Ἰορδάνου, οἱ ἐν τῇ ὀρεινῇ καὶ οἱ ἐν τῇ πεδινῇ καὶ οἱ ἐν πάσῃ τῇ παραλίᾳ τῆς θαλάσσης τῆς μεγάλης καὶ οἱ πρὸς τῷ Ἀντιλιβάνῳ, καὶ οἱ Χετταῖοι καὶ οἱ Φερεζαῖοι καὶ οἱ Εὐαῖοι καὶ οἱ Ἀμορραῖοι καὶ οἱ Γεργεσαῖοι καὶ οἱ Ἰεβουσαῖοι,",
+        "VUL": "Quibus auditis, cuncti reges trans Jordanem, qui versabantur in montanis et campestribus, in maritimis ac littore magni maris, hi quoque qui habitabant juxta Libanum, Hethæus et Amorrhæus, Chananæus, Pherezæus, et Hevæus, et Jebusæus,",
+        "SYN": "Услышав сие, все цари [Аморрейские], которые за Иорданом, на горе и на равнине и по всему берегу великого моря, [и которые] близ Ливана, Хеттеи, Аморреи, [Гергесеи,] Хананеи, Ферезеи, Евеи и Иевусеи,",
+        "NEO": "A la nouvelle de ces événements, tous les rois qui étaient au delà du Jourdain, dans la montagne et dans le bas pays, et sur toute la côte de la grande mer, vis-à-vis du Liban, les Hittites, les Amorrhéens, les Chananéens, les Phérézéens, les Hévéens et les Jébuséens",
+        "NAB": "When the news reached the kings west of the Jordan, in the mountain regions and in the foothills, and all along the coast of the Great Sea as far as Lebanon: Hittites, Amorites, Canaanites, Perizzites, Hivites and Jebusites,",
+        "VAT_ES": "Al enterarse de esto, todos los reyes que estaban de este lado del Jordán, en la Montaña, en la Sefelá, en toda la costa del gran Mar, hasta la región del Líbano –hititas, amorreos, cananeos, perizitas, jivitas y jebuseos–",
+        "CEI": "Non appena ebbero udito questi fatti, tutti i re che si trovavano oltre il Giordano, nella zona montuosa, nel bassopiano collinoso e lungo tutto il litorale del Mar Mediterraneo verso il Libano, gli Hittiti, gli Amorrèi, i Cananei, i Perizziti, gli Evei, i Gebusei,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּֽתְקַבְּצ֣וּ יַחְדָּ֔ו לְ/הִלָּחֵ֥ם עִם יְהוֹשֻׁ֖עַ וְ/עִם יִשְׂרָאֵ֑ל פֶּ֖ה אֶחָֽד׃",
+        "LXX": "συνήλθοσαν ἐπὶ τὸ αὐτὸ ἐκπολεμῆσαι Ἰησοῦν καὶ Ἰσραὴλ ἅμα πάντες.",
+        "VUL": "congregati sunt pariter, ut pugnarent contra Josue et Israël uno animo, eademque sententia.",
+        "SYN": "собрались вместе, дабы единодушно сразиться с Иисусом и Израилем.",
+        "NEO": "s’unirent ensemble pour combattre Josué et Israël d’un commun accord.",
+        "NAB": "they all formed an alliance to launch a common attack against Joshua and Israel.",
+        "VAT_ES": "se aliaron para combatir de común acuerdo contra Josué y contra Israel.",
+        "CEI": "si allearono per far guerra di comune accordo contro Giosuè e Israele."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/יֹשְׁבֵ֨י גִבְע֜וֹן שָׁמְע֗וּ אֵת֩ אֲשֶׁ֨ר עָשָׂ֧ה יְהוֹשֻׁ֛עַ לִֽ/ירִיח֖וֹ וְ/לָ/עָֽי׃",
+        "LXX": "Τότε οἰκοδόμησεν Ἰησοῦς θυσιαστήριον Κυρίῳ τῷ θεῷ Ἰσραὴλ ἐν ὄρει Γαιβάλ,",
+        "VUL": "At hi qui habitabant in Gabaon, audientes cuncta quæ fecerat Josue Jericho, et Hai,",
+        "SYN": "Но жители Гаваона, услышав, что Иисус сделал с Иерихоном и Гаем,",
+        "NEO": "Les habitants de Gabaon, lorsqu’ils apprirent comment Josué avait traité Jéricho et Haï,",
+        "NAB": "On learning what Joshua had done to Jericho and Ai, the inhabitants of Gibeon",
+        "VAT_ES": "También los habitantes de Gabaón se enteraron de lo que había hecho Josué con Jericó y con Ai,",
+        "CEI": "Invece gli abitanti di Gàbaon, quando ebbero sentito ciò che Giosuè aveva fatto a Gerico e ad Ai,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲשׂ֤וּ גַם הֵ֨מָּה֙ בְּ/עָרְמָ֔ה וַ/יֵּלְכ֖וּ וַ/יִּצְטַיָּ֑רוּ וַ/יִּקְח֞וּ שַׂקִּ֤ים בָּלִים֙ לַ/חֲמ֣וֹרֵי/הֶ֔ם וְ/נֹאד֥וֹת יַ֨יִן֙ בָּלִ֔ים וּ/מְבֻקָּעִ֖ים וּ/מְצֹרָרִֽים׃",
+        "LXX": "καθότι ἐνετείλατο Μωυσῆς ὁ θεράπων Κυρίου τοῖς υἱοῖς Ἰσραήλ, καθὰ γέγραπται ἐν τῷ νόμῳ Μωυσῆ, θυσιαστήριον λίθων ὁλοκλήρων ἐφ’ οὓς οὐκ ἐπεβλήθη σίδηρος· καὶ ἀνεβίβασεν ἐκεῖ ὁλοκαυτώματα Κυρίῳ, θυσίαν σωτηρίου.",
+        "VUL": "et callide cogitantes, tulerunt sibi cibaria, saccos veteres asinis imponentes, et utres vinarios scissos atque consutos,",
+        "SYN": "употребили хитрость: пошли, запаслись хлебом на дорогу и положили ветхие мешки на ослов своих и ветхие, изорванные и заплатанные мехи вина;",
+        "NEO": "eurent, de leur côté, recours à la ruse. Ils se mirent en route, avec des provisions de voyage. Ils avaient pris de vieux sacs sur leurs ânes et de vieilles outres à vin déchirées et recousues ;",
+        "NAB": "put into effect a device of their own. They chose provisions for a journey, making use of old sacks for their asses, and old wineskins, torn and mended.",
+        "VAT_ES": "y entonces decidieron recurrir a la astucia. Reunieron provisiones para el viaje, tomaron alforjas viejas para sus asnos y unos odres viejos, rotos y vueltos a coser;",
+        "CEI": "ricorsero da parte loro ad un'astuzia: andarono a rifornirsi di vettovaglie, presero sacchi sdrusciti per i loro asini, otri di vino consunti, rotti e rappezzati,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וּ/נְעָל֨וֹת בָּל֤וֹת וּ/מְטֻלָּאוֹת֙ בְּ/רַגְלֵי/הֶ֔ם וּ/שְׂלָמ֥וֹת בָּל֖וֹת עֲלֵי/הֶ֑ם וְ/כֹל֙ לֶ֣חֶם צֵידָ֔/ם יָבֵ֖שׁ הָיָ֥ה נִקֻּדִֽים׃",
+        "LXX": "καὶ ἔγραψεν Ἰησοῦς ἐπὶ τῶν λίθων τὸ δευτερονόμιον, νόμον Μωυσῆ, ἐνώπιον υἱῶν Ἰσραήλ.",
+        "VUL": "calceamentaque perantiqua quæ ad indicium vetustatis pittaciis consuta erant, induti veteribus vestimentis : panes quoque, quos portabant ob viaticum, duri erant, et in frusta comminuti :",
+        "SYN": "и обувь на ногах их была ветхая с заплатами, и одежда на них ветхая; и весь дорожный хлеб их был сухой и заплесневелый [и раскрошенный].",
+        "NEO": "ils avaient à leurs pieds de vieilles sandales rapiécées, et sur eux de vieux vêtements ; tout le pain qu’ils portaient pour leur nourriture était desséché et en miettes.",
+        "NAB": "They wore old, patched sandals and shabby garments; and all the bread they took was dry and crumbly.",
+        "VAT_ES": "se calzaron sandalias viejas y remendadas, y se vistieron con ropa gastada. Todo el pan que llevaban como alimento estaba reseco y reducido a migajas.",
+        "CEI": "si misero ai piedi sandali strappati e ricuciti, addosso vestiti logori. Tutto il pane della loro provvigione era secco e sbriciolato."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֵּלְכ֧וּ אֶל יְהוֹשֻׁ֛עַ אֶל הַֽ/מַּחֲנֶ֖ה הַ/גִּלְגָּ֑ל וַ/יֹּאמְר֨וּ אֵלָ֜י/ו וְ/אֶל אִ֣ישׁ יִשְׂרָאֵ֗ל מֵ/אֶ֤רֶץ רְחוֹקָה֙ בָּ֔אנוּ וְ/עַתָּ֖ה כִּרְתוּ לָ֥/נוּ בְרִֽית׃",
+        "LXX": "καὶ πᾶς Ἰσραὴλ καὶ οἱ πρεσβύτεροι αὐτῶν καὶ οἱ δικασταὶ καὶ οἱ γραμματεῖς αὐτῶν παρεπορεύοντο ἔνθεν καὶ ἔνθεν τῆς κιβωτοῦ ἀπέναντι, καὶ οἱ ἱερεῖς καὶ οἱ Λευεῖται ἦραν τὴν κιβωτὸν τῆς διαθήκης Κυρίου, καὶ ὁ προσήλυτος καὶ ὁ αὐτόχθων, οἳ ἦσαν ἥμισυ πλησίον ὄρους Γαριζείν, καὶ οἳ ἦσαν ἥμισυ πλησίον ὄρους Γαιβάλ· καθότι ἐνετείλατο Μωυσῆς ὁ θεράπων Κυρίου εὐλογῆσαι τὸν λαὸν ἐν πρώτοις.",
+        "VUL": "perrexeruntque ad Josue, qui tunc morabatur in castris Galgalæ, et dixerunt ei, atque simul omni Israëli : De terra longinqua venimus, pacem vobiscum facere cupientes. Responderuntque viri Israël ad eos, atque dixerunt :",
+        "SYN": "Они пришли к Иисусу в стан [Израильский] в Галгал и сказали ему и всем Израильтянам: из весьма дальней земли пришли мы; итак заключите с нами союз.",
+        "NEO": "Ils allèrent auprès de Josué, au camp de Galgala, et ils lui dirent, à lui et à tous les hommes d’Israël : « Nous venons d’un pays éloigné, et maintenant faites alliance avec nous. »",
+        "NAB": "Thus they journeyed to Joshua in the camp at Gilgal, where they said to him and to the men of Israel, \"We have come from a distant land to propose that you make an alliance with us.\"",
+        "VAT_ES": "Así fueron hasta el campamento de Josué, en Guilgal, y le dijeron, a él y a los hombres de Israel: «Venimos de un país lejano; por eso, hagan una alianza con nosotros».",
+        "CEI": "Andarono poi da Giosuè all'accampamento di Gàlgala e dissero a lui e agli Israeliti: \"Veniamo da un paese lontano; stringete con noi un'alleanza\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "ו/יאמרו וַ/יֹּ֥אמֶר אִֽישׁ יִשְׂרָאֵ֖ל אֶל הַ/חִוִּ֑י אוּלַ֗י בְּ/קִרְבִּ/י֙ אַתָּ֣ה יוֹשֵׁ֔ב וְ/אֵ֖יךְ אכרות אֶֽכְרָת לְ/ךָ֥ בְרִֽית׃",
+        "LXX": "καὶ μετὰ ταῦτα οὕτως ἀνέγνω Ἰησοῦς πάντα τὰ ῥήματα τοῦ νόμου τούτου, τὰς εὐλογίας καὶ τὰς κατάρας κατὰ πάντα τὰ γεγραμμένα ἐν τῷ νόμῳ Μωυσῆ·",
+        "VUL": "Ne forte in terra, quæ nobis sorte debetur, habitetis, et non possimus fdus inire vobiscum.",
+        "SYN": "Израильтяне же сказали Евеям: может быть, вы живете близ нас? как нам заключить с вами союз?",
+        "NEO": "Les hommes d’Israël répondirent à ces Hévéens : « Peut-être que vous habitez au milieu de nous ; comment pourrions-nous faire alliance avec vous ? »",
+        "NAB": "But the men of Israel replied to the Hivites, \"You may be living in land that is ours. How, then, can we make an alliance with you?\"",
+        "VAT_ES": "Pero los hombres de Israel respondieron a aquellos jivitas: «Tal vez ustedes habitan por aquí, entre nosotros. &iquest;Cómo vamos a hacer una alianza con ustedes?».",
+        "CEI": "La gente di Israele rispose loro: \"Forse abitate in mezzo a noi e come possiamo stringere alleanza con voi?\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֥וּ אֶל יְהוֹשֻׁ֖עַ עֲבָדֶ֣י/ךָ אֲנָ֑חְנוּ וַ/יֹּ֨אמֶר אֲלֵ/הֶ֧ם יְהוֹשֻׁ֛עַ מִ֥י אַתֶּ֖ם וּ/מֵ/אַ֥יִן תָּבֹֽאוּ׃",
+        "LXX": "οὐκ ἦν ῥῆμα ἀπὸ πάντων ὧν ἐνετείλατο Μωυσῆς τῷ Ἰησοῖ ὃ οὐκ ἀνέγνω Ἰησοῦς εἰς τὰ ὦτα πάσης ἐκκλησίας υἱῶν Ἰσραήλ, τοῖς ἀνδράσιν καὶ ταῖς γυναιξὶν καὶ τοῖς παιδίοις, καὶ τοῖς προσηλύτοις τοῖς προσπορευομένοις τῷ Ἰσραήλ.",
+        "VUL": "At illi ad Josue : Servi, inquiunt, tui sumus. Quibus Josue ait : Quinam estis vos ? et unde venistis ?",
+        "SYN": "Они сказали Иисусу: мы рабы твои. Иисус же сказал им: кто вы и откуда пришли?",
+        "NEO": "Il dirent à Josué : « Nous sommes tes serviteurs. » Josué leur dit : « Qui êtes-vous et d’où venez-vous ? »",
+        "NAB": "But they answered Joshua, \"We are your servants.\" Then Joshua asked them, \"Who are you? Where do you come from?\"",
+        "VAT_ES": "Ellos dijeron a Josué: «Nosotros somos tus servidores». «&iquest;Quiénes son ustedes?, les preguntó Josué, &iquest;de dónde vienen?",
+        "CEI": "Risposero a Giosuè: \"Noi siamo tuoi servi!\" e Giosuè chiese loro: \"Chi siete e da dove venite?\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֣וּ אֵלָ֗י/ו מֵ/אֶ֨רֶץ רְחוֹקָ֤ה מְאֹד֙ בָּ֣אוּ עֲבָדֶ֔י/ךָ לְ/שֵׁ֖ם יְהוָ֣ה אֱלֹהֶ֑י/ךָ כִּֽי שָׁמַ֣עְנוּ שָׁמְע֔/וֹ וְ/אֵ֛ת כָּל אֲשֶׁ֥ר עָשָׂ֖ה בְּ/מִצְרָֽיִם׃",
+        "LXX": "Καὶ οἱ κατοικοῦντες Γαβαὼν ἤκουσαν πάντα ὅσα ἐποίησεν Κύριος τῇ Ἰερειχὼ καὶ τῇ Γαί.",
+        "VUL": "Responderunt : De terra longinqua valde venerunt servi tui in nomine Domini Dei tui. Audivimus enim famam potentiæ ejus, cuncta quæ fecit in Ægypto,",
+        "SYN": "Они сказали ему: из весьма дальней земли пришли рабы твои во имя Господа Бога твоего; ибо мы слышали славу Его и все, что сделал Он в Египте,",
+        "NEO": "Ils lui dirent : « Tes serviteurs viennent d’un pays très éloigné, à cause du nom de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu ; car nous avons entendu parler de lui, de tout ce qu’il a fait en Égypte,",
+        "NAB": "They answered him, \"Your servants have come from a far-off land, because of the fame of the LORD, your God. For we have heard reports of all that he did in Egypt",
+        "VAT_ES": "Ellos le respondieron: «Nosotros, tus servidores, venimos de un país muy lejano, atraídos por el renombre del Señor, tu Dios. Porque hemos oído hablar de él, de todo lo que hizo en Egipto,",
+        "CEI": "Gli risposero: \"I tuoi servi vengono da un paese molto lontano, a causa del nome del Signore Dio tuo, poiché abbiamo udito della sua fama, di quanto ha fatto in Egitto,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/אֵ֣ת כָּל אֲשֶׁ֣ר עָשָׂ֗ה לִ/שְׁנֵי֙ מַלְכֵ֣י הָ/אֱמֹרִ֔י אֲשֶׁ֖ר בְּ/עֵ֣בֶר הַ/יַּרְדֵּ֑ן לְ/סִיחוֹן֙ מֶ֣לֶךְ חֶשְׁבּ֔וֹן וּ/לְ/ע֥וֹג מֶֽלֶךְ הַ/בָּשָׁ֖ן אֲשֶׁ֥ר בְּ/עַשְׁתָּרֽוֹת׃",
+        "LXX": "καὶ ἐποίησαν καί γε αὐτοὶ μετὰ πανουργίας, καὶ ἐλθόντες ἐπεσιτίσαντο καὶ ἡτοιμάσαντο· καὶ λαβόντες σάκκους παλαιοὺς ἐπὶ τῶν ὤμων αὐτῶν καὶ ἀσκοὺς οἴνου παλαιοὺς καὶ κατερρωγότας ἀποδεδεμένους,",
+        "VUL": "et duobus regibus Amorrhæorum qui fuerunt trans Jordanem, Sehon regi Hesebon, et Og regi Basan, qui erat in Astaroth :",
+        "SYN": "и все, что Он сделал двум царям Аморрейским, которые [были] по ту сторону Иордана, Сигону, царю Есевонскому, и Огу, царю Васанскому, который [жил] в Астарофе [и Едреи].",
+        "NEO": "et comment il a traité les deux rois des Amorrhéens au delà du Jourdain, Séhon, roi de Hésebon, et Og, roi de Basan, qui habitait à Astaroth.",
+        "NAB": "and all that he did to the two kings of the Amorites beyond the Jordan, Sihon, king of Heshbon, and Og, king of Bashan, who lived in Ashtaroth.",
+        "VAT_ES": "y de la manera que trató a los dos reyes amorreos que estaban al otro lado del Jordán: a Sijón, el rey de Jesbón, y a Og, el rey de Basán que residía en Astarot.",
+        "CEI": "di quanto ha fatto ai due re degli Amorrèi, che erano oltre il Giordano, a Sicon, re di Chesbòn, e ad Og, re di Basan, che era ad Astarot."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֣וּ אֵלֵ֡י/נוּ זְֽקֵינֵי/נוּ֩ וְ/כָל יֹשְׁבֵ֨י אַרְצֵ֜/נוּ לֵ/אמֹ֗ר קְח֨וּ בְ/יֶדְ/כֶ֤ם צֵידָה֙ לַ/דֶּ֔רֶךְ וּ/לְכ֖וּ לִ/קְרָאתָ֑/ם וַ/אֲמַרְתֶּ֤ם אֲלֵי/הֶם֙ עַבְדֵי/כֶ֣ם אֲנַ֔חְנוּ וְ/עַתָּ֖ה כִּרְתוּ לָ֥/נוּ בְרִֽית׃",
+        "LXX": "καὶ τὰ κοῖλα τῶν ὑποδημάτων αὐτῶν καὶ τὰ σανδάλια αὐτῶν παλαιὰ καὶ καταπεπελματωμένα ἐν τοῖς ποσὶν αὐτῶν, καὶ τὰ ἱμάτια αὐτῶν πεπαλαιωμένα ἐπάνω αὐτῶν· καὶ ὁ ἄρτος αὐτῶν τοῦ ἐπισιτισμοῦ ξηρὸς καὶ εὐρωτιῶν καὶ βεβρωμένος.",
+        "VUL": "dixeruntque nobis seniores, et omnes habitatores terræ nostræ : Tollite in manibus cibaria ob longissimam viam, et occurrite eis, et dicite : Servi vestri sumus : fdus inite nobiscum.",
+        "SYN": "[Слыша сие,] старейшины наши и все жители нашей земли сказали нам: возьмите в руки ваши хлеба на дорогу и пойдите навстречу им и скажите им: \"мы рабы ваши; итак заключите с нами союз\".",
+        "NEO": "Et nos anciens et tous les habitants de notre pays nous ont dit : Prenez avec vous des provisions pour le voyage, allez au-devant d’eux et dites-leur : Nous sommes vos serviteurs, et maintenant faites alliance avec nous.",
+        "NAB": "So our elders and all the inhabitants of our country said to us, 'Take along provisions for the journey and go to meet them. Say to them: We are your servants; we propose that you make an alliance with us.'",
+        "VAT_ES": "Por eso nuestros ancianos y todos los habitantes de nuestro país nos dijeron: «Provéanse de víveres para el camino, vayan a su encuentro y díganles: somos sus servidores, hagan por lo tanto una alianza con nosotros».",
+        "CEI": "Ci dissero allora i nostri vecchi e tutti gli abitanti del nostro paese: Rifornitevi di provviste per la strada, andate loro incontro e dite loro: Noi siamo servi vostri, stringete dunque un'alleanza con noi."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "זֶ֣ה לַחְמֵ֗/נוּ חָ֞ם הִצְטַיַּ֤דְנוּ אֹת/וֹ֙ מִ/בָּ֣תֵּ֔י/נוּ בְּ/י֥וֹם צֵאתֵ֖/נוּ לָ/לֶ֣כֶת אֲלֵי/כֶ֑ם וְ/עַתָּה֙ הִנֵּ֣ה יָבֵ֔שׁ וְ/הָיָ֖ה נִקֻּדִֽים׃",
+        "LXX": "καὶ ἤλθοσαν πρὸς Ἰησοῦν εἰς τὴν παρεμβολὴν Ἰσραὴλ εἰς Γάλγαλα, καὶ εἶπαν πρὸς Ἰησοῦν καὶ Ἰσραήλ Ἐκ γῆς μακρόθεν ἥκαμεν, καὶ νῦν διάθεσθε ἡμῖν διαθήκην.",
+        "VUL": "En panes quando egressi sumus de domibus nostris, ut veniremus ad vos, calidos sumpsimus ; nunc sicci facti sunt, et vetustate nimia comminuti.",
+        "SYN": "Этот хлеб наш из домов наших мы взяли теплый в тот день, когда пошли к вам, а теперь вот, он сделался сухой и заплесневелый;",
+        "NEO": "Voici notre pain : il était chaud quand nous en avons fait provision dans nos maisons, le jour où nous sommes partis pour venir vers vous, et maintenant le voilà desséché et en miettes.",
+        "NAB": "This bread of ours was still warm when we brought it from home as provisions the day we left to come to you, but now it is dry and crumbled.",
+        "VAT_ES": "Este es nuestro pan: todavía estaba caliente cuando nos proveímos de él en nuestras casas, el día en que salimos al encuentro de ustedes; ahora está reseco y convertido en migajas.",
+        "CEI": "Questo è il nostro pane: caldo noi lo prendemmo come provvista nelle nostre case quando uscimmo per venire da voi e ora eccolo secco e ridotto in briciole;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨לֶּה נֹאד֤וֹת הַ/יַּ֨יִן֙ אֲשֶׁ֣ר מִלֵּ֣אנוּ חֲדָשִׁ֔ים וְ/הִנֵּ֖ה הִתְבַּקָּ֑עוּ וְ/אֵ֤לֶּה שַׂלְמוֹתֵ֨י/נוּ֙ וּ/נְעָלֵ֔י/נוּ בָּל֕וּ מֵ/רֹ֥ב הַ/דֶּ֖רֶךְ מְאֹֽד׃",
+        "LXX": "καὶ εἶπαν οἱ υἱοὶ Ἰσραὴλ πρὸς τὸν Χορραῖον Ὅρα μὴ ἐν ἐμοὶ κατοικεῖς, καὶ πῶς σοι διαθῶμαι διαθήκην;",
+        "VUL": "Utres vini novos implevimus ; nunc rupti sunt et soluti. Vestes et calceamenta quibus induimur, et quæ habemus in pedibus, ob longitudinem longioris viæ trita sunt, et pene consumpta.",
+        "SYN": "и эти мехи с вином, которые мы налили новые, вот, изорвались; и эта одежда наша и обувь наша обветшала от весьма дальней дороги.",
+        "NEO": "Ces outres à vin, que nous avons remplies toutes neuves, les voilà déchirées ; nos vêtements et nos sandales se sont usés par la grande longueur du voyage. »",
+        "NAB": "Here are our wineskins, which were new when we filled them, but now they are torn. Look at our garments and sandals, which are worn out from the very long journey.\"",
+        "VAT_ES": "Estos son los odres de vino: eran nuevos cuando los llenamos, y ahora están aquí, todos rotos. Y estas son nuestra ropa y nuestras sandalias, gastadas por un viaje excesivamente largo».",
+        "CEI": "questi otri di vino, che noi riempimmo nuovi, eccoli rotti e questi nostri vestiti e i nostri sandali sono consunti per il cammino molto lungo\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּקְח֥וּ הָֽ/אֲנָשִׁ֖ים מִ/צֵּידָ֑/ם וְ/אֶת פִּ֥י יְהוָ֖ה לֹ֥א שָׁאָֽלוּ׃",
+        "LXX": "καὶ εἶπαν πρὸς Ἰησοῦν Οἰκέται σού ἐσμεν. καὶ εἶπεν πρὸς αὐτοὺς Ἰησοῦς Πόθεν ἐστέ, καὶ πόθεν παραγεγόνατε;",
+        "VUL": "Susceperunt igitur de cibariis eorum, et os Domini non interrogaverunt.",
+        "SYN": "Израильтяне взяли их хлеба, а Господа не вопросили.",
+        "NEO": "Les hommes d’Israël prirent de leurs provisions, sans consulter la bouche de \\+w Yahweh|strong=\"H3068\"\\+w** ;",
+        "NAB": "Then the Israelite princes partook of their provisions, without seeking the advice of the LORD.",
+        "VAT_ES": "Entonces los israelitas comieron de sus provisiones sin consultar la decisión del Señor.",
+        "CEI": "La gente allora prese le loro provviste senza consultare l'oracolo del Signore."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַשׂ לָ/הֶ֤ם יְהוֹשֻׁ֨עַ֙ שָׁל֔וֹם וַ/יִּכְרֹ֥ת לָ/הֶ֛ם בְּרִ֖ית לְ/חַיּוֹתָ֑/ם וַ/יִּשָּׁבְע֣וּ לָ/הֶ֔ם נְשִׂיאֵ֖י הָ/עֵדָֽה׃",
+        "LXX": "καὶ εἶπαν Ἐκ γῆς μακρόθεν σφόδρα ἥκασιν οἱ παῖδές σου ἐν ὀνόματι Κυρίου τοῦ θεοῦ σου· ἀκηκόαμεν γὰρ τὸ ὄνομα αὐτοῦ, καὶ ὅσα ἐποίησεν ἐν Αἰγύπτῳ,",
+        "VUL": "Fecitque Josue cum eis pacem, et inito fdere pollicitus est quod non occiderentur : principes quoque multitudinis juraverunt eis.",
+        "SYN": "И заключил Иисус с ними мир и постановил с ними условие в том, что он сохранит им жизнь; и поклялись им начальники общества.",
+        "NEO": "et Josué leur accorda la paix et conclut avec eux une alliance portant qu’on leur laisserait la vie ; et les princes de l’assemblée le leur jurèrent.",
+        "NAB": "So Joshua made an alliance with them and entered into an agreement to spare them, which the princes of the community sealed with an oath.",
+        "VAT_ES": "Josué hizo las paces con ellos y también el pacto de conservarles la vida; los jefes de la comunidad, por su parte, les hicieron un juramento.",
+        "CEI": "Giosuè fece pace con loro e stipulò l'alleanza di lasciarli vivere; i capi della comunità s'impegnarono verso di loro con giuramento."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י מִ/קְצֵה֙ שְׁלֹ֣שֶׁת יָמִ֔ים אַחֲרֵ֕י אֲשֶׁר כָּרְת֥וּ לָ/הֶ֖ם בְּרִ֑ית וַֽ/יִּשְׁמְע֗וּ כִּי קְרֹבִ֥ים הֵם֙ אֵלָ֔י/ו וּ/בְ/קִרְבּ֖/וֹ הֵ֥ם יֹשְׁבִֽים׃",
+        "LXX": "καὶ ὅσα ἐποίησεν τοῖς βασιλεῦσιν τῶν, Ἀμορραίων οἳ ἦσαν πέραν τοῦ Ἰορδάνου, τῷ Σηὼν βασιλεῖ τῶν Ἀμορραίων καὶ τῷ Ὢγ βασιλεῖ τῆς Βασάν, ὃς κατῴκει ἐν Ἀσταρὼθ καὶ ἐν Ἐδράειν.",
+        "VUL": "Post dies autem tres initi fderis, audierunt quod in vicino habitarent, et inter eos futuri essent.",
+        "SYN": "А чрез три дня, как заключили они с ними союз, услышали, что они соседи их и живут близ них;",
+        "NEO": "Trois jours après la conclusion de l’alliance, les enfants d’Israël apprirent qu’ils étaient leurs voisins et qu’ils habitaient au milieu d’eux.",
+        "NAB": "Three days after the agreement was entered into, the Israelites learned that these people were from nearby, and would be living in Israel.",
+        "VAT_ES": "Pero tres días después de haber concluido este pacto, los israelitas se enteraron de que aquellos hombres eran de un pueblo vecino y que vivían en las inmediaciones.",
+        "CEI": "Tre giorni dopo avere stipulato con essi il patto, gli Israeliti vennero a sapere che quelli erano loro vicini e abitavano in mezzo a loro."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֣וּ בְנֵֽי יִשְׂרָאֵ֗ל וַ/יָּבֹ֛אוּ אֶל עָרֵי/הֶ֖ם בַּ/יּ֣וֹם הַ/שְּׁלִישִׁ֑י וְ/עָרֵי/הֶם֙ גִּבְע֣וֹן וְ/הַ/כְּפִירָ֔ה וּ/בְאֵר֖וֹת וְ/קִרְיַ֥ת יְעָרִֽים׃",
+        "LXX": "καὶ ἀκούσαντες εἶπαν πρὸς ἡμᾶς οἱ πρεσβύτεροι ἡμῶν καὶ πάντες οἱ κατοικοῦντες τὴν γῆν ἡμῶν λέγοντες Λάβετε ἑαυτοῖς ἐπισιτισμὸν εἰς τὴν ὁδὸν καὶ πορεύθητε εἰς συνάντησιν αὐτῶν, καὶ ἐρεῖτε πρὸς αὐτούς Οἰκέται σού ἐσμεν, καὶ νῦν διάθεσθε ἡμῖν διαθήκην.",
+        "VUL": "Moveruntque castra filii Israël, et venerunt in civitates eorum die tertio, quarum hæc vocabula sunt : Gabaon, et Caphira, et Beroth, et Cariathiarim.",
+        "SYN": "ибо сыны Израилевы, отправившись в путь, пришли в города их на третий день; города же их [были]: Гаваон, Кефира, Беероф и Кириаф-Иарим.",
+        "NEO": "Les enfants d’Israël partirent donc, et arrivèrent à leurs villes le troisième jour ; leurs villes étaient Gabaon, Caphira, Béroth et Cariathiarim.",
+        "NAB": "The third day on the road, the Israelites came to their cities of Gibeon, Chephirah, Beeroth and Kiriath-jearim,",
+        "VAT_ES": "Entonces levantaron sus carpas, y en tres días llegaron a las ciudades que ellos habitaban. Estas eran Gabaón, Quefirá, Beerot y Quiriat Iearím.",
+        "CEI": "Allora gli Israeliti partirono e il terzo giorno entrarono nelle loro città: le loro città erano Gàbaon, Chefira, Beerot e Kiriat-Iarim."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/לֹ֤א הִכּוּ/ם֙ בְּנֵ֣י יִשְׂרָאֵ֔ל כִּֽי נִשְׁבְּע֤וּ לָ/הֶם֙ נְשִׂיאֵ֣י הָֽ/עֵדָ֔ה בַּֽ/יהוָ֖ה אֱלֹהֵ֣י יִשְׂרָאֵ֑ל וַ/יִּלֹּ֥נוּ כָל הָ/עֵדָ֖ה עַל הַ/נְּשִׂיאִֽים׃",
+        "LXX": "οὗτοι οἱ ἄρτοι, θερμοὺς ἐφωδιάσθημεν αὐτοὺς ἐν τῇ ἡμέρᾳ ᾗ ἐξήλθομεν παραγενέσθαι πρὸς ὑμᾶς, νῦν δὲ ἐξηράνθησαν καὶ γεγόνασιν βεβρωμένοι·",
+        "VUL": "Et non percusserunt eos, eo quod jurassent eis principes multitudinis in nomine Domini Dei Israël. Murmuravit itaque omne vulgus contra principes.",
+        "SYN": "[Иисус и] сыны Израилевы не побили их, потому что [все] начальники общества клялись им Господом Богом Израилевым. За это все общество [Израилево] возроптало на начальников.",
+        "NEO": "Ils ne les frappèrent pas de l’épée, à cause du serment que les princes de l’assemblée leur avaient fait au nom de \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël ; mais toute l’assemblée murmura contre les princes.",
+        "NAB": "but did not attack them, because the princes of the community had sworn to them by the LORD, the God of Israel. When the entire community grumbled against the princes,",
+        "VAT_ES": "Los israelitas no los mataron, porque los jefes de la comunidad les habían hecho un juramento por el Señor, el Dios de Israel. Pero toda la comunidad murmuró contra sus jefes.",
+        "CEI": "Ma gli Israeliti non li uccisero, perché i capi della comunità avevano loro giurato per il Signore, Dio di Israele, e tutta la comunità si lamentò dei capi."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֤וּ כָל הַ/נְּשִׂיאִים֙ אֶל כָּל הָ֣/עֵדָ֔ה אֲנַ֨חְנוּ֙ נִשְׁבַּ֣עְנוּ לָ/הֶ֔ם בַּֽ/יהוָ֖ה אֱלֹהֵ֣י יִשְׂרָאֵ֑ל וְ/עַתָּ֕ה לֹ֥א נוּכַ֖ל לִ/נְגֹּ֥עַ בָּ/הֶֽם׃",
+        "LXX": "καὶ οὗτοι οἱ ἀσκοὶ τοῦ οἴνου οὓς ἐπλήσαμεν καινούς, καὶ οὗτοι ἐρρώγασιν· καὶ τὰ ἱμάτια ἡμῶν καὶ τὰ ὑποδήματα ἡμῶν πεπαλαίωται ἀπὸ τῆς πολλῆς ὁδοῦ σφόδρα.",
+        "VUL": "Qui responderunt eis : Juravimus illis in nomine Domini Dei Israël, et idcirco non possumus eos contingere.",
+        "SYN": "Все начальники сказали всему обществу: мы клялись им Господом Богом Израилевым и потому не можем коснуться их;",
+        "NEO": "Tous les princes dirent alors à toute l’assemblée : « Nous leur avons fait un serment par \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël ; et maintenant, nous ne pouvons les toucher.",
+        "NAB": "these all remonstrated with the people, \"We have sworn to them by the LORD, the God of Israel, and so we cannot harm them.",
+        "VAT_ES": "Los jefes declararon a la comunidad en pleno: «Nosotros les hemos prestado un juramento por el Señor, el Dios de Israel, y ahora no podemos tocarlos.",
+        "CEI": "Dissero allora tutti i capi dell'intera comunità: \"Noi abbiamo loro giurato per il Signore, Dio di Israele, e ora non possiamo colpirli."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "זֹ֛את נַעֲשֶׂ֥ה לָ/הֶ֖ם וְ/הַחֲיֵ֣ה אוֹתָ֑/ם וְ/לֹֽא יִֽהְיֶ֤ה עָלֵ֨י/נוּ֙ קֶ֔צֶף עַל הַ/שְּׁבוּעָ֖ה אֲשֶׁר נִשְׁבַּ֥עְנוּ לָ/הֶֽם׃",
+        "LXX": "καὶ ἔλαβον οἱ ἄρχοντες τοῦ ἐπισιτισμοῦ αὐτῶν, καὶ Κύριον οὐκ ἐπηρώτησαν.",
+        "VUL": "Sed hoc faciemus eis : reserventur quidem ut vivant, ne contra nos ira Domini concitetur, si pejeraverimus :",
+        "SYN": "а вот что сделаем с ними: оставим их в живых, чтобы не постиг нас гнев за клятву, которою мы клялись им.",
+        "NEO": "Voici comment nous les traiterons : nous leur laisserons la vie, pour ne pas attirer sur nous la colère de \\+w Yahweh|strong=\"H3068\"\\+w**, par suite du serment que nous leur avons fait.",
+        "NAB": "Let us therefore spare their lives and so deal with them that we shall not be punished for the oath we have sworn to them.\"",
+        "VAT_ES": "Haremos con ellos lo siguiente: los dejaremos vivir para no atraer sobre nosotros la ira del Señor, a causa del juramento que les hemos hecho».",
+        "CEI": "Faremo loro questo: li lasceremo vivere e così non ci sarà su di noi lo sdegno, a causa del giuramento che abbiamo loro prestato\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֧וּ אֲלֵי/הֶ֛ם הַ/נְּשִׂיאִ֖ים יִֽחְי֑וּ וַ֠/יִּֽהְיוּ חֹטְבֵ֨י עֵצִ֤ים וְ/שֹֽׁאֲבֵי מַ֨יִם֙ לְ/כָל הָ֣/עֵדָ֔ה כַּ/אֲשֶׁ֛ר דִּבְּר֥וּ לָ/הֶ֖ם הַ/נְּשִׂיאִֽים׃",
+        "LXX": "καὶ ἐποίησεν Ἰησοῦς πρὸς αὐτοὺς εἰρήνην· καὶ διέθεντο πρὸς αὐτοὺς διαθήκην τοῦ διασῶσαι αὐτούς, καὶ ὤμοσαν αὐτοῖς οἱ ἄρχοντες τῆς συναγωγῆς.",
+        "VUL": "sed sic vivant, ut in usus universæ multitudinis ligna cædant, aquasque comportent. Quibus hæc loquentibus,",
+        "SYN": "И сказали им начальники: пусть они живут, но будут рубить дрова и черпать воду для всего общества. [И сделало все общество] так, как сказали им начальники.",
+        "NEO": "Qu’ils vivent donc, » leur disent les princes.",
+        "NAB": "Thus the princes recommended that they be let live, as hewers of wood and drawers of water for the entire community; and the community did as the princes advised them.",
+        "VAT_ES": "Luego los jefes les dijeron: «&iexcl;Qué vivan! Pero estarán al servicio de la comunidad como leñadores y aguateros». Y la comunidad obró de acuerdo con lo que habían dicho los jefes.",
+        "CEI": "Ma aggiunsero i capi: \"Vivano pure, siano però tagliatori di legna e portatori d'acqua per tutta la comunità\". Come i capi ebbero loro parlato,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֤א לָ/הֶם֙ יְהוֹשֻׁ֔עַ וַ/יְדַבֵּ֥ר אֲלֵי/הֶ֖ם לֵ/אמֹ֑ר לָ/מָּה֩ רִמִּיתֶ֨ם אֹתָ֜/נוּ לֵ/אמֹ֗ר רְחוֹקִ֨ים אֲנַ֤חְנוּ מִ/כֶּם֙ מְאֹ֔ד וְ/אַתֶּ֖ם בְּ/קִרְבֵּ֥/נוּ יֹשְׁבִֽים׃",
+        "LXX": "Καὶ ἐγένετο μετὰ τρεῖς ἡμέρας μετὰ τὸ διαθέσθαι πρὸς αὐτοὺς διαθήκην, ἤκουσαν ὅτι ἐγγύθεν αὐτῶν εἰσιν, καὶ ὅτι ἐν αὐτοῖς κατοικοῦσιν.",
+        "VUL": "vocavit Gabaonitas Josue, et dixit eis : Cur nos decipere fraude voluistis, ut diceretis : Procul valde habitamus a vobis, cum in medio nostri sitis ?",
+        "SYN": "Иисус призвал их и сказал: для чего вы обманули нас, сказав: \"мы весьма далеко от вас\", тогда как вы живете близ нас?",
+        "NEO": "Josué fit appeler les Gabaonites et leur parla ainsi : « Pourquoi nous avez-vous trompés, en disant : Nous sommes très éloignés de vous, tandis que vous habitez au milieu de nous ?",
+        "NAB": "Joshua summoned the Gibeonites and said to them, \"Why did you lie to us and say that you lived at a great distance from us, when you will be living in our very midst?",
+        "VAT_ES": "Josué hizo comparecer a los gabaonitas y les dijo: «&iquest;Por qué ustedes nos han engañado asegurando que vivían muy lejos de nosotros, cuando en realidad viven aquí, en las inmediaciones?",
+        "CEI": "Giosuè chiamò i Gabaoniti e disse loro: \"Perché ci avete ingannati, dicendo: Noi abitiamo molto lontano da voi, mentre abitate in mezzo a noi?"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֖ה אֲרוּרִ֣ים אַתֶּ֑ם וְ/לֹֽא יִכָּרֵ֨ת מִ/כֶּ֜ם עֶ֗בֶד וְ/חֹטְבֵ֥י עֵצִ֛ים וְ/שֹֽׁאֲבֵי מַ֖יִם לְ/בֵ֥ית אֱלֹהָֽ/י׃",
+        "LXX": "καὶ ἀπῆραν οἱ υἱοὶ Ἰσραὴλ καὶ ἦλθον εἰς τὰς πόλεις αὐτῶν· αἱ δὲ πόλεις αὐτῶν Γαβαὼν καὶ Κεφειρὰ καὶ Βειρών, καὶ πόλεις Ἰαρείν.",
+        "VUL": "itaque sub maledictione eritis, et non deficiet de stirpe vestra ligna cædens, aquasque comportans in domum Dei mei.",
+        "SYN": "за это прокляты вы! без конца вы будете рабами, будете рубить дрова и черпать воду для [меня и для] дома Бога моего!",
+        "NEO": "Maintenant, vous êtes maudits et personne de vous ne manquera d’être esclave, coupant le bois et puisant l’eau pour la maison de mon Dieu. »",
+        "NAB": "For this are you accursed: every one of you shall always be a slave (hewers of wood and drawers of water) for the house of my God.\"",
+        "VAT_ES": "Ahora pesa sobre ustedes una maldición, y por eso nunca faltarán entre ustedes esclavos, que sirvan como leñadores y aguateros en la Casa de mi Dios».",
+        "CEI": "Orbene voi siete maledetti e nessuno di voi cesserà di essere schiavo e di tagliar legna e di portare acqua per la casa del mio Dio\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲנ֨וּ אֶת יְהוֹשֻׁ֜עַ וַ/יֹּאמְר֗וּ כִּי֩ הֻגֵּ֨ד הֻגַּ֤ד לַ/עֲבָדֶ֨י/ךָ֙ אֵת֩ אֲשֶׁ֨ר צִוָּ֜ה יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ אֶת מֹשֶׁ֣ה עַבְדּ֔/וֹ לָ/תֵ֤ת לָ/כֶם֙ אֶת כָּל הָ/אָ֔רֶץ וּ/לְ/הַשְׁמִ֛יד אֶת כָּל יֹשְׁבֵ֥י הָ/אָ֖רֶץ מִ/פְּנֵי/כֶ֑ם וַ/נִּירָ֨א מְאֹ֤ד לְ/נַפְשֹׁתֵ֨י/נוּ֙ מִ/פְּנֵי/כֶ֔ם וַֽ/נַּעֲשֵׂ֖ה אֶת הַ/דָּבָ֥ר הַ/זֶּֽה׃",
+        "LXX": "καὶ οὐκ ἐμαχέσαντο αὐτοῖς οἱ υἱοὶ Ἰσραήλ, ὅτι ὤμοσαν αὐτοῖς πάντες οἱ ἄρχοντες Κύριον τὸν θεὸν Ἰσραήλ· καὶ διεγόγγυσαν πᾶσα ἡ συναγωγὴ ἐπὶ τοῖς ἄρχουσιν.",
+        "VUL": "Qui responderunt : Nuntiatum est nobis servis tuis, quod promisisset Dominus Deus tuus Moysi servo suo ut traderet vobis omnem terram, et disperderet cunctos habitatores ejus. Timuimus igitur valde, et providimus animabus nostris, vestro terrore compulsi, et hoc consilium inivimus.",
+        "SYN": "Они в ответ Иисусу сказали: дошло до сведения рабов твоих, что Господь Бог твой повелел Моисею, рабу Своему, дать вам всю землю и погубить [нас и] всех жителей сей земли пред лицем вашим; посему мы весьма боялись, чтобы вы не лишили нас жизни, и сделали это дело;",
+        "NEO": "Ils répondirent à Josué en disant : « C’est qu’on avait rapporté à tes serviteurs l’ordre donné par \\+w Yahweh|strong=\"H3068\"\\+w** ton Dieu, à Moïse, son serviteur, de vous livrer tout le pays et d’exterminer tous les habitants du pays devant vous. Et nous avons éprouvé à votre approche une grande crainte pour nos vies ; c’est pourquoi nous avons agi de cette manière.",
+        "NAB": "They answered Joshua, \"Your servants were fully informed of how the LORD, your God, commanded his servant Moses that you be given the entire land and that all its inhabitants be destroyed before you. Since, therefore, at your advance, we were in great fear for our lives, we acted as we did.",
+        "VAT_ES": "Ellos respondieron a Josué: «Nosotros estábamos perfectamente informados de que el Señor, tu Dios, había dado a su servidor Moisés la orden de entregarles todo el país, y de exterminar a todos los habitantes que encontraran a su paso. Ante la presencia de ustedes, temimos mucho por nuestras vidas, y por eso hemos hecho esto.",
+        "CEI": "Risposero a Giosuè e dissero: \"Era stato riferito ai tuoi servi quanto il Signore Dio tuo aveva ordinato a Mosè suo servo, di dare cioè a voi tutto il paese e di sterminare dinanzi a voi tutti gli abitanti del paese; allora abbiamo avuto molto timore per le nostre vite a causa vostra e perciò facemmo tal cosa."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֖ה הִנְ/נ֣וּ בְ/יָדֶ֑/ךָ כַּ/טּ֨וֹב וְ/כַ/יָּשָׁ֧ר בְּ/עֵינֶ֛י/ךָ לַ/עֲשׂ֥וֹת לָ֖/נוּ עֲשֵֽׂה׃",
+        "LXX": "καὶ εἶπαν οἱ ἄρχοντες πάσῃ τῇ συναγωγῇ Ἡμεῖς ὠμόσαμεν αὐτοῖς Κύριον τὸν θεὸν Ἰσραήλ, καὶ νῦν οὐ δυνησόμεθα ἅψασθαι αὐτῶν.",
+        "VUL": "Nunc autem in manu tua sumus : quod tibi bonum et rectum videtur, fac nobis.",
+        "SYN": "теперь вот мы в руке твоей: как лучше и справедливее тебе покажется поступить с нами, так и поступи.",
+        "NEO": "Maintenant nous voici entre tes mains ; traite-nous comme il te semblera bon et juste de nous traiter. »",
+        "NAB": "And now that we are in your power, do with us what you think fit and right.\"",
+        "VAT_ES": "Ahora nos tienes en tus manos; trátanos como te parezca más conveniente y justo».",
+        "CEI": "Ora eccoci nelle tue mani, trattaci pure secondo quanto è buono e giusto ai tuoi occhi\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ לָ/הֶ֖ם כֵּ֑ן וַ/יַּצֵּ֥ל אוֹתָ֛/ם מִ/יַּ֥ד בְּנֵֽי יִשְׂרָאֵ֖ל וְ/לֹ֥א הֲרָגֽוּ/ם׃",
+        "LXX": "τοῦτο ποιήσομεν, ζωγρῆσαι αὐτούς, καὶ περιποιησόμεθα αὐτούς· καὶ οὐκ ἔσται καθ’ ἡμῶν ὀργὴ διὰ τὸν ὅρκον ὃν ὠμόσαμεν αὐτοῖς.",
+        "VUL": "Fecit ergo Josue ut dixerat, et liberavit eos de manu filiorum Israël, ut non occiderentur.",
+        "SYN": "И поступил с ними так: избавил их от руки сынов Израилевых, и они не умертвили их;",
+        "NEO": "Josué agit à leur égard ainsi qu’il l’avait dit ; il les délivra de la main des enfants d’Israël, pour qu’ils ne les fissent pas mourir.",
+        "NAB": "Joshua did what he had decided: while he saved them from being killed by the Israelites,",
+        "VAT_ES": "Pero Josué los trató según lo convenido y los libró de los Israelitas, que no los mataron.",
+        "CEI": "Li trattò allora in questo modo: li salvò dalla mano degli Israeliti, che non li uccisero;"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יִּתְּנֵ֨/ם יְהוֹשֻׁ֜עַ בַּ/יּ֣וֹם הַ/ה֗וּא חֹטְבֵ֥י עֵצִ֛ים וְ/שֹׁ֥אֲבֵי מַ֖יִם לָֽ/עֵדָ֑ה וּ/לְ/מִזְבַּ֤ח יְהוָה֙ עַד הַ/יּ֣וֹם הַ/זֶּ֔ה אֶל הַ/מָּק֖וֹם אֲשֶׁ֥ר יִבְחָֽר׃",
+        "LXX": "ζήσονται, καὶ ἔσονται ξυλοκόποι καὶ ὑδροφόροι πάσῃ τῇ συναγωγῇ, καθάπερ εἶπαν αὐτοῖς οἱ ἄρχοντες.",
+        "VUL": "Decrevitque in illo die eos esse in ministerio cuncti populi, et altaris Domini, cædentes ligna, et aquas comportantes, usque in præsens tempus, in loco quem Dominus elegisset.",
+        "SYN": "и определил в тот день Иисус, чтобы они рубили дрова и черпали воду для [всего] общества и для жертвенника Господня; [посему жители Гаваона сделались дровосеками и водоносами для жертвенника Божия] даже до сего дня, на месте, какое ни избрал бы [Господь].",
+        "NEO": "Josué les destina dès ce jour à couper le bois et à puiser l’eau pour l’assemblée et pour l’autel de \\+w Yahweh|strong=\"H3068\"\\+w**, dans le lieu que \\+w Yahweh|strong=\"H3068\"\\+w** choisirait : ce qu’ils font encore aujourd’hui.",
+        "NAB": "at the same time he made them, as they still are, hewers of wood and drawers of water for the community and for the altar of the LORD, in the place of the LORD'S choice.",
+        "VAT_ES": "Desde aquel día, Josué los destinó a cortar leña y a sacar agua para la comunidad y para el altar del Señor, en el lugar que el Señor eligiera. Esto es lo que hacen todavía hoy.",
+        "CEI": "e in quel giorno, Giosuè li costituì tagliatori di legna e portatori di acqua per la comunità e per l'altare del Signore, nel luogo che Egli avrebbe scelto, fino ad oggi."
+      }
+    }
+  }
+}

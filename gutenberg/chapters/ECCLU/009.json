@@ -1,0 +1,321 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_009",
+  "book_key": "ECCLU",
+  "sequence": 9,
+  "chapter_in": {
+    "MT": 9,
+    "VUL": 9,
+    "LXX": 9
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Μὴ ζήλου γυναῖκα τοῦ κόλπου σου, μηδὲ διδάξῃς ἐπὶ σεαυτὸν παιδείαν πονηράν·",
+        "VUL": "[Non zeles mulierem sinus tui,/ ne ostendat super te malitiam doctrinæ nequam./",
+        "SYN": "Не будь ревнив к жене сердца твоего и не подавай ей дурного урока против тебя самого.",
+        "NEO": "Ne sois pas jaloux de la femme qui repose sur ton sein, et n’éveille pas dans son esprit, à ton détriment, une idée mauvaise.",
+        "NAB": "Be not jealous of the wife of your bosom, lest you teach her to do evil against you.",
+        "VAT_ES": "No seas celoso de la mujer que amas, para no incitarla a comportarse mal contigo.",
+        "CEI": "Non essere geloso della sposa amata, per non inculcarle malizia a tuo danno."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "μὴ δῷς γυναικὶ τὴν ψυχήν σου, ἐπιβῆναι αὐτὴν ἐπὶ τὴν ἰσχύν σου.",
+        "VUL": "Non des mulieri potestatem animæ tuæ,/ ne ingrediatur in virtutem tuam, et confundaris./",
+        "SYN": "Не отдавай жене души твоей, чтобы она не восстала против власти твоей.",
+        "NEO": "Ne livre pas ton âme à ta femme, de telle sorte qu’elle s’élève contre ton autorité.",
+        "NAB": "Give no woman power over you to trample upon your dignity.",
+        "VAT_ES": "Note entregues ciegamente a una mujer, hasta el punto que llegue a dominarte.",
+        "CEI": "Non dare l'anima tua alla tua donna, sì che essa s'imponga sulla tua forza."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "μὴ ὑπάντα γυναικὶ ἑταιριζομένῃ, μή ποτε ἐμπέσῃς εἰς τὰς παγίδας αὐτῆς.",
+        "VUL": "Ne respicias mulierem multivolam,/ ne forte incidas in laqueos illius./",
+        "SYN": "Не выходи навстречу развратной женщине, чтобы как-нибудь не попасть в сети ее.",
+        "NEO": "Ne va pas à la rencontre d’une femme courtisane, de peur de tomber dans ses filets.",
+        "NAB": "Be not intimate with a strange woman, lest you fall into her snares.",
+        "VAT_ES": "No te acerques a una prostituta, no sea que caigas en sus redes.",
+        "CEI": "Non incontrarti con una donna cortigiana, che non abbia a cadere nei suoi lacci."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "μετὰ ψαλλούσης μὴ ἐνδελέχιζε, μή ποτε ἁλῷς ἐν τοῖς ἐπιχειρήμασιν αὐτῆς.",
+        "VUL": "Cum saltatrice ne assiduus sis,/ nec audias illam, ne forte pereas in efficacia illius./",
+        "SYN": "Не оставайся долго с певицею, чтобы не плениться тебе искусством ее.",
+        "NEO": "Ne reste pas longtemps avec une chanteuse, de peur que tu ne sois pris par son art.",
+        "NAB": "With a singing girl be not familiar, lest you be caught in her wiles.",
+        "VAT_ES": "No te entretengas con una cantante, para no ser atrapado por sus artimañas.",
+        "CEI": "Non frequentare una cantante, per non esser preso dalle sue moine."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "παρθένον μὴ καταμάνθανε, μή ποτε σκανδαλισθῇς ἐν τοῖς ἐπιτιμίοις αὐτῆς.",
+        "VUL": "Virginem ne conspicias,/ ne forte scandalizeris in decore illius./",
+        "SYN": "Не засматривайся на девицу, чтобы не соблазниться прелестями ее.",
+        "NEO": "N’arrête pas ton regard sur une jeune fille, de peur d’avoir à subir des châtiments à cause d’elle.",
+        "NAB": "Entertain no thoughts against a virgin, lest you be enmeshed in damages for her.",
+        "VAT_ES": "No mires demasiado a una joven, para no incurrir en su misma condena.",
+        "CEI": "Non fissare il tuo sguardo su una vergine, per non essere coinvolto nei suoi castighi."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "μὴ δῷς πόρναις τὴν ψυχήν σου, ἵνα μὴ ἀπολέσῃς τὴν κληρονομίαν σου.",
+        "VUL": "Ne des fornicariis animam tuam in ullo,/ ne perdas te et hæreditatem tuam./",
+        "SYN": "Не отдавай души твоей блудницам, чтобы не погубить наследства твоего.",
+        "NEO": "Ne te livre pas aux courtisanes, de peur que tu ne perdes ton héritage.",
+        "NAB": "Give not yourself to harlots, lest you surrender your inheritance.",
+        "VAT_ES": "No te entregues a las prostitutas, para no arruinar tu patrimonio.",
+        "CEI": "Non dare l'anima tua alle prostitute, per non perderci il patrimonio."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "μὴ περιβλέπου ἐν ῥύμαις πόλεως, καὶ ἐν ταῖς ἐρήμοις αὐτῆς μὴ πλανῶ.",
+        "VUL": "Noli circumspicere in vicis civitatis,/ nec oberraveris in plateis illius./",
+        "SYN": "Не смотри по сторонам на улицах города и не броди по пустым местам его.",
+        "NEO": "Ne promène pas tes yeux dans les rues de la ville, et ne rôde pas dans ses endroits solitaires.",
+        "NAB": "Gaze not about the lanes of the city and wander not through its squares;",
+        "VAT_ES": "No vayas mirando por las calles de la ciudad ni rondes por sus lugares solitarios.",
+        "CEI": "Non curiosare nelle vie della città, non aggirarti nei suoi luoghi solitari."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "ἀπόστρεψον ὀφθαλμὸν ἀπὸ γυναικὸς εὐμόρφου, καὶ μὴ καταμάνθανε κάλλος ἀλλότριον· ἐν κάλλει γυναικὸς πολλοὶ ἐπλανήθησαν, καὶ ἐκ τούτου φιλία ὡς πῦρ ἀνακαίεται.",
+        "VUL": "Averte faciem tuam a muliere compta,/ et ne circumspicias speciem alienam./",
+        "SYN": "Отвращай око твое от женщины благообразной и не засматривайся на чужую красоту:",
+        "NEO": "Détourne les yeux de la femme élégante, et ne regarde pas curieusement une beauté étrangère. Beaucoup sont séduits par la beauté de la femme, et la passion s’y allume comme un feu.",
+        "NAB": "Avert your eyes from a comely woman; gaze not upon the beauty of another's wife - Through woman's beauty many perish, for lust for it burns like fire.",
+        "VAT_ES": "Aparta tu vista de la mujer hermosa y no fijes los ojos en la belleza ajena: muchos se extraviaron por la belleza de una mujer, y por su causa el deseo arde como fuego.",
+        "CEI": "Distogli l'occhio da una donna bella, non fissare una bellezza che non ti appartiene. Per la bellezza di una donna molti sono periti; per essa l'amore brucia come fuoco."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "μετὰ ὑπάνδρου γυναικὸς μὴ κάθου τὸ σύνολον, καὶ μὴ συμβολοκοπήσῃς μετ’ αὐτῆς ἐν οἴνῳ· μή ποτε ἐκκλίνῃ ἡ ψυχή σου ἐπ’ αὐτήν, καὶ τῷ πνεύματί σου ὀλισθήσῃς εἰς ἀπώλειαν.",
+        "VUL": "Propter speciem mulieris multi perierunt :/ et ex hoc concupiscentia quasi ignis exardescit./",
+        "SYN": "многие совратились с пути чрез красоту женскую; от нее, как огонь, загорается любовь.",
+        "NEO": "Ne t’assois jamais auprès d’une femme mariée, [ne t’accoude pas à table avec elle], et ne bois pas avec elle le vin dans des banquets, de peur que ton âme ne se tourne vers elle, et que la passion ne t’entraîne à ta perte.",
+        "NAB": "With a married woman dine not, recline not at table to drink by her side, Lest your heart be drawn to her and you go down in blood to the grave.",
+        "VAT_ES": "Nunca te sientes junto a una mujer casada ni bebas vino con ella en los banquetes, no sea que tu corazón se incline hacia ella y por tu pasión te precipites en la ruina.",
+        "CEI": "Non sederti mai accanto a una donna sposata, non frequentarla per bere insieme con lei perché il tuo cuore non si innamori di lei e per la tua passione tu non scivoli nella rovina."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "Μὴ ἐγκαταλίπῃς φίλον ἀρχαῖον, ὁ γὰρ πρόσφατος οὐκ ἔστιν ἔφισος αὐτῷ· οἶνος νέος φίλος νέος· ἐὰν παλαιωθῇ, μετ’ εὐφροσύνης πίεσαι αὐτόν.",
+        "VUL": "Omnis mulier quæ est fornicaria,/ quasi stercus in via conculcabitur./",
+        "SYN": "Отнюдь не сиди с женою замужнею и не оставайся с нею на пиру за вином,",
+        "NEO": "N’abandonne pas un vieil ami, car le nouveau ne le vaudra pas. Vin nouveau, nouvel ami ; qu’il vieillisse, et tu le boiras avec plaisir.",
+        "NAB": "Discard not an old friend, for the new one cannot equal him. A new friend is like new wine which you drink with pleasure only when it has aged.",
+        "VAT_ES": "No abandones a un viejo amigo, porque uno nuevo no vale tanto como él. Amigo nuevo es como vino nuevo: que se ponga añejo, y lo beberás con placer.",
+        "CEI": "Non abbandonare un vecchio amico, perché quello recente non è uguale a lui. Vino nuovo, amico nuovo; quando sarà invecchiato, lo berrai con piacere."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "μὴ ζηλώσῃς δόξαν ἁμαρτωλοῦ· οὐ γὰρ οἶδας τί ἔσται ἡ καταστροφὴ αὐτοῦ.",
+        "VUL": "Speciem mulieris alienæ multi admirati, reprobi facti sunt :/ colloquium enim illius quasi ignis exardescit./",
+        "SYN": "чтобы не склонилась к ней душа твоя и чтобы ты не поползнулся духом в погибель.",
+        "NEO": "N’envie pas la gloire du pécheur, car tu ne sais pas ce que sera sa ruine.",
+        "NAB": "Envy not a sinner's fame, for you know not what disaster awaits him.",
+        "VAT_ES": "No envidies la gloria del pecador, porque no sabes cuál será su suerte.",
+        "CEI": "Non invidiare la gloria del peccatore, perché non sai quale sarà la sua fine."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "μὴ εὐδοκήσῃς ἐν εὐδοκίᾳ ἀσεβῶν, μνήσθητι ὅτι ἕως ᾅδου οὐ μὴ δικαιωθῶσιν.",
+        "VUL": "Cum aliena muliere ne sedeas omnino,/ nec accumbas cum ea super cubitum :/",
+        "SYN": "Не оставляй старого друга, ибо новый не может сравниться с ним;",
+        "NEO": "Ne prends pas plaisir au plaisir des impies ; souviens-toi qu’ils ne resteront pas impunis jusqu’au schéol.",
+        "NAB": "Rejoice not at a proud man's success; remember he will not reach death unpunished.",
+        "VAT_ES": "No te deleites en lo que deleita a los impíos: recuerda que bajarán al Abismo sin ser justificados.",
+        "CEI": "Non compiacerti del benessere degli empi, ricòrdati che non giungeranno agli inferi impuniti."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "μακρὰν ἄπεχε ἀπὸ ἀνθρώπου ὃς ἔχει ἐξουσίαν τοῦ φονεῦσαι, καὶ οὐ μὴ ὑποπτεύσῃς φόβον θανότου· κἂν προσέλθῃς, μὴ πλημμελήσῃς, ἵνα μὴ ἀφέληται τὴν ζωήν σου· ἐπίγνωθι ὅτι ἐν μέσῳ παγίδων διαβαίνεις, καὶ ἐπὶ ἐπάλξεων πόλεων περιπατεῖς.",
+        "VUL": "et non alterceris cum illa in vino,/ ne forte declinet cor tuum in illam,/ et sanguine tuo labaris in perditionem.]",
+        "SYN": "друг новый - то же, что вино новое: когда оно сделается старым, с удовольствием будешь пить его.",
+        "NEO": "Tiens-toi loin de l’homme qui a le pouvoir de faire mourir, et tu n’auras pas la crainte de la mort. Et si tu l’approches, garde-toi de toute faute, de peur qu’il ne t’ôte la vie. Sache que tu marches au milieu de pièges, et que tu te promènes sur les créneaux de la ville.",
+        "NAB": "Keep far from the man who has power to kill, and you will not be filled with the dread of death. But if you approach him, offend him not, lest he take away your life; Know that you are stepping among snares and walking over a net.",
+        "VAT_ES": "Aléjate del que tiene poder para matar y no experimentarás el temor a la muerte. Si te acercas a él, no cometas ninguna falta, no sea que te quite la vida: ten en cuenta que avanzas entre lazos y que caminas por las almenas de la ciudad.",
+        "CEI": "Tieniti lontano dall'uomo che ha il potere di uccidere e non sperimenterai il timore della morte. Se l'avvicini, stà attento a non sbagliare perché egli non ti tolga la vita; sappi che cammini in mezzo ai lacci e ti muovi sull'orlo delle mura cittadine."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "κατὰ τὴν ἰσχύν σου στόχασαι τοὺς πλησίον, καὶ μετὰ σοφῶν συμβουλεύου·",
+        "VUL": "[Ne derelinquas amicum antiquum :/ novus enim non erit similis illi./",
+        "SYN": "Не завидуй славе грешника, ибо не знаешь, какой будет конец его.",
+        "NEO": "Observe autant que possible ton prochain, et prends conseil des sages.",
+        "NAB": "As best you can, take your neighbors' measure, and associate with the wise.",
+        "VAT_ES": "Dentro de lo posible, recurre a tus vecinos y busca el consejo de los sabios.",
+        "CEI": "Rispondi come puoi al prossimo e consìgliati con i saggi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "καὶ μετὰ συνετῶν ἔστω ὁ διαλογισμός σου, καὶ πᾶσα διήγησίς σου ἐν νόμῳ Ὑψίστου.",
+        "VUL": "Vinum novum amicus novus :/ veterascet, et cum suavitate bibes illud./",
+        "SYN": "Не одобряй того, что одобряют нечестивые: помни, что они до самого ада не исправятся.",
+        "NEO": "Converse avec les hommes intelligents, et que tous tes entretiens soient sur la loi du Très-Haut.",
+        "NAB": "With the learned be intimate; let all your conversation be about the law of the LORD.",
+        "VAT_ES": "Frecuenta el trato de las personas inteligentes y conversa siempre sobre la Ley del Altísimo.",
+        "CEI": "Conversa con uomini assennati e ogni tuo colloquio sia sulle leggi dell'Altissimo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ἄνδρες δίκαιοι ἔστωσαν σύνδειπνοί σου, καὶ ἐν φόβῳ Κυρίου ἔστω τὸ καύχημά σου.",
+        "VUL": "Non zeles gloriam et opes peccatoris :/ non enim scis quæ futura sit illius subversio./",
+        "SYN": "Держи себя дальше от человека, имеющего власть умерщвлять, и ты не будешь смущаться страхом смерти;",
+        "NEO": "Que les hommes justes soient tes commensaux, et mets ta gloire dans la crainte de Dieu.",
+        "NAB": "Have just men for your table companions; in the fear of God be your glory.",
+        "VAT_ES": "Que los hombres justos sean tus comensales y que tu orgullo esté en el temor del Señor.",
+        "CEI": "Tuoi commensali siano gli uomini giusti, il tuo vanto sia nel timore del Signore."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "ἐν χειρὶ τεχνιτῶν ἔργον ἐπαινεσθήσεται, καὶ ὁ ἡγούμενος λαοῦ σοφὸς ἐν λόγῳ αὐτοῦ.",
+        "VUL": "Non placeat tibi injuria injustorum,/ sciens quoniam usque ad inferos non placebit impius./",
+        "SYN": "а если сближаешься с ним, не ошибись, чтобы он не лишил тебя жизни:",
+        "NEO": "C’est la main de l’artiste qui vaut à une œuvre la louange, c’est sa parole qui fait paraître sage le chef du peuple.",
+        "NAB": "Skilled artisans are esteemed for their deftness; but the ruler of his people is the skilled sage.",
+        "VAT_ES": "Por la mano del artista, la obra es digna de elogio, y el jefe del pueblo se muestra sabio por sus palabras.",
+        "CEI": "Un lavoro per mano di esperti viene lodato, ma il capo del popolo è saggio per il parlare."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "φοβερὸς ἐν πόλει αὐτοῦ ἀνὴρ γλωσσώδης, καὶ ὁ προπετὴς ἐν λόγῳ αὐτοῦ μισηθήσεται.",
+        "VUL": "Longe abesto ab homine potestatem habente occidendi,/ et non suspicaberis timorem mortis./",
+        "SYN": "знай, что ты посреди сетей идешь и по зубцам городских стен проходишь.",
+        "NEO": "Le grand parleur est redouté dans sa ville, et l’inconsidéré s’attire la haine par ses discours.",
+        "NAB": "Feared in the city is the man of railing speech, and he who talks rashly is hated.",
+        "VAT_ES": "El charlatán es el terror de su ciudad y el desmedido al hablar se hace odioso.",
+        "CEI": "Un uomo linguacciuto è il terrore della sua città, chi non sa controllar le parole sarà detestato."
+      }
+    }
+  }
+}

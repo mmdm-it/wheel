@@ -1,0 +1,284 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOSU_014",
+  "book_key": "IOSU",
+  "sequence": 14,
+  "chapter_in": {
+    "MT": 14,
+    "VUL": 14,
+    "LXX": 14
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/אֵ֛לֶּה אֲשֶׁר נָחֲל֥וּ בְנֵֽי יִשְׂרָאֵ֖ל בְּ/אֶ֣רֶץ כְּנָ֑עַן אֲשֶׁ֨ר נִֽחֲל֜וּ אוֹתָ֗/ם אֶלְעָזָ֤ר הַ/כֹּהֵן֙ וִ/יהוֹשֻׁ֣עַ בִּן נ֔וּן וְ/רָאשֵׁ֛י אֲב֥וֹת הַ/מַּטּ֖וֹת לִ/בְנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "Καὶ οὗτοι οἱ κατακληρονομήσαντες υἱῶν Ἰσραὴλ ἐν τῇ γῇ Χανάαν, οἷς κατεκληρονόμησεν αὐτοῖς Ἐλεαζὰρ ὁ ἱερεὺς καὶ Ἰησοῦς ὁ τοῦ Ναυὴ καὶ οἱ ἄρχοντες πατριῶν φυλῶν τῶν υἱῶν Ἰσραήλ.",
+        "VUL": "Hoc est quod possederunt filii Israël in terra Chanaan, quam dederunt eis Eleazar sacerdos, et Josue filius Nun, et principes familiarum per tribus Israël :",
+        "SYN": "Вот что получили в удел сыны Израилевы в земле Ханаанской, что разделили им в удел Елеазар священник и Иисус, сын Навин, и начальники поколений в коленах сынов Израилевых;",
+        "NEO": "Voici ce que les enfants d’Israël reçurent en héritage dans le pays de Canaan, ce que leur partagèrent le prêtre Eléazar, Josué, fils de Nun, et les chefs de famille des tribus des enfants d’Israël.",
+        "NAB": "Here follow the portions which the Israelites received in the land of Canaan. Eleazar the priest, Joshua, son of Nun, and the heads of families in the tribes of the Israelites determined",
+        "VAT_ES": "Estos son los territorios que los israelitas recibieron como herencia en el país de Canaán, o sea, los territorios que les asignaron el sacerdote Eleazar, Josué hijo de Nun, y los jefes de familia de las tribus de Israel.",
+        "CEI": "Questo invece ebbero in eredità gli Israeliti nel paese di Cànaan: lo assegnarono loro in eredità il sacerdote Eleazaro e Giosuè, figlio di Nun, e i capi dei casati delle tribù degli Israeliti."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בְּ/גוֹרַ֖ל נַחֲלָתָ֑/ם כַּ/אֲשֶׁ֨ר צִוָּ֤ה יְהוָה֙ בְּ/יַד מֹשֶׁ֔ה לְ/תִשְׁעַ֥ת הַ/מַּטּ֖וֹת וַ/חֲצִ֥י הַ/מַּטֶּֽה׃",
+        "LXX": "κατὰ κλήρους ἐκληρονόμησαν, ὃν τρόπον ἐνετείλατο Κύριος ἐν χειρὶ Ἰησοῦ ταῖς ἐννέα φυλαῖς καὶ τῷ ἡμίσει φυλῆς,",
+        "VUL": "sorte omnia dividentes, sicut præceperat Dominus in manu Moysi, novem tribubus, et dimidiæ tribui.",
+        "SYN": "по жребию делили они, как повелел Господь чрез Моисея, девяти коленам и половине колена [Манассиина],",
+        "NEO": "C’est le sort qui leur assigna leur héritage, comme \\+w Yahweh|strong=\"H3068\"\\+w** l’avait ordonné par Moïse, pour les neuf tribus et la demi-tribu.",
+        "NAB": "their heritage by lot, in accordance with the instructions the LORD had given through Moses concerning the remaining nine and a half tribes.",
+        "VAT_ES": "Ellos los distribuyeron mediante un sorteo –como el Señor lo había mandado por medio de Moisés– entre las nueve tribus y media que faltaban.",
+        "CEI": "La loro eredità fu stabilita per sorte, come aveva comandato il Signore per mezzo di Mosè, per le nove tribù e per la mezza tribù;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כִּֽי נָתַ֨ן מֹשֶׁ֜ה נַחֲלַ֨ת שְׁנֵ֤י הַ/מַּטּוֹת֙ וַ/חֲצִ֣י הַ/מַּטֶּ֔ה מֵ/עֵ֖בֶר לַ/יַּרְדֵּ֑ן וְ/לַ֨/לְוִיִּ֔ם לֹֽא נָתַ֥ן נַחֲלָ֖ה בְּ/תוֹכָֽ/ם׃",
+        "LXX": "ἀπὸ τοῦ πέραν τοῦ Ἰορδάνου. καὶ τοῖς Λευείταις οὐκ ἔδωκεν κλῆρον ἐν αὐτοῖς,",
+        "VUL": "Duabus enim tribubus, et dimidiæ, dederat Moyses trans Jordanem possessionem : absque Levitis, qui nihil terræ acceperunt inter fratres suos :",
+        "SYN": "ибо двум коленам и половине колена [Манассиина] Моисей дал удел за Иорданом, левитам же не дал удела между ними;",
+        "NEO": "Car Moïse avait donné l’héritage des deux tribus et de la demi-tribu de l’autre côté du Jourdain ; mais il n’avait pas donné aux Lévites d’héritage parmi eux.",
+        "NAB": "For to two and a half tribes Moses had already given a heritage beyond the Jordan; and though the Levites were given no heritage among the tribes,",
+        "VAT_ES": "Porque a las otras dos tribus y media, Moisés ya les había asignado una herencia al otro lado del Jordán, pero a los levitas no les había dado ninguna herencia en medio de ellos",
+        "CEI": "infatti Mosè aveva assegnato l'eredità di due tribù e della mezza tribù oltre il Giordano; ai leviti non aveva dato alcuna eredità in mezzo a loro;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּֽי הָי֧וּ בְנֵֽי יוֹסֵ֛ף שְׁנֵ֥י מַטּ֖וֹת מְנַשֶּׁ֣ה וְ/אֶפְרָ֑יִם וְ/לֹֽא נָתְנוּ֩ חֵ֨לֶק לַ/לְוִיִּ֜ם בָּ/אָ֗רֶץ כִּ֤י אִם עָרִים֙ לָ/שֶׁ֔בֶת וּ/מִ֨גְרְשֵׁי/הֶ֔ם לְ/מִקְנֵי/הֶ֖ם וּ/לְ/קִנְיָנָֽ/ם׃",
+        "LXX": "ὅτι ἦσαν οἱ υἱοὶ Ἰωσὴφ δύο φυλαὶ Μανασσὴ καὶ Ἐφράιμ· καὶ οὐκ ἐδόθη μερὶς ἐν τῇ γῇ τοῖς Λευείταις, ἀλλ’ ἤ πόλεις κατοικεῖν καὶ τὰ ἀφωρισμένα αὐτῶν τοῖς κτήνεσιν καὶ τὰ κτήνη αὐτῶν.",
+        "VUL": "sed in eorum successerunt locum filii Joseph in duas divisi tribus, Manasse et Ephraim : nec acceperunt Levitæ aliam in terra partem, nisi urbes ad habitandum, et suburbana earum ad alenda jumenta et pecora sua.",
+        "SYN": "ибо от сынов Иосифовых произошли два колена: Манассиино и Ефремово; посему они и не дали левитам части в земле, [а только] города для жительства с предместиями их для скота их и для _других_ выгод их.",
+        "NEO": "Car les fils de Joseph formaient deux tribus, Manassé et Ephraïm ; et l’on ne donna pas aux Lévites de part dans le pays, si ce n’est des villes pour habitation et leurs banlieues pour leurs troupeaux et pour leurs biens.",
+        "NAB": "the descendants of Joseph formed two tribes, Manasseh and Ephraim. The Levites themselves received no share of the land except cities to live in, with their pasture lands for the cattle and flocks.",
+        "VAT_ES": "Los hijos de José, por su parte, habían formado dos tribus: la de Efraím y la de Manasés; pero a los levitas no se les dio ningún territorio dentro del país, sino solamente algunas ciudades de residencia, con los correspondientes campos de pastoreo para su ganado y sus rebaños.",
+        "CEI": "però i figli di Giuseppe formano due tribù, Manàsse ed Efraim, mentre non si diede parte alcuna ai leviti del paese, tranne le città dove abitare e i loro contadi per i loro greggi e gli armenti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כַּ/אֲשֶׁ֨ר צִוָּ֤ה יְהוָה֙ אֶת מֹשֶׁ֔ה כֵּ֥ן עָשׂ֖וּ בְּנֵ֣י יִשְׂרָאֵ֑ל וַֽ/יַּחְלְק֖וּ אֶת הָ/אָֽרֶץ׃",
+        "LXX": "ὅν τρόπον ἐνετείλατο Κύριος τῷ Μωυσῇ, οὕτως ἐποίησαν οἱ υἱοὶ Ἰσραήλ, καὶ ἐμέρισαν τὴν γῆν.",
+        "VUL": "Sicut præceperat Dominus Moysi, ita fecerunt filii Israël, et diviserunt terram.",
+        "SYN": "Как повелел Господь Моисею, так _и_ сделали сыны Израилевы, когда делили на уделы землю.",
+        "NEO": "Les enfants d’Israël accomplirent l’ordre que \\+w Yahweh|strong=\"H3068\"\\+w** avait donné à Moïse, et ils partagèrent le pays.",
+        "NAB": "Thus, in apportioning the land, did the Israelites carry out the instructions of the LORD to Moses.",
+        "VAT_ES": "En la distribución de la tierra los israelitas hicieron exactamente lo que el Señor había ordenado a Moisés.",
+        "CEI": "Come aveva comandato il Signore a Mosè, così fecero gli Israeliti e si divisero il paese."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּגְּשׁ֨וּ בְנֵֽי יְהוּדָ֤ה אֶל יְהוֹשֻׁ֨עַ֙ בַּ/גִּלְגָּ֔ל וַ/יֹּ֣אמֶר אֵלָ֔י/ו כָּלֵ֥ב בֶּן יְפֻנֶּ֖ה הַ/קְּנִזִּ֑י אַתָּ֣ה יָדַ֡עְתָּ אֶֽת הַ/דָּבָר֩ אֲשֶׁר דִּבֶּ֨ר יְהוָ֜ה אֶל מֹשֶׁ֣ה אִישׁ הָ/אֱלֹהִ֗ים עַ֧ל אֹדוֹתַ֛/י וְ/עַ֥ל אֹדוֹתֶ֖י/ךָ בְּ/קָדֵ֥שׁ בַּרְנֵֽעַ׃",
+        "LXX": "Καὶ προσήλθοσαν οἱ υἱοὶ Ἰούδα πρὸς Ἰησοῦν ἐν Γαλγάλ, καὶ εἶπεν πρὸς αὐτὸν Χαλὲβ ὁ τοῦ Ἰεφοννὴ ὁ Κενεζαῖος Σὺ ἐπίστῃ τὸ ῥῆμα ὅ ἐλάλησεν Κύριος πρὸς Μωυσῆν ἄνθρωπον τοῦ θεοῦ περὶ ἐμοῦ καὶ σοῦ ἐν Καδὴς Βαρνή.",
+        "VUL": "Accesserunt itaque filii Juda ad Josue in Galgala, locutusque est ad eum Caleb filius Jephone Cenezæus : Nosti quid locutus sit Dominus ad Moysen hominem Dei de me et te in Cadesbarne.",
+        "SYN": "Сыны Иудины пришли в Галгал к Иисусу. И сказал ему Халев, сын Иефоннии, Кенезеянин: ты знаешь, что говорил Господь Моисею, человеку Божию, о мне и о тебе в Кадес-Варне;",
+        "NEO": "Les fils de Juda s’approchèrent de Josué, à Galgala, et Caleb, fils de Jéphoné, le Cénézéen, lui dit : « Tu sais ce que \\+w Yahweh|strong=\"H3068\"\\+w** a dit à Moïse, homme de Dieu, à mon sujet et à ton sujet, à Cadès-Barné.",
+        "NAB": "When the Judahites came up to Joshua in Gilgal, the Kenizzite Caleb, son of Jephunneh, said to him: \"You know what the LORD said to the man of God, Moses, about you and me in Kadesh-barnea.",
+        "VAT_ES": "Los hijos de Judá fueron a Guilgal, donde estaba Josué; y Caleb, hijo de Iefuné, el quenizita, le dijo: «Tú sabes muy bien lo que el Señor dijo a Moisés, el hombre de Dios, acerca de mí y de ti, en Cades Barné.",
+        "CEI": "Si presentarono allora i figli di Giuda da Giosuè a Gàlgala e Caleb, figlio di Iefunne, il Kenizzita gli disse: \"Tu conosci la parola che ha detto il Signore a Mosè, l'uomo di Dio, riguardo a me e a te a Kades-Barnea."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "בֶּן אַרְבָּעִ֨ים שָׁנָ֜ה אָנֹכִ֗י בִּ֠/שְׁלֹחַ מֹשֶׁ֨ה עֶֽבֶד יְהוָ֥ה אֹתִ֛/י מִ/קָּדֵ֥שׁ בַּרְנֵ֖עַ לְ/רַגֵּ֣ל אֶת הָ/אָ֑רֶץ וָ/אָשֵׁ֤ב אֹת/וֹ֙ דָּבָ֔ר כַּ/אֲשֶׁ֖ר עִם לְבָבִֽ/י׃",
+        "LXX": "τεσσεράκοντα γὰρ ἐτῶν ἤμην ὅτε ἀπέστειλέν με Μωυσῆς ὁ παῖς τοῦ θεοῦ ἐκ Καδὴς Βαρνὴ κατασκοπεῦσαι τὴν γῆν, καὶ ἀπεκρίθην αὐτῷ λόγον κατὰ τὸν νοῦν αὐτοῦ.",
+        "VUL": "Quadraginta annorum eram quando misit me Moyses famulus Domini de Cadesbarne, ut considerarem terram, nuntiavique ei quod mihi verum videbatur.",
+        "SYN": "я был сорока лет, когда Моисей, раб Господень, посылал меня из Кадес-Варни осмотреть землю, и я принес ему в ответ, что было у меня на сердце:",
+        "NEO": "J’étais âgé de quarante ans lorsque Moïse, serviteur de \\+w Yahweh|strong=\"H3068\"\\+w**, m’envoya de Cadès-Barné pour explorer le pays, et je lui fis un rapport dans la sincérité de mon cœur.",
+        "NAB": "I was forty years old when the servant of the LORD, Moses, sent me from Kadesh-barnea to reconnoiter the land; and I brought back to him a conscientious report.",
+        "VAT_ES": "Yo tenía cuarenta años cuando Moisés, el servidor del Señor, me envió de Cades Barné a explorar el país, y yo lo informé con toda franqueza.",
+        "CEI": "Avevo quarant'anni quando Mosè, servo del Signore, mi inviò da Kades-Barnea a esplorare il paese e io gliene riferii come pensavo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אַחַ/י֙ אֲשֶׁ֣ר עָל֣וּ עִמִּ֔/י הִמְסִ֖יו אֶת לֵ֣ב הָ/עָ֑ם וְ/אָנֹכִ֣י מִלֵּ֔אתִי אַחֲרֵ֖י יְהוָ֥ה אֱלֹהָֽ/י׃",
+        "LXX": "οἱ δὲ ἀδελφοί μου οἱ ἀναβάντες μετ’ ἐμοῦ μετέστησαν τὴν καρδίαν τοῦ λαοῦ, ἐγὼ δὲ προσέθην ἐπακολουθῆσαι Κυρίῳ τῷ θεῷ μου.",
+        "VUL": "Fratres autem mei, qui ascenderant mecum, dissolverunt cor populi : et nihilominus ego secutus sum Dominum Deum meum.",
+        "SYN": "братья мои, которые ходили со мною, привели в робость сердце народа, а я в точности следовал Господу Богу моему;",
+        "NEO": "Tandis que mes frères, qui étaient montés avec moi, découragèrent le peuple, moi, je suivis entièrement \\+w Yahweh|strong=\"H3068\"\\+w**, mon Dieu.",
+        "NAB": "My fellow scouts who went up with me discouraged the people, but I was completely loyal to the LORD, my God.",
+        "VAT_ES": "Mientras los compañeros que habían ido conmigo desalentaban al pueblo, yo me mantuve plenamente fiel al Señor, mi Dios.",
+        "CEI": "I compagni che vennero con me scoraggiarono il popolo, io invece fui pienamente fedele al Signore Dio mio."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּשָּׁבַ֣ע מֹשֶׁ֗ה בַּ/יּ֣וֹם הַ/הוּא֮ לֵ/אמֹר֒ אִם לֹ֗א הָ/אָ֨רֶץ֙ אֲשֶׁ֨ר דָּרְכָ֤ה רַגְלְ/ךָ֙ בָּ֔/הּ לְ/ךָ֨ תִֽהְיֶ֧ה לְ/נַחֲלָ֛ה וּ/לְ/בָנֶ֖י/ךָ עַד עוֹלָ֑ם כִּ֣י מִלֵּ֔אתָ אַחֲרֵ֖י יְהוָ֥ה אֱלֹהָֽ/י׃",
+        "LXX": "καὶ ὤμοσεν Μωυσῆς ἐν ἐκείνῃ τῇ ἡμέρᾳ λέγων Ἡ γῆ ἐφ’ ἣν ἐπέβης σοὶ ἔσται ἐν κλήρῳ καὶ τοῖς τέκνοις σου εἰς τὸν αἰῶνα, ὅτι προσετέθης ἐπακολουθῆσαι ὀπίσω Κυρίου τοῦ θεοῦ ἡμῶν.",
+        "VUL": "Juravitque Moyses in die illo, dicens : Terra, quam calcavit pes tuus, erit possessio tua, et filiorum tuorum in æternum : quia secutus es Dominum Deum meum.",
+        "SYN": "и клялся Моисей в тот день и сказал: \"земля, по которой ходила нога твоя, будет уделом тебе и детям твоим на век, ибо ты в точности последовал Господу Богу моему\";",
+        "NEO": "Et ce jour-là Moïse fit ce serment : Le pays que ton pied a foulé sera ton héritage et celui de tes enfants à perpétuité, parce que tu as entièrement suivi \\+w Yahweh|strong=\"H3068\"\\+w**, mon Dieu.",
+        "NAB": "On that occasion Moses swore this oath, 'The land where you have set foot shall become your heritage and that of your descendants forever, because you have been completely loyal to the LORD, my God.'",
+        "VAT_ES": "Aquel día, Moisés hizo esta promesa, ratificándola con un juramento: «La tierra que pisaron tus pies será herencia tuya y de tus hijos para siempre, porque te has mantenido plenamente fiel al Señor, mi Dios»,",
+        "CEI": "Mosè in quel giorno giurò: Certo la terra, che ha calcato il tuo piede, sarà in eredità a te e ai tuoi figli, per sempre, perché sei stato pienamente fedele al Signore Dio mio."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה הִנֵּה֩ הֶחֱיָ֨ה יְהוָ֣ה אוֹתִ/י֮ כַּ/אֲשֶׁ֣ר דִּבֵּר֒ זֶה֩ אַרְבָּעִ֨ים וְ/חָמֵ֜שׁ שָׁנָ֗ה מֵ֠/אָז דִּבֶּ֨ר יְהוָ֜ה אֶת הַ/דָּבָ֤ר הַ/זֶּה֙ אֶל מֹשֶׁ֔ה אֲשֶׁר הָלַ֥ךְ יִשְׂרָאֵ֖ל בַּ/מִּדְבָּ֑ר וְ/עַתָּה֙ הִנֵּ֣ה אָנֹכִ֣י הַ/יּ֔וֹם בֶּן חָמֵ֥שׁ וּ/שְׁמוֹנִ֖ים שָׁנָֽה׃",
+        "LXX": "καὶ νῦν διέθρεψέν με Κύριος ὃν τρόπον εἶπεν τοῦτο τεσσερακοστὸν καὶ πέμπτον ἔτος ἀφ’ οὗ ἐλάλησεν Κύριος τὸ ῥῆμα τοῦτο πρὸς Μωυσῆν, καὶ ἐπορεύθη Ἰσραὴλ ἐν τῇ ἐρήμῳ. καὶ νῦν ἰδοὺ ἐγὼ σήμερον ὀγδοήκοντα καὶ πέντε ἐτῶν·",
+        "VUL": "Concessit ergo Dominus vitam mihi, sicut pollicitus est, usque in præsentem diem. Quadraginta et quinque anni sunt, ex quo locutus est Dominus verbum istud ad Moysen, quando ambulabat Israël per solitudinem : hodie octoginta quinque annorum sum,",
+        "SYN": "итак, вот, Господь сохранил меня в живых, как Он говорил; уже сорок пять лет _прошло_ от того времени, когда Господь сказал Моисею слово сие, и Израиль ходил по пустыне; теперь, вот, мне восемьдесят пять лет;",
+        "NEO": "Et maintenant, voici que \\+w Yahweh|strong=\"H3068\"\\+w** m’a conservé en vie, comme il l’a dit, pendant les quarante-cinq ans écoulés depuis que \\+w Yahweh|strong=\"H3068\"\\+w** adressa cette parole à Moïse, tandis qu’Israël marchait dans le désert ; et maintenant, voici que je suis âgé aujourd’hui de quatre-vingt-cinq ans.",
+        "NAB": "Now, as he promised, the LORD has preserved me while Israel was journeying through the desert, for the forty-five years since the LORD spoke thus to Moses; and although I am now eighty-five years old,",
+        "VAT_ES": "Ahora ves que el Señor me ha conservado la vida conforme a su promesa. Y han pasado cuarenta y cinco años desde que el Señor dirigió esta palabra a Moisés, cuando todavía Israel iba por el desierto. Ahora tengo ochenta y cinco años,",
+        "CEI": "Ora, ecco il Signore mi ha fatto vivere, come aveva detto, sono cioè quarantacinque anni da quando disse questa parola a Mosè, mentre Israele camminava nel deserto, e oggi, ecco ho ottantacinque anni;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "עוֹדֶ֨/נִּי הַ/יּ֜וֹם חָזָ֗ק כַּֽ/אֲשֶׁר֙ בְּ/י֨וֹם שְׁלֹ֤חַ אוֹתִ/י֙ מֹשֶׁ֔ה כְּ/כֹ֥חִ/י אָ֖ז וּ/כְ/כֹ֣חִ/י עָ֑תָּה לַ/מִּלְחָמָ֖ה וְ/לָ/צֵ֥את וְ/לָ/בֽוֹא׃",
+        "LXX": "ἔτι εἰμὶ σήμερον ἰσχύων ὡσεὶ ὅτε ἀπέστειλέν με Μωυσῆς, ὡσαύτως ἰσχύω νῦν εἰσελθεῖν καὶ ἐξελθεῖν εἰς τὸν πόλεμον.",
+        "VUL": "sic valens ut eo valebam tempore quando ad explorandum missus sum : illius in me temporis fortitudo usque hodie perseverat, tam ad bellandum quam ad gradiendum.",
+        "SYN": "но и ныне я столько же крепок, как и тогда, когда посылал меня Моисей: сколько тогда было у меня силы, столько и теперь есть для того, чтобы воевать и выходить и входить;",
+        "NEO": "Je suis encore aujourd’hui aussi robuste qu’au jour où Moïse m’envoya ; ma force de maintenant est la même que celle d’alors, soit pour combattre, soit pour sortir et pour entrer.",
+        "NAB": "I am still as strong today as I was the day Moses sent me forth, with no less vigor whether for war or for ordinary tasks.",
+        "VAT_ES": "pero todavía estoy tan fuerte como el día en que Moisés me envió. Hoy tengo la misma fuerza que tenía entonces, tanto para combatir como para ir de un lado a otro.",
+        "CEI": "io sono ancora oggi come quando Mosè mi inviò: come il mio vigore allora, così il mio vigore ora, sia per la battaglia, sia per ogni altro servizio;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה תְּנָ/ה לִּ/י֙ אֶת הָ/הָ֣ר הַ/זֶּ֔ה אֲשֶׁר דִּבֶּ֥ר יְהוָ֖ה בַּ/יּ֣וֹם הַ/ה֑וּא כִּ֣י אַתָּֽה שָׁמַעְתָּ֩ בַ/יּ֨וֹם הַ/ה֜וּא כִּֽי עֲנָקִ֣ים שָׁ֗ם וְ/עָרִים֙ גְּדֹל֣וֹת בְּצֻר֔וֹת אוּלַ֨י יְהוָ֤ה אוֹתִ/י֙ וְ/ה֣וֹרַשְׁתִּ֔י/ם כַּ/אֲשֶׁ֖ר דִּבֶּ֥ר יְהוָֽה׃",
+        "LXX": "καὶ νῦν αἰτοῦμαί σε τὸ ὄρος τοῦτο, καθὰ εἶπεν Κύριος τῇ ἡμέρᾳ ἐκείνῃ· ὅτι σὺ ἀκήκοας τὸ ῥῆμα τοῦτο τῇ ἡμέρᾳ ἐκείνῃ. νυνὶ δὲ οἱ Ἐνακεὶμ ἐκεῖ εἰσιν, πόλεις ὀχυραὶ καὶ μεγάλαι· ἐὰν οὖν Κύριος μετ’ ἐμοῦ ᾖ, ἐξολεθρεύσω αὐτοὺς ὃν τρόπον εἶπέν μοι Κύριος.",
+        "VUL": "Da ergo mihi montem istum, quem pollicitus est Dominus, te quoque audiente, in quo Enacim sunt, et urbes magnæ atque munitæ : si forte sit Dominus mecum, et potuero delere eos, sicut promisit mihi.",
+        "SYN": "итак дай мне сию гору, о которой говорил Господь в тот день; ибо ты слышал в тот день, что там [живут] сыны Енаковы, и города _у_ _них_ большие и укрепленные; может быть, Господь [будет] со мною, и я изгоню их, как говорил Господь.",
+        "NEO": "Donne-moi donc cette montagne, dont \\+w Yahweh|strong=\"H3068\"\\+w** a parlé en ce jour-là ; car tu as toi-même entendu ce jour-là que là se trouvent des Enacim et des villes grandes et fortifiées ; peut-être \\+w Yahweh|strong=\"H3068\"\\+w** sera-t-il avec moi, et réussirai-je à les chasser, selon qu’a parlé \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "Give me, therefore, this mountain region which the LORD promised me that day, as you yourself heard. True, the Anakim are there, with large fortified cities, but if the LORD is with me I shall be able to drive them out, as the LORD promised.\"",
+        "VAT_ES": "Por eso, dame esta montaña que el Señor me prometió aquel día. Tú mismo oíste ese día que allí se encuentran los anaquitas, y que las ciudades son grandes y amuralladas. Pero sin duda el Señor estará conmigo, y yo los expulsaré como él me lo prometió».",
+        "CEI": "ora concedimi questi monti, di cui il Signore ha parlato in quel giorno, poiché tu hai allora saputo che vi sono gli Anakiti e città grandi e fortificate; spero che il Signore sia con me e io le conquisterò secondo quanto ha detto il Signore!\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַֽ/יְבָרְכֵ֖/הוּ יְהוֹשֻׁ֑עַ וַ/יִּתֵּ֧ן אֶת חֶבְר֛וֹן לְ/כָלֵ֥ב בֶּן יְפֻנֶּ֖ה לְ/נַחֲלָֽה׃",
+        "LXX": "καὶ εὐλόγησεν αὐτὸν Ἰησοῦς, καὶ ἔδωκεν Χεβρὼν τῷ Χαλὲβ υἱῷ Ἰεφοννὴ υἱῷ Κενὲζ ἐν κλήρῳ.",
+        "VUL": "Benedixitque ei Josue, et tradidit ei Hebron in possessionem :",
+        "SYN": "Иисус благословил его, и дал в удел Халеву, сыну Иефонниину, [Кенезеянину,] Хеврон.",
+        "NEO": "Josué bénit Caleb, fils de Jéphoné, et il lui donna Hébron en héritage.",
+        "NAB": "Joshua blessed Caleb, son of Jephunneh, and gave him Hebron as his heritage.",
+        "VAT_ES": "Entonces Josué bendijo a Caleb, hijo de Iefuné, y le dio Hebrón como herencia.",
+        "CEI": "Giosuè lo benedisse e diede Ebron in eredità a Caleb, figlio di Iefunne."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "עַל כֵּ֣ן הָיְתָֽה חֶ֠בְרוֹן לְ/כָלֵ֨ב בֶּן יְפֻנֶּ֤ה הַ/קְּנִזִּי֙ לְֽ/נַחֲלָ֔ה עַ֖ד הַ/יּ֣וֹם הַ/זֶּ֑ה יַ֚עַן אֲשֶׁ֣ר מִלֵּ֔א אַחֲרֵ֕י יְהוָ֖ה אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "διὰ τοῦτο ἐγενήθη ἡ Χεβρὼν τῷ Χαλὲβ τῷ τοῦ Ἰεφοννὴ τοῦ Κενεζαίου ἐν κλήρῳ ἕως τῆς ἡμέρας ταύτης, διὰ τὸ αὐτὸν ἐπακολουθῆσαι τῷ προστάγματι. Κυρίου θεοῦ Ἰσραήλ.",
+        "VUL": "atque ex eo fuit Hebron Caleb filio Jephone Cenezæo usque in præsentem diem, quia secutus est Dominum Deum Israël.",
+        "SYN": "Таким образом Хеврон остался уделом Халева, сына Иефонниина, Кенезеянина, до сего дня, за то, что он в точности последовал [повелению] Господа Бога Израилева.",
+        "NEO": "C’est pourquoi Hébron appartient en héritage à Caleb, fils de Jéphoné, le Cénézéen, jusqu’à ce jour, parce qu’il avait entièrement suivi \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël.",
+        "NAB": "Therefore Hebron remains the heritage of the Kenizzite Caleb, son of Jephunneh, to the present day, because he was completely loyal to the LORD, the God of Israel.",
+        "VAT_ES": "Por eso Hebrón ha sido hasta el día de hoy la herencia de Caleb, hijo de Iefuné, el quenizita, ya que él se había mantenido plenamente fiel al Señor, el Dios de Israel.",
+        "CEI": "Per questo Caleb, figlio di Iefunne, il Kenizzita, ebbe in eredità Ebron fino ad oggi, perché pienamente fedele al Signore, Dio di Israele. Ebron si chiamava prima Kiriat-Arba: Arba era stato l'uomo più grande tra gli Anakiti. Poi il paese non ebbe più la guerra."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/שֵׁ֨ם חֶבְר֤וֹן לְ/פָנִים֙ קִרְיַ֣ת אַרְבַּ֔ע הָ/אָדָ֧ם הַ/גָּד֛וֹל בָּ/עֲנָקִ֖ים ה֑וּא וְ/הָ/אָ֥רֶץ שָׁקְטָ֖ה מִ/מִּלְחָמָֽה׃",
+        "LXX": "τὸ δὲ ὄνομα τῆς Χεβρὼν ἦν τὸ πρότερον πόλις Ἀργόβ· μητρόπολις τῶν Ἐνακεὶμ αὕτη. καὶ ἡ γῆ ἐκόπασεν τοῦ πολέμου.",
+        "VUL": "Nomen Hebron ante vocabatur Cariath Arbe : Adam maximus ibi inter Enacim situs est : et terra cessavit a præliis.",
+        "SYN": "Имя Хеврону прежде было Кириаф-Арбы, как назывался между сынами Енака один человек великий. И земля успокоилась от войны.",
+        "NEO": "Hébron s’appelait autrefois Cariath-Arbé ; Arbé était l’homme le plus grand parmi les Enacim.",
+        "NAB": "Hebron was formerly called Kiriath-arba, for Arba, the greatest among the Anakim. And the land enjoyed peace.",
+        "VAT_ES": "El nombre primitivo de Hebrón fue Quiriat Arbá, y Arbá fue el más grande de los anaquitas. Después cesó la guerra en el país."
+      }
+    }
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_TIMO_004",
+  "book_key": "I_TIMO",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Τὸ δὲ πνεῦμα ῥητῶς λέγει, ὅτι ἐν ὑστέροις καιροῖς ἀποστήσονταί τινες τῆς πίστεως, προσέχοντες πνεύμασιν πλάνοις καὶ διδασκαλίαις δαιμονίων,",
+        "VUL": "Spiritus autem manifeste dicit, quia in novissimis temporibus discedent quidam a fide, attendentes spiritibus erroris, et doctrinis dæmoniorum,",
+        "SYN": "Дух же ясно говорит, что в последние времена отступят некоторые от веры, внимая духам обольстителям и учениям бесовским,",
+        "NEO": "Mais l’Esprit dit clairement que dans les temps à venir, certains abandonneront la foi, pour s’attacher à des esprits séducteurs et à des doctrines diaboliques ;+ 4:1 IV, 1. La formule employée ici ἐν μυστήροις καιροῖς équivaut à la formule plus ordinaire : ἐν ἐσχάταις Comp. II Tim. iii, 1 et I Cor. x, 11. — Esprits, faux docteurs. — Vulg. d’après une autre leçon : \\+qt à des esprits d’erreur\\+qt*.*",
+        "NAB": "Now the Spirit explicitly says that in the last times some will turn away from the faith by paying attention to deceitful spirits and demonic instructions",
+        "VAT_ES": "No reprendas a un anciano, sino exhórtalo como a un padre. Trata a los jóvenes como a hermanos,",
+        "CEI": "Avendo infatti la legge solo un'ombra dei beni futuri e non la realtà stessa delle cose, non ha il potere di condurre alla perfezione, per mezzo di quei sacrifici che si offrono continuamente di anno in anno, coloro che si accostano a Dio."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "ἐν ὑποκρίσει ψευδολόγων, κεκαυτηριασμένων τὴν ἰδίαν συνείδησιν,",
+        "VUL": "in hypocrisi loquentium mendacium, et cauteriatam habentium suam conscientiam,",
+        "SYN": "через лицемерие лжесловесников, сожженных в совести своей,",
+        "NEO": "enseignées par d’hypocrites imposteurs qui ont la marque de la flétrissure dans leur propre conscience ;",
+        "NAB": "through the hypocrisy of liars with branded consciences.",
+        "VAT_ES": "a las ancianas como a madres, y a las jóvenes como a hermanas, con toda pureza.",
+        "CEI": "Altrimenti non si sarebbe forse cessato di offrirli, dal momento che i fedeli, purificati una volta per tutte, non avrebbero ormai più alcuna coscienza dei peccati?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "κωλυόντων γαμεῖν, ἀπέχεσθαι βρωμάτων, ἃ ὁ θεὸς ἔκτισεν εἰς μετάληψιν μετὰ εὐχαριστίας τοῖς πιστοῖς καὶ ἐπεγνωκόσιν τὴν ἀλήθειαν.",
+        "VUL": "prohibentium nubere, abstinere a cibis, quod Deus creavit ad percipiendum cum gratiarum actione fidelibus, et iis qui cognoverunt veritatem.",
+        "SYN": "запрещающих вступать в брак _и_ употреблять в пищу то, что Бог сотворил, дабы верные и познавшие истину вкушали с благодарением.",
+        "NEO": "qui proscrivent le mariage, et l’usage d’aliments que Dieu a créés afin que les fidèles et ceux qui ont connu la vérité en usent avec actions de grâces.",
+        "NAB": "They forbid marriage and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth.",
+        "VAT_ES": "Honra y atiende a las viudas que realmente están necesitadas.",
+        "CEI": "Invece per mezzo di quei sacrifici si rinnova di anno in anno il ricordo dei peccati,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ὅτι πᾶν κτίσμα θεοῦ καλόν, καὶ οὐδὲν ἀπόβλητον, μετὰ εὐχαριστίας λαμβανόμενον·",
+        "VUL": "Quia omnis creatura Dei bona est, et nihil rejiciendum quod cum gratiarum actione percipitur :",
+        "SYN": "Ибо всякое творение Божие хорошо, и ничто не предосудительно, если принимается с благодарением,",
+        "NEO": "Car tout ce que Dieu a créé est bon, et l’on ne doit rien rejeter de ce qui se prend avec action de grâces,",
+        "NAB": "For everything created by God is good, and nothing is to be rejected when received with thanksgiving,",
+        "VAT_ES": "Pero si alguna viuda tiene hijos o nietos, estos deben aprender primero a cumplir con sus deberes familiares y a ser agradecidos con sus padres, porque eso es lo que agrada a Dios.",
+        "CEI": "poiché è impossibile eliminare i peccati con il sangue di tori e di capri."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "ἁγιάζεται γὰρ διὰ λόγου θεοῦ καὶ ἐντεύξεως.",
+        "VUL": "sanctificatur enim per verbum Dei, et orationem.",
+        "SYN": "потому что освящается словом Божиим и молитвою.",
+        "NEO": "parce que tout est sanctifié par la parole de Dieu et par la prière.",
+        "NAB": "for it is made holy by the invocation of God in prayer.",
+        "VAT_ES": "Hay viudas que lo son realmente, porque se han quedado solas y tienen puesta su confianza en Dios, consagrando sus días y sus noches a la súplica y a la oración.",
+        "CEI": "Per questo, entrando nel mondo, Cristo dice: Tu non hai voluto né sacrificio né offerta, un corpo invece mi hai preparato."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "¶Ταῦτα ὑποτιθέμενος τοῖς ἀδελφοῖς καλὸς ἔσῃ διάκονος Ἰησοῦ χριστοῦ, ἐντρεφόμενος τοῖς λόγοις τῆς πίστεως, καὶ τῆς καλῆς διδασκαλίας ᾗ παρηκολούθηκας.",
+        "VUL": "Hæc proponens fratribus, bonus eris minister Christi Jesu enutritus verbis fidei, et bonæ doctrinæ, quam assecutus es.",
+        "SYN": "Внушая сие братиям, будешь добрый служитель Иисуса Христа, питаемый словами веры и добрым учением, которому ты последовал.",
+        "NEO": "En proposant aux frères ces enseignements, tu seras un bon ministre de Jésus-Christ, nourri des leçons de la foi et de la bonne doctrine que tu as fidèlement suivie.",
+        "NAB": "If you will give these instructions to the brothers, you will be a good minister of Christ Jesus, nourished on the words of the faith and of the sound teaching you have followed.",
+        "VAT_ES": "Pero la que lleva una vida disipada, aunque viva, está muerta.",
+        "CEI": "Non hai gradito né olocausti né sacrifici per il peccato."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Τοὺς δὲ βεβήλους καὶ γραώδεις μύθους παραιτοῦ. Γύμναζε δὲ σεαυτὸν πρὸς εὐσέβειαν·",
+        "VUL": "Ineptas autem, et aniles fabulas devita : exerce autem teipsum ad pietatem.",
+        "SYN": "Негодных же и бабьих басен отвращайся, а упражняй себя в благочестии,",
+        "NEO": "Quant à ces fables profanes,+ 4:7 7. Fables, toutes les rêveries gnostiques au sujet des substances célestes.* ces contes de vieille femme, rejette-les, et exerce-toi à la piété.",
+        "NAB": "Avoid profane and silly myths. Train yourself for devotion,",
+        "VAT_ES": "Incúlcales esto para que sean irreprochables:",
+        "CEI": "Allora ho detto: Ecco, io vengo - poiché di me sta scritto nel rotolo del libro - per fare, o Dio, la tua volontà."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "ἡ γὰρ σωματικὴ γυμνασία πρὸς ὀλίγον ἐστὶν ὠφέλιμος· ἡ δὲ εὐσέβεια πρὸς πάντα ὠφέλιμός ἐστιν, ἐπαγγελίαν ἔχουσα ζωῆς τῆς νῦν καὶ τῆς μελλούσης.",
+        "VUL": "Nam corporalis exercitatio, ad modicum utilis est : pietas autem ad omnia utilis est, promissionem habens vitæ, quæ nunc est, et futuræ.",
+        "SYN": "ибо телесное упражнение мало полезно, а благочестие на все полезно, имея обетование жизни настоящей и будущей.",
+        "NEO": "Car l’exercice corporel est utile pour un peu ; mais la piété est utile à tout ; elle a des promesses pour la vie présente et pour la vie à venir.",
+        "NAB": "for, while physical training is of limited value, devotion is valuable in every respect, since it holds a promise of life both for the present and for the future.",
+        "VAT_ES": "el que no se ocupa de los suyos, sobre todo si conviven con él, ha renegado de su fe y es peor que un infiel.",
+        "CEI": "Dopo aver detto prima non hai voluto e non hai gradito né sacrifici né offerte, né olocausti né sacrifici per il peccato, cose tutte che vengono offerte secondo la legge,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Πιστὸς ὁ λόγος καὶ πάσης ἀποδοχῆς ἄξιος.",
+        "VUL": "Fidelis sermo, et omni acceptione dignus.",
+        "SYN": "Слово сие верно и всякого принятия достойно.",
+        "NEO": "C’est là une parole certaine et digne d’être reçue.",
+        "NAB": "This saying is trustworthy and deserves full acceptance.",
+        "VAT_ES": "Para estar inscrita en el grupo de las viudas, una mujer debe tener por menos sesenta años y haberse casado una sola vez.",
+        "CEI": "soggiunge: Ecco, io vengo a fare la tua volontà. Con ciò stesso egli abolisce il primo sacrificio per stabilirne uno nuovo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Εἰς τοῦτο γὰρ καὶ κοπιῶμεν καὶ ὀνειδιζόμεθα, ὅτι ἠλπίκαμεν ἐπὶ θεῷ ζῶντι, ὅς ἐστιν σωτὴρ πάντων ἀνθρώπων, μάλιστα πιστῶν.",
+        "VUL": "In hoc enim laboramus, et maledicimur, quia speramus in Deum vivum, qui est Salvator omnium hominum, maxime fidelium.",
+        "SYN": "Ибо мы для того и трудимся и поношения терпим, что уповаем на Бога живаго, Который есть Спаситель всех человеков, а наипаче верных.",
+        "NEO": "Car nous ne prenons tant de peine et nous n’endurons les outrages, que parce que nous avons mis notre espérance dans le Dieu vivant, qui est le Sauveur de tous les hommes, principalement des fidèles.",
+        "NAB": "For this we toil and struggle, because we have set our hope on the living God, who is the savior of all, especially of those who believe.",
+        "VAT_ES": "Que sus buenas obras den testimonio de ella; tiene que haber educado a sus hijos, ejercitado la hospitalidad, haber lavado los pies a los hermanos, socorrido a los necesitados y practicado el bien en todas sus formas.",
+        "CEI": "Ed è appunto per quella volontà che noi siamo stati santificati, per mezzo dell'offerta del corpo di Gesù Cristo, fatta una volta per sempre."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Παράγγελλε ταῦτα καὶ δίδασκε.",
+        "VUL": "Præcipe hæc, et doce.",
+        "SYN": "Проповедуй сие и учи.",
+        "NEO": "Voilà ce que tu dois prescrire et enseigner.",
+        "NAB": "Command and teach these things.",
+        "VAT_ES": "No inscribas, en cambio, a las viudas más jóvenes, porque cuando los deseos puramente humanos prevalecen sobre su entrega a Cristo, quieren casarse otra vez,",
+        "CEI": "Ogni sacerdote si presenta giorno per giorno a celebrare il culto e ad offrire molte volte gli stessi sacrifici che non possono mai eliminare i peccati."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Μηδείς σου τῆς νεότητος καταφρονείτω, ἀλλὰ τύπος γίνου τῶν πιστῶν ἐν λόγῳ, ἐν ἀναστροφῇ, ἐν ἀγάπῃ, ἐν πνεύματι, ἐν πίστει, ἐν ἁγνείᾳ.",
+        "VUL": "Nemo adolescentiam tuam contemnat : sed exemplum esto fidelium in verbo, in conversatione, in caritate, in fide, in castitate.",
+        "SYN": "Никто да не пренебрегает юностью твоею; но будь образцом для верных в слове, в житии, в любви, в духе, в вере, в чистоте.",
+        "NEO": "Que personne ne te méprise à cause de ta jeunesse ; mais sois l’exemple des fidèles, en parole, en conduite, en charité, en foi, en chasteté.",
+        "NAB": "Let no one have contempt for your youth, but set an example for those who believe, in speech, conduct, love, faith, and purity.",
+        "VAT_ES": "y se hacen culpables por faltar a su compromiso.",
+        "CEI": "Egli al contrario, avendo offerto un solo sacrificio per i peccati una volta per sempre si è assiso alla destra di Dio,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Ἕως ἔρχομαι, πρόσεχε τῇ ἀναγνώσει, τῇ παρακλήσει, τῇ διδασκαλίᾳ.",
+        "VUL": "Dum venio, attende lectioni, exhortationi, et doctrinæ.",
+        "SYN": "Доколе не приду, занимайся чтением, наставлением, учением.",
+        "NEO": "En attendant que je vienne, applique-toi à la lecture, à l’exhortation, à l’enseignement.",
+        "NAB": "Until I arrive, attend to the reading, exhortation, and teaching.",
+        "VAT_ES": "Además, si no tienen nada que hacer, acaban yendo de casa en casa y se dedican a charlar y a curiosear, ocupándose en lo que no les importa.",
+        "CEI": "aspettando ormai solo che i suoi nemici vengano posti sotto i suoi piedi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Μὴ ἀμέλει τοῦ ἐν σοὶ χαρίσματος, ὃ ἐδόθη σοι διὰ προφητείας μετὰ ἐπιθέσεως τῶν χειρῶν τοῦ πρεσβυτερίου.",
+        "VUL": "Noli negligere gratiam, quæ in te est, quæ data est tibi per prophetiam, cum impositione manuum presbyterii.",
+        "SYN": "Не неради о пребывающем в тебе даровании, которое дано тебе по пророчеству с возложением рук священства.",
+        "NEO": "Ne néglige pas la grâce qui est en toi, et qui t’a été conférée par action prophétique, lorsque l’assemblée des anciens t’a imposé les mains.",
+        "NAB": "Do not neglect the gift you have, which was conferred on you through the prophetic word with the imposition of hands of the presbyterate.",
+        "VAT_ES": "Por eso quiero que las viudas jóvenes se casen, que tengan hijos y atiendan a sus obligaciones domésticas, para no dar lugar a la maledicencia de los enemigos.",
+        "CEI": "Poiché con un'unica oblazione egli ha reso perfetti per sempre quelli che vengono santificati."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ταῦτα μελέτα, ἐν τούτοις ἴσθι, ἵνα σου ἡ προκοπὴ φανερὰ ᾖ ἐν πᾶσιν.",
+        "VUL": "Hæc meditare, in his esto : ut profectus tuus manifestus sit omnibus.",
+        "SYN": "О сем заботься, в сем пребывай, дабы успех твой для всех был очевиден.",
+        "NEO": "Médite ces choses et sois-y tout entier, afin que tes progrès soient évidents pour tous.",
+        "NAB": "Be diligent in these matters, be absorbed in them, so that your progress may be evident to everyone.",
+        "VAT_ES": "Algunas de ellas ya han abandonado el buen camino y siguen a Satanás.",
+        "CEI": "Questo ce lo attesta anche lo Spirito Santo. Infatti, dopo aver detto:"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Ἔπεχε σεαυτῷ καὶ τῇ διδασκαλίᾳ. Ἐπίμενε αὐτοῖς· τοῦτο γὰρ ποιῶν καὶ σεαυτὸν σώσεις καὶ τοὺς ἀκούοντάς σου.",
+        "VUL": "Attende tibi, et doctrinæ : insta in illis. Hoc enim faciens, et teipsum salvum facies, et eos qui te audiunt.",
+        "SYN": "Вникай в себя и в учение; занимайся сим постоянно: ибо, так поступая, и себя спасешь и слушающих тебя.",
+        "NEO": "Veille sur toi-même et sur ton enseignement ; mets-y une constante application ; car, en agissant ainsi, tu te sauveras toi-même, et tu sauveras ceux qui t’écoutent.",
+        "NAB": "Attend to yourself and to your teaching; persevere in both tasks, for by doing so you will save both yourself and those who listen to you.",
+        "VAT_ES": "Si una mujer creyente tiene viudas en la familia, que se ocupe de ellas. De esta manera, la Iglesia no las tendrá a su cargo y quedará libre para atender a las que están realmente necesitadas.",
+        "CEI": "Questa è l'alleanza che io stipulerò con loro dopo quei giorni, dice il Signore: io porrò le mie leggi nei loro cuori e le imprimerò nella loro mente,"
+      }
+    }
+  }
+}

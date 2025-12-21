@@ -1,0 +1,644 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MARC_013",
+  "book_key": "MARC",
+  "sequence": 13,
+  "chapter_in": {
+    "MT": 13,
+    "VUL": 13,
+    "LXX": 13
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Καὶ ἐκπορευομένου αὐτοῦ ἐκ τοῦ ἱεροῦ, λέγει αὐτῷ εἷς τῶν μαθητῶν αὐτοῦ, Διδάσκαλε, ἴδε, ποταποὶ λίθοι καὶ ποταπαὶ οἰκοδομαί.",
+        "VUL": "Et cum egrederetur de templo, ait illi unus ex discipulis suis : Magister, aspice quales lapides, et quales structuræ.",
+        "SYN": "И когда выходил Он из храма, говорит Ему один из учеников Его: Учитель! посмотри, какие камни и какие здания!",
+        "NEO": "Comme Jésus sortait du temple, un de ses disciples lui dit : « Maître, voyez quelles pierres et quelles constructions ! »+ 13:1 XIII, 1-31. Matth. xxiv, 1-35 ; Luc, xxi, 5-33.*",
+        "NAB": "As he was making his way out of the temple area one of his disciples said to him, \"Look, teacher, what stones and what buildings!\"",
+        "VAT_ES": "Cuando Jesús salía del Templo, uno de sus discípulos le dijo: «&iexcl;Maestro, mira qué piedras enormes y qué construcción!».",
+        "CEI": "Nel frattempo, radunatesi migliaia di persone che si calpestavano a vicenda, Gesù cominciò a dire anzitutto ai discepoli: \"Guardatevi dal lievito dei farisei, che è l'ipocrisia."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Καὶ ὁ Ἰησοῦς ἀποκριθεὶς εἶπεν αὐτῷ, Βλέπεις ταύτας τὰς μεγάλας οἰκοδομάς; Οὐ μὴ ἀφεθῇ λίθος ἐπὶ λίθῳ, ὃς οὐ μὴ καταλυθῇ.",
+        "VUL": "Et respondens Jesus, ait illi : Vides has omnes magnas ædificationes ? Non relinquetur lapis super lapidem, qui non destruatur.",
+        "SYN": "Иисус сказал ему в ответ: видишь сии великие здания? все это будет разрушено, так что не останется здесь камня на камне.",
+        "NEO": "Jésus lui répondit : « Tu vois ces grandes constructions ? Il n’y sera pas laissé pierre sur pierre qui ne soit renversée. »",
+        "NAB": "Jesus said to him, \"Do you see these great buildings? There will not be one stone left upon another that will not be thrown down.\"",
+        "VAT_ES": "Jesús le respondió: «&iquest;Ves esa gran construcción? De todo esto no quedará piedra sobre piedra: todo será destruido».",
+        "CEI": "Non c'è nulla di nascosto che non sarà svelato, né di segreto che non sarà conosciuto."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "¶Καὶ καθημένου αὐτοῦ εἰς τὸ ὄρος τῶν Ἐλαιῶν κατέναντι τοῦ ἱεροῦ, ἐπηρώτων αὐτὸν κατ’ ἰδίαν Πέτρος καὶ Ἰάκωβος καὶ Ἰωάννης καὶ Ἀνδρέας,",
+        "VUL": "Et cum sederet in monte Olivarum contra templum, interrogabant eum separatim Petrus, et Jacobus, et Joannes, et Andreas :",
+        "SYN": "И когда Он сидел на горе Елеонской против храма, спрашивали Его наедине Петр, и Иаков, и Иоанн, и Андрей:",
+        "NEO": "Lorsqu’il se fut assis sur la montagne des Oliviers, en face du temple, Pierre, Jacques, Jean et André l’interrogèrent en particulier :",
+        "NAB": "As he was sitting on the Mount of Olives opposite the temple area, Peter, James, John, and Andrew asked him privately,",
+        "VAT_ES": "Y después, estando sentado en el monto de los Olivos, frente al Templo, Pedro, Santiago, Juan y Andrés le preguntaron en privado:",
+        "CEI": "Pertanto ciò che avrete detto nelle tenebre, sarà udito in piena luce; e ciò che avrete detto all'orecchio nelle stanze più interne, sarà annunziato sui tetti."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Εἰπὲ ἡμῖν, πότε ταῦτα ἔσται; Καὶ τί τὸ σημεῖον ὅταν μέλλῃ πάντα ταῦτα συντελεῖσθαι;",
+        "VUL": "Dic nobis, quando ista fient ? et quod signum erit, quando hæc omnia incipient consummari ?",
+        "SYN": "скажи нам, когда это будет, и какой признак, когда все сие должно совершиться?",
+        "NEO": "« Dites-nous quand cela arrivera, et à quel signe on connaîtra que toutes ces choses seront près de s’accomplir ? »",
+        "NAB": "\"Tell us, when will this happen, and what sign will there be when all these things are about to come to an end?\"",
+        "VAT_ES": "«Dinos cuándo sucederá esto y cuál será la señal de que ya están por cumplirse todas estas cosas».",
+        "CEI": "A voi miei amici, dico: Non temete coloro che uccidono il corpo e dopo non possono far più nulla."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ Ἰησοῦς ἀποκριθεὶς αὐτοῖς ἤρξατο λέγειν, Βλέπετε μή τις ὑμᾶς πλανήσῃ.",
+        "VUL": "Et respondens Jesus cpit dicere illis : Videte ne quis vos seducat :",
+        "SYN": "Отвечая им, Иисус начал говорить: берегитесь, чтобы кто не прельстил вас,",
+        "NEO": "Jésus leur répondant+ 13:5 5. ἁποκριθεἰς, répondant, est omis dans le Vaticanus, le Sinaïticus, quelques mss. latins, etc.*, commença ce discours : « Prenez garde que nul ne vous séduise.",
+        "NAB": "Jesus began to say to them, \"See that no one deceives you.",
+        "VAT_ES": "Entonces Jesús comenzó a decirles: «Tengan cuidado de que no los engañen,",
+        "CEI": "Vi mostrerò invece chi dovete temere: temete Colui che, dopo aver ucciso, ha il potere di gettare nella Geenna. Sì, ve lo dico, temete Costui."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Πολλοὶ γὰρ ἐλεύσονται ἐπὶ τῷ ὀνόματί μου, λέγοντες ὅτι Ἐγώ εἰμι· καὶ πολλοὺς πλανήσουσιν.",
+        "VUL": "multi enim venient in nomine meo, dicentes quia ego sum : et multos seducent.",
+        "SYN": "ибо многие придут под именем Моим и будут говорить, что это Я; и многих прельстят.",
+        "NEO": "Car plusieurs viendront sous mon nom, disant : C’est moi le Christ* ; et ils en séduiront un grand nombre.",
+        "NAB": "Many will come in my name saying, 'I am he,' and they will deceive many.",
+        "VAT_ES": "porque muchos se presentarán en mi Nombre, diciendo: \"Soy yo\", y engañarán a mucha gente.",
+        "CEI": "Cinque passeri non si vendono forse per due soldi? Eppure nemmeno uno di essi è dimenticato davanti a Dio."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ὅταν δὲ ἀκούσητε πολέμους καὶ ἀκοὰς πολέμων, μὴ θροεῖσθε· δεῖ γὰρ γενέσθαι, ἀλλ’ οὔπω τὸ τέλος.",
+        "VUL": "Cum audieritis autem bella, et opiniones bellorum, ne timueritis : oportet enim hæc fieri : sed nondum finis.",
+        "SYN": "Когда же услышите о войнах и о военных слухах, не ужасайтесь: ибо надлежит _сему_ быть, -- но _это_ еще не конец.",
+        "NEO": "Quand vous entendrez parler de guerres et de bruits de guerres, ne vous troublez pas ; car il faut que ces choses arrivent : mais ce ne sera pas encore la fin.",
+        "NAB": "When you hear of wars and reports of wars do not be alarmed; such things must happen, but it will not yet be the end.",
+        "VAT_ES": "No se alarmen cuando oigan hablar de guerras y de rumores de guerras: es necesario que esto ocurra, pero todavía no será el fin.",
+        "CEI": "Anche i capelli del vostro capo sono tutti contati. Non temete, voi valete più di molti passeri."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἐγερθήσεται γὰρ ἔθνος ἐπὶ ἔθνος, καὶ βασιλεία ἐπὶ βασιλείαν· καὶ ἔσονται σεισμοὶ κατὰ τόπους, καὶ ἔσονται λιμοὶ καὶ ταραχαί· ἀρχαὶ ὠδίνων ταῦτα.",
+        "VUL": "Exsurget enim gens contra gentem, et regnum super regnum, et erunt terræmotus per loca, et fames. Initium dolorum hæc.",
+        "SYN": "Ибо восстанет народ на народ и царство на царство; и будут землетрясения по местам, и будут глады и смятения. Это -- начало болезней.",
+        "NEO": "On verra se soulever peuple contre peuple, royaume contre royaume ; il y aura des tremblements de terre en divers lieux ; il y aura des famines. Ce sera le commencement des douleurs.",
+        "NAB": "Nation will rise against nation and kingdom against kingdom. There will be earthquakes from place to place and there will be famines. These are the beginnings of the labor pains.",
+        "VAT_ES": "Se levantará nación contra nación y reino contra reino. En muchas partes, habrá terremotos y hambre. Este será el comienzo de los dolores del parto.",
+        "CEI": "Inoltre vi dico: Chiunque mi riconoscerà davanti agli uomini, anche il Figlio dell'uomo lo riconoscerà davanti agli angeli di Dio;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "¶Βλέπετε δὲ ὑμεῖς ἑαυτούς· παραδώσουσιν γὰρ ὑμᾶς εἰς συνέδρια, καὶ εἰς συναγωγὰς δαρήσεσθε, καὶ ἐπὶ ἡγεμόνων καὶ βασιλέων σταθήσεσθε ἕνεκεν ἐμοῦ, εἰς μαρτύριον αὐτοῖς.",
+        "VUL": "Videte autem vosmetipsos. Tradent enim vos in consiliis, et in synagogis vapulabitis, et ante præsides et reges stabitis propter me, in testimonium illis.",
+        "SYN": "Но вы смотрите за собою, ибо вас будут предавать в судилища и бить в синагогах, и перед правителями и царями поставят вас за Меня, для свидетельства перед ними.",
+        "NEO": "Prenez garde à vous-mêmes. On vous traduira devant les tribunaux et les synagogues ; vous y serez battus ; vous comparaîtrez devant les gouverneurs et les rois, à cause de moi, pour me* rendre témoignage devant eux.",
+        "NAB": "\"Watch out for yourselves. They will hand you over to the courts. You will be beaten in synagogues. You will be arraigned before governors and kings because of me, as a witness before them.",
+        "VAT_ES": "Estén atentos: los entregarán a los tribunales y los azotarán en las sinagogas, y por mi causa serán llevados ante gobernadores y reyes, para dar testimonio delante de ellos.",
+        "CEI": "ma chi mi rinnegherà davanti agli uomini sarà rinnegato davanti agli angeli di Dio."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Καὶ εἰς πάντα τὰ ἔθνη δεῖ πρῶτον κηρυχθῆναι τὸ εὐαγγέλιον.",
+        "VUL": "Et in omnes gentes primum oportet prædicari Evangelium.",
+        "SYN": "И во всех народах прежде должно быть проповедано Евангелие.",
+        "NEO": "Il faut qu’auparavant l’Évangile soit prêché à toutes les nations.",
+        "NAB": "But the gospel must first be preached to all nations.",
+        "VAT_ES": "Pero antes, la Buena Noticia será proclamada a todas las naciones.",
+        "CEI": "Chiunque parlerà contro il Figlio dell'uomo gli sarà perdonato, ma chi bestemmierà lo Spirito Santo non gli sarà perdonato."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Ὅταν δὲ ἀγάγωσιν ὑμᾶς παραδιδόντες, μὴ προμεριμνᾶτε τί λαλήσητε, μηδὲ μελετᾶτε· ἀλλ’ ὃ ἐὰν δοθῇ ὑμῖν ἐν ἐκείνῃ τῇ ὥρᾳ, τοῦτο λαλεῖτε· οὐ γάρ ἐστε ὑμεῖς οἱ λαλοῦντες, ἀλλὰ τὸ πνεῦμα τὸ ἅγιον.",
+        "VUL": "Et cum duxerint vos tradentes, nolite præcogitare quid loquamini : sed quod datum vobis fuerit in illa hora, id loquimini : non enim vos estis loquentes, sed Spiritus Sanctus.",
+        "SYN": "Когда же поведут предавать вас, не заботьтесь наперед, что вам говорить, и не обдумывайте; но что дано будет вам в тот час, то и говорите, ибо не вы будете говорить, но Дух Святый.",
+        "NEO": "Lors donc qu’on vous emmènera pour vous faire comparaître, ne pensez pas d’avance à ce que vous direz ; mais dites ce qui vous sera donné à l’heure même ; car ce n’est pas vous qui parlerez, mais l’Esprit-Saint.",
+        "NAB": "When they lead you away and hand you over, do not worry beforehand about what you are to say. But say whatever will be given to you at that hour. For it will not be you who are speaking but the holy Spirit.",
+        "VAT_ES": "Cuando los entreguen, no se preocupen por lo que van a decir: digan lo que se les enseñe en ese momento, porque no serán ustedes los que hablarán, sino el Espíritu Santo.",
+        "CEI": "Quando vi condurranno davanti alle sinagoghe, ai magistrati e alle autorità, non preoccupatevi come discolparvi o che cosa dire;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Παραδώσει δὲ ἀδελφὸς ἀδελφὸν εἰς θάνατον, καὶ πατὴρ τέκνον· καὶ ἐπαναστήσονται τέκνα ἐπὶ γονεῖς, καὶ θανατώσουσιν αὐτούς.",
+        "VUL": "Tradet autem frater fratrem in mortem, et pater filium : et consurgent filii in parentes, et morte afficient eos.",
+        "SYN": "Предаст же брат брата на смерть, и отец -- детей; и восстанут дети на родителей и умертвят их.",
+        "NEO": "Le frère livrera son frère à la mort, et le père son fils ; les enfants s’élèveront contre leurs parents, et les mettront à mort.",
+        "NAB": "Brother will hand over brother to death, and the father his child; children will rise up against parents and have them put to death.",
+        "VAT_ES": "El hermano entregará a su hermano para que sea condenado a muerte, y el padre a su hijo; los hijos se rebelarán contra sus padres y los matarán.",
+        "CEI": "perché lo Spirito Santo vi insegnerà in quel momento ciò che bisogna dire\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Καὶ ἔσεσθε μισούμενοι ὑπὸ πάντων διὰ τὸ ὄνομά μου· ὁ δὲ ὑπομείνας εἰς τέλος, οὗτος σωθήσεται.",
+        "VUL": "Et eritis odio omnibus propter nomen meum. Qui autem sustinuerit in finem, hic salvus erit.",
+        "SYN": "И будете ненавидимы всеми за имя Мое; претерпевший же до конца спасется.",
+        "NEO": "Et vous serez en haine à tous à cause de mon nom. Mais celui qui persévérera jusqu’à la fin sera sauvé.",
+        "NAB": "You will be hated by all because of my name. But the one who perseveres to the end will be saved.",
+        "VAT_ES": "Serán odiados por todos a causa de mi Nombre, pero el que persevere hasta el fin, se salvará.",
+        "CEI": "Uno della folla gli disse: \"Maestro, dì a mio fratello che divida con me l'eredità\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "¶Ὅταν δὲ ἴδητε τὸ βδέλυγμα τῆς ἐρημώσεως, τὸ ῥηθὲν ὑπὸ Δανιὴλ τοῦ προφήτου, ἑστὼς ὅπου οὐ δεῖ- ὁ ἀναγινώσκων νοείτω- τότε οἱ ἐν τῇ Ἰουδαίᾳ φευγέτωσαν εἰς τὰ ὄρη·",
+        "VUL": "Cum autem videritis abominationem desolationis stantem, ubi non debet, qui legit, intelligat : tunc qui in Judæa sunt, fugiant in montes :",
+        "SYN": "Когда же увидите мерзость запустения, реченную пророком Даниилом, стоящую, где не должно, -- читающий да разумеет, -- тогда находящиеся в Иудее да бегут в горы;",
+        "NEO": "Lorsque vous verrez l’abomination de la désolation*+ 13:14 Dan 8,13; 9,27; 11,31; 12,11; Isa 13,9-10; Joe 3,15* établie où elle ne doit pas être, — que celui qui lit, comprenne ! — alors que ceux qui seront en Judée s’enfuient dans les montagnes.",
+        "NAB": "\"When you see the desolating abomination standing where he should not (let the reader understand), then those in Judea must flee to the mountains,",
+        "VAT_ES": "Cuando vean la Abominación de la desolación usurpando el lugar que no le corresponde –el que lea esto, entiéndalo bien– los que estén en Judea, que se refugien en las montañas;",
+        "CEI": "Ma egli rispose: \"O uomo, chi mi ha costituito giudice o mediatore sopra di voi?\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "ὁ δὲ ἐπὶ τοῦ δώματος μὴ καταβάτω εἰς τὴν οἰκίαν, μηδὲ εἰσελθέτω ἆραί τι ἐκ τῆς οἰκίας αὐτοῦ·",
+        "VUL": "et qui super tectum, ne descendat in domum, nec introëat ut tollat quid de domo sua :",
+        "SYN": "а кто на кровле, тот не сходи в дом и не входи взять что-- нибудь из дома своего;",
+        "NEO": "Que celui qui sera sur le toit ne descende pas dans sa maison, et n’y entre pas pour prendre quelque objet.",
+        "NAB": "(and) a person on a housetop must not go down or enter to get anything out of his house,",
+        "VAT_ES": "el que esté en la azotea de su casa, no baje a buscar sus cosas;",
+        "CEI": "E disse loro: \"Guardatevi e tenetevi lontano da ogni cupidigia, perché anche se uno è nell'abbondanza la sua vita non dipende dai suoi beni\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "καὶ ὁ εἰς τὸν ἀγρὸν ὢν μὴ ἐπιστρεψάτω εἰς τὰ ὀπίσω, ἆραι τὸ ἱμάτιον αὐτοῦ.",
+        "VUL": "et qui in agro erit, non revertatur retro tollere vestimentum suum.",
+        "SYN": "и кто на поле, не обращайся назад взять одежду свою.",
+        "NEO": "Et que celui qui sera allé dans son champ ne revienne pas pour prendre son manteau.",
+        "NAB": "and a person in a field must not return to get his cloak.",
+        "VAT_ES": "y el que esté en el campo, que no vuelva atrás a buscar su manto.",
+        "CEI": "Disse poi una parabola: \"La campagna di un uomo ricco aveva dato un buon raccolto."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Οὐαὶ δὲ ταῖς ἐν γαστρὶ ἐχούσαις καὶ ταῖς θηλαζούσαις ἐν ἐκείναις ταῖς ἡμέραις.",
+        "VUL": "Væ autem prægnantibus et nutrientibus in illis diebus.",
+        "SYN": "Горе беременным и питающим сосцами в те дни.",
+        "NEO": "Mais malheur aux femmes qui seront enceintes, ou qui allaiteront en ces jours-là !",
+        "NAB": "Woe to pregnant women and nursing mothers in those days.",
+        "VAT_ES": "&iexcl;Ay de las mujeres que estén embarazadas o tengan niños de pecho en aquellos días!",
+        "CEI": "Egli ragionava tra sé: Che farò, poiché non ho dove riporre i miei raccolti?"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Προσεύχεσθε δὲ ἵνα μὴ γένηται ἡ φυγὴ ὑμῶν χειμῶνος.",
+        "VUL": "Orate vero ut hieme non fiant.",
+        "SYN": "Молитесь, чтобы не случилось бегство ваше зимою.",
+        "NEO": "Priez pour que ces choses n’arrivent pas en hiver.",
+        "NAB": "Pray that this does not happen in winter.",
+        "VAT_ES": "Rueguen para que no suceda en invierno.",
+        "CEI": "E disse: Farò così: demolirò i miei magazzini e ne costruirò di più grandi e vi raccoglierò tutto il grano e i miei beni."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ἔσονται γὰρ αἱ ἡμέραι ἐκεῖναι θλίψις, οἵα οὐ γέγονεν τοιαύτη ἀπ’ ἀρχῆς κτίσεως ἧς ἔκτισεν ὁ θεὸς ἕως τοῦ νῦν, καὶ οὐ μὴ γένηται.",
+        "VUL": "Erunt enim dies illi tribulationes tales quales non fuerunt ab initio creaturæ, quam condidit Deus usque nunc, neque fient.",
+        "SYN": "Ибо в те дни будет такая скорбь, какой не было от начала творения, которое сотворил Бог, даже доныне, и не будет.",
+        "NEO": "Car il y aura, en ces jours, des tribulations telles qu’il n’y en a pas eu depuis le commencement du monde, que Dieu a créé, jusqu’à présent, et qu’il n’y en aura jamais.",
+        "NAB": "For those times will have tribulation such as has not been since the beginning of God's creation until now, nor ever will be.",
+        "VAT_ES": "Porque habrá entonces una gran tribulación, como no la hubo desde el comienzo del mundo hasta ahora, ni la habrá jamás.",
+        "CEI": "Poi dirò a me stesso: Anima mia, hai a disposizione molti beni, per molti anni; riposati, mangia, bevi e datti alla gioia."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Καὶ εἰ μὴ κύριος ἐκολόβωσεν τὰς ἡμέρας, οὐκ ἂν ἐσώθη πᾶσα σάρξ· ἀλλὰ διὰ τοὺς ἐκλεκτούς, οὓς ἐξελέξατο, ἐκολόβωσεν τὰς ἡμέρας.",
+        "VUL": "Et nisi breviasset Dominus dies, non fuisset salva omnis caro : sed propter electos, quos elegit, breviavit dies.",
+        "SYN": "И если бы Господь не сократил тех дней, то не спаслась бы никакая плоть; но ради избранных, которых Он избрал, сократил те дни.",
+        "NEO": "Et si le Seigneur n’avait abrégé ces jours, nul homme ne serait sauvé ; mais il les a abrégés à cause des élus qu’il a choisis.",
+        "NAB": "If the Lord had not shortened those days, no one would be saved; but for the sake of the elect whom he chose, he did shorten the days.",
+        "VAT_ES": "Y si el Señor no abreviara ese tiempo, nadie se salvaría; pero lo abreviará a causa de los elegidos.",
+        "CEI": "Ma Dio gli disse: Stolto, questa notte stessa ti sarà richiesta la tua vita. E quello che hai preparato di chi sarà?"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Τότε ἐάν τις ὑμῖν εἴπῃ, Ἰδού, ὧδε ὁ χριστός, ἢ Ἰδού, ἐκεῖ, μὴ πιστεύετε.",
+        "VUL": "Et tunc si quis vobis dixerit : Ecce hic est Christus, ecce illic, ne credideritis.",
+        "SYN": "Тогда, если кто вам скажет: вот, здесь Христос, или: вот, там, -- не верьте.",
+        "NEO": "Si quelqu’un vous dit alors : Le Christ est ici, il est là, ne le croyez pas.",
+        "NAB": "If anyone says to you then, 'Look, here is the Messiah! Look, there he is!' do not believe it.",
+        "VAT_ES": "Si alguien les dice entonces: \"El Mesías está aquí o está allí\", no lo crean.",
+        "CEI": "Così è di chi accumula tesori per sé, e non arricchisce davanti a Dio\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Ἐγερθήσονται γὰρ ψευδόχριστοι καὶ ψευδοπροφῆται, καὶ δώσουσιν σημεῖα καὶ τέρατα, πρὸς τὸ ἀποπλανᾷν, εἰ δυνατόν, καὶ τοὺς ἐκλεκτούς.",
+        "VUL": "Exsurgent enim pseudochristi et pseudoprophetæ, et dabunt signa et portenta ad seducendos, si fieri potest, etiam electos.",
+        "SYN": "Ибо восстанут лжехристы и лжепророки и дадут знамения и чудеса, чтобы прельстить, если возможно, и избранных.",
+        "NEO": "Car il s’élèvera de faux christs et de faux prophètes, et ils feront des signes et des prodiges, jusqu’à séduire, s’il se pouvait, les élus mêmes.",
+        "NAB": "False messiahs and false prophets will arise and will perform signs and wonders in order to mislead, if that were possible, the elect.",
+        "VAT_ES": "Porque aparecerán falsos mesías y falsos profetas que harán milagros y prodigios capaces de engañar, si fuera posible, a los mismos elegidos.",
+        "CEI": "Poi disse ai discepoli: \"Per questo io vi dico: Non datevi pensiero per la vostra vita, di quello che mangerete; né per il vostro corpo, come lo vestirete."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Ὑμεῖς δὲ βλέπετε· ἰδού, προείρηκα ὑμῖν πάντα.",
+        "VUL": "Vos ergo videte : ecce prædixi vobis omnia.",
+        "SYN": "Вы же берегитесь. Вот, Я наперед сказал вам все.",
+        "NEO": "Pour vous, prenez garde ! Voyez, je vous ai tout annoncé d’avance.",
+        "NAB": "Be watchful! I have told it all to you beforehand.",
+        "VAT_ES": "Pero ustedes tengan cuidado: yo los he prevenido de todo.",
+        "CEI": "La vita vale più del cibo e il corpo più del vestito."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "¶Ἀλλ’ ἐν ἐκείναις ταῖς ἡμέραις, μετὰ τὴν θλίψιν ἐκείνην, ὁ ἥλιος σκοτισθήσεται, καὶ ἡ σελήνη οὐ δώσει τὸ φέγγος αὐτῆς,",
+        "VUL": "Sed in illis diebus, post tribulationem illam, sol contenebrabitur, et luna non dabit splendorem suum :",
+        "SYN": "Но в те дни, после скорби той, солнце померкнет, и луна не даст света своего,",
+        "NEO": "Mais en ces jours-là, après cette tribulation, le soleil s’obscurcira, la lune ne donnera plus sa lumière*,",
+        "NAB": "\"But in those days after that tribulation the sun will be darkened, and the moon will not give its light,",
+        "VAT_ES": "En ese tiempo, después de esta tribulación, el sol se oscurecerá, la luna dejará de brillar,",
+        "CEI": "Guardate i corvi: non seminano e non mietono, non hanno ripostiglio né granaio, e Dio li nutre. Quanto più degli uccelli voi valete!"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "καὶ οἱ ἀστέρες τοῦ οὐρανοῦ ἔσονται ἐκπίπτοντες, καὶ αἱ δυνάμεις αἱ ἐν τοῖς οὐρανοῖς σαλευθήσονται.",
+        "VUL": "et stellæ cæli erunt decidentes, et virtutes, quæ in cælis sunt, movebuntur.",
+        "SYN": "и звезды спадут с неба, и силы небесные поколеблются.",
+        "NEO": "les étoiles du ciel tomberont, et les puissances qui sont dans les cieux seront ébranlées*.",
+        "NAB": "and the stars will be falling from the sky, and the powers in the heavens will be shaken.",
+        "VAT_ES": "las estrellas caerán del cielo y los astros se conmoverán.",
+        "CEI": "Chi di voi, per quanto si affanni, può aggiungere un'ora sola alla sua vita?"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Καὶ τότε ὄψονται τὸν υἱὸν τοῦ ἀνθρώπου ἐρχόμενον ἐν νεφέλαις μετὰ δυνάμεως πολλῆς καὶ δόξης.",
+        "VUL": "Et tunc videbunt Filium hominis venientem in nubibus cum virtute multa et gloria.",
+        "SYN": "Тогда увидят Сына Человеческого, грядущего на облаках с силою многою и славою.",
+        "NEO": "Alors on verra le Fils de l’homme venir dans les nuées* avec une grande puissance et une grande gloire.",
+        "NAB": "And then they will see 'the Son of Man coming in the clouds' with great power and glory,",
+        "VAT_ES": "Y se verá al Hijo del hombre venir sobre las nubes, lleno de poder y de gloria.",
+        "CEI": "Se dunque non avete potere neanche per la più piccola cosa, perché vi affannate del resto?"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Καὶ τότε ἀποστελεῖ τοὺς ἀγγέλους αὐτοῦ, καὶ ἐπισυνάξει τοὺς ἐκλεκτοὺς αὐτοῦ ἐκ τῶν τεσσάρων ἀνέμων, ἀπ’ ἄκρου γῆς ἕως ἄκρου οὐρανοῦ.",
+        "VUL": "Et tunc mittet angelos suos, et congregabit electos suos a quatuor ventis, a summo terræ usque ad summum cæli.",
+        "SYN": "И тогда Он пошлет Ангелов Своих и соберет избранных Своих от четырех ветров, от края земли до края неба.",
+        "NEO": "Et alors il enverra ses anges rassembler ses élus des quatre vents, de l’extrémité de la terre jusqu’à l’extrémité du ciel*.",
+        "NAB": "and then he will send out the angels and gather (his) elect from the four winds, from the end of the earth to the end of the sky.",
+        "VAT_ES": "Y él enviará a los ángeles para que congreguen a sus elegidos desde los cuatro puntos cardinales, de un extremo al otro del horizonte.",
+        "CEI": "Guardate i gigli, come crescono: non filano, non tessono: eppure io vi dico che neanche Salomone, con tutta la sua gloria, vestiva come uno di loro."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "¶Ἀπὸ δὲ τῆς συκῆς μάθετε τὴν παραβολήν· ὅταν αὐτῆς ἤδη ὁ κλάδος ἁπαλὸς γένηται, καὶ ἐκφύῃ τὰ φύλλα, γινώσκετε ὅτι ἐγγὺς τὸ θέρος ἐστίν·",
+        "VUL": "A ficu autem discite parabolam. Cum jam ramus ejus tener fuerit, et nata fuerint folia, cognoscitis quia in proximo sit æstas :",
+        "SYN": "От смоковницы возьмите подобие: когда ветви ее становятся уже мягки и пускают листья, то знаете, что близко лето.",
+        "NEO": "Écoutez cette comparaison du figuier : Dès que ses rameaux sont tendres et qu’il pousse ses feuilles, vous savez que l’été est proche.",
+        "NAB": "\"Learn a lesson from the fig tree. When its branch becomes tender and sprouts leaves, you know that summer is near.",
+        "VAT_ES": "Aprendan esta comparación, tomada de la higuera: cuando sus ramas se hacen flexibles y brotan las hojas, ustedes se dan cuenta de que se acerca el verano.",
+        "CEI": "Se dunque Dio veste così l'erba del campo, che oggi c'è e domani si getta nel forno, quanto più voi, gente di poca fede?"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "οὕτως καὶ ὑμεῖς, ὅταν ταῦτα ἴδητε γινόμενα, γινώσκετε ὅτι ἐγγύς ἐστιν ἐπὶ θύραις.",
+        "VUL": "sic et vos cum videritis hæc fieri, scitote quod in proximo sit, in ostiis.",
+        "SYN": "Так и когда вы увидите то сбывающимся, знайте, что близко, при дверях.",
+        "NEO": "Ainsi, quand vous verrez ces choses arriver, sachez que le Fils de l’homme est proche, qu’il est à la porte.",
+        "NAB": "In the same way, when you see these things happening, know that he is near, at the gates.",
+        "VAT_ES": "Así también, cuando vean que suceden todas estas cosas, sepan que el fin está cerca, a la puerta.",
+        "CEI": "Non cercate perciò che cosa mangerete e berrete, e non state con l'animo in ansia:"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Ἀμὴν λέγω ὑμῖν ὅτι οὐ μὴ παρέλθῃ ἡ γενεὰ αὕτη, μέχρι οὗ πάντα ταῦτα γένηται.",
+        "VUL": "Amen dico vobis, quoniam non transibit generatio hæc, donec omnia ista fiant.",
+        "SYN": "Истинно говорю вам: не прейдет род сей, как все это будет.",
+        "NEO": "Je vous le dis en vérité, cette génération ne passera pas que tout cela n’arrive.",
+        "NAB": "Amen, I say to you, this generation will not pass away until all these things have taken place.",
+        "VAT_ES": "Les aseguro que no pasará esta generación, sin que suceda todo esto.",
+        "CEI": "di tutte queste cose si preoccupa la gente del mondo; ma il Padre vostro sa che ne avete bisogno."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "Ὁ οὐρανὸς καὶ ἡ γῆ παρελεύσεται, οἱ δὲ λόγοι μου οὐ μὴ παρέλθωσιν.",
+        "VUL": "Cælum et terra transibunt, verba autem mea non transibunt.",
+        "SYN": "Небо и земля прейдут, но слова Мои не прейдут.",
+        "NEO": "Le ciel et la terre passeront, mais mes paroles ne passeront pas.",
+        "NAB": "Heaven and earth will pass away, but my words will not pass away.",
+        "VAT_ES": "El cielo y la tierra pasarán, pero mis palabras no pasarán.",
+        "CEI": "Cercate piuttosto il regno di Dio, e queste cose vi saranno date in aggiunta."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "Περὶ δὲ τῆς ἡμέρας ἐκείνης ἢ ὥρας οὐδεὶς οἶδεν, οὐδὲ οἱ ἄγγελοι οἱ ἐν οὐρανῷ, οὐδὲ ὁ υἱός, εἰ μὴ ὁ πατήρ.",
+        "VUL": "De die autem illo vel hora nemo scit, neque angeli in cælo, neque Filius, nisi Pater.",
+        "SYN": "О дне же том, или часе, никто не знает, ни Ангелы небесные, ни Сын, но только Отец.",
+        "NEO": "Pour ce qui est de ce jour et de cette heure, nul ne les connaît, ni les anges dans le ciel, ni le Fils, mais le Père seul.",
+        "NAB": "\"But of that day or hour, no one knows, neither the angels in heaven, nor the Son, but only the Father.",
+        "VAT_ES": "En cuanto a ese día y a la hora, nadie los conoce, ni los ángeles del cielo, ni el Hijo, nadie sino el Padre.»",
+        "CEI": "Non temere, piccolo gregge, perché al Padre vostro è piaciuto di darvi il suo regno."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Βλέπετε, ἀγρυπνεῖτε καὶ προσεύχεσθε· οὐκ οἴδατε γὰρ πότε ὁ καιρός ἐστιν.",
+        "VUL": "Videte, vigilate, et orate : nescitis enim quando tempus sit.",
+        "SYN": "Смотрите, бодрствуйте, молитесь, ибо не знаете, когда наступит это время.",
+        "NEO": "Prenez garde, veillez et priez ; car vous ne savez pas quand ce sera le moment.",
+        "NAB": "Be watchful! Be alert! You do not know when the time will come.",
+        "VAT_ES": "«Tengan cuidado y estén prevenidos porque no saben cuándo llegará el momento.",
+        "CEI": "Vendete ciò che avete e datelo in elemosina; fatevi borse che non invecchiano, un tesoro inesauribile nei cieli, dove i ladri non arrivano e la tignola non consuma."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "Ὡς ἄνθρωπος ἀπόδημος ἀφεὶς τὴν οἰκίαν αὐτοῦ, καὶ δοὺς τοῖς δούλοις αὐτοῦ τὴν ἐξουσίαν, καὶ ἑκάστῳ τὸ ἔργον αὐτοῦ, καὶ τῷ θυρωρῷ ἐνετείλατο ἵνα γρηγορῇ.",
+        "VUL": "Sicut homo qui peregre profectus reliquit domum suam, et dedit servis suis potestatem cujusque operis, et janitori præcepit ut vigilet,",
+        "SYN": "Подобно как бы кто, отходя в путь и оставляя дом свой, дал слугам своим власть и каждому свое дело, и приказал привратнику бодрствовать.",
+        "NEO": "C’est ainsi qu’un homme, ayant laissé sa maison pour aller en voyage, après avoir remis l’autorité à ses serviteurs et assigné à chacun sa tâche, commande au portier de veiller.",
+        "NAB": "It is like a man traveling abroad. He leaves home and places his servants in charge, each with his work, and orders the gatekeeper to be on the watch.",
+        "VAT_ES": "Será como un hombre que se va de viaje, deja su casa al cuidado de sus servidores, asigna a cada uno su tarea, y recomienda al portero que permanezca en vela.",
+        "CEI": "Perché dove è il vostro tesoro, là sarà anche il vostro cuore."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "Γρηγορεῖτε οὖν· οὐκ οἴδατε γὰρ πότε ὁ κύριος τῆς οἰκίας ἔρχεται, ὀψέ, ἢ μεσονυκτίου, ἢ ἀλεκτοροφωνίας, ἢ πρωΐ·",
+        "VUL": "vigilate ergo (nescitis enim quando dominus domus veniat : sero, an media nocte, an galli cantu, an mane),",
+        "SYN": "Итак бодрствуйте, ибо не знаете, когда придет хозяин дома: вечером, или в полночь, или в пение петухов, или поутру;",
+        "NEO": "Veillez donc, car vous ne savez pas quand viendra le maître de la maison, le soir, ou au milieu de la nuit, ou au chant du coq, ou le matin ;",
+        "NAB": "Watch, therefore; you do not know when the lord of the house is coming, whether in the evening, or at midnight, or at cockcrow, or in the morning.",
+        "VAT_ES": "Estén prevenidos, entonces, porque no saben cuándo llegará el dueño de casa, si al atardecer, a medianoche, al canto del gallo o por la mañana.",
+        "CEI": "Siate pronti, con la cintura ai fianchi e le lucerne accese;"
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "μὴ ἐλθὼν ἐξαίφνης εὕρῃ ὑμᾶς καθεύδοντας.",
+        "VUL": "ne, cum venerit repente, inveniat vos dormientes.",
+        "SYN": "чтобы, придя внезапно, не нашел вас спящими.",
+        "NEO": "de peur que, survenant tout à coup, il ne vous trouve endormis.",
+        "NAB": "May he not come suddenly and find you sleeping.",
+        "VAT_ES": "No sea que llegue de improviso y los encuentre dormidos.",
+        "CEI": "siate simili a coloro che aspettano il padrone quando torna dalle nozze, per aprirgli subito, appena arriva e bussa."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "Ἃ δὲ ὑμῖν λέγω πᾶσιν λέγω, Γρηγορεῖτε.",
+        "VUL": "Quod autem vobis dico, omnibus dico : Vigilate.",
+        "SYN": "А что вам говорю, говорю всем: бодрствуйте.",
+        "NEO": "Ce que je vous dis, je le dis à tous : Veillez ! »",
+        "NAB": "What I say to you, I say to all: 'Watch!'\"",
+        "VAT_ES": "Y esto que les digo a ustedes, lo digo a todos: \"&iexcl;Estén prevenidos!\"».",
+        "CEI": "Beati quei servi che il padrone al suo ritorno troverà ancora svegli; in verità vi dico, si cingerà le sue vesti, li farà mettere a tavola e passerà a servirli."
+      }
+    }
+  }
+}

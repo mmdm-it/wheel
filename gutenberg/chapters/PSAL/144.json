@@ -1,0 +1,284 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_144",
+  "book_key": "PSAL",
+  "sequence": 144,
+  "chapter_in": {
+    "MT": 144,
+    "VUL": 143,
+    "LXX": 143
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לְ/דָוִ֨ד בָּ֘ר֤וּךְ יְהוָ֨ה צוּרִ֗/י הַֽ/מְלַמֵּ֣ד יָדַ֣/י לַ/קְרָ֑ב אֶ֝צְבְּעוֹתַ֗/י לַ/מִּלְחָמָֽה׃",
+        "LXX": "Αἴνεσις τοῦ Δαυείδ. Ὑψώσω σε, ὁ θεός μου ὁ βασιλεύς μου, καὶ εὐλογήσω τὸ ὄνομά σου εἰς τὸν αἰῶνα καὶ εἰς τὸν αἰῶνα τοῦ αἰῶνος·",
+        "VUL": "Laudatio ipsi David. [Exaltabo te, Deus meus rex,/ et benedicam nomini tuo in sæculum, et in sæculum sæculi./",
+        "SYN": "Буду превозносить Тебя, Боже мой, Царь [мой], и благословлять имя Твое во веки и веки.",
+        "NEO": "De David.",
+        "NAB": "Of David. Blessed be the LORD, my rock, who trains my hands for battle, my fingers for war;",
+        "CEI": "Di Davide. Benedetto il Signore, mia roccia, che addestra le mie mani alla guerra, le mie dita alla battaglia."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "חַסְדִּ֥/י וּ/מְצוּדָתִ/י֮ מִשְׂגַּבִּ֪/י וּֽ/מְפַלְטִ֫/י לִ֥/י מָ֭גִנִּ/י וּ/ב֣/וֹ חָסִ֑יתִי הָ/רוֹדֵ֖ד עַמִּ֣/י תַחְתָּֽ/י׃",
+        "LXX": "καθ’ ἑκάστην ἡμέραν εὐλογήσω σε, καὶ αἰνέσω τὸ ὄνομά σου.",
+        "VUL": "Per singulos dies benedicam tibi,/ et laudabo nomen tuum in sæculum, et in sæculum sæculi./",
+        "SYN": "Всякий день буду благословлять Тебя и восхвалять имя Твое во веки и веки.",
+        "NEO": "mon bienfaiteur et ma forteresse, ma haute retraite et mon libérateur, mon bouclier, celui qui est mon refuge, qui range mon peuple sous moi !",
+        "NAB": "My safe guard and my fortress, my stronghold, my deliverer, My shield, in whom I trust, who subdues peoples under me.",
+        "VAT_ES": "El es mi bienhechor y mi fortaleza,",
+        "CEI": "Mia grazia e mia fortezza, mio rifugio e mia liberazione, mio scudo in cui confido, colui che mi assoggetta i popoli."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "יְֽהוָ֗ה מָה אָ֭דָם וַ/תֵּדָעֵ֑/הוּ בֶּן אֱ֝נ֗וֹשׁ וַֽ/תְּחַשְּׁבֵֽ/הוּ׃",
+        "LXX": "μέγας ὁ κύριος καὶ αἰνετὸς σφόδρα, καὶ τῆς μεγαλωσύνης αὐτοῦ οὐκ ἔστιν πέρας.",
+        "VUL": "Magnus Dominus, et laudabilis nimis,/ et magnitudinis ejus non est finis./",
+        "SYN": "Велик Господь и достохвален, и величие Его неисследимо.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, qu’est-ce que l’homme pour que tu le connaisses, le fils de l’homme, pour que tu prennes garde à lui ?",
+        "NAB": "LORD, what are mortals that you notice them; human beings, that you take thought of them?",
+        "VAT_ES": "Señor, &iquest;qué es el hombre para que tú lo cuides,",
+        "CEI": "Signore, che cos'è un uomo perché te ne curi? Un figlio d'uomo perché te ne dia pensiero?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אָ֭דָם לַ/הֶ֣בֶל דָּמָ֑ה יָ֝מָ֗י/ו כְּ/צֵ֣ל עוֹבֵֽר׃",
+        "LXX": "γενεὰ καὶ γενεὰ ἐπαινέσει τὰ ἔργα σου, καὶ τὴν δύναμίν σου ἀπαγγελοῦσιν·",
+        "VUL": "Generatio et generatio laudabit opera tua,/ et potentiam tuam pronuntiabunt./",
+        "SYN": "Род роду будет восхвалять дела Твои и возвещать о могуществе Твоем.",
+        "NEO": "L’homme est semblable à un souffle, ses jours sont comme l’ombre qui passe.",
+        "NAB": "They are but a breath; their days are like a passing shadow.",
+        "VAT_ES": "El hombre es semejante a un soplo,",
+        "CEI": "L'uomo è come un soffio, i suoi giorni come ombra che passa."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "יְ֭הוָה הַט שָׁמֶ֣י/ךָ וְ/תֵרֵ֑ד גַּ֖ע בֶּ/הָרִ֣ים וְֽ/יֶעֱשָֽׁנוּ׃",
+        "LXX": "καὶ τὴν μεγαλοπρέπειαν τῆς δόξης τῆς ἁγιωσύνης σου λαλήσουσιν, καὶ τὰ θαυμάσιά σου διηγήσονται·",
+        "VUL": "Magnificentiam gloriæ sanctitatis tuæ loquentur,/ et mirabilia tua narrabunt./",
+        "SYN": "А я буду размышлять о высокой славе величия Твоего и о дивных делах Твоих.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, abaisse tes cieux et descends ; touche les montagnes, et qu’elles s’embrasent ;",
+        "NAB": "LORD, incline your heavens and come; touch the mountains and make them smoke.",
+        "VAT_ES": "Inclina tu cielo, Señor, y desciende;",
+        "CEI": "Signore, piega il tuo cielo e scendi, tocca i monti ed essi fumeranno."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בְּר֣וֹק בָּ֭רָק וּ/תְפִיצֵ֑/ם שְׁלַ֥ח חִ֝צֶּ֗י/ךָ וּ/תְהֻמֵּֽ/ם׃",
+        "LXX": "καὶ τὴν δύναμιν τῶν φοβερῶν σου ἐροῦσιν, καὶ τὴν μεγαλωσύνην σου, διηγήσομαι αὐτήν, καὶ τὴν δυναστείαν σου λαλήσουσιν.",
+        "VUL": "Et virtutem terribilium tuorum dicent,/ et magnitudinem tuam narrabunt./",
+        "SYN": "Будут говорить о могуществе страшных дел Твоих, и я буду возвещать о величии Твоем.",
+        "NEO": "fais briller les éclairs, et disperse les ennemis ; lance tes flèches, et mets-les en déroute.",
+        "NAB": "Flash forth lightning and scatter my foes; shoot your arrows and rout them.",
+        "VAT_ES": "Lanza un rayo y dispersa a tus enemigos,",
+        "CEI": "Le tue folgori disperdano i nemici, lancia frecce, sconvolgili."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "שְׁלַ֥ח יָדֶ֗י/ךָ מִ/מָּ֫ר֥וֹם פְּצֵ֣/נִי וְ֭/הַצִּילֵ/נִי מִ/מַּ֣יִם רַבִּ֑ים מִ֝/יַּ֗ד בְּנֵ֣י נֵכָֽר׃",
+        "LXX": "μνήμην τοῦ πλήθους τῆς χρηστότητός σου ἐξερεύξονται, καὶ τῇ δικαιοσύνῃ σου ἀγαλλιάσονται.",
+        "VUL": "Memoriam abundantiæ suavitatis tuæ eructabunt,/ et justitia tua exsultabunt./",
+        "SYN": "Будут провозглашать память великой благости Твоей и воспевать правду Твою.",
+        "NEO": "Etends tes mains d’en haut, délivre-moi et sauve-moi des grandes eaux, de la main des fils de l’étranger,",
+        "NAB": "Reach out your hand from on high; deliver me from the many waters; rescue me from the hands of foreign foes.",
+        "VAT_ES": "Extiende tu mano desde lo alto,",
+        "CEI": "Stendi dall'alto la tua mano, scampami e salvami dalle grandi acque, dalla mano degli stranieri."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֣ר פִּ֭י/הֶם דִּבֶּר שָׁ֑וְא וִֽ֝/ימִינָ֗/ם יְמִ֣ין שָֽׁקֶר׃",
+        "LXX": "οἰκτίρμων καὶ ἐλεήμων ὁ κύριος, μακρόθυμος καὶ πολυέλεος·",
+        "VUL": "Miserator et misericors Dominus :/ patiens, et multum misericors./",
+        "SYN": "Щедр и милостив Господь, долготерпелив и многомилостив.",
+        "NEO": "dont la bouche profère le mensonge, et dont la droite est une droite parjure.",
+        "NAB": "Their mouths speak untruth; their right hands are raised in lying oaths.",
+        "VAT_ES": "que dicen mentiras con la boca",
+        "CEI": "La loro bocca dice menzogne e alzando la destra giurano il falso."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אֱֽלֹהִ֗ים שִׁ֣יר חָ֭דָשׁ אָשִׁ֣ירָה לָּ֑/ךְ בְּ/נֵ֥בֶל עָ֝שׂ֗וֹר אֲזַמְּרָה לָּֽ/ךְ׃",
+        "LXX": "χρηστὸς Κύριος τοῖς ὑπομένουσιν, καὶ οἱ οἰκτειρμοὶ αὐτοῦ ἐπὶ πάντα τὰ ἔργα αὐτοῦ.",
+        "VUL": "Suavis Dominus universis,/ et miserationes ejus super omnia opera ejus./",
+        "SYN": "Благ Господь ко всем, и щедроты Его на всех делах Его.",
+        "NEO": "O Dieu, je te chanterai un cantique nouveau, je te célébrerai sur le luth à dix cordes.",
+        "NAB": "O God, a new song I will sing to you; on a ten-stringed lyre I will play for you.",
+        "VAT_ES": "Dios mío, yo quiero cantarte un canto nuevo",
+        "CEI": "Mio Dio, ti canterò un canto nuovo, suonerò per te sull'arpa a dieci corde;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "הַ/נּוֹתֵ֥ן תְּשׁוּעָ֗ה לַ/מְּלָ֫כִ֥ים הַ֭/פּוֹצֶה אֶת דָּוִ֥ד עַבְדּ֗/וֹ מֵ/חֶ֥רֶב רָעָֽה׃",
+        "LXX": "ἐξομολογησάσθωσάν σοι, Κύριε, πάντα τὰ ἔργα σου, καὶ οἱ ὅσιοί σου εὐλογησάτωσάν σε·",
+        "VUL": "Confiteantur tibi, Domine, omnia opera tua,/ et sancti tui benedicant tibi./",
+        "SYN": "Да славят Тебя, Господи, все дела Твои, и да благословляют Тебя святые Твои;",
+        "NEO": "Toi qui donnes aux rois la victoire, qui sauves du glaive meurtrier David, ton serviteur,",
+        "NAB": "You give victory to kings; you delivered David your servant. From the menacing sword",
+        "VAT_ES": "porque tú das la victoria a los reyes",
+        "CEI": "a te, che dai vittoria al tuo consacrato, che liberi Davide tuo servo. Salvami dalla spada iniqua,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "פְּצֵ֥/נִי וְ/הַצִּילֵ/נִי֮ מִ/יַּ֪ד בְּֽנֵי נֵ֫כָ֥ר אֲשֶׁ֣ר פִּ֭י/הֶם דִּבֶּר שָׁ֑וְא וִֽ֝/ימִינָ֗/ם יְמִ֣ין שָֽׁקֶר׃",
+        "LXX": "δόξαν τῆς βασιλείας σου ἐροῦσιν, καὶ τὴν δυναστείαν σου λαλήσουσιν,",
+        "VUL": "Gloriam regni tui dicent,/ et potentiam tuam loquentur :/",
+        "SYN": "да проповедуют славу царства Твоего, и да повествуют о могуществе Твоем,",
+        "NEO": "délivre-moi et sauve-moi de la main des fils de l’étranger, dont la bouche profère le mensonge, et dont la droite est une droite parjure.",
+        "NAB": "deliver me; rescue me from the hands of foreign foes. Their mouths speak untruth; their right hands are raised in lying oaths.",
+        "VAT_ES": "sálvame del poder de los extranjeros,",
+        "CEI": "liberami dalla mano degli stranieri; la loro bocca dice menzogne e la loro destra giura il falso."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֤ר בָּנֵ֨י/נוּ כִּ/נְטִעִים֮ מְגֻדָּלִ֪ים בִּֽ/נְעוּרֵ֫י/הֶ֥ם בְּנוֹתֵ֥י/נוּ כְ/זָוִיֹּ֑ת מְ֝חֻטָּב֗וֹת תַּבְנִ֥ית הֵיכָֽל׃",
+        "LXX": "τοῦ γνωρίσαι τοῖς υἱοῖς τῶν ἀνθρώπων τὴν δυναστείαν σου καὶ τὴν δόξαν τῆς μεγαλοπρεπείας τῆς βασιλείας σου.",
+        "VUL": "ut notam faciant filiis hominum potentiam tuam,/ et gloriam magnificentiæ regni tui./",
+        "SYN": "чтобы дать знать сынам человеческим о могуществе Твоем и о славном величии царства Твоего.",
+        "NEO": "Que nos fils, comme des plants vigoureux, grandissent en leur jeunesse ! Que nos filles soient comme les colonnes angulaires, sculptées à la façon de celles d’un temple !+ 144:12 Probablement un fragment pris ailleurs (non dans la Bible) et introduit ici pour indiquer le bonheur qui doit suivre le triomphe définitif. — \\+it Nos fils…\\+it* Dans LXX et Vulg., tous les pronoms sont à la 3 \\+sup e\\+sup* pers. : \\+it leurs fils, leurs filles,\\+it* etc. — LXX et Vulg. : 12. \\+it Leurs fils sont comme de nouvelles plantes dans leur jeunesse, leurs filles sont parées et ornées à la manière d’un temple. 13. Leurs greniers sont pleins, débordent de l’un dans l’autre. Leurs brebis sont fécondes, innombrables quand elles sortent\\+it* (du bercail). \\+it 14. Leurs génisses sont grasses. Il n’y a pas de ruine à leur mur, ni de brèche ; pas de clameur dans leurs places. 15. Ils proclament heureux le peuple qui jouit de ces biens. Heureux le peuple qui a le Seigneur pour son Dieu !\\+it* Comme on le voit, dans les LXX et la Vulg., le bonheur matériel de l’ennemi est opposé au bonheur du peuple choisi qui honore le vrai Dieu.*",
+        "NAB": "May our sons be like plants well nurtured from their youth, Our daughters, like carved columns, shapely as those of the temple.",
+        "VAT_ES": "Que nuestros hijos sean como plantas,",
+        "CEI": "I nostri figli siano come piante cresciute nella loro giovinezza; le nostre figlie come colonne d'angolo nella costruzione del tempio."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "מְזָוֵ֣י/נוּ מְלֵאִים֮ מְפִיקִ֥ים מִ/זַּ֗ן אֶ֫ל זַ֥ן צֹאונֵ֣/נוּ מַ֭אֲלִיפוֹת מְרֻבָּב֗וֹת בְּ/חוּצוֹתֵֽי/נוּ׃",
+        "LXX": "ἡ βασιλεία σου βασιλεία πάντων τῶν αἰώνων, καὶ ἡ δεσποτία σου ἐν πάσῃ γενεᾷ καὶ γενεᾷ.",
+        "VUL": "Regnum tuum regnum omnium sæculorum ;/ et dominatio tua in omni generatione et generationem./ Fidelis Dominus in omnibus verbis suis,/ et sanctus in omnibus operibus suis./",
+        "SYN": "Царство Твое - царство всех веков, и владычество Твое во все роды. [Верен Господь во всех словах Своих и свят во всех делах Своих.]",
+        "NEO": "Que nos greniers soient remplis, et regorgent de toutes sortes de provisions ! Que nos brebis, dans nos pâturages, se multiplient par milliers et par myriades !",
+        "NAB": "May our barns be full with every kind of store. May our sheep increase by thousands, by tens of thousands in our fields; may our oxen be well fattened.",
+        "VAT_ES": "Que nuestros graneros estén repletos",
+        "CEI": "I nostri granai siano pieni, trabocchino di frutti d'ogni specie; siano a migliaia i nostri greggi, a mirìadi nelle nostre campagne;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אַלּוּפֵ֗י/נוּ מְֽסֻבָּ֫לִ֥ים אֵֽין פֶּ֭רֶץ וְ/אֵ֣ין יוֹצֵ֑את וְ/אֵ֥ין צְ֝וָחָ֗ה בִּ/רְחֹבֹתֵֽי/נוּ׃",
+        "LXX": "πιστὸς Κύριος ἐν τοῖς λόγοις αὐτοῦ, καὶ ὅσιος ἐν πᾶσι τοῖς ἔργοις αὐτοῦ· ὑποστηρίζει Κύριος πάντας τοὺς καταπίπτοντας, καὶ ἀνορθοῖ πάντας τοὺς κατερραγμένους.",
+        "VUL": "Allevat Dominus omnes qui corruunt,/ et erigit omnes elisos./",
+        "SYN": "Господь поддерживает всех падающих и восставляет всех низверженных.",
+        "NEO": "Que nos génisses+ 144:14 \\+it Génisses… fécondes\\+it*. Ou bien, \\+it bœufs chargés des fardeaux de la moisson\\+it*.* soient fécondes !",
+        "NAB": "May there be no breach in the walls, no exile, no outcry in our streets.",
+        "VAT_ES": "Que nuestros bueyes estén bien cargados,",
+        "CEI": "siano carichi i nostri buoi. Nessuna breccia, nessuna incursione, nessun gemito nelle nostre piazze."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אַשְׁרֵ֣י הָ֭/עָם שֶׁ/כָּ֣כָה לּ֑/וֹ אַֽשְׁרֵ֥י הָ֝/עָ֗ם שֶׁ/יֲהוָ֥ה אֱלֹהָֽי/ו׃",
+        "LXX": "οἱ ὀφθαλμοὶ πάντων εἰς σὲ ἐλπίζουσιν, καὶ σὺ δίδως τὴν τροφὴν αὐτῶν ἐν εὐκαιρίᾳ·",
+        "VUL": "Oculi omnium in te sperant, Domine,/ et tu das escam illorum in tempore opportuno./",
+        "SYN": "Очи всех уповают на Тебя, и Ты даешь им пищу их в свое время;",
+        "NEO": "Heureux le peuple qui jouit de ces biens ! Heureux le peuple dont \\+w Yahweh|strong=\"H3068\"\\+w** est le Dieu !",
+        "NAB": "Happy the people so blessed; happy the people whose God is the LORD.",
+        "VAT_ES": "&iexcl;Feliz el pueblo que tiene todo esto,",
+        "CEI": "Beato il popolo che possiede questi beni: beato il popolo il cui Dio è il Signore."
+      }
+    }
+  }
+}

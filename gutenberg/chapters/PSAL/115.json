@@ -1,0 +1,314 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_115",
+  "book_key": "PSAL",
+  "sequence": 115,
+  "chapter_in": {
+    "MT": 115,
+    "VUL": 113,
+    "LXX": 113
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לֹ֤א לָ֥/נוּ יְהוָ֗ה לֹ֫א לָ֥/נוּ כִּֽי לְ֭/שִׁמְ/ךָ תֵּ֣ן כָּב֑וֹד עַל חַ֝סְדְּ/ךָ֗ עַל אֲמִתֶּֽ/ךָ׃",
+        "LXX": "Ἁλληλουιά. Ἐπίστευσα, διὸ ἐλάλησα· ἐγὼ δὲ ἐταπεινώθην σφόδρα.",
+        "VUL": "Alleluja. [Credidi, propter quod locutus sum ;/ ego autem humiliatus sum nimis./",
+        "SYN": "Я веровал, и потому говорил: я сильно сокрушен.",
+        "NEO": "Non pas à nous, \\+w Yahweh|strong=\"H3068\"\\+w**, non pas à nous, mais à ton nom donne la gloire, à cause de ta bonté, à cause de ta fidélité !",
+        "NAB": "Not to us, LORD, not to us but to your name give glory because of your faithfulness and love.",
+        "VAT_ES": "No nos glorifiques a nosotros, Señor:",
+        "CEI": "Non a noi, Signore, non a noi, ma al tuo nome dà gloria, per la tua fedeltà, per la tua grazia."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "לָ֭/מָּה יֹאמְר֣וּ הַ/גּוֹיִ֑ם אַיֵּה נָ֝֗א אֱלֹהֵי/הֶֽם׃",
+        "LXX": "ἐγὼ εἶπα ἐν τῇ ἐκστάσει μου Πᾶς ἄνθρωπος ψεύστης.",
+        "VUL": "Ego dixi in excessu meo :/ Omnis homo mendax./",
+        "SYN": "Я сказал в опрометчивости моей: всякий человек ложь.",
+        "NEO": "Pourquoi les nations diraient-elles : « Où donc est leur Dieu ? »",
+        "NAB": "Why should the nations say, \"Where is their God?\"",
+        "VAT_ES": "&iquest;Por qué han de decir las naciones:",
+        "CEI": "Perché i popoli dovrebbero dire: \"Dov'è il loro Dio?\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וֵֽ/אלֹהֵ֥י/נוּ בַ/שָּׁמָ֑יִם כֹּ֭ל אֲשֶׁר חָפֵ֣ץ עָשָֽׂה׃",
+        "LXX": "τί ἀνταποδώσω τῷ κυρίῳ περὶ ὧν ἀνταπέδωκέν μοι;",
+        "VUL": "Quid retribuam Domino/ pro omnibus quæ retribuit mihi ?/",
+        "SYN": "Что воздам Господу за все благодеяния Его ко мне?",
+        "NEO": "Notre Dieu est dans le ciel ; tout ce qu’il veut, il le fait.",
+        "NAB": "Our God is in heaven; whatever God wills is done.",
+        "VAT_ES": "Nuestro Dios está en el cielo y en la tierra,",
+        "CEI": "Il nostro Dio è nei cieli, egli opera tutto ciò che vuole."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "עֲֽ֭צַבֵּי/הֶם כֶּ֣סֶף וְ/זָהָ֑ב מַ֝עֲשֵׂ֗ה יְדֵ֣י אָדָֽם׃",
+        "LXX": "ποτήριον σωτηρίου λήμψομαι, καὶ τὸ ὄνομα Κυρίου ἐπικαλέσομαι.",
+        "VUL": "Calicem salutaris accipiam,/ et nomen Domini invocabo./",
+        "SYN": "Чашу спасения прииму и имя Господне призову.",
+        "NEO": "Leurs idoles sont de l’argent et de l’or, ouvrage de la main des hommes.",
+        "NAB": "Their idols are silver and gold, the work of human hands.",
+        "VAT_ES": "Los ídolos, en cambio, son plata y oro,",
+        "CEI": "Gli idoli delle genti sono argento e oro, opera delle mani dell'uomo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "פֶּֽה לָ֭/הֶם וְ/לֹ֣א יְדַבֵּ֑רוּ עֵינַ֥יִם לָ֝/הֶ֗ם וְ/לֹ֣א יִרְאֽוּ׃",
+        "VUL": "Vota mea Domino reddam/ coram omni populo ejus./",
+        "SYN": "Обеты мои воздам Господу пред всем народом Его.",
+        "NEO": "Elles ont une bouche, et ne parlent point ; elles ont des yeux, et ne voient point.",
+        "NAB": "They have mouths but do not speak, eyes but do not see.",
+        "VAT_ES": "Tienen boca, pero no hablan,",
+        "CEI": "Hanno bocca e non parlano, hanno occhi e non vedono,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אָזְנַ֣יִם לָ֭/הֶם וְ/לֹ֣א יִשְׁמָ֑עוּ אַ֥ף לָ֝/הֶ֗ם וְ/לֹ֣א יְרִיחֽוּ/ן׃",
+        "LXX": "τίμιος ἐναντίον Κυρίου ὁ θάνατος τῶν ὁσίων αὐτοῦ.",
+        "VUL": "Pretiosa in conspectu Domini/ mors sanctorum ejus./",
+        "SYN": "Дорога в очах Господних смерть святых Его!",
+        "NEO": "Elles ont des oreilles, et n’entendent point ; elles ont des narines, et ne sentent point.",
+        "NAB": "They have ears but do not hear, noses but do not smell.",
+        "VAT_ES": "tienen orejas, pero no oyen,",
+        "CEI": "hanno orecchi e non odono, hanno narici e non odorano."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יְדֵי/הֶ֤ם וְ/לֹ֬א יְמִישׁ֗וּ/ן רַ֭גְלֵי/הֶם וְ/לֹ֣א יְהַלֵּ֑כוּ לֹֽא יֶ֝הְגּ֗וּ בִּ/גְרוֹנָֽ/ם׃",
+        "LXX": "ὦ Κύριε, ἐγὼ δοῦλος σός, ἐγὼ δοῦλος σὸς καὶ υἱὸς τῆς παιδίσκης σου· διέρρηξας τοὺς δεσμούς μου.",
+        "VUL": "O Domine, quia ego servus tuus ;/ ego servus tuus, et filius ancillæ tuæ./ Dirupisti vincula mea :/",
+        "SYN": "О, Господи! я раб Твой, я раб Твой и сын рабы Твоей; Ты разрешил узы мои.",
+        "NEO": "Elles ont des mains, et ne touchent point ; elles ont des pieds, et ne marchent point ; de leur gosier elles ne font entendre aucun son.",
+        "NAB": "They have hands but do not feel, feet but do not walk, and no sound rises from their throats.",
+        "VAT_ES": "Tienen manos, pero no palpan,",
+        "CEI": "Hanno mani e non palpano, hanno piedi e non camminano; dalla gola non emettono suoni."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כְּ֭מוֹ/הֶם יִהְי֣וּ עֹשֵׂי/הֶ֑ם כֹּ֭ל אֲשֶׁר בֹּטֵ֣חַ בָּ/הֶֽם׃",
+        "LXX": "σοὶ θύσω θυσίαν αἰνέσεως·",
+        "VUL": "tibi sacrificabo hostiam laudis,/ et nomen Domini invocabo./",
+        "SYN": "Тебе принесу жертву хвалы, и имя Господне призову.",
+        "NEO": "Qu’ils leur ressemblent ceux qui les font, et quiconque se confie à elles !",
+        "NAB": "Their makers shall be like them, all who trust in them.",
+        "VAT_ES": "Como ellos serán los que los fabrican,",
+        "CEI": "Sia come loro chi li fabbrica e chiunque in essi confida."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "יִ֭שְׂרָאֵל בְּטַ֣ח בַּ/יהוָ֑ה עֶזְרָ֖/ם וּ/מָגִנָּ֣/ם הֽוּא׃",
+        "LXX": "τὰς εὐχάς μου ἀποδώσω τῷ κυρίῳ ἐναντίον παντὸς τοῦ λαοῦ αὐτοῦ,",
+        "VUL": "Vota mea Domino reddam/ in conspectu omnis populi ejus ;/",
+        "SYN": "Обеты мои воздам Господу пред всем народом Его,",
+        "NEO": "Israël, mets ta confiance en \\+w Yahweh|strong=\"H3068\"\\+w** ! Il est leur secours et leur bouclier.",
+        "NAB": "The house of Israel trusts in the LORD, who is their help and shield.",
+        "VAT_ES": "Pueblo de Israel, confía en el Señor:",
+        "CEI": "Israele confida nel Signore: egli è loro aiuto e loro scudo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "בֵּ֣ית אַ֭הֲרֹן בִּטְח֣וּ בַ/יהוָ֑ה עֶזְרָ֖/ם וּ/מָגִנָּ֣/ם הֽוּא׃",
+        "LXX": "ἐν αὐλαῖς οἴκου Κυρίου, ἐν μέσῳ σου, Ἰερουσαλήμ.",
+        "VUL": "in atriis domus Domini,/ in medio tui, Jerusalem.]",
+        "SYN": "во дворах дома Господня, посреди тебя, Иерусалим! Аллилуия.",
+        "NEO": "Maison d’Aaron, mets ta confiance en \\+w Yahweh|strong=\"H3068\"\\+w** ! Il est leur secours et leur bouclier.",
+        "NAB": "The house of Aaron trusts in the LORD, who is their help and shield.",
+        "VAT_ES": "familia de Aarón, confía en el Señor;",
+        "CEI": "Confida nel Signore la casa di Aronne: egli è loro aiuto e loro scudo."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "יִרְאֵ֣י יְ֭הוָה בִּטְח֣וּ בַ/יהוָ֑ה עֶזְרָ֖/ם וּ/מָגִנָּ֣/ם הֽוּא׃",
+        "NEO": "Vous qui craignez \\+w Yahweh|strong=\"H3068\"\\+w**, mettez votre confiance en \\+w Yahweh|strong=\"H3068\"\\+w** ! Il est leur secours et leur bouclier.",
+        "NAB": "Those who fear the LORD trust in the LORD, who is their help and shield.",
+        "VAT_ES": "confíen en el Señor todos los que lo temen:",
+        "CEI": "Confida nel Signore, chiunque lo teme: egli è loro aiuto e loro scudo."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "יְהוָה֮ זְכָרָ֪/נוּ יְבָ֫רֵ֥ךְ יְ֭בָרֵךְ אֶת בֵּ֣ית יִשְׂרָאֵ֑ל יְ֝בָרֵ֗ךְ אֶת בֵּ֥ית אַהֲרֹֽן׃",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** s’est souvenu de nous : il bénira ! Il bénira la maison d’Israël ; il bénira la maison d’Aaron ;",
+        "NAB": "The LORD remembers us and will bless us, will bless the house of Israel, will bless the house of Aaron,",
+        "VAT_ES": "Que el Señor se acuerde de nosotros y nos bendiga:",
+        "CEI": "Il Signore si ricorda di noi, ci benedice: benedice la casa d'Israele, benedice la casa di Aronne."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "יְ֭בָרֵךְ יִרְאֵ֣י יְהוָ֑ה הַ֝/קְּטַנִּ֗ים עִם הַ/גְּדֹלִֽים׃",
+        "NEO": "il bénira ceux qui craignent \\+w Yahweh|strong=\"H3068\"\\+w**, les petits avec les grands.",
+        "NAB": "Will bless those who fear the LORD, small and great alike.",
+        "VAT_ES": "bendiga a los que temen al Señor,",
+        "CEI": "Il Signore benedice quelli che lo temono, benedice i piccoli e i grandi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "יֹסֵ֣ף יְהוָ֣ה עֲלֵי/כֶ֑ם עֲ֝לֵי/כֶ֗ם וְ/עַל בְּנֵי/כֶֽם׃",
+        "NEO": "Que \\+w Yahweh|strong=\"H3068\"\\+w** multiplie sur vous ses faveurs, sur vous et sur vos enfants !",
+        "NAB": "May the LORD increase your number, you and your descendants.",
+        "VAT_ES": "Que el Señor los multiplique,",
+        "CEI": "Vi renda fecondi il Signore, voi e i vostri figli."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "בְּרוּכִ֣ים אַ֭תֶּם לַ/יהוָ֑ה עֹ֝שֵׂ֗ה שָׁמַ֥יִם וָ/אָֽרֶץ׃",
+        "NEO": "Soyez bénis de \\+w Yahweh|strong=\"H3068\"\\+w**, qui a fait les cieux et la terre !",
+        "NAB": "May you be blessed by the LORD, who made heaven and earth.",
+        "VAT_ES": "y sean bendecidos por el Señor,",
+        "CEI": "Siate benedetti dal Signore che ha fatto cielo e terra."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "הַ/שָּׁמַ֣יִם שָׁ֭מַיִם לַ/יהוָ֑ה וְ֝/הָ/אָ֗רֶץ נָתַ֥ן לִ/בְנֵי אָדָֽם׃",
+        "NEO": "Les cieux sont les cieux de \\+w Yahweh|strong=\"H3068\"\\+w**, mais il a donné la terre aux fils de l’homme.",
+        "NAB": "The heavens belong to the LORD, but the earth is given to us.",
+        "VAT_ES": "El cielo pertenece al Señor,",
+        "CEI": "I cieli sono i cieli del Signore, ma ha dato la terra ai figli dell'uomo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "לֹ֣א הַ֭/מֵּתִים יְהַֽלְלוּ יָ֑הּ וְ֝/לֹ֗א כָּל יֹרְדֵ֥י דוּמָֽה׃",
+        "NEO": "Ce ne sont pas les morts qui louent \\+w Yahweh|strong=\"H3068\"\\+w**, ceux qui descendent dans le lieu du silence ;",
+        "NAB": "The dead do not praise the LORD, all those gone down into silence.",
+        "VAT_ES": "Los muertos ya no alaban al Señor,",
+        "CEI": "Non i morti lodano il Signore, né quanti scendono nella tomba."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/אֲנַ֤חְנוּ נְבָ֘רֵ֤ךְ יָ֗הּ מֵֽ/עַתָּ֥ה וְ/עַד עוֹלָ֗ם הַֽלְלוּ יָֽהּ׃",
+        "NEO": "mais nous, nous bénirons \\+w Yahweh|strong=\"H3068\"\\+w**, dès maintenant et à jamais. Alleluia !",
+        "NAB": "It is we who bless the LORD, both now and forever. Hallelujah!",
+        "VAT_ES": "Nosotros, los vivientes, bendecimos al Señor,",
+        "CEI": "Ma noi, i viventi, benediciamo il Signore ora e sempre."
+      }
+    }
+  }
+}

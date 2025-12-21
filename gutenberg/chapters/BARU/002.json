@@ -1,0 +1,610 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "BARU_002",
+  "book_key": "BARU",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "καὶ ἔστησεν Κύριος τὸν λόγον αὐτοῦ ὃν ἐλάλησεν ἐφ’ ἡμᾶς καὶ ἐπὶ τοὺς δικαστὰς ἡμῶν τοὺς δικάσαντας τὸν Ἰσραὴλ καὶ ἐπὶ τοὺς βασιλεῖς ἡμῶν καὶ ἐπὶ τοὺς ἄρχοντας ἡμῶν καὶ ἐπὶ ἄνθρωπον Ἰσραὴλ καὶ Ἰούδα.",
+        "VUL": "[Propter quod statuit Dominus Deus noster verbum suum,/ quod locutus est ad nos,/ et ad judices nostros qui judicaverunt Israël,/ et ad reges nostros, et ad principes nostros,/ et ad omnem Israël et Juda :/",
+        "SYN": "И исполнил Господь слово Свое, которое Он изрек против нас и против судей наших, судивших Израиля, и против царей наших, и против князей наших, и против всякого Израильтянина и Иудея,",
+        "NEO": "C’est pourquoi le Seigneur, notre Dieu, a accompli sa parole, qu’il avait prononcée contre nous, contre nos juges qui ont jugé Israël, contre nos rois, contre nos chefs, et contre tous les hommes d’Israël et de Juda,+ 2:1 Comp. Dan 9, 12-13.*",
+        "NAB": "\"And the LORD fulfilled the warning he had uttered against us: against our judges, who governed Israel, against our kings and princes, and against the men of Israel and Judah.",
+        "VAT_ES": "Por eso el Señor ha cumplido la amenaza que había pronunciado contra nosotros, contra los jueces que gobernaron a Israel, contra nuestros reyes, contra nuestros jefes y contra los hombres de Israel y de Judá.",
+        "CEI": "Per questo il Signore ha adempiuto le sue parole pronunziate contro di noi, contro i nostri giudici che governano Israele, contro i nostri re e contro i nostri principi, contro ogni uomo d'Israele e di Giuda."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "οὐκ ἐποιήθη ὑποκάτω παντὸς τοῦ οὐρανοῦ καθὰ ἐποίησεν ἐν Ἰερουσαλήμ, κατὰ τὰ γεγραμμένα ἐν τῷ νόμῳ Μωυσῆ,",
+        "VUL": "ut adduceret Dominus super nos mala magna,/ quæ non sunt facta sub cælo/ quemadmodum facta sunt in Jerusalem,/ secundum quæ scripta sunt in lege Moysi,/",
+        "SYN": "что Он наведет на нас великие бедствия, каких не бывало под всем небом, как сделал Он в Иерусалиме, по написанному в законе Моисеевом,",
+        "NEO": "nous menaçant* de faire venir sur nous de grandes calamités, telles qu’il n’en a pas existé sous tout le ciel comme il en a existé à Jérusalem, selon ce qui est écrit+ 2:2 \\+it Selon ce qui est écrit\\+it*. Comp. Lev 26, 29 ; Deu 8, 19 ; 27, 14 sv.* dans la loi de Moïse,",
+        "NAB": "He brought down upon us evils so great that there has not been done anywhere under heaven what has been done in Jerusalem, as was written in the law of Moses:",
+        "VAT_ES": "Nunca se hizo bajo el cielo nada semejante a lo que él hizo en Jerusalén, conforme a lo que está escrito en la Ley de Moisés,",
+        "CEI": "Non era mai avvenuto sotto la volta del cielo quello che egli ha compiuto in Gerusalemme, come sta scritto nella legge di Mosè,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "τοῦ φαγεῖν ἡμᾶς ἄνθρωπον σάρκας υἱοῦ αὐτοῦ καὶ ἄνθρωπον σάρκας θυγατρὸς αὐτοῦ. ⸆",
+        "VUL": "ut manducaret homo carnes filii sui et carnes filiæ suæ./",
+        "SYN": "что мы будем есть - один плоть сына своего, а другой - плоть дочери своей.",
+        "NEO": "savoir*, que nous mangerions chacun la chair de son fils, et chacun la chair de sa fille.+ 2:3 Comp. Lam 2, 20 ; 4, 10.*",
+        "NAB": "that one after another of us should eat the flesh of his son or of his daughter.",
+        "VAT_ES": "a tal punto que llegamos a comer, uno la carne de su hijo, y otro la carne de su hija.",
+        "CEI": "fino al punto di mangiarsi uno le carni del figlio e un altro quelle della figlia."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "καὶ ἔδωκεν αὐτοὺς ὑποχειρίους πάσαις ταῖς βασιλείαις ταῖς κύκλῳ ἡμῶν, εἰς ὀνειδισμὸν καὶ ἄβατον ἐν πᾶσι τοῖς λαοῖς τοῖς κύκλῳ οὗ διέσπειρεν αὐτοὺς Κύριος ἐκεῖ.",
+        "VUL": "Et dedit eos sub manu regum omnium qui sunt in circuitu nostro,/ in improperium et in desolationem in omnibus populis/ in quibus nos dispersit Dominus :/",
+        "SYN": "И Он отдал их в подданство всем царствам, которые вокруг нас, на поругание и опустошение всем окрестным народам, между которыми рассеял их Господь.",
+        "NEO": "Et il les a mis sous la main de tous les rois qui nous entourent, pour être un objet* d’opprobre et de stupéfaction, pour tous les peuples au milieu desquels le Seigneur nous a dispersés.",
+        "NAB": "He has made us subject to all the kingdoms round about us, a reproach and a horror among all the nations round about to which the LORD has scattered us.",
+        "VAT_ES": "El los entregó en manos de todos los reinos que nos rodean, para que cayeran en el oprobio y la desolación, entre todos los pueblos de los alrededores donde el Señor los dispersó.",
+        "CEI": "Il Signore li mise in potere di tutti i regni vicini e li rese oggetto di vituperio e di disprezzo per tutti quei popoli in mezzo ai quali li aveva dispersi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "καὶ ἐγενήθησαν ὑποκάτω καὶ οὐκ ἐπάνω, ὅτι ἡμάρτομεν Κυρίῳ θεῷ ἡμῶν πρὸς τὸ μὴ ἀκούειν τῆς φωνῆς αὐτοῦ.",
+        "VUL": "et facti sumus subtus, et non supra,/ quia peccavimus Domino Deo nostro,/ non obaudiendo voci ipsius./",
+        "SYN": "И мы оказались внизу, а не наверху, потому что мы согрешили пред Господом Богом нашим, не слушая гласа Его.",
+        "NEO": "Et nous avons été assujettis au lieu de commander+ 2:5 \\+it Nous avons été assujettis au lieu de commander\\+it* ; m. à m., \\+it nous avons été en bas, et non en haut\\+it*.*, parce que nous avons péché contre le Seigneur, notre Dieu, en n’obéissant pas à sa voix.",
+        "NAB": "We are brought low, not raised up, because we sinned against the LORD, our God, not heeding his voice.",
+        "VAT_ES": "Así quedaron sometidos, en lugar de prevalecer, porque nosotros hemos pecado contra el Señor, nuestro Dios, al no escuchar su voz.",
+        "CEI": "Così ci ha reso schiavi invece di padroni, perché abbiamo offeso il Signore nostro Dio e non abbiamo ascoltato la sua voce."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "Τῷ κυρίῳ θεῷ ἡμῶν ἡ δικαιοσύνη, ἡμῖν δὲ καὶ τοῖς πατράσιν ἡμῶν ἡ αἰσχύνη τῶν προσώπων ὡς ἡ ἡμέρα αὕτη.",
+        "VUL": "Domino Deo nostro justitia,/ nobis autem et patribus nostris confusio faciei,/ sicut est dies hæc :/",
+        "SYN": "У Господа Бога нашего - правда, а у нас и отцов наших - стыд на лицех, как сегодня.",
+        "NEO": "Au Seigneur, notre Dieu, appartient* la justice, à nous et à nos pères la confusion du visage, comme on le voit* en ce jour.",
+        "NAB": "\"Justice is with the LORD, our God; and we, like our fathers, are flushed with shame even today.",
+        "VAT_ES": "Al Señor, nuestro Dios, pertenece la justicia; a nosotros, en cambio, y a nuestros padres la verg&uuml;enza reflejada en el rostro, como sucede en el día de hoy.",
+        "CEI": "Al Signore nostro Dio la giustizia, a noi e ai padri nostri il disonore sul volto, come avviene ancor oggi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "ἃ ἐλάλησεν Κύριος ἐφ’ ἡμᾶς, πάντα τὰ κακὰ ταῦτα ἃ ἦλθεν ἐφ’ ἡμᾶς.",
+        "VUL": "quia locutus est Dominus super nos omnia mala hæc/ quæ venerunt super nos :/",
+        "SYN": "Все те бедствия, какие Господь изрек на нас, постигли нас.",
+        "NEO": "Tous ces maux dont le Seigneur nous avait parlé à notre sujet sont venus sur nous.+ 2:7 *",
+        "NAB": "All the evils of which the LORD had warned us have come upon us:",
+        "VAT_ES": "Todo lo que el Señor había anunciado contra nosotros, todas esas desgracias nos han sobrevenido.",
+        "CEI": "Tutte le calamità che il Signore ci aveva minacciate, ci sono venute addosso."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "καὶ οὐκ ἐδεήθημεν τοῦ προσώπου Κυρίου τοῦ ἀποστρέψαι ἕκαστον ἀπὸ τῶν νοημάτων τῆς καρδίας αὐτῶν τῆς πονηρᾶς.",
+        "VUL": "et non sumus deprecati faciem Domini Dei nostri,/ ut reverteremur unusquisque nostrum a viis nostris pessimis./",
+        "SYN": "Мы не молились пред лицем Господа, чтобы Он отвратил каждого от помышлений злого сердца его.",
+        "NEO": "Et nous n’avons pas prié la face du Seigneur de faire revenir chacun de nous+ 2:8 \\+it De faire revenir chacun de nous\\+it*. Ou bien, \\+it pour que chacun de nous revienne\\+it*.* des pensées de son cœur mauvais.",
+        "NAB": "and we did not plead before the LORD, or turn, each from the figments of his evil heart.",
+        "VAT_ES": "Nosotros no hemos aplacado con nuestras súplicas el rostro del Señor, apartándonos cada uno de los pensamientos de su corazón perverso.",
+        "CEI": "Ma noi non abbiamo placato lo sdegno del Signore, rinunziando ai perversi affetti del nostro cuore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "καὶ ἐγρηγόρησεν Κύριος ἐπὶ τοῖς κακοῖς, καὶ ἐπήγαγε Κύριος ἐφ’ ἡμᾶς, ὅτι δίκαιος ὁ κύριος ἐπὶ πάντα τὰ ἔργα αὐτοῦ ἃ ἐνετείλατο ἡμῖν.",
+        "VUL": "Et vigilavit Dominus in malis,/ et adduxit ea super nos :/ quia justus est Dominus in omnibus operibus suis/ quæ mandavit nobis,/",
+        "SYN": "И Господь наблюдал над сими бедствиями, и навел _их_ Господь на нас, ибо Господь праведен во всем, что заповедал нам.",
+        "NEO": "Aussi le Seigneur a veillé sur le mal, et le Seigneur l’a fait venir sur nous ; car le Seigneur est juste dans toutes les œuvres qu’il nous a commandées.+ 2:9 Comp. Jer 1,12 ; 31,28.*",
+        "NAB": "And the LORD kept watch over the evils, and brought them home to us; for the LORD is just in all the works he commanded us to do,",
+        "VAT_ES": "Por eso el Señor estuvo atento a estas calamidades y las descargó sobre nosotros, porque él es justo en todo lo que nos manda hacer.",
+        "CEI": "Così il Signore, che è pronto al castigo, lo ha mandato sopra di noi, poiché egli è giusto in tutte le opere che ci ha comandate,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "καὶ οὐκ ἠκούσαμεν τῆς φωνῆς αὐτοῦ, πορεύεσθαι τοῖς προστάγμασιν Κυρίου οἷς ἔδωκεν κατὰ πρόσωπον ἡμῶν.",
+        "VUL": "et non audivimus vocem ipsius/ ut iremus in præceptis Domini,/ quæ dedit ante faciem nostram.]",
+        "SYN": "Но мы не слушали гласа Его, чтобы ходить в повелениях Господних, которые Он дал пред лицем нашим.",
+        "NEO": "Et nous n’avons pas écouté sa voix, en observant les préceptes du Seigneur, qu’Il a mis devant nous.",
+        "NAB": "but we did not heed his voice, or follow the precepts of the LORD which he set before us.",
+        "VAT_ES": "Pero nosotros no hemos escuchado la voz del Señor, que nos mandaba seguir los preceptos que él puso delante de nosotros.",
+        "CEI": "mentre noi non abbiamo dato ascolto alla sua voce, eseguendo i decreti che ci aveva posti davanti."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "Καὶ νῦν, Κύριε ὁ θεὸς Ἰσραήλ, ὃς ἐξήγαγες τὸν λαόν σου ἐκ γῆς Αἰγύπτου ἐν χειρὶ κραταιᾷ, ἐν σημείοις καὶ ἐν τέρασιν καὶ ἐν δυνάμει μεγάλῃ καὶ ἐν βραχίονι ὑψηλῷ, καὶ ἐποίησας σεαυτῷ ὄνομα ὡς ἡ ἡμέρα αὕτη,",
+        "VUL": "[Et nunc, Domine Deus Israël,/ qui eduxisti populum tuum de terra Ægypti/ in manu valida, et in signis, et in prodigiis,/ et in virtute tua magna, et in brachio excelso,/ et fecisti tibi nomen sicut est dies iste :/",
+        "SYN": "И ныне, Господи, Боже Израилев, Ты, Который вывел народ Твой из земли Египетской рукою крепкою, и знамениями, и чудесами, и силою великою, и мышцею высокою, и сотворил Себе имя, как сегодня:",
+        "NEO": "Et maintenant, Seigneur, Dieu d’Israël, qui a fait sortir ton peuple du pays d’Égypte par une main forte, par des miracles et des prodiges, avec une grande puissance et un bras élevé, et qui t’es fait un nom, comme on le voit* en ce jour,",
+        "NAB": "\"And now, LORD, God of Israel, you who led your people out of the land of Egypt with your mighty hand, with signs and wonders and great might, and with your upraised arm, so that you have made for yourself a name till the present day:",
+        "VAT_ES": "Y ahora, Señor, Dios de Israel, que hiciste salir a tu pueblo de la tierra de Egipto con mano fuerte, con signos y portentos, con gran poder y con el brazo en alto, haciéndote así un Nombre famoso hasta el día de hoy,",
+        "CEI": "Ora, Signore Dio d'Israele, che hai fatto uscire il tuo popolo dall'Egitto con mano forte, con segni e prodigi, con grande potenza e braccio possente e ti sei fatto un nome glorioso come oggi lo possiedi,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "ἡμάρτομεν, ἠσεβήσαμεν, ἠδικήσαμεν, Κύριε ὁ θεὸς ἡμῶν, ἐπὶ πᾶσιν τοῖς δικαιώμασίν σου.",
+        "VUL": "peccavimus, impie egimus,/ inique gessimus, Domine Deus noster,/ in omnibus justitiis tuis./",
+        "SYN": "согрешили мы, поступали нечестиво, неправедно против всех уставов Твоих, Господи Боже наш!",
+        "NEO": "nous avons péché, nous avons fait des actes impies, nous avons commis l’iniquité, Seigneur notre Dieu, à propos de tous tes préceptes.",
+        "NAB": "we have sinned, been impious, and violated, O LORD, our God, all your statutes.",
+        "VAT_ES": "nosotros hemos pecado, nos hemos hecho impíos, hemos incurrido en la injusticia, Señor, Dios nuestro, desobedeciendo todas tus prescripciones.",
+        "CEI": "noi abbiamo peccato, siamo stati empi, abbiamo trasgredito, Signore Dio nostro, i tuoi comandamenti."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "ἀποστραφήτω ὁ θυμός σου ἀφ’ ἡμῶν, ὅτι κατελείφθημεν ὀλίγοι ἐν τοῖς ἔθνεσιν οὗ διέσπειρας ἡμᾶς ἐκεῖ.",
+        "VUL": "Avertatur ira tua a nobis,/ quia derelicti sumus pauci inter gentes ubi dispersisti nos./",
+        "SYN": "Да отвратится от нас ярость Твоя, ибо мало осталось нас среди народов, между которыми Ты рассеял нас.",
+        "NEO": "Que ta colère se détourne de nous, puisque nous ne sommes plus qu’un faible reste parmi les nations, où tu nous as dispersés !",
+        "NAB": "Let your anger be withdrawn from us, for we are left few in number among the nations to which you scattered us.",
+        "VAT_ES": "Que tu furor se aparte de nosotros, porque hemos quedado muy pocos entre las naciones donde nos has dispersado.",
+        "CEI": "Allontana da noi lo sdegno, poiché siamo rimasti molto pochi in mezzo alle genti fra le quali tu ci hai dispersi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "εἰσάκουσον, Κύριε, τῆς προσευχῆς ἡμῶν καὶ τῆς δεήσεως ἡμῶν, καὶ ἐξελοῦ ἡμᾶς ἕνεκεν σοῦ καὶ δὸς ἡμῖν χάριν κατὰ πρόσωπον τῶν ἀποικισάντων ἡμᾶς,",
+        "VUL": "Exaudi, Domine, preces nostras et orationes nostras,/ et educ nos propter te,/ et da nobis invenire gratiam ante faciem eorum qui nos abduxerunt :/",
+        "SYN": "Услышь, Господи, молитву нашу и прошение наше, и избавь нас ради Тебя, и дай нам милость пред лицем тех, которые переселили нас,",
+        "NEO": "Exauce, Seigneur, notre prière et notre supplication ; délivre-nous à cause de toi-même, et fais-nous trouver faveur devant ceux qui nous ont déportés :",
+        "NAB": "Hear, O LORD, our prayer of supplication, and deliver us for your own sake: grant us favor in the presence of our captors,",
+        "VAT_ES": "Escucha, Señor, nuestra oración y nuestra súplica, y por tu honor, líbranos y concédenos el favor de aquellos que nos han deportado,",
+        "CEI": "Ascolta, Signore, la nostra preghiera, la nostra supplica, liberaci per il tuo amore e facci trovar grazia davanti a coloro che ci hanno deportati,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ἵνα γνῷ πᾶσα ἡ γῆ ὅτι σὺ Κύριος ὁ θεὸς ἡμῶν, ὅτι τὸ ὄνομά σου ἐπεκλήθη ἐπὶ Ἰσραὴλ καὶ ἐπὶ τὸ γένος αὐτοῦ.",
+        "VUL": "ut sciat omnis terra quia tu es Dominus Deus noster,/ et quia nomen tuum invocatum est super Israël,/ et super genus ipsius./",
+        "SYN": "дабы вся земля познала, что Ты - Господь Бог наш, так как имя Твое наречено на Израиле и роде его.",
+        "NEO": "afin que toute la terre sache que tu es le Seigneur notre Dieu, puisque ton nom a été invoqué sur Israël et sur sa race.",
+        "NAB": "that the whole earth may know that you are the LORD, our God, and that Israel and his descendants bear your name.",
+        "VAT_ES": "para que toda la tierra conozca que tú eres el Señor, nuestro Dios, porque tu Nombre ha sido invocado sobre Israel y sobre su raza.",
+        "CEI": "perché tutta la terra sappia che tu sei il Signore nostro Dio e che il tuo nome è stato invocato su Israele e su tutta la sua stirpe."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "Κύριε, κάτιδε ἐκ τοῦ οἴκου τοῦ ἁγίου σου καὶ ἐννόησον εἰς ἡμᾶς· κλῖνον, Κύριε, τὸ οὖς σου καὶ ἄκουσον.",
+        "VUL": "Respice, Domine, de domo sancta tua in nos,/ et inclina aurem tuam, et exaudi nos./",
+        "SYN": "Призри, Господи, от святаго дома Твоего и воспомяни о нас, и приклони, Господи, ухо Твое, и услышь.",
+        "NEO": "Regarde, Seigneur, de ta demeure sainte, songe à nous, incline ton oreille et écoute,",
+        "NAB": "O LORD, look down from your holy dwelling and take thought of us; turn, O LORD, your ear to hear us.",
+        "VAT_ES": "Mira, Señor, desde tu santa morada y piensa en nosotros; inclina tu oído y escucha;",
+        "CEI": "Guarda, Signore, dalla tua santa dimora e pensa a noi; inclina il tuo orecchio, Signore, e ascolta;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "ἄνοιξον ὀφθαλμούς σου καὶ ἴδε ὅτι οὐχ οἱ τεθνηκότες ἐν τῷ ᾅδῃ, ὧν ἐλήμφθη τὸ πνεῦμα αὐτῶν ἀπὸ τῶν σπλάγχνων αὐτῶν, δώσουσιν δόξαν καὶ δικαίωμα τῷ κυρίῳ·",
+        "VUL": "Aperi oculos tuos et vide :/ quia non mortui qui sunt in inferno,/ quorum spiritus acceptus est a visceribus suis,/ dabunt honorem et justificationem Domino :/",
+        "SYN": "Открой очи Твои, посмотри, потому что не мертвые в аде, которых дух взят из внутренностей их, воздадут славу и хвалу Господу;",
+        "NEO": "ouvre les yeux et considére : ce ne sont pas les morts+ 2:17 \\+it Ce ne sont pas les morts\\+it* etc. Comp Isa 38, 18 sv.*, dans le schéol, dont l’esprit est sorti de leurs entrailles, qui rendent gloire et justice au Seigneur.",
+        "NAB": "Look directly at us, and behold: it is not the dead in the nether world, whose spirits have been taken from within them, who will give glory and vindication to the LORD.",
+        "VAT_ES": "abre, Señor, tus ojos y mira; porque no son los muertos que están en el Abismo, aquellos cuyo espíritu ha sido arrancado de sus entrañas, los que tributan gloria y justicia al Señor ;",
+        "CEI": "apri, Signore, gli occhi e osserva: non i morti che sono negli inferi, il cui spirito se n'è andato dalle loro viscere, danno gloria e giustizia al Signore,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "ἀλλὰ ἡ ψυχὴ αὐτοῦ ἡ λυπουμένη ἐπὶ τὸ μέγεθος, ὃ βαδίζει κύπτον καὶ ἀσθενοῦν, καὶ οἱ ὀφθαλμοὶ οἱ ἐκλείποντες καὶ ἡ ψυχὴ ἡ πεινῶσα δώσουσίν σοι δόξαν καὶ δικαιοσύνην, Κύριε.",
+        "VUL": "sed anima quæ tristis est super magnitudine mali,/ et incedit curva et infirma,/ et oculi deficientes, et anima esuriens,/ dat tibi gloriam et justitiam Domino./",
+        "SYN": "но человек, скорбящий о великости бедствия, который ходит поникши и уныло, и глаза потусклые и душа алчущая воздадут славу и правду Тебе, Господи.",
+        "NEO": "Mais le vivant, attristé de la grandeur de ses maux+ 2:18 \\+it Nous qui sommes vivants, malheureux en ce moment, nous vous louerons\\+it*. — Le texte grec est difficilement traduisible.*, qui marche courbé et sans force, dont les yeux sont languissants, dont l’âme est affamée, c’est lui qui te rend gloire et justice, Seigneur.",
+        "NAB": "He whose soul is deeply grieved, who walks bowed and feeble, with failing eyes and famished soul, will declare your glory and justice, LORD!",
+        "VAT_ES": "sino que es el alma llena de aflicción, y son los que caminan encorvados y sin fuerzas, los ojos debilitados y el alma hambrienta los que te tributan, Señor, gloria y justicia.",
+        "CEI": "ma chi geme sotto il peso, chi se ne va curvo e spossato, chi ha gli occhi languenti, chi è affamato, questi sono coloro che ti rendono gloria e giustizia, Signore."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ὅτι οὐκ ἐπὶ τὰ δικαιώματα τῶν πατέρων ἡμῶν καὶ τῶν βασιλέων ἡμῶν ἡμεῖς καταβάλλομεν τὸν ἔλεον κατὰ πρόσωπόν σου, Κύριε ὁ θεὸς ἡμῶν,",
+        "VUL": "Quia non secundum justitias patrum nostrorum/ nos fundimus preces et petimus misericordiam/ ante conspectum tuum, Domine Deus noster :/",
+        "SYN": "Не по правдам отцов наших и царей наших мы повергаем моление сие пред лицем Твоим, Господи Боже наш;",
+        "NEO": "Car ce n’est pas à cause de la justice de nos pères et de nos rois que nous répandons notre prière devant toi, Seigneur, notre Dieu.",
+        "NAB": "\"Not on the just deeds of our fathers and our kings do we base our plea for mercy in your sight, O LORD, our God.",
+        "VAT_ES": "No es por las obras de justicia de nuestros padres y de nuestros reyes, que nosotros presentamos nuestra súplica delante de tu rostro, Señor, Dios nuestro.",
+        "CEI": "Non per i meriti dei nostri padri e dei nostri re ti presentiamo le nostre suppliche, Signore Dio nostro,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ὅτι ἐνῆκας τὸν θυμόν σου καὶ τὴν ὀργήν σου εἰς ἡμᾶς, καθάπερ ἐλάλησας ἐν χειρὶ τῶν παίδων σου τῶν προφητῶν",
+        "VUL": "sed quia misisti iram tuam et furorem tuum super nos,/ sicut locutus es in manu puerorum tuorum prophetarum,/ dicens :",
+        "SYN": "ибо на нас Ты послал ярость Твою и гнев Твой, как говорил Ты чрез рабов Твоих, пророков.",
+        "NEO": "Car tu as envoyé sur nous ta colère et ton indignation, comme tu l’as proclamé par tes serviteurs les prophètes,",
+        "NAB": "You have brought your wrath and anger down upon us, as you had warned us through your servants the prophets:",
+        "VAT_ES": "Porque tú has enviado sobre nosotros tu furor y tu indignación, como lo habías anunciado por medio de tus servidores, los profetas, diciendo:",
+        "CEI": "ma perché tu hai mandato sopra di noi la tua collera e il tuo sdegno, come avevi dichiarato per mezzo dei tuoi servi i profeti:"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "Οὕτως εἶπεν Κύριος Κλίνατε τὸν ὦμον ὑμῶν καὶ ἐργάσασθε τῷ βασιλεῖ Βαβυλῶνος, καὶ καθίσατε ἐπὶ τὴν γῆν ἣν δέδωκα τοῖς πατράσιν ὑμῶν·",
+        "VUL": "Sic dicit Dominus :/ Inclinate humerum vestrum et cervicem vestram,/ et opera facite regi Babylonis,/ et sedebitis in terra quam dedi patribus vestris./",
+        "SYN": "Так сказал Господь: \"склоните плечи ваши, чтобы работать царю Вавилонскому, и будете жить на земле, которую Я дал отцам вашим;",
+        "NEO": "en disant* : Ainsi parle le Seigneur : « Inclinez vos épaules et votre cou*+ 2:21 \\+it Et votre cou\\+it* n’est pas dans les LXX.* et servez le roi de Babylone, et vous demeurerez dans le pays que j’ai donné à vos pères.+ 2:21 Comp. Jer 27, 8-12.*",
+        "NAB": "'Thus says the LORD: Bend your shoulders to the service of the king of Babylon, that you may continue in the land I gave your fathers:",
+        "VAT_ES": "Así habla el Señor: Dobleguen sus espaldas y sirvan al rey de Babilonia, y permanecerán en la tierra que yo he dado a sus padres.",
+        "CEI": "\"Ecco, dice il Signore: Curvate le spalle, servite il re di Babilonia e dimorerete nella terra da me data ai vostri padri."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "καὶ ἐὰν μὴ ἀκούσητε τῆς φωνῆς Κυρίου ἐργάσασθαι τῷ βασιλεῖ Βαβυλῶνος,",
+        "VUL": "Quod si non audieritis vocem Domini Dei vestri,/ operari regi Babyloniæ,/ defectionem vestram faciam de civitatibus Juda,/ et a foris Jerusalem,/",
+        "SYN": "а если не послушаете гласа Господа, чтобы служить царю Вавилонскому,",
+        "NEO": "Que si vous n’écoutez pas la voix du Seigneur, votre Dieu, en servant le roi de Babylone,",
+        "NAB": "for if you do not hear the LORD'S voice so as to serve the king of Babylon,",
+        "VAT_ES": "Pero si ustedes no escuchan la voz del Señor, sirviendo al rey de Babilonia,",
+        "CEI": "Ma se non darete ascolto alla voce del Signore che comanda di servire il re di Babilonia,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "ἐκλείψειν ποιήσω ἐκ πόλεων Ἰούδα καὶ ἔξωθεν Ἰερουσαλὴμ φωνὴν εὐφροσύνης καὶ φωνὴν χαρμοσύνης, φωνὴν νυμφίου καὶ φωνὴν νύμφης, καὶ ἔσται πᾶσα ἡ γῆ εἰς ἄβατον ἀπὸ ἐνοικούντων.",
+        "VUL": "et auferam a vobis vocem jucunditatis et vocem gaudii,/ et vocem sponsi et vocem sponsæ,/ et erit omnis terra sine vestigio ab inhabitantibus eam./",
+        "SYN": "Я сделаю то, что исчезнет в городах Иудейских и окрестностях Иерусалима голос веселья и голос радости, голос жениха и голос невесты, и не будет на всей этой земле следа обитающих\".",
+        "NEO": "je ferai cesser, dans les villes de Juda et hors de Jérusalem, le chant de joie et le chant d’allégresse, le chant du fiancé et le chant de la fiancée, et tout le pays deviendra un désert, sans habitants. »",
+        "NAB": "I will make to cease from the cities of Judah and from the streets of Jerusalem The sounds of joy and the sounds of gladness, the voice of the bridegroom and the voice of the bride; And all the land shall be deserted, without inhabitants.'",
+        "VAT_ES": "yo haré cesar en las ciudades de Judá y dentro de Jerusalén el grito de gozo y el grito de alegría, el canto del esposo y el canto de la esposa, y todo el país se convertirá en un desierto sin habitantes.",
+        "CEI": "farò cessare nelle città di Giuda e per le vie di Gerusalemme il grido di gioia e di letizia, il canto dello sposo e della sposa e tutto il territorio diventerà un deserto senza abitanti\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "καὶ οὐκ ἠκούσαμεν τῆς φωνῆς σου ἐργάσασθαι τῷ βασιλεῖ Βαβυλῶνος, καὶ ἔστησας τοὺς λόγους σου οὓς ἐλάλησας ἐν χερσὶν τῶν παίδων σου τῶν προφητῶν τοῦ ἐξενεχθῆναι τὰ ὀστᾶ βασιλέων ἡμῶν καὶ τὰ ὀστᾶ τῶν πατέρων ἡμῶν ἐκ τοῦ τόπου αὐτῶν.",
+        "VUL": "Et non audierunt vocem tuam,/ ut operarentur regi Babylonis :/ et statuisti verba tua,/ quæ locutus es in manibus puerorum tuorum prophetarum,/ ut transferrentur ossa regum nostrorum/ et ossa patrum nostrorum de loco suo :/",
+        "SYN": "Но мы не послушали гласа Твоего, чтобы служить царю Вавилонскому, и Ты исполнил слова Твои, которые говорил чрез рабов Твоих, пророков, что вынесены будут кости царей наших и кости отцов наших из места своего.",
+        "NEO": "Nous n’avons pas écouté ta voix, en servant le roi de Babylone, et tu as accompli tes paroles, prononcées par l’organe de tes serviteurs les prophètes, annonçant* que les ossements de nos rois et les ossements de nos pères seraient ôtés de leurs sépulcres.",
+        "NAB": "But we did not heed your voice, or serve the king of Babylon, and you fulfilled the threats you had made through your servants the prophets, to have the bones of our kings and the bones of our fathers brought out from their burial places.",
+        "VAT_ES": "Y nosotros no hemos escuchado tu voz, que nos mandaba servir al rey de Babilonia; por eso, tú has cumplido la amenaza que habías pronunciado por medio de tus servidores, los profetas, a saber, que serían sacados de su sitio los huesos de nuestros reyes y los huesos de nuestros padres.",
+        "CEI": "Noi non abbiamo dato ascolto alla tua voce di servire il re di Babilonia, perciò tu hai eseguito la minaccia, fatta per mezzo dei tuoi servi i profeti, che le ossa dei nostri re e dei nostri padri sarebbero rimosse dalla loro tomba."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "καὶ ἰδού, ἔστιν ἐξεριμμένα τῷ καύματι τῆς ἡμέρας καὶ τῷ παγετῷ τῆς νυκτός· καὶ ἀπεθάνοσαν ἐν πόνοις πονηροῖς, ἐν λιμῷ καὶ ἐν ῥομφαίᾳ καὶ ἐν ἀποστολῇ.",
+        "VUL": "et ecce projecta sunt in calore solis et in gelu noctis,/ et mortui sunt in doloribus pessimis,/ in fame et in gladio, et in emissione./",
+        "SYN": "И вот, они выброшены на дневной зной и ночной холод, а умерли они от злых болезней, от голода, от меча и изгнания.",
+        "NEO": "Et voici qu’ils ont été, en effet, jetés sur le sol, exposés* aux ardeurs du soleil et au froid de la nuit ; et nos pères* sont morts dans de cruelles souffrances, par la faim, par le glaive et par la peste+ 2:25 \\+it Par la peste\\+it*, en grec ἀποστολῇ, litt, \\+it par un fléau envoyé de Dieu\\+it*. Vulg., \\+it emissione\\+it*.*.",
+        "NAB": "And indeed, they lie exposed to the heat of day and the frost of night. They died in dire anguish, by hunger and the sword and plague.",
+        "VAT_ES": "Y ahora han sido arrojados al calor del día y al frío de la noche, después de haber muerto en medio de crueles sufrimientos, por el hambre, la espada y la peste.",
+        "CEI": "Ed eccole abbandonate al calore del giorno e al gelo della notte. Essi son morti fra atroci dolori, di fame, di spada e di peste;"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "καὶ ἔθηκας τὸν οἶκον οὗ ἐπεκλήθη τὸ ὄνομά σου ἐπ’ αὐτῷ ὡς ἡ ἡμέρα αὕτη, διὰ πονηρίαν οἴκου Ἰσραὴλ καὶ οἴκου Ἰούδα.",
+        "VUL": "Et posuisti templum in quo invocatum est nomen tuum in ipso/ sicut hæc dies,/ propter iniquitatem domus Israël et domus Juda./",
+        "SYN": "Ты оставил дом, на котором наречено имя Твое, как сегодня, за нечестие дома Израилева и дома Иудина.",
+        "NEO": "Tu as réduit la maison sur laquelle ton nom était invoqué, dans l’état où elle est aujourd’hui, à cause de la méchanceté de la maison d’Israël et de la maison de Juda.",
+        "NAB": "And you reduced the house which bears your name to what it is today, for the wickedness of the kingdom of Israel and the kingdom of Judah.",
+        "VAT_ES": "Tú has reducido Esta Casa sobre la que había sido invocado tu Nombre, a lo que es en el día de hoy, a causa de la maldad de la casa de Israel y de la casa de Judá.",
+        "CEI": "il tempio che porta il tuo nome tu lo hai ridotto nello stato in cui oggi si trova, per la malvagità della casa d'Israele e di Giuda."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "Καὶ ἐποίησας εἰς ἡμᾶς, Κύριε ὁ θεὸς ἡμῶν, κατὰ πᾶσαν ἐπιεικίαν σου καὶ κατὰ πάντα οἰκτειρμόν σου τὸν μέγαν,",
+        "VUL": "Et fecisti in nobis, Domine Deus noster,/ secundum omnem bonitatem tuam/ et secundum omnem miserationem tuam illam magnam :/",
+        "SYN": "И Ты, Господи Боже наш, поступил с нами по всему снисхождению Твоему и по всему великому милосердию Твоему,",
+        "NEO": "Tu as agi envers nous, Seigneur, notre Dieu, selon toute ta bonté, et selon toute ta grande miséricorde+ 2:27 \\+it Selon toute votre grande miséricorde\\+it*. Comp. Jer, 4, 27 ; 5, 10 ; Lam 3, 22.*,",
+        "NAB": "\"But with us, O Lord, our God, you have dealt in all your clemency and in all your great mercy.",
+        "VAT_ES": "Sin embargo, tú nos has tratado, Señor, Dios nuestro, conforme a toda tu benignidad y a tu gran compasión,",
+        "CEI": "Tuttavia tu hai agito verso di noi, Signore Dio nostro, secondo tutta la tua bontà e secondo tutta la tua grande misericordia,"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "καθὰ ἐλάλησας ἐν χειρὶ παιδός σου Μωυσῆ, ἐν ἡμέρᾳ ἐντειλαμένου σου αὐτῷ γράψαι τὸν νόμον σου ἐναντίον υἱῶν Ἰσραὴλ λέγων",
+        "VUL": "sicut locutus es in manu pueri tui Moysi,/ in die qua præcepisti ei scribere legem tuam coram filiis Israël,/",
+        "SYN": "как сказал Ты чрез раба Твоего Моисея в тот день, в который повелел ему написать закон Твой пред сынами Израиля, говоря:",
+        "NEO": "comme tu l’avais déclaré par l’organe de ton serviteur Moïse, au jour où tu lui ordonna d’écrire ta loi, en présence des enfants d’Israël,",
+        "NAB": "This was your warning through your servant Moses, the day you ordered him to write down your law in the presence of the Israelites:",
+        "VAT_ES": "como lo habías anunciado por medio de Moisés, tu servidor, el día en que le ordenaste escribir tu Ley en presencia de los israelitas, diciendo:",
+        "CEI": "come avevi detto per mezzo del tuo servo Mosè, quando gli ordinasti di scrivere la tua legge davanti agli Israeliti, dicendo:"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "Ἐὰν μὴ ἀκούσητε τῆς φωνῆς μου, εἰ μὴν ἡ βόμβησις ἡ μεγάλη ἡ πολλὴ αὕτη ἀποστρέψει εἰς μικρὰν ἐν τοῖς ἔθνεσιν οὗ διασπερῶ αὐτοὺς ἐκεῖ.",
+        "VUL": "dicens : Si non audieritis vocem meam,/ multitudo hæc magna convertetur in minimam inter gentes,/ quo ego eos dispergam :/",
+        "SYN": "\"если вы не послушаете гласа Моего, то это великое и многое множество _народа_ обратится в малое среди народов, между которыми Я рассею их.",
+        "NEO": "en disant : « Si vous n’écoutez pas ma voix, cette grande et vaste multitude sera réduite à un très petit nombre, parmi les nations où je les disperserai.+ 2:29 Comp. Lev 26, 27, 28; Deu 28, 62-63.*",
+        "NAB": "If you do not heed my voice, surely this great and numerous throng will dwindle away among the nations to which I will scatter them.",
+        "VAT_ES": "«Si ustedes no escuchan mi voz, esta grande, esta inmensa muchedumbre será reducida a un pequeño número entre las naciones adonde los dispersaré.",
+        "CEI": "\"Se voi non darete ascolto alla mia voce, questa moltitudine che ora è così grande sarà ridotta a un piccolo resto in mezzo alle nazioni fra le quali io la disperderò;"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "ὅτι ἔγνων ὅτι οὐ μὴ ἀκούσωσίν μου, ὅτι λαὸς σκληροτράχηλός ἐστιν· καὶ ἐπιστρέψουσιν ἐπὶ καρδίαν αὐτῶν ἐν γῇ ἀποικισμοῦ αὐτῶν,",
+        "VUL": "quia scio quod me non audiet populus :/ populus est enim dura cervice./ Et convertetur ad cor suum in terra captivitatis suæ,/",
+        "SYN": "Я знаю, что они не послушают Меня, ибо они - народ упрямый; но они обратятся к сердцу своему в земле переселения своего,",
+        "NEO": "Car je sais bien qu’ils ne m’écouteront pas, parce que c’est un peuple à la tête dure ; mais ils rentreront en eux-mêmes, dans le pays de leur exil ;",
+        "NAB": "For I know they will not heed me, because they are a stiff-necked people. But in the land of their captivity they shall have a change of heart;",
+        "VAT_ES": "Yo sé, en efecto, que ellos no me escucharán, porque son un pueblo obstinado y rebelde, pero en la tierra de su exilio, volverán sobre sí mismos",
+        "CEI": "poiché io so che non mi ascolterà, perché è un popolo di dura cervice. Però nella terra del loro esilio ritorneranno in sé"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "καὶ γνώσονται ὅτι ἐγὼ Κύριος ὁ θεὸς αὐτῶν. καὶ δώσω αὐτοῖς καρδίαν καὶ ὦτα ἀκούοντα,",
+        "VUL": "et scient quia ego sum Dominus Deus eorum :/ et dabo eis cor, et intelligent ;/ aures, et audient :/",
+        "SYN": "и познают, что Я - Господь Бог их. И Я дам им сердце - и уразумеют, и уши - и услышат.",
+        "NEO": "et ils sauront que je suis le Seigneur, leur Dieu, et je leur donnerai un cœur qui comprenne*, et des oreilles qui entendent.",
+        "NAB": "they shall know that I, the LORD, am their God. I will give them hearts, and heedful ears;",
+        "VAT_ES": "y conocerán que yo soy el Señor, su Dios. Les daré un corazón y oídos dóciles,",
+        "CEI": "e riconosceranno che io sono il Signore loro Dio. Darò loro un cuore e orecchi che ascoltano;"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "LXX": "καὶ αἰνέσουσίν με ἐν γῇ ἀποικισμοῦ αὐτῶν, καὶ μνησθήσονται τοῦ ὀνόματός μου·",
+        "VUL": "et laudabunt me in terra captivitatis suæ,/ et memores erunt nominis mei,/",
+        "SYN": "И будут прославлять Меня на земле переселения своего и вспоминать имя Мое,",
+        "NEO": "Et ils me loueront dans le pays de leur exil, et ils se souviendront de mon nom.",
+        "NAB": "and they shall praise me in the land of their captivity, and shall invoke my name.",
+        "VAT_ES": "y ellos me alabarán en la tierra de su exilio y se acordarán de mi Nombre.",
+        "CEI": "nella terra del loro esilio mi loderanno e si ricorderanno del mio nome"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "LXX": "καὶ ἀποστρέψουσιν ἀπὸ τοῦ νώτου αὐτῶν τοῦ σκληροῦ καὶ ἀπὸ πονηρῶν πραγμάτων αὐτῶν, ὅτι μνησθήσονται τῆς ὁδοῦ πατέρων αὐτῶν τῶν ἁμαρτόντων ἔναντι Κυρίου.",
+        "VUL": "et avertent se a dorso suo duro,/ et a malignitatibus suis :/ quia reminiscentur viam patrum suorum,/ qui peccaverunt in me./",
+        "SYN": "и отвратятся от упорства своего и от злых дел своих; ибо вспомнят путь отцов своих, согрешивших пред Господом.",
+        "NEO": "Ils renonceront à leur cou raide, et à leurs maximes perverses, parce qu’ils se souviendront du sort de leurs pères, qui ont péché devant le Seigneur.",
+        "NAB": "Then they shall turn back from their stiff-necked stubbornness, and from their evil deeds, because they shall remember the fate of their fathers who sinned against the LORD.",
+        "VAT_ES": "Se arrepentirán de su obstinación y de sus malas acciones, porque se acordarán de la suerte de sus padres que pecaron contra el Señor .",
+        "CEI": "e ripensando alla sorte subìta dai loro padri che peccarono contro di me, abbandoneranno la loro caparbietà e la loro malizia."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "LXX": "καὶ ἀποστρέψω αὐτοὺς εἰς τὴν γῆν ἣν ὤμοσα τοῖς πατράσιν αὐτῶν, τῷ Ἀβραὰμ καὶ τῷ Ἰσαὰκ καὶ τῷ Ἰακώβ, καὶ κυριεύσουσιν αὐτῆς· καὶ πληθυνῶ αὐτούς, καὶ οὐ μὴ σμικρυνθῶσιν·",
+        "VUL": "Et revocabo illos in terram quam juravi patribus eorum,/ Abraham, Isaac, et Jacob :/ et dominabuntur ejus, et multiplicabo eos,/ et non minorabuntur :/",
+        "SYN": "И Я возвращу их в землю, которую с клятвою обещал отцам их, Аврааму и Исааку и Иакову, и они будут владеть ею; и умножу их, и не уменьшатся.",
+        "NEO": "Et je les ramènerai dans le pays que j’ai promis par serment à leurs pères, à Abraham, à Isaac et à Jacob, et ils en seront les maîtres, et je les multiplierai, et ils ne diminueront pas.",
+        "NAB": "And I will bring them back to the land which with my oath I promised to their fathers, to Abraham, Isaac and Jacob; and they shall rule it. I will make them increase; they shall not then diminish.",
+        "VAT_ES": "Entonces los haré volver a la tierra que juré dar a sus padres, a Abraham, a Isaac y a Jacob, y se adueñarán de ella. Los multiplicaré y ya no disminuirán.",
+        "CEI": "Io li ricondurrò nella terra promessa con giuramento ai loro padri, ad Abramo, a Isacco, a Giacobbe; essi ne avranno di nuovo il dominio e io li moltiplicherò e non diminuiranno più;"
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "LXX": "καὶ στήσω αὐτοῖς διαθήκην αἰώνιον τοῦ εἶναί με αὐτοῖς εἰς θεόν, καὶ αὐτοὶ ἔσονταί μοι εἰς λαόν· καὶ οὐ κινήσω ἔτι τὸν λαόν μου Ἰσραὴλ ἀπὸ τῆς γῆς ἧς ἔδωκα αὐτοῖς.",
+        "VUL": "et statuam illis testamentum alterum sempiternum,/ ut sim illis in Deum,/ et ipsi erunt mihi in populum :/ et non movebo amplius populum meum, filios Israël,/ a terra quam dedi illis.]",
+        "SYN": "И поставлю с ними вечный завет в том, что Я буду их Богом, а они будут Моим народом, и более не изгоню народа Моего Израиля из земли, которую дал им\".",
+        "NEO": "Je ferai avec eux une alliance éternelle, afin que je sois leur Dieu, et qu’ils soient mon peuple ; et je ne chasserai plus mon peuple d’Israël du pays que je leur ai donné.+ 2:35 Comp. Jer 31, 31-32 ; 32, 40.*",
+        "NAB": "And I will establish for them, as an eternal covenant, that I will be their God, and they shall be my people; and I will not again remove my people Israel from the land I gave them.",
+        "VAT_ES": "Estableceré para ellos una alianza eterna, para que yo sea su Dios y ellos sean mi Pueblo, y ya no arrojaré más a mi pueblo Israel de la tierra que les he dado».",
+        "CEI": "farò con loro un'alleanza perenne: io sarò Dio per loro ed essi saranno popolo per me, né scaccerò mai più il mio popolo Israele dal paese che gli ho dato\"."
+      }
+    }
+  }
+}

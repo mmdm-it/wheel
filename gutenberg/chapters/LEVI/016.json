@@ -1,0 +1,627 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LEVI_016",
+  "book_key": "LEVI",
+  "sequence": 16,
+  "chapter_in": {
+    "MT": 16,
+    "VUL": 16,
+    "LXX": 16
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֤ר יְהוָה֙ אֶל מֹשֶׁ֔ה אַחֲרֵ֣י מ֔וֹת שְׁנֵ֖י בְּנֵ֣י אַהֲרֹ֑ן בְּ/קָרְבָתָ֥/ם לִ/פְנֵי יְהוָ֖ה וַ/יָּמֻֽתוּ׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν μετὰ τὸ τελευτῆσαι τοὺς δύο υἱοὺς Ἀαρὼν ἐν τῷ προσάγειν αὐτοὺς πῦρ ἀλλότριον ἔναντι Κυρίου, καὶ ἐτελεύτησαν·",
+        "VUL": "Locutusque est Dominus ad Moysen post mortem duorum filiorum Aaron, quando offerentes ignem alienum interfecti sunt :",
+        "SYN": "И говорил Господь Моисею по смерти двух сынов Аароновых, когда они, приступив [с чуждым огнем] пред лице Господне, умерли,",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, après la mort des deux fils d’Aaron, qui furent frappés lorsqu’ils s’approchèrent de la face de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "After the death of Aaron's two sons, who died when they approached the LORD'S presence, the LORD spoke to Moses",
+        "VAT_ES": "El Señor habló a Moisés después de la muerte de los dos hijos de Aarón, que murieron al presentarse delante del Señor.",
+        "CEI": "Il Signore parlò a Mosè dopo che i due figli di Aronne erano morti mentre presentavano un'offerta davanti al Signore."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֜ה אֶל מֹשֶׁ֗ה דַּבֵּר֮ אֶל אַהֲרֹ֣ן אָחִי/ךָ֒ וְ/אַל יָבֹ֤א בְ/כָל עֵת֙ אֶל הַ/קֹּ֔דֶשׁ מִ/בֵּ֖ית לַ/פָּרֹ֑כֶת אֶל פְּנֵ֨י הַ/כַּפֹּ֜רֶת אֲשֶׁ֤ר עַל הָ/אָרֹן֙ וְ/לֹ֣א יָמ֔וּת כִּ֚י בֶּֽ/עָנָ֔ן אֵרָאֶ֖ה עַל הַ/כַּפֹּֽרֶת׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς Μωυσῆν Λάλησον πρὸς Ἀαρὼν τὸν ἀδελφόν σου, καὶ μὴ εἰσπορευέσθω πᾶσαν ὥραν εἰς τὸ ἅγιον ἐσώτερον τοῦ καταπετάσματος εἰς πρόσωπον τοῦ ἱλαστηρίου, ὅ ἐστιν ἐπὶ τῆς κιβωτοῦ τοῦ μαρτυρίου, καὶ οὐκ ἀποθανεῖται· ἐν γὰρ νεφέλῃ ὀφθήσομαι ἐπὶ τοῦ ἱλαστηρίου.",
+        "VUL": "et præcepit ei, dicens : Loquere ad Aaron fratrem tuum, ne omni tempore ingrediatur sanctuarium, quod est intra velum coram propitiatorio quo tegitur arca, ut non moriatur (quia in nube apparebo super oraculum),",
+        "SYN": "и сказал Господь Моисею: скажи Аарону, брату твоему, чтоб он не во всякое время входил во святилище за завесу пред крышку [очистилище], что на ковчеге [откровения], дабы ему не умереть, ибо над крышкою Я буду являться в облаке.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Parle à ton frère Aaron, afin qu’il n’entre pas en tout temps dans le sanctuaire, au-dedans du voile, devant le propitiatoire qui est sur l’arche, de peur qu’il ne meure ; car j’apparais dans la nuée sur le propitiatoire.",
+        "NAB": "and said to him, \"Tell your brother Aaron that he is not to come whenever he pleases into the sanctuary, inside the veil, in front of the propitiatory on the ark; otherwise, when I reveal myself in a cloud above the propitiatory, he will die.",
+        "VAT_ES": "El le dijo: Ordena a tu hermano Aarón que no entre en cualquier momento en la parte del Santuario que está detrás del velo, frente a la tapa que cubre el Arca. De lo contrario morirá, porque yo me aparezco en la nube, sobre la tapa del Arca. De lo contrario morirá, porque yo me aparezco en la nube, sobre la tapa del Arca.",
+        "CEI": "Il Signore disse a Mosè: \"Parla ad Aronne, tuo fratello, e digli di non entrare in qualunque tempo nel santuario, oltre il velo, davanti al coperchio che è sull'arca; altrimenti potrebbe morire, quando io apparirò nella nuvola sul coperchio."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "בְּ/זֹ֛את יָבֹ֥א אַהֲרֹ֖ן אֶל הַ/קֹּ֑דֶשׁ בְּ/פַ֧ר בֶּן בָּקָ֛ר לְ/חַטָּ֖את וְ/אַ֥יִל לְ/עֹלָֽה׃",
+        "LXX": "οὕτως εἰσελεύσεται Ἀαρὼν εἰς τὸ ἅγιον· ἐν μόσχῳ ἐκ βοῶν περὶ ἁμαρτίας, καὶ κριὸν εἰς ὁλοκαύτωμα.",
+        "VUL": "nisi hæc ante fecerit : vitulum pro peccato offeret, et arietem in holocaustum.",
+        "SYN": "Вот с чем должен входить Аарон во святилище: с тельцом в жертву за грех и с овном во всесожжение;",
+        "NEO": "Voici le rite suivant lequel Aaron entrera dans le sanctuaire. Il prendra un jeune taureau pour le sacrifice pour le péché et un bélier pour l’holocauste.",
+        "NAB": "Only in this way may Aaron enter the sanctuary. He shall bring a young bullock for a sin offering and a ram for a holocaust.",
+        "VAT_ES": "El deberá entrar en el Santuario solamente de esta manera: con un novillo para un sacrificio por el pecado y con carnero para un holocausto.",
+        "CEI": "Aronne entrerà nel santuario in questo modo: prenderà un giovenco per il sacrificio espiatorio e un ariete per l'olocausto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כְּתֹֽנֶת בַּ֨ד קֹ֜דֶשׁ יִלְבָּ֗שׁ וּ/מִֽכְנְסֵי בַד֮ יִהְי֣וּ עַל בְּשָׂר/וֹ֒ וּ/בְ/אַבְנֵ֥ט בַּד֙ יַחְגֹּ֔ר וּ/בְ/מִצְנֶ֥פֶת בַּ֖ד יִצְנֹ֑ף בִּגְדֵי קֹ֣דֶשׁ הֵ֔ם וְ/רָחַ֥ץ בַּ/מַּ֛יִם אֶת בְּשָׂר֖/וֹ וּ/לְבֵשָֽׁ/ם׃",
+        "LXX": "καὶ χιτῶνα λινοῦν ἡγιασμένον ἐνδύσεται, καὶ περισκελὲς λινοῦν ἔσται ἐπὶ τοῦ χρωτὸς αὐτοῦ, καὶ ζώνῃ λινῇ ζώσεται, καὶ κίδαριν λινῆν περιθήσεται· ἱμάτια ἅγιά ἐστιν, καὶ λούσεται ὕδατι πᾶν τὸ σῶμα αὐτοῦ καὶ ἐνδύσεται αὐτά.",
+        "VUL": "Tunica linea vestietur, feminalibus lineis verenda celabit : accingetur zona linea, cidarim lineam imponet capiti : hæc enim vestimenta sunt sancta : quibus cunctis, cum lotus fuerit, induetur.",
+        "SYN": "священный льняной хитон должен надевать он, нижнее платье льняное да будет на теле его, и льняным поясом пусть опоясывается, и льняной кидар надевает: это священные одежды; и пусть омывает он тело свое водою и надевает их;",
+        "NEO": "Il se revêtira de la sainte tunique de lin et mettra sur sa chair des caleçons de lin ; il se ceindra d’une ceinture de lin et se couvrira la tête d’une tiare de lin : ce sont les vêtements sacrés qu’il revêtira, après avoir baigné son corps dans l’eau.",
+        "NAB": "He shall wear the sacred linen tunic, with the linen drawers next his flesh, gird himself with the linen sash and put on the linen miter. But since these vestments are sacred, he shall not put them on until he has first bathed his body in water.",
+        "VAT_ES": "Además, tendrá que estar vestido con la túnica sagrada de lino y cubierto con pantalones de lino; se ceñirá con la faja de lino y llevará puesto el turbante de lino. Estas son vestiduras sagradas, que él se pondrá después de haberse bañado con agua.",
+        "CEI": "Si metterà la tunica sacra di lino, indosserà sul corpo i calzoni di lino, si cingerà della cintura di lino e si metterà in capo il turbante di lino. Sono queste le vesti sacre che indosserà dopo essersi lavato la persona con l'acqua."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וּ/מֵ/אֵ֗ת עֲדַת֙ בְּנֵ֣י יִשְׂרָאֵ֔ל יִקַּ֛ח שְׁנֵֽי שְׂעִירֵ֥י עִזִּ֖ים לְ/חַטָּ֑את וְ/אַ֥יִל אֶחָ֖ד לְ/עֹלָֽה׃",
+        "LXX": "καὶ παρὰ τῆς συναγωγῆς τῶν υἱῶν Ἰσραὴλ λήμψεται δύο χιμάρους ἐξ αἰγῶν περὶ ἁμαρτίας καὶ κριὸν ἕνα εἰς ὁλοκαύτωμα.",
+        "VUL": "Suscipietque ab universa multitudine filiorum Israël duos hircos pro peccato, et unum arietem in holocaustum.",
+        "SYN": "и от общества сынов Израилевых пусть возьмет [из стада коз] двух козлов в жертву за грех и одного овна во всесожжение.",
+        "NEO": "Il recevra de l’assemblée des enfants d’Israël deux boucs pour le sacrifice pour le péché, et un bélier pour l’holocauste.",
+        "NAB": "From the Israelite community he shall receive two male goats for a sin offering and one ram for a holocaust.",
+        "VAT_ES": "Aarón recibirá de la comunidad de los israelitas dos chivos para un sacrificio por el pecado y un carnero para un holocausto.",
+        "CEI": "Dalla comunità degli Israeliti prenderà due capri per un sacrificio espiatorio e un ariete per un olocausto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/הִקְרִ֧יב אַהֲרֹ֛ן אֶת פַּ֥ר הַ/חַטָּ֖את אֲשֶׁר ל֑/וֹ וְ/כִפֶּ֥ר בַּעֲד֖/וֹ וּ/בְעַ֥ד בֵּיתֽ/וֹ׃",
+        "LXX": "καὶ προσάξει Ἀαρὼν τὸν μόσχον τὸν περὶ τῆς ἁμαρτίας αὐτοῦ, καὶ ἐξιλάσεται περὶ αὐτοῦ καὶ τοῦ οἴκου αὐτοῦ.",
+        "VUL": "Cumque obtulerit vitulum, et oraverit pro se et pro domo sua,",
+        "SYN": "И принесет Аарон тельца в жертву за грех за себя и очистит себя и дом свой.",
+        "NEO": "Aaron offrira son taureau pour le péché, et il fera l’expiation pour lui et pour sa maison.",
+        "NAB": "\"Aaron shall bring in the bullock, his sin offering to atone for himself and for his household.",
+        "VAT_ES": "El ofrecerá su propio novillo como sacrificio por el pecado, y practicará como sacrificio por el pecado, y practicará el rito de expiación por sí mismo y por su familia.",
+        "CEI": "Aronne offrirà il proprio giovenco in sacrificio espiatorio e compirà l'espiazione per sé e per la sua casa."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/לָקַ֖ח אֶת שְׁנֵ֣י הַ/שְּׂעִירִ֑ם וְ/הֶעֱמִ֤יד אֹתָ/ם֙ לִ/פְנֵ֣י יְהוָ֔ה פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃",
+        "LXX": "καὶ λήμψεται τοὺς δύο χιμάρους καὶ στήσει αὐτοὺς ἔναντι Κυρίου παρὰ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου·",
+        "VUL": "duos hircos stare faciet coram Domino in ostio tabernaculi testimonii :",
+        "SYN": "И возьмет двух козлов и поставит их пред лицем Господним у входа скинии собрания;",
+        "NEO": "Puis il prendra les deux boucs et, les placera devant \\+w Yahweh|strong=\"H3068\"\\+w**, à l’entrée de la tente de réunion.",
+        "NAB": "Taking the two male goats and setting them before the LORD at the entrance of the meeting tent,",
+        "VAT_ES": "Luego tomará los dos chivos y los presentará delante del Señor, a la entrada de la Carpa del Encuentro.",
+        "CEI": "Poi prenderà i due capri e li farà stare davanti al Signore all'ingresso della tenda del convegno"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/נָתַ֧ן אַהֲרֹ֛ן עַל שְׁנֵ֥י הַ/שְּׂעִירִ֖ם גּוֹרָל֑וֹת גּוֹרָ֤ל אֶחָד֙ לַ/יהוָ֔ה וְ/גוֹרָ֥ל אֶחָ֖ד לַ/עֲזָאזֵֽל׃",
+        "LXX": "καὶ ἐπιθήσει Ἀαρὼν ἐπὶ τοὺς δύο χιμάρους κλῆρον ἕνα τῷ κυρίῳ καὶ κλῆρον ἕνα τῷ ἀποπομπαίῳ.",
+        "VUL": "mittensque super utrumque sortem, unam Domino, alteram capro emissario :",
+        "SYN": "и бросит Аарон об обоих козлах жребии: один жребий для Господа, а другой жребий для отпущения;",
+        "NEO": "Aaron jettera le sort sur les deux boucs, un sort pour \\+w Yahweh|strong=\"H3068\"\\+w** et un sort pour Azazel.",
+        "NAB": "he shall cast lots to determine which one is for the LORD and which for Azazel.",
+        "VAT_ES": "En seguida echará las suertes sobre los dos chivos: una suerte para el Señor y la otra para Azazel.",
+        "CEI": "e getterà le sorti per vedere quale dei due debba essere del Signore e quale di Azazel."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הִקְרִ֤יב אַהֲרֹן֙ אֶת הַ/שָּׂעִ֔יר אֲשֶׁ֨ר עָלָ֥ה עָלָ֛י/ו הַ/גּוֹרָ֖ל לַ/יהוָ֑ה וְ/עָשָׂ֖/הוּ חַטָּֽאת׃",
+        "LXX": "καὶ προσάξει Ἀαρὼν τὸν χίμαρον ἐφ’ ὃν ἐπῆλθεν ἐπ’ αὐτὸν ὁ κλῆρος τῷ κυρίῳ, καὶ προσοίσει περὶ ἁμαρτίας·",
+        "VUL": "cujus exierit sors Domino, offeret illum pro peccato :",
+        "SYN": "и приведет Аарон козла, на которого вышел жребий для Господа, и принесет его в жертву за грех,",
+        "NEO": "Aaron fera approcher le bouc sur lequel sera tombé le sort pour \\+w Yahweh|strong=\"H3068\"\\+w** et l’offrira en sacrifice pour le péché.",
+        "NAB": "The goat that is determined by lot for the LORD, Aaron shall bring in and offer up as a sin offering.",
+        "VAT_ES": "Presentará el chivo que la suerte haya destinado al Señor, y lo ofrecerá como sacrificio por el pecado.",
+        "CEI": "Farà quindi avvicinare il capro che è toccato in sorte al Signore e l'offrirà in sacrificio espiatorio;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/הַ/שָּׂעִ֗יר אֲשֶׁר֩ עָלָ֨ה עָלָ֤י/ו הַ/גּוֹרָל֙ לַ/עֲזָאזֵ֔ל יָֽעֳמַד חַ֛י לִ/פְנֵ֥י יְהוָ֖ה לְ/כַפֵּ֣ר עָלָ֑י/ו לְ/שַׁלַּ֥ח אֹת֛/וֹ לַ/עֲזָאזֵ֖ל הַ/מִּדְבָּֽרָ/ה׃",
+        "LXX": "καὶ τὸν χίμαρον ἐφ’ ὃν ἐπῆλθεν ἐπ’ αὐτὸν ὁ κλῆρος τοῦ ἀποπομπαίου, στήσει αὐτὸν ἔναντι Κυρίου ζῶντα τοῦ ἐξιλάσασθαι ἐπ’ αὐτοῦ, ὥστε ἀποστεῖλαι αὐτὸν εἰς τὴν ἀποπομπήν· ἀφήσει αὐτὸν εἰς τὴν ἔρημον.",
+        "VUL": "cujus autem in caprum emissarium, statuet eum vivum coram Domino, ut fundat preces super eo, et emittat eum in solitudinem.",
+        "SYN": "а козла, на которого вышел жребий для отпущения, поставит живого пред Господом, чтобы совершить над ним очищение и отослать его в пустыню для отпущения [и чтоб он понес на себе их беззакония в землю непроходимую].",
+        "NEO": "Et le bouc sur lequel sera tombé le sort pour Azazel, il le placera vivant devant \\+w Yahweh|strong=\"H3068\"\\+w**, afin de faire l’expiation sur lui et de le lâcher dans le désert pour Azazel.",
+        "NAB": "But the goat determined by lot for Azazel he shall set alive before the LORD, so that with it he may make atonement by sending it off to Azazel in the desert.",
+        "VAT_ES": "En cuanto al chivo destinado por la suerte a Azazel, será puesto vivo delante del Señor, a fin de enviarlo al desierto para Azazel.",
+        "CEI": "invece il capro che è toccato in sorte ad Azazel sarà posto vivo davanti al Signore, perché si compia il rito espiatorio su di lui e sia mandato poi ad Azazel nel deserto."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/הִקְרִ֨יב אַהֲרֹ֜ן אֶת פַּ֤ר הַֽ/חַטָּאת֙ אֲשֶׁר ל֔/וֹ וְ/כִפֶּ֥ר בַּֽעֲד֖/וֹ וּ/בְעַ֣ד בֵּית֑/וֹ וְ/שָׁחַ֛ט אֶת פַּ֥ר הַֽ/חַטָּ֖את אֲשֶׁר לֽ/וֹ׃",
+        "LXX": "καὶ προσάξει Ἀαρὼν τὸν μόσχον τὸν περὶ τῆς ἁμαρτίας τὸν αὑτοῦ καὶ τοῦ οἴκου αὐτοῦ μόνον, καὶ ἐξιλάσεται περὶ αὑτοῦ καὶ τοῦ οἴκου αὐτοῦ, καὶ σφάξει τὸν μόσχον τὸν περὶ τῆς ἁμαρτίας τὸν αὑτοῦ.",
+        "VUL": "His rite celebratis, offeret vitulum, et rogans pro se, et pro domo sua, immolabit eum :",
+        "SYN": "И приведет Аарон тельца в жертву за грех за себя, и очистит себя и дом свой, и заколет тельца в жертву за грех за себя;",
+        "NEO": "Aaron offrira donc le taureau du sacrifice pour le péché qui est pour lui, et il fera l’expiation pour lui et pour sa maison. Après avoir égorgé son taureau pour le péché,",
+        "NAB": "\"Thus shall Aaron offer up the bullock, his sin offering, to atone for himself and for his family. When he has slaughtered it,",
+        "VAT_ES": "Aarón ofrecerá su propio novillo como sacrificio por el pecado y practicará el rito de expiación por sí mismo y por su familia. Lo inmolará,",
+        "CEI": "Aronne offrirà dunque il proprio giovenco in sacrificio espiatorio per sé e, fatta l'espiazione per sé e per la sua casa, immolerà il giovenco del sacrificio espiatorio per sé."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/לָקַ֣ח מְלֹֽא הַ֠/מַּחְתָּה גַּֽחֲלֵי אֵ֞שׁ מֵ/עַ֤ל הַ/מִּזְבֵּ֨חַ֙ מִ/לִּ/פְנֵ֣י יְהוָ֔ה וּ/מְלֹ֣א חָפְנָ֔י/ו קְטֹ֥רֶת סַמִּ֖ים דַּקָּ֑ה וְ/הֵבִ֖יא מִ/בֵּ֥ית לַ/פָּרֹֽכֶת׃",
+        "LXX": "καὶ λήμψεται τὸ πυρεῖον πλῆρες ἀνθράκων πυρὸς ἀπὸ τοῦ θυσιαστηρίου τοῦ ἀπέναντι Κυρίου, καὶ πλήσει τὰς χεῖρας θυμιάματος συνθέσεως λεπτῆς καὶ εἰσοίσει ἐσώτερον τοῦ καταπετάσματος,",
+        "VUL": "assumptoque thuribulo, quod de prunis altaris impleverit, et hauriens manu compositum thymiama in incensum, ultra velum intrabit in sancta :",
+        "SYN": "и возьмет горящих угольев полную кадильницу с жертвенника, который пред лицем Господним, и благовонного мелко истолченного курения полные горсти, и внесет за завесу;",
+        "NEO": "il prendra un encensoir plein de charbons ardents de dessus l’autel, de devant \\+w Yahweh|strong=\"H3068\"\\+w**, et deux poignées de parfum odoriférant en poudre ; et ayant porté ces choses au-delà du voile,",
+        "NAB": "he shall take a censer full of glowing embers from the altar before the LORD, as well as a double handful of finely ground fragrant incense, and bringing them inside the veil,",
+        "VAT_ES": "y después tomará un incensario lleno de brasas extraídas del altar que está delante del Señor, y dos puñados de incienso aromático pulverizado. Llevará todo esto detrás del velo,",
+        "CEI": "Poi prenderà l'incensiere pieno di brace tolta dall'altare davanti al Signore e due manciate di incenso odoroso polverizzato; porterà ogni cosa oltre il velo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/נָתַ֧ן אֶֽת הַ/קְּטֹ֛רֶת עַל הָ/אֵ֖שׁ לִ/פְנֵ֣י יְהוָ֑ה וְ/כִסָּ֣ה עֲנַ֣ן הַ/קְּטֹ֗רֶת אֶת הַ/כַּפֹּ֛רֶת אֲשֶׁ֥ר עַל הָ/עֵד֖וּת וְ/לֹ֥א יָמֽוּת׃",
+        "LXX": "καὶ ἐπιθήσει τὸ θυμίαμα ἐπὶ τὸ πῦρ ἔναντι Κυρίου· καὶ καλύψει ἡ ἀτμίς τοῦ θυμιάματος τὸ ἱλαστήριον τὸ ἐπὶ τῶν μαρτυρίων, καὶ οὐκ ἀποθανεῖται.",
+        "VUL": "ut, positis super ignem aromatibus, nebula eorum et vapor operiat oraculum quod est supra testimonium, et non moriatur.",
+        "SYN": "и положит курение на огонь пред лицем Господним, и облако курения покроет крышку, которая над _ковчегом_ откровения, дабы ему не умереть;",
+        "NEO": "il mettra le parfum sur le feu devant \\+w Yahweh|strong=\"H3068\"\\+w**, afin que la nuée du parfum couvre le propitiatoire qui est sur le témoignage, et qu’il ne meure pas.",
+        "NAB": "there before the LORD he shall put incense on the fire, so that a cloud of incense may cover the propitiatory over the commandments; else he will die.",
+        "VAT_ES": "y pondrá el incienso sobre el fuego delante del Señor, de manera que la nube de incienso envuelva la tapa que está encima del Arca del Testimonio. Así no morirá.",
+        "CEI": "Metterà l'incenso sul fuoco davanti al Signore, perché la nube dell'incenso copra il coperchio che è sull'arca e così non muoia."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/לָקַח֙ מִ/דַּ֣ם הַ/פָּ֔ר וְ/הִזָּ֧ה בְ/אֶצְבָּע֛/וֹ עַל פְּנֵ֥י הַ/כַּפֹּ֖רֶת קֵ֑דְמָ/ה וְ/לִ/פְנֵ֣י הַ/כַּפֹּ֗רֶת יַזֶּ֧ה שֶֽׁבַע פְּעָמִ֛ים מִן הַ/דָּ֖ם בְּ/אֶצְבָּעֽ/וֹ׃",
+        "LXX": "καὶ λήμψεται ἀπὸ τοῦ αἵματος τοῦ μόσχου καὶ ῥανεῖ τῷ δακτύλῳ ἐπὶ τὸ ἱλαστήριον κατὰ ἀνατολάς· κατὰ πρόσωπον τοῦ ἱλαστηρίου ῥανεῖ ἑπτάκις ἀπὸ τοῦ αἵματος τῷ δακτύλῳ.",
+        "VUL": "Tollet quoque de sanguine vituli, et asperget digito septies contra propitiatorium ad orientem.",
+        "SYN": "и возьмет крови тельца и покропит перстом своим на крышку спереди и пред крышкою, семь раз покропит кровью с перста своего.",
+        "NEO": "Il prendra du sang du taureau, et en fera aspersion avec son doigt sur la face orientale du propitiatoire, et il fera avec son doigt sept fois aspersion du sang devant le propitiatoire.",
+        "NAB": "Taking some of the bullock's blood, he shall sprinkle it with his finger on the fore part of the propitiatory and likewise sprinkle some of the blood with his finger seven times in front of the propitiatory.",
+        "VAT_ES": "Después tomará la sangre del novillo y rociará con el dedo la parte delantera de la tapa, hacia el este; y delante de la tapa, hará con el dedo siete aspersiones de sangre.",
+        "CEI": "Poi prenderà un pò di sangue del giovenco e ne aspergerà con il dito il coperchio dal lato d'oriente e farà sette volte l'aspersione del sangue con il dito, davanti al coperchio."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/שָׁחַ֞ט אֶת שְׂעִ֤יר הַֽ/חַטָּאת֙ אֲשֶׁ֣ר לָ/עָ֔ם וְ/הֵבִיא֙ אֶת דָּמ֔/וֹ אֶל מִ/בֵּ֖ית לַ/פָּרֹ֑כֶת וְ/עָשָׂ֣ה אֶת דָּמ֗/וֹ כַּ/אֲשֶׁ֤ר עָשָׂה֙ לְ/דַ֣ם הַ/פָּ֔ר וְ/הִזָּ֥ה אֹת֛/וֹ עַל הַ/כַּפֹּ֖רֶת וְ/לִ/פְנֵ֥י הַ/כַּפֹּֽרֶת׃",
+        "LXX": "καὶ σφάξει τὸν χίμαρον τὸν περὶ τῆς ἁμαρτίας τὸν περὶ τοῦ λαοῦ ἔναντι Κυρίου, καὶ εἰσοίσει ἀπὸ τοῦ αἵματος αὐτοῦ ἐσώτερον τοῦ καταπετάσματος, καὶ ποιήσει τὸ αἷμα αὐτοῦ ὃν τρόπον ἐποίησεν τὸ αἷμα τοῦ μόσχου, καὶ ῥανεῖ τὸ αἷμα αὐτοῦ ἐπὶ τὸ ἱλαστήριον κατὰ πρόσωπον τοῦ ἱλαστηρίου,",
+        "VUL": "Cumque mactaverit hircum pro peccato populi, inferet sanguinem ejus intra velum, sicut præceptum est de sanguine vituli, ut aspergat e regione oraculi,",
+        "SYN": "И заколет козла в жертву за грех за народ, и внесет кровь его за завесу, и сделает с кровью его то же, что делал с кровью тельца и покропит ею на крышку и пред крышкою, --",
+        "NEO": "Il égorgera le bouc du sacrifice pour le péché qui est pour le peuple, et il en portera le sang au delà du voile et, faisant de ce sang comme il a fait du sang du taureau, il en fera l’aspersion une fois sur le propitiatoire et sept fois devant le propitiatoire.",
+        "NAB": "\"Then he shall slaughter the people's sin-offering goat, and bringing its blood inside the veil, he shall do with it as he did with the bullock's blood, sprinkling it on the propitiatory and before it.",
+        "VAT_ES": "En seguida inmolará el chivo para el sacrificio por el pecado del pueblo y llevará su sangre detrás del velo. Allí hará con ella lo mismo que hizo con la sangre del novillo: hará las aspersiones sobre la tapa y delante de ella.",
+        "CEI": "Poi immolerà il capro del sacrificio espiatorio, quello per il popolo, e ne porterà il sangue oltre il velo; farà con questo sangue quello che ha fatto con il sangue del giovenco: lo aspergerà sul coperchio e davanti al coperchio."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/כִפֶּ֣ר עַל הַ/קֹּ֗דֶשׁ מִ/טֻּמְאֹת֙ בְּנֵ֣י יִשְׂרָאֵ֔ל וּ/מִ/פִּשְׁעֵי/הֶ֖ם לְ/כָל חַטֹּאתָ֑/ם וְ/כֵ֤ן יַעֲשֶׂה֙ לְ/אֹ֣הֶל מוֹעֵ֔ד הַ/שֹּׁכֵ֣ן אִתָּ֔/ם בְּ/ת֖וֹךְ טֻמְאֹתָֽ/ם׃",
+        "LXX": "καὶ ἐξιλάσεται τὸ ἅγιον ἀπὸ τῶν ἀκαθαρσιῶν τῶν υἱῶν Ἰσραὴλ καὶ ἀπὸ τῶν ἀδικημάτων αὐτῶν περὶ πασῶν τῶν ἁμαρτιῶν αὐτῶν· καὶ οὕτω ποιήσει τῇ σκηνῇ τοῦ μαρτυρίου τῇ ἐκτισμένῃ ἐν αὐτοῖς ἐν μέσῳ τῆς ἀκαθαρσίας αὐτῶν.",
+        "VUL": "et expiet sanctuarium ab immunditiis filiorum Israël, et a prævaricationibus eorum, cunctisque peccatis. Juxta hunc ritum faciet tabernaculo testimonii, quod fixum est inter eos, in medio sordium habitationis eorum.",
+        "SYN": "и очистит святилище от нечистот сынов Израилевых и от преступлений их, во всех грехах их. Так должен поступить он и со скиниею собрания, находящеюся у них, среди нечистот их.",
+        "NEO": "C’est ainsi qu’il fera l’expiation pour le sanctuaire à cause des souillures des enfants d’Israël et de toutes leurs transgressions, selon qu’ils ont péché. Il fera de même pour la tente de réunion, qui demeure avec eux au milieu de leurs souillures.",
+        "NAB": "Thus he shall make atonement for the sanctuary because of all the sinful defilements and faults of the Israelites. He shall do the same for the meeting tent, which is set up among them in the midst of their uncleanness.",
+        "VAT_ES": "Así practicará el rito de expiación por el Santuario, para purificarlo de las impurezas y transgresiones de los israelitas, cualesquiera sean sus pecados, Y lo mismo hará con la Carpa del Encuentro, que habita con ellos en medio de sus impurezas.",
+        "CEI": "Così farà l'espiazione sul santuario per l'impurità degli Israeliti, per le loro trasgressioni e per tutti i loro peccati. Lo stesso farà per la tenda del convegno che si trova fra di loro, in mezzo alle loro impurità."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/כָל אָדָ֞ם לֹא יִהְיֶ֣ה בְּ/אֹ֣הֶל מוֹעֵ֗ד בְּ/בֹא֛/וֹ לְ/כַפֵּ֥ר בַּ/קֹּ֖דֶשׁ עַד צֵאת֑/וֹ וְ/כִפֶּ֤ר בַּעֲד/וֹ֙ וּ/בְעַ֣ד בֵּית֔/וֹ וּ/בְעַ֖ד כָּל קְהַ֥ל יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ πᾶς ἄνθρωπος οὐκ ἔσται ἐν τῇ σκηνῇ τοῦ μαρτυρίου, εἰσπορευομένου αὐτοῦ ἐξιλάσασθαι ἐν τῷ ἁγίῳ, ἕως ἂν ἐξέλθῃ· καὶ ἐξιλάσεται περὶ αὑτοῦ καὶ τοῦ οἴκου αὐτοῦ, καὶ περὶ πάσης συναγωγῆς υἱῶν Ἰσραήλ.",
+        "VUL": "Nullus hominum sit in tabernaculo, quando pontifex sanctuarium ingreditur, ut roget pro se, et pro domo sua, et pro universo ctu Israël, donec egrediatur.",
+        "SYN": "Ни один человек не должен быть в скинии собрания, когда входит он для очищения святилища, до самого выхода его. И так очистит он себя, дом свой и все общество Израилево.",
+        "NEO": "Qu’il n’y ait personne dans la tente de réunion lorsqu’il entrera pour faire l’expiation dans le sanctuaire, jusqu’à ce qu’il en sorte. Il fera l’expiation pour lui, pour sa maison et pour toute l’assemblée d’Israël.",
+        "NAB": "No one else may be in the meeting tent from the time he enters the sanctuary to make atonement until he departs. When he has made atonement for himself and his household, as well as for the whole Israelite community,",
+        "VAT_ES": "Cuando Aarón entre en el Santuario para realizar allí el rito de expiación, nadie deberá estar en la Carpa del Encuentro, hasta que él salga. Después de practicar el rito de expiación por sí mismo, por su familia y por toda la asamblea de Israel,",
+        "CEI": "Nella tenda del convegno non dovrà esserci alcuno, da quando egli entrerà nel santuario per farvi il rito espiatorio, finché egli non sia uscito e non abbia compiuto il rito espiatorio per sé, per la sua casa e per tutta la comunità d'Israele."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/יָצָ֗א אֶל הַ/מִּזְבֵּ֛חַ אֲשֶׁ֥ר לִ/פְנֵֽי יְהוָ֖ה וְ/כִפֶּ֣ר עָלָ֑י/ו וְ/לָקַ֞ח מִ/דַּ֤ם הַ/פָּר֙ וּ/מִ/דַּ֣ם הַ/שָּׂעִ֔יר וְ/נָתַ֛ן עַל קַרְנ֥וֹת הַ/מִּזְבֵּ֖חַ סָבִֽיב׃",
+        "LXX": "καὶ ἐξελεύσεται ἐπὶ τὸ θυσιαστήριον τὸ ὂν ἀπέναντι Κυρίου καὶ ἐξιλάσεται ἐπ’ αὐτοῦ· καὶ λήμψεται ἀπὸ τοῦ αἵματος τοῦ μόσχου καὶ ἀπὸ τοῦ αἵματος τοῦ χιμάρου καὶ ἐπιθήσει ἐπὶ τὰ κέρατα τοῦ θυσιαστηρίου κύκλῳ,",
+        "VUL": "Cum autem exierit ad altare quod coram Domino est, oret pro se, et sumptum sanguinem vituli atque hirci fundat super cornua ejus per gyrum :",
+        "SYN": "И выйдет он к жертвеннику, который пред лицем Господним, и очистит его, и возьмет крови тельца и крови козла, и возложит на роги жертвенника со всех сторон,",
+        "NEO": "Il ira en sortant vers l’autel qui est devant \\+w Yahweh|strong=\"H3068\"\\+w**, et fera l’expiation pour l’autel : ayant pris du sang du taureau et du sang du bouc, il en mettra sur les cornes de l’autel tout autour.",
+        "NAB": "he shall come out to the altar before the LORD and make atonement for it also. Taking some of the bullock's and the goat's blood, he shall put it on the horns around the altar,",
+        "VAT_ES": "Aarón saldrá hasta el altar que está delante del Señor para realizar el rito de expiación por ese altar: tomará sangre del novillo y del chivo, y la pondrá sobre cada uno de los cuernos del altar;",
+        "CEI": "Uscito dunque verso l'altare, che è davanti al Signore, compirà il rito espiatorio per esso, prendendo il sangue del giovenco e il sangue del capro e bagnandone intorno i corni dell'altare."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/הִזָּ֨ה עָלָ֧י/ו מִן הַ/דָּ֛ם בְּ/אֶצְבָּע֖/וֹ שֶׁ֣בַע פְּעָמִ֑ים וְ/טִהֲר֣/וֹ וְ/קִדְּשׁ֔/וֹ מִ/טֻּמְאֹ֖ת בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ῥανεῖ ἐπ’ αὐτοῦ ἀπὸ τοῦ αἵματος τῷ δακτύλῳ ἑπτάκις καὶ καθαριεῖ αὐτό, καὶ ἁγιάσει αὐτὸ ἀπὸ τῶν ἀκαθαρσιῶν τῶν υἱῶν Ἰσραήλ.",
+        "VUL": "aspergensque digito septies, expiet, et sanctificet illud ab immunditiis filiorum Israël.",
+        "SYN": "и покропит на него кровью с перста своего семь раз, и очистит его, и освятит его от нечистот сынов Израилевых.",
+        "NEO": "Il fera sur l’autel, avec son doigt, sept fois aspersion du sang ; il le purifiera et le sanctifiera des souillures des enfants d’Israël.",
+        "NAB": "and with his finger sprinkle some of the blood on it seven times. Thus he shall render it clean and holy, purged of the defilements of the Israelites.",
+        "VAT_ES": "luego hará con el dedo siete aspersiones de sangre sobre el altar, y así lo purificará de las impurezas de los israelitas, y lo santificará",
+        "CEI": "Farà per sette volte l'aspersione del sangue con il dito sopra l'altare; così lo purificherà e lo santificherà dalle impurità degli Israeliti."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/כִלָּה֙ מִ/כַּפֵּ֣ר אֶת הַ/קֹּ֔דֶשׁ וְ/אֶת אֹ֥הֶל מוֹעֵ֖ד וְ/אֶת הַ/מִּזְבֵּ֑חַ וְ/הִקְרִ֖יב אֶת הַ/שָּׂעִ֥יר הֶ/חָֽי׃",
+        "LXX": "καὶ συντελέσει ἐξιλασκόμενος τὸ ἅγιον καὶ τὴν σκηνὴν τοῦ μαρτυρίου καὶ τὸ θυσιαστήριον, καὶ περὶ τῶν ἱερέων καθαριεῖ· καὶ προσάξει τὸν χίμαρον τὸν ζῶντα.",
+        "VUL": "Postquam emundaverit sanctuarium, et tabernaculum, et altare, tunc offerat hircum viventem :",
+        "SYN": "И совершив очищение святилища, скинии собрания и жертвенника [и очистив священников], приведет он живого козла,",
+        "NEO": "Lorsqu’il aura achevé de faire l’expiation pour le sanctuaire, pour la tente de réunion et pour l’autel, il présentera le bouc vivant.",
+        "NAB": "\"When he has completed the atonement rite for the sanctuary, the meeting tent and the altar, Aaron shall bring forward the live goat.",
+        "VAT_ES": "Cuando haya terminado de practicar el rito de expiación por el Santuario, por la Carpa del Encuentro y por el altar, presentará el chivo que todavía está vivo,",
+        "CEI": "Quando avrà finito l'aspersione per il santuario, per la tenda del convegno e per l'altare, farà accostare il capro vivo."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/סָמַ֨ךְ אַהֲרֹ֜ן אֶת שְׁתֵּ֣י יד/ו יָדָ֗י/ו עַ֨ל רֹ֣אשׁ הַ/שָּׂעִיר֮ הַ/חַי֒ וְ/הִתְוַדָּ֣ה עָלָ֗י/ו אֶת כָּל עֲוֺנֹת֙ בְּנֵ֣י יִשְׂרָאֵ֔ל וְ/אֶת כָּל פִּשְׁעֵי/הֶ֖ם לְ/כָל חַטֹּאתָ֑/ם וְ/נָתַ֤ן אֹתָ/ם֙ עַל רֹ֣אשׁ הַ/שָּׂעִ֔יר וְ/שִׁלַּ֛ח בְּ/יַד אִ֥ישׁ עִתִּ֖י הַ/מִּדְבָּֽרָ/ה׃",
+        "LXX": "καὶ ἐπιθήσει Ἀαρὼν τὰς χεῖρας αὐτοῦ ἐπὶ τὴν κεφαλὴν τοῦ χιμάρου τοῦ ζῶντος, καὶ ἐξαγορευσει ἐπ’ αὐτοῦ πάσας τὰς ἀνομίας τῶν υἱῶν Ἰσραὴλ καὶ πάσας τὰς ἀδικίας αὐτῶν καὶ πάσας τὰς ἁμαρτίας αὐτῶν, καὶ ἐπιθήσει αὐτὰς ἐπὶ τὴν κεφαλὴν τοῦ χιμάρου τοῦ ζῶντος, καὶ ἐξαποστελεῖ ἐν χειρὶ ἀνθρώπου ἑτοίμου εἰς τὴν ἔρημον·",
+        "VUL": "et posita utraque manu super caput ejus, confiteatur omnes iniquitates filiorum Israël, et universa delicta atque peccata eorum : quæ imprecans capiti ejus, emittet illum per hominem paratum, in desertum.",
+        "SYN": "и возложит Аарон обе руки свои на голову живого козла, и исповедает над ним все беззакония сынов Израилевых и все преступления их и все грехи их, и возложит их на голову козла, и отошлет с нарочным человеком в пустыню:",
+        "NEO": "Ayant posé ses deux mains sur la tête du bouc vivant, Aaron confessera sur lui toutes les iniquités des enfants d’Israël et toutes leurs transgressions, selon qu’ils ont péché ; il les mettra sur la tête du bouc et il l’enverra ensuite au désert par un homme tout prêt.",
+        "NAB": "Laying both hands on its head, he shall confess over it all the sinful faults and transgressions of the Israelites, and so put them on the goat's head. He shall then have it led into the desert by an attendant.",
+        "VAT_ES": "Aarón impondrá sus dos manos sobre la cabeza del animal y confesará sobre él todas las iniquidades y transgresiones de los israelitas, cualesquiera sean los pecados que hayan cometido, cargándolas sobre la cabeza del chivo. Entonces lo enviará al desierto por medio de un hombre designado para ello.",
+        "CEI": "Aronne poserà le mani sul capo del capro vivo, confesserà sopra di esso tutte le iniquità degli Israeliti, tutte le loro trasgressioni, tutti i loro peccati e li riverserà sulla testa del capro; poi, per mano di un uomo incaricato di ciò, lo manderà via nel deserto."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/נָשָׂ֨א הַ/שָּׂעִ֥יר עָלָ֛י/ו אֶת כָּל עֲוֺנֹתָ֖/ם אֶל אֶ֣רֶץ גְּזֵרָ֑ה וְ/שִׁלַּ֥ח אֶת הַ/שָּׂעִ֖יר בַּ/מִּדְבָּֽר׃",
+        "LXX": "καὶ λήμψεται ὁ χίμαρος ἐφ’ ἑαυτῷ τὰς ἀδικίας αὐτῶν εἰς γῆν ἄβατον, καὶ ἐξαποστελεῖ τὸν χίμαρον εἰς τὴν ἔρημον.",
+        "VUL": "Cumque portaverit hircus omnes iniquitates eorum in terram solitariam, et dimissus fuerit in deserto,",
+        "SYN": "и понесет козел на себе все беззакония их в землю непроходимую, и пустит он козла в пустыню.",
+        "NEO": "Le bouc emportera sur lui toutes leurs iniquités dans une terre inhabitée, et l’homme lâchera le bouc dans le désert.",
+        "NAB": "Since the goat is to carry off their iniquities to an isolated region, it must be sent away into the desert.",
+        "VAT_ES": "El chivo llevará sobre sí, hacia una región inaccesible, todas las iniquidades que ellos hayan cometido; y el animal será soltado en el desierto.",
+        "CEI": "Quel capro, portandosi addosso tutte le loro iniquità in una regione solitaria, sarà lasciato andare nel deserto."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וּ/בָ֤א אַהֲרֹן֙ אֶל אֹ֣הֶל מוֹעֵ֔ד וּ/פָשַׁט֙ אֶת בִּגְדֵ֣י הַ/בָּ֔ד אֲשֶׁ֥ר לָבַ֖שׁ בְּ/בֹא֣/וֹ אֶל הַ/קֹּ֑דֶשׁ וְ/הִנִּיחָ֖/ם שָֽׁם׃",
+        "LXX": "καὶ εἰσελεύσεται Ἀαρὼν εἰς τὴν σκηνὴν τοῦ μαρτυρίου, καὶ ἐκδύσεται τὴν στολὴν τὴν λινῆν ἣν ἐνδεδύκει εἰσπορευομένου αὐτοῦ εἰς τὸ ἅγιον, καὶ ἀποθήσει αὐτὴν ἐκεῖ.",
+        "VUL": "revertetur Aaron in tabernaculum testimonii, et depositis vestibus, quibus prius indutus erat, cum intraret sanctuarium, relictisque ibi,",
+        "SYN": "И войдет Аарон в скинию собрания, и снимет льняные одежды, которые надевал, входя во святилище, и оставит их там,",
+        "NEO": "Alors Aaron entrera dans la tente de réunion ; il quittera les vêtements de lin qu’il avait revêtus pour entrer dans le sanctuaire et, les ayant déposés là,",
+        "NAB": "\"After Aaron has again gone into the meeting tent, he shall strip off and leave in the sanctuary the linen vestments he had put on when he entered there.",
+        "VAT_ES": "Aarón entrará en la Carpa del Encuentro, se despojará de las vestiduras de lino que se había puesto cuando entró en el Santuario, y las dejará allí.",
+        "CEI": "Poi Aronne entrerà nella tenda del convegno, si toglierà le vesti di lino che aveva indossate per entrare nel santuario e le deporrà in quel luogo."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/רָחַ֨ץ אֶת בְּשָׂר֤/וֹ בַ/מַּ֨יִם֙ בְּ/מָק֣וֹם קָד֔וֹשׁ וְ/לָבַ֖שׁ אֶת בְּגָדָ֑י/ו וְ/יָצָ֗א וְ/עָשָׂ֤ה אֶת עֹֽלָת/וֹ֙ וְ/אֶת עֹלַ֣ת הָ/עָ֔ם וְ/כִפֶּ֥ר בַּעֲד֖/וֹ וּ/בְעַ֥ד הָ/עָֽם׃",
+        "LXX": "καὶ λούσεται τὸ σῶμα αὐτοῦ ὕδατι ἐν τόπῳ ἁγίῳ καὶ ἐνδύσεται τὴν στολὴν αὐτοῦ, καὶ ἐξελθὼν ποιήσει τὸ ὁλοκάρπωμα αὐτοῦ καὶ τὸ ὁλοκάρπωμα τοῦ λαοῦ, καὶ ἐξιλάσεται περὶ αὑτοῦ καὶ περὶ τοῦ οἴκου αὐτοῦ καὶ περὶ τοῦ λαοῦ ὡς περὶ τῶν ἱερέων.",
+        "VUL": "lavabit carnem suam in loco sancto, indueturque vestibus suis. Et postquam egressus obtulerit holocaustum suum, ac plebis, rogabit tam pro se quam pro populo :",
+        "SYN": "и омоет тело свое водою на святом месте, и наденет одежды свои, и выйдет и совершит всесожжение за себя и всесожжение за народ, и очистит себя, [дом свой] и народ [и священников];",
+        "NEO": "il baignera son corps dans l’eau en un lieu saint et reprendra ses vêtements.",
+        "NAB": "After bathing his body with water in a sacred place, he shall put on his vestments, and then come out and offer his own and the people's holocaust, in atonement for himself and for the people,",
+        "VAT_ES": "Luego se lavará con agua en el recinto sagrado y se volverá a poner sus vestiduras. En seguida saldrá para ofrecer su holocausto y el holocausto del pueblo, y para practicar el rito de expiación por sí mismo y por el pueblo.",
+        "CEI": "Laverà la sua persona nell'acqua in luogo santo, indosserà le sue vesti e uscirà ad offrire il suo olocausto e l'olocausto del popolo e a compiere il rito espiatorio per sé e per il popolo."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/אֵ֛ת חֵ֥לֶב הַֽ/חַטָּ֖את יַקְטִ֥יר הַ/מִּזְבֵּֽחָ/ה׃",
+        "LXX": "καὶ τὸ στέαρ τὸ περὶ τῶν ἁμαρτιῶν ἀνοίσει ἐπὶ τὸ θυσιαστήριον.",
+        "VUL": "et adipem, qui oblatus est pro peccatis, adolebit super altare.",
+        "SYN": "а тук жертвы за грех воскурит на жертвеннике.",
+        "NEO": "Il sortira ensuite, offrira son holocauste et celui du peuple, fera l’expiation pour lui et pour le peuple, et fera fumer sur l’autel la graisse du sacrifice pour le péché.",
+        "NAB": "and also burn the fat of the sin offering on the altar.",
+        "VAT_ES": "Las partes grasosas de la víctima del sacrificio por el pecado, las hará sobre el altar.",
+        "CEI": "E farà ardere sull'altare le parti grasse del sacrificio espiatorio."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/הַֽ/מְשַׁלֵּ֤חַ אֶת הַ/שָּׂעִיר֙ לַֽ/עֲזָאזֵ֔ל יְכַבֵּ֣ס בְּגָדָ֔י/ו וְ/רָחַ֥ץ אֶת בְּשָׂר֖/וֹ בַּ/מָּ֑יִם וְ/אַחֲרֵי כֵ֖ן יָב֥וֹא אֶל הַֽ/מַּחֲנֶֽה׃",
+        "LXX": "καὶ ὁ ἐξαποστέλλων τὸν χίμαρον τὸν διεσταλμένον εἰς ἄφεσιν πλυνεῖ τὰ ἱμάτια καὶ λούσεται τὸ σῶμα αὐτοῦ ὕδατι, καὶ μετὰ ταῦτα εἰσελεύσεται εἰς τὴν παρεμβολήν.",
+        "VUL": "Ille vero, qui dimiserit caprum emissarium, lavabit vestimenta sua, et corpus aqua, et sic ingredietur in castra.",
+        "SYN": "И тот, кто отводил козла для отпущения, должен вымыть одежды свои, омыть тело свое водою, и потом может войти в стан.",
+        "NEO": "Celui qui aura lâché le bouc pour Azazel lavera ses vêtements et baignera son corps dans l’eau ; après quoi, il rentrera dans le camp.",
+        "NAB": "\"The man who has led away the goat for Azazel shall wash his garments and bathe his body in water; only then may he enter the camp.",
+        "VAT_ES": "El hombre encargado de soltar el chivo para Azazel deberá lavar su ropa y bañarse con agua; después podrá entrar de nuevo en el campamento.",
+        "CEI": "Colui che avrà lasciato andare il capro destinato ad Azazel si laverà le vesti, laverà il suo corpo nell'acqua; dopo, rientrerà nel campo."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/אֵת֩ פַּ֨ר הַֽ/חַטָּ֜את וְ/אֵ֣ת שְׂעִ֣יר הַֽ/חַטָּ֗את אֲשֶׁ֨ר הוּבָ֤א אֶת דָּמָ/ם֙ לְ/כַפֵּ֣ר בַּ/קֹּ֔דֶשׁ יוֹצִ֖יא אֶל מִ/ח֣וּץ לַֽ/מַּחֲנֶ֑ה וְ/שָׂרְפ֣וּ בָ/אֵ֔שׁ אֶת עֹרֹתָ֥/ם וְ/אֶת בְּשָׂרָ֖/ם וְ/אֶת פִּרְשָֽׁ/ם׃",
+        "LXX": "καὶ τὸν μόσχον τὸν περὶ τῆς ἁμαρτίας καὶ τὸν χίμαρον τὸν περὶ τῆς ἁμαρτίας, ὧν τὸ αἷμα εἰσηνέχθη ἐξιλάσασθαι ἐν τῷ ἁγίῳ, ἐξοίσουσιν αὐτὰ ἔξω τῆς παρεμβολῆς, καὶ κατακαύσουσιν αὐτὰ ἐν πυρί, καὶ τὰ δέρματα αὐτῶν καὶ τὰ κρέα αὐτῶν καὶ τὴν κόπρον αὐτῶν.",
+        "VUL": "Vitulum autem, et hircum, qui pro peccato fuerant immolati, et quorum sanguis illatus est in sanctuarium, ut expiatio compleretur, asportabunt foras castra, et comburent igni tam pelles quam carnes eorum, ac fimum :",
+        "SYN": "А тельца за грех и козла за грех, которых кровь внесена была для очищения святилища, пусть вынесут вон из стана и сожгут на огне кожи их и мясо их и нечистоту их;",
+        "NEO": "On emportera hors du camp le taureau pour le péché et le bouc pour le péché, dont le sang aura été porté dans le sanctuaire pour faire l’expiation, et l’on consumera par le feu leur peau, leur chair et leurs excréments.",
+        "NAB": "The sin-offering bullock and goat whose blood was brought into the sanctuary to make atonement, shall be taken outside the camp, where their hides and flesh and offal shall be burned up in the fire.",
+        "VAT_ES": "El novillo del sacrificio por el pecado y el chivo del sacrificio por el pecado –cuya sangre fue introducida en el Santuario para el rito de expiación– serán sacados fuera del campamento, y su cuero, su carne y sus excrementos serán consumidos por el fuego.",
+        "CEI": "Si porterà fuori del campo il giovenco del sacrificio espiatorio e il capro del sacrificio, il cui sangue è stato introdotto nel santuario per compiere il rito espiatorio, se ne bruceranno nel fuoco la pelle, la carne e gli escrementi."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/הַ/שֹּׂרֵ֣ף אֹתָ֔/ם יְכַבֵּ֣ס בְּגָדָ֔י/ו וְ/רָחַ֥ץ אֶת בְּשָׂר֖/וֹ בַּ/מָּ֑יִם וְ/אַחֲרֵי כֵ֖ן יָב֥וֹא אֶל הַֽ/מַּחֲנֶֽה׃",
+        "LXX": "ὁ δὲ κατακαίων αὐτὰ πλυνεῖ τὰ ἱμάτια καὶ λούσεται τὸ σῶμα αὐτοῦ ὕδατι, καὶ μετὰ ταῦτα εἰσελεύσεται εἰς τὴν παρεμβολήν.",
+        "VUL": "et quicumque combusserit ea, lavabit vestimenta sua et carnem aqua, et sic ingredietur in castra.",
+        "SYN": "кто сожжет их, тот должен вымыть одежды свои и омыть тело свое водою, и после того может войти в стан.",
+        "NEO": "Celui qui les aura brûlés lavera ses vêtements et baignera son corps dans l’eau ; après quoi, il rentrera dans le camp.",
+        "NAB": "The one who burns them shall wash his garments and bathe his body in water; only then may he enter the camp.",
+        "VAT_ES": "La persona que los queme deberá lavar su ropa y bañarse con agua; después podrá entrar de nuevo en el campamento.",
+        "CEI": "Poi colui che li avrà bruciati dovrà lavarsi le vesti e bagnarsi il corpo nell'acqua; dopo, rientrerà nel campo."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/הָיְתָ֥ה לָ/כֶ֖ם לְ/חֻקַּ֣ת עוֹלָ֑ם בַּ/חֹ֣דֶשׁ הַ֠/שְּׁבִיעִי בֶּֽ/עָשׂ֨וֹר לַ/חֹ֜דֶשׁ תְּעַנּ֣וּ אֶת נַפְשֹֽׁתֵי/כֶ֗ם וְ/כָל מְלָאכָה֙ לֹ֣א תַעֲשׂ֔וּ הָֽ/אֶזְרָ֔ח וְ/הַ/גֵּ֖ר הַ/גָּ֥ר בְּ/תוֹכְ/כֶֽם׃",
+        "LXX": "Καὶ ἔσται τοῦτο ὑμῖν νόμιμον αἰώνιον· ἐν τῷ μηνὶ τῷ ἑβδόμῳ ταπεινώσατε τὰς ψυχὰς ὑμῶν καὶ πᾶν ἔργον οὐ ποιήσετε, ὁ αὐτόχθων καὶ ὁ προσήλυτος ὁ προσκείμενος ἐν ὑμῖν.",
+        "VUL": "Eritque vobis hoc legitimum sempiternum : mense septimo, decima die mensis, affligetis animas vestras, nullumque opus facietis, sive indigena, sive advena qui peregrinatur inter vos.",
+        "SYN": "И да будет сие для вас вечным постановлением: в седьмой месяц, в десятый [день] месяца смиряйте души ваши и никакого дела не делайте, ни туземец, ни пришлец, поселившийся между вами,",
+        "NEO": "Ceci sera pour vous une loi perpétuelle : au septième mois, le dixième jour du mois, vous affligerez vos âmes et ne ferez aucun ouvrage, ni l’indigène, ni l’étranger qui séjourne au milieu de vous.",
+        "NAB": "\"This shall be an everlasting ordinance for you: on the tenth day of the seventh month every one of you, whether a native or a resident alien, shall mortify himself and shall do no work.",
+        "VAT_ES": "Este será para ustedes un decreto válido para siempre: El décimo día del séptimo mes ustedes ayunarán y se abstendrán de hacer cualquier clase de trabajo, tanto el nativo como el extranjero que resida entre ustedes.",
+        "CEI": "Questa sarà per voi una legge perenne: nel settimo mese, nel decimo giorno del mese, vi umilierete, vi asterrete da qualsiasi lavoro, sia colui che è nativo del paese, sia il forestiero che soggiorna in mezzo a voi."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "כִּֽי בַ/יּ֥וֹם הַ/זֶּ֛ה יְכַפֵּ֥ר עֲלֵי/כֶ֖ם לְ/טַהֵ֣ר אֶתְ/כֶ֑ם מִ/כֹּל֙ חַטֹּ֣אתֵי/כֶ֔ם לִ/פְנֵ֥י יְהוָ֖ה תִּטְהָֽרוּ׃",
+        "LXX": "ἐν γὰρ τῇ ἡμέρᾳ ταύτῃ ἐξιλάσεται περὶ ὑμῶν, καθαρίσαι ὑμᾶς ἀπὸ πασῶν τῶν ἁμαρτιῶν ὑμῶν ἔναντι Κυρίου· καὶ καθαρισθήσεσθε.",
+        "VUL": "In hac die expiatio erit vestri, atque mundatio ab omnibus peccatis vestris : coram Domino mundabimini.",
+        "SYN": "ибо в сей день очищают вас, чтобы сделать вас чистыми от всех грехов ваших, чтобы вы были чисты пред лицем Господним;",
+        "NEO": "Car en ce jour on fera l’expiation pour vous, afin de vous purifier ; vous serez purs de tous vos péchés devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Since on this day atonement is made for you to make you clean, so that you may be cleansed of all your sins before the LORD,",
+        "VAT_ES": "Porque ese día se practicará el rito de expiación en favor de ustedes, a fin de purificarlos de todos sus pecados. Así quedarán puros delante del Señor.",
+        "CEI": "Poiché in quel giorno si compirà il rito espiatorio per voi, al fine di purificarvi; voi sarete purificati da tutti i vostri peccati, davanti al Signore."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "שַׁבַּ֨ת שַׁבָּת֥וֹן הִיא֙ לָ/כֶ֔ם וְ/עִנִּיתֶ֖ם אֶת נַפְשֹׁתֵי/כֶ֑ם חֻקַּ֖ת עוֹלָֽם׃",
+        "LXX": "σάββατα σαββάτων ἀνάπαυσις αὕτη ἔσται ὑμῖν, καὶ ταπεινώσετε τὰς ψυχὰς ὑμῶν· νόμιμον αἰώνιον.",
+        "VUL": "Sabbatum enim requietionis est, et affligetis animas vestras religione perpetua.",
+        "SYN": "это суббота покоя для вас, смиряйте души ваши: это постановление вечное.",
+        "NEO": "Ce sera pour vous un sabbat, un jour de repos, et vous affligerez vos âmes. C’est une loi perpétuelle.",
+        "NAB": "by everlasting ordinance it shall be a most solemn sabbath for you, on which you must mortify yourselves.",
+        "VAT_ES": "Ese será para ustedes un día de reposo absoluto, en el que deberán ayunar. Se trata de un decreto válido para siempre.",
+        "CEI": "Sarà per voi un sabato di riposo assoluto e voi vi umilierete; è una legge perenne."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/כִפֶּ֨ר הַ/כֹּהֵ֜ן אֲשֶׁר יִמְשַׁ֣ח אֹת֗/וֹ וַ/אֲשֶׁ֤ר יְמַלֵּא֙ אֶת יָד֔/וֹ לְ/כַהֵ֖ן תַּ֣חַת אָבִ֑י/ו וְ/לָבַ֛שׁ אֶת בִּגְדֵ֥י הַ/בָּ֖ד בִּגְדֵ֥י הַ/קֹּֽדֶשׁ׃",
+        "LXX": "ἐξιλάσεται ὁ ἱερεύς, ὃν ἂν χρίσωσιν αὐτὸν καὶ ὃν ἂν τελειώσουσιν τὰς χεῖρας αὐτοῦ ἱερατεύειν μετὰ τὸν πατέρα αὐτοῦ, καὶ ἐνδύσεται τὴν στολὴν τὴν λινῆν, στολὴν ἁγίαν·",
+        "VUL": "Expiabit autem sacerdos, qui unctus fuerit, et cujus manus initiatæ sunt ut sacerdotio fungatur pro patre suo : indueturque stola linea et vestibus sanctis,",
+        "SYN": "Очищать же должен священник, который помазан и который посвящен, чтобы священнодействовать ему вместо отца своего: и наденет он льняные одежды, одежды священные,",
+        "NEO": "L’expiation sera faite, dans l’avenir, par le grand prêtre qui aura reçu l’onction et qui aura été installé pour remplir les fonctions sacerdotales à la place de son père. Il revêtira des vêtements de lin, des vêtements sacrés.",
+        "NAB": "\"This atonement is to be made by the priest who has been anointed and ordained to the priesthood in succession to his father. He shall wear the linen garments, the sacred vestments,",
+        "VAT_ES": "El sacerdote que haya sido consagrado por la unción e investido para ejercer el sacerdocio como sucesor de su padre, realizará el rito de expiación; se pondrá las vestiduras de lino –las vestiduras sagradas–",
+        "CEI": "Il sacerdote che ha ricevuto l'unzione ed è rivestito del sacerdozio al posto di suo padre, compirà il rito espiatorio; si vestirà delle vesti di lino, delle vesti sacre."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/כִפֶּר֙ אֶת מִקְדַּ֣שׁ הַ/קֹּ֔דֶשׁ וְ/אֶת אֹ֧הֶל מוֹעֵ֛ד וְ/אֶת הַ/מִּזְבֵּ֖חַ יְכַפֵּ֑ר וְ/עַ֧ל הַ/כֹּהֲנִ֛ים וְ/עַל כָּל עַ֥ם הַ/קָּהָ֖ל יְכַפֵּֽר׃",
+        "LXX": "καὶ ἐξιλάσεται τὸ ἅγιον τοῦ ἁγίου, καὶ τὴν σκηνὴν τοῦ μαρτυρίου καὶ τὸ θυσιαστήριον ἐξιλάσεται, καὶ περὶ τῶν ἱερέων καὶ περὶ πάσης συναγωγῆς ἐξιλάσεται.",
+        "VUL": "et expiabit sanctuarium et tabernaculum testimonii atque altare, sacerdotes quoque et universum populum.",
+        "SYN": "и очистит Святое-святых и скинию собрания, и жертвенник очистит, и священников и весь народ общества очистит.",
+        "NEO": "Il fera l’expiation pour le sanctuaire de sainteté, il fera l’expiation pour la tente de réunion et pour l’autel des holocaustes ; il fera l’expiation pour les prêtres et pour tout le peuple de l’assemblée.",
+        "NAB": "and make atonement for the sacred sanctuary, the meeting tent and the altar, as well as for the priests and all the people of the community.",
+        "VAT_ES": "y realizará el rito de expiación por la parte más santa del Santuario, por la Carpa del Encuentro y por el altar, Lo mismo hará por los sacerdotes y por todos los miembros de la asamblea.",
+        "CEI": "Farà l'espiazione per il santuario, per la tenda del convegno e per l'altare; farà l'espiazione per i sacerdoti e per tutto il popolo della comunità."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְ/הָֽיְתָה זֹּ֨את לָ/כֶ֜ם לְ/חֻקַּ֣ת עוֹלָ֗ם לְ/כַפֵּ֞ר עַל בְּנֵ֤י יִשְׂרָאֵל֙ מִ/כָּל חַטֹּאתָ֔/ם אַחַ֖ת בַּ/שָּׁנָ֑ה וַ/יַּ֕עַשׂ כַּ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "καὶ ἔσται τοῦτο ὑμῖν νόμιμον αἰώνιον ἐξιλάσκεσθαι περὶ τῶν υἱῶν Ἰσραὴλ ἀπὸ πασῶν τῶν ἁμαρτιῶν αὐτῶν· ἅπαξ τοῦ ἐνιαυτοῦ ποιηθήσεται, καθὰ συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "Eritque vobis hoc legitimum sempiternum, ut oretis pro filiis Israël, et pro cunctis peccatis eorum semel in anno. Fecit igitur sicut præceperat Dominus Moysi.",
+        "SYN": "И да будет сие для вас вечным постановлением: очищать сынов Израилевых от всех грехов их однажды в году. И сделал он так, как повелел Господь Моисею.",
+        "NEO": "Ce sera pour vous une loi perpétuelle : l’expiation se fera une fois chaque année pour les enfants d’Israël, à cause de leurs péchés. »",
+        "NAB": "This, then, shall be an everlasting ordinance for you: once a year atonement shall be made for all the sins of the Israelites.\" Thus was it done, as the LORD had commanded Moses.",
+        "VAT_ES": "Este será para ustedes un decreto válido para siempre: una vez al año se realizará el rito de expiación en favor de los israelitas, por todos sus pecados. Y Moisés hizo lo que el Señor le había ordenado.",
+        "CEI": "Questa sarà per voi legge perenne: una volta all'anno, per gli Israeliti, si farà l'espiazione di tutti i loro peccati\". E si fece come il Signore aveva ordinato a Mosè."
+      }
+    }
+  }
+}

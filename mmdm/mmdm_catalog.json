@@ -1,0 +1,3109 @@
+{
+    "MMdM": {
+        "display_config": {
+            "wheel_volume_version": "1.0",
+            "volume_schema_version": "1.0.0",
+            "volume_data_version": "2025.12.12",
+            "structure_type": "monolithic",
+            "volume_type": "wheel_hierarchical",
+            "volume_name": "MMdM Catalog",
+            "volume_description": "Water-Cooled Exhaust Manifolds Database",
+            "leaf_level": "model",
+            "focus_ring_startup": {
+                "initial_magnified_item": 24,
+                "top_navigation_level": "manufacturer"
+            },
+            "ui_limits": {
+                "focus_ring_max_depth": 6,
+                "parent_button_min_depth": 1
+            },
+            "detail_sector": {
+                "mode": "product_browser",
+                "default_image": "catalog_logo",
+                "logo_base_path": "assets/"
+            },
+            "irregular_plurals": {
+                "country": "countries"
+            },
+            "hierarchy_levels": {
+                "market": {
+                    "text_format": "uppercase",
+                    "color": "#f1b800",
+                    "positioning": "center",
+                    "display_name": "Market",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none"
+                },
+                "country": {
+                    "text_format": "title_case",
+                    "color": "#f1b800",
+                    "positioning": "arc",
+                    "display_name": "Country",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none",
+                    "skip_sort_validation": true
+                },
+                "manufacturer": {
+                    "text_format": "title_case",
+                    "color": "#f1b800",
+                    "positioning": "arc",
+                    "display_name": "Manufacturer",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none",
+                    "aggregates_across": "country",
+                    "detail_sector": {
+                        "header": {
+                            "title_template": "{{name}}",
+                            "subtitle_template": "{{market}} · {{country}}"
+                        },
+                        "views": [
+                            {
+                                "id": "manufacturer_overview",
+                                "type": "info",
+                                "title_template": "{{name}}",
+                                "subtitle_template": "Founded {{year_founded}}",
+                                "fields": [
+                                    {
+                                        "label": "Founded",
+                                        "value_template": "{{year_founded}}"
+                                    },
+                                    {
+                                        "label": "Dissolved",
+                                        "value_template": "{{year_dissolved}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "cylinder": {
+                    "text_format": "append_suffix",
+                    "color": "#f1b800",
+                    "positioning": "arc",
+                    "display_name": "Cylinders",
+                    "sort_type": "numeric_desc",
+                    "focus_text_position": "centered",
+                    "focus_text_transform": "number_only_or_cil",
+                    "is_numeric": true,
+                    "use_code_property": false,
+                    "detail_sector": {
+                        "views": [
+                            {
+                                "id": "cylinder_summary",
+                                "type": "info",
+                                "title_template": "{{manufacturer}}",
+                                "subtitle_template": "{{cylinderCount}} Cylinders",
+                                "fields": [
+                                    {
+                                        "label": "Market",
+                                        "value_template": "{{market}}"
+                                    },
+                                    {
+                                        "label": "Country",
+                                        "value_template": "{{country}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "family": {
+                    "text_format": "title_case",
+                    "color": "#f1b800",
+                    "positioning": "arc",
+                    "display_name": "Family",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none",
+                    "is_numeric": false,
+                    "use_code_property": true,
+                    "is_optional": true
+                },
+                "subfamily": {
+                    "text_format": "title_case",
+                    "color": "#f1b800",
+                    "positioning": "arc",
+                    "display_name": "Sub-Family",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none",
+                    "is_numeric": false,
+                    "use_code_property": true,
+                    "is_optional": true
+                },
+                "model": {
+                    "text_format": "title_case",
+                    "color": "#f1b800",
+                    "positioning": "arc",
+                    "display_name": "Model",
+                    "sort_type": "alphabetical",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none",
+                    "detail_sector": {
+                        "header": {
+                            "title_template": "{{data.engine_model}}",
+                            "subtitle_template": "{{manufacturer}} · {{country}}"
+                        },
+                        "views": [
+                            {
+                                "id": "model_overview",
+                                "type": "info",
+                                "title_template": "{{data.engine_model}}",
+                                "subtitle_template": "Cylinder Count: {{cylinderCount}}",
+                                "body_template": "Introduced {{data.year_introduced}} · Discontinued {{data.year_discontinued}}",
+                                "fields": [
+                                    {
+                                        "label": "Family",
+                                        "value_template": "{{data.family}}"
+                                    },
+                                    {
+                                        "label": "Manufacturer",
+                                        "value_template": "{{manufacturer}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "manifold_alternatives",
+                                "type": "list",
+                                "title": "Manifold Alternatives",
+                                "items_field": "data.manifold_alternatives",
+                                "empty_state": "No manifold alternatives available.",
+                                "item": {
+                                    "primary_template": "{{brand}} {{part_number}}",
+                                    "secondary_template": "{{description}}",
+                                    "meta_template": "${{price}}",
+                                    "badge_template": "{{availability}}"
+                                }
+                            },
+                            {
+                                "id": "manifold_gallery",
+                                "type": "gallery",
+                                "title": "Gallery",
+                                "items_field": "data.manifold_alternatives",
+                                "image_field": "photos",
+                                "caption_template": "{{brand}} {{part_number}}"
+                            },
+                            {
+                                "id": "manifold_links",
+                                "type": "links",
+                                "title": "Resources",
+                                "items_field": "data.manifold_alternatives",
+                                "url_field": "specifications.link",
+                                "label_template": "{{brand}} {{part_number}}",
+                                "description_template": "Lead time: {{lead_time}}"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "markets": {
+            "eurasia": {
+                "countries": {
+                    "Italia": {
+                        "manufacturers": {
+                            "VM Motori": {
+                                "year_founded": 1947,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "MR504LW3",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "manifold_alternatives": [
+                                                    {
+                                                        "id": "alt_da343dbd",
+                                                        "type": "mmdm",
+                                                        "price": 800,
+                                                        "description": "Our best replacement manifold of carbon steel",
+                                                        "rebranded_from": "",
+                                                        "rebranded_as": "",
+                                                        "specifications": {
+                                                            "material": "Carbon Steel",
+                                                            "weight": "18kg",
+                                                            "warranty": "2",
+                                                            "dimensions": {
+                                                                "height": "20cm",
+                                                                "width": "30cm",
+                                                                "length": "50cm"
+                                                            }
+                                                        },
+                                                        "photos": [
+                                                            "/photos/vm_motori/54397a/54397a_front.png",
+                                                            "/photos/vm_motori/54397a/54397a_back.png"
+                                                        ],
+                                                        "photo_count": 2,
+                                                        "has_photos": true,
+                                                        "notes": "Includes gasket",
+                                                        "availability": "in_stock",
+                                                        "stock_level": 8,
+                                                        "min_stock_threshold": null,
+                                                        "lead_time": "2 days",
+                                                        "last_updated": "2025-10-12",
+                                                        "brand": "MMdM",
+                                                        "part_number": "54397a"
+                                                    },
+                                                    {
+                                                        "id": "alt_43319bde",
+                                                        "type": "oem",
+                                                        "price": 900,
+                                                        "rebranded_from": "",
+                                                        "rebranded_as": "",
+                                                        "specifications": {
+                                                            "material": "Carbon Steel",
+                                                            "weight": "",
+                                                            "warranty": "",
+                                                            "dimensions": {
+                                                                "height": "",
+                                                                "width": "",
+                                                                "length": ""
+                                                            }
+                                                        },
+                                                        "photos": [],
+                                                        "photo_count": 0,
+                                                        "has_photos": false,
+                                                        "notes": "",
+                                                        "availability": "",
+                                                        "stock_level": 0,
+                                                        "min_stock_threshold": null,
+                                                        "lead_time": "Immediate",
+                                                        "last_updated": "2025-10-12",
+                                                        "brand": "VM Motori",
+                                                        "part_number": "23"
+                                                    },
+                                                    {
+                                                        "id": "alt_b695c3f4",
+                                                        "type": "third_party",
+                                                        "price": 1500,
+                                                        "rebranded_from": "",
+                                                        "rebranded_as": "",
+                                                        "specifications": {
+                                                            "material": "",
+                                                            "weight": "",
+                                                            "warranty": "",
+                                                            "dimensions": {
+                                                                "height": "",
+                                                                "width": "",
+                                                                "length": ""
+                                                            }
+                                                        },
+                                                        "photos": [],
+                                                        "photo_count": 0,
+                                                        "has_photos": false,
+                                                        "notes": "",
+                                                        "availability": "",
+                                                        "stock_level": 0,
+                                                        "min_stock_threshold": null,
+                                                        "lead_time": "2 weeks",
+                                                        "last_updated": "2025-10-12",
+                                                        "brand": "MESA",
+                                                        "part_number": "44"
+                                                    },
+                                                    {
+                                                        "id": "alt_3dc34d08",
+                                                        "type": "third_party",
+                                                        "price": 23,
+                                                        "description": "Fairhope's finest...",
+                                                        "rebranded_from": "",
+                                                        "rebranded_as": "",
+                                                        "specifications": {
+                                                            "material": "ss",
+                                                            "weight": "",
+                                                            "warranty": "",
+                                                            "dimensions": {
+                                                                "height": "",
+                                                                "width": "",
+                                                                "length": ""
+                                                            }
+                                                        },
+                                                        "photos": [],
+                                                        "photo_count": 0,
+                                                        "has_photos": false,
+                                                        "notes": "",
+                                                        "availability": "",
+                                                        "stock_level": 0,
+                                                        "min_stock_threshold": null,
+                                                        "lead_time": "2 weeks",
+                                                        "last_updated": "2025-10-12",
+                                                        "brand": "MESA",
+                                                        "part_number": "eu"
+                                                    }
+                                                ],
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "HR 494",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            },
+                                            {
+                                                "engine_model": "HR 692",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 3
+                                            }
+                                        ]
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": [
+                                            {
+                                                "engine_model": "HR 394",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "HR 496",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                "sort_number": 97
+                            },
+                            "Isotta Fraschini": {
+                                "year_founded": 1900,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "ID36 SR",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "ID36 SR4",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            }
+                                        ]
+                                    },
+                                    "8": {
+                                        "sort_number": 2,
+                                        "models": [
+                                            {
+                                                "engine_model": "ID36 SS",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "V1708",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            }
+                                        ]
+                                    },
+                                    "12": {
+                                        "sort_number": 3,
+                                        "models": [
+                                            {
+                                                "engine_model": "ID36 SSR",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "V1712",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                "sort_number": 38
+                            },
+                            "Lombardini": {
+                                "year_founded": 1922,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "LDW 702",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "LDW 1003",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            }
+                                        ]
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": [
+                                            {
+                                                "engine_model": "LDW 1204",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "LDW 1404",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            }
+                                        ]
+                                    },
+                                    "3": {
+                                        "sort_number": 3,
+                                        "models": [
+                                            {
+                                                "engine_model": "LDW 2204",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            }
+                                        ]
+                                    },
+                                    "4": {
+                                        "sort_number": 4,
+                                        "models": [
+                                            {
+                                                "engine_model": "LDW 2004",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "sort_number": 55
+                            },
+                            "Ruggerini": {
+                                "year_founded": 1919,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 79
+                            },
+                            "Iveco": {
+                                "year_founded": 1975,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 40
+                            },
+                            "FPT Industrial": {
+                                "year_founded": 2013,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 25
+                            },
+                            "Selva Marine": {
+                                "year_founded": 1954,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "2": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 83
+                            },
+                            "Aifo": {
+                                "year_founded": 1955,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 2
+                            },
+                            "Motori Lombardini": {
+                                "year_founded": 1933,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 66
+                            },
+                            "Admiral": {
+                                "year_founded": 1966,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "2": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "Admiral 2-100",
+                                                "year_introduced": 1966,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            }
+                                        ]
+                                    },
+                                    "4": {
+                                        "sort_number": 2,
+                                        "models": [
+                                            {
+                                                "engine_model": "Admiral 4-200",
+                                                "year_introduced": 1966,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "Admiral 4-250",
+                                                "year_introduced": 1970,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            },
+                                            {
+                                                "engine_model": "EX4-1000",
+                                                "year_introduced": null,
+                                                "year_discontinued": null,
+                                                "sort_number": 3
+                                            }
+                                        ]
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "models": [
+                                            {
+                                                "engine_model": "Admiral 8-400",
+                                                "year_introduced": 1966,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "Admiral 8-450",
+                                                "year_introduced": 1975,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                "sort_number": 1
+                            },
+                            "Lancia Marine": {
+                                "year_founded": 1906,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 49
+                            }
+                        },
+                        "sort_number": 1
+                    },
+                    "Germania": {
+                        "manufacturers": {
+                            "MTU": {
+                                "year_founded": 1909,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 67
+                            },
+                            "Deutz": {
+                                "year_founded": 1864,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 19
+                            },
+                            "Mercedes-Benz": {
+                                "year_founded": 1926,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 61
+                            },
+                            "BMW Marine": {
+                                "year_founded": 1916,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 8
+                            },
+                            "MAN Diesel": {
+                                "year_founded": 1758,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 58
+                            },
+                            "Fiat": {
+                                "year_founded": 1899,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 23
+                            },
+                            "Kubota Germany": {
+                                "year_founded": 1968,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 48
+                            },
+                            "Steyr Motors": {
+                                "year_founded": 1864,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 86
+                            },
+                            "Volkswagen Marine": {
+                                "year_founded": 1937,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 98
+                            }
+                        },
+                        "sort_number": 2
+                    },
+                    "Francia": {
+                        "manufacturers": {
+                            "Baudouin": {
+                                "year_founded": 1918,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 5
+                            },
+                            "Nanni": {
+                                "year_founded": 1958,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 69
+                            },
+                            "Solé Diesel": {
+                                "year_founded": 1916,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 85
+                            },
+                            "Bukh": {
+                                "year_founded": 1904,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 10
+                            },
+                            "Renault Marine": {
+                                "year_founded": 1899,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 77
+                            }
+                        },
+                        "sort_number": 3
+                    },
+                    "Olanda": {
+                        "manufacturers": {
+                            "Vetus": {
+                                "year_founded": 1964,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 95
+                            }
+                        },
+                        "sort_number": 4
+                    },
+                    "Regno Unito": {
+                        "manufacturers": {
+                            "Perkins": {
+                                "year_founded": 1932,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "3": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 76
+                            },
+                            "Lister Petter": {
+                                "year_founded": 1867,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 53
+                            },
+                            "Gardner": {
+                                "year_founded": 1868,
+                                "year_dissolved": 1994,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 26
+                            },
+                            "Rolls-Royce": {
+                                "year_founded": 1904,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 78
+                            },
+                            "Kelvin Diesels": {
+                                "year_founded": 1904,
+                                "year_dissolved": 1984,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 43
+                            },
+                            "Thornycroft": {
+                                "year_founded": 1864,
+                                "year_dissolved": 1977,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 91
+                            },
+                            "Dorman": {
+                                "year_founded": 1877,
+                                "year_dissolved": 1979,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 20
+                            },
+                            "Enfield": {
+                                "year_founded": 1893,
+                                "year_dissolved": 1967,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 21
+                            },
+                            "Napier": {
+                                "year_founded": 1808,
+                                "year_dissolved": 1986,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 70
+                            }
+                        },
+                        "sort_number": 5
+                    },
+                    "Svezia": {
+                        "manufacturers": {
+                            "Volvo Penta": {
+                                "year_founded": 1907,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "3": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "5": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 5,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 99
+                            },
+                            "Scania": {
+                                "year_founded": 1891,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 81
+                            }
+                        },
+                        "sort_number": 6
+                    },
+                    "Svizzera": {
+                        "manufacturers": {
+                            "Sulzer": {
+                                "year_founded": 1834,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 88
+                            }
+                        },
+                        "sort_number": 7
+                    },
+                    "Finlandia": {
+                        "manufacturers": {
+                            "Wärtsilä": {
+                                "year_founded": 1834,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 103
+                            },
+                            "Sisu": {
+                                "year_founded": 1931,
+                                "year_dissolved": 2011,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 84
+                            }
+                        },
+                        "sort_number": 8
+                    },
+                    "Norvegia": {
+                        "manufacturers": {
+                            "Bergen Engines": {
+                                "year_founded": 1946,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 6
+                            }
+                        },
+                        "sort_number": 9
+                    },
+                    "Danimarca": {
+                        "manufacturers": {
+                            "Burmeister & Wain": {
+                                "year_founded": 1846,
+                                "year_dissolved": 1980,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 11
+                            }
+                        },
+                        "sort_number": 10
+                    },
+                    "Giappone": {
+                        "manufacturers": {
+                            "Yanmar": {
+                                "year_founded": 1912,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "3": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 5,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 6,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 105
+                            },
+                            "Isuzu": {
+                                "year_founded": 1916,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 39
+                            },
+                            "Hino": {
+                                "year_founded": 1942,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 32
+                            },
+                            "Mitsubishi": {
+                                "year_founded": 1870,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 65
+                            },
+                            "Kubota": {
+                                "year_founded": 1890,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "3": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 47
+                            },
+                            "Nissan": {
+                                "year_founded": 1933,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 72
+                            },
+                            "Komatsu": {
+                                "year_founded": 1921,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 46
+                            },
+                            "Kawasaki": {
+                                "year_founded": 1896,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 42
+                            },
+                            "Suzuki": {
+                                "year_founded": 1909,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 90
+                            },
+                            "Toyota": {
+                                "year_founded": 1937,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 93
+                            },
+                            "Yamaha": {
+                                "year_founded": 1955,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 104
+                            },
+                            "Daihatsu": {
+                                "year_founded": 1907,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 17
+                            },
+                            "Honda Marine": {
+                                "year_founded": 1946,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 34
+                            },
+                            "IHI": {
+                                "year_founded": 1853,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 36
+                            },
+                            "Niigata": {
+                                "year_founded": 1896,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 71
+                            },
+                            "Mazda Marine": {
+                                "year_founded": 1920,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 60
+                            }
+                        },
+                        "sort_number": 11
+                    },
+                    "Corea del Sud": {
+                        "manufacturers": {
+                            "Daewoo": {
+                                "year_founded": 1967,
+                                "year_dissolved": 1999,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 16
+                            },
+                            "Hyundai": {
+                                "year_founded": 1967,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 35
+                            }
+                        },
+                        "sort_number": 12
+                    },
+                    "Russia": {
+                        "manufacturers": {
+                            "MAN": {
+                                "year_founded": 1758,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    },
+                                    "16": {
+                                        "sort_number": 5,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 57
+                            },
+                            "TMZ": {
+                                "year_founded": 1941,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 92
+                            },
+                            "Zvezda": {
+                                "year_founded": 1954,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "10": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "Zvezda M520",
+                                                "year_introduced": 1954,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "Zvezda M527",
+                                                "year_introduced": 1960,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            }
+                                        ]
+                                    },
+                                    "12": {
+                                        "sort_number": 2,
+                                        "models": [
+                                            {
+                                                "engine_model": "Zvezda M620",
+                                                "year_introduced": 1954,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "Zvezda M650",
+                                                "year_introduced": 1970,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                "sort_number": 106
+                            },
+                            "Russkiy Dizel": {
+                                "year_founded": 1900,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 80
+                            }
+                        },
+                        "sort_number": 13
+                    },
+                    "Australia": {
+                        "manufacturers": {
+                            "Stuart Marine": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 87
+                            },
+                            "Vire Marine": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 96
+                            },
+                            "Blaxland-Chapman": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 7
+                            }
+                        },
+                        "sort_number": 14
+                    }
+                },
+                "sort_number": 1
+            },
+            "americhe": {
+                "countries": {
+                    "Stati Uniti": {
+                        "manufacturers": {
+                            "Caterpillar": {
+                                "year_founded": 1925,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "3054",
+                                                "year_introduced": 1990,
+                                                "year_discontinued": null,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "3056",
+                                                "year_introduced": 1992,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            },
+                                            {
+                                                "engine_model": "C4.4",
+                                                "year_introduced": 2004,
+                                                "year_discontinued": null,
+                                                "sort_number": 3
+                                            },
+                                            {
+                                                "engine_model": "C6.6",
+                                                "year_introduced": 2006,
+                                                "year_discontinued": null,
+                                                "sort_number": 4
+                                            }
+                                        ]
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": [
+                                            {
+                                                "engine_model": "3306",
+                                                "year_introduced": 1973,
+                                                "year_discontinued": 2010,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "C7",
+                                                "year_introduced": 2003,
+                                                "year_discontinued": null,
+                                                "sort_number": 2
+                                            },
+                                            {
+                                                "engine_model": "C9",
+                                                "year_introduced": 2003,
+                                                "year_discontinued": null,
+                                                "sort_number": 3
+                                            },
+                                            {
+                                                "engine_model": "C13",
+                                                "year_introduced": 2007,
+                                                "year_discontinued": null,
+                                                "sort_number": 4
+                                            },
+                                            {
+                                                "engine_model": "C15",
+                                                "year_introduced": 1999,
+                                                "year_discontinued": 2010,
+                                                "sort_number": 5
+                                            },
+                                            {
+                                                "engine_model": "C18",
+                                                "year_introduced": 2007,
+                                                "year_discontinued": null,
+                                                "sort_number": 6
+                                            },
+                                            {
+                                                "engine_model": "6C",
+                                                "year_introduced": 1985,
+                                                "year_discontinued": 2005,
+                                                "sort_number": 7
+                                            },
+                                            {
+                                                "engine_model": "6CT",
+                                                "year_introduced": 1988,
+                                                "year_discontinued": 2010,
+                                                "sort_number": 8
+                                            }
+                                        ]
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "models": [
+                                            {
+                                                "engine_model": "3208",
+                                                "year_introduced": 1975,
+                                                "year_discontinued": 1999,
+                                                "rcj_family_sort_number": 3,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "3208T",
+                                                "year_introduced": 1981,
+                                                "year_discontinued": 1999,
+                                                "sort_number": 2
+                                            },
+                                            {
+                                                "engine_model": "C32",
+                                                "year_introduced": 2010,
+                                                "year_discontinued": null,
+                                                "rcj_family_sort_number": 6,
+                                                "sort_number": 3
+                                            },
+                                            {
+                                                "engine_model": "V504M",
+                                                "year_introduced": 1970,
+                                                "year_discontinued": 1990,
+                                                "sort_number": 4
+                                            },
+                                            {
+                                                "engine_model": "V555M",
+                                                "year_introduced": 1975,
+                                                "year_discontinued": 1995,
+                                                "sort_number": 5
+                                            },
+                                            {
+                                                "engine_model": "V903M",
+                                                "year_introduced": 1980,
+                                                "year_discontinued": 2000,
+                                                "sort_number": 6
+                                            }
+                                        ]
+                                    },
+                                    "12": {
+                                        "sort_number": 4,
+                                        "models": [
+                                            {
+                                                "engine_model": "D379",
+                                                "year_introduced": 1965,
+                                                "year_discontinued": 1985,
+                                                "rcj_family_sort_number": 1,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "D398",
+                                                "year_introduced": 1968,
+                                                "year_discontinued": 1990,
+                                                "sort_number": 2
+                                            },
+                                            {
+                                                "engine_model": "D399",
+                                                "year_introduced": 1972,
+                                                "year_discontinued": 1995,
+                                                "sort_number": 3
+                                            },
+                                            {
+                                                "engine_model": "3412",
+                                                "year_introduced": 1979,
+                                                "year_discontinued": 2006,
+                                                "sort_number": 4
+                                            },
+                                            {
+                                                "engine_model": "3412C",
+                                                "year_introduced": 1988,
+                                                "year_discontinued": 2010,
+                                                "sort_number": 5
+                                            },
+                                            {
+                                                "engine_model": "C32",
+                                                "year_introduced": 2010,
+                                                "year_discontinued": null,
+                                                "sort_number": 6
+                                            }
+                                        ]
+                                    },
+                                    "16": {
+                                        "sort_number": 5,
+                                        "models": [
+                                            {
+                                                "engine_model": "3516",
+                                                "year_introduced": 1982,
+                                                "year_discontinued": 2008,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "3516B",
+                                                "year_introduced": 1995,
+                                                "year_discontinued": 2012,
+                                                "sort_number": 2
+                                            },
+                                            {
+                                                "engine_model": "3516C",
+                                                "year_introduced": 2008,
+                                                "year_discontinued": null,
+                                                "sort_number": 3
+                                            },
+                                            {
+                                                "engine_model": "C175-16",
+                                                "year_introduced": 2018,
+                                                "year_discontinued": null,
+                                                "sort_number": 4
+                                            }
+                                        ]
+                                    }
+                                },
+                                "sort_number": 12
+                            },
+                            "Cummins": {
+                                "year_founded": 1919,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 16
+                            },
+                            "Ford": {
+                                "year_founded": 1903,
+                                "year_dissolved": null,
+                                "sort_number": 24,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "Model A 200.5 CID",
+                                                "year_introduced": 1927,
+                                                "year_discontinued": 1931,
+                                                "sort_number": 1
+                                            },
+                                            {
+                                                "engine_model": "2.3L Lima",
+                                                "year_introduced": 1974,
+                                                "year_discontinued": 1997,
+                                                "sort_number": 2
+                                            }
+                                        ]
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "families": {
+                                            "Falcon Six": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "engine_model": "200 CID I6",
+                                                        "year_introduced": 1965,
+                                                        "year_discontinued": 1983,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "250 CID I6",
+                                                        "year_introduced": 1969,
+                                                        "year_discontinued": 1996,
+                                                        "sort_number": 2
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "models": [
+                                            {
+                                                "engine_model": "300 CID I6",
+                                                "year_introduced": 1965,
+                                                "year_discontinued": 1996,
+                                                "sort_number": 3
+                                            }
+                                        ]
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "families": {
+                                            "Windsor": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "engine_model": "289",
+                                                        "year_introduced": 1963,
+                                                        "year_discontinued": 1968,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "302",
+                                                        "year_introduced": 1968,
+                                                        "year_discontinued": 2000,
+                                                        "sort_number": 2
+                                                    }
+                                                ]
+                                            },
+                                            "Modular": {
+                                                "sort_number": 2,
+                                                "subfamilies": {
+                                                    "Triton": {
+                                                        "sort_number": 1,
+                                                        "models": [
+                                                            {
+                                                                "engine_model": "5.4L Triton",
+                                                                "year_introduced": 1997,
+                                                                "year_discontinued": 2010,
+                                                                "sort_number": 1,
+                                                                "data": {
+                                                                    "key_notes": "SOHC V8 from the Modular family; truck-oriented with 3-valve heads and variable cam timing; used in F-Series and Expedition."
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    "Coyote": {
+                                                        "sort_number": 2,
+                                                        "models": [
+                                                            {
+                                                                "engine_model": "5.0L Coyote",
+                                                                "year_introduced": 2011,
+                                                                "year_discontinued": null,
+                                                                "sort_number": 1,
+                                                                "data": {
+                                                                    "key_notes": "DOHC evolution of the Modular architecture (introduced 2011); high-revving design for Mustangs/F-150s; variants include Gen 1–4 with direct injection."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "models": [
+                                                    {
+                                                        "engine_model": "4.6L SOHC",
+                                                        "year_introduced": 1991,
+                                                        "year_discontinued": 2014,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "displacement_l": 4.6,
+                                                            "configuration": "V8",
+                                                            "valvetrain": "SOHC",
+                                                            "max_power_hp": 260,
+                                                            "key_notes": "Original Modular V8; 2-valve SOHC for Crown Victoria/Town Car; marine generator applications"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "General Motors": {
+                                "year_founded": 1908,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 27
+                            },
+                            "MerCruiser": {
+                                "year_founded": 1961,
+                                "year_dissolved": null,
+                                "sort_number": 27,
+                                "cylinders": {
+                                    "8": {
+                                        "sort_number": 1,
+                                        "families": {
+                                            "Small Block": {
+                                                "subfamilies": {
+                                                    "Gen IV": {
+                                                        "models": [
+                                                            {
+                                                                "engine_model": "6.2L",
+                                                                "year_introduced": 2014,
+                                                                "year_discontinued": null,
+                                                                "data": {
+                                                                    "key_notes": "Marinized version of GM's LS-series V8; purpose-modified for sterndrive and inboard boats; introduced around 2014; 300–430 hp."
+                                                                },
+                                                                "sort_number": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "Detroit Diesel": {
+                                "year_founded": 1938,
+                                "year_dissolved": null,
+                                "sort_number": 63,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "families": {
+                                            "Series 71": {
+                                                "models": [
+                                                    {
+                                                        "engine_model": "6-71",
+                                                        "year_introduced": 1940,
+                                                        "year_discontinued": null,
+                                                        "data": {
+                                                            "key_notes": "Two-stroke diesel engine adapted for marine use; widely used in commercial vessels since the 1940s; 165–230 hp in marine configs."
+                                                        },
+                                                        "sort_number": 1
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "Palmer Brothers": {
+                                "year_founded": 1896,
+                                "year_dissolved": 1938,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 75
+                            },
+                            "Gray Marine": {
+                                "year_founded": 1906,
+                                "year_dissolved": 1946,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 28
+                            },
+                            "Lathrop": {
+                                "year_founded": 1896,
+                                "year_dissolved": 1925,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 50
+                            },
+                            "Mianus": {
+                                "year_founded": 1900,
+                                "year_dissolved": 1916,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 64
+                            },
+                            "Packard": {
+                                "year_founded": 1899,
+                                "year_dissolved": 1958,
+                                "cylinders": {
+                                    "12": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "Liberty 12",
+                                                "year_introduced": 1917,
+                                                "year_discontinued": 1919,
+                                                "data": {
+                                                    "key_notes": "Licensed Rolls-Royce Eagle derivative; water-cooled SOHC V12; primary U.S. producer (~13,000 built); used in WWI aircraft."
+                                                },
+                                                "sort_number": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "sort_number": 74
+                            },
+                            "Hispano-Suiza": {
+                                "year_founded": 1904,
+                                "year_dissolved": 1968,
+                                "cylinders": {
+                                    "8": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "8A",
+                                                "year_introduced": 1914,
+                                                "year_discontinued": 1918,
+                                                "data": {
+                                                    "key_notes": "Early 20th-century water-cooled SOHC V8 aircraft engine (introduced 1914); ~150 hp; widely used in WWI fighters like the SPAD S.VII."
+                                                },
+                                                "sort_number": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "sort_number": 33
+                            },
+                            "Allison": {
+                                "year_founded": 1907,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "12": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "V-1710",
+                                                "year_introduced": 1937,
+                                                "year_discontinued": 1949,
+                                                "data": {
+                                                    "key_notes": "WWII-era liquid-cooled V12 (introduced 1937); up to 1,475 hp in turbocharged variants; powered U.S. fighters like the P-38 Lightning."
+                                                },
+                                                "sort_number": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "sort_number": 4
+                            },
+                            "Kohler": {
+                                "year_founded": 1873,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 45
+                            },
+                            "Westerbeke": {
+                                "year_founded": 1937,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 101
+                            },
+                            "John Deere": {
+                                "year_founded": 1837,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 41
+                            },
+                            "Waukesha": {
+                                "year_founded": 1906,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 100
+                            },
+                            "Wisconsin": {
+                                "year_founded": 1910,
+                                "year_dissolved": 1986,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 102
+                            },
+                            "Onan": {
+                                "year_founded": 1920,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 73
+                            },
+                            "Hercules": {
+                                "year_founded": 1915,
+                                "year_dissolved": 1999,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 31
+                            },
+                            "Fairbanks Morse": {
+                                "year_founded": 1893,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 22
+                            },
+                            "Superior": {
+                                "year_founded": 1908,
+                                "year_dissolved": 1972,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 89
+                            },
+                            "Lehman": {
+                                "year_founded": 1946,
+                                "year_dissolved": 2008,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 51
+                            },
+                            "Lugger": {
+                                "year_founded": 1987,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 56
+                            },
+                            "Liberty": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 52
+                            },
+                            "Chrysler": {
+                                "year_founded": 1925,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 13
+                            },
+                            "Hall-Scott": {
+                                "year_founded": 1910,
+                                "year_dissolved": 1974,
+                                "cylinders": {
+                                    "12": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "Defender",
+                                                "year_introduced": 1930,
+                                                "year_discontinued": 1940,
+                                                "data": {
+                                                    "key_notes": "Purpose-built V12 gasoline engine (circa 1930s–1940s) for marine use; used in WWII rescue boats and patrol craft; up to 650 hp in supercharged variants."
+                                                },
+                                                "sort_number": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "sort_number": 30
+                            },
+                            "Alco": {
+                                "year_founded": 1901,
+                                "year_dissolved": 1969,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 3
+                            },
+                            "Cooper Industries": {
+                                "year_founded": 1833,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 14
+                            }
+                        },
+                        "sort_number": 1
+                    },
+                    "Canada": {
+                        "manufacturers": {
+                            "Cooper Industries": {
+                                "year_founded": 1833,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 14
+                            },
+                            "Marathon": {
+                                "year_founded": 1888,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 59
+                            },
+                            "Briggs & Stratton": {
+                                "year_founded": 1908,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 9
+                            },
+                            "Universal": {
+                                "year_founded": 1963,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 94
+                            },
+                            "Mercruiser": {
+                                "year_founded": 1961,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 62
+                            },
+                            "Indmar": {
+                                "year_founded": 1946,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 37
+                            },
+                            "Lockwood-Ash": {
+                                "year_founded": 1902,
+                                "year_dissolved": 1956,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 1",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 2",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "3": {
+                                        "sort_number": 3,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 3",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "4": {
+                                        "sort_number": 4,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 4",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "5": {
+                                        "sort_number": 5,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 5",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "6": {
+                                        "sort_number": 6,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 6",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "7": {
+                                        "sort_number": 7,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 7",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "8": {
+                                        "sort_number": 8,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 8",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "9": {
+                                        "sort_number": 9,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 9",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "10": {
+                                        "sort_number": 10,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 10",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "11": {
+                                        "sort_number": 11,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 11",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "12": {
+                                        "sort_number": 12,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 12",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "13": {
+                                        "sort_number": 13,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 13",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "14": {
+                                        "sort_number": 14,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 14",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "15": {
+                                        "sort_number": 15,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 15",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "16": {
+                                        "sort_number": 16,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 16",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "17": {
+                                        "sort_number": 17,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 17",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "18": {
+                                        "sort_number": 18,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 18",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    },
+                                    "19": {
+                                        "sort_number": 19,
+                                        "models": [
+                                            {
+                                                "sort_number": 1,
+                                                "engine_model": "Test Engine 19",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1956
+                                            }
+                                        ]
+                                    }
+                                },
+                                "sort_number": 54
+                            },
+                            "Nadler": {
+                                "year_founded": 1920,
+                                "year_dissolved": 1975,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 68
+                            },
+                            "Scripps": {
+                                "year_founded": 1914,
+                                "year_dissolved": 1942,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 82
+                            },
+                            "Kermath": {
+                                "year_founded": 1918,
+                                "year_dissolved": 1962,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 44
+                            },
+                            "Hacker-Craft": {
+                                "year_founded": 1908,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 29
+                            }
+                        },
+                        "sort_number": 2
+                    }
+                },
+                "sort_number": 2
+            }
+        }
+    }
+}

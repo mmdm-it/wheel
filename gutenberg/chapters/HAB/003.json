@@ -1,0 +1,357 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "HAB_003",
+  "book_key": "HAB",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "תְּפִלָּ֖ה לַ/חֲבַקּ֣וּק הַ/נָּבִ֑יא עַ֖ל שִׁגְיֹנֽוֹת׃",
+        "LXX": "Προσευχὴ Ἁμβακοὺμ τοῦ προφήτου μετὰ ᾠδῆς.",
+        "VUL": "Oratio Habacuc prophetæ, pro ignorantiis.",
+        "SYN": "Молитва Аввакума пророка, для пения.",
+        "NEO": "Prière d’Habacuc le prophète. Sur le mode dithyrambique.",
+        "NAB": "Prayer of Habakkuk, the prophet. To a plaintive tune.",
+        "VAT_ES": "Oración del profeta Habacuc, en el tono de las lamentaciones.",
+        "CEI": "Preghiera del profeta Abacuc, in tono di lamentazione."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "יְהוָ֗ה שָׁמַ֣עְתִּי שִׁמְעֲ/ךָ֮ יָרֵאתִי֒ יְהוָ֗ה פָּֽעָלְ/ךָ֙ בְּ/קֶ֤רֶב שָׁנִים֙ חַיֵּ֔י/הוּ בְּ/קֶ֥רֶב שָׁנִ֖ים תּוֹדִ֑יעַ בְּ/רֹ֖גֶז רַחֵ֥ם תִּזְכּֽוֹר׃",
+        "LXX": "Κύριε, εἰσακήκοα τὴν ἀκοήν σου, καὶ ἐφοβήθην· κατενόησα τὰ ἔργα σου, καὶ ἐξέστην. ἐν μέσῳ δύο ζῴων γνωσθήσῃ, ἐν τῷ ἐγγίζειν τὰ ἔτη ἐπιγνωσθήσῃ· ἐν τῷ παρεῖναι τὸν καιρὸν ἀναδειχθήσῃ· ἐν τῷ ταραχθῆναι τὴν ψυχήν μου ἐν ὀργῇ ἐλέους μνησθήσῃ.",
+        "VUL": "[Domine, audivi auditionem tuam, et timui./ Domine, opus tuum, in medio annorum vivifica illud ;/ in medio annorum notum facies :/ cum iratus fueris, misericordiæ recordaberis./",
+        "SYN": "Господи! услышал я слух Твой и убоялся. Господи! соверши дело Твое среди лет, среди лет яви его; во гневе вспомни о милости.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, j’ai entendu ce que tu as fait entendre, je suis saisi de crainte, \\+w Yahweh|strong=\"H3068\"\\+w** ! Ton œuvre, dans le cours des âges, fais-la vivre ; dans le cours des âges fais-la connaître ! Dans ta colère, souviens-toi d’avoir pitié.",
+        "NAB": "O LORD, I have heard your renown, and feared, O LORD, your work. In the course of the years revive it, in the course of the years make it known; in your wrath remember compassion!",
+        "VAT_ES": "&iexcl;Señor, yo he oído tu renombre! &iexcl;He visto tu obra, Señor! &iexcl;En el curso de los años, hazla revivir, en el curso de los años, manifiéstala; pero en la conmoción, acuérdate de tener piedad!",
+        "CEI": "Signore, ho ascoltato il tuo annunzio, Signore, ho avuto timore della tua opera. Nel corso degli anni manifestala falla conoscere nel corso degli anni. Nello sdegno ricordati di avere clemenza."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אֱל֨וֹהַ֙ מִ/תֵּימָ֣ן יָב֔וֹא וְ/קָד֥וֹשׁ מֵֽ/הַר פָּארָ֖ן סֶ֑לָה כִּסָּ֤ה שָׁמַ֨יִם֙ הוֹד֔/וֹ וּ/תְהִלָּת֖/וֹ מָלְאָ֥ה הָ/אָֽרֶץ׃",
+        "LXX": "ὁ θεὸς ἐκ Θαιμὰν ἥξει, καὶ ὁ ἅγιος ἐξ ὄρους Φαρὰν κατασκίου δασέος. διάψαλμα. ἐκάλυψεν οὐρανοὺς ἡ ἀρετὴ αὐτοῦ, καὶ αἰνέσεως αὐτοῦ πλήρης ἡ γῆ.",
+        "VUL": "Deus ab austro veniet,/ et Sanctus de monte Pharan :/ operuit cælos gloria ejus,/ et laudis ejus plena est terra./",
+        "SYN": "Бог от Фемана грядет и Святый - от горы Фаран. Покрыло небеса величие Его, и славою Его наполнилась земля.",
+        "NEO": "Dieu vient de Théman, et le Saint de la montagne de Pharan (Séla). Sa majesté a couvert les cieux, et la terre a été remplie de sa gloire.",
+        "NAB": "God comes from Teman , the Holy One from Mount Paran. Covered are the heavens with his glory, and with his praise the earth is filled.",
+        "VAT_ES": "Dios viene de Temán, y el Santo, del monte Parán. Su majestad cubre los cielos, y su alabanza cubre los cielos, y su alabanza llena la tierra.",
+        "CEI": "Dio viene da Teman, il Santo dal monte Paràn. La sua maestà ricopre i cieli, delle sue lodi è piena la terra."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/נֹ֨גַהּ֙ כָּ/א֣וֹר תִּֽהְיֶ֔ה קַרְנַ֥יִם מִ/יָּד֖/וֹ ל֑/וֹ וְ/שָׁ֖ם חֶבְי֥וֹן עֻזֹּֽ/ה׃",
+        "LXX": "καὶ φέγγος αὐτοῦ ὡς φῶς ἔσται· κέρατα ἐν χερσὶν αὐτοῦ, καὶ ἔθετο ἀγάπησιν κραταιὰν ἰσχύος αὐτοῦ.",
+        "VUL": "Splendor ejus ut lux erit,/ cornua in manibus ejus :/ ibi abscondita est fortitudo ejus./",
+        "SYN": "Блеск ее - как солнечный свет; от руки Его лучи, и здесь тайник Его силы!",
+        "NEO": "C’est un éclat comme la lumière du soleil levant ; des rayons partent de ses mains ; là se cache sa puissance.",
+        "NAB": "His splendor spreads like the light; rays shine forth from beside him, where his power is concealed.",
+        "VAT_ES": "Su resplandor es como la luz, brotan rayos de sus manos, y allí está el secreto de su fuerza.",
+        "CEI": "Il suo splendore è come la luce, bagliori di folgore escono dalle sue mani: là si cela la sua potenza."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לְ/פָנָ֖י/ו יֵ֣לֶךְ דָּ֑בֶר וְ/יֵצֵ֥א רֶ֖שֶׁף לְ/רַגְלָֽי/ו׃",
+        "LXX": "πρὸ προσώπου αὐτοῦ πορεύσεται λόγος, καὶ ἐξελεύσεται εἰς πεδία κατὰ πόδας αὐτοῦ.",
+        "VUL": "Ante faciem ejus ibit mors,/ et egredietur diabolus ante pedes ejus./",
+        "SYN": "Пред лицем Его идет язва, а по стопам Его - жгучий ветер.",
+        "NEO": "Devant lui marche la mortalité, et la fièvre brûlante est sur ses pas.",
+        "NAB": "Before him goes pestilence, and the plague follows in his steps.",
+        "VAT_ES": "Delante de él avanza la Peste, y la Fiebre sigue sus pasos.",
+        "CEI": "Davanti a lui avanza la peste, la febbre ardente segue i suoi passi."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "עָמַ֣ד וַ/יְמֹ֣דֶד אֶ֗רֶץ רָאָה֙ וַ/יַּתֵּ֣ר גּוֹיִ֔ם וַ/יִּתְפֹּֽצְצוּ֙ הַרְרֵי עַ֔ד שַׁח֖וּ גִּבְע֣וֹת עוֹלָ֑ם הֲלִיכ֥וֹת עוֹלָ֖ם לֽ/וֹ׃",
+        "LXX": "ἔστη, καὶ ἐσαλεύθη ἡ γῆ· ἐπέβλεψεν, καὶ διετάκη ἔθνη· διεθρύβη τὰ ὄρη βίᾳ, ἐτάκησαν βουνοὶ αἰώνιοι πορείας αἰωνίας αὐτοῦ.",
+        "VUL": "Stetit, et mensus est terram ;/ aspexit, et dissolvit gentes,/ et contriti sunt montes sæculi :/ incurvati sunt colles mundi ab itineribus æternitatis ejus./",
+        "SYN": "Он стал и поколебал землю; воззрел, и в трепет привел народы; вековые горы распались, первобытные холмы опали; пути Его вечные.",
+        "NEO": "Il s’est arrêté et a fait trembler la terre, il a regardé et a secoué les nations ; les montagnes éternelles se sont brisées, les collines antiques se sont affaissées ; il suit ses voies d’autrefois.",
+        "NAB": "He pauses to survey the earth; his look makes the nations tremble. The eternal mountains are shattered, the age-old hills bow low along his ancient ways.",
+        "VAT_ES": "El se detiene, y hace vacilar la tierra, mira, y hace estremecer a las naciones. &iexcl;Se desmoronan las montañas eternas, se hunden las colinas antiguas, sus caminos de siempre!",
+        "CEI": "Si arresta e scuote la terra, guarda e fa tremare le genti; le montagne eterne s'infrangono, e i colli antichi si abbassano: i suoi sentieri nei secoli."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "תַּ֣חַת אָ֔וֶן רָאִ֖יתִי אָהֳלֵ֣י כוּשָׁ֑ן יִרְגְּז֕וּ/ן יְרִיע֖וֹת אֶ֥רֶץ מִדְיָֽן׃",
+        "LXX": "ἀντὶ κόπων εἶδον σκηνώματα Αἰθιόπων· πτοηθήσονται καὶ αἱ σκηναὶ γῆς Μαδιάμ.",
+        "VUL": "Pro iniquitate vidi tentoria Æthiopiæ ;/ turbabuntur pelles terræ Madian./",
+        "SYN": "Грустными видел я шатры Ефиопские; сотряслись палатки земли Мадиамской.",
+        "NEO": "J’ai vu dans la détresse les tentes de Cuschan ; les pavillons de la terre de Moab frémissent.",
+        "NAB": "I see the tents of Cushan collapse; trembling are the pavilions of the land of Midian.",
+        "VAT_ES": "Yo he visto anonadados a los campamentos de Cusán, se conmueven las carpas del país de Madián.",
+        "CEI": "Ho visto i padiglioni di Cusàn in preda a spavento, sono agitate le tende di Madian."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הֲ/בִ/נְהָרִים֙ חָרָ֣ה יְהוָ֔ה אִ֤ם בַּ/נְּהָרִים֙ אַפֶּ֔/ךָ אִם בַּ/יָּ֖ם עֶבְרָתֶ֑/ךָ כִּ֤י תִרְכַּב֙ עַל סוּסֶ֔י/ךָ מַרְכְּבֹתֶ֖י/ךָ יְשׁוּעָֽה׃",
+        "LXX": "μὴ ἐν ποταμοῖς ὠργίσθης, Κύριε; ἢ ἐν ποταμοῖς ὁ θυμός σου; ἢ ἐν θαλάσσῃ τὸ ὅρμημά σου; ὅτι ἐπιβήσῃ ἐπὶ τοὺς ἵππους σου, καὶ ἡ ἱππασία σου σωτηρία.",
+        "VUL": "Numquid in fluminibus iratus es, Domine ?/ aut in fluminibus furor tuus ?/ vel in mari indignatio tua ?/ Qui ascendes super equos tuos, et quadrigæ tuæ salvatio./",
+        "SYN": "Разве на реки воспылал, Господи, гнев Твой? разве на реки - негодование Твое, или на море - ярость Твоя, что Ты восшел на коней Твоих, на колесницы Твои спасительные?",
+        "NEO": "Est-ce contre des fleuves que \\+w Yahweh|strong=\"H3068\"\\+w** s’est irrité ? Ou bien est-ce contre les fleuves que s’enflamme ta colère ; contre la mer que se déchaîne ta fureur, lorsque tu montes sur tes chevaux, sur tes chars de délivrance ?",
+        "NAB": "Is your anger against the streams, O LORD? Is your wrath against the streams, your rage against the sea, That you drive the steeds of your victorious chariot?",
+        "VAT_ES": "&iquest;Arde la ira del Señor contra los ríos? &iquest;Tu cólera se enciende contra los ríos y tu furor contra el mar, para que montes en tus caballos, en tus carros de guerra victoriosos?",
+        "CEI": "Forse contro i fiumi, Signore, contro i fiumi si accende la tua ira o contro il mare è il tuo furore, quando tu monti sopra i tuoi cavalli, sopra i carri della tua vittoria?"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "עֶרְיָ֤ה תֵעוֹר֙ קַשְׁתֶּ֔/ךָ שְׁבֻע֥וֹת מַטּ֖וֹת אֹ֣מֶר סֶ֑לָה נְהָר֖וֹת תְּבַקַּע אָֽרֶץ׃",
+        "LXX": "ἐντείνων ἐνέτεινας τόξον σου ἐπὶ σκῆπτρα, λέγει Κύριος. διάψαλμα. ποταμῶν ῥαγήσεται γῆ,",
+        "VUL": "Suscitans suscitabis arcum tuum,/ juramenta tribubus quæ locutus es ;/ fluvios scindes terræ./",
+        "SYN": "Ты обнажил лук Твой по клятвенному обетованию, данному коленам. Ты потоками рассек землю.",
+        "NEO": "A nu ton arc se découvre ; tes traits sont les serments que tu as prononcés (Séla). En torrents tu fends la terre.",
+        "NAB": "Bared and ready is your bow, filled with arrows is your quiver. Into streams you split the earth;",
+        "VAT_ES": "Tú pones al desnudo tu arco y sacias de flechas su cuerda. Abres la tierra, y brotan torrentes.",
+        "CEI": "Tu estrai il tuo arco e ne sazi di saette la corda. Fai erompere la terra in torrenti;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "רָא֤וּ/ךָ יָחִ֨ילוּ֙ הָרִ֔ים זֶ֥רֶם מַ֖יִם עָבָ֑ר נָתַ֤ן תְּהוֹם֙ קוֹל֔/וֹ ר֖וֹם יָדֵ֥י/הוּ נָשָֽׂא׃",
+        "LXX": "ὄψονταί σε καὶ ὠδινήσουσιν λαοί. σκορπίζων ὕδατα πορείας· ἔδωκεν ἡ ἄβυσσος φωνὴν αὐτῆς, ὕψος φαντασίας αὐτῆς.",
+        "VUL": "Viderunt te, et doluerunt montes ;/ gurges aquarum transiit :/ dedit abyssus vocem suam ;/ altitudo manus suas levavit./",
+        "SYN": "Увидев Тебя, вострепетали горы, ринулись воды; бездна дала голос свой, высоко подняла руки свои;",
+        "NEO": "Les montagnes t’ont vu et tremblent ; une trombe d’eau a passé ; l’abîme a fait entendre sa voix, il tend ses mains en haut.",
+        "NAB": "at sight of you the mountains tremble. A torrent of rain descends; the ocean gives forth its roar. The sun forgets to rise,",
+        "VAT_ES": "Te ven las montañas y se espantan, pasa una lluvia torrencial, y el océano hace oír su voz y levanta sus manos en alto.",
+        "CEI": "i monti ti vedono e tremano, un uragano di acque si riversa, l'abisso fa sentire la sua voce. In alto il sole tralascia di mostrarsi,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "שֶׁ֥מֶשׁ יָרֵ֖חַ עָ֣מַד זְבֻ֑לָ/ה לְ/א֤וֹר חִצֶּ֨י/ךָ֙ יְהַלֵּ֔כוּ לְ/נֹ֖גַהּ בְּרַ֥ק חֲנִיתֶֽ/ךָ׃",
+        "LXX": "ἐπήρθη ὁ ἥλιος, καὶ ἡ σελήνη ἔστη ἐν τῇ τάξει αὐτῆς· εἰς φῶς βολίδες σου πορεὔσονται, εἰς φέγγος ἀστραπῆς ὅπλων σου.",
+        "VUL": "Sol et luna steterunt in habitaculo suo :/ in luce sagittarum tuarum ibunt,/ in splendore fulgurantis hastæ tuæ./",
+        "SYN": "солнце и луна остановились на месте своем пред светом летающих стрел Твоих, пред сиянием сверкающих копьев Твоих.",
+        "NEO": "Le soleil et la lune sont restés dans leur demeure ; on marche à la clarté de tes flèches à la lueur des éclairs de ta lance.",
+        "NAB": "the moon remains in its shelter, At the light of your flying arrows, at the gleam of your flashing spear.",
+        "VAT_ES": "El sol y la luna se detienen en su morada, a la luz de tus flechas que vuelan, al resplandor del centelleo de lanza.",
+        "CEI": "e la luna resta nella sua dimora, fuggono al bagliore delle tue saette, allo splendore folgorante della tua lancia."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "בְּ/זַ֖עַם תִּצְעַד אָ֑רֶץ בְּ/אַ֖ף תָּד֥וּשׁ גּוֹיִֽם׃",
+        "LXX": "ἐν ἀπειλῇ ὀλιγώσεις γῆν, καὶ ἐν θυμῷ κατάξεις ἔθνη·",
+        "VUL": "In fremitu conculcabis terram ;/ in furore obstupefacies gentes./",
+        "SYN": "Во гневе шествуешь Ты по земле и в негодовании попираешь народы.",
+        "NEO": "Tu parcours la terre avec fureur, tu foules les nations avec colère.",
+        "NAB": "In wrath you bestride the earth, in fury you trample the nations.",
+        "VAT_ES": "Con furia recorres la tierra, con ira pisoteas las naciones.",
+        "CEI": "Sdegnato attraversi la terra, adirato calpesti le genti."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "יָצָ֨אתָ֙ לְ/יֵ֣שַׁע עַמֶּ֔/ךָ לְ/יֵ֖שַׁע אֶת מְשִׁיחֶ֑/ךָ מָחַ֤צְתָּ רֹּאשׁ֙ מִ/בֵּ֣ית רָשָׁ֔ע עָר֛וֹת יְס֥וֹד עַד צַוָּ֖אר סֶֽלָה׃",
+        "LXX": "ἐξῆλθες εἰς σωτηρίαν λαοῦ σου, τοῦ σῶσαι τὸν χριστόν σου· βαλεῖς εἰς κεφαλὰς ἀνόμων θάνατον, ἐξήγειρας δεσμούς ἕως τραχήλου. διάψαλμα.",
+        "VUL": "Egressus es in salutem populi tui,/ in salutem cum christo tuo :/ percussisti caput de domo impii,/ denudasti fundamentum ejus usque ad collum./",
+        "SYN": "Ты выступаешь для спасения народа Твоего, для спасения помазанного Твоего. Ты сокрушаешь главу нечестивого дома, обнажая его от основания до верха.",
+        "NEO": "Tu es sorti pour la délivrance de ton peuple ; pour la délivrance de ton Oint ; tu as brisé le faîte de la maison du méchant, mettant à nu les fondements jusqu’en bas (Séla).",
+        "NAB": "You come forth to save your people, to save your anointed one. You crush the heads of the wicked, you lay bare their bases at the neck.",
+        "VAT_ES": "Has salido para salvar a tu pueblo, para salvar a tu Ungido; has abatido el techo de la casa del impío, has descubierto sus cimientos hasta la roca.",
+        "CEI": "Sei uscito per salvare il tuo popolo, per salvare il tuo consacrato. Hai demolito la cima della casa dell'empio, l'hai scalzata fino alle fondamenta."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "נָקַ֤בְתָּ בְ/מַטָּי/ו֙ רֹ֣אשׁ פרז/ו פְּרָזָ֔י/ו יִסְעֲר֖וּ לַ/הֲפִיצֵ֑/נִי עֲלִ֣יצֻתָ֔/ם כְּמוֹ לֶ/אֱכֹ֥ל עָנִ֖י בַּ/מִּסְתָּֽר׃",
+        "LXX": "διέκοψας ἐν ἐκστάσει κεφαλάς δυναστῶν, σεισθήσονται ἐν αὐτῇ· διανοίξουσιν χαλινοὺς αὐτῶν ὡς ἔσθων πτωχὸς λάθρα.",
+        "VUL": "Maledixisti sceptris ejus,/ capiti bellatorum ejus,/ venientibus ut turbo ad dispergendum me :/ exsultatio eorum, sicut ejus qui devorat pauperem in abscondito./",
+        "SYN": "Ты пронзаешь копьями его главу вождей его, когда они как вихрь ринулись разбить меня, в радости, как бы думая поглотить бедного скрытно.",
+        "NEO": "Tu as percé de ses propres traits le chef de ses bandes, qui se précipitaient pour me disperser, en poussant des cris de joie, comme s’ils allaient dévorer le malheureux dans leur repaire.",
+        "NAB": "You pierce with your shafts the heads of their princes whose boast would be of devouring the wretched in their lair.",
+        "VAT_ES": "Has traspasado con tus flechas la cabeza de sus jefes, que se lanzaban tempestuosamente para destrozarme, entre gritos de alegría, como quien devora a un pobre ocultamente.",
+        "CEI": "Con i tuoi dardi hai trafitto il capo dei suoi guerrieri che irrompevano per disperdermi con la gioia di chi divora il povero di nascosto."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "דָּרַ֥כְתָּ בַ/יָּ֖ם סוּסֶ֑י/ךָ חֹ֖מֶר מַ֥יִם רַבִּֽים׃",
+        "LXX": "καὶ ἐπιβιβᾷς εἰς θάλασσαν τούς ἵππους σου ταράσσοντας ὕδωρ πολύ.",
+        "VUL": "Viam fecisti in mari equis tuis,/ in luto aquarum multarum./",
+        "SYN": "Ты с конями Твоими проложил путь по морю, через пучину великих вод.",
+        "NEO": "Tu foules la mer sous les pieds de tes chevaux, l’amas des grandes eaux.",
+        "NAB": "You tread the sea with your steeds amid the churning of the deep waters.",
+        "VAT_ES": "Con tus caballos has surcado el mar, entre el bullir de las aguas caudalosas.",
+        "CEI": "Hai affogato nel mare i suoi cavalli nella melma di grandi acque."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "שָׁמַ֣עְתִּי וַ/תִּרְגַּ֣ז בִּטְנִ֗/י לְ/קוֹל֙ צָלֲל֣וּ שְׂפָתַ֔/י יָב֥וֹא רָקָ֛ב בַּ/עֲצָמַ֖/י וְ/תַחְתַּ֣/י אֶרְגָּ֑ז אֲשֶׁ֤ר אָנ֨וּחַ֙ לְ/י֣וֹם צָרָ֔ה לַ/עֲל֖וֹת לְ/עַ֥ם יְגוּדֶֽ/נּוּ׃",
+        "LXX": "ἐφυλαξάμην, καὶ ἐπτοήθη ἡ κοιλία μου ἀπὸ φωνῆς προσευχῆς χειλέων μου, καὶ εἰσῆλθεν τρόμος εἰς τὰ ὀστᾶ μου, καὶ ὑποκάτωθέν μου ἐταράχθη ἡ ἕξις μου. ἀναπαύσομαι ἐν ἡμέρᾳ θλίψεως τοῦ ἀναβῆναι εἰς λαὸν παροικίας μου.",
+        "VUL": "Audivi, et conturbatus est venter meus ;/ a voce contremuerunt labia mea./ Ingrediatur putredo in ossibus meis,/ et subter me scateat :/ ut requiescam in die tribulationis,/ ut ascendam ad populum accinctum nostrum./",
+        "SYN": "Я услышал, и вострепетала внутренность моя; при вести о сем задрожали губы мои, боль проникла в кости мои, и колеблется место подо мною; а я должен быть спокоен в день бедствия, когда придет на народ мой грабитель его.",
+        "NEO": "J’ai entendu, et mes entrailles se sont émues ; à cette voix mes lèvres frémissent, la carie entre dans mes os, mes genoux tremblent sous moi, de ce que je dois attendre en repos le jour de détresse ; où l’ennemi montera contre un peuple pour l’opprimer.",
+        "NAB": "I hear, and my body trembles; at the sound, my lips quiver. Decay invades my bones, my legs tremble beneath me. I await the day of distress that will come upon the people who attack us.",
+        "VAT_ES": "Al oírlo, se conmovieron mis entrañas, ante el fragor, balbucean mis labios; la caries penetra en mis huesos y debajo de mí tiemblan mis pasos. Espero tranquilo el día de la angustia, que le sobrevendrá al pueblo que nos ataca.",
+        "CEI": "Ho udito e fremette il mio cuore, a tal voce tremò il mio labbro, la carie entra nelle mie ossa e sotto di me tremano i miei passi. Sospiro al giorno dell'angoscia che verrà contro il popolo che ci opprime."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כִּֽי תְאֵנָ֣ה לֹֽא תִפְרָ֗ח וְ/אֵ֤ין יְבוּל֙ בַּ/גְּפָנִ֔ים כִּחֵשׁ֙ מַעֲשֵׂה זַ֔יִת וּ/שְׁדֵמ֖וֹת לֹא עָ֣שָׂה אֹ֑כֶל גָּזַ֤ר מִ/מִּכְלָה֙ צֹ֔אן וְ/אֵ֥ין בָּקָ֖ר בָּ/רְפָתִֽים׃",
+        "LXX": "διότι συκῆ οὐ καρποφορήσει, καὶ οὐκ ἔσται γενήματα ἐν ταῖς ἀμπέλοις· ψεύσεται ἔργον ἐλαίας, καὶ τὰ πεδία οὐ ποιήσει βρῶσιν· ἐξέλιπεν ἀπὸ βρώσεως πρόβατα, καὶ οὐχ ὑπάρχουσιν βόες ἐπὶ φάτναις.",
+        "VUL": "Ficus enim non florebit,/ et non erit germen in vineis ;/ mentietur opus olivæ,/ et arva non afferent cibum :/ abscindetur de ovili pecus,/ et non erit armentum in præsepibus./",
+        "SYN": "Хотя бы не расцвела смоковница и не было плода на виноградных лозах, и маслина изменила, и нива не дала пищи, хотя бы не стало овец в загоне и рогатого скота в стойлах, -",
+        "NEO": "Car alors le figuier ne fleurira pas, il n’y aura rien à récolter dans les vignes ; le fruit de l’olivier manquera, et les champs ne donneront pas de nourriture ; la brebis disparaîtra de la bergerie, et il n’y aura plus de bœufs dans les étables.",
+        "NAB": "For though the fig tree blossom not nor fruit be on the vines, Though the yield of the olive fail and the terraces produce no nourishment, Though the flocks disappear from the fold and there be no herd in the stalls,",
+        "VAT_ES": "Porque la higuera no florece, ni se recoge nada en las viñas; fracasa la cosecha del olivo y los campos no dan alimento; las ovejas desaparecerán del corral y no hay bueyes en los establos.",
+        "CEI": "Il fico infatti non germoglierà, nessun prodotto daranno le viti, cesserà il raccolto dell'olivo, i campi non daranno più cibo, i greggi spariranno dagli ovili e le stalle rimarranno senza buoi."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֖י בַּ/יהוָ֣ה אֶעְל֑וֹזָה אָגִ֖ילָה בֵּ/אלֹהֵ֥י יִשְׁעִֽ/י׃",
+        "LXX": "ἐγὼ δὲ ἐν τῷ κυρίῳ ἀγαλλιάσομαι, χαρήσομαι ἐπὶ τῷ θεῷ τῷ σωτῆρί μου.",
+        "VUL": "Ego autem in Domino gaudebo ;/ et exsultabo in Deo Jesu meo./",
+        "SYN": "но и тогда я буду радоваться о Господе и веселиться о Боге спасения моего.",
+        "NEO": "Et moi, je veux me réjouir en \\+w Yahweh|strong=\"H3068\"\\+w**, tressaillir de joie dans le Dieu de mon salut.",
+        "NAB": "Yet will I rejoice in the LORD and exult in my saving God.",
+        "VAT_ES": "Pero yo me alegraré en el Señor, me regocijaré en Dios, mi Salvador.",
+        "CEI": "Ma io gioirò nel Signore, esulterò in Dio mio salvatore."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "יְהוִ֤הּ אֲדֹנָ/י֙ חֵילִ֔/י וַ/יָּ֤שֶׂם רַגְלַ/י֙ כָּֽ/אַיָּל֔וֹת וְ/עַ֥ל בָּמוֹתַ֖/י יַדְרִכֵ֑/נִי לַ/מְנַצֵּ֖חַ בִּ/נְגִינוֹתָֽי׃",
+        "LXX": "Κύριος ὁ θεὸς δύναμίς μου, καὶ τάξει τοὺς πόδας μου εἰς συντέλειαν· ἐπὶ τὰ ὑψηλὰ ἐπιβιβᾷ με τοῦ νικῆσαι ἐν τῇ ᾠδῇ αὐτοῦ.",
+        "VUL": "Deus Dominus fortitudo mea,/ et ponet pedes meos quasi cervorum :/ et super excelsa mea deducet me/ victor in psalmis canentem.]",
+        "SYN": "Господь Бог - сила моя: Он сделает ноги мои как у оленя и на высоты мои возведет меня! [Начальнику хора.]",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, le Seigneur, est ma force ; il rend mes pieds pareils à ceux des biches, et me fait marcher sur mes lieux élevés.",
+        "NAB": "GOD, my Lord, is my strength; he makes my feet swift as those of hinds and enables me to go upon the heights. For the leader; with stringed instruments.",
+        "VAT_ES": "El Señor, mi Señor, es mi fortaleza: él da a mis pies la agilidad de las gacelas y me hace caminar por las alturas.",
+        "CEI": "Il Signore Dio è la mia forza, egli rende i miei piedi come quelli delle cerve e sulle alture mi fa camminare. Per il maestro del coro. Su strumenti a corda."
+      }
+    }
+  }
+}

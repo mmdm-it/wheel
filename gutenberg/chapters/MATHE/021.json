@@ -1,0 +1,842 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MATHE_021",
+  "book_key": "MATHE",
+  "sequence": 21,
+  "chapter_in": {
+    "MT": 21,
+    "VUL": 21,
+    "LXX": 21
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "Et cum appropinquassent Jerosolymis, et venissent Bethphage ad montem Oliveti : tunc Jesus misit duos discipulos,",
+        "LXX": "Καὶ ὅτε ἤγγισαν εἰς Ἱεροσόλυμα, καὶ ἦλθον εἰς Βηθσφαγὴ πρὸς τὸ ὄρος τῶν Ἐλαιῶν, τότε ὁ Ἰησοῦς ἀπέστειλεν δύο μαθητάς,",
+        "SYN": "И когда приблизились к Иерусалиму и пришли в Виффагию к горе Елеонской, тогда Иисус послал двух учеников,",
+        "BYZ": "Καὶ ὅτε ἤγγισαν εἰς Ἱεροσόλυμα, καὶ ἦλθον εἰς Βηθσφαγὴ πρὸς τὸ ὄρος τῶν Ἐλαιῶν, τότε ὁ Ἰησοῦς ἀπέστειλεν δύο μαθητάς,",
+        "NEO": "Lorsqu’ils approchèrent de Jérusalem, et furent arrivés à Bethphagé, vers le mont des Oliviers, Jésus envoya deux de ses disciples,",
+        "NAB": "When they drew near Jerusalem and came to Bethphage on the Mount of Olives, Jesus sent two disciples,",
+        "VAT_ES": "Cuando se acercaron a Jerusalén y llegaron a Betfagé, al monte de los Olivos, Jesús envió a dos discípulos,",
+        "CEI": "Quando furono vicini a Gerusalemme e giunsero presso Bètfage, verso il monte degli Ulivi, Gesù mandò due dei suoi discepoli"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "dicens eis : Ite in castellum, quod contra vos est, et statim invenietis asinam alligatam, et pullum cum ea : solvite, et adducite mihi :",
+        "LXX": "λέγων αὐτοῖς, Πορεύθητε εἰς τὴν κώμην τὴν ἀπέναντι ὑμῶν, καὶ εὐθέως εὑρήσετε ὄνον δεδεμένην, καὶ πῶλον μετ’ αὐτῆς· λύσαντες ἀγάγετέ μοι.",
+        "SYN": "сказав им: пойдите в селение, которое прямо перед вами; и тотчас найдете ослицу привязанную и молодого осла с нею; отвязав, приведите ко Мне;",
+        "BYZ": "λέγων αὐτοῖς, Πορεύθητε εἰς τὴν κώμην τὴν ἀπέναντι ὑμῶν, καὶ εὐθέως εὑρήσετε ὄνον δεδεμένην, καὶ πῶλον μετ’ αὐτῆς· λύσαντες ἀγάγετέ μοι.",
+        "NEO": "en leur disant : « Allez au village qui est devant vous ; vous trouverez aussitôt une ânesse attachée et un ânon avec elle ; détachez-les, et amenez-les-moi.",
+        "NAB": "saying to them, \"Go into the village opposite you, and immediately you will find an ass tethered, and a colt with her. Untie them and bring them here to me.",
+        "VAT_ES": "diciéndoles: «Vayan al pueblo que está enfrente, e inmediatamente encontrarán un asna atada, junto con su cría. Desátenla y tráiganmelos.",
+        "CEI": "dicendo loro: \"Andate nel villaggio che vi sta di fronte: subito troverete un'asina legata e con essa un puledro. Scioglieteli e conduceteli a me."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "et si quis vobis aliquid dixerit, dicite quia Dominus his opus habet : et confestim dimittet eos.",
+        "LXX": "Καὶ ἐάν τις ὑμῖν εἴπῃ τι, ἐρεῖτε ὅτι Ὁ κύριος αὐτῶν χρείαν ἔχει· εὐθέως δὲ ἀποστέλλει αὐτούς.",
+        "SYN": "и если кто скажет вам что-нибудь, отвечайте, что они надобны Господу; и тотчас пошлет их.",
+        "BYZ": "Καὶ ἐάν τις ὑμῖν εἴπῃ τι, ἐρεῖτε ὅτι Ὁ κύριος αὐτῶν χρείαν ἔχει· εὐθέως δὲ ἀποστέλλει αὐτούς.",
+        "NEO": "Et si l’on vous dit quelque chose, répondez que le Seigneur en a besoin, et à l’instant on les laissera aller. »",
+        "NAB": "And if anyone should say anything to you, reply, 'The master has need of them.' Then he will send them at once.\"",
+        "VAT_ES": "Y si alguien les dice algo, respondan: «El Señor los necesita y los va a devolver en seguida».",
+        "CEI": "Se qualcuno poi vi dirà qualche cosa, risponderete: Il Signore ne ha bisogno, ma li rimanderà subito\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "Hoc autem totum factum est, ut adimpleretur quod dictum est per prophetam dicentem :",
+        "LXX": "Τοῦτο δὲ ὅλον γέγονεν, ἵνα πληρωθῇ τὸ ῥηθὲν διὰ τοῦ προφήτου, λέγοντος,",
+        "SYN": "Все же сие было, да сбудется реченное через пророка, который говорит:",
+        "BYZ": "Τοῦτο δὲ ὅλον γέγονεν, ἵνα πληρωθῇ τὸ ῥηθὲν διὰ τοῦ προφήτου, λέγοντος,",
+        "NEO": "Or ceci arriva, afin que s’accomplît la parole du prophète+ 21:4 4. Du prophète. Cf. Zach. ix, 9, et Is. lxii, 11.* :",
+        "NAB": "This happened so that what had been spoken through the prophet might be fulfilled:",
+        "VAT_ES": "Esto sucedió para que se cumpliera lo anunciado por el Profeta:",
+        "CEI": "Ora questo avvenne perché si adempisse ciò che era stato annunziato dal profeta:"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "[Dicite filiæ Sion :/ Ecce rex tuus venit tibi/ mansuetus, sedens super asinam,/ et pullum filium subjugalis.]",
+        "LXX": "Εἴπατε τῇ θυγατρὶ Σιών, Ἰδού, ὁ βασιλεύς σου ἔρχεταί σοι, πραῢς καὶ ἐπιβεβηκὼς ἐπὶ ὄνον καὶ πῶλον υἱὸν ὑποζυγίου.",
+        "SYN": "Скажите дщери Сионовой: се, Царь твой грядет к тебе кроткий, сидя на ослице и молодом осле, сыне подъяремной.",
+        "BYZ": "Εἴπατε τῇ θυγατρὶ Σιών, Ἰδού, ὁ βασιλεύς σου ἔρχεταί σοι, πραῢς καὶ ἐπιβεβηκὼς ἐπὶ ὄνον καὶ πῶλον υἱὸν ὑποζυγίου.",
+        "NEO": "« \\+w Dites|strong=\"G3004\"\\+w* \\+w à|strong=\"G2532\"\\+w* \\+w la|strong=\"G2532\"\\+w* \\+w fille|strong=\"G2364\"\\+w* \\+w de|strong=\"G2532\"\\+w* \\+w Sion|strong=\"G4622\"\\+w* : \\+w Voici|strong=\"G2400\"\\+w* \\+w que|strong=\"G2532\"\\+w* \\+w ton|strong=\"G2532\"\\+w* \\+w roi|strong=\"G2532\"\\+w* \\+w vient|strong=\"G2064\"\\+w* \\+w à|strong=\"G2532\"\\+w* \\+w toi|strong=\"G4771\"\\+w* \\+w plein|strong=\"G3588\"\\+w* \\+w de|strong=\"G2532\"\\+w* \\+w douceur|strong=\"G4239\"\\+w*, \\+w assis|strong=\"G3588\"\\+w* \\+w sur|strong=\"G1909\"\\+w* \\+w une|strong=\"G2532\"\\+w* \\+w ânesse|strong=\"G3688\"\\+w* \\+w et|strong=\"G2532\"\\+w* \\+w sur|strong=\"G1909\"\\+w* \\+w un|strong=\"G2532\"\\+w* \\+w ânon|strong=\"G4454\"\\+w*, \\+w le|strong=\"G2532\"\\+w* \\+w petit|strong=\"G2532\"\\+w* \\+w de|strong=\"G2532\"\\+w* \\+w celle|strong=\"G3588\"\\+w* \\+w qui|strong=\"G3588\"\\+w* \\+w porte|strong=\"G3588\"\\+w* \\+w le|strong=\"G2532\"\\+w* \\+w joug|strong=\"G2532\"\\+w**. »",
+        "NAB": "\"Say to daughter Zion, 'Behold, your king comes to you, meek and riding on an ass, and on a colt, the foal of a beast of burden.'\"",
+        "VAT_ES": "\"Digan a la hija de Sión: Mira que tu rey viene hacia ti, humilde y montado sobre un asna, sobre la cría de un animal de carga\".",
+        "CEI": "Dite alla figlia di Sion: Ecco, il tuo re viene a te mite, seduto su un'asina, con un puledro figlio di bestia da soma."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "Euntes autem discipuli fecerunt sicut præcepit illis Jesus.",
+        "LXX": "Πορευθέντες δὲ οἱ μαθηταί, καὶ ποιήσαντες καθὼς προσέταξεν αὐτοῖς ὁ Ἰησοῦς,",
+        "SYN": "Ученики пошли и поступили так, как повелел им Иисус:",
+        "BYZ": "Πορευθέντες δὲ οἱ μαθηταί, καὶ ποιήσαντες καθὼς προσέταξεν αὐτοῖς ὁ Ἰησοῦς,",
+        "NEO": "Les disciples allèrent donc et firent ce que Jésus leur avait commandé.",
+        "NAB": "The disciples went and did as Jesus had ordered them.",
+        "VAT_ES": "Los discípulos fueron e hicieron lo que Jesús les había mandado;",
+        "CEI": "I discepoli andarono e fecero quello che aveva ordinato loro Gesù:"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Et adduxerunt asinam, et pullum : et imposuerunt super eos vestimenta sua, et eum desuper sedere fecerunt.",
+        "LXX": "ἤγαγον τὴν ὄνον καὶ τὸν πῶλον· καὶ ἐπέθηκαν ἐπάνω αὐτῶν τὰ ἱμάτια αὐτῶν, καὶ ἐπεκάθισεν ἐπάνω αὐτῶν.",
+        "SYN": "привели ослицу и молодого осла и положили на них одежды свои, и Он сел поверх их.",
+        "BYZ": "ἤγαγον τὴν ὄνον καὶ τὸν πῶλον· καὶ ἐπέθηκαν ἐπάνω αὐτῶν τὰ ἱμάτια αὐτῶν, καὶ ἐπεκάθισεν ἐπάνω αὐτῶν.",
+        "NEO": "Ils amenèrent l’ânesse et l’ânon, mirent dessus leurs manteaux, et l’y firent asseoir.",
+        "NAB": "They brought the ass and the colt and laid their cloaks over them, and he sat upon them.",
+        "VAT_ES": "trajeron el asna y su cría, pusieron sus mantos sobre ellos y Jesús se montó.",
+        "CEI": "condussero l'asina e il puledro, misero su di essi i mantelli ed egli vi si pose a sedere."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Plurima autem turba straverunt vestimenta sua in via : alii autem cædebant ramos de arboribus, et sternebant in via :",
+        "LXX": "Ὁ δὲ πλεῖστος ὄχλος ἔστρωσαν ἑαυτῶν τὰ ἱμάτια ἐν τῇ ὁδῷ· ἄλλοι δὲ ἔκοπτον κλάδους ἀπὸ τῶν δένδρων, καὶ ἐστρώννυον ἐν τῇ ὁδῷ.",
+        "SYN": "Множество же народа постилали свои одежды по дороге, а другие резали ветви с дерев и постилали по дороге;",
+        "BYZ": "Ὁ δὲ πλεῖστος ὄχλος ἔστρωσαν ἑαυτῶν τὰ ἱμάτια ἐν τῇ ὁδῷ· ἄλλοι δὲ ἔκοπτον κλάδους ἀπὸ τῶν δένδρων, καὶ ἐστρώννυον ἐν τῇ ὁδῷ.",
+        "NEO": "Le peuple en grand nombre étendit ses manteaux le long de la route ; d’autres coupaient des branches d’arbres et en jonchaient le chemin.",
+        "NAB": "The very large crowd spread their cloaks on the road, while others cut branches from the trees and strewed them on the road.",
+        "VAT_ES": "Entonces la mayor parte de la gente comenzó a extender sus mantos sobre el camino, y otros cortaban ramas de los árboles y lo cubrían con ellas.",
+        "CEI": "La folla numerosissima stese i suoi mantelli sulla strada mentre altri tagliavano rami dagli alberi e li stendevano sulla via."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "turbæ autem, quæ præcedebant, et quæ sequebantur, clamabant, dicentes : Hosanna filio David : benedictus, qui venit in nomine Domini : hosanna in altissimis.",
+        "LXX": "Οἱ δὲ ὄχλοι οἱ προάγοντες καὶ οἱ ἀκολουθοῦντες ἔκραζον, λέγοντες, Ὡσαννὰ τῷ υἱῷ Δαυίδ· εὐλογημένος ὁ ἐρχόμενος ἐν ὀνόματι κυρίου. Ὡσαννὰ ἐν τοῖς ὑψίστοις.",
+        "SYN": "народ же, предшествовавший и сопровождавший, восклицал: осанна Сыну Давидову! благословен Грядущий во имя Господне! осанна в вышних!",
+        "BYZ": "Οἱ δὲ ὄχλοι οἱ προάγοντες καὶ οἱ ἀκολουθοῦντες ἔκραζον, λέγοντες, Ὡσαννὰ τῷ υἱῷ Δαυίδ· εὐλογημένος ὁ ἐρχόμενος ἐν ὀνόματι κυρίου. Ὡσαννὰ ἐν τοῖς ὑψίστοις.",
+        "NEO": "Et toute cette multitude, en avant de Jésus et derrière lui, criait : « \\+w Hosanna|strong=\"G5614\"\\+w**+ 21:9 9. Hosanna, litt. \\+qt Sauve !\\+qt* cri de joie et de triomphe, que l’on pourrait traduire généralement en français par \\+qt Salut ! Vive !\\+qt** au fils de David ! \\+w Béni|strong=\"G2127\"\\+w* \\+w soit|strong=\"G2532\"\\+w* \\+w celui|strong=\"G3588\"\\+w* \\+w qui|strong=\"G3588\"\\+w* \\+w vient|strong=\"G2064\"\\+w* \\+w au|strong=\"G1722\"\\+w* \\+w nom|strong=\"G3686\"\\+w* \\+w du|strong=\"G2532\"\\+w* \\+w Seigneur|strong=\"G2962\"\\+w** ! Hosanna au plus haut des cieux ! »",
+        "NAB": "The crowds preceding him and those following kept crying out and saying: \"Hosanna to the Son of David; blessed is he who comes in the name of the Lord; hosanna in the highest.\"",
+        "VAT_ES": "La multitud que iba delante de Jesús y la que lo seguía gritaba: «&iexcl;Hosana al Hijo de David! &iexcl;Bendito el que viene en nombre del Señor! &iexcl;Hosana en las alturas!",
+        "CEI": "La folla che andava innanzi e quella che veniva dietro, gridava: Osanna al figlio di Davide! Benedetto colui che viene nel nome del Signore! Osanna nel più alto dei cieli!"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Et cum intrasset Jerosolymam, commota est universa civitas, dicens : Quis est hic ?",
+        "LXX": "Καὶ εἰσελθόντος αὐτοῦ εἰς Ἱεροσόλυμα, ἐσείσθη πᾶσα ἡ πόλις, λέγουσα, Τίς ἐστιν οὗτος;",
+        "SYN": "И когда вошел Он в Иерусалим, весь город пришел в движение и говорил: кто Сей?",
+        "BYZ": "Καὶ εἰσελθόντος αὐτοῦ εἰς Ἱεροσόλυμα, ἐσείσθη πᾶσα ἡ πόλις, λέγουσα, Τίς ἐστιν οὗτος;",
+        "NEO": "Lorsqu’il entra dans Jérusalem, toute la ville fut en émoi ; on disait : « Qui est-ce ? »",
+        "NAB": "And when he entered Jerusalem the whole city was shaken and asked, \"Who is this?\"",
+        "VAT_ES": "Cuando entró en Jerusalén, toda la ciudad se conmovió, y preguntaban: «&iquest;Quién es este?».",
+        "CEI": "Entrato Gesù in Gerusalemme, tutta la città fu in agitazione e la gente si chiedeva: \"Chi è costui?\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Populi autem dicebant : Hic est Jesus propheta a Nazareth Galilææ.",
+        "LXX": "Οἱ δὲ ὄχλοι ἔλεγον, Οὗτός ἐστιν Ἰησοῦς ὁ προφήτης, ὁ ἀπὸ Ναζαρὲτ τῆς Γαλιλαίας.",
+        "SYN": "Народ же говорил: Сей есть Иисус, Пророк из Назарета Галилейского.",
+        "BYZ": "Οἱ δὲ ὄχλοι ἔλεγον, Οὗτός ἐστιν Ἰησοῦς ὁ προφήτης, ὁ ἀπὸ Ναζαρὲτ τῆς Γαλιλαίας.",
+        "NEO": "Et le peuple répondait : « C’est Jésus le prophète, de Nazareth en Galilée. »",
+        "NAB": "And the crowds replied, \"This is Jesus the prophet, from Nazareth in Galilee.\"",
+        "VAT_ES": "Y la gente respondía: «Es Jesús, el profeta de Nazaret en Galilea».",
+        "CEI": "E la folla rispondeva: \"Questi è il profeta Gesù, da Nazaret di Galilea\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "Et intravit Jesus in templum Dei, et ejiciebat omnes vendentes et ementes in templo, et mensas numulariorum, et cathedras vendentium columbas evertit :",
+        "LXX": "Καὶ εἰσῆλθεν ὁ Ἰησοῦς εἰς τὸ ἱερὸν τοῦ θεοῦ, καὶ ἐξέβαλεν πάντας τοὺς πωλοῦντας καὶ ἀγοράζοντας ἐν τῷ ἱερῷ, καὶ τὰς τραπέζας τῶν κολλυβιστῶν κατέστρεψεν, καὶ τὰς καθέδρας τῶν πωλούντων τὰς περιστεράς.",
+        "SYN": "И вошел Иисус в храм Божий и выгнал всех продающих и покупающих в храме, и опрокинул столы меновщиков и скамьи продающих голубей,",
+        "BYZ": "¶Καὶ εἰσῆλθεν ὁ Ἰησοῦς εἰς τὸ ἱερὸν τοῦ θεοῦ, καὶ ἐξέβαλεν πάντας τοὺς πωλοῦντας καὶ ἀγοράζοντας ἐν τῷ ἱερῷ, καὶ τὰς τραπέζας τῶν κολλυβιστῶν κατέστρεψεν, καὶ τὰς καθέδρας τῶν πωλούντων τὰς περιστεράς.",
+        "NEO": "Jésus étant entré dans le temple, chassa tous ceux qui vendaient et achetaient dans le temple ; il renversa les tables des changeurs et les sièges de ceux qui vendaient les colombes,+ 21:12 12. Cf. Marc, xi, 15-18 ; Luc, xix, 45-47.*",
+        "NAB": "Jesus entered the temple area and drove out all those engaged in selling and buying there. He overturned the tables of the money changers and the seats of those who were selling doves.",
+        "VAT_ES": "Después Jesús entró en el Templo y echó a todos los que vendían y compraban allí, derribando las mesas de los cambistas y los asientos de los vendedores de palomas.",
+        "CEI": "Gesù entrò poi nel tempio e scacciò tutti quelli che vi trovò a comprare e a vendere; rovesciò i tavoli dei cambiavalute e le sedie dei venditori di colombe"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "et dicit eis : Scriptum est : Domus mea domus orationis vocabitur : vos autem fecistis illam speluncam latronum.",
+        "LXX": "Καὶ λέγει αὐτοῖς, Γέγραπται, Ὁ οἶκός μου οἶκος προσευχῆς κληθήσεται· ὑμεῖς δὲ αὐτὸν ἐποιήσατε σπήλαιον λῃστῶν.",
+        "SYN": "и говорил им: написано, -- дом Мой домом молитвы наречется; а вы сделали его вертепом разбойников.",
+        "BYZ": "Καὶ λέγει αὐτοῖς, Γέγραπται, Ὁ οἶκός μου οἶκος προσευχῆς κληθήσεται· ὑμεῖς δὲ αὐτὸν ἐποιήσατε σπήλαιον λῃστῶν.",
+        "NEO": "et leur dit : « Il est écrit : \\+w Ma|strong=\"G2532\"\\+w* \\+w maison|strong=\"G3624\"\\+w* \\+w sera|strong=\"G2532\"\\+w* \\+w appelée|strong=\"G2564\"\\+w* \\+w une|strong=\"G2532\"\\+w* \\+w maison|strong=\"G3624\"\\+w* \\+w de|strong=\"G2532\"\\+w* \\+w prière|strong=\"G4335\"\\+w*, \\+w et|strong=\"G2532\"\\+w* \\+w vous|strong=\"G5210\"\\+w* \\+w en|strong=\"G2532\"\\+w* \\+w faites|strong=\"G4160\"\\+w* \\+w une|strong=\"G2532\"\\+w* \\+w caverne|strong=\"G4693\"\\+w* \\+w de|strong=\"G2532\"\\+w* \\+w voleurs|strong=\"G3027\"\\+w**. »+ 21:13 13. Citation libre d’Is. lvi, 7 et de Jér. vii, 11. — Autre leçon : « vous en avez fait.»*",
+        "NAB": "And he said to them, \"It is written: 'My house shall be a house of prayer,' but you are making it a den of thieves.\"",
+        "VAT_ES": "Y les decía: «Está escrito: Mi casa será llamada casa de oración, pero ustedes la han convertido en una cueva de ladrones».",
+        "CEI": "e disse loro: \"La Scrittura dice: La mia casa sarà chiamata casa di preghiera ma voi ne fate una spelonca di ladri\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Et accesserunt ad eum cæci, et claudi in templo : et sanavit eos.",
+        "LXX": "Καὶ προσῆλθον αὐτῷ χωλοὶ καὶ τυφλοὶ ἐν τῷ ἱερῷ· καὶ ἐθεράπευσεν αὐτούς.",
+        "SYN": "И приступили к Нему в храме слепые и хромые, и Он исцелил их.",
+        "BYZ": "Καὶ προσῆλθον αὐτῷ χωλοὶ καὶ τυφλοὶ ἐν τῷ ἱερῷ· καὶ ἐθεράπευσεν αὐτούς.",
+        "NEO": "Des aveugles et des boiteux vinrent à lui dans le temple, et il les guérit.",
+        "NAB": "The blind and the lame approached him in the temple area, and he cured them.",
+        "VAT_ES": "En el Templo se le acercaron varios cielos paralíticos, y él los curó.",
+        "CEI": "Gli si avvicinarono ciechi e storpi nel tempio ed egli li guarì."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Videntes autem principes sacerdotum et scribæ mirabilia quæ fecit, et pueros clamantes in templo, et dicentes : Hosanna filio David : indignati sunt,",
+        "LXX": "Ἰδόντες δὲ οἱ ἀρχιερεῖς καὶ οἱ γραμματεῖς τὰ θαυμάσια ἃ ἐποίησεν, καὶ τοὺς παῖδας κράζοντας ἐν τῷ ἱερῷ, καὶ λέγοντας, Ὡσαννὰ τῷ υἱῷ Δαυίδ, ἠγανάκτησαν,",
+        "SYN": "Видев же первосвященники и книжники чудеса, которые Он сотворил, и детей, восклицающих в храме и говорящих: осанна Сыну Давидову! -- вознегодовали",
+        "BYZ": "Ἰδόντες δὲ οἱ ἀρχιερεῖς καὶ οἱ γραμματεῖς τὰ θαυμάσια ἃ ἐποίησεν, καὶ τοὺς παῖδας κράζοντας ἐν τῷ ἱερῷ, καὶ λέγοντας, Ὡσαννὰ τῷ υἱῷ Δαυίδ, ἠγανάκτησαν,",
+        "NEO": "Mais les Princes des prêtres et les Scribes, voyant les miracles qu’il faisait, et les enfants qui criaient dans le temple et disaient : « Hosanna au fils de David, » s’indignèrent,",
+        "NAB": "When the chief priests and the scribes saw the wondrous things he was doing, and the children crying out in the temple area, \"Hosanna to the Son of David,\" they were indignant",
+        "VAT_ES": "Al ver los prodigios que acababa de hacer y a los niños que gritaban en el Templo: «&iexcl;Hosana al Hijo de David!», los sumos sacerdotes y los escribas se indignaron",
+        "CEI": "Ma i sommi sacerdoti e gli scribi, vedendo le meraviglie che faceva e i fanciulli che acclamavano nel tempio: \"Osanna al figlio di Davide\", si sdegnarono"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "et dixerunt ei : Audis quid isti dicunt ? Jesus autem dixit eis : Utique. Numquam legistis : Quia ex ore infantium et lactentium perfecisti laudem ?",
+        "LXX": "καὶ εἶπον αὐτῷ, Ἀκούεις τί οὗτοι λέγουσιν; Ὁ δὲ Ἰησοῦς λέγει αὐτοῖς, Ναί· οὐδέποτε ἀνέγνωτε ὅτι Ἐκ στόματος νηπίων καὶ θηλαζόντων κατηρτίσω αἶνον;",
+        "SYN": "и сказали Ему: слышишь ли, что они говорят? Иисус же говорит им: да! разве вы никогда не читали: из уст младенцев и грудных детей Ты устроил хвалу?",
+        "BYZ": "καὶ εἶπον αὐτῷ, Ἀκούεις τί οὗτοι λέγουσιν; Ὁ δὲ Ἰησοῦς λέγει αὐτοῖς, Ναί· οὐδέποτε ἀνέγνωτε ὅτι Ἐκ στόματος νηπίων καὶ θηλαζόντων κατηρτίσω αἶνον;",
+        "NEO": "et ils lui dirent : « Entendez-vous ce qu’ils disent ? — Oui, leur répondit Jésus ; n’avez-vous jamais lu : \\+w De|strong=\"G2532\"\\+w* \\+w la|strong=\"G2532\"\\+w* \\+w bouche|strong=\"G4750\"\\+w* \\+w des|strong=\"G2532\"\\+w* \\+w enfants|strong=\"G3516\"\\+w* \\+w et|strong=\"G2532\"\\+w* \\+w de|strong=\"G2532\"\\+w* \\+w ceux|strong=\"G3588\"\\+w* \\+w qui|strong=\"G3588\"\\+w* \\+w sont|strong=\"G3588\"\\+w* \\+w à|strong=\"G2532\"\\+w* \\+w la|strong=\"G2532\"\\+w* \\+w mamelle|strong=\"G2337\"\\+w*, \\+w vous|strong=\"G2532\"\\+w* \\+w vous|strong=\"G2532\"\\+w* \\+w êtes|strong=\"G3588\"\\+w* préparé \\+w une|strong=\"G2532\"\\+w* louange* ? »+ 21:16 16. Ps. viii, 3.*",
+        "NAB": "and said to him, \"Do you hear what they are saying?\" Jesus said to them, \"Yes; and have you never read the text, 'Out of the mouths of infants and nurslings you have brought forth praise'?\"",
+        "VAT_ES": "y le dijeron: «&iquest;Oyes lo que dicen estos?». «Sí, respondió Jesús, &iquest;Pero nunca han leído este pasaje: \"De la boca de las criaturas y de los niños de pecho, has hecho brotar una alabanza\"?».",
+        "CEI": "e gli dissero: \"Non senti quello che dicono?\". Gesù rispose loro: \"Sì, non avete mai letto: Dalla bocca dei bambini e dei lattanti ti sei procurata una lode?\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Et relictis illis, abiit foras extra civitatem in Bethaniam : ibique mansit.",
+        "LXX": "Καὶ καταλιπὼν αὐτοὺς ἐξῆλθεν ἔξω τῆς πόλεως εἰς Βηθανίαν, καὶ ηὐλίσθη ἐκεῖ.",
+        "SYN": "И, оставив их, вышел вон из города в Вифанию и провел там ночь.",
+        "BYZ": "Καὶ καταλιπὼν αὐτοὺς ἐξῆλθεν ἔξω τῆς πόλεως εἰς Βηθανίαν, καὶ ηὐλίσθη ἐκεῖ.",
+        "NEO": "Et les ayant laissés là, il sortit de la ville, et s’en alla dans la direction de Béthanie, où il passa la nuit en plein air.+ 21:17 17. Cf. Marc, xi, 12-24. D’après Luc, xxi, 37, le Sauveur s’en allait vers le Mont des Oliviers où il passait la nuit en plein air.*",
+        "NAB": "And leaving them, he went out of the city to Bethany, and there he spent the night.",
+        "VAT_ES": "En seguida los dejó y salió de la ciudad para ir a Betania, donde pasó la noche.",
+        "CEI": "E, lasciatili, uscì fuori dalla città, verso Betània, e là trascorse la notte."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Mane autem revertens in civitatem, esuriit.",
+        "LXX": "Πρωΐας δὲ ἐπανάγων εἰς τὴν πόλιν, ἐπείνασεν.",
+        "SYN": "Поутру же, возвращаясь в город, взалкал;",
+        "BYZ": "¶Πρωΐας δὲ ἐπανάγων εἰς τὴν πόλιν, ἐπείνασεν.",
+        "NEO": "Le lendemain matin, comme il retournait à la ville, il eut faim.",
+        "NAB": "When he was going back to the city in the morning, he was hungry.",
+        "VAT_ES": "A la mañana temprano, mientras regresaba a la ciudad, tuvo hambre.",
+        "CEI": "La mattina dopo, mentre rientrava in città, ebbe fame."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "Et videns fici arborem unam secus viam, venit ad eam : et nihil invenit in ea nisi folia tantum, et ait illi : Numquam ex te fructus nascatur in sempiternum. Et arefacta est continuo ficulnea.",
+        "LXX": "Καὶ ἰδὼν συκῆν μίαν ἐπὶ τῆς ὁδοῦ, ἦλθεν ἐπ’ αὐτήν, καὶ οὐδὲν εὗρεν ἐν αὐτῇ εἰ μὴ φύλλα μόνον· καὶ λέγει αὐτῇ, Μηκέτι ἐκ σοῦ καρπὸς γένηται εἰς τὸν αἰῶνα. Καὶ ἐξηράνθη παραχρῆμα ἡ συκῆ.",
+        "SYN": "и увидев при дороге одну смоковницу, подошел к ней и, ничего не найдя на ней, кроме одних листьев, говорит ей: да не будет же впредь от тебя плода вовек. И смоковница тотчас засохла.",
+        "BYZ": "Καὶ ἰδὼν συκῆν μίαν ἐπὶ τῆς ὁδοῦ, ἦλθεν ἐπ’ αὐτήν, καὶ οὐδὲν εὗρεν ἐν αὐτῇ εἰ μὴ φύλλα μόνον· καὶ λέγει αὐτῇ, Μηκέτι ἐκ σοῦ καρπὸς γένηται εἰς τὸν αἰῶνα. Καὶ ἐξηράνθη παραχρῆμα ἡ συκῆ.",
+        "NEO": "Voyant un figuier près du chemin, il s’en approcha ; mais il n’y trouva que des feuilles, et il lui dit : « Que jamais aucun fruit ne naisse de toi ! » Et à l’instant le figuier sécha.+ 21:19 19. Nous avons ici une parabole de choses, semblable à celle de paroles que l’on trouve en Luc, xiii, 6 ; ou, si l’on veut, une de ces actions symboliques sous lesquelles les Orientaux se plaisent à cacher quelque grave pensée. Le figuier représente la nation juive, comblée des faveurs divines : arbre verdoyant, mais où le Sauveur ne trouva que des feuilles, et pas de fruit, et qui fut, en punition, frappé par la justice divine.*",
+        "NAB": "Seeing a fig tree by the road, he went over to it, but found nothing on it except leaves. And he said to it, \"May no fruit ever come from you again.\" And immediately the fig tree withered.",
+        "VAT_ES": "Al ver una higuera cerca del camino, se acercó a ella, pero no encontró más que hojas. Entonces le dijo: «Nunca volverás a dar fruto». Y la higuera se secó de inmediato.",
+        "CEI": "Vedendo un fico sulla strada, gli si avvicinò, ma non vi trovò altro che foglie, e gli disse: \"Non nasca mai più frutto da te\". E subito quel fico si seccò."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "Et videntes discipuli, mirati sunt, dicentes : Quomodo continuo aruit ?",
+        "LXX": "Καὶ ἰδόντες οἱ μαθηταὶ ἐθαύμασαν, λέγοντες, Πῶς παραχρῆμα ἐξηράνθη ἡ συκῆ;",
+        "SYN": "Увидев это, ученики удивились и говорили: как это тотчас засохла смоковница?",
+        "BYZ": "Καὶ ἰδόντες οἱ μαθηταὶ ἐθαύμασαν, λέγοντες, Πῶς παραχρῆμα ἐξηράνθη ἡ συκῆ;",
+        "NEO": "À cette vue, les disciples dirent avec étonnement : « Comment a-t-il séché en un instant ? »",
+        "NAB": "When the disciples saw this, they were amazed and said, \"How was it that the fig tree withered immediately?\"",
+        "VAT_ES": "Cuando vieron esto, los discípulos dijeron llenos de asombro: «&iquest;Cómo se ha secado la higuera tan repentinamente?».",
+        "CEI": "Vedendo ciò i discepoli rimasero stupiti e dissero: \"Come mai il fico si è seccato immediatamente?\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Respondens autem Jesus, ait eis : Amen dico vobis, si habueritis fidem, et non hæsitaveritis, non solum de ficulnea facietis, sed et si monti huic dixeritis : Tolle, et jacta te in mare, fiet.",
+        "LXX": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς, Ἀμὴν λέγω ὑμῖν, ἐὰν ἔχητε πίστιν, καὶ μὴ διακριθῆτε, οὐ μόνον τὸ τῆς συκῆς ποιήσετε, ἀλλὰ κἂν τῷ ὄρει τούτῳ εἴπητε, Ἄρθητι, καὶ βλήθητι εἰς τὴν θάλασσαν, γενήσεται.",
+        "SYN": "Иисус же сказал им в ответ: истинно говорю вам, если будете иметь веру и не усомнитесь, не только сделаете то, что _сделано_ со смоковницею, но если и горе сей скажете: поднимись и ввергнись в море, -- будет;",
+        "BYZ": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς, Ἀμὴν λέγω ὑμῖν, ἐὰν ἔχητε πίστιν, καὶ μὴ διακριθῆτε, οὐ μόνον τὸ τῆς συκῆς ποιήσετε, ἀλλὰ κἂν τῷ ὄρει τούτῳ εἴπητε, Ἄρθητι, καὶ βλήθητι εἰς τὴν θάλασσαν, γενήσεται.",
+        "NEO": "Jésus leur répondit : « En vérité, je vous le dis, si vous avez de la foi et que vous n’hésitiez pas, non seulement vous ferez comme il a été fait à ce figuier ; mais quand même vous diriez à cette montagne : Ôte-toi de là et jette-toi dans la mer, cela se ferait.",
+        "NAB": "Jesus said to them in reply, \"Amen, I say to you, if you have faith and do not waver, not only will you do what has been done to the fig tree, but even if you say to this mountain, 'Be lifted up and thrown into the sea,' it will be done.",
+        "VAT_ES": "Jesús les respondió: «Les aseguro que si tienen fe y no dudan, no sólo harán lo que yo acabo de hacer con la higuera, sino que podrán decir a esta montaña: «Retírate de ahí y arrójate al mar», y así lo hará.",
+        "CEI": "Rispose Gesù: \"In verità vi dico: Se avrete fede e non dubiterete, non solo potrete fare ciò che è accaduto a questo fico, ma anche se direte a questo monte: Levati di lì e gettati nel mare, ciò avverrà."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Et omnia quæcumque petieritis in oratione credentes, accipietis.",
+        "LXX": "Καὶ πάντα ὅσα ἐὰν αἰτήσητε ἐν τῇ προσευχῇ, πιστεύοντες, λήψεσθε.",
+        "SYN": "и все, чего ни попросите в молитве с верою, получите.",
+        "BYZ": "Καὶ πάντα ὅσα ἐὰν αἰτήσητε ἐν τῇ προσευχῇ, πιστεύοντες, λήψεσθε.",
+        "NEO": "Tout ce que vous demanderez avec foi dans la prière, vous l’obtiendrez. »",
+        "NAB": "Whatever you ask for in prayer with faith, you will receive.\"",
+        "VAT_ES": "Todo lo que pidan en la oración con fe, lo alcanzarán».",
+        "CEI": "E tutto quello che chiederete con fede nella preghiera, lo otterrete\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "Et cum venisset in templum, accesserunt ad eum docentem principes sacerdotum, et seniores populi, dicentes : In qua potestate hæc facis ? et quis tibi dedit hanc potestatem ?",
+        "LXX": "Καὶ ἐλθόντι αὐτῷ εἰς τὸ ἱερόν, προσῆλθον αὐτῷ διδάσκοντι οἱ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ, λέγοντες, Ἐν ποίᾳ ἐξουσίᾳ ταῦτα ποιεῖς; Καὶ τίς σοι ἔδωκεν τὴν ἐξουσίαν ταύτην;",
+        "SYN": "И когда пришел Он в храм и учил, приступили к Нему первосвященники и старейшины народа и сказали: какой властью Ты это делаешь? и кто Тебе дал такую власть?",
+        "BYZ": "¶Καὶ ἐλθόντι αὐτῷ εἰς τὸ ἱερόν, προσῆλθον αὐτῷ διδάσκοντι οἱ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ, λέγοντες, Ἐν ποίᾳ ἐξουσίᾳ ταῦτα ποιεῖς; Καὶ τίς σοι ἔδωκεν τὴν ἐξουσίαν ταύτην;",
+        "NEO": "Étant entré dans le temple, comme il enseignait, les Princes des prêtres et les Anciens s’approchèrent de lui et lui dirent : « De quel droit faites-vous ces choses, et qui vous a donné ce pouvoir ? »+ 21:23 23. Cf. Marc, xi, 27-33 ; Luc, xx, 1-8.*",
+        "NAB": "When he had come into the temple area, the chief priests and the elders of the people approached him as he was teaching and said, \"By what authority are you doing these things? And who gave you this authority?\"",
+        "VAT_ES": "Jesús entró en el Templo y, mientras enseñaba, se le acercaron los sumos sacerdotes y los ancianos del pueblo, para decirle: «&iquest;Con qué autoridad haces estas cosas? &iquest;Y quién te ha dado esa autoridad?».",
+        "CEI": "Entrato nel tempio, mentre insegnava gli si avvicinarono i sommi sacerdoti e gli anziani del popolo e gli dissero: \"Con quale autorità fai questo? Chi ti ha dato questa autorità?\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Respondens Jesus dixit eis : Interrogabo vos et ego unum sermonem : quem si dixeritis mihi, et ego vobis dicam in qua potestate hæc facio.",
+        "LXX": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς, Ἐρωτήσω ὑμᾶς κἀγὼ λόγον ἕνα, ὃν ἐὰν εἴπητέ μοι, κἀγὼ ὑμῖν ἐρῶ ἐν ποίᾳ ἐξουσίᾳ ταῦτα ποιῶ.",
+        "SYN": "Иисус сказал им в ответ: спрошу и Я вас об одном; если о том скажете Мне, то и Я вам скажу, какою властью это делаю;",
+        "BYZ": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς, Ἐρωτήσω ὑμᾶς κἀγὼ λόγον ἕνα, ὃν ἐὰν εἴπητέ μοι, κἀγὼ ὑμῖν ἐρῶ ἐν ποίᾳ ἐξουσίᾳ ταῦτα ποιῶ.",
+        "NEO": "Jésus leur répondit : « Je vous ferai, moi aussi, une question, et, si vous y répondez, je vous dirai de quel droit je fais ces choses :",
+        "NAB": "Jesus said to them in reply, \"I shall ask you one question, and if you answer it for me, then I shall tell you by what authority I do these things.",
+        "VAT_ES": "Jesús les respondió: «Yo también quiero hacerles una sola pregunta. Si me responden, les diré con qué autoridad hago estas cosas.",
+        "CEI": "Gesù rispose: \"Vi farò anch'io una domanda e se voi mi rispondete, vi dirò anche con quale autorità faccio questo."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "Baptismus Joannis unde erat ? e cælo, an ex hominibus ? At illi cogitabant inter se, dicentes :",
+        "LXX": "Τὸ βάπτισμα Ἰωάννου πόθεν ἦν; Ἐξ οὐρανοῦ ἢ ἐξ ἀνθρώπων; Οἱ δὲ διελογίζοντο παρ’ ἑαυτοῖς, λέγοντες, Ἐὰν εἴπωμεν, Ἐξ οὐρανοῦ, ἐρεῖ ἡμῖν, Διὰ τί οὖν οὐκ ἐπιστεύσατε αὐτῷ;",
+        "SYN": "крещение Иоанново откуда было: с небес, или от человеков? Они же рассуждали между собою: если скажем: с небес, то Он скажет нам: почему же вы не поверили ему?",
+        "BYZ": "Τὸ βάπτισμα Ἰωάννου πόθεν ἦν; Ἐξ οὐρανοῦ ἢ ἐξ ἀνθρώπων; Οἱ δὲ διελογίζοντο παρ’ ἑαυτοῖς, λέγοντες, Ἐὰν εἴπωμεν, Ἐξ οὐρανοῦ, ἐρεῖ ἡμῖν, Διὰ τί οὖν οὐκ ἐπιστεύσατε αὐτῷ;",
+        "NEO": "Le baptême de Jean, d’où était-il ? du ciel, ou des hommes ? « Mais ils faisaient en eux-mêmes cette réflexion :",
+        "NAB": "Where was John's baptism from? Was it of heavenly or of human origin?\" They discussed this among themselves and said, \"If we say 'Of heavenly origin,' he will say to us, 'Then why did you not believe him?'",
+        "VAT_ES": "&iquest;De dónde venía el bautismo de Juan? &iquest;Del cielo o de los hombres?». Ellos se hacían este razonamiento: «Si respondemos: «Del cielo», él nos dirá: «Entonces, &iquest;por qué no creyeron en él?».",
+        "CEI": "Il battesimo di Giovanni da dove veniva? Dal cielo o dagli uomini?\". Ed essi riflettevano tra sé dicendo: \"Se diciamo: \"dal Cielo\", ci risponderà: \"perché dunque non gli avete creduto?'';"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Si dixerimus, e cælo, dicet nobis : Quare ergo non credidistis illi ? Si autem dixerimus, ex hominibus, timemus turbam : omnes enim habebant Joannem sicut prophetam.",
+        "LXX": "Ἐὰν δὲ εἴπωμεν, Ἐξ ἀνθρώπων, φοβούμεθα τὸν ὄχλον· πάντες γὰρ ἔχουσιν τὸν Ἰωάννην ὡς προφήτην.",
+        "SYN": "а если сказать: от человеков, -- боимся народа, ибо все почитают Иоанна за пророка.",
+        "BYZ": "Ἐὰν δὲ εἴπωμεν, Ἐξ ἀνθρώπων, φοβούμεθα τὸν ὄχλον· πάντες γὰρ ἔχουσιν τὸν Ἰωάννην ὡς προφήτην.",
+        "NEO": "« Si nous répondons : Du ciel, il nous dira : Pourquoi donc n’avez-vous pas cru en lui ? Et si nous répondons : Des hommes, nous avons à craindre le peuple : car tout le monde tient Jean pour un prophète. »",
+        "NAB": "But if we say, 'Of human origin,' we fear the crowd, for they all regard John as a prophet.\"",
+        "VAT_ES": "Y si decimos: «De los hombres», debemos temer a la multitud, porque todos consideran a Juan un profeta».",
+        "CEI": "se diciamo \"dagli uomini\", abbiamo timore della folla, perché tutti considerano Giovanni un profeta\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "Et respondentes Jesu, dixerunt : Nescimus. Ait illis et ipse : Nec ego dico vobis in qua potestate hæc facio.",
+        "LXX": "Καὶ ἀποκριθέντες τῷ Ἰησοῦ εἶπον, Οὐκ οἴδαμεν. Ἔφη αὐτοῖς καὶ αὐτός, Οὐδὲ ἐγὼ λέγω ὑμῖν ἐν ποίᾳ ἐξουσίᾳ ταῦτα ποιῶ.",
+        "SYN": "И сказали в ответ Иисусу: не знаем. Сказал им и Он: и Я вам не скажу, какою властью это делаю.",
+        "BYZ": "Καὶ ἀποκριθέντες τῷ Ἰησοῦ εἶπον, Οὐκ οἴδαμεν. Ἔφη αὐτοῖς καὶ αὐτός, Οὐδὲ ἐγὼ λέγω ὑμῖν ἐν ποίᾳ ἐξουσίᾳ ταῦτα ποιῶ.",
+        "NEO": "Ils répondirent à Jésus : « Nous ne savons. — Et moi, dit Jésus, je ne vous dis pas non plus de quel droit je fais ces choses. »",
+        "NAB": "So they said to Jesus in reply, \"We do not know.\" He himself said to them, \"Neither shall I tell you by what authority I do these things.",
+        "VAT_ES": "Por eso respondieron a Jesús: «No sabemos». El, por su parte, les respondió: «Entonces yo tampoco les diré con qué autoridad hago esto».",
+        "CEI": "Rispondendo perciò a Gesù, dissero: \"Non lo sappiamo\". Allora anch'egli disse loro: \"Neanch'io vi dico con quale autorità faccio queste cose\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "Quid autem vobis videtur ? Homo quidam habebat duos filios, et accedens ad primum, dixit : Fili, vade hodie, operare in vinea mea.",
+        "LXX": "Τί δὲ ὑμῖν δοκεῖ; Ἄνθρωπος εἶχεν τέκνα δύο, καὶ προσελθὼν τῷ πρώτῳ εἶπεν, Τέκνον, ὕπαγε, σήμερον ἐργάζου ἐν τῷ ἀμπελῶνί μου.",
+        "SYN": "А как вам кажется? У одного человека было два сына; и он, подойдя к первому, сказал: сын! пойди сегодня работай в винограднике моем.",
+        "BYZ": "Τί δὲ ὑμῖν δοκεῖ; Ἄνθρωπος εἶχεν τέκνα δύο, καὶ προσελθὼν τῷ πρώτῳ εἶπεν, Τέκνον, ὕπαγε, σήμερον ἐργάζου ἐν τῷ ἀμπελῶνί μου.",
+        "NEO": "« Mais que vous en semble ? Un homme avait deux fils ; s’adressant au premier, il lui dit : Mon fils, va travailler aujourd’hui à ma vigne.",
+        "NAB": "\"What is your opinion? A man had two sons. He came to the first and said, 'Son, go out and work in the vineyard today.'",
+        "VAT_ES": "«&iquest;Qué les parece? Un hombre tenía dos hijos y, dirigiéndose al primero, le dijo: \"Hijo, quiero que hoy vayas a trabajar a mi viña\".",
+        "CEI": "\"Che ve ne pare? Un uomo aveva due figli; rivoltosi al primo disse: Figlio, và oggi a lavorare nella vigna."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "Ille autem respondens, ait : Nolo. Postea autem, pnitentia motus, abiit.",
+        "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Οὐ θέλω· ὕστερον δὲ μεταμεληθείς, ἀπῆλθεν.",
+        "SYN": "Но он сказал в ответ: не хочу; а после, раскаявшись, пошел.",
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Οὐ θέλω· ὕστερον δὲ μεταμεληθείς, ἀπῆλθεν.",
+        "NEO": "Celui-ci répondit : Je ne veux pas ; mais ensuite, touché de repentir, il y alla.",
+        "NAB": "He said in reply, 'I will not,' but afterwards he changed his mind and went.",
+        "VAT_ES": "El respondió: \"No quiero\". Pero después se arrepintió y fue.",
+        "CEI": "Ed egli rispose: Sì, signore; ma non andò."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "Accedens autem ad alterum, dixit similiter. At ille respondens, ait : Eo, domine, et non ivit :",
+        "LXX": "Καὶ προσελθὼν τῷ δευτέρῳ εἶπεν ὡσαύτως. Ὁ δὲ ἀποκριθεὶς εἶπεν, Ἐγώ, κύριε· καὶ οὐκ ἀπῆλθεν.",
+        "SYN": "И подойдя к другому, он сказал то же. Этот сказал в ответ: иду, государь, и не пошел.",
+        "BYZ": "Καὶ προσελθὼν τῷ δευτέρῳ εἶπεν ὡσαύτως. Ὁ δὲ ἀποκριθεὶς εἶπεν, Ἐγώ, κύριε· καὶ οὐκ ἀπῆλθεν.",
+        "NEO": "Puis, s’adressant à l’autre, il lui fit le même commandement. Celui-ci répondit : J’y vais, seigneur ; et il n’y alla pas.",
+        "NAB": "The man came to the other son and gave the same order. He said in reply, 'Yes, sir,' but did not go.",
+        "VAT_ES": "Dirigiéndose al segundo, le dijo lo mismo y este le respondió: \"Voy, Señor\", pero no fue.",
+        "CEI": "Rivoltosi al secondo, gli disse lo stesso. Ed egli rispose: Non ne ho voglia; ma poi, pentitosi, ci andò."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "quis ex duobus fecit voluntatem patris ? Dicunt ei : Primus. Dicit illis Jesus : Amen dico vobis, quia publicani et meretrices præcedent vos in regnum Dei.",
+        "LXX": "Τίς ἐκ τῶν δύο ἐποίησεν τὸ θέλημα τοῦ πατρός; Λέγουσιν αὐτῷ, Ὁ πρῶτος. Λέγει αὐτοῖς ὁ Ἰησοῦς, Ἀμὴν λέγω ὑμῖν ὅτι οἱ τελῶναι καὶ αἱ πόρναι προάγουσιν ὑμᾶς εἰς τὴν βασιλείαν τοῦ θεοῦ.",
+        "SYN": "Который из двух исполнил волю отца? Говорят Ему: первый. Иисус говорит им: истинно говорю вам, что мытари и блудницы вперед вас идут в Царство Божие,",
+        "BYZ": "Τίς ἐκ τῶν δύο ἐποίησεν τὸ θέλημα τοῦ πατρός; Λέγουσιν αὐτῷ, Ὁ πρῶτος. Λέγει αὐτοῖς ὁ Ἰησοῦς, Ἀμὴν λέγω ὑμῖν ὅτι οἱ τελῶναι καὶ αἱ πόρναι προάγουσιν ὑμᾶς εἰς τὴν βασιλείαν τοῦ θεοῦ.",
+        "NEO": "Lequel des deux a fait la volonté de son père ? — « Le premier », lui dirent-ils. Alors Jésus : « Je vous le dis en vérité, les publicains et les courtisanes vous devancent dans le royaume de Dieu.+ 21:31 31. Les deux fils sont, le premier, les publicains, les pécheurs publics, qui firent pénitence à la voix de Jean-Baptiste, et le second, les pharisiens qui se disaient justes sans l’être en effet.*",
+        "NAB": "Which of the two did his father's will?\" They answered, \"The first.\" Jesus said to them, \"Amen, I say to you, tax collectors and prostitutes are entering the kingdom of God before you.",
+        "VAT_ES": "&iquest;Cuál de los dos cumplió la voluntad de su padre?». «El primero», le respondieron. Jesús les dijo: «Les aseguro que los publicanos y las prostitutas llegan antes que ustedes al Reino de Dios.",
+        "CEI": "Chi dei due ha compiuto la volontà del padre?\". Dicono: \"L'ultimo\". E Gesù disse loro: \"In verità vi dico: I pubblicani e le prostitute vi passano avanti nel regno di Dio."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "Venit enim ad vos Joannes in via justitiæ, et non credidistis ei : publicani autem et meretrices crediderunt ei : vos autem videntes nec pnitentiam habuistis postea, ut crederetis ei.",
+        "LXX": "Ἦλθεν γὰρ πρὸς ὑμᾶς Ἰωάννης ἐν ὁδῷ δικαιοσύνης, καὶ οὐκ ἐπιστεύσατε αὐτῷ· οἱ δὲ τελῶναι καὶ αἱ πόρναι ἐπίστευσαν αὐτῷ· ὑμεῖς δὲ ἰδόντες οὐ μετεμελήθητε ὕστερον τοῦ πιστεῦσαι αὐτῷ.",
+        "SYN": "ибо пришел к вам Иоанн путем праведности, и вы не поверили ему, а мытари и блудницы поверили ему; вы же, и видев это, не раскаялись после, чтобы поверить ему.",
+        "BYZ": "Ἦλθεν γὰρ πρὸς ὑμᾶς Ἰωάννης ἐν ὁδῷ δικαιοσύνης, καὶ οὐκ ἐπιστεύσατε αὐτῷ· οἱ δὲ τελῶναι καὶ αἱ πόρναι ἐπίστευσαν αὐτῷ· ὑμεῖς δὲ ἰδόντες οὐ μετεμελήθητε ὕστερον τοῦ πιστεῦσαι αὐτῷ.",
+        "NEO": "Car Jean est venu à vous dans la voie de la justice, et vous n’avez pas cru en lui ; mais les publicains et les courtisanes ont cru en lui, et vous, qui avez vu cela, vous ne vous êtes pas encore repentis pour croire en lui.",
+        "NAB": "When John came to you in the way of righteousness, you did not believe him; but tax collectors and prostitutes did. Yet even when you saw that, you did not later change your minds and believe him.",
+        "VAT_ES": "En efecto, Juan vino a ustedes por el camino de la justicia y no creyeron en él; en cambio, los publicanos y las prostitutas creyeron en él. Pero ustedes, ni siquiera al ver este ejemplo, se han arrepentido ni han creído en él.",
+        "CEI": "È venuto a voi Giovanni nella via della giustizia e non gli avete creduto; i pubblicani e le prostitute invece gli hanno creduto. Voi, al contrario, pur avendo visto queste cose, non vi siete nemmeno pentiti per credergli."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "Aliam parabolam audite : Homo erat paterfamilias, qui plantavit vineam, et sepem circumdedit ei, et fodit in ea torcular, et ædificavit turrim, et locavit eam agricolis, et peregre profectus est.",
+        "LXX": "Ἄλλην παραβολὴν ἀκούσατε. Ἄνθρωπός τις ἦν οἰκοδεσπότης, ὅστις ἐφύτευσεν ἀμπελῶνα, καὶ φραγμὸν αὐτῷ περιέθηκεν, καὶ ὤρυξεν ἐν αὐτῷ ληνόν, καὶ ᾠκοδόμησεν πύργον, καὶ ἐξέδοτο αὐτὸν γεωργοῖς, καὶ ἀπεδήμησεν.",
+        "SYN": "Выслушайте другую притчу: был некоторый хозяин дома, который насадил виноградник, обнес его оградою, выкопал в нем точило, построил башню и, отдав его виноградарям, отлучился.",
+        "BYZ": "¶Ἄλλην παραβολὴν ἀκούσατε. Ἄνθρωπός τις ἦν οἰκοδεσπότης, ὅστις ἐφύτευσεν ἀμπελῶνα, καὶ φραγμὸν αὐτῷ περιέθηκεν, καὶ ὤρυξεν ἐν αὐτῷ ληνόν, καὶ ᾠκοδόμησεν πύργον, καὶ ἐξέδοτο αὐτὸν γεωργοῖς, καὶ ἀπεδήμησεν.",
+        "NEO": "« Écoutez une autre parabole. Il y avait un père de famille qui planta une vigne. Il l’entoura d’une haie, y creusa un pressoir et y bâtit une tour ; et l’ayant louée à des vignerons, il partit pour un voyage.+ 21:33 33. Cf. Marc, xii, 1-12 ; Luc, xx, 9-19.*",
+        "NAB": "\"Hear another parable. There was a landowner who planted a vineyard, put a hedge around it, dug a wine press in it, and built a tower. Then he leased it to tenants and went on a journey.",
+        "VAT_ES": "Escuchen otra parábola: Un hombre poseía una tierra y allí plantó una viña, la cercó, cavó un lagar y construyó una torre de vigilancia. Después la arrendó a unos viñadores y se fue al extranjero.",
+        "CEI": "Ascoltate un'altra parabola: C'era un padrone che piantò una vigna e la circondò con una siepe, vi scavò un frantoio, vi costruì una torre, poi l'affidò a dei vignaioli e se ne andò."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Cum autem tempus fructuum appropinquasset, misit servos suos ad agricolas, ut acciperent fructus ejus.",
+        "LXX": "Ὅτε δὲ ἤγγισεν ὁ καιρὸς τῶν καρπῶν, ἀπέστειλεν τοὺς δούλους αὐτοῦ πρὸς τοὺς γεωργούς, λαβεῖν τοὺς καρποὺς αὐτοῦ.",
+        "SYN": "Когда же приблизилось время плодов, он послал своих слуг к виноградарям взять свои плоды;",
+        "BYZ": "Ὅτε δὲ ἤγγισεν ὁ καιρὸς τῶν καρπῶν, ἀπέστειλεν τοὺς δούλους αὐτοῦ πρὸς τοὺς γεωργούς, λαβεῖν τοὺς καρποὺς αὐτοῦ.",
+        "NEO": "Quand vint le temps des fruits, il envoya aux vignerons ses serviteurs pour recevoir le produit de sa vigne.",
+        "NAB": "When vintage time drew near, he sent his servants to the tenants to obtain his produce.",
+        "VAT_ES": "Cuando llegó el tiempo de la vendimia, envió a sus servidores para percibir los frutos.",
+        "CEI": "Quando fu il tempo dei frutti, mandò i suoi servi da quei vignaioli a ritirare il raccolto."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "VUL": "Et agricolæ, apprehensis servis ejus, alium ceciderunt, alium occiderunt, alium vero lapidaverunt.",
+        "LXX": "Καὶ λαβόντες οἱ γεωργοὶ τοὺς δούλους αὐτοῦ, ὃν μὲν ἔδειραν, ὃν δὲ ἀπέκτειναν, ὃν δὲ ἐλιθοβόλησαν.",
+        "SYN": "виноградари, схватив слуг его, иного прибили, иного убили, а иного побили камнями.",
+        "BYZ": "Καὶ λαβόντες οἱ γεωργοὶ τοὺς δούλους αὐτοῦ, ὃν μὲν ἔδειραν, ὃν δὲ ἀπέκτειναν, ὃν δὲ ἐλιθοβόλησαν.",
+        "NEO": "Les vignerons s’étant saisis de ses serviteurs, battirent l’un, tuèrent l’autre et lapidèrent le troisième.",
+        "NAB": "But the tenants seized the servants and one they beat, another they killed, and a third they stoned.",
+        "VAT_ES": "Pero los viñadores se apoderaron de ellos, y a uno lo golpearon, a otro lo mataron y al tercero lo apedrearon.",
+        "CEI": "Ma quei vignaioli presero i servi e uno lo bastonarono, l'altro lo uccisero, l'altro lo lapidarono."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "VUL": "Iterum misit alios servos plures prioribus, et fecerunt illis similiter.",
+        "LXX": "Πάλιν ἀπέστειλεν ἄλλους δούλους πλείονας τῶν πρώτων· καὶ ἐποίησαν αὐτοῖς ὡσαύτως.",
+        "SYN": "Опять послал он других слуг, больше прежнего; и с ними поступили так же.",
+        "BYZ": "Πάλιν ἀπέστειλεν ἄλλους δούλους πλείονας τῶν πρώτων· καὶ ἐποίησαν αὐτοῖς ὡσαύτως.",
+        "NEO": "Il envoya de nouveau d’autres serviteurs en plus grand nombre que les premiers, et ils les traitèrent de même.",
+        "NAB": "Again he sent other servants, more numerous than the first ones, but they treated them in the same way.",
+        "VAT_ES": "El propietario volvió a enviar a otros servidores, en mayor número que los primeros, pero los trataron de la misma manera.",
+        "CEI": "Di nuovo mandò altri servi più numerosi dei primi, ma quelli si comportarono nello stesso modo."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "VUL": "Novissime autem misit ad eos filium suum, dicens : Verebuntur filium meum.",
+        "LXX": "Ὕστερον δὲ ἀπέστειλεν πρὸς αὐτοὺς τὸν υἱὸν αὐτοῦ, λέγων, Ἐντραπήσονται τὸν υἱόν μου.",
+        "SYN": "Наконец, послал он к ним своего сына, говоря: постыдятся сына моего.",
+        "BYZ": "Ὕστερον δὲ ἀπέστειλεν πρὸς αὐτοὺς τὸν υἱὸν αὐτοῦ, λέγων, Ἐντραπήσονται τὸν υἱόν μου.",
+        "NEO": "Enfin il leur envoya son fils, en disant : ils respecteront mon fils.",
+        "NAB": "Finally, he sent his son to them, thinking, 'They will respect my son.'",
+        "VAT_ES": "Finalmente, les envió a su propio hijo, pensando: \"Respetarán a mi hijo\".",
+        "CEI": "Da ultimo mandò loro il proprio figlio dicendo: Avranno rispetto di mio figlio!"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "VUL": "Agricolæ autem videntes filium dixerunt intra se : Hic est hæres, venite, occidamus eum, et habebimus hæreditatem ejus.",
+        "LXX": "Οἱ δὲ γεωργοὶ ἰδόντες τὸν υἱὸν εἶπον ἐν ἑαυτοῖς, Οὗτός ἐστιν ὁ κληρονόμος· δεῦτε, ἀποκτείνωμεν αὐτόν, καὶ κατάσχωμεν τὴν κληρονομίαν αὐτοῦ.",
+        "SYN": "Но виноградари, увидев сына, сказали друг другу: это наследник; пойдем, убьем его и завладеем наследством его.",
+        "BYZ": "Οἱ δὲ γεωργοὶ ἰδόντες τὸν υἱὸν εἶπον ἐν ἑαυτοῖς, Οὗτός ἐστιν ὁ κληρονόμος· δεῦτε, ἀποκτείνωμεν αὐτόν, καὶ κατάσχωμεν τὴν κληρονομίαν αὐτοῦ.",
+        "NEO": "Mais quand les vignerons virent le fils, ils se dirent entre eux : Voici l’héritier ; venez, tuons-le, et nous aurons son héritage.",
+        "NAB": "But when the tenants saw the son, they said to one another, 'This is the heir. Come, let us kill him and acquire his inheritance.'",
+        "VAT_ES": "Pero, al verlo, los viñadores se dijeron: \"Este es el heredero: vamos a matarlo para quedarnos con su herencia\".",
+        "CEI": "Ma quei vignaioli, visto il figlio, dissero tra sé: Costui è l'erede; venite, uccidiamolo, e avremo noi l'eredità."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "VUL": "Et apprehensum eum ejecerunt extra vineam, et occiderunt.",
+        "LXX": "Καὶ λαβόντες αὐτὸν ἐξέβαλον ἔξω τοῦ ἀμπελῶνος καὶ ἀπέκτειναν.",
+        "SYN": "И, схватив его, вывели вон из виноградника и убили.",
+        "BYZ": "Καὶ λαβόντες αὐτὸν ἐξέβαλον ἔξω τοῦ ἀμπελῶνος καὶ ἀπέκτειναν.",
+        "NEO": "Et s’étant saisis de lui, ils le jetèrent hors de la vigne et le tuèrent.",
+        "NAB": "They seized him, threw him out of the vineyard, and killed him.",
+        "VAT_ES": "Y apoderándose de él, lo arrojaron fuera de la viña y lo mataron.",
+        "CEI": "E, presolo, lo cacciarono fuori della vigna e l'uccisero."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "VUL": "Cum ergo venerit dominus vineæ, quid faciet agricolis illis ?",
+        "LXX": "Ὅταν οὖν ἔλθῃ ὁ κύριος τοῦ ἀμπελῶνος, τί ποιήσει τοῖς γεωργοῖς ἐκείνοις;",
+        "SYN": "Итак, когда придет хозяин виноградника, что сделает он с этими виноградарями?",
+        "BYZ": "Ὅταν οὖν ἔλθῃ ὁ κύριος τοῦ ἀμπελῶνος, τί ποιήσει τοῖς γεωργοῖς ἐκείνοις;",
+        "NEO": "Maintenant, lorsque le maître de la vigne viendra, que fera-t-il à ces vignerons ? »",
+        "NAB": "What will the owner of the vineyard do to those tenants when he comes?\"",
+        "VAT_ES": "Cuando vuelve el dueño, &iquest;qué les parece que hará con aquellos viñadores?».",
+        "CEI": "Quando dunque verrà il padrone della vigna che farà a quei vignaioli?\"."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "VUL": "Aiunt illi : Malos male perdet : et vineam suam locabit aliis agricolis, qui reddant ei fructum temporibus suis.",
+        "LXX": "Λέγουσιν αὐτῷ, Κακοὺς κακῶς ἀπολέσει αὐτούς, καὶ τὸν ἀμπελῶνα ἐκδώσεται ἄλλοις γεωργοῖς, οἵτινες ἀποδώσουσιν αὐτῷ τοὺς καρποὺς ἐν τοῖς καιροῖς αὐτῶν.",
+        "SYN": "Говорят Ему: злодеев сих предаст злой смерти, а виноградник отдаст другим виноградарям, которые будут отдавать ему плоды во времена свои.",
+        "BYZ": "Λέγουσιν αὐτῷ, Κακοὺς κακῶς ἀπολέσει αὐτούς, καὶ τὸν ἀμπελῶνα ἐκδώσεται ἄλλοις γεωργοῖς, οἵτινες ἀποδώσουσιν αὐτῷ τοὺς καρποὺς ἐν τοῖς καιροῖς αὐτῶν.",
+        "NEO": "Ils lui répondirent : « Il frappera sans pitié ces misérables, et louera sa vigne à d’autres vignerons, qui lui en donneront les fruits en leur temps. »",
+        "NAB": "They answered him, \"He will put those wretched men to a wretched death and lease his vineyard to other tenants who will give him the produce at the proper times.\"",
+        "VAT_ES": "Le respondieron: «Acabará con esos miserables y arrendará la viña a otros, que le entregarán el fruto a su debido tiempo».",
+        "CEI": "Gli rispondono: \"Farà morire miseramente quei malvagi e darà la vigna ad altri vignaioli che gli consegneranno i frutti a suo tempo\"."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "VUL": "Dicit illis Jesus : Numquam legistis in Scripturis : [Lapidem quem reprobaverunt ædificantes,/ hic factus est in caput anguli :/ a Domino factum est istud,/ et est mirabile in oculis nostris ?]",
+        "LXX": "Λέγει αὐτοῖς ὁ Ἰησοῦς, Οὐδέποτε ἀνέγνωτε ἐν ταῖς γραφαῖς, Λίθον ὃν ἀπεδοκίμασαν οἱ οἰκοδομοῦντες, οὗτος ἐγενήθη εἰς κεφαλὴν γωνίας· παρὰ κυρίου ἐγένετο αὕτη, καὶ ἔστιν θαυμαστὴ ἐν ὀφθαλμοῖς ἡμῶν;",
+        "SYN": "Иисус говорит им: неужели вы никогда не читали в Писании: камень, который отвергли строители, тот самый сделался главою угла? Это от Господа, и есть дивно в очах наших?",
+        "BYZ": "Λέγει αὐτοῖς ὁ Ἰησοῦς, Οὐδέποτε ἀνέγνωτε ἐν ταῖς γραφαῖς, Λίθον ὃν ἀπεδοκίμασαν οἱ οἰκοδομοῦντες, οὗτος ἐγενήθη εἰς κεφαλὴν γωνίας· παρὰ κυρίου ἐγένετο αὕτη, καὶ ἔστιν θαυμαστὴ ἐν ὀφθαλμοῖς ἡμῶν;",
+        "NEO": "Jésus leur dit : « N’avez-vous jamais lu dans les Écritures : \\+w La|strong=\"G2532\"\\+w* \\+w pierre|strong=\"G3037\"\\+w* \\+w qu|strong=\"G3739\"\\+w*’\\+w ont|strong=\"G3588\"\\+w* rejetée \\+w ceux|strong=\"G3588\"\\+w* \\+w qui|strong=\"G3588\"\\+w* \\+w bâtissaient|strong=\"G3618\"\\+w*, \\+w est|strong=\"G3588\"\\+w* \\+w devenue|strong=\"G1096\"\\+w* \\+w le|strong=\"G2532\"\\+w* sommet \\+w de|strong=\"G2532\"\\+w* \\+w l|strong=\"G3739\"\\+w*’\\+w angle|strong=\"G1137\"\\+w* ? \\+w C|strong=\"G3778\"\\+w*’\\+w est|strong=\"G3588\"\\+w* \\+w le|strong=\"G2532\"\\+w* \\+w Seigneur|strong=\"G2962\"\\+w* \\+w qui|strong=\"G3588\"\\+w* \\+w a|strong=\"G1519\"\\+w* \\+w fait|strong=\"G1096\"\\+w* \\+w cela|strong=\"G2532\"\\+w*, \\+w et|strong=\"G2532\"\\+w* \\+w c|strong=\"G3778\"\\+w*’\\+w est|strong=\"G3588\"\\+w* \\+w un|strong=\"G2532\"\\+w* \\+w prodige|strong=\"G2298\"\\+w* \\+w à|strong=\"G1519\"\\+w* \\+w nos|strong=\"G1722\"\\+w* \\+w yeux|strong=\"G3788\"\\+w**.. —",
+        "NAB": "Jesus said to them, \"Did you never read in the scriptures: 'The stone that the builders rejected has become the cornerstone; by the Lord has this been done, and it is wonderful in our eyes'?",
+        "VAT_ES": "Jesús agregó: «&iquest;No han leído nunca en las Escrituras: \"La piedra que los constructores rechazaron ha llegado a ser la piedra angular: esta es la obra del Señor, admirable a nuestros ojos\"?",
+        "CEI": "E Gesù disse loro: \"Non avete mai letto nelle Scritture: La pietra che i costruttori hanno scartata è diventata testata d'angolo; dal Signore è stato fatto questo ed è mirabile agli occhi nostri?"
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "VUL": "Ideo dico vobis, quia auferetur a vobis regnum Dei, et dabitur genti facienti fructus ejus.",
+        "LXX": "Διὰ τοῦτο λέγω ὑμῖν ὅτι ἀρθήσεται ἀφ’ ὑμῶν ἡ βασιλεία τοῦ θεοῦ, καὶ δοθήσεται ἔθνει ποιοῦντι τοὺς καρποὺς αὐτῆς.",
+        "SYN": "Потому сказываю вам, что отнимется от вас Царство Божие и дано будет народу, приносящему плоды его;",
+        "BYZ": "Διὰ τοῦτο λέγω ὑμῖν ὅτι ἀρθήσεται ἀφ’ ὑμῶν ἡ βασιλεία τοῦ θεοῦ, καὶ δοθήσεται ἔθνει ποιοῦντι τοὺς καρποὺς αὐτῆς.",
+        "NEO": "C’est pourquoi je vous dis que le royaume de Dieu vous sera ôté et qu’il sera donné à un peuple qui en produira les fruits.",
+        "NAB": "Therefore, I say to you, the kingdom of God will be taken away from you and given to a people that will produce its fruit.",
+        "VAT_ES": "Por eso les digo que el Reino de Dios les será quitado a ustedes, para ser entregado a un pueblo que le hará producir sus frutos».",
+        "CEI": "Perciò io vi dico: vi sarà tolto il regno di Dio e sarà dato a un popolo che lo farà fruttificare."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "VUL": "Et qui ceciderit super lapidem istum, confringetur : super quem vero ceciderit, conteret eum.",
+        "LXX": "Καὶ ὁ πεσὼν ἐπὶ τὸν λίθον τοῦτον συνθλασθήσεται· ἐφ’ ὃν δ’ ἂν πέσῃ, λικμήσει αὐτόν.",
+        "SYN": "и тот, кто упадет на этот камень, разобьется, а на кого он упадет, того раздавит.",
+        "BYZ": "Καὶ ὁ πεσὼν ἐπὶ τὸν λίθον τοῦτον συνθλασθήσεται· ἐφ’ ὃν δ’ ἂν πέσῃ, λικμήσει αὐτόν.",
+        "NEO": "Celui qui tombera sur cette pierre se brisera, et celui sur qui elle tombera sera écrasé. »",
+        "NAB": "( The one who falls on this stone will be dashed to pieces; and it will crush anyone on whom it falls.)\"",
+        "VAT_ES": "[El que caiga sobre esta piedra quedará destrozado, y aquel sobre quien caiga será aplastado].",
+        "CEI": "Chi cadrà sopra questa pietra sarà sfracellato; e qualora essa cada su qualcuno, lo stritolerà\"."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "VUL": "Et cum audissent principes sacerdotum et pharisæi parabolas ejus, cognoverunt quod de ipsis diceret.",
+        "LXX": "Καὶ ἀκούσαντες οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι τὰς παραβολὰς αὐτοῦ ἔγνωσαν ὅτι περὶ αὐτῶν λέγει.",
+        "SYN": "И слышав притчи Его, первосвященники и фарисеи поняли, что Он о них говорит,",
+        "BYZ": "Καὶ ἀκούσαντες οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι τὰς παραβολὰς αὐτοῦ ἔγνωσαν ὅτι περὶ αὐτῶν λέγει.",
+        "NEO": "Les Princes des prêtres et les Pharisiens ayant entendu ces paraboles, comprirent que Jésus parlait d’eux.",
+        "NAB": "When the chief priests and the Pharisees heard his parables, they knew that he was speaking about them.",
+        "VAT_ES": "Los sumos sacerdotes y los fariseos, al oír estas parábolas, comprendieron que se refería a ellos.",
+        "CEI": "Udite queste parabole, i sommi sacerdoti e i farisei capirono che parlava di loro e cercavano di catturarlo; ma avevano paura della folla che lo considerava un profeta."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "VUL": "Et quærentes eum tenere, timuerunt turbas : quoniam sicut prophetam eum habebant.",
+        "LXX": "Καὶ ζητοῦντες αὐτὸν κρατῆσαι, ἐφοβήθησαν τοὺς ὄχλους, ἐπειδὴ ὡς προφήτην αὐτὸν εἶχον.",
+        "SYN": "и старались схватить Его, но побоялись народа, потому что Его почитали за Пророка.",
+        "BYZ": "Καὶ ζητοῦντες αὐτὸν κρατῆσαι, ἐφοβήθησαν τοὺς ὄχλους, ἐπειδὴ ὡς προφήτην αὐτὸν εἶχον.",
+        "NEO": "Et ils cherchaient à se saisir de lui ; mais ils craignaient le peuple, qui le regardait comme un prophète.",
+        "NAB": "And although they were attempting to arrest him, they feared the crowds, for they regarded him as a prophet.",
+        "VAT_ES": "Entonces buscaron el modo de detenerlo, pero temían a la multitud, que lo consideraba un profeta."
+      }
+    }
+  }
+}

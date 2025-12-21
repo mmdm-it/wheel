@@ -1,0 +1,411 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_001",
+  "book_key": "EXO",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/אֵ֗לֶּה שְׁמוֹת֙ בְּנֵ֣י יִשְׂרָאֵ֔ל הַ/בָּאִ֖ים מִצְרָ֑יְמָ/ה אֵ֣ת יַעֲקֹ֔ב אִ֥ישׁ וּ/בֵית֖/וֹ בָּֽאוּ׃",
+        "LXX": "ΤΑΥΤΑ τὰ ὀνόματα τῶν υἱῶν Ἰσραὴλ τῶν εἰσπεπορευμένων εἰς Αἴγυπτον ἅμα Ἰακὼβ τῷ πατρὶ αὐτῶν· ἕκαστος πανοικὶ αὐτῶν εἰσήλθοσαν·",
+        "VUL": "Hæc sunt nomina filiorum Israël qui ingressi sunt in Ægyptum cum Jacob : singuli cum domibus suis introierunt :",
+        "SYN": "Вот имена сынов Израилевых, которые вошли в Египет с Иаковом [отцом их], вошли каждый со [всем] домом своим:",
+        "NEO": "Voici les noms des enfants d’Israël venus en Égypte ; — ils y vinrent avec Jacob, chacun avec sa famille — :",
+        "NAB": "These are the names of the sons of Israel who, accompanied by their households, migrated with Jacob into Egypt:",
+        "VAT_ES": "Los nombres de los israelitas que llegaron con Jacob a Egipto, cada uno con su familia, son los siguientes:",
+        "CEI": "Questi sono i nomi dei figli d'Israele entrati in Egitto con Giacobbe e arrivati ognuno con la sua famiglia:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "רְאוּבֵ֣ן שִׁמְע֔וֹן לֵוִ֖י וִ/יהוּדָֽה׃",
+        "LXX": "Ῥουβήν, Συμεών, Λευεί, Ἰούδας,",
+        "VUL": "Ruben, Simeon, Levi, Judas,",
+        "SYN": "Рувим, Симеон, Левий и Иуда,",
+        "NEO": "Ruben, Siméon, Lévi, Juda,",
+        "NAB": "Reuben, Simeon, Levi and Judah;",
+        "VAT_ES": "Rubén, Simeón, Leví y Judá,",
+        "CEI": "Ruben, Simeone, Levi e Giuda,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "יִשָּׂשכָ֥ר זְבוּלֻ֖ן וּ/בְנְיָמִֽן׃",
+        "LXX": "Ἰσσαχάρ, Ζαβουλὼν καὶ Βενιαμείν,",
+        "VUL": "Issachar, Zabulon et Benjamin,",
+        "SYN": "Иссахар, Завулон и Вениамин,",
+        "NEO": "Issachar, Zabulon, Benjamin,",
+        "NAB": "Issachar, Zebulun and Benjamin;",
+        "VAT_ES": "Isacar, Zabulón y Benjamín,",
+        "CEI": "Issacar, Zàbulon e Beniamino,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "דָּ֥ן וְ/נַפְתָּלִ֖י גָּ֥ד וְ/אָשֵֽׁר׃",
+        "LXX": "Δὰν καὶ Νεφθαλεί, Γὰδ καὶ Ἀσήρ.",
+        "VUL": "Dan et Nephthali, Gad et Aser.",
+        "SYN": "Дан и Неффалим, Гад и Асир.",
+        "NEO": "Dan, Nephtali, Gad et Aser.",
+        "NAB": "Dan and Naphtali; Gad and Asher.",
+        "VAT_ES": "Dan y Neftalí, Gad y Aser.",
+        "CEI": "Dan e Nèftali, Gad e Aser."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִ֗י כָּל נֶ֛פֶשׁ יֹצְאֵ֥י יֶֽרֶךְ יַעֲקֹ֖ב שִׁבְעִ֣ים נָ֑פֶשׁ וְ/יוֹסֵ֖ף הָיָ֥ה בְ/מִצְרָֽיִם׃",
+        "LXX": "Ἰωσὴφ δὲ ἦν ἐν Αἰγύπτῳ· ἦσαν δὲ πᾶσαι ψυχαὶ ἐξ Ἰακὼβ πέντε καὶ ἑβδομήκοντα.",
+        "VUL": "Erant igitur omnes animæ eorum qui egressi sunt de femore Jacob, septuaginta : Joseph autem in Ægypto erat.",
+        "SYN": "Всех же душ, происшедших от чресл Иакова, было семьдесят [пять], а Иосиф был _уже_ в Египте.",
+        "NEO": "Toutes les personnes issues de Jacob étaient au nombre de soixante-dix, et Joseph était déjà en Égypte.",
+        "NAB": "The total number of the direct descendants of Jacob was seventy. Joseph was already in Egypt.",
+        "VAT_ES": "Los descendientes de Jacob eran, en total, setenta personas, José ya estaba en Egipto.",
+        "CEI": "Tutte le persone nate da Giacobbe erano settanta, Giuseppe si trovava già in Egitto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יָּ֤מָת יוֹסֵף֙ וְ/כָל אֶחָ֔י/ו וְ/כֹ֖ל הַ/דּ֥וֹר הַ/הֽוּא׃",
+        "LXX": "Ἐτελεύτησεν δὲ Ἰωσὴφ καὶ πάντες οἱ ἀδελφοὶ αὐτοῦ καὶ πᾶσα ἡ γενεὰ ἐκείνη.",
+        "VUL": "Quo mortuo, et universis fratribus ejus, omnique cognatione illa,",
+        "SYN": "И умер Иосиф и все братья его и весь род их;",
+        "NEO": "Joseph mourut, ainsi que tous ses frères et toute cette génération.",
+        "NAB": "Now Joseph and all his brothers and that whole generation died.",
+        "VAT_ES": "Después murieron José y sus hermanos, y toda aquella generación.",
+        "CEI": "Giuseppe poi morì e così tutti i suoi fratelli e tutta quella generazione."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י יִשְׂרָאֵ֗ל פָּר֧וּ וַֽ/יִּשְׁרְצ֛וּ וַ/יִּרְבּ֥וּ וַ/יַּֽעַצְמ֖וּ בִּ/מְאֹ֣ד מְאֹ֑ד וַ/תִּמָּלֵ֥א הָ/אָ֖רֶץ אֹתָֽ/ם׃",
+        "LXX": "οἱ δὲ υἱοὶ Ἰσραὴλ ηὐξήθησαν καὶ ἐπληθύνθησαν καὶ χυδαῖοι ἐγένοντο καὶ κατίσχυον σφόδρα σφόδρα· ἐπλήθυνεν δὲ ἡ γῆ αὐτούς.",
+        "VUL": "filii Israël creverunt, et quasi germinantes multiplicati sunt : ac roborati nimis, impleverunt terram.",
+        "SYN": "а сыны Израилевы расплодились и размножились, и возросли и усилились чрезвычайно, и наполнилась ими земля та.",
+        "NEO": "Les enfants d’Israël furent féconds et multiplièrent ; ils devinrent nombreux et très puissants, et le pays en fut rempli.",
+        "NAB": "But the Israelites were fruitful and prolific. They became so numerous and strong that the land was filled with them.",
+        "VAT_ES": "Pero los israelitas fueron fecundos y se multiplicaron, hasta convertirse en una muchedumbre numerosa y muy fuerte, que llenaba el país.",
+        "CEI": "I figli d'Israele prolificarono e crebbero, divennero numerosi e molto potenti e il paese ne fu ripieno."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥קָם מֶֽלֶךְ חָדָ֖שׁ עַל מִצְרָ֑יִם אֲשֶׁ֥ר לֹֽא יָדַ֖ע אֶת יוֹסֵֽף׃",
+        "LXX": "Ἀνέστη δὲ βασιλεὺς ἕτερος ἐπ’ Αἴγυπτον, ὃς οὐκ ᾔδει τὸν Ἰωσήφ.",
+        "VUL": "Surrexit interea rex novus super Ægyptum, qui ignorabat Joseph.",
+        "SYN": "И восстал в Египте новый царь, который не знал Иосифа,",
+        "NEO": "Il s’éleva sur l’Égypte un nouveau roi qui ne connaissait pas Joseph.",
+        "NAB": "Then a new king, who knew nothing of Joseph , came to power in Egypt.",
+        "VAT_ES": "Mientras tanto, asumió el poder en Egipto un nuevo rey, que no había conocido a José.",
+        "CEI": "Allora sorse sull'Egitto un nuovo re, che non aveva conosciuto Giuseppe."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֖אמֶר אֶל עַמּ֑/וֹ הִנֵּ֗ה עַ֚ם בְּנֵ֣י יִשְׂרָאֵ֔ל רַ֥ב וְ/עָצ֖וּם מִמֶּֽ/נּוּ׃",
+        "LXX": "εἶπεν δὲ τῷ ἔθνει αὐτοῦ Ἰδοὺ τὸ γένος τῶν υἱῶν Ἰσραὴλ μέγα πλῆθος, καὶ ἰσχύει ὑπὲρ ἡμᾶς·",
+        "VUL": "Et ait ad populum suum : Ecce, populus filiorum Israël multus, et fortior nobis est.",
+        "SYN": "и сказал народу своему: вот, народ сынов Израилевых многочислен и сильнее нас;",
+        "NEO": "Il dit à son peuple : « Voici que les enfants d’Israël forment un peuple plus nombreux et plus puissant que nous.",
+        "NAB": "He said to his subjects, \"Look how numerous and powerful the Israelite people are growing, more so than we ourselves!",
+        "VAT_ES": "El dijo a su pueblo: «El pueblo de los israelitas es más numeroso y fuerte que nosotros.",
+        "CEI": "E disse al suo popolo: \"Ecco che il popolo dei figli d'Israele è più numeroso e più forte di noi."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "הָ֥בָ/ה נִֽתְחַכְּמָ֖ה ל֑/וֹ פֶּן יִרְבֶּ֗ה וְ/הָיָ֞ה כִּֽי תִקְרֶ֤אנָה מִלְחָמָה֙ וְ/נוֹסַ֤ף גַּם הוּא֙ עַל שֹׂ֣נְאֵ֔י/נוּ וְ/נִלְחַם בָּ֖/נוּ וְ/עָלָ֥ה מִן הָ/אָֽרֶץ׃",
+        "LXX": "δεῦτε οὖν κατασοφισώμεθα αὐτούς, μή ποτε πληθυνθῇ, καὶ ἡνίκα ἂν συμβῇ ἡμῖν πόλεμος προστεθήσονται καὶ οὗτοι πρὸς τοὺς ὑπεναντίους, καὶ ἐκπολεμήσαντες ἡμᾶς ἐξελεύσονται ἐκ τῆς ⸂⸆⸃ γῆς.",
+        "VUL": "Venite, sapienter opprimamus eum, ne forte multiplicetur : et si ingruerit contra nos bellum, addatur inimicis nostris, expugnatisque nobis egrediatur de terra.",
+        "SYN": "перехитрим же его, чтобы он не размножался; иначе, когда случится война, соединится и он с нашими неприятелями, и вооружится против нас, и выйдет из земли [нашей].",
+        "NEO": "Allons ! Prenons des précautions contre lui, de peur qu’il ne s’accroisse, et que, une guerre survenant, il ne se joigne à nos ennemis pour nous combattre, et ne sorte ensuite du pays. »",
+        "NAB": "Come, let us deal shrewdly with them to stop their increase; otherwise, in time of war they too may join our enemies to fight against us, and so leave our country.\"",
+        "VAT_ES": "Es preciso tomar precauciones contra él, para impedir que siga multiplicándose. De lo contrario, en caso de guerra se pondrá de parte de nuestros enemigos, combatirá contra nosotros y se irá del país»",
+        "CEI": "Prendiamo provvedimenti nei suoi riguardi per impedire che aumenti, altrimenti, in caso di guerra, si unirà ai nostri avversari, combatterà contro di noi e poi partirà dal paese\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יָּשִׂ֤ימוּ עָלָי/ו֙ שָׂרֵ֣י מִסִּ֔ים לְמַ֥עַן עַנֹּת֖/וֹ בְּ/סִבְלֹתָ֑/ם וַ/יִּ֜בֶן עָרֵ֤י מִסְכְּנוֹת֙ לְ/פַרְעֹ֔ה אֶת פִּתֹ֖ם וְ/אֶת רַעַמְסֵֽס׃",
+        "LXX": "καὶ ἐπέστησεν αὐτοῖς ἐπιστάτας τῶν ἔργων, ἵνα κακώσωσιν αὐτοὺς ἐν τοῖς ἔργοις· καὶ ᾠκοδόμησαν πόλεις ὀχυρὰς τῷ Φαραώ, τήν τε Πειθὼ καὶ Ῥαμεσσὴ καὶ Ὤν, ἥ ἐστιν Ἡλίου πόλις.",
+        "VUL": "Præposuit itaque eis magistros operum, ut affligerent eos oneribus : ædificaveruntque urbes tabernaculorum Pharaoni, Phithom et Ramesses.",
+        "SYN": "И поставили над ним начальников работ, чтобы изнуряли его тяжкими работами. И он построил фараону Пифом и Раамсес, города для запасов, [и он, иначе Илиополь].",
+        "NEO": "Les Égyptiens établirent donc sur Israël des chefs de corvée, afin de l’accabler par des travaux pénibles. C’est ainsi qu’il bâtit des villes pour servir de magasins à Pharaon, savoir Pithom et Ramsès.",
+        "NAB": "Accordingly, taskmasters were set over the Israelites to oppress them with forced labor. Thus they had to build for Pharaoh the supply cities of Pithom and Raamses.",
+        "VAT_ES": "Entonces los egipcios pusieron a Israel a las órdenes de capataces, para que lo oprimieran con trabajos forzados. Así Israel construyó para el Faraón las ciudades de almacenamiento de Pitom y Ramsés.",
+        "CEI": "Allora vennero imposti loro dei sovrintendenti ai lavori forzati per opprimerli con i loro gravami, e così costruirono per il faraone le città-deposito, cioè Pitom e Ramses."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/כַ/אֲשֶׁר֙ יְעַנּ֣וּ אֹת֔/וֹ כֵּ֥ן יִרְבֶּ֖ה וְ/כֵ֣ן יִפְרֹ֑ץ וַ/יָּקֻ֕צוּ מִ/פְּנֵ֖י בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καθότι δὲ αὐτοὺς ἐταπείνουν, τοσούτῳ πλείους ἐγίνοντο, καὶ ἴσχυον σφόδρα σφόδρα· καὶ ἐβδελύσσοντο οἱ Αἰγύπτιοι ἀπὸ τῶν υἱῶν Ἰσραήλ.",
+        "VUL": "Quantoque opprimebant eos, tanto magis multiplicabantur, et crescebant :",
+        "SYN": "Но чем более изнуряли его, тем более он умножался и тем более возрастал, так что [Египтяне] опасались сынов Израилевых.",
+        "NEO": "Mais plus on l’accablait, plus il multipliait et s’accroissait, et l’on prit en aversion les enfants d’Israël.",
+        "NAB": "Yet the more they were oppressed, the more they multiplied and spread. The Egyptians, then, dreaded the Israelites",
+        "VAT_ES": "Pero a medida que aumentaba la opresión, más se multiplicaba y más se expandía. Esto hizo que la presencia de los israelitas se convirtiera en un motivo de inquietud.",
+        "CEI": "Ma quanto più opprimevano il popolo, tanto più si moltiplicava e cresceva oltre misura; si cominciò a sentire come un incubo la presenza dei figli d'Israele."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲבִ֧דוּ מִצְרַ֛יִם אֶת בְּנֵ֥י יִשְׂרָאֵ֖ל בְּ/פָֽרֶךְ׃",
+        "LXX": "καὶ κατεδυνάστευον οἱ Αἰγύπτιοι τοὺς υἱοὺς Ἰσραὴλ βίᾳ,",
+        "VUL": "oderantque filios Israël Ægyptii, et affligebant illudentes eis,",
+        "SYN": "И потому Египтяне с жестокостью принуждали сынов Израилевых к работам",
+        "NEO": "Les Égyptiens firent travailler les enfants d’Israël par force ;",
+        "NAB": "and reduced them to cruel slavery,",
+        "VAT_ES": "Por eso, los egipcios redujeron a los israelitas a la condición de los esclavos,",
+        "CEI": "Per questo gli Egiziani fecero lavorare i figli d'Israele trattandoli duramente."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יְמָרְר֨וּ אֶת חַיֵּי/הֶ֜ם בַּ/עֲבֹדָ֣ה קָשָׁ֗ה בְּ/חֹ֨מֶר֙ וּ/בִ/לְבֵנִ֔ים וּ/בְ/כָל עֲבֹדָ֖ה בַּ/שָּׂדֶ֑ה אֵ֚ת כָּל עֲבֹ֣דָתָ֔/ם אֲשֶׁר עָבְד֥וּ בָ/הֶ֖ם בְּ/פָֽרֶךְ׃",
+        "LXX": "καὶ κατωδύνων αὐτῶν τὴν ζωὴν ἐν τοῖς ἔργοις τοῖς σκληροῖς, τῷ πηλῷ καὶ τῇ πλινθίᾳ καὶ πᾶσι τοῖς ἔργοις τοῖς ἐν τοῖς πεδίοις, κατὰ πάντα τὰ ἔργα ὧν κατεδουλοῦντο αὐτοὺς μετὰ βίας.",
+        "VUL": "atque ad amaritudinem perducebant vitam eorum operibus duris luti et lateris, omnique famulatu, quo in terræ operibus premebantur.",
+        "SYN": "и делали жизнь их горькою от тяжкой работы над глиною и кирпичами и от всякой работы полевой, от всякой работы, к которой принуждали их с жестокостью.",
+        "NEO": "ils leur rendaient la vie amère par de rudes travaux, mortier, briques et toute sorte de travaux des champs, tout le travail qu’ils leur imposaient avec dureté.",
+        "NAB": "making life bitter for them with hard work in mortar and brick and all kinds of field work - the whole cruel fate of slaves.",
+        "VAT_ES": "y les hicieron insoportable la vida, forzándolos a realizar trabajos extenuantes: la preparación de la arcilla, la fabricación de ladrillos y toda clase de tareas agrícolas.",
+        "CEI": "Resero loro amara la vita costringendoli a fabbricare mattoni di argilla e con ogni sorta di lavoro nei campi: e a tutti questi lavori li obbligarono con durezza."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ מֶ֣לֶךְ מִצְרַ֔יִם לַֽ/מְיַלְּדֹ֖ת הָֽ/עִבְרִיֹּ֑ת אֲשֶׁ֨ר שֵׁ֤ם הָֽ/אַחַת֙ שִׁפְרָ֔ה וְ/שֵׁ֥ם הַ/שֵּׁנִ֖ית פּוּעָֽה׃",
+        "LXX": "Καὶ εἶπεν ὁ βασιλεὺς τῶν Αἰγυπτίων ταῖς μαίαις τῶν Ἐβραίων, τῇ μιᾷ αὐτῶν ᾗ ὄνομα Σεπφωρά, καὶ τὸ ὄνομα τῆς δευτέρας Φουά·",
+        "VUL": "Dixit autem rex Ægypti obstetricibus Hebræorum, quarum una vocabatur Sephora, altera Phua,",
+        "SYN": "Царь Египетский повелел повивальным бабкам Евреянок, из коих одной имя Шифра, а другой Фуа,",
+        "NEO": "Le roi d’Égypte parla aussi aux sages-femmes des Hébreux, dont l’une se nommait Séphora, et l’autre Phua.",
+        "NAB": "The king of Egypt told the Hebrew midwives, one of whom was called Shiphrah and the other Puah,",
+        "VAT_ES": "Además, el rey de Egipto se dirigió a las parteras de las mujeres hebreas –una de ellas se llamaba Sifrá y la otra Puá–",
+        "CEI": "Poi il re d'Egitto disse alle levatrici degli Ebrei, delle quali una si chiamava Sifra e l'altra Pua:"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר בְּ/יַלֶּדְ/כֶן֙ אֶת הָֽ/עִבְרִיּ֔וֹת וּ/רְאִיתֶ֖ן עַל הָ/אָבְנָ֑יִם אִם בֵּ֥ן הוּא֙ וַ/הֲמִתֶּ֣ן אֹת֔/וֹ וְ/אִם בַּ֥ת הִ֖יא וָ/חָֽיָה׃",
+        "LXX": "καὶ εἶπεν Ὅταν μαιοῦσθε τὰς Ἐβραίας καὶ ὦσιν πρὸς τῷ τίκτειν, ἐὰν μὲν ἄρσεν ᾖ, ἀποκτείνατε αὐτό· ἐὰν δὲ θῆλυ, περιποιεῖσθε αὐτό.",
+        "VUL": "præcipiens eis : Quando obstetricabitis Hebræas, et partus tempus advenerit : si masculus fuerit, interficite eum : si femina, reservate.",
+        "SYN": "и сказал [им]: когда вы будете повивать у Евреянок, то наблюдайте при родах: если будет сын, то умерщвляйте его, а если дочь, то пусть живет.",
+        "NEO": "Il leur dit : « Quand vous accoucherez les femmes des Hébreux, et que vous les verrez sur le double siège, si c’est un fils, faites-le mourir ; si c’est une fille, elle peut vivre. »",
+        "NAB": "When you act as midwives for the Hebrew women and see them giving birth, if it is a boy, kill him; but if it is a girl, she may live.\"",
+        "VAT_ES": "y les ordenó: «Cuando asistan durante el parto a las mujeres hebreas, observen bien el sexo del recién nacido: si es varón, mátenlo, y si es una niña, déjenla vivir».",
+        "CEI": "\"Quando assistete al parto delle donne ebree, osservate quando il neonato è ancora tra le due sponde del sedile per il parto: se è un maschio, lo farete morire; se è una femmina, potrà vivere\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/תִּירֶ֤אןָ הַֽ/מְיַלְּדֹת֙ אֶת הָ֣/אֱלֹהִ֔ים וְ/לֹ֣א עָשׂ֔וּ כַּ/אֲשֶׁ֛ר דִּבֶּ֥ר אֲלֵי/הֶ֖ן מֶ֣לֶךְ מִצְרָ֑יִם וַ/תְּחַיֶּ֖יןָ אֶת הַ/יְלָדִֽים׃",
+        "LXX": "ἐφοβήθησαν δὲ αἱ μαῖαι τὸν θεόν, καὶ οὐκ ἐποίησαν καθότι συνέταξεν αὐταῖς ὁ βασιλεὺς Αἰγύπτου, καὶ ἐζωογόνουν τὰ ἄρσενα.",
+        "VUL": "Timuerunt autem obstetrices Deum, et non fecerunt juxta præceptum regis Ægypti, sed conservabant mares.",
+        "SYN": "Но повивальные бабки боялись Бога и не делали так, как говорил им царь Египетский, и оставляли детей в живых.",
+        "NEO": "Mais les sages-femmes craignirent Dieu, et ne firent pas comme leur avait dit le roi d’Égypte ; elles laissèrent vivre les garçons.",
+        "NAB": "The midwives, however, feared God; they did not do as the king of Egypt had ordered them, but let the boys live.",
+        "VAT_ES": "Pero las parteras tuvieron temor de Dios, y en lugar de acatar la orden que les había dado el rey de Egipto, dejaban con vida a los varones.",
+        "CEI": "Ma le levatrici temettero Dio: non fecero come aveva loro ordinato il re d'Egitto e lasciarono vivere i bambini."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֤א מֶֽלֶךְ מִצְרַ֨יִם֙ לַֽ/מְיַלְּדֹ֔ת וַ/יֹּ֣אמֶר לָ/הֶ֔ן מַדּ֥וּעַ עֲשִׂיתֶ֖ן הַ/דָּבָ֣ר הַ/זֶּ֑ה וַ/תְּחַיֶּ֖יןָ אֶת הַ/יְלָדִֽים׃",
+        "LXX": "ἐκάλεσεν δὲ ὁ βασιλεὺς Αἰγύπτου τὰς μαίας καὶ εἶπεν αὐταῖς Τί ὅτι ἐποιήσατε τὸ πρᾶγμα τοῦτο καὶ ἐζωογονεῖτε τὰ ἄρσενα;",
+        "VUL": "Quibus ad se accersitis, rex ait : Quidnam est hoc quod facere voluistis, ut pueros servaretis ?",
+        "SYN": "Царь Египетский призвал повивальных бабок и сказал им: для чего вы делаете такое дело, что оставляете детей в живых?",
+        "NEO": "Le roi d’Égypte fit appeler les sages-femmes et leur dit : « Pourquoi avez-vous agi ainsi, et avez-vous laissé vivre les garçons ? »",
+        "NAB": "So the king summoned the midwives and asked them, \"Why have you acted thus, allowing the boys to live?\"",
+        "VAT_ES": "El rey las mandó llamar y les preguntó: «Por qué han obrado así y han dejado con vida a los varones?».",
+        "CEI": "Il re d'Egitto chiamò le levatrici e disse loro: \"Perché avete fatto questo e avete lasciato vivere i bambini?\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/תֹּאמַ֤רְןָ הַֽ/מְיַלְּדֹת֙ אֶל פַּרְעֹ֔ה כִּ֣י לֹ֧א כַ/נָּשִׁ֛ים הַ/מִּצְרִיֹּ֖ת הָֽ/עִבְרִיֹּ֑ת כִּֽי חָי֣וֹת הֵ֔נָּה בְּ/טֶ֨רֶם תָּב֧וֹא אֲלֵ/הֶ֛ן הַ/מְיַלֶּ֖דֶת וְ/יָלָֽדוּ׃",
+        "LXX": "εἶπαν δὲ αἱ μαῖαι τῷ Φαραώ Οὐχ ὡς γυναῖκες Αἰγύπτου αἱ Ἐβραῖαι, τίκτουσιν γὰρ πρὶν ἢ εἰσελθεῖν πρὸς αὐτὰς τὰς μαίας, καὶ ἔτικτον.",
+        "VUL": "Quæ responderunt : Non sunt Hebrææ sicut ægyptiæ mulieres : ipsæ enim obstetricandi habent scientiam, et priusquam veniamus ad eas, pariunt.",
+        "SYN": "Повивальные бабки сказали фараону: Еврейские женщины не так, как Египетские; они здоровы, ибо прежде нежели придет к ним повивальная бабка, они уже рождают.",
+        "NEO": "Les sages-femmes répondirent à Pharaon : « C’est que les femmes des Hébreux ne ressemblent pas aux Égyptiennes : elles sont vigoureuses, et elles accouchent avant l’arrivée de la sage-femme. »",
+        "NAB": "The midwives answered Pharaoh, \"The Hebrew women are not like the Egyptian women. They are robust and give birth before the midwife arrives.\"",
+        "VAT_ES": "Ellas le respondieron: «Por que las mujeres hebreas no son como las egipcias: tienen mucha vitalidad, y antes que llegue la partera, ya han dado a luz».",
+        "CEI": "Le levatrici risposero al faraone: \"Le donne ebree non sono come le egiziane: sono piene di vitalità: prima che arrivi presso di loro la levatrice, hanno già partorito!\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֥יטֶב אֱלֹהִ֖ים לַֽ/מְיַלְּדֹ֑ת וַ/יִּ֧רֶב הָ/עָ֛ם וַ/יַּֽעַצְמ֖וּ מְאֹֽד׃",
+        "LXX": "εὖ δὲ ἐποίει ὁ θεὸς ταῖς μαίαις, καὶ ἐπλήθυνεν ὁ λαὸς καὶ ἴσχυεν σφόδρα.",
+        "VUL": "Bene ergo fecit Deus obstetricibus : et crevit populus, confortatusque est nimis.",
+        "SYN": "За сие Бог делал добро повивальным бабкам, а народ умножался и весьма усиливался.",
+        "NEO": "Et Dieu fit du bien aux sages-femmes, et le peuple devint nombreux et extrêmement fort.",
+        "NAB": "Therefore God dealt well with the midwives. The people, too, increased and grew strong.",
+        "VAT_ES": "Por eso Dios fue bondadoso con las parteras. El pueblo creció cada vez más y se hizo muy poderoso,",
+        "CEI": "Dio beneficò le levatrici. Il popolo aumentò e divenne molto forte."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֕י כִּֽי יָֽרְא֥וּ הַֽ/מְיַלְּדֹ֖ת אֶת הָ/אֱלֹהִ֑ים וַ/יַּ֥עַשׂ לָ/הֶ֖ם בָּתִּֽים׃",
+        "LXX": "ἐπειδὴ ἐφοβοῦντο αἱ μαῖαι τὸν θεόν, ἐποίησαν ἑαυταῖς οἰκίας.",
+        "VUL": "Et quia timuerunt obstetrices Deum, ædificavit eis domos.",
+        "SYN": "И так как повивальные бабки боялись Бога, то Он устроял домы их.",
+        "NEO": "Parce que les sages-femmes avaient craint Dieu, Dieu fit prospérer leur maison.",
+        "NAB": "And because the midwives feared God, he built up families for them.",
+        "VAT_ES": "y como ellas habían obrado con temor de Dios, él les concedió una familia numerosa.",
+        "CEI": "E poiché le levatrici avevano temuto Dio, egli diede loro una numerosa famiglia."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יְצַ֣ו פַּרְעֹ֔ה לְ/כָל עַמּ֖/וֹ לֵ/אמֹ֑ר כָּל הַ/בֵּ֣ן הַ/יִּלּ֗וֹד הַ/יְאֹ֨רָ/ה֙ תַּשְׁלִיכֻ֔/הוּ וְ/כָל הַ/בַּ֖ת תְּחַיּֽוּ/ן׃",
+        "LXX": "Συνέταξεν δὲ Φαραὼ παντὶ τῷ λαῷ αὐτοῦ λέγων Πᾶν ἄρσεν ὃ ἐὰν τεχθῇ τοῖς Ἐβραίοις εἰς τὸν ποταμὸν ῥίψατε, καὶ πᾶν θῆλυ, ζωογονεῖτε αὐτό.",
+        "VUL": "Præcepit ergo Pharao omni populo suo, dicens : Quidquid masculini sexus natum fuerit, in flumen projicite : quidquid feminini, reservate.",
+        "SYN": "Тогда фараон всему народу своему повелел, говоря: всякого новорожденного [у Евреев] сына бросайте в реку, а всякую дочь оставляйте в живых.",
+        "NEO": "Alors Pharaon donna cet ordre à tout son peuple : « Vous jetterez dans le fleuve tout fils qui naîtra et vous laisserez vivre toutes les filles. »",
+        "NAB": "Pharaoh then commanded all his subjects, \"Throw into the river every boy that is born to the Hebrews, but you may let all the girls live.\"",
+        "VAT_ES": "Entonces el Faraón dio esta orden a su pueblo: «Arrojen al Nilo a todos los varones recién nacidos, pero dejen con vida a las niñas».",
+        "CEI": "Allora il faraone diede quest'ordine a tutto il suo popolo: \"Ogni figlio maschio che nascerà agli Ebrei, lo getterete nel Nilo, ma lascerete vivere ogni figlia\"."
+      }
+    }
+  }
+}

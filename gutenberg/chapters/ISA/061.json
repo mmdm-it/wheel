@@ -1,0 +1,213 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_061",
+  "book_key": "ISA",
+  "sequence": 61,
+  "chapter_in": {
+    "MT": 61,
+    "VUL": 61,
+    "LXX": 61
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "ר֛וּחַ אֲדֹנָ֥/י יְהוִ֖ה עָלָ֑/י יַ֡עַן מָשַׁח֩ יְהוָ֨ה אֹתִ֜/י לְ/בַשֵּׂ֣ר עֲנָוִ֗ים שְׁלָחַ֨/נִי֙ לַ/חֲבֹ֣שׁ לְ/נִשְׁבְּרֵי לֵ֔ב לִ/קְרֹ֤א לִ/שְׁבוּיִם֙ דְּר֔וֹר וְ/לַ/אֲסוּרִ֖ים פְּקַח קֽוֹחַ׃",
+        "LXX": "Πνεῦμα Κυρίου ἐπ’ ἐμέ, οὗ εἵνεκεν ἔχρισέν με· εὐαγγελίσασθαι πτωχοῖς ἀπέσταλκέν με, ἰάσασθαι τοὺς συντετριμμένους τὴν καρδίαν, κηρῦξαι αἰχμαλώτοις ἄφεσιν καὶ τυφλοῖς ἀνάβλεψιν,",
+        "VUL": "[Spiritus Domini super me,/ eo quod unxerit Dominus me ;/ ad annuntiandum mansuetis misit me,/ ut mederer contritis corde,/ et prædicarem captivis indulgentiam,/ et clausis apertionem ;/",
+        "SYN": "Дух Господа Бога на Мне, ибо Господь помазал Меня благовествовать нищим, послал Меня исцелять сокрушенных сердцем, проповедывать пленным освобождение и узникам открытие темницы,",
+        "NEO": "L’esprit du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** est sur moi, parce que \\+w Yahweh|strong=\"H3068\"\\+w** m’a oint ; il m’a envoyé porter la bonne nouvelle aux malheureux ; panser ceux qui ont le cœur brisé ;",
+        "NAB": "The spirit of the Lord GOD is upon me, because the LORD has anointed me; He has sent me to bring glad tidings to the lowly, to heal the brokenhearted, To proclaim liberty to the captives and release to the prisoners,",
+        "VAT_ES": "No, el Señor no es corto de mano para salvar ni duro de oído para escuchar:",
+        "CEI": "Lo spirito del Signore Dio è su di me perché il Signore mi ha consacrato con l'unzione; mi ha mandato a portare il lieto annunzio ai miseri, a fasciare le piaghe dei cuori spezzati, a proclamare la libertà degli schiavi, la scarcerazione dei prigionieri,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "לִ/קְרֹ֤א שְׁנַת רָצוֹן֙ לַֽ/יהוָ֔ה וְ/י֥וֹם נָקָ֖ם לֵ/אלֹהֵ֑י/נוּ לְ/נַחֵ֖ם כָּל אֲבֵלִֽים׃",
+        "LXX": "καλέσαι ἐνιαυτὸν Κυρίου δεκτὸν καὶ ἡμέραν ἀνταποδόσεως, παρακαλέσαι πάντας τοὺς πενθοῦντας,",
+        "VUL": "ut prædicarem annum placabilem Domino,/ et diem ultionis Deo nostro ;/ ut consolarer omnes lugentes,/",
+        "SYN": "проповедывать лето Господне благоприятное и день мщения Бога нашего, утешить всех сетующих,",
+        "NEO": "publier une année de grâce pour \\+w Yahweh|strong=\"H3068\"\\+w**, et un jour de vengeance pour notre Dieu ; consoler tous les affligés ;",
+        "NAB": "To announce a year of favor from the LORD and a day of vindication by our God, to comfort all who mourn;",
+        "VAT_ES": "han sido las culpas de ustedes las que han puesto una barrera entre ustedes y su Dios; sus pecados le han hecho cubrirse el rostro para dejar de escucharlos.",
+        "CEI": "a promulgare l'anno di misericordia del Signore, un giorno di vendetta per il nostro Dio, per consolare tutti gli afflitti,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "לָ/שׂ֣וּם לַ/אֲבֵלֵ֣י צִיּ֗וֹן לָ/תֵת֩ לָ/הֶ֨ם פְּאֵ֜ר תַּ֣חַת אֵ֗פֶר שֶׁ֤מֶן שָׂשׂוֹן֙ תַּ֣חַת אֵ֔בֶל מַעֲטֵ֣ה תְהִלָּ֔ה תַּ֖חַת ר֣וּחַ כֵּהָ֑ה וְ/קֹרָ֤א לָ/הֶם֙ אֵילֵ֣י הַ/צֶּ֔דֶק מַטַּ֥ע יְהוָ֖ה לְ/הִתְפָּאֵֽר׃",
+        "LXX": "δοθῆναι τοῖς πενθοῦσιν Σειὼν αὐτοῖς δόξαν ἀντὶ σποδοῦ, ἄλιμμα εὐφροσύνης τοῖς πενθοῦσι, καταστολὴν δόξης ἀντὶ πνεύματος ἀκηδίας· καὶ κληθήσονται γενεαὶ δικαιοσύνης, φύτευμα Κυρίου εἰς δόξαν.",
+        "VUL": "ut ponerem lugentibus Sion,/ et darem eis coronam pro cinere,/ oleum gaudii pro luctu,/ pallium laudis pro spiritu mroris ;/ et vocabuntur in ea fortes justitiæ,/ plantatio Domini ad glorificandum./",
+        "SYN": "возвестить сетующим на Сионе, что им вместо пепла дастся украшение, вместо плача - елей радости, вместо унылого духа - славная одежда, и назовут их сильными правдою, насаждением Господа во славу Его.",
+        "NEO": "Apporter aux affligés de Sion et leur mettre un diadème au lieu de cendre, l’huile de joie au lieu du deuil, un manteau de fête au lieu d’un esprit abattu ; on les appellera térébinthes de justice, plantations de \\+w Yahweh|strong=\"H3068\"\\+w** pour sa gloire.",
+        "NAB": "To place on those who mourn in Zion a diadem instead of ashes, To give them oil of gladness in place of mourning, a glorious mantle instead of a listless spirit. They will be called oaks of justice, planted by the LORD to show his glory.",
+        "VAT_ES": "Las manos de ustedes están manchadas de sangre y sus dedos, de iniquidad; sus labios dicen mentiras, sus lenguas murmuran perfidias.",
+        "CEI": "per allietare gli afflitti di Sion, per dare loro una corona invece della cenere, olio di letizia invece dell'abito da lutto, canto di lode invece di un cuore mesto. Essi si chiameranno querce di giustizia, piantagione del Signore per manifestare la sua gloria."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וּ/בָנוּ֙ חָרְב֣וֹת עוֹלָ֔ם שֹׁמְמ֥וֹת רִֽאשֹׁנִ֖ים יְקוֹמֵ֑מוּ וְ/חִדְּשׁוּ֙ עָ֣רֵי חֹ֔רֶב שֹׁמְמ֖וֹת דּ֥וֹר וָ/דֽוֹר׃",
+        "LXX": "καὶ οἰκοδομήσουσιν ἐρήμους αἰωνίας, ἐξηρημωμένας πρότερον ἐξαναστήσουσιν· καὶ καινιοῦσιν πόλεις ἐρήμους, ἐξηρημωμένας εἰς γενεάς.",
+        "VUL": "Et ædificabunt deserta a sæculo,/ et ruinas antiquas erigent,/ et instaurabunt civitates desertas,/ dissipatas in generationem et generationem./",
+        "SYN": "И застроят пустыни вековые, восстановят древние развалины и возобновят города разоренные, остававшиеся в запустении с давних родов.",
+        "NEO": "Ils rebâtiront les ruines antiques ; ils relèveront les décombres d’autrefois ; ils restaureront les villes détruites, les décombres des âges passés.",
+        "NAB": "They shall rebuild the ancient ruins, the former wastes they shall raise up And restore the ruined cities, desolate now for generations.",
+        "VAT_ES": "Nadie apela con justa razón ni va a juicio de buena fe; se pone la confianza en palabras vacías y se habla con falsedad; se está grávido de malicia y se da a luz la iniquidad.",
+        "CEI": "Ricostruiranno le vecchie rovine, rialzeranno gli antichi ruderi, restaureranno le città desolate, devastate da più generazioni."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/עָמְד֣וּ זָרִ֔ים וְ/רָע֖וּ צֹאנְ/כֶ֑ם וּ/בְנֵ֣י נֵכָ֔ר אִכָּרֵי/כֶ֖ם וְ/כֹרְמֵי/כֶֽם׃",
+        "LXX": "καὶ ἥξουσιν ἀλλογενεῖς ποιμαίνοντες τὰ πρόβατά σου, καὶ ἀλλόφυλοι ἀροτῆρες καὶ ἀμπελουργοί·",
+        "VUL": "Et stabunt alieni, et pascent pecora vestra,/ et filii peregrinorum agricolæ et vinitores vestri erunt./",
+        "SYN": "И придут иноземцы и будут пасти стада ваши; и сыновья чужестранцев _будут_ вашими земледельцами и вашими виноградарями.",
+        "NEO": "Les étrangers seront là pour paître vos troupeaux ; les fils de l’étranger seront vos laboureurs et vos vignerons.",
+        "NAB": "Strangers shall stand ready to pasture your flocks, foreigners shall be your farmers and vinedressers.",
+        "VAT_ES": "Ellos incuban huevos de víboras y tejen telas de araña; el que come de esos huevos, muere, y se los rompe, alta una culebra.",
+        "CEI": "Ci saranno stranieri a pascere i vostri greggi e figli di stranieri saranno vostri contadini e vignaioli."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/אַתֶּ֗ם כֹּהֲנֵ֤י יְהוָה֙ תִּקָּרֵ֔אוּ מְשָׁרְתֵ֣י אֱלֹהֵ֔י/נוּ יֵאָמֵ֖ר לָ/כֶ֑ם חֵ֤יל גּוֹיִם֙ תֹּאכֵ֔לוּ וּ/בִ/כְבוֹדָ֖/ם תִּתְיַמָּֽרוּ׃",
+        "LXX": "ὑμεῖς δὲ ἱερεῖς Κυρίου κληθήσεσθε, λειτουργοὶ θεοῦ· ἰσχὺν ἐθνῶν κατέδεσθε καὶ ἐν τῷ πλούτῳ αὐτῶν θαυμασθήσεσθε.",
+        "VUL": "Vos autem sacerdotes Domini vocabimini :/ Ministri Dei nostri, dicetur vobis,/ fortitudinem gentium comedetis,/ et in gloria earum superbietis./",
+        "SYN": "А вы будете называться священниками Господа, служителями Бога нашего будут именовать вас; будете пользоваться достоянием народов и славиться славою их.",
+        "NEO": "Mais vous, on vous appellera prêtres de \\+w Yahweh|strong=\"H3068\"\\+w** ; on vous nommera « ministres de notre Dieu ». Vous mangerez les richesses des nations, et vous vous parerez de leur magnificence.",
+        "NAB": "You yourselves shall be named priests of the LORD, ministers of our God you shall be called. You shall eat the wealth of the nations and boast of riches from them.",
+        "VAT_ES": "Con sus telas no se hará un vestido y nadie se cubrirá con lo que hacen. Sus obras son obras de maldad y en sus manos no hay más que violencia;",
+        "CEI": "Voi sarete chiamati sacerdoti del Signore, ministri del nostro Dio sarete detti. Vi godrete i beni delle nazioni, trarrete vanto dalle loro ricchezze."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "תַּ֤חַת בָּשְׁתְּ/כֶם֙ מִשְׁנֶ֔ה וּ/כְלִמָּ֖ה יָרֹ֣נּוּ חֶלְקָ֑/ם לָ/כֵ֤ן בְּ/אַרְצָ/ם֙ מִשְׁנֶ֣ה יִירָ֔שׁוּ שִׂמְחַ֥ת עוֹלָ֖ם תִּֽהְיֶ֥ה לָ/הֶֽם׃",
+        "LXX": "οὕτως τὴν γῆν ἐκ δευτέρας κληρονομήσουσι, καὶ εὐφροσύνη αἰώνιος ὑπὲρ κεφαλῆς αὐτῶν.",
+        "VUL": "Pro confusione vestra duplici et rubore,/ laudabunt partem suam ;/ propter hoc in terra sua duplicia possidebunt,/ lætitia sempiterna erit eis./",
+        "SYN": "За посрамление вам будет вдвое; за поношение они будут радоваться своей доле, потому что в земле своей вдвое получат; веселие вечное будет у них.",
+        "NEO": "Au lieu de votre honte, vous aurez double portion et au lieu de l’ignominie, ils se réjouiront de leur part ; ils posséderont ainsi double part dans leur pays ; il y aura pour eux une joie éternelle.",
+        "NAB": "Since their shame was double and disgrace and spittle were their portion, They shall have a double inheritance in their land, everlasting joy shall be theirs.",
+        "VAT_ES": "sus pies corren hacia el mal, se apresuran para derramar sangre inocente; sus planes son planes perversos, a su paso hay devastación y ruina.",
+        "CEI": "Perché il loro obbrobrio fu di doppia misura, vergogna e insulto furono la loro porzione; per questo possiederanno il doppio nel loro paese, avranno una letizia perenne."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּ֣י אֲנִ֤י יְהוָה֙ אֹהֵ֣ב מִשְׁפָּ֔ט שֹׂנֵ֥א גָזֵ֖ל בְּ/עוֹלָ֑ה וְ/נָתַתִּ֤י פְעֻלָּתָ/ם֙ בֶּ/אֱמֶ֔ת וּ/בְרִ֥ית עוֹלָ֖ם אֶכְר֥וֹת לָ/הֶֽם׃",
+        "LXX": "ἐγὼ γάρ εἰμι Κύριος ὁ ἀγαπῶν δικαιοσύνην καὶ μισῶν ἁρπάγματα ἐξ ἀδικίας· καὶ δώσω τὸν μόχθον αὐτῶν δικαίοις, καὶ διαθήκην αἰώνιον διαθήσομαι αὐτοῖς.",
+        "VUL": "Quia ego Dominus diligens judicium,/ et odio habens rapinam in holocausto ;/ et dabo opus eorum in veritate,/ et fdus perpetuum feriam eis./",
+        "SYN": "Ибо Я, Господь, люблю правосудие, ненавижу грабительство с насилием, и воздам награду им по истине, и завет вечный поставлю с ними;",
+        "NEO": "Car moi, \\+w Yahweh|strong=\"H3068\"\\+w**, j’aime la justice ; je hais le pillage fait avec perfidie ; je leur donnerai fidèlement leur salaire, et je ferai avec eux une alliance éternelle.",
+        "NAB": "For I, the LORD, love what is right, I hate robbery and injustice; I will give them their recompense faithfully, a lasting covenant I will make with them.",
+        "VAT_ES": "No conocen el camino de la paz, en sus senderos, no existe el derecho. Abren para sí mismo sendas tortuosas: el que las recorre, no conoce la paz.",
+        "CEI": "Poiché io sono il Signore che amo il diritto e odio la rapina e l'ingiustizia: io darò loro fedelmente il salario, concluderò con loro un'alleanza perenne."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/נוֹדַ֤ע בַּ/גּוֹיִם֙ זַרְעָ֔/ם וְ/צֶאֱצָאֵי/הֶ֖ם בְּ/ת֣וֹךְ הָ/עַמִּ֑ים כָּל רֹֽאֵי/הֶם֙ יַכִּיר֔וּ/ם כִּ֛י הֵ֥ם זֶ֖רַע בֵּרַ֥ךְ יְהוָֽה׃",
+        "LXX": "καὶ γνωσθήσεται ἐν τοῖς ἔθνεσιν τὸ σπέρμα αὐτῶν, καὶ τὰ ἔκγονα αὐτῶν ἐν μέσῳ τῶν λαῶν· πᾶς ὁ ὁρῶν αὐτοὺς ἐπιγνώσεται αὐτούς, ὅτι οὗτοί εἰσιν σπέρμα ηὐλογημένον ὑπὸ θεοῦ,",
+        "VUL": "Et scient in gentibus semen eorum,/ et germen eorum in medio populorum ;/ omnes qui viderint eos cognoscent illos,/ quia isti sunt semen cui benedixit Dominus./",
+        "SYN": "и будет известно между народами семя их, и потомство их - среди племен; все видящие их познают, что они семя, благословенное Господом.",
+        "NEO": "Leur race sera renommée parmi les nations ; et leur postérité au milieu des peuples ; tous ceux qui les verront reconnaîtront qu’ils sont une race bénie de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Their descendants shall be renowned among the nations, and their offspring among the peoples; All who see them shall acknowledge them as a race the LORD has blessed.",
+        "VAT_ES": "Por eso, el derecho está lejos de nosotros y la justicia, fuera de nuestro alcance. Esperábamos luz, y sólo hay tinieblas, claridad, y caminamos a oscuras.",
+        "CEI": "Sarà famosa tra i popoli la loro stirpe, i loro discendenti tra le nazioni. Coloro che li vedranno ne avranno stima, perché essi sono la stirpe che il Signore ha benedetto."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "שׂ֧וֹשׂ אָשִׂ֣ישׂ בַּֽ/יהוָ֗ה תָּגֵ֤ל נַפְשִׁ/י֙ בֵּֽ/אלֹהַ֔/י כִּ֤י הִלְבִּישַׁ֨/נִי֙ בִּגְדֵי יֶ֔שַׁע מְעִ֥יל צְדָקָ֖ה יְעָטָ֑/נִי כֶּֽ/חָתָן֙ יְכַהֵ֣ן פְּאֵ֔ר וְ/כַ/כַּלָּ֖ה תַּעְדֶּ֥ה כֵלֶֽי/הָ׃",
+        "LXX": "καὶ εὐφροσύνῃ εὐφρανθήσονται ἐπὶ Κύριον. Ἀγαλλιάσθω ἡ ψυχή μου ἐπὶ τῷ κυρίῳ· ἐνέδυσεν γάρ με ἱμάτιον σωτηρίου καὶ χιτῶνα εὐφροσύνης, περιέθηκέν μοι ὡς νυμφίῳ μίτραν, καὶ ὡς νύμφην κατεκόσμησέν με κόσμῳ.",
+        "VUL": "Gaudens gaudebo in Domino,/ et exsultabit anima mea in Deo meo,/ quia induit me vestimentis salutis,/ et indumento justitiæ circumdedit me,/ quasi sponsum decoratum corona,/ et quasi sponsam ornatam monilibus suis./",
+        "SYN": "Радостью буду радоваться о Господе, возвеселится душа моя о Боге моем; ибо Он облек меня в ризы спасения, одеждою правды одел меня, как на жениха возложил венец и, как невесту, украсил убранством.",
+        "NEO": "Je serai ravi d’allégresse en \\+w Yahweh|strong=\"H3068\"\\+w**, et mon cœur se réjouira en mon Dieu, parce qu’il m’a revêtu des vêtements du salut, et m’a couvert du manteau de la justice, comme le fiancé orne sa tête d’un diadème, comme la mariée se pare de ses joyaux.",
+        "NAB": "I rejoice heartily in the LORD, in my God is the joy of my soul; For he has clothed me with a robe of salvation, and wrapped me in a mantle of justice, Like a bridegroom adorned with a diadem, like a bride bedecked with her jewels.",
+        "VAT_ES": "Andamos a tientas como los ciegos contra la pared, andamos a tientas, como el que está sin ojos; en pleno mediodía tropezamos como al anochecer, en pleno vigor estamos como los muertos.",
+        "CEI": "Io gioisco pienamente nel Signore, la mia anima esulta nel mio Dio, perché mi ha rivestito delle vesti di salvezza, mi ha avvolto con il manto della giustizia, come uno sposo che si cinge il diadema e come una sposa che si adorna di gioielli."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּ֤י כָ/אָ֨רֶץ֙ תּוֹצִ֣יא צִמְחָ֔/הּ וּ/כְ/גַנָּ֖ה זֵרוּעֶ֣י/הָ תַצְמִ֑יחַ כֵּ֣ן אֲדֹנָ֣/י יְהוִ֗ה יַצְמִ֤יחַ צְדָקָה֙ וּ/תְהִלָּ֔ה נֶ֖גֶד כָּל הַ/גּוֹיִֽם׃",
+        "LXX": "καὶ ὡς γῆν αὔξουσαν τὸ ἄνθος αὐτῆς, καὶ ὡς κῆπος τὰ σπέρματα αὐτοῦ, οὕτως ἀνατελεῖ κύριος Κύριος δικαιοσύνην καὶ ἀγαλλίαμα ἐναντίον πάντων τῶν ἐθνῶν.",
+        "VUL": "Sicut enim terra profert germen suum,/ et sicut hortus semen suum germinat,/ sic Dominus Deus germinabit justitiam/ et laudem coram universis gentibus.]",
+        "SYN": "Ибо, как земля производит растения свои, и как сад произращает посеянное в нем, так Господь Бог проявит правду и славу пред всеми народами.",
+        "NEO": "Car comme la terre fait éclore ses germes, et comme un jardin fait germer ses semences, ainsi le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** fera germer la justice, et la louange devant toutes les nations.",
+        "NAB": "As the earth brings forth its plants, and a garden makes its growth spring up, So will the Lord GOD make justice and praise spring up before all the nations.",
+        "VAT_ES": "Todos nosotros gruñimos como osos, gemimos sin cesar como palomas. Esperábamos el juicio, &iexcl;y nada!, la salvación, y está lejos de nosotros.",
+        "CEI": "Poiché come la terra produce la vegetazione e come un giardino fa germogliare i semi, così il Signore Dio farà germogliare la giustizia e la lode davanti a tutti i popoli."
+      }
+    }
+  }
+}

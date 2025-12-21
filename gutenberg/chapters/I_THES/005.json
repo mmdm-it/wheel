@@ -1,0 +1,466 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_THES_005",
+  "book_key": "I_THES",
+  "sequence": 5,
+  "chapter_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Περὶ δὲ τῶν χρόνων καὶ τῶν καιρῶν, ἀδελφοί, οὐ χρείαν ἔχετε ὑμῖν γράφεσθαι.",
+        "VUL": "De temporibus autem, et momentis, fratres, non indigetis ut scribamus vobis.",
+        "SYN": "О временах же и сроках нет нужды писать к вам, братия,",
+        "NEO": "Quant aux temps et aux moments il n’est pas besoin, frères, de vous en écrire.",
+        "NAB": "Concerning times and seasons, brothers, you have no need for anything to be written to you.",
+        "VAT_ES": "Pablo, Silvano y Timoteo saludan a la Iglesia de Tesalónica, que está unida a Dios, nuestro Padre y al Señor Jesucristo.",
+        "CEI": "Perciò, fratelli santi, partecipi di una vocazione celeste, fissate bene lo sguardo in Gesù, l'apostolo e sommo sacerdote della fede che noi professiamo,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Αὐτοὶ γὰρ ἀκριβῶς οἴδατε ὅτι ἡ ἡμέρα κυρίου ὡς κλέπτης ἐν νυκτὶ οὕτως ἔρχεται·",
+        "VUL": "Ipsi enim diligenter scitis quia dies Domini, sicut fur in nocte, ita veniet :",
+        "SYN": "ибо сами вы достоверно знаете, что день Господень так придет, как тать ночью.",
+        "NEO": "Car vous savez très bien vous-mêmes que le jour du Seigneur vient ainsi qu’un voleur pendant la nuit.",
+        "NAB": "For you yourselves know very well that the day of the Lord will come like a thief at night.",
+        "VAT_ES": "Llegue a ustedes la gracia y la paz que proceden de Dios Padre y del Señor Jesucristo.",
+        "CEI": "il quale è fedele a colui che l'ha costituito, come lo fu anche Mosè in tutta la sua casa."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "ὅταν γὰρ λέγωσιν, Εἰρήνη καὶ ἀσφάλεια, τότε αἰφνίδιος αὐτοῖς ἐφίσταται ὄλεθρος, ὥσπερ ἡ ὠδὶν τῇ ἐν γαστρὶ ἐχούσῃ, καὶ οὐ μὴ ἐκφύγωσιν.",
+        "VUL": "cum enim dixerint : Pax et securitas : tunc repentinus eis superveniet interitus, sicut dolor in utero habenti, et non effugient.",
+        "SYN": "Ибо, когда будут говорить: \"мир и безопасность\", тогда внезапно постигнет их пагуба, подобно как мука родами _постигает_ имеющую во чреве, и не избегнут.",
+        "NEO": "Quand les hommes diront : « Paix et sûreté ! » c’est alors qu’une ruine soudaine fondra sur eux comme la douleur sur la femme qui doit enfanter, et ils n’y échapperont pas.",
+        "NAB": "When people are saying, \"Peace and security,\" then sudden disaster comes upon them, like labor pains upon a pregnant woman,and they will not escape.",
+        "VAT_ES": "Hermanos, siempre debemos dar gracias a Dios a causa de ustedes, y es justo que lo hagamos, porque la fe de ustedes progresa constantemente y se acrecienta el amor de cada uno hacia los demás.",
+        "CEI": "Ma in confronto a Mosè, egli è stato giudicato degno di tanta maggior gloria, quanto l'onore del costruttore della casa supera quello della casa stessa."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ὑμεῖς δέ, ἀδελφοί, οὐκ ἐστὲ ἐν σκότει, ἵνα ἡ ἡμέρα ὑμᾶς ὡς κλέπτης καταλάβῃ·",
+        "VUL": "Vos autem, fratres, non estis in tenebris, ut vos dies illa tamquam fur comprehendat :",
+        "SYN": "Но вы, братия, не во тьме, чтобы день застал вас, как тать.",
+        "NEO": "Mais vous, frères, vous n’êtes pas dans les ténèbres, pour que ce jour vous surprenne comme un voleur.",
+        "NAB": "But you, brothers, are not in darkness, for that day to overtake you like a thief.",
+        "VAT_ES": "Tanto es así que, ante las Iglesias de Dios, nosotros nos sentimos orgullosos de ustedes, por la constancia y la fe con que soportan las persecuciones y contrariedades.",
+        "CEI": "Ogni casa infatti viene costruita da qualcuno; ma colui che ha costruito tutto è Dio."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "πάντες ὑμεῖς υἱοὶ φωτός ἐστε καὶ υἱοὶ ἡμέρας· οὐκ ἐσμὲν νυκτὸς οὐδὲ σκότους·",
+        "VUL": "omnes enim vos filii lucis estis, et filii diei : non sumus noctis, neque tenebrarum.",
+        "SYN": "Ибо все вы -- сыны света и сыны дня: мы -- не _сыны_ ночи, ни тьмы.",
+        "NEO": "Oui, vous êtes tous enfants de lumière et enfants du jour ; nous+ 5:5 V, 5. Nous, chrétiens, nous n’appartenons pas à la nuit, etc. Comp. Matth. xxv, 1 sv.* ne sommes pas de la nuit, ni des ténèbres.",
+        "NAB": "For all of you are children of the light and children of the day. We are not of the night or of darkness.",
+        "VAT_ES": "En esto se manifiesta el justo Juicio de Dios, para que ustedes sean encontrados dignos del Reino de Dios por el cual tienen que sufrir.",
+        "CEI": "In verità Mosè fu fedele in tutta la sua casa come servitore, per rendere testimonianza di ciò che doveva essere annunziato più tardi;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "ἄρα οὖν μὴ καθεύδωμεν ὡς καὶ οἱ λοιποί, ἀλλὰ γρηγορῶμεν καὶ νήφωμεν.",
+        "VUL": "Igitur non dormiamus sicut et ceteri, sed vigilemus, et sobrii simus.",
+        "SYN": "Итак, не будем спать, как и прочие, но будем бодрствовать и трезвиться.",
+        "NEO": "Ne dormons donc pas comme le reste des hommes ; mais veillons et soyons sobres.",
+        "NAB": "Therefore, let us not sleep as the rest do, but let us stay alert and sober.",
+        "VAT_ES": "Es justo que Dios retribuya con sufrimientos a quienes los hacen sufrir a ustedes.",
+        "CEI": "Cristo, invece, lo fu come figlio costituito sopra la sua propria casa. E la sua casa siamo noi, se conserviamo la libertà e la speranza di cui ci vantiamo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Οἱ γὰρ καθεύδοντες νυκτὸς καθεύδουσιν· καὶ οἱ μεθυσκόμενοι, νυκτὸς μεθύουσιν.",
+        "VUL": "Qui enim dormiunt, nocte dormiunt : et qui ebrii sunt, nocte ebrii sunt.",
+        "SYN": "Ибо спящие спят ночью, и упивающиеся упиваются ночью.",
+        "NEO": "Car ceux qui dorment, dorment la nuit, et ceux qui s’enivrent, s’enivrent la nuit.",
+        "NAB": "Those who sleep go to sleep at night, and those who are drunk get drunk at night.",
+        "VAT_ES": "En cambio, a ustedes, los que sufren, les dará el descanso junto con nosotros, cuando se manifieste el Señor Jesús, que vendrá desde el cielo, con los ángeles de su poder,",
+        "CEI": "Per questo, come dice lo Spirito Santo: Oggi, se udite la sua voce,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἡμεῖς δέ, ἡμέρας ὄντες, νήφωμεν, ἐνδυσάμενοι θώρακα πίστεως καὶ ἀγάπης, καὶ περικεφαλαίαν, ἐλπίδα σωτηρίας.",
+        "VUL": "Nos autem, qui diei sumus, sobrii simus, induti loricam fidei et caritatis, et galeam spem salutis :",
+        "SYN": "Мы же, будучи _сынами_ дня, да трезвимся, облекшись в броню веры и любви и в шлем надежды спасения,",
+        "NEO": "Pour nous qui sommes du jour, soyons sobres, prenant pour cuirasse la foi et la charité, et pour casque l’espérance du salut.",
+        "NAB": "But since we are of the day, let us be sober, putting on the breastplate of faith and love and the helmet that is hope for salvation.",
+        "VAT_ES": "en medio de un fuego ardiente. Entonces él hará justicia con aquellos que no reconocen a Dios y no obedecen al Evangelio de nuestro Señor Jesús.",
+        "CEI": "non indurite i vostri cuori come nel giorno della ribellione, il giorno della tentazione nel deserto,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Ὅτι οὐκ ἔθετο ἡμᾶς ὁ θεὸς εἰς ὀργήν, ἀλλ’ εἰς περιποίησιν σωτηρίας διὰ τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ,",
+        "VUL": "quoniam non posuit nos Deus in iram, sed in acquisitionem salutis per Dominum nostrum Jesum Christum,",
+        "SYN": "потому что Бог определил нас не на гнев, но к получению спасения через Господа нашего Иисуса Христа,",
+        "NEO": "Dieu en effet ne nous a pas destinés à la colère, mais à l’acquisition du salut par notre Seigneur Jésus-Christ,",
+        "NAB": "For God did not destine us for wrath, but to gain salvation through our Lord Jesus Christ,",
+        "VAT_ES": "Estos sufrirán como castigo la perdición eterna, alejados de la presencia del Señor y de la gloria de su poder,",
+        "CEI": "dove mi tentarono i vostri padri mettendomi alla prova, pur avendo visto per quarant'anni le mie opere."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "τοῦ ἀποθανόντος ὑπὲρ ἡμῶν, ἵνα, εἴτε γρηγορῶμεν εἴτε καθεύδωμεν, ἅμα σὺν αὐτῷ ζήσωμεν.",
+        "VUL": "qui mortuus est pro nobis : ut sive vigilemus, sive dormiamus, simul cum illo vivamus.",
+        "SYN": "умершего за нас, чтобы мы, бодрствуем ли, или спим, жили вместе с Ним.",
+        "NEO": "qui est mort pour nous, afin que, soit que nous veillions+ 5:10 10. Veillions… dormions (non plus dans le sens moral, comme vers. 6) : images de la vie et de la mort. Sens : soit que nous soyons encore en vie, soit que la mort nous ait déjà frappés, le jour où Jésus reviendra.*, soit que nous dormions, nous vivions avec lui.",
+        "NAB": "who died for us, so that whether we are awake or asleep we may live together with him.",
+        "VAT_ES": "cuando él venga aquel Día para ser glorificado en sus santos y admirado por todos los que hayan creído. &iexcl;Y ustedes han creído en nuestro testimonio!",
+        "CEI": "Perciò mi disgustai di quella generazione e dissi: Sempre hanno il cuore sviato. Non hanno conosciuto le mie vie."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Διὸ παρακαλεῖτε ἀλλήλους, καὶ οἰκοδομεῖτε εἷς τὸν ἕνα, καθὼς καὶ ποιεῖτε.",
+        "VUL": "Propter quod consolamini invicem, et ædificate alterutrum, sicut et facitis.",
+        "SYN": "Посему увещавайте друг друга и назидайте один другого, как вы и делаете.",
+        "NEO": "C’est pourquoi consolez-vous mutuellement et édifiez-vous les uns les autres, comme déjà vous le faites.",
+        "NAB": "Therefore, encourage one another and build one another up, as indeed you do.",
+        "VAT_ES": "Pensando en esto, rogamos constantemente por ustedes a fin de que Dios los haga dignos de su llamado, y lleve a término en ustedes, con su poder, todo buen propósito y toda acción inspirada en la fe.",
+        "CEI": "Così ho giurato nella mia ira: Non entreranno nel mio riposo."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "¶Ἐρωτῶμεν δὲ ὑμᾶς, ἀδελφοί, εἰδέναι τοὺς κοπιῶντας ἐν ὑμῖν, καὶ προϊσταμένους ὑμῶν ἐν κυρίῳ, καὶ νουθετοῦντας ὑμᾶς,",
+        "VUL": "Rogamus autem vos, fratres, ut noveritis eos qui laborant inter vos, et præsunt vobis in Domino, et monent vos,",
+        "SYN": "Просим же вас, братия, уважать трудящихся у вас, и предстоятелей ваших в Господе, и вразумляющих вас,",
+        "NEO": "Nous vous prions aussi, frères, d’avoir de la considération pour ceux qui travaillent parmi vous, qui vous gouvernent dans le Seigneur et qui vous donnent des avis.",
+        "NAB": "We ask you, brothers, to respect those who are laboring among you and who are over you in the Lord and who admonish you,",
+        "VAT_ES": "Así el nombre del Señor Jesús será glorificado en ustedes, y ustedes en él, conforme a la gracia de nuestro Dios y del Señor Jesucristo.",
+        "CEI": "Guardate perciò, fratelli, che non si trovi in nessuno di voi un cuore perverso e senza fede che si allontani dal Dio vivente."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "καὶ ἡγεῖσθαι αὐτοὺς ὑπὲρ ἐκπερισσοῦ ἐν ἀγάπῃ διὰ τὸ ἔργον αὐτῶν. Εἰρηνεύετε ἐν ἑαυτοῖς.",
+        "VUL": "ut habeatis illos abundantius in caritate propter opus illorum : pacem habete cum eis.",
+        "SYN": "и почитать их преимущественно с любовью за дело их; будьте в мире между собою.",
+        "NEO": "Ayez pour eux une charité plus abondante, à cause de leur œuvre. Vivez en paix entre vous+ 5:13 13. Entre vous. Vulg., \\+qt avec eux\\+qt*.*.",
+        "NAB": "and to show esteem for them with special love on account of their work. Be at peace among yourselves.",
+        "CEI": "Esortatevi piuttosto a vicenda ogni giorno, finché dura quest'oggi, perché nessuno di voi si indurisca sedotto dal peccato."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Παρακαλοῦμεν δὲ ὑμᾶς, ἀδελφοί, νουθετεῖτε τοὺς ἀτάκτους, παραμυθεῖσθε τοὺς ὀλιγοψύχους, ἀντέχεσθε τῶν ἀσθενῶν, μακροθυμεῖτε πρὸς πάντας.",
+        "VUL": "Rogamus autem vos, fratres, corripite inquietos, consolamini pusillanimes, suscipite infirmos, patientes estote ad omnes.",
+        "SYN": "Умоляем также вас, братия, вразумляйте бесчинных, утешайте малодушных, поддерживайте слабых, будьте долготерпеливы ко всем.",
+        "NEO": "Nous vous en prions, frères, reprenez ceux qui troublent l’ordre, consolez les pusillanimes, soutenez les faibles, usez de patience envers tous.",
+        "NAB": "We urge you, brothers, admonish the idle, cheer the fainthearted, support the weak, be patient with all.",
+        "CEI": "Siamo diventati infatti partecipi di Cristo, a condizione di mantenere salda sino alla fine la fiducia che abbiamo avuta da principio."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ὁρᾶτε μή τις κακὸν ἀντὶ κακοῦ τινὶ ἀποδῷ· ἀλλὰ πάντοτε τὸ ἀγαθὸν διώκετε καὶ εἰς ἀλλήλους καὶ εἰς πάντας.",
+        "VUL": "Videte ne quis malum pro malo alicui reddat : sed semper quod bonum est sectamini in invicem, et in omnes.",
+        "SYN": "Смотрите, чтобы кто кому не воздавал злом за зло; но всегда ищите добра и друг другу и всем.",
+        "NEO": "Prenez garde à ce que nul ne rende à un autre le mal pour le mal ; mais toujours cherchez ce qui est bien, les uns pour les autres et pour tous.",
+        "NAB": "See that no one returns evil for evil; rather, always seek what is good (both) for each other and for all.",
+        "CEI": "Quando pertanto si dice: Oggi, se udite la sua voce, non indurite i vostri cuori come nel giorno della ribellione,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Πάντοτε χαίρετε·",
+        "VUL": "Semper gaudete.",
+        "SYN": "Всегда радуйтесь.",
+        "NEO": "Soyez toujours joyeux.",
+        "NAB": "Rejoice always.",
+        "CEI": "chi furono quelli che, dopo aver udita la sua voce, si ribellarono? Non furono tutti quelli che erano usciti dall'Egitto sotto la guida di Mosè?"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "ἀδιαλείπτως προσεύχεσθε·",
+        "VUL": "Sine intermissione orate.",
+        "SYN": "Непрестанно молитесь.",
+        "NEO": "Priez sans cesse.",
+        "NAB": "Pray without ceasing.",
+        "CEI": "E chi furono coloro di cui si è disgustato per quarant'anni? Non furono quelli che avevano peccato e poi caddero cadaveri nel deserto?"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "ἐν παντὶ εὐχαριστεῖτε· τοῦτο γὰρ θέλημα θεοῦ ἐν χριστῷ Ἰησοῦ εἰς ὑμᾶς.",
+        "VUL": "In omnibus gratias agite : hæc est enim voluntas Dei in Christo Jesu in omnibus vobis.",
+        "SYN": "За все благодарите: ибо такова о вас воля Божия во Христе Иисусе.",
+        "NEO": "En toutes choses rendez grâces : car c’est la volonté de Dieu dans le Christ Jésus à l’égard de vous tous.",
+        "NAB": "In all circumstances give thanks, for this is the will of God for you in Christ Jesus.",
+        "CEI": "E a chi giurò che non sarebbero entrati nel suo riposo, se non a quelli che non avevano creduto?"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Τὸ πνεῦμα μὴ σβέννυτε·",
+        "VUL": "Spiritum nolite extinguere.",
+        "SYN": "Духа не угашайте.",
+        "NEO": "N’éteignez pas l’Esprit+ 5:19 19. N’éteignez pas l’Esprit-Saint, n’empêchez pas ses manifestations extérieures (dons de langue, de prophétie, etc.).*.",
+        "NAB": "Do not quench the Spirit.",
+        "CEI": "In realtà vediamo che non vi poterono entrare a causa della loro mancanza di fede."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "προφητείας μὴ ἐξουθενεῖτε·",
+        "VUL": "Prophetias nolite spernere.",
+        "SYN": "Пророчества не уничижайте.",
+        "NEO": "Ne méprisez pas les prophéties ;",
+        "NAB": "Do not despise prophetic utterances."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "πάντα δὲ δοκιμάζετε· τὸ καλὸν κατέχετε·",
+        "VUL": "Omnia autem probate : quod bonum est tenete.",
+        "SYN": "Все испытывайте, хорошего держитесь.",
+        "NEO": "mais éprouvez tout, et retenez ce qui est bon ;",
+        "NAB": "Test everything; retain what is good."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "ἀπὸ παντὸς εἴδους πονηροῦ ἀπέχεσθε.",
+        "VUL": "Ab omni specie mala abstinete vos.",
+        "SYN": "Удерживайтесь от всякого рода зла.",
+        "NEO": "abstenez-vous de toute apparence de mal. ÉPILOGUE.",
+        "NAB": "Refrain from every kind of evil."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "¶Αὐτὸς δὲ ὁ θεὸς τῆς εἰρήνης ἁγιάσαι ὑμᾶς ὁλοτελεῖς· καὶ ὁλόκληρον ὑμῶν τὸ πνεῦμα καὶ ἡ ψυχὴ καὶ τὸ σῶμα ἀμέμπτως ἐν τῇ παρουσίᾳ τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ τηρηθείη.",
+        "VUL": "Ipse autem Deus pacis sanctificet vos per omnia : ut integer spiritus vester, et anima, et corpus sine querela in adventu Domini nostri Jesu Christi servetur.",
+        "SYN": "Сам же Бог мира да освятит вас во всей полноте, и ваш дух и душа и тело во всей целости да сохранится без порока в пришествие Господа нашего Иисуса Христа.",
+        "NEO": "Que le Dieu de paix lui-même vous sanctifie tout entiers, et que tout ce qui est en vous, l’esprit+ 5:23 23. Tout entiers, Vulg., \\+qt en tout\\+qt*. \\+qt L’esprit\\+qt* (le πνεῦμα), c’est la partie supérieure de l’âme, siège de la raison et de la liberté, et aussi de la vie divine et de la grâce ; \\+qt l’âme\\+qt* (la ψυχὴ, c’est la partie inférieure, principe de la vie physique, siège des phénomènes sensibles.*, l’âme et le corps, se conserve sans reproche jusqu’au jour de l’avènement de notre Seigneur Jésus-Christ !",
+        "NAB": "May the God of peace himself make you perfectly holy and may you entirely, spirit, soul, and body, be preserved blameless for the coming of our Lord Jesus Christ."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Πιστὸς ὁ καλῶν ὑμᾶς, ὃς καὶ ποιήσει.",
+        "VUL": "Fidelis est, qui vocavit vos : qui etiam faciet.",
+        "SYN": "Верен Призывающий вас, Который и сотворит _сие._",
+        "NEO": "Celui qui vous appelle est fidèle, et c’est lui qui fera encore cela.",
+        "NAB": "The one who calls you is faithful, and he will also accomplish it."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "¶Ἀδελφοί, προσεύχεσθε περὶ ἡμῶν.",
+        "VUL": "Fratres, orate pro nobis.",
+        "SYN": "Братия! молитесь о нас.",
+        "NEO": "Frères, priez pour nous.",
+        "NAB": "Brothers, pray for us (too)."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "¶Ἀσπάσασθε τοὺς ἀδελφοὺς πάντας ἐν φιλήματι ἁγίῳ.",
+        "VUL": "Salutate fratres omnes in osculo sancto.",
+        "SYN": "Приветствуйте всех братьев лобзанием святым.",
+        "NEO": "Saluez tous les frères par un saint baiser.",
+        "NAB": "Greet all the brothers with a holy kiss."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Ὁρκίζω ὑμᾶς τὸν κύριον, ἀναγνωσθῆναι τὴν ἐπιστολὴν πᾶσιν τοῖς ἁγίοις ἀδελφοῖς.",
+        "VUL": "Adjuro vos per Dominum ut legatur epistola hæc omnibus sanctis fratribus.",
+        "SYN": "Заклинаю вас Господом прочитать сие послание всем святым братиям.",
+        "NEO": "Je vous en conjure par le Seigneur, que cette lettre soit lue à tous les [saints] frères.",
+        "NAB": "I adjure you by the Lord that this letter be read to all the brothers."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "¶Ἡ χάρις τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ μεθ’ ὑμῶν. Ἀμήν.",
+        "VUL": "Gratia Domini nostri Jesu Christi vobiscum. Amen.",
+        "SYN": "Благодать Господа нашего Иисуса Христа с вами. Аминь.",
+        "NEO": "Que la grâce de notre Seigneur Jésus-Christ soit avec vous !+ 5:28 28. Quelques manuscrits et la Vulg. ajoutent, amen.*",
+        "NAB": "The grace of our Lord Jesus Christ be with you."
+      }
+    }
+  }
+}

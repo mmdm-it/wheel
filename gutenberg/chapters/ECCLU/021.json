@@ -1,0 +1,491 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_021",
+  "book_key": "ECCLU",
+  "sequence": 21,
+  "chapter_in": {
+    "MT": 21,
+    "VUL": 21,
+    "LXX": 21
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Τέκνον, ἥμαρτες; μὴ προσθῇς μηκέτι, καὶ περὶ τῶν προτέρων σου δεήθητι.",
+        "VUL": "[Fili, peccasti, non adjicias iterum :/ sed et de pristinis deprecare, ut tibi dimittantur./",
+        "SYN": "Сын мой! если ты согрешил, не прилагай более грехов и о прежних молись.",
+        "NEO": "Mon fils, as-tu péché ? ne le fais plus, mais prie pour tes fautes passées.",
+        "NAB": "My son, if you have sinned, do so no more, and for your past sins pray to be forgiven.",
+        "VAT_ES": "&iquest;Has pecado, hijo mío? No lo vuelvas a hacer, y pide perdón por tus faltas pasadas.",
+        "CEI": "Figlio, hai peccato? Non farlo più e prega per le colpe passate."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ὡς ἀπὸ προσώπου ὄφεως φεῦγε ἀπὸ ἁμαρτίας· ἐὰν γὰρ προσέλθῃς, δήξεταί σε· ὀδόντες λέοντος οἱ ὀδόντες αὐτῆς, ἀναιροῦντες ψυχὰς ἀνθρώπων.",
+        "VUL": "Quasi a facie colubri fuge peccata :/ et si accesseris ad illa, suscipient te./",
+        "SYN": "Беги от греха, как от лица змея; ибо, если подойдешь к нему, он ужалит тебя.",
+        "NEO": "Fuis devant le péché comme devant un serpent ; car, si tu en approches, il te mordra. Ses dents sont des dents de lion ; elles donnent la mort aux hommes.",
+        "NAB": "Flee from sin as from a serpent. that will bite you if you go near it; Its teeth are lion's teeth, destroying the souls of men.",
+        "VAT_ES": "Huye del pecado como de una serpiente, porque si te acercas,, te morderá; sus dientes son dientes de león, que arrebatan la vida de los hombres.",
+        "CEI": "Come alla vista del serpente fuggi il peccato: se ti avvicini, ti morderà. Denti di leone sono i suoi denti, capaci di distruggere vite umane."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ὡς ῥομφαία δίστομος πᾶσα ἀνομία, τῇ πληγῇ αὐτῆς οὐκ ἔστιν ἴασις.",
+        "VUL": "Dentes leonis dentes ejus,/ interficientes animas hominum./",
+        "SYN": "Зубы его - зубы львиные, которые умерщвляют души людей.",
+        "NEO": "Toute transgression est comme une épée à deux tranchants ; la plaie qu’elle fait est incurable.",
+        "NAB": "Every offense is a two-edged sword; when it cuts, there can be no healing.",
+        "VAT_ES": "Toda transgresión es como espada de dos filos: no hay remedio para su herida.",
+        "CEI": "Ogni trasgressione è come spada a doppio taglio: non c'è rimedio per la sua ferita."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "καταπληγμὸς καὶ ὕβρις ἐρημώσουσιν πλοῦτον, οὕτως οἶκος ὑπερηφάνου ἐρημωθήσεται.",
+        "VUL": "Quasi rhomphæa bis acuta omnis iniquitas :/ plagæ illius non est sanitas./",
+        "SYN": "Всякое беззаконие как обоюдоострый меч: ране от него нет исцеления.",
+        "NEO": "La menace et l’injure détruisent la richesse ; c’est ainsi que la maison de l’orgueilleux est détruite.",
+        "NAB": "Violence and arrogance wipe out wealth; so too a proud man's home is destroyed.",
+        "VAT_ES": "La violencia y la soberbia hacen perder las riquezas: así será arrasada la casa del orgulloso.",
+        "CEI": "Spavento e violenza fanno svanire la ricchezza; così la casa del superbo sarà devastata."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "δέησις πτωχοῦ ἐκ στόματος ἕως ὠτίων αὐτοῦ, καὶ τὸ κρίμα αὐτοῦ κατὰ σπουδὴν ἔρχεται.",
+        "VUL": "Objurgatio et injuriæ annullabunt substantiam,/ et domus quæ nimis locuples est annullabitur superbia :/ sic substantia superbi eradicabitur./",
+        "SYN": "Устрашения и насилия опустошат богатство: так опустеет и дом высокомерного.",
+        "NEO": "La prière du pauvre monte de ses lèvres à l’oreille du riche ; mais sur l’orgueilleux viendra bientôt son jugement.",
+        "NAB": "Prayer from a poor man's lips is heard at once, and justice is quickly granted him.",
+        "VAT_ES": "La oración del pobre va de su boca a los oídos del Señor, y la sentencia divina no se hace esperar.",
+        "CEI": "La preghiera del povero va dalla sua bocca agli orecchi di Dio, il giudizio di lui verrà a suo favore."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "μισῶν ἐλεγμὸν ἐν ἴχνει ἁμαρτωλοῦ, καὶ ὁ φοβούμενος Κύριον ἐπιστρέψει ἐν καρδίᾳ.",
+        "VUL": "Deprecatio pauperis ex ore usque ad aures ejus perveniet,/ et judicium festinato adveniet illi./",
+        "SYN": "Моление из уст нищего - только до ушей его; но суд над ним поспешно приближается.",
+        "NEO": "Celui qui hait la réprimande marche sur la trace du pécheur, mais celui qui craint Dieu se tourne vers lui d’un cœur sincère.",
+        "NAB": "He who hates correction walks the sinner's path, but he who fears the LORD repents in his heart.",
+        "VAT_ES": "El que odia la reprensión sigue las huellas del pecador, pero el que teme al Señor se arrepiente de corazón.",
+        "CEI": "Chi odia il rimprovero segue le orme del peccatore, ma chi teme il Signore si convertirà di cuore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "γνωστὸς μακρόθεν ὁ δυνατὸς ἐν γλώσσῃ, ὁ δὲ νοήμων οἶδεν ἐν τῷ ὀλισθάνειν αὐτόν.",
+        "VUL": "Qui odit correptionem vestigium est peccatoris,/ et qui timet Deum convertetur ad cor suum./",
+        "SYN": "Ненавидящий обличение идет по следам грешника, а боящийся Господа обратится сердцем.",
+        "NEO": "L’homme puissant par la langue se fait connaître de loin ; mais l’homme de sens sait quand il faillit.",
+        "NAB": "Widely known is the boastful speaker but the wise man knows his own faults.",
+        "VAT_ES": "Al charlatán se lo reconoce desde lejos, el hombre reflexivo le descubre sus deslices.",
+        "CEI": "Da lontano si riconosce il linguacciuto, ma l'assennato conosce il suo scivolare."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "ὁ οἰκοδομῶν τὴν οἰκίαν αὐτοῦ ἐν χρήμασιν ἀλλοτρίοις ὡς συνάγων αὐτοῦ τοὺς λίθους εἰς χειμῶνα.",
+        "VUL": "Notus a longe potens lingua audaci,/ et sensatus scit labi se ab ipso./",
+        "SYN": "Издалека узнается сильный языком; но разумный видит, где тот спотыкается.",
+        "NEO": "L’homme qui bâtit sa maison avec de l’argent qui n’est pas à lui est comme celui qui ramasse ses pierres pour l’hiver.",
+        "NAB": "He who builds his house with another's money is collecting stones for his funeral mound.",
+        "VAT_ES": "El que edifica su casa con dinero ajeno es como el que amontona piedras para el invierno.",
+        "CEI": "Chi costruisce la sua casa con ricchezze altrui è come chi ammucchia pietre per l'inverno."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "στιππύον συνηγμένον συναγωγὴ ἀνόμων, καὶ ἡ συντέλεια αὐτῶν φλὸξ πυρός.",
+        "VUL": "Qui ædificat domum suam impendiis alienis,/ quasi qui colligit lapides suos in hieme./",
+        "SYN": "Строящий дом свой на чужие деньги - то же, что собирающий камни для своей могилы.",
+        "NEO": "La troupe des ennemis est un amas d’étoupes ; elle finira par être la proie du feu.",
+        "NAB": "A band of criminals is like a bundle of tow; they will end in a flaming fire.",
+        "VAT_ES": "Una banda de malhechores es como un montón de estopa, y su fin es la llama del fuego.",
+        "CEI": "Mucchio di stoppa è una riunione di iniqui; la loro fine è una fiammata di fuoco."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ὁδὸς ἁμαρτωλῶν ὡμαλισμένη ἐκ λίθων, καὶ ἐπ’ ἐσχάτῳ αὐτῆς βόθρος ᾅδου.",
+        "VUL": "Stupa collecta synagoga peccantium,/ et consummatio illorum flamma ignis./",
+        "SYN": "Сборище беззаконных - куча пакли, и конец их - пламень огненный.",
+        "NEO": "La voie des pécheurs est pavée de pierres, mais à son extrémité est le gouffre du schéol.",
+        "NAB": "The path of sinners is smooth stones that end in the depths of the nether world.",
+        "VAT_ES": "El camino de los pecadores está despejado de piedras, pero desemboca en lo profundo del Abismo.",
+        "CEI": "La via dei peccatori è appianata e senza pietre; ma al suo termine c'è il bàratro degli inferi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ὁ φυλάσσων νόμον κατακρατεῖ τοῦ ἐννοήματος αὐτοῦ, καὶ συντέλεια τοῦ φόβου Κυρίου σοφία.",
+        "VUL": "Via peccatorum complanata lapidibus :/ et in fine illorum inferi, et tenebræ, et pnæ.]",
+        "SYN": "Путь грешников вымощен камнями, но на конце его - пропасть ада.",
+        "NEO": "Celui qui observe la loi maîtrise ses pensées, et le résultat final de la crainte du Seigneur est la sagesse.",
+        "NAB": "He who keeps the law controls his impulses; he who is perfect in fear of the LORD has wisdom.",
+        "VAT_ES": "El que observa la Ley domina sus inclinaciones, y el temor del Señor es la culminación de la sabiduría.",
+        "CEI": "Chi osserva la legge domina il suo istinto, il risultato del timore del Signore è la sapienza."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "⸂⸆⸃ οὐ παιδευθήσεται ὃς οὐκ ἔστιν πανοῦργος· ἔστιν πανουργία πληθύνουσα πικρίαν.",
+        "VUL": "[Qui custodit justitiam, continebit sensum ejus./",
+        "SYN": "Соблюдающий закон обладает своими мыслями,",
+        "NEO": "Celui qui manque d’habileté ne sera pas instruit ; mais il y a une habileté qui produit beaucoup d’amertume.",
+        "NAB": "He can never be taught who is not shrewd, but one form of shrewdness is thoroughly bitter.",
+        "VAT_ES": "El que no es habilidoso no puede aprender, pero hay una habilidad que produce amargura.",
+        "CEI": "Non diventerà educato chi manca di capacità, ma c'è anche una capacità che aumenta l'amarezza."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "γνῶσις σοφοῦ ὡς κατακλυσμὸς πληθυνθήσεται, καὶ ἡ βουλὴ αὐτοῦ ὡς πηγὴ ζωῆς.",
+        "VUL": "Consummatio timoris Dei, sapientia et sensus./",
+        "SYN": "и совершение страха Господня - мудрость.",
+        "NEO": "La science du sage abonde comme une eau qui déborde, et son conseil est une source de vie.",
+        "NAB": "A wise man's knowledge wells up in a flood, and his counsel, like a living spring;",
+        "VAT_ES": "La ciencia del sabio crece como una inundación y su consejo es como fuente de vida.",
+        "CEI": "La scienza del saggio cresce come una piena; il suo consiglio è come una sorgente di vita."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "ἔγκατα μωροῦ ὡς ἄγγιον συντετριμμένον, καὶ πᾶσαν γνῶσιν οὐ κρατήσει.",
+        "VUL": "Non erudietur/ qui non est sapiens in bono./",
+        "SYN": "Не научится тот, кто неспособен;",
+        "NEO": "L’intérieur de l’insensé est comme un vase fêlé ; il ne retiendra aucune connaissance.",
+        "NAB": "A fool's mind is like a broken jar - no knowledge at all can it hold.",
+        "VAT_ES": "La mente del necio es como un vaso roto: no retiene ningún conocimiento.",
+        "CEI": "L'interno dello stolto è come un vaso rotto, non potrà contenere alcuna scienza."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "λόγον σοφὸν ἐὰν ἀκούσῃ ἐπιστήμων, αἰνέσει αὐτὸν καὶ ἐπ’ αὐτὸν προσθήσει· ἤκουσεν ὁ σπαταλῶν καὶ ἀπήρεσεν αὐτῷ, καὶ ἀπέστρεψεν αὐτὸν ὀπίσω τοῦ νώτου αὐτοῦ.",
+        "VUL": "Est autem sapientia quæ abundat in malo,/ et non est sensus ubi est amaritudo./",
+        "SYN": "но есть способность, умножающая горечь.",
+        "NEO": "Que l’homme intelligent entende une sage parole, il en fait l’éloge et y ajoute quelque chose. Que le voluptueux l’entende, elle lui déplaît, et il la jette derrière lui.",
+        "NAB": "When an intelligent man hears words of wisdom, he approves them and adds to them; The wanton hears them with scorn and casts them behind his back.",
+        "VAT_ES": "Si un hombre instruido oye una palabra sabia, la aprueba y le añade algo de lo suyo; si la oye un alocado, le desagrada, y la echa detrás de sus espaldas.",
+        "CEI": "Se un assennato ascolta un discorso intelligente, l'approverà e lo completerà; se l'ascolta un dissoluto, se ne dispiace e lo getta via dietro la schiena."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ἐξήγησις μωροῦ ὡς ἐν ὁδῷ φορτίον, ἐπὶ δὲ χείλους συνετοῦ εὑρεθήσεται χάρις.",
+        "VUL": "Scientia sapientis tamquam inundatio abundabit,/ et consilium illius sicut fons vitæ permanet./",
+        "SYN": "Знание мудрого увеличивается подобно наводнению, и совет его,- как источник жизни.",
+        "NEO": "Le discours de l’insensé est comme un fardeau en voyage, mais sur les lèvres de l’homme intelligent se trouve la grâce.",
+        "NAB": "A fool's chatter is like a load on a journey, but there is charm to be found upon the lips of the wise.",
+        "VAT_ES": "La conversación del necio es como una carga para el viajero, pero los labios del inteligente causan deleite.",
+        "CEI": "Il parlare dello stolto è come un fardello nel cammino, ma sulle labbra dell'intelligente si trova la grazia."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "στόμα φρονίμου ζητηθήσεται ἐν ἐκκλησίᾳ, καὶ τοὺς λόγους αὐτοῦ διανοηθήσεται ἐν καρδίᾳ.",
+        "VUL": "Cor fatui quasi vas confractum,/ et omnem sapientiam non tenebit./",
+        "SYN": "Сердце глупого подобно разбитому сосуду и не удержит в себе никакого знания.",
+        "NEO": "On recherche dans l’assemblée la bouche de l’homme prudent, et on médite ses paroles dans son cœur.",
+        "NAB": "The views of a prudent man are sought in an assembly, and his words are considered with care.",
+        "VAT_ES": "La opinión del prudente es requerida en la asamblea, y todos reflexionan sobre sus palabras.",
+        "CEI": "La parola del prudente è ricercata nell'assemblea; si rifletterà seriamente sui suoi discorsi."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "ὡς οἶκος ἠφανισμένος οὕτως μωρῷ σοφία, καὶ γνῶσις ἀσυνέτου ἀδιεξέταστοι λόγοι.",
+        "VUL": "Verbum sapiens quodcumque audierit scius,/ laudabit, et ad se adjiciet :/ audivit luxuriosus, et displicebit illi,/ et projiciet illud post dorsum suum./",
+        "SYN": "Если мудрое слово услышит разумный, то он похвалит его и приложит к себе. Услышал его легкомысленный, и оно не понравилось ему, и он бросил его за себя.",
+        "NEO": "La sagesse est pour le sot comme une maison en ruines, et la science de l’insensé n’est que paroles incohérentes.",
+        "NAB": "Like a house in ruins is wisdom to a fool; the stupid man knows it only as inscrutable words.",
+        "VAT_ES": "Como una casa derruida es la sabiduría para el necio, y la ciencia del insensato es una serie de incoherencias.",
+        "CEI": "Come casa in rovina, così la sapienza per lo stolto; scienza dell'insensato i discorsi incomprensibili."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "πέδαι ἐν ποσὶν ἀνοήτοις παιδεία, καὶ ὡς χειροπέδαι ἐπὶ χειρὸς δεξιᾶς.",
+        "VUL": "Narratio fatui quasi sarcina in via :/ nam in labiis sensati invenietur gratia./",
+        "SYN": "Речь глупого - как бремя в пути, в устах же разумного находят приятность.",
+        "NEO": "L’instruction est pour les insensés comme des chaînes aux pieds, et des menottes à la main droite.",
+        "NAB": "Like fetters on the legs is learning to a fool, like a manacle on his right hand.",
+        "VAT_ES": "La instrucción es para el tonto como un cepo en los pies y como esposas en su mano derecha.",
+        "CEI": "Ceppi ai piedi è la disciplina per l'insensato e come manette nella sua destra."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "μωρὸς ἐν γέλωτι ἀνυψοῖ φωνὴν αὐτοῦ, ἀνὴρ δὲ πανοῦργος μόλις ἡσυχῇ μειδιάσει.",
+        "VUL": "Os prudentis quæritur in ecclesia,/ et verba illius cogitabunt in cordibus suis./",
+        "SYN": "Речей разумного будут искать в собрании, и о словах его будут размышлять в сердце.",
+        "NEO": "Le sot, quand il rit, fait éclater sa voix, mais l’homme habile sourit à peine tout bas.",
+        "NAB": "A fool raises his voice in laughter, but the prudent man at the most smiles gently.",
+        "VAT_ES": "El necio se ríe a carcajadas, pero el hombre sagaz sonríe apenas y sin estrépito.",
+        "CEI": "Lo stolto alza la voce mentre ride; ma l'uomo saggio sorride appena in silenzio."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "ὡς κόσμος χρυσοῦς φρονίμῳ παιδεία, καὶ ὡς χλιδὼν ἐπὶ βραχίονι δεξιῷ.",
+        "VUL": "Tamquam domus exterminata, sic fatuo sapientia :/ et scientia insensati inenarrabilia verba./",
+        "SYN": "Как разрушенный дом, так мудрость глупому, и знание неразумного - бессмысленные слова.",
+        "NEO": "L’instruction est pour l’homme sensé comme une parure d’or, et comme un bracelet au bras droit.",
+        "NAB": "Like a chain of gold is learning to a wise man, like a bracelet on his right arm.",
+        "VAT_ES": "La instrucción es para el prudente como un adorno de oro y como un brazalete en el brazo derecho.",
+        "CEI": "Ornamento d'oro è la disciplina per l'assennato; è come un monile al braccio destro."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ποὺς μωροῦ ταχὺς εἰς οἰκίαν, ἄνθρωπος δὲ πολύπειρος αἰσχυνθήσεται ἀπὸ προσώπου.",
+        "VUL": "Compedes in pedibus, stulto doctrina :/ et quasi vincula manuum super manum dextram./",
+        "SYN": "Наставление для безумных - оковы на ногах и как цепи на правой руке.",
+        "NEO": "L’insensé entre d’un pas rapide dans la maison, mais l’homme d’expérience s’arrête timidement à l’entrée.",
+        "NAB": "The fool steps boldly into a house, while the well-bred man remains outside;",
+        "VAT_ES": "El pie del necio entra rápido en la casa, pero el hombre experimentado se acerca con verg&uuml;enza.",
+        "CEI": "Il piede dello stolto si precipita verso una casa; l'uomo sperimentato si mostrerà rispettoso."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "ἄφρων ἀπὸ θύρας παρακύπτει εἰς οἰκίαν, ἀνὴρ δὲ πεπαιδευμένος ἔξω στήσεται.",
+        "VUL": "Fatuus in risu exaltat vocem suam :/ vir autem sapiens vix tacite ridebit./",
+        "SYN": "Глупый в смехе возвышает голос свой, а муж благоразумный едва тихо улыбнется.",
+        "NEO": "L’insensé se courbe dès la porte pour voir dans la maison, mais l’homme bien élevé se tient dehors.",
+        "NAB": "A boor peeps through the doorway of a house, but a cultured man keeps his glance cast down.",
+        "VAT_ES": "El necio curiosea la casa desde la puerta, pero el bien educado se queda afuera.",
+        "CEI": "Lo stolto spia dalla porta l'interno della casa; l'uomo educato se ne starà fuori."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "ἀπαιδευσία ἀνθρώπου ἀκροᾶσθαι παρὰ θύραν, ὁ δὲ φρόνιμος βαρυνθήσεται ἀτιμίᾳ.",
+        "VUL": "Ornamentum aureum prudenti doctrina,/ et quasi brachiale in brachio dextro./",
+        "SYN": "Как золотой наряд - наставление для разумного, и как драгоценное украшение на правой руке.",
+        "NEO": "C’est une grossièreté pour un homme d’écouter à la porte ; l’homme sensé s’indigne d’une action si honteuse.",
+        "NAB": "It is rude for one to listen at a door; a cultured man would be overwhelmed by the disgrace of it.",
+        "VAT_ES": "Es falta de educación escuchar junto a la puerta: al prudente se le caería la cara de verg&uuml;enza.",
+        "CEI": "È cattiva educazione d'un uomo origliare alla porta; l'uomo prudente ne resterebbe confuso."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "χείλη ἀλλοτρίων ἐν τούτοις βαρυνθήσεται, λόγοι δὲ φρονίμων ἐν ζυγῷ σταθήσονται.",
+        "VUL": "Pes fatui facilis in domum proximi :/ et homo peritus confundetur a persona potentis./",
+        "SYN": "Нога глупого спешит в чужой дом, но человек многоопытный постыдится людей;",
+        "NEO": "Les lèvres des insensés ne profèrent que sottises, mais les paroles des hommes prudents sont pesées à la balance.",
+        "NAB": "The lips of the impious talk of what is not their concern, but the words of the prudent are carefully weighed.",
+        "VAT_ES": "Los labios de los charlatanes hablan sólo de oídas, pero los prudentes pesan bien sus palabras.",
+        "CEI": "Le labbra degli stolti ripetono sciocchezze, le parole dei prudenti sono pesate sulla bilancia."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "ἐν στόματι μωρῶν ἡ καρδία αὐτῶν, καρδία δὲ σοφῶν στόμα αὐτῶν.",
+        "VUL": "Stultus a fenestra respiciet in domum :/ vir autem eruditus foris stabit./",
+        "SYN": "неразумный сквозь дверь заглядывает в дом, а человек благовоспитанный остановится вне;",
+        "NEO": "Dans la bouche des sots est leur cœur, mais le cœur des sages est leur bouche.",
+        "NAB": "Fools' thoughts are in their mouths, wise men's words are in their hearts.",
+        "VAT_ES": "Los necios hablan siempre sin pensar; los sabios piensan, y luego hablan.",
+        "CEI": "Sulla bocca degli stolti è il loro cuore, i saggi invece hanno la bocca nel cuore."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "ἐν τῷ καταρᾶσθαι ἀσεβῆ τὸν σατανᾶν αὐτὸς καταρᾶται τὴν ἑαυτοῦ ψυχήν.",
+        "VUL": "Stultitia hominis auscultare per ostium :/ et prudens gravabitur contumelia./",
+        "SYN": "невежество человека - подслушивать у дверей, благоразумный же огорчится таким бесстыдством.",
+        "NEO": "Quand l’impie maudit son adversaire, c’est lui-même qu’il maudit.",
+        "NAB": "When a godless man curses his adversary he really curses himself.",
+        "VAT_ES": "Cuando el impío maldice al adversario, se maldice a sí mismo.",
+        "CEI": "Quando un empio maledice l'avversario, maledice se stesso."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "μολύνει τὴν ἑαυτοῦ ψυχὴν ὁ ψιθυρίζων, καὶ ἐν παροικήσει μισηθήσεται.",
+        "VUL": "Labia imprudentium stulta narrabunt ;/ verba autem prudentium statera ponderabuntur./",
+        "SYN": "Уста многоречивых рассказывают чужое, а слова благоразумных взвешиваются на весах.",
+        "NEO": "Le rapporteur se souille lui-même, et il est détesté de tous ceux qui l’approchent.",
+        "NAB": "A slanderer besmirches himself, and is hated by his neighbors.",
+        "VAT_ES": "El chismoso se mancha a sí mismo, y es detestado por lo que lo rodean.",
+        "CEI": "Il maldicente danneggia se stesso e sarà detestato dal suo ambiente."
+      }
+    }
+  }
+}

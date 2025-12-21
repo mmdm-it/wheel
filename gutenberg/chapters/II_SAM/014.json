@@ -1,0 +1,609 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "II_SAM_014",
+  "book_key": "II_SAM",
+  "sequence": 14,
+  "chapter_in": {
+    "MT": 14,
+    "VUL": 14,
+    "LXX": 14
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֖דַע יוֹאָ֣ב בֶּן צְרֻיָ֑ה כִּֽי לֵ֥ב הַ/מֶּ֖לֶךְ עַל אַבְשָׁלֽוֹם׃",
+        "LXX": "καὶ ἔγνω Ἰωὰβ υἱὸς Σαρουίας ὅτι ἡ καρδία τοῦ βασιλέως ἐπὶ Ἀβεσσαλώμ.",
+        "VUL": "Intelligens autem Joab filius Sarviæ quod cor regis versum esset ad Absalom,",
+        "SYN": "И заметил Иоав, сын Саруи, что сердце царя обратилось к Авессалому.",
+        "NEO": "Joab, fils de Sarvia, s’aperçut que le cœur du roi se tournait vers Absalom.",
+        "NAB": "When Joab, son of Zeruiah, observed how the king felt toward Absalom,",
+        "VAT_ES": "Joab, hijo de Seruiá, comprendió que el rey echaba de menos a Absalón.",
+        "CEI": "Ioab figlio di Zeruià si accorse che il cuore del re era contro Assalonne."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח יוֹאָב֙ תְּק֔וֹעָ/ה וַ/יִּקַּ֥ח מִ/שָּׁ֖ם אִשָּׁ֣ה חֲכָמָ֑ה וַ/יֹּ֣אמֶר אֵ֠לֶי/הָ הִֽתְאַבְּלִי נָ֞א וְ/לִבְשִׁי נָ֣א בִגְדֵי אֵ֗בֶל וְ/אַל תָּס֨וּכִי֙ שֶׁ֔מֶן וְ/הָיִ֕ית כְּ/אִשָּׁ֗ה זֶ֚ה יָמִ֣ים רַבִּ֔ים מִתְאַבֶּ֖לֶת עַל מֵֽת׃",
+        "LXX": "καὶ ἀπέστειλεν Ἰωὰβ εἰς Θεκῶε, καὶ ἔλαβεν ἐκεῖθεν γυναῖκα σοφὴν καὶ εἶπεν πρὸς αὐτήν Πένθησον δὴ καὶ ἔνδυσαι ἱμάτια πενθικὰ καὶ μὴ ἀλείψῃ ἔλαιον, καὶ ἔσῃ ὡς γυνὴ πενθοῦσα ἐπὶ τεθνηκότι, τοῦτο ἡμέρας πολλάς·",
+        "VUL": "misit Thecuam, et tulit inde mulierem sapientem : dixitque ad eam : Lugere te simula, et induere veste lugubri, et ne ungaris oleo, ut sis quasi mulier jam plurimo tempore lugens mortuum :",
+        "SYN": "И послал Иоав в Фекою, и взял оттуда умную женщину и сказал ей: притворись плачущею и надень печальную одежду, и не мажься елеем, и представься женщиною, много дней плакавшею по умершем;",
+        "NEO": "Joab envoya chercher à Thécua une femme habile, et il lui dit : « Feins d’être dans le deuil et revêts des habits de deuil ; ne t’oins pas d’huile et sois comme une femme qui depuis longtemps est dans le deuil pour un mort.",
+        "NAB": "he sent to Tekoa and brought from there a gifted woman, to whom he said: \"Pretend to be in mourning. Put on mourning apparel and do not anoint yourself with oil, that you may appear to be a woman who has been long in mourning for a departed one.",
+        "VAT_ES": "Entonces hizo venir a Técoa a una mujer muy hábil y le dijo: «Vas a fingir que estás de duelo: vístete de luto, no te perfumes y aparenta ser una mujer que hace ya mucho tiempo está de duelo por su difunto.",
+        "CEI": "Allora mandò a chiamare a Tekòa e fece venire una donna saggia e le disse: \"Fingi di essere in lutto: mettiti una veste da lutto, non ti ungere con olio e compòrtati da donna che pianga da molto tempo un morto;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וּ/בָאת֙ אֶל הַ/מֶּ֔לֶךְ וְ/דִבַּ֥רְתְּ אֵלָ֖י/ו כַּ/דָּבָ֣ר הַ/זֶּ֑ה וַ/יָּ֧שֶׂם יוֹאָ֛ב אֶת הַ/דְּבָרִ֖ים בְּ/פִֽי/הָ׃",
+        "LXX": "καὶ ἐλεύσῃ πρὸς τὸν βασιλέα καὶ λαλήσεις πρὸς αὐτὸν κατὰ τὸ ῥῆμα τοῦτο. καὶ ἔθηκεν Ἰωὰβ τοὺς λόγους ἐν τῷ στόματι αὐτῆς.",
+        "VUL": "et ingredieris ad regem, et loqueris ad eum sermones hujuscemodi. Posuit autem Joab verba in ore ejus.",
+        "SYN": "и пойди к царю и скажи ему так и так. И вложил Иоав в уста ее, что сказать.",
+        "NEO": "Tu viendras chez le roi et tu lui tiendras ce discours... » Et Joab lui mit dans la bouche ce qu’elle devait dire.",
+        "NAB": "Then go to the king and speak to him in this manner.\" And Joab instructed her what to say.",
+        "VAT_ES": "Luego te presentarás ante el rey y le repetirás exactamente lo que yo te diga». Y Joab le explicó todo lo que debía decir.",
+        "CEI": "poi entra presso il re e parlagli così e così\". Ioab le mise in bocca le parole da dire."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ֠/תֹּאמֶר הָ/אִשָּׁ֤ה הַ/תְּקֹעִית֙ אֶל הַ/מֶּ֔לֶךְ וַ/תִּפֹּ֧ל עַל אַפֶּ֛י/הָ אַ֖רְצָ/ה וַ/תִּשְׁתָּ֑חוּ וַ/תֹּ֖אמֶר הוֹשִׁ֥עָ/ה הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ εἰσῆλθεν ἡ γυνὴ ἡ Θεκωεῖτις πρὸς τὸν βασιλέα, καὶ ἔπεσεν ἐπὶ πρόσωπον αὐτῆς εἰς τὴν γῆν καὶ προσεκύνησεν αὐτῷ καὶ εἶπεν Σῶσον, βασιλεῦ, σῶσον.",
+        "VUL": "Itaque cum ingressa fuisset mulier Thecuitis ad regem, cecidit coram eo super terram, et adoravit, et dixit : Serva me, rex.",
+        "SYN": "И вошла женщина Фекоитянка к царю и пала лицем своим на землю, и поклонилась и сказала: помоги, царь, [помоги]!",
+        "NEO": "La femme de Thécua vint parler au roi. Tombant la face contre terre et se prosternant, elle dit : « O roi, sauve-moi ! »",
+        "NAB": "So the woman of Tekoa went to the king and fell prostrate to the ground in homage, saying, \"Help, your majesty!\"",
+        "VAT_ES": "La mujer se presentó ante el rey y, postrándose con el rostro en tierra, exclamó: «&iexcl;Auxilio, rey!».",
+        "CEI": "La donna di Tekòa andò dunque dal re, si gettò con la faccia a terra, si prostrò e disse: \"Aiuto, o re!\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּֽאמֶר לָ֥/הּ הַ/מֶּ֖לֶךְ מַה לָּ֑/ךְ וַ/תֹּ֗אמֶר אֲבָ֛ל אִשָּֽׁה אַלְמָנָ֥ה אָ֖נִי וַ/יָּ֥מָת אִישִֽׁ/י׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτὴν ὁ βασιλεύς Τί ἔστιν σοι; ἡ δὲ εἶπεν Καὶ μάλα γυνὴ χήρα ἐγώ εἰμι, καὶ ἀπέθανεν ὁ ἀνήρ μου.",
+        "VUL": "Et ait ad eam rex : Quid causæ habes ? Quæ respondit : Heu, mulier vidua ego sum : mortuus est enim vir meus.",
+        "SYN": "И сказал ей царь: что тебе? И сказала она: я [давно] вдова, муж мой умер;",
+        "NEO": "Le roi lui dit : « Qu’as-tu ? » Elle répondit : « Je suis une veuve, mon mari est mort.",
+        "NAB": "The king said to her, \"What do you want?\" She replied: \"Alas, I am a widow; my husband is dead.",
+        "VAT_ES": "«&iquest;Qué te pasa, le preguntó el rey. Ella respondió: «&iexcl;Pobre de mí! Yo soy una viuda; mi marido ha muerto,",
+        "CEI": "Il re le disse: \"Che hai?\". Rispose: \"Ahimè! Io sono una vedova; mio marito è morto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וּ/לְ/שִׁפְחָֽתְ/ךָ֙ שְׁנֵ֣י בָנִ֔ים וַ/יִּנָּצ֤וּ שְׁנֵי/הֶם֙ בַּ/שָּׂדֶ֔ה וְ/אֵ֥ין מַצִּ֖יל בֵּֽינֵי/הֶ֑ם וַ/יַּכּ֧/וֹ הָ/אֶחָ֛ד אֶת הָ/אֶחָ֖ד וַ/יָּ֥מֶת אֹתֽ/וֹ׃",
+        "LXX": "καί γε τῇ δούλῃ σου δύο υἱοί, καὶ ἐμαχέσαντο ἀμφότεροι ἐν τῷ ἀγρῷ, καὶ οὐκ ἦν ὁ ἐξαιρούμενος ἀνὰ μέσον αὐτῶν, καὶ ἔπαισεν ὁ εἷς τὸν ἕνα ἀδελφὸν αὐτοῦ καὶ ἐθανάτωσεν αὐτόν.",
+        "VUL": "Et ancillæ tuæ erant duo filii : qui rixati sunt adversum se in agro, nullusque erat qui eos prohibere posset : et percussit alter alterum, et interfecit eum.",
+        "SYN": "и у рабы твоей _было_ два сына; они поссорились в поле, и некому было разнять их, и поразил один другого и умертвил его.",
+        "NEO": "Or ta servante avait deux fils ; et ils se sont tous deux querellés dans les champs ; comme il n’y avait personne pour les séparer, l’un a frappé l’autre et l’a tué.",
+        "NAB": "Your servant had two sons, who quarreled in the field. There being no one to part them, one of them struck his brother and killed him.",
+        "VAT_ES": "y tu servidora tenía dos hijos, que una vez se pelearon en el campo. Como no había nadie para separarlos, uno hirió al otro y lo mató.",
+        "CEI": "La tua schiava aveva due figli, ma i due vennero tra di loro a contesa in campagna e nessuno li separava; così uno colpì l'altro e l'uccise."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּה֩ קָ֨מָה כָֽל הַ/מִּשְׁפָּחָ֜ה עַל שִׁפְחָתֶ֗/ךָ וַ/יֹּֽאמְרוּ֙ תְּנִ֣י אֶת מַכֵּ֣ה אָחִ֗י/ו וּ/נְמִתֵ֨/הוּ֙ בְּ/נֶ֤פֶשׁ אָחִי/ו֙ אֲשֶׁ֣ר הָרָ֔ג וְ/נַשְׁמִ֖ידָה גַּ֣ם אֶת הַ/יּוֹרֵ֑שׁ וְ/כִבּ֗וּ אֶת גַּֽחַלְתִּ/י֙ אֲשֶׁ֣ר נִשְׁאָ֔רָה לְ/בִלְתִּ֧י שום שִׂים לְ/אִישִׁ֛/י שֵׁ֥ם וּ/שְׁאֵרִ֖ית עַל פְּנֵ֥י הָ/אֲדָמָֽה׃",
+        "LXX": "καὶ ἰδοὺ ἐπανέστη ὅλη ἡ πατριὰ πρὸς τὴν δούλην σου καὶ εἶπαν Δὸς τὸν παίσαντα τὸν ἀδελφὸν αὐτοῦ καὶ θανατώσομεν αὐτὸν ἀντὶ τῆς ψυχῆς τοῦ ἀδελφοῦ αὐτοῦ οὗ ἀπέκτεινεν, καὶ ἐξαροῦμεν καί γε τὸν κληρονόμον ὑμῶν· καὶ σβέσουσιν τὸν ἄνθρακά μου τὸν καταλειφθέντα ὥστε μὴ θέσθαι τῷ ἀνδρί μου κατάλειμμα καὶ ὄνομα ἐπὶ προσώπου τῆς γῆς.",
+        "VUL": "Et ecce consurgens universa cognatio adversum ancillam tuam, dicit : Trade eum qui percussit fratrem suum, ut occidamus eum pro anima fratris sui quem interfecit, et deleamus hæredem : et quærunt extinguere scintillam meam quæ relicta est, ut non supersit viro meo nomen, et reliquiæ super terram.",
+        "SYN": "И вот, восстало все родство на рабу твою, и говорят: \"отдай убийцу брата своего; мы убьем его за душу брата его, которую он погубил, и истребим даже наследника\". И так они погасят остальную искру мою, чтобы не оставить мужу моему имени и потомства на лице земли.",
+        "NEO": "Et voici que toute la famille s’est levée contre ta servante, en disant : Livre le meurtrier de son frère ; nous le ferons mourir pour la vie de son frère qu’il a tué, et nous détruirons même l’héritier ! Ils éteindront ainsi le charbon qui me reste, pour ne laisser à mon mari ni un nom ni un survivant sur la face de la terre. »",
+        "NAB": "Then the whole clan confronted your servant and demanded: 'Give up the one who killed his brother. We must put him to death for the life of his brother whom he has slain; we must extinguish the heir also.' Thus they will quench my remaining hope and leave my husband neither name nor posterity upon the earth.\"",
+        "VAT_ES": "Y ahora toda la familia se ha levantado contra tu servidora, diciendo: «Entrega al fratricida; vamos a darle muerte para vengar al hermano que él asesinó y acabar así con el heredero». De esta manera apagarán la brasa que aún me queda, privando a mi marido de un nombre y un sobreviviente sobre la faz de la tierra».",
+        "CEI": "Ed ecco tutta la famiglia è insorta contro la tua schiava dicendo: consegnaci l'uccisore del fratello, perché lo facciamo morire per vendicare il fratello che egli ha ucciso. Elimineranno così anche l'erede e spegneranno l'ultima bracia che mi è rimasta e non lasceranno a mio marito né nome, né discendenza sulla terra\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמֶר הַ/מֶּ֛לֶךְ אֶל הָ/אִשָּׁ֖ה לְכִ֣י לְ/בֵיתֵ֑/ךְ וַ/אֲנִ֖י אֲצַוֶּ֥ה עָלָֽיִ/ךְ׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεύς Ὑγιαίνουσα βάδιζε εἰς τὸν οἶκόν σου, κἀγὼ ἐντελοῦμαι περὶ σοῦ.",
+        "VUL": "Et ait rex ad mulierem : Vade in domum tuam, et ego jubebo pro te.",
+        "SYN": "И сказал царь женщине: иди спокойно домой, я дам приказание о тебе.",
+        "NEO": "Le roi dit à la femme : « Va à ta maison ; je donnerai des ordres à ton sujet. »",
+        "NAB": "The king then said to the woman: \"Go home. I will issue a command on your behalf.\"",
+        "VAT_ES": "El rey dijo a la mujer: «Vete a tu casa. Yo me encargaré de este asunto».",
+        "CEI": "Il re disse alla donna: \"Và pure a casa: io darò ordini a tuo riguardo\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֜אמֶר הָ/אִשָּׁ֤ה הַ/תְּקוֹעִית֙ אֶל הַ/מֶּ֔לֶךְ עָלַ֞/י אֲדֹנִ֥/י הַ/מֶּ֛לֶךְ הֶ/עָוֺ֖ן וְ/עַל בֵּ֣ית אָבִ֑/י וְ/הַ/מֶּ֥לֶךְ וְ/כִסְא֖/וֹ נָקִֽי׃",
+        "LXX": "καὶ εἶπεν ἡ γυνὴ ἡ Θεκωεῖτις πρὸς τὸν βασιλέα Ἐπ’ ἐμέ, κύριέ μου βασιλεῦ, ἡ ἀνομία καὶ ἐπὶ τὸν οἶκον τοῦ πατρός μου, καὶ ὁ βασιλεὺς καὶ ὁ θρόνος αὐτοῦ ἀθῷος.",
+        "VUL": "Dixitque mulier Thecuitis ad regem : In me, domine mi rex, sit iniquitas, et in domum patris mei : rex autem et thronus ejus sit innocens.",
+        "SYN": "Но женщина Фекоитянка сказала царю: на мне, господин мой царь, да будет вина и на доме отца моего, царь же и престол его неповинен.",
+        "NEO": "La femme de Thécua dit au roi : « Que ce soit sur moi, ô roi mon Seigneur, et sur la maison de mon père que la faute retombe ; que le roi et son trône n’aient pas à en souffrir ! »",
+        "NAB": "The woman of Tekoa answered him, \"Let me and my family be to blame, my lord king; you and your throne are innocent.\"",
+        "VAT_ES": "La mujer de Técoa le respondió: «&iexcl;Rey, mi señor, que la falta recaiga sobre mí y sobre la casa de mi padre! El rey y su trono están libres de culpa».",
+        "CEI": "La donna di Tekòa disse al re: \"Re mio signore, la colpa cada su di me e sulla casa di mio padre, ma il re e il suo trono sono innocenti\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֖אמֶר הַ/מֶּ֑לֶךְ הַֽ/מְדַבֵּ֤ר אֵלַ֨יִ/ךְ֙ וַֽ/הֲבֵאת֣/וֹ אֵלַ֔/י וְ/לֹֽא יֹסִ֥יף ע֖וֹד לָ/גַ֥עַת בָּֽ/ךְ׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεύς Τίς ὁ λαλῶν πρὸς σέ; καὶ ἄξεις αὐτὸν πρὸς ἐμέ, καὶ οὐ προσθήσει ἔτι ἅψασθαι αὐτοῦ.",
+        "VUL": "Et ait rex : Qui contradixerit tibi, adduc eum ad me, et ultra non addet ut tangat te.",
+        "SYN": "И сказал царь: того, кто будет против тебя, приведи ко мне, и он более не тронет тебя.",
+        "NEO": "Le roi dit : « Si quelqu’un t’inquiète encore, amène-le-moi, et il ne lui arrivera plus de te toucher. »",
+        "NAB": "Then the king said, \"If anyone says a word to you, have him brought to me, and he shall not touch you again.\"",
+        "VAT_ES": "«Al que te diga algo, añadió el rey, tráelo aquí y no volverá a molestarte más».",
+        "CEI": "E il re: \"Se qualcuno parla contro di te, conducilo da me e vedrai che non ti molesterà più\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/תֹּאמֶר֩ יִזְכָּר נָ֨א הַ/מֶּ֜לֶךְ אֶת יְהוָ֣ה אֱלֹהֶ֗י/ךָ מ/הרבית מֵ/הַרְבַּ֞ת גֹּאֵ֤ל הַ/דָּם֙ לְ/שַׁחֵ֔ת וְ/לֹ֥א יַשְׁמִ֖ידוּ אֶת בְּנִ֑/י וַ/יֹּ֨אמֶר֙ חַי יְהוָ֔ה אִם יִפֹּ֛ל מִ/שַּׂעֲרַ֥ת בְּנֵ֖/ךְ אָֽרְצָ/ה׃",
+        "LXX": "καὶ εἶπεν Μνημονευσάτω δὴ ὁ βασιλεὺς τὸν κύριον θεὸν αὐτοῦ, πληθυνθῆναι ἀγχιστέα τοῦ αἵματος τοῦ διαφθεῖραι, καὶ οὐ μὴ ἐξάρωσιν τὸν υἱόν μου· καὶ εἶπεν Ζῇ Κύριος, εἰ πεσεῖται ἀπὸ τῆς τριχὸς τοῦ υἱοῦ σου ἐπὶ τὴν γῆν.",
+        "VUL": "Quæ ait : Recordetur rex Domini Dei sui, ut non multiplicentur proximi sanguinis ad ulciscendum, et nequaquam interficiant filium meum. Qui ait : Vivit Dominus, quia non cadet de capillis filii tui super terram.",
+        "SYN": "Она сказала: помяни, царь, Господа Бога твоего, чтобы не умножились мстители за кровь и не погубили сына моего. И сказал _царь:_ жив Господь! не падет и волос сына твоего на землю.",
+        "NEO": "Elle dit : « Que le roi fasse mention de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, afin que le vengeur du sang n’augmente pas le dommage, et qu’on ne détruise pas mon fils ! » Il répondit : « Aussi vrai que \\+w Yahweh|strong=\"H3068\"\\+w** est vivant ! Il ne tombera pas à terre un cheveu de ton fils. »",
+        "NAB": "But she went on to say, \"Please, your majesty, keep in mind the LORD your God, that the avenger of blood may not go too far in destruction and that my son may not be done away with.\" He replied, \"As the LORD lives, not a hair of your son shall fall to the ground.\"",
+        "VAT_ES": "La mujer insistió: «&iexcl;Dígnese el rey pronunciar el nombre del Señor, tu Dios, para que el vengador de la sangre no aumente la desgracia, eliminando a mi hijo!». Entonces el rey declaró: «&iexcl;Por la vida del Señor, no caerá en tierra ni un solo cabello de tu hijo!».",
+        "CEI": "Riprese: \"Il re pronunzi il nome del Signore suo Dio perché il vendicatore del sangue non aumenti la disgrazia e non mi sopprimano il figlio\". Egli rispose: \"Per la vita del Signore, non cadrà a terra un capello di tuo figlio!\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר֙ הָֽ/אִשָּׁ֔ה תְּדַבֶּר נָ֧א שִׁפְחָתְ/ךָ֛ אֶל אֲדֹנִ֥/י הַ/מֶּ֖לֶךְ דָּבָ֑ר וַ/יֹּ֖אמֶר דַּבֵּֽרִי׃",
+        "LXX": "καὶ εἶπεν Λαλησάτω δὴ ἡ δούλη σου πρὸς τὸν κύριόν μου βασιλέα ῥῆμα· καὶ εἶπεν Λάλησον.",
+        "VUL": "Dixit ergo mulier : Loquatur ancilla tua ad dominum meum regem verbum. Et ait : Loquere.",
+        "SYN": "И сказала женщина: позволь рабе твоей сказать _еще_ слово господину моему царю.",
+        "NEO": "La femme dit : « Permets à ta servante, je te prie, de dire un mot à mon seigneur le roi ! » Il répondit : « Parle ! »",
+        "NAB": "The woman continued, \"Please let your servant say still another word to my lord the king.\" He replied, \"Speak.\"",
+        "VAT_ES": "La mujer siguió diciendo: «&iquest;Podría esta servidora decirle una palabra a mi señor, el rey?». «Habla», replicó él.",
+        "CEI": "Allora la donna disse: \"La tua schiava possa dire una parola al re mio signore!\". Egli rispose: \"Parla\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר֙ הָֽ/אִשָּׁ֔ה וְ/לָ֧/מָּה חָשַׁ֛בְתָּה כָּ/זֹ֖את עַל עַ֣ם אֱלֹהִ֑ים וּ/מִ/דַּבֵּ֨ר הַ/מֶּ֜לֶךְ הַ/דָּבָ֤ר הַ/זֶּה֙ כְּ/אָשֵׁ֔ם לְ/בִלְתִּ֛י הָשִׁ֥יב הַ/מֶּ֖לֶךְ אֶֽת נִדְּחֽ/וֹ׃",
+        "LXX": "καὶ εἶπεν ἡ γυνή Ἵνα τί ἐλογίσω τοιοῦτο ἐπὶ λαὸν θεοῦ; ἢ ἐκ στόματος τοῦ βασιλέως ὁ λόγος οὗτος ὡς πλημμέλεια, τοῦ μὴ ἐπιστρέψαι τὸν βασιλέα τὸν ἐξωσμένον αὐτοῦ;",
+        "VUL": "Dixitque mulier : Quare cogitasti hujuscemodi rem contra populum Dei, et locutus est rex verbum istud, ut peccet, et non reducat ejectum suum ?",
+        "SYN": "Он сказал: говори. И сказала женщина: почему ты так мыслишь против народа Божия? Царь, произнеся это слово, обвинил себя самого, потому что не возвращает изгнанника своего.",
+        "NEO": "Et la femme dit : « Pourquoi as-tu pensé ainsi à l’égard du peuple de Dieu — le roi, en prononçant ce jugement, se déclare coupable, — à savoir que le roi ne rappelle pas celui qu’il a banni.",
+        "NAB": "So the woman said: \"Why, then, do you think of this same kind of thing against the people of God? In pronouncing as he has, the king shows himself guilty, for not bringing back his own banished son.",
+        "VAT_ES": "Ella añadió: «&iquest;Por qué has pensado semejante cosa contra el pueblo de Dios? Con las palabras que acaba de pronunciar, el rey se ha confesado culpable, ya que no deja volver al que ha desterrado.",
+        "CEI": "Riprese la donna: \"Allora perché pensi così contro il popolo di Dio? Intanto il re, pronunziando questa sentenza si è come dichiarato colpevole, per il fatto che il re non fa ritornare colui che ha bandito."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כִּי מ֣וֹת נָמ֔וּת וְ/כַ/מַּ֨יִם֙ הַ/נִּגָּרִ֣ים אַ֔רְצָ/ה אֲשֶׁ֖ר לֹ֣א יֵאָסֵ֑פוּ וְ/לֹֽא יִשָּׂ֤א אֱלֹהִים֙ נֶ֔פֶשׁ וְ/חָשַׁב֙ מַֽחֲשָׁב֔וֹת לְ/בִלְתִּ֛י יִדַּ֥ח מִמֶּ֖/נּוּ נִדָּֽח׃",
+        "LXX": "ὅτι θανάτῳ ἀποθανούμεθα, καὶ ὥσπερ τὸ ὕδωρ τὸ καταφθειρόμενον ἐπὶ τῆς γῆς ὃ οὐ συναχθήσεται· καὶ λήμψεται ὁ θεὸς ψυχήν, καὶ λογιζόμενος τοῦ ἐξῶσαι ἀπ’ αὐτοῦ ἐξεωσμένον.",
+        "VUL": "Omnes morimur, et quasi aquæ dilabimur in terram, quæ non revertuntur : nec vult Deus perire animam, sed retractat cogitans ne penitus pereat qui abjectus est.",
+        "SYN": "Мы умрем и _будем_ как вода, вылитая на землю, которую нельзя собрать; но Бог не желает погубить душу и помышляет, как бы не отвергнуть от Себя и отверженного.",
+        "NEO": "Car nous mourrons certainement ; nous sommes comme les eaux répandues à terre et qui ne se rassemblent plus ; Dieu n’ôte pas la vie, et il forme le dessein que le banni ne reste pas banni de sa présence.",
+        "NAB": "We must indeed die; we are then like water that is poured out on the ground and cannot be gathered up. Yet, though God does not bring back life, he does take thought how not to banish anyone from him.",
+        "VAT_ES": "Todos tenemos que morir, y como el agua que se derrama en tierra y ya no se puede recoger. Dios no vuelve a dar la vida. Que el rey haga entonces un plan, para que el exiliado no esté más tiempo desterrado lejos de nosotros.",
+        "CEI": "Noi dobbiamo morire e siamo come acqua versata in terra, che non si può più raccogliere, e Dio non ridà la vita. Il re pensi qualche piano perché il proscritto non sia più bandito lontano da lui."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ֠/עַתָּה אֲשֶׁר בָּ֜אתִי לְ/דַבֵּ֨ר אֶל הַ/מֶּ֤לֶךְ אֲדֹנִ/י֙ אֶת הַ/דָּבָ֣ר הַ/זֶּ֔ה כִּ֥י יֵֽרְאֻ֖/נִי הָ/עָ֑ם וַ/תֹּ֤אמֶר שִׁפְחָֽתְ/ךָ֙ אֲדַבְּרָה נָּ֣א אֶל הַ/מֶּ֔לֶךְ אוּלַ֛י יַעֲשֶׂ֥ה הַ/מֶּ֖לֶךְ אֶת דְּבַ֥ר אֲמָתֽ/וֹ׃",
+        "LXX": "καὶ νῦν ὃ ἦλθον λαλῆσαι πρὸς τὸν βασιλέα κύριόν μου τὸ ῥῆμα τοῦτο, ὅτι ὄψεταί με ὁ λαός, καὶ ἐρεῖ ὁ λαός σου Λαλησάτω δὴ πρὸς τὸν βασιλέα, εἴ πως ποιήσει ὁ βασιλεὺς τὸ ῥῆμα τῆς δούλης αὐτοῦ·",
+        "VUL": "Nunc igitur veni, ut loquar ad dominum meum regem verbum hoc, præsente populo. Et dixit ancilla tua : Loquar ad regem, si quomodo faciat rex verbum ancillæ suæ.",
+        "SYN": "И теперь я пришла сказать царю, господину моему, эти слова, потому что народ пугает меня; и раба твоя сказала: поговорю я с царем, не сделает ли он по слову рабы своей;",
+        "NEO": "Maintenant, si je suis venue dire ces choses au roi mon seigneur, c’est que le peuple m’a effrayée ; et ta servante a dit : Je veux parler au roi ; peut-être le roi fera-t-il ce que dira ta servante.",
+        "NAB": "And now, if I have presumed to speak of this matter to your majesty, it is because the people have given me cause to fear. And so your servant thought: 'Let me speak to the king. Perhaps he will grant the petition of his maidservant.",
+        "VAT_ES": "Si ahora vengo a hablar de este asunto al rey, mi señor, es porque el pueblo me ha atemorizado. Por eso pensé: «Es preciso que hable con el rey, a ver si hace lo que le digo.",
+        "CEI": "Ora, se io sono venuta a parlare così al re mio signore, è perché la gente mi ha fatto paura e la tua schiava ha detto: Voglio parlare al re; forse il re farà quanto gli dirà la sua schiava;"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "כִּ֚י יִשְׁמַ֣ע הַ/מֶּ֔לֶךְ לְ/הַצִּ֥יל אֶת אֲמָת֖/וֹ מִ/כַּ֣ף הָ/אִ֑ישׁ לְ/הַשְׁמִ֨יד אֹתִ֤/י וְ/אֶת בְּנִ/י֙ יַ֔חַד מִֽ/נַּחֲלַ֖ת אֱלֹהִֽים׃",
+        "LXX": "ὅτι ἀκούσει ὁ βασιλεύς· ῥυσάσθω τὴν δούλην αὐτοῦ ἐκ χειρὸς τοῦ ἀνδρὸς τοῦ ζητοῦντος ἐξᾶραί με καὶ τὸν υἱόν μου ἀπὸ κληρονομίας θεοῦ.",
+        "VUL": "Et audivit rex, ut liberaret ancillam suam de manu omnium qui volebant de hæreditate Dei delere me, et filium meum simul.",
+        "SYN": "верно царь выслушает и избавит рабу свою от руки людей, _хотящих_ истребить меня вместе с сыном моим из наследия Божия.",
+        "NEO": "Oui, le roi écoutera, pour délivrer sa servante de la main de l’homme qui veut nous retrancher, mon fils et moi, de l’héritage de Dieu.",
+        "NAB": "For the king must surely consent to free his servant from the grasp of one who would seek to destroy me and my son as well from God's inheritance.'\"",
+        "VAT_ES": "Seguramente el rey consentirá en librarme del hombre que quiere extirparnos, a mí y a mi hijo, de la herencia de Dios».",
+        "CEI": "il re ascolterà la sua schiava e la libererà dalle mani di quelli che cercano di sopprimere me e mio figlio dalla eredità di Dio\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר֙ שִׁפְחָ֣תְ/ךָ֔ יִֽהְיֶה נָּ֛א דְּבַר אֲדֹנִ֥/י הַ/מֶּ֖לֶךְ לִ/מְנוּחָ֑ה כִּ֣י כְּ/מַלְאַ֣ךְ הָ/אֱלֹהִ֗ים כֵּ֣ן אֲדֹנִ֤/י הַ/מֶּ֨לֶךְ֙ לִ/שְׁמֹ֨עַ֙ הַ/טּ֣וֹב וְ/הָ/רָ֔ע וַֽ/יהוָ֥ה אֱלֹהֶ֖י/ךָ יְהִ֥י עִמָּֽ/ךְ׃",
+        "LXX": "καὶ εἶπεν ἡ γυνή Εἴη δὴ ὁ λόγος τοῦ κυρίου μου τοῦ βασιλέως εἰς θυσίας, ὅτι καθὼς ἄγγελος θεοῦ οὕτως ὁ κύριός μου ὁ βασιλεὺς τοῦ ἀκούειν τὸ ἀγαθὸν καὶ τὸ πονηρόν, καὶ Κύριος ὁ θεός σου ἔσται μετὰ σοῦ.",
+        "VUL": "Dicat ergo ancilla tua, ut fiat verbum domini mei regis sicut sacrificium. Sicut enim angelus Dei, sic est dominus meus rex, ut nec benedictione, nec maledictione moveatur : unde et Dominus Deus tuus est tecum.",
+        "SYN": "И сказала раба твоя: да будет слово господина моего царя в утешение мне, ибо господин мой царь, как Ангел Божий, и может выслушать и доброе и худое. И Господь Бог твой будет с тобою.",
+        "NEO": "Ta servant a dit : Que la parole de mon seigneur le roi me donne le repos ! Car mon seigneur le roi est comme un ange de Dieu, pour écouter le bien et le mal. Et que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, soit avec toi ! »",
+        "NAB": "And the woman concluded: \"Let the word of my lord the king provide a resting place; indeed, my lord the king is like an angel of God, evaluating good and bad. The LORD your God be with you.\"",
+        "VAT_ES": "Tu servidora pensó además: «Que la palabra del rey nos traiga la calma. Porque él es como un ángel de Dios para distinguir el bien del mal» &iexcl;Que el Señor, tu dios, esté contigo!».",
+        "CEI": "La donna concluse: \"La parola del re mio signore conceda la calma. Perché il re mio signore è come un angelo di Dio per distinguere il bene e il male. Il Signore tuo Dio sia con te!\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַן הַ/מֶּ֗לֶךְ וַ/יֹּ֨אמֶר֙ אֶל הָ֣/אִשָּׁ֔ה אַל נָ֨א תְכַחֲדִ֤י מִמֶּ֨/נִּי֙ דָּבָ֔ר אֲשֶׁ֥ר אָנֹכִ֖י שֹׁאֵ֣ל אֹתָ֑/ךְ וַ/תֹּ֨אמֶר֙ הָֽ/אִשָּׁ֔ה יְדַבֶּר נָ֖א אֲדֹנִ֥/י הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ ἀπεκρίθη ὁ βασιλεὺς καὶ εἶπεν πρὸς τὴν γυναῖκα Μὴ δὴ κρύψῃς ἀπ’ ἐμοῦ ῥῆμα ὃ ἐγὼ ἐπερωτῶ σε· καὶ εἶπεν ἡ γυνή Λαλησάτω δὴ ὁ κύριός μου ὁ βασιλεύς.",
+        "VUL": "Et respondens rex, dixit ad mulierem : Ne abscondas a me verbum quod te interrogo. Dixitque ei mulier : Loquere, domine mi rex.",
+        "SYN": "И отвечал царь и сказал женщине: не скрой от меня, о чем я спрошу тебя. И сказала женщина: говори, господин мой царь.",
+        "NEO": "Le roi répondit et dit à la femme : « Ne me cache rien de ce que je vais te demander. » La femme dit : « Que mon seigneur le roi parle ! »",
+        "NAB": "The king answered the woman, \"Now do not conceal from me anything I may ask you!\" The woman said, \"Let my lord the king speak.\"",
+        "VAT_ES": "Entonces el rey tomó la palabra y dijo a la mujer: «Por favor, no me ocultes nada de lo que te voy a preguntar». La mujer respondió: «Dígnese hablar mi señor, el rey».",
+        "CEI": "Il re rispose e disse alla donna: \"Non tenermi nascosto nulla di quello che io ti domanderò\". La donna disse: \"Parli pure il re mio signore\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר הַ/מֶּ֔לֶךְ הֲ/יַ֥ד יוֹאָ֛ב אִתָּ֖/ךְ בְּ/כָל זֹ֑את וַ/תַּ֣עַן הָ/אִשָּׁ֣ה וַ/תֹּ֡אמֶר חֵֽי נַפְשְׁ/ךָ֩ אֲדֹנִ֨/י הַ/מֶּ֜לֶךְ אִם אִ֣שׁ לְ/הֵמִ֣ין וּ/לְ/הַשְׂמִ֗יל מִ/כֹּ֤ל אֲשֶׁר דִּבֶּר֙ אֲדֹנִ֣/י הַ/מֶּ֔לֶךְ כִּֽי עַבְדְּ/ךָ֤ יוֹאָב֙ ה֣וּא צִוָּ֔/נִי וְ/ה֗וּא שָׂ֚ם בְּ/פִ֣י שִׁפְחָֽתְ/ךָ֔ אֵ֥ת כָּל הַ/דְּבָרִ֖ים הָ/אֵֽלֶּה׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεύς Μὴ ἡ χεὶρ Ἰωὰβ ἐν παντὶ τούτῳ μετὰ σοῦ; καὶ εἶπεν ἡ γυνὴ τῷ βασιλεῖ Ζῇ ἡ ψυχή σου, κύριέ μου βασιλεῦ, εἰ ἔστιν εἰς τὰ δεξιὰ ἢ εἰς τὰ ἀριστερὰ ἐκ πάντων ὧν ἐλάλησεν ὁ κύριός μου ὁ βασιλεύς· ὅτι ὁ δοῦλός σου Ἰωὰβ αὐτὸς ἐνετείλατό μοι, καὶ αὐτὸς ἔθετο ἐν τῷ στόματι τῆς δούλης σου πάντας τοὺς λόγους τούτους·",
+        "VUL": "Et ait rex : Numquid manus Joab tecum est in omnibus istis ? Respondit mulier, et ait : Per salutem animæ tuæ, domine mi rex, nec ad sinistram, nec ad dexteram est ex omnibus his quæ locutus est dominus meus rex : servus enim tuus Joab, ipse præcepit mihi, et ipse posuit in os ancillæ tuæ omnia verba hæc.",
+        "SYN": "И сказал царь: не рука ли Иоава во всем этом с тобою? И отвечала женщина и сказала: да живет душа твоя, господин мой царь; ни направо, ни налево нельзя уклониться от того, что сказал господин мой, царь; точно, раб твой Иоав приказал мне, и он вложил в уста рабы твоей все эти слова;",
+        "NEO": "Et le roi dit : « La main de Joab est-elle avec toi dans tout cela ? » La femme répondit : « Aussi vrai que ton âme est vivante, ô mon seigneur le roi, il est impossible d’aller à droite ou à gauche de tout ce que dit mon seigneur le roi. Oui, c’est ton serviteur Joab qui m’a donné des ordres et qui a mis toutes ces paroles dans la bouche de ta servante.",
+        "NAB": "So the king asked, \"Is Joab involved with you in all this?\" And the woman answered: \"As you live, my lord the king, it is just as your majesty has said, and not otherwise. It was your servant Joab who instructed me and told your servant all these things she was to say.",
+        "VAT_ES": "El rey continuó diciendo: «&iquest;No está la mano de Joab detrás de todo esto?». La mujer asintió: «&iexcl;Por tu vida, mi señor y rey, tu pregunta ha dado justo en el blanco! Sí, tu servidor Joab es el que me mandó y puso todas estas palabras en boca de tu servidora.",
+        "CEI": "Disse il re: \"La mano di Ioab non è forse con te in tutto questo?\". La donna rispose: \"Per la tua vita, o re mio signore, non si può andare né a destra né a sinistra di quanto ha detto il re mio signore! Proprio il tuo servo Ioab mi ha dato questi ordini e ha messo tutte queste parole in bocca alla tua schiava."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "לְ/בַ/עֲב֤וּר סַבֵּב֙ אֶת פְּנֵ֣י הַ/דָּבָ֔ר עָשָׂ֛ה עַבְדְּ/ךָ֥ יוֹאָ֖ב אֶת הַ/דָּבָ֣ר הַ/זֶּ֑ה וַ/אדֹנִ֣/י חָכָ֗ם כְּ/חָכְמַת֙ מַלְאַ֣ךְ הָ/אֱלֹהִ֔ים לָ/דַ֖עַת אֶֽת כָּל אֲשֶׁ֥ר בָּ/אָֽרֶץ׃",
+        "LXX": "ἕνεκεν τοῦ περιελθεῖν τὸ πρόσωπον τοῦ ῥήματος τούτου ὃ ἐποίησεν ὁ δοῦλός σου Ἰωάβ, τὸν δόλον τοῦτον· καὶ ὁ κύριός μου σοφὸς καθὼς σοφία ἀγγέλου τοῦ θεοῦ, τοῦ γνῶναι πάντα τὰ ἐν τῇ γῇ.",
+        "VUL": "Ut verterem figuram sermonis hujus, servus tuus Joab præcepit istud : tu autem, domine mi rex, sapiens es, sicut habet sapientiam angelus Dei, ut intelligas omnia super terram.",
+        "SYN": "чтобы притчею дать делу такой вид, раб твой Иоав научил меня; но господин мой [царь] мудр, как мудр Ангел Божий, чтобы знать все, что на земле.",
+        "NEO": "C’est pour détourner l’aspect de la chose que ton serviteur Joab a fait cela ; mais mon seigneur est aussi sage qu’un ange de Dieu, pour connaître tout ce qui se passe sur la terre. »",
+        "NAB": "Your servant Joab did this to come at the issue in a roundabout way. But my lord is as wise as an angel of God, so that he knows all things on earth.\"",
+        "VAT_ES": "Lo hizo para no encarar el asunto de frente. Pero mi señor posee la sabiduría de un ángel de Dios y sabe todo lo que pasa en la tierra».",
+        "CEI": "Per dare alla cosa un'altra faccia, il tuo servo Ioab ha agito così; ma il mio signore ha la saggezza di un angelo di Dio e sa quanto avviene sulla terra\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר הַ/מֶּ֨לֶךְ֙ אֶל יוֹאָ֔ב הִנֵּה נָ֥א עָשִׂ֖יתִי אֶת הַ/דָּבָ֣ר הַ/זֶּ֑ה וְ/לֵ֛ךְ הָשֵׁ֥ב אֶת הַ/נַּ֖עַר אֶת אַבְשָׁלֽוֹם׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεὺς πρὸς Ἰωάβ Ἰδοὺ δὴ ἐποίησά σοι κατὰ τὸν λόγον σου τοῦτον· ἐπίστρεψον τὸ παιδάριον τὸν Ἀβεσσαλώμ.",
+        "VUL": "Et ait rex ad Joab : Ecce placatus feci verbum tuum : vade ergo, et revoca puerum Absalom.",
+        "SYN": "И сказал царь Иоаву: вот, я сделал [по слову твоему]; пойди же, возврати отрока Авессалома.",
+        "NEO": "Le roi dit à Joab : « Voici, je vais faire cela ; va donc, ramène le jeune homme Absalom. »",
+        "NAB": "Then the king said to Joab: \"I hereby grant this request. Go, therefore, and bring back young Absalom.\"",
+        "VAT_ES": "Luego el rey dijo a Joab: «Está bien. Haré lo que has pedido: ve a traer al joven Absalón».",
+        "CEI": "Allora il re disse a Ioab: \"Ecco, voglio fare quello che hai chiesto; và dunque e fà tornare il giovane Assalonne\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּפֹּל֩ יוֹאָ֨ב אֶל פָּנָ֥י/ו אַ֛רְצָ/ה וַ/יִּשְׁתַּ֖חוּ וַ/יְבָ֣רֶךְ אֶת הַ/מֶּ֑לֶךְ וַ/יֹּ֣אמֶר יוֹאָ֡ב הַ/יּוֹם֩ יָדַ֨ע עַבְדְּ/ךָ֜ כִּי מָצָ֨אתִי חֵ֤ן בְּ/עֵינֶ֨י/ךָ֙ אֲדֹנִ֣/י הַ/מֶּ֔לֶךְ אֲשֶׁר עָשָׂ֥ה הַ/מֶּ֖לֶךְ אֶת דְּבַ֥ר עבד/ו עַבְדֶּֽ/ךָ׃",
+        "LXX": "καὶ ἔπεσεν Ἰωὰβ ἐπὶ πρόσωπον αὐτοῦ ἐπὶ τὴν γῆν καὶ προσεκύνησεν καὶ εὐλόγησεν τὸν βασιλέα, καὶ εἶπεν Ἰωάβ Σήμερον ἔγνω ὁ δοῦλός σου ὅτι εὗρον χάριν ἐν ὀφθαλμοῖς σου, κύριέ μου βασιλεῦ, ὅτι ἐποίησεν ὁ κύριός μου ὁ βασιλεὺς τὸν λόγον τοῦ δούλου αὐτοῦ.",
+        "VUL": "Cadensque Joab super faciem suam in terram, adoravit, et benedixit regi : et dixit Joab : Hodie intellexit servus tuus quia inveni gratiam in oculis tuis, domine mi rex : fecisti enim sermonem servi tui.",
+        "SYN": "Тогда Иоав пал лицем на землю и поклонился, и благословил царя и сказал: теперь знает раб твой, что обрел благоволение пред очами твоими, господин мой царь, так как царь сделал по слову раба своего.",
+        "NEO": "Joab tomba la face contre terre et se prosterna, et il bénit le roi ; puis Joab dit : « Ton serviteur connaît aujourd’hui que j’ai trouvé grâce à tes yeux, ô roi, mon seigneur, puisque le roi agit selon la parole de son serviteur. »",
+        "NAB": "Falling prostrate to the ground in homage and blessing the king, Joab said, \"This day I know that I am in good favor with you, my lord the king, since the king has granted the request of his servant.\"",
+        "VAT_ES": "Joab cayó con el rostro en tierra, bendijo al rey y dijo: «Rey, mi señor, ahora sé que cuento con tu favor, porque has accedido a mi demanda».",
+        "CEI": "Ioab si gettò con la faccia a terra, si prostrò, benedisse il re e disse: \"Oggi il tuo servo sa di aver trovato grazia ai tuoi occhi, re mio signore, poiché il re ha fatto quello che il suo servo gli ha chiesto\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥קָם יוֹאָ֖ב וַ/יֵּ֣לֶךְ גְּשׁ֑וּרָ/ה וַ/יָּבֵ֥א אֶת אַבְשָׁל֖וֹם יְרוּשָׁלִָֽם׃",
+        "LXX": "καὶ ἀνέστη Ἰωὰβ καὶ ἐπορεύθη εἰς Γεδσούρ, καὶ ἤγαγεν τὸν Ἀβεσσαλὼμ εἰς Ἰερουσαλήμ.",
+        "VUL": "Surrexit ergo Joab et abiit in Gessur, et adduxit Absalom in Jerusalem.",
+        "SYN": "И встал Иоав, и пошел в Гессур, и привел Авессалома в Иерусалим.",
+        "NEO": "Et Joab, s’étant levé, alla à Gessur, et il ramena Absalom à Jérusalem.",
+        "NAB": "Joab then went off to Geshur and brought Absalom to Jerusalem.",
+        "VAT_ES": "Después Joab partió para Guesur y trajo a Absalón a Jerusalén.",
+        "CEI": "Ioab dunque si alzò, andò a Ghesùr e condusse Assalonne a Gerusalemme."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר הַ/מֶּ֨לֶךְ֙ יִסֹּ֣ב אֶל בֵּית֔/וֹ וּ/פָנַ֖/י לֹ֣א יִרְאֶ֑ה וַ/יִּסֹּ֤ב אַבְשָׁלוֹם֙ אֶל בֵּית֔/וֹ וּ/פְנֵ֥י הַ/מֶּ֖לֶךְ לֹ֥א רָאָֽה׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεύς Ἀποστραφήτω εἰς τὸν οἶκον αὐτοῦ, καὶ τό πρόσωπόν μου μὴ βλεπέτω· καὶ ἀπέστρεψεν Ἀβεσσαλὼμ εἰς τὸν οἶκον αὐτοῦ, καὶ τὸ πρόσωπον τοῦ βασιλέως οὐκ εἶδεν.",
+        "VUL": "Dixit autem rex : Revertatur in domum suam, et faciem meam non videat. Reversus est itaque Absalom in domum suam, et faciem regis non vidit.",
+        "SYN": "И сказал царь: пусть он возвратится в дом свой, а лица моего не видит. И пошел Авессалом в свой дом, а лица царского не видал.",
+        "NEO": "Mais le roi dit : « Qu’il se retire dans sa maison, et qu’il ne voie pas ma face. » Et Absalom se retira dans sa maison, et il ne vit pas la face du roi.",
+        "NAB": "But the king said, \"Let him go to his own house; he shall not appear before me.\" So Absalom went off to his house and did not appear before the king.",
+        "VAT_ES": "Pero el rey dijo: «Que se retire a su casa y no venga a verme». Absalón se retiró a su casa y no se presentó ante el rey.",
+        "CEI": "Ma il re disse: \"Si ritiri in casa e non veda la mia faccia\". Così Assalonne si ritirò in casa e non vide la faccia del re."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וּ/כְ/אַבְשָׁל֗וֹם לֹא הָיָ֧ה אִישׁ יָפֶ֛ה בְּ/כָל יִשְׂרָאֵ֖ל לְ/הַלֵּ֣ל מְאֹ֑ד מִ/כַּ֤ף רַגְל/וֹ֙ וְ/עַ֣ד קָדְקֳד֔/וֹ לֹא הָ֥יָה ב֖/וֹ מֽוּם׃",
+        "LXX": "καὶ ὡς Ἀβεσσαλὼμ οὐκ ἦν ἀνὴρ ἐν παντὶ Ἰσραὴλ αἰνετὸς σφόδρα· ἀπὸ ἴχνους ποδὸς αὐτοῦ καὶ ἕως κορυφῆς αὐτοῦ οὐκ ἦν ἐν αὐτῷ μῶμος.",
+        "VUL": "Porro sicut Absalom, vir non erat pulcher in omni Israël, et decorus nimis : a vestigio pedis usque ad verticem non erat in eo ulla macula.",
+        "SYN": "Не было во всем Израиле мужчины столь красивого, как Авессалом, и столько хвалимого, как он; от подошвы ног до верха головы его не было у него недостатка.",
+        "NEO": "Dans tout Israël il n’y avait pas un homme aussi renommé qu’Absalom pour sa beauté ; de la plante du pied au sommet de la tête, il n’y avait en lui aucun défaut.",
+        "NAB": "In all Israel there was not a man who could so be praised for his beauty as Absalom, who was without blemish from the sole of his foot to the crown of his head.",
+        "VAT_ES": "No había en todo Israel un hombre más apuesto que Absalón, ni tan elogiado como él: desde la planta de los pies hasta la cabeza, no tenía ningún defecto.",
+        "CEI": "Ora in tutto Israele non vi era uomo che fosse tanto lodato per la sua bellezza quanto Assalonne; dalle piante dei piedi alla cima del capo, non vi era in lui un difetto alcuno."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וּֽ/בְ/גַלְּח/וֹ֮ אֶת רֹאשׁ/וֹ֒ וְֽ֠/הָיָה מִ/קֵּ֨ץ יָמִ֤ים לַ/יָּמִים֙ אֲשֶׁ֣ר יְגַלֵּ֔חַ כִּֽי כָבֵ֥ד עָלָ֖י/ו וְ/גִלְּח֑/וֹ וְ/שָׁקַל֙ אֶת שְׂעַ֣ר רֹאשׁ֔/וֹ מָאתַ֥יִם שְׁקָלִ֖ים בְּ/אֶ֥בֶן הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ ἐν τῷ κείρεσθαι αὐτὸν τὴν κεφαλὴν αὐτοῦ, καὶ ἐγένετο ἀπ’ ἀρχῆς ἡμερῶν εἰς ἡμέρας ὡς ἂν ἐκείρετο, ὅτι κατεβαρύνετο ἐπ’ αὐτόν, καὶ κειρόμενος αὐτὴν ἔστησεν τὴν τρίχα τῆς κεφαλῆς αὐτοῦ διακοσίους σίκλους ἐν τῷ σίκλῳ τῷ βασιλικῷ.",
+        "VUL": "Et quando tondebat capillum (semel autem in anno tondebatur, quia gravabat eum cæsaries), ponderabat capillos capitis sui ducentis siclis, pondere publico.",
+        "SYN": "Когда он стриг голову свою, -- а он стриг ее каждый год, потому что она отягощала его, -- то волоса с головы его весили двести сиклей по весу царскому.",
+        "NEO": "Lorsqu’il se rasait la tête, — c’était chaque année qu’il le faisait ; lorsque sa chevelure lui pesait, il la rasait — le poids des cheveux de sa tête était de deux cents sicles, poids du roi.",
+        "NAB": "When he shaved his head - which he used to do at the end of every year, because his hair became too heavy for him - the hair weighed two hundred shekels according to the royal standard.",
+        "VAT_ES": "Cuando se cortaba la cabellera –y lo hacía cada año, porque le resultaba demasiado pesada– el pelo cortado pesaba doscientos siclos, según la medida del rey.",
+        "CEI": "Quando si faceva tagliare i capelli, e se li faceva tagliare ogni anno perché la capigliatura gli pesava troppo, egli pesava i suoi capelli e il peso era di duecento sicli a peso del re."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יִּֽוָּלְד֤וּ לְ/אַבְשָׁלוֹם֙ שְׁלוֹשָׁ֣ה בָנִ֔ים וּ/בַ֥ת אַחַ֖ת וּ/שְׁמָ֣/הּ תָּמָ֑ר הִ֣יא הָיְתָ֔ה אִשָּׁ֖ה יְפַ֥ת מַרְאֶֽה׃",
+        "LXX": "καὶ ἐτέχθησαν τῷ Ἀβεσσαλὼμ τρεῖς υἱοὶ καὶ θυγάτηρ μία, καὶ ὄνομα αὐτῇ Θημάρ· αὕτη ἦν γυνὴ καλὴ σφόδρα, καὶ γίνεται γυνὴ τῷ Ῥοβοὰμ υἱῷ Σαλωμὼν καὶ τίκτει αὐτῷ τὸν Ἀβιαθάρ.",
+        "VUL": "Nati sunt autem Absalom filii tres, et filia una nomine Thamar, elegantis formæ.",
+        "SYN": "И родились у Авессалома три сына и одна дочь, по имени Фамарь; она была женщина красивая [и сделалась женою Ровоама, сына Соломонова, и родила ему Авию].",
+        "NEO": "Il naquit à Absalom trois fils et une fille nommée Thamar ; c’était une femme de belle figure.",
+        "NAB": "Absalom had three sons born to him, besides a daughter named Tamar, who was a beautiful woman.",
+        "VAT_ES": "A Absalón le nacieron tres hijos y una hija, llamada Tamar, que era muy hermosa.",
+        "CEI": "Ad Assalonne nacquero tre figli e una figlia chiamata Tamàr, che era donna di bell'aspetto."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֧שֶׁב אַבְשָׁל֛וֹם בִּ/ירוּשָׁלִַ֖ם שְׁנָתַ֣יִם יָמִ֑ים וּ/פְנֵ֥י הַ/מֶּ֖לֶךְ לֹ֥א רָאָֽה׃",
+        "LXX": "Καὶ ἐκάθισεν Ἀβεσσαλὼμ ἐν Ἰερουσαλὴμ δύο ἔτη ἡμερῶν καὶ τὸ πρόσωπον τοῦ βασιλέως οὐκ εἶδεν.",
+        "VUL": "Mansitque Absalom in Jerusalem duobus annis, et faciem regis non vidit.",
+        "SYN": "И оставался Авессалом в Иерусалиме два года, а лица царского не видал.",
+        "NEO": "Absalom demeura deux ans à Jérusalem sans voir la face du roi.",
+        "NAB": "Absalom lived in Jerusalem for two years without appearing before the king.",
+        "VAT_ES": "Absalón estuvo tres años en Jerusalén sin ver al rey.",
+        "CEI": "Assalonne abitò in Gerusalemme due anni, senza vedere la faccia del re."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֨ח אַבְשָׁל֜וֹם אֶל יוֹאָ֗ב לִ/שְׁלֹ֤חַ אֹת/וֹ֙ אֶל הַ/מֶּ֔לֶךְ וְ/לֹ֥א אָבָ֖ה לָ/ב֣וֹא אֵלָ֑י/ו וַ/יִּשְׁלַ֥ח עוֹד֙ שֵׁנִ֔ית וְ/לֹ֥א אָבָ֖ה לָ/בֽוֹא׃",
+        "LXX": "καὶ ἀπέστειλεν Ἀβεσσαλὼμ πρὸς Ἰωὰβ ἀποστεῖλαι αὐτὸν πρὸς τὸν βασιλέα, καὶ οὐκ ἠθέλησεν ἐλθεῖν πρὸς αὐτόν· καὶ ἀπέστειλεν ἐκ δευτέρου πρὸς αὐτόν, καὶ οὐκ ἠθέλησεν παραγενέσθαι.",
+        "VUL": "Misit itaque ad Joab, ut mitteret eum ad regem : qui noluit venire ad eum. Cumque secundo misisset, et ille noluisset venire ad eum,",
+        "SYN": "И послал Авессалом за Иоавом, чтобы послать его к царю, но тот не захотел придти к нему. Послал и в другой раз; но тот не захотел придти.",
+        "NEO": "Absalom fit demander Joab pour l’envoyer vers le roi ; mais Joab ne voulut pas venir vers lui. Absalom le fit demander une seconde fois, et il ne voulut pas venir.",
+        "NAB": "Then he summoned Joab to send him to the king, but Joab would not come to him. Although he summoned him a second time, Joab refused to come.",
+        "VAT_ES": "Entonces mandó a buscar a Joab para enviarlo ante el rey, pero él no quiso venir. Lo hizo llamar por segunda vez, y tampoco quiso venir.",
+        "CEI": "Poi Assalonne convocò Ioab per mandarlo dal re; ma egli non volle andare da lui; lo convocò una seconda volta, ma Ioab non volle andare."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֶל עֲבָדָ֜י/ו רְאוּ֩ חֶלְקַ֨ת יוֹאָ֤ב אֶל יָדִ/י֙ וְ/ל/וֹ שָׁ֣ם שְׂעֹרִ֔ים לְכ֖וּ ו/הוצתי/ה וְ/הַצִּית֣וּ/הָ בָ/אֵ֑שׁ וַ/יַּצִּ֜תוּ עַבְדֵ֧י אַבְשָׁל֛וֹם אֶת הַ/חֶלְקָ֖ה בָּ/אֵֽשׁ׃",
+        "LXX": "καὶ εἶπεν πρὸς τοὺς παῖδας αὐτοῦ Ἀβεσσαλώμ Ἴδετε ἡ μερὶς ἐν ἀγρῷ τοῦ Ἰωὰβ ἐχόμενά μου, καὶ αὐτῷ κριθαὶ ἐκεῖ· πορεύεσθε καὶ ἐμπρήσατε αὐτὴν ἐν πυρί· καὶ ἐνέπρησαν αὐτὰς οἱ παῖδες Ἀβεσσαλώμ, τὴν μερίδα. καὶ παραγίνονται οἱ δοῦλοι Ἰωὰβ πρὸς αὐτὸν διερρηχότες τὰ ἱμάτια αὐτῶν καὶ εἶπαν Ἐνεπύρισαν οἱ δοῦλοι Ἀβεσσαλὼμ τὴν μερίδα ἐν πυρί.",
+        "VUL": "dixit servis suis : Scitis agrum Joab juxta agrum meum, habentem messem hordei : ite igitur, et succendite eum igni. Succenderunt ergo servi Absalom segetem igni. Et venientes servi Joab, scissis vestibus suis, dixerunt : Succenderunt servi Absalom partem agri igni.",
+        "SYN": "И сказал [Авессалом] слугам своим: видите участок поля Иоава подле моего, и у него там ячмень; пойдите, выжгите его огнем. И выжгли слуги Авессалома тот участок поля огнем. [И пришли слуги Иоава к нему, разодрав одежды свои, и сказали: слуги Авессалома выжгли участок твой огнем.]",
+        "NEO": "Absalom dit alors à ses serviteurs : « Voyez, le champ de Joab est à côté du mien ; il s’y trouve de l’orge pour lui : allez-y mettre le feu. » Et les serviteurs d’Absalom mirent le feu au champ.",
+        "NAB": "He therefore instructed his servants: \"You see Joab's field that borders mine, on which he has barley. Go, set it on fire.\" And so Absalom's servants set the field on fire. Joab's farmhands came to him with torn garments and reported to him what had been done.",
+        "VAT_ES": "Por eso, Absalón dijo a sus servidores: «Ustedes saben que Joab tiene un campo al lado del mío, donde ha sembrado cebada. Vayan a prenderle fuego». Y los servidores de Absalón incendiaron el campo.",
+        "CEI": "Allora Assalonne disse ai suoi servi: \"Vedete, il campo di Ioab è vicino al mio e vi è l'orzo; andate ed appiccatevi il fuoco!\". I servi di Assalonne appiccarono il fuoco al campo."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣קָם יוֹאָ֔ב וַ/יָּבֹ֥א אֶל אַבְשָׁל֖וֹם הַ/בָּ֑יְתָ/ה וַ/יֹּ֣אמֶר אֵלָ֔י/ו לָ֣/מָּה הִצִּ֧יתוּ עֲבָדֶ֛/ךָ אֶת הַ/חֶלְקָ֥ה אֲשֶׁר לִ֖/י בָּ/אֵֽשׁ׃",
+        "LXX": "καὶ ἀνέστη Ἰωὰβ καὶ ἦλθεν πρὸς Ἀβεσσαλὼμ εἰς τὸν οἶκον, καὶ εἶπεν πρὸς αὐτόν Ἵνα τί οἱ παῖδές σου ἐνεπύρισαν τὴν μερίδα τὴν ἐμὴν ἐν πυρί;",
+        "VUL": "Surrexitque Joab, et venit ad Absalom in domum ejus, et dixit : Quare succenderunt servi tui segetem meam igni ?",
+        "SYN": "И встал Иоав, и пришел к Авессалому в дом, и сказал ему: зачем слуги твои выжгли мой участок огнем?",
+        "NEO": "Joab se leva et, étant venu vers Absalom dans sa maison, il lui dit : « Pourquoi tes serviteurs ont-ils mis le feu au champ qui m’appartient ? »",
+        "NAB": "At this, Joab went to Absalom in his house and asked him, \"Why have your servants set my field on fire?\"",
+        "VAT_ES": "Joab fue a ver a Absalón a su casa y le dijo: «&iquest;Por qué tus servidores han incendiado el campo que me pertenece?».",
+        "CEI": "Allora Ioab si alzò, andò a casa di Assalonne e gli disse: \"Perché i tuoi servi hanno dato fuoco al mio campo?\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אַבְשָׁל֣וֹם אֶל יוֹאָ֡ב הִנֵּ֣ה שָׁלַ֣חְתִּי אֵלֶ֣י/ךָ לֵ/אמֹ֡ר בֹּ֣א הֵ֠נָּה וְ/אֶשְׁלְחָה֩ אֹתְ/ךָ֨ אֶל הַ/מֶּ֜לֶךְ לֵ/אמֹ֗ר לָ֤/מָּה בָּ֨אתִי֙ מִ/גְּשׁ֔וּר ט֥וֹב לִ֖/י עֹ֣ד אֲנִי שָׁ֑ם וְ/עַתָּ֗ה אֶרְאֶה֙ פְּנֵ֣י הַ/מֶּ֔לֶךְ וְ/אִם יֶשׁ בִּ֥/י עָוֺ֖ן וֶ/הֱמִתָֽ/נִי׃",
+        "LXX": "καὶ εἶπεν Ἀβεσσαλὼμ πρὸς Ἰωάβ Ἰδοὺ ἀπέστειλα πρὸς σὲ λέγων Ἧκε ὧδε καὶ ἀποστελῶ σε πρὸς τὸν βασιλέα λέγων Ἵνα τί ἦλθον ἐκ Γεδσούρ; ἀγαθόν μοι ἦν εἶναι ἐκεῖ· καὶ νῦν ἰδοὺ τὸ πρόσωπον τοῦ βασιλέως οὐκ εἶδον· εἰ δέ ἐστιν ἐν ἐμοὶ ἀδικία, καὶ θανάτωσόν με.",
+        "VUL": "Et respondit Absalom ad Joab : Misi ad te obsecrans ut venires ad me, et mitterem te ad regem, et diceres ei : Quare veni de Gessur ? melius mihi erat ibi esse : obsecro ergo ut videam faciem regis : quod si memor est iniquitatis meæ, interficiat me.",
+        "SYN": "И сказал Авессалом Иоаву: вот, я посылал за тобою, говоря: приди сюда, и я пошлю тебя к царю сказать: зачем я пришел из Гессура? Лучше было бы мне оставаться там. Я хочу увидеть лице царя. Если же я виноват, то убей меня.",
+        "NEO": "Absalom répondit à Joab : « Voilà que je t’avais envoyé dire : Viens ici et je t’enverrai vers le roi afin que tu lui dises : Pourquoi suis-je revenu de Gessur ? Il vaudrait mieux pour moi que j’y fusse encore. Maintenant, je veux voir la face du roi ; et, s’il y a quelque iniquité en moi, qu’il me fasse mourir ! »",
+        "NAB": "Absalom answered Joab: \"I was summoning you to come here, that I may send you to the king to say: 'Why did I come back from Geshur? I would be better off if I were still there!' Now, let me appear before the king. If I am guilty, let him put me to death.\"",
+        "VAT_ES": "Absalón replicó a Joab: «Yo te mandé a decir que vinieras, a fin de enviarte al rey con este mensaje: «&iquest;Para qué he vuelto de Guesur? &iexcl;Más me valdría estar todavía allí! Ahora quiero comparecer ante el rey, y si tengo alguna culpa, que me haga morir».",
+        "CEI": "Assalonne rispose a Ioab: \"Io ti avevo mandato a dire: Vieni qui, voglio mandarti a dire al re: Perché sono tornato da Ghesùr? Sarebbe meglio per me se fossi rimasto là. Ora voglio vedere la faccia del re e, se vi è in me colpa, mi faccia morire!\"."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֨א יוֹאָ֣ב אֶל הַ/מֶּלֶךְ֮ וַ/יַּגֶּד ל/וֹ֒ וַ/יִּקְרָ֤א אֶל אַבְשָׁלוֹם֙ וַ/יָּבֹ֣א אֶל הַ/מֶּ֔לֶךְ וַ/יִּשְׁתַּ֨חוּ ל֧/וֹ עַל אַפָּ֛י/ו אַ֖רְצָ/ה לִ/פְנֵ֣י הַ/מֶּ֑לֶךְ וַ/יִּשַּׁ֥ק הַ/מֶּ֖לֶךְ לְ/אַבְשָׁלֽוֹם׃",
+        "LXX": "καὶ εἰσῆλθεν Ἰωὰβ πρὸς τὸν βασιλέα καὶ ἀπήγγειλεν αὐτῷ, καὶ ἐκάλεσεν τὸν Ἀβεσσαλώμ. καὶ εἰσῆλθεν πρὸς τὸν βασιλέα καὶ προσεκύνησεν αὐτῷ, καὶ ἔπεσεν ἐπὶ πρόσωπον αὐτοῦ ἐπὶ τὴν γῆν καὶ κατὰ πρόσωπον τοῦ βασιλέως. καὶ κατεφίλησεν ὁ βασιλεὺς τὸν Ἀβεσσαλώμ.",
+        "VUL": "Ingressus itaque Joab ad regem, nuntiavit ei omnia : vocatusque est Absalom, et intravit ad regem, et adoravit super faciem terræ coram eo : osculatusque est rex Absalom.",
+        "SYN": "И пошел Иоав к царю и пересказал ему _это._ И позвал _царь_ Авессалома; он пришел к царю, [поклонился ему] и пал лицем своим на землю пред царем; и поцеловал царь Авессалома.",
+        "NEO": "Joab alla trouver le roi et lui rapporta ces choses. Et il appela Absalom, et celui-ci vint auprès du roi et se prosterna la face contre terre devant le roi. Et le roi baisa Absalom.",
+        "NAB": "Joab went to the king and reported this. The king then called Absalom, who came to him and in homage fell on his face to the ground before the king. Then the king kissed him.",
+        "VAT_ES": "Joab fue a ver al rey y le llevó la noticia. Entonces el rey llamó a Absalón. Este se presentó ante él, se postró con el rostro en tierra, y el lo abrazó.",
+        "CEI": "Ioab allora andò dal re e gli riferì la cosa. Il re fece chiamare Assalonne, il quale venne e si prostrò con la faccia a terra davanti a lui; il re baciò Assalonne."
+      }
+    }
+  }
+}

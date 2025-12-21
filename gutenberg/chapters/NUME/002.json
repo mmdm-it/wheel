@@ -1,0 +1,627 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_002",
+  "book_key": "NUME",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר יְהוָ֔ה אֶל מֹשֶׁ֥ה וְ/אֶֽל אַהֲרֹ֖ן לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν καὶ Ἀαρὼν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen et Aaron, dicens :",
+        "SYN": "И сказал Господь Моисею и Аарону, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses and Aaron:",
+        "VAT_ES": "El Señor dijo a Moisés y a Aarón:",
+        "CEI": "Il Signore disse ancora a Mosè e ad Aronne:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אִ֣ישׁ עַל דִּגְל֤/וֹ בְ/אֹתֹת֙ לְ/בֵ֣ית אֲבֹתָ֔/ם יַחֲנ֖וּ בְּנֵ֣י יִשְׂרָאֵ֑ל מִ/נֶּ֕גֶד סָבִ֥יב לְ/אֹֽהֶל מוֹעֵ֖ד יַחֲנֽוּ׃",
+        "LXX": "Ἄνθρωπος ἐχόμενος αὐτοῦ κατὰ τάγμα, κατὰ σημείας, κατ’ οἴκους πατριῶν αὐτῶν, παρεμβαλέτωσαν οἱ υἱοὶ Ἰσραήλ· ἐναντίοι κύκλῳ τῆς σκηνῆς τοῦ μαρτυρίου παρεμβαλοῦσιν οἱ υἱοὶ Ἰσραήλ.",
+        "VUL": "Singuli per turmas, signa, atque vexilla, et domos cognationum suarum, castrametabuntur filii Israël, per gyrum tabernaculi fderis.",
+        "SYN": "сыны Израилевы должны каждый ставить стан свой при знамени своем, при знаках семейств своих; пред скиниею собрания вокруг должны ставить стан свой.",
+        "NEO": "« Les enfants d’Israël camperont chacun près de sa bannière, sous les enseignes de leurs maisons patriarcales ; ils camperont vis-à-vis de la tente de réunion, tout autour.",
+        "NAB": "\"The Israelites shall camp, each in his own division, under the ensigns of their ancestral houses. They shall camp around the meeting tent, but at some distance from it.",
+        "VAT_ES": "Los israelitas acamparán alrededor de la Carpa del Encuentro, a una cierta distancia, cada uno junto a su estandarte, bajo las insignias de sus casas paternas.",
+        "CEI": "\"Gli Israeliti si accamperanno ciascuno vicino alla sua insegna con i simboli dei casati paterni; si accamperanno di fronte a tutti intorno alla tenda del convegno."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/הַ/חֹנִים֙ קֵ֣דְמָ/ה מִזְרָ֔חָ/ה דֶּ֛גֶל מַחֲנֵ֥ה יְהוּדָ֖ה לְ/צִבְאֹתָ֑/ם וְ/נָשִׂיא֙ לִ/בְנֵ֣י יְהוּדָ֔ה נַחְשׁ֖וֹן בֶּן עַמִּינָדָֽב׃",
+        "LXX": "Καὶ οἱ παρεμβαλόντες κατὰ νότον κατ’ ἀνατολὰς τάγμα παρεμβολῆς Ἰούδα σὺν δυνάμει αὐτῶν, καὶ ὁ ἄρχων τῶν υἱῶν Ἰούδα Ναασσὼν υἱὸς Ἀμειναδάβ·",
+        "VUL": "Ad orientem Judas figet tentoria per turmas exercitus sui : eritque princeps filiorum ejus Nahasson filius Aminadab.",
+        "SYN": "С передней стороны к востоку ставят стан: знамя стана Иудина по ополчениям их, и начальник сынов Иуды Наассон, сын Аминадава,",
+        "NEO": "A l’avant, vers l’orient, campera la bannière du camp de Juda, avec ses troupes ; le prince des fils de Juda est Nahasson, fils d’Aminadab,",
+        "NAB": "\"Encamped on the east side, toward the sunrise, shall be the divisional camp of Judah, arranged in companies. (The prince of the Judahites was Nahshon, son of Amminadab,",
+        "VAT_ES": "Al frente, sobre el lado este, acamparán los regimientos que militan bajo el estandarte de Judá. El jefe de los descendientes de Judá era Najsón, hijo de Aminadab,",
+        "CEI": "A est, verso oriente, si accamperà l'insegna del campo di Giuda con le sue schiere;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וּ/צְבָא֖/וֹ וּ/פְקֻדֵי/הֶ֑ם אַרְבָּעָ֧ה וְ/שִׁבְעִ֛ים אֶ֖לֶף וְ/שֵׁ֥שׁ מֵאֽוֹת׃",
+        "LXX": "δύναμις αὐτοῦ οἱ ἐπεσκεμμένοι τέσσαρες καὶ ἑβδομήκοντα χιλιάδες καὶ ἑξακόσιοι.",
+        "VUL": "Et omnis de stirpe ejus summa pugnantium, septuaginta quatuor millia sexcenti.",
+        "SYN": "и воинства его, вошедших в исчисление его, семьдесят четыре тысячи шестьсот;",
+        "NEO": "et son corps d’armée, d’après les hommes recensés, est de soixante-quatorze mille six cents hommes.",
+        "NAB": "and his soldiers amounted in the census to seventy-four thousand six hundred.)",
+        "VAT_ES": "y los enrolados en su regimientos, 74.6000,",
+        "CEI": "il capo dei figli di Giuda è Nacason, figlio di Amminadab, e la sua formazione è di sessantaquattromilaseicento registrati."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/הַ/חֹנִ֥ים עָלָ֖י/ו מַטֵּ֣ה יִשָּׂשכָ֑ר וְ/נָשִׂיא֙ לִ/בְנֵ֣י יִשָּׂשכָ֔ר נְתַנְאֵ֖ל בֶּן צוּעָֽר׃",
+        "LXX": "καὶ οἱ παρεμβάλλοντες ἐχόμενοι φυλῆς Ἰσσαχάρ, καὶ ὁ ἄρχων τῶν υἱῶν Ἰσσαχὰρ Ναθαναὴλ υἱὸς Σωγάρ·",
+        "VUL": "Juxta eum castrametati sunt de tribu Issachar, quorum princeps fuit Nathanaël filius Suar.",
+        "SYN": "после него ставит стан колено Иссахарово, и начальник сынов Иссахара Нафанаил, сын Цуара,",
+        "NEO": "A ses côtés campera la tribu d’Issachar ; le prince des fils d’Issachar est Nathanaël, fils de Suar,",
+        "NAB": "With Judah shall camp the tribe of Issachar (Their prince was Nethanel, son of Zuar,",
+        "VAT_ES": "A su lado, acampará la tribu de Isacar. El jefe de los descendientes de Isacar era Natanael, hijo de Suar,",
+        "CEI": "Accanto a lui si accamperà la tribù di Issacar; il capo dei figli di Issacar è Netaneel, figlio di Suar,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וּ/צְבָא֖/וֹ וּ/פְקֻדָ֑י/ו אַרְבָּעָ֧ה וַ/חֲמִשִּׁ֛ים אֶ֖לֶף וְ/אַרְבַּ֥ע מֵאֽוֹת׃",
+        "LXX": "δύναμις αὐτοῦ οἱ ἐπεσκεμμένοι τέσσαρες καὶ πεντήκοντα χιλιάδες καὶ τετρακόσιοι.",
+        "VUL": "Et omnis numerus pugnatorum ejus quinquaginta quatuor millia quadringenti.",
+        "SYN": "и воинства его, вошедших в исчисление его, пятьдесят четыре тысячи четыреста;",
+        "NEO": "et son corps d’armée, d’après les hommes recensés, est de cinquante-quatre mille quatre cents hommes.",
+        "NAB": "and his soldiers amounted in the census to fifty-four thousand four hundred.)",
+        "VAT_ES": "y los enrolados en su regimiento, 54.400.",
+        "CEI": "e la sua formazione è di cinquantaquattromilaquattrocento registrati."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "מַטֵּ֖ה זְבוּלֻ֑ן וְ/נָשִׂיא֙ לִ/בְנֵ֣י זְבוּלֻ֔ן אֱלִיאָ֖ב בֶּן חֵלֹֽן׃",
+        "LXX": "καὶ οἱ παρεμβάλλοντες ἐχόμενοι φυλῆς Ζαβουλών, καὶ ὁ ἄρχων τῶν υἱῶν Ζαβουλὼν Ἐλιὰβ υἱὸς Χαιλών·",
+        "VUL": "In tribu Zabulon princeps fuit Eliab filius Helon.",
+        "SYN": "[далее ставит стан] колено Завулона, и начальник сынов Завулона Елиав, сын Хелона,",
+        "NEO": "Puis la tribu de Zabulon ; le prince des fils de Zabulon est Eliab, fils de Hélon,",
+        "NAB": "and the tribe of Zebulun. (Their prince was Eliab, son of Helon,",
+        "VAT_ES": "También acampará la tribu de Zabulón. El jefe de los descendientes de Zabulón era Eliab, hijo de Jelón,",
+        "CEI": "Poi la tribù di Zàbulon; il capo dei figli di Zàbulon è Eliab, figlio di Chelon,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וּ/צְבָא֖/וֹ וּ/פְקֻדָ֑י/ו שִׁבְעָ֧ה וַ/חֲמִשִּׁ֛ים אֶ֖לֶף וְ/אַרְבַּ֥ע מֵאֽוֹת׃",
+        "LXX": "δύναμις αὐτῶν οἱ ἐπεσκεμμένοι ἑπτὰ καὶ πεντήκοντα χιλιάδες καὶ τετρακόσιοι.",
+        "VUL": "Omnis de stirpe ejus exercitus pugnatorum, quinquaginta septem millia quadringenti.",
+        "SYN": "и воинства его, вошедших в исчисление его, пятьдесят семь тысяч четыреста;",
+        "NEO": "et son corps d’armée, d’après les hommes recensés, est de cinquante-sept mille quatre cents hommes.",
+        "NAB": "and his soldiers amounted in the census to fifty-seven thousand four hundred.",
+        "VAT_ES": "y los enrolados en su regimiento, 57.400.",
+        "CEI": "e la sua formazione è di cinquantasettemilaquattrocento registrati."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "כָּֽל הַ/פְּקֻדִ֞ים לְ/מַחֲנֵ֣ה יְהוּדָ֗ה מְאַ֨ת אֶ֜לֶף וּ/שְׁמֹנִ֥ים אֶ֛לֶף וְ/שֵֽׁשֶׁת אֲלָפִ֥ים וְ/אַרְבַּע מֵא֖וֹת לְ/צִבְאֹתָ֑/ם רִאשֹׁנָ֖ה יִסָּֽעוּ׃",
+        "LXX": "πάντες οἱ ἐπεσκεμμένοι ἐκ τῆς παρεμβολῆς Ἰούδα ἑκατὸν ὀγδοήκοντα χιλιάδες καὶ ἑξακισχίλιοι καὶ τετρακόσιοι, σὺν δυνάμει αὐτῶν· πρῶτοι ἐξαροῦσιν.",
+        "VUL": "Universi qui in castris Judæ enumerati sunt, fuerunt centum octoginta sex millia quadringenti : et per turmas suas primi egredientur.",
+        "SYN": "всех вошедших в исчисление к стану Иуды сто восемьдесят шесть тысяч четыреста, по ополчениям их; первыми они должны отправляться.",
+        "NEO": "Total pour le camp de Juda, d’après les hommes recensés : cent quatre-vingt-six mille quatre cents hommes, selon leurs troupes. Ils se mettront en marche les premiers.",
+        "NAB": "The total number of those registered by companies in the camp of Judah was one hundred and eighty-six thousand four hundred.) These shall be first on the march.",
+        "VAT_ES": "Los enrolados en la división de Judá, agrupados por regimientos, eran en total 186.400. Ellos avanzarán a la vanguardia.",
+        "CEI": "Il totale dei registrati del campo di Giuda è di centottantaseimilaquattrocento uomini, secondo le loro schiere. Si metteranno in marcia per primi."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "דֶּ֣גֶל מַחֲנֵ֧ה רְאוּבֵ֛ן תֵּימָ֖נָ/ה לְ/צִבְאֹתָ֑/ם וְ/נָשִׂיא֙ לִ/בְנֵ֣י רְאוּבֵ֔ן אֱלִיצ֖וּר בֶּן שְׁדֵיאֽוּר׃",
+        "LXX": "Τάγμα παρεμβολῆς Ῥουβήν, πρὸς λίβα δύναμις αὐτῶν, καὶ ὁ ἄρχων τῶν υἱῶν Ῥουβὴν Ἐλισοὺρ υἱὸς Σεδιούρ·",
+        "VUL": "In castris filiorum Ruben ad meridianam plagam erit princeps Elisur filius Sedeur.",
+        "SYN": "Знамя стана Рувимова к югу, по ополчениям их, и начальник сынов Рувимовых Елицур, сын Шедеура,",
+        "NEO": "Au midi, la bannière du camp de Ruben, avec ses troupes ; le prince des fils de Ruben est Elisur, fils de Sédéur,",
+        "NAB": "\"On the south side shall be the divisional camp of Reuben, arranged in companies. (Their prince was Elizur, son of Shedeur,",
+        "VAT_ES": "Al sur, acamparán los regimientos que militan bajo el estandarte de Rubén. El jefe de los descendientes de Rubén era Elisur, hijo de Sedeur,",
+        "CEI": "A mezzogiorno starà l'insegna del campo di Ruben con le sue schiere; il capo dei figli di Ruben è Elisur, figlio di Sedeur,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/צְבָא֖/וֹ וּ/פְקֻדָ֑י/ו שִׁשָּׁ֧ה וְ/אַרְבָּעִ֛ים אֶ֖לֶף וַ/חֲמֵ֥שׁ מֵאֽוֹת׃",
+        "LXX": "δύναμις αὐτοῦ οἱ ἐπεσκεμμένοι ἓξ καὶ τεσσεράκοντα χιλιάδες καὶ πεντακόσιοι.",
+        "VUL": "Et cunctus exercitus pugnatorum ejus qui numerati sunt, quadraginta sex millia quingenti.",
+        "SYN": "и воинства его, вошедших в исчисление его, сорок шесть тысяч пятьсот;",
+        "NEO": "et son corps d’armée, d’après les hommes recensés, est de quarante-six mille cinq cents hommes.",
+        "NAB": "and his soldiers amounted in the census to forty-six thousand five hundred.)",
+        "VAT_ES": "y los enrolados en su regimientos, 46.500.",
+        "CEI": "e la sua formazione è di quarantaseimilacinquecento registrati."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/הַ/חוֹנִ֥ם עָלָ֖י/ו מַטֵּ֣ה שִׁמְע֑וֹן וְ/נָשִׂיא֙ לִ/בְנֵ֣י שִׁמְע֔וֹן שְׁלֻמִיאֵ֖ל בֶּן צוּרִֽי שַׁדָּֽי׃",
+        "LXX": "καὶ οἱ παρεμβαλόντες ἐχόμενοι αὐτοῦ φυλῆς Συμεών, καὶ ὁ ἄρχων τῶν υἱῶν Συμεὼν Σαλαμιὴλ υἱὸς Σουρισαδαί.",
+        "VUL": "Juxta eum castrametati sunt de tribu Simeon : quorum princeps fuit Salamiel filius Surisaddai.",
+        "SYN": "подле него ставит стан колено Симеоново, и начальник сынов Симеона Шелумиил, сын Цуришаддая,",
+        "NEO": "A ses côtés campera la tribu de Siméon ; le prince des fils de Siméon est Salamiel, fils de Surisaddaï,",
+        "NAB": "Beside them shall camp the tribe of Simeon (Their prince was Shelumiel, son of Zurishaddai,",
+        "VAT_ES": "A su lado, acampará la tribu de Simeón. El jefe de los descendientes de Simeón era Selumiel, hijo de Surisadai,",
+        "CEI": "Accanto a lui si accamperà la tribù di Simeone; il capo dei figli di Simeone è Selumiel, figlio di Surisaddai,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וּ/צְבָא֖/וֹ וּ/פְקֻדֵי/הֶ֑ם תִּשְׁעָ֧ה וַ/חֲמִשִּׁ֛ים אֶ֖לֶף וּ/שְׁלֹ֥שׁ מֵאֽוֹת׃",
+        "LXX": "δύναμις αὐτοῦ οἱ ἐπεσκεμμένοι ἐννέα καὶ πεντήκοντα χιλιάδες καὶ τριακόσιοι·",
+        "VUL": "Et cunctus exercitus pugnatorum ejus qui numerati sunt, quinquaginta novem millia trecenti.",
+        "SYN": "и воинства его, вошедших в исчисление его, пятьдесят девять тысяч триста;",
+        "NEO": "et son corps d’armée, d’après les hommes recensés, est de cinquante-neuf mille trois cents hommes.",
+        "NAB": "and his soldiers amounted in the census to fifty-nine thousand three hundred.)",
+        "VAT_ES": "y los enrolados en su regimiento, 59.300.",
+        "CEI": "e la sua formazione è di cinquantanovemilatrecento registrati."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/מַטֵּ֖ה גָּ֑ד וְ/נָשִׂיא֙ לִ/בְנֵ֣י גָ֔ד אֶלְיָסָ֖ף בֶּן רְעוּאֵֽל׃",
+        "LXX": "καὶ οἱ παρεμβαλόντες ἐχόμενοι αὐτοῦ φυλὴ Γάδ, καὶ ὁ ἄρχων τῶν υἱῶν Γὰδ Ἐλεισὰφ υἱὸς Ῥαγουήλ·",
+        "VUL": "In tribu Gad princeps fuit Eliasaph filius Duel.",
+        "SYN": "потом колено Гада, и начальник сынов Гада Елиасаф, сын Регуила,",
+        "NEO": "Puis la tribu de Gad ; le chef des fils de Gad est Eliasaph, fils de Duel,",
+        "NAB": "and next the tribe of Gad. (Their prince was Eliasaph, son of Reuel,",
+        "VAT_ES": "También acampará la tribu de Gad. El jefe de los descendientes de Gad era Eliasaf, hijo de Reuel,",
+        "CEI": "Poi la tribù di Gad: il capo dei figli di Gad è Eliasaf, figlio di Deuel,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וּ/צְבָא֖/וֹ וּ/פְקֻדֵי/הֶ֑ם חֲמִשָּׁ֤ה וְ/אַרְבָּעִים֙ אֶ֔לֶף וְ/שֵׁ֥שׁ מֵא֖וֹת וַ/חֲמִשִּֽׁים׃",
+        "LXX": "δύναμις αὐτοῦ οἱ ἐπεσκεμμένοι πέντε καὶ τεσσεράκοντα χιλιάδες καὶ ἑξακόσιοι καὶ πεντήκοντα.",
+        "VUL": "Et cunctus exercitus pugnatorum ejus, qui numerati sunt, quadraginta quinque millia sexcenti quinquaginta.",
+        "SYN": "и воинства его, вошедших в исчисление его, сорок пять тысяч шестьсот пятьдесят;",
+        "NEO": "et son corps d’armée, d’après les hommes recensés, est de quarante-cinq mille six cent cinquante hommes.",
+        "NAB": "and his soldiers amounted in the census to forty-five thousand six hundred and fifty.",
+        "VAT_ES": "y los enrolados en su regimiento, 45.650.",
+        "CEI": "e la sua formazione è di quarantacinquemilaseicentocinquanta registrati."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "כָּֽל הַ/פְּקֻדִ֞ים לְ/מַחֲנֵ֣ה רְאוּבֵ֗ן מְאַ֨ת אֶ֜לֶף וְ/אֶחָ֨ד וַ/חֲמִשִּׁ֥ים אֶ֛לֶף וְ/אַרְבַּע מֵא֥וֹת וַ/חֲמִשִּׁ֖ים לְ/צִבְאֹתָ֑/ם וּ/שְׁנִיִּ֖ם יִסָּֽעוּ׃",
+        "LXX": "πάντες οἱ ἐπεσκεμμένοι ἐκ τῆς παρεμβολῆς Ῥουβὴν ἑκατὸν πεντήκοντα μία χιλιάδες καὶ τετρακόσιοι καὶ πεντήκοντα, σὺν δυνάμει αὐτῶν· δεύτεροι ἐξαροῦσιν.",
+        "VUL": "Omnes qui recensiti sunt in castris Ruben, centum quinquaginta millia et mille quadringenti quinquaginta per turmas suas : in secundo loco proficiscentur.",
+        "SYN": "всех вошедших в исчисление к стану Рувима сто пятьдесят одна тысяча четыреста пятьдесят, по ополчениям их; вторыми они должны отправляться.",
+        "NEO": "Total pour le camp de Ruben, d’après les hommes recensés : cent cinquante et un mille quatre cent cinquante hommes, selon leurs troupes. Ils se mettront en marche les seconds.",
+        "NAB": "The total number of those registered by companies in the camp of Reuben was one hundred and fifty-one thousand four hundred and fifty.) These shall be second on the march.",
+        "VAT_ES": "Los enrolados en la división de Rubén, agrupados por regimientos, eran en total 151.450. Ellos avanzarán en segundo lugar.",
+        "CEI": "Il totale del campo di Ruben è di centocinquantamilaquattrocentocinquanta uomini, registrati secondo le loro schiere. Si metteranno in marcia in seconda linea."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/נָסַ֧ע אֹֽהֶל מוֹעֵ֛ד מַחֲנֵ֥ה הַ/לְוִיִּ֖ם בְּ/ת֣וֹךְ הַֽ/מַּחֲנֹ֑ת כַּ/אֲשֶׁ֤ר יַחֲנוּ֙ כֵּ֣ן יִסָּ֔עוּ אִ֥ישׁ עַל יָד֖/וֹ לְ/דִגְלֵי/הֶֽם׃",
+        "LXX": "Καὶ ἀρθήσεται ἡ σκηνὴ τοῦ μαρτυρίου, καὶ ἡ παρεμβολὴ τῶν Λευειτῶν μέσον τῶν παρεμβολῶν· ὡς καὶ παρεμβάλλουσιν, οὕτως καὶ ἐξαροῦσιν ἕκαστος ἐχόμενος καθ’ ἡγεμονίαν.",
+        "VUL": "Levabitur autem tabernaculum testimonii per officia Levitarum, et turmas eorum : quomodo erigetur, ita et deponetur. Singuli per loca et ordines suos proficiscentur.",
+        "SYN": "Когда пойдет скиния собрания, стан левитов будет в середине станов. Как стоят, так и должны идти, каждый на своем месте при знаменах своих.",
+        "NEO": "Ensuite s’avancera la tente de réunion, le camp des Lévites au milieu des autres camps. Ils suivront dans la marche l’ordre de leur campement, chacun à son rang, selon sa bannière.",
+        "NAB": "\"Then the meeting tent and the camp of the Levites shall set out in the middle of the line. As in camp, so also on the march, every man shall be in his proper place, with his own division.",
+        "VAT_ES": "La Carpa del Encuentro irá en medio de las divisiones, con el grupo de los levitas. Ellos avanzarán de la misma manera que estaban acampados, cada uno en su puesto, junto a sus insignias.",
+        "CEI": "Poi si metterà in marcia la tenda del convegno con il campo dei leviti in mezzo agli altri campi. Seguiranno nella marcia l'ordine nel quale erano accampati, ciascuno al suo posto, con la sua insegna."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "דֶּ֣גֶל מַחֲנֵ֥ה אֶפְרַ֛יִם לְ/צִבְאֹתָ֖/ם יָ֑מָּ/ה וְ/נָשִׂיא֙ לִ/בְנֵ֣י אֶפְרַ֔יִם אֱלִישָׁמָ֖ע בֶּן עַמִּיהֽוּד׃",
+        "LXX": "Τάγμα παρεμβολῆς Ἐφράιμ παρὰ θάλασσαν σὺν δυνάμει αὐτῶν, καὶ ὁ ἄρχων τῶν υἱῶν Ἐφράιμ Ἐλεισαμὰ υἱὸς Ἐμιούδ.",
+        "VUL": "Ad occidentalem plagam erunt castra filiorum Ephraim, quorum princeps fuit Elisama filius Ammiud.",
+        "SYN": "Знамя стана Ефремова по ополчениям их к западу, и начальник сынов Ефрема Елишама, сын Аммиуда,",
+        "NEO": "A l’occident, la bannière d’Ephraïm, avec ses troupes ; le prince des fils d’Ephraïm est Elisama, fils d’Ammiud,",
+        "NAB": "\"On the west side shall be the divisional camp of Ephraim, arranged in companies. (Their prince was Elishama, son of Ammihud,",
+        "VAT_ES": "Al oeste, acamparán los regimientos que militan bajo el estandarte de Efraím. El jefe de los descendientes de Efraím era Elisamá, hijo de Amihud,",
+        "CEI": "Ad occidente starà l'insegna del campo di Efraim con le sue schiere; il capo dei figli di Efraim è Elisama, figlio di Ammiud,"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וּ/צְבָא֖/וֹ וּ/פְקֻדֵי/הֶ֑ם אַרְבָּעִ֥ים אֶ֖לֶף וַ/חֲמֵ֥שׁ מֵאֽוֹת׃",
+        "LXX": "δύναμις αὐτοῦ οἱ ἐπεσκεμμένοι τεσσεράκοντα χιλιάδες καὶ πεντακόσιοι.",
+        "VUL": "Cunctus exercitus pugnatorum ejus, qui numerati sunt, quadraginta millia quingenti.",
+        "SYN": "и воинства его, вошедших в исчисление его, сорок тысяч пятьсот;",
+        "NEO": "et son corps d’armée, d’après les hommes recensés, est de quarante mille cinq cents hommes.",
+        "NAB": "and his soldiers amounted in the census to forty thousand five hundred.)",
+        "VAT_ES": "y los enrolados en su regimiento, 40.500.",
+        "CEI": "la sua formazione è di quarantamilacinquecento registrati."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/עָלָ֖י/ו מַטֵּ֣ה מְנַשֶּׁ֑ה וְ/נָשִׂיא֙ לִ/בְנֵ֣י מְנַשֶּׁ֔ה גַּמְלִיאֵ֖ל בֶּן פְּדָהצֽוּר׃",
+        "LXX": "καὶ οἱ παρεμβάλλοντες ἐχόμενοι φυλῆς Μανασσή, καὶ ὁ ἄρχων τῶν υἱῶν Μανασσὴ Γαμαλιὴλ υἱὸς Φαδασσούρ·",
+        "VUL": "Et cum eis tribus filiorum Manasse, quorum princeps fuit Gamaliel filius Phadassur.",
+        "SYN": "подле него колено Манассиино, и начальник сынов Манассии Гамалиил, сын Педацура,",
+        "NEO": "A ses côtés campera la tribu de Manassé ; le prince des fils de Manassé est Gamaliel, fils de Phadassur,",
+        "NAB": "Beside them shall camp the tribe of Manasseh (Their prince was Gamaliel, son of Pedahzur,",
+        "VAT_ES": "A su lado, acampará la tribu de Manasés. El jefe de los descendientes de Manasés era Gamaliel, hijo de Padasur,",
+        "CEI": "Accanto a lui si accamperà la tribù di Manasse; il capo dei figli di Manasse è Gamliel, figlio di Pedasur,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וּ/צְבָא֖/וֹ וּ/פְקֻדֵי/הֶ֑ם שְׁנַ֧יִם וּ/שְׁלֹשִׁ֛ים אֶ֖לֶף וּ/מָאתָֽיִם׃",
+        "LXX": "δύναμις αὐτοῦ οἱ ἐπεσκεμμένοι δύο καὶ τριάκοντα χιλιάδες καὶ τετρακόσιοι.",
+        "VUL": "Cunctusque exercitus pugnatorum ejus, qui numerati sunt, triginta duo millia ducenti.",
+        "SYN": "и воинства его, вошедших в исчисление его, тридцать две тысячи двести;",
+        "NEO": "et son corps d’armée, d’après les hommes recensés, est de trente-deux mille deux cents hommes.",
+        "NAB": "and his soldiers amounted in the census to thirty-two thousand two hundred.)",
+        "VAT_ES": "y los enrolados en su regimiento, 32.200.",
+        "CEI": "e la sua formazione è di trentaduemiladuecento registrati."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וּ/מַטֵּ֖ה בִּנְיָמִ֑ן וְ/נָשִׂיא֙ לִ/בְנֵ֣י בִנְיָמִ֔ן אֲבִידָ֖ן בֶּן גִּדְעֹנִֽי׃",
+        "LXX": "καὶ οἱ παρεμβαλόντες ἐχόμενοι φυλῆς Βενιαμείν, καὶ ὁ ἄρχων τῶν υἱῶν Βενιαμεὶν Ἀβειδὰν υἱὸς Γαδεωνεί·",
+        "VUL": "In tribu filiorum Benjamin princeps fuit Abidan filius Gedeonis.",
+        "SYN": "потом колено Вениамина, и начальник сынов Вениамина Авидан, сын Гидеония,",
+        "NEO": "Puis la tribu de Benjamin ; le prince des fils de Benjamin est Abidan, fils de Gédéon,",
+        "NAB": "and the tribe of Benjamin. (Their prince was Abidan, son of Gideoni,",
+        "VAT_ES": "También acampará la tribu de Benjamín. El jefe de los descendientes de Benjamín era Abidán, hijo de Gedeón,",
+        "CEI": "Poi la tribù di Beniamino; il capo dei figli di Beniamino è Abidan, figlio di Ghideoni,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וּ/צְבָא֖/וֹ וּ/פְקֻדֵי/הֶ֑ם חֲמִשָּׁ֧ה וּ/שְׁלֹשִׁ֛ים אֶ֖לֶף וְ/אַרְבַּ֥ע מֵאֽוֹת׃",
+        "LXX": "δύναμις αὐτοῦ οἱ ἐπεσκεμμένοι πέντε καὶ τριάκοντα χιλιάδες καὶ τετρακόσιοι.",
+        "VUL": "Et cunctus exercitus pugnatorum ejus, qui recensiti sunt, triginta quinque millia quadringenti.",
+        "SYN": "и воинства его, вошедших в исчисление его, тридцать пять тысяч четыреста;",
+        "NEO": "et son corps d’armée, d’après les hommes recensés, est de trente-cinq mille quatre cents hommes.",
+        "NAB": "and his soldiers amounted in the census to thirty-five thousand four hundred.",
+        "VAT_ES": "y los enrolados en su regimiento, 35.400.",
+        "CEI": "e la sua formazione è di trentacinquemilaquattrocento registrati."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "כָּֽל הַ/פְּקֻדִ֞ים לְ/מַחֲנֵ֣ה אֶפְרַ֗יִם מְאַ֥ת אֶ֛לֶף וּ/שְׁמֹֽנַת אֲלָפִ֥ים וּ/מֵאָ֖ה לְ/צִבְאֹתָ֑/ם וּ/שְׁלִשִׁ֖ים יִסָּֽעוּ׃",
+        "LXX": "πάντες οἱ ἐπεσκεμμένοι τῆς παρεμβολῆς Ἐφράιμ ἑκατὸν χιλιάδες καὶ ὀκτακισχίλιοι καὶ ἑκατόν, σὺν δυνάμει αὐτῶν· τρίτοι ἐξαροῦσιν.",
+        "VUL": "Omnes qui numerati sunt in castris Ephraim, centum octo millia centum per turmas suas : tertii proficiscentur.",
+        "SYN": "всех вошедших в исчисление к стану Ефрема сто восемь тысяч сто, по ополчениям их; третьими они должны отправляться.",
+        "NEO": "Total pour le camp d’Ephraïm, d’après les hommes recensés : cent huit mille et cent hommes, selon leurs troupes. Ils se mettront en marche les troisièmes.",
+        "NAB": "The total number of those registered by companies in the camp of Ephraim was one hundred and eight thousand one hundred.) These shall be third on the march.",
+        "VAT_ES": "Los enrolados en la división de Efraím, agrupados por regimientos, eran en total 108.100. Ellos avanzarán en tercer lugar.",
+        "CEI": "Il totale dei registrati del campo di Efraim è di centottomilacento uomini, secondo le loro schiere. Si metteranno in marcia in terza linea."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "דֶּ֣גֶל מַחֲנֵ֥ה דָ֛ן צָפֹ֖נָ/ה לְ/צִבְאֹתָ֑/ם וְ/נָשִׂיא֙ לִ/בְנֵ֣י דָ֔ן אֲחִיעֶ֖זֶר בֶּן עַמִּֽישַׁדָּֽי׃",
+        "LXX": "Τάγμα παρεμβολῆς Δὰν πρὸς βορρᾶν σὺν δυνάμει αὐτῶν, καὶ ὁ ἄρχων τῶν υἱῶν Δὰν Ἀχιέζερ υἱὸς Ἀμεισαδαί·",
+        "VUL": "Ad aquilonis partem castrametati sunt filii Dan : quorum princeps fuit Ahiezer filius Ammisaddai.",
+        "SYN": "Знамя стана Данова к северу, по ополчениям их, и начальник сынов Дана Ахиезер, сын Аммишаддая,",
+        "NEO": "Au nord, la bannière du camp de Dan, avec ses troupes ; le prince des fils de Dan est Ahiéser, fils d’Ammisaddaï,",
+        "NAB": "\"On the north side shall be the divisional camp of Dan, arranged in companies. (Their prince was Ahiezer, son of Ammishaddai,",
+        "VAT_ES": "Al norte, acamparán los regimientos que militan bajo el estandarte de Dan. El jefe de los descendientes de Dan era Ajiézer, hijo de Amisaddai,",
+        "CEI": "A settentrione starà l'insegna del campo di Dan con le sue schiere; il capo dei figli di Dan è Achiezer, figlio di Ammisaddai,"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וּ/צְבָא֖/וֹ וּ/פְקֻדֵי/הֶ֑ם שְׁנַ֧יִם וְ/שִׁשִּׁ֛ים אֶ֖לֶף וּ/שְׁבַ֥ע מֵאֽוֹת׃",
+        "LXX": "δύναμις αὐτοῦ οἱ ἐπεσκεμμένοι δύο καὶ ἑξήκοντα χιλιάδες καὶ πεντακόσιοι.",
+        "VUL": "Cunctus exercitus pugnatorum ejus, qui numerati sunt, sexaginta duo millia septingenti.",
+        "SYN": "и воинства его, вошедших в исчисление его, шестьдесят две тысячи семьсот;",
+        "NEO": "et son corps d’armée, d’après les hommes recensés, est de soixante-deux mille sept cents hommes.",
+        "NAB": "and his soldiers amounted in the census to sixty-two thousand seven hundred.)",
+        "VAT_ES": "y los enrolados en su regimiento, 62.700.",
+        "CEI": "e la sua formazione è di sessantaduemilasettecento registrati."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/הַ/חֹנִ֥ים עָלָ֖י/ו מַטֵּ֣ה אָשֵׁ֑ר וְ/נָשִׂיא֙ לִ/בְנֵ֣י אָשֵׁ֔ר פַּגְעִיאֵ֖ל בֶּן עָכְרָֽן׃",
+        "LXX": "καὶ οἱ παρεμβάλλοντες ἐχόμενοι αὐτοῦ φυλῆς Ἀσήρ, καὶ ὁ ἄρχων τῶν υἱῶν Ἀσὴρ Φαγαιὴλ υἱὸς Ἐχράν·",
+        "VUL": "Juxta eum fixere tentoria de tribu Aser : quorum princeps fuit Phegiel filius Ochran.",
+        "SYN": "подле него ставит стан колено Асирово, и начальник сынов Асира Пагиил, сын Охрана,",
+        "NEO": "A ses côtés campera la tribu d’Aser ; le prince des fils d’Aser est Phégiel, fils d’Ochran,",
+        "NAB": "Beside them shall camp the tribe of Asher (Their prince was Pagiel, son of Ochran,",
+        "VAT_ES": "A su lado, acampará la tribu de Aser. El jefe de los descendientes de Aser era Paguiel, hijo de Ocrán,",
+        "CEI": "Accanto a lui si accamperà la tribù di Aser; il capo dei figli di Aser è Paghiel, figlio di Ocran,"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וּ/צְבָא֖/וֹ וּ/פְקֻדֵי/הֶ֑ם אֶחָ֧ד וְ/אַרְבָּעִ֛ים אֶ֖לֶף וַ/חֲמֵ֥שׁ מֵאֽוֹת׃",
+        "LXX": "δύναμις αὐτοῦ οἱ ἐπεσκεμμένοι μία καὶ τεσσεράκοντα χιλιάδες καὶ πεντακόσιοι.",
+        "VUL": "Cunctus exercitus pugnatorum ejus, qui numerati sunt, quadraginta millia et mille quingenti.",
+        "SYN": "и воинства его, вошедших в исчисление его, сорок одна тысяча пятьсот;",
+        "NEO": "et son corps d’armée, d’après les hommes recensés, est de quarante-et-un mille cinq cents hommes.",
+        "NAB": "and his soldiers amounted in the census to forty-one thousand five hundred.)",
+        "VAT_ES": "y los enrolados en su regimiento, 41.500.",
+        "CEI": "e la sua formazione è di quarantunmilacinquecento registrati."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וּ/מַטֵּ֖ה נַפְתָּלִ֑י וְ/נָשִׂיא֙ לִ/בְנֵ֣י נַפְתָּלִ֔י אֲחִירַ֖ע בֶּן עֵינָֽן׃",
+        "LXX": "καὶ οἱ παρεμβάλλοντες ἐχόμενοι φυλῆς Νεφθαλεί, καὶ ὁ ἄρχων τῶν υἱῶν Νεφθαλεὶ Ἀχειρὲ υἱὸς Αἰνάν·",
+        "VUL": "De tribu filiorum Nephthali princeps fuit Ahira filius Enan.",
+        "SYN": "далее [ставит стан] колено Неффалима, и начальник сынов Неффалима Ахира, сын Енана,",
+        "NEO": "Puis la tribu de Nephtali ; le prince des fils de Nephtali est Ahira, fils d’Enan,",
+        "NAB": "and next the tribe of Naphtali. (Their prince was Ahira, son of Enan,",
+        "VAT_ES": "También acampará la tribu de Neftalí. El jefe de los descendientes de Neftalí era Ajirá, hijo de Enán,",
+        "CEI": "Poi la tribù di Nèftali; il capo dei figli di Nèftali è Achira, figlio di Enan,"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וּ/צְבָא֖/וֹ וּ/פְקֻדֵי/הֶ֑ם שְׁלֹשָׁ֧ה וַ/חֲמִשִּׁ֛ים אֶ֖לֶף וְ/אַרְבַּ֥ע מֵאֽוֹת׃",
+        "LXX": "δύναμις αὐτοῦ οἱ ἐπεσκεμμένοι τρεῖς καὶ πεντήκοντα χιλιάδες καὶ τετρακόσιοι.",
+        "VUL": "Cunctus exercitus pugnatorum ejus, quinquaginta tria millia quadringenti.",
+        "SYN": "и воинства его, вошедших в исчисление его, пятьдесят три тысячи четыреста;",
+        "NEO": "et son corps d’armée, d’après les hommes recensés, est de cinquante-trois mille quatre cents hommes.",
+        "NAB": "and his soldiers amounted in the census to fifty-three thousand four hundred.",
+        "VAT_ES": "y los enrolados en su regimiento, 53.400.",
+        "CEI": "e la sua formazione è di cinquantatremilaquattrocento registrati."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "כָּל הַ/פְּקֻדִים֙ לְ/מַ֣חֲנֵה דָ֔ן מְאַ֣ת אֶ֗לֶף וְ/שִׁבְעָ֧ה וַ/חֲמִשִּׁ֛ים אֶ֖לֶף וְ/שֵׁ֣שׁ מֵא֑וֹת לָ/אַחֲרֹנָ֥ה יִסְע֖וּ לְ/דִגְלֵי/הֶֽם׃",
+        "LXX": "πάντες οἱ ἐπεσκεμμένοι τῆς παρεμβολῆς Δὰν ἑκατὸν καὶ ν’ ἑπτὰ χιλιάδες καὶ ἑξακόσιοι· ἔσχατοι ἐξαροῦσιν κατὰ τάγμα αὐτῶν.",
+        "VUL": "Omnes qui numerati sunt in castris Dan, fuerunt centum quinquaginta septem millia sexcenti : et novissimi proficiscentur.",
+        "SYN": "всех вошедших в исчисление к стану Дана сто пятьдесят семь тысяч шестьсот; они должны идти последними при знаменах своих.",
+        "NEO": "Total pour le camp de Dan, d’après les hommes recensés : cent cinquante-sept mille six cents hommes. Ils se mettront en marche les derniers, selon leurs bannières. »",
+        "NAB": "The total number of those registered by companies in the camp of Dan was one hundred and fifty-seven thousand six hundred.) These shall be the last of the divisions on the march.\"",
+        "VAT_ES": "Los enrolados en la división de San eran en total 157.600. Ellos avanzarán a la retaguardia, con sus estandartes.",
+        "CEI": "Il totale dei registrati del campo di Dan è dunque centocinquantasettemilaseicento. Si metteranno in marcia per ultimi, secondo le loro insegne\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "אֵ֛לֶּה פְּקוּדֵ֥י בְנֵֽי יִשְׂרָאֵ֖ל לְ/בֵ֣ית אֲבֹתָ֑/ם כָּל פְּקוּדֵ֤י הַֽ/מַּחֲנֹת֙ לְ/צִבְאֹתָ֔/ם שֵׁשׁ מֵא֥וֹת אֶ֨לֶף֙ וּ/שְׁלֹ֣שֶׁת אֲלָפִ֔ים וַ/חֲמֵ֥שׁ מֵא֖וֹת וַ/חֲמִשִּֽׁים׃",
+        "LXX": "Αὕτη ἡ ἐπίσκεψις τῶν υἱῶν Ἰσραὴλ κατ’ οἴκους πατριῶν αὐτῶν· πᾶσα ἡ ἐπίσκεψις τῶν παρεμβολῶν σὺν ταῖς δυνάμεσιν αὐτῶν ἑξακόσιαι χιλιάδες καὶ τρισχίλιοι πεντακόσιοι πεντήκοντα.",
+        "VUL": "Hic numerus filiorum Israël, per domos cognationum suarum et turmas divisi exercitus, sexcenta tria millia quingenti quinquaginta.",
+        "SYN": "Вот вошедшие в исчисление сыны Израиля по семействам их. Всех вошедших в исчисление в станах, по ополчениям их, шестьсот три тысячи пятьсот пятьдесят.",
+        "NEO": "Tels furent les enfants d’Israël inscrits au recensement selon leurs maisons patriarcales. Total pour tous les hommes recensés, répartis en divers camps, selon leurs troupes d’armée : six cent trois mille cinq cent cinquante hommes.",
+        "NAB": "This was the census of the Israelites taken by ancestral houses. The total number of those registered by companies in the camps was six hundred and three thousand five hundred and fifty.",
+        "VAT_ES": "Estos fueron los registrados en el censo de los israelitas, por casas paternas. Los enrolados en la divisiones, agrupados por regimientos, eran en total 603.550 hombres.",
+        "CEI": "Questi sono gli Israeliti registrati secondo i loro casati paterni. Tutti gli uomini dei quali si fece il censimento e che formarono i campi secondo le loro formazioni, furono seicentotremilacinquecentocinquanta."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/הַ֨/לְוִיִּ֔ם לֹ֣א הָתְפָּקְד֔וּ בְּ/ת֖וֹךְ בְּנֵ֣י יִשְׂרָאֵ֑ל כַּ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "οἱ δὲ Λευεῖται οὐ συνεπεσκέπησαν ἐν αὐτοῖς, καθὰ ἐνετείλατο Κύριος τῷ Μωυσῇ.",
+        "VUL": "Levitæ autem non sunt numerati inter filios Israël : sic enim præceperat Dominus Moysi.",
+        "SYN": "А левиты не вошли в исчисление вместе с сынами Израиля, как повелел Господь Моисею.",
+        "NEO": "Les Lévites ne furent pas compris dans le recensement avec les enfants d’Israël, suivant que \\+w Yahweh|strong=\"H3068\"\\+w** l’avait ordonné à Moïse.",
+        "NAB": "The Levites, however, were not registered with the other Israelites, for so the LORD had commanded Moses.",
+        "VAT_ES": "Pero los levitas no fueron incluidos en el censo junto con los demás israelitas, como el Señor lo había ordenado a Moisés.",
+        "CEI": "Ma i leviti, secondo l'ordine che il Signore aveva dato a Mosè, non furono registrati nel censimento, insieme con gli Israeliti."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַֽ/יַּעֲשׂ֖וּ בְּנֵ֣י יִשְׂרָאֵ֑ל כְּ֠/כֹל אֲשֶׁר צִוָּ֨ה יְהוָ֜ה אֶת מֹשֶׁ֗ה כֵּֽן חָנ֤וּ לְ/דִגְלֵי/הֶם֙ וְ/כֵ֣ן נָסָ֔עוּ אִ֥ישׁ לְ/מִשְׁפְּחֹתָ֖י/ו עַל בֵּ֥ית אֲבֹתָֽי/ו׃",
+        "LXX": "καὶ ἐποίησαν οἱ υἱοὶ Ἰσραὴλ πάντα ὅσα συνέταξεν Κύριος τῷ Μωυσῇ· οὕτως παρενέβαλον κατὰ τάγμα αὐτῶν, καὶ οὕτως ἐξῆρον ἕκαστος ἐχόμενοι κατὰ δήμους αὐτῶν, κατ’ οἴκους πατριῶν αὐτῶν.",
+        "VUL": "Feceruntque filii Israël juxta omnia quæ mandaverat Dominus. Castrametati sunt per turmas suas, et profecti per familias ac domos patrum suorum.",
+        "SYN": "И сделали сыны Израилевы всё, что повелел Господь Моисею: так становились станами при знаменах своих и так шли каждый по племенам своим, по семействам своим.",
+        "NEO": "Et les enfants d’Israël agirent selon tout ce que \\+w Yahweh|strong=\"H3068\"\\+w** avait ordonné à Moïse. C’est ainsi qu’ils campaient, selon leurs bannières, et ainsi qu’ils se mettaient en marche, chacun selon sa famille, selon sa maison patriarcale.",
+        "NAB": "The Israelites did just as the LORD had commanded Moses; both in camp and on the march they were in their own divisions, every man according to his clan and his ancestral house.",
+        "VAT_ES": "Los israelitas hicieron todo lo que el Señor había ordenado a Moisés; acampaban junto a sus estandartes, y avanzaban cada uno con su clan y con su familia.",
+        "CEI": "Gli Israeliti agirono secondo gli ordini che il Signore aveva dato a Mosè; così si accampavano secondo le loro insegne e così si mettevano in marcia, ciascuno secondo la sua famiglia e secondo il casato dei suoi padri."
+      }
+    }
+  }
+}

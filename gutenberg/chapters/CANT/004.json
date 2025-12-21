@@ -1,0 +1,303 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "CANT_004",
+  "book_key": "CANT",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "הִנָּ֨/ךְ יָפָ֤ה רַעְיָתִ/י֙ הִנָּ֣/ךְ יָפָ֔ה עֵינַ֣יִ/ךְ יוֹנִ֔ים מִ/בַּ֖עַד לְ/צַמָּתֵ֑/ךְ שַׂעְרֵ/ךְ֙ כְּ/עֵ֣דֶר הָֽ/עִזִּ֔ים שֶׁ/גָּלְשׁ֖וּ מֵ/הַ֥ר גִּלְעָֽד׃",
+        "LXX": "Ἰδοὺ εἶ καλὴ πλησίον μου, ἰδοὺ εἶ καλή. ὀφθαλμοί σου περιστεραὶ ἐκτὸς τῆς σιωπήσεώς σου. τρίχωμά σου ὡς ἀγέλαι τῶν αἰγῶν αἳ ἀπεκαλύφθησαν ἀπὸ τοῦ Γαλαάδ.",
+        "VUL": "[<Sponsus>Quam pulchra es, amica mea ! quam pulchra es !/ Oculi tui columbarum,/ absque eo quod intrinsecus latet./ Capilli tui sicut greges caprarum/ quæ ascenderunt de monte Galaad./",
+        "SYN": "О, ты прекрасна, возлюбленная моя, ты прекрасна! глаза твои голубиные под кудрями твоими; волосы твои - как стадо коз, сходящих с горы Галаадской;",
+        "NEO": "Oui, tu es belle, mon amie ; oui, tu es belle ! Tes yeux sont des yeux de colombes derrière ton voile ; tes cheveux sont comme un troupeau de chèvres, suspendues aux flancs de la montagne de Galaad.",
+        "NAB": "G Ah, you are beautiful, my beloved, ah, you are beautiful! Your eyes are doves behind your veil. Your hair is like a flock of goats streaming down the mountains of Gilead.",
+        "VAT_ES": "&iexcl;Qué hermosa eres, amada mía, qué hermosa eres! Tus ojos son palomas, detrás de tu velo. Tus cabellos, como un rebaño de cabras que baja por las laderas de Galaad.",
+        "CEI": "Come sei bella, amica mia, come sei bella! Gli occhi tuoi sono colombe, dietro il tuo velo. Le tue chiome sono un gregge di capre, che scendono dalle pendici del Gàlaad."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "שִׁנַּ֨יִ/ךְ֙ כְּ/עֵ֣דֶר הַ/קְּצוּב֔וֹת שֶׁ/עָל֖וּ מִן הָ/רַחְצָ֑ה שֶׁ/כֻּלָּ/ם֙ מַתְאִימ֔וֹת וְ/שַׁכֻּלָ֖ה אֵ֥ין בָּ/הֶֽם׃",
+        "LXX": "ὀδόντες σου ὡς ἀγέλαι τῶν κεκαρμένων αἳ ἀνέβησαν ἀπὸ τοῦ λουτροῦ, αἱ πᾶσαι διδυμεύουσαι, καὶ ἀτεκνοῦσα οὐκ ἔστιν ἐν αὐταῖς.",
+        "VUL": "Dentes tui sicut greges tonsarum/ quæ ascenderunt de lavacro ;/ omnes gemellis ftibus,/ et sterilis non est inter eas./",
+        "SYN": "зубы твои - как стадо выстриженных овец, выходящих из купальни, из которых у каждой пара ягнят, и бесплодной нет между ними;",
+        "NEO": "Tes dents sont comme un troupeau de brebis tondues, qui remontent du lavoir ; chacune porte deux jumeaux, et, parmi elles, il n’est pas de stérile.",
+        "NAB": "Your teeth are like a flock of ewes to be shorn, which come up from the washing, All of them big with twins, none of them thin and barren.",
+        "VAT_ES": "Tus dientes, como un rebaño de ovejas esquiladas que acaban de bañarse: todas ellas han tenido mellizos y no hay ninguna estéril.",
+        "CEI": "I tuoi denti come un gregge di pecore tosate, che risalgono dal bagno; tutte procedono appaiate, e nessuna è senza compagna."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כְּ/ח֤וּט הַ/שָּׁנִי֙ שִׂפְתֹתַ֔יִ/ךְ וּ/מִדְבָּרֵ֖י/ךְ נָאוֶ֑ה כְּ/פֶ֤לַח הָֽ/רִמּוֹן֙ רַקָּתֵ֔/ךְ מִ/בַּ֖עַד לְ/צַמָּתֵֽ/ךְ׃",
+        "LXX": "ὡς σπαρτίον τὸ κόκκινον χείλη σου, καὶ ἡ λαλιά σου ὡραία· ὡς λέπυρον ῥόας μῆλόν σου ἐκτὸς τῆς σιωπήσεώς σου.",
+        "VUL": "Sicut vitta coccinea labia tua,/ et eloquium tuum dulce./ Sicut fragmen mali punici, ita genæ tuæ,/ absque eo quod intrinsecus latet./",
+        "SYN": "как лента алая губы твои, и уста твои любезны; как половинки гранатового яблока - ланиты твои под кудрями твоими;",
+        "NEO": "Tes lèvres sont comme un fil de pourpre, et ta bouche est charmante ; ta joue est comme une moitié de grenade, derrière ton voile.",
+        "NAB": "Your lips are like a scarlet strand; your mouth is lovely. Your cheek is like a half-pomegranate behind your veil.",
+        "VAT_ES": "Como una cinta escarlata son tus labios y tu boca es hermosa. Como cortes de granada son tus mejillas, detrás de tu velo.",
+        "CEI": "Come un nastro di porpora le tue labbra e la tua bocca è soffusa di grazia; come spicchio di melagrana la tua gota attraverso il tuo velo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כְּ/מִגְדַּ֤ל דָּוִיד֙ צַוָּארֵ֔/ךְ בָּנ֖וּי לְ/תַלְפִּיּ֑וֹת אֶ֤לֶף הַ/מָּגֵן֙ תָּל֣וּי עָלָ֔י/ו כֹּ֖ל שִׁלְטֵ֥י הַ/גִּבּוֹרִֽים׃",
+        "LXX": "ὡς πύργος Δαυεὶδ τράχηλός σου, ὁ ᾠκοδομημένος εἰς Θαλπιώθ. χίλιοι θυρεοὶ κρέμανται ἐπ’ αὐτόν, πᾶσαι βολίδες τῶν δυνατῶν.",
+        "VUL": "Sicut turris David collum tuum,/ quæ ædificata est cum propugnaculis ;/ mille clypei pendent ex ea,/ omnis armatura fortium./",
+        "SYN": "шея твоя - как столп Давидов, сооруженный для оружий, тысяча щитов висит на нем - все щиты сильных;",
+        "NEO": "Ton cou est comme la tour de David, bâtie pour servir d’arsenal ; mille boucliers y sont suspendus, tous les boucliers des braves.",
+        "NAB": "Your neck is like David's tower girt with battlements; A thousand bucklers hang upon it, all the shields of valiant men.",
+        "VAT_ES": "Tu cuello es como la torre de David, construida con piedras talladas: de ella cuelgan mil escudos, toda clase de armaduras de guerreros.",
+        "CEI": "Come la torre di Davide il tuo collo, costruita a guisa di fortezza. Mille scudi vi sono appesi, tutte armature di prodi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "שְׁנֵ֥י שָׁדַ֛יִ/ךְ כִּ/שְׁנֵ֥י עֳפָרִ֖ים תְּאוֹמֵ֣י צְבִיָּ֑ה הָ/רוֹעִ֖ים בַּ/שּׁוֹשַׁנִּֽים׃",
+        "LXX": "δύο μαστοί σου ὡς δύο νεβροὶ δίδυμοι δορκάδος οἱ νεμόμενοι ἐν κρίνοις.",
+        "VUL": "Duo ubera tua sicut duo hinnuli,/ capreæ gemelli, qui pascuntur in liliis./",
+        "SYN": "два сосца твои - как двойни молодой серны, пасущиеся между лилиями.",
+        "NEO": "Tes deux seins sont comme deux faons, jumeaux d’une gazelle, qui paissent au milieu des lis.",
+        "NAB": "Your breasts are like twin fawns, the young of a gazelle that browse among the lilies.",
+        "VAT_ES": "Tus pechos son como dos ciervos jóvenes, mellizos de una gacela, que pastan entre los lirios.",
+        "CEI": "I tuoi seni sono come due cerbiatti, gemelli di una gazzella, che pascolano fra i gigli."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "עַ֤ד שֶׁ/יָּפ֨וּחַ֙ הַ/יּ֔וֹם וְ/נָ֖סוּ הַ/צְּלָלִ֑ים אֵ֤לֶךְ לִ/י֙ אֶל הַ֣ר הַ/מּ֔וֹר וְ/אֶל גִּבְעַ֖ת הַ/לְּבוֹנָֽה׃",
+        "LXX": "ἕως οὗ διαπνεύσῃ ἡ ἡμέρα καὶ κινηθῶσιν αἱ σκιαί, πορεύσομαι ἐμαυτῷ πρὸς τὸ ὄρος τῆς σμύρνης καὶ πρὸς τὸν βουνὸν τοῦ Λιβάνου.",
+        "VUL": "Donec aspiret dies, et inclinentur umbræ,/ vadam ad montem myrrhæ, et ad collem thuris./",
+        "SYN": "Доколе день дышит _прохладою,_ и убегают тени, пойду я на гору мирровую и на холм фимиама.",
+        "NEO": "Avant que vienne la fraîcheur du jour, et que les ombres fuient, j’irai à la montagne de la myrrhe, et à la colline de l’encens.",
+        "NAB": "Until the day breathes cool and the shadows lengthen, I will go to the mountain of myrrh, to the hill of incense.",
+        "VAT_ES": "Antes que sople la brisa y huyan las sombras, iré a la montaña de la mirra, a la colina del incienso.",
+        "CEI": "Prima che spiri la brezza del giorno e si allunghino le ombre, me ne andrò al monte della mirra e alla collina dell'incenso."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כֻּלָּ֤/ךְ יָפָה֙ רַעְיָתִ֔/י וּ/מ֖וּם אֵ֥ין בָּֽ/ךְ׃",
+        "LXX": "ὅλη καλὴ εἶ πλησίον μου, καὶ μῶμος οὐκ ἔστιν ἐν σοί.",
+        "VUL": "Tota pulchra es, amica mea,/ et macula non est in te./",
+        "SYN": "Вся ты прекрасна, возлюбленная моя, и пятна нет на тебе!",
+        "NEO": "Tu es toute belle, mon amie, et il n’y a pas de tache en toi !",
+        "NAB": "You are all-beautiful, my beloved, and there is no blemish in you.",
+        "VAT_ES": "Eres toda hermosa, amada mía, y no tienes ningún defecto.",
+        "CEI": "Tutta bella tu sei, amica mia, in te nessuna macchia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אִתִּ֤/י מִ/לְּבָנוֹן֙ כַּלָּ֔ה אִתִּ֖/י מִ/לְּבָנ֣וֹן תָּב֑וֹאִי תָּשׁ֣וּרִי מֵ/רֹ֣אשׁ אֲמָנָ֗ה מֵ/רֹ֤אשׁ שְׂנִיר֙ וְ/חֶרְמ֔וֹן מִ/מְּעֹנ֣וֹת אֲרָי֔וֹת מֵֽ/הַרְרֵ֖י נְמֵרִֽים׃",
+        "LXX": "δεῦρο ἀπὸ Λιβάνου, νύμφη, δεῦρο ἀπὸ Λιβάνου· ἐλεύσῃ καὶ διελεύσῃ ἀπὸ ἀρχῆς πίστεως, ἀπὸ κεφαλῆς Σανεὶρ καὶ Ἑρμών, ἀπὸ μανδρῶν λεόντων, ἀπὸ ὀρέων παρδάλεων.",
+        "VUL": "Veni de Libano, sponsa mea :/ veni de Libano, veni, coronaberis :/ de capite Amana, de vertice Sanir et Hermon,/ de cubilibus leonum, de montibus pardorum./",
+        "SYN": "Со мною с Ливана, невеста! со мною иди с Ливана! спеши с вершины Аманы, с вершины Сенира и Ермона, от логовищ львиных, от гор барсовых!",
+        "NEO": "Avec moi, viens du Liban, ma fiancée, viens avec moi du Liban ! Regarde du sommet de l’Amana, du sommet du Sanir et de l’Hermon, des tanières des lions, des montagnes des léopards.",
+        "NAB": "Come from Lebanon, my bride, come from Lebanon, come! Descend from the top of Amana, from the top of Senir and Hermon, From the haunts of lions, from the leopards' mountains.",
+        "VAT_ES": "&iexcl;Ven conmigo del Líbano, novia mía, ven desde el Líbano! Desciende desde la cumbre del Amaná, desde las cimas del Sanir y del Hermón, desde la guarida de los leones, desde los montes de los leopardos.",
+        "CEI": "Vieni con me dal Libano, o sposa, con me dal Libano, vieni! Osserva dalla cima dell'Amana, dalla cima del Senìr e dell'Ermon, dalle tane dei leoni, dai monti dei leopardi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לִבַּבְתִּ֖/נִי אֲחֹתִ֣/י כַלָּ֑ה לִבַּבְתִּ֨י/נִי֙ ב/אחד בְּ/אַחַ֣ת מֵ/עֵינַ֔יִ/ךְ בְּ/אַחַ֥ד עֲנָ֖ק מִ/צַּוְּרֹנָֽיִ/ךְ׃",
+        "LXX": "ἐκαρδίωσας ἡμᾶς, ἀδελφή μου νύμφη· ἐκαρδίωσας ἡμᾶς ἑνὶ ἀπὸ ὀφθαλμῶν σου, ἐν μιᾷ, ἐν θέματι τραχήλων σου.",
+        "VUL": "Vulnerasti cor meum, soror mea, sponsa ;/ vulnerasti cor meum in uno oculorum tuorum,/ et in uno crine colli tui./",
+        "SYN": "Пленила ты сердце мое, сестра моя, невеста! пленила ты сердце мое одним взглядом очей твоих, одним ожерельем на шее твоей.",
+        "NEO": "Tu m’as ravi le cœur, ma sœur fiancée tu m’as ravi le cœur par un seul de tes regards, par une seule des perles de ton collier.",
+        "NAB": "You have ravished my heart, my sister, my bride; you have ravished my heart with one glance of your eyes, with one bead of your necklace.",
+        "VAT_ES": "&iexcl;Me has robado el corazón hermana mía, novia mía! &iexcl;Me has robado el corazón con una sola de tus miradas, con una sola vuelta de tus collares!",
+        "CEI": "Tu mi hai rapito il cuore, sorella mia, sposa, tu mi hai rapito il cuore con un solo tuo sguardo, con una perla sola della tua collana!"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "מַה יָּפ֥וּ דֹדַ֖יִ/ךְ אֲחֹתִ֣/י כַלָּ֑ה מַה טֹּ֤בוּ דֹדַ֨יִ/ךְ֙ מִ/יַּ֔יִן וְ/רֵ֥יחַ שְׁמָנַ֖יִ/ךְ מִ/כָּל בְּשָׂמִֽים׃",
+        "LXX": "τί ἐκαλλιώθησαν μαστοί σου ἀπὸ οἴνου, καὶ ὀσμὴ ἱματίων σου ὑπὲρ πάντα ἀρώματα;",
+        "VUL": "Quam pulchræ sunt mammæ tuæ, soror mea sponsa !/ pulchriora sunt ubera tua vino,/ et odor unguentorum tuorum super omnia aromata./",
+        "SYN": "О, как любезны ласки твои, сестра моя, невеста! о, как много ласки твои лучше вина, и благовоние мастей твоих лучше всех ароматов!",
+        "NEO": "Que ton amour a de charme, ma sœur fiancée ! Combien ton amour est meilleur que le vin, et l’odeur de tes parfums, que tous les aromates !",
+        "NAB": "How beautiful is your love, my sister, my bride, how much more delightful is your love than wine, and the fragrance of your ointments than all spices!",
+        "VAT_ES": "&iexcl;Qué hermosos son tus amores, hermana mía, novia mía! Tus amores son más deliciosos que el vino, y el aroma de tus perfumes, mejor que todos los ung&uuml;entos.",
+        "CEI": "Quanto sono soavi le tue carezze, sorella mia, sposa, quanto più deliziose del vino le tue carezze. L'odore dei tuoi profumi sorpassa tutti gli aromi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "נֹ֛פֶת תִּטֹּ֥פְנָה שִׂפְתוֹתַ֖יִ/ךְ כַּלָּ֑ה דְּבַ֤שׁ וְ/חָלָב֙ תַּ֣חַת לְשׁוֹנֵ֔/ךְ וְ/רֵ֥יחַ שַׂלְמֹתַ֖יִ/ךְ כְּ/רֵ֥יחַ לְבָנֽוֹן׃",
+        "LXX": "κηρίον ἀποστάζουσιν χείλη σου, νύμφη· μέλι καὶ γάλα ὑπὸ τὴν γλῶσσάν σου, καὶ ὀσμὴ ἱματίων σου ὡς ὀσμὴ Λιβάνου.",
+        "VUL": "Favus distillans labia tua, sponsa ;/ mel et lac sub lingua tua :/ et odor vestimentorum tuorum sicut odor thuris./",
+        "SYN": "Сотовый мед каплет из уст твоих, невеста; мед и молоко под языком твоим, и благоухание одежды твоей подобно благоуханию Ливана!",
+        "NEO": "Tes lèvres distillent le miel, ma fiancée, le miel et le lait sont sous ta langue, et l’odeur de tes vêtements est comme l’odeur du Liban.",
+        "NAB": "Your lips drip honey, my bride, sweetmeats and milk are under your tongue; And the fragrance of your garments is the fragrance of Lebanon.",
+        "VAT_ES": "&iexcl;Tus labios destilan miel pura, novia mía! Hay miel y leche bajo tu lengua, y la fragancia de tus vestidos es como el aroma del Líbano.",
+        "CEI": "Le tue labbra stillano miele vergine, o sposa, c'è miele e latte sotto la tua lingua e il profumo delle tue vesti è come il profumo del Libano."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "גַּ֥ן נָע֖וּל אֲחֹתִ֣/י כַלָּ֑ה גַּ֥ל נָע֖וּל מַעְיָ֥ן חָתֽוּם׃",
+        "LXX": "κῆπος κεκλεισμένος ἀδελφή μου νύμφη, κῆπος κεκλεισμένος, πηγὴ ἐσφραγισμένη·",
+        "VUL": "Hortus conclusus soror mea, sponsa,/ hortus conclusus, fons signatus./",
+        "SYN": "Запертый сад - сестра моя, невеста, заключенный колодезь, запечатанный источник:",
+        "NEO": "C’est un jardin fermé que ma sœur fiancée, une source fermée, une fontaine scellée.",
+        "NAB": "G You are an enclosed garden, my sister, my bride, an enclosed garden, a fountain sealed.",
+        "VAT_ES": "Eres un jardín cerrado hermana mía, novia mía; eres un jardín cerrado, una fuente sellada.",
+        "CEI": "Giardino chiuso tu sei, sorella mia, sposa, giardino chiuso, fontana sigillata."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "שְׁלָחַ֨יִ/ךְ֙ פַּרְדֵּ֣ס רִמּוֹנִ֔ים עִ֖ם פְּרִ֣י מְגָדִ֑ים כְּפָרִ֖ים עִם נְרָדִֽים׃",
+        "LXX": "ἀποστολαί σου παράδεισος μετὰ καρποῦ ἀκροδρύων, κύπροι μετὰ νάρδων·",
+        "VUL": "Emissiones tuæ paradisus malorum punicorum,/ cum pomorum fructibus, cypri cum nardo./",
+        "SYN": "рассадники твои - сад с гранатовыми яблоками, с превосходными плодами, киперы с нардами,",
+        "NEO": "Tes pousses sont un bosquet de grenadiers, avec les fruits les plus exquis ; le cypre avec le nard,",
+        "NAB": "You are a park that puts forth pomegranates, with all choice fruits;",
+        "VAT_ES": "Tus brotes son un vergel de granadas, con frutos exquisitos: alheña con nardos,",
+        "CEI": "I tuoi germogli sono un giardino di melagrane, con i frutti più squisiti, alberi di cipro con nardo,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "נֵ֣רְדְּ וְ/כַרְכֹּ֗ם קָנֶה֙ וְ/קִנָּמ֔וֹן עִ֖ם כָּל עֲצֵ֣י לְבוֹנָ֑ה מֹ֚ר וַ/אֲהָל֔וֹת עִ֖ם כָּל רָאשֵׁ֥י בְשָׂמִֽים׃",
+        "LXX": "νάρδος καὶ κρόκος, κάλαμος καὶ κιννάμωμον μετὰ πάντων ξύλων τοῦ Λιβάνου, σμύρνα ἀλὼθ μετὰ πάντων πρώτων μύρων·",
+        "VUL": "Nardus et crocus, fistula et cinnamomum,/ cum universis lignis Libani ;/ myrrha et aloë, cum omnibus primis unguentis./",
+        "SYN": "нард и шафран, аир и корица со всякими благовонными деревами, мирра и алой со всякими лучшими ароматами;",
+        "NEO": "le nard et le safran, la cannelle et le cinnamome, avec tous les arbres à encens, la myrrhe et l’aloès, avec tous les meilleurs baumiers.",
+        "NAB": "Nard and saffron, calamus and cinnamon, with all kinds of incense; Myrrh and aloes, with all the finest spices.",
+        "VAT_ES": "nardo y azafrán, caña aromática y canela, con todos los árboles de incienso, mirra y áloe, con los mejores perfumes.",
+        "CEI": "nardo e zafferano, cannella e cinnamòmo con ogni specie d'alberi da incenso; mirra e àloe con tutti i migliori aromi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "מַעְיַ֣ן גַּנִּ֔ים בְּאֵ֖ר מַ֣יִם חַיִּ֑ים וְ/נֹזְלִ֖ים מִן לְבָנֽוֹן׃",
+        "LXX": "πηγὴ κήπου καὶ φρέαρ ὕδατος ζῶντος καὶ ῥοιζοῦντος ἀπὸ τοῦ Λιβάνου.",
+        "VUL": "Fons hortorum, puteus aquarum viventium,/ quæ fluunt impetu de Libano./",
+        "SYN": "садовый источник - колодезь живых вод и потоки с Ливана.",
+        "NEO": "Source de jardins, puits d’eaux vives, ruisseau qui coule du Liban !",
+        "NAB": "You are a garden fountain, a well of water flowing fresh from Lebanon.",
+        "VAT_ES": "&iexcl;Fuente que riega los jardines, manantial de agua viva, que fluye desde el Líbano!",
+        "CEI": "Fontana che irrora i giardini, pozzo d'acque vive e ruscelli sgorganti dal Libano."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "ע֤וּרִי צָפוֹן֙ וּ/ב֣וֹאִי תֵימָ֔ן הָפִ֥יחִי גַנִּ֖/י יִזְּל֣וּ בְשָׂמָ֑י/ו יָבֹ֤א דוֹדִ/י֙ לְ/גַנּ֔/וֹ וְ/יֹאכַ֖ל פְּרִ֥י מְגָדָֽי/ו׃",
+        "LXX": "Ἐξεγέρθητι, βορρᾶ· καὶ ἔρχου, νότε, καὶ διάπνευσον κῆπόν μου, καὶ ῥευσάτωσαν ἀρώματά μου.",
+        "VUL": "<Sponsa>Surge, aquilo, et veni, auster :/ perfla hortum meum, et fluant aromata illius.]",
+        "SYN": "Поднимись _ветер_ с севера и принесись с юга, повей на сад мой, - и польются ароматы его! - Пусть придет возлюбленный мой в сад свой и вкушает сладкие плоды его.",
+        "NEO": "Levez-vous aquilons ; venez autans ! Soufflez sur mon jardin, et que ses baumiers exsudent ! Que mon bien-aimé entre dans son jardin, et qu’il mange de ses beaux fruits !",
+        "NAB": "Arise, north wind! Come, south wind! blow upon my garden that its perfumes may spread abroad. B Let my lover come to his garden and eat its choice fruits.",
+        "VAT_ES": "&iexcl;Despierta, viento del norte, ven, viento del sur! &iexcl;Soplen sobre mi jardín para que exhale su perfume! &iexcl;Que mi amado entre en su jardín y saboree sus frutos deliciosos!",
+        "CEI": "Lèvati, aquilone, e tu, austro, vieni, soffia nel mio giardino si effondano i suoi aromi. Venga il mio diletto nel suo giardino e ne mangi i frutti squisiti."
+      }
+    }
+  }
+}

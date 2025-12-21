@@ -1,0 +1,537 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_020",
+  "book_key": "NUME",
+  "sequence": 20,
+  "chapter_in": {
+    "MT": 20,
+    "VUL": 20,
+    "LXX": 20
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֣אוּ בְנֵֽי יִ֠שְׂרָאֵל כָּל הָ֨/עֵדָ֤ה מִדְבַּר צִן֙ בַּ/חֹ֣דֶשׁ הָֽ/רִאשׁ֔וֹן וַ/יֵּ֥שֶׁב הָ/עָ֖ם בְּ/קָדֵ֑שׁ וַ/תָּ֤מָת שָׁם֙ מִרְיָ֔ם וַ/תִּקָּבֵ֖ר שָֽׁם׃",
+        "LXX": "Καὶ ἦλθον οἱ υἱοὶ Ἰσραήλ, πᾶσα ἡ συναγωγή, εἰς τὴν ἔρημον Σεὶν ἐν τῷ μηνὶ τῷ πρώτῳ, καὶ κατέμεινεν ὁ λαὸς ἐν Καδής· καὶ ἐτελεύτησεν ἐκεῖ Μαριάμ, καὶ ἐτάφη ἐκεῖ.",
+        "VUL": "Veneruntque filii Israël et omnis multitudo in desertum Sin, mense primo, et mansit populus in Cades. Mortuaque est ibi Maria, et sepulta in eodem loco.",
+        "SYN": "И пришли сыны Израилевы, все общество, в пустыню Син в первый месяц, и остановился народ в Кадесе, и умерла там Мариам и погребена там.",
+        "NEO": "Les enfants d’Israël, toute l’assemblée, arrivèrent au désert de Sin, dans le premier mois, et le peuple séjourna à Cadès. C’est là que mourut Marie et qu’elle fut enterrée.",
+        "NAB": "The whole Israelite community arrived in the desert of Zin in the first month, and the people settled at Kadesh. It was here that Miriam died, and here that she was buried.",
+        "VAT_ES": "En el primer mes, toda la comunidad de los israelitas llegó al desierto de Sin, y el pueblo se estableció en Cades. Allí murió y fue enterrada Miriam.",
+        "CEI": "Ora tutta la comunità degli Israeliti arrivò al deserto di Sin il primo mese e il popolo si fermò a Kades. Qui morì e fu sepolta Maria."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/לֹא הָ֥יָה מַ֖יִם לָ/עֵדָ֑ה וַ/יִּקָּ֣הֲל֔וּ עַל מֹשֶׁ֖ה וְ/עַֽל אַהֲרֹֽן׃",
+        "LXX": "καὶ οὐκ ἦν ὕδωρ τῇ συναγωγῇ, καὶ ἠθροίσθησαν ἐπὶ Μωυσῆν καὶ Ἀαρών.",
+        "VUL": "Cumque indigeret aqua populus, convenerunt adversum Moysen et Aaron :",
+        "SYN": "И не было воды для общества, и собрались они против Моисея и Аарона;",
+        "NEO": "Comme il n’y avait pas d’eau pour l’assemblée, ils s’attroupèrent contre Moïse et Aaron.",
+        "NAB": "As the community had no water, they held a council against Moses and Aaron.",
+        "VAT_ES": "Como la comunidad no tenía agua, se produjo un amotinamiento contra Moisés y Aarón.",
+        "CEI": "Mancava l'acqua per la comunità: ci fu un assembramento contro Mosè e contro Aronne."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥רֶב הָ/עָ֖ם עִם מֹשֶׁ֑ה וַ/יֹּאמְר֣וּ לֵ/אמֹ֔ר וְ/ל֥וּ גָוַ֛עְנוּ בִּ/גְוַ֥ע אַחֵ֖י/נוּ לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἐλοιδορεῖτο ὁ λαὸς πρὸς Μωυσῆν λέγοντες Ὄφελον ἀπεθάνομεν ἐν τῇ ἀπωλίᾳ τῶν ἀδελφῶν ἡμῶν ἔναντι Κυρίου.",
+        "VUL": "et versi in seditionem, dixerunt : Utinam periissemus inter fratres nostros coram Domino.",
+        "SYN": "и возроптал народ на Моисея и сказал: о, если бы умерли тогда и мы, когда умерли братья наши пред Господом!",
+        "NEO": "Le peuple disputa avec Moïse, et ils dirent : « Que n’avons-nous péri quand nos frères périrent devant \\+w Yahweh|strong=\"H3068\"\\+w** ?",
+        "NAB": "The people contended with Moses, exclaiming, \"Would that we too had perished with our kinsmen in the LORD'S presence!",
+        "VAT_ES": "El pueblo promovió una querella contra Moisés diciendo: «&iexcl;Ojalá hubiéramos muerto cuando murieron nuestros hermanos delante del Señor!",
+        "CEI": "Il popolo ebbe una lite con Mosè, dicendo: \"Magari fossimo morti quando morirono i nostri fratelli davanti al Signore!"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/לָ/מָ֤ה הֲבֵאתֶם֙ אֶת קְהַ֣ל יְהוָ֔ה אֶל הַ/מִּדְבָּ֖ר הַ/זֶּ֑ה לָ/מ֣וּת שָׁ֔ם אֲנַ֖חְנוּ וּ/בְעִירֵֽ/נוּ׃",
+        "LXX": "καὶ ἵνα τί ἀνήγαγες τὴν συναγωγὴν Κυρίου εἰς τὴν ἔρημον ταύτην ἀποκτεῖναι ἡμᾶς καὶ τὰ κτήνη ἡμῶν;",
+        "VUL": "Cur eduxistis ecclesiam Domini in solitudinem, ut et nos et nostra jumenta moriamur ?",
+        "SYN": "зачем вы привели общество Господне в эту пустыню, чтобы умереть здесь нам и скоту нашему?",
+        "NEO": "Pourquoi avez-vous fait venir l’assemblée de \\+w Yahweh|strong=\"H3068\"\\+w** dans ce désert, pour que nous y mourions, nous et notre bétail ?",
+        "NAB": "Why have you brought the LORD'S community into this desert where we and our livestock are dying?",
+        "VAT_ES": "&iquest;Por qué trajeron a este desierto a la asamblea del Señor, para que muriéramos aquí, nosotros y nuestro ganado?",
+        "CEI": "Perché avete condotto la comunità del Signore in questo deserto per far morire noi e il nostro bestiame?"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/לָ/מָ֤ה הֶֽעֱלִיתֻ֨/נוּ֙ מִ/מִּצְרַ֔יִם לְ/הָבִ֣יא אֹתָ֔/נוּ אֶל הַ/מָּק֥וֹם הָ/רָ֖ע הַ/זֶּ֑ה לֹ֣א מְק֣וֹם זֶ֗רַע וּ/תְאֵנָ֤ה וְ/גֶ֨פֶן֙ וְ/רִמּ֔וֹן וּ/מַ֥יִם אַ֖יִן לִ/שְׁתּֽוֹת׃",
+        "LXX": "καὶ ἵνα τί τοῦτο ἀνήγαγες ἡμᾶς ἐξ Αἰγύπτου παραγενέσθαι εἰς τὸν τόπον τοῦτον; τόπος οὗ οὐ σπείρεται, οὐδὲ συκαῖ οὐδὲ ἄμπελοι οὐδὲ ῥόαι, οὐδὲ ὕδωρ ἐστὶν πιεῖν.",
+        "VUL": "quare nos fecistis ascendere de Ægypto, et adduxistis in locum istum pessimum, qui seri non potest, qui nec ficum gignit, nec vineas, nec malogranata, insuper et aquam non habet ad bibendum ?",
+        "SYN": "и для чего вывели вы нас из Египта, чтобы привести нас на это негодное место, где нельзя сеять, нет ни смоковниц, ни винограда, ни гранатовых яблок, ни даже воды для питья?",
+        "NEO": "Pourquoi nous avez-vous fait monter d’Égypte, pour nous amener dans ce méchant lieu ? Ce n’est pas un lieu où l’on puisse semer, et il n’y a ni figuier, ni vigne, ni grenadier, ni même d’eau à boire ? »",
+        "NAB": "Why did you lead us out of Egypt, only to bring us to this wretched place which has neither grain nor figs nor vines nor pomegranates? Here there is not even water to drink!\"",
+        "VAT_ES": "&iquest;Por qué nos hicieron salir de Egipto, para traernos a este lugar miserable, donde no hay sembrados, ni higueras, ni viñas, ni granados, y donde ni siquiera hay agua para beber?",
+        "CEI": "E perché ci avete fatti uscire dall'Egitto per condurci in questo luogo inospitale? Non è un luogo dove si possa seminare, non ci sono fichi, non vigne, non melograni e non c'è acqua da bere\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹא֩ מֹשֶׁ֨ה וְ/אַהֲרֹ֜ן מִ/פְּנֵ֣י הַ/קָּהָ֗ל אֶל פֶּ֨תַח֙ אֹ֣הֶל מוֹעֵ֔ד וַֽ/יִּפְּל֖וּ עַל פְּנֵי/הֶ֑ם וַ/יֵּרָ֥א כְבוֹד יְהוָ֖ה אֲלֵי/הֶֽם׃",
+        "LXX": "καὶ ἦλθεν Μωυσῆς καὶ Ἀαρὼν ἀπὸ προσώπου τῆς συναγωγῆς ἐπὶ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου, καὶ ἔπεσαν ἐπὶ πρόσωπον· καὶ ὤφθη ἡ δόξα Κυρίου πρὸς αὐτούς.",
+        "VUL": "Ingressusque Moyses et Aaron, dimissa multitudine, tabernaculum fderis, corruerunt proni in terram, clamaveruntque ad Dominum, atque dixerunt : Domine Deus, audi clamorem hujus populi, et aperi eis thesaurum tuum fontem aquæ vivæ, ut satiati, cesset murmuratio eorum. Et apparuit gloria Domini super eos.",
+        "SYN": "И пошел Моисей и Аарон от народа ко входу скинии собрания, и пали на лица свои, и явилась им слава Господня.",
+        "NEO": "Moïse et Aaron, s’éloignant de l’assemblée, vinrent à l’entrée de la tente de réunion. Ils tombèrent sur leur visage, et la gloire de \\+w Yahweh|strong=\"H3068\"\\+w** leur apparut.",
+        "NAB": "But Moses and Aaron went away from the assembly to the entrance of the meeting tent, where they fell prostrate. Then the glory of the LORD appeared to them,",
+        "VAT_ES": "Moisés y Aarón, apartándose de la asamblea, fueron a la entrada de la Carpa del Encuentro y cayeron con el rostro en tierra. Entonces se les apareció la gloria del Señor,",
+        "CEI": "Allora Mosè e Aronne si allontanarono dalla comunità per recarsi all'ingresso della tenda del convegno; si prostrarono con la faccia a terra e la gloria del Signore apparve loro."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "and the LORD said to Moses,",
+        "VAT_ES": "y el Señor dijo a Moisés:",
+        "CEI": "Il Signore disse a Mosè:"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "קַ֣ח אֶת הַ/מַּטֶּ֗ה וְ/הַקְהֵ֤ל אֶת הָ/עֵדָה֙ אַתָּה֙ וְ/אַהֲרֹ֣ן אָחִ֔י/ךָ וְ/דִבַּרְתֶּ֧ם אֶל הַ/סֶּ֛לַע לְ/עֵינֵי/הֶ֖ם וְ/נָתַ֣ן מֵימָ֑י/ו וְ/הוֹצֵאתָ֨ לָ/הֶ֥ם מַ֨יִם֙ מִן הַ/סֶּ֔לַע וְ/הִשְׁקִיתָ֥ אֶת הָ/עֵדָ֖ה וְ/אֶת בְּעִירָֽ/ם׃",
+        "LXX": "Λάβε τὴν ῥάβδον, καὶ ἐκκλησίασον τῇ συναγωγῇ σὺ καὶ Ἀαρὼν ὁ ἀδελφός σου, καὶ λαλήσατε πρὸς τὴν πέτραν ἔναντι αὐτῶν, καὶ δώσει τὰ ὕδατα αὐτῆς· καὶ ἐξοίσετε αὐτοῖς ὕδωρ ἐκ τῆς πέτρας, καὶ ποτιεῖτε τὴν συναγωγὴν καὶ τὰ κτήνη αὐτῶν.",
+        "VUL": "Tolle virgam, et congrega populum, tu et Aaron frater tuus, et loquimini ad petram coram eis, et illa dabit aquas. Cumque eduxeris aquam de petra, bibet omnis multitudo et jumenta ejus.",
+        "SYN": "Возьми жезл и собери общество, ты и Аарон, брат твой, и скажите в глазах их скале, и она даст из себя воду: и так ты изведешь им воду из скалы, и напоишь общество и скот его.",
+        "NEO": "« Prends le bâton et convoque l’assemblée, toi et ton frère Aaron ; vous parlerez au rocher en leur présence, afin qu’il donne ses eaux ; et tu feras sortir pour eux de l’eau du rocher, et tu donneras à boire à l’assemblée et à son bétail. »",
+        "NAB": "\"Take the staff and assemble the community, you and your brother Aaron, and in their presence order the rock to yield its waters. From the rock you shall bring forth water for the community and their livestock to drink.\"",
+        "VAT_ES": "«Toma el bastón y convoca a la comunidad, junto con tu hermano Aarón. Después, a la vista de todos, manden a la roca que dé sus aguas. Así harás para ellos agua de la roca y darás de beber a la comunidad y a su ganado».",
+        "CEI": "\"Prendi il bastone e tu e tuo fratello Aronne convocate la comunità e alla loro presenza parlate a quella roccia, ed essa farà uscire l'acqua; tu farai sgorgare per loro l'acqua dalla roccia e darai da bere alla comunità e al suo bestiame\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֥ח מֹשֶׁ֛ה אֶת הַ/מַּטֶּ֖ה מִ/לִּ/פְנֵ֣י יְהוָ֑ה כַּ/אֲשֶׁ֖ר צִוָּֽ/הוּ׃",
+        "LXX": "καὶ ἔλαβεν Μωυσῆς τὴν ῥάβδον τὴν ἀπέναντι Κυρίου, καθὰ συνέταξεν Κύριος·",
+        "VUL": "Tulit igitur Moyses virgam, quæ erat in conspectu Domini, sicut præceperat ei,",
+        "SYN": "И взял Моисей жезл от лица Господа, как Он повелел ему.",
+        "NEO": "Moïse prit le bâton qui était devant \\+w Yahweh|strong=\"H3068\"\\+w**, comme \\+w Yahweh|strong=\"H3068\"\\+w** le lui avait ordonné.",
+        "NAB": "So Moses took the staff from its place before the LORD, as he was ordered.",
+        "VAT_ES": "Moisés tomó el bastón que estaba delante del Señor, como él se lo había mandado.",
+        "CEI": "Mosè dunque prese il bastone che era davanti al Signore, come il Signore gli aveva ordinato."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יַּקְהִ֜לוּ מֹשֶׁ֧ה וְ/אַהֲרֹ֛ן אֶת הַ/קָּהָ֖ל אֶל פְּנֵ֣י הַ/סָּ֑לַע וַ/יֹּ֣אמֶר לָ/הֶ֗ם שִׁמְעוּ נָא֙ הַ/מֹּרִ֔ים הֲ/מִן הַ/סֶּ֣לַע הַ/זֶּ֔ה נוֹצִ֥יא לָ/כֶ֖ם מָֽיִם׃",
+        "LXX": "καὶ ἐξεκκλησίασεν Μωυσῆς καὶ Ἀαρὼν τὴν συναγωγὴν ἀπέναντι τῆς πέτρας, καὶ εἶπεν πρὸς αὐτούς Ἀκούσατέ μου, οἱ ἀπειθεῖς· μὴ ἐκ τῆς πέτρας ταύτης ἐξάξομεν ὑμῖν ὕδωρ;",
+        "VUL": "congregata multitudine ante petram : dixitque eis : Audite, rebelles et increduli : num de petra hac vobis aquam poterimus ejicere ?",
+        "SYN": "И собрали Моисей и Аарон народ к скале, и сказал он им: послушайте, непокорные, разве нам из этой скалы извести для вас воду?",
+        "NEO": "Puis Moïse et Aaron convoquèrent l’assemblée en face du rocher, et Moïse leur dit : « Ecoutez-donc, rebelles ! Vous ferons-nous sortir de l’eau de ce rocher ? »",
+        "NAB": "He and Aaron assembled the community in front of the rock, where he said to them, \"Listen to me, you rebels! Are we to bring water for you out of this rock?\"",
+        "VAT_ES": "Luego Moisés y Aarón reunieron a la asamblea frente a la roca, y Moisés lees dijo: «&iexcl;Escuchen, rebeldes! &iquest;Podemos hacer que brote agua de esta roca para ustedes?».",
+        "CEI": "Mosè e Aronne convocarono la comunità davanti alla roccia e Mosè disse loro: \"Ascoltate, o ribelli: vi faremo noi forse uscire acqua da questa roccia?\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יָּ֨רֶם מֹשֶׁ֜ה אֶת יָד֗/וֹ וַ/יַּ֧ךְ אֶת הַ/סֶּ֛לַע בְּ/מַטֵּ֖/הוּ פַּעֲמָ֑יִם וַ/יֵּצְאוּ֙ מַ֣יִם רַבִּ֔ים וַ/תֵּ֥שְׁתְּ הָ/עֵדָ֖ה וּ/בְעִירָֽ/ם׃",
+        "LXX": "καὶ ἐπάρας Μωυσῆς τὴν χεῖρα αὐτοῦ ἐπάταξεν τὴν πέτραν τῇ ῥάβδῳ δίς, καὶ ἐξῆλθεν ὕδωρ πολύ, καὶ ἔπιεν ἡ συναγωγὴ καὶ τὰ κτήνη αὐτῶν.",
+        "VUL": "Cumque elevasset Moyses manum, percutiens virga bis silicem, egressæ sunt aquæ largissimæ, ita ut populus biberet et jumenta.",
+        "SYN": "И поднял Моисей руку свою и ударил в скалу жезлом своим дважды, и потекло много воды, и пило общество и скот его.",
+        "NEO": "Moïse leva la main et frappa deux fois le rocher de son bâton ; et il sortit de l’eau en abondance. L’assemblée but, ainsi que le bétail.",
+        "NAB": "Then, raising his hand, Moses struck the rock twice with his staff, and water gushed out in abundance for the community and their livestock to drink.",
+        "VAT_ES": "Y alzando su mano, golpeó la roca dos veces con el bastón. El agua brotó abundantemente, y bebieron la comunidad y el ganado.",
+        "CEI": "Mosè alzò la mano, percosse la roccia con il bastone due volte e ne uscì acqua in abbondanza; ne bevvero la comunità e tutto il bestiame."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוָה֮ אֶל מֹשֶׁ֣ה וְ/אֶֽל אַהֲרֹן֒ יַ֚עַן לֹא הֶאֱמַנְתֶּ֣ם בִּ֔/י לְ/הַ֨קְדִּישֵׁ֔/נִי לְ/עֵינֵ֖י בְּנֵ֣י יִשְׂרָאֵ֑ל לָ/כֵ֗ן לֹ֤א תָבִ֨יאוּ֙ אֶת הַ/קָּהָ֣ל הַ/זֶּ֔ה אֶל הָ/אָ֖רֶץ אֲשֶׁר נָתַ֥תִּי לָ/הֶֽם׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς Μωυσῆν καὶ Ἀαρών Ὅτι οὐκ ἐπιστεύσατε ἁγιάσαι με ἐναντίον υἱῶν Ἰσραήλ, διὰ τοῦτο οὐκ εἰσάξετε ὑμεῖς τὴν συναγωγὴν ταύτην εἰς τὴν γῆν ἣν δέδωκα αὐτοῖς.",
+        "VUL": "Dixitque Dominus ad Moysen et Aaron : Quia non credidistis mihi, ut sanctificaretis me coram filiis Israël, non introducetis hos populos in terram, quam dabo eis.",
+        "SYN": "И сказал Господь Моисею и Аарону: за то, что вы не поверили Мне, чтоб явить святость Мою пред очами сынов Израилевых, не введете вы народа сего в землю, которую Я даю ему.",
+        "NEO": "Alors \\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse et à Aaron : « Parce que vous n’avez pas cru en moi, pour me sanctifier aux yeux des enfants d’Israël, vous ne ferez pas entrer cette assemblée dans le pays que je lui donne. »",
+        "NAB": "But the LORD said to Moses and Aaron, \"Because you were not faithful to me in showing forth my sanctity before the Israelites, you shall not lead this community into the land I will give them.\"",
+        "VAT_ES": "Pero el Señor dijo a Moisés y a Aarón: «Por no haber confiado lo bastante en mí para que yo manifestara mi santidad ante los israelitas, les aseguro que no llevarán a este pueblo hasta la tierra que les he dado».",
+        "CEI": "Ma il Signore disse a Mosè e ad Aronne: \"Poiché non avete avuto fiducia in me per dar gloria al mio santo nome agli occhi degli Israeliti, voi non introdurrete questa comunità nel paese che io le dò\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הֵ֚מָּה מֵ֣י מְרִיבָ֔ה אֲשֶׁר רָב֥וּ בְנֵֽי יִשְׂרָאֵ֖ל אֶת יְהוָ֑ה וַ/יִּקָּדֵ֖שׁ בָּֽ/ם׃",
+        "LXX": "τοῦτο ὕδωρ ἀντιλογίας, ὅτι ἐλοιδορήθησαν οἱ υἱοὶ Ἰσραὴλ ἔναντι Κυρίου, καὶ ἡγιάσθη ἐν αὐτοῖς.",
+        "VUL": "Hæc est aqua contradictionis, ubi jurgati sunt filii Israël contra Dominum, et sanctificatus est in eis.",
+        "SYN": "Это вода Меривы, у которой вошли в распрю сыны Израилевы с Господом, и Он явил им святость Свою.",
+        "NEO": "Ce sont là les eaux de Mériba, où les enfants d’Israël contestèrent avec \\+w Yahweh|strong=\"H3068\"\\+w**, et il se sanctifia en eux. QUATRIÈME PARTIE DE CADÈS AUX PLAINES DE MOAB.",
+        "NAB": "These are the waters of Meribah, where the Israelites contended against the LORD, and where he revealed his sanctity among them.",
+        "VAT_ES": "Estas son las aguas de Meribá –que significa «Querella»– donde los israelitas promovieron una querella contra el Señor y con las que él manifestó contra el Señor y con las que él manifestó su santidad.",
+        "CEI": "Queste sono le acque di Mèriba, dove gli Israeliti contesero con il Signore e dove Egli si dimostrò santo in mezzo a loro."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֨ח מֹשֶׁ֧ה מַלְאָכִ֛ים מִ/קָּדֵ֖שׁ אֶל מֶ֣לֶךְ אֱד֑וֹם כֹּ֤ה אָמַר֙ אָחִ֣י/ךָ יִשְׂרָאֵ֔ל אַתָּ֣ה יָדַ֔עְתָּ אֵ֥ת כָּל הַ/תְּלָאָ֖ה אֲשֶׁ֥ר מְצָאָֽתְ/נוּ׃",
+        "LXX": "Καὶ ἀπέστειλεν Μωυσῆς ἀγγέλους ἐκ Καδὴς πρὸς βασιλέα Ἐδὼμ λέγων Τάδε λέγει ὁ ἀδελφός σου Ἰσραήλ Σὺ ἐπίστῃ πάντα τὸν μόχθον τὸν εὑρόντα ἡμᾶς·",
+        "VUL": "Misit interea nuntios Moyses de Cades ad regem Edom, qui dicerent : Hæc mandat frater tuus Israël : Nosti omnem laborem qui apprehendit nos,",
+        "SYN": "И послал Моисей из Кадеса послов к Царю Едомскому [сказать]: так говорит брат твой Израиль: ты знаешь все трудности, которые постигли нас;",
+        "NEO": "De Cadès, Moïse envoya des messages au roi d’Edom, pour lui dire : « Ainsi parle ton frère Israël : Tu sais toutes les souffrances que nous avons endurées.",
+        "NAB": "From Kadesh Moses sent men to the king of Edom with the message: \"Your brother Israel has this to say: You know of all the hardships that have befallen us,",
+        "VAT_ES": "Moisés envió desde Cades unos mensajeros al rey de Edom, con esta propuesta: «Así habla tu hermano Israel: «Tú conoces todas las dificultades con que hemos tropezado.",
+        "CEI": "Mosè mandò da Kades messaggeri al re di Edom per dirgli: \"Dice Israele tuo fratello: Tu sai tutte le tribolazioni che ci sono avvenute:"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֵּרְד֤וּ אֲבֹתֵ֨י/נוּ֙ מִצְרַ֔יְמָ/ה וַ/נֵּ֥שֶׁב בְּ/מִצְרַ֖יִם יָמִ֣ים רַבִּ֑ים וַ/יָּרֵ֥עוּ לָ֛/נוּ מִצְרַ֖יִם וְ/לַ/אֲבֹתֵֽי/נוּ׃",
+        "LXX": "καὶ κατέβησαν οἱ πατέρες ἡμῶν εἰς Αἴγυπτον, καὶ παρῳκήσαμεν ἐν Αἰγύπτῳ ἡμέρας πλείους, καὶ ἐκάκωσαν ἡμᾶς οἱ Αἰγύπτιοι καὶ τοὺς πατέρας ἡμῶν·",
+        "VUL": "quomodo descenderint patres nostri in Ægyptum, et habitaverimus ibi multo tempore, afflixerintque nos Ægyptii, et patres nostros :",
+        "SYN": "отцы наши перешли в Египет, и мы жили в Египте много времени, и худо поступали Египтяне с нами и отцами нашими;",
+        "NEO": "Nos pères descendirent en Égypte, et nous y demeurâmes longtemps ; mais les Egyptiens nous maltraitèrent, nous et nos pères.",
+        "NAB": "how our fathers went down to Egypt, where we stayed a long time, how the Egyptians maltreated us and our fathers,",
+        "VAT_ES": "Nuestros antepasados bajaron a Egipto, y allí estuvimos durante mucho tiempo. Los egipcios nos trataron duramente, a nosotros y a nuestros antepasados.",
+        "CEI": "come i nostri padri scesero in Egitto e noi in Egitto dimorammo per lungo tempo e gli Egiziani maltrattarono noi e i nostri padri."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/נִּצְעַ֤ק אֶל יְהוָה֙ וַ/יִּשְׁמַ֣ע קֹלֵ֔/נוּ וַ/יִּשְׁלַ֣ח מַלְאָ֔ךְ וַ/יֹּצִאֵ֖/נוּ מִ/מִּצְרָ֑יִם וְ/הִנֵּה֙ אֲנַ֣חְנוּ בְ/קָדֵ֔שׁ עִ֖יר קְצֵ֥ה גְבוּלֶֽ/ךָ׃",
+        "LXX": "καὶ ἀνεβοήσαμεν πρὸς Κύριον, καὶ εἰσήκουσεν Κύριος τῆς φωνῆς ἡμῶν, καὶ ἀποστείλας ἄγγελον ἐξήγαγεν ἡμᾶς ἐξ Αἰγύπτου· καὶ νῦν ἐσμὲν ἐν Καδής, πόλει ἐκ μέρους τῶν ὁρίων σου.",
+        "VUL": "et quomodo clamaverimus ad Dominum, et exaudierit nos, miseritque angelum, qui eduxerit nos de Ægypto. Ecce in urbe Cades, quæ est in extremis finibus tuis, positi,",
+        "SYN": "и воззвали мы к Господу, и услышал Он голос наш, и послал Ангела, и вывел нас из Египта; и вот, мы в Кадесе, городе у самого предела твоего;",
+        "NEO": "Nous avons crié à \\+w Yahweh|strong=\"H3068\"\\+w**, et il a entendu notre voix ; il a envoyé un ange et nous a fait sortir d’Égypte. Et voici que nous sommes à Cadès, ville située à la limite de ton territoire.",
+        "NAB": "and how, when we cried to the LORD, he heard our cry and sent an angel who led us out of Egypt. Now here we are at the town of Kadesh at the edge of your territory.",
+        "VAT_ES": "Pero pedimos auxilio al Señor, y él escuchó nuestra voz y nos envió un Angel que nos sacó de Egipto. Ahora estamos en Cades, la población que está al borde de tu territorio.",
+        "CEI": "Noi gridammo al Signore ed egli udì la nostra voce e mandò un angelo e ci fece uscire dall'Egitto; eccoci ora in Kades, che è città ai tuoi estremi confini."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "נַעְבְּרָה נָּ֣א בְ/אַרְצֶ֗/ךָ לֹ֤א נַעֲבֹר֙ בְּ/שָׂדֶ֣ה וּ/בְ/כֶ֔רֶם וְ/לֹ֥א נִשְׁתֶּ֖ה מֵ֣י בְאֵ֑ר דֶּ֧רֶךְ הַ/מֶּ֣לֶךְ נֵלֵ֗ךְ לֹ֤א נִטֶּה֙ יָמִ֣ין וּ/שְׂמֹ֔אול עַ֥ד אֲשֶֽׁר נַעֲבֹ֖ר גְּבוּלֶֽ/ךָ׃",
+        "LXX": "παρελευσόμεθα διὰ τῆς γῆς σου· οὐ διελευσόμεθα δι’ ἀγρῶν οὐδὲ δι’ ἀμπελώνων, οὐδὲ πιόμεθα ὕδωρ ἐκ λάκκου σου· ὁδῷ βασιλικῇ πορευσόμεθα, καὶ οὐκ ἐκκλινοῦμεν δεξιὰ οὐδὲ εὐώνυμα ἕως ἂν παρέλθωμεν τὰ ὅριά σου.",
+        "VUL": "obsecramus ut nobis transire liceat per terram tuam. Non ibimus per agros, nec per vineas ; non bibemus aquas de puteis tuis : sed gradiemur via publica, nec ad dexteram nec ad sinistram declinantes, donec transeamus terminos tuos.",
+        "SYN": "позволь нам пройти землею твоею: мы не пойдем по полям и по виноградникам и не будем пить воды из колодезей [твоих]; но пойдем дорогою царскою, не своротим ни направо ни налево, доколе не перейдем пределов твоих.",
+        "NEO": "Laisse-nous, de grâce, traverser ton pays ; nous ne traverserons ni les champs, ni les vignes, et nous ne boirons pas l’eau des puits ; mais nous suivrons la route royale, sans nous détourner à droite ou à gauche, jusqu’à ce que nous ayons traversé ton territoire. »",
+        "NAB": "Kindly let us pass through your country. We will not cross any fields or vineyards, nor drink any well water, but we will go straight along the royal road without turning to the right or to the left, until we have passed through your territory.\"",
+        "VAT_ES": "Déjanos pasar por tu país. No cruzaremos por los campos ni por los viñedos, ni beberemos agua de los pozos. Iremos solamente por el camino principal, sin desviarnos ni a la derecha ni a la izquierda, hasta que hayamos atravesado tu territorio».",
+        "CEI": "Permettici di passare per il tuo paese; non passeremo né per campi, né per vigne e non berremo l'acqua dei pozzi; seguiremo la via Regia, senza deviare né a destra né a sinistra, finché avremo oltrepassati i tuoi confini\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֵלָי/ו֙ אֱד֔וֹם לֹ֥א תַעֲבֹ֖ר בִּ֑/י פֶּן בַּ/חֶ֖רֶב אֵצֵ֥א לִ/קְרָאתֶֽ/ךָ׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτὸν Ἐδώμ Οὐ διελεύσῃ δι’ ἐμοῦ· εἰ δὲ μή, ἐν πολέμῳ ἐξελεύσομαι εἰς συνάντησίν σοι.",
+        "VUL": "Cui respondit Edom : Non transibis per me, alioquin armatus occurram tibi.",
+        "SYN": "Но Едом сказал ему: не проходи через меня, иначе я с мечом выступлю против тебя.",
+        "NEO": "Edom lui dit : « Tu ne passeras pas chez moi, sinon je sortirai à ta rencontre avec l’épée. »",
+        "NAB": "But Edom answered him, \"You shall not pass through here; if you do, I will advance against you with the sword.\"",
+        "VAT_ES": "Pero Edom les respondió: «Ustedes no pasarán por aquí. Si lo hacen, saldré contra ustedes, espada en mano».",
+        "CEI": "Ma Edom gli rispose: \"Tu non passerai sul mio territorio; altrimenti uscirò contro di te con la spada\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֨וּ אֵלָ֥י/ו בְּנֵֽי יִשְׂרָאֵ֘ל בַּֽ/מְסִלָּ֣ה נַעֲלֶה֒ וְ/אִם מֵימֶ֤י/ךָ נִשְׁתֶּה֙ אֲנִ֣י וּ/מִקְנַ֔/י וְ/נָתַתִּ֖י מִכְרָ֑/ם רַ֥ק אֵין דָּבָ֖ר בְּ/רַגְלַ֥/י אֶֽעֱבֹֽרָה׃",
+        "LXX": "καὶ λέγουσιν αὐτῷ οἱ υἱοὶ Ἰσραήλ Παρὰ τὸ ὄρος παρελευσόμεθα· ἐὰν δὲ τοῦ ὕδατός σου πίωμεν ἐγώ τε καὶ τὰ κτήνη, δώσω τιμήν σοι· ἀλλὰ τὸ πρᾶγμα οὐδέν ἐστιν, παρὰ τὸ ὄρος παρελευσόμεθα.",
+        "VUL": "Dixeruntque filii Israël : Per tritam gradiemur viam : et si biberimus aquas tuas, nos et pecora nostra, dabimus quod justum est : nulla erit in pretio difficultas, tantum velociter transeamus.",
+        "SYN": "И сказали ему сыны Израилевы: мы пойдем большою дорогою, и если будем пить твою воду, я и скот мой, то буду платить за нее; только ногами моими пройду, что ничего не стоит.",
+        "NEO": "Les enfants d’Israël lui dirent : « Nous monterons par la grande route, et, si nous buvons de ton eau, moi et mes troupeaux, j’en paierai le prix. Ce n’est pas une affaire ; je ne ferai que passer avec mes pieds. »",
+        "NAB": "The Israelites insisted, \"We want only to go up along the highway. If we or our livestock drink any of your water, we will pay for it. Surely there is no harm in merely letting us march through.\"",
+        "VAT_ES": "Los israelitas les respondieron: «Iremos por la ruta, y si nosotros o nuestro ganado llegamos a beber agua, te la pagaremos. Sólo queremos pasar a pie: es una cosa insignificante».",
+        "CEI": "Gli Israeliti gli dissero: \"Passeremo per la strada maestra; se noi e il nostro bestiame berremo la tua acqua, te la pagheremo; lasciaci soltanto transitare a piedi\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֖אמֶר לֹ֣א תַעֲבֹ֑ר וַ/יֵּצֵ֤א אֱדוֹם֙ לִ/קְרָאת֔/וֹ בְּ/עַ֥ם כָּבֵ֖ד וּ/בְ/יָ֥ד חֲזָקָֽה׃",
+        "LXX": "ὁ δὲ εἶπεν Οὐ διελεύσῃ δι’ ἐμοῦ· καὶ ἐξῆλθεν Ἐδὼμ εἰς συνάντησιν αὐτῷ ἐν ὄχλῳ βαρεῖ καὶ ἐν χειρὶ ἰσχυρᾷ.",
+        "VUL": "At ille respondit : Non transibis. Statimque egressus est obvius, cum infinita multitudine, et manu forti,",
+        "SYN": "Но он сказал: не проходи [через меня]. И выступил против него Едом с многочисленным народом и с сильною рукою.",
+        "NEO": "Il répondit : « Tu ne passeras pas ! » Et Edom sortit à sa rencontre avec un peuple nombreux et à main forte.",
+        "NAB": "But Edom still said, \"No, you shall not pass through,\" and advanced against them with a large and heavily armed force.",
+        "VAT_ES": "Pero ellos respondieron: «No pasarán». Y Edom salió a atacarlos con una tropa numerosa y bien armada.",
+        "CEI": "Ma quegli rispose: \"Non passerai!\". Edom mosse contro Israele con molta gente e con mano potente."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יְמָאֵ֣ן אֱד֗וֹם נְתֹן֙ אֶת יִשְׂרָאֵ֔ל עֲבֹ֖ר בִּ/גְבֻל֑/וֹ וַ/יֵּ֥ט יִשְׂרָאֵ֖ל מֵ/עָלָֽי/ו׃",
+        "LXX": "καὶ οὐκ ἠθέλησεν Ἐδὼμ δοῦναι τῷ Ἰσραὴλ παρελθεῖν διὰ τῶν ὁρίων αὐτοῦ· καὶ ἐξέκλινεν Ἰσραὴλ ἀπ’ αὐτοῦ.",
+        "VUL": "nec voluit acquiescere deprecanti, ut concederet transitum per fines suos. Quam ob rem divertit ab eo Israël.",
+        "SYN": "Итак не согласился Едом позволить Израилю пройти чрез его пределы, и Израиль пошел в сторону от него.",
+        "NEO": "C’est ainsi qu’Edom refusa de donner passage à Israël sur son territoire ; et Israël se détourna de lui.",
+        "NAB": "Therefore, since Edom refused to let them pass through their territory, Israel detoured around them.",
+        "VAT_ES": "Y Edom impidió que los israelitas pasaran por su territorio, ellos dieron un rodeo.",
+        "CEI": "Così Edom rifiutò a Israele il transito per i suoi confini e Israele si allontanò da lui."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/קָּדֵ֑שׁ וַ/יָּבֹ֧אוּ בְנֵֽי יִשְׂרָאֵ֛ל כָּל הָ/עֵדָ֖ה הֹ֥ר הָ/הָֽר׃",
+        "LXX": "Καὶ ἀπῆραν ἐκ Καδής· καὶ παρεγένοντο οἱ υἱοὶ Ἰσραήλ, πᾶσα συναγωγή, εἰς Ὣρ τὸ ὄρος.",
+        "VUL": "Cumque castra movissent de Cades, venerunt in montem Hor, qui est in finibus terræ Edom :",
+        "SYN": "И отправились сыны Израилевы из Кадеса, и пришло все общество к горе Ор.",
+        "NEO": "Les enfants d’Israël, toute l’assemblée, partirent de Cadès et arrivèrent à la montagne de Hor.",
+        "NAB": "Setting out from Kadesh, the whole Israelite community came to Mount Hor.",
+        "VAT_ES": "Toda la comunidad partió de Cades y los israelitas llegaron al monte Hor.",
+        "CEI": "Tutta la comunità degli Israeliti levò l'accampamento da Kades e arrivò al monte Cor."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמֶר יְהוָ֛ה אֶל מֹשֶׁ֥ה וְ/אֶֽל אַהֲרֹ֖ן בְּ/הֹ֣ר הָ/הָ֑ר עַל גְּב֥וּל אֶֽרֶץ אֱד֖וֹם לֵ/אמֹֽר׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς Μωυσῆν καὶ Ἀαρὼν ἐν Ὣρ τῷ ὄρει ἐπὶ τῶν ὁρίων γῆς Ἐδὼμ λέγων",
+        "VUL": "ubi locutus est Dominus ad Moysen :",
+        "SYN": "И сказал Господь Моисею и Аарону на горе Ор, у пределов земли Едомской, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse et à Aaron, à la montagne de Hor, sur la frontière du pays d’Edom :",
+        "NAB": "There at Mount Hor, on the border of the land of Edom, the LORD said to Moses and Aaron,",
+        "VAT_ES": "En el monte Hor, que está en la frontera de Edom el Señor dijo a Moisés y a Aarón:",
+        "CEI": "Il Signore disse a Mosè e ad Aronne al monte Cor, sui confini del paese di Edom:"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "יֵאָסֵ֤ף אַהֲרֹן֙ אֶל עַמָּ֔י/ו כִּ֣י לֹ֤א יָבֹא֙ אֶל הָ/אָ֔רֶץ אֲשֶׁ֥ר נָתַ֖תִּי לִ/בְנֵ֣י יִשְׂרָאֵ֑ל עַ֛ל אֲשֶׁר מְרִיתֶ֥ם אֶת פִּ֖/י לְ/מֵ֥י מְרִיבָֽה׃",
+        "LXX": "Προστεθήτω Ἀαρὼν πρὸς τὸν λαὸν αὐτοῦ, ὅτι οὐ μὴ εἰσέλθητε εἰς τὴν γῆν ἣν δέδωκα τοῖς υἱοῖς Ἰσραήλ, διότι παρωξύνατέ με ἐπὶ τοῦ ὕδατος τῆς λοιδορίας.",
+        "VUL": "Pergat, inquit, Aaron ad populos suos : non enim intrabit terram, quam dedi filiis Israël, eo quod incredulus fuerit ori meo, ad aquas contradictionis.",
+        "SYN": "пусть приложится Аарон к народу своему; ибо он не войдет в землю, которую Я даю сынам Израилевым, за то, что вы непокорны были повелению Моему у вод Меривы;",
+        "NEO": "« Aaron va être recueilli auprès de son peuple ; car il n’entrera pas dans le pays que je donne aux enfants d’Israël, parce que vous avez été rebelles à mon ordre, aux eaux de Mériba.",
+        "NAB": "\"Aaron is about to be taken to his people; he shall not enter the land I am giving to the Israelites, because you both rebelled against my commandment at the waters of Meribah.",
+        "VAT_ES": "«Que Aarón vaya a reunirse con los suyos, porque él no entrará en la tierra que yo di a los israelitas, ya que ustedes se rebelaron contra mis órdenes junto a las aguas de Meribá.",
+        "CEI": "\"Aronne sta per essere riunito ai suoi antenati e non entrerà nel paese che ho dato agli Israeliti, perché siete stati ribelli al mio comandamento alle acque di Mèriba."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "קַ֚ח אֶֽת אַהֲרֹ֔ן וְ/אֶת אֶלְעָזָ֖ר בְּנ֑/וֹ וְ/הַ֥עַל אֹתָ֖/ם הֹ֥ר הָ/הָֽר׃",
+        "LXX": "λάβε τὸν Ἀαρὼν καὶ Ἐλεαζὰρ τὸν υἱὸν αὐτοῦ, καὶ ἀναβίβασον αὐτοὺς εἰς Ὣρ τὸ ὄρος ἔναντι πάσης τῆς συναγωγῆς·",
+        "VUL": "Tolle Aaron et filium ejus cum eo, et duces eos in montem Hor.",
+        "SYN": "и возьми Аарона [брата твоего] и Елеазара, сына его, и возведи их на гору Ор [пред всем обществом];",
+        "NEO": "Prends Aaron et son fils Eléazar, et fais-les monter sur la montagne de Hor.",
+        "NAB": "Take Aaron and his son Eleazar and bring them up on Mount Hor.",
+        "VAT_ES": "Toma a Aarón y a su hijo Eleazar, y llévalos al monte Hor.",
+        "CEI": "Prendi Aronne e suo figlio Eleazaro e falli salire sul monte Cor."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/הַפְשֵׁ֤ט אֶֽת אַהֲרֹן֙ אֶת בְּגָדָ֔י/ו וְ/הִלְבַּשְׁתָּ֖/ם אֶת אֶלְעָזָ֣ר בְּנ֑/וֹ וְ/אַהֲרֹ֥ן יֵאָסֵ֖ף וּ/מֵ֥ת שָֽׁם׃",
+        "LXX": "καὶ ἔκδυσον Ἀαρὼν τὴν στολὴν αὐτοῦ καὶ ἔνδυσον Ἐλεαζὰρ τὸν υἱὸν αὐτοῦ, καὶ Ἀαρὼν προστεθεὶς ἀποθανέτω ἐκεῖ.",
+        "VUL": "Cumque nudaveris patrem veste sua, indues ea Eleazarum filium ejus : Aaron colligetur, et morietur ibi.",
+        "SYN": "и сними с Аарона одежды его, и облеки в них Елеазара, сына его, и пусть Аарон отойдет и умрет там.",
+        "NEO": "Tu dépouilleras Aaron de ses vêtements et tu en feras revêtir Eléazar, son fils. C’est là qu’Aaron sera recueilli et mourra. »",
+        "NAB": "Then strip Aaron of his garments and put them on his son Eleazar; for there Aaron shall be taken in death.\"",
+        "VAT_ES": "Allí despojarás a Aarón de sus vestiduras y se las pondrás a su hijo Eleazar. Entonces Aarón se reunirá con los suyos, porque allí morirá».",
+        "CEI": "Spoglia Aronne delle sue vesti e falle indossare a suo figlio Eleazaro; in quel luogo Aronne sarà riunito ai suoi antenati e morirà\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ מֹשֶׁ֔ה כַּ/אֲשֶׁ֖ר צִוָּ֣ה יְהוָ֑ה וַֽ/יַּעֲלוּ֙ אֶל הֹ֣ר הָ/הָ֔ר לְ/עֵינֵ֖י כָּל הָ/עֵדָֽה׃",
+        "LXX": "καὶ ἐποίησεν Μωυσῆς καθὰ συνέταξεν Κύριος, καὶ ἀνεβίβασεν αὐτὸν εἰς Ὣρ τὸ ὄρος ἐναντίον πάσης τῆς συναγωγῆς.",
+        "VUL": "Fecit Moyses ut præceperat Dominus : et ascenderunt in montem Hor coram omni multitudine.",
+        "SYN": "И сделал Моисей так, как повелел Господь. Пошли они на гору Ор в глазах всего общества,",
+        "NEO": "Moïse fit ce qui \\+w Yahweh|strong=\"H3068\"\\+w** avait ordonné ; ils montèrent sur la montagne de Hor, aux yeux de toute l’assemblée ;",
+        "NAB": "Moses did as the LORD commanded. When they had climbed Mount Hor in view of the whole community,",
+        "VAT_ES": "Moisés hizo lo que el Señor le había mandado: él, Aarón y su hijo Eleazar subieron al monte Hor a la vista de toda la comunidad.",
+        "CEI": "Mosè fece come il Signore aveva ordinato ed essi salirono sul monte Cor, in vista di tutta la comunità."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יַּפְשֵׁט֩ מֹשֶׁ֨ה אֶֽת אַהֲרֹ֜ן אֶת בְּגָדָ֗י/ו וַ/יַּלְבֵּ֤שׁ אֹתָ/ם֙ אֶת אֶלְעָזָ֣ר בְּנ֔/וֹ וַ/יָּ֧מָת אַהֲרֹ֛ן שָׁ֖ם בְּ/רֹ֣אשׁ הָ/הָ֑ר וַ/יֵּ֧רֶד מֹשֶׁ֛ה וְ/אֶלְעָזָ֖ר מִן הָ/הָֽר׃",
+        "LXX": "καὶ ἐξέδυσεν Ἀαρὼν τὰ ἱμάτια αὐτοῦ καὶ ἐνέδυσεν Ἐλεαζὰρ τὸν υἱὸν αὐτοῦ· καὶ ἀπέθανεν Ἀαρὼν ἐπὶ τῆς κορυφῆς τοῦ ὄρους, καὶ κατέβη Μωυσῆς καὶ Ἐλεαζὰρ ἐκ τοῦ ὄρους.",
+        "VUL": "Cumque Aaron spoliasset vestibus suis, induit eis Eleazarum filium ejus.",
+        "SYN": "и снял Моисей с Аарона одежды его, и облек в них Елеазара, сына его; и умер там Аарон на вершине горы. А Моисей и Елеазар сошли с горы.",
+        "NEO": "puis Moïse, ayant dépouillé Aaron de ses vêtements, les fit revêtir à Eléazar, son fils ; et Aaron mourut là, au sommet de la montagne, et Moïse et Eléazar descendirent de la montagne.",
+        "NAB": "Moses stripped Aaron of his garments and put them on his son Eleazar. Then Aaron died there on top of the mountain. When Moses and Eleazar came down from the mountain,",
+        "VAT_ES": "Luego Moisés quitó las vestiduras a Aarón y se las puso a su hijo Eleazar. Aarón murió en la cima de la montaña. Cuando Moisés y Eleazar bajaron de la montaña,",
+        "CEI": "Mosè spogliò Aronne delle sue vesti e le fece indossare a Eleazaro suo figlio; Aronne morì in quel luogo sulla cima del monte. Poi Mosè ed Eleazaro scesero dal monte."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יִּרְאוּ֙ כָּל הָ֣/עֵדָ֔ה כִּ֥י גָוַ֖ע אַהֲרֹ֑ן וַ/יִּבְכּ֤וּ אֶֽת אַהֲרֹן֙ שְׁלֹשִׁ֣ים י֔וֹם כֹּ֖ל בֵּ֥ית יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ εἶδεν πᾶσα ἡ συναγωγὴ ὅτι ἀπελύθη Ἀαρών· καὶ ἔκλαυσαν τὸν Ἀαρὼν τριάκοντα ἡμέρας πᾶς οἶκος Ἰσραήλ.",
+        "VUL": "Illo mortuo in montis supercilio, descendit cum Eleazaro.",
+        "SYN": "И увидело все общество, что Аарон умер, и оплакивал Аарона весь дом Израилев тридцать дней.",
+        "NEO": "Toute l’assemblée vit qu’Aaron avait expiré, et toute la maison d’Israël pleura Aaron pendant trente jours.",
+        "NAB": "all the community understood that Aaron had passed away; and for thirty days the whole house of Israel mourned him.",
+        "VAT_ES": "toda la comunidad supo que Aarón había muerto. Y todo Israel lloró a Aarón durante treinta días.",
+        "CEI": "Quando tutta la comunità vide che Aronne era morto, tutta la casa d'Israele lo pianse per trenta giorni."
+      }
+    }
+  }
+}

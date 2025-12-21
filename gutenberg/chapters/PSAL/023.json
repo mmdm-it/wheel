@@ -1,0 +1,122 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_023",
+  "book_key": "PSAL",
+  "sequence": 23,
+  "chapter_in": {
+    "MT": 23,
+    "VUL": 22,
+    "LXX": 22
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מִזְמ֥וֹר לְ/דָוִ֑ד יְהוָ֥ה רֹ֝עִ֗/י לֹ֣א אֶחְסָֽר׃",
+        "LXX": "Ψαλμὸς τῷ Δαυείδ· τῆς μιᾶς σαββάτων. Τοῦ κυρίου ἡ γῆ καὶ τὸ πλήρωμα αὐτῆς, ἡ οἰκουμένη καὶ πάντες οἱ κατοικοῦντες ἐν αὐτῇ.",
+        "VUL": "Prima sabbati. Psalmus David. [Domini est terra, et plenitudo ejus ;/ orbis terrarum, et universi qui habitant in eo./",
+        "SYN": "Господня земля и что наполняет ее, вселенная и все живущее в ней,",
+        "NEO": "Psaume de David.",
+        "NAB": "A psalm of David. The LORD is my shepherd; there is nothing I lack.",
+        "CEI": "Salmo. Di Davide. Il Signore è il mio pastore: non manco di nulla;"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בִּ/נְא֣וֹת דֶּ֭שֶׁא יַרְבִּיצֵ֑/נִי עַל מֵ֖י מְנֻח֣וֹת יְנַהֲלֵֽ/נִי׃",
+        "LXX": "αὐτὸς ἐπὶ θαλασσῶν ἐθεμελίωσεν αὐτήν, καὶ ἐπὶ ποταμῶν ἡτοίμασεν αὐτήν.",
+        "VUL": "Quia ipse super maria fundavit eum,/ et super flumina præparavit eum./",
+        "SYN": "ибо Он основал ее на морях и на реках утвердил ее.",
+        "NEO": "Il me fait reposer dans de verts pâturages, il me mène près des eaux rafraîchissantes ;",
+        "NAB": "In green pastures you let me graze; to safe waters you lead me;",
+        "VAT_ES": "El me hace descansar en verdes praderas,",
+        "CEI": "su pascoli erbosi mi fa riposare ad acque tranquille mi conduce."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "נַפְשִׁ֥/י יְשׁוֹבֵ֑ב יַֽנְחֵ֥/נִי בְ/מַעְגְּלֵי צֶ֝֗דֶק לְמַ֣עַן שְׁמֽ/וֹ׃",
+        "LXX": "τίς ἀναβήσεται εἰς τὸ ὄρος τοῦ κυρίου, καὶ τίς στήσεται ἐν τόπῳ ἁγίῳ αὐτοῦ;",
+        "VUL": "Quis ascendet in montem Domini ?/ aut quis stabit in loco sancto ejus ?/",
+        "SYN": "Кто взойдет на гору Господню, или кто станет на святом месте Его?",
+        "NEO": "il restaure mon âme.",
+        "NAB": "you restore my strength. You guide me along the right path for the sake of your name.",
+        "VAT_ES": "y repara mis fuerzas;",
+        "CEI": "Mi rinfranca, mi guida per il giusto cammino, per amore del suo nome."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "גַּ֤ם כִּֽי אֵלֵ֨ךְ בְּ/גֵ֪יא צַלְמָ֡וֶת לֹא אִ֘ירָ֤א רָ֗ע כִּי אַתָּ֥ה עִמָּדִ֑/י שִׁבְטְ/ךָ֥ וּ֝/מִשְׁעַנְתֶּ֗/ךָ הֵ֣מָּה יְנַֽחֲמֻֽ/נִי׃",
+        "LXX": "ἀθῷος χερσὶν καὶ καθαρὸς τῇ καρδίᾳ, ὃς οὐκ ἔλαβεν ἐπὶ ματαίῳ τὴν ψυχὴν αὐτοῦ, καὶ οὐκ ὤμοσεν ἐπὶ δόλῳ τῷ πλησίον αὐτοῦ.",
+        "VUL": "Innocens manibus et mundo corde,/ qui non accepit in vano animam suam,/ nec juravit in dolo proximo suo :/",
+        "SYN": "Тот, у которого руки неповинны и сердце чисто, кто не клялся душею своею напрасно и не божился ложно [ближнему своему], -",
+        "NEO": "Même quand je marche dans une vallée d’ombre mortelle, je ne crains aucun mal, car tu es avec moi : ta houlette et ton bâton me rassurent.",
+        "NAB": "Even when I walk through a dark valley, I fear no harm for you are at my side; your rod and staff give me courage.",
+        "VAT_ES": "Aunque cruce por oscuras quebradas,",
+        "CEI": "Se dovessi camminare in una valle oscura, non temerei alcun male, perché tu sei con me. Il tuo bastone e il tuo vincastro mi danno sicurezza."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "תַּעֲרֹ֬ךְ לְ/פָנַ֨/י שֻׁלְחָ֗ן נֶ֥גֶד צֹרְרָ֑/י דִּשַּׁ֖נְתָּ בַ/שֶּׁ֥מֶן רֹ֝אשִׁ֗/י כּוֹסִ֥/י רְוָיָֽה׃",
+        "LXX": "οὗτος λήμψεται εὐλογίαν παρὰ Κυρίου, καὶ ἐλεημοσύνην παρὰ θεοῦ σωτῆρος αὐτοῦ.",
+        "VUL": "hic accipiet benedictionem a Domino,/ et misericordiam a Deo salutari suo./",
+        "SYN": "_тот_ получит благословение от Господа и милость от Бога, Спасителя своего.",
+        "NEO": "Tu dresses devant moi une table en face de mes ennemis ; tu répands l’huile sur ma tête ; ma coupe est débordante.",
+        "NAB": "You set a table before me as my enemies watch; You anoint my head with oil; my cup overflows.",
+        "VAT_ES": "Tú preparas ante mí una mesa,",
+        "CEI": "Davanti a me tu prepari una mensa sotto gli occhi dei miei nemici; cospargi di olio il mio capo. Il mio calice trabocca."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אַ֤ךְ ט֤וֹב וָ/חֶ֣סֶד יִ֭רְדְּפוּ/נִי כָּל יְמֵ֣י חַיָּ֑/י וְ/שַׁבְתִּ֥י בְּ/בֵית יְ֝הוָ֗ה לְ/אֹ֣רֶךְ יָמִֽים׃",
+        "LXX": "αὕτη ἡ γενεὰ ζητούντων αὐτόν, ζητούντων τὸ πρόσωπον τοῦ θεοῦ Ἰακώβ. διάψαλμα.",
+        "VUL": "Hæc est generatio quærentium eum,/ quærentium faciem Dei Jacob./",
+        "SYN": "Таков род ищущих Его, ищущих лица Твоего, Боже Иакова!",
+        "NEO": "Oui, le bonheur et la grâce m’accompagneront, tous les jours de ma vie, et j’habiterai dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, pour de longs jours.",
+        "NAB": "Only goodness and love will pursue me all the days of my life; I will dwell in the house of the LORD for years to come.",
+        "VAT_ES": "Tu bondad y tu gracia me acompañan",
+        "CEI": "Felicità e grazia mi saranno compagne tutti i giorni della mia vita, e abiterò nella casa del Signore per lunghissimi anni."
+      }
+    }
+  }
+}

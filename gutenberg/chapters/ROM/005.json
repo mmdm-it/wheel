@@ -1,0 +1,371 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ROM_005",
+  "book_key": "ROM",
+  "sequence": 5,
+  "chapter_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Δικαιωθέντες οὖν ἐκ πίστεως, εἰρήνην ἔχομεν πρὸς τὸν θεὸν διὰ τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ,",
+        "VUL": "Justificati ergo ex fide, pacem habeamus ad Deum per Dominum nostrum Jesum Christum :",
+        "SYN": "Итак, оправдавшись верою, мы имеем мир с Богом через Господа нашего Иисуса Христа,",
+        "NEO": "Étant donc justifiés par la foi, nous avons la paix avec Dieu par Notre-Seigneur Jésus-Christ+ 5:1 Nous avons. Vulg. \\+qt ayons.\\+qt**,",
+        "VAT_ES": "Justificados, entonces, por la fe, estamos en paz con Dios, por medio de nuestro Señor Jesucristo.",
+        "CEI": "Quanto poi alle cose di cui mi avete scritto, è cosa buona per l'uomo non toccare donna;"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "δι’ οὗ καὶ τὴν προσαγωγὴν ἐσχήκαμεν τῇ πίστει εἰς τὴν χάριν ταύτην ἐν ᾗ ἑστήκαμεν, καὶ καυχώμεθα ἐπ’ ἐλπίδι τῆς δόξης τοῦ θεοῦ.",
+        "VUL": "per quem et habemus accessum per fidem in gratiam istam, in qua stamus, et gloriamur in spe gloriæ filiorum Dei.",
+        "SYN": "через Которого верою и получили мы доступ к той благодати, в которой стоим и хвалимся надеждою славы Божией.",
+        "NEO": "à qui nous devons d’avoir eu accès par la foi à cette grâce dans laquelle nous demeurons fermes, et de nous glorifier dans l’espérance de la gloire de Dieu+ 5:2 D’avoir eu. Vulg. \\+qt d’avoir accès\\+qt* : allusion à l’office de grand prêtre rempli par N.-S. (Hébr. x, 29).*.",
+        "NAB": "through whom we have gained access (by faith) to this grace in which we stand, and we boast in hope of the glory of God.",
+        "VAT_ES": "Por él hemos alcanzado, mediante la fe, la gracia en la que estamos afianzados, y por él nos gloriamos en la esperanza de la gloria de Dios.",
+        "CEI": "tuttavia, per il pericolo dell'incontinenza, ciascuno abbia la propria moglie e ogni donna il proprio marito."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Οὐ μόνον δέ, ἀλλὰ καὶ καυχώμεθα ἐν ταῖς θλίψεσιν, εἰδότες ὅτι ἡ θλίψις ὑπομονὴν κατεργάζεται,",
+        "VUL": "Non solum autem, sed et gloriamur in tribulationibus : scientes quod tribulatio patientiam operatur :",
+        "SYN": "И не сим только, но хвалимся и скорбями, зная, что от скорби происходит терпение,",
+        "NEO": "Bien plus, nous nous glorifions même dans les tribulations, sachant que la tribulation produit la constance,",
+        "NAB": "Not only that, but we even boast of our afflictions, knowing that affliction produces endurance,",
+        "VAT_ES": "Más aún, nos gloriamos hasta de las mismas tribulaciones, porque sabemos que la tribulación produce la constancia;",
+        "CEI": "Il marito compia il suo dovere verso la moglie; ugualmente anche la moglie verso il marito."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "ἡ δὲ ὑπομονὴ δοκιμήν, ἡ δὲ δοκιμὴ ἐλπίδα·",
+        "VUL": "patientia autem probationem, probatio vero spem,",
+        "SYN": "от терпения опытность, от опытности надежда,",
+        "NEO": "la constance une vertu éprouvée, et la vertu éprouvée l’espérance.",
+        "NAB": "and endurance, proven character, and proven character, hope,",
+        "VAT_ES": "la constancia, la virtud probada; la virtud probada, la esperanza.",
+        "CEI": "La moglie non è arbitra del proprio corpo, ma lo è il marito; allo stesso modo anche il marito non è arbitro del proprio corpo, ma lo è la moglie."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "ἡ δὲ ἐλπὶς οὐ καταισχύνει, ὅτι ἡ ἀγάπη τοῦ θεοῦ ἐκκέχυται ἐν ταῖς καρδίαις ἡμῶν διὰ πνεύματος ἁγίου τοῦ δοθέντος ἡμῖν.",
+        "VUL": "spes autem non confundit : quia caritas Dei diffusa est in cordibus nostris per Spiritum Sanctum, qui datus est nobis.",
+        "SYN": "а надежда не постыжает, потому что любовь Божия излилась в сердца наши Духом Святым, данным нам.",
+        "NEO": "Or, l’espérance ne trompe pas, parce que l’amour de Dieu est répandu dans nos cœurs par l’Esprit-Saint qui nous a été donné.",
+        "NAB": "and hope does not disappoint, because the love of God has been poured out into our hearts through the holy Spirit that has been given to us.",
+        "VAT_ES": "Y la esperanza no quedará defraudada, porque el amor de Dios ha sido derramado en nuestros corazones por el Espíritu Santo, que nos ha sido dado.",
+        "CEI": "Non astenetevi tra voi se non di comune accordo e temporaneamente, per dedicarvi alla preghiera, e poi ritornate a stare insieme, perché satana non vi tenti nei momenti di passione."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ἔτι γὰρ χριστός, ὄντων ἡμῶν ἀσθενῶν, κατὰ καιρὸν ὑπὲρ ἀσεβῶν ἀπέθανεν.",
+        "VUL": "Ut quid enim Christus, cum adhuc infirmi essemus, secundum tempus, pro impiis mortuus est ?",
+        "SYN": "Ибо Христос, когда еще мы были немощны, в определенное время умер за нечестивых.",
+        "NEO": "Car, lorsque nous étions encore impuissants, le Christ, au temps marqué, est mort pour des impies.",
+        "NAB": "For Christ, while we were still helpless, yet died at the appointed time for the ungodly.",
+        "VAT_ES": "En efecto, cuando todavía éramos débiles, Cristo, en el tiempo señalado, murió por los pecadores.",
+        "CEI": "Questo però vi dico per concessione, non per comando."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Μόλις γὰρ ὑπὲρ δικαίου τις ἀποθανεῖται· ὑπὲρ γὰρ τοῦ ἀγαθοῦ τάχα τις καὶ τολμᾷ ἀποθανεῖν.",
+        "VUL": "vix enim pro justo quis moritur : nam pro bono forsitan quis audeat mori.",
+        "SYN": "Ибо едва ли кто умрет за праведника; разве за благодетеля, может быть, кто и решится умереть.",
+        "NEO": "C’est à peine si l’on meurt pour un juste, et peut-être quelqu’un saurait-il mourir pour un homme de bien.",
+        "NAB": "Indeed, only with difficulty does one die for a just person, though perhaps for a good person one might even find courage to die.",
+        "VAT_ES": "Difícilmente se encuentra alguien que dé su vida por un hombre justo; tal vez alguno sea capaz de morir por un bienhechor.",
+        "CEI": "Vorrei che tutti fossero come me; ma ciascuno ha il proprio dono da Dio, chi in un modo, chi in un altro."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Συνίστησιν δὲ τὴν ἑαυτοῦ ἀγάπην εἰς ἡμᾶς ὁ θεός, ὅτι ἔτι ἁμαρτωλῶν ὄντων ἡμῶν χριστὸς ὑπὲρ ἡμῶν ἀπέθανεν.",
+        "VUL": "Commendat autem caritatem suam Deus in nobis : quoniam cum adhuc peccatores essemus, secundum tempus,",
+        "SYN": "Но Бог Свою любовь к нам доказывает тем, что Христос умер за нас, когда мы были еще грешниками.",
+        "NEO": "Mais Dieu montre son amour envers nous en ce que, lorsque nous étions encore des pécheurs, [ou temps marqué*]",
+        "NAB": "But God proves his love for us in that while we were still sinners Christ died for us.",
+        "VAT_ES": "Pero la prueba de que Dios nos ama es que Cristo murió por nosotros cuando todavía éramos pecadores.",
+        "CEI": "Ai non sposati e alle vedove dico: è cosa buona per loro rimanere come sono io;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Πολλῷ οὖν μᾶλλον, δικαιωθέντες νῦν ἐν τῷ αἵματι αὐτοῦ, σωθησόμεθα δι’ αὐτοῦ ἀπὸ τῆς ὀργῆς.",
+        "VUL": "Christus pro nobis mortuus est : multo igitur magis nunc justificati in sanguine ipsius, salvi erimus ab ira per ipsum.",
+        "SYN": "Посему тем более ныне, будучи оправданы Кровию Его, спасемся Им от гнева.",
+        "NEO": "Jésus-Christ est mort pour nous. À plus forte raison donc, maintenant que nous sommes justifiés dans son sang, serons-nous sauvés par lui de la colère.",
+        "NAB": "How much more then, since we are now justified by his blood, will we be saved through him from the wrath.",
+        "VAT_ES": "Y ahora que estamos justificados por su sangre, con mayor razón seremos librados por él de la ira de Dios.",
+        "CEI": "ma se non sanno vivere in continenza, si sposino; è meglio sposarsi che ardere."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Εἰ γὰρ ἐχθροὶ ὄντες κατηλλάγημεν τῷ θεῷ διὰ τοῦ θανάτου τοῦ υἱοῦ αὐτοῦ, πολλῷ μᾶλλον καταλλαγέντες σωθησόμεθα ἐν τῇ ζωῇ αὐτοῦ·",
+        "VUL": "Si enim cum inimici essemus, reconciliati sumus Deo per mortem filii ejus : multo magis reconciliati, salvi erimus in vita ipsius.",
+        "SYN": "Ибо если, будучи врагами, мы примирились с Богом смертью Сына Его, то тем более, примирившись, спасемся жизнью Его.",
+        "NEO": "Car si, lorsque nous étions ennemis, nous avons été réconciliés avec Dieu par la mort de son Fils, à plus forte raison, étant réconciliés, serons-nous sauvés par sa vie+ 5:10 Suit (vers. 12-21) un parallèle entre J.-C. et Adam : de même qu’Adam a été le représentant de l’humanité pour sa perte, ainsi le Christ est le représentant de l’humanité pour son salut, la source inépuisable de la grâce et de la justice.*.",
+        "NAB": "Indeed, if, while we were enemies, we were reconciled to God through the death of his Son, how much more, once reconciled, will we be saved by his life.",
+        "VAT_ES": "Porque si siendo enemigos, fuimos reconciliados con Dios por la muerte de su Hijo, mucho más ahora que estamos reconciliados, seremos salvados por su vida.",
+        "CEI": "Agli sposati poi ordino, non io, ma il Signore: la moglie non si separi dal marito -"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "οὐ μόνον δέ, ἀλλὰ καὶ καυχώμενοι ἐν τῷ θεῷ διὰ τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ, δι’ οὗ νῦν τὴν καταλλαγὴν ἐλάβομεν.",
+        "VUL": "Non solum autem : sed et gloriamur in Deo per Dominum nostrum Jesum Christum, per quem nunc reconciliationem accepimus.",
+        "SYN": "И не довольно сего, но и хвалимся Богом чрез Господа нашего Иисуса Христа, посредством Которого мы получили ныне примирение.",
+        "NEO": "Bien plus, nous nous glorifions même en Dieu par Notre-Seigneur Jésus-Christ, par qui maintenant nous avons obtenu la réconciliation.",
+        "NAB": "Not only that, but we also boast of God through our Lord Jesus Christ, through whom we have now received reconciliation.",
+        "VAT_ES": "Y esto no es todo: nosotros nos gloriamos en Dios, por medio de nuestro Señor Jesucristo, por quien desde ahora hemos recibido la reconciliación.",
+        "CEI": "e qualora si separi, rimanga senza sposarsi o si riconcili con il marito - e il marito non ripudi la moglie."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "¶Διὰ τοῦτο, ὥσπερ δι’ ἑνὸς ἀνθρώπου ἡ ἁμαρτία εἰς τὸν κόσμον εἰσῆλθεν, καὶ διὰ τῆς ἁμαρτίας ὁ θάνατος, καὶ οὕτως εἰς πάντας ἀνθρώπους ὁ θάνατος διῆλθεν, ἐφ’ ᾧ πάντες ἥμαρτον-",
+        "VUL": "Propterea sicut per unum hominem peccatum in hunc mundum intravit, et per peccatum mors, et ita in omnes homines mors pertransiit, in quo omnes peccaverunt.",
+        "SYN": "Посему, как одним человеком грех вошел в мир, и грехом смерть, так и смерть перешла во всех человеков, _потому_ _что_ в нем все согрешили.",
+        "NEO": "Ainsi donc, comme par un seul homme le péché est entré dans le monde, et par le péché la mort… Et ainsi la mort a passé dans tous les hommes parce que tous ont péché+ 5:12 S. Paul, pressé de prouver ce qu’il vient d’avancer, oublie qu’il a commencé une comparaison et n’achève pas sa phrase ou plutôt il poursuit son raisonnement et il reprend sa phrase et l’achève au vers. 18. Au vers. 12 le second membre de la comparaison amenait ceci : de même par un seul homme, Jésus-Christ, la justice est entrée dans le monde et par la justice la vie. — Le \\+qt péché\\+qt* personnifié, (è amartia avec l’art.) considéré comme une puissance qui règne et domine dans le monde (vers. 21 ; vi, 12, 14 ; vii, 8, 9, 17), — \\+qt Parce que tous ont péché,\\+qt* en et avec ce seul homme, Adam, le représentant de l’humanité. Vulgate, \\+qt en qui\\+qt* (dans ce seul homme) \\+qt tous ont péché\\+qt* : Elle énonce explicitement ce que le grec ne dit qu’implicitement et indirectement. On pourrait même la ramener au grec, en traduisant \\+qt in quo\\+qt* dans le sens de \\+qt in eo quod, quatenus\\+qt*, en fr. \\+qt sur ce que, parce que.\\+qt**.",
+        "NAB": "Therefore, just as through one person sin entered the world, and through sin, death, and thus death came to all, inasmuch as all sinned -",
+        "VAT_ES": "Por lo tanto, por un solo hombre entró el pecado en el mundo, y por el pecado la muerte, y así la muerte pasó a todos los hombres, porque todos pecaron.",
+        "CEI": "Agli altri dico io, non il Signore: se un nostro fratello ha la moglie non credente e questa consente a rimanere con lui, non la ripudi;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "ἄχρι γὰρ νόμου ἁμαρτία ἦν ἐν κόσμῳ· ἁμαρτία δὲ οὐκ ἐλλογεῖται, μὴ ὄντος νόμου.",
+        "VUL": "Usque ad legem enim peccatum erat in mundo : peccatum autem non imputabatur, cum lex non esset.",
+        "SYN": "Ибо _и_ до закона грех был в мире; но грех не вменяется, когда нет закона.",
+        "NEO": "Car jusqu’à la Loi le péché était dans le monde ; or le péché n’est pas imputé lorsqu’il n’y a pas de loi+ 5:13 La mort pour S. Paul est la peine de la transgression d’une loi positive. Cependant il n’y a pas eu de loi positive d’Adam à Moïse, et cependant la mort régnait. Elle était donc l’effet du premier péché.*.",
+        "NAB": "for up to the time of the law, sin was in the world, though sin is not accounted when there is no law.",
+        "VAT_ES": "En efecto, el pecado ya estaba en el mundo, antes de la Ley, pero cuando no hay Ley, el pecado no se tiene en cuenta.",
+        "CEI": "e una donna che abbia il marito non credente, se questi consente a rimanere con lei, non lo ripudi:"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ ἐβασίλευσεν ὁ θάνατος ἀπὸ Ἀδὰμ μέχρι Μωϋσέως καὶ ἐπὶ τοὺς μὴ ἁμαρτήσαντας ἐπὶ τῷ ὁμοιώματι τῆς παραβάσεως Ἀδάμ, ὅς ἐστιν τύπος τοῦ μέλλοντος.",
+        "VUL": "Sed regnavit mors ab Adam usque ad Moysen etiam in eos qui non peccaverunt in similitudinem prævaricationis Adæ, qui est forma futuri.",
+        "SYN": "Однако же смерть царствовала от Адама до Моисея и над несогрешившими подобно преступлению Адама, который есть образ будущего.",
+        "NEO": "Cependant la mort a régné depuis Adam jusqu’à Moïse, même sur ceux qui n’avaient pas péché, par une transgression semblable à celle d’Adam, lequel est la figure de celui qui devait venir.",
+        "NAB": "But death reigned from Adam to Moses, even over those who did not sin after the pattern of the trespass of Adam, who is the type of the one who was to come.",
+        "VAT_ES": "Sin embargo, la muerte reinó desde Adán hasta Moisés, incluso en aquellos que no habían pecado, cometiendo una transgresión semejante a la de Adán, que es figura del que debía venir.",
+        "CEI": "perché il marito non credente viene reso santo dalla moglie credente e la moglie non credente viene resa santa dal marito credente; altrimenti i vostri figli sarebbero impuri, mentre invece sono santi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ οὐχ ὡς τὸ παράπτωμα, οὕτως καὶ τὸ χάρισμα. Εἰ γὰρ τῷ τοῦ ἑνὸς παραπτώματι οἱ πολλοὶ ἀπέθανον, πολλῷ μᾶλλον ἡ χάρις τοῦ θεοῦ καὶ ἡ δωρεὰ ἐν χάριτι τῇ τοῦ ἑνὸς ἀνθρώπου Ἰησοῦ χριστοῦ εἰς τοὺς πολλοὺς ἐπερίσσευσεν.",
+        "VUL": "Sed non sicut delictum, ita et donum : si enim unius delicto multi mortui sunt : multo magis gratia Dei et donum in gratia unius hominis Jesu Christi in plures abundavit.",
+        "SYN": "Но дар благодати не как преступление. Ибо если преступлением одного подверглись смерти многие, то тем более благодать Божия и дар по благодати одного Человека, Иисуса Христа, преизбыточествуют для многих.",
+        "NEO": "Mais il n’en est pas du don gratuit comme de la faute ; car si, par la faute d’un seul, tous les hommes sont morts, à plus forte raison la grâce de Dieu et le don se sont, par la grâce d’un seul homme, Jésus-Christ, abondamment répandus sur tous les hommes+ 5:15 15. (et au vers. 19) tous les hommes, en gr. οι πολλοι, \\+qt la multitude\\+qt* des enfants d’Adam. La Vulg. traduit \\+qt multi\\+qt*, beaucoup. L’Apôtre met en opposition \\+qt un\\+qt* et la \\+qt multitude\\+qt*, la masse, le genre humain, comme \\+qt un seul\\+qt* et \\+qt tous\\+qt*.*.",
+        "NAB": "But the gift is not like the transgression. For if by that one person's transgression the many died, how much more did the grace of God and the gracious gift of the one person Jesus Christ overflow for the many.",
+        "VAT_ES": "Pero no hay proporción entre el don y la falta. Porque si la falta de uno solo provocó la muerte de todos, la gracia de Dios y el don conferido por la gracia de un solo hombre, Jesucristo, fueron derramados mucho más abundantemente sobre todos.",
+        "CEI": "Ma se il non credente vuol separarsi, si separi; in queste circostanze il fratello o la sorella non sono soggetti a servitù; Dio vi ha chiamati alla pace!"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Καὶ οὐχ ὡς δι’ ἑνὸς ἁμαρτήσαντος, τὸ δώρημα· τὸ μὲν γὰρ κρίμα ἐξ ἑνὸς εἰς κατάκριμα, τὸ δὲ χάρισμα ἐκ πολλῶν παραπτωμάτων εἰς δικαίωμα.",
+        "VUL": "Et non sicut per unum peccatum, ita et donum. Nam judicium quidem ex uno in condemnationem : gratia autem ex multis delictis in justificationem.",
+        "SYN": "И дар не как _суд_ за одного согрешившего; ибо суд за одно _преступление_ -- к осуждению; а дар благодати -- к оправданию от многих преступлений.",
+        "NEO": "Et il n’en est pas du don comme des suites du péché d’un seul+ 5:16 16. Par un seul qui a péché ; Vulg., \\+qt par un seul péché ;\\+qt* même sens au fond.* ; car le jugement a été porté à cause d’une seule faute pour la condamnation, tandis que le don amène la justification de beaucoup de fautes.",
+        "NAB": "And the gift is not like the result of the one person's sinning. For after one sin there was the judgment that brought condemnation; but the gift, after many transgressions, brought acquittal.",
+        "VAT_ES": "Tampoco se puede comparar ese don con las consecuencias del pecado cometido por un solo hombre, ya que el juicio de condenación vino por una sola falta, mientras que el don de la gracia lleva a la justificación después de muchas faltas.",
+        "CEI": "E che sai tu, donna, se salverai il marito? O che ne sai tu, uomo, se salverai la moglie?"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Εἰ γὰρ τῷ τοῦ ἑνὸς παραπτώματι ὁ θάνατος ἐβασίλευσεν διὰ τοῦ ἑνός, πολλῷ μᾶλλον οἱ τὴν περισσείαν τῆς χάριτος καὶ τῆς δωρεᾶς τῆς δικαιοσύνης λαμβάνοντες ἐν ζωῇ βασιλεύσουσιν διὰ τοῦ ἑνὸς Ἰησοῦ χριστοῦ.",
+        "VUL": "Si enim unius delicto mors regnavit per unum : multo magis abundantiam gratiæ, et donationis, et justitiæ accipientes, in vita regnabunt per unum Jesum Christum.",
+        "SYN": "Ибо если преступлением одного смерть царствовала посредством одного, то тем более приемлющие обилие благодати и дар праведности будут царствовать в жизни посредством единого Иисуса Христа.",
+        "NEO": "En effet, si, par la faute d’un seul, la mort a régné par ce seul homme, à plus forte raison ceux qui reçoivent l’abondance de la grâce et du don de la justice régneront-ils dans la vie par le seul Jésus-Christ.",
+        "NAB": "For if, by the transgression of one person, death came to reign through that one, how much more will those who receive the abundance of grace and of the gift of justification come to reign in life through the one person Jesus Christ.",
+        "VAT_ES": "En efecto, si por la falta de uno solo reinó la muerte, con mucha más razón, vivirán y reinarán por medio de un solo hombre, Jesucristo, aquellos que han recibido abundantemente la gracia y el don de la justicia.",
+        "CEI": "Fuori di questi casi, ciascuno continui a vivere secondo la condizione che gli ha assegnato il Signore, così come Dio lo ha chiamato; così dispongo in tutte le chiese."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Ἄρα οὖν ὡς δι’ ἑνὸς παραπτώματος εἰς πάντας ἀνθρώπους εἰς κατάκριμα, οὕτως καὶ δι’ ἑνὸς δικαιώματος εἰς πάντας ἀνθρώπους εἰς δικαίωσιν ζωῆς.",
+        "VUL": "Igitur sicut per unius delictum in omnes homines in condemnationem : sic et per unius justitiam in omnes homines in justificationem vitæ.",
+        "SYN": "Посему, как преступлением одного всем человекам осуждение, так правдою одного всем человекам оправдание к жизни.",
+        "NEO": "Ainsi donc, comme par la faute d’un seul la condamnation est venue sur tous les hommes, ainsi par la justice d’un seul vient à tous les hommes la justification qui donne la vie.",
+        "NAB": "In conclusion, just as through one transgression condemnation came upon all, so through one righteous act acquittal and life came to all.",
+        "VAT_ES": "Por consiguiente, así como la falta de uno solo causó la condenación de todos, también el acto de justicia de uno solo producirá para todos los hombres la justificación que conduce a la Vida.",
+        "CEI": "Qualcuno è stato chiamato quando era circonciso? Non lo nasconda! È stato chiamato quando non era ancora circonciso? Non si faccia circoncidere!"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ὥσπερ γὰρ διὰ τῆς παρακοῆς τοῦ ἑνὸς ἀνθρώπου ἁμαρτωλοὶ κατεστάθησαν οἱ πολλοί, οὕτως καὶ διὰ τῆς ὑπακοῆς τοῦ ἑνὸς δίκαιοι κατασταθήσονται οἱ πολλοί.",
+        "VUL": "Sicut enim per inobedientiam unius hominis, peccatores constituti sunt multi : ita et per unius obeditionem, justi constituentur multi.",
+        "SYN": "Ибо, как непослушанием одного человека сделались многие грешными, так и послушанием одного сделаются праведными многие.",
+        "NEO": "De même en effet, que par la désobéissance d’un seul homme, tous ont été constitués pécheurs, de même par l’obéissance d’un seul tous seront constitués justes.",
+        "NAB": "For just as through the disobedience of one person the many were made sinners, so through the obedience of one the many will be made righteous.",
+        "VAT_ES": "Y de la misma manera que por la desobediencia de un solo hombre, todos se convirtieron en pecadores, también por la obediencia de uno solo, todos se convertirán en justos.",
+        "CEI": "La circoncisione non conta nulla, e la non circoncisione non conta nulla; conta invece l'osservanza dei comandamenti di Dio."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Νόμος δὲ παρεισῆλθεν, ἵνα πλεονάσῃ τὸ παράπτωμα· οὗ δὲ ἐπλεόνασεν ἡ ἁμαρτία, ὑπερεπερίσσευσεν ἡ χάρις·",
+        "VUL": "Lex autem subintravit ut abundaret delictum. Ubi autem abundavit delictum, superabundavit gratia :",
+        "SYN": "Закон же пришел после, и таким образом умножилось преступление. А когда умножился грех, стала преизобиловать благодать,",
+        "NEO": "La loi est intervenue pour faire abonder la faute ; mais là où le péché a abondé, la grâce a surabondé+ 5:20 Intervenue, entre Adam et J.-C. D’autres, \\+qt est venue en outre\\+qt* (gr. παρεισῆλθεν), à côté du péché qui était déjà entré εισῆλθεν) : comp. v. 12. — Vulgate, \\+qt est venue comme à la dérobée\\+qt*, sens qui ne va guère ici. Comp. Gal. ii, 4. — Pour faire abonder la faute : l’effet immédiat de la Loi fut d’augmenter le nombre des offenses, soit en faisant connaître et souvent désirer le péché à ceux qui l’ignoraient, soit même en multipliant par ses préceptes positifs, les occasions de chute et par suite les actes défendus. Ainsi en faisant sentir à l’homme sa misère elle eut pour effet, en fait et dans l’intention divine, de lui faire désirer le Sauveur ; elle fut par là un \\+qt pédagogue conduisant à J.-C\\+qt*. Voy. Gal. iii, 19 sv.*,",
+        "NAB": "The law entered in so that transgression might increase but, where sin increased, grace overflowed all the more,",
+        "VAT_ES": "Es verdad que la Ley entró para que se multiplicaran las transgresiones, pero donde abundó el pecado, sobreabundó la gracia.",
+        "CEI": "Ciascuno rimanga nella condizione in cui era quando fu chiamato."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "ἵνα ὥσπερ ἐβασίλευσεν ἡ ἁμαρτία ἐν τῷ θανάτῳ, οὕτως καὶ ἡ χάρις βασιλεύσῃ διὰ δικαιοσύνης εἰς ζωὴν αἰώνιον, διὰ Ἰησοῦ χριστοῦ τοῦ κυρίου ἡμῶν.",
+        "VUL": "ut sicut regnavit peccatum in mortem : ita et gratia regnet per justitiam in vitam æternam, per Jesum Christum Dominum nostrum.",
+        "SYN": "дабы, как грех царствовал к смерти, так и благодать воцарилась через праведность к жизни вечной Иисусом Христом, Господом нашим.",
+        "NEO": "afin que, comme le péché a régné par la mort, ainsi la grâce régnât par la justice pour la vie éternelle, par",
+        "NAB": "so that, as sin reigned in death, grace also might reign through justification for eternal life through Jesus Christ our Lord.",
+        "VAT_ES": "Porque así como el pecado reinó produciendo la muerte, también la gracia reinará por medio de la justicia para la Vida eterna, por Jesucristo, nuestro Señor.",
+        "CEI": "Sei stato chiamato da schiavo? Non ti preoccupare; ma anche se puoi diventare libero, profitta piuttosto della tua condizione!"
+      }
+    }
+  }
+}

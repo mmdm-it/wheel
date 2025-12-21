@@ -1,0 +1,285 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "OSE_010",
+  "book_key": "OSE",
+  "sequence": 10,
+  "chapter_in": {
+    "MT": 10,
+    "VUL": 10,
+    "LXX": 10
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "גֶּ֤פֶן בּוֹקֵק֙ יִשְׂרָאֵ֔ל פְּרִ֖י יְשַׁוֶּה לּ֑/וֹ כְּ/רֹ֣ב לְ/פִרְי֗/וֹ הִרְבָּה֙ לַֽ/מִּזְבְּח֔וֹת כְּ/ט֣וֹב לְ/אַרְצ֔/וֹ הֵיטִ֖יבוּ מַצֵּבֽוֹת׃",
+        "LXX": "Ἄμπελος εὐκληματοῦσα Ἰσραήλ, ὁ καρπὸς εὐθηνῶν αὐτῆς· κατὰ τὸ πλῆθος τῶν καρπῶν αὐτῆς ἐπλήθυνεν θυσιαστήρια, κατὰ τὰ ἀγαθὰ τῆς γῆς αὐτοῦ ᾠκοδόμησεν στήλας.",
+        "VUL": "[Vitis frondosa Israël,/ fructus adæquatus est ei :/ secundum multitudinem fructus sui multiplicavit altaria,/ juxta ubertatem terræ suæ exuberavit simulacris./",
+        "SYN": "Израиль - ветвистый виноград, умножает для себя плод: чем более у него плодов, тем более умножает жертвенники; чем лучше земля у него, тем более украшают они кумиры.",
+        "NEO": "Israël est une vigne luxuriante, qui s’est chargée de fruit. Plus ses fruits étaient abondants, plus il a multiplié les autels ; plus le pays était beau, plus belles ils ont fait les stèles.",
+        "NAB": "Israel is a luxuriant vine whose fruit matches its growth. The more abundant his fruit, the more altars he built; The more productive his land, the more sacred pillars he set up.",
+        "VAT_ES": "Israel era una viña exuberante, que producía su fruto. Cuanto más se multiplicaban sus frutos, más multiplicaba él los altares; cuanto mejor le iba al país, mejores hacía él las piedras conmemorativas.",
+        "CEI": "Rigogliosa vite era Israele, che dava frutto abbondante; ma più abbondante era il suo frutto, più moltiplicava gli altari; più ricca era la terra, più belle faceva le sue stele."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "חָלַ֥ק לִבָּ֖/ם עַתָּ֣ה יֶאְשָׁ֑מוּ ה֚וּא יַעֲרֹ֣ף מִזְבְּחוֹתָ֔/ם יְשֹׁדֵ֖ד מַצֵּבוֹתָֽ/ם׃",
+        "LXX": "ἐμέρισαν καρδίας αὐτῶν, νῦν ἀφανισθήσονται· αὐτὸς ⸂⸆⸃ κατασκάψει τὰ θυσιαστήρια αὐτῶν, ταλαιπωρήσουσιν αἱ στῆλαι αὐτῶν.",
+        "VUL": "Divisum est cor eorum, nunc interibunt ;/ ipse confringet simulacra eorum,/ depopulabitur aras eorum./",
+        "SYN": "Разделилось сердце их, за то они и будут наказаны: Он разрушит жертвенники их, сокрушит кумиры их.",
+        "NEO": "Leur cœur est hypocrite : ils vont en porter la peine. Lui, il renversera leurs autels, il détruira leurs stèles.",
+        "NAB": "Their heart is false, now they pay for their guilt; God shall break down their altars and destroy their sacred pillars.",
+        "VAT_ES": "Su corazón está dividido, ahora tendrán que expiar: el mismo Señor destrozará sus altares, devastará sus piedras conmemorativas.",
+        "CEI": "Il loro cuore è falso; orbene, sconteranno la pena! Egli stesso demolirà i loro altari, distruggerà le loro stele."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כִּ֤י עַתָּה֙ יֹֽאמְר֔וּ אֵ֥ין מֶ֖לֶךְ לָ֑/נוּ כִּ֣י לֹ֤א יָרֵ֨אנוּ֙ אֶת יְהֹוָ֔ה וְ/הַ/מֶּ֖לֶךְ מַה יַּֽעֲשֶׂה לָּֽ/נוּ׃",
+        "LXX": "διότι νῦν ἐροῦσιν Οὐκ ἔστιν βασιλεὺς ἡμῖν, ὅτι οὐκ ἐφοβήθημεν τὸν κύριον. ὁ δὲ βασιλεὺς τί ποιήσει ἡμῖν,",
+        "VUL": "Quia nunc dicent : Non est rex nobis,/ non enim timemus Dominum ;/ et rex quid faciet nobis ?/",
+        "SYN": "Теперь они говорят: \"нет у нас царя, ибо мы не убоялись Господа; а царь, - что он нам сделает?\"",
+        "NEO": "Bientôt ils diront : « Nous n’avons plus de roi ; parce que nous n’avons pas craint \\+w Yahweh|strong=\"H3068\"\\+w** ; et le roi, que fera-t-il pour nous ? »",
+        "NAB": "If they would say, \"We have no king\" - Since they do not fear the LORD, what can the king do for them?",
+        "VAT_ES": "Seguramente dirán entonces: «No tenemos rey, porque no hemos temido al Señor. Pero el rey &iquest;que podría hacer por nosotros?».",
+        "CEI": "Allora diranno: \"Non abbiamo più re, perchè non temiamo il Signore. Ma anche il re che potrebbe fare per noi?\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "דִּבְּר֣וּ דְבָרִ֔ים אָל֥וֹת שָׁ֖וְא כָּרֹ֣ת בְּרִ֑ית וּ/פָרַ֤ח כָּ/רֹאשׁ֙ מִשְׁפָּ֔ט עַ֖ל תַּלְמֵ֥י שָׂדָֽי׃",
+        "LXX": "λαλῶν ῥήματα προφάσεις ψευδεῖς; διαθήσεται διαθήκην, ἀνατελεῖ ὡς ἄγρωστις κρίμα ἐπὶ χέρσον ἀγροῦ.",
+        "VUL": "Loquimini verba visionis inutilis, et ferietis fdus ;/ et germinabit quasi amaritudo judicium super sulcos agri./",
+        "SYN": "Говорят слова _пустые,_ клянутся ложно, заключают союзы; за то явится суд над ними, как ядовитая трава на бороздах поля.",
+        "NEO": "Ils diront des paroles, faisant de vains serments, concluant des alliances, et le jugement éclôt comme le pavot, dans les sillons des champs.",
+        "NAB": "Nothing but make promises, swear false oaths, and make alliances, While justice grows wild like wormwood in a plowed field!",
+        "VAT_ES": "Se pronuncian palabras, se jura en falso, se firman alianzas, mientras el derecho crece como la hierba venenosa en los surcos de los campos.",
+        "CEI": "Dicono parole vane, giurano il falso, concludono alleanze: la giustizia fiorisce come cicuta nei solchi dei campi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לְ/עֶגְלוֹת֙ בֵּ֣ית אָ֔וֶן יָג֖וּרוּ שְׁכַ֣ן שֹֽׁמְר֑וֹן כִּי אָבַ֨ל עָלָ֜י/ו עַמּ֗/וֹ וּ/כְמָרָי/ו֙ עָלָ֣י/ו יָגִ֔ילוּ עַל כְּבוֹד֖/וֹ כִּֽי גָלָ֥ה מִמֶּֽ/נּוּ׃",
+        "LXX": "τῷ μόσχῳ τοῦ οἴκου Ὢν παροικήσουσιν κατοικοῦντες Σαμάρειαν, ὅτι ἐπένθησεν λαὸς αὐτοῦ ἐπ’ αὐτόν· καὶ καθὼς παρεπίκραναν αὐτόν, ἐπιχαροῦνται ἐπὶ τὴν δόξαν αὐτοῦ, ὅτι μετῳκίσθη ἀπ’ αὐτοῦ.",
+        "VUL": "Vaccas Bethaven coluerunt habitatores Samariæ ;/ quia luxit super eum populus ejus,/ et æditui ejus super eum exsultaverunt/ in gloria ejus, quia migravit ab eo./",
+        "SYN": "За тельца Беф-Авена вострепещут жители Самарии; восплачет о нем народ его, и жрецы его, радовавшиеся о нем, будут плакать о славе его, потому что она отойдет от него.",
+        "NEO": "Pour les génisses de Bethaven, les habitants de Samarie ont peur ; car son peuple prend le deuil sur l’idole, et ses prêtres tremblent à son sujet, pour sa gloire qui a émigré loin de lui.",
+        "NAB": "The inhabitants of Samaria fear for the calf of Beth-aven; The people mourn for it and its priests wail over it, because the glory has departed from it.",
+        "VAT_ES": "Los habitantes de Samaría tiemblan por el ternero de Bet Aven. Sí, su pueblo está de duelo por él, lo mismo que sus sacerdotes: &iexcl;que se alegren de su gloria, ahora que ha sido desterrada lejos de nosotros!",
+        "CEI": "Gli abitanti di Samaria trepidano per il vitello di Bet-Avèn, ne fa lutto il suo popolo e i suoi sacerdoti ne fanno lamento, perchè la sua gloria sta per andarsene."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "גַּם אוֹת/וֹ֙ לְ/אַשּׁ֣וּר יוּבָ֔ל מִנְחָ֖ה לְ/מֶ֣לֶךְ יָרֵ֑ב בָּשְׁנָה֙ אֶפְרַ֣יִם יִקָּ֔ח וְ/יֵב֥וֹשׁ יִשְׂרָאֵ֖ל מֵ/עֲצָתֽ/וֹ׃",
+        "LXX": "καὶ αὐτὸν εἰς Ἀσσυρίους δήσαντες, ἀπήνεγκαν ξένια τῷ βασιλεῖ Ἰαρείμ· ἐν δόματι Ἐφράιμ δέξεται, καὶ αἰσχυνθήσεται Ἰσραὴλ ἐν τῇ βουλῇ αὐτοῦ.",
+        "VUL": "Siquidem et ipse in Assur delatus est,/ munus regi ultori./ Confusio Ephraim capiet,/ et confundetur Israël in voluntate sua./",
+        "SYN": "И сам он отнесен будет в Ассирию, в дар царю Иареву; постыжен будет Ефрем, и посрамится Израиль от замысла своего.",
+        "NEO": "Elle aussi, on la transportera en Assyrie, comme offrande au roi vengeur ; la confusion saisira Ephraïm ; Israël aura honte de ses desseins.",
+        "NAB": "It too shall be carried to Assyria, as an offering to the great king. Ephraim shall be taken into captivity, Israel be shamed by his schemes.",
+        "VAT_ES": "El ternero será llevado a Asiria como tributo para el gran rey. Efraím soportará el oprobio e Israel se avergonzará de sus intrigas.",
+        "CEI": "Sarà portato anch'esso in Assiria come offerta al gran re. Efraim ne avrà vergogna, Israele arrossirà del suo consiglio."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "נִדְמֶ֥ה שֹׁמְר֖וֹן מַלְכָּ֑/הּ כְּ/קֶ֖צֶף עַל פְּנֵי מָֽיִם׃",
+        "LXX": "ἀπέρριψεν Σαμάρεια βασιλέα αὐτῆς ὡς φρύγανον ἐπὶ προσώπου ὕδατος·",
+        "VUL": "Transire fecit Samaria regem suum/ quasi spumam super faciem aquæ./",
+        "SYN": "Исчезнет в Самарии царь ее, как пена на поверхности воды.",
+        "NEO": "Samarie est anéantie ; son roi est comme un fétu sur la surface de l’eau.",
+        "NAB": "The king of Samaria shall disappear, like foam upon the waters.",
+        "VAT_ES": "&iexcl;Samaría está completamente perdida! Su rey es como una astilla sobre la superficie de las aguas.",
+        "CEI": "Perirà il re di Samaria come un fuscello sull'acqua."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/נִשְׁמְד֞וּ בָּמ֣וֹת אָ֗וֶן חַטַּאת֙ יִשְׂרָאֵ֔ל ק֣וֹץ וְ/דַרְדַּ֔ר יַעֲלֶ֖ה עַל מִזְבְּחוֹתָ֑/ם וְ/אָמְר֤וּ לֶֽ/הָרִים֙ כַּסּ֔וּ/נוּ וְ/לַ/גְּבָע֖וֹת נִפְל֥וּ עָלֵֽי/נוּ׃",
+        "LXX": "καὶ ἐξαρθήσονται βωμοὶ Ὤν, ἁμαρτήματα τοῦ Ἰσραήλ· ἄκανθαι καὶ τρίβολοι ἀναβήσονται ἐπὶ τὰ θυσιαστήρια αὐτῶν· καὶ ἐροῦσιν τοῖς ὄρεσιν Καλύψατε ἡμᾶς, καὶ τοῖς βουνοῖς Πέσατε ἐφ’ ἡμᾶς.",
+        "VUL": "Et disperdentur excelsa idoli, peccatum Israël ;/ lappa et tribulus ascendet super aras eorum :/ et dicent montibus : Operite nos,/ et collibus : Cadite super nos./",
+        "SYN": "И истреблены будут высоты Авена, грех Израиля; терние и волчцы вырастут на жертвенниках их, и скажут они горам: \"покройте нас\", и холмам: \"падите на нас\".",
+        "NEO": "Ils seront détruits les hauts lieux d’Aven, péché d’Israël ; l’épine et la ronce monteront sur leurs autels. Ils diront aux montagnes : « Couvrez-nous ! » et aux collines : « Tombez sur nous ! »",
+        "NAB": "The high places of Aven shall be destroyed, the sin of Israel; thorns and thistles shall overgrow their altars. Then they shall cry out to the mountains, \"Cover us!\" and to the hills, \"Fall upon us!\"",
+        "VAT_ES": "Los lugares altos de Aven, el pecado de Israel, también serán destruidos; espinas y cardos invadirán sus altares. Ellos dirán entonces a las montañas: «Cúbrannos», y a las colinas: «&iexcl;Caigan sobres nosotros!».",
+        "CEI": "Le alture dell'iniquità, peccato d'Israele, saranno distrutte, spine e rovi cresceranno sui loro altari; diranno ai monti: \"Copriteci\" e ai colli: \"Cadete su di noi\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "מִ/ימֵי֙ הַ/גִּבְעָ֔ה חָטָ֖אתָ יִשְׂרָאֵ֑ל שָׁ֣ם עָמָ֔דוּ לֹֽא תַשִּׂיגֵ֧/ם בַּ/גִּבְעָ֛ה מִלְחָמָ֖ה עַל בְּנֵ֥י עַֽלְוָֽה׃",
+        "LXX": "ἀφ’ οὗ οἱ βουνοί, ἥμαρτεν Ἰσραήλ, ἐκεῖ ἔστησαν· οὐ μὴ καταλάβῃ αὐτοὺς ⸆ ἐν τῷ βουνῷ πόλεμος ἐπὶ τὰ τέκνα ἀδικίας",
+        "VUL": "Ex diebus Gabaa peccavit Israël ;/ ibi steterunt./ Non comprehendet eos in Gabaa/ prælium super filios iniquitatis./",
+        "SYN": "Больше, нежели во дни Гивы, грешил ты, Израиль; там они устояли; война в Гаваоне против сынов нечестия не постигла их.",
+        "NEO": "Depuis les jours de Gabaa tu as péché, Israël ; ils persévèrent dans le crime ; ne les atteindra-t-elle pas à Gabaa, la guerre déclarée aux fils d’iniquité ?",
+        "NAB": "Since the days of Gibeah you have sinned, O Israel. There they took their stand; war was not to reach them in Gibeah.",
+        "VAT_ES": "&iexcl;Desde los días de Guibeá, tú has pecado, Israel! &iexcl;Allí se han quedado! &iquest;No los sorprenderá en Guibeá la guerra contra los injustos?",
+        "CEI": "Fin dai giorni di Gàbaa tu hai peccato, Israele. Là si fermarono, e la battaglia non li raggiungerà forse in Gàbaa contro i figli dell'iniquità?"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "בְּ/אַוָּתִ֖/י וְ/אֶסֳּרֵ֑/ם וְ/אֻסְּפ֤וּ עֲלֵי/הֶם֙ עַמִּ֔ים בְּ/אָסְרָ֖/ם לִ/שְׁתֵּ֥י עינת/ם עוֹנֹתָֽ/ם׃",
+        "LXX": "παιδεῦσαι αὐτούς· καὶ συναχθήσονται ἐπ’ αὐτοὺς λαοί, ἐν τῷ παιδεύεσθαι αὐτοὺς ἐν ταῖς δυσὶν ἀδικίαις αὐτῶν.",
+        "VUL": "Juxta desiderium meum corripiam eos :/ congregabuntur super eos populi,/ cum corripientur propter duas iniquitates suas./",
+        "SYN": "По желанию Моему накажу их, и соберутся против них народы, и они будут связаны за двойное преступление их.",
+        "NEO": "Je les châtierai à mon gré, et les peuples seront rassemblés contre eux, lorsqu’on les liera à leurs deux péchés.",
+        "NAB": "Against the wanton people I came and I chastised them; I gathered troops against them when I chastised them for their two crimes.",
+        "VAT_ES": "Yo los corregiré como me parezca: los pueblos se reunirán contra ellos, cuando sean corregidos por su doble crimen.",
+        "CEI": "Io verrò a colpirli: si raduneranno i popoli contro di loro perchè sono attaccati alla loro duplice colpa. Israele ha deluso l'aspettativa del Signore"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/אֶפְרַ֜יִם עֶגְלָ֤ה מְלֻמָּדָה֙ אֹהַ֣בְתִּי לָ/ד֔וּשׁ וַ/אֲנִ֣י עָבַ֔רְתִּי עַל ט֖וּב צַוָּארָ֑/הּ אַרְכִּ֤יב אֶפְרַ֨יִם֙ יַחֲר֣וֹשׁ יְהוּדָ֔ה יְשַׂדֶּד ל֖/וֹ יַעֲקֹֽב׃",
+        "LXX": "Ἐφράιμ δάμαλις δεδιδαγμένη ἀγαπᾷν νεῖκος, ἐγὼ δὲ ἐπελεύσομαι ἐπὶ τὸ κάλλιστον τοῦ τραχήλου αὐτῆς· ἐπιβιβῶ Ἐφράιμ, παρασιωπήσομαι Ἰούδαν, ἐνισχύσει αὐτῷ Ἰακώβ.",
+        "VUL": "Ephraim vitula docta diligere trituram,/ et ego transivi super pulchritudinem colli ejus :/ ascendam super Ephraim,/ arabit Judas ;/ confringet sibi sulcos Jacob./",
+        "SYN": "Ефрем - обученная телица, привычная к молотьбе, и Я Сам возложу ярмо на тучную шею его; на Ефреме будут верхом ездить, Иуда будет пахать, Иаков будет боронить.",
+        "NEO": "Ephraïm était une génisse bien dressée, qui prenait plaisir à fouler le blé. Et moi, j’ai fait passer le joug sur son beau cou ; j’attellerai Ephraïm, Juda labourera, Jacob traînera la herse.",
+        "NAB": "Ephraim was a trained heifer, willing to thresh; I myself laid a yoke upon her fair neck; Ephraim was to be harnessed, Judah was to plow, Jacob was to break his furrows:",
+        "VAT_ES": "Efraím era una ternera bien adiestrada, le gustaba trillar. Pero yo hice pasar el yugo sobre su hermosa cerviz: yo unciré a Efraím, Judá tendrá que arar, Jacob pasará el rastrillo.",
+        "CEI": "Efraim è una giovenca addestrata cui piace trebbiare il grano. Ma io farò pesare il giogo sul suo bel collo; attaccherò Efraim all'aratro e Giacobbe all'erpice."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "זִרְע֨וּ לָ/כֶ֤ם לִ/צְדָקָה֙ קִצְר֣וּ לְ/פִי חֶ֔סֶד נִ֥ירוּ לָ/כֶ֖ם נִ֑יר וְ/עֵת֙ לִ/דְר֣וֹשׁ אֶת יְהוָ֔ה עַד יָב֕וֹא וְ/יֹרֶ֥ה צֶ֖דֶק לָ/כֶֽם׃",
+        "LXX": "σπείρατε ἑαυτοῖς εἰς δικαιοσύνην, τρυγήσατε εἰς καρπὸν ζωῆς, φωτίσατε ἑαυτοῖς φῶς γνώσεως, ἐκζητήσατε τὸν κύριον ἕως τοῦ ἐλθεῖν γενήματα δικαιοσύνης ἡμῖν.",
+        "VUL": "Seminate vobis in justitia,/ et metite in ore misericordiæ./ Innovate vobis novale ;/ tempus autem requirendi Dominum,/ cum venerit qui docebit vos justitiam./",
+        "SYN": "Сейте себе в правду, и пожнете милость; распахивайте у себя новину, ибо время взыскать Господа, чтобы Он, когда придет, дождем пролил на вас правду.",
+        "NEO": "Faites vos semences selon la justice, moissonnez selon la miséricorde, défrichez-vous des terres nouvelles ; il est temps de chercher \\+w Yahweh|strong=\"H3068\"\\+w**, jusqu’à ce qu’il vienne répandre sur vous la justice.",
+        "NAB": "\"Sow for yourselves justice, reap the fruit of piety; Break up for yourselves a new field, for it is time to seek the LORD, till he come and rain down justice upon you.\"",
+        "VAT_ES": "Siembren semillas de justicia, cosechen el fruto de la fidelidad, roturen un campo nuevo: es tiempo de buscar al Señor, hasta que él venga y haga llover para ustedes la justicia.",
+        "CEI": "Seminate per voi secondo giustizia e mieterete secondo bontà; dissodatevi un campo nuovo, perchè è tempo di cercare il Signore, finchè egli venga e diffonda su di voi la giustizia."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "חֲרַשְׁתֶּם רֶ֛שַׁע עַוְלָ֥תָ/ה קְצַרְתֶּ֖ם אֲכַלְתֶּ֣ם פְּרִי כָ֑חַשׁ כִּֽי בָטַ֥חְתָּ בְ/דַרְכְּ/ךָ֖ בְּ/רֹ֥ב גִּבּוֹרֶֽי/ךָ׃",
+        "LXX": "ἵνα τί παρεσιωπήσατε ἀσέβειαν, καὶ τὰς ἀδικίας αὐτῆς ἐτρυγήσατε, ἐφάγετε καρπὸν ψευδῆ; ὅτι ἤλπισας ἐν τοῖς ἁμαρτήμασίν σου, ἐν πλήθει δυνάμεώς σου,",
+        "VUL": "Arastis impietatem,/ iniquitatem messuistis :/ comedistis frugem mendacii,/ quia confisus es in viis tuis,/ in multitudine fortium tuorum./",
+        "SYN": "Вы возделывали нечестие, пожинаете беззаконие, едите плод лжи, потому что ты надеялся на путь твой, на множество ратников твоих.",
+        "NEO": "Mais vous avez labouré la méchanceté, vous avez moissonné l’iniquité, vous avez mangé le fruit du mensonge. Tu t’es confié dans tes propres voies, dans le grand nombre de tes vaillants.",
+        "NAB": "But you have cultivated wickedness, reaped perversity, and eaten the fruit of falsehood. Because you have trusted in your chariots, and in your many warriors,",
+        "VAT_ES": "Ustedes han arado la maldad, han cosechado la injusticia, han comido el fruto de la mentira. Porque has confiado en tu poderío, en la multitud de tus guerreros,",
+        "CEI": "Avete arato empietà e mietuto ingiustizia, avete mangiato il frutto della menzogna. Poiché hai riposto fiducia nei tuoi carri e nella moltitudine dei tuoi guerrieri,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/קָ֣אם שָׁאוֹן֮ בְּ/עַמֶּ/ךָ֒ וְ/כָל מִבְצָרֶ֣י/ךָ יוּשַּׁ֔ד כְּ/שֹׁ֧ד שַֽׁלְמַ֛ן בֵּ֥ית אַֽרְבֵ֖אל בְּ/י֣וֹם מִלְחָמָ֑ה אֵ֥ם עַל בָּנִ֖ים רֻטָּֽשָׁה׃",
+        "LXX": "καὶ ἐξαναστήσεται ἀπώλεια ἐν τῷ λαῷ σου, καὶ πάντα τὰ περιτετειχισμένα σου οἰχήσεται. ὡς ἄρχων Σαλαμὰν ἐκ τοῦ οἴκου Ἰεροβοάμ, ἐν ἡμέραις πολέμου μητέρα ἐπὶ τέκνοις ἠδάφισαν,",
+        "VUL": "Consurget tumultus in populo tuo ;/ et omnes munitiones tuæ vastabuntur,/ sicut vastatus est Salmana a domo ejus qui judicavit Baal/ in die prælii, matre super filios allisa./",
+        "SYN": "И произойдет смятение в народе твоем, и все твердыни твои будут разрушены, как Салман разрушил Бет-Арбел в день брани: мать была убита с детьми.",
+        "NEO": "Le tumulte s’élève parmi ton peuple, et toutes tes forteresses seront dévastées, comme Salman dévasta Beth-Arbel, au jour de la guerre où la mère fut écrasée sur ses enfants.",
+        "NAB": "Turmoil shall break out among your tribes and all your fortresses shall be ravaged As Salman ravaged Beth-arbel in time of war, smashing mothers and their children.",
+        "VAT_ES": "habrá un tumulto en medio de tu pueblo; todas tus fortalezas serán devastadas, como Salmán devastó a Bet Arbel en el día del combate, cuando fue aplastada la madre con sus hijos.",
+        "CEI": "un rumore di guerra si alzerà contro le tue città e tutte le tue fortezze saranno distrutte. Come Salmàn devastò Bet-Arbèl nel giorno della battaglia in cui la madre fu sfracellata sui figli,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כָּ֗כָה עָשָׂ֤ה לָ/כֶם֙ בֵּֽית אֵ֔ל מִ/פְּנֵ֖י רָעַ֣ת רָֽעַתְ/כֶ֑ם בַּ/שַּׁ֕חַר נִדְמֹ֥ה נִדְמָ֖ה מֶ֥לֶךְ יִשְׂרָאֵֽל׃",
+        "LXX": "οὕτως ποιήσω ὑμῖν, οἶκος τοῦ Ἰσραήλ, ἀπὸ προσώπου ἀδικίας κακιῶν ὑμῶν.",
+        "VUL": "Sic fecit vobis Bethel,/ a facie malitiæ nequitiarum vestrarum.]",
+        "SYN": "Вот что причинит вам Вефиль за крайнее нечестие ваше.",
+        "NEO": "Voilà ce que vous a fait Béthel, à cause de votre extrême méchanceté. Vienne l’aurore, et c’en est fait du roi d’Israël !",
+        "NAB": "So shall it be done to you, Bethel, because of your utter wickedness: At dawn the king of Israel shall perish utterly.",
+        "VAT_ES": "Esto es lo que les hizo Betel, por la enorme maldad de ustedes: al despuntar el alba, el rey de Israel estará completamente perdido.",
+        "CEI": "così sarà fatto a te, gente d'Israele, per l'enormità della tua malizia. All'alba sarà la fine del re d'Israele."
+      }
+    }
+  }
+}

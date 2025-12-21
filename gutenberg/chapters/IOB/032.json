@@ -1,0 +1,411 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOB_032",
+  "book_key": "IOB",
+  "sequence": 32,
+  "chapter_in": {
+    "MT": 32,
+    "VUL": 32,
+    "LXX": 32
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַֽ/יִּשְׁבְּת֡וּ שְׁלֹ֤שֶׁת הָ/אֲנָשִׁ֣ים הָ֭/אֵלֶּה מֵ/עֲנ֣וֹת אֶת אִיּ֑וֹב כִּ֤י ה֖וּא צַדִּ֣יק בְּ/עֵינָֽי/ו׃",
+        "LXX": "Καὶ ἐπαύσατο Ἰὼβ ῥήμασιν· ἡσύχασαν δὲ καὶ οἱ τρεῖς φίλοι αὐτοῦ ἔτι ἀντειπεῖν Ἰώβ, ἦν γὰρ Ἰὼβ δίκαιος ἐναντίον αὐτῶν.",
+        "VUL": "Omiserunt autem tres viri isti respondere Job, eo quod justus sibi videretur.",
+        "SYN": "Когда те три мужа перестали отвечать Иову, потому что он был прав в глазах своих,",
+        "NEO": "Ces trois hommes cessèrent de répondre à Job, parce qu’il persistait à se regarder comme juste.",
+        "NAB": "Then the three men ceased to answer Job, because he was righteous in his own eyes.",
+        "VAT_ES": "Yo establecí un pacto con mis ojos para no fijar la mirada en ninguna joven.",
+        "CEI": "quei tre uomini cessarono di rispondere a Giobbe, perchè egli si riteneva giusto."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּ֤חַר אַ֨ף אֱלִיה֣וּא בֶן בַּרַכְאֵ֣ל הַ/בּוּזִי֮ מִ/מִּשְׁפַּ֪חַ֫ת רָ֥ם בְּ֭/אִיּוֹב חָרָ֣ה אַפּ֑/וֹ עַֽל צַדְּק֥/וֹ נַ֝פְשׁ֗/וֹ מֵ/אֱלֹהִֽים׃",
+        "LXX": "ὠργίσθη δὲ Ἐλιοῦς ὁ τοῦ Βαραχιὴλ ὁ Βουζείτης ἐκ τῆς συγγενείας Ῥάμ, τῆς Αὐσείτιδος χώρας· ὠργίσθη δὲ τῷ Ἰὼβ σφόδρα, διότι ἀπέφηνεν ἑαυτὸν δίκαιον ἐναντίον Κυρίου.",
+        "VUL": "Et iratus indignatusque est Eliu filius Barachel Buzites, de cognatione Ram : iratus est autem adversum Job, eo quod justum se esse diceret coram Deo.",
+        "SYN": "тогда воспылал гнев Елиуя, сына Варахиилова, Вузитянина из племени Рамова: воспылал гнев его на Иова за то, что он оправдывал себя больше, нежели Бога,",
+        "NEO": "Alors s’alluma la colère d’Eliu, fils de Barachel le Bouzite, de la famille de Ram. Sa colère s’alluma contre Job, parce qu’il se prétendait plus juste que Dieu.",
+        "NAB": "But the anger of Elihu, son of Barachel the Buzite, of the family of Ram, was kindled. He was angry with Job for considering himself rather than God to be in the right.",
+        "VAT_ES": "Porque &iquest;cuál es la porción que Dios asigna desde lo alto y la herencia que el Todopoderoso distribuye desde el cielo?",
+        "CEI": "Allora si accese lo sdegno di Eliu, figlio di Barachele il Buzita, della tribù di Ram. Si accese di sdegno contro Giobbe, perché pretendeva d'aver ragione di fronte a Dio;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וּ/בִ/שְׁלֹ֣שֶׁת רֵעָי/ו֮ חָרָ֪ה אַ֫פּ֥/וֹ עַ֤ל אֲשֶׁ֣ר לֹא מָצְא֣וּ מַעֲנֶ֑ה וַ֝/יַּרְשִׁ֗יעוּ אֶת אִיּֽוֹב׃",
+        "LXX": "καὶ κατὰ τῶν τριῶν δὲ φίλων ὠργίσθη σφόδρα, διότι οὐκ ἠδυνήθησαν ἀποκριθῆναι ἀντίθετα Ἰώβ, καὶ ἔθεντο αὐτὸν εἶναι ἀσεβῆ.",
+        "VUL": "Porro adversum amicos ejus indignatus est, eo quod non invenissent responsionem rationabilem, sed tantummodo condemnassent Job.",
+        "SYN": "а на трех друзей его воспылал гнев его за то, что они не нашли, что отвечать, а между тем обвиняли Иова.",
+        "NEO": "Elle s’alluma aussi contre ses trois amis, parce qu’ils n’avaient pas trouvé de bonnes réponse à lui faire et que néanmoins ils condamnaient Job.",
+        "NAB": "He was angry also with the three friends because they had not found a good answer and had not condemned Job.",
+        "VAT_ES": "&iquest;No es la ruina para el injusto y el desastre para los que hacen el mal?",
+        "CEI": "si accese di sdegno anche contro i suoi tre amici, perché non avevano trovato di che rispondere, sebbene avessero dichiarato Giobbe colpevole."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וֶֽ/אֱלִיה֗וּ חִכָּ֣ה אֶת אִ֭יּוֹב בִּ/דְבָרִ֑ים כִּ֤י זְֽקֵנִים הֵ֖מָּה מִמֶּ֣/נּוּ לְ/יָמִֽים׃",
+        "LXX": "Ἐλιοῦς δὲ ὑπέμεινεν δοῦναι ἀπόκρισιν Ἰώβ, ὅτι πρεσβύτεροι αὐτοῦ εἰσιν ἡμέραις.",
+        "VUL": "Igitur Eliu expectavit Job loquentem, eo quod seniores essent qui loquebantur.",
+        "SYN": "Елиуй ждал, пока Иов говорил, потому что они летами были старше его.",
+        "NEO": "Comme ils étaient plus âgés que lui, Eliu avait attendu pour parler à Job.",
+        "NAB": "But since these men were older than he, Elihu bided his time before addressing Job.",
+        "VAT_ES": "&iquest;Acaso él no ve mis caminos y cuenta todos mis pasos?",
+        "CEI": "Però Eliu aveva aspettato, mentre essi parlavano con Giobbe, perché erano più vecchi di lui in età."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤רְא אֱלִיה֗וּא כִּ֘י אֵ֤ין מַעֲנֶ֗ה בְּ֭/פִי שְׁלֹ֥שֶׁת הָ/אֲנָשִׁ֗ים וַ/יִּ֥חַר אַפּֽ/וֹ׃",
+        "LXX": "καὶ εἶδεν Ἐλιοῦς ὅτι οὐκ ἔστιν ἀπόκρισις ἐν στόματι τῶν τριῶν ἀνδρῶν, καὶ ἐθυμώθη ὀργῇ αὐτοῦ.",
+        "VUL": "Cum autem vidisset quod tres respondere non potuissent, iratus est vehementer.",
+        "SYN": "Когда же Елиуй увидел, что нет ответа в устах тех трех мужей, тогда воспылал гнев его.",
+        "NEO": "Mais voyant qu’il n’y avait plus de réponse dans la bouche de ces trois hommes, il s’enflamma de colère.",
+        "NAB": "When, however, Elihu saw that there was no reply in the mouths of the three men, his wrath was inflamed.",
+        "VAT_ES": "Si caminé al lado de la mentira y mis pies corrieron hacia el engaño,",
+        "CEI": "Quando dunque vide che sulla bocca di questi tre uomini non vi era più alcuna risposta, Eliu si accese di sdegno."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤עַן אֱלִיה֖וּא בֶן בַּֽרַכְאֵ֥ל הַ/בּוּזִ֗י וַ/יֹּ֫אמַ֥ר צָ֘עִ֤יר אֲנִ֣י לְ֭/יָמִים וְ/אַתֶּ֣ם יְשִׁישִׁ֑ים עַל כֵּ֖ן זָחַ֥לְתִּי וָֽ/אִירָ֓א מֵ/חַוֺּ֖ת דֵּעִ֣/י אֶתְ/כֶֽם׃",
+        "LXX": "ὑπολαβὼν δὲ Ἐλιοῦς ὁ τοῦ Βαραχιὴλ ὁ Βουζείτης εἶπεν Νεώτερος μέν εἰμι τῷ χρόνῳ, ὑμεῖς δέ ἐστε πρεσβύτεροι· διὸ ἡσύχασα, φοβηθεὶς τοῦ ὑμῖν ἀναγγεῖλαι τὴν ἐμαυτοῦ ἐπιστήμην.",
+        "VUL": "Respondensque Eliu filius Barachel Buzites, dixit : [Junior sum tempore, vos autem antiquiores :/ idcirco, demisso capite,/ veritus sum vobis indicare meam sententiam./",
+        "SYN": "И отвечал Елиуй, сын Варахиилов, Вузитянин, и сказал: я молод летами, а вы -- старцы; поэтому я робел и боялся объявлять вам мое мнение.",
+        "NEO": "Alors Eliu, fils de Barachel le Bouzite, prit la parole et dit :",
+        "NAB": "So Elihu, son of Barachel the Buzite, spoke out and said: I am young and you are very old; therefore I held back and was afraid to declare to you my knowledge.",
+        "VAT_ES": "&iexcl;que Dios me pese en una balanza justa y reconocerá mi integridad!",
+        "CEI": "Presa dunque la parola, Eliu, figlio di Barachele il Buzita, disse: Giovane io sono di anni e voi siete già canuti; per questo ho esitato per rispetto a manifestare a voi il mio sapere."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אָ֭מַרְתִּי יָמִ֣ים יְדַבֵּ֑רוּ וְ/רֹ֥ב שָׁ֝נִ֗ים יֹדִ֥יעוּ חָכְמָֽה׃",
+        "LXX": "εἶπα δὲ ὅτι Οὐχ ὁ χρόνος ἐστὶν ὁ λαλῶν, ἐν πολλοῖς δὲ ἔτεσιν οὐκ οἴδασιν σοφίαν·",
+        "VUL": "Sperabam enim quod ætas prolixior loqueretur,/ et annorum multitudo doceret sapientiam./",
+        "SYN": "Я говорил сам себе: пусть говорят дни, и многолетие поучает мудрости.",
+        "NEO": "Je me disais : « Les jours parleront, les nombreuses années révéleront la sagesse. »",
+        "NAB": "Days should speak, I thought, and many years teach wisdom!",
+        "VAT_ES": "Si mi paso se desvió del camino y mi corazón fue detrás de lo que veían mis ojos; si alguna mancha se adhirió a mis manos,",
+        "CEI": "Pensavo: Parlerà l'età e i canuti insegneranno la sapienza."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אָ֭כֵן רֽוּחַ הִ֣יא בֶ/אֱנ֑וֹשׁ וְ/נִשְׁמַ֖ת שַׁדַּ֣י תְּבִינֵֽ/ם׃",
+        "LXX": "ἀλλὰ πνεῦμά ἐστιν ἐν βροτοῖς, πνοὴ δὲ Παντοκράτορός ἐστιν ἡ διδάσκουσα·",
+        "VUL": "Sed, ut video, spiritus est in hominibus,/ et inspiratio Omnipotentis dat intelligentiam./",
+        "SYN": "Но дух в человеке и дыхание Вседержителя дает ему разумение.",
+        "NEO": "Mais c’est l’esprit mis dans l’homme, le souffle du Tout-Puissant qui lui donne l’intelligence.",
+        "NAB": "But it is a spirit in man, the breath of the Almighty, that gives him understanding.",
+        "VAT_ES": "&iexcl;que otro coma lo que yo siembro y mis retoños sean arrancados de raíz!",
+        "CEI": "Ma certo essa è un soffio nell'uomo; l'ispirazione dell'Onnipotente lo fa intelligente."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לֹֽא רַבִּ֥ים יֶחְכָּ֑מוּ וּ֝/זְקֵנִ֗ים יָבִ֥ינוּ מִשְׁפָּֽט׃",
+        "LXX": "οὐχ οἱ πολυχρόνιοί εἰσιν σοφοί, οὐδ’ οἱ γέροντες οἴδασιν κρίμα.",
+        "VUL": "Non sunt longævi sapientes,/ nec senes intelligunt judicium./",
+        "SYN": "Не многолетние _только_ мудры, и не старики разумеют правду.",
+        "NEO": "Ce n’est pas l’âge qui donne la sagesse, ce n’est pas la vieillesse qui discerne la justice.",
+        "NAB": "It is not those of many days who are wise, nor the aged who understand the right.",
+        "VAT_ES": "Si me dejé seducir por alguna mujer o aceché a la puerta de mi vecino,",
+        "CEI": "Non sono i molti anni a dar la sapienza, né sempre i vecchi distinguono ciò che è giusto."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "לָ/כֵ֣ן אָ֭מַרְתִּי שִׁמְעָ/ה לִּ֑/י אֲחַוֶּ֖ה דֵּעִ֣/י אַף אָֽנִי׃",
+        "LXX": "διὸ εἶπα Ἀκούσατέ μου, καὶ ἀναγγελῶ ὑμῖν ἃ οἶδα·",
+        "VUL": "Ideo dicam : Audite me :/ ostendam vobis etiam ego meam sapientiam./",
+        "SYN": "Поэтому я говорю: выслушайте меня, объявлю вам мое мнение и я.",
+        "NEO": "Voilà pourquoi je dis : « Écoutez-moi ; je vais, moi aussi, exposer ma pensée. »",
+        "NAB": "Therefore I say, hearken to me; let me too set forth my knowledge!",
+        "VAT_ES": "&iexcl;que mi mujer muela el grano para otro y que otros abusen de ella!",
+        "CEI": "Per questo io oso dire: Ascoltatemi; anch'io esporrò il mio sapere."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "הֵ֤ן הוֹחַ֨לְתִּי לְֽ/דִבְרֵי/כֶ֗ם אָ֭זִין עַד תְּב֥וּנֹֽתֵי/כֶ֑ם עַֽד תַּחְקְר֥וּ/ן מִלִּֽין׃",
+        "LXX": "ἐνωτίζεσθέ μου τὰ ῥήματα ὑμῶν ἀκουόντων, ἄχρι οὗ ἐτάσητε λόγους.",
+        "VUL": "Expectavi enim sermones vestros ;/ audivi prudentiam vestram,/ donec disceptaremini sermonibus ;/",
+        "SYN": "Вот, я ожидал слов ваших, -- вслушивался в суждения ваши, доколе вы придумывали, что сказать.",
+        "NEO": "J’ai attendu tant que vous parliez, j’ai prêté l’oreille à vos raisonnements, jusqu’à la fin de vos débats.",
+        "NAB": "Behold, I have waited for your discourses, and have given ear to your arguments.",
+        "VAT_ES": "Porque eso sí que es una infamia, un delito reprobado por los jueces;",
+        "CEI": "Ecco, ho atteso le vostre parole, ho teso l'orecchio ai vostri argomenti. Finché andavate in cerca di argomenti"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/עָֽדֵי/כֶ֗ם אֶתְבּ֫וֹנָ֥ן וְ/הִנֵּ֤ה אֵ֣ין לְ/אִיּ֣וֹב מוֹכִ֑יחַ עוֹנֶ֖ה אֲמָרָ֣י/ו מִ/כֶּֽם׃",
+        "LXX": "καὶ μέχρι ὑμῶν συνήσω· καὶ ἰδοὺ οὐκ ἦν τῷ Ἰὼβ ἐλέγχων, ἀνταποκρινόμενος ῥήματα αὐτοῦ ἐξ ὑμῶν.",
+        "VUL": "et donec putabam vos aliquid dicere, considerabam :/ sed, ut video, non est qui possit arguere Job,/ et respondere ex vobis sermonibus ejus./",
+        "SYN": "Я пристально смотрел на вас, и вот никто из вас не обличает Иова и не отвечает на слова его.",
+        "NEO": "Je vous ai suivis attentivement, et nul n’a convaincu Job, nul d’entre vous n’a réfuté ses paroles.",
+        "NAB": "Yes, I followed you attentively as you searched out what to say; And behold, there is none who has convicted Job, not one of you who could refute his statements.",
+        "VAT_ES": "es un fuego que devora hasta la Perdición y exterminará de raíz todas mis cosechas.",
+        "CEI": "su di voi fissai l'attenzione. Ma ecco, nessuno ha potuto convincere Giobbe, nessuno tra di voi risponde ai suoi detti."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "פֶּן תֹּ֣֭אמְרוּ מָצָ֣אנוּ חָכְמָ֑ה אֵ֖ל יִדְּפֶ֣/נּוּ לֹא אִֽישׁ׃",
+        "LXX": "ἵνα μὴ εἴπητε Εὕρομεν σοφίαν Κυρίῳ προσθέμενοι·",
+        "VUL": "Ne forte dicatis : Invenimus sapientiam :/ Deus projecit eum, non homo./",
+        "SYN": "Не скажите: мы нашли мудрость: Бог опровергнет его, а не человек.",
+        "NEO": "Ne dites pas : « Nous avons trouvé la sagesse ; c’est Dieu qui le frappe, et non pas l’homme. »",
+        "NAB": "Yet do not say, \"We have met wisdom. God may vanquish him but not man!\"",
+        "VAT_ES": "Si desestimé el derecho de mi esclavo o el de mi servidora, cuando litigaban conmigo,",
+        "CEI": "Non dite: Noi abbiamo trovato la sapienza, ma lo confuti Dio, non l'uomo!"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/לֹא עָרַ֣ךְ אֵלַ֣/י מִלִּ֑ין וּ֝/בְ/אִמְרֵי/כֶ֗ם לֹ֣א אֲשִׁיבֶֽ/נּוּ׃",
+        "LXX": "ἀνθρώπῳ δὲ ἐπετρέψατε λαλῆσαι τοιαῦτα ῥήματα.",
+        "VUL": "Nihil locutus est mihi :/ et ego non secundum sermones vestros respondebo illi./",
+        "SYN": "Если бы он обращал слова свои ко мне, то я не вашими речами отвечал бы ему.",
+        "NEO": "Il n’a pas dirigé contre moi ses discours, mais ce n’est pas avec vos paroles que je lui répondrai.",
+        "NAB": "For had he addressed his words to me, I should not then have answered him as you have done.",
+        "VAT_ES": "&iquest;qué haré cuando Dios se levante, qué le replicaré cuando me pida cuenta?",
+        "CEI": "Egli non mi ha rivolto parole, e io non gli risponderò con le vostre parole."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "חַ֭תּוּ לֹא עָ֣נוּ ע֑וֹד הֶעְתִּ֖יקוּ מֵ/הֶ֣ם מִלִּֽים׃",
+        "LXX": "ἐπτοήθησαν, οὐκ ἀπεκρίθησαν ἔτι, ἐπαλαίωσαν ἐξ αὐτῶν λόγους.",
+        "VUL": "Extimuerunt, nec responderunt ultra,/ abstuleruntque a se eloquia./",
+        "SYN": "Испугались, не отвечают более; перестали говорить.",
+        "NEO": "Les voilà interdits ; ils ne répondent rien ; la parole leur fait défaut.",
+        "NAB": "They are dismayed, they make no more reply; words fail them.",
+        "VAT_ES": "El que me hizo a mí, &iquest;no lo hizo también a él? &iquest;No es uno mismo el que nos formó en el seno materno?",
+        "CEI": "Sono vinti, non rispondono più, mancano loro le parole."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ֭/הוֹחַלְתִּי כִּי לֹ֣א יְדַבֵּ֑רוּ כִּ֥י עָ֝מְד֗וּ לֹא עָ֥נוּ עֽוֹד׃",
+        "LXX": "ὑπέμεινα, οὐ γὰρ ἐλάλησα· ὅτι ἔστησαν, οὐκ ἀπεκρίθησαν.",
+        "VUL": "Quoniam igitur expectavi, et non sunt locuti :/ steterunt, nec ultra responderunt :/",
+        "SYN": "И как я ждал, а они не говорят, остановились и не отвечают более,",
+        "NEO": "J’ai attendu qu’ils eussent fini de parler, qu’ils restassent muets et sans réponse.",
+        "NAB": "Must I wait? Now that they speak no more, and have ceased to make reply,",
+        "VAT_ES": "Si rehusé a los pobres lo que ellos deseaban y dejé desfallecer los ojos de la viuda;",
+        "CEI": "Ho atteso, ma poiché non parlano più, poiché stanno lì senza risposta,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אַעֲנֶ֣ה אַף אֲנִ֣י חֶלְקִ֑/י אֲחַוֶּ֖ה דֵעִ֣/י אַף אָֽנִי׃",
+        "LXX": "Ὑπολαβὼν δὲ Ἐλιοῦς λέγει",
+        "VUL": "respondebo et ego partem meam,/ et ostendam scientiam meam./",
+        "SYN": "то и я отвечу с моей стороны, объявлю мое мнение и я,",
+        "NEO": "C’est à mon tour de parler à présent ; je veux dire aussi ce que je pense.",
+        "NAB": "I too will speak my part; I also will show my knowledge!",
+        "VAT_ES": "si comí yo solo mi pedazo de pan, sin que el huérfano lo compartiera",
+        "CEI": "voglio anch'io dire la mia parte, anch'io esporrò il mio parere;"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כִּ֭י מָלֵ֣תִי מִלִּ֑ים הֱ֝צִיקַ֗תְ/נִי ר֣וּחַ בִּטְנִֽ/י׃",
+        "LXX": "Πάλιν λαλήσω· πλήρης γάρ εἰμι ῥημάτων, ὀλέκει γάρ με τὸ πνεῦμα τῆς γαστρός·",
+        "VUL": "Plenus sum enim sermonibus,/ et coarctat me spiritus uteri mei./",
+        "SYN": "ибо я полон речами, и дух во мне теснит меня.",
+        "NEO": "Car je suis plein de discours, l’esprit qui est en moi m’oppresse.",
+        "NAB": "For I am full of matters to utter; the spirit within me compels me.",
+        "VAT_ES": "–yo, que desde mi juventud lo crié como un padre y lo guié desde el vientre de mi madre–",
+        "CEI": "mi sento infatti pieno di parole, mi preme lo spirito che è dentro di me."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "הִנֵּֽה בִטְנִ֗/י כְּ/יַ֥יִן לֹא יִפָּתֵ֑חַ כְּ/אֹב֥וֹת חֲ֝דָשִׁ֗ים יִבָּקֵֽעַ׃",
+        "LXX": "ἡ δὲ γαστήρ μου ὥσπερ ἀσκὸς γλεύκους ζέων δεδεμένος, ἢ ὥσπερ φυσητὴρ χαλκέως ἐρρηγώς.",
+        "VUL": "En venter meus quasi mustum absque spiraculo,/ quod lagunculas novas disrumpit./",
+        "SYN": "Вот, утроба моя, как вино неоткрытое: она готова прорваться, подобно новым мехам.",
+        "NEO": "Mon cœur est comme un vin renfermé, comme une outre remplie de vin nouveau qui va éclater.",
+        "NAB": "Like a new wineskin with wine under pressure, my bosom is ready to burst.",
+        "VAT_ES": "si vi a un miserable sin ropa o a un indigente sin nada para cubrirse,",
+        "CEI": "Ecco, dentro di me c'è come vino senza sfogo, come vino che squarcia gli otri nuovi."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "אֲדַבְּרָ֥ה וְ/יִֽרְוַֽח לִ֑/י אֶפְתַּ֖ח שְׂפָתַ֣/י וְ/אֶֽעֱנֶֽה׃",
+        "LXX": "λαλήσω, ἵνα ἀναπαύσωμαι, ἀνοίξας τὰ χείλη·",
+        "VUL": "Loquar, et respirabo paululum :/ aperiam labia mea, et respondebo./",
+        "SYN": "Поговорю, и будет легче мне; открою уста мои и отвечу.",
+        "NEO": "Que je parle donc, afin de respirer à l’aise, que mes lèvres s’ouvrent pour répondre !",
+        "NAB": "Let me speak and obtain relief; let me open my lips, and make reply.",
+        "VAT_ES": "y no me bendijeron en lo íntimo de su ser por haberse calentado con el vellón de mis corderos;",
+        "CEI": "Parlerò e mi sfogherò, aprirò le labbra e risponderò."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "אַל נָ֭א אֶשָּׂ֣א פְנֵי אִ֑ישׁ וְ/אֶל אָ֝דָ֗ם לֹ֣א אֲכַנֶּֽה׃",
+        "LXX": "ἄνθρωπον γὰρ οὐ μὴ αἰσχυνθῶ, ἀλλὰ μὴν οὐδὲ βροτὸν οὐ μὴ ἐντραπῶ·",
+        "VUL": "Non accipiam personam viri,/ et Deum homini non æquabo./",
+        "SYN": "На лице человека смотреть не буду и никакому человеку льстить не стану,",
+        "NEO": "Je ne veux faire acception de personne, je ne flatterai qui que ce soit.",
+        "NAB": "I would not be partial to anyone, nor give flattering titles to any.",
+        "VAT_ES": "si alcé mi mano contra un huérfano, porque yo contaba con una ayuda en la Puerta,",
+        "CEI": "Non guarderò in faccia ad alcuno, non adulerò nessuno,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כִּ֤י לֹ֣א יָדַ֣עְתִּי אֲכַנֶּ֑ה כִּ֝/מְעַ֗ט יִשָּׂאֵ֥/נִי עֹשֵֽׂ/נִי׃",
+        "LXX": "οὐ γὰρ ἐπίσταμαι θαυμάσαι πρόσωπα· εἰ δὲ μή, καὶ ἐμὲ σῆτες ἔδονται.",
+        "VUL": "Nescio enim quamdiu subsistam,/ et si post modicum tollat me factor meus.]",
+        "SYN": "потому что я не умею льстить: сейчас убей меня, Творец мой.",
+        "NEO": "Car je ne sais pas flatter ; autrement mon Créateur m’enlèverait sur-le-champ.",
+        "NAB": "For I know nought of flattery; if I did, my Maker would soon take me away.",
+        "VAT_ES": "&iexcl;que mi espada se desprenda del cuello y mi brazo sea arrancado de su juntura!",
+        "CEI": "perché io non so adulare: altrimenti il mio creatore in breve mi eliminerebbe."
+      }
+    }
+  }
+}

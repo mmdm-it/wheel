@@ -1,0 +1,695 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "III_REG_006",
+  "book_key": "III_REG",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י בִ/שְׁמוֹנִ֣ים שָׁנָ֣ה וְ/אַרְבַּ֣ע מֵא֣וֹת שָׁנָ֡ה לְ/צֵ֣את בְּנֵֽי יִשְׂרָאֵ֣ל מֵ/אֶֽרֶץ מִצְרַיִם֩ בַּ/שָּׁנָ֨ה הָ/רְבִיעִ֜ית בְּ/חֹ֣דֶשׁ זִ֗ו ה֚וּא הַ/חֹ֣דֶשׁ הַ/שֵּׁנִ֔י לִ/מְלֹ֥ךְ שְׁלֹמֹ֖ה עַל יִשְׂרָאֵ֑ל וַ/יִּ֥בֶן הַ/בַּ֖יִת לַ/יהוָֽה׃",
+        "LXX": "Καὶ ἐγενήθη ἐν τῷ τεσσερακοστῷ καὶ τετρακοσιοστῷ ἔτει τῆς ἐξόδου υἱῶν Ἰσραὴλ ἐξ Αἰγύπτου, τῷ ἔτει τῷ τετάρτῳ ἐν μηνὶ τῷ δευτέρῳ βασιλεύοντος τοῦ βασιλέως Σαλωμὼν ἐπὶ Ἰσραήλ,",
+        "VUL": "Factum est ergo quadringentesimo et octogesimo anno egressionis filiorum Israël de terra Ægypti, in anno quarto, mense Zio (ipse est mensis secundus), regni Salomonis super Israël, ædificari cpit domus Domino.",
+        "SYN": "В четыреста восьмидесятом году по исшествии сынов Израилевых из земли Египетской, в четвертый год царствования Соломонова над Израилем, в месяц Зиф, который есть второй месяц, начал он строить храм Господу.",
+        "NEO": "En la quatre cent quatre-vingtième année après la sortie des enfants d’Israël du pays d’Égypte, la quatrième année du règne de Salomon sur Israël, au mois de ziv, qui est le second mois, il bâtit la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "In the four hundred and eightieth year from the departure of the Israelites from the land of Egypt, in the fourth year of Solomon's reign over Israel, in the month of Ziv, which is the second month, the construction of the temple of the LORD was begun.",
+        "VAT_ES": "Cuatrocientos ochenta años después que los israelitas salieron del país de Egipto, en el cuarto año del reinado de Salomón sobre Israel, en el mes de Ziv –que es el segundo mes– Salomón comenzó a construir la Casa del Señor.",
+        "CEI": "Alla costruzione del tempio del Signore fu dato inizio l'anno quattrocentottanta dopo l'uscita degli Israeliti dal paese d'Egitto, l'anno quarto del regno di Salomone su Israele, nel mese di Ziv, cioè nel secondo mese."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/הַ/בַּ֗יִת אֲשֶׁ֨ר בָּנָ֜ה הַ/מֶּ֤לֶךְ שְׁלֹמֹה֙ לַֽ/יהוָ֔ה שִׁשִּֽׁים אַמָּ֥ה אָרְכּ֖/וֹ וְ/עֶשְׂרִ֤ים רָחְבּ֑/וֹ וּ/שְׁלֹשִׁ֥ים אַמָּ֖ה קוֹמָתֽ/וֹ׃",
+        "LXX": "καὶ αἴρουσιν λίθους μεγάλους τιμίους εἰς τὸν θεμέλιον τοῦ οἴκου καὶ λίθους ἀπελεκήτους·",
+        "VUL": "Domus autem quam ædificabat rex Salomon Domino, habebat sexaginta cubitos in longitudine, et viginti cubitos in latitudine, et triginta cubitos in altitudine.",
+        "SYN": "Храм, который построил царь Соломон Господу, длиною был в шестьдесят локтей, шириною в двадцать и вышиною в тридцать локтей,",
+        "NEO": "La maison que le roi Salomon bâtit à \\+w Yahweh|strong=\"H3068\"\\+w** avait soixante coudées de longueur, vingt de largeur et trente coudées de hauteur.",
+        "NAB": "The temple which King Solomon built for the LORD was sixty cubits long, twenty wide, and twenty-five high.",
+        "VAT_ES": "Cro 3.10-14",
+        "CEI": "Il tempio costruito dal re Salomone per il Signore, era lungo sessanta cubiti, largo venti, alto trenta."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/הָ/אוּלָ֗ם עַל פְּנֵי֙ הֵיכַ֣ל הַ/בַּ֔יִת עֶשְׂרִ֣ים אַמָּה֙ אָרְכּ֔/וֹ עַל פְּנֵ֖י רֹ֣חַב הַ/בָּ֑יִת עֶ֧שֶׂר בָּ/אַמָּ֛ה רָחְבּ֖/וֹ עַל פְּנֵ֥י הַ/בָּֽיִת׃",
+        "LXX": "καὶ ἐπελέκησαν οἱ υἱοὶ Σαλωμὼν καὶ οἱ υἱοὶ Χειράμ, καὶ ἔβαλαν αὐτούς.",
+        "VUL": "Et porticus erat ante templum viginti cubitorum longitudinis, juxta mensuram latitudinis templi : et habebat decem cubitos latitudinis ante faciem templi.",
+        "SYN": "и притвор пред храмом в двадцать локтей длины, соответственно ширине храма, и в десять локтей ширины пред храмом.",
+        "NEO": "Le portique devant le temple de la maison avait vingt coudées de longueur dans le sens de la largeur de la maison, et dix coudées de largeur sur le devant de la maison.",
+        "NAB": "The porch in front of the temple was twenty cubits from side to side, along the width of the nave, and ten cubits deep in front of the temple.",
+        "VAT_ES": "El vestíbulo, frente a la nave central del Templo, medía diez metros de largo, cubriendo todo el ancho de la Casa, y cinco metros de ancho, sobre el frente de la Casa.",
+        "CEI": "Davanti al tempio vi era un atrio lungo venti cubiti, in base alla larghezza del tempio, ed esteso per dieci cubiti secondo la lunghezza del tempio."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ לַ/בָּ֔יִת חַלּוֹנֵ֖י שְׁקֻפִ֥ים אֲטֻמִֽים׃",
+        "LXX": "ἐν τῷ ἔτει τῷ τετάρτῳ ἐθεμελίωσεν τὸν οἶκον Κυρίου, ἐν μηνὶ Νεισῷ καὶ τῷ δευτέρῳ μηνί.",
+        "VUL": "Fecitque in templo fenestras obliquas.",
+        "SYN": "И сделал он в доме окна решетчатые, глухие с откосами.",
+        "NEO": "Le roi fit à la maison des fenêtres à grilles fixes.",
+        "NAB": "Splayed windows with trellises were made for the temple,",
+        "VAT_ES": "A la Casa le puso ventanas con marcos y enrejados.",
+        "CEI": "Fece nel tempio finestre quadrangolari con grate."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּבֶן֩ עַל קִ֨יר הַ/בַּ֤יִת יצוע יָצִ֨יעַ֙ סָבִ֔יב אֶת קִיר֤וֹת הַ/בַּ֨יִת֙ סָבִ֔יב לַֽ/הֵיכָ֖ל וְ/לַ/דְּבִ֑יר וַ/יַּ֥עַשׂ צְלָע֖וֹת סָבִֽיב׃",
+        "LXX": "ἐν ἑνδεκάτῳ ἐνιαυτῷ ἐν μηνὶ Βαάδ, οὗτος ὁ μὴν ὁ ὄγδοος, συνετελέσθη ὁ οἶκος εἰς πάντα λόγον αὐτοῦ καὶ εἰς πᾶσαν διάταξιν αὐτοῦ.",
+        "VUL": "Et ædificavit super parietem templi tabulata per gyrum, in parietibus domus per circuitum templi et oraculi, et fecit latera in circuitu.",
+        "SYN": "И сделал пристройку вокруг стен храма, вокруг храма и давира; и сделал боковые комнаты кругом.",
+        "NEO": "Il bâtit, contre la muraille de la maison, des étages autour des murs de la maison, autour du Lieu saint et du Lieu très saint, et il fit des chambres latérales tout autour.",
+        "NAB": "and adjoining the wall of the temple, which enclosed the nave and the sanctuary, an annex of several stories was built.",
+        "VAT_ES": "Y adosado al muro de la Casa, edificó un anexo que rodeaba los muros de la Casa, alrededor de la nave central y del lugar santísimo, donde hizo los pisos laterales.",
+        "CEI": "Intorno al muro del tempio fu costruito un edificio a piani, lungo la navata e la cella."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "ה/יצוע הַ/יָּצִ֨יעַ הַ/תַּחְתֹּנָ֜ה חָמֵ֧שׁ בָּ/אַמָּ֣ה רָחְבָּ֗/הּ וְ/הַ/תִּֽיכֹנָה֙ שֵׁ֤שׁ בָּֽ/אַמָּה֙ רָחְבָּ֔/הּ וְ/הַ֨/שְּׁלִישִׁ֔ית שֶׁ֥בַע בָּ/אַמָּ֖ה רָחְבָּ֑/הּ כִּ֡י מִגְרָעוֹת֩ נָתַ֨ן לַ/בַּ֤יִת סָבִיב֙ ח֔וּצָ/ה לְ/בִלְתִּ֖י אֲחֹ֥ז בְּ/קִֽירוֹת הַ/בָּֽיִת׃",
+        "LXX": "καὶ ὁ οἶκος ὃν ᾠκοδόμησεν ὁ βασιλεὺς τῷ κυρίῳ, τεσσεράκοντα μῆκος αὐτοῦ, καὶ εἴκοσι ἐν πήχει πλάτος αὐτοῦ, καὶ πέντε καὶ εἴκοσι ἐν πήχει τὸ ὕψος αὐτοῦ.",
+        "VUL": "Tabulatum quod subter erat, quinque cubitos habebat latitudinis, et medium tabulatum sex cubitorum latitudinis, et tertium tabulatum septem habens cubitos latitudinis. Trabes autem posuit in domo per circuitum forinsecus, ut non hærerent muris templi.",
+        "SYN": "Нижний _ярус_ пристройки шириною был в пять локтей, средний шириною в шесть локтей, а третий шириною в семь локтей; ибо вокруг храма извне сделаны были уступы, дабы пристройка не прикасалась к стенам храма.",
+        "NEO": "L’étage inférieur avait cinq coudées de largeur, celui du milieu six coudées de largeur, et me troisième sept coudées de largeur ; car on avait fait en retrait les murs de la maison tout autour, en dehors, afin que les poutres n’entrassent pas dans les murs de la maison.",
+        "NAB": "Its lowest story was five cubits wide, the middle one six cubits wide, the third seven cubits wide, because there were offsets along the outside of the temple so that the beams would not be fastened into the walls of the temple.",
+        "VAT_ES": "El piso bajo medía dos metros de ancho; el piso intermedio, dos metros y medio de ancho; el tercero, tres metros de ancho, porque había hecho unas cornisas alrededor de la Casa, para no empotrar las vigas en los muros de la Casa.",
+        "CEI": "Il piano più basso era largo cinque cubiti, quello di mezzo sei e il terzo sette, perché le mura esterne, intorno, erano state costruite a riseghe, in modo che le travi non poggiassero sulle mura del tempio."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הַ/בַּ֨יִת֙ בְּ/הִבָּ֣נֹת֔/וֹ אֶֽבֶן שְׁלֵמָ֥ה מַסָּ֖ע נִבְנָ֑ה וּ/מַקָּב֤וֹת וְ/הַ/גַּרְזֶן֙ כָּל כְּלִ֣י בַרְזֶ֔ל לֹֽא נִשְׁמַ֥ע בַּ/בַּ֖יִת בְּ/הִבָּנֹתֽ/וֹ׃",
+        "LXX": "καὶ τὸ αἰλὰμ κατὰ πρόσωπον τοῦ ναοῦ, εἴκοσι ἐν πήχει μῆκος αὐτοῦ εἰς τὸ πλάτος τοῦ οἴκου κατὰ πρόσωπον τοῦ οἴκου.",
+        "VUL": "Domus autem cum ædificaretur, de lapidibus dolatis atque perfectis ædificata est : et malleus, et securis, et omne ferramentum non sunt audita in domo cum ædificaretur.",
+        "SYN": "Когда строился храм, на строение употребляемы были обтесанные камни; ни молота, ни тесла, ни всякого другого железного орудия не было слышно в храме при строении его.",
+        "NEO": "Lorsqu’on bâtit la maison, on la bâtit de pierres toutes préparées dans la carrière ; et ainsi ni marteau, ni hache, ni aucun instrument de fer ne furent entendus dans la maison, pendant qu’on la construisait.",
+        "NAB": "(The temple was built of stone dressed at the quarry, so that no hammer, axe, or iron tool was to be heard in the temple during its construction.)",
+        "VAT_ES": "Cuando fue construida la Casa, se la edificó con piedras ya preparadas en la cantera; así no se oyó en la Casa ruido ni martillos, ni de picos, ni de ninguna otra herramienta durante su construcción.",
+        "CEI": "Per la sua costruzione si usarono pietre lavorate e intere; durante i lavori nel tempio non si udì rumore di martelli, di piccone o di altro arnese di ferro."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "פֶּ֗תַח הַ/צֵּלָע֙ הַ/תִּ֣יכֹנָ֔ה אֶל כֶּ֥תֶף הַ/בַּ֖יִת הַ/יְמָנִ֑ית וּ/בְ/לוּלִּ֗ים יַֽעֲלוּ֙ עַל הַ/תִּ֣יכֹנָ֔ה וּ/מִן הַ/תִּֽיכֹנָ֖ה אֶל הַ/שְּׁלִשִֽׁים׃",
+        "LXX": "καὶ ᾠκοδόμησεν τὸν οἶκον καὶ συνετέλεσεν αὐτόν.",
+        "VUL": "Ostium lateris medii in parte erat domus dextræ : et per cochleam ascendebant in medium cnaculum, et a medio in tertium.",
+        "SYN": "Вход в средний ярус был с правой стороны храма. По круглым лестницам всходили в средний _ярус,_ а от среднего в третий.",
+        "NEO": "L’entrée de l’étage du milieu était du côté droit de la maison ; on montait par des escaliers tournants à l’étage du milieu et de celui du milieu au troisième.",
+        "NAB": "The entrance to the lowest floor of the annex was at the right side of the temple, and stairs with intermediate landings led up to the middle story and from the middle story to the third.",
+        "VAT_ES": "La entrada del piso lateral inferior estaba ubicada hacia el lado derecho de la Casa, y por una escalera caracol se subía al piso intermedio, y de este al tercero.",
+        "CEI": "La porta del piano più basso era sul lato destro del tempio; per mezzo di una scala a chiocciola si passava al piano di mezzo e dal piano di mezzo a quello superiore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּ֥בֶן אֶת הַ/בַּ֖יִת וַ/יְכַלֵּ֑/הוּ וַ/יִּסְפֹּ֤ן אֶת הַ/בַּ֨יִת֙ גֵּבִ֔ים וּ/שְׂדֵרֹ֖ת בָּ/אֲרָזִֽים׃",
+        "LXX": "καὶ ἐποίησεν τῷ οἴκῳ θυρίδας παρακυπτομένας κρυπτάς.",
+        "VUL": "Et ædificavit domum, et consummavit eam : texit quoque domum laquearibus cedrinis.",
+        "SYN": "И построил он храм, и кончил его, и обшил храм кедровыми досками.",
+        "NEO": "Salomon bâtit la maison et l’acheva ; il couvrit la maison de poutres et de planches de cèdre.",
+        "NAB": "When the temple was built to its full height, it was roofed in with rafters and boards of cedar.",
+        "VAT_ES": "Cuando Salomón terminó de construir la Casa, la revistió de un artesonado con paneles y armadura de cedro.",
+        "CEI": "In tal modo Salomone costruì il tempio; dopo averlo terminato, lo ricoprì con assi e travi di cedro."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּ֤בֶן אֶת ה/יצוע הַ/יָּצִ֨יעַ֙ עַל כָּל הַ/בַּ֔יִת חָמֵ֥שׁ אַמּ֖וֹת קֽוֹמָת֑/וֹ וַ/יֶּאֱחֹ֥ז אֶת הַ/בַּ֖יִת בַּ/עֲצֵ֥י אֲרָזִֽים׃",
+        "LXX": "καὶ ἔδωκεν ἐπ’ αὐτὸν τοῖχον τοῦ οἴκου μέλαθρα κυκλόθεν τῷ ναῷ καὶ τῷ δαβείρ.",
+        "VUL": "Et ædificavit tabulatum super omnem domum quinque cubitis altitudinis, et operuit domum lignis cedrinis.",
+        "SYN": "И пристроил ко всему храму боковые комнаты вышиною в пять локтей; они прикреплены были к храму посредством кедровых бревен.",
+        "NEO": "Il bâtit les étages adossés à toute la maison, en leur donnant cinq coudées de hauteur, et les liant à la maison par des bois de cèdre.",
+        "NAB": "The annex, with its lowest story five cubits high, was built all along the outside of the temple, to which it was joined by cedar beams.",
+        "VAT_ES": "El anexo lo construyó adosado a toda la Casa; tenía dos metros y medio de altura, y estaba unido a la Casa con maderas de cedro.",
+        "CEI": "Innalzò anche l'ala laterale intorno al tempio, alta cinque cubiti per piano; la unì al tempio con travi di cedro."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ דְּבַר יְהוָ֔ה אֶל שְׁלֹמֹ֖ה לֵ/אמֹֽר׃",
+        "LXX": "ἡ πλευρὰ ἡ ὑποκάτω πέντε πήχεων ἐν πήχει τὸ πλάτος αὐτῆς, καὶ τὸ μέσον ἕξ, καὶ ἡ τρίτη ἑπτὰ ἐν πήχει τὸ πλάτος αὐτῆς· ὅτι διάστημα ἔδωκεν τῷ οἴκῳ κυκλόθεν ἔξωθεν τοῦ οἴκου, ὅπως μὴ ἐπιλαμβάνωνται τῶν τοίχων τοῦ οἴκου.",
+        "VUL": "Et factus est sermo Domini ad Salomonem, dicens :",
+        "SYN": "И было слово Господа к Соломону, и сказано ему:",
+        "NEO": "Et la parole de \\+w Yahweh|strong=\"H3068\"\\+w** fut adressée à Salomon, en ces termes :",
+        "NAB": "This word of the LORD came to Solomon:",
+        "VAT_ES": "La palabra del Señor llegó a Salomón en estos términos:",
+        "CEI": "E il Signore parlò a Salomone e disse:"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "הַ/בַּ֨יִת הַ/זֶּ֜ה אֲשֶׁר אַתָּ֣ה בֹנֶ֗ה אִם תֵּלֵ֤ךְ בְּ/חֻקֹּתַ/י֙ וְ/אֶת מִשְׁפָּטַ֣/י תַּֽעֲשֶׂ֔ה וְ/שָׁמַרְתָּ֥ אֶת כָּל מִצְוֺתַ֖/י לָ/לֶ֣כֶת בָּ/הֶ֑ם וַ/הֲקִמֹתִ֤י אֶת דְּבָרִ/י֙ אִתָּ֔/ךְ אֲשֶׁ֥ר דִּבַּ֖רְתִּי אֶל דָּוִ֥ד אָבִֽי/ךָ׃",
+        "LXX": "καὶ ὁ οἶκος ἐν τῷ οἰκοδομεῖσθαι αὐτὸν λίθοις ἀκροτόμοις ἀργοῖς ᾠκοδομήθη· καὶ σφῦρα καὶ πέλεκυς καὶ πᾶν σκεῦος σιδηροῦν οὐκ ἠκούσθη ἐν τῷ οἴκῳ ἐν τῷ οἰκοδομεῖσθαι αὐτόν.",
+        "VUL": "Domus hæc, quam ædificas, si ambulaveris in præceptis meis, et judicia mea feceris, et custodieris omnia mandata mea, gradiens per ea, firmabo sermonem meum tibi, quem locutus sum ad David patrem tuum :",
+        "SYN": "вот, ты строишь храм; если ты будешь ходить по уставам Моим, и поступать по определениям Моим и соблюдать все заповеди Мои, поступая по ним, то Я исполню на тебе слово Мое, которое Я сказал Давиду, отцу твоему,",
+        "NEO": "« Cette maison que tu bâtis..., si tu marches selon mes lois, si tu mets en pratique mes ordonnances, si tu observes tous mes commandements, réglant sur eux ta conduite, j’accomplirai à ton égard ma parole que j’ai dite à David, ton père ;",
+        "NAB": "\"As to this temple you are building - if you observe my statutes, carry out my ordinances, keep and obey all my commands, I will fulfill toward you the promise I made to your father David.",
+        "VAT_ES": "«En atención a esta Casa que estás construyendo, si tú caminas según mis preceptos, si practicas mis leyes y observas mis mandamientos, obrando de acuerdo con ellos, yo cumpliré mi palabra acerca de ti, la que dije a tu padre David:",
+        "CEI": "\"Riguardo al tempio che stai edificando, se camminerai secondo i miei decreti, se eseguirai le mie disposizioni e osserverai tutti i miei comandi, uniformando ad essi la tua condotta, io confermerò a tuo favore le parole dette da me a Davide tuo padre."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/שָׁ֣כַנְתִּ֔י בְּ/ת֖וֹךְ בְּנֵ֣י יִשְׂרָאֵ֑ל וְ/לֹ֥א אֶעֱזֹ֖ב אֶת עַמִּ֥/י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ὁ πυλὼν τῆς πλευρᾶς τῆς ὑποκάτωθεν ὑπὸ τὴν ὠμίαν τοῦ οἴκου τὴν δεξιάν, καὶ ἑλικτὴ ἀνάβασις εἰς τὸ μέσον καὶ ἐκ τῆς μέσης ἐπὶ τὰ τριώροφα.",
+        "VUL": "et habitabo in medio filiorum Israël, et non derelinquam populum meum Israël.",
+        "SYN": "и буду жить среди сынов Израилевых, и не оставлю народа Моего Израиля.",
+        "NEO": "j’habiterai au milieu des enfants d’Israël, et je n’abandonnerai pas mon peuple d’Israël. »",
+        "NAB": "I will dwell in the midst of the Israelites and will not forsake my people Israel.\"",
+        "VAT_ES": "habitaré en medio de los israelitas y no abandonaré a mi pueblo Israel».",
+        "CEI": "Io abiterò in mezzo agli Israeliti; non abbandonerò il mio popolo Israele\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּ֧בֶן שְׁלֹמֹ֛ה אֶת הַ/בַּ֖יִת וַ/יְכַלֵּֽ/הוּ׃",
+        "LXX": "καὶ ᾠκοδόμησεν τὸν οἶκον καὶ συνετέλεσεν αὐτόν· καὶ ἐκοιλοστάθμησεν τὸν οἶκον κέδροις.",
+        "VUL": "Igitur ædificavit Salomon domum, et consummavit eam.",
+        "SYN": "И построил Соломон храм и кончил его.",
+        "NEO": "Et Salomon bâtit la maison et l’acheva.",
+        "NAB": "When Solomon finished building the temple,",
+        "VAT_ES": "Cuando Salomón terminó de construir la Casa,",
+        "CEI": "Terminata la costruzione del tempio,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּבֶן֩ אֶת קִיר֨וֹת הַ/בַּ֤יִת מִ/בַּ֨יְתָ/ה֙ בְּ/צַלְע֣וֹת אֲרָזִ֔ים מִ/קַּרְקַ֤ע הַ/בַּ֨יִת֙ עַד קִיר֣וֹת הַ/סִּפֻּ֔ן צִפָּ֥ה עֵ֖ץ מִ/בָּ֑יִת וַ/יְצַ֛ף אֶת קַרְקַ֥ע הַ/בַּ֖יִת בְּ/צַלְע֥וֹת בְּרוֹשִֽׁים׃",
+        "LXX": "καὶ ᾠκοδόμησεν τοὺς ἐνδέσμους δι’ ὅλου τοῦ οἴκου πέντε ἐν πήχει τὸ ὕψος αὐτοῦ, καὶ συνέσχεν τὸν σύνδεσμον ἐν ξύλοις κεδρίνοις.",
+        "VUL": "Et ædificavit parietes domus intrinsecus tabulatis cedrinis : a pavimento domus usque ad summitatem parietum, et usque ad laquearia, operuit lignis cedrinis intrinsecus : et texit pavimentum domus tabulis abiegnis.",
+        "SYN": "И обложил стены храма внутри кедровыми досками; от пола храма до потолка внутри обложил деревом и покрыл пол храма кипарисовыми досками.",
+        "NEO": "Il revêtit intérieurement les murs de la maison de planches de cèdre, depuis le sol de la maison jusqu’au plafond ; il revêtit ainsi de lambris l’intérieur ; et il recouvrit le sol de la maison de planches de cyprès.",
+        "NAB": "its walls were lined from floor to ceiling beams with cedar paneling, and its floor was laid with fir planking.",
+        "VAT_ES": "revistió sus muros interiores con planchas de cedro, desde el suelo de la Casa hasta los postes del artesonado; revistió de madera el interior y recubrió el suelo de la Casa con planchas de ciprés.",
+        "CEI": "Salomone rivestì all'interno le pareti del tempio con tavole di cedro dal pavimento al soffitto; rivestì anche con legno di cedro la parte interna del soffitto e con tavole di cipresso il pavimento."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יִּבֶן֩ אֶת עֶשְׂרִ֨ים אַמָּ֜ה מ/ירכותי מִֽ/יַּרְכְּתֵ֤י הַ/בַּ֨יִת֙ בְּ/צַלְע֣וֹת אֲרָזִ֔ים מִן הַ/קַּרְקַ֖ע עַד הַ/קִּיר֑וֹת וַ/יִּ֤בֶן ל/וֹ֙ מִ/בַּ֣יִת לִ/דְבִ֔יר לְ/קֹ֖דֶשׁ הַ/קֳּדָשִֽׁים׃",
+        "LXX": "καὶ ᾠκοδόμησεν τοὺς τοίχους τοῦ οἴκου διὰ ξύλων κεδρίνων ἀπὸ τοῦ ἐδάφους τοῦ οἴκου καὶ ἕως τῶν δοκῶν καὶ ἕως τῶν τοίχων· ἐκοιλοστάθμησεν συνεχόμενος ξύλοις ἔσωθεν, καὶ περιέσχεν τὸ ἔσω τοῦ οἴκου ἐν πλευραῖς πευκίναις.",
+        "VUL": "Ædificavitque viginti cubitorum ad posteriorem partem templi tabulata cedrina, a pavimento usque ad superiora : et fecit interiorem domum oraculi in Sanctum sanctorum.",
+        "SYN": "И устроил в задней стороне храма, в двадцати локтях от края, стену, и обложил стены и потолок кедровыми досками, и устроил давир для Святаго-святых.",
+        "NEO": "Il revêtit de planches de cèdre les vingt coudées à partir du fond de la maison, depuis le sol jusqu’au haut des murs, et il prit sur la maison de quoi lui faire un sanctuaire, le Saint des saints.",
+        "NAB": "At the rear of the temple a space of twenty cubits was set off by cedar partitions from the floor to the rafters, enclosing the sanctuary, the holy of holies.",
+        "VAT_ES": "Los diez metros del fondo de la Casa los revistió con planchas de cedro, desde el suelo hasta los postes, y reservó ese espacio interior para el lugar santísimo, el Santo de los santos.",
+        "CEI": "Separò uno spazio di venti cubiti, a partire dal fondo del tempio, con un assito di tavole di cedro che dal pavimento giungeva al soffitto, e la cella che ne risultò all'interno divenne il santuario, il Santo dei santi."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/אַרְבָּעִ֥ים בָּ/אַמָּ֖ה הָיָ֣ה הַ/בָּ֑יִת ה֖וּא הַ/הֵיכָ֥ל לִ/פְנָֽ/י׃",
+        "LXX": "καὶ ᾠκοδόμησεν τοὺς εἴκοσι πήχεις ἀπ’ ἄκρου τοῦ τοίχου, τὸ πλευρὸν τὸ ἓν ἀπὸ τοῦ ἐδάφους ἕως τῶν δοκῶν· καὶ ἐποίησεν ἐκ τοῦ δαβεὶρ εἰς τὸ ἅγιον τῶν ἁγίων.",
+        "VUL": "Porro quadraginta cubitorum erat ipsum templum pro foribus oraculi.",
+        "SYN": "Сорока локтей _был_ храм, то есть передняя часть храма.",
+        "NEO": "La maison, c’est-à-dire le temple antérieur, était de quarante coudées.",
+        "NAB": "The nave, or part of the temple in front of the sanctuary, was forty cubits long.",
+        "VAT_ES": "La Casa, es decir, la nave central delante del lugar santísimo, medía veinte metros.",
+        "CEI": "La navata di fronte ad esso era di quaranta cubiti."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/אֶ֤רֶז אֶל הַ/בַּ֨יִת֙ פְּנִ֔ימָה מִקְלַ֣עַת פְּקָעִ֔ים וּ/פְטוּרֵ֖י צִצִּ֑ים הַ/כֹּ֣ל אֶ֔רֶז אֵ֥ין אֶ֖בֶן נִרְאָֽה׃",
+        "LXX": "καὶ τεσσεράκοντα πηχῶν ἦν ὁ ναὸς κατὰ πρόσωπον τοῦ δαβεὶρ ἐν μέσῳ τοῦ οἴκου ἔσωθεν, δοῦναι ἐκεῖ τὴν κιβωτὸν διαθήκης Κυρίου.",
+        "VUL": "Et cedro omnis domus intrinsecus vestiebatur, habens tornaturas et juncturas suas fabrefactas, et cælaturas eminentes : omnia cedrinis tabulis vestiebantur : nec omnino lapis apparere poterat in pariete.",
+        "SYN": "На кедрах внутри храма были вырезаны _подобия_ огурцов и распускающихся цветов; все было покрыто кедром, камня не видно было.",
+        "NEO": "Le bois de cèdre à l’intérieur de la maison était sculpté en coloquintes et en fleurs épanouies ; tout était cèdre ; on ne voyait pas la pierre.",
+        "NAB": "The cedar in the interior of the temple was carved in the form of gourds and open flowers; all was of cedar, and no stone was to be seen.",
+        "VAT_ES": "El cedro del interior de la Casa tenía bajorrelieves en forma de coloquíntidas y de pimpollos. Era todo de cedro y no se veían las piedras.",
+        "CEI": "Il cedro all'interno del tempio era scolpito a rosoni e a boccioli di fiori; tutto era di cedro e non si vedeva una pietra."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וּ/דְבִ֧יר בְּ/תוֹךְ הַ/בַּ֛יִת מִ/פְּנִ֖ימָה הֵכִ֑ין לְ/תִתֵּ֣ן שָׁ֔ם אֶת אֲר֖וֹן בְּרִ֥ית יְהוָֽה׃",
+        "LXX": "εἴκοσι πήχεις μῆκος, καὶ εἴκοσι πήχεις πλάτος, καὶ εἴκοσι πήχεις τὸ ὕψος αὐτοῦ.",
+        "VUL": "Oraculum autem in medio domus, in interiori parte fecerat, ut poneret ibi arcam fderis Domini.",
+        "SYN": "Давир же внутри храма он приготовил для того, чтобы поставить там ковчег завета Господня.",
+        "NEO": "Salomon disposa le sanctuaire à l’intérieur de la maison, au fond, pour y placer l’arche de l’alliance de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "In the innermost part of the temple was located the sanctuary to house the ark of the LORD'S covenant,",
+        "VAT_ES": "En el fondo de la Casa, en lo más interior, dispuso el lugar santísimo para poner allí el Arca de la Alianza del Señor.",
+        "CEI": "Per l'arca dell'alleanza del Signore fu apprestata una cella nella parte più segreta del tempio."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/לִ/פְנֵ֣י הַ/דְּבִ֡יר עֶשְׂרִים֩ אַמָּ֨ה אֹ֜רֶךְ וְ/עֶשְׂרִ֧ים אַמָּ֣ה רֹ֗חַב וְ/עֶשְׂרִ֤ים אַמָּה֙ קֽוֹמָת֔/וֹ וַ/יְצַפֵּ֖/הוּ זָהָ֣ב סָג֑וּר וַ/יְצַ֥ף מִזְבֵּ֖חַ אָֽרֶז׃",
+        "LXX": "καὶ περιέσχεν αὐτὸν χρυσίῳ συνκεκλεισμένῳ· καὶ ἐποίησεν θυσιαστήριον κατὰ πρόσωπον τοῦ δαβεὶρ καὶ περιέσχεν αὐτὸν χρυσίῳ.",
+        "VUL": "Porro oraculum habebat viginti cubitos longitudinis, et viginti cubitos latitudinis, et viginti cubitos altitudinis : et operuit illud atque vestivit auro purissimo : sed et altare vestivit cedro.",
+        "SYN": "И давир был длиною в двадцать локтей, шириною в двадцать локтей и вышиною в двадцать локтей; он обложил его чистым золотом; обложил также и кедровый жертвенник.",
+        "NEO": "L’intérieur du sanctuaire avait vingt coudées de longueur, vingt coudées de largeur et vingt coudées de hauteur. Salomon le revêtit d’or fin, et il revêtit l’autel de cèdre.",
+        "NAB": "twenty cubits long, twenty wide, and twenty high.",
+        "VAT_ES": "Delante del lugar santísimo –que tenía diez metros de largo, diez de ancho y diez de alto, y que Salomón había recubierto de oro puro– se encontraba el altar revestido de cedro.",
+        "CEI": "La cella interna era lunga venti cubiti e alta venti. La rivestì d'oro purissimo e vi eresse un altare di cedro."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יְצַ֨ף שְׁלֹמֹ֧ה אֶת הַ/בַּ֛יִת מִ/פְּנִ֖ימָה זָהָ֣ב סָג֑וּר וַ/יְעַבֵּ֞ר ב/רתיקות בְּ/רַתּוּק֤וֹת זָהָב֙ לִ/פְנֵ֣י הַ/דְּבִ֔יר וַ/יְצַפֵּ֖/הוּ זָהָֽב׃",
+        "LXX": "καὶ ὅλον τὸν οἶκον περιέσχεν χρυσίῳ ἕως συντελείας παντὸς τοῦ οἴκου.",
+        "VUL": "Domum quoque ante oraculum operuit auro purissimo, et affixit laminas clavis aureis.",
+        "SYN": "И обложил Соломон храм внутри чистым золотом, и протянул золотые цепи пред давиром, и обложил его золотом.",
+        "NEO": "Salomon revêtit d’or fin l’intérieur de la maison, et il ferma avec des chaînes d’or le devant du sanctuaire, qu’il couvrit d’or.",
+        "NAB": "Solomon overlaid the interior of the temple with pure gold. He made in front of the sanctuary a cedar altar, overlaid it with gold, and looped it with golden chains.",
+        "VAT_ES": "Salomón recubrió de oro fino el interior de la Casa e hizo pasar cadenas de oro por delante del lugar santísimo, al que revistió de oro.",
+        "CEI": "Salomone rivestì l'interno del tempio con oro purissimo e fece passare, davanti alla cella, un velo che scorreva mediante catenelle d'oro e lo ricoprì d'oro."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/אֶת כָּל הַ/בַּ֛יִת צִפָּ֥ה זָהָ֖ב עַד תֹּ֣ם כָּל הַ/בָּ֑יִת וְ/כָל הַ/מִּזְבֵּ֥חַ אֲֽשֶׁר לַ/דְּבִ֖יר צִפָּ֥ה זָהָֽב׃",
+        "LXX": "καὶ ἐποίησεν ἐν τῷ δαβεὶρ δύο χερουβεὶν δέκα πήχεων μέγεθος ἐσταθμωμένον.",
+        "VUL": "Nihilque erat in templo quod non auro tegeretur : sed et totum altare oraculi texit auro.",
+        "SYN": "Весь храм он обложил золотом, весь храм до конца, и весь жертвенник, который пред давиром, обложил золотом.",
+        "NEO": "C’est ainsi qu’il revêtit d’or toute la maison, la maison toute entière, et il revêtit d’or tout l’autel qui était devant le sanctuaire.",
+        "NAB": "The entire temple was overlaid with gold so that it was completely covered with it; the whole altar before the sanctuary was also overlaid with gold.",
+        "VAT_ES": "Toda la Casa la recubrió íntegramente de oro, y también recubrió de oro el altar para el lugar santísimo.",
+        "CEI": "E d'oro fu rivestito tutto l'interno del tempio, e rivestì d'oro anche tutto l'altare che era nella cella."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ בַּ/דְּבִ֔יר שְׁנֵ֥י כְרוּבִ֖ים עֲצֵי שָׁ֑מֶן עֶ֥שֶׂר אַמּ֖וֹת קוֹמָתֽ/וֹ׃",
+        "LXX": "καὶ πέντε πήχεων πτερύγιον αὐτοῦ· τὸ δεύτερον δὲ ἐν πήχει δέκα ἀπὸ μέρους πτερυγίου αὐτοῦ.",
+        "VUL": "Et fecit in oraculo duos cherubim de lignis olivarum, decem cubitorum altitudinis.",
+        "SYN": "И сделал в давире двух херувимов из масличного дерева, вышиною в десять локтей.",
+        "NEO": "Il fit dans le sanctuaire deux chérubins de bois d’olivier sauvage, ayant dix coudées de haut.",
+        "NAB": "In the sanctuary were two cherubim, each ten cubits high, made of olive wood.",
+        "VAT_ES": "En el lugar santísimo hizo dos querubines de madera de olivo; cada uno medía cinco metros de altura.",
+        "CEI": "Nella cella fece due cherubini di legno di ulivo, alti dieci cubiti."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/חָמֵ֣שׁ אַמּ֗וֹת כְּנַ֤ף הַ/כְּרוּב֙ הָֽ/אֶחָ֔ת וְ/חָמֵ֣שׁ אַמּ֔וֹת כְּנַ֥ף הַ/כְּר֖וּב הַ/שֵּׁנִ֑ית עֶ֣שֶׂר אַמּ֔וֹת מִ/קְצ֥וֹת כְּנָפָ֖י/ו וְ/עַד קְצ֥וֹת כְּנָפָֽי/ו׃",
+        "LXX": "οὕτως τῷ χεροὺβ τῷ δευτέρῳ, ἐν μέτρῳ ἑνὶ συντέλεια μία· ἀμφοτέροις συντέλεια μία·",
+        "VUL": "Quinque cubitorum ala cherub una, et quinque cubitorum ala cherub altera : id est, decem cubitos habentes, a summitate alæ unius usque ad alæ alterius summitatem.",
+        "SYN": "Одно крыло херувима было в пять локтей и другое крыло херувима в пять локтей; десять локтей было от одного конца крыльев его до другого конца крыльев его.",
+        "NEO": "Une des ailes de chaque chérubin avait cinq coudées, et la deuxième aile du chérubin avait cinq coudées ; il y avait dix coudées de l’extrémité d’une de ses ailes à l’extrémité de l’autre.",
+        "NAB": "Each wing of a cherub measured five cubits so that the space from wing tip to wing tip of each was ten cubits.",
+        "VAT_ES": "Las alas de primer querubín medían dos metros y medio cada una, de manera que había cinco metros desde el extremo de una de sus alas hasta el extremo de la otra.",
+        "CEI": "L'ala di un cherubino era di cinque cubiti e di cinque cubiti era anche l'altra ala del cherubino; c'erano dieci cubiti da una estremità all'altra delle ali."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/עֶ֨שֶׂר֙ בָּֽ/אַמָּ֔ה הַ/כְּר֖וּב הַ/שֵּׁנִ֑י מִדָּ֥ה אַחַ֛ת וְ/קֶ֥צֶב אֶחָ֖ד לִ/שְׁנֵ֥י הַ/כְּרֻבִֽים׃",
+        "LXX": "καὶ τὸ ὕψος τοῦ χερουβεὶν ἐν πήχει, καὶ οὕτως τὸ χερουβεὶν τὸ δεύτερον.",
+        "VUL": "Decem quoque cubitorum erat cherub secundus : in mensura pari, et opus unum erat in duobus cherubim,",
+        "SYN": "В десять локтей _был_ и другой херувим; одинаковой меры и одинакового вида _были_ оба херувима.",
+        "NEO": "Le second chérubin avait aussi dix coudées. Même mesure et même forme pour les deux chérubins.",
+        "NAB": "The cherubim were identical in size and shape,",
+        "VAT_ES": "El segundo querubín medía también cinco metros; los dos querubines tenían la misma dimensión y la misma forma:",
+        "CEI": "Di dieci cubiti era l'altro cherubino; i due cherubini erano identici nella misura e nella forma."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "קוֹמַת֙ הַ/כְּר֣וּב הָֽ/אֶחָ֔ד עֶ֖שֶׂר בָּֽ/אַמָּ֑ה וְ/כֵ֖ן הַ/כְּר֥וּב הַ/שֵּׁנִֽי׃",
+        "LXX": "καὶ ἀμφότερα χερουβεὶν ἐν μέσῳ τοῦ οἴκου τοῦ ἐσωτάτου· καὶ διεπέτασεν τὰς πτέρυγας αὐτῶν, καὶ ἥπτετο πτέρυξ μία τοῦ τοίχου, καὶ πτέρυξ ἥπτετο τοῦ τοίχου τοῦ δευτέρου· καὶ αἱ πτέρυγες αὐτοῦ αἱ ἐν μέσῳ τοῦ οἴκου ἥπτοντο πτέρυξ πτέρυγος.",
+        "VUL": "id est, altitudinem habebat unus cherub decem cubitorum, et similiter cherub secundus.",
+        "SYN": "Высота одного херувима _была_ десять локтей, также и другого херувима.",
+        "NEO": "La hauteur d’un chérubin était de dix coudées ; et de même pour le deuxième chérubin.",
+        "NAB": "and each was exactly ten cubits high.",
+        "VAT_ES": "uno y otro medían cinco metros de altura.",
+        "CEI": "L'altezza di un cherubino era di dieci cubiti, così anche quella dell'altro."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֨ן אֶת הַ/כְּרוּבִ֜ים בְּ/ת֣וֹךְ הַ/בַּ֣יִת הַ/פְּנִימִ֗י וַֽ/יִּפְרְשׂוּ֮ אֶת כַּנְפֵ֣י הַ/כְּרֻבִים֒ וַ/תִּגַּ֤ע כְּנַף הָֽ/אֶחָד֙ בַּ/קִּ֔יר וּ/כְנַף֙ הַ/כְּר֣וּב הַ/שֵּׁנִ֔י נֹגַ֖עַת בַּ/קִּ֣יר הַ/שֵּׁנִ֑י וְ/כַנְפֵי/הֶם֙ אֶל תּ֣וֹךְ הַ/בַּ֔יִת נֹגְעֹ֖ת כָּנָ֥ף אֶל כָּנָֽף׃",
+        "LXX": "καὶ περιέσχεν τὰ χερουβεὶν χρυσίῳ.",
+        "VUL": "Posuitque cherubim in medio templi interioris : extendebant autem alas suas cherubim, et tangebat ala una parietem, et ala cherub secundi tangebat parietem alterum : alæ autem alteræ in media parte templi se invicem contingebant.",
+        "SYN": "И поставил он херувимов среди внутренней части храма. Крылья же херувимов были распростерты, и касалось крыло одного _одной_ стены, а крыло другого херувима касалось другой стены; другие же крылья их среди храма сходились крыло с крылом.",
+        "NEO": "Salomon plaça les chérubins au milieu de la maison intérieure, les ailes déployées ; l’aile du premier touchait à l’un des murs, et l’aile du second chérubin touchait à l’autre mur, et leurs autres ailes se touchaient, aile contre aile, vers le milieu de la maison.",
+        "NAB": "The cherubim were placed in the inmost part of the temple, with their wings spread wide, so that one wing of each cherub touched a side wall while the other wing, pointing toward the middle of the room, touched the corresponding wing of the second cherub.",
+        "VAT_ES": "Salomón puso los querubines en medio del recinto interior. Estos tenían las alas desplegadas: un ala del primer querubín tocaba el muro y un ala del segundo tocaba el muro opuesto; y las alas extendidas hacia el centro de la Casa se tocaban una con otra.",
+        "CEI": "Pose i cherubini nella parte più riposta del tempio, nel santuario. I cherubini avevano le ali spiegate; l'ala di uno toccava la parete e l'ala dell'altro toccava l'altra parete; le loro ali si toccavano in mezzo al tempio, ala contro ala."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יְצַ֥ף אֶת הַ/כְּרוּבִ֖ים זָהָֽב׃",
+        "LXX": "πάντας τοὺς τοίχους τοῦ οἴκου κύκλῳ ἐκκολαπτὰ ἔγραψεν γραφίδι χερουβείν, καὶ φοίνικες τῷ ἐσωτέρῳ καὶ τῷ ἐξωτέρῳ.",
+        "VUL": "Texit quoque cherubim auro.",
+        "SYN": "И обложил он херувимов золотом.",
+        "NEO": "Et Salomon revêtit d’or les chérubins.",
+        "NAB": "The cherubim, too, were overlaid with gold.",
+        "VAT_ES": "También a los querubines los revistió de oro.",
+        "CEI": "Erano anch'essi rivestiti d'oro."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/אֵת֩ כָּל קִיר֨וֹת הַ/בַּ֜יִת מֵסַ֣ב קָלַ֗ע פִּתּוּחֵי֙ מִקְלְעוֹת֙ כְּרוּבִ֣ים וְ/תִֽמֹרֹ֔ת וּ/פְטוּרֵ֖י צִצִּ֑ים מִ/לִּ/פְנִ֖ים וְ/לַ/חִיצֽוֹן׃",
+        "LXX": "καὶ τὸ ἔδαφος τοῦ οἴκου περιέσχεν χρυσίῳ, τοῦ ἐσωτάτου καὶ τοῦ ἐξωτάτου.",
+        "VUL": "Et omnes parietes templi per circuitum sculpsit variis cælaturis et torno : et fecit in eis cherubim, et palmas, et picturas varias, quasi prominentes de pariete, et egredientes.",
+        "SYN": "И на всех стенах храма кругом сделал резные изображения херувимов и пальмовых дерев и распускающихся цветов, внутри и вне.",
+        "NEO": "Il fit sculpter en relief, sur tous les murs de la maison, tout autour, à l’intérieur comme à l’extérieur, des chérubins, des palmiers et des fleurs épanouies.",
+        "NAB": "The walls on all sides of both the inner and the outer rooms had carved figures of cherubim, palm trees, and open flowers.",
+        "VAT_ES": "Alrededor de todos los muros de la Casa, hizo cincelar figuras de querubines, de palmeras y pimpollos, tanto en el interior como en el exterior del lugar santísimo.",
+        "CEI": "Ricoprì le pareti del tempio con sculture e incisioni di cherubini, di palme e di boccioli di fiori, all'interno e all'esterno."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/אֶת קַרְקַ֥ע הַ/בַּ֖יִת צִפָּ֣ה זָהָ֑ב לִ/פְנִ֖ימָה וְ/לַ/חִיצֽוֹן׃",
+        "LXX": "καὶ τῷ θυρώματι τοῦ δαβεὶρ ἐποίησεν θύρας ξυλίνων ἀρκευθίνων·",
+        "VUL": "Sed et pavimentum domus texit auro intrinsecus et extrinsecus.",
+        "SYN": "И пол в храме обложил золотом во внутренней и передней части.",
+        "NEO": "Il revêtit d’or le sol de la maison, à l’intérieur comme à l’extérieur.",
+        "NAB": "The floor of both the inner and the outer rooms was overlaid with gold.",
+        "VAT_ES": "Y revistió de oro el suelo de la Casa, dentro y fuera del lugar santísimo.",
+        "CEI": "Ricoprì d'oro il pavimento del tempio, all'interno e all'esterno."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/אֵת֙ פֶּ֣תַח הַ/דְּבִ֔יר עָשָׂ֖ה דַּלְת֣וֹת עֲצֵי שָׁ֑מֶן הָ/אַ֥יִל מְזוּז֖וֹת חֲמִשִֽׁית׃",
+        "LXX": "στοαὶ τετραπλῶς.",
+        "VUL": "Et in ingressu oraculi fecit ostiola de lignis olivarum, postesque angulorum quinque.",
+        "SYN": "Для входа в давир сделал двери из масличного дерева, с пятиугольными косяками.",
+        "NEO": "Il fit à la porte du sanctuaire des battants de bois d’olivier sauvage ; l’encadrement avec les poteaux prenait le cinquième du mur.",
+        "NAB": "At the entrance of the sanctuary, doors of olive wood were made; the doorframes had beveled posts.",
+        "VAT_ES": "A la entrada del lugar santísimo, hizo unas puertas de madera de olivo; el dintel y los postes tenían forma pentagonal.",
+        "CEI": "Fece costruire la porta della cella con battenti di legno di ulivo; il frontale e gli stipiti formavano un pentagono."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וּ/שְׁתֵּי֮ דַּלְת֣וֹת עֲצֵי שֶׁמֶן֒ וְ/קָלַ֣ע עֲ֠לֵי/הֶם מִקְלְע֨וֹת כְּרוּבִ֧ים וְ/תִמֹר֛וֹת וּ/פְטוּרֵ֥י צִצִּ֖ים וְ/צִפָּ֣ה זָהָ֑ב וַ/יָּ֛רֶד עַל הַ/כְּרוּבִ֥ים וְ/עַל הַ/תִּֽמֹר֖וֹת אֶת הַ/זָּהָֽב׃",
+        "LXX": "ἐν ἀμφοτέραις ταῖς θύραις ξύλα πεύκινα· δύο πτυχαὶ καὶ ἡ θύρα ἡ μία καὶ στροφεῖς αὐτῶν, καὶ δύο πτυχαὶ ἡ θύρα ἡ δευτέρα, στρεφόμενα.",
+        "VUL": "Et duo ostia de lignis olivarum : et sculpsit in eis picturam cherubim, et palmarum species, et anaglypha valde prominentia : et texit ea auro, et operuit tam cherubim quam palmas, et cetera, auro.",
+        "SYN": "На двух половинах дверей из масличного дерева он сделал резных херувимов и пальмы и распускающиеся цветы и обложил золотом; покрыл золотом и херувимов и пальмы.",
+        "NEO": "Sur les deux battants en bois d’olivier sauvage, il fit sculpter des chérubins, des palmiers et des fleurs épanouies, et il les revêtit d’or, étendant l’or sur les chérubins et sur les palmiers.",
+        "NAB": "The two doors were of olive wood, with carved figures of cherubim, palm trees, and open flowers. The doors were overlaid with gold, which was also molded to the cherubim and the palm trees.",
+        "VAT_ES": "Sobre las dos hojas de madera de olivo, hizo cincelar querubines, palmeras y pimpollos; revistió de oro las puertas, y aplicó oro laminado sobre los querubines y las palmeras.",
+        "CEI": "I due battenti erano di legno di ulivo. Su di essi fece scolpire cherubini, palme e boccioli di fiori, che ricoprì d'oro, stendendo lamine d'oro sui cherubini e sulle palme."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/כֵ֥ן עָשָׂ֛ה לְ/פֶ֥תַח הַֽ/הֵיכָ֖ל מְזוּז֣וֹת עֲצֵי שָׁ֑מֶן מֵ/אֵ֖ת רְבִעִֽית׃",
+        "LXX": "ἐκκεκολαμμένα χερουβεὶν καὶ φοίνικες καὶ διαπεπετασμένα πέταλα, καὶ περιεχόμενα χρυσίῳ καταγομένῳ ἐπὶ τὴν ἐκτύπωσιν.",
+        "VUL": "Fecitque in introitu templi postes de lignis olivarum quadrangulatos,",
+        "SYN": "И у входа в храм сделал косяки из масличного дерева четырехугольные,",
+        "NEO": "De même il fit, pour la porte du temple, des poteaux de bois d’olivier sauvage, qui prenaient le quart du mur,",
+        "NAB": "The same was done at the entrance to the nave, where the doorposts of olive wood were rectangular.",
+        "VAT_ES": "Lo mismo hizo para la entrada de la nave central: hizo un marco de madera de olivo, de forma cuadrangular,",
+        "CEI": "Lo stesso procedimento adottò per la porta della navata, che aveva stipiti di legno di ulivo a forma quadrangolare."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וּ/שְׁתֵּ֥י דַלְת֖וֹת עֲצֵ֣י בְרוֹשִׁ֑ים שְׁנֵ֨י צְלָעִ֜ים הַ/דֶּ֤לֶת הָֽ/אַחַת֙ גְּלִילִ֔ים וּ/שְׁנֵ֧י קְלָעִ֛ים הַ/דֶּ֥לֶת הַ/שֵּׁנִ֖ית גְּלִילִֽים׃",
+        "LXX": "καὶ ᾠκοδόμησεν τὴν αὐλὴν τὴν ἐσωτάτην, τρεῖς στίχους ἀπελεκήτων, καὶ στίχος κατειργασμένης κέδρου κυκλόθεν. καὶ ᾠκοδόμησε καταπέτασμα τῆς αὐλῆς τοῦ αἰλὰμ τοῦ οἴκου τοῦ κατὰ πρόσωπον τοῦ ναοῦ.",
+        "VUL": "et duo ostia de lignis abiegnis altrinsecus : et utrumque ostium duplex erat, et se invicem tenens aperiebatur.",
+        "SYN": "и две двери из кипарисового дерева; обе половинки одной двери были подвижные, и обе половинки другой двери были подвижные.",
+        "NEO": "et deux battants en bois de cyprès ; le premier battant était formé de deux feuillets qui se repliaient ; le deuxième battant était pareillement formé de deux feuillets qui se repliaient.",
+        "NAB": "The two doors were of fir wood; each door was banded by a metal strap, front and back,",
+        "VAT_ES": "y dos puertas de madera de ciprés, cada una con dos hojas giratorias.",
+        "CEI": "I due battenti erano di legno di abete; un battente era costituito da due pezzi girevoli e così l'altro battente."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וְ/קָלַ֤ע כְּרוּבִים֙ וְ/תִ֣מֹר֔וֹת וּ/פְטֻרֵ֖י צִצִּ֑ים וְ/צִפָּ֣ה זָהָ֔ב מְיֻשָּׁ֖ר עַל הַ/מְּחֻקֶּֽה׃",
+        "VUL": "Et sculpsit cherubim, et palmas, et cælaturas valde eminentes : operuitque omnia laminis aureis opere quadro ad regulam.",
+        "SYN": "И вырезал _на_ _них_ херувимов и пальмы и распускающиеся цветы и обложил золотом по резьбе.",
+        "NEO": "Il y sculpta des chérubins, des palmiers et des fleurs épanouies, et il les revêtit d’or, adapté à la sculpture.",
+        "NAB": "and had carved cherubim, palm trees, and open flowers, over which gold was evenly applied.",
+        "VAT_ES": "Hizo esculpir querubines, palmeras y pimpollos, y los revistió de oro, bien aplicado a los relieves.",
+        "CEI": "Vi scolpì cherubini, palme e boccioli di fiori, che ricoprì d'oro lungo le linee dell'incisione."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יִּ֨בֶן֙ אֶת הֶ/חָצֵ֣ר הַ/פְּנִימִ֔ית שְׁלֹשָׁ֖ה טוּרֵ֣י גָזִ֑ית וְ/ט֖וּר כְּרֻתֹ֥ת אֲרָזִֽים׃",
+        "VUL": "Et ædificavit atrium interius tribus ordinibus lapidum politorum, et uno ordine lignorum cedri.",
+        "SYN": "И построил внутренний двор из трех рядов обтесанного камня и из ряда кедровых брусьев.",
+        "NEO": "Il bâtit le parvis intérieur de trois rangées de pierres de taille et d’une rangée de poutres de cèdre.",
+        "NAB": "The inner court was walled off by means of three courses of hewn stones and one course of cedar beams.",
+        "VAT_ES": "Luego edificó el patio interior, con tres hileras de piedras talladas y una hilera de tablas de cedro.",
+        "CEI": "Costruì il muro del cortile interno con tre ordini di pietre squadrate e con un ordine di tavole di cedro."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "בַּ/שָּׁנָה֙ הָֽ/רְבִיעִ֔ית יֻסַּ֖ד בֵּ֣ית יְהוָ֑ה בְּ/יֶ֖רַח זִֽו׃",
+        "VUL": "Anno quarto fundata est domus Domini in mense Zio :",
+        "SYN": "В четвертый год, в месяц Зиф, [в месяц второй,] положил он основание храму Господа,",
+        "NEO": "La quatrième année, au mois de ziv, furent posés les fondements de la maison de \\+w Yahweh|strong=\"H3068\"\\+w** ;",
+        "NAB": "The foundations of the LORD'S temple were laid in the month of Ziv",
+        "VAT_ES": "En el cuarto año, en el mes de Ziv, se pusieron los fundamentos de la Casa del Señor.",
+        "CEI": "Nell'anno quarto, nel mese di Ziv, si gettarono le fondamenta del tempio del Signore."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וּ/בַ/שָּׁנָה֩ הָ/אַחַ֨ת עֶשְׂרֵ֜ה בְּ/יֶ֣רַח בּ֗וּל ה֚וּא הַ/חֹ֣דֶשׁ הַ/שְּׁמִינִ֔י כָּלָ֣ה הַ/בַּ֔יִת לְ/כָל דְּבָרָ֖י/ו וּ/לְ/כָל משפט/ו מִשְׁפָּטָ֑י/ו וַ/יִּבְנֵ֖/הוּ שֶׁ֥בַע שָׁנִֽים׃",
+        "VUL": "et in anno undecimo, mense Bul (ipse est mensis octavus), perfecta est domus in omni opere suo, et in universis utensilibus suis : ædificavitque eam annis septem.",
+        "SYN": "а на одиннадцатом году, в месяце Буле, -- это месяц восьмой, -- он окончил храм со всеми принадлежностями его и по всем предначертаниям его; строил его семь лет.",
+        "NEO": "et la onzième année, au mois de bul, qui est le huitième mois, la maison fut achevée dans toutes ses parties et telle qu’il convenait. Salomon la construisit dans l’espace de sept ans.",
+        "NAB": "in the fourth year, and it was completed in all particulars, exactly according to plan, in the month of Bul, the eighth month, in the eleventh year. Thus it took Solomon seven years to build it.",
+        "VAT_ES": "En el año undécimo, en el mes de Bul –que es el octavo mes–, fue terminada la Casa en todos sus detalles y conforme al proyecto. Siete años tardó Salomón para terminarla.",
+        "CEI": "Nell'anno undecimo, nel mese di Bul, che è l'ottavo mese, fu terminato il tempio in tutte le sue parti e con tutto l'occorrente. Salomone lo edificò in sette anni."
+      }
+    }
+  }
+}

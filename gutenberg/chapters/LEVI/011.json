@@ -1,0 +1,861 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LEVI_011",
+  "book_key": "LEVI",
+  "sequence": 11,
+  "chapter_in": {
+    "MT": 11,
+    "VUL": 11,
+    "LXX": 11
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֧ר יְהוָ֛ה אֶל מֹשֶׁ֥ה וְ/אֶֽל אַהֲרֹ֖ן לֵ/אמֹ֥ר אֲלֵ/הֶֽם׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν καὶ Ἀαρὼν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen et Aaron, dicens :",
+        "SYN": "И сказал Господь Моисею и Аарону, говоря им:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse et à Aaron, en leur disant :",
+        "NAB": "The LORD said to Moses and Aaron,",
+        "VAT_ES": "El Señor dijo a Moisés y a Aarón:",
+        "CEI": "Il Signore disse a Mosè e ad Aronne:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "דַּבְּר֛וּ אֶל בְּנֵ֥י יִשְׂרָאֵ֖ל לֵ/אמֹ֑ר זֹ֤את הַֽ/חַיָּה֙ אֲשֶׁ֣ר תֹּאכְל֔וּ מִ/כָּל הַ/בְּהֵמָ֖ה אֲשֶׁ֥ר עַל הָ/אָֽרֶץ׃",
+        "LXX": "Λαλήσατε τοῖς υἱοῖς Ἰσραὴλ λέγοντες Ταῦτα τὰ κτήνη ἃ φάγεσθε ἀπὸ τῶν κτηνῶν τῶν ἐπὶ τῆς γῆς·",
+        "VUL": "Dicite filiis Israël : Hæc sunt animalia quæ comedere debetis de cunctis animantibus terræ :",
+        "SYN": "скажите сынам Израилевым: вот животные, которые можно вам есть из всего скота на земле:",
+        "NEO": "« Parlez aux enfants d’Israël, et dites :",
+        "NAB": "\"Speak to the Israelites and tell them: Of all land animals these are the ones you may eat:",
+        "VAT_ES": "Hablen en estos términos a los israelitas: Ustedes podrán comer cualquier animal terrestre",
+        "CEI": "\"Riferite agli Israeliti: Questi sono gli animali che potrete mangiare fra tutte le bestie che sono sulla terra."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כֹּ֣ל מַפְרֶ֣סֶת פַּרְסָ֗ה וְ/שֹׁסַ֤עַת שֶׁ֨סַע֙ פְּרָסֹ֔ת מַעֲלַ֥ת גֵּרָ֖ה בַּ/בְּהֵמָ֑ה אֹתָ֖/הּ תֹּאכֵֽלוּ׃",
+        "LXX": "πᾶν κτῆνος διχηλοῦν ὁπλὴν καὶ ὀνυχιστῆρας ὀνυχίζον δύο χηλῶν καὶ ἀνάγον μηρυκισμόν, ἐν τοῖς κτήνεσιν, ταῦτα φάγεσθε.",
+        "VUL": "omne quod habet divisam ungulam, et ruminat in pecoribus, comedetis.",
+        "SYN": "всякий скот, у которого раздвоены копыта и на копытах глубокий разрез, и который жует жвачку, ешьте;",
+        "NEO": "Tout animal qui a la corne divisée et le pied fourchu, et qui rumine, vous le mangerez.",
+        "NAB": "any animal that has hoofs you may eat, provided it is cloven-footed and chews the cud.",
+        "VAT_ES": "que tenga las pezuñas partidas –es decir, divididas en dos mitades– y que sea rumiante.",
+        "CEI": "Potrete mangiare d'ogni quadrupede che ha l'unghia bipartita, divisa da una fessura, e che rumina."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אַ֤ךְ אֶת זֶה֙ לֹ֣א תֹֽאכְל֔וּ מִֽ/מַּעֲלֵי֙ הַ/גֵּרָ֔ה וּ/מִ/מַּפְרִיסֵ֖י הַ/פַּרְסָ֑ה אֶֽת הַ֠/גָּמָל כִּֽי מַעֲלֵ֨ה גֵרָ֜ה ה֗וּא וּ/פַרְסָה֙ אֵינֶ֣/נּוּ מַפְרִ֔יס טָמֵ֥א ה֖וּא לָ/כֶֽם׃",
+        "LXX": "πλὴν ἀπὸ τούτων οὐ φάγεσθε, ἀπὸ τῶν ἀναγόντων μηρυκισμὸν καὶ ἀπὸ τῶν διχηλούντων τὰς ὁπλὰς καὶ ὀνυχιζόντων ὀνυχιστῆρας· τὸν κάμηλον, ὅτι ἀνάγει μηρυκισμὸν τοῦτο ὁπλὴν δὲ οὐ διχηλεῖ, ἀκάθαρτον τοῦτο ὑμῖν·",
+        "VUL": "Quidquid autem ruminat quidem, et habet ungulam, sed non dividit eam, sicut camelus et cetera, non comedetis illud, et inter immunda reputabitis.",
+        "SYN": "только сих не ешьте из жующих жвачку и имеющих раздвоенные копыта: верблюда, потому что он жует жвачку, но копыта у него не раздвоены, нечист он для вас;",
+        "NEO": "Mais vous ne mangerez pas de ceux qui ruminent seulement, ou qui ont seulement la corne divisée. Tel est le chameau, qui rumine, mais dont la corne n’est pas divisée : il sera impur pour vous.",
+        "NAB": "But you shall not eat any of the following that only chew the cud or only have hoofs: the camel, which indeed chews the cud, but does not have hoofs and is therefore unclean for you;",
+        "VAT_ES": "Pero se abstendrán de comer los siguientes animales, a pesar de que tienen la pezuña partida o son rumiantes: el camello,",
+        "CEI": "Ma fra i ruminanti e gli animali che hanno l'unghia divisa, non mangerete i seguenti: il cammello, perché rumina, ma non ha l'unghia divisa, lo considererete immondo;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/שָּׁפָ֗ן כִּֽי מַעֲלֵ֤ה גֵרָה֙ ה֔וּא וּ/פַרְסָ֖ה לֹ֣א יַפְרִ֑יס טָמֵ֥א ה֖וּא לָ/כֶֽם׃",
+        "LXX": "καὶ τὸν δασύποδα, ὅτι ἀνάγει μηρυκισμὸν τοῦτο καὶ ὁπλὴν οὐ διχηλεῖ, ἀκάθαρτον τοῦτο ὑμῖν·",
+        "VUL": "Chrogryllus qui ruminat, ungulamque non dividit, immundus est.",
+        "SYN": "и тушканчика, потому что он жует жвачку, но копыта у него не раздвоены, нечист он для вас,",
+        "NEO": "Telle la gerboise, qui rumine, mais qui n’a pas la corné divisée : elle sera impure pour vous.",
+        "NAB": "the rock badger, which indeed chews the cud, but does not have hoofs and is therefore unclean for you;",
+        "VAT_ES": "el damán",
+        "CEI": "l'ìrace, perché rumina, ma non ha l'unghia divisa, lo considererete immondo;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/אֶת הָ/אַרְנֶ֗בֶת כִּֽי מַעֲלַ֤ת גֵּרָה֙ הִ֔וא וּ/פַרְסָ֖ה לֹ֣א הִפְרִ֑יסָה טְמֵאָ֥ה הִ֖וא לָ/כֶֽם׃",
+        "LXX": "καὶ τὸν χοιρογρύλλιον, ὅτι ἀνάγει μηρυκισμὸν τοῦτο καὶ ὁπλὴν οὐ διχηλεῖ, ἀκάθαρτον τοῦτο ὑμῖν.",
+        "VUL": "Lepus quoque : nam et ipse ruminat, sed ungulam non dividit.",
+        "SYN": "и зайца, потому что он жует жвачку, но копыта у него не раздвоены, нечист он для вас;",
+        "NEO": "Tel le lièvre, qui rumine, mais qui n’a pas la corne divisée : il sera impur pour vous.",
+        "NAB": "the hare, which indeed chews the cud, but does not have hoofs and is therefore unclean for you; and the pig,",
+        "VAT_ES": "y la liebre, porque son rumiantes, pero no tienen las pezuñas partidas;",
+        "CEI": "la lepre, perché rumina, ma non ha l'unghia divisa, la considererete immonda;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ֠/חֲזִיר כִּֽי מַפְרִ֨יס פַּרְסָ֜ה ה֗וּא וְ/שֹׁסַ֥ע שֶׁ֨סַע֙ פַּרְסָ֔ה וְ/ה֖וּא גֵּרָ֣ה לֹֽא יִגָּ֑ר טָמֵ֥א ה֖וּא לָ/כֶֽם׃",
+        "LXX": "καὶ τὸν ὗν, ὅτι διχηλεῖ ὁπλὴν τοῦτο καὶ ὀνυχίζει ὄνυχας ὁπλῆς, καὶ τοῦτο οὐκ ἀνάγει μηρυκισμόν, ἀκάθαρτον τοῦτο ὑμῖν.",
+        "VUL": "Et sus : qui cum ungulam dividat, non ruminat.",
+        "SYN": "и свиньи, потому что копыта у нее раздвоены и на копытах разрез глубокий, но она не жует жвачки, нечиста она для вас;",
+        "NEO": "Tel le porc, qui a la corne divisée et le pied fourchu, mais qui ne rumine pas : il sera impur pour vous.",
+        "NAB": "which does indeed have hoofs and is cloven-footed, but does not chew the cud and is therefore unclean for you.",
+        "VAT_ES": "y también el cerdo, porque tiene las pezuñas partidas, pero no es rumiante: a este deberán considerarlo impuro.",
+        "CEI": "il porco, perché ha l'unghia bipartita da una fessura, ma non rumina, lo considererete immondo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "מִ/בְּשָׂרָ/ם֙ לֹ֣א תֹאכֵ֔לוּ וּ/בְ/נִבְלָתָ֖/ם לֹ֣א תִגָּ֑עוּ טְמֵאִ֥ים הֵ֖ם לָ/כֶֽם׃",
+        "LXX": "ἀπὸ τῶν κρεῶν αὐτῶν οὐ φάγεσθε, καὶ τῶν θνησιμαίων αὐτῶν οὐχ ἅψεσθε· ἀκάθαρτα ταῦτα ὑμῖν.",
+        "VUL": "Horum carnibus non vescemini, nec cadavera contingetis, quia immunda sunt vobis.",
+        "SYN": "мяса их не ешьте и к трупам их не прикасайтесь; нечисты они для вас.",
+        "NEO": "Vous ne mangerez pas de leur chair, et vous ne toucherez pas à leurs corps morts : ils seront impurs pour vous.",
+        "NAB": "Their flesh you shall not eat, and their dead bodies you shall not touch; they are unclean for you.",
+        "VAT_ES": "Ustedes no comerán la carne de estos animales ni tocarán sus cadáveres, sino que deberán considerarlos impuros.",
+        "CEI": "Non mangerete la loro carne e non toccherete i loro cadaveri; li considererete immondi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אֶת זֶה֙ תֹּֽאכְל֔וּ מִ/כֹּ֖ל אֲשֶׁ֣ר בַּ/מָּ֑יִם כֹּ֣ל אֲשֶׁר ל/וֹ֩ סְנַפִּ֨יר וְ/קַשְׂקֶ֜שֶׂת בַּ/מַּ֗יִם בַּ/יַּמִּ֛ים וּ/בַ/נְּחָלִ֖ים אֹתָ֥/ם תֹּאכֵֽלוּ׃",
+        "LXX": "Καὶ ταῦτα ἃ φάγεσθε ἀπὸ πάντων τῶν ἐν τοῖς ὕδασιν· πάντα ὅσα ἐστὶν αὐτοῖς πτερύγια καὶ λεπίδες ἐν τοῖς ὕδασιν καὶ ἐν ταῖς θαλάσσαις καὶ ἐν τοῖς χειμάρροις, ταῦτα φάγεσθε.",
+        "VUL": "Hæc sunt quæ gignuntur in aquis, et vesci licitum est : omne quod habet pinnulas et squamas, tam in mari quam in fluminibus et stagnis, comedetis.",
+        "SYN": "Из всех _животных,_ которые в воде, ешьте сих: у которых есть перья и чешуя в воде, в морях ли, или реках, тех ешьте;",
+        "NEO": "Voici les animaux que vous mangerez parmi tous ceux qui sont dans les eaux : Tout ce qui a nageoires et écailles, dans les eaux, soit dans la mer, soit dans les rivières, vous le mangerez.",
+        "NAB": "\"Of the various creatures that live in the water, you may eat the following: whatever in the seas or in river waters has both fins and scales you may eat.",
+        "VAT_ES": "Entre los animales que viven en el agua, ya sea en el mar o en los ríos, ustedes podrán comer aquellos que tienen aletas y escamas.",
+        "CEI": "Questi sono gli animali che potrete mangiare fra tutti quelli acquatici. Potrete mangiare quanti hanno pinne e squame, sia nei mari, sia nei fiumi."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/כֹל֩ אֲשֶׁ֨ר אֵֽין ל֜/וֹ סְנַפִּ֣יר וְ/קַשְׂקֶ֗שֶׂת בַּ/יַּמִּים֙ וּ/בַ/נְּחָלִ֔ים מִ/כֹּל֙ שֶׁ֣רֶץ הַ/מַּ֔יִם וּ/מִ/כֹּ֛ל נֶ֥פֶשׁ הַ/חַיָּ֖ה אֲשֶׁ֣ר בַּ/מָּ֑יִם שֶׁ֥קֶץ הֵ֖ם לָ/כֶֽם׃",
+        "LXX": "καὶ πάντα ὅσα οὐκ ἔστιν αὐτοῖς πτερύγια οὐδὲ λεπίδες ἐν τῷ ὕδατι ἢ ἐν ταῖς θαλάσσαις καὶ ἐν τοῖς χειμάρροις, ἀπὸ πάντων ὧν ἐρεύγεται τὰ ὕδατα καὶ ἀπὸ πάσης ψυχῆς ζώσης τῆς ἐν τῷ ὕδατι, βδέλυγμά ἐστιν.",
+        "VUL": "Quidquid autem pinnulas et squamas non habet, eorum quæ in aquis moventur et vivunt, abominabile vobis,",
+        "SYN": "а все те, у которых нет перьев и чешуи, в морях ли, или реках, из всех плавающих в водах и из всего живущего в водах, скверны для вас;",
+        "NEO": "Mais vous aurez en abomination tout ce qui n’a pas nageoires et écailles, dans les mers et dans les rivières, parmi tous les animaux qui se meuvent dans les eaux et parmi tous les êtres vivants qui s’y trouvent.",
+        "NAB": "But of the various creatures that crawl or swim in the water, whether in the sea or in the rivers, all those that lack either fins or scales are loathsome for you,",
+        "VAT_ES": "Pero deberán tener por una cosa inmunda a cualquier animal que carezca de aletas y escamas, entre los seres que se mueven por las aguas y entre los vivientes que están en las aguas, ya sea en el mar o en los ríos.",
+        "CEI": "Ma di tutti gli animali, che si muovono o vivono nelle acque, nei mari e nei fiumi, quanti non hanno né pinne né squame, li terrete in abominio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/שֶׁ֖קֶץ יִהְי֣וּ לָ/כֶ֑ם מִ/בְּשָׂרָ/ם֙ לֹ֣א תֹאכֵ֔לוּ וְ/אֶת נִבְלָתָ֖/ם תְּשַׁקֵּֽצוּ׃",
+        "LXX": "καὶ βδελύγματα ἔσονται ὑμῶν· ἀπὸ τῶν κρεῶν αὐτῶν οὐκ ἔδεσθε, καὶ τὰ θνησιμαῖα αὐτῶν βδελύξεσθε.",
+        "VUL": "execrandumque erit : carnes eorum non comedetis, et morticina vitabitis.",
+        "SYN": "они должны быть скверны для вас: мяса их не ешьте и трупов их гнушайтесь;",
+        "NEO": "Ils seront pour vous une abomination ; vous ne mangerez pas de leur chair, et vous tiendrez pour abominables leurs cadavres.",
+        "NAB": "and you shall treat them as loathsome. Their flesh you shall not eat, and their dead bodies you shall loathe.",
+        "VAT_ES": "No comerán su carne y sentirán repulsión por sus cadáveres.",
+        "CEI": "Essi saranno per voi in abominio; non mangerete la loro carne e terrete in abominio i loro cadaveri."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כֹּ֣ל אֲשֶׁ֥ר אֵֽין ל֛/וֹ סְנַפִּ֥יר וְ/קַשְׂקֶ֖שֶׂת בַּ/מָּ֑יִם שֶׁ֥קֶץ ה֖וּא לָ/כֶֽם׃",
+        "LXX": "καὶ πάντα ὅσα οὐκ ἔστιν αὐτοῖς πτερύγια καὶ λεπίδες τῶν ἐν τῷ ὕδατι, βδέλυγμα τοῦτό ἐστιν ὑμῖν.",
+        "VUL": "Cuncta quæ non habent pinnulas et squamas in aquis, polluta erunt.",
+        "SYN": "все _животные,_ у которых нет перьев и чешуи в воде, скверны для вас.",
+        "NEO": "Tout ce qui, dans les eaux, n’a pas de nageoires et d’écailles, vous l’aurez en abomination.",
+        "NAB": "Every water creature that lacks fins or scales is loathsome for you.",
+        "VAT_ES": "Todo lo que vive en el agua y no tiene aletas ni escamas, será para ustedes una cosa inmunda.",
+        "CEI": "Tutto ciò che non ha né pinne né squame nelle acque sarà per voi in abominio."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/אֶת אֵ֨לֶּה֙ תְּשַׁקְּצ֣וּ מִן הָ/ע֔וֹף לֹ֥א יֵאָכְל֖וּ שֶׁ֣קֶץ הֵ֑ם אֶת הַ/נֶּ֨שֶׁר֙ וְ/אֶת הַ/פֶּ֔רֶס וְ/אֵ֖ת הָ/עָזְנִיָּֽה׃",
+        "LXX": "Καὶ ταῦτα ἃ βδελύξεσθε ἀπὸ τῶν πετεινῶν, καὶ οὐ βρωθήσεται, βδέλυγμά ἐστιν· τὸν ἀετὸν καὶ τὸν γρύπα καὶ τὸν ἁλιάετον,",
+        "VUL": "Hæc sunt quæ de avibus comedere non debetis, et vitanda sunt vobis : aquilam, et gryphem, et haliæetum,",
+        "SYN": "Из птиц же гнушайтесь сих [не должно их есть, скверны они]: орла, грифа и морского орла,",
+        "NEO": "Voici, parmi les oiseaux, ceux que vous aurez en abomination ; on ne les mangera pas, c’est chose abominable : l’aigle, l’orfraie et le vautour :",
+        "NAB": "\"Of the birds, these you shall loathe and, as loathsome, they shall not be eaten: the eagle, the vulture, the osprey,",
+        "VAT_ES": "También deberán considerar inmundas –y por lo tanto, no las podrán comer– a las siguientes aves: el águila, el quebrantahuesos, el águila marina,",
+        "CEI": "Fra i volatili terrete in abominio questi, che non dovrete mangiare, perché ripugnanti: l'aquila, l'ossìfraga e l'aquila di mare,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ֨/דָּאָ֔ה וְ/אֶת הָ/אַיָּ֖ה לְ/מִינָֽ/הּ׃",
+        "LXX": "καὶ τὸν γύπα καὶ ἴκτινα καὶ τὰ ὅμοια αὐτῷ,",
+        "VUL": "et milvum ac vulturem juxta genus suum,",
+        "SYN": "коршуна и сокола с породою его,",
+        "NEO": "le milan et toute espèce de faucons ;",
+        "NAB": "the kite, the various species of falcons,",
+        "VAT_ES": "el milano, las diversas especies de halcón,",
+        "CEI": "il nibbio e ogni specie di falco,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אֵ֥ת כָּל עֹרֵ֖ב לְ/מִינֽ/וֹ׃",
+        "LXX": "καὶ στρουθὸν καὶ γλαῦκα καὶ λάρον καὶ τὰ ὅμοια αὐτῷ,",
+        "VUL": "et omne corvini generis in similitudinem suam,",
+        "SYN": "всякого ворона с породою его,",
+        "NEO": "toute espèce de corbeaux ;",
+        "NAB": "the various species of crows,",
+        "VAT_ES": "todas las variedades de cuervos,",
+        "CEI": "ogni specie di corvo,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/אֵת֙ בַּ֣ת הַֽ/יַּעֲנָ֔ה וְ/אֶת הַ/תַּחְמָ֖ס וְ/אֶת הַ/שָּׁ֑חַף וְ/אֶת הַ/נֵּ֖ץ לְ/מִינֵֽ/הוּ׃",
+        "LXX": "καὶ ἱέρακα καὶ τὰ ὅμοια αὐτῷ,",
+        "VUL": "struthionem, et noctuam, et larum, et accipitrem juxta genus suum :",
+        "SYN": "страуса, совы, чайки и ястреба с породою его,",
+        "NEO": "l’autruche, le chat-huant, la mouette et toute espèce d’éperviers ;",
+        "NAB": "the ostrich, the nightjar, the gull, the various species of hawks,",
+        "VAT_ES": "el avestruz, la golondrina, la gaviota,",
+        "CEI": "lo struzzo, la civetta, il gabbiano e ogni specie di sparviere,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/כּ֥וֹס וְ/אֶת הַ/שָּׁלָ֖ךְ וְ/אֶת הַ/יַּנְשֽׁוּף׃",
+        "LXX": "καὶ νυκτικόρακα καὶ καταράκτην καὶ εἶβιν",
+        "VUL": "bubonem, et mergulum, et ibin,",
+        "SYN": "филина, рыболова и ибиса,",
+        "NEO": "le hibou, le cormoran et la chouette ;",
+        "NAB": "the owl, the cormorant, the screech owl,",
+        "VAT_ES": "la lechuza, el corvejón, el búho,",
+        "CEI": "il gufo, l'alcione, l'ibis,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/תִּנְשֶׁ֥מֶת וְ/אֶת הַ/קָּאָ֖ת וְ/אֶת הָ/רָחָֽם׃",
+        "LXX": "καὶ πορφυρίωνα καὶ πελεκᾶνα καὶ κύκνον",
+        "VUL": "et cygnum, et onocrotalum, et porphyrionem,",
+        "SYN": "лебедя, пеликана и сипа,",
+        "NEO": "le cygne, le pélican et le gypaète ;",
+        "NAB": "the barn owl, the desert owl, the buzzard,",
+        "VAT_ES": "el ibis, el pelícano, el buitre,",
+        "CEI": "il cigno, il pellicano, la fòlaga,"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/אֵת֙ הַ/חֲסִידָ֔ה הָ/אֲנָפָ֖ה לְ/מִינָ֑/הּ וְ/אֶת הַ/דּוּכִיפַ֖ת וְ/אֶת הָ/עֲטַלֵּֽף׃",
+        "LXX": "καὶ γλαῦκα καὶ ἀρωδιὸν καὶ χαραδριὸν καὶ τὰ ὅμοια αὐτῷ, καὶ ἔποπα καὶ νυκτερίδα.",
+        "VUL": "herodionem, et charadrion juxta genus suum, upupam quoque, et vespertilionem.",
+        "SYN": "цапли, зуя с породою его, удода и нетопыря.",
+        "NEO": "la cigogne, toute espèce de hérons ; la huppe et la chauve-souris.",
+        "NAB": "the stork, the various species of herons, the hoopoe, and the bat.",
+        "VAT_ES": "la cig&uuml;eña, las diversas especies de garza, la abubilla y el murciélago.",
+        "CEI": "la cicogna, ogni specie di airone, l'ùpupa e il pipistrello."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "כֹּ֚ל שֶׁ֣רֶץ הָ/ע֔וֹף הַ/הֹלֵ֖ךְ עַל אַרְבַּ֑ע שֶׁ֥קֶץ ה֖וּא לָ/כֶֽם׃",
+        "LXX": "Καὶ πάντα τὰ ἑρπετὰ τῶν πετεινῶν ἃ πορεύεται ἐπὶ τέσσερα, βδελύγματά ἐστιν ὑμῖν.",
+        "VUL": "Omne de volucribus quod graditur super quatuor pedes, abominabile erit vobis.",
+        "SYN": "Все _животные_ пресмыкающиеся, крылатые, ходящие на четырех _ногах,_ скверны для нас;",
+        "NEO": "Tout insecte ailé qui marche sur quatre pattes, vous l’aurez en abomination.",
+        "NAB": "\"The various winged insects that walk on all fours are loathsome for you.",
+        "VAT_ES": "Además, ustedes deberán considerar inmundos a todos los insectos con alas que andan sobre cuatro patas.",
+        "CEI": "Sarà per voi in abominio anche ogni insetto alato, che cammina su quattro piedi."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "אַ֤ךְ אֶת זֶה֙ תֹּֽאכְל֔וּ מִ/כֹּל֙ שֶׁ֣רֶץ הָ/ע֔וֹף הַ/הֹלֵ֖ךְ עַל אַרְבַּ֑ע אֲשֶׁר לא ל֤/וֹ כְרָעַ֨יִם֙ מִ/מַּ֣עַל לְ/רַגְלָ֔י/ו לְ/נַתֵּ֥ר בָּ/הֵ֖ן עַל הָ/אָֽרֶץ׃",
+        "LXX": "ἀλλὰ ταῦτα φάγεσθε ἀπὸ τῶν ἑρπετῶν τῶν πετεινῶν ἃ πορεύεται ἐπὶ τέσσερα· ἔχει σκέλη ἀνώτερον τῶν ποδῶν αὐτοῦ πηδᾷν ἐν αὐτοῖς ἐπὶ τῆς γῆς.",
+        "VUL": "Quidquid autem ambulat quidem super quatuor pedes, sed habet longiora retro crura, per quæ salit super terram,",
+        "SYN": "из всех пресмыкающихся, крылатых, ходящих на четырех _ногах,_ тех только ешьте, у которых есть голени выше ног, чтобы скакать ими по земле;",
+        "NEO": "Mais, parmi tous les insectes ailés qui marchent sur quatre pattes, vous mangerez ceux qui ont des jambes au-dessus de leurs pattes, pour sauter sur la terre.",
+        "NAB": "But of the various winged insects that walk on all fours you may eat those that have jointed legs for leaping on the ground;",
+        "VAT_ES": "Pero podrán comer, entre los animales de esta clase, todos aquellos que tienen más largas las patas de atrás, y por eso pueden saltar sobre el suelo,",
+        "CEI": "Però fra tutti gli insetti alati che camminano su quattro piedi, potrete mangiare quelli che hanno due zampe sopra i piedi, per saltare sulla terra."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "אֶת אֵ֤לֶּה מֵ/הֶם֙ תֹּאכֵ֔לוּ אֶת הָֽ/אַרְבֶּ֣ה לְ/מִינ֔/וֹ וְ/אֶת הַ/סָּלְעָ֖ם לְ/מִינֵ֑/הוּ וְ/אֶת הַ/חַרְגֹּ֣ל לְ/מִינֵ֔/הוּ וְ/אֶת הֶ/חָגָ֖ב לְ/מִינֵֽ/הוּ׃",
+        "LXX": "καὶ ταῦτα φάγεσθε ἀπ’ αὐτῶν· τὸν βροῦχον καὶ τὰ ὅμοια αὐτῷ, καὶ τὸν ἀττάκην καὶ τὰ ὅμοια αὐτῷ, καὶ τὴν ἀκρίδα καὶ τὰ ὅμοια αὐτῇ, καὶ τὸν ὀφιομάχην καὶ τὰ ὅμοια αὐτῷ.",
+        "VUL": "comedere debetis, ut est bruchus in genere suo, et attacus atque ophiomachus, ac locusta, singula juxta genus suum.",
+        "SYN": "сих ешьте из них: саранчу с ее породою, солам с ее породою, харгол с ее породою и хагаб с ее породою.",
+        "NEO": "Voici ceux d’entre eux que vous mangerez : toute espèce de sauterelles, toute espèce de solam, toute espèce de hargol, toute espèce de hagab.",
+        "NAB": "hence of these you may eat the following: the various kinds of locusts, the various kinds of grasshoppers, the various kinds of katydids, and the various kinds of crickets.",
+        "VAT_ES": "o sea, todas las variedades de langostas y grillos.",
+        "CEI": "Perciò potrete mangiare i seguenti: ogni specie di cavalletta, ogni specie di locusta, ogni specie di acrìdi e ogni specie di grillo."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/כֹל֙ שֶׁ֣רֶץ הָ/ע֔וֹף אֲשֶׁר ל֖/וֹ אַרְבַּ֣ע רַגְלָ֑יִם שֶׁ֥קֶץ ה֖וּא לָ/כֶֽם׃",
+        "LXX": "πᾶν ἑρπετὸν ἀπὸ τῶν πετεινῶν οἷς ἐστὶν τέσσαρες πόδες, βδελύγματά ἐστιν ὑμῖν.",
+        "VUL": "Quidquid autem ex volucribus quatuor tantum habet pedes, execrabile erit vobis :",
+        "SYN": "Всякое _другое_ пресмыкающееся, крылатое, у которого четыре ноги, скверно для вас;",
+        "NEO": "Toute autre bête ailée ayant quatre pattes, vous l’aurez en abomination.",
+        "NAB": "All other winged insects that have four legs are loathsome for you.",
+        "VAT_ES": "Cualquier otro insecto alado que tenga cuatro patas, será para ustedes una cosa inmunda.",
+        "CEI": "Ogni altro insetto alato che ha quattro piedi lo terrete in abominio!"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וּ/לְ/אֵ֖לֶּה תִּטַּמָּ֑אוּ כָּל הַ/נֹּגֵ֥עַ בְּ/נִבְלָתָ֖/ם יִטְמָ֥א עַד הָ/עָֽרֶב׃",
+        "LXX": "Καὶ ἐν τούτοις μιανθήσεσθε· πᾶς ὁ ἁπτόμενος τῶν θνησιμαίων αὐτῶν ἀκάθαρτος ἕως ἑσπέρας,",
+        "VUL": "et quicumque morticina eorum tetigerit, polluetur, et erit immundus usque ad vesperum :",
+        "SYN": "от них вы будете нечисты: всякий, кто прикоснется к трупу их, нечист будет до вечера;",
+        "NEO": "Ceux-ci aussi vous rendront impurs : quiconque touchera leur corps mort sera impur jusqu’au soir,",
+        "NAB": "\"Such is the uncleanness that you contract, that everyone who touches their dead bodies shall be unclean until evening,",
+        "VAT_ES": "A causa de estos animales, ustedes podrán incurrir en impureza. El que toque sus cadáveres, será impuro hasta la tarde.",
+        "CEI": "Per i seguenti animali diventerete immondi: chiunque toccherà il loro cadavere sarà immondo fino alla sera"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/כָל הַ/נֹּשֵׂ֖א מִ/נִּבְלָתָ֑/ם יְכַבֵּ֥ס בְּגָדָ֖י/ו וְ/טָמֵ֥א עַד הָ/עָֽרֶב׃",
+        "LXX": "καὶ πᾶς ὁ αἴρων τῶν θνησιμαίων αὐτῶν πλυνεῖ τὰ ἱμάτια καὶ ἀκάθαρτος ἔσται ἕως ἑσπέρας.",
+        "VUL": "et si necesse fuerit ut portet quippiam horum mortuum, lavabit vestimenta sua, et immundus erit usque ad occasum solis.",
+        "SYN": "и всякий, кто возьмет труп их, должен омыть одежду свою и нечист будет до вечера.",
+        "NEO": "et quiconque emportera quelque partie de leur corps mort lavera ses vêtements et sera impur jusqu’au soir.",
+        "NAB": "and everyone who picks up any part of their dead bodies shall wash his garments and be unclean until evening.",
+        "VAT_ES": "El que levante el cadáver de alguno de ellos, tendrá que lavar su ropa y será impuro hasta la tarde.",
+        "CEI": "e chiunque trasporterà i loro cadaveri si dovrà lavare le vesti e sarà immondo fino alla sera."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "לְֽ/כָל הַ/בְּהֵמָ֡ה אֲשֶׁ֣ר הִוא֩ מַפְרֶ֨סֶת פַּרְסָ֜ה וְ/שֶׁ֣סַע אֵינֶ֣/נָּה שֹׁסַ֗עַת וְ/גֵרָה֙ אֵינֶ֣/נָּה מַעֲלָ֔ה טְמֵאִ֥ים הֵ֖ם לָ/כֶ֑ם כָּל הַ/נֹּגֵ֥עַ בָּ/הֶ֖ם יִטְמָֽא׃",
+        "LXX": "καὶ ἐν πᾶσιν τοῖς κτήνεσιν ὅ ἐστιν διχηλοῦν ὁπλὴν καὶ ὀνυχιστῆρας ὀνυχίζει καὶ μηρυκισμὸν οὐ μαρυκᾶται, ἀκάθαρτα ἔσονται ὑμῖν· πᾶς ὁ ἁπτόμενος τῶν θνησιμαίων αὐτῶν ἀκάθαρτος ἔσται ἕως ἑσπέρας.",
+        "VUL": "Omne animal quod habet quidem ungulam, sed non dividit eam, nec ruminat, immundum erit : et qui tetigerit illud, contaminabitur.",
+        "SYN": "Всякий скот, у которого копыта раздвоены, но нет глубокого разреза, и который не жует жвачки, нечист для вас: всякий, кто прикоснется к нему, будет нечист [до вечера].",
+        "NEO": "Tout animal qui a la corne divisée, mais qui n’a pas le pied fourchu et qui ne rumine pas, sera impur pour vous ; quiconque le touchera se rendra impur.",
+        "NAB": "All hoofed animals that are not cloven-footed or do not chew the cud are unclean for you; everyone who touches them becomes unclean.",
+        "VAT_ES": "Asimismo, todos los animales que no tengan las pezuñas partidas y que no sean rumiantes, serán impuros para ustedes. El que los toque será impuro.",
+        "CEI": "Riterrete immondo ogni animale che ha l'unghia, ma non divisa da fessura, e non rumina: chiunque li toccherà sarà immondo."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/כֹ֣ל הוֹלֵ֣ךְ עַל כַּפָּ֗י/ו בְּ/כָל הַֽ/חַיָּה֙ הַ/הֹלֶ֣כֶת עַל אַרְבַּ֔ע טְמֵאִ֥ים הֵ֖ם לָ/כֶ֑ם כָּל הַ/נֹּגֵ֥עַ בְּ/נִבְלָתָ֖/ם יִטְמָ֥א עַד הָ/עָֽרֶב׃",
+        "LXX": "καὶ πᾶς ὃς πορεύεται ἐπὶ χειρῶν ἐν πᾶσι τοῖς θηρίοις ἃ πορεύεται ἐπὶ τέσσερα, ἀκάθαρτα ὑμῖν ἔσται· πᾶς ὁ ἁπτόμενος τῶν θνησιμαίων αὐτῶν ἀκάθαρτος ἔσται ἕως ἑσπέρας,",
+        "VUL": "Quod ambulat super manus ex cunctis animantibus, quæ incedunt quadrupedia, immundum erit : qui tetigerit morticina eorum, polluetur usque ad vesperum.",
+        "SYN": "Из всех зверей четвероногих те, которые ходят на лапах, нечисты для вас: всякий, кто прикоснется к трупу их, нечист будет до вечера;",
+        "NEO": "Et parmi les animaux à quatre pieds, tout ce qui marche sur la plante des pieds vous sera impur : quiconque touchera leur corps mort sera impur jusqu’au soir ;",
+        "NAB": "Of the various quadrupeds, all those that walk on paws are unclean for you; everyone who touches their dead bodies shall be unclean until evening,",
+        "VAT_ES": "Todos los cuadrúpedos que para caminar se apoyan sobre la planta de los pies, serán impuros para ustedes. El que toque sus cadáveres, será impuro hasta la tarde,",
+        "CEI": "Considererete immondi tutti i quadrupedi che camminano sulla pianta dei piedi; chiunque ne toccherà il cadavere sarà immondo fino alla sera."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/הַ/נֹּשֵׂא֙ אֶת נִבְלָתָ֔/ם יְכַבֵּ֥ס בְּגָדָ֖י/ו וְ/טָמֵ֣א עַד הָ/עָ֑רֶב טְמֵאִ֥ים הֵ֖מָּה לָ/כֶֽם׃",
+        "LXX": "καὶ ὁ αἴρων τῶν θνησιμαίων αὐτῶν πλυνεῖ τὰ ἱμάτια καὶ ἀκάθαρτος ἔσται ἕως ἑσπέρας· ἀκάθαρτα ταῦτα ὑμῖν ἐστιν.",
+        "VUL": "Et qui portaverit hujuscemodi cadavera, lavabit vestimenta sua, et immundus erit usque ad vesperum : quia omnia hæc immunda sunt vobis.",
+        "SYN": "кто возьмет труп их, тот должен омыть одежды свои и нечист будет до вечера: нечисты они для вас.",
+        "NEO": "et quiconque portera leur corps mort lavera ses vêtements et sera impur jusqu’au soir. Ces animaux seront impurs pour vous.",
+        "NAB": "and everyone who picks up their dead bodies shall wash his garments and be unclean until evening. Such is their uncleanness for you.",
+        "VAT_ES": "y el que levante el cadáver de alguno de ellos, tendrá que lavar su ropa y será impuro hasta la tarde. Ustedes deberán considerarlos impuros.",
+        "CEI": "E chiunque trasporterà i loro cadaveri si dovrà lavare le vesti e sarà immondo fino alla sera. Tali animali riterrete immondi."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/זֶ֤ה לָ/כֶם֙ הַ/טָּמֵ֔א בַּ/שֶּׁ֖רֶץ הַ/שֹּׁרֵ֣ץ עַל הָ/אָ֑רֶץ הַ/חֹ֥לֶד וְ/הָ/עַכְבָּ֖ר וְ/הַ/צָּ֥ב לְ/מִינֵֽ/הוּ׃",
+        "LXX": "Καὶ ταῦτα ὑμῖν ἀκάθαρτα ἀπὸ τῶν ἑρπετῶν τῶν ἐπὶ τῆς γῆς· ἡ γαλῆ καὶ ὁ μῦς καὶ ὁ κροκόδειλος ὁ χερσαῖος,",
+        "VUL": "Hæc quoque inter polluta reputabuntur de his quæ moventur in terra, mustela et mus et crocodilus, singula juxta genus suum,",
+        "SYN": "Вот что нечисто для вас из животных, пресмыкающихся по земле: крот, мышь, ящерица с ее породою,",
+        "NEO": "Voici, parmi les petites bêtes qui rampent sur la terre, celles qui seront impures pour vous : la belette, la souris et toute espèce de lézards ;",
+        "NAB": "\"Of the creatures that swarm on the ground, the following are unclean for you: the rat, the mouse, the various kinds of lizards,",
+        "VAT_ES": "Entre los animales pequeños que caminan arrastrándose por el suelo, serán impuros para ustedes los siguientes: el topo, el ratón y las diversas especies de lagartos;",
+        "CEI": "Fra gli animali che strisciano per terra riterrete immondi: la talpa, il topo e ogni specie di sauri,"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/הָ/אֲנָקָ֥ה וְ/הַ/כֹּ֖חַ וְ/הַ/לְּטָאָ֑ה וְ/הַ/חֹ֖מֶט וְ/הַ/תִּנְשָֽׁמֶת׃",
+        "LXX": "μυγαλῆ καὶ χαμηλέων καὶ καλαβώτης καὶ σαῦρα καὶ ἀσπάλαξ.",
+        "VUL": "mygale, et chamæleon, et stellio, et lacerta, et talpa.",
+        "SYN": "анака, хамелеон, летаа, хомет и тиншемет, --",
+        "NEO": "la musaraigne, le caméléon, la salamandre, le lézard vert et la taupe.",
+        "NAB": "the gecko, the chameleon, the agama, the skink, and the mole.",
+        "VAT_ES": "las diferentes clases de lagartijas, la salamandra y el camaleón.",
+        "CEI": "il toporagno, la lucertola, il geco, il ramarro, il camaleonte."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "אֵ֛לֶּה הַ/טְּמֵאִ֥ים לָ/כֶ֖ם בְּ/כָל הַ/שָּׁ֑רֶץ כָּל הַ/נֹּגֵ֧עַ בָּ/הֶ֛ם בְּ/מֹתָ֖/ם יִטְמָ֥א עַד הָ/עָֽרֶב׃",
+        "LXX": "ταῦτα ἀκάθαρτα ὑμῖν ἀπὸ πάντων τῶν ἑρπετῶν τῶν ἐπὶ τῆς γῆς· πᾶς ὁ ἁπτόμενος αὐτῶν τεθνηκότων ἀκάθαρτος ἔσται ἕως ἑσπέρας.",
+        "VUL": "Omnia hæc immunda sunt. Qui tetigerit morticina eorum, immundus erit usque ad vesperum :",
+        "SYN": "сии нечисты для вас из всех пресмыкающихся: всякий, кто прикоснется к ним мертвым, нечист будет до вечера.",
+        "NEO": "Tels sont ceux qui seront impurs pour vous parmi les reptiles : quiconque les touchera morts sera impur jusqu’au soir.",
+        "NAB": "Among the various swarming creatures, these are unclean for you. Everyone who touches them when they are dead shall be unclean until evening.",
+        "VAT_ES": "Ustedes deberán considerar impuros a todos estos animales pequeños. El que toque sus cadáveres, será impuro hasta la tarde.",
+        "CEI": "Questi animali, fra quanti strisciano, saranno immondi per voi; chiunque li toccherà morti, sarà immondo fino alla sera."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/כֹ֣ל אֲשֶׁר יִפֹּל עָלָי/ו֩ מֵ/הֶ֨ם בְּ/מֹתָ֜/ם יִטְמָ֗א מִ/כָּל כְּלִי עֵץ֙ א֣וֹ בֶ֤גֶד אוֹ עוֹר֙ א֣וֹ שָׂ֔ק כָּל כְּלִ֕י אֲשֶׁר יֵעָשֶׂ֥ה מְלָאכָ֖ה בָּ/הֶ֑ם בַּ/מַּ֧יִם יוּבָ֛א וְ/טָמֵ֥א עַד הָ/עֶ֖רֶב וְ/טָהֵֽר׃",
+        "LXX": "καὶ πᾶν ἐφ’ ὃ ἂν ἐπιπέσῃ ἀπ’ αὐτῶν τεθνηκότων αὐτῶν ἀκάθαρτον ἔσται, ἀπὸ παντὸς σκεύους ξυλίνου ἢ ἱματίου ἢ δέρματος ἢ σάκκου· πᾶν σκεῦος ὃ ἐὰν ποιηθῇ ἔργον ἐν αὐτῷ εἰς ὕδωρ βαφήσεται, καὶ ἀκάθαρτον ἔσται ἕως ἑσπέρας, καὶ καθαρὸν ἔσται.",
+        "VUL": "et super quod ceciderit quidquam de morticinis eorum, polluetur, tam vas ligneum et vestimentum, quam pelles et cilicia : et in quocumque fit opus, tingentur aqua, et polluta erunt usque ad vesperum, et sic postea mundabuntur.",
+        "SYN": "И всё, на что упадет которое-нибудь из них мертвое, всякий деревянный сосуд, или одежда, или кожа, или мешок, и всякая вещь, которая употребляется на дело, будут нечисты: в воду должно положить их, и нечисты будут до вечера, потом будут чисты;",
+        "NEO": "Tout objet sur lequel il en tombera de morts sera souillé : ustensile de bois, vêtement, peau, sac, tout objet dont on fait usage ; on le mettra dans l’eau, et il restera souillé jusqu’au soir ; après quoi, il sera pur.",
+        "NAB": "Everything on which one of them falls when dead becomes unclean. Any such article that men use, whether it be an article of wood, cloth, leather or goat hair, must be put in water and remain unclean until evening, when it again becomes clean.",
+        "VAT_ES": "También será impuro el objeto sobre el que caiga el cadáver de alguno de ellos, sea que se trate de un objeto de madera, de una prenda de vestir, de un cuero, de una bolsa, o de cualquier otra cosa que preste alguna utilidad. Estos objetos deberán ser sumergidos en el agua y serán impuros hasta la tarde; después serán puros.",
+        "CEI": "Ogni oggetto sul quale cadrà morto qualcuno di essi, sarà immondo: si tratti di utensili di legno o di veste o pelle o sacco o qualunque altro oggetto di cui si faccia uso; si immergerà nell'acqua e sarà immondo fino alla sera; poi sarà mondo."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/כָל כְּלִי חֶ֔רֶשׂ אֲשֶׁר יִפֹּ֥ל מֵ/הֶ֖ם אֶל תּוֹכ֑/וֹ כֹּ֣ל אֲשֶׁ֧ר בְּ/תוֹכ֛/וֹ יִטְמָ֖א וְ/אֹת֥/וֹ תִשְׁבֹּֽרוּ׃",
+        "LXX": "καὶ πᾶν σκεῦος ὀστράκινον εἰς ὃ ἐὰν πέσῃ ἀπὸ τούτων ἔνδον, ὅσα ἐὰν ἔνδον ἦν ἀκάθαρτα ἔσται, καὶ αὐτὸ συντριβήσεται.",
+        "VUL": "Vas autem fictile, in quod horum quidquam intro ceciderit, polluetur, et idcirco frangendum est.",
+        "SYN": "если же которое-нибудь из них упадет в какой-нибудь глиняный сосуд, то находящееся в нем будет нечисто, и самый [сосуд] разбейте.",
+        "NEO": "S’il en tombe quelque chose dans le milieu de tout vase de terre, tout ce qui sera dans le milieu du vase sera souillé, et vous briserez le vase.",
+        "NAB": "Should any of these creatures fall into a clay vessel, everything in it becomes unclean, and the vessel itself you must break.",
+        "VAT_ES": "Si uno de estos cadáveres cae en una vasija de barro, todo lo que haya dentro de ella será impuro y la vasija se deberá romper.",
+        "CEI": "Se ne cade qualcuno in un vaso di terra, quanto vi si troverà dentro sarà immondo e spezzerete il vaso."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "מִ/כָּל הָ/אֹ֜כֶל אֲשֶׁ֣ר יֵאָכֵ֗ל אֲשֶׁ֨ר יָב֥וֹא עָלָ֛י/ו מַ֖יִם יִטְמָ֑א וְ/כָל מַשְׁקֶה֙ אֲשֶׁ֣ר יִשָּׁתֶ֔ה בְּ/כָל כְּלִ֖י יִטְמָֽא׃",
+        "LXX": "καὶ πᾶν βρῶμα ὃ ἔσθεται, εἰς ὃ ἐὰν ἐπέλθῃ ἐπ’ αὐτὸ ὕδωρ, ἀκάθαρτον ἔσται· καὶ πᾶν ποτὸν ὃ πίνεται ἐν παντὶ ἀγγίῳ ἀκάθαρτον ἔσται.",
+        "VUL": "Omnis cibus, quem comedetis, si fusa fuerit super eum aqua, immundus erit : et omne liquens quod bibitur de universo vase, immundum erit.",
+        "SYN": "Всякая пища, которую едят, на которой была вода _из_ _такого_ _сосуда,_ нечиста будет [для вас], и всякое питье, которое пьют, во всяком _таком_ сосуде нечисто будет.",
+        "NEO": "Tout aliment servant à la nourriture et préparé avec de l’eau, sera souillé ; toute boisson dont on fait usage, quel que soit le vase qui la contienne, sera souillée.",
+        "NAB": "Any solid food that was in contact with water, and any liquid that men drink, in any such vessel become unclean.",
+        "VAT_ES": "Cualquier comestible que entre en contacto con el agua contenida en esa vasija, será impuro, y cualquier bebida se volverá impura a causa de esa vasija.",
+        "CEI": "Ogni cibo che serve di nutrimento, sul quale cada quell'acqua, sarà immondo; ogni bevanda di cui si fa uso, qualunque sia il vaso che la contiene, sarà immonda."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וְ֠/כֹל אֲשֶׁר יִפֹּ֨ל מִ/נִּבְלָתָ֥/ם עָלָי/ו֮ יִטְמָא֒ תַּנּ֧וּר וְ/כִירַ֛יִם יֻתָּ֖ץ טְמֵאִ֣ים הֵ֑ם וּ/טְמֵאִ֖ים יִהְי֥וּ לָ/כֶֽם׃",
+        "LXX": "καὶ πᾶν ὃ ἐὰν πέσῃ ἀπὸ τῶν θνησιμαίων αὐτῶν ἐπ’ αὐτό, ἀκάθαρτον ἔσται· κλίβανοι καὶ κυθρόποδες καθαιρεθήσονται· ἀκάθαρτα ταῦτά ἐστιν, καὶ ἀκάθαρτα ταῦτα ὑμῖν ἔσονται.",
+        "VUL": "Et quidquid de morticinis hujuscemodi ceciderit super illud, immundum erit : sive clibani, sive chytropodes, destruentur, et immundi erunt.",
+        "SYN": "Всё, на что упадет что-нибудь от трупа их, нечисто будет: печь и очаг должно разломать, они нечисты; и они должны быть нечисты для вас;",
+        "NEO": "Tout objet sur lequel tombera quelque chose de leur corps mort sera souillé ; le four et le vase avec son couvercle seront détruits ; ils seront souillés et vous les tiendrez pour souillés.",
+        "NAB": "Any object on which one of their dead bodies falls, becomes unclean; if it is an oven or a jar-stand, this must be broken to pieces; they are unclean and shall be treated as unclean by you.",
+        "VAT_ES": "El objeto sobre el que caiga alguno de esos cadáveres, será impuro. Si se trata de un horno o de un fogón, tendrán que ser derribados: son impuros, y ustedes tendrán que considerarlos como tales.",
+        "CEI": "Ogni oggetto sul quale cadrà qualche parte del loro cadavere, sarà immondo; il forno o il fornello sarà spezzato: sono immondi e li dovete ritenere tali."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "אַ֣ךְ מַעְיָ֥ן וּ/ב֛וֹר מִקְוֵה מַ֖יִם יִהְיֶ֣ה טָה֑וֹר וְ/נֹגֵ֥עַ בְּ/נִבְלָתָ֖/ם יִטְמָֽא׃",
+        "LXX": "πλὴν πηγῶν ὑδάτων καὶ λάκκου καὶ συναγωγῆς ὕδατος· ἔσται καθαρόν· ὁ δὲ ἁπτόμενος τῶν θνησιμαίων αὐτῶν ἀκάθαρτος ἔσται.",
+        "VUL": "Fontes vero et cisternæ, et omnis aquarum congregatio munda erit. Qui morticinum eorum tetigerit, polluetur.",
+        "SYN": "только источник и колодезь, вмещающий воду, остаются чистыми; а кто прикоснется к трупу их, тот нечист.",
+        "NEO": "Mais les sources et les citernes, où se forment les amas d’eau, resteront pures ; toutefois celui qui touchera le corps mort sera impur.",
+        "NAB": "However, a spring or a cistern for collecting water remains clean; but whoever touches the dead body becomes unclean.",
+        "VAT_ES": "Sin embargo, la fuente o la cisterna donde se recoge el agua, permanecer[a pura, pero el que toque uno de esos cadáveres será impuro.",
+        "CEI": "Però, una fonte o una cisterna, cioè una raccolta di acqua, sarà monda; ma chi toccherà i loro cadaveri sarà immondo."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וְ/כִ֤י יִפֹּל֙ מִ/נִּבְלָתָ֔/ם עַל כָּל זֶ֥רַע זֵר֖וּעַ אֲשֶׁ֣ר יִזָּרֵ֑עַ טָה֖וֹר הֽוּא׃",
+        "LXX": "ἐὰν δὲ ἐπιπέσῃ τῶν θνησιμαίων αὐτῶν ἐπὶ πᾶν σπέρμα σπόριμον ὃ σπαρήσεται, καθαρὸν ἔσται·",
+        "VUL": "Si ceciderit super sementem, non polluet eam.",
+        "SYN": "И если что-нибудь от трупа их упадет на какое-либо семя, которое сеют, то оно чисто;",
+        "NEO": "S’il tombe quelque chose de leur corps mort sur une semence qui doit être semée, la semence restera pure ;",
+        "NAB": "Any sort of cultivated grain remains clean even though one of their dead bodies falls on it;",
+        "VAT_ES": "Y si un cadáver cae sobre la semilla que a ser sembrada, esta será pura.",
+        "CEI": "Se qualcosa dei loro cadaveri cade su qualche seme che deve essere seminato, questo sarà mondo;"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וְ/כִ֤י יֻתַּן מַ֨יִם֙ עַל זֶ֔רַע וְ/נָפַ֥ל מִ/נִּבְלָתָ֖/ם עָלָ֑י/ו טָמֵ֥א ה֖וּא לָ/כֶֽם׃",
+        "LXX": "ἐὰν δὲ ἐπιχυθῇ ὕδωρ ἐπὶ πᾶν σπέρμα, καὶ ἐπιπέσῃ τῶν θνησιμαίων αὐτῶν ἐπ’ αὐτό, ἀκάθαρτόν ἐστιν ὑμῖν.",
+        "VUL": "Si autem quispiam aqua sementem perfuderit, et postea morticinis tacta fuerit, illico polluetur.",
+        "SYN": "если же тогда, как вода налита на семя, упадет на него что-- нибудь от трупа их, то оно нечисто для вас.",
+        "NEO": "mais si l’on a mis de l’eau sur la semence, et qu’il y tombe quelque chose de leur corps mort, vous la tiendrez pour souillée.",
+        "NAB": "but if the grain has become moistened, it becomes unclean when one of these falls on it.",
+        "VAT_ES": "En cambio, si se arroja agua sobre la semilla y algo de esos cadáveres cae sobre ella, ustedes deberán tenerla por impura.",
+        "CEI": "ma se è stata versata acqua sul seme e vi cade qualche cosa dei loro cadaveri, lo riterrai immondo."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וְ/כִ֤י יָמוּת֙ מִן הַ/בְּהֵמָ֔ה אֲשֶׁר הִ֥יא לָ/כֶ֖ם לְ/אָכְלָ֑ה הַ/נֹּגֵ֥עַ בְּ/נִבְלָתָ֖/הּ יִטְמָ֥א עַד הָ/עָֽרֶב׃",
+        "LXX": "ἐὰν δὲ ἀποθάνῃ τῶν κτηνῶν ὅ ἐστιν ὑμῖν τοῦτο φαγεῖν, ὁ ἁπτόμενος τῶν θνησιμαίων αὐτῶν ἀκάθαρτος ἔσται ἕως ἑσπέρας·",
+        "VUL": "Si mortuum fuerit animal, quod licet vobis comedere, qui cadaver ejus tetigerit, immundus erit usque ad vesperum :",
+        "SYN": "И когда умрет какой-либо скот, который употребляется вами в пищу, то прикоснувшийся к трупу его нечист будет до вечера;",
+        "NEO": "S’il meurt un des animaux qui vous servent de nourriture, celui qui touchera son cadavre sera impur jusqu’au soir.",
+        "NAB": "\"When one of the animals that you could otherwise eat, dies of itself, anyone who touches its dead body shall be unclean until evening;",
+        "VAT_ES": "Si muere un animal que ustedes pueden comer, el que toque el cadáver será impuro hasta la tarde.",
+        "CEI": "Se muore un animale, di cui vi potete cibare, colui che ne toccherà il cadavere sarà immondo fino alla sera."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וְ/הָֽ/אֹכֵל֙ מִ/נִּבְלָתָ֔/הּ יְכַבֵּ֥ס בְּגָדָ֖י/ו וְ/טָמֵ֣א עַד הָ/עָ֑רֶב וְ/הַ/נֹּשֵׂא֙ אֶת נִבְלָתָ֔/הּ יְכַבֵּ֥ס בְּגָדָ֖י/ו וְ/טָמֵ֥א עַד הָ/עָֽרֶב׃",
+        "LXX": "καὶ ὁ ἐσθίων ἀπὸ τῶν θνησιμαίων τούτων πλυνεῖ τὰ ἱμάτια, καὶ ἀκάθαρτος ἔσται ἕως ἑσπέρας· καὶ ὁ αἴρων ἀπὸ θνησιμαίων αὐτῶν πλυνεῖ τὰ ἱμάτια καὶ λούσεται ὕδατι, καὶ ἀκάθαρτος ἔσται ἕως ἑσπέρας.",
+        "VUL": "et qui comederit ex eo quippiam, sive portaverit, lavabit vestimenta sua, et immundus erit usque ad vesperum.",
+        "SYN": "и тот, кто будет есть мертвечину его, должен омыть одежды свои и нечист будет до вечера; и тот, кто понесет труп его, должен омыть одежды свои и нечист будет до вечера.",
+        "NEO": "Celui qui mangera de son corps mort lavera ses vêtements et sera impur jusqu’au soir ; celui qui portera son corps mort, lavera ses vêtements et sera impur jusqu’au soir.",
+        "NAB": "and anyone who eats of its dead body shall wash his garments and be unclean until evening; so also, anyone who removes its dead body shall wash his garments and be unclean until evening.",
+        "VAT_ES": "El que coma carne de ese cadáver deberá lavar su ropa y será impuro hasta la tarde; y el que levante el cadáver deberá lavar su ropa y será impuro hasta la tarde.",
+        "CEI": "Colui che mangerà di quel cadavere si laverà le vesti e sarà immondo fino alla sera; anche colui che trasporterà quel cadavere si laverà le vesti e sarà immondo fino alla sera."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וְ/כָל הַ/שֶּׁ֖רֶץ הַ/שֹּׁרֵ֣ץ עַל הָ/אָ֑רֶץ שֶׁ֥קֶץ ה֖וּא לֹ֥א יֵאָכֵֽל׃",
+        "LXX": "καὶ πᾶν ἑρπετὸν ὃ ἕρπει ἐπὶ τῆς γῆς, βδέλυγμα τοῦτο ἔσται ὑμῖν, οὐ βρωθήσεται.",
+        "VUL": "Omne quod reptat super terram, abominabile erit, nec assumetur in cibum.",
+        "SYN": "Всякое животное, пресмыкающееся по земле, скверно для вас, не должно есть _его;_",
+        "NEO": "Vous aurez en abomination tout reptile qui rampe sur la terre : on n’en mangera point.",
+        "NAB": "\"All the creatures that swarm on the ground are loathsome and shall not be eaten.",
+        "VAT_ES": "Todos los animales que se arrastran por el suelo son una cosa inmunda: no está permitido comerlos.",
+        "CEI": "Ogni essere che striscia sulla terra è un abominio; non se ne mangerà."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "כֹּל֩ הוֹלֵ֨ךְ עַל גָּח֜ וְ/כֹ֣ל הוֹלֵ֣ךְ עַל אַרְבַּ֗ע עַ֚ד כָּל מַרְבֵּ֣ה רַגְלַ֔יִם לְ/כָל הַ/שֶּׁ֖רֶץ הַ/שֹּׁרֵ֣ץ עַל הָ/אָ֑רֶץ לֹ֥א תֹאכְל֖וּ/ם כִּי שֶׁ֥קֶץ הֵֽם׃",
+        "LXX": "καὶ πᾶς ὁ πορευόμενος ἐπὶ κοιλίας, καὶ πᾶς ὁ πορευόμενος ἐπὶ τέσσερα διὰ παντός, ὃ πολυπληθεῖ ποσὶν ἐν πᾶσιν τοῖς ἑρπετοῖς τοῖς ἕρπουσιν ἐπὶ τῆς γῆς, οὐ φάγεσθε αὐτό, ὅτι βδέλυγμα ὑμῖν ἐστίν.",
+        "VUL": "Quidquid super pectus quadrupes graditur, et multos habet pedes, sive per humum trahitur, non comedetis, quia abominabile est.",
+        "SYN": "всего ползающего на чреве и всего ходящего на четырех ногах, и многоножных из животных пресмыкающихся по земле, не ешьте, ибо они скверны;",
+        "NEO": "Vous ne mangerez d’aucun animal qui rampe sur la terre, soit de ceux qui se traînent sur le ventre, soit de ceux qui marchent sur quatre pieds ou sur un grand nombre de pieds ; car vous les aurez en abomination.",
+        "NAB": "Whether it crawls on its belly, goes on all fours, or has many legs, you shall eat no swarming creature: they are loathsome.",
+        "VAT_ES": "Por lo tanto, ustedes no comerán ningún reptil que se arrastra sobre su vientre, ningún insecto que camina sobre cuatro patas o que tiene muchas patas, y ningún otro animal que arrastra el suelo, porque son algo inmundo.",
+        "CEI": "Di tutti gli animali che strisciano sulla terra non ne mangerete alcuno che cammini sul ventre o cammini con quattro piedi o con molti piedi, poiché sono un abominio."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "אַל תְּשַׁקְּצוּ֙ אֶת נַפְשֹׁ֣תֵי/כֶ֔ם בְּ/כָל הַ/שֶּׁ֖רֶץ הַ/שֹּׁרֵ֑ץ וְ/לֹ֤א תִֽטַּמְּאוּ֙ בָּ/הֶ֔ם וְ/נִטְמֵתֶ֖ם בָּֽ/ם׃",
+        "LXX": "καὶ οὐ μὴ βδελύξητε τὰς ψυχὰς ὑμῶν ἐν πᾶσι τοῖς ἑρπετοῖς τοῖς ἕρπουσιν ἐπὶ τῆς γῆς, καὶ οὐ μιανθήσεσθε ἐν τούτοις, καὶ οὐκ ἀκάθαρτοι ἔσεσθε ἐν αὐτοῖς.",
+        "VUL": "Nolite contaminare animas vestras, nec tangatis quidquam eorum, ne immundi sitis.",
+        "SYN": "не оскверняйте душ ваших каким-либо животным пресмыкающимся и не делайте себя чрез них нечистыми, чтоб быть чрез них нечистыми,",
+        "NEO": "Ne vous rendez pas abominables par tous ces reptiles qui rampent ; ne vous rendez pas impurs par eux ; vous seriez souillés par eux.",
+        "NAB": "Do not make yourselves loathsome or unclean with any swarming creature through being contaminated by them.",
+        "VAT_ES": "No se contaminen ustedes mismos a causa de esos animales. No incurran en impureza a causa de ellos, para no quedar contaminados.",
+        "CEI": "Non rendete le vostre persone abominevoli con alcuno di questi animali che strisciano; non vi rendete immondi per causa loro, in modo da rimaner così contaminati."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "כִּ֣י אֲנִ֣י יְהוָה֮ אֱלֹֽהֵי/כֶם֒ וְ/הִתְקַדִּשְׁתֶּם֙ וִ/הְיִיתֶ֣ם קְדֹשִׁ֔ים כִּ֥י קָד֖וֹשׁ אָ֑נִי וְ/לֹ֤א תְטַמְּאוּ֙ אֶת נַפְשֹׁ֣תֵי/כֶ֔ם בְּ/כָל הַ/שֶּׁ֖רֶץ הָ/רֹמֵ֥שׂ עַל הָ/אָֽרֶץ׃",
+        "LXX": "ὅτι ἐγώ εἰμι Κύριος ὁ θεὸς ὑμῶν· καὶ ἁγιασθήσεσθε καὶ ἅγιοι ἔσεσθε, ὅτι ἅγιός εἰμι ἐγὼ Κύριος ὁ θεὸς ὑμῶν· καὶ οὐ μιανεῖτε τὰς ψυχὰς ὑμῶν ἐν πᾶσιν τοῖς ἑρπετοῖς τοῖς κινουμένοις ἐπὶ τῆς γῆς·",
+        "VUL": "Ego enim sum Dominus Deus vester : sancti estote, quia ego sanctus sum. Ne polluatis animas vestras in omni reptili quod movetur super terram.",
+        "SYN": "ибо Я -- Господь Бог ваш: освящайтесь и будьте святы, ибо Я [Господь, Бог ваш] свят; и не оскверняйте душ ваших каким-либо животным, ползающим по земле,",
+        "NEO": "Car je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu ; vous vous sanctifierez et vous serez saints, car je suis saint ; et vous ne vous souillerez pas par tous ces reptiles, qui rampent sur la terre.",
+        "NAB": "For I, the LORD, am your God; and you shall make and keep yourselves holy, because I am holy. You shall not make yourselves unclean, then, by any swarming creature that crawls on the ground.",
+        "VAT_ES": "Porque yo soy el Señor, su Dios, y ustedes tienen que santificarse y ser santos, porque yo soy santo. No incurran en impureza a causa de esos animales que se arrastran por el suelo.",
+        "CEI": "Poiché io sono il Signore, il Dio vostro. Santificatevi dunque e siate santi, perché io sono santo; non contaminate le vostre persone con alcuno di questi animali che strisciano per terra."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "כִּ֣י אֲנִ֣י יְהוָ֗ה הַֽ/מַּעֲלֶ֤ה אֶתְ/כֶם֙ מֵ/אֶ֣רֶץ מִצְרַ֔יִם לִ/הְיֹ֥ת לָ/כֶ֖ם לֵ/אלֹהִ֑ים וִ/הְיִיתֶ֣ם קְדֹשִׁ֔ים כִּ֥י קָד֖וֹשׁ אָֽנִי׃",
+        "LXX": "ὅτι ἐγώ εἰμι Κύριος ὁ ἀναγαγὼν ὑμᾶς ἐκ γῆς Αἰγύπτου εἶναι ὑμῶν θεός· καὶ ἔσεσθε ἅγιοι, ὅτι ἅγιός εἰμι ἐγὼ Κύριος.",
+        "VUL": "Ego enim sum Dominus, qui eduxi vos de terra Ægypti, ut essem vobis in Deum. Sancti eritis, quia ego sanctus sum.",
+        "SYN": "ибо Я -- Господь, выведший вас из земли Египетской, чтобы быть вашим Богом. Итак будьте святы, потому что Я свят.",
+        "NEO": "Car je suis \\+w Yahweh|strong=\"H3068\"\\+w**, qui vous ai fait monter du pays d’Égypte, pour être votre Dieu. Vous serez saints, car je suis saint. »",
+        "NAB": "Since I, the LORD, brought you up from the land of Egypt that I might be your God, you shall be holy, because I am holy.",
+        "VAT_ES": "Porque yo soy el Señor, el que los hice subir del país de Egipto para ser su Dios. Ustedes serán santos, porque yo soy santo.",
+        "CEI": "Poiché io sono il Signore, che vi ho fatti uscire dal paese d'Egitto, per essere il vostro Dio; siate dunque santi, perché io sono santo."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "זֹ֣את תּוֹרַ֤ת הַ/בְּהֵמָה֙ וְ/הָ/ע֔וֹף וְ/כֹל֙ נֶ֣פֶשׁ הַֽ/חַיָּ֔ה הָ/רֹמֶ֖שֶׂת בַּ/מָּ֑יִם וּ/לְ/כָל נֶ֖פֶשׁ הַ/שֹּׁרֶ֥צֶת עַל הָ/אָֽרֶץ׃",
+        "LXX": "οὗτος ὁ νόμος περὶ τῶν κτηνῶν καὶ τῶν πετεινῶν καὶ πάσης ψυχῆς τῆς κινουμένης ἐν τῷ ὕδατι καὶ πάσης ψυχῆς ἑρπούσης ἐπὶ τῆς γῆς,",
+        "VUL": "Ista est lex animantium ac volucrum, et omnis animæ viventis, quæ movetur in aqua, et reptat in terra,",
+        "SYN": "Вот закон о скоте, о птицах, о всех животных, живущих в водах, и о всех животных, пресмыкающихся по земле,",
+        "NEO": "Telle est la loi touchant les quadrupèdes, les oiseaux, tous les êtres vivants qui se meuvent dans les eaux, et tous les êtres qui rampent sur la terre,",
+        "NAB": "\"This is the law for animals and birds and for all the creatures that move about in the water or swarm on the ground,",
+        "VAT_ES": "Estas son las instrucciones acerca de los animales, de las aves, de todos los seres vivientes que se mueven en las aguas, y de todos los demás animales que se arrastran por el suelo.",
+        "CEI": "Questa è la legge che riguarda i quadrupedi, gli uccelli, ogni essere vivente che si muove nelle acque e ogni essere che striscia per terra,"
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "לְ/הַבְדִּ֕יל בֵּ֥ין הַ/טָּמֵ֖א וּ/בֵ֣ין הַ/טָּהֹ֑ר וּ/בֵ֤ין הַֽ/חַיָּה֙ הַֽ/נֶּאֱכֶ֔לֶת וּ/בֵין֙ הַֽ/חַיָּ֔ה אֲשֶׁ֖ר לֹ֥א תֵאָכֵֽל׃",
+        "LXX": "διαστεῖλαι ἀνὰ μέσον τῶν ἀκαθάρτων καὶ ἀνὰ μέσον τῶν καθαρῶν, καὶ ἀνὰ μέσον τῶν ζωογονούντων τὰ ἐσθιόμενα καὶ ἀνὰ μέσον τῶν ζωογονούντων τὰ μὴ ἐσθιόμενα.",
+        "VUL": "ut differentias noveritis mundi et immundi, et sciatis quid comedere et quid respuere debeatis.",
+        "SYN": "чтобы отличать нечистое от чистого, и животных, которых можно есть, от животных, которых есть не должно.",
+        "NEO": "afin que vous distinguiez entre ce qui est impur et ce qui est pur, entre l’animal qui se mange et celui qui ne se mange pas.",
+        "NAB": "that you may distinguish between the clean and the unclean, between creatures that may be eaten and those that may not be eaten.\"",
+        "VAT_ES": "Así se establecerá una distinción entre lo puro y lo impuro, y entre los seres vivientes que está permitido comer y los que no pueden ser comidos.",
+        "CEI": "perché sappiate distinguere ciò che è immondo da ciò che è mondo, l'animale che si può mangiare da quello che non si deve mangiare\"."
+      }
+    }
+  }
+}

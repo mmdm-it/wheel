@@ -1,0 +1,608 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOSU_013",
+  "book_key": "IOSU",
+  "sequence": 13,
+  "chapter_in": {
+    "MT": 13,
+    "VUL": 13,
+    "LXX": 13
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וִ/יהוֹשֻׁ֣עַ זָקֵ֔ן בָּ֖א בַּ/יָּמִ֑ים וַ/יֹּ֨אמֶר יְהוָ֜ה אֵלָ֗י/ו אַתָּ֤ה זָקַ֨נְתָּה֙ בָּ֣אתָ בַ/יָּמִ֔ים וְ/הָ/אָ֛רֶץ נִשְׁאֲרָ֥ה הַרְבֵּֽה מְאֹ֖ד לְ/רִשְׁתָּֽ/הּ׃",
+        "LXX": "Καὶ Ἰησοῦς πρεσβύτερος προβεβηκὼς τῶν ἡμερῶν. καὶ εἶπεν Κύριος πρὸς Ἰησοῦν Σὺ προβέβηκας τῶν ἡμερῶν, καὶ ἡ γῆ ὑπολέλειπται πολλὴ εἰς κληρονομίαν.",
+        "VUL": "Josue senex provectæque ætatis erat, et dixit Dominus ad eum : Senuisti, et longævus es, terraque latissima derelicta est, quæ necdum sorte divisa est :",
+        "SYN": "Когда Иисус состарился, вошел в лета _преклонные,_ тогда Господь сказал ему: ты состарился, вошел в лета _преклонные,_ а земли брать в наследие остается еще очень много.",
+        "NEO": "Josué était vieux, avancé en âge ; \\+w Yahweh|strong=\"H3068\"\\+w** lui dit : « Tu es devenu vieux, tu es avancé en âge, et il reste encore un très grand pays à conquérir.",
+        "NAB": "When Joshua was old and advanced in years, the LORD said to him: \"Though now you are old and advanced in years, a very large part of the land still remains to be conquered.",
+        "VAT_ES": "Cuando Josué ya era de edad muy avanzada, el Señor le dijo: «Tú eres un anciano muy entrado en años, y todavía queda por conquistar una gran parte del país.",
+        "CEI": "Quando Giosuè fu vecchio e avanti negli anni, il Signore gli disse: \"Tu sei diventato vecchio, avanti negli anni e rimane molto territorio da occupare."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "זֹ֥את הָ/אָ֖רֶץ הַ/נִּשְׁאָ֑רֶת כָּל גְּלִיל֥וֹת הַ/פְּלִשְׁתִּ֖ים וְ/כָל הַ/גְּשׁוּרִֽי׃",
+        "LXX": "καὶ αὕτη ἡ γῆ καταλελιμμένη· ὅρια Φυλιστιείμ, ὁ Γεσειρεὶ καὶ ὁ Χαναναῖος·",
+        "VUL": "omnis videlicet Galilæa, Philisthiim, et universa Gessuri.",
+        "SYN": "Остается сия земля: все округи Филистимские и вся _земля_ Гессурская [и Хананейская].",
+        "NEO": "Voici le pays qui reste : tous les districts des Philistins et tout le territoire des Gessuriens,",
+        "NAB": "This additional land includes all Geshur and all the districts of the Philistines",
+        "VAT_ES": "El territorio que falta conquistar es el siguiente: todos los distritos de los filisteos y todo el país de los guesuritas,",
+        "CEI": "Questo è il paese rimasto: tutti i distretti dei Filistei e tutto il territorio dei Ghesuriti,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "מִֽן הַ/שִּׁיח֞וֹר אֲשֶׁ֣ר עַל פְּנֵ֣י מִצְרַ֗יִם וְ/עַ֨ד גְּב֤וּל עֶקְרוֹן֙ צָפ֔וֹנָ/ה לַֽ/כְּנַעֲנִ֖י תֵּחָשֵׁ֑ב חֲמֵ֣שֶׁת סַרְנֵ֣י פְלִשְׁתִּ֗ים הָ/עַזָּתִ֤י וְ/הָ/אַשְׁדּוֹדִי֙ הָ/אֶשְׁקְלוֹנִ֣י הַ/גִּתִּ֔י וְ/הָ/עֶקְרוֹנִ֖י וְ/הָ/עַוִּֽים׃",
+        "LXX": "ἀπὸ τῆς ἀοικήτου τῆς κατὰ πρόσωπον Αἰγύπτου ἕως τῶν ὁρίων Ἀκκαρὼν ἐξ εὐωνύμων τῶν Χαναναίων προσλογίζεται ταῖς πέντε σατραπίαις τῶν Φυλιστιέμ, τῷ Γαζαίῳ καὶ τῷ Ἀζωτείῳ καὶ τῷ Ἀσκαλωνείτῃ καὶ τῷ Γεθθαίῳ καὶ τῷ Ακκαρωνείτῃ καὶ τῷ Εὐαίῳ·",
+        "VUL": "A fluvio turbido, qui irrigat Ægyptum, usque ad terminos Accaron contra aquilonem : terra Chanaan, quæ in quinque regulos Philisthiim dividitur, Gazæos, et Azotios, Ascalonitas, Gethæos, et Accaronitas.",
+        "SYN": "От Сихора, что пред Египтом, до пределов Екрона к северу, считаются Ханаанскими пять владельцев Филистимских: Газский, Азотский, Аскалонский, Гефский, Екронский и Аввейский;",
+        "NEO": "depuis le Schichor qui coule à l’orient de l’Égypte, jusqu’à la frontière d’Accaron vers le nord, contrée qui doit être réputée Chananéenne ; les cinq princes des Philistins, celui de Gaza, celui d’Azoth, celui d’Ascalon, celui de Geth et celui d’Accaron ; les Hévéens",
+        "NAB": "(from the stream adjoining Egypt to the boundary of Ekron in the north is reckoned Canaanite territory, though held by the five lords of the Philistines in Gaza, Ashdod, Ashkelon, Gath and Ekron); also where the Avvim are in the south;",
+        "VAT_ES": "o sea, desde el Sijor, que está sobre la frontera de Egipto, hasta el límite de Ecrón por el norte. Esta región se considera como perteneciente a los cananeos. Allí están los cinco príncipes de los filisteos –el de Gaza, el de Asdod, el de Ascalón, el de Gat y el de Ecrón– y también los avitas,",
+        "CEI": "dal Sicor, che è sulla frontiera dell'Egitto, fino al territorio di Ekron, al nord, che è ritenuto cananeo, i cinque principati dei Filistei: quello di Gaza, di Asdòd, di Ascalòn, di Gat e di Ekron; gli Avviti"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "מִ/תֵּימָ֞ן כָּל אֶ֣רֶץ הַֽ/כְּנַעֲנִ֗י וּ/מְעָרָ֛ה אֲשֶׁ֥ר לַ/צִּידֹנִ֖ים עַד אֲפֵ֑קָ/ה עַ֖ד גְּב֥וּל הָ/אֱמֹרִֽי׃",
+        "LXX": "ἐκ Θαιμὰν καὶ πάσῃ γῇ Χανάααν ἐναντίον Γάζης, καὶ οἱ Σιδώνιοι ἕως Ταφὲκ ἕως τῶν ὁρίων τῶν Ἀμορραίων·",
+        "VUL": "Ad meridiem vero sunt Hevæi, omnis terra Chanaan, et Maara Sidoniorum, usque Apheca et terminos Amorrhæi,",
+        "SYN": "к югу же вся земля Ханаанская от Меары Сидонской до Афека, до пределов Аморрейских,",
+        "NEO": "au midi ; tout le pays des Chananéens, et Maara qui est aux Sidoniens, jusqu’à Aphec, jusqu’à la frontière des Amorrhéens ;",
+        "NAB": "all the land of the Canaanites from Mearah of the Sidonians to Aphek, and the boundaries of the Amorites;",
+        "VAT_ES": "que están al sur. Además queda todo el país de los cananeos, desde Ará de los sidonios hasta Afec y hasta la frontera de los amorreos.",
+        "CEI": "al mezzogiorno; tutto il paese dei Cananei, da Ara che è di quelli di Sidòne, fino ad Afek, sino al confine degli Amorrèi;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/הָ/אָ֣רֶץ הַ/גִּבְלִ֗י וְ/כָל הַ/לְּבָנוֹן֙ מִזְרַ֣ח הַ/שֶּׁ֔מֶשׁ מִ/בַּ֣עַל גָּ֔ד תַּ֖חַת הַר חֶרְמ֑וֹן עַ֖ד לְב֥וֹא חֲמָֽת׃",
+        "LXX": "καὶ πᾶσαν τὴν γῆν Γαλιὰθ Φυλιστιεὶμ καὶ πάντα τὸν Λίβανον ἀπὸ ἀνατολῶν ἡλίου, ἀπὸ Γαλγαὰ ὑπὸ τὸ ὄρος τὸ Ἁερμὼν ἕως τῆς εἰσόδου Ἑμάθ·",
+        "VUL": "ejusque confinia. Libani quoque regio contra orientem, a Baalgad sub monte Hermon, donec ingrediaris Emath ;",
+        "SYN": "также [Филистимская] земля Гевла и весь Ливан к востоку солнца от Ваал-Гада, _что_ подле горы Ермона, до входа в Емаф.",
+        "NEO": "le pays des Gébalites, et tout le Liban vers le soleil levant, depuis Baal-Gad au pied du mont Hermon jusqu’à l’entrée de Hamath ;",
+        "NAB": "and the Gebalite territory; and all the Lebanon on the east, from Baal-gad at the foot of Mount Hermon to Labo in the land of Hamath.",
+        "VAT_ES": "Y por último, el país de los guiblitas con todo el Líbano hacia oriente, desde Baal Gad, que está al pie del monte Hermón, hasta la Entrada de Jamat.",
+        "CEI": "il paese di quelli di Biblos e tutto il Libano ad oriente, da Baal-Gad sotto il monte Ermon fino all'ingresso di Amat."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כָּל יֹשְׁבֵ֣י הָ֠/הָר מִֽן הַ/לְּבָנ֞וֹן עַד מִשְׂרְפֹ֥ת מַ֨יִם֙ כָּל צִ֣ידֹנִ֔ים אָֽנֹכִי֙ אוֹרִישֵׁ֔/ם מִ/פְּנֵ֖י בְּנֵ֣י יִשְׂרָאֵ֑ל רַ֠ק הַפִּלֶ֤/הָ לְ/יִשְׂרָאֵל֙ בְּֽ/נַחֲלָ֔ה כַּ/אֲשֶׁ֖ר צִוִּיתִֽי/ךָ׃",
+        "LXX": "πᾶς ὁ κατοικῶν τὴν ὀρεινὴν ἀπὸ τοῦ Λιβάνου ἕως τῆς Μασερεθμεμφωνμάιμ, πάντας τοὺς Σιδωνίους, ἐγὼ αὐτοὺς ἐξολεθρεύσω ἀπὸ προσώπου Ἰσραήλ· ἀλλὰ διάδος αὐτὴν ἐν κλήρῳ τῷ Ἰσραήλ, ὃν τρόπον σοι ἐνετειλάμην.",
+        "VUL": "omnium qui habitant in monte a Libano usque ad aquas Maserephoth, universique Sidonii. Ego sum qui delebo eos a facie filiorum Israël. Veniat ergo in partem hæreditatis Israël, sicut præcepi tibi.",
+        "SYN": "Всех горных жителей от Ливана до Мисрефоф-Маима, всех Сидонян Я изгоню от лица сынов Израилевых. Раздели же ее в удел Израилю, как Я повелел тебе;",
+        "NEO": "tous les habitants de la montagne, depuis le Liban jusqu’aux eaux de Maséréphoth, savoir tous les Sidoniens : je les chasserai de devant les enfants d’Israël. Seulement partage par le sort ces pays en héritage à Israël, comme je l’ai commandé.",
+        "NAB": "At the advance of the Israelites I will drive out all the Sidonian inhabitants of the mountain regions between Lebanon and Misrephoth-maim; at least include these areas in the division of the Israelite heritage, just as I have commanded you.",
+        "VAT_ES": "Yo expulsaré delante de los israelitas a todos los habitantes de la Montaña, desde el Líbano hasta Misrefot Maim, y a todos los sidonios. Tú, por tu parte, distribuye el país entre los israelitas mediante un sorteo, para que lo posean como herencia, según te lo he ordenado.",
+        "CEI": "Tutti gli abitanti delle montagne dal Libano a Misrefot-Maim, tutti quelli di Sidòne, io li scaccerò davanti agli Israeliti. Però tu assegna questo paese in possesso agli Israeliti, come ti ho comandato."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה חַלֵּ֞ק אֶת הָ/אָ֧רֶץ הַ/זֹּ֛את בְּ/נַחֲלָ֖ה לְ/תִשְׁעַ֣ת הַ/שְּׁבָטִ֑ים וַ/חֲצִ֖י הַ/שֵּׁ֥בֶט הַֽ/מְנַשֶּֽׁה׃",
+        "LXX": "καὶ νῦν μέρισον τὴν γῆν ταύτην ἐν κληρονομίᾳ ταῖς ἐννέα φυλαῖς καὶ τῷ ἡμίσει φυλῆς Μανασσή, ἀπὸ τοῦ Ἰσρδάνου ἕως τῆς θαλάσσης τῆς μεγάλης κατὰ δυσμὰς ἡλίου δώσεις αὐτήν· ἡ θάλασσα ἡ μεγάλη ὁριεῖ.",
+        "VUL": "Et nunc divide terram in possessionem novem tribubus, et dimidiæ tribui Manasse,",
+        "SYN": "раздели землю сию в удел девяти коленам и половине колена Манассиина [от Иордана до моря великого к западу отдай ее _им;_ великое море будет пределом].",
+        "NEO": "Et maintenant répartis ce pays en héritage aux neuf tribus et à la demi-tribu de Manassé. »",
+        "NAB": "Now, therefore, apportion among the nine tribes and the half-tribe of Manasseh the land which is to be their heritage.\"",
+        "VAT_ES": "Sí, ya es hora de que repartas este país entre las nueve tribus y media, para que lo posean como herencia. Porque la mitad de la tribu de Manasés,",
+        "CEI": "Ora dividi questo paese a sorte alle nove tribù e a metà della tribù di Manàsse\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "עִמּ֗/וֹ הָ/רֽאוּבֵנִי֙ וְ/הַ/גָּדִ֔י לָקְח֖וּ נַחֲלָתָ֑/ם אֲשֶׁר֩ נָתַ֨ן לָ/הֶ֜ם מֹשֶׁ֗ה בְּ/עֵ֤בֶר הַ/יַּרְדֵּן֙ מִזְרָ֔חָ/ה כַּ/אֲשֶׁר֙ נָתַ֣ן לָ/הֶ֔ם מֹשֶׁ֖ה עֶ֥בֶד יְהוָֽה׃",
+        "LXX": "ταῖς φυλαῖς καὶ τῷ ἡμίσει φυλῆς Μανασσή, τῷ Ῥουβὴν καὶ τῷ Γάδ, ἔδωκεν Μωυσῆς ἐν τῷ πέραν τῷ Ἰορδάνῃ· κατ’ ἀνατολὰς ἡλίου δέδωκεν αὐτῷ Μωυσῆς ὁ παῖς Κυρίου,",
+        "VUL": "cum qua Ruben et Gad possederunt terram, quam tradidit eis Moyses famulus Domini trans fluenta Jordanis, ad orientalem plagam.",
+        "SYN": "А _колено_ Рувимово и Гадово с другою половиною колена Манассиина получили удел свой от Моисея за Иорданом к востоку [солнца], как дал им Моисей, раб Господень,",
+        "NEO": "Avec l’autre moitié, les Rubénites et les Gadites ont reçu leur héritage, que Moïse leur a donné de l’autre côté du Jourdain, à l’orient, comme le leur a donné Moïse, serviteur de \\+w Yahweh|strong=\"H3068\"\\+w** :",
+        "NAB": "Now the other half of the tribe of Manasseh as well as the Reubenites and Gadites, had received their heritage which Moses, the servant of the LORD, had given them east of the Jordan:",
+        "VAT_ES": "lo mismo que los rubenitas y los gaditas, ya han recibido la herencia que les dio Moisés en el lado oriental del Jordán».",
+        "CEI": "Insieme con l'altra metà di Manàsse, i Rubeniti e i Gaditi avevano ricevuto la loro parte di eredità, che Mosè aveva data loro oltre il Giordano, ad oriente, come aveva concesso loro Mosè, servo del Signore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "מֵ/עֲרוֹעֵ֡ר אֲשֶׁר֩ עַל שְׂפַת נַ֨חַל אַרְנ֜וֹן וְ/הָ/עִ֨יר אֲשֶׁ֧ר בְּ/תוֹךְ הַ/נַּ֛חַל וְ/כָל הַ/מִּישֹׁ֥ר מֵידְבָ֖א עַד דִּיבֽוֹן׃",
+        "LXX": "ἀπὸ Ἀροήρ, ἥ ἐστιν ἐπὶ τοῦ χείλους χειμάρρου Ἀρνών, καὶ τὴν πόλιν τὴν ἐν μέσῳ τῆς φάραγγος, καὶ πᾶσαν τὴν Μεισὼρ ἀπὸ Δαιδαβάν·",
+        "VUL": "Ab Aroër, quæ sita est in ripa torrentis Arnon, et in vallis medio, universaque campestria Medaba, usque Dibon,",
+        "SYN": "от Ароера, который на берегу потока Арнона, и город, который среди потока, и всю равнину Медеву до Дивона;",
+        "NEO": "depuis Aroër sur le bord du torrent de l’Arnon, et depuis la ville qui est au milieu de la vallée, toute la plaine de Médaba jusqu’à Dibon ;",
+        "NAB": "from Aroer on the bank of the Wadi Arnon and the city in the wadi itself, through the tableland of Medeba and Dibon,",
+        "VAT_ES": "el territorio que va desde Aroer, a orillas del torrente Arnón, con la ciudad que está en medio del valle; todo el altiplano, desde Medbá hasta Dibón,",
+        "CEI": "Da Aroer, che è sulla riva del fiume Arnon, e dalla città, che è in mezzo alla valle, tutta la pianura di Madaba fino a Dibon;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/כֹ֗ל עָרֵי֙ סִיחוֹן֙ מֶ֣לֶךְ הָ/אֱמֹרִ֔י אֲשֶׁ֥ר מָלַ֖ךְ בְּ/חֶשְׁבּ֑וֹן עַד גְּב֖וּל בְּנֵ֥י עַמּֽוֹן׃",
+        "LXX": "πάσας τὰς πόλεις Σηὼν βασιλέως Ἀμορραίων, ὃς ἐβασίλευσεν ἐν Ἑσεβών, ἕως τῶν ὁρίων υἱῶν Ἀμμών·",
+        "VUL": "et cunctas civitates Sehon regis Amorrhæi, qui regnavit in Hesebon, usque ad terminos filiorum Ammon,",
+        "SYN": "также все города Сигона, царя Аморрейского, который царствовал в Есевоне, до пределов Аммонитских,",
+        "NEO": "toutes les villes de Séhon, roi des Amorrhéens, qui régnait à Hésebon, jusqu’à la frontière des enfants d’Ammon ;",
+        "NAB": "with the rest of the cities of Sihon, king of the Amorites, who reigned in Heshbon, to the boundary of the Ammonites;",
+        "VAT_ES": "y todas las ciudades de Sijón –el rey de los amorreos que había reinado en Jesbón– hasta la frontera de los amonitas.",
+        "CEI": "tutte le città di Sicon, re degli Amorrèi, che regnava in Chesbòn, sino al confine degli Ammoniti."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/הַ/גִּלְעָ֞ד וּ/גְב֧וּל הַ/גְּשׁוּרִ֣י וְ/הַ/מַּעֲכָתִ֗י וְ/כֹ֨ל הַ֥ר חֶרְמ֛וֹן וְ/כָל הַ/בָּשָׁ֖ן עַד סַלְכָֽה׃",
+        "LXX": "καὶ τὴν Γαλααδείτιδα καὶ τὰ ὅρια Γεσειρεὶ καὶ τοῦ Μαχατεί, πᾶν ὄρος Ἁερμών, καὶ πᾶσαν τὴν Βασανεῖτιν ἕως Ἀχά·",
+        "VUL": "et Galaad, ac terminum Gessuri et Machati, et omnem montem Hermon, et universam Basan, usque ad Salecha,",
+        "SYN": "также Галаад и область Гессурскую и Маахскую, и всю гору Ермон и весь Васан до Салхи,",
+        "NEO": "Galaad, le territoire des Gessuriens et des Machatiens, toute la montagne d’Hermon, et tout Basan, jusqu’à Salécha :",
+        "NAB": "also Gilead and the territory of the Geshurites and Maacathites, all Mount Hermon, and all Bashan as far as Salecah,",
+        "VAT_ES": "Además, les había asignado Galaad y el territorio de los guesuritas y de los maacatitas, con toda la montaña del Hermón y todo Basán hasta Salcá.",
+        "CEI": "Inoltre Gàlaad, il territorio dei Ghesuriti e dei Maacatiti, tutte le montagne dell'Ermon e tutto Basan fino a Salca;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כָּל מַמְלְכ֥וּת עוֹג֙ בַּ/בָּשָׁ֔ן אֲשֶׁר מָלַ֥ךְ בְּ/עַשְׁתָּר֖וֹת וּ/בְ/אֶדְרֶ֑עִי ה֤וּא נִשְׁאַר֙ מִ/יֶּ֣תֶר הָ/רְפָאִ֔ים וַ/יַּכֵּ֥/ם מֹשֶׁ֖ה וַ/יֹּרִשֵֽׁ/ם׃",
+        "LXX": "πᾶσαν τὴν βασιλείαν Ὢγ ἐν τῇ Βασανείτιδι, ὃς ἐβασίλευσεν ἐν Ἐδράειν καὶ ἐν Ἀσταρώθ· οὗτος κατελείφθη ἀπὸ τῶν γιγάντων, καὶ ἐπάταξεν αὐτὸν Μωυσῆς καὶ ἐξωλέθρευσεν.",
+        "VUL": "omne regnum Og in Basan, qui regnavit in Astaroth et Edrai, ipse fuit de reliquiis Raphaim : percussitque eos Moyses, atque delevit.",
+        "SYN": "все царство Ога Васанского, который царствовал в Астарофе и в Едреи. Он оставался один из Рефаимов, которых Моисей поразил и прогнал.",
+        "NEO": "tout le royaume d’Og en Basan, qui régnait à Astaroth et à Edraï : c’était le dernier reste des Rephaïm. Moïse battit ces rois et les chassa.",
+        "NAB": "the entire kingdom in Bashan of Og, a survivor of the Rephaim, who reigned at Ashtaroth and Edrei. Though Moses conquered and occupied these territories,",
+        "VAT_ES": "Y en Basán, todo el territorio de Og –que había reinado en Astarot y Edrei, y era uno de los últimos sobrevivientes de los Gigantes– a quien Moisés venció y despojó de sus dominios.",
+        "CEI": "tutto il regno di Og, in Basan, il quale aveva regnato in Astarot e in Edrei ed era l'ultimo superstite dei Refaim, Mosè li aveva debellati e spodestati."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/לֹ֤א הוֹרִ֨ישׁוּ֙ בְּנֵ֣י יִשְׂרָאֵ֔ל אֶת הַ/גְּשׁוּרִ֖י וְ/אֶת הַ/מַּעֲכָתִ֑י וַ/יֵּ֨שֶׁב גְּשׁ֤וּר וּ/מַֽעֲכָת֙ בְּ/קֶ֣רֶב יִשְׂרָאֵ֔ל עַ֖ד הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ οὐκ ἐξωλέθρευσαν οἱ υἱοὶ Ἰσραὴλ τὸν Γεσειρεὶ καὶ τὸν Μαχατεὶ καὶ τὸν Χαναναῖον· καὶ κατῴκει βασιλεὺς Γεσειρεὶ καὶ ὁ Μαχατεὶ ἐν τοῖς υἱοῖς Ἰσραὴλ ἕως τῆς σήμερον ἡμέρας.",
+        "VUL": "Nolueruntque disperdere filii Israël Gessuri et Machati : et habitaverunt in medio Israël usque in præsentem diem.",
+        "SYN": "Но сыны Израилевы не выгнали жителей Гессура и Маахи [и Хананеев], и живет Гессур и Мааха среди Израиля до сего дня.",
+        "NEO": "Mais les enfants d’Israël ne chassèrent pas les Gessuriens et les Machatiens, et Gessur et Machat habitent au milieu d’Israël jusqu’à ce jour.",
+        "NAB": "the Israelites did not dislodge the Geshurites and Maacathites, so that Geshur and Maacath survive in the midst of Israel to this day.",
+        "VAT_ES": "Pero los israelitas no expulsaron a los guesuritas y a los maacatitas, que por eso continúan viviendo en medio de Israel hasta el día de hoy.",
+        "CEI": "Però gli Israeliti non avevano scacciato i Ghesuriti e i Maacatiti; così Ghesur e Maaca abitano in mezzo ad Israele fino ad oggi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "רַ֚ק לְ/שֵׁ֣בֶט הַ/לֵּוִ֔י לֹ֥א נָתַ֖ן נַחֲלָ֑ה אִשֵּׁ֨י יְהוָ֜ה אֱלֹהֵ֤י יִשְׂרָאֵל֙ ה֣וּא נַחֲלָת֔/וֹ כַּ/אֲשֶׁ֖ר דִּבֶּר לֽ/וֹ׃",
+        "LXX": "πλὴν τῆς φυλῆς Λευεὶ οὐκ ἐδόθη κληρονομία· Κύριος ὁ θεὸς Ἰσραήλ, οὗτος αὐτῶν κληρονομία, καθὰ εἶπεν αὐτοῖς Κυρίος. καὶ οὗτος ὁ καταμερισμὸς ὃν κατεμέρισεν Μωυσῆς τοῖς υἱοῖς Ἰσραὴλ ἐν ἀραβὼθ Μωὰβ ἐν τῷ πέραν τοῦ Ἰορδάνου κατὰ Ἰερειχώ.",
+        "VUL": "Tribui autem Levi non dedit possessionem : sed sacrificia et victimæ Domini Dei Israël, ipsa est ejus hæreditas, sicut locutus est illi.",
+        "SYN": "Только колену Левиину не дал он удела: жертвы Господа Бога Израилева суть удел его, как сказал ему Господь. [Вот разделение, какое сделал Моисей сынам Израилевым по племенам их на равнинах Моавитских за Иорданом, напротив Иерихона:]",
+        "NEO": "La tribu de Lévi fut la seule à laquelle Moïse ne donna pas d’héritage ; les sacrifices faits par le feu devant \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël, sont son héritage, comme il le lui avait dit.",
+        "NAB": "However, to the tribe of Levi Moses assigned no heritage since, as the LORD had promised them, the LORD, the God of Israel, is their heritage.",
+        "VAT_ES": "A la tribu de Leví, en cambio, Moisés no le asignó ninguna herencia: las ofrendas hechas al Señor, el Dios de Israel, son su herencia, como él mismo se lo había declarado.",
+        "CEI": "Soltanto alla tribù di Levi non aveva assegnato eredità: i sacrifici consumati dal fuoco per il Signore, Dio di Israele, sono la sua eredità, secondo quanto gli aveva detto il Signore."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֣ן מֹשֶׁ֔ה לְ/מַטֵּ֥ה בְנֵֽי רְאוּבֵ֖ן לְ/מִשְׁפְּחֹתָֽ/ם׃",
+        "LXX": "Καὶ ἔδωκεν Μωυσῆς τῇ φυλῇ Ῥουβὴν κατὰ δήμους αὐτῶν.",
+        "VUL": "Dedit ergo Moyses possessionem tribui filiorum Ruben juxta cognationes suas.",
+        "SYN": "колену сынов Рувимовых по племенам их дал _удел_ Моисей:",
+        "NEO": "Moïse avait donné à la tribu des fils de Ruben une part selon leurs familles.",
+        "NAB": "What Moses gave to the Reubenite clans:",
+        "VAT_ES": "Moisés ya había dado una parte a los clanes de la tribu de los rubenitas.",
+        "CEI": "Mosè aveva dato alla tribù dei figli di Ruben una parte secondo le loro famiglie"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֨י לָ/הֶ֜ם הַ/גְּב֗וּל מֵ/עֲרוֹעֵ֡ר אֲשֶׁר֩ עַל שְׂפַת נַ֨חַל אַרְנ֜וֹן וְ/הָ/עִ֨יר אֲשֶׁ֧ר בְּ/תוֹךְ הַ/נַּ֛חַל וְ/כָל הַ/מִּישֹׁ֖ר עַל מֵידְבָֽא׃",
+        "LXX": "καὶ ἐγενήθη αὐτῶν τὰ ὅρια ἀπὸ Ἀροήρ, ἥ ἐστιν κατὰ πρόσωπον φάραγγος Ἀρνών, καὶ ἡ πόλις ἡ ἐν τῇ φάραγγι Ἀρνών· καὶ πᾶσαν τὴν Μεισὼρ",
+        "VUL": "Fuitque terminus eorum ab Aroër, quæ sita est in ripa torrentis Arnon, et in valle ejusdem torrentis media : universam planitiem, quæ ducit Medaba,",
+        "SYN": "пределом их был Ароер, который на берегу потока Арнона, и город, который среди потока, и вся равнина при Медеве,",
+        "NEO": "Ils eurent pour territoire, à partir d’Aroër sur le bord du torrent de l’Arnon, et de la ville située au milieu de la vallée, toute la plaine près de Médaba,",
+        "NAB": "Their territory reached from Aroer, on the bank of the Wadi Arnon, and the city in the wadi itself, through the tableland about Medeba,",
+        "VAT_ES": "A ellos les tocó el territorio que sale de Aroer, a orillas del torrente Arnón, con la ciudad que está en medio del valle; todo el altiplano en dirección a Medbá,",
+        "CEI": "ed essi ebbero il territorio da Aroer, che è sulla riva del fiume Arnon, e la città che è a metà della valle e tutta la pianura presso Madaba;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "חֶשְׁבּ֥וֹן וְ/כָל עָרֶ֖י/הָ אֲשֶׁ֣ר בַּ/מִּישֹׁ֑ר דִּיבוֹן֙ וּ/בָמ֣וֹת בַּ֔עַל וּ/בֵ֖ית בַּ֥עַל מְעֽוֹן׃",
+        "LXX": "ἕως Ἑσεβών, καὶ πάσας τὰς πόλεις τὰς οὔσας ἐν τῇ Μεισώρ, καὶ Δαιβὼν καὶ Βαιμὼν Βάαλ καὶ οἴκου Μεελβὼθ",
+        "VUL": "et Hesebon, cunctosque viculos earum, qui sunt in campestribus : Dibon quoque et Bamothbaal, et oppidum Baalmaon,",
+        "SYN": "Есевон и все города его, которые на равнине, и Дивон, Вамоф-Ваали Беф-Ваал-Меон,",
+        "NEO": "Hésebon et toutes ses villes dans la plaine, Dibon, Bamoth-Baal, Beth-Baal-Maon,",
+        "NAB": "to include Heshbon and all its towns which are on the tableland, Dibon, Bamoth-baal, Beth-baal-meon,",
+        "VAT_ES": "hasta llegar a Jesbón, y todas las ciudades del altiplano: Dibón, Bamot Baal, Bet Baal Meón,",
+        "CEI": "Chesbòn e tutte le sue città che sono nella pianura, Dibon, Bamot-Baal, Bet-Baal-Meon,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/יַ֥הְצָ/ה וּ/קְדֵמֹ֖ת וּ/מֵפָֽעַת׃",
+        "LXX": "καὶ Βάσαν καὶ Βακεδμὼθ καὶ Μαιφάαθ,",
+        "VUL": "et Jassa, et Cedimoth, et Mephaath,",
+        "SYN": "Иааца, Кедемоф и Мефааф,",
+        "NEO": "Jassa, Cédimoth, Méphaath,",
+        "NAB": "Jahaz, Kedemoth, Mephaath,",
+        "VAT_ES": "Iajsá, Quedemot, Mefaat,",
+        "CEI": "Iaaz, Kedemot, Mefaat,"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/קִרְיָתַ֣יִם וְ/שִׂבְמָ֔ה וְ/צֶ֥רֶת הַשַּׁ֖חַר בְּ/הַ֥ר הָ/עֵֽמֶק׃",
+        "LXX": "καὶ Καριαθάιμ καὶ Σεβαμὰ καὶ Σεραδὰ καὶ Σείων ἐν τῷ ὄρει Ἔναβ,",
+        "VUL": "et Cariathaim, et Sabama, et Sarathasar in monte convallis.",
+        "SYN": "Кириафаим, Сивма и Цереф-Шахар на горе Емек,",
+        "NEO": "Cariathaïm, Sabama, Sarath-Asar dans la montagne de la vallée,",
+        "NAB": "Kiriathaim, Sibmah, Zereth-shahar on the knoll within the valley,",
+        "VAT_ES": "Quiriataim, Sibmá, Séret Ha Sájar en la montaña que da sobre el valle,",
+        "CEI": "Kiriataim, Sibma e Zeret-Sacar sulle montagne che dominano la valle;"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וּ/בֵ֥ית פְּע֛וֹר וְ/אַשְׁדּ֥וֹת הַ/פִּסְגָּ֖ה וּ/בֵ֥ית הַיְשִׁמֽוֹת׃",
+        "LXX": "καὶ Βαιθφογὼρ καὶ Ἀσηδὼθ Φασγὰ καὶ Βαιθθασεινώθ,",
+        "VUL": "Bethphogor et Asedoth, Phasga et Bethiesimoth,",
+        "SYN": "Беф-Фегор и места при подошве Фасги и Беф-Иешимоф,",
+        "NEO": "Beth-Phogor, les pentes du Phasga, Beth-Jésimoth,",
+        "NAB": "Beth-peor, the slopes of Pisgah, Beth-jeshimoth,",
+        "VAT_ES": "Bet Peor, las pendientes del Pisgá y Bet Ha Iesimot.",
+        "CEI": "Bet-Peor, i declivi del Pisga, Bet-Iesimot,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/כֹל֙ עָרֵ֣י הַ/מִּישֹׁ֔ר וְ/כָֽל מַמְלְכ֗וּת סִיחוֹן֙ מֶ֣לֶךְ הָ/אֱמֹרִ֔י אֲשֶׁ֥ר מָלַ֖ךְ בְּ/חֶשְׁבּ֑וֹן אֲשֶׁר֩ הִכָּ֨ה מֹשֶׁ֜ה אֹת֣/וֹ וְ/אֶת נְשִׂיאֵ֣י מִדְיָ֗ן אֶת אֱוִ֤י וְ/אֶת רֶ֨קֶם֙ וְ/אֶת צ֤וּר וְ/אֶת חוּר֙ וְ/אֶת רֶ֔בַע נְסִיכֵ֣י סִיח֔וֹן יֹשְׁבֵ֖י הָ/אָֽרֶץ׃",
+        "LXX": "καὶ πάσας τὰς πόλεις τοῦ Μεισώρ, καὶ πᾶσαν τὴν βασιλείαν τοῦ Σηὼν βασιλέως τῶν Ἀμορραίων, ὃν ἐπάταξεν Μωυσῆς αὐτὸν καὶ τοὺς ἡγουμένους Μαδιάμ, καὶ τὸν Εὐεὶ καὶ τὸν Ῥόβοκ καὶ τὸν Σοὺρ καὶ τὸν Οὓρ καὶ τὸν Ῥόβε ἄρχοντα, ἔναρα Σειών, καὶ τοὺς κατοικοῦντας Σειών.",
+        "VUL": "et omnes urbes campestres, universaque regna Sehon regis Amorrhæi, qui regnavit in Hesebon, quem percussit Moyses cum principibus Madian : Hevæum, et Recem, et Sur, et Hur, et Rebe duces Sehon habitatores terræ.",
+        "SYN": "и все города на равнине, и все царство Сигона, царя Аморрейского, который царствовал в Есевоне, которого убил Моисей, равно как и вождей Мадиамских: Евия, и Рекема, и Цура, и Хура, и Реву, князей Сигоновых, живших в земле [той];",
+        "NEO": "toutes les autres villes de la plaine et tout le royaume de Séhon, roi des Amorrhéens, qui régnait à Hésebon : Moïse l’avait battu, lui et les princes de Madian, Evi, Récem, Sur, Hur et Rébé, tributaires de Séhon, qui habitaient le pays.",
+        "NAB": "and the other cities of the tableland and, generally, of the kingdom of Sihon. This Amorite king, who reigned in Heshbon, Moses had killed, with his vassals, the princes of Midian, who were settled in the land: Evi, Rekem, Zur, Hur and Reba;",
+        "VAT_ES": "Todas las ciudades del altiplano habían pertenecido a Sijón, el rey de los amorreos que reinaba en Jesbón, y al que Moisés había derrotado, lo mismo que a los principes de Madián: Evi, Réquem, Sur, Jur y Reba, vasallos de Sijón que habitaban en aquel país.",
+        "CEI": "tutte le città della pianura, tutto il regno di Sicon, re degli Amorrèi, che aveva regnato in Chesbòn e che Mosè aveva sconfitto insieme con i capi dei Madianiti, Evi, Rekem, Zur, Cur e Reba, vassalli di Sicon, che abitavano nella regione."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/אֶת בִּלְעָ֥ם בֶּן בְּע֖וֹר הַ/קּוֹסֵ֑ם הָרְג֧וּ בְנֵֽי יִשְׂרָאֵ֛ל בַּ/חֶ֖רֶב אֶל חַלְלֵי/הֶֽם׃",
+        "LXX": "καὶ τὸν Βαλαὰμ τὸν τοῦ Βεὼρ τὸν μάντιν ἀπέκτειναν ἐν τῇ ῥοπῇ.",
+        "VUL": "Et Balaam filium Beor ariolum occiderunt filii Israël gladio cum ceteris interfectis.",
+        "SYN": "также Валаама, сына Веорова, прорицателя, убили сыны Израилевы мечом в числе убитых ими.",
+        "NEO": "Le devin Balaam, fils de Béor, fut aussi du nombre de ceux que les enfants d’Israël firent périr par l’épée.",
+        "NAB": "and among their slain followers the Israelites put to the sword also the soothsayer Balaam, son of Beor.",
+        "VAT_ES": "Asimismo, los israelitas habían pasado al filo de la espada al adivino Balaam, hijo de Beor, junto con las otras víctimas.",
+        "CEI": "Quanto a Balaam, figlio di Beor, l'indovino, gli Israeliti lo uccisero di spada insieme a quelli che avevano trafitto."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י גְּבוּל֙ בְּנֵ֣י רְאוּבֵ֔ן הַ/יַּרְדֵּ֖ן וּ/גְב֑וּל זֹ֣את נַחֲלַ֤ת בְּנֵֽי רְאוּבֵן֙ לְ/מִשְׁפְּחֹתָ֔/ם הֶ/עָרִ֖ים וְ/חַצְרֵי/הֶֽן׃",
+        "LXX": "ἐγένετο δὲ τὰ ὅρια Ῥουβήν, Ἰορδάνης ὅριον. αὕτη ἡ κληρονομία υἱῶν Ῥουβὴν κατὰ δὴμους αὐτῶν, αἱ πόλεις αὐτῶν καὶ αἱ ἐπαύλεις αὐτῶν.",
+        "VUL": "Factusque est terminus filiorum Ruben Jordanis fluvius. Hæc est possessio Rubenitarum per cognationes suas urbium et viculorum.",
+        "SYN": "Пределом сынов Рувимовых был Иордан. Вот удел сынов Рувимовых по племенам их, города и села их.",
+        "NEO": "Ainsi le territoire des fils de Ruben atteignait jusqu’au Jourdain et à son territoire. Tel fut l’héritage — les villes et leurs villages — des fils de Ruben, et leurs familles.",
+        "NAB": "The boundary of the Reubenites was the bank of the Jordan. These cities and their villages were the heritage of the clans of the Reubenites.",
+        "VAT_ES": "La ribera del Jordán servía de límite a los rubenitas. Esta fue la herencia asignada a los clanes de los rubenitas: las ciudades y sus poblados.",
+        "CEI": "Il confine per i figli di Ruben fu dunque il Giordano e il territorio limitrofo. Questa fu l'eredità dei figli di Ruben secondo le loro famiglie: le città con i loro villaggi."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֤ן מֹשֶׁה֙ לְ/מַטֵּה גָ֔ד לִ/בְנֵי גָ֖ד לְ/מִשְׁפְּחֹתָֽ/ם׃",
+        "LXX": "Ἔδωκεν δὲ Μωυσῆς τοῖς υἱοῖς Γὰδ κατὰ δήμους αὐτῶν.",
+        "VUL": "Deditque Moyses tribui Gad et filiis ejus per cognationes suas possessionem, cujus hæc divisio est.",
+        "SYN": "Моисей дал также _удел_ колену Гадову, сынам Гадовым, по племенам их:",
+        "NEO": "Moïse donna à la tribu de Gad, aux fils de Gad, une part selon leurs familles.",
+        "NAB": "What Moses gave to the Gadite clans:",
+        "VAT_ES": "Moisés también había dado una parte a los clanes de los gaditas.",
+        "CEI": "Mosè poi aveva dato una parte alla tribù di Gad, ai figli di Gad secondo le loro famiglie"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֤י לָ/הֶם֙ הַ/גְּב֔וּל יַעְזֵר֙ וְ/כָל עָרֵ֣י הַ/גִּלְעָ֔ד וַ/חֲצִ֕י אֶ֖רֶץ בְּנֵ֣י עַמּ֑וֹן עַד עֲרוֹעֵ֕ר אֲשֶׁ֖ר עַל פְּנֵ֥י רַבָּֽה׃",
+        "LXX": "καὶ ἐγένετο τὰ ὅρια αὐτῶν Ἰαζήρ, πᾶσαι αἱ πόλεις Γαλαὰδ καὶ τὸ ἥμισυ γῆς υἱῶν Ἀμμὼν ἕως Ἀραβά, ἥ ἐστιν κατὰ πρόσωπον Ἀράδ,",
+        "VUL": "Terminus Jaser, et omnes civitates Galaad, et dimidiam partem terræ filiorum Ammon, usque ad Aroër, quæ est contra Rabba,",
+        "SYN": "пределом их был Иазер и все города Галаадские, и половина земли сынов Аммоновых до Ароера, что пред Раввою,",
+        "NEO": "Ils eurent pour territoire : Jaser, toutes les villes de Galaad, la moitié du pays des enfants d’Ammon, jusqu’à Aroër, qui est vis-à-vis de Rabba,",
+        "NAB": "Their territory included Jazer, all the cities of Gilead, and half the land of the Ammonites as far as Aroer, toward Rabbah (that is,",
+        "VAT_ES": "Su territorio comprendía Iázer, todas las ciudades de Galaad y la mitad del país de los amonitas, hasta Aroer, que está enfrente de Rabbá.",
+        "CEI": "ed essi ebbero il territorio di Iazer e tutte le città di Gàlaad e metà del paese degli Ammoniti fino ad Aroer, che è di fronte a Rabba,"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וּ/מֵ/חֶשְׁבּ֛וֹן עַד רָמַ֥ת הַ/מִּצְפֶּ֖ה וּ/בְטֹנִ֑ים וּ/מִֽ/מַּחֲנַ֖יִם עַד גְּב֥וּל לִדְבִֽר׃",
+        "LXX": "καὶ ἀπὸ Ἑσεβὼν ἕως ἀραβὼθ κατὰ τὴν Μασσηφά, καὶ Βοτανεὶ καὶ Βαὰν ἕως τῶν ὁρίων Δαιβών,",
+        "VUL": "et ab Hesebon usque Ramoth, Masphe et Betonim : et a Manaim usque ad terminos Dabir.",
+        "SYN": "и _земли_ от Есевона до Рамаф-Мицфы и Ветонима и от Маханаима до пределов Давира,",
+        "NEO": "depuis Hésebon jusqu’à Raboth-Masphé et Bétonim, et depuis Manaïm jusqu’à la frontière de Dabir ;",
+        "NAB": "from Heshbon to Ramath-mizpeh and Betonim, and from Mahanaim to the boundary of Lodebar);",
+        "VAT_ES": "Además, desde Jesbón hasta Ramat Ha Mispá y Betoním, y desde Majanaim hasta el territorio de Lo Debar.",
+        "CEI": "e da Chesbòn fino a Ramat-Mizpe e Betonim e da Macanaim fino al territorio di Lodebar;"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וּ/בָ/עֵ֡מֶק בֵּ֣ית הָרָם֩ וּ/בֵ֨ית נִמְרָ֜ה וְ/סֻכּ֣וֹת וְ/צָפ֗וֹן יֶ֚תֶר מַמְלְכ֗וּת סִיחוֹן֙ מֶ֣לֶךְ חֶשְׁבּ֔וֹן הַ/יַּרְדֵּ֖ן וּ/גְבֻ֑ל עַד קְצֵה֙ יָם כִּנֶּ֔רֶת עֵ֥בֶר הַ/יַּרְדֵּ֖ן מִזְרָֽחָ/ה׃",
+        "LXX": "καὶ Ἐναδὼμ καὶ Ὀθαργαεὶ καὶ Βαινθαναβρὰ καὶ Σοκχωθὰ καὶ Σαφὰν καὶ τὴν λοιπὴν βασιλείαν Σηὼν βασιλέως Ἑσεβών· καὶ ὁ Ἰορδάνης ὁριεῖ ἕως μέρους τῆς θαλάσσης Χενέρεθ πέραν τοῦ Ἰορδάνου ἀπ’ ἀνατολῶν.",
+        "VUL": "In valle quoque Betharan, et Bethnemra, et Socoth, et Saphon reliquam partem regni Sehon regis Hesebon : hujus quoque finis, Jordanis est, usque ad extremam partem maris Cenereth trans Jordanem ad orientalem plagam.",
+        "SYN": "и на долине Беф-Гарам и Беф-Нимра и Сокхоф и Цафон, остаток царства Сигона, царя Есевонского; пределом его был Иордан до моря Хиннерефского за Иорданом к востоку.",
+        "NEO": "et, dans la vallée, Beth-Haram, Beth-Nemra, Socoth et Saphon, reste du royaume de Séhon, roi d’Hésebon ; le Jourdain et son territoire, jusqu’à l’extrémité de la mer de Cénéreth, de l’autre côté du Jourdain, à l’orient.",
+        "NAB": "and in the Jordan valley: Beth-haram, Beth-nimrah, Succoth, Zaphon, the other part of the kingdom of Sihon, king of Heshbon, with the bank of the Jordan to the southeastern tip of the Sea of Chinnereth.",
+        "VAT_ES": "Y en el valle, Bet Jaram, Bet Mimrá, Sucot y Safón, el resto del reino de Sijón, rey de Jesbón. Y el lado oriental del Jordán, hasta el extremo del mar de Genesaret, les servía de límite.",
+        "CEI": "nella valle: Bet-Aram e Bet-Nimra, Succot e Zafon, il resto del regno di Sicon, re di Chesbòn. Il Giordano era il confine sino all'estremità del mare di Genèsaret oltre il Giordano, ad oriente."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "זֹ֛את נַחֲלַ֥ת בְּנֵי גָ֖ד לְ/מִשְׁפְּחֹתָ֑/ם הֶ/עָרִ֖ים וְ/חַצְרֵי/הֶֽם׃",
+        "LXX": "αὕτη ἡ κληρονομία υἱῶν Γὰδ κατὰ δήμους αὐτῶν· αὐχένα ἐπιστρέψουσιν ἐναντίον τῶν ἐχθρῶν αὐτῶν· ὅτι ἐγενήθη κατὰ δήμους αὐτῶν· αἱ πόλεις αὐτῶν καὶ αἱ ἐπαύλεις αὐτῶν.",
+        "VUL": "Hæc est possessio filiorum Gad per familias suas, civitates et villæ earum.",
+        "SYN": "Вот удел сынов Гадовых по племенам их, города и села их.",
+        "NEO": "Tel fut l’héritage — les villes et leurs villages — des fils de Gad, selon leurs familles.",
+        "NAB": "These cities and their villages were the heritage of the clans of the Gadites.",
+        "VAT_ES": "Esta fue la herencia de los clanes de los gaditas: las ciudades y sus poblados.",
+        "CEI": "Questa è l'eredità dei figli di Gad secondo le loro famiglie: le città con i loro villaggi."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֣ן מֹשֶׁ֔ה לַ/חֲצִ֖י שֵׁ֣בֶט מְנַשֶּׁ֑ה וַ/יְהִ֗י לַ/חֲצִ֛י מַטֵּ֥ה בְנֵֽי מְנַשֶּׁ֖ה לְ/מִשְׁפְּחוֹתָֽ/ם׃",
+        "LXX": "Καὶ ἔδωκεν Μωυσῆς τῷ ἡμίσει φυλῆς Μανασσὴ κατὰ δήμους αὐτῶν.",
+        "VUL": "Dedit et dimidiæ tribui Manasse, filiisque ejus juxta cognationes suas, possessionem,",
+        "SYN": "Моисей дал _удел_ и половине колена Манассиина, который _принадлежал_ половине колена сынов Манассииных, по племенам их;",
+        "NEO": "Moïse donna à la demi-tribu de Manassé, aux fils de Manassé, une part selon leurs familles.",
+        "NAB": "What Moses gave to the clans of the half-tribe of Manasseh:",
+        "VAT_ES": "Moisés también había dado una parte a los clanes de la mitad de la tribu de Manasés.",
+        "CEI": "Mosè aveva dato una parte a metà della tribù dei figli di Manàsse, secondo le loro famiglie"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י גְבוּלָ֗/ם מִ/מַּחֲנַ֨יִם כָּֽל הַ/בָּשָׁ֜ן כָּֽל מַמְלְכ֣וּת ע֣וֹג מֶֽלֶךְ הַ/בָּשָׁ֗ן וְ/כָל חַוֺּ֥ת יָאִ֛יר אֲשֶׁ֥ר בַּ/בָּשָׁ֖ן שִׁשִּׁ֥ים עִֽיר׃",
+        "LXX": "καὶ ἐγένετο τὰ ὅρια αὐτῶν ἀπὸ Μαανὰ καὶ πᾶσα βασιλεία Βασανεὶ καὶ πᾶσα βασιλεία Ὤγ βασιλέως Βασάν, καὶ πάσας τὰς κώμας Ἰαεὶρ αἵ εἰσιν ἐν τῇ Βασανείτιδι, ἑξήκοντα πόλεις·",
+        "VUL": "cujus hoc principium est : a Manaim universam Basan, et cuncta regna Og regis Basan, omnesque vicos Jair, qui sunt in Basan, sexaginta oppida :",
+        "SYN": "предел их был: от Маханаима весь Васан, все царство Ога, царя Васанского, и все селения Иаировы, что в Васане, шестьдесят городов;",
+        "NEO": "Ils eurent pour territoire, à partir de Manaïm, tout Basan, tout le royaume d’Og, roi de Basan, et tous les bourgs de Jaïr en Basan, soixante villes.",
+        "NAB": "Their territory included Mahanaim, all of Bashan, the entire kingdom of Og, king of Bashan, and all the villages of Jair, which are sixty cities in Bashan.",
+        "VAT_ES": "Su territorio, partiendo de Majanaim, comprendía todo Basán, y todas las poblaciones de Iair, en Basán: en total, sesenta ciudades.",
+        "CEI": "ed essi ebbero il territorio da Macanaim, tutto il Basan, tutto il regno di Og, re di Basan, e tutti gli attendamenti di Iair, che sono in Basan: sessanta città."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/חֲצִ֤י הַ/גִּלְעָד֙ וְ/עַשְׁתָּר֣וֹת וְ/אֶדְרֶ֔עִי עָרֵ֛י מַמְלְכ֥וּת ע֖וֹג בַּ/בָּשָׁ֑ן לִ/בְנֵ֤י מָכִיר֙ בֶּן מְנַשֶּׁ֔ה לַ/חֲצִ֥י בְנֵֽי מָכִ֖יר לְ/מִשְׁפְּחוֹתָֽ/ם׃",
+        "LXX": "καὶ τὸ ἥμισυ τῆς Γαλαάδ, καὶ ἐν Ἀσταρὼθ καὶ ἐν Ἐδράειν πόλεις βασιλείας Ὤγ ἐν Βασανείτιδι, τοῖς Μαχεὶρ υἱοῖς Μανασσὴ καὶ τοῖς ἡμίσεσιν υἱοῖς Μαχεὶρ υἱοῖς Μανασσὴ κατὰ δήμους αὐτῶν.",
+        "VUL": "et dimidiam partem Galaad, et Astaroth, et Edrai, urbes regni Og in Basan : filiis Machir, filii Manasse, dimidiæ parti filiorum Machir juxta cognationes suas.",
+        "SYN": "а половина Галаада и Астароф и Едрея, царственные города Ога Васанского, [даны] сынам Махира, сына Манассиина, половине сынов Махировых, по племенам их.",
+        "NEO": "La moitié de Galaad, Astaroth et Edraï, villes du royaume d’Og en Basan, furent données aux fils de Machir, fils de Manassé, à la moitié des fils de Machir, selon leurs familles.",
+        "NAB": "Half of Gilead, with Ashtaroth and Edrei, once the royal cities of Og in Bashan, fell to the descendants of Machir, son of Manasseh, for half the clans descended from Machir.",
+        "VAT_ES": "La mitad de Galaad, Astarot y Edrei, ciudades del reino de Og en Basán, pasaron a los clanes de los hijos de Maquir, hijo de Manasés.",
+        "CEI": "La metà di Gàlaad, Astarot e Edrei, città del regno di Og in Basan furono dati ai figli di Machir, figlio di Manàsse, anzi alla metà dei figli di Machir, secondo le loro famiglie."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "אֵ֕לֶּה אֲשֶׁר נִחַ֥ל מֹשֶׁ֖ה בְּ/עַֽרְב֣וֹת מוֹאָ֑ב מֵ/עֵ֛בֶר לְ/יַרְדֵּ֥ן יְרִיח֖וֹ מִזְרָֽחָ/ה׃",
+        "LXX": "Οὗτοι οὕς κατεκληρονόμησεν Μωυσῆς πέραν τοῦ Ἰορδάνου ἐν ἀραβὼθ Μωάβ, ἐν τῷ πέραν τοῦ Ἰορδάνου τοῦ κατὰ Ἰερειχὼ ἐπ’ ἀνατολῶν.",
+        "VUL": "Hanc possessionem divisit Moyses in campestribus Moab trans Jordanem contra Jericho ad orientalem plagam.",
+        "SYN": "Вот что Моисей дал в удел на равнинах Моавитских за Иорданом против Иерихона к востоку.",
+        "NEO": "Telles sont les parts que distribua Moïse, lorsqu’il était dans les plaines de Moab, de l’autre côté du Jourdain, en face de Jéricho, à l’orient.",
+        "NAB": "These are the portions which Moses gave when he was in the plains of Moab, beyond the Jordan east of Jericho.",
+        "VAT_ES": "Este fue el reparto que hizo Moisés en las Estepas de Moab, al otro lado del Jordán, al este de Jericó.",
+        "CEI": "Questo distribuì Mosè nelle steppe di Moab, oltre il Giordano di Gerico, ad oriente."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וּ/לְ/שֵׁ֨בֶט֙ הַ/לֵּוִ֔י לֹֽא נָתַ֥ן מֹשֶׁ֖ה נַחֲלָ֑ה יְהוָ֞ה אֱלֹהֵ֤י יִשְׂרָאֵל֙ ה֣וּא נַחֲלָתָ֔/ם כַּ/אֲשֶׁ֖ר דִּבֶּ֥ר לָ/הֶֽם׃",
+        "VUL": "Tribui autem Levi non dedit possessionem : quoniam Dominus Deus Israël ipse est possessio ejus, ut locutus est illi.",
+        "SYN": "Но колену Левиину Моисей не дал удела: Господь Бог Израилев Сам есть удел их, как Он говорил им.",
+        "NEO": "Mais Moïse ne donna pas d’héritage à la tribu de Lévi ; \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël, est son héritage, comme il le lui a dit.",
+        "NAB": "However, Moses gave no heritage to the tribe of Levi, since the LORD himself, the God of Israel, is their heritage, as he promised.",
+        "VAT_ES": "Pero Moisés no asignó ninguna herencia a la tribu de Leví, porque el Señor, el Dios de Israel, es su herencia, como él mismo se lo había declarado.",
+        "CEI": "Alla tribù di Levi però Mosè non aveva assegnato alcuna eredità: il Signore, Dio di Israele, è la loro eredità, come aveva loro detto."
+      }
+    }
+  }
+}

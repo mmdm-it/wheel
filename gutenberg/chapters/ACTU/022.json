@@ -1,0 +1,525 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ACTU_022",
+  "book_key": "ACTU",
+  "sequence": 22,
+  "chapter_in": {
+    "MT": 22,
+    "VUL": 22,
+    "LXX": 22
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Actus_Apostolorum",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Ἄνδρες ἀδελφοὶ καὶ πατέρες, ἀκούσατέ μου τῆς πρὸς ὑμᾶς νυνὶ ἀπολογίας.",
+        "VUL": "Viri fratres, et patres, audite quam ad vos nunc reddo rationem.",
+        "SYN": "Мужи братия и отцы! выслушайте теперь мое оправдание перед вами.",
+        "NEO": "« Mes frères et mes pères, écoutez ce que j’ai maintenant à vous dire pour ma défense. » —",
+        "NAB": "\"My brothers and fathers, listen to what I am about to say to you in my defense.\"",
+        "VAT_ES": "«Hermanos y padres, les dijo, escuchen lo que hoy les voy a decir en mi defensa».",
+        "CEI": "Io domando dunque: Dio avrebbe forse ripudiato il suo popolo? Impossibile! Anch'io infatti sono Israelita, della discendenza di Abramo, della tribù di Beniamino."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "¶Ἀκούσαντες δὲ ὅτι τῇ Ἑβραΐδι διαλέκτῳ προσεφώνει αὐτοῖς, μᾶλλον παρέσχον ἡσυχίαν. Καί φησιν,",
+        "VUL": "Cum audissent autem quia hebræa lingua loqueretur ad illos, magis præstiterunt silentium.",
+        "SYN": "Услышав же, что он заговорил с ними на еврейском языке, они еще более утихли. Он сказал:",
+        "NEO": "Dès qu’ils entendirent qu’il leur parlait en langue hébraïque, ils firent encore plus de silence.",
+        "NAB": "When they heard him addressing them in Hebrew they became all the more quiet. And he continued,",
+        "VAT_ES": "Al oír que hablaba en hebreo, el silencio se hizo aún más profundo. Pablo prosiguió:",
+        "CEI": "Dio non ha ripudiato il suo popolo, che egli ha scelto fin da principio. O non sapete forse ciò che dice la Scrittura, nel passo in cui Elia ricorre a Dio contro Israele?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "¶Ἐγὼ μέν εἰμι ἀνὴρ Ἰουδαῖος, γεγεννημένος ἐν Ταρσῷ τῆς Κιλικίας, ἀνατεθραμμένος δὲ ἐν τῇ πόλει ταύτῃ παρὰ τοὺς πόδας Γαμαλιήλ, πεπαιδευμένος κατὰ ἀκρίβειαν τοῦ πατρῴου νόμου, ζηλωτὴς ὑπάρχων τοῦ θεοῦ, καθὼς πάντες ὑμεῖς ἐστε σήμερον·",
+        "VUL": "Et dicit : Ego sum vir Judæus, natus in Tarso Ciliciæ, nutritus autem in ista civitate, secus pedes Gamaliel eruditus juxta veritatem paternæ legis, æmulator legis, sicut et vos omnes estis hodie :",
+        "SYN": "я Иудеянин, родившийся в Тарсе Киликийском, воспитанный в сем городе при ногах Гамалиила, тщательно наставленный в отеческом законе, ревнитель по Боге, как и все вы ныне.",
+        "NEO": "Et Paul dit : « Je suis Juif, né à Tarse en Cilicie ; mais j’ai été élevé dans cette ville et instruit aux pieds de Gamaliel dans la connaissance exacte de la Loi de nos pères, étant plein de zèle pour Dieu, comme vous l’êtes tous aujourd’hui.+ 22:3 XXII, 3. Voy. vers. 34.*",
+        "NAB": "\"I am a Jew, born in Tarsus in Cilicia, but brought up in this city. At the feet of Gamaliel I was educated strictly in our ancestral law and was zealous for God, just as all of you are today.",
+        "VAT_ES": "«Yo soy judío, nacido en Tarso de Cilicia, pero me he criado en esta ciudad y he sido iniciado a los pies de Gamaliel en la estricta observancia de la Ley de nuestros padres. Estaba lleno de celo por Dios, como ustedes lo están ahora.",
+        "CEI": "Signore, hanno ucciso i tuoi profeti, hanno rovesciato i tuoi altari e io sono rimasto solo e ora vogliono la mia vita."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "ὃς ταύτην τὴν ὁδὸν ἐδίωξα ἄχρι θανάτου, δεσμεύων καὶ παραδιδοὺς εἰς φυλακὰς ἄνδρας τε καὶ γυναῖκας.",
+        "VUL": "qui hanc viam persecutus sum usque ad mortem, alligans et tradens in custodias viros ac mulieres,",
+        "SYN": "Я даже до смерти гнал _последователей_ сего учения, связывая и предавая в темницу и мужчин и женщин,",
+        "NEO": "C’est moi qui ai persécuté cette secte jusqu’à la mort, chargeant de chaînes et jetant en prison hommes et femmes :",
+        "NAB": "I persecuted this Way to death, binding both men and women and delivering them to prison.",
+        "VAT_ES": "Perseguí a muerte a los que seguían este Camino, llevando encadenados a la prisión a hombres y mujeres;",
+        "CEI": "Cosa gli risponde però la voce divina? Mi sono riservato settemila uomini, quelli che non hanno piegato il ginocchio davanti a Baal."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ὡς καὶ ὁ ἀρχιερεὺς μαρτυρεῖ μοι, καὶ πᾶν τὸ πρεσβυτέριον· παρ’ ὧν καὶ ἐπιστολὰς δεξάμενος πρὸς τοὺς ἀδελφούς, εἰς Δαμασκὸν ἐπορευόμην, ἄξων καὶ τοὺς ἐκεῖσε ὄντας δεδεμένους εἰς Ἱερουσαλήμ, ἵνα τιμωρηθῶσιν.",
+        "VUL": "sicut princeps sacerdotum mihi testimonium reddit, et omnes majores natu : a quibus et epistolas accipiens, ad fratres Damascum pergebam, ut adducerem inde vinctos in Jerusalem ut punirentur.",
+        "SYN": "как засвидетельствует о мне первосвященник и все старейшины, от которых и письма взяв к братиям, живущим в Дамаске, я шел, чтобы тамошних привести в оковах в Иерусалим на истязание.",
+        "NEO": "le grand-prêtre et tous les Anciens m’en sont témoins. Ayant même reçu d’eux des lettres pour les frères, je partis pour Damas afin d’amener enchaînés à Jérusalem ceux qui se trouvaient là, et de les faire punir.",
+        "NAB": "Even the high priest and the whole council of elders can testify on my behalf. For from them I even received letters to the brothers and set out for Damascus to bring back to Jerusalem in chains for punishment those there as well.",
+        "VAT_ES": "el Sumo Sacerdote y el Consejo de los ancianos son testigos de esto. Ellos mismos me dieron cartas para los hermanos de Damasco, y yo me dirigí allá con el propósito de traer encadenados a Jerusalén a los que encontrara en esa ciudad, para que fueran castigados.",
+        "CEI": "Così anche al presente c'è un resto, conforme a un'elezione per grazia."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ἐγένετο δέ μοι πορευομένῳ καὶ ἐγγίζοντι τῇ Δαμασκῷ, περὶ μεσημβρίαν, ἐξαίφνης ἐκ τοῦ οὐρανοῦ περιαστράψαι φῶς ἱκανὸν περὶ ἐμέ.",
+        "VUL": "Factum est autem, eunte me, et appropinquante Damasco media die, subito de cælo circumfulsit me lux copiosa :",
+        "SYN": "Когда же я был в пути и приближался к Дамаску, около полудня вдруг осиял меня великий свет с неба.",
+        "NEO": "Mais comme j’étais en chemin, et déjà près de Damas, tout à coup, vers midi, une vive lumière venant du ciel resplendit autour de moi.+ 22:6 6. À la narration généralement plus complète de S. Luc, Act. xi, 3 sv., l’Apôtre ajoute cependant quelques détails nouveaux, à cause sans doute des circonstances où il se trouve maintenant, et pour que ses auditeurs sachent bien qu’il n’a pas été le jouet d’une illusion. Ainsi il prend soin de faire observer que l’apparition eut lieu en plein jour « vers midi» (vers. 6) ; il rapporte plusieurs paroles d’Ananie (vers. 14-16), et l’avertissement que lui donna Jésus lui-même (vers. 18).*",
+        "NAB": "\"On that journey as I drew near to Damascus, about noon a great light from the sky suddenly shone around me.",
+        "VAT_ES": "En el camino y al acercarme a Damasco, hacia el mediodía, una intensa luz que venía del cielo brilló de pronto a mi alrededor.",
+        "CEI": "E se lo è per grazia, non lo è per le opere; altrimenti la grazia non sarebbe più grazia."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ἔπεσά τε εἰς τὸ ἔδαφος, καὶ ἤκουσα φωνῆς λεγούσης μοι, Σαούλ, Σαούλ, τί με διώκεις;",
+        "VUL": "et decidens in terram, audivi vocem dicentem mihi : Saule, Saule, quid me persequeris ?",
+        "SYN": "Я упал на землю и услышал голос, говоривший мне: Савл, Савл! что ты гонишь Меня?",
+        "NEO": "Je tombai par terre, et j’entendis une voix qui me disait : Saul, Saul, pourquoi me persécutes-tu ?",
+        "NAB": "I fell to the ground and heard a voice saying to me, 'Saul, Saul, why are you persecuting me?'",
+        "VAT_ES": "Caí en tierra y oí una voz que me decía: «Saulo, Saulo, &iquest;por qué me persigues?».",
+        "CEI": "Che dire dunque? Israele non ha ottenuto quello che cercava; lo hanno ottenuto invece gli eletti; gli altri sono stati induriti,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἐγὼ δὲ ἀπεκρίθην, Τίς εἶ, κύριε; Εἶπέν τε πρός με, Ἐγώ εἰμι Ἰησοῦς ὁ Ναζωραῖος ὃν σὺ διώκεις.",
+        "VUL": "Ego autem respondi : Quis es, domine ? Dixitque ad me : Ego sum Jesus Nazarenus, quem tu persequeris.",
+        "SYN": "Я отвечал: кто Ты, Господи? Он сказал мне: Я Иисус Назорей, Которого ты гонишь.",
+        "NEO": "Je répondis : Qui êtes-vous, Seigneur ? Et il me dit : Je suis Jésus de Nazareth, que tu persécutes.",
+        "NAB": "I replied, 'Who are you, sir?' And he said to me, 'I am Jesus the Nazorean whom you are persecuting.'",
+        "VAT_ES": "Le respondí: «&iquest;Quién eres, Señor?», y la voz me dijo: «Yo soy Jesús de Nazaret, a quien tú persigues».",
+        "CEI": "come sta scritto: Dio ha dato loro uno spirito di torpore, occhi per non vedere e orecchi per non sentire, fino al giorno d'oggi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Οἱ δὲ σὺν ἐμοὶ ὄντες τὸ μὲν φῶς ἐθεάσαντο, καὶ ἔμφοβοι ἐγένοντο· τὴν δὲ φωνὴν οὐκ ἤκουσαν τοῦ λαλοῦντός μοι.",
+        "VUL": "Et qui mecum erant, lumen quidem viderunt, vocem autem non audierunt ejus qui loquebatur mecum.",
+        "SYN": "Бывшие же со мною свет видели, и пришли в страх; но голоса Говорившего мне не слыхали.",
+        "NEO": "Ceux qui étaient avec moi virent bien la lumière, mais ils n’entendirent pas la voix de celui qui me parlait.+ 22:9 9. N’entendirent pas la voix de manière à comprendre les paroles. Voy. la note de ix, 7.*",
+        "NAB": "My companions saw the light but did not hear the voice of the one who spoke to me.",
+        "VAT_ES": "Los que me acompañaban vieron la luz, pero no oyeron la voz del que me hablaba.",
+        "CEI": "E Davide dice: Diventi la lor mensa un laccio, un tranello e un inciampo e serva loro di giusto castigo!"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Εἶπον δέ, Τί ποιήσω, κύριε; Ὁ δὲ κύριος εἶπεν πρός με, Ἀναστὰς πορεύου εἰς Δαμασκόν· κἀκεῖ σοι λαληθήσεται περὶ πάντων ὧν τέτακταί σοι ποιῆσαι.",
+        "VUL": "Et dixi : Quid faciam, domine ? Dominus autem dixit ad me : Surgens vade Damascum : et ibi tibi dicetur de omnibus quæ te oporteat facere.",
+        "SYN": "Тогда я сказал: Господи! что мне делать? Господь же сказал мне: встань и иди в Дамаск, и там тебе сказано будет все, что назначено тебе делать.",
+        "NEO": "Alors je dis : Que dois-je faire, Seigneur ? Et le Seigneur me répondit : Lève-toi, va à Damas, et là on te dira tout ce que tu dois faire.",
+        "NAB": "I asked, 'What shall I do, sir?' The Lord answered me, 'Get up and go into Damascus, and there you will be told about everything appointed for you to do.'",
+        "VAT_ES": "Yo le pregunté: «&iquest;Qué debo hacer, Señor?». El Señor me dijo: «Levántate y ve a Damasco donde se te dirá lo que debes hacer».",
+        "CEI": "Siano oscurati i loro occhi sì da non vedere, e fà loro curvare la schiena per sempre!"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Ὡς δὲ οὐκ ἐνέβλεπον ἀπὸ τῆς δόξης τοῦ φωτὸς ἐκείνου, χειραγωγούμενος ὑπὸ τῶν συνόντων μοι, ἦλθον εἰς Δαμασκόν.",
+        "VUL": "Et cum non viderem præ claritate luminis illius, ad manum deductus a comitibus, veni Damascum.",
+        "SYN": "А как я от славы света того лишился зрения, то бывшие со мною за руку привели меня в Дамаск.",
+        "NEO": "Et comme par suite de l’éclat de cette lumière je ne voyais plus, ceux qui étaient avec moi me prirent par la main, et j’arrivai à Damas.",
+        "NAB": "Since I could see nothing because of the brightness of that light, I was led by hand by my companions and entered Damascus.",
+        "VAT_ES": "Pero como yo no podía ver, a causa del resplandor de esa luz, los que acompañaban me llevaron de la mano hasta damasco.",
+        "CEI": "Ora io domando: Forse inciamparono per cadere per sempre? Certamente no. Ma a causa della loro caduta la salvezza è giunta ai pagani, per suscitare la loro gelosia."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Ἀνανίας δέ τις, ἀνὴρ εὐσεβὴς κατὰ τὸν νόμον, μαρτυρούμενος ὑπὸ πάντων τῶν κατοικούντων Ἰουδαίων,",
+        "VUL": "Ananias autem quidam vir secundum legem, testimonium habens ab omnibus cohabitantibus Judæis,",
+        "SYN": "Некто Анания, муж благочестивый по закону, одобряемый всеми Иудеями, живущими в Дамаске,",
+        "NEO": "Or un homme pieux selon la Loi, nommé Ananie, et de qui tous les Juifs de la ville rendaient un bon témoignage,",
+        "NAB": "\"A certain Ananias, a devout observer of the law, and highly spoken of by all the Jews who lived there,",
+        "VAT_ES": "Un hombre llamado Ananías, fiel cumplidor de la Ley, que gozaba de gran prestigio entre los judíos del lugar,",
+        "CEI": "Se pertanto la loro caduta è stata ricchezza del mondo e il loro fallimento ricchezza dei pagani, che cosa non sarà la loro partecipazione totale!"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "ἐλθὼν πρός με καὶ ἐπιστὰς εἶπέν μοι, Σαοὺλ ἀδελφέ, ἀνάβλεψον. Κἀγὼ αὐτῇ τῇ ὥρᾳ ἀνέβλεψα εἰς αὐτόν.",
+        "VUL": "veniens ad me et astans, dixit mihi : Saule frater, respice. Et ego eadem hora respexi in eum.",
+        "SYN": "пришел ко мне и, подойдя, сказал мне: брат Савл! прозри. И я тотчас увидел его.",
+        "NEO": "vint me voir, et s’étant approché de moi, me dit : Saul, mon frère, recouvre la vue. Et au même instant je le vis.",
+        "NAB": "came to me and stood there and said, 'Saul, my brother, regain your sight.' And at that very moment I regained my sight and saw him.",
+        "VAT_ES": "vino a verme y, acercándose a mí, me dijo: «Hermano Saulo, recobra la vista». Y en ese mismo instante, pude verlo.",
+        "CEI": "Pertanto, ecco che cosa dico a voi, Gentili: come apostolo dei Gentili, io faccio onore al mio ministero,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ εἶπεν, Ὁ θεὸς τῶν πατέρων ἡμῶν προεχειρίσατό σε γνῶναι τὸ θέλημα αὐτοῦ, καὶ ἰδεῖν τὸν δίκαιον, καὶ ἀκοῦσαι φωνὴν ἐκ τοῦ στόματος αὐτοῦ.",
+        "VUL": "At ille dixit : Deus patrum nostrorum præordinavit te, ut cognosceres voluntatem ejus, et videres justum, et audires vocem ex ore ejus :",
+        "SYN": "Он же сказал мне: Бог отцов наших предъизбрал тебя, чтобы ты познал волю Его, увидел Праведника и услышал глас из уст Его,",
+        "NEO": "Il dit alors : Le Dieu de nos pères t’a prédestiné à connaître sa volonté, à voir le Juste et entendre les paroles de sa bouche.+ 22:14 14. Le Juste par excellence, expression consacrée dans l’Ancien Testament pour désigner le Messie. (Voy. par ex. Is. li, 5 ; liii, 11 ; comp. Act. vii, 52.)*",
+        "NAB": "Then he said, 'The God of our ancestors designated you to know his will, to see the Righteous One, and to hear the sound of his voice;",
+        "VAT_ES": "El siguió diciendo: «El Dios de nuestros padres te ha destinado para conocer su voluntad, para ver al Justo y escuchar su Palabra,",
+        "CEI": "nella speranza di suscitare la gelosia di quelli del mio sangue e di salvarne alcuni."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ὅτι ἔσῃ μάρτυς αὐτῷ πρὸς πάντας ἀνθρώπους ὧν ἑώρακας καὶ ἤκουσας.",
+        "VUL": "quia eris testis illius ad omnes homines eorum quæ vidisti et audisti.",
+        "SYN": "потому что ты будешь Ему свидетелем пред всеми людьми о том, что ты видел и слышал.",
+        "NEO": "Car tu lui serviras de témoin, devant tous les hommes, des choses que tu as vues et entendues.",
+        "NAB": "for you will be his witness before all to what you have seen and heard.",
+        "VAT_ES": "porque tú darás testimonio ante todos los hombres de lo que has visto y oído.",
+        "CEI": "Se infatti il loro rifiuto ha segnato la riconciliazione del mondo, quale potrà mai essere la loro riammissione, se non una risurrezione dai morti?"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Καὶ νῦν τί μέλλεις; Ἀναστὰς βάπτισαι καὶ ἀπόλουσαι τὰς ἁμαρτίας σου, ἐπικαλεσάμενος τὸ ὄνομα τοῦ κυρίου.",
+        "VUL": "Et nunc quid moraris ? Exsurge, et baptizare, et ablue peccata tua, invocato nomine ipsius.",
+        "SYN": "Итак, что ты медлишь? Встань, крестись и омой грехи твои, призвав имя Господа Иисуса,",
+        "NEO": "Et maintenant que tardes-tu ? Lève-toi, reçois le baptême et purifie-toi de tes péchés, en invoquant son nom. —",
+        "NAB": "Now, why delay? Get up and have yourself baptized and your sins washed away, calling upon his name.'",
+        "VAT_ES": "Y ahora, &iquest;qué esperas? Levántate, recibe el bautismo y purifícate de tus pecados, invocando su Nombre».",
+        "CEI": "Se le primizie sono sante, lo sarà anche tutta la pasta; se è santa la radice, lo saranno anche i rami."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Ἐγένετο δέ μοι ὑποστρέψαντι εἰς Ἱερουσαλήμ, καὶ προσευχομένου μου ἐν τῷ ἱερῷ, γενέσθαι με ἐν ἐκστάσει,",
+        "VUL": "Factum est autem revertenti mihi in Jerusalem, et oranti in templo, fieri me in stupore mentis,",
+        "SYN": "Когда же я возвратился в Иерусалим и молился в храме, пришел я в исступление,",
+        "NEO": "De retour à Jérusalem, comme je priais dans le temple, il m’arriva d’être ravi en esprit,+ 22:17 17-21. Dans ce passage de son discours, S. Paul veut justifier la préférence qu’il a accordée dans ses travaux apostoliques au peuple des Gentils. S’il a surtout évangélisé les nations idolâtres c’est que le Seigneur lui en avait, à diverses reprises, intimé l’ordre.*",
+        "NAB": "\"After I had returned to Jerusalem and while I was praying in the temple, I fell into a trance",
+        "VAT_ES": "De vuelta a Jerusalén, mientras oraba en el Templo, caí en éxtasis",
+        "CEI": "Se però alcuni rami sono stati tagliati e tu, essendo oleastro, sei stato innestato al loro posto, diventando così partecipe della radice e della linfa dell'olivo,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "καὶ ἰδεῖν αὐτὸν λέγοντά μοι, Σπεῦσον καὶ ἔξελθε ἐν τάχει ἐξ Ἱερουσαλήμ· διότι οὐ παραδέξονταί σου τὴν μαρτυρίαν περὶ ἐμοῦ.",
+        "VUL": "et videre illum dicentem mihi : Festina, et exi velociter ex Jerusalem : quoniam non recipient testimonium tuum de me.",
+        "SYN": "и увидел Его, и Он сказал мне: поспеши и выйди скорее из Иерусалима, потому что _здесь_ не примут твоего свидетельства о Мне.",
+        "NEO": "et je vis le Seigneur qui me disait : Hâte-toi et sors au plus tôt de Jérusalem, parce qu’on n’y recevra pas le témoignage que tu rendras de moi. —",
+        "NAB": "and saw the Lord saying to me, 'Hurry, leave Jerusalem at once, because they will not accept your testimony about me.'",
+        "VAT_ES": "y vi al Señor que me decía: Aléjate rápidamente de Jerusalén, porque ellos no recibirán el testimonio que tú darás de mí».",
+        "CEI": "non menar tanto vanto contro i rami! Se ti vuoi proprio vantare, sappi che non sei tu che porti la radice, ma è la radice che porta te."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Κἀγὼ εἶπον, Κύριε, αὐτοὶ ἐπίστανται ὅτι ἐγὼ ἤμην φυλακίζων καὶ δέρων κατὰ τὰς συναγωγὰς τοὺς πιστεύοντας ἐπὶ σέ·",
+        "VUL": "Et ego dixi : Domine, ipsi sciunt quia ego eram concludens in carcerem, et cædens per synagogas eos qui credebant in te :",
+        "SYN": "Я сказал: Господи! им известно, что я верующих в Тебя заключал в темницы и бил в синагогах,",
+        "NEO": "Seigneur, répondis-je, ils savent eux-mêmes que je faisais mettre en prison et battre de verges dans les synagogues ceux qui croyaient en toi,",
+        "NAB": "But I replied, 'Lord, they themselves know that from synagogue to synagogue I used to imprison and beat those who believed in you.",
+        "VAT_ES": "Entonces respondí: «Ellos saben, Señor, que yo iba de una sinagoga a otra para encarcelar y azotar a los que creen en ti.",
+        "CEI": "Dirai certamente: Ma i rami sono stati tagliati perché vi fossi innestato io!"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "καὶ ὅτε ἐξεχεῖτο τὸ αἷμα Στεφάνου τοῦ μάρτυρός σου, καὶ αὐτὸς ἤμην ἐφεστὼς καὶ συνευδοκῶν τῇ ἀναιρέσει αὐτοῦ, φυλάσσων τὰ ἱμάτια τῶν ἀναιρούντων αὐτόν.",
+        "VUL": "et cum funderetur sanguis Stephani testis tui, ego astabam, et consentiebam, et custodiebam vestimenta interficientium illum.",
+        "SYN": "и когда проливалась кровь Стефана, свидетеля Твоего, я там стоял, одобрял убиение его и стерег одежды побивавших его.",
+        "NEO": "et lorsqu’on répandit le sang d’Étienne, ton témoin, j’étais moi-même présent, joignant mon approbation à celle des autres et gardant les vêtements de ceux qui le lapidaient.",
+        "NAB": "And when the blood of your witness Stephen was being shed, I myself stood by giving my approval and keeping guard over the cloaks of his murderers.'",
+        "VAT_ES": "Y saben que cuando derramaban la sangre de Esteban, tu testigo, yo también estaba presente, aprobando su muerte y cuidando la ropa de los verdugos».",
+        "CEI": "Bene; essi però sono stati tagliati a causa dell'infedeltà, mentre tu resti lì in ragione della fede. Non montare dunque in superbia, ma temi!"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Καὶ εἶπεν πρός με, Πορεύου, ὅτι ἐγὼ εἰς ἔθνη μακρὰν ἐξαποστελῶ σε.",
+        "VUL": "Et dixit ad me : Vade, quoniam ego in nationes longe mittam te.",
+        "SYN": "И Он сказал мне: иди; Я пошлю тебя далеко к язычникам.",
+        "NEO": "Alors il me dit : Va, c’est aux nations lointaines que je veux t’envoyer. »",
+        "NAB": "Then he said to me, 'Go, I shall send you far away to the Gentiles.'\"",
+        "VAT_ES": "Pero él me dijo: «Vete, porque quiero enviarte lejos, a las naciones paganas».",
+        "CEI": "Se infatti Dio non ha risparmiato quelli che erano rami naturali, tanto meno risparmierà te!"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "¶Ἤκουον δὲ αὐτοῦ ἄχρι τούτου τοῦ λόγου, καὶ ἐπῆραν τὴν φωνὴν αὐτῶν λέγοντες, Αἶρε ἀπὸ τῆς γῆς τὸν τοιοῦτον· οὐ γὰρ καθῆκεν αὐτὸν ζῇν.",
+        "VUL": "Audiebant autem eum usque ad hoc verbum, et levaverunt vocem suam, dicentes : Tolle de terra hujusmodi : non enim fas est eum vivere.",
+        "SYN": "До этого слова слушали его; а за сим подняли крик, говоря: истреби от земли такого! ибо ему не должно жить.",
+        "NEO": "Les Juifs l’avaient écouté jusqu’à ces mots ; ils élevèrent alors la voix, en disant : « Ôte de la terre un pareil homme ; il n’est pas digne de vivre. »",
+        "NAB": "They listened to him until he said this, but then they raised their voices and shouted, \"Take such a one as this away from the earth. It is not right that he should live.\"",
+        "VAT_ES": "Hasta aquí los judíos lo escucharon, pero al oír estas palabras comenzaron a gritar diciendo: «&iexcl;Elimina a este hombre. No merece vivir!».",
+        "CEI": "Considera dunque la bontà e la severità di Dio: severità verso quelli che sono caduti; bontà di Dio invece verso di te, a condizione però che tu sia fedele a questa bontà. Altrimenti anche tu verrai reciso."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Κραζόντων δὲ αὐτῶν, καὶ ῥιπτούντων τὰ ἱμάτια, καὶ κονιορτὸν βαλλόντων εἰς τὸν ἀέρα,",
+        "VUL": "Vociferantibus autem eis, et projicientibus vestimenta sua, et pulverem jactantibus in aërem,",
+        "SYN": "Между тем как они кричали, метали одежды и бросали пыль на воздух,",
+        "NEO": "Et comme ils poussaient de grands cris, jetant leurs manteaux et lançant de la poussière en l’air,+ 22:23 23. Lançant de la poussière en l’air: en signe d’indignation et de douleur. (Comp. Job, ii, 12 ; Ezéch. xxiii, 30).*",
+        "NAB": "And as they were yelling and throwing off their cloaks and flinging dust into the air,",
+        "VAT_ES": "Todos vociferaban, agitaban sus manos y tiraban tierra al aire.",
+        "CEI": "Quanto a loro, se non persevereranno nell'infedeltà, saranno anch'essi innestati; Dio infatti ha la potenza di innestarli di nuovo!"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "ἐκέλευσεν αὐτὸν ὁ χιλίαρχος ἄγεσθαι εἰς τὴν παρεμβολήν, εἰπὼν μάστιξιν ἀνετάζεσθαι αὐτόν, ἵνα ἐπιγνῷ δι’ ἣν αἰτίαν οὕτως ἐπεφώνουν αὐτῷ.",
+        "VUL": "jussit tribunus induci eum in castra, et flagellis cædi, et torqueri eum, ut sciret propter quam causam sic acclamarent ei.",
+        "SYN": "тысяченачальник повелел ввести его в крепость, приказав бичевать его, чтобы узнать, по какой причине так кричали против него.",
+        "NEO": "le tribun ordonna de faire entrer Paul dans la forteresse et de lui donner la question par le fouet, afin de savoir pour quel motif ils criaient ainsi contre lui.",
+        "NAB": "the cohort commander ordered him to be brought into the compound and gave instruction that he be interrogated under the lash to determine the reason why they were making such an outcry against him.",
+        "VAT_ES": "El tribuno hizo entrar a Pablo en la fortaleza y ordenó que lo azotaran para saber por qué razón gritaban así contra él.",
+        "CEI": "Se tu infatti sei stato reciso dall'oleastro che eri secondo la tua natura e contro natura sei stato innestato su un olivo buono, quanto più essi, che sono della medesima natura, potranno venire di nuovo innestati sul proprio olivo!"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Ὡς δὲ προέτεινεν αὐτὸν τοῖς ἱμᾶσιν, εἶπεν πρὸς τὸν ἑστῶτα ἑκατόνταρχον ὁ Παῦλος, Εἰ ἄνθρωπον Ῥωμαῖον καὶ ἀκατάκριτον ἔξεστιν ὑμῖν μαστίζειν;",
+        "VUL": "Et cum astrinxissent eum loris, dicit astanti sibi centurioni Paulus : Si hominem Romanum et indemnatum licet vobis flagellare ?",
+        "SYN": "Но когда растянули его ремнями, Павел сказал стоявшему сотнику: разве вам позволено бичевать Римского гражданина, да и без суда?",
+        "NEO": "Déjà les soldats l’avaient lié avec les courroies,+ 22:25 25. Les soldats l’avaient lié: litt. \\+qt l’avaient courbé en avant avec les lanières\\+qt*, pour l’attacher à la colonne basse qui servait à la flagellation.* lorsque Paul dit au centurion qui était là : « Vous est-il permis de flageller un citoyen romain, qui n’est pas même condamné ? »",
+        "NAB": "But when they had stretched him out for the whips, Paul said to the centurion on duty, \"Is it lawful for you to scourge a man who is a Roman citizen and has not been tried?\"",
+        "VAT_ES": "Cuando lo sujetaron con las correas, Pablo dijo al centurión de turno: «&iquest;Les está permitido azotar a un ciudadano romano sin haberlo juzgado?».",
+        "CEI": "Non voglio infatti che ignoriate, fratelli, questo mistero, perché non siate presuntuosi: l'indurimento di una parte di Israele è in atto fino a che saranno entrate tutte le genti."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Ἀκούσας δὲ ὁ ἑκατόνταρχος, προσελθὼν ἀπήγγειλεν τῷ χιλιάρχῳ λέγων, Ὅρα τί μέλλεις ποιεῖν· ὁ γὰρ ἄνθρωπος οὗτος Ῥωμαῖός ἐστιν.",
+        "VUL": "Quo audito, centurio accessit ad tribunum, et nuntiavit ei, dicens : Quid acturus es ? hic enim homo civis Romanus est.",
+        "SYN": "Услышав это, сотник подошел и донес тысяченачальнику, говоря: смотри, что ты хочешь делать? этот человек -- Римский гражданин.",
+        "NEO": "À ces mots, le centurion alla trouver le tribun pour l’avertir, et lui dit : « Que vas-tu faire ? Cet homme est citoyen romain. »",
+        "NAB": "When the centurion heard this, he went to the cohort commander and reported it, saying, \"What are you going to do? This man is a Roman citizen.\"",
+        "VAT_ES": "Al oír estas palabras, el centurión fui a informar al tribuno: «&iquest;Qué va a hacer?, le dijo. Este hombre es ciudadano romano».",
+        "CEI": "Allora tutto Israele sarà salvato come sta scritto: Da Sion uscirà il liberatore, egli toglierà le empietà da Giacobbe."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Προσελθὼν δὲ ὁ χιλίαρχος εἶπεν αὐτῷ, Λέγε μοι, εἰ σὺ Ῥωμαῖος εἶ; Ὁ δὲ ἔφη, Ναί.",
+        "VUL": "Accedens autem tribunus, dixit illi : Dic mihi si tu Romanus es ? At ille dixit : Etiam.",
+        "SYN": "Тогда тысяченачальник, подойдя к нему, сказал: скажи мне, ты Римский гражданин? Он сказал: да.",
+        "NEO": "Le tribun vint et dit à Paul : « Dis-moi, es-tu citoyen romain ? » « Oui, » répondit-il ;",
+        "NAB": "Then the commander came and said to him, \"Tell me, are you a Roman citizen?\" \"Yes,\" he answered.",
+        "VAT_ES": "El tribuno fue a preguntar a Pablo: «&iquest;Tú eres ciudadano romano?». Y él le respondió: «Sí».",
+        "CEI": "Sarà questa la mia alleanza con loro quando distruggerò i loro peccati."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Ἀπεκρίθη τε ὁ χιλίαρχος, Ἐγὼ πολλοῦ κεφαλαίου τὴν πολιτείαν ταύτην ἐκτησάμην. Ὁ δὲ Παῦλος ἔφη, Ἐγὼ δὲ καὶ γεγέννημαι.",
+        "VUL": "Et respondit tribunus : Ego multa summa civilitatem hanc consecutus sum. Et Paulus ait : Ego autem et natus sum.",
+        "SYN": "Тысяченачальник отвечал: я за большие деньги приобрел это гражданство. Павел же сказал: а я и родился в нем.",
+        "NEO": "et le tribun repris : « Moi, j’ai acheté bien cher ce droit de cité. » — « Et moi, dit Paul, je l’ai par ma naissance. »",
+        "NAB": "The commander replied, \"I acquired this citizenship for a large sum of money.\" Paul said, \"But I was born one.\"",
+        "VAT_ES": "El tribuno prosiguió: «A mí me costó mucho dinero adquirir esa ciudadanía». «En cambio, yo la tengo de nacimiento», dijo Pablo.",
+        "CEI": "Quanto al vangelo, essi sono nemici, per vostro vantaggio; ma quanto alla elezione, sono amati, a causa dei padri,"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Εὐθέως οὖν ἀπέστησαν ἀπ’ αὐτοῦ οἱ μέλλοντες αὐτὸν ἀνετάζειν. Καὶ ὁ χιλίαρχος δὲ ἐφοβήθη, ἐπιγνοὺς ὅτι Ῥωμαῖός ἐστιν, καὶ ὅτι ἦν αὐτὸν δεδεκώς.",
+        "VUL": "Protinus ergo discesserunt ab illo qui eum torturi erant. Tribunus quoque timuit postquam rescivit, quia civis Romanus esset, et quia alligasset eum.",
+        "SYN": "Тогда тотчас отступили от него хотевшие пытать его. А тысяченачальник, узнав, что он Римский гражданин, испугался, что связал его.",
+        "NEO": "Aussitôt ceux qui se disposaient à lui donner la question se retirèrent ; et le tribun aussi eut peur, quand il sut que Paul était citoyen* romain et qu’il l’avait fait lier.",
+        "NAB": "At once those who were going to interrogate him backed away from him, and the commander became alarmed when he realized that he was a Roman citizen and that he had had him bound.",
+        "VAT_ES": "Inmediatamente, se retiraron los que iban a azotarlo, y el tribunal se alarmó al enterarse de que había hecho encadenar a un ciudadano romano.",
+        "CEI": "perché i doni e la chiamata di Dio sono irrevocabili!"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "¶Τῇ δὲ ἐπαύριον βουλόμενος γνῶναι τὸ ἀσφαλές, τὸ τί κατηγορεῖται παρὰ τῶν Ἰουδαίων, ἔλυσεν αὐτὸν ἀπὸ τῶν δεσμῶν, καὶ ἐκέλευσεν ἐλθεῖν τοὺς ἀρχιερεῖς καὶ ὅλον τὸ συνέδριον αὐτῶν, καὶ καταγαγὼν τὸν Παῦλον ἔστησεν εἰς αὐτούς.",
+        "VUL": "Postera autem die volens scire diligentius qua ex causa accusaretur a Judæis, solvit eum, et jussit sacerdotes convenire, et omne concilium : et producens Paulum, statuit inter illos.",
+        "SYN": "На другой день, желая достоверно узнать, в чем обвиняют его Иудеи, освободил его от оков и повелел собраться первосвященникам и всему синедриону и, выведя Павла, поставил его перед ними.",
+        "NEO": "Le lendemain, voulant savoir exactement de quoi les Juifs l’accusaient, il lui fit ôter ses liens, et donna l’ordre aux princes des prêtres et à tout le Sanhédrin de se réunir ; puis, ayant fait descendre Paul, il le plaça au milieu d’eux.",
+        "NAB": "The next day, wishing to determine the truth about why he was being accused by the Jews, he freed him and ordered the chief priests and the whole Sanhedrin to convene. Then he brought Paul down and made him stand before them.",
+        "VAT_ES": "Al día siguiente, queriendo saber con exactitud de qué lo acusaban los judíos, el tribuno le hizo sacar las cadenas, y convocando a los sumos sacerdotes y a todo el Sanedrín, hizo comparecer a Pablo delante de ellos.",
+        "CEI": "Come voi un tempo siete stati disobbedienti a Dio e ora avete ottenuto misericordia per la loro disobbedienza,"
+      }
+    }
+  }
+}

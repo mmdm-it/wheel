@@ -1,0 +1,474 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_023",
+  "book_key": "ECCLU",
+  "sequence": 23,
+  "chapter_in": {
+    "MT": 23,
+    "VUL": 23,
+    "LXX": 23
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Κύριε, πάτερ καὶ δέσποτα ζωῆς μου, μὴ ἐγκαταλίπῃς με ἐν βουλῇ αὐτῶν, μὴ ἀφῇς με πεσεῖν ἐν αὐτοῖς.",
+        "VUL": "[Domine, pater et dominator vitæ meæ,/ ne derelinquas me in consilio eorum,/ nec sinas me cadere in illis./",
+        "SYN": "Господи, Отче и Владыко жизни моей! Не оставь меня на волю их и не допусти меня пасть чрез них.",
+        "NEO": "Seigneur, Père et souverain Maître de ma vie, ne m’abandonnez pas au conseil de mes lèvres, et ne permettez pas que j’y trouve une occasion de chute.",
+        "NAB": "LORD, Father and Master of my life, permit me not to fall by them!",
+        "VAT_ES": "&iexcl;Señor, Padre y Dueño de mi vida, no me abandones al capricho de mis labios ni me dejes caer por culpa de ellos!",
+        "CEI": "Signore, padre e padrone della mia vita, non abbandonarmi al loro volere, non lasciarmi cadere a causa loro."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "τίς ἐπιστήσει ἐπὶ τοῦ διανοήματός μου μάστιγας. καὶ ἐπὶ τῆς καρδίας μου παιδείαν σοφίας, ἵνα ἐπὶ τοῖς ἀγνοήμασίν μου μὴ φείσωνται, καὶ οὐ μὴ παρῇ τὰ ἁμαρτήματα αὐτῶν·",
+        "VUL": "Quis superponet in cogitatu meo flagella,/ et in corde meo doctrinam sapientiæ,/ ut ignorationibus eorum non parcant mihi,/ et non appareant delicta eorum,/",
+        "SYN": "Кто приставит бич к помышлениям моим и к сердцу моему наставника в мудрости, чтобы они не щадили проступков моих и не потворствовали заблуждениям их;",
+        "NEO": "Qui fera sentir le fouet à mes pensées, et la discipline de la sagesse à mon cœur, pour ne pas m’épargner dans mes folies, et ne pas laisser un libre cours à mes péchés :",
+        "NAB": "Who will apply the lash to my thoughts, to my mind the rod of discipline, That my failings may not be spared, nor the sins of my heart overlooked;",
+        "VAT_ES": "&iquest;Quién aplicará el látigo a mi pensamiento, y a mi corazón, la disciplina de la sabiduría, para que no se perdonen mis errores ni se pasen por alto mis pecados?",
+        "CEI": "Chi applicherà la frusta ai miei pensieri, al mio cuore la disciplina della sapienza? Perché non siano risparmiati i miei errori e i miei peccati non restino impuniti,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ὅπως μὴ πληθύνωσιν αἱ ἄγνοιαί μου, καὶ αἱ ἁμαρτίαι μου πλεονάσωσιν, καὶ πεσοῦμαι ἔναντι τῶν ὑπεναντίων, καὶ ἐπιχαρεῖταί μοι ὁ ἐχθρός μου;",
+        "VUL": "et ne adincrescant ignorantiæ meæ,/ et multiplicentur delicta mea,/ et peccata mea abundent,/ et incidam in conspectu adversariorum meorum,/ et gaudeat super me inimicus meus ?/",
+        "SYN": "чтобы не умножались проступки мои и не увеличивались заблуждения мои; чтобы не упасть мне пред противниками, и чтобы не порадовался надо мною враг мой?",
+        "NEO": "de peur que mes folies ne s’accroissent, que mes péchés ne se multiplient, que je ne tombe en présence de mes adversaires, et que mon ennemi ne se réjouisse à mon sujet ?",
+        "NAB": "Lest my failings increase, and my sins be multiplied; Lest I succumb to my foes, and my enemy rejoice over me?",
+        "VAT_ES": "Así no se multiplicarán mis errores ni se sobreabundarán mis pecados, ni caeré ante mis adversarios, ni mi enemigo se burlará de mí.",
+        "CEI": "perché non si moltiplichino i miei errori e non aumentino di numero i miei peccati, io non cada davanti ai miei avversari e il nemico non gioisca sul mio conto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "Κύριε, πάτερ καὶ θεὲ ζωῆς μου, μετεωρισμὸν ὀφθαλμῶν μὴ δῷς μοι,",
+        "VUL": "Domine, pater et Deus vitæ meæ,/ ne derelinquas me in cogitatu illorum./",
+        "SYN": "Господи, Отче и Боже жизни моей! Не дай мне возношения очей и вожделение отврати от меня.",
+        "NEO": "Seigneur, Père et Dieu de ma vie, ne me donnez pas la licence des yeux,",
+        "NAB": "LORD, Father and God of my life, abandon me not into their control!",
+        "VAT_ES": "Señor. Padre y Dios de mi vida, no me des unos ojos altaneros",
+        "CEI": "Signore, padre e Dio della mia vita, non mettermi in balìa di sguardi sfrontati"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "καὶ ἐπιθυμίαν ἀπόστρεψον ἀπ’ ἐμοῦ·",
+        "VUL": "Extollentiam oculorum meorum ne dederis mihi,/ et omne desiderium averte a me./",
+        "SYN": "Пожелания чрева и сладострастие да не овладеют мною, и не предай меня бесстыдной душе.",
+        "NEO": "et détournez de moi les désirs mauvais.",
+        "NAB": "A brazen look allow me not; ward off passion from my heart,",
+        "VAT_ES": "y aparta de mí los malos deseos.",
+        "CEI": "e allontana da me la concupiscenza."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "κοιλίας ὄρεξις καὶ συνουσιασμὸς μὴ καταλαβέτωσάν με, καὶ ψυχῇ ἀναιδεῖ μὴ παραδῷς με.",
+        "VUL": "Aufer a me ventris concupiscentias,/ et concubitus concupiscentiæ ne apprehendant me,/ et animæ irreverenti et infrunitæ ne tradas me.]",
+        "SYN": "Выслушайте, дети, наставление для уст: соблюдающий его не будет уловлен своими устами.",
+        "NEO": "Que les désirs de la chair et la volupté ne s’emparent pas de moi, et ne me livrez pas à une âme sans pudeur.",
+        "NAB": "Let not the lustful cravings of the flesh master me, surrender me not to shameless desires.",
+        "VAT_ES": "&iexcl;Que la sensualidad y la lujuria no me dominen, no me entregues a las pasiones vergonzosas!",
+        "CEI": "Sensualità e libidine non s'impadroniscano di me; a desideri vergognosi non mi abbandonare."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "Παιδεία στόματος. Παιδείαν στόματος ἀκούσατε, τέκνα, καὶ ὁ φυλάσσων οὐ μὴ ἁλῷ· ἐν τοῖς χείλεσιν αὐτοῦ",
+        "VUL": "[Doctrinam oris audite, filii :/ et qui custodierit illam non periet labiis,/ nec scandalizabitur in operibus nequissimis./",
+        "SYN": "Уловлен будет ими грешник, и злоречивый и надменный преткнутся чрез них.",
+        "NEO": "Mes enfants, écoutez la discipline de la bouche ; celui qui l’observera ne sera pas pris.",
+        "NAB": "Give heed, my children, to the instruction that I pronounce, for he who keeps it will not be enslaved.",
+        "VAT_ES": "Escuchen, hijos, cómo se educa la lengua: el que observe esto no caerá en el lazo.",
+        "CEI": "Figli, ascoltate l'educazione della bocca, chi l'osserva non si perderà."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "καταλειφθήσεται ἁμαρτωλὸς καὶ λοίδορος καὶ ὑπερήφανος· σκανδαλισθήσονται ἐν αὐτοῖς.",
+        "VUL": "In vanitate sua apprehenditur peccator :/ et superbus et maledicus scandalizabitur in illis./",
+        "SYN": "Не приучай уст твоих к клятве",
+        "NEO": "Par ses lèvres le pécheur sera pris ; le médisant et l’insolent y trouveront une occasion de chute.",
+        "NAB": "Through his lips is the sinner ensnared; the railer and the arrogant man fall thereby.",
+        "VAT_ES": "El pecador se enreda en sus propias palabras, el maldiciente y el soberbio caen a causa de ellas.",
+        "CEI": "Il peccatore è vittima delle proprie labbra, il maldicente e il superbo vi trovano inciampo."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "ὅρκῳ μὴ ἐθίσῃς τὸ στόμα σου, καὶ ὀνομασίᾳ τοῦ ἁγίου μὴ συνεθισθῇς.",
+        "VUL": "Jurationi non assuescat os tuum :/ multi enim casus in illa./",
+        "SYN": "и не обращай в привычку употреблять в клятве имя Святаго.",
+        "NEO": "N’accoutume pas ta bouche à faire des serments, et ne prends pas l’habitude de prononcer le nom du Saint.",
+        "NAB": "Let not your mouth form the habit of swearing, or becoming too familiar with the Holy Name.",
+        "VAT_ES": "No acostumbres tu boca a jurar ni te habitúes a pronunciar el nombre del Santo.",
+        "CEI": "Non abituare la bocca al giuramento, non abituarti a nominare il nome del Santo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ὥσπερ γὰρ οἰκέτης ἐξεταζόμενος ἐνδελεχῶς ἀπὸ μώλωπος οὐκ ἐλαττωθήσεται, οὕτως καὶ ὁ ὀμνύων καὶ ὀνομάζων διὰ παντὸς ἀπὸ ἁμαρτίας οὐ μὴ καθαρισθῇ.",
+        "VUL": "Nominatio vero Dei non sit assidua in ore tuo,/ et nominibus sanctorum non admiscearis,/ quoniam non eris immunis ab eis./",
+        "SYN": "Ибо, как раб, постоянно подвергающийся наказанию, не избавляется от ран, так и клянущийся непрестанно именем Святаго не очистится от греха.",
+        "NEO": "Car, comme un esclave mis souvent à la torture ne saurait être exempt de meurtrissures, ainsi celui qui fait serment et prononce sans cesse le nom du Saint, ne sera pas pur du péché.",
+        "NAB": "Just as a slave that is constantly under scrutiny will not be without welts, So one who swears continually by the Holy Name will not remain free from sin.",
+        "VAT_ES": "Así como el servidor vigilado constantemente nunca se libra de algún golpe, así el que jura y pronuncia el Nombre en todo momento no quedará limpio de pecado.",
+        "CEI": "Come uno schiavo interrogato di continuo non sarà senza lividure, così chi giura e ha sempre in bocca Dio non sarà esente da peccato."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἀνὴρ πολύορκος πλησθήσεται ἀνομίας, καὶ οὐκ ἀποστήσεται ἀπὸ τοῦ οἴκου αὐτοῦ μάστιξ· ἐὰν πλημμελήσῃ, ἁμαρτία αὐτοῦ ἐπ’ αὐτῷ, κἄν ὑπερίδῃ, ἥμαρτεν δισσῶς· καὶ εἰ διὰ κενῆς ὤμοσεν, οὐ δικαιωθήσεται, πλησθήσεται γὰρ ἐπαγωγῶν ὁ οἶκος αὐτοῦ.",
+        "VUL": "Sicut enim servus interrogatus assidue a livore non minuitur,/ sic omnis jurans et nominans in toto a peccato non purgabitur./",
+        "SYN": "Человек, часто клянущийся, исполнится беззакония, и не отступит от дома его бич.",
+        "NEO": "L’homme qui fait beaucoup de serments multiplie l’iniquité, et le fouet ne s’éloignera pas de sa maison. S’il s’est rendu coupable, son péché est sur lui ; s’il n’y fait pas attention, son péché est double. S’il a fait un faux serment, il ne sera pas absous, car sa maison sera remplie de châtiments.",
+        "NAB": "A man who often swears heaps up obligations; the scourge will never be far from his house. If he swears in error, he incurs guilt; if he neglects his obligation, his sin is doubly great. If he swears without reason he cannot be found just, and all his house will suffer affliction.",
+        "VAT_ES": "El que jura constantemente está lleno de iniquidad y el flagelo no se apartará de su casa. Si falta a su juramento, incurre en pecado; si lo menosprecia, peca doblemente; si juró en vano, no tendrá justificación y su casa se llenará de desgracias.",
+        "CEI": "Un uomo dai molti giuramenti si riempie di iniquità; il flagello non si allontanerà dalla sua casa. Se cade in fallo, il suo peccato è su di lui; se non ne tiene conto, pecca due volte. Se giura il falso non sarà giustificato, la sua casa si riempirà di sventure."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "ἔστιν λέξις ἀντιπεριβεβλημένη θανάτῳ, μὴ εὑρεθήτω ἐν κληρονομίᾳ Ἰακώβ· ἀπὸ γὰρ εὐσεβῶν ταῦτα πάντα ἀποστήσεται, καὶ ἐν ἁμαρτίαις οὐκ ἐνκυλισθήσονται.",
+        "VUL": "Vir multum jurans implebitur iniquitate,/ et non discedet a domo illius plaga./",
+        "SYN": "Если он согрешит, грех его на нем; и если он вознерадел, то сугубо согрешит;",
+        "NEO": "Il y a des paroles qui appellent la mort : qu’elles ne se rencontrent pas dans l’héritage de Jacob ! Tout cela est éloigné des hommes pieux ; ils ne s’engagent pas dans ces péchés.",
+        "NAB": "There are words which merit death; may they never be heard among Jacob's heirs. For all such words are foreign to the devout, who do not wallow in sin.",
+        "VAT_ES": "Hay un lenguaje comparable a la muerte: &iexcl;que no se lo encuentre en la herencia de Jacob! Los hombres buenos están alejados de todas esas cosas: &iexcl;que ellos no se revuelquen en los pecados!",
+        "CEI": "C'è un modo di parlare che si può paragonare alla morte; non si trovi nella discendenza di Giacobbe. Dagli uomini pii tutto ciò sia respinto, così non si rotoleranno nei peccati."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "ἀπαιδευσίαν ἀσυρῆ μὴ συνεθίσῃς τὸ στόμα σου· ἔστιν γὰρ ἐν αὐτῇ λόγος ἁμαρτίας.",
+        "VUL": "Et si frustraverit, delictum illius super ipsum erit :/ et si dissimulaverit, delinquit dupliciter :/",
+        "SYN": "и если он клялся напрасно, то не оправдается, и дом его наполнится несчастьями.",
+        "NEO": "N’accoutume pas ta bouche à une vile grossièreté, car elle inspire des paroles coupables.",
+        "NAB": "Let not your mouth become used to coarse talk, for in it lies sinful matter.",
+        "VAT_ES": "No acostumbres tu boca a decir groserías, porque al decirlas se peca con la palabra.",
+        "CEI": "La tua bocca non si abitui a volgarità grossolane, in esse infatti c'è motivo di peccato."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "μνήσθητι πατρὸς καὶ μητρός σου, ἀνὰ μέσον γὰρ μεγιστάνων συνεδρεύει· μή ποτε ἐπιλάθῃ ἐνώπιον αὐτῶν, καὶ τῷ ἐθισμῷ σου μωρανθῇς, καὶ θελήσεις εἰ μὴ ἐγεννήθης, καὶ τὴν ἡμέραν τοῦ τοκετοῦ σου μὴ καταράσῃ.",
+        "VUL": "et si in vacuum juraverit, non justificabitur :/ replebitur enim retributione domus illius./",
+        "SYN": "Есть речь, облеченная смертью: да не найдется она в наследии Иакова!",
+        "NEO": "Souviens-toi de ton père et de ta mère, quand tu sièges au milieu des grands, de peur que, les oubliant en leur présence, tu ne fasses des sottises par l’effet de l’habitude, et que tu n’en viennes à souhaiter de n’être pas né, et à maudire le jour de ta naissance.",
+        "NAB": "Keep your father and mother in mind when you sit among the mighty, Lest in their presence you commit a blunder and disgrace your upbringing, By wishing you had never been born or cursing the day of your birth.",
+        "VAT_ES": "Acuérdate de tu padre y de tu madre, cuando te sientes en medio de los grandes, no sea que los olvides en presencia de ellos y te comportes como un necio. Porque entonces preferirías no haber nacido y maldecirías el día de tu nacimiento.",
+        "CEI": "Ricorda tuo padre e tua madre, quando siedi tra i grandi, non dimenticarli mai davanti a costoro, e per abitudine non dire sciocchezze; potresti desiderare di non essere nato e maledire il giorno della tua nascita."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ἄνθρωπος συνεθιζόμενος λόγοις ὀνειδισμοῦ ἐν πάσαις ταῖς ἡμέραις αὐτοῦ οὐ μὴ παιδευθῇ.",
+        "VUL": "Est et alia loquela contraria morti :/ non inveniatur in hæreditate Jacob./",
+        "SYN": "Ибо от благочестивых все это будет удалено, и они не запутаются во грехах.",
+        "NEO": "Un homme qui s’habitue à un langage grossier ne parviendra jamais à la sagesse.",
+        "NAB": "A man who has the habit of abusive language will never mature in character as long as he lives.",
+        "VAT_ES": "Un hombre habituado a las palabras injuriosas no podrá ser corregido en toda su vida.",
+        "CEI": "Un uomo abituato a discorsi ingiuriosi non si correggerà in tutta la sua vita."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "Δύο εἴδη πληθύνουσιν ἁμαρτίας, καὶ τὸ τρίτον ἐπάξει ὀργήν· ψυχὴ θερμὴ ὡς πῦρ καιόμενον, οὐ μὴ σβεσθῇ ἕως ἂν καταποθῇ· ἄνθρωπος πόρνος ἐν σώματι σαρκὸς αὐτοῦ, οὐ μὴ παύσηται ἕως ἂν ἐκκαύσῃ πῦρ·",
+        "VUL": "Etenim a misericordibus omnia hæc auferentur,/ et in delictis non volutabuntur./",
+        "SYN": "Не приучай твоих уст к грубой невежливости, ибо при ней бывают греховные слова.",
+        "NEO": "Deux sortes d’hommes multiplient les péchés, et la troisième attire la colère. L’homme que brûle la passion, comme un feu ardent, ne s’éteindra pas jusqu’à ce qu’il soit consumé. L’homme impudique en sa propre chair ne cessera pas jusqu’à ce que le feu soit allumé.",
+        "NAB": "Two types of men multiply sins, a third draws down wrath; For burning passion is a blazing fire, not to be quenched till it burns itself out: A man given to sins of the flesh, who never stops until the fire breaks forth;",
+        "VAT_ES": "Dos clases de hombres multiplican los pecados y una tercera atrae la ira:",
+        "CEI": "Due specie di colpe moltiplicano i peccati, la terza provoca l'ira:"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "ἀνθρώπῳ πόρνῳ πᾶς ἄρτος ἡδύς, οὐ μὴ κοπάσῃ ἕως ἂν τελευτήσῃ·",
+        "VUL": "Indisciplinatæ loquelæ non assuescat os tuum :/ est enim in illa verbum peccati./",
+        "SYN": "Помни об отце и о матери твоей, когда сидишь среди вельмож,",
+        "NEO": "Au voluptueux tout pain est doux ; il ne s’arrêtera pas qu’il ne soit mort.",
+        "NAB": "The rake to whom all bread is sweet and who is never through till he dies;",
+        "VAT_ES": "una pasión encendida como el fuego ardiente no cesará hasta que el fuego lo abrase; para el lujurioso toda comida es dulce, y no se calmará hasta que haya muerto.",
+        "CEI": "una passione ardente come fuoco acceso non si calmerà finché non sarà consumata; un uomo impudico nel suo corpo non smetterà finché non lo divori il fuoco; per l'uomo impuro ogni pane è appetitoso, non si stancherà finché non muoia."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "ἄνθρωπος παραβαίνων ἀπὸ τῆς κλίνης αὐτοῦ, λέγων ἐν τῇ ψυχῇ αὐτοῦ Τίς με ὁρᾷ; σκότος κύκλῳ μου, καὶ οἱ τοῖχοί με καλύπτουσιν, καὶ οὐθείς με ὁρᾷ, τί εὐλαβοῦμαι; τῶν ἁμαρτιῶν μου οὐ μὴ μνησθήσεται ὁ ὕψιστος.",
+        "VUL": "Memento patris et matris tuæ :/ in medio enim magnatorum consistis :/",
+        "SYN": "чтобы тебе не забыться пред ними и по привычке не сделать глупости, и не пожелать, что лучше бы ты не родился, и не проклясть дня рождения твоего.",
+        "NEO": "L’homme qui quitte la couche conjugale dit dans son cœur : « Qui me voit ? Les ténèbres m’environnent, les murailles me cachent, et personne ne m’aperçoit : que craindrais-je ? Le Très-Haut ne se souviendra pas de mes péchés ». —",
+        "NAB": "And the man who dishonors his marriage bed and says to himself \"Who can see me? Darkness surrounds me, walls hide me; no one sees me; why should I fear to sin?\" Of the Most High he is not mindful,",
+        "VAT_ES": "El hombre que peca contra su propio lecho dice en su corazón: «&iquest;Quién me ve? La oscuridad me rodea y los muros me cubren nadie me ve: &iquest;qué puedo temer? El Altísimo no se acordará de mis pecados».",
+        "CEI": "L'uomo infedele al proprio letto dice fra sé: \"Chi mi vede? Tenebra intorno a me e le mura mi nascondono; nessuno mi vede, che devo temere? Dei miei peccati non si ricorderà l'Altissimo\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "καὶ ὀφθαλμοὶ ἀνθρώπων ὁ φόβος αὐτοῦ, καὶ οὐκ ἔγνω ὅτι ὀφθαλμοὶ Κυρίου μυριοπλασίως ἡλίου φωτεινότεροι, ἐπιβλέποντες πάσας ὁδοὺς ἀνθρώπων καὶ κατανοοῦντες εἰς ἀπόκρυφα μέρη.",
+        "VUL": "ne forte obliviscatur te Deus in conspectu illorum,/ et assiduitate tua infatuatus, improperium patiaris,/ et maluisses non nasci,/ et diem nativitatis tuæ maledicas./",
+        "SYN": "Человек, привыкающий к бранным словам, во все дни свои не научится.",
+        "NEO": "Les yeux des hommes sont sa crainte, et il ne sait pas que les yeux du Seigneur sont mille fois plus brillants que le soleil ; qu’ils regardent toutes les voies de l’homme, et pénètrent jusque dans les lieux cachés !",
+        "NAB": "fearing only the eyes of men; He does not understand that the eyes of the LORD, ten thousand times brighter than the sun, Observe every step a man takes and peer into hidden corners.",
+        "VAT_ES": "Lo que él teme son los ojos de los hombres, y no sabe que los ojos del Señor son diez mil veces más luminosos que el sol, que observan todos los caminos de los hombres y penetran en los rincones más ocultos.",
+        "CEI": "Il suo timore riguarda solo gli occhi degli uomini; non sa che gli occhi del Signore sono miriadi di volte più luminosi del sole; essi vedono tutte le azioni degli uomini e penetrano fin nei luoghi più segreti."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "πρὶν ἢ κτισθῆναι τὰ πάντα ἔγνωσται αὐτῷ, οὕτως καὶ μετὰ τὸ συντελεσθῆναι.",
+        "VUL": "Homo assuetus in verbis improperii/ in omnibus diebus suis non erudietur.]",
+        "SYN": "Два качества умножают грехи, а третье навлекает гнев:",
+        "NEO": "Avant d’être créées, toutes choses sont connues du Seigneur, elles le sont encore après leur achèvement.",
+        "NAB": "He who knows all things before they exist still knows them all after they are made.",
+        "VAT_ES": "Antes de ser creadas, todas las cosas le eran conocidas, y lo son asimismo una vez acabadas.",
+        "CEI": "Tutte le cose, prima che fossero create, gli erano note; allo stesso modo anche dopo la creazione."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "οὗτος ἐν πλατείαις πόλεως ἐκδικηθήσεται, καὶ οὗ οὐχ ὑπενόησεν πιασθήσεται.",
+        "VUL": "[Duo genera abundant in peccatis,/ et tertium adducit iram et perditionem./",
+        "SYN": "душа горячая, как пылающий огонь, не угаснет, пока не истощится;",
+        "NEO": "L’adultère sera puni dans les rues de la ville, et, là où il ne s’y attendait pas, il sera pris.",
+        "NAB": "Such a man will be punished in the streets of the city; when he least expects it, he will be apprehended.",
+        "VAT_ES": "Ese hombre será castigo en las plazas de la ciudad, será apresado donde menos lo esperaba.",
+        "CEI": "Quest'uomo sarà punito nelle piazze della città, sarà preso dove meno se l'aspetta."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "οὕτως καὶ γυνὴ καταλιποῦσα τὸν ἄνδρα καὶ παριστῶσα κληρονόμον ἐξ ἀλλοτρίου·",
+        "VUL": "Anima calida quasi ignis ardens,/ non extinguetur donec aliquid glutiat :/",
+        "SYN": "человек, блудодействующий в теле плоти своей, не перестанет, пока не прогорит огонь.",
+        "NEO": "Il en est de même de la femme qui a abandonné son mari, et donné un hériter d’une union étrangère.",
+        "NAB": "So also with the woman who is unfaithful to her husband and offers as heir her son by a stranger.",
+        "VAT_ES": "Así también, la mujer que abandona a su marido y le da un heredero nacido de un extraño.",
+        "CEI": "Così della donna che abbandona suo marito, e gli presenta eredi avuti da un estraneo."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "πρῶτον μὲν γὰρ ἐν νόμῳ Ὑψίστου ἠπείθησεν, καὶ δεύτερον εἰς ἄνδρα ἑαυτῆς ἐπλημμέλησεν· καὶ τὸ τρίτον ἐν πορνείᾳ ἐμοιχεύθη, ἐξ ἀλλοτρίου ἀνδρὸς τέκνα παρέστησεν.",
+        "VUL": "et homo nequam in ore carnis suæ/ non desinet donec incendat ignem./",
+        "SYN": "Блуднику сладок всякий хлеб: он не перестанет, доколе не умрет.",
+        "NEO": "Car d’abord elle a désobéi à la loi du Très-Haut : en deuxième lieu, elle a péché envers son mari, et en troisième lieu, elle a commis un adultère, et donné des enfants d’un sang étranger.",
+        "NAB": "First, she has disobeyed the law of the Most High; secondly, she has wronged her husband; Thirdly, in her wanton adultery she has borne children by another man.",
+        "VAT_ES": "Porque, primero, ha desobedecido la Ley del Señor; segundo, ha faltado contra su marido; tercero, se ha prostituido con su adulterio, teniendo hijos con un hombre extraño",
+        "CEI": "Prima di tutto ha disobbedito alle leggi dell'Altissimo, in secondo luogo ha commesso un torto verso il marito, in terzo luogo si è macchiata di adulterio e ha introdotto in casa figli di un estraneo."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "αὕτη εἰς ἐκκλησίαν ἐξαχθήσεται, καὶ ἐπὶ τὰ τέκνα αὐτῆς ἐπισκοπὴ ἔσται·",
+        "VUL": "Homini fornicario omnis panis dulcis :/ non fatigabitur transgrediens usque ad finem./",
+        "SYN": "Человек, который согрешает против своего ложа, говорит в душе своей: \"кто видит меня?",
+        "NEO": "Elle sera amenée devant l’assemblée, et le châtiment visitera ses enfants.",
+        "NAB": "Such a woman will be dragged before the assembly, and her punishment will extend to her children;",
+        "VAT_ES": "Ella será llevada a la asamblea y el castigo recaerá sobre sus hijos.",
+        "CEI": "Costei sarà trascinata davanti all'assemblea e si procederà a un'inchiesta sui suoi figli."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "οὐ διαδώσουσιν τὰ τέκνα αὐτῆς εἰς ῥίζαν, καὶ οἱ κλάδοι αὐτῆς οὐ δώσουσιν καρπόν·",
+        "VUL": "Omnis homo qui transgreditur lectum suum,/ contemnens in animam suam, et dicens : Quis me videt ?/",
+        "SYN": "Вокруг меня тьма, и стены закрывают меня, и никто не видит меня: чего мне бояться? Всевышний не воспомянет грехов моих\".",
+        "NEO": "Ses enfants ne pousseront pas de racines, et ses branches ne porteront pas de fruits.",
+        "NAB": "Her children will not take root; her branches will not bring forth fruit.",
+        "VAT_ES": "Sus hijos no echarán raíces y sus ramas no producirán fruto.",
+        "CEI": "I suoi figli non avranno radici, i suoi rami non porteranno frutto."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "καταλείψει εἰς κατάραν τὸ μνημόσυνον αὐτῆς, καὶ τὸ ὄνειδος αὐτῆς οὐκ ἐξαλειφθήσεται·",
+        "VUL": "Tenebræ circumdant me, et parietes cooperiunt me,/ et nemo circumspicit me : quem vereor ?/ delictorum meorum non memorabitur Altissimus./",
+        "SYN": "Страх его - только глаза человеческие,",
+        "NEO": "Elle laissera une mémoire vouée à la malédiction, et son infamie ne s’effacera jamais.",
+        "NAB": "She will leave an accursed memory; her disgrace will never be blotted out.",
+        "VAT_ES": "Ella dejará su recuerdo para una maldición y su infamia no se borrará.",
+        "CEI": "Lascerà il suo ricordo in maledizione, la sua infamia non sarà cancellata."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "καὶ ἐπιγνώσονται οἱ καταλειφθέντες ὅτι οὐθὲν κρεῖττον φόβου Κυρίου, καὶ οὐθὲν γλυκύτερον τοῦ προσέχειν ἐντολαῖς Κυρίου.",
+        "VUL": "Et non intelligit quoniam omnia videt oculus illius,/ quoniam expellit a se timorem Dei hujusmodi hominis timor,/ et oculi hominum timentes illum :/",
+        "SYN": "и не знает он того, что очи Господа в десять тысяч крат светлее солнца,",
+        "NEO": "Et les survivants sauront qu’il n’y a rien de meilleur que la crainte du Seigneur, rien de plus doux que d’observer ses commandements. [C’est une grande gloire que de suivre le Seigneur ; s’attacher à lui, c’est la longueur des jours].",
+        "NAB": "Thus all who dwell on the earth shall know, and all who inhabit the world shall understand, That nothing is better than the fear of the LORD, nothing more salutary than to obey his commandments.",
+        "VAT_ES": "Así sabrán los que vengan después que no hay nada mejor que el temor del Señor ni nada más dulce que obedecer sus mandamientos.",
+        "CEI": "I superstiti sapranno che nulla è meglio del timore del Signore, nulla più dolce dell'osservare i suoi comandamenti."
+      }
+    }
+  }
+}

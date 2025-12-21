@@ -1,0 +1,699 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_036",
+  "book_key": "EXO",
+  "sequence": 36,
+  "chapter_in": {
+    "MT": 36,
+    "VUL": 36,
+    "LXX": 36
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/עָשָׂה֩ בְצַלְאֵ֨ל וְ/אָהֳלִיאָ֜ב וְ/כֹ֣ל אִ֣ישׁ חֲכַם לֵ֗ב אֲשֶׁר֩ נָתַ֨ן יְהוָ֜ה חָכְמָ֤ה וּ/תְבוּנָה֙ בָּ/הֵ֔מָּה לָ/דַ֣עַת לַ/עֲשֹׂ֔ת אֶֽת כָּל מְלֶ֖אכֶת עֲבֹדַ֣ת הַ/קֹּ֑דֶשׁ לְ/כֹ֥ל אֲשֶׁר צִוָּ֖ה יְהוָֽה׃",
+        "LXX": "Καὶ ἐποίησεν Βεσελεὴλ καὶ Ἐλιὰβ καὶ πᾶς σοφὸς τῇ διανοὶᾳ, ᾧ ἐδόθη σοφία καὶ ἐπιστήμη ἐν αὐτοῖς συνιέναι ποιεῖν πάντα τὰ ἔργα κατὰ τὰ ἅγια καθήκοντα, κατὰ πάντα ὅσα συνέταξεν Κύριος.",
+        "VUL": "Fecit ergo Beseleel, et Ooliab, et omnis vir sapiens, quibus dedit Dominus sapientiam et intellectum, ut scirent fabre operari quæ in usus sanctuarii necessaria sunt, et quæ præcepit Dominus.",
+        "SYN": "И стал работать Веселеил и Аголиав и все мудрые сердцем, которым Господь дал мудрость и разумение, чтоб уметь сделать всякую работу, потребную для святилища, как повелел Господь.",
+        "NEO": "Béseléel, Ooliab et tous les hommes intelligents en qui \\+w Yahweh|strong=\"H3068\"\\+w** a mis de l’intelligence et de l’habileté pour savoir faire tous les ouvrages destinés au service du sanctuaire, les exécuteront selon tout ce que \\+w Yahweh|strong=\"H3068\"\\+w** a commandé. »",
+        "NAB": "\"Bezalel, therefore, will set to work with Oholiab and with all the experts whom the LORD has endowed with skill and understanding in knowing how to execute all the work for the service of the sanctuary, just as the LORD has commanded.\"",
+        "VAT_ES": "Besalel, Oholiab y todos los artesanos a quienes el Señor había dotado de habilidad y talento para realizar con inteligencia los trabajos del Santuario, hicieron todo lo que el Señor había ordenado.",
+        "CEI": "Bezaleel, Ooliab e tutti gli artisti che il Signore aveva dotati di saggezza e d'intelligenza, perché fossero in grado di eseguire i lavori della costruzione del santuario, fecero ogni cosa secondo ciò che il Signore aveva ordinato."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֣א מֹשֶׁ֗ה אֶל בְּצַלְאֵ֘ל וְ/אֶל אָֽהֳלִיאָב֒ וְ/אֶל֙ כָּל אִ֣ישׁ חֲכַם לֵ֔ב אֲשֶׁ֨ר נָתַ֧ן יְהוָ֛ה חָכְמָ֖ה בְּ/לִבּ֑/וֹ כֹּ֚ל אֲשֶׁ֣ר נְשָׂא֣/וֹ לִבּ֔/וֹ לְ/קָרְבָ֥ה אֶל הַ/מְּלָאכָ֖ה לַ/עֲשֹׂ֥ת אֹתָֽ/הּ׃",
+        "LXX": "Καὶ ἐκάλεσεν Μωσῆς Βεσελεὴλ καὶ Ἐλιὰβ καὶ πάντας τοὺς ἔχοντας τὴν σοφίαν, ᾧ ἔδωκεν ὁ θεὸς ἐπιστήμην ἐν τῇ καρδίᾳ, καὶ πάντας τοὺς ἑκουσίως βουλομένους προσπορεύεσθαι πρὸς τὰ ἔργα ὥστε συντελεῖν αὐτά·",
+        "VUL": "Cumque vocasset eos Moyses et omnem eruditum virum, cui dederat Dominus sapientiam, et qui sponte sua obtulerant se ad faciendum opus,",
+        "SYN": "И призвал Моисей Веселеила и Аголиава и всех мудрых сердцем, которым Господь дал мудрость, и всех, коих влекло сердце приступить к работе и работать.",
+        "NEO": "Moïse appela Béseléel, Ooliab et tous les hommes intelligents dans le cœur desquels \\+w Yahweh|strong=\"H3068\"\\+w** avait mis de l’intelligence, tous ceux que leur cœur poussait à s’appliquer à cette œuvre pour l’exécuter.",
+        "NAB": "Moses then called Bezalel and Oholiab and all the other experts whom the LORD had endowed with skill, men whose hearts moved them to come and take part in the work.",
+        "VAT_ES": "Moisés convocó a Besalel, a Oholiab y a todos los artesanos, a quienes el Señor había dotado de habilidad y que se habían prestado a colaborar en la ejecución de esa tarea.",
+        "CEI": "Mosè chiamò Bezaleel, Ooliab e tutti gli artisti, nel cuore dei quali il Signore aveva messo saggezza, quanti erano portati a prestarsi per l'esecuzione dei lavori."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּקְח֞וּ מִ/לִּ/פְנֵ֣י מֹשֶׁ֗ה אֵ֤ת כָּל הַ/תְּרוּמָה֙ אֲשֶׁ֨ר הֵבִ֜יאוּ בְּנֵ֣י יִשְׂרָאֵ֗ל לִ/מְלֶ֛אכֶת עֲבֹדַ֥ת הַ/קֹּ֖דֶשׁ לַ/עֲשֹׂ֣ת אֹתָ֑/הּ וְ֠/הֵם הֵבִ֨יאוּ אֵלָ֥י/ו ע֛וֹד נְדָבָ֖ה בַּ/בֹּ֥קֶר בַּ/בֹּֽקֶר׃",
+        "LXX": "καὶ ἔλαβον παρὰ Μωσῆ πάντα τὰ ἀφαιρέματα ἃ ἤνεγκαν οἱ υἱοὶ Ἰσραὴλ εἰς πάντα τὰ ἔργα τοῦ ἁγίου ποιεῖν αὐτά· καὶ αὐτοὶ προσεδέχοντο ⸆ ἔτι τὰ προσφερόμενα παρὰ τῶν φερόντων τὸ πρωί.",
+        "VUL": "tradidit eis universa donaria filiorum Israël. Qui cum instarent operi, quotidie mane vota populus offerebat.",
+        "SYN": "И взяли они от Моисея все приношения, которые принесли сыны Израилевы, на [все] потребности святилища, чтобы работать. Между тем еще продолжали приносить к нему добровольные дары каждое утро.",
+        "NEO": "Ils prirent de devant Moïse toute l’offrande qu’avaient apportée les enfants d’Israël pour exécuter les ouvrages destinés au service du sanctuaire ; et chaque matin le peuple continuait à apporter à Moïse des offrandes volontaires.",
+        "NAB": "They received from Moses all the contributions which the Israelites had brought for establishing the service of the sanctuary. Still, morning after morning the people continued to bring their voluntary offerings to Moses.",
+        "VAT_ES": "Ellos recibieron de Moisés las ofrendas que los israelitas habían presentado para los diversos trabajos del Santuario. Entretanto, cada mañana los israelitas seguían trayendo a Moisés ofrendas voluntarias.",
+        "CEI": "Essi ricevettero da Mosè ogni contributo portato dagli Israeliti per il lavoro della costruzione del santuario. Ma gli Israeliti continuavano a portare ogni mattina offerte volontarie."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֨אוּ֙ כָּל הַ֣/חֲכָמִ֔ים הָ/עֹשִׂ֕ים אֵ֖ת כָּל מְלֶ֣אכֶת הַ/קֹּ֑דֶשׁ אִֽישׁ אִ֥ישׁ מִ/מְּלַאכְתּ֖/וֹ אֲשֶׁר הֵ֥מָּה עֹשִֽׂים׃",
+        "LXX": "καὶ παρεγίνοντο πάντες οἱ σοφοὶ οἱ ποιοῦντες τὰ ἔργα τοῦ ἁγίου, ἕκαστος κατὰ τὸ αὐτοῦ ἔργον ὃ ἠργάζοντο αὐτοί.",
+        "VUL": "Unde artifices venire compulsi,",
+        "SYN": "Тогда пришли все мудрые сердцем, производившие всякие работы святилища, каждый от своей работы, какою кто занимался,",
+        "NEO": "Alors tous les hommes habiles qui exécutaient tous les ouvrages du sanctuaire, quittant chacun l’ouvrage qu’ils faisaient,",
+        "NAB": "Thereupon the experts who were executing the various kinds of work for the sanctuary, all left the work they were doing,",
+        "VAT_ES": "Pero los artesanos que realizaban todo el trabajo del Santuario, abandonando momentáneamente sus respectivas ocupaciones,",
+        "CEI": "Allora tutti gli artisti, che eseguivano i lavori per il santuario, lasciarono il lavoro che stavano facendo"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְרוּ֙ אֶל מֹשֶׁ֣ה לֵּ/אמֹ֔ר מַרְבִּ֥ים הָ/עָ֖ם לְ/הָבִ֑יא מִ/דֵּ֤י הָֽ/עֲבֹדָה֙ לַ/מְּלָאכָ֔ה אֲשֶׁר צִוָּ֥ה יְהוָ֖ה לַ/עֲשֹׂ֥ת אֹתָֽ/הּ׃",
+        "LXX": "καὶ εἶπεν πρὸς Μωυσῆν ὃτι Πλῆθος φέρει ὁ λαὸς κατὰ τὰ ἔργα ὅσα συνέταξεν Κύριος ποιῆσαι.",
+        "VUL": "dixerunt Moysi : Plus offert populus quam necessarium est.",
+        "SYN": "и сказали Моисею, говоря: народ много приносит, более нежели потребно для работ, какие повелел Господь сделать.",
+        "NEO": "vinrent dire à Moïse : « Le peuple apporte beaucoup plus qu’il ne faut pour l’exécution des ouvrages que \\+w Yahweh|strong=\"H3068\"\\+w** a ordonné de faire. »",
+        "NAB": "and told Moses, \"The people are bringing much more than is needed to carry out the work which the LORD has commanded us to do.\"",
+        "VAT_ES": "fueron a decir a Moisés: «El pueblo aporta más de lo que se necesita para ejecutar la tarea que el Señor ha mandado».",
+        "CEI": "e vennero a dire a Mosè: \"Il popolo porta più di quanto è necessario per il lavoro che il Signore ha ordinato\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יְצַ֣ו מֹשֶׁ֗ה וַ/יַּעֲבִ֨ירוּ ק֥וֹל בַּֽ/מַּחֲנֶה֮ לֵ/אמֹר֒ אִ֣ישׁ וְ/אִשָּׁ֗ה אַל יַעֲשׂוּ ע֛וֹד מְלָאכָ֖ה לִ/תְרוּמַ֣ת הַ/קֹּ֑דֶשׁ וַ/יִּכָּלֵ֥א הָ/עָ֖ם מֵ/הָבִֽיא׃",
+        "LXX": "καὶ προσέταξεν Μωσῆς, καὶ ἐκήρυξεν ἐν τῇ παρεμβολῇ λέγων Ἀνὴρ καὶ γυνὴ μηκέτι ἐργαζέσθωσαν εἰς τάς ἀπαρχὰς τοῦ ἁγίου· καὶ ἐκωλύθη ὁ λαὸς ἔτι προσφέρειν.",
+        "VUL": "Jussit ergo Moyses præconis voce cantari : Nec vir, nec mulier quidquam offerat ultra in opere sanctuarii. Sicque cessatum est a muneribus offerendis,",
+        "SYN": "И приказал Моисей, и объявлено было в стане, чтобы ни мужчина, ни женщина не делали уже ничего для приношения во святилище; и перестал народ приносить.",
+        "NEO": "Moïse donna un ordre et on fit cette proclamation dans le camp : « Que personne, homme ou femme, ne s’occupe plus de l’offrande pour le sanctuaire ». Et on empêcha le peuple d’en apporter davantage.",
+        "NAB": "Moses, therefore, ordered a proclamation to be made throughout the camp: \"Let neither man nor woman make any more contributions for the sanctuary.\" So the people stopped bringing their offerings;",
+        "VAT_ES": "Entonces Moisés ordenó que se hiciera correr esta consigna a través del campamento: «Que nadie, sea hombre o mujer, siga preparando materiales para presentarlos como ofrenda». Así el pueblo se abstuvo de hacer nuevos donativos,",
+        "CEI": "Mosè allora fece proclamare nel campo: \"Nessuno, uomo o donna, offra più alcuna cosa come contributo per il santuario\". Così si impedì al popolo di portare altre offerte;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הַ/מְּלָאכָ֗ה הָיְתָ֥ה דַיָּ֛/ם לְ/כָל הַ/מְּלָאכָ֖ה לַ/עֲשׂ֣וֹת אֹתָ֑/הּ וְ/הוֹתֵֽר׃",
+        "LXX": "καὶ τὰ ἔργα ἦν αὐτοῖς ἱκανὰ εἰς τὴν κατασκευὴν ποιῆσαι, καὶ προσκατέλιπον.",
+        "VUL": "eo quod oblata sufficerent et superabundarent.",
+        "SYN": "Запаса было достаточно на всякие работы, какие надлежало делать, и даже осталось.",
+        "NEO": "Les objets préparés suffisaient, et au delà, pour tous les ouvrages à exécuter.",
+        "NAB": "there was already enough at hand, in fact, more than enough, to complete the work to be done.",
+        "VAT_ES": "porque los materiales aportados ya eran más que suficientes para realizar todo el trabajo.",
+        "CEI": "perché quanto il popolo aveva già offerto era sufficiente, anzi sovrabbondante, per l'esecuzione di tutti i lavori."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲשׂ֨וּ כָל חֲכַם לֵ֜ב בְּ/עֹשֵׂ֧י הַ/מְּלָאכָ֛ה אֶת הַ/מִּשְׁכָּ֖ן עֶ֣שֶׂר יְרִיעֹ֑ת שֵׁ֣שׁ מָשְׁזָ֗ר וּ/תְכֵ֤לֶת וְ/אַרְגָּמָן֙ וְ/תוֹלַ֣עַת שָׁנִ֔י כְּרֻבִ֛ים מַעֲשֵׂ֥ה חֹשֵׁ֖ב עָשָׂ֥ה אֹתָֽ/ם׃",
+        "LXX": "Καὶ ἐποίησεν πᾶς σοφὸς ἐν τοῖς ἐργαζομένοις τὰς στολὰς τῶν ἁγίων, αἵ εἰσιν Ἀαρὼν τῷ ἱερεῖ, καθὰ συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "Feceruntque omnes corde sapientes ad explendum opus tabernaculi, cortinas decem de bysso retorta, et hyacintho, et purpura, coccoque bis tincto, opere vario, et arte polymita :",
+        "SYN": "И сделали все мудрые сердцем, занимавшиеся работою скинии: десять покрывал из крученого виссона и из голубой, пурпуровой и червленой _шерсти;_ и херувимов сделали на них искусною работою;",
+        "NEO": "Tous les hommes habiles parmi ceux qui travaillaient à l’œuvre firent la Demeure de dix tentures ; ils les firent de lin retors, de pourpre violette, de pourpre écarlate et de cramoisi, avec des chérubins, ouvrage d’habile tisseur.",
+        "NAB": "The various experts who were executing the work, made the Dwelling with its ten sheets woven of fine linen twined, having cherubim embroidered on them with violet, purple and scarlet yarn.",
+        "VAT_ES": "Los artesanos más expertos hicieron la Morada con diez cortinados de lino fino reforzado, de púrpura violeta y escarlata y de carmesí, y con figuras de querubines bordadas artísticamente.",
+        "CEI": "Tutti gli artisti addetti ai lavori fecero la Dimora. Bezaleel la fece con dieci teli di bisso ritorto, di porpora viola, di porpora rossa e di scarlatto. La fece con figure di cherubini artisticamente lavorati."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אֹ֜רֶךְ הַ/יְרִיעָ֣ה הָֽ/אַחַ֗ת שְׁמֹנֶ֤ה וְ/עֶשְׂרִים֙ בָּֽ/אַמָּ֔ה וְ/רֹ֨חַב֙ אַרְבַּ֣ע בָּֽ/אַמָּ֔ה הַ/יְרִיעָ֖ה הָ/אֶחָ֑ת מִדָּ֥ה אַחַ֖ת לְ/כָל הַ/יְרִיעֹֽת׃",
+        "LXX": "Καὶ ἐποίησεν τὴν ἐπωμίδα ἐκ χρυσίου καὶ ὑακίνθου καὶ πορφύρας καὶ κοκκίνου νενησμένου καὶ βύσσου κεκλωσμένης.",
+        "VUL": "quarum una habebat in longitudine viginti octo cubitos, et in latitudine quatuor ; una mensura erat omnium cortinarum.",
+        "SYN": "длина каждого покрывала двадцать восемь локтей, и ширина каждого покрывала четыре локтя: всем покрывалам одна мера.",
+        "NEO": "La longueur d’une tenture était de vingt-huit coudées, et la largeur d’une tenture était de quatre coudées ; la dimension était la même pour toutes les tentures.",
+        "NAB": "The length of each sheet was twenty-eight cubits, and the width four cubits; all the sheets were of the same size.",
+        "VAT_ES": "Cada cortinado medía catorce metros de largo por dos de ancho; todos tenían las mismas dimensiones.",
+        "CEI": "Lunghezza di ciascun telo ventotto cubiti; larghezza quattro cubiti per ciascun telo; la stessa dimensione per tutti i teli."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יְחַבֵּר֙ אֶת חֲמֵ֣שׁ הַ/יְרִיעֹ֔ת אַחַ֖ת אֶל אֶחָ֑ת וְ/חָמֵ֤שׁ יְרִיעֹת֙ חִבַּ֔ר אַחַ֖ת אֶל אֶחָֽת׃",
+        "LXX": "καὶ ἐτμήθη τὰ πέταλα τοῦ χρυσίου τρίχες, ὥστε συνυφᾶναι σὺν τῇ ὑακίνθῳ καὶ τῇ πορφύρᾳ καὶ τῷ κοκκίνῳ τῷ διανενησμένῳ καὶ σὺν τῇ βύσσῳ τῇ κεκλωσμένῃ· ἔργον ὑφαντὸν ἐποίησαν αὐτό·",
+        "VUL": "Conjunxitque cortinas quinque, alteram alteri, et alias quinque sibi invicem copulavit.",
+        "SYN": "И соединил он пять покрывал одно с другим, и _другие_ пять покрывал соединил одно с другим.",
+        "NEO": "Cinq de ces tentures furent jointes ensemble ; les cinq autres furent aussi jointes ensemble.",
+        "NAB": "Five of the sheets were sewed together, edge to edge; and the same for the other five.",
+        "VAT_ES": "unieron entre sí cinco cortinados, y lo mismo hicieron con los otro cinco.",
+        "CEI": "Unì cinque teli l'uno all'altro e anche i cinque altri teli unì l'uno all'altro."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יַּ֜עַשׂ לֻֽלְאֹ֣ת תְּכֵ֗לֶת עַ֣ל שְׂפַ֤ת הַ/יְרִיעָה֙ הָֽ/אֶחָ֔ת מִ/קָּצָ֖ה בַּ/מַּחְבָּ֑רֶת כֵּ֤ן עָשָׂה֙ בִּ/שְׂפַ֣ת הַ/יְרִיעָ֔ה הַ/קִּ֣יצוֹנָ֔ה בַּ/מַּחְבֶּ֖רֶת הַ/שֵּׁנִֽית׃",
+        "LXX": "ἐπωμίδας συνεχούσας ἐξ ἀμφοτέρων τῶν μερῶν, ἔργον ὑφαντόν, εἰς ἄλληλα συνπεπλεγμένα καθ’ ἑαυτό.",
+        "VUL": "Fecit et ansas hyacinthinas in ora cortinæ unius ex utroque latere, et in ora cortinæ alterius similiter,",
+        "SYN": "И сделал петли голубого _цвета_ на краю одного покрывала, где оно соединяется с другим; так же сделал он и на краю последнего покрывала, для соединения его с другим;",
+        "NEO": "On mit des lacets de pourpre violette au bord de la tenture terminant le premier assemblage ; on fit de même au bord de la tenture terminant le second assemblage.",
+        "NAB": "Loops of violet yarn were made along the edge of the end sheet in the first set, and the same along the edge of the end sheet in the second set.",
+        "VAT_ES": "Luego pusieron unas presillas de púrpura violeta en los dos últimos cortinados de cada conjunto,",
+        "CEI": "Fece cordoni di porpora viola sull'orlo del primo telo all'estremità della sutura e fece la stessa cosa sull'orlo del primo telo all'estremità della sutura e fece la stessa cosa sull'orlo del telo estremo nella seconda sutura."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "חֲמִשִּׁ֣ים לֻלָאֹ֗ת עָשָׂה֮ בַּ/יְרִיעָ֣ה הָ/אֶחָת֒ וַ/חֲמִשִּׁ֣ים לֻלָאֹ֗ת עָשָׂה֙ בִּ/קְצֵ֣ה הַ/יְרִיעָ֔ה אֲשֶׁ֖ר בַּ/מַּחְבֶּ֣רֶת הַ/שֵּׁנִ֑ית מַקְבִּילֹת֙ הַ/לֻּ֣לָאֹ֔ת אַחַ֖ת אֶל אֶחָֽת׃",
+        "LXX": "ἐξ αὐτοῦ ἐποίησαν, ἐκ χρυσίου καὶ ὑακίνθου καὶ πορφύρας καὶ κοκκίνου διανενησμένου καὶ βύσσου κεκλωσμένης, καθὰ συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "ut contra se invicem venirent ansæ, et mutuo jungerentur.",
+        "SYN": "пятьдесят петлей сделал он у одного покрывала, и пятьдесят петлей сделал в конце покрывала, где оно соединяется с другим; петли сии соответствовали одна другой;",
+        "NEO": "On fit cinquante lacets à la première tenture, et on fit cinquante lacets au bord de la tenture terminant le second assemblage, et ces lacets se correspondaient les uns aux autres.",
+        "NAB": "Fifty loops were thus put on one inner sheet, and fifty loops on the inner sheet in the other set, with the loops directly opposite each other.",
+        "VAT_ES": "cincuenta presillas en uno y cincuenta en el otro, correspondiéndose mutuamente.",
+        "CEI": "Fece cinquanta cordoni al primo telo e fece anche cinquanta cordoni all'estremità del telo della seconda sutura: i cordoni corrispondevano l'uno all'altro."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יַּ֕עַשׂ חֲמִשִּׁ֖ים קַרְסֵ֣י זָהָ֑ב וַ/יְחַבֵּ֨ר אֶת הַ/יְרִעֹ֜ת אַחַ֤ת אֶל אַחַת֙ בַּ/קְּרָסִ֔ים וַֽ/יְהִ֥י הַ/מִּשְׁכָּ֖ן אֶחָֽד׃",
+        "LXX": "Καὶ ἐποίησαν ἀμφοτέρους τοὺς λίθους τῆς σμαράγδου συνπεπορπημένους καὶ περισεσιαλωμένους καὶ ἐκκεκολαμμένους ἐκκόλαμμα σφραγῖδος ἐκ τῶν ὀνομάτων τῶν υἱῶν Ἰσραήλ·",
+        "VUL": "Unde et quinquaginta fudit circulos aureos, qui morderent cortinarum ansas, et fieret unum tabernaculum.",
+        "SYN": "и сделал пятьдесят крючков золотых, и крючками соединил одно покрывало с другим, и стала скиния одно _целое._",
+        "NEO": "On fit cinquante agrafes d’or, avec lesquelles on joignit les tentures l’une à l’autre, en sorte que la Demeure forma un seul tout.",
+        "NAB": "Then fifty clasps of gold were made, with which the sheets were joined so that the Dwelling formed one whole.",
+        "VAT_ES": "Después forjaron cincuenta ganchos de oro, y con ellos unieron los cortinados entre sí, de manera que la Morada formó un todo.",
+        "CEI": "Fece cinquanta fibbie d'oro e unì i teli l'uno all'altro mediante le fibbie; così il tutto venne a formare una sola Dimora."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַשׂ֙ יְרִיעֹ֣ת עִזִּ֔ים לְ/אֹ֖הֶל עַל הַ/מִּשְׁכָּ֑ן עַשְׁתֵּֽי עֶשְׂרֵ֥ה יְרִיעֹ֖ת עָשָׂ֥ה אֹתָֽ/ם׃",
+        "LXX": "καὶ ἐπέθηκεν αὐτοὺς ἐπὶ τοὺς ὤμους τῆς ἐπωμίδος, λίθους μνημοσύνου τῶν υἱῶν Ἰσραήλ, καθὰ συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "Fecit et saga undecim de pilis caprarum ad operiendum tectum tabernaculi :",
+        "SYN": "Потом сделал покрывала из козьей шерсти для покрытия скинии: одиннадцать покрывал сделал таких;",
+        "NEO": "On fit des tentures de poil de chèvre pour former une tente sur la Demeure ; on fit onze de ces tentures.",
+        "NAB": "Sheets of goat hair were also woven as a tent over the Dwelling. Eleven such sheets were made.",
+        "VAT_ES": "También confeccionaron once toldos de pelo de cabra, para cubrir la Morada a manera de carpa.",
+        "CEI": "Fece poi teli di peli di capra per costituire la tenda al di sopra della Dimora. Ne fece undici teli."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אֹ֜רֶךְ הַ/יְרִיעָ֣ה הָ/אַחַ֗ת שְׁלֹשִׁים֙ בָּֽ/אַמָּ֔ה וְ/אַרְבַּ֣ע אַמּ֔וֹת רֹ֖חַב הַ/יְרִיעָ֣ה הָ/אֶחָ֑ת מִדָּ֣ה אַחַ֔ת לְ/עַשְׁתֵּ֥י עֶשְׂרֵ֖ה יְרִיעֹֽת׃",
+        "LXX": "Καὶ ἐποίησαν λόγιον ἔργον ὑφαντὸν ποικιλίᾳ κατὰ τὸ ἔργον τῆς ἐπωμίδος, ἐκ χρυσίου καὶ ὑακίνθου καὶ πορφύρας καὶ κοκκίνου διανενησμένου καὶ βύσσου κεκλωσμένης·",
+        "VUL": "unum sagum in longitudine habebat cubitos triginta, et in latitudine cubitos quatuor : unius mensuræ erant omnia saga :",
+        "SYN": "длиною покрывало тридцать локтей, и шириною покрывало четыре локтя: одиннадцати покрывалам мера одна.",
+        "NEO": "La longueur d’une tenture était de trente coudées, et la largeur d’une tenture de quatre coudées ; La dimension était la même pour les onze tentures.",
+        "NAB": "The length of each sheet was thirty cubits and the width four cubits; all eleven sheets were the same size.",
+        "VAT_ES": "Cada toldo medía quince metros de largo por dos de ancho; los once tenían la misma medida.",
+        "CEI": "Lunghezza di un telo trenta cubiti; larghezza quattro cubiti per un telo; la stessa dimensione per gli undici teli."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יְחַבֵּ֛ר אֶת חֲמֵ֥שׁ הַ/יְרִיעֹ֖ת לְ/בָ֑ד וְ/אֶת שֵׁ֥שׁ הַ/יְרִיעֹ֖ת לְ/בָֽד׃",
+        "LXX": "τετράγωνον διπλοῦν ἐποίησαν τὸ λόγιον, σπιθαμῆς τὸ μῆκος καὶ σπιθαμῆς τὸ εὖρος διπλοῦν.",
+        "VUL": "quorum quinque junxit seorsum, et sex alia separatim.",
+        "SYN": "И соединил он пять покрывал особо и шесть покрывал особо.",
+        "NEO": "On joignit à part cinq de ces tentures et les six autres à part.",
+        "NAB": "Five of these sheets were sewed edge to edge into one set; and the other six sheets into another set.",
+        "VAT_ES": "Luego unieron separadamente cinco de un lado y seis del otro;",
+        "CEI": "Unì insieme cinque teli a parte e sei teli a parte."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יַּ֜עַשׂ לֻֽלָאֹ֣ת חֲמִשִּׁ֗ים עַ֚ל שְׂפַ֣ת הַ/יְרִיעָ֔ה הַ/קִּיצֹנָ֖ה בַּ/מַּחְבָּ֑רֶת וַ/חֲמִשִּׁ֣ים לֻלָאֹ֗ת עָשָׂה֙ עַל שְׂפַ֣ת הַ/יְרִיעָ֔ה הַ/חֹבֶ֖רֶת הַ/שֵּׁנִֽית׃",
+        "LXX": "καὶ συνυφάνθη ἐν αὐτῷ ὕφασμα κατάλιθον τετράστιχον, στίχος λίθων· σάρδιον καὶ τοπάζιον καὶ σμάραγδος ὁ στίχος ὁ εἷς·",
+        "VUL": "Fecitque ansas quinquaginta in ora sagi unius, et quinquaginta in ora sagi alterius, ut sibi invicem jungerentur.",
+        "SYN": "И сделал пятьдесят петлей на краю покрывала крайнего, где оно соединяется с другим, и пятьдесят петлей сделал на краю покрывала, соединяющегося с другим;",
+        "NEO": "On mit cinquante lacets au bord de la tenture terminant un assemblage, et on mit cinquante lacets au bord de la tenture du second assemblage.",
+        "NAB": "Fifty loops were made along the edge of the end sheet in one set, and fifty loops along the edge of the corresponding sheet in the other set.",
+        "VAT_ES": "pusieron cincuenta presillas en el borde de los dos últimos toldos de cada conjunto,",
+        "CEI": "Fece cinquanta cordoni sull'orlo del telo della seconda sutura."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יַּ֛עַשׂ קַרְסֵ֥י נְחֹ֖שֶׁת חֲמִשִּׁ֑ים לְ/חַבֵּ֥ר אֶת הָ/אֹ֖הֶל לִֽ/הְיֹ֥ת אֶחָֽד׃",
+        "LXX": "καὶ ὁ στίχος ὁ δεύτερος ἄνθραξ καὶ σάπφειρος καὶ ἴασπις·",
+        "VUL": "Et fibulas æneas quinquaginta, quibus necteretur tectum, ut unum pallium ex omnibus sagis fieret.",
+        "SYN": "и сделал пятьдесят медных крючков для соединения покрова, чтоб составилось одно _целое._",
+        "NEO": "On fit cinquante agrafes d’airain pour assembler la tente, afin qu’elle format un seul tout.",
+        "NAB": "Fifty bronze clasps were made with which the tent was joined so that it formed one whole.",
+        "VAT_ES": "y forjaron cincuenta ganchos de bronce: así unieron la carpa, de manera que formara un todo.",
+        "CEI": "Fece cinquanta fibbie di rame, per unire insieme la tenda, così da formare un tutto unico."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤עַשׂ מִכְסֶה֙ לָ/אֹ֔הֶל עֹרֹ֥ת אֵלִ֖ים מְאָדָּמִ֑ים וּ/מִכְסֵ֛ה עֹרֹ֥ת תְּחָשִׁ֖ים מִ/לְ/מָֽעְלָ/ה׃",
+        "LXX": "καὶ ὁ στίχος ὁ τρίτος λιγύριον καὶ ἀχάτης καὶ ἀμέθυστος.",
+        "VUL": "Fecit et opertorium tabernaculi de pellibus arietum rubricatis : aliudque desuper velamentum de pellibus janthinis.",
+        "SYN": "И сделал для скинии покров из красных бараньих кож и покрышку сверху из кож синих.",
+        "NEO": "On fit pour la tente une couverture en peaux de béliers teintes en rouge, et une couverture en peaux de veaux marins, par dessus.",
+        "NAB": "A covering for the tent was made of rams' skins dyed red, and above that, a covering of tahash skins.",
+        "VAT_ES": "Después hicieron para la carpa una cobertura de cueros de carnero teñidos de rojo, y otra cobertura de pieles finas para ponerla encima.",
+        "CEI": "Fece poi per la tenda una copertura di pelli di montone tinte di rosso e al di sopra una copertura di pelli di tasso."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ אֶת הַ/קְּרָשִׁ֖ים לַ/מִּשְׁכָּ֑ן עֲצֵ֥י שִׁטִּ֖ים עֹמְדִֽים׃",
+        "LXX": "καὶ ὁ στίχος ὁ τέταρτος χρυσόλιθον καὶ βηρύλλιον καὶ ὀνύχιον, περικεκυκλωμένα χρυσίῳ καὶ συνδεδεμένα χρυσίῳ.",
+        "VUL": "Fecit et tabulas tabernaculi de lignis setim stantes.",
+        "SYN": "И сделал брусья для скинии из дерева ситтим прямостоящие:",
+        "NEO": "On fit aussi les planches pour la Demeure, des planches de bois d’acacia, posées debout.",
+        "NAB": "Boards of acacia wood were made as walls for the Dwelling.",
+        "VAT_ES": "También hicieron los bastidores para sostener la Morada. Los construyeron con madera de acacia, y los dispusieron verticalmente.",
+        "CEI": "Poi fece per la Dimora assi di legno di acacia, verticali."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "עֶ֥שֶׂר אַמֹּ֖ת אֹ֣רֶךְ הַ/קָּ֑רֶשׁ וְ/אַמָּה֙ וַ/חֲצִ֣י הָֽ/אַמָּ֔ה רֹ֖חַב הַ/קֶּ֥רֶשׁ הָ/אֶחָֽד׃",
+        "LXX": "καὶ οἱ λίθοι ἦσαν ἐκ τῶν ὀνομάτων τῶν υἱῶν Ἰσραήλ δώδεκα, ἐκ τῶν ὀνομάτων αὐτῶν ἐνγεγραμμένα εἰς σφραγῖδας, ἕκαστος ἐκ τοῦ ἑαυτοῦ ὀνόματος εἰς τὰς δώδεκα φυλάς.",
+        "VUL": "Decem cubitorum erat longitudo tabulæ unius : et unum ac semis cubitum latitudo retinebat.",
+        "SYN": "десять локтей длина бруса, и полтора локтя ширина каждого бруса;",
+        "NEO": "La longueur d’une planche était de dix coudées, et la largeur d’une planche était d’une coudée et demie.",
+        "NAB": "The length of each board was ten cubits, and the width one and a half cubits.",
+        "VAT_ES": "Cada bastidor medía cinco metros de largo por setenta y cinco centímetros de ancho,",
+        "CEI": "Dieci cubiti la lunghezza di un asse e un cubito e mezzo la larghezza."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "שְׁתֵּ֣י יָדֹ֗ת לַ/קֶּ֨רֶשׁ֙ הָֽ/אֶחָ֔ד מְשֻׁלָּבֹ֔ת אַחַ֖ת אֶל אֶחָ֑ת כֵּ֣ן עָשָׂ֔ה לְ/כֹ֖ל קַרְשֵׁ֥י הַ/מִּשְׁכָּֽן׃",
+        "LXX": "Καὶ ἐποίησαν ἐπὶ τὸ λόγιον κροσοὺς συνπεπλεγμένους, ἔργον ἐμπλοκίου, ἐκ χρυσίου καθαροῦ.",
+        "VUL": "Binæ incastraturæ erant per singulas tabulas, ut altera alteri jungeretur. Sic fecit in omnibus tabernaculi tabulis.",
+        "SYN": "у каждого бруса по два шипа, один против другого: так сделал он все брусья скинии.",
+        "NEO": "Il y avait à chaque planche deux tenons, joints l’un à l’autre : on fit de même pour toutes les planches de la Demeure.",
+        "NAB": "Each board had two arms, fastening them in line. In this way all the boards of the Dwelling were made.",
+        "VAT_ES": "y tenía dos espigones ensamblados uno con el otro. Todos fueron hechos de la misma forma.",
+        "CEI": "Ogni asse aveva due sostegni, congiunti l'uno all'altro da un rinforzo. Così fece per tutte le assi della Dimora."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ אֶת הַ/קְּרָשִׁ֖ים לַ/מִּשְׁכָּ֑ן עֶשְׂרִ֣ים קְרָשִׁ֔ים לִ/פְאַ֖ת נֶ֥גֶב תֵּימָֽנָ/ה׃",
+        "LXX": "καὶ ἐποίησαν δύο ἀσπιδίσκας χρυσᾶς καὶ δύο δακτυλίους χρυσοῦς.",
+        "VUL": "E quibus viginti ad plagam meridianam erant contra austrum,",
+        "SYN": "И сделал для скинии двадцать таких брусьев для полуденной стороны,",
+        "NEO": "On fit les planches pour la Demeure : vingt planches pour la face du midi, à droite.",
+        "NAB": "They were set up as follows: twenty boards on the south side,",
+        "VAT_ES": "Hicieron veinte de estos bastidores para el lado sur de la Morada, el que da hacia el Négueb,",
+        "CEI": "Fece dunque le assi per la Dimora: venti assi sul lato verso il mezzogiorno, a sud."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/אַרְבָּעִים֙ אַדְנֵי כֶ֔סֶף עָשָׂ֕ה תַּ֖חַת עֶשְׂרִ֣ים הַ/קְּרָשִׁ֑ים שְׁנֵ֨י אֲדָנִ֜ים תַּֽחַת הַ/קֶּ֤רֶשׁ הָ/אֶחָד֙ לִ/שְׁתֵּ֣י יְדֹתָ֔י/ו וּ/שְׁנֵ֧י אֲדָנִ֛ים תַּֽחַת הַ/קֶּ֥רֶשׁ הָ/אֶחָ֖ד לִ/שְׁתֵּ֥י יְדֹתָֽי/ו׃",
+        "LXX": "καὶ ἐπέθηκαν τοὺς δύο δακτυλίους τοὺς χρυσοῦς ἐπ’ ἀμφοτέρας τὰς ἀρχὰς τοῦ λογίου·",
+        "VUL": "cum quadraginta basibus argenteis. Duæ bases sub una tabula ponebantur ex utraque parte angulorum, ubi incastraturæ laterum in angulis terminantur.",
+        "SYN": "и сорок серебряных подножий сделал под двадцать брусьев: два подножия под один брус для двух шипов его, и два подножия под другой брус для двух шипов его;",
+        "NEO": "On mit sous les vingt planches quarante socles d’argent, deux socles sous chaque planche pour ses deux tenons.",
+        "NAB": "with forty silver pedestals under the twenty boards, so that there were two pedestals under each board, at its two arms;",
+        "VAT_ES": "y debajo de ellos pusieron cuarenta bases de plata, o sea, dos bases debajo de cada bastidor, una para cada espigón.",
+        "CEI": "Fece anche quaranta basi d'argento sotto le venti assi, due basi sotto un'asse per i suoi due sostegni e due basi sotto l'altra asse per i suoi due sostegni."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וּ/לְ/צֶ֧לַע הַ/מִּשְׁכָּ֛ן הַ/שֵּׁנִ֖ית לִ/פְאַ֣ת צָפ֑וֹן עָשָׂ֖ה עֶשְׂרִ֥ים קְרָשִֽׁים׃",
+        "LXX": "καὶ ἐπέθηκαν τὰ ἐμπλόκια ἐκ χρυσίου ἐπὶ τοὺς δακτυλίους ἐπ’ ἀμφοτέρων τῶν μερῶν τοῦ λογίου, καὶ εἰς τὰς δύο συμβολὰς τὰ δύο ἐμπλόκια,",
+        "VUL": "Ad plagam quoque tabernaculi, quæ respicit ad aquilonem, fecit viginti tabulas,",
+        "SYN": "и для другой стороны скинии, к северу, сделал двадцать брусьев",
+        "NEO": "Pour le second côté de la Demeure, le côté du nord, on fit vingt planches,",
+        "NAB": "twenty boards on the other side of the Dwelling, the north side,",
+        "VAT_ES": "Para el otro costado de la Morada, el lado septentrional, hicieron también veinte bastidores",
+        "CEI": "Per il secondo lato della Dimora, verso il settentrione, venti assi,"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/אַרְבָּעִ֥ים אַדְנֵי/הֶ֖ם כָּ֑סֶף שְׁנֵ֣י אֲדָנִ֗ים תַּ֚חַת הַ/קֶּ֣רֶשׁ הָ/אֶחָ֔ד וּ/שְׁנֵ֣י אֲדָנִ֔ים תַּ֖חַת הַ/קֶּ֥רֶשׁ הָ/אֶחָֽד׃",
+        "LXX": "καὶ ἐπέθηκαν ἐπὶ τὰς δύο ἀσπιδίσκας· καὶ ἐπέθηκαν ἐπὶ τοὺς ὤμους τῆς ἐπωμίδος ἐξ ἐναντίας κατὰ πρόσωπον.",
+        "VUL": "cum quadraginta basibus argenteis, duas bases per singulas tabulas.",
+        "SYN": "и сорок серебряных подножий: два подножия под один брус, и два подножия под другой брус;",
+        "NEO": "ainsi que leurs quarante socles d’argent, deux socles sous chaque planche.",
+        "NAB": "with their forty silver pedestals, two under each board;",
+        "VAT_ES": "con sus cuarenta bases de plata, dos debajo de cada bastidor.",
+        "CEI": "come le loro quaranta basi d'argento, due basi sotto un'asse e due basi sotto l'altra asse."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וּֽ/לְ/יַרְכְּתֵ֥י הַ/מִּשְׁכָּ֖ן יָ֑מָּ/ה עָשָׂ֖ה שִׁשָּׁ֥ה קְרָשִֽׁים׃",
+        "LXX": "καὶ ἐποίησαν δύο δακτυλίους χρυσοῦς, καὶ ἐπέθηκαν ἐπὶ τὰ δύο πτερύγια ἐπ’ ἄκρου τοῦ λογίου καὶ ἐπὶ τὸ ἄκρον τοῦ ὀπισθίου τῆς ἐπωμίδος ἔσωθεν.",
+        "VUL": "Contra occidentem vero, id est, ad eam partem tabernaculi quæ mare respicit, fecit sex tabulas,",
+        "SYN": "а для задней стороны скинии, к западу, сделал шесть брусьев,",
+        "NEO": "On fit six planches pour le fond de la Demeure, du côté de l’occident.",
+        "NAB": "six boards at the rear of the Dwelling, to the west;",
+        "VAT_ES": "Para el fondo de la Morada, hacia el oeste, hicieron seis bastidores,",
+        "CEI": "Per la parte posteriore della Dimora, verso occidente, fece sei assi."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וּ/שְׁנֵ֤י קְרָשִׁים֙ עָשָׂ֔ה לִ/מְקֻצְעֹ֖ת הַ/מִּשְׁכָּ֑ן בַּ/יַּרְכָתָֽיִם׃",
+        "LXX": "καὶ ἐποίησαν δύο δακτυλίους χρυσοῦς, καὶ ἐπέθηκαν ἐπ’ ἀμφοτέρους τοὺς ὤμους τῆς ἐπωμίδος.",
+        "VUL": "et duas alias per singulos angulos tabernaculi retro :",
+        "SYN": "и два бруса сделал для угла в скинии на заднюю сторону;",
+        "NEO": "On fit deux planches pour les angles de la Demeure, dans le fond ;",
+        "NAB": "and two boards at the corners in the rear of the Dwelling.",
+        "VAT_ES": "más otros dos para los ángulos de la parte posterior de la Morada,",
+        "CEI": "Fece inoltre due assi per gli angoli della Dimora nella parte posteriore."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/הָי֣וּ תוֹאֲמִם֮ מִ/לְּ/מַטָּה֒ וְ/יַחְדָּ֗ו יִהְי֤וּ תַמִּים֙ אֶל רֹאשׁ֔/וֹ אֶל הַ/טַּבַּ֖עַת הָ/אֶחָ֑ת כֵּ֚ן עָשָׂ֣ה לִ/שְׁנֵי/הֶ֔ם לִ/שְׁנֵ֖י הַ/מִּקְצֹעֹֽת׃",
+        "LXX": "καὶ συνέσφιγξεν τὸ λόγιον ἀπὸ τῶν δακτυλίων τῶν ἐπ’ αὐτοῦ εἰς τοὺς δακτυλίους τῆς ἐπωμίδος, συνεχομένους ἐκ τῆς ὑακίνθου, συνπεπλεγμένους εἰς τὸ ὕφασμα τῆς ἐπωμίδος, ἵνα μὴ χαλᾶται τὸ λόγιον ἀπὸ τῆς ἐπωμίδος, καθὰ συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "quæ junctæ erant a deorsum usque sursum, et in unam compaginem pariter ferebantur. Ita fecit ex utraque parte per angulos :",
+        "SYN": "и были они соединены внизу и соединены вверху к одному кольцу: так сделал он с ними обоими на обоих углах;",
+        "NEO": "elles étaient doubles depuis le bas, formant ensemble un seul tout jusqu’à leur sommet, jusqu’au premier anneau : ainsi fit-on pour toutes les deux, aux deux angles.",
+        "NAB": "These were double at the bottom, and likewise double at the top, to the first ring. That is how both boards in the corners were made.",
+        "VAT_ES": "que estaban unidos de abajo hacia arriba, hasta la altura de la primera argolla. Así lo hicieron con los dos bastidores destinados a los dos ángulos.",
+        "CEI": "Esse erano formate ciascuna da due pezzi uguali, abbinati e perfettamente congiunti dal basso fino alla cima, all'altezza del primo anello. Così fece per ambedue: esse vennero a formare i due angoli."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/הָיוּ֙ שְׁמֹנָ֣ה קְרָשִׁ֔ים וְ/אַדְנֵי/הֶ֣ם כֶּ֔סֶף שִׁשָּׁ֥ה עָשָׂ֖ר אֲדָנִ֑ים שְׁנֵ֤י אֲדָנִים֙ שְׁנֵ֣י אֲדָנִ֔ים תַּ֖חַת הַ/קֶּ֥רֶשׁ הָ/אֶחָֽד׃",
+        "LXX": "Καὶ ἐποίησαν τὸν ὑποδύτην ὑπὸ τὴν ἐπωμίδα, ἔργον ὑφαντὸν ὅλον ὑακίνθινον·",
+        "VUL": "ut octo essent simul tabulæ, et haberent bases argenteas sedecim, binas scilicet bases sub singulis tabulis.",
+        "SYN": "и было восемь брусьев и серебряных подножий шестнадцать, по два подножия под каждый брус.",
+        "NEO": "Il y avait ainsi huit planches, avec leurs socles d’argent, seize socles, deux socles sous chaque planche.",
+        "NAB": "Thus, there were in the rear eight boards, with their sixteen silver pedestals, two pedestals under each board.",
+        "VAT_ES": "Había, por lo tanto, ocho bastidores con sus bases de plata, o sea, dieciséis bases, dos para cada bastidor.",
+        "CEI": "Vi erano dunque otto assi con le loro basi d'argento: sedici basi, due basi sotto un'asse e due basi sotto l'altra asse."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ בְּרִיחֵ֖י עֲצֵ֣י שִׁטִּ֑ים חֲמִשָּׁ֕ה לְ/קַרְשֵׁ֥י צֶֽלַע הַ/מִּשְׁכָּ֖ן הָ/אֶחָֽת׃",
+        "LXX": "τὸ δὲ περιστόμιον τοῦ ὑποδύτου ἐν τῷ μέσῳ διυφασμένον συνπλεκτόν, ᾤαν ἔχον κύκλῳ τὸ περιστόμιον ἀδιάλυτον.",
+        "VUL": "Fecit et vectes de lignis setim, quinque ad continendas tabulas unius lateris tabernaculi,",
+        "SYN": "И сделал шесты из дерева ситтим, пять для брусьев одной стороны скинии,",
+        "NEO": "On fit des traverses de bois d’acacia, cinq pour les planches de l’un des côtés de la Demeure,",
+        "NAB": "Bars of acacia wood were also made, five for the boards on one side of the Dwelling,",
+        "VAT_ES": "Luego hicieron cinco travesaños de madera de acacia para mantener alineados los bastidores que estaban a un lado de la Morada,",
+        "CEI": "Fece inoltre traverse di legno di acacia: cinque per le assi di un lato della Dimora,"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/חֲמִשָּׁ֣ה בְרִיחִ֔ם לְ/קַרְשֵׁ֥י צֶֽלַע הַ/מִּשְׁכָּ֖ן הַ/שֵּׁנִ֑ית וַ/חֲמִשָּׁ֤ה בְרִיחִם֙ לְ/קַרְשֵׁ֣י הַ/מִּשְׁכָּ֔ן לַ/יַּרְכָתַ֖יִם יָֽמָּ/ה׃",
+        "LXX": "καὶ ἐποίησαν ἐπὶ τοῦ λώματος τοῦ ὑποδύτου κάτωθεν ὡς ἐξανθούσης ῥόας ῥοίσκους, ἐξ ὑακίνθου καὶ πορφύρας καὶ κοκκίνου νενησμένου καὶ βύσσου κεκλωσμένης.",
+        "VUL": "et quinque alios ad alterius lateris coaptandas tabulas : et extra hos, quinque alios vectes ad occidentalem plagam tabernaculi contra mare.",
+        "SYN": "и пять шестов для брусьев другой стороны скинии, и пять шестов для брусьев задней стороны скинии;",
+        "NEO": "cinq traverses pour les planches du second côté de la Demeure, et cinq traverses pour les planches du côté de la Demeure qui en forme le fond, vers l’occident.",
+        "NAB": "five for those on the other side, and five for those at the rear, to the west.",
+        "VAT_ES": "cinco travesaños para los del otro lado, y otros cinco para los del fondo de la Morada, que daba hacia el oeste.",
+        "CEI": "cinque traverse per le assi dell'altro lato della Dimora e cinque traverse per le assi della parte posteriore, verso occidente."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יַּ֖עַשׂ אֶת הַ/בְּרִ֣יחַ הַ/תִּיכֹ֑ן לִ/בְרֹ֨חַ֙ בְּ/ת֣וֹךְ הַ/קְּרָשִׁ֔ים מִן הַ/קָּצֶ֖ה אֶל הַ/קָּצֶֽה׃",
+        "LXX": "καὶ ἐποίησαν κώδωνας χρυσοῦς, καὶ ἐπέθηκαν τοὺς κώδωνας ἐπὶ τὸ λῶμα τοῦ ὑποδύτου κύκλῳ ἀνὰ μέσον τῶν ῥοίσκων·",
+        "VUL": "Fecit quoque vectem alium, qui per medias tabulas ab angulo usque ad angulum perveniret.",
+        "SYN": "и сделал внутренний шест, который проходил бы по средине брусьев от одного конца до другого;",
+        "NEO": "La traverse du milieu s’étendait, le long des planches, d’une extrémité à l’autre.",
+        "NAB": "The center bar, at the middle of the boards, was made to reach across from end to end.",
+        "VAT_ES": "Y el travesaño central lo hicieron de tal manera que pudiera pasar a media altura de los bastidores, de un extremo hasta el otro.",
+        "CEI": "Fece la traversa mediana che, a mezza altezza delle assi, le attraversava da una estremità all'altra."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְֽ/אֶת הַ/קְּרָשִׁ֞ים צִפָּ֣ה זָהָ֗ב וְ/אֶת טַבְּעֹתָ/ם֙ עָשָׂ֣ה זָהָ֔ב בָּתִּ֖ים לַ/בְּרִיחִ֑ם וַ/יְצַ֥ף אֶת הַ/בְּרִיחִ֖ם זָהָֽב׃",
+        "LXX": "κώδων χρυσοῦς καὶ ῥοίσκος ἐπὶ τοῦ λώματος τοῦ ὑποδύτου κύκλῳ, εἰς τὸ λειτουργεῖν, καθὰ συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "Ipsa autem tabulata deauravit, fusis basibus earum argenteis. Et circulos eorum fecit aureos, per quos vectes induci possent : quos et ipsos laminis aureis operuit.",
+        "SYN": "брусья обложил золотом, и кольца, в которые вкладываются шесты, сделал из золота, и шесты обложил золотом.",
+        "NEO": "On revêtit d’or les planches, et l’on fit d’or leurs anneaux qui recevaient les traverses, et l’on revêtit d’or les traverses.",
+        "NAB": "The boards were plated with gold, and gold rings were made on them as holders for the bars, which were also plated with gold.",
+        "VAT_ES": "Finalmente, recubrieron de oro los bastidores, les pusieron unas argollas de oro para pasar por ellas los travesaños, y también a estos últimos los recubrieron de oro.",
+        "CEI": "Rivestì d'oro le assi, fece in oro i loro anelli, che servivano per inserire le traverse, e rivestì d'oro anche le traverse."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַשׂ֙ אֶת הַ/פָּרֹ֔כֶת תְּכֵ֧לֶת וְ/אַרְגָּמָ֛ן וְ/תוֹלַ֥עַת שָׁנִ֖י וְ/שֵׁ֣שׁ מָשְׁזָ֑ר מַעֲשֵׂ֥ה חֹשֵׁ֛ב עָשָׂ֥ה אֹתָ֖/הּ כְּרֻבִֽים׃",
+        "LXX": "Καὶ ἐποίησαν χιτῶνας βυσσίνους ἔργον ὑφαντὸν Ἀαρὼν καὶ τοῖς υἱοῖς αὐτοῦ,",
+        "VUL": "Fecit et velum de hyacintho, et purpura, vermiculo, ac bysso retorta, opere polymitario, varium atque distinctum :",
+        "SYN": "И сделал завесу из голубой, пурпуровой и червленой _шерсти_ и из крученого виссона, и искусною работою сделал на ней херувимов;",
+        "NEO": "On fit le voile de pourpre violette, de pourpre écarlate, de cramoisi, et de lin retors ; on y représenta des chérubins figurés : ouvrage d’un habile tisseur.",
+        "NAB": "The veil was woven of violet, purple and scarlet yarn, and of fine linen twined, with cherubim embroidered on it.",
+        "VAT_ES": "Hicieron, además, el velo de púrpura violeta y escarlata, de carmesí y de lino fino reforzado, y lo adornaron con figuras de querubines diseñadas artísticamente,",
+        "CEI": "Fece il velo di porpora viola e di porpora rossa, di scarlatto e di bisso ritorto. Lo fece con figure di cherubini, lavoro di disegnatore."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ לָ֗/הּ אַרְבָּעָה֙ עַמּוּדֵ֣י שִׁטִּ֔ים וַ/יְצַפֵּ֣/ם זָהָ֔ב וָוֵי/הֶ֖ם זָהָ֑ב וַ/יִּצֹ֣ק לָ/הֶ֔ם אַרְבָּעָ֖ה אַדְנֵי כָֽסֶף׃",
+        "LXX": "καὶ τὰς κιδάρεις ἐκ βύσσου, καὶ τὴν μίτραν ἐκ βύσσου, καὶ τὰ περισκελῆ ἐκ βύσσου κεκλωσμένης,",
+        "VUL": "et quatuor columnas de lignis setim, quas cum capitibus deauravit, fusis basibus earum argenteis.",
+        "SYN": "и сделал для нее четыре столба из ситтим и обложил их золотом, с золотыми крючками, и вылил для них четыре серебряных подножия.",
+        "NEO": "On fit pour lui quatre colonnes d’acacia, revêtues d’or, avec des crochets d’or ; et l’on fondit pour elles quatre socles d’argent.",
+        "NAB": "Four gold-plated columns of acacia wood, with gold hooks, were made for it, and four silver pedestals were cast for them.",
+        "VAT_ES": "Para colgarlo, hicieron cuatro columnas de madera de acacia revestidas de oro y provistas de ganchos de oro, que apoyaron sobre cuatro bases de plata fundida.",
+        "CEI": "Fece per esso quattro colonne di acacia, le rivestì d'oro; anche i loro uncini erano d'oro e fuse per esse quattro basi d'argento."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤עַשׂ מָסָךְ֙ לְ/פֶ֣תַח הָ/אֹ֔הֶל תְּכֵ֧לֶת וְ/אַרְגָּמָ֛ן וְ/תוֹלַ֥עַת שָׁנִ֖י וְ/שֵׁ֣שׁ מָשְׁזָ֑ר מַעֲשֵׂ֖ה רֹקֵֽם׃",
+        "LXX": "καὶ τὰς ζώνας αὐτῶν ἐκ βύσσου καὶ ὑακίνθου καὶ πορφύρας καὶ κοκκίνου νενησμένου, ἔργον ποικιλτοῦ, ὃν τρόπον συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "Fecit et tentorium in introitu tabernaculi ex hyacintho, purpura, vermiculo, byssoque retorta, opere plumarii :",
+        "SYN": "И сделал завесу ко входу скинии из голубой, пурпуровой и червленой _шерсти_ и из крученого виссона, узорчатой работы,",
+        "NEO": "On fit pour l’entrée de la tente un rideau en pourpre violette, pourpre écarlate, cramoisi et lin retors, ouvrage d’un dessin varié.",
+        "NAB": "The curtain for the entrance of the tent was made of violet, purple and scarlet yarn, and of fine linen twined, woven in a variegated manner.",
+        "VAT_ES": "Hicieron, asimismo, para la entrada de la carpa, una cortina de púrpura violeta y escarlata, de carmesí y de lino fino reforzado, todo esto recamado artísticamente,",
+        "CEI": "Fecero poi una cortina per l'ingresso della tenda, di porpora viola e di porpora rossa, di scarlatto e di bisso ritorto, lavoro di ricamatore;"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וְ/אֶת עַמּוּדָ֤י/ו חֲמִשָּׁה֙ וְ/אֶת וָ֣וֵי/הֶ֔ם וְ/צִפָּ֧ה רָאשֵׁי/הֶ֛ם וַ/חֲשֻׁקֵי/הֶ֖ם זָהָ֑ב וְ/אַדְנֵי/הֶ֥ם חֲמִשָּׁ֖ה נְחֹֽשֶׁת׃",
+        "LXX": "Καὶ ἐποίησαν τὸ πέταλον τὸ χρυσοῦν, ἀφόρισμα τοῦ ἁγίου, χρυσίου καθαροῦ·",
+        "VUL": "et columnas quinque cum capitibus suis, quas operuit auro, basesque earum fudit æneas.",
+        "SYN": "и пять столбов для нее с крючками; и обложил верхи их и связи их золотом, и _вылил_ пять медных подножий.",
+        "NEO": "On fit pour ce rideau cinq colonnes et leurs crochets et l’on revêtit d’or leurs chapiteaux et leurs tringles ; leurs cinq socles étaient d’airain.",
+        "NAB": "Its five columns, with their hooks as well as their capitals and bands, were plated with gold; their five pedestals were of bronze.",
+        "VAT_ES": "y la sostuvieron con cinco columnas provistas de cinco ganchos. Luego revistieron de oro los capiteles y las varillas de las columnas, y las apoyaron sobre cinco bases de bronce.",
+        "CEI": "le sue cinque colonne con i loro uncini. Rivestì d'oro i loro capitelli e le loro aste trasversali e fece le loro cinque basi di rame."
+      }
+    }
+  }
+}

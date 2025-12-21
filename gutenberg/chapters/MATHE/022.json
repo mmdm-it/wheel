@@ -1,0 +1,843 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MATHE_022",
+  "book_key": "MATHE",
+  "sequence": 22,
+  "chapter_in": {
+    "MT": 22,
+    "VUL": 22,
+    "LXX": 22
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "Et respondens Jesus, dixit iterum in parabolis eis, dicens :",
+        "LXX": "Καὶ ἀποκριθεὶς ὁ Ἰησοῦς πάλιν εἶπεν αὐτοῖς ἐν παραβολαῖς, λέγων,",
+        "SYN": "Иисус, продолжая говорить им притчами, сказал:",
+        "BYZ": "Καὶ ἀποκριθεὶς ὁ Ἰησοῦς πάλιν εἶπεν αὐτοῖς ἐν παραβολαῖς, λέγων,",
+        "NEO": "Jésus, prenant la parole, leur parla de nouveau en paraboles, et il dit :",
+        "NAB": "Jesus again in reply spoke to them in parables, saying,",
+        "VAT_ES": "Jesús les habló otra vez en parábolas, diciendo:",
+        "CEI": "Gesù riprese a parlar loro in parabole e disse:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "Simile factum est regnum cælorum homini regi, qui fecit nuptias filio suo.",
+        "LXX": "Ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ, ὅστις ἐποίησεν γάμους τῷ υἱῷ αὐτοῦ·",
+        "SYN": "Царство Небесное подобно человеку царю, который сделал брачный пир для сына своего",
+        "BYZ": "Ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ, ὅστις ἐποίησεν γάμους τῷ υἱῷ αὐτοῦ·",
+        "NEO": "« Le royaume des cieux est semblable à un roi qui faisait les noces de son fils.",
+        "NAB": "\"The kingdom of heaven may be likened to a king who gave a wedding feast for his son.",
+        "VAT_ES": "«El Reino de los Cielos se parece a un rey que celebraba las bodas de su hijo.",
+        "CEI": "\"Il regno dei cieli è simile a un re che fece un banchetto di nozze per suo figlio."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "Et misit servos suos vocare invitatos ad nuptias, et nolebant venire.",
+        "LXX": "καὶ ἀπέστειλεν τοὺς δούλους αὐτοῦ καλέσαι τοὺς κεκλημένους εἰς τοὺς γάμους, καὶ οὐκ ἤθελον ἐλθεῖν.",
+        "SYN": "и послал рабов своих звать званых на брачный пир; и не хотели придти.",
+        "BYZ": "καὶ ἀπέστειλεν τοὺς δούλους αὐτοῦ καλέσαι τοὺς κεκλημένους εἰς τοὺς γάμους, καὶ οὐκ ἤθελον ἐλθεῖν.",
+        "NEO": "Il envoya ses serviteurs appeler ceux qui avaient été invités aux noces, et ils ne voulurent pas venir.",
+        "NAB": "He dispatched his servants to summon the invited guests to the feast, but they refused to come.",
+        "VAT_ES": "Envió entonces a sus servidores para avisar a los invitados, pero estos se negaron a ir.",
+        "CEI": "Egli mandò i suoi servi a chiamare gli invitati alle nozze, ma questi non vollero venire."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "Iterum misit alios servos, dicens : Dicite invitatis : Ecce prandium meum paravi, tauri mei et altilia occisa sunt, et omnia parata : venite ad nuptias.",
+        "LXX": "Πάλιν ἀπέστειλεν ἄλλους δούλους, λέγων, Εἴπατε τοῖς κεκλημένοις. Ἰδού, τὸ ἄριστόν μου ἡτοίμασα, οἱ ταῦροί μου καὶ τὰ σιτιστὰ τεθυμένα, καὶ πάντα ἕτοιμα· δεῦτε εἰς τοὺς γάμους.",
+        "SYN": "Опять послал других рабов, сказав: скажите званым: вот, я приготовил обед мой, тельцы мои и что откормлено, заколото, и все готово; приходите на брачный пир.",
+        "BYZ": "Πάλιν ἀπέστειλεν ἄλλους δούλους, λέγων, Εἴπατε τοῖς κεκλημένοις. Ἰδού, τὸ ἄριστόν μου ἡτοίμασα, οἱ ταῦροί μου καὶ τὰ σιτιστὰ τεθυμένα, καὶ πάντα ἕτοιμα· δεῦτε εἰς τοὺς γάμους.",
+        "NEO": "Il envoya encore d’autres serviteurs, en disant : Dites aux conviés : Voilà que j’ai préparé mon festin ; on a tué mes bœufs et mes animaux engraissés ; tout est prêt, venez aux noces.",
+        "NAB": "A second time he sent other servants, saying, 'Tell those invited: \"Behold, I have prepared my banquet, my calves and fattened cattle are killed, and everything is ready; come to the feast.\"'",
+        "VAT_ES": "De nuevo envió a otros servidores con el encargo de decir a los invitados: \"Mi banquete está preparado; ya han sido matados mis terneros y mis mejores animales, y todo está a punto: Vengan a las bodas\".",
+        "CEI": "Di nuovo mandò altri servi a dire: Ecco ho preparato il mio pranzo; i miei buoi e i miei animali ingrassati sono già macellati e tutto è pronto; venite alle nozze."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Illi autem neglexerunt : et abierunt, alius in villam suam, alius vero ad negotiationem suam :",
+        "LXX": "Οἱ δὲ ἀμελήσαντες ἀπῆλθον, ὁ μὲν εἰς τὸν ἴδιον ἀγρόν, ὁ δὲ εἰς τὴν ἐμπορίαν αὐτοῦ·",
+        "SYN": "Но они, пренебрегши то, пошли, кто на поле свое, а кто на торговлю свою;",
+        "BYZ": "Οἱ δὲ ἀμελήσαντες ἀπῆλθον, ὁ μὲν εἰς τὸν ἴδιον ἀγρόν, ὁ δὲ εἰς τὴν ἐμπορίαν αὐτοῦ·",
+        "NEO": "Mais ils n’en tinrent pas compte, et ils s’en allèrent, l’un à son champ, l’autre à son négoce ;",
+        "NAB": "Some ignored the invitation and went away, one to his farm, another to his business.",
+        "VAT_ES": "Pero ellos no tuvieron en cuenta la invitación, y se fueron, uno a su campo, otro a su negocio;",
+        "CEI": "Ma costoro non se ne curarono e andarono chi al proprio campo, chi ai propri affari;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "reliqui vero tenuerunt servos ejus, et contumeliis affectos occiderunt.",
+        "LXX": "οἱ δὲ λοιποὶ κρατήσαντες τοὺς δούλους αὐτοῦ ὕβρισαν καὶ ἀπέκτειναν.",
+        "SYN": "прочие же, схватив рабов его, оскорбили и убили _их._",
+        "BYZ": "οἱ δὲ λοιποὶ κρατήσαντες τοὺς δούλους αὐτοῦ ὕβρισαν καὶ ἀπέκτειναν.",
+        "NEO": "et les autres se saisirent des serviteurs, et après les avoir injuriés, ils les tuèrent.",
+        "NAB": "The rest laid hold of his servants, mistreated them, and killed them.",
+        "VAT_ES": "y los demás se apoderaron de los servidores, los maltrataron y los mataron.",
+        "CEI": "altri poi presero i suoi servi, li insultarono e li uccisero."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Rex autem cum audisset, iratus est : et missis exercitibus suis, perdidit homicidas illos, et civitatem illorum succendit.",
+        "LXX": "Καὶ ἀκούσας ὁ βασιλεὺς ἐκεῖνος ὠργίσθη, καὶ πέμψας τὰ στρατεύματα αὐτοῦ ἀπώλεσεν τοὺς φονεῖς ἐκείνους, καὶ τὴν πόλιν αὐτῶν ἐνέπρησεν.",
+        "SYN": "Услышав о сем, царь разгневался, и, послав войска свои, истребил убийц оных и сжег город их.",
+        "BYZ": "Καὶ ἀκούσας ὁ βασιλεὺς ἐκεῖνος ὠργίσθη, καὶ πέμψας τὰ στρατεύματα αὐτοῦ ἀπώλεσεν τοὺς φονεῖς ἐκείνους, καὶ τὴν πόλιν αὐτῶν ἐνέπρησεν.",
+        "NEO": "Le roi, l’ayant appris, entra en colère ; il envoya ses armées, extermina ces meurtriers et brûla leur ville.",
+        "NAB": "The king was enraged and sent his troops, destroyed those murderers, and burned their city.",
+        "VAT_ES": "Al enterarse, el rey se indignó y envió a sus tropas para que acabaran con aquellos homicidas e incendiaran su ciudad.",
+        "CEI": "Allora il re si indignò e, mandate le sue truppe, uccise quegli assassini e diede alle fiamme la loro città."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Tunc ait servis suis : Nuptiæ quidem paratæ sunt, sed qui invitati erant, non fuerunt digni :",
+        "LXX": "Τότε λέγει τοῖς δούλοις αὐτοῦ, Ὁ μὲν γάμος ἕτοιμός ἐστιν, οἱ δὲ κεκλημένοι οὐκ ἦσαν ἄξιοι.",
+        "SYN": "Тогда говорит он рабам своим: брачный пир готов, а званые не были достойны;",
+        "BYZ": "Τότε λέγει τοῖς δούλοις αὐτοῦ, Ὁ μὲν γάμος ἕτοιμός ἐστιν, οἱ δὲ κεκλημένοι οὐκ ἦσαν ἄξιοι.",
+        "NEO": "Alors il dit à ses serviteurs : le festin des noces est prêt, mais les conviés n’en étaient pas dignes.",
+        "NAB": "Then he said to his servants, 'The feast is ready, but those who were invited were not worthy to come.",
+        "VAT_ES": "Luego dijo a sus servidores: \"El banquete nupcial está preparado, pero los invitados no eran dignos de él.",
+        "CEI": "Poi disse ai suoi servi: Il banchetto nuziale è pronto, ma gli invitati non ne erano degni;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "ite ergo ad exitus viarum, et quoscumque inveneritis, vocate ad nuptias.",
+        "LXX": "Πορεύεσθε οὖν ἐπὶ τὰς διεξόδους τῶν ὁδῶν, καὶ ὅσους ἂν εὕρητε, καλέσατε εἰς τοὺς γάμους.",
+        "SYN": "итак пойдите на распутия и всех, кого найдете, зовите на брачный пир.",
+        "BYZ": "Πορεύεσθε οὖν ἐπὶ τὰς διεξόδους τῶν ὁδῶν, καὶ ὅσους ἂν εὕρητε, καλέσατε εἰς τοὺς γάμους.",
+        "NEO": "Allez donc dans les carrefours, et tous ceux que vous trouverez, invitez-les aux noces.",
+        "NAB": "Go out, therefore, into the main roads and invite to the feast whomever you find.'",
+        "VAT_ES": "Salgan a los cruces de los caminos e inviten a todos los que encuentren\".",
+        "CEI": "andate ora ai crocicchi delle strade e tutti quelli che troverete, chiamateli alle nozze."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Et egressi servi ejus in vias, congregaverunt omnes quos invenerunt, malos et bonos : et impletæ sunt nuptiæ discumbentium.",
+        "LXX": "Καὶ ἐξελθόντες οἱ δοῦλοι ἐκεῖνοι εἰς τὰς ὁδοὺς συνήγαγον πάντας ὅσους εὗρον, πονηρούς τε καὶ ἀγαθούς· καὶ ἐπλήσθη ὁ γάμος ἀνακειμένων.",
+        "SYN": "И рабы те, выйдя на дороги, собрали всех, кого только нашли, и злых и добрых; и брачный пир наполнился возлежащими.",
+        "BYZ": "Καὶ ἐξελθόντες οἱ δοῦλοι ἐκεῖνοι εἰς τὰς ὁδοὺς συνήγαγον πάντας ὅσους εὗρον, πονηρούς τε καὶ ἀγαθούς· καὶ ἐπλήσθη ὁ γάμος ἀνακειμένων.",
+        "NEO": "Ces serviteurs, s’étant répandus par les chemins, rassemblèrent tous ceux qu’ils trouvèrent, bons ou mauvais ; et la salle des noces fut remplie de convives.",
+        "NAB": "The servants went out into the streets and gathered all they found, bad and good alike, and the hall was filled with guests.",
+        "VAT_ES": "Los servidores salieron a los caminos y reunieron a todos los que encontraron, buenos y malos, y la sala nupcial se llenó de convidados.",
+        "CEI": "Usciti nelle strade, quei servi raccolsero quanti ne trovarono, buoni e cattivi, e la sala si riempì di commensali."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Intravit autem rex ut videret discumbentes, et vidit ibi hominem non vestitum veste nuptiali.",
+        "LXX": "Εἰσελθὼν δὲ ὁ βασιλεὺς θεάσασθαι τοὺς ἀνακειμένους εἶδεν ἐκεῖ ἄνθρωπον οὐκ ἐνδεδυμένον ἔνδυμα γάμου·",
+        "SYN": "Царь, войдя посмотреть возлежащих, увидел там человека, одетого не в брачную одежду,",
+        "BYZ": "Εἰσελθὼν δὲ ὁ βασιλεὺς θεάσασθαι τοὺς ἀνακειμένους εἶδεν ἐκεῖ ἄνθρωπον οὐκ ἐνδεδυμένον ἔνδυμα γάμου·",
+        "NEO": "Le roi entra pour voir ceux qui étaient à table et ayant aperçu là un homme qui n’était pas revêtu d’une robe nuptiale,",
+        "NAB": "But when the king came in to meet the guests he saw a man there not dressed in a wedding garment.",
+        "VAT_ES": "Cuando el rey entró para ver a los comensales, encontró a un hombre que no tenía el traje de fiesta.",
+        "CEI": "Il re entrò per vedere i commensali e, scorto un tale che non indossava l'abito nuziale,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "Et ait illi : Amice, quomodo huc intrasti non habens vestem nuptialem ? At ille obmutuit.",
+        "LXX": "καὶ λέγει αὐτῷ, Ἑταῖρε, πῶς εἰσῆλθες ὧδε μὴ ἔχων ἔνδυμα γάμου; Ὁ δὲ ἐφιμώθη.",
+        "SYN": "и говорит ему: друг! как ты вошел сюда не в брачной одежде? Он же молчал.",
+        "BYZ": "καὶ λέγει αὐτῷ, Ἑταῖρε, πῶς εἰσῆλθες ὧδε μὴ ἔχων ἔνδυμα γάμου; Ὁ δὲ ἐφιμώθη.",
+        "NEO": "il lui dit : Mon ami, comment es-tu entré ici sans avoir une robe de noces ? Et cet homme resta muet.",
+        "NAB": "He said to him, 'My friend, how is it that you came in here without a wedding garment?' But he was reduced to silence.",
+        "VAT_ES": "\"Amigo, le dijo, &iquest;cómo has entrado aquí sin el traje de fiesta?\". El otro permaneció en silencio.",
+        "CEI": "gli disse: Amico, come hai potuto entrare qui senz'abito nuziale? Ed egli ammutolì."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "Tunc dicit rex ministris : Ligatis manibus et pedibus ejus, mittite eum in tenebras exteriores : ibi erit fletus et stridor dentium.",
+        "LXX": "Τότε εἶπεν ὁ βασιλεὺς τοῖς διακόνοις, Δήσαντες αὐτοῦ πόδας καὶ χεῖρας, ἄρατε αὐτὸν καὶ ἐκβάλετε εἰς τὸ σκότος τὸ ἐξώτερον· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
+        "SYN": "Тогда сказал царь слугам: связав ему руки и ноги, возьмите его и бросьте во тьму внешнюю; там будет плач и скрежет зубов;",
+        "BYZ": "Τότε εἶπεν ὁ βασιλεὺς τοῖς διακόνοις, Δήσαντες αὐτοῦ πόδας καὶ χεῖρας, ἄρατε αὐτὸν καὶ ἐκβάλετε εἰς τὸ σκότος τὸ ἐξώτερον· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
+        "NEO": "Alors le roi dit à ses serviteurs : Liez-lui les mains et les pieds, et jetez-le dans les ténèbres extérieures : c’est là qu’il y aura des pleurs et des grincements de dents.",
+        "NAB": "Then the king said to his attendants, 'Bind his hands and feet, and cast him into the darkness outside, where there will be wailing and grinding of teeth.'",
+        "VAT_ES": "Entonces el rey dijo a los guardias: \"Atenlo de pies y manos, y arrójenlo afuera, a las tinieblas. Allí habrá llanto y rechinar de dientes\".",
+        "CEI": "Allora il re ordinò ai servi: Legatelo mani e piedi e gettatelo fuori nelle tenebre; là sarà pianto e stridore di denti."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Multi enim sunt vocati, pauci vero electi.",
+        "LXX": "Πολλοὶ γάρ εἰσιν κλητοί, ὀλίγοι δὲ ἐκλεκτοί.",
+        "SYN": "ибо много званых, а мало избранных.",
+        "BYZ": "Πολλοὶ γάρ εἰσιν κλητοί, ὀλίγοι δὲ ἐκλεκτοί.",
+        "NEO": "Car il y a beaucoup d’appelés, mais peu d’élus. »",
+        "NAB": "Many are invited, but few are chosen.\"",
+        "VAT_ES": "Porque muchos son llamados, pero pocos son elegidos».",
+        "CEI": "Perché molti sono chiamati, ma pochi eletti\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Tunc abeuntes pharisæi, consilium inierunt ut caperent eum in sermone.",
+        "LXX": "Τότε πορευθέντες οἱ Φαρισαῖοι συμβούλιον ἔλαβον ὅπως αὐτὸν παγιδεύσωσιν ἐν λόγῳ.",
+        "SYN": "Тогда фарисеи пошли и совещались, как бы уловить Его в словах.",
+        "BYZ": "¶Τότε πορευθέντες οἱ Φαρισαῖοι συμβούλιον ἔλαβον ὅπως αὐτὸν παγιδεύσωσιν ἐν λόγῳ.",
+        "NEO": "Alors les Pharisiens s’étant retirés, se concertèrent pour surprendre Jésus dans ses paroles.+ 22:15 XXII, 15. Cf. Marc, xii, 13-17 ; Luc, xx, 20-26.*",
+        "NAB": "Then the Pharisees went off and plotted how they might entrap him in speech.",
+        "VAT_ES": "Los fariseos se reunieron entonces para sorprender a Jesús en alguna de sus afirmaciones.",
+        "CEI": "Allora i farisei, ritiratisi, tennero consiglio per vedere di coglierlo in fallo nei suoi discorsi."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "Et mittunt ei discipulos suos cum Herodianis, dicentes : Magister, scimus quia verax es, et viam Dei in veritate doces, et non est tibi cura de aliquo : non enim respicis personam hominum :",
+        "LXX": "Καὶ ἀποστέλλουσιν αὐτῷ τοὺς μαθητὰς αὐτῶν μετὰ τῶν Ἡρῳδιανῶν, λέγοντες, Διδάσκαλε, οἴδαμεν ὅτι ἀληθὴς εἶ, καὶ τὴν ὁδὸν τοῦ θεοῦ ἐν ἀληθείᾳ διδάσκεις, καὶ οὐ μέλει σοι περὶ οὐδενός· οὐ γὰρ βλέπεις εἰς πρόσωπον ἀνθρώπων.",
+        "SYN": "И посылают к Нему учеников своих с иродианами, говоря: Учитель! мы знаем, что Ты справедлив, и истинно пути Божию учишь, и не заботишься об угождении кому-либо, ибо не смотришь ни на какое лице;",
+        "BYZ": "Καὶ ἀποστέλλουσιν αὐτῷ τοὺς μαθητὰς αὐτῶν μετὰ τῶν Ἡρῳδιανῶν, λέγοντες, Διδάσκαλε, οἴδαμεν ὅτι ἀληθὴς εἶ, καὶ τὴν ὁδὸν τοῦ θεοῦ ἐν ἀληθείᾳ διδάσκεις, καὶ οὐ μέλει σοι περὶ οὐδενός· οὐ γὰρ βλέπεις εἰς πρόσωπον ἀνθρώπων.",
+        "NEO": "Et ils lui envoyèrent quelques-uns de leurs disciples, avec des Hérodiens+ 22:16 16. Hérodiens, Juifs dévoués à la famille d’Hérode et favorables à la politique romaine.*, lui dire : « Maître, nous savons que vous êtes vrai, et que vous enseignez la voie de Dieu dans la vérité, sans souci de personne ; car vous ne regardez pas à l’apparence des hommes.",
+        "NAB": "They sent their disciples to him, with the Herodians, saying, \"Teacher, we know that you are a truthful man and that you teach the way of God in accordance with the truth. And you are not concerned with anyone's opinion, for you do not regard a person's status.",
+        "VAT_ES": "Y le enviaron a varios discípulos con unos herodianos, para decirle: «Maestro, sabemos que eres sincero y que enseñas con toda fidelidad el camino de Dios, sin tener en cuenta la condición de las personas, porque tú no te fijas en la categoría de nadie.",
+        "CEI": "Mandarono dunque a lui i propri discepoli, con gli erodiani, a dirgli: \"Maestro, sappiamo che sei veritiero e insegni la via di Dio secondo verità e non hai soggezione di nessuno perché non guardi in faccia ad alcuno."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "dic ergo nobis quid tibi videtur, licet censum dare Cæsari, an non ?",
+        "LXX": "Εἰπὲ οὖν ἡμῖν, τί σοι δοκεῖ; Ἔξεστιν δοῦναι κῆνσον Καίσαρι, ἢ οὔ;",
+        "SYN": "итак скажи нам: как Тебе кажется? позволительно ли давать подать кесарю, или нет?",
+        "BYZ": "Εἰπὲ οὖν ἡμῖν, τί σοι δοκεῖ; Ἔξεστιν δοῦναι κῆνσον Καίσαρι, ἢ οὔ;",
+        "NEO": "Dites-nous donc ce qu’il vous semble : Est-il permis, ou non, de payer le tribut à César ? »",
+        "NAB": "Tell us, then, what is your opinion: Is it lawful to pay the census tax to Caesar or not?\"",
+        "VAT_ES": "Dinos qué te parece: &iquest;Está permitido pagar el impuesto al César o no?».",
+        "CEI": "Dicci dunque il tuo parere: È lecito o no pagare il tributo a Cesare?\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Cognita autem Jesus nequitia eorum, ait : Quid me tentatis, hypocritæ ?",
+        "LXX": "Γνοὺς δὲ ὁ Ἰησοῦς τὴν πονηρίαν αὐτῶν εἶπεν, Τί με πειράζετε, ὑποκριταί;",
+        "SYN": "Но Иисус, видя лукавство их, сказал: что искушаете Меня, лицемеры?",
+        "BYZ": "Γνοὺς δὲ ὁ Ἰησοῦς τὴν πονηρίαν αὐτῶν εἶπεν, Τί με πειράζετε, ὑποκριταί;",
+        "NEO": "Jésus, connaissant leur malice, leur dit : « Hypocrites, pourquoi me tentez-vous ?",
+        "NAB": "Knowing their malice, Jesus said, \"Why are you testing me, you hypocrites?",
+        "VAT_ES": "Pero Jesús, conociendo su malicia, les dijo: «Hipócritas, &iquest;por qué me tienden una trampa?",
+        "CEI": "Ma Gesù, conoscendo la loro malizia, rispose: \"Ipocriti, perché mi tentate?"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "ostendite mihi numisma census. At illi obtulerunt ei denarium.",
+        "LXX": "Ἐπιδείξατέ μοι τὸ νόμισμα τοῦ κήνσου. Οἱ δὲ προσήνεγκαν αὐτῷ δηνάριον.",
+        "SYN": "покажите Мне монету, которою платится подать. Они принесли Ему динарий.",
+        "BYZ": "Ἐπιδείξατέ μοι τὸ νόμισμα τοῦ κήνσου. Οἱ δὲ προσήνεγκαν αὐτῷ δηνάριον.",
+        "NEO": "Montrez-moi la monnaie du tribut. » Ils lui présentèrent un denier.",
+        "NAB": "Show me the coin that pays the census tax.\" Then they handed him the Roman coin.",
+        "VAT_ES": "Muéstrenme la moneda con que pagan el impuesto». Ellos le presentaron un denario.",
+        "CEI": "Mostratemi la moneta del tributo\". Ed essi gli presentarono un denaro."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "Et ait illis Jesus : Cujus est imago hæc, et superscriptio ?",
+        "LXX": "Καὶ λέγει αὐτοῖς, Τίνος ἡ εἰκὼν αὕτη καὶ ἡ ἐπιγραφή;",
+        "SYN": "И говорит им: чье это изображение и надпись?",
+        "BYZ": "Καὶ λέγει αὐτοῖς, Τίνος ἡ εἰκὼν αὕτη καὶ ἡ ἐπιγραφή;",
+        "NEO": "Et Jésus leur dit : « De qui est cette image et cette inscription ?",
+        "NAB": "He said to them, \"Whose image is this and whose inscription?\"",
+        "VAT_ES": "Y él les preguntó: «&iquest;De quién es esta figura y esta inscripción?».",
+        "CEI": "Egli domandò loro: \"Di chi è questa immagine e l'iscrizione?\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Dicunt ei : Cæsaris. Tunc ait illis : Reddite ergo quæ sunt Cæsaris, Cæsari : et quæ sunt Dei, Deo.",
+        "LXX": "Λέγουσιν αὐτῷ, Καίσαρος. Τότε λέγει αὐτοῖς, Ἀπόδοτε οὖν τὰ Καίσαρος Καίσαρι, καὶ τὰ τοῦ θεοῦ τῷ θεῷ.",
+        "SYN": "Говорят Ему: кесаревы. Тогда говорит им: итак отдавайте кесарево кесарю, а Божие Богу.",
+        "BYZ": "Λέγουσιν αὐτῷ, Καίσαρος. Τότε λέγει αὐτοῖς, Ἀπόδοτε οὖν τὰ Καίσαρος Καίσαρι, καὶ τὰ τοῦ θεοῦ τῷ θεῷ.",
+        "NEO": "— De César, » lui dirent-ils. Alors Jésus leur répondit : « Rendez donc à César ce qui est à César, et à Dieu ce qui est à Dieu. »",
+        "NAB": "They replied, \"Caesar's.\" At that he said to them, \"Then repay to Caesar what belongs to Caesar and to God what belongs to God.\"",
+        "VAT_ES": "Le respondieron: «Del César». Jesús les dijo: «Den al César lo que es del César, y a Dios, lo que es de Dios».",
+        "CEI": "Gli risposero: \"Di Cesare\". Allora disse loro: \"Rendete dunque a Cesare quello che è di Cesare e a Dio quello che è di Dio\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Et audientes mirati sunt, et relicto eo abierunt.",
+        "LXX": "Καὶ ἀκούσαντες ἐθαύμασαν· καὶ ἀφέντες αὐτὸν ἀπῆλθον.",
+        "SYN": "Услышав это, они удивились и, оставив Его, ушли.",
+        "BYZ": "Καὶ ἀκούσαντες ἐθαύμασαν· καὶ ἀφέντες αὐτὸν ἀπῆλθον.",
+        "NEO": "Cette réponse les remplit d’admiration, et, le quittant, ils s’en allèrent.",
+        "NAB": "When they heard this they were amazed, and leaving him they went away.",
+        "VAT_ES": "Al oír esto, quedaron admirados y, dejando a Jesús, se fueron.",
+        "CEI": "A queste parole rimasero sorpresi e, lasciatolo, se ne andarono."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "In illo die accesserunt ad eum sadducæi, qui dicunt non esse resurrectionem : et interrogaverunt eum,",
+        "LXX": "Ἐν ἐκείνῃ τῇ ἡμέρᾳ προσῆλθον αὐτῷ Σαδδουκαῖοι, οἱ λέγοντες μὴ εἶναι ἀνάστασιν, καὶ ἐπηρώτησαν αὐτόν,",
+        "SYN": "В тот день приступили к Нему саддукеи, которые говорят, что нет воскресения, и спросили Его:",
+        "BYZ": "¶Ἐν ἐκείνῃ τῇ ἡμέρᾳ προσῆλθον αὐτῷ Σαδδουκαῖοι, οἱ λέγοντες μὴ εἶναι ἀνάστασιν, καὶ ἐπηρώτησαν αὐτόν,",
+        "NEO": "Le même jour, des Sadducéens, qui nient la résurrection+ 22:23 23. Cf. Marc, xii, 18-27 ; Luc, xx, 27-40. — Les Sadducéens s’en tenaient à la Loi, à la pure justice légale, \\+qt tsedaqah\\+qt*, par opposition aux observances traditionnelles des Pharisiens. Ils étaient pratiquement sceptiques et épicuriens ; ils niaient non seulement la résurrection des corps, mais l’immortalité de l’âme. L’esprit n’était pour eux qu’une matière subtile qui se dissolvait à la mort. Act. xxiii, 8 ; Joseph, \\+qt Ant. Jud.\\+qt* xxviii, i, 4. L’esprit, selon eux, ne pouvant avoir une existence indépendante de celle du corps, qui prouvait la survivance personnelle, prouvait par conséquent la résurrection. (S. Jérôme.)*, vinrent à lui et lui proposèrent cette question :",
+        "NAB": "On that day Sadducees approached him, saying that there is no resurrection. They put this question to him,",
+        "VAT_ES": "Aquel mismo día se le acercaron unos saduceos, que son los que niegan la resurrección, y le propusieron este caso:",
+        "CEI": "In quello stesso giorno vennero a lui dei sadducei, i quali affermano che non c'è risurrezione, e lo interrogarono:"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "dicentes : Magister, Moyses dixit : Si quis mortuus fuerit non habens filium, ut ducat frater ejus uxorem illius, et suscitet semen fratri suo.",
+        "LXX": "λέγοντες, Διδάσκαλε, Μωσῆς εἶπεν, Ἐάν τις ἀποθάνῃ μὴ ἔχων τέκνα, ἐπιγαμβρεύσει ὁ ἀδελφὸς αὐτοῦ τὴν γυναῖκα αὐτοῦ, καὶ ἀναστήσει σπέρμα τῷ ἀδελφῷ αὐτοῦ.",
+        "SYN": "Учитель! Моисей сказал: если кто умрет, не имея детей, то брат его пусть возьмет за себя жену его и восстановит семя брату своему;",
+        "BYZ": "λέγοντες, Διδάσκαλε, Μωσῆς εἶπεν, Ἐάν τις ἀποθάνῃ μὴ ἔχων τέκνα, ἐπιγαμβρεύσει ὁ ἀδελφὸς αὐτοῦ τὴν γυναῖκα αὐτοῦ, καὶ ἀναστήσει σπέρμα τῷ ἀδελφῷ αὐτοῦ.",
+        "NEO": "« Maître, Moïse a dit : \\+w Si|strong=\"G1437\"\\+w* \\+w un|strong=\"G2532\"\\+w* \\+w homme|strong=\"G2532\"\\+w* \\+w meurt|strong=\"G2532\"\\+w* \\+w sans|strong=\"G3361\"\\+w* \\+w laisser|strong=\"G2532\"\\+w* \\+w d|strong=\"G2532\"\\+w*’\\+w enfant|strong=\"G5043\"\\+w*, \\+w que|strong=\"G2532\"\\+w* \\+w son|strong=\"G2532\"\\+w* \\+w frère|strong=\"G2532\"\\+w* \\+w épouse|strong=\"G1135\"\\+w* \\+w sa|strong=\"G2532\"\\+w* \\+w femme|strong=\"G1135\"\\+w* \\+w et|strong=\"G2532\"\\+w* \\+w suscite|strong=\"G3588\"\\+w* \\+w des|strong=\"G2532\"\\+w* \\+w enfants|strong=\"G5043\"\\+w* \\+w à|strong=\"G2532\"\\+w* \\+w son|strong=\"G2532\"\\+w* \\+w frère|strong=\"G2532\"\\+w**+ 22:24 24. Deut. xxv, 5, 6. C’est la loi du lévirat, du lat. \\+qt levir\\+qt*, beau-frère.*.",
+        "NAB": "saying, \"Teacher, Moses said, 'If a man dies without children, his brother shall marry his wife and raise up descendants for his brother.'",
+        "VAT_ES": "«Maestro, Moisés dijo: \"Si alguien muere sin tener hijos, que su hermano, para darle descendencia, se case con la viuda\".",
+        "CEI": "\"Maestro, Mosè ha detto: Se qualcuno muore senza figli, il fratello ne sposerà la vedova e così susciterà una discendenza al suo fratello."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "Erant autem apud nos septem fratres : et primus, uxore ducta, defunctus est : et non habens semen, reliquit uxorem suam fratri suo.",
+        "LXX": "Ἦσαν δὲ παρ’ ἡμῖν ἑπτὰ ἀδελφοί· καὶ ὁ πρῶτος γαμήσας ἐτελεύτησεν· καὶ μὴ ἔχων σπέρμα, ἀφῆκεν τὴν γυναῖκα αὐτοῦ τῷ ἀδελφῷ αὐτοῦ.",
+        "SYN": "было у нас семь братьев; первый, женившись, умер и, не имея детей, оставил жену свою брату своему;",
+        "BYZ": "Ἦσαν δὲ παρ’ ἡμῖν ἑπτὰ ἀδελφοί· καὶ ὁ πρῶτος γαμήσας ἐτελεύτησεν· καὶ μὴ ἔχων σπέρμα, ἀφῆκεν τὴν γυναῖκα αὐτοῦ τῷ ἀδελφῷ αὐτοῦ.",
+        "NEO": "Or, il y avait parmi nous sept frères ; le premier prit une femme et mourut, et comme il n’avait pas d’enfant, il laissa sa femme à son frère.",
+        "NAB": "Now there were seven brothers among us. The first married and died and, having no descendants, left his wife to his brother.",
+        "VAT_ES": "Ahora bien, había entre nosotros siete hermanos. El primero se casó y como murió sin tener hijos, dejó su esposa al hermano.",
+        "CEI": "Ora, c'erano tra noi sette fratelli; il primo appena sposato morì e, non avendo discendenza, lasciò la moglie a suo fratello."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Similiter secundus, et tertius usque ad septimum.",
+        "LXX": "Ὁμοίως καὶ ὁ δεύτερος, καὶ ὁ τρίτος, ἕως τῶν ἑπτά.",
+        "SYN": "подобно и второй, и третий, даже до седьмого;",
+        "BYZ": "Ὁμοίως καὶ ὁ δεύτερος, καὶ ὁ τρίτος, ἕως τῶν ἑπτά.",
+        "NEO": "La même chose arriva au second, puis au troisième, jusqu’au septième.",
+        "NAB": "The same happened with the second and the third, through all seven.",
+        "VAT_ES": "Lo mismo ocurrió con el segundo, después con el tercero, y así sucesivamente hasta el séptimo.",
+        "CEI": "Così anche il secondo, e il terzo, fino al settimo."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "Novissime autem omnium et mulier defuncta est.",
+        "LXX": "Ὕστερον δὲ πάντων ἀπέθανεν καὶ ἡ γυνή.",
+        "SYN": "после же всех умерла и жена;",
+        "BYZ": "Ὕστερον δὲ πάντων ἀπέθανεν καὶ ἡ γυνή.",
+        "NEO": "Après eux tous, la femme aussi mourut.",
+        "NAB": "Finally the woman died.",
+        "VAT_ES": "Finalmente, murió la mujer.",
+        "CEI": "Alla fine, dopo tutti, morì anche la donna."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "In resurrectione ergo cujus erit de septem uxor ? omnes enim habuerunt eam.",
+        "LXX": "Ἐν τῇ οὖν ἀναστάσει, τίνος τῶν ἑπτὰ ἔσται γυνή; Πάντες γὰρ ἔσχον αὐτήν.",
+        "SYN": "итак, в воскресении, которого из семи будет она женою? ибо все имели ее.",
+        "BYZ": "Ἐν τῇ οὖν ἀναστάσει, τίνος τῶν ἑπτὰ ἔσται γυνή; Πάντες γὰρ ἔσχον αὐτήν.",
+        "NEO": "Au temps de la résurrection, duquel des sept frères sera-t-elle la femme ? Car tous l’ont eue ? »",
+        "NAB": "Now at the resurrection, of the seven, whose wife will she be? For they all had been married to her.\"",
+        "VAT_ES": "Respóndenos: cuando resuciten los muertos, &iquest;de cuál de los siete será esposa, ya que lo fue de todos?».",
+        "CEI": "Alla risurrezione, di quale dei sette essa sarà moglie? Poiché tutti l'hanno avuta\"."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "Respondens autem Jesus, ait illis : Erratis nescientes Scripturas, neque virtutem Dei.",
+        "LXX": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς, Πλανᾶσθε, μὴ εἰδότες τὰς γραφάς, μηδὲ τὴν δύναμιν τοῦ θεοῦ.",
+        "SYN": "Иисус сказал им в ответ: заблуждаетесь, не зная Писаний, ни силы Божией,",
+        "BYZ": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς, Πλανᾶσθε, μὴ εἰδότες τὰς γραφάς, μηδὲ τὴν δύναμιν τοῦ θεοῦ.",
+        "NEO": "Jésus leur répondit : « Vous êtes dans l’erreur, ne comprenant ni les Écritures, ni la puissance de Dieu.",
+        "NAB": "Jesus said to them in reply, \"You are misled because you do not know the scriptures or the power of God.",
+        "VAT_ES": "Jesús les dijo: «Están equivocados, porque desconocen las Escrituras y el poder de Dios.",
+        "CEI": "E Gesù rispose loro: \"Voi vi ingannate, non conoscendo né le Scritture né la potenza di Dio."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "In resurrectione enim neque nubent, neque nubentur : sed erunt sicut angeli Dei in cælo.",
+        "LXX": "Ἐν γὰρ τῇ ἀναστάσει οὔτε γαμοῦσιν, οὔτε ἐκγαμίζονται, ἀλλ’ ὡς ἄγγελοι τοῦ θεοῦ ἐν οὐρανῷ εἰσιν.",
+        "SYN": "ибо в воскресении ни женятся, ни выходят замуж, но пребывают, как Ангелы Божии на небесах.",
+        "BYZ": "Ἐν γὰρ τῇ ἀναστάσει οὔτε γαμοῦσιν, οὔτε ἐκγαμίζονται, ἀλλ’ ὡς ἄγγελοι τοῦ θεοῦ ἐν οὐρανῷ εἰσιν.",
+        "NEO": "Car, à la résurrection, les hommes n’ont pas de femmes, ni les femmes de maris ; mais ils sont comme les anges de Dieu dans le ciel.",
+        "NAB": "At the resurrection they neither marry nor are given in marriage but are like the angels in heaven.",
+        "VAT_ES": "En la resurrección ni los hombres ni las mujeres se casarán, sino que todos serán como ángeles en el cielo.",
+        "CEI": "Alla risurrezione infatti non si prende né moglie né marito, ma si è come angeli nel cielo."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "De resurrectione autem mortuorum non legistis quod dictum est a Deo dicente vobis :",
+        "LXX": "Περὶ δὲ τῆς ἀναστάσεως τῶν νεκρῶν, οὐκ ἀνέγνωτε τὸ ῥηθὲν ὑμῖν ὑπὸ τοῦ θεοῦ, λέγοντος,",
+        "SYN": "А о воскресении мертвых не читали ли вы реченного вам Богом:",
+        "BYZ": "Περὶ δὲ τῆς ἀναστάσεως τῶν νεκρῶν, οὐκ ἀνέγνωτε τὸ ῥηθὲν ὑμῖν ὑπὸ τοῦ θεοῦ, λέγοντος,",
+        "NEO": "Quant à la résurrection des morts, n’avez-vous pas lu ce que Dieu vous a dit, en ces termes :",
+        "NAB": "And concerning the resurrection of the dead, have you not read what was said to you by God,",
+        "VAT_ES": "Y con respecto a la resurrección de los muertos, &iquest;no han leído la palabra de Dios, que dice:",
+        "CEI": "Quanto poi alla risurrezione dei morti, non avete letto quello che vi è stato detto da Dio:"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "Ego sum Deus Abraham, et Deus Isaac, et Deus Jacob ? Non est Deus mortuorum, sed viventium.",
+        "LXX": "Ἐγώ εἰμι ὁ θεὸς Ἀβραάμ, καὶ ὁ θεὸς Ἰσαάκ, καὶ ὁ θεὸς Ἰακώβ; Οὐκ ἔστιν ὁ θεὸς θεὸς νεκρῶν, ἀλλὰ ζώντων.",
+        "SYN": "Я Бог Авраама, и Бог Исаака, и Бог Иакова? Бог не есть Бог мертвых, но живых.",
+        "BYZ": "Ἐγώ εἰμι ὁ θεὸς Ἀβραάμ, καὶ ὁ θεὸς Ἰσαάκ, καὶ ὁ θεὸς Ἰακώβ; Οὐκ ἔστιν ὁ θεὸς θεὸς νεκρῶν, ἀλλὰ ζώντων.",
+        "NEO": "\\+w Je|strong=\"G1473\"\\+w* \\+w suis|strong=\"G1510\"\\+w* \\+w le|strong=\"G2532\"\\+w* \\+w Dieu|strong=\"G2316\"\\+w* \\+w d|strong=\"G2532\"\\+w*’\\+w Abraham|strong=\"G2532\"\\+w*, \\+w le|strong=\"G2532\"\\+w* \\+w Dieu|strong=\"G2316\"\\+w* \\+w d|strong=\"G2532\"\\+w*’\\+w Isaac|strong=\"G2464\"\\+w*, \\+w et|strong=\"G2532\"\\+w* \\+w le|strong=\"G2532\"\\+w* \\+w Dieu|strong=\"G2316\"\\+w* \\+w de|strong=\"G2532\"\\+w* \\+w Jacob|strong=\"G2384\"\\+w** ? Or Dieu n’est pas le Dieu des morts, mais des vivants. »+ 22:32 32. . Dieu a promis de combler à jamais de ses bienfaits Abraham, Isaac et Jacob : il faut donc que ces saints personnages vivent devant lui ; et s’ils vivent dans leur âme, il n’y a plus de difficulté pour que leur corps leur soit un jour rendu. Dans la théologie judaïque, comme dans la pensée des Sadducéens, ces deux choses sont étroitement liées. Comp. Marc, xii, 27 ; Luc, xx, 38.*",
+        "NAB": "'I am the God of Abraham, the God of Isaac, and the God of Jacob'? He is not the God of the dead but of the living.\"",
+        "VAT_ES": "\"Yo soy el Dios de Abraham, el Dios de Isaac y el Dios de Jacob\"? &iexcl;El no es un Dios de muertos, sino de vivientes!».",
+        "CEI": "Io sono il Dio di Abramo e il Dio di Isacco e il Dio di Giacobbe? Ora, non è Dio dei morti, ma dei vivi\"."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "Et audientes turbæ, mirabantur in doctrina ejus.",
+        "LXX": "Καὶ ἀκούσαντες οἱ ὄχλοι ἐξεπλήσσοντο ἐπὶ τῇ διδαχῇ αὐτοῦ.",
+        "SYN": "И, слыша, народ дивился учению Его.",
+        "BYZ": "Καὶ ἀκούσαντες οἱ ὄχλοι ἐξεπλήσσοντο ἐπὶ τῇ διδαχῇ αὐτοῦ.",
+        "NEO": "Et le peuple, en l’écoutant, était rempli d’admiration pour sa doctrine.",
+        "NAB": "When the crowds heard this, they were astonished at his teaching.",
+        "VAT_ES": "La multitud, que había oído esto, quedó asombrada de su enseñanza.",
+        "CEI": "Udendo ciò, la folla era sbalordita per la sua dottrina."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Pharisæi autem audientes quod silentium imposuisset sadducæis, convenerunt in unum :",
+        "LXX": "Οἱ δὲ Φαρισαῖοι, ἀκούσαντες ὅτι ἐφίμωσεν τοὺς Σαδδουκαίους, συνήχθησαν ἐπὶ τὸ αὐτό.",
+        "SYN": "А фарисеи, услышав, что Он привел саддукеев в молчание, собрались вместе.",
+        "BYZ": "¶Οἱ δὲ Φαρισαῖοι, ἀκούσαντες ὅτι ἐφίμωσεν τοὺς Σαδδουκαίους, συνήχθησαν ἐπὶ τὸ αὐτό.",
+        "NEO": "Les Pharisiens ayant appris que Jésus avait réduit au silence les Sadducéens, s’assemblèrent.+ 22:34 34. Cf. Marc, xii, 28-34.*",
+        "NAB": "When the Pharisees heard that he had silenced the Sadducees, they gathered together,",
+        "VAT_ES": "Cuando los fariseos se enteraron de que Jesús había hecho callar a los saduceos, se reunieron en ese lugar,",
+        "CEI": "Allora i farisei, udito che egli aveva chiuso la bocca ai sadducei, si riunirono insieme"
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "VUL": "et interrogavit eum unus ex eis legis doctor, tentans eum :",
+        "LXX": "Καὶ ἐπηρώτησεν εἷς ἐξ αὐτῶν νομικός, πειράζων αὐτόν, καὶ λέγων,",
+        "SYN": "И один из них, законник, искушая Его, спросил, говоря:",
+        "BYZ": "Καὶ ἐπηρώτησεν εἷς ἐξ αὐτῶν νομικός, πειράζων αὐτόν, καὶ λέγων,",
+        "NEO": "Et l’un d’eux, docteur de la loi, lui demanda pour le tenter :",
+        "NAB": "and one of them [a scholar of the law] tested him by asking,",
+        "VAT_ES": "y uno de ellos, que era doctor de la Ley, le preguntó para ponerlo a prueba:",
+        "CEI": "e uno di loro, un dottore della legge, lo interrogò per metterlo alla prova:"
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "VUL": "Magister, quod est mandatum magnum in lege ?",
+        "LXX": "Διδάσκαλε, ποία ἐντολὴ μεγάλη ἐν τῷ νόμῳ;",
+        "SYN": "Учитель! какая наибольшая заповедь в законе?",
+        "BYZ": "Διδάσκαλε, ποία ἐντολὴ μεγάλη ἐν τῷ νόμῳ;",
+        "NEO": "« Maître, quel est le plus grand commandement de la Loi ? »",
+        "NAB": "\"Teacher, which commandment in the law is the greatest?\"",
+        "VAT_ES": "«Maestro, &iquest;cuál es el mandamiento más grande de la Ley?».",
+        "CEI": "\"Maestro, qual è il più grande comandamento della legge?\"."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "VUL": "Ait illi Jesus : Diliges Dominum Deum tuum ex toto corde tuo, et in tota anima tua, et in tota mente tua.",
+        "LXX": "Ὁ δὲ Ἰησοῦς ἔφη αὐτῷ, Ἀγαπήσεις κύριον τὸν θεόν σου, ἐν ὅλῃ καρδίᾳ σου, καὶ ἐν ὅλῃ ψυχῇ σου, καὶ ἐν ὅλῃ τῇ διανοίᾳ σου.",
+        "SYN": "Иисус сказал ему: возлюби Господа Бога твоего всем сердцем твоим и всею душею твоею и всем разумением твоим:",
+        "BYZ": "Ὁ δὲ Ἰησοῦς ἔφη αὐτῷ, Ἀγαπήσεις κύριον τὸν θεόν σου, ἐν ὅλῃ καρδίᾳ σου, καὶ ἐν ὅλῃ ψυχῇ σου, καὶ ἐν ὅλῃ τῇ διανοίᾳ σου.",
+        "NEO": "Jésus lui dit : « \\+w Tu|strong=\"G4771\"\\+w* \\+w aimeras|strong=\"G4771\"\\+w* \\+w le|strong=\"G2532\"\\+w* \\+w Seigneur|strong=\"G2962\"\\+w* \\+w ton|strong=\"G2532\"\\+w* \\+w Dieu|strong=\"G2316\"\\+w* \\+w de|strong=\"G2532\"\\+w* \\+w tout|strong=\"G3650\"\\+w* \\+w ton|strong=\"G2532\"\\+w* \\+w cœur|strong=\"G2588\"\\+w*, \\+w de|strong=\"G2532\"\\+w* \\+w toute|strong=\"G3650\"\\+w* \\+w ton|strong=\"G2532\"\\+w* \\+w âme|strong=\"G5590\"\\+w* \\+w et|strong=\"G2532\"\\+w* \\+w de|strong=\"G2532\"\\+w* \\+w tout|strong=\"G3650\"\\+w* \\+w ton|strong=\"G2532\"\\+w* \\+w esprit|strong=\"G1271\"\\+w**.",
+        "NAB": "He said to him, \"You shall love the Lord, your God, with all your heart, with all your soul, and with all your mind.",
+        "VAT_ES": "Jesús le respondió: «Amarás al Señor, tu Dios, con todo tu corazón, con toda tu alma y con todo tu espíritu.",
+        "CEI": "Gli rispose: \"Amerai il Signore Dio tuo con tutto il cuore, con tutta la tua anima e con tutta la tua mente."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "VUL": "Hoc est maximum, et primum mandatum.",
+        "LXX": "Αὕτη ἐστὶν πρώτη καὶ μεγάλη ἐντολή.",
+        "SYN": "сия есть первая и наибольшая заповедь;",
+        "BYZ": "Αὕτη ἐστὶν πρώτη καὶ μεγάλη ἐντολή.",
+        "NEO": "C’est là le plus grand et le premier commandement.",
+        "NAB": "This is the greatest and the first commandment.",
+        "VAT_ES": "Este es el más grande y el primer mandamiento.",
+        "CEI": "Questo è il più grande e il primo dei comandamenti."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "VUL": "Secundum autem simile est huic : Diliges proximum tuum, sicut teipsum.",
+        "LXX": "Δευτέρα δὲ ὁμοία αὐτῇ, Ἀγαπήσεις τὸν πλησίον σου ὡς σεαυτόν.",
+        "SYN": "вторая же подобная ей: возлюби ближнего твоего, как самого себя;",
+        "BYZ": "Δευτέρα δὲ ὁμοία αὐτῇ, Ἀγαπήσεις τὸν πλησίον σου ὡς σεαυτόν.",
+        "NEO": "Le second lui est semblable : \\+w Tu|strong=\"G4771\"\\+w* \\+w aimeras|strong=\"G4771\"\\+w* \\+w ton|strong=\"G4572\"\\+w* \\+w prochain|strong=\"G4139\"\\+w* \\+w comme|strong=\"G5613\"\\+w* toi-même*.",
+        "NAB": "The second is like it: You shall love your neighbor as yourself.",
+        "VAT_ES": "El segundo es semejante al primero: Amarás a tu prójimo como a ti mismo.",
+        "CEI": "E il secondo è simile al primo: Amerai il prossimo tuo come te stesso."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "VUL": "In his duobus mandatis universa lex pendet, et prophetæ.",
+        "LXX": "Ἐν ταύταις ταῖς δυσὶν ἐντολαῖς ὅλος ὁ νόμος καὶ οἱ προφῆται κρέμανται.",
+        "SYN": "на сих двух заповедях утверждается весь закон и пророки.",
+        "BYZ": "Ἐν ταύταις ταῖς δυσὶν ἐντολαῖς ὅλος ὁ νόμος καὶ οἱ προφῆται κρέμανται.",
+        "NEO": "À ces deux commandements se rattachent toute la Loi, et les Prophètes. »",
+        "NAB": "The whole law and the prophets depend on these two commandments.\"",
+        "VAT_ES": "De estos dos mandamientos dependen toda la Ley y los Profetas».",
+        "CEI": "Da questi due comandamenti dipendono tutta la Legge e i Profeti\"."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "VUL": "Congregatis autem pharisæis, interrogavit eos Jesus,",
+        "LXX": "Συνηγμένων δὲ τῶν Φαρισαίων, ἐπηρώτησεν αὐτοὺς ὁ Ἰησοῦς,",
+        "SYN": "Когда же собрались фарисеи, Иисус спросил их:",
+        "BYZ": "¶Συνηγμένων δὲ τῶν Φαρισαίων, ἐπηρώτησεν αὐτοὺς ὁ Ἰησοῦς,",
+        "NEO": "Les Pharisiens étant assemblés, Jésus leur fit cette question :+ 22:41 41. Cf. Marc, xii, 35-37 ; Luc, xx, 41-44.*",
+        "NAB": "While the Pharisees were gathered together, Jesus questioned them,",
+        "VAT_ES": "Mientras los fariseos estaban reunidos, Jesús les hizo esta pregunta:",
+        "CEI": "Trovandosi i farisei riuniti insieme, Gesù chiese loro:"
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "VUL": "dicens : Quid vobis videtur de Christo ? cujus filius est ? Dicunt ei : David.",
+        "LXX": "λέγων, Τί ὑμῖν δοκεῖ περὶ τοῦ χριστοῦ; Τίνος υἱός ἐστιν; Λέγουσιν αὐτῷ, Τοῦ Δαυίδ.",
+        "SYN": "что вы думаете о Христе? чей Он Сын? Говорят Ему: Давидов.",
+        "BYZ": "λέγων, Τί ὑμῖν δοκεῖ περὶ τοῦ χριστοῦ; Τίνος υἱός ἐστιν; Λέγουσιν αὐτῷ, Τοῦ Δαυίδ.",
+        "NEO": "« Que vous semble du Christ ? De qui est-il fils ? » Ils lui répondirent : « De David. » —",
+        "NAB": "saying, \"What is your opinion about the Messiah? Whose son is he?\" They replied, \"David's.\"",
+        "VAT_ES": "«&iquest;Qué piensan acerca del Mesías? &iquest;De quién es hijo?». Ellos le respondieron: «De David».",
+        "CEI": "\"Che ne pensate del Messia? Di chi è figlio?\". Gli risposero: \"Di Davide\"."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "VUL": "Ait illis : Quomodo ergo David in spiritu vocat eum Dominum, dicens :",
+        "LXX": "Λέγει αὐτοῖς, Πῶς οὖν Δαυὶδ ἐν πνεύματι κύριον αὐτὸν καλεῖ, λέγων,",
+        "SYN": "Говорит им: как же Давид, по вдохновению, называет Его Господом, когда говорит:",
+        "BYZ": "Λέγει αὐτοῖς, Πῶς οὖν Δαυὶδ ἐν πνεύματι κύριον αὐτὸν καλεῖ, λέγων,",
+        "NEO": "« Comment donc, leur dit-il, David inspiré d’en haut l’appelle-t-il Seigneur, en disant :",
+        "NAB": "He said to them, \"How, then, does David, inspired by the Spirit, call him 'lord,' saying:",
+        "VAT_ES": "Jesús les dijo: «&iquest;Por qué entonces, David, movido por el Espíritu, lo llama \"Señor\", cuando dice:",
+        "CEI": "Ed egli a loro: \"Come mai allora Davide, sotto ispirazione, lo chiama Signore, dicendo:"
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "VUL": "Dixit Dominus Domino meo : Sede a dextris meis, donec ponam inimicos tuos scabellum pedum tuorum ?",
+        "LXX": "Εἶπεν ὁ κύριος τῷ κυρίῳ μου, Κάθου ἐκ δεξιῶν μου, ἕως ἂν θῶ τοὺς ἐχθρούς σου ὑποπόδιον τῶν ποδῶν σου;",
+        "SYN": "сказал Господь Господу моему: седи одесную Меня, доколе положу врагов Твоих в подножие ног Твоих?",
+        "BYZ": "Εἶπεν ὁ κύριος τῷ κυρίῳ μου, Κάθου ἐκ δεξιῶν μου, ἕως ἂν θῶ τοὺς ἐχθρούς σου ὑποπόδιον τῶν ποδῶν σου;",
+        "NEO": "\\+w Le|strong=\"G3004\"\\+w* \\+w Seigneur|strong=\"G2962\"\\+w* \\+w a|strong=\"G3004\"\\+w* \\+w dit|strong=\"G3004\"\\+w* \\+w à|strong=\"G3004\"\\+w* \\+w mon|strong=\"G1537\"\\+w* \\+w Seigneur|strong=\"G2962\"\\+w* : Assieds-toi \\+w à|strong=\"G3004\"\\+w* \\+w ma|strong=\"G3588\"\\+w* \\+w droite|strong=\"G1188\"\\+w*, \\+w jusqu|strong=\"G2193\"\\+w*’\\+w à|strong=\"G3004\"\\+w* \\+w ce|strong=\"G3588\"\\+w* \\+w que|strong=\"G3588\"\\+w* \\+w je|strong=\"G1473\"\\+w* \\+w fasse|strong=\"G5087\"\\+w* \\+w de|strong=\"G1537\"\\+w* \\+w tes|strong=\"G1537\"\\+w* \\+w ennemis|strong=\"G2190\"\\+w* \\+w l|strong=\"G3588\"\\+w*’escabeau \\+w de|strong=\"G1537\"\\+w* \\+w tes|strong=\"G1537\"\\+w* \\+w pieds|strong=\"G4228\"\\+w** ?+ 22:44 44. Ps. cx, (hébr.).*",
+        "NAB": "'The Lord said to my lord, \"Sit at my right hand until I place your enemies under your feet\"'?",
+        "VAT_ES": "\"Dijo el Señor a mi Señor: Siéntate a mi derecha, hasta que ponga a tus enemigos debajo de tus pies\"?",
+        "CEI": "Ha detto il Signore al mio Signore: Siedi alla mia destra, finché io non abbia posto i tuoi nemici sotto i tuoi piedi?"
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "VUL": "Si ergo David vocat eum Dominum, quomodo filius ejus est ?",
+        "LXX": "Εἰ οὖν Δαυὶδ καλεῖ αὐτὸν κύριον, πῶς υἱὸς αὐτοῦ ἐστιν;",
+        "SYN": "Итак, если Давид называет Его Господом, как же Он сын ему?",
+        "BYZ": "Εἰ οὖν Δαυὶδ καλεῖ αὐτὸν κύριον, πῶς υἱὸς αὐτοῦ ἐστιν;",
+        "NEO": "Si donc David l’appelle Seigneur, comment est-il son fils ? »",
+        "NAB": "If David calls him 'lord,' how can he be his son?\"",
+        "VAT_ES": "Si David lo llama \"Señor\", &iquest;cómo puede ser hijo suyo?».",
+        "CEI": "Se dunque Davide lo chiama Signore, come può essere suo figlio?\"."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "VUL": "Et nemo poterat ei respondere verbum : neque ausus fuit quisquam ex illa die eum amplius interrogare.",
+        "LXX": "Καὶ οὐδεὶς ἐδύνατο αὐτῷ ἀποκριθῆναι λόγον· οὐδὲ ἐτόλμησέν τις ἀπ’ ἐκείνης τῆς ἡμέρας ἐπερωτῆσαι αὐτὸν οὐκέτι.",
+        "SYN": "И никто не мог отвечать Ему ни слова; и с того дня никто уже не смел спрашивать Его.",
+        "BYZ": "Καὶ οὐδεὶς ἐδύνατο αὐτῷ ἀποκριθῆναι λόγον· οὐδὲ ἐτόλμησέν τις ἀπ’ ἐκείνης τῆς ἡμέρας ἐπερωτῆσαι αὐτὸν οὐκέτι.",
+        "NEO": "Nul ne pouvait rien lui répondre, et, depuis ce jour, personne n’osa plus l’interroger.",
+        "NAB": "No one was able to answer him a word, nor from that day on did anyone dare to ask him any more questions.",
+        "VAT_ES": "Ninguno fue capaz de responderle una sola palabra, y desde aquel día nadie se atrevió a hacerle más preguntas.",
+        "CEI": "Nessuno era in grado di rispondergli nulla; e nessuno, da quel giorno in poi, osò interrogarlo."
+      }
+    }
+  }
+}

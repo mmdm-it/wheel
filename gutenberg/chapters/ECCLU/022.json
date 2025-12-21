@@ -1,0 +1,470 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_022",
+  "book_key": "ECCLU",
+  "sequence": 22,
+  "chapter_in": {
+    "MT": 22,
+    "VUL": 22,
+    "LXX": 22
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Λίθῳ ἠρδαλωμένῳ συνεβλήθη ὀκνηρός, καὶ πᾶς ἐκσυριεῖ ἐπὶ τῇ ἀτιμίᾳ αὐτοῦ.",
+        "VUL": "[In lapide luteo lapidatus est piger :/ et omnes loquentur super aspernationem illius./",
+        "SYN": "Грязному камню подобен ленивый: всякий освищет бесславие его.",
+        "NEO": "Le paresseux ressemble à une pierre remplie d’ordure, et chacun siffle son infamie.",
+        "NAB": "The sluggard is like a stone in the mud; everyone hisses at his disgrace.",
+        "VAT_ES": "El perezoso se parece a una piedra ensuciada: todos silban despectivamente por su deshonra.",
+        "CEI": "Il pigro è simile a una pietra imbrattata, ognuno fischia in suo disprezzo."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "βολβίτῳ κοπρίων συνεβλήθη ὀκνηρός, πᾶς ὁ ἀναιρούμενος αὐτὸν ἐκτινάξει χεῖρα.",
+        "VUL": "De stercore boum lapidatus est piger :/ et omnis qui tetigerit eum excutiet manus.]",
+        "SYN": "Воловьему помету подобен ленивый: всякий, поднявший его, отряхнет руку.",
+        "NEO": "Le paresseux ressemble à une boule de fiente : celui qui la ramasse secoue sa main.",
+        "NAB": "The sluggard is like a lump of dung; whoever touches him wipes his hands.",
+        "VAT_ES": "El perezoso se parece a un montón de excrementos: el que los levanta se sacude las manos.",
+        "CEI": "Il pigro è simile a una palla di sterco, chi la raccoglie scuote la mano."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "αἰσχύνη πατρὸς ἐν γεννήσει ἀπαιδεύτου, θυγάτηρ δὲ ἐπ’ ἐλαττώσει γίνεται.",
+        "VUL": "[Confusio patris est de filio indisciplinato :/ filia autem in deminoratione fiet./",
+        "SYN": "Стыд отцу рождение невоспитанного сына, дочь же  невоспитанная рождается на унижение.",
+        "NEO": "Un fils mal élevé est la honte du père qui lui a donné le jour ; une fille semblable est venue au monde pour son détriment.",
+        "NAB": "An unruly child is a disgrace to its father; if it be a daughter she brings him to poverty.",
+        "VAT_ES": "La verg&uuml;enza de un padre es tener un hijo mal educado, y si es una hija, viene al mundo para su desgracia.",
+        "CEI": "Vergogna per un padre avere un figlio maleducato, se si tratta di una figlia, è la sua rovina."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "θυγάτηρ φρονίμη κληρονομήσει ἄνδρα αὐτῆς, καὶ ἡ καταισχύνουσα εἰς λύπην γεννήσαντος·",
+        "VUL": "Filia prudens hæreditas viro suo :/ nam quæ confundit, in contumeliam fit genitoris./",
+        "SYN": "Разумная дочь приобретет себе мужа, а бесстыдная - печаль родившему.",
+        "NEO": "Une fille prudente trouvera son mari, mais celle dont on a honte fait le chagrin de son père.",
+        "NAB": "A thoughtful daughter becomes a treasure to her husband, a shameless one is her father's grief.",
+        "VAT_ES": "La hija prudente tendrá como herencia un marido, pero la desvergonzada será la tristeza de su padre.",
+        "CEI": "Una figlia prudente sarà un tesoro per il marito, quella disonorevole un dolore per chi l'ha generata."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "πατέρα καὶ ἄνδρα καταισχύνει ἡ θρασεῖα, καὶ ὑπὸ ἀμφοτέρων ἀτιμασθήσεται.",
+        "VUL": "Patrem et virum confundit audax,/ et ab impiis non minorabitur :/ ab utrisque autem inhonorabitur./",
+        "SYN": "Наглая позорит отца и мужа, и у обоих будет в презрении.",
+        "NEO": "L’effrontée fait honte à son père et à son mari ; tous deux la mépriseront.",
+        "NAB": "A hussy shames her father and her husband; by both she is despised.",
+        "VAT_ES": "La hija insolente averg&uuml;enza al padre y al marido, y es despreciada por los dos.",
+        "CEI": "La sfacciata disonora il padre e il marito, e dall'uno e dall'altro sarà disprezzata."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "μουσικὰ ἐν πένθει ἄκαιρος διήγησις, μάστιγες καὶ παιδεία ἐν παντὶ καιρῷ σοφίας.",
+        "VUL": "Musica in luctu importuna narratio :/ flagella et doctrina in omni tempore sapientia.]",
+        "SYN": "Не вовремя рассказ - то же, что музыка во время печали; наказание же и учение мудрости прилично всякому времени.",
+        "NEO": "Telle une musique dans le deuil, tel un sermon à contre-temps ; mais le fouet et la correction sont en tout temps de la sagesse.",
+        "NAB": "Like a song in time of mourning is inopportune talk, but lashes and discipline are at all times wisdom.",
+        "VAT_ES": "Música en un duelo son las palabras inoportunas, pero el castigo y la disciplina son sabiduría en todo tiempo.",
+        "CEI": "Come musica durante il lutto i discorsi fuori tempo, ma frusta e correzione in ogni tempo sono saggezza."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "συνκολλῶν ὄστρακον ὁ διδάσκων μωρόν, ἐξεγείρων καθεύδοντα ἐκ βαθέος ὕπνου·",
+        "VUL": "[Qui docet fatuum,/ quasi qui conglutinat testam./",
+        "SYN": "Поучающий глупого - то же, что склеивающий черепки или пробуждающий спящего от глубокого сна.",
+        "NEO": "Instruire un sot, c’est recoller un pot cassé ; [raconter une chose à qui n’écoute pas], c’est réveiller un homme endormi d’un profond sommeil.",
+        "NAB": "Teaching a fool is like gluing a broken pot, or like disturbing a man in the depths of sleep;",
+        "VAT_ES": "Los hijos que llevan una vida honesta y tienen con qué alimentarse ocultan el origen humilde sus padres.",
+        "CEI": "Incolla cocci chi ammaestra uno stolto, sveglia un dormiglione dal sonno profondo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "διηγούμενος νυστάζοντι ὁ διηγούμενος μωρῷ, καὶ ἐπὶ συντελεὶᾳ ἐρεῖ Τί ἐστιν;",
+        "VUL": "Qui narrat verbum non audienti,/ quasi qui excitat dormientem de gravi somno./",
+        "SYN": "Рассказывающий что-либо глупому - то же, что рассказывающий дремлющему, который по окончании спрашивает: \"что?\"",
+        "NEO": "C’est parler à un homme qui dort que d’entretenir un sot ; à la fin de ton discours, il dira : « Qu’est-ce ? »",
+        "NAB": "He talks with a slumberer who talks with a fool, for when it is over, he will say, \"What was that?\"",
+        "VAT_ES": "Los hijos jactanciosos y mal educados deshonran el noble origen de su familia.",
+        "CEI": "Ragiona con un insonnolito chi ragiona con lo stolto; alla fine egli dirà: \"Che cosa c'è?\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "Cum dormiente loquitur qui enarrat stulto sapientiam :/ et in fine narrationis dicit : Quis est hic ?/",
+        "SYN": "Плачь над умершим, ибо свет исчез для него; плачь и над глупым, ибо разум исчез для него.",
+        "NEO": "Pleure sur un mort, car il est privé de lumière ; pleure sur un sot, car il est privé de bon sens. Pleure doucement sur le mort, car il a trouvé le repos, mais la vie du sot est pire que la mort.",
+        "NAB": "Weep over the dead man, for his light has gone out; weep over the fool, for sense has left him.",
+        "VAT_ES": "Enseñar a un necio es reparar una vasija rota o despertar a alguien de un sueño profundo.",
+        "CEI": "Piangi per un morto, poiché ha perduto la luce; piangi per uno stolto, poiché ha perduto il senno."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Supra mortuum plora, defecit enim lux ejus :/ et supra fatuum plora, defecit enim sensus./",
+        "SYN": "Меньше плачь над умершим, потому что он успокоился, а злая жизнь глупого - хуже смерти.",
+        "NEO": "Le deuil pour un mort dure sept jours ; pour le sot et pour l’impie, il dure tous les jours de leur vie.",
+        "NAB": "Weep but a little over the dead man, for he is at rest; but worse than death is the life of a fool.",
+        "VAT_ES": "Razonar con un necio es razonar con un somnoliento: al final dirá: «&iquest;De qué se trata?».",
+        "CEI": "Piangi meno tristemente per un morto, ché ora riposa, ma la vita dello stolto è peggiore della morte."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἐπὶ νεκρῷ κλαῦσον, ἐξέλιπεν γὰρ φῶς· καὶ ἐπὶ μωρῷ κλαῦσον, ἐξέλιπεν γὰρ σύνεσιν· ἥδιον κλαῦσον ἐπὶ νεκρῷ, ὅτι ἀνεπαύσατο, τοῦ δὲ μωροῦ ὑπὲρ θάνατον ἡ ζωὴ πονηρά.",
+        "VUL": "Modicum plora super mortuum, quoniam requievit :/",
+        "SYN": "Плачь об умершем - семь дней, а о глупом и нечестивом - все дни жизни его.",
+        "NEO": "Avec l’insensé n’aie pas de longs entretiens, et ne va pas avec l’homme dénué de sens. Garde-toi de lui, si tu ne veux pas avoir d’ennui, et tu ne seras pas souillé de son contact. Détourne-toi de lui et tu trouveras le repos, et tu n’auras pas à t’attrister en voyant sa sottise.",
+        "NAB": "Seven days of mourning for the dead, but for the wicked fool a whole lifetime.",
+        "VAT_ES": "Llora por un muerto, porque ha perdido la luz; llora por un necio, porque ha perdido la inteligencia: llora serenamente por un muerto, porque él reposa; la vida del necio, en cambio, es peor que la muerte.",
+        "CEI": "Il lutto per un morto, sette giorni; per uno stolto ed empio tutti i giorni della sua vita."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "πένθος νεκροῦ ἑπτὰ ἡμέραι, μωροῦ δὲ καὶ ἀσεβοῦς πᾶσαι αἱ ἡμέραι τῆς ζωῆς αὐτοῦ.",
+        "VUL": "nequissimi enim nequissima vita super mortem fatui./",
+        "SYN": "С безрассудным много не говори, и к неразумному не ходи;",
+        "NEO": "Qu’est-ce qui est plus lourd que le plomb, et quel autre nom lui donner que celui de sot ?",
+        "NAB": "Speak but seldom with the stupid man, be not the companion of a brute;",
+        "VAT_ES": "El duelo por un muerto dura siete días; por el necio y el impío, todos los días de su vida.",
+        "CEI": "Con un insensato non prolungare il discorso, non frequentare l'insipiente;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "μετὰ ἄφρονος μὴ πληθύνῃς λόγον, καὶ πρὸς ἀσύνετον μὴ πορεύου· φύλαξαι ἀπ’ αὐτοῦ, ἵνα μὴ κόπον ἔχῃς καὶ οὐ μὴ μολυνθῇς ἐν τῷ ἐντιναγμῷ αὐτοῦ· ἔκκλινον ἀπ’ αὐτοῦ καὶ εὑρήσεις ἀνάπαυσιν, καὶ οὐ μὴ ἀκηδιάσῃς ἐν τῇ ἀπονοίᾳ αὐτοῦ.",
+        "VUL": "Luctus mortui septem dies :/ fatui autem et impii omnes dies vitæ illorum./",
+        "SYN": "берегись от него, чтобы не иметь неприятности и не замарать себя столкновением с ним;",
+        "NEO": "Le sable, le sel, une masse de fer sont plus faciles à porter qu’un homme sans intelligence.",
+        "NAB": "Beware of him lest you have trouble and be spattered when he shakes himself; Turn away from him and you will find rest and not be wearied by his lack of sense.",
+        "VAT_ES": "No hables demasiado con un insensato ni vayas con el que no tiene inteligencia; cuídate de él, para no tener molestias y no salpicarte cuando él se sacuda; apártate de él: estarás tranquilo y su estupidez no te fastidiará.",
+        "CEI": "guàrdati da lui, per non avere noie e per non contaminarti al suo contatto. Allontànati da lui e troverai pace, non sarai seccato dalla sua insipienza."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "ὑπὲρ μόλιβον τί βαρυνθήσεται; καὶ τί αὐτῷ ὄνομα ἀλλ’ ἢ μωρός;",
+        "VUL": "Cum stulto ne multum loquaris,/ et cum insensato ne abieris./",
+        "SYN": "уклонись от него и найдешь покой и не будешь огорчен безумием его.",
+        "NEO": "Un assemblage de charpente bien lié pour un édifice ne sera pas disjoint par un tremblement de terre : ainsi le cœur fixé dans un dessein mûrement réfléchi sera sans crainte au moment critique.",
+        "NAB": "What is heavier than lead, and what is its name but \"Fool\"?",
+        "VAT_ES": "&iquest;Qué cosa es más pesada que el plomo, y cómo llamarlo sino «necio»?",
+        "CEI": "Che c'è di più pesante del piombo? E qual è il suo nome, se non \"lo stolto\"?"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ἄμμον καὶ ἅλα καὶ βῶλον σιδήρου εὔκοπον ὑπενεγκεῖν ἢ ἄνθρωπον ἀσύνετον.",
+        "VUL": "Serva te ab illo, ut non molestiam habeas,/ et non coinquinaberis peccato illius./",
+        "SYN": "Что тяжелее свинца? и какое имя ему, как не глупый?",
+        "NEO": "Le cœur qui s’appuie sur une pensée de sagesse est comme l’enduit mêlé de sable sur un mur poli.",
+        "NAB": "Sand and salt and an iron mass are easier to bear than a stupid man.",
+        "VAT_ES": "La arena, la sal y una masa de hierro pesan menos que un hombre sin inteligencia.",
+        "CEI": "Sabbia, sale, palla di ferro sono più facili a portare che un insensato."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ἱμάντωσις ξυλίνη ἐνδεδεμένη εἰς οἰκοδομὴν ἐν συσσεισμῷ οὐ διαλυθήσεται, οὕτως καρδία ἐστηριγμένη ἐπὶ διανοήματος βουλῆς ἐν καιρῷ οὐ δειλιάσει.",
+        "VUL": "Deflecte ab illo, et invenies requiem,/ et non acediaberis in stultitia illius./",
+        "SYN": "Легче понести песок и соль и глыбу железа, нежели человека бессмысленного.",
+        "NEO": "Une palissade sur une hauteur ne tient pas contre le vent : ainsi un cœur timide avec ses folles résolutions ne résistera pas à la crainte.",
+        "NAB": "Masonry bonded with wooden beams is not loosened by an earthquake; Neither is a resolve constructed with careful deliberation shaken in a moment of fear.",
+        "VAT_ES": "Construcción trabada con vigas de madera no se desmorona por un terremoto: así, un corazón afirmado en una convicción madura no se acobardará llegado el momento.",
+        "CEI": "Una travatura di legno ben connessa in una casa non si scompagina in un terremoto, così un cuore deciso dopo matura riflessione non verrà meno al momento del pericolo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "καρδία ἡδρασμένη ἐπὶ διανοίας συνέσεως ὡς κόσμος ψαμμωτὸς τοίχου ξυστοῦ.",
+        "VUL": "Super plumbum quid gravabitur ?/ et quod illi aliud nomen quam fatuus ?/",
+        "SYN": "Как деревянная связь в доме, крепко устроенная, не дает ему распадаться при сотрясении, так сердце, утвержденное на обдуманном совете, не поколеблется во время страха.",
+        "NEO": "Celui qui froisse un œil fait couler des larmes ; celui qui froisse un cœur excite le sentiment de la douleur.",
+        "NAB": "A resolve that is backed by prudent understanding is like the polished surface of a smooth wall.",
+        "VAT_ES": "Un corazón apoyado en una reflexión inteligente es como el estuco que adorna un muro bien pulido.",
+        "CEI": "Un cuore basato su sagge riflessioni è come un intonaco su un muro rifinito."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "χάρακες ἐπὶ μετεώρου κείμενοι κατέναντι ἀνέμου οὐ μὴ ὑπομείνωσιν· οὕτως καρδία δειλὴ ἐπὶ διανοήματος μωροῦ κατέναντι παντὸς φόβου οὐ μὴ ὑπομείνῃ.",
+        "VUL": "Arenam, et salem, et massam ferri facilius est ferre/ quam hominem imprudentem, et fatuum, et impium.]",
+        "SYN": "Сердце, утвержденное на разумном размышлении,- как лепное украшение на вытесанной стене.",
+        "NEO": "Celui qui jette une pierre contre des oiseaux les met en fuite, et celui qui reproche un bienfait à son ami dissout l’amitié.",
+        "NAB": "Small stones lying on an open height will not remain when the wind blows; Neither can a timid resolve based on foolish plans withstand fear of any kind.",
+        "VAT_ES": "Una empalizada puesta sobre una altura no puede resistir los embates del viento: así, un corazón acobardado por ideas necias es incapaz de resistir el miedo.",
+        "CEI": "Una palizzata posta su un'altura di fronte al vento non resiste, così un cuore meschino, basato sulle sue fantasie, di fronte a qualsiasi timore non resiste."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ὁ νύσσων ὀφθαλμὸν κατάξει δάκρυα, καὶ νύσσων καρδίαν ἐκφαίνει αἴσθησιν. ⸆",
+        "VUL": "[Loramentum ligneum colligatum in fundamento ædificii non dissolvetur,/ sic et cor confirmatum in cogitatione consilii./",
+        "SYN": "Подпорка, поставленная на высоте, не устоит против ветра:",
+        "NEO": "As-tu tiré l’épée contre ton ami ? Ne désespère pas ; un retour est possible.",
+        "NAB": "One who jabs the eye brings tears: he who pierces the heart bares its feelings.",
+        "VAT_ES": "El que lastima un ojo, hace brotar las lágrimas; el que lastima el corazón, hace aparecer los sentimientos.",
+        "CEI": "Chi punge un occhio lo farà lacrimare; chi punge un cuore ne scopre il sentimento."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "βάλλων λίθον ἐπὶ πετεινὰ ἀποσοβεῖ αὐτά, καὶ ὁ ὀνειδίζων φίλον διαλύσει φιλίαν.",
+        "VUL": "Cogitatus sensati in omni tempore metu non depravabitur./",
+        "SYN": "так боязливое сердце, при глупом размышлении, не устоит против страха.",
+        "NEO": "As-tu ouvert la bouche contre ton ami ? Sois sans crainte ; la réconciliation est possible. Mais le reproche d’un bienfait, l’arrogance, la révélation d’un secret, un coup de langue perfide : cela met en fuite tous les amis.",
+        "NAB": "He who throws stones at birds drives them away, and he who insults a friend breaks up the friendship.",
+        "VAT_ES": "El que tira una piedra a los pájaros, los espanta; el que afrenta a un amigo, rompe la amistad.",
+        "CEI": "Chi scaglia pietre contro uccelli li mette in fuga, chi offende un amico rompe l'amicizia."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "ἐπὶ φίλον ἐὰν σπάσῃς ῥομφαίαν, μὴ ἀφελπίσῃς, ἔστιν γὰρ ἐπάνοδος·",
+        "VUL": "Sicut pali in excelsis, et cæmenta sine impensa posita,/ contra faciem venti non permanebunt :/",
+        "SYN": "Наносящий удар глазу вызывает слезы, а наносящий удар сердцу возбуждает чувство болезненное.",
+        "NEO": "Reste fidèle à ton prochain dans sa pauvreté, afin que tu jouisses avec lui de sa prospérité. Reste avec lui aux jours de son épreuve, afin que tu aies part aux biens qui lui surviendront.",
+        "NAB": "Should you draw a sword against a friend, despair not, it can be undone.",
+        "VAT_ES": "Si has sacado la espada contra un amigo, no desesperes: es posible volver atrás;",
+        "CEI": "Se hai sguainato la spada contro un amico, non disperare, può esserci un ritorno."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ἐπὶ φίλον ἐὰν ἀνοίξῃς στόμα, μὴ εὐλαβηθῇς, ἔστιν γὰρ διαλλαγή· πλὴν ὀνειδισμοῦ καὶ ὑπερηφανίας καὶ μυστηρίου ἀποκαλύψεως καὶ πληγῆς δολίας· ἐν τούτοις ἀποφεύξεται πᾶς φίλος.",
+        "VUL": "sic et cor timidum in cogitatione stulti/ contra impetum timoris non resistet./",
+        "SYN": "Бросающий камень в птиц отгонит их; а поносящий друга расторгнет дружбу.",
+        "NEO": "Avant le feu s’élèvent la vapeur de la fournaise et la fumée ; de même avant l’effusion du sang retentissent les injures.",
+        "NAB": "Should you speak sharply to a friend, fear not, you can be reconciled. But a contemptuous insult, a confidence broken, or a treacherous attack will drive away any friend.",
+        "VAT_ES": "si has abierto la boca contra un amigo, no te inquietes: es posible la reconciliación. Pero ante la afrenta, el orgullo, la revelación de un secreto y el golpe traicionero, ante esas cosas, huirá cualquier amigo.",
+        "CEI": "Se hai aperto la bocca contro un amico, non temere, può esserci riconciliazione, tranne il caso di insulto e di arroganza, di segreti svelati e di un colpo a tradimento; in questi casi ogni amico scomparirà."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "πίστιν κτῆσαι ἐν πτωχείᾳ μετὰ τοῦ πλησίον, ἵνα ἐν τοῖς ἀγαθοῖς αὐτοῦ ὁμοῦ πλησθῇς· ἐν καιρῷ θλίψεως διάμενε αὐτῷ, ἵνα ἐν τῇ κληρονομίᾳ αὐτοῦ συνκληρονομήσῃς.",
+        "VUL": "Sicut cor trepidum in cogitatione fatui omni tempore non metuet,/ sic et qui in præceptis Dei permanet semper.]",
+        "SYN": "Если ты на друга извлек меч, не отчаивайся, ибо возможно возвращение дружбы.",
+        "NEO": "Je ne rougirai pas de défendre mon ami, et je ne me cacherai pas devant lui ;",
+        "NAB": "Make fast friends with a man while he is poor; thus will you enjoy his prosperity with him. In time of trouble remain true to him, so as to share in his inheritance when it comes.",
+        "VAT_ES": "Gánate la confianza de tu prójimo en su pobreza, para saciarte con él en su prosperidad; permanece con él en el momento de la aflicción y, si él hereda, compartirás su herencia.",
+        "CEI": "Conquìstati la fiducia del prossimo nella sua povertà per godere con lui nella sua prosperità. Nel tempo della tribolazione restagli vicino, per aver parte alla sua eredità."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "πρὸ πυρὸς ἀτμὶς καμίνου καὶ καπνός, οὕτως πρὸ αἱμάτων λοιδορίαι.",
+        "VUL": "[Pungens oculum deducit lacrimas,/ et qui pungit cor profert sensum./",
+        "SYN": "Если ты открыл уста против друга, не бойся, ибо возможно примирение.",
+        "NEO": "et, si quelque mal m’arrive par son fait, quiconque l’apprendra se mettra en garde contre lui.",
+        "NAB": "Before flames burst forth an oven smokes; so does abuse come before bloodshed.",
+        "VAT_ES": "Antes del fuego, hay en el horno vapor y humo: así preceden los insultos a la sangre derramada.",
+        "CEI": "Prima del fuoco vapore e fumo nel camino, così prima dello spargimento del sangue le ingiurie."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "φίλον σκεπάσαι οὐκ αἰσχυνθήσομαι, καὶ ἀπὸ προσώπου αὐτοῦ οὐ μὴ κρυβῶ,",
+        "VUL": "Mittens lapidem in volatilia, dejiciet illa :/ sic et qui conviciatur amico, dissolvit amicitiam./",
+        "SYN": "Только поношение, гордость, обнаружение тайны и коварное злодейство могут отогнать всякого друга.",
+        "NEO": "Qui mettra une garde à ma bouche, et sur mes lèvres un sceau prudent, afin que je ne tombe pas à cause d’elles, et que ma langue ne me perde pas !",
+        "NAB": "From a friend in need of support no one need hide in shame;",
+        "VAT_ES": "No me avergonzaré de proteger a un amigo ni me ocultaré de su presencia;",
+        "CEI": "Non mi vergognerò di proteggere un amico, non mi nasconderò davanti a lui."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "καὶ εἰ κακά μοι συμβήσεται δι’ αὐτόν, πᾶς ὁ ἀκούων φυλάξεται ἀπ’ αὐτοῦ.",
+        "VUL": "Ad amicum etsi produxeris gladium, non desperes :/ est enim regressus./ Ad amicum",
+        "SYN": "Приобретай доверенность ближнего в нищете его, чтобы радоваться вместе с ним при богатстве его;",
+        "NAB": "But from him who brings harm to his friend all will stand aloof who hear of it.",
+        "VAT_ES": "y si por su culpa me sucede algún mal, todo el que se entere se cuidará de él.",
+        "CEI": "Se mi succederà il male a causa sua, chiunque lo venga a sapere si guarderà da lui."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "Τίς δώσει μοι ἐπὶ στόμα μου φυλακὴν καὶ ἐπὶ τῶν χειλέων μου σφραγῖδα πανοῦργον, ἵνα μὴ πέσω ἀπ’ αὐτῆς, καὶ ἡ γλῶσσά μου ἀπολέσῃ με;",
+        "VUL": "si aperueris os triste, non timeas :/ est enim concordatio :/ excepto convitio, et improperio, et superbia,/ et mysterii revelatione, et plaga dolosa :/ in his omnibus effugiet amicus./",
+        "SYN": "оставайся с ним во время скорби, чтобы иметь участие в его наследии.",
+        "NAB": "Who will set a guard over my mouth, and upon my lips an effective seal, That I may not fail through them, that my tongue may not destroy me?",
+        "VAT_ES": "&iexcl;Quién le pusiera a mi boca un centinela y a mis labios un sello de discreción, para que yo no caiga a causa de ellos y mi lengua no me lleve a la ruina!",
+        "CEI": "Chi porrà una guardia sulla mia bocca, sulle mie labbra un sigillo prudente, perché io non cada per colpa loro e la mia lingua non sia la mia rovina?"
+      }
+    }
+  }
+}

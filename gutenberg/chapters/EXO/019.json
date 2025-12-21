@@ -1,0 +1,465 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_019",
+  "book_key": "EXO",
+  "sequence": 19,
+  "chapter_in": {
+    "MT": 19,
+    "VUL": 19,
+    "LXX": 19
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בַּ/חֹ֨דֶשׁ֙ הַ/שְּׁלִישִׁ֔י לְ/צֵ֥את בְּנֵי יִשְׂרָאֵ֖ל מֵ/אֶ֣רֶץ מִצְרָ֑יִם בַּ/יּ֣וֹם הַ/זֶּ֔ה בָּ֖אוּ מִדְבַּ֥ר סִינָֽי׃",
+        "LXX": "Τοῦ δὲ μηνὸς τοῦ τρίτου τῆς ἐξόδου τῶν υἱῶν Ἰσραὴλ ἐκ γῆς Αἰγύπτου τῇ ἡμέρᾳ ταύτῃ ἤλθοσαν εἰς τὴν ἔρημον τοῦ Σεινά.",
+        "VUL": "Mense tertio egressionis Israël de terra Ægypti, in die hac venerunt in solitudinem Sinai.",
+        "SYN": "В третий месяц по исходе сынов Израиля из земли Египетской, в самый день новолуния, пришли они в пустыню Синайскую.",
+        "NEO": "Ce fut au troisième mois après que les enfants d’Israël furent sortis d’Égypte, en ce jour+ 19:1 \\+it En ce jour\\+it*, donnée très indéterminée ; peut-être le \\+it premier jour\\+it*.*, qu’ils arrivèrent au désert de Sinaï.",
+        "NAB": "In the third month after their departure from the land of Egypt, on its first day, the Israelites came to the desert of Sinai.",
+        "VAT_ES": "El primer día del tercer mes, después de su salida de Egipto, los israelitas llegaron al desierto del Sinaí.",
+        "CEI": "Al terzo mese dall'uscita degli Israeliti dal paese di Egitto, proprio in quel giorno, essi arrivarono al deserto del Sinai."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֣וּ מֵ/רְפִידִ֗ים וַ/יָּבֹ֨אוּ֙ מִדְבַּ֣ר סִינַ֔י וַֽ/יַּחֲנ֖וּ בַּ/מִּדְבָּ֑ר וַ/יִּֽחַן שָׁ֥ם יִשְׂרָאֵ֖ל נֶ֥גֶד הָ/הָֽר׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Ῥαφιδεὶν καὶ ἤλθοσαν εἰς τὴν ἔρημον τοῦ Σεινά, καὶ παρενέβαλεν ἐκεῖ Ἰσραὴλ κατέναντι τοῦ ὄρους.",
+        "VUL": "Nam profecti de Raphidim, et pervenientes usque in desertum Sinai, castrametati sunt in eodem loco, ibique Israël fixit tentoria e regione montis.",
+        "SYN": "И двинулись они из Рефидима, и пришли в пустыню Синайскую, и расположились там станом в пустыне; и расположился там Израиль станом против горы.",
+        "NEO": "Ils étaient partis de Raphidim ; arrivés au désert de Sinaï, ils campèrent dans le désert ; Israël campa là, vis-à-vis de la montagne.",
+        "NAB": "After the journey from Rephidim to the desert of Sinai, they pitched camp. While Israel was encamped here in front of the mountain,",
+        "VAT_ES": "Habían partido de Refidim, y cuando llegaron al desierto del Sinaí, establecieron allí su campamento. Israel acampó frente a la montaña.",
+        "CEI": "Levato l'accampamento da Refidim, arrivarono al deserto del Sinai, dove si accamparono; Israele si accampò davanti al monte."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וּ/מֹשֶׁ֥ה עָלָ֖ה אֶל הָ/אֱלֹהִ֑ים וַ/יִּקְרָ֨א אֵלָ֤י/ו יְהוָה֙ מִן הָ/הָ֣ר לֵ/אמֹ֔ר כֹּ֤ה תֹאמַר֙ לְ/בֵ֣ית יַעֲקֹ֔ב וְ/תַגֵּ֖יד לִ/בְנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ Μωσῆς ἀνέβη εἰς τὸ ὄρος τοῦ θεοῦ· καὶ ἐκάλεσεν αὐτὸν ὁ θεὸς ἐκ τοῦ οὐρανοῦ λέγων Τάδε ἐρεῖς τῷ οἴκῳ Ἰακὼβ καὶ ἀναγγελεῖς τοῖς υἱοῖς Ἰσραήλ",
+        "VUL": "Moyses autem ascendit ad Deum : vocavitque eum Dominus de monte, et ait : Hæc dices domui Jacob, et annuntiabis filiis Israël :",
+        "SYN": "Моисей взошел к Богу [на гору], и воззвал к нему Господь с горы, говоря: так скажи дому Иаковлеву и возвести сынам Израилевым:",
+        "NEO": "Moïse monta vers Dieu, et \\+w Yahweh|strong=\"H3068\"\\+w** l’appela du haut de la montagne en disant : « Tu parleras ainsi à la maison de Jacob et tu diras aux enfants d’Israël :",
+        "NAB": "Moses went up the mountain to God. Then the LORD called to him and said, \"Thus shall you say to the house of Jacob;",
+        "VAT_ES": "Moisés subió a encontrarse con Dios. El Señor lo llamó desde la montaña y le dijo: «Habla en estos términos a la casa de Jacob y anuncia este mensaje a los israelitas:",
+        "CEI": "Mosè salì verso Dio e il Signore lo chiamò dal monte, dicendo: \"Questo dirai alla casa di Giacobbe e annuncerai agli Israeliti:"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אַתֶּ֣ם רְאִיתֶ֔ם אֲשֶׁ֥ר עָשִׂ֖יתִי לְ/מִצְרָ֑יִם וָ/אֶשָּׂ֤א אֶתְ/כֶם֙ עַל כַּנְפֵ֣י נְשָׁרִ֔ים וָ/אָבִ֥א אֶתְ/כֶ֖ם אֵלָֽ/י׃",
+        "LXX": "Αὐτοὶ ἑωράκατε ὅσα πεποίηκα τοῖς Αἰγυπτίοις, καὶ ἀνέλαβον ὑμᾶς ὡσεὶ ἐπὶ πτερύγων ἀετῶν, καὶ προσηγαγόμην ὑμᾶς πρὸς ἐμαυτόν.",
+        "VUL": "Vos ipsi vidistis quæ fecerim Ægyptiis, quomodo portaverim vos super alas aquilarum, et assumpserim mihi.",
+        "SYN": "вы видели, что Я сделал Египтянам, и как Я носил вас [как бы] на орлиных крыльях, и принес вас к Себе;",
+        "NEO": "Vous avez vu ce que j’ai fait à l’Égypte, et comment je vous ai portés sur des ailes d’aigle et amenés vers moi.",
+        "NAB": "tell the Israelites: You have seen for yourselves how I treated the Egyptians and how I bore you up on eagle wings and brought you here to myself.",
+        "VAT_ES": "«Ustedes han visto cómo traté a Egipto, y cómo los conduje sobre alas de águila y los traje hasta mí.",
+        "CEI": "Voi stessi avete visto ciò che io ho fatto all'Egitto e come ho sollevato voi su ali di aquile e vi ho fatti venire fino a me."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה אִם שָׁמ֤וֹעַ תִּשְׁמְעוּ֙ בְּ/קֹלִ֔/י וּ/שְׁמַרְתֶּ֖ם אֶת בְּרִיתִ֑/י וִ/הְיִ֨יתֶם לִ֤/י סְגֻלָּה֙ מִ/כָּל הָ֣/עַמִּ֔ים כִּי לִ֖/י כָּל הָ/אָֽרֶץ׃",
+        "LXX": "καὶ νῦν ἐὰν ἀκοῇ ἀκούσητε τῆς ἐμῆς φωνῆς καὶ φυλάξητε τὴν διαθήκην μου, ἔσεσθέ μοι λαὸς περιούσιος ἀπὸ πάντων τῶν ἐθνῶν· ἐμὴ γάρ ἐστιν πᾶσα ἡ γῆ,",
+        "VUL": "Si ergo audieritis vocem meam, et custodieritis pactum meum, eritis mihi in peculium de cunctis populis : mea est enim omnis terra :",
+        "SYN": "итак, если вы будете слушаться гласа Моего и соблюдать завет Мой, то будете Моим уделом из всех народов, ибо Моя вся земля,",
+        "NEO": "Maintenant, si vous écoutez ma voix et si vous gardez mon alliance, vous serez mon peuple particulier parmi tous les peuples, car toute la terre est à moi ;",
+        "NAB": "Therefore, if you hearken to my voice and keep my covenant, you shall be my special possession, dearer to me than all other people, though all the earth is mine.",
+        "VAT_ES": "Ahora, si escuchan mi voz y observan mi alianza, serán mi propiedad exclusiva entre todos los pueblos, porque toda la tierra me pertenece.",
+        "CEI": "Ora, se vorrete ascoltare la mia voce e custodirete la mia alleanza, voi sarete per me la proprietà tra tutti i popoli, perché mia è tutta la terra!"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/אַתֶּ֧ם תִּהְיוּ לִ֛/י מַמְלֶ֥כֶת כֹּהֲנִ֖ים וְ/ג֣וֹי קָד֑וֹשׁ אֵ֚לֶּה הַ/דְּבָרִ֔ים אֲשֶׁ֥ר תְּדַבֵּ֖ר אֶל בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "ὑμεῖς δὲ ἔσεσθέ μοι βασίλειον ἱεράτευμα καὶ ἔθνος ἅγιον. ταῦτα τὰ ῥήματα ἐρεῖς τοῖς υἱοῖς Ἰσραήλ.",
+        "VUL": "et vos eritis mihi in regnum sacerdotale, et gens sancta. Hæc sunt verba quæ loqueris ad filios Israël.",
+        "SYN": "а вы будете у Меня царством священников и народом святым; вот слова, которые ты скажешь сынам Израилевым.",
+        "NEO": "mais vous, vous serez pour moi un royaume de prêtres et une nation sainte. Telles sont les paroles que tu diras aux enfants d’Israël. »",
+        "NAB": "You shall be to me a kingdom of priests, a holy nation. That is what you must tell the Israelites.\"",
+        "VAT_ES": "Ustedes serán para mí un reino de sacerdotes y una nación que me está consagrada». Estas son las palabras que transmitirás a los israelitas».",
+        "CEI": "Voi sarete per me un regno di sacerdoti e una nazione santa. Queste parole dirai agli Israeliti\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֣א מֹשֶׁ֔ה וַ/יִּקְרָ֖א לְ/זִקְנֵ֣י הָ/עָ֑ם וַ/יָּ֣שֶׂם לִ/פְנֵי/הֶ֗ם אֵ֚ת כָּל הַ/דְּבָרִ֣ים הָ/אֵ֔לֶּה אֲשֶׁ֥ר צִוָּ֖/הוּ יְהוָֽה׃",
+        "LXX": "ἦλθεν δὲ Μωυσῆς καὶ ἐλάλησεν πρὸς τοὺς πρεσβυτέρους τοῦ λαοῦ, καὶ παρέθηκεν αὐτοῖς πάντας τοὺς λόγους τούτους οὓς συνέταξεν αὐτῷ ὁ θεός.",
+        "VUL": "Venit Moyses : et convocatis majoribus natu populi, exposuit omnes sermones quos mandaverat Dominus.",
+        "SYN": "И пришел Моисей и созвал старейшин народа и предложил им все сии слова, которые заповедал ему Господь.",
+        "NEO": "Moïse vint appeler les anciens du peuple, et il mit devant eux toutes ces paroles, selon que \\+w Yahweh|strong=\"H3068\"\\+w** le lui avait ordonné.",
+        "NAB": "So Moses went and summoned the elders of the people. When he set before them all that the LORD had ordered him to tell them,",
+        "VAT_ES": "Moisés fue a convocar a los ancianos de Israel y les expuso todas estas palabras, como el Señor se lo había ordenado.",
+        "CEI": "Mosè andò, convocò gli anziani del popolo e riferì loro tutte queste parole, come gli aveva ordinato il Signore."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲנ֨וּ כָל הָ/עָ֤ם יַחְדָּו֙ וַ/יֹּ֣אמְר֔וּ כֹּ֛ל אֲשֶׁר דִּבֶּ֥ר יְהוָ֖ה נַעֲשֶׂ֑ה וַ/יָּ֧שֶׁב מֹשֶׁ֛ה אֶת דִּבְרֵ֥י הָ/עָ֖ם אֶל יְהוָֽה׃",
+        "LXX": "ἀπεκρίθη δὲ πᾶς ὁ λαὸς ὁμοθυμαδὸν καὶ εἶπαν Πάντα ὅσα εἶπεν ὁ θεὸς ποιήσομεν καὶ ἀκουσόμεθα· ἀνήνεγκεν δὲ Μωυσῆς τοὺς λόγους τούτους πρὸς τὸν θεόν.",
+        "VUL": "Responditque omnis populus simul : Cuncta quæ locutus est Dominus, faciemus. Cumque retulisset Moyses verba populi ad Dominum,",
+        "SYN": "И весь народ отвечал единогласно, говоря: всё, что сказал Господь, исполним [и будем послушны]. И донес Моисей слова народа Господу.",
+        "NEO": "Le peuple tout entier répondit : « Nous ferons tout ce qu’a dit \\+w Yahweh|strong=\"H3068\"\\+w**. » Moïse alla porter à \\+w Yahweh|strong=\"H3068\"\\+w** les paroles du peuple,",
+        "NAB": "the people all answered together, \"Everything the LORD has said, we will do.\" Then Moses brought back to the LORD the response of the people.",
+        "VAT_ES": "El pueblo respondió unánimemente: «Estamos decididos a poner en práctica todo lo que ha dicho el Señor». Y Moisés comunicó al Señor la respuesta del pueblo.",
+        "CEI": "Tutto il popolo rispose insieme e disse: \"Quanto il Signore ha detto, noi lo faremo!\". Mosè tornò dal Signore e riferì le parole del popolo."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֜ה אֶל מֹשֶׁ֗ה הִנֵּ֨ה אָנֹכִ֜י בָּ֣א אֵלֶי/ךָ֮ בְּ/עַ֣ב הֶֽ/עָנָן֒ בַּ/עֲב֞וּר יִשְׁמַ֤ע הָ/עָם֙ בְּ/דַבְּרִ֣/י עִמָּ֔/ךְ וְ/גַם בְּ/ךָ֖ יַאֲמִ֣ינוּ לְ/עוֹלָ֑ם וַ/יַּגֵּ֥ד מֹשֶׁ֛ה אֶת דִּבְרֵ֥י הָ/עָ֖ם אֶל יְהוָֽה׃",
+        "LXX": "εἶπεν δὲ Κύριος πρὸς Μωσῆν Ἰδοὺ ἐγὼ παραγίνομαι πρὸς σὲ ἐν στύλῳ νεφέλης, ἵνα ἀκούσῃ ὁ λαὸς λαλοῦντός μου πρὸς σέ, καὶ σοὶ πιστεύσωσιν εἰς τὸν αἰῶνα. ἀνήγγειλεν δὲ Μωσῆς τὰ ῥήματα τοῦ λαοῦ πρὸς Κύριον.",
+        "VUL": "ait ei Dominus : Jam nunc veniam ad te in caligine nubis, ut audiat me populus loquentem ad te, et credat tibi in perpetuum. Nuntiavit ergo Moyses verba populi ad Dominum.",
+        "SYN": "И сказал Господь Моисею: вот, Я приду к тебе в густом облаке, дабы слышал народ, как Я буду говорить с тобою, и поверил тебе навсегда. И Моисей объявил слова народа Господу.",
+        "NEO": "et \\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Voici, je vais venir à toi dans une nuée épaisse, afin que le peuple entende quand je parlerai avec toi, et qu’en toi aussi il ait foi à jamais. » Et Moïse rapporta à \\+w Yahweh|strong=\"H3068\"\\+w** les paroles du peuple.",
+        "NAB": "The LORD also told him, \"I am coming to you in a dense cloud, so that when the people hear me speaking with you, they may always have faith in you also.\" When Moses, then, had reported to the LORD the response of the people,",
+        "VAT_ES": "El Señor dijo a Moisés: «Yo vendré a encontrarme contigo en medio de una densa nube, para que el pueblo pueda escuchar cuando yo te hable. Así tendrá en ti una confianza a toda prueba». Y Moisés comunicó al Señor las palabras del pueblo.",
+        "CEI": "Il Signore disse a Mosè: \"Ecco, io sto per venire verso di te in una densa nube, perché il popolo senta quando io parlerò con te e credano sempre anche a te\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֤ה אֶל מֹשֶׁה֙ לֵ֣ךְ אֶל הָ/עָ֔ם וְ/קִדַּשְׁתָּ֥/ם הַ/יּ֖וֹם וּ/מָחָ֑ר וְ/כִבְּס֖וּ שִׂמְלֹתָֽ/ם׃",
+        "LXX": "Εἶπεν δὲ Κύριος πρὸς Μωυσῆν Καταβὰς διαμάρτυραι τῷ λαῷ, καὶ ἅγνισον αὐτοὺς σήμερον καὶ αὔριον· καὶ πλυνάτωσαν τὰ ἱμάτια,",
+        "VUL": "Qui dixit ei : Vade ad populum, et sanctifica illos hodie, et cras, laventque vestimenta sua.",
+        "SYN": "И сказал Господь Моисею: пойди к народу, [объяви] и освяти его сегодня и завтра; пусть вымоют одежды свои,",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Va vers le peuple, et sanctifie-les aujourd’hui et demain, et qu’ils lavent leurs vêtements.",
+        "NAB": "the LORD added, \"Go to the people and have them sanctify themselves today and tomorrow. Make them wash their garments",
+        "VAT_ES": "Luego añadió: «Ve adónde está el pueblo y ordénales que se purifiquen hoy y mañana. Que laven su ropa",
+        "CEI": "Il Signore disse a Mosè: \"Và dal popolo e purificalo oggi e domani: lavino le loro vesti"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/הָי֥וּ נְכֹנִ֖ים לַ/יּ֣וֹם הַ/שְּׁלִישִׁ֑י כִּ֣י בַּ/יּ֣וֹם הַ/שְּׁלִישִׁ֗י יֵרֵ֧ד יְהוָ֛ה לְ/עֵינֵ֥י כָל הָ/עָ֖ם עַל הַ֥ר סִינָֽי׃",
+        "LXX": "καὶ ἔστωσαν ἕτοιμοι εἰς τὴν ἡμέραν τὴν τρίτην· τῇ γὰρ ἡμέρᾳ τῇ τρίτῃ καταβήσεται Κύριος ἐπὶ τὸ ὄρος τὸ Σεινὰ ἐναντίον παντὸς τοῦ λαοῦ.",
+        "VUL": "Et sint parati in diem tertium : in die enim tertia descendet Dominus coram omni plebe super montem Sinai.",
+        "SYN": "чтоб быть готовыми к третьему дню: ибо в третий день сойдет Господь пред глазами всего народа на гору Синай;",
+        "NEO": "Qu’ils soient prêts pour le troisième jour ; car le troisième jour \\+w Yahweh|strong=\"H3068\"\\+w** descendra, aux yeux de tout le peuple, sur la montagne de Sinaï.",
+        "NAB": "and be ready for the third day; for on the third day the LORD will come down on Mount Sinai before the eyes of all the people.",
+        "VAT_ES": "y estén preparados para pasado mañana. Porque al tercer día el Señor descenderá sobre la montaña del Sinaí, a la vista de todo el pueblo.",
+        "CEI": "e si tengano pronti per il terzo giorno, perché nel terzo giorno il Signore scenderà sul monte Sinai alla vista di tutto il popolo."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/הִגְבַּלְתָּ֤ אֶת הָ/עָם֙ סָבִ֣יב לֵ/אמֹ֔ר הִשָּׁמְר֥וּ לָ/כֶ֛ם עֲל֥וֹת בָּ/הָ֖ר וּ/נְגֹ֣עַ בְּ/קָצֵ֑/הוּ כָּל הַ/נֹּגֵ֥עַ בָּ/הָ֖ר מ֥וֹת יוּמָֽת׃",
+        "LXX": "καὶ ἀφοριεῖς τὸν λαὸν κύκλῳ λέγων Προσέχετε ἑαυτοῖς τοῦ ἀναβῆναι εἰς τὸ ὄρος καὶ θιγεῖν τι αὐτοῦ· πᾶς ὁ ἁψάμενος τοῦ ὄρους θανάτῳ τελευτήσει.",
+        "VUL": "Constituesque terminos populo per circuitum, et dices ad eos : Cavete ne ascendatis in montem, nec tangatis fines illius : omnis qui tetigerit montem, morte morietur.",
+        "SYN": "и проведи для народа черту со всех сторон и скажи: берегитесь восходить на гору и прикасаться к подошве ее; всякий, кто прикоснется к горе, предан будет смерти;",
+        "NEO": "Tu fixeras au peuple une limite à l’entour, en disant : Gardez-vous de monter sur la montagne ou d’en toucher le bord ; quiconque touchera la montagne sera mis à mort.",
+        "NAB": "Set limits for the people all around the mountain, and tell them: Take care not to go up the mountain, or even to touch its base. If anyone touches the mountain, he must be put to death.",
+        "VAT_ES": "Fija también un límite alrededor del pueblo, haciendo esta advertencia: «Cuídense de subir a la montaña y hasta de tocar sus bordes, porque todo el que toque la montaña será castigado con la muerte.",
+        "CEI": "Fisserai per il popolo un limite tutto attorno, dicendo: Guardatevi dal salire sul monte e dal toccare le falde. Chiunque toccherà il monte sarà messo a morte."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "לֹא תִגַּ֨ע בּ֜/וֹ יָ֗ד כִּֽי סָק֤וֹל יִסָּקֵל֙ אוֹ יָרֹ֣ה יִיָּרֶ֔ה אִם בְּהֵמָ֥ה אִם אִ֖ישׁ לֹ֣א יִחְיֶ֑ה בִּ/מְשֹׁךְ֙ הַ/יֹּבֵ֔ל הֵ֖מָּה יַעֲל֥וּ בָ/הָֽר׃",
+        "LXX": "οὐχ ἅψεται αὐτοῦ χείρ· ἐν γὰρ λίθοις λιθοβοληθήσεται ἢ βολίδι κατατοξευθήσεται· ἐάν τε κτῆνος ἐάν τε ἄνθρωπος, οὐ ζήσεται. ὅταν αἱ φωναὶ καὶ αἱ σάλπιγγες καὶ ἡ νεφέλη ἀπέλθῃ ἀπὸ τοῦ ὄρους, ἐκεῖνοι ἀναβήσονται ἐπὶ τὸ ὄρος.",
+        "VUL": "Manus non tanget eum, sed lapidibus opprimetur, aut confodietur jaculis : sive jumentum fuerit, sive homo, non vivet : cum cperit clangere buccina, tunc ascendant in montem.",
+        "SYN": "рука да не прикоснется к нему, а пусть побьют его камнями, или застрелят стрелою; скот ли то, или человек, да не останется в живых; во время протяжного трубного звука, [когда облако отойдет от горы,] могут они взойти на гору.",
+        "NEO": "On ne mettra pas la main sur lui, mais on le lapidera ou on le percera de flèches ; bête ou homme, il ne doit pas vivre. Quand la trompette sonnera, ils monteront sur la montagne. »",
+        "NAB": "No hand shall touch him; he must be stoned to death or killed with arrows. Such a one, man or beast, must not be allowed to live. Only when the ram's horn resounds may they go up to the mountain.\"",
+        "VAT_ES": "Pero nadie pondrá su mano sobre el culpable, sino que deberá ser apedreado o muerto a flechazos; sea hombre o animal, no quedará vivo. Y cuando suene la trompeta, ellos subirán a la montaña».",
+        "CEI": "Nessuna mano però dovrà toccare costui: dovrà essere lapidato o colpito con tiro di arco. Animale o uomo non dovrà sopravvivere. Quando suonerà il corno, allora soltanto essi potranno salire sul monte\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֧רֶד מֹשֶׁ֛ה מִן הָ/הָ֖ר אֶל הָ/עָ֑ם וַ/יְקַדֵּשׁ֙ אֶת הָ/עָ֔ם וַֽ/יְכַבְּס֖וּ שִׂמְלֹתָֽ/ם׃",
+        "LXX": "κατέβη δὲ Μωυσῆς ἐκ τοῦ ὄρους πρὸς τὸν λαόν, καὶ ἡγίασεν αὐτούς· καὶ ἔπλυναν τὰ ἱμάτια.",
+        "VUL": "Descenditque Moyses de monte ad populum, et sanctificavit eum. Cumque lavissent vestimenta sua,",
+        "SYN": "И сошел Моисей с горы к народу и освятил народ, и они вымыли одежду свою.",
+        "NEO": "Moïse descendit de la montagne vers le peuple ; il sanctifia le peuple, et ils lavèrent leurs vêtements.",
+        "NAB": "Then Moses came down from the mountain to the people and had them sanctify themselves and wash their garments.",
+        "VAT_ES": "Moisés bajó de la montaña y ordenó al pueblo que se sometiera a las purificaciones rituales. Todos lavaron su ropa,",
+        "CEI": "Mosè scese dal monte verso il popolo; egli fece purificare il popolo ed essi lavarono le loro vesti."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ אֶל הָ/עָ֔ם הֱי֥וּ נְכֹנִ֖ים לִ/שְׁלֹ֣שֶׁת יָמִ֑ים אַֽל תִּגְּשׁ֖וּ אֶל אִשָּֽׁה׃",
+        "LXX": "καὶ εἶπεν τῷ λαῷ Γίνεσθε ἕτοιμοι τρεῖς ἡμέρας, μὴ προσέλθητε γυναικί.",
+        "VUL": "ait ad eos : Estote parati in diem tertium, et ne appropinquetis uxoribus vestris.",
+        "SYN": "И сказал народу: будьте готовы к третьему дню; не прикасайтесь к женам.",
+        "NEO": "Puis il dit au peuple : « Soyez prêts dans trois jours ; ne vous approchez d’aucune femme. »",
+        "NAB": "He warned them, \"Be ready for the third day. Have no intercourse with any woman.\"",
+        "VAT_ES": "y luego les dijo: «Estén preparados para pasado mañana. Mientras tanto, absténganse de tener relaciones sexuales».",
+        "CEI": "Poi disse al popolo: \"Siate pronti in questi tre giorni: non unitevi a donna\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֩ בַ/יּ֨וֹם הַ/שְּׁלִישִׁ֜י בִּֽ/הְיֹ֣ת הַ/בֹּ֗קֶר וַ/יְהִי֩ קֹלֹ֨ת וּ/בְרָקִ֜ים וְ/עָנָ֤ן כָּבֵד֙ עַל הָ/הָ֔ר וְ/קֹ֥ל שֹׁפָ֖ר חָזָ֣ק מְאֹ֑ד וַ/יֶּחֱרַ֥ד כָּל הָ/עָ֖ם אֲשֶׁ֥ר בַּֽ/מַּחֲנֶֽה׃",
+        "LXX": "Ἐγένετο δὲ τῇ ἡμέρᾳ τῇ τρίτῃ γενηθέντος πρὸς ὄρθρον, καὶ ἐγίνοντο φωναὶ καὶ ἀστραπαὶ καὶ νεφέλη γνοφώδης ἐπ’ ὄρους Σεινά, φωνὴ τῆς σάλπιγγος ἤχει μέγα· καὶ ἐπτοήθη πᾶς ὁ λαὸς ὁ ἐν τῇ παρεμβολῇ.",
+        "VUL": "Jamque advenerat tertius dies, et mane inclaruerat : et ecce cperunt audiri tonitrua, ac micare fulgura, et nubes densissima operire montem, clangorque buccinæ vehementius perstrepebat : et timuit populus qui erat in castris.",
+        "SYN": "На третий день, при наступлении утра, были громы и молнии, и густое облако над горою [Синайскою], и трубный звук весьма сильный; и вострепетал весь народ, бывший в стане.",
+        "NEO": "Le troisième jour au matin, il y eut des tonnerres, des éclairs, une nuée épaisse sur la montagne, et un son de trompe très fort, et tout le peuple qui était dans le camp trembla.",
+        "NAB": "On the morning of the third day there were peals of thunder and lightning, and a heavy cloud over the mountain, and a very loud trumpet blast, so that all the people in the camp trembled.",
+        "VAT_ES": "Al amanecer del tercer día, hubo truenos y relámpagos, una densa nube cubrió la montaña y se oyó un fuerte sonido de trompeta. Todo el pueblo que estaba en el campamento se estremeció de temor.",
+        "CEI": "Appunto al terzo giorno, sul far del mattino, vi furono tuoni, lampi, una nube densa sul monte e un suono fortissimo di tromba: tutto il popolo che era nell'accampamento fu scosso da tremore."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יּוֹצֵ֨א מֹשֶׁ֧ה אֶת הָ/עָ֛ם לִ/קְרַ֥את הָֽ/אֱלֹהִ֖ים מִן הַֽ/מַּחֲנֶ֑ה וַ/יִּֽתְיַצְּב֖וּ בְּ/תַחְתִּ֥ית הָ/הָֽר׃",
+        "LXX": "καὶ ἐξήγαγεν Μωυσῆς τὸν λαὸν εἰς συνάντησιν τοῦ θεοῦ ἐκ τῆς παρεμβολῆς, καὶ παρέστησαν ὑπὸ τὸ ὄρος Σινά.",
+        "VUL": "Cumque eduxisset eos Moyses in occursum Dei de loco castrorum, steterunt ad radices montis.",
+        "SYN": "И вывел Моисей народ из стана в сретение Богу, и стали у подошвы горы.",
+        "NEO": "Moïse fit sortir le peuple du camp, à la rencontre de Dieu, et ils se tinrent au pied de la montagne.",
+        "NAB": "But Moses led the people out of the camp to meet God, and they stationed themselves at the foot of the mountain.",
+        "VAT_ES": "Moisés hizo salir al pueblo del campamento para ir al encuentro de Dios, y todos se detuvieron al pie de la montaña.",
+        "CEI": "Allora Mosè fece uscire il popolo dall'accampamento incontro a Dio. Essi stettero in piedi alle falde del monte."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/הַ֤ר סִינַי֙ עָשַׁ֣ן כֻּלּ֔/וֹ מִ֠/פְּנֵי אֲשֶׁ֨ר יָרַ֥ד עָלָ֛י/ו יְהוָ֖ה בָּ/אֵ֑שׁ וַ/יַּ֤עַל עֲשָׁנ/וֹ֙ כְּ/עֶ֣שֶׁן הַ/כִּבְשָׁ֔ן וַ/יֶּחֱרַ֥ד כָּל הָ/הָ֖ר מְאֹֽד׃",
+        "LXX": "τὸ δὲ ὄρος τὸ Σινὰ ἐκαπνίζετο ὅλον διὰ τὸ καταβεβηκέναι ἐπ’ αὐτὸ τὸν θεὸν ἐν πυρί, καὶ ἀνέβαινεν ὁ καπνὸς ὡς καπνὸς καμίνου· καὶ ἐξέστη πᾶς ὁ λαὸς σφόδρα.",
+        "VUL": "Totus autem mons Sinai fumabat, eo quod descendisset Dominus super eum in igne : et ascenderet fumus ex eo quasi de fornace, eratque omnis mons terribilis.",
+        "SYN": "Гора же Синай вся дымилась оттого, что Господь сошел на нее в огне; и восходил от нее дым, как дым из печи, и вся гора сильно колебалась;",
+        "NEO": "La montagne de Sinaï était toute fumante, parce que \\+w Yahweh|strong=\"H3068\"\\+w** y était descendu au milieu du feu, et la fumée s’élevait comme la fumée d’une fournaise, et toute la montagne tremblait fortement.",
+        "NAB": "Mount Sinai was all wrapped in smoke, for the LORD came down upon it in fire. The smoke rose from it as though from a furnace, and the whole mountain trembled violently.",
+        "VAT_ES": "La montaña del Sinaí estaba cubierta de humo, porque el Señor había bajado a ella en el fuego. El humo se elevaba como el de un horno, y toda la montaña temblaba violentamente.",
+        "CEI": "Il monte Sinai era tutto fumante, perché su di esso era sceso il Signore nel fuoco e il suo fumo saliva come il fumo di una fornace: tutto il monte tremava molto."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֙ ק֣וֹל הַ/שּׁוֹפָ֔ר הוֹלֵ֖ךְ וְ/חָזֵ֣ק מְאֹ֑ד מֹשֶׁ֣ה יְדַבֵּ֔ר וְ/הָ/אֱלֹהִ֖ים יַעֲנֶ֥/נּוּ בְ/קֽוֹל׃",
+        "LXX": "ἐγίνοντο δὲ αἱ φωναὶ τῆς σάλπιγγος προβαίνουσαι ἰσχυρότεραι σφόδρα· Μωσῆς ἐλάλησεν, ὁ δὲ θεὸς ἀπεκρίνατο αὐτῷ φωνῇ.",
+        "VUL": "Et sonitus buccinæ paulatim crescebat in majus, et prolixius tendebatur : Moyses loquebatur, et Deus respondebat ei.",
+        "SYN": "и звук трубный становился сильнее и сильнее. Моисей говорил, и Бог отвечал ему голосом.",
+        "NEO": "Le son de la trompe devenait de plus en plus fort. Moïse parla, et Dieu lui répondit par une voix.",
+        "NAB": "The trumpet blast grew louder and louder, while Moses was speaking and God answering him with thunder.",
+        "VAT_ES": "El sonido de la trompeta se hacía cada vez más fuerte. Moisés hablaba, y el Señor le respondía con el fragor del trueno.",
+        "CEI": "Il suono della tromba diventava sempre più intenso: Mosè parlava e Dio gli rispondeva con voce di tuono."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֧רֶד יְהוָ֛ה עַל הַ֥ר סִינַ֖י אֶל רֹ֣אשׁ הָ/הָ֑ר וַ/יִּקְרָ֨א יְהוָ֧ה לְ/מֹשֶׁ֛ה אֶל רֹ֥אשׁ הָ/הָ֖ר וַ/יַּ֥עַל מֹשֶֽׁה׃",
+        "LXX": "κατέβη δὲ Κύριος ἐπὶ τὸ ὄρος τὸ Σινὰ ἐπὶ τὴν κορυφὴν τοῦ ὄρους· καὶ ἐκάλεσεν Κύριος Μωυσῆν ἐπὶ τὴν κορυφὴν τοῦ ὄρους, καὶ ἀνέβη Μωυσῆς.",
+        "VUL": "Descenditque Dominus super montem Sinai in ipso montis vertice, et vocavit Moysen in cacumen ejus. Quo cum ascendisset,",
+        "SYN": "И сошел Господь на гору Синай, на вершину горы, и призвал Господь Моисея на вершину горы, и взошел Моисей.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** descendit sur la montagne de Sinaï, sur le sommet de la montagne, et \\+w Yahweh|strong=\"H3068\"\\+w** appela Moïse sur le sommet de la montagne, et Moïse monta.",
+        "NAB": "When the LORD came down to the top of Mount Sinai, he summoned Moses to the top of the mountain, and Moses went up to him.",
+        "VAT_ES": "El Señor bajó a la montaña del Sinaí, a la cumbre de la montaña, y ordenó a Moisés que subiera a la cumbre. Moisés subió,",
+        "CEI": "Il Signore scese dunque sul monte Sinai, sulla vetta del monte, e il Signore chiamò Mosè sulla vetta del monte. Mosè salì."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֶל מֹשֶׁ֔ה רֵ֖ד הָעֵ֣ד בָּ/עָ֑ם פֶּן יֶהֶרְס֤וּ אֶל יְהוָה֙ לִ/רְא֔וֹת וְ/נָפַ֥ל מִמֶּ֖/נּוּ רָֽב׃",
+        "LXX": "καὶ εἶπεν ὁ θεὸς πρὸς Μωυσῆν λέγων Καταβὰς διαμάρτυραι τῷ λαῷ, μή ποτε ἐγγίσωσιν πρὸς τὸν θεὸν κατανοῆσαι, καὶ πέσωσιν ἐξ αὐτῶν πλῆθος·",
+        "VUL": "dixit ad eum : Descende, et contestare populum : ne forte velit transcendere terminos ad videndum Dominum, et pereat ex eis plurima multitudo.",
+        "SYN": "И сказал Господь Моисею: сойди и подтверди народу, чтобы он не порывался к Господу видеть _Его,_ и чтобы не пали многие из него;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Descends, et défends expressément au peuple de rompre les barrières vers \\+w Yahweh|strong=\"H3068\"\\+w** pour regarder, de peur qu’un grand nombre d’entre eux ne périssent.",
+        "NAB": "Then the LORD told Moses, \"Go down and warn the people not to break through toward the LORD in order to see him; otherwise many of them will be struck down.",
+        "VAT_ES": "y el Señor le dijo: «Baja y ordena al pueblo que no traspase los límites para ver al Señor, porque muchos de ellos perderían la vida.",
+        "CEI": "Poi il Signore disse a Mosè: \"Scendi, scongiura il popolo di non irrompere verso il Signore per vedere, altrimenti ne cadrà una moltitudine!"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/גַ֧ם הַ/כֹּהֲנִ֛ים הַ/נִּגָּשִׁ֥ים אֶל יְהוָ֖ה יִתְקַדָּ֑שׁוּ פֶּן יִפְרֹ֥ץ בָּ/הֶ֖ם יְהוָֽה׃",
+        "LXX": "καὶ οἱ ἱερεῖς οἱ ἐγγίζοντες Κυρίῳ τῷ θεῷ ἁγιασθήτωσαν, μή ποτε ἀπαλλάξῃ ἀπ’ αὐτῶν Κύριος.",
+        "VUL": "Sacerdotes quoque qui accedunt ad Dominum, sanctificentur, ne percutiat eos.",
+        "SYN": "священники же, приближающиеся к Господу [Богу], должны освятить себя, чтобы не поразил их Господь.",
+        "NEO": "Que même les prêtres, qui s’approchent de \\+w Yahweh|strong=\"H3068\"\\+w**, se sanctifient, de peur que \\+w Yahweh|strong=\"H3068\"\\+w** ne les frappe de mort. »",
+        "NAB": "The priests, too, who approach the LORD must sanctify themselves; else he will vent his anger upon them.\"",
+        "VAT_ES": "Incluso los sacerdotes que se acerquen al Señor deberán purificarse, para que el Señor no les quite la vida».",
+        "CEI": "Anche i sacerdoti, che si avvicinano al Signore, si tengano in stato di purità, altrimenti il Signore si avventerà contro di loro!\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר מֹשֶׁה֙ אֶל יְהוָ֔ה לֹא יוּכַ֣ל הָ/עָ֔ם לַ/עֲלֹ֖ת אֶל הַ֣ר סִינָ֑י כִּֽי אַתָּ֞ה הַעֵדֹ֤תָה בָּ֨/נוּ֙ לֵ/אמֹ֔ר הַגְבֵּ֥ל אֶת הָ/הָ֖ר וְ/קִדַּשְׁתּֽ/וֹ׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς πρὸς τὸν θεόν Οὐ δυνήσεται ὁ λαὸς προσαναβῆναι πρὸς τὸ ὄρος τὸ Σεινά· σὺ γὰρ διαμεμαρτύρησαι ἡμῖν λέγων Ἀφόρισαι τὸ ὄρος καὶ ἁγίασαι αὐτό.",
+        "VUL": "Dixitque Moyses ad Dominum : Non poterit vulgus ascendere in montem Sinai : tu enim testificatus es, et jussisti, dicens : Pone terminos circa montem, et sanctifica illum.",
+        "SYN": "И сказал Моисей Господу: не может народ взойти на гору Синай, потому что Ты предостерег нас, сказав: проведи черту вокруг горы и освяти ее.",
+        "NEO": "Moïse dit à \\+w Yahweh|strong=\"H3068\"\\+w** : « Le peuple ne pourra pas monter sur la montagne de Sinaï, puisque vous nous en avez fait la défense expresse, en disant : Pose des limites autour de la montagne, et sanctifie-la. »",
+        "NAB": "Moses said to the LORD, \"The people cannot go up to Mount Sinai, for you yourself warned us to set limits around the mountain to make it sacred.\"",
+        "VAT_ES": "Moisés le respondió: «El pueblo no se atreverá a subir a la montaña del Sinaí, porque tú se lo prohibiste cuando mandaste poner un límite alrededor de la montaña declarada sagrada».",
+        "CEI": "Mosè disse al Signore: \"Il popolo non può salire al monte Sinai, perché tu stesso ci hai avvertiti dicendo: Fissa un limite verso il monte e dichiaralo sacro\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֵלָ֤י/ו יְהוָה֙ לֶךְ רֵ֔ד וְ/עָלִ֥יתָ אַתָּ֖ה וְ/אַהֲרֹ֣ן עִמָּ֑/ךְ וְ/הַ/כֹּהֲנִ֣ים וְ/הָ/עָ֗ם אַל יֶֽהֶרְס֛וּ לַ/עֲלֹ֥ת אֶל יְהוָ֖ה פֶּן יִפְרָץ בָּֽ/ם׃",
+        "LXX": "εἶπεν δὲ αὐτῷ Κύριος Βάδιζε κατάβηθι, καὶ ἀνάβηθι σὺ καὶ Ἀαρὼν μετὰ σοῦ· οἱ δὲ ἱερεῖς καὶ ὁ λαὸς μὴ βιαζέσθωσαν ἀναβῆναι πρὸς τὸν θεόν, μή ποτε ἀπολέσῃ ἀπ’ αὐτῶν Κύριος.",
+        "VUL": "Cui ait Dominus : Vade, descende : ascendesque tu, et Aaron tecum : sacerdotes autem et populus ne transeant terminos, nec ascendant ad Dominum, ne forte interficiat illos.",
+        "SYN": "И Господь сказал ему: пойди, сойди, потом взойди ты и с тобою Аарон; а священники и народ да не порываются восходить к Господу, чтобы [Господь] не поразил их.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** lui dit : « Va, descends, tu remonteras ensuite avec Aaron ; mais que les prêtres et le peuple ne rompent pas la barrière pour monter vers \\+w Yahweh|strong=\"H3068\"\\+w**, de peur qu’il ne les frappe de mort. »",
+        "NAB": "The LORD repeated, \"Go down now! Then come up again along with Aaron. But the priests and the people must not break through to come up to the LORD; else he will vent his anger upon them.\"",
+        "VAT_ES": "El Señor le dijo: «Baja enseguida y vuelve después en compañía de Aarón. Pero que los sacerdotes y el pueblo no traspasen los límites para subir adonde está el Señor, no sea que él les quite la vida».",
+        "CEI": "Il Signore gli disse: \"Và, scendi, poi salirai tu e Aronne con te. Ma i sacerdoti e il popolo non si precipitino per salire verso il Signore, altrimenti egli si avventerà contro di loro!\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֥רֶד מֹשֶׁ֖ה אֶל הָ/עָ֑ם וַ/יֹּ֖אמֶר אֲלֵ/הֶֽם׃",
+        "LXX": "κατέβη δὲ Μωυσῆς πρὸς τὸν λαὸν καὶ εἶπεν αὐτοῖς.",
+        "VUL": "Descenditque Moyses ad populum, et omnia narravit eis.",
+        "SYN": "И сошел Моисей к народу и пересказал ему.",
+        "NEO": "Moïse descendit vers le peuple et lui dit ces choses.",
+        "NAB": "So Moses went down to the people and told them this.",
+        "VAT_ES": "Moisés bajó adonde estaba el pueblo y les dijo todas esas cosas.",
+        "CEI": "Mosè scese verso il popolo e parlò."
+      }
+    }
+  }
+}

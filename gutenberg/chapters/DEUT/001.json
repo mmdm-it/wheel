@@ -1,0 +1,843 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_001",
+  "book_key": "DEUT",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אֵ֣לֶּה הַ/דְּבָרִ֗ים אֲשֶׁ֨ר דִּבֶּ֤ר מֹשֶׁה֙ אֶל כָּל יִשְׂרָאֵ֔ל בְּ/עֵ֖בֶר הַ/יַּרְדֵּ֑ן בַּ/מִּדְבָּ֡ר בָּֽ/עֲרָבָה֩ מ֨וֹל ס֜וּף בֵּֽין פָּארָ֧ן וּ/בֵֽין תֹּ֛פֶל וְ/לָבָ֥ן וַ/חֲצֵרֹ֖ת וְ/דִ֥י זָהָֽב׃",
+        "LXX": "ΟΥΤΟΙ οἱ λόγοι οὓς ἐλάλησεν Μωυσῆς παντὶ Ἰσραὴλ πέραν τοῦ Ἰορδάνου ἐν τῇ ἐρήμῳ πρὸς δυσμαῖς πλησίον τῆς ἐρυθρᾶς ἀνὰ μέσον Φαρὰν Τόφολ καὶ Λοβὸν καὶ Αὐλῶν καὶ Καταχρύσεα·",
+        "VUL": "Hæc sunt verba quæ locutus est Moyses ad omnem Israël trans Jordanem in solitudine campestri, contra mare Rubrum, inter Pharan et Tophel et Laban et Haseroth, ubi auri est plurimum :",
+        "SYN": "Сии суть слова, которые говорил Моисей всем Израильтянам за Иорданом в пустыне на равнине против Суфа, между Фараном и Тофелом, и Лаваном, и Асирофом, и Дизагавом,",
+        "NEO": "Voici les paroles que Moïse adressa à tout Israël, de l’autre côté du Jourdain, dans le désert, dans l’Arabah, vis-à-vis de Souph, entre Pharan, Thophel, Laban, Haséroth et Di-Zahab.",
+        "NAB": "These are the words which Moses spoke to all Israel beyond the Jordan ( in the desert, in the Arabah, opposite Suph, between Paran and Tophel, Laban, Hazeroth and Dizahab;",
+        "VAT_ES": "Estas son las palabras que Moisés dirigió a todo Israel al otro lado del Jordán, en el desierto, en la Arabá. frente a Suf, entre Parán, Tofel y Labán, Jaserot y Dizahab.",
+        "CEI": "Queste sono le parole che Mosè rivolse a tutto Israele oltre il Giordano, nel deserto, nella valle dell'Araba, di fronte a Suf, tra Paran, Tofel, Laban, Cazerot e Di-Zaab."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אַחַ֨ד עָשָׂ֥ר יוֹם֙ מֵֽ/חֹרֵ֔ב דֶּ֖רֶךְ הַר שֵׂעִ֑יר עַ֖ד קָדֵ֥שׁ בַּרְנֵֽעַ׃",
+        "LXX": "ἕνδεκα ἡμερῶν ἐν Χωρὴβ ὁδὸς ἐπ’ ὄρος Σηεὶρ ἕως Καδὴς Βαρνή.",
+        "VUL": "undecim diebus de Horeb per viam montis Seir usque ad Cadesbarne.",
+        "SYN": "в расстоянии одиннадцати дней пути от Хорива, по дороге от горы Сеир к Кадес-Варни.",
+        "NEO": "— Il y a onze journées de marche depuis Horeb, par le chemin de la montagne de Séïr, jusqu’à Cadès-Barné. —",
+        "NAB": "it is a journey of eleven days from Horeb to Kadesh-barnea by way of the highlands of Seir).",
+        "VAT_ES": "–Desde el Horeb hasta Cades Barné, hay once días de camino por las montañas del Seír–.",
+        "CEI": "Vi sono undici giornate dall'Oreb, per la via del monte Seir, fino a Kades-Barnea."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֙ בְּ/אַרְבָּעִ֣ים שָׁנָ֔ה בְּ/עַשְׁתֵּֽי עָשָׂ֥ר חֹ֖דֶשׁ בְּ/אֶחָ֣ד לַ/חֹ֑דֶשׁ דִּבֶּ֤ר מֹשֶׁה֙ אֶל בְּנֵ֣י יִשְׂרָאֵ֔ל כְּ֠/כֹל אֲשֶׁ֨ר צִוָּ֧ה יְהוָ֛ה אֹת֖/וֹ אֲלֵ/הֶֽם׃",
+        "LXX": "καὶ ἐγενήθη ἐν τῷ τεσσερακοστῷ ἔτει, ἐν τῷ ἑνδεκάτῳ μηνὶ μιᾷ τοῦ μηνός, ἐλάλησεν Μωυσῆς πρὸς πάντας υἱοὺς Ἰσραὴλ κατὰ πάντα ὅσα ἐνετείλατο Κύριος αὐτῷ πρὸς αὐτούς,",
+        "VUL": "Quadragesimo anno, undecimo mense, prima die mensis, locutus est Moyses ad filios Israël omnia quæ præceperat illi Dominus, ut diceret eis,",
+        "SYN": "Сорокового года, одиннадцатого месяца, в первый [день] месяца говорил Моисей [всем] сынам Израилевым все, что заповедал ему Господь о них.",
+        "NEO": "En la quarantième année, au onzième mois, le premier jour du mois, Moïse parla aux enfants d’Israël selon tout ce que \\+w Yahweh|strong=\"H3068\"\\+w** lui avait ordonné de leur dire :",
+        "NAB": "In the fortieth year, on the first day of the eleventh month, Moses spoke to the Israelites all the commands that the LORD had given him in their regard.",
+        "VAT_ES": "En el cuadragésimo año, el primer día del undécimo mes, Moisés habló a los israelitas, como el Señor se lo habla ordenado.",
+        "CEI": "Nel quarantesimo anno, l'undicesimo mese, il primo giorno del mese, Mosè parlò agli Israeliti, secondo quanto il Signore gli aveva ordinato di dir loro."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אַחֲרֵ֣י הַכֹּת֗/וֹ אֵ֚ת סִיחֹן֙ מֶ֣לֶךְ הָֽ/אֱמֹרִ֔י אֲשֶׁ֥ר יוֹשֵׁ֖ב בְּ/חֶשְׁבּ֑וֹן וְ/אֵ֗ת ע֚וֹג מֶ֣לֶךְ הַ/בָּשָׁ֔ן אֲשֶׁר יוֹשֵׁ֥ב בְּ/עַשְׁתָּרֹ֖ת בְּ/אֶדְרֶֽעִי׃",
+        "LXX": "μετὰ τὸ πατάξαι Σηὼν βασιλέα Ἀμορραίων τὸν κατοικήσαντα ἐν Ἑσεβὼν καὶ Ὢγ βασιλέα τῆς Βασὰν τὸν κατοικήσαντα ἐν Ἀσταρὼθ καὶ ἐν Ἐδράειν,",
+        "VUL": "postquam percussit Sehon regem Amorrhæorum, qui habitabat in Hesebon, et Og regem Basan, qui mansit in Astaroth, et in Edrai,",
+        "SYN": "По убиении им Сигона, царя Аморрейского, который жил в Есевоне, и Ога, царя Васанского, который жил в Аштерофе в Едреи,",
+        "NEO": "après qu’il eut battu Séhon, roi des Amorrhéens, qui habitait à Hésebon, et Og, roi de Basan, qui habitait à Astaroth et à Edraï.",
+        "NAB": "After he had defeated Sihon, king of the Amorites, who lived in Heshbon, and Og, king of Bashan, who lived in Ashtaroth and in Edrei,",
+        "VAT_ES": "Después de haber derrotado a Sijón, rey de los amorreos que residía en Jesbón, y a Og, rey de Basán, que residía en Astarot y Edrei.",
+        "CEI": "Dopo aver sconfitto Sicon, re degli Amorrèi, che abitava in Chesbòn, e Og, re di Basan, che abitava in Astarot e in Edrei,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בְּ/עֵ֥בֶר הַ/יַּרְדֵּ֖ן בְּ/אֶ֣רֶץ מוֹאָ֑ב הוֹאִ֣יל מֹשֶׁ֔ה בֵּאֵ֛ר אֶת הַ/תּוֹרָ֥ה הַ/זֹּ֖את לֵ/אמֹֽר׃",
+        "LXX": "ἐν τῷ πέραν τοῦ Ἰορδάνου ἐν γῇ Μωὰβ ἢρξατο Μωυσῆς διασαφῆσαι τὸν νόμον τοῦτον λέγων",
+        "VUL": "trans Jordanem in terra Moab. Cpitque Moyses explanare legem, et dicere :",
+        "SYN": "за Иорданом, в земле Моавитской, начал Моисей изъяснять закон сей и сказал:",
+        "NEO": "De l’autre côté du Jourdain, dans le pays de Moab, Moïse commença à expliquer cette loi, en disant :",
+        "NAB": "Moses began to explain the law in the land of Moab beyond the Jordan, as follows:",
+        "VAT_ES": "Al otro lado del Jordán, en territorio de Moab, Moisés comenzó a exponer esta Ley, diciendo.",
+        "CEI": "oltre il Giordano, nel paese di Moab, Mosè cominciò a spiegare questa legge:"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "יְהוָ֧ה אֱלֹהֵ֛י/נוּ דִּבֶּ֥ר אֵלֵ֖י/נוּ בְּ/חֹרֵ֣ב לֵ/אמֹ֑ר רַב לָ/כֶ֥ם שֶׁ֖בֶת בָּ/הָ֥ר הַ/זֶּֽה׃",
+        "LXX": "Κύριος ὁ θεὸς ἡμῶν ἐλάλησεν ἡμῖν ἐν Χωρὴβ λέγων Ἱκανούσθω ὑμῖν κατοικεῖν ἐν τῷ ὄρει τούτῳ·",
+        "VUL": "Dominus Deus noster locutus est ad nos in Horeb, dicens : Sufficit vobis quod in hoc monte mansistis :",
+        "SYN": "Господь, Бог наш, говорил нам в Хориве и сказал: \"полно вам жить на горе сей!",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, nous a parlé à Horeb, en disant : « Vous avez séjourné assez longtemps dans cette montagne ;",
+        "NAB": "\"The LORD, our God, said to us at Horeb, 'You have stayed long enough at this mountain.",
+        "VAT_ES": "El Señor, nuestro Dios, nos habló en el Horeb en estos términos. Ya han estado bastante tiempo en esta montaña.",
+        "CEI": "\"Il Signore nostro Dio ci ha parlato sull'Oreb e ci ha detto: Avete dimorato abbastanza su questa montagna;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "פְּנ֣וּ וּ/סְע֣וּ לָ/כֶ֗ם וּ/בֹ֨אוּ הַ֥ר הָֽ/אֱמֹרִי֮ וְ/אֶל כָּל שְׁכֵנָי/ו֒ בָּ/עֲרָבָ֥ה בָ/הָ֛ר וּ/בַ/שְּׁפֵלָ֥ה וּ/בַ/נֶּ֖גֶב וּ/בְ/ח֣וֹף הַ/יָּ֑ם אֶ֤רֶץ הַֽ/כְּנַעֲנִי֙ וְ/הַ/לְּבָנ֔וֹן עַד הַ/נָּהָ֥ר הַ/גָּדֹ֖ל נְהַר פְּרָֽת׃",
+        "LXX": "ἐπιστράφητε καὶ ἀπάρατε ὑμεῖς καὶ εἰσπορεύεσθε εἰς ὄρος Ἀμορραίων καὶ πρὸς πάντας τοὺς περιοίκους Ἀραβά, εἰς ὄρος καὶ πεδίον, καὶ πρὸς λίβα καὶ παραλίαν γῆν Χαναναίων καὶ Ἀντιλίβανον, ἕως τοῦ ποταμοῦ τοῦ μεγάλου Εὐφράτου.",
+        "VUL": "revertimini, et venite ad montem Amorrhæorum, et ad cetera quæ ei proxima sunt campestria atque montana et humiliora loca contra meridiem, et juxta littus maris, terram Chananæorum, et Libani usque ad flumen magnum Euphraten.",
+        "SYN": "обратитесь, отправьтесь в путь и пойдите на гору Аморреев и ко всем соседям их, на равнину, на гору, на низкие места и на южный край и к берегам моря, в землю Ханаанскую и к Ливану, даже до реки великой, реки Евфрата;",
+        "NEO": "tournez-vous et partez ; allez à la montagne des Amorrhéens et dans tous ses alentours : dans l’Arabah, dans la montagne, dans la Séphéla, dans le Négeb, sur la côte de la mer, au pays des Chananéens, et au Liban, jusqu’au grand fleuve, au fleuve de l’Euphrate.",
+        "NAB": "Leave here and go to the hill country of the Amorites and to all the surrounding regions, the land of the Canaanites in the Arabah, the mountains, the foothills, the Negeb and the seacoast; to Lebanon, and as far as the Great River (the Euphrates).",
+        "VAT_ES": "Den vuelta y pónganse en camino, para ir a la montaña de los amorreos y a todas las regiones vecinas: la Montaña, la Sefelá, el Négueb y la costa marítima –es decir la tierra del Canaán– y el Líbano, hasta el Gran Río, el río, el río Eufrates.",
+        "CEI": "voltatevi, levate l'accampamento e andate verso le montagne degli Amorrèi e in tutte le regioni vicine: la valle dell'Araba, le montagne, la Sefela, il Negheb, la costa del mare, nel paese dei Cananei e nel Libano, fino al grande fiume, il fiume Eufràte."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "רְאֵ֛ה נָתַ֥תִּי לִ/פְנֵי/כֶ֖ם אֶת הָ/אָ֑רֶץ בֹּ֚אוּ וּ/רְשׁ֣וּ אֶת הָ/אָ֔רֶץ אֲשֶׁ֣ר נִשְׁבַּ֣ע יְ֠הוָה לַ/אֲבֹ֨תֵי/כֶ֜ם לְ/אַבְרָהָ֨ם לְ/יִצְחָ֤ק וּֽ/לְ/יַעֲקֹב֙ לָ/תֵ֣ת לָ/הֶ֔ם וּ/לְ/זַרְעָ֖/ם אַחֲרֵי/הֶֽם׃",
+        "LXX": "ἴδετε παραδέδωκεν ἐνώπιον ὑμῶν τὴν γῆν· εἰσπορευθέντες κληρονομήσατε τὴν γῆν ἣν ὤμοσα τοῖς πατράσιν ὑμῶν, τῷ Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακώβ, δοῦναι αὐτοῖς καὶ τῷ σπέρματι αὐτῶν μετ’ αὐτούς.",
+        "VUL": "En, inquit, tradidi vobis : ingredimini et possidete eam, super qua juravit Dominus patribus vestris Abraham, Isaac, et Jacob, ut daret illam eis, et semini eorum post eos.",
+        "SYN": "вот, Я даю вам землю сию, пойдите, возьмите в наследие землю, которую Господь с клятвою обещал дать отцам вашим, Аврааму, Исааку и Иакову, им и потомству их\".",
+        "NEO": "Voici que je mets ce pays devant vous ; allez et prenez possession du pays que \\+w Yahweh|strong=\"H3068\"\\+w** a juré à vos pères, Abraham, Isaac et Jacob, de leur donner, à eux et à leur postérité après eux. »",
+        "NAB": "I have given that land over to you. Go now and occupy the land I swore to your fathers, Abraham, Isaac and Jacob, I would give to them and to their descendants.'",
+        "VAT_ES": "Yo pongo el país delante de ustedes: vayan a tomar posesión de la tierra que el Señor juró dar a sus padres. a Abraham, a Isaac y a Jacob, y a sus descendientes después de ellos.",
+        "CEI": "Ecco, io vi ho posto il paese dinanzi; entrate, prendete in possesso il paese che il Signore ha giurato di dare ai vostri padri, Abramo, Isacco e Giacobbe, e alla loro stirpe dopo di essi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וָ/אֹמַ֣ר אֲלֵ/כֶ֔ם בָּ/עֵ֥ת הַ/הִ֖וא לֵ/אמֹ֑ר לֹא אוּכַ֥ל לְ/בַדִּ֖/י שְׂאֵ֥ת אֶתְ/כֶֽם׃",
+        "LXX": "καὶ εἶπα πρὸς ὑμᾶς ἐν τῷ καιρῷ ἐκείνῳ λέγων Οὐ δυνήσομαι μόνος φέρειν ὑμᾶς·",
+        "VUL": "Dixique vobis illo in tempore :",
+        "SYN": "И я сказал вам в то время: не могу один водить вас;",
+        "NEO": "Je vous parlai ainsi dans ce temps-là : « Je ne puis, à moi seul, vous porter.",
+        "NAB": "\"At that time I said to you, 'Alone, I am unable to carry you.",
+        "VAT_ES": "En aquel tiempo, yo les dije: «Yo solo no puedo hacerme cargo de todos ustedes».",
+        "CEI": "In quel tempo io vi ho parlato e vi ho detto: Io non posso da solo sostenere il carico del popolo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "יְהוָ֥ה אֱלֹהֵי/כֶ֖ם הִרְבָּ֣ה אֶתְ/כֶ֑ם וְ/הִנְּ/כֶ֣ם הַ/יּ֔וֹם כְּ/כוֹכְבֵ֥י הַ/שָּׁמַ֖יִם לָ/רֹֽב׃",
+        "LXX": "Κύριος ὁ θεὸς ὑμῶν ἐπλήθυνεν ὑμᾶς, καὶ ἰδού ἐστε σήμερον ὡσεὶ τὰ ἄστρα τοῦ οὐρανοῦ τῷ πλήθει·",
+        "VUL": "Non possum solus sustinere vos : quia Dominus Deus vester multiplicavit vos, et estis hodie sicut stellæ cæli, plurimi.",
+        "SYN": "Господь, Бог ваш, размножил вас, и вот, вы ныне многочисленны, как звезды небесные;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu vous a multipliés, et vous êtes aujourd’hui aussi nombreux que les étoiles du ciel.",
+        "NAB": "The LORD, your God, has so multiplied you that you are now as numerous as the stars in the sky.",
+        "VAT_ES": "El Señor, su Dios, los ha multiplicado de tal manera, que hoy ustedes son numerosos como las estrellas del cielo.",
+        "CEI": "Il Signore vostro Dio vi ha moltiplicati ed ecco oggi siete numerosi come le stelle del cielo."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "יְהוָ֞ה אֱלֹהֵ֣י אֲבֽוֹתֵ/כֶ֗ם יֹסֵ֧ף עֲלֵי/כֶ֛ם כָּ/כֶ֖ם אֶ֣לֶף פְּעָמִ֑ים וִ/יבָרֵ֣ךְ אֶתְ/כֶ֔ם כַּ/אֲשֶׁ֖ר דִּבֶּ֥ר לָ/כֶֽם׃",
+        "LXX": "Κύριος ὁ θεὸς τῶν πατέρων ὑμῶν προσθείη ὑμῖν ὡς ἐστὲ χιλιοπλασίως, καὶ εὐλογήσαι ὑμᾶς καθότι ἐλάλησεν ὑμῖν.",
+        "VUL": "(Dominus Deus patrum vestrorum addat ad hunc numerum multa millia, et benedicat vobis sicut locutus est.)",
+        "SYN": "Господь, Бог отцов ваших, да умножит вас в тысячу крат против того, сколько вас _теперь,_ и да благословит вас, как Он говорил вам:",
+        "NEO": "— Que \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu de vos pères, vous fasse croître encore mille fois plus, et qu’il vous bénisse comme il vous l’a promis ! —",
+        "NAB": "May the LORD, the God of your fathers, increase you a thousand times over, and bless you as he promised!",
+        "VAT_ES": "&iexcl;Qué el Señor, el Dios de sus padres, los haga aún mil veces más numerosos y los bendiga, como lo ha prometido!",
+        "CEI": "Il Signore, Dio dei vostri padri, vi aumenti anche mille volte di più e vi benedica come vi ha promesso di fare."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אֵיכָ֥ה אֶשָּׂ֖א לְ/בַדִּ֑/י טָרְחֲ/כֶ֥ם וּ/מַֽשַּׂאֲ/כֶ֖ם וְ/רִֽיבְ/כֶֽם׃",
+        "LXX": "πῶς δυνήσομαι μόνος φέρειν τὸν κόπον ὑμῶν καὶ τὴν ὑπόστασιν ὑμῶν καὶ τὰς ἀντιλογίας ὑμῶν;",
+        "VUL": "Non valeo solus negotia vestra sustinere, et pondus ac jurgia.",
+        "SYN": "как же мне одному носить тягости ваши, бремена ваши и распри ваши?",
+        "NEO": "Comment porterais-je, à moi seul, votre charge, votre fardeau et vos contestations ?",
+        "NAB": "But how can I alone bear the crushing burden that you are, along with your bickering?",
+        "VAT_ES": "&iquest;Cómo podré, entonces, cargar yo solo con el peso de todos ustedes y ocuparme también de sus litigios?",
+        "CEI": "Ma come posso io da solo portare il vostro peso, il vostro carico e le vostre liti?"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הָב֣וּ לָ֠/כֶם אֲנָשִׁ֨ים חֲכָמִ֧ים וּ/נְבֹנִ֛ים וִ/ידֻעִ֖ים לְ/שִׁבְטֵי/כֶ֑ם וַ/אֲשִׂימֵ֖/ם בְּ/רָאשֵׁי/כֶֽם׃",
+        "LXX": "δότε ἑαυτοῖς ἄνδρας σοφοὺς καὶ ἐπιστήμονας καὶ συνετοὺς εἰς τὰς φυλὰς ὑμῶν, καὶ καταστήσω ἐφ’ ὑμῶν ἡγουμένους ὑμῶν.",
+        "VUL": "Date ex vobis viros sapientes et gnaros, et quorum conversatio sit probata in tribubus vestris, ut ponam eos vobis principes.",
+        "SYN": "изберите себе по коленам вашим мужей мудрых, разумных и испытанных, и я поставлю их начальниками вашими.",
+        "NEO": "Prenez dans vos tribus des hommes sages, intelligents et connus, et je les établirai à votre tête. »",
+        "NAB": "Choose wise, intelligent and experienced men from each of your tribes, that I may appoint them as your leaders.'",
+        "VAT_ES": "Designen para cada una de sus tribus a hombres sabios, prudentes y experimentados. y yo los pondré al frente de ustedes».",
+        "CEI": "Sceglietevi nelle vostre tribù uomini saggi, intelligenti e stimati, e io li costituirò vostri capi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַֽ/תַּעֲנ֖וּ אֹתִ֑/י וַ/תֹּ֣אמְר֔וּ טֽוֹב הַ/דָּבָ֥ר אֲשֶׁר דִּבַּ֖רְתָּ לַ/עֲשֽׂוֹת׃",
+        "LXX": "καὶ ἀπεκρίθητέ μοι καὶ εἴπατε Καλὸν τὸ ῥῆμα ὃ ἐλάλησας ποιῆσαι.",
+        "VUL": "Tunc respondistis mihi : Bona res est, quam vis facere.",
+        "SYN": "Вы отвечали мне и сказали: хорошее дело велишь ты сделать.",
+        "NEO": "Vous me répondîtes en disant : « La chose que tu proposes de faire est bonne ».",
+        "NAB": "You answered me, 'We agree to do as you have proposed.'",
+        "VAT_ES": "Ustedes me respondieron: «Tu propuesta nos parece buena».",
+        "CEI": "Voi mi rispondeste: Va bene ciò che proponi di fare."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וָ/אֶקַּ֞ח אֶת רָאשֵׁ֣י שִׁבְטֵי/כֶ֗ם אֲנָשִׁ֤ים חֲכָמִים֙ וִֽ/ידֻעִ֔ים וָ/אֶתֵּ֥ן אֹתָ֛/ם רָאשִׁ֖ים עֲלֵי/כֶ֑ם שָׂרֵ֨י אֲלָפִ֜ים וְ/שָׂרֵ֣י מֵא֗וֹת וְ/שָׂרֵ֤י חֲמִשִּׁים֙ וְ/שָׂרֵ֣י עֲשָׂרֹ֔ת וְ/שֹׁטְרִ֖ים לְ/שִׁבְטֵי/כֶֽם׃",
+        "LXX": "καὶ ἔλαβον ἐξ ὑμῶν ἄνδρας σοφοὺς καὶ ἐπιστήμονας καὶ συνετούς, καὶ κατέστησα αὐτοὺς ἡγεῖσθαι ἐφ’ ὑμῶν, χιλιάρχους καὶ ἑκατοντάρχους καὶ δεκαδάρχους καὶ γραμματοεισαγωγεῖς τοῖς κριταῖς ὑμῶν.",
+        "VUL": "Tulique de tribubus vestris viros sapientes et nobiles, et constitui eos principes, tribunos, et centuriones, et quinquagenarios ac decanos, qui docerent vos singula.",
+        "SYN": "И взял я главных из колен ваших, мужей мудрых, [разумных] и испытанных, и сделал их начальниками над вами, тысяченачальниками, стоначальниками, пятидесятиначальниками, десятиначальниками и надзирателями по коленам вашим.",
+        "NEO": "Je pris donc les chefs de vos tribus, des hommes sages et connus, et je les mis à votre tête comme chefs de milliers, chefs de centaines, chefs de cinquantaines et chefs de dizaines, et comme magistrats dans vos tribus.",
+        "NAB": "So I took outstanding men of your tribes, wise and experienced, and made them your leaders as officials over thousands, over hundreds, over fifties and over tens, and other tribal officers.",
+        "VAT_ES": "Entonces tomé de entre los jefes de las tribus a unos hombres sabios y experimentados y los puse al frente de ustedes como jefes de mil, de cien, de cincuenta y de diez hombres, y como escribas para las tribus.",
+        "CEI": "Allora presi i capi delle vostre tribù, uomini saggi e stimati, e li stabilii sopra di voi come capi di migliaia, capi di centinaia, capi di cinquantine, capi di decine, e come scribi nelle vostre tribù."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וָ/אֲצַוֶּה֙ אֶת שֹׁ֣פְטֵי/כֶ֔ם בָּ/עֵ֥ת הַ/הִ֖וא לֵ/אמֹ֑ר שָׁמֹ֤עַ בֵּין אֲחֵי/כֶם֙ וּ/שְׁפַטְתֶּ֣ם צֶ֔דֶק בֵּֽין אִ֥ישׁ וּ/בֵין אָחִ֖י/ו וּ/בֵ֥ין גֵּרֽ/וֹ׃",
+        "LXX": "καὶ ἐνετειλάμην τοῖς κριταῖς ὑμῶν ἐν τῷ καιρῷ ἐκείνῳ λέγων Διακούετε ἀνὰ μέσον τῶν ἀδελφῶν ὑμῶν, καὶ κρίνατε δικαίως ἀνὰ μέσον ἀνδρὸς καὶ ἀνὰ μέσον ἀδελφοῦ καὶ ἀνὰ μέσον προσηλύτου αὐτοῦ.",
+        "VUL": "Præcepique eis, dicens : Audite illos, et quod justum est judicate : sive civis sit ille, sive peregrinus.",
+        "SYN": "И дал я повеление судьям вашим в то время, говоря: выслушивайте братьев ваших и судите справедливо, как брата с братом, так и пришельца его;",
+        "NEO": "Dans le même temps, je donnai ce commandement à vos juges : « Ecoutez les débats de vos frères, et jugez selon la justice les différends qu’ils auront chacun avec son frère ou avec l’étranger qui est avec lui.",
+        "NAB": "I charged your judges at that time, 'Listen to complaints among your kinsmen, and administer true justice to both parties even if one of them is an alien.",
+        "VAT_ES": "Al mismo tiempo, di esta orden a los jueces: «Escuchen a sus hermanos y hagan justicia, cuando tengan un pleito entre ellos o con un extranjero.",
+        "CEI": "In quel tempo diedi quest'ordine ai vostri giudici: Ascoltate le cause dei vostri fratelli e giudicate con giustizia le questioni che uno può avere con il fratello o con lo straniero che sta presso di lui."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "לֹֽא תַכִּ֨ירוּ פָנִ֜ים בַּ/מִּשְׁפָּ֗ט כַּ/קָּטֹ֤ן כַּ/גָּדֹל֙ תִּשְׁמָע֔וּ/ן לֹ֤א תָג֨וּרוּ֙ מִ/פְּנֵי אִ֔ישׁ כִּ֥י הַ/מִּשְׁפָּ֖ט לֵ/אלֹהִ֣ים ה֑וּא וְ/הַ/דָּבָר֙ אֲשֶׁ֣ר יִקְשֶׁ֣ה מִ/כֶּ֔ם תַּקְרִב֥וּ/ן אֵלַ֖/י וּ/שְׁמַעְתִּֽי/ו׃",
+        "LXX": "οὐκ ἐπιγνώσῃ πρόσωπον ἐν κρίσει· κατὰ τὸν μικρὸν καὶ κατὰ τὸν μέγαν κρινεῖς, οὐ μὴ ὑποστείλῃ πρόσωπον ἀνθρώπου, ὅτι ἡ κρίσις τοῦ θεοῦ ἐστίν· καὶ τὸ ῥῆμα ὃ ἐὰν σκληρὸν ᾖ ἀφ’ ὑμῶν, ἀνοίσετε αὐτὸ ἐπ’ ἐμέ, καὶ ἀκούσομαι ὑμῶν.",
+        "VUL": "Nulla erit distantia personarum : ita parvum audietis ut magnum, nec accipietis cujusquam personam, quia Dei judicium est. Quod si difficile vobis visum aliquid fuerit, referte ad me, et ego audiam.",
+        "SYN": "не различайте лиц на суде, как малого, так и великого выслушивайте: не бойтесь лица человеческого, ибо суд -- дело Божие; а дело, которое для вас трудно, доводите до меня, и я выслушаю его.",
+        "NEO": "Vous n’aurez pas égard, dans vos jugements, à l’apparence des personnes ; vous écouterez les petits comme les grands, n’ayant peur d’aucun homme, car le jugement est de Dieu ; et si vous trouvez une cause trop difficile, vous la porterez devant moi, pour que je l’entende. »",
+        "NAB": "In rendering judgment, do not consider who a person is; give ear to the lowly and to the great alike, fearing no man, for judgment is God's. Refer to me any case that is too hard for you and I will hear it.'",
+        "VAT_ES": "No sean parciales en los juicios: escuchen a los humildes lo mismo que a los poderosos. No se dejen intimidar por nadie, porque el juicio pertenece a Dios. Y cuando se les presente un caso demasiado difícil, diríjanse a mí, para que yo lo resuelva».",
+        "CEI": "Nei vostri giudizi non avrete riguardi personali, darete ascolto al piccolo come al grande; non temerete alcun uomo, poiché il giudizio appartiene a Dio; le cause troppo difficili per voi le presenterete a me e io le ascolterò."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וָ/אֲצַוֶּ֥ה אֶתְ/כֶ֖ם בָּ/עֵ֣ת הַ/הִ֑וא אֵ֥ת כָּל הַ/דְּבָרִ֖ים אֲשֶׁ֥ר תַּעֲשֽׂוּ/ן׃",
+        "LXX": "καὶ ἐνετειλάμην ὑμῖν ἐν τῷ καιρῷ ἐκείνῳ πάντας τοὺς λόγους οὓς ποιήσετε.",
+        "VUL": "Præcepique omnia quæ facere deberetis.",
+        "SYN": "И дал я вам в то время повеления обо всем, что надлежит вам делать.",
+        "NEO": "C’est ainsi que je vous prescrivis, dans ce temps-là, toutes les choses que vous auriez à faire.",
+        "NAB": "Thereupon I gave you all the commands you were to fulfill.",
+        "VAT_ES": "Así les indiqué aquella vez todo lo que ustedes debían hacer.",
+        "CEI": "In quel tempo io vi ordinai tutte le cose che dovevate fare."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/נִּסַּ֣ע מֵ/חֹרֵ֗ב וַ/נֵּ֡לֶךְ אֵ֣ת כָּל הַ/מִּדְבָּ֣ר הַ/גָּדוֹל֩ וְ/הַ/נּוֹרָ֨א הַ/ה֜וּא אֲשֶׁ֣ר רְאִיתֶ֗ם דֶּ֚רֶךְ הַ֣ר הָֽ/אֱמֹרִ֔י כַּ/אֲשֶׁ֥ר צִוָּ֛ה יְהוָ֥ה אֱלֹהֵ֖י/נוּ אֹתָ֑/נוּ וַ/נָּבֹ֕א עַ֖ד קָדֵ֥שׁ בַּרְנֵֽעַ׃",
+        "LXX": "Καὶ ἀπάραντες ἐκ Χωρὴβ ἐπορεύθημεν πᾶσαν τὴν ἔρημον τὴν μεγάλην καὶ τὴν φοβερὰν ἐκείνην ἣν εἴδετε, ὁδὸν ὄρους τοῦ Ἀμορραίου, καθότι ἐνετείλατο Κύριος ὁ θεὸς ἡμῶν ἡμῖν, καὶ ἤλθομεν ἕως Καδὴς Βαρνή.",
+        "VUL": "Profecti autem de Horeb, transivimus per eremum terribilem et maximam, quam vidistis, per viam montis Amorrhæi, sicut præceperat Dominus Deus noster nobis. Cumque venissemus in Cadesbarne,",
+        "SYN": "И отправились мы от Хорива, и шли по всей этой великой и страшной пустыне, которую вы видели, по пути к горе Аморрейской, как повелел Господь, Бог наш, и пришли в Кадес-Варни.",
+        "NEO": "Etant partis d’Horeb, nous traversâmes tout ce vaste et affreux désert que vous avez vu, nous dirigeant vers la montagne des Amorrhéens, comme \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, nous l’avait ordonné, et nous arrivâmes à Cadès-Barné.",
+        "NAB": "\"Then, in obedience to the command of the LORD, our God, we set out from Horeb and journeyed through the whole desert, vast and fearful as you have seen, in the direction of the hill country of the Amorites. We had reached Kadesh-barnea",
+        "VAT_ES": "Después partimos del Horeb, y comenzamos a recorrer el desierto inmenso y temible que ustedes han visto. Ibamos hacia la montaña de los amorreos, como el Señor, nuestro Dios, nos lo había ordenado, y llegamos a Cades Barné.",
+        "CEI": "Poi partimmo dall'Oreb e attraversammo tutto quel deserto grande e spaventoso che avete visto, dirigendoci verso le montagne degli Amorrèi, come il Signore nostro Dio ci aveva ordinato di fare, e giungemmo a Kades-Barnea."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וָ/אֹמַ֖ר אֲלֵ/כֶ֑ם בָּאתֶם֙ עַד הַ֣ר הָ/אֱמֹרִ֔י אֲשֶׁר יְהוָ֥ה אֱלֹהֵ֖י/נוּ נֹתֵ֥ן לָֽ/נוּ׃",
+        "LXX": "καὶ εἶπα πρὸς ὑμᾶς Ἤλθατε ἕως τοῦ ὄρους τοῦ Ἀμορραίου, ὃ ὁ κύριος ὁ θεὸς ἡμῶν δίδωσιν ὑμῖν·",
+        "VUL": "dixi vobis : Venistis ad montem Amorrhæi, quem Dominus Deus noster daturus est nobis :",
+        "SYN": "И сказал я вам: вы пришли к горе Аморрейской, которую Господь, Бог наш, дает нам;",
+        "NEO": "Je vous dis alors : « Vous êtes arrivés à la montagne des Amorrhéens, que nous donne \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu.",
+        "NAB": "when I said to you, 'You have come to the hill country of the Amorites, which the LORD, our God, is giving us.",
+        "VAT_ES": "Entonces yo les dije: «Ya han llegado a la montaña de los amorreos, que nos da el Señor. nuestro Dios.",
+        "CEI": "Allora vi dissi: Siete arrivati presso la montagna degli Amorrèi, che il Signore nostro Dio sta per darci."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "רְ֠אֵה נָתַ֨ן יְהוָ֧ה אֱלֹהֶ֛י/ךָ לְ/פָנֶ֖י/ךָ אֶת הָ/אָ֑רֶץ עֲלֵ֣ה רֵ֗שׁ כַּ/אֲשֶׁר֩ דִּבֶּ֨ר יְהוָ֜ה אֱלֹהֵ֤י אֲבֹתֶ֨י/ךָ֙ לָ֔/ךְ אַל תִּירָ֖א וְ/אַל תֵּחָֽת׃",
+        "LXX": "ἴδετε παραδέδωκεν ὑμῖν Κύριος ὁ θεὸς ἡμῶν πρὸ προσώπου ὑμῶν τὴν γῆν· ἀναβάντες κληρονομήσατε, ὃν τρόπον εἶπεν Κύριος ὁ θεὸς τῶν πατέρων ἡμῶν ὑμῖν· μὴ φοβεῖσθε μηδὲ δειλιάσητε.",
+        "VUL": "vide terram, quam Dominus Deus tuus dat tibi : ascende et posside eam, sicut locutus est Dominus Deus noster patribus tuis : noli timere, nec quidquam paveas.",
+        "SYN": "вот, Господь, Бог твой, отдает тебе землю сию, иди, возьми ее во владение, как говорил тебе Господь, Бог отцов твоих, не бойся и не ужасайся.",
+        "NEO": "Vois, \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, met ce pays devant toi ; monte et prends-en possession, comme te l’a dit \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu de tes pères ; ne crains pas et ne t’effraie pas. »",
+        "NAB": "The LORD, your God, has given this land over to you. Go up and occupy it, as the LORD, the God of your fathers, commands you. Do not fear or lose heart.'",
+        "VAT_ES": "El Señor, tu Dios, pone este país delante de ustedes: sube a tomar posesión de él, según te lo ha dicho el Señor, el Dios de tus padres. No temas ni te acobardes».",
+        "CEI": "Ecco il Signore tuo Dio ti ha posto il paese dinanzi; entra, prendine possesso, come il Signore Dio dei tuoi padri ti ha detto; non temere e non ti scoraggiare!"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/תִּקְרְב֣וּ/ן אֵלַ/י֮ כֻּלְּ/כֶם֒ וַ/תֹּאמְר֗וּ נִשְׁלְחָ֤ה אֲנָשִׁים֙ לְ/פָנֵ֔י/נוּ וְ/יַחְפְּרוּ לָ֖/נוּ אֶת הָ/אָ֑רֶץ וְ/יָשִׁ֤בוּ אֹתָ֨/נוּ֙ דָּבָ֔ר אֶת הַ/דֶּ֨רֶךְ֙ אֲשֶׁ֣ר נַעֲלֶה בָּ֔/הּ וְ/אֵת֙ הֶֽ/עָרִ֔ים אֲשֶׁ֥ר נָבֹ֖א אֲלֵי/הֶֽן׃",
+        "LXX": "καὶ προσήλθατέ μοι πάντες καὶ εἴπατε Ἀποστείλωμεν ἄνδρας προτέρους ἡμῶν καὶ ἐφοδευσάτωσαν ἡμῖν τὴν γῆν, καὶ ἀπαγγειλάτωσαν ἡμῖν ἀπόκρισιν, τὴν ὁδὸν δι’ ἧς ἀναβησόμεθα ἐν αὐτῇ, καὶ τὰς πόλεις εἰς ἃς εἰσπορευσόμεθα εἰς αὐτάς.",
+        "VUL": "Et accessistis ad me omnes, atque dixistis : Mittamus viros qui considerent terram : et renuntient per quod iter debeamus ascendere, et ad quas pergere civitates.",
+        "SYN": "Но вы все подошли ко мне и сказали: пошлем пред собою людей, чтоб они исследовали нам землю и принесли нам известие о дороге, по которой идти нам, и о городах, в которые идти нам.",
+        "NEO": "Vous vous approchâtes tous de moi et vous dites : « Envoyons des hommes devant nous, pour explorer le pays et nous faire un rapport sur le chemin par lequel nous y monterons, et sur les villes où nous arriverons. »",
+        "NAB": "Then all of you came up to me and said, 'Let us send men ahead to reconnoiter the land for us and report to us on the road we must follow and the cities we must take.'",
+        "VAT_ES": "Pero ustedes se acercaron a mí para decirme: «Enviemos delante de nosotros algunos hombres para que exploren la región y nos informen sobre el camino que debemos tomar y sobre las ciudades a las que debemos entrar».",
+        "CEI": "Voi vi accostaste a me tutti e diceste: Mandiamo uomini innanzi a noi, che esplorino il paese e ci riferiscano sul cammino per il quale noi dovremo salire e sulle città nelle quali dovremo entrare."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יִּיטַ֥ב בְּ/עֵינַ֖/י הַ/דָּבָ֑ר וָ/אֶקַּ֤ח מִ/כֶּם֙ שְׁנֵ֣ים עָשָׂ֣ר אֲנָשִׁ֔ים אִ֥ישׁ אֶחָ֖ד לַ/שָּֽׁבֶט׃",
+        "LXX": "καὶ ἤρεσεν ἐναντίον μου τὸ ῥῆμα, καὶ ἔλαβον ἐξ ὑμῶν ιβ’ ἄνδρας, ἄνδρα ἕνα κατά φυλήν.",
+        "VUL": "Cumque mihi sermo placuisset, misi ex vobis duodecim viros, singulos de tribubus suis.",
+        "SYN": "Слово это мне понравилось, и я взял из вас двенадцать человек, по одному человеку от [каждого] колена.",
+        "NEO": "La chose m’ayant paru bonne, je pris parmi vous douze hommes, un homme par tribu.",
+        "NAB": "Agreeing with the proposal, I chose twelve men from your number, one from each tribe.",
+        "VAT_ES": "La idea me pareció buena, y yo designé a doce de ustedes, uno por cada tribu.",
+        "CEI": "La proposta mi piacque e scelsi dodici uomini tra di voi, uno per tribù."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּפְנוּ֙ וַ/יַּעֲל֣וּ הָ/הָ֔רָ/ה וַ/יָּבֹ֖אוּ עַד נַ֣חַל אֶשְׁכֹּ֑ל וַֽ/יְרַגְּל֖וּ אֹתָֽ/הּ׃",
+        "LXX": "καὶ ἐπιστραφέντες ἀνέβησαν εἰς τὸ ὄρος, καὶ ἤλθοσαν ἕως Φάραγγος βότρυος, καὶ κατεσκόπευσαν αὐτήν.",
+        "VUL": "Qui cum perrexissent, et ascendissent in montana, venerunt usque ad Vallem botri : et considerata terra,",
+        "SYN": "Они пошли, взошли на гору и дошли до долины Есхол, и обозрели ее;",
+        "NEO": "Ils partirent et, après avoir traversé la montagne, ils arrivèrent à la vallée d’Escol et l’explorèrent.",
+        "NAB": "They set out into the hill country as far as the Wadi Eshcol, and explored it.",
+        "VAT_ES": "Ellos se dirigieron hacia la región montañosa y llegaron al valle de Escol. Después de haber inspeccionado la montaña.",
+        "CEI": "Quelli si incamminarono, salirono verso i monti, giunsero alla valle di Escol ed esplorarono il paese."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יִּקְח֤וּ בְ/יָדָ/ם֙ מִ/פְּרִ֣י הָ/אָ֔רֶץ וַ/יּוֹרִ֖דוּ אֵלֵ֑י/נוּ וַ/יָּשִׁ֨בוּ אֹתָ֤/נוּ דָבָר֙ וַ/יֹּ֣אמְר֔וּ טוֹבָ֣ה הָ/אָ֔רֶץ אֲשֶׁר יְהוָ֥ה אֱלֹהֵ֖י/נוּ נֹתֵ֥ן לָֽ/נוּ׃",
+        "LXX": "καὶ ἐλάβοσαν ἐν ταῖς χερσὶν αὐτῶν ἀπὸ τοῦ καρποῦ τῆς γῆς καὶ κατήνεγκαν πρὸς ἡμᾶς, καὶ ἔλεγον Ἀγαθὴ ἡ γῆ ἣν Κύριος ὁ θεὸς ἡμῶν δίδωσιν ἡμῖν.",
+        "VUL": "sumentes de fructibus ejus, ut ostenderent ubertatem, attulerunt ad nos, atque dixerunt : Bona est terra, quam Dominus Deus noster daturus est nobis.",
+        "SYN": "и взяли в руки свои плодов земли и доставили нам, и принесли нам известие и сказали: хороша земля, которую Господь, Бог наш, дает нам.",
+        "NEO": "Ils prirent dans leurs mains des fruits du pays et nous les apportèrent, et ils nous firent un rapport, en disant : « C’est un bon pays que nous donne \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu. »",
+        "NAB": "Then, taking along some of the fruit of the land, they brought it down to us and reported, 'The land which the LORD, our God, gives us is good.'",
+        "VAT_ES": "Regresaron trayendo en sus manos frutos de esa región, y nos presentaron este informe: «La tierra que nos da el Señor, nuestro Dios, es excelente».",
+        "CEI": "Presero con le mani i frutti del paese, ce li portarono e ci fecero questa relazione: È buono il paese che il Signore nostro Dio sta per darci."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/לֹ֥א אֲבִיתֶ֖ם לַ/עֲלֹ֑ת וַ/תַּמְר֕וּ אֶת פִּ֥י יְהוָ֖ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "καὶ οὐκ ἠθελήσατε ἀναβῆναι, καὶ ἠπειθήσατε τῷ ῥήματι Κυρίου τοῦ θεοῦ ἡμῶν·",
+        "VUL": "Et noluistis ascendere, sed increduli ad sermonem Domini Dei nostri,",
+        "SYN": "Но вы не захотели идти и воспротивились повелению Господа, Бога вашего,",
+        "NEO": "Cependant vous ne voulûtes pas monter, et vous fûtes rebelles à l’ordre de \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu.",
+        "NAB": "\"But you refused to go up, and after defying the command of the LORD, your God,",
+        "VAT_ES": "Pero ustedes se negaron a subir y se rebelaron contra la orden del Señor, su Dios.",
+        "CEI": "Ma voi non voleste entrarvi e vi ribellaste all'ordine del Signore vostro Dio;"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/תֵּרָגְנ֤וּ בְ/אָהֳלֵי/כֶם֙ וַ/תֹּ֣אמְר֔וּ בְּ/שִׂנְאַ֤ת יְהוָה֙ אֹתָ֔/נוּ הוֹצִיאָ֖/נוּ מֵ/אֶ֣רֶץ מִצְרָ֑יִם לָ/תֵ֥ת אֹתָ֛/נוּ בְּ/יַ֥ד הָ/אֱמֹרִ֖י לְ/הַשְׁמִידֵֽ/נוּ׃",
+        "LXX": "καὶ διεγογγύζετε ἐν ταῖς σκηναῖς ὑμῶν καὶ εἴπατε Διὰ τὸ μισεῖν Κύριον ἡμᾶς ἐξήγαγεν ἡμᾶς ἐκ γῆς Αἰγύπτου, παραδοῦναι ἡμᾶς εἰς χεῖρας Ἀμορραίων, ἐξολεθρεῦσαι ἡμᾶς·",
+        "VUL": "murmurastis in tabernaculis vestris, atque dixistis : Odit nos Dominus, et idcirco eduxit nos de terra Ægypti, ut traderet nos in manu Amorrhæi, atque deleret.",
+        "SYN": "и роптали в шатрах ваших и говорили: Господь, по ненависти к нам, вывел нас из земли Египетской, чтоб отдать нас в руки Аморреев _и_ истребить нас;",
+        "NEO": "Vous murmurâtes dans vos tentes, en disant : « C’est parce que \\+w Yahweh|strong=\"H3068\"\\+w** nous hait qu’il nous a fait sortir du pays d’Égypte, pour nous livrer entre les mains de l’Amorrhéen, afin de nous détruire.",
+        "NAB": "you set to murmuring in your tents, 'Out of hatred for us the LORD has brought us up out of the land of Egypt, to deliver us into the hands of the Amorites and destroy us.",
+        "VAT_ES": "Se pusieron a murmurar en sus carpas, diciendo: «El Señor nos aborrece; por eso nos hizo salir de Egipto para entregarnos a los amorreos y destruirnos.",
+        "CEI": "mormoraste nelle vostre tende e diceste: Il Signore ci odia, per questo ci ha fatti uscire dal paese d'Egitto per darci in mano agli Amorrèi e per distruggerci."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "אָנָ֣ה אֲנַ֣חְנוּ עֹלִ֗ים אַחֵי/נוּ֩ הֵמַ֨סּוּ אֶת לְבָבֵ֜/נוּ לֵ/אמֹ֗ר עַ֣ם גָּד֤וֹל וָ/רָם֙ מִמֶּ֔/נּוּ עָרִ֛ים גְּדֹלֹ֥ת וּ/בְצוּרֹ֖ת בַּ/שָּׁמָ֑יִם וְ/גַם בְּנֵ֥י עֲנָקִ֖ים רָאִ֥ינוּ שָֽׁם׃",
+        "LXX": "ποῦ ἡμεῖς ἀναβαίνομεν; οἱ ἀδελφοὶ ὑμῶν ἀπέστησαν ὑμῶν τὴν καρδίαν λέγοντες Ἔθνος μέγα καὶ πολὺ καὶ δυνατώτερον ὑμῶν, καὶ πόλεις μεγάλαι καὶ τετειχισμέναι ἕως τοῦ οὐρανοῦ· ἀλλὰ καὶ υἱοὺς γιγάντων ἑωράκαμεν ἐκεῖ.",
+        "VUL": "Quo ascendemus ? nuntii terruerunt cor nostrum, dicentes : Maxima multitudo est, et nobis statura procerior ; urbes magnæ, et ad cælum usque munitæ : filios Enacim vidimus ibi.",
+        "SYN": "куда мы пойдем? братья наши расслабили сердце наше, говоря: народ тот более, [многочисленнее] и выше нас, города _там_ большие и с укреплениями до небес, да и сынов Енаковых видели мы там.",
+        "NEO": "Où montons-nous ? Nos frères nous ont fait fondre le cœur, en disant : C’est un peuple plus grand et de plus haute stature que nous ; ce sont des grandes villes, dont les murailles s’élèvent jusqu’au ciel, et même nous y avons vu des fils des Enacim. »",
+        "NAB": "What shall we meet with up there? Our kinsmen have made us fainthearted by reporting that the people are stronger and taller than we, and their cities are large and fortified to the sky; besides, they saw the Anakim there.'",
+        "VAT_ES": "&iquest;Adónde iremos? Nuestros hermanos nos dejaron sin aliento, cuando nos dijeron: «Son gente más grande y más alta que nosotros; las ciudades son enormes y están provistas de murallas que se elevan hasta el cielo. Allí vimos también a los anaquitas».",
+        "CEI": "Dove possiamo andare noi? I nostri fratelli ci hanno scoraggiati dicendo: Quella gente è più grande e più alta di noi; le città sono grandi e fortificate fino al cielo; abbiamo visto là perfino dei figli degli Anakiti."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וָ/אֹמַ֖ר אֲלֵ/כֶ֑ם לֹא תַֽעַרְצ֥וּ/ן וְֽ/לֹא תִֽירְא֖וּ/ן מֵ/הֶֽם׃",
+        "LXX": "καὶ εἶπα πρὸς ὑμᾶς Μὴ πτήξητε μηδὲ φοβηθῆτε ἀπ’ αὐτῶν·",
+        "VUL": "Et dixi vobis : Nolite metuere, nec timeatis eos :",
+        "SYN": "И я сказал вам: не страшитесь и не бойтесь их;",
+        "NEO": "Je vous dis : « Ne vous effrayez pas et n’ayez pas peur d’eux.",
+        "NAB": "\"But I said to you, 'Have no dread or fear of them.",
+        "VAT_ES": "Entonces yo les dije: «No se acobarden ni les tengan miedo.",
+        "CEI": "Allora dissi a voi: Non spaventatevi e non abbiate paura di loro."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "יְהוָ֤ה אֱלֹֽהֵי/כֶם֙ הַ/הֹלֵ֣ךְ לִ/פְנֵי/כֶ֔ם ה֖וּא יִלָּחֵ֣ם לָ/כֶ֑ם כְּ֠/כֹל אֲשֶׁ֨ר עָשָׂ֧ה אִתְּ/כֶ֛ם בְּ/מִצְרַ֖יִם לְ/עֵינֵי/כֶֽם׃",
+        "LXX": "Κύριος ὁ θεὸς ὑμῶν ὁ προπορευόμενος πρὸ προσώπου ὑμῶν, αὐτὸς συνεκπολεμήσει αὐτοὺς μεθ’ ὑμῶν κατὰ πάντα ὅσα ἐποίησεν ἡμῖν ἐν γῇ Αἰγύπτῳ.",
+        "VUL": "Dominus Deus, qui ductor est vester, pro vobis ipse pugnabit, sicut fecit in Ægypto cunctis videntibus.",
+        "SYN": "Господь, Бог ваш, идет перед вами; Он будет сражаться за вас, как Он сделал с вами в Египте, пред глазами вашими,",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, qui marche devant vous, combattra lui-même pour vous, selon tout ce qu’il a fait pour vous sous vos yeux en Égypte,",
+        "NAB": "The LORD, your God, who goes before you, will himself fight for you, just as he took your part before your very eyes in Egypt,",
+        "VAT_ES": "El Señor, su Dios, que va delante de ustedes, combatirá por ustedes, como lo hizo en Egipto ante sus propios ojos.",
+        "CEI": "Il Signore stesso vostro Dio, che vi precede, combatterà per voi, come ha fatto tante volte sotto gli occhi vostri in Egitto"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וּ/בַ/מִּדְבָּר֙ אֲשֶׁ֣ר רָאִ֔יתָ אֲשֶׁ֤ר נְשָׂאֲ/ךָ֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ כַּ/אֲשֶׁ֥ר יִשָּׂא אִ֖ישׁ אֶת בְּנ֑/וֹ בְּ/כָל הַ/דֶּ֨רֶךְ֙ אֲשֶׁ֣ר הֲלַכְתֶּ֔ם עַד בֹּאֲ/כֶ֖ם עַד הַ/מָּק֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ ἐν τῇ ἐρήμῳ ταύτῃ ἣν εἴδετε ὁδὸν ὄρους τοῦ Ἀμορραίου, ὡς ἐτροφοφόρησέν σε Κύριος ὁ θεός σου ὡς εἴ τις τροφοφορήσει ἄνθρωπος τὸν υἱὸν αὐτοῦ, κατὰ πᾶσαν τὴν ὁδὸν εἰς ἣν ἐπορεύθητε ἕως ἤλθετε εἰς τὸν τόπον τοῦτον.",
+        "VUL": "Et in solitudine (ipse vidisti) portavit te Dominus Deus tuus, ut solet homo gestare parvulum filium suum, in omni via per quam ambulastis, donec veniretis ad locum istum.",
+        "SYN": "и в пустыне сей, где, как ты видел, Господь, Бог твой, носил тебя, как человек носит сына своего, на всем пути, которым вы проходили до пришествия вашего на сие место.",
+        "NEO": "et ensuite au désert, où tu as vu comment \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’a porté, ainsi qu’un homme porte son fils, sur toute la route que vous avez parcourue jusqu’à votre arrivée en ce lieu. »",
+        "NAB": "as well as in the desert, where you saw how the LORD, your God, carried you, as a man carries his child, all along your journey until you arrived at this place.'",
+        "VAT_ES": "Y también en el desierto. donde tú viste que el Señor, tu Dios, te conducía como un padre conduce a su hijo, a lo largo de todo el camino que recorriste hasta llegar a este lugar».",
+        "CEI": "e come ha fatto nel deserto, dove hai visto come il Signore tuo Dio ti ha portato, come un uomo porta il proprio figlio, per tutto il cammino che avete fatto, finché siete arrivati qui."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וּ/בַ/דָּבָ֖ר הַ/זֶּ֑ה אֵֽינְ/כֶם֙ מַאֲמִינִ֔ם בַּ/יהוָ֖ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "καὶ ἐν τῷ λόγῳ τούτῳ οὐκ ἐνεπιστεύσατε Κυρίῳ τῷ θεῷ ἡμῶν,",
+        "VUL": "Et nec sic quidem credidistis Domino Deo vestro,",
+        "SYN": "Но и при этом вы не верили Господу, Богу вашему,",
+        "NEO": "Malgré cela vous n’aviez pas confiance en \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu,",
+        "NAB": "Despite this, you would not trust the LORD, your God,",
+        "VAT_ES": "Y a pesar de todo, ustedes no tuvieron confianza en el Señor, su Dios.",
+        "CEI": "Nonostante questo, non aveste fiducia nel Signore vostro Dio"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "הַ/הֹלֵ֨ךְ לִ/פְנֵי/כֶ֜ם בַּ/דֶּ֗רֶךְ לָ/ת֥וּר לָ/כֶ֛ם מָק֖וֹם לַֽ/חֲנֹֽתְ/כֶ֑ם בָּ/אֵ֣שׁ לַ֗יְלָה לַ/רְאֹֽתְ/כֶם֙ בַּ/דֶּ֨רֶךְ֙ אֲשֶׁ֣ר תֵּֽלְכוּ בָ֔/הּ וּ/בֶ/עָנָ֖ן יוֹמָֽם׃",
+        "LXX": "ὃς προπορεύεται πρότερος ὑμῶν ἐν τῇ ὁδῷ ἐκλέγεσθαι ὑμῖν τόπον, ὁδηγῶν ὑμᾶς ἐν πυρὶ νυκτός, δεικνύων ὑμῖν τὴν ὁδὸν καθ’ ἣν πορεύεσθε ἐπ’ αὐτῆς, καὶ ἐν νεφέλῃ ἡμέρας.",
+        "VUL": "qui præcessit vos in via, et metatus est locum in quo tentoria figere deberetis, nocte ostendens vobis iter per ignem, et die per columnam nubis.",
+        "SYN": "Который шел перед вами путем -- искать вам места, где остановиться вам, ночью в огне, чтобы указывать вам дорогу, по которой идти, а днем в облаке.",
+        "NEO": "qui marchait devant vous sur le chemin pour vous chercher des lieux de campement, dans un feu pendant la nuit pour vous montrer le chemin où vous deviez marcher, et dans une nuée pendant le jour.",
+        "NAB": "who journeys before you to find you a resting place - by day in the cloud, and by night in the fire, to show the way you must go.",
+        "VAT_ES": "Que los precedía durante la marcha para buscarles un lugar donde acampar; de noche en el fuego, mostrándose el camino que debían seguir, y de día en la nube.",
+        "CEI": "che andava innanzi a voi nel cammino per cercarvi un luogo dove porre l'accampamento: di notte nel fuoco, per mostrarvi la via dove andare, e di giorno nella nube."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֥ע יְהוָ֖ה אֶת ק֣וֹל דִּבְרֵי/כֶ֑ם וַ/יִּקְצֹ֖ף וַ/יִּשָּׁבַ֥ע לֵ/אמֹֽר׃",
+        "LXX": "καὶ ἤκουσεν Κύριος τὴν φωνὴν τῶν λόγων ὑμῶν, καὶ παροξυνθεὶς ὤμοσεν λέγων",
+        "VUL": "Cumque audisset Dominus vocem sermonum vestrorum, iratus juravit, et ait :",
+        "SYN": "И Господь [Бог] услышал слова ваши, и разгневался, и поклялся, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** entendit le bruit de vos paroles et, dans sa colère, il jura, en disant :",
+        "NAB": "When the LORD heard your words, he was angry;",
+        "VAT_ES": "Al oír lo que ustedes decían, el Señor se irritó y pronunció este juramento:",
+        "CEI": "Il Signore udì le vostre parole, si adirò e giurò:"
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "אִם יִרְאֶ֥ה אִישׁ֙ בָּ/אֲנָשִׁ֣ים הָ/אֵ֔לֶּה הַ/דּ֥וֹר הָ/רָ֖ע הַ/זֶּ֑ה אֵ֚ת הָ/אָ֣רֶץ הַ/טּוֹבָ֔ה אֲשֶׁ֣ר נִשְׁבַּ֔עְתִּי לָ/תֵ֖ת לַ/אֲבֹתֵי/כֶֽם׃",
+        "LXX": "Εἰ ὄψεταί τις τῶν ἀνδρῶν τούτων τὴν ἀγαθὴν ταύτην γῆν, ἣν ὤμοσα τοῖς πατράσιν αὐτῶν·",
+        "VUL": "Non videbit quispiam de hominibus generationis hujus pessimæ terram bonam, quam sub juramento pollicitus sum patribus vestris,",
+        "SYN": "никто из людей сих, из сего злого рода, не увидит доброй земли, которую Я клялся дать отцам вашим;",
+        "NEO": "« Aucun des hommes de cette génération mauvaise ne verra le bon pays que j’ai juré de donner à vos pères,",
+        "NAB": "and he swore, 'Not one man of this evil generation shall look upon the good land I swore to give to your fathers,",
+        "VAT_ES": "«Ni uno solo de los hombres de esta generación perversa verá la hermosa tierra que yo juré dar a sus padres.",
+        "CEI": "Nessuno degli uomini di questa malvagia generazione vedrà il buon paese che ho giurato di dare ai vostri padri,"
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "זֽוּלָתִ֞י כָּלֵ֤ב בֶּן יְפֻנֶּה֙ ה֣וּא יִרְאֶ֔/נָּה וְ/לֽ/וֹ אֶתֵּ֧ן אֶת הָ/אָ֛רֶץ אֲשֶׁ֥ר דָּֽרַךְ בָּ֖/הּ וּ/לְ/בָנָ֑י/ו יַ֕עַן אֲשֶׁ֥ר מִלֵּ֖א אַחֲרֵ֥י יְהוָֽה׃",
+        "LXX": "πλὴν Χαλὲβ υἱὸς Ἰεφοννή, οὗτος ὄψεται αὐτήν, καὶ τούτῳ δώσω τὴν γῆν ἐφ’ ἣν ἐπέβη καὶ τοῖς υἱοῖς αὐτοῦ, διὰ τὸ προσκεῖσθαι αὐτὸν τὰ πρὸς Κύριον.",
+        "VUL": "præter Caleb filium Jephone : ipse enim videbit eam, et ipsi dabo terram, quam calcavit, et filiis ejus, quia secutus est Dominum.",
+        "SYN": "только Халев, сын Иефонниин, увидит ее; ему дам Я землю, по которой он проходил, и сынам его, за то, что он повиновался Господу.",
+        "NEO": "excepté Caleb fils de Jéphoné ; il le verra, lui, et je lui donnerai, à lui et à ses enfants, le pays qu’il a foulé, parce qu’il a fidèlement suivi \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "except Caleb, son of Jephunneh; he shall see it. For to him and to his sons I will give the land he trod upon, because he has followed the LORD unreservedly.'",
+        "VAT_ES": "El único que podrá verla es Caleb, el hijo de Iefuné. A él y a sus hijos les daré la tierra que sus pies han pisado, porque él ha sido siempre fiel al Señor».",
+        "CEI": "se non Caleb, figlio di Iefunne. Egli lo vedrà e a lui e ai suoi figli darò la terra che ha calcato, perché ha pienamente seguito il Signore."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "גַּם בִּ/י֙ הִתְאַנַּ֣ף יְהוָ֔ה בִּ/גְלַלְ/כֶ֖ם לֵ/אמֹ֑ר גַּם אַתָּ֖ה לֹא תָבֹ֥א שָֽׁם׃",
+        "LXX": "καὶ ἐμοὶ ἐθυμώθη Κύριος δι’ ὑμᾶς λέγων Οὐδὲ σὺ οὐ μὴ εἰσέλθῃς ἐκεῖ.",
+        "VUL": "Nec miranda indignatio in populum, cum mihi quoque iratus Dominus propter vos dixerit : Nec tu ingredieris illuc :",
+        "SYN": "И на меня прогневался Господь за вас, говоря: и ты не войдешь туда;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** s’irrita aussi contre moi, à cause de vous, et il dit : « Toi non plus tu n’y entreras pas.",
+        "NAB": "\"The LORD was angered against me also on your account, and said, 'Not even you shall enter there,",
+        "VAT_ES": "Y por culpa de ustedes, el Señor se indignó también contra mí, y me dijo: «Tampoco tú entrarás.",
+        "CEI": "Anche contro di me si adirò il Signore, per causa vostra, e disse: Neanche tu vi entrerai,"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "יְהוֹשֻׁ֤עַ בִּן נוּן֙ הָ/עֹמֵ֣ד לְ/פָנֶ֔י/ךָ ה֖וּא יָ֣בֹא שָׁ֑מָּ/ה אֹת֣/וֹ חַזֵּ֔ק כִּי ה֖וּא יַנְחִלֶ֥/נָּה אֶת יִשְׂרָאֵֽל׃",
+        "LXX": "Ἰησοῦς υἱὸς Ναυὴ ὁ παρεστηκώς σοι, οὗτος εἰσελεύσεται ἐκεῖ· αὐτὸν κατίσχυσον, ὅτι αὐτὸς κατακληρονομήσει αὐτὴν τῷ Ἰσραήλ.",
+        "VUL": "sed Josue filius Nun minister tuus, ipse intrabit pro te. Hunc exhortare et robora, et ipse sorte terram dividet Israëli.",
+        "SYN": "Иисус, сын Навин, который при тебе, он войдет туда; его утверди, ибо он введет Израиля во владение ею;",
+        "NEO": "Mais Josué, fils de Nun, ton serviteur, y entrera ; fortifie-le, car c’est lui qui mettra Israël en possession de ce pays.",
+        "NAB": "but your aide Joshua, son of Nun, shall enter. Encourage him, for he is to give Israel its heritage.",
+        "VAT_ES": "El que entrará es Josué, tu ayudante. Infúndele valor, por él deberá poner a Israel en posesión de la tierra.",
+        "CEI": "ma vi entrerà Giosuè, figlio di Nun, che sta al tuo servizio; incoraggialo, perché egli metterà Israele in possesso di questo paese."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וְ/טַפְּ/כֶם֩ אֲשֶׁ֨ר אֲמַרְתֶּ֜ם לָ/בַ֣ז יִהְיֶ֗ה וּ֠/בְנֵי/כֶם אֲשֶׁ֨ר לֹא יָדְע֤וּ הַ/יּוֹם֙ ט֣וֹב וָ/רָ֔ע הֵ֖מָּה יָבֹ֣אוּ שָׁ֑מָּ/ה וְ/לָ/הֶ֣ם אֶתְּנֶ֔/נָּה וְ/הֵ֖ם יִירָשֽׁוּ/הָּ׃",
+        "LXX": "καὶ πᾶν παιδίον νέον ὅστις οὐκ οἶδεν σήμερον ἀγαθὸν ἢ κακόν, οὗτοι εἰσελεύσονται ἐκεῖ, καὶ τούτοις δώσω αὐτήν, καὶ αὐτοὶ κληρονομήσουσιν αὐτήν.",
+        "VUL": "Parvuli vestri, de quibus dixistis quod captivi ducerentur, et filii qui hodie boni ac mali ignorant distantiam, ipsi ingredientur : et ipsis dabo terram, et possidebunt eam.",
+        "SYN": "дети ваши, о которых вы говорили, что они достанутся в добычу _врагам,_ и сыновья ваши, которые не знают ныне ни добра ни зла, они войдут туда, им дам ее, и они овладеют ею;",
+        "NEO": "Et vos petits enfants dont vous avez dit : Ils seront une proie ! et vos fils qui ne connaissent aujourd’hui ni le bien ni le mal, eux y entreront, c’est à eux que je le donnerai, ce sont eux qui le posséderont.",
+        "NAB": "Your little ones, who you said would become booty, and your children, who as yet do not know good from bad - they shall enter; to them I will give it, and they shall occupy it.",
+        "VAT_ES": "Y también entrarán los niños –esos que según ustedes iban a ser presa del enemigo– los hijos de ustedes, que aún no saben distinguir lo bueno de lo malo; a ellos les daré la tierra y ellos la poseerán.",
+        "CEI": "E i vostri bambini, dei quali avete detto: Diventeranno oggetto di preda! e i vostri figli, che oggi non conoscono né il bene né il male, essi vi entreranno; a loro lo darò ed essi lo possiederanno."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וְ/אַתֶּ֖ם פְּנ֣וּ לָ/כֶ֑ם וּ/סְע֥וּ הַ/מִּדְבָּ֖רָ/ה דֶּ֥רֶךְ יַם סֽוּף׃",
+        "LXX": "καὶ ὑμεῖς ἐπιστραφέντες ἐστρατοπεδεύσατε εἰς τὴν ἔρημον, ὁδὸν τὴν ἐπὶ τῆς ἐρυθρᾶς θαλάσσης.",
+        "VUL": "Vos autem revertimini, et abite in solitudinem per viam maris Rubri.",
+        "SYN": "а вы обратитесь и отправьтесь в пустыню по дороге к Чермному морю.",
+        "NEO": "Vous, retournez en arrière et partez pour le désert, par le chemin de la mer Rouge. »",
+        "NAB": "But as for yourselves: turn about and proceed into the desert on the Red Sea road.'",
+        "VAT_ES": "En cuanto a ustedes, den vuelta y avancen hacia el desierto, en dirección al Mar Rojo».",
+        "CEI": "Ma voi volgetevi indietro e incamminatevi verso il deserto, in direzione del Mare Rosso."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וַֽ/תַּעֲנ֣וּ וַ/תֹּאמְר֣וּ אֵלַ֗/י חָטָאנוּ֮ לַֽ/יהוָה֒ אֲנַ֤חְנוּ נַעֲלֶה֙ וְ/נִלְחַ֔מְנוּ כְּ/כֹ֥ל אֲשֶׁר צִוָּ֖/נוּ יְהוָ֣ה אֱלֹהֵ֑י/נוּ וַֽ/תַּחְגְּר֗וּ אִ֚ישׁ אֶת כְּלֵ֣י מִלְחַמְתּ֔/וֹ וַ/תָּהִ֖ינוּ לַ/עֲלֹ֥ת הָ/הָֽרָ/ה׃",
+        "LXX": "καὶ ἀπεκρίθητέ μοι καὶ εἴπατε Ἡμάρτομεν ἔναντι Κυρίου τοῦ θεοῦ ἡμῶν· ἡμεῖς ἀναβάντες πολεμήσομεν κατὰ πάντα ὅσα ἐνετείλατο Κύριος ὁ θεὸς ἡμῶν ἡμῖν. καὶ ἀναλαβόντες ἕκαστος τὰ σκεύη τὰ πολεμικὰ αὐτοῦ καὶ συναθροισθέντες ἀνεβαίνετε εἰς τὸ ὄρος.",
+        "VUL": "Et respondistis mihi : Peccavimus Domino : ascendemus et pugnabimus, sicut præcepit Dominus Deus noster. Cumque instructi armis pergeretis in montem,",
+        "SYN": "И вы отвечали тогда и сказали мне: согрешили мы пред Господом, [Богом нашим,] пойдем и сразимся, как повелел нам Господь, Бог наш. И препоясались вы, каждый ратным оружием своим, и безрассудно решились взойти на гору.",
+        "NEO": "Vous répondîtes en me disant : « Nous avons péché contre \\+w Yahweh|strong=\"H3068\"\\+w** ; nous monterons et nous combattrons, selon tout ce que \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, nous a ordonné. » Et vous ceignîtes chacun vos armes, et vous vous disposâtes inconsidérément à monter à la montagne.",
+        "NAB": "\"In reply you said to me, 'We have sinned against the LORD. We will go up ourselves and fight, just as the LORD, our God, commanded us.' And each of you girded on his weapons, making light of going up into the hill country.",
+        "VAT_ES": "Ustedes me dijeron: «Hemos pecado contra el Señor. Pero ahora estamos dispuestos a subir y a combatir como el Señor, nuestro Dios, nos ha ordenado». Cada uno de ustedes de equipó con sus armas, creyendo que era fácil subir a la montaña.",
+        "CEI": "Allora voi mi rispondeste: Abbiamo peccato contro il Signore! Entreremo e combatteremo in tutto come il Signore nostro Dio ci ha ordinato. Ognuno di voi cinse le armi e presumeste di salire verso la montagna."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֜ה אֵלַ֗/י אֱמֹ֤ר לָ/הֶם֙ לֹ֤א תַֽעֲלוּ֙ וְ/לֹא תִלָּ֣חֲמ֔וּ כִּ֥י אֵינֶ֖/נִּי בְּ/קִרְבְּ/כֶ֑ם וְ/לֹא֙ תִּנָּֽגְפ֔וּ לִ/פְנֵ֖י אֹיְבֵי/כֶֽם׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς μέ Εἰπὸν αὐτοῖς Οὐκ ἀναβήσεσθε οὐδὲ μὴ πολεμήσετε, οὐ γάρ εἰμι μεθ’ ὑμῶν· καὶ οὐ μὴ συντριβῆτε ἐνώπιον τῶν ἐχθρῶν ὑμῶν.",
+        "VUL": "ait mihi Dominus : Dic ad eos : Nolite ascendere, neque pugnetis : non enim sum vobiscum : ne cadatis coram inimicis vestris.",
+        "SYN": "Но Господь сказал мне: скажи им: не всходите и не сражайтесь, потому что нет Меня среди вас, чтобы не поразили вас враги ваши.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** me dit : « Dis-leur : Ne montez pas et ne combattez pas, car je ne suis pas au milieu de vous ; ne vous faites pas battre par vos ennemis. »",
+        "NAB": "But the LORD said to me, 'Warn them: Do not go up and fight, lest you be beaten down before your enemies, for I will not be in your midst.'",
+        "VAT_ES": "Pero el Señor me dijo: «Ordénales que no suban a combatir, porque yo no estoy más en medio de ellos. Si lo hacen, serán derrotados por sus enemigos».",
+        "CEI": "Il Signore mi disse: Ordina loro: Non salite e non combattete, perché io non sono in mezzo a voi; voi sarete sconfitti davanti ai vostri nemici."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וָ/אֲדַבֵּ֥ר אֲלֵי/כֶ֖ם וְ/לֹ֣א שְׁמַעְתֶּ֑ם וַ/תַּמְרוּ֙ אֶת פִּ֣י יְהוָ֔ה וַ/תָּזִ֖דוּ וַ/תַּעֲל֥וּ הָ/הָֽרָ/ה׃",
+        "LXX": "καὶ ἐλάλησα ὑμῖν, καὶ οὐκ εἰσηκούσατέ μου· καὶ παρέβητε τὸ ῥῆμα Κυρίου, καὶ παραβιασάμενοι ἀνέβητε εἰς τὸ ὄρος.",
+        "VUL": "Locutus sum, et non audistis : sed adversantes imperio Domini, et tumentes superbia, ascendistis in montem.",
+        "SYN": "И я говорил вам, но вы не послушали и воспротивились повелению Господню и по упорству своему взошли на гору.",
+        "NEO": "Je vous parlai, mais vous n’écoutiez pas ; vous résistiez à l’ordre de \\+w Yahweh|strong=\"H3068\"\\+w**, et vous fûtes assez présomptueux pour monter à la montagne.",
+        "NAB": "I gave you this warning but you would not listen. In defiance of the LORD'S command you arrogantly marched off into the hill country.",
+        "VAT_ES": "Yo les transmití la advertencia, pero ustedes no me escucharon y, rebelándose contra la palabra del Señor, tuvieron la osadía de escalar la montaña.",
+        "CEI": "Io ve lo dissi, ma voi non mi ascoltaste; anzi vi ribellaste all'ordine del Signore, foste presuntuosi e osaste salire verso i monti."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֨א הָ/אֱמֹרִ֜י הַ/יֹּשֵׁ֨ב בָּ/הָ֤ר הַ/הוּא֙ לִ/קְרַאתְ/כֶ֔ם וַ/יִּרְדְּפ֣וּ אֶתְ/כֶ֔ם כַּ/אֲשֶׁ֥ר תַּעֲשֶׂ֖ינָה הַ/דְּבֹרִ֑ים וַֽ/יַּכְּת֥וּ אֶתְ/כֶ֛ם בְּ/שֵׂעִ֖יר עַד חָרְמָֽה׃",
+        "LXX": "καὶ ἐξῆλθεν ὁ Ἀμορραῖος ὁ κατοικῶν ἐν τῷ ὄρει ἐκείνῳ εἰς συνάντησιν ὑμῖν, καὶ κατεδίωξαν ὑμᾶς ὡς εἰ ποιήσαισαν αἱ μέλισσαι, καὶ ἐτίτρωσκον ὑμᾶς ἀπὸ Σηεὶρ ἕως Ἑρμά.",
+        "VUL": "Itaque egressus Amorrhæus, qui habitabat in montibus, et obviam veniens, persecutus est vos, sicut solent apes persequi : et cecidit de Seir usque Horma.",
+        "SYN": "И выступил против вас Аморрей, живший на горе той, и преследовали вас так, как делают пчелы, и поражали вас на Сеире до самой Хормы.",
+        "NEO": "Alors l’Amorrhéen qui habite cette montagne, sortit à votre rencontre ; il vous poursuivit comme font les abeilles, et vous battit en Seïr, jusqu’à Horma.",
+        "NAB": "Then the Amorites living there came out against you and, like bees, chased you, cutting you down in Seir as far as Hormah.",
+        "VAT_ES": "Entonces los amorreos que habitan en esa montaña les salieron al encuentro, los persiguieron como abejas, y los derrotaron en la región de Seír hasta llegar a Jormá.",
+        "CEI": "Allora gli Amorrèi, che abitano quella montagna, uscirono contro di voi, vi inseguirono come fanno le api e vi batterono in Seir fino a Corma."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וַ/תָּשֻׁ֥בוּ וַ/תִּבְכּ֖וּ לִ/פְנֵ֣י יְהוָ֑ה וְ/לֹֽא שָׁמַ֤ע יְהוָה֙ בְּ/קֹ֣לְ/כֶ֔ם וְ/לֹ֥א הֶאֱזִ֖ין אֲלֵי/כֶֽם׃",
+        "LXX": "καὶ καθίσαντες ἐκλαίετε ἔναντι Κυρίου τοῦ θεοῦ ἡμῶν, καὶ οὐκ εἰσήκουσεν Κύριος τῆς φωνῆς ὑμῶν οὐδὲ προσέσχεν ὑμῖν.",
+        "VUL": "Cumque reversi ploraretis coram Domino, non audivit vos, nec voci vestræ voluit acquiescere.",
+        "SYN": "И возвратились вы и плакали пред Господом: но Господь не услышал вопля вашего и не внял вам.",
+        "NEO": "Vous revîntes et vous pleurâtes devant \\+w Yahweh|strong=\"H3068\"\\+w** ; mais \\+w Yahweh|strong=\"H3068\"\\+w** n’écouta pas votre voix, et ne vous prêta pas l’oreille.",
+        "NAB": "On your return you wept before the LORD, but he did not listen to your cry or give ear to you.",
+        "VAT_ES": "Cuando ustedes regresaron, se pusieron a llorar delante del Señor, pero él no los escuchó ni les hizo caso.",
+        "CEI": "Voi tornaste e piangeste davanti al Signore; ma il Signore non diede ascolto alla vostra voce e non vi porse l'orecchio."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "וַ/תֵּשְׁב֥וּ בְ/קָדֵ֖שׁ יָמִ֣ים רַבִּ֑ים כַּ/יָּמִ֖ים אֲשֶׁ֥ר יְשַׁבְתֶּֽם׃",
+        "LXX": "καὶ ἐνεκάθησθε ἐν Καδὴς ἡμέρας πολλάς, ὅσας ποτὲ ἡμέρας ἐνεκάθησθε ἐκεῖ.",
+        "VUL": "Sedistis ergo in Cadesbarne multo tempore.",
+        "SYN": "И пробыли вы в Кадесе много времени, сколько времени вы _там_ были.",
+        "NEO": "Vous restâtes de longs jours à Cadès, le temps que vous y avez séjourné.",
+        "NAB": "That is why you had to stay as long as you did at Kadesh.",
+        "VAT_ES": "Y así tuvieron que permanecer en Cades durante tanto tiempo.",
+        "CEI": "Così rimaneste in Kades molti giorni, per tutto il tempo in cui vi siete rimasti."
+      }
+    }
+  }
+}

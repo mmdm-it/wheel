@@ -1,0 +1,538 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_020",
+  "book_key": "ECCLU",
+  "sequence": 20,
+  "chapter_in": {
+    "MT": 20,
+    "VUL": 20,
+    "LXX": 20
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "ἔστιν ἔλεγχος ὃς οὐκ ἔστιν ὡραῖος, καὶ ἔστιν σιωπῶν καὶ αὐτὸς φρόνιμος.",
+        "VUL": "[Quam bonum est arguere, quam irasci,/ et confitentem in oratione non prohibere !/",
+        "SYN": "Гораздо лучше обличить, нежели сердиться тайно; и обличаемый наедине предостережется от вреда.",
+        "NEO": "Il y a une réprimande qui n’est pas opportune, et tel se tait qui fait preuve de prudence.",
+        "NAB": "An admonition can be inopportune, and a man may be wise to hold his peace.",
+        "VAT_ES": "Hay reprensiones que son inoportunas, y hay silencios que revelan al hombre prudente.",
+        "CEI": "C'è un rimprovero che è fuori tempo, c'è chi tace ed è prudente."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "Ὡς καλὸν ἐλέγξαι ἢ θυμοῦσθαι, καὶ ὁ ἀνθομολογούμενος ἀπὸ ἐλαττώσεως κωλυθήσεται.",
+        "VUL": "Concupiscentia spadonis devirginabit juvenculam :/",
+        "SYN": "Как хорошо обличенному показать раскаяние!",
+        "NEO": "Mieux vaut reprendre que de brûler d’une colère contenue ; et celui qui avoue sera préservé de dommage.",
+        "NAB": "It is much better to admonish than to lose one's temper, for one who admits his fault will be kept from disgrace.",
+        "VAT_ES": "Más vale reprender que guardarse el enojo,",
+        "CEI": "Quanto è meglio rimproverare che covare l'ira!"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "sic qui facit per vim judicium iniquum./",
+        "SYN": "Ибо он избежит вольного греха.",
+        "NEO": "Comme l’eunuque qui désire déflorer une jeune fille, ainsi est celui qui rend la justice avec violence. [Qu’il est beau, quand on est repris, de témoigner du repentir ! C’est ainsi que tu échapperas au péché volontaire.]",
+        "NAB": "Like a eunuch lusting for intimacy with a maiden is he who does right under compulsion.",
+        "VAT_ES": "y el que confiesa su falta se libra de la desgracia.",
+        "CEI": "Chi si confessa colpevole evita l'umiliazione."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ἐπιθυμία εὐνούχου ἀποπαρθενῶσαι νεάνιδα, οὕτως ὁ ποιῶν ἐν βίᾳ κρίματα.",
+        "VUL": "Quam bonum est correptum manifestare pnitentiam !/ sic enim effugies voluntarium peccatum./",
+        "SYN": "Что - пожелание евнуха растлить девицу, то - производящий суд с натяжкою.",
+        "NEO": "Tel en se taisant se montre sage, et tel se rend odieux par son intempérance de langage.",
+        "NAB": "One man is silent and is thought wise, another is talkative and is disliked.",
+        "VAT_ES": "Como un castrado que ansía desflorar a una joven, así es el que quiere hacer justicia por la fuerza.",
+        "CEI": "Un eunuco che vuol deflorare una ragazza, così chi vuol rendere giustizia con la violenza."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "ἔστιν σιωπῶν εὑρισκόμενος σοφός, ⸆ καὶ ἔστιν μισητὸς ἀπὸ πολλῆς λαλιᾶς.",
+        "VUL": "Est tacens qui invenitur sapiens :/ et est odibilis qui procax est ad loquendum./",
+        "SYN": "Иной молчит - и оказывается мудрым; а иной бывает ненавистным за многую болтливость.",
+        "NEO": "Tel se tait parce qu’il n’a rien à répondre ; tel autre se tait parce qu’il connaît le temps propice.",
+        "NAB": "One man is silent because he has nothing to say; another is silent, biding his time.",
+        "VAT_ES": "Uno se calla, y es tenido por sabio, y otro se hace odioso por su locuacidad.",
+        "CEI": "C'è chi tace ed è ritenuto saggio, e c'è chi è odiato per la sua loquacità."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ἔστιν σιωπῶν, οὐ γὰρ ἔχει ἀπόκρισιν, καὶ ἔστιν σιωπῶν, εἰδὼς καιρόν.",
+        "VUL": "Est tacens non habens sensum loquelæ :/ et est tacens sciens tempus aptum./",
+        "SYN": "Иной молчит, потому что не имеет, что отвечать; а иной молчит, потому что знает время.",
+        "NEO": "Le sage se tait jusqu’au moment favorable, mais le fanfaron et l’inconsidéré passent par-dessus.",
+        "NAB": "A wise man is silent till the right time comes, but a boasting fool ignores the proper time.",
+        "VAT_ES": "Uno se calla porque no tiene qué responder y otro, porque espera la oportunidad.",
+        "CEI": "C'è chi tace, perché non sa che cosa rispondere, e c'è chi tace, perché conosce il momento propizio."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "ἄνθρωπος σοφὸς σιγήσει ἕως καιροῦ, ὁ δὲ λαπιστὴς καὶ ἄφρων ὑπερβήσεται καιρόν.",
+        "VUL": "Homo sapiens tacebit usque ad tempus :/ lascivus autem et imprudens non servabunt tempus./",
+        "SYN": "Мудрый человек будет молчать до времени; а тщеславный и безрассудный не будет ждать времени.",
+        "NEO": "Celui qui multiplie les paroles sera détesté, et celui qui se donne pleine licence se rendra odieux.",
+        "NAB": "He who talks too much is detested; he who pretends to authority is hated.",
+        "VAT_ES": "El sabio guarda silencio hasta el momento oportuno, pero el petulante y necio no se fija en el tiempo.",
+        "CEI": "L'uomo saggio sta zitto fino al momento opportuno, il millantatore e lo stolto lo trascurano."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "ὁ πλεονάζων λόγῳ βδελυχθήσεται, καὶ ὁ ἐνεξουσιαζόμενος μισηθήσεται.",
+        "VUL": "Qui multis utitur verbis lædet animam suam :/ et qui potestatem sibi sumit injuste, odietur./",
+        "SYN": "Многоречивый опротивеет, и кто восхищает себе право говорить, будет возненавиден.",
+        "NEO": "Tel homme trouve dans le malheur quelque chose d’heureux, et un bonheur inespéré tourne à sa perte.",
+        "NAB": "Some misfortunes bring success; some things gained are a man's loss.",
+        "VAT_ES": "El que habla demasiado se vuelve abominable y el que pretende imponerse se hace odioso.",
+        "CEI": "Chi abbonda nel parlare si renderà abominevole; chi vuole assolutamente imporsi sarà odiato."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "Ἔστιν εὐοδία ἐν κακοῖς ἀνδρί, καὶ ἔστιν εὕρεμα εἰς ἐλάττωσιν.",
+        "VUL": "Est processio in malis viro indisciplinato,/ et est inventio in detrimentum./",
+        "SYN": "Бывает успех человеку ко злу, а находка - в потерю.",
+        "NEO": "Il est tel don qui ne te rapporte rien, et il est tel don qui est rendu au double.",
+        "NAB": "Some gifts do one no good, and some must be paid back double.",
+        "VAT_ES": "A veces se saca provecho de la adversidad, y oras veces, la suerte acaba en desgracia.",
+        "CEI": "Nelle disgrazie può trovarsi la fortuna per un uomo, mentre un profitto può essere una perdita."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ἔστιν δόσις ἣ οὐ λυσιτελήσει σοι, καὶ ἔστιν δόσις ἧς τὸ ἀνταπόδομα διπλοῦν.",
+        "VUL": "Est datum quod non est utile,/ et est datum cujus retributio duplex./",
+        "SYN": "Есть даяние, которое не будет тебе на пользу, и есть даяние, за которое бывает сугубое воздаяние.",
+        "NEO": "D’une situation brillante résulte souvent un dommage, et tel relève la tête après une humiliation.",
+        "NAB": "Humiliation can follow fame, while from obscurity a man can lift up his head.",
+        "VAT_ES": "Hay regalos que no te dan provecho, y hay otros, que reditúan el doble.",
+        "CEI": "C'è una generosità, che non ti arreca vantaggi e c'è chi dall'umiliazione alza la testa."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἔστιν ἐλάττωσις ἕνεκεν δόξης, καὶ ἔστιν ὃς ἀπὸ ταπεινώσεως ἦρεν κεφαλήν.",
+        "VUL": "Est propter gloriam minoratio,/ et est qui ab humilitate levabit caput./",
+        "SYN": "Бывает унижение для славы, а иной от унижения поднимает голову.",
+        "NEO": "Tel achète beaucoup de choses à vil prix, qui les paie sept fois leur valeur.",
+        "NAB": "A man may buy much for little, but pay for it seven times over.",
+        "VAT_ES": "Hay desgracias que provienen de los honores, y hay gente humilde que pudo levantar cabeza."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "ἔστιν ἀγοράζων πολλὰ ὀλίγου καὶ ἀποτιννύων αὐτὰ ἑπταπλάσιον.",
+        "VUL": "Est qui multa redimat modico pretio,/ et restituens ea in septuplum./",
+        "SYN": "Иной малым покупает многое и заплатит за то в семь раз больше.",
+        "NEO": "Celui qui est sage dans ses discours se fait aimer, mais les paroles aimables de l’insensé sont en pure perte.",
+        "NAB": "A wise man makes himself popular by a few words, but fools pour forth their blandishments in vain.",
+        "VAT_ES": "Hay quien compra mucho a bajo precio, y después lo paga siete veces más.",
+        "CEI": "C'è chi compra molte cose con poco, e chi le paga sette volte il loro valore."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "ὁ σοφὸς ἐν λόγῳ ἑαυτὸν προσφιλῆ ποιήσει, χάριτες δὲ μωρῶν ἐκχυθήσονται.",
+        "VUL": "Sapiens in verbis seipsum amabilem facit :/ gratiæ autem fatuorum effundentur./",
+        "SYN": "Мудрый в слове делается любезным, любезности же глупых останутся напрасными.",
+        "NEO": "Le don de l’insensé ne te servira de rien ; car ses yeux, au lieu d’un seul, sont nombreux.",
+        "NAB": "A gift from a rogue will do you no good, for in his eyes his one gift is equal to seven.",
+        "VAT_ES": "El sabio se hace amar por sus palabras, pero los cumplidos del necio caen en el vacío.",
+        "CEI": "Il saggio si rende amabile con le sue parole, le cortesie degli stolti sono sciupate."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "δόσις ἄφρονος οὐ λυσιτελήσει σοι, οἱ γὰρ ὀφθαλμοὶ αὐτοῦ ἀνθ’ ἑνὸς πολλοί·",
+        "VUL": "Datus insipientis non erit utilis tibi :/ oculi enim illius septemplices sunt./",
+        "SYN": "Даяние безумного не будет тебе на пользу; ибо у него вместо одного много глаз для принятия.",
+        "NEO": "Il donne peu, et reproche beaucoup, et il ouvre la bouche comme un crieur public. Il prête aujourd’hui, et il redemandera demain : un tel homme est odieux.",
+        "NAB": "He gives little and criticizes often, and like a crier he shouts aloud. He lends today, he asks it back tomorrow; hateful indeed is such a man.",
+        "VAT_ES": "El regalo del insensato no te aprovechará, porque él espera que le devuelvan mucho más:",
+        "CEI": "Il dono di uno stolto non ti gioverà, perché i suoi occhi bramano ricevere più di quanto ha dato."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ὀλίγα δώσει καὶ πολλὰ ὀνειδίσει, καὶ ἀνοίξει τὸ στόμα αὐτοῦ ὡς κήρυξ· σήμερον δανιεῖ καὶ αὔριον ἀπαιτήσει, μισητὸς ἄνθρωπος ὁ τοιοῦτος.",
+        "VUL": "Exigua dabit, et multa improperabit :/ et apertio oris illius inflammatio est./",
+        "SYN": "Немного даст он, а попрекать будет много, и раскроет уста свои, как глашатай. Ныне он взаем дает, а завтра потребует назад: ненавистен такой человек Господу и людям.",
+        "NEO": "L’insensé dit : « Je n’ai pas d’ami, et l’on ne me sait pas gré de mes bienfaits ; ceux qui mangent mon pain ont des langues perverses. » —",
+        "NAB": "A fool has no friends, nor thanks for his generosity;",
+        "VAT_ES": "de poco y echa en cara mucho, abre la boca como un pregonero, presta hoy y mañana exige. &iexcl;Qué detestable es un hombre así!",
+        "CEI": "Egli darà poco, ma rinfaccerà molto; aprirà la sua bocca come un banditore. Oggi darà un prestito e domani richiederà; uomo odioso è costui."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "μωρὸς ἐρεῖ Οὐχ ὑπάρχει μοι φίλος, καὶ οὐκ ἔστιν χάρις τοῖς ἀγαθοῖς μου· οἱ ἔσθοντες τὸν ἄρτον μου φαῦλοι γλώσσῃ.",
+        "VUL": "Hodie fneratur quis, et cras expetit :/ odibilis est homo hujusmodi./",
+        "SYN": "Глупый говорит: \"нет у меня друга, и нет благодарности за мои благодеяния. Съедающие хлеб мой льстивы языком\".",
+        "NEO": "Combien de fois et de combien de gens ne sera-t-il pas la risée ?",
+        "NAB": "Those who eat his bread have an evil tongue. How many times they laugh him to scorn!",
+        "VAT_ES": "El necio dice: «No tengo ni un amigo; nadie agradece mis beneficios;",
+        "CEI": "Lo stolto dice: \"Non ho un amico, non c'è gratitudine per i miei benefici."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "ποσάκις καὶ ὅσοι καταγελάσονται αὐτοῦ;",
+        "VUL": "Fatuo non erit amicus,/ et non erit gratia bonis illius :/",
+        "SYN": "Как часто и сколь многие будут насмехаться над ним!",
+        "NEO": "Mieux vaut une chute sur le pavé qu’une chute de langue ; c’est ainsi que la ruine des méchants arrive promptement.",
+        "NAB": "A fall to the ground is less sudden than a slip of the tongue; that is why the downfall of the wicked comes so quickly.",
+        "VAT_ES": "los que comen mi pan tienen la lengua olvidadiza». &iexcl;Cuántos y cuántas veces se reirán de él!",
+        "CEI": "Quelli che mangiano il mio pane sono lingue cattive\". Quanto spesso e quanti si burleranno di lui!"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "Ὀλίσθημα ἀπὸ ἐδάφους μᾶλλον ἢ ἀπὸ γλώσσης, οὕτως πτῶσις κακῶν κατὰ σπουδὴν ἥξει.",
+        "VUL": "qui enim edunt panem illius, falsæ linguæ sunt./ Quoties et quanti irridebunt eum !/",
+        "SYN": "Преткновение от земли лучше, нежели от языка. Итак, скоро придет падение злых.",
+        "NEO": "Un homme désagréable est comme un conte hors de saison ; l’homme mal appris l’a constamment à la bouche.",
+        "NAB": "Insipid food is the untimely tale; the unruly are always ready to offer it.",
+        "VAT_ES": "Más vale resbalar en el piso que con la lengua; así es como de repente caen los malvados.",
+        "CEI": "Meglio scivolare sul pavimento che con la lingua; per questo la caduta dei cattivi giunge rapida."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ἄνθρωπος ἄχαρις, μῦθος ἄκαιρος· ἐν στόματι ἀπαιδεύτων ἐνδελεχισθήσεται.",
+        "VUL": "neque enim quod habendum erat directo sensu distribuit ;/ similiter et quod non erat habendum./",
+        "SYN": "Неприятный человек - безвременная басня; она всегда будет на устах невежд.",
+        "NEO": "On n’accepte pas une maxime des lèvres d’un sot ; car il ne la dit pas dans le temps qui lui convient.",
+        "NAB": "A proverb when spoken by a fool is unwelcome, for he does not utter it at the proper time.",
+        "VAT_ES": "Un hombre grosero es como un cuento inoportuno, que siempre está en boca de los mal educados.",
+        "CEI": "Un uomo senza grazia è un discorso inopportuno: è sempre sulla bocca dei maleducati."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ἀπὸ στόματος μωροῦ ἀποδοκιμασθήσεται παραβολή, οὐ γὰρ μὴ εἴπῃ αὐτὴν ἐν καιρῷ αὐτῆς.",
+        "VUL": "Lapsus falsæ linguæ quasi qui in pavimento cadens :/ sic casus malorum festinanter veniet./",
+        "SYN": "Притча из уст глупого отвратительна, ибо он не скажет ее в свое время.",
+        "NEO": "Il est tel qui ne peut pécher, à cause de son indigence ; et, dans son repos, il n’a pas de remords.",
+        "NAB": "A man through want may be unable to sin, yet in this tranquility he cannot rest.",
+        "VAT_ES": "Nadie aprueba el proverbio dicho por un necio, porque nunca lo dice en el momento oportuno.",
+        "CEI": "Non si accetta una massima dalla bocca dello stolto, perché non è mai detta a proposito."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "ἔστιν κωλυόμενος ἁμαρτάνειν ἀπὸ ἐνδείας, καὶ ἐν τῇ ἀναπαύσει αὐτοῦ οὐ κατανυγήσεται.",
+        "VUL": "Homo acharis quasi fabula vana,/ in ore indisciplinatorum assidua erit./",
+        "SYN": "Иной удерживается от греха скудостью, и в этом воздержании он не будет сокрушаться.",
+        "NEO": "Tel se perd par une fausse honte, et tombe dans la ruine à cause du regard d’un insensé.",
+        "NAB": "One may lose his life through shame, and perish through a fool's intimidation.",
+        "VAT_ES": "A algunos la indigencia los preserva del pecado y, cuando descansan, no sienten remordimientos.",
+        "CEI": "C'è chi è impedito di peccare dalla miseria e durante il riposo non avrà rimorsi."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ἔστιν ἀπολλύων τὴν ψυχὴν αὐτοῦ δι’ αἰσχύνην, καὶ ἀπὸ ἄφρονος προσώπου ἀπολεῖ αὐτήν.",
+        "VUL": "Ex ore fatui reprobabitur parabola :/ non enim dicit illam in tempore suo.]",
+        "SYN": "Иной губит душу свою по робости, и губит ее из лицеприятия к безумному.",
+        "NEO": "Tel par fausse honte promet beaucoup à son ami, et il s’en fait gratuitement un ennemi.",
+        "NAB": "A man makes a promise to a friend out of shame, and has him for his enemy needlessly.",
+        "VAT_ES": "Hay quien se pierde por timidez, y se pierde por temor a un insensato.",
+        "CEI": "C'è chi si rovina per rispetto umano e si rovina per la faccia di uno stolto."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "ἔστιν χάριν αἰσχύνης ἐπαγγελλόμενος φίλῳ, καὶ ἐκτήσατο αὐτὸν ἐχθρὸν δωρεάν.",
+        "VUL": "[Est qui vetatur peccare præ inopia,/ et in requie sua stimulabitur./",
+        "SYN": "Иной из-за стыда дает обещания другу, и без причины наживает в нем себе врага.",
+        "NEO": "Le mensonge chez l’homme est une tache honteuse ; il est toujours sur les lèvres des gens mal élevés.",
+        "NAB": "A lie is a foul blot in a man, yet it is constantly on the lips of the unruly.",
+        "VAT_ES": "Hay quien por timidez hace promesas a un amigo y se gana un enemigo inútilmente.",
+        "CEI": "C'è chi per rispetto umano fa promesse a un amico; in tal modo se lo rende gratuitamente nemico."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "μῶμος πονηρὸς ἐν ἀνθρώπῳ ψεῦδος, ἐν στόματι ἀπαιδεύτων ἐνδελεχισθήσεται.",
+        "VUL": "Est qui perdet animam suam præ confusione,/ et ab imprudenti persona perdet eam :/ personæ autem acceptione perdet se./",
+        "SYN": "Злой порок в человеке - ложь; в устах невежд она - всегда.",
+        "NEO": "Mieux vaut un voleur que l’homme qui fait métier de mentir : tous deux auront la ruine en partage.",
+        "NAB": "Better a thief than an inveterate liar, yet both will suffer disgrace;",
+        "VAT_ES": "La mentira es para el hombre una mancha infamante: siempre está en boca de los ignorantes.",
+        "CEI": "Brutta macchia nell'uomo la menzogna, si trova sempre sulla bocca degli ignoranti."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "αἱρετὸν κλέπτης ἢ ἐνδελεχίζων ψεύδει, ἀμφότεροι δὲ ἀπωλίαν κληρονομήσουσιν.",
+        "VUL": "Est qui præ confusione promittit amico,/ et lucratus est eum inimicum gratis./",
+        "SYN": "Лучше вор, нежели постоянно говорящий ложь; но оба они наследуют погибель.",
+        "NEO": "La coutume du menteur est déshonorante, et la honte du menteur est constamment avec lui.",
+        "NAB": "A liar's way leads to dishonor, his shame remains ever with him.",
+        "VAT_ES": "Es preferible un ladrón a un mentiroso inveterado, aunque uno y otro heredarán la perdición.",
+        "CEI": "Meglio un ladro che un mentitore abituale, ma tutti e due condivideranno la rovina."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "ἦθος ἀνθρώπου ψευδοῦς ἀτιμία, καὶ ἡ αἰσχύνη αὐτοῦ μετ’ αὐτοῦ ἐνδελεχῶς. Λόγοι παραβολῶν.",
+        "VUL": "Opprobrium nequam in homine mendacium :/ et in ore indisciplinatorum assidue erit./",
+        "SYN": "Поведение лживого человека - бесчестно, и позор его всегда с ним.",
+        "NEO": "Celui qui est sage dans ses discours s’élève en considération, et l’homme prudent plaît aux grands.",
+        "NAB": "A wise man advances himself by his words, a prudent man pleases the great.",
+        "VAT_ES": "El que se acostumbra a mentir cae en la deshonra y su ignominia lo acompaña constantemente.",
+        "CEI": "L'abitudine del bugiardo è un disonore, la vergogna lo accompagnerà sempre."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "Ὁ σοφὸς ἐν λόγοις προάξει ἑαυτόν, καὶ ἄνθρωπος φρόνιμος ἀρέσει μεγιστᾶσιν·",
+        "VUL": "Potior fur quam assiduitas viri mendacis :/ perditionem autem ambo hæreditabunt./",
+        "SYN": "Мудрый в словах возвысит себя, и человек разумный понравится вельможам.",
+        "NEO": "Celui qui cultive sa terre élèvera son tas de blé, et celui qui plaît aux grands se fait pardonner ses injustices.",
+        "NAB": "He who works his land has abundant crops, he who pleases the great is pardoned his faults.",
+        "VAT_ES": "El sabio se abre camino con sus palabras y el hombre prudente agrada a los poderosos.",
+        "CEI": "Il saggio si fa onore con i discorsi, l'uomo prudente piace ai grandi."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "ὁ ἐργαζόμενος γῆν ἀνυψώσει θιμωνιὰν αὐτοῦ, καὶ ὁ ἀρέσκων μεγιστᾶσιν ἐξιλάσεται ἀδικίαν.",
+        "VUL": "Mores hominum mendacium sine honore,/ et confusio illorum cum ipsis sine intermissione./",
+        "SYN": "Возделывающий землю увеличит свой стог, и угождающий вельможам получит помилование в случае неправды.",
+        "NEO": "Les présents et les dons aveuglent les yeux des sages, et, comme une muselière à la bouche d’un animal, ils arrêtent le blâme.",
+        "NAB": "Favors and gifts blind the eyes; like a muzzle over the mouth they silence reproof.",
+        "VAT_ES": "El que cultiva la tierra levanta bien alto su parva, y el que agrada a los grandes se hace perdonar la injusticia.",
+        "CEI": "Chi lavora la terra accrescerà il raccolto; chi piace ai grandi si fa perdonare l'ingiustizia."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "ξένια καὶ δῶρα ἀποτυφλοῖ ὀφθαλμοὺς σοφῶν, καὶ ὡς φιμὸς ἐν στόματι ἀποτρέπει ἐλεγμούς.",
+        "VUL": "Sapiens in verbis producet seipsum,/ et homo prudens placebit magnatis./",
+        "SYN": "Угощения и подарки ослепляют глаза мудрых и, как бы узда в устах, отвращают обличения.",
+        "NEO": "Sagesse cachée, trésor invisible : à quoi servent l’un et l’autre ?",
+        "NAB": "Hidden wisdom and unseen treasure - of what value is either?",
+        "VAT_ES": "Dones y regalos ciegan a los sabios y son como un bozal que acalla las críticas.",
+        "CEI": "Regali e doni accecano gli occhi dei saggi, come bavaglio sulla bocca, soffocano i rimproveri."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "σοφία κεκρυμμένη καὶ θησαυρὸς ἀφανής, τίς ὠφέλεια ἐν ἀμφοτέροις;",
+        "VUL": "Qui operatur terram suam inaltabit acervum frugum,/ et qui operatur justitiam, ipse exaltabitur :/ qui vero placet magnatis effugiet iniquitatem./",
+        "SYN": "Скрытая мудрость и утаенное сокровище - какая польза от обоих?",
+        "NEO": "Mieux vaut l’homme qui cache sa sottise que celui qui cache sa sagesse.",
+        "NAB": "Better the man who hides his folly than the one who hides his wisdom.",
+        "VAT_ES": "Sabiduría escondida y tesoro oculto: &iquest;de qué sirven una cosa y la otra?",
+        "CEI": "Sapienza nascosta e tesoro invisibile: a che servono l'una e l'altro?"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "κρείσσων ἄνθρωπος ἀποκρύπτων τὴν μωρίαν αὐτοῦ ἢ ἄνθρωπος ἀποκρύπτων τὴν σοφίαν αὐτοῦ.",
+        "VUL": "Xenia et dona excæcant oculos judicum,/ et quasi mutus, in ore avertit correptiones eorum./",
+        "SYN": "Лучше человек, скрывающий свою глупость, нежели человек, скрывающий свою мудрость.",
+        "VAT_ES": "Es preferible el hombre que disimula su necedad al que oculta su sabiduría.",
+        "CEI": "Fa meglio chi nasconde la stoltezza che colui che nasconde la sapienza."
+      }
+    }
+  }
+}

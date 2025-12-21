@@ -1,0 +1,519 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EZE_012",
+  "book_key": "EZE",
+  "sequence": 12,
+  "chapter_in": {
+    "MT": 12,
+    "VUL": 12,
+    "LXX": 12
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Questa parola del Signore mi fu riferita:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֕ם בְּ/ת֥וֹךְ בֵּית הַ/מֶּ֖רִי אַתָּ֣ה יֹשֵׁ֑ב אֲשֶׁ֣ר עֵינַיִם֩ לָ/הֶ֨ם לִ/רְא֜וֹת וְ/לֹ֣א רָא֗וּ אָזְנַ֨יִם לָ/הֶ֤ם לִ/שְׁמֹ֨עַ֙ וְ/לֹ֣א שָׁמֵ֔עוּ כִּ֛י בֵּ֥ית מְרִ֖י הֵֽם׃",
+        "LXX": "Υἱὲ ἀνθρώπου, ἐν μέσῳ τῶν ἀδικιῶν αὐτῶν σὺ κατοικεῖς, οἳ ἔχουσιν ὀφθαλμοὺς τοῦ βλέπειν καὶ οὐ βλέπουσιν, καὶ ὦτα ἔχουσιν τοῦ ἀκούειν καὶ οὐκ ἀκούουσιν· διότι οἶκος παραπικραίνων ἐστίν.",
+        "VUL": "Fili hominis, in medio domus exasperantis tu habitas : qui oculos habent ad videndum, et non vident, et aures ad audiendum, et non audiunt : quia domus exasperans est.",
+        "SYN": "сын человеческий! ты живешь среди дома мятежного; у них есть глаза, чтобы видеть, а не видят; у них есть уши, чтобы слышать, а не слышат; потому что они - мятежный дом.",
+        "NEO": "Fils de l’homme, tu habites au milieu d’une maison de rebelles, qui ont des yeux pour voir et qui ne voient point, qui ont des oreilles pour entendre et n’entendent point ; car ils sont une maison de rebelles.",
+        "NAB": "Son of man, you live in the midst of a rebellious house; they have eyes to see but do not see, and ears to hear but do not hear, for they are a rebellious house.",
+        "VAT_ES": "Hijo de hombre, tú habitas en medio de un pueblo rebelde: ellos tienen ojos para ver, pro no ven, tienen oídos para oír, pero no oyen, porque son un pueblo rebelde.",
+        "CEI": "\"Figlio dell'uomo, tu abiti in mezzo a una genìa di ribelli, che hanno occhi per vedere e non vedono, hanno orecchi per udire e non odono, perché sono una genìa di ribelli."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֣ה בֶן אָדָ֗ם עֲשֵׂ֤ה לְ/ךָ֙ כְּלֵ֣י גוֹלָ֔ה וּ/גְלֵ֥ה יוֹמָ֖ם לְ/עֵֽינֵי/הֶ֑ם וְ/גָלִ֨יתָ מִ/מְּקוֹמְ/ךָ֜ אֶל מָק֤וֹם אַחֵר֙ לְ/עֵ֣ינֵי/הֶ֔ם אוּלַ֣י יִרְא֔וּ כִּ֛י בֵּ֥ית מְרִ֖י הֵֽמָּה׃",
+        "LXX": "καὶ σύ, υἱὲ ἀνθρώπου, ποίησον σεαυτῷ σκεύη αἰχμαλωσίας ἡμέρας ἐνώπιον αὐτῶν, καὶ αἰχμαλωτευθήσει ἐκ τοῦ τόπου σου εἰς τόπον ἕτερον ἐνώπιον αὐτῶν, ὅπως εἰδῶσιν διότι οἶκος παραπικραίνων ἐστίν.",
+        "VUL": "Tu ergo, fili hominis, fac tibi vasa transmigrationis, et transmigrabis per diem coram eis. Transmigrabis autem de loco tuo ad locum alterum in conspectu eorum, si forte aspiciant, quia domus exasperans est :",
+        "SYN": "Ты же, сын человеческий, изготовь себе нужное для переселения, и среди дня переселяйся перед глазами их, и переселяйся с места твоего в другое место перед глазами их; может быть, они уразумеют, хотя они - дом мятежный;",
+        "NEO": "Et toi, fils de l’homme, fais-toi un bagage d’émigrant, et émigre de jour, à leurs yeux ; émigre, à leurs yeux, du lieu où tu es dans un autre lieu : peut-être verront-ils qu’ils sont une maison de rebelles.",
+        "NAB": "Now, son of man, during the day while they are looking on, prepare your baggage as though for exile, and again while they are looking on, migrate from where you live to another place; perhaps they will see that they are a rebellious house.",
+        "VAT_ES": "En cuanto a ti, hijo de hombre, prepara tu equipaje como si tu vieras que ir al exilio, y parte en pleno día, a la vista de ellos. Emigrarás del lugar donde te encuentras hacia otro lugar, a la vista de ellos: tal vez así comprendan que son un pueblo rebelde.",
+        "CEI": "Tu, figlio dell'uomo, fà il tuo bagaglio da deportato e, di giorno davanti ai loro occhi, prepàrati a emigrare; emigrerai dal luogo dove stai verso un altro luogo, davanti ai loro occhi: forse comprenderanno che sono una genìa di ribelli."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/הוֹצֵאתָ֨ כֵלֶ֜י/ךָ כִּ/כְלֵ֥י גוֹלָ֛ה יוֹמָ֖ם לְ/עֵֽינֵי/הֶ֑ם וְ/אַתָּ֗ה תֵּצֵ֤א בָ/עֶ֨רֶב֙ לְ/עֵ֣ינֵי/הֶ֔ם כְּ/מוֹצָאֵ֖י גּוֹלָֽה׃",
+        "LXX": "καὶ ἐξοίσεις τὰ σκεύη σου σκεύη αἰχμαλωσίας ἡμέρας κατ’ ὀφθαλμοὺς αὐτῶν, καὶ σὺ ἐξελεύσῃ ἑσπέρας ὡς ἐκπορεύεται αἰχμάλωτος",
+        "VUL": "et efferes foras vasa tua quasi vasa transmigrantis per diem in conspectu eorum : tu autem egredieris vespere coram eis, sicut egreditur migrans.",
+        "SYN": "и вещи твои вынеси, как вещи нужные при переселении, днем, перед глазами их, и сам выйди вечером перед глазами их, как выходят для переселения.",
+        "NEO": "Sors ton bagage, comme un bagage d’émigrant, de jour, à leurs yeux ; et toi, pars le soir, à leurs yeux, comme on part pour émigrer.",
+        "NAB": "You shall bring out your baggage like an exile in the daytime while they are looking on; in the evening, again while they are looking on, you shall go out like one of those driven into exile;",
+        "VAT_ES": "Sacarás tu equipaje en pleno día, a la vista de ellos, y saldrás por la tarde, también a la vista de ellos, como salen los deportados.",
+        "CEI": "Prepara di giorno il tuo bagaglio, come il bagaglio d'un esiliato, davanti ai loro occhi; uscirai però al tramonto, davanti a loro, come partirebbe un esiliato."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לְ/עֵינֵי/הֶ֖ם חֲתָר לְ/ךָ֣ בַ/קִּ֑יר וְ/הוֹצֵאתָ֖ בּֽ/וֹ׃",
+        "LXX": "ἐνώπιον αὐτῶν· διόρυξον σεαυτῷ εἰς τὸν τοῖχον, καὶ διεξελεύσῃ δι’ αὐτοῦ.",
+        "VUL": "Ante oculos eorum perfode tibi parietem, et egredieris per eum.",
+        "SYN": "Перед глазами их проломай себе отверстие в стене, и вынеси через него.",
+        "NEO": "A leurs yeux, creuse un trou dans la muraille et sors par là ton bagage.",
+        "NAB": "while they look on, dig a hole in the wall and pass through it;",
+        "VAT_ES": "Abrirás un boquete en el muro y saldrás por él, a la vista de ellos.",
+        "CEI": "Fà alla loro presenza un'apertura nel muro ed esci di lì."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "לְ/עֵ֨ינֵי/הֶ֜ם עַל כָּתֵ֤ף תִּשָּׂא֙ בָּ/עֲלָטָ֣ה תוֹצִ֔יא פָּנֶ֣י/ךָ תְכַסֶּ֔ה וְ/לֹ֥א תִרְאֶ֖ה אֶת הָ/אָ֑רֶץ כִּֽי מוֹפֵ֥ת נְתַתִּ֖י/ךָ לְ/בֵ֥ית יִשְׂרָאֵֽל׃",
+        "LXX": "ἐνώπιον αὐτῶν ἐπ’ ὤμων ἀναλημφθήσῃ καὶ κεκρυμμένος ἐξελεύσῃ, τὸ πρόσωπόν σου συγκαλύψεις καὶ οὐ μὴ ἴδῃς τὴν γῆν· διότι τέρας δέδωκά σε τῷ οἴκῳ Ἰσραήλ.",
+        "VUL": "In conspectu eorum in humeris portaberis ; in caligine effereris : faciem tuam velabis, et non videbis terram, quia portentum dedi te domui Israël.",
+        "SYN": "Перед глазами их возьми ношу на плечо, впотьмах вынеси ее, лице твое закрой, чтобы не видеть земли; ибо Я поставил тебя знамением дому Израилеву.",
+        "NEO": "A leurs yeux, mets-le sur ton épaule, emporte-le dans l’obscurité ; voile-toi le visage, en sorte que tu ne voies pas la terre ; car je t’ai établi comme un signe pour la maison d’Israël. »",
+        "NAB": "while they look on, shoulder the burden and set out in the darkness; cover your face that you may not see the land, for I have made you a sign for the house of Israel.",
+        "VAT_ES": "Cargarás el equipaje sobre tus espaldas y saldrás cuando sea de noche, cubriéndote el rostro para no ver el país, porque yo te he convertido en un presagio para el pueblo de Israel.",
+        "CEI": "Mettiti alla loro presenza il bagaglio sulle spalle ed esci nell'oscurità: ti coprirai la faccia in modo da non vedere il paese, perché io ho fatto di te un simbolo per gli Israeliti\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וָ/אַ֣עַשׂ כֵּן֮ כַּ/אֲשֶׁ֣ר צֻוֵּיתִי֒ כֵּ֠לַ/י הוֹצֵ֜אתִי כִּ/כְלֵ֤י גוֹלָה֙ יוֹמָ֔ם וּ/בָ/עֶ֛רֶב חָתַֽרְתִּי לִ֥/י בַ/קִּ֖יר בְּ/יָ֑ד בָּ/עֲלָטָ֥ה הוֹצֵ֛אתִי עַל כָּתֵ֥ף נָשָׂ֖אתִי לְ/עֵינֵי/הֶֽם׃",
+        "LXX": "καὶ ἐποίησα οὕτως κατὰ πάντα ὅσα ἐνετείλατό μοι, καὶ σκεύη ἐξήνεγκα αἰχμαλωσίας ἡμέρας, καὶ ἑσπέρας διώρυξα ἐμαυτῷ τὸν τοῖχον καὶ κεκρυμμένος ἐξῆλθον· ἐπ’ ὤμων ἀνελήμφθην ἐνώπιον αὐτῶν.",
+        "VUL": "Feci ergo sicut præceperat mihi Dominus : vasa mea protuli quasi vasa transmigrantis per diem, et vespere perfodi mihi parietem manu : et in caligine egressus sum, in humeris portatus in conspectu eorum.",
+        "SYN": "И сделал я, как повелено было мне; вещи мои, как вещи нужные при переселении, вынес днем, а вечером проломал себе рукою отверстие в стене, впотьмах вынес ношу и поднял на плечо перед глазами их.",
+        "NEO": "Je fis ainsi, selon que j’en avais reçu l’ordre ; je sortis de jour mon bagage, comme un bagage d’émigrant ; le soir, je perçai de ma main un trou dans la muraille ; et je fis sortir le bagage dans l’obscurité, je le portai sur mes épaules, à leurs yeux.",
+        "NAB": "I did as I was told. During the day I brought out my baggage as though it were that of an exile, and at evening I dug a hole through the wall with my hand and, while they looked on, set out in the darkness, shouldering my burden.",
+        "VAT_ES": "Yo hice exactamente lo que se me había ordenado: saqué mi equipaje en pleno día como quien parte para el exilio, y por la tarde abrí un boquete en el muro con la mano. Salí cuando estaba oscuro y cargué el equipaje sobre mis espaldas, a la vista de ellos.",
+        "CEI": "Io feci come mi era stato comandato: preparai di giorno il mio bagaglio come il bagaglio d'un esiliato e sul tramonto feci un foro nel muro con le mani, uscii nell'oscurità e mi misi il bagaglio sulle spalle sotto i loro occhi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֧י דְבַר יְהוָ֛ה אֵלַ֖/י בַּ/בֹּ֥קֶר לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ τὸ πρωὶ λέγων",
+        "VUL": "Et factus est sermo Domini mane ad me, dicens :",
+        "SYN": "И было ко мне слово Господне поутру:",
+        "NEO": "Le matin, la parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Then, in the morning, the word of the LORD came to me:",
+        "VAT_ES": "A la mañana, la palabra del Señor me llegó en estos términos:",
+        "CEI": "Al mattino mi fu rivolta questa parola del Signore:"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֕ם הֲ/לֹ֨א אָמְר֥וּ אֵלֶ֛י/ךָ בֵּ֥ית יִשְׂרָאֵ֖ל בֵּ֣ית הַ/מֶּ֑רִי מָ֖ה אַתָּ֥ה עֹשֶֽׂה׃",
+        "LXX": "Υἱὲ ἀνθρώπου, οὐκ εἶπαν πρὸς σὲ ὁ οἶκος τοῦ Ἰσραήλ, οἶκος ὁ παραπικραίνων Τί σὺ ποιεῖς;",
+        "VUL": "Fili hominis, numquid non dixerunt ad te domus Israël, domus exasperans : Quid tu facis ?",
+        "SYN": "сын человеческий! не говорил ли тебе дом Израилев, дом мятежный: \"что ты делаешь?\"",
+        "NEO": "« Fils de l’homme, la maison d’Israël, la maison de rebelles, ne t’a-t-elle pas dit : Que fais-tu ?",
+        "NAB": "Son of man, did not the house of Israel, that rebellious house, ask you what you were doing?",
+        "VAT_ES": "Hijo de hombre, &iquest;no te ha preguntado la casa de Israel, ese pueblo rebelde, qué es lo que estás haciendo?",
+        "CEI": "\"Figlio dell'uomo, non t'ha chiesto il popolo d'Israele, quella genìa di ribelli, che cosa stai facendo?"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אֱמֹ֣ר אֲלֵי/הֶ֔ם כֹּ֥ה אָמַ֖ר אֲדֹנָ֣/י יְהֹוִ֑ה הַ/נָּשִׂ֞יא הַ/מַּשָּׂ֤א הַ/זֶּה֙ בִּ/יר֣וּשָׁלִַ֔ם וְ/כָל בֵּ֥ית יִשְׂרָאֵ֖ל אֲשֶׁר הֵ֥מָּה בְ/תוֹכָֽ/ם׃",
+        "LXX": "εἰπὸν πρὸς αὐτούς Τάδε λέγει κύριος Κύριος Ὁ ἄρχων καὶ ὁ ἀφηγούμενος ἐν Ἰερουσαλὴμ καὶ παντὶ οἴκῳ Ἰσραὴλ οἵ εἰσιν ἐν μέσῳ αὐτῶν,",
+        "VUL": "Dic ad eos : [Hæc dicit Dominus Deus :/ Super ducem onus istud, qui est in Jerusalem,/ et super omnem domum Israël, quæ est in medio eorum.]",
+        "SYN": "Скажи им: так говорит Господь Бог: это - предвещание для начальствующего в Иерусалиме и для всего дома Израилева, который находится там.",
+        "NEO": "Dis-leur : Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Cet oracle est pour le prince qui est à Jérusalem, et pour toute la maison d’Israël qui se trouve dans cette ville.",
+        "NAB": "Tell them: Thus says the Lord GOD: This oracle concerns Jerusalem and the whole house of Israel within it.",
+        "VAT_ES": "Diles: Así habla el Señor: Este oráculo se refiere al príncipe que está en Jerusalén y a todo el pueblo de Israel que vive en medio de ella.",
+        "CEI": "Rispondi loro: Così dice il Signore Dio: Quest'oracolo è per il principe di Gerusalemme e per tutti gli Israeliti che vi abitano."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "אֱמֹ֖ר אֲנִ֣י מֽוֹפֶתְ/כֶ֑ם כַּ/אֲשֶׁ֣ר עָשִׂ֗יתִי כֵּ֚ן יֵעָשֶׂ֣ה לָ/הֶ֔ם בַּ/גּוֹלָ֥ה בַ/שְּׁבִ֖י יֵלֵֽכוּ׃",
+        "LXX": "εἰπὸν ὅτι ἐγὼ τέρατα ποιῶ, ὃν τρόπον πεποίηκα οὕτως ἔσται αὐτῷ· ἐν μετοικεσίᾳ καὶ ἐν αἰχμαλωσίᾳ πορεύσονται,",
+        "VUL": "Dic : [Ego portentum vestrum :/ quomodo feci, sic fiet illis :/ in transmigrationem et in captivitatem ibunt./",
+        "SYN": "Скажи: я знамение для вас; что делаю я, то будет с ними, - в переселение, в плен пойдут они.",
+        "NEO": "Dis : Je suis pour vous un emblème : comme j’ai fait, ainsi il leur sera fait, ils iront en exil, en captivité.",
+        "NAB": "I am a sign for you: as I have done, so shall it be done to them; as captives they shall go into exile.",
+        "VAT_ES": "Diles también: Yo soy un presagio para ustedes. Lo mismo que yo hice se hará con ellos: serán deportados e irán al exilio.",
+        "CEI": "Tu dirai: Io sono un simbolo per voi; infatti quello che ho fatto a te, sarà fatto a loro; saranno deportati e andranno in schiavitù."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/הַ/נָּשִׂ֨יא אֲשֶׁר בְּ/תוֹכָ֜/ם אֶל כָּתֵ֤ף יִשָּׂא֙ בָּ/עֲלָטָ֣ה וְ/יֵצֵ֔א בַּ/קִּ֥יר יַחְתְּר֖וּ לְ/ה֣וֹצִיא ב֑/וֹ פָּנָ֣י/ו יְכַסֶּ֔ה יַ֗עַן אֲשֶׁ֨ר לֹא יִרְאֶ֥ה לַ/עַ֛יִן ה֖וּא אֶת הָ/אָֽרֶץ׃",
+        "LXX": "καὶ ὁ ἄρχων ἐν μέσῳ αὐτῶν ἐπ’ ὤμων ἀρθήσεται, καὶ κεκρυμμένος ἐξελεύσεται διὰ τοῦ τοίχου, καὶ διορύξει τοῦ ἐξελθεῖν αὐτὸν δι’ αὐτοῦ· τὸ πρόσωπον αὐτοῦ συνκαλύψει ὅπως μὴ ὁραθῇ ὀφθαλμῷ, καὶ αὐτὸς τὴν γῆν οὐκ ὄψεται.",
+        "VUL": "Et dux qui est in medio eorum,/ in humeris portabitur ; in caligine egredietur :/ parietem perfodient, ut educant eum ;/ facies ejus operietur, ut non videat oculo terram./",
+        "SYN": "И начальствующий, который среди них, впотьмах поднимет _ношу_ на плечо и выйдет. Стену проломают, чтобы отправить _его_ через нее; он закроет лице свое, так что не увидит глазами земли сей.",
+        "NEO": "Le prince qui est au milieu d’eux mettra son bagage sur son épaule dans l’obscurité et partira ; on creusera un trou dans la muraille pour le faire sortir ; il se voilera le visage, en sorte qu’il ne voie pas de ses yeux la terre.",
+        "NAB": "The prince who is among them shall shoulder his burden and set out in darkness, going through a hole that he has dug in the wall, and covering his face lest he be seen by anyone.",
+        "VAT_ES": "El príncipe que está en medio de ellos cargará el equipaje sobre sus espaldas durante la noche, y saldrá por el boquete que abrirán en el muro para hacerlo salir; y él se cubrirá el rostro, para no ver el país.",
+        "CEI": "Il principe, che è in mezzo a loro si caricherà il bagaglio sulle spalle, nell'oscurità, e uscirà per la breccia che verrà fatta nel muro per farlo partire; si coprirà il viso, per non vedere con gli occhi il paese."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וּ/פָרַשְׂתִּ֤י אֶת רִשְׁתִּ/י֙ עָלָ֔י/ו וְ/נִתְפַּ֖שׂ בִּ/מְצֽוּדָתִ֑/י וְ/הֵבֵאתִ֨י אֹת֤/וֹ בָבֶ֨לָ/ה֙ אֶ֣רֶץ כַּשְׂדִּ֔ים וְ/אוֹתָ֥/הּ לֹֽא יִרְאֶ֖ה וְ/שָׁ֥ם יָמֽוּת׃",
+        "LXX": "καὶ ἐκπετάσω τὸ δίκτυόν μου ἐπ’ αὐτόν, καὶ συλλημφθήσεται ἐν τῇ περιοχῇ μου, καὶ ἄξω αὐτὸν εἰς Βαβυλῶνα εἰς γῆν Χαλδαίων, καὶ αὐτὴν οὐκ ὄψεται, καὶ ἐκεῖ τελευτήσει.",
+        "VUL": "Et extendam rete meum super eum,/ et capietur in sagena mea :/ et adducam eum in Babylonem, in terram Chaldæorum,/ et ipsam non videbit :/ ibique morietur./",
+        "SYN": "И раскину на него сеть Мою, и будет пойман в тенета Мои, и отведу его в Вавилон, в землю Халдейскую, но он не увидит ее, и там умрет.",
+        "NEO": "J’étendrai mon filet sur lui, et il sera pris dans mes rets ; je l’emmènerai à Babylone, au pays des Chaldéens ; mais il ne le verra point, et là il mourra.",
+        "NAB": "But I will spread my net over him, and he shall be taken in my snare. I will bring him to Babylon, into the land of the Chaldeans - but he shall not see it - and there he shall die.",
+        "VAT_ES": "Yo tenderé mi red sobre él y él quedará preso en mi trampa. Lo llevará a Babilonia, la tierra de los caldeos, pero no la verá y morirá allí.",
+        "CEI": "Ma io tenderò la mia rete contro di lui ed egli rimarrà preso nei miei lacci: lo condurrò in Babilonia, nel paese dei Caldei, ma egli non la vedrà e là morirà."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/כֹל֩ אֲשֶׁ֨ר סְבִיבֹתָ֥י/ו עזר/ה עֶזְר֛/וֹ וְ/כָל אֲגַפָּ֖י/ו אֱזָרֶ֣ה לְ/כָל ר֑וּחַ וְ/חֶ֖רֶב אָרִ֥יק אַחֲרֵי/הֶֽם׃",
+        "LXX": "καὶ πάντας τοὺς κύκλῳ αὐτοῦ τοὺς βοηθοὺς αὐτοῦ καὶ πάντας τοὺς ἀντιλαμβανομένους αὐτοῦ διασπερῶ εἰς πάντα ἄνεμον, καὶ ῥομφαίαν ἐκκενώσω ὀπίσω αὐτῶν.",
+        "VUL": "Et omnes qui circa eum sunt,/ præsidium ejus, et agmina ejus,/ dispergam in omnem ventum,/ et gladium evaginabo post eos./",
+        "SYN": "А всех, которые вокруг него, споборников его и все войско его развею по всем ветрам, и обнажу вслед их меч.",
+        "NEO": "Tous ceux qui l’entourent, ses auxiliaires et tous ses bataillons, je les disperserai à tout vent, et je les poursuivrai l’épée nue.",
+        "NAB": "All his retinue, his aides, and his troops I will scatter in every direction, and pursue them with the sword.",
+        "VAT_ES": "Y a todos los que lo rodean, a su guardia y a todas sus tropas, los dispersaré a todos los vientos y desenvainaré la espada detrás de ellos.",
+        "CEI": "Disperderò ad ogni vento quanti sono intorno a lui, le sue guardie e tutte le sue truppe, e snuderò dietro a loro la spada."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/יָדְע֖וּ כִּֽי אֲנִ֣י יְהוָ֑ה בַּ/הֲפִיצִ֤/י אוֹתָ/ם֙ בַּ/גּוֹיִ֔ם וְ/זֵרִיתִ֥י אוֹתָ֖/ם בָּ/אֲרָצֽוֹת׃",
+        "LXX": "καὶ γνώσονται διότι ἐγὼ Κύριος, ἐν τῷ διασκορπίσαι με αὐτοὺς ἐν τοῖς ἔθνεσιν, καὶ διασπερῶ αὐτοὺς ἐν ταῖς χώραις.",
+        "VUL": "Et scient quia ego Dominus,/ quando dispersero illos in gentibus,/ et disseminavero eos in terris./",
+        "SYN": "И узнают, что Я Господь, когда рассею их по народам и развею их по землям.",
+        "NEO": "Et ils sauront que je suis \\+w Yahweh|strong=\"H3068\"\\+w**, quand je les aurai répandus parmi les nations ; et dispersés dans les pays.",
+        "NAB": "Then shall they know that I am the LORD, when I disperse them among the nations and scatter them over foreign lands.",
+        "VAT_ES": "Y cuando los disperse entre las naciones y los disemine por los países, sabrán que yo soy el Señor.",
+        "CEI": "Allora sapranno che io sono il Signore, quando li avrò dispersi fra le genti e li avrò disseminati in paesi stranieri."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/הוֹתַרְתִּ֤י מֵ/הֶם֙ אַנְשֵׁ֣י מִסְפָּ֔ר מֵ/חֶ֖רֶב מֵ/רָעָ֣ב וּ/מִ/דָּ֑בֶר לְמַ֨עַן יְסַפְּר֜וּ אֶת כָּל תּוֹעֲבֽוֹתֵי/הֶ֗ם בַּ/גּוֹיִם֙ אֲשֶׁר בָּ֣אוּ שָׁ֔ם וְ/יָדְע֖וּ כִּֽי אֲנִ֥י יְהוָֽה׃",
+        "LXX": "καὶ ὑπολείψομαι ἐξ αὐτῶν ἄνδρας ἀριθμῷ ἐκ ῥομφαίας καὶ ἐκ λιμοῦ καὶ ἐκ θανάτου, ὅπως ἐκδιηγῶνται πάσας τὰς ἀνομίας αὐτῶν ἐν τοῖς ἔθνεσιν οὗ εἰσήλθοσαν ἐκεῖ, καὶ γνώσονται ὅτι ἐγὼ Κύριος.",
+        "VUL": "Et relinquam ex eis viros paucos/ a gladio, et fame, et pestilentia,/ ut enarrent omnia scelera eorum/ in gentibus ad quas ingredientur,/ et scient quia ego Dominus.]",
+        "SYN": "Но небольшое число их Я сохраню от меча, голода и язвы, чтобы они рассказали у народов, к которым пойдут, о всех своих мерзостях; и узнают, что Я Господь.",
+        "NEO": "Et je laisserai d’entre eux un petit nombre d’hommes qui échapperont à l’épée, à la famine et à la peste, pour qu’ils racontent leurs abominations parmi les nations où ils iront ; et ils sauront que je suis \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "Yet I will leave a few of them to escape the sword, famine and pestilence, so that they may tell of all their abominations among the nations to which they will come; thus they shall know that I am the LORD.",
+        "VAT_ES": "Pero dejaré que un pequeño número de ellos escapen de la espada, del hambre y de la peste, para que cuenten todas sus abominaciones entre las naciones adonde vayan: así se sabrá que yo soy el Señor.",
+        "CEI": "Tuttavia ne risparmierò alcuni, superstiti alla spada, alla fame e alla peste, perché raccontino tutte le loro scelleratezze alle genti fra le quali andranno e anch'esse sappiano che io sono il Signore\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "El Señor me dirigió su palabra en estos términos:",
+        "CEI": "Mi fu rivolta ancora questa parola del Signore:"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֕ם לַחְמְ/ךָ֖ בְּ/רַ֣עַשׁ תֹּאכֵ֑ל וּ/מֵימֶ֕י/ךָ בְּ/רָגְזָ֥ה וּ/בִ/דְאָגָ֖ה תִּשְׁתֶּֽה׃",
+        "LXX": "Υἱὲ ἀνθρώπου, τὸν ἄρτον σου μετ’ ὀδύνης φάγεσαι, καὶ τὸ ὕδωρ μετὰ βασάνου καὶ θλίψεως πίεσαι.",
+        "VUL": "[Fili hominis, panem tuum in conturbatione comede,/ sed et aquam tuam in festinatione et mrore bibe./",
+        "SYN": "сын человеческий! хлеб твой ешь с трепетом, и воду твою пей с дрожанием и печалью.",
+        "NEO": "« Fils de l’homme, tu mangeras ton pain dans l’agitation, et tu boiras ton eau dans l’inquiétude et l’angoisse.",
+        "NAB": "Son of man, eat your bread trembling, and drink your water shaking with anxiety.",
+        "VAT_ES": "Hijo de hombre, comerás tu pan con estremecimiento y beberás tu agua con inquietud y ansiedad.",
+        "CEI": "\"Figlio dell'uomo, mangia il pane con paura e bevi l'acqua con trepidazione e con angoscia."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/אָמַרְתָּ֣ אֶל עַ֣ם הָ/אָ֡רֶץ כֹּֽה אָמַר֩ אֲדֹנָ֨/י יְהוִ֜ה לְ/יוֹשְׁבֵ֤י יְרוּשָׁלִַ֨ם֙ אֶל אַדְמַ֣ת יִשְׂרָאֵ֔ל לַחְמָ/ם֙ בִּ/דְאָגָ֣ה יֹאכֵ֔לוּ וּ/מֵֽימֵי/הֶ֖ם בְּ/שִׁמָּמ֣וֹן יִשְׁתּ֑וּ לְמַ֜עַן תֵּשַׁ֤ם אַרְצָ/הּ֙ מִ/מְּלֹאָ֔/הּ מֵ/חֲמַ֖ס כָּֽל הַ/יֹּשְׁבִ֥ים בָּֽ/הּ׃",
+        "LXX": "καὶ ἐρεῖς πρὸς τὸν λαὸν τῆς γῆς Τάδε λέγει Κύριος τοῖς κατοικοῦσιν Ἰερουσαλὴμ ἐπὶ τῆς γῆς τοῦ Ἰσραήλ Τοὺς ἄρτους αὐτῶν μετ’ ἐνδείας φάγονται, καὶ τὸ ὕδωρ αὐτῶν μετὰ ἀφανισμοῦ πίονται, ὅπως ἀφανισθῇ ἡ γῆ σὺν πληρώματι αὐτῆς, ἐν ἀσεβείᾳ γὰρ πάντες οἱ κατοικοῦντες ἐν αὐτῇ.",
+        "VUL": "Et dices ad populum terræ :/ Hæc dicit Dominus Deus/ ad eos qui habitant in Jerusalem, in terra Israël :/ Panem suum in sollicitudine comedent,/ et aquam suam in desolatione bibent :/ ut desoletur terra a multitudine sua,/ propter iniquitatem omnium qui habitant in ea./",
+        "SYN": "И скажи народу земли: так говорит Господь Бог о жителях Иерусалима, о земле Израилевой: они хлеб свой будут есть с печалью и воду свою будут пить в унынии, потому что земля его будет лишена всего изобилия своего за неправды всех живущих на ней.",
+        "NEO": "Et tu diras au peuple du pays : Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** pour les habitants de Jérusalem, pour la terre d’Israël : Ils mangeront leur pain dans l’angoisse, et ils boiront leur eau dans la désolation, parce que le pays sera dépeuplé de tout ce qu’il contient, à cause de la violence de tous ceux qui l’habitent.",
+        "NAB": "Then say to the people of the land: Thus says the Lord GOD of the inhabitants of Jerusalem (to the land of Israel): They shall eat their bread in anxiety and drink their water in horror, that their land may be emptied of the violence of all its inhabitants that now fills it.",
+        "VAT_ES": "Y dirás a la población del país: Así habla el Señor a los habitantes de Jerusalén que viven en la tierra de Israel: Ustedes comerán su pan con ansiedad y beberán su agua con terror, para que el país quede horrorizado porque está lleno de violencia de todos sus habitantes.",
+        "CEI": "Al popolo del paese dirai: Così dice il Signore Dio agli abitanti di Gerusalemme, al paese d'Israele: Mangeranno il loro pane nell'angoscia e berranno la loro acqua nella desolazione, perché la loro terra sarà spogliata della sua abbondanza per l'empietà di tutti i suoi abitanti."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/הֶ/עָרִ֤ים הַ/נּֽוֹשָׁבוֹת֙ תֶּחֱרַ֔בְנָה וְ/הָ/אָ֖רֶץ שְׁמָמָ֣ה תִֽהְיֶ֑ה וִֽ/ידַעְתֶּ֖ם כִּֽי אֲנִ֥י יְהוָֽה׃",
+        "LXX": "καὶ αἱ πόλεις αὐτῶν αἱ κατοικούμεναι ἐξερημωθήσονται, καὶ ἡ γῆ εἰς ἀφανισμὸν ἔσται· καὶ ἐπιγνώσεσθε διότι ἐγὼ Κύριος.",
+        "VUL": "Et civitates quæ nunc habitantur, desolatæ erunt,/ terraque deserta,/ et scietis quia ego Dominus.]",
+        "SYN": "И будут разорены населенные города, и земля сделается пустою, и узнаете, что Я Господь.",
+        "NEO": "Les villes qui sont habitées seront désertes, le pays sera désolé, et vous saurez que je suis \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "Inhabited cities shall be in ruins, and the land shall be a waste; thus you shall know that I am the LORD.",
+        "VAT_ES": "Las ciudades habitadas quedarán en ruinas y el país se convertirá en un desierto: así ustedes sabrán que yo soy el Señor.",
+        "CEI": "Le città popolose saranno distrutte e la campagna ridotta a un deserto: saprete che io sono il Signore\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu ancora rivolta questa parola del Signore:"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֗ם מָֽה הַ/מָּשָׁ֤ל הַ/זֶּה֙ לָ/כֶ֔ם עַל אַדְמַ֥ת יִשְׂרָאֵ֖ל לֵ/אמֹ֑ר יַֽאַרְכוּ֙ הַ/יָּמִ֔ים וְ/אָבַ֖ד כָּל חָזֽוֹן׃",
+        "LXX": "Υἱὲ ἀνθρώπου, τίς ἡ παραβολὴ ὑμῖν ἐπὶ τῆς γῆς τοῦ Ἰσραήλ, λέγοντες Μακραὶ αἱ ἡμέραι, ἀπόλωλεν ὅρασις;",
+        "VUL": "[Fili hominis, quod est proverbium istud/ vobis in terra Israël, dicentium :/ In longum differentur dies,/ et peribit omnis visio ?/",
+        "SYN": "сын человеческий! что за поговорка у вас, в земле Израилевой: \"много дней пройдет, и всякое пророческое видение исчезнет\"?",
+        "NEO": "« Fils de l’homme, qu’est-ce que ce dicton que vous répétez sur la terre d’Israël : Les jours se prolongent ; toute vision reste sans effet ?",
+        "NAB": "Son of man, what is this proverb that you have in the land of Israel: \"The days drag on, and no vision ever comes to anything\"?",
+        "VAT_ES": "Hijo de hombre, &iquest;qué significa ese refrán que se escucha en la tierra de Israel: «Pasan los días y no se cumple ninguna visión»?",
+        "CEI": "\"Figlio dell'uomo, che cos'è questo proverbio che si va ripetendo nel paese di Israele: Passano i giorni e ogni visione svanisce?"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "לָ/כֵ֞ן אֱמֹ֣ר אֲלֵי/הֶ֗ם כֹּֽה אָמַר֮ אֲדֹנָ֣/י יְהוִה֒ הִשְׁבַּ֨תִּי֙ אֶת הַ/מָּשָׁ֣ל הַ/זֶּ֔ה וְ/לֹֽא יִמְשְׁל֥וּ אֹת֛/וֹ ע֖וֹד בְּ/יִשְׂרָאֵ֑ל כִּ֚י אִם דַּבֵּ֣ר אֲלֵי/הֶ֔ם קָֽרְבוּ֙ הַ/יָּמִ֔ים וּ/דְבַ֖ר כָּל חָזֽוֹן׃",
+        "LXX": "διὰ τοῦτο εἰπὸν πρὸς αὐτούς Τάδε λέγει Κύριος Καὶ ἀποστρέψω τὴν παραβολὴν ταύτην, καὶ οὐκέτι μὴ εἴπωσιν τὴν παραβολὴν ταύτην οἶκος τοῦ Ἰσραήλ· ὅτι λαλήσεις πρὸς αὐτούς Ἠγγίκασιν αἱ ἡμέραι καὶ λόγος πάσης ὁράσεως.",
+        "VUL": "Ideo dic ad eos :/ Hæc dicit Dominus Deus :/ Quiescere faciam proverbium istud,/ neque vulgo dicetur ultra in Israël :/ et loquere ad eos quod appropinquaverint dies,/ et sermo omnis visionis./",
+        "SYN": "Посему скажи им: так говорит Господь Бог: уничтожу эту поговорку, и не будут уже употреблять такой поговорки у Израиля; но скажи им: близки дни и исполнение всякого видения пророческого.",
+        "NEO": "C’est pourquoi dis-leur : Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** je ferai cesser ce dicton, et on ne le prononcera plus en Israël. Dis-leur au contraire : Les jours sont proches ainsi que la réalisation de toute parole de vision.",
+        "NAB": "Say to them therefore: Thus says the Lord GOD: I will put an end to this proverb; they shall never quote it again in Israel. Rather, say to them: The days are at hand, and also the fulfillment of every vision.",
+        "VAT_ES": "Tú diles, en cambio: Así habla el Señor: Yo acabaré con este refrán y no se lo repetirá más en Israel. Diles más bien: Se acercan los días en que toda visión se cumplirá;",
+        "CEI": "Ebbene, riferisci loro: Così dice il Signore Dio: Farò cessare questo proverbio e non si sentirà più ripetere in Israele; anzi riferisci loro: Si avvicinano i giorni in cui si avvererà ogni visione."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "כִּ֠י לֹ֣א יִֽהְיֶ֥ה ע֛וֹד כָּל חֲז֥וֹן שָׁ֖וְא וּ/מִקְסַ֣ם חָלָ֑ק בְּ/ת֖וֹךְ בֵּ֥ית יִשְׂרָאֵֽל׃",
+        "LXX": "ὅτι οὐκ ἔσται ἔτι πᾶσα ὅρασις ψευδὴς καὶ μαντευόμενος τὰ πρὸς χάριν ἐν μέσῳ τῶν υἱῶν Ἰσραήλ.",
+        "VUL": "Non enim erit ultra omnis visio cassa,/ neque divinatio ambigua in medio filiorum Israël :/",
+        "SYN": "Ибо уже не останется втуне никакое видение пророческое, и ни одно предвещание не будет ложным в доме Израилевом.",
+        "NEO": "Car il n’y aura plus de vision de mensonge, ni de divination trompeuse, au milieu de la maison d’Israël.",
+        "NAB": "There shall no longer be any false visions or deceitful divinations within the house of Israel, because it is I, the LORD, who will speak.",
+        "VAT_ES": "ya no habrá más visiones ilusorias ni predicciones engañosas en medio de la casa de Israel,",
+        "CEI": "Infatti non ci sarà più visione falsa, né predizione fallace in mezzo agli Israeliti,"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "כִּ֣י אֲנִ֣י יְהוָ֗ה אֲדַבֵּר֙ אֵת֩ אֲשֶׁ֨ר אֲדַבֵּ֤ר דָּבָר֙ וְ/יֵ֣עָשֶׂ֔ה לֹ֥א תִמָּשֵׁ֖ךְ ע֑וֹד כִּ֣י בִֽ/ימֵי/כֶ֞ם בֵּ֣ית הַ/מֶּ֗רִי אֲדַבֵּ֤ר דָּבָר֙ וַ/עֲשִׂיתִ֔י/ו נְאֻ֖ם אֲדֹנָ֥/י יְהוִֽה׃",
+        "LXX": "διότι ἐγὼ Κύριος λαλήσω τοὺς λόγους μου, λαλήσω καὶ ποιήσω, καὶ οὐ μὴ μηκύνω ἔτι· ὅτι ἐν ταῖς ἡμέραις ὑμῶν, οἶκος ὁ παραπικραίνων, λαλήσω λόγον καὶ ποιήσω, λέγει Κύριος.",
+        "VUL": "quia ego Dominus loquar,/ et quodcumque locutus fuero verbum, fiet,/ et non prolongabitur amplius :/ sed in diebus vestris, domus exasperans,/ loquar verbum, et faciam illud,/ dicit Dominus Deus.]",
+        "SYN": "Ибо Я Господь, Я говорю; и слово, которое Я говорю, исполнится, и не будет отложено; в ваши дни, мятежный дом, Я изрек слово, и исполню его, говорит Господь Бог.",
+        "NEO": "Car moi, \\+w Yahweh|strong=\"H3068\"\\+w**, je parlerai ; la parole que je dirai s’accomplira ; elle ne sera plus différée. Oui, c’est en vos jours, maison rebelle, que je dirai la parole et que je l’exécuterai. — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "Whatever I speak is final, and it shall be done without further delay. In your days, rebellious house, whatever I speak I will bring about, says the Lord GOD.",
+        "VAT_ES": "porque yo, el Señor, diré lo que tenga que decir, y la palabra que pronuncie se cumplirá sin demora. Sí, en vida de ustedes, pueblo rebelde, pronunciaré una palabra y la cumpliré –oráculo del Señor–.",
+        "CEI": "perché io, il Signore, parlerò e attuerò senza indugio la parola che ho detta. Anzi, ai vostri giorni, o genìa di ribelli, pronunzierò una parola e l'attuerò: parola del Signore Dio\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu rivolta ancora questa parola del Signore:"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֗ם הִנֵּ֤ה בֵֽית יִשְׂרָאֵל֙ אֹֽמְרִ֔ים הֶ/חָז֛וֹן אֲשֶׁר ה֥וּא חֹזֶ֖ה לְ/יָמִ֣ים רַבִּ֑ים וּ/לְ/עִתִּ֥ים רְחוֹק֖וֹת ה֥וּא נִבָּֽא׃",
+        "LXX": "Υἱὲ ἀνθρώπου, ἰδοὺ οἶκος Ἰσραὴλ ὁ παραπικραίνων λέγοντες λέγουσιν Ἡ ὅρασις ἣν οὗτος ὁρᾷ εἰς ἡμέρας πολλάς, καὶ εἰς καιροὺς μακροὺς οὗτος προφητεύει.",
+        "VUL": "[Fili hominis, ecce domus Israël dicentium :/ Visio quam hic videt,/ in dies multos et in tempora longa iste prophetat./",
+        "SYN": "сын человеческий! вот, дом Израилев говорит: \"пророческое видение, которое видел он, _сбудется_ после многих дней, и он пророчествует об отдаленных временах\".",
+        "NEO": "« Fils de l’homme, voici que la maison d’Israël dit : La vision qu’il voit est pour des jours lointains, et c’est pour des temps éloignés qu’il prophétise.",
+        "NAB": "Son of man, listen to the house of Israel saying, \"The vision he sees is a long way off; he prophesies of the distant future!\"",
+        "VAT_ES": "Hijo de hombre, el pueblo de Israel dice: «Las visiones que este tiene van para largo; él profetiza para un futuro lejano».",
+        "CEI": "\"Figlio dell'uomo, ecco, gli Israeliti van dicendo: La visione che costui vede è per i giorni futuri; costui predice per i tempi lontani."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "לָ/כֵ֞ן אֱמֹ֣ר אֲלֵי/הֶ֗ם כֹּ֤ה אָמַר֙ אֲדֹנָ֣/י יְהוִ֔ה לֹא תִמָּשֵׁ֥ךְ ע֖וֹד כָּל דְּבָרָ֑/י אֲשֶׁ֨ר אֲדַבֵּ֤ר דָּבָר֙ וְ/יֵ֣עָשֶׂ֔ה נְאֻ֖ם אֲדֹנָ֥/י יְהוִֽה׃",
+        "LXX": "διὰ τοῦτο εἰπὸν πρὸς αὐτούς Τάδε λέγει Κύριος Οὐ μὴ μηκύνωσιν οὐκέτι πάντες οἱ λόγοι μου οὓς ἂν λαλήσω· λαλήσω καὶ ποιήσω, λέγει Κύριος.",
+        "VUL": "Propterea dic ad eos :/ Hæc dicit Dominus Deus :/ Non prolongabitur ultra omnis sermo meus :/ verbum quod locutus fuero, complebitur,/ dicit Dominus Deus.]",
+        "SYN": "Посему скажи им: так говорит Господь Бог: ни одно из слов Моих уже не будет отсрочено, но слово, которое Я скажу, сбудется, говорит Господь Бог.",
+        "NEO": "C’est pourquoi dis-leur : Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Aucune de mes paroles ne sera plus différée ; la parole que je dis va s’accomplir, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "Say to them therefore: Thus says the Lord GOD: None of my words shall be delayed any longer; whatever I speak is final, and it shall be done, says the Lord GOD.",
+        "VAT_ES": "Por eso, diles: Así habla el Señor: En adelante, todas mis palabras se cumplirán sin demora; lo que yo diga se realizará –oráculo del Señor–.",
+        "CEI": "Ebbene, riferisci loro: Dice il Signore Dio: Non sarà ritardata più a lungo ogni mia parola: la parola che dirò l'eseguirò. Oracolo del Signore Dio\"."
+      }
+    }
+  }
+}

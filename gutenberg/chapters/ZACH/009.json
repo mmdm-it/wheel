@@ -1,0 +1,304 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ZACH_009",
+  "book_key": "ZACH",
+  "sequence": 9,
+  "chapter_in": {
+    "MT": 9,
+    "VUL": 9,
+    "LXX": 9
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מַשָּׂ֤א דְבַר יְהוָה֙ בְּ/אֶ֣רֶץ חַדְרָ֔ךְ וְ/דַמֶּ֖שֶׂק מְנֻחָת֑/וֹ כִּ֤י לַֽ/יהוָה֙ עֵ֣ין אָדָ֔ם וְ/כֹ֖ל שִׁבְטֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "Λῆμμα λόγου Κυρίου ἐν γῇ Σεδράχ, καὶ Δαμασκοῦ θυσία αὐτοῦ, διότι Κύριος ἐφορᾷ ἀνθρώπους καὶ πάσας φυλὰς τοῦ Ἰσραήλ,",
+        "SYN": "Пророческое слово Господа на землю Хадрах, и на Дамаске оно остановится, - ибо око Господа на всех людей, как и на все колена Израилевы, -",
+        "NEO": "Sentence",
+        "NAB": "An oracle: The word of the LORD is upon the land of Hadrach, and Damascus is its resting place, For the cities of Aram are the LORD'S, as are all the tribes of Israel,",
+        "VAT_ES": "Oráculo. La palabra del Señor llegó al país de Jadrac, y en Damasco está su reposo; porque al Señor pertenece la fuente de Aram, como todas las tribus de Israel,",
+        "CEI": "Oracolo. La parola del Signore è sulla terra di Cadràch e si posa su Damasco, poiché al Signore appartiene la perla di Aram e tutte le tribù d'Israele;"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/גַם חֲמָ֖ת תִּגְבָּל בָּ֑/הּ צֹ֣ר וְ/צִיד֔וֹן כִּ֥י חָֽכְמָ֖ה מְאֹֽד׃",
+        "LXX": "καὶ ἐν Ἑμὰθ ἐν τοῖς ὁρίοις αὐτῆς· Τύρος καὶ Σειδών, διότι ἐφρόνησαν σφόδρα·",
+        "SYN": "и на Емаф, смежный с ним, на Тир и Сидон, ибо он очень умудрился.",
+        "NEO": "et aussi à Hamath, voisine de Damas, à Tyr, ainsi qu’à Sidon, parce que leur sagesse est grande.",
+        "NAB": "Hamath also, on its border, Tyre too, and Sidon, however wise they be.",
+        "VAT_ES": "y también Jamat, que está en su frontera, y Tiro y Sidón. Por su gran sabiduría,",
+        "CEI": "anche Amat sua confinante e Sidòne, che è tanto saggia."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/תִּ֥בֶן צֹ֛ר מָצ֖וֹר לָ֑/הּ וַ/תִּצְבָּר כֶּ֨סֶף֙ כֶּֽ/עָפָ֔ר וְ/חָר֖וּץ כְּ/טִ֥יט חוּצֽוֹת׃",
+        "LXX": "καὶ ᾠκοδόμησεν Τύρος ὀχυρώματα αὑτῇ, καὶ ἐθησαύρισεν ἀργύριον ὡς χοῦν, καὶ χρυσίον ὡς πηλὸν ὁδῶν.",
+        "SYN": "И устроил себе Тир крепость, накопил серебра, как пыли, и золота, как уличной грязи.",
+        "NEO": "Tyr s’est construit une citadelle+ 9:3 \\+it Une citadelle\\+it* : la nouvelle Tyr, bâtie dans une île à un kilomètre de la côte.*, elle a amassé l’argent comme la poussière, et l’or comme la boue des rues.",
+        "NAB": "Tyre built herself a stronghold, and heaped up silver like dust, and gold like the mire of the streets.",
+        "VAT_ES": "Tiro se construyó una fortaleza, amontonó plata como polvo y oro fino como barro de las calles.",
+        "CEI": "Tiro si è costruita una fortezza e vi ha accumulato argento come polvere e oro come fango delle strade."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הִנֵּ֤ה אֲדֹנָ/י֙ יֽוֹרִשֶׁ֔/נָּה וְ/הִכָּ֥ה בַ/יָּ֖ם חֵילָ֑/הּ וְ/הִ֖יא בָּ/אֵ֥שׁ תֵּאָכֵֽל׃",
+        "LXX": "καὶ διὰ τοῦτο Κύριος κληρονομήσει αὐτούς, καὶ πατάξει εἰς θάλασσαν δύναμιν αὐτῆς, καὶ αὕτη ἐν πυρὶ καταναλωθήσεται.",
+        "SYN": "Вот, Господь сделает его бедным и поразит силу его в море, и сам он будет истреблен огнем.",
+        "NEO": "Voici que le Seigneur s’en emparera ; il frappera sur mer sa puissance, et elle-même sera dévorée par le feu.",
+        "NAB": "Lo, the LORD will strip her of her possessions, and smite her power on the sea, and she shall be devoured by fire.",
+        "VAT_ES": "Pero el Señor va a apoderarse de eso, arrojará su poderío en el mar y ella misma será presa de las llamas.",
+        "CEI": "Ecco, il Signore se ne impossesserà, sprofonderà nel mare le sue ricchezze ed essa sarà divorata dal fuoco."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "תֵּרֶ֨א אַשְׁקְל֜וֹן וְ/תִירָ֗א וְ/עַזָּה֙ וְ/תָחִ֣יל מְאֹ֔ד וְ/עֶקְר֖וֹן כִּֽי הֹבִ֣ישׁ מֶבָּטָ֑/הּ וְ/אָ֤בַד מֶ֨לֶךְ֙ מֵֽ/עַזָּ֔ה וְ/אַשְׁקְל֖וֹן לֹ֥א תֵשֵֽׁב׃",
+        "LXX": "ὄψεται Ἀσκάλων καὶ φοβηθήσεται, καὶ Γάζα καὶ ὀδυνηθήσεται σφόδρα, καὶ Ἀκκαρών, ὅτι ᾐσχύνθη ἐπὶ τῷ παραπτώματι αὐτῆς· καὶ ἀπολεῖται βασιλεὺς ἐκ Γάζης, καὶ Ἀσκάλων οὐ μὴ κατοικηθῇ.",
+        "SYN": "Увидит это Аскалон и ужаснется, и Газа, и вострепещет сильно, и Екрон; ибо посрамится надежда его: не станет царя в Газе, и Аскалон будет необитаем.",
+        "NEO": "Ascalon le verra et craindra ; Gaza aussi, et elle se tordra de douleur ; Accaron aussi, car son espérance+ 9:5 \\+it Son espérance\\+it*, la ville de Tyr, protection et source de richesses pour ces petites cités.* est confondue. Il n’y aura plus de roi à Gaza, et Ascalon ne sera plus habitée.",
+        "NAB": "Ashkelon shall see it and be afraid; Gaza also: she shall be in great anguish; Ekron, too, for her hope shall come to nought. The king shall disappear from Gaza, and Ashkelon shall not be inhabited,",
+        "VAT_ES": "Lo verá Ascalón y temerá; también Gaza, y se retorcerá de dolor, y lo mismo Ecrón, porque su esperanza quedó defraudada; Gaza no tendrá más rey, Ascalón ya no será habitada",
+        "CEI": "Ascalòna vedrà e ne sarà spaventata, Gaza sarà in grandi dolori, come anche Ekròn, perché svanirà la sua fiducia; scomparirà il re da Gaza e Ascalòna rimarrà disabitata."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/יָשַׁ֥ב מַמְזֵ֖ר בְּ/אַשְׁדּ֑וֹד וְ/הִכְרַתִּ֖י גְּא֥וֹן פְּלִשְׁתִּֽים׃",
+        "LXX": "καὶ κατοικήσουσιν ἀλλογενεῖς ἐν Ἀζώτῳ, καὶ καθελῶ ὕβριν ἀλλοφύλων,",
+        "SYN": "Чужое племя будет жить в Азоте, и Я уничтожу высокомерие Филистимлян.",
+        "NEO": "Un vil étranger+ 9:6 \\+it Un vil étranger\\+it*, litt. \\+it un bâtard\\+it*, une population bâtarde.* s’installera à Azoth, et je détruirai l’orgueil des Philistins.",
+        "NAB": "and the baseborn shall occupy Ashdod. I will destroy the pride of the Philistine",
+        "VAT_ES": "y gente bastarda se instalará en Asdod. Yo aniquilaré el orgullo del filisteo,",
+        "CEI": "Bastardi dimoreranno in Asdòd, abbatterò l'orgoglio del Filisteo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/הֲסִרֹתִ֨י דָמָ֜י/ו מִ/פִּ֗י/ו וְ/שִׁקֻּצָי/ו֙ מִ/בֵּ֣ין שִׁנָּ֔י/ו וְ/נִשְׁאַ֥ר גַּם ה֖וּא לֵֽ/אלֹהֵ֑י/נוּ וְ/הָיָה֙ כְּ/אַלֻּ֣ף בִּֽ/יהוּדָ֔ה וְ/עֶקְר֖וֹן כִּ/יבוּסִֽי׃",
+        "LXX": "καὶ ἐξαρῶ τὸ αἷμα αὐτῶν ἐκ στόματος αὐτῶν, καὶ τὰ βδελύγματα αὐτῶν ἐκ μέσου ὀδόντων αὐτῶν· καὶ ὑπολειφθήσονται καὶ οὗτοι τῷ θεῷ ἡμῶν, καὶ ἔσονται ⸂⸆⸃ ὡς χιλίαρχος ἐν Ἰούδᾳ, καὶ Ἀκκαρὼν ὡς ὁ Ἰεβουσαῖος·",
+        "SYN": "Исторгну кровь из уст его и мерзости его из зубов его, и он достанется Богу нашему, и будет как тысяченачальник в Иуде, и Екрон будет, как Иевусей.",
+        "NEO": "J’ôterai son sang de sa bouche, et ses abominations d’entre ses dents ; et lui aussi sera un reste pour notre Dieu ; il sera comme un chef+ 9:7 7. La Philistie renoncera aux idoles et sera incorporée au nouveau peuple de Dieu. — \\+it Un chef\\+it*, de tribu, de famille.*en Juda ; et Accaron sera comme le Jébuséen.",
+        "NAB": "and take from his mouth his bloody meat, and his abominations from between his teeth: He also shall become a remnant for our God, and shall be like a family in Judah, and Ekron shall be like the Jebusites.",
+        "VAT_ES": "quitaré la sangre de su boca y sus abominaciones de entre sus dientes. El también será un resto para nuestro Dios, será como un jefe en Judá, y Ecrón será como un jebuseo.",
+        "CEI": "Toglierò il sangue dalla sua bocca e i suoi abomini dai suoi denti. Diventerà anche lui un resto per il nostro Dio, sarà come una famiglia in Giuda ed Ekròn sarà simile al Gebuseo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/חָנִ֨יתִי לְ/בֵיתִ֤/י מִצָּבָה֙ מֵ/עֹבֵ֣ר וּ/מִ/שָּׁ֔ב וְ/לֹֽא יַעֲבֹ֧ר עֲלֵי/הֶ֛ם ע֖וֹד נֹגֵ֑שׂ כִּ֥י עַתָּ֖ה רָאִ֥יתִי בְ/עֵינָֽ/י׃",
+        "LXX": "καὶ ὑποστήσομαι τῷ οἴκῳ μου ἀνάστημα τοῦ μὴ διαπορεύεσθαι μηδὲ ἀνακάμπτειν, καὶ οὐ μὴ ἐπέλθῃ ἐπ’ αὐτοὺς οὐκέτι ἐξελαύνων, διότι νῦν ἑόρακα ἐν τοῖς ὀφθαλμοῖς μου.",
+        "SYN": "И Я расположу стан у дома Моего против войска, против проходящих вперед и назад, и не будет более проходить притеснитель, ибо ныне Моими очами Я буду взирать на это.",
+        "NEO": "Je camperai autour de ma maison pour la défendre ; contre toute armée, tout allant et venant ; et il ne passera plus chez eux d’oppresseur, car maintenant j’ai vu de mes yeux.",
+        "NAB": "I will encamp by my house as a guard that none may pass to and fro; No oppressor shall pass over them again, for now I have regard for their affliction.",
+        "VAT_ES": "Yo acamparé junto a mi casa como una guardia contra los que pasan y vuelven: no pasará más entre ellos ningún opresor, porque ahora he visto con mis ojos.",
+        "CEI": "Mi porrò come sentinella per la mia casa contro chi va e chi viene, non vi passerà più l'oppressore, perché ora io stesso sorveglio con i miei occhi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "גִּילִ֨י מְאֹ֜ד בַּת צִיּ֗וֹן הָרִ֨יעִי֙ בַּ֣ת יְרוּשָׁלִַ֔ם הִנֵּ֤ה מַלְכֵּ/ךְ֙ יָ֣בוֹא לָ֔/ךְ צַדִּ֥יק וְ/נוֹשָׁ֖ע ה֑וּא עָנִי֙ וְ/רֹכֵ֣ב עַל חֲמ֔וֹר וְ/עַל עַ֖יִר בֶּן אֲתֹנֽוֹת׃",
+        "LXX": "Χαῖρε σφόδρα, θύγατερ Σειών· κήρυσσε, θύγατερ Ἰερουσαλήμ· ἰδοὺ ὁ βασιλεύς σου ἔρχεταί σοι δίκαιος καὶ σώζων αὐτός, πρᾳὺς καὶ ἐπιβεβηκὼς ἐπὶ ὑποζύγιον καὶ πῶλον νέον.",
+        "SYN": "Ликуй от радости, дщерь Сиона, торжествуй, дщерь Иерусалима: се Царь твой грядет к тебе, праведный и спасающий, кроткий, сидящий на ослице и на молодом осле, сыне подъяремной.",
+        "NEO": "Tressaille d’une grande joie, fille de Sion ! Pousse des cris d’allégresse, fille de Jérusalem ! Voici que ton Roi vient à toi ; il est juste, lui, et protégé de Dieu ; il est humble ; monté sur un âne+ 9:9 \\+it Sur un âne\\+it*, par opposition au cheval de guerre (vers. 10) : symbole du caractère pacifique du Roi Messie. Comp. Deut. xvii, 16 ; Is. ii, 6-9. Dans les premiers temps de l’histoire d’Israël, l’âne était la monture des princes et des chefs (Jug. v, 10 ; x, 4). \\+it Le poulain\\+it* n’est ici mentionné qu’en vertu du parallélisme synonymique ; ce n’est pas un second animal.*, et sur un poulain, petit d’une ânesse.",
+        "NAB": "Rejoice heartily, O daughter Zion, shout for joy, O daughter Jerusalem! See, your king shall come to you; a just savior is he, Meek, and riding on an ass, on a colt, the foal of an ass.",
+        "VAT_ES": "&iexcl;Alégrate mucho, hija de Sión! &iexcl;Grita de júbilo, hija de Jerusalén! Mira que tu Rey viene hacia ti; él es justo y victorioso, es humilde y está montado sobre un asno, sobre la cría de un asna.",
+        "CEI": "Esulta grandemente figlia di Sion, giubila, figlia di Gerusalemme! Ecco, a te viene il tuo re. Egli è giusto e vittorioso, umile, cavalca un asino, un puledro figlio d'asina."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/הִכְרַתִּי רֶ֣כֶב מֵ/אֶפְרַ֗יִם וְ/סוּס֙ מִ/יר֣וּשָׁלִַ֔ם וְ/נִכְרְתָה֙ קֶ֣שֶׁת מִלְחָמָ֔ה וְ/דִבֶּ֥ר שָׁל֖וֹם לַ/גּוֹיִ֑ם וּ/מָשְׁל/וֹ֙ מִ/יָּ֣ם עַד יָ֔ם וּ/מִ/נָּהָ֖ר עַד אַפְסֵי אָֽרֶץ׃",
+        "LXX": "καὶ ἐξολεθρεύσει ἅρματα ἐξ Ἐφράιμ καὶ ἵππον ἐξ Ἰερουσαλήμ, καὶ ἐξολεθρεύσεται τόξον πολεμικόν, καὶ πλῆθος καὶ εἰρήνη ἐξ ἐθνῶν· καὶ κατάρξει ὑδάτων ἕως θαλάσσης καὶ ποταμῶν διεκβολὰς γῆς.",
+        "SYN": "Тогда истреблю колесницы у Ефрема и коней в Иерусалиме, и сокрушен будет бранный лук; и Он возвестит мир народам, и владычество Его будет от моря до моря и от реки до концов земли.",
+        "NEO": "Je retrancherai+ 9:10 \\+it Je retrancherai\\+it*. Cette 1 \\+sup re\\+sup* pers. suppose une parole du Messie introduite dans le texte d’une façon très abrupte.* d’Ephraïm les chars de guerre, et de Jérusalem les chevaux, et l’arc du combat sera détruit. Il parlera de paix aux nations ; sa domination s’étendra d’une mer à l’autre, du fleuve jusqu’aux extrémités de la terre.",
+        "NAB": "He shall banish the chariot from Ephraim, and the horse from Jerusalem; The warrior's bow shall be banished, and he shall proclaim peace to the nations. His dominion shall be from sea to sea, and from the River to the ends of the earth.",
+        "VAT_ES": "El suprimirá los carros de Efraím y los caballos de Jerusalén; el arco de guerra será suprimido y proclamará la paz a las naciones. Su dominio se extenderá de un mar hasta el otro, y desde el Río hasta los confines de la tierra.",
+        "CEI": "Farà sparire i carri da Efraim e i cavalli da Gerusalemme, l'arco di guerra sarà spezzato, annunzierà la pace alle genti, il suo dominio sarà da mare a mare e dal fiume ai confini della terra."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "גַּם אַ֣תְּ בְּ/דַם בְּרִיתֵ֗/ךְ שִׁלַּ֤חְתִּי אֲסִירַ֨יִ/ךְ֙ מִ/בּ֔וֹר אֵ֥ין מַ֖יִם בּֽ/וֹ׃",
+        "LXX": "καὶ σὺ ἐν αἵματι διαθήκης σου ἐξαπέστειλας δεσμίους σου ἐκ λάκκου οὐκ ἔχοντος ὕδωρ.",
+        "SYN": "А что до тебя, ради крови завета твоего Я освобожу узников твоих изо рва, в котором нет воды.",
+        "NEO": "Pour toi aussi, à cause du sang de ton alliance+ 9:11 11. \\+it De l’alliance\\+it* contractée entre Dieu et Israël au Sinaï, et scellée par le sang d’une victime (Exo 24, 8). — \\+it La fosse sans eau\\+it* figure le pays de la captivité où l’on souffre sans périr.*, je retirerai tes captifs de la fosse sans eau.",
+        "NAB": "As for you, for the blood of your covenant with me, I will bring forth your prisoners from the dungeon.",
+        "VAT_ES": "En cuanto a ti, por la sangre de alianza yo libraré a tus cautivos de la fosa sin agua.",
+        "CEI": "Quanto a te, per il sangue dell'alleanza con te, estrarrò i tuoi prigionieri dal pozzo senz'acqua."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "שׁ֚וּבוּ לְ/בִצָּר֔וֹן אֲסִירֵ֖י הַ/תִּקְוָ֑ה גַּם הַ/יּ֕וֹם מַגִּ֥יד מִשְׁנֶ֖ה אָשִׁ֥יב לָֽ/ךְ׃",
+        "LXX": "καθήσεσθε ἐν ὀχυρώμασιν δέσμιοι τῆς συναγωγῆς, καὶ ἀντὶ μιᾶς ἡμέρας παροικεσίας σου διπλᾶ ἀνταποδώσω σοι·",
+        "SYN": "Возвращайтесь на твердыню вы, пленники надеющиеся! Что теперь возвещаю, воздам тебе вдвойне.",
+        "NEO": "Revenez au lieu fort+ 9:12 \\+it Au lieu fort\\+it*, au pays d’Israël.*, captifs d’espérance ! Aujourd’hui encore je le déclare : je te rendrai au double.",
+        "NAB": "In the return to the fortress of the waiting prisoners, This very day, I will return you double for your exile.",
+        "VAT_ES": "Vuelvan a la plaza fuerte, cautivos llenos de esperanza. Sí, hoy mismo lo declaro: yo te daré una doble compensación.",
+        "CEI": "Ritornate alla cittadella, prigionieri della speranza! Ve l'annunzio fino da oggi: vi ripagherò due volte."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כִּֽי דָרַ֨כְתִּי לִ֜/י יְהוּדָ֗ה קֶ֚שֶׁת מִלֵּ֣אתִי אֶפְרַ֔יִם וְ/עוֹרַרְתִּ֤י בָנַ֨יִ/ךְ֙ צִיּ֔וֹן עַל בָּנַ֖יִ/ךְ יָוָ֑ן וְ/שַׂמְתִּ֖י/ךְ כְּ/חֶ֥רֶב גִּבּֽוֹר׃",
+        "LXX": "διότι ἐνέτεινά σε, Ἰούδα, ἐμαυτῷ τόξον, ἔπλησα τὸν Ἐφράιμ, καὶ ἐξεγερῶ τὰ τέκνα σου, Σειών, ἐπὶ τὰ τέκνα τῶν Ἑλλήνων, καὶ ψηλαφήσω σε ὡς ῥομφαίαν μαχητοῦ·",
+        "SYN": "Ибо как лук Я натяну Себе Иуду и наполню лук Ефремом, и воздвигну сынов твоих, Сион, против сынов твоих, Иония, и сделаю тебя мечом ратоборца.",
+        "NEO": "Car je bande pour moi Juda, et sur l’arc je place Ephraïm+ 9:13 13. Juda et Ephraïm sont un arc et une flèche dans la main de Dieu, qui s’en servira pour vaincre les païens. — \\+it Javan\\+it*, les Grecs.* ; j’exciterai tes fils, ô Sion, contre tes fils, ô Javan, et je ferai de toi comme une épée de vaillant.",
+        "NAB": "For I will bend Judah as my bow, I will arm myself with Ephraim; I will arouse your sons, O Zion, (against your sons, O Yavan,) and I will use you as a warrior's sword.",
+        "VAT_ES": "Porque yo tendí mi arco: es Judá; lo armé con Efraím. Lanzaré a tus hijos, Sión, contra tus hijos, Javán; te empuñaré como una espada de guerrero.",
+        "CEI": "Tendo Giuda come mio arco, Efraim come un arco teso; ecciterò i tuoi figli, Sion, contro i tuoi figli, Grecia, ti farò come spada di un eroe."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַֽ/יהוָה֙ עֲלֵי/הֶ֣ם יֵֽרָאֶ֔ה וְ/יָצָ֥א כַ/בָּרָ֖ק חִצּ֑/וֹ וַֽ/אדֹנָ֤/י יְהֹוִה֙ בַּ/שּׁוֹפָ֣ר יִתְקָ֔ע וְ/הָלַ֖ךְ בְּ/סַעֲר֥וֹת תֵּימָֽן׃",
+        "LXX": "καὶ Κύριος ἔσται ἐπ’ αὐτούς, καὶ ἐξελεύσεται ὡς ἀστραπὴ βολίς, καὶ Κύριος Παντοκράτωρ ἐν σάλπιγγι σαλπιεῖ καὶ πορεύσεται ἐν σάλῳ ἀπειλῆς αὐτοῦ.",
+        "SYN": "И явится над ними Господь, и как молния вылетит стрела Его, и возгремит Господь Бог трубою, и шествовать будет в бурях полуденных.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** apparaîtra au-dessus d’eux, sa flèche partira comme l’éclair ; le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** sonnera de la trompette, et s’avancera dans les ouragans du midi.",
+        "NAB": "The LORD shall appear over them, and his arrow shall shoot forth as lightning; The LORD God shall sound the trumpet, and come in a storm from the south.",
+        "VAT_ES": "El Señor aparecerá sobre ellos, y su flecha partirá como el rayo. El Señor hará sonar la trompeta y avanzará en los torbellinos del sur.",
+        "CEI": "Allora il Signore comparirà contro di loro, come fulmine guizzeranno le sue frecce; il Signore darà fiato alla tromba e marcerà fra i turbini del mezzogiorno."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "יְהוָ֣ה צְבָאוֹת֮ יָגֵ֣ן עֲלֵי/הֶם֒ וְ/אָכְל֗וּ וְ/כָֽבְשׁוּ֙ אַבְנֵי קֶ֔לַע וְ/שָׁת֥וּ הָמ֖וּ כְּמוֹ יָ֑יִן וּ/מָֽלְאוּ֙ כַּ/מִּזְרָ֔ק כְּ/זָוִיּ֖וֹת מִזְבֵּֽחַ׃",
+        "LXX": "Κύριος Παντοκράτωρ ὑπερασπιεῖ αὐτούς· καὶ καταναλώσουσιν αὐτούς, καὶ καταχώσουσιν αὐτοὺς ἐν λίθοις σφενδόνης, καὶ ἐκπίονται αὐτοὺς ὡς οἶνον, καὶ πλήσουσιν τὰς φιάλας ὡς θυσιαστήριον.",
+        "SYN": "Господь Саваоф будет защищать их, и они будут истреблять и попирать пращные камни, и будут пить и шуметь как бы от вина, и наполнятся как жертвенные чаши, как углы жертвенника.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** des armées les protégera ; Ils dévoreront+ 9:15 \\+it Ils dévoreront… ils boitant… pris de vin\\+it*. Texte difficile. — La coupe pleine du sang des victimes, dont on aspergeait les quatre cornes ou angles saillants de l’autel des holocaustes.*, ils fouleront aux pieds les pierres de fronde ; Ils boiront, ils se démèneront comme pris de vin, et ils seront remplis comme la coupe des sacrifices, comme les cornes de l’autel.",
+        "NAB": "The LORD of hosts shall be a shield over them, they shall overcome sling stones and trample them underfoot; They shall drink blood like wine, till they are filled with it like libation bowls, like the corners of the altar.",
+        "VAT_ES": "El Señor de los ejércitos los escudará; ellos triunfarán y pisotearán las piedras de las hondas, beberán la sangre como si fuera vino, se llenarán como la copa de la aspersión, como los ángulos del altar.",
+        "CEI": "Il Signore degli eserciti li proteggerà: divoreranno e calpesteranno le pietre della fionda, berranno il loro sangue come vino, ne saranno pieni come bacini, come i corni dell'altare."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְֽ/הוֹשִׁיעָ֞/ם יְהוָ֧ה אֱלֹהֵי/הֶ֛ם בַּ/יּ֥וֹם הַ/ה֖וּא כְּ/צֹ֣אן עַמּ֑/וֹ כִּ֚י אַבְנֵי נֵ֔זֶר מִֽתְנוֹסְס֖וֹת עַל אַדְמָתֽ/וֹ׃",
+        "LXX": "καὶ σώσει αὐτοὺς Κύριος ὁ θεὸς αὐτῶν ἐν τῇ ἡμέρᾳ ἐκείνῃ, ὡς πρόβατα λαόν αὐτοῦ, διότι λίθοι ἅγιοι κυλίονται ἐπὶ τῆς γῆς αὐτοῦ.",
+        "SYN": "И спасет их Господь Бог их в тот день, как овец, народ Свой; ибо, подобно камням в венце, они воссияют на земле Его.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** leur Dieu sera leur salut en ce jour-là, le salut du troupeau qui est son peuple ; ils seront comme des pierres de diadème, qui brilleront dans son pays.+ 9:16 Autre verset difficile. — \\+it Comme des pierres de diadème\\+it*, comme les pierres précieuses qui ornent un diadème royal.*",
+        "NAB": "And the LORD, their God, shall save them on that day, his people, like a flock. For they are the jewels in a crown raised aloft over his land.",
+        "VAT_ES": "El Señor, su Dios, los salvará en aquel día, como al rebaño de su pueblo; como piedras de una diadema, resplandecerán sobre su tierra.",
+        "CEI": "Il Signore loro Dio in quel giorno salverà come un gregge il suo popolo, come gemme di un diadema brilleranno sulla sua terra."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כִּ֥י מַה טּוּב֖/וֹ וּ/מַה יָפְי֑/וֹ דָּגָן֙ בַּֽחוּרִ֔ים וְ/תִיר֖וֹשׁ יְנוֹבֵ֥ב בְּתֻלֽוֹת׃",
+        "LXX": "ὅτι εἴ τι ἀγαθὸν αὐτοῦ, καὶ εἴ τι καλὸν αὐτοῦ, σῖτος νεανίσκοις, καὶ οἶνος εὐωδιάζων εἰς παρθένους.",
+        "SYN": "О, как велика благость его и какая красота его! Хлеб одушевит язык у юношей и вино - у отроковиц!",
+        "NEO": "Quelle prospérité, quelle beauté que la leur ! Le froment fera croître les jeunes gens, et le vin nouveau les vierges.",
+        "NAB": "For what wealth is theirs, and what beauty! grain that makes the youths flourish, and new wine, the maidens!",
+        "VAT_ES": "&iexcl;Qué felicidad y qué hermosura! El trigo dará vigor a los jóvenes y el vino nuevo a las jóvenes.",
+        "CEI": "Quali beni, quale bellezza! Il grano darà vigore ai giovani e il vino nuovo alle fanciulle."
+      }
+    }
+  }
+}

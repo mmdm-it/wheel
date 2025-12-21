@@ -1,0 +1,813 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IERE_048",
+  "book_key": "IERE",
+  "sequence": 48,
+  "chapter_in": {
+    "MT": 48,
+    "VUL": 48,
+    "LXX": 48
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לְ/מוֹאָ֡ב כֹּֽה אָמַר֩ יְהוָ֨ה צְבָא֜וֹת אֱלֹהֵ֣י יִשְׂרָאֵ֗ל ה֤וֹי אֶל נְבוֹ֙ כִּ֣י שֻׁדָּ֔דָה הֹבִ֥ישָׁה נִלְכְּדָ֖ה קִרְיָתָ֑יִם הֹבִ֥ישָׁה הַ/מִּשְׂגָּ֖ב וָ/חָֽתָּה׃",
+        "LXX": "Καὶ ἐγένετο τῷ μηνὶ τῷ ἑβδόμῳ ἦλθεν Ἰσμαὴλ υἱὸς Ναθανίου υἱοῦ Ἐλασὰ ἀπὸ γένους τοῦ βασιλέως, καὶ δέκα ἄνδρες μετ’ αὐτοῦ, πρὸς Γοδολίαν εἰς Μασσηφά, καὶ ἔφαγον ἐκεῖ ἄρτον ἅμα.",
+        "VUL": "Ad Moab. [Hæc dicit Dominus exercituum, Deus Israël :/ Væ super Nabo, quoniam vastata est, et confusa !/ capta est Cariathaim, confusa est fortis, et tremuit./",
+        "SYN": "О Моаве так говорит Господь Саваоф, Бог Израилев: горе Нево! он опустошен; Кариафаим посрамлен и взят; Мизгав посрамлен и сокрушен.",
+        "NEO": "A Moab.",
+        "NAB": "Concerning Moab, thus says the LORD of hosts, the God of Israel: Woe to Nebo, it is laid waste; Kiriathaim is disgraced and captured, Disgraced and overthrown is the stronghold:",
+        "VAT_ES": "Esta es la palabra del Señor que llegó al profeta Jeremías, acerca de las naciones.",
+        "CEI": "Su Moab. Così dice il Signore degli eserciti, Dio di Israele: \"Guai a Nebo poiché è devastata, piena di vergogna e catturata è Kiriatàim; sente vergogna, è abbattuta la roccaforte."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אֵ֣ין עוֹד֮ תְּהִלַּ֣ת מוֹאָב֒ בְּ/חֶשְׁבּ֗וֹן חָשְׁב֤וּ עָלֶ֨י/הָ֙ רָעָ֔ה לְכ֖וּ וְ/נַכְרִיתֶ֣/נָּה מִ/גּ֑וֹי גַּם מַדְמֵ֣ן תִּדֹּ֔מִּי אַחֲרַ֖יִ/ךְ תֵּ֥לֶךְ חָֽרֶב׃",
+        "LXX": "καὶ ἀνέστη Ἰσμαὴλ καὶ οἱ δέκα ἄνδρες οἳ ἦσαν μετ’ αὐτοῦ, καὶ ἐπάταξαν τὸν Γοδολίαν, ὃν κατέστησεν βασιλεὺς Βαβυλῶνος ἐπὶ τῆς γῆς,",
+        "VUL": "Non est ultra exsultatio in Moab contra Hesebon :/ cogitaverunt malum : Venite, et disperdamus eam de gente./ Ergo silens conticesces, sequeturque te gladius./",
+        "SYN": "Нет более славы Моава; в Есевоне замышляют против него зло: \"пойдем, истребим его из числа народов\". И ты, Мадмена, погибнешь; меч следует за тобою.",
+        "NEO": "elle n’est plus, la gloire de Moab ! A Hésebon on médite contre lui le mal : Allons et exterminons-le d’entre les nations ! Toi aussi, Madmen, tu seras réduite au silence, l’épée marche derrière toi.",
+        "NAB": "Moab's glory is no more. Evil they plan against Heshbon: \"Come, let us put an end to her as a people.\" You, too, Madmen, shall be reduced to silence; behind you stalks the sword.",
+        "VAT_ES": "Para Egipto, concerniente al ejército del faraón Necao, rey de Egipto, que se encontraba junto al río Eufrates, en Carquemis, y a quien Nabucodonosor, rey de Babilonia, derrotó en el cuarto año de Joaquím hijo de Josías, rey de Judá.",
+        "CEI": "Non esiste più la fama di Moab; in Chesbòn tramano contro di essa: Venite ed eliminiamola dalle nazioni. Anche tu, Madmèn, sarai demolita, la spada ti inseguirà."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "ק֥וֹל צְעָקָ֖ה מֵ/חֹֽרוֹנָ֑יִם שֹׁ֖ד וָ/שֶׁ֥בֶר גָּדֽוֹל׃",
+        "LXX": "καὶ πάντας τοὺς Ἰουδαίους τοὺς ὄντας μετ’ αὐτοῦ ἐν Μασσηφὰ καὶ πάντας τοὺς Χαλδαίους τοὺς εὑρεθέντας ἐκεῖ.",
+        "VUL": "Vox clamoris de Oronaim, vastitas et contritio magna./",
+        "SYN": "Слышен вопль от Оронаима, опустошение и разрушение великое.",
+        "NEO": "Des cris partent de Horonaïm ; dévastation et grande ruine !",
+        "NAB": "Listen! a cry from Horonaim of ruin and great destruction!",
+        "VAT_ES": "&iexcl;Apronten el escudo y el broquel, y avancen para el combate!",
+        "CEI": "Una voce, un grido da Coronàim: Devastazione e rovina grande!"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "נִשְׁבְּרָ֖ה מוֹאָ֑ב הִשְׁמִ֥יעוּ זְּעָקָ֖ה צעורי/ה צְעִירֶֽי/הָ׃",
+        "LXX": "καὶ ἐγένετο τῇ ἡμέρᾳ τῇ δευτέρᾳ πατάξαντος αὐτοῦ τὸν Γοδολίαν, καὶ ἄνθρωπος οὐκ ἔγνω,",
+        "VUL": "Contrita est Moab : annuntiate clamorem parvulis ejus./",
+        "SYN": "Сокрушен Моав; вопль подняли дети его.",
+        "NEO": "Moab est brisé ; ses petits enfants font entendre des cris.",
+        "NAB": "Moab is crushed, their outcry is heard in Zoar.",
+        "VAT_ES": "&iexcl;Ensillen los caballos y que monten los jinetes! &iexcl;Formen con los cascos puestos, bruñan las lanzas, vistan las corazas!",
+        "CEI": "Abbattuto è Moab, le grida si fanno sentire fino in Zoar."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּ֚י מַעֲלֵ֣ה ה/לחות הַ/לּוּחִ֔ית בִּ/בְכִ֖י יַֽעֲלֶה בֶּ֑כִי כִּ֚י בְּ/מוֹרַ֣ד חוֹרֹנַ֔יִם צָרֵ֥י צַֽעֲקַת שֶׁ֖בֶר שָׁמֵֽעוּ׃",
+        "LXX": "καὶ ἤλθοσαν ἄνδρες ἀπὸ Συχὲμ καὶ ἀπὸ Σαλὴμ καὶ ἀπὸ Σαμαρίας, ὀγδοήκοντα ἄνδρες, ἐξυρημένοι πώγωνας καὶ διερρηγμένοι τὰ ἱμάτια καὶ κοπτόμενοι, καὶ μάννα καὶ λίβανος ἐν χερσὶν αὐτῶν τοῦ εἰσενεγκεῖν εἰς οἶκον Κυρίου.",
+        "VUL": "Per ascensum enim Luith/ plorans ascendet in fletu,/ quoniam in descensu Oronaim/ hostes ululatum contritionis audierunt./",
+        "SYN": "На восхождении в Лухит плач за плачем поднимается; и на спуске с Оронаима неприятель слышит вопль о разорении.",
+        "NEO": "Oui ! à la montée de Luith il y a des pleurs, on la gravit en pleurant ; oui ! à la descente de Horonaïm, on entend les cris de détresse.",
+        "NAB": "The ascent of Luhith they climb weeping; On the descent to Horonaim the cry of destruction is heard.",
+        "VAT_ES": "Pero &iquest;qué es lo que veo? &iexcl;Están aterrados, retroceden! Sus guerreros son derrotados, huyen a la desbandada, sin mirar para atrás. &iexcl;Cunde el terror por todas partes! –oráculo del Señor–.",
+        "CEI": "Su per la salita di Luchìt vanno piangendo, giù per la discesa di Coronàim si ode un grido di disfatta."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "נֻ֖סוּ מַלְּט֣וּ נַפְשְׁ/כֶ֑ם וְ/תִֽהְיֶ֕ינָה כַּ/עֲרוֹעֵ֖ר בַּ/מִּדְבָּֽר׃",
+        "LXX": "καὶ ἐξῆλθεν εἰς ἀπάντησιν αὐτοῖς Ἰσμαήλ, αὐτοὶ ἐπορεύοντο καὶ ἔκλαιον, καὶ εἶπεν αὐτοῖς Εἰσέλθετε πρὸς Γοδολίαν.",
+        "VUL": "Fugite, salvate animas vestras,/ et eritis quasi myricæ in deserto :/",
+        "SYN": "Бегите, спасайте жизнь свою, и будьте подобны обнаженному дереву в пустыне.",
+        "NEO": "Fuyez, sauvez vos vies ! Qu’elles soient comme une bruyère dans la lande !",
+        "NAB": "\"Flee, save your lives, to survive like the wild ass in the desert!\"",
+        "VAT_ES": "El más ágil no puede huir ni escapa el más valiente: al norte, a orillas del Eufrates, ellos tropiezan y caen.",
+        "CEI": "Fuggite, salvate la vostra vita! Siate come l'asino selvatico nel deserto."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּ֠י יַ֣עַן בִּטְחֵ֤/ךְ בְּ/מַעֲשַׂ֨יִ/ךְ֙ וּ/בְ/א֣וֹצְרוֹתַ֔יִ/ךְ גַּם אַ֖תְּ תִּלָּכֵ֑דִי וְ/יָצָ֤א כמיש כְמוֹשׁ֙ בַּ/גּוֹלָ֔ה כֹּהֲנָ֥י/ו וְ/שָׂרָ֖י/ו יחד יַחְדָּֽיו׃",
+        "LXX": "καὶ ἐγένετο εἰσελθόντων αὐτῶν εἰς τὸ μέσον τῆς πόλεως ἔσφαξεν αὐτοὺς εἰς τὸ φρέαρ.",
+        "VUL": "pro eo enim quod habuisti fiduciam/ in munitionibus tuis et in thesauris tuis,/ tu quoque capieris :/ et ibit Chamos in transmigrationem,/ sacerdotes ejus et principes ejus simul./",
+        "SYN": "Так как ты надеялся на дела твои и на сокровища твои, то и ты будешь взят, и Хамос пойдет в плен вместе со своими священниками и своими князьями.",
+        "NEO": "Car, puisque tu as mis ta confiance en tes ouvrages et en tes trésors, toi aussi tu seras conquis ; et Chamos ira en exil, avec ses prêtres et ses princes, tous ensemble.",
+        "NAB": "Because you trusted in your works and your treasures, you also shall be captured. Chemosh shall go into exile, his priests and princes with him.",
+        "VAT_ES": "&iquest;Quién es ese que sube como el Nilo y cuyas aguas se encrespan como los ríos?",
+        "CEI": "Poiché hai posto la fiducia nelle tue fortezze e nei tuoi tesori, anche tu sarai preso e Camos andrà in esilio insieme con i suoi sacerdoti e con i suoi capi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/יָבֹ֨א שֹׁדֵ֜ד אֶל כָּל עִ֗יר וְ/עִיר֙ לֹ֣א תִמָּלֵ֔ט וְ/אָבַ֥ד הָ/עֵ֖מֶק וְ/נִשְׁמַ֣ד הַ/מִּישֹׁ֑ר אֲשֶׁ֖ר אָמַ֥ר יְהוָֽה׃",
+        "LXX": "καὶ δέκα ἄνδρες εὑρέθησαν ἐκεῖ καὶ εἶπαν τῷ Ἰσμαήλ Μὴ ἀνέλῃς ἡμᾶς, ὅτι εἰσὶν ἡμῖν θησαυροὶ ἐν ἀγρῷ, πυροὶ καὶ κριθαί, μέλι καὶ ἔλαιον· καὶ παρῆλθεν καὶ οὐκ ἀνεῖλεν αὐτοὺς ἐν μέσῳ τῶν ἀδελφῶν αὐτῶν.",
+        "VUL": "Et veniet prædo ad omnem urbem,/ et urbs nulla salvabitur :/ et peribunt valles,/ et dissipabuntur campestria,/ quoniam dixit Dominus :/",
+        "SYN": "И придет опустошитель на всякий город, и город не уцелеет; и погибнет долина, и опустеет равнина, как сказал Господь.",
+        "NEO": "Le dévastateur viendra contre toutes les villes, et pas une ville n’échappera ; la vallées sera ruinée, et le plateau saccagé, comme l’a dit \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The destroyer comes upon every city, not a city escapes; Ruined is the valley, wasted the plain, as the LORD has said.",
+        "VAT_ES": "Es Egipto el que sube como el Nilo y cuyas aguas se encrespan como los ríos. El decía: «Subiré, cubriré la tierra, haré perecer la ciudad y sus habitantes.",
+        "CEI": "Il devastatore verrà contro ogni città; nessuna città potrà scampare. Sarà devastata la valle e la pianura desolata, come dice il Signore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "תְּנוּ צִ֣יץ לְ/מוֹאָ֔ב כִּ֥י נָצֹ֖א תֵּצֵ֑א וְ/עָרֶ֨י/הָ֙ לְ/שַׁמָּ֣ה תִֽהְיֶ֔ינָה מֵ/אֵ֥ין יוֹשֵׁ֖ב בָּ/הֵֽן׃",
+        "LXX": "καὶ τὸ φρέαρ εἰς ὃ ἔριψεν ἐκεῖ Ἰσμαὴλ πάντας οὓς ἐπάταξεν, φρέαρ μέγα τοῦτό ἐστιν ὃ ἐποίησεν ὁ βασιλεὺς Ἀσὰ ἀπὸ προσώπου Βαασὰ βασιλέως Ἰσραήλ· τοῦτο ἐνέπλησεν Ἰσμαὴλ τραυματιῶν.",
+        "VUL": "Date florem Moab, quia florens egredietur :/ et civitates ejus desertæ erunt, et inhabitabiles./",
+        "SYN": "Дайте крылья Моаву, чтобы он мог улететь; города его будут пустынею, потому что некому будет жить в них.",
+        "NEO": "Donnez des ailes à Moab, car il faut qu’il s’envole ; ses villes seront dévastées, sans qu’il y ait d’habitant.",
+        "NAB": "Set up a memorial for Moab, for it is an utter wasteland; Its cities are turned into ruins where no one dwells.",
+        "VAT_ES": "&iexcl;A la carga, corceles, avancen enfurecidos los carros, salgan los valientes, gente de Cus y de Put que empuñan el escudo, y lidios que tensan el arco!».",
+        "CEI": "Date ali a Moab, perché dovrà prendere il volo. Le sue città diventeranno un deserto, perché non vi sarà alcun abitante."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אָר֗וּר עֹשֶׂ֛ה מְלֶ֥אכֶת יְהוָ֖ה רְמִיָּ֑ה וְ/אָר֕וּר מֹנֵ֥עַ חַרְבּ֖/וֹ מִ/דָּֽם׃",
+        "LXX": "καὶ ἀπέστρεψεν Ἰσμαὴλ πάντα τὸν λαὸν τὸν καταλειφθέντα εἰς Μασσηφὰ καὶ τὰς θυγατέρας τοῦ βασιλέως, ἃς παρεκατέθετο ὁ ἀρχιμάγειρος τῷ Γοδολίᾳ υἱῷ Ἀχεικάμ, καὶ ᾤχετο εἰς τὸ πέραν υἱῶν Ἀμμών.",
+        "VUL": "Maledictus qui facit opus Domini fraudulenter,/ et maledictus qui prohibet gladium suum a sanguine./",
+        "SYN": "Проклят, кто дело Господне делает небрежно, и проклят, кто удерживает меч Его от крови!",
+        "NEO": "Maudit soit celui qui fait mollement l’œuvre du Seigneur ! Maudit celui qui refuse le sang à son épée !",
+        "NAB": "(Cursed be he who does the LORD'S work remissly, cursed he who holds back his sword from blood.)",
+        "VAT_ES": "Pero ese día es para el Señor de los ejércitos un día de venganza para vengarse de sus adversarios. La espada devora y se sacia, se abreva de su sangre. Porque el Señor de los ejércitos tiene un sacrificio en el país del Norte, junto al río Eufrates.",
+        "CEI": "Maledetto chi compie fiaccamente l'opera del Signore, maledetto chi trattiene la spada dal sangue!"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "שַׁאֲנַ֨ן מוֹאָ֜ב מִ/נְּעוּרָ֗י/ו וְ/שֹׁקֵ֥ט הוּא֙ אֶל שְׁמָרָ֔י/ו וְ/לֹֽא הוּרַ֤ק מִ/כְּלִי֙ אֶל כֶּ֔לִי וּ/בַ/גּוֹלָ֖ה לֹ֣א הָלָ֑ךְ עַל כֵּ֗ן עָמַ֤ד טַעְמ/וֹ֙ בּ֔/וֹ וְ/רֵיח֖/וֹ לֹ֥א נָמָֽר׃",
+        "LXX": "καὶ ἤκουσεν Ἰωανὰν υἱὸς Καρῆε καὶ πάντες οἱ ἡγεμόνες τῆς δυνάμεως οἱ μετ’ αὐτοῦ πάντα τὰ κακὰ ἃ ἐποίησεν Ἰσμαήλ,",
+        "VUL": "Fertilis fuit Moab ab adolescentia sua,/ et requievit in fæcibus suis :/ nec transfusus est de vase in vas,/ et in transmigrationem non abiit :/ idcirco permansit gustus ejus in eo,/ et odor ejus non est immutatus./",
+        "SYN": "Моав от юности своей был в покое, сидел на дрожжах своих и не был переливаем из сосуда с сосуд, и в плен не ходил; оттого оставался в нем вкус его, и запах его не изменялся.",
+        "NEO": "Moab a été tranquille depuis sa jeunesse ; il a reposé sur sa lie ; il n’a pas été vidé d’un vase dans un autre, et il n’est pas allé en captivité. Aussi son goût lui est-il resté, et son parfum ne s’est pas altéré.",
+        "NAB": "Moab has been tranquil from his youth, has rested upon his lees; He was not poured from one flask to another, he went not into exile. Thus he kept his taste, and his scent was not lost.",
+        "VAT_ES": "&iexcl;Sube a Galaad, recoge bálsamo, virgen, hija de Egipto! En vano multiplicas los remedios, tu llaga no cicatriza.",
+        "CEI": "Moab era tranquillo fin dalla giovinezza, riposava come vino sulla sua feccia, non è stato travasato di botte in botte, né è mai andato in esilio; per questo gli è rimasto il suo sapore, il suo profumo non si è alterato."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "לָ/כֵ֞ן הִנֵּ֖ה יָמִ֤ים בָּאִים֙ נְאֻם יְהוָ֔ה וְ/שִׁלַּחְתִּי ל֥/וֹ צֹעִ֖ים וְ/צֵעֻ֑/הוּ וְ/כֵלָ֣י/ו יָרִ֔יקוּ וְ/נִבְלֵי/הֶ֖ם יְנַפֵּֽצוּ׃",
+        "LXX": "καὶ ἤγαγον ἅπαν τὸ στρατόπεδον αὐτῶν καὶ ᾤχοντο πολεμεῖν αὐτόν, καὶ εὗρον αὐτὸν ἐπὶ ὕδατος πολλοῦ ἐν Γαβαών,",
+        "VUL": "Propterea ecce dies veniunt, dicit Dominus,/ et mittam ei ordinatores et stratores laguncularum :/ et sternent eum, et vasa ejus exhaurient,/ et lagunculas eorum collident./",
+        "SYN": "Посему вот, приходят дни, говорит Господь, когда Я пришлю к нему переливателей, которые перельют его и опорожнят сосуды его, и разобьют кувшины его.",
+        "NEO": "C’est pourquoi voici que des jours viennent, — oracle \\+w Yahweh|strong=\"H3068\"\\+w**, où je lui enverrai des transvaseurs qui le transvaseront ; ils videront ses vases, et ils briseront ses cruches.",
+        "NAB": "Hence, the days shall come, says the LORD, when I will send him coopers to turn him over; they shall empty his flasks and break his jars.",
+        "VAT_ES": "Las naciones han conocido tu ignominia, la tierra está llena de tus gritos, porque un valiente tropieza contra el otro y caen los dos juntos.",
+        "CEI": "Per questo, ecco, giorni verranno - dice il Signore - nei quali gli manderò travasatori a travasarlo, vuoteranno le sue botti e frantumeranno i suoi otri."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וּ/בֹ֥שׁ מוֹאָ֖ב מִ/כְּמ֑וֹשׁ כַּ/אֲשֶׁר בֹּ֨שׁוּ֙ בֵּ֣ית יִשְׂרָאֵ֔ל מִ/בֵּ֥ית אֵ֖ל מִבְטֶחָֽ/ם׃",
+        "LXX": "καὶ ἐγένετο ὅτε εἶδεν πᾶς ὁ λαός ὁ μετὰ Ἰσμαὴλ τὸν Ἰωανὰν καὶ τοὺς ἡγεμόνας τῆς δυνάμεως τῆς μετ’ αὐτοῦ,",
+        "VUL": "Et confundetur Moab a Chamos/ sicut confusa est domus Israël a Bethel,/ in qua habebat fiduciam./",
+        "SYN": "И постыжен будет Моав ради Хамоса, как дом Израилев постыжен был ради Вефиля, надежды своей.",
+        "NEO": "Et Moab aura honte de Chamos, comme la maison d’Israël a eu honte de Béthel, en qui était sa confiance.",
+        "NAB": "Chemosh shall disappoint Moab, as Israel was disappointed by Bethel in which they trusted.",
+        "VAT_ES": "Palabra que el Señor dirigió al profeta Jeremías, cuando Nabucodonosor, rey de Babilonia, llegó para atacar al país de Egipto.",
+        "CEI": "Moab si vergognerà di Camos come la casa di Israele si è vergognata di Betel, oggetto della sua fiducia."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אֵ֚יךְ תֹּֽאמְר֔וּ גִּבּוֹרִ֖ים אֲנָ֑חְנוּ וְ/אַנְשֵׁי חַ֖יִל לַ/מִּלְחָמָֽה׃",
+        "LXX": "καὶ ἀνέστρεψαν πρὸς Ἰωανάν.",
+        "VUL": "Quomodo dicitis : Fortes sumus,/ et viri robusti ad præliandum ?/",
+        "SYN": "Как вы говорите: \"мы люди храбрые и крепкие для войны\"?",
+        "NEO": "Comment pouvez-vous dire : « Nous sommes des guerriers, des hommes vaillants au combat ? »",
+        "NAB": "How can you say, \"We are heroes, men valiant in war\"?",
+        "VAT_ES": "&iexcl;Anúncienlo en Egipto, proclámenlo en Nigdol, háganlo oír en Nof y Tafnis! Digan: &iexcl;De pie, prepárate, porque la espada devora a tu alrededor!",
+        "CEI": "Come potete dire: Noi siamo uomini prodi e uomini valorosi per la battaglia?"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "שֻׁדַּ֤ד מוֹאָב֙ וְ/עָרֶ֣י/הָ עָלָ֔ה וּ/מִבְחַ֥ר בַּֽחוּרָ֖י/ו יָרְד֣וּ לַ/טָּ֑בַח נְאֻ֨ם הַ/מֶּ֔לֶךְ יְהוָ֥ה צְבָא֖וֹת שְׁמֽ/וֹ׃",
+        "LXX": "καὶ Ἰσμαὴλ ἐσώθη σὺν ὀκτὼ ἀνθρώποις, καὶ ᾤχετο πρὸς τοὺς υἱοὺς Ἀμμών.",
+        "VUL": "Vastata est Moab, et civitates illius succiderunt,/ et electi juvenes ejus descenderunt in occisionem, ait Rex :/ Dominus exercituum nomen ejus./",
+        "SYN": "Опустошен Моав, и города его горят, и отборные юноши его пошли на заклание, говорит Царь, - Господь Саваоф имя Его.",
+        "NEO": "Moab est ravagé, ses villes montent en fumée, l’élite de ses jeunes gens descend pour la boucherie ; — oracle du roi, dont le nom est \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "The ravager of Moab and his cities advances, the flower of his youth goes down to be slaughtered, says the King, the LORD of hosts by name.",
+        "VAT_ES": "&iquest;Por qué huye Apis, por qué tu Toro no ha resistido? &iexcl;El Señor lo ha atropellado!",
+        "CEI": "Il devastatore di Moab sale contro di lui, i suoi giovani migliori scendono al macello - dice il re il cui nome è Signore degli eserciti."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "קָר֥וֹב אֵיד מוֹאָ֖ב לָ/ב֑וֹא וְ/רָ֣עָת֔/וֹ מִהֲרָ֖ה מְאֹֽד׃",
+        "LXX": "καὶ ἔλαβεν Ἰωανὰν καὶ πάντες οἱ ἡγεμόνες τῆς δυνάμεως οἱ μετ’ αὐτοῦ πάντας τοὺς καταλοίπους τοῦ λαοῦ οὓς ἀπέστρεψεν ἀπὸ Ἰσμαήλ, δυνατοὺς ἄνδρας ἐν πολέμῳ, καὶ τὰς γυναῖκας καὶ τὰ λοιπὰ καὶ τοὺς εὐνούχους οὓς ἀπέστρεψεν ἀπὸ Γαβαών,",
+        "VUL": "Prope est interitus Moab ut veniat,/ et malum ejus velociter accurret nimis./",
+        "SYN": "Близка погибель Моава, и сильно спешит бедствие его.",
+        "NEO": "La ruine de Moab approche, son malheur vient en grande hâte.",
+        "NAB": "Near at hand is Moab's ruin, his disaster hastens apace.",
+        "VAT_ES": "Tu muchedumbre tropieza y cae, y se dicen unos a otros: «&iexcl;Arriba, volvamos a nuestro pueblo, a nuestra tierra natal, lejos de la espada destructora!».",
+        "CEI": "È vicina la rovina di Moab, la sua sventura avanza in gran fretta."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "נֻ֤דוּ ל/וֹ֙ כָּל סְבִיבָ֔י/ו וְ/כֹ֖ל יֹדְעֵ֣י שְׁמ֑/וֹ אִמְר֗וּ אֵיכָ֤ה נִשְׁבַּר֙ מַטֵּה עֹ֔ז מַקֵּ֖ל תִּפְאָרָֽה׃",
+        "LXX": "καὶ ᾤχοντο καὶ ἐκάθισαν ἐν Γαβηρωχαμάα τὴν πρὸς Βηθλέεμ, τοῦ πορευθῆναι εἰς Αἴγυπτον",
+        "VUL": "Consolamini eum, omnes qui estis in circuitu ejus :/ et universi qui scitis nomen ejus, dicite :/ Quomodo confracta est virga fortis,/ baculus gloriosus ?/",
+        "SYN": "Пожалейте о нем все соседи его и все, знающие имя его, скажите: \"как сокрушен жезл силы, посох славы!\"",
+        "NEO": "Consolez-le, vous tous, ses voisins, et vous tous qui connaissez son nom, dites : « Comment a été brisé un bâton si fort, un sceptre si magnifique ? »",
+        "NAB": "Mourn for him, all you his neighbors, all you who knew him well! Say: How the strong staff is broken, the glorious rod!",
+        "VAT_ES": "Den este nombre al Faraón, rey de Egipto: «Puro alboroto, pero a destiempo».",
+        "CEI": "Compiangetelo, voi tutti suoi vicini e tutti voi che conoscete il suo nome; dite: Come si è spezzata la verga robusta, quello scettro magnifico?"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "רְדִ֤י מִ/כָּבוֹד֙ ישבי וּ/שְׁבִ֣י בַ/צָּמָ֔א יֹשֶׁ֖בֶת בַּת דִּיב֑וֹן כִּֽי שֹׁדֵ֤ד מוֹאָב֙ עָ֣לָה בָ֔/ךְ שִׁחֵ֖ת מִבְצָרָֽיִ/ךְ׃",
+        "LXX": "ἀπὸ προσώπου τῶν Χαλδαίων, ὅτι ἐφοβήθησαν ἀπὸ προσώπου αὐτῶν· ὅτι ἐπάταξεν Ἰσμαὴλ τὸν Γοδολίαν, ὃν κατέστησεν βασιλεὺς Βαβυλῶνος ἐν τῇ γῇ.",
+        "VUL": "Descende de gloria, et sede in siti,/ habitatio filiæ Dibon,/ quoniam vastator Moab ascendit ad te :/ dissipavit munitiones tuas./",
+        "SYN": "Сойди с высоты величия и сиди в жажде, дочь - обитательница Дивона, ибо опустошитель Моава придет к тебе и разорит укрепления твои.",
+        "NEO": "Descends de ta gloire et assieds-toi sur la terre aride, habitante, fille de Dibon ; car le dévastateur de Moab est monté contre toi, il a renversé tes remparts.",
+        "NAB": "Come down from glory, sit on the ground, you that dwell in Dibon; Moab's ravager has come up against you, he has ruined your strongholds.",
+        "VAT_ES": "&iexcl;Juro por mi vida –oráculo del Rey cuyo nombre es Señor de los ejércitos– que alguien vendrá, como el Tabor entre las montañas y como el Carmelo sobre el mar!",
+        "CEI": "Scendi dalla tua gloria, siedi sull'arido suolo, o popolo che abiti a Dibon; poiché il devastatore di Moab è salito contro di te, egli ha distrutto le tue fortezze."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "אֶל דֶּ֛רֶךְ עִמְדִ֥י וְ/צַפִּ֖י יוֹשֶׁ֣בֶת עֲרוֹעֵ֑ר שַׁאֲלִי נָ֣ס וְ/נִמְלָ֔טָה אִמְרִ֖י מַה נִּֽהְיָֽתָה׃",
+        "VUL": "In via sta, et prospice,/ habitatio Aroër :/ interroga fugientem,/ et ei qui evasit dic : Quid accidit ?/",
+        "SYN": "Стань у дороги и смотри, обитательница Ароера, спрашивай бегущего и спасающегося: \"что сделалось?\"",
+        "NEO": "Tiens-toi sur le chemin, et observe, habitante d’Aroër ; interroge celui qui fuit et celle qui s’échappe ; dis : « Qu’est-il arrivé ? —",
+        "NAB": "Stand by the wayside, watch closely, you that dwell in Aroer; Ask the man who flees, the woman who tries to escape: say to them, \"What has happened?\"",
+        "VAT_ES": "Prepara el equipaje para el destierro, hija que habitas en Egipto, porque Nof será una devastación, incendiada, despoblada.",
+        "CEI": "Stà sulla strada e osserva, tu che abiti in Aroer. Interroga il fuggiasco e lo scampato, domanda: Che cosa è successo?"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "הֹבִ֥ישׁ מוֹאָ֛ב כִּֽי חַ֖תָּה הילילי הֵילִ֣ילוּ ו/זעקי וּֽ/זְעָ֑קוּ הַגִּ֣ידוּ בְ/אַרְנ֔וֹן כִּ֥י שֻׁדַּ֖ד מוֹאָֽב׃",
+        "VUL": "Confusus est Moab, quoniam victus est./ Ululate, et clamate :/ annuntiate in Arnon,/ quoniam vastata est Moab,/",
+        "SYN": "Посрамлен Моав, ибо сокрушен; рыдайте и вопите, объявите в Арноне, что опустошен Моав.",
+        "NEO": "« Moab est confus, car il est renversé. Poussez des gémissements et des cris ! Annoncez sur l’Arnon que Moab est ravagé ! »",
+        "NAB": "Moab is disgraced, yes, destroyed, howl and cry out; Publish it at the Arnon, Moab is ruined!",
+        "VAT_ES": "Egipto era una ternera magnífica, un tábano del Norte la acomete.",
+        "CEI": "Moab prova vergogna, è in rovina; urlate, gridate, annunziate sull'Arnon che Moab è devastato."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וּ/מִשְׁפָּ֥ט בָּ֖א אֶל אֶ֣רֶץ הַ/מִּישֹׁ֑ר אֶל חֹל֥וֹן וְ/אֶל יַ֖הְצָ/ה וְ/עַל מופעת מֵיפָֽעַת׃",
+        "VUL": "et judicium venit ad terram campestrem,/ super Helon, et super Jasa,/ et super Mephaath,",
+        "SYN": "И суд пришел на равнины, на Халон и на Иаацу, и на Мофаф,",
+        "NEO": "Un jugement est venu sur le pays de la plaine, sur Hélon, sur Jasa, sur Méphaath,",
+        "NAB": "For judgment has come on the land of the plateau: on Holon, Jahzah, and Mephaath,",
+        "VAT_ES": "Hasta sus mercenarios, en medio de ella, eran como ternos cebados; pero ellos también retroceden, huyen todos juntos, no resisten. Porque les llega el día de su ruina, el tiempo en que tendrán que dar cuenta.",
+        "CEI": "È arrivato il giudizio per la regione dell'altipiano, per Colòn, per Iaaz e per Mefàat,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/עַל דִּיב֣וֹן וְ/עַל נְב֔וֹ וְ/עַל בֵּ֖ית דִּבְלָתָֽיִם׃",
+        "VUL": "et super Dibon,/ et super Nabo, et super domum Deblathaim,/",
+        "SYN": "и на Дивон и на Нево, и на Бет-Дивлафаим,",
+        "NEO": "sur Dibon, sur Nabo, sur Beth-Deblathaïm,",
+        "NAB": "on Dibon, Nebo, and Beth-diblathaim,",
+        "VAT_ES": "&iexcl;Escuchen! Son como una serpiente que silba, porque avanzan con ímpetu, llegan hasta ella con hachas como si fueran leñadores;",
+        "CEI": "per Dibon, per Nebo e per Bet-Diblatàim,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/עַ֧ל קִרְיָתַ֛יִם וְ/עַל בֵּ֥ית גָּמ֖וּל וְ/עַל בֵּ֥ית מְעֽוֹן׃",
+        "VUL": "et super Cariathaim, et super Bethgamul,/ et super Bethmaon,",
+        "SYN": "и на Кариафаим и на Бет-Гамул, и на Бет-Маон,",
+        "NEO": "sur Cariathaïm, sur Beth-Gamul, sur Beth-Maon,",
+        "NAB": "on Kiriathaim, Beth-gamul, and Beth-meon,",
+        "VAT_ES": "talan su bosque –oráculo del Señor– aunque era impenetrable. Porque son más numerosos que langostas y no se los puede contar.",
+        "CEI": "per Kiriatàim, per Bet-Gamùl e per Bet-Meòn,"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/עַל קְרִיּ֖וֹת וְ/עַל בָּצְרָ֑ה וְ/עַ֗ל כָּל עָרֵי֙ אֶ֣רֶץ מוֹאָ֔ב הָ/רְחֹק֖וֹת וְ/הַ/קְּרֹבֽוֹת׃",
+        "VUL": "et super Carioth,/ et super Bosra, et super omnes civitates terræ Moab,/ quæ longe et quæ prope sunt./",
+        "SYN": "и на Кериоф, и на Восор, и на все города земли Моавитской, дальние и ближние.",
+        "NEO": "sur Carioth, sur Bosra et sur toutes les villes du pays de Moab, éloignées et proches.",
+        "NAB": "on Kerioth and on Bozrah: on all the cities of Moab, far and near.",
+        "VAT_ES": "&iexcl;Está avergonzada la hija de Egipto, es entregada al pueblo del Norte!",
+        "CEI": "per Kiriòt e per Bozra, per tutte le città della regione di Moab, lontane e vicine."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "נִגְדְּעָה֙ קֶ֣רֶן מוֹאָ֔ב וּ/זְרֹע֖/וֹ נִשְׁבָּ֑רָה נְאֻ֖ם יְהוָֽה׃",
+        "VUL": "Abscissum est cornu Moab,/ et brachium ejus contritum est, ait Dominus./",
+        "SYN": "Отсечен рог Моава, и мышца его сокрушена, говорит Господь.",
+        "NEO": "La corne de Moab est abattue, et son bras est brisé, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Moab's strength is broken, his might is shattered, says the LORD.",
+        "VAT_ES": "El Señor de los ejércitos, el Dios de Israel, ha dicho: «Yo voy a castigar a Amón de No, al Faraón y a Egipto, a todos sus dioses y a sus reyes, al Faraón y a los que confían en él.",
+        "CEI": "È infranta la potenza di Moab ed è rotto il suo braccio."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "הַשְׁכִּירֻ֕/הוּ כִּ֥י עַל יְהוָ֖ה הִגְדִּ֑יל וְ/סָפַ֤ק מוֹאָב֙ בְּ/קִיא֔/וֹ וְ/הָיָ֥ה לִ/שְׂחֹ֖ק גַּם הֽוּא׃",
+        "VUL": "Inebriate eum, quoniam contra Dominum erectus est :/ et allidet manum Moab in vomitu suo,/ et erit in derisum etiam ipse./",
+        "SYN": "Напойте его пьяным, ибо он вознесся против Господа; и пусть Моав валяется в блевотине своей, и сам будет посмеянием.",
+        "NEO": "Enivrez-le ; car il s’est élevé contre \\+w Yahweh|strong=\"H3068\"\\+w** ! que Moab se vautre dans son vomissement, et qu’il devienne un objet de risée, lui aussi !",
+        "NAB": "Because he boasted against the LORD, make Moab drunk so that he retches and vomits, and he too becomes a laughingstock.",
+        "VAT_ES": "Los entregaré en manos de los que atentan contra su vida, en manos de Nabucodonosor, rey de Babilonia, y en manos de sus servidores. Pero después de esto, Egipto será habitado como en los tiempos antiguos –oráculo del Señor–».",
+        "CEI": "Inebriatelo, perché si è levato contro il Signore, e Moab si rotolerà nel vomito e anch'esso diventerà oggetto di scherno."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/אִ֣ם ל֣וֹא הַ/שְּׂחֹ֗ק הָיָ֤ה לְ/ךָ֙ יִשְׂרָאֵ֔ל אִם בְּ/גַנָּבִ֖ים נמצאה נִמְצָ֑א כִּֽי מִ/דֵּ֧י דְבָרֶ֥י/ךָ בּ֖/וֹ תִּתְנוֹדָֽד׃",
+        "VUL": "Fuit enim in derisum tibi Israël :/ quasi inter fures reperisses eum :/ propter verba ergo tua quæ adversum illum locutus es,/ captivus duceris./",
+        "SYN": "Не был ли в посмеянии у тебя Израиль? разве он между ворами был пойман, что ты, бывало, лишь только заговоришь о нем, качаешь головою?",
+        "NEO": "Israël n’a-t-il pas été pour toi un objet de risée ? L’a-t-on surpris avec des voleurs, pour que, chaque fois que tu parlés de lui, tu hoches la tête ?",
+        "NAB": "Is Israel a laughingstock to you? Was she caught among thieves, that you shake your head whenever you speak of her?",
+        "VAT_ES": "&iexcl;Y tú no temas, servidor mío Jacob, no te espantes, Israel! Porque yo te salvaré de un país lejano, y a tu descendencia, del país de su cautiverio. Jacob volverá y vivirá en calma, tranquilo y sin que nadie lo perturbe.",
+        "CEI": "Non è stato forse Israele per te oggetto di scherno? Fu questi forse sorpreso fra i ladri, dato che quando parli di lui scuoti sempre la testa?"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "עִזְב֤וּ עָרִים֙ וְ/שִׁכְנ֣וּ בַּ/סֶּ֔לַע יֹשְׁבֵ֖י מוֹאָ֑ב וִֽ/הְי֣וּ כְ/יוֹנָ֔ה תְּקַנֵּ֖ן בְּ/עֶבְרֵ֥י פִי פָֽחַת׃",
+        "VUL": "Relinquite civitates, et habitate in petra, habitatores Moab :/ et estote quasi columba nidificans in summo ore foraminis./",
+        "SYN": "Оставьте города и живите на скалах, жители Моава, и будьте как голуби, которые делают гнезда во входе в пещеру.",
+        "NEO": "Abandonnez les villes ; demeurez dans les rochers, habitants de Moab, et soyez comme la colombe qui fait son nid au-dessus du précipice béant.",
+        "NAB": "Leave the cities, dwell in the crags, you that dwell in Moab. Be like a dove that nests out of reach on the edge of a chasm.",
+        "VAT_ES": "Tú no temas, servidor mío Jacob –oráculo del Señor–, porque yo estoy contigo. Sí, yo aniquilaré a todas las naciones adonde yo mismo te expulsé, pero a ti no te aniquilaré: te corregiré con equidad, aunque no te dejaré impune.",
+        "CEI": "Abbandonate le città e abitate nelle rupi, abitanti di Moab, siate come la colomba che fa il nido nelle pareti d'una gola profonda."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "שָׁמַ֥עְנוּ גְאוֹן מוֹאָ֖ב גֵּאֶ֣ה מְאֹ֑ד גָּבְה֧/וֹ וּ/גְאוֹנ֛/וֹ וְ/גַאֲוָת֖/וֹ וְ/רֻ֥ם לִבּֽ/וֹ׃",
+        "VUL": "Audivimus superbiam Moab : superbus est valde :/ sublimitatem ejus, et arrogantiam,/ et superbiam, et altitudinem cordis ejus./",
+        "SYN": "Слыхали мы о гордости Моава, гордости чрезмерной, о его высокомерии и его надменности, и кичливости его и превозношении сердца его.",
+        "NEO": "Nous avons entendu l’orgueil de Moab, le très orgueilleux, sa hauteur, son orgueil, sa fierté, et la fierté de son cœur.",
+        "NAB": "We have heard of the pride of Moab, pride beyond bounds: His loftiness, his pride, his scorn, his insolence of heart.",
+        "CEI": "Abbiamo udito l'orgoglio di Moab, il grande orgoglioso, la sua superbia, il suo orgoglio, la sua alterigia, l'altezzosità del suo cuore."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "אֲנִ֤י יָדַ֨עְתִּי֙ נְאֻם יְהוָ֔ה עֶבְרָת֖/וֹ וְ/לֹא כֵ֑ן בַּדָּ֖י/ו לֹא כֵ֥ן עָשֽׂוּ׃",
+        "VUL": "Ego scio, ait Dominus, jactantiam ejus,/ et quod non sit juxta eam virtus ejus,/ nec juxta quod poterat conata sit facere./",
+        "SYN": "Знаю Я дерзость его, говорит Господь, но это ненадежно; пустые слова его: не так сделают.",
+        "NEO": "Moi aussi je connais, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, sa jactance, et ses vains discours, et ses œuvres vaines.",
+        "NAB": "I know, says the LORD, his arrogance; liar in boast, liar in deed.",
+        "CEI": "Conosco bene la sua tracotanza - dice il Signore - l'inconsistenza delle sue chiacchiere, le sue opere vane."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "עַל כֵּן֙ עַל מוֹאָ֣ב אֲיֵלִ֔יל וּ/לְ/מוֹאָ֥ב כֻּלֹּ֖/ה אֶזְעָ֑ק אֶל אַנְשֵׁ֥י קִֽיר חֶ֖רֶשׂ יֶהְגֶּֽה׃",
+        "VUL": "Ideo super Moab ejulabo,/ et ad Moab universam clamabo,/ ad viros muri fictilis lamentantes :/",
+        "SYN": "Поэтому буду рыдать о Моаве и вопить о всем Моаве; будут воздыхать о мужах Кирхареса.",
+        "NEO": "C’est pourquoi je me lamente sur Moab ; sur tout Moab je pousse des cris ; on gémit sur les gens de Qir-Hérès.",
+        "NAB": "And so I wail over Moab, over all Moab I cry, over the men of Kir-heres I moan.",
+        "CEI": "Per questo alzo un lamento su Moab, grido per tutto Moab, gemo per gli uomini di Kir-Cheres."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "מִ/בְּכִ֨י יַעְזֵ֤ר אֶבְכֶּה לָּ/ךְ֙ הַ/גֶּ֣פֶן שִׂבְמָ֔ה נְטִֽישֹׁתַ֨יִ/ךְ֙ עָ֣בְרוּ יָ֔ם עַ֛ד יָ֥ם יַעְזֵ֖ר נָגָ֑עוּ עַל קֵיצֵ֥/ךְ וְ/עַל בְּצִירֵ֖/ךְ שֹׁדֵ֥ד נָפָֽל׃",
+        "VUL": "de planctu Jazer plorabo tibi, vinea Sabama./ Propagines tuæ transierunt mare ;/ usque ad mare Jazer pervenerunt :/ super messem tuam et vindemiam tuam prædo irruit./",
+        "SYN": "Буду плакать о тебе, виноградник Севамский, плачем Иазера; отрасли твои простирались за море, достигали до озера Иазера; опустошитель напал на летние плоды твои и на зрелый виноград.",
+        "NEO": "Plus encore que sur Jazer, je pleure sur toi, vigne de Sabama. Tes sarments dépassaient la mer, ils touchaient à la mer de Jazer. Sur ta récolte et sur ta vendange le dévastateur s’est jeté.",
+        "NAB": "More than for Jazer I weep over you, vineyard of Sibmah. Your tendrils trailed down to the sea, as far as Jazer they stretched. Upon your harvest, upon your vintage, the ravager has fallen.",
+        "CEI": "Io piango per te come per Iazèr, o vigna di Sibma! I tuoi tralci arrivavano al mare, giungevano fino a Iazèr. Sulle tue frutta e sulla tua vendemmia è piombato il devastatore."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/נֶאֶסְפָ֨ה שִׂמְחָ֥ה וָ/גִ֛יל מִ/כַּרְמֶ֖ל וּ/מֵ/אֶ֣רֶץ מוֹאָ֑ב וְ/יַ֨יִן֙ מִ/יקָבִ֣ים הִשְׁבַּ֔תִּי לֹֽא יִדְרֹ֣ךְ הֵידָ֔ד הֵידָ֖ד לֹ֥א הֵידָֽד׃",
+        "VUL": "Ablata est lætitia et exsultatio/ de Carmelo et de terra Moab,/ et vinum de torcularibus sustuli :/ nequaquam calcator uvæ solitum celeuma cantabit./",
+        "SYN": "Радость и веселье отнято от Кармила и от земли Моава. Я положу конец вину в точилах; не будут более топтать в них с песнями; крик брани будет, а не крик радости.",
+        "NEO": "La joie et l’allégresse ont disparu des vergers et de la terre de Moab ; j’ai fait tarir le vin des cuves ; on ne le foule plus au bruit des hourrahs ; le hourrah n’est plus le hourrah.",
+        "NAB": "Joy and jubilation are at an end in the fruit gardens of the land of Moab. I drain the wine from the wine vats, the treader treads no more, the vintage shout is stilled.",
+        "CEI": "Sono scomparse la gioia e l'allegria dai frutteti e dalla regione di Moab. È sparito il vino nei tini, non pigia più il pigiatore, il canto di gioia non è più canto di gioia."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "מִ/זַּעֲקַ֨ת חֶשְׁבּ֜וֹן עַד אֶלְעָלֵ֗ה עַד יַ֨הַץ֙ נָתְנ֣וּ קוֹלָ֔/ם מִ/צֹּ֨עַר֙ עַד חֹ֣רֹנַ֔יִם עֶגְלַ֖ת שְׁלִֽשִׁיָּ֑ה כִּ֚י גַּם מֵ֣י נִמְרִ֔ים לִ/מְשַׁמּ֖וֹת יִהְיֽוּ׃",
+        "VUL": "De clamore Hesebon usque Eleale et Jasa, dederunt vocem suam ;/ a Segor usque ad Oronaim, vitula conternante :/ aquæ quoque Nemrim pessimæ erunt./",
+        "SYN": "От вопля Есевона до Елеалы и до Иаацы они поднимут голос свой от Сигора до Оронаима, до третьей Эглы, ибо и воды Нимрима иссякнут.",
+        "NEO": "A cause du cri de Hésébon jusqu’à Eléalé ; jusqu’à Jasa, ils font entendre leur cri ; de Segor jusqu’à Horonaïm, jusqu’à Eglath-Sélisia ; Car même les eaux de Nemrim seront taries.",
+        "NAB": "The cry of Heshbon and Elealeh is heard as far as Jahaz; they call from Zoar to Horonaim, and to Eglath-shelishiyah, for even the waters of Nimrim turn into a desert.",
+        "CEI": "Delle grida di Chesbòn e di Elealè si diffonde l'eco fino a Iacaz; da Zoar si odono grida fino a Coronàim e a Eglat-Selisià, poiché le acque di Nimrìm son diventate una zona desolata."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וְ/הִשְׁבַּתִּ֥י לְ/מוֹאָ֖ב נְאֻם יְהוָ֑ה מַעֲלֶ֣ה בָמָ֔ה וּ/מַקְטִ֖יר לֵ/אלֹהָֽי/ו׃",
+        "VUL": "Et auferam de Moab, ait Dominus,/ offerentem in excelsis,/ et sacrificantem diis ejus./",
+        "SYN": "Истреблю у Моава, говорит Господь, приносящих жертвы на высотах и кадящих богам его.",
+        "NEO": "Je veux, en finir avec Moab, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, avec celui qui monte à son haut-lieu et offre de l’encens à son dieu.",
+        "NAB": "I will leave no one in Moab, says the LORD, to offer a holocaust on the high place, or to burn incense to his gods.",
+        "CEI": "Io farò scomparire in Moab - dice il Signore - chi sale sulle alture e chi brucia incenso ai suoi dei."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "עַל כֵּ֞ן לִבִּ֤/י לְ/מוֹאָב֙ כַּ/חֲלִלִ֣ים יֶהֱמֶ֔ה וְ/לִבִּ/י֙ אֶל אַנְשֵׁ֣י קִֽיר חֶ֔רֶשׂ כַּ/חֲלִילִ֖ים יֶהֱמֶ֑ה עַל כֵּ֛ן יִתְרַ֥ת עָשָׂ֖ה אָבָֽדוּ׃",
+        "VUL": "Propterea cor meum ad Moab quasi tibiæ resonabit,/ et cor meum ad viros muri fictilis dabit sonitum tibiarum :/ quia plus fecit quam potuit,/ idcirco perierunt./",
+        "SYN": "Оттого сердце мое стонет о Моаве, как свирель; о жителях Кирхареса стонет сердце мое, как свирель, ибо богатства, ими приобретенные, погибли:",
+        "NEO": "C’est pourquoi mon cœur au sujet de Moab, gémit comme une flûte, oui, mon cœur au sujet des gens de Qir-Hérès, gémit comme une flûte. C’est pourquoi le gain qu’ils avaient fait est perdu.",
+        "NAB": "Hence the wail of flutes for Moab is in my heart; for the men of Kir-heres the wail of flutes is in my heart: the wealth they acquired has perished.",
+        "CEI": "Perciò il mio cuore per Moab geme come i flauti, il mio cuore geme come i flauti per gli uomini di Kir-Cheres, essendo venute meno le loro scorte."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "כִּ֤י כָל רֹאשׁ֙ קָרְחָ֔ה וְ/כָל זָקָ֖ן גְּרֻעָ֑ה עַ֤ל כָּל יָדַ֨יִם֙ גְּדֻדֹ֔ת וְ/עַל מָתְנַ֖יִם שָֽׂק׃",
+        "VUL": "Omne enim caput calvitium,/ et omnis barba rasa erit :/ in cunctis manibus colligatio,/ et super omne dorsum cilicium :/",
+        "SYN": "у каждого голова гола и у каждого борода умалена; у всех на руках царапины и на чреслах вретище.",
+        "NEO": "Car toute tête est rasée, et toute barbe coupée ; sur toutes les mains il y a des incisions ; et sur les reins des sacs.",
+        "NAB": "Every head has been made bald, every beard shaved; every hand is gashed, and the loins of all are clothed in sackcloth.",
+        "CEI": "Poiché ogni testa è rasata, ogni barba è tagliata; ci sono incisioni su tutte le mani e tutti hanno i fianchi cinti di sacco."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "עַ֣ל כָּל גַּגּ֥וֹת מוֹאָ֛ב וּ/בִ/רְחֹבֹתֶ֖י/הָ כֻּלֹּ֣/ה מִסְפֵּ֑ד כִּֽי שָׁבַ֣רְתִּי אֶת מוֹאָ֗ב כִּ/כְלִ֛י אֵֽין חֵ֥פֶץ בּ֖/וֹ נְאֻם יְהוָֽה׃",
+        "VUL": "super omnia tecta Moab, et in plateis ejus,/ omnis planctus :/ quoniam contrivi Moab/ sicut vas inutile, ait Dominus./",
+        "SYN": "На всех кровлях Моава и на улицах его общий плач, ибо Я сокрушил Моава, как непотребный сосуд, говорит Господь.",
+        "NEO": "Sur tous les toits de Moab et sur ses places, ce ne sont que lamentations ; car j’ai brisé Moab comme un vase dont on ne veut plus, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "On every roof of Moab and in all his squares there is mourning; I have shattered Moab like a pot that no one wants, says the LORD.",
+        "CEI": "Sopra tutte le terrazze di Moab e nelle sue piazze è tutto un lamento, perché io ho spezzato Moab come un vaso senza valore. Parola del Signore."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "אֵ֥יךְ חַ֨תָּה֙ הֵילִ֔ילוּ אֵ֛יךְ הִפְנָה עֹ֥רֶף מוֹאָ֖ב בּ֑וֹשׁ וְ/הָיָ֥ה מוֹאָ֛ב לִ/שְׂחֹ֥ק וְ/לִ/מְחִתָּ֖ה לְ/כָל סְבִיבָֽי/ו׃",
+        "VUL": "Quomodo victa est, et ululaverunt ?/ quomodo dejecit cervicem Moab, et confusus est ?/ eritque Moab in derisum, et in exemplum omnibus in circuitu suo./",
+        "SYN": "\"Как сокрушен он!\" будут говорить рыдая; \"как Моав покрылся стыдом, обратив тыл!\". И будет Моав посмеянием и ужасом для всех окружающих его,",
+        "NEO": "Comme il est brisé ! Gémissez ! Comme Moab a honteusement tourné le dos ! Moab est devenu un objet de risée, et d’épouvante pour tous ses voisins.",
+        "NAB": "How terror seizes Moab, and wailing! How he turns his back in shame! Moab has become a laughingstock and a horror to all his neighbors!",
+        "CEI": "Come è rovinato! Gridate! Come Moab ha voltato vergognosamente le spalle! Moab è diventato oggetto di scherno e di orrore per tutti i suoi vicini."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "כִּי כֹה֙ אָמַ֣ר יְהוָ֔ה הִנֵּ֥ה כַ/נֶּ֖שֶׁר יִדְאֶ֑ה וּ/פָרַ֥שׂ כְּנָפָ֖י/ו אֶל מוֹאָֽב׃",
+        "VUL": "Hæc dicit Dominus :/ Ecce quasi aquila volabit,/ et extendet alas suas ad Moab./",
+        "SYN": "ибо так говорит Господь: вот, как орел, налетит он и распрострет крылья свои над Моавом.",
+        "NEO": "Car ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Voici qu’il prend son vol comme l’aigle, il étend ses ailes sur Moab.",
+        "NAB": "For thus says the LORD: Behold, like an eagle he soars, spreads his wings over Moab.",
+        "CEI": "Poiché così dice il Signore: Ecco, come l'aquila egli spicca il volo e spande le ali su Moab."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "נִלְכְּדָה֙ הַ/קְּרִיּ֔וֹת וְ/הַ/מְּצָד֖וֹת נִתְפָּ֑שָׂה וְֽ֠/הָיָה לֵ֞ב גִּבּוֹרֵ֤י מוֹאָב֙ בַּ/יּ֣וֹם הַ/ה֔וּא כְּ/לֵ֖ב אִשָּׁ֥ה מְצֵרָֽה׃",
+        "VUL": "Capta est Carioth, et munitiones comprehensæ sunt :/ et erit cor fortium Moab in die illa/ sicut cor mulieris parturientis,/",
+        "SYN": "Города будут взяты, и крепости завоеваны, и сердце храбрых Моавитян будет в тот день, как сердце женщины, мучимой родами.",
+        "NEO": "Carioth est prise, les forteresses sont emportées, et le cœur des guerriers de Moab est, en ce jour, comme le cœur d’une femme en travail.",
+        "NAB": "Cities are taken, strongholds seized: On that day the hearts of Moab's heroes are like the heart of a woman in travail.",
+        "CEI": "Le città son prese, le fortezze sono occupate. In quel giorno il cuore dei prodi di Moab sarà come il cuore di donna nei dolori del parto."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וְ/נִשְׁמַ֥ד מוֹאָ֖ב מֵ/עָ֑ם כִּ֥י עַל יְהוָ֖ה הִגְדִּֽיל׃",
+        "VUL": "et cessabit Moab esse populus,/ quoniam contra Dominum gloriatus est./",
+        "SYN": "И истреблен будет Моав из числа народов, потому что он восстал против Господа.",
+        "NEO": "Moab est exterminé du rang des peuples, parce qu’il s’est élevé contre \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Moab shall be destroyed, no more a people, because he boasted against the LORD.",
+        "CEI": "Moab è distrutto, ha cessato d'essere popolo, perché si è insuperbito contro il Signore."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "פַּ֥חַד וָ/פַ֖חַת וָ/פָ֑ח עָלֶ֛י/ךָ יוֹשֵׁ֥ב מוֹאָ֖ב נְאֻם יְהוָֽה׃",
+        "VUL": "Pavor, et fovea,/ et laqueus super te,/ o habitator Moab, dicit Dominus./",
+        "SYN": "Ужас и яма и петля - для тебя, житель Моава, сказал Господь.",
+        "NEO": "Epouvante, fosse et filet, sont sur toi, habitant de Moab ! — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Terror, pit, and trap be upon you, people of Moab, says the LORD.",
+        "CEI": "Terrore, trabocchetto, tranello cadranno su di te, abitante di Moab. Oracolo del Signore."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "ה/ניס הַ/נָּ֞ס מִ/פְּנֵ֤י הַ/פַּ֨חַד֙ יִפֹּ֣ל אֶל הַ/פַּ֔חַת וְ/הָֽ/עֹלֶה֙ מִן הַ/פַּ֔חַת יִלָּכֵ֖ד בַּ/פָּ֑ח כִּֽי אָבִ֨יא אֵלֶ֧י/הָ אֶל מוֹאָ֛ב שְׁנַ֥ת פְּקֻדָּתָ֖/ם נְאֻם יְהוָֽה׃",
+        "VUL": "Qui fugerit a facie pavoris cadet in foveam,/ et qui conscenderit de fovea capietur laqueo :/ adducam enim super Moab annum visitationis eorum, ait Dominus./",
+        "SYN": "Кто убежит от ужаса, упадет в яму; а кто выйдет из ямы, попадет в петлю, ибо Я наведу на него, на Моава, годину посещения их, говорит Господь.",
+        "NEO": "Celui qui fuit devant l’objet d’épouvante tombera dans la fosse, et celui qui remontera de la fosse sera pris au filet ; car je vais faire venir sur lui, sur Moab, l’année de sa visitation, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "He who flees from the terror falls into the pit; He who climbs from the pit is caught in the trap; For I will bring these things upon Moab in the year of their punishment, says the LORD.",
+        "CEI": "Chi sfugge al terrore cadrà nel trabocchetto; chi risale dal trabocchetto sarà preso nel tranello, perché io manderò sui Moabiti tutto questo nell'anno del loro castigo. Oracolo del Signore."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "בְּ/צֵ֥ל חֶשְׁבּ֛וֹן עָמְד֖וּ מִ/כֹּ֣חַ נָסִ֑ים כִּֽי אֵ֞שׁ יָצָ֣א מֵ/חֶשְׁבּ֗וֹן וְ/לֶֽהָבָה֙ מִ/בֵּ֣ין סִיח֔וֹן וַ/תֹּ֨אכַל֙ פְּאַ֣ת מוֹאָ֔ב וְ/קָדְקֹ֖ד בְּנֵ֥י שָׁאֽוֹן׃",
+        "VUL": "In umbra Hesebon steterunt de laqueo fugientes,/ quia ignis egressus est de Hesebon,/ et flamma de medio Seon :/ et devorabit partem Moab,/ et verticem filiorum tumultus./",
+        "SYN": "Под тенью Есевона остановились бегущие, обессилев; но огонь вышел из Есевона и пламя из среды Сигона, и пожрет бок Моава и темя сыновей мятежных.",
+        "NEO": "A l’ombre de Hésébon ils s’arrêtent, les fuyards à bout de forces ; mais il est sorti un feu de Hésébon, et une flamme du milieu de Séhon ; elle a dévoré les flancs de Moab et le crâne des fils du tumulte.",
+        "NAB": "In Heshbon's shadow stop short the exhausted refugees; For fire breaks forth from Heshbon, and a blaze from the house of Sihon: It consumes the brow of Moab, the skull of the noisemakers.",
+        "CEI": "All'ombra di Chesbòn si fermano spossati i fuggiaschi, ma un fuoco esce da Chesbòn, una fiamma dal palazzo di Sicòn e divora le tempie di Moab e il cranio di uomini turbolenti."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "אוֹי לְ/ךָ֣ מוֹאָ֔ב אָבַ֖ד עַם כְּמ֑וֹשׁ כִּֽי לֻקְּח֤וּ בָנֶ֨י/ךָ֙ בַּ/שֶּׁ֔בִי וּ/בְנֹתֶ֖י/ךָ בַּ/שִּׁבְיָֽה׃",
+        "VUL": "Væ tibi, Moab :/ periisti, popule Chamos,/ quia comprehensi sunt filii tui/ et filiæ tuæ in captivitatem./",
+        "SYN": "Горе тебе, Моав! погиб народ Хамоса, ибо сыновья твои взяты в плен, и дочери твои - в пленение.",
+        "NEO": "Malheur à toi, Moab ! Il est perdu, le peuple de Chamos ; car tes fils sont emmenés en exil, et tes filles en captivité.",
+        "NAB": "Woe to you, O Moab, you are ruined, O people of Chemosh! Your sons are taken into exile, your daughters into captivity.",
+        "CEI": "Guai a te, Moab, sei perduto, popolo di Camos, poiché i tuoi figli sono condotti schiavi, le tue figlie portate in esilio."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "וְ/שַׁבְתִּ֧י שְׁבוּת מוֹאָ֛ב בְּ/אַחֲרִ֥ית הַ/יָּמִ֖ים נְאֻם יְהוָ֑ה עַד הֵ֖נָּה מִשְׁפַּ֥ט מוֹאָֽב׃",
+        "VUL": "Et convertam captivitatem Moab in novissimis diebus, ait Dominus.] Hucusque judicia Moab.",
+        "SYN": "Но в последние дни возвращу плен Моава, говорит Господь. Доселе суд на Моава.",
+        "NEO": "Mais je ramènerai les captifs de Moab ; à la fin des jours, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "But I will change the lot of Moab in the days to come, says the LORD. Thus far the judgment on Moab.",
+        "CEI": "Ma io cambierò la sorte di Moab negli ultimi giorni. Oracolo del Signore\". Qui finisce il giudizio su Moab."
+      }
+    }
+  }
+}

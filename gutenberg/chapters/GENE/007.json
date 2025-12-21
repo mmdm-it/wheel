@@ -1,0 +1,447 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_007",
+  "book_key": "GENE",
+  "sequence": 7,
+  "chapter_in": {
+    "MT": 7,
+    "VUL": 7,
+    "LXX": 7
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ לְ/נֹ֔חַ בֹּֽא אַתָּ֥ה וְ/כָל בֵּיתְ/ךָ֖ אֶל הַ/תֵּבָ֑ה כִּֽי אֹתְ/ךָ֥ רָאִ֛יתִי צַדִּ֥יק לְ/פָנַ֖/י בַּ/דּ֥וֹר הַ/זֶּֽה׃",
+        "VUL": "Dixitque Dominus ad eum : Ingredere tu et omnis domus tua in arcam : te enim vidi justum coram me in generatione hac.",
+        "LXX": "⸂⸆⸃ Καὶ εἶπεν Κύριος ὁ θεὸς πρὸς Νῶε Εἴσελθε σὺ καὶ πᾶς ὁ οἶκός σου εἰς τὴν κιβωτόν, ὅτι σὲ ἴδον δίκαιον ἐναντίον μου ἐν τῇ γενεᾷ ταύτῃ.",
+        "NAB": "Then the LORD said to Noah: \"Go into the ark, you and all your household, for you alone in this age have I found to be truly just.",
+        "SYN": "И сказал Господь [Бог] Ною: войди ты и все семейство твое в ковчег, ибо тебя увидел Я праведным предо Мною в роде сем;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Noé : « Entre dans l’arche, toi et toute ta maison, car je t’ai vu juste devant moi au milieu de cette génération.",
+        "VAT_ES": "Entonces el Señor dijo a Noé: «Entra en el arca, junto con toda tu familia, porque he visto que eres el único verdaderamente justo en medio de esta generación.",
+        "CEI": "Il Signore disse a Noè: \"Entra nell'arca tu con tutta la tua famiglia, perché ti ho visto giusto dinanzi a me in questa generazione."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "מִ/כֹּ֣ל הַ/בְּהֵמָ֣ה הַ/טְּהוֹרָ֗ה תִּֽקַּח לְ/ךָ֛ שִׁבְעָ֥ה שִׁבְעָ֖ה אִ֣ישׁ וְ/אִשְׁתּ֑/וֹ וּ/מִן הַ/בְּהֵמָ֡ה אֲ֠שֶׁר לֹ֣א טְהֹרָ֥ה הִ֛וא שְׁנַ֖יִם אִ֥ישׁ וְ/אִשְׁתּֽ/וֹ׃",
+        "VUL": "Ex omnibus animantibus mundis tolle septena et septena, masculum et feminam : de animantibus vero immundis duo et duo, masculum et feminam.",
+        "LXX": "ἀπὸ δὲ τῶν κτηνῶν τῶν καθαρῶν εἰσάγαγε πρὸς σὲ ἑπτὰ ἑπτὰ ἄρσεν καὶ θῆλυ, ἀπὸ δὲ τῶν κτηνῶν τῶν μὴ καθαρῶν δύο δύο ἄρσεν καὶ θῆλυ·",
+        "NAB": "Of every clean animal, take with you seven pairs, a male and its mate; and of the unclean animals, one pair, a male and its mate;",
+        "SYN": "и всякого скота чистого возьми по семи, мужеского пола и женского, а из скота нечистого по два, мужеского пола и женского;",
+        "NEO": "De tous les animaux purs, tu en prendras avec toi sept paires, des mâles et leurs femelles, et de tous les animaux qui ne sont pas purs, tu en prendras deux, un mâle et sa femelle ;",
+        "VAT_ES": "Lleva siete parejas de todas las especies de animales puros y una pareja de los impuros, los machos con sus hembras",
+        "CEI": "D'ogni animale mondo prendine con te sette paia, il maschio e la sua femmina; degli animali che non sono mondi un paio, il maschio e la sua femmina."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "גַּ֣ם מֵ/ע֧וֹף הַ/שָּׁמַ֛יִם שִׁבְעָ֥ה שִׁבְעָ֖ה זָכָ֣ר וּ/נְקֵבָ֑ה לְ/חַיּ֥וֹת זֶ֖רַע עַל פְּנֵ֥י כָל הָ/אָֽרֶץ׃",
+        "VUL": "Sed et de volatilibus cæli septena et septena, masculum et feminam : ut salvetur semen super faciem universæ terræ.",
+        "LXX": "καὶ ἀπὸ τῶν πετεινῶν τοῦ οὐρανοῦ τῶν καθαρῶν ἑπτὰ ἑπτὰ ἄρσεν καὶ θῆλυ, καὶ ἀπὸ πάντων τῶν πετεινῶν τῶν μὴ καθαρῶν δύο δύο ἄρσεν καὶ θῆλυ, διαθρέψαι σπέρμα ἐπὶ πᾶσαν τὴν γῆν.",
+        "NAB": "likewise, of every clean bird of the air, seven pairs, a male and a female, and of all the unclean birds, one pair, a male and a female. Thus you will keep their issue alive over all the earth.",
+        "SYN": "также и из птиц небесных [чистых] по семи, мужеского пола и женского, [и из всех птиц нечистых по две, мужеского пола и женского,] чтобы сохранить племя для всей земли,",
+        "NEO": "sept paires aussi des oiseaux du ciel, des mâles et leurs femelles, pour conserver en vie leur race sur la face de toute la terre.",
+        "VAT_ES": "–también siete parejas de todas las clases de pájaros– para perpetuar sus especies sobre la tierra.",
+        "CEI": "Anche degli uccelli mondi del cielo, sette paia, maschio e femmina, per conservarne in vita la razza su tutta la terra."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּי֩ לְ/יָמִ֨ים ע֜וֹד שִׁבְעָ֗ה אָֽנֹכִי֙ מַמְטִ֣יר עַל הָ/אָ֔רֶץ אַרְבָּעִ֣ים י֔וֹם וְ/אַרְבָּעִ֖ים לָ֑יְלָה וּ/מָחִ֗יתִי אֶֽת כָּל הַ/יְקוּם֙ אֲשֶׁ֣ר עָשִׂ֔יתִי מֵ/עַ֖ל פְּנֵ֥י הָֽ/אֲדָמָֽה׃",
+        "VUL": "Adhuc enim, et post dies septem ego pluam super terram quadraginta diebus et quadraginta noctibus : et delebo omnem substantiam, quam feci, de superficie terræ.",
+        "LXX": "ἔτι γὰρ ἡμερῶν ἑπτὰ ἐγὼ ἐπάγω ὑετὸν ἐπὶ τὴν γῆν τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας, καὶ ἐξαλείψω πᾶν τὸ ἀνάστεμα ὃ ἐποίησα ἀπὸ προσώπου τῆς γῆς.",
+        "NAB": "Seven days from now I will bring rain down on the earth for forty days and forty nights, and so I will wipe out from the surface of the earth every moving creature that I have made.\"",
+        "SYN": "ибо чрез семь дней Я буду изливать дождь на землю сорок дней и сорок ночей; и истреблю все существующее, что Я создал, с лица земли.",
+        "NEO": "Car, encore sept jours et je ferai pleuvoir sur la terre pendant quarante jours et quarante nuits, et j’exterminerai de la face de la terre tous les êtres que j’ai faits. »",
+        "VAT_ES": "Porque dentro de siete días haré llover durante cuarenta días y cuarenta noches, y eliminaré de la superficie de la tierra a todos los seres que hice».",
+        "CEI": "Perché tra sette giorni farò piovere sulla terra per quaranta giorni e quaranta notti; sterminerò dalla terra ogni essere che ho fatto\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יַּ֖עַשׂ נֹ֑חַ כְּ/כֹ֥ל אֲשֶׁר צִוָּ֖/הוּ יְהוָֽה׃",
+        "VUL": "Fecit ergo Noë omnia quæ mandaverat ei Dominus.",
+        "LXX": "καὶ ἐποίησεν Νῶε πάντα ὅσα ἐνετείλατο αὐτῷ Κύριος ὁ θεός. ⸆",
+        "NAB": "Noah did just as the LORD had commanded him.",
+        "SYN": "Ной сделал все, что Господь [Бог] повелел ему.",
+        "NEO": "Noé fit tout ce que \\+w Yahweh|strong=\"H3068\"\\+w** lui avait ordonné.",
+        "VAT_ES": "Y Noé cumplió la orden que Dios le dio.",
+        "CEI": "Noè fece quanto il Signore gli aveva comandato."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/נֹ֕חַ בֶּן שֵׁ֥שׁ מֵא֖וֹת שָׁנָ֑ה וְ/הַ/מַּבּ֣וּל הָיָ֔ה מַ֖יִם עַל הָ/אָֽרֶץ׃",
+        "VUL": "Eratque sexcentorum annorum quando diluvii aquæ inundaverunt super terram.",
+        "LXX": "Νῶε δὲ ἦν ἐτῶν ἑξακοσίων καὶ ὁ κατακλυσμὸς ἦν ἐπὶ τῆς γῆς.",
+        "NAB": "Noah was six hundred years old when the flood waters came upon the earth.",
+        "SYN": "Ной же был шестисот лет, как потоп водный пришел на землю.",
+        "NEO": "Il avait six cents ans quand eut lieu le déluge, une inondation de la terre.",
+        "VAT_ES": "Cuando las aguas del Diluvio se precipitaron sobre la tierra, Noé tenía seiscientos años.",
+        "CEI": "Noè aveva seicento anni, quando venne il diluvio, cioè le acque sulla terra."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣בֹא נֹ֗חַ וּ֠/בָנָי/ו וְ/אִשְׁתּ֧/וֹ וּ/נְשֵֽׁי בָנָ֛י/ו אִתּ֖/וֹ אֶל הַ/תֵּבָ֑ה מִ/פְּנֵ֖י מֵ֥י הַ/מַּבּֽוּל׃",
+        "VUL": "Et ingressus est Noë et filii ejus, uxor ejus et uxores filiorum ejus cum eo in arcam propter aquas diluvii.",
+        "LXX": "εἰσῆλθεν δὲ Νῶε καὶ οἱ υἱοὶ αὐτοῦ καὶ ἡ γυνὴ αὐτοῦ καὶ αἱ γυναῖκες τῶν υἱῶν αὐτοῦ μετ’ αὐτοῦ εἰς τὴν κιβωτὸν διὰ τὸ ὕδωρ τοῦ κατακλυσμοῦ.",
+        "NAB": "Together with his sons, his wife, and his sons' wives, Noah went into the ark because of the waters of the flood.",
+        "SYN": "И вошел Ной и сыновья его, и жена его, и жены сынов его с ним в ковчег от вод потопа.",
+        "NEO": "Noé entra dans l’arche avec ses fils, sa femme et les femmes de ses fils pour échapper aux eaux du déluge.",
+        "VAT_ES": "Entonces entró en el arca con sus hijos, su mujer y las mujeres de sus hijos, para salvarse de las aguas del Diluvio.",
+        "CEI": "Noè entrò nell'arca e con lui i suoi figli, sua moglie e le mogli dei suoi figli, per sottrarsi alle acque del diluvio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "מִן הַ/בְּהֵמָה֙ הַ/טְּהוֹרָ֔ה וּ/מִן הַ֨/בְּהֵמָ֔ה אֲשֶׁ֥ר אֵינֶ֖נָּ/ה טְהֹרָ֑ה וּ/מִ֨ן הָ/ע֔וֹף וְ/כֹ֥ל אֲשֶׁר רֹמֵ֖שׂ עַל הָֽ/אֲדָמָֽה׃",
+        "VUL": "De animantibus quoque mundis et immundis, et de volucribus, et ex omni quod movetur super terram,",
+        "LXX": "καὶ ἀπὸ τῶν πετεινῶν καὶ ἀπὸ τῶν ⸂⸆⸃ κτηνῶν τῶν καθαρῶν καὶ ἀπὸ τῶν κτηνῶν τῶν μὴ καθαρῶν καὶ ἀπὸ τῶν πετεινῶν καὶ ἀπὸ πάντων τῶν ἑρπετῶν τῶν ἐπὶ τῆς γῆς",
+        "NAB": "Of the clean animals and the unclean, of the birds, and of everything that creeps on the ground,",
+        "SYN": "И [из птиц чистых и из птиц нечистых, и] из скотов чистых и из скотов нечистых, [и из зверей] и из всех пресмыкающихся по земле",
+        "NEO": "Des animaux purs et de ceux qui ne sont pas purs, des oiseaux et de tout ce qui rampe sur le sol,",
+        "VAT_ES": "Y los animales puros, los impuros, los pájaros y todos los seres que se arrastran por el suelo,",
+        "CEI": "Degli animali mondi e di quelli immondi, degli uccelli e di tutti gli esseri che strisciano sul suolo"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "שְׁנַ֨יִם שְׁנַ֜יִם בָּ֧אוּ אֶל נֹ֛חַ אֶל הַ/תֵּבָ֖ה זָכָ֣ר וּ/נְקֵבָ֑ה כַּֽ/אֲשֶׁ֛ר צִוָּ֥ה אֱלֹהִ֖ים אֶת נֹֽחַ׃",
+        "VUL": "duo et duo ingressa sunt ad Noë in arcam, masculus et femina, sicut præceperat Dominus Noë.",
+        "LXX": "δύο δύο εἰσῆλθον πρὸς Νῶε εἰς τὴν κιβωτόν, ἄρσεν καὶ θῆλυ, καθὰ ἐνετείλατο αὐτῷ ὁ θεός.",
+        "NAB": "(two by two) male and female entered the ark with Noah, just as the LORD had commanded him.",
+        "SYN": "по паре, мужеского пола и женского, вошли к Ною в ковчег, как [Господь] Бог повелел Ною.",
+        "NEO": "chaque paire, mâle et femelle, vint vers Noé dans l’arche, comme Dieu l’avait ordonné à Noé.",
+        "VAT_ES": "entraron por parejas con él en el arca, como Dios se los había mandado.",
+        "CEI": "entrarono a due a due con Noè nell'arca, maschio e femmina, come Dio aveva comandato a Noè."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִ֖י לְ/שִׁבְעַ֣ת הַ/יָּמִ֑ים וּ/מֵ֣י הַ/מַּבּ֔וּל הָי֖וּ עַל הָ/אָֽרֶץ׃",
+        "VUL": "Cumque transissent septem dies, aquæ diluvii inundaverunt super terram.",
+        "LXX": "Καὶ ἐγένετο μετὰ τὰς ἑπτὰ ἡμέρας καὶ τὸ ὕδωρ τοῦ κατακλυσμοῦ ἐγένετο ἐπὶ τῆς γῆς.",
+        "NAB": "As soon as the seven days were over, the waters of the flood came upon the earth.",
+        "SYN": "Чрез семь дней воды потопа пришли на землю.",
+        "NEO": "Et, au bout de sept jours, les eaux du déluge se répandirent sur la terre.",
+        "VAT_ES": "A los siete días, las aguas del Diluvio cayeron sobre la tierra.",
+        "CEI": "Dopo sette giorni, le acque del diluvio furono sopra la terra;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "בִּ/שְׁנַ֨ת שֵׁשׁ מֵא֤וֹת שָׁנָה֙ לְ/חַיֵּי נֹ֔חַ בַּ/חֹ֨דֶשׁ֙ הַ/שֵּׁנִ֔י בְּ/שִׁבְעָֽה עָשָׂ֥ר י֖וֹם לַ/חֹ֑דֶשׁ בַּ/יּ֣וֹם הַ/זֶּ֗ה נִבְקְעוּ֙ כָּֽל מַעְיְנֹת֙ תְּה֣וֹם רַבָּ֔ה וַ/אֲרֻבֹּ֥ת הַ/שָּׁמַ֖יִם נִפְתָּֽחוּ׃",
+        "VUL": "Anno sexcentesimo vitæ Noë, mense secundo, septimodecimo die mensis, rupti sunt omnes fontes abyssi magnæ, et cataractæ cæli apertæ sunt :",
+        "LXX": "ἐν τῷ ἑξακοσιοστῷ ἔτει ἐν τῇ ζωῇ τοῦ Νῶε τοῦ δευτέρου μηνός, ἑβδόμῃ καὶ εἰκάδι τοῦ μηνός, τῇ ἡμέρᾳ ταύτῃ ἐρράγησαν πᾶσαι αἱ πηγαὶ τῆς ἀβύσσου, καὶ οἱ καταράκται τοῦ οὐρανοῦ ἠνεῴχθησαν·",
+        "NAB": "In the six hundredth year of Noah's life, in the second month, on the seventeenth day of the month: it was on that day that All the fountains of the great abyss burst forth, and the floodgates of the sky were opened.",
+        "SYN": "В шестисотый год жизни Ноевой, во второй месяц, в семнадцатый [27] день месяца, в сей день разверзлись все источники великой бездны, и окна небесные отворились;",
+        "NEO": "L’an six cent de la vie de Noé, au deuxième mois, le dix-septième jour du mois, en ce jour-là, toutes les sources du grand abîme jaillirent et les écluses du ciel s’ouvrirent,",
+        "VAT_ES": "Noé tenía seiscientos años, y era el decimoséptimo día del segundo mes. Ese día, desbordaron las fuentes del gran océano y se abrieron las cataratas del cielo.",
+        "CEI": "nell'anno seicentesimo della vita di Noè, nel secondo mese, il diciassette del mese, proprio in quello stesso giorno, eruppero tutte le sorgenti del grande abisso e le cateratte del cielo si aprirono."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִ֥י הַ/גֶּ֖שֶׁם עַל הָ/אָ֑רֶץ אַרְבָּעִ֣ים י֔וֹם וְ/אַרְבָּעִ֖ים לָֽיְלָה׃",
+        "VUL": "et facta est pluvia super terram quadraginta diebus et quadraginta noctibus.",
+        "LXX": "καὶ ἐγένετο ὁ ὑετὸς ἐπὶ τῆς γῆς τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας.",
+        "NAB": "For forty days and forty nights heavy rain poured down on the earth.",
+        "SYN": "и лился на землю дождь сорок дней и сорок ночей.",
+        "NEO": "et la pluie tomba sur la terre durant quarante jours et quarante nuits.",
+        "VAT_ES": "Y una fuerte lluvia cayó sobre la tierra durante cuarenta días y cuarenta noches.",
+        "CEI": "Cadde la pioggia sulla terra per quaranta giorni e quaranta notti."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "בְּ/עֶ֨צֶם הַ/יּ֤וֹם הַ/זֶּה֙ בָּ֣א נֹ֔חַ וְ/שֵׁם וְ/חָ֥ם וָ/יֶ֖פֶת בְּנֵי נֹ֑חַ וְ/אֵ֣שֶׁת נֹ֗חַ וּ/שְׁלֹ֧שֶׁת נְשֵֽׁי בָנָ֛י/ו אִתָּ֖/ם אֶל הַ/תֵּבָֽה׃",
+        "VUL": "In articulo diei illius ingressus est Noë, et Sem, et Cham, et Japheth filii ejus ; uxor illius, et tres uxores filiorum ejus cum eis in arcam :",
+        "LXX": "Ἐν τῇ ἡμέρᾳ ταύτῃ εἰσῆλθεν Νῶε, Σήμ, Χάμ, Ἰάφεθ, υἱοὶ Νῶε, καὶ ἡ γυνὴ Νῶε καὶ αἱ τρεῖς γυναῖκες τῶν υἱῶν αὐτοῦ μετ’ αὐτοῦ εἰς τὴν κιβωτόν.",
+        "NAB": "On the precise day named, Noah and his sons Shem, Ham, and Japheth, and Noah's wife, and the three wives of Noah's sons had entered the ark,",
+        "SYN": "В сей самый день вошел в ковчег Ной, и Сим, Хам и Иафет, сыновья Ноевы, и жена Ноева, и три жены сынов его с ними.",
+        "NEO": "Ce même jour, Noé entra dans l’arche, avec Sem, Cham et Japhet, fils de Noé, la femme de Noé et les trois femmes de ses fils avec eux,",
+        "VAT_ES": "Ese mismo día, habían entrado en el arca Noé, sus hijos, Sem, Cam y Jafet, su mujer y las tres mujeres de sus hijos;",
+        "CEI": "In quello stesso giorno entrò nell'arca Noè con i figli Sem, Cam e Iafet, la moglie di Noè, le tre mogli dei suoi tre figli:"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הֵ֜מָּה וְ/כָל הַֽ/חַיָּ֣ה לְ/מִינָ֗/הּ וְ/כָל הַ/בְּהֵמָה֙ לְ/מִינָ֔/הּ וְ/כָל הָ/רֶ֛מֶשׂ הָ/רֹמֵ֥שׂ עַל הָ/אָ֖רֶץ לְ/מִינֵ֑/הוּ וְ/כָל הָ/ע֣וֹף לְ/מִינֵ֔/הוּ כֹּ֖ל צִפּ֥וֹר כָּל כָּנָֽף׃",
+        "VUL": "ipsi et omne animal secundum genus suum, universaque jumenta in genere suo, et omne quod movetur super terram in genere suo, cunctumque volatile secundum genus suum, universæ aves, omnesque volucres,",
+        "LXX": "καὶ πάντα τὰ θηρία κατὰ γένος καὶ πάντα τὰ κτήνη κατὰ γένος καὶ πᾶν ἑρπετὸν κινούμενον ἐπὶ τῆς γῆς κατὰ γένος καὶ πᾶν πετεινὸν κατὰ γένος",
+        "NAB": "together with every kind of wild beast, every kind of domestic animal, every kind of creeping thing of the earth, and every kind of bird.",
+        "SYN": "Они, и все звери [земли] по роду их, и всякий скот по роду его, и все гады, пресмыкающиеся по земле, по роду их, и все летающие по роду их, все птицы, все крылатые,",
+        "NEO": "eux et toutes les bêtes des diverses espèces, tous les animaux domestiques des diverses espèces, tous les reptiles des diverses espèces qui rampent sur la terre, et tous les oiseaux des diverses espèces, tous les petits oiseaux, tout ce qui a des ailes.",
+        "VAT_ES": "y junto con ellos, los animales de todas las especies: las fieras, el ganado, los reptiles, los pájaros y todos los demás animales con alas.",
+        "CEI": "essi e tutti i viventi secondo la loro specie e tutto il bestiame secondo la sua specie e tutti i rettili che strisciano sulla terra secondo la loro specie, tutti i volatili secondo la loro specie, tutti gli uccelli, tutti gli esseri alati."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֥אוּ אֶל נֹ֖חַ אֶל הַ/תֵּבָ֑ה שְׁנַ֤יִם שְׁנַ֨יִם֙ מִ/כָּל הַ/בָּשָׂ֔ר אֲשֶׁר בּ֖/וֹ ר֥וּחַ חַיִּֽים׃",
+        "VUL": "ingressæ sunt ad Noë in arcam, bina et bina ex omni carne, in qua erat spiritus vitæ.",
+        "LXX": "εἰσῆλθον πρὸς Νῶε εἰς τὴν κιβωτόν, δύο δύο ἄρσεν καὶ θῆλυ ἀπὸ πάσης σαρκὸς ἐν ᾧ ἐστὶν πνεῦμα ζωῆς.",
+        "NAB": "Pairs of all creatures in which there was the breath of life entered the ark with Noah.",
+        "SYN": "и вошли к Ною в ковчег по паре [мужеского пола и женского] от всякой плоти, в которой есть дух жизни;",
+        "NEO": "Ils vinrent vers Noé dans l’arche, deux à deux, de toute chair ayant souffle de vie.",
+        "VAT_ES": "Todas las clases de seres que están animados por un aliento de vida entraron con Noé en el arca; y lo hicieron por parejas,",
+        "CEI": "Vennero dunque a Noè nell'arca, a due a due, di ogni carne in cui è il soffio di vita."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/הַ/בָּאִ֗ים זָכָ֨ר וּ/נְקֵבָ֤ה מִ/כָּל בָּשָׂר֙ בָּ֔אוּ כַּֽ/אֲשֶׁ֛ר צִוָּ֥ה אֹת֖/וֹ אֱלֹהִ֑ים וַ/יִּסְגֹּ֥ר יְהוָ֖ה בַּֽעֲדֽ/וֹ׃",
+        "VUL": "Et quæ ingressa sunt, masculus et femina ex omni carne introierunt, sicut præceperat ei Deus : et inclusit eum Dominus deforis.",
+        "LXX": "καὶ τὰ εἰσπορευόμενα ἄρσεν καὶ θῆλυ ἀπὸ πάσης σαρκὸς εἰσῆλθεν, καθὰ ἐνετείλατο ὁ θεὸς τῷ Νῶε· ⸆ καὶ ἔκλεισεν Κύριος ὁ θεὸς τὴν κιβωτὸν ἔξωθεν αὐτοῦ.",
+        "NAB": "Those that entered were male and female, and of all species they came, as God had commanded Noah. Then the LORD shut him in.",
+        "SYN": "и вошедшие [к Ною в ковчег] мужеский и женский пол всякой плоти вошли, как повелел ему [Господь] Бог. И затворил Господь [Бог] за ним [ковчег].",
+        "NEO": "Ils arrivaient mâle et femelle, de toute chair, comme Dieu l’avait ordonné à Noé. Et \\+w Yahweh|strong=\"H3068\"\\+w** ferma la porte sur lui.",
+        "VAT_ES": "machos y hembras, como Dios se lo había ordenado. Entonces el Señor cerró el arca detrás de Noé.",
+        "CEI": "Quelli che venivano, maschio e femmina d'ogni carne, entrarono come gli aveva comandato Dio: il Signore chiuse la porta dietro di lui."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִ֧י הַ/מַּבּ֛וּל אַרְבָּעִ֥ים י֖וֹם עַל הָ/אָ֑רֶץ וַ/יִּרְבּ֣וּ הַ/מַּ֗יִם וַ/יִּשְׂאוּ֙ אֶת הַ/תֵּבָ֔ה וַ/תָּ֖רָם מֵ/עַ֥ל הָ/אָֽרֶץ׃",
+        "VUL": "Factumque est diluvium quadraginta diebus super terram : et multiplicatæ sunt aquæ, et elevaverunt arcam in sublime a terra.",
+        "LXX": "Καὶ ἐγένετο ὁ κατακλυσμὸς ἐπὶ τῆς γῆς τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας ἐπὶ τῆς γῆς· καὶ ἐπληθύνθη τὸ ὕδωρ καὶ ἐπῆρεν τὴν κιβωτόν, καὶ ὑψώθη ἀπὸ τῆς γῆς.",
+        "NAB": "The flood continued upon the earth for forty days. As the waters increased, they lifted the ark, so that it rose above the earth.",
+        "SYN": "И продолжалось на земле наводнение сорок дней [и сорок ночей], и умножилась вода, и подняла ковчег, и он возвысился над землею;",
+        "NEO": "Le déluge fut quarante jours sur la terre ; les eaux grossirent et soulevèrent l’arche, et elle s’éleva au-dessus de la terre.",
+        "VAT_ES": "El Diluvio se precipitó sobre la tierra durante cuarenta días. A medida que las aguas iban creciendo, llevaban el arca hacia arriba, y esta se elevó por encima de la tierra.",
+        "CEI": "Il diluvio durò sulla terra quaranta giorni: le acque crebbero e sollevarono l'arca che si innalzò sulla terra."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּגְבְּר֥וּ הַ/מַּ֛יִם וַ/יִּרְבּ֥וּ מְאֹ֖ד עַל הָ/אָ֑רֶץ וַ/תֵּ֥לֶךְ הַ/תֵּבָ֖ה עַל פְּנֵ֥י הַ/מָּֽיִם׃",
+        "VUL": "Vehementer enim inundaverunt, et omnia repleverunt in superficie terræ : porro arca ferebatur super aquas.",
+        "LXX": "καὶ ἐπεκράτει τὸ ὕδωρ καὶ ἐπληθύνετο σφόδρα ἐπὶ τῆς γῆς· καὶ ἐπεφέρετο ἡ κιβωτὸς ἐπάνω τοῦ ὕδατος.",
+        "NAB": "The swelling waters increased greatly, but the ark floated on the surface of the waters.",
+        "SYN": "вода же усиливалась и весьма умножалась на земле, и ковчег плавал по поверхности вод.",
+        "NEO": "Les eaux crûrent et devinrent extrêmement grosses sur la terre, et l’arche flotta sur les eaux.",
+        "VAT_ES": "Las aguas subían de nivel y crecían desmesuradamente sobre la tierra, mientras el arca flotaba en la superficie.",
+        "CEI": "Le acque divennero poderose e crebbero molto sopra la terra e l'arca galleggiava sulle acque."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/הַ/מַּ֗יִם גָּֽבְר֛וּ מְאֹ֥ד מְאֹ֖ד עַל הָ/אָ֑רֶץ וַ/יְכֻסּ֗וּ כָּל הֶֽ/הָרִים֙ הַ/גְּבֹהִ֔ים אֲשֶׁר תַּ֖חַת כָּל הַ/שָּׁמָֽיִם׃",
+        "VUL": "Et aquæ prævaluerunt nimis super terram : opertique sunt omnes montes excelsi sub universo cælo.",
+        "LXX": "τὸ δὲ ὕδωρ ἐπεκράτει σφόδρα σφοδρῶς ἐπὶ τῆς γῆς, καὶ ἐπεκάλυψεν πάντα τὰ ὄρη τὰ ὑψηλὰ ἃ ἦν ὑποκάτω τοῦ οὐρανοῦ.",
+        "NAB": "Higher and higher above the earth rose the waters, until all the highest mountains everywhere were submerged,",
+        "SYN": "И усилилась вода на земле чрезвычайно, так что покрылись все высокие горы, какие есть под всем небом;",
+        "NEO": "Les eaux, ayant grossi de plus en plus, couvrirent toutes les hautes montagnes qui sont sous le ciel tout entier.",
+        "VAT_ES": "Así continuaron subiendo cada vez más, hasta que en todas partes quedaron sumergidas las montañas, incluso las más elevadas.",
+        "CEI": "Le acque si innalzarono sempre più sopra la terra e coprirono tutti i monti più alti che sono sotto tutto il cielo."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "חֲמֵ֨שׁ עֶשְׂרֵ֤ה אַמָּה֙ מִ/לְ/מַ֔עְלָ/ה גָּבְר֖וּ הַ/מָּ֑יִם וַ/יְכֻסּ֖וּ הֶ/הָרִֽים׃",
+        "VUL": "Quindecim cubitis altior fuit aqua super montes, quos operuerat.",
+        "LXX": "δέκα πέντε πήχεις ἐπάνω ὑψώθη τὸ ὕδωρ, καὶ ἐπεκάλυψεν πάντα τὰ ὄρη τὰ ὑψηλά.",
+        "NAB": "the crest rising fifteen cubits higher than the submerged mountains.",
+        "SYN": "на пятнадцать локтей поднялась над ними вода, и покрылись [все высокие] горы.",
+        "NEO": "Les eaux s’élevèrent de quinze coudées au-dessus des montagnes qu’elles recouvraient.",
+        "VAT_ES": "El nivel de las aguas subió más de siete metros por encima de las montañas.",
+        "CEI": "Le acque superarono in altezza di quindici cubiti i monti che avevano ricoperto."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּגְוַ֞ע כָּל בָּשָׂ֣ר הָ/רֹמֵ֣שׂ עַל הָ/אָ֗רֶץ בָּ/ע֤וֹף וּ/בַ/בְּהֵמָה֙ וּ/בַ֣/חַיָּ֔ה וּ/בְ/כָל הַ/שֶּׁ֖רֶץ הַ/שֹּׁרֵ֣ץ עַל הָ/אָ֑רֶץ וְ/כֹ֖ל הָ/אָדָֽם׃",
+        "VUL": "Consumptaque est omnis caro quæ movebatur super terram, volucrum, animantium, bestiarum, omniumque reptilium, quæ reptant super terram : universi homines,",
+        "LXX": "καὶ ἀπέθανεν πᾶσα σὰρξ κινουμένη ἐπὶ τῆς γῆς τῶν πετεινῶν καὶ τῶν κτηνῶν καὶ τῶν θηρίων, καὶ πᾶν ἑρπετὸν κινούμενον ἐπὶ τῆς γῆς, καὶ πᾶς ἄνθρωπος·",
+        "NAB": "All creatures that stirred on earth perished: birds, cattle, wild animals, and all that swarmed on the earth, as well as all mankind.",
+        "SYN": "И лишилась жизни всякая плоть, движущаяся по земле, и птицы, и скоты, и звери, и все гады, ползающие по земле, и все люди;",
+        "NEO": "Toute chair qui se meut sur la terre périt : oiseaux, animaux domestiques, bêtes sauvages, tout ce qui rampe sur la terre, ainsi que tous les hommes.",
+        "VAT_ES": "Entonces perecieron todos los seres que se movían sobre la tierra: los pájaros, el ganado, las fieras, todos los animales que se arrastran por el suelo, y también los hombres.",
+        "CEI": "Perì ogni essere vivente che si muove sulla terra, uccelli, bestiame e fiere e tutti gli esseri che brulicano sulla terra e tutti gli uomini."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כֹּ֡ל אֲשֶׁר֩ נִשְׁמַת ר֨וּחַ חַיִּ֜ים בְּ/אַפָּ֗י/ו מִ/כֹּ֛ל אֲשֶׁ֥ר בֶּ/חָֽרָבָ֖ה מֵֽתוּ׃",
+        "VUL": "et cuncta, in quibus spiraculum vitæ est in terra, mortua sunt.",
+        "LXX": "καὶ πάντα ὅσα ἔχει πνοὴν ζωῆς καὶ πᾶς ὃς ἦν ἐπὶ τῆς ξηρᾶς ἀπέθανεν.",
+        "NAB": "Everything on dry land with the faintest breath of life in its nostrils died out.",
+        "SYN": "все, что имело дыхание духа жизни в ноздрях своих на суше, умерло.",
+        "NEO": "De tout ce qui existe sur la terre sèche, tout ce qui a souffle de vie dans les narines mourut.",
+        "VAT_ES": "Murió todo lo que tenía un aliento de vida en sus narices, todo lo que estaba sobre el suelo firme.",
+        "CEI": "Ogni essere che ha un alito di vita nelle narici, cioè quanto era sulla terra asciutta morì."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יִּ֜מַח אֶֽת כָּל הַ/יְק֣וּם אֲשֶׁ֣ר עַל פְּנֵ֣י הָֽ/אֲדָמָ֗ה מֵ/אָדָ֤ם עַד בְּהֵמָה֙ עַד רֶ֨מֶשׂ֙ וְ/עַד ע֣וֹף הַ/שָּׁמַ֔יִם וַ/יִּמָּח֖וּ מִן הָ/אָ֑רֶץ וַ/יִשָּׁ֧אֶר אַךְ נֹ֛חַ וַֽ/אֲשֶׁ֥ר אִתּ֖/וֹ בַּ/תֵּבָֽה׃",
+        "VUL": "Et delevit omnem substantiam quæ erat super terram, ab homine usque ad pecus, tam reptile quam volucres cæli : et deleta sunt de terra. Remansit autem solus Noë, et qui cum eo erant in arca.",
+        "LXX": "καὶ ἐξήλειψεν πᾶν τὸ ἀνάστεμα ὃ ἦν ἐπὶ προσώπου πάσης τῆς γῆς, ἀπὸ ἀνθρώπου ἕως κτήνους καὶ ἑρπετῶν καὶ τῶν πετεινῶν τοῦ οὐρανοῦ· καὶ ἐξηλείφθησαν ἀπὸ τῆς γῆς. καὶ κατελείφθη μόνος Νῶε καὶ οἱ μετ’ αὐτοῦ ἐν τῇ κιβωτῷ.",
+        "NAB": "The LORD wiped out every living thing on earth: man and cattle, the creeping things and the birds of the air; all were wiped out from the earth. Only Noah and those with him in the ark were left.",
+        "SYN": "Истребилось всякое существо, которое было на поверхности [всей] земли; от человека до скота, и гадов, и птиц небесных, -- все истребилось с земли, остался только Ной и что _было_ с ним в ковчеге.",
+        "NEO": "Tout être qui se trouve sur la face du sol fut détruit, depuis l’homme jusqu’à l’animal domestique, jusqu’aux reptiles et jusqu’aux oiseaux du ciel ; ils furent exterminés de la terre, et il ne resta que Noé et ce qui était avec lui dans l’arche.",
+        "VAT_ES": "Así fueron eliminados todos los seres que había en la tierra, desde el hombre hasta el ganado. los reptiles y los pájaros del cielo. Sólo quedó Noé y los que estaban con él en el arca.",
+        "CEI": "Così fu sterminato ogni essere che era sulla terra: con gli uomini, gli animali domestici, i rettili e gli uccelli del cielo; essi furono sterminati dalla terra e rimase solo Noè e chi stava con lui nell'arca."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּגְבְּר֥וּ הַ/מַּ֖יִם עַל הָ/אָ֑רֶץ חֲמִשִּׁ֥ים וּ/מְאַ֖ת יֽוֹם׃",
+        "VUL": "Obtinueruntque aquæ terram centum quinquaginta diebus.",
+        "LXX": "⸂⸆⸃ καὶ ὑψώθη τὸ ὕδωρ ἐπὶ τῆς γῆς ἡμέρας ἑκατὸν πεντήκοντα.",
+        "NAB": "The waters maintained their crest over the earth for one hundred and fifty days,",
+        "SYN": "Вода же усиливалась на земле сто пятьдесят дней.",
+        "NEO": "Les eaux furent hautes sur la terre pendant cent cinquante jours.",
+        "VAT_ES": "Y las aguas inundaron la tierra por espacio de ciento cincuenta días.",
+        "CEI": "Le acque restarono alte sopra la terra centocinquanta giorni."
+      }
+    }
+  }
+}

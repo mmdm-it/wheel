@@ -1,0 +1,1041 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_041",
+  "book_key": "GENE",
+  "sequence": 41,
+  "chapter_in": {
+    "MT": 41,
+    "VUL": 41,
+    "LXX": 41
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֕י מִ/קֵּ֖ץ שְׁנָתַ֣יִם יָמִ֑ים וּ/פַרְעֹ֣ה חֹלֵ֔ם וְ/הִנֵּ֖ה עֹמֵ֥ד עַל הַ/יְאֹֽר׃",
+        "VUL": "Post duos annos vidit Pharao somnium. Putabat se stare super fluvium,",
+        "LXX": "Ἐγένετο δὲ μετὰ δύο ἔτη ἡμερῶν Φαραὼ ἴδεν ἐνύπνιον. ᾤετο ἑστάναι ἐπὶ τοῦ ποταμοῦ,",
+        "NAB": "After a lapse of two years, Pharaoh had a dream. He saw himself standing by the Nile,",
+        "SYN": "По прошествии двух лет фараону снилось: вот, он стоит у реки;",
+        "NEO": "Deux ans s’étant écoulés, Pharaon eut un songe. Voici, il se tenait près du fleuve,",
+        "VAT_ES": "Dos años después, el Faraón tuvo un sueño: él estaba de pie junto al Nilo,",
+        "CEI": "Al termine di due anni, il faraone sognò di trovarsi presso il Nilo."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּ֣ה מִן הַ/יְאֹ֗ר עֹלֹת֙ שֶׁ֣בַע פָּר֔וֹת יְפ֥וֹת מַרְאֶ֖ה וּ/בְרִיאֹ֣ת בָּשָׂ֑ר וַ/תִּרְעֶ֖ינָה בָּ/אָֽחוּ׃",
+        "VUL": "de quo ascendebant septem boves, pulchræ et crassæ nimis : et pascebantur in locis palustribus.",
+        "LXX": "καὶ ἰδοὺ ὥσπερ ἐκ τοῦ ποταμοῦ ἀνέβαινον ἑπτὰ βόες καλαὶ τῷ εἴδει καὶ ἐκλεκταὶ ταῖς σαρξίν, καὶ ἐβόσκοντο ἐν τῷ ἄχει·",
+        "NAB": "when up out of the Nile came seven cows, handsome and fat; they grazed in the reed grass.",
+        "SYN": "и вот, вышли из реки семь коров, хороших видом и тучных плотью, и паслись в тростнике;",
+        "NEO": "et voici que du fleuve montaient sept vaches belles à voir et grasses de chair, et elles se mirent à paître dans la verdure.",
+        "VAT_ES": "cuando de pronto subieron del río siete vacas hermosas y robustas, que se pusieron a pastar entre los juncos.",
+        "CEI": "Ed ecco salirono dal Nilo sette vacche, belle di aspetto e grasse e si misero a pascolare tra i giunchi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּ֞ה שֶׁ֧בַע פָּר֣וֹת אֲחֵר֗וֹת עֹל֤וֹת אַחֲרֵי/הֶן֙ מִן הַ/יְאֹ֔ר רָע֥וֹת מַרְאֶ֖ה וְ/דַקּ֣וֹת בָּשָׂ֑ר וַֽ/תַּעֲמֹ֛דְנָה אֵ֥צֶל הַ/פָּר֖וֹת עַל שְׂפַ֥ת הַ/יְאֹֽר׃",
+        "VUL": "Aliæ quoque septem emergebant de flumine, fdæ confectæque macie : et pascebantur in ipsa amnis ripa in locis virentibus :",
+        "LXX": "ἄλλαι δὲ ἑπτὰ βόες ἀνέβαινον μετὰ ταύτας ἐκ τοῦ ποταμοῦ, αἰσχραὶ τῷ εἴδει καὶ λεπταὶ ταῖς σαρξίν, καὶ ἐνέμοντο αἱ βόες παρὰ τὸ χεῖλος τοῦ ποταμοῦ ἐν τῷ ἄχει·",
+        "NAB": "Behind them seven other cows, ugly and gaunt, came up out of the Nile; and standing on the bank of the Nile beside the others,",
+        "SYN": "но вот, после них вышли из реки семь коров других, худых видом и тощих плотью, и стали подле тех коров, на берегу реки;",
+        "NEO": "Et voici qu’après elles montaient du fleuve sept autres vaches, laides à voir et maigres de chair, et elles vinrent se mettre à côté des vaches qui étaient sur le bord du fleuve.",
+        "VAT_ES": "Detrás de ella subieron otras siete vacas feas y escuálidas, que se pararon al lado de las primeras;",
+        "CEI": "Ed ecco, dopo quelle, sette altre vacche salirono dal Nilo, brutte di aspetto e magre, e si fermarono accanto alle prime vacche sulla riva del Nilo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/תֹּאכַ֣לְנָה הַ/פָּר֗וֹת רָע֤וֹת הַ/מַּרְאֶה֙ וְ/דַקֹּ֣ת הַ/בָּשָׂ֔ר אֵ֚ת שֶׁ֣בַע הַ/פָּר֔וֹת יְפֹ֥ת הַ/מַּרְאֶ֖ה וְ/הַ/בְּרִיאֹ֑ת וַ/יִּיקַ֖ץ פַּרְעֹֽה׃",
+        "VUL": "devoraveruntque eas, quarum mira species et habitudo corporum erat. Expergefactus Pharao,",
+        "LXX": "καὶ κατέφαγον αἱ ἑπτὰ βόες αἱ αἰσχραὶ καὶ λεπταὶ ταῖς σαρξὶν τὰς ἑπτὰ βόας τὰς καλὰς τῷ εἴδει καὶ τὰς ἐκλεκτάς. ἠγέρθη δὲ Φαραώ.",
+        "NAB": "the ugly, gaunt cows ate up the seven handsome, fat cows. Then Pharaoh woke up.",
+        "SYN": "и съели коровы худые видом и тощие плотью семь коров хороших видом и тучных. И проснулся фараон,",
+        "NEO": "Et les vaches laides à voir et maigres de chair dévorèrent les sept vaches belles à voir et grasses. Alors Pharaon s’éveilla.",
+        "VAT_ES": "y las vacas feas y escuálidas se comieron a las siete vacas hermosas y robustas. En seguida el Faraón se despertó.",
+        "CEI": "Ma le vacche brutte di aspetto e magre divorarono le sette vacche belle di aspetto e grasse. E il faraone si svegliò."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּישָׁ֕ן וַֽ/יַּחֲלֹ֖ם שֵׁנִ֑ית וְ/הִנֵּ֣ה שֶׁ֣בַע שִׁבֳּלִ֗ים עֹל֛וֹת בְּ/קָנֶ֥ה אֶחָ֖ד בְּרִיא֥וֹת וְ/טֹבֽוֹת׃",
+        "VUL": "rursum dormivit, et vidit alterum somnium : septem spicæ pullulabant in culmo uno plenæ atque formosæ :",
+        "LXX": "καὶ ἐνυπνιάσθη τὸ δεύτερον· καὶ ἰδοὺ ἑπτὰ στάχυες ἀνέβαινον ἐν πυθμένι ἑνί, ἐκλεκτοὶ καὶ καλοί·",
+        "NAB": "He fell asleep again and had another dream. He saw seven ears of grain, fat and healthy, growing on a single stalk.",
+        "SYN": "и заснул опять, и снилось ему в другой раз: вот, на одном стебле поднялось семь колосьев тучных и хороших;",
+        "NEO": "Il se rendormit, et il eut un second songe. Et voici, sept épis s’élevaient d’une même tige, gras et beaux.",
+        "VAT_ES": "Luego volvió a dormirse y tuvo otro sueño: siete espigas grandes y lozanas salían de un mismo tallo.",
+        "CEI": "Poi si addormentò e sognò una seconda volta: ecco sette spighe spuntavano da un unico stelo, grosse e belle."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּה֙ שֶׁ֣בַע שִׁבֳּלִ֔ים דַּקּ֖וֹת וּ/שְׁדוּפֹ֣ת קָדִ֑ים צֹמְח֖וֹת אַחֲרֵי/הֶֽן׃",
+        "VUL": "aliæ quoque totidem spicæ tenues, et percussæ uredine oriebantur,",
+        "LXX": "ἄλλοι δὲ ἑπτὰ στάχυες λεπτοὶ καὶ ἀνεμόφθοροι ἀνεφύοντο μετ’ αὐτούς·",
+        "NAB": "Behind them sprouted seven ears of grain, thin and blasted by the east wind;",
+        "SYN": "но вот, после них выросло семь колосьев тощих и иссушенных восточным ветром;",
+        "NEO": "Et sept épis maigres et brûlés par le vent d’orient poussaient après ceux-là.",
+        "VAT_ES": "Pero inmediatamente después brotaron otras siete espigas, delgadas y quemadas por el viento del este;",
+        "CEI": "Ma ecco sette spighe vuote e arse dal vento d'oriente spuntavano dopo quelle."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/תִּבְלַ֨עְנָה֙ הַ/שִּׁבֳּלִ֣ים הַ/דַּקּ֔וֹת אֵ֚ת שֶׁ֣בַע הַֽ/שִּׁבֳּלִ֔ים הַ/בְּרִיא֖וֹת וְ/הַ/מְּלֵא֑וֹת וַ/יִּיקַ֥ץ פַּרְעֹ֖ה וְ/הִנֵּ֥ה חֲלֽוֹם׃",
+        "VUL": "devorantes omnium priorum pulchritudinem. Evigilans Pharao post quietem,",
+        "LXX": "καὶ κατέπιον οἱ ἑπτὰ στάχυες οἱ λεπτοὶ καὶ ἀνεμόφθοροι τοὺς ἑπτὰ στάχυας τοὺς ἐκλεκτοὺς καὶ τοὺς πλήρεις. ἠγέρθη δὲ Φαραώ, καὶ ἦν ἐνύπνιον.",
+        "NAB": "and the seven thin ears swallowed up the seven fat, healthy ears. Then Pharaoh woke up, to find it was only a dream.",
+        "SYN": "и пожрали тощие колосья семь колосьев тучных и полных. И проснулся фараон и _понял,_ _что_ это сон.",
+        "NEO": "Et les épis maigres engloutirent les sept épis gras et pleins. Alors Pharaon s’éveilla. Et voilà, c’était un songe.",
+        "VAT_ES": "y las espigas delgadas devoraron a las siete espigas grandes y cargadas de granos. Cuando se despertó, el Faraón se dio cuenta de que había estado soñando.",
+        "CEI": "Le spighe vuote inghiottirono le sette spighe grosse e piene. Poi il faraone si svegliò: era stato un sogno."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֤י בַ/בֹּ֨קֶר֙ וַ/תִּפָּ֣עֶם רוּח֔/וֹ וַ/יִּשְׁלַ֗ח וַ/יִּקְרָ֛א אֶת כָּל חַרְטֻמֵּ֥י מִצְרַ֖יִם וְ/אֶת כָּל חֲכָמֶ֑י/הָ וַ/יְסַפֵּ֨ר פַּרְעֹ֤ה לָ/הֶם֙ אֶת חֲלֹמ֔/וֹ וְ/אֵין פּוֹתֵ֥ר אוֹתָ֖/ם לְ/פַרְעֹֽה׃",
+        "VUL": "et facto mane, pavore perterritus, misit ad omnes conjectores Ægypti, cunctosque sapientes, et accersitis narravit somnium, nec erat qui interpretaretur.",
+        "LXX": "ἐγένετο δὲ πρωὶ καὶ ἐταράχθη ἡ ψυχὴ αὐτοῦ, καὶ ἀποστείλας ἐκάλεσεν πάντας τοὺς ἐξηγητὰς Αἰγύπτου καὶ πάντας τοὺς σοφοὺς αὐτῆς· καὶ διηγήσατο αὐτοῖς Φαραὼ τὸ ἐνύπνιον, καὶ οὐκ ἦν ὁ ἀπαγγέλλων αὐτὸ τῷ Φαραώ.",
+        "NAB": "Next morning his spirit was agitated. So he summoned all the magicians and sages of Egypt and recounted his dreams to them; but no one could interpret his dreams for him.",
+        "SYN": "Утром смутился дух его, и послал он, и призвал всех волхвов Египта и всех мудрецов его, и рассказал им фараон сон свой; но не было никого, кто бы истолковал его фараону.",
+        "NEO": "Le matin, Pharaon eut l’esprit agité, et il fit appeler tous les scribes et tous les sages d’Égypte. Il leur raconta ses songes, mais personne ne put les expliquer à Pharaon.",
+        "VAT_ES": "A la mañana siguiente, el Faraón se sintió muy preocupado y mandó llamar a todos los magos y sabios de Egipto, para contarles sus sueños. Pero nadie se los pudo interpretar.",
+        "CEI": "Alla mattina il suo spirito ne era turbato, perciò convocò tutti gli indovini e tutti i saggi dell'Egitto. Il faraone raccontò loro il sogno, ma nessuno lo sapeva interpretare al faraone."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּר֙ שַׂ֣ר הַ/מַּשְׁקִ֔ים אֶת פַּרְעֹ֖ה לֵ/אמֹ֑ר אֶת חֲטָאַ֕/י אֲנִ֖י מַזְכִּ֥יר הַ/יּֽוֹם׃",
+        "VUL": "Tunc demum reminiscens pincernarum magister, ait : Confiteor peccatum meum :",
+        "LXX": "καὶ ἐλάλησεν ὁ ἀρχιοινοχόος πρὸς Φαραὼ λέγων Τὴν ἁμαρτίαν μου ἀναμιμνήσκω σήμερον.",
+        "NAB": "Then the chief cupbearer spoke up and said to Pharaoh: \"On this occasion I am reminded of my negligence.",
+        "SYN": "И стал говорить главный виночерпий фараону и сказал: грехи мои вспоминаю я ныне;",
+        "NEO": "Alors le chef des échansons, prenant la parole, dit à Pharaon : « Je vais rappeler aujourd’hui mes fautes.",
+        "VAT_ES": "Entonces el copero mayor se dirigió al Faraón y le dijo: «Ahora reconozco mi negligencia.",
+        "CEI": "Allora il capo dei coppieri parlò al faraone: \"Io devo ricordare oggi le mie colpe."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "פַּרְעֹ֖ה קָצַ֣ף עַל עֲבָדָ֑י/ו וַ/יִּתֵּ֨ן אֹתִ֜/י בְּ/מִשְׁמַ֗ר בֵּ֚ית שַׂ֣ר הַ/טַּבָּחִ֔ים אֹתִ֕/י וְ/אֵ֖ת שַׂ֥ר הָ/אֹפִֽים׃",
+        "VUL": "iratus rex servis suis, me et magistrum pistorum retrudi jussit in carcerem principis militum :",
+        "LXX": "Φαραὼ ὠργίσθη τοῖς παισὶν αὐτοῦ, καὶ ἔθετο ἡμᾶς ἐν φυλακῇ ἐν τῷ οἴκῳ τοῦ ἀρχιδεσμοφύλακος, ἐμέ τε καὶ τὸν ἀρχισιτοποιόν·",
+        "NAB": "Once, when Pharaoh was angry, he put me and the chief baker in custody in the house of the chief steward.",
+        "SYN": "фараон прогневался на рабов своих и отдал меня и главного хлебодара под стражу в дом начальника телохранителей;",
+        "NEO": "Pharaon était irrité contre ses serviteurs, et il m’avait mis en prison dans la maison du chef des gardes, moi et le chef des panetiers.",
+        "VAT_ES": "En cierta oportunidad, el Faraón se irritó contra sus servidores, y me puso bajo custodia, junto con el panadero mayor, en la casa del capitán de guardias.",
+        "CEI": "Il faraone si era adirato contro i suoi servi e li aveva messi in carcere nella casa del capo delle guardie, me e il capo dei panettieri."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/נַּֽחַלְמָ֥/ה חֲל֛וֹם בְּ/לַ֥יְלָה אֶחָ֖ד אֲנִ֣י וָ/ה֑וּא אִ֛ישׁ כְּ/פִתְר֥וֹן חֲלֹמ֖/וֹ חָלָֽמְנוּ׃",
+        "VUL": "ubi una nocte uterque vidimus somnium præsagum futurorum.",
+        "LXX": "καὶ ἴδομεν ἐνύπνιον ἐν νυκτὶ μιᾷ, ἐγὼ καὶ αὐτός· ἕκαστος κατὰ τὸ αὐτοῦ ἐνύπνιον ἴδομεν.",
+        "NAB": "Later, we both had dreams on the same night, and each of our dreams had its own meaning.",
+        "SYN": "и снился нам сон в одну ночь, мне и ему, каждому снился сон особенного значения;",
+        "NEO": "Nous eûmes un songe dans la même nuit, moi et lui, nous révâmes chacun selon la signification de son songe.",
+        "VAT_ES": "El y yo tuvimos un sueño en el transcurso de una misma noche, cada sueño con su propio significado.",
+        "CEI": "Noi facemmo un sogno nella stessa notte, io e lui; ma avemmo ciascuno un sogno con un significato particolare."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/שָׁ֨ם אִתָּ֜/נוּ נַ֣עַר עִבְרִ֗י עֶ֚בֶד לְ/שַׂ֣ר הַ/טַּבָּחִ֔ים וַ/נְּ֨סַפֶּר ל֔/וֹ וַ/יִּפְתָּר לָ֖/נוּ אֶת חֲלֹמֹתֵ֑י/נוּ אִ֥ישׁ כַּ/חֲלֹמ֖/וֹ פָּתָֽר׃",
+        "VUL": "Erat ibi puer hebræus, ejusdem ducis militum famulus : cui narrantes somnia,",
+        "LXX": "ἦν δὲ ἐκεῖ μεθ’ ἡμῶν νεανίσκος παῖς Ἐβραῖος τοῦ ἀρχιμαγείρου, καὶ διηγησάμεθα αὐτῷ, καὶ συνέκρινεν ἡμῖν.",
+        "NAB": "There with us was a Hebrew youth, a slave of the chief steward; and when we told him our dreams, he interpreted them for us and explained for each of us the meaning of his dream.",
+        "SYN": "там же был с нами молодой Еврей, раб начальника телохранителей; мы рассказали ему сны наши, и он истолковал нам каждому соответственно с его сновидением;",
+        "NEO": "Il y avait là avec nous un jeune Hébreu, serviteur du chef des gardes. Nous lui racontâmes nos songes, et il nous en donna l’interprétation ; à chacun il interpréta son songe,",
+        "VAT_ES": "Con nosotros estaba un joven hebreo, un servidor del capitán de guardias; nosotros le contamos nuestros sueños, y él los interpretó, dando a cada uno su explicación.",
+        "CEI": "Ora era là con noi un giovane ebreo, schiavo del capo delle guardie; noi gli raccontammo i nostri sogni ed egli ce li interpretò, dando a ciascuno spiegazione del suo sogno."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֛י כַּ/אֲשֶׁ֥ר פָּֽתַר לָ֖/נוּ כֵּ֣ן הָיָ֑ה אֹתִ֛/י הֵשִׁ֥יב עַל כַּנִּ֖/י וְ/אֹת֥/וֹ תָלָֽה׃",
+        "VUL": "audivimus quidquid postea rei probavit eventus ; ego enim redditus sum officio meo, et ille suspensus est in cruce.",
+        "LXX": "ἐγενήθη δὲ καθὼς συνέκρινεν ἡμῖν, οὕτως καὶ συνέβη, ἐμέ τε ἀποκατασταθῆναι ἐπὶ τὴν ἀρχήν μου, ἐκεῖνον δὲ κρεμασθῆναι.",
+        "NAB": "And it turned out just as he had told us: I was restored to my post, but the other man was impaled.\"",
+        "SYN": "и как он истолковал нам, так и сбылось: я возвращен на место мое, а тот повешен.",
+        "NEO": "et les choses se passèrent comme il avait interprété : moi, Pharaon me rétablit dans mon poste, et lui, on le pendit. »",
+        "VAT_ES": "Y todo sucedió como él lo había interpretado: yo fui restituido a mi cargo, mientras que el otro fue ahorcado».",
+        "CEI": "Proprio come ci aveva interpretato, così avvenne: io fui restituito alla mia carica e l'altro fu impiccato\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח פַּרְעֹה֙ וַ/יִּקְרָ֣א אֶת יוֹסֵ֔ף וַ/יְרִיצֻ֖/הוּ מִן הַ/בּ֑וֹר וַ/יְגַלַּח֙ וַ/יְחַלֵּ֣ף שִׂמְלֹתָ֔י/ו וַ/יָּבֹ֖א אֶל פַּרְעֹֽה׃",
+        "VUL": "Protinus ad regis imperium eductum de carcere Joseph totonderunt : ac veste mutata obtulerunt ei.",
+        "LXX": "Ἀποστείλας δὲ Φαραὼ ἐκάλεσεν τὸν Ἰωσήφ, καὶ ἐξήγαγεν αὐτὸν ἐκ τοῦ ὀχυρώματος· καὶ ἐξύρησαν αὐτόν καὶ ἤλλαξαν τὴν στολὴν αὐτοῦ, καὶ ἦλθεν πρὸς Φαραώ.",
+        "NAB": "Pharaoh therefore had Joseph summoned, and they hurriedly brought him from the dungeon. After he shaved and changed his clothes, he came into Pharaoh's presence.",
+        "SYN": "И послал фараон и позвал Иосифа. И поспешно вывели его из темницы. Он остригся и переменил одежду свою и пришел к фараону.",
+        "NEO": "Pharaon envoya appeler Joseph, et on le fit sortir en hâte de la prison. Il se rasa, mit d’autres vêtements et se rendit vers Pharaon.",
+        "VAT_ES": "El Faraón mandó llamar a José, que sin pérdida de tiempo fue sacado de la prisión. Este se afeitó, se cambió de ropa y compareció ante el Faraón.",
+        "CEI": "Allora il faraone convocò Giuseppe. Lo fecero uscire in fretta dal sotterraneo ed egli si rase, si cambiò gli abiti e si presentò al faraone."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר פַּרְעֹה֙ אֶל יוֹסֵ֔ף חֲל֣וֹם חָלַ֔מְתִּי וּ/פֹתֵ֖ר אֵ֣ין אֹת֑/וֹ וַ/אֲנִ֗י שָׁמַ֤עְתִּי עָלֶ֨י/ךָ֙ לֵ/אמֹ֔ר תִּשְׁמַ֥ע חֲל֖וֹם לִ/פְתֹּ֥ר אֹתֽ/וֹ׃",
+        "VUL": "Cui ille ait : Vidi somnia, nec est qui edisserat : quæ audivi te sapientissime conjicere.",
+        "LXX": "εἶπεν δὲ Φαραὼ τῷ Ἰωσήφ Ἐνύπνιον ἑώρακα, καὶ ὁ συγκρίνων αὐτὸ οὐκ ἔστιν· ἐγὼ δὲ ἀκήκοα περὶ σοῦ λεγόντων, ἀκούσαντά σε ἐνύπνια συγκρῖναι αὐτά.",
+        "NAB": "Pharaoh then said to him: \"I had certain dreams that no one can interpret. But I hear it said of you that the moment you are told a dream you can interpret it.\"",
+        "SYN": "Фараон сказал Иосифу: мне снился сон, и нет никого, кто бы истолковал его, а о тебе я слышал, что ты умеешь толковать сны.",
+        "NEO": "Et Pharaon dit à Joseph : « J’ai eu un songe que personne ne peut interpréter ; et j’ai entendu dire de toi que, quand tu entends un songe, tu l’interprètes. »",
+        "VAT_ES": "El Faraón dijo a José: «He tenido un sueño que nadie puede interpretar. Pero me han informado que te basta oír un sueño para interpretarlo».",
+        "CEI": "Il faraone disse a Giuseppe: \"Ho fatto un sogno e nessuno lo sa interpretare; ora io ho sentito dire di te che ti basta ascoltare un sogno per interpretarlo subito\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַן יוֹסֵ֧ף אֶת פַּרְעֹ֛ה לֵ/אמֹ֖ר בִּלְעָדָ֑/י אֱלֹהִ֕ים יַעֲנֶ֖ה אֶת שְׁל֥וֹם פַּרְעֹֽה׃",
+        "VUL": "Respondit Joseph : Absque me Deus respondebit prospera Pharaoni.",
+        "LXX": "ἀποκριθεὶς δὲ Ἰωσὴφ τῷ Φαραὼ εἶπεν Ἄνευ τοῦ θεοῦ οὐκ ἀποκριθήσεται τὸ σωτήριον Φαραώ.",
+        "NAB": "\"It is not I,\" Joseph replied to Pharaoh, \"but God who will give Pharaoh the right answer.\"",
+        "SYN": "И отвечал Иосиф фараону, говоря: это не мое; Бог даст ответ во благо фараону.",
+        "NEO": "Joseph répondit à Pharaon en disant : « Ce n’est pas moi, c’est Dieu qui donnera une réponse favorable à Pharaon. »",
+        "VAT_ES": "José respondió al Faraón: «No soy yo, sino Dios, el que dará al Faraón la respuesta conveniente».",
+        "CEI": "Giuseppe rispose al faraone: \"Non io, ma Dio darà la risposta per la salute del faraone!\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר פַּרְעֹ֖ה אֶל יוֹסֵ֑ף בַּ/חֲלֹמִ֕/י הִנְ/נִ֥י עֹמֵ֖ד עַל שְׂפַ֥ת הַ/יְאֹֽר׃",
+        "VUL": "Narravit ergo Pharao quod viderat : Putabam me stare super ripam fluminis,",
+        "LXX": "ἐλάλησεν δὲ Φαραὼ τῷ Ἰωσὴφ λέγων Ἐν τῷ ὕπνῳ μου ᾤμην ἑστάναι ἐπὶ τὸ χεῖλος τοῦ ποταμοῦ·",
+        "NAB": "Then Pharaoh said to Joseph: \"In my dream, I was standing on the bank of the Nile,",
+        "SYN": "И сказал фараон Иосифу: мне снилось: вот, стою я на берегу реки;",
+        "NEO": "Pharaon dit alors à Joseph : « Dans mon songe, voici, je me tenais sur le bord du fleuve,",
+        "VAT_ES": "Entonces el Faraón dijo a José: «Soñé que estaba parado a orilla del Nilo,",
+        "CEI": "Allora il faraone disse a Giuseppe: \"Nel mio sogno io mi trovavo sulla riva del Nilo."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּ֣ה מִן הַ/יְאֹ֗ר עֹלֹת֙ שֶׁ֣בַע פָּר֔וֹת בְּרִיא֥וֹת בָּשָׂ֖ר וִ/יפֹ֣ת תֹּ֑אַר וַ/תִּרְעֶ֖ינָה בָּ/אָֽחוּ׃",
+        "VUL": "et septem boves de amne conscendere, pulchras nimis, et obesis carnibus : quæ in pastu paludis virecta carpebant.",
+        "LXX": "καὶ ὥσπερ ἐκ τοῦ ποταμοῦ ἀνέβαινον ἑπτὰ βόες καλαὶ τῷ εἴδει καὶ ἐκλεκταὶ ταῖς σαρξίν, καὶ ἐνέμοντο ἐν τῷ ἄχει·",
+        "NAB": "when up from the Nile came seven cows, fat and well-formed; they grazed in the reed grass.",
+        "SYN": "и вот, вышли из реки семь коров тучных плотью и хороших видом и паслись в тростнике;",
+        "NEO": "et voici que du fleuve montaient sept vaches grasses de chair et de belle apparence, et elles se mirent à paître dans la verdure.",
+        "VAT_ES": "y de pronto subían del río siete vacas robustas y hermosas, que se pusieron a pastar entre los juncos.",
+        "CEI": "Quand'ecco salirono dal Nilo sette vacche grasse e belle di forma e si misero a pascolare tra i giunchi."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּ֞ה שֶֽׁבַע פָּר֤וֹת אֲחֵרוֹת֙ עֹל֣וֹת אַחֲרֵי/הֶ֔ן דַּלּ֨וֹת וְ/רָע֥וֹת תֹּ֛אַר מְאֹ֖ד וְ/רַקּ֣וֹת בָּשָׂ֑ר לֹֽא רָאִ֧יתִי כָ/הֵ֛נָּה בְּ/כָל אֶ֥רֶץ מִצְרַ֖יִם לָ/רֹֽעַ׃",
+        "VUL": "Et ecce, has sequebantur aliæ septem boves, in tantum deformes et macilentæ, ut numquam tales in terra Ægypti viderim :",
+        "LXX": "καὶ ἰδοὺ ἑπτὰ βόες ἕτεραι ἀνέβαινον ὀπίσω αὐτῶν ἐκ τοῦ ποταμοῦ πονηραὶ καὶ αἰσχραὶ τῷ εἴδει καὶ λεπταὶ ταῖς σαρξίν, καὶ ἐνέμοντο ἐν τῷ ἄχει· οἵας οὐκ εἶδον τοιαύτας ἐν ὅλῃ Αἰγύπτῳ αἰσχροτέρας·",
+        "NAB": "Behind them came seven other cows, scrawny, most ill-formed and gaunt. Never have I seen such ugly specimens as these in all the land of Egypt!",
+        "SYN": "но вот, после них вышли семь коров других, худых, очень дурных видом и тощих плотью: я не видывал во всей земле Египетской таких худых, как они;",
+        "NEO": "Et voici qu’après elles montaient sept autres vaches, maigres, fort laides d’aspect et décharnées ; je n’en ai pas vu de pareilles en laideur dans tout le pays d’Égypte.",
+        "VAT_ES": "Detrás de ellas subieron otras siete vacas, escuálidas, de aspecto horrible y esqueléticas, como nunca había visto en todo el territorio de Egipto.",
+        "CEI": "Ed ecco sette altre vacche salirono dopo quelle, deboli, brutte di forma e magre: non ne vidi mai di così brutte in tutto il paese d'Egitto."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/תֹּאכַ֨לְנָה֙ הַ/פָּר֔וֹת הָ/רַקּ֖וֹת וְ/הָ/רָע֑וֹת אֵ֣ת שֶׁ֧בַע הַ/פָּר֛וֹת הָ/רִאשֹׁנ֖וֹת הַ/בְּרִיאֹֽת׃",
+        "VUL": "quæ, devoratis et consumptis prioribus,",
+        "LXX": "καὶ κατέφαγον αἱ ἑπτὰ βόες αἱ αἰσχραὶ καὶ λεπταὶ τὰς ἑπτὰ βόας τὰς πρώτας τὰς καλὰς καὶ ἐκλεκτάς,",
+        "NAB": "The gaunt, ugly cows ate up the first seven fat cows.",
+        "SYN": "и съели тощие и худые коровы прежних семь коров тучных;",
+        "NEO": "Les vaches maigres et laides dévorèrent les sept premières vaches, celles qui étaient grasses ;",
+        "VAT_ES": "Y las vacas escuálidas y feas devoraron a las otras siete vacas robustas.",
+        "CEI": "Le vacche magre e brutte divorarono le prime sette vacche, quelle grasse."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/תָּבֹ֣אנָה אֶל קִרְבֶּ֗/נָה וְ/לֹ֤א נוֹדַע֙ כִּי בָ֣אוּ אֶל קִרְבֶּ֔/נָה וּ/מַרְאֵי/הֶ֣ן רַ֔ע כַּ/אֲשֶׁ֖ר בַּ/תְּחִלָּ֑ה וָ/אִיקָֽץ׃",
+        "VUL": "nullum saturitatis dedere vestigium : sed simili macie et squalore torpebant. Evigilans, rursus sopore depressus,",
+        "LXX": "καὶ εἰσῆλθον εἰς τὰς κοιλίας αὐτῶν· καὶ οὐ διάδηλοι ἐγένοντο ὅτι εἰσῆλθον εἰς τὰς κοιλίας αὐτῶν, καὶ αἱ ὄψεις αὐτῶν αἰσχραὶ καθὰ καὶ τὴν ἀρχήν. ἐξεγερθεὶς δὲ ἐκοιμήθην.",
+        "NAB": "But when they had consumed them, no one could tell that they had done so, because they looked as ugly as before. Then I woke up.",
+        "SYN": "и вошли _тучные_ в утробу их, но не приметно было, что они вошли в утробу их: они были так же худы видом, как и сначала. И я проснулся.",
+        "NEO": "celles-ci entrèrent dans leur ventre, sans qu’il parût qu’elles y fussent entrées ; leur aspect était aussi laid qu’auparavant. Et je m’éveillai.",
+        "VAT_ES": "Pero una vez que las comieron, nadie hubiera dicho que las tenían en su vientre, porque seguían tan horribles como antes. En seguida me desperté.",
+        "CEI": "Queste entrarono nel loro corpo, ma non si capiva che vi fossero entrate, perché il loro aspetto era brutto come prima. E mi svegliai."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וָ/אֵ֖רֶא בַּ/חֲלֹמִ֑/י וְ/הִנֵּ֣ה שֶׁ֣בַע שִׁבֳּלִ֗ים עֹלֹ֛ת בְּ/קָנֶ֥ה אֶחָ֖ד מְלֵאֹ֥ת וְ/טֹבֽוֹת׃",
+        "VUL": "vidi somnium. Septem spicæ pullulabant in culmo uno plenæ atque pulcherrimæ.",
+        "LXX": "καὶ ἴδον πάλιν ἐν τῷ ὕπνῳ μου, καὶ ὥσπερ ἑπτὰ στάχυες ἀνέβαινον ἐν πυθμένι ἑνὶ πλήρεις καὶ καλοί·",
+        "NAB": "In another dream I saw seven ears of grain, fat and healthy, growing on a single stalk.",
+        "SYN": "_Потом_ снилось мне: вот, на одном стебле поднялись семь колосьев полных и хороших;",
+        "NEO": "Je vis encore en songe, et voici sept épis qui s’élevaient sur une même tige, pleins et beaux ;",
+        "VAT_ES": "En el otro sueño, vi siete espigas hermosas y cargadas de granos, que brotaban de un mismo tallo.",
+        "CEI": "Poi vidi nel sogno che sette spighe spuntavano da un solo stelo, piene e belle."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּה֙ שֶׁ֣בַע שִׁבֳּלִ֔ים צְנֻמ֥וֹת דַּקּ֖וֹת שְׁדֻפ֣וֹת קָדִ֑ים צֹמְח֖וֹת אַחֲרֵי/הֶֽם׃",
+        "VUL": "Aliæ quoque septem tenues et percussæ uredine, oriebantur e stipula :",
+        "LXX": "ἄλλοι δὲ ἑπτὰ στάχυες λεπτοὶ καὶ ἀνεμόφθοροι ἀνεφύοντο ἐχόμενοι αὐτῶν·",
+        "NAB": "Behind them sprouted seven ears of grain, shriveled and thin and blasted by the east wind;",
+        "SYN": "но вот, после них выросло семь колосьев тонких, тощих и иссушенных восточным ветром;",
+        "NEO": "et voici, sept épis chétifs, maigres et brûlés par le vent d’orient, qui poussaient après ceux-là.",
+        "VAT_ES": "Después de ellas brotaron otras siete espigas, marchitas, delgadas y quemadas por el viento del este,",
+        "CEI": "Ma ecco sette spighe secche, vuote e arse dal vento d'oriente, spuntavano dopo quelle."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/תִּבְלַ֨עְןָ֙ הָ/שִׁבֳּלִ֣ים הַ/דַּקֹּ֔ת אֵ֛ת שֶׁ֥בַע הַֽ/שִׁבֳּלִ֖ים הַ/טֹּב֑וֹת וָֽ/אֹמַר֙ אֶל הַֽ/חַרְטֻמִּ֔ים וְ/אֵ֥ין מַגִּ֖יד לִֽ/י׃",
+        "VUL": "quæ priorum pulchritudinem devoraverunt. Narravi conjectoribus somnium, et nemo est qui edisserat.",
+        "LXX": "καὶ κατέπιον οἱ ἑπτὰ στάχυες οἱ λεπτοὶ καὶ ἀνεμόφθοροι τοὺς ἑπτὰ στάχυας τοὺς καλούς καὶ τοὺς πλήρεις. εἶπα οὖν τοῖς ἐξηγηταῖς, καὶ οὐκ ἦν ὁ ἀπαγγέλλων μοι.",
+        "NAB": "and the seven thin ears swallowed up the seven healthy ears. I have spoken to the magicians, but none of them can give me an explanation.\"",
+        "SYN": "и пожрали тощие колосья семь колосьев хороших. Я рассказал это волхвам, но никто не изъяснил мне.",
+        "NEO": "Et les épis maigres engloutirent les sept beaux épis. J’ai raconté cela aux scribes, et aucun d’eux ne me l’explique. »",
+        "VAT_ES": "que devoraron a las siete espigas hermosas. Yo he contado todo esto a los adivinos, pero ninguno me ha dado una explicación».",
+        "CEI": "Le spighe vuote inghiottirono le sette spighe belle. Ora io l'ho detto agli indovini, ma nessuno mi dà la spiegazione\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יוֹסֵף֙ אֶל פַּרְעֹ֔ה חֲל֥וֹם פַּרְעֹ֖ה אֶחָ֣ד ה֑וּא אֵ֣ת אֲשֶׁ֧ר הָ/אֱלֹהִ֛ים עֹשֶׂ֖ה הִגִּ֥יד לְ/פַרְעֹֽה׃",
+        "VUL": "Respondit Joseph : Somnium regis unum est : quæ facturus est Deus, ostendit Pharaoni.",
+        "LXX": "καὶ εἶπεν Ἰωσὴφ τῷ Φαραώ Τὸ ἐνύπνιον Φαραὼ ἕν ἐστιν· ὅσα ὁ θεὸς ποιεῖ ἔδειξεν τῷ Φαραώ.",
+        "NAB": "Joseph said to Pharaoh: \"Both of Pharaoh's dreams have the same meaning. God has thus foretold to Pharaoh what he is about to do.",
+        "SYN": "И сказал Иосиф фараону: сон фараонов один: что Бог сделает, то Он возвестил фараону.",
+        "NEO": "Joseph dit à Pharaon : « Le songe de Pharaon est un ; Dieu a fait connaître à Pharaon ce qu’il va faire.",
+        "VAT_ES": "José dijo al Faraón: «El Faraón ha soñado una sola cosa, y así Dios le ha anunciado lo que está a punto de realizar.",
+        "CEI": "Allora Giuseppe disse al faraone: \"Il sogno del faraone è uno solo: quello che Dio sta per fare, lo ha indicato al faraone."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "שֶׁ֧בַע פָּרֹ֣ת הַ/טֹּבֹ֗ת שֶׁ֤בַע שָׁנִים֙ הֵ֔נָּה וְ/שֶׁ֤בַע הַֽ/שִּׁבֳּלִים֙ הַ/טֹּבֹ֔ת שֶׁ֥בַע שָׁנִ֖ים הֵ֑נָּה חֲל֖וֹם אֶחָ֥ד הֽוּא׃",
+        "VUL": "Septem boves pulchræ, et septem spicæ plenæ, septem ubertatis anni sunt : eamdemque vim somnii comprehendunt.",
+        "LXX": "αἱ ἑπτὰ βόες αἱ καλαὶ ἑπτὰ ἔτη ἐστίν, καὶ οἱ ἑπτὰ στάχυες οἱ καλοὶ ἑπτὰ ἔτη ἐστίν· τὸ ἐνύπνιον Φαραὼ ἕν ἐστιν.",
+        "NAB": "The seven healthy cows are seven years, and the seven healthy ears are seven years - the same in each dream.",
+        "SYN": "Семь коров хороших, это семь лет; и семь колосьев хороших, это семь лет: сон один;",
+        "NEO": "Les sept belles vaches sont sept années, et les sept beaux épis sont sept années, c’est un seul songe.",
+        "VAT_ES": "Las siete vacas hermosas y las siete espigas lozanas representan siete años. Los dos sueños se tratan de lo mismo.",
+        "CEI": "Le sette vacche belle sono sette anni e le sette spighe belle sono sette anni: è un solo sogno."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/שֶׁ֣בַע הַ֠/פָּרוֹת הָֽ/רַקּ֨וֹת וְ/הָ/רָעֹ֜ת הָ/עֹלֹ֣ת אַחֲרֵי/הֶ֗ן שֶׁ֤בַע שָׁנִים֙ הֵ֔נָּה וְ/שֶׁ֤בַע הַֽ/שִׁבֳּלִים֙ הָ/רֵק֔וֹת שְׁדֻפ֖וֹת הַ/קָּדִ֑ים יִהְי֕וּ שֶׁ֖בַע שְׁנֵ֥י רָעָֽב׃",
+        "VUL": "Septem quoque boves tenues atque macilentæ, quæ ascenderunt post eas, et septem spicæ tenues, et vento urente percussæ, septem anni venturæ sunt famis.",
+        "LXX": "καὶ αἱ ἑπτὰ βόες αἱ λεπταὶ αἱ ἀναβαίνουσαι ὀπίσω αὐτῶν ἑπτὰ ἔτη ἐστίν, καὶ οἱ ἑπτὰ στάχυες οἱ λεπτοὶ καὶ ἀνεμόφθοροι· ἔσονται ἑπτὰ ἔτη λιμοῦ.",
+        "NAB": "So also, the seven thin, ugly cows that came up after them are seven years, as are the seven thin, wind-blasted ears; they are seven years of famine.",
+        "SYN": "и семь коров тощих и худых, вышедших после тех, это семь лет, также и семь колосьев тощих и иссушенных восточным ветром, это семь лет голода.",
+        "NEO": "Les sept vaches chétives et laides qui montaient après elles sont sept années, et les sept épis vides, brûlés par le vent d’orient, seront sept années de famine.",
+        "VAT_ES": "Y las siete vacas escuálidas y feas que subieron después de ellas son siete años, lo mismo que las siete espigas sin grano y quemadas por el viento del este. Estos serán siete años de hambre.",
+        "CEI": "E le sette vacche magre e brutte, che salgono dopo quelle, sono sette anni e le sette spighe vuote, arse dal vento d'oriente, sono sette anni: vi saranno sette anni di carestia."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "ה֣וּא הַ/דָּבָ֔ר אֲשֶׁ֥ר דִּבַּ֖רְתִּי אֶל פַּרְעֹ֑ה אֲשֶׁ֧ר הָ/אֱלֹהִ֛ים עֹשֶׂ֖ה הֶרְאָ֥ה אֶת פַּרְעֹֽה׃",
+        "VUL": "Qui hoc ordine complebuntur :",
+        "LXX": "τὸ δὲ ῥῆμα ὃ εἴρηκα Φαραώ· ὅσα ὁ θεὸς ποιεῖ ἔδειξεν τῷ Φαραώ.",
+        "NAB": "It is just as I told Pharaoh: God has revealed to Pharaoh what he is about to do.",
+        "SYN": "Вот почему сказал я фараону: что Бог сделает, то Он показал фараону.",
+        "NEO": "Telle est la parole que j’ai dite à Pharaon : Dieu a fait voir à Pharaon ce qu’il va faire.",
+        "VAT_ES": "Es como lo acabo de decir al Faraón: Dios ha querido mostrarle lo que está a punto de realizar.",
+        "CEI": "È appunto ciò che ho detto al faraone: quanto Dio sta per fare, l'ha manifestato al faraone."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "הִנֵּ֛ה שֶׁ֥בַע שָׁנִ֖ים בָּא֑וֹת שָׂבָ֥ע גָּד֖וֹל בְּ/כָל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "VUL": "ecce septem anni venient fertilitatis magnæ in universa terra Ægypti,",
+        "LXX": "ἰδοὺ ἑπτὰ ἔτη ἔρχεται εὐθηνία πολλὴ ἐν πάσῃ γῇ Αἰγύπτῳ·",
+        "NAB": "Seven years of great abundance are now coming throughout the land of Egypt;",
+        "SYN": "Вот, наступает семь лет великого изобилия во всей земле Египетской;",
+        "NEO": "Voici, sept années de grande abondance vont venir dans tout le pays d’Égypte.",
+        "VAT_ES": "En los próximos siete años habrá en todo Egipto una gran abundancia.",
+        "CEI": "Ecco stanno per venire sette anni, in cui sarà grande abbondanza in tutto il paese d'Egitto."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ֠/קָמוּ שֶׁ֜בַע שְׁנֵ֤י רָעָב֙ אַחֲרֵי/הֶ֔ן וְ/נִשְׁכַּ֥ח כָּל הַ/שָּׂבָ֖ע בְּ/אֶ֣רֶץ מִצְרָ֑יִם וְ/כִלָּ֥ה הָ/רָעָ֖ב אֶת הָ/אָֽרֶץ׃",
+        "VUL": "quos sequentur septem anni alii tantæ sterilitatis, ut oblivioni tradatur cuncta retro abundantia : consumptura est enim fames omnem terram,",
+        "LXX": "ἥξει δὲ ἑπτὰ ἔτη λιμοῦ μετὰ ταῦτα, καὶ ἐπιλησθήσονται τῆς πλησμονῆς ἐν ὅλῃ τῇ γῇ Αἰγύπτῳ, καὶ ἀναλώσει ὁ λιμὸς τὴν γῆν·",
+        "NAB": "but these will be followed by seven years of famine, when all the abundance in the land of Egypt will be forgotten. When the famine has ravaged the land,",
+        "SYN": "после них настанут семь лет голода, и забудется все то изобилие в земле Египетской, и истощит голод землю,",
+        "NEO": "Sept années de famine viendront ensuite, et l’on oubliera toute cette abondance dans le pays d’Égypte, et la famine consumera le pays.",
+        "VAT_ES": "Pero inmediatamente después, sobrevendrán siete años de hambre, durante los cuales en Egipto no quedará ni el recuerdo de aquella abundancia, porque el hambre asolará al país.",
+        "CEI": "Poi a questi succederanno sette anni di carestia; si dimenticherà tutta quella abbondanza nel paese d'Egitto e la carestia consumerà il paese."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא יִוָּדַ֤ע הַ/שָּׂבָע֙ בָּ/אָ֔רֶץ מִ/פְּנֵ֛י הָ/רָעָ֥ב הַ/ה֖וּא אַחֲרֵי כֵ֑ן כִּֽי כָבֵ֥ד ה֖וּא מְאֹֽד׃",
+        "VUL": "et ubertatis magnitudinem perditura est inopiæ magnitudo.",
+        "LXX": "καὶ οὐκ ἐπιγνωσθήσεται ἡ εὐθηνία ἐπὶ τῆς γῆς ἀπὸ τοῦ λιμοῦ τοῦ ἐσομένου μετὰ ταῦτα, ἰσχυρὸς γὰρ ἔσται σφόδρα.",
+        "NAB": "no trace of the abundance will be found in the land because of the famine that follows it - so utterly severe will that famine be.",
+        "SYN": "и неприметно будет прежнее изобилие на земле, по причине голода, который последует, ибо он будет очень тяжел.",
+        "NEO": "On ne s’apercevra plus de l’abondance à cause de cette famine qui suivra dans le pays ; tant elle sera grande.",
+        "VAT_ES": "Entonces nadie sabrá lo que es la abundancia, a causa del hambre, que será muy intensa.",
+        "CEI": "Si dimenticherà che vi era stata l'abbondanza nel paese a causa della carestia venuta in seguito, perché sarà molto dura."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/עַ֨ל הִשָּׁנ֧וֹת הַ/חֲל֛וֹם אֶל פַּרְעֹ֖ה פַּעֲמָ֑יִם כִּֽי נָכ֤וֹן הַ/דָּבָר֙ מֵ/עִ֣ם הָ/אֱלֹהִ֔ים וּ/מְמַהֵ֥ר הָ/אֱלֹהִ֖ים לַ/עֲשֹׂתֽ/וֹ׃",
+        "VUL": "Quod autem vidisti secundo ad eamdem rem pertinens somnium : firmitatis indicium est, eo quod fiat sermo Dei, et velocius impleatur.",
+        "LXX": "περὶ δὲ τοῦ δευτερῶσαι τὸ ἐνύπνιον Φαραὼ δίς, ὅτι ἀληθὲς ἔσται τὸ ῥῆμα τὸ παρὰ τοῦ θεοῦ, καὶ ταχυνεῖ ὁ θεὸς τοῦ ποιῆσαι αὐτό.",
+        "NAB": "That Pharaoh had the same dream twice means that the matter has been reaffirmed by God and that God will soon bring it about.",
+        "SYN": "А что сон повторился фараону дважды, _это_ _значит,_ что сие истинно слово Божие, и что вскоре Бог исполнит сие.",
+        "NEO": "Et si le songe a été répété à Pharaon deux fois, c’est que la chose est décidée de la part de Dieu, et que Dieu se hâtera de l’exécuter.",
+        "VAT_ES": "El hecho de que el Faraón haya tenido dos veces el mismo sueño, significa que este asunto ya está resuelto de parte de Dios y que él lo va a ejecutar de inmediato.",
+        "CEI": "Quanto al fatto che il sogno del faraone si è ripetuto due volte, significa che la cosa è decisa da Dio e che Dio si affretta ad eseguirla."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/עַתָּה֙ יֵרֶ֣א פַרְעֹ֔ה אִ֖ישׁ נָב֣וֹן וְ/חָכָ֑ם וִ/ישִׁיתֵ֖/הוּ עַל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "VUL": "Nunc ergo provideat rex virum sapientem et industrium, et præficiat eum terræ Ægypti :",
+        "LXX": "νῦν οὖν σκέψαι ἄνθρωπον φρόνιμον καὶ συνετόν, καὶ κατάστησον αὐτὸν ἐπὶ τῆς γῆς Αἰγύπτου·",
+        "NAB": "\"Therefore, let Pharaoh seek out a wise and discerning man and put him in charge of the land of Egypt.",
+        "SYN": "И ныне да усмотрит фараон мужа разумного и мудрого и да поставит его над землею Египетскою.",
+        "NEO": "Maintenant, que Pharaon trouve un homme intelligent et sage, et qu’il l’établisse sur le pays d’Égypte.",
+        "VAT_ES": "Por eso, es necesario que el Faraón busque un hombre prudente y sabio, y lo ponga al frente de todo Egipto.",
+        "CEI": "Ora il faraone pensi a trovare un uomo intelligente e saggio e lo metta a capo del paese d'Egitto."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "יַעֲשֶׂ֣ה פַרְעֹ֔ה וְ/יַפְקֵ֥ד פְּקִדִ֖ים עַל הָ/אָ֑רֶץ וְ/חִמֵּשׁ֙ אֶת אֶ֣רֶץ מִצְרַ֔יִם בְּ/שֶׁ֖בַע שְׁנֵ֥י הַ/שָּׂבָֽע׃",
+        "VUL": "qui constituat præpositos per cunctas regiones : et quintam partem fructuum per septem annos fertilitatis,",
+        "LXX": "καὶ ποιησάτω Φαραὼ καὶ καταστησάτω τοπάρχας ἐπὶ τῆς γῆς, καὶ ἀποπεμπτωσάτωσαν πάντα τὰ γενήματα τῆς γῆς Αἰγύπτου τῶν ἑπτὰ ἐτῶν τῆς εὐθηνίας,",
+        "NAB": "Pharaoh should also take action to appoint overseers, so as to regiment the land during the seven years of abundance.",
+        "SYN": "Да повелит фараон поставить над землею надзирателей и собирать в семь лет изобилия пятую часть [всех произведений] земли Египетской;",
+        "NEO": "Que Pharaon établisse en outre des intendants sur le pays, pour lever un cinquième des récoltes du pays d’Égypte pendant les sept années d’abondance.",
+        "VAT_ES": "Además, el Faraón deberá establecer inspectores en todo el país y exigir a los egipcios la quinta parte de las cosechas durante los siete años de abundancia.",
+        "CEI": "Il faraone inoltre proceda ad istituire funzionari sul paese, per prelevare un quinto sui prodotti del paese d'Egitto durante i sette anni di abbondanza."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וְ/יִקְבְּצ֗וּ אֶת כָּל אֹ֨כֶל֙ הַ/שָּׁנִ֣ים הַ/טֹּבֹ֔ת הַ/בָּאֹ֖ת הָ/אֵ֑לֶּה וְ/יִצְבְּרוּ בָ֞ר תַּ֧חַת יַד פַּרְעֹ֛ה אֹ֥כֶל בֶּ/עָרִ֖ים וְ/שָׁמָֽרוּ׃",
+        "VUL": "qui jam nunc futuri sunt, congreget in horrea : et omne frumentum sub Pharaonis potestate condatur, serveturque in urbibus.",
+        "LXX": "καὶ συναγαγέτωσαν πάντα τὰ βρώματα τῶν ἑπτὰ ἐτῶν τῶν ἐρχομένων τῶν καλῶν τούτων· καὶ συναχθήτω ὁ σῖτος ὑπὸ χεῖρα Φαραώ, βρώματα ἐν ταῖς πόλεσιν συναχθήτω.",
+        "NAB": "They should husband all the food of the coming good years, collecting the grain under Pharaoh's authority, to be stored in the towns for food.",
+        "SYN": "пусть они берут всякий хлеб этих наступающих хороших годов и соберут в городах хлеб под ведение фараона в пищу, и пусть берегут;",
+        "NEO": "Qu’ils rassemblent tout le produit de ces bonnes années qui viennent ; qu’ils fassent des amas de blé à la disposition de Pharaon, comme provisions dans les villes, et qu’ils les conservent.",
+        "VAT_ES": "Ellos reunirán los víveres que se cosechen en estos próximos siete años de prosperidad, y almacenarán el grano bajo la supervisión del Faraón, para tenerlo guardado en las ciudades.",
+        "CEI": "Essi raccoglieranno tutti i viveri di queste annate buone che stanno per venire, ammasseranno il grano sotto l'autorità del faraone e lo terranno in deposito nelle città."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֨ה הָ/אֹ֤כֶל לְ/פִקָּדוֹן֙ לָ/אָ֔רֶץ לְ/שֶׁ֨בַע֙ שְׁנֵ֣י הָ/רָעָ֔ב אֲשֶׁ֥ר תִּהְיֶ֖יןָ בְּ/אֶ֣רֶץ מִצְרָ֑יִם וְ/לֹֽא תִכָּרֵ֥ת הָ/אָ֖רֶץ בָּ/רָעָֽב׃",
+        "VUL": "Et præparetur futuræ septem annorum fami, quæ oppressura est Ægyptum, et non consumetur terra inopia.",
+        "LXX": "καὶ ἔσται τὰ βρώματα πεφυλαγμένα τῇ γῇ εἰς τὰ ἑπτὰ ἔτη τοῦ λιμοῦ ἃ ἔσονται ἐν γῇ Αἰγύπτῳ, καὶ οὐκ ἐκτριβήσεται ἡ γῆ ἐν τῷ λιμῷ.",
+        "NAB": "This food will serve as a reserve for the country against the seven years of famine that are to follow in the land of Egypt, so that the land may not perish in the famine.\"",
+        "SYN": "и будет сия пища в запас для земли на семь лет голода, которые будут в земле Египетской, дабы земля не погибла от голода.",
+        "NEO": "Ces provisions seront pour le pays une réserve pour les sept années de famine qui arriveront au pays d’Égypte, et le pays ne sera pas consumé par la famine. »",
+        "VAT_ES": "Así el país tendrá una reserva de alimentos para los siete años de hambre que vendrán sobre Egipto, y no morirá de inanición.",
+        "CEI": "Questi viveri serviranno al paese di riserva per i sette anni di carestia che verranno nel paese d'Egitto; così il paese non sarà distrutto dalla carestia\"."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/יִּיטַ֥ב הַ/דָּבָ֖ר בְּ/עֵינֵ֣י פַרְעֹ֑ה וּ/בְ/עֵינֵ֖י כָּל עֲבָדָֽי/ו׃",
+        "VUL": "Placuit Pharaoni consilium et cunctis ministris ejus :",
+        "LXX": "Ἤρεσεν δὲ τὰ ῥήματα ἐναντίον Φαραὼ καὶ ἐναντίον πάντων τῶν παίδων αὐτοῦ·",
+        "NAB": "This advice pleased Pharaoh and all his officials.",
+        "SYN": "Сие понравилось фараону и всем слугам его.",
+        "NEO": "Ces paroles plurent à Pharaon et à tous ses serviteurs.",
+        "VAT_ES": "La respuesta agradó al Faraón y a todos sus servidores.",
+        "CEI": "La cosa piacque al faraone e a tutti i suoi ministri."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר פַּרְעֹ֖ה אֶל עֲבָדָ֑י/ו הֲ/נִמְצָ֣א כָ/זֶ֔ה אִ֕ישׁ אֲשֶׁ֛ר ר֥וּחַ אֱלֹהִ֖ים בּֽ/וֹ׃",
+        "VUL": "locutusque est ad eos : Num invenire poterimus talem virum, qui spiritu Dei plenus sit ?",
+        "LXX": "καὶ εἶπεν Φαραὼ πᾶσιν τοῖς παισὶν αὐτοῦ Μὴ εὑρήσομεν ἄνθρωπον τοιοῦτον, ὃς ἔχει πνεῦμα θεοῦ ἐν αὐτῷ;",
+        "NAB": "\"Could we find another like him,\" Pharaoh asked his officials, \"a man so endowed with the spirit of God?\"",
+        "SYN": "И сказал фараон слугам своим: найдем ли мы такого, как он, человека, в котором был бы Дух Божий?",
+        "NEO": "Et Pharaon dit à ses serviteurs : « Pourrions-nous trouver un homme pareil à celui-ci, ayant en lui l’esprit de Dieu ? »",
+        "VAT_ES": "Por eso el Faraón les dijo a estos: «&iquest;Podemos encontrar otro hombre que tenga en igual medida el espíritu de Dios?».",
+        "CEI": "Il faraone disse ai ministri: \"Potremo trovare un uomo come questo, in cui sia lo spirito di Dio?\"."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר פַּרְעֹה֙ אֶל יוֹסֵ֔ף אַחֲרֵ֨י הוֹדִ֧יעַ אֱלֹהִ֛ים אוֹתְ/ךָ֖ אֶת כָּל זֹ֑את אֵין נָב֥וֹן וְ/חָכָ֖ם כָּמֽוֹ/ךָ׃",
+        "VUL": "Dixit ergo ad Joseph : Quia ostendit tibi Deus omnia quæ locutus es, numquid sapientiorem et consimilem tui invenire potero ?",
+        "LXX": "εἶπεν δὲ Φαραὼ τῷ Ἰωσήφ Ἐπειδὴ ἔδειξεν ὁ θεός σοι πάντα ταῦτα, οὐκ ἔστιν ἄνθρωπος φρονιμώτερός σου καὶ συνετώτερος.",
+        "NAB": "So Pharaoh said to Joseph: \"Since God has made all this known to you, no one can be as wise and discerning as you are.",
+        "SYN": "И сказал фараон Иосифу: так как Бог открыл тебе все сие, то нет столь разумного и мудрого, как ты;",
+        "NEO": "Et Pharaon dit à Joseph : « Puisque Dieu t’a fait connaître toutes ces choses, il n’y a personne qui soit aussi intelligent et sage que toi.",
+        "VAT_ES": "Y dirigiéndose a José, le expresó: «Ya que Dios te ha hecho conocer todas estas cosas, no hay nadie que sea tan prudente y sabio como tú.",
+        "CEI": "Poi il faraone disse a Giuseppe: \"Dal momento che Dio ti ha manifestato tutto questo, nessuno è intelligente e saggio come te."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "אַתָּה֙ תִּהְיֶ֣ה עַל בֵּיתִ֔/י וְ/עַל פִּ֖י/ךָ יִשַּׁ֣ק כָּל עַמִּ֑/י רַ֥ק הַ/כִּסֵּ֖א אֶגְדַּ֥ל מִמֶּֽ/ךָּ׃",
+        "VUL": "Tu eris super domum meam, et ad tui oris imperium cunctus populus obediet : uno tantum regni solio te præcedam.",
+        "LXX": "σὺ ἔσῃ ἐπὶ τῷ οἴκῳ μου, καὶ ἐπὶ τῷ στόματί σου ὑπακούσεται πᾶς ὁ λαός μου· πλὴν τὸν θρόνον ὑπερέξω σου ἐγώ.",
+        "NAB": "You shall be in charge of my palace, and all my people shall dart at your command. Only in respect to the throne shall I outrank you.",
+        "SYN": "ты будешь над домом моим, и твоего слова держаться будет весь народ мой; только престолом я буду больше тебя.",
+        "NEO": "C’est toi qui gouverneras ma maison, et tout mon peuple obéira à ta bouche ; par le trône seulement je serai plus grand que toi. »",
+        "VAT_ES": "Por eso tú estarás al frente de mi palacio, y todo mi pueblo tendrá que acatar tus órdenes. Sólo por el trono real seré superior a ti».",
+        "CEI": "Tu stesso sarai il mio maggiordomo e ai tuoi ordini si schiererà tutto il mio popolo: solo per il trono io sarò più grande di te\"."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר פַּרְעֹ֖ה אֶל יוֹסֵ֑ף רְאֵה֙ נָתַ֣תִּי אֹֽתְ/ךָ֔ עַ֖ל כָּל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "VUL": "Dixitque rursus Pharao ad Joseph : Ecce, constitui te super universam terram Ægypti.",
+        "LXX": "εἶπεν δὲ Φαραὼ τῷ Ἰωσήφ ⸆ Ἰδοὺ καθίστημί σε σήμερον ἐπὶ πάσης γῆς Αἰγύπτου.",
+        "NAB": "Herewith,\" Pharaoh told Joseph, \"I place you in charge of the whole land of Egypt.\"",
+        "SYN": "И сказал фараон Иосифу: вот, я поставляю тебя над всею землею Египетскою.",
+        "NEO": "Et Pharaon dit à Joseph : « Voici que je t’établis sur tout le pays d’Égypte. »",
+        "VAT_ES": "Y el Faraón siguió diciendo a José: «Ahora mismo te pongo al frente de todo el territorio de Egipto».",
+        "CEI": "Il faraone disse a Giuseppe: \"Ecco, io ti metto a capo di tutto il paese d'Egitto\"."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וַ/יָּ֨סַר פַּרְעֹ֤ה אֶת טַבַּעְתּ/וֹ֙ מֵ/עַ֣ל יָד֔/וֹ וַ/יִּתֵּ֥ן אֹתָ֖/הּ עַל יַ֣ד יוֹסֵ֑ף וַ/יַּלְבֵּ֤שׁ אֹת/וֹ֙ בִּגְדֵי שֵׁ֔שׁ וַ/יָּ֛שֶׂם רְבִ֥ד הַ/זָּהָ֖ב עַל צַוָּארֽ/וֹ׃",
+        "VUL": "Tulitque annulum de manu sua, et dedit eum in manu ejus : vestivitque eum stola byssina, et collo torquem auream circumposuit.",
+        "LXX": "καὶ περιελόμενος Φαραὼ τὸν δακτύλιον ἀπὸ τῆς χειρὸς αὐτοῦ περιέθηκεν αὐτὸν ἐπὶ τὴν χεῖρα Ἰωσήφ, καὶ ἐνέδυσεν αὐτὸν στολὴν βυσσίνην, καὶ περιέθηκεν κλοιὸν χρυσοῦν περὶ τὸν τράχηλον αὐτοῦ·",
+        "NAB": "With that, Pharaoh took off his signet ring and put it on Joseph's finger. He had him dressed in robes of fine linen and put a gold chain about his neck.",
+        "SYN": "И снял фараон перстень свой с руки своей и надел его на руку Иосифа; одел его в виссонные одежды, возложил золотую цепь на шею ему;",
+        "NEO": "Et Pharaon ôta son anneau de sa main et le mit à la main de Joseph, et il le fit revêtir d’habits de fin lin et lui mit au cou un collier d’or.",
+        "VAT_ES": "En seguida se quitó el anillo de su mano y lo puso en la mano de José; lo hizo vestir con ropa de lino fino y le colgó al cuello una cadena de oro.",
+        "CEI": "Il faraone si tolse di mano l'anello e lo pose sulla mano di Giuseppe; lo rivestì di abiti di lino finissimo e gli pose al collo un monile d'oro."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וַ/יַּרְכֵּ֣ב אֹת֗/וֹ בְּ/מִרְכֶּ֤בֶת הַ/מִּשְׁנֶה֙ אֲשֶׁר ל֔/וֹ וַ/יִּקְרְא֥וּ לְ/פָנָ֖י/ו אַבְרֵ֑ךְ וְ/נָת֣וֹן אֹת֔/וֹ עַ֖ל כָּל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "VUL": "Fecitque eum ascendere super currum suum secundum, clamante præcone, ut omnes coram eo genu flecterent, et præpositum esse scirent universæ terræ Ægypti.",
+        "LXX": "καὶ ἀνεβίβασεν αὐτὸν ἐπὶ τὸ ἅρμα τὸ δεύτερον τῶν αὐτοῦ, καὶ ἐκήρυξεν ἔμπροσθεν αὐτοῦ κήρυξ· καὶ κατέστησεν αὐτὸν ἐφ’ ὅλης τῆς γῆς Αἰγύπτου.",
+        "NAB": "He then had him ride in the chariot of his vizier, and they shouted \"Abrek!\" before him. Thus was Joseph installed over the whole land of Egypt.",
+        "SYN": "велел везти его на второй из своих колесниц и провозглашать пред ним: преклоняйтесь! И поставил его над всею землею Египетскою.",
+        "NEO": "Il le fit monter sur le second de ses chars, et on criait devant lui : « A genoux ! » C’est ainsi qu’il fut établi sur tout le pays d’Égypte.",
+        "VAT_ES": "Luego lo hizo subir a la mejor carroza después de la suya, e iban gritando delante de él: «&iexcl;Atención!» Así le dio autoridad sobre todo Egipto.",
+        "CEI": "Poi lo fece montare sul suo secondo carro e davanti a lui si gridava: \"Abrech\". E così lo si stabilì su tutto il paese d'Egitto."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמֶר פַּרְעֹ֛ה אֶל יוֹסֵ֖ף אֲנִ֣י פַרְעֹ֑ה וּ/בִלְעָדֶ֗י/ךָ לֹֽא יָרִ֨ים אִ֧ישׁ אֶת יָד֛/וֹ וְ/אֶת רַגְל֖/וֹ בְּ/כָל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "VUL": "Dixit quoque rex ad Joseph : Ego sum Pharao : absque tuo imperio non movebit quisquam manum aut pedem in omni terra Ægypti.",
+        "LXX": "εἶπεν δὲ Φαραὼ τῷ Ἰωσήφ Ἐγὼ Φαραώ· ἄνευ σοῦ οὐκ ἐξαρεῖ οὐθεὶς τὴν χεῖρα αὐτοῦ ἐπὶ πάσῃ γῇ Αἰγύπτου.",
+        "NAB": "\"I, Pharaoh, proclaim,\" he told Joseph, \"that without your approval no one shall move hand or foot in all the land of Egypt.\"",
+        "SYN": "И сказал фараон Иосифу: я фараон; без тебя никто не двинет ни руки своей, ни ноги своей во всей земле Египетской.",
+        "NEO": "Et Pharaon dit à Joseph : « Je suis Pharaon, et sans toi nul ne lèvera la main ni le pied dans tout le pays d’Égypte. »",
+        "VAT_ES": "El Faraón dijo a José: «Yo soy el Faraón, pero nadie podrá mover una mano o un pie en todo el territorio de Egipto si tú no lo apruebas».",
+        "CEI": "Poi il faraone disse a Giuseppe: \"Sono il faraone, ma senza il tuo permesso nessuno potrà alzare la mano o il piede in tutto il paese d'Egitto\"."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֨א פַרְעֹ֣ה שֵׁם יוֹסֵף֮ צָֽפְנַ֣ת פַּעְנֵחַ֒ וַ/יִּתֶּן ל֣/וֹ אֶת אָֽסְנַ֗ת בַּת פּ֥וֹטִי פֶ֛רַע כֹּהֵ֥ן אֹ֖ן לְ/אִשָּׁ֑ה וַ/יֵּצֵ֥א יוֹסֵ֖ף עַל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "VUL": "Vertitque nomen ejus, et vocavit eum, lingua ægyptiaca, Salvatorem mundi. Deditque illi uxorem Aseneth filiam Putiphare sacerdotis Heliopoleos. Egressus est itaque Joseph ad terram Ægypti",
+        "LXX": "καὶ ἐκάλεσεν Φαραὼ τὸ ὄνομα Ἰωσὴφ Ψονθομφανήχ· καὶ ἔδωκεν αὐτῷ τὴν Ἀσεννὲθ θυγατέρα Πετρεφῆ ἱερέως Ἡλίου πόλεως αὐτῷ εἰς γυναῖκα.",
+        "NAB": "Pharaoh also bestowed the name of Zaphnath-paneah on Joseph, and he gave him in marriage Asenath, the daughter of Potiphera, priest of Heliopolis.",
+        "SYN": "И нарек фараон Иосифу имя: Цафнаф-панеах, и дал ему в жену Асенефу, дочь Потифера, жреца Илиопольского. И пошел Иосиф по земле Египетской.",
+        "NEO": "Pharaon nomma Joseph Tsaphnath-Panéach, et il lui donna pour femme Aseneth, fille de Putiphar, prêtre d’On. Et Joseph partit pour visiter le pays d’Égypte.",
+        "VAT_ES": "Luego impuso a José el nombre de Safnat Panéaj, y le dio por esposa a Asnat, la hija de Potifera, sacerdote de la ciudad de On. Y José fue a recorrer el país de Egipto.",
+        "CEI": "E il faraone chiamò Giuseppe Zafnat-Paneach e gli diede in moglie Asenat, figlia di Potifera, sacerdote di On. Giuseppe uscì per tutto il paese d'Egitto."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "וְ/יוֹסֵף֙ בֶּן שְׁלֹשִׁ֣ים שָׁנָ֔ה בְּ/עָמְד֕/וֹ לִ/פְנֵ֖י פַּרְעֹ֣ה מֶֽלֶךְ מִצְרָ֑יִם וַ/יֵּצֵ֤א יוֹסֵף֙ מִ/לִּ/פְנֵ֣י פַרְעֹ֔ה וַֽ/יַּעְבֹ֖ר בְּ/כָל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "VUL": "(triginta autem annorum erat quando stetit in conspectu regis Pharaonis), et circuivit omnes regiones Ægypti.",
+        "LXX": "⸂⸆⸃ Ἰωσὴφ δὲ ἦν ἐτῶν τριάκοντα ὅτε ἔστη ἐναντίον Φαραὼ βασιλέως Αἰγύπτου. ἐξῆλθεν δὲ Ἰωσὴφ ἐκ προσώτου Φαραώ, καὶ διῆλθεν πᾶσαν γῆν Αἰγύπτου.",
+        "NAB": "Joseph was thirty years old when he entered the service of Pharaoh, king of Egypt. After Joseph left Pharaoh's presence, he traveled throughout the land of Egypt.",
+        "SYN": "Иосифу было тридцать лет от рождения, когда он предстал пред лице фараона, царя Египетского. И вышел Иосиф от лица фараонова и прошел по всей земле Египетской.",
+        "NEO": "Joseph était âgé de trente ans lorsqu’il se présenta devant Pharaon, roi d’Égypte ; et il quitta Pharaon pour parcourir tout le pays d’Égypte.",
+        "VAT_ES": "Cuando se puso al servicio del Faraón, rey de Egipto, José tenía treinta años. José se alejó de la presencia del Faraón e hizo un recorrido por todo el territorio de Egipto.",
+        "CEI": "Giuseppe aveva trent'anni quando si presentò al faraone re d'Egitto. Poi Giuseppe si allontanò dal faraone e percorse tutto il paese d'Egitto."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "וַ/תַּ֣עַשׂ הָ/אָ֔רֶץ בְּ/שֶׁ֖בַע שְׁנֵ֣י הַ/שָּׂבָ֑ע לִ/קְמָצִֽים׃",
+        "VUL": "Venitque fertilitas septem annorum : et in manipulos redactæ segetes congregatæ sunt in horrea Ægypti.",
+        "LXX": "καὶ ἐποίησεν ἡ γῆ ἐν τοῖς ἑπτὰ ἔτεσιν τῆς εὐθηνίας δράγματα·",
+        "NAB": "During the seven years of plenty, when the land produced abundant crops,",
+        "SYN": "Земля же в семь лет изобилия приносила _из_ _зерна_ по горсти.",
+        "NEO": "La terre rapporta à pleines mains pendant les sept années d’abondance.",
+        "VAT_ES": "Durante los siete años de abundancia, la tierra produjo copiosamente,",
+        "CEI": "Durante i sette anni di abbondanza la terra produsse a profusione."
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "וַ/יִּקְבֹּ֞ץ אֶת כָּל אֹ֣כֶל שֶׁ֣בַע שָׁנִ֗ים אֲשֶׁ֤ר הָיוּ֙ בְּ/אֶ֣רֶץ מִצְרַ֔יִם וַ/יִּתֶּן אֹ֖כֶל בֶּ/עָרִ֑ים אֹ֧כֶל שְׂדֵה הָ/עִ֛יר אֲשֶׁ֥ר סְבִיבֹתֶ֖י/הָ נָתַ֥ן בְּ/תוֹכָֽ/הּ׃",
+        "VUL": "Omnis etiam frugum abundantia in singulis urbibus condita est.",
+        "LXX": "καὶ συνήγαγεν πάντα τὰ βρώματα τῶν ἑπτὰ ἐτῶν ἐν οἷς ἦν ἡ εὐθηνία ἐν γῇ Αἰγύπτου, καὶ ἔθηκεν τὰ βρώματα ἐν ταῖς πόλεσιν· βρώματα τῶν πεδίων τῆς πόλεως τῶν κύκλῳ αὐτῆς Ὢν ἔθηκεν ἐν αὐτῇ.",
+        "NAB": "he husbanded all the food of these years of plenty that the land of Egypt was enjoying and stored it in the towns, placing in each town the crops of the fields around it.",
+        "SYN": "И собрал он всякий хлеб семи лет, которые были [плодородны] в земле Египетской, и положил хлеб в городах; в _каждом_ городе положил хлеб полей, окружающих его.",
+        "NEO": "Joseph rassembla tous les produits des sept bonnes années qu’il y eut au pays d’Égypte, et il fit des approvisionnements dans les villes, déposant dans l’intérieur de chaque ville les productions des champs d’alentour.",
+        "VAT_ES": "y él reunió todos los víveres recogidos en esos siete años y los almacenó en las ciudades, depositando en cada una de las cosechas de los campos vecinos.",
+        "CEI": "Egli raccolse tutti i viveri dei sette anni, nei quali vi era stata l'abbondanza nel paese d'Egitto, e ripose i viveri nelle città, cioè in ogni città ripose i viveri della campagna circostante."
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "וַ/יִּצְבֹּ֨ר יוֹסֵ֥ף בָּ֛ר כְּ/ח֥וֹל הַ/יָּ֖ם הַרְבֵּ֣ה מְאֹ֑ד עַ֛ד כִּי חָדַ֥ל לִ/סְפֹּ֖ר כִּי אֵ֥ין מִסְפָּֽר׃",
+        "VUL": "Tantaque fuit abundantia tritici, ut arenæ maris coæquaretur, et copia mensuram excederet.",
+        "LXX": "καὶ συνήγαγεν Ἰωσὴφ σῖτον ὡσεὶ τὴν ἄμμον τῆς θαλάσσης πολὺν σφόδρα, ἕως οὐκ ἠδύνατο ἀριθμῆσαι, οὐ γὰρ ἦν ἀριθμός. ⸆",
+        "NAB": "Joseph garnered grain in quantities like the sands of the sea, so vast that at last he stopped measuring it, for it was beyond measure.",
+        "SYN": "И скопил Иосиф хлеба весьма много, как песку морского, так что перестал и считать, ибо не стало счета.",
+        "NEO": "Joseph amassa du blé comme le sable de la mer, en si grande quantité, qu’on cessa de compter, parce qu’il était sans nombre.",
+        "VAT_ES": "De esa manera, José acumuló una enorme cantidad de cereales, tanto como la arena del mar, hasta tal punto que dejó de llevar un control, porque superaba toda medida.",
+        "CEI": "Giuseppe ammassò il grano come la sabbia del mare, in grandissima quantità, così che non se ne fece più il computo, perché era incalcolabile."
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "WLC": "וּ/לְ/יוֹסֵ֤ף יֻלַּד֙ שְׁנֵ֣י בָנִ֔ים בְּ/טֶ֥רֶם תָּב֖וֹא שְׁנַ֣ת הָ/רָעָ֑ב אֲשֶׁ֤ר יָֽלְדָה לּ/וֹ֙ אָֽסְנַ֔ת בַּת פּ֥וֹטִי פֶ֖רַע כֹּהֵ֥ן אֽוֹן׃",
+        "VUL": "Nati sunt autem Joseph filii duo antequam veniret fames : quos peperit ei Aseneth filia Putiphare sacerdotis Heliopoleos.",
+        "LXX": "τῷ δὲ Ἰωσὴφ ἐγένοντο υἱοὶ δύο πρὸ τοῦ ἐλθεῖν τὰ ἑπτὰ ἔτη τοῦ λιμοῦ, οὓς ἔτεκεν αὐτῷ Ἀσεννὲθ θυγάτηρ Πετρεφῆ ἱερέως Ἡλίου πόλεως.",
+        "NAB": "Before the famine years set in, Joseph became the father of two sons, borne to him by Asenath, daughter of Potiphera, priest of Heliopolis.",
+        "SYN": "До наступления годов голода, у Иосифа родились два сына, которых родила ему Асенефа, дочь Потифера, жреца Илиопольского.",
+        "NEO": "Avant qu’arrivât l’année de famine, il naquit à Joseph deux fils, que lui enfanta Aseneth, fille de Putiphar, prêtre d’On.",
+        "VAT_ES": "Antes que comenzaran los años de hambre, José tuvo dos hijos, que le dio Asnat, la hija de Potifera, el sacerdote de On.",
+        "CEI": "Intanto nacquero a Giuseppe due figli, prima che venisse l'anno della carestia; glieli partorì Asenat, figlia di Potifera, sacerdote di On."
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֥א יוֹסֵ֛ף אֶת שֵׁ֥ם הַ/בְּכ֖וֹר מְנַשֶּׁ֑ה כִּֽי נַשַּׁ֤/נִי אֱלֹהִים֙ אֶת כָּל עֲמָלִ֔/י וְ/אֵ֖ת כָּל בֵּ֥ית אָבִֽ/י׃",
+        "VUL": "Vocavitque nomen primogeniti Manasses, dicens : Oblivisci me fecit Deus omnium laborum meorum, et domus patris mei.",
+        "LXX": "ἐκάλεσεν δὲ Ἰωσὴφ τὸ ὄνομα τοῦ πρωτοτόκου Μαννασσὴ λέγων Ὅτι ἐπιλαθέσθαι με ἐποίησεν ὁ θεὸς πάντων τῶν πόνων μου καὶ πάντων τῶν τοῦ πατρός μου·",
+        "NAB": "He named his first-born Manasseh, meaning, \"God has made me forget entirely the sufferings I endured at the hands of my family\";",
+        "SYN": "И нарек Иосиф имя первенцу: Манассия, потому что [говорил он] Бог дал мне забыть все несчастья мои и весь дом отца моего.",
+        "NEO": "Joseph donna au premier-né le nom de Manassé, « car, dit-il, Dieu m’a fait oublier toute ma peine et toute la maison de mon père. »",
+        "VAT_ES": "Al primero lo llamó Manasés, porque dijo: «Dios me ha hecho olvidar por completo mis penas y mi casa paterna».",
+        "CEI": "Giuseppe chiamò il primogenito Manasse, \"perché - disse - Dio mi ha fatto dimenticare ogni affanno e tutta la casa di mio padre\"."
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "WLC": "וְ/אֵ֛ת שֵׁ֥ם הַ/שֵּׁנִ֖י קָרָ֣א אֶפְרָ֑יִם כִּֽי הִפְרַ֥/נִי אֱלֹהִ֖ים בְּ/אֶ֥רֶץ עָנְיִֽ/י׃",
+        "VUL": "Nomen quoque secundi appellavit Ephraim, dicens : Crescere me fecit Deus in terra paupertatis meæ.",
+        "LXX": "τὸ δὲ ὄνομα τοῦ δευτέρου ἐκάλεσεν Ἐφράιμ, Ὅτι ὕψωσέν με ὁ θεὸς ἐν γῇ ταπεινώσεώς μου.",
+        "NAB": "and the second he named Ephraim, meaning, \"God has made me fruitful in the land of my affliction.\"",
+        "SYN": "А другому нарек имя: Ефрем, потому что [говорил он] Бог сделал меня плодовитым в земле страдания моего.",
+        "NEO": "Il donna au second le nom d’Ephraïm, « car, dit-il, Dieu m’a fait fructifier dans le pays de mon affliction. »",
+        "VAT_ES": "Y al segundo le puso el nombre de Efraím, diciendo: «Dios me ha hecho fecundo en la tierra de mi aflicción».",
+        "CEI": "E il secondo lo chiamò Efraim, \"perché - disse - Dio mi ha reso fecondo nel paese della mia afflizione\"."
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "WLC": "וַ/תִּכְלֶ֕ינָה שֶׁ֖בַע שְׁנֵ֣י הַ/שָּׂבָ֑ע אֲשֶׁ֥ר הָיָ֖ה בְּ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "VUL": "Igitur transactis septem ubertatis annis, qui fuerant in Ægypto,",
+        "LXX": "Παρῆλθον δὲ τὰ ἑπτὰ ἔτη τῆς εὐθηνίας ἃ ἐγένετο ἐν γῇ Αἰγύπτῳ,",
+        "NAB": "When the seven years of abundance enjoyed by the land of Egypt came to an end,",
+        "SYN": "И прошли семь лет изобилия, которое было в земле Египетской,",
+        "NEO": "Les sept années d’abondance qu’il y eut en Égypte étant achevées,",
+        "VAT_ES": "Entonces terminaron los años en que Egipto gozó de abundancia,",
+        "CEI": "Poi finirono i sette anni di abbondanza nel paese d'Egitto"
+      }
+    },
+    "54": {
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "WLC": "וַ/תְּחִלֶּ֜ינָה שֶׁ֣בַע שְׁנֵ֤י הָ/רָעָב֙ לָ/ב֔וֹא כַּ/אֲשֶׁ֖ר אָמַ֣ר יוֹסֵ֑ף וַ/יְהִ֤י רָעָב֙ בְּ/כָל הָ֣/אֲרָצ֔וֹת וּ/בְ/כָל אֶ֥רֶץ מִצְרַ֖יִם הָ֥יָה לָֽחֶם׃",
+        "VUL": "cperunt venire septem anni inopiæ, quos prædixerat Joseph : et in universo orbe fames prævaluit, in cuncta autem terra Ægypti panis erat.",
+        "LXX": "καὶ ἤρξαντο τὰ ἑπτὰ ἔτη τοῦ λιμοῦ ἔρχεσθαι, καθὰ εἶπεν Ἰωσήφ. καὶ ἐγένετο λιμὸς ἐν πάσῃ τῇ γῇ· ἐν δὲ πάσῃ γῇ Αἰγύπτου οὐκ ἦσαν ἄρτοι.",
+        "NAB": "the seven years of famine set in, just as Joseph had predicted. Although there was famine in all the other countries, food was available throughout the land of Egypt.",
+        "SYN": "и наступили семь лет голода, как сказал Иосиф. И был голод во всех землях, а во всей земле Египетской был хлеб.",
+        "NEO": "les sept années de famine commencèrent à venir, comme Joseph l’avait annoncé. Il y eut famine dans tous les pays, tandis qu’il y avait du pain dans tout le pays d’Égypte.",
+        "VAT_ES": "y comenzaron los siete años de hambre, como José lo había anticipado. En todos los países se sufría hambre, pero en Egipto había alimentos.",
+        "CEI": "e cominciarono i sette anni di carestia, come aveva detto Giuseppe. Ci fu carestia in tutti i paesi, ma in tutto l'Egitto c'era il pane."
+      }
+    },
+    "55": {
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "WLC": "וַ/תִּרְעַב֙ כָּל אֶ֣רֶץ מִצְרַ֔יִם וַ/יִּצְעַ֥ק הָ/עָ֛ם אֶל פַּרְעֹ֖ה לַ/לָּ֑חֶם וַ/יֹּ֨אמֶר פַּרְעֹ֤ה לְ/כָל מִצְרַ֨יִם֙ לְכ֣וּ אֶל יוֹסֵ֔ף אֲשֶׁר יֹאמַ֥ר לָ/כֶ֖ם תַּעֲשֽׂוּ׃",
+        "VUL": "Qua esuriente, clamavit populus ad Pharaonem, alimenta petens. Quibus ille respondit : Ite ad Joseph : et quidquid ipse vobis dixerit, facite.",
+        "LXX": "καὶ ἐπείνασεν πᾶσα ἡ γῆ Αἰγύπτου, ἐκέκραξεν δὲ πᾶς ὁ λαὸς πρὸς Φαραὼ περὶ ἄρτων· εἶπεν δὲ Φαραὼ πᾶσι τοῖς Αἰγυπτίοις Πορεύεσθε πρὸς Ἰωσήφ, καὶ ὃ ἐὰν εἴπῃ ὑμῖν ποιήσατε.",
+        "NAB": "When hunger came to be felt throughout the land of Egypt and the people cried to Pharaoh for bread, Pharaoh directed all the Egyptians to go to Joseph and do whatever he told them.",
+        "SYN": "Но когда и вся земля Египетская начала терпеть голод, то народ начал вопиять к фараону о хлебе. И сказал фараон всем Египтянам: пойдите к Иосифу и делайте, что он вам скажет.",
+        "NEO": "Puis tout le pays d’Égypte fut aussi affamé, et le peuple cria à Pharaon pour avoir du pain. Et Pharaon dit à tous les Egyptiens : « Allez vers Joseph, faites ce qu’il vous dira. »",
+        "VAT_ES": "Cuando también los egipcios y el pueblo sintieron hambre, y el pueblo pidió a gritos al Faraón que le diera de comer, este respondió: «Vayan a ver a José y hagan lo que él les diga».",
+        "CEI": "Poi tutto il paese d'Egitto cominciò a sentire la fame e il popolo gridò al faraone per avere il pane. Allora il faraone disse a tutti gli Egiziani: \"Andate da Giuseppe; fate quello che vi dirà\"."
+      }
+    },
+    "56": {
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "WLC": "וְ/הָ/רָעָ֣ב הָיָ֔ה עַ֖ל כָּל פְּנֵ֣י הָ/אָ֑רֶץ וַ/יִּפְתַּ֨ח יוֹסֵ֜ף אֶֽת כָּל אֲשֶׁ֤ר בָּ/הֶם֙ וַ/יִּשְׁבֹּ֣ר לְ/מִצְרַ֔יִם וַ/יֶּחֱזַ֥ק הָֽ/רָעָ֖ב בְּ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "VUL": "Crescebat autem quotidie fames in omni terra : aperuitque Joseph universa horrea, et vendebat Ægyptiis : nam et illos oppresserat fames.",
+        "LXX": "⸂⸆⸃ καὶ ὁ λιμὸς ἦν ἐπὶ προσώπου πάσης τῆς γῆς· ἀνέῳξεν δὲ Ἰωσὴφ πάντας τοὺς σιτοβολῶνας, καὶ ἐπώλει πᾶσι τοῖς Αἰγυπτίοις.",
+        "NAB": "When the famine had spread throughout the land, Joseph opened all the cities that had grain and rationed it to the Egyptians, since the famine had gripped the land of Egypt.",
+        "SYN": "И был голод по всей земле; и отворил Иосиф все житницы, и стал продавать хлеб Египтянам. Голод же усиливался в земле Египетской.",
+        "NEO": "La famine étant sur toute la face du pays, Joseph ouvrit tous les greniers qu’on y avait établis et vendit du blé aux Egyptiens ; et la famine s’accrut dans le pays d’Égypte.",
+        "VAT_ES": "Como el hambre se había extendido por todo el país, José abrió los graneros y distribuyó raciones a los egipcios, ya que el hambre se hacía cada vez más intensa.",
+        "CEI": "La carestia dominava su tutta la terra. Allora Giuseppe aprì tutti i depositi in cui vi era grano e vendette il grano agli Egiziani, mentre la carestia si aggravava in Egitto."
+      }
+    },
+    "57": {
+      "seq": 57,
+      "v_in": {
+        "MT": 57,
+        "VUL": 57,
+        "LXX": 57
+      },
+      "text": {
+        "WLC": "וְ/כָל הָ/אָ֨רֶץ֙ בָּ֣אוּ מִצְרַ֔יְמָ/ה לִ/שְׁבֹּ֖ר אֶל יוֹסֵ֑ף כִּֽי חָזַ֥ק הָ/רָעָ֖ב בְּ/כָל הָ/אָֽרֶץ׃",
+        "VUL": "Omnesque provinciæ veniebant in Ægyptum, ut emerent escas, et malum inopiæ temperarent.",
+        "LXX": "καὶ πᾶσαι αἱ χῶραι ἦλθον εἰς Αἴγυπτον ἀγοράζειν πρὸς Ἰωσήφ· ἐπεκράτησεν γὰρ ὁ λιμὸς ἐν πάσῃ τῇ γῇ.",
+        "NAB": "In fact, all the world came to Joseph to obtain rations of grain, for famine had gripped the whole world.",
+        "SYN": "И из всех стран приходили в Египет покупать хлеб у Иосифа, ибо голод усилился по всей земле.",
+        "NEO": "De toute la terre on venait en Égypte pour acheter du blé auprès de Joseph ; car la famine s’était aggravée sur toute la terre.",
+        "VAT_ES": "Y de todas partes iban a Egipto a comprar cereales a José, porque el hambre asolaba toda la tierra.",
+        "CEI": "E da tutti i paesi venivano in Egitto per acquistare grano da Giuseppe, perché la carestia infieriva su tutta la terra."
+      }
+    }
+  }
+}

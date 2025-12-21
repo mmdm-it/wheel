@@ -1,0 +1,140 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_067",
+  "book_key": "PSAL",
+  "sequence": 67,
+  "chapter_in": {
+    "MT": 67,
+    "VUL": 66,
+    "LXX": 66
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֥ח בִּ/נְגִינֹ֗ת מִזְמ֥וֹר שִֽׁיר׃",
+        "LXX": "Εἰς τὸ τέλος· τῷ Δαυείδ, ψαλμὸς ᾠδῆς.",
+        "VUL": "In finem. Psalmus cantici ipsi David.",
+        "SYN": "Начальнику хора. Псалом Давида. Песнь.",
+        "NEO": "Au maître de chant. Avec instruments à cordes. Psaume. Cantique.",
+        "NAB": "For the leader; with stringed instruments. A psalm; a song.",
+        "CEI": "Al maestro del coro. Su strumenti a corda. Salmo. Canto."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אֱלֹהִ֗ים יְחָנֵּ֥/נוּ וִֽ/יבָרְכֵ֑/נוּ יָ֤אֵ֥ר פָּנָ֖י/ו אִתָּ֣/נוּ סֶֽלָה׃",
+        "LXX": "Ἀναστήτω ὁ θεός, καὶ διασκορπισθήτωσαν οἱ ἐχθροὶ αὐτοῦ, καὶ φυγέτωσαν οἱ μισοῦντες αὐτὸν ἀπὸ προσώπου αὐτοῦ.",
+        "VUL": "[Exsurgat Deus, et dissipentur inimici ejus ;/ et fugiant qui oderunt eum a facie ejus./",
+        "SYN": "Да восстанет Бог, и расточатся враги Его, и да бегут от лица Его ненавидящие Его.",
+        "NEO": "Que Dieu nous soit favorable et qu’il nous bénisse ! qu’il fasse luire sur nous sa face, — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "May God be gracious to us and bless us; may God's face shine upon us. Selah",
+        "VAT_ES": "Que Dios tenga piedad y nos bendiga,",
+        "CEI": "Dio abbia pietà di noi e ci benedica, su di noi faccia splendere il suo volto;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "לָ/דַ֣עַת בָּ/אָ֣רֶץ דַּרְכֶּ֑/ךָ בְּ/כָל גּ֝וֹיִ֗ם יְשׁוּעָתֶֽ/ךָ׃",
+        "LXX": "ὡς ἐκλείπει καπνὸς ἐκλιπέτωσαν· ὡς τήκεται κηρὸς ἀπὸ προσώπου πυρός, οὕτως ἀπόλοιντο οἱ ἁμαρτωλοὶ ἀπὸ προσώπου τοῦ θεοῦ.",
+        "VUL": "Sicut deficit fumus, deficiant ;/ sicut fluit cera a facie ignis, sic pereant peccatores a facie Dei./",
+        "SYN": "Как рассеивается дым, Ты рассей их; как тает воск от огня, так нечестивые да погибнут от лица Божия.",
+        "NEO": "afin que l’on connaisse sur la terre ta voie, et parmi toutes les nations ton salut !",
+        "NAB": "So shall your rule be known upon the earth, your saving power among all the nations.",
+        "VAT_ES": "para que en la tierra se reconozca su dominio,",
+        "CEI": "perché si conosca sulla terra la tua via, fra tutte le genti la tua salvezza."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "יוֹד֖וּ/ךָ עַמִּ֥ים אֱלֹהִ֑ים י֝וֹד֗וּ/ךָ עַמִּ֥ים כֻּלָּֽ/ם׃",
+        "LXX": "καὶ οἱ δίκαιοι εὐφρανθήτωσαν, διάψαλμα. ἀγαλλιάσθωσαν ἐνώπιον τοῦ θεοῦ, τερφθήτωσαν ἐν εὐφροσύνῃ.",
+        "VUL": "Et justi epulentur, et exsultent in conspectu Dei,/ et delectentur in lætitia./",
+        "SYN": "А праведники да возвеселятся, да возрадуются пред Богом и восторжествуют в радости.",
+        "NEO": "Que les peuples te louent, ô Dieu, que les peuples te louent tous !",
+        "NAB": "May the peoples praise you, God; may all the peoples praise you!",
+        "VAT_ES": "&iexcl;Que los pueblos te den gracias, oh Dios,",
+        "CEI": "Ti lodino i popoli, Dio, ti lodino i popoli tutti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "יִֽשְׂמְח֥וּ וִֽ/ירַנְּנ֗וּ לְאֻ֫מִּ֥ים כִּֽי תִשְׁפֹּ֣ט עַמִּ֣ים מִישׁ֑וֹר וּ/לְאֻמִּ֓ים בָּ/אָ֖רֶץ תַּנְחֵ֣/ם סֶֽלָה׃",
+        "LXX": "ᾄσατε τῷ θεῷ, ψάλατε τῷ ὀνόματι αὐτοῦ· ὁδοποιήσατε τῷ ἐπιβεβηκότι ἐπὶ δυσμῶν· Κύριος ὄνομα αὐτῷ· καὶ ἀγαλλιᾶσθε ἐνώπιον αὐτοῦ.",
+        "VUL": "Cantate Deo ; psalmum dicite nomini ejus :/ iter facite ei qui ascendit super occasum./ Dominus nomen illi ; exsultate in conspectu ejus./ Turbabuntur a facie ejus,/",
+        "SYN": "Пойте Богу нашему, пойте имени Его, превозносите Шествующего на небесах; имя Ему: Господь, и радуйтесь пред лицем Его.",
+        "NEO": "Que les nations se réjouissent, qu’elles soient dans l’allégresse ! car tu juges les peuples avec droiture, et tu conduis les nations sur la terre. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "May the nations be glad and shout for joy; for you govern the peoples justly, you guide the nations upon the earth. Selah",
+        "VAT_ES": "Que canten de alegría las naciones,",
+        "CEI": "Esultino le genti e si rallegrino, perché giudichi i popoli con giustizia, governi le nazioni sulla terra."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "יוֹד֖וּ/ךָ עַמִּ֥ים אֱלֹהִ֑ים י֝וֹד֗וּ/ךָ עַמִּ֥ים כֻּלָּֽ/ם׃",
+        "LXX": "ταραχθήσονται ἀπὸ προσώπου αὐτοῦ, τοῦ πατρὸς τῶν ὀρφανῶν καὶ κριτοῦ τῶν χηρῶν· ὁ θεὸς ἐν τόπῳ ἁγίῳ αὐτοῦ.",
+        "VUL": "patris orphanorum, et judicis viduarum ;/ Deus in loco sancto suo./",
+        "SYN": "Отец сирот и судья вдов Бог во святом Своем жилище.",
+        "NEO": "Que les peuples te louent, ô Dieu, que les peuples te louent tous !",
+        "NAB": "May the peoples praise you, God; may all the peoples praise you!",
+        "VAT_ES": "&iexcl;Que los pueblos te den gracias, oh Dios,",
+        "CEI": "Ti lodino i popoli, Dio, ti lodino i popoli tutti."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אֶ֭רֶץ נָתְנָ֣ה יְבוּלָ֑/הּ יְ֝בָרְכֵ֗/נוּ אֱלֹהִ֥ים אֱלֹהֵֽי/נוּ׃",
+        "LXX": "ὁ θεὸς κατοικίζει μονοτρόπους ἐν οἴκῳ, ἐξάγων πεπεδημένους ἐν ἀνδρίᾳ, ὁμοίως τοὺς παραπικραίνοντας, τοὺς κατοικοῦντας ἐν τάφοις.",
+        "VUL": "Deus qui inhabitare facit unius moris in domo ;/ qui educit vinctos in fortitudine,/ similiter eos qui exasperant, qui habitant in sepulchris./",
+        "SYN": "Бог одиноких вводит в дом, освобождает узников от оков, а непокорные остаются в знойной пустыне.",
+        "NEO": "La terre a donné ses produits ; que Dieu, notre Dieu, nous bénisse !",
+        "NAB": "The earth has yielded its harvest; God, our God, blesses us.",
+        "VAT_ES": "La tierra ha dado su fruto:",
+        "CEI": "La terra ha dato il suo frutto. Ci benedica Dio, il nostro Dio,"
+      }
+    }
+  }
+}

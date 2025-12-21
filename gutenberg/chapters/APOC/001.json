@@ -1,0 +1,355 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "APOC_001",
+  "book_key": "APOC",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Apocalypsis",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Ἀποκάλυψις Ἰησοῦ χριστοῦ, ἣν ἔδωκεν αὐτῷ ὁ θεὸς δεῖξαι τοῖς δούλοις αὐτοῦ, ἃ δεῖ γενέσθαι ἐν τάχει, καὶ ἐσήμανεν ἀποστείλας διὰ τοῦ ἀγγέλου αὐτοῦ τῷ δούλῳ αὐτοῦ Ἰωάννῃ,",
+        "VUL": "Apocalypsis Jesu Christi, quam dedit illi Deus palam facere servis suis, quæ oportet fieri cito : et significavit, mittens per angelum suum servo suo Joanni,",
+        "SYN": "Откровение Иисуса Христа, которое дал Ему Бог, чтобы показать рабам Своим, чему надлежит быть вскоре. И Он показал, послав _оное_ через Ангела Своего рабу Своему Иоанну,",
+        "NEO": "Révélation de Jésus-Christ, que Dieu lui a confiée pour découvrir à ses serviteurs les événements qui doivent arriver bientôt ; et qu’il a fait connaître, en l’envoyant par son ange, à Jean, son serviteur,",
+        "NAB": "The revelation of Jesus Christ, which God gave to him, to show his servants what must happen soon. He made it known by sending his angel to his servant John,",
+        "VAT_ES": "Escribe al Angel de la Iglesia de Efeso: «El que tiene en su mano derecha las siete estrellas y camina en medio de los siete candelabros de oro, afirma:",
+        "CEI": "Vidi poi un nuovo cielo e una nuova terra, perché il cielo e la terra di prima erano scomparsi e il mare non c'era più."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "ὃς ἐμαρτύρησεν τὸν λόγον τοῦ θεοῦ καὶ τὴν μαρτυρίαν Ἰησοῦ χριστοῦ, ὅσα εἶδεν.",
+        "VUL": "qui testimonium perhibuit verbo Dei, et testimonium Jesu Christi, quæcumque vidit.",
+        "SYN": "который свидетельствовал слово Божие и свидетельство Иисуса Христа и что он видел.",
+        "NEO": "qui a attesté la parole de Dieu et le témoignage de Jésus-Christ en tout ce qu’il a vu.+ 1:2 I, 2. Comp. Jean, i, 14 ; xxi, 24 ; Eph. i, 1.*",
+        "NAB": "who gives witness to the word of God and to the testimony of Jesus Christ by reporting what he saw.",
+        "VAT_ES": "«Conozco tus obras, tus trabajos y tu constancia. Sé que no puedes tolerar a los perversos: has puesto a prueba a quienes usurpan el título de apóstoles, y comprobaste que son mentirosos.",
+        "CEI": "Vidi anche la città santa, la nuova Gerusalemme, scendere dal cielo, da Dio, pronta come una sposa adorna per il suo sposo."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Μακάριος ὁ ἀναγινώσκων, καὶ οἱ ἀκούοντες τοὺς λόγους τῆς προφητείας καὶ τηροῦντες τὰ ἐν αὐτῇ γεγραμμένα· ὁ γὰρ καιρὸς ἐγγύς.",
+        "VUL": "Beatus qui legit, et audit verba prophetiæ hujus, et servat ea, quæ in ea scripta sunt : tempus enim prope est.",
+        "SYN": "Блажен читающий и слушающие слова пророчества сего и соблюдающие написанное в нем; ибо время близко.",
+        "NEO": "Heureux celui qui lit et ceux qui entendent les paroles de cette prophétie, et qui gardent les choses qui y sont écrites, car le temps est proche !",
+        "NAB": "Blessed is the one who reads aloud and blessed are those who listen to this prophetic message and heed what is written in it, for the appointed time is near.",
+        "VAT_ES": "Sé que tienes constancia y que has sufrido mucho por mi Nombre sin desfallecer.",
+        "CEI": "Udii allora una voce potente che usciva dal trono: \"Ecco la dimora di Dio con gli uomini! Egli dimorerà tra di loro ed essi saranno suo popolo ed egli sarà il \"Dio-con-loro\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "¶Ἰωάννης ταῖς ἑπτὰ ἐκκλησίαις ταῖς ἐν τῇ Ἀσίᾳ· χάρις ὑμῖν καὶ εἰρήνη ἀπὸ θεοῦ ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος· καὶ ἀπὸ τῶν ἑπτὰ πνευμάτων ἃ ἐνώπιον τοῦ θρόνου αὐτοῦ·",
+        "VUL": "Joannes septem ecclesiis, quæ sunt in Asia. Gratia vobis, et pax ab eo, qui est, et qui erat, et qui venturus est : et a septem spiritibus qui in conspectu throni ejus sunt :",
+        "SYN": "Иоанн семи церквам, находящимся в Асии: благодать вам и мир от Того, Который есть и был и грядет, и от семи духов, находящихся перед престолом Его,",
+        "NEO": "Jean aux sept Églises+ 1:4 4. Sept Églises: voyez verset 11. \\+qt L’Asie\\+qt* est ici la province romaine qui comprenait le sud-ouest de l’Asie Mineure et avait Éphèse pour capitale. \\+qt Les sept esprits angéliques\\+qt* qui se tiennent \\+qt devant\\+qt* le Seigneur, nous sont connus par le livre de Tobie (xii, 5), et ces sept anges principaux sont encore figurés plus loin par les \\+qt sept lampes\\+qt* (iv, 5) et les \\+qt sept cornes\\+qt* de l’Agneau (v, 6) ; \\+qt ce sont eux enfin qui reçoivent les sept trompettes\\+qt* (viii, 2).* qui sont en Asie : grâce et paix vous soient données de la part de Celui qui est, qui était et qui vient,",
+        "NAB": "John, to the seven churches in Asia: grace to you and peace from him who is and who was and who is to come, and from the seven spirits before his throne,",
+        "VAT_ES": "Pero debo reprocharte que hayas dejado enfriar el amor que tenías al comienzo.",
+        "CEI": "E tergerà ogni lacrima dai loro occhi; non ci sarà più la morte, né lutto, né lamento, né affanno, perché le cose di prima sono passate\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "καὶ ἀπὸ Ἰησοῦ χριστοῦ, ὁ μάρτυς ὁ πιστός, ὁ πρωτότοκος τῶν νεκρῶν, καὶ ὁ ἄρχων τῶν βασιλέων τῆς γῆς. Τῷ ἀγαπῶντι ἡμᾶς, καὶ λούσαντι ἡμᾶς ἀπὸ τῶν ἁμαρτιῶν ἡμῶν ἐν τῷ αἵματι αὐτοῦ·",
+        "VUL": "et a Jesu Christo, qui est testis fidelis, primogenitus mortuorum, et princeps regum terræ, qui dilexit nos, et lavit nos a peccatis nostris in sanguine suo,",
+        "SYN": "и от Иисуса Христа, Который есть свидетель верный, первенец из мертвых и владыка царей земных. Ему, возлюбившему нас и омывшему нас от грехов наших Кровию Своею",
+        "NEO": "et de la part des sept esprits qui sont devant son trône, et de la part de Jésus-Christ ; c’est le Témoin fidèle, le Premier-né d’entre les morts et le Prince des rois de la terre.+ 1:5 5. Hébr. i, 3 ; Act. xiii, 33, etc.*",
+        "NAB": "and from Jesus Christ, the faithful witness, the firstborn of the dead and ruler of the kings of the earth. To him who loves us and has freed us from our sins by his blood,",
+        "VAT_ES": "Fíjate bien desde dónde has caído, conviértete y observa tu conducta anterior. Si no te arrepientes, vendré hacia ti y sacaré tu candelabro de su lugar preeminente.",
+        "CEI": "E Colui che sedeva sul trono disse: \"Ecco, io faccio nuove tutte le cose\"; e soggiunse: \"Scrivi, perché queste parole sono certe e veraci."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "καὶ ἐποίησεν ἡμᾶς βασιλείαν, ἱερεῖς τῷ θεῷ καὶ πατρὶ αὐτοῦ· αὐτῷ ἡ δόξα καὶ τὸ κράτος εἰς τοὺς αἰῶνας τῶν αἰώνων. Ἀμήν.",
+        "VUL": "et fecit nos regnum, et sacerdotes Deo et Patri suo : ipsi gloria et imperium in sæcula sæculorum. Amen.",
+        "SYN": "и соделавшему нас царями и священниками Богу и Отцу Своему, слава и держава во веки веков, аминь.",
+        "NEO": "et qui nous a faits rois et prêtres de Dieu, son Père, à lui la gloire et la puissance des siècles des siècles ! Amen !",
+        "NAB": "who has made us into a kingdom, priests for his God and Father, to him be glory and power forever (and ever). Amen.",
+        "VAT_ES": "Sin embargo, tienes esto a tu favor: que detestas la conducta de los nicolaítas, lo mismo que yo».",
+        "CEI": "Ecco sono compiute! Io sono l'Alfa e l'Omega, il Principio e la Fine. A colui che ha sete darò gratuitamente acqua della fonte della vita."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ἰδού, ἔρχεται μετὰ τῶν νεφελῶν, καὶ ὄψεται αὐτὸν πᾶς ὀφθαλμός, καὶ οἵτινες αὐτὸν ἐξεκέντησαν· καὶ κόψονται ἐπ’ αὐτὸν πᾶσαι αἱ φυλαὶ τῆς γῆς. Ναί, ἀμήν.",
+        "VUL": "Ecce venit cum nubibus, et videbit eum omnis oculus, et qui eum pupugerunt. Et plangent se super eum omnes tribus terræ. Etiam : amen.",
+        "SYN": "Се, грядет с облаками, и узрит Его всякое око и те, которые пронзили Его; и возрыдают пред Ним все племена земные. Ей, аминь.",
+        "NEO": "Le voici qui vient sur les nuées. Tout œil le verra, et ceux même qui l’ont percé ; et toutes les tribus de la terre se frapperont la poitrine en le voyant. Oui. Amen !",
+        "NAB": "Behold, he is coming amid the clouds, and every eye will see him, even those who pierced him. All the peoples of the earth will lament him. Yes. Amen.",
+        "VAT_ES": "El que pueda entender, que entienda lo que el Espíritu dice a las Iglesias: al vencedor, le daré de comer del árbol de la vida, que se encuentra en el Paraíso de Dios».",
+        "CEI": "Chi sarà vittorioso erediterà questi beni; io sarò il suo Dio ed egli sarà mio figlio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "¶Ἐγώ εἰμι τὸ Ἄλφα καὶ τὸ Ὦ, λέγει κύριος ὁ θεός, ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος, ὁ παντοκράτωρ.",
+        "VUL": "Ego sum alpha et omega, principium et finis, dicit Dominus Deus : qui est, et qui erat, et qui venturus est, omnipotens.",
+        "SYN": "Я есмь Альфа и Омега, начало и конец, говорит Господь, Который есть и был и грядет, Вседержитель.",
+        "NEO": "« Je suis l’alpha et l’oméga »+ 1:8 8. L’alpha et l’\\+qt oméga\\+qt* sont la première et la dernière lettre de l’alphabet grec. Sens : je suis \\+qt le commencement et la fin\\+qt*, le premier et le dernier (Is. xliv, 6), « celui par qui tout commence et par qui tout se termine » (Bossuet). L’explication a été introduite dans le texte.* [le commencement et la fin], dit le Seigneur Dieu, celui qui est, qui était et qui vient, le Tout-Puissant. PREMIÈRE PARTIE. [I, 9 — III.] LETTRES AUX SEPT ÉGLISES.",
+        "NAB": "\"I am the Alpha and the Omega,\" says the Lord God, \"the one who is and who was and who is to come, the almighty.\"",
+        "VAT_ES": "Escribe al Angel de la Iglesia de Esmirna: «El Primero y el Ultimo, el que estuvo muerto y ha revivido, afirma:",
+        "CEI": "Ma per i vili e gl'increduli, gli abietti e gli omicidi, gl'immorali, i fattucchieri, gli idolàtri e per tutti i mentitori è riservato lo stagno ardente di fuoco e di zolfo. È questa la seconda morte\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "¶Ἐγὼ Ἰωάννης, ὁ ἀδελφὸς ὑμῶν καὶ κοινωνὸς ἐν τῇ θλίψει καὶ βασιλείᾳ καὶ ὑπομονῇ ἐν χριστῷ Ἰησοῦ, ἐγενόμην ἐν τῇ νήσῳ τῇ καλουμένῃ Πάτμῳ, διὰ τὸν λόγον τοῦ θεοῦ καὶ διὰ τὴν μαρτυρίαν Ἰησοῦ χριστοῦ.",
+        "VUL": "Ego Joannes frater vester, et particeps in tribulatione, et regno, et patientia in Christo Jesu : fui in insula, quæ appellatur Patmos, propter verbum Dei, et testimonium Jesu :",
+        "SYN": "Я, Иоанн, брат ваш и соучастник в скорби и в царствии и в терпении Иисуса Христа, был на острове, называемом Патмос, за слово Божие и за свидетельство Иисуса Христа.",
+        "NEO": "Moi Jean, votre frère, qui participe avec vous, à l’affliction, à la royauté et à la patience en Jésus [-Christ], j’étais dans l’île appelée Patmos, à cause de la parole de Dieu et du témoignage de Jésus.",
+        "NAB": "I, John, your brother, who share with you the distress, the kingdom, and the endurance we have in Jesus, found myself on the island called Patmos because I proclaimed God's word and gave testimony to Jesus.",
+        "VAT_ES": "«Conozco tu tribulación y tu pobreza, aunque eres rica, así como también la maledicencia de los que se llaman judíos, y no son más que una sinagoga de Satanás.",
+        "CEI": "Poi venne uno dei sette angeli che hanno le sette coppe piene degli ultimi sette flagelli e mi parlò: \"Vieni, ti mostrerò la fidanzata, la sposa dell'Agnello\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Ἐγενόμην ἐν πνεύματι ἐν τῇ κυριακῇ ἡμέρᾳ· καὶ ἤκουσα φωνὴν ὀπίσω μου μεγάλην ὡς σάλπιγγος,",
+        "VUL": "fui in spiritu in Dominica die, et audivi post me vocem magnam tamquam tubæ,",
+        "SYN": "Я был в духе в день воскресный, и слышал позади себя громкий голос, как бы трубный, который говорил: Я есмь Альфа и Омега, Первый и Последний;",
+        "NEO": "Je fus ravi en esprit le jour du Seigneur,+ 1:10 10. Le jour du Seigneur, le dimanche (\\+qt dominica dies\\+qt*) ainsi nommé à cause de la résurrection de Jésus-Christ.* et j’entendis derrière moi une voix forte, comme une trompette,",
+        "NAB": "I was caught up in spirit on the Lord's day and heard behind me a voice as loud as a trumpet,",
+        "VAT_ES": "No temas por lo que tendrás que padecer: mira que el demonio va a arrojar en la cárcel a algunos de ustedes para que sean puestos a prueba, y tendrán que sufrir durante diez días. Sé fiel hasta la muerte y te daré la corona de la vida».",
+        "CEI": "L'angelo mi trasportò in spirito su di un monte grande e alto, e mi mostrò la città santa, Gerusalemme, che scendeva dal cielo, da Dio, risplendente della gloria di Dio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "λεγούσης, Ὃ βλέπεις γράψον εἰς βιβλίον, καὶ πέμψον ταῖς ἑπτὰ ἐκκλησίαις, εἰς Ἔφεσον, καὶ εἰς Σμύρναν, καὶ εἰς Πέργαμον, καὶ εἰς Θυάτειρα, καὶ εἰς Σάρδεις, καὶ εἰς Φιλαδέλφειαν, καὶ εἰς Λαοδίκειαν.",
+        "VUL": "dicentis : Quod vides, scribe in libro : et mitte septem ecclesiis, quæ sunt in Asia, Epheso, et Smyrnæ, et Pergamo, et Thyatiræ, et Sardis, et Philadelphiæ, et Laodiciæ.",
+        "SYN": "то, что видишь, напиши в книгу и пошли церквам, находящимся в Асии: в Ефес, и в Смирну, и в Пергам, и в Фиатиру, и в Сардис, и в Филадельфию, и в Лаодикию.",
+        "NEO": "qui disait : « Ce que tu vois, écris-le dans un livre, et envoie-le aux sept Églises qui sont en Asie : à Éphèse, à Smyrne, à Pergame, à Thyatire, à Sardes, à Philadelphie et à Laodicée. »",
+        "NAB": "which said, \"Write on a scroll what you see and send it to the seven churches: to Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea.\"",
+        "VAT_ES": "El que pueda entender, que entienda lo que el Espíritu dice a las Iglesias: la segunda muerte no dañará al vencedor.",
+        "CEI": "Il suo splendore è simile a quello di una gemma preziosissima, come pietra di diaspro cristallino."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Καὶ ἐκεῖ ἐπέστρεψα βλέπειν τὴν φωνὴν ἥτις ἐλάλει μετ’ ἐμοῦ. Καὶ ἐπιστρέψας εἶδον ἑπτὰ λυχνίας χρυσᾶς,",
+        "VUL": "Et conversus sum ut viderem vocem, quæ loquebatur mecum : et conversus vidi septem candelabra aurea :",
+        "SYN": "Я обратился, чтобы увидеть, чей голос, говоривший со мною; и обратившись, увидел семь золотых светильников",
+        "NEO": "Alors je me retournai pour voir quelle était la voix qui me parlait ; et quand je me fus retourné, je vis sept chandeliers d’or,",
+        "NAB": "Then I turned to see whose voice it was that spoke to me, and when I turned, I saw seven gold lampstands",
+        "VAT_ES": "Escribe al Angel de la Iglesia de Pérgamo: «El que tiene la espada de doble filo afirma:",
+        "CEI": "La città è cinta da un grande e alto muro con dodici porte: sopra queste porte stanno dodici angeli e nomi scritti, i nomi delle dodici tribù dei figli d'Israele."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "καὶ ἐν μέσῳ τῶν ἑπτὰ λυχνιῶν ὅμοιον υἱῷ ἀνθρώπου, ἐνδεδυμένον ποδήρη, καὶ περιεζωσμένον πρὸς τοῖς μαστοῖς ζώνην χρυσῆν.",
+        "VUL": "et in medio septem candelabrorum aureorum, similem Filio hominis vestitum podere, et præcinctum ad mamillas zona aurea :",
+        "SYN": "и, посреди семи светильников, подобного Сыну Человеческому, облеченного в подир и по персям опоясанного золотым поясом:",
+        "NEO": "et, au milieu des chandeliers, quelqu’un qui ressemblait à un fils d’homme :+ 1:13 13. Qui ressemblait à un fils d’homme, désignation du Messie : dans la vision de Daniel (vii, 13).* il était vêtu d’une longue robe, portait à la hauteur des seins une ceinture d’or ;",
+        "NAB": "and in the midst of the lampstands one like a son of man, wearing an ankle-length robe, with a gold sash around his chest.",
+        "VAT_ES": "«Sé que tú habitas donde está el trono de Satanás. A pesar de todo, permaneces fiel a mi Nombre y no has renegado de tu fe en mí, ni siquiera en la época de Antipas, mi testigo fiel, al que mataron en el lugar donde habita Satanás.",
+        "CEI": "A oriente tre porte, a settentrione tre porte, a mezzogiorno tre porte e ad occidente tre porte."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ἡ δὲ κεφαλὴ αὐτοῦ καὶ αἱ τρίχες λευκαὶ ὡς ἔριον λευκόν, ὡς χιών· καὶ οἱ ὀφθαλμοὶ αὐτοῦ ὡς φλὸξ πυρός·",
+        "VUL": "caput autem ejus, et capilli erant candidi tamquam lana alba, et tamquam nix, et oculi ejus tamquam flamma ignis :",
+        "SYN": "глава Его и волосы белы, как белая волна, как снег; и очи Его, как пламень огненный;",
+        "NEO": "sa tête et ses cheveux étaient blancs comme de la laine blanche, comme de la neige, et ses yeux étaient comme une flamme de feu ;",
+        "NAB": "The hair of his head was as white as white wool or as snow, and his eyes were like a fiery flame.",
+        "VAT_ES": "Sin embargo, debo reprocharte algo, y es que tienes adictos a la doctrina de Balaam, el que enseñó a Balac cómo debía seducir a los israelitas para que se prostituyeran, comiendo los alimentos sacrificados a los ídolos.",
+        "CEI": "Le mura della città poggiano su dodici basamenti, sopra i quali sono i dodici nomi dei dodici apostoli dell'Agnello."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "καὶ οἱ πόδες αὐτοῦ ὅμοιοι χαλκολιβάνῳ, ὡς ἐν καμίνῳ πεπυρωμένοι· καὶ ἡ φωνὴ αὐτοῦ ὡς φωνὴ ὑδάτων πολλῶν.",
+        "VUL": "et pedes ejus similes auricalco, sicut in camino ardenti, et vox illius tamquam vox aquarum multarum :",
+        "SYN": "и ноги Его подобны халколивану, как раскаленные в печи, и голос Его, как шум вод многих.",
+        "NEO": "ses pieds étaient semblables à de l’airain qu’on aurait embrasé dans une fournaise, et sa voix était comme la voix des grandes eaux.",
+        "NAB": "His feet were like polished brass refined in a furnace, and his voice was like the sound of rushing water.",
+        "VAT_ES": "Tienes además partidarios de la doctrina de los nicolaítas.",
+        "CEI": "Colui che mi parlava aveva come misura una canna d'oro, per misurare la città, le sue porte e le sue mura."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Καὶ ἔχων ἐν τῇ δεξιᾷ αὐτοῦ χειρὶ ἀστέρας ἑπτά· καὶ ἐκ τοῦ στόματος αὐτοῦ ῥομφαία δίστομος ὀξεῖα ἐκπορευομένη· καὶ ἡ ὄψις αὐτοῦ, ὡς ὁ ἥλιος φαίνει ἐν τῇ δυνάμει αὐτοῦ.",
+        "VUL": "et habebat in dextera sua stellas septem : et de ore ejus gladius utraque parte acutus exibat : et facies ejus sicut sol lucet in virtute sua.",
+        "SYN": "Он держал в деснице Своей семь звезд, и из уст Его выходил острый с обеих сторон меч; и лице Его, как солнце, сияющее в силе своей.",
+        "NEO": "Il tenait dans sa main droite sept étoiles ; de sa bouche sortait un glaive aigu, à deux tranchants,+ 1:16 16. Glaive à deux tranchants, symbole de la puissance de la parole de Dieu (Hébr. iv, 12) qui juge les consciences et punit les crimes. Comp. xix, 15, 21 ; II Thess. ii, 18.* et son visage était comme le soleil lorsqu’il brille dans sa force.",
+        "NAB": "In his right hand he held seven stars. A sharp two-edged sword came out of his mouth, and his face shone like the sun at its brightest.",
+        "VAT_ES": "Arrepiéntete, o iré en seguida para combatirlos con la espada de mi boca».",
+        "CEI": "La città è a forma di quadrato, la sua lunghezza è uguale alla larghezza. L'angelo misurò la città con la canna: misura dodici mila stadi; la lunghezza, la larghezza e l'altezza sono eguali."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Καὶ ὅτε εἶδον αὐτόν, ἔπεσα πρὸς τοὺς πόδας αὐτοῦ ὡς νεκρός· καὶ ἔθηκεν τὴν δεξιὰν αὐτοῦ ἐπ’ ἐμέ, λέγων, Μὴ φοβοῦ· ἐγώ εἰμι ὁ πρῶτος καὶ ὁ ἔσχατος,",
+        "VUL": "Et cum vidissem eum, cecidi ad pedes ejus tamquam mortuus. Et posuit dexteram suam super me, dicens : Noli timere : ego sum primus, et novissimus,",
+        "SYN": "И когда я увидел Его, то пал к ногам Его, как мертвый. И Он положил на меня десницу Свою и сказал мне: не бойся; Я есмь Первый и Последний,",
+        "NEO": "Quand je le vis, je tombai à ses pieds comme mort ; et il posa sur moi sa main droite, en disant : « Ne crains point ; je suis le Premier et le Dernier,",
+        "NAB": "When I caught sight of him, I fell down at his feet as though dead. He touched me with his right hand and said, \"Do not be afraid. I am the first and the last,",
+        "VAT_ES": "El que pueda entender, que entienda lo que el Espíritu dice a las Iglesias: al vencedor, le daré de comer el maná escondido, y también le daré una piedra blanca, en la que está escrito un nombre nuevo que nadie conoce fuera de aquel que lo recibe.",
+        "CEI": "Ne misurò anche le mura: sono alte centoquarantaquattro braccia, secondo la misura in uso tra gli uomini adoperata dall'angelo."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "καὶ ὁ ζῶν, καὶ ἐγενόμην νεκρός, καὶ ἰδού, ζῶν εἰμὶ εἰς τοὺς αἰῶνας τῶν αἰώνων, ἀμήν· καὶ ἔχω τὰς κλεῖς τοῦ θανάτου καὶ τοῦ ᾍδου.",
+        "VUL": "et vivus, et fui mortuus, et ecce sum vivens in sæcula sæculorum : et habeo claves mortis, et inferni.",
+        "SYN": "и живый; и был мертв, и се, жив во веки веков, аминь; и имею ключи ада и смерти.",
+        "NEO": "et le Vivant ; j’ai été mort, et voici que je suis vivant aux siècles des siècles ; je tiens les clefs+ 1:18 18. Les clefs, symbole de la puissance souveraine de Jésus-Christ sur \\+qt la mort\\+qt* et \\+qt l’enfer\\+qt*. Voyez Hébr. ii, 14 ; Apoc. xx, 13 sv. ; Rom. xiv, 9.* de la mort et de l’enfer.",
+        "NAB": "the one who lives. Once I was dead, but now I am alive forever and ever. I hold the keys to death and the netherworld.",
+        "VAT_ES": "Escribe al Angel de la Iglesia de Tiatira: «El Hijo de Dios, el que tiene los ojos como llamas de fuego y los pies semejantes al bronce fundido, afirma:",
+        "CEI": "Le mura sono costruite con diaspro e la città è di oro puro, simile a terso cristallo."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Γράψον οὖν ἃ εἶδες, καὶ ἅ εἰσιν, καὶ ἃ μέλλει γίνεσθαι μετὰ ταῦτα·",
+        "VUL": "Scribe ergo quæ vidisti, et quæ sunt, et quæ oportet fieri post hæc.",
+        "SYN": "Итак напиши, что ты видел, и что есть, и что будет после сего.",
+        "NEO": "Écris donc les choses que tu as vues, et celles qui sont, et celles qui doivent arriver ensuite,",
+        "NAB": "Write down, therefore, what you have seen, and what is happening, and what will happen afterwards.",
+        "VAT_ES": "«Conozco tus obras, tu amor, tu fe, tu servicio y tu constancia. Sé también que tus últimas obras son más abundantes que las primeras.",
+        "CEI": "Le fondamenta delle mura della città sono adorne di ogni specie di pietre preziose. Il primo fondamento è di diaspro, il secondo di zaffìro, il terzo di calcedònio, il quarto di smeraldo,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "τὸ μυστήριον τῶν ἑπτὰ ἀστέρων ὧν εἶδες ἐπὶ τῆς δεξιᾶς μου, καὶ τὰς ἑπτὰ λυχνίας τὰς χρυσᾶς. Οἱ ἑπτὰ ἀστέρες ἄγγελοι τῶν ἑπτὰ ἐκκλησιῶν εἰσίν· καὶ αἱ λυχνίαι αἱ ἑπτὰ ἑπτὰ ἐκκλησίαι εἰσίν.",
+        "VUL": "Sacramentum septem stellarum, quas vidisti in dextera mea, et septem candelabra aurea : septem stellæ, angeli sunt septem ecclesiarum : et candelabra septem, septem ecclesiæ sunt.",
+        "SYN": "Тайна семи звезд, которые ты видел в деснице Моей, и семи золотых светильников _есть_ _сия:_ семь звезд суть Ангелы семи церквей; а семь светильников, которые ты видел, суть семь церквей.",
+        "NEO": "le mystère+ 1:20 20. Le mystère; ce mot dépend encore du verbe \\+qt écris\\+qt* ainsi que \\+qt les sept chandeliers\\+qt*, qui, en grec, sont à l’accusatif.* des sept étoiles que tu as vues dans ma main droite, et les sept chandeliers d’or. Les sept étoiles sont les anges des sept Églises, et les sept chandeliers sont sept Églises. »",
+        "NAB": "This is the secret meaning of the seven stars you saw in my right hand, and of the seven gold lampstands: the seven stars are the angels of the seven churches, and the seven lampstands are the seven churches.",
+        "VAT_ES": "Pero, debo reprocharte que toleras a Jezabel, esa mujer que pretende ser profetisa, la que engaña a todos mis servidores, y les enseña a prostituirse comiendo los alimentos sacrificados a los ídolos.",
+        "CEI": "il quinto di sardònice, il sesto di cornalina, il settimo di crisòlito, l'ottavo di berillo, il nono di topazio, il decimo di crisopazio, l'undecimo di giacinto, il dodicesimo di ametista."
+      }
+    }
+  }
+}

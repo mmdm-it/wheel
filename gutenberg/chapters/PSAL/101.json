@@ -1,0 +1,158 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_101",
+  "book_key": "PSAL",
+  "sequence": 101,
+  "chapter_in": {
+    "MT": 101,
+    "VUL": 100,
+    "LXX": 100
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לְ/דָוִ֗ד מִ֫זְמ֥וֹר חֶֽסֶד וּ/מִשְׁפָּ֥ט אָשִׁ֑ירָה לְ/ךָ֖ יְהוָ֣ה אֲזַמֵּֽרָה׃",
+        "LXX": "Προσευχὴ τῷ πτωχῷ, ὅταν ἀκηδιάσῃ καὶ ἐναντίον Κυρίου ἐκχέῃ τὴν δέησιν αὐτοῦ.",
+        "VUL": "Oratio pauperis, cum anxius fuerit, et in conspectu Domini effuderit precem suam.",
+        "SYN": "Молитва страждущего, когда он унывает и изливает пред Господом печаль свою.",
+        "NEO": "Psaume de David",
+        "NAB": "A psalm of David. I sing of love and justice; to you, LORD, I sing praise.",
+        "CEI": "Di Davide. Salmo. Amore e giustizia voglio cantare, voglio cantare inni a te, o Signore."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אַשְׂכִּ֤ילָה בְּ/דֶ֬רֶךְ תָּמִ֗ים מָ֭תַי תָּב֣וֹא אֵלָ֑/י אֶתְהַלֵּ֥ךְ בְּ/תָם לְ֝בָבִ֗/י בְּ/קֶ֣רֶב בֵּיתִֽ/י׃",
+        "LXX": "Εἰσάκουσον, Κύριε, τῆς προσευχῆς μου, καὶ ἡ κραυγή μου πρὸς σὲ ἐλθάτω.",
+        "VUL": "[Domine, exaudi orationem meam,/ et clamor meus ad te veniat./",
+        "SYN": "Господи! услышь молитву мою, и вопль мой да придет к Тебе.",
+        "NEO": "Je veux chanter la bonté et la justice ; C’est toi, \\+w Yahweh|strong=\"H3068\"\\+w**, que je veux célébrer.",
+        "NAB": "I follow the way of integrity; when will you come to me? I act with integrity of heart within my royal court.",
+        "VAT_ES": "expondré con sensatez el camino perfecto:",
+        "CEI": "Agirò con saggezza nella via dell'innocenza: quando verrai a me? Camminerò con cuore integro, dentro la mia casa."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "לֹֽא אָשִׁ֨ית לְ/נֶ֥גֶד עֵינַ֗/י דְּֽבַר בְּלִ֫יָּ֥עַל עֲשֹֽׂה סֵטִ֥ים שָׂנֵ֑אתִי לֹ֖א יִדְבַּ֣ק בִּֽ/י׃",
+        "LXX": "μὴ ἀποστρέψῃς τὸ πρόσωπόν σου ἀπ’ ἐμοῦ· ἐν ᾗ ἂν ἡμέρᾳ θλίβωμαι, κλῖνον τὸ οὖς σου πρὸς μέ· ἐν ᾗ ἂν ἡμέρᾳ ἐπικαλέσωμαί σε, ταχὺ εἰσάκουσόν μου.",
+        "VUL": "Non avertas faciem tuam a me :/ in quacumque die tribulor, inclina ad me aurem tuam ;/ in quacumque die invocavero te, velociter exaudi me./",
+        "SYN": "Не скрывай лица Твоего от меня; в день скорби моей приклони ко мне ухо Твое; в день, [когда] воззову [к Тебе], скоро услышь меня;",
+        "NEO": "Je prendrai garde à la voie de l’innocence. — Quand viendras-tu à moi ? —",
+        "NAB": "I do not allow into my presence anyone who speaks perversely. Whoever acts shamefully I hate; no such person can be my friend.",
+        "VAT_ES": "nunca pongo mis ojos",
+        "CEI": "Non sopporterò davanti ai miei occhi azioni malvagie; detesto chi fa il male, non mi sarà vicino."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "לֵבָ֣ב עִ֭קֵּשׁ יָס֣וּר מִמֶּ֑/נִּי רָ֝֗ע לֹ֣א אֵדָֽע׃",
+        "LXX": "ὅτι ἐξέλιπον ὡσεὶ καπνὸς αἱ ἡμέραι μου, καὶ τὰ ὀστᾶ μου ὡσεὶ φρύγιον συνεφρύγησαν.",
+        "VUL": "Quia defecerunt sicut fumus dies mei,/ et ossa mea sicut cremium aruerunt./",
+        "SYN": "ибо исчезли, как дым, дни мои, и кости мои обожжены, как головня;",
+        "NEO": "Je ne mettrai devant mes yeux aucune action mauvaise.",
+        "NAB": "I shun the devious of heart; the wicked I do not tolerate.",
+        "VAT_ES": "la gente falsa se aparta de mí",
+        "CEI": "Lontano da me il cuore perverso, il malvagio non lo voglio conoscere."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "מלושני מְלָשְׁנִ֬י בַ/סֵּ֨תֶר רֵעֵ/הוּ֮ אוֹת֪/וֹ אַ֫צְמִ֥ית גְּֽבַהּ עֵ֭ינַיִם וּ/רְחַ֣ב לֵבָ֑ב אֹ֝ת֗/וֹ לֹ֣א אוּכָֽל׃",
+        "LXX": "ἐπλήγην ὡσεὶ χόρτος καὶ ἐξηράνθη ἡ καρδία μου, ὅτι ἐπελαθόμην τοῦ φαγεῖν τὸν ἄρτον μου.",
+        "VUL": "Percussus sum ut fnum, et aruit cor meum,/ quia oblitus sum comedere panem meum./",
+        "SYN": "сердце мое поражено, и иссохло, как трава, так что я забываю есть хлеб мой;",
+        "NEO": "Un cœur faux ne sera jamais le mien ; je ne veux pas connaître le mal.",
+        "NAB": "Whoever slanders another in secret I reduce to silence. Haughty eyes and arrogant hearts I cannot endure.",
+        "VAT_ES": "Al que difama en secreto a su prójimo",
+        "CEI": "Chi calunnia in segreto il suo prossimo io lo farò perire; chi ha occhi altezzosi e cuore superbo non lo potrò sopportare."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "עֵינַ֤/י בְּ/נֶֽאֶמְנֵי אֶרֶץ֮ לָ/שֶׁ֪בֶת עִמָּ֫דִ֥/י הֹ֭לֵךְ בְּ/דֶ֣רֶךְ תָּמִ֑ים ה֝֗וּא יְשָׁרְתֵֽ/נִי׃",
+        "LXX": "ἀπὸ φωνῆς τοῦ στεναγμοῦ μου ἐκολλήθη τὸ ὀστοῦν μου τῇ σαρκί μου.",
+        "VUL": "A voce gemitus mei/ adhæsit os meum carni meæ./",
+        "SYN": "от голоса стенания моего кости мои прильпнули к плоти моей.",
+        "NEO": "Le détracteur qui déchire en secret son prochain, je l’exterminerai ; L’homme au regard hautain et au cœur gonflé d’orgueil, je ne le supporterai pas.",
+        "NAB": "I look to the faithful of the land; they alone can be my companions. Those who follow the way of integrity, they alone can enter my service.",
+        "VAT_ES": "Pongo mis ojos en las personas leales",
+        "CEI": "I miei occhi sono rivolti ai fedeli del paese perché restino a me vicino: chi cammina per la via integra sarà mio servitore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "לֹֽא יֵשֵׁ֨ב בְּ/קֶ֥רֶב בֵּיתִ/י֮ עֹשֵׂ֪ה רְמִ֫יָּ֥ה דֹּבֵ֥ר שְׁקָרִ֑ים לֹֽא יִ֝כּ֗וֹן לְ/נֶ֣גֶד עֵינָֽ/י׃",
+        "LXX": "ὡμοιώθην πελεκᾶνι ἐρημικῷ, ἐγενήθην ὡσεὶ νυκτικόραξ ἐν οἰκοπέδῳ,",
+        "VUL": "Similis factus sum pellicano solitudinis ;/ factus sum sicut nycticorax in domicilio./",
+        "SYN": "Я уподобился пеликану в пустыне; я стал как филин на развалинах;",
+        "NEO": "J’aurai les yeux sur les hommes fidèles du pays, pour qu’ils demeurent auprès de moi ; celui qui marche dans une voie intègre sera mon serviteur.",
+        "NAB": "No one who practices deceit can hold a post in my court. No one who speaks falsely can be among my advisors.",
+        "VAT_ES": "No habita dentro de mi casa",
+        "CEI": "Non abiterà nella mia casa, chi agisce con inganno, chi dice menzogne non starà alla mia presenza."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "לַ/בְּקָרִ֗ים אַצְמִ֥ית כָּל רִשְׁעֵי אָ֑רֶץ לְ/הַכְרִ֥ית מֵֽ/עִיר יְ֝הוָ֗ה כָּל פֹּ֥עֲלֵי אָֽוֶן׃",
+        "LXX": "ἠγρύπνησα καὶ ἐγενήθην ὡσεὶ στρουθίον μονάζον ἐπὶ δώματι.",
+        "VUL": "Vigilavi, et factus sum sicut passer solitarius in tecto./",
+        "SYN": "не сплю и сижу, как одинокая птица на кровле.",
+        "NEO": "Il n’aura pas de place dans ma maison, celui qui agit avec fourberie ; celui qui profère le mensonge ne subsistera pas devant mes yeux.",
+        "NAB": "Each morning I clear the wicked from the land, and rid the LORD'S city of all evildoers.",
+        "VAT_ES": "Hago desaparecer día tras día",
+        "CEI": "Sterminerò ogni mattino tutti gli empi del paese, per estirpare dalla città del Signore quanti operano il male."
+      }
+    }
+  }
+}

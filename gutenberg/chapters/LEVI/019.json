@@ -1,0 +1,681 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LEVI_019",
+  "book_key": "LEVI",
+  "sequence": 19,
+  "chapter_in": {
+    "MT": 19,
+    "VUL": 19,
+    "LXX": 19
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutus est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse ancora a Mosè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "דַּבֵּ֞ר אֶל כָּל עֲדַ֧ת בְּנֵי יִשְׂרָאֵ֛ל וְ/אָמַרְתָּ֥ אֲלֵ/הֶ֖ם קְדֹשִׁ֣ים תִּהְי֑וּ כִּ֣י קָד֔וֹשׁ אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "Λάλησον τῇ συναγωγῇ τῶν υἱῶν Ἰσραὴλ καὶ ἐρεῖς πρὸς αὐτούς Ἅγιοι ἔσεσθε, ὅτι ἐγὼ ἅγιος Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Loquere ad omnem ctum filiorum Israël, et dices ad eos : Sancti estote, quia ego sanctus sum, Dominus Deus vester.",
+        "SYN": "объяви всему обществу сынов Израилевых и скажи им: святы будьте, ибо свят Я Господь, Бог ваш.",
+        "NEO": "« Parle à toute l’assemblée d’Israël, et dis-leur :",
+        "NAB": "\"Speak to the whole Israelite community and tell them: Be holy, for I, the LORD your God, am holy.",
+        "VAT_ES": "Habla en estos términos a toda la comunidad de Israel: Ustedes serán santos, porque yo, el Señor su Dios, soy santo.",
+        "CEI": "\"Parla a tutta la comunità degli Israeliti e ordina loro: Siate santi, perché io, il Signore, Dio vostro, sono santo."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אִ֣ישׁ אִמּ֤/וֹ וְ/אָבִי/ו֙ תִּירָ֔אוּ וְ/אֶת שַׁבְּתֹתַ֖/י תִּשְׁמֹ֑רוּ אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "ἕκαστος πατέρα αὐτοῦ καὶ μητέρα αὐτοῦ φοβείσθω, καὶ τὰ σάββατά μου φυλάξεσθε· ἐγὼ Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Unusquisque patrem suum, et matrem suam timeat. Sabbata mea custodite. Ego Dominus Deus vester.",
+        "SYN": "Бойтесь каждый матери своей и отца своего и субботы Мои храните. Я Господь, Бог ваш.",
+        "NEO": "Que chacun de vous craigne sa mère et son père, et observe mes sabbats. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu.",
+        "NAB": "Revere your mother and father, and keep my sabbaths. I, the LORD, am your God.",
+        "VAT_ES": "Respetarán a su madre y a su padre, y observarán mis sábados. Yo soy el Señor, su Dios.",
+        "CEI": "Ognuno rispetti sua madre e suo padre e osservi i miei sabati. Io sono il Signore, vostro Dio."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אַל תִּפְנוּ֙ אֶל הָ֣/אֱלִילִ֔ים וֵֽ/אלֹהֵי֙ מַסֵּכָ֔ה לֹ֥א תַעֲשׂ֖וּ לָ/כֶ֑ם אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "οὐκ ἐπακολουθήσετε εἰδώλοις, καὶ θεοὺς χωνευτοὺς οὐ ποιήσετε ὑμῖν· ἐγὼ Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Nolite converti ad idola, nec deos conflatiles faciatis vobis. Ego Dominus Deus vester.",
+        "SYN": "Не обращайтесь к идолам и богов литых не делайте себе. Я Господь, Бог ваш.",
+        "NEO": "Ne vous tournez pas vers les idoles, et ne vous faites pas de dieux de fonte. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu.",
+        "NAB": "\"Do not turn aside to idols, nor make molten gods for yourselves. I, the LORD, am your God.",
+        "VAT_ES": "No se volverán hacia los ídolos ni se fabricarán dioses de metal fundido. Yo soy el Señor, su Dios.",
+        "CEI": "Non rivolgetevi agli idoli, e non fatevi divinità di metallo fuso. Io sono il Signore, vostro Dio."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/כִ֧י תִזְבְּח֛וּ זֶ֥בַח שְׁלָמִ֖ים לַ/יהוָ֑ה לִֽ/רְצֹנְ/כֶ֖ם תִּזְבָּחֻֽ/הוּ׃",
+        "LXX": "Καὶ ἐὰν θύσητε θυσίαν σωτηρίου τῷ κυρίῳ, δεκάτην ὑμῶν θύσετε·",
+        "VUL": "Si immolaveritis hostiam pacificorum Domino, ut sit placabilis,",
+        "SYN": "Когда будете приносить Господу жертву мирную, то приносите ее, чтобы приобрести себе благоволение:",
+        "NEO": "Quand vous offrirez à \\+w Yahweh|strong=\"H3068\"\\+w** un sacrifice pacifique, vous l’offrirez de manière à vous concilier sa faveur.",
+        "NAB": "\"When you sacrifice your peace offering to the LORD, if you wish it to be acceptable,",
+        "VAT_ES": "Cuando ofrezcan al Señor un sacrificio de comunión, lo harán de tal manera que les sea aceptado.",
+        "CEI": "Quando offrirete al Signore una vittima in sacrificio di comunione, offritela in modo da essergli graditi."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בְּ/י֧וֹם זִבְחֲ/כֶ֛ם יֵאָכֵ֖ל וּ/מִֽ/מָּחֳרָ֑ת וְ/הַ/נּוֹתָר֙ עַד י֣וֹם הַ/שְּׁלִישִׁ֔י בָּ/אֵ֖שׁ יִשָּׂרֵֽף׃",
+        "LXX": "ᾗ ἂν ἡμέρᾳ θύσητε βρωθήσεται καὶ τῇ αὔριον· καὶ ἐὰν καταλειφθῇ ἕως ἡμέρας τρίτης, ἐν πυρὶ κατακαυθήσεται.",
+        "VUL": "eo die quo fuerit immolata, comedetis eam, et die altero : quidquid autem residuum fuerit in diem tertium, igne comburetis.",
+        "SYN": "в день жертвоприношения вашего и на другой день должно есть ее, а оставшееся к третьему дню должно сжечь на огне;",
+        "NEO": "La victime sera mangée le jour où vous l’immolerez, ou le lendemain ; ce qui restera jusqu’au troisième jour sera consumé par le feu.",
+        "NAB": "it must be eaten on the very day of your sacrifice or on the following day. Whatever is left over until the third day shall be burned up in the fire.",
+        "VAT_ES": "La víctima deberá ser comida el mismo día en que ofrezcan el sacrificio, o al día siguiente, y lo que quede para el tercer día, será quemado.",
+        "CEI": "La si mangerà il giorno stesso che l'avrete immolata o il giorno dopo; ciò che avanzerà fino al terzo giorno, lo brucerete nel fuoco."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/אִ֛ם הֵאָכֹ֥ל יֵאָכֵ֖ל בַּ/יּ֣וֹם הַ/שְּׁלִישִׁ֑י פִּגּ֥וּל ה֖וּא לֹ֥א יֵרָצֶֽה׃",
+        "LXX": "ἐὰν δὲ βρώσει βρωθῇ τῇ ἡμέρᾳ τῇ τρίτῃ, ἄθυτόν ἐστιν, οὐ δεχθήσεται·",
+        "VUL": "Si quis post biduum comederit ex ea, profanus erit, et impietatis reus :",
+        "SYN": "если же кто станет есть ее на третий день, это гнусно, это не будет благоприятно;",
+        "NEO": "Si quelqu’un en mange le troisième jour, c’est une abomination : le sacrifice ne sera pas agréé.",
+        "NAB": "If any of it is eaten on the third day, the sacrifice will be unacceptable as refuse;",
+        "VAT_ES": "Y si alguien come algo al tercer día, la víctima no le será aceptada, porque se ha convertido en algo nocivo.",
+        "CEI": "Se invece si mangiasse il terzo giorno, sarebbe cosa abominevole; il sacrificio non sarebbe gradito."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אֹֽכְלָי/ו֙ עֲוֺנ֣/וֹ יִשָּׂ֔א כִּֽי אֶת קֹ֥דֶשׁ יְהוָ֖ה חִלֵּ֑ל וְ/נִכְרְתָ֛ה הַ/נֶּ֥פֶשׁ הַ/הִ֖וא מֵ/עַמֶּֽי/הָ׃",
+        "LXX": "ὁ δὲ ἔσθων αὐτὸ ἁμαρτίαν λήμψεται, ὅτι τὰ ἅγια Κυρίου ἐβεβήλωσεν· καὶ ἐξολεθρευθήσονται αἱ ψυχαὶ αἱ ἔσθουσαι ἐκ τοῦ λαοῦ αὐτῶν.",
+        "VUL": "portabitque iniquitatem suam, quia sanctum Domini polluit, et peribit anima illa de populo suo.",
+        "SYN": "кто станет есть ее, тот понесет на себе грех, ибо он осквернил святыню Господню, и истребится душа та из народа своего.",
+        "NEO": "Celui qui en mangera portera son iniquité, car il profane ce qui est consacré à \\+w Yahweh|strong=\"H3068\"\\+w** : cet homme sera retranché de son peuple.",
+        "NAB": "whoever eats of it then shall pay the penalty for having profaned what is sacred to the LORD. Such a one shall be cut off from his people.",
+        "VAT_ES": "El que la coma, cargará con su culpa, porque ha profanado lo que está consagrado al Señor: esa persona será excluida de su pueblo.",
+        "CEI": "Chiunque ne mangiasse, porterebbe la pena della sua iniquità, perché profanerebbe ciò che è sacro al Signore; quel tale sarebbe eliminato dal suo popolo."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וּֽ/בְ/קֻצְרְ/כֶם֙ אֶת קְצִ֣יר אַרְצְ/כֶ֔ם לֹ֧א תְכַלֶּ֛ה פְּאַ֥ת שָׂדְ/ךָ֖ לִ/קְצֹ֑ר וְ/לֶ֥קֶט קְצִֽירְ/ךָ֖ לֹ֥א תְלַקֵּֽט׃",
+        "LXX": "Καὶ ἐκθεριζόντων ὑμῶν τὸν θερισμὸν τῆς γῆς ὑμῶν, οὐ συντελέσετε τὸν θερισμὸν ὑμῶν τοῦ ἀγροῦ σου ἐκθερίσαι, καὶ τὰ ἀποπίπτοντα τοῦ θερισμοῦ σου οὐ συλλέξεις·",
+        "VUL": "Cumque messueris segetes terræ tuæ, non tondebis usque ad solum superficiem terræ, nec remanentes spicas colliges,",
+        "SYN": "Когда будете жать жатву на земле вашей, не дожинай до края поля твоего, и оставшегося от жатвы твоей не подбирай,",
+        "NEO": "Quand vous ferez la moisson de votre pays, tu ne moissonneras pas jusqu’à la limite extrême de ton champ, et tu ne ramasseras pas ce qu’il y a à glaner de ta moisson.",
+        "NAB": "\"When you reap the harvest of your land, you shall not be so thorough that you reap the field to its very edge, nor shall you glean the stray ears of grain.",
+        "VAT_ES": "En el momento de recoger la cosecha, no segarás todo el campo hasta sus bordes, ni volverás a buscar las espigas que queden.",
+        "CEI": "Quando mieterete la messe della vostra terra, non mieterete fino ai margini del campo, né raccoglierete ciò che resta da spigolare della messe;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/כַרְמְ/ךָ֙ לֹ֣א תְעוֹלֵ֔ל וּ/פֶ֥רֶט כַּרְמְ/ךָ֖ לֹ֣א תְלַקֵּ֑ט לֶֽ/עָנִ֤י וְ/לַ/גֵּר֙ תַּעֲזֹ֣ב אֹתָ֔/ם אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "καὶ τὸν ἀμπελῶνά σου οὐκ ἐπανατρυγήσεις, οὐδὲ τοὺς ῥῶγας τοῦ ἀμπελῶνός σου συλλέξεις· τῷ πτωχῷ καὶ τῷ προσηλύτῳ καταλείψεις αὐτά· ἐγώ εἰμι Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "neque in vinea tua racemos et grana decidentia congregabis : sed pauperibus et peregrinis carpenda dimittes. Ego Dominus Deus vester.",
+        "SYN": "и виноградника твоего не обирай дочиста, и попадавших ягод в винограднике не подбирай; оставь это бедному и пришельцу. Я Господь, Бог ваш.",
+        "NEO": "Tu ne cueilleras pas non plus les grappes restées dans ta vigne, et tu ne ramasseras pas les fruits tombés dans ton verger ; tu laisseras cela au pauvre et à l’étranger. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu.",
+        "NAB": "Likewise, you shall not pick your vineyard bare, nor gather up the grapes that have fallen. These things you shall leave for the poor and the alien. I, the LORD, am your God.",
+        "VAT_ES": "No sacarás hasta el último racimo de tu viña ni recogerás los frutos caídos, sino que los dejarás para el pobre y el extranjero. Yo soy el Señor, tu Dios.",
+        "CEI": "quanto alla tua vigna, non coglierai i racimoli e non raccoglierai gli acini caduti; li lascerai per il povero e per il forestiero. Io sono il Signore, vostro Dio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "לֹ֖א תִּגְנֹ֑בוּ וְ/לֹא תְכַחֲשׁ֥וּ וְ/לֹֽא תְשַׁקְּר֖וּ אִ֥ישׁ בַּ/עֲמִיתֽ/וֹ׃",
+        "LXX": "οὐ κλέψετε, οὐ ψεύσεσθε, οὐ συκοφαντήσει ἕκαστος τὸν πλησίον.",
+        "VUL": "Non facietis furtum. Non mentiemini, nec decipiet unusquisque proximum suum.",
+        "SYN": "Не крадите, не лгите и не обманывайте друг друга.",
+        "NEO": "Vous ne déroberez point, et vous n’userez ni de tromperie ni de mensonge les uns envers les autres.",
+        "NAB": "\"You shall not steal. You shall not lie or speak falsely to one another.",
+        "VAT_ES": "Ustedes no robarán, no mentirán ni se engañarán unos a otros.",
+        "CEI": "Non ruberete né userete inganno o menzogna gli uni a danno degli altri."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא תִשָּׁבְע֥וּ בִ/שְׁמִ֖/י לַ/שָּׁ֑קֶר וְ/חִלַּלְתָּ֛ אֶת שֵׁ֥ם אֱלֹהֶ֖י/ךָ אֲנִ֥י יְהוָֽה׃",
+        "LXX": "καὶ οὐκ ὀμεῖσθε τῷ ὀνόματί μου ἐπ’ ἀδίκῳ, καὶ οὐ βεβηλώσετε τὸ ὄνομα τοῦ θεοῦ ὑμῶν· ἐγώ εἰμι Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Non perjurabis in nomine meo, nec pollues nomen Dei tui. Ego Dominus.",
+        "SYN": "Не клянитесь именем Моим во лжи, и не бесчести имени Бога твоего. Я Господь [Бог ваш].",
+        "NEO": "Vous ne jurerez pas par mon nom, en mentant, car tu profanerais le nom de ton Dieu. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "You shall not swear falsely by my name, thus profaning the name of your God. I am the LORD.",
+        "VAT_ES": "No jurarán en falso por mi Nombre, porque profanarían el nombre de su Dios. Yo soy el Señor.",
+        "CEI": "Non giurerete il falso servendovi del mio nome; perché profaneresti il nome del tuo Dio. Io sono il Signore."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "לֹֽא תַעֲשֹׁ֥ק אֶת רֵֽעֲ/ךָ֖ וְ/לֹ֣א תִגְזֹ֑ל לֹֽא תָלִ֞ין פְּעֻלַּ֥ת שָׂכִ֛יר אִתְּ/ךָ֖ עַד בֹּֽקֶר׃",
+        "LXX": "οὐκ ἀδικήσεις τὸν πλησίον, καὶ οὐχ ἁρπᾷ, καὶ οὐ μὴ κοιμηθήσεται ὁ μισθὸς τοῦ μισθωτοῦ παρὰ σοὶ ἕως πρωί.",
+        "VUL": "Non facies calumniam proximo tuo nec vi opprimes eum. Non morabitur opus mercenarii tui apud te usque mane.",
+        "SYN": "Не обижай ближнего твоего и не грабительствуй. Плата наемнику не должна оставаться у тебя до утра.",
+        "NEO": "Tu n’opprimeras pas ton prochain, et tu ne le dépouilleras pas. Le salaire du mercenaire ne restera pas chez toi jusqu’au lendemain.",
+        "NAB": "\"You shall not defraud or rob your neighbor. You shall not withhold overnight the wages of your day laborer.",
+        "VAT_ES": "No oprimirás a tu prójimo ni lo despojarás; y no retendrás hasta la mañana siguiente el salario del jornalero.",
+        "CEI": "Non opprimerai il tuo prossimo, né lo spoglierai di ciò che è suo; il salario del bracciante al tuo servizio non resti la notte presso di te fino al mattino dopo."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לֹא תְקַלֵּ֣ל חֵרֵ֔שׁ וְ/לִ/פְנֵ֣י עִוֵּ֔ר לֹ֥א תִתֵּ֖ן מִכְשֹׁ֑ל וְ/יָרֵ֥אתָ מֵּ/אֱלֹהֶ֖י/ךָ אֲנִ֥י יְהוָֽה׃",
+        "LXX": "οὐ κακῶς ἐρεῖς κωφόν, καὶ ἀπέναντι τυφλοῦ οὐ προσθήσεις σκάνδαλον· καὶ φοβηθήσῃ Κύριον τὸν θεόν σου· ἐγώ εἰμι Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Non maledices surdo, nec coram cæco pones offendiculum : sed timebis Dominum Deum tuum, quia ego sum Dominus.",
+        "SYN": "Не злословь глухого и пред слепым не клади ничего, чтобы преткнуться ему; бойся [Господа] Бога твоего. Я Господь [Бог ваш].",
+        "NEO": "Tu ne proféreras pas de malédiction contre un sourd, et tu ne mettras pas devant un aveugle quelque chose qui puisse le faire tomber ; car tu auras la crainte de ton Dieu. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "You shall not curse the deaf, or put a stumbling block in front of the blind, but you shall fear your God. I am the LORD.",
+        "VAT_ES": "No insultarás a un ciego, sino que temerás a tu Dios. Yo soy el Señor.",
+        "CEI": "Non disprezzerai il sordo, né metterai inciampo davanti al cieco, ma temerai il tuo Dio. Io sono il Signore."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "לֹא תַעֲשׂ֥וּ עָ֨וֶל֙ בַּ/מִּשְׁפָּ֔ט לֹא תִשָּׂ֣א פְנֵי דָ֔ל וְ/לֹ֥א תֶהְדַּ֖ר פְּנֵ֣י גָד֑וֹל בְּ/צֶ֖דֶק תִּשְׁפֹּ֥ט עֲמִיתֶֽ/ךָ׃",
+        "LXX": "οὐ ποιήσετε ἄδικον ἐν κρίσει· οὐ λήμψῃ πρόσωπον πτωχοῦ οὐδὲ θαυμάσεις πρόσωπον δυνάστου, ἐν δικαιοσύνῃ κρινεῖς τὸν πλησίον σου.",
+        "VUL": "Non facies quod iniquum est, nec injuste judicabis. Non consideres personam pauperis, nec honores vultum potentis. Juste judica proximo tuo.",
+        "SYN": "Не делайте неправды на суде; не будь лицеприятен к нищему и не угождай лицу великого; по правде суди ближнего твоего.",
+        "NEO": "Vous ne commettrez pas d’injustice dans le jugement : tu n’auras pas de faveur pour le pauvre, et tu n’auras pas de complaisance pour le puissant ; mais tu jugeras ton prochain selon la justice.",
+        "NAB": "\"You shall not act dishonestly in rendering judgment. Show neither partiality to the weak nor deference to the mighty, but judge your fellow men justly.",
+        "VAT_ES": "No cometerás ninguna injusticia en los juicios. No favorecerás arbitrariamente al pobre ni te mostrarás complaciente con el rico: juzgarás a tu prójimo con justicia.",
+        "CEI": "Non commetterete ingiustizia in giudizio; non tratterai con parzialità il povero, né userai preferenze verso il potente; ma giudicherai il tuo prossimo con giustizia."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "לֹא תֵלֵ֤ךְ רָכִיל֙ בְּ/עַמֶּ֔י/ךָ לֹ֥א תַעֲמֹ֖ד עַל דַּ֣ם רֵעֶ֑/ךָ אֲנִ֖י יְהוָֽה׃",
+        "LXX": "οὐ πορεύσῃ δόλῳ ἐν τῷ ἔθνει σου· οὐκ ἐπιστήσῃ ἐφ’ αἷμα τοῦ πλησίον σου· ἐγώ εἰμι Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Non eris criminator, nec susurro in populo. Non stabis contra sanguinem proximi tui. Ego Dominus.",
+        "SYN": "Не ходи переносчиком в народе твоем и не восставай на жизнь ближнего твоего. Я Господь [Бог ваш].",
+        "NEO": "Tu n’iras pas semant la diffamation parmi ton peuple. Tu ne te tiendras pas comme témoin contre le sang de ton prochain. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "You shall not go about spreading slander among your kinsmen; nor shall you stand by idly when your neighbor's life is at stake. I am the LORD.",
+        "VAT_ES": "No difamarás a tus compatriotas, ni pondrás en peligro la vida de tu prójimo. Yo soy el señor.",
+        "CEI": "Non andrai in giro a spargere calunnie fra il tuo popolo né coopererai alla morte del tuo prossimo. Io sono il Signore."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "לֹֽא תִשְׂנָ֥א אֶת אָחִ֖י/ךָ בִּ/לְבָבֶ֑/ךָ הוֹכֵ֤חַ תּוֹכִ֨יחַ֙ אֶת עֲמִיתֶ֔/ךָ וְ/לֹא תִשָּׂ֥א עָלָ֖י/ו חֵֽטְא׃",
+        "LXX": "οὐ μισήσεις τὸν ἀδελφόν σου τῇ διανοίᾳ σου· ἐλεγμῷ ἐλέγξεις τὸν πλησίον σου, καὶ οὐ λήμψῃ δι’ αὐτὸν ἁμαρτίαν.",
+        "VUL": "Non oderis fratrem tuum in corde tuo, sed publice argue eum, ne habeas super illo peccatum.",
+        "SYN": "Не враждуй на брата твоего в сердце твоем; обличи ближнего твоего, и не понесешь за него греха.",
+        "NEO": "Tu ne haïras pas ton frère dans ton cœur, mais tu reprendras ton prochain, afin de ne pas te charger d’un péché à cause de lui.",
+        "NAB": "\"You shall not bear hatred for your brother in your heart. Though you may have to reprove your fellow man, do not incur sin because of him.",
+        "VAT_ES": "No odiarás a tu hermano en tu corazón: deberás reprenderlo convenientemente, para no cargar con un pecado a causa de él.",
+        "CEI": "Non coverai nel tuo cuore odio contro il tuo fratello; rimprovera apertamente il tuo prossimo, così non ti caricherai d'un peccato per lui."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "לֹֽא תִקֹּ֤ם וְ/לֹֽא תִטֹּר֙ אֶת בְּנֵ֣י עַמֶּ֔/ךָ וְ/אָֽהַבְתָּ֥ לְ/רֵעֲ/ךָ֖ כָּמ֑וֹ/ךָ אֲנִ֖י יְהוָֽה׃",
+        "LXX": "καὶ οὐκ ἐκδικᾶταί σου ἡ χείρ, καὶ οὐ μηνιεῖς τοῖς υἱοῖς τοῦ λαοῦ σου, καὶ ἀγαπήσεις τὸν πλησίον σου ὡς σεαυτόν· ἐγώ εἰμι Κύριος.",
+        "VUL": "Non quæras ultionem, nec memor eris injuriæ civium tuorum. Diliges amicum tuum sicut teipsum. Ego Dominus.",
+        "SYN": "Не мсти и не имей злобы на сынов народа твоего, но люби ближнего твоего, как самого себя. Я Господь [Бог ваш].",
+        "NEO": "Tu ne te vengeras point, et tu ne garderas pas de rancune contre les enfants de ton peuple. Tu aimeras ton prochain comme toi-même. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Take no revenge and cherish no grudge against your fellow countrymen. You shall love your neighbor as yourself. I am the LORD.",
+        "VAT_ES": "No serás vengativo con tus compatriotas ni les guardarás rencor. Amarás a tu prójimo como a ti mismo. Yo soy el Señor.",
+        "CEI": "Non ti vendicherai e non serberai rancore contro i figli del tuo popolo, ma amerai il tuo prossimo come te stesso. Io sono il Signore."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "אֶֽת חֻקֹּתַ/י֮ תִּשְׁמֹרוּ֒ בְּהֶמְתְּ/ךָ֙ לֹא תַרְבִּ֣יעַ כִּלְאַ֔יִם שָׂדְ/ךָ֖ לֹא תִזְרַ֣ע כִּלְאָ֑יִם וּ/בֶ֤גֶד כִּלְאַ֨יִם֙ שַֽׁעַטְנֵ֔ז לֹ֥א יַעֲלֶ֖ה עָלֶֽי/ךָ׃",
+        "LXX": "Τὸν νόμον μου φυλάξεσθε· τὰ κτήνη σου οὐ κατοχεύσεις ἑτεροζύγῳ, καὶ τὸν ἀμπελῶνά σου οὐ κατασπερεῖς διάφορον, καὶ ἱμάτιον ἐκ δύο ὑφασμένον κίβδηλον οὐκ ἐπιβαλεῖς σεαυτῷ.",
+        "VUL": "Leges meas custodite. Jumentum tuum non facies coire cum alterius generis animantibus. Agrum tuum non seres diverso semine. Veste, quæ ex duobus texta est, non indueris.",
+        "SYN": "Уставы Мои соблюдайте; скота твоего не своди с иною породою; поля твоего не засевай двумя родами _семян;_ в одежду из разнородных нитей, из шерсти и льна, не одевайся.",
+        "NEO": "Vous observerez mes lois.",
+        "NAB": "\"Keep my statutes: do not breed any of your domestic animals with others of a different species; do not sow a field of yours with two different kinds of seed; and do not put on a garment woven with two different kinds of thread.",
+        "VAT_ES": "Ustedes observarán mis preceptos. No cruzarás tu ganado con animales de otra especie. No sembrarás en tu campo dos clases distintas de semilla. No usarás ropa confeccionada con materiales diversos.",
+        "CEI": "Osserverete le mie leggi. Non accoppierai bestie di specie differenti; non seminerai il tuo campo con due sorta di seme, né porterai veste tessuta di due diverse materie."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ֠/אִישׁ כִּֽי יִשְׁכַּ֨ב אֶת אִשָּׁ֜ה שִׁכְבַת זֶ֗רַע וְ/הִ֤וא שִׁפְחָה֙ נֶחֱרֶ֣פֶת לְ/אִ֔ישׁ וְ/הָפְדֵּה֙ לֹ֣א נִפְדָּ֔תָה א֥וֹ חֻפְשָׁ֖ה לֹ֣א נִתַּן לָ֑/הּ בִּקֹּ֧רֶת תִּהְיֶ֛ה לֹ֥א יוּמְת֖וּ כִּי לֹ֥א חֻפָּֽשָׁה׃",
+        "LXX": "καὶ ἐάν τις κοιμηθῇ μετὰ γυναικὸς κοίτην σπέρματος, καὶ αὕτη οἰκέτις διαπεφυλαγμένη ἀνθρώπῳ, καὶ αὕτη λύτροις οὐ λελύτρωται ἢ ἐλευθερία οὐκ ἐδόθη αὐτῇ, ἐπισκοπὴ ἔσται αὐτοῖς· οὐκ ἀποθανοῦνται, ὅτι οὐκ ἀπηλευθερώθη.",
+        "VUL": "Homo, si dormierit cum muliere coitu seminis, quæ sit ancilla etiam nubilis, et tamen pretio non redempta, nec libertate donata : vapulabunt ambo, et non morientur, quia non fuit libera.",
+        "SYN": "Если кто переспит с женщиною, а она раба, обрученная мужу, но еще не выкупленная, или свобода еще не дана ей, то должно наказать их, но не смертью, потому что она несвободная:",
+        "NEO": "Si un homme couche et a commerce avec une femme qui soit une esclave fiancée à un autre homme et qui n’a pas été rachetée ou affranchie, ils seront châtiés tous deux, mais non punis de mort, parce que l’esclave n’était pas affranchie.",
+        "NAB": "\"If a man has carnal relations with a female slave who has already been living with another man but has not yet been redeemed or given her freedom, they shall be punished but not put to death, because she is not free.",
+        "VAT_ES": "Si un hombre tiene relaciones sexuales con una esclava reservada a otro hombre, pero que no ha sido rescatada ni puesta en libertad, se pagará una indemnización: ellos no serán castigados con la pena de muerte, porque la mujer no es libre.",
+        "CEI": "Se un uomo ha rapporti con donna che sia una schiava sposata ad altro uomo, ma non riscattata o affrancata, saranno tutti e due puniti; ma non messi a morte, perché essa non è libera."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/הֵבִ֤יא אֶת אֲשָׁמ/וֹ֙ לַֽ/יהוָ֔ה אֶל פֶּ֖תַח אֹ֣הֶל מוֹעֵ֑ד אֵ֖יל אָשָֽׁם׃",
+        "LXX": "καὶ προσάξει τῆς πλημμελίας αὐτοῦ τῷ κυρίῳ παρὰ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου κριὸν πλημμελίας·",
+        "VUL": "Pro delicto autem suo offeret Domino ad ostium tabernaculi testimonii arietem :",
+        "SYN": "пусть приведет он Господу ко входу скинии собрания жертву повинности, овна в жертву повинности своей;",
+        "NEO": "Pour sa faute, l’homme amènera à \\+w Yahweh|strong=\"H3068\"\\+w**, à l’entrée de la tente de réunion, un bélier en sacrifice de réparation.",
+        "NAB": "The man, moreover, shall bring to the entrance of the meeting tent a ram as his guilt offering to the LORD.",
+        "VAT_ES": "El hombre llevará un carnero a la entrada de la Carpa del Encuentro, como sacrificio de reparación al Señor.",
+        "CEI": "L'uomo condurrà al Signore, all'ingresso della tenda del convegno, in sacrificio di riparazione, un ariete;"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/כִפֶּר֩ עָלָ֨י/ו הַ/כֹּהֵ֜ן בְּ/אֵ֤יל הָֽ/אָשָׁם֙ לִ/פְנֵ֣י יְהוָ֔ה עַל חַטָּאת֖/וֹ אֲשֶׁ֣ר חָטָ֑א וְ/נִסְלַ֣ח ל֔/וֹ מֵ/חַטָּאת֖/וֹ אֲשֶׁ֥ר חָטָֽא׃",
+        "LXX": "καὶ ἐξιλάσεται περὶ αὐτοῦ ὁ ἱερεὺς ἐν τῷ κριῷ τῆς πλημμελίας ἔναντι Κυρίου περὶ τῆς ἁμαρτίας ἧς ἥμαρτεν, καὶ ἀφεθήσεται αὐτῷ ἡ ἁμαρτία ἣν ἥμαρτεν.",
+        "VUL": "orabitque pro eo sacerdos, et pro peccato ejus coram Domino, et repropitiabitur ei, dimitteturque peccatum.",
+        "SYN": "и очистит его священник овном повинности пред Господом от греха, которым он согрешил, и прощен будет ему грех, которым он согрешил.",
+        "NEO": "Le prêtre fera pour lui l’expiation devant \\+w Yahweh|strong=\"H3068\"\\+w** avec le bélier du sacrifice de réparation, pour le péché qu’il a commis, et le péché qu’il a commis lui sera pardonné.",
+        "NAB": "With this ram the priest shall make atonement before the LORD for the sin he has committed, and it will be forgiven him.",
+        "VAT_ES": "El sacerdote practicará con el carnero el rito de expiación en favor de ese hombre, delante del Señor, por el pecado que cometió, y el pecado le será perdonado.",
+        "CEI": "con questo ariete il sacerdote farà per lui il rito espiatorio davanti al Signore per il peccato da lui commesso; il peccato commesso gli sarà perdonato."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/כִי תָבֹ֣אוּ אֶל הָ/אָ֗רֶץ וּ/נְטַעְתֶּם֙ כָּל עֵ֣ץ מַאֲכָ֔ל וַ/עֲרַלְתֶּ֥ם עָרְלָת֖/וֹ אֶת פִּרְי֑/וֹ שָׁלֹ֣שׁ שָׁנִ֗ים יִהְיֶ֥ה לָ/כֶ֛ם עֲרֵלִ֖ים לֹ֥א יֵאָכֵֽל׃",
+        "LXX": "Ὅταν δὲ εἰσέλθητε εἰς τὴν γῆν ἣν Κύριος ὁ θεὸς δίδωσιν ὑμῖν, καὶ καταφυτεύσετε πᾶν ξύλον βρώσιμον, καὶ περικαθαριεῖτε τὴν ἀκαθαρσίαν αὐτοῦ· ὁ καρπὸς αὐτοῦ τρία ἔτη ἔσται ὑμῖν ἀπερικάθαρτος, οὐ βρωθήσεται.",
+        "VUL": "Quando ingressi fueritis terram, et plantaveritis in ea ligna pomifera, auferetis præputia eorum : poma, quæ germinant, immunda erunt vobis, nec edetis ex eis.",
+        "SYN": "Когда придете в землю, [которую Господь Бог даст вам,] и посадите какое-либо плодовое дерево, то плоды его почитайте за необрезанные: три года должно почитать их за необрезанные, не должно есть их;",
+        "NEO": "Quand vous serez entrés dans le pays et que vous aurez planté toutes sortes d’arbres fruitiers, vous en regarderez les fruits comme incirconcis : pendant trois ans, ils seront incirconcis pour vous : on n’en mangera point.",
+        "NAB": "\"When you come into the land and plant any fruit tree there, first look upon its fruit as if it were uncircumcised. For three years, while its fruit remains uncircumcised, it may not be eaten.",
+        "VAT_ES": "Cuando entren en la tierra y planten árboles frutales de todas clases, deberán considerar sus frutos como algo prohibido: durante tres años los dejarán incircuncisos, y no se los podrá comer.",
+        "CEI": "Quando sarete entrati nel paese e vi avrete piantato ogni sorta d'alberi da frutto, ne considererete i frutti come non circoncisi; per tre anni saranno per voi come non circoncisi; non se ne dovrà mangiare."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וּ/בַ/שָּׁנָה֙ הָ/רְבִיעִ֔ת יִהְיֶ֖ה כָּל פִּרְי֑/וֹ קֹ֥דֶשׁ הִלּוּלִ֖ים לַ/יהוָֽה׃",
+        "LXX": "καὶ τῷ ἔτει τῷ τετάρτῳ ἔσται πᾶς ὁ καρπὸς αὐτοῦ ἅγιος αἰνετὸς τῷ κυρίῳ,",
+        "VUL": "Quarto autem anno omnis fructus eorum sanctificabitur, laudabilis Domino.",
+        "SYN": "а в четвертый год все плоды его должны быть посвящены для празднеств Господних;",
+        "NEO": "La quatrième année, tous leurs fruits seront consacrés en louange à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "In the fourth year, however, all of its fruit shall be sacred to the LORD as a thanksgiving feast to him.",
+        "VAT_ES": "Al cuarto año, todos sus frutos serán consagrados en una fiesta de alabanza al Señor.",
+        "CEI": "Ma nel quarto anno tutti i loro frutti saranno consacrati al Signore, come dono festivo."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וּ/בַ/שָּׁנָ֣ה הַ/חֲמִישִׁ֗ת תֹּֽאכְלוּ֙ אֶת פִּרְי֔/וֹ לְ/הוֹסִ֥יף לָ/כֶ֖ם תְּבוּאָת֑/וֹ אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "ἐν δὲ τῷ ἔτει τῷ πέμπτῳ φάγεσθε τὸν καρπόν, πρόσθεμα ὑμῖν τὰ γενήματα αὐτοῦ· ἐγώ εἰμι Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Quinto autem anno comedetis fructus, congregantes poma, quæ proferunt. Ego Dominus Deus vester.",
+        "SYN": "в пятый же год вы можете есть плоды его и собирать себе все произведения его. Я Господь, Бог ваш.",
+        "NEO": "La cinquième année, vous en mangerez les fruits, et ainsi l’arbre vous continuera son rapport. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu.",
+        "NAB": "Not until the fifth year may you eat its fruit. Thus it will continue its yield for you. I, the LORD, am your God.",
+        "VAT_ES": "Y sólo en el quinto año, podrán comer los frutos y almacenar el producto para provecho de ustedes mismos. Yo soy el señor, su Dios.",
+        "CEI": "Nel quinto anno mangerete il frutto di quegli alberi; così essi continueranno a fruttare per voi. Io sono il Signore, vostro Dio."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "לֹ֥א תֹאכְל֖וּ עַל הַ/דָּ֑ם לֹ֥א תְנַחֲשׁ֖וּ וְ/לֹ֥א תְעוֹנֵֽנוּ׃",
+        "LXX": "Μὴ ἔσθετε ἐπὶ τῶν ὀρέων, καὶ οὐκ οἰωνιεῖσθε οὐδὲ ὀρνιθοσκοπήσεσθε.",
+        "VUL": "Non comedetis cum sanguine. Non augurabimini, nec observabitis somnia.",
+        "SYN": "Не ешьте с кровью; не ворожите и не гадайте.",
+        "NEO": "Vous ne mangerez rien avec du sang. Vous ne pratiquerez ni la divination ni la magie.",
+        "NAB": "\"Do not eat meat with the blood still in it. Do not practice divination or soothsaying.",
+        "VAT_ES": "Ustedes no comerán nada que tenga sangre. No practicarán la magia ni la adivinación.",
+        "CEI": "Non mangerete carne con il sangue. Non praticherete alcuna sorta di divinazione o di magìa."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "לֹ֣א תַקִּ֔פוּ פְּאַ֖ת רֹאשְׁ/כֶ֑ם וְ/לֹ֣א תַשְׁחִ֔ית אֵ֖ת פְּאַ֥ת זְקָנֶֽ/ךָ׃",
+        "LXX": "οὐ ποιήσετε σισόην ἐκ τῆς κόμης τῆς κεφαλῆς ὑμῶν, οὐδὲ φθερεῖτε τὴν ὄψιν τοῦ πώγωνος ὑμῶν.",
+        "VUL": "Neque in rotundum attondebitis comam, nec radetis barbam.",
+        "SYN": "Не стригите головы вашей кругом, и не порти края бороды твоей.",
+        "NEO": "Vous ne tondrez pas en rond les coins de votre chevelure, et tu ne raseras pas les coins de ta barbe.",
+        "NAB": "Do not clip your hair at the temples, nor trim the edges of your beard.",
+        "VAT_ES": "No se cortarán el borde de la cabellera en forma de círculo, ni cortarás el borde de tu barba.",
+        "CEI": "Non vi taglierete in tondo i capelli ai lati del capo, né deturperai ai lati la tua barba."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/שֶׂ֣רֶט לָ/נֶ֗פֶשׁ לֹ֤א תִתְּנוּ֙ בִּ/בְשַׂרְ/כֶ֔ם וּ/כְתֹ֣בֶת קַֽעֲקַ֔ע לֹ֥א תִתְּנ֖וּ בָּ/כֶ֑ם אֲנִ֖י יְהוָֽה׃",
+        "LXX": "καὶ ἐντομίδας ἐπὶ ψυχῇ οὐ ποιήσετε ἐν τῷ σώματι ὑμῶν, καὶ γράμματα στικτὰ οὐ ποιήσετε ἐν ὑμῖν. ἐγώ εἰμι Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Et super mortuo non incidetis carnem vestram, neque figuras aliquas aut stigmata facietis vobis. Ego Dominus.",
+        "SYN": "Ради умершего не делайте нарезов на теле вашем и не накалывайте на себе письмен. Я Господь [Бог ваш].",
+        "NEO": "Vous ne ferez pas d’incisions dans votre chair pour un mort, et vous n’imprimerez pas de figures sur vous. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Do not lacerate your bodies for the dead, and do not tattoo yourselves. I am the LORD.",
+        "VAT_ES": "No se harán incisiones en la carne a causa de los muertos, ni tampoco se harán tatuajes. Yo soy el Señor.",
+        "CEI": "Non vi farete incisioni sul corpo per un defunto, né vi farete segni di tatuaggio. Io sono il Signore."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "אַל תְּחַלֵּ֥ל אֶֽת בִּתְּ/ךָ֖ לְ/הַזְנוֹתָ֑/הּ וְ/לֹא תִזְנֶ֣ה הָ/אָ֔רֶץ וּ/מָלְאָ֥ה הָ/אָ֖רֶץ זִמָּֽה׃",
+        "LXX": "οὐ βεβηλώσεις τὴν θυγατέρα σου ἐκπορνεῦσαι αὐτήν· καὶ οὐκ ἐκπορνεύσει ἡ γῆ, καὶ ἡ γῆ πλησθήσεται ἀνομίας.",
+        "VUL": "Ne prostituas filiam tuam, ne contaminetur terra et impleatur piaculo.",
+        "SYN": "Не оскверняй дочери твоей, допуская ее до блуда, чтобы не блудодействовала земля и не наполнилась земля развратом.",
+        "NEO": "Ne profane pas ta fille en la prostituant, de peur que le pays ne se livre à la prostitution et ne se remplisse de crimes.",
+        "NAB": "\"You shall not degrade your daughter by making a prostitute of her; else the land will become corrupt and full of lewdness.",
+        "VAT_ES": "No profanarás a tu hija, prostituyéndola, no sea que también la tierra se prostituya y se llene de depravación.",
+        "CEI": "Non profanare tua figlia, prostituendola, perché il paese non si dia alla prostituzione e non si riempia di infamie."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "אֶת שַׁבְּתֹתַ֣/י תִּשְׁמֹ֔רוּ וּ/מִקְדָּשִׁ֖/י תִּירָ֑אוּ אֲנִ֖י יְהוָֽה׃",
+        "LXX": "τὰ σάββατά μου φυλάξεσθε, καὶ ἀπὸ τῶν ἁγίων μου φοβηθήσεσθε· ἐγώ εἰμι Κύριος.",
+        "VUL": "Sabbata mea custodite, et sanctuarium meum metuite. Ego Dominus.",
+        "SYN": "Субботы Мои храните и святилище Мое чтите. Я Господь.",
+        "NEO": "Vous observerez mes sabbats et vous révérerez mon sanctuaire. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Keep my sabbaths, and reverence my sanctuary. I am the LORD.",
+        "VAT_ES": "Observarán mis sábados y respetarán mi Santuario. Yo soy el Señor.",
+        "CEI": "Osserverete i miei sabati e porterete rispetto al mio santuario. Io sono il Signore."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "אַל תִּפְנ֤וּ אֶל הָ/אֹבֹת֙ וְ/אֶל הַ/יִּדְּעֹנִ֔ים אַל תְּבַקְשׁ֖וּ לְ/טָמְאָ֣ה בָ/הֶ֑ם אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "οὐκ ἐπακολουθήσετε ἐνγαστριμύθοις, καὶ τοῖς ἐπαοιδοῖς οὐ προσκολληθήσεσθε ἐκμιανθῆναι ἐν αὐτοῖς. ἐγώ εἰμι Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Non declinetis ad magos, nec ab ariolis aliquid sciscitemini, ut polluamini per eos. Ego Dominus Deus vester.",
+        "SYN": "Не обращайтесь к вызывающим мертвых, и к волшебникам не ходите, и не доводите себя до осквернения от них. Я Господь, Бог ваш.",
+        "NEO": "Ne vous adressez pas à ceux qui évoquent les esprits, ni aux devins ; ne les consultez point, pour ne pas être souillés par eux. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu.",
+        "NAB": "\"Do not go to mediums or consult fortune-tellers, for you will be defiled by them. I, the LORD, am your God.",
+        "VAT_ES": "No acudirán a los espíritus de los muertos ni consultarán a otros espíritus, haciéndose impuros a causa de ellos. Yo soy el Señor, su Dios.",
+        "CEI": "Non vi rivolgete ai negromanti né agli indovini; non li consultate per non contaminarvi per mezzo loro. Io sono il Signore, vostro Dio."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "מִ/פְּנֵ֤י שֵׂיבָה֙ תָּק֔וּם וְ/הָדַרְתָּ֖ פְּנֵ֣י זָקֵ֑ן וְ/יָרֵ֥אתָ מֵּ/אֱלֹהֶ֖י/ךָ אֲנִ֥י יְהוָֽה׃",
+        "LXX": "ἀπὸ προσώπου πολιοῦ ἐξαναστήσῃ, καὶ τιμήσεις πρόσωπον πρεσβυτέρου· καὶ φοβηθήσῃ τὸν θεόν σου· ἐγώ εἰμι Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Coram cano capite consurge, et honora personam senis : et time Dominum Deum tuum. Ego sum Dominus.",
+        "SYN": "Пред лицем седого вставай и почитай лице старца, и бойся [Господа] Бога твоего. Я Господь [Бог ваш].",
+        "NEO": "Tu te lèveras devant une tête blanchie, et tu honoreras la personne du vieillard. Tu craindras ton Dieu. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "\"Stand up in the presence of the aged, and show respect for the old; thus shall you fear your God. I am the LORD.",
+        "VAT_ES": "Te levantarás delante del anciano, y serás respetuoso con las personas de edad. Así temerás a tu Dios. Yo soy el Señor.",
+        "CEI": "Alzati davanti a chi ha i capelli bianchi, onora la persona del vecchio e temi il tuo Dio. Io sono il Signore."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/כִֽי יָג֧וּר אִתְּ/ךָ֛ גֵּ֖ר בְּ/אַרְצְ/כֶ֑ם לֹ֥א תוֹנ֖וּ אֹתֽ/וֹ׃",
+        "LXX": "ἐὰν δέ τις προσέλθῃ προσήλυτος ὑμῖν ἐν τῇ γῇ ὑμῶν, οὐ θλίψετε αὐτόν.",
+        "VUL": "Si habitaverit advena in terra vestra, et moratus fuerit inter vos, non exprobretis ei :",
+        "SYN": "Когда поселится пришлец в земле вашей, не притесняйте его:",
+        "NEO": "Si un étranger vient séjourner avec vous dans votre pays, vous ne l’opprimerez point.",
+        "NAB": "\"When an alien resides with you in your land, do not molest him.",
+        "VAT_ES": "Cuando un extranjero resida contigo en tu tierra, no lo molestarás.",
+        "CEI": "Quando un forestiero dimorerà presso di voi nel vostro paese, non gli farete torto."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "כְּ/אֶזְרָ֣ח מִ/כֶּם֩ יִהְיֶ֨ה לָ/כֶ֜ם הַ/גֵּ֣ר הַ/גָּ֣ר אִתְּ/כֶ֗ם וְ/אָהַבְתָּ֥ ל/וֹ֙ כָּמ֔וֹ/ךָ כִּֽי גֵרִ֥ים הֱיִיתֶ֖ם בְּ/אֶ֣רֶץ מִצְרָ֑יִם אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "ὡς ὁ αὐτόχθων ἐν ὑμῖν ἔσται ὁ προσήλυτος ὁ προσπορευόμενος πρὸς ὑμᾶς, καὶ ἀγαπήσεις αὐτὸν ὡς σεαυτόν· ὅτι προσήλυτοι ἐγενήθητε ἐν γῇ Αἰγύπτῳ· ἐγώ εἰμι Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "sed sit inter vos quasi indigena, et diligetis eum quasi vosmetipsos : fuistis enim et vos advenæ in terra Ægypti. Ego Dominus Deus vester.",
+        "SYN": "пришлец, поселившийся у вас, да будет для вас то же, что туземец ваш; люби его, как себя; ибо и вы были пришельцами в земле Египетской. Я Господь, Бог ваш.",
+        "NEO": "Vous traiterez l’étranger en séjour parmi vous comme un indigène du milieu de vous ; tu l’aimeras comme toi-même, car vous avez été étrangers dans le pays d’Égypte. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu.",
+        "NAB": "You shall treat the alien who resides with you no differently than the natives born among you; have the same love for him as for yourself; for you too were once aliens in the land of Egypt. I, the LORD, am your God.",
+        "VAT_ES": "El será para ustedes como uno de sus compatriotas y lo amarás como a ti mismo, porque ustedes fueron extranjeros en Egipto. Yo soy el Señor, su Dios.",
+        "CEI": "Il forestiero dimorante fra di voi lo tratterete come colui che è nato fra di voi; tu l'amerai come tu stesso perché anche voi siete stati forestieri nel paese d'Egitto. Io sono il Signore, vostro Dio."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "לֹא תַעֲשׂ֥וּ עָ֖וֶל בַּ/מִּשְׁפָּ֑ט בַּ/מִּדָּ֕ה בַּ/מִּשְׁקָ֖ל וּ/בַ/מְּשׂוּרָֽה׃",
+        "LXX": "οὐ ποιήσετε ἄδικον ἐν κρίσει, ἐν μέτροις καὶ ἐν σταθμίοις καὶ ἐν ζυγοῖς·",
+        "VUL": "Nolite facere iniquum aliquid in judicio, in regula, in pondere, in mensura.",
+        "SYN": "Не делайте неправды в суде, в мере, в весе и в измерении:",
+        "NEO": "Vous ne commettrez pas d’injustice, soit dans les jugements, soit dans les mesures de longueur, soit dans les poids, soit dans les mesures de capacité.",
+        "NAB": "\"Do not act dishonestly in using measures of length or weight or capacity.",
+        "VAT_ES": "No cometerán ninguna injusticia en los juicios, ni falsearán las medidas de longitud, de peso o de capacidad.",
+        "CEI": "Non commetterete ingiustizie nei giudizi, nelle misure di lunghezza, nei pesi o nelle misure di capacità."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "מֹ֧אזְנֵי צֶ֣דֶק אַבְנֵי צֶ֗דֶק אֵ֥יפַת צֶ֛דֶק וְ/הִ֥ין צֶ֖דֶק יִהְיֶ֣ה לָ/כֶ֑ם אֲנִי֙ יְהוָ֣ה אֱלֹֽהֵי/כֶ֔ם אֲשֶׁר הוֹצֵ֥אתִי אֶתְ/כֶ֖ם מֵ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "ζυγὰ δίκαια καὶ στάθμια δίκαια καὶ χοῦς δίκαιος ἔσται ὑμῖν· ἐγώ εἰμι Κύριος ὁ θεὸς ὑμῶν ὁ ἐξαγαγὼν ὑμᾶς ἐκ γῆς Αἰγύπτου.",
+        "VUL": "Statera justa, et æqua sint pondera, justus modius, æquusque sextarius. Ego Dominus Deus vester, qui eduxi vos de terra Ægypti.",
+        "SYN": "да будут у вас весы верные, гири верные, ефа верная и гин верный. Я Господь, Бог ваш, Который вывел вас из земли Египетской.",
+        "NEO": "Vous aurez des balances justes, des poids justes, un épha juste et un hin juste. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, qui vous ai fait sortir du pays d’Égypte.",
+        "NAB": "You shall have a true scale and true weights, an honest ephah and an honest hin. I, the LORD, am your God, who brought you out of the land of Egypt.",
+        "VAT_ES": "Ustedes deberán tener una balanza justa, una pesa justa y una medida justa. Yo soy el Señor, su Dios, que los hice salir de Egipto.",
+        "CEI": "Avrete bilance giuste, pesi giusti, efa giusto, hin giusto. Io sono il Signore, vostro Dio, che vi ho fatti uscire dal paese d'Egitto."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וּ/שְׁמַרְתֶּ֤ם אֶת כָּל חֻקֹּתַ/י֙ וְ/אֶת כָּל מִשְׁפָּטַ֔/י וַ/עֲשִׂיתֶ֖ם אֹתָ֑/ם אֲנִ֖י יְהוָֽה׃",
+        "LXX": "καὶ φυλάξεσθε πάντα τὸν νόμον μου καὶ πάντα τὰ προστάγματά μου, καὶ ποιήσετε αὐτά· ἐγώ εἰμι Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Custodite omnia præcepta mea, et universa judicia, et facite ea. Ego Dominus.",
+        "SYN": "Соблюдайте все уставы Мои и все законы Мои и исполняйте их. Я Господь [Бог ваш].",
+        "NEO": "Vous observerez toutes mes lois et toutes mes ordonnances, et vous les mettrez en pratique. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "Be careful, then, to observe all my statutes and decrees. I am the LORD.\"",
+        "VAT_ES": "Observen fielmente todos mis preceptos y todas mis leyes. Yo soy el Señor.",
+        "CEI": "Osserverete dunque tutte le mie leggi e tutte le mie prescrizioni e le metterete in pratica. Io sono il Signore\"."
+      }
+    }
+  }
+}

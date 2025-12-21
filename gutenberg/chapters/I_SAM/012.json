@@ -1,0 +1,465 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_SAM_012",
+  "book_key": "I_SAM",
+  "sequence": 12,
+  "chapter_in": {
+    "MT": 12,
+    "VUL": 12,
+    "LXX": 12
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר שְׁמוּאֵל֙ אֶל כָּל יִשְׂרָאֵ֔ל הִנֵּה֙ שָׁמַ֣עְתִּי בְ/קֹֽלְ/כֶ֔ם לְ/כֹ֥ל אֲשֶׁר אֲמַרְתֶּ֖ם לִ֑/י וָ/אַמְלִ֥יךְ עֲלֵי/כֶ֖ם מֶֽלֶךְ׃",
+        "LXX": "Καὶ εἶπεν Σαμουὴλ πρὸς πάντα Ἰσραήλ Ἰδοὺ ἤκουσα φωνῆς ὑμῶν εἰς πάντα ὅσα εἴπατέ μοι, καὶ ἐβασίλευσα ἐφ’ ὑμᾶς βασιλέα.",
+        "VUL": "Dixit autem Samuel ad universum Israël : Ecce audivi vocem vestram juxta omnia quæ locuti estis ad me, et constitui super vos regem.",
+        "SYN": "И сказал Самуил всему Израилю: вот, я послушался голоса вашего во всем, что вы говорили мне, и поставил над вами царя,",
+        "NEO": "Samuel dit à tout Israël : « Voici, j’ai écouté votre voix dans tout ce que vous m’avez dit, et j’ai établi un roi sur vous.",
+        "NAB": "Samuel addressed all Israel: \"I have granted your request in every respect,\" he said. \"I have set a king over you",
+        "VAT_ES": "Samuel dijo a todo Israel: «Yo les hice caso en todo lo que me dijeron y les he dado un rey.",
+        "CEI": "Allora Samuele disse a tutto Israele: \"Ecco ho ascoltato la vostra voce in tutto quello che mi avete chiesto e ho costituito su di voi un re."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֞ה הִנֵּ֥ה הַ/מֶּ֣לֶךְ מִתְהַלֵּ֣ךְ לִ/פְנֵי/כֶ֗ם וַ/אֲנִי֙ זָקַ֣נְתִּי וָ/שַׂ֔בְתִּי וּ/בָנַ֖/י הִנָּ֣/ם אִתְּ/כֶ֑ם וַ/אֲנִי֙ הִתְהַלַּ֣כְתִּי לִ/פְנֵי/כֶ֔ם מִ/נְּעֻרַ֖/י עַד הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ νῦν ἰδοὺ ὁ βασιλεὺς διαπορεύεται ἐνώπιον ὑμῶν, κἀγὼ γεγήρακα καὶ καθήσομαι, καὶ οἱ υἱοί μου ἰδοὺ ἐν ὑμῖν· κἀγὼ ἰδοὺ διελήλυθα ἐνώπιον ὑμῶν ἐκ νεότητος καὶ ἕως τῆς ἡμέρας ταύτης.",
+        "VUL": "Et nunc rex graditur ante vos : ego autem senui, et incanui : porro filii mei vobiscum sunt : itaque conversatus coram vobis ab adolescentia mea usque ad hanc diem, ecce præsto sum.",
+        "SYN": "и вот, царь ходит пред вами; а я состарился и поседел; и сыновья мои с вами; я же ходил пред вами от юности моей и до сего дня;",
+        "NEO": "Et maintenant, voici le roi qui marchera devant vous. Pour moi, je suis vieux, j’ai blanchi, et mes fils sont au milieu de vous ; j’ai marché devant vous, depuis ma jeunesse jusqu’à ce jour.",
+        "NAB": "and now the king is your leader. As for me, I am old and gray, and have sons among you. I have lived with you from my youth to the present day.",
+        "VAT_ES": "Ahora, ahí tienen al rey que marcha al frente de ustedes. En cuanto a mí, ya estoy viejo y lleno de canas, y ahí están mis hijos, como unos más entre ustedes. Yo estuve al frente de ustedes desde mi juventud hasta el día de hoy.",
+        "CEI": "Da questo momento ecco il re procede davanti a voi. Quanto a me sono diventato vecchio e canuto e i miei figli eccoli tra di voi. Io ho vissuto dalla mia giovinezza fino ad oggi sotto i vostri occhi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הִנְ/נִ֣י עֲנ֣וּ בִ/י֩ נֶ֨גֶד יְהוָ֜ה וְ/נֶ֣גֶד מְשִׁיח֗/וֹ אֶת שׁוֹר֩ מִ֨י לָקַ֜חְתִּי וַ/חֲמ֧וֹר מִ֣י לָקַ֗חְתִּי וְ/אֶת מִ֤י עָשַׁ֨קְתִּי֙ אֶת מִ֣י רַצּ֔וֹתִי וּ/מִ/יַּד מִי֙ לָקַ֣חְתִּי כֹ֔פֶר וְ/אַעְלִ֥ים עֵינַ֖/י בּ֑/וֹ וְ/אָשִׁ֖יב לָ/כֶֽם׃",
+        "LXX": "ἰδοὺ ἐγώ, ἀποκρίθητε κατ’ ἐμοῦ ἐνώπιον Κυρίου καὶ ἐνώπιον χριστοῦ αὐτοῦ· μόσχον τίνος εἴληφα ἢ ὄνον τίνος εἴληφα, ἢ τίνα κατεδυνάστευσα ὑμῶν ἢ τίνα ἐξεπίεσα, ἢ ἐκ χειρὸς τίνος εἴληφα ἐξίλασμα καὶ ὑπόδημα; ἀποκρίθητε κατ’ ἐμοῦ καὶ ἀποδώσω ὑμῖν.",
+        "VUL": "Loquimini de me coram Domino, et coram christo ejus, utrum bovem cujusquam tulerim, aut asinum : si quempiam calumniatus sum, si oppressi aliquem, si de manu cujusquam munus accepi : et contemnam illud hodie, restituamque vobis.",
+        "SYN": "вот я; свидетельствуйте на меня пред Господом и пред помазанником Его, у кого взял я вола, у кого взял осла, кого обидел и кого притеснил, у кого взял дар и закрыл в _деле_ его глаза мои, -- и я возвращу вам.",
+        "NEO": "Me voici ; rendez témoignage de moi, en présence de \\+w Yahweh|strong=\"H3068\"\\+w** et en présence de son oint : De qui ai-je pris le bœuf et de qui ai-je pris l’âne ? A qui ai-je fait tort et qui ai-je opprimé ? De qui ai-je reçu un présent pour fermer les yeux sur lui ? Je vous le rendrai. »",
+        "NAB": "Here I stand! Answer me in the presence of the LORD and of his anointed. Whose ox have I taken? Whose ass have I taken? Whom have I cheated? Whom have I oppressed? From whom have I accepted a bribe and overlooked his guilt? I will make restitution to you.\"",
+        "VAT_ES": "&iexcl;Aquí me tienen! Declaren contra mí delante del Señor y delante de su ungido: &iquest;A quién le he quitado un buey? &iquest;A quién le he quitado un asno? &iquest;A quién lo he oprimido o perjudicado? &iquest;Por quién me he dejado sobornar para cerrar los ojos? Díganlo, y yo les restituiré».",
+        "CEI": "Eccomi, pronunciatevi a mio riguardo alla presenza del Signore e del suo consacrato. A chi ho portato via il bue? A chi ho portato via l'asino? Chi ho trattato con prepotenza? A chi ho fatto offesa? Da chi ho accettato un regalo per chiudere gli occhi a suo riguardo? Sono qui a restituire!\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמְר֔וּ לֹ֥א עֲשַׁקְתָּ֖/נוּ וְ/לֹ֣א רַצּוֹתָ֑/נוּ וְ/לֹֽא לָקַ֥חְתָּ מִ/יַּד אִ֖ישׁ מְאֽוּמָה׃",
+        "LXX": "καὶ εἶπαν πρὸς Σαμουήλ Οὐκ ἠδίκησας ἡμᾶς, καὶ οὐ κατεδυνάστευσας καὶ οὐκ ἔθλασας ἡμᾶς, καὶ οὐκ εἴληφας ἐκ χειρὸς οὐδενὸς οὐδέν.",
+        "VUL": "Et dixerunt : Non es calumniatus nos, neque oppressisti, neque tulisti de manu alicujus quippiam.",
+        "SYN": "И отвечали: ты не обижал нас и не притеснял нас и ничего ни у кого не взял.",
+        "NEO": "Ils répondirent : « Tu ne nous as pas fait tort, tu ne nous as pas opprimés, et tu n’as rien reçu de la main de personne. »",
+        "NAB": "They replied, \"You have neither cheated us, nor oppressed us, nor accepted anything from anyone.\"",
+        "VAT_ES": "Ellos respondieron: «Nunca nos has oprimido ni perjudicado, ni has aceptado nada de nadie».",
+        "CEI": "Risposero: \"Non ci hai trattato con prepotenza, né ci hai fatto offesa, né hai preso nulla da nessuno\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֲלֵי/הֶ֜ם עֵ֧ד יְהוָ֣ה בָּ/כֶ֗ם וְ/עֵ֤ד מְשִׁיח/וֹ֙ הַ/יּ֣וֹם הַ/זֶּ֔ה כִּ֣י לֹ֧א מְצָאתֶ֛ם בְּ/יָדִ֖/י מְא֑וּמָה וַ/יֹּ֖אמֶר עֵֽד׃",
+        "LXX": "καὶ εἶπεν Σαμουὴλ πρὸς τὸν λαόν Μάρτυς Κύριος ἐν ὑμῖν καὶ μάρτυς χριστὸς αὐτοῦ σήμερον ἐν ταύτῃ τῇ ἡμέρᾳ, ὅτι οὐχ εὑρήκατε ἐν χειρί μου οὐθέν· καὶ εἶπαν Μάρτυς.",
+        "VUL": "Dixitque ad eos : Testis est Dominus adversum vos, et testis christus ejus in die hac, quia non inveneritis in manu mea quippiam. Et dixerunt : Testis.",
+        "SYN": "И сказал он им: свидетель на вас Господь, и свидетель помазанник Его в сей день, что вы не нашли ничего за мною. И сказали: свидетель.",
+        "NEO": "Il leur dit : « \\+w Yahweh|strong=\"H3068\"\\+w** est témoin contre vous, et son oint aussi est témoin, en ce jour, que vous n’avez rien trouvé dans mes mains ! » Le peuple répondit : « Il en est témoin. »",
+        "NAB": "So he said to them, \"The LORD is witness against you this day, and his anointed as well, that you have found nothing in my possession.\" \"He is witness,\" they agreed.",
+        "VAT_ES": "El les dijo: «El Señor es testigo contra ustedes, y también su ungido es testigo en este día, de que nunca me han sorprendido con nada en la mano». Ellos le dijeron: «&iexcl;Sí, es testigo!».",
+        "CEI": "Egli soggiunse loro: \"È testimonio il Signore contro di voi ed è testimonio oggi il suo consacrato, che non trovate niente in mano mia?\". Risposero: \"Sì, è testimonio\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר שְׁמוּאֵ֖ל אֶל הָ/עָ֑ם יְהוָ֗ה אֲשֶׁ֤ר עָשָׂה֙ אֶת מֹשֶׁ֣ה וְ/אֶֽת אַהֲרֹ֔ן וַ/אֲשֶׁ֧ר הֶעֱלָ֛ה אֶת אֲבֹתֵי/כֶ֖ם מֵ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "καὶ εἶπεν Σαμουὴλ πρὸς τὸν λαὸν λέγων Μάρτυς Κύριος ὁ ποιήσας τὸν Μωυσῆν καὶ τὸν Ἀαρών, ὁ ἀναγαγὼν τοὺς πατέρας ἡμῶν ἐξ Αἰγύπτου.",
+        "VUL": "Et ait Samuel ad populum : Dominus, qui fecit Moysen et Aaron, et eduxit patres nostros de terra Ægypti.",
+        "SYN": "Тогда Самуил сказал народу: [свидетель] Господь, Который поставил Моисея и Аарона и Который вывел отцов ваших из земли Египетской.",
+        "NEO": "Et Samuel dit au peuple : « Oui, \\+w Yahweh|strong=\"H3068\"\\+w** est témoin, lui qui a établi Moïse et Aaron, et qui a fait monter vos pères du pays d’Égypte.",
+        "NAB": "Continuing, Samuel said to the people: \"The LORD is witness, who appointed Moses and Aaron, and who brought your fathers up from the land of Egypt.",
+        "VAT_ES": "Samuel dijo al pueblo: «Es testigo el Señor, que suscitó a Moisés y a Aarón, e hizo subir de Egipto a los padres de ustedes.",
+        "CEI": "Allora Samuele disse al popolo: \"È testimonio il Signore che ha stabilito Mosè e Aronne e che ha fatto uscire i vostri padri dal paese d'Egitto."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה הִֽתְיַצְּב֛וּ וְ/אִשָּׁפְטָ֥ה אִתְּ/כֶ֖ם לִ/פְנֵ֣י יְהוָ֑ה אֵ֚ת כָּל צִדְק֣וֹת יְהוָ֔ה אֲשֶׁר עָשָׂ֥ה אִתְּ/כֶ֖ם וְ/אֶת אֲבוֹתֵי/כֶֽם׃",
+        "LXX": "καὶ νῦν κατάστητε καὶ δικάσω ὑμᾶς ἐνώπιον Κυρίου, καὶ ἀπαγγελῶ ὑμῖν τὴν πᾶσαν δικαιοσύνην Κυρίου, ἃ ἐποίησεν ἐν ὑμῖν καὶ ἐν τοῖς πατράσιν ὑμῶν·",
+        "VUL": "Nunc ergo state, ut judicio contendam adversum vos coram Domino de omnibus misericordiis Domini quas fecit vobiscum et cum patribus vestris :",
+        "SYN": "Теперь же предстаньте, и я буду судиться с вами пред Господом о всех благодеяниях, которые оказал Он вам и отцам вашим.",
+        "NEO": "Maintenant, présentez-vous, je veux vous appeler en jugement devant \\+w Yahweh|strong=\"H3068\"\\+w** au sujet de tous les bienfaits qu’il vous a accordés, à vous et à vos pères.",
+        "NAB": "Now, therefore, take your stand, and I shall arraign you before the LORD, and shall recount for you all the acts of mercy the LORD has done for you and your fathers.",
+        "VAT_ES": "Ahora, preséntense para que entable un juicio con ustedes delante del Señor, evocando los actos de justicia que el Señor hizo en favor de ustedes y de sus padres.",
+        "CEI": "Ora state qui raccolti e io voglio discutere con voi davanti al Signore a causa di tutti i benefici che il Signore ha operato con voi e con i vostri padri."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כַּֽ/אֲשֶׁר בָּ֥א יַעֲקֹ֖ב מִצְרָ֑יִם וַ/יִּזְעֲק֤וּ אֲבֽוֹתֵי/כֶם֙ אֶל יְהוָ֔ה וַ/יִּשְׁלַ֨ח יְהוָ֜ה אֶת מֹשֶׁ֣ה וְ/אֶֽת אַהֲרֹ֗ן וַ/יּוֹצִ֤יאוּ אֶת אֲבֹֽתֵי/כֶם֙ מִ/מִּצְרַ֔יִם וַ/יֹּשִׁב֖וּ/ם בַּ/מָּק֥וֹם הַ/זֶּֽה׃",
+        "LXX": "ὡς εἰσῆλθεν Ἰακὼβ καὶ οἱ υἱοὶ αὐτοῦ εἰς Αἴγυπτον, καὶ ἐταπείνωσεν αὐτοὺς Αἴγυπτος· καὶ ἐβόησαν οἱ πατέρες ἡμῶν πρὸς Κύριον, καὶ ἀπέστειλεν Κύριος τὸν Μωυσῆν καὶ τὸν Ἀαρών, καὶ ἐξήγαγον τοὺς πατέρας ἡμῶν ἐξ Αἰγύπτου, καὶ κατῴκισεν αὐτοὺς ἐν τῷ τόπῳ τούτῳ.",
+        "VUL": "quomodo Jacob ingressus est in Ægyptum, et clamaverunt patres vestri ad Dominum : et misit Dominus Moysen et Aaron, et eduxit patres vestros de Ægypto, et collocavit eos in loco hoc.",
+        "SYN": "Когда пришел Иаков в Египет, и отцы ваши возопили к Господу, то Господь послал Моисея и Аарона, и они вывели отцов ваших из Египта и поселили их на месте сем.",
+        "NEO": "Après que Jacob fut venu en Égypte, vos pères crièrent vers \\+w Yahweh|strong=\"H3068\"\\+w**, et \\+w Yahweh|strong=\"H3068\"\\+w** envoya Moïse et Aaron, qui firent sortir vos pères d’Égypte et les établirent dans ce lieu.",
+        "NAB": "When Jacob and his sons went to Egypt and the Egyptians oppressed them, your fathers appealed to the LORD, who sent Moses and Aaron to bring them out of Egypt, and he gave them this place to live in.",
+        "VAT_ES": "Después que Jacob llegó a Egipto, los egipcios los avasallaron, y los padres de ustedes clamaron al Señor. El Señor envió entonces a Moisés y a Aarón, que hicieron salir a sus padres de Egipto y los establecieron en este lugar.",
+        "CEI": "Quando Giacobbe andò in Egitto e gli Egiziani li oppressero e i vostri padri gridarono al Signore, il Signore mandò loro Mosè e Aronne che li fecero uscire dall'Egitto e li ricondussero in questo luogo."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַֽ/יִּשְׁכְּח֖וּ אֶת יְהוָ֣ה אֱלֹהֵי/הֶ֑ם וַ/יִּמְכֹּ֣ר אֹתָ֡/ם בְּ/יַ֣ד סִֽיסְרָא֩ שַׂר צְבָ֨א חָצ֜וֹר וּ/בְ/יַד פְּלִשְׁתִּ֗ים וּ/בְ/יַד֙ מֶ֣לֶךְ מוֹאָ֔ב וַ/יִּֽלָּחֲמ֖וּ בָּֽ/ם׃",
+        "LXX": "καὶ ἐπελάθοντο Κυρίου τοῦ θεοῦ αὐτῶν, καὶ ἀπέδοτο αὐτοὺς εἰς χεῖρας Σεισαρά, ἀρχιστρατήγῳ Ἰαβεὶς βασιλέως Ἁσώρ, καὶ εἰς χεῖρας ἀλλοφύλων καὶ εἰς χεῖρας βασιλέως Μωάβ, καὶ ἐπολέμησεν ἐν αὐτοῖς.",
+        "VUL": "Qui obliti sunt Domini Dei sui, et tradidit eos in manu Sisaræ magistri militiæ Hasor, et in manu Philisthinorum, et in manu regis Moab : et pugnaverunt adversum eos.",
+        "SYN": "Но они забыли Господа Бога своего, и Он предал их в руки Сисары, военачальника Асорского, и в руки Филистимлян и в руки царя Моавитского, _которые_ воевали против них.",
+        "NEO": "Mais ils oublièrent \\+w Yahweh|strong=\"H3068\"\\+w**, leur Dieu, et il les livra entre les mains de Sisara chef de l’armée d’Hasor, entre les mains des Philistins et entre les mains du roi de Moab, qui leur firent la guerre.",
+        "NAB": "But they forgot the LORD their God; and he allowed them to fall into the clutches of Sisera, the captain of the army of Jabin, king of Hazor, into the grasp of the Philistines, and into the grip of the king of Moab, who made war against them.",
+        "VAT_ES": "Pero ellos olvidaron al Señor, su Dios, y él los entregó en manos de Sisara, el jefe del ejército de Jasor, y en manos de los filisteos y del rey de Moab, que les hicieron la guerra.",
+        "CEI": "Ma poiché avevano dimenticato il Signore loro Dio, li abbandonò in potere di Sisara, capo dell'esercito di Cazor e in potere dei Filistei e in potere del re di Moab, che mossero loro guerra."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּזְעֲק֤וּ אֶל יְהוָה֙ ו/יאמר וַ/יֹּאמְר֣וּ חָטָ֔אנוּ כִּ֤י עָזַ֨בְנוּ֙ אֶת יְהוָ֔ה וַ/נַּעֲבֹ֥ד אֶת הַ/בְּעָלִ֖ים וְ/אֶת הָ/עַשְׁתָּר֑וֹת וְ/עַתָּ֗ה הַצִּילֵ֛/נוּ מִ/יַּ֥ד אֹיְבֵ֖י/נוּ וְ/נַעַבְדֶֽ/ךָּ׃",
+        "LXX": "καὶ ἐβόησαν πρὸς Κύριον καὶ ἔλεγον Ἡμάρτομεν, ὅτι ἐγκατελίπομεν τὸν κύριον καὶ ἐδουλεύσαμεν τοῖς Βααλεὶμ καὶ τοῖς ἄλσεσιν· καὶ νῦν ἐξελοῦ ἡμᾶς ἐκ χειρὸς ἐχθρῶν ἡμῶν, καὶ δουλεύσομέν σοι.",
+        "VUL": "Postea autem clamaverunt ad Dominum, et dixerunt : Peccavimus, quia dereliquimus Dominum, et servivimus Baalim et Astaroth : nunc ergo erue nos de manu inimicorum nostrorum, et serviemus tibi.",
+        "SYN": "Но когда они возопили к Господу и сказали: \"согрешили мы, ибо оставили Господа и стали служить Ваалам и Астартам, теперь избавь нас от руки врагов наших, и мы будем служить Тебе\",",
+        "NEO": "Ils crièrent vers \\+w Yahweh|strong=\"H3068\"\\+w**, en disant : « Nous avons péché, car nous avons abandonné \\+w Yahweh|strong=\"H3068\"\\+w** et nous avons servi les Baals et les Astartés ; délivrez-nous maintenant de la main de nos ennemis, et nous vous servirons. »",
+        "NAB": "Each time they appealed to the LORD and said, 'We have sinned in forsaking the LORD and worshiping Baals and Ashtaroth; but deliver us now from the power of our enemies, and we will worship you.'",
+        "VAT_ES": "Ellos clamaron al Señor, diciendo: «Hemos pecado, porque abandonamos al Señor y servimos a los Baales y a las Astartés. &iexcl;Líbranos ahora de las manos de nuestros enemigos, y te serviremos!».",
+        "CEI": "Essi gridarono al Signore: Abbiamo peccato, perché abbiamo abbandonato il Signore e abbiamo servito i Baal e le Astàrti! Ma ora liberaci dalle mani dei nostri nemici e serviremo te."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח יְהוָה֙ אֶת יְרֻבַּ֣עַל וְ/אֶת בְּדָ֔ן וְ/אֶת יִפְתָּ֖ח וְ/אֶת שְׁמוּאֵ֑ל וַ/יַּצֵּ֨ל אֶתְ/כֶ֜ם מִ/יַּ֤ד אֹֽיְבֵי/כֶם֙ מִ/סָּבִ֔יב וַ/תֵּשְׁב֖וּ בֶּֽטַח׃",
+        "LXX": "καὶ ἀπέστειλεν τὸν Ἰεροβοὰμ καὶ τὸν Βαρὰκ καὶ τὸν Ἰεφθάε καὶ τὸν Σαμουήλ, καὶ ἐξείλατο ὑμᾶς ἐκ χειρὸς ἐχθρῶν ὑμῶν τῶν κυκλόθεν· καὶ κατῳκεῖτε πεποιθότες.",
+        "VUL": "Et misit Dominus Jerobaal, et Badan, et Jephte, et Samuel, et eruit vos de manu inimicorum vestrorum per circuitum, et habitastis confidenter.",
+        "SYN": "тогда Господь послал Иероваала, и Варака, и Иеффая, и Самуила, и избавил вас от руки врагов ваших, окружавших вас, и вы жили безопасно.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** envoya Jérobaal et Badan, et Jephté et Samuel, et il vous délivra de la main de vos ennemis tout autour de vous, et vous avez habité vos demeures en sécurité.",
+        "NAB": "Accordingly, the LORD sent Jerubbaal, Barak, Jephthah, and Samuel; he delivered you from the power of your enemies on every side, so that you were able to live in security.",
+        "VAT_ES": "El Señor envió entonces a Ierubaal, a Bedán, a Jefté y a Samuel; así los libró de sus enemigos de alrededor, y ustedes vivieron seguros.",
+        "CEI": "Allora il Signore vi mandò Ierub-Baal e Barak e Iefte e Samuele e vi liberò dalle mani dei nemici che vi circondavano e siete tornati a vita tranquilla."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/תִּרְא֗וּ כִּֽי נָחָ֞שׁ מֶ֣לֶךְ בְּנֵֽי עַמּוֹן֮ בָּ֣א עֲלֵי/כֶם֒ וַ/תֹּ֣אמְרוּ לִ֔/י לֹ֕א כִּי מֶ֖לֶךְ יִמְלֹ֣ךְ עָלֵ֑י/נוּ וַ/יהוָ֥ה אֱלֹהֵי/כֶ֖ם מַלְכְּ/כֶֽם׃",
+        "LXX": "καὶ εἴδετε ὅτι Ναὰς βασιλεὺς υἱῶν Ἀμμὼν ἦλθεν ἐφ’ ὑμᾶς, καὶ εἴπατε Οὐχί, ἀλλ’ ἢ ὅτι βασιλεὺς βασιλεύσει ἐφ’ ἡμῶν.",
+        "VUL": "Videntes autem quod Naas rex filiorum Ammon venisset adversum vos, dixistis mihi : Nequaquam, sed rex imperabit nobis : cum Dominus Deus vester regnaret in vobis.",
+        "SYN": "Но увидев, что Наас, царь Аммонитский, идет против вас, вы сказали мне: \"нет, царь пусть царствует над нами\", тогда как Господь Бог ваш -- Царь ваш.",
+        "NEO": "Et quand vous avez vu Naas, roi des fils d’Ammon marcher contre vous, vous m’avez dit : Non ! mais un roi régnera sur nous ! alors que \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, était votre roi.",
+        "NAB": "Yet, when you saw Nahash, king of the Ammonites, advancing against you, you said to me, 'Not so, but a king must rule us,' even though the LORD your God is your king.",
+        "VAT_ES": "Pero cuando vieron que los atacaba Najás, el rey de los amonitas, ustedes me dijeron: «&iexcl;No! &iexcl;Que reine un rey sobre nosotros!», siendo así que tienen como rey al Señor, su Dios.",
+        "CEI": "Eppure quando avete visto che Nacas re degli Ammoniti muoveva contro di voi, mi avete detto: No, vogliamo che un re regni sopra di noi, mentre il Signore vostro Dio è vostro re."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה הִנֵּ֥ה הַ/מֶּ֛לֶךְ אֲשֶׁ֥ר בְּחַרְתֶּ֖ם אֲשֶׁ֣ר שְׁאֶלְתֶּ֑ם וְ/הִנֵּ֨ה נָתַ֧ן יְהוָ֛ה עֲלֵי/כֶ֖ם מֶֽלֶךְ׃",
+        "LXX": "καὶ νῦν ἰδοὺ ὁ βασιλεὺς ὃν ἐξελέξασθε, καὶ ἰδοὺ δέδωκεν Κύριος ἐφ’ ὑμᾶς βασιλέα.",
+        "VUL": "Nunc ergo præsto est rex vester, quem elegistis et petistis : ecce dedit vobis Dominus regem.",
+        "SYN": "Итак, вот царь, которого вы избрали, которого вы требовали: вот, Господь поставил над вами царя.",
+        "NEO": "Voici donc le roi que vous avez choisi, que vous avez demandé ; voici que \\+w Yahweh|strong=\"H3068\"\\+w** a établi un roi sur vous.",
+        "NAB": "\"Now you have the king you want, a king the LORD has given you.",
+        "VAT_ES": "Ahora, ahí está el rey que se han elegido y que han pedido; ya ven que el Señor les ha dado un rey.",
+        "CEI": "Ora eccovi il re che avete scelto e che avevate chiesto. Vedete che il Signore ha costituito un re sopra di voi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אִם תִּֽירְא֣וּ אֶת יְהוָ֗ה וַ/עֲבַדְתֶּ֤ם אֹת/וֹ֙ וּ/שְׁמַעְתֶּ֣ם בְּ/קֹל֔/וֹ וְ/לֹ֥א תַמְר֖וּ אֶת פִּ֣י יְהוָ֑ה וִ/הְיִתֶ֣ם גַּם אַתֶּ֗ם וְ/גַם הַ/מֶּ֨לֶךְ֙ אֲשֶׁ֣ר מָלַ֣ךְ עֲלֵי/כֶ֔ם אַחַ֖ר יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "ἐὰν φοβηθῆτε τὸν κύριον καὶ δουλεύσητε αὐτῷ καὶ ἀκούσητε τῆς φωνῆς αὐτοῦ καὶ μὴ ἐρίσητε τῷ στόματι Κυρίου, καὶ ἦτε καὶ ὑμεῖς καὶ ὁ βασιλεὺς ὁ βασιλεύων ἐφ’ ὑμῶν ὀπίσω Κυρίου πορευόμενοι·",
+        "VUL": "Si timueritis Dominum, et servieritis ei, et audieritis vocem ejus, et non exasperaveritis os Domini, eritis et vos, et rex qui imperat vobis, sequentes Dominum Deum vestrum :",
+        "SYN": "Если будете бояться Господа и служить Ему и слушать гласа Его, и не станете противиться повелениям Господа, и будете и вы и царь ваш, который царствует над вами, _ходить_ вслед Господа, Бога вашего, [то рука Господа не будет против вас];",
+        "NEO": "Si vous craignez \\+w Yahweh|strong=\"H3068\"\\+w**, si vous le servez et obéissez à sa voix, si vous n’êtes pas rebelles au commandement de \\+w Yahweh|strong=\"H3068\"\\+w** et si vous suivez vous et le roi qui règne sur vous, \\+w Yahweh|strong=\"H3068\"\\+w** votre Dieu,...",
+        "NAB": "If you fear the LORD and worship him, if you are obedient to him and do not rebel against the LORD'S command, if both you and the king who rules you follow the LORD your God - well and good.",
+        "VAT_ES": "Si ustedes temen al Señor y lo sirven, si escuchan su voz y no se muestran rebeldes a las órdenes del Señor, si ustedes mismos y el rey que reina sobre ustedes siguen al Señor, todo irá bien.",
+        "CEI": "Dunque se temerete il Signore, se lo servirete e ascolterete la sua voce e non sarete ribelli alla parola del Signore, voi e il re che regna su di voi vivrete con il Signore vostro Dio."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/אִם לֹ֤א תִשְׁמְעוּ֙ בְּ/ק֣וֹל יְהוָ֔ה וּ/מְרִיתֶ֖ם אֶת פִּ֣י יְהוָ֑ה וְ/הָיְתָ֧ה יַד יְהוָ֛ה בָּ/כֶ֖ם וּ/בַ/אֲבֹתֵי/כֶֽם׃",
+        "LXX": "ἐὰν δὲ μὴ ἀκούσητε τῆς φωνῆς Κυρίου καὶ ἐρίσητε τῷ στόματι Κυρίου, καὶ ἔσται χεὶρ Κυρίου ἐπὶ ὑμᾶς καὶ ἐπὶ τὸν βασιλέα ὑμῶν.",
+        "VUL": "si autem non audieritis vocem Domini, sed exasperaveritis sermones ejus, erit manus Domini super vos, et super patres vestros.",
+        "SYN": "а если не будете слушать гласа Господа и станете противиться повелениям Господа, то рука Господа будет против вас, _как_ _была_ против отцов ваших.",
+        "NEO": "Mais si vous n’obéissez pas à la voix de \\+w Yahweh|strong=\"H3068\"\\+w** et si vous êtes rebelles au commandement de \\+w Yahweh|strong=\"H3068\"\\+w** la main de \\+w Yahweh|strong=\"H3068\"\\+w** sera contre vous, comme elle a été contre vos pères.",
+        "NAB": "But if you do not obey the LORD and if you rebel against his command, the LORD will deal severely with you and your king, and destroy you.",
+        "VAT_ES": "Pero si no escuchan la voz del Señor, y si son rebeldes a sus órdenes, la mano del Señor se hará sentir sobre ustedes y sobre su rey.",
+        "CEI": "Se invece non ascolterete la voce del Signore e sarete ribelli alla sua parola, la mano del Signore peserà su di voi, come pesò sui vostri padri."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "גַּם עַתָּה֙ הִתְיַצְּב֣וּ וּ/רְא֔וּ אֶת הַ/דָּבָ֥ר הַ/גָּד֖וֹל הַ/זֶּ֑ה אֲשֶׁ֣ר יְהוָ֔ה עֹשֶׂ֖ה לְ/עֵינֵי/כֶֽם׃",
+        "LXX": "καὶ νῦν κατάστητε καὶ ἴδετε τὸ ῥῆμα τὸ μέγα τοῦτο ὃ ὁ κύριος ποιήσει ἐν ὀφθαλμοῖς ὑμῶν.",
+        "VUL": "Sed et nunc state, et videte rem istam grandem quam facturus est Dominus in conspectu vestro.",
+        "SYN": "Теперь станьте и посмотрите на дело великое, которое Господь совершит пред глазами вашими:",
+        "NEO": "Maintenant, restez encore, et voyez cette grande chose que \\+w Yahweh|strong=\"H3068\"\\+w** va opérer sous vos yeux.",
+        "NAB": "Now then, stand ready to witness the great marvel the LORD is about to accomplish before your eyes.",
+        "VAT_ES": "Y ahora, preséntense para ver este gran prodigio que realizará el Señor a la vista de ustedes.",
+        "CEI": "Ora, state attenti e osservate questa grande cosa che il Signore vuole operare sotto i vostri occhi."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "הֲ/ל֤וֹא קְצִיר חִטִּים֙ הַ/יּ֔וֹם אֶקְרָא֙ אֶל יְהוָ֔ה וְ/יִתֵּ֥ן קֹל֖וֹת וּ/מָטָ֑ר וּ/דְע֣וּ וּ/רְא֗וּ כִּֽי רָעַתְ/כֶ֤ם רַבָּה֙ אֲשֶׁ֤ר עֲשִׂיתֶם֙ בְּ/עֵינֵ֣י יְהוָ֔ה לִ/שְׁא֥וֹל לָ/כֶ֖ם מֶֽלֶךְ׃",
+        "LXX": "οὐχὶ θερισμὸς πυρῶν σήμερον; ἐπικαλέσομαι Κύριον καὶ δώσει φωνὰς καὶ ὑετόν, καὶ γνῶτε καὶ ἴδετε ὅτι ἡ κακία ὑμῶν μεγάλη ἣν ἐποιήσατε ἐνώπιον Κυρίου αἰτήσαντες ἑαυτοῖς βασιλέα. ⸆",
+        "VUL": "Numquid non messis tritici est hodie ? invocabo Dominum, et dabit voces et pluvias : et scietis, et videbitis, quia grande malum feceritis vobis in conspectu Domini, petentes super vos regem.",
+        "SYN": "не жатва ли пшеницы ныне? Но я воззову к Господу, и пошлет Он гром и дождь, и вы узнаете и увидите, как велик грех, который вы сделали пред очами Господа, прося себе царя.",
+        "NEO": "N’est-ce pas maintenant la moisson des blés ? Eh bien, je vais invoquer \\+w Yahweh|strong=\"H3068\"\\+w**, et il enverra des tonnerres et de la pluie ; vous saurez alors et vous verrez combien grand est aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w** le mal que vous avez fait en demandant pour vous un roi. »",
+        "NAB": "Are we not in the harvest time for wheat? Yet I shall call to the LORD, and he will send thunder and rain. Thus you will see and understand how greatly the LORD is displeased that you have asked for a king.\"",
+        "VAT_ES": "&iquest;No estamos en la época de cosechar el trigo? Yo voy a invocar al Señor y él enviará truenos y lluvia; así ustedes reconocerán y verán qué grande es el mal que han cometido a los ojos del Señor, al pedir para ustedes un rey».",
+        "CEI": "Non è forse questo il tempo della mietitura del grano? Ma io griderò al Signore ed Egli manderà tuoni e pioggia. Così vi persuaderete e constaterete che grande è il peccato che avete fatto davanti al Signore chiedendo un re per voi\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֤א שְׁמוּאֵל֙ אֶל יְהוָ֔ה וַ/יִּתֵּ֧ן יְהוָ֛ה קֹלֹ֥ת וּ/מָטָ֖ר בַּ/יּ֣וֹם הַ/ה֑וּא וַ/יִּירָ֨א כָל הָ/עָ֥ם מְאֹ֛ד אֶת יְהוָ֖ה וְ/אֶת שְׁמוּאֵֽל׃",
+        "LXX": "Καὶ ἐπεκαλέσατο Σαμουὴλ τὸν κύριον, καὶ ἔδωκεν Κύριος φωνὰς καὶ ὑετὸν ἐν τῇ ἡμέρᾳ ἐκείνῃ· καὶ ἐφοβήθησαν πᾶς ὁ λαὸς τὸν κύριον σφόδρα καὶ τὸν Σαμουήλ.",
+        "VUL": "Et clamavit Samuel ad Dominum, et dedit Dominus voces et pluvias in illa die.",
+        "SYN": "И воззвал Самуил к Господу, и Господь послал гром и дождь в тот день; и пришел весь народ в большой страх от Господа и Самуила.",
+        "NEO": "Samuel invoqua \\+w Yahweh|strong=\"H3068\"\\+w** et \\+w Yahweh|strong=\"H3068\"\\+w** envoya ce même jour des tonnerres et de la pluie ; et tout le peuple eut une grande crainte de \\+w Yahweh|strong=\"H3068\"\\+w** et de Samuel.",
+        "NAB": "Samuel then called to the LORD, and the LORD sent thunder and rain that day. As a result, all the people dreaded the LORD and Samuel.",
+        "VAT_ES": "Samuel invocó al Señor, y aquel día el Señor envió truenos y lluvia. Todo el pueblo sintió un gran temor del Señor y de Samuel.",
+        "CEI": "Samuele allora invocò il Signore e il Signore mandò subito tuoni e pioggia in quel giorno. Tutto il popolo fu preso da grande timore del Signore e di Samuele."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֨וּ כָל הָ/עָ֜ם אֶל שְׁמוּאֵ֗ל הִתְפַּלֵּ֧ל בְּעַד עֲבָדֶ֛י/ךָ אֶל יְהוָ֥ה אֱלֹהֶ֖י/ךָ וְ/אַל נָמ֑וּת כִּֽי יָסַ֤פְנוּ עַל כָּל חַטֹּאתֵ֨י/נוּ֙ רָעָ֔ה לִ/שְׁאֹ֥ל לָ֖/נוּ מֶֽלֶךְ׃",
+        "LXX": "καὶ εἶπαν πᾶς ὁ λαὸς πρὸς Σαμουήλ Πρόσευξαι ὑπὲρ τῶν δούλων σου πρὸς Κύριον θεόν σου, καὶ οὐ μὴ ἀποθάνωμεν· ὅτι προστεθείκαμεν πρὸς πάσας τὰς ἁμαρτίας ἡμῶν κακίαν, αἰτήσαντες ἑαυτοῖς βασιλέα.",
+        "VUL": "Et timuit omnis populus nimis Dominum et Samuelem, et dixit universus populus ad Samuelem : Ora pro servis tuis ad Dominum Deum tuum, ut non moriamur : addidimus enim universis peccatis nostris malum, ut peteremus nobis regem.",
+        "SYN": "И сказал весь народ Самуилу: помолись о рабах твоих пред Господом Богом твоим, чтобы не умереть нам; ибо ко всем грехам нашим мы прибавили еще грех, когда просили себе царя.",
+        "NEO": "Tout le peuple dit à Samuel : « Prie pour tes serviteurs \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, afin que nous ne mourions pas, car nous avons ajouté à tous nos péchés le tort de demander pour nous un roi. »",
+        "NAB": "They said to Samuel, \"Pray to the LORD your God for us, your servants, that we may not die for having added to all our other sins the evil of asking for a king.\"",
+        "VAT_ES": "Y todo el pueblo dijo a Samuel «Ruega al Señor, tu Dios, por tus servidores, y así no moriremos; porque a todos nuestros pecados hemos añadido la maldad de pedir para nosotros un rey».",
+        "CEI": "Tutto il popolo perciò disse a Samuele: \"Prega il Signore tuo Dio per noi tuoi servi che non abbiamo a morire, poiché abbiamo aggiunto a tutti i nostri errori il peccato di aver chiesto per noi un re\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר שְׁמוּאֵ֤ל אֶל הָ/עָם֙ אַל תִּירָ֔אוּ אַתֶּ֣ם עֲשִׂיתֶ֔ם אֵ֥ת כָּל הָ/רָעָ֖ה הַ/זֹּ֑את אַ֗ךְ אַל תָּס֨וּרוּ֙ מֵ/אַחֲרֵ֣י יְהוָ֔ה וַ/עֲבַדְתֶּ֥ם אֶת יְהוָ֖ה בְּ/כָל לְבַבְ/כֶֽם׃",
+        "LXX": "καὶ εἶπεν Σαμουὴλ πρὸς τὸν λαόν Μὴ φοβεῖσθε· ὑμεῖς πεποιήκατε τὴν πᾶσαν κακίαν ταύτην, πλὴν μὴ ἐκκλίνητε ἀπὸ ὄπισθεν Κυρίου, καὶ δουλεύσατε τῷ κυρίῳ ἐν ὅλῃ καρδίᾳ ὑμῶν·",
+        "VUL": "Dixit autem Samuel ad populum : Nolite timere : vos fecistis universum malum hoc, verumtamen nolite recedere a tergo Domini, sed servite Domino in omni corde vestro.",
+        "SYN": "И отвечал Самуил народу: не бойтесь, грех этот вами сделан, но вы не отступайте только от Господа и служите Господу всем сердцем вашим",
+        "NEO": "Samuel dit au peuple : « Ne craignez point. Vous avez fait tout ce mal, mais ne cessez pas de suivre \\+w Yahweh|strong=\"H3068\"\\+w**, et servez \\+w Yahweh|strong=\"H3068\"\\+w** de tout votre cœur.",
+        "NAB": "\"Do not fear,\" Samuel answered them. \"It is true you have committed all this evil; still, you must not turn from the LORD, but must worship him with your whole heart.",
+        "VAT_ES": "Pero Samuel dijo al pueblo: «&iexcl;No teman! Por más que hayan cometido todo este mal, no se aparten del Señor, y sírvanlo de todo corazón.",
+        "CEI": "Samuele rispose al popolo: \"Non temete: voi avete fatto tutto questo male, ma almeno in seguito non allontanatevi dal Signore, anzi servite lui, il Signore, con tutto il cuore."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/לֹ֖א תָּס֑וּרוּ כִּ֣י אַחֲרֵ֣י הַ/תֹּ֗הוּ אֲשֶׁ֧ר לֹֽא יוֹעִ֛ילוּ וְ/לֹ֥א יַצִּ֖ילוּ כִּי תֹ֥הוּ הֵֽמָּה׃",
+        "LXX": "καὶ μὴ παραβῆτε ὀπίσω τῶν μηθὲν ὄντων, οἳ οὐ περανοῦσιν οὐθὲν καὶ οἳ οὐκ ἐξελοῦνται, ὅτι οὐθέν εἰσιν.",
+        "VUL": "Et nolite declinare post vana, quæ non proderunt vobis, neque eruent vos, quia vana sunt.",
+        "SYN": "и не обращайтесь вслед ничтожных _богов,_ которые не принесут пользы и не избавят; ибо они -- ничто;",
+        "NEO": "Ne vous en détournez point, car ce serait pour aller à des choses de néant, qui ne vous donneraient ni profit ni délivrance, parce que ce sont des choses de néant.",
+        "NAB": "Do not turn to meaningless idols which can neither profit nor save; they are nothing.",
+        "VAT_ES": "No se aparten siguiendo a dioses falsos, que ni ayudan ni pueden librar, porque no son nada.",
+        "CEI": "Non allontanatevi per seguire vanità che non possono giovare né salvare, perché appunto sono vanità."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כִּ֠י לֹֽא יִטֹּ֤שׁ יְהוָה֙ אֶת עַמּ֔/וֹ בַּ/עֲב֖וּר שְׁמ֣/וֹ הַ/גָּד֑וֹל כִּ֚י הוֹאִ֣יל יְהוָ֔ה לַ/עֲשׂ֥וֹת אֶתְ/כֶ֛ם ל֖/וֹ לְ/עָֽם׃",
+        "LXX": "ὅτι οὐκ ἀπώσεται Κύριος τὸν λαὸν αὐτοῦ διὰ τὸ ὄνομα αὐτοῦ τὸ μέγα, ὅτι ἐπιεικῶς Κύριος προσελάβετο ὑμᾶς αὑτῷ εἰς λαόν.",
+        "VUL": "Et non derelinquet Dominus populum suum propter nomen suum magnum : quia juravit Dominus facere vos sibi populum.",
+        "SYN": "Господь же не оставит народа Своего ради великого имени Своего, ибо Господу угодно было избрать вас народом Своим;",
+        "NEO": "Car \\+w Yahweh|strong=\"H3068\"\\+w** n’abandonnera pas son peuple, à cause de son grand nom ; car il a plu à \\+w Yahweh|strong=\"H3068\"\\+w** de faire de vous son peuple.",
+        "NAB": "For the sake of his own great name the LORD will not abandon his people, since the LORD himself chose to make you his people.",
+        "VAT_ES": "No, el Señor no rechazará a su pueblo, por el honor de su gran Nombre, porque él ha querido hacer de ustedes su pueblo.",
+        "CEI": "Certo il Signore non abbandonerà il suo popolo, per riguardo al suo nome che è grande, perché il Signore ha cominciato a fare di voi il suo popolo."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "גַּ֣ם אָנֹכִ֗י חָלִ֤ילָ/ה לִּ/י֙ מֵ/חֲטֹ֣א לַֽ/יהוָ֔ה מֵ/חֲדֹ֖ל לְ/הִתְפַּלֵּ֣ל בַּעַדְ/כֶ֑ם וְ/הוֹרֵיתִ֣י אֶתְ/כֶ֔ם בְּ/דֶ֥רֶךְ הַ/טּוֹבָ֖ה וְ/הַ/יְשָׁרָֽה׃",
+        "LXX": "καὶ ἐμοὶ μηδαμῶς τοῦ ἁμαρτεῖν τῷ κυρίῳ ἀνιέναι τοῦ προσεύχεσθαι περὶ ὑμῶν· καὶ δουλεύσω τῷ κυρίῳ, καὶ δείξω ὑμῖν τὴν ὁδὸν τὴν ἀγαθὴν καὶ τὴν εὐθεῖαν.",
+        "VUL": "Absit autem a me hoc peccatum in Dominum, ut cessem orare pro vobis, et docebo vos viam bonam et rectam.",
+        "SYN": "и я также не допущу себе греха пред Господом, чтобы перестать молиться за вас, и буду наставлять вас на путь добрый и прямой;",
+        "NEO": "Loin de moi aussi de pécher contre \\+w Yahweh|strong=\"H3068\"\\+w**, en cessant de prier pour vous ! Je vous enseignerai le bon et droit chemin.",
+        "NAB": "As for me, far be it from me to sin against the LORD by ceasing to pray for you and to teach you the good and right way.",
+        "VAT_ES": "En lo que a mí respecta, &iexcl;lejos de mi pecar contra el Señor, dejando de rogar por ustedes!",
+        "CEI": "Quanto a me, non sia mai che io pecchi contro il Signore, tralasciando di supplicare per voi e di indicarvi la via buona e retta."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אַ֣ךְ יְר֣אוּ אֶת יְהוָ֗ה וַ/עֲבַדְתֶּ֥ם אֹת֛/וֹ בֶּ/אֱמֶ֖ת בְּ/כָל לְבַבְ/כֶ֑ם כִּ֣י רְא֔וּ אֵ֥ת אֲשֶׁר הִגְדִּ֖ל עִמָּ/כֶֽם׃",
+        "LXX": "πλὴν φοβεῖσθε τὸν κύριον καὶ δουλεύσατε αὐτῷ ἐν ἀληθείᾳ καὶ ἐν ὅλῃ καρδίᾳ ὑμῶν, ὅτι εἴδετε ἃ ἐμεγάλυνεν μεθ’ ὑμῶν·",
+        "VUL": "Igitur timete Dominum, et servite ei in veritate, et ex toto corde vestro : vidistis enim magnifica quæ in vobis gesserit.",
+        "SYN": "только бойтесь Господа и служите Ему истинно, от всего сердца вашего, ибо вы видели, какие великие дела Он сделал с вами;",
+        "NEO": "Craignez seulement \\+w Yahweh|strong=\"H3068\"\\+w**, et servez-le en vérité de tout votre cœur ; car voyez quelles grandes choses il a faites au milieu de vous !",
+        "NAB": "But you must fear the LORD and worship him faithfully with your whole heart; keep in mind the great things he has done among you.",
+        "VAT_ES": "Basta que teman al Señor y lo sirvan fielmente de todo corazón. Miren qué grandes cosas ha hecho el Señor con ustedes.",
+        "CEI": "Vogliate soltanto temere il Signore e servirlo fedelmente con tutto il cuore, perché dovete ben riconoscere le grandi cose che ha operato con voi."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/אִם הָרֵ֖עַ תָּרֵ֑עוּ גַּם אַתֶּ֥ם גַּֽם מַלְכְּ/כֶ֖ם תִּסָּפֽוּ׃",
+        "LXX": "καὶ ἐὰν κακίᾳ κακοποιήσητε, καὶ ὑμεῖς καὶ ὁ βασιλεὺς ὑμῶν προστεθήσεσθε.",
+        "VUL": "Quod si perseveraveritis in malitia, et vos et rex vester pariter peribitis.",
+        "SYN": "если же вы будете делать зло, то и вы и царь ваш погибнете.",
+        "NEO": "Mais si vous persévérez à faire le mal, vous périrez, vous et votre roi. »",
+        "NAB": "If instead you continue to do evil, both you and your king shall perish.\"",
+        "VAT_ES": "Pero si persisten en hacer el mal, perecerán ustedes junto con su rey».",
+        "CEI": "Se invece vorrete fare il male, voi e il vostro re sarete spazzati via\"."
+      }
+    }
+  }
+}

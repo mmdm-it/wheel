@@ -1,0 +1,464 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PROV_013",
+  "book_key": "PROV",
+  "sequence": 13,
+  "chapter_in": {
+    "MT": 13,
+    "VUL": 13,
+    "LXX": 13
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בֵּ֣ן חָ֭כָם מ֣וּסַר אָ֑ב וְ֝/לֵ֗ץ לֹא שָׁמַ֥ע גְּעָרָֽה׃",
+        "LXX": "Υἱὸς πανοῦργος ὑπήκοος πατρί, υἱὸς δὲ ἀνήκοος ἐν ἀπωλείᾳ.",
+        "VUL": "[Filius sapiens doctrina patris ;/ qui autem illusor est non audit cum arguitur./",
+        "SYN": "Мудрый сын _слушает_ наставление отца, а буйный не слушает обличения.",
+        "NEO": "Le fils sage révèle l’instruction de son père, mais le moqueur n’écoute pas la réprimande.",
+        "NAB": "A wise son loves correction, but the senseless one heeds no rebuke.",
+        "VAT_ES": "Un hijo sabio ama la corrección, pero el insolente no escucha el reproche.",
+        "CEI": "Il figlio saggio ama la disciplina, lo spavaldo non ascolta il rimprovero."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "מִ/פְּרִ֣י פִי אִ֭ישׁ יֹ֣אכַל ט֑וֹב וְ/נֶ֖פֶשׁ בֹּגְדִ֣ים חָמָֽס׃",
+        "LXX": "ἀπὸ καρπῶν δικαιοσύνης φάγεται ἀγαθός, ψυχαὶ δὲ παρανόμων ὀλοῦνται ἄωροι.",
+        "VUL": "De fructu oris sui homo satiabitur bonis :/ anima autem prævaricatorum iniqua./",
+        "SYN": "От плода уст _своих_ человек вкусит добро, душа же законопреступников - зло.",
+        "NEO": "Du fruit de sa bouche l’homme goûte le bien, mais le désir des perfides, c’est la violence.",
+        "NAB": "From the fruit of his words a man eats good things, but the treacherous one craves violence.",
+        "VAT_ES": "El hombre comerá del fruto de sus palabras, pero los traidores están ávidos de violencia.",
+        "CEI": "Del frutto della sua bocca l'uomo mangia ciò che è buono; l'appetito dei perfidi si soddisfa con i soprusi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "נֹצֵ֣ר פִּ֭י/ו שֹׁמֵ֣ר נַפְשׁ֑/וֹ פֹּשֵׂ֥ק שְׂ֝פָתָ֗י/ו מְחִתָּה לֽ/וֹ׃",
+        "LXX": "ὃς φυλάσσει τὸ ἑαυτοῦ στόμα τηρεῖ τὴν ἑαυτοῦ ψυχήν, ὁ δὲ προπετὴς χείλεσιν πτοήσει ἑαυτόν.",
+        "VUL": "Qui custodit os suum custodit animam suam ;/ qui autem inconsideratus est ad loquendum, sentiet mala./",
+        "SYN": "Кто хранит уста свои, тот бережет душу свою; а кто широко раскрывает свой рот, тому беда.",
+        "NEO": "Celui qui veille sur sa bouche garde son âme ; celui qui ouvre trop ses lèvres court à sa perte.",
+        "NAB": "He who guards his mouth protects his life; to open wide one's lips brings downfall.",
+        "VAT_ES": "El que vigila su boca protege su vida, el que abre demasiado sus labios acaba en la ruina.",
+        "CEI": "Chi sorveglia la sua bocca conserva la vita, chi apre troppo le labbra incontra la rovina."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "מִתְאַוָּ֣ה וָ֭/אַיִן נַפְשׁ֣/וֹ עָצֵ֑ל וְ/נֶ֖פֶשׁ חָרֻצִ֣ים תְּדֻשָּֽׁן׃",
+        "LXX": "ἐν ἐπιθυμίαις ἐστιν πᾶς ἀεργός, χεῖρες δὲ ἀνδρείων ἐν ἐπιμελείᾳ.",
+        "VUL": "Vult et non vult piger ;/ anima autem operantium impinguabitur./",
+        "SYN": "Душа ленивого желает, но тщетно; а душа прилежных насытится.",
+        "NEO": "Le paresseux à des désirs, et ils ne sont pas satisfaits, mais le désir des hommes diligents sera rassasié.",
+        "NAB": "The soul of the sluggard craves in vain, but the diligent soul is amply satisfied.",
+        "VAT_ES": "El perezoso codicia y su deseo es vano, pero el deseo de los laboriosos será colmado.",
+        "CEI": "Il pigro brama, ma non c'è nulla per il suo appetito; l'appetito dei diligenti sarà soddisfatto."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "דְּבַר שֶׁ֭קֶר יִשְׂנָ֣א צַדִּ֑יק וְ֝/רָשָׁ֗ע יַבְאִ֥ישׁ וְ/יַחְפִּֽיר׃",
+        "LXX": "λόγον ἄδικον μισεῖ δίκαιος, ἀσεβὴς δὲ αἰσχύνεται καὶ οὐχ ἕξει παρρησίαν.",
+        "VUL": "Verbum mendax justus detestabitur ;/ impius autem confundit, et confundetur./",
+        "SYN": "Праведник ненавидит ложное слово, а нечестивый срамит и бесчестит _себя._",
+        "NEO": "Le juste déteste les paroles mensongères ; le méchant procure la honte et la confusion.",
+        "NAB": "Anything deceitful the just man hates, but the wicked brings shame and disgrace.",
+        "VAT_ES": "El justo detesta la mentira, pero el malvado causa verg&uuml;enza y confusión.",
+        "CEI": "Il giusto odia la parola falsa, l'empio calunnia e disonora."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "צְ֭דָקָה תִּצֹּ֣ר תָּם דָּ֑רֶךְ וְ֝/רִשְׁעָ֗ה תְּסַלֵּ֥ף חַטָּֽאת׃",
+        "VUL": "Justitia custodit innocentis viam,/ impietas autem peccatorem supplantat.]",
+        "SYN": "Правда хранит непорочного в пути, а нечестие губит грешника.",
+        "NEO": "La justice garde la voie de l’homme intègre, mais la méchanceté cause la ruine du pécheur.",
+        "NAB": "Virtue guards one who walks honestly, but the downfall of the wicked is sin.",
+        "VAT_ES": "La justicia preserva al que camina con integridad, pero la maldad arruina al pecador.",
+        "CEI": "La giustizia custodisce chi ha una condotta integra, il peccato manda in rovina l'empio."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יֵ֣שׁ מִ֭תְעַשֵּׁר וְ/אֵ֣ין כֹּ֑ל מִ֝תְרוֹשֵׁ֗שׁ וְ/ה֣וֹן רָֽב׃",
+        "LXX": "εἰσὶν οἱ πλουτίζοντες ἑαυτοὺς μηδὲν ἔχοντες, καὶ εἰσὶν οἱ ταπεινοῦντες ἑαυτοὺς ἐν πολλῷ πλούτῳ.",
+        "VUL": "[Est quasi dives, cum nihil habeat,/ et est quasi pauper, cum in multis divitiis sit./",
+        "SYN": "Иной выдает себя за богатого, а у него ничего нет; другой выдает себя за бедного, а у него богатства много.",
+        "NEO": "Tel fait le riche qui n’a rien, tel fait le pauvre qui a de grands biens.",
+        "NAB": "One man pretends to be rich, yet has nothing; another pretends to be poor, yet has great wealth.",
+        "VAT_ES": "Hay quien presume de rico y no tiene nada, y hay quien se hace el pobre y posee grandes bienes.",
+        "CEI": "C'è chi fa il ricco e non ha nulla; c'è chi fa il povero e ha molti beni."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כֹּ֣פֶר נֶֽפֶשׁ אִ֣ישׁ עָשְׁר֑/וֹ וְ֝/רָ֗שׁ לֹא שָׁמַ֥ע גְּעָרָֽה׃",
+        "LXX": "λύτρον ἀνδρὸς ψυχῆς ὁ ἴδιος πλοῦτος, πτωχὸς δὲ οὐχ ὑφίσταται ἀπειλήν.",
+        "VUL": "Redemptio animæ viri divitiæ suæ ;/ qui autem pauper est, increpationem non sustinet./",
+        "SYN": "Богатством своим человек выкупает жизнь _свою,_ а бедный и угрозы не слышит.",
+        "NEO": "La richesse d’un homme est rançon de sa vie, mais le pauvre n’entend même pas la menace.",
+        "NAB": "A man's riches serve as ransom for his life, but the poor man heeds no rebuke.",
+        "VAT_ES": "La riqueza es una garantía para la vida de un hombre, pero el pobre no escucha amenazas,",
+        "CEI": "Riscatto della vita d'un uomo è la sua ricchezza, ma il povero non si accorge della minaccia."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אוֹר צַדִּיקִ֥ים יִשְׂמָ֑ח וְ/נֵ֖ר רְשָׁעִ֣ים יִדְעָֽךְ׃",
+        "LXX": "φῶς δικαίοις διὰ παντός, φῶς δὲ ἀσεβῶν σβέννυται. [1] ψυχαὶ δόλιαι πλανῶνται ἐν ἁμαρτίαις, δίκαιοι δὲ οἰκτείρουσιν καὶ ἐλεῶσιν.",
+        "VUL": "Lux justorum lætificat :/ lucerna autem impiorum extinguetur./",
+        "SYN": "Свет праведных весело горит, светильник же нечестивых угасает. [Души коварные блуждают в грехах, а праведники сострадают и милуют.]",
+        "NEO": "La lumière du juste brille joyeusement, mais la lampe des méchants s’éteint.",
+        "NAB": "The light of the just shines gaily, but the lamp of the wicked goes out.",
+        "VAT_ES": "La luz de los justos resplandece, pero la lámpara de los malvados se extingue.",
+        "CEI": "La luce dei giusti allieta, la lucerna degli empi si spegne."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "רַק בְּ֭/זָדוֹן יִתֵּ֣ן מַצָּ֑ה וְ/אֶת נ֖וֹעָצִ֣ים חָכְמָֽה׃",
+        "LXX": "κακὸς μεθ’ ὕβρεως πράσσει κακά, οἱ δὲ ἑαυτῶν ἐπιγνώμονες σοφοί.",
+        "VUL": "Inter superbos semper jurgia sunt ;/ qui autem agunt omnia cum consilio, reguntur sapientia./",
+        "SYN": "От высокомерия происходит раздор, а у советующихся - мудрость.",
+        "NEO": "L’orgueil ne produit que des querelles ; mais la sagesse est avec ceux qui se laissent conseiller.",
+        "NAB": "The stupid man sows discord by his insolence, but with those who take counsel is wisdom.",
+        "VAT_ES": "El fatuo provoca discordias con su presunción, y la sabiduría está con los que se dejan aconsejar.",
+        "CEI": "L'insolenza provoca soltanto contese, la sapienza si trova presso coloro che prendono consiglio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "ה֭וֹן מֵ/הֶ֣בֶל יִמְעָ֑ט וְ/קֹבֵ֖ץ עַל יָ֣ד יַרְבֶּֽה׃",
+        "LXX": "ὕπαρξις ἐπισπουδαζομένη μετὰ ἀνομίας ἐλάσσων γίνεται, ὁ δὲ συνάγων ἑαυτῷ μετ’ εὐσεβείας πληθυνθήσεται· δίκαιος οἰκτείρει καὶ κιχρᾷ.",
+        "VUL": "Substantia festinata minuetur ;/ quæ autem paulatim colligitur manu, multiplicabitur./",
+        "SYN": "Богатство от суетности истощается, а собирающий трудами умножает его.",
+        "NEO": "La richesse mal acquise s’évanouit, mais celui qui l’amasse peu à peu l’augmente.",
+        "NAB": "Wealth quickly gotten dwindles away, but amassed little by little, it grows.",
+        "VAT_ES": "La riqueza adquirida de golpe no dura, pero el que junta poco a poco, la acrecienta.",
+        "CEI": "Le ricchezze accumulate in fretta diminuiscono, chi le raduna a poco a poco le accresce."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "תּוֹחֶ֣לֶת מְ֭מֻשָּׁכָה מַחֲלָה לֵ֑ב וְ/עֵ֥ץ חַ֝יִּ֗ים תַּאֲוָ֥ה בָאָֽה׃",
+        "LXX": "κρείσσων ἐναρχομένοις βοηθῶν καρδίᾳ τοῦ ἐπαγγελλομένου καὶ εἰς ἐλπίδα ἄγοντος· δένδρον γὰρ ζωῆς ἐπιθυμία ἀγαθή.",
+        "VUL": "Spes quæ differtur affligit animam ;/ lignum vitæ desiderium veniens.]",
+        "SYN": "Надежда, долго не сбывающаяся, томит сердце, а исполнившееся желание - _как_ древо жизни.",
+        "NEO": "L’espoir différé rend le cœur malade, mais le désir accompli est un arbre de vie.",
+        "NAB": "Hope deferred makes the heart sick, but a wish fulfilled is a tree of life.",
+        "VAT_ES": "La esperanza diferida enferma el corazón, el deseo colmado es un árbol de vida.",
+        "CEI": "Un'attesa troppo prolungata fa male al cuore, un desiderio soddisfatto è albero di vita."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "בָּ֣ז לְ֭/דָבָר יֵחָ֣בֶל ל֑/וֹ וִ/ירֵ֥א מִ֝צְוָ֗ה ה֣וּא יְשֻׁלָּֽם׃",
+        "LXX": "ὃς καταφρονεῖ πράγματος, καταφρονηθήσεται ὑπ’ αὐτοῦ· ὁ δὲ φοβούμενος ἐντολήν, οὗτος ὑγιαίνει. [1] υἱῷ δολίῳ οὐδὲν ἔσται ἀγαθόν· οἰκέτῃ δὲ σοφῷ εὔοδοι ἔσονται πράξεις, καὶ κατευθυνθήσεται ἡ ὁδὸς αὐτοῦ.",
+        "VUL": "[Qui detrahit alicui rei, ipse se in futurum obligat ;/ qui autem timet præceptum, in pace versabitur./ Animæ dolosæ errant in peccatis :/ justi autem misericordes sunt, et miserantur./",
+        "SYN": "Кто пренебрегает словом, тот причиняет вред себе; а кто боится заповеди, тому воздается.",
+        "NEO": "Celui qui méprise la parole se perd, mais celui qui respecte le précepte sera récompensé.",
+        "NAB": "He who despises the word must pay for it, but he who reveres the commandment will be rewarded.",
+        "VAT_ES": "El que desprecia la palabra se perderá, pero el que respeta los mandamientos será recompensado.",
+        "CEI": "Chi disprezza la parola si rovinerà, chi rispetta un comando ne avrà premio."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "תּוֹרַ֣ת חָ֭כָם מְק֣וֹר חַיִּ֑ים לָ֝/ס֗וּר מִ/מֹּ֥קְשֵׁי מָֽוֶת׃",
+        "LXX": "νόμος σοφοῦ πηγὴ ζωῆς, ὁ δὲ ἄνους ὑπὸ παγίδος θανεῖται.",
+        "VUL": "Lex sapientis fons vitæ,/ ut declinet a ruina mortis./",
+        "SYN": "[У сына лукавого ничего нет доброго, а у разумного раба дела благоуспешны, и путь его прямой.]",
+        "NEO": "L’enseignement du sage est une source de vie, pour échapper aux pièges de la mort.",
+        "NAB": "The teaching of the wise is a fountain of life, that a man may avoid the snares of death.",
+        "VAT_ES": "La enseñanza del sabio es fuente de vida, para apartarse de las trampas de la muerte.",
+        "CEI": "L'insegnamento del saggio è fonte di vita per evitare i lacci della morte."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "שֵֽׂכֶל ט֭וֹב יִתֶּן חֵ֑ן וְ/דֶ֖רֶךְ בֹּגְדִ֣ים אֵיתָֽן׃",
+        "LXX": "σύνεσις ἀγαθὴ δίδωσιν χάριν, τὸ δὲ γνῶναι νόμον διανοίας ἐστὶν ἀγαθῆς, ὁδοὶ δὲ καταφρονούντων ἐν ἀπωλείᾳ.",
+        "VUL": "Doctrina bona dabit gratiam ;/ in itinere contemptorum vorago./",
+        "SYN": "Учение мудрого - источник жизни, удаляющий от сетей смерти.",
+        "NEO": "Une intelligence cultivée produit la grâce, mais la voie des perfides est rude.",
+        "NAB": "Good sense brings favor, but the way of the faithless is their ruin.",
+        "VAT_ES": "El buen juicio se gana el favor, pero los traidores caminan hacia su ruina.",
+        "CEI": "Un aspetto buono procura favore, ma il contegno dei perfidi è rude."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "כָּל עָ֭רוּם יַעֲשֶׂ֣ה בְ/דָ֑עַת וּ֝/כְסִ֗יל יִפְרֹ֥שׂ אִוֶּֽלֶת׃",
+        "LXX": "πᾶς πανοῦργος πράσσει μετὰ γνώσεως, ὁ δὲ ἄφρων ἐξεπέτασεν ἑαυτοῦ κακίαν.",
+        "VUL": "Astutus omnia agit cum consilio ;/ qui autem fatuus est aperit stultitiam./",
+        "SYN": "Добрый разум доставляет приятность, путь же беззаконных жесток.",
+        "NEO": "Tout homme prudent agit avec réflexion, mais l’insensé étale sa folie.",
+        "NAB": "The shrewd man does everything with prudence, but the fool peddles folly.",
+        "VAT_ES": "El hombre prudente sabe bien lo que hace, pero el necio va ostentando su insensatez.",
+        "CEI": "L'accorto agisce sempre con riflessione, lo stolto mette in mostra la stoltezza."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "מַלְאָ֣ךְ רָ֭שָׁע יִפֹּ֣ל בְּ/רָ֑ע וְ/צִ֖יר אֱמוּנִ֣ים מַרְפֵּֽא׃",
+        "LXX": "βασιλεὺς θρασὺς ἐμπεσεῖται εἰς κακά, ἄγγελος δὲ σοφὸς ῥύσεται αὐτόν.",
+        "VUL": "Nuntius impii cadet in malum ;/ legatus autem fidelis, sanitas./",
+        "SYN": "Всякий благоразумный действует с знанием, а глупый выставляет напоказ глупость.",
+        "NEO": "Un envoyé méchant tombe dans le malheur, mais un messager fidèle procure la guérison.",
+        "NAB": "A wicked messenger brings on disaster, but a trustworthy envoy is a healing remedy.",
+        "VAT_ES": "Un mal emisario hunde en la desgracia, pero un enviado fiel devuelve la salud.",
+        "CEI": "Un cattivo messaggero causa sciagure, un inviato fedele apporta salute."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "רֵ֣ישׁ וְ֭/קָלוֹן פּוֹרֵ֣עַ מוּסָ֑ר וְ/שׁוֹמֵ֖ר תּוֹכַ֣חַת יְכֻבָּֽד׃",
+        "LXX": "πενίαν καὶ ἀτιμίαν ἀφαιρεῖται παιδεία, ὁ δὲ φυλάσσων ἐλέγχους δοξασθήσεται.",
+        "VUL": "Egestas et ignominia ei qui deserit disciplinam ;/ qui autem acquiescit arguenti glorificabitur./",
+        "SYN": "Худой посол попадает в беду, а верный посланник - спасение.",
+        "NEO": "Misère et honte à qui rejette la correction ; celui qui reçoit la réprimande est honoré.",
+        "NAB": "Poverty and shame befall the man who disregards correction, but he who heeds reproof is honored.",
+        "VAT_ES": "Miseria e ignominia para el que desecha la corrección, el que tiene en cuenta una advertencia será honrado.",
+        "CEI": "Povertà e ignominia a chi rifiuta l'istruzione, chi tien conto del rimprovero sarà onorato."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "תַּאֲוָ֣ה נִ֭הְיָה תֶּעֱרַ֣ב לְ/נָ֑פֶשׁ וְ/תוֹעֲבַ֥ת כְּ֝סִילִ֗ים ס֣וּר מֵ/רָֽע׃",
+        "LXX": "ἐπιθυμίαι εὐσεβῶν ἡδύνουσιν ψυχήν, ἔργα δὲ ἀσεβῶν μακρὰν ἀπὸ γνώσεως.",
+        "VUL": "Desiderium si compleatur delectat animam ;/ detestantur stulti eos qui fugiunt mala./",
+        "SYN": "Нищета и посрамление отвергающему учение; а кто соблюдает наставление, будет в чести.",
+        "NEO": "Le désir satisfait réjouit l’âme, et s’éloigner du mal fait horreur aux insensés.",
+        "NAB": "Lust indulged starves the soul, but fools hate to turn from evil.",
+        "VAT_ES": "Deseo cumplido es deleite para el alma, apartarse del mal es una abominación para los necios.",
+        "CEI": "Desiderio soddisfatto è una dolcezza al cuore, ma è abominio per gli stolti staccarsi dal male."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "הלוך הוֹלֵ֣ךְ אֶת חֲכָמִ֣ים ו/חכם יֶחְכָּ֑ם וְ/רֹעֶ֖ה כְסִילִ֣ים יֵרֽוֹעַ׃",
+        "LXX": "συμπορευόμενος σοφοῖς σοφὸς ἔσῃ, ὁ δὲ συμπορευόμενος ἄφροσι γνωσθήσεται.",
+        "VUL": "Qui cum sapientibus graditur sapiens erit ;/ amicus stultorum similis efficietur.]",
+        "SYN": "Желание исполнившееся - приятно для души; но несносно для глупых уклоняться от зла.",
+        "NEO": "Celui qui fréquente les sages devient sage, mais celui qui se plaît avec les insensés devient méchant.",
+        "NAB": "Walk with wise men and you will become wise, but the companion of fools will fare badly.",
+        "VAT_ES": "Acude a los sabios, y te harás sabio, pero el que frecuenta a los necios se echa a perder.",
+        "CEI": "Và con i saggi e saggio diventerai, chi pratica gli stolti ne subirà danno."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "חַ֭טָּאִים תְּרַדֵּ֣ף רָעָ֑ה וְ/אֶת צַ֝דִּיקִ֗ים יְשַׁלֶּם טֽוֹב׃",
+        "LXX": "ἁμαρτάνοντας καταδιώξεται κακά, τοὺς δὲ δικαίους καταλήμψεται ἀγαθά.",
+        "VUL": "[Peccatores persequitur malum,/ et justis retribuentur bona./",
+        "SYN": "Общающийся с мудрыми будет мудр, а кто дружит с глупыми, развратится.",
+        "NEO": "Le malheur poursuit les pécheurs, mais le bonheur récompense les justes.",
+        "NAB": "Misfortune pursues sinners, but the just shall be recompensed with good.",
+        "VAT_ES": "El mal persigue a los pecadores, y el bien recompensa a los justos.",
+        "CEI": "La sventura perseguita i peccatori, il benessere ripagherà i giusti."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "ט֗וֹב יַנְחִ֥יל בְּנֵֽי בָנִ֑ים וְ/צָפ֥וּן לַ֝/צַּדִּ֗יק חֵ֣יל חוֹטֵֽא׃",
+        "LXX": "ἀγαθὸς ἀνὴρ κληρονομήσει υἱοὺς υἱῶν, θησαυρίζεται δὲ δικαίοις πλοῦτος ἀσεβῶν.",
+        "VUL": "Bonus reliquit hæredes filios et nepotes,/ et custoditur justo substantia peccatoris./",
+        "SYN": "Грешников преследует зло, а праведникам воздается добром.",
+        "NEO": "L’homme de bien laisse sont héritage aux enfants de ses enfants ; mais la richesse du pécheur est réservée au juste.",
+        "NAB": "The good man leaves an inheritance to his children's children, but the wealth of the sinner is stored up for the just.",
+        "VAT_ES": "El hombre de bien deja una herencia a los hijos de sus hijos, pero la fortuna del pecador está reservada para el justo.",
+        "CEI": "L'uomo dabbene lascia eredi i nipoti, la proprietà del peccatore è riservata al giusto."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "רָב אֹ֭כֶל נִ֣יר רָאשִׁ֑ים וְ/יֵ֥שׁ נִ֝סְפֶּ֗ה בְּ/לֹ֣א מִשְׁפָּֽט׃",
+        "LXX": "δίκαιοι ποιήσουσιν ἐν πλούτῳ ἔτη πολλά, ἄδικοι δὲ ἀπολοῦνται συντόμως.",
+        "VUL": "Multi cibi in novalibus patrum,/ et aliis congregantur absque judicio./",
+        "SYN": "Добрый оставляет наследство [и] внукам, а богатство грешника сберегается для праведного.",
+        "NEO": "Dans le champ défriché par le pauvre abonde la nourriture, mais il en est qui périssent faute de justice.",
+        "NAB": "A lawsuit devours the tillage of the poor, but some men perish for lack of a law court.",
+        "VAT_ES": "El surco de los pobres da comida en abundancia, pero hay quien se pierde por falta de justicia.",
+        "CEI": "Il potente distrugge il podere dei poveri e c'è chi è eliminato senza processo."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "חוֹשֵׂ֣ךְ שִׁ֭בְט/וֹ שׂוֹנֵ֣א בְנ֑/וֹ וְ֝/אֹהֲב֗/וֹ שִֽׁחֲר֥/וֹ מוּסָֽר׃",
+        "LXX": "ὃς φείδεται τῆς βακτηρίας, μισεῖ τὸν υἱὸν αὐτοῦ, ὁ δὲ ἀγαπῶν ἐπιμελῶς παιδεύει.",
+        "VUL": "Qui parcit virgæ odit filium suum ;/ qui autem diligit illum instanter erudit./",
+        "SYN": "Много хлеба _бывает_ и на ниве бедных; но некоторые гибнут от беспорядка.",
+        "NEO": "Celui qui ménage sa verge hait son fils, mais celui qui l’aime le corrige de bonne heure.",
+        "NAB": "He who spares his rod hates his son, but he who loves him takes care to chastise him.",
+        "VAT_ES": "El que mezquina la vara odia a su hijo, el que lo ama se esmera por corregirlo.",
+        "CEI": "Chi risparmia il bastone odia suo figlio, chi lo ama è pronto a correggerlo."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "צַדִּ֗יק אֹ֭כֵל לְ/שֹׂ֣בַע נַפְשׁ֑/וֹ וּ/בֶ֖טֶן רְשָׁעִ֣ים תֶּחְסָֽר׃",
+        "LXX": "δίκαιος ἔσθων ἐμπιπλᾷ τὴν ψυχὴν αὐτοῦ, ψυχαὶ δὲ ἀσεβῶν ἐνδεεῖς.",
+        "VUL": "Justus comedit et replet animam suam ;/ venter autem impiorum insaturabilis.]",
+        "SYN": "Кто жалеет розги своей, тот ненавидит сына; а кто любит, тот с детства наказывает его.",
+        "NEO": "Le juste mange et satisfait son appétit, mais le ventre des méchants éprouve la disette.",
+        "NAB": "When the just man eats, his hunger is appeased; but the belly of the wicked suffers want.",
+        "VAT_ES": "El justo come hasta saciarse, pero el estómago de los malvados está vacío.",
+        "CEI": "Il giusto mangia a sazietà, ma il ventre degli empi soffre la fame."
+      }
+    }
+  }
+}

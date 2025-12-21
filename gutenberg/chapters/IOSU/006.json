@@ -1,0 +1,500 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOSU_006",
+  "book_key": "IOSU",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וִֽ/ירִיחוֹ֙ סֹגֶ֣רֶת וּ/מְסֻגֶּ֔רֶת מִ/פְּנֵ֖י בְּנֵ֣י יִשְׂרָאֵ֑ל אֵ֥ין יוֹצֵ֖א וְ/אֵ֥ין בָּֽא׃",
+        "LXX": "καὶ Ἰερειχὼ συνκεκλεισμένη καὶ ὠχυρωμένη, καὶ οὐθεὶς ἐξεπορεύετο ἐξ αὐτῆς οὐδὲ εἰσεπορεύετο.",
+        "VUL": "Jericho autem clausa erat atque munita, timore filiorum Israël, et nullus egredi audebat aut ingredi.",
+        "SYN": "Тогда сказал Господь Иисусу: вот, Я предаю в руки твои Иерихон и царя его, [и находящихся в нем] людей сильных;",
+        "NEO": "Jéricho était fermée et entièrement close, à cause des enfants d’Israël ; personne n’en sortait, et personne n’y entrait.",
+        "NAB": "Now Jericho was in a state of siege because of the presence of the Israelites, so that no one left or entered.",
+        "VAT_ES": "Jericó estaba herméticamente cerrada por temor a los israelitas: nadie salía ni entraba.",
+        "CEI": "Ora Gerico era saldamente sbarrata dinanzi agli Israeliti; nessuno usciva e nessuno entrava."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֶל יְהוֹשֻׁ֔עַ רְאֵה֙ נָתַ֣תִּי בְ/יָֽדְ/ךָ֔ אֶת יְרִיח֖וֹ וְ/אֶת מַלְכָּ֑/הּ גִּבּוֹרֵ֖י הֶ/חָֽיִל׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς Ἰησοῦν Ἰδοὺ ἐγὼ παραδίδωμι τὴν Ἰερειχὼ ὑποχειρίαν καὶ τὸν βασιλέα αὐτῆς τὸν ἐν αὐτῇ, δυνατοὺς ὄντας ἐν ἰσχύι.",
+        "VUL": "Dixitque Dominus ad Josue : Ecce dedi in manu tua Jericho, et regem ejus, omnesque fortes viros.",
+        "SYN": "пойдите вокруг города все способные к войне и обходите город однажды [в день]; и это делай шесть дней;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Josué : « Vois, j’ai livré entre tes mains Jéricho et son roi, ainsi que ses vaillants hommes.",
+        "NAB": "And to Joshua the LORD said, \"I have delivered Jericho and its king into your power.",
+        "VAT_ES": "Entonces el Señor dijo a Josué: «Yo he puesto en tus manos a Jericó y a su rey.",
+        "CEI": "Disse il Signore a Giosuè: \"Vedi, io ti metto in mano Gerico e il suo re. Voi tutti prodi guerrieri,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/סַבֹּתֶ֣ם אֶת הָ/עִ֗יר כֹּ֚ל אַנְשֵׁ֣י הַ/מִּלְחָמָ֔ה הַקֵּ֥יף אֶת הָ/עִ֖יר פַּ֣עַם אֶחָ֑ת כֹּ֥ה תַעֲשֶׂ֖ה שֵׁ֥שֶׁת יָמִֽים׃",
+        "LXX": "σὺ δὲ περίστησον αὐτῇ τοὺς μαχίμους κύκλῳ.",
+        "VUL": "Circuite urbem cuncti bellatores semel per diem : sic facietis sex diebus.",
+        "SYN": "и семь священников пусть несут семь труб юбилейных пред ковчегом; а в седьмой день обойдите вокруг города семь раз, и священники пусть трубят трубами;",
+        "NEO": "Marchez autour de la ville, vous tous, les hommes de guerre, faites une fois le tour de la ville ; tu feras ainsi pendant six jours.",
+        "NAB": "Have all the soldiers circle the city, marching once around it. Do this for six days,",
+        "VAT_ES": "Por eso ustedes, todos los hombres de la guerra, darán una sola vuelta alrededor de la ciudad, formando un círculo en torno a ella. Así lo harán durante seis días.",
+        "CEI": "tutti atti alla guerra, girerete intorno alla città, facendo il circuito della città una volta. Così farete per sei giorni."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/שִׁבְעָ֣ה כֹהֲנִ֡ים יִשְׂאוּ֩ שִׁבְעָ֨ה שׁוֹפְר֤וֹת הַ/יּֽוֹבְלִים֙ לִ/פְנֵ֣י הָ/אָר֔וֹן וּ/בַ/יּוֹם֙ הַ/שְּׁבִיעִ֔י תָּסֹ֥בּוּ אֶת הָ/עִ֖יר שֶׁ֣בַע פְּעָמִ֑ים וְ/הַ/כֹּ֣הֲנִ֔ים יִתְקְע֖וּ בַּ/שּׁוֹפָרֽוֹת׃",
+        "LXX": "καὶ ἔσται ὡς ἂν σαλπίσητε τῇ σάλπιγγι, ἀνακραγέτω πᾶς ὁ λαὸς ἃμα·",
+        "VUL": "Septimo autem die, sacerdotes tollant septem buccinas, quarum usus est in jubilæo, et præcedant arcam fderis : septiesque circuibitis civitatem, et sacerdotes clangent buccinis.",
+        "SYN": "когда затрубит юбилейный рог, когда услышите звук трубы, тогда весь народ пусть воскликнет громким голосом, и стена города обрушится до своего основания, и [весь] народ пойдет [в город, устремившись] каждый с своей стороны.",
+        "NEO": "Sept prêtres porteront devant l’arche sept trompettes retentissantes ; et le septième jour, vous ferez sept fois le tour de la ville, et les prêtres sonneront des trompettes.",
+        "NAB": "with seven priests carrying ram's horns ahead of the ark. On the seventh day march around the city seven times, and have the priests blow the horns.",
+        "VAT_ES": "Además, siete sacerdotes irán delante del Arca llevando siete trompetas de cuerno. El séptimo día, en cambio, ustedes darán siete vueltas alrededor de la ciudad, y los sacerdotes harán sonar las trompetas.",
+        "CEI": "Sette sacerdoti porteranno sette trombe di corno d'ariete davanti all'arca; il settimo giorno poi girerete intorno alla città per sette volte e i sacerdoti suoneranno le trombe."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֞ה בִּ/מְשֹׁ֣ךְ בְּ/קֶ֣רֶן הַ/יּוֹבֵ֗ל ב/שמע/כם כְּ/שָׁמְעֲ/כֶם֙ אֶת ק֣וֹל הַ/שּׁוֹפָ֔ר יָרִ֥יעוּ כָל הָ/עָ֖ם תְּרוּעָ֣ה גְדוֹלָ֑ה וְ/נָ֨פְלָ֜ה חוֹמַ֤ת הָ/עִיר֙ תַּחְתֶּ֔י/הָ וְ/עָל֥וּ הָ/עָ֖ם אִ֥ישׁ נֶגְדּֽ/וֹ׃",
+        "LXX": "καὶ ἀνακραγόντων αὐτῶν πεσεῖται αὐτόματα τὰ τείχη τῆς πόλεως, καὶ εἰσελεύσεται πᾶς ὁ λαὸς ὁρμήσας ἕκαστος κατὰ πρόσωπον εἰς τὴν πόλιν.",
+        "VUL": "Cumque insonuerit vox tubæ longior atque concisior, et in auribus vestris increpuerit, conclamabit omnis populus vociferatione maxima, et muri funditus corruent civitatis, ingredienturque singuli per locum contra quem steterint.",
+        "SYN": "И призвал Иисус, сын Навин, священников [Израилевых] и сказал им: несите ковчег завета; а семь священников пусть несут семь труб юбилейных пред ковчегом Господним.",
+        "NEO": "Quand ils sonneront de la corne retentissante, et que vous entendrez le son de la trompette, tout le peuple poussera une grande clameur, et le mur de la ville s’écroulera ; alors le peuple montera, chacun devant soi. »",
+        "NAB": "When they give a long blast on the ram's horns and you hear that signal, all the people shall shout aloud. The wall of the city will collapse, and they will be able to make a frontal attack.\"",
+        "VAT_ES": "A la señal dada con el cuerno, cuando ustedes oigan el sonido de las trompetas, todo el pueblo prorrumpirá en fuertes gritos de guerra. Entonces los muros de la ciudad caerán sobre sí mismos, y el pueblo se lanzará al asalto, cada uno hacia lo que tenga adelante».",
+        "CEI": "Quando si suonerà il corno dell'ariete, appena voi sentirete il suono della tromba, tutto il popolo proromperà in un grande grido di guerra, allora le mura della città crolleranno e il popolo entrerà, ciascuno diritto davanti a sé\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֞א יְהוֹשֻׁ֤עַ בִּן נוּן֙ אֶל הַ/כֹּ֣הֲנִ֔ים וַ/יֹּ֣אמֶר אֲלֵ/הֶ֔ם שְׂא֖וּ אֶת אֲר֣וֹן הַ/בְּרִ֑ית וְ/שִׁבְעָ֣ה כֹֽהֲנִ֗ים יִשְׂאוּ֙ שִׁבְעָ֤ה שֽׁוֹפְרוֹת֙ יוֹבְלִ֔ים לִ/פְנֵ֖י אֲר֥וֹן יְהוָֽה׃",
+        "LXX": "Καὶ εἰσῆλθεν Ἰησοῦς ὁ τοῦ Ναυὴ πρὸς τοὺς ἱερεῖς",
+        "VUL": "Vocavit ergo Josue filius Nun sacerdotes, et dixit ad eos : Tollite arcam fderis : et septem alii sacerdotes tollant septem jubilæorum buccinas, et incedant ante arcam Domini.",
+        "SYN": "И сказал [им, чтоб они сказали] народу: пойдите и обойдите вокруг города; вооруженные же пусть идут пред ковчегом Господним.",
+        "NEO": "Josué, fils de Nun, ayant appelé les prêtres, leur dit : « Portez l’arche de l’alliance, et que sept prêtres portent sept trompettes retentissantes devant l’arche de \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "Summoning the priests, Joshua, son of Nun, then ordered them to take up the ark of the covenant with seven of the priests carrying ram's horns in front of the ark of the LORD.",
+        "VAT_ES": "Josué, hijo de Nun, convocó a los sacerdotes y les dijo: «Levanten el Arca de la Alianza, y que siete sacerdotes lleven siete trompetas de cuerno delante del Arca del Señor».",
+        "CEI": "Giosuè, figlio di Nun, convocò i sacerdoti e disse loro: \"Portate l'arca dell'alleanza; sette sacerdoti portino sette trombe di corno d'ariete davanti all'arca del Signore\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "ו/יאמרו וַ/יֹּ֨אמֶר֙ אֶל הָ/עָ֔ם עִבְר֖וּ וְ/סֹ֣בּוּ אֶת הָ/עִ֑יר וְ/הֶ֣/חָל֔וּץ יַעֲבֹ֕ר לִ/פְנֵ֖י אֲר֥וֹן יְהוָֽה׃",
+        "LXX": "καὶ εἶπεν αὐτοῖς λέγων Παραγγείλατε τῷ λαῷ περιελθεῖν καὶ κυκλῶσαι τὴν πόλιν, καὶ οἱ μάχιμοι παραπορευέσθωσαν ἐνωπλισμένοι ἐναντίον Κυρίου·",
+        "VUL": "Ad populum quoque ait : Ite, et circuite civitatem, armati, præcedentes arcam Domini.",
+        "SYN": "Как скоро Иисус сказал народу, семь священников, несших семь труб юбилейных пред Господом, пошли и затрубили [громогласно] трубами, и ковчег завета Господня шел за ними;",
+        "NEO": "Il dit au peuple : « Passez, marchez autour de la ville, et que les hommes armés passent devant l’arche de \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "And he ordered the people to proceed in a circle around the city, with the picked troops marching ahead of the ark of the LORD.",
+        "VAT_ES": "Después dijo al pueblo: «Vayan adelante y den la vuelta alrededor de la ciudad; que los guerreros avancen delante del Arca del Señor».",
+        "CEI": "Disse al popolo: \"Mettetevi in marcia e girate intorno alla città e il gruppo armato passi davanti all'arca del Signore\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י כֶּ/אֱמֹ֣ר יְהוֹשֻׁעַ֮ אֶל הָ/עָם֒ וְ/שִׁבְעָ֣ה הַ/כֹּהֲנִ֡ים נֹשְׂאִים֩ שִׁבְעָ֨ה שׁוֹפְר֤וֹת הַ/יּֽוֹבְלִים֙ לִ/פְנֵ֣י יְהוָ֔ה עָבְר֕וּ וְ/תָקְע֖וּ בַּ/שּֽׁוֹפָר֑וֹת וַֽ/אֲרוֹן֙ בְּרִ֣ית יְהוָ֔ה הֹלֵ֖ךְ אַחֲרֵי/הֶֽם׃",
+        "LXX": "καὶ ἑπτὰ ἱερεῖς ἔχοντες ἑπτὰ σάλπιγγας ἱερὰς παρελθέτωσαν ὡσαύτως ἐναντίον τοῦ κυρίου καὶ σημαινέτωσαν εὐτόνως· καὶ ἡ κιβωτὸς τῆς διαθήκης Κυρίου ἐπακολουθείτω.",
+        "VUL": "Cumque Josue verba finisset, et septem sacerdotes septem buccinis clangerent ante arcam fderis Domini,",
+        "SYN": "вооруженные же шли впереди священников, которые трубили трубами; а идущие позади следовали за ковчегом [завета Господня], во время шествия трубя трубами.",
+        "NEO": "Lorsque Josué eut parlé au peuple, les sept prêtres qui portaient les sept trompettes retentissantes devant \\+w Yahweh|strong=\"H3068\"\\+w**, passèrent et sonnèrent des trompettes, et l’arche de l’alliance de \\+w Yahweh|strong=\"H3068\"\\+w** s’avançait derrière eux.",
+        "NAB": "At this order they proceeded, with the seven priests who carried the ram's horns before the LORD blowing their horns, and the ark of the covenant of the LORD following them.",
+        "VAT_ES": "En seguida se hizo lo que Josué había dicho al pueblo: los siete sacerdotes que llevaban las siete trompetas de cuerno delante del Señor, avanzaron tocando las trompetas, mientras el Arca de la Alianza del Señor iba detrás de ellos.",
+        "CEI": "Come Giosuè ebbe parlato al popolo, i sette sacerdoti, che portavano le sette trombe d'ariete davanti al Signore, si mossero e suonarono le trombe, mentre l'arca dell'alleanza del Signore li seguiva;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הֶ/חָל֣וּץ הֹלֵ֔ךְ לִ/פְנֵי֙ הַ/כֹּ֣הֲנִ֔ים תקעו תֹּקְעֵ֖י הַ/שּֽׁוֹפָר֑וֹת וְ/הַֽ/מְאַסֵּ֗ף הֹלֵךְ֙ אַחֲרֵ֣י הָ/אָר֔וֹן הָל֖וֹךְ וְ/תָק֥וֹעַ בַּ/שּׁוֹפָרֽוֹת׃",
+        "LXX": "οἱ δὲ μάχιμοι ἔμπροσθεν παραπορευέσθωσαν, καὶ οἱ ἱερεῖς οἱ οὐραγοῦντες ὀπίσω τῆς κιβωτοῦ τῆς διαθήκης Κυρίου σαλπίζοντες.",
+        "VUL": "omnisque præcederet armatus exercitus, reliquum vulgus arcam sequebatur, ac buccinis omnia concrepabant.",
+        "SYN": "Народу же Иисус дал повеление и сказал: не восклицайте и не давайте слышать голоса вашего, и чтобы слово не выходило из уст ваших до _того_ дня, доколе я не скажу вам: \"воскликните!\" и тогда воскликните.",
+        "NEO": "Les hommes armés marchaient devant les prêtres qui sonnaient des trompettes, et l’arrière-garde suivait l’arche ; pendant la marche, on sonnait des trompettes.",
+        "NAB": "In front of the priests with the horns marched the picked troops; the rear guard followed the ark, and the blowing of horns was kept up continually as they marched.",
+        "VAT_ES": "Los guerreros, por su parte, marchaban delante de los sacerdotes que tocaban las trompetas, mientras que la retaguardia iba detrás del Arca. Y en ningún momento se dejó de tocar las trompetas.",
+        "CEI": "l'avanguardia precedeva i sacerdoti che suonavano le trombe e la retroguardia seguiva l'arca; si procedeva a suon di tromba."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/אֶת הָ/עָם֩ צִוָּ֨ה יְהוֹשֻׁ֜עַ לֵ/אמֹ֗ר לֹ֤א תָרִ֨יעוּ֙ וְ/לֹֽא תַשְׁמִ֣יעוּ אֶת קוֹלְ/כֶ֔ם וְ/לֹא יֵצֵ֥א מִ/פִּי/כֶ֖ם דָּבָ֑ר עַ֠ד י֣וֹם אָמְרִ֧/י אֲלֵי/כֶ֛ם הָרִ֖יעוּ וַ/הֲרִיעֹתֶֽם׃",
+        "LXX": "τῷ δὲ λαῷ ἐνετείλατο Ἰησοῦς λέγων Μὴ βοᾶτε, μηδὲ ἀκουσάτω μηθεὶς ὑμῶν τὴν φωνήν, ἕως ἂν ἡμέραν αὐτὸς διαγγείλῃ ἀναβοῆσαι· καὶ τότε ἀναβοήσετε.",
+        "VUL": "Præceperat autem Josue populo, dicens : Non clamabitis, nec audietur vox vestra, neque ullus sermo ex ore vestro egredietur, donec veniat dies in quo dicam vobis : Clamate, et vociferamini.",
+        "SYN": "Таким образом ковчег [завета] Господня пошел вокруг города и обошел однажды; и пришли в стан и ночевали в стане.",
+        "NEO": "Josué avait donné cet ordre au peuple : « Vous ne crierez point, vous ne ferez pas entendre votre voix, et il ne sortira pas une parole de votre bouche, jusqu’au jour où je vous dirai : Criez ! Alors vous pousserez des cris ! »",
+        "NAB": "But the people had been commanded by Joshua not to shout or make any noise or outcry until he gave the word: only then were they to shout.",
+        "VAT_ES": "Pero Josué dio esta orden al pueblo: «No lancen ningún grito de guerra ni dejen oír sus voces; que no salga de la boca de ustedes ninguna palabra, hasta que yo les diga: «&iexcl;Griten!». Sólo entonces gritarán».",
+        "CEI": "Al popolo Giosuè aveva ordinato: \"Non urlate, non fate neppur sentire la voce e non una parola esca dalla vostra bocca finché vi dirò: Lanciate il grido di guerra, allora griderete\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יַּסֵּ֤ב אֲרוֹן יְהוָה֙ אֶת הָ/עִ֔יר הַקֵּ֖ף פַּ֣עַם אֶחָ֑ת וַ/יָּבֹ֨אוּ֙ הַֽ/מַּחֲנֶ֔ה וַ/יָּלִ֖ינוּ בַּֽ/מַּחֲנֶֽה׃",
+        "LXX": "καὶ περιελθοῦσα ἡ κιβωτὸς τῆς διαθήκης τοῦ θεοῦ εὐθέως ἀπῆλθεν εἰς τὴν παρεμβολήν, καὶ ἐκοιμήθη ἐκεῖ.",
+        "VUL": "Circuivit ergo arca Domini civitatem semel per diem, et reversa in castra mansit ibi.",
+        "SYN": "[На другой день] Иисус встал рано поутру, и священники понесли ковчег [завета] Господня;",
+        "NEO": "L’arche de \\+w Yahweh|strong=\"H3068\"\\+w** s’avança autour de la ville, et en fit une fois le tour ; puis on rentra dans le camp, où l’on passa la nuit.",
+        "NAB": "So he had the ark of the LORD circle the city, going once around it, after which they returned to camp for the night.",
+        "VAT_ES": "Así hizo que el Arca del Señor diera una vuelta alrededor de la ciudad, formando un círculo en torno a ella. Luego volvieron otra vez al campamento, y allí pasaron la noche.",
+        "CEI": "L'arca del Signore girò intorno alla città facendo il circuito una volta, poi tornarono nell'accampamento e passarono la notte nell'accampamento."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יַּשְׁכֵּ֥ם יְהוֹשֻׁ֖עַ בַּ/בֹּ֑קֶר וַ/יִּשְׂא֥וּ הַ/כֹּהֲנִ֖ים אֶת אֲר֥וֹן יְהוָֽה׃",
+        "LXX": "Καὶ τῇ ἡμέρᾳ τῇ δευτέρᾳ ἀνέστη Ἰησοῦς τὸ πρωί, καί ἦραν οἱ ἱερεῖς τὴν κιβωτὸν τῆς διαθήκης Κυρίου,",
+        "VUL": "Igitur Josue de nocte consurgente, tulerunt sacerdotes arcam Domini,",
+        "SYN": "и семь священников, несших семь труб юбилейных пред ковчегом Господним, шли и трубили трубами; вооруженные же шли впереди их, а идущие позади следовали за ковчегом [завета] Господня и идучи трубили трубами.",
+        "NEO": "Josué se leva le lendemain, et les prêtres portaient l’arche de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Early the next morning, Joshua had the priests take up the ark of the LORD.",
+        "VAT_ES": "A la mañana siguiente, Josué se levantó de madrugada y los sacerdotes tomaron el Arca del Señor.",
+        "CEI": "Di buon mattino Giosuè si alzò e i sacerdoti portarono l'arca del Signore;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/שִׁבְעָ֣ה הַ/כֹּהֲנִ֡ים נֹשְׂאִים֩ שִׁבְעָ֨ה שׁוֹפְר֜וֹת הַ/יֹּבְלִ֗ים לִ/פְנֵי֙ אֲר֣וֹן יְהוָ֔ה הֹלְכִ֣ים הָל֔וֹךְ וְ/תָקְע֖וּ בַּ/שּׁוֹפָר֑וֹת וְ/הֶ/חָלוּץ֙ הֹלֵ֣ךְ לִ/פְנֵי/הֶ֔ם וְ/הַֽ/מְאַסֵּ֗ף הֹלֵךְ֙ אַֽחֲרֵי֙ אֲר֣וֹן יְהוָ֔ה הולך הָל֖וֹךְ וְ/תָק֥וֹעַ בַּ/שּׁוֹפָרֽוֹת׃",
+        "LXX": "καὶ οἱ ἑπτὰ ἱερεῖς οἱ φέροντες τὰς σάλπιγγας τὰς ἑπτὰ προεπορεύοντο ἐναντίον Κυρίου. καὶ μετὰ ταῦτα εἰσεπορεύοντο οἱ μάχιμοι, καὶ ὁ λοιπὸς ὄχλος ὄπισθε τῆς κιβωτοῦ τῆς διαθήκης Κυρίου· καὶ οἱ ἱερεῖς ἐσάλπισαν ταῖς σάλπιγξι καὶ ὁ λοιπὸς ὄχλος ἅπας περιεκύκλωσε τὴν πόλιν ἐγγύθεν,",
+        "VUL": "et septem ex eis septem buccinas, quarum in jubilæo usus est : præcedebantque arcam Domini ambulantes atque clangentes : et armatus populus ibat ante eos, vulgus autem reliquum sequebatur arcam, et buccinis personabat.",
+        "SYN": "Таким образом и на другой день обошли вокруг города однажды и возвратились в стан. И делали это шесть дней.",
+        "NEO": "Les sept prêtres qui portaient les sept trompettes retentissantes devant l’arche de \\+w Yahweh|strong=\"H3068\"\\+w** se mirent en marche et sonnèrent des trompettes. Les hommes armés marchaient devant eux, et l’arrière-garde suivait l’arche de \\+w Yahweh|strong=\"H3068\"\\+w** ; pendant la marche, on sonnait des trompettes.",
+        "NAB": "The seven priests bearing the ram's horns marched in front of the ark of the LORD, blowing their horns. Ahead of these marched the picked troops, while the rear guard followed the ark of the LORD, and the blowing of horns was kept up continually.",
+        "VAT_ES": "Los siete sacerdotes que llevaban las siete trompetas de cuerno delante del Arca del Señor, avanzaban sin dejar de tocar las trompetas; los guerreros marchaban delante de ellos, y la retaguardia iba detrás del Arca del Señor. En ningún momento se dejó de tocar las trompetas.",
+        "CEI": "i sette sacerdoti, che portavano le sette trombe di ariete davanti all'arca del Signore, avanzavano suonando le trombe; l'avanguardia li precedeva e la retroguardia seguiva l'arca del Signore; si marciava a suon di tromba."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יָּסֹ֨בּוּ אֶת הָ/עִ֜יר בַּ/יּ֤וֹם הַ/שֵּׁנִי֙ פַּ֣עַם אַחַ֔ת וַ/יָּשֻׁ֖בוּ הַֽ/מַּחֲנֶ֑ה כֹּ֥ה עָשׂ֖וּ שֵׁ֥שֶׁת יָמִֽים׃",
+        "LXX": "καὶ ἀπῆλθεν πάλιν εἰς τὴν παρεμβολήν. οὕτως ἐποίει ἐπὶ ἓξ ἡμέρας.",
+        "VUL": "Circuieruntque civitatem secundo die semel, et reversi sunt in castra. Sic fecerunt sex diebus.",
+        "SYN": "В седьмой день встали рано, при появлении зари, и обошли таким же образом вокруг города семь раз; только в этот день обошли вокруг города семь раз.",
+        "NEO": "Ils marchèrent, le second jour, une fois autour de la ville, et revinrent dans le camp. Ils firent de même pendant six jours.",
+        "NAB": "On this second day they again marched around the city once before returning to camp; and for six days in all they did the same.",
+        "VAT_ES": "Así dieron la vuelta alrededor de la ciudad el segundo día, y después regresaron al campamento. Esto mismo se hizo durante seis días.",
+        "CEI": "Girarono intorno alla città, il secondo giorno, una volta e tornarono poi all'accampamento. Così fecero per sei giorni."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י בַּ/יּ֣וֹם הַ/שְּׁבִיעִ֗י וַ/יַּשְׁכִּ֨מוּ֙ כַּ/עֲל֣וֹת הַ/שַּׁ֔חַר וַ/יָּסֹ֧בּוּ אֶת הָ/עִ֛יר כַּ/מִּשְׁפָּ֥ט הַ/זֶּ֖ה שֶׁ֣בַע פְּעָמִ֑ים רַ֚ק בַּ/יּ֣וֹם הַ/ה֔וּא סָבְב֥וּ אֶת הָ/עִ֖יר שֶׁ֥בַע פְּעָמִֽים׃",
+        "LXX": "καὶ τῇ ἡμέρᾳ τῇ ἑβδόμῃ ἀνέστησαν ὄρθρου, καὶ περιήλθοσαν τὴν πόλιν ἑξάκις·",
+        "VUL": "Die autem septimo, diluculo consurgentes, circuierunt urbem, sicut dispositum erat, septies.",
+        "SYN": "Когда в седьмой раз священники трубили трубами, Иисус сказал народу: воскликните, ибо Господь предал вам город!",
+        "NEO": "Le septième jour, ils se levèrent, comme montait l’aurore, et ils marchèrent de la même manière sept fois autour de la ville ; ce jour-là seul ils marchèrent sept fois autour de la ville.",
+        "NAB": "On the seventh day, beginning at daybreak, they marched around the city seven times in the same manner; on that day only did they march around the city seven times.",
+        "VAT_ES": "El séptimo día se levantaron al despuntar el alba y dieron siete vueltas alrededor de la ciudad, de la manera acostumbrada: sólo ese día dieron siete vueltas alrededor de la ciudad.",
+        "CEI": "Al settimo giorno essi si alzarono al sorgere dell'aurora e girarono intorno alla città in questo modo per sette volte; soltanto in quel giorno fecero sette volte il giro intorno alla città."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֙ בַּ/פַּ֣עַם הַ/שְּׁבִיעִ֔ית תָּקְע֥וּ הַ/כֹּהֲנִ֖ים בַּ/שּׁוֹפָר֑וֹת וַ/יֹּ֨אמֶר יְהוֹשֻׁ֤עַ אֶל הָ/עָם֙ הָרִ֔יעוּ כִּֽי נָתַ֧ן יְהוָ֛ה לָ/כֶ֖ם אֶת הָ/עִֽיר׃",
+        "LXX": "καὶ τῇ περιόδῳ τῇ ἑβδόμῃ ἐσάλπισαν οἱ ἱερεῖς, καὶ εἶπεν ὁ Ἰησοῦς τοῖς υἱοῖς Ἰσραήλ Κεκράξατε· παρέδωκεν γὰρ Κύριος ὑμῖν τὴν πόλιν.",
+        "VUL": "Cumque septimo circuitu clangerent buccinis sacerdotes, dixit Josue ad omnem Israël : Vociferamini : tradidit enim vobis Dominus civitatem.",
+        "SYN": "город будет под заклятием, и все, что в нем -- Господу [сил]; только Раав блудница пусть останется в живых, она и всякий, кто у нее в доме; потому что она укрыла посланных, которых мы посылали;",
+        "NEO": "A la septième fois, comme les prêtres sonnaient des trompettes, Josué dit au peuple : « Poussez des cris, car \\+w Yahweh|strong=\"H3068\"\\+w** vous a livré la ville.",
+        "NAB": "The seventh time around, the priests blew the horns and Joshua said to the people, \"Now shout, for the LORD has given you the city",
+        "VAT_ES": "Al dar la séptima vuelta, los sacerdotes tocaron con más fuerza las trompetas, y Josué dijo al pueblo: «Lancen el grito de guerra, porque el Señor les entrega la ciudad.",
+        "CEI": "Alla settima volta i sacerdoti diedero fiato alle trombe e Giosuè disse al popolo: \"Lanciate il grido di guerra perché il Signore mette in vostro potere la città."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/הָיְתָ֨ה הָ/עִ֥יר חֵ֛רֶם הִ֥יא וְ/כָל אֲשֶׁר בָּ֖/הּ לַֽ/יהוָ֑ה רַק֩ רָחָ֨ב הַ/זּוֹנָ֜ה תִּֽחְיֶ֗ה הִ֚יא וְ/כָל אֲשֶׁ֣ר אִתָּ֣/הּ בַּ/בַּ֔יִת כִּ֣י הֶחְבְּאַ֔תָה אֶת הַ/מַּלְאָכִ֖ים אֲשֶׁ֥ר שָׁלָֽחְנוּ׃",
+        "LXX": "καὶ ἔσται ἡ πόλις ἀνάθεμα, αὐτὴ καὶ πάντα ὅσα ἐστὶν ἐν αὐτῇ, Κυρίῳ σαβαώθ. πλὴν Ῥαὰβ τὴν πόρνην περιποιήσασθε, αὐτὴν καὶ ὅσα ἐστὶν ἐστὶν ἐν τῷ οἴκῳ αὐτῆς.",
+        "VUL": "Sitque civitas hæc anathema, et omnia quæ in ea sunt, Domino : sola Rahab meretrix vivat, cum universis qui cum ea in domo sunt : abscondit enim nuntios quos direximus.",
+        "SYN": "но вы берегитесь заклятого, чтоб и самим не подвергнуться заклятию, если возьмете что-нибудь из заклятого, и чтобы на стан [сынов] Израилевых не навести заклятия и не сделать ему беды;",
+        "NEO": "La ville sera dévouée par anathème à \\+w Yahweh|strong=\"H3068\"\\+w**, elle et tout ce qui s’y trouve ; seule Rahab, la courtisane, vivra, elle et tous ceux qui seront avec elle dans la maison, parce qu’elle a caché les messagers que nous avions envoyés.",
+        "NAB": "and everything in it. It is under the LORD'S ban. Only the harlot Rahab and all who are in the house with her are to be spared, because she hid the messengers we sent.",
+        "VAT_ES": "Ustedes consagrarán al Señor la ciudad con todo lo que hay en ella, exterminándola por completo. Quedarán con vida solamente Rajab, la prostituta, y todos los que estén con ella en su casa, porque ella ocultó a los emisarios que nosotros habíamos enviado.",
+        "CEI": "La città con quanto vi è in essa sarà votata allo sterminio per il Signore; soltanto Raab, la prostituta, vivrà e chiunque è con lei nella casa, perché ha nascosto i messaggeri che noi avevamo inviati."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/רַק אַתֶּם֙ שִׁמְר֣וּ מִן הַ/חֵ֔רֶם פֶּֽן תַּחֲרִ֖ימוּ וּ/לְקַחְתֶּ֣ם מִן הַ/חֵ֑רֶם וְ/שַׂמְתֶּ֞ם אֶת מַחֲנֵ֤ה יִשְׂרָאֵל֙ לְ/חֵ֔רֶם וַ/עֲכַרְתֶּ֖ם אוֹתֽ/וֹ׃",
+        "LXX": "ἀλλὰ ὑμεῖς φυλάξασθε σφόδρα ἀπὸ τοῦ ἀναθέρατος, μή ποτε ἐνθυμηθέντες ὑμεῖς αὐτοὶ λάβητε ἀπὸ τοῦ ἀναθέματος καὶ ποιήσητε τὴν παρεμβολὴν τῶν υἱῶν Ἰσραὴλ ἀνάθεμα, καὶ ἐκτρίψητε ἡμᾶς.",
+        "VUL": "Vos autem cavete ne de his, quæ præcepta sunt, quippiam contingatis, et sitis prævaricationis rei, et omnia castra Israël sub peccato sint atque turbentur.",
+        "SYN": "и все серебро и золото, и сосуды медные и железные да будут святынею Господу и войдут в сокровищницу Господню.",
+        "NEO": "Mais gardez-vous de ce qui est dévoué par anathème, de peur que, en prenant quelque chose de ce que vous avez dévoué par anathème, vous ne rendiez le camp d’Israël anathème, et vous n’y mettiez le trouble.",
+        "NAB": "But be careful not to take, in your greed, anything that is under the ban; else you will bring upon the camp of Israel this ban and the misery of it.",
+        "VAT_ES": "En cuanto a ustedes, tengan mucho cuidado con lo que está consagrado al exterminio, no sea que, llevados por la codicia, se adueñen de alguna cosa prohibida. Porque entonces pondrían en entredicho al campamento de Israel y le atraerían una desgracia.",
+        "CEI": "Solo guardatevi da ciò che è votato allo sterminio, perché, mentre eseguite la distruzione, non prendiate qualche cosa di ciò che è votato allo sterminio e rendiate così votato allo sterminio l'accampamento di Israele e gli portiate disgrazia."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/כֹ֣ל כֶּ֣סֶף וְ/זָהָ֗ב וּ/כְלֵ֤י נְחֹ֨שֶׁת֙ וּ/בַרְזֶ֔ל קֹ֥דֶשׁ ה֖וּא לַֽ/יהוָ֑ה אוֹצַ֥ר יְהוָ֖ה יָבֽוֹא׃",
+        "LXX": "καὶ πᾶν ἀργύριον ἢ χρυσίον ἢ χαλκὸς ἢ σίδηρος ἅγιον ἔσται τῷ κυρίῳ· εἰς θησαυρὸν Κυρίου εἰσενεχθήσεται.",
+        "VUL": "Quidquid autem auri et argenti fuerit, et vasorum æneorum ac ferri, Domino consecretur, repositum in thesauris ejus.",
+        "SYN": "Народ воскликнул, и затрубили трубами. Как скоро услышал народ голос трубы, воскликнул народ [весь вместе] громким [и сильным] голосом, и обрушилась [вся] стена [города] до своего основания, и [весь] народ пошел в город, каждый с своей стороны, и взяли город.",
+        "NEO": "Tout l’argent et tout l’or, tous les objets d’airain et de fer seront consacrés à \\+w Yahweh|strong=\"H3068\"\\+w** et entreront dans le trésor de \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "All silver and gold, and the articles of bronze or iron, are sacred to the LORD. They shall be put in the treasury of the LORD.\"",
+        "VAT_ES": "Todo el oro, la plata y los objetos de bronce y de hierro serán consagrados al Señor y pasarán a formar parte de su tesoro».",
+        "CEI": "Tutto l'argento, l'oro e gli oggetti di rame e di ferro sono cosa sacra per il Signore, devono entrare nel tesoro del Signore\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣רַע הָ/עָ֔ם וַֽ/יִּתְקְע֖וּ בַּ/שֹּֽׁפָר֑וֹת וַ/יְהִי֩ כִ/שְׁמֹ֨עַ הָ/עָ֜ם אֶת ק֣וֹל הַ/שּׁוֹפָ֗ר וַ/יָּרִ֤יעוּ הָ/עָם֙ תְּרוּעָ֣ה גְדוֹלָ֔ה וַ/תִּפֹּ֨ל הַֽ/חוֹמָ֜ה תַּחְתֶּ֗י/הָ וַ/יַּ֨עַל הָ/עָ֤ם הָ/עִ֨ירָ/ה֙ אִ֣ישׁ נֶגְדּ֔/וֹ וַֽ/יִּלְכְּד֖וּ אֶת הָ/עִֽיר׃",
+        "LXX": "καὶ ἐσάλπισαν ταῖς σάλπιγξιν οἱ ἱερεῖς· ὡς δὲ ἤκουσεν ὁ λαὸς τῶν σαλπίγγων, ἠλάλαξεν πᾶς ὁ λαὸς ἅμα ἀλαλαγμῷ μεγάλῳ καὶ ἰσχυρῷ. καὶ ἔπεσεν ἅπαν τὸ τεῖχος κύκλῳ, καὶ ἀνέβη πᾶς ὁ λαὸς εἰς τὴν πόλιν.",
+        "VUL": "Igitur omni populo vociferante, et clangentibus tubis, postquam in aures multitudinis vox sonitusque increpuit, muri illico corruerunt : et ascendit unusquisque per locum qui contra se erat : ceperuntque civitatem,",
+        "SYN": "И предали заклятию всё, что в городе, и мужей и жен, и молодых и старых, и волов, и овец, и ослов, [всё] _истребили_ мечом.",
+        "NEO": "Le peuple poussa des cris, et les prêtres sonnèrent des trompettes. Et lorsque le peuple entendit le son de la trompette, il poussa une grande clameur, et la muraille s’écroula, et le peuple monta dans la ville, chacun devant soi. S’étant emparés de la ville,",
+        "NAB": "As the horns blew, the people began to shout. When they heard the signal horn, they raised a tremendous shout. The wall collapsed, and the people stormed the city in a frontal attack and took it.",
+        "VAT_ES": "Entonces el pueblo lanzó un fuerte grito y se tocaron las trompetas, el pueblo prorrumpió en un griterío ensordecedor, y el muro se desplomó sobre sí mismo. En seguida el pueblo acometió contra la ciudad, cada uno contra lo que tenía adelante, y la tomaron.",
+        "CEI": "Allora il popolo lanciò il grido di guerra e si suonarono le trombe. Come il popolo udì il suono della tromba ed ebbe lanciato un grande grido di guerra, le mura della città crollarono; il popolo allora salì verso la città, ciascuno diritto davanti a sé, e occuparono la città."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַֽ/יַּחֲרִ֨ימוּ֙ אֶת כָּל אֲשֶׁ֣ר בָּ/עִ֔יר מֵ/אִישׁ֙ וְ/עַד אִשָּׁ֔ה מִ/נַּ֖עַר וְ/עַד זָקֵ֑ן וְ/עַ֨ד שׁ֥וֹר וָ/שֶׂ֛ה וַ/חֲמ֖וֹר לְ/פִי חָֽרֶב׃",
+        "LXX": "καὶ ἀνεθεμάτισεν αὐτὴν Ἰησοῦς καὶ ὅσα ἦν ἐν τῇ πόλει, ἀπὸ ἀνδρὸς καὶ ἕως γυναικός, ἀπὸ νεανίσκου καὶ ἕως πρεσβύτου, καὶ ἕως μόσχου καὶ ὑποζυγίου, ἐν στόματι ῥομφαίας.",
+        "VUL": "et interfecerunt omnia quæ erant in ea, a viro usque ad mulierem, ab infante usque ad senem. Boves quoque et oves et asinos in ore gladii percusserunt.",
+        "SYN": "А двум юношам, высматривавшим землю, Иисус сказал: пойдите в дом оной блудницы и выведите оттуда ее и всех, которые у нее, так как вы поклялись ей.",
+        "NEO": "ils livrèrent à l’anathème tout ce qui se trouvait dans la ville, hommes et femmes, enfants et vieillards, même les bœufs, les brebis et les ânes, par le tranchant de l’épée.",
+        "NAB": "They observed the ban by putting to the sword all living creatures in the city: men and women, young and old, as well as oxen, sheep and asses.",
+        "VAT_ES": "Luego consagraron al exterminio todo lo que había en ella, pasando al filo de la espada a hombres y mujeres, niños y ancianos, vacas, ovejas y asnos.",
+        "CEI": "Votarono poi allo sterminio, passando a fil di spada, ogni essere che era nella città, dall'uomo alla donna, dal giovane al vecchio, e perfino il bue, l'ariete e l'asino."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/לִ/שְׁנַ֨יִם הָ/אֲנָשִׁ֜ים הַֽ/מְרַגְּלִ֤ים אֶת הָ/אָ֨רֶץ֙ אָמַ֣ר יְהוֹשֻׁ֔עַ בֹּ֖אוּ בֵּית הָ/אִשָּׁ֣ה הַ/זּוֹנָ֑ה וְ/הוֹצִ֨יאוּ מִ/שָּׁ֤ם אֶת הָֽ/אִשָּׁה֙ וְ/אֶת כָּל אֲשֶׁר לָ֔/הּ כַּ/אֲשֶׁ֥ר נִשְׁבַּעְתֶּ֖ם לָֽ/הּ׃",
+        "LXX": "Καὶ τοῖς δυσὶν νεανίσκοις τοῖς κατασκοπεύσασιν εἶπεν Ἰησοῦς Εἰσέλθατε εἰς τὴν οἰκίαν τῆς γυναικός, καὶ ἐξαγάγετε αὐτὴν ἐκεῖθεν καὶ ὅσα ἐστὶν αὐτῇ.",
+        "VUL": "Duobus autem viris, qui exploratores missi fuerant, dixit Josue : Ingredimini domum mulieris meretricis, et producite eam, et omnia quæ illius sunt, sicut illi juramento firmastis.",
+        "SYN": "И пошли юноши, высматривавшие [город, в дом женщины] и вывели Раав [блудницу] и отца ее и мать ее, и братьев ее, и всех, которые у нее _были,_ и всех родственников ее вывели, и поставили их вне стана Израильского.",
+        "NEO": "Josué dit aux deux hommes qui avaient exploré le pays : « Entrez dans la maison de la courtisane, et faites-en sortir cette femme avec tous ceux qui lui appartiennent, comme vous le lui avez juré. »",
+        "NAB": "Joshua directed the two men who had spied out the land, \"Go into the harlot's house and bring out the woman with all her kin, as you swore to her you would do.\"",
+        "VAT_ES": "Josué dijo a los dos hombres que habían explorado el país: «Entren en la casa de la prostituta y hagan salir a esa mujer con todo lo que le pertenece, como se lo han jurado».",
+        "CEI": "Ai due uomini che avevano esplorato il paese, Giosuè disse: \"Entrate nella casa della prostituta, conducete fuori lei e quanto le appartiene, come le avete giurato\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֜אוּ הַ/נְּעָרִ֣ים הַֽ/מְרַגְּלִ֗ים וַ/יֹּצִ֡יאוּ אֶת רָ֠חָב וְ/אֶת אָבִ֨י/הָ וְ/אֶת אִמָּ֤/הּ וְ/אֶת אַחֶ֨י/הָ֙ וְ/אֶת כָּל אֲשֶׁר לָ֔/הּ וְ/אֵ֥ת כָּל מִשְׁפְּחוֹתֶ֖י/הָ הוֹצִ֑יאוּ וַ/יַּ֨נִּיח֔וּ/ם מִ/ח֖וּץ לְ/מַחֲנֵ֥ה יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ εἰσῆλθον οἱ δύο νεανίσκοι οἱ κατασκοπεύσαντες τὴν πόλιν εἰς τὴν οἰκίαν τῆς γυναικός, καὶ ἐξηγάγοσαν Ῥαὰβ τὴν πόρνην καὶ τὸν πατέρα αὐτῆς καὶ τὴν μητέρα αὐτῆς καὶ τοὺς ἀδελφοὺς αὐτῆς ⸆ καὶ τὴν συγγενίαν αὐτῆς καὶ πάντα ὅσα ἦν αὐτῆς, καὶ κατέστησαν αὐτὴν ἔξω τῆς παρεμβολῆς Ἰσραήλ.",
+        "VUL": "Ingressique juvenes eduxerunt Rahab, et parentes ejus, fratres quoque, et cunctam supellectilem ac cognationem illius, et extra castra Israël manere fecerunt.",
+        "SYN": "А город и все, что в нем, сожгли огнем; только серебро и золото и сосуды медные и железные отдали, [чтобы внести Господу] в сокровищницу дома Господня.",
+        "NEO": "Les jeunes gens, les espions, entrèrent et firent sortir Rahab, son père, sa mère, ses frères et tous ceux qui lui appartenaient ; ils firent sortir tous les gens de sa famille, et ils les mirent hors du camp d’Israël.",
+        "NAB": "The spies entered and brought out Rahab, with her father, mother, brothers, and all her kin. Her entire family they led forth and placed them outside the camp of Israel.",
+        "VAT_ES": "Aquellos jóvenes espías fueron e hicieron salir a Rajab, a su padre, a su madre, a sus hermanos y todo lo que le pertenecía. También hicieron salir a sus otros parientes, y los instalaron fuera del campamento de Israel.",
+        "CEI": "Entrarono i giovani esploratori e condussero fuori Raab, suo padre, sua madre, i suoi fratelli e tutto quanto le apparteneva; fecero uscire tutta la sua famiglia e li stabilirono fuori dell'accampamento di Israele."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/הָ/עִ֛יר שָׂרְפ֥וּ בָ/אֵ֖שׁ וְ/כָל אֲשֶׁר בָּ֑/הּ רַ֣ק הַ/כֶּ֣סֶף וְ/הַ/זָּהָ֗ב וּ/כְלֵ֤י הַ/נְּחֹ֨שֶׁת֙ וְ/הַ/בַּרְזֶ֔ל נָתְנ֖וּ אוֹצַ֥ר בֵּית יְהוָֽה׃",
+        "LXX": "καὶ ἡ πόλις ἐνεπρήσθη ἐνπυρισμῷ σὺν πᾶσιν τοῖς ἐν αὐτῇ. πλὴν ἀργυρίου καὶ χρυσίου καὶ χαλκοῦ καὶ σιδήρου· ἔδωκαν εἰς θησαυρὸν Κυρίου εἰσενεχθῆναι.",
+        "VUL": "Urbem autem, et omnia quæ erant in ea, succenderunt, absque auro et argento, et vasis æneis, ac ferro, quæ in ærarium Domini consecrarunt.",
+        "SYN": "Раав же блудницу и дом отца ее и всех, которые у нее _были,_ Иисус оставил в живых, и она живет среди Израиля до сего дня, потому что она укрыла посланных, которых посылал Иисус для высмотрения Иерихона.",
+        "NEO": "Les enfants d’Israël brûlèrent la ville et tout ce qui s’y trouvait, sauf l’argent et l’or, et les objets d’airain et de fer, qu’ils déposèrent dans le trésor de la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The city itself they burned with all that was in it, except the silver, gold, and articles of bronze and iron, which were placed in the treasury of the house of the LORD.",
+        "VAT_ES": "Después incendiaron la ciudad y todo lo que había en ella, salvando únicamente la plata, el oro y los objetos de bronce y de hierro, que fueron depositados en el tesoro de la Casa del Señor.",
+        "CEI": "Incendiarono poi la città e quanto vi era, soltanto l'argento, l'oro e gli oggetti di rame e di ferro deposero nel tesoro della casa del Signore."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְֽ/אֶת רָחָ֣ב הַ֠/זּוֹנָה וְ/אֶת בֵּ֨ית אָבִ֤י/הָ וְ/אֶת כָּל אֲשֶׁר לָ/הּ֙ הֶחֱיָ֣ה יְהוֹשֻׁ֔עַ וַ/תֵּ֨שֶׁב֙ בְּ/קֶ֣רֶב יִשְׂרָאֵ֔ל עַ֖ד הַ/יּ֣וֹם הַ/זֶּ֑ה כִּ֤י הֶחְבִּ֨יאָה֙ אֶת הַ/מַּלְאָכִ֔ים אֲשֶׁר שָׁלַ֥ח יְהוֹשֻׁ֖עַ לְ/רַגֵּ֥ל אֶת יְרִיחֽוֹ׃",
+        "LXX": "καὶ Ῥαὰβ τὴν πόρνην καὶ πάντα τὸν οἶκον τὸν πατρικὸν αὐτῆς ἐζώγρησεν Ἰησοῦς καὶ κατῴκησεν ἐν τῷ Ἰσραὴλ ἕως τῆς σήμερον ἡμέρας, διότι ἔκρυψεν τοὺς κατασκοπεύσαντας οὓς ἀπέστειλεν Ἰησοῦς κατασκοπεῦσαι τὴν Ἰερειχώ.",
+        "VUL": "Rahab vero meretricem, et domum patris ejus, et omnia quæ habebat, fecit Josue vivere, et habitaverunt in medio Israël, usque in præsentem diem : eo quod absconderit nuntios, quos miserat ut explorarent Jericho. In tempore illo, imprecatus est Josue, dicens :",
+        "SYN": "В то время Иисус поклялся и сказал: проклят пред Господом тот, кто восставит и построит город сей Иерихон; на первенце своем он положит основание его и на младшем своем поставит врата его. [Так и сделал Азан, родом из Вефиля: он на Авироне, первенце своем, основал его и на меньшем, спасенном, поставил ворота его.]",
+        "NEO": "Josué laissa la vie à Rahab, la courtisane, à la maison de son père, et à tous ceux qui lui appartenaient ; et elle a habité au milieu d’Israël jusqu’à ce jour, parce qu’elle avait caché les messagers envoyés par Josué pour explorer Jéricho.",
+        "NAB": "Because Rahab the harlot had hidden the messengers whom Joshua had sent to reconnoiter Jericho, Joshua spared her with her family and all her kin, who continue in the midst of Israel to this day.",
+        "VAT_ES": "Josué dejó con vida a Rajab, la prostituta, a su familia y a todo lo que le pertenecía, y ella habitó en medio de Israel hasta el día de hoy, por haber ocultado a los emisarios que Josué había enviado para explorar Jericó.",
+        "CEI": "Giosuè però lasciò in vita Raab, la prostituta, la casa di suo padre e quanto le apparteneva, ed essa abita in mezzo ad Israele fino ad oggi, perché aveva nascosto gli esploratori che Giosuè aveva inviato a Gerico."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יַּשְׁבַּ֣ע יְהוֹשֻׁ֔עַ בָּ/עֵ֥ת הַ/הִ֖יא לֵ/אמֹ֑ר אָר֨וּר הָ/אִ֜ישׁ לִ/פְנֵ֣י יְהוָ֗ה אֲשֶׁ֤ר יָקוּם֙ וּ/בָנָ֞ה אֶת הָ/עִ֤יר הַ/זֹּאת֙ אֶת יְרִיח֔וֹ בִּ/בְכֹר֣/וֹ יְיַסְּדֶ֔/נָּה וּ/בִ/צְעִיר֖/וֹ יַצִּ֥יב דְּלָתֶֽי/הָ׃",
+        "LXX": "Καὶ ὥρκισεν Ἰησοῦς ἐν τῇ ἡμέρᾳ ἐκείνῃ ἐναντίον Κυρίου λέγων Ἐπικατάρατος ὁ ἄνθρωπος ὃς οἰκοδομήσει τὴν πόλιν ἐκείνην. ἐν τῷ πρωτοτόκῳ αὐτοῦ θεμελιώσει αὐτήν, καὶ ἐν τῷ ἐλαχίστῳ αὐτοῦ ἐπιστήσει τὰς πύλας αὐτῆς. καὶ οὕτως ἐποίησεν Ὁζὰν ὁ ἐκ Βαιθήλ· ἐν τῷ Ἀβειρὼν τῷ πρωτοτόκῳ ἐθεμελίωσεν αὐτήν, καὶ ἐν τῷ ἐλαχίστῳ διασωθέντι ἐπέστησεν τὰς πύλας αὐτῆς.",
+        "VUL": "Maledictus vir coram Domino, qui suscitaverit et ædificaverit civitatem Jericho. In primogenito suo fundamenta illius jaciat, et in novissimo liberorum ponat portas ejus.",
+        "SYN": "И Господь был с Иисусом, и слава его носилась по всей земле.",
+        "NEO": "En ce temps-là Josué jura, en disant : « Maudit soit devant \\+w Yahweh|strong=\"H3068\"\\+w** l’homme qui se lèvera et rebâtira cette ville de Jéricho ! Au prix de son premier-né il en posera les fondements ; au prix de son plus jeune fils il en relèvera les portes. »",
+        "NAB": "On that occasion Joshua imposed the oath: Cursed before the LORD be the man who attempts to rebuild this city, Jericho. He shall lose his first-born when he lays its foundation, and he shall lose his youngest son when he sets up its gates.",
+        "VAT_ES": "En aquel tiempo Josué hizo pronunciar el siguiente juramento delante del Señor: «&iexcl;Maldito el hombre que intente reconstruir esta ciudad de Jericó! &iexcl;Pondrá los cimientos sobre su primogénito, y colocará las puertas sobre su hijo menor!»",
+        "CEI": "In quella circostanza Giosuè fece giurare: \"Maledetto davanti al Signore l'uomo che si alzerà e ricostruirà questa città di Gerico! Sul suo primogenito ne getterà le fondamenta e sul figlio minore ne erigerà le porte!\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י יְהוָ֖ה אֶת יְהוֹשֻׁ֑עַ וַ/יְהִ֥י שָׁמְע֖/וֹ בְּ/כָל הָ/אָֽרֶץ׃",
+        "LXX": "Καὶ ἦν Κύριος μετὰ Ἰησοῦ, καὶ ἦν τὸ ὄνομα αὐτοῦ κατὰ πᾶσαν τὴν γῆν.",
+        "VUL": "Fuit ergo Dominus cum Josue, et nomen ejus vulgatum est in omni terra.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** fut avec Josué, et sa renommée se répandit dans tout le pays.",
+        "NAB": "Thus the LORD was with Joshua so that his fame spread throughout the land.",
+        "VAT_ES": "El Señor acompaño a Josué, y su fama se extendió por toda la tierra.",
+        "CEI": "Il Signore fu con Giosuè, la cui fama si sparse in tutto il paese."
+      }
+    }
+  }
+}

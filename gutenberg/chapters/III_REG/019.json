@@ -1,0 +1,393 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "III_REG_019",
+  "book_key": "III_REG",
+  "sequence": 19,
+  "chapter_in": {
+    "MT": 19,
+    "VUL": 19,
+    "LXX": 19
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יַּגֵּ֤ד אַחְאָב֙ לְ/אִיזֶ֔בֶל אֵ֛ת כָּל אֲשֶׁ֥ר עָשָׂ֖ה אֵלִיָּ֑הוּ וְ/אֵ֨ת כָּל אֲשֶׁ֥ר הָרַ֛ג אֶת כָּל הַ/נְּבִיאִ֖ים בֶּ/חָֽרֶב׃",
+        "LXX": "Καὶ ἀνήγγειλεν Ἀχαὰβ τῇ Ἰεζάβελ γυναικὶ αὐτοῦ πάντα ἃ ἐποίησεν Ἠλειοὺ καὶ ὡς ἀπέκτεινεν τοὺς προφήτας ἐν ῥομφαίᾳ.",
+        "VUL": "Nuntiavit autem Achab Jezabel omnia quæ fecerat Elias, et quomodo occidisset universos prophetas gladio.",
+        "SYN": "И пересказал Ахав Иезавели всё, что сделал Илия, и то, что он убил всех пророков мечом.",
+        "NEO": "Achab rapporta à Jézabel tout ce qu’Elie avait fait, et comment il avait tué par l’épée tous les prophètes.",
+        "NAB": "Ahab told Jezebel all that Elijah had done - that he had put all the prophets to the sword.",
+        "VAT_ES": "Ajab contó a Jezabel todo lo que había hecho Elías y cómo había pasado a todos los profetas al filo de la espada.",
+        "CEI": "Acab riferì a Gezabele ciò che Elia aveva fatto e che aveva ucciso di spada tutti i profeti."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/תִּשְׁלַ֤ח אִיזֶ֨בֶל֙ מַלְאָ֔ךְ אֶל אֵלִיָּ֖הוּ לֵ/אמֹ֑ר כֹּֽה יַעֲשׂ֤וּ/ן אֱלֹהִים֙ וְ/כֹ֣ה יוֹסִפ֔וּ/ן כִּֽי כָ/עֵ֤ת מָחָר֙ אָשִׂ֣ים אֶֽת נַפְשְׁ/ךָ֔ כְּ/נֶ֖פֶשׁ אַחַ֥ד מֵ/הֶֽם׃",
+        "LXX": "καὶ ἀπέστειλεν Ἰεζάβελ πρὸς Ἠλειοὺ καὶ εἶπεν Εἰ σὺ εἶ Ἠλειοὺ καὶ ἐγὼ Ἰεζάβελ, τάδε ποιήσαι μοι ὁ θεὸς καὶ τάδε προσθείη, ὅτι ταύτην τὴν ὥραν αὔριον θήσομαι τὴν ψυχήν σου καθὼς ψυχὴν ἑνὸς ἐξ αὐτῶν.",
+        "VUL": "Misitque Jezabel nuntium ad Eliam, dicens : Hæc mihi faciant dii, et hæc addant, nisi hac hora cras posuero animam tuam sicut animam unius ex illis.",
+        "SYN": "И послала Иезавель посланца к Илии сказать: [если ты Илия, а я Иезавель, то] пусть то и то сделают мне боги, и еще больше сделают, если я завтра к этому времени не сделаю с твоею душею того, что _сделано_ с душею каждого из них.",
+        "NEO": "Et Jézabel envoya un messager à Elie pour lui dire : « Que les dieux me traitent dans toute leur rigueur, si demain à cette heure je n’ai pas fait de ta vie comme tu as fait de la vie de chacun d’eux ? »",
+        "NAB": "Jezebel then sent a messenger to Elijah and said, \"May the gods do thus and so to me if by this time tomorrow I have not done with your life what was done to each of them.\"",
+        "VAT_ES": "Jezabel envió entonces un mensajero a Elías para decirle: «Que los dioses me castiguen si mañana, a la misma hora, yo no hago con tu vida lo que tú hiciste con la de ellos».",
+        "CEI": "Gezabele inviò un messaggero a Elia per dirgli: \"Gli dei mi facciano questo e anche di peggio, se domani a quest'ora non avrò reso te come uno di quelli\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יַּ֗רְא וַ/יָּ֨קָם֙ וַ/יֵּ֣לֶךְ אֶל נַפְשׁ֔/וֹ וַ/יָּבֹ֕א בְּאֵ֥ר שֶׁ֖בַע אֲשֶׁ֣ר לִֽ/יהוּדָ֑ה וַ/יַּנַּ֥ח אֶֽת נַעֲר֖/וֹ שָֽׁם׃",
+        "LXX": "καὶ ἐφοβήθη Ἠλειού, καὶ ἀνέστη καὶ ἀπῆλθεν κατὰ τὴν ψυχὴν ἑαυτοῦ, καὶ ἔρχεται εἰς Βηρσάβεε γῆν Ἰούδα, καὶ ἀφῆκεν τὸ παιδάριον αὐτοῦ ἐκεῖ.",
+        "VUL": "Timuit ergo Elias, et surgens abiit quocumque eum ferebat voluntas : venitque in Bersabee Juda, et dimisit ibi puerum suum,",
+        "SYN": "Увидев это, он встал и пошел, чтобы спасти жизнь свою, и пришел в Вирсавию, которая в Иудее, и оставил отрока своего там.",
+        "NEO": "Elie, voyant cela, se leva et partit pour sauver sa vie. Il arriva à Bersabée, qui appartient à Juda, et y laissa son serviteur.",
+        "NAB": "Elijah was afraid and fled for his life, going to Beer-sheba of Judah. He left his servant there",
+        "VAT_ES": "El tuvo miedo, y partió en seguida para salvar su vida. Llegó a Berseba de Judá y dejó allí a su sirviente.",
+        "CEI": "Elia, impaurito, si alzò e se ne andò per salvarsi. Giunse a Bersabea di Giuda. Là fece sostare il suo ragazzo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/הֽוּא הָלַ֤ךְ בַּ/מִּדְבָּר֙ דֶּ֣רֶךְ י֔וֹם וַ/יָּבֹ֕א וַ/יֵּ֕שֶׁב תַּ֖חַת רֹ֣תֶם אחת אֶחָ֑ד וַ/יִּשְׁאַ֤ל אֶת נַפְשׁ/וֹ֙ לָ/מ֔וּת וַ/יֹּ֣אמֶר רַ֗ב עַתָּ֤ה יְהוָה֙ קַ֣ח נַפְשִׁ֔/י כִּֽי לֹא ט֥וֹב אָנֹכִ֖י מֵ/אֲבֹתָֽ/י׃",
+        "LXX": "καὶ αὐτὸς ἐπορεύθη ἐν τῇ ἐρήμῳ ὁδὸν ἡμέρας, καὶ ἦλθεν καὶ ἐκάθισεν ὑποκάτω ῥαθμέν· καὶ ᾐτήσατο τὴν ψυχὴν αὐτοῦ ἀποθανεῖν καὶ εἶπεν Ἰκανούσθω νῦν, λάβε δὴ τὴν ψυχήν μου ἀπ’ ἐμοῦ, Κύριε, ὅτι οὐ κρείσσων ἐγώ εἰμι ὑπὲρ τοὺς πατέρας μου.",
+        "VUL": "et perrexit in desertum, viam unius diei. Cumque venisset, et sederet subter unam juniperum, petivit animæ suæ ut moreretur, et ait : Sufficit mihi, Domine : tolle animam meam : neque enim melior sum quam patres mei.",
+        "SYN": "А сам отошел в пустыню на день пути и, придя, сел под можжевеловым кустом, и просил смерти себе и сказал: довольно уже, Господи; возьми душу мою, ибо я не лучше отцов моих.",
+        "NEO": "Pour lui, il alla dans le désert l’espace d’une journée de marche ; arrivé là, il s’assit sous un genêt et demanda pour lui la mort, en disant : « C’est assez ! Maintenant, \\+w Yahweh|strong=\"H3068\"\\+w**, prends ma vie, car je ne suis pas meilleur que mes pères ! »",
+        "NAB": "and went a day's journey into the desert, until he came to a broom tree and sat beneath it. He prayed for death: \"This is enough, O LORD! Take my life, for I am no better than my fathers.\"",
+        "VAT_ES": "Luego caminó un día entero por el desierto, y al final se sentó bajo una retama. Entonces se deseó la muerte y exclamó: «&iexcl;Basta ya, Señor! &iexcl;Quítame la vida, porque yo no valgo más que mis padres!».",
+        "CEI": "Egli si inoltrò nel deserto una giornata di cammino e andò a sedersi sotto un ginepro. Desideroso di morire, disse: \"Ora basta, Signore! Prendi la mia vita, perché io non sono migliore dei miei padri\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁכַּב֙ וַ/יִּישַׁ֔ן תַּ֖חַת רֹ֣תֶם אֶחָ֑ד וְ/הִנֵּֽה זֶ֤ה מַלְאָךְ֙ נֹגֵ֣עַ בּ֔/וֹ וַ/יֹּ֥אמֶר ל֖/וֹ ק֥וּם אֱכֽוֹל׃",
+        "LXX": "καὶ ἐκοιμήθη καὶ ὕπνωσεν ἐκεῖ ὑπὸ φυτόν· καὶ ἰδού τις ἥψατο αὐτοῦ καὶ εἶπεν αὐτῷ Ἀνάστηθι καὶ φάγε.",
+        "VUL": "Projecitque se, et obdormivit in umbra juniperi : et ecce angelus Domini tetigit eum, et dixit illi : Surge, et comede.",
+        "SYN": "И лег и заснул под можжевеловым кустом. И вот, Ангел коснулся его и сказал ему: встань, ешь [и пей].",
+        "NEO": "Il se coucha et s’endormit sous le genêt. Et voici qu’un ange le toucha et lui dit : « Lève-toi, mange. »",
+        "NAB": "He lay down and fell asleep under the broom tree, but then an angel touched him and ordered him to get up and eat.",
+        "VAT_ES": "Se acostó y se quedó dormido bajo la retama. Pero un ángel lo tocó y le dijo: «&iexcl;Levántate, come!».",
+        "CEI": "Si coricò e si addormentò sotto il ginepro. Allora, ecco un angelo lo toccò e gli disse: \"Alzati e mangia!\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יַּבֵּ֕ט וְ/הִנֵּ֧ה מְרַאֲשֹׁתָ֛י/ו עֻגַ֥ת רְצָפִ֖ים וְ/צַפַּ֣חַת מָ֑יִם וַ/יֹּ֣אכַל וַ/יֵּ֔שְׁתְּ וַ/יָּ֖שָׁב וַ/יִּשְׁכָּֽב׃",
+        "LXX": "καὶ ἐπέβλεψεν Ἠλειού, καὶ ἰδοὺ πρὸς κεφαλῆς αὐτοῦ ἐνκρυφίας ὀλυρείτης καὶ καψάκης ὕδατος· καὶ ἀνέστη καὶ ἔφαγεν καὶ ἔπιεν, καὶ ἐπιστρέψας ἐκοιμήθη.",
+        "VUL": "Respexit, et ecce ad caput suum subcinericius panis, et vas aquæ : comedit ergo, et bibit, et rursum obdormivit.",
+        "SYN": "И взглянул Илия, и вот, у изголовья его печеная лепешка и кувшин воды. Он поел и напился и опять заснул.",
+        "NEO": "Il regarda, et voici qu’il y avait à son chevet un gâteau cuit sur des pierres chauffées et une cruche d’eau. Après avoir mangé et bu, il se recoucha.",
+        "NAB": "He looked and there at his head was a hearth cake and a jug of water. After he ate and drank, he lay down again,",
+        "VAT_ES": "El miró y vio que había a su cabecera una galleta cocida sobre piedras calientes y un jarro de agua. Comió, bebió y se acostó de nuevo.",
+        "CEI": "Egli guardò e vide vicino alla sua testa una focaccia cotta su pietre roventi e un orcio d'acqua. Mangiò e bevve, quindi tornò a coricarsi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יָּשָׁב֩ מַלְאַ֨ךְ יְהוָ֤ה שֵׁנִית֙ וַ/יִּגַּע בּ֔/וֹ וַ/יֹּ֖אמֶר ק֣וּם אֱכֹ֑ל כִּ֛י רַ֥ב מִמְּ/ךָ֖ הַ/דָּֽרֶךְ׃",
+        "LXX": "καὶ ἐπέστρεψεν ὁ ἄγγελος Κυρίου ἐκ δευτέρου, καὶ ἥψατο αὐτοῦ καὶ εἶπεν αὐτῷ Ἀνάστα, φάγε· ὅτι πολλὴ ἀπὸ σοῦ ἡ ὁδός.",
+        "VUL": "Reversusque est angelus Domini secundo, et tetigit eum, dixitque illi : Surge, comede : grandis enim tibi restat via.",
+        "SYN": "И возвратился Ангел Господень во второй раз, коснулся его и сказал: встань, ешь [и пей], ибо дальняя дорога пред тобою.",
+        "NEO": "L’ange de \\+w Yahweh|strong=\"H3068\"\\+w** vint une seconde fois, le toucha et dit : « Lève-toi, mange, car le chemin est trop long pour toi. »",
+        "NAB": "but the angel of the LORD came back a second time, touched him, and ordered, \"Get up and eat, else the journey will be too long for you!\"",
+        "VAT_ES": "Pero el Angel del Señor volvió otra vez, lo tocó y le dijo: «&iexcl;Levántate, come, porque todavía te queda mucho por caminar!».",
+        "CEI": "Venne di nuovo l'angelo del Signore, lo toccò e gli disse: \"Su mangia, perché è troppo lungo per te il cammino\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יָּ֖קָם וַ/יֹּ֣אכַל וַ/יִּשְׁתֶּ֑ה וַ/יֵּ֜לֶךְ בְּ/כֹ֣חַ הָ/אֲכִילָ֣ה הַ/הִ֗יא אַרְבָּעִ֥ים יוֹם֙ וְ/אַרְבָּעִ֣ים לַ֔יְלָה עַ֛ד הַ֥ר הָ/אֱלֹהִ֖ים חֹרֵֽב׃",
+        "LXX": "καὶ ἀνέστη καὶ ἔφαγεν καὶ ἔπιεν· καὶ ἐπορεύθη ἐν τῇ ἰσχύι τῆς βρώσεως ἐκείνης τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας ἕως ὄρους Χωρήβ.",
+        "VUL": "Qui cum surrexisset, comedit et bibit, et ambulavit in fortitudine cibi illius quadraginta diebus et quadraginta noctibus usque ad montem Dei Horeb.",
+        "SYN": "И встал он, поел и напился, и, подкрепившись тою пищею, шел сорок дней и сорок ночей до горы Божией Хорива.",
+        "NEO": "Il se leva, mangea et but, et, avec la force que lui donna cette nourriture, il marcha quarante jours et quarante nuits jusqu’à la montagne de Dieu, à Horeb.",
+        "NAB": "He got up, ate and drank; then strengthened by that food, he walked forty days and forty nights to the mountain of God, Horeb.",
+        "VAT_ES": "Elías se levantó, comió y bebió, y fortalecido por ese alimento caminó cuarenta días y cuarenta noches hasta la montaña de Dios, el Horeb.",
+        "CEI": "Si alzò, mangiò e bevve. Con la forza datagli da quel cibo, camminò per quaranta giorni e quaranta notti fino al monte di Dio, l'Oreb."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹא שָׁ֥ם אֶל הַ/מְּעָרָ֖ה וַ/יָּ֣לֶן שָׁ֑ם וְ/הִנֵּ֤ה דְבַר יְהוָה֙ אֵלָ֔י/ו וַ/יֹּ֣אמֶר ל֔/וֹ מַה לְּ/ךָ֥ פֹ֖ה אֵלִיָּֽהוּ׃",
+        "LXX": "Καὶ εἰσῆλθεν ἐκεῖ εἰς τὸ σπήλαιον καὶ κατέλυσεν ἐκεῖ· καὶ ἰδοὺ ῥῆμα Κυρίου πρὸς αὐτὸν καὶ εἶπεν Τί σὺ ἐνταῦθα, Ἠλειού;",
+        "VUL": "Cumque venisset illuc, mansit in spelunca : et ecce sermo Domini ad eum, dixitque illi : Quid hic agis, Elia ?",
+        "SYN": "И вошел он там в пещеру и ночевал в ней. И вот, было к нему слово Господне, и сказал ему _Господь:_ что ты здесь, Илия?",
+        "NEO": "Là, il entra dans la caverne, et il y passa la nuit. Et voici que la parole de \\+w Yahweh|strong=\"H3068\"\\+w** lui fut adressée, et il lui dit : « Que fais-tu ici, Elie ? »",
+        "NAB": "There he came to a cave, where he took shelter. But the word of the LORD came to him, \"Why are you here, Elijah?\"",
+        "VAT_ES": "Allí, entró en la gruta y pasó la noche. Entonces le fue dirigida la palabra del Señor.",
+        "CEI": "Ivi entrò in una caverna per passarvi la notte, quand'ecco il Signore gli disse: \"Che fai qui, Elia?\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֩ קַנֹּ֨א קִנֵּ֜אתִי לַ/יהוָ֣ה אֱלֹהֵ֣י צְבָא֗וֹת כִּֽי עָזְב֤וּ בְרִֽיתְ/ךָ֙ בְּנֵ֣י יִשְׂרָאֵ֔ל אֶת מִזְבְּחֹתֶ֣י/ךָ הָרָ֔סוּ וְ/אֶת נְבִיאֶ֖י/ךָ הָרְג֣וּ בֶ/חָ֑רֶב וָֽ/אִוָּתֵ֤ר אֲנִי֙ לְ/בַדִּ֔/י וַ/יְבַקְשׁ֥וּ אֶת נַפְשִׁ֖/י לְ/קַחְתָּֽ/הּ׃",
+        "LXX": "καὶ εἶπεν Ἠλειού Ζηλῶν ἐζήλωκα τῷ κυρίῳ Παντοκράτορι, ὅτι ἐνκατέλιπόν σε οἱ υἱοὶ Ἰσραήλ· τὰ θυσιαστήριά σου κατέσκαψαν καὶ τοὺς προφήτας σου ἀπέκτειναν ἐν ῥομφαίᾳ, καὶ ὑπολέλειμμαι ἐγὼ μονώτατος, καὶ ζητοῦσί μου τὴν ψυχὴν λαβεῖν αὐτήν.",
+        "VUL": "At ille respondit : Zelo zelatus sum pro Domino Deo exercituum, quia dereliquerunt pactum tuum filii Israël : altaria tua destruxerunt, prophetas tuos occiderunt gladio, derelictus sum ego solus, et quærunt animam meam ut auferant eam.",
+        "SYN": "Он сказал: возревновал я о Господе Боге Саваофе, ибо сыны Израилевы оставили завет Твой, разрушили Твои жертвенники и пророков Твоих убили мечом; остался я один, но и моей души ищут, чтобы отнять ее.",
+        "NEO": "Il répondit : « J’ai été plein de zèle pour \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu des armées ; car les enfants d’Israël ont abandonné votre alliance, renversé vos autels, et tué par l’épée vos prophètes ; je suis resté moi seul, et ils cherchent à m’ôter la vie. »",
+        "NAB": "He answered: \"I have been most zealous for the LORD, the God of hosts, but the Israelites have forsaken your covenant, torn down your altars, and put your prophets to the sword. I alone am left, and they seek to take my life.\"",
+        "VAT_ES": "El Señor le dijo: «&iquest;Qué haces aquí, Elías?». El respondió: «Me consumo de celo por el Señor, el Dios de los ejércitos, porque los israelitas abandonaron tu alianza, derribaron tus altares y mataron a tus profetas con la espada. He quedado yo solo y tratan de quitarme la vida».",
+        "CEI": "Egli rispose: \"Sono pieno di zelo per il Signore degli eserciti, poiché gli Israeliti hanno abbandonato la tua alleanza, hanno demolito i tuoi altari, hanno ucciso di spada i tuoi profeti. Sono rimasto solo ed essi tentano di togliermi la vita\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר צֵ֣א וְ/עָמַדְתָּ֣ בָ/הָר֮ לִ/פְנֵ֣י יְהוָה֒ וְ/הִנֵּ֧ה יְהוָ֣ה עֹבֵ֗ר וְ/ר֣וּחַ גְּדוֹלָ֡ה וְ/חָזָ֞ק מְפָרֵק֩ הָרִ֨ים וּ/מְשַׁבֵּ֤ר סְלָעִים֙ לִ/פְנֵ֣י יְהוָ֔ה לֹ֥א בָ/ר֖וּחַ יְהוָ֑ה וְ/אַחַ֤ר הָ/ר֨וּחַ רַ֔עַשׁ לֹ֥א בָ/רַ֖עַשׁ יְהוָֽה׃",
+        "LXX": "καὶ εἶπεν Ἐξελεύσῃ αὔριον καὶ στήσῃ ἐνώπιον Κυρίου ἐν τῷ ὄρει· ἰδοὺ παρελεύσεται Κύριος. καὶ πνεῦμα μέγα κραταιὸν διαλῦον ὄρη καὶ συντρῖβον πέτρας ἐνώπιον Κυρίου, ἐν τῷ πνεύματι Κυρίου· καὶ μετὰ τὸ πνεῦμα συνσεισμός, οὐκ ἐν τῷ συνσεισμῷ Κύριος·",
+        "VUL": "Et ait ei : Egredere, et sta in monte coram Domino : et ecce Dominus transit. Et spiritus grandis et fortis subvertens montes, et conterens petras, ante Dominum : non in spiritu Dominus. Et post spiritum commotio : non in commotione Dominus.",
+        "SYN": "И сказал: выйди и стань на горе пред лицем Господним, и вот, Господь пройдет, и большой и сильный ветер, раздирающий горы и сокрушающий скалы пред Господом, но не в ветре Господь; после ветра землетрясение, но не в землетрясении Господь;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit : « Sors, et tiens-toi dans la montagne devant \\+w Yahweh|strong=\"H3068\"\\+w**, car voici que \\+w Yahweh|strong=\"H3068\"\\+w** va passer. »",
+        "NAB": "Then the LORD said, \"Go outside and stand on the mountain before the LORD; the LORD will be passing by.\" A strong and heavy wind was rending the mountains and crushing rocks before the LORD - but the LORD was not in the wind. After the wind there was an earthquake - but the LORD was not in the earthquake.",
+        "VAT_ES": "El Señor le dijo: «Sal y quédate de pie en la montaña, delante del Señor». Y en ese momento el Señor pasaba. Sopló un viento huracanado que partía las montañas y resquebrajaba las rocas delante del Señor. Pero el Señor no estaba en el viento. Después del viento, hubo un terremoto. Pero el Señor no estaba en el terremoto.",
+        "CEI": "Gli fu detto: \"Esci e fermati sul monte alla presenza del Signore\". Ecco, il Signore passò. Ci fu un vento impetuoso e gagliardo da spaccare i monti e spezzare le rocce davanti al Signore, ma il Signore non era nel vento. Dopo il vento ci fu un terremoto, ma il Signore non era nel terremoto."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/אַחַ֤ר הָ/רַ֨עַשׁ֙ אֵ֔שׁ לֹ֥א בָ/אֵ֖שׁ יְהוָ֑ה וְ/אַחַ֣ר הָ/אֵ֔שׁ ק֖וֹל דְּמָמָ֥ה דַקָּֽה׃",
+        "LXX": "καὶ μετὰ τὸν συνσεισμὸν πῦρ, οὐκ ἐν τῷ πυρὶ Κύριος· καὶ μετὰ τὸ πῦρ φωνὴ αὔρας λεπτῆς.",
+        "VUL": "Et post commotionem ignis : non in igne Dominus. Et post ignem sibilus auræ tenuis.",
+        "SYN": "после землетрясения огонь, но не в огне Господь; после огня веяние тихого ветра, [и там Господь].",
+        "NEO": "Et après le tremblement de terre, un feu : \\+w Yahweh|strong=\"H3068\"\\+w** n’était pas dans le feu. Et après le feu, un murmure doux et léger.",
+        "NAB": "After the earthquake there was fire - but the LORD was not in the fire. After the fire there was a tiny whispering sound.",
+        "VAT_ES": "Después del terremoto, se encendió un fuego. Pero el Señor no estaba en el fuego. Después del fuego, se oyó el rumor de una brisa suave.",
+        "CEI": "Dopo il terremoto ci fu un fuoco, ma il Signore non era nel fuoco. Dopo il fuoco ci fu il mormorio di un vento leggero."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י כִּ/שְׁמֹ֣עַ אֵלִיָּ֗הוּ וַ/יָּ֤לֶט פָּנָי/ו֙ בְּ/אַדַּרְתּ֔/וֹ וַ/יֵּצֵ֕א וַֽ/יַּעֲמֹ֖ד פֶּ֣תַח הַ/מְּעָרָ֑ה וְ/הִנֵּ֤ה אֵלָי/ו֙ ק֔וֹל וַ/יֹּ֕אמֶר מַה לְּ/ךָ֥ פֹ֖ה אֵלִיָּֽהוּ׃",
+        "LXX": "καὶ ἐγένετο ὡς ἤκουσεν Ἠλειού, καὶ ἐπεκάλυψεν τὸ πρόσωπον αὐτοῦ ἐν τῇ μηλωτῇ ἑαυτοῦ, καὶ ἐξῆλθεν καὶ ἔστη ὑπὸ σπὴλαιον· καὶ ἰδοὺ πρὸς αὐτὸν φωνὴ καὶ εἶπεν Τί σὺ ἐνταῦθα, Ἠλειού;",
+        "VUL": "Quod cum audisset Elias, operuit vultum suum pallio, et egressus stetit in ostio speluncæ. Et ecce vox ad eum dicens : Quid hic agis, Elia ? Et ille respondit :",
+        "SYN": "Услышав _сие,_ Илия закрыл лице свое милотью своею, и вышел, и стал у входа в пещеру. И был к нему голос и сказал ему: что ты здесь, Илия?",
+        "NEO": "Quand Elie l’entendit, il s’enveloppa le visage de son manteau et, étant sorti, il se tint à l’entrée de la caverne. Et voici qu’une voix se fit entendre à lui, en disant : « Que fais-tu ici, Elie ? »",
+        "NAB": "When he heard this, Elijah hid his face in his cloak and went and stood at the entrance of the cave. A voice said to him, \"Elijah, why are you here?\"",
+        "VAT_ES": "Al oírla, Elías se cubrió el rostro con su manto, salió y se quedó de pie a la entrada de la gruta. Entonces le llegó una voz, que decía: «&iquest;Qué haces aquí, Elías?».",
+        "CEI": "Come l'udì, Elia si coprì il volto con il mantello, uscì e si fermò all'ingresso della caverna. Ed ecco, sentì una voce che gli diceva: \"Che fai qui, Elia?\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֩ קַנֹּ֨א קִנֵּ֜אתִי לַ/יהוָ֣ה אֱלֹהֵ֣י צְבָא֗וֹת כִּֽי עָזְב֤וּ בְרִֽיתְ/ךָ֙ בְּנֵ֣י יִשְׂרָאֵ֔ל אֶת מִזְבְּחֹתֶ֣י/ךָ הָרָ֔סוּ וְ/אֶת נְבִיאֶ֖י/ךָ הָרְג֣וּ בֶ/חָ֑רֶב וָ/אִוָּתֵ֤ר אֲנִי֙ לְ/בַדִּ֔/י וַ/יְבַקְשׁ֥וּ אֶת נַפְשִׁ֖/י לְ/קַחְתָּֽ/הּ׃",
+        "LXX": "καὶ εἶπεν Ἠλειού Ζηλῶν ἐζήλωκα τῷ κυρίῳ Παντοκράτορι, ὅτι ἐγκατέλιπόν σε οἱ υἱοὶ Ἰσραήλ, τὴν διαθήκην σου καὶ τὰ θυσιαστήριά σου καθεῖλαν καὶ τοὺς προφήτας σου ἀπέκτειναν ἐν ῥομφαίᾳ, καὶ ὑπολέλιμμαι ἐγὼ μονώτατος, καὶ ζητοῦσι τὴν ψυχήν μου λαβεῖν αὐτήν.",
+        "VUL": "Zelo zelatus sum pro Domino Deo exercituum, quia dereliquerunt pactum tuum filii Israël : altaria tua destruxerunt, prophetas tuos occiderunt gladio, derelictus sum ego solus, et quærunt animam meam ut auferant eam.",
+        "SYN": "Он сказал: возревновал я о Господе Боге Саваофе, ибо сыны Израилевы оставили завет Твой, разрушили жертвенники Твои и пророков Твоих убили мечом; остался я один, но и моей души ищут, чтоб отнять ее.",
+        "NEO": "Il répondit : « J’ai été plein de zèle pour \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu des armées ; car les enfants d’Israël ont abandonné votre alliance, renversé vos autels et tué par l’épée vos prophètes ; je suis resté, moi seul, et ils cherchent à m’ôter la vie ! »",
+        "NAB": "He replied, \"I have been most zealous for the LORD, the God of hosts. But the Israelites have forsaken your covenant, torn down your altars, and put your prophets to the sword. I alone am left, and they seek to take my life.\"",
+        "VAT_ES": "El respondió: «Me consumo de celo por el Señor, el Dios de los ejércitos, porque los israelitas abandonaron tu alianza, derribaron tus altares y mataron a tus profetas con la espada. He quedado yo solo y tratan de quitarme la vida».",
+        "CEI": "Egli rispose: \"Sono pieno di zelo per il Signore, Dio degli eserciti, poiché gli Israeliti hanno abbandonato la tua alleanza, hanno demolito i tuoi altari, hanno ucciso di spada i tuoi profeti. Sono rimasto solo ed essi tentano di togliermi la vita\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֵלָ֔י/ו לֵ֛ךְ שׁ֥וּב לְ/דַרְכְּ/ךָ֖ מִדְבַּ֣רָ/ה דַמָּ֑שֶׂק וּ/בָ֗אתָ וּ/מָשַׁחְתָּ֧ אֶת חֲזָאֵ֛ל לְ/מֶ֖לֶךְ עַל אֲרָֽם׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς αὐτόν Πορεύου, ἀνάστρεφε εἰς τὴν ὁδόν σου, καὶ ἥξεις εἰς τὴν ὁδὸν ἐρήμου Δαμασκοῦ· καὶ ἥξεις καὶ χρίσεις τὸν Ἁζαὴλ εἰς βασιλέα τῆς Συρίας·",
+        "VUL": "Et ait Dominus ad eum : Vade, et revertere in viam tuam per desertum in Damascum : cumque perveneris illuc, unges Hazaël regem super Syriam,",
+        "SYN": "И сказал ему Господь: пойди обратно своею дорогою чрез пустыню в Дамаск, и когда придешь, то помажь Азаила в царя над Сириею,",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** lui dit : « Va, reprenant ton chemin, au désert de Damas, et, quand tu seras arrivé, tu oindras Hazaël pour roi sur la Syrie ;",
+        "NAB": "\"Go, take the road back to the desert near Damascus,\" the LORD said to him. \"When you arrive, you shall anoint Hazael as king of Aram.",
+        "VAT_ES": "El Señor le dijo: «Vuelve por el mismo camino, hacia el desierto de Damasco. Cuando llegues, ungirás a Jazael como rey de Aram.",
+        "CEI": "Il Signore gli disse: \"Su, ritorna sui tuoi passi verso il deserto di Damasco; giunto là, ungerai Hazaèl come re di Aram."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/אֵת֙ יֵה֣וּא בֶן נִמְשִׁ֔י תִּמְשַׁ֥ח לְ/מֶ֖לֶךְ עַל יִשְׂרָאֵ֑ל וְ/אֶת אֱלִישָׁ֤ע בֶּן שָׁפָט֙ מֵ/אָבֵ֣ל מְחוֹלָ֔ה תִּמְשַׁ֥ח לְ/נָבִ֖יא תַּחְתֶּֽי/ךָ׃",
+        "LXX": "καὶ τὸν υἱὸν Εἰοὺ υἱοῦ Ναμεσθεὶ χρίσεις εἰς βασιλέα ἐπὶ Ἰσραήλ· καὶ τὸν Ἐλεισαῖε υἱὸν Σαφὰθ χρίσεις ἐξ Ἐβαλμαουλὰ προφήτην ἀντὶ σοῦ.",
+        "VUL": "et Jehu filium Namsi unges regem super Israël : Eliseum autem filium Saphat, qui est de Abelmehula, unges prophetam pro te.",
+        "SYN": "а Ииуя, сына Намессиина, помажь в царя над Израилем; Елисея же, сына Сафатова, из Авел-Мехолы, помажь в пророка вместо себя;",
+        "NEO": "tu oindras Jéhu, fils de Namsi, pour roi sur Israël, et tu oindras Elisée, fils de Saphat, d’Abel-Méhula, pour prophète à ta place.",
+        "NAB": "Then you shall anoint Jehu, son of Nimshi, as king of Israel, and Elisha, son of Shaphat of Abel-meholah, as prophet to succeed you.",
+        "VAT_ES": "A Jehú, hijo de Nimsí, lo ungirás rey de Israel, y a Eliseo, hijo de Safat, de Abel Mejolá, lo ungirás profeta en lugar de ti.",
+        "CEI": "Poi ungerai Ieu, figlio di Nimsi, come re di Israele e ungerai Eliseo figlio di Safàt, di Abel-Mecola, come profeta al tuo posto."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה הַ/נִּמְלָ֛ט מֵ/חֶ֥רֶב חֲזָאֵ֖ל יָמִ֣ית יֵה֑וּא וְ/הַ/נִּמְלָ֛ט מֵ/חֶ֥רֶב יֵה֖וּא יָמִ֥ית אֱלִישָֽׁע׃",
+        "LXX": "καὶ ἔσται τὸν σωζόμενον ἐκ ῥομφαίας Ἁζαὴλ θανατώσει Εἰού, καὶ τὸν σωζόμενον ἐκ ῥομφαίας Εἰοὺ θανατώσει Ἐλεισαῖε.",
+        "VUL": "Et erit : quicumque fugerit gladium Hazaël, occidet eum Jehu : et quicumque fugerit gladium Jehu, interficiet eum Eliseus.",
+        "SYN": "кто убежит от меча Азаилова, того умертвит Ииуй; а кто спасется от меча Ииуева, того умертвит Елисей.",
+        "NEO": "Et celui qui échappera à l’épée de Hazaël, Jéhu le fera mourir ; et celui qui échappera à l’épée de Jéhu, Elisée le fera mourir.",
+        "NAB": "If anyone escapes the sword of Hazael, Jehu will kill him. If he escapes the sword if Jehu, Elisha will kill him.",
+        "VAT_ES": "Al que escape de la espada de Jazael, lo hará morir Jehú; al que escape de la espada de Jehú, lo hará morir Eliseo.",
+        "CEI": "Se uno scamperà dalla spada di Hazaèl, lo ucciderà Ieu; se uno scamperà dalla spada di Ieu, lo ucciderà Eliseo."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/הִשְׁאַרְתִּ֥י בְ/יִשְׂרָאֵ֖ל שִׁבְעַ֣ת אֲלָפִ֑ים כָּל הַ/בִּרְכַּ֗יִם אֲשֶׁ֤ר לֹֽא כָֽרְעוּ֙ לַ/בַּ֔עַל וְ/כָ֨ל הַ/פֶּ֔ה אֲשֶׁ֥ר לֹֽא נָשַׁ֖ק לֽ/וֹ׃",
+        "LXX": "καὶ καταλεὶψεις ἐν Ἰσραὴλ ἑπτὰ χιλιάδας ἀνδρῶν, πάντα γόνατα ἃ οὐκ ὤκλασαν γόνυ τῷ Βάαλ, καὶ πᾶν στόμα ὃ οὐ προσεκύνησεν αὐτῷ.",
+        "VUL": "Et derelinquam mihi in Israël septem millia virorum, quorum genua non sunt incurvata ante Baal, et omne os quod non adoravit eum osculans manus.",
+        "SYN": "Впрочем, Я оставил между Израильтянами семь тысяч [мужей]; всех сих колени не преклонялись пред Ваалом, и всех сих уста не лобызали его.",
+        "NEO": "Mais je laisserai en Israël sept mille hommes, savoir tous ceux qui n’ont pas fléchi le genou devant Baal, tous ceux dont la bouche ne l’a pas baisé. »",
+        "NAB": "Yet I will leave seven thousand men in Israel - all those who have not knelt to Baal or kissed him.\"",
+        "VAT_ES": "Pero yo preservaré en Israel un resto de siete mil hombres: todas las rodillas que no se doblaron ante Baal y todas las bocas que no lo besaron».",
+        "CEI": "Io poi mi sono risparmiato in Israele settemila persone, quanti non hanno piegato le ginocchia a Baal e quanti non l'hanno baciato con la bocca."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֣לֶךְ מִ֠/שָּׁם וַ/יִּמְצָ֞א אֶת אֱלִישָׁ֤ע בֶּן שָׁפָט֙ וְ/ה֣וּא חֹרֵ֔שׁ שְׁנֵים עָשָׂ֤ר צְמָדִים֙ לְ/פָנָ֔י/ו וְ/ה֖וּא בִּ/שְׁנֵ֣ים הֶ/עָשָׂ֑ר וַ/יַּעֲבֹ֤ר אֵלִיָּ֨הוּ֙ אֵלָ֔י/ו וַ/יַּשְׁלֵ֥ךְ אַדַּרְתּ֖/וֹ אֵלָֽי/ו׃",
+        "LXX": "Καὶ ἀπῆλθεν ἐκεῖθεν, καὶ εὑρίσκει τὸν Ἐλεισαῖε υἱὸν Σαφάτ, καὶ αὐτὸς ἠροτρία ἐν βουσίν· δώδεκα ζεύγη ἐνώπιον αὐτοῦ, καὶ αὐτὸς ἐν τοῖς δώδεκα· ἐπῆλθεν ἐπ’ αὐτόν, καὶ ἐπέρριψε τὴν μηλωτὴν αὐτοῦ ἐπ’ αὐτόν.",
+        "VUL": "Profectus ergo inde Elias, reperit Eliseum filium Saphat, arantem in duodecim jugis boum. Et ipse in duodecim jugis boum arantibus unus erat : cumque venisset Elias ad eum, misit pallium suum super illum.",
+        "SYN": "И пошел он оттуда, и нашел Елисея, сына Сафатова, когда он орал; двенадцать пар [волов] было у него, и сам он был при двенадцатой. Илия, проходя мимо него, бросил на него милоть свою.",
+        "NEO": "Etant parti de là, Elie trouva Elisée, fils de Saphat, qui labourait ; il y avait devant lui douze paires de bœufs, et il était avec la douzième. Elie s’approcha de lui, et il jeta sur lui son manteau.",
+        "NAB": "Elijah set out, and came upon Elisha, son of Shaphat, as he was plowing with twelve yoke of oxen; he was following the twelfth. Elijah went over to him and threw his cloak over him.",
+        "VAT_ES": "Elías partió de allí y encontró a Eliseo, hijo de Safat, que estaba arando. Delante de él había doce yuntas de bueyes, y él iba con la última. Elías pasó cerca de él y le echó encima su manto.",
+        "CEI": "Partito di lì, Elia incontrò Eliseo figlio di Safàt. Costui arava con dodici paia di buoi davanti a sé, mentre egli stesso guidava il decimosecondo. Elia, passandogli vicino, gli gettò addosso il suo mantello."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲזֹ֣ב אֶת הַ/בָּקָ֗ר וַ/יָּ֨רָץ֙ אַחֲרֵ֣י אֵֽלִיָּ֔הוּ וַ/יֹּ֗אמֶר אֶשְּׁקָה נָּא֙ לְ/אָבִ֣/י וּ/לְ/אִמִּ֔/י וְ/אֵלְכָ֖ה אַחֲרֶ֑י/ךָ וַ/יֹּ֤אמֶר ל/וֹ֙ לֵ֣ךְ שׁ֔וּב כִּ֥י מֶה עָשִׂ֖יתִי לָֽ/ךְ׃",
+        "LXX": "καὶ κατέλιπεν Ἐλεισαῖε τὰς βόας, καὶ κατέδραμεν ὀπίσω Ἠλειοὺ καὶ εἶπεν Καταφιλήσω τὸν πατέρα μου καὶ ἀκολουθήσω ὀπίσω σου· καὶ εἶπεν Ἠλειού Ἀνάστρεφε, ὅτι πεποίηκὰ σοι.",
+        "VUL": "Qui statim relictis bobus cucurrit post Eliam, et ait : Osculer, oro, patrem meum, et matrem meam, et sic sequar te. Dixitque ei : Vade, et revertere : quod enim meum erat, feci tibi.",
+        "SYN": "И оставил [Елисей] волов, и побежал за Илиею, и сказал: позволь мне поцеловать отца моего и мать мою, и я пойду за тобою. Он сказал ему: пойди и приходи назад, ибо что сделал я тебе?",
+        "NEO": "Elisée, quittant les bœufs, courut après Elie et dit : « Permets que j’embrasse mon père et ma mère, et je te suivrai. » Elie lui répondit : « Va, retourne, car que t’ai-je fait !... »",
+        "NAB": "Elisha left the oxen, ran after Elijah, and said, \"Please, let me kiss my father and mother good-bye, and I will follow you.\" \"Go back!\" Elijah answered. \"Have I done anything to you?\"",
+        "VAT_ES": "Eliseo dejó sus bueyes, corrió detrás de Elías y dijo: «Déjame besar a mi padre y a mi madre; luego te seguiré». Elías le respondió: «Sí, puedes ir. &iquest;Qué hice yo para impedírtelo?»",
+        "CEI": "Quegli lasciò i buoi e corse dietro a Elia, dicendogli: \"Andrò a baciare mio padre e mia madre, poi ti seguirò\". Elia disse: \"Và e torna, perché sai bene che cosa ho fatto di te\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יָּ֨שָׁב מֵ/אַחֲרָ֜י/ו וַ/יִּקַּ֣ח אֶת צֶ֧מֶד הַ/בָּקָ֣ר וַ/יִּזְבָּחֵ֗/הוּ וּ/בִ/כְלִ֤י הַ/בָּקָר֙ בִּשְּׁלָ֣/ם הַ/בָּשָׂ֔ר וַ/יִּתֵּ֥ן לָ/עָ֖ם וַ/יֹּאכֵ֑לוּ וַ/יָּ֗קָם וַ/יֵּ֛לֶךְ אַחֲרֵ֥י אֵלִיָּ֖הוּ וַ/יְשָׁרְתֵֽ/הוּ׃",
+        "LXX": "καὶ ἀνέστρεψεν ἐξόπισθεν αὐτοῦ, καὶ ἔλαβεν τὰ ζεύγη τῶν βοῶν καὶ ἔθυσεν καὶ ἥψησεν αὐτὰ ἐν τοῖς σκεύεσι τῶν βοῶν, καὶ ἔδωκεν τῷ λαῷ καὶ ἔφαγον· καὶ ἀνέστη καὶ ἐπορεύθη ὀπίσω Ἠλειού, καὶ ἐλειτούργει αὐτῷ.",
+        "VUL": "Reversus autem ab eo, tulit par boum, et mactavit illud, et in aratro boum coxit carnes, et dedit populo, et comederunt : consurgensque abiit, et secutus est Eliam, et ministrabat ei.",
+        "SYN": "Он, отойдя от него, взял пару волов и заколол их и, зажегши плуг волов, изжарил мясо их, и роздал людям, и они ели. А сам встал и пошел за Илиею, и стал служить ему.",
+        "NEO": "Elisée s’éloigna de lui et, ayant pris la paire de bœufs, il les égorgea ; et avec le harnais des bœufs, il fit cuire leur chair et la donna à manger au peuple. Puis il se leva, suivit Elie et fut à son service.",
+        "NAB": "Elisha left him and, taking the yoke of oxen, slaughtered them; he used the plowing equipment for fuel to boil their flesh, and gave it to his people to eat. Then he left and followed Elijah as his attendant.",
+        "VAT_ES": "Eliseo dio media vuelta, tomó la yunta de bueyes y los inmoló. Luego, con los arneses de los bueyes, asó la carne y se la dio a su gente para que comieran. Después partió, fue detrás de Elías y se puso a su servicio.",
+        "CEI": "Allontanatosi da lui, Eliseo prese un paio di buoi e li uccise; con gli attrezzi per arare ne fece cuocere la carne e la diede alla gente, perché la mangiasse. Quindi si alzò e seguì Elia, entrando al suo servizio."
+      }
+    }
+  }
+}

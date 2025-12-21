@@ -1,0 +1,339 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_013",
+  "book_key": "DEUT",
+  "sequence": 13,
+  "chapter_in": {
+    "MT": 13,
+    "VUL": 13,
+    "LXX": 13
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אֵ֣ת כָּל הַ/דָּבָ֗ר אֲשֶׁ֤ר אָנֹכִי֙ מְצַוֶּ֣ה אֶתְ/כֶ֔ם אֹת֥/וֹ תִשְׁמְר֖וּ לַ/עֲשׂ֑וֹת לֹא תֹסֵ֣ף עָלָ֔י/ו וְ/לֹ֥א תִגְרַ֖ע מִמֶּֽ/נּוּ׃",
+        "LXX": "Ἐὰν δὲ ἀναστῇ ἐν σοὶ προφήτης ἢ ἐνυπνιαζόμενος τὸ ἐνύπνιον καὶ δῷ σοι σημεῖον ἢ τέρας,",
+        "VUL": "Si surrexerit in medio tui prophetes, aut qui somnium vidisse se dicat, et prædixerit signum atque portentum,",
+        "SYN": "Если восстанет среди тебя пророк, или сновидец, и представит тебе знамение или чудо,",
+        "NEO": "Toutes les choses que je vous prescris, vous les observerez en les mettant en pratique, sans y rien ajouter et sans en rien retrancher.",
+        "NAB": "\"Every command that I enjoin on you, you shall be careful to observe, neither adding to it nor subtracting from it.",
+        "VAT_ES": "Practiquen cuidadosamente todo lo que yo les ordeno, sin añadir ni quitar nada.",
+        "CEI": "Vi preoccuperete di mettere in pratica tutto ciò che vi comando; non vi aggiungerai nulla e nulla ne toglierai."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כִּֽי יָק֤וּם בְּ/קִרְבְּ/ךָ֙ נָבִ֔יא א֖וֹ חֹלֵ֣ם חֲל֑וֹם וְ/נָתַ֥ן אֵלֶ֛י/ךָ א֖וֹת א֥וֹ מוֹפֵֽת׃",
+        "LXX": "καὶ ἔλθῃ τὸ σημεῖον ἢ τὸ τέρας ὃ ἐλάλησεν πρὸς σὲ λέγων Πορευθῶμεν καὶ λατρεύσωμεν θεοῖς ἑτέροις οὓς οὐκ οἴδατε·",
+        "VUL": "et evenerit quod locutus est, et dixerit tibi : Eamus, et sequamur deos alienos quos ignoras, et serviamus eis :",
+        "SYN": "и сбудется то знамение или чудо, о котором он говорил тебе, и скажет притом: \"пойдем вслед богов иных, которых ты не знаешь, и будем служить им\", --",
+        "NEO": "S’il s’élève au milieu de toi un prophète ou un songeur qui t’annonce un signe ou un prodige,",
+        "NAB": "\"If there arises among you a prophet or a dreamer who promises you a sign or wonder,",
+        "VAT_ES": "Si surge en medio de ustedes un profeta o un intérprete de sueños, que te propone un signo o un prodigio,",
+        "CEI": "Qualora si alzi in mezzo a te un profeta o un sognatore che ti proponga un segno o un prodigio"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וּ/בָ֤א הָ/אוֹת֙ וְ/הַ/מּוֹפֵ֔ת אֲשֶׁר דִּבֶּ֥ר אֵלֶ֖י/ךָ לֵ/אמֹ֑ר נֵֽלְכָ֞ה אַחֲרֵ֨י אֱלֹהִ֧ים אֲחֵרִ֛ים אֲשֶׁ֥ר לֹֽא יְדַעְתָּ֖/ם וְ/נָֽעָבְדֵֽ/ם׃",
+        "LXX": "οὐκ ἀκούσεσθε τῶν λόγων τοῦ προφήτου ἐκείνου ἢ τοῦ ἐνυπνιαζομένου τὸ ἐνύπνιον ἐκεῖνο· ὅτι πειράζει κύριος ὁ θεός σου ὑμᾶς, εἰδέναι εἰ ἀγαπᾶτε τὸν θεὸν ὑμῶν ἐξ ὅλης τῆς καρδίας σου καὶ ἐξ ὅλης τῆς ψυχῆς ὑμῶν.",
+        "VUL": "non audies verba prophetæ illius aut somniatoris : quia tentat vos Dominus Deus vester, ut palam fiat utrum diligatis eum an non, in toto corde, et in tota anima vestra.",
+        "SYN": "то не слушай слов пророка сего, или сновидца сего; ибо _чрез_ _сие_ искушает вас Господь, Бог ваш, чтобы узнать, любите ли вы Господа, Бога вашего, от всего сердца вашего и от всей души вашей;",
+        "NEO": "et que s’accomplisse le signe ou le prodige dont il t’a parlé en disant : « Allons après d’autres dieux, — des dieux que tu ne connais pas ! — et servons-les, »",
+        "NAB": "urging you to follow other gods, whom you have not known, and to serve them: even though the sign or wonder he has foretold you comes to pass,",
+        "VAT_ES": "y te dice: «Vamos detrás de otros dioses –que tú no conoces– para rendirles culto», aunque se cumplan el signo o el prodigio,",
+        "CEI": "e il segno e il prodigio annunciato succeda ed egli ti dica: Seguiamo dei stranieri, che tu non hai mai conosciuti, e rendiamo loro un culto,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "לֹ֣א תִשְׁמַ֗ע אֶל דִּבְרֵי֙ הַ/נָּבִ֣יא הַ/ה֔וּא א֛וֹ אֶל חוֹלֵ֥ם הַ/חֲל֖וֹם הַ/ה֑וּא כִּ֣י מְנַסֶּ֞ה יְהוָ֤ה אֱלֹֽהֵי/כֶם֙ אֶתְ/כֶ֔ם לָ/דַ֗עַת הֲ/יִשְׁ/כֶ֤ם אֹֽהֲבִים֙ אֶת יְהוָ֣ה אֱלֹהֵי/כֶ֔ם בְּ/כָל לְבַבְ/כֶ֖ם וּ/בְ/כָל נַפְשְׁ/כֶֽם׃",
+        "LXX": "ὀπίσω Κυρίου τοῦ θεοῦ ὑμῶν πορεύεσθε, καὶ τοῦτον φοβηθήσεσθε καὶ τῆς φωνῆς αὐτοῦ ἀκούσεσθε καὶ αὐτῷ προστεθήσεσθε.",
+        "VUL": "Dominum Deum vestrum sequimini, et ipsum timete, et mandata illius custodite, et audite vocem ejus : ipsi servietis, et ipsi adhærebitis.",
+        "SYN": "Господу, Богу вашему, последуйте и Его бойтесь, заповеди Его соблюдайте и гласа Его слушайте, и Ему служите, и к Нему прилепляйтесь;",
+        "NEO": "tu n’écouteras pas les paroles de ce prophète ou de ce songeur ; car \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, vous éprouve pour savoir si vous aimez \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, de tout votre cœur et de toute votre âme.",
+        "NAB": "pay no attention to the words of that prophet or that dreamer; for the LORD, your God, is testing you to learn whether you really love him with all your heart and with all your soul.",
+        "VAT_ES": "no hagas caso de las palabras de ese profeta o de los sueños de ese visionario. Porque el Señor, su Dios, los pone a prueba para ver si ustedes lo aman realmente con todo su corazón y con toda su alma.",
+        "CEI": "tu non dovrai ascoltare le parole di quel profeta o di quel sognatore; perché il Signore vostro Dio vi mette alla prova per sapere se amate il Signore vostro Dio con tutto il cuore e con tutta l'anima."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אַחֲרֵ֨י יְהוָ֧ה אֱלֹהֵי/כֶ֛ם תֵּלֵ֖כוּ וְ/אֹת֣/וֹ תִירָ֑אוּ וְ/אֶת מִצְוֺתָ֤י/ו תִּשְׁמֹ֨רוּ֙ וּ/בְ/קֹל֣/וֹ תִשְׁמָ֔עוּ וְ/אֹת֥/וֹ תַעֲבֹ֖דוּ וּ/ב֥/וֹ תִדְבָּקֽוּ/ן׃",
+        "LXX": "καὶ ὁ προφήτης ἐκεῖνος ἢ ὁ τὸ ἐνύπνιον ἐνυπνιαζόμενος ἐκεῖνος ἀποθανεῖται· ἐλάλησεν γὰρ πλανῆσαί σε ἀπὸ Κυρίου τοῦ θεοῦ σου τοῦ ἐξαγαγόντος σε ἐκ γῆς Αἰγύπτου, τοῦ λυτρωσαμένου σε ἐκ τῆς δουλίας, ἐξῶσαί σε ἀπὸ τῆς ὁδοῦ ἧς ἐνετείλατό σοι Κύριος ὁ θεός σου πορεύεσθαι ἐν αὐτῇ· καὶ ἀφανιεῖς τὸν πονηρὸν ἐξ ὑμῶν αὐτῶν.",
+        "VUL": "Propheta autem ille aut fictor somniorum interficietur : quia locutus est ut vos averteret a Domino Deo vestro, qui eduxit vos de terra Ægypti, et redemit vos de domo servitutis : ut errare te faceret de via, quam tibi præcepit Dominus Deus tuus : et auferes malum de medio tui.",
+        "SYN": "а пророка того или сновидца того должно предать смерти за то, что он уговаривал вас отступить от Господа, Бога вашего, выведшего вас из земли Египетской и избавившего тебя из дома рабства, желая совратить тебя с пути, по которому заповедал тебе идти Господь, Бог твой; и _так_ истреби зло из среды себя.",
+        "NEO": "C’est après \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, que vous irez, c’est lui que vous craindrez ; vous observerez ses commandements, vous obéirez à sa voix, vous le servirez et vous vous attacherez à lui.",
+        "NAB": "The LORD, your God, shall you follow, and him shall you fear; his commandment shall you observe, and his voice shall you heed, serving him and holding fast to him alone.",
+        "VAT_ES": "Sigan al Señor, su Dios. Témanlo y observen sus mandamientos, escuchen su voz, sírvanlo y sean fieles a él.",
+        "CEI": "Seguirete il Signore vostro Dio, temerete lui, osserverete i suoi comandi, obbedirete alla sua voce, lo servirete e gli resterete fedeli."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/הַ/נָּבִ֣יא הַ/ה֡וּא א֣וֹ חֹלֵם֩ הַ/חֲל֨וֹם הַ/ה֜וּא יוּמָ֗ת כִּ֣י דִבֶּר סָ֠רָה עַל יְהוָ֨ה אֱלֹֽהֵי/כֶ֜ם הַ/מּוֹצִ֥יא אֶתְ/כֶ֣ם מֵ/אֶ֣רֶץ מִצְרַ֗יִם וְ/הַ/פֹּֽדְ/ךָ֙ מִ/בֵּ֣ית עֲבָדִ֔ים לְ/הַדִּֽיחֲ/ךָ֙ מִן הַ/דֶּ֔רֶךְ אֲשֶׁ֧ר צִוְּ/ךָ֛ יְהוָ֥ה אֱלֹהֶ֖י/ךָ לָ/לֶ֣כֶת בָּ֑/הּ וּ/בִֽעַרְתָּ֥ הָ/רָ֖ע מִ/קִּרְבֶּֽ/ךָ׃",
+        "LXX": "Ἐὰν δὲ παρακαλέσῃ σε ὁ ἀδελφός σου ἐκ πατρός σου ἢ ἐκ μητρός σου, ἢ ὁ υἱός σου ἢ ἡ θυγάτηρ σου ἢ ἡ γυνὴ ἡ ἐν κόλπῳ σου, ἢ φίλος ἴσος τῆς ψυχῆς σου, λάθρα λέγων Βαδίσωμεν καὶ λατρεύσωμεν θεοῖς ἑτέροις οὓς οὐκ ᾔδεις σὺ καὶ οἱ πατέρες σου,",
+        "VUL": "Si tibi voluerit persuadere frater tuus filius matris tuæ, aut filius tuus vel filia, sive uxor quæ est in sinu tuo, aut amicus, quem diligis ut animam tuam, clam dicens : Eamus, et serviamus diis alienis, quos ignoras tu, et patres tui,",
+        "SYN": "Если будет уговаривать тебя тайно брат твой, [сын отца твоего или] сын матери твоей, или сын твой, или дочь твоя, или жена на лоне твоем, или друг твой, который для тебя, как душа твоя, говоря: \"пойдем и будем служить богам иным, которых не знал ты и отцы твои\",",
+        "NEO": "Et ce prophète ou ce songeur sera mis à mort, car il a prêché la révolte contre \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, qui vous a fait sortir du pays d’Égypte et vous a délivrés de la maison de servitude, pour te détourner de la voie dans laquelle \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’a ordonné de marcher. Tu ôteras ainsi le mal du milieu de toi.",
+        "NAB": "But that prophet or that dreamer shall be put to death, because, in order to lead you astray from the way which the LORD, your God, has directed you to take, he has preached apostasy from the LORD, your God, who brought you out of the land of Egypt and ransomed you from that place of slavery. Thus shall you purge the evil from your midst.",
+        "VAT_ES": "Y ese profeta o ese intérprete de sueños deberá ser castigado con la muerte, por haber incitado a la rebelión contra el Señor, tu Dios –el que te hizo salir de Egipto y te rescató de la esclavitud– para desviarte del camino por donde el te ordenó que fueras. Así harás desaparecer el mal de entre ustedes.",
+        "CEI": "Quanto a quel profeta o a quel sognatore, egli dovrà essere messo a morte, perché ha proposto l'apostasia dal Signore, dal vostro Dio, che vi ha fatti uscire dal paese di Egitto e vi ha riscattati dalla condizione servile, per trascinarti fuori della via per la quale il Signore tuo Dio ti ha ordinato di camminare. Così estirperai il male da te."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּ֣י יְסִֽיתְ/ךָ֡ אָחִ֣י/ךָ בֶן אִ֠מֶּ/ךָ אֽוֹ בִנְ/ךָ֨ אֽוֹ בִתְּ/ךָ֜ א֣וֹ אֵ֣שֶׁת חֵיקֶ֗/ךָ א֧וֹ רֵֽעֲ/ךָ֛ אֲשֶׁ֥ר כְּ/נַפְשְׁ/ךָ֖ בַּ/סֵּ֣תֶר לֵ/אמֹ֑ר נֵֽלְכָ֗ה וְ/נַֽעַבְדָה֙ אֱלֹהִ֣ים אֲחֵרִ֔ים אֲשֶׁר֙ לֹ֣א יָדַ֔עְתָּ אַתָּ֖ה וַ/אֲבֹתֶֽי/ךָ׃",
+        "LXX": "ἀπὸ τῶν θεῶν τῶν ἐθνῶν τῶν περικύκλῳ ὑμῶν, τῶν ἐγγιζόντων σοι ἢ τῶν μακρὰν ἀπὸ σοῦ, ἀπ’ ἄκρου τῆς γῆς ἕως ἄκρου τῆς γῆς·",
+        "VUL": "cunctarum in circuitu gentium, quæ juxta vel procul sunt, ab initio usque ad finem terræ,",
+        "SYN": "богам тех народов, которые вокруг тебя, близких к тебе или отдаленных от тебя, от одного края земли до другого, --",
+        "NEO": "Si ton frère, fils de ta mère, ou ton fils, ou ta fille, ou la femme qui repose sur ton sein, ou ton ami qui est comme ta propre âme, t’incite en secret, en disant : « Allons, et servons d’autres dieux, » — des dieux que n’ont connus ni toi ni tes pères,",
+        "NAB": "\"If your own full brother, or your son or daughter, or your beloved wife, or your intimate friend, entices you secretly to serve other gods, whom you and your fathers have not known,",
+        "VAT_ES": "Si tu hermano –el hijo de tu padre o de tu madre– tu hijo o tu hija, la esposa que duerme en tus brazos, o tu amigo más íntimo, trata de seducirte en secreto, diciendo: «Vamos a servir a otros dioses», que ni tú ni tus padres conocieron",
+        "CEI": "Qualora il tuo fratello, figlio di tuo padre o figlio di tua madre, o il figlio o la figlia o la moglie che riposa sul tuo petto o l'amico che è come te stesso, t'istighi in segreto, dicendo: Andiamo, serviamo altri dei, dei che né tu né i tuoi padri avete conosciuti,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "מֵ/אֱלֹהֵ֣י הָֽ/עַמִּ֗ים אֲשֶׁר֙ סְבִיבֹ֣תֵי/כֶ֔ם הַ/קְּרֹבִ֣ים אֵלֶ֔י/ךָ א֖וֹ הָ/רְחֹקִ֣ים מִמֶּ֑/ךָּ מִ/קְצֵ֥ה הָ/אָ֖רֶץ וְ/עַד קְצֵ֥ה הָ/אָֽרֶץ׃",
+        "LXX": "οὐ συνθελήσεις αὐτῷ καὶ οὐκ εἰσακούσῃ αὐτοῦ, καὶ οὐ φείσεται ὁ ὀφθαλμός σου ἐπ’ αὐτῷ, οὐκ ἐπιποθήσεις ἐπ’ αὐτῷ οὐδ’ οὐ μὴ σκεπάσῃς αὐτόν.",
+        "VUL": "non acquiescas ei, nec audias, neque parcat ei oculus tuus ut miserearis et occultes eum,",
+        "SYN": "то не соглашайся с ним и не слушай его; и да не пощадит его глаз твой, не жалей его и не прикрывай его,",
+        "NEO": "d’entre les dieux des peuples qui vous entourent, près de toi ou loin de toi, d’un bout de la terre à l’autre, —",
+        "NAB": "gods of any other nations, near at hand or far away, from one end of the earth to the other:",
+        "VAT_ES": "–los dioses de los pueblos próximos o lejanos que están a tu alrededor, de un extremo al otro de la tierra–",
+        "CEI": "divinità dei popoli che vi circondano, vicini a te o da te lontani da una estremità all'altra della terra,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לֹא תֹאבֶ֣ה ל֔/וֹ וְ/לֹ֥א תִשְׁמַ֖ע אֵלָ֑י/ו וְ/לֹא תָח֤וֹס עֵֽינְ/ךָ֙ עָלָ֔י/ו וְ/לֹֽא תַחְמֹ֥ל וְ/לֹֽא תְכַסֶּ֖ה עָלָֽי/ו׃",
+        "LXX": "ἀναγγέλλων ἀναγγελεῖς περὶ αὐτοῦ, αἱ χεῖρές σου ἔσονται ἐπ’ αὐτὸν ἐν πρώτοις ἀποκτεῖναι αὐτόν, καὶ αἱ χεῖρες παντὸς τοῦ λαοῦ ἐπ’ ἐσχάτῳ·",
+        "VUL": "sed statim interficies : sit primum manus tua super eum, et postea omnis populus mittat manum.",
+        "SYN": "но убей его; твоя рука прежде _всех_ должна быть на нем, чтоб убить его, а потом руки всего народа;",
+        "NEO": "tu ne lui céderas pas et tu ne l’écouteras pas ; ton œil sera sans pitié pour lui, tu ne l’épargneras pas et tu ne le couvriras pas,",
+        "NAB": "do not yield to him or listen to him, nor look with pity upon him, to spare or shield him,",
+        "VAT_ES": "no cedas a sus instigaciones ni le hagas caso. Sé implacable con él, no lo perdones ni lo encubras.",
+        "CEI": "tu non dargli retta, non ascoltarlo; il tuo occhio non lo compianga; non risparmiarlo, non coprire la sua colpa."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּ֤י הָרֹג֙ תַּֽהַרְגֶ֔/נּוּ יָֽדְ/ךָ֛ תִּֽהְיֶה בּ֥/וֹ בָ/רִֽאשׁוֹנָ֖ה לַ/הֲמִית֑/וֹ וְ/יַ֥ד כָּל הָ/עָ֖ם בָּ/אַחֲרֹנָֽה׃",
+        "LXX": "καὶ λιθοβολήσουσιν αὐτὸν ἐν λίθοις, καὶ ἀποθανεῖται, ὅτι ἐζήτησεν ἀποστῆσαί σε ἀπὸ Κυρίου τοῦ θεοῦ σου τοῦ ἐξαγαγόντος σε ἐκ γῆς Αἰγύπτου, ἐξ οἴκου δουλίας.",
+        "VUL": "Lapidibus obrutus necabitur : quia voluit te abstrahere a Domino Deo tuo, qui eduxit te de terra Ægypti, de domo servitutis :",
+        "SYN": "побей его камнями до смерти, ибо он покушался отвратить тебя от Господа, Бога твоего, Который вывел тебя из земли Египетской, из дома рабства;",
+        "NEO": "mais tu le feras mourir ; ta main se lèvera la première contre lui pour le mettre à mort, et la main de tout le peuple ensuite ;",
+        "NAB": "but kill him. Your hand shall be the first raised to slay him; the rest of the people shall join in with you.",
+        "VAT_ES": "Tendrás que hacerlo morir irremediablemente. que tu mano sea la primera en levantarse contra él para quitarle la vida. y que después todo el pueblo haga lo mismo.",
+        "CEI": "Anzi devi ucciderlo: la tua mano sia la prima contro di lui per metterlo a morte; poi la mano di tutto il popolo;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/סְקַלְתּ֥/וֹ בָ/אֲבָנִ֖ים וָ/מֵ֑ת כִּ֣י בִקֵּ֗שׁ לְ/הַדִּֽיחֲ/ךָ֙ מֵ/עַל֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ הַ/מּוֹצִיאֲ/ךָ֛ מֵ/אֶ֥רֶץ מִצְרַ֖יִם מִ/בֵּ֥ית עֲבָדִֽים׃",
+        "LXX": "καὶ πᾶς Ἰσραὴλ ἀκούσας φοβηθήσεται, καὶ οὐ προσθήσει ἔτι ποιῆσαι κατὰ τὸ ῥῆμα τὸ πονηρὸν τοῦτο ἐν ὑμῖν.",
+        "VUL": "ut omnis Israël audiens timeat, et nequaquam ultra faciat quippiam hujus rei simile.",
+        "SYN": "весь Израиль услышит сие и убоится, и не станут впредь делать среди тебя такого зла.",
+        "NEO": "tu l’accableras de pierres jusqu’à ce qu’il meure, parce qu’il a cherché à te détourner de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, qui t’a fait sortir du pays d’Égypte, de la maison de servitude.",
+        "NAB": "You shall stone him to death, because he sought to lead you astray from the LORD, your God, who brought you out of the land of Egypt, that place of slavery.",
+        "VAT_ES": "Deberás apedrearlo hasta que muera, porque intento apartarte del Señor, tu Dios, que te hizo salir de Egipto, de un lugar de esclavitud.",
+        "CEI": "lapidalo e muoia, perché ha cercato di trascinarti lontano dal Signore tuo Dio che ti ha fatto uscire dal paese di Egitto, dalla condizione servile."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/כָל יִשְׂרָאֵ֔ל יִשְׁמְע֖וּ וְ/יִֽרָא֑וּ/ן וְ/לֹֽא יוֹסִ֣פוּ לַ/עֲשׂ֗וֹת כַּ/דָּבָ֥ר הָ/רָ֛ע הַ/זֶּ֖ה בְּ/קִרְבֶּֽ/ךָ׃",
+        "LXX": "Ἐὰν δὲ ἀκούσῃς ἐν μιᾷ τῶν πόλεών σου ὧν Κύριος ὁ θεός σου δίδωσίν σοι κατοικεῖν σε ἐκεῖ λεγόντων",
+        "VUL": "Si audieris in una urbium tuarum, quas Dominus Deus tuus dabit tibi ad habitandum, dicentes aliquos :",
+        "SYN": "Если услышишь о каком-либо из городов твоих, которые Господь, Бог твой, дает тебе для жительства,",
+        "NEO": "Tout Israël l’apprendra et sera dans la crainte, afin que l’on ne commette plus une action aussi criminelle au milieu de toi.",
+        "NAB": "And all Israel, hearing of it, shall fear and never again do such evil as this in your midst.",
+        "VAT_ES": "Todo Israel, cuando se entere, sentirá temor, y no volverá a cometerse esta infamia entre ustedes.",
+        "CEI": "Tutto Israele lo verrà a sapere, ne avrà timore e non commetterà in mezzo a te una tale azione malvagia."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כִּֽי תִשְׁמַ֞ע בְּ/אַחַ֣ת עָרֶ֗י/ךָ אֲשֶׁר֩ יְהוָ֨ה אֱלֹהֶ֜י/ךָ נֹתֵ֥ן לְ/ךָ֛ לָ/שֶׁ֥בֶת שָׁ֖ם לֵ/אמֹֽר׃",
+        "LXX": "Ἐξήλθοσαν ἄνδρες παράνομοι ἐξ ὑμῶν, καὶ ἀπέστησαν πάντας τοὺς κατοικοῦντας τὴν γῆν αὐτῶν λέγοντες Πορευθῶμεν καὶ λατρεύσωμεν θεοῖς ἑτέροις οὓς οὐκ ᾔδειτε·",
+        "VUL": "Egressi sunt filii Belial de medio tui, et averterunt habitatores urbis suæ, atque dixerunt : Eamus, et serviamus diis alienis quos ignoratis :",
+        "SYN": "что появились в нем нечестивые люди из среды тебя и соблазнили жителей города их, говоря: \"пойдем и будем служить богам иным, которых вы не знали\", --",
+        "NEO": "Si tu entends dire de l’une des villes que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’a données pour demeure :",
+        "NAB": "\"If, in any of the cities which the LORD, your God, gives you to dwell in, you hear it said",
+        "VAT_ES": "Si de una de las ciudades que te dio el Señor, tu Dios, para que vivas en ella, te llega esta noticia:",
+        "CEI": "Qualora tu senta dire di una delle tue città che il Signore tuo Dio ti dà per abitare,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "יָצְא֞וּ אֲנָשִׁ֤ים בְּנֵֽי בְלִיַּ֨עַל֙ מִ/קִּרְבֶּ֔/ךָ וַ/יַּדִּ֛יחוּ אֶת יֹשְׁבֵ֥י עִירָ֖/ם לֵ/אמֹ֑ר נֵלְכָ֗ה וְ/נַעַבְדָ֛ה אֱלֹהִ֥ים אֲחֵרִ֖ים אֲשֶׁ֥ר לֹא יְדַעְתֶּֽם׃",
+        "LXX": "καὶ ἐρωτήσεις καὶ ἐραυνήσεις σφόδρα, καὶ ἰδοὺ ἀληθῶς σαφῶς ὁ λόγος, γεγένηται τὸ βδέλυγμα τοῦτο ἐν ὑμῖν·",
+        "VUL": "quære sollicite et diligenter, rei veritate perspecta, si inveneris certum esse quod dicitur, et abominationem hanc opere perpetratam,",
+        "SYN": "то ты разыщи, исследуй и хорошо расспроси; и если это точная правда, что случилась мерзость сия среди тебя,",
+        "NEO": "« Des gens pervers, sortis du milieu de toi, ont séduit les habitants de leur ville, en disant : “Allons et servons d’autres dieux”, — des dieux que vous ne connaissez pas ! —",
+        "NAB": "that certain scoundrels have sprung up among you and have led astray the inhabitants of their city to serve other gods whom you have not known,",
+        "VAT_ES": "Gente despreciable de tu misma raza ha logrado seducir a los habitantes de su ciudad, diciendo» «Vamos a servir a otros dioses» –que tú no conociste–",
+        "CEI": "che uomini iniqui sono usciti in mezzo a te e hanno sedotto gli abitanti della loro città dicendo: Andiamo, serviamo altri dei, che voi non avete mai conosciuti,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/דָרַשְׁתָּ֧ וְ/חָקַרְתָּ֧ וְ/שָׁאַלְתָּ֖ הֵיטֵ֑ב וְ/הִנֵּ֤ה אֱמֶת֙ נָכ֣וֹן הַ/דָּבָ֔ר נֶעֶשְׂתָ֛ה הַ/תּוֹעֵבָ֥ה הַ/זֹּ֖את בְּ/קִרְבֶּֽ/ךָ׃",
+        "LXX": "ἀναιρῶν ἀνελεῖς πάντας τοὺς κατοικοῦντας ἐν τῇ γῇ ἐκείνῃ ἐν φόνῳ μαχαίρας, ἀναθέματι ἀναθεματιεῖτε αὐτὴν καὶ πάντα τὰ ἐν αὐτῇ·",
+        "VUL": "statim percuties habitatores urbis illius in ore gladii, et delebis eam ac omnia quæ in illa sunt, usque ad pecora.",
+        "SYN": "порази жителей того города острием меча, предай заклятию его и все, что в нем, и скот его _порази_ острием меча;",
+        "NEO": "tu feras une enquête, tu examineras, tu interrogeras avec soin. Si ce bruit est vrai et le fait établi, si cette abomination a été commise au milieu de toi,",
+        "NAB": "you must inquire carefully into the matter and investigate it thoroughly. If you find that it is true and an established fact that this abomination has been committed in your midst,",
+        "VAT_ES": "investiga el caso, examinalo e infórmate debidamente. Y si es verdad que la cosa es así, que se ha cometido semejante abominación,",
+        "CEI": "tu farai le indagini, investigherai, interrogherai con cura; se troverai che la cosa è vera, che il fatto sussiste e che un tale abominio è stato realmente commesso in mezzo a te,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "הַכֵּ֣ה תַכֶּ֗ה אֶת יֹֽשְׁבֵ֛י הָ/עִ֥יר ה/הוא הַ/הִ֖יא לְ/פִי חָ֑רֶב הַחֲרֵ֨ם אֹתָ֧/הּ וְ/אֶת כָּל אֲשֶׁר בָּ֛/הּ וְ/אֶת בְּהֶמְתָּ֖/הּ לְ/פִי חָֽרֶב׃",
+        "LXX": "καὶ πάντα τὰ σκῦλα αὐτῆς συνάξεις εἰς τὰς διόδους αὐτῆς, καὶ ἐνπρήσεις τὴν πόλιν ἐν πυρὶ καὶ πάντα τὰ σκῦλα αὐτῆς πανδημεὶ ἐναντίον Κυρίου τοῦ θεοῦ σου· καὶ ἔσται ἀοίκητος εἰς τὸν αἰῶνα, οὐκ ἀνοικοδομηθήσεται ἔτι.",
+        "VUL": "Quidquid etiam supellectilis fuerit, congregabis in medio platearum ejus, et cum ipsa civitate succendes, ita ut universa consumas Domino Deo tuo, et sit tumulus sempiternus. Non ædificabitur amplius,",
+        "SYN": "всю же добычу его собери на средину площади его и сожги огнем город и всю добычу его во всесожжение Господу, Богу твоему, и да будет он вечно в развалинах, не должно никогда вновь созидать его;",
+        "NEO": "alors, tu ne manqueras pas de passer au fil de l’épée les habitants de cette ville, la dévouant par anathème avec tout ce qu’elle contient, et tu passeras aussi son bétail au fil de l’épée.",
+        "NAB": "you shall put the inhabitants of that city to the sword, dooming the city and all life that is in it, even its cattle, to the sword.",
+        "VAT_ES": "pasa sin compasión al filo de la espada a los habitantes de la ciudad, y conságrala al exterminio total con todo lo que hay en ella, incluido su ganado.",
+        "CEI": "allora dovrai passare a fil di spada gli abitanti di quella città, la voterai allo sterminio, con quanto contiene e passerai a fil di spada anche il suo bestiame."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/אֶת כָּל שְׁלָלָ֗/הּ תִּקְבֹּץ֮ אֶל תּ֣וֹךְ רְחֹבָ/הּ֒ וְ/שָׂרַפְתָּ֨ בָ/אֵ֜שׁ אֶת הָ/עִ֤יר וְ/אֶת כָּל שְׁלָלָ/הּ֙ כָּלִ֔יל לַ/יהוָ֖ה אֱלֹהֶ֑י/ךָ וְ/הָיְתָה֙ תֵּ֣ל עוֹלָ֔ם לֹ֥א תִבָּנֶ֖ה עֽוֹד׃",
+        "LXX": "καὶ οὐ προσκολληθήσεται ἐν τῇ χειρί σου οὐδὲν ἀπὸ τοῦ ἀναθέματος, ἵνα ἀποστραφῇ Κύριος ἀπὸ θυμοῦ τῆς ὀργῆς αὐτοῦ, καὶ δώσει σοι ἔλεος καὶ ἐλεήσει σε καὶ πληθυνεῖ σε ὃν τρόπον ὤμοσεν τοῖς πατράσιν σου,",
+        "VUL": "et non adhærebit de illo anathemate quidquam in manu tua : ut avertatur Dominus ab ira furoris sui, et misereatur tui, multiplicetque te sicut juravit patribus tuis,",
+        "SYN": "ничто из заклятого да не прилипнет к руке твоей, дабы укротил Господь ярость гнева Своего, и дал тебе милость и помиловал тебя, и размножил тебя, [как Он говорил тебе,] как клялся отцам твоим,",
+        "NEO": "Tu amasseras tout son butin au milieu de la place, et tu brûleras entièrement au feu la ville avec tout son butin, pour \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu ; elle sera pour toujours un monceau de ruines, elle ne sera plus rebâtie.",
+        "NAB": "Having heaped up all its spoils in the middle of its square, you shall burn the city with all its spoils as a whole burnt offering to the LORD, your God. Let it be a heap of ruins forever, never to be rebuilt.",
+        "VAT_ES": "Reúne luego todos sus despojos en medio de la plaza, e incendia la ciudad con todos esos despojos, como un holocausto para el Señor, tu Dios. Ella se convertirá para siempre en un montón de ruinas y nunca más será reconstruida.",
+        "CEI": "Poi radunerai tutto il bottino in mezzo alla piazza e brucerai nel fuoco la città e l'intero suo bottino, sacrificio per il Signore tuo Dio; diventerà una rovina per sempre e non sarà più ricostruita."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא יִדְבַּ֧ק בְּ/יָדְ/ךָ֛ מְא֖וּמָה מִן הַ/חֵ֑רֶם לְמַעַן֩ יָשׁ֨וּב יְהוָ֜ה מֵ/חֲר֣וֹן אַפּ֗/וֹ וְ/נָֽתַן לְ/ךָ֤ רַחֲמִים֙ וְ/רִֽחַמְ/ךָ֣ וְ/הִרְבֶּ֔/ךָ כַּ/אֲשֶׁ֥ר נִשְׁבַּ֖ע לַ/אֲבֹתֶֽי/ךָ׃",
+        "LXX": "ἐὰν ἀκούσῃς τῆς φωνῆς Κυρίου τοῦ θεοῦ σου, φυλάσσειν τὰς ἐντολὰς αὐτοῦ ὅσας ἐγὼ ἐντέλλομαί σοι σήμερον, ποιεῖν τὸ ἀρεστὸν καὶ τὸ καλὸν ἐναντίον Κυρίου τοῦ θεοῦ σου.",
+        "VUL": "quando audieris vocem Domini Dei tui custodiens omnia præcepta ejus, quæ ego præcipio tibi hodie, ut facias quod placitum est in conspectu Domini Dei tui.",
+        "SYN": "если будешь слушать гласа Господа, Бога твоего, соблюдая все заповеди Его, которые ныне заповедую тебе, делая [доброе и] угодное пред очами Господа, Бога твоего.",
+        "NEO": "Rien de ce qui aura été dévoué par anathème ne s’attachera à ta main, afin que \\+w Yahweh|strong=\"H3068\"\\+w** revienne de l’ardeur de sa colère, qu’il te fasse grâce et miséricorde, et qu’il te multiplie, comme il l’a juré à tes pères,",
+        "NAB": "You shall not retain anything that is doomed, that the blazing wrath of the LORD may die down and he may show you mercy and in his mercy for you may multiply you as he promised your fathers on oath;",
+        "VAT_ES": "Y no retengas nada de lo que debe ser consagrado al exterminio. Así el Señor aplacará el ardor de su ira, se apiadará y tendrá misericordia de ti, y te multiplicará, como lo juró a tus padres,",
+        "CEI": "Nulla di ciò che sarà votato allo sterminio si attaccherà alle tue mani, perché il Signore desista dalla sua ira ardente, ti conceda misericordia, abbia pietà di te e ti moltiplichi come ha giurato ai tuoi padri,"
+      }
+    }
+  }
+}

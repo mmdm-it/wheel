@@ -1,0 +1,591 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_018",
+  "book_key": "NUME",
+  "sequence": 18,
+  "chapter_in": {
+    "MT": 18,
+    "VUL": 18,
+    "LXX": 18
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֶֽל אַהֲרֹ֔ן אַתָּ֗ה וּ/בָנֶ֤י/ךָ וּ/בֵית אָבִ֨י/ךָ֙ אִתָּ֔/ךְ תִּשְׂא֖וּ אֶת עֲוֺ֣ן הַ/מִּקְדָּ֑שׁ וְ/אַתָּה֙ וּ/בָנֶ֣י/ךָ אִתָּ֔/ךְ תִּשְׂא֖וּ אֶת עֲוֺ֥ן כְּהֻנַּתְ/כֶֽם׃",
+        "LXX": "Καὶ εἶπεν Κύριος πρὸς Ἀαρὼν λέγων Σὺ καὶ οἱ υἱοί σου καὶ ὁ οἶκος πατριᾶς σου λήμψεσθε τὰς ἀπαρχὰς τῶν ἁγίων· σὺ καὶ οἱ υἱοί σου λήμψεσθε τὰς ἁμαρτίας τῆς ἱερατίας ὑμῶν.",
+        "VUL": "Dixitque Dominus ad Aaron : Tu, et filii tui, et domus patris tui tecum, portabitis iniquitatem sanctuarii : et tu et filii tui simul sustinebitis peccata sacerdotii vestri.",
+        "SYN": "И сказал Господь Аарону: ты и сыны твои и дом отца твоего с тобою понесете на себе грех за _небрежность_ _во_ святилище; и ты и сыны твои с тобою понесете на себе грех за _неисправность_ в священстве вашем.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Aaron : « Toi et tes fils, et la maison de ton père avec toi, vous porterez l’iniquité du sanctuaire ; toi et tes fils avec toi, vous porterez l’iniquité de votre sacerdoce.",
+        "NAB": "The LORD said to Aaron, \"You and your sons as well as the other members of your ancestral house shall be responsible for the sanctuary; but the responsibility of the priesthood shall rest on you and your sons alone.",
+        "VAT_ES": "El Señor dijo a Aarón: Tú, tus hijos y tu casa paterna, cargarán con las faltas contra el Santuario; pero tú y tus hijos solamente cargarán con las faltas contra el ejercicio del sacerdocio.",
+        "CEI": "Il Signore disse ad Aronne: \"Tu, i tuoi figli e la casa di tuo padre con te porterete il peso delle iniquità commesse nel santuario; tu e i tuoi figli porterete il peso delle iniquità commesse nell'esercizio del vostro sacerdozio."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/גַ֣ם אֶת אַחֶי/ךָ֩ מַטֵּ֨ה לֵוִ֜י שֵׁ֤בֶט אָבִ֨י/ךָ֙ הַקְרֵ֣ב אִתָּ֔/ךְ וְ/יִלָּו֥וּ עָלֶ֖י/ךָ וִֽ/ישָׁרְת֑וּ/ךָ וְ/אַתָּה֙ וּ/בָנֶ֣י/ךָ אִתָּ֔/ךְ לִ/פְנֵ֖י אֹ֥הֶל הָ/עֵדֻֽת׃",
+        "LXX": "καὶ τοὺς ἀδελφούς σου, φυλὴν Λευεί, δῆμον τοῦ πατρός σου, προσαγάγου πρὸς σεαυτόν, καὶ προστεθήτωσάν σοι καὶ λειτουργείτωσάν σοι· καὶ σὺ καὶ οἱ υἱοί σου μετὰ σοῦ ἀπέναντι τῆς σκηνῆς τοῦ μαρτυρίου.",
+        "VUL": "Sed et fratres tuos de tribu Levi, et sceptrum patris tui sume tecum, præstoque sint, et ministrent tibi : tu autem et filii tui ministrabitis in tabernaculo testimonii.",
+        "SYN": "Также и братьев твоих, колено Левиино, племя отца твоего, возьми себе: пусть они будут при тебе и служат тебе, а ты и сыны твои с тобою _будете_ при скинии откровения;",
+        "NEO": "Fais aussi approcher avec toi du sanctuaire tes autres frères, la tribu de Lévi, la tribu de ton père, afin qu’ils te soient adjoints et qu’ils te servent, lorsque toi, et tes fils avec toi, vous serez devant la tente du témoignage.",
+        "NAB": "Bring with you also your other kinsmen of the tribe of Levi, your ancestral tribe, as your associates and assistants, while you and your sons are in front of the tent of the commandments.",
+        "VAT_ES": "También asociarás a tus hermanos de la tribu de Leví –tu tribu paterna– para que colaboren contigo y te sirvan como ministros, a ti y a tus hijos, en la Carpa del Testimonio.",
+        "CEI": "Anche i tuoi fratelli, la tribù di Levi, la tribù di tuo padre, farai accostare a te, perché ti siano accanto e ti servano quando tu e i tuoi figli con te sarete davanti alla tenda della testimonianza."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/שָֽׁמְרוּ֙ מִֽשְׁמַרְתְּ/ךָ֔ וּ/מִשְׁמֶ֖רֶת כָּל הָ/אֹ֑הֶל אַךְ֩ אֶל כְּלֵ֨י הַ/קֹּ֤דֶשׁ וְ/אֶל הַ/מִּזְבֵּ֨חַ֙ לֹ֣א יִקְרָ֔בוּ וְ/לֹֽא יָמֻ֥תוּ גַם הֵ֖ם גַּם אַתֶּֽם׃",
+        "LXX": "καὶ φυλάξονται τὰς φυλακάς σου καὶ τὰς φυλακὰς τῆς σκηνῆς· πλὴν πρὸς τὰ σκεύη τὰ ἅγια καὶ πρὸς τὸ θυσιαστήριον οὐ προσελεύσονται, καὶ οὐκ ἀποθανοῦνται καὶ οὗτοι καὶ ὑμεῖς.",
+        "VUL": "Excubabuntque Levitæ ad præcepta tua, et ad cuncta opera tabernaculi : ita dumtaxat ut ad vasa sanctuarii et ad altare non accedant, ne et illi moriantur, et vos pereatis simul.",
+        "SYN": "пусть они отправляют службу тебе и службу во всей скинии; только чтобы не приступали к вещам святилища и к жертвеннику, дабы не умереть и им и вам.",
+        "NEO": "Ils rempliront ton service et le service de toute la tente ; mais ils ne s’approcheront ni des ustensiles du sanctuaire, ni de l’autel, de peur que vous ne mouriez, eux et vous.",
+        "NAB": "They shall look after your persons and the whole tent; however, they shall not come near the sacred vessels or the altar, lest both they and you die.",
+        "VAT_ES": "Ellos desempeñarán tareas para ti y para toda la Carpa, pero no tendrán ningún contacto con los utensilios del Santuario o con el altar, no sea que mueran ellos y ustedes.",
+        "CEI": "Essi staranno al tuo servizio e al servizio di tutta la tenda; soltanto non si accosteranno agli arredi del santuario né all'altare, perché non moriate gli uni e gli altri."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/נִלְו֣וּ עָלֶ֔י/ךָ וְ/שָֽׁמְר֗וּ אֶת מִשְׁמֶ֨רֶת֙ אֹ֣הֶל מוֹעֵ֔ד לְ/כֹ֖ל עֲבֹדַ֣ת הָ/אֹ֑הֶל וְ/זָ֖ר לֹא יִקְרַ֥ב אֲלֵי/כֶֽם׃",
+        "LXX": "καὶ προστεθήσονται πρὸς σέ, καὶ φυλάξονται τὰς φυλακὰς τῆς σκηνῆς τοῦ μαρτυρίου κατὰ πάσας τὰς λειτουργίας τῆς σκηνῆς, καὶ ὁ ἀλλογενὴς οὐ προσελεύσεται πρὸς σέ.",
+        "VUL": "Sint autem tecum, et excubent in custodiis tabernaculi, et in omnibus cæremoniis ejus. Alienigena non miscebitur vobis.",
+        "SYN": "Пусть они будут при тебе и отправляют службу в скинии собрания, все работы по скинии; а посторонний не должен приближаться к вам.",
+        "NEO": "Ils te seront adjoints, et ils rempliront le service de la tente de réunion, pour tout le travail de la tente. Aucun étranger n’approchera de vous.",
+        "NAB": "As your associates they shall have charge of all the work connected with the meeting tent. But no layman shall come near you.",
+        "VAT_ES": "Deberán colaborar contigo y ejecutar las tareas de la Carpa del Encuentro, prestando toda clase de servicios. Ningún extraño se acercará a ustedes",
+        "CEI": "Essi saranno accanto a te e saranno addetti alla custodia della tenda del convegno per tutto il servizio della tenda e nessun estraneo si accosterà a voi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וּ/שְׁמַרְתֶּ֗ם אֵ֚ת מִשְׁמֶ֣רֶת הַ/קֹּ֔דֶשׁ וְ/אֵ֖ת מִשְׁמֶ֣רֶת הַ/מִּזְבֵּ֑חַ וְ/לֹֽא יִהְיֶ֥ה ע֛וֹד קֶ֖צֶף עַל בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ φυλάξεσθε τὰς φυλακὰς τῶν ἁγίων καὶ τὰς φυλακὰς τοῦ θυσιαστηρίου, καὶ οὐκ ἔσται θυμὸς ἐν τοῖς υἱοῖς Ἰσραήλ.",
+        "VUL": "Excubate in custodia sanctuarii, et in ministerio altaris : ne oriatur indignatio super filios Israël.",
+        "SYN": "Так отправляйте службу во святилище и при жертвеннике, дабы не было впредь гнева на сынов Израилевых;",
+        "NEO": "Vous remplirez le service du sanctuaire et le service de l’autel, afin qu’il n’y ait plus de colère contre les enfants d’Israël.",
+        "NAB": "You shall have charge of the sanctuary and of the altar, that wrath may not fall again upon the Israelites.",
+        "VAT_ES": "mientras realizan las funciones del Santuario o del altar, para que la ira del Señor no se vuelva a desatar contra los israelitas.",
+        "CEI": "Voi sarete addetti alla custodia del santuario e dell'altare, perché non vi sia più ira contro gli Israeliti."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֗י הִנֵּ֤ה לָקַ֨חְתִּי֙ אֶת אֲחֵי/כֶ֣ם הַ/לְוִיִּ֔ם מִ/תּ֖וֹךְ בְּנֵ֣י יִשְׂרָאֵ֑ל לָ/כֶ֞ם מַתָּנָ֤ה נְתֻנִים֙ לַֽ/יהוָ֔ה לַ/עֲבֹ֕ד אֶת עֲבֹדַ֖ת אֹ֥הֶל מוֹעֵֽד׃",
+        "LXX": "καὶ ἐγὼ εἴληφα τοὺς ἀδελφοὺς ὑμῶν τοὺς Λευείτας ἐκ μέσου υἱῶν Ἰσραήλ, δόμα δεδομένον Κυρίῳ, λειτουργεῖν τὰς λειτουργίας τῆς σκηνῆς τοῦ μαρτυρίου·",
+        "VUL": "Ego dedi vobis fratres vestros Levitas de medio filiorum Israël, et tradidi donum Domino, ut serviant in ministeriis tabernaculi ejus.",
+        "SYN": "ибо братьев ваших, левитов, Я взял от сынов Израилевых и дал их вам, в дар Господу, для отправления службы при скинии собрания;",
+        "NEO": "Voici, j’ai pris vos frères les lévites du milieu des enfants d’Israël ; donnés à \\+w Yahweh|strong=\"H3068\"\\+w**, ils vous sont remis en don pour faire le travail de la tente de réunion.",
+        "NAB": "\"Remember, it is I who have taken your kinsmen, the Levites, from the body of the Israelites; they are a gift to you, dedicated to the LORD for the service of the meeting tent.",
+        "VAT_ES": "Yo elijo a tus hermanos –los descendientes de Leví– entre todos los israelitas: ellos han sido puestos a disposición de ustedes, como dedicados al Señor, para prestar servicios en la Carpa del Encuentro.",
+        "CEI": "Quanto a me, ecco, io ho preso i vostri fratelli, i leviti, tra gli Israeliti; dati al Signore, essi sono rimessi in dono a voi per prestare servizio nella tenda del convegno."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֣ה וּ/בָנֶ֣י/ךָ אִ֠תְּ/ךָ תִּשְׁמְר֨וּ אֶת כְּהֻנַּתְ/כֶ֜ם לְ/כָל דְּבַ֧ר הַ/מִּזְבֵּ֛חַ וּ/לְ/מִ/בֵּ֥ית לַ/פָּרֹ֖כֶת וַ/עֲבַדְתֶּ֑ם עֲבֹדַ֣ת מַתָּנָ֗ה אֶתֵּן֙ אֶת כְּהֻנַּתְ/כֶ֔ם וְ/הַ/זָּ֥ר הַ/קָּרֵ֖ב יוּמָֽת׃",
+        "LXX": "καὶ σὺ καὶ οἱ υἱοί σου μετὰ σοῦ διατηρήσετε τὴν ἱερατίαν ὑμῶν, κατὰ πάντα τρόπον τοῦ θυσιαστηρίου καὶ τὸ ἔνδοθεν τοῦ καταπετάσματος, καὶ λειτουργήσετε τὰς λειτουργίας δόμα τῆς ἱερατίας ὑμῶν· καὶ ὁ ἀλλογενὴς ὁ προσπορευόμενος ἀποθανεῖται.",
+        "VUL": "Tu autem et filii tui custodite sacerdotium vestrum : et omnia quæ ad cultum altaris pertinent, et intra velum sunt, per sacerdotes administrabuntur : si quis externus accesserit, occidetur.",
+        "SYN": "и ты и сыны твои с тобою наблюдайте священство ваше во всем, что принадлежит жертвеннику и что внутри за завесою, и служите; вам даю Я в дар службу священства, а посторонний, приступивший, предан будет смерти.",
+        "NEO": "Toi et tes fils avec toi, vous remplirez votre sacerdoce pour tout ce qui concerne l’autel et pour ce qui est en dedans du voile : vous ferez ce travail. Comme une fonction en pur don, je vous confère votre sacerdoce. L’étranger qui approchera sera mis à mort. »",
+        "NAB": "But only you and your sons are to have charge of performing the priestly functions in whatever concerns the altar and the room within the veil. I give you the priesthood as a gift. Any layman who draws near shall be put to death.\"",
+        "VAT_ES": "Tú y tus hijos, en cambio, ejercerán las funciones sacerdotales en todo lo concerniente al altar y a lo que está detrás del velo. Yo hago del sacerdocio de ustedes un servicio de dedicación: el extraño que se acerque será castigado con la muerte.",
+        "CEI": "Tu e i tuoi figli con te eserciterete il vostro sacerdozio per quanto riguarda l'altare ciò che è oltre il velo; compirete il vostro ministero. Io vi dò l'esercizio del sacerdozio come un dono; l'estraneo che si accosterà sarà messo a morte\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר יְהוָה֮ אֶֽל אַהֲרֹן֒ וַ/אֲנִי֙ הִנֵּ֣ה נָתַ֣תִּֽי לְ/ךָ֔ אֶת מִשְׁמֶ֖רֶת תְּרוּמֹתָ֑/י לְ/כָל קָדְשֵׁ֣י בְנֵֽי יִ֠שְׂרָאֵל לְ/ךָ֨ נְתַתִּ֧י/ם לְ/מָשְׁחָ֛ה וּ/לְ/בָנֶ֖י/ךָ לְ/חָק עוֹלָֽם׃",
+        "LXX": "Καὶ ἐλάλησεν κύριος πρὸς Ἀαρών Καὶ ἐγὼ ἰδοὺ δέδωκα ὑμῖν τὴν διατήρησιν τῶν ἀπαρχῶν ἀπὸ πάντων τῶν ἡγιασμένων μοι παρὰ τῶν υἱῶν Ἰσραήλ· σοὶ δέδωκα αὐτὰ εἰς γέρας καὶ τοῖς υἱοῖς σου μετὰ σέ, νόμιμον αἰώνιον.",
+        "VUL": "Locutusque est Dominus ad Aaron : Ecce dedi tibi custodiam primitiarum mearum. Omnia quæ sanctificantur a filiis Israël, tradidi tibi et filiis tuis pro officio sacerdotali legitima sempiterna.",
+        "SYN": "И сказал Господь Аарону: вот, Я поручаю тебе наблюдать за возношениями Мне; от всего, посвящаемого сынами Израилевыми, Я дал тебе и сынам твоим, ради священства вашего, уставом вечным;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Aaron : « Voici, je te donne le service de ce qui est prélevé pour moi, de toutes les choses consacrées des enfants d’Israël ; je te les donne, à raison de l’onction que tu as reçue, à toi et à tes fils, par une loi perpétuelle.",
+        "NAB": "The LORD said to Aaron, \"I myself have given you charge of the contributions made to me in the various sacred offerings of the Israelites; by perpetual ordinance I have assigned them to you and to your sons as your priestly share.",
+        "VAT_ES": "El Señor dijo a Aarón: Yo te encomiendo el cuidado de mis ofrendas, es decir, de los dones sagrados de los israelitas. Te entrego todo eso, a ti y a tus hijos, como algo que les es debido, como un derecho irrevocable.",
+        "CEI": "Il Signore disse ancora ad Aronne: \"Ecco, io ti dò il diritto a tutte le cose consacrate dagli Israeliti, cioè a quelle che mi sono offerte per elevazione: io le dò a te e ai tuoi figli, come diritto della tua unzione, per legge perenne."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "זֶֽה יִהְיֶ֥ה לְ/ךָ֛ מִ/קֹּ֥דֶשׁ הַ/קֳּדָשִׁ֖ים מִן הָ/אֵ֑שׁ כָּל קָ֠רְבָּנָ/ם לְֽ/כָל מִנְחָתָ֞/ם וּ/לְ/כָל חַטָּאתָ֗/ם וּ/לְ/כָל אֲשָׁמָ/ם֙ אֲשֶׁ֣ר יָשִׁ֣יבוּ לִ֔/י קֹ֣דֶשׁ קָֽדָשִׁ֥ים לְ/ךָ֛ ה֖וּא וּ/לְ/בָנֶֽי/ךָ׃",
+        "LXX": "καὶ τοῦτο ἔστω ὑμῖν ἀπὸ τῶν ἡγιασμένων ἁγίων τῶν καρπωμάτων, ἀπὸ πάντων τῶν δώρων αὐτῶν καὶ ἀπὸ πάντων τῶν θυσιασμάτων καὶ ἀπὸ πάσης πλημμελίας αὐτῶν καὶ ἀπὸ πασῶν τῶν ἁμαρτιῶν, ὅσα ἀποδιδόασίν μοι ἀπὸ πάντων τῶν ἁγίων, σοὶ ἔσται καὶ τοῖς υἱοῖς σου.",
+        "VUL": "Hæc ergo accipies de his, quæ sanctificantur et oblata sunt Domino. Omnis oblatio, et sacrificium, et quidquid pro peccato atque delicto redditur mihi, et cedit in Sancta sanctorum, tuum erit, et filiorum tuorum.",
+        "SYN": "вот, что принадлежит тебе из святынь великих, от сожигаемого: всякое приношение их хлебное, и всякая жертва их за грех, и всякая жертва их повинности, что они принесут Мне; это великая святыня тебе и сынам твоим.",
+        "NEO": "Voici ce qui te reviendra des choses très saintes, sauf ce que le feu doit consumer : toutes leurs offrandes, savoir toutes leurs oblations, tous leurs sacrifices pour le péché et tous leurs sacrifices de réparation qu’ils me rendront : tout cela, comme choses très saintes, sera pour toi et pour tes fils.",
+        "NAB": "You shall have the right to share in the oblations that are most sacred, in whatever they offer me as cereal offerings or sin offerings or guilt offerings; these shares shall accrue to you and to your sons.",
+        "VAT_ES": "Esto es lo que te corresponde de los sacrificios más santos, de las ofrendas quemadas. Todas las ofrendas que me presentan como sacrificios santísimos, a saber, todas las oblaciones, los sacrificios por el pecado y los sacrificios de reparación, serán para ti y para tus hijos.",
+        "CEI": "Questo ti apparterrà fra le cose santissime, fra le loro offerte consumate dal fuoco: ogni oblazione, ogni sacrificio espiatorio e ogni sacrificio di riparazione che mi presenteranno; sono tutte cose santissime che apparterranno a te e ai tuoi figli."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "בְּ/קֹ֥דֶשׁ הַ/קֳּדָשִׁ֖ים תֹּאכֲלֶ֑/נּוּ כָּל זָכָר֙ יֹאכַ֣ל אֹת֔/וֹ קֹ֖דֶשׁ יִֽהְיֶה לָּֽ/ךְ׃",
+        "LXX": "ἐν τῷ ἁγίῳ τῶν ἁγίων φάγεσθε αὐτά· πᾶν ἀρσενικὸν φάγεται αὐτά, σὺ καὶ οἱ υἱοί σου· ἅγια ἔσται σοι.",
+        "VUL": "In sanctuario comedes illud : mares tantum edent ex eo, quia consecratum est tibi.",
+        "SYN": "На святейшем месте ешьте это; все мужеского пола могут есть, [ты и сыны твои]; это святынею да будет для тебя.",
+        "NEO": "Tu les mangeras dans un lieu très saint ; tout mâle en mangera ; elles seront saintes pour toi.",
+        "NAB": "In eating them you shall treat them as most sacred; every male among you may partake of them. As sacred, they belong to you.",
+        "VAT_ES": "Tú participarás de los dones más santos. Sólo los varones podrán comerlos y deberás tratarlos como algo sagrado.",
+        "CEI": "Le mangerai in luogo santissimo; ne mangerà ogni maschio; le tratterai come cose sante."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/זֶה לְּ/ךָ֞ תְּרוּמַ֣ת מַתָּנָ֗/ם לְ/כָל תְּנוּפֹת֮ בְּנֵ֣י יִשְׂרָאֵל֒ לְ/ךָ֣ נְתַתִּ֗י/ם וּ/לְ/בָנֶ֧י/ךָ וְ/לִ/בְנֹתֶ֛י/ךָ אִתְּ/ךָ֖ לְ/חָק עוֹלָ֑ם כָּל טָה֥וֹר בְּ/בֵיתְ/ךָ֖ יֹאכַ֥ל אֹתֽ/וֹ׃",
+        "LXX": "καὶ τοῦτο ἔσται ὑμῖν ἀπαρχῶν δομάτων αὐτῶν, ἀπὸ πάντων τῶν ἐπιθεμάτων τῶν υἱῶν Ἰσραήλ· σοὶ δέδωκα αὐτὰ καὶ τοῖς υἱοῖς σου καὶ ταῖς θυγατράσιν σου μετὰ σοῦ, νόμιμον αἰώνιον· πᾶς καθαρὸς ἐν τῷ οἴκῳ σου ἔδεται αὐτά.",
+        "VUL": "Primitias autem, quas voverint et obtulerint filii Israël, tibi dedi, et filiis tuis, ac filiabus tuis, jure perpetuo : qui mundus est in domo tua, vescetur eis.",
+        "SYN": "И вот, что тебе из возношений даров их: все возношения сынов Израилевых Я дал тебе и сынам твоим и дочерям твоим с тобою, уставом вечным; всякий чистый в доме твоем может есть это.",
+        "NEO": "Ceci encore t’appartient : ce qui est prélevé sur leurs dons, sur toute offrande balancée des enfants d’Israël ; je te le donne à toi, à tes fils et à tes filles avec toi, par une loi perpétuelle ; quiconque est pur dans ta maison en mangera.",
+        "NAB": "\"You shall also have what is removed from the gift in every wave offering of the Israelites; by perpetual ordinance I have assigned it to you and to your sons and daughters. All in your family who are clean may partake of it.",
+        "VAT_ES": "También será para ti lo que se toma de las ofrendas de los israelitas para ser ofrecido con el gesto de presentación. Yo te lo doy, a ti, a tus hijos y a tus hijas, como derecho irrevocable: podrán comerlo todos los miembros de tu casa que sean puros.",
+        "CEI": "Questo ancora ti apparterrà: i doni che gli Israeliti presenteranno con l'elevazione e tutte le loro offerte fatte con il rito di agitazione; io le dò a te, ai tuoi figli e alle tue figlie con te per legge perenne. Chiunque sarà mondo in casa tua ne potrà mangiare."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כֹּ֚ל חֵ֣לֶב יִצְהָ֔ר וְ/כָל חֵ֖לֶב תִּיר֣וֹשׁ וְ/דָגָ֑ן רֵאשִׁיתָ֛/ם אֲשֶׁר יִתְּנ֥וּ לַֽ/יהוָ֖ה לְ/ךָ֥ נְתַתִּֽי/ם׃",
+        "LXX": "πᾶσα ἀπαρχὴ ἐλαίου καὶ πᾶσα ἀπαρχὴ οἴνου, σίτου ἀπαρχὴ αὐτῶν, ὅσα ἂν δῶσι τῷ κυρίῳ, σοὶ δέδωκα αὐτά.",
+        "VUL": "Omnem medullam olei, et vini, ac frumenti, quidquid offerunt primitiarum Domino, tibi dedi.",
+        "SYN": "Все лучшее из елея и все лучшее из винограда и хлеба, начатки их, которые они дают Господу, Я отдал тебе;",
+        "NEO": "Tout le meilleur de l’huile, tout le meilleur du vin nouveau et du blé, leurs prémices qu’ils offrent à \\+w Yahweh|strong=\"H3068\"\\+w**, je te les donne.",
+        "NAB": "I have also assigned to you all the best of the new oil and of the new wine and grain that they give to the LORD as their first fruits;",
+        "VAT_ES": "Yo te doy lo mejor del aceite, del vino y del trigo, o sea las partes escogidas que los israelitas presentan al Señor.",
+        "CEI": "Ti dò anche tutte le primizie che al Signore offriranno: il meglio dell'olio, il meglio del mosto e del grano."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "בִּכּוּרֵ֞י כָּל אֲשֶׁ֧ר בְּ/אַרְצָ֛/ם אֲשֶׁר יָבִ֥יאוּ לַ/יהוָ֖ה לְ/ךָ֣ יִהְיֶ֑ה כָּל טָה֥וֹר בְּ/בֵיתְ/ךָ֖ יֹאכֲלֶֽ/נּוּ׃",
+        "LXX": "τὰ πρωτογενήματα πάντα ὅσα ἐν τῇ γῇ αὐτῶν, ὅσα ἂν ἐνέγκωσιν Κυρίῳ, σοὶ ἔσται· πᾶς καθαρὸς ἐν τῷ οἴκῳ σου ἔδεται αὐτά.",
+        "VUL": "Universa frugum initia, quas gignit humus, et Domino deportantur, cedent in usus tuos : qui mundus est in domo tua, vescetur eis.",
+        "SYN": "все первые произведения земли их, которые они принесут Господу, да будут твоими; всякий чистый в доме твоем может есть это.",
+        "NEO": "Les premiers produits de leur terre qu’ils apporteront à \\+w Yahweh|strong=\"H3068\"\\+w** seront pour toi. Quiconque est pur dans ta maison en mangera.",
+        "NAB": "and likewise, of whatever grows on their land, the first products that they bring in to the LORD shall be yours; all of your family who are clean may partake of them.",
+        "VAT_ES": "Las primicias de los productos de la tierra, que ellos ofrecen al Señor, serán para ti: podrán comerlas todos los miembros de tu casa que sean puros.",
+        "CEI": "Le primizie di quanto produrrà la loro terra che essi presenteranno al Signore saranno tue. Chiunque sarà mondo in casa tua ne potrà mangiare."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כָּל חֵ֥רֶם בְּ/יִשְׂרָאֵ֖ל לְ/ךָ֥ יִהְיֶֽה׃",
+        "LXX": "πᾶν ἀνατεθεματισμένον ἐν υἱοῖς Ἰσραὴλ σοὶ ἔσται.",
+        "VUL": "Omne quod ex voto reddiderint filii Israël, tuum erit.",
+        "SYN": "Все заклятое в земле Израилевой да будет твоим.",
+        "NEO": "Tout ce qui sera dévoué par anathème en Israël sera pour toi.",
+        "NAB": "Whatever is doomed in Israel shall be yours.",
+        "VAT_ES": "Todo lo que ha sido consagrado al exterminio total en Israel será para ti.",
+        "CEI": "Quanto sarà consacrato per voto di sterminio in Israele sarà tuo."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כָּל פֶּ֣טֶר רֶ֠חֶם לְֽ/כָל בָּשָׂ֞ר אֲשֶׁר יַקְרִ֧יבוּ לַֽ/יהוָ֛ה בָּ/אָדָ֥ם וּ/בַ/בְּהֵמָ֖ה יִֽהְיֶה לָּ֑/ךְ אַ֣ךְ פָּדֹ֣ה תִפְדֶּ֗ה אֵ֚ת בְּכ֣וֹר הָֽ/אָדָ֔ם וְ/אֵ֛ת בְּכֽוֹר הַ/בְּהֵמָ֥ה הַ/טְּמֵאָ֖ה תִּפְדֶּֽה׃",
+        "LXX": "καὶ πᾶν διανοῖγον μήτραν ἀπὸ πάσης σαρκός, ἃ προσφέρουσιν Κυρίῳ ἀπὸ ἀνθρώπου ἕως κτήνους, σοὶ ἔσται· ἀλλ’ ἢ λύτροις λυτρωθήσεται τὰ πρωτότοκα τῶν ἀνθρώπων, καὶ τὰ πρωτότοκα τῶν κτηνῶν τῶν ἀκαθάρτων λυτρώσῃ.",
+        "VUL": "Quidquid primum erumpit e vulva cunctæ carnis, quam offerunt Domino, sive ex hominibus, sive de pecoribus fuerit, tui juris erit : ita dumtaxat ut pro hominis primogenito pretium accipias, et omne animal quod immundum est redimi facias,",
+        "SYN": "Все, разверзающее ложесна у всякой плоти, которую приносят Господу, из людей и из скота, да будет твоим; только первенец из людей должен быть выкуплен, и первородное из скота нечистого должно быть выкуплено;",
+        "NEO": "Tout premier-né de toute chair, des hommes comme des animaux, qu’ils offrent à \\+w Yahweh|strong=\"H3068\"\\+w**, sera pour toi. Seulement tu feras racheter le premier-né de l’homme, et tu feras racheter le premier-né d’un animal impur.",
+        "NAB": "Every living thing that opens the womb, whether of man or of beast, such as are to be offered to the LORD, shall be yours; but you must let the first-born of man, as well as of unclean animals, be redeemed.",
+        "VAT_ES": "También lo serán los primogénitos, tanto de hombres como de animales, ofrecidos al Señor. Pero harás rescatar los primogénitos de los hombres y los primogénitos de los animales impuros.",
+        "CEI": "Ogni essere che nasce per primo da ogni essere vivente, offerto al Signore, così degli uomini come degli animali, sarà tuo; però farai riscattare il primogenito dell'uomo e farai anche riscattare il primo nato di un animale immondo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וּ/פְדוּיָ/ו֙ מִ/בֶּן חֹ֣דֶשׁ תִּפְדֶּ֔ה בְּ/עֶ֨רְכְּ/ךָ֔ כֶּ֛סֶף חֲמֵ֥שֶׁת שְׁקָלִ֖ים בְּ/שֶׁ֣קֶל הַ/קֹּ֑דֶשׁ עֶשְׂרִ֥ים גֵּרָ֖ה הֽוּא׃",
+        "LXX": "καὶ ἡ λύτρωσις αὐτοῦ ἀπὸ μηνιαίου· ἡ συντίμησις πέντε σίκλων κατὰ τὸν σίκλον τὸν ἅγιον, εἴκοσι ὀβολοί εἰσιν.",
+        "VUL": "cujus redemptio erit post unum mensem, siclis argenti quinque, pondere sanctuarii. Siclus viginti obolos habet.",
+        "SYN": "а выкуп за них: начиная от одного месяца, по оценке твоей, бери выкуп пять сиклей серебра, по сиклю священному, который в двадцать гер;",
+        "NEO": "Quant à son rachat, tu le feras racheter dès l’âge d’un mois, selon ton estimation, contre cinq sicles d’argent, selon le sicle du sanctuaire, qui est de vingt guéras.",
+        "NAB": "The ransom for a boy is to be paid when he is a month old; it is fixed at five silver shekels according to the sanctuary standard, twenty gerahs to the shekel.",
+        "VAT_ES": "Los harás rescatar dentro del mes de su nacimiento, tomando como precio por el rescate cinco siclos –en siclos de Santuario– que equivalen a veinte gueras.",
+        "CEI": "Quanto al riscatto, li farai riscattare dall'età di un mese, secondo la stima di cinque sicli d'argento, in base al siclo del santuario, che è di venti ghera."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אַ֣ךְ בְּֽכוֹר שׁ֡וֹר אֽוֹ בְכ֨וֹר כֶּ֜שֶׂב אֽוֹ בְכ֥וֹר עֵ֛ז לֹ֥א תִפְדֶּ֖ה קֹ֣דֶשׁ הֵ֑ם אֶת דָּמָ֞/ם תִּזְרֹ֤ק עַל הַ/מִּזְבֵּ֨חַ֙ וְ/אֶת חֶלְבָּ֣/ם תַּקְטִ֔יר אִשֶּׁ֛ה לְ/רֵ֥יחַ נִיחֹ֖חַ לַֽ/יהוָֽה׃",
+        "LXX": "πλὴν πρωτότοκα μόσχων καὶ πρωτότοκα προβάτων καὶ πρωτότοκα αἰγῶν οὐ λυτρώσῃ· ἅγιά ἐστιν· καὶ τὸ αἷμα αὐτῶν προσχεεῖς πρὸς τὸ θυσιαστήριον, καὶ τὸ στέαρ ἀνοίσεις κάρπωμα εἰς ὀσμὴν εὐωδίας Κυρίῳ·",
+        "VUL": "Primogenitum autem bovis, et ovis, et capræ, non facies redimi, quia sanctificata sunt Domino. Sanguinem tantum eorum fundes super altare, et adipes adolebis in suavissimum odorem Domino.",
+        "SYN": "но за первородное из волов, и за первородное из овец, и за первородное из коз, не бери выкупа: они святыня; кровью их окропляй жертвенник, и тук их сожигай в жертву, в приятное благоухание Господу;",
+        "NEO": "Mais tu ne feras pas racheter le premier-né du bœuf, ni le premier-né de la brebis, ni le premier-né de la chèvre : ils sont saints. Tu répandras leur sang sur l’autel et tu feras fumer leur graisse : c’est un sacrifice fait par le feu, d’une agréable odeur à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "But the first-born of cattle, sheep or goats shall not be redeemed; they are sacred. Their blood you must splash on the altar and their fat you must burn as a sweet-smelling oblation to the LORD.",
+        "VAT_ES": "Los primogénitos del ganado mayor y menor no podrán ser rescatados porque están consagrados. Por eso, derramarás su sangre contra el altar y harás arder su grasa como ofrenda que se quema con aroma agradable al Señor.",
+        "CEI": "Ma non farai riscattare il primo nato della vacca, né il primo nato della pecora, né il primo nato della capra; sono cosa sacra; verserai il loro sangue sull'altare e brucerai le loro parti grasse come sacrificio consumato dal fuoco, soave profumo per il Signore."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וּ/בְשָׂרָ֖/ם יִהְיֶה לָּ֑/ךְ כַּ/חֲזֵ֧ה הַ/תְּנוּפָ֛ה וּ/כְ/שׁ֥וֹק הַ/יָּמִ֖ין לְ/ךָ֥ יִהְיֶֽה׃",
+        "LXX": "καὶ τὰ κρέα ἔσται σοί· καὶ τὸ στηθύνιον τοῦ ἐπιθέματος, καὶ κατὰ τὸν βραχίονα τὸν δεξιόν, σοὶ ἔσται.",
+        "VUL": "Carnes vero in usum tuum cedent, sicut pectusculum consecratum, et armus dexter : tua erunt.",
+        "SYN": "мясо же их тебе принадлежит, равно как грудь возношения и правое плечо тебе принадлежит.",
+        "NEO": "Leur chair sera pour toi, comme la poitrine qu’on balance et comme la cuisse droite.",
+        "NAB": "Their meat, however, shall be yours, just as the breast and the right leg of the wave offering belong to you.",
+        "VAT_ES": "La carne, en cambio, será para ti, lo mismo que la ofrenda de presentación y la pata derecha.",
+        "CEI": "La loro carne sarà tua; sarà tua come il petto dell'offerta che si fa con la agitazione rituale e come la coscia destra."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כֹּ֣ל תְּרוּמֹ֣ת הַ/קֳּדָשִׁ֗ים אֲשֶׁ֨ר יָרִ֥ימוּ בְנֵֽי יִשְׂרָאֵל֮ לַֽ/יהוָה֒ נָתַ֣תִּֽי לְ/ךָ֗ וּ/לְ/בָנֶ֧י/ךָ וְ/לִ/בְנֹתֶ֛י/ךָ אִתְּ/ךָ֖ לְ/חָק עוֹלָ֑ם בְּרִית֩ מֶ֨לַח עוֹלָ֥ם הִוא֙ לִ/פְנֵ֣י יְהוָ֔ה לְ/ךָ֖ וּ/לְ/זַרְעֲ/ךָ֥ אִתָּֽ/ךְ׃",
+        "LXX": "πᾶν ἀφαίρεμα τῶν ἁγίων, ὅσα ἄν ἀφέλωσιν οἱ υἱοὶ Ἰσραὴλ Κυρίῳ, σοὶ δέδωκα καὶ τοῖς υἱοῖς σου καὶ ταῖς θυγατράσιν σου μετὰ σοῦ, νόμιμον αἰώνιον· διαθήκη ἁλὸς αἰωνίου ἐστὶν ἔναντι Κυρίου σοὶ καὶ τῷ σπέρματί σου μετὰ σέ.",
+        "VUL": "Omnes primitias sanctuarii, quas offerunt filii Israël Domino, tibi dedi, et filiis, ac filiabus tuis, jure perpetuo. Pactum salis est sempiternum coram Domino, tibi ac filiis tuis.",
+        "SYN": "Все возносимые святыни, которые возносят сыны Израилевы Господу, отдаю тебе и сынам твоим и дочерям твоим с тобою, уставом вечным; это завет соли вечный пред Господом, данный для тебя и потомства твоего с тобою.",
+        "NEO": "Tout ce qui est prélevé sur les choses saintes, ce que les enfants d’Israël prélèvent pour \\+w Yahweh|strong=\"H3068\"\\+w**, je te le donne à toi, à tes fils et à tes filles avec toi, par une loi perpétuelle ; c’est une alliance de sel, perpétuelle, devant \\+w Yahweh|strong=\"H3068\"\\+w**, pour toi et pour ta postérité avec toi. »",
+        "NAB": "By perpetual ordinance I have assigned to you and to your sons and daughters all the contributions from the sacred gifts which the Israelites make to the LORD; this is an inviolable covenant to last forever before the LORD, for you and for your descendants.\"",
+        "VAT_ES": "Yo te doy todas las ofrendas que los israelitas ponen aparte para el Señor. Te las doy a ti, a tus hijos y a tus hijas, como derecho irrevocable. Esta será una alianza de sal –una alianza eterna– para ti y tu descendencia, delante del Señor.",
+        "CEI": "Io dò a te, ai tuoi figli e alle tue figlie con te, per legge perenne, tutte le offerte di cose sante che gli Israeliti presenteranno al Signore con il rito dell'elevazione. È un'alleanza inviolabile, perenne, davanti al Signore, per te e per la tua discendenza con te\". la parte dei leviti"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֜ה אֶֽל אַהֲרֹ֗ן בְּ/אַרְצָ/ם֙ לֹ֣א תִנְחָ֔ל וְ/חֵ֕לֶק לֹא יִהְיֶ֥ה לְ/ךָ֖ בְּ/תוֹכָ֑/ם אֲנִ֤י חֶלְקְ/ךָ֙ וְ/נַחֲלָ֣תְ/ךָ֔ בְּ/ת֖וֹךְ בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐλάλησεν Κύριος πρὸς Ἀαρών Ἐν τῇ γῇ αὐτῶν οὐ κληρονομήσεις, καὶ μερὶς οὐκ ἔσται σοι ἐν αὐτοῖς, ὅτι ἐγὼ μερίς σου καὶ κληρονομία σου ἐν μέσῳ τῶν υἱῶν Ἰσραήλ.",
+        "VUL": "Dixitque Dominus ad Aaron : In terra eorum nihil possidebitis, nec habebitis partem inter eos : ego pars et hæreditas tua in medio filiorum Israël.",
+        "SYN": "И сказал Господь Аарону: в земле их не будешь иметь удела и части не будет тебе между ними; Я часть твоя и удел твой среди сынов Израилевых;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Aaron : « Tu n’auras pas d’héritage dans leur pays, et il n’y aura pas de part pour toi au milieu d’eux ; c’est moi qui suis ta part et ton héritage au milieu des enfants d’Israël.",
+        "NAB": "Then the LORD said to Aaron, \"You shall not have any heritage in the land of the Israelites nor hold any portion among them; I will be your portion and your heritage among them.",
+        "VAT_ES": "Y el Señor dijo a Aarón: Tú no recibirás una herencia en el territorio de los israelitas ni tendrás una parte entre ellos: yo soy tu parte y tu herencia.",
+        "CEI": "Il Signore disse ad Aronne: \"Tu non avrai alcun possesso nel loro paese e non ci sarà parte per te in mezzo a loro; io sono la tua parte e il tuo possesso in mezzo agli Israeliti."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/לִ/בְנֵ֣י לֵוִ֔י הִנֵּ֥ה נָתַ֛תִּי כָּל מַֽעֲשֵׂ֥ר בְּ/יִשְׂרָאֵ֖ל לְ/נַחֲלָ֑ה חֵ֤לֶף עֲבֹֽדָתָ/ם֙ אֲשֶׁר הֵ֣ם עֹֽבְדִ֔ים אֶת עֲבֹדַ֖ת אֹ֥הֶל מוֹעֵֽד׃",
+        "LXX": "Καὶ τοῖς υἱοῖς Λευεὶ ἰδοὺ δέδωκα πᾶν ἐπιδέκατον ἐν Ἰσραὴλ ἐν κλήρῳ ἀντὶ τῶν λειτουργιῶν αὐτῶν, ὅσα αὐτοὶ λειτουργοῦσιν λειτουργίαν ἐν τῇ σκηνῇ τοῦ μαρτυρίου.",
+        "VUL": "Filiis autem Levi dedi omnes decimas Israëlis in possessionem, pro ministerio, quo serviunt mihi in tabernaculo fderis :",
+        "SYN": "а сынам Левия, вот, Я дал в удел десятину из всего, что у Израиля, за службу их, за то, что они отправляют службы в скинии собрания;",
+        "NEO": "Voici que je donne comme héritage aux fils de Lévi toute dîme en Israël, pour le travail qu’ils font, le travail de la tente de réunion.",
+        "NAB": "\"To the Levites, however, I hereby assign all tithes in Israel as their heritage in recompense for the service they perform in the meeting tent.",
+        "VAT_ES": "Yo doy como herencia a los levitas todos los diezmos de Israel, a cambio de los servicios que prestan en la Carpa del Encuentro.",
+        "CEI": "Ai figli di Levi io dò in possesso tutte le decime in Israele per il servizio che fanno, il servizio della tenda del convegno."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/לֹא יִקְרְב֥וּ ע֛וֹד בְּנֵ֥י יִשְׂרָאֵ֖ל אֶל אֹ֣הֶל מוֹעֵ֑ד לָ/שֵׂ֥את חֵ֖טְא לָ/מֽוּת׃",
+        "LXX": "καὶ οὐ προσελεύσονται ἔτι οἱ υἱοὶ Ἰσραὴλ εἰς τὴν σκηνὴν τοῦ μαρτυρίου, λαβεῖν ἁμαρτίαν θανατηφόρον.",
+        "VUL": "ut non accedant ultra filii Israël ad tabernaculum, nec committant peccatum mortiferum,",
+        "SYN": "и сыны Израилевы не должны впредь приступать к скинии собрания, чтобы не понести греха и не умереть:",
+        "NEO": "Les enfants d’Israël n’approcheront plus de la tente de réunion, de peur qu’ils ne portent leur péché et qu’ils meurent.",
+        "NAB": "The Israelites may no longer approach the meeting tent; else they will incur guilt deserving death.",
+        "VAT_ES": "De ahora en adelante, los israelitas no se acercarán a la Carpa del Encuentro, porque cargarían con un pecado y morirían.",
+        "CEI": "Gli Israeliti non si accosteranno più alla tenda del convegno per non caricarsi di un peccato che li farebbe morire."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/עָבַ֨ד הַ/לֵּוִ֜י ה֗וּא אֶת עֲבֹדַת֙ אֹ֣הֶל מוֹעֵ֔ד וְ/הֵ֖ם יִשְׂא֣וּ עֲוֺנָ֑/ם חֻקַּ֤ת עוֹלָם֙ לְ/דֹרֹ֣תֵי/כֶ֔ם וּ/בְ/תוֹךְ֙ בְּנֵ֣י יִשְׂרָאֵ֔ל לֹ֥א יִנְחֲל֖וּ נַחֲלָֽה׃",
+        "LXX": "καὶ λειτουργήσει ὁ Λευείτης αὐτὸς τὴν λειτουργίαν τῆς σκηνῆς τοῦ μαρτυρίου, καὶ αὐτοὶ λήμψονται τὰ ἁμαρτήματα αὐτῶν, νόμιμον αἰώνιον εἰς τὰς γενεὰς αὐτῶν· καὶ ἐν μέσῳ υἱῶν Ἰσραὴλ οὐ κληρονομήσουσιν κληρονομίαν.",
+        "VUL": "solis filiis Levi mihi in tabernaculo servientibus, et portantibus peccata populi. Legitimum sempiternum erit in generationibus vestris. Nihil aliud possidebunt,",
+        "SYN": "пусть левиты исправляют службы в скинии собрания и несут на себе грех их. Это устав вечный в роды ваши; среди же сынов Израилевых они не получат удела;",
+        "NEO": "Les Lévites feront le travail de la tente de réunion, et ils porteront leur iniquité. En vertu d’une loi perpétuelle parmi vos descendants, ils n’auront pas d’héritage au milieu des enfants d’Israël.",
+        "NAB": "Only the Levites are to perform the service of the meeting tent, and they alone shall be held responsible; this is a perpetual ordinance for all your generations. The Levites, therefore, shall not have any heritage among the Israelites,",
+        "VAT_ES": "Sólo los levitas prestarán servicios en ella y cargarán con sus propias faltas. Este es un decreto válido para siempre, a lo largo de las generaciones. Pero no tendrán una herencia entre los israelitas,",
+        "CEI": "Ma il servizio nella tenda del convegno lo faranno soltanto i leviti; essi porteranno il peso della loro responsabilità; sarà una legge perenne, di generazione in generazione; non possiederanno nulla tra gli Israeliti;"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "כִּ֞י אֶת מַעְשַׂ֣ר בְּנֵֽי יִשְׂרָאֵ֗ל אֲשֶׁ֨ר יָרִ֤ימוּ לַֽ/יהוָה֙ תְּרוּמָ֔ה נָתַ֥תִּי לַ/לְוִיִּ֖ם לְ/נַחֲלָ֑ה עַל כֵּן֙ אָמַ֣רְתִּי לָ/הֶ֔ם בְּ/תוֹךְ֙ בְּנֵ֣י יִשְׂרָאֵ֔ל לֹ֥א יִנְחֲל֖וּ נַחֲלָֽה׃",
+        "LXX": "ὅτι τὰ ἐπιδέκατα τῶν υἱῶν Ἰσραὴλ ὅσα ἂν ἀφορίσωσιν Κυρίῳ ἀφαίρεμα δέδωκα τοῖς Λευείταις ἐν κλήρῳ· διὰ τοῦτο εἴρηκα αὐτοῖς Ἐν μέσῳ υἱῶν Ἰσραὴλ οὐ κληρονομήσουσιν κλῆρον.",
+        "VUL": "decimarum oblatione contenti, quas in usus eorum et necessaria separavi.",
+        "SYN": "так как десятину сынов Израилевых, которую они приносят в возношение Господу, Я отдаю левитам в удел, потому и сказал Я им: между сынами Израилевыми они не получат удела.",
+        "NEO": "Car je donne aux Lévites comme héritage les dîmes que les enfants d’Israël prélèveront pour \\+w Yahweh|strong=\"H3068\"\\+w** ; c’est pourquoi je leur dis : Ils n’auront pas d’héritage au milieu des enfants d’Israël. »",
+        "NAB": "for I have assigned to them as their heritage the tithes which the Israelites give as a contribution to the LORD. That is why I have ordered that they are not to have any heritage among the Israelites.\"",
+        "VAT_ES": "porque yo les doy como herencia los diezmos que los israelitas pondrán aparte como una ofrenda para el Señor. Por eso dije, refiriéndome a ellos, que no tendrán una herencia entre los israelitas.",
+        "CEI": "poiché io dò in possesso ai leviti le decime che gli Israeliti presenteranno al Signore come offerta fatta con il rito di elevazione; per questo dico di loro: Non possiederanno nulla tra gli Israeliti\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse a Mosè:"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/אֶל הַ/לְוִיִּ֣ם תְּדַבֵּר֮ וְ/אָמַרְתָּ֣ אֲלֵ/הֶם֒ כִּֽי תִ֠קְחוּ מֵ/אֵ֨ת בְּנֵֽי יִשְׂרָאֵ֜ל אֶת הַֽ/מַּעֲשֵׂ֗ר אֲשֶׁ֨ר נָתַ֧תִּי לָ/כֶ֛ם מֵ/אִתָּ֖/ם בְּ/נַחֲלַתְ/כֶ֑ם וַ/הֲרֵמֹתֶ֤ם מִמֶּ֨/נּוּ֙ תְּרוּמַ֣ת יְהוָ֔ה מַעֲשֵׂ֖ר מִן הַֽ/מַּעֲשֵֽׂר׃",
+        "LXX": "Καὶ τοῖς Λευείταις λαλήσεις καὶ ἐρεῖς πρὸς αὐτούς Ἐὰν λάβητε παρὰ τῶν υἱῶν Ἰσραὴλ τὸ ἐπιδέκατον ὃ δέδωκα ὑμῖν παρ’ αὐτῶν ἐν κλήρῳ, καὶ ἀφελεῖτε ὑμεῖς ἀπ’ αὐτοῦ ἀφαίρεμα Κυρίῳ ἐπιδέκατον ἀπὸ τοῦ ἐπιδεκάτου.",
+        "VUL": "Præcipe Levitis, atque denuntia : Cum acceperitis a filiis Israël decimas, quas dedi vobis, primitias earum offerte Domino, id est, decimam partem decimæ,",
+        "SYN": "объяви левитам и скажи им: когда вы будете брать от сынов Израилевых десятину, которую Я дал вам от них в удел, то возносите из нее возношение Господу, десятину из десятины, --",
+        "NEO": "« Tu parleras aux Lévites et tu leur diras :",
+        "NAB": "\"Give the Levites these instructions: When you receive from the Israelites the tithes I have assigned you from them as your heritage, you are to make a contribution from them to the LORD, a tithe of the tithes;",
+        "VAT_ES": "Habla en estos términos a los levitas: Cuando ustedes reciban de los israelitas los diezmos que yo les asigné como herencia, reservarán la décima parte como una ofrenda para el Señor:",
+        "CEI": "\"Parlerai inoltre ai leviti e dirai loro: Quando riceverete dagli Israeliti le decime che io vi dò per conto loro in vostro possesso, ne preleverete un'offerta secondo la rituale elevazione da fare al Signore: una decima della decima;"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/נֶחְשַׁ֥ב לָ/כֶ֖ם תְּרוּמַתְ/כֶ֑ם כַּ/דָּגָן֙ מִן הַ/גֹּ֔רֶן וְ/כַֽ/מְלֵאָ֖ה מִן הַ/יָּֽקֶב׃",
+        "LXX": "καὶ λογισθήσεται ὑμῖν τὰ ἀφαιρέματα ὑμῶν ὡς σῖτος ἀπὸ ἅλω καὶ ἀφαίρεμα ἀπὸ ληνοῦ.",
+        "VUL": "ut reputetur vobis in oblationem primitivorum, tam de areis quam de torcularibus :",
+        "SYN": "и вменено будет вам это возношение ваше, как хлеб с гумна и как взятое от точила;",
+        "NEO": "et ce prélèvement que vous ferez vous sera compté comme le blé qu’on prélève de l’aire, et comme le vin nouveau qu’on prélève de la cuve.",
+        "NAB": "and your contribution will be credited to you as if it were grain from the threshing floor or new wine from the press.",
+        "VAT_ES": "esto les será tenido en cuenta a título de contribución. Como se hace con el trigo de la era y el mosto del lagar,",
+        "CEI": "l'offerta che avrete prelevata vi sarà calcolata come il grano che viene dall'aia e come il mosto che esce dal torchio."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "כֵּ֣ן תָּרִ֤ימוּ גַם אַתֶּם֙ תְּרוּמַ֣ת יְהוָ֔ה מִ/כֹּל֙ מַעְשְׂרֹ֣תֵי/כֶ֔ם אֲשֶׁ֣ר תִּקְח֔וּ מֵ/אֵ֖ת בְּנֵ֣י יִשְׂרָאֵ֑ל וּ/נְתַתֶּ֤ם מִמֶּ֨/נּוּ֙ אֶת תְּרוּמַ֣ת יְהוָ֔ה לְ/אַהֲרֹ֖ן הַ/כֹּהֵֽן׃",
+        "LXX": "οὕτως ἀφελεῖτε αὐτοὺς καὶ ὑμεῖς ἀπὸ τῶν ἀφαιρεμάτων Κυρίου ἀπὸ πάντων ἐπιδεκάτων ὑμῶν ὅσα ἐὰν λάβητε παρὰ τῶν υἱῶν Ἰσραήλ, καὶ δώσετε ἀπ’ αὐτῶν ἀφαίρεμα Ἀαρὼν τῷ ἱερεῖ.",
+        "VUL": "et universis quorum accipitis primitias, offerte Domino, et date Aaron sacerdoti.",
+        "SYN": "так и вы будете возносить возношение Господу из всех десятин ваших, которые будете брать от сынов Израилевых, и будете давать из них возношение Господне Аарону священнику;",
+        "NEO": "C’est ainsi que vous prélèverez, vous aussi, une offrande pour \\+w Yahweh|strong=\"H3068\"\\+w**, sur toutes les dîmes que vous recevrez des enfants d’Israël, et cette offrande que vous en aurez prélevée pour \\+w Yahweh|strong=\"H3068\"\\+w**, vous la donnerez au prêtre Aaron.",
+        "NAB": "Thus you too shall make a contribution from all the tithes you receive from the Israelites, handing over to Aaron the priest the part to be contributed to the LORD.",
+        "VAT_ES": "también ustedes pondrán aparte para el Señor una ofrenda tomada de los diezmos que reciban de los israelitas, y se la entregarán al sacerdote Aarón, en calidad de ofrenda reservada al Señor.",
+        "CEI": "Così anche voi preleverete un'offerta per il Signore da tutte le decime che riceverete dagli Israeliti e darete al sacerdote Aronne l'offerta che avrete prelevato per il Signore."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "מִ/כֹּל֙ מַתְּנֹ֣תֵי/כֶ֔ם תָּרִ֕ימוּ אֵ֖ת כָּל תְּרוּמַ֣ת יְהוָ֑ה מִ/כָּל חֶלְבּ֔/וֹ אֶֽת מִקְדְּשׁ֖/וֹ מִמֶּֽ/נּוּ׃",
+        "LXX": "ἀπὸ πάντων τῶν δομάτων ὑμῶν ἀφελεῖτε ἀφαίρεμα Κυρίῳ, ἢ ἀπὸ πάντων τῶν ἀπαρχῶν τὸ ἡγιασμένον ἀπ’ αὐτοῦ.",
+        "VUL": "Omnia quæ offeretis ex decimis, et in donaria Domini separabitis, optima et electa erunt.",
+        "SYN": "из всего, даруемого вам, возносите возношение Господу, из всего лучшего освящаемого.",
+        "NEO": "Sur tous les dons que vous recevrez, vous prélèverez toute l’offrande de \\+w Yahweh|strong=\"H3068\"\\+w** ; sur tout le meilleur, la sainte portion qui en est tirée.",
+        "NAB": "From all the gifts that you receive, and from the best parts, you are to consecrate to the LORD your own full contribution.",
+        "VAT_ES": "De los dones que reciban, reservarán las ofrendas debidas al Señor: la mejor porción de cada cosa, o sea, la parte que debe ser consagrada.",
+        "CEI": "Da tutte le cose che vi saranno concesse preleverete tutte le offerte per il Signore; di tutto ciò che vi sarà di meglio preleverete quel tanto che è da consacrare."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/אָמַרְתָּ֖ אֲלֵ/הֶ֑ם בַּ/הֲרִֽימְ/כֶ֤ם אֶת חֶלְבּ/וֹ֙ מִמֶּ֔/נּוּ וְ/נֶחְשַׁב֙ לַ/לְוִיִּ֔ם כִּ/תְבוּאַ֥ת גֹּ֖רֶן וְ/כִ/תְבוּאַ֥ת יָֽקֶב׃",
+        "LXX": "καὶ ἐρεῖς πρὸς αὐτούς Ὅταν ἀφαιρῆτε τὴν ἀπαρχὴν ἀπ’ αὐτοῦ, καὶ λογισθήσεται τοῖς Λευείταις ὡς γένημα ἀπὸ ἅλω καὶ ὡς γένημα ἀπὸ ληνοῦ",
+        "VUL": "Dicesque ad eos : Si præclara et meliora quæque obtuleritis ex decimis, reputabitur vobis quasi de area, et torculari dederitis primitias :",
+        "SYN": "И скажи им: когда вы принесете из сего лучшее, то это вменено будет левитам, как получаемое с гумна и получаемое от точила;",
+        "NEO": "Tu leur diras : Quand vous en aurez prélevé le meilleur, la dîme sera comptée aux lévites comme le produit de l’aire et comme le produit du pressoir.",
+        "NAB": "\"Tell them also: Once you have made your contribution from the best part, the rest of the tithes will be credited to you Levites as if it were produce of the threshing floor or of the winepress.",
+        "VAT_ES": "Diles también: Una vez que hayan reservado la mejor parte –que les será tenida en cuenta como el trigo de la era y el mosto del lagar–",
+        "CEI": "Dirai loro: Quando ne avrete prelevato il meglio, quel che rimane sarà calcolato come il provento dell'aia e come il provento del torchio."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/אֲכַלְתֶּ֤ם אֹת/וֹ֙ בְּ/כָל מָק֔וֹם אַתֶּ֖ם וּ/בֵֽיתְ/כֶ֑ם כִּֽי שָׂכָ֥ר הוּא֙ לָ/כֶ֔ם חֵ֥לֶף עֲבֹֽדַתְ/כֶ֖ם בְּ/אֹ֥הֶל מוֹעֵֽד׃",
+        "LXX": "καὶ ἔδεσθε αὐτὸ ἐν παντὶ τόπῳ ὑμεῖς καὶ οἱ οἶκοι ὑμῶν, ὅτι μισθὸς οὗτος ὑμῖν ἐστιν ἀντὶ τῶν λειτουργιῶν ὑμῶν τῶν ἐν τῇ σκηνῇ τοῦ μαρτυρίου·",
+        "VUL": "et comedetis eas in omnibus locis vestris, tam vos quam familiæ vestræ : quia pretium est pro ministerio, quo servitis in tabernaculo testimonii.",
+        "SYN": "вы можете есть это на всяком месте, вы и [сыны ваши и] семейства ваши, ибо это вам плата за работы ваши в скинии собрания;",
+        "NEO": "Vous la mangerez en tout lieu, vous et votre famille ; car c’est votre salaire pour le travail que vous faites dans la tente de réunion.",
+        "NAB": "Your families, as well as you, may eat them anywhere, since they are your recompense for service at the meeting tent.",
+        "VAT_ES": "ustedes y sus familias podrán comerla en cualquier lugar, porque esa es su recompensa por los servicios que prestan en la Carpa del Encuentro.",
+        "CEI": "Lo potrete mangiare in qualunque luogo, voi e le vostre famiglie, perché è il vostro salario in cambio del vostro servizio nella tenda del convegno."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא תִשְׂא֤וּ עָלָי/ו֙ חֵ֔טְא בַּ/הֲרִֽימְ/כֶ֥ם אֶת חֶלְבּ֖/וֹ מִמֶּ֑/נּוּ וְ/אֶת קָדְשֵׁ֧י בְנֵי יִשְׂרָאֵ֛ל לֹ֥א תְחַלְּל֖וּ וְ/לֹ֥א תָמֽוּתוּ׃",
+        "LXX": "καὶ οὐ λήμψεσθε δι’ αὐτὸ ἁμαρτίαν, ὅτι ἂν ἀφαιρῆτε τὴν ἀπαρχὴν ἀπ’ αὐτοῦ· καὶ τὰ ἅγια τῶν υἱῶν Ἰσραὴλ οὐ βεβηλώσετε, ἵνα μὴ ἀποθάνητε.",
+        "VUL": "Et non peccabitis super hoc, egregia vobis et pinguia reservantes, ne polluatis oblationes filiorum Israël, et moriamini.",
+        "SYN": "и не понесете за это греха, когда принесете лучшее из сего; и посвящаемого сынами Израилевыми не оскверните, и не умрете.",
+        "NEO": "Vous ne porterez pour cela aucun péché, quand vous en aurez prélevé le meilleur, vous ne profanerez pas les saintes offrandes des enfants d’Israël, et vous ne mourrez point.” »",
+        "NAB": "You will incur no guilt so long as you make a contribution of the best part. Do not profane the sacred gifts of the Israelites and so bring death on yourselves.\"",
+        "VAT_ES": "Así, si ustedes reservan la mejor parte, no cargarán con un pecado, no profanarán los dones sagrados de los israelitas ni morirán.",
+        "CEI": "Così non sarete rei di alcun peccato, perché ne avrete messa da parte la parte migliore; non profanerete le cose sante degli Israeliti; così non morirete\"."
+      }
+    }
+  }
+}

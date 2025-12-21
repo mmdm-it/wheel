@@ -1,0 +1,369 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PHILI_003",
+  "book_key": "PHILI",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Τὸ λοιπόν, ἀδελφοί μου, χαίρετε ἐν κυρίῳ. Τὰ αὐτὰ γράφειν ὑμῖν, ἐμοὶ μὲν οὐκ ὀκνηρόν, ὑμῖν δὲ ἀσφαλές.",
+        "VUL": "De cetero, fratres mei, gaudete in Domino. Eadem vobis scribere, mihi quidem non pigrum, vobis autem necessarium.",
+        "SYN": "Впрочем, братия мои, радуйтесь о Господе. Писать вам о том же для меня не тягостно, а для вас назидательно.",
+        "NEO": "Du reste, mes frères, réjouissez-vous dans le Seigneur. — Vous écrire les mêmes choses ne me coûte pas et à vous cela est salutaire.+ 3:1 III, 1. Rom. xiv, 17. — Les mêmes choses, touchant les judaïsants : est-ce une allusion à une lettre antérieure que nous n’aurions plus ? S. Polycarpe, \\+qt Epist. ad Philippenses, iii, fait allusion à plusieurs lettres de l’Apôtre. Epist. ad Philippenses, iii\\+qt**",
+        "NAB": "Finally, my brothers, rejoice in the Lord. Writing the same things to you is no burden for me but is a safeguard for you.",
+        "VAT_ES": "Por eso, hermanos míos muy queridos, a quienes tanto deseo ver, ustedes que son mi alegría y mi corona, amados míos, perseveren firmemente en el Señor.",
+        "CEI": "Paolo, apostolo di Cristo Gesù per volontà di Dio, per annunziare la promessa della vita in Cristo Gesù,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Βλέπετε τοὺς κύνας, βλέπετε τοὺς κακοὺς ἐργάτας, βλέπετε τὴν κατατομήν·",
+        "VUL": "Videte canes, videte malos operarios, videte concisionem.",
+        "SYN": "Берегитесь псов, берегитесь злых делателей, берегитесь обрезания,",
+        "NEO": "Prenez garde à ces chiens, prenez garde à ces mauvais ouvriers, prenez garde à ces mutilés.+ 3:2 2. Ce verset paraît une citation empruntée à l’épître perdue à laquelle Paul vient de faire allusion.*",
+        "NAB": "Beware of the dogs! Beware of the evil workers! Beware of the mutilation!",
+        "VAT_ES": "Exhorto a Evodia y a Síntique que se pongan de acuerdo en el Señor.",
+        "CEI": "al diletto figlio Timòteo: grazia, misericordia e pace da parte di Dio Padre e di Cristo Gesù Signore nostro."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "ἡμεῖς γάρ ἐσμεν ἡ περιτομή, οἱ πνεύματι θεοῦ λατρεύοντες, καὶ καυχώμενοι ἐν χριστῷ Ἰησοῦ, καὶ οὐκ ἐν σαρκὶ πεποιθότες·",
+        "VUL": "Nos enim sumus circumcisio, qui spiritu servimus Deo, et gloriamur in Christo Jesu, et non in carne fiduciam habentes,",
+        "SYN": "потому что обрезание -- мы, служащие Богу духом и хвалящиеся Христом Иисусом, и не на плоть надеющиеся,",
+        "NEO": "Car c’est nous qui sommes les vrais circoncis, nous qui par l’esprit de Dieu lui rendons un culte, qui mettons notre gloire dans le Christ Jésus et ne nous confions pas dans la chair.",
+        "NAB": "For we are the circumcision, we who worship through the Spirit of God, who boast in Christ Jesus and do not put our confidence in flesh,",
+        "VAT_ES": "Y a ti, mi fiel compañero, te pido que las ayudes, porque ellas lucharon conmigo en la predicación del Evangelio, junto con Clemente y mis demás colaboradores, cuyos nombres están escritos en el Libro de la Vida.",
+        "CEI": "Ringrazio Dio, che io servo con coscienza pura come i miei antenati, ricordandomi sempre di te nelle mie preghiere, notte e giorno;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "καίπερ ἐγὼ ἔχων πεποίθησιν καὶ ἐν σαρκί· εἴ τις δοκεῖ ἄλλος πεποιθέναι ἐν σαρκί, ἐγὼ μᾶλλον·",
+        "VUL": "quamquam ego habeam confidentiam et in carne. Si quis alius videtur confidere in carne, ego magis,",
+        "SYN": "хотя я могу надеяться и на плоть. Если кто другой думает надеяться на плоть, то более я,",
+        "NEO": "Et pourtant quant à moi, j’aurais sujet de mettre aussi ma confiance dans la chair. Si quelqu’autre croit pouvoir le faire, je le puis bien davantage, moi,",
+        "NAB": "although I myself have grounds for confidence even in the flesh.If anyone else thinks he can be confident in flesh, all the more can I.",
+        "VAT_ES": "Alégrense siempre en el Señor. Vuelvo a insistir, alégrense.",
+        "CEI": "mi tornano alla mente le tue lacrime e sento la nostalgia di rivederti per essere pieno di gioia."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "περιτομὴ ὀκταήμερος, ἐκ γένους Ἰσραήλ, φυλῆς Βενιαμίν, Ἑβραῖος ἐξ Ἑβραίων, κατὰ νόμον Φαρισαῖος,",
+        "VUL": "circumcisus octavo die, ex genere Israël, de tribu Benjamin, Hebræus ex Hebræis, secundum legem pharisæus,",
+        "SYN": "обрезанный в восьмой день, из рода Израилева, колена Вениаминова, Еврей от Евреев, по учению фарисей,",
+        "NEO": "un circoncis du huitième jour,+ 3:5 5. Circoncis du huitième jour, par conséquent né Juif, et non prosélyte. Act. xxiii, 6 ; xxvi, 5.* de la race d’Israël, de la tribu de Benjamin ; Hébreu, fils d’Hébreux ; pharisien, pour ce qui est de la Loi ;",
+        "NAB": "Circumcised on the eighth day, of the race of Israel, of the tribe of Benjamin, a Hebrew of Hebrew parentage, in observance of the law a Pharisee,",
+        "VAT_ES": "Que la bondad de ustedes sea conocida por todos los hombres. El Señor está cerca.",
+        "CEI": "Mi ricordo infatti della tua fede schietta, fede che fu prima nella tua nonna Lòide, poi in tua madre Eunìce e ora, ne sono certo, anche in te."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "κατὰ ζῆλον διώκων τὴν ἐκκλησίαν, κατὰ δικαιοσύνην τὴν ἐν νόμῳ γενόμενος ἄμεμπτος.",
+        "VUL": "secundum æmulationem persequens Ecclesiam Dei, secundum justitiam, quæ in lege est, conversatus sine querela.",
+        "SYN": "по ревности -- гонитель Церкви Божией, по правде законной -- непорочный.",
+        "NEO": "persécuteur de l’Église, pour ce qui est du zèle, et quant à la justice de la Loi, irréprochable.",
+        "NAB": "in zeal I persecuted the church, in righteousness based on the law I was blameless.",
+        "VAT_ES": "No se angustien por nada, y en cualquier circunstancia, recurran a la oración y a la súplica, acompañadas de acción de gracias, para presentar sus peticiones a Dios.",
+        "CEI": "Per questo motivo ti ricordo di ravvivare il dono di Dio che è in te per l'imposizione delle mie mani."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ ἅτινα ἦν μοι κέρδη, ταῦτα ἥγημαι διὰ τὸν χριστὸν ζημίαν.",
+        "VUL": "Sed quæ mihi fuerunt lucra, hæc arbitratus sum propter Christum detrimenta.",
+        "SYN": "Но что для меня было преимуществом, то ради Христа я почел тщетою.",
+        "NEO": "Mais ces titres qui étaient pour moi de précieux avantages, je les ai considérés comme un préjudice à cause du Christ.",
+        "NAB": "(But) whatever gains I had, these I have come to consider a loss because of Christ.",
+        "VAT_ES": "Entonces la paz de Dios, que supera todo lo que podemos pensar, tomará bajo su cuidado los corazones y los pensamientos de ustedes en Cristo Jesús.",
+        "CEI": "Dio infatti non ci ha dato uno Spirito di timidezza, ma di forza, di amore e di saggezza."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἀλλὰ μὲν οὖν καὶ ἡγοῦμαι πάντα ζημίαν εἶναι διὰ τὸ ὑπερέχον τῆς γνώσεως χριστοῦ Ἰησοῦ τοῦ κυρίου μου· δι’ ὃν τὰ πάντα ἐζημιώθην, καὶ ἡγοῦμαι σκύβαλα εἶναι, ἵνα χριστὸν κερδήσω,",
+        "VUL": "Verumtamen existimo omnia detrimentum esse propter eminentem scientiam Jesu Christi Domini mei : propter quem omnia detrimentum feci, et arbitror ut stercora, ut Christum lucrifaciam,",
+        "SYN": "Да и все почитаю тщетою ради превосходства познания Христа Иисуса, Господа моего: для Него я от всего отказался, и все почитаю за сор, чтобы приобрести Христа",
+        "NEO": "Oui certes, et même je tiens encore tout cela comme un préjudice, eu égard au prix éminent de la connaissance du Christ Jésus mon Seigneur. Pour son amour j’ai voulu tout perdre, regardant toutes choses comme de la balayure, afin de gagner le Christ,",
+        "NAB": "More than that, I even consider everything as a loss because of the supreme good of knowing Christ Jesus my Lord. For his sake I have accepted the loss of all things and I consider them so much rubbish, that I may gain Christ",
+        "VAT_ES": "En fin, mis hermanos, todo lo que es verdadero y noble, todo lo que es justo y puro, todo lo que es amable y digno de honra, todo lo que haya de virtuoso y merecedor de alabanza, debe ser el objeto de sus pensamientos.",
+        "CEI": "Non vergognarti dunque della testimonianza da rendere al Signore nostro, né di me, che sono in carcere per lui; ma soffri anche tu insieme con me per il vangelo, aiutato dalla forza di Dio."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "καὶ εὑρεθῶ ἐν αὐτῷ, μὴ ἔχων ἐμὴν δικαιοσύνην τὴν ἐκ νόμου, ἀλλὰ τὴν διὰ πίστεως χριστοῦ, τὴν ἐκ θεοῦ δικαιοσύνην ἐπὶ τῇ πίστει·",
+        "VUL": "et inveniar in illo non habens meam justitiam, quæ ex lege est, sed illam, quæ ex fide est Christi Jesu : quæ ex Deo est justitia in fide,",
+        "SYN": "и найтись в Нем не со своею праведностью, которая от закона, но с тою, которая через веру во Христа, с праведностью от Бога по вере;",
+        "NEO": "et d’être trouvé en lui, non avec ma propre justice, — c’est celle qui vient de la Loi, — mais avec celle qui naît de la foi dans le Christ, la justice qui vient de Dieu par la foi ;",
+        "NAB": "and be found in him, not having any righteousness of my own based on the law but that which comes through faith in Christ, the righteousness from God, depending on faith",
+        "VAT_ES": "Pongan en práctica lo que han aprendido y recibido, lo que han oído y visto en mí, y el Dios de la paz estará con ustedes.",
+        "CEI": "Egli infatti ci ha salvati e ci ha chiamati con una vocazione santa, non già in base alle nostre opere, ma secondo il suo proposito e la sua grazia; grazia che ci è stata data in Cristo Gesù fin dall'eternità,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "τοῦ γνῶναι αὐτὸν καὶ τὴν δύναμιν τῆς ἀναστάσεως αὐτοῦ, καὶ τὴν κοινωνίαν τῶν παθημάτων αὐτοῦ, συμμορφούμενος τῷ θανάτῳ αὐτοῦ,",
+        "VUL": "ad cognoscendum illum, et virtutem resurrectionis ejus, et societatem passionum illius : configuratus morti ejus :",
+        "SYN": "чтобы познать Его, и силу воскресения Его, и участие в страданиях Его, сообразуясь смерти Его,",
+        "NEO": "afin de le connaître, lui et la vertu de sa résurrection, d’être admis à la communion de ses souffrances, en lui devenant conforme dans sa mort,",
+        "NAB": "to know him and the power of his resurrection and (the) sharing of his sufferings by being conformed to his death,",
+        "VAT_ES": "Yo tuve una gran alegría en el Señor cuando vi florecer los buenos sentimientos de ustedes con respecto a mí; ciertamente los tenían, pero les faltaba la ocasión de demostrarlos.",
+        "CEI": "ma è stata rivelata solo ora con l'apparizione del salvatore nostro Cristo Gesù, che ha vinto la morte e ha fatto risplendere la vita e l'immortalità per mezzo del vangelo,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "εἴ πως καταντήσω εἰς τὴν ἐξανάστασιν τῶν νεκρῶν.",
+        "VUL": "si quo modo occurram ad resurrectionem, quæ est ex mortuis :",
+        "SYN": "чтобы достигнуть воскресения мертвых.",
+        "NEO": "pour parvenir, si je le puis, à la résurrection des morts.",
+        "NAB": "if somehow I may attain the resurrection from the dead.",
+        "VAT_ES": "No es la necesidad la que me hace hablar, porque he aprendido a hacer frente a cualquier situación.",
+        "CEI": "del quale io sono stato costituito araldo, apostolo e maestro."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Οὐχ ὅτι ἤδη ἔλαβον, ἢ ἤδη τετελείωμαι· διώκω δέ, εἰ καὶ καταλάβω ἐφ’ ᾧ καὶ κατελήφθην ὑπὸ τοῦ χριστοῦ Ἰησοῦ.",
+        "VUL": "non quod jam acceperim, aut jam perfectus sim : sequor autem, si quomodo comprehendam in quo et comprehensus sum a Christo Jesu.",
+        "SYN": "_Говорю_ _так_ не потому, чтобы я уже достиг, или усовершился; но стремлюсь, не достигну ли я, как достиг меня Христос Иисус.",
+        "NEO": "Ce n’est pas que j’aie déjà saisi le prix,+ 3:12 12. Saisi le prix, image empruntée au jeu de la course ; ou, pour parler sans figure, \\+qt atteint la perfection\\+qt*, qui consiste à \\+qt gagner le Christ\\+qt*, et à vivre de sa vie (vers. 7-10).* ou que j’aie déjà atteint la perfection ; mais je poursuis ma course pour tâcher de le saisir, puisque j’ai été saisi moi-même par le Christ.",
+        "NAB": "It is not that I have already taken hold of it or have already attained perfect maturity, but I continue my pursuit in hope that I may possess it, since I have indeed been taken possession of by Christ (Jesus).",
+        "VAT_ES": "Yo sé vivir tanto en las privaciones como en la abundancia; estoy hecho absolutamente a todo, a la saciedad como al hambre, a tener sobra como a no tener nada.",
+        "CEI": "È questa la causa dei mali che soffro, ma non me ne vergogno: so infatti a chi ho creduto e son convinto che egli è capace di conservare il mio deposito fino a quel giorno."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Ἀδελφοί, ἐγὼ ἐμαυτὸν οὐ λογίζομαι κατειληφέναι· ἓν δέ, τὰ μὲν ὀπίσω ἐπιλανθανόμενος, τοῖς δὲ ἔμπροσθεν ἐπεκτεινόμενος,",
+        "VUL": "Fratres, ego me non arbitror comprehendisse. Unum autem, quæ quidem retro sunt obliviscens, ad ea vero quæ sunt priora, extendens meipsum,",
+        "SYN": "Братия, я не почитаю себя достигшим; а только, забывая заднее и простираясь вперед,",
+        "NEO": "Pour moi, frères, je ne pense pas l’avoir saisi, mais je ne fais qu’une chose : oubliant ce qui est derrière moi, et me portant de tout moi-même vers ce qui est en avant,",
+        "NAB": "Brothers, I for my part do not consider myself to have taken possession. Just one thing: forgetting what lies behind but straining forward to what lies ahead,",
+        "VAT_ES": "Yo lo puedo todo en aquel que me conforta.",
+        "CEI": "Prendi come modello le sane parole che hai udito da me, con la fede e la carità che sono in Cristo Gesù."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "κατὰ σκοπὸν διώκω ἐπὶ τὸ βραβεῖον τῆς ἄνω κλήσεως τοῦ θεοῦ ἐν χριστῷ Ἰησοῦ.",
+        "VUL": "ad destinatum persequor, ad bravium supernæ vocationis Dei in Christo Jesu.",
+        "SYN": "стремлюсь к цели, к почести вышнего звания Божия во Христе Иисусе.",
+        "NEO": "je cours droit au but, pour remporter le prix auquel Dieu m’a appelé d’en haut en Jésus-Christ.",
+        "NAB": "I continue my pursuit toward the goal, the prize of God's upward calling, in Christ Jesus.",
+        "VAT_ES": "Sin embargo, ustedes hicieron bien en interesarse por mis necesidades.",
+        "CEI": "Custodisci il buon deposito con l'aiuto dello Spirito santo che abita in noi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ὅσοι οὖν τέλειοι, τοῦτο φρονῶμεν· καὶ εἴ τι ἑτέρως φρονεῖτε, καὶ τοῦτο ὁ θεὸς ὑμῖν ἀποκαλύψει·",
+        "VUL": "Quicumque ergo perfecti sumus, hoc sentiamus : et si quid aliter sapitis, et hoc vobis Deus revelabit.",
+        "SYN": "Итак, кто из нас совершен, так должен мыслить; если же вы о чем иначе мыслите, то и это Бог вам откроет.",
+        "NEO": "Que ce soient là nos sentiments, à nous tous qui sommes arrivés à l’âge d’homme ; et si, sur quelque point, vous avez des pensées différentes, Dieu vous éclairera aussi là-dessus.",
+        "NAB": "Let us, then, who are \"perfectly mature\" adopt this attitude. And if you have a different attitude, this too God will reveal to you.",
+        "VAT_ES": "Y ya saben, filipenses, que al comienzo de la evangelización, cuando dejé Macedonia, ninguna otra iglesia me ayudó pecuniariamente. Ustedes fueron los únicos",
+        "CEI": "Tu sai che tutti quelli dell'Asia, tra i quali Fìgelo ed Ermègene, mi hanno abbandonato."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "πλὴν εἰς ὃ ἐφθάσαμεν, τῷ αὐτῷ στοιχεῖν κανόνι, τὸ αὐτὸ φρονεῖν.",
+        "VUL": "Verumtamen ad quod pervenimus ut idem sapiamus, et in eadem permaneamus regula.",
+        "SYN": "Впрочем, до чего мы достигли, так и должны мыслить и по тому правилу жить.",
+        "NEO": "Seulement, du point où nous sommes arrivés, marchons comme nous l’avons déjà fait jusqu’ici.+ 3:16 16. La Vulg. et quelques manuscrits ajoutent, ayons le même sentiment (vers. 15).*",
+        "NAB": "Only, with regard to what we have attained, continue on the same course.",
+        "VAT_ES": "que cuando estaba en Tesalónica, en dos ocasiones me enviaron medios para asistirme en mis necesidades.",
+        "CEI": "Il Signore conceda misericordia alla famiglia di Onesìforo, perché egli mi ha più volte confortato e non s'è vergognato delle mie catene;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "¶Συμμιμηταί μου γίνεσθε, ἀδελφοί, καὶ σκοπεῖτε τοὺς οὕτως περιπατοῦντας, καθὼς ἔχετε τύπον ἡμᾶς.",
+        "VUL": "Imitatores mei estote, fratres, et observate eos qui ita ambulant, sicut habetis formam nostram.",
+        "SYN": "Подражайте, братия, мне и смотрите на тех, которые поступают по образу, какой имеете в нас.",
+        "NEO": "Vous aussi, frères, soyez mes imitateurs, et ayez les yeux sur ceux qui marchent suivant le modèle que vous avez en nous.",
+        "NAB": "Join with others in being imitators of me, brothers, and observe those who thus conduct themselves according to the model you have in us.",
+        "VAT_ES": "No es que yo busque regalos; solamente quiero darles la ocasión de que ustedes se enriquezcan cada vez más delante de Dios.",
+        "CEI": "anzi, venuto a Roma, mi ha cercato con premura, finché mi ha trovato."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Πολλοὶ γὰρ περιπατοῦσιν, οὓς πολλάκις ἔλεγον ὑμῖν, νῦν δὲ καὶ κλαίων λέγω, τοὺς ἐχθροὺς τοῦ σταυροῦ τοῦ χριστοῦ·",
+        "VUL": "Multi enim ambulant, quos sæpe dicebam vobis (nunc autem et flens dico) inimicos crucis Christi :",
+        "SYN": "Ибо многие, о которых я часто говорил вам, а теперь даже со слезами говорю, поступают как враги креста Христова.",
+        "NEO": "Car il en est plusieurs qui marchent en ennemis de la croix du Christ : je vous en ai souvent parlé, et j’en parle maintenant encore avec larmes.",
+        "NAB": "For many, as I have often told you and now tell you even in tears, conduct themselves as enemies of the cross of Christ.",
+        "VAT_ES": "Por el momento, tengo todo lo necesario y más todavía. Vivo en la abundancia desde que Epafrodito me entregó la ofrenda de ustedes, como perfume de aroma agradable, como sacrificio aceptable y grato a Dios.",
+        "CEI": "Gli conceda il Signore di trovare misericordia presso Dio in quel giorno. E quanti servizi egli ha reso in Efeso, lo sai meglio di me."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "ὧν τὸ τέλος ἀπώλεια, ὧν ὁ θεὸς ἡ κοιλία, καὶ ἡ δόξα ἐν τῇ αἰσχύνῃ αὐτῶν, οἱ τὰ ἐπίγεια φρονοῦντες.",
+        "VUL": "quorum finis interitus : quorum Deus venter est : et gloria in confusione ipsorum, qui terrena sapiunt.",
+        "SYN": "Их конец -- погибель, их бог -- чрево, и слава их -- в сраме, они мыслят о земном.",
+        "NEO": "Leur fin, c’est la perdition, eux qui font leur Dieu de leur ventre, et mettent leur gloire dans ce qui fait leur honte, n’ayant de goût que pour les choses de la terre.",
+        "NAB": "Their end is destruction. Their God is their stomach; their glory is in their \"shame.\" Their minds are occupied with earthly things.",
+        "VAT_ES": "Dios colmará con magnificencia todas las necesidades de ustedes, conforme a su riqueza, en Cristo Jesús."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Ἡμῶν γὰρ τὸ πολίτευμα ἐν οὐρανοῖς ὑπάρχει, ἐξ οὗ καὶ σωτῆρα ἀπεκδεχόμεθα, κύριον Ἰησοῦν χριστόν·",
+        "VUL": "Nostra autem conversatio in cælis est : unde etiam Salvatorem exspectamus Dominum nostrum Jesum Christum,",
+        "SYN": "Наше же жительство -- на небесах, откуда мы ожидаем и Спасителя, Господа нашего Иисуса Христа,",
+        "NEO": "Pour nous, notre cité+ 3:20 20. Notre cité, litt. le \\+qt municipatus\\+qt* auquel nous appartenons, notre \\+qt patrie\\+qt*. Comp. Hébr. xiii, 14.* est dans les cieux, d’où nous attendons aussi comme Sauveur le Seigneur Jésus-Christ,",
+        "NAB": "But our citizenship is in heaven, and from it we also await a savior, the Lord Jesus Christ.",
+        "VAT_ES": "A Dios, nuestro Padre, sea la gloria por los siglos de los siglos. Amén."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "ὃς μετασχηματίσει τὸ σῶμα τῆς ταπεινώσεως ἡμῶν, εἰς τὸ γενέσθαι αὐτὸ σύμμορφον τῷ σώματι τῆς δόξης αὐτοῦ, κατὰ τὴν ἐνέργειαν τοῦ δύνασθαι αὐτὸν καὶ ὑποτάξαι ἑαυτῷ τὰ πάντα.",
+        "VUL": "qui reformabit corpus humilitatis nostræ, configuratum corpori claritatis suæ, secundum operationem, qua etiam possit subjicere sibi omnia.",
+        "SYN": "Который уничиженное тело наше преобразит так, что оно будет сообразно славному телу Его, силою, _которою_ Он действует и покоряет Себе все.",
+        "NEO": "qui transformera notre corps si misérable, en le rendant semblable à son corps glorieux, par sa vertu puissante qui lui assujettit toutes choses.",
+        "NAB": "He will change our lowly body to conform with his glorified body by the power that enables him also to bring all things into subjection to himself.",
+        "VAT_ES": "Saluden a cada uno de los santos en Cristo Jesús. Los hermanos que están conmigo los saludan a ustedes."
+      }
+    }
+  }
+}

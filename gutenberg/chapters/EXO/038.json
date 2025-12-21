@@ -1,0 +1,569 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_038",
+  "book_key": "EXO",
+  "sequence": 38,
+  "chapter_in": {
+    "MT": 38,
+    "VUL": 38,
+    "LXX": 38
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יַּ֛עַשׂ אֶת מִזְבַּ֥ח הָ/עֹלָ֖ה עֲצֵ֣י שִׁטִּ֑ים חָמֵשׁ֩ אַמּ֨וֹת אָרְכּ֜/וֹ וְ/חָֽמֵשׁ אַמּ֤וֹת רָחְבּ/וֹ֙ רָב֔וּעַ וְ/שָׁלֹ֥שׁ אַמּ֖וֹת קֹמָתֽ/וֹ׃",
+        "LXX": "Καὶ ἐποίησεν Βεσελεὴλ τὴν κιβωτόν,",
+        "VUL": "Fecit et altare holocausti de lignis setim, quinque cubitorum per quadrum, et trium in altitudine :",
+        "SYN": "И сделал жертвенник всесожжения из дерева ситтим длиною в пять локтей и шириною в пять локтей, четыреугольный, вышиною в три локтя;",
+        "NEO": "Il fit l’autel des holocaustes en bois d’acacia ; sa longueur était de cinq coudées, et sa largeur de cinq coudées ; il était carré, et sa hauteur était de trois coudées.",
+        "NAB": "The altar of holocausts was made of acacia wood, on a square, five cubits long and five cubits wide; its height was three cubits.",
+        "VAT_ES": "Luego hizo el altar de los holocaustos de madera de acacia; medía dos metros y medio de largo por dos y medio de ancho –es decir, era cuadrado– y tenía un metro y medio de alto.",
+        "CEI": "Fece l'altare di legno di acacia: aveva cinque cubiti di lunghezza e cinque cubiti di larghezza, era cioè quadrato, e aveva l'altezza di tre cubiti."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ קַרְנֹתָ֗י/ו עַ֚ל אַרְבַּ֣ע פִּנֹּתָ֔י/ו מִמֶּ֖/נּוּ הָי֣וּ קַרְנֹתָ֑י/ו וַ/יְצַ֥ף אֹת֖/וֹ נְחֹֽשֶׁת׃",
+        "LXX": "καὶ κατεχρύσωσεν αὐτὴν χρυσίῳ καθαρῷ ἔσωθεν καὶ ἔξωθεν.",
+        "VUL": "cujus cornua de angulis procedebant, operuitque illum laminis æneis.",
+        "SYN": "и сделал роги на четырех углах его, так что из него выходили роги, и обложил его медью.",
+        "NEO": "A ses quatre coins, il fit des cornes qui sortaient de l’autel, et il le revêtit d’airain.",
+        "NAB": "At the four corners horns were made that sprang directly from the altar. The whole was plated with bronze.",
+        "VAT_ES": "En sus cuatro ángulos, y formando una sola pieza con él, le hizo unos cuernos, y después lo recubrió de bronce.",
+        "CEI": "Fece i suoi corni ai suoi quattro angoli: i suoi corni erano tutti di un pezzo; lo rivestì di rame."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יַּ֜עַשׂ אֶֽת כָּל כְּלֵ֣י הַ/מִּזְבֵּ֗חַ אֶת הַ/סִּירֹ֤ת וְ/אֶת הַ/יָּעִים֙ וְ/אֶת הַ/מִּזְרָקֹ֔ת אֶת הַ/מִּזְלָגֹ֖ת וְ/אֶת הַ/מַּחְתֹּ֑ת כָּל כֵּלָ֖י/ו עָשָׂ֥ה נְחֹֽשֶׁת׃",
+        "LXX": "καὶ ἐχώνευσεν αὐτῇ τέσσαρες δακτυλίους χρυσοῦς, δύο ἐπὶ τὸ κλίτος τὸ ἓν καὶ δύο ἐπὶ τὸ κλίτος τὸ δεύτερον,",
+        "VUL": "Et in usus ejus paravit ex ære vasa diversa, lebetes, forcipes, fuscinulas, uncinos, et ignium receptacula.",
+        "SYN": "И сделал все принадлежности жертвенника: горшки, лопатки, чаши, вилки и угольницы; все принадлежности его сделал из меди.",
+        "NEO": "Il fit tous les ustensiles de l’autel, les vases à cendre, les pelles, les bassins, les fourchettes et les brasiers ; il fit d’airain tous ces ustensiles.",
+        "NAB": "All the utensils of the altar, the pots, shovels, basins, forks and fire pans, were likewise made of bronze.",
+        "VAT_ES": "Hizo, además, todos los utensilios del altar: los recipientes para recoger las cenizas, las palas, los aspersorios, los tenedores y los braseros. Todos estos utensilios los hizo de bronce.",
+        "CEI": "Fece anche tutti gli accessori dell'altare: i recipienti per raccogliere le ceneri, le sue pale, i suoi vasi per aspersione, le sue forchette e i bracieri: fece di rame tutti i suoi accessori."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤עַשׂ לַ/מִּזְבֵּ֨חַ֙ מִכְבָּ֔ר מַעֲשֵׂ֖ה רֶ֣שֶׁת נְחֹ֑שֶׁת תַּ֧חַת כַּרְכֻּבּ֛/וֹ מִ/לְּ/מַ֖טָּה עַד חֶצְיֽ/וֹ׃",
+        "LXX": "εὐρεῖς τοῖς διωστῆρσιν ὥστε αἴρειν αὐτὴν ἐν αὐτοῖς.",
+        "VUL": "Craticulamque ejus in modum retis fecit æneam, et subter eam in altaris medio arulam,",
+        "SYN": "И сделал для жертвенника решетку, род сетки, из меди, по окраине его внизу до половины его;",
+        "NEO": "Il fit à l’autel une grille d’airain en forme de treillis ; il la plaça sous la corniche de l’autel, par en bas, jusqu’à moitié de la hauteur.",
+        "NAB": "A grating of bronze network was made for the altar and placed round it, on the ground, half as high as the altar itself.",
+        "VAT_ES": "También fabricó para el altar un enrejado de bronce en forma de red, y lo puso debajo de la parte saliente del altar, de manera que llegaba, desde abajo, hasta la mitad del altar.",
+        "CEI": "Fece per l'altare una graticola, lavorata a forma di rete, di rame, e la pose sotto la cornice dell'altare in basso: la rete arrivava a metà altezza dell'altare."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּצֹ֞ק אַרְבַּ֧ע טַבָּעֹ֛ת בְּ/אַרְבַּ֥ע הַ/קְּצָוֺ֖ת לְ/מִכְבַּ֣ר הַ/נְּחֹ֑שֶׁת בָּתִּ֖ים לַ/בַּדִּֽים׃",
+        "LXX": "καὶ ἐποίησεν τὸ ἱλαστήριον ἐπάνωθεν τῆς κιβωτοῦ ἐκ χρυσίου,",
+        "VUL": "fusis quatuor annulis per totidem retiaculi summitates, ad immittendos vectes ad portandum :",
+        "SYN": "и сделал четыре кольца на четырех углах медной решетки для вкладывания шестов.",
+        "NEO": "Il fondit quatre anneaux, qu’il mit aux quatre coins de la grille d’airain, pour recevoir les barres.",
+        "NAB": "Four rings were cast for the four corners of the bronze grating, as holders for the poles,",
+        "VAT_ES": "Puso cuatro argollas en los cuatro extremos del enrejado de bronce para hacer pasar por ellas las andas.",
+        "CEI": "Fuse quattro anelli e li pose alle quattro estremità della graticola di rame, per inserirvi le stanghe."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ אֶת הַ/בַּדִּ֖ים עֲצֵ֣י שִׁטִּ֑ים וַ/יְצַ֥ף אֹתָ֖/ם נְחֹֽשֶׁת׃",
+        "LXX": "καὶ τοὺς δύο χερουβεὶμ χρυσοῦς·",
+        "VUL": "quos et ipsos fecit de lignis setim, et operuit laminis æneis :",
+        "SYN": "И сделал шесты из дерева ситтим, и обложил их медью,",
+        "NEO": "Il fit les barres de bois d’acacia et les revêtit d’airain.",
+        "NAB": "which were made of acacia wood and plated with bronze.",
+        "VAT_ES": "Hizo las andas de madera de acacia y las recubrió de bronce,",
+        "CEI": "Fece anche le stanghe di legno di acacia e le rivestì di rame."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יָּבֵ֨א אֶת הַ/בַּדִּ֜ים בַּ/טַּבָּעֹ֗ת עַ֚ל צַלְעֹ֣ת הַ/מִּזְבֵּ֔חַ לָ/שֵׂ֥את אֹת֖/וֹ בָּ/הֶ֑ם נְב֥וּב לֻחֹ֖ת עָשָׂ֥ה אֹתֽ/וֹ׃",
+        "LXX": "χεροὺβ ἕνα ἐπὶ τὸ ἄκρον τοῦ ἱλαστηρίου καὶ χεροὺβ ἕνα ἐπὶ τὸ ἄκρον τοῦ ἱλαστηρίου τὸν δεύτερον,",
+        "VUL": "induxitque in circulos, qui in lateribus altaris eminebant. Ipsum autem altare non erat solidum, sed cavum ex tabulis, et intus vacuum.",
+        "SYN": "и вложил шесты в кольца на боках жертвенника, чтобы носить его посредством их; пустой внутри из досок сделал его.",
+        "NEO": "Il passa les barres dans les anneaux, aux côtés de l’autel, pour qu’elles servent à le transporter. Il le fit creux, en planches.",
+        "NAB": "The poles were put through the rings on the sides of the altar for carrying it. The altar was made in the form of a hollow box.",
+        "VAT_ES": "y pasó las andas por las argollas que estaban a ambos lados del altar para poder transportarlo. El altar era hueco por dentro y estaba hecho de tablas.",
+        "CEI": "Introdusse le stanghe negli anelli sui lati dell'altare: servivano a trasportarlo. Fece l'altare di tavole, vuoto all'interno."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יַּ֗עַשׂ אֵ֚ת הַ/כִּיּ֣וֹר נְחֹ֔שֶׁת וְ/אֵ֖ת כַּנּ֣/וֹ נְחֹ֑שֶׁת בְּ/מַרְאֹת֙ הַ/צֹּ֣בְאֹ֔ת אֲשֶׁ֣ר צָֽבְא֔וּ פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃",
+        "LXX": "σκιάζοντα ταῖς πτέρυξιν αὐτῶν ἐπὶ τὸ ἱλαστήριον.",
+        "VUL": "Fecit et labrum æneum cum basi sua de speculis mulierum, quæ excubabant in ostio tabernaculi.",
+        "SYN": "И сделал умывальник из меди и подножие его из меди с изящными изображениями, украшающими вход скинии собрания.",
+        "NEO": "Il fit la cuve d’airain et sa base d’airain, avec les miroirs des femmes qui s’assemblaient à l’entrée de la tente de réunion.",
+        "NAB": "The bronze laver, with its bronze base, was made from the mirrors of the women who served at the entrance of the meeting tent.",
+        "VAT_ES": "Después hizo la fuente de bronce y su base también de bronce, con los espejos de las mujeres que prestaban servicio a la entrada de la Carpa del Encuentro.",
+        "CEI": "Fece la conca di rame e il suo piedestallo di rame, impiegandovi gli specchi delle donne, che nei tempi stabiliti venivano a prestar servizio all'ingresso della tenda del convegno."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יַּ֖עַשׂ אֶת הֶ/חָצֵ֑ר לִ/פְאַ֣ת נֶ֣גֶב תֵּימָ֗נָ/ה קַלְעֵ֤י הֶֽ/חָצֵר֙ שֵׁ֣שׁ מָשְׁזָ֔ר מֵאָ֖ה בָּ/אַמָּֽה׃",
+        "LXX": "Καὶ ἐποίησεν τὴν τράπεζαν τὴν προκειμένην ἐκ χρυσίου καθαροῦ,",
+        "VUL": "Fecit et atrium, in cujus australi plaga erant tentoria de bysso retorta, cubitorum centum,",
+        "SYN": "И сделал двор: с полуденной стороны, к югу, завесы из крученого виссона, длиною во сто локтей;",
+        "NEO": "Il fit le parvis. Du côté du midi, à droite, les rideaux du parvis, en lin retors, avaient une longueur de cent coudées,",
+        "NAB": "The court was made as follows. On the south side of the court there were hangings, woven of fine linen twined, a hundred cubits long,",
+        "VAT_ES": "Hizo también el atrio. Por el lado sur, en dirección al Négueb, el atrio tenía unas cortinas de lino fino reforzado, dispuestas a lo largo de cincuenta metros.",
+        "CEI": "Fece il recinto: sul lato meridionale, verso sud, il recinto aveva tendaggi di bisso ritorto, per la lunghezza di cento cubiti sullo stesso lato."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "עַמּוּדֵי/הֶ֣ם עֶשְׂרִ֔ים וְ/אַדְנֵי/הֶ֥ם עֶשְׂרִ֖ים נְחֹ֑שֶׁת וָוֵ֧י הָ/עַמֻּדִ֛ים וַ/חֲשֻׁקֵי/הֶ֖ם כָּֽסֶף׃",
+        "LXX": "καὶ ἐχώνευσεν αὐτῇ τέσσαρες δακτυλίους, δύο ἐπὶ τοῦ κλίτους τοῦ ἑνὸς καὶ δύο ἐπὶ τοῦ κλίτους τοῦ δευτέρου, εὐρεῖς ὥστε αἴρειν τοῖς διωστῆρσιν ἐν αὐτοῖς.",
+        "VUL": "columnæ æneæ viginti cum basibus suis, capita columnarum, et tota operis cælatura, argentea.",
+        "SYN": "столбов для них двадцать и подножий к ним двадцать медных; крючки у столбов и связи их из серебра.",
+        "NEO": "avec vingt colonnes et leurs vingt socles d’airain ; les crochets des colonnes et leurs tringles étaient d’argent.",
+        "NAB": "with twenty columns and twenty pedestals of bronze, the hooks and bands of the columns being of silver.",
+        "VAT_ES": "Sus veinte columnas estaban apoyadas sobre veinte bases de bronce, y estaban provistas de ganchos y varillas de plata.",
+        "CEI": "Vi erano le loro venti colonne con le venti basi di rame. Gli uncini delle colonne e le loro aste trasversali erano d'argento."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/לִ/פְאַ֤ת צָפוֹן֙ מֵאָ֣ה בָֽ/אַמָּ֔ה עַמּוּדֵי/הֶ֣ם עֶשְׂרִ֔ים וְ/אַדְנֵי/הֶ֥ם עֶשְׂרִ֖ים נְחֹ֑שֶׁת וָוֵ֧י הָֽ/עַמּוּדִ֛ים וַ/חֲשֻׁקֵי/הֶ֖ם כָּֽסֶף׃",
+        "LXX": "καὶ τοὺς διωστῆρας τῆς κιβωτοῦ καὶ τῆς τραπέζης ἐποίησεν, καὶ κατεχρύσωσεν αὐτοὺς χρυσίῳ.",
+        "VUL": "Æque ad septentrionalem plagam tentoria columnæ, basesque et capita columnarum ejusdem mensuræ, et operis ac metalli, erant.",
+        "SYN": "И по северной стороне -- _завесы_ во сто локтей; столбов для них двадцать и подножий к ним двадцать медных; крючки у столбов и связи их из серебра.",
+        "NEO": "Du côté du nord, les rideaux avaient cent coudées avec vingt colonnes et leurs vingt socles d’airain ; les crochets des colonnes et leurs tringles étaient d’argent.",
+        "NAB": "On the north side there were similar hangings, one hundred cubits long, with twenty columns and twenty pedestals of bronze, the hooks and bands of the columns being of silver.",
+        "VAT_ES": "Por el lado norte, las cortinas tenían igualmente una longitud de cincuenta metros, y estaban sostenidas por veinte columnas apoyadas en veinte bases de bronce y provistas de ganchos y varillas de plata.",
+        "CEI": "Anche sul lato rivolto a settentrione vi erano tendaggi per cento cubiti di lunghezza, le relative venti colonne con le venti basi di rame, gli uncini delle colonne e le aste trasversali d'argento."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/לִ/פְאַת יָ֗ם קְלָעִים֙ חֲמִשִּׁ֣ים בָּֽ/אַמָּ֔ה עַמּוּדֵי/הֶ֥ם עֲשָׂרָ֔ה וְ/אַדְנֵי/הֶ֖ם עֲשָׂרָ֑ה וָוֵ֧י הָ/עַמֻּדִ֛ים וַ/חֲשׁוּקֵי/הֶ֖ם כָּֽסֶף׃",
+        "LXX": "καὶ ἐποίησεν τὰ σκεύη τῆς τραπέζης, τά τε τρυβλία καὶ τὰς θυίσκας καὶ τοὺς κυάθους καὶ τὰ σπόνδια, ἐν οἷς σπείσει ἐν αὐτοῖς, χρυσᾶ.",
+        "VUL": "In ea vero plaga, quæ ad occidentem respicit, fuerunt tentoria cubitorum quinquaginta, columnæ decem cum basibus suis æneæ, et capita columnarum, et tota operis cælatura, argentea.",
+        "SYN": "И с западной стороны -- завесы в пятьдесят локтей, столбов для них десять и подножий к ним десять; крючки у столбов и связи их из серебра.",
+        "NEO": "Du côté de l’occident, les rideaux avaient cinquante coudées, avec dix colonnes et leurs dix socles.",
+        "NAB": "On the west side there were hangings, fifty cubits long, with ten columns and ten pedestals, the hooks and bands of the columns being of silver.",
+        "VAT_ES": "Por el lado oeste, había veinticinco metros de cortinas, con diez columnas y sus respectivas bases, que estaban provistas de ganchos y varillas de plata.",
+        "CEI": "Sul lato verso occidente vi erano cinquanta cubiti di tendaggi, con le relative dieci colonne e le dieci basi,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/לִ/פְאַ֛ת קֵ֥דְמָ/ה מִזְרָ֖חָ/ה חֲמִשִּׁ֥ים אַמָּֽה׃",
+        "LXX": "Καὶ ἐποίησεν τὴν λυχνίαν ἣ φωτίζει χρυσῆν,",
+        "VUL": "Porro contra orientem quinquaginta cubitorum paravit tentoria :",
+        "SYN": "И с передней стороны к востоку -- _завесы_ в пятьдесят локтей.",
+        "NEO": "Du côté de l’orient, sur le devant, il y avait cinquante coudées :",
+        "NAB": "On the east side the court was fifty cubits long.",
+        "VAT_ES": "Sobre el lado este, hacia el oriente, también había veinticinco metros de cortinas.",
+        "CEI": "i capitelli delle colonne e i loro uncini d'argento. Sul lato orientale, verso levante, vi erano cinquanta cubiti:"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "קְלָעִ֛ים חֲמֵשׁ עֶשְׂרֵ֥ה אַמָּ֖ה אֶל הַ/כָּתֵ֑ף עַמּוּדֵי/הֶ֣ם שְׁלֹשָׁ֔ה וְ/אַדְנֵי/הֶ֖ם שְׁלֹשָֽׁה׃",
+        "LXX": "στερεὰν τὸν καυλόν, καὶ τοὺς καλαμίσκους ἐξ ἀμφοτέρων τῶν μερῶν αὐτῆς·",
+        "VUL": "e quibus, quindecim cubitos columnarum trium, cum basibus suis, unum tenebat latus :",
+        "SYN": "Для одной стороны _ворот_ _двора_ -- завесы в пятнадцать локтей, столбов для них три и подножий к ним три;",
+        "NEO": "et il y avait quinze coudées de rideaux pour un côté de la porte, avec trois colonnes et leurs trois socles,",
+        "NAB": "Toward one side there were hangings to the extent of fifteen cubits, with three columns and three pedestals; toward the other side,",
+        "VAT_ES": "Las cortinas colocadas a un lado de la entrada medían siete metros y medio de largo, y allí había tres columnas y tres bases.",
+        "CEI": "quindici cubiti di tendaggi, con le relative tre colonne e le tre basi alla prima ala;"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/לַ/כָּתֵ֣ף הַ/שֵּׁנִ֗ית מִ/זֶּ֤ה וּ/מִ/זֶּה֙ לְ/שַׁ֣עַר הֶֽ/חָצֵ֔ר קְלָעִ֕ים חֲמֵ֥שׁ עֶשְׂרֵ֖ה אַמָּ֑ה עַמֻּדֵי/הֶ֣ם שְׁלֹשָׁ֔ה וְ/אַדְנֵי/הֶ֖ם שְׁלֹשָֽׁה׃",
+        "LXX": "ἐκ τῶν καλαμίσκων αὐτῆς οἱ βλαστοὶ ἐξέχοντες, τρεῖς ἐκ τούτου καὶ τρεῖς ἐκ τούτου, ἐξισούμενοι ἀλλήλοις·",
+        "VUL": "et in parte altera (quia inter utraque introitum tabernaculi fecit) quindecim æque cubitorum erant tentoria, columnæque tres, et bases totidem.",
+        "SYN": "и для другой стороны [по обеим сторонам ворот двора] -- завесы в пятнадцать локтей, столбов для них три и подножий к ним три.",
+        "NEO": "et pour le deuxième côté — d’un côté de la porte du parvis comme de l’autre, — quinze coudées de rideaux avec trois colonnes et leurs trois socles.",
+        "NAB": "beyond the entrance of the court, there were likewise hangings to the extent of fifteen cubits, with three columns and three pedestals.",
+        "VAT_ES": "Las del otro lado tenían las mismas medidas, también con tres columnas y sus respectivas bases.",
+        "CEI": "all'altra ala quindici cubiti di tendaggi, con le tre colonne e le tre basi."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "כָּל קַלְעֵ֧י הֶ/חָצֵ֛ר סָבִ֖יב שֵׁ֥שׁ מָשְׁזָֽר׃",
+        "LXX": "καὶ τὰ λαμπάδια αὐτῶν ἅ ἐστιν ἐπὶ τῶν ἄκρων, καρυωτὰ ἐξ αὐτῶν· καὶ τὰ ἐνθέμια ἐξ αὐτῶν, ἵνα ὦσιν ἐπ’ αὐτῶν οἱ λύχνοι καὶ τὸ ἐνθέμιον τὸ ἕβδομον ἀπ’ ἄκρου τοῦ λαμπαδίου ἐπὶ κορυφῆς ἄνωθεν, στερεὸν ὅλον χρυσοῦν·",
+        "VUL": "Cuncta atrii tentoria byssus retorta texuerat.",
+        "SYN": "Все завесы во все стороны двора из крученого виссона,",
+        "NEO": "Tous les rideaux formant l’enceinte du parvis étaient de lin retors.",
+        "NAB": "The hangings on all sides of the court were woven of fine linen twined.",
+        "VAT_ES": "Todas las cortinas del atrio eran de lino fino reforzado.",
+        "CEI": "Tutti i tendaggi che delimitavano il recinto erano di bisso ritorto."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/הָ/אֲדָנִ֣ים לָֽ/עַמֻּדִים֮ נְחֹשֶׁת֒ וָוֵ֨י הָֽ/עַמּוּדִ֜ים וַ/חֲשׁוּקֵי/הֶם֙ כֶּ֔סֶף וְ/צִפּ֥וּי רָאשֵׁי/הֶ֖ם כָּ֑סֶף וְ/הֵם֙ מְחֻשָּׁקִ֣ים כֶּ֔סֶף כֹּ֖ל עַמֻּדֵ֥י הֶ/חָצֵֽר׃",
+        "LXX": "καὶ ἑπτὰ λύχνους ἐπ’ αὐτῆς χρυσοῦς, καὶ τὰς λαβίδας αὐτῆς χρυσᾶς, καὶ τὰς ἐπαρυστρίδας αὐτῶν χρυσᾶς.",
+        "VUL": "Bases columnarum fuere æneæ, capita autem earum cum cunctis cælaturis suis argentea : sed et ipsas columnas atrii vestivit argento.",
+        "SYN": "а подножия у столбов из меди, крючки у столбов и связи их из серебра; верхи же у них обложены серебром, и все столбы двора соединены связями серебряными.",
+        "NEO": "Les socles pour les colonnes étaient d’airain, les crochets des colonnes et leurs tringles étaient d’argent, et leurs chapiteaux étaient revêtus d’argent. Toutes les colonnes du parvis étaient reliées par des tringles d’argent.",
+        "NAB": "The pedestals of the columns were of bronze, while the hooks and bands of the columns were of silver; the capitals were silver-plated, and all the columns of the court were banded with silver.",
+        "VAT_ES": "Las bases para las columnas eran de bronce, y sus ganchos y sus varillas de plata. Los capiteles también estaban revestidos de plata, y todas las columnas del atrio tenían varillas de plata.",
+        "CEI": "Le basi delle colonne erano di rame, gli uncini delle colonne e le aste trasversali erano d'argento; il rivestimento dei loro capitelli era d'argento e tutte le colonne del recinto avevano aste trasversali d'argento."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וּ/מָסַ֞ךְ שַׁ֤עַר הֶ/חָצֵר֙ מַעֲשֵׂ֣ה רֹקֵ֔ם תְּכֵ֧לֶת וְ/אַרְגָּמָ֛ן וְ/תוֹלַ֥עַת שָׁנִ֖י וְ/שֵׁ֣שׁ מָשְׁזָ֑ר וְ/עֶשְׂרִ֤ים אַמָּה֙ אֹ֔רֶךְ וְ/קוֹמָ֤ה בְ/רֹ֨חַב֙ חָמֵ֣שׁ אַמּ֔וֹת לְ/עֻמַּ֖ת קַלְעֵ֥י הֶ/חָצֵֽר׃",
+        "LXX": "Οὗτος περιηργύρωσεν τοὺς στύλους, καὶ ἐχώνευσεν τῷ στύλῳ δακτυλίους χρυσοῦς, καὶ ἐχρύσωσεν τοὺς μοχλοὺς χρυσίῳ, καὶ κατεχρύσωσεν τοὺς στύλους τοῦ καταπετάσματος χρυσίῳ, καὶ ἐποίησεν τὰς ἀγκύλας χρυσᾶς.",
+        "VUL": "Et in introitu ejus opere plumario fecit tentorium ex hyacintho, purpura, vermiculo, ac bysso retorta, quod habebat viginti cubitos in longitudine, altitudo vero quinque cubitorum erat juxta mensuram, quam cuncta atrii tentoria habebant.",
+        "SYN": "Завеса же для ворот двора узорчатой работы из голубой, пурпуровой и червленой _шерсти_ и из крученого виссона, длиною в двадцать локтей, вышиною в пять локтей, по всему протяжению, подобно завесам двора;",
+        "NEO": "Le rideau de la porte du parvis était un ouvrage de dessin varié, en pourpre violette, pourpre écarlate, cramoisi, et lin retors ; sa longueur était de vingt coudées, et sa hauteur de cinq coudées, comme la largeur des rideaux du parvis ;",
+        "NAB": "At the entrance of the court there was a variegated curtain, woven of violet, purple and scarlet yarn and of fine linen twined, twenty cubits long and five cubits wide, in keeping with the hangings of the court.",
+        "VAT_ES": "El cortinado de la puerta del atrio era de púrpura violeta y escarlata, de carmesí y de lino fino reforzado, y estaba recamado artísticamente. Tenía diez metros de largo, y su altura –lo mismo que la de las cortinas del atrio– era de dos metros y medio.",
+        "CEI": "Alla porta del recinto vi era una cortina, lavoro di ricamatore, di porpora viola, porpora rossa, scarlatto e bisso ritorto: la sua lunghezza era di venti cubiti, la sua altezza, nel senso della larghezza, era di cinque cubiti, come i tendaggi del recinto."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/עַמֻּֽדֵי/הֶם֙ אַרְבָּעָ֔ה וְ/אַדְנֵי/הֶ֥ם אַרְבָּעָ֖ה נְחֹ֑שֶׁת וָוֵי/הֶ֣ם כֶּ֔סֶף וְ/צִפּ֧וּי רָאשֵׁי/הֶ֛ם וַ/חֲשֻׁקֵי/הֶ֖ם כָּֽסֶף׃",
+        "LXX": "οὗτος ἐποίησεν καὶ τοὺς κρίκους τῆς σκηνῆς χρυσοῦς, καὶ τοὺς κρίκους τῆς αὐλῆς καὶ κρίκους εἰς τὸ ἐκτείνειν τὸ κατακάλυμμα ἄνωθεν χαλκοῦς.",
+        "VUL": "Columnæ autem in ingressu fuere quatuor cum basibus æneis, capitaque earum et cælaturæ argenteæ.",
+        "SYN": "и столбов для нее четыре, и подножий к ним четыре медных; крючки у них серебряные, а верхи их обложены серебром, и связи их серебряные.",
+        "NEO": "ses quatre colonnes et leurs quatre socles étaient d’airain, les crochets et leurs tringles d’argent, et leurs chapiteaux revêtus d’argent.",
+        "NAB": "There were four columns and four pedestals of bronze for it, while their hooks were of silver.",
+        "VAT_ES": "Sus cuatro columnas y sus cuatro bases eran de bronce, y sus ganchos de plata, así como también el revestimiento de sus capiteles y de sus varillas.",
+        "CEI": "Le colonne relative erano quattro, con le quattro basi di rame, i loro uncini d'argento, il rivestimento dei loro capitelli e le loro aste trasversali d'argento."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְֽ/כָל הַ/יְתֵדֹ֞ת לַ/מִּשְׁכָּ֧ן וְ/לֶ/חָצֵ֛ר סָבִ֖יב נְחֹֽשֶׁת׃",
+        "LXX": "οὗτος ἐχώνευσεν τὰς κεφαλίδας τὰς ἀργυρᾶς τῆς σκηνῆς, καὶ τὰς κεφαλίδας τὰς χαλκᾶς τῆς θύρας τῆς σκηνῆς, καὶ τὴν πύλην τῆς αὐλῆς· καὶ ἀγκύλας ἐποίησεν τοῖς στύλοις ἀργυρᾶς ἐπὶ τῶν στύλων· οὗτος περιηργύρωσεν αὐτάς.",
+        "VUL": "Paxillos quoque tabernaculi et atrii per gyrum fecit æneos.",
+        "SYN": "Все колья вокруг скинии и двора медные.",
+        "NEO": "Tous les pieux pour la Demeure et pour l’enceinte du parvis étaient d’airain.",
+        "NAB": "All the tent pegs for the Dwelling and for the court around it were of bronze.",
+        "VAT_ES": "Todas las estacas de la Morada y del atrio que la rodeaba eran de bronce.",
+        "CEI": "Tutti i picchetti della Dimora e del recinto circostante erano di rame."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "אֵ֣לֶּה פְקוּדֵ֤י הַ/מִּשְׁכָּן֙ מִשְׁכַּ֣ן הָ/עֵדֻ֔ת אֲשֶׁ֥ר פֻּקַּ֖ד עַל פִּ֣י מֹשֶׁ֑ה עֲבֹדַת֙ הַ/לְוִיִּ֔ם בְּ/יַד֙ אִֽיתָמָ֔ר בֶּֽן אַהֲרֹ֖ן הַ/כֹּהֵֽן׃",
+        "LXX": "οὗτος ἐποίησεν καὶ τοὺς πασσάλους τῆς αὐλῆς χαλκοῦς.",
+        "VUL": "Hæc sunt instrumenta tabernaculi testimonii, quæ enumerata sunt juxta præceptum Moysi in cæremoniis Levitarum per manum Ithamar filii Aaron sacerdotis :",
+        "SYN": "Вот исчисление того, что употреблено для скинии откровения, сделанное по повелению Моисея, посредством левитов под надзором Ифамара, сына Ааронова, священника.",
+        "NEO": "Voici le compte des choses qui ont été employées pour la Demeure, la Demeure du témoignage, compte dressé par le soin des Lévites sur l’ordre de Moïse et sous la direction d’Ithamar, fils du grand prêtre Aaron.",
+        "NAB": "The following is an account of the various amounts used on the Dwelling, the Dwelling of the commandments, drawn up at the command of Moses by the Levites under the direction of Ithamar, son of Aaron the priest.",
+        "VAT_ES": "Este es el cómputo de las expensas para la construcción de la Morada del Testimonio, tal como fue realizado por orden de Moisés y ejecutado por los levitas, bajo la dirección de Itamar, hijo del sacerdote Aarón.",
+        "CEI": "Questo è il computo dei metalli impiegati per la Dimora, la Dimora della Testimonianza, redatto per ordine di Mosè e per opera dei leviti, sotto la direzione d'Itamar, figlio del sacerdote Aronne."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וּ/בְצַלְאֵ֛ל בֶּן אוּרִ֥י בֶן ח֖וּר לְ/מַטֵּ֣ה יְהוּדָ֑ה עָשָׂ֕ה אֵ֛ת כָּל אֲשֶׁר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "οὗτος ἐποίησεν τὸ θυσιαστήριον τὸ χαλκοῦν ἐκ τῶν πυρείων τῶν χαλκῶν, ἃ ἦσαν τοῖς ἀνδράσιν τοῖς καταστασιάσασι μετὰ τῆς Κόρε συναγωγῆς.",
+        "VUL": "quæ Beseleel filius Uri filii Hur de tribu Juda, Domino per Moysen jubente, compleverat,",
+        "SYN": "Делал же все, что повелел Господь Моисею, Веселеил, сын Урии, сына Ора, из колена Иудина,",
+        "NEO": "Béseléel, fils d’Uri, fils de Hur, de la tribu de Juda, fit tout ce que \\+w Yahweh|strong=\"H3068\"\\+w** avait ordonné à Moïse ;",
+        "NAB": "However, it was Bezalel, son of Uri, son of Hur, of the tribe of Judah, who made all that the Lord commanded Moses,",
+        "VAT_ES": "Besalel –hijo de Urí, hijo de Jur, de la tribu de Judá– hizo todo lo que el Señor había ordenado a Moisés,",
+        "CEI": "Bezaleel, figlio di Uri, figlio di Cur, della tribù di Giuda, eseguì quanto il Signore aveva ordinato a Mosè;"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/אִתּ֗/וֹ אָהֳלִיאָ֞ב בֶּן אֲחִיסָמָ֛ךְ לְ/מַטֵּה דָ֖ן חָרָ֣שׁ וְ/חֹשֵׁ֑ב וְ/רֹקֵ֗ם בַּ/תְּכֵ֨לֶת֙ וּ/בָֽ/אַרְגָּמָ֔ן וּ/בְ/תוֹלַ֥עַת הַ/שָּׁנִ֖י וּ/בַ/שֵּֽׁשׁ׃",
+        "LXX": "οὗτος ἐποίησεν πάντα τὰ σκεύη τοῦ θυσιαστηρίου, καὶ τὸ πυρεῖον αὐτοῦ καὶ τὴν βάσιν καὶ τὰς φιάλας καὶ τὰς κρεάγρας χαλκᾶς.",
+        "VUL": "juncto sibi socio Ooliab filio Achisamech de tribu Dan : qui et ipse artifex lignorum egregius fuit, et polymitarius atque plumarius ex hyacintho, purpura, vermiculo et bysso.",
+        "SYN": "и с ним Аголиав, сын Ахисамахов, из колена Данова, резчик и искусный ткач и вышиватель по голубой, пурпуровой, червленой и виссоновой _ткани._",
+        "NEO": "il eut pour aide Ooliab, fils Achisamech, de la tribu de Dan, habile à sculpter, à inventer, à tisser en dessin varié la pourpre violette, la pourpre écarlate, le cramoisi, et le fin lin.",
+        "NAB": "and he was assisted by Oholiab, son of Ahisamach, of the tribe of Dan, who was an engraver, an embroiderer, and a weaver of variegated cloth of violet, purple and scarlet yarn and of fine linen.",
+        "VAT_ES": "contando con la ayuda de Oholiab –hijo de Ajisamac, de la tribu de Dan– que era artífice, bordador y recamador de púrpura violeta y escarlata, de carmesí y de lino fino.",
+        "CEI": "insieme con lui Ooliab, figlio di Achisamach della tribù di Dan, intagliatore, decoratore e ricamatore di porpora viola, porpora rossa, scarlatto e bisso."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "כָּל הַ/זָּהָ֗ב הֶֽ/עָשׂוּי֙ לַ/מְּלָאכָ֔ה בְּ/כֹ֖ל מְלֶ֣אכֶת הַ/קֹּ֑דֶשׁ וַ/יְהִ֣י זְהַ֣ב הַ/תְּנוּפָ֗ה תֵּ֤שַׁע וְ/עֶשְׂרִים֙ כִּכָּ֔ר וּ/שְׁבַ֨ע מֵא֧וֹת וּ/שְׁלֹשִׁ֛ים שֶׁ֖קֶל בְּ/שֶׁ֥קֶל הַ/קֹּֽדֶשׁ׃",
+        "LXX": "οὗτος ἐποίησεν τῷ θυσιαστηρίῳ παράθεμα, ἔργον δικτυωτὸν κάτωθεν τοῦ πυρείου ὑπὸ αὐτὸ ἕως τοῦ ἡμίσους αὐτοῦ· καὶ ἐπέθηκεν αὐτῷ τέσσαρες δακτυλίους ἐκ τῶν τεσσάρων μερῶν τοῦ παραθέματος τοῦ θυσιαστηρίου χαλκοῦς, τοῖς μοχλοῖς εὐρεῖς ὥστε αἴρειν ἐν αὐτοῖς τὸ θυσιαστήριον.",
+        "VUL": "Omne aurum quod expensum est in opere sanctuarii, et quod oblatum est in donariis, viginti novem talentorum fuit, et septingentorum triginta siclorum ad mensuram sanctuarii.",
+        "SYN": "Всего золота, употребленного в дело на все принадлежности святилища, золота, принесенного в дар, было двадцать девять талантов и семьсот тридцать сиклей, сиклей священных;",
+        "NEO": "Total de l’or employé à l’ouvrage, pour tout l’ouvrage du sanctuaire, or qui était le produit des offrandes : vingt-neuf talents et sept cent trente sicles+ 38:24 \\+it Vingt-neuf talents\\+it* : 1400 Kgs environ. ‑ \\+it sept cent trente sicles\\+it* : 12 kgs environ*, selon le sicle du sanctuaire.",
+        "NAB": "All the gold used in the entire construction of the sanctuary, having previously been given as an offering, amounted to twenty-nine talents and seven hundred and thirty shekels, according to the standard of the sanctuary shekel.",
+        "VAT_ES": "El total del oro empleado en la ejecución de las obras del Santuario –el oro procedente de las ofrendas– ascendió a veintinueve talentos y setecientos treinta siclos, en siclos del Santuario.",
+        "CEI": "Totale dell'oro impiegato per il lavoro, cioè per tutto il lavoro del santuario - era l'oro presentato in offerta -: ventinove talenti e settecentotrenta sicli, in sicli del santuario."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/כֶ֛סֶף פְּקוּדֵ֥י הָ/עֵדָ֖ה מְאַ֣ת כִּכָּ֑ר וְ/אֶלֶף֩ וּ/שְׁבַ֨ע מֵא֜וֹת וַ/חֲמִשָּׁ֧ה וְ/שִׁבְעִ֛ים שֶׁ֖קֶל בְּ/שֶׁ֥קֶל הַ/קֹּֽדֶשׁ׃",
+        "LXX": "οὗτος ἐποίησεν τὸ ἔλαιον τῆς χρίσεως τὸ ἅγιον καὶ τὴν σύνθεσιν τοῦ θυμιάματος, καθαρὸν ἔργον μυρεψοῦ.",
+        "VUL": "Oblatum est autem ab his qui transierunt ad numerum a viginti annis et supra, de sexcentis tribus millibus et quingentis quinquaginta armatorum.",
+        "SYN": "серебра же от исчисленных _лиц_ общества сто талантов и тысяча семьсот семьдесят пять сиклей, сиклей священных;",
+        "NEO": "L’argent de ceux de l’assemblée qui furent recensés s’élevait à cent talents+ 38:25 \\+it Cent talents\\+it*, ou 300 mille sicles, en tout 301 775 sicles, environ 4300 kgs, ce qui répond exactement à la somme des demi-sicles que devaient payer les 603 550 Hébreux recensés.* et mille sept cent soixante-quinze sicles, selon le sicle du sanctuaire.",
+        "NAB": "The amount of the silver received from the community was one hundred talents and one thousand seven hundred and seventy-five shekels, according to the standard of the sanctuary shekel;",
+        "VAT_ES": "La plata recogida entre los miembros de la comunidad que habían sido censados, ascendió a cien talentos y mil setecientos setenta y cinco siclos, en siclos del Santuario,",
+        "CEI": "L'argento raccolto, in occasione del censimento della comunità, pesava cento talenti e millesettecentosettantacinque sicli, in sicli del santuario,"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "בֶּ֚קַע לַ/גֻּלְגֹּ֔לֶת מַחֲצִ֥ית הַ/שֶּׁ֖קֶל בְּ/שֶׁ֣קֶל הַ/קֹּ֑דֶשׁ לְ/כֹ֨ל הָ/עֹבֵ֜ר עַל הַ/פְּקֻדִ֗ים מִ/בֶּ֨ן עֶשְׂרִ֤ים שָׁנָה֙ וָ/מַ֔עְלָ/ה לְ/שֵׁשׁ מֵא֥וֹת אֶ֨לֶף֙ וּ/שְׁלֹ֣שֶׁת אֲלָפִ֔ים וַ/חֲמֵ֥שׁ מֵא֖וֹת וַ/חֲמִשִּֽׁים׃",
+        "LXX": "οὗτος ἐποίησεν τὸν λουτῆρα χαλκοῦν καὶ τὴν βάσιν αὐτοῦ χαλκῆν ἐκ τῶν κατόπτρων τῶν νηστευσασῶν αἳ ἐνήστευσαν παρὰ τὰς θύρας τῆς σκηνῆς τοῦ μαρτυρίου, ἐν ᾗ ἡμέρᾳ ἔπηξεν αὐτήν·",
+        "VUL": "Fuerunt præterea centum talenta argenti e quibus conflatæ sunt bases sanctuarii, et introitus, ubi velum pendet.",
+        "SYN": "с шестисот трех тысяч пятисот пятидесяти человек, с каждого поступившего в исчисление, от двадцати лет и выше, по полсиклю с человека, считая на сикль священный.",
+        "NEO": "C’était un béka par tête, la moitié d’un sicle, selon le sicle du sanctuaire, pour chaque homme compris dans le recensement, depuis l’âge de vingt ans et au-dessus, soit pour six cent trois mille cinq cent cinquante hommes.",
+        "NAB": "one bekah apiece, that is, a half-shekel apiece, according to the standard of the sanctuary shekel, was received from every man of twenty years or more who entered the registered group; the number of these was six hundred and three thousand five hundred and fifty men.",
+        "VAT_ES": "o sea, medio siclo por cada uno de los incluidos en el censo de los seiscientos tres mil quinientos cincuenta hombres de veinte años para arriba.",
+        "CEI": "cioè un beka a testa, vale a dire mezzo siclo, secondo il siclo del santuario, per ciascuno di coloro che furono sottoposti al censimento, dai vent'anni in su. Erano seicentotremilacinquecentocinquanta."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י מְאַת֙ כִּכַּ֣ר הַ/כֶּ֔סֶף לָ/צֶ֗קֶת אֵ֚ת אַדְנֵ֣י הַ/קֹּ֔דֶשׁ וְ/אֵ֖ת אַדְנֵ֣י הַ/פָּרֹ֑כֶת מְאַ֧ת אֲדָנִ֛ים לִ/מְאַ֥ת הַ/כִּכָּ֖ר כִּכָּ֥ר לָ/אָֽדֶן׃",
+        "LXX": "καὶ ἐποίησεν τὸν λουτῆρα, ἵνα νίπτωνται ἐξ αὐτοῦ Μωσῆς καὶ Ἀαρὼν καὶ οἱ υἱοὶ αὐτοῦ τὰς χεῖρας αὐτῶν καὶ τοὺς πόδας, εἰσπορευομένων αὐτῶν εἰς τὴν σκηνὴν τοῦ μαρτυρίου· ἢ ὅταν προσπορεύωνται πρὸς τὸ θυσιαστήριον λειτουργεῖν, ἐνίπτοντο ἐξ αὐτοῦ, καθάπερ συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "Centum bases factæ sunt de talentis centum, singulis talentis per bases singulas supputatis.",
+        "SYN": "Сто талантов серебра употреблено на вылитие подножий святилища и подножий у завесы; сто подножий из ста талантов, по таланту на подножие;",
+        "NEO": "Les cent talents d’argent servirent à fondre les socles du sanctuaire et les socles du voile, cent socles pour les cent talents, un talent par socle.",
+        "NAB": "One hundred talents of silver were used for casting the pedestals of the sanctuary and the pedestals of the veil, one talent for each pedestal, or one hundred talents for the one hundred pedestals.",
+        "VAT_ES": "Los cien talentos de plata se usaron para fundir las bases del Santuario y las bases que sostenían el cortinado, a razón de un talento por base;",
+        "CEI": "Cento talenti di argento servirono a fondere le basi del santuario e le basi del velo: cento basi per cento talenti, cioè un talento per ogni base."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/אֶת הָ/אֶ֜לֶף וּ/שְׁבַ֤ע הַ/מֵּאוֹת֙ וַ/חֲמִשָּׁ֣ה וְ/שִׁבְעִ֔ים עָשָׂ֥ה וָוִ֖ים לָ/עַמּוּדִ֑ים וְ/צִפָּ֥ה רָאשֵׁי/הֶ֖ם וְ/חִשַּׁ֥ק אֹתָֽ/ם׃",
+        "VUL": "De mille autem septingentis et septuaginta quinque, fecit capita columnarum, quas et ipsas vestivit argento.",
+        "SYN": "а из тысячи семисот семидесяти пяти _сиклей_ сделал он крючки у столбов и покрыл верхи их и сделал связи для них.",
+        "NEO": "Et avec les mille sept cent soixante-quinze sicles, on fit les crochets pour les colonnes, on revêtit les chapiteaux et on les joignit par des tringles.",
+        "NAB": "The remaining one thousand seven hundred and seventy-five shekels were used for making the hooks on the columns, for plating the capitals, and for banding them with silver.",
+        "VAT_ES": "y con los mil setecientos setenta y cinco siclos hicieron ganchos para las columnas, revistieron los capiteles y los unieron por medio de varillas.",
+        "CEI": "Con i millesettecentosettantacinque sicli fece gli uncini delle colonne, rivestì i loro capitelli e le riunì con le aste trasversali."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וּ/נְחֹ֥שֶׁת הַ/תְּנוּפָ֖ה שִׁבְעִ֣ים כִּכָּ֑ר וְ/אַלְפַּ֥יִם וְ/אַרְבַּע מֵא֖וֹת שָֽׁקֶל׃",
+        "VUL": "Æris quoque oblata sunt talenta septuaginta duo millia, et quadringenti supra sicli,",
+        "SYN": "Меди же, принесенной в дар, было семьдесят талантов и две тысячи четыреста сиклей;",
+        "NEO": "L’airain des offrandes montait à soixante-dix talents et deux mille quatre cent sicles.",
+        "NAB": "The bronze, given as an offering, amounted to seventy talents and two thousand four hundred shekels.",
+        "VAT_ES": "El bronce procedente de las ofrendas ascendió a setenta talentos y dos mil cuatrocientos siclos.",
+        "CEI": "Il rame presentato in offerta assommava a settanta talenti e duemilaquattrocento sicli."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ בָּ֗/הּ אֶת אַדְנֵי֙ פֶּ֚תַח אֹ֣הֶל מוֹעֵ֔ד וְ/אֵת֙ מִזְבַּ֣ח הַ/נְּחֹ֔שֶׁת וְ/אֶת מִכְבַּ֥ר הַ/נְּחֹ֖שֶׁת אֲשֶׁר ל֑/וֹ וְ/אֵ֖ת כָּל כְּלֵ֥י הַ/מִּזְבֵּֽחַ׃",
+        "VUL": "ex quibus fusæ sunt bases in introitu tabernaculi testimonii, et altare æneum cum craticula sua, omniaque vasa quæ ad usum ejus pertinent,",
+        "SYN": "из нее сделал он подножия _для_ _столбов_ у входа в скинию свидетельства, и жертвенник медный, и решетку медную для него, и все сосуды жертвенника,",
+        "NEO": "On en fit les socles de l’entrée de la tente de réunion, l’autel d’airain avec sa grille d’airain et tous les ustensiles de l’autel,",
+        "NAB": "With this were made the pedestals at the entrance of the meeting tent, the bronze altar with its bronze gratings and all the appurtenances of the altar,",
+        "VAT_ES": "Con ellos se hicieron las bases para la entrada de la Carpa del Encuentro, el altar de bronce con su enrejado y todos los utensilios,",
+        "CEI": "Con esso fece le basi per l'ingresso della tenda del convegno, l'altare di rame con la sua graticola di rame e tutti gli accessori dell'altare,"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/אֶת אַדְנֵ֤י הֶֽ/חָצֵר֙ סָבִ֔יב וְ/אֶת אַדְנֵ֖י שַׁ֣עַר הֶ/חָצֵ֑ר וְ/אֵ֨ת כָּל יִתְדֹ֧ת הַ/מִּשְׁכָּ֛ן וְ/אֶת כָּל יִתְדֹ֥ת הֶ/חָצֵ֖ר סָבִֽיב׃",
+        "VUL": "et bases atrii tam in circuitu quam in ingressu ejus, et paxilli tabernaculi atque atrii per gyrum.",
+        "SYN": "и подножия _для_ _столбов_ всего двора, и подножия _для_ _столбов_ ворот двора, и все колья скинии и все колья вокруг двора.",
+        "NEO": "les socles de l’enceinte du parvis et les socles de la porte du parvis, et tous les pieux de la Demeure et tous les pieux de l’enceinte du parvis.",
+        "NAB": "the pedestals around the court, the pedestals at the entrance of the court, and all the tent pegs for the Dwelling and for the court around it.",
+        "VAT_ES": "las bases para las cortinas que bordeaban el atrio y para la entrada del mismo; y también todas las estacas de la Morada y del atrio que la rodeaba.",
+        "CEI": "le basi del recinto, le basi della porta del recinto, tutti i picchetti della Dimora e tutti i picchetti del recinto."
+      }
+    }
+  }
+}

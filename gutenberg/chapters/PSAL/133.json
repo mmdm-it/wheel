@@ -1,0 +1,68 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_133",
+  "book_key": "PSAL",
+  "sequence": 133,
+  "chapter_in": {
+    "MT": 133,
+    "VUL": 132,
+    "LXX": 132
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שִׁ֥יר הַֽ/מַּעֲל֗וֹת לְ/דָ֫וִ֥ד הִנֵּ֣ה מַה טּ֭וֹב וּ/מַה נָּעִ֑ים שֶׁ֖בֶת אַחִ֣ים גַּם יָֽחַד׃",
+        "LXX": "ᾨδὴ τῶν ἀναβαθμῶν. Ἰδοὺ δὴ εὐλογεῖτε τὸν κύριον, πάντες οἱ δοῦλοι Κυρίου, οἱ ἑστῶτες ἐν αὐλαῖς οἴκου θεοῦ ἡμῶν·",
+        "VUL": "Canticum graduum. [Ecce nunc benedicite Dominum, omnes servi Domini :/ qui statis in domo Domini,/ in atriis domus Dei nostri./",
+        "SYN": "Благословите ныне Господа, все рабы Господни, стоящие в доме Господнем, [во дворах дома Бога нашего,] во время ночи.",
+        "NEO": "Cantique des montées. De David.",
+        "NAB": "A song of ascents. Of David. How good it is, how pleasant, where the people dwell as one!",
+        "CEI": "Canto delle ascensioni. Di Davide. Ecco quanto è buono e quanto è soave che i fratelli vivano insieme!"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כַּ/שֶּׁ֤מֶן הַ/טּ֨וֹב עַל הָ/רֹ֗אשׁ יֹרֵ֗ד עַֽל הַ/זָּקָ֥ן זְקַֽן אַהֲרֹ֑ן שֶׁ֝/יֹּרֵ֗ד עַל פִּ֥י מִדּוֹתָֽי/ו׃",
+        "LXX": "ἐν ταῖς νυξὶν ἐπάρατε χεῖρας ὑμῶν εἰς τὰ ἅγια, καὶ εὐλογεῖτε τὸν κύριον.",
+        "VUL": "In noctibus extollite manus vestras in sancta,/ et benedicite Dominum./",
+        "SYN": "Воздвигните руки ваши к святилищу, и благословите Господа.",
+        "NEO": "C’est comme l’huile précieuse qui, répandue sur la tête, coule sur la barbe, sur la barbe d’Aaron, qui descend sur le bord de son vêtement.",
+        "NAB": "Like precious ointment on the head, running down upon the beard, Upon the beard of Aaron, upon the collar of his robe.",
+        "VAT_ES": "Es como el óleo perfumado sobre la cabeza,",
+        "CEI": "È come olio profumato sul capo, che scende sulla barba, sulla barba di Aronne, che scende sull'orlo della sua veste."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כְּ/טַל חֶרְמ֗וֹן שֶׁ/יֹּרֵד֮ עַל הַרְרֵ֪י צִ֫יּ֥וֹן כִּ֤י שָׁ֨ם צִוָּ֣ה יְ֭הוָה אֶת הַ/בְּרָכָ֑ה חַ֝יִּ֗ים עַד הָ/עוֹלָֽם׃",
+        "LXX": "εὐλογήσει σε Κύριος ἐκ Σιών, ὁ ποιήσας τὸν οὐρανὸν καὶ τὴν γῆν.",
+        "VUL": "Benedicat te Dominus ex Sion,/ qui fecit cælum et terram.]",
+        "SYN": "Благословит тебя Господь с Сиона, сотворивший небо и землю. Аллилуия.",
+        "NEO": "C’est comme la rosée de l’Hermon, qui descend sur les sommets de Sion. Car c’est là que \\+w Yahweh|strong=\"H3068\"\\+w** a établi la bénédiction, la vie, pour toujours.",
+        "NAB": "Like dew of Hermon coming down upon the mountains of Zion. There the LORD has lavished blessings, life for evermore!",
+        "VAT_ES": "Es como el rocío del Hermón",
+        "CEI": "È come rugiada dell'Ermon, che scende sui monti di Sion. Là il Signore dona la benedizione e la vita per sempre."
+      }
+    }
+  }
+}

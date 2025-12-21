@@ -1,0 +1,249 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOB_002",
+  "book_key": "IOB",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י הַ/יּ֔וֹם וַ/יָּבֹ֨אוּ֙ בְּנֵ֣י הָֽ/אֱלֹהִ֔ים לְ/הִתְיַצֵּ֖ב עַל יְהוָ֑ה וַ/יָּב֤וֹא גַֽם הַ/שָּׂטָן֙ בְּ/תֹכָ֔/ם לְ/הִתְיַצֵּ֖ב עַל יְהוָֽה׃",
+        "LXX": "Ἐγένετο δὲ ὡς ἡ ἡμέρα αὕτη καὶ ἦλθον οἱ ἄγγελοι τοῦ θεοῦ παραστῆναι ἔναντι Κυρίου, καὶ ὁ διάβολος ἦλθεν ἐν μέσῳ αὐτῶν παραστῆναι ἐναντίον τοῦ κυρίου.",
+        "VUL": "Factum est autem, cum quadam die venissent filii Dei, et starent coram Domino, venisset quoque Satan inter eos, et staret in conspectu ejus,",
+        "SYN": "Был день, когда пришли сыны Божии предстать пред Господа; между ними пришел и сатана предстать пред Господа.",
+        "NEO": "Il arriva un jour que, les fils de Dieu étant venus se présenter devant \\+w Yahweh|strong=\"H3068\"\\+w**, Satan vint aussi au milieu d’eux se présenter devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Once again the sons of God came to present themselves before the LORD, and Satan also came with them.",
+        "VAT_ES": "El día en que los hijos de Dios fueron a presentarse delante del Señor, también fue el Adversario en medio de ellos, para presentarse delante del Señor.",
+        "CEI": "Quando un giorno i figli di Dio andarono a presentarsi al Signore, anche satana andò in mezzo a loro a presentarsi al Signore."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֶל הַ/שָּׂטָ֔ן אֵ֥י מִ/זֶּ֖ה תָּבֹ֑א וַ/יַּ֨עַן הַ/שָּׂטָ֤ן אֶת יְהוָה֙ וַ/יֹּאמַ֔ר מִ/שֻּׁ֣ט בָּ/אָ֔רֶץ וּ/מֵ/הִתְהַלֵּ֖ךְ בָּֽ/הּ׃",
+        "LXX": "καὶ εἶπεν ὁ κύριος τῷ διαβόλῳ Πόθεν σὺ ἔρχῃ; τότε εἶπεν ὁ διάβολος ἐνώπιον τοῦ κυρίου Διαπορευθεὶς τὴν ὑπ’ οὐρανὸν καὶ ἐμπεριπατήσας τὴν σύμπασαν πάρειμι.",
+        "VUL": "ut diceret Dominus ad Satan : Unde venis ? Qui respondens ait : Circuivi terram, et perambulavi eam.",
+        "SYN": "И сказал Господь сатане: откуда ты пришел? И отвечал сатана Господу и сказал: я ходил по земле и обошел ее.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** dit à Satan : « D’où viens-tu ? » Satan répondit à \\+w Yahweh|strong=\"H3068\"\\+w** et dit : « De parcourir le monde et de m’y promener. »",
+        "NAB": "And the LORD said to Satan, \"Whence do you come?\" And Satan answered the LORD and said, \"From roaming the earth and patrolling it.\"",
+        "VAT_ES": "El Señor le dijo: «&iquest;De dónde vienes?». El Adversario respondió al Señor: «De rondar por la tierra, yendo de aquí para allá».",
+        "CEI": "Il Signore disse a satana: \"Da dove vieni?\". Satana rispose al Signore: \"Da un giro sulla terra che ho percorsa\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֜ה אֶל הַ/שָּׂטָ֗ן הֲ/שַׂ֣מְתָּ לִבְּ/ךָ֮ אֶל עַבְדִּ֣/י אִיּוֹב֒ כִּי֩ אֵ֨ין כָּמֹ֜/הוּ בָּ/אָ֗רֶץ אִ֣ישׁ תָּ֧ם וְ/יָשָׁ֛ר יְרֵ֥א אֱלֹהִ֖ים וְ/סָ֣ר מֵ/רָ֑ע וְ/עֹדֶ֨/נּוּ֙ מַחֲזִ֣יק בְּ/תֻמָּת֔/וֹ וַ/תְּסִיתֵ֥/נִי ב֖/וֹ לְ/בַלְּע֥/וֹ חִנָּֽם׃",
+        "LXX": "εἶπεν δὲ ὁ κύριος πρὸς τὸν διάβολον Προσέσχες οὖν τῷ θεράποντί μου Ἰώβ; ὅτι οὐκ ἔστιν κατ’ αὐτὸν τῶν ἐπὶ τῆς γῆς, ἄνθρωπος ἄκακος, ἀληθινός, ἄμεμπτος, θεοσεβής, ἀπεχόμενος ἀπὸ παντὸς κακοῦ. ἔτι δὲ ἔχεται ἀκακίας· σὺ δὲ εἶπας τὰ ὑπάρχοντα αὐτοῦ διὰ κενῆς ἀπολέσαι.",
+        "VUL": "Et dixit Dominus ad Satan : Numquid considerasti servum meum Job, quod non sit ei similis in terra, vir simplex et rectus, ac timens Deum, et recedens a malo, et adhuc retinens innocentiam ? tu autem commovisti me adversus eum, ut affligerem eum frustra.",
+        "SYN": "И сказал Господь сатане: обратил ли ты внимание твое на раба Моего Иова? ибо нет такого, как он, на земле: человек непорочный, справедливый, богобоязненный и удаляющийся от зла, и доселе тверд в своей непорочности; а ты возбуждал Меня против него, чтобы погубить его безвинно.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Satan : « As-tu remarqué mon serviteur Job ? Il n’y a pas d’homme comme lui sur la terre, intègre, droit, craignant Dieu et éloigné du mal. Il persévère toujours dans son intégrité, quoique tu m’aies provoqué à le perdre sans raison. »",
+        "NAB": "And the LORD said to Satan, \"Have you noticed my servant Job, and that there is no one on earth like him, faultless and upright, fearing God and avoiding evil? He still holds fast to his innocence although you incited me against him to ruin him without cause.\"",
+        "VAT_ES": "Entonces el Señor le dijo: «&iquest;Te has fijado en mi servidor Job? No hay nadie como él sobre la tierra: es un hombre íntegro y recto, temeroso de Dios y alejado del mal. El todavía se mantiene firme en su integridad, y en vano me has instigado contra él para perderlo».",
+        "CEI": "Il Signore disse a satana: \"Hai posto attenzione al mio servo Giobbe? Nessuno è come lui sulla terra: uomo integro e retto, teme Dio ed è alieno dal male. Egli è ancor saldo nella sua integrità; tu mi hai spinto contro di lui, senza ragione, per rovinarlo\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יַּ֧עַן הַ/שָּׂטָ֛ן אֶת יְהוָ֖ה וַ/יֹּאמַ֑ר ע֣וֹר בְּעַד ע֗וֹר וְ/כֹל֙ אֲשֶׁ֣ר לָ/אִ֔ישׁ יִתֵּ֖ן בְּעַ֥ד נַפְשֽׁ/וֹ׃",
+        "LXX": "ὑπολαβὼν δὲ ὁ διάβολος εἶπεν τῷ κυρίῳ Δέρμα ὑπὲρ δέρματος· ὅσα ὑπάρχει ἀνθρώπῳ ὑπὲρ τῆς ψυχῆς αὐτοῦ ἐκτίσει.",
+        "VUL": "Cui respondens Satan, ait : Pellem pro pelle, et cuncta quæ habet homo dabit pro anima sua ;",
+        "SYN": "И отвечал сатана Господу и сказал: кожу за кожу, а за жизнь свою отдаст человек все, что есть у него;",
+        "NEO": "Satan répondit à \\+w Yahweh|strong=\"H3068\"\\+w** et dit : « Peau pour peau ! L’homme donne ce qu’il possède pour conserver sa vie.",
+        "NAB": "And Satan answered the LORD and said, \"Skin for skin! All that a man has will he give for his life.",
+        "VAT_ES": "El Adversario respondió al Señor: «&iexcl;Piel por piel! Un hombre da todo lo que tiene a cambio de su vida.",
+        "CEI": "Satana rispose al Signore: \"Pelle per pelle; tutto quanto ha, l'uomo è pronto a darlo per la sua vita."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אוּלָם֙ שְֽׁלַֽח נָ֣א יָֽדְ/ךָ֔ וְ/גַ֥ע אֶל עַצְמ֖/וֹ וְ/אֶל בְּשָׂר֑/וֹ אִם לֹ֥א אֶל פָּנֶ֖י/ךָ יְבָרֲכֶֽ/ךָּ׃",
+        "LXX": "οὐ μὴν δὲ ἀλλὰ ἀποστείλας τὴν χεῖρά σου ἅψαι τῶν ὀστῶν αὐτοῦ καὶ τῶν σαρκῶν αὐτοῦ· εἰ μὴν εἰς πρόσωπόν σε εὐλογήσει.",
+        "VUL": "alioquin mitte manum tuam, et tange os ejus et carnem, et tunc videbis quod in faciem benedicat tibi.",
+        "SYN": "но простри руку Твою и коснись кости его и плоти его, -- благословит ли он Тебя?",
+        "NEO": "Mais étends ta main, touche ses os et sa chair, et on verra s’il ne te maudit pas en face. »",
+        "NAB": "But now put forth your hand and touch his bone and his flesh, and surely he will blaspheme you to your face.\"",
+        "VAT_ES": "Pero extiende tu mano contra él y tócalo en sus huesos y en su carne: &iexcl;seguro que te maldecirá en la cara!».",
+        "CEI": "Ma stendi un poco la mano e toccalo nell'osso e nella carne e vedrai come ti benedirà in faccia!\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמֶר יְהוָ֛ה אֶל הַ/שָּׂטָ֖ן הִנּ֣/וֹ בְ/יָדֶ֑/ךָ אַ֖ךְ אֶת נַפְשׁ֥/וֹ שְׁמֹֽר׃",
+        "LXX": "εἶπεν δὲ ὁ κύριος τῷ διαβόλῳ Ἰδοὺ παραδίδωμί σοι αὐτόν· μόνον τὴν ψυχὴν αὐτοῦ διαφύλαξον.",
+        "VUL": "Dixit ergo Dominus ad Satan : Ecce in manu tua est : verumtamen animam illius serva.",
+        "SYN": "И сказал Господь сатане: вот, он в руке твоей, только душу его сбереги.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Satan : « Voici que je le livre entre tes mains ; seulement épargne sa vie ! »",
+        "NAB": "And the LORD said to Satan, \"He is in your power; only spare his life.\"",
+        "VAT_ES": "El Señor respondió al Adversario: «Está bien. Ahí lo tienes en tu poder, pero respétale la vida».",
+        "CEI": "Il Signore disse a satana: \"Eccolo nelle tue mani! Soltanto risparmia la sua vita\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵא֙ הַ/שָּׂטָ֔ן מֵ/אֵ֖ת פְּנֵ֣י יְהוָ֑ה וַ/יַּ֤ךְ אֶת אִיּוֹב֙ בִּ/שְׁחִ֣ין רָ֔ע מִ/כַּ֥ף רַגְל֖/וֹ עד וְ/עַ֥ד קָדְקֳדֽ/וֹ׃",
+        "LXX": "ἐξῆλθεν δὲ ὁ διάβολος ἀπὸ τοῦ κυρίου, καὶ ἔπαισεν τὸν Ἰὼβ ἕλκει πονηρῷ ἀπὸ ποδῶν ἕως κεφαλῆς.",
+        "VUL": "Egressus igitur Satan a facie Domini, percussit Job ulcere pessimo, a planta pedis usque ad verticem ejus ;",
+        "SYN": "И отошел сатана от лица Господня и поразил Иова проказою лютою от подошвы ноги его по самое темя его.",
+        "NEO": "Et Satan se retira de devant la face de \\+w Yahweh|strong=\"H3068\"\\+w**. Et il frappa Job d’une lèpre maligne depuis la plante des pieds jusqu’au sommet de la tête.",
+        "NAB": "So Satan went forth from the presence of the LORD and smote Job with severe boils from the soles of his feet to the crown of his head.",
+        "VAT_ES": "El Adversario se alejó de la presencia del Señor, e hirió a Job con una úlcera maligna, desde la planta de los pies hasta la cabeza.",
+        "CEI": "Satana si allontanò dal Signore e colpì Giobbe con una piaga maligna, dalla pianta dei piedi alla cima del capo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּֽקַּֽח ל֣/וֹ חֶ֔רֶשׂ לְ/הִתְגָּרֵ֖ד בּ֑/וֹ וְ/ה֖וּא יֹשֵׁ֥ב בְּ/תוֹךְ הָ/אֵֽפֶר׃",
+        "LXX": "καὶ ἔλαβεν ὄστρακον ἵνα τὸν ἰχῶρα ξύῃ, καὶ ἐκάθητο ἐπὶ τῆς κοπρίας ἔξω τῆς πόλεως.",
+        "VUL": "qui testa saniem radebat, sedens in sterquilinio.",
+        "SYN": "И взял он себе черепицу, чтобы скоблить себя ею, и сел в пепел [вне селения].",
+        "NEO": "Et Job prit un tesson pour gratter ses plaies et il s’assit sur la cendre.",
+        "NAB": "And he took a potsherd to scrape himself, as he sat among the ashes.",
+        "VAT_ES": "Job tomó entonces un pedazo de teja para rascarse, y permaneció sentado en medio de la ceniza.",
+        "CEI": "Giobbe prese un coccio per grattarsi e stava seduto in mezzo alla cenere."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֤אמֶר ל/וֹ֙ אִשְׁתּ֔/וֹ עֹדְ/ךָ֖ מַחֲזִ֣יק בְּ/תֻמָּתֶ֑/ךָ בָּרֵ֥ךְ אֱלֹהִ֖ים וָ/מֻֽת׃",
+        "LXX": "χρόνου δὲ πολλοῦ προβεβηκότος εἶπεν αὐτῷ ἡ γυνὴ αὐτοῦ Μέχρι τίνος καρτερήσεις λέγων [1] Ἰδοὺ ἀναμένω χρόνον ἔτι μικρὸν προσδεχόμενος τὴν ἐλπίδα τῆς σωτηρίας μου; [2] ἰδοὺ γὰρ ἠφάνισταί σου τὸ μνημόσυνον ἀπὸ τῆς γῆς, υἱοὶ καὶ θυγατέρες, ἐμῆς κοιλίας ὠδῖνες καὶ πόνοι, οὓς εἰς τὸ κενὸν ἐκοπίασα μετὰ μόχθων. [3] σύ τε αὐτὸς ἐν σαπρίᾳ σκωλήκων κάθησαι διανυκτερεύων αἴθριος· [4] κἀγὼ πλανωμένη καὶ λάτρις, τόπον ἐκ τόπου καὶ οἰκίαν ἐξ οἰκίας, προσδεχομένη τὸν ἥλιον πότε δύσεται, ἵνα ἀναπαύσωμαι τῶν μόχθων μου καὶ τῶν ὀδυνῶν αἵ με νῦν συνέχουσιν. [5] ἀλλὰ εἰπόν τι ῥῆμα εἰς Κύριον, καὶ τελεύτα.",
+        "VUL": "Dixit autem illi uxor sua : Adhuc tu permanes in simplicitate tua ? Benedic Deo, et morere.",
+        "SYN": "И сказала ему жена его: ты все еще тверд в непорочности твоей! похули Бога и умри. (1)",
+        "NEO": "Et sa femme lui dit : « Tu persévère encore dans ton intégrité ! Maudis Dieu et meurs ! »",
+        "NAB": "Then his wife said to him, \"Are you still holding to your innocence? Curse God and die.\"",
+        "VAT_ES": "Su mujer le dijo: «&iquest;Todavía vas a mantenerte firme en tu integridad? Maldice a Dios y muere de una vez».",
+        "CEI": "Allora sua moglie disse: \"Rimani ancor fermo nella tua integrità? Benedici Dio e muori!\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֵלֶ֗י/הָ כְּ/דַבֵּ֞ר אַחַ֤ת הַ/נְּבָלוֹת֙ תְּדַבֵּ֔רִי גַּ֣ם אֶת הַ/טּ֗וֹב נְקַבֵּל֙ מֵ/אֵ֣ת הָ/אֱלֹהִ֔ים וְ/אֶת הָ/רָ֖ע לֹ֣א נְקַבֵּ֑ל בְּ/כָל זֹ֛את לֹא חָטָ֥א אִיּ֖וֹב בִּ/שְׂפָתָֽי/ו׃",
+        "LXX": "ὁ δὲ ἐμβλέψας εἶπεν αὐτῇ Ὥσπερ μία τῶν ἀφρόνων γυναικῶν ἐλάλησας· εἰ τὰ ἀγαθὰ ἐδεξάμεθα ἐκ χειρὸς Κυρίου, τὰ κακὰ οὐχ ὑποίσομεν; ἐν πᾶσιν τούτοις τοῖς συμβεβηκόσιν αὐτῷ οὐδὲν ἥμαρτεν Ἰὼβ τοῖς χείλεσιν ἐναντίον τοῦ θεοῦ.",
+        "VUL": "Qui ait ad illam : Quasi una de stultis mulieribus locuta es : si bona suscepimus de manu Dei, mala quare non suscipiamus ? In omnibus his non peccavit Job labiis suis.",
+        "SYN": "Но он сказал ей: ты говоришь как одна из безумных: неужели доброе мы будем принимать от Бога, а злого не будем принимать? Во всем этом не согрешил Иов устами своими.",
+        "NEO": "Il lui dit : « Tu parles comme une femme insensée. Nous recevons de Dieu le bien, et nous n’en recevrions pas aussi le mal ? » En tout cela, Job ne pécha pas par ses lèvres.",
+        "NAB": "But he said to her, \"Are even you going to speak as senseless women do? We accept good things from God; and should we not accept evil?\" Through all this, Job said nothing sinful.",
+        "VAT_ES": "Pero él le respondió: «Hablas como una mujer insensata. Si aceptamos de Dios lo bueno, &iquest;no aceptaremos también lo malo?». En todo esto, Job no pecó con sus labios.",
+        "CEI": "Ma egli le rispose: \"Come parlerebbe una stolta tu hai parlato! Se da Dio accettiamo il bene, perché non dovremo accettare il male?\". In tutto questo Giobbe non peccò con le sue labbra."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַֽ/יִּשְׁמְע֞וּ שְׁלֹ֣שֶׁת רֵעֵ֣י אִיּ֗וֹב אֵ֣ת כָּל הָ/רָעָ֣ה הַ/זֹּאת֮ הַ/בָּ֣אָה עָלָי/ו֒ וַ/יָּבֹ֨אוּ֙ אִ֣ישׁ מִ/מְּקֹמ֔/וֹ אֱלִיפַ֤ז הַ/תֵּימָנִי֙ וּ/בִלְדַּ֣ד הַ/שּׁוּחִ֔י וְ/צוֹפַ֖ר הַ/נַּֽעֲמָתִ֑י וַ/יִּוָּעֲד֣וּ יַחְדָּ֔ו לָ/ב֥וֹא לָ/נֽוּד ל֖/וֹ וּֽ/לְ/נַחֲמֽ/וֹ׃",
+        "LXX": "Ἀκούσαντες δὲ οἱ τρεῖς φίλοι αὐτοῦ τὰ κακὰ πάντα τὰ ἐπελθόντα αὐτῷ, παρεγένοντο ἕκαστος ἐκ τῆς ἰδίας χώρας πρὸς αὐτόν, Ἐλειφὰζ ὁ Θαιμανῶν βασιλεύς, Βαλδὰδ ὁ Σαυχαίων τύραννος, Σωφὰρ ὁ Μειναίων βασιλεύς· καὶ παρεγένοντο πρὸς αὐτὸν ὁμοθυμαδὸν τοῦ παρακαλέσαι καὶ ἐπισκέψασθαι αὐτόν.",
+        "VUL": "Igitur audientes tres amici Job omne malum quod accidisset ei, venerunt singuli de loco suo, Eliphaz Themanites, et Baldad Suhites, et Sophar Naamathites. Condixerant enim ut pariter venientes visitarent eum, et consolarentur.",
+        "SYN": "И услышали трое друзей Иова о всех этих несчастьях, постигших его, и пошли каждый из своего места: Елифаз Феманитянин, Вилдад Савхеянин и Софар Наамитянин, и сошлись, чтобы идти вместе сетовать с ним и утешать его.",
+        "NEO": "Trois amis de Job, Eliphaz de Théman, Baldad de Suhé, et Sophar de Naama, apprirent tous les malheurs qui étaient venus sur lui ; ils partirent chacun de leur pays et se concertèrent pour venir le plaindre et le consoler.",
+        "NAB": "Now when three of Job's friends heard of all the misfortune that had come upon him, they set out each one from his own place: Eliphaz from Teman, Bildad from Shuh, and Zophar from Naamath. They met and journeyed together to give him sympathy and comfort.",
+        "VAT_ES": "Tres amigos de Job se enteraron de todos los males que le habían sobrevenido, y llegaron cada uno de su país. Eran Elifaz de Temán, Bildad de Súaj y Sofar de Naamá, los cuales se pusieron de acuerdo para ir a expresarles sus condolencias y consolarlo.",
+        "CEI": "Nel frattempo tre amici di Giobbe erano venuti a sapere di tutte le disgrazie che si erano abbattute su di lui. Partirono, ciascuno dalla sua contrada, Elifaz il Temanita, Bildad il Suchita e Zofar il Naamatita, e si accordarono per andare a condolersi con lui e a consolarlo."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׂא֨וּ אֶת עֵינֵי/הֶ֤ם מֵ/רָחוֹק֙ וְ/לֹ֣א הִכִּירֻ֔/הוּ וַ/יִּשְׂא֥וּ קוֹלָ֖/ם וַ/יִּבְכּ֑וּ וַֽ/יִּקְרְעוּ֙ אִ֣ישׁ מְעִל֔/וֹ וַ/יִּזְרְק֥וּ עָפָ֛ר עַל רָאשֵׁי/הֶ֖ם הַ/שָּׁמָֽיְמָ/ה׃",
+        "LXX": "ἰδόντες δὲ αὐτὸν πόρρωθεν οὐκ ἐπέγνωσαν, καὶ βοήσαντες φωνῇ μεγάλῃ ἔκλαυσαν, ⸂⸆⸃ ῥήξαντες ἕκαστος τὴν ἑαυτοῦ στολήν, καὶ καταπασάμενοι γῆν.",
+        "VUL": "Cumque elevassent procul oculos suos, non cognoverunt eum, et exclamantes ploraverunt, scissisque vestibus sparserunt pulverem super caput suum in cælum.",
+        "SYN": "И подняв глаза свои издали, они не узнали его; и возвысили голос свой и зарыдали; и разодрал каждый верхнюю одежду свою, и бросали пыль над головами своими к небу.",
+        "NEO": "Ayant de loin levé les yeux, ils ne le reconnurent pas, et ils élevèrent la voix et pleurèrent ; ils déchirèrent chacun leur manteau, et jetèrent de la poussière vers le ciel au-dessus de leurs têtes.",
+        "NAB": "But when, at a distance, they lifted up their eyes and did not recognize him, they began to weep aloud; they tore their cloaks and threw dust upon their heads.",
+        "VAT_ES": "Al divisarlo de lejos, no lo reconocieron. Entonces se pusieron a llorar a gritos, rasgaron sus mantos y arrojaron polvo sobre sus cabezas.",
+        "CEI": "Alzarono gli occhi da lontano ma non lo riconobbero e, dando in grida, si misero a piangere. Ognuno si stracciò le vesti e si cosparse il capo di polvere."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֵּשְׁב֤וּ אִתּ/וֹ֙ לָ/אָ֔רֶץ שִׁבְעַ֥ת יָמִ֖ים וְ/שִׁבְעַ֣ת לֵיל֑וֹת וְ/אֵין דֹּבֵ֤ר אֵלָי/ו֙ דָּבָ֔ר כִּ֣י רָא֔וּ כִּֽי גָדַ֥ל הַ/כְּאֵ֖ב מְאֹֽד׃",
+        "LXX": "παρεκάθισαν αὐτῷ ἑπτὰ ἡμέρας καὶ ἑπτὰ νύκτας, καὶ οὐδεὶς αὐτῶν ἐλάλησεν· ἑώρων γὰρ τὴν πληγὴν δεινὴν οὖσαν καὶ μεγάλην σφόδρα.",
+        "VUL": "Et sederunt cum eo in terra septem diebus et septem noctibus : et nemo loquebatur ei verbum : videbant enim dolorem esse vehementem.",
+        "SYN": "И сидели с ним на земле семь дней и семь ночей; и никто не говорил ему ни слова, ибо видели, что страдание его весьма велико.",
+        "NEO": "Et ils se tinrent assis à terre auprès de lui sept jours et sept nuits, sans qu’aucun d’eux lui dit une parole, parce qu’ils voyaient combien sa douleur était excessive.",
+        "NAB": "Then they sat down upon the ground with him seven days and seven nights, but none of them spoke a word to him; for they saw how great was his suffering.",
+        "VAT_ES": "Después permanecieron sentados en el suelo junto a él, siete días y siete noches, sin decir una sola palabra, porque veían que su dolor era muy grande.",
+        "CEI": "Poi sedettero accanto a lui in terra, per sette giorni e sette notti, e nessuno gli rivolse una parola, perché vedevano che molto grande era il suo dolore."
+      }
+    }
+  }
+}

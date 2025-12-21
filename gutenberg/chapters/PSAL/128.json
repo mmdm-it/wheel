@@ -1,0 +1,122 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_128",
+  "book_key": "PSAL",
+  "sequence": 128,
+  "chapter_in": {
+    "MT": 128,
+    "VUL": 127,
+    "LXX": 127
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שִׁ֗יר הַֽ/מַּ֫עֲל֥וֹת אַ֭שְׁרֵי כָּל יְרֵ֣א יְהוָ֑ה הַ֝/הֹלֵ֗ךְ בִּ/דְרָכָֽי/ו׃",
+        "LXX": "ᾨδὴ τῶν ἀναβαθμῶν. Πλεονάκις ἐπολέμησάν με ἐκ νεότητός μου, εἰπάτω δὴ Ἰσραήλ·",
+        "VUL": "Canticum graduum. [Sæpe expugnaverunt me a juventute mea,/ dicat nunc Israël ;/",
+        "SYN": "Много теснили меня от юности моей, да скажет Израиль:",
+        "NEO": "Cantique des montées.",
+        "NAB": "A song of ascents. Happy are all who fear the LORD, who walk in the ways of God.",
+        "CEI": "Canto delle ascensioni. Beato l'uomo che teme il Signore e cammina nelle sue vie."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "יְגִ֣יעַ כַּ֭פֶּי/ךָ כִּ֣י תֹאכֵ֑ל אַ֝שְׁרֶ֗י/ךָ וְ/ט֣וֹב לָֽ/ךְ׃",
+        "LXX": "πλεονάκις ἐπολέμησάν με ἐκ νεότητός μου, καὶ γὰρ οὐκ ἠδυνήθησάν μοι.",
+        "VUL": "sæpe expugnaverunt me a juventute mea :/ etenim non potuerunt mihi./",
+        "SYN": "много теснили меня от юности моей, но не одолели меня.",
+        "NEO": "Tu te nourris alors du travail de tes mains ; tu es heureux et comblé de biens.",
+        "NAB": "What your hands provide you will enjoy; you will be happy and prosper:",
+        "VAT_ES": "Comerás del fruto de tu trabajo,",
+        "CEI": "Vivrai del lavoro delle tue mani, sarai felice e godrai d'ogni bene."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אֶשְׁתְּ/ךָ֤ כְּ/גֶ֥פֶן פֹּרִיָּה֮ בְּ/יַרְכְּתֵ֪י בֵ֫יתֶ֥/ךָ בָּ֭נֶי/ךָ כִּ/שְׁתִלֵ֣י זֵיתִ֑ים סָ֝בִ֗יב לְ/שֻׁלְחָנֶֽ/ךָ׃",
+        "LXX": "ἐπὶ τοῦ νώτου μου ἐτέκταινον οἱ ἁμαρτωλοί, ἐμάκρυναν τὴν ἀνομίαν αὐτῶν·",
+        "VUL": "Supra dorsum meum fabricaverunt peccatores ;/ prolongaverunt iniquitatem suam./",
+        "SYN": "На хребте моем орали оратаи, проводили длинные борозды свои.",
+        "NEO": "Ton épouse est comme une vigne féconde, dans l’intérieur de ta maison ; tes fils, comme de jeunes plants d’olivier, autour de ta table.",
+        "NAB": "Like a fruitful vine your wife within your home, Like olive plants your children around your table.",
+        "VAT_ES": "Tu esposa será como una vid fecunda",
+        "CEI": "La tua sposa come vite feconda nell'intimità della tua casa; i tuoi figli come virgulti d'ulivo intorno alla tua mensa."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הִנֵּ֣ה כִי כֵ֭ן יְבֹ֥רַךְ גָּ֗בֶר יְרֵ֣א יְהוָֽה׃",
+        "LXX": "Κύριος δίκαιος συνέκοψεν αὐχένα ἁμαρτωλῶν.",
+        "VUL": "Dominus justus/ concidit cervices peccatorum./",
+        "SYN": "Но Господь праведен: Он рассек узы нечестивых.",
+        "NEO": "Voilà comment sera béni l’homme qui craint \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Just so will they be blessed who fear the LORD.",
+        "VAT_ES": "&iexcl;Así será bendecido",
+        "CEI": "Così sarà benedetto l'uomo che teme il Signore."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "יְבָרֶכְ/ךָ֥ יְהוָ֗ה מִ/צִּ֫יּ֥וֹן וּ֭/רְאֵה בְּ/ט֣וּב יְרוּשָׁלִָ֑ם כֹּ֝֗ל יְמֵ֣י חַיֶּֽי/ךָ׃",
+        "LXX": "αἰσχυνθήτωσαν καὶ ἀποστραφήτωσαν εἰς τὰ ὀπίσω πάντες οἱ μισοῦντες Σιών·",
+        "VUL": "Confundantur, et convertantur retrorsum/ omnes qui oderunt Sion./",
+        "SYN": "Да постыдятся и обратятся назад все ненавидящие Сион!",
+        "NEO": "Que \\+w Yahweh|strong=\"H3068\"\\+w** te bénisse de Sion !",
+        "NAB": "May the LORD bless you from Zion, all the days of your life That you may share Jerusalem's joy",
+        "VAT_ES": "&iexcl;Que el Señor te bendiga desde Sión",
+        "CEI": "Ti benedica il Signore da Sion! Possa tu vedere la prosperità di Gerusalemme per tutti i giorni della tua vita."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וּ/רְאֵֽה בָנִ֥ים לְ/בָנֶ֑י/ךָ שָׁ֝ל֗וֹם עַל יִשְׂרָאֵֽל׃",
+        "LXX": "γενηθήτωσαν ὡς χόρτος δωμάτων, ὃς πρὸ τοῦ ἐκσπασθῆναι ἐξηράνθη·",
+        "VUL": "Fiant sicut fnum tectorum,/ quod priusquam evellatur exaruit :/",
+        "SYN": "Да будут, как трава на кровлях, которая прежде, нежели будет исторгнута, засыхает,",
+        "NEO": "Puisses-tu voir les enfants de tes enfants ! Que la paix soit sur Israël !",
+        "NAB": "and live to see your children's children. Peace upon Israel!",
+        "VAT_ES": "y veas a los hijos de tus hijos!",
+        "CEI": "Possa tu vedere i figli dei tuoi figli. Pace su Israele!"
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IUDITH_003",
+  "book_key": "IUDITH",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Καὶ ἀπέστειλαν πρὸς αὐτὸν ἀγγέλους λόγοις εἰρηνικοῖς λέγοντες",
+        "VUL": "Tunc miserunt legatos suos universarum urbium ac provinciarum reges ac principes, Syriæ scilicet Mesopotamiæ, et Syriæ Sobal, et Libyæ, atque Ciliciæ : qui venientes ad Holofernem, dixerunt :",
+        "SYN": "И послали к нему вестников с таким мирным предложением:",
+        "NEO": "Alors les rois et les princes de toutes les villes et de tous les pays, savoir de la Syrie Mésopotamienne, de la Syrie de Soba, de la Libye et de la Cilicie envoyèrent leurs ambassadeurs, qui se rendirent auprès d’Holoferne et lui dirent :",
+        "NAB": "They therefore sent messengers to him to sue for peace in these words:",
+        "VAT_ES": "Entonces le enviaron mensajeros con la siguiente propuesta de paz:",
+        "CEI": "Perciò gli inviarono messaggeri con proposte di pace:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "Ἰδοὺ ἡμεῖς οἱ παῖδες Ναβουχοδονοσὸρ βασιλέως μεγάλου παρακείμεθα ἐνώπιόν σου, χρῆσαι ἡμῖν καθὼς ἀρεστόν ἐστιν τῷ προσώπῳ σου·",
+        "VUL": "Desinat indignatio tua circa nos : melius est enim ut viventes serviamus Nabuchodonosor regi magno, et subditi simus tibi, quam morientes cum interitu nostro ipsi servitutis nostræ damna patiamur.",
+        "SYN": "вот мы, рабы великого царя Навуходоносора, повергаемся перед тобою: делай с нами, что тебе угодно.",
+        "NEO": "« Apaise ta colère contre nous ; il vaut mieux, avec la vie sauve, servir Nabuchodonosor, le grand roi, et nous soumettre à toi, que de mourir, après avoir souffert, en périssant, les maux de la servitude.",
+        "NAB": "\"We, the servants of Nebuchadnezzar the great king, lie prostrate before you; do with us as you will.",
+        "VAT_ES": "«Aquí estamos los servidores del gran rey Nabucodonosor, rendidos ante ti: trátanos como mejor te parezca.",
+        "CEI": "\"Ecco, ci mettiamo davanti a te noi, figli del gran re Nabucodònosor; fà di noi quanto ti piacerà."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ἰδοὺ αἱ ἐπαύλεις ἡμῶν καὶ πᾶν πεδίον πυρῶν καὶ τὰ ποίμνια καὶ τὰ βουκόλια καὶ πᾶσαι αἱ μάνδραι τῶν σκηνῶν ἡμῶν παράκεινται πρὸ προσώπου σου, χρῆσαι καθ’ ὃ ἂν ἀρέσκῃ σοι·",
+        "VUL": "Omnis civitas nostra, omnisque possessio, omnes montes, et colles, et campi, et armenta boum, gregesque ovium, et caprarum, equorumque et camelorum, et universæ facultates nostræ atque familiæ, in conspectu tuo sunt :",
+        "SYN": "Вот перед тобою: и селения наши, и все места наши, и все нивы с пшеницею, и стада овец и волов, и все строения наших жилищ: употребляй их, как пожелаешь.",
+        "NEO": "Toutes nos villes, tout ce que nous possédons, toutes nos montagnes, nos collines, nos champs, nos troupeaux de bœufs, de brebis, de chèvres, de chevaux, de chameaux, tous nos biens et nos familles sont devant toi.",
+        "NAB": "Our dwellings and all our wheat fields, our flocks and herds, and all our encampments are at your disposal; make use of them as you please.",
+        "VAT_ES": "Están a tu disposición nuestras posesiones, todo nuestro suelo, todos los campos de trigo, nuestras ovejas y nuestras vacas, y también todos los corrales de nuestros campamentos: puedes hacer con ellos lo que quieras.",
+        "CEI": "Ecco le nostre case e tutto il nostro territorio e tutti i campi di grano, i greggi e gli armenti e tutto il bestiame dei nostri attendamenti sono a tua disposizione perché tu ne faccia quel che vuoi."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ἰδοὺ καὶ αἱ πόλεις ἡμῶν καὶ οἱ κατοικοῦντες ἐν αὐταῖς δοῦλοι σοί εἰσιν, ἐλθὼν ἀπάντησον αὐταῖς ὡς ἔστιν ἀγαθὸν ἐν ὀφθαλμοῖς σου.",
+        "VUL": "sint omnia nostra sub lege tua.",
+        "SYN": "Вот и города наши и обитающие в них - рабы твои: иди и поступай с ними, как будет глазам твоим угодно.",
+        "NEO": "Que tout ce que nous avons soit sous ta dépendance.",
+        "NAB": "Our cities and their inhabitants are also at your service; come and deal with them as you see fit.\"",
+        "VAT_ES": "Hasta nuestras mismas ciudades y sus habitantes están a tu servicio; ven y trátalas como te parezca».",
+        "CEI": "Anche le nostre città e quanti vi abitano, ecco sono tuoi servi, vieni e trattale come ti piacerà\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "καὶ παρεγένοντο οἱ ἄνδρες πρὸς Ὀλοφέρνην καὶ ἀπήγγειλαν αὐτῷ κατὰ τὰ ῥήματα ταῦτα.",
+        "VUL": "Nos, et filii nostri, servi tui sumus.",
+        "SYN": "И пришли к Олоферну мужи и передали ему эти слова.",
+        "NEO": "Nous et nos enfants, nous sommes tes serviteurs.",
+        "NAB": "After the spokesmen had reached Holofernes and given him this message,",
+        "VAT_ES": "Aquellos hombres se presentaron ante Holofernes y le transmitieron su mensaje.",
+        "CEI": "Si presentarono di fatto ad Oloferne quegli uomini e si espressero con lui su questo tono."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "καὶ κατέβη ἐπὶ τὴν παραλίαν αὐτὸς καὶ ἡ δύναμις αὐτοῦ, καὶ ἐφρούρωσε τὰς πόλεις τὰς ὑψηλάς, καὶ ἔλαβον ἐξ αὐτῶν εἰς συμμαχίαν ἄνδρας ἐπιλέκτους·",
+        "VUL": "Veni nobis pacificus dominus, et utere servitio nostro, sicut placuerit tibi.",
+        "SYN": "_Тогда_ он пришел в приморскую страну с войском своим, окружил высокие города стражею и взял из них отборных мужей в соратники себе.",
+        "NEO": "Viens à nous comme un maître pacifique, et fais usage de nos services comme il te plaira. »",
+        "NAB": "he went down with his army to the seacoast, and stationed garrisons in the fortified cities; from them he impressed picked troops as auxiliaries.",
+        "VAT_ES": "El descendió con su ejército hacia la costa del mar, estableció guarniciones en las plazas fuertes y reclutó en ellas hombres selectos como tropas auxiliares.",
+        "CEI": "Egli scese allora con il suo esercito lungo la costa e pose presidi nelle fortezze, poi prelevò da esse uomini scelti come ausiliari."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "καὶ ἐδέξαντο αὐτὸν αὐτοὶ καὶ πᾶσα ἡ περίχωρος αὐτῶν μετὰ στεφάνων καὶ χορῶν καὶ τυμπάνων.",
+        "VUL": "Tunc descendit de montibus cum equitibus in virtute magna, et obtinuit omnem civitatem, et omnem inhabitantem terram.",
+        "SYN": "А они и вся окрестность их приняли его с венками, ликами и тимпанами.",
+        "NEO": "Holoferne descendit alors des montagnes avec ses cavaliers, en grande force, et il se rendit maître de toutes les villes et de tous les habitants du pays.",
+        "NAB": "The people of these cities and all the inhabitants of the countryside received him with garlands and dancing to the sound of timbrels.",
+        "VAT_ES": "Ellos, y toda la región circunvecina, lo recibieron con guirnaldas y danzas corales al son de los tambores.",
+        "CEI": "Quelle popolazioni con tutto il paese circostante lo accolsero con corone e danze e suono di timpani."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "καὶ κατέσκαψεν πάντα τὰ ὅρια αὐτῶν, καὶ τὰ ἄλση αὐτῶν ἐξέκοψεν· καὶ ἦν δεδομένον αὐτῷ ἐξολεθρεῦσαι πάντας τοὺς θεοὺς τῆς γῆς, ὅπως αὐτῷ μόνῳ τῷ Ναβουχοδονοσὸρ λατρεύωσι πάντα τὰ ἔθνη, καὶ πᾶσαι αἱ γλῶσσαι καὶ πᾶσαι αἱ φυλαὶ αὐτῶν ἐπικαλέσωνται αὐτὸν εἰς θεόν.",
+        "VUL": "De universis autem urbibus assumpsit sibi auxiliarios viros fortes, et electos ad bellum.",
+        "SYN": "Он же разорил все высоты их и вырубил рощи их: ему приказано было истребить всех богов той земли, чтобы все народы служили одному Навуходоносору, и все языки и все племена их призывали его, как Бога.",
+        "NEO": "Il prit de toutes les villes, pour en faire des auxiliaires, des hommes vaillants et choisis pour la guerre.",
+        "NAB": "Nevertheless, he devastated their whole territory and cut down their sacred groves, for he had been commissioned to destroy all the gods of the earth, so that every nation might worship Nebuchadnezzar alone, and every people and tribe invoke him as a god.",
+        "VAT_ES": "Pero él devastó todo su territorio y taló sus bosques sagrados, porque había recibido la orden de exterminar a todos los dioses del país, para hacer que todas las naciones adoraran solamente a Nabucodonosor, y todas sus lenguas y tribus lo invocaron como dios.",
+        "CEI": "Ma egli demolì tutti i loro templi e tagliò i boschi sacri, perché aveva ordine di distruggere tutti gli dei della terra, in modo che tutti i popoli adorassero solo Nabucodònosor e tutte le lingue e le tribù lo acclamassero come dio."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "καὶ ἦλθεν κατὰ πρόσωπον Ἐσδραηλὼν πλησίον τῆς Δωταίας, ἥ ἐστιν ἀπέναντι τοῦ πρίονος τοῦ μεγάλου τῆς Ἰουδαίας,",
+        "VUL": "Tantusque metus provinciis illis incubuit, ut universarum urbium habitatores principes et honorati simul cum populis exirent obviam venienti,",
+        "SYN": "Придя к Ездрилону близ Дотеи, лежащей против великой теснины Иудейской,",
+        "NEO": "Or, telle était la frayeur qui pesait sur ces provinces, que les habitants de toutes les villes, les magistrats et les plus honorables personnages, comme les gens du peuple, sortaient à son approche au-devant de lui,",
+        "NAB": "At length Holofernes reached Esdraelon in the neighborhood of Dothan, the approach to the main ridge of the Judean mountains;",
+        "VAT_ES": "Así llegó Holofernes a Esdrelón, en las inmediaciones de Dotaim, que está ante las montañas de Judea.",
+        "CEI": "Poi giunse in vista di Esdrelon, vicino a Dotain, che è di fronte alle grandi montagne della Giudea."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "καὶ κατεστρατοπέδευσαν ἀνὰ μέσον Γαιβαὶ καὶ Σκυθῶν πόλεως, καὶ ἦν ἐκεῖ μῆνα ἡμερῶν εἰς τὸ συλλέξαι πᾶσαν τὴν ἀπαρτίαν τῆς δυνάμεως αὐτοῦ.",
+        "VUL": "excipientes eum cum coronis et lampadibus, ducentes choros in tympanis et tibiis.",
+        "SYN": "он расположился лагерем между Гаваем и городом Скифов и оставался там целый месяц, чтобы собрать весь обоз своего войска.",
+        "NEO": "et le recevaient avec des couronnes et des flambeaux, en dansant au son des tambours et des flûtes.",
+        "NAB": "he set up his camp between Geba and Scythopolis, and stayed there a whole month to refurbish all the equipment of his army.",
+        "VAT_ES": "Acampó entre Gueba y Escitópolis y permaneció allí un mes, a fin de reunir todos los efectivos de su ejército.",
+        "CEI": "Essi si accamparono fra Gebe e Scitopoli e Oloferne rimase là un mese intero per raccogliere tutto il bottino delle sue truppe."
+      }
+    }
+  }
+}

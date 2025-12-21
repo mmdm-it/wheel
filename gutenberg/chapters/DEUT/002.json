@@ -1,0 +1,681 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_002",
+  "book_key": "DEUT",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/נֵּ֜פֶן וַ/נִּסַּ֤ע הַ/מִּדְבָּ֨רָ/ה֙ דֶּ֣רֶךְ יַם ס֔וּף כַּ/אֲשֶׁ֛ר דִּבֶּ֥ר יְהוָ֖ה אֵלָ֑/י וַ/נָּ֥סָב אֶת הַר שֵׂעִ֖יר יָמִ֥ים רַבִּֽים׃",
+        "LXX": "Καὶ ἐπιστραφέντες ἀπήραμεν εἰς τὴν ἔρημον, ὁδὸν θάλασσαν ἐρυθράν, ὃν τρόπον ἐλάλησεν Κύριος πρὸς μέ, καὶ ἐκυκλώσαμεν τὸ ὄρος τὸ Σηεὶρ ἡμέρας πολλάς.",
+        "VUL": "Profectique inde, venimus in solitudinem, quæ ducit ad mare Rubrum, sicut mihi dixerat Dominus : et circuivimus montem Seir longo tempore.",
+        "SYN": "И обратились мы и отправились в пустыню к Чермному морю, как говорил мне Господь, и много времени ходили вокруг горы Сеира.",
+        "NEO": "Changeant de direction, nous partîmes pour le désert, par le chemin de la mer Rouge, comme \\+w Yahweh|strong=\"H3068\"\\+w** me l’avait ordonné, et nous tournâmes longtemps autour de la montagne de Séïr.",
+        "NAB": "\"When we did turn and proceed into the desert on the Red Sea road, as the LORD had commanded me, we circled around the highlands of Seir for a long time.",
+        "VAT_ES": "Después dimos vuelta y nos pusimos en camino hacia el desierto, en dirección al Mar Rojo, como me lo había dicho el Señor. Durante muchos días estuvimos dando vueltas alrededor del macizo de Seír.",
+        "CEI": "Allora cambiammo direzione e partimmo per il deserto verso il Mare Rosso, come il Signore mi aveva detto, e girammo intorno al monte Seir per lungo tempo."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς μέ",
+        "VUL": "Dixitque Dominus ad me :",
+        "SYN": "И сказал мне Господь, говоря:",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** me dit :",
+        "NAB": "Finally the LORD said to me,",
+        "VAT_ES": "Hasta que por fin el Señor me dijo:",
+        "CEI": "Il Signore mi disse:"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "רַב לָ/כֶ֕ם סֹ֖ב אֶת הָ/הָ֣ר הַ/זֶּ֑ה פְּנ֥וּ לָ/כֶ֖ם צָפֹֽנָ/ה׃",
+        "LXX": "Ἱκανούσθω ὑμῖν κυκλοῦν τὸ ὄρος τοῦτο, ἐπιστράφητε οὖν ἐπὶ βορρᾶν·",
+        "VUL": "Sufficit vobis circuire montem istum : ite contra aquilonem :",
+        "SYN": "полно вам ходить вокруг этой горы, обратитесь к северу;",
+        "NEO": "« Vous avez assez tourné autour de cette montagne ; reprenez la direction du nord.",
+        "NAB": "'You have wandered round these highlands long enough; turn and go north.",
+        "VAT_ES": "«Basta ya de dar vueltas alrededor de esta montaña. Ahora diríjanse hacia el norte.",
+        "CEI": "Avete girato abbastanza intorno a questa montagna; volgetevi verso settentrione."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/אֶת הָ/עָם֮ צַ֣ו לֵ/אמֹר֒ אַתֶּ֣ם עֹֽבְרִ֗ים בִּ/גְבוּל֙ אֲחֵי/כֶ֣ם בְּנֵי עֵשָׂ֔ו הַ/יֹּשְׁבִ֖ים בְּ/שֵׂעִ֑יר וְ/יִֽירְא֣וּ מִ/כֶּ֔ם וְ/נִשְׁמַרְתֶּ֖ם מְאֹֽד׃",
+        "LXX": "καὶ τῷ λαῷ ἔντειλαι λέγων Ὑμεῖς παραπορεύεσθε διὰ τῶν ὁρίων τῶν ἀδελφῶν ὑμῶν υἱῶν Ἠσαύ, οἳ κατοικοῦσιν ἐν Σηείρ, καὶ φοβηθήσονται ὑμᾶς καὶ εὐλαβηθήσονται ὑμᾶς σφόδρα.",
+        "VUL": "et populo præcipe, dicens : Transibitis per terminos fratrum vestrorum filiorum Esau, qui habitant in Seir, et timebunt vos.",
+        "SYN": "и народу дай повеление и скажи: вы будете проходить пределы братьев ваших, сынов Исавовых, живущих на Сеире, и они убоятся вас; но остерегайтесь",
+        "NEO": "Donne cet ordre au peuple : Vous allez passer sur la frontière de vos frères, les enfants d’Esaü, qui habitent en Séïr. Ils auront peur de vous ; mais prenez bien garde",
+        "NAB": "Give this order to the people: You are now about to pass through the territory of your kinsmen, the descendants of Esau, who live in Seir. Though they are afraid of you, be very careful",
+        "VAT_ES": "Comunica esta orden al pueblo: Ustedes van a pasar por la región de Seír, donde viven sus hermanos, los descendientes de Esaú, los cuales desconfían de ustedes. Pero atiendan bien:",
+        "CEI": "Dà quest'ordine al popolo: Voi state per passare i confini dei figli di Esaù, vostri fratelli, che dimorano in Seir; essi avranno paura di voi; state bene in guardia:"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אַל תִּתְגָּר֣וּ בָ֔/ם כִּ֠י לֹֽא אֶתֵּ֤ן לָ/כֶם֙ מֵֽ/אַרְצָ֔/ם עַ֖ד מִדְרַ֣ךְ כַּף רָ֑גֶל כִּֽי יְרֻשָּׁ֣ה לְ/עֵשָׂ֔ו נָתַ֖תִּי אֶת הַ֥ר שֵׂעִֽיר׃",
+        "LXX": "μὴ συνάψητε πρὸς αὐτοὺς πόλεμον· οὐ γὰρ μὴ δῶ ὑμῖν ἀπὸ τῆς γῆς αὐτῶν οὐδὲ βῆμα ποδός, ὅτι ἐν κλήρῳ υἱοῖς Ἠσαὺ δέδωκα τὸ ὄρος τὸ Σηείρ.",
+        "VUL": "Videte ergo diligenter ne moveamini contra eos. Neque enim dabo vobis de terra eorum quantum potest unius pedis calcare vestigium, quia in possessionem Esau dedi montem Seir.",
+        "SYN": "начинать с ними войну, ибо Я не дам вам земли их ни на стопу ноги, потому что гору Сеир Я дал во владение Исаву;",
+        "NEO": "d’avoir des démêlés avec eux, car je ne vous donnerai rien dans leur pays, pas même ce que peut couvrir la plante du pied : j’ai donné à Esaü la montagne de Séïr en propriété.",
+        "NAB": "not to come in conflict with them, for I will not give you so much as a foot of their land, since I have already given Esau possession of the highlands of Seir.",
+        "VAT_ES": "No los provoquen, porque yo no les daré nada de su territorio, no siquiera el espacio que ocupa la huella de una pisada, ya que el macizo de Seír se lo he dado en posesión a Esaú.",
+        "CEI": "non muovete loro guerra, perché del loro paese io non vi darò neppure quanto ne può calcare la pianta di un piede; infatti ho dato il monte di Seir in proprietà a Esaù."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אֹ֣כֶל תִּשְׁבְּר֧וּ מֵֽ/אִתָּ֛/ם בַּ/כֶּ֖סֶף וַ/אֲכַלְתֶּ֑ם וְ/גַם מַ֜יִם תִּכְר֧וּ מֵ/אִתָּ֛/ם בַּ/כֶּ֖סֶף וּ/שְׁתִיתֶֽם׃",
+        "LXX": "βρώματα ἀργυρίου ἀγοράσατε παρ’ αὐτῶν καὶ φάγεσθε, καὶ ὕδωρ μέτρῳ λήμψεσθε παρ’ αὐτῶν ἀργυρίου καὶ πίεσθε·",
+        "VUL": "Cibos emetis ab eis pecunia, et comedetis : aquam emptam haurietis, et bibetis.",
+        "SYN": "пищу покупайте у них за серебро и ешьте; и воду покупайте у них за серебро и пейте;",
+        "NEO": "Vous achèterez d’eux à prix d’argent la nourriture que vous mangerez, et vous achèterez d’eux à prix d’argent même l’eau que vous boirez.",
+        "NAB": "You shall purchase from them with silver the food you eat and the well water you drink.",
+        "VAT_ES": "Cómprenles con dinero el alimento que necesitan para comer, y páguenles también el agua que deban.",
+        "CEI": "Comprerete da loro con denaro le vettovaglie che mangerete e comprerete da loro con denaro anche l'acqua da bere."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּי֩ יְהוָ֨ה אֱלֹהֶ֜י/ךָ בֵּֽרַכְ/ךָ֗ בְּ/כֹל֙ מַעֲשֵׂ֣ה יָדֶ֔/ךָ יָדַ֣ע לֶכְתְּ/ךָ֔ אֶת הַ/מִּדְבָּ֥ר הַ/גָּדֹ֖ל הַ/זֶּ֑ה זֶ֣ה אַרְבָּעִ֣ים שָׁנָ֗ה יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ עִמָּ֔/ךְ לֹ֥א חָסַ֖רְתָּ דָּבָֽר׃",
+        "LXX": "ὁ γὰρ κύριος ὁ θεὸς ἡμῶν εὐλόγησέν σε ἐν παντὶ ἔργῳ τῶν χειρῶν σου. διάγνωθι πῶς διῆλθες τὴν ἔρημον τὴν μεγάλην καὶ τὴν φοβερὰν ἐκείνην· ἰδοὺ τεσσεράκοντα ἔτη Κύριος ὁ θεός σου μετὰ σοῦ, οὐκ ἐπεδεήθης ῥήματος.",
+        "VUL": "Dominus Deus tuus benedixit tibi in omni opere manuum tuarum : novit iter tuum, quomodo transieris solitudinem hanc magnam, per quadraginta annos habitans tecum Dominus Deus tuus, et nihil tibi defuit.",
+        "SYN": "ибо Господь, Бог твой, благословил тебя во всяком деле рук твоих, покровительствовал _тебе_ во время путешествия твоего по великой [и страшной] пустыне сей; вот, сорок лет Господь, Бог твой, с тобою; ты ни в чем не терпел недостатка.",
+        "NEO": "Car \\+w Yahweh|strong=\"H3068\"\\+w** ton Dieu t’a béni dans tout le travail de tes mains, il a connu ta marche à travers ce grand désert ; voilà quarante ans que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, est avec toi : tu n’as manqué de rien. »",
+        "NAB": "The LORD, your God, has blessed you in all your undertakings; he has been concerned about your journey through this vast desert. It is now forty years that he has been with you, and you have never been in want.'",
+        "VAT_ES": "Porque el Señor, tu Dios, te ha bendecido en todas tus empresas, y te ha protegido mientras caminabas por este gran desierto. Ya hace cuarenta años que el Señor, tu Dios, está contigo y nunca te faltó nada».",
+        "CEI": "Perché il Signore tuo Dio ti ha benedetto in ogni lavoro delle tue mani, ti ha seguito nel tuo viaggio attraverso questo grande deserto; il Signore tuo Dio è stato con te in questi quaranta anni e non ti è mancato nulla."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַֽ/נַּעֲבֹ֞ר מֵ/אֵ֧ת אַחֵ֣י/נוּ בְנֵי עֵשָׂ֗ו הַ/יֹּֽשְׁבִים֙ בְּ/שֵׂעִ֔יר מִ/דֶּ֨רֶךְ֙ הָֽ/עֲרָבָ֔ה מֵ/אֵילַ֖ת וּ/מֵ/עֶצְיֹ֣ן גָּ֑בֶר וַ/נֵּ֨פֶן֙ וַֽ/נַּעֲבֹ֔ר דֶּ֖רֶךְ מִדְבַּ֥ר מוֹאָֽב׃",
+        "LXX": "καὶ παρήλθομεν τοὺς ἀδελφοὺς ὑμῶν υἱοὺς Ἠσαύ, τοὺς κατοικοῦντας ἐν Σηεὶρ παρὰ τὴν ὁδὸν τὴν Ἀραβὰ ἀπὸ Αἰλὼν καὶ ἀπὸ Γασιὼν Γάβερ· καὶ ἐπιστρέψαντες παρήλθομεν ἔρημον ὁδὸν Μωάβ.",
+        "VUL": "Cumque transissemus fratres nostros filios Esau, qui habitabant in Seir, per viam campestrem de Elath, et de Asiongaber, venimus ad iter quod ducit in desertum Moab.",
+        "SYN": "И шли мы мимо братьев наших, сынов Исавовых, живущих на Сеире, путем равнины, от Елафа и Ецион-Гавера, и поворотили, и шли к пустыне Моава.",
+        "NEO": "Nous passâmes donc à distance de nos frères, les enfants d’Esaü, qui habitent en Séïr, nous éloignant du chemin de l’Arabah, d’Elath et d’Asiongaber ; nous nous détournâmes et nous prîmes la direction du désert de Moab.",
+        "NAB": "\"Then we left behind us the Arabah route, Elath, Ezion-geber, and Seir, where our kinsmen, the descendants of Esau, live; and we went on toward the desert of Moab.",
+        "VAT_ES": "Por la ruta de la Arabá, que viene de Elat y de Esión Guéber, bordeamos la región de Seír, donde viven nuestros hermanos, los descendientes de Esaú. Luego dimos vuelta y tomamos el camino del desierto de Moab.",
+        "CEI": "Allora passammo oltre i nostri fratelli, i figli di Esaù, che abitano in Seir, lungo la via dell'Araba, per Elat ed Ezion-Gheber. Poi ci voltammo e avanzammo in direzione del deserto di Moab."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֜ה אֵלַ֗/י אֶל תָּ֨צַר֙ אֶת מוֹאָ֔ב וְ/אַל תִּתְגָּ֥ר בָּ֖/ם מִלְחָמָ֑ה כִּ֠י לֹֽא אֶתֵּ֨ן לְ/ךָ֤ מֵֽ/אַרְצ/וֹ֙ יְרֻשָּׁ֔ה כִּ֣י לִ/בְנֵי ל֔וֹט נָתַ֥תִּי אֶת עָ֖ר יְרֻשָּֽׁה׃",
+        "LXX": "Καὶ εἶπεν Κύριος πρὸς μέ Μὴ ἐχθραίνετε τοῖς Μωαβείταις, καὶ μὴ συνάψητε πρὸς αὐτοὺς πόλεμον· οὐ γὰρ δῶ ἀπὸ τῆς γῆς αὐτῶν ὑμῖν ἐν κλήρῳ, τοῖς γὰρ υἱοῖς Λὼτ δέδωκα τὴν Σηεὶρ κληρονομεῖν.",
+        "VUL": "Dixitque Dominus ad me : Non pugnes contra Moabitas, nec ineas adversus eos prælium : non enim dabo tibi quidquam de terra eorum, quia filiis Loth tradidi Ar in possessionem.",
+        "SYN": "И сказал мне Господь: не вступай во вражду с Моавом и не начинай с ними войны; ибо Я не дам тебе ничего от земли его во владение, потому что Ар отдал Я во владение сынам Лотовым;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** me dit : « N’attaque pas Moab et n’engage pas de combat avec lui, car je ne te donnerai aucune possession dans son pays : c’est aux enfants de Lot que j’ai donné Ar en propriété.",
+        "NAB": "And the LORD said to me, 'Do not show hostility to the Moabites or engage them in battle, for I will not give you possession of any of their land, since I have given Ar to the descendants of Lot as their own.",
+        "VAT_ES": "Entonces el Señor me dijo: «Tampoco ataques a Moab ni lo provoques a la guerra, porque no te daré ninguna fracción de su territorio, ya que la posesión de Ar se la he dado a los descendientes de Lot».",
+        "CEI": "Il Signore mi disse: Non attaccare Moab e non gli muovere guerra, perché io non ti darò nulla da possedere nel suo paese; infatti ho dato Ar ai figli di Lot, come loro proprietà."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "הָ/אֵמִ֥ים לְ/פָנִ֖ים יָ֣שְׁבוּ בָ֑/הּ עַ֣ם גָּד֥וֹל וְ/רַ֛ב וָ/רָ֖ם כָּ/עֲנָקִֽים׃",
+        "LXX": "οἱ Ὀμμεὶν πρότεροι ἐνεκάθηντο ἐπ’ αὐτῆς, ἔθνος μέγα καὶ πολύ, καὶ ἰσχύοντες ὥσπερ οἱ Ἐνακείμ·",
+        "VUL": "Emim primi fuerunt habitatores ejus, populus magnus, et validus, et tam excelsus ut de Enacim stirpe,",
+        "SYN": "прежде жили там Эмимы, народ великий, многочисленный и высокий, как _сыны_ Енаковы,",
+        "NEO": "— Les Emim y habitaient auparavant, peuple grand, nombreux et de haute taille, comme les Enacim.",
+        "NAB": "(Formerly the Emim lived there, a people strong and numerous and tall like the Anakim;",
+        "VAT_ES": "–Antiguamente habían estado allí los emíes, un pueblo fuerte, numeroso y de elevada estatura como los anaquitas.",
+        "CEI": "Prima vi abitavano gli Emim: popolo grande, numeroso, alto di statura come gli Anakiti."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "רְפָאִ֛ים יֵחָשְׁב֥וּ אַף הֵ֖ם כָּ/עֲנָקִ֑ים וְ/הַ/מֹּ֣אָבִ֔ים יִקְרְא֥וּ לָ/הֶ֖ם אֵמִֽים׃",
+        "LXX": "Ῥαφαεὶν λογισθήσονται καὶ οὗτοι ὥσπερ οἱ Ἐνακείμ· καὶ οἱ Μωαβεῖται ἐπονομάζουσιν αὐτοὺς Ὀμμείν.",
+        "VUL": "quasi gigantes crederentur, et essent similes filiorum Enacim. Denique Moabitæ appellant eos Emim.",
+        "SYN": "и они считались между Рефаимами, как _сыны_ Енаковы; Моавитяне же называют их Эмимами;",
+        "NEO": "Eux aussi sont regardés comme des Rephaïm, de même que les Enacim ; mais les Moabites les appellent Emim.",
+        "NAB": "like them they were considered Rephaim. It was the Moabites who called them Emim.",
+        "VAT_ES": "Tanto ellos como los anaquitas eran tenidos por gigantes, pero los moabitas los llaman emíes.",
+        "CEI": "Erano anch'essi considerati Refaim come gli Anakiti; ma i Moabiti li chiamavano Emim."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וּ/בְ/שֵׂעִ֞יר יָשְׁב֣וּ הַ/חֹרִים֮ לְ/פָנִים֒ וּ/בְנֵ֧י עֵשָׂ֣ו יִֽירָשׁ֗וּ/ם וַ/יַּשְׁמִידוּ/ם֙ מִ/פְּנֵי/הֶ֔ם וַ/יֵּשְׁב֖וּ תַּחְתָּ֑/ם כַּ/אֲשֶׁ֧ר עָשָׂ֣ה יִשְׂרָאֵ֗ל לְ/אֶ֨רֶץ֙ יְרֻשָּׁת֔/וֹ אֲשֶׁר נָתַ֥ן יְהוָ֖ה לָ/הֶֽם׃",
+        "LXX": "καὶ ἐν Σηεὶρ ἐνεκάθητο ὁ Χορραῖος πρότερον, καὶ υἱοὶ Ἠσαὺ ἀπώλεσαν αὐτοὺς καὶ ἐξέτριψαν αὐτοὺς ἀπὸ προσώπου αὐτῶν, καὶ κατῳκίσθησαν ἀντ’ αὐτῶν· ὃν τρόπον ἐποίησεν Ἰσραὴλ τὴν γῆν τῆς κληρονομίας αὐτοῦ, ἣν δέδωκεν Κύριος αὐτοῖς.",
+        "VUL": "In Seir autem prius habitaverunt Horrhæi : quibus expulsis atque deletis, habitaverunt filii Esau, sicut fecit Israël in terra possessionis suæ, quam dedit illi Dominus.",
+        "SYN": "а на Сеире жили прежде Хорреи; но сыны Исавовы прогнали их и истребили их от лица своего и поселились вместо их -- так, как поступил Израиль с землею наследия своего, которую дал им Господь;",
+        "NEO": "En Séïr habitaient aussi jadis les Horrhéens ; mais les enfants d’Esaü les chassèrent et, les ayant détruits de devant eux, ils s’établirent à leur place, comme l’a fait Israël pour le pays qu’il possède et que \\+w Yahweh|strong=\"H3068\"\\+w** lui a donné. —",
+        "NAB": "In Seir, however, the former inhabitants were the Horites; the descendants of Esau dispossessed them, clearing them out of the way and taking their place, just as the Israelites have done in the land of their heritage which the LORD has given them.)",
+        "VAT_ES": "En Seír, en cambio, primero estuvieron los hurritas; pero los descendientes de Esaú los desposeyeron y los exterminaron, instalándose en lugar de ellos, como lo hizo Israel con la tierra que el Señor le dio en posesión–.",
+        "CEI": "Anche Seir era prima abitata dagli Hurriti, ma i figli di Esaù li scacciarono, li distrussero e si stabilirono al posto loro, come ha fatto Israele nel paese che possiede e che il Signore gli ha dato."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "עַתָּ֗ה קֻ֛מוּ וְ/עִבְר֥וּ לָ/כֶ֖ם אֶת נַ֣חַל זָ֑רֶד וַֽ/נַּעֲבֹ֖ר אֶת נַ֥חַל זָֽרֶד׃",
+        "LXX": "νῦν οὖν ἀνάστητε καὶ ἀπάρατε ὑμεῖς, καὶ παραπορεύεσθε τὴν φάραγγα Ζάρετ. καὶ παρήλθομεν τὴν φάραγγα Ζάρετ,",
+        "VUL": "Surgentes ergo ut transiremus torrentem Zared, venimus ad eum.",
+        "SYN": "итак встаньте и пройдите долину Заред. И прошли мы долину Заред.",
+        "NEO": "Maintenant, levez-vous et passez le torrent de Zared. » Et nous passâmes le torrent de Zared.",
+        "NAB": "Get ready, then, to cross the Wadi Zered.' So we crossed it.",
+        "VAT_ES": "«Y ahora, ordenó el Señor, reanuden la marcha y crucen el torrente Zéred».",
+        "CEI": "Ora alzatevi e passate il torrente Zered! E attraversammo il torrente Zered."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/הַ/יָּמִ֞ים אֲשֶׁר הָלַ֣כְנוּ מִ/קָּדֵ֣שׁ בַּרְנֵ֗עַ עַ֤ד אֲשֶׁר עָבַ֨רְנוּ֙ אֶת נַ֣חַל זֶ֔רֶד שְׁלֹשִׁ֥ים וּ/שְׁמֹנֶ֖ה שָׁנָ֑ה עַד תֹּ֨ם כָּל הַ/דּ֜וֹר אַנְשֵׁ֤י הַ/מִּלְחָמָה֙ מִ/קֶּ֣רֶב הַֽ/מַּחֲנֶ֔ה כַּ/אֲשֶׁ֛ר נִשְׁבַּ֥ע יְהוָ֖ה לָ/הֶֽם׃",
+        "LXX": "καὶ αἱ ἡμέραι ἃς παρεπορεύθημεν ἀπὸ Καδὴς Βαρνὴ ἕως οὗ παρήλθομεν τὴν φάραγγα Ζάρετ τριάκοντα καὶ ὀκτὼ ἔτη, ἕως οὗ διέπεσεν πᾶσα γενεὰ ἀνδρῶν πολεμιστῶν ἀποθνήσκοντες ἐκ τῆς παρεμβολῆς, καθότι ὤμοσεν αὐτοῖς ὁ θεός·",
+        "VUL": "Tempus autem, quo ambulavimus de Cadesbarne usque ad transitum torrentis Zared, triginta et octo annorum fuit : donec consumeretur omnis generatio hominum bellatorum de castris, sicut juraverat Dominus :",
+        "SYN": "С тех пор, как мы пошли в Кадес-Варни и как прошли долину Заред, _минуло_ тридцать восемь лет, и у нас перевелся из среды стана весь род ходящих на войну, как клялся им Господь [Бог];",
+        "NEO": "Le temps que durèrent nos marches, de Cadès-Barné au passage du torrent de Zared, fut de trente-huit ans, jusqu’à ce que toute la génération des hommes de guerre eût disparu du milieu du camp, comme \\+w Yahweh|strong=\"H3068\"\\+w** le leur avait juré.",
+        "NAB": "Thirty-eight years had elapsed between our departure from Kadesh-barnea and that crossing; in the meantime the whole generation of soldiers had perished from the camp, as the LORD had sworn they should.",
+        "VAT_ES": "Desde que salimos de Cades Barné hasta que cruzamos el torrente Zéred, transcurrieron treinta y ocho años: el tiempo suficiente para que muriera toda aquella generación de guerreros, como el Señor se lo había jurado.",
+        "CEI": "La durata del nostro cammino, da Kades-Barnea al passaggio del torrente Zered, fu di trentotto anni, finché tutta quella generazione di uomini atti alla guerra scomparve dall'accampamento, come il Signore aveva loro giurato."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/גַ֤ם יַד יְהוָה֙ הָ֣יְתָה בָּ֔/ם לְ/הֻמָּ֖/ם מִ/קֶּ֣רֶב הַֽ/מַּחֲנֶ֑ה עַ֖ד תֻּמָּֽ/ם׃",
+        "LXX": "καὶ ἡ χεὶρ τοῦ θεοῦ ἦν ἐπ’ αὐτοῖς ἐξαναλῶσαι αὐτοὺς ἐκ μέσου τῆς παρεμβολῆς, ἕως οὗ διέπεσαν.",
+        "VUL": "cujus manus fuit adversum eos, ut interirent de castrorum medio.",
+        "SYN": "да и рука Господня была на них, чтоб истреблять их из среды стана, пока не вымерли.",
+        "NEO": "La main de \\+w Yahweh|strong=\"H3068\"\\+w** fut aussi sur eux pour les détruire du milieu du camp, jusqu’à ce qu’ils eussent disparu.",
+        "NAB": "For it was the LORD'S hand that was against them, till he wiped them out of the camp completely.",
+        "VAT_ES": "Porque el Señor puso su mano sobre ellos, hasta hacerlos desaparecer por completo del campamento.",
+        "CEI": "Anche la mano del Signore era stata contro di loro, per sterminarli dall'accampamento finché fossero annientati."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֨י כַ/אֲשֶׁר תַּ֜מּוּ כָּל אַנְשֵׁ֧י הַ/מִּלְחָמָ֛ה לָ/מ֖וּת מִ/קֶּ֥רֶב הָ/עָֽם׃",
+        "LXX": "Καὶ ἐγενήθη ἐπεὶ διέπεσαν πάντες οἱ ἄνδρες οἱ πολεμισταὶ ἀποθνήσκοντες ἐκ μέσου τοῦ λαοῦ,",
+        "VUL": "Postquam autem universi ceciderunt pugnatores,",
+        "SYN": "Когда же перевелись все ходящие на войну и вымерли из среды народа,",
+        "NEO": "Lorsque la mort eut fait disparaître tous les hommes de guerre du milieu du peuple,",
+        "NAB": "\"When at length death had put an end to all the soldiers among the people,",
+        "VAT_ES": "Cuando ya no quedó en medio del pueblo ninguno de aquellos guerreros –porque todos habían muerto–.",
+        "CEI": "Quando tutti quegli uomini atti alla guerra furono passati nel numero dei morti,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "καὶ ἐλάλησεν Κύριος πρὸς μὲ λέγων",
+        "VUL": "locutus est Dominus ad me, dicens :",
+        "SYN": "тогда сказал мне Господь, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** me parla, en disant :",
+        "NAB": "the LORD said to me,",
+        "VAT_ES": "El Señor me habló en estos términos:",
+        "CEI": "il Signore mi disse:"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "אַתָּ֨ה עֹבֵ֥ר הַ/יּ֛וֹם אֶת גְּב֥וּל מוֹאָ֖ב אֶת עָֽר׃",
+        "LXX": "Σὺ παραπορεύσῃ σήμερον τὰ ὅρια Μωὰβ τὴν Σηείρ,",
+        "VUL": "Tu transibis hodie terminos Moab, urbem nomine Ar :",
+        "SYN": "ты проходишь ныне мимо пределов Моава, мимо Ара,",
+        "NEO": "« Tu vas passer aujourd’hui la frontière de Moab, Ar,",
+        "NAB": "'You are now about to leave Ar and the territory of Moab behind.",
+        "VAT_ES": "«Ahora vas a pasar por Ar, que está en las fronteras de Moab.",
+        "CEI": "Oggi tu stai per passare i confini di Moab, ad Ar, e ti avvicinerai agli Ammoniti."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/קָרַבְתָּ֗ מ֚וּל בְּנֵ֣י עַמּ֔וֹן אַל תְּצֻרֵ֖/ם וְ/אַל תִּתְגָּ֣ר בָּ֑/ם כִּ֣י לֹֽא אֶ֠תֵּן מֵ/אֶ֨רֶץ בְּנֵי עַמּ֤וֹן לְ/ךָ֙ יְרֻשָּׁ֔ה כִּ֥י לִ/בְנֵי ל֖וֹט נְתַתִּ֥י/הָ יְרֻשָּֽׁה׃",
+        "LXX": "καὶ προσάξετε ἐγγὺς υἱῶν Ἀμμάν· μὴ ἐχθραίνετε αὐτοῖς καὶ μὴ συνάψητε αὐτοῖς εἰς πόλεμον, οὐ γὰρ μὴ δῶ ἀπὸ τῆς γῆς υἱῶν Ἀμμάν σοι ἐν κλήρῳ, ὅτι τοῖς υἱοῖς Λὼτ δέδωκα αὐτὴν ἐν κλήρῳ.",
+        "VUL": "et accedens in vicina filiorum Ammon, cave ne pugnes contra eos, nec movearis ad prælium : non enim dabo tibi de terra filiorum Ammon, quia filiis Loth dedi eam in possessionem.",
+        "SYN": "и приблизился к Аммонитянам; не вступай с ними во вражду, и не начинай с ними войны, ибо Я не дам тебе ничего от земли сынов Аммоновых во владение, потому что Я отдал ее во владение сынам Лотовым;",
+        "NEO": "et tu approcheras des enfants d’Ammon. Ne les attaque pas et n’aie pas de démêlés avec eux, car je ne te donnerai aucune possession dans le pays des enfants d’Ammon : c’est aux enfants de Lot que je l’ai donné en possession.",
+        "NAB": "As you come opposite the Ammonites, do not show hostility or come in conflict with them, for I will not give you possession of any land of the Ammonites, since I have given it to the descendants of Lot as their own.",
+        "VAT_ES": "Y luego te vas a enfrentar con los amonitas. No los ataques ni los provoques, porque yo no te daré en posesión ninguna fracción de su territorio, ya que se lo he dado en posesión a los descendientes de Lot».",
+        "CEI": "Non li attaccare e non muover loro guerra, perché io non ti darò nessun possesso nel paese degli Ammoniti; infatti l'ho dato in proprietà ai figli di Lot."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "אֶֽרֶץ רְפָאִ֥ים תֵּחָשֵׁ֖ב אַף הִ֑וא רְפָאִ֤ים יָֽשְׁבוּ בָ/הּ֙ לְ/פָנִ֔ים וְ/הָֽ/עַמֹּנִ֔ים יִקְרְא֥וּ לָ/הֶ֖ם זַמְזֻמִּֽים׃",
+        "LXX": "γῆ Ῥαφαεὶν λογισθήσεται, καὶ γὰρ ἐπ’ αὐτῆς κατῴκουν οἱ Ῥαφαεὶν τὸ πρότερον, καὶ οἱ Ἀμμανεῖται ὀνομάζουσιν αὐτοὺς Ζοχομείν,",
+        "VUL": "Terra gigantum reputata est : et in ipsa olim habitaverunt gigantes, quos Ammonitæ vocant Zomzommim,",
+        "SYN": "и она считалась землею Рефаимов; прежде жили на ней Рефаимы; Аммонитяне же называют их Замзумимами;",
+        "NEO": "— On regardait aussi ce pays comme un pays de Rephaïm ; des Rephaïm y habitaient auparavant, et les Ammonites les appelaient Zomzommim :",
+        "NAB": "(This also was considered a country of the Rephaim from its former inhabitants, whom the Ammonites called Zamzummim,",
+        "VAT_ES": "–También este era considerado un país de gigantes. En efecto, allí habitaron antiguamente los gigantes que los amonitas llaman zamzumíes.",
+        "CEI": "Anche questo paese era reputato paese di Refaim: prima vi abitavano i Refaim e gli Ammoniti li chiamavano Zanzummim:"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "עַ֣ם גָּד֥וֹל וְ/רַ֛ב וָ/רָ֖ם כָּ/עֲנָקִ֑ים וַ/יַּשְׁמִידֵ֤/ם יְהוָה֙ מִ/פְּנֵי/הֶ֔ם וַ/יִּירָשֻׁ֖/ם וַ/יֵּשְׁב֥וּ תַחְתָּֽ/ם׃",
+        "LXX": "ἔθνος μέγα καὶ πολὺ καὶ δυνατώτερον ὑμῶν ὥσπερ οἱ Ἐνακείμ· καὶ ἀπώλεσεν αὐτοὺς Κύριος πρὸ προσώπου αὐτῶν, καὶ κατεκληρονόμησαν καὶ κατῳκίσθησαν ἀντ’ αὐτῶν ἕως τῆς ἡμέρας ταύτης·",
+        "VUL": "populus magnus, et multus, et proceræ longitudinis, sicut Enacim, quos delevit Dominus a facie eorum : et fecit illos habitare pro eis,",
+        "SYN": "народ великий, многочисленный и высокий, как _сыны_ Енаковы, и истребил их Господь пред лицем их, и изгнали они их и поселились на месте их,",
+        "NEO": "peuple grand, nombreux et de haute taille, comme les Enacim, \\+w Yahweh|strong=\"H3068\"\\+w** les détruisit devant les Ammonites, qui les chassèrent et s’établirent à leur place.",
+        "NAB": "a people strong and numerous and tall like the Anakim. But these, too, the LORD cleared out of the way for the Ammonites, who ousted them and took their place.",
+        "VAT_ES": "Eran un pueblo fuerte, numeroso y de elevada estatura como los anaquitas; pero el Señor los destruyó por medio de los amonitas, que los desposeyeron y se establecieron en lugar de ellos.",
+        "CEI": "popolo grande, numeroso, alto di statura come gli Anakiti; ma il Signore li aveva distrutti davanti agli Ammoniti, che li avevano scacciati e si erano stabiliti al loro posto."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כַּ/אֲשֶׁ֤ר עָשָׂה֙ לִ/בְנֵ֣י עֵשָׂ֔ו הַ/יֹּשְׁבִ֖ים בְּ/שֵׂעִ֑יר אֲשֶׁ֨ר הִשְׁמִ֤יד אֶת הַ/חֹרִי֙ מִ/פְּנֵי/הֶ֔ם וַ/יִּֽירָשֻׁ/ם֙ וַ/יֵּשְׁב֣וּ תַחְתָּ֔/ם עַ֖ד הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "ὥσπερ ἐποίησαν τοῖς υἱοῖς Ἠσαὺ τοῖς κατοικοῦσιν ἐν Σηείρ, ὃν τρόπον ἐξέτριψαν τὸν Χορραῖον ἀπὸ προσώπου αὐτῶν, καὶ κατεκληρονόμησαν καὶ κατῳκίσθησαν ἀντ’ αὐτῶν ἕως τῆς ἡμέρας ταύτης·",
+        "VUL": "sicut fecerat filiis Esau, qui habitant in Seir, delens Horrhæos, et terram eorum illis tradens, quam possident usque in præsens.",
+        "SYN": "как Он сделал для сынов Исавовых, живущих на Сеире, истребив пред лицем их Хорреев, и они изгнали их, и поселились на месте их, и _живут_ до сего дня;",
+        "NEO": "C’est ainsi que fit \\+w Yahweh|strong=\"H3068\"\\+w** pour les enfants d’Esaü qui habitent en Séïr, lorsqu’il détruisit devant eux les Horrhéens ; les ayant chassés, ils s’établirent à leur place jusqu’à ce jour.",
+        "NAB": "He had done the same for the descendants of Esau, who dwell in Seir, by clearing the Horites out of their way, so that the descendants of Esau have taken their place down to the present.",
+        "VAT_ES": "Lo mismo había hecho con los descendientes de Esaú, que habitan en Seír, cuando por medio de ellos destruyó a los hurritas; de esta manera, aquellos desposeyeron a los hurritas y se establecieron en su lugar hasta el día de hoy.",
+        "CEI": "Così il Signore aveva fatto per i figli di Esaù che abitano in Seir, quando distrusse gli Hurriti davanti a loro; essi li scacciarono e si stabilirono al loro posto e vi sono rimasti fino ad oggi."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/הָֽ/עַוִּ֛ים הַ/יֹּשְׁבִ֥ים בַּ/חֲצֵרִ֖ים עַד עַזָּ֑ה כַּפְתֹּרִים֙ הַ/יֹּצְאִ֣ים מִ/כַּפְתּ֔וֹר הִשְׁמִידֻ֖/ם וַ/יֵּשְׁב֥וּ תַחְתָּֽ/ם׃",
+        "LXX": "καὶ οἱ Εὐαῖοι οἱ κατοικοῦντες ἐν Ἁσηδὼθ ἕως Γάζης, καὶ οἱ Καππάδοκες οἱ ἐξελθόντες ἐκ Καππαδοκίας ἐξέτριψαν αὐτοὺς καὶ κατῳκίσθησαν ἀντ’ αὐτῶν.",
+        "VUL": "Hevæos quoque, qui habitabant in Haserim usque Gazan, Cappadoces expulerunt : qui egressi de Cappadocia deleverunt eos, et habitaverunt pro illis.",
+        "SYN": "и Аввеев, живших в селениях до самой Газы, Кафторимы, исшедшие из Кафтора, истребили и поселились на месте их.",
+        "NEO": "De même les Hévéens, qui habitaient dans des villages jusqu’à Gaza, furent détruits par les Caphtorim, qui, étant sortis de Caphtor, s’établirent à leur place. —",
+        "NAB": "So also the Caphtorim, migrating from Caphtor, cleared away the Avvim, who once dwelt in villages as far as Gaza, and took their place.)",
+        "VAT_ES": "En cuanto a los avitas, que habitaban en los poblados hasta Gaza, fueron exterminados por los caftoritas, provenientes de Caftor, los cuales se establecieron en lugar de ellos–.",
+        "CEI": "Anche gli Avviti, che dimoravano in villaggi fino a Gaza, furono distrutti dai Kaftoriti, usciti da Kaftor, i quali si stabilirono al loro posto."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "ק֣וּמוּ סְּע֗וּ וְ/עִבְרוּ֮ אֶת נַ֣חַל אַרְנֹן֒ רְאֵ֣ה נָתַ֣תִּי בְ֠/יָדְ/ךָ אֶת סִיחֹ֨ן מֶֽלֶךְ חֶשְׁבּ֧וֹן הָֽ/אֱמֹרִ֛י וְ/אֶת אַרְצ֖/וֹ הָחֵ֣ל רָ֑שׁ וְ/הִתְגָּ֥ר בּ֖/וֹ מִלְחָמָֽה׃",
+        "LXX": "νῦν οὖν ἀνάστητε καὶ ἀπάρατε, καὶ παρέλθατε ὑμεῖς τὴν φάραγγα Ἀρνών· ἰδοὺ παραδέδωκα εἰς χεῖράς σου τὸν Σηὼν βασιλέα Ἑσεβὼν τὸν Ἀμορραῖον καὶ τὴν γῆν αὐτοῦ· ἐνάρχου κληρονομεῖν, σύναπτε πρὸς αὐτὸν πόλεμον.",
+        "VUL": "Surgite, et transite torrentem Arnon : ecce tradidi in manu tua Sehon regem Hesebon Amorrhæum, et terram ejus incipe possidere, et committe adversus eum prælium.",
+        "SYN": "Встаньте, отправьтесь и перейдите поток Арнон; вот, Я предаю в руку твою Сигона, царя Есевонского, Аморреянина, и землю его; начинай овладевать ею, и веди с ним войну;",
+        "NEO": "Levez-vous, partez et passez le torrent de l’Arnon. Voici que je livre entre tes mains Séhon, roi de Hésebon, Amorrhéens, ainsi que son pays. Commence à t’en emparer, engage le combat avec lui !",
+        "NAB": "\"'Advance now across the Wadi Arnon. I now deliver into your hands Sihon, the Amorite king of Heshbon, and his land. Begin the occupation; engage him in battle.",
+        "VAT_ES": "Luego el Señor añadió: «Reanuden la marcha y crucen el torrente Arnón. Yo te entrego a Sijón, rey de Jesbón, el amorreo, con todo su país. Prepárate para iniciar la conquista y provócalo a la guerra.",
+        "CEI": "Suvvia, levate l'accampamento e passate la valle dell'Arnon; ecco io metto in tuo potere Sicon, l'Amorreo, re di Chesbòn, e il suo paese; comincia a prenderne possesso e muovigli guerra."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "הַ/יּ֣וֹם הַ/זֶּ֗ה אָחֵל֙ תֵּ֤ת פַּחְדְּ/ךָ֙ וְ/יִרְאָ֣תְ/ךָ֔ עַל פְּנֵי֙ הָֽ/עַמִּ֔ים תַּ֖חַת כָּל הַ/שָּׁמָ֑יִם אֲשֶׁ֤ר יִשְׁמְעוּ/ן֙ שִׁמְעֲ/ךָ֔ וְ/רָגְז֥וּ וְ/חָל֖וּ מִ/פָּנֶֽי/ךָ׃",
+        "LXX": "ἐν τῇ ἡμέρᾳ ταύτῃ ἐνάρχου δοῦναι τὸν τρόμον σου καὶ τὸν φόβον σου ἐπὶ πρόσωπον πάντων τῶν ἐθνῶν τῶν ὑποκάτω τοῦ οὐρανοῦ, οἵτινες ἀκούσαντες τὸ ὄνομά σου ταραχθήσονται, καὶ ὠδῖνες ἕξουσιν ἀπὸ προσώπου σου.",
+        "VUL": "Hodie incipiam mittere terrorem atque formidinem tuam in populos, qui habitant sub omni cælo : ut audito nomine tuo paveant, et in morem parturientium contremiscant, et dolore teneantur.",
+        "SYN": "с сего дня Я начну распространять страх и ужас пред тобою на народы под всем небом; те, которые услышат о тебе, вострепещут и ужаснутся тебя.",
+        "NEO": "Dès aujourd’hui je vais répandre la frayeur et la crainte de ton nom sur tous les peuples qui sont sous tous les cieux, en sorte que, au bruit de ta renommée, ils trembleront et seront dans l’angoisse à cause de toi. »",
+        "NAB": "This day I will begin to put a fear and dread of you into every nation under the heavens, so that at the mention of your name they will quake and tremble before you.'",
+        "VAT_ES": "A partir de este momento, haré que el pánico y el terror se apoderen de todos los pueblos que están bajo el cielo: el que oiga hablar de ti, temblará y se estremecerá de espanto».",
+        "CEI": "Oggi comincerò a incutere paura e terrore di te ai popoli che sono sotto tutto il cielo, così che, all'udire la tua fama, tremeranno e saranno presi da spavento dinanzi a te."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וָ/אֶשְׁלַ֤ח מַלְאָכִים֙ מִ/מִּדְבַּ֣ר קְדֵמ֔וֹת אֶל סִיח֖וֹן מֶ֣לֶךְ חֶשְׁבּ֑וֹן דִּבְרֵ֥י שָׁל֖וֹם לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἀπέστειλα πρέσβεις ἐκ τῆς ἐρήμου Κεδαμὼθ πρὸς Σηὼν βασιλέα Ἑσεβὼν λόγοις εἰρηνικοῖς λέγων",
+        "VUL": "Misi ergo nuntios de solitudine Cademoth ad Sehon regem Hesebon verbis pacificis, dicens :",
+        "SYN": "И послал я послов из пустыни Кедемоф к Сигону, царю Есевонскому, с словами мирными, чтобы сказать:",
+        "NEO": "Du désert de Cademoth, j’envoyai des messagers à Séhon, roi de Hésebon, avec des paroles de paix, lui faisant dire :",
+        "NAB": "\"So I sent messengers from the desert of Kedemoth to Sihon, king of Heshbon, with this offer of peace:",
+        "VAT_ES": "Desde el desierto de Quedemot envié mensajeros a Sijón, rey de Jesbón, con la siguiente propuesta de paz:",
+        "CEI": "Allora mandai messaggeri dal deserto di Kedemot a Sicon, re di Chesbòn, con parole di pace, e gli feci dire:"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "אֶעְבְּרָ֣ה בְ/אַרְצֶ֔/ךָ בַּ/דֶּ֥רֶךְ בַּ/דֶּ֖רֶךְ אֵלֵ֑ךְ לֹ֥א אָס֖וּר יָמִ֥ין וּ/שְׂמֹֽאול׃",
+        "LXX": "Παρελεύσομαι διὰ τῆς γῆς σου· ἐν τῇ ὁδῷ παρελεύσομαι, οὐχὶ ἐκκλινῶ δεξιὰ οὐδὲ ἀριστερά.",
+        "VUL": "Transibimus per terram tuam : publica gradiemur via ; non declinabimus neque ad dexteram, neque ad sinistram.",
+        "SYN": "позволь пройти мне землею твоею; я пойду дорогою, не сойду ни направо, ни налево;",
+        "NEO": "« Que je puisse passer par ton pays ; je suivrai le grand chemin, sans m’écarter ni à droite ni à gauche.",
+        "NAB": "'Let me pass through your country by the highway; I will go along it without turning aside to the right or to the left.",
+        "VAT_ES": "«Déjame pasar por tu país. Iré por el camino, sin desviarme ni a la derecha ni a la izquierda.",
+        "CEI": "Lasciami passare nel tuo paese; io camminerò per la strada maestra, senza volgermi né a destra né a sinistra."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "אֹ֣כֶל בַּ/כֶּ֤סֶף תַּשְׁבִּרֵ֨/נִי֙ וְ/אָכַ֔לְתִּי וּ/מַ֛יִם בַּ/כֶּ֥סֶף תִּתֶּן לִ֖/י וְ/שָׁתִ֑יתִי רַ֖ק אֶעְבְּרָ֥ה בְ/רַגְלָֽ/י׃",
+        "LXX": "βρώματα ἀργυρίου ἀποδώσῃ μοι καὶ φάγομαι, καὶ ὕδωρ ἀργυρίου ἀποδώσῃ μοι καὶ πίομαι· πλὴν ὅτι παρελεύσομαι τοῖς ποσίν,",
+        "VUL": "Alimenta pretio vende nobis, ut vescamur : aquam pecunia tribue, et sic bibemus. Tantum est ut nobis concedas transitum,",
+        "SYN": "пищу продавай мне за серебро, и я буду есть, и воду для питья давай мне за серебро, и я буду пить, только ногами моими пройду --",
+        "NEO": "Tu me vendras à prix d’argent la nourriture que je mangerai, et tu me donneras à prix d’argent l’eau que je boirai ; je ne veux que passer avec mes pieds :",
+        "NAB": "For the food I eat which you will supply, and for the water you give me to drink, you shall be paid in silver. Only let me march through,",
+        "VAT_ES": "Véndeme las provisiones necesarias para comer, y darme también a cambio de dinero, agua para beber. Te pido solamente que me dejes pasar.",
+        "CEI": "Tu mi venderai per denaro contante le vettovaglie che mangerò e mi darai per denaro contante l'acqua che berrò; permittimi solo il transito,"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "כַּ/אֲשֶׁ֨ר עָֽשׂוּ לִ֜/י בְּנֵ֣י עֵשָׂ֗ו הַ/יֹּֽשְׁבִים֙ בְּ/שֵׂעִ֔יר וְ/הַ/מּ֣וֹאָבִ֔ים הַ/יֹּשְׁבִ֖ים בְּ/עָ֑ר עַ֤ד אֲשֶֽׁר אֶֽעֱבֹר֙ אֶת הַ/יַּרְדֵּ֔ן אֶל הָ/אָ֕רֶץ אֲשֶׁר יְהוָ֥ה אֱלֹהֵ֖י/נוּ נֹתֵ֥ן לָֽ/נוּ׃",
+        "LXX": "καθὼς ἐποίησάν μοι οἱ υἱοὶ Ἠσαὺ οἱ κατοικοῦντες ἐν Σηεὶρ καὶ οἱ Μωαβεῖται οἱ κατοικοῦντες ἐν Ἀροήρ, ἕως παρέλθω τὸν Ἰορδάνην εἰς τὴν γῆν ἣν Κύριος ὁ θεὸς ἡμῶν δίδωσιν ἡμῖν.",
+        "VUL": "sicut fecerunt filii Esau, qui habitant in Seir, et Moabitæ, qui morantur in Ar : donec veniamus ad Jordanem, et transeamus ad terram, quam Dominus Deus noster daturus est nobis.",
+        "SYN": "так, как сделали мне сыны Исава, живущие на Сеире, и Моавитяне, живущие в Аре, доколе не перейду чрез Иордан в землю, которую Господь, Бог наш, дает нам.",
+        "NEO": "— C’est ce qu’on fait pour moi les enfants d’Esaü qui habitent en Séïr, et les Moabites qui habitent à Ar : — jusqu’à ce que je passe le Jourdain pour entrer dans le pays que \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, nous donne. »",
+        "NAB": "as the descendants of Esau who dwell in Seir and the Moabites who dwell in Ar have done, until I cross the Jordan into the land which the LORD, our God, is about to give us.'",
+        "VAT_ES": "Como ya me han dejado los descendientes de Esaú, que viven en Seír, y los moabitas de Ar. Así podré cruzar el Jordán y llegar a la tierra que nos da el Señor, nuestro Dios».",
+        "CEI": "come mi hanno permesso i figli di Esaù, che abitano in Seir, e i Moabiti che abitano in Ar, finché io abbia passato il Giordano per entrare nel paese che il Signore nostro Dio sta per darci."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/לֹ֣א אָבָ֗ה סִיחֹן֙ מֶ֣לֶךְ חֶשְׁבּ֔וֹן הַעֲבִרֵ֖/נוּ בּ֑/וֹ כִּֽי הִקְשָׁה֩ יְהוָ֨ה אֱלֹהֶ֜י/ךָ אֶת רוּח֗/וֹ וְ/אִמֵּץ֙ אֶת לְבָב֔/וֹ לְמַ֛עַן תִּתּ֥/וֹ בְ/יָדְ/ךָ֖ כַּ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ οὐκ ἠθέλησεν Σηὼν βασιλεὺς Ἑσεβὼν παρελθεῖν ἡμᾶς δι’ αὐτοῦ, ὅτι ἐσκλήρυνεν Κύριος ὁ θεὸς ἡμῶν τὸ πνεῦμα αὐτοῦ καὶ κατίσχυσεν τὴν καρδίαν αὐτοῦ, ἵνα παραδοθῇ εἰς τὰς χεῖράς σου ὡς ἐν τῇ ἡμέρᾳ ταύτῃ.",
+        "VUL": "Noluitque Sehon rex Hesebon dare nobis transitum : quia induraverat Dominus Deus tuus spiritum ejus, et obfirmaverat cor illius, ut traderetur in manus tuas, sicut nunc vides.",
+        "SYN": "Но Сигон, царь Есевонский, не согласился позволить пройти нам через свою _землю,_ потому что Господь, Бог твой, ожесточил дух его и сердце его сделал упорным, чтобы предать его в руку твою, как _это_ _видно_ ныне.",
+        "NEO": "Mais Séhon, roi de Hésebon, ne voulut pas nous laisser passer chez lui, car \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, avait endurci son esprit et rendu son cœur inflexible, afin de le livrer entre tes mains, comme tu le vois aujourd’hui.",
+        "NAB": "But Sihon, king of Heshbon, refused to let us pass through his land, because the LORD, your God, made him stubborn in mind and obstinate in heart that he might deliver him up to you, as indeed he has now done.",
+        "VAT_ES": "Pero Sijón, rey de Jesbón, se negó a dejarnos pasar por su territorio, porque el Señor, tu Dios, había ofuscado su espíritu y endurecido su corazón, a fin de ponerlo en tus manos, como lo está todavía hoy.",
+        "CEI": "Ma Sicon, re di Chesbòn, non ci volle lasciar passare nel suo paese, perché il Signore tuo Dio gli aveva reso inflessibile lo spirito e ostinato il cuore, per mettertelo nelle mani, come appunto è oggi."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֵלַ֔/י רְאֵ֗ה הַֽחִלֹּ֨תִי֙ תֵּ֣ת לְ/פָנֶ֔י/ךָ אֶת סִיחֹ֖ן וְ/אֶת אַרְצ֑/וֹ הָחֵ֣ל רָ֔שׁ לָ/רֶ֖שֶׁת אֶת אַרְצֽ/וֹ׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς μέ Ἰδοὺ ἦργμαι παραδοῦναι πρὸ προσώπου σου τὸν Σηὼν βασιλέα Ἑσεβὼν τὸν Ἀμορραῖον καὶ τὴν γῆν αὐτοῦ· ἔναρξαι κληρονομῆσαι τὴν γῆν αὐτοῦ.",
+        "VUL": "Dixitque Dominus ad me : Ecce cpi tibi tradere Sehon, et terram ejus : incipe possidere eam.",
+        "SYN": "И сказал мне Господь: вот, Я начинаю предавать тебе Сигона [царя Есевонского, Аморреянина,] и землю его; начинай овладевать землею его.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** me dit : « Voici que j’ai commencé de te livrer Séhon et son pays. Commence à le conquérir afin de prendre possession de son pays. »",
+        "NAB": "\"Then the LORD said to me, 'Now that I have already begun to hand over to you Sihon and his land, begin the actual occupation.'",
+        "VAT_ES": "Entonces el Señor me dijo: «He decidido entregarte a Sijón con todo su país. Empieza la conquista apoderándose de su territorio».",
+        "CEI": "Il Signore mi disse: Vedi, ho cominciato a mettere in tuo potere Sicon e il suo paese; dà inizio alla conquista impadronendoti del suo paese."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵא֩ סִיחֹ֨ן לִ/קְרָאתֵ֜/נוּ ה֧וּא וְ/כָל עַמּ֛/וֹ לַ/מִּלְחָמָ֖ה יָֽהְצָ/ה׃",
+        "LXX": "καὶ ἐξῆλθεν Σηὼν βασιλεὺς Ἑσεβὼν εἰς συνάντησιν ἡμῖν, αὐτὸς καὶ πᾶς ὁ λαὸς αὐτοῦ, εἰς πόλεμον Ἰάσσα.",
+        "VUL": "Egressusque est Sehon obviam nobis cum omni populo suo ad prælium in Jasa.",
+        "SYN": "И Сигон [царь Есевонский] со всем народом своим выступил против нас на сражение к Яаце;",
+        "NEO": "Séhon sortit à notre rencontre, avec tout son peuple, pour nous livrer bataille à Jasa.",
+        "NAB": "So Sihon and all his people advanced against us to join battle at Jahaz;",
+        "VAT_ES": "Sijón nos salió al paso con todas sus tropas, dispuesto a librarnos batalla en Iasá.",
+        "CEI": "Allora Sicon uscì contro di noi con tutta la sua gente per darci battaglia a Iaaz."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַֽ/יִּתְּנֵ֛/הוּ יְהוָ֥ה אֱלֹהֵ֖י/נוּ לְ/פָנֵ֑י/נוּ וַ/נַּ֥ךְ אֹת֛/וֹ וְ/אֶת בנ/ו בָּנָ֖י/ו וְ/אֶת כָּל עַמּֽ/וֹ׃",
+        "LXX": "καὶ παρέδωκεν αὐτὸν Κύριος ὁ θεὸς ἡμῶν πρὸ προσώπου ἡμῶν, καὶ ἐπάταξεν αὐτὸν καὶ τοὺς υἱοὺς αὐτοῦ καὶ πάντα τὸν λαὸν αὐτοῦ·",
+        "VUL": "Et tradidit eum Dominus Deus noster nobis : percussimusque eum cum filiis suis et omni populo suo.",
+        "SYN": "и предал его Господь, Бог наш, [в руки наши,] и мы поразили его и сынов его и весь народ его,",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, nous le livra et nous le battîmes, lui et ses fils, et tout son peuple.",
+        "NAB": "but since the LORD, our God, had delivered him to us, we defeated him and his sons and all his people.",
+        "VAT_ES": "Pero el Señor lo puso en nuestras manos y lo derrotamos, a él con sus hijos y todas sus tropas.",
+        "CEI": "Il Signore nostro Dio ce lo mise nelle mani e noi abbiamo sconfitto lui, i suoi figli e tutta la sua gente."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/נִּלְכֹּ֤ד אֶת כָּל עָרָי/ו֙ בָּ/עֵ֣ת הַ/הִ֔וא וַֽ/נַּחֲרֵם֙ אֶת כָּל עִ֣יר מְתִ֔ם וְ/הַ/נָּשִׁ֖ים וְ/הַ/טָּ֑ף לֹ֥א הִשְׁאַ֖רְנוּ שָׂרִֽיד׃",
+        "LXX": "καὶ ἐκρατήσαμεν πασῶν τῶν πόλεων αὐτοῦ ἐν τῷ καιρῷ ἐκείνῳ, καὶ ἐξωλεθρεύσαμεν πᾶσαν πόλιν ἑξῆς καὶ τὰς γυναῖκας αὐτῶν καὶ τὰ τέκνα αὐτῶν· οὐ κατελίπομεν ζωγρείαν.",
+        "VUL": "Cunctasque urbes in tempore illo cepimus, interfectis habitatoribus earum, viris ac mulieribus et parvulis : non reliquimus in eis quidquam,",
+        "SYN": "и взяли в то время все города его, и предали заклятию все города, мужчин и женщин и детей, не оставили никого в живых;",
+        "NEO": "Nous prîmes alors toutes ses villes et nous dévouâmes par anathème toute ville, les hommes, les femmes et les enfants, sans en laisser échapper un seul.",
+        "NAB": "At that time we seized all his cities and doomed them all, with their men, women and children; we left no survivor.",
+        "VAT_ES": "Nos apoderamos de todas sus ciudades y las consagramos al exterminio, sacrificando a hombres, mujeres y niños, sin dejar ningún sobreviviente.",
+        "CEI": "In quel tempo prendemmo tutte le sue città e votammo allo sterminio ogni città, uomini, donne, bambini; non vi lasciammo alcun superstite."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "רַ֥ק הַ/בְּהֵמָ֖ה בָּזַ֣זְנוּ לָ֑/נוּ וּ/שְׁלַ֥ל הֶ/עָרִ֖ים אֲשֶׁ֥ר לָכָֽדְנוּ׃",
+        "LXX": "πλὴν τὰ κτήνη ἐπρονομεύσαμεν καὶ τὰ σκῦλα τῶν πόλεων ἐλάβομεν,",
+        "VUL": "absque jumentis, quæ in partem venere prædantium : et spoliis urbium, quas cepimus",
+        "SYN": "только взяли мы себе в добычу скот их и захваченное во взятых нами городах.",
+        "NEO": "Seulement, nous pillâmes pour nous le bétail et le butin des villes que nous avions prises.",
+        "NAB": "Our only booty was the livestock and the loot of the captured cities.",
+        "VAT_ES": "Nos reservamos como botín solamente el ganado y los despojos de las ciudades conquistadas.",
+        "CEI": "Soltanto asportammo per noi come preda il bestiame e le spoglie delle città che avevamo prese."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "מֵֽ/עֲרֹעֵ֡ר אֲשֶׁר֩ עַל שְׂפַת נַ֨חַל אַרְנֹ֜ן וְ/הָ/עִ֨יר אֲשֶׁ֤ר בַּ/נַּ֨חַל֙ וְ/עַד הַ/גִּלְעָ֔ד לֹ֤א הָֽיְתָה֙ קִרְיָ֔ה אֲשֶׁ֥ר שָׂגְבָ֖ה מִמֶּ֑/נּוּ אֶת הַ/כֹּ֕ל נָתַ֛ן יְהוָ֥ה אֱלֹהֵ֖י/נוּ לְ/פָנֵֽי/נוּ׃",
+        "LXX": "ἐξ Ἀροὴρ ἥ ἐστιν παρὰ τὸ χεῖλος χειμάρρου Ἀρνών, καὶ τὴν πόλιν τὴν οὖσαν ἐν τῇ φάραγγι, καὶ ἕως ὄρους τοῦ Γαλαάδ· οὐκ ἐγενήθη πόλις ἥτις διέφυγεν ἡμᾶς, τὰς πάσας παρέδωκεν Κύριος ὁ θεὸς ἡμῶν εἰς τὰς χεῖρας ἡμῶν.",
+        "VUL": "ab Aroër, quæ est super ripam torrentis Arnon, oppido quod in valle situm est, usque Galaad. Non fuit vicus et civitas, quæ nostras effugeret manus : omnes tradidit Dominus Deus noster nobis,",
+        "SYN": "От Ароера, который на берегу потока Арнона, и от города, который на долине, до [горы] Галаада не было города, который был бы неприступен для нас: всё предал Господь, Бог наш, [в руки наши].",
+        "NEO": "Depuis Aroër qui est sur le bord de la vallée d’Arnon, et depuis la ville qui est dans la vallée, jusqu’à Galaad, il n’y eut pas de ville trop inaccessible pour nous ; \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, nous les livra toutes.",
+        "NAB": "From Aroer on the edge of the Wadi Arnon and from the city in the wadi itself, as far as Gilead, no city was too well fortified for us to whom the LORD had delivered them up.",
+        "VAT_ES": "Desde Aroer, en la ribera del Arnón –incluyendo la ciudad que está en el valle– hasta Galaad, no hubo para nosotros ninguna ciudad inexpugnable: el Señor. nuestro Dios, nos entregó todo.",
+        "CEI": "Da Aroer, che è sull'orlo della valle dell'Arnon, e dalla città che è sul torrente stesso, fino a Gàlaad, non ci fu città che fosse inaccessibile per noi: il Signore nostro Dio le mise tutte in nostro potere."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "רַ֛ק אֶל אֶ֥רֶץ בְּנֵי עַמּ֖וֹן לֹ֣א קָרָ֑בְתָּ כָּל יַ֞ד נַ֤חַל יַבֹּק֙ וְ/עָרֵ֣י הָ/הָ֔ר וְ/כֹ֥ל אֲשֶׁר צִוָּ֖ה יְהוָ֥ה אֱלֹהֵֽי/נוּ׃",
+        "LXX": "πλὴν ἐγγὺς υἱῶν Ἀμμὼν οὐ προσήλθομεν, πάντα τὰ συνκυροῦντα χειμάρρου Ἰαβὸκ καὶ τὰς πόλεις τὰς ἐν τῇ ὀρεινῇ, καθότι ἐνετείλατο Κύριος ὁ θεὸς ἡμῶν ἡμῖν.",
+        "VUL": "absque terra filiorum Ammon, ad quam non accessimus : et cunctis quæ adjacent torrenti Jeboc, et urbibus montanis, universisque locis, a quibus nos prohibuit Dominus Deus noster.",
+        "SYN": "Только к земле Аммонитян ты не подходил, ни к _местам_ [лежащим] близ потока Иавока, ни к городам [которые] на горе, ни ко всему, к чему не повелел [нам] Господь, Бог наш.",
+        "NEO": "Mais tu n’approchas pas du pays des enfants d’Ammon, ni d’aucun endroit qui est sur le bord du torrent de Jaboc, ni des villes de la montagne, ni d’aucun des lieux dont \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, t’avait défendu de t’emparer.",
+        "NAB": "However, in obedience to the command of the LORD, our God, you did not encroach upon any of the Ammonite land, neither the region bordering on the Wadi Jabbok, nor the cities of the highlands.",
+        "VAT_ES": "Pero no te acercaste al país de los amonitas: toda la ribera del torrente laboc, las ciudades de la montaña y todos los lugares que el Señor, nuestro Dios, te había prohibido.",
+        "CEI": "Ma non ti avvicinasti al paese degli Ammoniti, a tutta la riva dal torrente Iabbok, alle città delle montagne, a tutti i luoghi che il Signore nostro Dio ci aveva proibito di attaccare."
+      }
+    }
+  }
+}

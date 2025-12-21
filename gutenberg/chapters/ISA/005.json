@@ -1,0 +1,555 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_005",
+  "book_key": "ISA",
+  "sequence": 5,
+  "chapter_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אָשִׁ֤ירָה נָּא֙ לִֽ/ידִידִ֔/י שִׁירַ֥ת דּוֹדִ֖/י לְ/כַרְמ֑/וֹ כֶּ֛רֶם הָיָ֥ה לִֽ/ידִידִ֖/י בְּ/קֶ֥רֶן בֶּן שָֽׁמֶן׃",
+        "LXX": "ᾌσω δὴ τῷ ἠγαπημένῳ ᾆσμα τοῦ ἀγαπητοῦ μου τῷ ἀμπελῶνί μου. ἀμπελὼν ἐγενήθη τῷ ἠγαπημένῳ ἐν κέρατι ἐν τόπῳ πίονι.",
+        "VUL": "[Cantabo dilecto meo/ canticum patruelis mei vineæ suæ./ Vinea facta est dilecto meo/ in cornu filio olei./",
+        "SYN": "Воспою Возлюбленному моему песнь Возлюбленного моего о винограднике Его. У Возлюбленного моего был виноградник на вершине утучненной горы,",
+        "NEO": "Je vais chanter pour mon bien-aimé le chant de mon bien-aimé au sujet de sa vigne.",
+        "NAB": "Let me now sing of my friend, my friend's song concerning his vineyard. My friend had a vineyard on a fertile hillside;",
+        "VAT_ES": "Voy a cantar en nombre de mi amigo el canto de mi amado a su viña. Mi amigo tenía una viña en una loma fértil.",
+        "CEI": "Canterò per il mio diletto il mio cantico d'amore per la sua vigna. Il mio diletto possedeva una vigna sopra un fertile colle."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַֽ/יְעַזְּקֵ֣/הוּ וַֽ/יְסַקְּלֵ֗/הוּ וַ/יִּטָּעֵ֨/הוּ֙ שֹׂרֵ֔ק וַ/יִּ֤בֶן מִגְדָּל֙ בְּ/תוֹכ֔/וֹ וְ/גַם יֶ֖קֶב חָצֵ֣ב בּ֑/וֹ וַ/יְקַ֛ו לַ/עֲשׂ֥וֹת עֲנָבִ֖ים וַ/יַּ֥עַשׂ בְּאֻשִֽׁים׃",
+        "LXX": "καὶ φραγμὸν περιέθηκα καὶ ἐχαράκωσα, καὶ ἐφύτευσα ⸂⸆⸃ ἄμπελον σωρήκ, καὶ ᾠκοδόμησα πύργον ἐν μέσῳ αὐτοῦ, καὶ προλήνιον ὤρυξα ἐν αὐτῷ· καὶ ἔμεινα τοῦ ποιῆσαι σταφυλήν, καὶ ἐποίησεν ἀκάνθας.",
+        "VUL": "Et sepivit eam, et lapides elegit ex illa,/ et plantavit eam electam ;/ et ædificavit turrim in medio ejus,/ et torcular exstruxit in ea ;/ et exspectavit ut faceret uvas,/ et fecit labruscas./",
+        "SYN": "и Он обнес его оградою, и очистил его от камней, и насадил в нем отборные виноградные лозы, и построил башню посреди его, и выкопал в нем точило, и ожидал, что он принесет добрые грозды, а он принес дикие ягоды.",
+        "NEO": "Il en remua le sol, il en ôta les pierres, il la planta de ceps exquis. Il bâtit une tour au milieu, et il y creusa aussi un pressoir. Il attendait qu’elle donnât des raisins, mais elle donna du verjus. —",
+        "NAB": "He spaded it, cleared it of stones, and planted the choicest vines; Within it he built a watchtower, and hewed out a wine press. Then he looked for the crop of grapes, but what it yielded was wild grapes.",
+        "VAT_ES": "La cavó, la limpió de piedras y la plantó con cepas escogidas; edificó una torre en medio de ella y también excavó un lagar. El esperaba que diera uvas, pero dio frutos agrios.",
+        "CEI": "Egli l'aveva vangata e sgombrata dai sassi e vi aveva piantato scelte viti; vi aveva costruito in mezzo una torre e scavato anche un tino. Egli aspettò che producesse uva, ma essa fece uva selvatica."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֛ה יוֹשֵׁ֥ב יְרוּשָׁלִַ֖ם וְ/אִ֣ישׁ יְהוּדָ֑ה שִׁפְטוּ נָ֕א בֵּינִ֖/י וּ/בֵ֥ין כַּרְמִֽ/י׃",
+        "LXX": "καὶ νῦν, οἱ ἐνοικοῦντες ἐν Ἰερουσαλὴμ καὶ ἄνθρωπος τοῦ Ἰούδα, κρίνατε ἐν ἐμοὶ καὶ ἀνὰ μέσον τοῦ ἀμπελῶνός μου.",
+        "VUL": "Nunc ergo, habitatores Jerusalem/ et viri Juda,/ judicate inter me/ et vineam meam./",
+        "SYN": "И ныне, жители Иерусалима и мужи Иуды, рассудите Меня с виноградником Моим.",
+        "NEO": "« Et maintenant, habitants de Jérusalem et hommes de Juda, jugez, je vous prie, entre moi et entre ma vigne !",
+        "NAB": "Now, inhabitants of Jerusalem and men of Judah, judge between me and my vineyard:",
+        "VAT_ES": "Y ahora, habitantes de Jerusalén y hombres de Judá, sean ustedes los jueces entre mi viña y yo.",
+        "CEI": "Or dunque, abitanti di Gerusalemme e uomini di Giuda, siate voi giudici fra me e la mia vigna."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "מַה לַּ/עֲשׂ֥וֹת עוֹד֙ לְ/כַרְמִ֔/י וְ/לֹ֥א עָשִׂ֖יתִי בּ֑/וֹ מַדּ֧וּעַ קִוֵּ֛יתִי לַ/עֲשׂ֥וֹת עֲנָבִ֖ים וַ/יַּ֥עַשׂ בְּאֻשִֽׁים׃",
+        "LXX": "τί ποιήσω ἔτι τῷ ἀμπελῶνί μου, καὶ οὐκ ἐποίησα αὐτῷ; διότι ἔμεινα τοῦ ποιῆσαι σταφυλήν, ἐποίησεν δὲ ἀκάνθας.",
+        "VUL": "Quid est quod debui ultra facere vineæ meæ,/ et non feci ei ?/ an quod exspectavi ut faceret uvas,/ et fecit labruscas ?/",
+        "SYN": "Что еще надлежало бы сделать для виноградника Моего, чего Я не сделал ему? Почему, когда Я ожидал, что он принесет добрые грозды, он принес дикие ягоды?",
+        "NEO": "Qu’y avait-il à faire de plus à ma vigne, que je n’aie pas fait pour elle ? Pourquoi, ai-je attendu qu’elle donnât des raisins, et n’a-t-elle donné que du verjus ?",
+        "NAB": "What more was there to do for my vineyard that I had not done? Why, when I looked for the crop of grapes, did it bring forth wild grapes?",
+        "VAT_ES": "&iquest;Qué más se podía hacer por mi viña que yo no lo haya hecho? Si esperaba que diera uvas, &iquest;por qué dio frutos agrios?",
+        "CEI": "Che cosa dovevo fare ancora alla mia vigna che io non abbia fatto? Perché, mentre attendevo che producesse uva, essa ha fatto uva selvatica?"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/עַתָּה֙ אוֹדִֽיעָה נָּ֣א אֶתְ/כֶ֔ם אֵ֛ת אֲשֶׁר אֲנִ֥י עֹשֶׂ֖ה לְ/כַרְמִ֑/י הָסֵ֤ר מְשׂוּכָּת/וֹ֙ וְ/הָיָ֣ה לְ/בָעֵ֔ר פָּרֹ֥ץ גְּדֵר֖/וֹ וְ/הָיָ֥ה לְ/מִרְמָֽס׃",
+        "LXX": "νῦν δὲ ἀναγγελῶ ὑμῖν τί ποιήσω τῷ ἀμπελῶνί μου. ἀφελῶ τὸν φραγμὸν αὐτοῦ καὶ ἔσται εἰς διαρπαγήν, καὶ καθελῶ τὸν τοῖχον αὐτοῦ καὶ ἔσται εἰς καταπάτημα.",
+        "VUL": "Et nunc ostendam vobis/ quid ego faciam vineæ meæ :/ auferam sepem ejus,/ et erit in direptionem ;/ diruam maceriam ejus,/ et erit in conculcationem./",
+        "SYN": "Итак Я скажу вам, что сделаю с виноградником Моим: отниму у него ограду, и будет он опустошаем; разрушу стены его, и будет попираем,",
+        "NEO": "« Et maintenant, je vous ferai connaître ce que je vais faire à ma vigne : j’arracherai sa haie, et elle sera broutée ; j’abattrai sa clôture, et elle sera foulée aux pieds.",
+        "NAB": "Now, I will let you know what I mean to do to my vineyard: Take away its hedge, give it to grazing, break through its wall, let it be trampled!",
+        "VAT_ES": "Y ahora les haré conocer lo que haré con mi viña; Quitaré su valla, y será destruida, derribaré su cerco y será pisoteada.",
+        "CEI": "Ora voglio farvi conoscere ciò che sto per fare alla mia vigna: toglierò la sua siepe e si trasformerà in pascolo; demolirò il suo muro di cinta e verrà calpestata."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/אֲשִׁיתֵ֣/הוּ בָתָ֗ה לֹ֤א יִזָּמֵר֙ וְ/לֹ֣א יֵעָדֵ֔ר וְ/עָלָ֥ה שָׁמִ֖יר וָ/שָׁ֑יִת וְ/עַ֤ל הֶ/עָבִים֙ אֲצַוֶּ֔ה מֵ/הַמְטִ֥יר עָלָ֖י/ו מָטָֽר׃",
+        "LXX": "καὶ ἀνήσω τὸν ἀμπελῶνά μου, καὶ οὐ μὴ τμηθῇ οὐδὲ μὴ σκαφῇ, καὶ ἀναβήσονται εἰς αὐτὸν ὡς εἰς χέρσον ἄκανθαι. καὶ ταῖς νεφέλαις ἐντελοῦμαι τοῦ μὴ βρέξαι εἰς αὐτὸν ὑετόν.",
+        "VUL": "Et ponam eam desertam ;/ non putabitur et non fodietur :/ et ascendent vepres et spinæ,/ et nubibus mandabo/ ne pluant super eam imbrem./",
+        "SYN": "и оставлю его в запустении: не будут ни обрезывать, ни вскапывать его, - и зарастет он тернами и волчцами, и повелю облакам не проливать на него дождя.",
+        "NEO": "J’en ferai un désert ; et elle ne sera plus taillée, ni cultivée ; les ronces et les épines y croîtront, et je commanderai aux nuées de ne plus laisser tomber la pluie sur elle. » —",
+        "NAB": "Yes, I will make it a ruin: it shall not be pruned or hoed, but overgrown with thorns and briers; I will command the clouds not to send rain upon it.",
+        "VAT_ES": "La convertiré en una ruina, y no será podada ni escardada. Crecerán los abrojos y los cardos, y mandaré a las nubes que no derramen, lluvia sobre ella.",
+        "CEI": "La renderò un deserto, non sarà potata né vangata e vi cresceranno rovi e pruni; alle nubi comanderò di non mandarvi la pioggia."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּ֣י כֶ֜רֶם יְהוָ֤ה צְבָאוֹת֙ בֵּ֣ית יִשְׂרָאֵ֔ל וְ/אִ֣ישׁ יְהוּדָ֔ה נְטַ֖ע שַׁעֲשׁוּעָ֑י/ו וַ/יְקַ֤ו לְ/מִשְׁפָּט֙ וְ/הִנֵּ֣ה מִשְׂפָּ֔ח לִ/צְדָקָ֖ה וְ/הִנֵּ֥ה צְעָקָֽה׃",
+        "LXX": "ὁ γὰρ ἀμπελὼν Κυρίου σαβαὼθ οἶκος τοῦ Ἰσραήλ, καὶ ἄνθρωπος τοῦ Ἰούδα νεόφυτον ἠγαπημένον· ἔμεινα τοῦ ποιῆσαι κρίσιν, ἐποίησεν δὲ ἀνομίαν καὶ οὐ δικαιοσύνην ἀλλὰ κραυγήν.",
+        "VUL": "Vinea enim Domini exercituum/ domus Israël est ;/ et vir Juda/ germen ejus delectabile :/ et exspectavi ut faceret judicium,/ et ecce iniquitas ;/ et justitiam, et ecce clamor.]",
+        "SYN": "Виноградник Господа Саваофа есть дом Израилев, и мужи Иуды - любимое насаждение Его. И ждал Он правосудия, но вот - кровопролитие; _ждал_ правды, и вот - вопль.",
+        "NEO": "Car la vigne de \\+w Yahweh|strong=\"H3068\"\\+w** des armées, c’est la maison d’Israël, et les hommes de Juda sont le plant qu’il chérissait ; il en attendait la droiture, voici du sang versé ; la justice, et voici le cri de détresse.",
+        "NAB": "The vineyard of the LORD of hosts is the house of Israel, and the men of Judah are his cherished plant; He looked for judgment, but see, bloodshed! for justice, but hark, the outcry!",
+        "VAT_ES": "Porque la viña del Señor de los ejércitos es la casa de Israel, y los hombres de Judá son su plantación predilecta. &iexcl;El esperó de ellos equidad. y hay efusión de sangre; esperó justicia, y hay gritos de angustia!",
+        "CEI": "Ebbene, la vigna del Signore degli eserciti è la casa di Israele; gli abitanti di Giuda la sua piantagione preferita. Egli si aspettava giustizia ed ecco spargimento di sangue, attendeva rettitudine ed ecco grida di oppressi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "ה֗וֹי מַגִּיעֵ֥י בַ֨יִת֙ בְּ/בַ֔יִת שָׂדֶ֥ה בְ/שָׂדֶ֖ה יַקְרִ֑יבוּ עַ֚ד אֶ֣פֶס מָק֔וֹם וְ/הֽוּשַׁבְתֶּ֥ם לְ/בַדְּ/כֶ֖ם בְּ/קֶ֥רֶב הָ/אָֽרֶץ׃",
+        "LXX": "Οὐαὶ οἱ συνάπτοντες οἰκίαν πρὸς οἰκίαν, καὶ ἀγρὸν πρὸς ἀγρὸν ἐγγίζοντες, ἵνα τοῦ πλησίον ἀφέλωνταί τι· μὴ οἰκήσετε μόνοι ἐπὶ τῆς γῆς;",
+        "VUL": "[Væ qui conjungitis domum ad domum,/ et agrum agro copulatis/ usque ad terminum loci !/ Numquid habitabitis vos soli/ in medio terræ ?/",
+        "SYN": "Горе вам, прибавляющие дом к дому, присоединяющие поле к полю, так что _другим_ не остается места, как будто вы одни поселены на земле.",
+        "NEO": "Malheur à ceux qui ajoutent maison à maison, qui joignent champ à champ, jusqu’à ce qu’il n’y ait plus d’espace, et qu’ils habitent seuls au milieu du pays !",
+        "NAB": "Woe to you who join house to house, who connect field with field, Till no room remains, and you are left to dwell alone in the midst of the land!",
+        "VAT_ES": "&iexcl;Ay de los que acumulan una casa tras otra y anexionan un campo a otro, hasta no dejar más espacio y habitar ustedes solos en medio del país!",
+        "CEI": "Guai a voi, che aggiungete casa a casa e unite campo a campo, finché non vi sia più spazio, e così restate soli ad abitare nel paese."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "בְּ/אָזְנָ֖/י יְהוָ֣ה צְבָא֑וֹת אִם לֹ֞א בָּתִּ֤ים רַבִּים֙ לְ/שַׁמָּ֣ה יִֽהְי֔וּ גְּדֹלִ֥ים וְ/טוֹבִ֖ים מֵ/אֵ֥ין יוֹשֵֽׁב׃",
+        "LXX": "ἠκούσθη γὰρ εἰς τὰ ὦτα Κυρίου σαβαὼθ ταῦτα· ἐὰν γὰρ γένωνται οἰκίαι πολλαί, εἰς ἔρημον ἔσονται· μεγάλαι καὶ καλαί, καὶ οὐκ ἔσονται οἱ ἐνοικοῦντες ἐν αὐταῖς.",
+        "VUL": "In auribus meis sunt hæc,/ dicit Dominus exercituum ;/ nisi domus multæ desertæ fuerint,/ grandes et pulchræ, absque habitatore./",
+        "SYN": "В уши мои _сказал_ Господь Саваоф: многочисленные домы эти будут пусты, большие и красивые - без жителей;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** des armées a dit cette parole à mes oreilles : Oui, ces nombreuses maisons seront désertes ; grandes et belles, elles n’auront plus d’habitants.",
+        "NAB": "In my hearing the LORD of hosts has sworn: Many houses shall be in ruins, large ones and fine, with no one to live in them.",
+        "VAT_ES": "El Señor de los ejércitos lo ha jurado a mi oído: Sí, muchas mansiones, grandes y hermosas, quedarán desoladas, por falta de habitantes.",
+        "CEI": "Ho udito con gli orecchi il Signore degli eserciti: \"Certo, molti palazzi diventeranno una desolazione, grandi e belli saranno senza abitanti\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּ֗י עֲשֶׂ֨רֶת֙ צִמְדֵּי כֶ֔רֶם יַעֲשׂ֖וּ בַּ֣ת אֶחָ֑ת וְ/זֶ֥רַע חֹ֖מֶר יַעֲשֶׂ֥ה אֵיפָֽה׃",
+        "LXX": "οὗ γὰρ ἐργῶνται δέκα ζεύγη βοῶν, ποιήσει κεράμιον ἕν, καὶ ὁ σπείρων ἀρτάβας ἕξ ποιήσει μέτρα τρία.",
+        "VUL": "Decem enim jugera vinearum facient lagunculam unam,/ et triginta modii sementis facient modios tres./",
+        "SYN": "десять участков в винограднике дадут один бат, и хомер посеянного зерна едва принесет ефу.",
+        "NEO": "Car dix arpents de vignes ne produiront qu’un bath, un homer de semence ne produira qu’un épha.",
+        "NAB": "Ten acres of vineyard shall yield but one liquid measure, And a homer of seed shall yield but an ephah.",
+        "VAT_ES": "Porque diez yugadas de viña no darán más que un tonel, y diez medidas de semillas producirán una sola.",
+        "CEI": "Poiché dieci iugeri di vigna produrranno solo un bat e un comer di seme produrrà un'efa."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "ה֛וֹי מַשְׁכִּימֵ֥י בַ/בֹּ֖קֶר שֵׁכָ֣ר יִרְדֹּ֑פוּ מְאַחֲרֵ֣י בַ/נֶּ֔שֶׁף יַ֖יִן יַדְלִיקֵֽ/ם׃",
+        "LXX": "Οὐαὶ οἱ ἐγειρόμενοι τὸ πρωὶ καὶ τὸ σίκερα διώκοντες, οἱ μένοντες τὸ ὀψέ· ὁ γὰρ οἶνος αὐτοὺς συνκαύσει.",
+        "VUL": "Væ qui consurgitis mane/ ad ebrietatem sectandam,/ et potandum usque ad vesperam,/ ut vino æstuetis !/",
+        "SYN": "Горе тем, которые с раннего утра ищут сикеры и до позднего вечера разгорячают себя вином;",
+        "NEO": "Malheur à ceux qui courent dès le matin après les boissons enivrantes, et qui, le soir, prolongent leur orgie, échauffés par le vin !",
+        "NAB": "Woe to those who demand strong drink as soon as they rise in the morning, And linger into the night while wine inflames them!",
+        "VAT_ES": "&iexcl;Ay de los que madrugan para correr tras la bebida, y hasta muy entrada la noche se acaloran con el vino!",
+        "CEI": "Guai a coloro che si alzano presto al mattino e vanno in cerca di bevande inebrianti e si attardano alla sera accesi in volto dal vino."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֨ה כִנּ֜וֹר וָ/נֶ֗בֶל תֹּ֧ף וְ/חָלִ֛יל וָ/יַ֖יִן מִשְׁתֵּי/הֶ֑ם וְ/אֵ֨ת פֹּ֤עַל יְהוָה֙ לֹ֣א יַבִּ֔יטוּ וּ/מַעֲשֵׂ֥ה יָדָ֖י/ו לֹ֥א רָאֽוּ׃",
+        "LXX": "μετὰ γὰρ κιθάρας καὶ ψαλτηρίου καὶ τυμπάνων καὶ αὐλῶν τὸν οἶνον πίνουσιν, τὰ δὲ ἔργα Κυρίου οὐκ ἐμβλέπουσιν, καὶ τὰ ἔργα τῶν χειρῶν αὐτοῦ οὐ κατανοοῦσιν.",
+        "VUL": "Cithara, et lyra, et tympanum,/ et tibia, et vinum in conviviis vestris ;/ et opus Domini non respicitis,/ nec opera manuum ejus consideratis./",
+        "SYN": "и цитра и гусли, тимпан и свирель и вино на пиршествах их; а на дела Господа они не взирают и о деяниях рук Его не помышляют.",
+        "NEO": "La harpe et le luth, le tambourin, la flûte et le vin, voilà leurs festins ; mais ils ne prennent pas garde à l’œuvre de \\+w Yahweh|strong=\"H3068\"\\+w**, et ils ne voient pas l’ouvrage de ses mains.",
+        "NAB": "With harp and lyre, timbrel and flute, they feast on wine; But what the LORD does, they regard not, the work of his hands they see not.",
+        "VAT_ES": "Hay cítara y arpa, tamboriles y flautas y vino en sus banquetes; pero ellos no miran la acción del Señor ni ven la obra de sus manos.",
+        "CEI": "Ci sono cetre e arpe, timpani e flauti e vino per i loro banchetti; ma non badano all'azione del Signore, non vedono l'opera delle sue mani."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "לָ/כֵ֛ן גָּלָ֥ה עַמִּ֖/י מִ/בְּלִי דָ֑עַת וּ/כְבוֹד/וֹ֙ מְתֵ֣י רָעָ֔ב וַ/הֲמוֹנ֖/וֹ צִחֵ֥ה צָמָֽא׃",
+        "LXX": "τοίνυν αἰχμάλωτος ὁ λαός μου ἐγενήθη διὰ τὸ μὴ εἰδέναι αὐτοὺς τὸν κύριον, καὶ πλῆθος ἐγενήθη νεκρῶν διὰ λιμὸν καὶ δίψος ὕδατος.",
+        "VUL": "Propterea captivus ductus est populus meus,/ quia non habuit scientiam,/ et nobiles ejus interierunt fame,/ et multitudo ejus siti exaruit./",
+        "SYN": "За то народ мой пойдет в плен непредвиденно, и вельможи его будут голодать, и богачи его будут томиться жаждою.",
+        "NEO": "C’est pourquoi mon peuple s’en ira en exil sans s’en douter ; sa noblesse deviendra une troupe affamée, et sa multitude séchera de soif.",
+        "NAB": "Therefore my people go into exile, because they do not understand; Their nobles die of hunger, and their masses are parched with thirst.",
+        "VAT_ES": "Por eso mi pueblo será deportado por falta de conocimiento; sus nobles morirán de hambre y su muchedumbre se abrasará de sed.",
+        "CEI": "Perciò il mio popolo sarà deportato senza che neppure lo sospetti. I suoi grandi periranno di fame, il suo popolo sarà arso dalla sete."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לָ/כֵ֗ן הִרְחִ֤יבָה שְּׁאוֹל֙ נַפְשָׁ֔/הּ וּ/פָעֲרָ֥ה פִ֖י/הָ לִ/בְלִי חֹ֑ק וְ/יָרַ֨ד הֲדָרָ֧/הּ וַ/הֲמוֹנָ֛/הּ וּ/שְׁאוֹנָ֖/הּ וְ/עָלֵ֥ז בָּֽ/הּ׃",
+        "LXX": "καὶ ἐπλάτυνεν ὁ ᾅδης τὴν ψυχὴν ⸆ αὐτοῦ καὶ διήνοιξεν τὸ στόμα αὐτοῦ τοῦ μὴ διαλιπεῖν, καὶ καταβήσονται οἱ ἔνδοξοι καὶ οἱ μεγάλοι καὶ οἱ πλούσιοι καὶ οἱ λοιμοὶ αὐτῆς.",
+        "VUL": "Propterea dilatavit infernus animam suam,/ et aperuit os suum absque ullo termino ;/ et descendent fortes ejus,/ et populus ejus, et sublimes gloriosique ejus, ad eum./",
+        "SYN": "За то преисподняя расширилась и без меры раскрыла пасть свою: и сойдет _туда_ слава их и богатство их, и шум их и _все,_ что веселит их.",
+        "NEO": "C’est pourquoi le schéol se dilate, et ouvre sa bouche sans mesure ; elle y descend, la magnificence de Sion, avec sa multitude bruyante et joyeuse.",
+        "NAB": "Therefore the nether world enlarges its throat and opens its maw without limit; Down go their nobility and their masses, their throngs and their revelry.",
+        "VAT_ES": "Por eso el Abismo dilata su garganta, abre sus fauces desmesuradamente, y allí se precipitan el esplendor de la ciudad y su muchedumbre, su tumulto y sus festejos.",
+        "CEI": "Pertanto gli inferi dilatano le fauci, spalancano senza misura la bocca. Vi precipitano dentro la nobiltà e il popolo, il frastuono e la gioia della città."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּשַּׁ֥ח אָדָ֖ם וַ/יִּשְׁפַּל אִ֑ישׁ וְ/עֵינֵ֥י גְבֹהִ֖ים תִּשְׁפַּֽלְנָה׃",
+        "LXX": "καὶ ταπεινωθήσεται ἄνθρωπος, καὶ ἀτιμασθήσεται ἀνήρ, καὶ οἱ ὀφθαλμοὶ οἱ μετέωροι ταπεινωθήσονται·",
+        "VUL": "Et incurvabitur homo, et humiliabitur vir,/ et oculi sublimium deprimentur./",
+        "SYN": "И преклонится человек, и смирится муж, и глаза гордых поникнут;",
+        "NEO": "Le mortel sera humilié, l’homme sera abaissé, et les yeux des superbes seront abattus.",
+        "NAB": "Men shall be abased, each one brought low, and the eyes of the haughty lowered,",
+        "VAT_ES": "El hombre será doblegado, el mortal, humillado, y serán humillados los ojos altaneros;",
+        "CEI": "L'uomo sarà umiliato, il mortale sarà abbassato, gli occhi dei superbi si abbasseranno."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יִּגְבַּ֛ה יְהוָ֥ה צְבָא֖וֹת בַּ/מִּשְׁפָּ֑ט וְ/הָ/אֵל֙ הַ/קָּד֔וֹשׁ נִקְדָּ֖שׁ בִּ/צְדָקָֽה׃",
+        "LXX": "καὶ ὑψωθήσεται Κύριος σαβαὼθ ἐν κρίματι, καὶ ὁ θεὸς ὁ ἅγιος δοξασθήσεται ἐν δικαιοσύνῃ·",
+        "VUL": "Et exaltabitur Dominus exercituum in judicio ;/ et Deus sanctus sanctificabitur in justitia./",
+        "SYN": "а Господь Саваоф превознесется в суде, и Бог Святый явит святость Свою в правде.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** des armées apparaîtra grand dans le jugement, et le Dieu saint apparaîtra saint dans la justice.",
+        "NAB": "But the LORD of hosts shall be exalted by his judgment, and God the Holy shall be shown holy by his justice.",
+        "VAT_ES": "pero el Señor de los ejércitos será exaltado por su rectitud, y el Dios santo se mostrará santo por su justicia.",
+        "CEI": "Sarà esaltato il Signore degli eserciti nel giudizio e il Dio santo si mostrerà santo nella giustizia."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/רָע֥וּ כְבָשִׂ֖ים כְּ/דָבְרָ֑/ם וְ/חָרְב֥וֹת מֵחִ֖ים גָּרִ֥ים יֹאכֵֽלוּ׃",
+        "LXX": "καὶ βοσκηθήσονται οἱ διηρπασμένοι ὡς ταῦροι, καὶ τὰς ἐρήμους τῶν ἀπειλημμένων ἄρνες φάγονται.",
+        "VUL": "Et pascentur agni juxta ordinem suum,/ et deserta in ubertatem versa advenæ comedent.]",
+        "SYN": "И будут пастись овцы по своей воле, и чужие будут питаться оставленными жирными пажитями богатых.",
+        "NEO": "Des brebis paîtront comme sur leur pâturage, et des étrangers dévoreront les champs dévastés des riches.",
+        "NAB": "Lambs shall graze there at pasture, and kids shall eat in the ruins of the rich.",
+        "VAT_ES": "Los corderos pacerán como en sus praderas y en las ruinas engordarán los cabritos.",
+        "CEI": "Allora vi pascoleranno gli agnelli come nei loro prati, sulle rovine brucheranno i capretti."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "ה֛וֹי מֹשְׁכֵ֥י הֶֽ/עָוֺ֖ן בְּ/חַבְלֵ֣י הַ/שָּׁ֑וְא וְ/כַ/עֲב֥וֹת הָ/עֲגָלָ֖ה חַטָּאָֽה׃",
+        "LXX": "Οὐαὶ οἱ ἐπισπώμενοι τὰς ἁμαρτίας ὡς σχοινίῳ μακρῷ, καὶ ὡς ζυγοῦ ἱμάντι δαμάλεως τὰς ἀνομίας,",
+        "VUL": "[Væ qui trahitis iniquitatem/ in funiculis vanitatis,/ et quasi vinculum plaustri peccatum !/",
+        "SYN": "Горе тем, которые влекут на себя беззаконие вервями суетности, и грех - как бы ремнями колесничными;",
+        "NEO": "Malheur à ceux qui tirent l’iniquité avec des cordes de mensonge, et le péché comme avec les traits d’un chariot !",
+        "NAB": "Woe to those who tug at guilt with cords of perversity, and at sin as if with cart ropes!",
+        "VAT_ES": "&iexcl;Ay de los que arrastran la culpa con las cuerdas de la falsedad, y tiran del pecado como con las riendas de un carro!",
+        "CEI": "Guai a coloro che si tirano addosso il castigo con corde da buoi e il peccato con funi da carro,"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "הָ/אֹמְרִ֗ים יְמַהֵ֧ר יָחִ֛ישָׁ/ה מַעֲשֵׂ֖/הוּ לְמַ֣עַן נִרְאֶ֑ה וְ/תִקְרַ֣ב וְ/תָב֗וֹאָ/ה עֲצַ֛ת קְד֥וֹשׁ יִשְׂרָאֵ֖ל וְ/נֵדָֽעָה׃",
+        "LXX": "οἱ λέγοντες Τὸ τάχος ἐγγισάτω ἃ ποιήσει, ἵνα εἰδῶμεν, καὶ ἐλθάτω ἡ βουλὴ τοῦ ἁγίου Ἰσραήλ, ἵνα γνῶμεν.",
+        "VUL": "qui dicitis : Festinet,/ et cito veniat opus ejus, ut videamus ;/ et appropiet, et veniat/ consilium sancti Israël,/ et sciemus illud !/",
+        "SYN": "которые говорят: \"пусть Он поспешит и ускорит дело Свое, чтобы мы видели, и пусть приблизится и придет в исполнение совет Святаго Израилева, чтобы мы узнали!\"",
+        "NEO": "Qui disent : « Qu’il se dépêche, qu’il hâte son œuvre, afin que nous la voyions ! Qu’il s’approche et s’exécute, le décret du Saint d’Israël, et que nous sachions !... »",
+        "NAB": "To those who say, \"Let him make haste and speed his work, that we may see it; On with the plan of the Holy One of Israel! let it come to pass, that we may know it!\"",
+        "VAT_ES": "Los que dicen: «&iexcl;Que se apure. que haga pronto su obra, para que la veamos que se acerque y llegue el designio del Santo de Israel, para que podamos conocerlo!».",
+        "CEI": "che dicono: \"Faccia presto, acceleri pure l'opera sua, perché la vediamo; si facciano più vicini e si compiano i progetti del Santo di Israele, perché li conosciamo\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "ה֣וֹי הָ/אֹמְרִ֥ים לָ/רַ֛ע ט֖וֹב וְ/לַ/טּ֣וֹב רָ֑ע שָׂמִ֨ים חֹ֤שֶׁךְ לְ/אוֹר֙ וְ/א֣וֹר לְ/חֹ֔שֶׁךְ שָׂמִ֥ים מַ֛ר לְ/מָת֖וֹק וּ/מָת֥וֹק לְ/מָֽר׃",
+        "LXX": "Οὐαὶ οἱ λέγοντες τὸ πονηρὸν καλὸν καὶ τὸ καλὸν πονηρόν, οἱ τιθέντες τὸ σκότος φῶς καὶ τὸ φῶς σκότος, οἱ τιθέντες τὸ πικρὸν γλυκὺ καὶ τὸ γλυκὺ πικρόν.",
+        "VUL": "Væ qui dicitis malum bonum,/ et bonum malum ;/ ponentes tenebras lucem,/ et lucem tenebras ;/ ponentes amarum in dulce,/ et dulce in amarum !/",
+        "SYN": "Горе тем, которые зло называют добром, и добро - злом, тьму почитают светом, и свет - тьмою, горькое почитают сладким, и сладкое - горьким!",
+        "NEO": "Malheur à ceux qui appellent le mal bien, et le bien mal, qui font des ténèbres la lumière, et de la lumière les ténèbres, qui font ce qui est doux amer, et ce qui est amer doux !",
+        "NAB": "Woe to those who call evil good, and good evil, who change darkness into light, and light into darkness, who change bitter into sweet, and sweet into bitter!",
+        "VAT_ES": "&iexcl;Ay de los que llaman bien al mal y mal al bien. de los que cambian las tinieblas en luz y la luz en tinieblas. de los que vuelven dulce lo amargo y amargo lo dulce!",
+        "CEI": "Guai a coloro che chiamano bene il male e male il bene, che cambiano le tenebre in luce e la luce in tenebre, che cambiano l'amaro in dolce e il dolce in amaro."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "ה֖וֹי חֲכָמִ֣ים בְּ/עֵֽינֵי/הֶ֑ם וְ/נֶ֥גֶד פְּנֵי/הֶ֖ם נְבֹנִֽים׃",
+        "LXX": "Οὐαὶ οἱ συνετοὶ ἐν ἑαυτοῖς καὶ ἐνώπιον αὑτῶν ἐπιστήμονες.",
+        "VUL": "Væ qui sapientes estis in oculis vestris,/ et coram vobismetipsis prudentes./",
+        "SYN": "Горе тем, которые мудры в своих глазах и разумны пред самими собою!",
+        "NEO": "Malheur à ceux qui sont sages à leurs propres yeux, et intelligents à leur propre sens !",
+        "NAB": "Woe to those who are wise in their own sight, and prudent in their own esteem!",
+        "VAT_ES": "&iexcl;Ay de los que se tienen por sabios y se creen muy inteligentes!",
+        "CEI": "Guai a coloro che si credono sapienti e si reputano intelligenti."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "ה֕וֹי גִּבּוֹרִ֖ים לִ/שְׁתּ֣וֹת יָ֑יִן וְ/אַנְשֵׁי חַ֖יִל לִ/מְסֹ֥ךְ שֵׁכָֽר׃",
+        "LXX": "Οὐαὶ οἱ ἰσχύοντες ὑμῶν οἱ πίνοντες τὸν οἶνον, καὶ οἱ δυνάσται οἱ κεραννύντες τὸ σίκερα,",
+        "VUL": "Væ qui potentes estis ad bibendum vinum,/ et viri fortes ad miscendam ebrietatem !/",
+        "SYN": "Горе тем, которые храбры пить вино и сильны приготовлять крепкий напиток,",
+        "NEO": "Malheur à ceux qui sont des héros pour boire le vin, et des vaillants pour mêler les liqueurs fortes !",
+        "NAB": "Woe to the champions at drinking wine, the valiant at mixing strong drink!",
+        "VAT_ES": "&iexcl;Ay de los valientes para beber vino y de los campeones para mezclar bebidas,",
+        "CEI": "Guai a coloro che sono gagliardi nel bere vino, valorosi nel mescere bevande inebrianti,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "מַצְדִּיקֵ֥י רָשָׁ֖ע עֵ֣קֶב שֹׁ֑חַד וְ/צִדְקַ֥ת צַדִּיקִ֖ים יָסִ֥ירוּ מִמֶּֽ/נּוּ׃",
+        "LXX": "οἱ δικαιοῦντες τὸν ἀσεβῆ ἕνεκεν δώρων καὶ τὸ δίκαιον τοῦ δικαίου αἴροντες.",
+        "VUL": "qui justificatis impium pro muneribus,/ et justitiam justi aufertis ab eo !/",
+        "SYN": "которые за подарки оправдывают виновного и правых лишают законного!",
+        "NEO": "A ceux qui justifient le méchant pour un présent, et qui privent les justes de leur droit !",
+        "NAB": "To those who acquit the guilty for bribes, and deprive the just man of his rights!",
+        "VAT_ES": "de los que absuelven por soborno al culpable y privan al justo de su derecho!",
+        "CEI": "a coloro che assolvono per regali un colpevole e privano del suo diritto l'innocente."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "לָ/כֵן֩ כֶּ/אֱכֹ֨ל קַ֜שׁ לְשׁ֣וֹן אֵ֗שׁ וַ/חֲשַׁ֤שׁ לֶֽהָבָה֙ יִרְפֶּ֔ה שָׁרְשָׁ/ם֙ כַּ/מָּ֣ק יִֽהְיֶ֔ה וּ/פִרְחָ֖/ם כָּ/אָבָ֣ק יַעֲלֶ֑ה כִּ֣י מָאֲס֗וּ אֵ֚ת תּוֹרַת֙ יְהוָ֣ה צְבָא֔וֹת וְ/אֵ֛ת אִמְרַ֥ת קְדֽוֹשׁ יִשְׂרָאֵ֖ל נִאֵֽצוּ׃",
+        "LXX": "διὰ τοῦτο ὃν τρόπον καυθήσεται καλάμη ὑπὸ ἄνθρακος πυρός, καὶ συνκαυθήσεται ὑπὸ φλογὸς ἀνειμένης, ἡ ῥίζα αὐτῶν ὡς χνοῦς ἔσται, καὶ τὸ ἄνθος αὐτῶν ὡς κονιορτὸς ἀναβήσεται· οὐ γὰρ ἠθέλησαν τὸν νόμον Κυρίου σαβαώθ, ἀλλὰ τὸ λόγιον τοῦ ἁγίου Ἰσραὴλ παρώξυναν.",
+        "VUL": "Propter hoc, sicut devorat stipulam lingua ignis,/ et calor flammæ exurit,/ sic radix eorum quasi favilla erit,/ et germen eorum ut pulvis ascendet ;/ abjecerunt enim legem Domini exercituum,/ et eloquium sancti Israël blasphemaverunt./",
+        "SYN": "За то, как огонь съедает солому, и пламя истребляет сено, так истлеет корень их, и цвет их разнесется, как прах; потому что они отвергли закон Господа Саваофа и презрели слово Святаго Израилева.",
+        "NEO": "C’est pourquoi, comme la langue du feu dévore le chaume, et comme l’herbe sèche s’abîme dans la flamme, leur racine sera semblable à la pourriture, et leur fleur sera emportée comme la poussière ; car ils ont rejeté la loi de \\+w Yahweh|strong=\"H3068\"\\+w** des armées, et méprisé la parole du Saint d’Israël.",
+        "NAB": "Therefore, as the tongue of fire licks up stubble, as dry grass shrivels in the flame, Even so their root shall become rotten and their blossom scatter like dust; For they have spurned the law of the LORD of hosts, and scorned the word of the Holy One of Israel.",
+        "VAT_ES": "Por eso, como la lengua de fuego devora la paja y la hierba seca se consume en la llama, así su raíz será como podredumbre y su brote se disipará como el polvo, porque rechazaron la ley del Señor de los ejércitos y despreciaron la palabra del Santo de Israel.",
+        "CEI": "Perciò, come una lingua di fuoco divora la stoppia e una fiamma consuma la paglia, così le loro radici diventeranno un marciume e la loro fioritura volerà via come polvere, perché hanno rigettato la legge del Signore degli eserciti, hanno disprezzato la parola del Santo di Israele."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "עַל כֵּ֡ן חָרָה֩ אַף יְהוָ֨ה בְּ/עַמּ֜/וֹ וַ/יֵּ֣ט יָד֧/וֹ עָלָ֣י/ו וַ/יַּכֵּ֗/הוּ וַֽ/יִּרְגְּזוּ֙ הֶֽ/הָרִ֔ים וַ/תְּהִ֧י נִבְלָתָ֛/ם כַּ/סּוּחָ֖ה בְּ/קֶ֣רֶב חוּצ֑וֹת בְּ/כָל זֹאת֙ לֹא שָׁ֣ב אַפּ֔/וֹ וְ/ע֖וֹד יָד֥/וֹ נְטוּיָֽה׃",
+        "LXX": "καὶ ἐθυμώθη ὀργῇ Κύριος σαβαὼθ ἐπὶ τὸν λαὸν αὐτοῦ, καὶ ἐπέβαλεν τὴν χεῖρα ἐπ’ αὐτοὺς καὶ ἐπάταξεν αὐτούς· καὶ παρωξύνθη τὰ ὄρη, καὶ ἐγενήθη τὰ θνησιμαῖα αὐτῶν ὡς κοπρία ἐν μέσῳ ὁδοῦ. καὶ ἐν πᾶσι τούτοις οὐκ ἀπεστράφη ὁ θυμὸς αὐτοῦ, ἀλλὰ ἔτι ἡ χεὶρ ὑψηλή.",
+        "VUL": "Ideo iratus est furor Domini in populum suum,/ et extendit manum suam super eum, et percussit eum :/ et conturbati sunt montes,/ et facta sunt morticina eorum quasi stercus in medio platearum./ In his omnibus non est adversus furor ejus,/ sed adhuc manus ejus extenta./",
+        "SYN": "За то возгорится гнев Господа на народ Его, и прострет Он руку Свою на него и поразит его, так что содрогнутся горы, и трупы их будут как помет на улицах. И при всем этом гнев Его не отвратится, и рука Его еще будет простерта.",
+        "NEO": "C’est pourquoi la colère de \\+w Yahweh|strong=\"H3068\"\\+w** s’est embrasée contre son peuple ; il a étendu la main contre lui, et il l’a frappé ; les montagnes sont ébranlées ; leurs cadavres gisent au milieu des chemins, comme de l’ordure. Avec tout cela, sa colère ne s’est pas détournée, et sa main reste étendue.",
+        "NAB": "Therefore the wrath of the LORD blazes against his people, he raises his hand to strike them; When the mountains quake, their corpses shall be like refuse in the streets. For all this, his wrath is not turned back, and his hand is still outstretched.",
+        "VAT_ES": "Por eso la ira del Señor se enciende contra su pueblo: el Señor extiende su mano contra él y lo golpea. se estremecen las montañas y sus cadáveres son como basura en medio de las calles. A pesar de todo esto, no se aplacó su ira y su mano está aún extendida.",
+        "CEI": "Per questo è divampato lo sdegno del Signore contro il suo popolo, su di esso ha steso la sua mano per colpire; hanno tremato i monti, i loro cadaveri erano come lordura in mezzo alle strade. Con tutto ciò non si calma la sua ira e la sua mano resta ancora tesa."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/נָֽשָׂא נֵ֤ס לַ/גּוֹיִם֙ מֵ/רָח֔וֹק וְ/שָׁ֥רַק ל֖/וֹ מִ/קְצֵ֣ה הָ/אָ֑רֶץ וְ/הִנֵּ֥ה מְהֵרָ֖ה קַ֥ל יָבֽוֹא׃",
+        "LXX": "τοιγαροῦν ἀρεῖ σύσσημον ἐν τοῖς ἔθνεσιν τοῖς μακρὰν καὶ συριεῖ αὐτοὺς ἀπ’ ἄκρου τῆς γῆς, καὶ ἰδοὺ ταχὺ κούφως ἔρχονται.",
+        "VUL": "Et elevabit signum in nationibus procul,/ et sibilabit ad eum de finibus terræ :/ et ecce festinus velociter veniet./",
+        "SYN": "И поднимет знамя народам дальним, и даст знак живущему на краю земли, - и вот, он легко и скоро придет;",
+        "NEO": "Il dresse une bannière pour les nations éloignées ; il les siffle des extrémités de la terre. Et voici qu’ils arrivent, prompts et légers.",
+        "NAB": "He will give a signal to a far-off nation, and whistle to them from the ends of the earth; speedily and promptly will they come.",
+        "VAT_ES": "El alza una insignia para una nación lejana, la llama con un silbido desde el extremo de la tierra. y ella acude veloz, rápidamente.",
+        "CEI": "Egli alzerà un segnale a un popolo lontano e gli farà un fischio all'estremità della terra; ed ecco verrà veloce e leggero."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "אֵין עָיֵ֤ף וְ/אֵין כּוֹשֵׁל֙ בּ֔/וֹ לֹ֥א יָנ֖וּם וְ/לֹ֣א יִישָׁ֑ן וְ/לֹ֤א נִפְתַּח֙ אֵז֣וֹר חֲלָצָ֔י/ו וְ/לֹ֥א נִתַּ֖ק שְׂר֥וֹךְ נְעָלָֽי/ו׃",
+        "LXX": "οὐ πεινάσουσιν οὐδὲ κοπιάσουσιν οὐδὲ νυστάξουσιν οὐδὲ κοιμηθήσονται, οὐδὲ λύσουσιν τὰς ζώνας αὐτῶν ἀπὸ τῆς ὀσφύος αὐτῶν, οὐδὲ μὴ ῥαγῶσιν οἱ ἱμάντες τῶν ὑποδημάτων αὐτῶν·",
+        "VUL": "Non est deficiens neque laborans in eo ;/ non dormitabit, neque dormiet ;/ neque solvetur cingulum renum ejus,/ nec rumpetur corrigia calceamenti ejus./",
+        "SYN": "не будет у него ни усталого, ни изнемогающего; ни один не задремлет и не заснет, и не снимется пояс с чресл его, и не разорвется ремень у обуви его;",
+        "NEO": "Il n’y en a pas un qui soit las et qui chancelle, pas un qui sommeille ou qui dorme ; à aucun la ceinture de ses reins ne se détache, ni la courroie de ses sandales ne se rompt.",
+        "NAB": "None of them will stumble with weariness, none will slumber and none will sleep. None will have his waist belt loose, nor the thong of his sandal broken.",
+        "VAT_ES": "Nadie siente cansancio ni tropieza, nadie dormita ni duerme, a nadie se le desata el cinturón ni se le rompe la correa del calzado.",
+        "CEI": "Nessuno fra essi è stanco o inciampa, nessuno sonnecchia o dorme, non si scioglie la cintura dei suoi fianchi e non si slaccia il legaccio dei suoi sandali."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֤ר חִצָּי/ו֙ שְׁנוּנִ֔ים וְ/כָל קַשְּׁתֹתָ֖י/ו דְּרֻכ֑וֹת פַּרְס֤וֹת סוּסָי/ו֙ כַּ/צַּ֣ר נֶחְשָׁ֔בוּ וְ/גַלְגִּלָּ֖י/ו כַּ/סּוּפָֽה׃",
+        "LXX": "ὧν τὰ βέλη ὀξεῖά ἐστιν καὶ τὰ τόξα αὐτῶν ἐντεταμένα. οἱ πόδες τῶν ἵππων αὐτῶν ὡς στερεὰ πέτρα· ἐλογίσθησαν οἱ τροχοὶ τῶν ἁρμάτων αὐτῶν ὡς καταιγίς.",
+        "VUL": "Sagittæ ejus acutæ, et omnes arcus ejus extenti./ Ungulæ equorum ejus ut silex,/ et rotæ ejus quasi impetus tempestatis./",
+        "SYN": "стрелы его заострены, и все луки его натянуты; копыта коней его подобны кремню, и колеса его - как вихрь;",
+        "NEO": "Leurs flèches sont aiguisées, leurs arcs sont tous tendus ; les sabots de leurs chevaux sont durs comme le caillou, les roues de leurs chars pareilles à l’ouragan.",
+        "NAB": "Their arrows are sharp, and all their bows are bent. The hoofs of their horses seem like flint, and their chariot wheels like the hurricane.",
+        "VAT_ES": "Sus flechas son filosas, están tensos todos sus arcos; los cascos de sus caballos son como pedernal, las ruedas de sus carros, como torbellinos.",
+        "CEI": "Le sue frecce sono acuminate, e ben tesi tutti i suoi archi; gli zoccoli dei suoi cavalli sono come pietre e le ruote dei suoi carri come un turbine."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "שְׁאָגָ֥ה ל֖/וֹ כַּ/לָּבִ֑יא ו/שאג יִשְׁאַ֨ג כַּ/כְּפִירִ֤ים וְ/יִנְהֹם֙ וְ/יֹאחֵ֣ז טֶ֔רֶף וְ/יַפְלִ֖יט וְ/אֵ֥ין מַצִּֽיל׃",
+        "LXX": "ὀργιῶσιν ὡς λέοντες, παρέστηκαν ὡς σκύμνοι λέοντος· καὶ ἐπιλήμψεται, καὶ βοήσει ὡς θηρίον, καὶ ἐκβαλεῖ, καὶ οὐκ ἔσται ὁ ῥυόμενος αὐτούς,",
+        "VUL": "Rugitus ejus ut leonis ;/ rugiet ut catuli leonum :/ et frendet, et tenebit prædam,/ et amplexabitur, et non erit qui eruat./",
+        "SYN": "рев его - как рев львицы; он рыкает подобно скимнам, и заревет, и схватит добычу и унесет, и никто не отнимет.",
+        "NEO": "Leur rugissement est celui du lion ; ils rugissent comme le lionceau : il gronde et saisit sa proie ; il l’emporte et personne ne la lui arrache.",
+        "NAB": "Their roar is that of the lion, like the lion's whelps they roar; They growl and seize the prey, they carry it off and none will rescue it.",
+        "VAT_ES": "Su rugido es el de una leona, ruge como los cachorros de león: brama y se apodera de la presa, la arrebata y nadie puede librarla.",
+        "CEI": "Il suo ruggito è come quello di una leonessa, ruggisce come un leoncello; freme e afferra la preda, la pone al sicuro, nessuno gliela strappa."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/יִנְהֹ֥ם עָלָ֛י/ו בַּ/יּ֥וֹם הַ/ה֖וּא כְּ/נַהֲמַת יָ֑ם וְ/נִבַּ֤ט לָ/אָ֨רֶץ֙ וְ/הִנֵּה חֹ֔שֶׁךְ צַ֣ר וָ/א֔וֹר חָשַׁ֖ךְ בַּ/עֲרִיפֶֽי/הָ׃",
+        "LXX": "καὶ βοήσει δι’ αὐτοὺς τῇ ἡμέρᾳ ἐκείνῃ ὡς φωνὴ θαλάσσης κυμαινούσης· καὶ ἐμβλέψονται εἰς τὴν γῆν, καὶ ἰδοὺ σκότος σκληρὸν ἐν τῇ ἀπορίᾳ αὐτῶν.",
+        "VUL": "Et sonabit super eum in die illa sicut sonitus maris :/ aspiciemus in terram,/ et ecce tenebræ tribulationis,/ et lux obtenebrata est in caligine ejus.]",
+        "SYN": "И заревет на него в тот день как бы рев _разъяренного_ моря; и взглянет он на землю, и вот - тьма, горе, и свет померк в облаках.",
+        "NEO": "En ce temps-là, il y aura sur le peuple un grondement, semblable au grondement de la mer. On regardera le pays, et voilà les ténèbres ! Angoisse et lumière ! Puis la nuit s’étend sur le ciel du pays.",
+        "NAB": "(They will roar over it, on that day, with a roaring like that of the sea.)",
+        "VAT_ES": "Aquel día, lanzará un bramido contra ella como el bramido del mar, Mirarán a la tierra, y sólo habrá tinieblas y angustia, la luz será oscurecida por sombríos nubarrones.",
+        "CEI": "Fremerà su di lui in quel giorno come freme il mare; si guarderà la terra: ecco, saranno tenebre, angoscia e la luce sarà oscurata dalla caligine."
+      }
+    }
+  }
+}

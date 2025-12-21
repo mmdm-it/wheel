@@ -1,0 +1,371 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GALA_002",
+  "book_key": "GALA",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Ἔπειτα διὰ δεκατεσσάρων ἐτῶν πάλιν ἀνέβην εἰς Ἱεροσόλυμα μετὰ Βαρνάβα, συμπαραλαβὼν καὶ Τίτον·",
+        "VUL": "Deinde post annos quatuordecim, iterum ascendi Jerosolymam cum Barnaba, assumpto et Tito.",
+        "SYN": "Потом, через четырнадцать лет, опять ходил я в Иерусалим с Варнавою, взяв с собою и Тита.",
+        "NEO": "Ensuite, quatorze ans+ 2:1 II, 1. Quatorze ans après sa conversion. C’est le voyage auquel les Actes font allusion xi, 30 et xii, 25. Les conférences particulières qu’il eut alors avec les chefs de l’Église de Jérusalem ne doivent pas se confondre avec le Concile de Jérusalem. Ce Concile n’eut lieu qu’après la composition de l’Épître aux Galates vers l’an 51. L’argumentation de S. Paul exige qu’il ne passe pas sous silence ce second voyage fait à Jérusalem. D’autre part on ne s’explique pas qu’il ne fasse aucune mention dans cette Épître du Concile de Jérusalem qui résolvait la question débattue, sinon parce qu’il n’avait pas encore eu lieu.* plus tard, je montai à nouveau à Jérusalem avec Barnabé ayant aussi pris Tite avec moi.",
+        "NAB": "Then after fourteen years I again went up to Jerusalem with Barnabas, taking Titus along also.",
+        "VAT_ES": "Al cabo de catorce años, subí nuevamente a Jerusalén con Bernabé, llevando conmigo a Tito.",
+        "CEI": "Voi stessi infatti, fratelli, sapete bene che la nostra venuta in mezzo a voi non è stata vana."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "ἀνέβην δὲ κατὰ ἀποκάλυψιν, καὶ ἀνεθέμην αὐτοῖς τὸ εὐαγγέλιον ὃ κηρύσσω ἐν τοῖς ἔθνεσιν, κατ’ ἰδίαν δὲ τοῖς δοκοῦσιν, μήπως εἰς κενὸν τρέχω ἢ ἔδραμον.",
+        "VUL": "Ascendi autem secundum revelationem : et contuli cum illis Evangelium, quod prædico in gentibus, seorsum autem iis qui videbantur aliquid esse : ne forte in vacuum currerem, aut cucurrissem.",
+        "SYN": "Ходил же по откровению, и предложил там, и особо знаменитейшим, благовествование, проповедуемое мною язычникам, не напрасно ли я подвизаюсь или подвизался.",
+        "NEO": "Ce fut d’après une révélation que j’y montai, et je leur exposai l’Évangile que je prêche parmi les Gentils ; je* l’exposai en particulier à ceux qui étaient les plus considérés, de peur de courir ou d’avoir couru en vain.",
+        "NAB": "I went up in accord with a revelation, and I presented to them the gospel that I preach to the Gentiles - but privately to those of repute - so that I might not be running, or have run, in vain.",
+        "VAT_ES": "Lo hice en virtud de una revelación divina, y les expuse el Evangelio que predico entre los paganos, en particular a los dirigentes para asegurarme que no corría o no había corrido en vano.",
+        "CEI": "Ma dopo avere prima sofferto e subìto oltraggi a Filippi, come ben sapete, abbiamo avuto il coraggio nel nostro Dio di annunziarvi il vangelo di Dio in mezzo a molte lotte."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ οὐδὲ Τίτος ὁ σὺν ἐμοί, Ἕλλην ὤν, ἠναγκάσθη περιτμηθῆναι·",
+        "VUL": "Sed neque Titus, qui mecum erat, cum esset gentilis, compulsus est circumcidi :",
+        "SYN": "Но они и Тита, бывшего со мною, хотя и Еллина, не принуждали обрезаться,",
+        "NEO": "Or on n’obligea même pas Tite qui m’accompagnait, et qui était Grec, à se faire circoncire.",
+        "NAB": "Moreover, not even Titus, who was with me, although he was a Greek, was compelled to be circumcised,",
+        "VAT_ES": "Pero ni siquiera Tito, que estaba conmigo y era de origen pagano, fue obligado a circuncidarse,",
+        "CEI": "E il nostro appello non è stato mosso da volontà di inganno, né da torbidi motivi, né abbiamo usato frode alcuna;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "διὰ δὲ τοὺς παρεισάκτους ψευδαδέλφους, οἵτινες παρεισῆλθον κατασκοπῆσαι τὴν ἐλευθερίαν ἡμῶν ἣν ἔχομεν ἐν χριστῷ Ἰησοῦ, ἵνα ἡμᾶς καταδουλώσωνται·",
+        "VUL": "sed propter subintroductos falsos fratres, qui subintroierunt explorare libertatem nostram, quam habemus in Christo Jesu, ut nos in servitutem redigerent.",
+        "SYN": "а вкравшимся лжебратиям, скрытно приходившим подсмотреть за нашею свободою, которую мы имеем во Христе Иисусе, чтобы поработить нас,",
+        "NEO": "Et cela, à cause des faux frères+ 2:4 4. Faux frères, judéo-chrétiens de Judée, venus à Antioche (Act. xv, 1, 2).* intrus, qui s’étaient glissés parmi nous pour épier la liberté que nous avons dans le Christ Jésus, afin de nous réduire en servitude.",
+        "NAB": "but because of the false brothers secretly brought in, who slipped in to spy on our freedom that we have in Christ Jesus, that they might enslave us -",
+        "VAT_ES": "a pesar de los falsos hermanos que se habían infiltrado para coartar la libertad que tenemos en Cristo Jesús y reducirnos a la esclavitud.",
+        "CEI": "ma come Dio ci ha trovati degni di affidarci il vangelo così lo predichiamo, non cercando di piacere agli uomini, ma a Dio, che prova i nostri cuori."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "οἷς οὐδὲ πρὸς ὥραν εἴξαμεν τῇ ὑποταγῇ, ἵνα ἡ ἀλήθεια τοῦ εὐαγγελίου διαμείνῃ πρὸς ὑμᾶς.",
+        "VUL": "Quibus neque ad horam cessimus subjectione, ut veritas Evangelii permaneat apud vos :",
+        "SYN": "мы ни на час не уступили и не покорились, дабы истина благовествования сохранилась у вас.",
+        "NEO": "Nous n’avons pas consenti, même pour un instant, à nous soumettre à eux, afin que la vérité de l’Évangile fût maintenue parmi vous.",
+        "NAB": "to them we did not submit even for a moment, so that the truth of the gospel might remain intact for you.",
+        "VAT_ES": "Con todo, ni por un momento les hicimos concesiones, a fin de salvaguardar para ustedes la verdad del Evangelio.",
+        "CEI": "Mai infatti abbiamo pronunziato parole di adulazione, come sapete, né avuto pensieri di cupidigia: Dio ne è testimone."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ἀπὸ δὲ τῶν δοκούντων εἶναί τι- ὁποῖοί ποτε ἦσαν οὐδέν μοι διαφέρει· πρόσωπον θεὸς ἀνθρώπου οὐ λαμβάνει- ἐμοὶ γὰρ οἱ δοκοῦντες οὐδὲν προσανέθεντο·",
+        "VUL": "ab iis autem, qui videbantur esse aliquid (quales aliquando fuerint, nihil mea interest : Deus personam hominis non accipit) : mihi enim qui videbantur esse aliquid, nihil contulerunt.",
+        "SYN": "И в знаменитых чем-либо, какими бы ни были они когда-либо, для меня нет ничего особенного: Бог не взирает на лице человека. И знаменитые не возложили на меня ничего более.",
+        "NEO": "Quant à ceux qu’on tient en si haute estime, — ce qu’ils ont été autrefois ne m’importe pas : Dieu ne fait pas acception des personnes, — ces hommes si considérés ne m’imposèrent rien de plus.",
+        "NAB": "But from those who were reputed to be important (what they once were makes no difference to me; God shows no partiality) - those of repute made me add nothing.",
+        "VAT_ES": "En cuanto a los dirigentes –no me interesa lo que hayan sido antes, porque Dios no hace acepción de personas– no me impusieron nada más.",
+        "CEI": "E neppure abbiamo cercato la gloria umana, né da voi né da altri, pur potendo far valere la nostra autorità di apostoli di Cristo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "ἀλλὰ τοὐναντίον, ἰδόντες ὅτι πεπίστευμαι τὸ εὐαγγέλιον τῆς ἀκροβυστίας, καθὼς Πέτρος τῆς περιτομῆς-",
+        "VUL": "Sed e contra cum vidissent quod creditum est mihi Evangelium præputii, sicut et Petro circumcisionis",
+        "SYN": "Напротив того, увидев, что мне вверено благовестие для необрезанных, как Петру для обрезанных",
+        "NEO": "Au contraire, voyant que l’Évangile m’avait été confié pour les incirconcis, comme à Pierre pour les circoncis,",
+        "NAB": "On the contrary, when they saw that I had been entrusted with the gospel to the uncircumcised, just as Peter to the circumcised,",
+        "VAT_ES": "Al contrario, aceptaron que me había sido confiado el anuncio del Evangelio a los paganos, así como fue confiado a Pedro el anuncio a los judíos.",
+        "CEI": "Invece siamo stati amorevoli in mezzo a voi come una madre nutre e ha cura delle proprie creature."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "ὁ γὰρ ἐνεργήσας Πέτρῳ εἰς ἀποστολὴν τῆς περιτομῆς, ἐνήργησεν καὶ ἐμοὶ εἰς τὰ ἔθνη-",
+        "VUL": "(qui enim operatus est Petro in apostolatum circumcisionis, operatus est et mihi inter gentes) :",
+        "SYN": "[ибо Содействовавший Петру в апостольстве у обрезанных содействовал и мне у язычников],",
+        "NEO": "— car celui qui a fait de Pierre l’apôtre des circoncis a aussi fait de moi l’apôtre des Gentils, —",
+        "NAB": "for the one who worked in Peter for an apostolate to the circumcised worked also in me for the Gentiles,",
+        "VAT_ES": "Porque el que constituyó a Pedro Apóstol de los judíos, me hizo también a mí Apóstol de los paganos.",
+        "CEI": "Così affezionati a voi, avremmo desiderato darvi non solo il vangelo di Dio, ma la nostra stessa vita, perché ci siete diventati cari."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "καὶ γνόντες τὴν χάριν τὴν δοθεῖσάν μοι, Ἰάκωβος καὶ Κηφᾶς καὶ Ἰωάννης, οἱ δοκοῦντες στύλοι εἶναι, δεξιὰς ἔδωκαν ἐμοὶ καὶ Βαρνάβᾳ κοινωνίας, ἵνα ἡμεῖς μὲν εἰς τὰ ἔθνη, αὐτοὶ δὲ εἰς τὴν περιτομήν·",
+        "VUL": "et cum cognovissent gratiam, quæ data est mihi, Jacobus, et Cephas, et Joannes, qui videbantur columnæ esse, dextras dederunt mihi, et Barnabæ societatis : ut nos in gentes, ipsi autem in circumcisionem :",
+        "SYN": "и, узнав о благодати, данной мне, Иаков и Кифа и Иоанн, почитаемые столпами, подали мне и Варнаве руку общения, чтобы нам _идти_ к язычникам, а им к обрезанным,",
+        "NEO": "et ayant reconnu la grâce qui m’avait été accordée, Jacques, Céphas et Jean, qui sont regardés comme des colonnes, nous donnèrent la main, à Barnabé et à moi, en signe* de communion, pour aller, nous aux païens, eux aux circoncis.",
+        "NAB": "and when they recognized the grace bestowed upon me, James and Kephas and John, who were reputed to be pillars, gave me and Barnabas their right hands in partnership, that we should go to the Gentiles and they to the circumcised.",
+        "VAT_ES": "Por eso, Santiago, Cefas y Juan –considerados como columnas de la Iglesia– reconociendo el don que me había sido acordado, nos estrecharon la mano a mí y a Bernabé, en señal de comunión, para que nosotros nos encargáramos de los paganos y ellos de los judíos.",
+        "CEI": "Voi ricordate infatti, fratelli, la nostra fatica e il nostro travaglio: lavorando notte e giorno per non essere di peso ad alcuno vi abbiamo annunziato il vangelo di Dio."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "μόνον τῶν πτωχῶν ἵνα μνημονεύωμεν, ὃ καὶ ἐσπούδασα αὐτὸ τοῦτο ποιῆσαι.",
+        "VUL": "tantum ut pauperum memores essemus, quod etiam sollicitus fui hoc ipsum facere.",
+        "SYN": "только чтобы мы помнили нищих, что и старался я исполнять в точности.",
+        "NEO": "Seulement nous devions nous souvenir des pauvres, ce que j’ai eu bien soin de faire.+ 2:10 10. Rom. xv, 27.*",
+        "NAB": "Only, we were to be mindful of the poor, which is the very thing I was eager to do.",
+        "VAT_ES": "Solamente nos recomendaron que nos acordáramos de los pobres, lo que siempre he tratado de hacer.",
+        "CEI": "Voi siete testimoni, e Dio stesso è testimone, come è stato santo, giusto, irreprensibile il nostro comportamento verso di voi credenti;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "¶Ὅτε δὲ ἦλθεν Πέτρος εἰς Ἀντιόχειαν, κατὰ πρόσωπον αὐτῷ ἀντέστην, ὅτι κατεγνωσμένος ἦν.",
+        "VUL": "Cum autem venisset Cephas Antiochiam, in faciem ei restiti, quia reprehensibilis erat.",
+        "SYN": "Когда же Петр пришел в Антиохию, то я лично противостал ему, потому что он подвергался нареканию.",
+        "NEO": "Mais lorsque Céphas vint à Antioche, je lui résistai en face, parce qu’il était digne de blâme.+ 2:11 11. L’incident d’Antioche eut lieu peu après le retour de S. Paul de sa première mission, (Act. xv, 30) et avant que S. Paul écrivit son Épître aux Galates (vers l’an 50). La condescendance de Céphas était dangereuse dans les circonstances où elle se produisait. Par sa conduite, l’Apôtre pouvait laisser croire que les observances de la loi conservaient toute leur efficacité au point de vue du salut. De plus, contrairement à son intention, il semblait par là vouloir porter les chrétiens de la Gentilité à se les imposer, éloignant ainsi les païens de l’Évangile et jetant dans l’Église des germes funestes de division.*",
+        "NAB": "And when Kephas came to Antioch, I opposed him to his face because he clearly was wrong.",
+        "VAT_ES": "Pero cuando Cefas llegó a Antioquía, yo le hice frente porque su conducta era reprensible.",
+        "CEI": "e sapete anche che, come fa un padre verso i propri figli, abbiamo esortato ciascuno di voi,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Πρὸ τοῦ γὰρ ἐλθεῖν τινὰς ἀπὸ Ἰακώβου, μετὰ τῶν ἐθνῶν συνήσθιεν· ὅτε δὲ ἦλθον, ὑπέστελλεν καὶ ἀφώριζεν ἑαυτόν, φοβούμενος τοὺς ἐκ περιτομῆς.",
+        "VUL": "Prius enim quam venirent quidam a Jacobo, cum gentibus edebat : cum autem venissent, subtrahebat, et segregabat se, timens eos qui ex circumcisione erant.",
+        "SYN": "Ибо, до прибытия некоторых от Иакова, ел вместе с язычниками; а когда те пришли, стал таиться и устраняться, опасаясь обрезанных.",
+        "NEO": "En effet, avant l’arrivée de certaines gens de l’entourage de Jacques, il mangeait avec les païens ; mais après leur arrivée, il s’esquiva, et se tint à l’écart, par crainte des partisans de la circoncision.",
+        "NAB": "For, until some people came from James, he used to eat with the Gentiles; but when they came, he began to draw back and separated himself, because he was afraid of the circumcised.",
+        "VAT_ES": "En efecto, antes que llegaran algunos enviados de Santiago, él comía con los paganos, pero cuando estos llegaron, se alejó de ellos y permanecía apartado, por temor a los partidarios de la circuncisión.",
+        "CEI": "incoraggiandovi e scongiurandovi a comportarvi in maniera degna di quel Dio che vi chiama al suo regno e alla sua gloria."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Καὶ συνυπεκρίθησαν αὐτῷ καὶ οἱ λοιποὶ Ἰουδαῖοι, ὥστε καὶ Βαρνάβας συναπήχθη αὐτῶν τῇ ὑποκρίσει.",
+        "VUL": "Et simulationi ejus consenserunt ceteri Judæi, ita ut et Barnabas duceretur ab eis in illam simulationem.",
+        "SYN": "Вместе с ним лицемерили и прочие Иудеи, так что даже Варнава был увлечен их лицемерием.",
+        "NEO": "Avec lui, les autres Juifs usèrent aussi de dissimulation, en sorte que Barnabé lui-même s’y laissa entraîner.",
+        "NAB": "And the rest of the Jews (also) acted hypocritically along with him, with the result that even Barnabas was carried away by their hypocrisy.",
+        "VAT_ES": "Los demás judíos lo imitaron, y hasta el mismo Bernabé se dejó arrastrar por su simulación.",
+        "CEI": "Proprio per questo anche noi ringraziamo Dio continuamente, perché, avendo ricevuto da noi la parola divina della predicazione, l'avete accolta non quale parola di uomini, ma, come è veramente, quale parola di Dio, che opera in voi che credete."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ ὅτε εἶδον ὅτι οὐκ ὀρθοποδοῦσιν πρὸς τὴν ἀλήθειαν τοῦ εὐαγγελίου, εἶπον τῷ Πέτρῳ ἔμπροσθεν πάντων, Εἰ σύ, Ἰουδαῖος ὑπάρχων, ἐθνικῶς ζῇς καὶ οὐκ Ἰουδαϊκῶς, τί τὰ ἔθνη ἀναγκάζεις Ἰουδαΐζειν;",
+        "VUL": "Sed cum vidissem quod non recte ambularent ad veritatem Evangelii, dixi Cephæ coram omnibus : Si tu, cum Judæus sis, gentiliter vivis, et non judaice : quomodo gentes cogis judaizare ?",
+        "SYN": "Но когда я увидел, что они не прямо поступают по истине Евангельской, то сказал Петру при всех: если ты, будучи Иудеем, живешь по-язычески, а не по-иудейски, то для чего язычников принуждаешь жить по-иудейски?",
+        "NEO": "Pour moi, voyant qu’ils ne marchaient pas droit selon la vérité de l’Évangile, je dis à Céphas en présence de tous : « Si toi qui es Juif, tu vis à la manière des Gentils et non à la manière des Juifs, comment peux-tu forcer les Gentils à judaïser ? »+ 2:14 14. Paul, dans les vers. 15-21, continue selon la plupart des exégètes, son discours à Pierre, dont il ne donne plus que les idées principales, sans le reproduire textuellement.*",
+        "NAB": "But when I saw that they were not on the right road in line with the truth of the gospel, I said to Kephas in front of all, \"If you, though a Jew, are living like a Gentile and not like a Jew, how can you compel the Gentiles to live like Jews?\"",
+        "VAT_ES": "Cuando yo vi que no procedían rectamente, según la verdad del Evangelio, dije a Cefas delante de todos: «Si tú, que eres judío, vives como los paganos y no como los judíos, &iquest;por qué obligas a los paganos a que vivan como los judíos?».",
+        "CEI": "Voi infatti, fratelli, siete diventati imitatori delle Chiese di Dio in Gesù Cristo, che sono nella Giudea, perché avete sofferto anche voi da parte dei vostri connazionali come loro da parte dei Giudei,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ἡμεῖς φύσει Ἰουδαῖοι καὶ οὐκ ἐξ ἐθνῶν ἁμαρτωλοί,",
+        "VUL": "Nos natura Judæi, et non ex gentibus peccatores.",
+        "SYN": "Мы по природе Иудеи, а не из язычников грешники;",
+        "NEO": "Pour nous, nous sommes Juifs de naissance, et non pécheurs d’entre les Gentils.",
+        "NAB": "We, who are Jews by nature and not sinners from among the Gentiles,",
+        "VAT_ES": "Nosotros somos judíos de nacimiento y no pecadores venidos del paganismo.",
+        "CEI": "i quali hanno perfino messo a morte il Signore Gesù e i profeti e hanno perseguitato anche noi; essi non piacciono a Dio e sono nemici di tutti gli uomini,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "εἰδότες ὅτι οὐ δικαιοῦται ἄνθρωπος ἐξ ἔργων νόμου, ἐὰν μὴ διὰ πίστεως Ἰησοῦ χριστοῦ, καὶ ἡμεῖς εἰς χριστὸν Ἰησοῦν ἐπιστεύσαμεν, ἵνα δικαιωθῶμεν ἐκ πίστεως χριστοῦ, καὶ οὐκ ἐξ ἔργων νόμου· διότι οὐ δικαιωθήσεται ἐξ ἔργων νόμου πᾶσα σάρξ.",
+        "VUL": "Scientes autem quod non justificatur homo ex operibus legis, nisi per fidem Jesu Christi : et nos in Christo Jesu credimus, ut justificemur ex fide Christi, et non ex operibus legis : propter quod ex operibus legis non justificabitur omnis caro.",
+        "SYN": "однако же, узнав, что человек оправдывается не делами закона, а только верою в Иисуса Христа, и мы уверовали во Христа Иисуса, чтобы оправдаться верою во Христа, а не делами закона; ибо делами закона не оправдается никакая плоть.",
+        "NEO": "Cependant sachant que l’homme est justifié, non par les œuvres de la Loi, mais par la foi dans le Christ Jésus, nous aussi nous avons cru au Christ Jésus, afin d’être justifiés par la foi en lui et non par les œuvres de la Loi ; car nul homme+ 2:16 16. Nul homme: litt. \\+qt nulle chair\\+qt*.* ne sera justifié par les œuvres de la Loi.",
+        "NAB": "(yet) who know that a person is not justified by works of the law but through faith in Jesus Christ, even we have believed in Christ Jesus that we may be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified.",
+        "VAT_ES": "Pero como sabemos que el hombre no es justificado por las obras de la Ley, sino por la fe en Jesucristo, hemos creído en él, para ser justificados por la fe de Cristo y no por las obras de la Ley.",
+        "CEI": "impedendo a noi di predicare ai pagani perché possano essere salvati. In tal modo essi colmano la misura dei loro peccati! Ma ormai l'ira è arrivata al colmo sul loro capo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Εἰ δέ, ζητοῦντες δικαιωθῆναι ἐν χριστῷ, εὑρέθημεν καὶ αὐτοὶ ἁμαρτωλοί, ἆρα χριστὸς ἁμαρτίας διάκονος; Μὴ γένοιτο.",
+        "VUL": "Quod si quærentes justificari in Christo, inventi sumus et ipsi peccatores, numquid Christus peccati minister est ? Absit.",
+        "SYN": "Если же, ища оправдания во Христе, мы и сами оказались грешниками, то неужели Христос есть служитель греха? Никак.",
+        "NEO": "Or si, tandis que nous cherchons à être justifiés par le Christ, nous étions nous-mêmes trouvés pécheurs…, le Christ serait-il donc un ministre du péché ? Loin de là !+ 2:17 17. Sens : si la foi en J.-C. nous laisse encore pécheurs, c’est-à-dire semblables aux païens ; si elle n’a pas par elle-même, et sans les œuvres de la Loi, la vertu de nous conduire à la justice, il s’ensuit que J.-C. nous aurait entraînés à un abandon coupable de la loi ; il serait comme la cause et comme le ministre de cet état de péché dans lequel les fidèles se trouveraient encore.*",
+        "NAB": "But if, in seeking to be justified in Christ, we ourselves are found to be sinners, is Christ then a minister of sin? Of course not!",
+        "VAT_ES": "Ahora bien, si al buscar nuestra justificación en Cristo, resulta que también nosotros somos pecadores, entonces Cristo está al servicio del pecado. Esto no puede ser,",
+        "CEI": "Quanto a noi, fratelli, dopo poco tempo che eravamo separati da voi, di persona ma non col cuore, eravamo nell'impazienza di rivedere il vostro volto, tanto il nostro desiderio era vivo."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Εἰ γὰρ ἃ κατέλυσα, ταῦτα πάλιν οἰκοδομῶ, παραβάτην ἐμαυτὸν συνίστημι.",
+        "VUL": "Si enim quæ destruxi, iterum hæc ædifico : prævaricatorem me constituo.",
+        "SYN": "Ибо если я снова созидаю, что разрушил, то сам себя делаю преступником.",
+        "NEO": "Car si ce que",
+        "NAB": "But if I am building up again those things that I tore down, then I show myself to be a transgressor.",
+        "VAT_ES": "porque si me pongo a reconstruir lo que he destruido, me declaro a mí mismo transgresor de la Ley.",
+        "CEI": "Perciò abbiamo desiderato una volta, anzi due volte, proprio io Paolo, di venire da voi, ma satana ce lo ha impedito."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ἐγὼ γὰρ διὰ νόμου νόμῳ ἀπέθανον, ἵνα θεῷ ζήσω.",
+        "VUL": "Ego enim per legem, legi mortuus sum, ut Deo vivam : Christo confixus sum cruci.",
+        "SYN": "Законом я умер для закона, чтобы жить для Бога. Я сораспялся Христу,",
+        "NEO": "puisque c’est par la Loi que je suis mort à la Loi, afin de vivre pour Dieu. J’ai été crucifié avec le Christ,+ 2:19 19. La Loi fait vivre le péché, en donne la conscience, et par suite du péché, toute l’humanité est sujette à la malédiction et à la mort. Le Christ, en montant sur la croix, a pris sur lui cette malédiction ; il est donc mort par, ou à cause de la Loi (Comp. iii, 10 sv.). Or les fidèles lui étant unis par la foi et le baptême, sont entrés en communion de sa mort et de sa résurrection (Rom. vi, 3 sv.) ; par conséquent eux aussi sont morts par la Loi, et sont morts à la Loi ; le lien qui les attachait à elle est rompu ; ils vivent de la vie divine, la Loi ne peut plus ni les accuser, ni les convaincre de péché ().*",
+        "NAB": "For through the law I died to the law, that I might live for God. I have been crucified with Christ;",
+        "VAT_ES": "Pero en virtud de la Ley, he muerto a la Ley, a fin de vivir para Dios. Yo estoy crucificado con Cristo,",
+        "CEI": "Chi infatti, se non proprio voi, potrebbe essere la nostra speranza, la nostra gioia e la corona di cui ci possiamo vantare, davanti al Signore nostro Gesù, nel momento della sua venuta?"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Χριστῷ συνεσταύρωμαι· ζῶ δέ, οὐκέτι ἐγώ, ζῇ δὲ ἐν ἐμοὶ χριστός· ὃ δὲ νῦν ζῶ ἐν σαρκί, ἐν πίστει ζῶ τῇ τοῦ υἱοῦ τοῦ θεοῦ, τοῦ ἀγαπήσαντός με καὶ παραδόντος ἑαυτὸν ὑπὲρ ἐμοῦ.",
+        "VUL": "Vivo autem, jam non ego : vivit vero in me Christus. Quod autem nunc vivo in carne : in fide vivo Filii Dei, qui dilexit me, et tradidit semetipsum pro me.",
+        "SYN": "и уже не я живу, но живет во мне Христос. А что ныне живу во плоти, то живу верою в Сына Божия, возлюбившего меня и предавшего Себя за меня.",
+        "NEO": "et si je vis, ce n’est plus moi qui vis, c’est le Christ qui vit en moi. Ce que je vis maintenant dans la chair, je le vis dans la foi au Fils de Dieu, qui m’a aimé et qui s’est livré lui-même pour moi.+ 2:20 20. Comp. Rom. vi, 11 ; viii, 9 sv. ; Eph. iii, 17.*",
+        "NAB": "yet I live, no longer I, but Christ lives in me; insofar as I now live in the flesh, I live by faith in the Son of God who has loved me and given himself up for me.",
+        "VAT_ES": "y ya no vivo yo, sino que Cristo vive en mí: la vida que sigo viviendo en la carne, la vivo en la fe en el Hijo de Dios, que me amó y se entregó por mí.",
+        "CEI": "Siete voi la nostra gloria e la nostra gioia."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Οὐκ ἀθετῶ τὴν χάριν τοῦ θεοῦ· εἰ γὰρ διὰ νόμου δικαιοσύνη, ἄρα χριστὸς δωρεὰν ἀπέθανεν.",
+        "VUL": "Non abjicio gratiam Dei. Si enim per legem justitia, ergo gratis Christus mortuus est.",
+        "SYN": "Не отвергаю благодати Божией; а если законом оправдание, то Христос напрасно умер.",
+        "NEO": "Je ne rejette pas la grâce de Dieu ; car si la justice s’obtient par la Loi, le Christ est donc mort pour rien.",
+        "NAB": "I do not nullify the grace of God; for if justification comes through the law, then Christ died for nothing.",
+        "VAT_ES": "Yo no anulo la gracia de Dios: si la justicia viene de la Ley, Cristo ha muerto inútilmente."
+      }
+    }
+  }
+}

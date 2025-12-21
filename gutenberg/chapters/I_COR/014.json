@@ -1,0 +1,686 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_COR_014",
+  "book_key": "I_COR",
+  "sequence": 14,
+  "chapter_in": {
+    "MT": 14,
+    "VUL": 14,
+    "LXX": 14
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Διώκετε τὴν ἀγάπην· ζηλοῦτε δὲ τὰ πνευματικά, μᾶλλον δὲ ἵνα προφητεύητε.",
+        "VUL": "Sectamini caritatem, æmulamini spiritualia : magis autem ut prophetetis.",
+        "SYN": "Достигайте любви; ревнуйте о _дарах_ духовных, особенно же о том, чтобы пророчествовать.",
+        "NEO": "Recherchez la charité. Aspirez néanmoins* aux dons spirituels, mais surtout à celui de prophétie.",
+        "NAB": "Pursue love, but strive eagerly for the spiritual gifts, above all that you may prophesy.",
+        "VAT_ES": "Procuren alcanzar ese amor, y aspiren también a los dones espirituales, sobre todo al de la profecía.",
+        "CEI": "Ecco, io faccio un altro esempio: per tutto il tempo che l'erede è fanciullo, non è per nulla differente da uno schiavo, pure essendo padrone di tutto;"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Ὁ γὰρ λαλῶν γλώσσῃ οὐκ ἀνθρώποις λαλεῖ, ἀλλὰ τῷ θεῷ· οὐδεὶς γὰρ ἀκούει, πνεύματι δὲ λαλεῖ μυστήρια.",
+        "VUL": "Qui enim loquitur lingua, non hominibus loquitur, sed Deo : nemo enim audit. Spiritu autem loquitur mysteria.",
+        "SYN": "Ибо кто говорит на _незнакомом_ языке, тот говорит не людям, а Богу; потому что никто не понимает _его,_ он тайны говорит духом;",
+        "NEO": "En effet, celui qui parle en langue ne parle pas aux hommes, mais à Dieu, car personne ne le comprend, et c’est en esprit qu’il dit des mystères.",
+        "NAB": "For one who speaks in a tongue does not speak to human beings but to God, for no one listens; he utters mysteries in spirit.",
+        "VAT_ES": "Porque aquel que habla un lenguaje incomprensible no se dirige a los hombres sino a Dios, y nadie le entiende: dice en éxtasis cosas misteriosas.",
+        "CEI": "ma dipende da tutori e amministratori, fino al termine stabilito dal padre."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ προφητεύων ἀνθρώποις λαλεῖ οἰκοδομὴν καὶ παράκλησιν καὶ παραμυθίαν.",
+        "VUL": "Nam qui prophetat, hominibus loquitur ad ædificationem, et exhortationem, et consolationem.",
+        "SYN": "а кто пророчествует, тот говорит людям в назидание, увещание и утешение.",
+        "NEO": "Celui qui prophétise au contraire, parle aux hommes, les édifie, les exhorte, les console.",
+        "NAB": "On the other hand, one who prophesies does speak to human beings, for their building up, encouragement, and solace.",
+        "VAT_ES": "En cambio, el que profetiza habla a los hombres para edificarlos, exhortarlos y reconfortarlos.",
+        "CEI": "Così anche noi quando eravamo fanciulli, eravamo come schiavi degli elementi del mondo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ὁ λαλῶν γλώσσῃ ἑαυτὸν οἰκοδομεῖ, ὁ δὲ προφητεύων ἐκκλησίαν οἰκοδομεῖ.",
+        "VUL": "Qui loquitur lingua, semetipsum ædificat : qui autem prophetat, ecclesiam Dei ædificat.",
+        "SYN": "Кто говорит на _незнакомом_ языке, тот назидает себя; а кто пророчествует, тот назидает церковь.",
+        "NEO": "Celui qui parle en langue s’édifie lui-même ; celui qui prophétise édifie l’Église [de Dieu].",
+        "NAB": "Whoever speaks in a tongue builds himself up, but whoever prophesies builds up the church.",
+        "VAT_ES": "El que habla un lenguaje incomprensible se edifica a sí mismo, pero el que profetiza edifica a la comunidad.",
+        "CEI": "Ma quando venne la pienezza del tempo, Dio mandò il suo Figlio, nato da donna, nato sotto la legge,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Θέλω δὲ πάντας ὑμᾶς λαλεῖν γλώσσαις, μᾶλλον δὲ ἵνα προφητεύητε· μείζων γὰρ ὁ προφητεύων ἢ ὁ λαλῶν γλώσσαις, ἐκτὸς εἰ μὴ διερμηνεύει, ἵνα ἡ ἐκκλησία οἰκοδομὴν λάβῃ.",
+        "VUL": "Volo autem omnes vos loqui linguis : magis autem prophetare. Nam major est qui prophetat, quam qui loquitur linguis ; nisi forte interpretetur ut ecclesia ædificationem accipiat.",
+        "SYN": "Желаю, чтобы вы все говорили языками; но лучше, чтобы вы пророчествовали; ибо пророчествующий превосходнее того, кто говорит языками, разве он притом будет и изъяснять, чтобы церковь получила назидание.",
+        "NEO": "Je désire que vous parliez tous en langues, mais encore plus que vous prophétisiez ; car celui qui prophétise est plus grand que celui qui parle en langues, à moins que ce dernier n’interprète ce qu’il dit*, pour que l’Église en reçoive de l’édification.",
+        "NAB": "Now I should like all of you to speak in tongues, but even more to prophesy. One who prophesies is greater than one who speaks in tongues, unless he interprets, so that the church may be built up.",
+        "VAT_ES": "Mi deseo es que todos ustedes tengan el don de lenguas, pero prefiero que profeticen, porque el que profetiza aventaja al que habla un lenguaje incomprensible. A no ser que este último también interprete ese lenguaje, para edificación de la comunidad.",
+        "CEI": "per riscattare coloro che erano sotto la legge, perché ricevessimo l'adozione a figli."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Νυνὶ δέ, ἀδελφοί, ἐὰν ἔλθω πρὸς ὑμᾶς γλώσσαις λαλῶν, τί ὑμᾶς ὠφελήσω, ἐὰν μὴ ὑμῖν λαλήσω ἢ ἐν ἀποκαλύψει, ἢ ἐν γνώσει, ἢ ἐν προφητείᾳ ἢ ἐν διδαχῇ;",
+        "VUL": "Nunc autem, fratres, si venero ad vos linguis loquens : quid vobis prodero, nisi vobis loquar aut in revelatione, aut in scientia, aut in prophetia, aut in doctrina ?",
+        "SYN": "Теперь, если я приду к вам, братия, и стану говорить на _незнакомых_ языках, то какую принесу вам пользу, когда не изъяснюсь вам или откровением, или познанием, или пророчеством, или учением?",
+        "NEO": "Voyons, frères, de quelle utilité vous serais-je, si je venais à vous parlant en langues, et si je ne vous parle pas par révélation,+ 14:6 XIV, 6. La révélation constitue la matière, le contenu de la \\+qt prophétie\\+qt* ; la \\+qt science\\+qt*, la matière de la \\+qt doctrine\\+qt* c.‑à-d. de l’\\+qt enseignement\\+qt*.* ou par science, ou par prophétie, ou par doctrine ?",
+        "NAB": "Now, brothers, if I should come to you speaking in tongues, what good will I do you if I do not speak to you by way of revelation, or knowledge, or prophecy, or instruction?",
+        "VAT_ES": "Supongamos, hermanos, que yo fuera a verlos y les hablara en esa forma, &iquest;de qué les serviría, si mi palabra no les aportara ni revelación, ni ciencia, ni profecía, ni enseñanza?",
+        "CEI": "E che voi siete figli ne è prova il fatto che Dio ha mandato nei nostri cuori lo Spirito del suo Figlio che grida: Abbà, Padre!"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ὅμως τὰ ἄψυχα φωνὴν διδόντα, εἴτε αὐλός, εἴτε κιθάρα, ἐὰν διαστολὴν τοῖς φθόγγοις μὴ διδῷ, πῶς γνωσθήσεται τὸ αὐλούμενον ἢ τὸ κιθαριζόμενον;",
+        "VUL": "Tamen quæ sine anima sunt vocem dantia, sive tibia, sive cithara ; nisi distinctionem sonituum dederint, quomodo scietur id quod canitur, aut quod citharizatur ?",
+        "SYN": "И бездушные _вещи,_ издающие звук, свирель или гусли, если не производят раздельных тонов, как распознать то, что играют на свирели или на гуслях?",
+        "NEO": "Si les objets inanimés qui rendent un son, comme une flûte ou une harpe, ne rendent pas des sons distincts, comment connaîtra-t-on ce qui est joué sur la flûte ou sur la harpe ?",
+        "NAB": "Likewise, if inanimate things that produce sound, such as flute or harp, do not give out the tones distinctly, how will what is being played on flute or harp be recognized?",
+        "VAT_ES": "Sucedería lo mismo que con los instrumentos de música, por ejemplo, la flauta o la cítara. Si las notas no suenan distintamente, nadie reconoce lo que se está ejecutando.",
+        "CEI": "Quindi non sei più schiavo, ma figlio; e se figlio, sei anche erede per volontà di Dio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Καὶ γὰρ ἐὰν ἄδηλον φωνὴν σάλπιγξ δῷ, τίς παρασκευάσεται εἰς πόλεμον;",
+        "VUL": "Etenim si incertam vocem det tuba, quis parabit se ad bellum ?",
+        "SYN": "И если труба будет издавать неопределенный звук, кто станет готовиться к сражению?",
+        "NEO": "Et si la trompette rend un son confus, qui se préparera au combat ?",
+        "NAB": "And if the bugle gives an indistinct sound, who will get ready for battle?",
+        "VAT_ES": "Y si la trompeta emite un sonido confuso, &iquest;quién se lanzará al combate?",
+        "CEI": "Ma un tempo, per la vostra ignoranza di Dio, eravate sottomessi a divinità, che in realtà non lo sono;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Οὕτως καὶ ὑμεῖς διὰ τῆς γλώσσης ἐὰν μὴ εὔσημον λόγον δῶτε, πῶς γνωσθήσεται τὸ λαλούμενον; Ἔσεσθε γὰρ εἰς ἀέρα λαλοῦντες.",
+        "VUL": "Ita et vos per linguam nisi manifestum sermonem dederitis : quomodo scietur id quod dicitur ? eritis enim in aëra loquentes.",
+        "SYN": "Так если и вы языком произносите невразумительные слова, то как узнают, что вы говорите? Вы будете говорить на ветер.",
+        "NEO": "De même vous, si vous ne faites pas entendre avec la langue une parole distincte, comment saura-t-on ce que vous dites ? Vous parlerez en l’air.",
+        "NAB": "Similarly, if you, because of speaking in tongues, do not utter intelligible speech, how will anyone know what is being said? For you will be talking to the air.",
+        "VAT_ES": "Así les pasa a ustedes: si no hablan de manera inteligible, &iquest;cómo se comprenderá lo que dicen? Estarían hablando en vano.",
+        "CEI": "ora invece che avete conosciuto Dio, anzi da lui siete stati conosciuti, come potete rivolgervi di nuovo a quei deboli e miserabili elementi, ai quali di nuovo come un tempo volete servire?"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Τοσαῦτα, εἰ τύχοι, γένη φωνῶν ἐστὶν ἐν κόσμῳ καὶ οὐδὲν αὐτῶν ἄφωνον.",
+        "VUL": "Tam multa, ut puta genera linguarum sunt in hoc mundo : et nihil sine voce est.",
+        "SYN": "Сколько, например, различных слов в мире, и ни одного из них нет без значения.",
+        "NEO": "Quelque nombreuses que puissent être dans le monde les diverses langues, il n’en est aucune qui consiste en sons inintelligibles.",
+        "NAB": "It happens that there are many different languages in the world, and none is meaningless;",
+        "VAT_ES": "No sé cuántos idiomas diversos hay en el mundo, y cada uno tienen sus propias palabras.",
+        "CEI": "Voi infatti osservate giorni, mesi, stagioni e anni!"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Ἐὰν οὖν μὴ εἰδῶ τὴν δύναμιν τῆς φωνῆς, ἔσομαι τῷ λαλοῦντι βάρβαρος, καὶ ὁ λαλῶν ἐν ἐμοὶ βάρβαρος.",
+        "VUL": "Si ergo nesciero virtutem vocis, ero ei, cui loquor, barbarus : et qui loquitur, mihi barbarus.",
+        "SYN": "Но если я не разумею значения слов, то я для говорящего чужестранец, и говорящий для меня чужестранец.",
+        "NEO": "Si donc j’ignore la valeur du son, je serai un barbare pour celui qui parle, et celui qui parle sera un barbare pour moi.",
+        "NAB": "but if I do not know the meaning of a language, I shall be a foreigner to one who speaks it, and one who speaks it a foreigner to me.",
+        "VAT_ES": "Pero si ignoro el sentido de las palabras, seré como un extranjero para el que me habla y él lo será para mí.",
+        "CEI": "Temo per voi che io mi sia affaticato invano a vostro riguardo."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Οὕτως καὶ ὑμεῖς, ἐπεὶ ζηλωταί ἐστε πνευμάτων, πρὸς τὴν οἰκοδομὴν τῆς ἐκκλησίας ζητεῖτε ἵνα περισσεύητε.",
+        "VUL": "Sic et vos, quoniam æmulatores estis spirituum, ad ædificationem ecclesiæ quærite ut abundetis.",
+        "SYN": "Так и вы, ревнуя о _дарах_ духовных, старайтесь обогатиться _ими_ к назиданию церкви.",
+        "NEO": "De même vous aussi, puisque vous aspirez aux dons spirituels, que ce soit pour l’édification de l’Église que vous cherchiez à en avoir abondamment.",
+        "NAB": "So with yourselves: since you strive eagerly for spirits, seek to have an abundance of them for building up the church.",
+        "VAT_ES": "Así, ya que ustedes ambicionan tanto los dones espirituales, procuren abundar en aquellos que sirven para edificación de la comunidad.",
+        "CEI": "Siate come me, ve ne prego, poiché anch'io sono stato come voi, fratelli. Non mi avete offeso in nulla."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Διόπερ ὁ λαλῶν γλώσσῃ προσευχέσθω ἵνα διερμηνεύῃ.",
+        "VUL": "Et ideo qui loquitur lingua, oret ut interpretetur.",
+        "SYN": "А потому, говорящий на _незнакомом_ языке, молись о даре истолкования.",
+        "NEO": "C’est pourquoi, que celui qui parle en langue prie pour obtenir le don* d’interpréter.",
+        "NAB": "Therefore, one who speaks in a tongue should pray to be able to interpret.",
+        "VAT_ES": "Por esta razón, el que habla un lenguaje incomprensible debe orar pidiendo el don de interpretarlo.",
+        "CEI": "Sapete che fu a causa di una malattia del corpo che vi annunziai la prima volta il vangelo;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ἐὰν γὰρ προσεύχωμαι γλώσσῃ, τὸ πνεῦμά μου προσεύχεται, ὁ δὲ νοῦς μου ἄκαρπός ἐστιν.",
+        "VUL": "Nam si orem lingua, spiritus meus orat, mens autem mea sine fructu est.",
+        "SYN": "Ибо когда я молюсь на _незнакомом_ языке, то хотя дух мой и молится, но ум мой остается без плода.",
+        "NEO": "Car si je prie en langue, mon esprit+ 14:14 14. Mon esprit, ce principe de vie plus intime (vers. 2) qui, excité par l’Esprit de Dieu, sans le travail de la réflexion et du raisonnement (ce qui est le propre de l’activité intellectuelle, du νοῦς \\+qt mens\\+qt*) sent et perçoit le divin. Pendant l’extase de celui qui parle en langue, l’intelligence reste inactive ; elle est \\+qt sans fruit\\+qt*, pour elle-même et pour les autres.* est en prière, mais mon intelligence demeure sans fruit.",
+        "NAB": "(For) if I pray in a tongue, my spirit is at prayer but my mind is unproductive.",
+        "VAT_ES": "Porque si oro en un lenguaje incomprensible, mi espíritu ora, pero mi inteligencia no saca ningún provecho.",
+        "CEI": "e quella che nella mia carne era per voi una prova non l'avete disprezzata né respinta, ma al contrario mi avete accolto come un angelo di Dio, come Cristo Gesù."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Τί οὖν ἐστίν; Προσεύξομαι τῷ πνεύματι, προσεύξομαι δὲ καὶ τῷ νοΐ· ψαλῶ τῷ πνεύματι, ψαλῶ δὲ καὶ τῷ νοΐ.",
+        "VUL": "Quid ergo est ? Orabo spiritu, orabo et mente : psallam spiritu, psallam et mente.",
+        "SYN": "Что же делать? Стану молиться духом, стану молиться и умом; буду петь духом, буду петь и умом.",
+        "NEO": "Que faire donc ? Je prierai avec l’esprit, mais je prierai aussi avec l’intelligence ; je chanterai avec l’esprit, mais je chanterai aussi avec l’intelligence.",
+        "NAB": "So what is to be done? I will pray with the spirit, but I will also pray with the mind. I will sing praise with the spirit, but I will also sing praise with the mind.",
+        "VAT_ES": "&iquest;Qué debo hacer entonces? Orar con el espíritu y también con la inteligencia, cantar himnos con el espíritu y también con la inteligencia.",
+        "CEI": "Dove sono dunque le vostre felicitazioni? Vi rendo testimonianza che, se fosse stato possibile, vi sareste cavati anche gli occhi per darmeli."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Ἐπεὶ ἐὰν εὐλογήσῃς τῷ πνεύματι, ὁ ἀναπληρῶν τὸν τόπον τοῦ ἰδιώτου πῶς ἐρεῖ τὸ Ἀμὴν ἐπὶ τῇ σῇ εὐχαριστίᾳ, ἐπειδὴ τί λέγεις οὐκ οἶδεν;",
+        "VUL": "Ceterum si benedixeris spiritu, qui supplet locum idiotæ, quomodo dicet : Amen, super tuam benedictionem ? quoniam quid dicas, nescit.",
+        "SYN": "Ибо если ты будешь благословлять духом, то стоящий на месте простолюдина как скажет: \"аминь\" при твоем благодарении? Ибо он не понимает, что ты говоришь.",
+        "NEO": "Autrement, si tu rends grâces avec l’esprit, comment celui qui est dans les rangs de l’homme du peuple+ 14:16 16. De l’homme du peuple, c.‑à-d. du simple assistant par opposition au glossolale qui remplit en ce moment une fonction publique. Comp. v. 23, 24. Act. iv, 13. Cet usage de répondre \\+qt Amen\\+qt*, emprunté à la Synagogue (Comp. Deut. xxvii, 15 sv. ; I Par. xvi, 36 ; Ps. cvi. (105) 48 etc.) est demeuré dans l’Église.* répondra-t-il « Amen ! » à ton action de grâces, puisqu’il ne sait pas ce que tu dis ?",
+        "NAB": "Otherwise, if you pronounce a blessing (with) the spirit, how shall one who holds the place of the uninstructed say the \"Amen\" to your thanksgiving, since he does not know what you are saying?",
+        "VAT_ES": "Si bendices a Dios solamente con el espíritu, &iquest;cómo podrá el no iniciado decir «Amén» a tu acción de gracias, ya que no entienden lo que estás diciendo?",
+        "CEI": "Sono dunque diventato vostro nemico dicendovi la verità?"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Σὺ μὲν γὰρ καλῶς εὐχαριστεῖς, ἀλλ’ ὁ ἕτερος οὐκ οἰκοδομεῖται.",
+        "VUL": "Nam tu quidem bene gratias agis, sed alter non ædificatur.",
+        "SYN": "Ты хорошо благодаришь, но другой не назидается.",
+        "NEO": "Ton hymne d’action de grâces est sans doute fort beau ; mais lui n’en est pas édifié.",
+        "NAB": "For you may be giving thanks very well, but the other is not built up.",
+        "VAT_ES": "Sin duda, tu acción de gracias es excelente, pero eso no sirve de edificación para el otro.",
+        "CEI": "Costoro si danno premura per voi, ma non onestamente; vogliono mettervi fuori, perché mostriate zelo per loro."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Εὐχαριστῶ τῷ θεῷ μου, πάντων ὑμῶν μᾶλλον γλώσσαις λαλῶν·",
+        "VUL": "Gratias ago Deo meo, quod omnium vestrum lingua loquor.",
+        "SYN": "Благодарю Бога моего: я более всех вас говорю языками;",
+        "NEO": "Je rends grâces à [mon] Dieu de ce que je parle en langues plus que vous tous ;+ 14:18 18. Vulg., de ce que je vous parle la langue de vous tous, toutes les langues. Comp. Act. xiv. 10 sv.*",
+        "NAB": "I give thanks to God that I speak in tongues more than any of you,",
+        "VAT_ES": "Yo doy gracias a Dios porque tengo el don de lenguas más que todos ustedes.",
+        "CEI": "È bello invece essere circondati di premure nel bene sempre e non solo quando io mi trovo presso di voi,"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "ἀλλ’ ἐν ἐκκλησίᾳ θέλω πέντε λόγους διὰ τοῦ νοός μου λαλῆσαι, ἵνα καὶ ἄλλους κατηχήσω, ἢ μυρίους λόγους ἐν γλώσσῃ.",
+        "VUL": "Sed in ecclesia volo quinque verba sensu meo loqui, ut et alios instruam : quam decem millia verborum in lingua.",
+        "SYN": "но в церкви хочу лучше пять слов сказать умом моим, чтобы и других наставить, нежели тьму слов на _незнакомом_ языке.",
+        "NEO": "mais, dans l’Église, j’aime mieux dire cinq paroles avec mon intelligence, afin d’instruire aussi les autres, que dix mille paroles en langue.",
+        "NAB": "but in the church I would rather speak five words with my mind, so as to instruct others also, than ten thousand words in a tongue.",
+        "VAT_ES": "Sin embargo, cuando estoy en la asamblea prefiero decir cinco palabras inteligibles, para instruir a los demás, que diez mil en un lenguaje incomprensible.",
+        "CEI": "figlioli miei, che io di nuovo partorisco nel dolore finché non sia formato Cristo in voi!"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "¶Ἀδελφοί, μὴ παιδία γίνεσθε ταῖς φρεσίν· ἀλλὰ τῇ κακίᾳ νηπιάζετε, ταῖς δὲ φρεσὶν τέλειοι γίνεσθε.",
+        "VUL": "Fratres, nolite pueri effici sensibus, sed malitia parvuli estote : sensibus autem perfecti estote.",
+        "SYN": "Братия! не будьте дети умом: на злое будьте младенцы, а по уму будьте совершеннолетни.",
+        "NEO": "Frères, ne soyez pas des enfants sous le rapport du jugement ; mais faites-vous enfants sous le rapport de la malice, et, pour le jugement, soyez des hommes faits.",
+        "NAB": "Brothers, stop being childish in your thinking. In respect to evil be like infants, but in your thinking be mature.",
+        "VAT_ES": "Hermanos, no sean como niños para juzgar; séanlo para la malicia, pero juzguen como personas maduras.",
+        "CEI": "Vorrei essere vicino a voi in questo momento e poter cambiare il tono della mia voce, perché non so cosa fare a vostro riguardo."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Ἐν τῷ νόμῳ γέγραπται ὅτι Ἐν ἑτερογλώσσοις καὶ ἐν χείλεσιν ἑτέροις λαλήσω τῷ λαῷ τούτῳ, καὶ οὐδ’ οὕτως εἰσακούσονταί μου, λέγει κύριος.",
+        "VUL": "In lege scriptum est : Quoniam in aliis linguis et labiis aliis loquar populo huic : et nec sic exaudient me, dicit Dominus.",
+        "SYN": "В законе написано: иными языками и иными устами буду говорить народу сему; но и тогда не послушают Меня, говорит Господь.",
+        "NEO": "Il est écrit dans la Loi : « C’est par des hommes d’une autre langue et par des lèvres étrangères que je parlerai à ce peuple, et même ainsi ils ne m’écouteront pas, dit le Seigneur. »+ 14:21 21. D’Is. xxviii, 11 sv.*",
+        "NAB": "It is written in the law: \"By people speaking strange tongues and by the lips of foreigners I will speak to this people, and even so they will not listen to me, says the Lord.\"",
+        "VAT_ES": "En la Ley está escrito: Yo hablaré a este pueblo en lenguas extrañas y por boca de extranjeros; con todo, ni aun así me escucharán, dice el Señor.",
+        "CEI": "Ditemi, voi che volete essere sotto la legge: non sentite forse cosa dice la legge?"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Ὥστε αἱ γλῶσσαι εἰς σημεῖόν εἰσιν, οὐ τοῖς πιστεύουσιν, ἀλλὰ τοῖς ἀπίστοις· ἡ δὲ προφητεία, οὐ τοῖς ἀπίστοις, ἀλλὰ τοῖς πιστεύουσιν.",
+        "VUL": "Itaque linguæ in signum sunt non fidelibus, sed infidelibus : prophetiæ autem non infidelibus, sed fidelibus.",
+        "SYN": "Итак языки суть знамение не для верующих, а для неверующих; пророчество же не для неверующих, а для верующих.",
+        "NEO": "C’est donc que les langues sont un signe, non pour les croyants, mais pour les infidèles ; la prophétie, au contraire, est un signe,* non pour les infidèles, mais pour les croyants.",
+        "NAB": "Thus, tongues are a sign not for those who believe but for unbelievers, whereas prophecy is not for unbelievers but for those who believe.",
+        "VAT_ES": "Esto quiere decir que el don de lenguas es un signo, no para los que creen, sino para los que se niegan a creer; la profecía, en cambio, es para los que tienen fe.",
+        "CEI": "Sta scritto infatti che Abramo ebbe due figli, uno dalla schiava e uno dalla donna libera."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Ἐὰν οὖν συνέλθῃ ἡ ἐκκλησία ὅλη ἐπὶ τὸ αὐτό, καὶ πάντες γλώσσαις λαλῶσιν, εἰσέλθωσιν δὲ ἰδιῶται ἢ ἄπιστοι, οὐκ ἐροῦσιν ὅτι μαίνεσθε;",
+        "VUL": "Si ergo conveniat universa ecclesia in unum, et omnes linguis loquantur, intrent autem idiotæ, aut infideles : nonne dicent quod insanitis ?",
+        "SYN": "Если вся церковь сойдется вместе, и все станут говорить _незнакомыми_ языками, и войдут к вам незнающие или неверующие, то не скажут ли, что вы беснуетесь?",
+        "NEO": "Si donc, l’Église entière se trouvant réunie en assemblée, tous parlent en langues, et qu’il survienne des hommes non initiés ou des infidèles, ne diront-ils pas que vous êtes des fous ?",
+        "NAB": "So if the whole church meets in one place and everyone speaks in tongues, and then uninstructed people or unbelievers should come in, will they not say that you are out of your minds?",
+        "VAT_ES": "Por otra parte, si al reunirse la asamblea, todos se ponen a hablar en un lenguaje incomprensible y entran algunos que no están iniciados o no son creyentes, seguramente pensarán que ustedes están locos.",
+        "CEI": "Ma quello dalla schiava è nato secondo la carne; quello dalla donna libera, in virtù della promessa."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Ἐὰν δὲ πάντες προφητεύωσιν, εἰσέλθῃ δέ τις ἄπιστος ἢ ἰδιώτης, ἐλέγχεται ὑπὸ πάντων, ἀνακρίνεται ὑπὸ πάντων,",
+        "VUL": "Si autem omnes prophetent, intret autem quis infidelis, vel idiota, convincitur ab omnibus, dijudicatur ab omnibus :",
+        "SYN": "Но когда все пророчествуют, и войдет кто неверующий или незнающий, то он всеми обличается, всеми судится.",
+        "NEO": "Mais si tous prophétisent, et qu’il survienne un infidèle ou un homme non initié, il est convaincu par tous, il est jugé par tous,",
+        "NAB": "But if everyone is prophesying, and an unbeliever or uninstructed person should come in, he will be convinced by everyone and judged by everyone,",
+        "VAT_ES": "En cambio, si todos profetizan y entra alguno de esos hombres, todos podrán convencerlo y examinarlo.",
+        "CEI": "Ora, tali cose sono dette per allegoria: le due donne infatti rappresentano le due Alleanze; una, quella del monte Sinai, che genera nella schiavitù, rappresentata da Agar"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "καὶ οὕτως τὰ κρυπτὰ τῆς καρδίας αὐτοῦ φανερὰ γίνεται· καὶ οὕτως πεσὼν ἐπὶ πρόσωπον προσκυνήσει τῷ θεῷ ἀπαγγέλλων ὅτι Ὁ θεὸς ὄντως ἐν ὑμῖν ἐστιν.",
+        "VUL": "occulta cordis ejus manifesta fiunt : et ita cadens in faciem adorabit Deum, pronuntians quod vere Deus in vobis sit.",
+        "SYN": "И таким образом тайны сердца его обнаруживаются, и он падет ниц, поклонится Богу и скажет: истинно с вами Бог.",
+        "NEO": "les secrets de son cœur sont dévoilés, de telle sorte que, tombant sur sa face, il adorera Dieu, et publiera que Dieu est vraiment au milieu de vous.",
+        "NAB": "and the secrets of his heart will be disclosed, and so he will fall down and worship God, declaring, \"God is really in your midst.\"",
+        "VAT_ES": "Así quedarán manifiestos los secretos de su corazón, y él, cayendo de rodillas, adorará a Dios y proclamará que Dios está realmente entre ustedes.",
+        "CEI": "- il Sinai è un monte dell'Arabia -; essa corrisponde alla Gerusalemme attuale, che di fatto è schiava insieme ai suoi figli."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "¶Τί οὖν ἐστίν, ἀδελφοί; Ὅταν συνέρχησθε, ἕκαστος ὑμῶν ψαλμὸν ἔχει, διδαχὴν ἔχει, γλῶσσαν ἔχει, ἀποκάλυψιν ἔχει, ἑρμηνείαν ἔχει. Πάντα πρὸς οἰκοδομὴν γινέσθω.",
+        "VUL": "Quid ergo est, fratres ? Cum convenitis, unusquisque vestrum psalmum habet, doctrinam habet, apocalypsim habet, linguam habet, interpretationem habet : omnia ad ædificationem fiant.",
+        "SYN": "Итак что же, братия? Когда вы сходитесь, и у каждого из вас есть псалом, есть поучение, есть язык, есть откровение, есть истолкование, -- все сие да будет к назиданию.",
+        "NEO": "Que faire donc, mes frères ? Lorsque vous vous assemblez, tel d’entre vous a un cantique, tel une instruction, tel une révélation, tel un discours en langue, tel une interprétation, que tout se passe de manière à édifier.",
+        "NAB": "So what is to be done, brothers? When you assemble, one has a psalm, another an instruction, a revelation, a tongue, or an interpretation. Everything should be done for building up.",
+        "VAT_ES": "Hermanos, &iquest;qué conclusión sacaremos de todo esto? Cuando se reúnen, uno puede cantar salmos, otro enseñar, o transmitir una revelación, o pronunciar un discurso en un lenguaje incomprensible, o dar la interpretación del mismo. Que todo sirva para la edificación común.",
+        "CEI": "Invece la Gerusalemme di lassù è libera ed è la nostra madre."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Εἴτε γλώσσῃ τις λαλεῖ, κατὰ δύο ἢ τὸ πλεῖστον τρεῖς, καὶ ἀνὰ μέρος, καὶ εἷς διερμηνευέτω·",
+        "VUL": "Sive lingua quis loquitur, secundum duos, aut ut multum tres, et per partes, et unus interpretetur.",
+        "SYN": "Если кто говорит на _незнакомом_ языке, _говорите_ двое, или много трое, и то порознь, а один изъясняй.",
+        "NEO": "Si l’on parle en langue,",
+        "NAB": "If anyone speaks in a tongue, let it be two or at most three, and each in turn, and one should interpret.",
+        "VAT_ES": "&iquest;Se tiene el don de lenguas? Que hablen dos, o a lo sumo tres, y por turno, y que alguien interprete.",
+        "CEI": "Sta scritto infatti: Rallègrati, sterile, che non partorisci, grida nell'allegria tu che non conosci i dolori del parto, perché molti sono i figli dell'abbandonata, più di quelli della donna che ha marito."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "ἐὰν δὲ μὴ ᾖ διερμηνευτής, σιγάτω ἐν ἐκκλησίᾳ· ἑαυτῷ δὲ λαλείτω καὶ τῷ θεῷ.",
+        "VUL": "Si autem non fuerit interpres, taceat in ecclesia : sibi autem loquatur, et Deo.",
+        "SYN": "Если же не будет истолкователя, то молчи в церкви, а говори себе и Богу.",
+        "NEO": "s’il n’y a pas d’interprète, qu’on se taise dans l’assemblée et qu’on se parle à soi-même et à Dieu.",
+        "NAB": "But if there is no interpreter, the person should keep silent in the church and speak to himself and to God.",
+        "VAT_ES": "Si no hay intérprete, que se callen y que cada uno hable consigo mismo y con Dios.",
+        "CEI": "Ora voi, fratelli, siete figli della promessa, alla maniera di Isacco."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Προφῆται δὲ δύο ἢ τρεῖς λαλείτωσαν, καὶ οἱ ἄλλοι διακρινέτωσαν.",
+        "VUL": "Prophetæ autem duo, aut tres dicant, et ceteri dijudicent.",
+        "SYN": "И пророки пусть говорят двое или трое, а прочие пусть рассуждают.",
+        "NEO": "Pour les prophètes, qu’il y en ait deux ou trois à parler, et que les autres jugent ;",
+        "NAB": "Two or three prophets should speak, and the others discern.",
+        "VAT_ES": "Con respecto a los profetas, que hablen dos o tres y que los demás juzguen lo que ellos dicen.",
+        "CEI": "E come allora colui che era nato secondo la carne perseguitava quello nato secondo lo spirito, così accade anche ora."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Ἐὰν δὲ ἄλλῳ ἀποκαλυφθῇ καθημένῳ, ὁ πρῶτος σιγάτω.",
+        "VUL": "Quod si alii revelatum fuerit sedenti, prior taceat.",
+        "SYN": "Если же другому из сидящих будет откровение, то первый молчи.",
+        "NEO": "et si un autre, qui est assis, a une révélation, que le premier se taise.",
+        "NAB": "But if a revelation is given to another person sitting there, the first one should be silent.",
+        "VAT_ES": "Si algún otro asistente recibe una revelación, que se calle el que está hablando.",
+        "CEI": "Però, che cosa dice la Scrittura? Manda via la schiava e suo figlio, perché il figlio della schiava non avrà eredità col figlio della donna libera."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "Δύνασθε γὰρ καθ’ ἕνα πάντες προφητεύειν, ἵνα πάντες μανθάνωσιν, καὶ πάντες παρακαλῶνται·",
+        "VUL": "Potestis enim omnes per singulos prophetare : ut omnes discant, et omnes exhortentur :",
+        "SYN": "Ибо все один за другим можете пророчествовать, чтобы всем поучаться и всем получать утешение.",
+        "NEO": "Car vous pouvez tous prophétiser l’un après l’autre, afin que tous soient instruits et que tous soient exhortés.",
+        "NAB": "For you can all prophesy one by one, so that all may learn and all be encouraged.",
+        "VAT_ES": "Así todos tendrán oportunidad de profetizar, uno por uno, para que todos sean instruidos y animados.",
+        "CEI": "Così, fratelli, noi non siamo figli di una schiava, ma di una donna libera."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "καὶ πνεύματα προφητῶν προφήταις ὑποτάσσεται.",
+        "VUL": "et spiritus prophetarum prophetis subjecti sunt.",
+        "SYN": "И духи пророческие послушны пророкам,",
+        "NEO": "Or les esprits des prophètes sont soumis aux prophètes,+ 14:32 32-33. Vulgate rattache au vers. 33 les mots : Comme (je l’enseigne) dans toutes les Églises des saints.*",
+        "NAB": "Indeed, the spirits of prophets are under the prophets' control,",
+        "VAT_ES": "Los que tienen el don de profecía deben ser capaces de controlar su inspiración,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Οὐ γάρ ἐστιν ἀκαταστασίας ὁ θεός, ἀλλὰ εἰρήνης, ὡς ἐν πάσαις ταῖς ἐκκλησίαις τῶν ἁγίων.",
+        "VUL": "Non enim est dissensionis Deus, sed pacis : sicut et in omnibus ecclesiis sanctorum doceo.",
+        "SYN": "потому что Бог не есть _Бог_ неустройства, но мира. Так _бывает_ во всех церквах у святых.",
+        "NEO": "car Dieu n’est pas un Dieu de désordre, mais de paix.",
+        "NAB": "since he is not the God of disorder but of peace. As in all the churches of the holy ones,",
+        "VAT_ES": "porque Dios quiere la paz y no el desorden. Como en todas las Iglesias de los santos,"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "¶Αἱ γυναῖκες ὑμῶν ἐν ταῖς ἐκκλησίαις σιγάτωσαν· οὐ γὰρ ἐπιτέτραπται αὐταῖς λαλεῖν, ἀλλ’ ὑποτάσσεσθαι, καθὼς καὶ ὁ νόμος λέγει.",
+        "VUL": "Mulieres in ecclesiis taceant, non enim permittitur eis loqui, sed subditas esse, sicut et lex dicit.",
+        "SYN": "Жены ваши в церквах да молчат, ибо не позволено им говорить, а быть в подчинении, как и закон говорит.",
+        "NEO": "que vos femmes se taisent dans les assemblées, car elles n’ont pas mission de parler ; mais qu’elles soient soumises, comme le dit aussi la Loi.",
+        "NAB": "women should keep silent in the churches, for they are not allowed to speak, but should be subordinate, as even the law says.",
+        "VAT_ES": "que las mujeres permanezcan calladas durante las asambleas: a ellas no les está permitido hablar. Que se sometan, como lo manda la Ley."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "Εἰ δέ τι μαθεῖν θέλουσιν, ἐν οἴκῳ τοὺς ἰδίους ἄνδρας ἐπερωτάτωσαν· αἰσχρὸν γάρ ἐστιν γυναιξὶν ἐν ἐκκλησίᾳ λαλεῖν.",
+        "VUL": "Si quid autem volunt discere, domi viros suos interrogent. Turpe est enim mulieri loqui in ecclesia.",
+        "SYN": "Если же они хотят чему научиться, пусть спрашивают _о_ _том_ дома у мужей своих; ибо неприлично жене говорить в церкви.",
+        "NEO": "Si elles veulent s’instruire sur quelque point, qu’elles interrogent leurs maris à la maison ; car il est malséant à une femme de parler dans une assemblée.",
+        "NAB": "But if they want to learn anything, they should ask their husbands at home. For it is improper for a woman to speak in the church.",
+        "VAT_ES": "Si necesitan alguna aclaración, que le pregunten al marido en su casa, porque no está bien que la mujer hable en las asambleas."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "Ἢ ἀφ’ ὑμῶν ὁ λόγος τοῦ θεοῦ ἐξῆλθεν; Ἢ εἰς ὑμᾶς μόνους κατήντησεν;",
+        "VUL": "An a vobis verbum Dei processit ? aut in vos solos pervenit ?",
+        "SYN": "Разве от вас вышло слово Божие? Или до вас одних достигло?",
+        "NEO": "Est-ce de chez vous que la parole de Dieu est sortie ? ou est-ce à vous seuls qu’elle est parvenue ?",
+        "NAB": "Did the word of God go forth from you? Or has it come to you alone?",
+        "VAT_ES": "&iquest;Acaso la Palabra de Dios ha salido de ustedes o ustedes son los únicos que la han recibido?"
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "¶Εἴ τις δοκεῖ προφήτης εἶναι ἢ πνευματικός, ἐπιγινωσκέτω ἃ γράφω ὑμῖν, ὅτι κυρίου εἰσὶν ἐντολαί.",
+        "VUL": "Si quis videtur propheta esse, aut spiritualis, cognoscat quæ scribo vobis, quia Domini sunt mandata.",
+        "SYN": "Если кто почитает себя пророком или духовным, тот да разумеет, что я пишу вам, ибо это заповеди Господни.",
+        "NEO": "Si quelqu’un croit être prophète ou riche en dons spirituels, qu’il reconnaisse que ces choses que je vous ai écrites sont des commandements du Seigneur.",
+        "NAB": "If anyone thinks that he is a prophet or a spiritual person, he should recognize that what I am writing to you is a commandment of the Lord.",
+        "VAT_ES": "Si alguien se tiene por profeta o se cree inspirado por el Espíritu, reconozca en esto que les escribo un mandato del Señor,"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "BYZ": "Εἰ δέ τις ἀγνοεῖ, ἀγνοείτω.",
+        "VUL": "Si quis autem ignorat, ignorabitur.",
+        "SYN": "А кто не разумеет, пусть не разумеет.",
+        "NEO": "Et s’il veut l’ignorer, qu’il l’ignore.+ 14:38 38. Qu’il l’ignore (en lisant avec de nombreux manuscrits ἀγνοεῖτω), je ne m’en mets pas en peine. Vulg. et plusieurs manuscrits grecs, ἀγνοεῖται, \\+qt il est\\+qt* ou \\+qt sera ignoré\\+qt*, comme un homme sans valeur.*",
+        "NAB": "If anyone does not acknowledge this, he is not acknowledged.",
+        "VAT_ES": "y si alguien no lo reconoce como tal, es porque Dios no lo ha reconocido a él."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "BYZ": "¶Ὥστε, ἀδελφοί, ζηλοῦτε τὸ προφητεύειν, καὶ τὸ λαλεῖν γλώσσαις μὴ κωλύετε·",
+        "VUL": "Itaque fratres æmulamini prophetare : et loqui linguis nolite prohibere.",
+        "SYN": "Итак, братия, ревнуйте о том, чтобы пророчествовать, но не запрещайте говорить и языками;",
+        "NEO": "Ainsi donc, mes frères, aspirez au don de prophétie, et n’empêchez pas de parler en langue.",
+        "NAB": "So, (my) brothers, strive eagerly to prophesy, and do not forbid speaking in tongues,",
+        "VAT_ES": "En conclusión, hermanos, aspiren al don de la profecía y no impidan que se hable en un lenguaje incomprensible."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "BYZ": "πάντα εὐσχημόνως καὶ κατὰ τάξιν γινέσθω.",
+        "VUL": "Omnia autem honeste, et secundum ordinem fiant.",
+        "SYN": "только все должно быть благопристойно и чинно.",
+        "NEO": "Mais que tout se fasse avec bienséance et avec ordre.",
+        "NAB": "but everything must be done properly and in order.",
+        "VAT_ES": "Pero todo debe hacerse con decoro y ordenadamente."
+      }
+    }
+  }
+}

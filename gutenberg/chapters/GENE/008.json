@@ -1,0 +1,411 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_008",
+  "book_key": "GENE",
+  "sequence": 8,
+  "chapter_in": {
+    "MT": 8,
+    "VUL": 8,
+    "LXX": 8
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יִּזְכֹּ֤ר אֱלֹהִים֙ אֶת נֹ֔חַ וְ/אֵ֤ת כָּל הַֽ/חַיָּה֙ וְ/אֶת כָּל הַ/בְּהֵמָ֔ה אֲשֶׁ֥ר אִתּ֖/וֹ בַּ/תֵּבָ֑ה וַ/יַּעֲבֵ֨ר אֱלֹהִ֥ים ר֨וּחַ֙ עַל הָ/אָ֔רֶץ וַ/יָּשֹׁ֖כּוּ הַ/מָּֽיִם׃",
+        "VUL": "Recordatus autem Deus Noë, cunctorumque animantium, et omnium jumentorum, quæ erant cum eo in arca, adduxit spiritum super terram, et imminutæ sunt aquæ.",
+        "LXX": "Καὶ ἐμνήσθη ὁ θεὸς τοῦ Νῶε, καὶ πάντων τῶν θηρίων καὶ πάντων τῶν κτηνῶν καὶ πάντων τῶν πετεινῶν καὶ πάντων τῶν ἑρπετῶν ὅσα ἦν μετ’ αὐτοῦ ἐν τῇ κιβωτῷ· καὶ ἐπήγαγεν ὁ θεὸς πνεῦμα ἐπὶ τὴν γῆν, καὶ ἐκόπασεν τὸ ὕδωρ.",
+        "NAB": "and then God remembered Noah and all the animals, wild and tame, that were with him in the ark. So God made a wind sweep over the earth, and the waters began to subside.",
+        "SYN": "И вспомнил Бог о Ное, и о всех зверях, и о всех скотах, (и о всех птицах, и о всех гадах пресмыкающихся,) бывших с ним в ковчеге; и навел Бог ветер на землю, и воды остановились.",
+        "NEO": "Dieu se souvint de Noé, de toutes les bêtes et de tous les animaux domestiques qui étaient avec lui dans l’arche, et Dieu fit passer un vent sur la terre, et les eaux baissèrent ;",
+        "VAT_ES": "Entonces Dios se acordó de Noé y de todos los animales salvajes y domésticos que estaban con él en el arca. Hizo soplar un viento sobre la tierra, y las aguas empezaron a bajar.",
+        "CEI": "Dio si ricordò di Noè, di tutte le fiere e di tutti gli animali domestici che erano con lui nell'arca. Dio fece passare un vento sulla terra e le acque si abbassarono."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּסָּֽכְרוּ֙ מַעְיְנֹ֣ת תְּה֔וֹם וַֽ/אֲרֻבֹּ֖ת הַ/שָּׁמָ֑יִם וַ/יִּכָּלֵ֥א הַ/גֶּ֖שֶׁם מִן הַ/שָּׁמָֽיִם׃",
+        "VUL": "Et clausi sunt fontes abyssi, et cataractæ cæli : et prohibitæ sunt pluviæ de cælo.",
+        "LXX": "καὶ ἀπεκαλύφθησαν αἱ πηγαὶ τῆς ἀβύσσου καὶ οἱ καταράκται τοῦ οὐρανοῦ, καὶ συνεσχέθη ὁ ὑετὸς ἀπὸ τοῦ οὐρανοῦ,",
+        "NAB": "The fountains of the abyss and the floodgates of the sky were closed, and the downpour from the sky was held back.",
+        "SYN": "И закрылись источники бездны и окна небесные, и перестал дождь с неба.",
+        "NEO": "les sources de l’abîme et les écluses du ciel se fermèrent, et la pluie cessa de tomber du ciel.",
+        "VAT_ES": "Se cerraron las fuentes del océano y las compuertas del cielo, y cesó la fuerte lluvia que caía del cielo.",
+        "CEI": "Le fonti dell'abisso e le cateratte del cielo furono chiuse e fu trattenuta la pioggia dal cielo;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יָּשֻׁ֧בוּ הַ/מַּ֛יִם מֵ/עַ֥ל הָ/אָ֖רֶץ הָל֣וֹךְ וָ/שׁ֑וֹב וַ/יַּחְסְר֣וּ הַ/מַּ֔יִם מִ/קְצֵ֕ה חֲמִשִּׁ֥ים וּ/מְאַ֖ת יֽוֹם׃",
+        "VUL": "Reversæque sunt aquæ de terra euntes et redeuntes : et cperunt minui post centum quinquaginta dies.",
+        "LXX": "καὶ ἐνεδίδου τὸ ὕδωρ πορευόμενον ἀπὸ τῆς γῆς· ἐνεδίδου τὸ ὕδωρ καὶ ἠλαττονοῦτο μετὰ πεντήκοντα καὶ ἑκατὸν ἡμέρας.",
+        "NAB": "Gradually the waters receded from the earth. At the end of one hundred and fifty days, the waters had so diminished",
+        "SYN": "Вода же постепенно возвращалась с земли, и стала убывать вода по окончании ста пятидесяти дней.",
+        "NEO": "Les eaux se retirèrent de dessus la terre, allant et revenant, et elles s’abaissèrent au bout de cent cinquante jours.",
+        "VAT_ES": "Poco a poco las aguas se fueron retirando de la tierra; y al cabo de ciento cincuenta días ya habían disminuido tanto,",
+        "CEI": "le acque andarono via via ritirandosi dalla terra e calarono dopo centocinquanta giorni."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/תָּ֤נַח הַ/תֵּבָה֙ בַּ/חֹ֣דֶשׁ הַ/שְּׁבִיעִ֔י בְּ/שִׁבְעָה עָשָׂ֥ר י֖וֹם לַ/חֹ֑דֶשׁ עַ֖ל הָרֵ֥י אֲרָרָֽט׃",
+        "VUL": "Requievitque arca mense septimo, vigesimo septimo die mensis, super montes Armeniæ.",
+        "LXX": "καὶ ἐκάθισεν ἡ κιβωτὸς ἐν μηνὶ τῷ ἑβδόμῳ, ἑβδόμῃ καὶ εἰκάδι τοῦ μηνός, ἐπὶ τὰ ὄρη τὰ Ἀραράτ.",
+        "NAB": "that, in the seventh month, on the seventeenth day of the month, the ark came to rest on the mountains of Ararat.",
+        "SYN": "И остановился ковчег в седьмом месяце, в семнадцатый день месяца, на горах Араратских.",
+        "NEO": "Au septième mois, le dix-septième jour du mois, l’arche s’arrêta sur les montagnes d’Ararat.",
+        "VAT_ES": "que el decimoséptimo día del séptimo mes, el arca se detuvo sobre las montañas de Ararat.",
+        "CEI": "Nel settimo mese, il diciasette del mese, l'arca si posò sui monti dell'Araràt."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/הַ/מַּ֗יִם הָיוּ֙ הָל֣וֹךְ וְ/חָס֔וֹר עַ֖ד הַ/חֹ֣דֶשׁ הָֽ/עֲשִׂירִ֑י בָּֽ/עֲשִׂירִי֙ בְּ/אֶחָ֣ד לַ/חֹ֔דֶשׁ נִרְא֖וּ רָאשֵׁ֥י הֶֽ/הָרִֽים׃",
+        "VUL": "At vero aquæ ibant et decrescebant usque ad decimum mensem : decimo enim mense, primo die mensis, apparuerunt cacumina montium.",
+        "LXX": "τὸ δὲ ὕδωρ πορευόμενον ἠλαττονοῦτο ἕως τοῦ δεκάτου μηνός· ἐν δὲ τῷ ἑνδεκάτῳ μηνί, τῇ πρώτῃ τοῦ μηνός, ὤφθησαν αἱ κεφαλαὶ τῶν ὀρέων.",
+        "NAB": "The waters continued to diminish until the tenth month, and on the first day of the tenth month the tops of the mountains appeared.",
+        "SYN": "Вода постоянно убывала до десятого месяца; в первый день десятого месяца показались верхи гор.",
+        "NEO": "Les eaux allèrent se retirant jusqu’au dixième mois ; et, au dixième mois, le premier jour du mois, apparurent les sommets des montagnes.",
+        "VAT_ES": "Así continuaron disminuyendo paulatinamente hasta el décimo mes; y el primer día del décimo mes aparecieron las cimas de las montañas.",
+        "CEI": "Le acque andarono via via diminuendo fino al decimo mese. Nel decimo mese, il primo giorno del mese, apparvero le cime dei monti."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִ֕י מִ/קֵּ֖ץ אַרְבָּעִ֣ים י֑וֹם וַ/יִּפְתַּ֣ח נֹ֔חַ אֶת חַלּ֥וֹן הַ/תֵּבָ֖ה אֲשֶׁ֥ר עָשָֽׂה׃",
+        "VUL": "Cumque transissent quadraginta dies, aperiens Noë fenestram arcæ, quam fecerat, dimisit corvum,",
+        "LXX": "Καὶ ἐγένετο μετὰ τεσσεράκοντα ἡμέρας ἠνέῳξεν Νῶε τὴν θυρίδα τῆς κιβωτοῦ ἣν ἐποίησεν,",
+        "NAB": "At the end of forty days Noah opened the hatch he had made in the ark,",
+        "SYN": "По прошествии сорока дней Ной открыл сделанное им окно ковчега",
+        "NEO": "Au bout de quarante jours, Noé ouvrit la fenêtre qu’il avait faite à l’arche,",
+        "VAT_ES": "Al cabo de cuarenta días, Noé abrió la ventana que había hecho en el arca,",
+        "CEI": "Trascorsi quaranta giorni, Noè aprì la finestra che aveva fatta nell'arca e fece uscire un corvo per vedere se le acque si fossero ritirate."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יְשַׁלַּ֖ח אֶת הָֽ/עֹרֵ֑ב וַ/יֵּצֵ֤א יָצוֹא֙ וָ/שׁ֔וֹב עַד יְבֹ֥שֶׁת הַ/מַּ֖יִם מֵ/עַ֥ל הָ/אָֽרֶץ׃",
+        "VUL": "qui egrediebatur, et non revertebatur, donec siccarentur aquæ super terram.",
+        "LXX": "καὶ ἀπέστειλεν τὸν κόρακα τοῦ ἰδεῖν εἰ κεκόπακεν τὸ ὕδωρ· καὶ ἐξελθὼν οὐχ ὑπέστρεψεν ἕως τοῦ ξηρανθῆναι τὸ ὕδωρ ἀπὸ τῆς γῆς.",
+        "NAB": "and he sent out a raven, to see if the waters had lessened on the earth. It flew back and forth until the waters dried off from the earth.",
+        "SYN": "и выпустил ворона, [чтобы видеть, убыла ли вода с земли,] который, вылетев, отлетал и прилетал, пока осушилась земля от воды.",
+        "NEO": "et lâcha le corbeau, qui sortit, allant et revenant, jusqu’à ce que les eaux fussent séchées au-dessus de la terre.",
+        "VAT_ES": "y soltó un cuervo, el cual revoloteó, yendo y viniendo hasta que la tierra estuvo seca.",
+        "CEI": "Esso uscì andando e tornando finché si prosciugarono le acque sulla terra."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יְשַׁלַּ֥ח אֶת הַ/יּוֹנָ֖ה מֵ/אִתּ֑/וֹ לִ/רְאוֹת֙ הֲ/קַ֣לּוּ הַ/מַּ֔יִם מֵ/עַ֖ל פְּנֵ֥י הָֽ/אֲדָמָֽה׃",
+        "VUL": "Emisit quoque columbam post eum, ut videret si jam cessassent aquæ super faciem terræ.",
+        "LXX": "καὶ ἀπέστειλεν τὴν περιστερὰν ὀπίσω αὐτοῦ ἰδεῖν εἰ κεκόπακεν τὸ ὕδωρ ἀπὸ τῆς γῆς.",
+        "NAB": "Then he sent out a dove, to see if the waters had lessened on the earth.",
+        "SYN": "Потом выпустил от себя голубя, чтобы видеть, сошла ли вода с лица земли,",
+        "NEO": "Il lâcha ensuite la colombe d’auprès de lui, pour voir si les eaux avaient diminué de la surface de la terre.",
+        "VAT_ES": "Después soltó una paloma, para ver si las aguas ya habían bajado.",
+        "CEI": "Noè poi fece uscire una colomba, per vedere se le acque si fossero ritirate dal suolo;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא מָצְאָה֩ הַ/יּוֹנָ֨ה מָנ֜וֹחַ לְ/כַף רַגְלָ֗/הּ וַ/תָּ֤שָׁב אֵלָי/ו֙ אֶל הַ/תֵּבָ֔ה כִּי מַ֖יִם עַל פְּנֵ֣י כָל הָ/אָ֑רֶץ וַ/יִּשְׁלַ֤ח יָד/וֹ֙ וַ/יִּקָּחֶ֔/הָ וַ/יָּבֵ֥א אֹתָ֛/הּ אֵלָ֖י/ו אֶל הַ/תֵּבָֽה׃",
+        "VUL": "Quæ cum non invenisset ubi requiesceret pes ejus, reversa est ad eum in arcam : aquæ enim erant super universam terram : extenditque manum, et apprehensam intulit in arcam.",
+        "LXX": "καὶ οὐχ εὑροῦσα ἡ περιστερὰ ἀνάπαυσιν τοῖς ποσὶν αὐτῆς ἀνέστρεψεν πρὸς αὐτὸν εἰς τὴν κιβωτόν, ὅτι ὕδωρ ἦν ἐπὶ παντὶ προσώπῳ πάσης τῆς γῆς· καὶ ἐκτείνας τὴν χεῖρα αὐτοῦ ἔλαβεν αὐτὴν καὶ εἰσήγαγεν αὐτὴν πρὸς ἑαυτὸν εἰς τὴν κιβωτόν.",
+        "NAB": "But the dove could find no place to alight and perch, and it returned to him in the ark, for there was water all over the earth. Putting out his hand, he caught the dove and drew it back to him inside the ark.",
+        "SYN": "но голубь не нашел места покоя для ног своих и возвратился к нему в ковчег, ибо вода была еще на поверхности всей земли; и он простер руку свою, и взял его, и принял к себе в ковчег.",
+        "NEO": "Mais la colombe, n’ayant pas trouvé où poser la plante de son pied, revint vers lui dans l’arche ; parce qu’il y avait encore des eaux à la surface de toute la terre. Il étendit la main et, l’ayant prise, il la fit rentrer auprès de lui dans l’arche.",
+        "VAT_ES": "Pero la paloma no pudo encontrar un lugar donde apoyarse, y regresó al arca porque el agua aún cubría toda la tierra. Noé extendió su mano, la tomó y la introdujo con él en el arca.",
+        "CEI": "ma la colomba, non trovando dove posare la pianta del piede, tornò a lui nell'arca, perché c'era ancora l'acqua su tutta la terra. Egli stese la mano, la prese e la fece rientrare presso di sé nell'arca."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣חֶל ע֔וֹד שִׁבְעַ֥ת יָמִ֖ים אֲחֵרִ֑ים וַ/יֹּ֛סֶף שַׁלַּ֥ח אֶת הַ/יּוֹנָ֖ה מִן הַ/תֵּבָֽה׃",
+        "VUL": "Expectatis autem ultra septem diebus aliis, rursum dimisit columbam ex arca.",
+        "LXX": "καὶ ἐπισχὼν ἔτι ἡμέρας ἑπτὰ ἑτέρας πάλιν ἐξαπέστειλεν τὴν περιστερὰν ἐκ τῆς κιβωτοῦ.",
+        "NAB": "He waited seven days more and again sent the dove out from the ark.",
+        "SYN": "И помедлил еще семь дней других и опять выпустил голубя из ковчега.",
+        "NEO": "Il attendit encore sept autres jours, et il lâcha de nouveau la colombe hors de l’arche,",
+        "VAT_ES": "Luego esperó siete días más, y volvió a soltar la paloma fuera del arca.",
+        "CEI": "Attese altri sette giorni e di nuovo fece uscire la colomba dall'arca"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/תָּבֹ֨א אֵלָ֤י/ו הַ/יּוֹנָה֙ לְ/עֵ֣ת עֶ֔רֶב וְ/הִנֵּ֥ה עֲלֵה זַ֖יִת טָרָ֣ף בְּ/פִ֑י/הָ וַ/יֵּ֣דַע נֹ֔חַ כִּי קַ֥לּוּ הַ/מַּ֖יִם מֵ/עַ֥ל הָ/אָֽרֶץ׃",
+        "VUL": "At illa venit ad eum ad vesperam, portans ramum olivæ virentibus foliis in ore suo : intellexit ergo Noë quod cessassent aquæ super terram.",
+        "LXX": "καὶ ἀνέστρεψεν πρὸς αὐτὸν ἡ περιστερὰ τὸ πρὸς ἑσπέραν, καὶ εἶχεν φύλλον ἐλαίας κάρφος ἐν τῷ στόματι αὐτῆς· καὶ ἔγνω Νῶε ὅτι κεκόπακεν τὸ ὕδωρ ἀπὸ τῆς γῆς.",
+        "NAB": "In the evening the dove came back to him, and there in its bill was a plucked-off olive leaf! So Noah knew that the waters had lessened on the earth.",
+        "SYN": "Голубь возвратился к нему в вечернее время, и вот, свежий масличный лист во рту у него, и Ной узнал, что вода сошла с земли.",
+        "NEO": "et la colombe revint vers lui sur le soir, et voici, une feuille d’olivier toute fraîche était dans son bec ; et Noé reconnut que les eaux ne couvraient plus la terre.",
+        "VAT_ES": "Esta regresó al atardecer, trayendo en su pico una rama verde de olivo. Así supo Noé que las aguas habían terminado de bajar.",
+        "CEI": "e la colomba tornò a lui sul far della sera; ecco, essa aveva nel becco un ramoscello di ulivo. Noè comprese che le acque si erano ritirate dalla terra."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יִּיָּ֣חֶל ע֔וֹד שִׁבְעַ֥ת יָמִ֖ים אֲחֵרִ֑ים וַ/יְשַׁלַּח֙ אֶת הַ/יּוֹנָ֔ה וְ/לֹֽא יָסְפָ֥ה שׁוּב אֵלָ֖י/ו עֽוֹד׃",
+        "VUL": "Expectavitque nihilominus septem alios dies : et emisit columbam, quæ non est reversa ultra ad eum.",
+        "LXX": "καὶ ἐπισχὼν ἔτι ἡμέρας ἑπτὰ ἑτέρας πάλιν ἐξαπέστειλεν τὴν περιστεράν, καὶ οὐ προσέθετο τοῦ ἐπιστρέψαι πρὸς αὐτὸν ἔτι.",
+        "NAB": "He waited still another seven days and then released the dove once more; and this time it did not come back.",
+        "SYN": "Он помедлил еще семь дней других и [опять] выпустил голубя; и он уже не возвратился к нему.",
+        "NEO": "Il attendit encore sept autres jours, et il lâcha la colombe ; et elle ne revint plus vers lui.",
+        "VAT_ES": "Esperó otros siete días y la soltó nuevamente. Pero esta vez la paloma no volvió.",
+        "CEI": "Aspettò altri sette giorni, poi lasciò andare la colomba; essa non tornò più da lui."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַֽ֠/יְהִי בְּ/אַחַ֨ת וְ/שֵׁשׁ מֵא֜וֹת שָׁנָ֗ה בָּֽ/רִאשׁוֹן֙ בְּ/אֶחָ֣ד לַ/חֹ֔דֶשׁ חָֽרְב֥וּ הַ/מַּ֖יִם מֵ/עַ֣ל הָ/אָ֑רֶץ וַ/יָּ֤סַר נֹ֨חַ֙ אֶת מִכְסֵ֣ה הַ/תֵּבָ֔ה וַ/יַּ֕רְא וְ/הִנֵּ֥ה חָֽרְב֖וּ פְּנֵ֥י הָֽ/אֲדָמָֽה׃",
+        "VUL": "Igitur sexcentesimo primo anno, primo mense, prima die mensis, imminutæ sunt aquæ super terram : et aperiens Noë tectum arcæ, aspexit, viditque quod exsiccata esset superficies terræ.",
+        "LXX": "Καὶ ἐγένετο ἐν τῷ ἑνὶ καὶ ἑξακοσιοστῷ ἔτει ἐν τῇ ζωῇ τοῦ Νῶε, τοῦ μηνὸς τοῦ πρώτου, μιᾷ τοῦ μηνός, ἐξέλειπεν τὸ ὕδωρ ἀπὸ τῆς γῆς· καὶ ἀπεκάλυψεν Νῶε τὴν στέγην τῆς κιβωτοῦ, καὶ ἴδεν ὅτι ἐξέλειπεν τὸ ὕδωρ ἀπὸ προσώπου τῆς γῆς.",
+        "NAB": "In the six hundred and first year of Noah's life, in the first month, on the first day of the month, the water began to dry up on the earth. Noah then removed the covering of the ark and saw that the surface of the ground was drying up.",
+        "SYN": "Шестьсот первого года [жизни Ноевой] к первому [дню] первого месяца иссякла вода на земле; и открыл Ной кровлю ковчега и посмотрел, и вот, обсохла поверхность земли.",
+        "NEO": "L’an six cent un, au premier mois, le premier jour du mois, les eaux avaient séché sur la terre. Noé ôta la couverture de l’arche et regarda, et voici, la surface du sol avait séché.",
+        "VAT_ES": "La tierra comenzó a secarse en el año seiscientos uno de la vida de Noé, el primer día del mes. Noé retiró el techo del arca, y vio que la tierra se estaba secando.",
+        "CEI": "L'anno seicentouno della vita di Noè, il primo mese, il primo giorno del mese, le acque si erano prosciugate sulla terra; Noè tolse la copertura dell'arca ed ecco la superficie del suolo era asciutta."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וּ/בַ/חֹ֨דֶשׁ֙ הַ/שֵּׁנִ֔י בְּ/שִׁבְעָ֧ה וְ/עֶשְׂרִ֛ים י֖וֹם לַ/חֹ֑דֶשׁ יָבְשָׁ֖ה הָ/אָֽרֶץ׃",
+        "VUL": "Mense secundo, septimo et vigesimo die mensis arefacta est terra.",
+        "LXX": "ἐν δὲ τῷ μηνὶ τῷ δευτέρῳ, ἑβδόμῃ καὶ εἰκάδι τοῦ μηνός, ἐξηράνθη ἡ γῆ.",
+        "NAB": "In the second month, on the twenty-seventh day of the month, the earth was dry.",
+        "SYN": "И во втором месяце, к двадцать седьмому дню месяца, земля высохла.",
+        "NEO": "Au second mois, le vingt-septième jour du mois, la terre fut sèche.",
+        "VAT_ES": "Y el vigesimoséptimo día del mes, la tierra ya estaba seca.",
+        "CEI": "Nel secondo mese, il ventisette del mese, tutta la terra fu asciutta."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר אֱלֹהִ֖ים אֶל נֹ֥חַ לֵ/אמֹֽר׃",
+        "VUL": "Locutus est autem Deus ad Noë, dicens :",
+        "LXX": "Καὶ εἶπεν Κύριος ὁ θεὸς τῷ Νῶε λέγων",
+        "NAB": "Then God said to Noah:",
+        "SYN": "И сказал [Господь] Бог Ною:",
+        "NEO": "Alors Dieu parla à Noé, en disant :",
+        "VAT_ES": "Entonces Dios dijo a Noé:",
+        "CEI": "Dio ordinò a Noè:"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "צֵ֖א מִן הַ/תֵּבָ֑ה אַתָּ֕ה וְ/אִשְׁתְּ/ךָ֛ וּ/בָנֶ֥י/ךָ וּ/נְשֵֽׁי בָנֶ֖י/ךָ אִתָּֽ/ךְ׃",
+        "VUL": "Egredere de arca, tu et uxor tua, filii tui et uxores filiorum tuorum tecum.",
+        "LXX": "Ἔξελθε ἐκ τῆς κιβωτοῦ, σὺ καὶ ἡ γυνή σου καὶ οἱ υἱοί σου καὶ αἱ γυναῖκες τῶν υἱῶν σου μετὰ σοῦ,",
+        "NAB": "\"Go out of the ark, together with your wife and your sons and your sons' wives.",
+        "SYN": "выйди из ковчега ты и жена твоя, и сыновья твои, и жены сынов твоих с тобою;",
+        "NEO": "« Sors de l’arche, toi et ta femme, tes fils et les femmes de tes fils avec toi.",
+        "VAT_ES": "«Sal del arca con tu mujer, tus hijos y las mujeres de tus hijos.",
+        "CEI": "\"Esci dall'arca tu e tua moglie, i tuoi figli e le mogli dei tuoi figli con te."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כָּל הַ/חַיָּ֨ה אֲשֶֽׁר אִתְּ/ךָ֜ מִ/כָּל בָּשָׂ֗ר בָּ/ע֧וֹף וּ/בַ/בְּהֵמָ֛ה וּ/בְ/כָל הָ/רֶ֛מֶשׂ הָ/רֹמֵ֥שׂ עַל הָ/אָ֖רֶץ הוצא הַיְצֵ֣א אִתָּ֑/ךְ וְ/שָֽׁרְצ֣וּ בָ/אָ֔רֶץ וּ/פָר֥וּ וְ/רָב֖וּ עַל הָ/אָֽרֶץ׃",
+        "VUL": "Cuncta animantia, quæ sunt apud te, ex omni carne, tam in volatilibus quam in bestiis et universis reptilibus, quæ reptant super terram, educ tecum, et ingredimini super terram : crescite et multiplicamini super eam.",
+        "LXX": "καὶ πάντα τὰ θηρία ὅσα ἐστὶν μετὰ σοῦ, καὶ πᾶσα σὰρξ ἀπὸ πετεινῶν ἕως κτηνῶν, καὶ πᾶν ἑρπετὸν κινούμενον ἐπὶ τῆς γῆς ἐξάγαγε μετὰ σοῦ· καὶ αὐξάνεσθε καὶ πληθύνεσθε ἐπὶ τῆς γῆς.",
+        "NAB": "Bring out with you every living thing that is with you - all bodily creatures, be they birds or animals or creeping things of the earth - and let them abound on the earth, breeding and multiplying on it.\"",
+        "SYN": "выведи с собою всех животных, которые с тобою, от всякой плоти, из птиц, и скотов, и всех гадов, пресмыкающихся по земле: пусть разойдутся они по земле, и пусть плодятся и размножаются на земле.",
+        "NEO": "Toutes les bêtes de toute chair, qui sont avec toi, oiseaux, animaux domestiques, et tous les reptiles qui rampent sur la terre, fais-les sortir avec toi ; qu’ils se répandent sur la terre, qu’ils soient féconds et multiplient sur la terre. »",
+        "VAT_ES": "Saca también a todos los seres vivientes que están contigo –aves, ganado o cualquier clase de animales que se arrastran por el suelo– y que ellos llenen la tierra, sean fecundos y se multipliquen»,",
+        "CEI": "Tutti gli animali d'ogni specie che hai con te, uccelli, bestiame e tutti i rettili che strisciano sulla terra, falli uscire con te, perché possano diffondersi sulla terra, siano fecondi e si moltiplichino su di essa\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֖צֵא נֹ֑חַ וּ/בָנָ֛י/ו וְ/אִשְׁתּ֥/וֹ וּ/נְשֵֽׁי בָנָ֖י/ו אִתּֽ/וֹ׃",
+        "VUL": "Egressus est ergo Noë, et filii ejus : uxor illius, et uxores filiorum ejus cum eo.",
+        "LXX": "καὶ ἐξῆλθεν Νῶε καὶ ἡ γυνὴ αὐτοῦ καὶ οἱ υἱοὶ αὐτοῦ καὶ αἱ γυναῖκες τῶν υἱῶν αὐτοῦ μετ’ αὐτοῦ·",
+        "NAB": "So Noah came out, together with his wife and his sons and his sons' wives;",
+        "SYN": "И вышел Ной и сыновья его, и жена его, и жены сынов его с ним;",
+        "NEO": "Noé sortit, lui et ses fils, sa femme et les femmes de ses fils.",
+        "VAT_ES": "Noé salió acompañado de sus hijos, de su mujer y de las mujeres de sus hijos.",
+        "CEI": "Noè uscì con i figli, la moglie e le mogli dei figli."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כָּל הַֽ/חַיָּ֗ה כָּל הָ/רֶ֨מֶשׂ֙ וְ/כָל הָ/ע֔וֹף כֹּ֖ל רוֹמֵ֣שׂ עַל הָ/אָ֑רֶץ לְ/מִשְׁפְּחֹ֣תֵי/הֶ֔ם יָצְא֖וּ מִן הַ/תֵּבָֽה׃",
+        "VUL": "Sed et omnia animantia, jumenta, et reptilia quæ reptant super terram, secundum genus suum, egressa sunt de arca.",
+        "LXX": "καὶ πάντα τὰ θηρία καὶ πάντα τὰ κτήνη καὶ πᾶν πετεινὸν καὶ πᾶν ἑρπετὸν κινούμενον ἐπὶ τῆς γῆς κατὰ γένος αὐτῶν ἐξήλθοσαν ἐκ τῆς κιβωτοῦ. ⸆",
+        "NAB": "and all the animals, wild and tame, all the birds, and all the creeping creatures of the earth left the ark, one kind after another.",
+        "SYN": "все звери, и [весь скот, и] все гады, и все птицы, все движущееся по земле, по родам своим, вышли из ковчега.",
+        "NEO": "Toutes les bêtes, tous les reptiles et tous les oiseaux, tous les êtres qui se meuvent sur la terre, selon leurs espèces, sortirent de l’arche.",
+        "VAT_ES": "Todo lo que se mueve por el suelo; todas las bestias, todos los reptiles y todos los pájaros salieron del arca, un grupo detrás de otro.",
+        "CEI": "Tutti i viventi e tutto il bestiame e tutti gli uccelli e tutti i rettili che strisciano sulla terra, secondo la loro specie, uscirono dall'arca."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּ֥בֶן נֹ֛חַ מִזְבֵּ֖חַ לַֽ/יהוָ֑ה וַ/יִּקַּ֞ח מִ/כֹּ֣ל הַ/בְּהֵמָ֣ה הַ/טְּהוֹרָ֗ה וּ/מִ/כֹּל֙ הָ/ע֣וֹף הַ/טָּהֹ֔ר וַ/יַּ֥עַל עֹלֹ֖ת בַּ/מִּזְבֵּֽחַ׃",
+        "VUL": "Ædificavit autem Noë altare Domino : et tollens de cunctis pecoribus et volucribus mundis, obtulit holocausta super altare.",
+        "LXX": "Καὶ ᾠκοδόμησεν Νῶε θυσιαστήριον τῷ θεῷ, καὶ ἔλαβεν ἀπὸ πάντων τῶν κτηνῶν τῶν καθαρῶν καὶ ἀπὸ πάντων τῶν πετεινῶν τῶν καθαρῶν, καὶ ἀνήνεγκεν ὁλοκάρπωσιν ἐπὶ τὸ θυσιαστήριον.",
+        "NAB": "Then Noah built an altar to the LORD, and choosing from every clean animal and every clean bird, he offered holocausts on the altar.",
+        "SYN": "И устроил Ной жертвенник Господу; и взял из всякого скота чистого и из всех птиц чистых и принес во всесожжение на жертвеннике.",
+        "NEO": "Noé construisit un autel à \\+w Yahweh|strong=\"H3068\"\\+w** et, ayant pris de tous les animaux purs et de tous les oiseaux purs, il offrit des holocaustes sur l’autel.",
+        "VAT_ES": "Luego Noé levantó un altar al Señor, y tomando animales puros y pájaros puros de todas clases, ofreció holocaustos sobre el altar.",
+        "CEI": "Allora Noè edificò un altare al Signore; prese ogni sorta di animali mondi e di uccelli mondi e offrì olocausti sull'altare."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣רַח יְהוָה֮ אֶת רֵ֣יחַ הַ/נִּיחֹחַ֒ וַ/יֹּ֨אמֶר יְהוָ֜ה אֶל לִבּ֗/וֹ לֹֽא אֹ֠סִף לְ/קַלֵּ֨ל ע֤וֹד אֶת הָֽ/אֲדָמָה֙ בַּ/עֲב֣וּר הָֽ/אָדָ֔ם כִּ֠י יֵ֣צֶר לֵ֧ב הָ/אָדָ֛ם רַ֖ע מִ/נְּעֻרָ֑י/ו וְ/לֹֽא אֹסִ֥ף ע֛וֹד לְ/הַכּ֥וֹת אֶת כָּל חַ֖י כַּֽ/אֲשֶׁ֥ר עָשִֽׂיתִי׃",
+        "VUL": "Odoratusque est Dominus odorem suavitatis, et ait : Nequaquam ultra maledicam terræ propter homines : sensus enim et cogitatio humani cordis in malum prona sunt ab adolescentia sua : non igitur ultra percutiam omnem animam viventem sicut feci.",
+        "LXX": "καὶ ὠσφράνθη Κύριος ὁ θεὸς ὀσμὴν εὐωδίας, καὶ εἶπεν Κύριος ὁ θεὸς διανοηθείς Οὐ προσθήσω ἔτι τοῦ καταράσασθαι τὴν γῆν διὰ τὰ ἔργα τῶν ἀνθρώπων, ὅτι ἔγκειται ἡ διάνοια τοῦ ἀνθρώπου ἐπιμελῶς ἐπὶ τὰ πονηρὰ ἐκ νεότητος· ⸂⸆⸃ οὐ προσθήσω οὖν ἔτι πατάξαι πᾶσαν σάρκα ζῶσαν καθὼς ἐποίησα.",
+        "NAB": "When the LORD smelled the sweet odor, he said to himself: \"Never again will I doom the earth because of man, since the desires of man's heart are evil from the start; nor will I ever again strike down all living beings, as I have done.",
+        "SYN": "И обонял Господь приятное благоухание, и сказал Господь [Бог] в сердце Своем: не буду больше проклинать землю за человека, потому что помышление сердца человеческого -- зло от юности его; и не буду больше поражать всего живущего, как Я сделал:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** sentit une odeur agréable, et \\+w Yahweh|strong=\"H3068\"\\+w** dit en son cœur : « Je ne maudirai plus désormais la terre à cause de l’homme, parce que les pensées du cœur de l’homme sont mauvaises dès sa jeunesse, et je ne frapperai plus tout être vivant, comme je l’ai fait.",
+        "VAT_ES": "Cuando el Señor aspiró el aroma agradable, se dijo a sí mismo: «Nunca más volveré a maldecir el suelo por causa del hombre, porque los designios del corazón humano son malos desde su juventud; ni tampoco volveré a castigar a todos los seres vivientes, como acabo de hacerlo.",
+        "CEI": "Il Signore ne odorò la soave fragranza e pensò: \"Non maledirò più il suolo a causa dell'uomo, perché l'istinto del cuore umano è incline al male fin dalla adolescenza; né colpirò più ogni essere vivente come ho fatto."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "עֹ֖ד כָּל יְמֵ֣י הָ/אָ֑רֶץ זֶ֡רַע וְ֠/קָצִיר וְ/קֹ֨ר וָ/חֹ֜ם וְ/קַ֧יִץ וָ/חֹ֛רֶף וְ/י֥וֹם וָ/לַ֖יְלָה לֹ֥א יִשְׁבֹּֽתוּ׃",
+        "VUL": "Cunctis diebus terræ, sementis et messis, frigus et æstus, æstas et hiems, nox et dies non requiescent.",
+        "LXX": "πάσας τὰς ἡμέρας τῆς γῆς σπέρμα καὶ θερισμός, ψῦχος καὶ καῦμα, θέρος καὶ ἔαρ ἡμέραν καὶ νύκτα οὐ καταπαύσουσιν.",
+        "NAB": "As long as the earth lasts, seedtime and harvest, cold and heat, Summer and winter, and day and night shall not cease.\"",
+        "SYN": "впредь во все дни земли сеяние и жатва, холод и зной, лето и зима, день и ночь не прекратятся.",
+        "NEO": "Désormais, tant que la terre durera, les semailles et la moisson, le froid et le chaud, l’été et l’hiver, le jour et la nuit ne cesseront point. »",
+        "VAT_ES": "De ahora en adelante, mientras dure la tierra, no cesarán la siembra y la cosecha, el frío y el calor, el verano y el invierno, el día y la noche».",
+        "CEI": "Finché durerà la terra, seme e messe, freddo e caldo, estate e inverno, giorno e notte non cesseranno\"."
+      }
+    }
+  }
+}

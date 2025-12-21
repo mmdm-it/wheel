@@ -1,0 +1,305 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_045",
+  "book_key": "PSAL",
+  "sequence": 45,
+  "chapter_in": {
+    "MT": 45,
+    "VUL": 44,
+    "LXX": 44
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֣חַ עַל שֹׁ֭שַׁנִּים לִ/בְנֵי קֹ֑רַח מַ֝שְׂכִּ֗יל שִׁ֣יר יְדִידֹֽת׃",
+        "LXX": "Εἰς τὸ τέλος· ὑπὲρ τῶν υἱῶν Κόρε, ὑπὲρ τῶν κρυφίων ψαλμός.",
+        "VUL": "In finem, filiis Core, pro arcanis. Psalmus.",
+        "SYN": "Начальнику хора. Сынов Кореевых. На _музыкальном орудии_ Аламоф. Песнь.",
+        "NEO": "Au maître de chant. Sur les lis. Cantique des fils de Coré. Chant d’amour.",
+        "NAB": "For the leader; according to \"Lilies.\" A maskil of the Korahites. A love song.",
+        "CEI": "Al maestro del coro. Su \"I gigli...\". Dei figli di Core. Maskil. Canto d'amore."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "רָ֘חַ֤שׁ לִבִּ֨/י דָּ֘בָ֤ר ט֗וֹב אֹמֵ֣ר אָ֭נִי מַעֲשַׂ֣/י לְ/מֶ֑לֶךְ לְ֝שׁוֹנִ֗/י עֵ֤ט סוֹפֵ֬ר מָהִֽיר׃",
+        "LXX": "Ὁ θεὸς ἡμῶν καταφυγὴ καὶ δύναμις, βοηθὸς ἐν θλίψεσιν ταῖς εὑρούσαις ἡμᾶς σφόδρα.",
+        "VUL": "[Deus noster refugium et virtus ;/ adjutor in tribulationibus quæ invenerunt nos nimis./",
+        "SYN": "Бог нам прибежище и сила, скорый помощник в бедах,",
+        "NEO": "De mon cœur jaillit un beau chant ; je dis : « Mon œuvre est pour un roi ! » Ma langue est comme le roseau rapide du scribe,",
+        "NAB": "My heart is stirred by a noble theme, as I sing my ode to the king. My tongue is the pen of a nimble scribe.",
+        "VAT_ES": "Me brota del corazón un hermoso poema,",
+        "CEI": "Effonde il mio cuore liete parole, io canto al re il mio poema. La mia lingua è stilo di scriba veloce."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "יָפְיָפִ֡יתָ מִ/בְּנֵ֬י אָדָ֗ם ה֣וּצַק חֵ֭ן בְּ/שְׂפְתוֹתֶ֑י/ךָ עַל כֵּ֤ן בֵּֽרַכְ/ךָ֖ אֱלֹהִ֣ים לְ/עוֹלָֽם׃",
+        "LXX": "διὰ τοῦτο οὐ φοβηθησόμεθα ἐν τῷ ταράσσεσθαι τὴν γῆν καὶ μετατίθεσθαι ὄρη ἐν καρδίαις θαλασσῶν.",
+        "VUL": "Propterea non timebimus dum turbabitur terra,/ et transferentur montes in cor maris./",
+        "SYN": "посему не убоимся, хотя бы поколебалась земля, и горы двинулись в сердце морей.",
+        "NEO": "Tu es le plus beau des fils de l’homme, la grâce est répandue sur tes lèvres ; c’est pourquoi Dieu t’a béni pour toujours.",
+        "NAB": "You are the most handsome of men; fair speech has graced your lips, for God has blessed you forever.",
+        "VAT_ES": "Tú eres hermoso, el más hermoso de los hombres;",
+        "CEI": "Tu sei il più bello tra i figli dell'uomo, sulle tue labbra è diffusa la grazia, ti ha benedetto Dio per sempre."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "חֲגֽוֹר חַרְבְּ/ךָ֣ עַל יָרֵ֣ךְ גִּבּ֑וֹר ה֝וֹדְ/ךָ֗ וַ/הֲדָרֶֽ/ךָ׃",
+        "LXX": "ἤχησαν καὶ ἐταράχθησαν τὰ ὕδατα αὐτῶν, ἐταράχθησαν τὰ ὄρη ἐν τῇ κραταιότητι αὐτοῦ. διάψαλμα.",
+        "VUL": "Sonuerunt, et turbatæ sunt aquæ eorum ;/ conturbati sunt montes in fortitudine ejus./",
+        "SYN": "Пусть шумят, вздымаются воды их, трясутся горы от волнения их.",
+        "NEO": "Ceins ton épée sur ta cuisse, ô héros, revêts ta splendeur et ta majesté.",
+        "NAB": "Gird your sword upon your hip, mighty warrior! In splendor and majesty ride on triumphant!",
+        "VAT_ES": "Cíñete, guerrero, la espada a la cintura;",
+        "CEI": "Cingi, prode, la spada al tuo fianco, nello splendore della tua maestà ti arrida la sorte,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/הֲדָ֬רְ/ךָ֨ צְלַ֬ח רְכַ֗ב עַֽל דְּבַר אֱ֭מֶת וְ/עַנְוָה צֶ֑דֶק וְ/תוֹרְ/ךָ֖ נוֹרָא֣וֹת יְמִינֶֽ/ךָ׃",
+        "LXX": "τοῦ ποταμοῦ τὰ ὁρμήματα εὐφραίνουσιν τὴν πόλιν τοῦ θεοῦ· ἡγίασεν τὸ σκήνωμα αὐτοῦ ὁ ὕψιστος.",
+        "VUL": "Fluminis impetus lætificat civitatem Dei :/ sanctificavit tabernaculum suum Altissimus./",
+        "SYN": "Речные потоки веселят град Божий, святое жилище Всевышнего.",
+        "NEO": "Et dans ta majesté avance-toi, monte sur ton char, combats pour la vérité, la douceur et la justice ; et que ta droite te fasse accomplir des faits merveilleux.",
+        "NAB": "In the cause of truth and justice may your right hand show you wondrous deeds.",
+        "VAT_ES": "con gloria y majestad, avanza triunfalmente;",
+        "CEI": "avanza per la verità, la mitezza e la giustizia."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "חִצֶּ֗י/ךָ שְׁנ֫וּנִ֥ים עַ֭מִּים תַּחְתֶּ֣י/ךָ יִפְּל֑וּ בְּ֝/לֵ֗ב אוֹיְבֵ֥י הַ/מֶּֽלֶךְ׃",
+        "LXX": "ὁ θεὸς ἐν μέσῳ αὐτῆς, οὐ σαλευθήσεται· βοηθήσει αὐτῇ ὁ θεὸς τῷ προσώπῳ.",
+        "VUL": "Deus in medio ejus, non commovebitur ;/ adjuvabit eam Deus mane diluculo./",
+        "SYN": "Бог посреди его; он не поколеблется: Бог поможет ему с раннего утра.",
+        "NEO": "Tes flèches sont aiguës ; des peuples tomberont à tes pieds ; elles perceront le cœur des ennemis du roi.",
+        "NAB": "Your arrows are sharp; peoples will cower at your feet; the king's enemies will lose heart.",
+        "VAT_ES": "tus flechas con punzantes, se te rinden los pueblos",
+        "CEI": "La tua destra ti mostri prodigi: le tue frecce acute colpiscono al cuore i nemici del re; sotto di te cadono i popoli."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּסְאֲ/ךָ֣ אֱ֭לֹהִים עוֹלָ֣ם וָ/עֶ֑ד שֵׁ֥בֶט מִ֝ישֹׁ֗ר שֵׁ֣בֶט מַלְכוּתֶֽ/ךָ׃",
+        "LXX": "ἐταράχθησαν ἔθνη, ἔκλιναν βασιλεῖαι· ἔδωκεν φωνὴν αὐτοῦ, ἐσαλεύθη ἡ γῆ.",
+        "VUL": "Conturbatæ sunt gentes, et inclinata sunt regna :/ dedit vocem suam, mota est terra./",
+        "SYN": "Восшумели народы; двинулись царства: [Всевышний] дал глас Свой, и растаяла земля.",
+        "NEO": "Ton trône, ô Dieu, est établi pour toujours ; le sceptre de ta royauté est un sceptre de droiture.",
+        "NAB": "Your throne, O god, stands forever; your royal scepter is a scepter for justice.",
+        "VAT_ES": "Tu trono, como el de Dios, permanece para siempre;",
+        "CEI": "Il tuo trono, Dio, dura per sempre; è scettro giusto lo scettro del tuo regno."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אָהַ֣בְתָּ צֶּדֶק֮ וַ/תִּשְׂנָ֫א רֶ֥שַׁע עַל כֵּ֤ן מְשָׁחֲ/ךָ֡ אֱלֹהִ֣ים אֱ֭לֹהֶי/ךָ שֶׁ֥מֶן שָׂשׂ֗וֹן מֵֽ/חֲבֵרֶֽי/ךָ׃",
+        "LXX": "Κύριος τῶν δυνάμεων μεθ’ ἡμῶν, ἀντιλήμπτωρ ἡμῶν ὁ θεὸς Ἰακώβ. διάψαλμα.",
+        "VUL": "Dominus virtutum nobiscum ;/ susceptor noster Deus Jacob./",
+        "SYN": "Господь сил с нами, Бог Иакова заступник наш.",
+        "NEO": "Tu aimes la justice et tu hais l’iniquité : c’est pourquoi Dieu, ton Dieu, t’a oint d’une huile d’allégresse, de préférence à tes compagnons.",
+        "NAB": "You love justice and hate wrongdoing; therefore God, your God, has anointed you with the oil of gladness above your fellow kings.",
+        "VAT_ES": "tú amas la justicia y odias la iniquidad.",
+        "CEI": "Ami la giustizia e l'empietà detesti: Dio, il tuo Dio ti ha consacrato con olio di letizia, a preferenza dei tuoi eguali."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "מֹר וַ/אֲהָל֣וֹת קְ֭צִיעוֹת כָּל בִּגְדֹתֶ֑י/ךָ מִֽן הֵ֥יכְלֵי שֵׁ֝֗ן מִנִּ֥י שִׂמְּחֽוּ/ךָ׃",
+        "LXX": "δεῦτε, ἴδετε τὰ ἔργα Κυρίου, ἃ ἔθετο τέρατα ἐπὶ τῆς γῆς·",
+        "VUL": "Venite, et videte opera Domini,/ quæ posuit prodigia super terram,/",
+        "SYN": "Придите и видите дела Господа, - какие произвел Он опустошения на земле:",
+        "NEO": "La myrrhe, l’aloès et la casse s’exhalent de tous tes vêtements ; des palais d’ivoire, les lyres te réjouissent.",
+        "NAB": "With myrrh, aloes, and cassia your robes are fragrant. From ivory-paneled palaces stringed instruments bring you joy.",
+        "VAT_ES": "tus vestiduras exhalan perfume de mirra, áloe y acacia.",
+        "CEI": "Le tue vesti son tutte mirra, àloe e cassia, dai palazzi d'avorio ti allietano le cetre."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "בְּנ֣וֹת מְ֭לָכִים בְּ/יִקְּרוֹתֶ֑י/ךָ נִצְּבָ֥ה שֵׁגַ֥ל לִֽ֝/ימִינְ/ךָ֗ בְּ/כֶ֣תֶם אוֹפִֽיר׃",
+        "LXX": "ἀνταναιρῶν πολέμους μέχρι τῶν περάτων τῆς γῆς, τόξον συντρίψει καὶ συνκλάσει ὅπλον, καὶ θυρεοὺς κατακαύσει ἐν πυρί.",
+        "VUL": "auferens bella usque ad finem terræ./ Arcum conteret, et confringet arma,/ et scuta comburet igni./",
+        "SYN": "прекращая брани до края земли, сокрушил лук и переломил копье, колесницы сжег огнем.",
+        "NEO": "Des filles de rois sont parmi tes bien-aimées ; la reine est à ta droite, parée de l’or d’Ophir.",
+        "NAB": "Daughters of kings are your lovely wives; a princess arrayed in Ophir's gold comes to stand at your right hand.",
+        "VAT_ES": "una hija de reyes está de pie a tu derecha:",
+        "CEI": "Figlie di re stanno tra le tue predilette; alla tua destra la regina in ori di Ofir."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "שִׁמְעִי בַ֣ת וּ֭/רְאִי וְ/הַטִּ֣י אָזְנֵ֑/ךְ וְ/שִׁכְחִ֥י עַ֝מֵּ֗/ךְ וּ/בֵ֥ית אָבִֽי/ךְ׃",
+        "LXX": "σχολάσατε, καὶ γνῶτε ὅτι ἐγώ εἰμι ὁ θεός· ὑψωθήσομαι ἐν τοῖς ἔθνεσιν, ὑψωθήσομαι ἐν τῇ γῇ·",
+        "VUL": "Vacate, et videte quoniam ego sum Deus ;/ exaltabor in gentibus, et exaltabor in terra./",
+        "SYN": "Остановитесь и познайте, что Я - Бог: буду превознесен в народах, превознесен на земле.",
+        "NEO": "« Ecoute, ma fille, regarde et prête l’oreille : oublie ton peuple et la maison de ton père,",
+        "NAB": "Listen, my daughter, and understand; pay me careful heed. Forget your people and your father's house,",
+        "VAT_ES": "&iexcl;Escucha, hija mía, mira y presta atención!",
+        "CEI": "Ascolta, figlia, guarda, porgi l'orecchio, dimentica il tuo popolo e la casa di tuo padre;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/יִתְאָ֣ו הַ/מֶּ֣לֶךְ יָפְיֵ֑/ךְ כִּי ה֥וּא אֲ֝דֹנַ֗יִ/ךְ וְ/הִשְׁתַּֽחֲוִי לֽ/וֹ׃",
+        "LXX": "Κύριος τῶν δυνάμεων μεθ’ ἡμῶν, ἀντιλήμπτωρ ἡμῶν ὁ θεὸς Ἰακώβ.",
+        "VUL": "Dominus virtutum nobiscum ;/ susceptor noster Deus Jacob.]",
+        "SYN": "Господь сил с нами, заступник наш Бог Иакова.",
+        "NEO": "et le roi sera épris de ta beauté ; car il est ton Seigneur : rends-lui tes hommages+ 45:12 \\+it Rends-lui tes hommages\\+it*. LXX (joignant cette finale au v. 13), \\+it Et les filles de Tyr lui rendront hommage\\+it*.*.",
+        "NAB": "that the king might desire your beauty. He is your lord;",
+        "VAT_ES": "y el rey se prendará de tu hermosura.",
+        "CEI": "al re piacerà la tua bellezza. Egli è il tuo Signore: pròstrati a lui."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וּ/בַֽת צֹ֨ר בְּ֭/מִנְחָה פָּנַ֥יִ/ךְ יְחַלּ֗וּ עֲשִׁ֣ירֵי עָֽם׃",
+        "NEO": "La fille de Tyr, avec des présents, et les plus riches du peuple rechercheront ta faveur. »",
+        "NAB": "honor him, daughter of Tyre. Then the richest of the people will seek your favor with gifts.",
+        "VAT_ES": "la ciudad de Tiro vendrá con regalos",
+        "CEI": "Da Tiro vengono portando doni, i più ricchi del popolo cercano il tuo volto."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כָּל כְּבוּדָּ֣ה בַת מֶ֣לֶךְ פְּנִ֑ימָה מִֽ/מִּשְׁבְּצ֖וֹת זָהָ֣ב לְבוּשָֽׁ/הּ׃",
+        "NEO": "Toute resplendissante+ 45:14 \\+it Toute resplendissante\\+it* etc. LXX \\+it Toute sa gloire est au dedans\\+it*.* est la fille du roi dans l’intérieur ; son vêtement est fait* de tissus d’or.",
+        "NAB": "All glorious is the king's daughter as she enters, her raiment threaded with gold;",
+        "VAT_ES": "Embellecida con corales engarzados en oro",
+        "CEI": "La figlia del re è tutta splendore, gemme e tessuto d'oro è il suo vestito."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "לִ/רְקָמוֹת֮ תּוּבַ֪ל לַ֫/מֶּ֥לֶךְ בְּתוּל֣וֹת אַ֭חֲרֶי/הָ רֵעוֹתֶ֑י/הָ מ֖וּבָא֣וֹת לָֽ/ךְ׃",
+        "NEO": "En robe de couleurs variées+ 45:15 \\+it En robe de couleurs variées\\+it*. La LXX rattachent ces mots au v. précédent. — \\+it Elle est présentée au roi\\+it*. La LXX \\+it sont présentées au roi après elle des jeunes filles\\+it*.* elle est présentée au roi ; après elles, des jeunes filles ses compagnes, te sont amenées.",
+        "NAB": "In embroidered apparel she is led to the king. The maids of her train are presented to the king.",
+        "VAT_ES": "y vestida de brocado, es llevada hasta el rey.",
+        "CEI": "È presentata al re in preziosi ricami; con lei le vergini compagne a te sono condotte;"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "תּ֭וּבַלְנָה בִּ/שְׂמָחֹ֣ת וָ/גִ֑יל תְּ֝בֹאֶ֗ינָה בְּ/הֵ֣יכַל מֶֽלֶךְ׃",
+        "NEO": "On les introduit au milieu des réjouissances et de l’allégresse ; elles entrent dans le palais du Roi.",
+        "NAB": "They are led in with glad and joyous acclaim; they enter the palace of the king.",
+        "VAT_ES": "con gozo y alegría entran al palacio real.",
+        "CEI": "guidate in gioia ed esultanza entrano insieme nel palazzo del re."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "תַּ֣חַת אֲ֭בֹתֶי/ךָ יִהְי֣וּ בָנֶ֑י/ךָ תְּשִׁיתֵ֥/מוֹ לְ֝/שָׂרִ֗ים בְּ/כָל הָ/אָֽרֶץ׃",
+        "NEO": "Tes enfants prendront la place de tes pères ; tu les établiras princes sur toute la terre.",
+        "NAB": "The throne of your fathers your sons will have; you shall make them princes through all the land.",
+        "VAT_ES": "Tus hijos ocuparán el lugar de tus padres,",
+        "CEI": "Ai tuoi padri succederanno i tuoi figli; li farai capi di tutta la terra."
+      }
+    }
+  }
+}

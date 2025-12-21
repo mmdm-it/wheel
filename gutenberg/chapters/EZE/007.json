@@ -1,0 +1,501 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EZE_007",
+  "book_key": "EZE",
+  "sequence": 7,
+  "chapter_in": {
+    "MT": 7,
+    "VUL": 7,
+    "LXX": 7
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Questa parola del Signore mi fu rivolta:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֣ה בֶן אָדָ֗ם כֹּה אָמַ֞ר אֲדֹנָ֧/י יְהוִ֛ה לְ/אַדְמַ֥ת יִשְׂרָאֵ֖ל קֵ֑ץ בָּ֣א הַ/קֵּ֔ץ עַל ארבעת אַרְבַּ֖ע כַּנְפ֥וֹת הָ/אָֽרֶץ׃",
+        "LXX": "Καὶ σύ, υἱὲ ἀνθρώπου, εἰπόν Τάδε λέγει Κύριος τῇ γῇ τοῦ Ἰσραήλ Πέρας ἥκει, τὸ πέρας ἥκει ἐπὶ τὰς τέσσαρας πτέρυγας τῆς γῆς·",
+        "VUL": "Et tu, fili hominis, hæc dicit Dominus Deus terræ Israël : [Finis venit : venit finis super quatuor plagas terræ./",
+        "SYN": "и ты, сын человеческий, [скажи]: так говорит Господь Бог; земле Израилевой конец, - конец пришел на четыре края земли.",
+        "NEO": "Et toi, fils de l’homme, ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** au pays d’Israël :",
+        "NAB": "Son of man, now say: Thus says the Lord GOD to the land of Israel: An end! The end has come upon the four corners of the land!",
+        "VAT_ES": "Y tú, hijo de hombre, di: Así habla el Señor a la tierra de Israel: &iexcl;Es el fin! Llega el fin sobre los cuatro extremos del país.",
+        "CEI": "\"Ora, figlio dell'uomo riferisci: Così dice il Signore Dio al paese d'Israele: La fine! Giunge la fine per i quattro punti cardinali del paese."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "עַתָּה֙ הַ/קֵּ֣ץ עָלַ֔יִ/ךְ וְ/שִׁלַּחְתִּ֤י אַפִּ/י֙ בָּ֔/ךְ וּ/שְׁפַטְתִּ֖י/ךְ כִּ/דְרָכָ֑יִ/ךְ וְ/נָתַתִּ֣י עָלַ֔יִ/ךְ אֵ֖ת כָּל תּוֹעֲבֹתָֽיִ/ךְ׃",
+        "LXX": "ἥκει τὸ πέρας",
+        "VUL": "Nunc finis super te, et immittam furorem meum in te :/ et judicabo te juxta vias tuas,/ et ponam contra te omnes abominationes tuas./",
+        "SYN": "Вот конец тебе; и пошлю на тебя гнев Мой, и буду судить тебя по путям твоим, и возложу на тебя все мерзости твои.",
+        "NEO": "Maintenant la fin vient sur toi ; je vais donner cours à ma colère contre toi ; je te jugerai d’après tes œuvres ; je ferai retomber sur toi toutes tes abominations.",
+        "NAB": "Now the end is upon you; I will unleash my anger against you and judge you according to your conduct and lay upon you the consequences of all your abominations.",
+        "VAT_ES": "&iexcl;Ya ha llegado tu fin! Voy a derramar mi ira sobre ti, te juzgaré según tu conducta y haré recaer sobre ti todas tus abominaciones.",
+        "CEI": "Ora che su di te pende la fine, io scaglio contro di te la mia ira per giudicarti delle tue opere e per domandarti conto delle tue nefandezze."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/לֹא תָח֥וֹס עֵינִ֛/י עָלַ֖יִ/ךְ וְ/לֹ֣א אֶחְמ֑וֹל כִּ֣י דְרָכַ֜יִ/ךְ עָלַ֣יִ/ךְ אֶתֵּ֗ן וְ/תוֹעֲבוֹתַ֨יִ/ךְ֙ בְּ/תוֹכֵ֣/ךְ תִּֽהְיֶ֔יןָ וִ/ידַעְתֶּ֖ם כִּֽי אֲנִ֥י יְהוָֽה׃",
+        "LXX": "ἐπὶ σὲ τὸν κατοικοῦντα τὴν γῆν, ἥκει ὁ καιρός, ἤγγικεν ἡ ἡμέρα, οὐ μετὰ θορύβων οὐδὲ μετὰ ὠδίνων.",
+        "VUL": "Et non parcet oculus meus super te, et non miserebor :/ sed vias tuas ponam super te, et abominationes tuæ in medio tui erunt,/ et scietis quia ego Dominus./",
+        "SYN": "И не пощадит тебя око Мое, и не помилую, и воздам тебе по путям твоим, и мерзости твои с тобою будут, и узнаете, что Я Господь.",
+        "NEO": "Mon œil ne t’épargnera pas, et je serai sans pitié ; car je ferai retomber sur toi tes œuvres, et tes abominations seront au milieu de toi ; et vous saurez que je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "I will not look upon you with pity nor have mercy; I will bring your conduct down upon you, and the consequences of your abominations shall be in your midst; then shall you know that I am the LORD.",
+        "VAT_ES": "No te miraré con piedad y no me compadeceré, porque haré recaer sobre ti tu mala conducta, y tus abominaciones persistirán en medio de ti: así ustedes sabrán que yo soy el Señor.",
+        "CEI": "Non s'impietosirà per te il mio occhio e non avrò compassione, anzi ti terrò responsabile della tua condotta e saranno palesi in mezzo a te le tue nefandezze; saprete allora che io sono il Signore."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כֹּ֥ה אָמַ֖ר אֲדֹנָ֣/י יְהוִ֑ה רָעָ֛ה אַחַ֥ת רָעָ֖ה הִנֵּ֥ה בָאָֽה׃",
+        "LXX": "νῦν ἐγγύθεν ἐκχεῶ τὴν ὀργήν μου ἐπὶ σέ, καὶ συντελέσω τὸν θυμόν μου ἐν σοί, καὶ κρινῶ σε ἐν ταῖς ὁδοῖς σου, καὶ δώσω ἐπὶ σὲ πάντα τὰ βδελύγματά σου·",
+        "VUL": "Hæc dicit Dominus Deus :/ Afflictio una, afflictio ecce venit./",
+        "SYN": "Так говорит Господь Бог: беда единственная, вот, идет беда.",
+        "NEO": "Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Un malheur unique ! Un malheur ! Voici qu’il arrive !",
+        "NAB": "Thus says the Lord GOD: Disaster upon disaster! See it coming!",
+        "VAT_ES": "Así habla el Señor: &iexcl;Una desgracia nunca vista! &iexcl;Ya llega la desgracia!",
+        "CEI": "Così dice il Signore Dio: Sventura su sventura, ecco, arriva."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "קֵ֣ץ בָּ֔א בָּ֥א הַ/קֵּ֖ץ הֵקִ֣יץ אֵלָ֑יִ/ךְ הִנֵּ֖ה בָּאָֽה׃",
+        "LXX": "οὐ φείσεται ὁ ὀφθαλμός μου, οὐδὲ μὴ ἐλεήσω· διότι τὰς ὁδούς σου ἐπὶ σὲ δώσω, καὶ τὰ βδελύγματά σου ἐν μέσῳ σου ἔσονται, καὶ ἐπιγνώσῃ διότι ἐγώ εἰμι Κύριος ὁ τύπτων.",
+        "VUL": "Finis venit, venit finis :/ evigilavit adversum te, ecce venit./",
+        "SYN": "Конец пришел, пришел конец, встал на тебя; вот дошла,",
+        "NEO": "Une fin vient ! La fin arrive ! Elle s’éveille contre toi ; voici qu’elle arrive !",
+        "NAB": "An end is coming, the end is coming upon you! See it coming!",
+        "VAT_ES": "&iexcl;Llega el fin, se acerca el fin para ti, ya es inminente!",
+        "CEI": "Viene la fine, la fine viene su di te; ecco, viene."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "בָּ֧אָה הַ/צְּפִירָ֛ה אֵלֶ֖י/ךָ יוֹשֵׁ֣ב הָ/אָ֑רֶץ בָּ֣א הָ/עֵ֗ת קָר֛וֹב הַ/יּ֥וֹם מְהוּמָ֖ה וְ/לֹא הֵ֥ד הָרִֽים׃",
+        "LXX": "νῦν τὸ πέρας πρὸς σέ, καὶ ἀποστελῶ ἐγὼ ἐπὶ σὲ καὶ ἐκδικήσω ἐν ταῖς ὁδοῖς σου, καὶ δώσω ἐπὶ σὲ πάντα τὰ βδελύγματά σου·",
+        "VUL": "Venit contritio super te, qui habitas in terra :/ venit tempus, prope est dies occisionis,/ et non gloriæ montium./",
+        "SYN": "дошла напасть до тебя, житель земли! приходит время, приближается день смятения, а не веселых восклицаний на горах.",
+        "NEO": "Ton sort est venu, habitant du pays ; le temps vient, le jour est proche ! Du tumulte !... et non le cri de joie sur les montagnes.",
+        "NAB": "The climax has come for you who dwell in the land! The time has come, near is the day: a time of consternation, not of rejoicing.",
+        "VAT_ES": "&iexcl;Te toca el turno, habitante del país! Llega el tiempo, el día está cerca. &iexcl;Hay confusión y no alegría en las montañas!",
+        "CEI": "Sopraggiunge il tuo destino, o abitante del paese: arriva il tempo, è prossimo il giorno terribile e non di tripudio sui monti."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "עַתָּ֣ה מִ/קָּר֗וֹב אֶשְׁפּ֤וֹךְ חֲמָתִ/י֙ עָלַ֔יִ/ךְ וְ/כִלֵּיתִ֤י אַפִּ/י֙ בָּ֔/ךְ וּ/שְׁפַטְתִּ֖י/ךְ כִּ/דְרָכָ֑יִ/ךְ וְ/נָתַתִּ֣י עָלַ֔יִ/ךְ אֵ֖ת כָּל תּוֹעֲבוֹתָֽיִ/ךְ׃",
+        "LXX": "οὐ φείσεται ὁ ὀφθαλμός μου, οὐδὲ μὴ ἐλεήσω· διότι τὴν ὁδόν σου ἐπὶ σὲ δώσω, καὶ τὰ βδελύγματά σου ἐν μέσῳ σου ἔσται, καὶ ἐπιγνώσῃ διότι ἐγὼ Κύριος.",
+        "VUL": "Nunc de propinquo effundam iram meam super te,/ et complebo furorem meum in te :/ et judicabo te juxta vias tuas,/ et imponam tibi omnia scelera tua,/",
+        "SYN": "Вот, скоро изолью на тебя ярость Мою и совершу над тобою гнев Мой, и буду судить тебя по путям твоим, и возложу на тебя все мерзости твои.",
+        "NEO": "Maintenant, je vais sans tarder répandre mon courroux sur toi ; j’assouvirai sur toi ma colère, je te jugerai selon tes voies, et je ferai retomber sur toi toutes tes abominations.",
+        "NAB": "Soon now I will pour out my fury upon you and spend my anger upon you; I will judge you according to your conduct and lay upon you the consequences of all your abominations.",
+        "VAT_ES": "Ahora, en seguida, derramaré mi furor sobre ti, desahogaré mi ira contra ti, te juzgaré según tu conducta y haré recaer sobre ti todas tus abominaciones.",
+        "CEI": "Ora, fra breve, rovescerò il mio furore su di te e su di te darò sfogo alla mia ira. Ti giudicherò secondo le tue opere e ti domanderò conto di tutte le tue nefandezze."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/לֹא תָח֥וֹס עֵינִ֖/י וְ/לֹ֣א אֶחְמ֑וֹל כִּ/דְרָכַ֜יִ/ךְ עָלַ֣יִ/ךְ אֶתֵּ֗ן וְ/תוֹעֲבוֹתַ֨יִ/ךְ֙ בְּ/תוֹכֵ֣/ךְ תִּֽהְיֶ֔יןָ וִֽ/ידַעְתֶּ֕ם כִּ֛י אֲנִ֥י יְהוָ֖ה מַכֶּֽה׃",
+        "LXX": "Διότι τάδε λέγει Κύριος",
+        "VUL": "et non parcet oculus meus,/ nec miserebor :/ sed vias tuas imponam tibi,/ et abominationes tuæ in medio tui erunt,/ et scietis quia ego sum Dominus percutiens./",
+        "SYN": "И не пощадит тебя око Мое, и не помилую. По путям твоим воздам тебе, и мерзости твои с тобою будут; и узнаете, что Я Господь каратель.",
+        "NEO": "Mon œil n’épargnera pas, et je serai sans pitié ; je ferai retomber sur toi tes œuvres, tes abominations seront au milieu de toi ; et vous saurez que c’est moi, \\+w Yahweh|strong=\"H3068\"\\+w**, qui frappe !",
+        "NAB": "I will not look upon you with pity nor have mercy; I will deal with you according to your conduct, and the consequences of your abominations shall be in your midst; then shall you know that it is I, the LORD, who strike.",
+        "VAT_ES": "No te miraré con piedad y no me compadeceré, haré recaer sobre ti tu mala conducta, y tus abominaciones persistirán en medio de ti: así ustedes sabrán que yo, el Señor, soy el que golpeo.",
+        "CEI": "Né s'impietosirà il mio occhio e non avrò compassione, ma ti terrò responsabile della tua condotta e saranno palesi in mezzo a te le tue nefandezze: saprete allora che sono io, il Signore, colui che colpisce."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "הִנֵּ֥ה הַ/יּ֖וֹם הִנֵּ֣ה בָאָ֑ה יָֽצְאָה֙ הַ/צְּפִרָ֔ה צָ֚ץ הַ/מַּטֶּ֔ה פָּרַ֖ח הַ/זָּדֽוֹן׃",
+        "LXX": "Ἰδοὺ τὸ πέρας ἥκει, ἰδοὺ ἡ ἡμέρα Κυρίου· εἰ καὶ ἡ ῥάβδος ἤνθηκεν, ἡ ὕβρις ἐξανέστηκεν.",
+        "VUL": "Ecce dies, ecce venit :/ egressa est contritio,/ floruit virga, germinavit superbia,/",
+        "SYN": "Вот день! вот пришла, наступила напасть! жезл вырос, гордость разрослась.",
+        "NEO": "Voici le jour ; voici qu’il vient ; ton sort est arrivé ; la verge fleurit, l’orgueil éclôt.",
+        "NAB": "See, the day of the LORD! See, the end is coming! Lawlessness is in full bloom, insolence flourishes,",
+        "VAT_ES": "&iexcl;Ya llega el día, ay llega! &iexcl;Te toca el turno, ha florecido la vara, ha germinado el orgullo!",
+        "CEI": "Ecco il giorno, eccolo che arriva. È giunta la tua sorte. L'ingiustizia fiorisce, germoglia l'orgoglio"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "הֶ/חָמָ֥ס קָ֖ם לְ/מַטֵּה רֶ֑שַׁע לֹא מֵ/הֶ֞ם וְ/לֹ֧א מֵ/הֲמוֹנָ֛/ם וְ/לֹ֥א מֶ/הֱמֵ/הֶ֖ם וְ/לֹא נֹ֥הַּ בָּ/הֶֽם׃",
+        "LXX": "καὶ συντρίψει στήριγμα ἀνόμου, καὶ οὐ μετὰ θορύβου οὐδὲ μετὰ σπουδῆς.",
+        "VUL": "iniquitas surrexit in virga impietatis :/ non ex eis, et non ex populo,/ neque ex sonitu eorum :/ et non erit requies in eis./",
+        "SYN": "Восстает сила на жезл нечестия; ничего _не останется_ от них, и от богатства их, и от шума их, и от пышности их.",
+        "NEO": "La violence s’élève, pour être la verge de l’impiété. Il ne restera rien d’eux, ni de leur multitude, ni de leur tumulte, et ils n’auront plus d’éclat.",
+        "NAB": "violence has risen to support wickedness. It shall not be long in coming, nor shall it delay.",
+        "VAT_ES": "La violencia se ha alzado como vara de maldad. No queda nada de ellos, nada de su tumulto ni de su agitación; no hay tregua para ellos.",
+        "CEI": "e la violenza si leva a scettro d'iniquità."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "בָּ֤א הָ/עֵת֙ הִגִּ֣יעַ הַ/יּ֔וֹם הַ/קּוֹנֶה֙ אַל יִשְׂמָ֔ח וְ/הַ/מּוֹכֵ֖ר אַל יִתְאַבָּ֑ל כִּ֥י חָר֖וֹן אֶל כָּל הֲמוֹנָֽ/הּ׃",
+        "LXX": "ἥκει ὁ καιρός, ἰδοὺ ἡ ἡμέρα· ὁ κτώμενος μὴ χαιρέτω, καὶ ὁ πωλῶν μὴ θρηνείτω·",
+        "VUL": "Venit tempus, appropinquavit dies :/ qui emit, non lætetur,/ et qui vendit, non lugeat :/ quia ira super omnem populum ejus./",
+        "SYN": "Пришло время, наступил день; купивший не радуйся, и продавший не плачь; ибо гнев над всем множеством их.",
+        "NEO": "Le temps vient, le jour approche ! Que l’acheteur ne se réjouisse pas, et que le vendeur ne s’afflige point ; car la colère va éclater sur toute leur multitude.",
+        "NAB": "The time has come, the day dawns. Let not the buyer rejoice nor the seller mourn, for wrath shall be upon all the throng.",
+        "VAT_ES": "Ha llegado el tiempo, el día es inminente; que el comprador no se alegre ni el vendedor se entristezca, porque la ira amenaza a toda la multitud.",
+        "CEI": "È giunto il tempo, è vicino il giorno: chi ha comprato non si allieti, chi ha venduto non rimpianga; perché l'ira pende su tutti!"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כִּ֣י הַ/מּוֹכֵ֗ר אֶל הַ/מִּמְכָּר֙ לֹ֣א יָשׁ֔וּב וְ/ע֥וֹד בַּ/חַיִּ֖ים חַיָּתָ֑/ם כִּֽי חָז֤וֹן אֶל כָּל הֲמוֹנָ/הּ֙ לֹ֣א יָשׁ֔וּב וְ/אִ֧ישׁ בַּ/עֲוֺנ֛/וֹ חַיָּת֖/וֹ לֹ֥א יִתְחַזָּֽקוּ׃",
+        "LXX": "διότι ὁ κτώμενος πρὸς τὸν πωλοῦντα οὐκέτι μὴ ἐπιστρέψῃ, καὶ ἄνθρωπος ἐν ὀφθαλμῷ ζωῆς αὐτοῦ οὐ κρατήσει.",
+        "VUL": "Quia qui vendit, ad id quod vendidit non revertetur :/ et adhuc in viventibus vita eorum :/ visio enim ad omnem multitudinem ejus non regredietur,/ et vir in iniquitate vitæ suæ non confortabitur.]",
+        "SYN": "Ибо продавший не возвратится к проданному, хотя бы и остались они в живых; ибо пророческое видение о всем множестве их не отменится, и никто своим беззаконием не укрепит своей жизни.",
+        "NEO": "Le vendeur ne rentrera pas en possession de ce qu’il aura vendu, fût-il encore parmi les vivants ; car la vision contre toute leur multitude ne sera pas révoquée, et nul par son péché n’assurera sa vie.",
+        "NAB": "The seller shall not regain what he sold as long as he lives, for wrath shall be upon all the throng. Because of his sins, no one shall preserve his life.",
+        "VAT_ES": "No, el vendedor no recuperará lo que ha vendido, aunque siga viviendo. Porque la visión que amenaza a la multitud no será revocada, y a causa de su iniquidad, nadie podrá retener su vida.",
+        "CEI": "Chi ha venduto non tornerà in possesso di ciò che ha venduto anche se rimarrà in vita, perché la condanna contro il loro fasto non sarà revocata e nessuno nella sua perversità potrà preservare la sua esistenza."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "תָּקְע֤וּ בַ/תָּק֨וֹעַ֙ וְ/הָכִ֣ין הַ/כֹּ֔ל וְ/אֵ֥ין הֹלֵ֖ךְ לַ/מִּלְחָמָ֑ה כִּ֥י חֲרוֹנִ֖/י אֶל כָּל הֲמוֹנָֽ/הּ׃",
+        "LXX": "Σαλπίσατε ἐν σάλπιγγι καὶ κρίνατε τὰ σύμπαντα.",
+        "VUL": "[Canite tuba, præparentur omnes :/ et non est qui vadat ad prælium :/ ira enim mea super universum populum ejus./",
+        "SYN": "Затрубят в трубу, и все готовится, но никто не идет на войну: ибо гнев Мой над всем множеством их.",
+        "NEO": "On sonne la trompette, et tout est prêt ; mais personne ne marche au combat, car ma colère est contre toute leur multitude.",
+        "NAB": "They shall sound the trumpet and make everything ready, yet no one shall go to war, for my wrath is upon all the throng.",
+        "VAT_ES": "Tocarán la trompeta y se harán los preparativos, pero nadie acudirá al combate, porque mi ira amenaza a toda la multitud.",
+        "CEI": "Si suona la tromba e tutto è pronto; ma nessuno muove a battaglia, perché il mio furore è contro tutta quella moltitudine."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "הַ/חֶ֣רֶב בַּ/ח֔וּץ וְ/הַ/דֶּ֥בֶר וְ/הָ/רָעָ֖ב מִ/בָּ֑יִת אֲשֶׁ֤ר בַּ/שָּׂדֶה֙ בַּ/חֶ֣רֶב יָמ֔וּת וַ/אֲשֶׁ֣ר בָּ/עִ֔יר רָעָ֥ב וָ/דֶ֖בֶר יֹאכֲלֶֽ/נּוּ׃",
+        "LXX": "ὁ πόλεμος ἐν ῥομφαίᾳ ἔξωθεν, καὶ ὁ λιμὸς καὶ ὁ θάνατος ἔσωθεν· ὁ ἐν τῷ πεδίῳ ἐν ῥομφαίᾳ τελευτήσει, τοὺς δ’ ἐν τῇ πόλει λιμὸς καὶ θάνατος συντελέσει.",
+        "VUL": "Gladius foris, et pestis et fames intrinsecus :/ qui in agro est, gladio morietur,/ et qui in civitate, pestilentia et fame devorabuntur./",
+        "SYN": "Вне дома меч, а в доме мор и голод. Кто в поле, тот умрет от меча; а кто в городе, того пожрут голод и моровая язва.",
+        "NEO": "Au dehors, l’épée ; au dedans, la peste et la famine ; celui qui est aux champs mourra par l’épée, et celui qui est dans la ville, la famine et la peste le dévoreront.",
+        "NAB": "The sword is outside; pestilence and hunger are within. He that is in the country shall die by the sword; pestilence and famine shall devour those in the city.",
+        "VAT_ES": "&iexcl;Afuera la espada, adentro la peste y el hambre! El que está en el campo morirá por la espada y al que está en la ciudad, lo consumirán el hambre y la peste.",
+        "CEI": "La spada all'esterno, la peste e la fame di dentro: chi è per la campagna perirà di spada, chi è in città sarà divorato dalla fame e dalla peste."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וּ/פָֽלְטוּ֙ פְּלִ֣יטֵי/הֶ֔ם וְ/הָי֣וּ אֶל הֶ/הָרִ֗ים כְּ/יוֹנֵ֧י הַ/גֵּאָי֛וֹת כֻּלָּ֖/ם הֹמ֑וֹת אִ֖ישׁ בַּ/עֲוֺנֽ/וֹ׃",
+        "LXX": "καὶ ἀνασωθήσονται οἱ ἀνασωζόμενοι ἐξ αὐτῶν καὶ ἔσονται ἐπὶ τῶν ὀρέων· πάντας ἀποκτενῶ, ἕκαστον ἐν ταῖς ἀδικίαις αὐτοῦ.",
+        "VUL": "Et salvabuntur qui fugerint ex eis :/ et erunt in montibus quasi columbæ convallium omnes trepidi,/ unusquisque in iniquitate sua./",
+        "SYN": "А уцелевшие из них убегут и будут на горах, как голуби долин; все они будут стонать, каждый за свое беззаконие.",
+        "NEO": "Si des fugitifs parmi eux s’enfuient, ils erreront sur les montagnes comme les colombes des vallées, tous gémissant, chacun pour son péché.",
+        "NAB": "Even those who escape and flee to the mountains like the doves of the valleys - I will put them all to death, each one for his own sins.",
+        "VAT_ES": "Los sobrevivientes huirán, y estarán en las montañas como las palomas de los valles; y todos morirán, cada uno por su culpa.",
+        "CEI": "Chi di loro potrà fuggire e salvarsi sui monti gemerà come le colombe delle valli, ognuno per la sua iniquità."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כָּל הַ/יָּדַ֖יִם תִּרְפֶּ֑ינָה וְ/כָל בִּרְכַּ֖יִם תֵּלַ֥כְנָה מָּֽיִם׃",
+        "LXX": "πᾶσαι χεῖρες ἐκλυθήσονται, καὶ πάντες μηροὶ μολυνθήσονται ὑγρασίας,",
+        "VUL": "Omnes manus dissolventur,/ et omnia genua fluent aquis./",
+        "SYN": "У всех руки опустятся, и у всех колени задрожат, _как_ вода.",
+        "NEO": "Toutes les mains sont défaillantes, et tous les genoux se fondent en eau.",
+        "NAB": "All their hands shall be limp, and all their knees shall run with water.",
+        "VAT_ES": "Todas las manos desfallecerán y flaquearán todas las rodillas.",
+        "CEI": "Tutte le mani cadranno e tutte le ginocchia si scioglieranno come acqua."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/חָגְר֣וּ שַׂקִּ֔ים וְ/כִסְּתָ֥ה אוֹתָ֖/ם פַּלָּצ֑וּת וְ/אֶ֤ל כָּל פָּנִים֙ בּוּשָׁ֔ה וּ/בְ/כָל רָאשֵׁי/הֶ֖ם קָרְחָֽה׃",
+        "LXX": "καὶ περιζώσονται σάκκους, καὶ καλύψει αὐτοὺς θάμβος· καὶ ἐπὶ πᾶν πρόσωπον αἰσχύνη ἐπ’ αὐτούς, καὶ ἐπὶ πᾶσαν κεφαλὴν φαλάκρωμα.",
+        "VUL": "Et accingent se ciliciis,/ et operiet eos formido :/ et in omni facie confusio,/ et in universis capitibus eorum calvitium./",
+        "SYN": "Тогда они препояшутся вретищем, и обоймет их трепет; и у всех на лицах будет стыд, и у всех на головах плешь.",
+        "NEO": "Ils se revêtent de sacs, et la terreur les enveloppe ; la confusion est sur tous les visages, et toutes les têtes sont rasées.",
+        "NAB": "They shall put on sackcloth, and horror shall cover them; shame shall be on all their faces and baldness on all their heads.",
+        "VAT_ES": "Se vestirán de sayal y los invadirá el pánico; habrá confusión en todos los rostros y todas las cabezas serán rapadas.",
+        "CEI": "Vestiranno il sacco e lo spavento li avvolgerà. Su tutti i volti sarà la vergogna e tutte le teste saranno rasate."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כַּסְפָּ֞/ם בַּ/חוּצ֣וֹת יַשְׁלִ֗יכוּ וּ/זְהָבָ/ם֮ לְ/נִדָּ֣ה יִֽהְיֶה֒ כַּסְפָּ֨/ם וּ/זְהָבָ֜/ם לֹֽא יוּכַ֣ל לְ/הַצִּילָ֗/ם בְּ/יוֹם֙ עֶבְרַ֣ת יְהוָ֔ה נַפְשָׁ/ם֙ לֹ֣א יְשַׂבֵּ֔עוּ וּ/מֵעֵי/הֶ֖ם לֹ֣א יְמַלֵּ֑אוּ כִּֽי מִכְשׁ֥וֹל עֲוֺנָ֖/ם הָיָֽה׃",
+        "LXX": "τὸ ἀργύριον αὐτῶν ῥιφήσεται ἐν ταῖς πλατείαις, καὶ τὸ χρυσίον αὐτῶν ὑπεροφθήσεται· αἱ ψυχαὶ αὐτῶν οὐ μὴ ἐμπλησθῶσιν, καὶ αἱ κοιλίαι αὐτῶν οὐ μὴ πληρωθῶσιν· διότι βάσανος τῶν ἀδικιῶν αὐτῶν ἐγένετο.",
+        "VUL": "Argentum eorum foras projicietur,/ et aurum eorum in sterquilinium erit :/ argentum eorum et aurum eorum/ non valebit liberare eos in die furoris Domini :/ animam suam non saturabunt,/ et ventres eorum non implebuntur,/ quia scandalum iniquitatis eorum factum est./",
+        "SYN": "Серебро свое они выбросят на улицы, и золото у них будет в пренебрежении. Серебро их и золото их не сильно будет спасти их в день ярости Господа. Они не насытят ими душ своих и не наполнят утроб своих; ибо оно было поводом к беззаконию их.",
+        "NEO": "Ils jetteront leur argent dans les rues, et leur or sera pour eux de l’ordure ; leur argent et leur or ne pourront les délivrer, au jour de la colère de \\+w Yahweh|strong=\"H3068\"\\+w** ; ils n’en rassasieront pas leur âme, et n’en rempliront pas leurs entrailles ; car c’est là ce qui les a fait tomber dans l’iniquité.",
+        "NAB": "They shall fling their silver into the streets, and their gold shall be considered refuse. Their silver and gold cannot save them on the day of the LORD'S wrath. They shall not be allowed to satisfy their craving or fill their bellies, for this has been the occasion of their sin.",
+        "VAT_ES": "Arrojarán su plata por las calles y su oro se convertirá en basura: su plata y su oro no podrán salvarlos el día del furor del Señor. No saciarán su avidez, ni llenarán sus entrañas, porque el oro y la plata fueron la piedra de tropiezo que los hizo caer en la iniquidad",
+        "CEI": "Getteranno l'argento per le strade e il loro oro si cambierà in immondizia, con esso non si sfameranno, non si riempiranno il ventre, perché è stato per loro causa di peccato."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וּ/צְבִ֤י עֶדְי/וֹ֙ לְ/גָא֣וֹן שָׂמָ֔/הוּ וְ/צַלְמֵ֧י תוֹעֲבֹתָ֛/ם שִׁקּוּצֵי/הֶ֖ם עָ֣שׂוּ ב֑/וֹ עַל כֵּ֛ן נְתַתִּ֥י/ו לָ/הֶ֖ם לְ/נִדָּֽה׃",
+        "LXX": "ἐκλεκτὰ κόσμου εἰς ὑπερηφανίαν ἔθεντο αὐτά, καὶ εἰκόνας τῶν βδελυγμάτων αὐτῶν ἐποίησαν ἐξ αὐτῶν· ἕνεκεν τούτου δέδωκα αὐτὰ αὐτοῖς εἰς ἀκαθαρσίαν.",
+        "VUL": "Et ornamentum monilium suorum in superbiam posuerunt,/ et imagines abominationum suarum et simulacrorum fecerunt ex eo :/ propter hoc dedi eis illud in immunditiam./",
+        "SYN": "И в красных нарядах своих они превращали его в гордость, и делали из него изображения гнусных своих истуканов; за то и сделаю его нечистым для них;",
+        "NEO": "Des joyaux dont ils se paraient, ils faisaient leur orgueil ; ils en fabriquaient leurs abominations, leurs idoles. C’est pourquoi je changerai tout cela en ordure,",
+        "NAB": "In the beauty of their ornaments they put their pride: they made of them their abominable images (their idols). For this reason I make them refuse.",
+        "VAT_ES": "Pusieron su orgullo en la hermosura de sus joyas e hicieron con ellas las imágenes abominables de sus ídolos. Por eso las convertiré en inmundicia:",
+        "CEI": "Della bellezza dei loro gioielli fecero oggetto d'orgoglio e fabbricarono con essi le abominevoli statue dei loro idoli: per questo li tratterò come immondizia,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וּ/נְתַתִּ֤י/ו בְּ/יַֽד הַ/זָּרִים֙ לָ/בַ֔ז וּ/לְ/רִשְׁעֵ֥י הָ/אָ֖רֶץ לְ/שָׁלָ֑ל ו/חלל/ה וְ/חִלְּלֽוּ/הוּ׃",
+        "LXX": "καὶ παραδώσω αὐτὰ εἰς χεῖρας ἀλλοτρίων τοῦ διαρπάσαι αὐτά, καὶ τοῖς λοιμοῖς τῆς γῆς εἰς σκῦλα, καὶ βεβηλώσουσιν αὐτά.",
+        "VUL": "Et dabo illud in manus alienorum ad diripiendum,/ et impiis terræ in prædam,/ et contaminabunt illud./",
+        "SYN": "и отдам его в руки чужим в добычу и беззаконникам земли на расхищение, и они осквернят его.",
+        "NEO": "et je le livrerai en pillage aux mains des étrangers, en proie aux impies de la terre, — et ils le souilleront.",
+        "NAB": "I will hand them over as booty to foreigners, to be spoiled and defiled by the wicked of the earth.",
+        "VAT_ES": "las entregaré como botín a los extranjeros y como despojos a los impíos de la tierra, y ellos las profanarán.",
+        "CEI": "li darò in preda agli stranieri e in bottino alla feccia del paese e lo profaneranno."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/הֲסִבּוֹתִ֤י פָנַ/י֙ מֵ/הֶ֔ם וְ/חִלְּל֖וּ אֶת צְפוּנִ֑/י וּ/בָאוּ בָ֥/הּ פָּרִיצִ֖ים וְ/חִלְּלֽוּ/הָ׃",
+        "LXX": "καὶ ἀποστρέψω τὸ πρόσωπόν μου ἀπ’ αὐτῶν, καὶ μιανοῦσιν τὴν ἐπισκοπήν μου, καὶ εἰσελεύσονται εἰς αὐτὰ ἀφυλάκτως καὶ βεβηλώσουσιν αὐτά,",
+        "VUL": "Et avertam faciem meam ab eis,/ et violabunt arcanum meum :/ et introibunt in illud emissarii,/ et contaminabunt illud./",
+        "SYN": "И отвращу от них лице Мое, и осквернят сокровенное Мое; и придут туда грабители, и осквернят его.",
+        "NEO": "Je détournerai d’eux mon visage, et on souillera mon trésor ; des hommes de violence y entreront et le souilleront.",
+        "NAB": "I will turn away my face from them, and my treasure shall be profaned: robbers shall enter and profane it.",
+        "VAT_ES": "Apartaré de ellos mi rostro y mi tesoro será profanado: entrarán en él los invasores y lo profanarán.",
+        "CEI": "Rivolgerò da loro la mia faccia, sarà profanato il mio tesoro, vi entreranno i ladri e lo profaneranno."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "עֲשֵׂ֖ה הָֽ/רַתּ֑וֹק כִּ֣י הָ/אָ֗רֶץ מָֽלְאָה֙ מִשְׁפַּ֣ט דָּמִ֔ים וְ/הָ/עִ֖יר מָלְאָ֥ה חָמָֽס׃",
+        "LXX": "καὶ ποιήσουσι φυρμόν, διότι ἡ γῆ πλήρης λαῶν, καὶ ἡ πόλις πλήρης ἀνομίας.",
+        "VUL": "Fac conclusionem,/ quoniam terra plena est judicio sanguinum,/ et civitas plena iniquitate./",
+        "SYN": "Сделай цепь, ибо земля эта наполнена кровавыми злодеяниями, и город полон насилий.",
+        "NEO": "Prépare les chaînes ; car le pays est rempli d’attentats, et la ville de violences.",
+        "NAB": "They shall wreak slaughter, for the land is filled with bloodshed and the city full of violence.",
+        "VAT_ES": "Llevarán a cabo una matanza porque el país está lleno de juicios por homicidio y la ciudad llena de violencia.",
+        "CEI": "Prepàrati una catena, poiché il paese è pieno di assassini e la città è piena di violenza."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/הֵֽבֵאתִי֙ רָעֵ֣י גוֹיִ֔ם וְ/יָרְשׁ֖וּ אֶת בָּֽתֵּי/הֶ֑ם וְ/הִשְׁבַּתִּי֙ גְּא֣וֹן עַזִּ֔ים וְ/נִחֲל֖וּ מְקַֽדְשֵׁי/הֶֽם׃",
+        "LXX": "καὶ ἀποστρέψω τὸ φρύαγμα τῆς ἰσχύος αὐτῶν, καὶ μιανθήσεται τὰ ἅγια αὐτῶν.",
+        "VUL": "Et adducam pessimos de gentibus,/ et possidebunt domos eorum :/ et quiescere faciam superbiam potentium,/ et possidebunt sanctuaria eorum./",
+        "SYN": "Я приведу злейших из народов, и завладеют домами их. И положу конец надменности сильных, и будут осквернены святыни их.",
+        "NEO": "Et je ferai venir les plus méchants d’entre les peuples, et ils s’empareront de leurs maisons, et ils mettront fin à l’orgueil des puissants ; et leurs lieux saints seront profanés.",
+        "NAB": "I will bring in the worst of the nations, who shall take possession of their houses. I will put an end to their proud strength, and their sanctuaries shall be profaned.",
+        "VAT_ES": "Haré venir a las naciones más feroces, para que se adueñen de sus casas; acabaré con la soberbia de los poderosos y serán profanados sus santuarios.",
+        "CEI": "Io manderò i popoli più feroci e s'impadroniranno delle loro case, abbatterò la superbia dei potenti, i santuari saranno profanati."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "קְפָ֖דָה בָ֑א וּ/בִקְשׁ֥וּ שָׁל֖וֹם וָ/אָֽיִן׃",
+        "LXX": "ἐξιλασμὸς ἥξει καὶ ζητήσει εἰρήνην, καὶ οὐκ ἔσται.",
+        "VUL": "Angustia superveniente, requirent pacem,/ et non erit./",
+        "SYN": "Идет пагуба; будут искать мира, и не найдут.",
+        "NEO": "La ruine vient ; ils chercheront la paix, et il n’y en aura point.",
+        "NAB": "When anguish comes they shall seek peace, but there will be none.",
+        "VAT_ES": "&iexcl;Llega la angustia! Buscarán la paz, pero no la tendrán;",
+        "CEI": "Giungerà l'angoscia e cercheranno pace, ma pace non vi sarà."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "הֹוָ֤ה עַל הֹוָה֙ תָּב֔וֹא וּ/שְׁמֻעָ֥ה אֶל שְׁמוּעָ֖ה תִּֽהְיֶ֑ה וּ/בִקְשׁ֤וּ חָזוֹן֙ מִ/נָּבִ֔יא וְ/תוֹרָה֙ תֹּאבַ֣ד מִ/כֹּהֵ֔ן וְ/עֵצָ֖ה מִ/זְּקֵנִֽים׃",
+        "LXX": "οὐαὶ ἐπὶ οὐαὶ ἔσται, καὶ ἀγγελία ἐπ’ ἀγγελίαν ἔσται, καὶ ζητηθήσεται ὅρασις ἐκ προφήτου, καὶ νόμος ἀπολεῖται ἐξ ἱερέως καὶ βουλὴ ἐκ πρεσβυτέρων.",
+        "VUL": "Conturbatio super conturbationem veniet,/ et auditus super auditum :/ et quærent visionem de propheta,/ et lex peribit a sacerdote,/ et consilium a senioribus./",
+        "SYN": "Беда пойдет за бедою и весть за вестью; и будут просить у пророка видения, и не станет учения у священника и совета у старцев.",
+        "NEO": "Il arrivera malheur sur malheur, et nouvelle sur nouvelle ; et ils chercheront des visions auprès des prophètes, et la loi fera défaut au prêtre, et le conseil aux anciens.",
+        "NAB": "There shall be disaster after disaster, rumor after rumor. Prophetic vision shall fade; instruction shall be lacking to the priest, and counsel to the elders,",
+        "VAT_ES": "vendrá una desgracia sobre otra y una mala noticia tras otra. Implorarán una visión al profeta, le faltará la enseñanza al sacerdote y el consejo a los ancianos.",
+        "CEI": "Sventura seguirà a sventura, allarme seguirà ad allarme: ai profeti chiederanno responsi, ai sacerdoti verrà meno la dottrina, agli anziani il consiglio."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "הַ/מֶּ֣לֶךְ יִתְאַבָּ֗ל וְ/נָשִׂיא֙ יִלְבַּ֣שׁ שְׁמָמָ֔ה וִ/ידֵ֥י עַם הָ/אָ֖רֶץ תִּבָּהַ֑לְנָה מִ/דַּרְכָּ֞/ם אֶעֱשֶׂ֤ה אוֹתָ/ם֙ וּ/בְ/מִשְׁפְּטֵי/הֶ֣ם אֶשְׁפְּטֵ֔/ם וְ/יָדְע֖וּ כִּֽי אֲנִ֥י יְהוָֽה׃",
+        "LXX": "ἄρχων ἐνδύσεται ἀφανισμόν, καὶ αἱ χεῖρες τοῦ λαοῦ τῆς γῆς παραλυθήσονται· κατὰ τὰς ὁδοὺς αὐτῶν ποιήσω αὐτοῖς, καὶ ἐν τοῖς κρίμασιν αὐτῶν ἐκδικήσω αὐτούς, καὶ γνώσονται ὅτι ἐγὼ Κύριος.",
+        "VUL": "Rex lugebit, et princeps induetur mrore,/ et manus populi terræ conturbabuntur :/ secundum viam eorum faciam eis,/ et secundum judicia eorum judicabo eos,/ et scient quia ego Dominus.]",
+        "SYN": "Царь будет сетовать, и князь облечется в ужас, и у народа земли будут дрожать руки. Поступлю с ними по путям их, и по судам их буду судить их; и узнают, что Я Господь.",
+        "NEO": "Le roi sera dans le deuil, le prince se vêtira de tristesse, et les mains du peuple du pays trembleront. Je les traiterai d’après leurs œuvres, je les jugerai selon leurs mérites ; et ils sauront que je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "while the prince shall be enveloped in terror, and the hands of the common people shall tremble. I will deal with them according to their conduct, and according to their judgments I will judge them; thus they shall know that I am the LORD.",
+        "VAT_ES": "El rey estará de duelo, el príncipe se cubrirá de desolación y temblarán las manos de la gente. Yo los trataré conforme a su conducta, los juzgaré según sus juicios, y sabrán que yo soy el Señor.",
+        "CEI": "Il re sarà in lutto, il principe ammantato di desolazione, tremeranno le mani del popolo del paese. Li tratterò secondo la loro condotta, li giudicherò secondo i loro giudizi: così sapranno che io sono il Signore\"."
+      }
+    }
+  }
+}

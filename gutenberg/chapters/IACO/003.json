@@ -1,0 +1,320 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IACO_003",
+  "book_key": "IACO",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Μὴ πολλοὶ διδάσκαλοι γίνεσθε, ἀδελφοί μου, εἰδότες ὅτι μεῖζον κρίμα ληψόμεθα.",
+        "VUL": "Nolite plures magistri fieri fratres mei, scientes quoniam majus judicium sumitis.",
+        "SYN": "Братия мои! не многие делайтесь учителями, зная, что мы подвергнемся большему осуждению,",
+        "NEO": "Mes frères, qu’il n’y en ait pas tant parmi vous qui s’érigent en docteurs, sachant que nous serons jugés plus sévèrement.",
+        "NAB": "Not many of you should become teachers, my brothers, for you realize that we will be judged more strictly,",
+        "VAT_ES": "&iquest;De dónde provienen las luchas y las querellas que hay entre ustedes? &iquest;No es precisamente de las pasiones que combaten en sus mismos miembros?",
+        "CEI": "All'angelo della Chiesa di Efeso scrivi: Così parla Colui che tiene le sette stelle nella sua destra e cammina in mezzo ai sette candelabri d'oro:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Πολλὰ γὰρ πταίομεν ἅπαντες. Εἴ τις ἐν λόγῳ οὐ πταίει, οὗτος τέλειος ἀνήρ, δυνατὸς χαλιναγωγῆσαι καὶ ὅλον τὸ σῶμα.",
+        "VUL": "In multis enim offendimus omnes. Si quis in verbo non offendit, hic perfectus est vir : potest etiam freno circumducere totum corpus.",
+        "SYN": "ибо все мы много согрешаем. Кто не согрешает в слове, тот человек совершенный, могущий обуздать и все тело.",
+        "NEO": "Car nous péchons tous en beaucoup de choses. Si quelqu’un ne pèche pas en parole, c’est un homme parfait, capable de tenir aussi tout le corps en bride.",
+        "NAB": "for we all fall short in many respects. If anyone does not fall short in speech, he is a perfect man, able to bridle his whole body also.",
+        "VAT_ES": "Ustedes ambicionan, y si no consiguen lo que desean, matan; envidian, y al no alcanzar lo que pretenden, combaten y se hacen la guerra. Ustedes no tienen, porque no piden.",
+        "CEI": "Conosco le tue opere, la tua fatica e la tua costanza, per cui non puoi sopportare i cattivi; li hai messi alla prova - quelli che si dicono apostoli e non lo sono - e li hai trovati bugiardi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Ἴδε, τῶν ἵππων τοὺς χαλινοὺς εἰς τὰ στόματα βάλλομεν πρὸς τὸ πείθεσθαι αὐτοὺς ἡμῖν, καὶ ὅλον τὸ σῶμα αὐτῶν μετάγομεν.",
+        "VUL": "Si autem equis frena in ora mittimus ad consentiendum nobis, et omne corpus illorum circumferimus.",
+        "SYN": "Вот, мы влагаем удила в рот коням, чтобы они повиновались нам, и управляем всем телом их.",
+        "NEO": "Si nous mettons aux chevaux un mors dans la bouche pour nous en faire obéir, nous gouvernons aussi leur corps tout entier.",
+        "NAB": "If we put bits into the mouths of horses to make them obey us, we also guide their whole bodies.",
+        "VAT_ES": "O bien, piden y no reciben, porque piden mal, con el único fin de satisfacer sus pasiones.",
+        "CEI": "Sei costante e hai molto sopportato per il mio nome, senza stancarti."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ἰδού, καὶ τὰ πλοῖα, τηλικαῦτα ὄντα, καὶ ὑπὸ σκληρῶν ἀνέμων ἐλαυνόμενα, μετάγεται ὑπὸ ἐλαχίστου πηδαλίου, ὅπου ἂν ἡ ὁρμὴ τοῦ εὐθύνοντος βούληται.",
+        "VUL": "Ecce et naves, cum magnæ sint, et a ventis validis minentur, circumferuntur a modico gubernaculo ubi impetus dirigentis voluerit.",
+        "SYN": "Вот, и корабли, как ни велики они и как ни сильными ветрами носятся, небольшим рулем направляются, куда хочет кормчий;",
+        "NEO": "Voyez encore les vaisseaux : tout grands qu’ils sont et quoique poussés par des vents impétueux, ils sont conduits par un très petit gouvernail au gré du pilote qui les dirige.",
+        "NAB": "It is the same with ships: even though they are so large and driven by fierce winds, they are steered by a very small rudder wherever the pilot's inclination wishes.",
+        "VAT_ES": "&iexcl;Corazones adúlteros! &iquest;No saben acaso que haciéndose amigos del mundo se hacen enemigos de Dios? Porque el que quiere ser amigo del mundo se hace enemigo de Dios.",
+        "CEI": "Ho però da rimproverarti che hai abbandonato il tuo amore di prima."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Οὕτως καὶ ἡ γλῶσσα μικρὸν μέλος ἐστίν, καὶ μεγαλαυχεῖ. Ἰδού, ὀλίγον πῦρ ἡλίκην ὕλην ἀνάπτει.",
+        "VUL": "Ita et lingua modicum quidem membrum est, et magna exaltat. Ecce quantus ignis quam magnam silvam incendit !",
+        "SYN": "так и язык -- небольшой член, но много делает. Посмотри, небольшой огонь как много вещества зажигает!",
+        "NEO": "Ainsi la langue est un tout petit membre ; mais de quelles grandes choses elle peut se vanter ! Voyez, une étincelle peut embraser une grande forêt !",
+        "NAB": "In the same way the tongue is a small member and yet has great pretensions. Consider how small a fire can set a huge forest ablaze.",
+        "VAT_ES": "No piensen que la Escritura afirma en vano: El alma que Dios puso en nosotros está llena de deseos envidiosos.",
+        "CEI": "Ricorda dunque da dove sei caduto, ravvediti e compi le opere di prima. Se non ti ravvederai, verrò da te e rimuoverò il tuo candelabro dal suo posto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Καὶ ἡ γλῶσσα πῦρ, ὁ κόσμος τῆς ἀδικίας· οὕτως ἡ γλῶσσα καθίσταται ἐν τοῖς μέλεσιν ἡμῶν, ἡ σπιλοῦσα ὅλον τὸ σῶμα, καὶ φλογίζουσα τὸν τροχὸν τῆς γενέσεως, καὶ φλογιζομένη ὑπὸ τῆς γεέννης.",
+        "VUL": "Et lingua ignis est, universitas iniquitatis. Lingua constituitur in membris nostris, quæ maculat totum corpus, et inflammat rotam nativitatis nostræ inflammata a gehenna.",
+        "SYN": "И язык -- огонь, прикраса неправды; язык в таком положении находится между членами нашими, что оскверняет все тело и воспаляет круг жизни, будучи сам воспаляем от геенны.",
+        "NEO": "La langue aussi est un feu, un monde d’iniquité. N’étant qu’un de nos membres, la langue est capable d’infecter tout le corps ; elle enflamme le cours+ 3:6 III, 6. Le cours, m. à m. la roue de notre vie.* de notre vie, enflammée qu’elle est elle-même du feu de l’enfer.",
+        "NAB": "The tongue is also a fire. It exists among our members as a world of malice, defiling the whole body and setting the entire course of our lives on fire, itself set on fire by Gehenna.",
+        "VAT_ES": "Pero él nos da una gracia más grande todavía, según la palabra de la Escritura que dice: Dios resiste a los soberbios y da su gracia a los humildes.",
+        "CEI": "Tuttavia hai questo di buono, che detesti le opere dei Nicolaìti, che anch'io detesto."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Πᾶσα γὰρ φύσις θηρίων τε καὶ πετεινῶν, ἑρπετῶν τε καὶ ἐναλίων, δαμάζεται καὶ δεδάμασται τῇ φύσει τῇ ἀνθρωπίνῃ·",
+        "VUL": "Omnis enim natura bestiarum, et volucrum, et serpentium, et ceterorum domantur, et domita sunt a natura humana :",
+        "SYN": "Ибо всякое естество зверей и птиц, пресмыкающихся и морских животных укрощается и укрощено естеством человеческим,",
+        "NEO": "Toutes les espèces de quadrupèdes, d’oiseaux, de reptiles et d’animaux marins+ 3:7 7. D’animaux marins; Vulg., et \\+qt d’autres\\+qt* animaux.* peuvent se dompter, et ont été domptés par l’homme.",
+        "NAB": "For every kind of beast and bird, of reptile and sea creature, can be tamed and has been tamed by the human species,",
+        "VAT_ES": "Sométanse a Dios; resistan al demonio, y él se alejará de ustedes.",
+        "CEI": "Chi ha orecchi, ascolti ciò che lo Spirito dice alle Chiese: Al vincitore darò da mangiare dell'albero della vita, che sta nel paradiso di Dio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "τὴν δὲ γλῶσσαν οὐδεὶς δύναται ἀνθρώπων δαμάσαι· ἀκατάσχετον κακόν, μεστὴ ἰοῦ θανατηφόρου.",
+        "VUL": "linguam autem nullus hominum domare potest : inquietum malum, plena veneno mortifero.",
+        "SYN": "а язык укротить никто из людей не может: это -- неудержимое зло; он исполнен смертоносного яда.",
+        "NEO": "Mais la langue, aucun homme ne peut la dompter : c’est un fléau qu’on ne peut arrêter ; elle est remplie d’un venin mortel.",
+        "NAB": "but no human being can tame the tongue. It is a restless evil, full of deadly poison.",
+        "VAT_ES": "Acérquense a Dios y él se acercará a ustedes. Que los pecadores purifiquen sus manos; que se santifiquen los que tienen el corazón dividido.",
+        "CEI": "All'angelo della Chiesa di Smirne scrivi: Così parla il Primo e l'Ultimo, che era morto ed è tornato alla vita:"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Ἐν αὐτῇ εὐλογοῦμεν τὸν θεὸν καὶ πατέρα, καὶ ἐν αὐτῇ καταρώμεθα τοὺς ἀνθρώπους τοὺς καθ’ ὁμοίωσιν θεοῦ γεγονότας·",
+        "VUL": "In ipsa benedicimus Deum et Patrem : et in ipsa maledicimus homines, qui ad similitudinem Dei facti sunt.",
+        "SYN": "Им благословляем Бога и Отца, и им проклинаем человеков, сотворенных по подобию Божию.",
+        "NEO": "Par elle nous bénissons le Seigneur et notre Père, et par elle nous maudissons les hommes qui ont été faits à l’image de Dieu.+ 3:9 9. Une autre leçon : Dieu notre Père.*",
+        "NAB": "With it we bless the Lord and Father, and with it we curse human beings who are made in the likeness of God.",
+        "VAT_ES": "Reconozcan su miseria con dolor y con lágrimas. Que la alegría de ustedes se transforme en llanto, y el gozo, en tristeza.",
+        "CEI": "Conosco la tua tribolazione, la tua povertà - tuttavia sei ricco - e la calunnia da parte di quelli che si proclamano Giudei e non lo sono, ma appartengono alla sinagoga di satana."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "ἐκ τοῦ αὐτοῦ στόματος ἐξέρχεται εὐλογία καὶ κατάρα. Οὐ χρή, ἀδελφοί μου, ταῦτα οὕτως γίνεσθαι.",
+        "VUL": "Ex ipso ore procedit benedictio et maledictio. Non oportet, fratres mei, hæc ita fieri.",
+        "SYN": "Из тех же уст исходит благословение и проклятие: не должно, братия мои, сему так быть.",
+        "NEO": "De la même bouche sortent la malédiction et la bénédiction ! Il ne faut pas, mes frères, qu’il en soit ainsi.",
+        "NAB": "From the same mouth come blessing and cursing. This need not be so, my brothers.",
+        "VAT_ES": "Humíllense delante del Señor, y él los exaltará.",
+        "CEI": "Non temere ciò che stai per soffrire: ecco, il diavolo sta per gettare alcuni di voi in carcere, per mettervi alla prova e avrete una tribolazione per dieci giorni. Sii fedele fino alla morte e ti darò la corona della vita."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Μήτι ἡ πηγὴ ἐκ τῆς αὐτῆς ὀπῆς βρύει τὸ γλυκὺ καὶ τὸ πικρόν;",
+        "VUL": "Numquid fons de eodem foramine emanat dulcem et amaram aquam ?",
+        "SYN": "Течет ли из одного отверстия источника сладкая и горькая _вода?_",
+        "NEO": "Est-ce que de la même ouverture, la source fait jaillir le doux et l’amer ?",
+        "NAB": "Does a spring gush forth from the same opening both pure and brackish water?",
+        "VAT_ES": "Hermanos, no hablen mal los unos de los otros. El que habla en contra de un hermano o lo condena, habla en contra de la Ley y la condena. Ahora bien, si tú condenas la Ley, no eres cumplidor de la Ley, sino juez de la misma.",
+        "CEI": "Chi ha orecchi, ascolti ciò che lo Spirito dice alle Chiese: Il vincitore non sarà colpito dalla seconda morte."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Μὴ δύναται, ἀδελφοί μου, συκῆ ἐλαίας ποιῆσαι, ἢ ἄμπελος σῦκα; Οὕτως οὐδεμία πηγὴ ἁλυκὸν καὶ γλυκὺ ποιῆσαι ὕδωρ.",
+        "VUL": "Numquid potest, fratres mei, ficus uvas facere, aut vitis ficus ? Sic neque salsa dulcem potest facere aquam.",
+        "SYN": "Не может, братия мои, смоковница приносить маслины или виноградная лоза смоквы. Также и один источник не _может_ изливать соленую и сладкую воду.",
+        "NEO": "Est-ce qu’un figuier, mes frères, peut produire des olives, ou la vigne des figues ? Ainsi une source salée ne peut donner de l’eau douce.",
+        "NAB": "Can a fig tree, my brothers, produce olives, or a grapevine figs? Neither can salt water yield fresh.",
+        "VAT_ES": "Y no hay más que un solo legislador y juez, aquel que tiene el poder de salvar o de condenar. &iquest;Quién eres tú para condenar al prójimo?",
+        "CEI": "All'angelo della Chiesa di Pèrgamo scrivi: Così parla Colui che ha la spada affilata a due tagli:"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "¶Τίς σοφὸς καὶ ἐπιστήμων ἐν ὑμῖν; Δειξάτω ἐκ τῆς καλῆς ἀναστροφῆς τὰ ἔργα αὐτοῦ ἐν πρᾳΰτητι σοφίας.",
+        "VUL": "Quis sapiens et disciplinatus inter vos ? Ostendat ex bona conversatione operationem suam in mansuetudine sapientiæ.",
+        "SYN": "Мудр ли и разумен кто из вас, докажи это на самом деле добрым поведением с мудрою кротостью.",
+        "NEO": "Qui parmi vous est sage et intelligent ? Qu’il fasse voir à l’œuvre dans la suite d’une bonne vie sa modération et sa sagesse.",
+        "NAB": "Who among you is wise and understanding? Let him show his works by a good life in the humility that comes from wisdom.",
+        "VAT_ES": "Y ustedes, los que ahora dicen: «Hoy o mañana iremos a tal ciudad y nos quedaremos allí todo el año, haremos negocio y ganaremos dinero»,",
+        "CEI": "So che abiti dove satana ha il suo trono; tuttavia tu tieni saldo il mio nome e non hai rinnegato la mia fede neppure al tempo in cui Antìpa, il mio fedele testimone, fu messo a morte nella vostra città, dimora di satana."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ ζῆλον πικρὸν ἔχετε καὶ ἐριθείαν ἐν τῇ καρδίᾳ ὑμῶν, μὴ κατακαυχᾶσθε καὶ ψεύδεσθε κατὰ τῆς ἀληθείας.",
+        "VUL": "Quod si zelum amarum habetis, et contentiones sint in cordibus vestris : nolite gloriari, et mendaces esse adversus veritatem :",
+        "SYN": "Но если в вашем сердце вы имеете горькую зависть и сварливость, то не хвалитесь и не лгите на истину.",
+        "NEO": "Mais si vous avez dans vos cœurs un zèle amer et un esprit de dispute, ne vous glorifiez pas et ne mentez pas contre la vérité.",
+        "NAB": "But if you have bitter jealousy and selfish ambition in your hearts, do not boast and be false to the truth.",
+        "VAT_ES": "&iquest;saben acaso qué les pasará mañana? Por su vida es como el humo, que aparece un momento y luego se disipa.",
+        "CEI": "Ma ho da rimproverarti alcune cose: hai presso di te seguaci della dottrina di Balaàm, il quale insegnava a Balak a provocare la caduta dei figli d'Israele, spingendoli a mangiare carni immolate agli idoli e ad abbandonarsi alla fornicazione."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Οὐκ ἔστιν αὕτη ἡ σοφία ἄνωθεν κατερχομένη, ἀλλ’ ἐπίγειος, ψυχική, δαιμονιώδης.",
+        "VUL": "non est enim ista sapientia desursum descendens : sed terrena, animalis, diabolica.",
+        "SYN": "Это не есть мудрость, нисходящая свыше, но земная, душевная, бесовская,",
+        "NEO": "Une pareille sagesse ne descend pas d’en haut ; elle est terrestre, charnelle, diabolique.",
+        "NAB": "Wisdom of this kind does not come down from above but is earthly, unspiritual, demonic.",
+        "VAT_ES": "Digan más bien: «Si Dios quiere, viviremos y haremos esto o aquello».",
+        "CEI": "Così pure hai di quelli che seguono la dottrina dei Nicolaìti."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Ὅπου γὰρ ζῆλος καὶ ἐριθεία, ἐκεῖ ἀκαταστασία καὶ πᾶν φαῦλον πρᾶγμα.",
+        "VUL": "Ubi enim zelus et contentio, ibi inconstantia et omne opus pravum.",
+        "SYN": "ибо где зависть и сварливость, там неустройство и все худое.",
+        "NEO": "Car là où il y a jalousie et esprit de contention, là est le trouble et toute action mauvaise.",
+        "NAB": "For where jealousy and selfish ambition exist, there is disorder and every foul practice.",
+        "VAT_ES": "Ustedes, en cambio, se glorían presuntuosamente, y esa jactancia es mala.",
+        "CEI": "Ravvediti dunque; altrimenti verrò presto da te e combatterò contro di loro con la spada della mia bocca."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Ἡ δὲ ἄνωθεν σοφία πρῶτον μὲν ἁγνή ἐστιν, ἔπειτα εἰρηνική, ἐπιεικής, εὐπειθής, μεστὴ ἐλέους καὶ καρπῶν ἀγαθῶν, ἀδιάκριτος καὶ ἀνυπόκριτος.",
+        "VUL": "Quæ autem desursum est sapientia, primum quidem pudica est, deinde pacifica, modesta, suadibilis, bonis consentiens, plena misericordia et fructibus bonis, non judicans, sine simulatione.",
+        "SYN": "Но мудрость, сходящая свыше, во-первых, чиста, потом мирна, скромна, послушлива, полна милосердия и добрых плодов, беспристрастна и нелицемерна.",
+        "NEO": "Mais la sagesse d’en haut est premièrement pure, ensuite pacifique, condescendante, traitable,+ 3:17 17. Après traitable, la Vulgate imprimée (mais non les meilleurs manuscrits) ajoute, \\+qt cédant aux bons conseils\\+qt*.* pleine de miséricorde et de bons fruits, sans partialité, sans hypocrisie.",
+        "NAB": "But the wisdom from above is first of all pure, then peaceable, gentle, compliant, full of mercy and good fruits, without inconstancy or insincerity.",
+        "VAT_ES": "El que sabe hacer el bien y no lo hace, comete pecado.",
+        "CEI": "Chi ha orecchi, ascolti ciò che lo Spirito dice alle Chiese: Al vincitore darò la manna nascosta e una pietruzza bianca sulla quale sta scritto un nome nuovo, che nessuno conosce all'infuori di chi la riceve."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Καρπὸς δὲ τῆς δικαιοσύνης ἐν εἰρήνῃ σπείρεται τοῖς ποιοῦσιν εἰρήνην.",
+        "VUL": "Fructus autem justitiæ, in pace seminatur, facientibus pacem.",
+        "SYN": "Плод же правды в мире сеется у тех, которые хранят мир.",
+        "NEO": "Le fruit de justice se sème dans la paix par ceux qui pratiquent la paix.",
+        "NAB": "And the fruit of righteousness is sown in peace for those who cultivate peace.",
+        "CEI": "All'angelo della Chiesa di Tiàtira scrivi: Così parla il Figlio di Dio, Colui che ha gli occhi fiammeggianti come fuoco e i piedi simili a bronzo splendente."
+      }
+    }
+  }
+}

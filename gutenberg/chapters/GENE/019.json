@@ -1,0 +1,697 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_019",
+  "book_key": "GENE",
+  "sequence": 19,
+  "chapter_in": {
+    "MT": 19,
+    "VUL": 19,
+    "LXX": 19
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ֠/יָּבֹאוּ שְׁנֵ֨י הַ/מַּלְאָכִ֤ים סְדֹ֨מָ/ה֙ בָּ/עֶ֔רֶב וְ/ל֖וֹט יֹשֵׁ֣ב בְּ/שַֽׁעַר סְדֹ֑ם וַ/יַּרְא לוֹט֙ וַ/יָּ֣קָם לִ/קְרָאתָ֔/ם וַ/יִּשְׁתַּ֥חוּ אַפַּ֖יִם אָֽרְצָ/ה׃",
+        "VUL": "Veneruntque duo angeli Sodomam vespere, et sedente Lot in foribus civitatis. Qui cum vidisset eos, surrexit, et ivit obviam eis : adoravitque pronus in terram,",
+        "LXX": "Ἦλθον δὲ οἱ δύο ἄγγελοι εἰς Σόδομα ἑσπέρας· Λὼτ δὲ ἐκάθητο παρὰ τὴν πύλην Σοδόμων. ἰδὼν δὲ Λὼτ ἀνέστη εἰς συνάντησιν αὐτοῖς, καὶ προσεκύνησεν τῷ προσώπῳ ἐπὶ τὴν γῆν·",
+        "NAB": "The two angels reached Sodom in the evening, as Lot was sitting at the gate of Sodom. When Lot saw them, he got up to greet them; and bowing down with his face to the ground,",
+        "SYN": "И пришли те два Ангела в Содом вечером, когда Лот сидел у ворот Содома. Лот увидел, и встал, чтобы встретить их, и поклонился лицем до земли",
+        "NEO": "Les deux anges arrivèrent à Sodome le soir, et Lot était assis à la porte de Sodome. En les voyant, Lot se leva pour aller au-devant d’eux et il se prosterna le visage contre terre,",
+        "VAT_ES": "Los dos ángeles llegaron a Sodoma al atardecer,, mientras Lot estaba sentado a la puerta de la ciudad. Al verlos, se levantó para saludarlos, e inclinándose hasta el suelo,",
+        "CEI": "I due angeli arrivarono a Sòdoma sul far della sera, mentre Lot stava seduto alla porta di Sòdoma. Non appena li ebbe visti, Lot si alzò, andò loro incontro e si prostrò con la faccia a terra."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֜אמֶר הִנֶּ֣ה נָּא אֲדֹנַ֗/י ס֣וּרוּ נָ֠א אֶל בֵּ֨ית עַבְדְּ/כֶ֤ם וְ/לִ֨ינוּ֙ וְ/רַחֲצ֣וּ רַגְלֵי/כֶ֔ם וְ/הִשְׁכַּמְתֶּ֖ם וַ/הֲלַכְתֶּ֣ם לְ/דַרְכְּ/כֶ֑ם וַ/יֹּאמְר֣וּ לֹּ֔א כִּ֥י בָ/רְח֖וֹב נָלִֽין׃",
+        "VUL": "et dixit : Obsecro, domini, declinate in domum pueri vestri, et manete ibi : lavate pedes vestros, et mane proficiscemini in viam vestram. Qui dixerunt : Minime, sed in platea manebimus.",
+        "LXX": "καὶ εἶπεν Ἰδού, κύριοι, ἐκκλίνατε πρὸς τὸν οἶκον τοῦ παιδὸς ὑμῶν καὶ καταλύσατε, καὶ νίψατε τοὺς πόδας ὑμῶν, καὶ ὀρθρίσαντες ἀπελεύσεσθε εἰς τὴν ὁδὸν ὑμῶν. εἶπαν δέ Οὐχί, ἀλλ’ ἢ ἐν τῇ πλατείᾳ καταλύσομεν.",
+        "NAB": "he said, \"Please, gentlemen, come aside into your servant's house for the night, and bathe your feet; you can get up early to continue your journey.\" But they replied, \"No, we shall pass the night in the town square.\"",
+        "SYN": "и сказал: государи мои! зайдите в дом раба вашего и ночуйте, и умойте ноги ваши, и встаньте поутру и пойдете в путь свой. Но они сказали: нет, мы ночуем на улице.",
+        "NEO": "et il dit : « Voici, mes seigneurs, entrez, je vous prie, chez votre serviteur pour y passer la nuit ; lavez vos pieds ; vous vous lèverez de bon matin et vous poursuivrez votre route. » Ils répondirent : « Non, nous passerons la nuit sur la place. »",
+        "VAT_ES": "les dijo: «Les ruego, señores, que vengan a pasar la noche en casa de este servidor. Lávense los pies, y mañana bien temprano podrán seguir viaje». «No, le respondieron ellos, pasaremos la noche en la plaza».",
+        "CEI": "E disse: \"Miei signori, venite in casa del vostro servo: vi passerete la notte, vi laverete i piedi e poi, domattina, per tempo, ve ne andrete per la vostra strada\". Quelli risposero: \"No, passeremo la notte sulla piazza\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּפְצַר בָּ֣/ם מְאֹ֔ד וַ/יָּסֻ֣רוּ אֵלָ֔י/ו וַ/יָּבֹ֖אוּ אֶל בֵּית֑/וֹ וַ/יַּ֤עַשׂ לָ/הֶם֙ מִשְׁתֶּ֔ה וּ/מַצּ֥וֹת אָפָ֖ה וַ/יֹּאכֵֽלוּ׃",
+        "VUL": "Compulit illos oppido ut diverterent ad eum : ingressisque domum illius fecit convivium, et coxit azyma, et comederunt.",
+        "LXX": "καὶ παρεβιάζετο αὐτούς, καὶ ἐξέκλιναν πρὸς αὐτόν. καὶ εἰσῆλθον εἰς τὴν οἰκίαν αὐτοῦ· καὶ ἐποίησεν αὐτοῖς πότον καὶ ἀζύμους ἔπεψεν αὐτοῖς, καὶ ἔφαγον",
+        "NAB": "He urged them so strongly, however, that they turned aside to his place and entered his house. He prepared a meal for them, baking cakes without leaven, and they dined.",
+        "SYN": "Он же сильно упрашивал их; и они пошли к нему и пришли в дом его. Он сделал им угощение и испек пресные хлебы, и они ели.",
+        "NEO": "Mais Lot leur fit tant d’instances qu’ils vinrent chez lui et entrèrent dans sa maison. Il leur prépara un festin et fit cuire des pains sans levain ; et ils mangèrent.",
+        "VAT_ES": "Pero él les insistió tanto, que al fin se fueron con él y se hospedaron en su casa. Lot les preparó una comida, hizo cocinar galletas sin levadura, y ellos comieron.",
+        "CEI": "Ma egli insistette tanto che vennero da lui ed entrarono nella sua casa. Egli preparò per loro un banchetto, fece cuocere gli azzimi e così mangiarono."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "טֶרֶם֮ יִשְׁכָּבוּ֒ וְ/אַנְשֵׁ֨י הָ/עִ֜יר אַנְשֵׁ֤י סְדֹם֙ נָסַ֣בּוּ עַל הַ/בַּ֔יִת מִ/נַּ֖עַר וְ/עַד זָקֵ֑ן כָּל הָ/עָ֖ם מִ/קָּצֶֽה׃",
+        "VUL": "Prius autem quam irent cubitum, viri civitatis vallaverunt domum a puero usque ad senem, omnis populus simul.",
+        "LXX": "πρὸ τοῦ κοιμηθῆναι. καὶ οἱ ἄνδρες τῆς πόλεως οἱ Σοδομεῖται περιεκύκλωσαν τὴν οἰκίαν ἀπὸ νεανίσκου ἕως πρεσβυτέρου, ἅπας ὁ λαὸς ἅμα.",
+        "NAB": "Before they went to bed, all the townsmen of Sodom, both young and old - all the people to the last man - closed in on the house.",
+        "SYN": "Еще не легли они спать, как городские жители, Содомляне, от молодого до старого, весь народ со _всех_ концов _города,_ окружили дом",
+        "NEO": "Ils n’étaient pas encore couchés que les hommes de la ville, les hommes de Sodome, entourèrent la maison, depuis les enfants jusqu’aux vieillards, le peuple entier, de tous les bouts de la ville.",
+        "VAT_ES": "Aún no se habían acostado, cuando los hombres de la ciudad, los hombres de Sodoma, se agolparon alrededor de la casa. Estaba la población en pleno, sin excepción alguna, desde el más joven hasta el más viejo.",
+        "CEI": "Non si erano ancora coricati, quand'ecco gli uomini della città, cioè gli abitanti di Sòdoma, si affollarono intorno alla casa, giovani e vecchi, tutto il popolo al completo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרְא֤וּ אֶל לוֹט֙ וַ/יֹּ֣אמְרוּ ל֔/וֹ אַיֵּ֧ה הָ/אֲנָשִׁ֛ים אֲשֶׁר בָּ֥אוּ אֵלֶ֖י/ךָ הַ/לָּ֑יְלָה הוֹצִיאֵ֣/ם אֵלֵ֔י/נוּ וְ/נֵדְעָ֖ה אֹתָֽ/ם׃",
+        "VUL": "Vocaveruntque Lot, et dixerunt ei : Ubi sunt viri qui introierunt ad te nocte ? educ illos huc, ut cognoscamus eos.",
+        "LXX": "καὶ ἐξεκαλοῦντο τὸν Λώτ, καὶ ἔλεγον πρὸς αὐτόν Ποῦ εἰσιν οἱ ἄνδρες οἱ εἰσελθόντες πρὸς σὲ τὴν νύκτα; ἐξάγαγε αὐτοὺς πρὸς ἡμᾶς, ἵνα συγγενώμεθα αὐτοῖς.",
+        "NAB": "They called to Lot and said to him, \"Where are the men who came to your house tonight? Bring them out to us that we may have intimacies with them.\"",
+        "SYN": "и вызвали Лота и говорили ему: где люди, пришедшие к тебе на ночь? выведи их к нам; мы познаем их.",
+        "NEO": "Ils appelèrent Lot et lui dirent : « Où sont les hommes qui sont entrés chez toi cette nuit ? Fais-les sortir vers nous, pour que nous les connaissions. »",
+        "VAT_ES": "Entonces llamaron a Lot y le dijeron: «&iquest;Dónde están esos hombres que vinieron a tu casa esta noche? Tráelos afuera para que tengamos relaciones con ellos».",
+        "CEI": "Chiamarono Lot e gli dissero: \"Dove sono quegli uomini che sono entrati da te questa notte? Falli uscire da noi, perché possiamo abusarne!\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֧א אֲלֵ/הֶ֛ם ל֖וֹט הַ/פֶּ֑תְחָ/ה וְ/הַ/דֶּ֖לֶת סָגַ֥ר אַחֲרָֽי/ו׃",
+        "VUL": "Egressus ad eos Lot, post tergum occludens ostium, ait :",
+        "LXX": "ἐξῆλθεν δὲ Λὼτ πρὸς αὐτούς, καὶ τὴν θύραν προσέῳξεν ὀπίσω αὐτοῦ.",
+        "NAB": "Lot went out to meet them at the entrance. When he had shut the door behind him,",
+        "SYN": "Лот вышел к ним ко входу, и запер за собою дверь,",
+        "NEO": "Lot s’avança vers eux à l’entrée de la maison et, ayant fermé la porte derrière lui,",
+        "VAT_ES": "Lot se presentó ante ellos a la entrada de la casa, y cerrando la puerta detrás de sí,",
+        "CEI": "Lot uscì verso di loro sulla porta e, dopo aver chiuso il battente dietro di sé,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמַ֑ר אַל נָ֥א אַחַ֖/י תָּרֵֽעוּ׃",
+        "VUL": "Nolite, quæso, fratres mei, nolite malum hoc facere.",
+        "LXX": "εἶπεν δὲ πρὸς αὐτούς Μηδαμῶς, ἀδελφοί, μὴ πονηρεύσησθε.",
+        "NAB": "he said, \"I beg you, my brothers, not to do this wicked thing.",
+        "SYN": "и сказал [им]: братья мои, не делайте зла;",
+        "NEO": "il dit : « Non, mes frères, je vous en prie, ne faites pas le mal !",
+        "VAT_ES": "dijo: «Amigos, les suplico que no cometan esa ruindad.",
+        "CEI": "disse: \"No, fratelli miei, non fate del male!"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הִנֵּה נָ֨א לִ֜/י שְׁתֵּ֣י בָנ֗וֹת אֲשֶׁ֤ר לֹֽא יָדְעוּ֙ אִ֔ישׁ אוֹצִֽיאָה נָּ֤א אֶתְ/הֶן֙ אֲלֵי/כֶ֔ם וַ/עֲשׂ֣וּ לָ/הֶ֔ן כַּ/טּ֖וֹב בְּ/עֵינֵי/כֶ֑ם רַ֠ק לָֽ/אֲנָשִׁ֤ים הָ/אֵל֙ אַל תַּעֲשׂ֣וּ דָבָ֔ר כִּֽי עַל כֵּ֥ן בָּ֖אוּ בְּ/צֵ֥ל קֹרָתִֽ/י׃",
+        "VUL": "Habeo duas filias, quæ necdum cognoverunt virum : educam eas ad vos, et abutimini eis sicut vobis placuerit, dummodo viris istis nihil mali faciatis, quia ingressi sunt sub umbra culminis mei.",
+        "LXX": "εἰσὶν δέ μοι δύο θυγατέρες, αἳ οὐκ ἔγνωσαν ἄνδρα· ἐξάξω αὐτὰς πρὸς ὑμᾶς, καὶ χρήσασθε αὐταῖς καθὰ ἀρέσκῃ ὑμῖν· μόνον εἰς τοὺς ἄνδρας τούτους μὴ ποιήσητε μηδὲν ἄδικον, οὗ εἵνεκεν εἰσῆλθον ὑπὸ τὴν στέγην τῶν δοκῶν μου.",
+        "NAB": "I have two daughters who have never had intercourse with men. Let me bring them out to you, and you may do to them as you please. But don't do anything to these men, for you know they have come under the shelter of my roof.\"",
+        "SYN": "вот у меня две дочери, которые не познали мужа; лучше я выведу их к вам, делайте с ними, что вам угодно, только людям сим не делайте ничего, так как они пришли под кров дома моего.",
+        "NEO": "Voici, j’ai deux filles qui n’ont pas connu d’homme ; laissez-moi vous les amener, et vous leur ferez ce qu’il vous plaira. Mais ne faites rien à ces hommes, car c’est pour cela qu’ils sont venus s’abriter sous mon toit. »",
+        "VAT_ES": "Yo tengo dos hijas que todavía son vírgenes. Se las traeré, y ustedes podrán hacer con ellas lo que mejor les parezca. Pero no hagan nada a esos hombres, ya que se han hospedado bajo mi techo».",
+        "CEI": "Sentite, io ho due figlie che non hanno ancora conosciuto uomo; lasciate che ve le porti fuori e fate loro quel che vi piace, purché non facciate nulla a questi uomini, perché sono entrati all'ombra del mio tetto\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֣וּ גֶּשׁ הָ֗לְאָה וַ/יֹּֽאמְרוּ֙ הָ/אֶחָ֤ד בָּֽא לָ/גוּר֙ וַ/יִּשְׁפֹּ֣ט שָׁפ֔וֹט עַתָּ֕ה נָרַ֥ע לְ/ךָ֖ מֵ/הֶ֑ם וַ/יִּפְצְר֨וּ בָ/אִ֤ישׁ בְּ/לוֹט֙ מְאֹ֔ד וַֽ/יִּגְּשׁ֖וּ לִ/שְׁבֹּ֥ר הַ/דָּֽלֶת׃",
+        "VUL": "At illi dixerunt : Recede illuc. Et rursus : Ingressus es, inquiunt, ut advena ; numquid ut judices ? te ergo ipsum magis quam hos affligemus. Vimque faciebant Lot vehementissime : jamque prope erat ut effringerent fores.",
+        "LXX": "εἶπαν δέ Ἀπόστα ἐκεῖ· εἰσῆλθες παροικεῖν, μὴ καὶ κρίσιν κρῖναι; νῦν οὖν σὲ κακώσομεν μᾶλλον ἢ ἐκείνους. καὶ παρεβιάζοντο τὸν ἄνδρα τὸν Λὼτ σφόδρα, καὶ ἤγγισαν συντρίψαι τὴν θύραν.",
+        "NAB": "They replied, \"Stand back! This fellow,\" they sneered, \"came here as an immigrant, and now he dares to give orders! We'll treat you worse than them!\" With that, they pressed hard against Lot, moving in closer to break down the door.",
+        "SYN": "Но они сказали [ему]: пойди сюда. И сказали: вот пришлец, и хочет судить? теперь мы хуже поступим с тобою, нежели с ними. И очень приступали к человеку сему, к Лоту, и подошли, чтобы выломать дверь.",
+        "NEO": "Ils répondirent : « Ote-toi de là ! » Et ils ajoutèrent : « Cet individu est venu comme étranger, et il fait le juge ! Eh bien, nous te ferons plus de mal qu’à eux. » Et, repoussant Lot avec violence, ils s’avancèrent pour briser la porte.",
+        "VAT_ES": "Ellos le respondieron: «Apártate de ahí». Y añadieron: «Este individuo no es más que un inmigrante, y ahora se pone a juzgar. A ti te trataremos peor que a ellos». Luego se abalanzaron violentamente contra Lot, y se acercaron para derribar la puerta.",
+        "CEI": "Ma quelli risposero: \"Tirati via! Quest'individuo è venuto qui come straniero e vuol fare il giudice! Ora faremo a te peggio che a loro!\". E spingendosi violentemente contro quell'uomo, cioè contro Lot, si avvicinarono per sfondare la porta."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלְח֤וּ הָֽ/אֲנָשִׁים֙ אֶת יָדָ֔/ם וַ/יָּבִ֧יאוּ אֶת ל֛וֹט אֲלֵי/הֶ֖ם הַ/בָּ֑יְתָ/ה וְ/אֶת הַ/דֶּ֖לֶת סָגָֽרוּ׃",
+        "VUL": "Et ecce miserunt manum viri, et introduxerunt ad se Lot, clauseruntque ostium :",
+        "LXX": "ἐκτείναντες δὲ οἱ ἄνδρες τὰς χεῖρας εἰσεσπάσαντο τὸν Λὼτ πρὸς ἑαυτοὺς εἰς τὸν οἶκον, καὶ τὴν θύραν τοῦ οἴκου ἀπέκλεισαν·",
+        "NAB": "But his guests put out their hands, pulled Lot inside with them, and closed the door;",
+        "SYN": "Тогда мужи те простерли руки свои и ввели Лота к себе в дом, и дверь [дома] заперли;",
+        "NEO": "Les deux hommes étendirent la main et, ayant retiré Lot vers eux dans la maison, ils fermèrent la porte.",
+        "VAT_ES": "Pero los dos hombres, sacando los brazos, llevaron a Lot adentro y cerraron la puerta.",
+        "CEI": "Allora dall'interno quegli uomini sporsero le mani, si trassero in casa Lot e chiusero il battente;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְֽ/אֶת הָ/אֲנָשִׁ֞ים אֲשֶׁר פֶּ֣תַח הַ/בַּ֗יִת הִכּוּ֙ בַּ/סַּנְוֵרִ֔ים מִ/קָּטֹ֖ן וְ/עַד גָּד֑וֹל וַ/יִּלְא֖וּ לִ/מְצֹ֥א הַ/פָּֽתַח׃",
+        "VUL": "et eos, qui foris erant, percusserunt cæcitate a minimo usque ad maximum, ita ut ostium invenire non possent.",
+        "LXX": "τοὺς δὲ ἄνδρας τοὺς ὄντας ἐπὶ τῆς θύρας τοῦ οἴκου ἐπάταξαν ἀορασίᾳ, ἀπὸ μικροῦ ἕως μεγάλου· καὶ παρελύθησαν ζητοῦντες τὴν θύραν.",
+        "NAB": "at the same time they struck the men at the entrance of the house, one and all, with such a blinding light that they were utterly unable to reach the doorway.",
+        "SYN": "а людей, бывших при входе в дом, поразили слепотою, от малого до большого, так что они измучились, искав входа.",
+        "NEO": "Et ils frappèrent d’aveuglement les gens qui étaient à l’entrée de la maison, depuis le plus petit jusqu’au plus grand, et ceux-ci se fatiguèrent inutilement à chercher la porte.",
+        "VAT_ES": "Y a todos los que estaban a la entrada de la casa, pequeños y grandes, los hirieron con una luz enceguecedora, de manera que no pudieron abrirse paso.",
+        "CEI": "quanto agli uomini che erano alla porta della casa, essi li colpirono con un abbaglio accecante dal più piccolo al più grande, così che non riuscirono a trovare la porta."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֨וּ הָ/אֲנָשִׁ֜ים אֶל ל֗וֹט עֹ֚ד מִֽי לְ/ךָ֣ פֹ֔ה חָתָן֙ וּ/בָנֶ֣י/ךָ וּ/בְנֹתֶ֔י/ךָ וְ/כֹ֥ל אֲשֶׁר לְ/ךָ֖ בָּ/עִ֑יר הוֹצֵ֖א מִן הַ/מָּקֽוֹם׃",
+        "VUL": "Dixerunt autem ad Lot : Habes hic quempiam tuorum ? generum, aut filios, aut filias, omnes, qui tui sunt, educ de urbe hac :",
+        "LXX": "εἶπαν δὲ οἱ ἄνδρες πρὸς Λώτ Ἔστιν τίς σοι ὧδε, γαμβροὶ ἢ υἱοὶ ἢ θυγατέρες, ἢ εἴ τίς σοι ἄλλος ἐστὶν ἐν τῇ πόλει, ἐξάγαγε ἐκ τοῦ τόπου τούτου·",
+        "NAB": "Then the angels said to Lot: \"Who else belongs to you here? Your sons (sons-in-law) and your daughters and all who belong to you in the city - take them away from it!",
+        "SYN": "Сказали мужи те Лоту: кто у тебя есть еще здесь? зять ли, сыновья ли твои, дочери ли твои, и кто бы ни был у тебя в городе, всех выведи из сего места,",
+        "NEO": "Les deux hommes dirent à Lot : « Qui as-tu encore ici ? Gendres, fils et filles, et qui que ce soit que tu aies dans la ville, fais-les sortir de ce lieu.",
+        "VAT_ES": "Después los hombres preguntaron a Lot: «&iquest;Tienes aquí algún otro pariente? Saca de este lugar a tus hijos e hijas y a cualquier otro de los tuyos que esté en la ciudad.",
+        "CEI": "Quegli uomini dissero allora a Lot: \"Chi hai ancora qui? Il genero, i tuoi figli, le tue figlie e quanti hai in città, falli uscire da questo luogo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כִּֽי מַשְׁחִתִ֣ים אֲנַ֔חְנוּ אֶת הַ/מָּק֖וֹם הַ/זֶּ֑ה כִּֽי גָֽדְלָ֤ה צַעֲקָתָ/ם֙ אֶת פְּנֵ֣י יְהוָ֔ה וַ/יְשַׁלְּחֵ֥/נוּ יְהוָ֖ה לְ/שַׁחֲתָֽ/הּ׃",
+        "VUL": "delebimus enim locum istum, eo quod increverit clamor eorum coram Domino, qui misit nos ut perdamus illos.",
+        "LXX": "ὅτι ἀπόλλυμεν ἡμεῖς τὸν τόπον τοῦτον, ὅτι ὑψώθη ἡ κραυγὴ αὐτῶν ἐναντίον Κυρίου, καὶ ἀπέστειλεν ἡμᾶς Κύριος ἐκτρίψαι αὐτήν.",
+        "NAB": "We are about to destroy this place, for the outcry reaching the LORD against those in the city is so great that he has sent us to destroy it.\"",
+        "SYN": "ибо мы истребим сие место, потому что велик вопль на жителей его к Господу, и Господь послал нас истребить его.",
+        "NEO": "Car nous allons détruire ce lieu, parce qu’un grand cri s’est élevé de ses habitants devant \\+w Yahweh|strong=\"H3068\"\\+w**, et que \\+w Yahweh|strong=\"H3068\"\\+w** nous a envoyés pour le détruire. »",
+        "VAT_ES": "porque estamos a punto de destruir este lugar: ha llegado hasta la presencia del Señor un clamor tan grande contra esta gente, que él nos ha enviado a destruirlo».",
+        "CEI": "Perché noi stiamo per distruggere questo luogo: il grido innalzato contro di loro davanti al Signore è grande e il Signore ci ha mandati a distruggerli\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֨א ל֜וֹט וַ/יְדַבֵּ֣ר אֶל חֲתָנָ֣י/ו לֹקְחֵ֣י בְנֹתָ֗י/ו וַ/יֹּ֨אמֶר֙ ק֤וּמוּ צְּאוּ֙ מִן הַ/מָּק֣וֹם הַ/זֶּ֔ה כִּֽי מַשְׁחִ֥ית יְהוָ֖ה אֶת הָ/עִ֑יר וַ/יְהִ֥י כִ/מְצַחֵ֖ק בְּ/עֵינֵ֥י חֲתָנָֽי/ו׃",
+        "VUL": "Egressus itaque Lot, locutus est ad generos suos qui accepturi erant filias ejus, et dixit : Surgite, egredimini de loco isto : quia delebit Dominus civitatem hanc. Et visus est eis quasi ludens loqui.",
+        "LXX": "ἐξῆλθεν δὲ Λὼτ καὶ ἐλάλησεν πρὸς τοὺς γαμβροὺς αὐτοῦ τοὺς εἰληφότας τὰς θυγατέρας αὐτοῦ, καὶ εἶπεν Ἀνάστητε καὶ ἐξέλθατε ἐκ τοῦ τόπου τούτου, ὅτι ἐκτρίβει Κύριος τὴν πόλιν. ἔδοξεν δὲ γελοιάζειν ἐναντίον τῶν γαμβρῶν αὐτοῦ.",
+        "NAB": "So Lot went out and spoke to his sons-in-law, who had contracted marriage with his daughters. \"Get up and leave this place,\" he told them; \"the LORD is about to destroy the city.\" But his sons-in-law thought he was joking.",
+        "SYN": "И вышел Лот, и говорил с зятьями своими, которые брали за себя дочерей его, и сказал: встаньте, выйдите из сего места, ибо Господь истребит сей город. Но зятьям его показалось, что он шутит.",
+        "NEO": "Lot sortit et parla à ses gendres, qui avaient pris ses filles : « Levez-vous, leur dit-il, sortez de ce lieu, car \\+w Yahweh|strong=\"H3068\"\\+w** va détruire la ville. » Mais, aux yeux de ses gendres, il parut plaisanter.",
+        "VAT_ES": "Entonces Lot salió para comunicar la noticia a sus yernos, los que iban a casarse con sus hijas. «&iexcl;Pronto!, les dijo, abandonen este lugar, porque el Señor va a destruir la ciudad». Pero sus yernos pensaron que estaba bromeando.",
+        "CEI": "Lot uscì a parlare ai suoi generi, che dovevano sposare le sue figlie, e disse: \"Alzatevi, uscite da questo luogo, perché il Signore sta per distruggere la città!\". Ma parve ai suoi generi che egli volesse scherzare."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וּ/כְמוֹ֙ הַ/שַּׁ֣חַר עָלָ֔ה וַ/יָּאִ֥יצוּ הַ/מַּלְאָכִ֖ים בְּ/ל֣וֹט לֵ/אמֹ֑ר קוּם֩ קַ֨ח אֶֽת אִשְׁתְּ/ךָ֜ וְ/אֶת שְׁתֵּ֤י בְנֹתֶ֨י/ךָ֙ הַ/נִּמְצָאֹ֔ת פֶּן תִּסָּפֶ֖ה בַּ/עֲוֺ֥ן הָ/עִֽיר׃",
+        "VUL": "Cumque esset mane, cogebant eum angeli, dicentes : Surge, tolle uxorem tuam, et duas filias quas habes : ne et tu pariter pereas in scelere civitatis.",
+        "LXX": "ἡνίκα δὲ ὄρθρος ἐγίνετο, ἐπεσπούδαζον οἱ ἄγγελοι τὸν Λὼτ λέγοντες Ἀναστὰς λάβε τὴν γυναῖκά σου καὶ τὰς δύο θυγατέρας σου ἃς ἔχεις καὶ ἔξελθε, ἵνα μὴ συναπόλῃ ταῖς ἀνομίαις τῆς πόλεως.",
+        "NAB": "As dawn was breaking, the angels urged Lot on, saying, \"On your way! Take with you your wife and your two daughters who are here, or you will be swept away in the punishment of the city.\"",
+        "SYN": "Когда взошла заря, Ангелы начали торопить Лота, говоря: встань, возьми жену твою и двух дочерей твоих, которые у тебя, чтобы не погибнуть тебе за беззакония города.",
+        "NEO": "Dès l’aube du jour, les anges pressèrent Lot, en disant : « Lève-toi, prends ta femme et tes deux filles qui sont ici, afin que tu ne périsses pas dans le châtiment de la ville. »",
+        "VAT_ES": "Al despuntar el alba, los ángeles instaron a Lot, diciéndole: «&iexcl;Vamos! Saca a tu mujer y a tus dos hijas que están aquí, para que no seas aniquilado cuando la ciudad reciba su castigo».",
+        "CEI": "Quando apparve l'alba, gli angeli fecero premura a Lot, dicendo: \"Su, prendi tua moglie e le tue figlie che hai qui ed esci per non essere travolto nel castigo della città\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַֽ/יִּתְמַהְמָ֓הּ וַ/יַּחֲזִ֨קוּ הָ/אֲנָשִׁ֜ים בְּ/יָד֣/וֹ וּ/בְ/יַד אִשְׁתּ֗/וֹ וּ/בְ/יַד֙ שְׁתֵּ֣י בְנֹתָ֔י/ו בְּ/חֶמְלַ֥ת יְהוָ֖ה עָלָ֑י/ו וַ/יֹּצִאֻ֥/הוּ וַ/יַּנִּחֻ֖/הוּ מִ/ח֥וּץ לָ/עִֽיר׃",
+        "VUL": "Dissimulante illo, apprehenderunt manum ejus, et manum uxoris, ac duarum filiarum ejus, eo quod parceret Dominus illi.",
+        "LXX": "καὶ ἐταράχθησαν· καὶ ἐκράτησαν οἱ ἄγγελοι τῆς χειρὸς αὐτῶν καὶ τῆς χειρὸς τῆς γυναικὸς αὐτοῦ καὶ τῶν χειρῶν τῶν δύο θυγατέρων αὐτοῦ, ἐν τῷ φείσασθαι Κύριον αὐτοῦ.",
+        "NAB": "When he hesitated, the men, by the LORD'S mercy, seized his hand and the hands of his wife and his two daughters and led them to safety outside the city.",
+        "SYN": "И как он медлил, то мужи те [Ангелы], по милости к нему Господней, взяли за руку его и жену его, и двух дочерей его, и вывели его и поставили его вне города.",
+        "NEO": "Comme il tardait, ces hommes le prirent par la main, lui, sa femme et ses deux filles, car \\+w Yahweh|strong=\"H3068\"\\+w** voulait l’épargner ; ils l’emmenèrent et le mirent hors de la ville.",
+        "VAT_ES": "Como él no salía de su asombro, los hombres lo tomaron de la mano, lo mismo que a su esposa y a sus dos hijas, y lo sacaron de la ciudad para ponerlo fuera de peligro, porque el Señor tuvo compasión de él.",
+        "CEI": "Lot indugiava, ma quegli uomini presero per mano lui, sua moglie e le sue due figlie, per un grande atto di misericordia del Signore verso di lui; lo fecero uscire e lo condussero fuori della città."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֩ כְ/הוֹצִיאָ֨/ם אֹתָ֜/ם הַ/ח֗וּצָ/ה וַ/יֹּ֨אמֶר֙ הִמָּלֵ֣ט עַל נַפְשֶׁ֔/ךָ אַל תַּבִּ֣יט אַחֲרֶ֔י/ךָ וְ/אַֽל תַּעֲמֹ֖ד בְּ/כָל הַ/כִּכָּ֑ר הָ/הָ֥רָ/ה הִמָּלֵ֖ט פֶּן תִּסָּפֶֽה׃",
+        "VUL": "Eduxeruntque eum, et posuerunt extra civitatem : ibique locuti sunt ad eum, dicentes : Salva animam tuam : noli respicere post tergum, nec stes in omni circa regione : sed in monte salvum te fac, ne et tu simul pereas.",
+        "LXX": "καὶ ἐγένετο ἡνίκα ἐξήγαγον αὐτοὺς ἔξω καὶ εἶπαν Σώζων σῶζε τὴν σεαυτοῦ ψυχήν· μὴ περιβλέψῃς εἰς τὰ ὀπίσω μηδὲ στῇς ἐν πάσῃ τῇ περιχώρῳ· εἰς τὸ ὄρος σώζου, μή ποτε συνπαραλημφθῇς.",
+        "NAB": "As soon as they had been brought outside, he was told: \"Flee for your life! Don't look back or stop anywhere on the Plain. Get off to the hills at once, or you will be swept away.\"",
+        "SYN": "Когда же вывели их вон, _то_ _один_ _из_ _них_ сказал: спасай душу свою; не оглядывайся назад и нигде не останавливайся в окрестности сей; спасайся на гору, чтобы тебе не погибнуть.",
+        "NEO": "Lorsqu’ils les eurent fait sortir, l’un des anges dit : « Sauve-toi, sur ta vie. Ne regarde pas derrière toi, et ne t’arrête nulle part dans la Plaine ; sauve-toi à la montagne, de peur que tu ne périsses. »",
+        "VAT_ES": "Después que lo sacaron, uno de ellos dijo: «Huye, si quieres salvar la vida. No mires hacia atrás, ni te detengan en ningún lugar de la región baja. Escapa a las montañas, para no ser aniquilado».",
+        "CEI": "Dopo averli condotti fuori, uno di loro disse: \"Fuggi, per la tua vita. Non guardare indietro e non fermarti dentro la valle: fuggi sulle montagne, per non essere travolto!\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר ל֖וֹט אֲלֵ/הֶ֑ם אַל נָ֖א אֲדֹנָֽ/י׃",
+        "VUL": "Dixitque Lot ad eos : Quæso, domine mi,",
+        "LXX": "εἶπεν δὲ Λὼτ πρὸς αὐτούς Δέομαι, κύριε,",
+        "NAB": "\"Oh, no, my lord!\" replied Lot.",
+        "SYN": "Но Лот сказал им: нет, Владыка!",
+        "NEO": "Lot leur dit : « Non, Seigneur.",
+        "VAT_ES": "Lot respondió: «No, por favor, Señor mío.",
+        "CEI": "Ma Lot gli disse: \"No, mio Signore!"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "הִנֵּה נָ֠א מָצָ֨א עַבְדְּ/ךָ֣ חֵן֮ בְּ/עֵינֶי/ךָ֒ וַ/תַּגְדֵּ֣ל חַסְדְּ/ךָ֗ אֲשֶׁ֤ר עָשִׂ֨יתָ֙ עִמָּדִ֔/י לְ/הַחֲי֖וֹת אֶת נַפְשִׁ֑/י וְ/אָנֹכִ֗י לֹ֤א אוּכַל֙ לְ/הִמָּלֵ֣ט הָ/הָ֔רָ/ה פֶּן תִּדְבָּקַ֥/נִי הָ/רָעָ֖ה וָ/מַֽתִּי׃",
+        "VUL": "quia invenit servus tuus gratiam coram te, et magnificasti misericordiam tuam quam fecisti mecum, ut salvares animam meam, nec possum in monte salvari, ne forte apprehendat me malum, et moriar :",
+        "LXX": "ἐπειδὴ εὗρεν ὁ παῖς σου ἔλεος ἐναντίον σου καὶ ἐμεγάλυνας τὴν δικαιοσύνην σου, ὃ ποιεῖς ἐπ’ ἐμέ, τοῦ ζῇν τὴν ψυχήν μου· ἐγὼ δὲ οὐ δυνήσομαι διασωθῆναι εἰς τὸ ὄρος, μὴ καταλάβῃ με τὰ κακὰ καὶ ἀποθάνω·",
+        "NAB": "\"You have already thought enough of your servant to do me the great kindness of intervening to save my life. But I cannot flee to the hills to keep the disaster from overtaking me, and so I shall die.",
+        "SYN": "вот, раб Твой обрел благоволение пред очами Твоими, и велика милость Твоя, которую Ты сделал со мною, что спас жизнь мою; но я не могу спасаться на гору, чтоб не застигла меня беда и мне не умереть;",
+        "NEO": "Voici votre serviteur a trouvé grâce à vos yeux, et vous avez fait un grand acte de bonté à mon égard en me conservant la vie ; mais je ne puis me sauver à la montagne, sans risquer d’être atteint par la destruction et de périr.",
+        "VAT_ES": "Tú has sido bondadoso con tu servidor y me has demostrado tu gran misericordia, salvándome la vida. Pero yo no podré huir a las montañas, sin que antes caigan sobre mí la destrucción y la muerte.",
+        "CEI": "Vedi, il tuo servo ha trovato grazia ai tuoi occhi e tu hai usato una grande misericordia verso di me salvandomi la vita, ma io non riuscirò a fuggire sul monte, senza che la sciagura mi raggiunga e io muoia."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "הִנֵּה נָ֠א הָ/עִ֨יר הַ/זֹּ֧את קְרֹבָ֛ה לָ/נ֥וּס שָׁ֖מָּ/ה וְ/הִ֣יא מִצְעָ֑ר אִמָּלְטָ֨ה נָּ֜א שָׁ֗מָּ/ה הֲ/לֹ֥א מִצְעָ֛ר הִ֖וא וּ/תְחִ֥י נַפְשִֽׁ/י׃",
+        "VUL": "est civitas hæc juxta, ad quam possum fugere, parva, et salvabor in ea : numquid non modica est, et vivet anima mea ?",
+        "LXX": "ἰδοὺ ἡ πόλις αὕτη ἐγγὺς τοῦ καταφυγεῖν με ἐκεῖ, ἥ ἐστιν μικρά· ἐκεῖ σωθήσομαι· οὐ μικρά ἐστιν; καὶ ζήσεται ἡ ψυχή μου ἕνεκεν σοῦ.",
+        "NAB": "Look, this town ahead is near enough to escape to. It's only a small place. Let me flee there - it's a small place, isn't it? - that my life may be saved.\"",
+        "SYN": "вот, ближе бежать в сей город, он же мал; побегу я туда, -- он же мал; и сохранится жизнь моя [ради Тебя].",
+        "NEO": "Voyez, cette ville est assez proche pour m’y réfugier, et elle est peu de chose ; permettez que je m’y sauve, — n’est-elle pas petite ? — et que je vive. »",
+        "VAT_ES": "Aquí cerca hay una ciudad –es una población insignificante– donde podré refugiarme. Deja que me quede en ella, ya que es tan pequeña, y así estaré a salvo».",
+        "CEI": "Vedi questa città: è abbastanza vicina perché mi possa rifugiare là ed è piccola cosa! Lascia che io fugga lassù - non è una piccola cosa? - e così la mia vita sarà salva\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֵלָ֔י/ו הִנֵּה֙ נָשָׂ֣אתִי פָנֶ֔י/ךָ גַּ֖ם לַ/דָּבָ֣ר הַ/זֶּ֑ה לְ/בִלְתִּ֛י הָפְכִּ֥/י אֶת הָ/עִ֖יר אֲשֶׁ֥ר דִּבַּֽרְתָּ׃",
+        "VUL": "Dixitque ad eum : Ecce etiam in hoc suscepi preces tuas, ut non subvertam urbem pro qua locutus es.",
+        "LXX": "καὶ εἶπεν αὐτῷ Ἰδοὺ ἐθαύμασά σου τὸ πρόσωπον καὶ ἐπὶ τῷ ῥήματι τούτῳ τοῦ μὴ καταστρέψαι τὴν πόλιν περὶ ἧς ἐλάλησας·",
+        "NAB": "\"Well, then,\" he replied, \"I will also grant you the favor you now ask. I will not overthrow the town you speak of.",
+        "SYN": "И сказал ему: вот, в угодность тебе Я сделаю и это: не ниспровергну города, о котором ты говоришь;",
+        "NEO": "Il lui dit : « Voici, je t’accorde encore cette grâce, de ne pas détruire la ville dont tu parles.",
+        "VAT_ES": "Entonces él le respondió: «Voy a complacerte una vez más: no destruiré la ciudad de la que hablas.",
+        "CEI": "Gli rispose: \"Ecco, ti ho favorito anche in questo, di non distruggere la città di cui hai parlato."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "מַהֵר֙ הִמָּלֵ֣ט שָׁ֔מָּ/ה כִּ֣י לֹ֤א אוּכַל֙ לַ/עֲשׂ֣וֹת דָּבָ֔ר עַד בֹּאֲ/ךָ֖ שָׁ֑מָּ/ה עַל כֵּ֛ן קָרָ֥א שֵׁם הָ/עִ֖יר צֽוֹעַר׃",
+        "VUL": "Festina, et salvare ibi : quia non potero facere quidquam donec ingrediaris illuc. Idcirco vocatum est nomen urbis illius Segor.",
+        "LXX": "σπεῦσον οὖν τοῦ σωθῆναι ἐκεῖ· οὐ γὰρ δυνήσομαι ποιῆσαι πρᾶγμα ἕως τοῦ σε ἐλθεῖν ἐκεῖ. διὰ τοῦτο ἐπωνόμασεν τὸ ὄνομα τῆς πόλεως ἐκείνης Σήγωρ.",
+        "NAB": "Hurry, escape there! I cannot do anything until you arrive there.\" That is why the town is called Zoar.",
+        "SYN": "поспешай, спасайся туда, ибо Я не могу сделать дела, доколе ты не придешь туда. Потому и назван город сей: Сигор.",
+        "NEO": "Hâte-toi de t’y sauver, car je ne puis rien faire que tu n’y sois arrivé. » C’est pour cela qu’on a donné à cette ville le nom de Soar.",
+        "VAT_ES": "Pero apúrate; refúgiate en ella, porque no podré hacer nada hasta que llegues allí». Por eso la ciudad recibió el nombre de Soar, que significa «pequeño poblado».",
+        "CEI": "Presto, fuggi là perché io non posso far nulla, finché tu non vi sia arrivato\". Perciò quella città si chiamò Zoar."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "הַ/שֶּׁ֖מֶשׁ יָצָ֣א עַל הָ/אָ֑רֶץ וְ/ל֖וֹט בָּ֥א צֹֽעֲרָ/ה׃",
+        "VUL": "Sol egressus est super terram, et Lot ingressus est Segor.",
+        "LXX": "ὁ ἥλιος ἐξῆλθεν ἐπὶ τὴν γῆν, καὶ Λὼτ εἰσῆλθεν εἰς Σήγωρ,",
+        "NAB": "The sun was just rising over the earth as Lot arrived in Zoar;",
+        "SYN": "Солнце взошло над землею, и Лот пришел в Сигор.",
+        "NEO": "Le soleil se leva sur la terre, et Lot arriva à Soar.",
+        "VAT_ES": "Cuando el sol comenzó a brillar sobre la tierra, Lot entró en Soar.",
+        "CEI": "Il sole spuntava sulla terra e Lot era arrivato a Zoar,"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַֽ/יהוָ֗ה הִמְטִ֧יר עַל סְדֹ֛ם וְ/עַל עֲמֹרָ֖ה גָּפְרִ֣ית וָ/אֵ֑שׁ מֵ/אֵ֥ת יְהוָ֖ה מִן הַ/שָּׁמָֽיִם׃",
+        "VUL": "Igitur Dominus pluit super Sodomam et Gomorrham sulphur et ignem a Domino de cælo :",
+        "LXX": "καὶ Κύριος ἔβρεξεν ἐπὶ Σόδομα καὶ Γόμορρα θεῖον καὶ πῦρ παρὰ Κυρίου ἐκ τοῦ οὐρανοῦ,",
+        "NAB": "at the same time the LORD rained down sulphurous fire upon Sodom and Gomorrah (from the LORD out of heaven).",
+        "SYN": "И пролил Господь на Содом и Гоморру дождем серу и огонь от Господа с неба,",
+        "NEO": "Alors \\+w Yahweh|strong=\"H3068\"\\+w** fit pleuvoir sur Sodome et sur Gomorrhe du soufre et du feu d’auprès de \\+w Yahweh|strong=\"H3068\"\\+w**, du ciel.",
+        "VAT_ES": "Entonces el Señor hizo llover sobre Sodoma y Gomorra azufre y fuego que descendían del cielo.",
+        "CEI": "quand'ecco il Signore fece piovere dal cielo sopra Sòdoma e sopra Gomorra zolfo e fuoco proveniente dal Signore."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַֽ/יַּהֲפֹךְ֙ אֶת הֶ/עָרִ֣ים הָ/אֵ֔ל וְ/אֵ֖ת כָּל הַ/כִּכָּ֑ר וְ/אֵת֙ כָּל יֹשְׁבֵ֣י הֶ/עָרִ֔ים וְ/צֶ֖מַח הָ/אֲדָמָֽה׃",
+        "VUL": "et subvertit civitates has, et omnem circa regionem, universos habitatores urbium, et cuncta terræ virentia.",
+        "LXX": "καὶ κατέστρεψεν τὰς πόλεις ταύτας ἐν αἷς κατῴκει ἐν αὐταῖς Λὼτ καὶ πᾶσαν περίοικον καὶ πάντας τοὺς κατοικοῦντας ἐν ταῖς πόλεσιν καὶ πάντα τὰ ἀνατέλλοντα ἐκ τῆς γῆς.",
+        "NAB": "He overthrew those cities and the whole Plain, together with the inhabitants of the cities and the produce of the soil.",
+        "SYN": "и ниспроверг города сии, и всю окрестность сию, и всех жителей городов сих, и [все] произрастания земли.",
+        "NEO": "Il détruisit ces villes et toute la Plaine, et tous les habitants des villes et les plantes de la terre.",
+        "VAT_ES": "Así destruyó esas ciudades y toda la extensión de la región baja, junto con los habitantes de las ciudades y la vegetación del suelo.",
+        "CEI": "Distrusse queste città e tutta la valle con tutti gli abitanti delle città e la vegetazione del suolo."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/תַּבֵּ֥ט אִשְׁתּ֖/וֹ מֵ/אַחֲרָ֑י/ו וַ/תְּהִ֖י נְצִ֥יב מֶֽלַח׃",
+        "VUL": "Respiciensque uxor ejus post se, versa est in statuam salis.",
+        "LXX": "καὶ ἐπέβλεψεν ἡ γυνὴ αὐτοῦ εἰς τὰ ὀπίσω, καὶ ἐγένετο στήλη ἁλός. ⸆",
+        "NAB": "But Lot's wife looked back, and she was turned into a pillar of salt.",
+        "SYN": "Жена же _Лотова_ оглянулась позади его, и стала соляным столпом.",
+        "NEO": "La femme de Lot regarda en arrière et devint une colonne de sel.",
+        "VAT_ES": "Y como la mujer de Lot miró hacia atrás, quedó convertida en una columna de sal.",
+        "CEI": "Ora la moglie di Lot guardò indietro e divenne una statua di sale."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יַּשְׁכֵּ֥ם אַבְרָהָ֖ם בַּ/בֹּ֑קֶר אֶל הַ֨/מָּק֔וֹם אֲשֶׁר עָ֥מַד שָׁ֖ם אֶת פְּנֵ֥י יְהוָֽה׃",
+        "VUL": "Abraham autem consurgens mane, ubi steterat prius cum Domino,",
+        "LXX": "ὤρθρισεν δὲ Ἀβραὰμ τὸ πρωὶ εἰς τὸν τόπον οὗ ἱστήκει ἐναντίον Κυρίου,",
+        "SYN": "И встал Авраам рано утром [и пошел] на место, где стоял пред лицем Господа,",
+        "NEO": "Abraham se leva de bon matin et se rendit au lieu où il s’était tenu devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Early the next morning Abraham went to the place where he had stood in the LORD'S presence.",
+        "VAT_ES": "A la madrugada del día siguiente, Abraham regresó al lugar donde había estado en la presencia del Señor.",
+        "CEI": "Abramo andò di buon mattino al luogo dove si era fermato davanti al Signore;"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יַּשְׁקֵ֗ף עַל פְּנֵ֤י סְדֹם֙ וַ/עֲמֹרָ֔ה וְ/עַֽל כָּל פְּנֵ֖י אֶ֣רֶץ הַ/כִּכָּ֑ר וַ/יַּ֗רְא וְ/הִנֵּ֤ה עָלָה֙ קִיטֹ֣ר הָ/אָ֔רֶץ כְּ/קִיטֹ֖ר הַ/כִּבְשָֽׁן׃",
+        "VUL": "intuitus est Sodomam et Gomorrham, et universam terram regionis illius : viditque ascendentem favillam de terra quasi fornacis fumum.",
+        "LXX": "καὶ ἐπέβλεψεν ἐπὶ πρόσωπον Σοδόμων καὶ Γομόρρας καὶ ἐπὶ πρόσωπον τῆς γῆς τῆς περιχώρου, καὶ ἴδεν· καὶ ἰδοὺ ἀνέβαινεν φλὸξ τῆς γῆς ὡσεὶ ἀτμὶς καμίνου.",
+        "NAB": "As he looked down toward Sodom and Gomorrah and the whole region of the Plain, he saw dense smoke over the land rising like fumes from a furnace.",
+        "SYN": "и посмотрел к Содому и Гоморре и на все пространство окрестности и увидел: вот, дым поднимается с земли, как дым из печи.",
+        "NEO": "Il regarda du côté de Sodome et de Gomorrhe, et sur toute l’étendue de la Plaine, et il vit monter de la terre une fumée, comme la fumée d’une fournaise.",
+        "VAT_ES": "Cuando dirigió su mirada hacia Sodoma, Gomorra y toda la extensión de la región baja, vio un humo que subía de la tierra, como el humo de un horno.",
+        "CEI": "contemplò dall'alto Sòdoma e Gomorra e tutta la distesa della valle e vide che un fumo saliva dalla terra, come il fumo di una fornace."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י בְּ/שַׁחֵ֤ת אֱלֹהִים֙ אֶת עָרֵ֣י הַ/כִּכָּ֔ר וַ/יִּזְכֹּ֥ר אֱלֹהִ֖ים אֶת אַבְרָהָ֑ם וַ/יְשַׁלַּ֤ח אֶת לוֹט֙ מִ/תּ֣וֹךְ הַ/הֲפֵכָ֔ה בַּ/הֲפֹךְ֙ אֶת הֶ֣/עָרִ֔ים אֲשֶׁר יָשַׁ֥ב בָּ/הֵ֖ן לֽוֹט׃",
+        "VUL": "Cum enim subverteret Deus civitates regionis illius, recordatus Abrahæ, liberavit Lot de subversione urbium in quibus habitaverat.",
+        "LXX": "Καὶ ἐγένετο ἐν τῷ ἐκτρίψαι Κύριον πάσας τὰς πόλεις τῆς περιοίκου, ἐμνήσθη ὁ θεὸς τοῦ Ἀβραὰμ καὶ ἐξαπέστειλεν τὸν Λὼτ ἐκ μέσου τῆς καταστροφῆς, ἐν τῷ καταστρέψαι Κύριον τὰς πόλεις ἐν αἷς κατῴκει ἐν αὐταῖς Λώτ.",
+        "NAB": "Thus it came to pass: when God destroyed the Cities of the Plain, he was mindful of Abraham by sending Lot away from the upheaval by which God overthrew the cities where Lot had been living.",
+        "SYN": "И было, когда Бог истреблял [все] города окрестности сей, вспомнил Бог об Аврааме и выслал Лота из среды истребления, когда ниспровергал города, в которых жил Лот.",
+        "NEO": "Lorsque Dieu détruisit les villes de la Plaine, il se souvint d’Abraham, et il fit échapper Lot au bouleversement, lorsqu’il bouleversa les villes où Lot habitait.",
+        "VAT_ES": "Así, cuando Dios destruyó las ciudades de la región baja, se acordó de Abraham, librando a Lot de la catástrofe con que arrasó las ciudades donde él había vivido.",
+        "CEI": "Così, quando Dio distrusse le città della valle, Dio si ricordò di Abramo e fece sfuggire Lot alla catastrofe, mentre distruggeva le città nelle quali Lot aveva abitato."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יַּעַל֩ ל֨וֹט מִ/צּ֜וֹעַר וַ/יֵּ֣שֶׁב בָּ/הָ֗ר וּ/שְׁתֵּ֤י בְנֹתָי/ו֙ עִמּ֔/וֹ כִּ֥י יָרֵ֖א לָ/שֶׁ֣בֶת בְּ/צ֑וֹעַר וַ/יֵּ֨שֶׁב֙ בַּ/מְּעָרָ֔ה ה֖וּא וּ/שְׁתֵּ֥י בְנֹתָֽי/ו׃",
+        "VUL": "Ascenditque Lot de Segor, et mansit in monte, duæ quoque filiæ ejus cum eo (timuerat enim manere in Segor) et mansit in spelunca ipse, et duæ filiæ ejus cum eo.",
+        "LXX": "⸂⸆⸃ Καὶ ἐξῆλθεν Λὼτ ἐκ Σήγωρ, καὶ ἐκάθητο ἐν τῷ ὄρει καὶ αἱ δύο θυγατέρες αὐτοῦ μετ’ αὐτοῦ· ἐφοβήθη γὰρ κατοικῆσαι ἐν Σήγωρ· καὶ ᾤκησεν ἐν τῷ σπηλαίῳ αὐτὸς καὶ αἱ δύο θυγατέρες αὐτοῦ μετ’ αὐτοῦ.",
+        "NAB": "Since Lot was afraid to stay in Zoar, he and his two daughters went up from Zoar and settled in the hill country, where he lived with his two daughters in a cave.",
+        "SYN": "И вышел Лот из Сигора и стал жить в горе, и с ним две дочери его, ибо он боялся жить в Сигоре. И жил в пещере, и с ним две дочери его.",
+        "NEO": "Lot monta de Soar et s’établit à la montagne, ayant avec lui ses deux filles, car il craignait de rester à Soar ; et il habitait dans une caverne avec ses deux filles+ 19:30 A l’aide d’anciennes traditions l’auteur a composé une satire sru Moab et Ammon, ennemis traditionnels d’Israël. Noter l’explication populaire des noms de ces peuples : Moab, c’est-à-dire issu du père ; Ben-Ammi (Bene Ammon), fils de ma parenté.*.",
+        "VAT_ES": "Lot salió de Soar y subió a la montaña, donde se radicó con sus dos hijas, porque tuvo miedo de quedarse en Soar. Allí se instaló con ellas en una caverna.",
+        "CEI": "Poi Lot partì da Zoar e andò ad abitare sulla montagna, insieme con le due figlie, perché temeva di restare in Zoar, e si stabilì in una caverna con le sue due figlie."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֧אמֶר הַ/בְּכִירָ֛ה אֶל הַ/צְּעִירָ֖ה אָבִ֣י/נוּ זָקֵ֑ן וְ/אִ֨ישׁ אֵ֤ין בָּ/אָ֨רֶץ֙ לָ/ב֣וֹא עָלֵ֔י/נוּ כְּ/דֶ֖רֶךְ כָּל הָ/אָֽרֶץ׃",
+        "VUL": "Dixitque major ad minorem : Pater noster senex est, et nullus virorum remansit in terra, qui possit ingredi ad nos juxta morem universæ terræ.",
+        "LXX": "εἶπεν δὲ ἡ πρεσβυτέρα πρὸς τὴν νεωτέραν Ὁ πατὴρ ἡμῶν πρεσβύτερος, καὶ οὐδείς ἐστιν ἐπὶ τῆς γῆς ὃς εἰσελεύσεται πρὸς ἡμᾶς ὡς καθήκει πάσῃ τῇ γῇ.",
+        "NAB": "The older one said to the younger: \"Our father is getting old, and there is not a man on earth to unite with us as was the custom everywhere.",
+        "SYN": "И сказала старшая младшей: отец наш стар, и нет человека на земле, который вошел бы к нам по обычаю всей земли;",
+        "NEO": "L’aînée dit à la plus jeune : « Notre père est vieux, et il n’y a pas d’homme dans le pays pour venir vers nous, selon l’usage de tous les pays.",
+        "VAT_ES": "Entonces la mayor dijo a la menor: «Nuestro padre está viejo y no hay ningún hombre en el país para que se una con nosotras como lo hace todo el mundo.",
+        "CEI": "Ora la maggiore disse alla più piccola: \"Il nostro padre è vecchio e non c'è nessuno in questo territorio per unirsi a noi, secondo l'uso di tutta la terra."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "לְכָ֨/ה נַשְׁקֶ֧ה אֶת אָבִ֛י/נוּ יַ֖יִן וְ/נִשְׁכְּבָ֣ה עִמּ֑/וֹ וּ/נְחַיֶּ֥ה מֵ/אָבִ֖י/נוּ זָֽרַע׃",
+        "VUL": "Veni, inebriemus eum vino, dormiamusque cum eo, ut servare possimus ex patre nostro semen.",
+        "LXX": "δεῦρο οὖν ποτίσωμεν τὸν πατέρα ἡμῶν οἶνον καὶ κοιμηθῶμεν μετ’ αὐτοῦ, καὶ ἐξαναστήσωμεν ἐκ τοῦ πατρὸς ἡμῶν σπέρμα.",
+        "NAB": "Come, let us ply our father with wine and then lie with him, that we may have offspring by our father.\"",
+        "SYN": "итак напоим отца нашего вином, и переспим с ним, и восставим от отца нашего племя.",
+        "NEO": "Viens, faisons boire du vin à notre père et couchons avec lui, afin que nous conservions de notre père une postérité. »",
+        "VAT_ES": "Emborrachémoslo con vino y acostémonos con él; así, por medio de nuestro padre, tendremos una descendencia».",
+        "CEI": "Vieni, facciamo bere del vino a nostro padre e poi corichiamoci con lui, così faremo sussistere una discendenza da nostro padre\"."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/תַּשְׁקֶ֧יןָ אֶת אֲבִי/הֶ֛ן יַ֖יִן בַּ/לַּ֣יְלָה ה֑וּא וַ/תָּבֹ֤א הַ/בְּכִירָה֙ וַ/תִּשְׁכַּ֣ב אֶת אָבִ֔י/הָ וְ/לֹֽא יָדַ֥ע בְּ/שִׁכְבָ֖/הּ וּ/בְ/קׄוּמָֽ/הּ׃",
+        "VUL": "Dederunt itaque patri suo bibere vinum nocte illa. Et ingressa est major, dormivitque cum patre ; at ille non sensit, nec quando accubuit filia, nec quando surrexit.",
+        "LXX": "ἐπότισαν δὲ τὸν πατέρα αὐτῶν οἶνον ἐν τῇ νυκτὶ ταύτῃ, καὶ εἰσελθοῦσα ἡ πρεσβυτέρα ἐκοιμήθη μετὰ τοῦ πατρὸς αὐτῆς τὴν νύκτα ἐκείνην· καὶ οὐκ ᾔδει ἐν τῷ κοιμηθῆναι αὐτὴν καὶ ἀναστῆναι.",
+        "NAB": "So that night they plied their father with wine, and the older one went in and lay with her father; but he was not aware of her lying down or her getting up.",
+        "SYN": "И напоили отца своего вином в ту ночь; и вошла старшая и спала с отцом своим [в ту ночь]; а он не знал, когда она легла и когда встала.",
+        "NEO": "Elles firent donc boire du vin à leur père cette nuit-là, et l’aînée alla coucher avec son père, et il ne s’aperçut ni du coucher de sa fille ni de son lever.",
+        "VAT_ES": "Esa noche dieron de beber a su padre, y la mayor se acostó con él, sin que él se diera cuenta de lo que sucedía.",
+        "CEI": "Quella notte fecero bere del vino al loro padre e la maggiore andò a coricarsi con il padre; ma egli non se ne accorse, né quando essa si coricò, né quando essa si alzò."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ מִֽ/מָּחֳרָ֔ת וַ/תֹּ֤אמֶר הַ/בְּכִירָה֙ אֶל הַ/צְּעִירָ֔ה הֵן שָׁכַ֥בְתִּי אֶ֖מֶשׁ אֶת אָבִ֑/י נַשְׁקֶ֨/נּוּ יַ֜יִן גַּם הַ/לַּ֗יְלָה וּ/בֹ֨אִי֙ שִׁכְבִ֣י עִמּ֔/וֹ וּ/נְחַיֶּ֥ה מֵ/אָבִ֖י/נוּ זָֽרַע׃",
+        "VUL": "Altera quoque die dixit major ad minorem : Ecce dormivi heri cum patre meo, demus ei bibere vinum etiam hac nocte, et dormies cum eo, ut salvemus semen de patre nostro.",
+        "LXX": "ἐγένετο δὲ τῇ ἐπαύριον καὶ εἶπεν ἡ πρεσβυτέρα πρὸς τὴν νεωτέραν Ἰδοὺ ἐκοιμήθην ἐχθὲς μετὰ τοῦ πατρὸς ἡμῶν· ποτίσωμεν αὐτὸν οἶνον καὶ τὴν νύκτα ταύτην, καὶ εἰσελθοῦσα κοιμήθητι μετ’ αὐτοῦ, καὶ ἐξαναστήσωμεν ἐκ τοῦ πατρὸς ἡμῶν σπέρμα.",
+        "SYN": "На другой день старшая сказала младшей: вот, я спала вчера с отцом моим; напоим его вином и в эту ночь; и ты войди, спи с ним, и восставим от отца нашего племя.",
+        "NEO": "Le lendemain, l’aînée dit à la plus jeune : « Voici, j’ai couché la nuit dernière avec mon père ; faisons-lui boire du vin encore cette nuit, et va coucher avec lui afin que nous conservions de notre père une postérité ».",
+        "VAT_ES": "A la mañana siguiente, la mayor dijo a la menor: «Anoche me acosté con mi padre, y acuéstate tú con él. Así tendremos una descendencia».",
+        "CEI": "All'indomani la maggiore disse alla più piccola: \"Ecco, ieri io mi sono coricata con nostro padre: facciamogli bere del vino anche questa notte e và tu a coricarti con lui; così faremo sussistere una discendenza da nostro padre\"."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/תַּשְׁקֶ֜יןָ גַּ֣ם בַּ/לַּ֧יְלָה הַ/ה֛וּא אֶת אֲבִי/הֶ֖ן יָ֑יִן וַ/תָּ֤קָם הַ/צְּעִירָה֙ וַ/תִּשְׁכַּ֣ב עִמּ֔/וֹ וְ/לֹֽא יָדַ֥ע בְּ/שִׁכְבָ֖/הּ וּ/בְ/קֻמָֽ/הּ׃",
+        "VUL": "Dederunt etiam et illa nocte patri suo bibere vinum, ingressaque minor filia, dormivit cum eo : et ne tunc quidem sensit quando concubuerit, vel quando illa surrexerit.",
+        "LXX": "ἐπότισαν δὲ καὶ ἐν τῇ νυκτὶ ἐκείνῃ τὸν πατέρα αὐτῶν οἶνον, καὶ εἰσελθοῦσα ἡ νεωτέρα ἐκοιμήθη μετὰ τοῦ πατρὸς αὐτῆς· καὶ οὐκ ᾔδει ἐν τῷ κοιμηθῆναι αὐτὴν καὶ ἀναστῆναι.",
+        "NAB": "So that night, too, they plied their father with wine, and then the younger one went in and lay with him; but again he was not aware of her lying down or her getting up.",
+        "SYN": "И напоили отца своего вином и в эту ночь; и вошла младшая и спала с ним; и он не знал, когда она легла и когда встала.",
+        "NEO": "Cette nuit-là encore elles firent boire du vin à leur père, et la cadette alla se coucher auprès de lui, et il ne s’aperçut ni de son coucher ni de son lever.",
+        "VAT_ES": "Esa noche volvieron a dar de beber a su padre, y la menor se acostó con él, sin que él se diera cuenta de lo que sucedía.",
+        "CEI": "Anche quella notte fecero bere del vino al loro padre e la più piccola andò a coricarsi con lui; ma egli non se ne accorse, né quando essa si coricò, né quando essa si alzò."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַֽ/תַּהֲרֶ֛יןָ שְׁתֵּ֥י בְנֽוֹת ל֖וֹט מֵ/אֲבִי/הֶֽן׃",
+        "VUL": "Conceperunt ergo duæ filiæ Lot de patre suo.",
+        "LXX": "καὶ συνέλαβον αἱ δύο θυγατέρες Λὼτ ἐκ τοῦ πατρὸς αὐτῶν.",
+        "SYN": "И сделались обе дочери Лотовы беременными от отца своего,",
+        "NEO": "Les deux filles de Lot devinrent enceintes de leur père.",
+        "VAT_ES": "Las dos hijas de Lot quedaron embarazadas de su padre:",
+        "CEI": "Così le due figlie di Lot concepirono dal loro padre."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֤לֶד הַ/בְּכִירָה֙ בֵּ֔ן וַ/תִּקְרָ֥א שְׁמ֖/וֹ מוֹאָ֑ב ה֥וּא אֲבִֽי מוֹאָ֖ב עַד הַ/יּֽוֹם׃",
+        "VUL": "Peperitque major filium, et vocavit nomen ejus Moab : ipse est pater Moabitarum usque in præsentem diem.",
+        "LXX": "καὶ ἔτεκεν ἡ πρεσβυτέρα υἱόν, καὶ ἐκάλεσεν τὸ ὄνομα αὐτοῦ Μωὰβ λέγουσα Ἐκ τοῦ πατρός μου· οὗτος πατὴρ Μωαβιτῶν ἕως τῆς σήμερον ἡμέρας.",
+        "NAB": "The older one gave birth to a son whom she named Moab, saying, \"From my father.\" He is the ancestor of the Moabites of today.",
+        "SYN": "и родила старшая сына, и нарекла ему имя: Моав [говоря: _он_ от отца моего]. Он отец Моавитян доныне.",
+        "NEO": "L’aînée mit au monde un fils, qu’elle nomma Moab : c’est le père des Moabites, qui existent jusqu’à ce jour.",
+        "VAT_ES": "la mayor tuvo un hijo y lo llamó Moab, que es el padre de los actuales moabitas.",
+        "CEI": "La maggiore partorì un figlio e lo chiamò Moab. Costui è il padre dei Moabiti che esistono fino ad oggi."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וְ/הַ/צְּעִירָ֤ה גַם הִוא֙ יָ֣לְדָה בֵּ֔ן וַ/תִּקְרָ֥א שְׁמ֖/וֹ בֶּן עַמִּ֑י ה֛וּא אֲבִ֥י בְנֵֽי עַמּ֖וֹן עַד הַ/יּֽוֹם׃",
+        "VUL": "Minor quoque peperit filium, et vocavit nomen ejus Ammon, id est, Filius populi mei : ipse est pater Ammonitarum usque hodie.",
+        "LXX": "ἔτεκεν δὲ καὶ ἡ νεωτέρα υἱόν, καὶ ἐκάλεσεν τὸ ὄνομα αὐτοῦ Ἀμμάν, ὁ υἱὸς τοῦ γένους μου· οὗτος πατὴρ Ἀμμανιτῶν ἕως τῆς σήμερον ἡμέρας.",
+        "NAB": "The younger one, too, gave birth to a son, and she named him Ammon, saying, \"The son of my kin.\" He is the ancestor of the Ammonites of today.",
+        "SYN": "И младшая также родила сына, и нарекла ему имя: Бен-Амми [говоря: _он_ сын рода моего]. Он отец Аммонитян доныне.",
+        "NEO": "La cadette eut aussi un fils, qu’elle nomma Ben-Ammi : c’est le père des fils d’Ammon, qui existent jusqu’à ce jour.",
+        "VAT_ES": "También la menor tuvo un hijo y lo llamó Ben Amí, que es el padre de los actuales amonitas.",
+        "CEI": "Anche la più piccola partorì un figlio e lo chiamò \"Figlio del mio popolo\". Costui è il padre degli Ammoniti che esistono fino ad oggi."
+      }
+    }
+  }
+}

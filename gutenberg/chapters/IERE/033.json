@@ -1,0 +1,481 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IERE_033",
+  "book_key": "IERE",
+  "sequence": 33,
+  "chapter_in": {
+    "MT": 33,
+    "VUL": 33,
+    "LXX": 33
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֧י דְבַר יְהוָ֛ה אֶֽל יִרְמְיָ֖הוּ שֵׁנִ֑ית וְ/הוּא֙ עוֹדֶ֣/נּוּ עָצ֔וּר בַּ/חֲצַ֥ר הַ/מַּטָּרָ֖ה לֵ/אמֹֽר׃",
+        "LXX": "Ἐν ἀρχῇ βασιλέως Ἰωακεὶμ υἱοῦ Ἰωσεία ἐγενήθη ὁ λόγος οὗτος παρὰ Κυρίου.",
+        "VUL": "Et factum est verbum Domini ad Jeremiam secundo, cum adhuc clausus esset in atrio carceris, dicens :",
+        "SYN": "И было слово Господне к Иеремии вторично, когда он еще содержался во дворе стражи:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** fut adressée à Jérémie une seconde fois, lorsqu’il était encore enfermé dans la cour de garde, — en ces termes :",
+        "NAB": "The word of the LORD came to Jeremiah a second time while he was still imprisoned in the quarters of the guard:",
+        "VAT_ES": "La palabra del Señor llegó a Jeremías por segunda vez, mientras todavía estaba detenido en el patio de la guardia, en estos términos:",
+        "CEI": "La parola del Signore fu rivolta una seconda volta a Geremia, mentre egli era ancora chiuso nell'atrio della prigione:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כֹּֽה אָמַ֥ר יְהוָ֖ה עֹשָׂ֑/הּ יְהוָ֗ה יוֹצֵ֥ר אוֹתָ֛/הּ לַ/הֲכִינָ֖/הּ יְהוָ֥ה שְׁמֽ/וֹ׃",
+        "LXX": "Οὕτως εἶπεν Κύριος Στῆθι ἐν αὐλῇ οἴκου Κυρίου, καὶ χρηματιεῖς ἅπασι τοῖς Ἰουδαίοις καὶ πᾶσι τοῖς ἐρχομένοις προσκυνεῖν ἐν οἴκῳ Κυρίου ἅπαντας τοὺς λόγους οὓς συνέταξά σοι αὐτοῖς χρηματίσαι, μὴ ἀφέλῃς ῥῆμα.",
+        "VUL": "[Hæc dicit Dominus, qui facturus est,/ et formaturus illud, et paraturus :/ Dominus nomen ejus :/",
+        "SYN": "Так говорит Господь, Который сотворил [землю], Господь, Который устроил и утвердил ее, - Господь имя Ему:",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** qui fait cela, \\+w Yahweh|strong=\"H3068\"\\+w** qui le conçoit pour l’exécuter, — \\+w Yahweh|strong=\"H3068\"\\+w** est son nom : —",
+        "NAB": "Thus says the LORD who made the earth and gave it form and firmness, whose name is LORD:",
+        "VAT_ES": "Así habla el Señor que hizo la tierra y la formó para que subsistiera –&iexcl;su nombre es el Señor!–:",
+        "CEI": "\"Così dice il Signore, che ha fatto la terra e l'ha formata per renderla stabile e il cui nome è Signore:"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "קְרָ֥א אֵלַ֖/י וְ/אֶעֱנֶ֑/ךָּ וְ/אַגִּ֧ידָה לְּ/ךָ֛ גְּדֹל֥וֹת וּ/בְצֻר֖וֹת לֹ֥א יְדַעְתָּֽ/ם׃",
+        "LXX": "ἴσως ἀκούσονται καὶ ἀποστραφήσονται ἕκαστος ἀπὸ τῆς ὁδοῦ αὐτοῦ τῆς πονηρᾶς, καὶ παύσομαι ἀπὸ τῶν κακῶν ὧν ἐγὼ λογίζομαι τοῦ ποιῆσαι αὐτοῖς ἕνεκεν τῶν πονηρῶν ἐπιτηδευμάτων αὐτῶν.",
+        "VUL": "Clama ad me, et exaudiam te,/ et annuntiabo tibi grandia et firma quæ nescis./",
+        "SYN": "воззови ко Мне - и Я отвечу тебе, покажу тебе великое и недоступное, чего ты не знаешь.",
+        "NEO": "Invoque-moi et je te répondrai ; je te manifesterai des choses grandes et inaccessibles, que tu ne sais pas.",
+        "NAB": "Call to me, and I will answer you; I will tell to you things great beyond reach of your knowledge.",
+        "VAT_ES": "Invócame y yo te responderé, y te anunciaré cosas grandes e impenetrables, que tú no conocías.",
+        "CEI": "Invocami e io ti risponderò e ti annunzierò cose grandi e impenetrabili, che tu non conosci."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּי֩ כֹ֨ה אָמַ֤ר יְהוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל עַל בָּתֵּי֙ הָ/עִ֣יר הַ/זֹּ֔את וְ/עַל בָּתֵּ֖י מַלְכֵ֣י יְהוּדָ֑ה הַ/נְּתֻצִ֕ים אֶל הַ/סֹּלְל֖וֹת וְ/אֶל הֶ/חָֽרֶב׃",
+        "LXX": "καὶ ἐρεῖς Οὕτως εἶπεν Κύριος Ἐὰν μὴ ἀκούσητέ μου τοῦ πορεύεσθαι ἐν τοῖς νομίμοις μου οἷς ἔδωκα κατὰ πρόσωπον ὑμῶν,",
+        "VUL": "Quia hæc dicit Dominus Deus Israël/ ad domos urbis hujus,/ et ad domos regis Juda, quæ destructæ sunt,/ et ad munitiones, et ad gladium/",
+        "SYN": "Ибо так говорит Господь, Бог Израилев, о домах города сего и о домах царей Иудейских, которые разрушаются для завалов и для сражения",
+        "NEO": "Car ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu d’Israël, au sujet des maisons de cette ville, et des maisons du roi de Juda, abattues pour faire face aux machines de guerre et à l’épée ;",
+        "NAB": "Thus says the LORD, the God of Israel, concerning the houses of this city and the palaces of Judah's kings, which are being destroyed in the face of siegeworks and the sword:",
+        "VAT_ES": "Porque así habla el Señor, el Dios de Israel, acerca de las casas de esta ciudad y de las casas de los reyes de Judá, derribadas para levantar terraplenes y empalizadas,",
+        "CEI": "Poiché dice il Signore degli eserciti, Dio di Israele, riguardo alle case di questa città e alle case dei re di Giuda, che saranno diroccate di fronte alle opere di assedio e alle armi"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בָּאִ֗ים לְ/הִלָּחֵם֙ אֶת הַ/כַּשְׂדִּ֔ים וּ/לְ/מַלְאָ/ם֙ אֶת פִּגְרֵ֣י הָ/אָדָ֔ם אֲשֶׁר הִכֵּ֥יתִי בְ/אַפִּ֖/י וּ/בַ/חֲמָתִ֑/י וַ/אֲשֶׁ֨ר הִסְתַּ֤רְתִּי פָנַ/י֙ מֵ/הָ/עִ֣יר הַ/זֹּ֔את עַ֖ל כָּל רָעָתָֽ/ם׃",
+        "LXX": "εἰσακούειν τῶν λόγων τῶν παίδων μου τῶν προφητῶν οὓς ἐγὼ ἀποστέλλω πρὸς ὑμᾶς ὄρθρου, καὶ ἀπέστειλα καὶ οὐκ ἠκούσατέ μου·",
+        "VUL": "venientium ut dimicent cum Chaldæis,/ et impleant eas cadaveribus hominum/ quos percussi in furore meo et in indignatione mea,/ abscondens faciem meam a civitate hac,/ propter omnem malitiam eorum :/",
+        "SYN": "пришедшими воевать с Халдеями, чтобы наполнить домы трупами людей, которых Я поражу во гневе Моем и в ярости Моей, и за все беззакония которых Я сокрыл лице Мое от города сего.",
+        "NEO": "et au sujet de ceux qui vont combattre les Chaldéens, pour remplir ces maisons des cadavres des hommes, que je frappe dans ma colère et ma fureur, et à cause de la méchanceté desquels je cache ma face à cette ville :",
+        "NAB": "men come to battle the Chaldeans, and these houses will be filled with the corpses of those whom I slay in my anger and wrath, when I hide my face from this city for all their wickedness.",
+        "VAT_ES": "a fin de combatir a los caldeos y llenar la ciudad con los cadáveres de los hombres que yo herí en mi ira y en mi furor, porque oculté mi rostro a esta ciudad a causa de todas sus maldades:",
+        "CEI": "dei Caldei venuti a far guerra e a riempirle dei cadaveri degli uomini che io ho colpito nella mia ira e nel mio furore, poiché ho nascosto il volto distornandolo da questa città a causa di tutta la loro malvagità:"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "הִנְ/נִ֧י מַעֲלֶה לָּ֛/הּ אֲרֻכָ֥ה וּ/מַרְפֵּ֖א וּ/רְפָאתִ֑י/ם וְ/גִלֵּיתִ֣י לָ/הֶ֔ם עֲתֶ֥רֶת שָׁל֖וֹם וֶ/אֱמֶֽת׃",
+        "LXX": "καὶ δώσω τὸν οἶκον τοῦτον ὥσπερ Σηλώ, καὶ τὴν πόλιν δώσω εἰς κατάραν πᾶσιν τοῖς ἔθνεσιν πάσης τῆς γῆς.",
+        "VUL": "Ecce ego obducam eis cicatricem et sanitatem,/ et curabo eos, et revelabo illis deprecationem pacis et veritatis./",
+        "SYN": "Вот, Я приложу ему пластырь и целебные средства, и уврачую их, и открою им обилие мира и истины,",
+        "NEO": "Voici que je lui applique un pansement, et que je la soigne pour la guérir ; et je leur ferai voir une abondance de paix et de sécurité.",
+        "NAB": "Behold, I will treat and assuage the city's wounds; I will heal them, and reveal to them an abundance of lasting peace.",
+        "VAT_ES": "Yo voy a cicatrizar su llaga y la voy a sanar; los sanaré y les descubriré tesoros de paz y seguridad.",
+        "CEI": "Ecco io farò rimarginare la loro piaga, li curerò e li risanerò; procurerò loro abbondanza di pace e di sicurezza."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/הֲשִֽׁבֹתִי֙ אֶת שְׁב֣וּת יְהוּדָ֔ה וְ/אֵ֖ת שְׁב֣וּת יִשְׂרָאֵ֑ל וּ/בְנִתִ֖י/ם כְּ/בָ/רִֽאשֹׁנָֽה׃",
+        "LXX": "καὶ ἤκουσαν οἱ ἱερεῖς καὶ οἱ ψευδοπροφῆται καὶ πᾶς ὁ λαὸς τοῦ Ἰερεμίου λαλοῦντος τοὺς λόγους τούτους ἐν οἴκῳ Κυρίου.",
+        "VUL": "Et convertam conversionem Juda et conversionem Jerusalem,/ et ædificabo eos sicut a principio./",
+        "SYN": "и возвращу плен Иуды и плен Израиля и устрою их, как вначале,",
+        "NEO": "Je ramènerai les exilés de Juda et les exilés d’Israël, et je les rétablirai comme ils étaient autrefois.",
+        "NAB": "I will change the lot of Judah and the lot of Israel, and rebuild them as of old.",
+        "VAT_ES": "Cambiaré la suerte de Judá y la suerte de Israel, y los reconstruiré como al principio.",
+        "CEI": "Cambierò la sorte di Giuda e la sorte di Israele e li ristabilirò come al principio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/טִ֣הַרְתִּ֔י/ם מִ/כָּל עֲוֺנָ֖/ם אֲשֶׁ֣ר חָֽטְאוּ לִ֑/י וְ/סָלַחְתִּ֗י ל/כול לְ/כָל עֲוֺנֽוֹתֵי/הֶם֙ אֲשֶׁ֣ר חָֽטְאוּ לִ֔/י וַ/אֲשֶׁ֖ר פָּ֥שְׁעוּ בִֽ/י׃",
+        "LXX": "καὶ ἐγένετο Ἰερεμίου παυσαμένου λαλοῦντος πάντα ἃ συνέταξεν αὐτῷ Κύριος λαλῆσαι παντὶ τῷ λαῷ, καὶ συνελάβοσαν αὐτὸν οἱ ἱερεῖς καὶ οἱ ψευδοπροφῆται καὶ πᾶς ὁ λαὸς λέγων Θανάτῳ ἀποθανῇ,",
+        "VUL": "Et emundabo illos ab omni iniquitate sua/ in qua peccaverunt mihi,/ et propitius ero cunctis iniquitatibus eorum,/ in quibus dereliquerunt mihi et spreverunt me./",
+        "SYN": "и очищу их от всего нечестия их, которым они грешили предо Мною, и прощу все беззакония их, которыми они грешили предо Мною и отпали от Меня.",
+        "NEO": "Je les purifierai de toute leur iniquité, par laquelle ils ont péché contre moi ; je leur pardonnerai toutes leurs iniquités, par lesquelles ils m’ont offensé, par lesquelles ils se sont révoltés contre moi.",
+        "NAB": "I will cleanse them of all the guilt they incurred by sinning against me; all their offenses by which they sinned and rebelled against me, I will forgive.",
+        "VAT_ES": "Los purificaré de toda la iniquidad con que pecaron contra mí, les perdonaré todas las iniquidades con que pecaron y se rebelaron contra mí.",
+        "CEI": "Li purificherò da tutta l'iniquità con cui hanno peccato contro di me e perdonerò tutte le iniquità che han commesso verso di me e per cui si sono ribellati contro di me."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הָ֣יְתָה לִּ֗/י לְ/שֵׁ֤ם שָׂשׂוֹן֙ לִ/תְהִלָּ֣ה וּ/לְ/תִפְאֶ֔רֶת לְ/כֹ֖ל גּוֹיֵ֣י הָ/אָ֑רֶץ אֲשֶׁ֨ר יִשְׁמְע֜וּ אֶת כָּל הַ/טּוֹבָ֗ה אֲשֶׁ֤ר אָֽנֹכִי֙ עֹשֶׂ֣ה אֹתָ֔/ם וּ/פָחֲד֣וּ וְ/רָֽגְז֗וּ עַ֤ל כָּל הַ/טּוֹבָה֙ וְ/עַ֣ל כָּל הַ/שָּׁל֔וֹם אֲשֶׁ֥ר אָֽנֹכִ֖י עֹ֥שֶׂה לָּֽ/הּ׃",
+        "LXX": "ὅτι ἐπροφήτευσας τῷ ὀνόματι Κυρίου λέγων Ὥσπερ Σηλὼ ἔσται ὁ οἶκος οὗτος, καὶ ἡ πόλις αὕτη ἐρημωθήσεται ἀπὸ κατοικούντων· καὶ ἐξεκκλησιάσθη πᾶς ὁ λαὸς ἐπὶ Ἰερεμίαν ἐν οἴκῳ Κυρίου.",
+        "VUL": "Et erit mihi in nomen, et in gaudium,/ et in laudem, et in exsultationem/ cunctis gentibus terræ,/ quæ audierint omnia bona quæ ego facturus sum eis :/ et pavebunt et turbabuntur in universis bonis,/ et in omni pace quam ego faciam eis./",
+        "SYN": "И будет для меня _Иерусалим_ радостным именем, похвалою и честью пред всеми народами земли, которые услышат о всех благах, какие Я сделаю ему, и изумятся и затрепещут от всех благодеяний и всего благоденствия, которое Я доставлю ему.",
+        "NEO": "Et le nom de cette ville sera pour moi un nom de joie, de louange et de gloire parmi toutes les nations de la terre, qui apprendront tout le bien que je leur ferai ; elles seront effrayées et frémiront, en voyant tout le bonheur et la prospérité que je leur donnerai.",
+        "NAB": "Then Jerusalem shall be my joy, my praise, my glory, before all the nations of the earth, as they hear of all the good I will do among them. They shall be in fear and trembling over all the peaceful benefits I will give her.",
+        "VAT_ES": "Jerusalén será para mí un nombre gozoso, un honor y una gloria, entre todas las naciones de la tierra, que oirán todo el bien que yo les hago: ellas temerán y temblarán por todo el bienestar y toda la paz que les concedo.",
+        "CEI": "Ciò sarà per me titolo di gioia, di lode e di gloria tra tutti i popoli della terra, quando sapranno tutto il bene che io faccio loro e temeranno e tremeranno per tutto il bene e per tutta la pace che concederò loro."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כֹּ֣ה אָמַ֣ר יְהוָ֗ה עוֹד֮ יִשָּׁמַ֣ע בַּ/מָּקוֹם הַ/זֶּה֒ אֲשֶׁר֙ אַתֶּ֣ם אֹֽמְרִ֔ים חָרֵ֣ב ה֔וּא מֵ/אֵ֥ין אָדָ֖ם וּ/מֵ/אֵ֣ין בְּהֵמָ֑ה בְּ/עָרֵ֤י יְהוּדָה֙ וּ/בְ/חֻצ֣וֹת יְרוּשָׁלִַ֔ם הַֽ/נְשַׁמּ֗וֹת מֵ/אֵ֥ין אָדָ֛ם וּ/מֵ/אֵ֥ין יוֹשֵׁ֖ב וּ/מֵ/אֵ֥ין בְּהֵמָֽה׃",
+        "LXX": "Καὶ ἤκουσαν οἱ ἄρχοντες Ἰούδα τὸν λόγον τοῦτον, καὶ ἀνέβησαν ἐξ οἴκου τοῦ βασιλέως εἰς οἶκον Κυρίου, καὶ ἐκάθισαν ἐν προθύροις πύλης τῆς καινῆς.",
+        "VUL": "Hæc dicit Dominus :/ Adhuc audietur in loco isto/ quem vos dicitis esse desertum,/ eo quod non sit homo nec jumentum/ in civitatibus Juda, et foris Jerusalem,/ quæ desolatæ sunt, absque homine,/ et absque habitatore, et absque pecore,/",
+        "SYN": "Так говорит Господь: на этом месте, о котором вы говорите: \"оно пусто, без людей и без скота\", - в городах Иудейских и на улицах Иерусалима, которые пусты, без людей, без жителей, без скота,",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : On entendra encore — dans ce lieu dont vous dites : « C’est un désert sans homme ni bête « ; dans les villes de Juda et dans les rues de Jérusalem, qui sont désolées, sans homme, sans habitant, ni bête —",
+        "NAB": "Thus says the LORD: In this place of which you say, \"How desolate it is, without man, without beast!\" and in the cities of Judah, in the streets of Jerusalem that are now deserted, without man, without citizen, without beast, there shall yet be heard",
+        "VAT_ES": "Así habla el Señor: En este lugar del que ustedes dicen: «Está desierto, sin hombres ni animales», en las ciudades de Judá y en las calles de Jerusalén, que están devastadas, sin hombres ni habitantes ni animales, se oirá de nuevo",
+        "CEI": "Dice il Signore: In questo luogo, di cui voi dite: Esso è desolato, senza uomini e senza bestiame; nelle città di Giuda e nelle strade di Gerusalemme, che sono desolate, senza uomini, senza abitanti e senza bestiame, si udranno ancora"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "ק֣וֹל שָׂשׂ֞וֹן וְ/ק֣וֹל שִׂמְחָ֗ה ק֣וֹל חָתָן֮ וְ/ק֣וֹל כַּלָּה֒ ק֣וֹל אֹמְרִ֡ים הוֹדוּ֩ אֶת יְהוָ֨ה צְבָא֜וֹת כִּֽי ט֤וֹב יְהוָה֙ כִּֽי לְ/עוֹלָ֣ם חַסְדּ֔/וֹ מְבִאִ֥ים תּוֹדָ֖ה בֵּ֣ית יְהוָ֑ה כִּֽי אָשִׁ֧יב אֶת שְׁבוּת הָ/אָ֛רֶץ כְּ/בָ/רִאשֹׁנָ֖ה אָמַ֥ר יְהוָֽה׃",
+        "LXX": "καὶ εἶπαν οἱ ἱερεῖς καὶ οἱ ψευδοπροφῆται πρὸς τοὺς ἄρχοντας καὶ παντὶ τῷ λαῷ Κρίσις θανάτου τῷ ἀνθρώπῳ τούτῳ, ὅτι ἐπροφήτευσεν κατὰ τῆς πόλεως ταύτης καθὼς ἠκούσατε ἐν τοῖς ὠσὶν ὑμῶν.",
+        "VUL": "vox gaudii et vox lætitiæ,/ vox sponsi et vox sponsæ,/ vox dicentium : Confitemini Domino exercituum,/ quoniam bonus Dominus,/ quoniam in æternum misericordia ejus :/ et portantium vota in domum Domini :/ reducam enim conversionem terræ/ sicut a principio, dicit Dominus./",
+        "SYN": "опять будет слышен голос радости и голос веселья, голос жениха и голос невесты, голос говорящих: \"славьте Господа Саваофа, ибо благ Господь, ибо вовек милость Его\", и голос приносящих жертву благодарения в доме Господнем; ибо Я возвращу плененных сей земли в прежнее состояние, говорит Господь.",
+        "NEO": "les cris de joie et les cris d’allégresse, le chant du fiancé et le chant de la fiancée, la voix de ceux qui disent : « Louez \\+w Yahweh|strong=\"H3068\"\\+w** des armées, car \\+w Yahweh|strong=\"H3068\"\\+w** est bon, et sa miséricorde dure à jamais ! » de ceux qui apportent leurs sacrifices d’actions de grâces à la maison de \\+w Yahweh|strong=\"H3068\"\\+w**. Car je ferai revenir les exilés de ce pays, pour qu’ils soient comme à l’origine, dit \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "the cry of joy, the cry of gladness, the voice of the bridegroom, the voice of the bride, the sound of those who bring thank offerings to the house of the LORD, singing, \"Give thanks to the LORD of hosts, for the LORD is good; his mercy endures forever.\" For I will restore this country as of old, says the LORD.",
+        "VAT_ES": "el grito de alegría y el grito de júbilo, el canto del esposo y el canto de la esposa, y el canto de los que dicen, mientras presentan el sacrificio de alabanza en la Casa del Señor: «Den gracias al Señor de los ejércitos, porque es bueno el Señor, porque es eterno su amor». Sí, yo cambiaré la suerte de este país, y será como al principio, dice el Señor.",
+        "CEI": "grida di gioia e grida di allegria, la voce dello sposo e quella della sposa e il canto di coloro che dicono: Lodate il Signore degli eserciti, perché è buono, perché la sua grazia dura sempre, portando sacrifici di ringraziamento nel tempio del Signore, perché ristabilirò la sorte di questo paese come era prima, dice il Signore."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כֹּֽה אָמַר֮ יְהוָ֣ה צְבָאוֹת֒ ע֞וֹד יִֽהְיֶ֣ה בַּ/מָּק֣וֹם הַ/זֶּ֗ה הֶ/חָרֵ֛ב מֵֽ/אֵין אָדָ֥ם וְ/עַד בְּהֵמָ֖ה וּ/בְ/כָל עָרָ֑י/ו נְוֵ֣ה רֹעִ֔ים מַרְבִּצִ֖ים צֹֽאן׃",
+        "LXX": "καὶ εἶπεν Ἰερεμίας πρὸς τοὺς ἄρχοντας καὶ παντὶ τῷ λαῷ λέγων Κύριος ἀπέστειλέν με προφητεῦσαι ἐπὶ τὸν οἶκον τοῦτον καὶ ἐπὶ τὴν πόλιν ταύτην πάντας τοὺς λόγους οὓς ἠκούσατε.",
+        "VUL": "Hæc dicit Dominus exercituum :/ Adhuc erit in loco isto deserto,/ absque homine et absque jumento,/ et in cunctis civitatibus ejus,/ habitaculum pastorum accubantium gregum./",
+        "SYN": "Так говорит Господь Саваоф: на этом месте, которое пусто, без людей, без скота, и во всех городах его опять будут жилища пастухов, которые будут покоить стада.",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** des armées : Il y aura encore dans ce lieu, désert, sans homme, ni bête, et dans toutes ses villes, des abris, pour les pasteurs qui y feront reposer leurs troupeaux.",
+        "NAB": "Thus says the LORD of hosts: In this place, now desolate, without man or beast, and in all its cities there shall again be sheepfolds for the shepherds to couch their flocks.",
+        "VAT_ES": "Así habla el Señor de los ejércitos: En este lugar que está desierto, sin hombres ni animales, y en todas sus ciudades, habrá de nuevo un redil donde los pastores harán descansar a sus rebaños.",
+        "CEI": "Così dice il Signore degli eserciti: In questo luogo desolato, senza uomini e senza bestiame, e in tutte le sue città ci saranno ancora luoghi di pastori che vi faranno riposare i greggi."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "בְּ/עָרֵ֨י הָ/הָ֜ר בְּ/עָרֵ֤י הַ/שְּׁפֵלָה֙ וּ/בְ/עָרֵ֣י הַ/נֶּ֔גֶב וּ/בְ/אֶ֧רֶץ בִּנְיָמִ֛ן וּ/בִ/סְבִיבֵ֥י יְרוּשָׁלִַ֖ם וּ/בְ/עָרֵ֣י יְהוּדָ֑ה עֹ֣ד תַּעֲבֹ֧רְנָה הַ/צֹּ֛אן עַל יְדֵ֥י מוֹנֶ֖ה אָמַ֥ר יְהוָֽה׃",
+        "LXX": "καὶ νῦν βελτίους ποιήσατε τὰς ὁδοὺς ὑμῶν καὶ τὰ ἔργα ὑμῶν, καὶ ἀκούσατε τῆς φωνῆς Κυρίου, καὶ παύσεται Κύριος ἀπὸ τῶν κακῶν ὧν ἐλάλησεν ἐφ’ ὑμᾶς.",
+        "VUL": "In civitatibus montuosis,/ et in civitatibus campestribus,/ et in civitatibus quæ ad austrum sunt,/ et in terra Benjamin, et in circuitu Jerusalem,/ et in civitatibus Juda,/ adhuc transibunt greges ad manum numerantis, ait Dominus.]",
+        "SYN": "В городах нагорных, в городах низменных и в городах южных, и в земле Вениаминовой, и в окрестностях Иерусалима, и в городах Иуды опять будут проходить стада под рукою считающего, говорит Господь.",
+        "NEO": "Dans les villes de la montagne et dans les villes de la sephélah et dans les villes du négéb, dans le pays de Benjamin et dans les environs de Jérusalem, et dans les villes de Juda, les troupeaux passeront encore sous la main de celui qui les compte, dit \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "In the cities of the hill country, of the foothills, and of the Negeb, in the land of Benjamin and the suburbs of Jerusalem, and in the cities of Judah, flocks will again pass under the hands of the one who counts them, says the LORD.",
+        "VAT_ES": "En todas las ciudades de la Montaña, en las ciudades de la Sefelá, en las ciudades del Négueb, en el país de Benjamín, en los alrededores de Jerusalén y en las ciudades de Judá, las ovejas pasarán de nuevo bajo las manos del que las recuenta, dice el Señor.",
+        "CEI": "Nelle città dei monti, nelle città della Sefèla, nelle città del mezzogiorno, nella terra di Beniamino, nei dintorni di Gerusalemme e nelle città di Giuda passeranno ancora le pecore sotto la mano di chi le conta, dice il Signore."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הִנֵּ֛ה יָמִ֥ים בָּאִ֖ים נְאֻם יְהוָ֑ה וַ/הֲקִֽמֹתִי֙ אֶת הַ/דָּבָ֣ר הַ/טּ֔וֹב אֲשֶׁ֥ר דִּבַּ֛רְתִּי אֶל בֵּ֥ית יִשְׂרָאֵ֖ל וְ/עַל בֵּ֥ית יְהוּדָֽה׃",
+        "LXX": "καὶ ἰδοὺ ἐγὼ ἐν χερσὶν ὑμῶν, ποιήσατέ μοι ὡς συμφέρει καὶ ὡς βέλτιον ὑμῖν.",
+        "VUL": "[Ecce dies veniunt, dicit Dominus,/ et suscitabo verbum bonum quod locutus sum/ ad domum Israël et ad domum Juda./",
+        "SYN": "Вот, наступят дни, говорит Господь, когда Я выполню то доброе слово, которое изрек о доме Израилевом и о доме Иудином.",
+        "NEO": "Voici que des jours viennent, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, où j’accomplirai la bonne parole que j’ai dite au sujet de la maison d’Israël et de la maison de Juda.",
+        "NAB": "The days are coming, says the LORD, when I will fulfill the promise I made to the house of Israel and Judah.",
+        "VAT_ES": "Llegarán los días –oráculo del Señor– en que yo cumpliré la promesa que pronuncié acerca de la casa de Israel y la casa de Judá:",
+        "CEI": "Ecco verranno giorni - oracolo del Signore - nei quali io realizzerò le promesse di bene che ho fatto alla casa di Israele e alla casa di Giuda."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "בַּ/יָּמִ֤ים הָ/הֵם֙ וּ/בָ/עֵ֣ת הַ/הִ֔יא אַצְמִ֥יחַ לְ/דָוִ֖ד צֶ֣מַח צְדָקָ֑ה וְ/עָשָׂ֛ה מִשְׁפָּ֥ט וּ/צְדָקָ֖ה בָּ/אָֽרֶץ׃",
+        "LXX": "ἀλλ’ ἢ γνόντες γνώσεσθε ὅτι εἰ ἀναιρεῖτέ με, αἷμα ἀθῷον δίδοτε ἐφ’ ὑμᾶς καὶ ἐπὶ τὴν πόλιν ταύτην καὶ ἐπὶ τοὺς κατοικοῦντας ἐν αὐτῇ· ὅτι ἐν ἀληθείᾳ ἀπέσταλκέν με Κύριος πρὸς ὑμᾶς λαλῆσαι εἰς τὰ ὦτα ὑμῶν πάντας τοὺς λόγους τούτους.",
+        "VUL": "In diebus illis et in tempore illo/ germinare faciam David germen justitiæ,/ et faciet judicium et justitiam in terra :/",
+        "SYN": "В те дни и в то время возращу Давиду Отрасль праведную, и будет производить суд и правду на земле.",
+        "NEO": "En ces jours-là et en ce temps-là, je ferai germer à David un germe juste, qui exercera le droit et la justice sur la terre.",
+        "NAB": "In those days, in that time, I will raise up for David a just shoot; he shall do what is right and just in the land.",
+        "VAT_ES": "En aquellos días y en aquel tiempo, haré brotar para David un germen justo, y él practicará la justicia y el derecho en el país.",
+        "CEI": "In quei giorni e in quel tempo farò germogliare per Davide un germoglio di giustizia; egli eserciterà il giudizio e la giustizia sulla terra."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "בַּ/יָּמִ֤ים הָ/הֵם֙ תִּוָּשַׁ֣ע יְהוּדָ֔ה וִ/ירוּשָׁלִַ֖ם תִּשְׁכּ֣וֹן לָ/בֶ֑טַח וְ/זֶ֥ה אֲשֶׁר יִקְרָא לָ֖/הּ יְהוָ֥ה צִדְקֵֽ/נוּ׃",
+        "LXX": "καὶ εἶπαν οἱ ἄρχοντες καὶ πᾶς ὁ λαὸς πρὸς τοὺς ἱερεῖς καὶ πρὸς τοὺς ψευδοπροφήτας Οὐκ ἔστιν τῷ ἀνθρώπῳ τούτῳ κρίσις θανάτου, ὅτι ἐπὶ τῷ ὀνόματι Κυρίου τοῦ θεοῦ ἡμῶν ἐλάλησεν πρὸς ἡμᾶς.",
+        "VUL": "in diebus illis salvabitur Juda,/ et Jerusalem habitabit confidenter :/ et hoc est nomen quod vocabunt eum :/ Dominus justus noster./",
+        "SYN": "В те дни Иуда будет спасен и Иерусалим будет жить безопасно, и нарекут имя Ему: \"Господь оправдание наше!\"",
+        "NEO": "En ces jours-là, Juda sera sauvé et Jérusalem habitera en assurance, et on l’appellera \\+w Yahweh|strong=\"H3068\"\\+w**-notre-justice.",
+        "NAB": "In those days Judah shall be safe and Jerusalem shall dwell secure; this is what they shall call her: \"The LORD our justice.\"",
+        "VAT_ES": "En aquellos días, estará a salvo Judá y Jerusalén habitará segura. Y la llamarán así: «El Señor es nuestra justicia».",
+        "CEI": "In quei giorni Giuda sarà salvato e Gerusalemme vivrà tranquilla. Così sarà chiamata: Signore-nostra-giustizia."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כִּי כֹ֖ה אָמַ֣ר יְהוָ֑ה לֹֽא יִכָּרֵ֣ת לְ/דָוִ֔ד אִ֕ישׁ יֹשֵׁ֖ב עַל כִּסֵּ֥א בֵֽית יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἀνέστησαν ἄνδρες τῶν πρεσβυτέρων τῆς γῆς καὶ εἶπαν πάσῃ τῇ συναγωγῇ τοῦ λαοῦ",
+        "VUL": "Quia hæc dicit Dominus :/ Non interibit de David vir qui sedeat super thronum domus Israël :/",
+        "SYN": "Ибо так говорит Господь: не прекратится у Давида муж, сидящий на престоле дома Израилева,",
+        "NEO": "Car ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Il ne manquera jamais à David de descendant assis sur le trône de la maison d’Israël.",
+        "NAB": "For thus says the LORD: Never shall David lack a successor on the throne of the house of Israel,",
+        "VAT_ES": "Porque así habla el Señor: Nunca le faltará a David un sucesor que se siente en el trono de la casa de Israel.",
+        "CEI": "Così dice il Signore: Davide non sarà mai privo di un discendente che sieda sul trono della casa di Israele;"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/לַ/כֹּהֲנִים֙ הַ/לְוִיִּ֔ם לֹֽא יִכָּרֵ֥ת אִ֖ישׁ מִ/לְּ/פָנָ֑/י מַעֲלֶ֨ה עוֹלָ֜ה וּ/מַקְטִ֥יר מִנְחָ֛ה וְ/עֹ֥שֶׂה זֶּ֖בַח כָּל הַ/יָּמִֽים׃",
+        "LXX": "Μειχαίας ὁ Μωραθείτης ἦν ἐν ταῖς ἡμέραις Ἑζεκίου βασιλέως Ἰούδα καὶ εἶπεν παντὶ τῷ λαῷ Ἰούδα Οὕτως εἶπεν Κύριος Σειὼν ὡς ἀγρὸς ἀροτριαθήσεται, καὶ Ἰερουσαλὴμ εἰς ἄβατον ἔσται, καὶ τὸ ὄρος τοῦ οἴκου εἰς ἄλσος δρυμοῦ.",
+        "VUL": "et de sacerdotibus et de Levitis non interibit vir a facie mea,/ qui offerat holocautomata,/ et incendat sacrificium,/ et cædat victimas omnibus diebus.]",
+        "SYN": "и у священников-левитов не будет недостатка в муже пред лицем Моим, во все дни возносящем всесожжение и сожигающем приношения и совершающем жертвы.",
+        "NEO": "Et aux prêtres lévites, il ne manquera jamais devant moi d’homme, pour offrir l’holocauste, pour faire fumer l’oblation, et faire le sacrifice tous les jours.",
+        "NAB": "nor shall priests of Levi ever be lacking, to offer holocausts before me, to burn cereal offerings, and to sacrifice victims.This word of the LORD also came to Jeremiah:",
+        "VAT_ES": "Y a los sacerdotes levitas nunca les faltará un descendiente que esté delante de mi para ofrecer el holocausto, hacer quemar la oblación y presentar el sacrificio cada día.",
+        "CEI": "ai sacerdoti leviti non mancherà mai chi stia davanti a me per offrire olocausti, per bruciare l'incenso in offerta e compiere sacrifici tutti i giorni\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ דְּבַר יְהוָ֔ה אֶֽל יִרְמְיָ֖הוּ לֵ/אמֽוֹר׃",
+        "LXX": "μὴ ἀνελὼν ἀνεῖλεν αὐτὸν Ἑζεκίας καὶ πᾶς Ἰουδά; οὐχ ὅτι ἐφοβήθησαν τὸν κύριον, καὶ ὅτι ἐδεήθησαν τοῦ προσώπου Κυρίου, καὶ ἐπαύσατο Κύριος ἀπὸ τῶν κακῶν ὧν ἐλάλησεν ἐπ’ αὐτούς; καὶ ἡμεῖς ἐποιήσαμεν κακὰ μεγάλα ἐπὶ ψυχὰς ἡμῶν.",
+        "VUL": "Et factum est verbum Domini ad Jeremiam, dicens :",
+        "SYN": "И было слово Господне к Иеремии:",
+        "NEO": "Et la parole de \\+w Yahweh|strong=\"H3068\"\\+w** fut adressée à Jérémie en ces termes :",
+        "NAB": "Thus says the LORD:",
+        "VAT_ES": "La palabra del Señor llegó a Jeremías en estos términos:",
+        "CEI": "Questa parola del Signore fu poi rivolta a Geremia:"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "כֹּ֚ה אָמַ֣ר יְהוָ֔ה אִם תָּפֵ֨רוּ֙ אֶת בְּרִיתִ֣/י הַ/יּ֔וֹם וְ/אֶת בְּרִיתִ֖/י הַ/לָּ֑יְלָה וּ/לְ/בִלְתִּ֛י הֱי֥וֹת יֽוֹמָם וָ/לַ֖יְלָה בְּ/עִתָּֽ/ם׃",
+        "LXX": "καὶ ἄνθρωπος ἦν προφητεύων τῷ ὀνόματι Κυρίου, Οὐρείας υἱὸς Σαμαίου ἐκ Καριαθιαρείμ, καὶ ἐπροφήτευσεν περὶ τῆς γῆς ταύτης κατὰ πάντας τοὺς λόγους Ἰερεμίου.",
+        "VUL": "[Hæc dicit Dominus :/ Si irritum potest fieri pactum meum cum die,/ et pactum meum cum nocte,/ ut non sit dies et nox in tempore suo,/",
+        "SYN": "так говорит Господь: если можете разрушить завет Мой о дне и завет Мой о ночи, чтобы день и ночь не приходили в свое время,",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Si vous pouvez rompre mon alliance avec le jour, et mon alliance avec la nuit, en sorte que le jour et la nuit ne soient plus en leur temps,",
+        "NAB": "If you can break my covenant with day, and my covenant with night, so that day and night no longer alternate in sequence,",
+        "VAT_ES": "Así habla el Señor: Si ustedes pueden romper mi alianza con el día y mi alianza con la noche, de manera que el día y la noche no aparezcan más a su tiempo,",
+        "CEI": "\"Dice il Signore: Se voi potete spezzare la mia alleanza con il giorno e la mia alleanza con la notte, in modo che non vi siano più giorno e notte al tempo loro,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "גַּם בְּרִיתִ֤/י תֻפַר֙ אֶת דָּוִ֣ד עַבְדִּ֔/י מִ/הְיֽוֹת ל֥/וֹ בֵ֖ן מֹלֵ֣ךְ עַל כִּסְא֑/וֹ וְ/אֶת הַ/לְוִיִּ֥ם הַ/כֹּהֲנִ֖ים מְשָׁרְתָֽ/י׃",
+        "LXX": "καὶ ἤκουσεν ὁ βασιλεὺς Ἰωακεὶμ καὶ πάντες οἱ ἄρχοντες πάντας τοὺς λόγους αὐτοῦ, καὶ ἐζήτουν ἀποκτεῖναι αὐτόν· καὶ ἤκουσεν Οὐρείας, καὶ εἰσῆλθεν εἰς Αἴγυπτον.",
+        "VUL": "et pactum meum irritum esse poterit cum David servo meo,/ ut non sit ex eo filius qui regnet in throno ejus,/ et Levitæ et sacerdotes ministri mei./",
+        "SYN": "то может быть разрушен и завет Мой с рабом Моим Давидом, так что не будет у него сына, царствующего на престоле его, и также с левитами-священниками, служителями Моими.",
+        "NEO": "alors aussi mon alliance sera rompue avec David mon serviteur, en sorte qu’il n’ait plus de fils qui règne sur son trône, et avec les lévites prêtres qui font mon service.",
+        "NAB": "then can my covenant with my servant David also be broken, so that he will not have a son to be king upon his throne, and my covenant with the priests of Levi who minister to me.",
+        "VAT_ES": "entonces también se romperá mi alianza con mi servidor David, de manera que no tenga más un hijo que reine sobre su trono, y mi alianza con los sacerdotes levitas, mis ministros.",
+        "CEI": "così sarà rotta anche la mia alleanza con Davide mio servo, in modo che non abbia un figlio che regni sul suo trono, e quella con i leviti sacerdoti che mi servono."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֤ר לֹֽא יִסָּפֵר֙ צְבָ֣א הַ/שָּׁמַ֔יִם וְ/לֹ֥א יִמַּ֖ד ח֣וֹל הַ/יָּ֑ם כֵּ֣ן אַרְבֶּ֗ה אֶת זֶ֨רַע֙ דָּוִ֣ד עַבְדִּ֔/י וְ/אֶת הַ/לְוִיִּ֖ם מְשָׁרְתֵ֥י אֹתִֽ/י׃",
+        "LXX": "καὶ ἐξαπέστειλεν ὁ βασιλεὺς ἄνδρας εἰς Αἴγυπτον,",
+        "VUL": "Sicuti enumerari non possunt stellæ cæli,/ et metiri arena maris,/ sic multiplicabo semen David servi mei,/ et Levitas ministros meos.]",
+        "SYN": "Как неисчислимо небесное воинство и неизмерим песок морской, так размножу племя Давида, раба Моего, и левитов, служащих Мне.",
+        "NEO": "Comme l’armée des cieux ne se compte pas, et comme le sable de la mer ne se mesure pas, ainsi je multiplierai la race de David, mon serviteur, et les lévites qui font mon service.",
+        "NAB": "Like the host of heaven which cannot be numbered, and the sands of the sea which cannot be counted, I will multiply the descendants of my servant David and the Levites who minister to me.",
+        "VAT_ES": "Así como no se puede contar el ejército del cielo, ni medir la arena del mar, así multiplicaré la descendencia de David, mi servidor, y a los levitas, que son mis ministros.",
+        "CEI": "Come non si può contare la milizia del cielo né numerare la sabbia del mare, così io moltiplicherò la discendenza di Davide, mio servo, e i leviti che mi servono\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ דְּבַר יְהוָ֔ה אֶֽל יִרְמְיָ֖הוּ לֵ/אמֹֽר׃",
+        "LXX": "καὶ ἐξηγάγοσαν αὐτὸν ἐκεῖθεν καὶ εἰσηγάγοσαν αὐτὸν πρὸς τὸν βασιλέα· καὶ ἐπάταξεν αὐτὸν ἐν μαχαίρᾳ, καὶ ἔριψεν αὐτὸν εἰς τὸ μνῆμα υἱῶν λαοῦ αὐτοῦ.",
+        "VUL": "Et factum est verbum Domini ad Jeremiam, dicens :",
+        "SYN": "И было слово Господне к Иеремии:",
+        "NEO": "Et la parole de \\+w Yahweh|strong=\"H3068\"\\+w** fut adressée à Jérémie en ces termes :",
+        "NAB": "This word of the LORD came to Jeremiah:",
+        "VAT_ES": "La palabra del Señor llegó a Jeremías en estos términos:",
+        "CEI": "La parola del Signore fu ancora rivolta a Geremia:"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "הֲ/ל֣וֹא רָאִ֗יתָ מָֽה הָ/עָ֤ם הַ/זֶּה֙ דִּבְּר֣וּ לֵ/אמֹ֔ר שְׁתֵּ֣י הַ/מִּשְׁפָּח֗וֹת אֲשֶׁ֨ר בָּחַ֧ר יְהוָ֛ה בָּ/הֶ֖ם וַ/יִּמְאָסֵ֑/ם וְ/אֶת עַמִּ/י֙ יִנְאָצ֔וּ/ן מִֽ/הְי֥וֹת ע֖וֹד גּ֥וֹי לִ/פְנֵי/הֶֽם׃",
+        "LXX": "πλὴν χεὶρ Ἀχεικὰμ υἱοῦ Σαφὰν ἦν μετὰ Ἰερεμίου τοῦ μὴ παραδοῦναι αὐτὸν εἰς χεῖρας τοῦ λαοῦ, μὴ ἀνελεῖν αὐτόν.",
+        "VUL": "[Numquid non vidisti quid populus hic locutus sit, dicens :/ Duæ cognationes quas elegerat Dominus abjectæ sunt ?/ et populum meum despexerunt,/ eo quod non sit ultra gens coram eis./",
+        "SYN": "не видишь ли, что народ этот говорит: \"те два племени, которые избрал Господь, Он отверг?\" и чрез это они презирают народ Мой, как бы он уже не был народом в глазах их.",
+        "NEO": "N’as-tu pas vu ce que ce peuple dit en ces termes : « \\+w Yahweh|strong=\"H3068\"\\+w** a rejeté les deux familles qu’il avait choisies ! » Ainsi ils méprisent mon peuple, au point que, devant eux, il n’est plus une nation !",
+        "NAB": "Have you not noticed what these people are saying: \"The LORD has rejected the two tribes which he had chosen\"? They spurn my people as if it were no longer a nation in their eyes.",
+        "VAT_ES": "&iquest;No ves lo que dice esta gente: «A las dos familias que había elegido, el Señor las ha rechazado»? Así desprecian a mi pueblo, y ya no lo consideran una nación.",
+        "CEI": "\"Non hai osservato ciò che questo popolo va dicendo: Il Signore ha rigettato le due famiglie che si era scelte! e così disprezzano il mio popolo quasi che non sia più una nazione ai loro occhi?\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "כֹּ֚ה אָמַ֣ר יְהוָ֔ה אִם לֹ֥א בְרִיתִ֖/י יוֹמָ֣ם וָ/לָ֑יְלָה חֻקּ֛וֹת שָׁמַ֥יִם וָ/אָ֖רֶץ לֹא שָֽׂמְתִּי׃",
+        "VUL": "Hæc dicit Dominus :/ Si pactum meum inter diem et noctem,/ et leges cælo et terræ non posui,/",
+        "SYN": "Так говорит Господь: если завета Моего о дне и ночи и уставов неба и земли Я не утвердил,",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Si je n’ai pas établi mon alliance avec le jour et la nuit, et si je n’ai pas posé les lois du ciel et de la terre,",
+        "NAB": "Thus says the LORD: When I have no covenant with day and night, and have given no laws to heaven and earth,",
+        "VAT_ES": "Así habla el Señor: Si yo no establecí mi alianza con el día y con la noche, si no fijé el ordenamiento del cielo y de la tierra,",
+        "CEI": "Dice il Signore: \"Se non sussiste più la mia alleanza con il giorno e con la notte, se io non ho stabilito le leggi del cielo e della terra,"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "גַּם זֶ֣רַע יַעֲקוֹב֩ וְ/דָוִ֨ד עַבְדִּ֜/י אֶמְאַ֗ס מִ/קַּ֤חַת מִ/זַּרְע/וֹ֙ מֹֽשְׁלִ֔ים אֶל זֶ֥רַע אַבְרָהָ֖ם יִשְׂחָ֣ק וְ/יַעֲקֹ֑ב כִּֽי אשוב אָשִׁ֥יב אֶת שְׁבוּתָ֖/ם וְ/רִחַמְתִּֽי/ם׃",
+        "VUL": "equidem et semen Jacob et David servi mei projiciam,/ ut non assumam de semine ejus/ principes seminis Abraham, Isaac, et Jacob :/ reducam enim conversionem eorum, et miserebor eis.]",
+        "SYN": "то и племя Иакова и Давида, раба Моего, отвергну, чтобы не брать более владык из его племени для племени Авраама, Исаака и Иакова; ибо возвращу плен их и помилую их.",
+        "NEO": "je rejetterai aussi la postérité de Jacob et de David mon serviteur, au point de ne plus prendre dans sa postérité des chefs, pour la race d’Abraham, d’Isaac et de Jacob ! Car je ferai revenir les captifs et j’aurai compassion d’eux.",
+        "NAB": "then too will I reject the descendants of Jacob and of my servant David, so as not to take from his descendants rulers for the race of Abraham, Isaac, and Jacob. For I will change their lot and show them mercy.",
+        "VAT_ES": "entonces también rechazaré a la descendencia de Jacob y de David, mi servidor, no tomando de ella jefes para el linaje de Abraham, de Isaac y de Jacob. Pero no, yo cambiaré su suerte y me compadeceré de ellos.",
+        "CEI": "in tal caso potrò rigettare la discendenza di Giacobbe e di Davide mio servo, così da non prendere più dai loro posteri coloro che governeranno sulla discendenza di Abramo, di Isacco e di Giacobbe. Poiché io cambierò la loro sorte e avrò pietà di loro\"."
+      }
+    }
+  }
+}
