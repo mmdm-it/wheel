@@ -2,6 +2,11 @@
 
 A mobile-first hierarchical data browser with novel rotational touch navigation. Navigate deep tree structures intuitively using circular gestures.
 
+> **Project status: v3 is live on branch `v3`**
+> - Active development and releases now happen in the `v3` branch (codebase lives in the `wheel-v3/` directory).
+> - `main` currently hosts the legacy v1/v2 assets and docs; those versions are effectively archived.
+> - Please base new work, issues, and testing on the `v3` branch.
+
 **Version 0.8.188** | December 2025
 
 ## Biblia Catholica
