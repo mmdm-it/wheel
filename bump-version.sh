@@ -1,99 +1,89 @@
 #!/bin/bash
 # bump-version.sh
-# Automatically increment semantic version across all project files
+# Increment semantic version across wheel-v3 project files
 # Usage: ./bump-version.sh [major|minor|patch] ["Optional changelog entry"]
-# Default: patch
+# Default bump: patch
 
-set -e  # Exit on error
+set -euo pipefail
 
-CONFIG_FILE="mobile/mobile-config.js"
+PACKAGE_FILE="package.json"
 README_FILE="README.md"
 CHANGELOG_FILE="CHANGELOG.md"
 
-# Extract current semantic version
-CURRENT_SEMANTIC=$(grep "semantic:" "$CONFIG_FILE" | sed "s/.*'\([0-9.]*\)'.*/\1/")
+# Ensure changelog exists with Unreleased header
+if [ ! -f "$CHANGELOG_FILE" ]; then
+  cat > "$CHANGELOG_FILE" <<'EOF'
+# Changelog
 
-# Parse semantic version
-IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT_SEMANTIC"
-
-# Handle semantic version bump
-BUMP_TYPE="${1:-patch}"  # Default to patch
-CHANGELOG_NOTE="${2:-}"   # Optional changelog entry
-
-if [ "$BUMP_TYPE" == "major" ]; then
-    MAJOR=$((MAJOR + 1))
-    MINOR=0
-    PATCH=0
-elif [ "$BUMP_TYPE" == "minor" ]; then
-    MINOR=$((MINOR + 1))
-    PATCH=0
-elif [ "$BUMP_TYPE" == "patch" ]; then
-    PATCH=$((PATCH + 1))
-else
-    echo "Error: Invalid bump type. Use 'major', 'minor', or 'patch'"
-    exit 1
+## [Unreleased]
+EOF
 fi
 
-NEW_SEMANTIC="$MAJOR.$MINOR.$PATCH"
+# Extract current version from package.json
+CURRENT_VERSION=$(grep '"version"' "$PACKAGE_FILE" | head -n1 | sed 's/.*"version": "\([0-9.]*\)".*/\1/')
+
+IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT_VERSION"
+
+BUMP_TYPE="${1:-patch}"
+CHANGELOG_NOTE="${2:-}"
+
+case "$BUMP_TYPE" in
+  major)
+    MAJOR=$((MAJOR + 1)); MINOR=0; PATCH=0 ;;
+  minor)
+    MINOR=$((MINOR + 1)); PATCH=0 ;;
+  patch)
+    PATCH=$((PATCH + 1)) ;;
+  *)
+    echo "Error: Invalid bump type. Use 'major', 'minor', or 'patch'" >&2
+    exit 1 ;;
+
+esac
+
+NEW_VERSION="$MAJOR.$MINOR.$PATCH"
 CURRENT_DATE=$(date +%Y-%m-%d)
-CURRENT_MONTH=$(date +"%B %Y")
 
-echo "Bumping version: $CURRENT_SEMANTIC → $NEW_SEMANTIC"
-echo "Date: $CURRENT_DATE"
+echo "Bumping version: $CURRENT_VERSION → $NEW_VERSION"
 
-# 1. Update mobile-config.js
-echo "Updating $CONFIG_FILE..."
-TEMP_FILE="${CONFIG_FILE}.tmp"
-sed "s/semantic: '[0-9.]*'/semantic: '$NEW_SEMANTIC'/" "$CONFIG_FILE" > "$TEMP_FILE"
-mv "$TEMP_FILE" "$CONFIG_FILE"
+echo "Updating $PACKAGE_FILE..."
+TMP_PKG="${PACKAGE_FILE}.tmp"
+sed "s/\"version\": \"[0-9.]*\"/\"version\": \"$NEW_VERSION\"/" "$PACKAGE_FILE" > "$TMP_PKG"
+mv "$TMP_PKG" "$PACKAGE_FILE"
 
-# 2. Update README.md (both occurrences)
-echo "Updating $README_FILE..."
-TEMP_FILE="${README_FILE}.tmp"
-sed "s/\*\*Version [0-9.]*\*\* |/\*\*Version $NEW_SEMANTIC\*\* |/" "$README_FILE" > "$TEMP_FILE"
-mv "$TEMP_FILE" "$README_FILE"
+if grep -q "Version" "$README_FILE"; then
+  echo "Updating $README_FILE..."
+  TMP_README="${README_FILE}.tmp"
+  sed "s/Version [0-9.]*/Version $NEW_VERSION/" "$README_FILE" > "$TMP_README"
+  mv "$TMP_README" "$README_FILE"
+fi
 
-# 3. Add entry to CHANGELOG.md
 echo "Updating $CHANGELOG_FILE..."
-# Create the new changelog entry
-NEW_ENTRY="## [$NEW_SEMANTIC] - $CURRENT_DATE\n\n"
+NEW_ENTRY="## [$NEW_VERSION] - $CURRENT_DATE\n\n### Changed\n"
 if [ -n "$CHANGELOG_NOTE" ]; then
-    NEW_ENTRY="${NEW_ENTRY}### Changed\n- $CHANGELOG_NOTE\n\n"
+  NEW_ENTRY+="- $CHANGELOG_NOTE\n\n"
 else
-    NEW_ENTRY="${NEW_ENTRY}### Changed\n- (Add changes here)\n\n"
+  NEW_ENTRY+="- (Add changes here)\n\n"
 fi
 
-# Insert after the [Unreleased] section
-TEMP_FILE="${CHANGELOG_FILE}.tmp"
+TMP_CL="${CHANGELOG_FILE}.tmp"
 awk -v new_entry="$NEW_ENTRY" '
-    /^## \[Unreleased\]/ {
-        print;
-        # Skip blank lines and content until next ## heading
-        while (getline > 0 && !/^## \[/) {
-            print;
-        }
-        # Print the new entry
-        printf "%s", new_entry;
-        # Print the line we read (next version heading)
-        if (NF > 0) print;
-        next;
-    }
-    { print }
-' "$CHANGELOG_FILE" > "$TEMP_FILE"
-mv "$TEMP_FILE" "$CHANGELOG_FILE"
+  BEGIN { inserted=0 }
+  /^## \[Unreleased\]/ {
+    print; next
+  }
+  inserted==0 && /^## \[/ {
+    print new_entry; inserted=1
+  }
+  { print }
+  END { if (inserted==0) print "\n" new_entry }
+' "$CHANGELOG_FILE" > "$TMP_CL"
+mv "$TMP_CL" "$CHANGELOG_FILE"
 
 echo ""
-echo "✅ Version bumped to v$NEW_SEMANTIC"
-echo ""
-echo "Updated files:"
-echo "  - $CONFIG_FILE"
-echo "  - $README_FILE"
-echo "  - $CHANGELOG_FILE"
-echo ""
-echo "⚠️  Next steps:"
-if [ -z "$CHANGELOG_NOTE" ]; then
-    echo "  1. Edit $CHANGELOG_FILE to add detailed changes for v$NEW_SEMANTIC"
-fi
-echo "  2. Review the changes: git diff"
-echo "  3. Commit: git add -A && git commit -m 'Bump version to v$NEW_SEMANTIC'"
+echo "✅ Version bumped to v$NEW_VERSION"
+echo "Updated files: $PACKAGE_FILE, $CHANGELOG_FILE${CHANGELOG_NOTE:+ (with note)}${README_FILE:+, $README_FILE}"
+echo "Next steps:"
+echo "  - Review changes: git diff"
+echo "  - Commit: git add -A && git commit -m 'v$NEW_VERSION: ${CHANGELOG_NOTE:-Version bump}'"
+echo "  - Tag: git tag v$NEW_VERSION"
 echo ""
