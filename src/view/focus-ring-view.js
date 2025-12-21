@@ -101,6 +101,8 @@ export class FocusRingView {
       this.magnifierCircle.setAttribute('r', radius);
       this.magnifierLabel.setAttribute('x', magnifier.x);
       this.magnifierLabel.setAttribute('y', magnifier.y);
+      const magRotation = ((magnifier.angle || 0) * 180) / Math.PI + 180;
+      this.magnifierLabel.setAttribute('transform', `rotate(${magRotation}, ${magnifier.x}, ${magnifier.y})`);
       this.magnifierLabel.textContent = (magnifier.label || '').toUpperCase();
       this.magnifierGroup.removeAttribute('display');
     } else if (this.magnifierGroup) {
