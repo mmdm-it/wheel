@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.35] - 2025-12-22
+
+### Changed
+- Fix magnifier angle to 140deg
+
+
 ## [3.0.34] - 2025-12-22
 
 ### Changed
