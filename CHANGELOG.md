@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.0.37] - 2025-12-22
+
+### Changed
+- Add cousin chains for Bible books with section gaps and logging summary
+
 ## [3.0.36] - 2025-12-22
 
 ### Changed

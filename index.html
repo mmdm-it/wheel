@@ -13,7 +13,7 @@
   <div id="version-badge" class="version-badge" aria-label="Application version"></div>
   <svg id="app" aria-label="Wheel v3"></svg>
   <script type="module">
-    import { createApp, getViewportInfo } from './src/index.js';
+    import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookCousinChain } from './src/index.js';
 
     const svg = document.getElementById('app');
     const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
@@ -48,7 +48,21 @@
       });
 
       const manifest = await fetch(manifestPath).then(r => r.json());
-      return { volume, manifest };
+      const level = params.get('level');
+      const cousinParam = params.get('cousins');
+      const cousinMode = cousinParam === null ? true : cousinParam === '1';
+      return {
+        volume,
+        manifest,
+        options: {
+          level,
+          bookId: params.get('book') || 'GENE',
+          testamentId: params.get('testament'),
+          chapterId: params.get('chapter'),
+          translation: params.get('translation') || 'NAB',
+          cousinMode
+        }
+      };
     }
 
     function applyTheme(manifest, volume) {
@@ -113,14 +127,28 @@
       return items.sort((a, b) => (a.sort || 0) - (b.sort || 0));
     }
 
-    function buildChain(manifest, volume) {
+    async function buildChain(manifest, volume, options = {}) {
+      if (volume === 'bible' && options.cousinMode) {
+        const level = options.level || 'book';
+        if (level === 'verse') {
+          return buildBibleVerseCousinChain(manifest, {
+            bookId: options.bookId || 'GENE',
+            startChapterId: options.chapterId || undefined,
+            translation: options.translation || 'NAB'
+          });
+        }
+        return buildBibleBookCousinChain(manifest, {
+          testamentId: options.testamentId,
+          bookId: options.bookId || 'GENE'
+        });
+      }
       if (volume === 'catalog') {
-        return buildCatalogManufacturers(manifest);
+        return { items: buildCatalogManufacturers(manifest), selectedIndex: 0, preserveOrder: false };
       }
       if (volume === 'calendar') {
-        return buildCalendarYears(manifest);
+        return { items: buildCalendarYears(manifest), selectedIndex: 0, preserveOrder: false };
       }
-      return buildBibleBooks(manifest);
+      return { items: buildBibleBooks(manifest), selectedIndex: 0, preserveOrder: false };
     }
 
     function wireInteractions(app, itemCount) {
@@ -187,14 +215,14 @@
       }
     }
 
-    loadConfig().then(({ volume, manifest }) => {
+    loadConfig().then(async ({ volume, manifest, options }) => {
       applyTheme(manifest, volume);
-      const items = buildChain(manifest, volume);
+      const { items, selectedIndex = 0, preserveOrder = false } = await buildChain(manifest, volume, options);
       if (!items.length) {
         console.error('No items found for volume', volume);
         return;
       }
-      const app = createApp({ svgRoot: svg, items, viewport });
+      const app = createApp({ svgRoot: svg, items, viewport, selectedIndex, preserveOrder });
       wireInteractions(app, items.length);
       showVersion();
     }).catch(err => {

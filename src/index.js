@@ -1,5 +1,6 @@
 import { getViewportInfo, calculateNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing } from './geometry/focus-ring-geometry.js';
 import { NavigationState } from './navigation/navigation-state.js';
+import { buildBibleVerseCousinChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
 import { FocusRingView } from './view/focus-ring-view.js';
 
@@ -8,7 +9,9 @@ export {
   calculateNodePositions,
   NavigationState,
   RotationChoreographer,
-  FocusRingView
+  FocusRingView,
+  buildBibleVerseCousinChain,
+  buildBibleBookCousinChain
 };
 
 const NODE_RADIUS_RATIO = 0.035; // 3.5% of shorter side
@@ -23,9 +26,17 @@ const logOnce = (() => {
   };
 })();
 
-export function createApp({ svgRoot, items, viewport }) {
-  if (!svgRoot) throw new Error('createApp: svgRoot is required');
-  const normalized = [...items]
+function normalizeItems(items, { preserveOrder = false } = {}) {
+  if (!Array.isArray(items)) throw new Error('createApp: items must be an array');
+  const hasGaps = items.some(item => item === null);
+  if (preserveOrder || hasGaps) {
+    return items.map((item, idx) => {
+      if (item === null) return null;
+      const order = Number.isFinite(item.order) ? item.order : idx;
+      return { ...item, order };
+    });
+  }
+  const sorted = [...items]
     .sort((a, b) => {
       const as = a.sort ?? a.order ?? 0;
       const bs = b.sort ?? b.order ?? 0;
@@ -33,6 +44,12 @@ export function createApp({ svgRoot, items, viewport }) {
       return as - bs;
     })
     .map((item, idx) => ({ ...item, order: idx }));
+  return sorted;
+}
+
+export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserveOrder = false }) {
+  if (!svgRoot) throw new Error('createApp: svgRoot is required');
+  const normalized = normalizeItems(items, { preserveOrder });
 
   const vp = viewport || getViewportInfo(window.innerWidth, window.innerHeight);
   const nodeRadius = vp.SSd * NODE_RADIUS_RATIO;
@@ -51,7 +68,23 @@ export function createApp({ svgRoot, items, viewport }) {
     windowInfo,
     magnifier
   });
-  const nav = new NavigationState(normalized);
+  const gapCount = normalized.filter(item => item === null).length;
+  const firstItem = normalized.find(item => item !== null);
+  const lastItem = [...normalized].reverse().find(item => item !== null);
+  console.info('[FocusRing] chain summary', {
+    total: normalized.length,
+    gaps: gapCount,
+    first: firstItem?.name || firstItem?.id || null,
+    last: lastItem?.name || lastItem?.id || null
+  });
+  const nav = new NavigationState();
+  const safeIndex = (() => {
+    if (!normalized.length) return 0;
+    if (normalized[selectedIndex] !== null) return selectedIndex;
+    const fallback = normalized.findIndex(item => item !== null);
+    return fallback >= 0 ? fallback : 0;
+  })();
+  nav.setItems(normalized, safeIndex);
   const view = new FocusRingView(svgRoot);
   view.init();
   let choreographer = null;
@@ -61,12 +94,17 @@ export function createApp({ svgRoot, items, viewport }) {
 
   const clampRotation = (value, bounds) => Math.max(bounds.minRotation, Math.min(bounds.maxRotation, value));
 
-  const buildVisibleItems = () => nav.items.map((item, idx) => ({ ...item, order: idx }));
+  const buildVisibleItems = () => nav.items;
 
   const computeBounds = visibleItems => {
-    if (!visibleItems.length) return { minRotation: 0, maxRotation: 0 };
-    const firstAngle = getBaseAngleForOrder(visibleItems[0].order, vp, nodeSpacing);
-    const lastAngle = getBaseAngleForOrder(visibleItems[visibleItems.length - 1].order, vp, nodeSpacing);
+    const nonNull = visibleItems.filter(item => item !== null);
+    if (!nonNull.length) return { minRotation: 0, maxRotation: 0 };
+    const firstOrder = Number.isFinite(nonNull[0].order) ? nonNull[0].order : visibleItems.indexOf(nonNull[0]);
+    const lastOrder = Number.isFinite(nonNull[nonNull.length - 1].order)
+      ? nonNull[nonNull.length - 1].order
+      : visibleItems.lastIndexOf(nonNull[nonNull.length - 1]);
+    const firstAngle = getBaseAngleForOrder(firstOrder, vp, nodeSpacing);
+    const lastAngle = getBaseAngleForOrder(lastOrder, vp, nodeSpacing);
     return {
       minRotation: windowInfo.startAngle - firstAngle,
       maxRotation: windowInfo.endAngle - lastAngle
@@ -75,7 +113,7 @@ export function createApp({ svgRoot, items, viewport }) {
 
   const render = (nextRotation = rotation) => {
     rotation = nextRotation;
-    const selected = nav.getCurrent() || nav.items[0];
+    const selected = nav.getCurrent() || nav.items.find(item => item !== null) || nav.items[0];
     const visible = buildVisibleItems();
     const bounds = computeBounds(visible);
     if (choreographer) {
@@ -164,6 +202,7 @@ export function createApp({ svgRoot, items, viewport }) {
     let closestDiff = Infinity;
     let closestAngle = null;
     nav.items.forEach((item, idx) => {
+      if (item === null) return;
       const baseAngle = getBaseAngleForOrder(item.order, vp, nodeSpacing);
       const rotated = baseAngle + rotation;
       const diff = Math.abs(rotated - targetAngle);

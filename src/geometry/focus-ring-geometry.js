@@ -67,6 +67,7 @@ export function calculateNodePositions(allItems, viewport, rotationOffset = 0, n
   const positions = [];
 
   allItems.forEach((item, index) => {
+    if (item === null) return; // gap occupies space but does not render
     const order = Number.isFinite(item.order) ? item.order : index;
     const baseAngle = getBaseAngleForOrder(order, viewport, spacing); // reverse sort: lower order → larger angle
     const rotatedAngle = baseAngle + rotationOffset;
