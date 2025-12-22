@@ -87,7 +87,7 @@ export class FocusRingView {
       const rotation = (node.angle * 180) / Math.PI + 180; // 90° more to flip vertical
       label.setAttribute('transform', `rotate(${rotation}, ${lx}, ${ly})`);
       const showNodeLabel = isRotating || !this.#isNearMagnifier(node.angle, magnifierAngle, labelMaskEpsilon);
-      label.textContent = showNodeLabel ? (node.item.name || '').toUpperCase() : '';
+      label.textContent = showNodeLabel ? (node.item.name || '') : '';
     });
 
     existingNodes.forEach((el, id) => {
@@ -115,7 +115,7 @@ export class FocusRingView {
       if (isRotating) {
         this.magnifierLabel.textContent = '';
       } else {
-        this.magnifierLabel.textContent = (magnifier.label || '').toUpperCase();
+        this.magnifierLabel.textContent = (magnifier.label || '');
       }
       this.magnifierGroup.removeAttribute('display');
     } else if (this.magnifierGroup) {

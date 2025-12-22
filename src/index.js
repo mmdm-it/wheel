@@ -54,9 +54,9 @@ export function createApp({ svgRoot, items, viewport }) {
   const nav = new NavigationState(normalized);
   const view = new FocusRingView(svgRoot);
   view.init();
-  let rotationOffset = 0;
   let choreographer = null;
   let isRotating = false;
+  let rotation = 0;
 
   const clampRotation = (value, bounds) => Math.max(bounds.minRotation, Math.min(bounds.maxRotation, value));
 
@@ -72,17 +72,18 @@ export function createApp({ svgRoot, items, viewport }) {
     };
   };
 
-  const render = (nextRotation = rotationOffset) => {
-    rotationOffset = nextRotation;
+  const render = (nextRotation = rotation) => {
+    rotation = nextRotation;
     const selected = nav.getCurrent() || nav.items[0];
     const visible = buildVisibleItems();
     const bounds = computeBounds(visible);
     if (choreographer) {
       choreographer.setBounds(bounds.minRotation, bounds.maxRotation);
-      rotationOffset = clampRotation(rotationOffset, bounds);
-      choreographer.visualRotation = rotationOffset;
+      rotation = clampRotation(rotation, bounds);
+      choreographer.setRotation(rotation, { emit: false });
+      rotation = choreographer.getRotation();
     }
-    const nodes = calculateNodePositions(visible, vp, rotationOffset, nodeRadius, nodeSpacing);
+    const nodes = calculateNodePositions(visible, vp, rotation, nodeRadius, nodeSpacing);
     view.render(
       nodes,
       arcParams,
@@ -100,7 +101,8 @@ export function createApp({ svgRoot, items, viewport }) {
   choreographer = new RotationChoreographer({
     onRender: angle => {
       isRotating = true;
-      render(angle, true);
+      rotation = angle;
+      render(rotation, true);
     },
     onSelection: () => {},
     minRotation: bounds.minRotation,
@@ -115,7 +117,7 @@ export function createApp({ svgRoot, items, viewport }) {
     let closestAngle = null;
     nav.items.forEach((item, idx) => {
       const baseAngle = getBaseAngleForOrder(item.order, vp, nodeSpacing);
-      const rotated = baseAngle + rotationOffset;
+      const rotated = baseAngle + rotation;
       const diff = Math.abs(rotated - targetAngle);
       if (diff < closestDiff) {
         closestDiff = diff;
@@ -126,10 +128,14 @@ export function createApp({ svgRoot, items, viewport }) {
     nav.selectIndex(closestIdx);
     if (closestAngle !== null) {
       const delta = targetAngle - closestAngle;
-      rotationOffset += delta;
+      rotation += delta;
+      if (choreographer) {
+        choreographer.setRotation(rotation, { emit: false });
+        rotation = choreographer.getRotation();
+      }
     }
     isRotating = false;
-    render(rotationOffset, false);
+    render(rotation, false);
   };
 
   render(0);

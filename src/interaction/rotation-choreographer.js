@@ -30,6 +30,11 @@ export class RotationChoreographer {
     return this.visualRotation;
   }
 
+  setRotation(value, { emit = true } = {}) {
+    this.visualRotation = this.#clamp(value);
+    if (emit) this.onRender(this.visualRotation);
+  }
+
   rotate(delta) {
     this.visualRotation = this.#clamp(this.visualRotation + delta);
     this.onRender(this.visualRotation);

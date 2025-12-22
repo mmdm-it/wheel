@@ -6,6 +6,12 @@
   --focus-node-stroke: 1px;
 }
 
+[data-theme="catalog"] {
+  --color-bg: #0f1f36;
+  --color-nodes: #e0c36c;
+  --color-text: #f4f4f4;
+}
+
 * { box-sizing: border-box; }
 
 body {
@@ -44,7 +50,7 @@ svg {
 .focus-ring-label {
   fill: var(--color-text);
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(18px, 2.0vmin, 33px);
+  font-size: clamp(14px, 1.6vmin, 26px);
   text-transform: uppercase;
   pointer-events: none;
 }

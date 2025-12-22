@@ -45,18 +45,8 @@
 
     function applyTheme(manifest, volume) {
       const root = document.documentElement;
-      const config = volume === 'catalog'
-        ? manifest?.MMdM?.display_config
-        : manifest?.Gutenberg_Bible?.display_config;
-
-      const scheme = config?.color_scheme || {};
-      const bg = scheme.background || '#d4a574';
-      const nodes = scheme.nodes || '#8b6f47';
-      const text = scheme.text_primary || '#000000';
-
-      root.style.setProperty('--color-bg', bg);
-      root.style.setProperty('--color-nodes', nodes);
-      root.style.setProperty('--color-text', text);
+      const theme = volume === 'catalog' ? 'catalog' : 'bible';
+      root.setAttribute('data-theme', theme);
     }
 
     function buildBibleBooks(manifest) {
