@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.20] - 2025-12-22
+
+### Changed
+- (Add changes here)
+
+
 ## [3.0.19] - 2025-12-22
 
 ### Changed

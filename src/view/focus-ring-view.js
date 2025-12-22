@@ -82,7 +82,7 @@ export class FocusRingView {
       const ly = node.y + Math.sin(node.angle) * offset;
       label.setAttribute('x', lx);
       label.setAttribute('y', ly);
-      label.setAttribute('text-anchor', 'middle');
+      label.setAttribute('text-anchor', 'end');
       label.setAttribute('dominant-baseline', 'middle');
       const rotation = (node.angle * 180) / Math.PI + 180; // 90° more to flip vertical
       label.setAttribute('transform', `rotate(${rotation}, ${lx}, ${ly})`);
