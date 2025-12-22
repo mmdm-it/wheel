@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.32] - 2025-12-22
+
+### Changed
+- Chain quick swipes to traverse large sets
+
+
 ## [3.0.31] - 2025-12-22
 
 ### Changed
