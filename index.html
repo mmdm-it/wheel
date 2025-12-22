@@ -216,6 +216,10 @@
       };
 
       svg.addEventListener('pointerdown', event => {
+        const isNode = event.target && event.target.closest && event.target.closest('.focus-ring-node');
+        if (isNode) {
+          return; // click handler on node will manage rotation
+        }
         isDragging = true;
         lastX = event.clientX;
         lastY = event.clientY;

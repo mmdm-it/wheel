@@ -131,9 +131,22 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
       {
         isRotating,
         magnifierAngle: magnifier.angle,
-        labelMaskEpsilon: nodeSpacing * 0.6
+        labelMaskEpsilon: nodeSpacing * 0.6,
+        onNodeClick: node => rotateNodeIntoMagnifier(node)
       }
     );
+  };
+
+  const rotateNodeIntoMagnifier = node => {
+    if (!node?.item) return;
+    const targetAngle = magnifier.angle;
+    const baseAngle = getBaseAngleForOrder(node.item.order, vp, nodeSpacing);
+    const desiredRotation = targetAngle - baseAngle;
+    const bounds = computeBounds(nav.items);
+    const clampedRotation = clampRotation(desiredRotation, bounds);
+    nav.selectIndex(node.index);
+    isRotating = true;
+    animateSnapTo(clampedRotation, 120);
   };
 
   const cancelSnap = () => {

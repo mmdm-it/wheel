@@ -40,6 +40,7 @@ export class FocusRingView {
     const isRotating = Boolean(options.isRotating);
     const magnifierAngle = options.magnifierAngle;
     const labelMaskEpsilon = options.labelMaskEpsilon ?? 0.0001;
+    const onNodeClick = options.onNodeClick;
     // Ensure magnifier group is on top for proper z-ordering
     if (this.magnifierGroup?.parentNode === this.svgRoot) {
       this.svgRoot.appendChild(this.magnifierGroup);
@@ -62,6 +63,9 @@ export class FocusRingView {
         el.setAttribute('id', id);
         el.setAttribute('class', 'focus-ring-node');
         this.nodesGroup.appendChild(el);
+      }
+      if (onNodeClick) {
+        el.onclick = () => onNodeClick(node);
       }
       el.setAttribute('cx', node.x);
       el.setAttribute('cy', node.y);

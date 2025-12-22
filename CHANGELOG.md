@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.0.41] - 2025-12-22
+
+### Added
+- Single-click a focus node to rotate it into the magnifier without affecting swipe/scrub behavior
+
 ## [3.0.40] - 2025-12-22
 
 ### Changed
