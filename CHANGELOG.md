@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.26] - 2025-12-22
+
+### Changed
+- Add geometry tests and enforce node radius input
+
+
 ## [3.0.25] - 2025-12-22
 
 ### Changed

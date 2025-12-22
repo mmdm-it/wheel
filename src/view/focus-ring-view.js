@@ -65,7 +65,11 @@ export class FocusRingView {
       }
       el.setAttribute('cx', node.x);
       el.setAttribute('cy', node.y);
-      el.setAttribute('r', node.radius || 10);
+      const nodeRadius = node.radius;
+      if (!Number.isFinite(nodeRadius)) {
+        throw new Error('FocusRingView.render: node radius is required');
+      }
+      el.setAttribute('r', nodeRadius);
       el.dataset.index = node.index;
 
       // Label
@@ -77,7 +81,7 @@ export class FocusRingView {
         label.setAttribute('class', 'focus-ring-label');
         this.labelsGroup.appendChild(label);
       }
-      const radius = (node.radius || 10);
+      const radius = nodeRadius;
       const offset = radius * -1.3; // pull anchor notably toward the hub without hardcoded px gap
       const lx = node.x + Math.cos(node.angle) * offset;
       const ly = node.y + Math.sin(node.angle) * offset;

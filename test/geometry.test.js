@@ -21,9 +21,9 @@ test('viewport window caps visible nodes', () => {
   const windowInfo = getViewportWindow(viewport);
   assert.ok(windowInfo.maxNodes <= 21);
   assert.ok(windowInfo.startAngle < windowInfo.endAngle);
-  // start angle should be from lower-right corner
-  const cornerAngle = Math.atan2(viewport.height - 0, viewport.width - 0);
-  assert.ok(Math.abs(windowInfo.startAngle - cornerAngle) < 0.2);
+  // start angle should be measured from lower-right corner to the hub
+  const cornerAngle = Math.atan2(viewport.height - 0, viewport.width - getArcParameters(viewport).hubX);
+  assert.ok(Math.abs(windowInfo.startAngle - cornerAngle) < 0.01);
 });
 
 test('magnifier angle points to center', () => {
