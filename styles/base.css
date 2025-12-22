@@ -60,7 +60,7 @@ svg {
 
 .focus-ring-magnifier-circle {
   fill: var(--color-nodes);
-  stroke: #000;
+  stroke: var(--color-magnifier-stroke, #000);
   stroke-width: 1px;
 }
 

@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.0.42] - 2025-12-22
+
+### Changed
+- Calendar theme sets magnifier stroke to match label color
+
 ## [3.0.41] - 2025-12-22
 
 ### Added
