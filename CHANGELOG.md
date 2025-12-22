@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.25] - 2025-12-22
+
+### Changed
+- Set focus label offset to -1.3 radius
+
+
 ## [3.0.24] - 2025-12-22
 
 ### Changed
