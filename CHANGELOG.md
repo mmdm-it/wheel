@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.0.40] - 2025-12-22
+
+### Changed
+- Restore Montserrat fonts for Bible volume theme
+
 ## [3.0.39] - 2025-12-22
 
 ### Changed
