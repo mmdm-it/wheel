@@ -107,6 +107,19 @@ export function createApp({ svgRoot, items, viewport }) {
 
   const animateSnapTo = (targetRotation, duration = 100) => {
     cancelSnap();
+    const delta = targetRotation - rotation;
+    if (Math.abs(delta) < 1e-6 || duration <= 0) {
+      if (choreographer) {
+        choreographer.setRotation(targetRotation, { emit: false });
+        rotation = choreographer.getRotation();
+      } else {
+        rotation = targetRotation;
+      }
+      isRotating = false;
+      render(rotation);
+      return;
+    }
+    isRotating = true;
     const startRotation = rotation;
     const startTime = performance.now();
     const step = now => {
@@ -125,6 +138,7 @@ export function createApp({ svgRoot, items, viewport }) {
       } else {
         snapId = null;
         isRotating = false;
+        render(rotation);
       }
     };
     snapId = requestAnimationFrame(step);
@@ -163,7 +177,7 @@ export function createApp({ svgRoot, items, viewport }) {
     if (closestAngle !== null) {
       const delta = targetAngle - closestAngle;
       const targetRotation = rotation + delta;
-      isRotating = false;
+      isRotating = true;
       animateSnapTo(targetRotation, 100);
       return;
     }

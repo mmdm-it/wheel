@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.29] - 2025-12-22
+
+### Changed
+- Add calendar dataset and theme
+
+
 ## [3.0.28] - 2025-12-22
 
 ### Changed

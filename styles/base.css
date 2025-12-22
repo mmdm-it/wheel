@@ -12,6 +12,12 @@
   --color-text: #f4f4f4;
 }
 
+[data-theme="calendar"] {
+  --color-bg: #0c2c44;
+  --color-nodes: #443300;
+  --color-text: #f5f7fb;
+}
+
 * { box-sizing: border-box; }
 
 body {

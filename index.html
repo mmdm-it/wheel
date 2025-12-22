@@ -22,14 +22,22 @@
       const params = new URLSearchParams(window.location.search);
       const path = (window.location.pathname || '').toLowerCase();
       const paramVolume = params.get('volume');
-      const pathVolume = path.includes('/catalog') ? 'catalog' : path.includes('/bible') ? 'bible' : null;
-      const volume = paramVolume === 'catalog' || pathVolume === 'catalog'
+      const pathVolume = path.includes('/catalog')
         ? 'catalog'
-        : 'bible';
+        : path.includes('/calendar')
+          ? 'calendar'
+          : path.includes('/bible')
+            ? 'bible'
+            : null;
+      const volume = ['catalog', 'calendar', 'bible'].includes(paramVolume)
+        ? paramVolume
+        : pathVolume || 'bible';
 
       const manifestPath = volume === 'catalog'
         ? './data/mmdm/mmdm_catalog.json'
-        : './data/gutenberg/manifest.json';
+        : volume === 'calendar'
+          ? './data/calendar/manifest.json'
+          : './data/gutenberg/manifest.json';
 
       console.info('[wheel-v3] volume selection', {
         pathname: path,
@@ -45,7 +53,7 @@
 
     function applyTheme(manifest, volume) {
       const root = document.documentElement;
-      const theme = volume === 'catalog' ? 'catalog' : 'bible';
+      const theme = volume === 'catalog' ? 'catalog' : volume === 'calendar' ? 'calendar' : 'bible';
       root.setAttribute('data-theme', theme);
     }
 
@@ -89,9 +97,28 @@
       return items;
     }
 
+    function buildCalendarYears(manifest) {
+      const years = manifest?.Calendar?.years;
+      if (!years) return [];
+      const items = Object.values(years).map(year => {
+        const yearNumber = Number.isFinite(year?.year_number) ? year.year_number : parseInt(year?.id, 10);
+        const name = year?.name || (Number.isFinite(yearNumber) ? (yearNumber < 0 ? `${Math.abs(yearNumber)} BC` : `${yearNumber} AD`) : String(year?.id || ''));
+        const sort = Number.isFinite(year?.sort_number) ? year.sort_number : yearNumber || 0;
+        return {
+          id: year?.id || String(yearNumber),
+          name,
+          sort
+        };
+      });
+      return items.sort((a, b) => (a.sort || 0) - (b.sort || 0));
+    }
+
     function buildChain(manifest, volume) {
       if (volume === 'catalog') {
         return buildCatalogManufacturers(manifest);
+      }
+      if (volume === 'calendar') {
+        return buildCalendarYears(manifest);
       }
       return buildBibleBooks(manifest);
     }
