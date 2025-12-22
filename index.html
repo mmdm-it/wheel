@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./styles/base.css" />
 </head>
 <body>
+  <div id="version-badge" class="version-badge" aria-label="Application version"></div>
   <svg id="app" aria-label="Wheel v3"></svg>
   <script type="module">
     import { createApp, getViewportInfo } from './src/index.js';
@@ -19,10 +20,24 @@
 
     async function loadConfig() {
       const params = new URLSearchParams(window.location.search);
-      const volume = params.get('volume') === 'catalog' ? 'catalog' : 'bible';
+      const path = (window.location.pathname || '').toLowerCase();
+      const paramVolume = params.get('volume');
+      const pathVolume = path.includes('/catalog') ? 'catalog' : path.includes('/bible') ? 'bible' : null;
+      const volume = paramVolume === 'catalog' || pathVolume === 'catalog'
+        ? 'catalog'
+        : 'bible';
+
       const manifestPath = volume === 'catalog'
         ? './data/mmdm/mmdm_catalog.json'
         : './data/gutenberg/manifest.json';
+
+      console.info('[wheel-v3] volume selection', {
+        pathname: path,
+        paramVolume,
+        pathVolume,
+        resolvedVolume: volume,
+        manifestPath
+      });
 
       const manifest = await fetch(manifestPath).then(r => r.json());
       return { volume, manifest };
@@ -124,6 +139,20 @@
       });
     }
 
+    async function showVersion() {
+      const badge = document.getElementById('version-badge');
+      if (!badge) return;
+      try {
+        const pkg = await fetch('./package.json').then(r => r.json());
+        const name = pkg?.name || 'wheel';
+        const version = pkg?.version ? `v${pkg.version}` : 'v?';
+        badge.textContent = `${name} ${version}`;
+      } catch (err) {
+        console.warn('Version load failed', err);
+        badge.textContent = 'version unavailable';
+      }
+    }
+
     loadConfig().then(({ volume, manifest }) => {
       applyTheme(manifest, volume);
       const items = buildChain(manifest, volume);
@@ -133,6 +162,7 @@
       }
       const app = createApp({ svgRoot: svg, items, viewport });
       wireInteractions(app);
+      showVersion();
     }).catch(err => {
       console.error('Failed to initialize app', err);
     });

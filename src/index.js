@@ -1,4 +1,4 @@
-import { getViewportInfo, calculateNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition } from './geometry/focus-ring-geometry.js';
+import { getViewportInfo, calculateNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing } from './geometry/focus-ring-geometry.js';
 import { NavigationState } from './navigation/navigation-state.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
 import { FocusRingView } from './view/focus-ring-view.js';
@@ -10,6 +10,9 @@ export {
   RotationChoreographer,
   FocusRingView
 };
+
+const NODE_RADIUS_RATIO = 0.035; // 3.5% of shorter side
+const MAGNIFIER_RADIUS_RATIO = 0.060; // larger than nodes
 
 export function createApp({ svgRoot, items, viewport }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
@@ -23,8 +26,11 @@ export function createApp({ svgRoot, items, viewport }) {
     .map((item, idx) => ({ ...item, order: idx }));
 
   const vp = viewport || getViewportInfo(window.innerWidth, window.innerHeight);
+  const nodeRadius = vp.SSd * NODE_RADIUS_RATIO;
+  const magnifierRadius = vp.SSd * MAGNIFIER_RADIUS_RATIO;
+  const nodeSpacing = getNodeSpacing(vp);
   const arcParams = getArcParameters(vp);
-  const windowInfo = getViewportWindow(vp);
+  const windowInfo = getViewportWindow(vp, nodeSpacing);
   const magnifier = getMagnifierPosition(vp);
   const nav = new NavigationState(normalized);
   const view = new FocusRingView(svgRoot);
@@ -43,8 +49,8 @@ export function createApp({ svgRoot, items, viewport }) {
 
   const computeBounds = visibleItems => {
     if (!visibleItems.length) return { minRotation: 0, maxRotation: 0 };
-    const firstAngle = getBaseAngleForOrder(visibleItems[0].order, vp);
-    const lastAngle = getBaseAngleForOrder(visibleItems[visibleItems.length - 1].order, vp);
+    const firstAngle = getBaseAngleForOrder(visibleItems[0].order, vp, nodeSpacing);
+    const lastAngle = getBaseAngleForOrder(visibleItems[visibleItems.length - 1].order, vp, nodeSpacing);
     return {
       minRotation: windowInfo.startAngle - firstAngle,
       maxRotation: windowInfo.endAngle - lastAngle
@@ -61,8 +67,8 @@ export function createApp({ svgRoot, items, viewport }) {
       rotationOffset = clampRotation(rotationOffset, bounds);
       choreographer.visualRotation = rotationOffset;
     }
-    const nodes = calculateNodePositions(visible, vp, rotationOffset);
-    view.render(nodes, arcParams, windowInfo, { ...magnifier, label: selected?.name || '' });
+    const nodes = calculateNodePositions(visible, vp, rotationOffset, nodeRadius, nodeSpacing);
+    view.render(nodes, arcParams, windowInfo, { ...magnifier, radius: magnifierRadius, label: selected?.name || '' });
   };
 
   const bounds = computeBounds(buildVisibleItems(nav.getCurrent()));
@@ -79,7 +85,7 @@ export function createApp({ svgRoot, items, viewport }) {
     let closestIdx = nav.getCurrentIndex();
     let closestDiff = Infinity;
     nav.items.forEach((item, idx) => {
-      const baseAngle = getBaseAngleForOrder(item.order, vp);
+      const baseAngle = getBaseAngleForOrder(item.order, vp, nodeSpacing);
       const rotated = baseAngle + rotationOffset;
       const diff = Math.abs(rotated - targetAngle);
       if (diff < closestDiff) {
