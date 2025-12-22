@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.17] - 2025-12-21
+
+### Changed
+- Increase label font sizes ~50% via CSS
+
+
 ## [3.0.16] - 2025-12-21
 
 ### Changed

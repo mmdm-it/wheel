@@ -44,7 +44,7 @@ svg {
 .focus-ring-label {
   fill: var(--color-text);
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(12px, 1.35vmin, 22px);
+  font-size: clamp(18px, 2.0vmin, 33px);
   text-transform: uppercase;
   pointer-events: none;
 }
@@ -63,7 +63,7 @@ svg {
 .focus-ring-magnifier-label {
   fill: var(--color-text);
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(14px, 1.6vmin, 26px);
+  font-size: clamp(21px, 2.4vmin, 39px);
   text-transform: uppercase;
   pointer-events: none;
 }
