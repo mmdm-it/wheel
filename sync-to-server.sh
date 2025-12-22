@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Sync wheel-v3 to both catalog and bible deployments
-# Usage: ./sync-to-server.sh [catalog|bible|both]
+# Sync wheel-v3 to catalog, bible, and calendar deployments
+# Usage: ./sync-to-server.sh [catalog|bible|calendar|both|all]
 
 SERVER="namecheap"
 REMOTE_BASE="~/public_html/mmdm/wheel-v3"
@@ -50,7 +50,7 @@ sync_deployment() {
 }
 
 # Parse command line argument
-DEPLOYMENT=${1:-both}
+DEPLOYMENT=${1:-all}
 
 echo ""
 echo "════════════════════════════════════════════════════"
@@ -65,6 +65,20 @@ case $DEPLOYMENT in
     bible)
         sync_deployment "bible"
         ;;
+    calendar)
+        sync_deployment "calendar"
+        ;;
+    all)
+        sync_deployment "catalog"
+        echo ""
+        echo "────────────────────────────────────────────────────"
+        echo ""
+        sync_deployment "bible"
+        echo ""
+        echo "────────────────────────────────────────────────────"
+        echo ""
+        sync_deployment "calendar"
+        ;;
     both)
         sync_deployment "catalog"
         echo ""
@@ -75,12 +89,15 @@ case $DEPLOYMENT in
     *)
         echo -e "${RED}❌ Invalid deployment: $DEPLOYMENT${NC}"
         echo ""
-        echo "Usage: ./sync-to-server.sh [catalog|bible|both]"
+        echo "Usage: ./sync-to-server.sh [catalog|bible|calendar|both|all]"
         echo ""
         echo "Examples:"
-        echo "  ./sync-to-server.sh            # Sync both (default)"
+        echo "  ./sync-to-server.sh            # Sync all (default)"
         echo "  ./sync-to-server.sh catalog    # Sync MMdM catalog only"
         echo "  ./sync-to-server.sh bible      # Sync Bible only"
+        echo "  ./sync-to-server.sh calendar   # Sync Calendar dev dataset only"
+        echo "  ./sync-to-server.sh both       # Sync MMdM catalog and Bible"
+        echo "  ./sync-to-server.sh all        # Sync catalog, Bible, and calendar"
         exit 1
         ;;
 
@@ -94,4 +111,5 @@ echo ""
 echo "URLs:"
 echo "  📚 Bible:   https://howellgibbens.com/mmdm/wheel-v3/bible/"
 echo "  ⚙️  Catalog: https://howellgibbens.com/mmdm/wheel-v3/catalog/"
+echo "  📅 Calendar: https://howellgibbens.com/mmdm/wheel-v3/calendar/"
 echo ""
