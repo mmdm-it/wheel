@@ -123,7 +123,7 @@
       return buildBibleBooks(manifest);
     }
 
-    function wireInteractions(app) {
+    function wireInteractions(app, itemCount) {
       let isDragging = false;
       let lastX = 0;
       let lastY = 0;
@@ -131,7 +131,11 @@
       const sensitivity = Math.PI / 4 / 100; // 100px → 45°
       const velocityThreshold = 0.4; // px/ms below this → no gain
       const gainSlope = 1.1; // linear slope past threshold
-      const maxGain = 6.5; // cap to keep scrub predictable
+      const baseQuickNodes = 60; // empirical baseline nodes per quick swipe at gain 1
+      const minSpinNodes = 350; // minimum nodes to spin on a quick swipe
+      const fractionOfSet = 0.2; // 20% of total items on very large sets
+      const targetSpinNodes = Math.max(minSpinNodes, Math.floor(itemCount * fractionOfSet));
+      const maxGain = Math.max(1, targetSpinNodes / baseQuickNodes);
 
       const onPointerMove = event => {
         if (!isDragging) return;
@@ -192,7 +196,7 @@
         return;
       }
       const app = createApp({ svgRoot: svg, items, viewport });
-      wireInteractions(app);
+      wireInteractions(app, items.length);
       showVersion();
     }).catch(err => {
       console.error('Failed to initialize app', err);

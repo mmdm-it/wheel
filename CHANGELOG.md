@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.31] - 2025-12-22
+
+### Changed
+- Scale quick-swipe spin to dataset size
+
+
 ## [3.0.30] - 2025-12-22
 
 ### Changed
