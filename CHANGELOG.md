@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.0.38] - 2025-12-22
+
+### Changed
+- Add millennium gaps to calendar chain (2-node gap between millennia)
+
 ## [3.0.37] - 2025-12-22
 
 ### Changed
