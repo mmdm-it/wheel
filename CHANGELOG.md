@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.33] - 2025-12-22
+
+### Changed
+- Boost chained flicks to half/full dataset
+
+
 ## [3.0.32] - 2025-12-22
 
 ### Changed

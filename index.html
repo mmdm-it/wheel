@@ -138,6 +138,8 @@
       const minSpinNodes = 350; // minimum nodes to spin on a quick swipe
       const fractionOfSet = 0.2; // 20% of total items on very large sets
       const targetSpinNodes = Math.max(minSpinNodes, Math.floor(itemCount * fractionOfSet));
+      const halfSetNodes = Math.max(targetSpinNodes, Math.ceil(itemCount / 2));
+      const fullSetNodes = Math.max(targetSpinNodes, itemCount);
       const baseMaxGain = Math.max(1, targetSpinNodes / baseQuickNodes);
       const flickResetMs = 450; // window to chain flicks
 
@@ -152,7 +154,8 @@
 
         const distance = Math.abs(dx) + Math.abs(dy);
         const velocity = dt > 0 ? distance / dt : 0;
-        const maxGain = Math.max(baseMaxGain, (itemCount / baseQuickNodes) / Math.max(1, flickCount || 1));
+        const targetNodesThisFlick = flickCount === 0 ? halfSetNodes : fullSetNodes;
+        const maxGain = Math.max(baseMaxGain, targetNodesThisFlick / baseQuickNodes);
         const gain = velocity <= velocityThreshold
           ? 1
           : Math.min(maxGain, 1 + (velocity - velocityThreshold) * gainSlope);
