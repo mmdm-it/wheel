@@ -2,6 +2,48 @@
 
 ## [Unreleased]
 
+## [3.0.15] - 2025-12-21
+
+### Changed
+- Magnifier draws above nodes
+
+
+## [3.0.14] - 2025-12-21
+
+### Changed
+- Keep magnifier stroke width; hide node label under magnifier when idle
+
+
+## [3.0.13] - 2025-12-21
+
+### Changed
+- Force magnifier fill none during rotation
+
+
+## [3.0.12] - 2025-12-21
+
+### Changed
+- Magnifier empty during rotation (no fill)
+
+
+## [3.0.11] - 2025-12-21
+
+### Changed
+- Magnifier label hides during rotation; nodes flow through
+
+
+## [3.0.10] - 2025-12-21
+
+### Changed
+- Magnifier label matches node font; nodes smaller
+
+
+## [3.0.9] - 2025-12-21
+
+### Changed
+- Scale label font sizes to radius
+
+
 ## [3.0.8] - 2025-12-21
 
 ### Changed

@@ -14,6 +14,15 @@ export {
 const NODE_RADIUS_RATIO = 0.035; // 3.5% of shorter side
 const MAGNIFIER_RADIUS_RATIO = 0.060; // larger than nodes
 
+const logOnce = (() => {
+  let logged = false;
+  return (...args) => {
+    if (logged) return;
+    logged = true;
+    console.log(...args);
+  };
+})();
+
 export function createApp({ svgRoot, items, viewport }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const normalized = [...items]
@@ -32,20 +41,26 @@ export function createApp({ svgRoot, items, viewport }) {
   const arcParams = getArcParameters(vp);
   const windowInfo = getViewportWindow(vp, nodeSpacing);
   const magnifier = getMagnifierPosition(vp);
+
+  logOnce('[FocusRing] geometry inputs', {
+    viewport: vp,
+    nodeRadius,
+    magnifierRadius,
+    nodeSpacing,
+    arcParams,
+    windowInfo,
+    magnifier
+  });
   const nav = new NavigationState(normalized);
   const view = new FocusRingView(svgRoot);
   view.init();
   let rotationOffset = 0;
   let choreographer = null;
+  let isRotating = false;
 
   const clampRotation = (value, bounds) => Math.max(bounds.minRotation, Math.min(bounds.maxRotation, value));
 
-  const buildVisibleItems = selected => {
-    const selectedId = selected?.id;
-    return nav.items
-      .filter(item => item.id !== selectedId)
-      .map((item, idx) => ({ ...item, order: idx }));
-  };
+  const buildVisibleItems = () => nav.items.map((item, idx) => ({ ...item, order: idx }));
 
   const computeBounds = visibleItems => {
     if (!visibleItems.length) return { minRotation: 0, maxRotation: 0 };
@@ -60,7 +75,7 @@ export function createApp({ svgRoot, items, viewport }) {
   const render = (nextRotation = rotationOffset) => {
     rotationOffset = nextRotation;
     const selected = nav.getCurrent() || nav.items[0];
-    const visible = buildVisibleItems(selected);
+    const visible = buildVisibleItems();
     const bounds = computeBounds(visible);
     if (choreographer) {
       choreographer.setBounds(bounds.minRotation, bounds.maxRotation);
@@ -68,12 +83,25 @@ export function createApp({ svgRoot, items, viewport }) {
       choreographer.visualRotation = rotationOffset;
     }
     const nodes = calculateNodePositions(visible, vp, rotationOffset, nodeRadius, nodeSpacing);
-    view.render(nodes, arcParams, windowInfo, { ...magnifier, radius: magnifierRadius, label: selected?.name || '' });
+    view.render(
+      nodes,
+      arcParams,
+      windowInfo,
+      { ...magnifier, radius: magnifierRadius, label: selected?.name || '' },
+      {
+        isRotating,
+        magnifierAngle: magnifier.angle,
+        labelMaskEpsilon: nodeSpacing * 0.6
+      }
+    );
   };
 
   const bounds = computeBounds(buildVisibleItems(nav.getCurrent()));
   choreographer = new RotationChoreographer({
-    onRender: render,
+    onRender: angle => {
+      isRotating = true;
+      render(angle, true);
+    },
     onSelection: () => {},
     minRotation: bounds.minRotation,
     maxRotation: bounds.maxRotation
@@ -84,6 +112,7 @@ export function createApp({ svgRoot, items, viewport }) {
     const targetAngle = magnifier.angle;
     let closestIdx = nav.getCurrentIndex();
     let closestDiff = Infinity;
+    let closestAngle = null;
     nav.items.forEach((item, idx) => {
       const baseAngle = getBaseAngleForOrder(item.order, vp, nodeSpacing);
       const rotated = baseAngle + rotationOffset;
@@ -91,13 +120,27 @@ export function createApp({ svgRoot, items, viewport }) {
       if (diff < closestDiff) {
         closestDiff = diff;
         closestIdx = idx;
+        closestAngle = rotated;
       }
     });
     nav.selectIndex(closestIdx);
-    render(rotationOffset);
+    if (closestAngle !== null) {
+      const delta = targetAngle - closestAngle;
+      rotationOffset += delta;
+    }
+    isRotating = false;
+    render(rotationOffset, false);
   };
 
   render(0);
 
-  return { nav, view, choreographer, viewport: vp, selectNearest };
+  return {
+    nav,
+    view,
+    choreographer,
+    viewport: vp,
+    selectNearest,
+    beginRotation: () => { isRotating = true; },
+    endRotation: () => selectNearest()
+  };
 }
