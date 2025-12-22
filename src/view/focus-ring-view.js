@@ -78,7 +78,7 @@ export class FocusRingView {
         this.labelsGroup.appendChild(label);
       }
       const radius = (node.radius || 10);
-      const offset = radius * 0.55; // pull anchor closer toward the hub without hardcoded px gap
+      const offset = radius * 0.35; // pull anchor notably toward the hub without hardcoded px gap
       const lx = node.x + Math.cos(node.angle) * offset;
       const ly = node.y + Math.sin(node.angle) * offset;
       label.setAttribute('x', lx);

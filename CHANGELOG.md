@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.24] - 2025-12-22
+
+### Changed
+- Pull focus labels further toward hub
+
+
 ## [3.0.23] - 2025-12-22
 
 ### Changed
