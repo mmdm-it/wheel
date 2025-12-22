@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.30] - 2025-12-22
+
+### Changed
+- Boost quick-swipe spin gain
+
+
 ## [3.0.29] - 2025-12-22
 
 ### Changed
