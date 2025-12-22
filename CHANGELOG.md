@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.28] - 2025-12-22
+
+### Changed
+- Keep snap non-rotating so magnifier fills
+
+
 ## [3.0.27] - 2025-12-22
 
 ### Changed

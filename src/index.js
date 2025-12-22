@@ -163,6 +163,7 @@ export function createApp({ svgRoot, items, viewport }) {
     if (closestAngle !== null) {
       const delta = targetAngle - closestAngle;
       const targetRotation = rotation + delta;
+      isRotating = false;
       animateSnapTo(targetRotation, 100);
       return;
     }
