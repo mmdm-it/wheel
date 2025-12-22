@@ -24,8 +24,8 @@ export function getNodeSpacing(viewport) {
 }
 
 export function getMagnifierAngle(viewport) {
-  // Fixed magnifier angle to reduce cross-device variance (140°)
-  return (140 * Math.PI) / 180;
+  // Fixed magnifier angle to reduce cross-device variance (142°)
+  return (142 * Math.PI) / 180;
 }
 
 export function getMagnifierPosition(viewport) {
