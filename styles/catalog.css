@@ -1,0 +1,9 @@
+:root[data-theme="catalog"] {
+  --color-bg: #0f1f36;
+  --color-nodes: #e0c36c;
+  --color-text: #f4f4f4;
+  --color-band: #1b2f4a;
+  --focus-node-font: 'Montserrat', sans-serif;
+  --magnifier-font: 'Montserrat', sans-serif;
+  --focus-label-transform: none;
+}

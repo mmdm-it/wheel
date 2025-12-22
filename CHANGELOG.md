@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.39] - 2025-12-22
+
+### Changed
+- Split base styles from volume-specific themes and load per volume
+- Default cousin gaps disabled for catalog (catalog items load as siblings)
+
 ## [3.0.38] - 2025-12-22
 
 ### Changed

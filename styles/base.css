@@ -1,21 +1,13 @@
 :root {
-  --color-bg: #d4a574;
-  --color-nodes: #8b6f47;
-  --color-text: #000000;
+  --color-bg: #f5f5f5;
+  --color-nodes: #555555;
+  --color-text: #111111;
+  --color-band: #7a7979;
   --focus-node-radius: 12px;
   --focus-node-stroke: 1px;
-}
-
-[data-theme="catalog"] {
-  --color-bg: #0f1f36;
-  --color-nodes: #e0c36c;
-  --color-text: #f4f4f4;
-}
-
-[data-theme="calendar"] {
-  --color-bg: #0c2c44;
-  --color-nodes: #443300;
-  --color-text: #f5f7fb;
+  --focus-node-font: 'Montserrat', sans-serif;
+  --magnifier-font: 'Montserrat', sans-serif;
+  --focus-label-transform: uppercase;
 }
 
 * { box-sizing: border-box; }
@@ -23,7 +15,7 @@
 body {
   margin: 0;
   background: var(--color-bg);
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   overflow: hidden;
   touch-action: none;
 }
@@ -40,7 +32,7 @@ svg {
   padding: 6px 10px;
   background: rgba(0, 0, 0, 0.08);
   color: var(--color-text);
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.4px;
@@ -55,14 +47,14 @@ svg {
 
 .focus-ring-label {
   fill: var(--color-text);
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: clamp(14px, 1.6vmin, 26px);
-  text-transform: uppercase;
+  text-transform: var(--focus-label-transform, uppercase);
   pointer-events: none;
 }
 
 .focus-ring-band {
-  fill: #7a7979;
+  fill: var(--color-band);
   opacity: 1;
 }
 
@@ -74,9 +66,9 @@ svg {
 
 .focus-ring-magnifier-label {
   fill: var(--color-text);
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
   font-size: clamp(21px, 2.4vmin, 39px);
-  text-transform: uppercase;
+  text-transform: var(--focus-label-transform, uppercase);
   pointer-events: none;
 }
 

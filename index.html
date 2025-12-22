@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles/base.css" />
+    <link id="volume-style" rel="stylesheet" href="" />
 </head>
 <body>
   <div id="version-badge" class="version-badge" aria-label="Application version"></div>
@@ -50,7 +51,9 @@
       const manifest = await fetch(manifestPath).then(r => r.json());
       const level = params.get('level');
       const cousinParam = params.get('cousins');
-      const cousinMode = cousinParam === null ? true : cousinParam === '1';
+        const cousinMode = cousinParam === null
+          ? volume === 'bible'
+          : cousinParam === '1';
       return {
         volume,
         manifest,
@@ -69,6 +72,10 @@
       const root = document.documentElement;
       const theme = volume === 'catalog' ? 'catalog' : volume === 'calendar' ? 'calendar' : 'bible';
       root.setAttribute('data-theme', theme);
+        const link = document.getElementById('volume-style');
+        if (link) {
+          link.setAttribute('href', `./styles/${theme}.css`);
+        }
     }
 
     function buildBibleBooks(manifest) {
