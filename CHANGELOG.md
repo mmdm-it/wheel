@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## [3.0.4] - 2025-12-21
+
+### Changed
+- Restore v1 index.html
+
+
+## [3.0.3] - 2025-12-21
+
+### Changed
+- Display version badge
+
+
 ## [3.0.2] - 2025-12-21
 
 ### Changed

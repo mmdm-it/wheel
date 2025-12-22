@@ -21,6 +21,21 @@ svg {
   height: 100vh;
 }
 
+.version-badge {
+  position: fixed;
+  top: 10px;
+  right: 14px;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.08);
+  color: var(--color-text);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
 .focus-ring-node {
   fill: var(--color-nodes);
   stroke: none;

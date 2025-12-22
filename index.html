@@ -1,141 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wheel v3 Demo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles/base.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>MMdM Catalog</title>
+    
+    <!-- PWA manifest and iOS support -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="MMdM">
+    <link rel="apple-touch-icon" href="assets/catalog_logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Optional Eruda for mobile debugging (opt-in via ?debug=1 or localStorage.debugConsole=true) -->
+    <script>
+        function shouldEnableEruda() {
+            try {
+                const params = new URLSearchParams(window.location.search);
+                if (params.get('debug') === '1') return true;
+                return localStorage.getItem('debugConsole') === 'true';
+            } catch (e) {
+                return false;
+            }
+        }
+
+        if (shouldEnableEruda()) {
+            const erudaScript = document.createElement('script');
+            erudaScript.src = 'https://cdn.jsdelivr.net/npm/eruda';
+            erudaScript.onload = () => window.eruda && window.eruda.init();
+            document.head.appendChild(erudaScript);
+        }
+    </script>
+    <!-- CSS will be loaded dynamically -->
 </head>
 <body>
-  <svg id="app" aria-label="Wheel v3"></svg>
-  <script type="module">
-    import { createApp, getViewportInfo } from './src/index.js';
+    <svg width="1000" height="1000" id="catalogSvg">
+        <g id="mainGroup" transform="translate(500, 375)">
+            <!-- Central Group -->
+            <g id="centralGroup">
+            </g>
 
-    const svg = document.getElementById('app');
-    const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
+            <!-- Top Level Group (initially visible) -->
+            <g id="topLevel"></g>
 
-    async function loadConfig() {
-      const params = new URLSearchParams(window.location.search);
-      const volume = params.get('volume') === 'catalog' ? 'catalog' : 'bible';
-      const manifestPath = volume === 'catalog'
-        ? './data/mmdm/mmdm_catalog.json'
-        : './data/gutenberg/manifest.json';
+            <!-- Path Lines Group -->
+            <g id="pathLinesGroup"></g>
 
-      const manifest = await fetch(manifestPath).then(r => r.json());
-      return { volume, manifest };
+            <!-- Child Ring (hidden initially) -->
+            <g id="childRing" class="hidden"></g>
+
+            <!-- Detail Items Ring (hidden initially) -->
+            <g id="detailItems" class="hidden"></g>
+            
+            <!-- Parent Button Group (in SVG, Nuc-positioned) -->
+            <g id="parentButtonGroup" class="hidden">
+                <circle id="parentNodeCircle" cx="0" cy="0" r="10" fill="#3a3a3a" stroke="black" stroke-width="1" />
+                <text id="parentText" class="parent-text" x="15" y="0" text-anchor="start" dominant-baseline="middle" fill="black" font-size="16" font-weight="600">Parent</text>
+            </g>
+
+            <!-- Translation Toggle Button (bottom center, text only) -->
+            <g id="translationButtonGroup" class="hidden">
+                <text id="translationText" class="translation-text" x="0" y="0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="14" font-weight="500">LATIN</text>
+            </g>
+
+            <!-- Focus Ring (hidden initially) - LAST for z-ordering so it's clickable -->
+            <g id="focusRing" class="hidden">
+                <circle id="parentNodeCircle" cx="0" cy="0" r="10" fill="#3a3a3a" stroke="black" stroke-width="1" />
+                <text id="parentText" class="parent-text" x="15" y="0" text-anchor="start" dominant-baseline="middle" fill="black" font-size="16" font-weight="600">Parent</text>
+            </g>
+        </g>
+    </svg>
+    <script>
+        // Log parent node circle dimensions for debugging (opt-in)
+        if (typeof shouldEnableEruda === 'function' && shouldEnableEruda()) {
+            setTimeout(() => {
+                const circle = document.getElementById('parentNodeCircle');
+                const button = document.getElementById('parentButton');
+                const text = document.getElementById('parentText');
+                
+                if (circle && button && text) {
+                    const circleRect = circle.getBoundingClientRect();
+                    const buttonRect = button.getBoundingClientRect();
+                    const textRect = text.getBoundingClientRect();
+                    
+                    console.log('🟡 Parent Button Components:');
+                    console.log('   Circle:', {
+                        width: circleRect.width,
+                        height: circleRect.height,
+                        left: circleRect.left,
+                        bottom: window.innerHeight - circleRect.bottom,
+                        centerX: circleRect.left + circleRect.width / 2
+                    });
+                    console.log('   Text:', {
+                        content: text.textContent,
+                        width: textRect.width,
+                        height: textRect.height,
+                        left: textRect.left,
+                        bottom: window.innerHeight - textRect.bottom,
+                        centerX: textRect.left + textRect.width / 2
+                    });
+                    console.log('   Button Container:', {
+                        left: buttonRect.left,
+                        bottom: window.innerHeight - buttonRect.bottom,
+                        width: buttonRect.width,
+                        height: buttonRect.height
+                    });
+                }
+            }, 100);
+        }
+    </script>
+    <div id="copyright">© 2025 Meccanismi Marittimi delle Marche. Tutti i diritti riservati.</div>
+
+    <script>
+    // IMPORTANT: Mobile version uses native ES6 modules (no bundling needed)
+    // The bundled version has been retired and backed up as catalog_mobile_bak.js
+    // All development should be done in the individual mobile/*.js module files
+    
+    // Screen detection and conditional loading
+    function isMobile() {
+        // Check for forceMobile URL parameter (for testing mobile version on desktop)
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('forceMobile')) {
+            return true;
+        }
+        
+        return window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
 
-    function applyTheme(manifest, volume) {
-      const root = document.documentElement;
-      const config = volume === 'catalog'
-        ? manifest?.MMdM?.display_config
-        : manifest?.Gutenberg_Bible?.display_config;
+    let lastIsMobile = null;
 
-      const scheme = config?.color_scheme || {};
-      const bg = scheme.background || '#d4a574';
-      const nodes = scheme.nodes || '#8b6f47';
-      const text = scheme.text_primary || '#000000';
+    function loadAppropriateFiles() {
+        // Load CSS first
+        const cssLink = document.createElement('link');
+        cssLink.rel = 'stylesheet';
+        cssLink.type = 'text/css';
+        
+        // Load JavaScript
+        const script = document.createElement('script');
+        
+        const useMobile = isMobile();
+        lastIsMobile = useMobile;
 
-      root.style.setProperty('--color-bg', bg);
-      root.style.setProperty('--color-nodes', nodes);
-      root.style.setProperty('--color-text', text);
+        if (useMobile) {
+            cssLink.href = './mobile/catalog_mobile.css';
+            script.src = './mobile/catalog_mobile_modular.js';
+            script.type = 'module';  // Native ES6 modules for mobile
+        } else {
+            cssLink.href = './desktop/catalog.css';
+            script.src = './desktop/catalog.js';
+        }
+        
+        // Load CSS first, then JavaScript
+        document.head.appendChild(cssLink);
+        
+        // Wait for CSS to load before loading JS
+        cssLink.onload = () => {
+            document.body.appendChild(script);
+        };
     }
 
-    function buildBibleBooks(manifest) {
-      const testaments = manifest?.Gutenberg_Bible?.testaments;
-      if (!testaments) return [];
-      const items = [];
-      Object.entries(testaments).forEach(([testamentId, testament]) => {
-        const sections = testament?.sections || {};
-        Object.entries(sections).forEach(([sectionId, section]) => {
-          const books = section?.books || {};
-          Object.entries(books).forEach(([bookId, book]) => {
-            items.push({
-              id: bookId,
-              name: book?.book_name || book?.name || bookId,
-              sort: book?.sort_number || items.length + 1
-            });
-          });
-        });
-      });
-      return items;
-    }
+    // Load appropriate files on page load
+    document.addEventListener('DOMContentLoaded', loadAppropriateFiles);
 
-    function buildCatalogManufacturers(manifest) {
-      const markets = manifest?.MMdM?.markets;
-      if (!markets) return [];
-      const items = [];
-      Object.entries(markets).forEach(([marketId, market]) => {
-        const countries = market?.countries || {};
-        Object.entries(countries).forEach(([countryId, country]) => {
-          const manufacturers = country?.manufacturers || {};
-          Object.entries(manufacturers).forEach(([manufacturerId, manufacturer]) => {
-            items.push({
-              id: `${marketId}__${countryId}__${manufacturerId}`,
-              name: manufacturerId,
-              sort: manufacturer?.sort_number || items.length + 1
-            });
-          });
-        });
-      });
-      return items;
-    }
-
-    function buildChain(manifest, volume) {
-      if (volume === 'catalog') {
-        return buildCatalogManufacturers(manifest);
-      }
-      return buildBibleBooks(manifest);
-    }
-
-    function wireInteractions(app) {
-      let isDragging = false;
-      let lastX = 0;
-      let lastY = 0;
-      const sensitivity = Math.PI / 4 / 100; // 100px → 45°
-
-      const onPointerMove = event => {
-        if (!isDragging) return;
-        const dx = event.clientX - lastX;
-        const dy = event.clientY - lastY;
-        lastX = event.clientX;
-        lastY = event.clientY;
-        const delta = -(dx + dy) * sensitivity;
-        app.choreographer.rotate(delta);
-      };
-
-      svg.addEventListener('pointerdown', event => {
-        isDragging = true;
-        lastX = event.clientX;
-        lastY = event.clientY;
-      });
-
-      svg.addEventListener('pointermove', onPointerMove);
-
-      ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
-        svg.addEventListener(type, () => {
-          isDragging = false;
-          app.selectNearest();
-          app.choreographer.stopMomentum();
-        });
-      });
-    }
-
-    loadConfig().then(({ volume, manifest }) => {
-      applyTheme(manifest, volume);
-      const items = buildChain(manifest, volume);
-      if (!items.length) {
-        console.error('No items found for volume', volume);
-        return;
-      }
-      const app = createApp({ svgRoot: svg, items, viewport });
-      wireInteractions(app);
-    }).catch(err => {
-      console.error('Failed to initialize app', err);
+    // Handle orientation changes and window resizing (reload only when crossing mobile/desktop breakpoint)
+    window.addEventListener('resize', () => {
+        clearTimeout(window.resizeTimeout);
+        window.resizeTimeout = setTimeout(() => {
+            const nextIsMobile = isMobile();
+            if (lastIsMobile === null) {
+                lastIsMobile = nextIsMobile;
+                return;
+            }
+            if (nextIsMobile !== lastIsMobile) {
+                lastIsMobile = nextIsMobile;
+                location.reload();
+            }
+        }, 250);
     });
-  </script>
+    </script>
 </body>
 </html>
