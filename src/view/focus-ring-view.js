@@ -77,7 +77,8 @@ export class FocusRingView {
         label.setAttribute('class', 'focus-ring-label');
         this.labelsGroup.appendChild(label);
       }
-      const offset = (node.radius || 10) + 8;
+      const radius = (node.radius || 10);
+      const offset = radius * 1.1; // place anchor just outside the node circle without hardcoded px gap
       const lx = node.x + Math.cos(node.angle) * offset;
       const ly = node.y + Math.sin(node.angle) * offset;
       label.setAttribute('x', lx);

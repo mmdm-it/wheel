@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.21] - 2025-12-22
+
+### Changed
+- Adjust focus label anchor offset
+
+
 ## [3.0.20] - 2025-12-22
 
 ### Changed
