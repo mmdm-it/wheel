@@ -74,7 +74,7 @@ svg {
 
 .focus-ring-magnifier.rotating .focus-ring-magnifier-circle {
   fill: none;
-  stroke: #000;
+  stroke: var(--color-magnifier-stroke, #000);
   stroke-width: 1px;
 }
 

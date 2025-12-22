@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.0.43] - 2025-12-22
+
+### Fixed
+- Calendar magnifier stroke now stays in themed color during rotation (1px stroke)
+
 ## [3.0.42] - 2025-12-22
 
 ### Changed
