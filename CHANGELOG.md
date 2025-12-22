@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.22] - 2025-12-22
+
+### Changed
+- Shift focus labels toward hub
+
+
 ## [3.0.21] - 2025-12-22
 
 ### Changed
