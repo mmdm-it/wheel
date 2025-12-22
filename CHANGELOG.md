@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.16] - 2025-12-21
+
+### Changed
+- Return font sizing to CSS; remove inline styles
+
+
 ## [3.0.15] - 2025-12-21
 
 ### Changed
