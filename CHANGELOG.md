@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.34] - 2025-12-22
+
+### Changed
+- Remove multi-flick chaining; fixed 350-node quick swipe
+
+
 ## [3.0.33] - 2025-12-22
 
 ### Changed

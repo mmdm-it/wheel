@@ -128,20 +128,12 @@
       let lastX = 0;
       let lastY = 0;
       let lastTime = 0;
-      let lastVelocity = 0;
-      let flickCount = 0;
-      let lastSwipeTime = 0;
       const sensitivity = Math.PI / 4 / 100; // 100px → 45°
       const velocityThreshold = 0.4; // px/ms below this → no gain
       const gainSlope = 1.1; // linear slope past threshold
       const baseQuickNodes = 60; // empirical baseline nodes per quick swipe at gain 1
-      const minSpinNodes = 350; // minimum nodes to spin on a quick swipe
-      const fractionOfSet = 0.2; // 20% of total items on very large sets
-      const targetSpinNodes = Math.max(minSpinNodes, Math.floor(itemCount * fractionOfSet));
-      const halfSetNodes = Math.max(targetSpinNodes, Math.ceil(itemCount / 2));
-      const fullSetNodes = Math.max(targetSpinNodes, itemCount);
+      const targetSpinNodes = 350; // fixed quick-flick span for consistency across devices
       const baseMaxGain = Math.max(1, targetSpinNodes / baseQuickNodes);
-      const flickResetMs = 450; // window to chain flicks
 
       const onPointerMove = event => {
         if (!isDragging) return;
@@ -154,14 +146,12 @@
 
         const distance = Math.abs(dx) + Math.abs(dy);
         const velocity = dt > 0 ? distance / dt : 0;
-        const targetNodesThisFlick = flickCount === 0 ? halfSetNodes : fullSetNodes;
-        const maxGain = Math.max(baseMaxGain, targetNodesThisFlick / baseQuickNodes);
+        const maxGain = baseMaxGain;
         const gain = velocity <= velocityThreshold
           ? 1
           : Math.min(maxGain, 1 + (velocity - velocityThreshold) * gainSlope);
 
         const delta = -(dx + dy) * sensitivity * gain;
-        lastVelocity = velocity;
         app.choreographer.rotate(delta);
       };
 
@@ -170,21 +160,13 @@
         lastX = event.clientX;
         lastY = event.clientY;
         lastTime = event.timeStamp;
-        lastVelocity = 0;
       });
 
       svg.addEventListener('pointermove', onPointerMove);
 
       ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
-        svg.addEventListener(type, event => {
+        svg.addEventListener(type, () => {
           isDragging = false;
-          const now = event.timeStamp;
-          if (lastVelocity > velocityThreshold) {
-            flickCount = (now - lastSwipeTime) <= flickResetMs ? flickCount + 1 : 1;
-            lastSwipeTime = now;
-          } else {
-            flickCount = 0;
-          }
           app.selectNearest();
           app.choreographer.stopMomentum();
         });
