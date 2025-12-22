@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.27] - 2025-12-22
+
+### Changed
+- Add 100ms snap-to-magnifier animation
+
+
 ## [3.0.26] - 2025-12-22
 
 ### Changed

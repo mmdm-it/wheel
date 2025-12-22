@@ -57,6 +57,7 @@ export function createApp({ svgRoot, items, viewport }) {
   let choreographer = null;
   let isRotating = false;
   let rotation = 0;
+  let snapId = null;
 
   const clampRotation = (value, bounds) => Math.max(bounds.minRotation, Math.min(bounds.maxRotation, value));
 
@@ -97,6 +98,38 @@ export function createApp({ svgRoot, items, viewport }) {
     );
   };
 
+  const cancelSnap = () => {
+    if (snapId) {
+      cancelAnimationFrame(snapId);
+      snapId = null;
+    }
+  };
+
+  const animateSnapTo = (targetRotation, duration = 100) => {
+    cancelSnap();
+    const startRotation = rotation;
+    const startTime = performance.now();
+    const step = now => {
+      const elapsed = now - startTime;
+      const t = Math.min(elapsed / duration, 1);
+      const next = startRotation + (targetRotation - startRotation) * t;
+      if (choreographer) {
+        choreographer.setRotation(next, { emit: false });
+        rotation = choreographer.getRotation();
+      } else {
+        rotation = next;
+      }
+      render(rotation, false);
+      if (t < 1) {
+        snapId = requestAnimationFrame(step);
+      } else {
+        snapId = null;
+        isRotating = false;
+      }
+    };
+    snapId = requestAnimationFrame(step);
+  };
+
   const bounds = computeBounds(buildVisibleItems(nav.getCurrent()));
   choreographer = new RotationChoreographer({
     onRender: angle => {
@@ -110,6 +143,7 @@ export function createApp({ svgRoot, items, viewport }) {
   });
 
   const selectNearest = () => {
+    cancelSnap();
     if (!nav.items.length) return;
     const targetAngle = magnifier.angle;
     let closestIdx = nav.getCurrentIndex();
@@ -128,11 +162,9 @@ export function createApp({ svgRoot, items, viewport }) {
     nav.selectIndex(closestIdx);
     if (closestAngle !== null) {
       const delta = targetAngle - closestAngle;
-      rotation += delta;
-      if (choreographer) {
-        choreographer.setRotation(rotation, { emit: false });
-        rotation = choreographer.getRotation();
-      }
+      const targetRotation = rotation + delta;
+      animateSnapTo(targetRotation, 100);
+      return;
     }
     isRotating = false;
     render(rotation, false);
@@ -146,7 +178,7 @@ export function createApp({ svgRoot, items, viewport }) {
     choreographer,
     viewport: vp,
     selectNearest,
-    beginRotation: () => { isRotating = true; },
+    beginRotation: () => { isRotating = true; cancelSnap(); },
     endRotation: () => selectNearest()
   };
 }
