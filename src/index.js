@@ -59,9 +59,12 @@ function normalizeItems(items, { preserveOrder = false } = {}) {
   return sorted;
 }
 
-export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserveOrder = false }) {
+export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserveOrder = false, labelFormatter }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const normalized = normalizeItems(items, { preserveOrder });
+  const formatLabel = typeof labelFormatter === 'function'
+    ? labelFormatter
+    : ({ item }) => item?.name || item?.id || '';
 
   const vp = viewport || getViewportInfo(window.innerWidth, window.innerHeight);
   const nodeRadius = vp.SSd * NODE_RADIUS_RATIO;
@@ -144,12 +147,15 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
       choreographer.setRotation(rotation, { emit: false });
       rotation = choreographer.getRotation();
     }
-    const nodes = calculateNodePositions(visible, vp, rotation, nodeRadius, nodeSpacing);
+    const nodes = calculateNodePositions(visible, vp, rotation, nodeRadius, nodeSpacing).map(node => ({
+      ...node,
+      label: formatLabel({ item: node.item, context: 'node' })
+    }));
     view.render(
       nodes,
       arcParams,
       windowInfo,
-      { ...magnifier, radius: magnifierRadius, label: selected?.name || '' },
+      { ...magnifier, radius: magnifierRadius, label: formatLabel({ item: selected, context: 'magnifier' }) },
       {
         isRotating,
         magnifierAngle: magnifier.angle,

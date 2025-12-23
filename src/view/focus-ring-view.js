@@ -86,20 +86,33 @@ export class FocusRingView {
         label.setAttribute('class', 'focus-ring-label');
         this.labelsGroup.appendChild(label);
       }
-      const radius = nodeRadius;
-      const offset = radius * -1.3; // pull anchor notably toward the hub without hardcoded px gap
-      const lx = node.x + Math.cos(node.angle) * offset;
-      const ly = node.y + Math.sin(node.angle) * offset;
-      label.setAttribute('x', lx);
-      label.setAttribute('y', ly);
-      label.setAttribute('text-anchor', 'end');
-      label.setAttribute('dominant-baseline', 'middle');
-      const rotation = (node.angle * 180) / Math.PI + 180; // 90° more to flip vertical
-      label.setAttribute('transform', `rotate(${rotation}, ${lx}, ${ly})`);
+      const rawLabel = node.label || node.item.name || '';
+      const isNumericLabel = /^[0-9]+$/.test(String(rawLabel).trim());
+      if (isNumericLabel) {
+        const lx = node.x;
+        const ly = node.y;
+        label.setAttribute('x', lx);
+        label.setAttribute('y', ly);
+        label.setAttribute('text-anchor', 'middle');
+        label.setAttribute('dominant-baseline', 'middle');
+        const rotation = (node.angle * 180) / Math.PI + 180; // keep rotation even when centered
+        label.setAttribute('transform', `rotate(${rotation}, ${lx}, ${ly})`);
+      } else {
+        const radius = nodeRadius;
+        const offset = radius * -1.3; // pull anchor notably toward the hub without hardcoded px gap
+        const lx = node.x + Math.cos(node.angle) * offset;
+        const ly = node.y + Math.sin(node.angle) * offset;
+        label.setAttribute('x', lx);
+        label.setAttribute('y', ly);
+        label.setAttribute('text-anchor', 'end');
+        label.setAttribute('dominant-baseline', 'middle');
+        const rotation = (node.angle * 180) / Math.PI + 180; // 90° more to flip vertical
+        label.setAttribute('transform', `rotate(${rotation}, ${lx}, ${ly})`);
+      }
       const masked = this.#isNearMagnifier(node.angle, magnifierAngle, labelMaskEpsilon);
       const isSelected = selectedId && (node.item.id === selectedId);
       const showNodeLabel = isRotating || (!masked && !isSelected);
-      label.textContent = showNodeLabel ? (node.item.name || '') : '';
+      label.textContent = showNodeLabel ? rawLabel : '';
     });
 
     existingNodes.forEach((el, id) => {

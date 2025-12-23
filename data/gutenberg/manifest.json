@@ -41,7 +41,22 @@
         "parent_button_style": "simple"
       },
       "focus_ring_arrangements": {
-        "book": "cousins-with-gaps"
+        "book": "cousins-with-gaps",
+        "chapter": "cousins-with-gaps",
+        "verse": "cousins-with-gaps"
+      },
+      "focus_ring_display": {
+        "book": {
+          "node_format": "name"
+        },
+        "chapter": {
+          "node_format": "number-only",
+          "magnifier_prefix": "Chapter"
+        },
+        "verse": {
+          "node_format": "number-only",
+          "magnifier_prefix": "Verse"
+        }
       },
       "ui_limits": {
         "focus_ring_max_depth": 7,
