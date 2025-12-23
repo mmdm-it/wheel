@@ -285,7 +285,7 @@
       return { items, selectedIndex, preserveOrder: false };
     }
 
-    function wireInteractions(app, itemCount) {
+    function wireInteractions(app) {
       let isDragging = false;
       let lastX = 0;
       let lastY = 0;
@@ -362,7 +362,7 @@
       }
       const labelFormatter = makeLabelFormatter({ volume, level: options.level, manifest, locale: options.locale });
       const app = createApp({ svgRoot: svg, items, viewport, selectedIndex, preserveOrder, labelFormatter });
-      wireInteractions(app, items.length);
+      wireInteractions(app);
       showVersion();
     }).catch(err => {
       console.error('Failed to initialize app', err);
