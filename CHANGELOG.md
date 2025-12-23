@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.0.44] - 2025-12-22
+
+### Fixed
+- Hide the node label closest to the magnifier on load (larger mask) to avoid duplicate magnifier label
+
 ## [3.0.43] - 2025-12-22
 
 ### Fixed

@@ -131,7 +131,7 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
       {
         isRotating,
         magnifierAngle: magnifier.angle,
-        labelMaskEpsilon: nodeSpacing * 0.6,
+        labelMaskEpsilon: nodeSpacing * 1.1,
         onNodeClick: node => rotateNodeIntoMagnifier(node)
       }
     );
