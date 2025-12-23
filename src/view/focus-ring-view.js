@@ -41,6 +41,7 @@ export class FocusRingView {
     const magnifierAngle = options.magnifierAngle;
     const labelMaskEpsilon = options.labelMaskEpsilon ?? 0.0001;
     const onNodeClick = options.onNodeClick;
+    const selectedId = options.selectedId;
     // Ensure magnifier group is on top for proper z-ordering
     if (this.magnifierGroup?.parentNode === this.svgRoot) {
       this.svgRoot.appendChild(this.magnifierGroup);
@@ -95,7 +96,9 @@ export class FocusRingView {
       label.setAttribute('dominant-baseline', 'middle');
       const rotation = (node.angle * 180) / Math.PI + 180; // 90° more to flip vertical
       label.setAttribute('transform', `rotate(${rotation}, ${lx}, ${ly})`);
-      const showNodeLabel = isRotating || !this.#isNearMagnifier(node.angle, magnifierAngle, labelMaskEpsilon);
+      const masked = this.#isNearMagnifier(node.angle, magnifierAngle, labelMaskEpsilon);
+      const isSelected = selectedId && (node.item.id === selectedId);
+      const showNodeLabel = isRotating || (!masked && !isSelected);
       label.textContent = showNodeLabel ? (node.item.name || '') : '';
     });
 

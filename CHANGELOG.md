@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.0.45] - 2025-12-22
+
+### Fixed
+- Hide only the selected node label at the magnifier while keeping adjacent labels visible
+
 ## [3.0.44] - 2025-12-22
 
 ### Fixed
