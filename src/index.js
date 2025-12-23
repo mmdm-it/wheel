@@ -73,12 +73,6 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
   const arcParams = getArcParameters(vp);
   const windowInfo = getViewportWindow(vp, nodeSpacing);
   const magnifier = getMagnifierPosition(vp);
-  const toDegrees = angle => (angle * 180) / Math.PI;
-
-  console.info('[FocusRing] magnifier angle', {
-    radians: magnifier.angle,
-    degrees: toDegrees(magnifier.angle)
-  });
 
   logOnce('[FocusRing] geometry inputs', {
     viewport: vp,
