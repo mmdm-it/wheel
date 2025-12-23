@@ -17,6 +17,12 @@
       "focus_ring_arrangements": {
         "year": "cousins-with-gaps"
       },
+      "focus_ring_display": {
+        "year": {
+          "node_format": "calendar-year-number",
+          "magnifier_format": "calendar-year-era"
+        }
+      },
       "hierarchy_levels": {
         "year": {
           "display_name": "Year",
