@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## [3.0.53] - 2025-12-22
+
+### Fixed
+- Honor authored startup item after sorting (Bible and MMdM) so Matthew and Lockwood-Ash load initially
+
+## [3.0.52] - 2025-12-22
+
+### Added
+- Authorable startup defaults per volume (level + initial item) pulled from manifests and applied at load
+- Per-level arrangement modes (cousins-with-gaps, cousins-flat, siblings-only) with manifest defaults for Bible, Calendar, and MMdM
+
 ## [3.0.51] - 2025-12-22
 
 ### Changed

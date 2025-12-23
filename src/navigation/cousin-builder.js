@@ -85,7 +85,7 @@ export async function buildBibleVerseCousinChain(manifest, { bookId, startChapte
   return { items: chain, selectedIndex, preserveOrder: true };
 }
 
-export function buildBibleBookCousinChain(manifest, { testamentId, bookId } = {}) {
+export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initialItemId } = {}) {
   const bible = manifest?.Gutenberg_Bible;
   if (!bible) return { items: [], selectedIndex: 0, preserveOrder: true };
   const testaments = Object.entries(bible.testaments || {});
@@ -126,6 +126,10 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId } = {}
   });
 
   const selectedIndex = (() => {
+    if (initialItemId) {
+      const idx = chain.findIndex(item => item && (item.id === initialItemId || item.book_key === initialItemId));
+      if (idx >= 0) return idx;
+    }
     if (bookId) {
       const idx = chain.findIndex(item => item && item.id === bookId);
       if (idx >= 0) return idx;

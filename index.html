@@ -49,16 +49,28 @@
       });
 
       const manifest = await fetch(manifestPath).then(r => r.json());
-      const level = params.get('level');
+      const volumeRoot = volume === 'catalog' ? manifest?.MMdM : volume === 'calendar' ? manifest?.Calendar : manifest?.Gutenberg_Bible;
+      const startup = volumeRoot?.display_config?.focus_ring_startup || {};
+      const arrangements = volumeRoot?.display_config?.focus_ring_arrangements || {};
+      const level = params.get('level')
+        || startup.top_navigation_level
+        || (volume === 'bible' ? 'book' : volume === 'calendar' ? 'year' : 'manufacturer');
+      const initialItemId = params.get('item') || startup.initial_magnified_item || null;
+      const arrangement = params.get('arrangement')
+        || arrangements[level]
+        || startup.arrangement
+        || (volume === 'bible' ? 'cousins-with-gaps' : volume === 'calendar' ? 'cousins-with-gaps' : 'cousins-flat');
       const cousinParam = params.get('cousins');
-        const cousinMode = cousinParam === null
-          ? volume === 'bible'
-          : cousinParam === '1';
+      const cousinMode = cousinParam === null
+        ? arrangement !== 'siblings-only'
+        : cousinParam === '1';
       return {
         volume,
         manifest,
         options: {
           level,
+          initialItemId,
+          arrangement,
           bookId: params.get('book') || 'GENE',
           testamentId: params.get('testament'),
           chapterId: params.get('chapter'),
@@ -98,10 +110,11 @@
       return items;
     }
 
-    function buildCatalogManufacturers(manifest) {
+    function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
       const markets = manifest?.MMdM?.markets;
-      if (!markets) return [];
+      if (!markets) return { items: [], selectedIndex: 0, preserveOrder: false };
       const items = [];
+      const target = initialItemId ? String(initialItemId).toLowerCase() : null;
       Object.entries(markets).forEach(([marketId, market]) => {
         const countries = market?.countries || {};
         Object.entries(countries).forEach(([countryId, country]) => {
@@ -110,15 +123,35 @@
             items.push({
               id: `${marketId}__${countryId}__${manufacturerId}`,
               name: manufacturerId,
-              sort: manufacturer?.sort_number || items.length + 1
+              sort: Number.isFinite(manufacturer?.sort_number) ? manufacturer.sort_number : items.length + 1
             });
           });
         });
       });
-      return items;
+
+      items.sort((a, b) => {
+        const as = a.sort || 0;
+        const bs = b.sort || 0;
+        if (as === bs) return (a.name || '').localeCompare(b.name || '');
+        return as - bs;
+      });
+      items.forEach((item, idx) => { item.order = idx; });
+
+      const selectedIndex = (() => {
+        if (target) {
+          const idx = items.findIndex(item => {
+            const simple = String(item.name || '').toLowerCase();
+            return simple === target || String(item.id || '').toLowerCase() === target;
+          });
+          if (idx >= 0) return idx;
+        }
+        return 0;
+      })();
+
+      return { items, selectedIndex, preserveOrder: false };
     }
 
-    function buildCalendarYears(manifest) {
+    function buildCalendarYears(manifest, { arrangement, initialItemId } = {}) {
       const years = manifest?.Calendar?.years;
       if (!years) return { items: [], selectedIndex: 0, preserveOrder: true };
       const sortedYears = Object.values(years)
@@ -141,7 +174,8 @@
         const millennium = year.yearNumber > 0
           ? Math.floor((year.yearNumber - 1) / 1000)
           : Math.floor((year.yearNumber) / 1000) - 1; // keep negative blocks distinct
-        if (currentMillennium !== null && millennium !== currentMillennium) {
+        const shouldGap = (arrangement || 'cousins-with-gaps') === 'cousins-with-gaps';
+        if (shouldGap && currentMillennium !== null && millennium !== currentMillennium) {
           chain.push(null, null); // 2-node gap between millennia
         }
         currentMillennium = millennium;
@@ -151,16 +185,25 @@
         });
       });
 
-      const firstReal = chain.findIndex(item => item !== null);
+      const selectedIndex = (() => {
+        if (initialItemId !== undefined && initialItemId !== null) {
+          const match = chain.findIndex(item => item && (item.id === String(initialItemId) || String(item.yearNumber) === String(initialItemId) || item.name === String(initialItemId)));
+          if (match >= 0) return match;
+        }
+        const firstReal = chain.findIndex(item => item !== null);
+        return firstReal >= 0 ? firstReal : 0;
+      })();
       return {
         items: chain,
-        selectedIndex: firstReal >= 0 ? firstReal : 0,
+        selectedIndex,
         preserveOrder: true
       };
     }
 
     async function buildChain(manifest, volume, options = {}) {
-      if (volume === 'bible' && options.cousinMode) {
+      const arrangement = options.arrangement;
+      const initialItemId = options.initialItemId;
+      if (volume === 'bible' && options.cousinMode && (arrangement || 'cousins-with-gaps') !== 'siblings-only') {
         const level = options.level || 'book';
         if (level === 'verse') {
           return buildBibleVerseCousinChain(manifest, {
@@ -171,16 +214,32 @@
         }
         return buildBibleBookCousinChain(manifest, {
           testamentId: options.testamentId,
-          bookId: options.bookId || 'GENE'
+          bookId: options.bookId || 'GENE',
+          initialItemId
         });
       }
       if (volume === 'catalog') {
-        return { items: buildCatalogManufacturers(manifest), selectedIndex: 0, preserveOrder: false };
+        return buildCatalogManufacturers(manifest, { initialItemId });
       }
       if (volume === 'calendar') {
-        return buildCalendarYears(manifest);
+        return buildCalendarYears(manifest, { arrangement, initialItemId });
       }
-      return { items: buildBibleBooks(manifest), selectedIndex: 0, preserveOrder: false };
+      const items = buildBibleBooks(manifest)
+        .sort((a, b) => {
+          const as = a.sort || 0;
+          const bs = b.sort || 0;
+          if (as === bs) return (a.name || '').localeCompare(b.name || '');
+          return as - bs;
+        })
+        .map((item, idx) => ({ ...item, order: idx }));
+      const selectedIndex = (() => {
+        if (initialItemId) {
+          const idx = items.findIndex(item => item && (item.id === initialItemId));
+          if (idx >= 0) return idx;
+        }
+        return 0;
+      })();
+      return { items, selectedIndex, preserveOrder: false };
     }
 
     function wireInteractions(app, itemCount) {
