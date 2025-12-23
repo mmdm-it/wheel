@@ -59,7 +59,7 @@ function normalizeItems(items, { preserveOrder = false } = {}) {
   return sorted;
 }
 
-export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserveOrder = false, labelFormatter }) {
+export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserveOrder = false, labelFormatter, shouldCenterLabel }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const normalized = normalizeItems(items, { preserveOrder });
   const formatLabel = typeof labelFormatter === 'function'
@@ -149,7 +149,8 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     }
     const nodes = calculateNodePositions(visible, vp, rotation, nodeRadius, nodeSpacing).map(node => ({
       ...node,
-      label: formatLabel({ item: node.item, context: 'node' })
+      label: formatLabel({ item: node.item, context: 'node' }),
+      labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
     }));
     view.render(
       nodes,

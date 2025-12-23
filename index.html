@@ -381,7 +381,8 @@
         return;
       }
       const labelFormatter = makeLabelFormatter({ volume, level: options.level, locale: options.locale || 'english' });
-      const app = createApp({ svgRoot: svg, items, viewport, selectedIndex, preserveOrder, labelFormatter });
+      const shouldCenterLabel = ({ item }) => volume === 'calendar';
+      const app = createApp({ svgRoot: svg, items, viewport, selectedIndex, preserveOrder, labelFormatter, shouldCenterLabel });
       wireInteractions(app, items.length);
       showVersion();
     }).catch(err => {

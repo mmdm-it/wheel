@@ -12,6 +12,11 @@
 ### Changed
 - createApp accepts custom label formatter and Focus Ring view uses formatted labels when provided
 
+## [3.0.55] - 2025-12-23
+
+### Changed
+- Calendar volume centers Focus Ring node labels; other volumes unchanged
+
 ## [3.0.53] - 2025-12-22
 
 ### Fixed

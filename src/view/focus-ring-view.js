@@ -86,16 +86,25 @@ export class FocusRingView {
         label.setAttribute('class', 'focus-ring-label');
         this.labelsGroup.appendChild(label);
       }
-      const radius = nodeRadius;
-      const offset = radius * -1.3; // pull anchor notably toward the hub without hardcoded px gap
-      const lx = node.x + Math.cos(node.angle) * offset;
-      const ly = node.y + Math.sin(node.angle) * offset;
-      label.setAttribute('x', lx);
-      label.setAttribute('y', ly);
-      label.setAttribute('text-anchor', 'end');
-      label.setAttribute('dominant-baseline', 'middle');
-      const rotation = (node.angle * 180) / Math.PI + 180; // 90° more to flip vertical
-      label.setAttribute('transform', `rotate(${rotation}, ${lx}, ${ly})`);
+      const useCentered = Boolean(node.labelCentered);
+      if (useCentered) {
+        label.setAttribute('x', node.x);
+        label.setAttribute('y', node.y);
+        label.setAttribute('text-anchor', 'middle');
+        label.setAttribute('dominant-baseline', 'middle');
+        label.removeAttribute('transform');
+      } else {
+        const radius = nodeRadius;
+        const offset = radius * -1.3; // pull anchor notably toward the hub without hardcoded px gap
+        const lx = node.x + Math.cos(node.angle) * offset;
+        const ly = node.y + Math.sin(node.angle) * offset;
+        label.setAttribute('x', lx);
+        label.setAttribute('y', ly);
+        label.setAttribute('text-anchor', 'end');
+        label.setAttribute('dominant-baseline', 'middle');
+        const rotation = (node.angle * 180) / Math.PI + 180; // 90° more to flip vertical
+        label.setAttribute('transform', `rotate(${rotation}, ${lx}, ${ly})`);
+      }
       const masked = this.#isNearMagnifier(node.angle, magnifierAngle, labelMaskEpsilon);
       const isSelected = selectedId && (node.item.id === selectedId);
       const showNodeLabel = isRotating || (!masked && !isSelected);
