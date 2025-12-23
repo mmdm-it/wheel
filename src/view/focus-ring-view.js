@@ -7,6 +7,7 @@ export class FocusRingView {
     this.magnifierCircle = null;
     this.magnifierLabel = null;
     this.band = null;
+    this.dimensionIcon = null;
   }
 
   init() {
@@ -14,6 +15,11 @@ export class FocusRingView {
     this.band = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     this.band.setAttribute('class', 'focus-ring-band');
     this.svgRoot.appendChild(this.band);
+
+    this.dimensionIcon = document.createElementNS('http://www.w3.org/2000/svg', 'image');
+    this.dimensionIcon.setAttribute('class', 'dimension-button');
+    this.dimensionIcon.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    this.svgRoot.appendChild(this.dimensionIcon);
 
     this.magnifierGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.magnifierGroup.setAttribute('class', 'focus-ring-magnifier');
@@ -42,12 +48,27 @@ export class FocusRingView {
     const labelMaskEpsilon = options.labelMaskEpsilon ?? 0.0001;
     const onNodeClick = options.onNodeClick;
     const selectedId = options.selectedId;
+    const dimensionIcon = options.dimensionIcon;
     // Ensure magnifier group is on top for proper z-ordering
     if (this.magnifierGroup?.parentNode === this.svgRoot) {
       this.svgRoot.appendChild(this.magnifierGroup);
     }
     if (this.band && arcParams && viewportWindow) {
       this.band.setAttribute('d', this.#ringPath(arcParams, viewportWindow));
+    }
+
+    if (this.dimensionIcon && dimensionIcon) {
+      const { href, x, y, size } = dimensionIcon;
+      this.dimensionIcon.setAttributeNS('http://www.w3.org/1999/xlink', 'href', href);
+      const w = size || 0;
+      const h = size || 0;
+      this.dimensionIcon.setAttribute('width', w);
+      this.dimensionIcon.setAttribute('height', h);
+      this.dimensionIcon.setAttribute('x', x - w / 2);
+      this.dimensionIcon.setAttribute('y', y - h / 2);
+      this.dimensionIcon.removeAttribute('display');
+    } else if (this.dimensionIcon) {
+      this.dimensionIcon.setAttribute('display', 'none');
     }
 
     const existingNodes = new Map();

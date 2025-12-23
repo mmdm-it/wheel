@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## [3.1.0] - 2025-12-23
+
+### Added
+- Dimension trigger icon placed at 135° from Hub at 90% of Focus Ring radius using `dimension_sphere_black.svg`, sized to node diameter
+
+### Changed
+- N/A
+
 ## [3.0.56] - 2025-12-23
 
 ### Fixed

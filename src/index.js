@@ -73,6 +73,13 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
   const arcParams = getArcParameters(vp);
   const windowInfo = getViewportWindow(vp, nodeSpacing);
   const magnifier = getMagnifierPosition(vp);
+  const dimensionAngle = (135 * Math.PI) / 180;
+  const dimensionRadius = arcParams.radius * 0.9;
+  const dimensionSize = nodeRadius * 2;
+  const dimensionPosition = {
+    x: arcParams.hubX + dimensionRadius * Math.cos(dimensionAngle),
+    y: arcParams.hubY + dimensionRadius * Math.sin(dimensionAngle)
+  };
 
   logOnce('[FocusRing] geometry inputs', {
     viewport: vp,
@@ -162,7 +169,13 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
         magnifierAngle: magnifier.angle,
         labelMaskEpsilon,
         onNodeClick: node => rotateNodeIntoMagnifier(node),
-        selectedId: selected?.id
+        selectedId: selected?.id,
+        dimensionIcon: {
+          href: './art/dimension_sphere_black.svg',
+          x: dimensionPosition.x,
+          y: dimensionPosition.y,
+          size: dimensionSize
+        }
       }
     );
 
