@@ -59,12 +59,9 @@ function normalizeItems(items, { preserveOrder = false } = {}) {
   return sorted;
 }
 
-export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserveOrder = false, labelFormatter }) {
+export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserveOrder = false }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const normalized = normalizeItems(items, { preserveOrder });
-  const formatLabel = typeof labelFormatter === 'function'
-    ? labelFormatter
-    : ({ item }) => item?.name || item?.id || '';
 
   const vp = viewport || getViewportInfo(window.innerWidth, window.innerHeight);
   const nodeRadius = vp.SSd * NODE_RADIUS_RATIO;
@@ -109,13 +106,6 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
 
   const clampRotation = (value, bounds) => Math.max(bounds.minRotation, Math.min(bounds.maxRotation, value));
 
-  const expandBoundsFor = (bounds, targetRotation) => {
-    if (targetRotation === null || targetRotation === undefined) return bounds;
-    if (targetRotation < bounds.minRotation) return { ...bounds, minRotation: targetRotation };
-    if (targetRotation > bounds.maxRotation) return { ...bounds, maxRotation: targetRotation };
-    return bounds;
-  };
-
   const buildVisibleItems = () => nav.items;
 
   const computeBounds = visibleItems => {
@@ -127,11 +117,10 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
       : visibleItems.lastIndexOf(nonNull[nonNull.length - 1]);
     const firstAngle = getBaseAngleForOrder(firstOrder, vp, nodeSpacing);
     const lastAngle = getBaseAngleForOrder(lastOrder, vp, nodeSpacing);
-    const minRotation = windowInfo.startAngle - firstAngle;
-    const maxRotation = windowInfo.endAngle - lastAngle;
-    const lower = Math.min(minRotation, maxRotation);
-    const upper = Math.max(minRotation, maxRotation);
-    return { minRotation: lower, maxRotation: upper };
+    return {
+      minRotation: windowInfo.startAngle - firstAngle,
+      maxRotation: windowInfo.endAngle - lastAngle
+    };
   };
 
   const alignToSelected = () => {
@@ -139,7 +128,7 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     if (!selected) return;
     const baseAngle = getBaseAngleForOrder(selected.order, vp, nodeSpacing);
     const desiredRotation = magnifier.angle - baseAngle;
-    const bounds = expandBoundsFor(computeBounds(buildVisibleItems()), desiredRotation);
+    const bounds = computeBounds(buildVisibleItems());
     rotation = clampRotation(desiredRotation, bounds);
   };
 
@@ -147,12 +136,7 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     rotation = nextRotation;
     const selected = nav.getCurrent() || nav.items.find(item => item !== null) || nav.items[0];
     const visible = buildVisibleItems();
-    const selectedIndex = nav.getCurrentIndex();
-    const nodeItems = visible.map((item, idx) => (idx === selectedIndex ? null : item));
-    const selectedRotation = selected
-      ? magnifier.angle - getBaseAngleForOrder(selected.order, vp, nodeSpacing)
-      : null;
-    const bounds = expandBoundsFor(computeBounds(visible), selectedRotation);
+    const bounds = computeBounds(visible);
     const labelMaskEpsilon = nodeSpacing * 0.6;
     if (choreographer) {
       choreographer.setBounds(bounds.minRotation, bounds.maxRotation);
@@ -160,15 +144,12 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
       choreographer.setRotation(rotation, { emit: false });
       rotation = choreographer.getRotation();
     }
-    const nodes = calculateNodePositions(nodeItems, vp, rotation, nodeRadius, nodeSpacing).map(node => ({
-      ...node,
-      label: formatLabel({ item: node.item, context: 'node' })
-    }));
+    const nodes = calculateNodePositions(visible, vp, rotation, nodeRadius, nodeSpacing);
     view.render(
       nodes,
       arcParams,
       windowInfo,
-      { ...magnifier, radius: magnifierRadius, label: formatLabel({ item: selected, context: 'magnifier' }) },
+      { ...magnifier, radius: magnifierRadius, label: selected?.name || '' },
       {
         isRotating,
         magnifierAngle: magnifier.angle,
@@ -317,7 +298,7 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     snapId = requestAnimationFrame(step);
   };
 
-  const bounds = computeBounds(buildVisibleItems());
+  const bounds = computeBounds(buildVisibleItems(nav.getCurrent()));
   choreographer = new RotationChoreographer({
     onRender: angle => {
       isRotating = true;

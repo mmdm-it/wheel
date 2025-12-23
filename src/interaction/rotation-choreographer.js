@@ -63,6 +63,10 @@ export class RotationChoreographer {
     }
   }
 
+  maybeSelect() {
+    // Selection snapping disabled for free-spinning ring.
+  }
+
   setBounds(minRotation, maxRotation) {
     if (Number.isFinite(minRotation)) this.minRotation = minRotation;
     if (Number.isFinite(maxRotation)) this.maxRotation = maxRotation;

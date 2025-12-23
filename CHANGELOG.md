@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## [3.1.0] - 2025-12-23
-
-### Added
-- Per-volume/level focus ring display formatting (calendar year numbers in nodes, B.C./A.D. in magnifier; Bible chapter/verse numbers in nodes with Chapter/Verse prefix in magnifier)
-- Locale-aware label formatter plumbing for future language switching
-
-### Changed
-- Center numeric-only focus-ring labels with no offset while keeping rotation; text labels retain offset/rotation
-
 ## [3.0.53] - 2025-12-22
 
 ### Fixed

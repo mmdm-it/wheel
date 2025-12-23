@@ -3,8 +3,6 @@
   --color-nodes: #e0c36c;
   --color-text: #f4f4f4;
   --color-band: #1b2f4a;
-  --color-magnifier-stroke-idle: var(--color-text);
-  --color-magnifier-stroke-rotating: var(--color-nodes);
   --focus-node-font: 'Montserrat', sans-serif;
   --magnifier-font: 'Montserrat', sans-serif;
   --focus-label-transform: none;

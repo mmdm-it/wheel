@@ -1,4 +1,4 @@
-const NODE_SPACING = Math.PI / 42; // Constitutional 4.3° spacing
+const SELECTION_THRESHOLD = Math.PI / 12; // 15° snapping threshold
 
 export function getViewportInfo(width, height) {
   if (!Number.isFinite(width) || !Number.isFinite(height)) {
@@ -18,15 +18,14 @@ export function getArcParameters(viewport) {
 }
 
 export function getNodeSpacing(viewport) {
-  // Constitutional constant, independent of viewport
-  return NODE_SPACING;
+  const arc = getArcParameters(viewport);
+  const desiredArcLength = viewport.SSd * 0.156; // proportional to SSd
+  return desiredArcLength / arc.radius;
 }
 
 export function getMagnifierAngle(viewport) {
-  const arc = getArcParameters(viewport);
-  const centerX = viewport.width / 2;
-  const centerY = viewport.height / 2;
-  return Math.atan2(centerY - arc.hubY, centerX - arc.hubX);
+  // Fixed magnifier angle to reduce cross-device variance (142°)
+  return (142 * Math.PI) / 180;
 }
 
 export function getMagnifierPosition(viewport) {
@@ -43,18 +42,18 @@ export function getBaseAngleForOrder(order, viewport, nodeSpacing) {
   const magnifierAngle = getMagnifierAngle(viewport);
   const normalizedOrder = Number.isFinite(order) ? order : 0;
   const spacing = nodeSpacing ?? getNodeSpacing(viewport);
-  return magnifierAngle + (normalizedOrder + 1) * spacing;
+  return magnifierAngle + (normalizedOrder + 1) * spacing * -1;
 }
 
 export function getViewportWindow(viewport, nodeSpacing) {
   const { width, height } = viewport;
   const { hubX, hubY } = getArcParameters(viewport);
-  // Arc covers from the lower-left corner up to the constitutional end at 180°
-  const startAngle = Math.atan2(height - hubY, 0 - hubX);
+  // Arc should cover from lower-right corner up to the upper-left edge (180°)
+  const startAngle = Math.atan2(height - hubY, width - hubX);
   const endAngle = Math.PI; // constitutional constant at the left edge
   const arcLength = endAngle - startAngle;
   const spacing = nodeSpacing ?? getNodeSpacing(viewport);
-  const maxNodes = Math.max(0, Math.floor(arcLength / spacing));
+  const maxNodes = Math.min(Math.floor(arcLength / spacing), 21);
   return { startAngle, endAngle, arcLength, maxNodes };
 }
 
@@ -70,7 +69,7 @@ export function calculateNodePositions(allItems, viewport, rotationOffset = 0, n
   allItems.forEach((item, index) => {
     if (item === null) return; // gap occupies space but does not render
     const order = Number.isFinite(item.order) ? item.order : index;
-    const baseAngle = getBaseAngleForOrder(order, viewport, spacing); // higher order → further clockwise from magnifier
+    const baseAngle = getBaseAngleForOrder(order, viewport, spacing); // reverse sort: lower order → larger angle
     const rotatedAngle = baseAngle + rotationOffset;
     if (rotatedAngle < windowInfo.startAngle || rotatedAngle > windowInfo.endAngle) {
       return;
@@ -87,3 +86,7 @@ export function calculateNodePositions(allItems, viewport, rotationOffset = 0, n
 
   return positions;
 }
+
+export const GeometryConstants = {
+  SELECTION_THRESHOLD
+};
