@@ -26,6 +26,18 @@ const logOnce = (() => {
   };
 })();
 
+const normalizeAngle = angle => {
+  const twoPi = 2 * Math.PI;
+  return ((angle % twoPi) + twoPi) % twoPi;
+};
+
+const isNearAngle = (angle, target, epsilon) => {
+  if (target === undefined) return false;
+  const diff = Math.abs(normalizeAngle(angle) - normalizeAngle(target));
+  const wrapped = diff > Math.PI ? (2 * Math.PI) - diff : diff;
+  return wrapped <= epsilon;
+};
+
 function normalizeItems(items, { preserveOrder = false } = {}) {
   if (!Array.isArray(items)) throw new Error('createApp: items must be an array');
   const hasGaps = items.some(item => item === null);
@@ -111,11 +123,21 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     };
   };
 
+  const alignToSelected = () => {
+    const selected = nav.getCurrent();
+    if (!selected) return;
+    const baseAngle = getBaseAngleForOrder(selected.order, vp, nodeSpacing);
+    const desiredRotation = magnifier.angle - baseAngle;
+    const bounds = computeBounds(buildVisibleItems());
+    rotation = clampRotation(desiredRotation, bounds);
+  };
+
   const render = (nextRotation = rotation) => {
     rotation = nextRotation;
     const selected = nav.getCurrent() || nav.items.find(item => item !== null) || nav.items[0];
     const visible = buildVisibleItems();
     const bounds = computeBounds(visible);
+    const labelMaskEpsilon = nodeSpacing * 0.6;
     if (choreographer) {
       choreographer.setBounds(bounds.minRotation, bounds.maxRotation);
       rotation = clampRotation(rotation, bounds);
@@ -131,7 +153,7 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
       {
         isRotating,
         magnifierAngle: magnifier.angle,
-        labelMaskEpsilon: nodeSpacing * 0.6,
+        labelMaskEpsilon,
         onNodeClick: node => rotateNodeIntoMagnifier(node),
         selectedId: selected?.id
       }
@@ -144,10 +166,45 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
         if (item?.name) return item.name;
         return item?.id || '(unknown)';
       };
+      const findNode = idx => nodes.find(n => n.index === idx);
+      const formatNeighbor = neighbor => {
+        if (!neighbor) return { index: null, label: '(unknown)', visible: '' };
+        const { index: idx, item, boundary } = neighbor;
+        if (boundary) {
+          return { index: idx, label: '(boundary)', visible: '' };
+        }
+        if (item === null) {
+          return { index: idx, label: '(gap)', visible: '' };
+        }
+        const baseLabel = labelOrGap(item);
+        const node = findNode(idx);
+        const masked = node ? isNearAngle(node.angle, magnifier.angle, labelMaskEpsilon) : false;
+        const isSelected = Boolean(selected?.id && item.id === selected.id);
+        return {
+          index: idx,
+          label: baseLabel,
+          visible: masked || isSelected ? '' : baseLabel,
+          masked,
+          selected: isSelected
+        };
+      };
+      const formatMagnifier = () => {
+        const baseLabel = labelOrGap(selected);
+        const node = findNode(nav.getCurrentIndex());
+        const masked = node ? isNearAngle(node.angle, magnifier.angle, labelMaskEpsilon) : false;
+        return {
+          label: baseLabel,
+          visible: masked ? '' : baseLabel,
+          masked,
+          selected: true,
+          index: nav.getCurrentIndex()
+        };
+      };
+
       console.info('[FocusRing] magnifier + neighbors', {
-        magnifier: labelOrGap(selected),
-        before: neighbors.before.map(labelOrGap),
-        after: neighbors.after.map(labelOrGap)
+        magnifier: formatMagnifier(),
+        before: neighbors.before.map(formatNeighbor),
+        after: neighbors.after.map(formatNeighbor)
       });
     }
   };
@@ -157,13 +214,27 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     const after = [];
     if (!nav.items.length) return { before, after };
     for (let i = 1; i <= nav.items.length && (before.length < count || after.length < count); i += 1) {
-      const prevIdx = index - i;
-      const nextIdx = index + i;
-      if (prevIdx >= 0 && before.length < count) {
-        before.push(nav.items[prevIdx]);
+      if (before.length < count) {
+        const prevIdx = index - i;
+        if (prevIdx >= 0) {
+          before.push({ index: prevIdx, item: nav.items[prevIdx], boundary: false });
+        } else if (!preserveOrder) {
+          const wrapped = nav.wrapIndex(prevIdx);
+          before.push({ index: wrapped, item: nav.items[wrapped], boundary: false });
+        } else {
+          before.push({ index: null, item: null, boundary: true });
+        }
       }
-      if (nextIdx < nav.items.length && after.length < count) {
-        after.push(nav.items[nextIdx]);
+      if (after.length < count) {
+        const nextIdx = index + i;
+        if (nextIdx < nav.items.length) {
+          after.push({ index: nextIdx, item: nav.items[nextIdx], boundary: false });
+        } else if (!preserveOrder) {
+          const wrapped = nav.wrapIndex(nextIdx);
+          after.push({ index: wrapped, item: nav.items[wrapped], boundary: false });
+        } else {
+          after.push({ index: null, item: null, boundary: true });
+        }
       }
     }
     return { before, after };
@@ -239,6 +310,8 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     maxRotation: bounds.maxRotation
   });
 
+  alignToSelected();
+
   const selectNearest = () => {
     cancelSnap();
     if (!nav.items.length) return;
@@ -269,7 +342,7 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     render(rotation, false);
   };
 
-  render(0);
+  render(rotation);
 
   return {
     nav,

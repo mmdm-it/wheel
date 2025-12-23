@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## [3.0.51] - 2025-12-22
+
+### Changed
+- Remove neighbor wrap toggle and log boundaries explicitly for ordered volumes (calendar)
+
+## [3.0.50] - 2025-12-22
+
+### Fixed
+- Align initial rotation so the selected item starts under the magnifier and logging reflects the visible neighbors without wraparound on calendar
+
+## [3.0.49] - 2025-12-22
+
+### Changed
+- Neighbor logging now reports whether labels are visible/masked to mirror what the UI shows
+
+## [3.0.48] - 2025-12-22
+
+### Fixed
+- Neighbor logging wraps indices so first/last items still report two before/after entries
+
 ## [3.0.47] - 2025-12-22
 
 ### Changed
