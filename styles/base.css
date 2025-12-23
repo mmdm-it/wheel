@@ -3,6 +3,8 @@
   --color-nodes: #555555;
   --color-text: #111111;
   --color-band: #7a7979;
+  --color-magnifier-stroke-idle: #000000;
+  --color-magnifier-stroke-rotating: #000000;
   --focus-node-radius: 12px;
   --focus-node-stroke: 1px;
   --focus-node-font: 'Montserrat', sans-serif;
@@ -60,7 +62,7 @@ svg {
 
 .focus-ring-magnifier-circle {
   fill: var(--color-nodes);
-  stroke: var(--color-magnifier-stroke, #000);
+  stroke: var(--color-magnifier-stroke-idle, #000);
   stroke-width: 1px;
 }
 
@@ -74,7 +76,7 @@ svg {
 
 .focus-ring-magnifier.rotating .focus-ring-magnifier-circle {
   fill: none;
-  stroke: var(--color-magnifier-stroke, #000);
+  stroke: var(--color-magnifier-stroke-rotating, var(--color-magnifier-stroke-idle, #000));
   stroke-width: 1px;
 }
 
