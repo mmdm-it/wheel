@@ -52,6 +52,7 @@
       const volumeRoot = volume === 'catalog' ? manifest?.MMdM : volume === 'calendar' ? manifest?.Calendar : manifest?.Gutenberg_Bible;
       const startup = volumeRoot?.display_config?.focus_ring_startup || {};
       const arrangements = volumeRoot?.display_config?.focus_ring_arrangements || {};
+      const locale = params.get('lang') || 'english';
       const level = params.get('level')
         || startup.top_navigation_level
         || (volume === 'bible' ? 'book' : volume === 'calendar' ? 'year' : 'manufacturer');
@@ -75,7 +76,8 @@
           testamentId: params.get('testament'),
           chapterId: params.get('chapter'),
           translation: params.get('translation') || 'NAB',
-          cousinMode
+          cousinMode,
+          locale
         }
       };
     }
@@ -88,6 +90,67 @@
         if (link) {
           link.setAttribute('href', `./styles/${theme}.css`);
         }
+    }
+
+    function makeLabelFormatter({ volume, level, locale }) {
+      const translations = {
+        english: {
+          chapter: 'Chapter',
+          verse: 'Verse',
+          bc: 'B.C.',
+          ad: 'A.D.'
+        }
+      };
+      const t = key => translations[locale]?.[key] || translations.english[key] || key;
+
+      const getYearNumber = item => {
+        if (Number.isFinite(item?.yearNumber)) return item.yearNumber;
+        const parsed = Number.parseInt(item?.id, 10);
+        return Number.isFinite(parsed) ? parsed : null;
+      };
+
+      const formatYear = ({ item, context }) => {
+        const yearNumber = getYearNumber(item);
+        if (!Number.isFinite(yearNumber)) return item?.name || item?.id || '';
+        if (context === 'node') return String(Math.abs(yearNumber));
+        const era = yearNumber < 0 ? t('bc') : t('ad');
+        return `${Math.abs(yearNumber)} ${era}`;
+      };
+
+      const formatChapter = ({ item, context }) => {
+        const chapterVal = item?.chapter ?? (() => {
+          const asNumber = Number.parseInt(item?.name, 10);
+          if (Number.isFinite(asNumber)) return asNumber;
+          return item?.name;
+        })();
+        if (context === 'node') return String(chapterVal ?? item?.id ?? '');
+        return `${t('chapter')} ${chapterVal ?? item?.id ?? ''}`.trim();
+      };
+
+      const formatVerse = ({ item, context }) => {
+        const extract = () => {
+          if (item?.verse !== undefined) return item.verse;
+          if (typeof item?.name === 'string' && item.name.includes(':')) {
+            const parts = item.name.split(':');
+            return parts[parts.length - 1];
+          }
+          return item?.name;
+        };
+        const verseVal = extract();
+        if (context === 'node') return String(verseVal ?? item?.id ?? '');
+        return `${t('verse')} ${verseVal ?? item?.id ?? ''}`.trim();
+      };
+
+      return ({ item, context }) => {
+        if (!item) return '';
+        if (volume === 'calendar') return formatYear({ item, context });
+        if (volume === 'bible') {
+          if (level === 'chapter') return formatChapter({ item, context });
+          if (level === 'verse') return formatVerse({ item, context });
+          return item.name || item.id || '';
+        }
+        return item.name || item.id || '';
+      };
     }
 
     function buildBibleBooks(manifest) {
@@ -317,7 +380,8 @@
         console.error('No items found for volume', volume);
         return;
       }
-      const app = createApp({ svgRoot: svg, items, viewport, selectedIndex, preserveOrder });
+      const labelFormatter = makeLabelFormatter({ volume, level: options.level, locale: options.locale || 'english' });
+      const app = createApp({ svgRoot: svg, items, viewport, selectedIndex, preserveOrder, labelFormatter });
       wireInteractions(app, items.length);
       showVersion();
     }).catch(err => {

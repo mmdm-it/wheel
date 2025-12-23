@@ -99,7 +99,7 @@ export class FocusRingView {
       const masked = this.#isNearMagnifier(node.angle, magnifierAngle, labelMaskEpsilon);
       const isSelected = selectedId && (node.item.id === selectedId);
       const showNodeLabel = isRotating || (!masked && !isSelected);
-      label.textContent = showNodeLabel ? (node.item.name || '') : '';
+      label.textContent = showNodeLabel ? (node.label ?? node.item.name ?? '') : '';
     });
 
     existingNodes.forEach((el, id) => {

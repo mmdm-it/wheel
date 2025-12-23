@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## [3.0.54] - 2025-12-23
+
+### Added
+- Focus Ring label formatter hooks per volume/level with context-aware magnifier vs node labels
+- Calendar years show numbers in nodes and A.D./B.C. suffix in magnifier (with periods)
+- Bible chapters/verses show numeric nodes and prefixed magnifier labels (Chapter/Verse)
+
+### Changed
+- createApp accepts custom label formatter and Focus Ring view uses formatted labels when provided
+
 ## [3.0.53] - 2025-12-22
 
 ### Fixed
