@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## [3.1.10] - 2025-12-23
+
+### Fixed
+- Mirrored Focus Ring band now renders outside the blur layer so it stays sharp while Dimension mode blurs the primary ring
+
+## [3.1.9] - 2025-12-23
+
+### Fixed
+- Dimension mode now immediately re-renders when toggled so the mirrored Focus Ring band stays visible while blurred
+
+## [3.1.8] - 2025-12-23
+
+### Added
+- Dimension mode now renders a mirrored Focus Ring band across the viewport center line (lower-left to upper-right arc) while keeping the same size and style as the primary band
+
+## [3.1.7] - 2025-12-23
+
+### Fixed
+- Blur mode now blocks drag/swipe rotation and momentum; rotation start/end and snapping respect the blur lock so only the Dimension button remains active
+
 ## [3.1.6] - 2025-12-23
 
 ### Changed

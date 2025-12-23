@@ -310,6 +310,7 @@
       let lastX = 0;
       let lastY = 0;
       let lastTime = 0;
+      const isInteractionLocked = () => Boolean(app?.isBlurred?.());
       const sensitivity = Math.PI / 4 / 100; // 100px → 45°
       const velocityThreshold = 0.4; // px/ms below this → no gain
       const gainSlope = 1.1; // linear slope past threshold
@@ -319,6 +320,10 @@
 
       const onPointerMove = event => {
         if (!isDragging) return;
+        if (isInteractionLocked()) {
+          isDragging = false;
+          return;
+        }
         const dx = event.clientX - lastX;
         const dy = event.clientY - lastY;
         const dt = event.timeStamp - lastTime;
@@ -338,6 +343,11 @@
       };
 
       svg.addEventListener('pointerdown', event => {
+        if (isInteractionLocked()) {
+          isDragging = false;
+          app.choreographer.stopMomentum();
+          return;
+        }
         const isNode = event.target && event.target.closest && event.target.closest('.focus-ring-node');
         if (isNode) {
           return; // click handler on node will manage rotation
@@ -353,6 +363,7 @@
       ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
         svg.addEventListener(type, () => {
           isDragging = false;
+          if (isInteractionLocked()) return;
           app.selectNearest();
           app.choreographer.stopMomentum();
         });

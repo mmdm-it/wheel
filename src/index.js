@@ -112,12 +112,27 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
   nav.setItems(normalized, safeIndex);
   const view = new FocusRingView(svgRoot);
   view.init();
-  const setBlur = enabled => view.setBlur(enabled);
   let isBlurred = false;
   let choreographer = null;
   let isRotating = false;
   let rotation = 0;
   let snapId = null;
+
+  const setBlur = enabled => {
+    isBlurred = Boolean(enabled);
+    view.setBlur(isBlurred);
+    if (isBlurred) {
+      isRotating = false;
+      if (choreographer) {
+        choreographer.stopMomentum();
+      }
+    }
+    if (typeof render === 'function') {
+      render(rotation);
+    }
+  };
+
+  const toggleBlur = () => setBlur(!isBlurred);
 
   const clampRotation = (value, bounds) => Math.max(bounds.minRotation, Math.min(bounds.maxRotation, value));
 
@@ -171,6 +186,8 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
       { ...magnifier, radius: magnifierRadius, label: formatLabel({ item: selected, context: 'magnifier' }) },
       {
         isRotating,
+        isBlurred,
+        viewport: vp,
         magnifierAngle: magnifier.angle,
         labelMaskEpsilon,
         onNodeClick: node => rotateNodeIntoMagnifier(node),
@@ -180,10 +197,7 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
           x: dimensionPosition.x,
           y: dimensionPosition.y,
           size: dimensionSize,
-          onClick: () => {
-            isBlurred = !isBlurred;
-            setBlur(isBlurred);
-          }
+          onClick: () => toggleBlur()
         }
       }
     );
@@ -270,7 +284,7 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
   };
 
   const rotateNodeIntoMagnifier = node => {
-    if (!node?.item) return;
+    if (!node?.item || isBlurred) return;
     const targetAngle = magnifier.angle;
     const baseAngle = getBaseAngleForOrder(node.item.order, vp, nodeSpacing);
     const desiredRotation = targetAngle - baseAngle;
@@ -343,6 +357,7 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
 
   const selectNearest = () => {
     cancelSnap();
+      if (isBlurred) return;
     if (!nav.items.length) return;
     const targetAngle = magnifier.angle;
     let closestIdx = nav.getCurrentIndex();
@@ -372,6 +387,7 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
   };
 
   render(rotation);
+    if (isBlurred) return;
 
   return {
     nav,
@@ -379,7 +395,17 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     choreographer,
     viewport: vp,
     selectNearest,
-    beginRotation: () => { isRotating = true; cancelSnap(); },
-    endRotation: () => selectNearest()
+    beginRotation: () => {
+      if (isBlurred) return;
+      isRotating = true;
+      cancelSnap();
+    },
+    endRotation: () => {
+      if (isBlurred) return;
+      selectNearest();
+    },
+    isBlurred: () => isBlurred,
+    setBlur,
+    toggleBlur
   };
 }

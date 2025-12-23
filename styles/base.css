@@ -58,6 +58,10 @@ svg {
   opacity: 1;
 }
 
+.focus-mirror-layer {
+  pointer-events: none;
+}
+
 .focus-ring-magnifier-circle {
   fill: var(--color-nodes);
   stroke: var(--color-magnifier-stroke, #000);

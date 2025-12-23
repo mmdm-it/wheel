@@ -3,12 +3,14 @@ export class FocusRingView {
     this.svgRoot = svgRoot;
     this.blurFilter = null;
     this.blurGroup = null;
+    this.mirrorLayer = null;
     this.nodesGroup = null;
     this.labelsGroup = null;
     this.magnifierGroup = null;
     this.magnifierCircle = null;
     this.magnifierLabel = null;
     this.band = null;
+    this.mirroredBand = null;
     this.dimensionIcon = null;
   }
 
@@ -28,12 +30,22 @@ export class FocusRingView {
     defs.appendChild(this.blurFilter);
     this.svgRoot.appendChild(defs);
 
+    this.mirrorLayer = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.mirrorLayer.setAttribute('class', 'focus-mirror-layer');
+    this.svgRoot.appendChild(this.mirrorLayer);
+
     this.blurGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.blurGroup.setAttribute('class', 'focus-blur-group');
     this.svgRoot.appendChild(this.blurGroup);
     this.band = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     this.band.setAttribute('class', 'focus-ring-band');
     this.blurGroup.appendChild(this.band);
+
+    this.mirroredBand = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    this.mirroredBand.setAttribute('class', 'focus-ring-band focus-ring-band-mirrored');
+    this.mirroredBand.setAttribute('display', 'none');
+    this.mirroredBand.style.pointerEvents = 'none';
+    this.mirrorLayer.appendChild(this.mirroredBand);
 
     this.dimensionIcon = document.createElementNS('http://www.w3.org/2000/svg', 'image');
     this.dimensionIcon.setAttribute('class', 'dimension-button');
@@ -74,6 +86,8 @@ export class FocusRingView {
   render(nodes, arcParams, viewportWindow, magnifier, options = {}) {
     if (!this.nodesGroup) return;
     const isRotating = Boolean(options.isRotating);
+    const isBlurred = Boolean(options.isBlurred);
+    const viewport = options.viewport;
     const magnifierAngle = options.magnifierAngle;
     const labelMaskEpsilon = options.labelMaskEpsilon ?? 0.0001;
     const onNodeClick = options.onNodeClick;
@@ -85,6 +99,21 @@ export class FocusRingView {
     }
     if (this.band && arcParams && viewportWindow) {
       this.band.setAttribute('d', this.#ringPath(arcParams, viewportWindow));
+    }
+
+    if (this.mirroredBand) {
+      if (isBlurred && arcParams && viewport) {
+        const mirroredArc = { ...arcParams, hubY: viewport?.LSd ?? arcParams.hubY };
+        const mirroredWindow = this.#mirroredWindow(viewport, mirroredArc);
+        if (mirroredWindow) {
+          this.mirroredBand.setAttribute('d', this.#ringPath(mirroredArc, mirroredWindow));
+          this.mirroredBand.removeAttribute('display');
+        } else {
+          this.mirroredBand.setAttribute('display', 'none');
+        }
+      } else {
+        this.mirroredBand.setAttribute('display', 'none');
+      }
     }
 
     if (this.dimensionIcon && dimensionIcon) {
@@ -226,6 +255,17 @@ export class FocusRingView {
       `A ${innerR} ${innerR} 0 ${largeArc} 0 ${iStart.x} ${iStart.y}`,
       'Z'
     ].join(' ');
+  }
+
+  #mirroredWindow(viewport, arcParams) {
+    if (!viewport || !arcParams) return null;
+    const { width, height } = viewport;
+    const startAngle = Math.atan2(height - arcParams.hubY, 0 - arcParams.hubX); // lower-left corner
+    let endAngle = Math.atan2(0 - arcParams.hubY, width - arcParams.hubX); // upper-right corner
+    if (endAngle <= startAngle) {
+      endAngle += Math.PI * 2;
+    }
+    return { startAngle, endAngle };
   }
 
   #isNearMagnifier(angle, magnifierAngle, epsilon) {
