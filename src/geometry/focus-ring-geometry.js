@@ -23,8 +23,10 @@ export function getNodeSpacing(viewport) {
 }
 
 export function getMagnifierAngle(viewport) {
-  // Fixed magnifier angle per design decision (142°)
-  return (142 * Math.PI) / 180;
+  const arc = getArcParameters(viewport);
+  const centerX = viewport.width / 2;
+  const centerY = viewport.height / 2;
+  return Math.atan2(centerY - arc.hubY, centerX - arc.hubX);
 }
 
 export function getMagnifierPosition(viewport) {
