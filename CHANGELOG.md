@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.3] - 2025-12-23
+
+### Added
+- Dimension button now toggles a full-viewport blur while keeping the dimension icon sharp to demo the dimension switch visual signature
+
 ## [3.1.2] - 2025-12-23
 
 ### Changed

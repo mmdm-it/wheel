@@ -58,7 +58,7 @@ export class FocusRingView {
     }
 
     if (this.dimensionIcon && dimensionIcon) {
-      const { href, x, y, size } = dimensionIcon;
+      const { href, x, y, size, onClick } = dimensionIcon;
       this.dimensionIcon.setAttributeNS('http://www.w3.org/1999/xlink', 'href', href);
       const w = size || 0;
       const h = size || 0;
@@ -66,6 +66,13 @@ export class FocusRingView {
       this.dimensionIcon.setAttribute('height', h);
       this.dimensionIcon.setAttribute('x', x - w / 2);
       this.dimensionIcon.setAttribute('y', y - h / 2);
+      if (onClick) {
+        this.dimensionIcon.onclick = onClick;
+        this.dimensionIcon.style.cursor = 'pointer';
+      } else {
+        this.dimensionIcon.onclick = null;
+        this.dimensionIcon.style.cursor = 'default';
+      }
       this.dimensionIcon.removeAttribute('display');
     } else if (this.dimensionIcon) {
       this.dimensionIcon.setAttribute('display', 'none');

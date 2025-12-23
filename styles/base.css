@@ -81,3 +81,15 @@ svg {
 .focus-ring-magnifier.rotating .focus-ring-magnifier-label {
   display: none;
 }
+
+svg.blur-on .focus-ring-band,
+svg.blur-on .focus-ring-nodes,
+svg.blur-on .focus-ring-labels,
+svg.blur-on .focus-ring-magnifier {
+  filter: blur(8px);
+  transition: filter 180ms ease;
+}
+
+svg.blur-on .dimension-button {
+  filter: none;
+}

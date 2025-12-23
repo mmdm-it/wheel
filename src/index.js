@@ -112,6 +112,11 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
   nav.setItems(normalized, safeIndex);
   const view = new FocusRingView(svgRoot);
   view.init();
+  const setBlur = enabled => {
+    if (!svgRoot) return;
+    svgRoot.classList.toggle('blur-on', enabled);
+  };
+  let isBlurred = false;
   let choreographer = null;
   let isRotating = false;
   let rotation = 0;
@@ -177,7 +182,11 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
           href: './art/dimension_sphere_black.svg',
           x: dimensionPosition.x,
           y: dimensionPosition.y,
-          size: dimensionSize
+          size: dimensionSize,
+          onClick: () => {
+            isBlurred = !isBlurred;
+            setBlur(isBlurred);
+          }
         }
       }
     );
