@@ -1,6 +1,7 @@
 export class FocusRingView {
   constructor(svgRoot) {
     this.svgRoot = svgRoot;
+    this.blurGroup = null;
     this.nodesGroup = null;
     this.labelsGroup = null;
     this.magnifierGroup = null;
@@ -10,11 +11,19 @@ export class FocusRingView {
     this.dimensionIcon = null;
   }
 
+  setBlur(enabled) {
+    if (!this.blurGroup) return;
+    this.blurGroup.classList.toggle('blur-on', enabled);
+  }
+
   init() {
     if (!this.svgRoot) return;
+    this.blurGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.blurGroup.setAttribute('class', 'focus-blur-group');
+    this.svgRoot.appendChild(this.blurGroup);
     this.band = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     this.band.setAttribute('class', 'focus-ring-band');
-    this.svgRoot.appendChild(this.band);
+    this.blurGroup.appendChild(this.band);
 
     this.dimensionIcon = document.createElementNS('http://www.w3.org/2000/svg', 'image');
     this.dimensionIcon.setAttribute('class', 'dimension-button');
@@ -31,14 +40,14 @@ export class FocusRingView {
     this.magnifierLabel.setAttribute('dominant-baseline', 'middle');
     this.magnifierGroup.appendChild(this.magnifierCircle);
     this.magnifierGroup.appendChild(this.magnifierLabel);
-    this.svgRoot.appendChild(this.magnifierGroup);
+    this.blurGroup.appendChild(this.magnifierGroup);
 
     this.nodesGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.nodesGroup.setAttribute('class', 'focus-ring-nodes');
-    this.svgRoot.appendChild(this.nodesGroup);
+    this.blurGroup.appendChild(this.nodesGroup);
     this.labelsGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.labelsGroup.setAttribute('class', 'focus-ring-labels');
-    this.svgRoot.appendChild(this.labelsGroup);
+    this.blurGroup.appendChild(this.labelsGroup);
   }
 
   render(nodes, arcParams, viewportWindow, magnifier, options = {}) {
@@ -50,8 +59,8 @@ export class FocusRingView {
     const selectedId = options.selectedId;
     const dimensionIcon = options.dimensionIcon;
     // Ensure magnifier group is on top for proper z-ordering
-    if (this.magnifierGroup?.parentNode === this.svgRoot) {
-      this.svgRoot.appendChild(this.magnifierGroup);
+    if (this.magnifierGroup?.parentNode === this.blurGroup) {
+      this.blurGroup.appendChild(this.magnifierGroup);
     }
     if (this.band && arcParams && viewportWindow) {
       this.band.setAttribute('d', this.#ringPath(arcParams, viewportWindow));

@@ -82,14 +82,11 @@ svg {
   display: none;
 }
 
-svg.blur-on .focus-ring-band,
-svg.blur-on .focus-ring-nodes,
-svg.blur-on .focus-ring-labels,
-svg.blur-on .focus-ring-magnifier {
+.focus-blur-group.blur-on {
   filter: blur(8px);
   transition: filter 180ms ease;
 }
 
-svg.blur-on .dimension-button {
+.dimension-button {
   filter: none;
 }

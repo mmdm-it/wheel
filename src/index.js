@@ -112,10 +112,7 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
   nav.setItems(normalized, safeIndex);
   const view = new FocusRingView(svgRoot);
   view.init();
-  const setBlur = enabled => {
-    if (!svgRoot) return;
-    svgRoot.classList.toggle('blur-on', enabled);
-  };
+  const setBlur = enabled => view.setBlur(enabled);
   let isBlurred = false;
   let choreographer = null;
   let isRotating = false;

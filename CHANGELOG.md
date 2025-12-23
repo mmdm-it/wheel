@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.4] - 2025-12-23
+
+### Fixed
+- Blur demo now works on mobile by grouping focus-ring content under a blur group (dimension icon stays sharp)
+
 ## [3.1.3] - 2025-12-23
 
 ### Added
