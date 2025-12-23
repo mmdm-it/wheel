@@ -49,8 +49,8 @@ export function getBaseAngleForOrder(order, viewport, nodeSpacing) {
 export function getViewportWindow(viewport, nodeSpacing) {
   const { width, height } = viewport;
   const { hubX, hubY } = getArcParameters(viewport);
-  // Arc covers from the lower-left corner up to the constitutional end at 180°
-  const startAngle = Math.atan2(height - hubY, 0 - hubX);
+  // Arc covers from the lower-right corner up to the constitutional end at 180°
+  const startAngle = Math.atan2(height - hubY, width - hubX);
   const endAngle = Math.PI; // constitutional constant at the left edge
   const arcLength = endAngle - startAngle;
   const spacing = nodeSpacing ?? getNodeSpacing(viewport);
