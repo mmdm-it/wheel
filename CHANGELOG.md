@@ -9,6 +9,7 @@
 
 ### Fixed
 - Focus ring band arc start restored to lower-right corner so the band spans the full visible sweep
+- Magnifier angle fixed at 142° per design decision
 
 ### Changed
 - Per-state magnifier stroke colors (idle vs rotating) defined per volume theme to avoid color regressions
