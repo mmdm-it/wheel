@@ -10,8 +10,12 @@
       "volume_description": "Year/month synthetic dataset for stress testing",
       "leaf_level": "month",
       "focus_ring_startup": {
-        "initial_magnified_item": "2026",
-        "top_navigation_level": "year"
+        "initial_magnified_item": "1",
+        "top_navigation_level": "year",
+        "arrangement": "cousins-with-gaps"
+      },
+      "focus_ring_arrangements": {
+        "year": "cousins-with-gaps"
       },
       "hierarchy_levels": {
         "year": {

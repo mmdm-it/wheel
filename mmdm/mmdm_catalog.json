@@ -10,8 +10,13 @@
             "volume_description": "Water-Cooled Exhaust Manifolds Database",
             "leaf_level": "model",
             "focus_ring_startup": {
-                "initial_magnified_item": 24,
-                "top_navigation_level": "manufacturer"
+                "initial_magnified_item": "Lockwood-Ash",
+                "top_navigation_level": "manufacturer",
+                "arrangement": "cousins-flat"
+            },
+            "focus_ring_arrangements": {
+                "manufacturer": "cousins-flat",
+                "model": "siblings-only"
             },
             "ui_limits": {
                 "focus_ring_max_depth": 6,
