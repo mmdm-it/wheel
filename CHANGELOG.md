@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## [3.0.56] - 2025-12-23
+
+### Fixed
+- Calendar Focus Ring node labels now rotate to match other volumes while remaining centered
+
+## [3.0.55] - 2025-12-23
+
+### Changed
+- Calendar volume centers Focus Ring node labels; other volumes unchanged
+
 ## [3.0.54] - 2025-12-23
 
 ### Added
@@ -11,16 +21,6 @@
 
 ### Changed
 - createApp accepts custom label formatter and Focus Ring view uses formatted labels when provided
-
-## [3.0.55] - 2025-12-23
-
-### Changed
-- Calendar volume centers Focus Ring node labels; other volumes unchanged
-
-## [3.0.56] - 2025-12-23
-
-### Fixed
-- Calendar Focus Ring node labels now rotate to match other volumes while remaining centered
 
 ## [3.0.53] - 2025-12-22
 
