@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## [3.1.1] - 2025-12-23
+
+### Added
+- Startup diagnostic log for magnifier angle (radians and degrees) to aid geometry validation
+
+### Fixed
+- Focus ring band arc start restored to lower-right corner so the band spans the full visible sweep
+
+### Changed
+- Per-state magnifier stroke colors (idle vs rotating) defined per volume theme to avoid color regressions
+
 ## [3.1.0] - 2025-12-23
 
 ### Added
