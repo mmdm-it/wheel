@@ -97,6 +97,13 @@ export class FocusRingView {
     if (this.magnifierGroup?.parentNode === this.blurGroup) {
       this.blurGroup.appendChild(this.magnifierGroup);
     }
+    if (this.blurGroup && this.svgRoot) {
+      // Keep layering: base blur content, then mirrored band, then dimension icon
+      this.svgRoot.appendChild(this.blurGroup);
+      if (this.mirrorLayer) this.svgRoot.appendChild(this.mirrorLayer);
+      if (this.dimensionIcon) this.svgRoot.appendChild(this.dimensionIcon);
+    }
+
     if (this.band && arcParams && viewportWindow) {
       this.band.setAttribute('d', this.#ringPath(arcParams, viewportWindow));
     }

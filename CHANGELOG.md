@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.12] - 2025-12-23
+
+### Fixed
+- Secondary (mirrored) stratum band now renders above blurred content so underlying labels no longer show through; band remains unblurred
+
 ## [3.1.11] - 2025-12-23
 
 ### Changed
