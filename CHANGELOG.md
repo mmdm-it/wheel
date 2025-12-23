@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.0.47] - 2025-12-22
+
+### Changed
+- Neighbor logging now reports gaps/unknowns explicitly (magnifier + two before/after)
+
 ## [3.0.46] - 2025-12-22
 
 ### Added

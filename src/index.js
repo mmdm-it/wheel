@@ -139,10 +139,15 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
 
     if (!isRotating && selected) {
       const neighbors = getNeighbors(nav.getCurrentIndex(), 2);
+      const labelOrGap = item => {
+        if (item === null) return '(gap)';
+        if (item?.name) return item.name;
+        return item?.id || '(unknown)';
+      };
       console.info('[FocusRing] magnifier + neighbors', {
-        magnifier: selected?.name || selected?.id,
-        before: neighbors.before.map(n => n?.name || n?.id).filter(Boolean),
-        after: neighbors.after.map(n => n?.name || n?.id).filter(Boolean)
+        magnifier: labelOrGap(selected),
+        before: neighbors.before.map(labelOrGap),
+        after: neighbors.after.map(labelOrGap)
       });
     }
   };
@@ -155,12 +160,10 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
       const prevIdx = index - i;
       const nextIdx = index + i;
       if (prevIdx >= 0 && before.length < count) {
-        const item = nav.items[prevIdx];
-        if (item) before.push(item);
+        before.push(nav.items[prevIdx]);
       }
       if (nextIdx < nav.items.length && after.length < count) {
-        const item = nav.items[nextIdx];
-        if (item) after.push(item);
+        after.push(nav.items[nextIdx]);
       }
     }
     return { before, after };
