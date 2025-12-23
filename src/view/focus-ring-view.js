@@ -64,8 +64,10 @@ export class FocusRingView {
     if (!this.blurGroup) return;
     if (enabled) {
       this.blurGroup.setAttribute('filter', 'url(#focus-blur-filter)');
+      this.blurGroup.style.pointerEvents = 'none';
     } else {
       this.blurGroup.removeAttribute('filter');
+      this.blurGroup.style.pointerEvents = '';
     }
   }
 

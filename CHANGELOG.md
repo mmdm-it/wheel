@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.6] - 2025-12-23
+
+### Changed
+- When blurred (dimension mode), all ring interactions are disabled; only the Dimension button remains clickable
+
 ## [3.1.5] - 2025-12-23
 
 ### Fixed
