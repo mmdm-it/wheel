@@ -25,7 +25,7 @@ export class FocusRingView {
     this.blurFilter.setAttribute('width', '140%');
     this.blurFilter.setAttribute('height', '140%');
     const blur = document.createElementNS('http://www.w3.org/2000/svg', 'feGaussianBlur');
-    blur.setAttribute('stdDeviation', '4');
+    blur.setAttribute('stdDeviation', '8');
     this.blurFilter.appendChild(blur);
     defs.appendChild(this.blurFilter);
     this.svgRoot.appendChild(defs);

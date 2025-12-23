@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.11] - 2025-12-23
+
+### Changed
+- Doubled the blur strength applied in Dimension mode for a stronger visual separation
+
 ## [3.1.10] - 2025-12-23
 
 ### Fixed
