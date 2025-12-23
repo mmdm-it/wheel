@@ -136,6 +136,34 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
         selectedId: selected?.id
       }
     );
+
+    if (!isRotating && selected) {
+      const neighbors = getNeighbors(nav.getCurrentIndex(), 2);
+      console.info('[FocusRing] magnifier + neighbors', {
+        magnifier: selected?.name || selected?.id,
+        before: neighbors.before.map(n => n?.name || n?.id).filter(Boolean),
+        after: neighbors.after.map(n => n?.name || n?.id).filter(Boolean)
+      });
+    }
+  };
+
+  const getNeighbors = (index, count = 2) => {
+    const before = [];
+    const after = [];
+    if (!nav.items.length) return { before, after };
+    for (let i = 1; i <= nav.items.length && (before.length < count || after.length < count); i += 1) {
+      const prevIdx = index - i;
+      const nextIdx = index + i;
+      if (prevIdx >= 0 && before.length < count) {
+        const item = nav.items[prevIdx];
+        if (item) before.push(item);
+      }
+      if (nextIdx < nav.items.length && after.length < count) {
+        const item = nav.items[nextIdx];
+        if (item) after.push(item);
+      }
+    }
+    return { before, after };
   };
 
   const rotateNodeIntoMagnifier = node => {

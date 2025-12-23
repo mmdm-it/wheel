@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.0.46] - 2025-12-22
+
+### Added
+- Console logging of magnifier label and two neighbor node labels when idle
+
 ## [3.0.45] - 2025-12-22
 
 ### Fixed
