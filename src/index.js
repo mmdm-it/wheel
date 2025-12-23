@@ -73,9 +73,12 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
   const arcParams = getArcParameters(vp);
   const windowInfo = getViewportWindow(vp, nodeSpacing);
   const magnifier = getMagnifierPosition(vp);
-  const dimensionAngle = (135 * Math.PI) / 180;
+
+  // Dimension button placement: bottom-right corner angle + 9° at 90% radius, sized to 1.8× magnifier radius
+  const bottomRightAngle = windowInfo.startAngle;
+  const dimensionAngle = bottomRightAngle + (9 * Math.PI) / 180;
   const dimensionRadius = arcParams.radius * 0.9;
-  const dimensionSize = nodeRadius * 2;
+  const dimensionSize = magnifierRadius * 1.8;
   const dimensionPosition = {
     x: arcParams.hubX + dimensionRadius * Math.cos(dimensionAngle),
     y: arcParams.hubY + dimensionRadius * Math.sin(dimensionAngle)

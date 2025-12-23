@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## [3.1.2] - 2025-12-23
+
+### Changed
+- Dimension button repositioned to bottom-right entry angle +9°, radius set to 90% of Focus Ring, and size scaled to 1.8× magnifier radius
+
+## [3.1.1] - 2025-12-23
+
+### Changed
+- Dimension button now positioned at bottom-right entry angle +7° with 93% Focus Ring radius and sized to 2× magnifier radius
+
 ## [3.1.0] - 2025-12-23
 
 ### Added
