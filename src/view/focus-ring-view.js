@@ -1,6 +1,7 @@
 export class FocusRingView {
   constructor(svgRoot) {
     this.svgRoot = svgRoot;
+    this.blurFilter = null;
     this.blurGroup = null;
     this.nodesGroup = null;
     this.labelsGroup = null;
@@ -11,13 +12,22 @@ export class FocusRingView {
     this.dimensionIcon = null;
   }
 
-  setBlur(enabled) {
-    if (!this.blurGroup) return;
-    this.blurGroup.classList.toggle('blur-on', enabled);
-  }
-
   init() {
     if (!this.svgRoot) return;
+
+    const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+    this.blurFilter = document.createElementNS('http://www.w3.org/2000/svg', 'filter');
+    this.blurFilter.setAttribute('id', 'focus-blur-filter');
+    this.blurFilter.setAttribute('x', '-20%');
+    this.blurFilter.setAttribute('y', '-20%');
+    this.blurFilter.setAttribute('width', '140%');
+    this.blurFilter.setAttribute('height', '140%');
+    const blur = document.createElementNS('http://www.w3.org/2000/svg', 'feGaussianBlur');
+    blur.setAttribute('stdDeviation', '4');
+    this.blurFilter.appendChild(blur);
+    defs.appendChild(this.blurFilter);
+    this.svgRoot.appendChild(defs);
+
     this.blurGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.blurGroup.setAttribute('class', 'focus-blur-group');
     this.svgRoot.appendChild(this.blurGroup);
@@ -48,6 +58,15 @@ export class FocusRingView {
     this.labelsGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.labelsGroup.setAttribute('class', 'focus-ring-labels');
     this.blurGroup.appendChild(this.labelsGroup);
+  }
+
+  setBlur(enabled) {
+    if (!this.blurGroup) return;
+    if (enabled) {
+      this.blurGroup.setAttribute('filter', 'url(#focus-blur-filter)');
+    } else {
+      this.blurGroup.removeAttribute('filter');
+    }
   }
 
   render(nodes, arcParams, viewportWindow, magnifier, options = {}) {

@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.5] - 2025-12-23
+
+### Fixed
+- Blur demo now uses an SVG Gaussian blur filter for better mobile browser support (keeps dimension icon sharp)
+
 ## [3.1.4] - 2025-12-23
 
 ### Fixed

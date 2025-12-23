@@ -82,11 +82,6 @@ svg {
   display: none;
 }
 
-.focus-blur-group.blur-on {
-  filter: blur(8px);
-  transition: filter 180ms ease;
-}
-
 .dimension-button {
   filter: none;
 }
