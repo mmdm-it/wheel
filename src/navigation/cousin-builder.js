@@ -90,6 +90,10 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
   if (!bible) return { items: [], selectedIndex: 0, preserveOrder: true };
   const testaments = Object.entries(bible.testaments || {});
   const resolveTestamentId = () => {
+    if (initialItemId) {
+      const located = findBibleBook(manifest, initialItemId);
+      if (located?.testamentId) return located.testamentId;
+    }
     if (bookId) {
       const located = findBibleBook(manifest, bookId);
       if (located?.testamentId) return located.testamentId;
