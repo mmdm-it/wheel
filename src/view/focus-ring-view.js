@@ -92,7 +92,8 @@ export class FocusRingView {
         label.setAttribute('y', node.y);
         label.setAttribute('text-anchor', 'middle');
         label.setAttribute('dominant-baseline', 'middle');
-        label.removeAttribute('transform');
+        const rotation = (node.angle * 180) / Math.PI + 180;
+        label.setAttribute('transform', `rotate(${rotation}, ${node.x}, ${node.y})`);
       } else {
         const radius = nodeRadius;
         const offset = radius * -1.3; // pull anchor notably toward the hub without hardcoded px gap

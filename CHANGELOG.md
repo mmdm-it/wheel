@@ -17,6 +17,11 @@
 ### Changed
 - Calendar volume centers Focus Ring node labels; other volumes unchanged
 
+## [3.0.56] - 2025-12-23
+
+### Fixed
+- Calendar Focus Ring node labels now rotate to match other volumes while remaining centered
+
 ## [3.0.53] - 2025-12-22
 
 ### Fixed
