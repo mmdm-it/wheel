@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.17] - 2025-12-23
+
+### Fixed
+- Secondary Stratum magnifier stroke now mirrors the primary magnifier’s y-position across the viewport height (instead of following the mirrored arc), ensuring it remains visible in Dimension mode
+
 ## [3.1.16] - 2025-12-23
 
 ### Added

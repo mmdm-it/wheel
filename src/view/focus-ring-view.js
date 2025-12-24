@@ -132,23 +132,21 @@ export class FocusRingView {
 
     if (this.mirroredMagnifier) {
       if (isBlurred && arcParams && viewport && magnifier) {
-        const mirroredArc = this.#mirroredArc(arcParams, viewport);
-        const angle = magnifier.angle ?? 0;
-        const x = mirroredArc.hubX + mirroredArc.radius * Math.cos(angle);
-        const y = mirroredArc.hubY + mirroredArc.radius * Math.sin(angle);
         const radius = magnifier.radius || 14;
-        this.mirroredMagnifier.setAttribute('cx', x);
-        this.mirroredMagnifier.setAttribute('cy', y);
+        const mirroredX = magnifier.x;
+        const mirroredY = (viewport.height ?? viewport.LSd ?? magnifier.y) - magnifier.y;
+        this.mirroredMagnifier.setAttribute('cx', mirroredX);
+        this.mirroredMagnifier.setAttribute('cy', mirroredY);
         this.mirroredMagnifier.setAttribute('r', radius);
         this.mirroredMagnifier.removeAttribute('display');
         if (options.debug) {
           console.info('[FocusRingView] mirrored magnifier', {
-            hubX: mirroredArc.hubX,
-            hubY: mirroredArc.hubY,
+            mirroredX,
+            mirroredY,
             radius,
-            angle,
-            x,
-            y,
+            sourceX: magnifier.x,
+            sourceY: magnifier.y,
+            viewportHeight: viewport.height,
             isBlurred
           });
         }
