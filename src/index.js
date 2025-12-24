@@ -161,14 +161,6 @@ export function createApp({
   const clampSecondaryRotation = (value, bounds) => Math.max(bounds.minRotation, Math.min(bounds.maxRotation, value));
 
   const secondaryArc = { ...arcParams, hubY: vp.LSd ?? arcParams.hubY };
-  const secondaryWindow = (() => {
-    const startAngle = Math.atan2(vp.height - secondaryArc.hubY, 0 - secondaryArc.hubX);
-    let endAngle = Math.atan2(0 - secondaryArc.hubY, vp.width - secondaryArc.hubX);
-    if (endAngle <= startAngle) endAngle += Math.PI * 2;
-    const arcLength = endAngle - startAngle;
-    const maxNodes = Math.min(Math.floor(arcLength / nodeSpacing), 21);
-    return { startAngle, endAngle, arcLength, maxNodes };
-  })();
 
   const getSecondaryMagnifier = () => {
     const y = (vp.height ?? vp.LSd ?? magnifier.y) - magnifier.y;
@@ -179,6 +171,15 @@ export function createApp({
       y,
       radius: magnifierRadius
     };
+  };
+
+  const getSecondaryWindow = () => {
+    const secMag = getSecondaryMagnifier();
+    const arcLength = windowInfo.arcLength;
+    const startAngle = secMag.angle - arcLength / 2;
+    const endAngle = secMag.angle + arcLength / 2;
+    const maxNodes = windowInfo.maxNodes;
+    return { startAngle, endAngle, arcLength, maxNodes };
   };
 
   const buildVisibleItems = () => nav.items;
@@ -206,6 +207,7 @@ export function createApp({
   const computeSecondaryBounds = visibleItems => {
     const nonNull = visibleItems.filter(item => item !== null);
     if (!nonNull.length) return { minRotation: 0, maxRotation: 0 };
+    const window = getSecondaryWindow();
     const firstOrder = Number.isFinite(nonNull[0].order) ? nonNull[0].order : visibleItems.indexOf(nonNull[0]);
     const lastOrder = Number.isFinite(nonNull[nonNull.length - 1].order)
       ? nonNull[nonNull.length - 1].order
@@ -213,8 +215,8 @@ export function createApp({
     const firstAngle = getSecondaryBaseAngle(firstOrder);
     const lastAngle = getSecondaryBaseAngle(lastOrder);
     return {
-      minRotation: secondaryWindow.startAngle - firstAngle,
-      maxRotation: secondaryWindow.endAngle - lastAngle
+      minRotation: window.startAngle - firstAngle,
+      maxRotation: window.endAngle - lastAngle
     };
   };
 
@@ -238,13 +240,14 @@ export function createApp({
 
   const calculateSecondaryNodePositions = (allItems, rotationOffset = secondaryRotation) => {
     const secMag = getSecondaryMagnifier();
+    const secWindow = getSecondaryWindow();
     const positions = [];
     allItems.forEach((item, index) => {
       if (item === null) return;
       const order = Number.isFinite(item.order) ? item.order : index;
       const baseAngle = getSecondaryBaseAngle(order);
       const rotatedAngle = baseAngle + rotationOffset;
-      if (rotatedAngle < secondaryWindow.startAngle || rotatedAngle > secondaryWindow.endAngle) return;
+      if (rotatedAngle < secWindow.startAngle || rotatedAngle > secWindow.endAngle) return;
       positions.push({
         item,
         index,
@@ -512,6 +515,34 @@ export function createApp({
     isRotating = false;
     render(rotation, false);
   };
+
+    const selectSecondaryNearest = () => {
+      if (!secondaryNav.items.length) return;
+      const secMag = getSecondaryMagnifier();
+      let closestIdx = secondaryNav.getCurrentIndex();
+      let closestDiff = Infinity;
+      let closestAngle = null;
+      secondaryNav.items.forEach((item, idx) => {
+        if (item === null) return;
+        const baseAngle = getSecondaryBaseAngle(item.order);
+        const rotated = baseAngle + secondaryRotation;
+        const diff = Math.abs(rotated - secMag.angle);
+        if (diff < closestDiff) {
+          closestDiff = diff;
+          closestIdx = idx;
+          closestAngle = rotated;
+        }
+      });
+      secondaryNav.selectIndex(closestIdx);
+      if (closestAngle !== null) {
+        const delta = secMag.angle - closestAngle;
+        const targetRotation = secondaryRotation + delta;
+        secondaryRotation = targetRotation;
+        render(rotation);
+        return;
+      }
+      render(rotation, false);
+    };
 
   render(rotation);
     if (isBlurred) return;

@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.21] - 2025-12-23
+
+### Fixed
+- Secondary Stratum language ring now centers its window on the mirrored magnifier, preventing initial nodes from pinning to the lower-left entry point
+
 ## [3.1.20] - 2025-12-23
 
 ### Added
