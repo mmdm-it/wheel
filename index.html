@@ -172,7 +172,9 @@
             items.push({
               id: bookId,
               name: namesMap?.[bookId] || book?.book_name || book?.name || bookId,
-              sort: book?.sort_number || items.length + 1
+              sort: book?.sort_number || items.length + 1,
+              sectionId,
+              parentName: section?.name || sectionId
             });
           });
         });

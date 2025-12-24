@@ -116,7 +116,8 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
         sort: Number.isFinite(book?.sort_number) ? book.sort_number : chain.length,
         order: chain.length,
         testamentId: activeTestamentId,
-        sectionId: section?.name || section?.id
+        sectionId: section?.name || section?.id,
+        parentName: section?.name || section?.id
       });
     });
     const isLastSection = sectionIdx === sections.length - 1;

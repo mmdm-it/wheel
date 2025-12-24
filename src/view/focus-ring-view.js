@@ -16,6 +16,10 @@ export class FocusRingView {
     this.mirroredMagnifier = null;
     this.mirroredMagnifierLabel = null;
     this.dimensionIcon = null;
+    this.parentButtonOuter = null;
+    this.parentButtonInner = null;
+    this.parentButtonOuterLabel = null;
+    this.parentButtonInnerLabel = null;
   }
 
   init() {
@@ -45,6 +49,26 @@ export class FocusRingView {
     this.band = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     this.band.setAttribute('class', 'focus-ring-band');
     this.blurGroup.appendChild(this.band);
+
+    this.parentButtonOuter = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    this.parentButtonOuter.setAttribute('class', 'focus-ring-magnifier-circle');
+    this.blurGroup.appendChild(this.parentButtonOuter);
+
+    this.parentButtonInner = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    this.parentButtonInner.setAttribute('class', 'focus-ring-magnifier-circle');
+    this.blurGroup.appendChild(this.parentButtonInner);
+
+    this.parentButtonOuterLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    this.parentButtonOuterLabel.setAttribute('class', 'focus-ring-magnifier-label');
+    this.parentButtonOuterLabel.setAttribute('text-anchor', 'middle');
+    this.parentButtonOuterLabel.setAttribute('dominant-baseline', 'middle');
+    this.blurGroup.appendChild(this.parentButtonOuterLabel);
+
+    this.parentButtonInnerLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    this.parentButtonInnerLabel.setAttribute('class', 'focus-ring-magnifier-label');
+    this.parentButtonInnerLabel.setAttribute('text-anchor', 'middle');
+    this.parentButtonInnerLabel.setAttribute('dominant-baseline', 'middle');
+    this.blurGroup.appendChild(this.parentButtonInnerLabel);
 
     this.mirroredBand = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     this.mirroredBand.setAttribute('class', 'focus-ring-band focus-ring-band-mirrored');
@@ -120,6 +144,7 @@ export class FocusRingView {
     const onNodeClick = options.onNodeClick;
     const selectedId = options.selectedId;
     const dimensionIcon = options.dimensionIcon;
+    const parentButtons = options.parentButtons;
     // Ensure magnifier group is on top for proper z-ordering
     if (this.magnifierGroup?.parentNode === this.blurGroup) {
       this.blurGroup.appendChild(this.magnifierGroup);
@@ -404,6 +429,58 @@ export class FocusRingView {
       this.magnifierGroup.removeAttribute('display');
     } else if (this.magnifierGroup) {
       this.magnifierGroup.setAttribute('display', 'none');
+    }
+
+    if (this.parentButtonOuter && this.parentButtonInner && arcParams && magnifier) {
+      const { hubX, hubY, radius: focusRadius } = arcParams;
+      const magRadius = magnifier.radius || 14;
+
+      // Parent button: explicit viewport-relative placement (top-left origin)
+      const ss = viewport?.SSd ?? 0;
+      const ls = viewport?.LSd ?? viewport?.height ?? 0;
+      const outerX = ss * 0.13;
+      const outerY = ls * 0.93;
+
+      // Children button remains hub-relative
+      const innerAngle = (155 * Math.PI) / 180;
+      const innerDist = focusRadius * 0.8;
+      const innerX = hubX + innerDist * Math.cos(innerAngle);
+      const innerY = hubY + innerDist * Math.sin(innerAngle);
+
+      this.parentButtonOuter.setAttribute('cx', outerX);
+      this.parentButtonOuter.setAttribute('cy', outerY);
+      this.parentButtonOuter.setAttribute('r', magRadius);
+      this.parentButtonOuter.removeAttribute('display');
+
+      this.parentButtonInner.setAttribute('cx', innerX);
+      this.parentButtonInner.setAttribute('cy', innerY);
+      this.parentButtonInner.setAttribute('r', magRadius);
+      this.parentButtonInner.removeAttribute('display');
+
+      if (this.parentButtonOuterLabel) {
+        const text = parentButtons?.outerLabel || '';
+        this.parentButtonOuterLabel.setAttribute('x', outerX);
+        this.parentButtonOuterLabel.setAttribute('y', outerY);
+        this.parentButtonOuterLabel.removeAttribute('transform');
+        this.parentButtonOuterLabel.textContent = text;
+        if (text) this.parentButtonOuterLabel.removeAttribute('display');
+        else this.parentButtonOuterLabel.setAttribute('display', 'none');
+      }
+
+      if (this.parentButtonInnerLabel) {
+        const text = parentButtons?.innerLabel || '';
+        this.parentButtonInnerLabel.setAttribute('x', innerX);
+        this.parentButtonInnerLabel.setAttribute('y', innerY);
+        this.parentButtonInnerLabel.removeAttribute('transform');
+        this.parentButtonInnerLabel.textContent = text;
+        if (text) this.parentButtonInnerLabel.removeAttribute('display');
+        else this.parentButtonInnerLabel.setAttribute('display', 'none');
+      }
+    } else {
+      if (this.parentButtonOuter) this.parentButtonOuter.setAttribute('display', 'none');
+      if (this.parentButtonInner) this.parentButtonInner.setAttribute('display', 'none');
+      if (this.parentButtonOuterLabel) this.parentButtonOuterLabel.setAttribute('display', 'none');
+      if (this.parentButtonInnerLabel) this.parentButtonInnerLabel.setAttribute('display', 'none');
     }
   }
 

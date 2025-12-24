@@ -186,6 +186,25 @@ export function createApp({
     return { startAngle, endAngle, arcLength, maxNodes };
   };
 
+  const getParentLabel = item => {
+    if (!item) return '';
+    const pick = () => {
+      if (item.parentName) return item.parentName;
+      if (item.sectionId) return item.sectionId;
+      if (item.section) return item.section;
+      if (item.parent) return item.parent;
+      if (item.chapter && item.book) return `${item.book} ${item.chapter}`;
+      if (item.book) return item.book;
+      if (typeof item.id === 'string' && item.id.includes('__')) {
+        const parts = item.id.split('__');
+        if (parts.length >= 2) return parts[1];
+      }
+      return '';
+    };
+    const label = pick();
+    return typeof label === 'string' ? label.toUpperCase() : label;
+  };
+
   const buildVisibleItems = () => nav.items;
 
   const computeBounds = visibleItems => {
@@ -295,6 +314,7 @@ export function createApp({
     const secondaryMagnifier = getSecondaryMagnifier();
     const secondarySelected = secondaryNav.getCurrent();
     const secondaryNodes = calculateSecondaryNodePositions(secondaryNav.items, secondaryRotation);
+    const parentLabel = getParentLabel(selected);
 
     view.render(
       nodes,
@@ -316,6 +336,10 @@ export function createApp({
           y: dimensionPosition.y,
           size: dimensionSize,
           onClick: () => toggleBlur()
+        },
+        parentButtons: {
+          innerLabel: 'CHILDREN (IN)',
+          outerLabel: parentLabel
         },
         secondary: isBlurred && secondaryNav.items.length > 0 ? {
           nodes: secondaryNodes,

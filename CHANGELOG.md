@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## [3.2.3] - 2025-12-24
+
+### Changed
+- Parent button X=0.13*SSd
+
+
+## [3.2.2] - 2025-12-24
+
+### Changed
+- Parent button Y=0.93*LSd
+
+
+## [3.2.1] - 2025-12-24
+
+### Changed
+- Parent button labels horizontal and parent label binding
+
+
 ## [3.2.0] - 2025-12-24
 
 ### Changed
