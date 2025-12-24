@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.2.11] - 2025-12-24
+
+### Changed
+- Locale defaults to translation language when `lang` param is absent
+- Parent button uses localized section names for Bible chains
+
 ## [3.2.8] - 2025-12-24
 
 ### Fixed

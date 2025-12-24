@@ -55,7 +55,7 @@
       const volumeRoot = volume === 'catalog' ? manifest?.MMdM : volume === 'calendar' ? manifest?.Calendar : manifest?.Gutenberg_Bible;
       const startup = volumeRoot?.display_config?.focus_ring_startup || {};
       const arrangements = volumeRoot?.display_config?.focus_ring_arrangements || {};
-      const locale = params.get('lang') || 'english';
+      const localeParam = params.get('lang');
       const level = params.get('level')
         || startup.top_navigation_level
         || (volume === 'bible' ? 'book' : volume === 'calendar' ? 'year' : 'manufacturer');
@@ -82,7 +82,7 @@
           chapterId: params.get('chapter'),
           translation: params.get('translation') || 'NAB',
           cousinMode,
-          locale,
+          locale: localeParam || null,
           dimensionEnabled
         }
       };
@@ -310,7 +310,8 @@
         const chain = buildBibleBookCousinChain(manifest, {
           testamentId: options.testamentId,
           bookId: options.bookId || 'GENE',
-          initialItemId
+          initialItemId,
+          names: namesMap
         });
         if (namesMap && typeof namesMap === 'object') {
           const bookNames = namesMap.books || namesMap;
@@ -499,6 +500,7 @@
       applyTheme(manifest, volume);
       const translationId = options.translation || 'NAB';
       const translationLang = translationsMeta?.translations?.[translationId]?.language || 'english';
+      const resolvedLocale = options.locale || translationLang || 'english';
       const localeNames = translationsMeta?.names?.[translationLang] || {};
       const namesMap = {
         books: localeNames.books || localeNames,
@@ -510,7 +512,7 @@
         console.error('No items found for volume', volume);
         return;
       }
-      const labelFormatter = makeLabelFormatter({ volume, level: options.level, locale: options.locale || 'english', namesMap });
+      const labelFormatter = makeLabelFormatter({ volume, level: options.level, locale: resolvedLocale, namesMap });
       const shouldCenterLabel = ({ item }) => volume === 'calendar';
       const app = createApp({
         svgRoot: svg,
@@ -522,7 +524,7 @@
         shouldCenterLabel,
         secondaryItems: secondary.items,
         secondarySelectedIndex: secondary.selectedIndex,
-        contextOptions: options,
+        contextOptions: { ...options, locale: resolvedLocale },
         onSelectSecondary: translationId => {
           const url = new URL(window.location.href);
           const currentItem = app?.nav?.getCurrent?.();
