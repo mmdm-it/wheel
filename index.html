@@ -522,6 +522,7 @@
         shouldCenterLabel,
         secondaryItems: secondary.items,
         secondarySelectedIndex: secondary.selectedIndex,
+        contextOptions: options,
         onSelectSecondary: translationId => {
           const url = new URL(window.location.href);
           const currentItem = app?.nav?.getCurrent?.();

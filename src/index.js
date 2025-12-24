@@ -51,7 +51,6 @@ function normalizeItems(items, { preserveOrder = false } = {}) {
   const sorted = [...items]
     .sort((a, b) => {
       const as = a.sort ?? a.order ?? 0;
-      names: namesMap
       const bs = b.sort ?? b.order ?? 0;
       if (as === bs) return (a.name || '').localeCompare(b.name || '');
       return as - bs;
@@ -70,7 +69,8 @@ export function createApp({
   shouldCenterLabel,
   secondaryItems = [],
   secondarySelectedIndex = 0,
-  onSelectSecondary
+  onSelectSecondary,
+  contextOptions = {}
 }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const normalized = normalizeItems(items, { preserveOrder });
@@ -397,7 +397,7 @@ export function createApp({
       };
 
       console.info('[FocusRing] magnifier + neighbors', {
-        language: options?.locale || 'english',
+        language: contextOptions?.locale || 'english',
         magnifier: formatMagnifier(),
         parentButton: {
           outerLabel: parentLabel || '',
