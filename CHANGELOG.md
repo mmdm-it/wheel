@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.2.8] - 2025-12-24
+
+### Fixed
+- Parent button section label now follows the active translation in cousin mode
+
 ## [3.2.7] - 2025-12-24
 
 ### Added
