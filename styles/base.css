@@ -68,6 +68,10 @@ svg {
   stroke-width: 1px;
 }
 
+.focus-ring-magnifier-circle-mirrored {
+  filter: none;
+}
+
 .focus-ring-magnifier-label {
   fill: var(--color-text);
   font-family: var(--magnifier-font, 'Montserrat'), sans-serif;

@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.13] - 2025-12-23
+
+### Added
+- Mirrored magnifier stroke circle in the Secondary Stratum, positioned with the same mirrored geometry as the secondary band and kept unblurred
+
 ## [3.1.12] - 2025-12-23
 
 ### Fixed

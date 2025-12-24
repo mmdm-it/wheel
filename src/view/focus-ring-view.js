@@ -11,6 +11,7 @@ export class FocusRingView {
     this.magnifierLabel = null;
     this.band = null;
     this.mirroredBand = null;
+    this.mirroredMagnifier = null;
     this.dimensionIcon = null;
   }
 
@@ -46,6 +47,12 @@ export class FocusRingView {
     this.mirroredBand.setAttribute('display', 'none');
     this.mirroredBand.style.pointerEvents = 'none';
     this.mirrorLayer.appendChild(this.mirroredBand);
+
+    this.mirroredMagnifier = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    this.mirroredMagnifier.setAttribute('class', 'focus-ring-magnifier-circle focus-ring-magnifier-circle-mirrored');
+    this.mirroredMagnifier.setAttribute('display', 'none');
+    this.mirroredMagnifier.style.pointerEvents = 'none';
+    this.mirrorLayer.appendChild(this.mirroredMagnifier);
 
     this.dimensionIcon = document.createElementNS('http://www.w3.org/2000/svg', 'image');
     this.dimensionIcon.setAttribute('class', 'dimension-button');
@@ -120,6 +127,22 @@ export class FocusRingView {
         }
       } else {
         this.mirroredBand.setAttribute('display', 'none');
+      }
+    }
+
+    if (this.mirroredMagnifier) {
+      if (isBlurred && arcParams && viewport && magnifier) {
+        const mirroredArc = { ...arcParams, hubY: viewport?.LSd ?? arcParams.hubY };
+        const angle = magnifier.angle ?? 0;
+        const x = mirroredArc.hubX + mirroredArc.radius * Math.cos(angle);
+        const y = mirroredArc.hubY + mirroredArc.radius * Math.sin(angle);
+        const radius = magnifier.radius || 14;
+        this.mirroredMagnifier.setAttribute('cx', x);
+        this.mirroredMagnifier.setAttribute('cy', y);
+        this.mirroredMagnifier.setAttribute('r', radius);
+        this.mirroredMagnifier.removeAttribute('display');
+      } else {
+        this.mirroredMagnifier.setAttribute('display', 'none');
       }
     }
 
