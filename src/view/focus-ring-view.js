@@ -117,7 +117,7 @@ export class FocusRingView {
 
     if (this.mirroredBand) {
       if (isBlurred && arcParams && viewport) {
-        const mirroredArc = { ...arcParams, hubY: viewport?.LSd ?? arcParams.hubY };
+        const mirroredArc = this.#mirroredArc(arcParams, viewport);
         const mirroredWindow = this.#mirroredWindow(viewport, mirroredArc);
         if (mirroredWindow) {
           this.mirroredBand.setAttribute('d', this.#ringPath(mirroredArc, mirroredWindow));
@@ -132,7 +132,7 @@ export class FocusRingView {
 
     if (this.mirroredMagnifier) {
       if (isBlurred && arcParams && viewport && magnifier) {
-        const mirroredArc = { ...arcParams, hubY: viewport?.LSd ?? arcParams.hubY };
+        const mirroredArc = this.#mirroredArc(arcParams, viewport);
         const angle = magnifier.angle ?? 0;
         const x = mirroredArc.hubX + mirroredArc.radius * Math.cos(angle);
         const y = mirroredArc.hubY + mirroredArc.radius * Math.sin(angle);
@@ -296,6 +296,12 @@ export class FocusRingView {
       endAngle += Math.PI * 2;
     }
     return { startAngle, endAngle };
+  }
+
+  #mirroredArc(arcParams, viewport) {
+    if (!arcParams || !viewport) return arcParams;
+    const mirroredHubY = (viewport.height ?? arcParams.hubY) - arcParams.hubY;
+    return { ...arcParams, hubY: mirroredHubY };
   }
 
   #isNearMagnifier(angle, magnifierAngle, epsilon) {

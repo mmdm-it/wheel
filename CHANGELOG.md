@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.14] - 2025-12-23
+
+### Fixed
+- Secondary Stratum magnifier and band now mirror using viewport height (true vertical reflection), keeping the mirrored magnifier stroke visible in Dimension mode
+
 ## [3.1.13] - 2025-12-23
 
 ### Added
