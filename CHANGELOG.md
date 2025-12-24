@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.19] - 2025-12-23
+
+### Changed
+- Version bump only
+
 ## [3.1.18] - 2025-12-23
 
 ### Changed
