@@ -141,6 +141,17 @@ export class FocusRingView {
         this.mirroredMagnifier.setAttribute('cy', y);
         this.mirroredMagnifier.setAttribute('r', radius);
         this.mirroredMagnifier.removeAttribute('display');
+        if (options.debug) {
+          console.info('[FocusRingView] mirrored magnifier', {
+            hubX: mirroredArc.hubX,
+            hubY: mirroredArc.hubY,
+            radius,
+            angle,
+            x,
+            y,
+            isBlurred
+          });
+        }
       } else {
         this.mirroredMagnifier.setAttribute('display', 'none');
       }

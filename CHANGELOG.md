@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.16] - 2025-12-23
+
+### Added
+- Debug logging for Secondary Stratum magnifier positioning (prints mirrored hub, angle, radius, and coordinates when Dimension mode is active)
+
 ## [3.1.15] - 2025-12-23
 
 ### Fixed
