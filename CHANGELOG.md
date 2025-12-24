@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+### Fixed
+- Calendar millennia labels corrected to "MILLENNIUM" spelling
+
 ## [3.2.6] - 2025-12-24
 
 ### Changed

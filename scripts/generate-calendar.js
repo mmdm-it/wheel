@@ -38,11 +38,11 @@ function millenniumInfo(yearNumber) {
   if (yearNumber > 0) {
     const bucket = Math.floor((yearNumber - 1) / 1000) + 1;
     const id = `millennium_ad_${bucket}`;
-    return { id, name: `${ordinal(bucket)} MILLENIA A.D.`, bucket, era: 'AD' };
+    return { id, name: `${ordinal(bucket)} MILLENNIUM A.D.`, bucket, era: 'AD' };
   }
   const bucket = Math.floor((Math.abs(yearNumber) - 1) / 1000) + 1;
   const id = `millennium_bc_${bucket}`;
-  return { id, name: `${ordinal(bucket)} MILLENIA B.C.`, bucket, era: 'BC' };
+  return { id, name: `${ordinal(bucket)} MILLENNIUM B.C.`, bucket, era: 'BC' };
 }
 
 function yearLabel(yearNumber) {
