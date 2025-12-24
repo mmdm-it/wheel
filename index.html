@@ -311,10 +311,12 @@
 
     function wireInteractions(app, itemCount) {
       let isDragging = false;
+      let isSecondaryDragging = false;
       let lastX = 0;
       let lastY = 0;
       let lastTime = 0;
       const isInteractionLocked = () => Boolean(app?.isBlurred?.());
+      const hasSecondary = () => Boolean(app?.hasSecondary?.());
       const sensitivity = Math.PI / 4 / 100; // 100px → 45°
       const velocityThreshold = 0.4; // px/ms below this → no gain
       const gainSlope = 1.1; // linear slope past threshold
@@ -323,8 +325,8 @@
       const baseMaxGain = Math.max(1, targetSpinNodes / baseQuickNodes);
 
       const onPointerMove = event => {
-        if (!isDragging) return;
-        if (isInteractionLocked()) {
+        if (!isDragging && !isSecondaryDragging) return;
+        if (isInteractionLocked() && !isSecondaryDragging) {
           isDragging = false;
           return;
         }
@@ -343,11 +345,25 @@
           : Math.min(maxGain, 1 + (velocity - velocityThreshold) * gainSlope);
 
         const delta = -(dx + dy) * sensitivity * gain;
-        app.choreographer.rotate(delta);
+        if (isSecondaryDragging) {
+          app.rotateSecondary(delta);
+        } else {
+          app.choreographer.rotate(delta);
+        }
       };
 
       svg.addEventListener('pointerdown', event => {
-        if (isInteractionLocked()) {
+        const blurred = isInteractionLocked();
+        if (blurred && hasSecondary()) {
+          isSecondaryDragging = true;
+          isDragging = false;
+          lastX = event.clientX;
+          lastY = event.clientY;
+          lastTime = event.timeStamp;
+          app.beginSecondaryRotation();
+          return;
+        }
+        if (blurred) {
           isDragging = false;
           app.choreographer.stopMomentum();
           return;
@@ -366,6 +382,11 @@
 
       ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
         svg.addEventListener(type, () => {
+          if (isSecondaryDragging) {
+            isSecondaryDragging = false;
+            if (app.endSecondaryRotation) app.endSecondaryRotation();
+            return;
+          }
           isDragging = false;
           if (isInteractionLocked()) return;
           app.selectNearest();
@@ -399,11 +420,23 @@
     };
 
     const buildSecondaryLanguages = (translationsMeta, currentTranslation) => {
+      const nativeNames = {
+        latin: 'Latina',
+        greek: 'Ελληνικά',
+        hebrew: 'עברית',
+        english: 'English',
+        french: 'Français',
+        spanish: 'Español',
+        italian: 'Italiano',
+        portuguese: 'Português',
+        russian: 'Русский'
+      };
       const displayOrder = translationsMeta?.language_display_order || [];
       const translations = translationsMeta?.translations || {};
       const items = displayOrder.map((lang, idx) => {
         const translation = translationsForLanguage(translationsMeta, lang) || currentTranslation || 'NAB';
-        const name = (translations[translation]?.language_name)
+        const name = nativeNames[lang]
+          || (translations[translation]?.language_name)
           || (lang ? `${lang.charAt(0).toUpperCase()}${lang.slice(1)}` : 'Language');
         return {
           id: lang,

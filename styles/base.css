@@ -83,7 +83,19 @@ svg {
 
 .focus-ring-magnifier-circle-mirrored {
   filter: none;
-  fill: none;
+  fill: var(--color-nodes);
+}
+
+.focus-ring-magnifier-label-mirrored {
+  fill: var(--color-text);
+  font-family: 'Noto Sans', 'Montserrat', sans-serif;
+  font-size: clamp(24px, 2.8vmin, 46px);
+  text-transform: var(--focus-label-transform, uppercase);
+  pointer-events: none;
+}
+
+.focus-ring-label-secondary {
+  font-family: 'Noto Sans', 'Montserrat', sans-serif;
 }
 
 .focus-ring-magnifier-label {

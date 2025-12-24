@@ -264,6 +264,7 @@ export function createApp({
 
   const render = (nextRotation = rotation) => {
     rotation = nextRotation;
+    const secondaryWindow = getSecondaryWindow();
     const selected = nav.getCurrent() || nav.items.find(item => item !== null) || nav.items[0];
     const visible = buildVisibleItems();
     const bounds = computeBounds(visible);
@@ -273,6 +274,14 @@ export function createApp({
       rotation = clampRotation(rotation, bounds);
       choreographer.setRotation(rotation, { emit: false });
       rotation = choreographer.getRotation();
+    }
+
+    if (secondaryChoreographer && secondaryNav.items.length) {
+      const secBounds = computeSecondaryBounds(secondaryNav.items);
+      secondaryChoreographer.setBounds(secBounds.minRotation, secBounds.maxRotation);
+      secondaryRotation = clampSecondaryRotation(secondaryRotation, secBounds);
+      secondaryChoreographer.setRotation(secondaryRotation, { emit: false });
+      secondaryRotation = secondaryChoreographer.getRotation();
     }
     const nodes = calculateNodePositions(visible, vp, rotation, nodeRadius, nodeSpacing).map(node => ({
       ...node,
@@ -310,7 +319,8 @@ export function createApp({
           magnifierAngle: secondaryMagnifier.angle,
           labelMaskEpsilon,
           onNodeClick: node => rotateSecondaryNodeIntoMagnifier(node),
-          selectedId: secondarySelected?.id
+          selectedId: secondarySelected?.id,
+          magnifierLabel: secondarySelected?.name || ''
         } : null
       }
     );
@@ -482,6 +492,18 @@ export function createApp({
     maxRotation: bounds.maxRotation
   });
 
+  const secondaryBounds = computeSecondaryBounds(secondaryNav.items);
+  secondaryChoreographer = new RotationChoreographer({
+    onRender: angle => {
+      secondaryIsRotating = true;
+      secondaryRotation = angle;
+      render(rotation, true);
+    },
+    onSelection: () => {},
+    minRotation: secondaryBounds.minRotation,
+    maxRotation: secondaryBounds.maxRotation
+  });
+
   alignToSelected();
   alignSecondaryToSelected();
 
@@ -564,6 +586,26 @@ export function createApp({
     },
     isBlurred: () => isBlurred,
     setBlur,
-    toggleBlur
+    toggleBlur,
+    hasSecondary: () => secondaryNav.items.length > 0,
+    rotateSecondary: delta => {
+      if (!secondaryChoreographer) return;
+      secondaryChoreographer.rotate(delta);
+    },
+    beginSecondaryRotation: () => {
+      if (!secondaryChoreographer) return;
+      secondaryIsRotating = true;
+      if (secondarySnapId) {
+        cancelAnimationFrame(secondarySnapId);
+        secondarySnapId = null;
+      }
+    },
+    endSecondaryRotation: () => {
+      if (!secondaryChoreographer) return;
+      selectSecondaryNearest();
+      secondaryChoreographer.stopMomentum();
+    },
+    selectSecondaryNearest,
+    secondaryChoreographer
   };
 }

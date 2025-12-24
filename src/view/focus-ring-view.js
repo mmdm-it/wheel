@@ -14,6 +14,7 @@ export class FocusRingView {
     this.band = null;
     this.mirroredBand = null;
     this.mirroredMagnifier = null;
+    this.mirroredMagnifierLabel = null;
     this.dimensionIcon = null;
   }
 
@@ -56,6 +57,13 @@ export class FocusRingView {
     this.mirroredMagnifier.setAttribute('display', 'none');
     this.mirroredMagnifier.style.pointerEvents = 'none';
     this.mirrorLayer.appendChild(this.mirroredMagnifier);
+
+    this.mirroredMagnifierLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    this.mirroredMagnifierLabel.setAttribute('class', 'focus-ring-magnifier-label focus-ring-magnifier-label-mirrored');
+    this.mirroredMagnifierLabel.setAttribute('text-anchor', 'middle');
+    this.mirroredMagnifierLabel.setAttribute('dominant-baseline', 'middle');
+    this.mirroredMagnifierLabel.setAttribute('display', 'none');
+    this.mirrorLayer.appendChild(this.mirroredMagnifierLabel);
 
     this.mirroredNodesGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.mirroredNodesGroup.setAttribute('class', 'focus-ring-nodes focus-ring-nodes-mirrored');
@@ -162,8 +170,21 @@ export class FocusRingView {
             isBlurred
           });
         }
+        if (this.mirroredMagnifierLabel) {
+          this.mirroredMagnifierLabel.setAttribute('x', mirroredX);
+          this.mirroredMagnifierLabel.setAttribute('y', mirroredY);
+          const magRotation = ((magnifier.angle || 0) * 180) / Math.PI + 180;
+          this.mirroredMagnifierLabel.setAttribute('transform', `rotate(${magRotation}, ${mirroredX}, ${mirroredY})`);
+          this.mirroredMagnifierLabel.textContent = options?.secondary?.magnifierLabel || '';
+          if (this.mirroredMagnifierLabel.textContent) {
+            this.mirroredMagnifierLabel.removeAttribute('display');
+          } else {
+            this.mirroredMagnifierLabel.setAttribute('display', 'none');
+          }
+        }
       } else {
         this.mirroredMagnifier.setAttribute('display', 'none');
+        if (this.mirroredMagnifierLabel) this.mirroredMagnifierLabel.setAttribute('display', 'none');
       }
     }
 

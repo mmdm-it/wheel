@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [3.1.23] - 2025-12-23
+
+### Added
+- Secondary Stratum language ring now rotates via drag while in Dimension mode, centered on the mirrored magnifier
+- Secondary magnifier renders with filled stroke circle and larger label showing the selected language
+- Language nodes and labels use native-language names (Greek, Hebrew, Cyrillic, etc.)
+
 ## [3.1.22] - 2025-12-23
 
 ### Fixed
