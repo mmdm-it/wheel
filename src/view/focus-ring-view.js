@@ -60,7 +60,7 @@ export class FocusRingView {
 
     this.parentButtonOuterLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
     this.parentButtonOuterLabel.setAttribute('class', 'focus-ring-magnifier-label');
-    this.parentButtonOuterLabel.setAttribute('text-anchor', 'middle');
+    this.parentButtonOuterLabel.setAttribute('text-anchor', 'start');
     this.parentButtonOuterLabel.setAttribute('dominant-baseline', 'middle');
     this.blurGroup.appendChild(this.parentButtonOuterLabel);
 
@@ -459,7 +459,8 @@ export class FocusRingView {
 
       if (this.parentButtonOuterLabel) {
         const text = parentButtons?.outerLabel || '';
-        this.parentButtonOuterLabel.setAttribute('x', outerX);
+        const labelX = outerX + magRadius * -1.7; // small negative multiplier to slide start just past stroke
+        this.parentButtonOuterLabel.setAttribute('x', labelX);
         this.parentButtonOuterLabel.setAttribute('y', outerY);
         this.parentButtonOuterLabel.removeAttribute('transform');
         this.parentButtonOuterLabel.textContent = text;

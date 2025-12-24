@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.2.4] - 2025-12-24
+
+### Changed
+- Parent button outer label offset multiplier set to -1.7 for better centering
+
 ## [3.2.3] - 2025-12-24
 
 ### Changed
