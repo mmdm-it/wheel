@@ -98,7 +98,7 @@
         }
     }
 
-    function makeLabelFormatter({ volume, level, locale }) {
+    function makeLabelFormatter({ volume, level, locale, namesMap }) {
       const translations = {
         english: {
           chapter: 'Chapter',
@@ -151,15 +151,16 @@
         if (!item) return '';
         if (volume === 'calendar') return formatYear({ item, context });
         if (volume === 'bible') {
+          const localizedBook = namesMap?.[item.id];
           if (level === 'chapter') return formatChapter({ item, context });
           if (level === 'verse') return formatVerse({ item, context });
-          return item.name || item.id || '';
+          return localizedBook || item.name || item.id || '';
         }
         return item.name || item.id || '';
       };
     }
 
-    function buildBibleBooks(manifest) {
+    function buildBibleBooks(manifest, namesMap = {}) {
       const testaments = manifest?.Gutenberg_Bible?.testaments;
       if (!testaments) return [];
       const items = [];
@@ -170,7 +171,7 @@
           Object.entries(books).forEach(([bookId, book]) => {
             items.push({
               id: bookId,
-              name: book?.book_name || book?.name || bookId,
+              name: namesMap?.[bookId] || book?.book_name || book?.name || bookId,
               sort: book?.sort_number || items.length + 1
             });
           });
@@ -269,7 +270,7 @@
       };
     }
 
-    async function buildChain(manifest, volume, options = {}) {
+    async function buildChain(manifest, volume, options = {}, namesMap = {}) {
       const arrangement = options.arrangement;
       const initialItemId = options.initialItemId;
       if (volume === 'bible' && options.cousinMode && (arrangement || 'cousins-with-gaps') !== 'siblings-only') {
@@ -281,11 +282,15 @@
             translation: options.translation || 'NAB'
           });
         }
-        return buildBibleBookCousinChain(manifest, {
+        const chain = buildBibleBookCousinChain(manifest, {
           testamentId: options.testamentId,
           bookId: options.bookId || 'GENE',
           initialItemId
         });
+        if (namesMap && typeof namesMap === 'object') {
+          chain.items = chain.items.map(item => item ? { ...item, name: namesMap[item.id] || item.name } : item);
+        }
+        return chain;
       }
       if (volume === 'catalog') {
         return buildCatalogManufacturers(manifest, { initialItemId });
@@ -293,7 +298,7 @@
       if (volume === 'calendar') {
         return buildCalendarYears(manifest, { arrangement, initialItemId });
       }
-      const items = buildBibleBooks(manifest)
+      const items = buildBibleBooks(manifest, namesMap)
         .sort((a, b) => {
           const as = a.sort || 0;
           const bs = b.sort || 0;
@@ -462,13 +467,16 @@
 
     loadConfig().then(async ({ volume, manifest, translationsMeta, options }) => {
       applyTheme(manifest, volume);
-      const { items, selectedIndex = 0, preserveOrder = false } = await buildChain(manifest, volume, options);
+      const translationId = options.translation || 'NAB';
+      const translationLang = translationsMeta?.translations?.[translationId]?.language || 'english';
+      const namesMap = translationsMeta?.names?.[translationLang]?.books || translationsMeta?.names?.[translationLang] || {};
+      const { items, selectedIndex = 0, preserveOrder = false } = await buildChain(manifest, volume, options, namesMap);
       const secondary = volume === 'bible' ? buildSecondaryLanguages(translationsMeta, options.translation) : { items: [], selectedIndex: 0 };
       if (!items.length) {
         console.error('No items found for volume', volume);
         return;
       }
-      const labelFormatter = makeLabelFormatter({ volume, level: options.level, locale: options.locale || 'english' });
+      const labelFormatter = makeLabelFormatter({ volume, level: options.level, locale: options.locale || 'english', namesMap });
       const shouldCenterLabel = ({ item }) => volume === 'calendar';
       const app = createApp({
         svgRoot: svg,

@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.32] - 2025-12-23
+
+### Added
+- Localized book-name support: translation metadata now carries per-language book name maps, and the focus ring uses them for primary/secondary language changes while falling back to defaults when missing
+
 ## [3.1.31] - 2025-12-23
 
 ### Fixed

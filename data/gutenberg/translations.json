@@ -133,5 +133,89 @@
     "italian",
     "portuguese",
     "russian"
-  ]
+  ],
+
+  "names": {
+    "hebrew": {
+      "books": {
+        "GENE": "בראשית",
+        "EXOD": "שמות",
+        "LEVI": "ויקרא",
+        "NUMB": "במדבר",
+        "DEUT": "דברים"
+      }
+    },
+    "greek": {
+      "books": {
+        "GENE": "Γένεσις",
+        "EXOD": "Ἔξοδος",
+        "LEVI": "Λευιτικόν",
+        "NUMB": "Ἀριθμοί",
+        "DEUT": "Δευτερονόμιον"
+      }
+    },
+    "latin": {
+      "books": {
+        "GENE": "Genesis",
+        "EXOD": "Exodus",
+        "LEVI": "Leviticus",
+        "NUMB": "Numeri",
+        "DEUT": "Deuteronomium"
+      }
+    },
+    "french": {
+      "books": {
+        "GENE": "Genèse",
+        "EXOD": "Exode",
+        "LEVI": "Lévitique",
+        "NUMB": "Nombres",
+        "DEUT": "Deutéronome"
+      }
+    },
+    "spanish": {
+      "books": {
+        "GENE": "Génesis",
+        "EXOD": "Éxodo",
+        "LEVI": "Levítico",
+        "NUMB": "Números",
+        "DEUT": "Deuteronomio"
+      }
+    },
+    "english": {
+      "books": {
+        "GENE": "Genesis",
+        "EXOD": "Exodus",
+        "LEVI": "Leviticus",
+        "NUMB": "Numbers",
+        "DEUT": "Deuteronomy"
+      }
+    },
+    "italian": {
+      "books": {
+        "GENE": "Genesi",
+        "EXOD": "Esodo",
+        "LEVI": "Levitico",
+        "NUMB": "Numeri",
+        "DEUT": "Deuteronomio"
+      }
+    },
+    "portuguese": {
+      "books": {
+        "GENE": "Gênesis",
+        "EXOD": "Êxodo",
+        "LEVI": "Levítico",
+        "NUMB": "Números",
+        "DEUT": "Deuteronômio"
+      }
+    },
+    "russian": {
+      "books": {
+        "GENE": "Бытие",
+        "EXOD": "Исход",
+        "LEVI": "Левит",
+        "NUMB": "Числа",
+        "DEUT": "Второзаконие"
+      }
+    }
+  }
 }
