@@ -49,6 +49,9 @@
       });
 
       const manifest = await fetch(manifestPath).then(r => r.json());
+      const translationsMeta = volume === 'bible'
+        ? await fetch('./data/gutenberg/translations.json').then(r => r.json()).catch(() => null)
+        : null;
       const volumeRoot = volume === 'catalog' ? manifest?.MMdM : volume === 'calendar' ? manifest?.Calendar : manifest?.Gutenberg_Bible;
       const startup = volumeRoot?.display_config?.focus_ring_startup || {};
       const arrangements = volumeRoot?.display_config?.focus_ring_arrangements || {};
@@ -68,6 +71,7 @@
       return {
         volume,
         manifest,
+        translationsMeta,
         options: {
           level,
           initialItemId,
@@ -384,16 +388,67 @@
       }
     }
 
-    loadConfig().then(async ({ volume, manifest, options }) => {
+    const translationsForLanguage = (translationsMeta, language) => {
+      const translations = translationsMeta?.translations || {};
+      const entries = Object.entries(translations)
+        .filter(([, t]) => t?.language === language);
+      if (!entries.length) return null;
+      const both = entries.find(([, t]) => (t?.testament || '').toLowerCase() === 'both');
+      if (both) return both[0];
+      return entries[0][0];
+    };
+
+    const buildSecondaryLanguages = (translationsMeta, currentTranslation) => {
+      const displayOrder = translationsMeta?.language_display_order || [];
+      const translations = translationsMeta?.translations || {};
+      const items = displayOrder.map((lang, idx) => {
+        const translation = translationsForLanguage(translationsMeta, lang) || currentTranslation || 'NAB';
+        const name = (translations[translation]?.language_name)
+          || (lang ? `${lang.charAt(0).toUpperCase()}${lang.slice(1)}` : 'Language');
+        return {
+          id: lang,
+          name,
+          order: idx,
+          translation
+        };
+      });
+      const currentLang = translations?.[currentTranslation]?.language;
+      const selectedIndex = (() => {
+        if (currentLang) {
+          const idx = items.findIndex(item => item.id === currentLang);
+          if (idx >= 0) return idx;
+        }
+        return 0;
+      })();
+      return { items, selectedIndex };
+    };
+
+    loadConfig().then(async ({ volume, manifest, translationsMeta, options }) => {
       applyTheme(manifest, volume);
       const { items, selectedIndex = 0, preserveOrder = false } = await buildChain(manifest, volume, options);
+      const secondary = volume === 'bible' ? buildSecondaryLanguages(translationsMeta, options.translation) : { items: [], selectedIndex: 0 };
       if (!items.length) {
         console.error('No items found for volume', volume);
         return;
       }
       const labelFormatter = makeLabelFormatter({ volume, level: options.level, locale: options.locale || 'english' });
       const shouldCenterLabel = ({ item }) => volume === 'calendar';
-      const app = createApp({ svgRoot: svg, items, viewport, selectedIndex, preserveOrder, labelFormatter, shouldCenterLabel });
+      const app = createApp({
+        svgRoot: svg,
+        items,
+        viewport,
+        selectedIndex,
+        preserveOrder,
+        labelFormatter,
+        shouldCenterLabel,
+        secondaryItems: secondary.items,
+        secondarySelectedIndex: secondary.selectedIndex,
+        onSelectSecondary: translationId => {
+          const url = new URL(window.location.href);
+          url.searchParams.set('translation', translationId);
+          window.location.href = url.toString();
+        }
+      });
       wireInteractions(app, items.length);
       showVersion();
     }).catch(err => {

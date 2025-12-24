@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.20] - 2025-12-23
+
+### Added
+- Secondary Stratum now renders 9 language nodes (from `data/gutenberg/translations.json`) with mirrored magnifier and band; selecting a language reloads with that translation
+
 ## [3.1.19] - 2025-12-23
 
 ### Changed

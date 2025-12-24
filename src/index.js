@@ -59,7 +59,18 @@ function normalizeItems(items, { preserveOrder = false } = {}) {
   return sorted;
 }
 
-export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserveOrder = false, labelFormatter, shouldCenterLabel }) {
+export function createApp({
+  svgRoot,
+  items,
+  viewport,
+  selectedIndex = 0,
+  preserveOrder = false,
+  labelFormatter,
+  shouldCenterLabel,
+  secondaryItems = [],
+  secondarySelectedIndex = 0,
+  onSelectSecondary
+}) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const normalized = normalizeItems(items, { preserveOrder });
   const formatLabel = typeof labelFormatter === 'function'
@@ -110,6 +121,14 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     return fallback >= 0 ? fallback : 0;
   })();
   nav.setItems(normalized, safeIndex);
+  const secondaryNav = new NavigationState();
+  const safeSecondaryIndex = (() => {
+    if (!secondaryItems?.length) return 0;
+    if (secondaryItems[secondarySelectedIndex] !== null) return secondarySelectedIndex;
+    const fallback = secondaryItems.findIndex(item => item !== null);
+    return fallback >= 0 ? fallback : 0;
+  })();
+  secondaryNav.setItems(secondaryItems || [], safeSecondaryIndex);
   const view = new FocusRingView(svgRoot);
   view.init();
   let isBlurred = false;
@@ -117,6 +136,10 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
   let isRotating = false;
   let rotation = 0;
   let snapId = null;
+  let secondaryChoreographer = null;
+  let secondaryIsRotating = false;
+  let secondaryRotation = 0;
+  let secondarySnapId = null;
 
   const setBlur = enabled => {
     isBlurred = Boolean(enabled);
@@ -135,6 +158,28 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
   const toggleBlur = () => setBlur(!isBlurred);
 
   const clampRotation = (value, bounds) => Math.max(bounds.minRotation, Math.min(bounds.maxRotation, value));
+  const clampSecondaryRotation = (value, bounds) => Math.max(bounds.minRotation, Math.min(bounds.maxRotation, value));
+
+  const secondaryArc = { ...arcParams, hubY: vp.LSd ?? arcParams.hubY };
+  const secondaryWindow = (() => {
+    const startAngle = Math.atan2(vp.height - secondaryArc.hubY, 0 - secondaryArc.hubX);
+    let endAngle = Math.atan2(0 - secondaryArc.hubY, vp.width - secondaryArc.hubX);
+    if (endAngle <= startAngle) endAngle += Math.PI * 2;
+    const arcLength = endAngle - startAngle;
+    const maxNodes = Math.min(Math.floor(arcLength / nodeSpacing), 21);
+    return { startAngle, endAngle, arcLength, maxNodes };
+  })();
+
+  const getSecondaryMagnifier = () => {
+    const y = (vp.height ?? vp.LSd ?? magnifier.y) - magnifier.y;
+    const angle = Math.atan2(y - secondaryArc.hubY, magnifier.x - secondaryArc.hubX);
+    return {
+      angle,
+      x: magnifier.x,
+      y,
+      radius: magnifierRadius
+    };
+  };
 
   const buildVisibleItems = () => nav.items;
 
@@ -153,6 +198,26 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     };
   };
 
+  const getSecondaryBaseAngle = order => {
+    const secMag = getSecondaryMagnifier();
+    return secMag.angle + (order + 1) * nodeSpacing * -1;
+  };
+
+  const computeSecondaryBounds = visibleItems => {
+    const nonNull = visibleItems.filter(item => item !== null);
+    if (!nonNull.length) return { minRotation: 0, maxRotation: 0 };
+    const firstOrder = Number.isFinite(nonNull[0].order) ? nonNull[0].order : visibleItems.indexOf(nonNull[0]);
+    const lastOrder = Number.isFinite(nonNull[nonNull.length - 1].order)
+      ? nonNull[nonNull.length - 1].order
+      : visibleItems.lastIndexOf(nonNull[nonNull.length - 1]);
+    const firstAngle = getSecondaryBaseAngle(firstOrder);
+    const lastAngle = getSecondaryBaseAngle(lastOrder);
+    return {
+      minRotation: secondaryWindow.startAngle - firstAngle,
+      maxRotation: secondaryWindow.endAngle - lastAngle
+    };
+  };
+
   const alignToSelected = () => {
     const selected = nav.getCurrent();
     if (!selected) return;
@@ -160,6 +225,38 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     const desiredRotation = magnifier.angle - baseAngle;
     const bounds = computeBounds(buildVisibleItems());
     rotation = clampRotation(desiredRotation, bounds);
+  };
+
+  const alignSecondaryToSelected = () => {
+    const selected = secondaryNav.getCurrent();
+    if (!selected) return;
+    const baseAngle = getSecondaryBaseAngle(selected.order);
+    const desiredRotation = getSecondaryMagnifier().angle - baseAngle;
+    const bounds = computeSecondaryBounds(secondaryNav.items);
+    secondaryRotation = clampSecondaryRotation(desiredRotation, bounds);
+  };
+
+  const calculateSecondaryNodePositions = (allItems, rotationOffset = secondaryRotation) => {
+    const secMag = getSecondaryMagnifier();
+    const positions = [];
+    allItems.forEach((item, index) => {
+      if (item === null) return;
+      const order = Number.isFinite(item.order) ? item.order : index;
+      const baseAngle = getSecondaryBaseAngle(order);
+      const rotatedAngle = baseAngle + rotationOffset;
+      if (rotatedAngle < secondaryWindow.startAngle || rotatedAngle > secondaryWindow.endAngle) return;
+      positions.push({
+        item,
+        index,
+        angle: rotatedAngle,
+        x: secondaryArc.hubX + secondaryArc.radius * Math.cos(rotatedAngle),
+        y: secondaryArc.hubY + secondaryArc.radius * Math.sin(rotatedAngle),
+        radius: nodeRadius,
+        label: item.name,
+        labelCentered: true
+      });
+    });
+    return positions;
   };
 
   const render = (nextRotation = rotation) => {
@@ -179,6 +276,10 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
       label: formatLabel({ item: node.item, context: 'node' }),
       labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
     }));
+    const secondaryMagnifier = getSecondaryMagnifier();
+    const secondarySelected = secondaryNav.getCurrent();
+    const secondaryNodes = calculateSecondaryNodePositions(secondaryNav.items, secondaryRotation);
+
     view.render(
       nodes,
       arcParams,
@@ -199,7 +300,15 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
           y: dimensionPosition.y,
           size: dimensionSize,
           onClick: () => toggleBlur()
-        }
+        },
+        secondary: isBlurred && secondaryNav.items.length > 0 ? {
+          nodes: secondaryNodes,
+          isRotating: secondaryIsRotating,
+          magnifierAngle: secondaryMagnifier.angle,
+          labelMaskEpsilon,
+          onNodeClick: node => rotateSecondaryNodeIntoMagnifier(node),
+          selectedId: secondarySelected?.id
+        } : null
       }
     );
 
@@ -296,6 +405,22 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
     animateSnapTo(clampedRotation, 120);
   };
 
+    const rotateSecondaryNodeIntoMagnifier = node => {
+      if (!node?.item) return;
+      const secMag = getSecondaryMagnifier();
+      const targetAngle = secMag.angle;
+      const baseAngle = getSecondaryBaseAngle(node.item.order);
+      const desiredRotation = targetAngle - baseAngle;
+      const bounds = computeSecondaryBounds(secondaryNav.items);
+      secondaryNav.selectIndex(node.index);
+      secondaryRotation = clampSecondaryRotation(desiredRotation, bounds);
+      secondaryIsRotating = false;
+      render(rotation);
+      if (typeof onSelectSecondary === 'function' && node.item.translation) {
+        onSelectSecondary(node.item.translation);
+      }
+    };
+
   const cancelSnap = () => {
     if (snapId) {
       cancelAnimationFrame(snapId);
@@ -355,6 +480,7 @@ export function createApp({ svgRoot, items, viewport, selectedIndex = 0, preserv
   });
 
   alignToSelected();
+  alignSecondaryToSelected();
 
   const selectNearest = () => {
     cancelSnap();

@@ -6,6 +6,8 @@ export class FocusRingView {
     this.mirrorLayer = null;
     this.nodesGroup = null;
     this.labelsGroup = null;
+    this.mirroredNodesGroup = null;
+    this.mirroredLabelsGroup = null;
     this.magnifierGroup = null;
     this.magnifierCircle = null;
     this.magnifierLabel = null;
@@ -33,6 +35,7 @@ export class FocusRingView {
 
     this.mirrorLayer = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.mirrorLayer.setAttribute('class', 'focus-mirror-layer');
+    this.mirrorLayer.style.pointerEvents = 'auto';
     this.svgRoot.appendChild(this.mirrorLayer);
 
     this.blurGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
@@ -53,6 +56,14 @@ export class FocusRingView {
     this.mirroredMagnifier.setAttribute('display', 'none');
     this.mirroredMagnifier.style.pointerEvents = 'none';
     this.mirrorLayer.appendChild(this.mirroredMagnifier);
+
+    this.mirroredNodesGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.mirroredNodesGroup.setAttribute('class', 'focus-ring-nodes focus-ring-nodes-mirrored');
+    this.mirrorLayer.appendChild(this.mirroredNodesGroup);
+
+    this.mirroredLabelsGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.mirroredLabelsGroup.setAttribute('class', 'focus-ring-labels focus-ring-labels-mirrored');
+    this.mirrorLayer.appendChild(this.mirroredLabelsGroup);
 
     this.dimensionIcon = document.createElementNS('http://www.w3.org/2000/svg', 'image');
     this.dimensionIcon.setAttribute('class', 'dimension-button');
@@ -95,6 +106,7 @@ export class FocusRingView {
     const isRotating = Boolean(options.isRotating);
     const isBlurred = Boolean(options.isBlurred);
     const viewport = options.viewport;
+    const secondary = options.secondary;
     const magnifierAngle = options.magnifierAngle;
     const labelMaskEpsilon = options.labelMaskEpsilon ?? 0.0001;
     const onNodeClick = options.onNodeClick;
@@ -249,6 +261,89 @@ export class FocusRingView {
         el.remove();
       }
     });
+
+    if (secondary?.nodes && this.mirroredNodesGroup && this.mirroredLabelsGroup) {
+      const secNodes = secondary.nodes;
+      const secIsRotating = Boolean(secondary.isRotating);
+      const secMagnifierAngle = secondary.magnifierAngle;
+      const secLabelMaskEpsilon = secondary.labelMaskEpsilon ?? labelMaskEpsilon;
+      const secOnNodeClick = secondary.onNodeClick;
+      const secSelectedId = secondary.selectedId;
+
+      const existingSecNodes = new Map();
+      [...this.mirroredNodesGroup.children].forEach(child => existingSecNodes.set(child.id, child));
+      const existingSecLabels = new Map();
+      [...(this.mirroredLabelsGroup?.children || [])].forEach(child => existingSecLabels.set(child.id, child));
+
+      secNodes.forEach(node => {
+        if (node.item === null) return;
+        const id = `secondary-node-${node.item.id || node.index}`;
+        let el = existingSecNodes.get(id);
+        if (!el) {
+          el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+          el.setAttribute('id', id);
+          el.setAttribute('class', 'focus-ring-node focus-ring-node-secondary');
+          this.mirroredNodesGroup.appendChild(el);
+        }
+        if (secOnNodeClick) {
+          el.onclick = () => secOnNodeClick(node);
+          el.style.cursor = 'pointer';
+        } else {
+          el.onclick = null;
+          el.style.cursor = 'default';
+        }
+        el.setAttribute('cx', node.x);
+        el.setAttribute('cy', node.y);
+        const nodeRadius = node.radius;
+        el.setAttribute('r', nodeRadius);
+        el.dataset.index = node.index;
+
+        const labelId = `secondary-label-${node.item.id || node.index}`;
+        let label = existingSecLabels.get(labelId);
+        if (!label) {
+          label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+          label.setAttribute('id', labelId);
+          label.setAttribute('class', 'focus-ring-label focus-ring-label-secondary');
+          this.mirroredLabelsGroup.appendChild(label);
+        }
+        const useCentered = Boolean(node.labelCentered);
+        if (useCentered) {
+          label.setAttribute('x', node.x);
+          label.setAttribute('y', node.y);
+          label.setAttribute('text-anchor', 'middle');
+          label.setAttribute('dominant-baseline', 'middle');
+          const rotation = (node.angle * 180) / Math.PI + 180;
+          label.setAttribute('transform', `rotate(${rotation}, ${node.x}, ${node.y})`);
+        } else {
+          const radius = nodeRadius;
+          const offset = radius * -1.3;
+          const lx = node.x + Math.cos(node.angle) * offset;
+          const ly = node.y + Math.sin(node.angle) * offset;
+          label.setAttribute('x', lx);
+          label.setAttribute('y', ly);
+          label.setAttribute('text-anchor', 'end');
+          label.setAttribute('dominant-baseline', 'middle');
+          const rotation = (node.angle * 180) / Math.PI + 180;
+          label.setAttribute('transform', `rotate(${rotation}, ${lx}, ${ly})`);
+        }
+        const masked = this.#isNearMagnifier(node.angle, secMagnifierAngle, secLabelMaskEpsilon);
+        const isSelected = secSelectedId && (node.item.id === secSelectedId);
+        const showNodeLabel = secIsRotating || (!masked && !isSelected);
+        label.textContent = showNodeLabel ? (node.label ?? node.item.name ?? '') : '';
+      });
+
+      existingSecNodes.forEach((el, id) => {
+        if (!secNodes.find(n => `secondary-node-${n.item?.id || n.index}` === id)) {
+          el.remove();
+        }
+      });
+
+      existingSecLabels.forEach((el, id) => {
+        if (!secNodes.find(n => `secondary-label-${n.item?.id || n.index}` === id)) {
+          el.remove();
+        }
+      });
+    }
 
     if (this.magnifierGroup && magnifier) {
       const radius = (magnifier.radius || 14);

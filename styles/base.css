@@ -59,6 +59,19 @@ svg {
 }
 
 .focus-mirror-layer {
+  pointer-events: auto;
+}
+
+.focus-ring-node-secondary {
+  fill: var(--color-nodes);
+  stroke: none;
+}
+
+.focus-ring-label-secondary {
+  fill: var(--color-text);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: clamp(14px, 1.6vmin, 26px);
+  text-transform: var(--focus-label-transform, uppercase);
   pointer-events: none;
 }
 
