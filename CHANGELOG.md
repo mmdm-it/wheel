@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.18] - 2025-12-23
+
+### Changed
+- Secondary Stratum magnifier stroke now renders without fill (hollow) while we await secondary nodes
+
 ## [3.1.17] - 2025-12-23
 
 ### Fixed

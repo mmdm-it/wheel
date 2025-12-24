@@ -70,6 +70,7 @@ svg {
 
 .focus-ring-magnifier-circle-mirrored {
   filter: none;
+  fill: none;
 }
 
 .focus-ring-magnifier-label {
