@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.29] - 2025-12-23
+
+### Fixed
+- Secondary magnifier now hides its fill and label while rotating, matching the primary magnifier’s behavior
+
 ## [3.1.28] - 2025-12-23
 
 ### Fixed

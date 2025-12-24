@@ -165,7 +165,8 @@ export class FocusRingView {
         this.mirroredMagnifier.setAttribute('cy', mirroredY);
         this.mirroredMagnifier.setAttribute('r', radius);
         this.mirroredMagnifier.removeAttribute('display');
-        this.mirroredMagnifier.classList.toggle('rotating', Boolean(options?.secondary?.isRotating));
+        const secIsRotating = Boolean(options?.secondary?.isRotating);
+        this.mirroredMagnifier.classList.toggle('rotating', secIsRotating);
         if (options.debug) {
           console.info('[FocusRingView] mirrored magnifier', {
             mirroredX,
@@ -183,7 +184,9 @@ export class FocusRingView {
           const labelAngle = options?.secondary?.magnifierAngle ?? magnifier.angle ?? 0;
           const magRotation = (labelAngle * 180) / Math.PI + 180;
           this.mirroredMagnifierLabel.setAttribute('transform', `rotate(${magRotation}, ${mirroredX}, ${mirroredY})`);
-          this.mirroredMagnifierLabel.textContent = options?.secondary?.magnifierLabel || '';
+          const mirroredLabel = secIsRotating ? '' : (options?.secondary?.magnifierLabel || '');
+          this.mirroredMagnifierLabel.textContent = mirroredLabel;
+          this.mirroredMagnifierLabel.classList.toggle('rotating', secIsRotating);
           if (this.mirroredMagnifierLabel.textContent) {
             this.mirroredMagnifierLabel.removeAttribute('display');
           } else {
