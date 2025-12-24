@@ -9,6 +9,7 @@
 
 ### Fixed
 - Calendar millennia labels corrected to "MILLENNIUM" spelling
+- Parent button now uses localized section names in cousin-mode chains
 
 ### Added
 - Bible section names localized in 9 languages (<=22 chars) and used for parent labels

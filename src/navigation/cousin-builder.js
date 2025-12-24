@@ -85,7 +85,7 @@ export async function buildBibleVerseCousinChain(manifest, { bookId, startChapte
   return { items: chain, selectedIndex, preserveOrder: true };
 }
 
-export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initialItemId } = {}) {
+export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initialItemId, names = {} } = {}) {
   const bible = manifest?.Gutenberg_Bible;
   if (!bible) return { items: [], selectedIndex: 0, preserveOrder: true };
   const testaments = Object.entries(bible.testaments || {});
@@ -103,21 +103,23 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
   if (!activeTestamentId) return { items: [], selectedIndex: 0, preserveOrder: true };
   const activeTestament = bible.testaments[activeTestamentId];
   const sections = Object.entries(activeTestament?.sections || {}).sort(bySortNumber);
+  const sectionNames = names?.sections || {};
+  const bookNames = names?.books || names || {};
   const chain = [];
 
-  sections.forEach(([, section], sectionIdx) => {
+  sections.forEach(([sectionKey, section], sectionIdx) => {
     const books = Object.entries(section?.books || {}).sort(bySortNumber);
     books.forEach(([, book]) => {
       const id = book?.book_key || book?.id || book?.name;
       if (!id) return;
       chain.push({
         id,
-        name: book?.book_name || book?.name || id,
+        name: bookNames?.[id] || book?.book_name || book?.name || id,
         sort: Number.isFinite(book?.sort_number) ? book.sort_number : chain.length,
         order: chain.length,
         testamentId: activeTestamentId,
-        sectionId: section?.name || section?.id,
-        parentName: section?.name || section?.id
+        sectionId: sectionKey,
+        parentName: sectionNames?.[sectionKey] || section?.name || sectionKey
       });
     });
     const isLastSection = sectionIdx === sections.length - 1;

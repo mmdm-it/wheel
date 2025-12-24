@@ -51,6 +51,7 @@ function normalizeItems(items, { preserveOrder = false } = {}) {
   const sorted = [...items]
     .sort((a, b) => {
       const as = a.sort ?? a.order ?? 0;
+      names: namesMap
       const bs = b.sort ?? b.order ?? 0;
       if (as === bs) return (a.name || '').localeCompare(b.name || '');
       return as - bs;
@@ -202,7 +203,7 @@ export function createApp({
       return '';
     };
     const label = pick();
-    return typeof label === 'string' ? label.toUpperCase() : label;
+    return label;
   };
 
   const buildVisibleItems = () => nav.items;
