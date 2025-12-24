@@ -68,6 +68,7 @@
       const cousinMode = cousinParam === null
         ? arrangement !== 'siblings-only'
         : cousinParam === '1';
+      const dimensionEnabled = params.get('dimension') === '1';
       return {
         volume,
         manifest,
@@ -81,7 +82,8 @@
           chapterId: params.get('chapter'),
           translation: params.get('translation') || 'NAB',
           cousinMode,
-          locale
+          locale,
+          dimensionEnabled
         }
       };
     }
@@ -479,9 +481,13 @@
         onSelectSecondary: translationId => {
           const url = new URL(window.location.href);
           url.searchParams.set('translation', translationId);
+          url.searchParams.set('dimension', '1');
           window.location.href = url.toString();
         }
       });
+      if (options.dimensionEnabled && app?.setBlur) {
+        app.setBlur(true);
+      }
       wireInteractions(app, items.length);
       showVersion();
     }).catch(err => {

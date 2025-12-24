@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.28] - 2025-12-23
+
+### Fixed
+- Selecting a secondary language keeps Dimension mode active by persisting the dimension flag in the URL and restoring blur on load
+
 ## [3.1.27] - 2025-12-23
 
 ### Fixed
