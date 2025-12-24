@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.31] - 2025-12-23
+
+### Fixed
+- Secondary selection now preserves the current primary item by carrying the active item id in the URL when changing translations; primary magnifier no longer resets to Genesis after language switch
+
 ## [3.1.30] - 2025-12-23
 
 ### Changed

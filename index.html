@@ -482,6 +482,10 @@
         secondarySelectedIndex: secondary.selectedIndex,
         onSelectSecondary: translationId => {
           const url = new URL(window.location.href);
+          const currentItem = app?.nav?.getCurrent?.();
+          if (currentItem?.id) {
+            url.searchParams.set('item', currentItem.id);
+          }
           url.searchParams.set('translation', translationId);
           url.searchParams.set('dimension', '1');
           window.location.href = url.toString();
