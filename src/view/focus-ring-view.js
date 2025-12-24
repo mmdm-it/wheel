@@ -263,6 +263,8 @@ export class FocusRingView {
     });
 
     if (secondary?.nodes && this.mirroredNodesGroup && this.mirroredLabelsGroup) {
+      this.mirroredNodesGroup.removeAttribute('display');
+      this.mirroredLabelsGroup.removeAttribute('display');
       const secNodes = secondary.nodes;
       const secIsRotating = Boolean(secondary.isRotating);
       const secMagnifierAngle = secondary.magnifierAngle;
@@ -343,6 +345,13 @@ export class FocusRingView {
           el.remove();
         }
       });
+    } else {
+      if (this.mirroredNodesGroup) {
+        this.mirroredNodesGroup.setAttribute('display', 'none');
+      }
+      if (this.mirroredLabelsGroup) {
+        this.mirroredLabelsGroup.setAttribute('display', 'none');
+      }
     }
 
     if (this.magnifierGroup && magnifier) {

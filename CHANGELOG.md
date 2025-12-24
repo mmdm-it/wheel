@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.22] - 2025-12-23
+
+### Fixed
+- Secondary Stratum language nodes and labels now hide when leaving Dimension mode; they only render while the secondary band is visible
+
 ## [3.1.21] - 2025-12-23
 
 ### Fixed
