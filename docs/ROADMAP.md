@@ -1,4 +1,15 @@
-# Wheel v2 - Project Roadmap
+# Wheel v3 Roadmap
+
+> v3 note: This file now tracks the v3 release train; the legacy v2 roadmap remains below for reference until we rewrite the implementation details.
+
+### Release Train Status
+- v3.0 Focus Ring & Magnifier — done
+- v3.1 Dimension Button — done
+- v3.2 Parent Button — active (parent-out navigation control)
+- v3.3 Child Pyramid — planned
+- v3.4 Detail Sector — planned
+
+## Legacy v2 Roadmap (reference)
 
 ## Vision
 

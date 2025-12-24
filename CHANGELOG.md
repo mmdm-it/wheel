@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [3.2.0] - 2025-12-24
+
+### Changed
+- Marked v3.2.0 as the Parent Button phase kickoff and completed book-name translations for all 67 books across nine languages
+- Documented the v3 release train (v3.0–v3.4) with current status
+
+
 ## [3.1.35] - 2025-12-23
 
 ### Fixed
