@@ -147,11 +147,12 @@
         return `${t('verse')} ${verseVal ?? item?.id ?? ''}`.trim();
       };
 
+      const bookNames = namesMap?.books || namesMap;
       return ({ item, context }) => {
         if (!item) return '';
         if (volume === 'calendar') return formatYear({ item, context });
         if (volume === 'bible') {
-          const localizedBook = namesMap?.[item.id];
+          const localizedBook = bookNames?.[item.id];
           if (level === 'chapter') return formatChapter({ item, context });
           if (level === 'verse') return formatVerse({ item, context });
           return localizedBook || item.name || item.id || '';
@@ -163,6 +164,8 @@
     function buildBibleBooks(manifest, namesMap = {}) {
       const testaments = manifest?.Gutenberg_Bible?.testaments;
       if (!testaments) return [];
+      const bookNames = namesMap.books || namesMap;
+      const sectionNames = namesMap.sections || {};
       const items = [];
       Object.entries(testaments).forEach(([testamentId, testament]) => {
         const sections = testament?.sections || {};
@@ -171,10 +174,10 @@
           Object.entries(books).forEach(([bookId, book]) => {
             items.push({
               id: bookId,
-              name: namesMap?.[bookId] || book?.book_name || book?.name || bookId,
+              name: bookNames?.[bookId] || book?.book_name || book?.name || bookId,
               sort: book?.sort_number || items.length + 1,
               sectionId,
-              parentName: section?.name || sectionId
+              parentName: sectionNames?.[sectionId] || section?.name || sectionId
             });
           });
         });
@@ -310,7 +313,8 @@
           initialItemId
         });
         if (namesMap && typeof namesMap === 'object') {
-          chain.items = chain.items.map(item => item ? { ...item, name: namesMap[item.id] || item.name } : item);
+          const bookNames = namesMap.books || namesMap;
+          chain.items = chain.items.map(item => item ? { ...item, name: bookNames[item.id] || item.name } : item);
         }
         return chain;
       }
@@ -495,7 +499,11 @@
       applyTheme(manifest, volume);
       const translationId = options.translation || 'NAB';
       const translationLang = translationsMeta?.translations?.[translationId]?.language || 'english';
-      const namesMap = translationsMeta?.names?.[translationLang]?.books || translationsMeta?.names?.[translationLang] || {};
+      const localeNames = translationsMeta?.names?.[translationLang] || {};
+      const namesMap = {
+        books: localeNames.books || localeNames,
+        sections: localeNames.sections || {}
+      };
       const { items, selectedIndex = 0, preserveOrder = false } = await buildChain(manifest, volume, options, namesMap);
       const secondary = volume === 'bible' ? buildSecondaryLanguages(translationsMeta, options.translation) : { items: [], selectedIndex: 0 };
       if (!items.length) {

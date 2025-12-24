@@ -5,6 +5,9 @@
 ### Fixed
 - Calendar millennia labels corrected to "MILLENNIUM" spelling
 
+### Added
+- Bible section names localized in 9 languages (<=22 chars) and used for parent labels
+
 ## [3.2.6] - 2025-12-24
 
 ### Changed

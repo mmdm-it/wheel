@@ -137,6 +137,16 @@
 
   "names": {
     "hebrew": {
+      "sections": {
+        "Pentateuchus": "חמישה חומשי תורה",
+        "Libri_Historici_et_Novellae_Biblicae": "ספרי היסטוריה",
+        "Libri_Sapientiae": "ספרי חכמה",
+        "Libri_Prophetici": "ספרי נביאים",
+        "Evangelia": "בשורות",
+        "Actus_Apostolorum": "מעשי השליחים",
+        "Epistolae": "איגרות",
+        "Apocalypsis": "התגלות"
+      },
       "books": {
         "GENE": "בראשית",
         "EXO": "שמות",
@@ -208,6 +218,16 @@
       }
     },
     "greek": {
+      "sections": {
+        "Pentateuchus": "Πεντάτευχος",
+        "Libri_Historici_et_Novellae_Biblicae": "Ιστορικά & Διηγήσεις",
+        "Libri_Sapientiae": "Βιβλία Σοφίας",
+        "Libri_Prophetici": "Προφητικά",
+        "Evangelia": "Ευαγγέλια",
+        "Actus_Apostolorum": "Πράξεις Αποστόλων",
+        "Epistolae": "Επιστολές",
+        "Apocalypsis": "Αποκάλυψη"
+      },
       "books": {
         "GENE": "Γένεσις",
         "EXO": "Ἔξοδος",
@@ -279,6 +299,16 @@
       }
     },
     "latin": {
+      "sections": {
+        "Pentateuchus": "Pentateuchus",
+        "Libri_Historici_et_Novellae_Biblicae": "Historici & Novellae",
+        "Libri_Sapientiae": "Libri Sapientiae",
+        "Libri_Prophetici": "Libri Prophetici",
+        "Evangelia": "Evangelia",
+        "Actus_Apostolorum": "Actus Apostolorum",
+        "Epistolae": "Epistolae",
+        "Apocalypsis": "Apocalypsis"
+      },
       "books": {
         "GENE": "Genesis",
         "EXO": "Exodus",
@@ -350,6 +380,16 @@
       }
     },
     "french": {
+      "sections": {
+        "Pentateuchus": "Pentateuque",
+        "Libri_Historici_et_Novellae_Biblicae": "Historiques & Nouv.",
+        "Libri_Sapientiae": "Sapientiels",
+        "Libri_Prophetici": "Prophétiques",
+        "Evangelia": "Évangiles",
+        "Actus_Apostolorum": "Actes des Apôtres",
+        "Epistolae": "Épîtres",
+        "Apocalypsis": "Apocalypse"
+      },
       "books": {
         "GENE": "Genèse",
         "EXO": "Exode",
@@ -421,6 +461,16 @@
       }
     },
     "spanish": {
+      "sections": {
+        "Pentateuchus": "Pentateuco",
+        "Libri_Historici_et_Novellae_Biblicae": "Históricos y Novelas",
+        "Libri_Sapientiae": "Sapienciales",
+        "Libri_Prophetici": "Proféticos",
+        "Evangelia": "Evangelios",
+        "Actus_Apostolorum": "Hechos de Apóstoles",
+        "Epistolae": "Cartas y Epístolas",
+        "Apocalypsis": "Apocalipsis"
+      },
       "books": {
         "GENE": "Génesis",
         "EXO": "Éxodo",
@@ -492,6 +542,16 @@
       }
     },
     "english": {
+      "sections": {
+        "Pentateuchus": "Pentateuch",
+        "Libri_Historici_et_Novellae_Biblicae": "Historical & Novellas",
+        "Libri_Sapientiae": "Wisdom Books",
+        "Libri_Prophetici": "Prophetic Books",
+        "Evangelia": "Gospels",
+        "Actus_Apostolorum": "Acts of Apostles",
+        "Epistolae": "Letters & Epistles",
+        "Apocalypsis": "Revelation"
+      },
       "books": {
         "GENE": "Genesis",
         "EXO": "Exodus",
@@ -563,6 +623,16 @@
       }
     },
     "italian": {
+      "sections": {
+        "Pentateuchus": "Pentateuco",
+        "Libri_Historici_et_Novellae_Biblicae": "Storici e Novelle",
+        "Libri_Sapientiae": "Sapienziali",
+        "Libri_Prophetici": "Profetici",
+        "Evangelia": "Vangeli",
+        "Actus_Apostolorum": "Atti degli Apostoli",
+        "Epistolae": "Lettere e Epistole",
+        "Apocalypsis": "Apocalisse"
+      },
       "books": {
         "GENE": "Genesi",
         "EXO": "Esodo",
@@ -634,6 +704,16 @@
       }
     },
     "portuguese": {
+      "sections": {
+        "Pentateuchus": "Pentateuco",
+        "Libri_Historici_et_Novellae_Biblicae": "Históricos e Novelas",
+        "Libri_Sapientiae": "Sapienciais",
+        "Libri_Prophetici": "Proféticos",
+        "Evangelia": "Evangelhos",
+        "Actus_Apostolorum": "Atos dos Apóstolos",
+        "Epistolae": "Cartas e Epístolas",
+        "Apocalypsis": "Apocalipse"
+      },
       "books": {
         "GENE": "Gênesis",
         "EXO": "Êxodo",
@@ -705,6 +785,16 @@
       }
     },
     "russian": {
+      "sections": {
+        "Pentateuchus": "Пятикнижие",
+        "Libri_Historici_et_Novellae_Biblicae": "Исторические книги",
+        "Libri_Sapientiae": "Мудрости",
+        "Libri_Prophetici": "Пророческие",
+        "Evangelia": "Евангелия",
+        "Actus_Apostolorum": "Деяния Апостолов",
+        "Epistolae": "Послания",
+        "Apocalypsis": "Откровение"
+      },
       "books": {
         "GENE": "Бытие",
         "EXO": "Исход",
