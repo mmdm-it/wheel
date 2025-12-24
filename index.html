@@ -433,15 +433,17 @@
         portuguese: 'Português',
         russian: 'Русский'
       };
-      const displayOrder = translationsMeta?.language_display_order || [];
+      const desiredOrder = ['hebrew', 'greek', 'latin', 'french', 'spanish', 'english', 'italian', 'portuguese', 'russian'];
+      const normalize = lang => (lang || '').toLowerCase().trim() === 'portugese' ? 'portuguese' : (lang || '').toLowerCase().trim();
       const translations = translationsMeta?.translations || {};
-      const items = displayOrder.map((lang, idx) => {
-        const translation = translationsForLanguage(translationsMeta, lang) || currentTranslation || 'NAB';
-        const name = nativeNames[lang]
+      const items = desiredOrder.map((lang, idx) => {
+        const normalizedLang = normalize(lang);
+        const translation = translationsForLanguage(translationsMeta, normalizedLang) || currentTranslation || 'NAB';
+        const name = nativeNames[normalizedLang]
           || (translations[translation]?.language_name)
-          || (lang ? `${lang.charAt(0).toUpperCase()}${lang.slice(1)}` : 'Language');
+          || (normalizedLang ? `${normalizedLang.charAt(0).toUpperCase()}${normalizedLang.slice(1)}` : 'Language');
         return {
-          id: lang,
+          id: normalizedLang,
           name,
           order: idx,
           translation

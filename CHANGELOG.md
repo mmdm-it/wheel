@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.30] - 2025-12-23
+
+### Changed
+- Secondary language ring order is now fixed to Hebrew, Greek, Latin, French, Spanish, English, Italian, Portuguese, Russian
+
 ## [3.1.29] - 2025-12-23
 
 ### Fixed
