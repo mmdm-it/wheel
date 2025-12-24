@@ -451,11 +451,17 @@ export class FocusRingView {
       this.parentButtonOuter.setAttribute('cy', outerY);
       this.parentButtonOuter.setAttribute('r', magRadius);
       this.parentButtonOuter.removeAttribute('display');
+      this.parentButtonOuter.onclick = parentButtons?.onOuterClick || null;
+      this.parentButtonOuter.style.cursor = parentButtons?.onOuterClick ? 'pointer' : 'default';
+      this.parentButtonOuter.classList.toggle('shifted-out', Boolean(parentButtons?.isLayerOut));
 
       this.parentButtonInner.setAttribute('cx', innerX);
       this.parentButtonInner.setAttribute('cy', innerY);
       this.parentButtonInner.setAttribute('r', magRadius);
       this.parentButtonInner.removeAttribute('display');
+      this.parentButtonInner.onclick = parentButtons?.onInnerClick || null;
+      this.parentButtonInner.style.cursor = parentButtons?.onInnerClick ? 'pointer' : 'default';
+      this.parentButtonInner.classList.toggle('shifted-out', Boolean(parentButtons?.isLayerOut));
 
       if (this.parentButtonOuterLabel) {
         const text = parentButtons?.outerLabel || '';
@@ -464,6 +470,8 @@ export class FocusRingView {
         this.parentButtonOuterLabel.setAttribute('y', outerY);
         this.parentButtonOuterLabel.removeAttribute('transform');
         this.parentButtonOuterLabel.textContent = text;
+        this.parentButtonOuterLabel.onclick = parentButtons?.onOuterClick || null;
+        this.parentButtonOuterLabel.style.cursor = parentButtons?.onOuterClick ? 'pointer' : 'default';
         if (text) this.parentButtonOuterLabel.removeAttribute('display');
         else this.parentButtonOuterLabel.setAttribute('display', 'none');
       }
@@ -474,6 +482,8 @@ export class FocusRingView {
         this.parentButtonInnerLabel.setAttribute('y', innerY);
         this.parentButtonInnerLabel.removeAttribute('transform');
         this.parentButtonInnerLabel.textContent = text;
+        this.parentButtonInnerLabel.onclick = parentButtons?.onInnerClick || null;
+        this.parentButtonInnerLabel.style.cursor = parentButtons?.onInnerClick ? 'pointer' : 'default';
         if (text) this.parentButtonInnerLabel.removeAttribute('display');
         else this.parentButtonInnerLabel.setAttribute('display', 'none');
       }

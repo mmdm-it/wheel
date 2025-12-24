@@ -141,6 +141,7 @@ export function createApp({
   let secondaryIsRotating = false;
   let secondaryRotation = 0;
   let secondarySnapId = null;
+  let isLayerOut = false; // track layer migration state between parent button and magnifier
 
   const setBlur = enabled => {
     isBlurred = Boolean(enabled);
@@ -262,6 +263,18 @@ export function createApp({
     secondaryRotation = clampSecondaryRotation(desiredRotation, bounds);
   };
 
+  const shiftLayersOut = () => {
+    if (isLayerOut) return;
+    isLayerOut = true;
+    render(rotation);
+  };
+
+  const shiftLayersIn = () => {
+    if (!isLayerOut) return;
+    isLayerOut = false;
+    render(rotation);
+  };
+
   const calculateSecondaryNodePositions = (allItems, rotationOffset = secondaryRotation) => {
     const secMag = getSecondaryMagnifier();
     const secWindow = getSecondaryWindow();
@@ -316,12 +329,15 @@ export function createApp({
     const secondarySelected = secondaryNav.getCurrent();
     const secondaryNodes = calculateSecondaryNodePositions(secondaryNav.items, secondaryRotation);
     const parentLabel = getParentLabel(selected);
+    const selectedMagnifierLabel = formatLabel({ item: selected, context: 'magnifier' });
+    const magnifierLabel = isLayerOut ? parentLabel : selectedMagnifierLabel;
+    const parentOuterLabel = isLayerOut ? selectedMagnifierLabel : parentLabel;
 
     view.render(
       nodes,
       arcParams,
       windowInfo,
-      { ...magnifier, radius: magnifierRadius, label: formatLabel({ item: selected, context: 'magnifier' }) },
+      { ...magnifier, radius: magnifierRadius, label: magnifierLabel },
       {
         isRotating,
         isBlurred,
@@ -340,7 +356,10 @@ export function createApp({
         },
         parentButtons: {
           innerLabel: 'CHILDREN (IN)',
-          outerLabel: parentLabel
+          outerLabel: parentOuterLabel,
+          onOuterClick: shiftLayersOut,
+          onInnerClick: shiftLayersIn,
+          isLayerOut
         },
         secondary: isBlurred && secondaryNav.items.length > 0 ? {
           nodes: secondaryNodes,
@@ -400,9 +419,10 @@ export function createApp({
         language: contextOptions?.locale || 'english',
         magnifier: formatMagnifier(),
         parentButton: {
-          outerLabel: parentLabel || '',
+          outerLabel: parentOuterLabel || '',
           innerLabel: 'CHILDREN (IN)'
         },
+        layerDirection: isLayerOut ? 'out' : 'in',
         before: neighbors.before.map(formatNeighbor),
         after: neighbors.after.map(formatNeighbor)
       });

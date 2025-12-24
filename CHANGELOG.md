@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.2.12] - 2025-12-24
+
+### Added
+- Layer migration wiring: parent button shifts labels out; CHILDREN (IN) shifts back in
+
 ## [3.2.11] - 2025-12-24
 
 ### Changed
