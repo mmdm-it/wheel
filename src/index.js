@@ -424,6 +424,7 @@ export function createApp({
 
     const rotateSecondaryNodeIntoMagnifier = node => {
       if (!node?.item) return;
+      const wasBlurred = isBlurred;
       const secMag = getSecondaryMagnifier();
       const targetAngle = secMag.angle;
       const baseAngle = getSecondaryBaseAngle(node.item.order);
@@ -435,6 +436,7 @@ export function createApp({
       render(rotation);
       if (typeof onSelectSecondary === 'function' && node.item.translation) {
         onSelectSecondary(node.item.translation);
+        if (wasBlurred) setBlur(true); // keep dimension mode active after secondary selection
       }
     };
 

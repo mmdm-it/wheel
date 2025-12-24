@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.27] - 2025-12-23
+
+### Fixed
+- Selecting a secondary (mirrored) node keeps Dimension mode active; secondary language selection no longer exits back to the primary stratum
+
 ## [3.1.26] - 2025-12-23
 
 ### Fixed
