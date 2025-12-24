@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.35] - 2025-12-23
+
+### Fixed
+- Dimension button no longer starts a secondary drag; toggling out of Dimension mode works reliably
+
 ## [3.1.34] - 2025-12-23
 
 ### Fixed

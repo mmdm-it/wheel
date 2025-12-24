@@ -360,6 +360,10 @@
       };
 
       svg.addEventListener('pointerdown', event => {
+        const isDimensionButton = event.target && event.target.closest && event.target.closest('.dimension-button');
+        if (isDimensionButton) {
+          return; // let the Dimension button handle its own toggle without starting a drag
+        }
         const blurred = isInteractionLocked();
         if (blurred && hasSecondary()) {
           isSecondaryDragging = true;
