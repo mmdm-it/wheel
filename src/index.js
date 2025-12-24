@@ -397,7 +397,12 @@ export function createApp({
       };
 
       console.info('[FocusRing] magnifier + neighbors', {
+        language: options?.locale || 'english',
         magnifier: formatMagnifier(),
+        parentButton: {
+          outerLabel: parentLabel || '',
+          innerLabel: 'CHILDREN (IN)'
+        },
         before: neighbors.before.map(formatNeighbor),
         after: neighbors.after.map(formatNeighbor)
       });

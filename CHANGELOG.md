@@ -6,6 +6,7 @@
 
 ### Fixed
 - Parent button section label now follows the active translation in cousin mode
+- Added debug log for language, magnifier label, and parent button labels
 
 ## [3.2.7] - 2025-12-24
 
