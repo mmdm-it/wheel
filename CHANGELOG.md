@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.24] - 2025-12-23
+
+### Fixed
+- Secondary Magnifier label now uses the secondary ring geometry for rotation, matching the node orientation
+
 ## [3.1.23] - 2025-12-23
 
 ### Added
