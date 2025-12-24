@@ -124,6 +124,12 @@ export class FocusRingView {
     if (this.magnifierGroup?.parentNode === this.blurGroup) {
       this.blurGroup.appendChild(this.magnifierGroup);
     }
+    if (this.mirrorLayer && this.mirroredMagnifier?.parentNode === this.mirrorLayer) {
+      this.mirrorLayer.appendChild(this.mirroredMagnifier);
+    }
+    if (this.mirrorLayer && this.mirroredMagnifierLabel?.parentNode === this.mirrorLayer) {
+      this.mirrorLayer.appendChild(this.mirroredMagnifierLabel);
+    }
     if (this.blurGroup && this.svgRoot) {
       // Keep layering: base blur content, then mirrored band, then dimension icon
       this.svgRoot.appendChild(this.blurGroup);

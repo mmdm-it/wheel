@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.26] - 2025-12-23
+
+### Fixed
+- Secondary mirrored magnifier now stays above secondary nodes, preventing unselected fill circles from covering the mirrored magnifier label text
+
 ## [3.1.25] - 2025-12-23
 
 ### Fixed
