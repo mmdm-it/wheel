@@ -5,7 +5,7 @@
 Minimal scaffold following the v2 architecture (interaction → navigation → view → geometry → data) with the lodestar Magnifier, sprocket wheel windowing, and pure geometry.
 
 ## Current Version
-- v3.2.5 (2025-12-24)
+- v3.2.6 (2025-12-24)
 
 ## Release Train
 - v3.0 Focus Ring & Magnifier — done

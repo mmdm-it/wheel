@@ -63,7 +63,7 @@
       const arrangement = params.get('arrangement')
         || arrangements[level]
         || startup.arrangement
-        || (volume === 'bible' ? 'cousins-with-gaps' : volume === 'calendar' ? 'cousins-flat' : 'cousins-flat');
+        || (volume === 'bible' ? 'cousins-with-gaps' : volume === 'calendar' ? 'cousins-with-gaps' : 'cousins-flat');
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null
         ? arrangement !== 'siblings-only'
@@ -223,7 +223,7 @@
       return { items, selectedIndex, preserveOrder: false };
     }
 
-    function buildCalendarYears(manifest, { initialItemId } = {}) {
+    function buildCalendarYears(manifest, { arrangement, initialItemId } = {}) {
       const cal = manifest?.Calendar;
       const years = cal?.years;
       const millennia = cal?.millennia;
@@ -234,8 +234,12 @@
         : [];
 
       const chain = [];
+      const shouldGap = (arrangement || 'cousins-with-gaps') === 'cousins-with-gaps';
       if (milliList.length) {
         milliList.forEach(m => {
+          if (shouldGap && chain.length) {
+            chain.push(null, null); // 2-node gap between millennia blocks
+          }
           const yearIds = Array.isArray(m.years) ? m.years : [];
           yearIds
             .map(id => years[id])
@@ -278,7 +282,8 @@
           const match = chain.findIndex(item => item && (item.id === String(initialItemId) || String(item.yearNumber) === String(initialItemId) || item.name === String(initialItemId)));
           if (match >= 0) return match;
         }
-        return chain.length ? 0 : 0;
+        const firstReal = chain.findIndex(item => item !== null);
+        return firstReal >= 0 ? firstReal : 0;
       })();
       return {
         items: chain,

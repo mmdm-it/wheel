@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.2.6] - 2025-12-24
+
+### Changed
+- Calendar defaults to cousins-with-gaps again and uses millennia breaks as data-driven gaps
+
 ## [3.2.5] - 2025-12-24
 
 ### Changed
