@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.2.5] - 2025-12-24
+
+### Changed
+- Calendar volume now has real Millennia level and parent labels; removed synthetic cousin gaps
+
 ## [3.2.4] - 2025-12-24
 
 ### Changed

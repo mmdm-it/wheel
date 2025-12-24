@@ -63,7 +63,7 @@
       const arrangement = params.get('arrangement')
         || arrangements[level]
         || startup.arrangement
-        || (volume === 'bible' ? 'cousins-with-gaps' : volume === 'calendar' ? 'cousins-with-gaps' : 'cousins-flat');
+        || (volume === 'bible' ? 'cousins-with-gaps' : volume === 'calendar' ? 'cousins-flat' : 'cousins-flat');
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null
         ? arrangement !== 'siblings-only'
@@ -223,47 +223,62 @@
       return { items, selectedIndex, preserveOrder: false };
     }
 
-    function buildCalendarYears(manifest, { arrangement, initialItemId } = {}) {
-      const years = manifest?.Calendar?.years;
+    function buildCalendarYears(manifest, { initialItemId } = {}) {
+      const cal = manifest?.Calendar;
+      const years = cal?.years;
+      const millennia = cal?.millennia;
       if (!years) return { items: [], selectedIndex: 0, preserveOrder: true };
-      const sortedYears = Object.values(years)
-        .map(year => {
-          const yearNumber = Number.isFinite(year?.year_number) ? year.year_number : parseInt(year?.id, 10);
-          const name = year?.name || (Number.isFinite(yearNumber) ? (yearNumber < 0 ? `${Math.abs(yearNumber)} BC` : `${yearNumber} AD`) : String(year?.id || ''));
-          const sort = Number.isFinite(year?.sort_number) ? year.sort_number : yearNumber || 0;
-          return {
-            id: year?.id || String(yearNumber),
-            name,
-            sort,
-            yearNumber
-          };
-        })
-        .sort((a, b) => (a.sort || 0) - (b.sort || 0));
+
+      const milliList = millennia
+        ? Object.values(millennia).sort((a, b) => (a.sort_number || 0) - (b.sort_number || 0))
+        : [];
 
       const chain = [];
-      let currentMillennium = null;
-      sortedYears.forEach(year => {
-        const millennium = year.yearNumber > 0
-          ? Math.floor((year.yearNumber - 1) / 1000)
-          : Math.floor((year.yearNumber) / 1000) - 1; // keep negative blocks distinct
-        const shouldGap = (arrangement || 'cousins-with-gaps') === 'cousins-with-gaps';
-        if (shouldGap && currentMillennium !== null && millennium !== currentMillennium) {
-          chain.push(null, null); // 2-node gap between millennia
-        }
-        currentMillennium = millennium;
-        chain.push({
-          ...year,
-          order: chain.length
+      if (milliList.length) {
+        milliList.forEach(m => {
+          const yearIds = Array.isArray(m.years) ? m.years : [];
+          yearIds
+            .map(id => years[id])
+            .filter(Boolean)
+            .map(year => {
+              const yearNumber = Number.isFinite(year?.year_number) ? year.year_number : parseInt(year?.id, 10);
+              const name = year?.name || (Number.isFinite(yearNumber) ? (yearNumber < 0 ? `${Math.abs(yearNumber)} BC` : `${yearNumber} AD`) : String(year?.id || ''));
+              const sort = Number.isFinite(year?.sort_number) ? year.sort_number : yearNumber || 0;
+              return {
+                id: year?.id || String(yearNumber),
+                name,
+                sort,
+                yearNumber,
+                parentName: year?.parentName || m?.name || ''
+              };
+            })
+            .sort((a, b) => (a.sort || 0) - (b.sort || 0))
+            .forEach(item => chain.push({ ...item, order: chain.length }));
         });
-      });
+      } else {
+        // Fallback to legacy structure without millennia
+        Object.values(years)
+          .map(year => {
+            const yearNumber = Number.isFinite(year?.year_number) ? year.year_number : parseInt(year?.id, 10);
+            const name = year?.name || (Number.isFinite(yearNumber) ? (yearNumber < 0 ? `${Math.abs(yearNumber)} BC` : `${yearNumber} AD`) : String(year?.id || ''));
+            const sort = Number.isFinite(year?.sort_number) ? year.sort_number : yearNumber || 0;
+            return {
+              id: year?.id || String(yearNumber),
+              name,
+              sort,
+              yearNumber
+            };
+          })
+          .sort((a, b) => (a.sort || 0) - (b.sort || 0))
+          .forEach(item => chain.push({ ...item, order: chain.length }));
+      }
 
       const selectedIndex = (() => {
         if (initialItemId !== undefined && initialItemId !== null) {
           const match = chain.findIndex(item => item && (item.id === String(initialItemId) || String(item.yearNumber) === String(initialItemId) || item.name === String(initialItemId)));
           if (match >= 0) return match;
         }
-        const firstReal = chain.findIndex(item => item !== null);
-        return firstReal >= 0 ? firstReal : 0;
+        return chain.length ? 0 : 0;
       })();
       return {
         items: chain,

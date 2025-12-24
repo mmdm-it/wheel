@@ -1,6 +1,6 @@
 {
   "name": "wheel-v3",
-  "version": "3.2.4",
+  "version": "3.2.5",
   "type": "module",
   "scripts": {
     "test": "node --test"
