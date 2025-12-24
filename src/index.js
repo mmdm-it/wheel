@@ -410,6 +410,14 @@ export function createApp({
     return { before, after };
   };
 
+  const invokeSecondarySelection = selectedItem => {
+    if (typeof onSelectSecondary === 'function' && selectedItem?.translation) {
+      const wasBlurred = isBlurred;
+      onSelectSecondary(selectedItem.translation);
+      if (wasBlurred) setBlur(true); // keep dimension mode active
+    }
+  };
+
   const rotateNodeIntoMagnifier = node => {
     if (!node?.item || isBlurred) return;
     const targetAngle = magnifier.angle;
@@ -422,23 +430,19 @@ export function createApp({
     animateSnapTo(clampedRotation, 120);
   };
 
-    const rotateSecondaryNodeIntoMagnifier = node => {
-      if (!node?.item) return;
-      const wasBlurred = isBlurred;
-      const secMag = getSecondaryMagnifier();
-      const targetAngle = secMag.angle;
-      const baseAngle = getSecondaryBaseAngle(node.item.order);
-      const desiredRotation = targetAngle - baseAngle;
-      const bounds = computeSecondaryBounds(secondaryNav.items);
-      secondaryNav.selectIndex(node.index);
-      secondaryRotation = clampSecondaryRotation(desiredRotation, bounds);
-      secondaryIsRotating = false;
-      render(rotation);
-      if (typeof onSelectSecondary === 'function' && node.item.translation) {
-        onSelectSecondary(node.item.translation);
-        if (wasBlurred) setBlur(true); // keep dimension mode active after secondary selection
-      }
-    };
+  const rotateSecondaryNodeIntoMagnifier = node => {
+    if (!node?.item) return;
+    const secMag = getSecondaryMagnifier();
+    const targetAngle = secMag.angle;
+    const baseAngle = getSecondaryBaseAngle(node.item.order);
+    const desiredRotation = targetAngle - baseAngle;
+    const bounds = computeSecondaryBounds(secondaryNav.items);
+    secondaryNav.selectIndex(node.index);
+    secondaryRotation = clampSecondaryRotation(desiredRotation, bounds);
+    secondaryIsRotating = false;
+    render(rotation);
+    invokeSecondarySelection(node.item);
+  };
 
   const cancelSnap = () => {
     if (snapId) {
@@ -544,35 +548,38 @@ export function createApp({
     render(rotation, false);
   };
 
-    const selectSecondaryNearest = () => {
-      if (!secondaryNav.items.length) return;
-      const secMag = getSecondaryMagnifier();
-      let closestIdx = secondaryNav.getCurrentIndex();
-      let closestDiff = Infinity;
-      let closestAngle = null;
-      secondaryNav.items.forEach((item, idx) => {
-        if (item === null) return;
-        const baseAngle = getSecondaryBaseAngle(item.order);
-        const rotated = baseAngle + secondaryRotation;
-        const diff = Math.abs(rotated - secMag.angle);
-        if (diff < closestDiff) {
-          closestDiff = diff;
-          closestIdx = idx;
-          closestAngle = rotated;
-        }
-      });
-      secondaryNav.selectIndex(closestIdx);
-      if (closestAngle !== null) {
-        const delta = secMag.angle - closestAngle;
-        const targetRotation = secondaryRotation + delta;
-        secondaryRotation = targetRotation;
-        secondaryIsRotating = false;
-        render(rotation);
-        return;
+  const selectSecondaryNearest = () => {
+    if (!secondaryNav.items.length) return;
+    const secMag = getSecondaryMagnifier();
+    let closestIdx = secondaryNav.getCurrentIndex();
+    let closestDiff = Infinity;
+    let closestAngle = null;
+    secondaryNav.items.forEach((item, idx) => {
+      if (item === null) return;
+      const baseAngle = getSecondaryBaseAngle(item.order);
+      const rotated = baseAngle + secondaryRotation;
+      const diff = Math.abs(rotated - secMag.angle);
+      if (diff < closestDiff) {
+        closestDiff = diff;
+        closestIdx = idx;
+        closestAngle = rotated;
       }
+    });
+    secondaryNav.selectIndex(closestIdx);
+    const selectedItem = secondaryNav.items[closestIdx];
+    if (closestAngle !== null) {
+      const delta = secMag.angle - closestAngle;
+      const targetRotation = secondaryRotation + delta;
+      secondaryRotation = targetRotation;
       secondaryIsRotating = false;
-      render(rotation, false);
-    };
+      render(rotation);
+      invokeSecondarySelection(selectedItem);
+      return;
+    }
+    secondaryIsRotating = false;
+    render(rotation, false);
+    invokeSecondarySelection(selectedItem);
+  };
 
   render(rotation);
     if (isBlurred) return;

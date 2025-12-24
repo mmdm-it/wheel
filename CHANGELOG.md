@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.34] - 2025-12-23
+
+### Fixed
+- Secondary language now applies immediately when a language node snaps into the secondary magnifier (drag or click); no extra click required
+
 ## [3.1.33] - 2025-12-23
 
 ### Fixed
