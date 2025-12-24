@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.15] - 2025-12-23
+
+### Fixed
+- Secondary Stratum magnifier and band now anchor to y = LSd (as designed), ensuring the mirrored magnifier stroke renders in Dimension mode
+
 ## [3.1.14] - 2025-12-23
 
 ### Fixed

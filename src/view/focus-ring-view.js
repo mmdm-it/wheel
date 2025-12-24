@@ -300,7 +300,7 @@ export class FocusRingView {
 
   #mirroredArc(arcParams, viewport) {
     if (!arcParams || !viewport) return arcParams;
-    const mirroredHubY = (viewport.height ?? arcParams.hubY) - arcParams.hubY;
+    const mirroredHubY = viewport.LSd ?? arcParams.hubY;
     return { ...arcParams, hubY: mirroredHubY };
   }
 
