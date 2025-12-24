@@ -2,6 +2,15 @@
 
 > v3 note: This document is copied verbatim from wheel v2 and serves as the authoritative baseline for v3. Until a v3-specific revision is made, all constitutional constants, layer boundaries, and contracts here remain in force. Add any v3 deltas explicitly near the relevant sections rather than silently diverging.
 
+## v3 Delta Summary (dimension + secondary language)
+
+- **Dimension mode behavior**: Dimension mode applies a blur to the primary focus ring and exposes the mirrored secondary stratum; only the Dimension button toggles mode. Secondary actions must never exit dimension mode.
+- **Secondary stratum (language ring)**: Renders mirrored band, magnifier, and nodes while blurred. Secondary magnifier hides fill/label while rotating, matching the primary magnifier.
+- **Language selection flow**: Clicking a secondary node only changes the translation. The current primary item is preserved by carrying `item=<id>` and `dimension=1` query params through the redirect.
+- **Secondary language order**: Fixed sequence `Hebrew → Greek → Latin → French → Spanish → English → Italian → Portuguese → Russian` (see `buildSecondaryLanguages`).
+- **Localized labels**: Book labels use per-language name maps from `data/gutenberg/translations.json` (`names.<language>.books.<BOOK_ID>`), falling back to defaults when missing. Testaments/sections currently fall back to English.
+- **URL/query contract**: `translation`, `item`, and `dimension` are the supported params affecting state on reload; keep these stable for shareable links.
+
 ## Core Principles
 
 1. **Separation of Concerns**: Geometry, data, view, and interaction are independent modules

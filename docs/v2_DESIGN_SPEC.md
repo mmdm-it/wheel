@@ -4,6 +4,8 @@
 
 > v3 delta tracking: This v2 spec is the authoritative baseline for v3. When v3 introduces changes, add a short, explicit "v3 delta" note near the affected section instead of silent edits. Constitutional constants (lodestar magnifier, 4.3° spacing, arc ends at 180°, no inline styles/`!important`) remain in force unless a delta is documented.
 
+> Filename note: We keep the v2 filename (`v2_DESIGN_SPEC.md`) as the baseline reference for v3 to avoid breaking links; v3 deltas live in `ARCHITECTURE_V3.md` and inline notes rather than renaming this file.
+
 ### Document Purpose
 This specification defines the **authoritative v2 coordinate system** for the Wheel navigation interface. Unlike v1 (which used Nuc/center-based origin with center as (0,0)), v2 uses **screen top-left as origin (0,0)** following standard web conventions.
 
