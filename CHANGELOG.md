@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.25] - 2025-12-23
+
+### Fixed
+- Secondary Magnifier no longer shows small unselected labels; rotation state now resets cleanly and the mirrored magnifier hides labels while spinning
+
 ## [3.1.24] - 2025-12-23
 
 ### Fixed

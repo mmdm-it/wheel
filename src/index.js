@@ -146,8 +146,12 @@ export function createApp({
     view.setBlur(isBlurred);
     if (isBlurred) {
       isRotating = false;
+      secondaryIsRotating = false;
       if (choreographer) {
         choreographer.stopMomentum();
+      }
+      if (secondaryChoreographer) {
+        secondaryChoreographer.stopMomentum();
       }
     }
     if (typeof render === 'function') {
@@ -560,9 +564,11 @@ export function createApp({
         const delta = secMag.angle - closestAngle;
         const targetRotation = secondaryRotation + delta;
         secondaryRotation = targetRotation;
+        secondaryIsRotating = false;
         render(rotation);
         return;
       }
+      secondaryIsRotating = false;
       render(rotation, false);
     };
 
@@ -604,6 +610,7 @@ export function createApp({
       if (!secondaryChoreographer) return;
       selectSecondaryNearest();
       secondaryChoreographer.stopMomentum();
+      secondaryIsRotating = false;
     },
     selectSecondaryNearest,
     secondaryChoreographer

@@ -159,6 +159,7 @@ export class FocusRingView {
         this.mirroredMagnifier.setAttribute('cy', mirroredY);
         this.mirroredMagnifier.setAttribute('r', radius);
         this.mirroredMagnifier.removeAttribute('display');
+        this.mirroredMagnifier.classList.toggle('rotating', Boolean(options?.secondary?.isRotating));
         if (options.debug) {
           console.info('[FocusRingView] mirrored magnifier', {
             mirroredX,
