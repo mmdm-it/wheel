@@ -139,81 +139,81 @@
     "hebrew": {
       "books": {
         "GENE": "בראשית",
-        "EXOD": "שמות",
+        "EXO": "שמות",
         "LEVI": "ויקרא",
-        "NUMB": "במדבר",
+        "NUME": "במדבר",
         "DEUT": "דברים"
       }
     },
     "greek": {
       "books": {
         "GENE": "Γένεσις",
-        "EXOD": "Ἔξοδος",
+        "EXO": "Ἔξοδος",
         "LEVI": "Λευιτικόν",
-        "NUMB": "Ἀριθμοί",
+        "NUME": "Ἀριθμοί",
         "DEUT": "Δευτερονόμιον"
       }
     },
     "latin": {
       "books": {
         "GENE": "Genesis",
-        "EXOD": "Exodus",
+        "EXO": "Exodus",
         "LEVI": "Leviticus",
-        "NUMB": "Numeri",
+        "NUME": "Numeri",
         "DEUT": "Deuteronomium"
       }
     },
     "french": {
       "books": {
         "GENE": "Genèse",
-        "EXOD": "Exode",
+        "EXO": "Exode",
         "LEVI": "Lévitique",
-        "NUMB": "Nombres",
+        "NUME": "Nombres",
         "DEUT": "Deutéronome"
       }
     },
     "spanish": {
       "books": {
         "GENE": "Génesis",
-        "EXOD": "Éxodo",
+        "EXO": "Éxodo",
         "LEVI": "Levítico",
-        "NUMB": "Números",
+        "NUME": "Números",
         "DEUT": "Deuteronomio"
       }
     },
     "english": {
       "books": {
         "GENE": "Genesis",
-        "EXOD": "Exodus",
+        "EXO": "Exodus",
         "LEVI": "Leviticus",
-        "NUMB": "Numbers",
+        "NUME": "Numbers",
         "DEUT": "Deuteronomy"
       }
     },
     "italian": {
       "books": {
         "GENE": "Genesi",
-        "EXOD": "Esodo",
+        "EXO": "Esodo",
         "LEVI": "Levitico",
-        "NUMB": "Numeri",
+        "NUME": "Numeri",
         "DEUT": "Deuteronomio"
       }
     },
     "portuguese": {
       "books": {
         "GENE": "Gênesis",
-        "EXOD": "Êxodo",
+        "EXO": "Êxodo",
         "LEVI": "Levítico",
-        "NUMB": "Números",
+        "NUME": "Números",
         "DEUT": "Deuteronômio"
       }
     },
     "russian": {
       "books": {
         "GENE": "Бытие",
-        "EXOD": "Исход",
+        "EXO": "Исход",
         "LEVI": "Левит",
-        "NUMB": "Числа",
+        "NUME": "Числа",
         "DEUT": "Второзаконие"
       }
     }

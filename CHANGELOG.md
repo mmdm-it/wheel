@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.1.33] - 2025-12-23
+
+### Fixed
+- Corrected localized name mapping keys for Exodus (EXO) and Numbers (NUME) so they now localize with other books
+
 ## [3.1.32] - 2025-12-23
 
 ### Added
