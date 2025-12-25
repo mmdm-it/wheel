@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [3.2.13] - 2025-12-24
+
+### Added
+- Calendar OUT/IN level swap: parent click switches to millennia, hides parent button when at top; CHILDREN (IN) returns to years scoped to the selected millennium, restoring last selected year per millennium when available
+
 ## [3.2.12] - 2025-12-24
 
 ### Added

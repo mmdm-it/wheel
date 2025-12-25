@@ -70,10 +70,13 @@ export function createApp({
   secondaryItems = [],
   secondarySelectedIndex = 0,
   onSelectSecondary,
-  contextOptions = {}
+  contextOptions = {},
+  onParentClick,
+  onChildrenClick
 }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
-  const normalized = normalizeItems(items, { preserveOrder });
+  let preserveOrderFlag = preserveOrder;
+  let normalized = normalizeItems(items, { preserveOrder: preserveOrderFlag });
   const formatLabel = typeof labelFormatter === 'function'
     ? labelFormatter
     : ({ item }) => item?.name || item?.id || '';
@@ -142,6 +145,7 @@ export function createApp({
   let secondaryRotation = 0;
   let secondarySnapId = null;
   let isLayerOut = false; // track layer migration state between parent button and magnifier
+  let parentButtonsVisibility = { showOuter: true, showInner: true };
 
   const setBlur = enabled => {
     isBlurred = Boolean(enabled);
@@ -263,13 +267,40 @@ export function createApp({
     secondaryRotation = clampSecondaryRotation(desiredRotation, bounds);
   };
 
+  const setPrimaryItems = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
+    preserveOrderFlag = nextPreserveOrder;
+    normalized = normalizeItems(newItems, { preserveOrder: preserveOrderFlag });
+    const safePrimaryIndex = (() => {
+      if (!normalized.length) return 0;
+      if (normalized[nextSelectedIndex] !== null) return nextSelectedIndex;
+      const fallback = normalized.findIndex(item => item !== null);
+      return fallback >= 0 ? fallback : 0;
+    })();
+    nav.setItems(normalized, safePrimaryIndex);
+    alignToSelected();
+    render(rotation);
+  };
+
+  const setParentButtons = config => {
+    parentButtonsVisibility = { ...parentButtonsVisibility, ...config };
+    render(rotation);
+  };
+
   const shiftLayersOut = () => {
+    if (typeof onParentClick === 'function') {
+      const handled = onParentClick({ selected: nav.getCurrent(), nav, setItems: setPrimaryItems });
+      if (handled) return;
+    }
     if (isLayerOut) return;
     isLayerOut = true;
     render(rotation);
   };
 
   const shiftLayersIn = () => {
+    if (typeof onChildrenClick === 'function') {
+      const handled = onChildrenClick({ selected: nav.getCurrent(), nav, setItems: setPrimaryItems });
+      if (handled) return;
+    }
     if (!isLayerOut) return;
     isLayerOut = false;
     render(rotation);
@@ -359,7 +390,9 @@ export function createApp({
           outerLabel: parentOuterLabel,
           onOuterClick: shiftLayersOut,
           onInnerClick: shiftLayersIn,
-          isLayerOut
+          isLayerOut,
+          showOuter: parentButtonsVisibility.showOuter,
+          showInner: parentButtonsVisibility.showInner
         },
         secondary: isBlurred && secondaryNav.items.length > 0 ? {
           nodes: secondaryNodes,
@@ -438,7 +471,7 @@ export function createApp({
         const prevIdx = index - i;
         if (prevIdx >= 0) {
           before.push({ index: prevIdx, item: nav.items[prevIdx], boundary: false });
-        } else if (!preserveOrder) {
+        } else if (!preserveOrderFlag) {
           const wrapped = nav.wrapIndex(prevIdx);
           before.push({ index: wrapped, item: nav.items[wrapped], boundary: false });
         } else {
@@ -449,7 +482,7 @@ export function createApp({
         const nextIdx = index + i;
         if (nextIdx < nav.items.length) {
           after.push({ index: nextIdx, item: nav.items[nextIdx], boundary: false });
-        } else if (!preserveOrder) {
+        } else if (!preserveOrderFlag) {
           const wrapped = nav.wrapIndex(nextIdx);
           after.push({ index: wrapped, item: nav.items[wrapped], boundary: false });
         } else {
@@ -632,7 +665,7 @@ export function createApp({
   };
 
   render(rotation);
-    if (isBlurred) return;
+  if (isBlurred) return;
 
   return {
     nav,
@@ -672,6 +705,8 @@ export function createApp({
       secondaryIsRotating = false;
     },
     selectSecondaryNearest,
-    secondaryChoreographer
+    secondaryChoreographer,
+    setPrimaryItems,
+    setParentButtons
   };
 }

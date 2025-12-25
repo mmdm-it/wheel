@@ -447,45 +447,69 @@ export class FocusRingView {
       const innerX = hubX + innerDist * Math.cos(innerAngle);
       const innerY = hubY + innerDist * Math.sin(innerAngle);
 
-      this.parentButtonOuter.setAttribute('cx', outerX);
-      this.parentButtonOuter.setAttribute('cy', outerY);
-      this.parentButtonOuter.setAttribute('r', magRadius);
-      this.parentButtonOuter.removeAttribute('display');
-      this.parentButtonOuter.onclick = parentButtons?.onOuterClick || null;
-      this.parentButtonOuter.style.cursor = parentButtons?.onOuterClick ? 'pointer' : 'default';
-      this.parentButtonOuter.classList.toggle('shifted-out', Boolean(parentButtons?.isLayerOut));
+      const showOuter = parentButtons?.showOuter !== false;
+      if (showOuter) {
+        this.parentButtonOuter.setAttribute('cx', outerX);
+        this.parentButtonOuter.setAttribute('cy', outerY);
+        this.parentButtonOuter.setAttribute('r', magRadius);
+        this.parentButtonOuter.removeAttribute('display');
+        this.parentButtonOuter.onclick = parentButtons?.onOuterClick || null;
+        this.parentButtonOuter.style.cursor = parentButtons?.onOuterClick ? 'pointer' : 'default';
+        this.parentButtonOuter.classList.toggle('shifted-out', Boolean(parentButtons?.isLayerOut));
+      } else {
+        this.parentButtonOuter.setAttribute('display', 'none');
+        this.parentButtonOuter.onclick = null;
+        this.parentButtonOuter.style.cursor = 'default';
+      }
 
-      this.parentButtonInner.setAttribute('cx', innerX);
-      this.parentButtonInner.setAttribute('cy', innerY);
-      this.parentButtonInner.setAttribute('r', magRadius);
-      this.parentButtonInner.removeAttribute('display');
-      this.parentButtonInner.onclick = parentButtons?.onInnerClick || null;
-      this.parentButtonInner.style.cursor = parentButtons?.onInnerClick ? 'pointer' : 'default';
-      this.parentButtonInner.classList.toggle('shifted-out', Boolean(parentButtons?.isLayerOut));
+      const showInner = parentButtons?.showInner !== false;
+      if (showInner) {
+        this.parentButtonInner.setAttribute('cx', innerX);
+        this.parentButtonInner.setAttribute('cy', innerY);
+        this.parentButtonInner.setAttribute('r', magRadius);
+        this.parentButtonInner.removeAttribute('display');
+        this.parentButtonInner.onclick = parentButtons?.onInnerClick || null;
+        this.parentButtonInner.style.cursor = parentButtons?.onInnerClick ? 'pointer' : 'default';
+        this.parentButtonInner.classList.toggle('shifted-out', Boolean(parentButtons?.isLayerOut));
+      } else {
+        this.parentButtonInner.setAttribute('display', 'none');
+        this.parentButtonInner.onclick = null;
+        this.parentButtonInner.style.cursor = 'default';
+      }
 
       if (this.parentButtonOuterLabel) {
         const text = parentButtons?.outerLabel || '';
-        const labelX = outerX + magRadius * -1.7; // small negative multiplier to slide start just past stroke
-        this.parentButtonOuterLabel.setAttribute('x', labelX);
-        this.parentButtonOuterLabel.setAttribute('y', outerY);
-        this.parentButtonOuterLabel.removeAttribute('transform');
-        this.parentButtonOuterLabel.textContent = text;
-        this.parentButtonOuterLabel.onclick = parentButtons?.onOuterClick || null;
-        this.parentButtonOuterLabel.style.cursor = parentButtons?.onOuterClick ? 'pointer' : 'default';
-        if (text) this.parentButtonOuterLabel.removeAttribute('display');
-        else this.parentButtonOuterLabel.setAttribute('display', 'none');
+        if (showOuter && text) {
+          const labelX = outerX + magRadius * -1.7; // small negative multiplier to slide start just past stroke
+          this.parentButtonOuterLabel.setAttribute('x', labelX);
+          this.parentButtonOuterLabel.setAttribute('y', outerY);
+          this.parentButtonOuterLabel.removeAttribute('transform');
+          this.parentButtonOuterLabel.textContent = text;
+          this.parentButtonOuterLabel.onclick = parentButtons?.onOuterClick || null;
+          this.parentButtonOuterLabel.style.cursor = parentButtons?.onOuterClick ? 'pointer' : 'default';
+          this.parentButtonOuterLabel.removeAttribute('display');
+        } else {
+          this.parentButtonOuterLabel.setAttribute('display', 'none');
+          this.parentButtonOuterLabel.onclick = null;
+          this.parentButtonOuterLabel.style.cursor = 'default';
+        }
       }
 
       if (this.parentButtonInnerLabel) {
         const text = parentButtons?.innerLabel || '';
-        this.parentButtonInnerLabel.setAttribute('x', innerX);
-        this.parentButtonInnerLabel.setAttribute('y', innerY);
-        this.parentButtonInnerLabel.removeAttribute('transform');
-        this.parentButtonInnerLabel.textContent = text;
-        this.parentButtonInnerLabel.onclick = parentButtons?.onInnerClick || null;
-        this.parentButtonInnerLabel.style.cursor = parentButtons?.onInnerClick ? 'pointer' : 'default';
-        if (text) this.parentButtonInnerLabel.removeAttribute('display');
-        else this.parentButtonInnerLabel.setAttribute('display', 'none');
+        if (showInner && text) {
+          this.parentButtonInnerLabel.setAttribute('x', innerX);
+          this.parentButtonInnerLabel.setAttribute('y', innerY);
+          this.parentButtonInnerLabel.removeAttribute('transform');
+          this.parentButtonInnerLabel.textContent = text;
+          this.parentButtonInnerLabel.onclick = parentButtons?.onInnerClick || null;
+          this.parentButtonInnerLabel.style.cursor = parentButtons?.onInnerClick ? 'pointer' : 'default';
+          this.parentButtonInnerLabel.removeAttribute('display');
+        } else {
+          this.parentButtonInnerLabel.setAttribute('display', 'none');
+          this.parentButtonInnerLabel.onclick = null;
+          this.parentButtonInnerLabel.style.cursor = 'default';
+        }
       }
     } else {
       if (this.parentButtonOuter) this.parentButtonOuter.setAttribute('display', 'none');

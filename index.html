@@ -226,7 +226,7 @@
       return { items, selectedIndex, preserveOrder: false };
     }
 
-    function buildCalendarYears(manifest, { arrangement, initialItemId } = {}) {
+    function buildCalendarYears(manifest, { arrangement, initialItemId, filterMillenniumId } = {}) {
       const cal = manifest?.Calendar;
       const years = cal?.years;
       const millennia = cal?.millennia;
@@ -240,6 +240,7 @@
       const shouldGap = (arrangement || 'cousins-with-gaps') === 'cousins-with-gaps';
       if (milliList.length) {
         milliList.forEach(m => {
+          if (filterMillenniumId && m.id !== filterMillenniumId) return;
           if (shouldGap && chain.length) {
             chain.push(null, null); // 2-node gap between millennia blocks
           }
@@ -256,7 +257,8 @@
                 name,
                 sort,
                 yearNumber,
-                parentName: year?.parentName || m?.name || ''
+                parentName: year?.parentName || m?.name || '',
+                parentId: m?.id || null
               };
             })
             .sort((a, b) => (a.sort || 0) - (b.sort || 0))
@@ -293,6 +295,28 @@
         selectedIndex,
         preserveOrder: true
       };
+    }
+
+    function buildCalendarMillennia(manifest, { initialItemId } = {}) {
+      const milli = manifest?.Calendar?.millennia;
+      if (!milli) return { items: [], selectedIndex: 0, preserveOrder: true };
+      const items = Object.values(milli)
+        .map(m => ({
+          id: m.id,
+          name: m.name || m.id,
+          sort: Number.isFinite(m.sort_number) ? m.sort_number : 0,
+          order: 0
+        }))
+        .sort((a, b) => (a.sort || 0) - (b.sort || 0))
+        .map((item, idx) => ({ ...item, order: idx }));
+      const selectedIndex = (() => {
+        if (initialItemId) {
+          const idx = items.findIndex(item => item.id === initialItemId);
+          if (idx >= 0) return idx;
+        }
+        return 0;
+      })();
+      return { items, selectedIndex, preserveOrder: true };
     }
 
     async function buildChain(manifest, volume, options = {}, namesMap = {}) {
@@ -514,7 +538,49 @@
       }
       const labelFormatter = makeLabelFormatter({ volume, level: options.level, locale: resolvedLocale, namesMap });
       const shouldCenterLabel = ({ item }) => volume === 'calendar';
-      const app = createApp({
+      let app;
+      let calendarMode = volume === 'calendar' ? 'year' : null;
+      const lastYearByMillennium = {};
+      const calendarParentHandler = ({ selected }) => {
+        if (volume !== 'calendar') return false;
+        if (calendarMode !== 'year') return false;
+        const millenniumId = selected?.parentId || selected?.parent_id || null;
+        if (millenniumId && selected?.id) {
+          lastYearByMillennium[millenniumId] = selected.id;
+        }
+        const { items: milliItems, selectedIndex: milliSelected } = buildCalendarMillennia(manifest, { initialItemId: millenniumId });
+        calendarMode = 'millennium';
+        if (app?.setParentButtons) {
+          app.setParentButtons({ showOuter: false, showInner: true });
+        }
+        if (app?.setPrimaryItems) {
+          app.setPrimaryItems(milliItems, milliSelected, true);
+        }
+        return true;
+      };
+
+      const calendarChildrenHandler = ({ selected }) => {
+        if (volume !== 'calendar') return false;
+        if (calendarMode !== 'millennium') return false;
+        const millenniumId = selected?.id;
+        if (!millenniumId) return true;
+        const preferredYear = lastYearByMillennium[millenniumId];
+        const { items: yearItems, selectedIndex: yearSelected } = buildCalendarYears(manifest, {
+          arrangement: options.arrangement,
+          initialItemId: preferredYear,
+          filterMillenniumId: millenniumId
+        });
+        calendarMode = 'year';
+        if (app?.setParentButtons) {
+          app.setParentButtons({ showOuter: true, showInner: true });
+        }
+        if (app?.setPrimaryItems) {
+          app.setPrimaryItems(yearItems, yearSelected, true);
+        }
+        return true;
+      };
+
+      app = createApp({
         svgRoot: svg,
         items,
         viewport,
@@ -525,6 +591,8 @@
         secondaryItems: secondary.items,
         secondarySelectedIndex: secondary.selectedIndex,
         contextOptions: { ...options, locale: resolvedLocale },
+        onParentClick: calendarParentHandler,
+        onChildrenClick: calendarChildrenHandler,
         onSelectSecondary: translationId => {
           const url = new URL(window.location.href);
           const currentItem = app?.nav?.getCurrent?.();
