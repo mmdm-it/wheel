@@ -41,6 +41,19 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
 
   const emit = payload => safeEmit(onEvent, payload);
 
+  const deferred = () => {
+    let resolve;
+    let reject;
+    const promise = new Promise((res, rej) => {
+      resolve = res;
+      reject = rej;
+    });
+    return { promise, resolve, reject };
+  };
+
+  let switching = false;
+  let queuedSwitch = null;
+
   const loadVolume = async (volAdapter, { requestedFocusId = null } = {}) => {
     emit({ type: 'volume-load:start', adapter: volAdapter, requestedFocusId });
 
@@ -52,6 +65,7 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
       throw err;
     }
 
+    emit({ type: 'volume-load:validate:start', adapter: volAdapter });
     const validation = volAdapter.validate(manifest);
     if (!validation.ok) {
       const msg = (validation.errors || []).join('; ');
@@ -59,6 +73,7 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
       emit({ type: 'volume-load:error', error: err, validation });
       throw err;
     }
+    emit({ type: 'volume-load:validate:success', adapter: volAdapter });
 
     const nextNormalized = volAdapter.normalize(manifest);
     const nextItems = nextNormalized.items || [];
@@ -82,11 +97,38 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
 
   await loadVolume(adapter, { requestedFocusId: initialFocusId });
 
-  const setVolume = async (nextAdapter, { focusId = null } = {}) => {
+  const runVolumeSwitch = async (nextAdapter, { focusId = null } = {}) => {
+    switching = true;
     emit({ type: 'volume-switch:start', from: currentVolumeId, toAdapter: nextAdapter });
-    await loadVolume(nextAdapter, { requestedFocusId: focusId });
-    emit({ type: 'volume-switch:complete', to: currentVolumeId });
-    return { volumeId: currentVolumeId, items, normalized };
+    try {
+      await loadVolume(nextAdapter, { requestedFocusId: focusId });
+      emit({ type: 'volume-switch:complete', to: currentVolumeId });
+      return { volumeId: currentVolumeId, items, normalized };
+    } catch (error) {
+      emit({ type: 'volume-switch:error', error, toAdapter: nextAdapter });
+      throw error;
+    } finally {
+      switching = false;
+      if (queuedSwitch) {
+        const next = queuedSwitch;
+        queuedSwitch = null;
+        runVolumeSwitch(next.adapter, next.options).then(next.resolve, next.reject);
+      }
+    }
+  };
+
+  const setVolume = (nextAdapter, { focusId = null } = {}) => {
+    if (switching) {
+      if (queuedSwitch) {
+        emit({ type: 'volume-switch:cancelled', reason: 'replaced-queued', toAdapter: queuedSwitch.adapter });
+        queuedSwitch.resolve({ cancelled: true, volumeId: currentVolumeId });
+      }
+      emit({ type: 'volume-switch:queued', from: currentVolumeId, toAdapter: nextAdapter });
+      const next = deferred();
+      queuedSwitch = { adapter: nextAdapter, options: { focusId }, resolve: next.resolve, reject: next.reject };
+      return next.promise;
+    }
+    return runVolumeSwitch(nextAdapter, { focusId });
   };
 
   const getFocusedId = () => store.getState().focusId;

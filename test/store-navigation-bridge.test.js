@@ -4,6 +4,8 @@ import { createStoreNavigationBridge } from '../src/core/store-navigation-bridge
 
 const VM_ID = 'manufacturer:VM Motori';
 
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
 describe('store-navigation-bridge (catalog)', () => {
   it('loads manifest, normalizes, and exposes items', async () => {
     const bridge = await createStoreNavigationBridge();
@@ -63,6 +65,48 @@ describe('store-navigation-bridge (catalog)', () => {
     assert.ok(events.includes('volume-load:start'));
     assert.ok(events.includes('volume-load:success'));
     assert.ok(events.includes('volume-switch:start'));
+    assert.ok(events.includes('volume-switch:complete'));
+  });
+
+  it('queues concurrent volume switches and replaces the queued request', async () => {
+    const events = [];
+
+    const mkAdapter = (id, delay = 5) => ({
+      volumeId: id,
+      async loadManifest() {
+        await sleep(delay);
+        return { items: [{ id: `${id}-a`, label: `${id}-A` }, { id: `${id}-b`, label: `${id}-B` }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: id } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    });
+
+    const bridge = await createStoreNavigationBridge({ adapter: mkAdapter('one'), onEvent: evt => events.push(evt.type) });
+
+    const firstSwitch = bridge.setVolume(mkAdapter('two', 20), { focusId: 'two-b' });
+    const queuedSwitch = bridge.setVolume(mkAdapter('three', 1), { focusId: 'three-a' });
+    const replacedSwitch = bridge.setVolume(mkAdapter('four', 1), { focusId: 'four-a' });
+
+    const firstResult = await firstSwitch;
+    const queuedResult = await queuedSwitch;
+    const replacedResult = await replacedSwitch;
+
+    assert.equal(firstResult.volumeId, 'two');
+    assert.equal(queuedResult.cancelled, true);
+    assert.equal(replacedResult.volumeId, 'four');
+    assert.equal(bridge.getVolumeId(), 'four');
+    assert.equal(bridge.getFocusedId(), 'four-a');
+
+    assert.ok(events.includes('volume-switch:queued'));
+    assert.ok(events.includes('volume-switch:cancelled'));
     assert.ok(events.includes('volume-switch:complete'));
   });
 });
