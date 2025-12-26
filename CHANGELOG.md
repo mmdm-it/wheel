@@ -2,6 +2,37 @@
 
 ## [Unreleased]
 
+## [4.0.1] - 2025-12-25
+
+### Changed
+- Updated branding/logging to Wheel v4 in the demo HTML
+- Added a data-agnostic volume validation helper for manifests
+- Wired manifest validation into loader flow and added tests for catalog, calendar, bible, and places
+
+
+## [4.0.0] - 2025-12-25
+
+### Added
+- Forked v4 codebase from v3 with data-agnostic posture and copied all four volumes (calendar, gutenberg, mmdm, places)
+- Updated package, docs, and tooling references to wheel-v4 paths and versioning
+
+## [3.2.16] - 2025-12-25
+
+### Fixed
+- Parent label now migrates into the magnifier on OUT and the parent button updates to the new parent label
+
+## [3.2.15] - 2025-12-25
+
+### Changed
+- Parent OUT shows siblings only
+
+
+## [3.2.14] - 2025-12-25
+
+### Changed
+- Keep siblings visible after handled IN/OUT
+
+
 ## [3.2.13] - 2025-12-24
 
 ### Added

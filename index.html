@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wheel v3 Demo</title>
+  <title>Wheel v4 Demo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet" />
@@ -12,9 +12,10 @@
 </head>
 <body>
   <div id="version-badge" class="version-badge" aria-label="Application version"></div>
-  <svg id="app" aria-label="Wheel v3"></svg>
+  <svg id="app" aria-label="Wheel v4"></svg>
   <script type="module">
     import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookCousinChain } from './src/index.js';
+      import { validateVolumeRoot } from './src/index.js';
 
     const svg = document.getElementById('app');
     const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
@@ -29,8 +30,10 @@
           ? 'calendar'
           : path.includes('/bible')
             ? 'bible'
-            : null;
-      const volume = ['catalog', 'calendar', 'bible'].includes(paramVolume)
+            : path.includes('/places')
+              ? 'places'
+              : null;
+      const volume = ['catalog', 'calendar', 'bible', 'places'].includes(paramVolume)
         ? paramVolume
         : pathVolume || 'bible';
 
@@ -38,9 +41,11 @@
         ? './data/mmdm/mmdm_catalog.json'
         : volume === 'calendar'
           ? './data/calendar/manifest.json'
-          : './data/gutenberg/manifest.json';
+          : volume === 'places'
+            ? './data/places/manifest.json'
+            : './data/gutenberg/manifest.json';
 
-      console.info('[wheel-v3] volume selection', {
+      console.info('[wheel-v4] volume selection', {
         pathname: path,
         paramVolume,
         pathVolume,
@@ -52,18 +57,42 @@
       const translationsMeta = volume === 'bible'
         ? await fetch('./data/gutenberg/translations.json').then(r => r.json()).catch(() => null)
         : null;
-      const volumeRoot = volume === 'catalog' ? manifest?.MMdM : volume === 'calendar' ? manifest?.Calendar : manifest?.Gutenberg_Bible;
+      const volumeRoot = volume === 'catalog'
+        ? manifest?.MMdM
+        : volume === 'calendar'
+          ? manifest?.Calendar
+          : volume === 'places'
+            ? manifest?.Places
+            : manifest?.Gutenberg_Bible;
+            const validation = validateVolumeRoot(volumeRoot);
+            if (!validation.ok) {
+              console.error('[wheel-v4] volume validation failed', { errors: validation.errors, warnings: validation.warnings });
+              throw new Error('Invalid volume manifest');
+            }
+            if (validation.warnings.length) {
+              console.warn('[wheel-v4] volume validation warnings', validation.warnings);
+            }
       const startup = volumeRoot?.display_config?.focus_ring_startup || {};
       const arrangements = volumeRoot?.display_config?.focus_ring_arrangements || {};
       const localeParam = params.get('lang');
       const level = params.get('level')
         || startup.top_navigation_level
-        || (volume === 'bible' ? 'book' : volume === 'calendar' ? 'year' : 'manufacturer');
+        || (volume === 'bible'
+          ? 'book'
+          : volume === 'calendar'
+            ? 'year'
+            : volume === 'catalog'
+              ? 'manufacturer'
+              : 'galaxy');
       const initialItemId = params.get('item') || startup.initial_magnified_item || null;
       const arrangement = params.get('arrangement')
         || arrangements[level]
         || startup.arrangement
-        || (volume === 'bible' ? 'cousins-with-gaps' : volume === 'calendar' ? 'cousins-with-gaps' : 'cousins-flat');
+        || (volume === 'bible'
+          ? 'cousins-with-gaps'
+          : volume === 'calendar'
+            ? 'cousins-with-gaps'
+            : 'cousins-flat');
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null
         ? arrangement !== 'siblings-only'
@@ -90,7 +119,13 @@
 
     function applyTheme(manifest, volume) {
       const root = document.documentElement;
-      const theme = volume === 'catalog' ? 'catalog' : volume === 'calendar' ? 'calendar' : 'bible';
+      const theme = volume === 'catalog'
+        ? 'catalog'
+        : volume === 'calendar'
+          ? 'calendar'
+          : volume === 'places'
+            ? 'places'
+            : 'bible';
       root.setAttribute('data-theme', theme);
         const link = document.getElementById('volume-style');
         if (link) {
@@ -183,6 +218,113 @@
         });
       });
       return items;
+    }
+
+    function buildBibleSections(manifest, { testamentId, sectionId, namesMap = {} } = {}) {
+      const bible = manifest?.Gutenberg_Bible;
+      if (!bible) return { items: [], selectedIndex: 0, preserveOrder: true };
+      const testaments = bible.testaments || {};
+      const activeTestamentId = testamentId && testaments[testamentId]
+        ? testamentId
+        : Object.keys(testaments)[0];
+      const activeTestament = testaments[activeTestamentId] || {};
+      const sections = Object.entries(activeTestament.sections || {})
+        .sort((a, b) => (a[1]?.sort_number || 0) - (b[1]?.sort_number || 0));
+      const names = namesMap.sections || namesMap || {};
+      const items = sections.map(([id, section], idx) => ({
+        id,
+        name: names[id] || section?.name || id,
+        sort: Number.isFinite(section?.sort_number) ? section.sort_number : idx,
+        order: idx,
+        testamentId: activeTestamentId,
+        parentName: activeTestament?.name || activeTestamentId
+      }));
+      const selectedIndex = (() => {
+        if (sectionId) {
+          const idx = items.findIndex(item => item.id === sectionId);
+          if (idx >= 0) return idx;
+        }
+        return 0;
+      })();
+      return { items, selectedIndex, preserveOrder: true };
+    }
+
+    function getPlacesLevels(manifest) {
+      const levels = manifest?.Places?.display_config?.hierarchy_levels;
+      if (!levels) return [];
+      return Object.keys(levels);
+    }
+
+    function pluralizeLevel(level) {
+      if (!level) return '';
+      if (level.endsWith('y')) return `${level.slice(0, -1)}ies`;
+      if (level.endsWith('s')) return `${level}es`;
+      return `${level}s`;
+    }
+
+    // Builds ordered items for a Places hierarchy level using optional parent context.
+    function buildPlacesLevel(manifest, levels, levelIndex, { selectedId, parentItem, contextParentId } = {}) {
+      const places = manifest?.Places;
+      if (!places || !levels?.length || levelIndex < 0 || levelIndex >= levels.length) {
+        return { items: [], selectedIndex: 0, preserveOrder: true };
+      }
+      const levelName = levels[levelIndex];
+      const levelKey = pluralizeLevel(levelName);
+      const parentLevelName = levelIndex > 0 ? levels[levelIndex - 1] : null;
+      const parentLevelKey = parentLevelName ? pluralizeLevel(parentLevelName) : null;
+      const collection = places[levelKey] || {};
+      const parentCollection = parentLevelKey ? places[parentLevelKey] || {} : {};
+      const parent = parentItem || (parentLevelName && contextParentId ? parentCollection[contextParentId] : null);
+      const filterParentId = parent?.id || contextParentId || null;
+      const rootChildren = places.root?.children || [];
+      const ids = (() => {
+        if (parent && Array.isArray(parent[levelKey])) {
+          return parent[levelKey];
+        }
+        if (filterParentId && parentLevelName) {
+          const parentProp = `${parentLevelName}_id`;
+          return Object.values(collection)
+            .filter(entry => (entry?.[parentProp] ?? entry?.parent_id) === filterParentId)
+            .sort((a, b) => {
+              const as = Number.isFinite(a?.sort_number) ? a.sort_number : 0;
+              const bs = Number.isFinite(b?.sort_number) ? b.sort_number : 0;
+              if (as === bs) return (a?.name || '').localeCompare(b?.name || '');
+              return as - bs;
+            })
+            .map(entry => entry.id);
+        }
+        if (levelIndex === 0 && rootChildren.length) {
+          return rootChildren;
+        }
+        return Object.keys(collection);
+      })();
+      const items = ids
+        .map((id, idx) => {
+          const raw = collection[id] || { id, name: id };
+          const sort = Number.isFinite(raw.sort_number) ? raw.sort_number : idx;
+          return {
+            id: raw.id || id,
+            name: raw.name || raw.id || id,
+            sort,
+            order: sort,
+            parentId: parent?.id ?? filterParentId ?? raw[`${parentLevelName}_id`] ?? raw.parent_id ?? null,
+            parentName: parent?.name || null,
+            level: levelName
+          };
+        })
+        .sort((a, b) => {
+          if (a.sort === b.sort) return (a.name || '').localeCompare(b.name || '');
+          return a.sort - b.sort;
+        })
+        .map((item, idx) => ({ ...item, order: idx }));
+      const selectedIndex = (() => {
+        if (selectedId) {
+          const idx = items.findIndex(item => item?.id === selectedId);
+          if (idx >= 0) return idx;
+        }
+        return 0;
+      })();
+      return { items, selectedIndex, preserveOrder: true };
     }
 
     function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
@@ -349,6 +491,17 @@
       if (volume === 'calendar') {
         return buildCalendarYears(manifest, { arrangement, initialItemId });
       }
+        if (volume === 'places') {
+          const levels = getPlacesLevels(manifest);
+          if (!levels.length) return { items: [], selectedIndex: 0, preserveOrder: true, meta: null };
+          const startLevel = levels.includes(options.level) ? options.level : levels[0];
+          const levelIndex = Math.max(0, levels.indexOf(startLevel));
+          const { items, selectedIndex, preserveOrder } = buildPlacesLevel(manifest, levels, levelIndex, {
+            selectedId: initialItemId || null
+          });
+          const selections = { [startLevel]: items[selectedIndex]?.id || initialItemId || null };
+          return { items, selectedIndex, preserveOrder, meta: { levels, levelIndex, selections } };
+        }
       const items = buildBibleBooks(manifest, namesMap)
         .sort((a, b) => {
           const as = a.sort || 0;
@@ -530,7 +683,8 @@
         books: localeNames.books || localeNames,
         sections: localeNames.sections || {}
       };
-      const { items, selectedIndex = 0, preserveOrder = false } = await buildChain(manifest, volume, options, namesMap);
+      const chainResult = await buildChain(manifest, volume, options, namesMap);
+      const { items, selectedIndex = 0, preserveOrder = false, meta } = chainResult;
       const secondary = volume === 'bible' ? buildSecondaryLanguages(translationsMeta, options.translation) : { items: [], selectedIndex: 0 };
       if (!items.length) {
         console.error('No items found for volume', volume);
@@ -540,6 +694,9 @@
       const shouldCenterLabel = ({ item }) => volume === 'calendar';
       let app;
       let calendarMode = volume === 'calendar' ? 'year' : null;
+      let bibleMode = volume === 'bible' ? 'book' : null;
+      let placesState = volume === 'places' ? { ...(meta || {}), manifest } : null;
+      const lastBookBySection = {};
       const lastYearByMillennium = {};
       const calendarParentHandler = ({ selected }) => {
         if (volume !== 'calendar') return false;
@@ -580,6 +737,120 @@
         return true;
       };
 
+      const bibleParentHandler = ({ selected }) => {
+        if (volume !== 'bible') return false;
+        if (bibleMode !== 'book') return false;
+        const sectionId = selected?.sectionId;
+        if (sectionId && selected?.id) {
+          lastBookBySection[sectionId] = selected.id;
+        }
+        const testamentId = selected?.testamentId;
+        const { items: sectionItems, selectedIndex: sectionSelected } = buildBibleSections(manifest, {
+          testamentId,
+          sectionId,
+          namesMap
+        });
+        if (!sectionItems.length) return false;
+        bibleMode = 'section';
+        if (app?.setParentButtons) {
+          app.setParentButtons({ showOuter: true, showInner: true });
+        }
+        if (app?.setPrimaryItems) {
+          app.setPrimaryItems(sectionItems, sectionSelected, true);
+        }
+        return true;
+      };
+
+      const bibleChildrenHandler = ({ selected }) => {
+        if (volume !== 'bible') return false;
+        if (bibleMode !== 'section') return false;
+        const sectionId = selected?.id;
+        const testamentId = selected?.testamentId;
+        const initialBookId = sectionId ? lastBookBySection[sectionId] : null;
+        const { items: bookItems, selectedIndex: bookSelected, preserveOrder: bookPreserve } = buildBibleBookCousinChain(manifest, {
+          testamentId,
+          initialItemId: initialBookId,
+          names: namesMap
+        });
+        if (!bookItems.length) return false;
+        bibleMode = 'book';
+        if (app?.setParentButtons) {
+          app.setParentButtons({ showOuter: true, showInner: true });
+        }
+        if (app?.setPrimaryItems) {
+          app.setPrimaryItems(bookItems, bookSelected, bookPreserve);
+        }
+        return true;
+      };
+
+      const placesParentHandler = ({ selected, setItems }) => {
+        if (volume !== 'places') return false;
+        if (!placesState?.levels?.length) return false;
+        if (placesState.levelIndex <= 0) return false;
+        const parentLevelIndex = placesState.levelIndex - 1;
+        const parentLevelName = placesState.levels[parentLevelIndex];
+        placesState.selections[placesState.levels[placesState.levelIndex]] = selected?.id || placesState.selections[placesState.levels[placesState.levelIndex]];
+        const { items: parentItems, selectedIndex: parentSelected, preserveOrder } = buildPlacesLevel(
+          placesState.manifest,
+          placesState.levels,
+          parentLevelIndex,
+          {
+            selectedId: placesState.selections[parentLevelName] || null
+          }
+        );
+        if (!parentItems.length) return false;
+        placesState.levelIndex = parentLevelIndex;
+        placesState.selections[parentLevelName] = parentItems[parentSelected]?.id || placesState.selections[parentLevelName] || null;
+        if (typeof setItems === 'function') {
+          setItems(parentItems, parentSelected, preserveOrder);
+        } else if (app?.setPrimaryItems) {
+          app.setPrimaryItems(parentItems, parentSelected, preserveOrder);
+        }
+        return true;
+      };
+
+      const placesChildrenHandler = ({ selected, setItems }) => {
+        if (volume !== 'places') return false;
+        if (!placesState?.levels?.length) return false;
+        if (placesState.levelIndex >= placesState.levels.length - 1) return false;
+        if (!selected?.id) return false;
+        const nextLevelIndex = placesState.levelIndex + 1;
+        const nextLevelName = placesState.levels[nextLevelIndex];
+        const { items: childItems, selectedIndex: childSelected, preserveOrder } = buildPlacesLevel(
+          placesState.manifest,
+          placesState.levels,
+          nextLevelIndex,
+          {
+            parentItem: selected,
+            selectedId: placesState.selections[nextLevelName] || null,
+            contextParentId: selected.id
+          }
+        );
+        if (!childItems.length) return false;
+        placesState.levelIndex = nextLevelIndex;
+        placesState.selections[nextLevelName] = childItems[childSelected]?.id || placesState.selections[nextLevelName] || null;
+        if (typeof setItems === 'function') {
+          setItems(childItems, childSelected, preserveOrder);
+        } else if (app?.setPrimaryItems) {
+          app.setPrimaryItems(childItems, childSelected, preserveOrder);
+        }
+        return true;
+      };
+
+      const parentHandler = params => {
+        if (bibleParentHandler(params)) return true;
+        if (calendarParentHandler(params)) return true;
+        if (placesParentHandler(params)) return true;
+        return false;
+      };
+
+      const childrenHandler = params => {
+        if (bibleChildrenHandler(params)) return true;
+        if (calendarChildrenHandler(params)) return true;
+        if (placesChildrenHandler(params)) return true;
+        return false;
+      };
+
       app = createApp({
         svgRoot: svg,
         items,
@@ -591,8 +862,8 @@
         secondaryItems: secondary.items,
         secondarySelectedIndex: secondary.selectedIndex,
         contextOptions: { ...options, locale: resolvedLocale },
-        onParentClick: calendarParentHandler,
-        onChildrenClick: calendarChildrenHandler,
+        onParentClick: parentHandler,
+        onChildrenClick: childrenHandler,
         onSelectSecondary: translationId => {
           const url = new URL(window.location.href);
           const currentItem = app?.nav?.getCurrent?.();

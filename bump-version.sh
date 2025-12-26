@@ -1,6 +1,6 @@
 #!/bin/bash
 # bump-version.sh
-# Increment semantic version across wheel-v3 project files
+# Increment semantic version across wheel-v4 project files
 # Usage: ./bump-version.sh [major|minor|patch] ["Optional changelog entry"]
 # Default bump: patch
 
@@ -50,10 +50,11 @@ TMP_PKG="${PACKAGE_FILE}.tmp"
 sed "s/\"version\": \"[0-9.]*\"/\"version\": \"$NEW_VERSION\"/" "$PACKAGE_FILE" > "$TMP_PKG"
 mv "$TMP_PKG" "$PACKAGE_FILE"
 
-if grep -q "Version" "$README_FILE"; then
+if grep -q "Current Version" "$README_FILE"; then
   echo "Updating $README_FILE..."
   TMP_README="${README_FILE}.tmp"
-  sed "s/Version [0-9.]*/Version $NEW_VERSION/" "$README_FILE" > "$TMP_README"
+  # Replace the version marker on the Current Version line while preserving any date text
+  sed "s/- v[0-9.\-]*/- v$NEW_VERSION/" "$README_FILE" > "$TMP_README"
   mv "$TMP_README" "$README_FILE"
 fi
 

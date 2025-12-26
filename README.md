@@ -1,18 +1,17 @@
-# Wheel v3
+# Wheel v4
 
-> **Active codebase**: This branch (`v3`) is the live Wheel code. Legacy v1/v2 assets remain on `main` in the root repo. Please file issues, tests, and PRs against `v3`.
+> **Active codebase**: This branch (`v4`) is the live Wheel code. Legacy v1/v2 remain on `main`, and v3 is preserved under `/wheel-v3` for reference. File issues and PRs against `v4`.
 
-Minimal scaffold following the v2 architecture (interaction → navigation → view → geometry → data) with the lodestar Magnifier, sprocket wheel windowing, and pure geometry.
+Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.2.8 (2025-12-24)
+- v4.0.1 (2025-12-25)
 
 ## Release Train
-- v3.0 Focus Ring & Magnifier — done
-- v3.1 Dimension Button — done
-- v3.2 Parent Button — active
-- v3.3 Child Pyramid — queued
-- v3.4 Detail Sector — queued
+- v4.0.1 Data-agnostic core + multi-volume baseline — done
+- v4.0.1 Parent/Child adapters hardening — active
+- v4.0.1 Child Pyramid — queued
+- v4.0.1 Detail Sector — queued
 
 ## Scripts
 - `npm test` — run Node built-in tests (no external deps)
@@ -27,4 +26,4 @@ Minimal scaffold following the v2 architecture (interaction → navigation → v
 - `test` — node test files for geometry/state
 
 ## Goals
-Keep modules small (<200 lines), zero inline styles/`!important`, and pure functions where possible.
+Keep modules small (<200 lines), zero inline styles/`!important`, pure functions where possible, and validate volumes at load to stay data-agnostic.

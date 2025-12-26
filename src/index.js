@@ -3,6 +3,7 @@ import { NavigationState } from './navigation/navigation-state.js';
 import { buildBibleVerseCousinChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
 import { FocusRingView } from './view/focus-ring-view.js';
+import { validateVolumeRoot } from './data/volume-validator.js';
 
 export {
   getViewportInfo,
@@ -10,6 +11,7 @@ export {
   NavigationState,
   RotationChoreographer,
   FocusRingView,
+  validateVolumeRoot,
   buildBibleVerseCousinChain,
   buildBibleBookCousinChain
 };
@@ -146,6 +148,8 @@ export function createApp({
   let secondarySnapId = null;
   let isLayerOut = false; // track layer migration state between parent button and magnifier
   let parentButtonsVisibility = { showOuter: true, showInner: true };
+  let lastParentLabelOut = '';
+  let lastSelectedLabelOut = '';
 
   const setBlur = enabled => {
     isBlurred = Boolean(enabled);
@@ -211,7 +215,31 @@ export function createApp({
     return label;
   };
 
-  const buildVisibleItems = () => nav.items;
+  const getParentKey = entry => {
+    if (!entry) return null;
+    const parentId = entry.parentId ?? entry.parent_id;
+    if (parentId !== undefined && parentId !== null) return parentId;
+    if (entry.sectionId) return entry.sectionId;
+    if (entry.section) return entry.section;
+    if (entry.parentName) return entry.parentName;
+    if (entry.parent) return entry.parent;
+    return null;
+  };
+
+  const buildVisibleItems = () => {
+    if (!isLayerOut) return nav.items;
+    const selected = nav.getCurrent();
+    if (!selected) return nav.items;
+    const parentKey = getParentKey(selected);
+    if (parentKey === null || parentKey === undefined || parentKey === '') return nav.items;
+    const targetKey = String(parentKey);
+    return nav.items.map(candidate => {
+      if (!candidate) return null;
+      const candidateKey = getParentKey(candidate);
+      if (candidateKey === null || candidateKey === undefined || candidateKey === '') return null;
+      return String(candidateKey) === targetKey ? candidate : null;
+    });
+  };
 
   const computeBounds = visibleItems => {
     const nonNull = visibleItems.filter(item => item !== null);
@@ -287,22 +315,45 @@ export function createApp({
   };
 
   const shiftLayersOut = () => {
+    const prevSelected = nav.getCurrent();
+    const prevParentLabel = getParentLabel(prevSelected) || '';
+    const prevSelectedLabel = formatLabel({ item: prevSelected, context: 'magnifier' }) || '';
     if (typeof onParentClick === 'function') {
       const handled = onParentClick({ selected: nav.getCurrent(), nav, setItems: setPrimaryItems });
-      if (handled) return;
+      if (handled) {
+        if (!isLayerOut) {
+          isLayerOut = true;
+          lastParentLabelOut = prevParentLabel;
+          lastSelectedLabelOut = prevSelectedLabel;
+          render(rotation);
+        }
+        return;
+      }
     }
     if (isLayerOut) return;
     isLayerOut = true;
+    lastParentLabelOut = prevParentLabel;
+    lastSelectedLabelOut = prevSelectedLabel;
     render(rotation);
   };
 
   const shiftLayersIn = () => {
     if (typeof onChildrenClick === 'function') {
       const handled = onChildrenClick({ selected: nav.getCurrent(), nav, setItems: setPrimaryItems });
-      if (handled) return;
+      if (handled) {
+        if (isLayerOut) {
+          isLayerOut = false;
+          lastParentLabelOut = '';
+          lastSelectedLabelOut = '';
+          render(rotation);
+        }
+        return;
+      }
     }
     if (!isLayerOut) return;
     isLayerOut = false;
+    lastParentLabelOut = '';
+    lastSelectedLabelOut = '';
     render(rotation);
   };
 
@@ -361,8 +412,12 @@ export function createApp({
     const secondaryNodes = calculateSecondaryNodePositions(secondaryNav.items, secondaryRotation);
     const parentLabel = getParentLabel(selected);
     const selectedMagnifierLabel = formatLabel({ item: selected, context: 'magnifier' });
-    const magnifierLabel = isLayerOut ? parentLabel : selectedMagnifierLabel;
-    const parentOuterLabel = isLayerOut ? selectedMagnifierLabel : parentLabel;
+    const magnifierLabel = isLayerOut
+      ? (lastParentLabelOut || parentLabel || selectedMagnifierLabel)
+      : selectedMagnifierLabel;
+    const parentOuterLabel = isLayerOut
+      ? (parentLabel || lastSelectedLabelOut || selectedMagnifierLabel)
+      : parentLabel;
 
     view.render(
       nodes,

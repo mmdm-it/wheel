@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Sync wheel-v3 to catalog, bible, and calendar deployments
-# Usage: ./sync-to-server.sh [catalog|bible|calendar|both|all]
+# Sync wheel-v4 to catalog, bible, calendar, and places deployments
+# Usage: ./sync-to-server.sh [catalog|bible|calendar|places|both|all]
 
 SERVER="namecheap"
-REMOTE_BASE="~/public_html/mmdm/wheel-v3"
-LOCAL_PATH="/media/howell/dev_workspace/wheel-v3/"
+REMOTE_BASE="~/public_html/mmdm/wheel-v4"
+LOCAL_PATH="/media/howell/dev_workspace/wheel-v4/"
 
 # Color codes
 GREEN='\033[0;32m'
@@ -41,7 +41,7 @@ sync_deployment() {
     
     if [ $? -eq 0 ]; then
         echo -e "${GREEN}✅ ${deployment} sync complete!${NC}"
-        echo -e "   URL: https://howellgibbens.com/mmdm/wheel-v3/${deployment}/"
+        echo -e "   URL: https://howellgibbens.com/mmdm/wheel-v4/${deployment}/"
         return 0
     else
         echo -e "${RED}❌ ${deployment} sync failed!${NC}"
@@ -54,7 +54,7 @@ DEPLOYMENT=${1:-all}
 
 echo ""
 echo "════════════════════════════════════════════════════"
-echo "  Wheel v3 - Server Sync"
+echo "  Wheel v4 - Server Sync"
 echo "════════════════════════════════════════════════════"
 echo ""
 
@@ -68,6 +68,9 @@ case $DEPLOYMENT in
     calendar)
         sync_deployment "calendar"
         ;;
+    places)
+        sync_deployment "places"
+        ;;
     all)
         sync_deployment "catalog"
         echo ""
@@ -78,6 +81,10 @@ case $DEPLOYMENT in
         echo "────────────────────────────────────────────────────"
         echo ""
         sync_deployment "calendar"
+        echo ""
+        echo "────────────────────────────────────────────────────"
+        echo ""
+        sync_deployment "places"
         ;;
     both)
         sync_deployment "catalog"
@@ -89,15 +96,16 @@ case $DEPLOYMENT in
     *)
         echo -e "${RED}❌ Invalid deployment: $DEPLOYMENT${NC}"
         echo ""
-        echo "Usage: ./sync-to-server.sh [catalog|bible|calendar|both|all]"
+        echo "Usage: ./sync-to-server.sh [catalog|bible|calendar|places|both|all]"
         echo ""
         echo "Examples:"
         echo "  ./sync-to-server.sh            # Sync all (default)"
         echo "  ./sync-to-server.sh catalog    # Sync MMdM catalog only"
         echo "  ./sync-to-server.sh bible      # Sync Bible only"
         echo "  ./sync-to-server.sh calendar   # Sync Calendar dev dataset only"
+        echo "  ./sync-to-server.sh places     # Sync Deep Places test volume"
         echo "  ./sync-to-server.sh both       # Sync MMdM catalog and Bible"
-        echo "  ./sync-to-server.sh all        # Sync catalog, Bible, and calendar"
+        echo "  ./sync-to-server.sh all        # Sync catalog, Bible, calendar, and places"
         exit 1
         ;;
 
@@ -109,7 +117,8 @@ echo -e "${GREEN}✨ Deployment complete!${NC}"
 echo "════════════════════════════════════════════════════"
 echo ""
 echo "URLs:"
-echo "  📚 Bible:   https://howellgibbens.com/mmdm/wheel-v3/bible/"
-echo "  ⚙️  Catalog: https://howellgibbens.com/mmdm/wheel-v3/catalog/"
-echo "  📅 Calendar: https://howellgibbens.com/mmdm/wheel-v3/calendar/"
+echo "  📚 Bible:   https://howellgibbens.com/mmdm/wheel-v4/bible/"
+echo "  ⚙️  Catalog: https://howellgibbens.com/mmdm/wheel-v4/catalog/"
+echo "  📅 Calendar: https://howellgibbens.com/mmdm/wheel-v4/calendar/"
+echo "  🧭 Places:   https://howellgibbens.com/mmdm/wheel-v4/places/"
 echo ""
