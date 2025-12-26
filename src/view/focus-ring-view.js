@@ -6,6 +6,9 @@ export class FocusRingView {
     this.mirrorLayer = null;
     this.nodesGroup = null;
     this.labelsGroup = null;
+    this.pyramidGroup = null;
+    this.pyramidNodesGroup = null;
+    this.pyramidLabelsGroup = null;
     this.mirroredNodesGroup = null;
     this.mirroredLabelsGroup = null;
     this.magnifierGroup = null;
@@ -120,6 +123,16 @@ export class FocusRingView {
     this.labelsGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.labelsGroup.setAttribute('class', 'focus-ring-labels');
     this.blurGroup.appendChild(this.labelsGroup);
+
+    this.pyramidGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.pyramidGroup.setAttribute('class', 'child-pyramid');
+    this.pyramidNodesGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.pyramidNodesGroup.setAttribute('class', 'child-pyramid-nodes');
+    this.pyramidLabelsGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.pyramidLabelsGroup.setAttribute('class', 'child-pyramid-labels');
+    this.pyramidGroup.appendChild(this.pyramidNodesGroup);
+    this.pyramidGroup.appendChild(this.pyramidLabelsGroup);
+    this.blurGroup.appendChild(this.pyramidGroup);
   }
 
   setBlur(enabled) {
@@ -142,6 +155,8 @@ export class FocusRingView {
     const magnifierAngle = options.magnifierAngle;
     const labelMaskEpsilon = options.labelMaskEpsilon ?? 0.0001;
     const onNodeClick = options.onNodeClick;
+    const pyramidInstructions = Array.isArray(options.pyramidInstructions) ? options.pyramidInstructions : null;
+    const onPyramidClick = options.onPyramidClick;
     const selectedId = options.selectedId;
     const dimensionIcon = options.dimensionIcon;
     const parentButtons = options.parentButtons;
@@ -160,6 +175,40 @@ export class FocusRingView {
       this.svgRoot.appendChild(this.blurGroup);
       if (this.mirrorLayer) this.svgRoot.appendChild(this.mirrorLayer);
       if (this.dimensionIcon) this.svgRoot.appendChild(this.dimensionIcon);
+    }
+
+    // Render child pyramid nodes/labels if provided
+    if (this.pyramidGroup && this.pyramidNodesGroup && this.pyramidLabelsGroup) {
+      if (!pyramidInstructions || pyramidInstructions.length === 0) {
+        this.pyramidGroup.setAttribute('display', 'none');
+        while (this.pyramidNodesGroup.firstChild) this.pyramidNodesGroup.removeChild(this.pyramidNodesGroup.firstChild);
+        while (this.pyramidLabelsGroup.firstChild) this.pyramidLabelsGroup.removeChild(this.pyramidLabelsGroup.firstChild);
+      } else {
+        this.pyramidGroup.removeAttribute('display');
+        while (this.pyramidNodesGroup.firstChild) this.pyramidNodesGroup.removeChild(this.pyramidNodesGroup.firstChild);
+        while (this.pyramidLabelsGroup.firstChild) this.pyramidLabelsGroup.removeChild(this.pyramidLabelsGroup.firstChild);
+        pyramidInstructions.forEach(instr => {
+          const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+          circle.setAttribute('class', 'child-pyramid-node');
+          circle.setAttribute('cx', instr.x ?? 0);
+          circle.setAttribute('cy', instr.y ?? 0);
+          circle.setAttribute('r', instr.r ?? 12);
+          circle.dataset.id = instr.id ?? '';
+          if (typeof onPyramidClick === 'function') {
+            circle.addEventListener('click', evt => onPyramidClick(instr, evt));
+          }
+          this.pyramidNodesGroup.appendChild(circle);
+
+          const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+          label.setAttribute('class', 'child-pyramid-label');
+          label.setAttribute('x', instr.x ?? 0);
+          label.setAttribute('y', instr.y ?? 0);
+          label.setAttribute('text-anchor', 'middle');
+          label.setAttribute('dominant-baseline', 'middle');
+          label.textContent = instr.label ?? instr.id ?? '';
+          this.pyramidLabelsGroup.appendChild(label);
+        });
+      }
     }
 
     if (this.band && arcParams && viewportWindow) {
