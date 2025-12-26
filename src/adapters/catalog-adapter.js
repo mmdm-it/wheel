@@ -3,6 +3,8 @@ import { readFileSync as readFileSyncCompat } from 'fs';
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import Ajv from 'ajv';
+import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
+import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const manifestPath = resolve(__dirname, '../../data/mmdm/mmdm_catalog.json');
@@ -97,8 +99,10 @@ export function normalize(raw) {
   };
 }
 
-export function layoutSpec(normalized) {
+export function layoutSpec(normalized, viewport) {
   const levels = normalized?.meta?.levels || ['market', 'country', 'manufacturer', 'cylinder', 'model'];
+  const vp = viewport?.width && viewport?.height ? viewport : getViewportInfo(1280, 720);
+  const pyramidCapacity = calculatePyramidCapacity(vp);
   return {
     rings: levels.map((lvl, idx) => ({ id: lvl, order: idx })),
     label: item => item?.name ?? '',
@@ -111,6 +115,11 @@ export function layoutSpec(normalized) {
         model: '#633a00'
       };
       return palette[level] || '#555';
+    },
+    pyramid: {
+      capacity: pyramidCapacity,
+      sample: siblings => sampleSiblings(siblings, pyramidCapacity.total),
+      place: siblings => placePyramidNodes(siblings, vp, { capacity: pyramidCapacity })
     }
   };
 }

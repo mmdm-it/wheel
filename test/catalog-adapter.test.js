@@ -1,6 +1,7 @@
 import assert from 'assert/strict';
 import { describe, it } from 'node:test';
 import { catalogAdapter, loadManifest, validate, normalize, layoutSpec } from '../src/adapters/catalog-adapter.js';
+import { getViewportInfo } from '../src/geometry/focus-ring-geometry.js';
 
 describe('catalog adapter', () => {
   it('loads manifest', async () => {
@@ -34,10 +35,17 @@ describe('catalog adapter', () => {
   it('provides layout spec', async () => {
     const manifest = await loadManifest();
     const norm = normalize(manifest);
-    const spec = layoutSpec(norm);
+    const viewport = getViewportInfo(1200, 900);
+    const spec = layoutSpec(norm, viewport);
     assert.ok(spec.rings?.length, 'layout spec should include rings');
     assert.equal(typeof spec.label, 'function');
     assert.equal(typeof spec.colorByLevel, 'function');
+    assert.ok(spec.pyramid?.capacity?.total > 0, 'pyramid capacity should be available');
+    const siblings = norm.items.filter(i => i.parentId === norm.items[0].id);
+    const sampled = spec.pyramid.sample(siblings);
+    const placed = spec.pyramid.place(sampled);
+    assert.equal(sampled.length, placed.length);
+    assert.ok(placed.every(p => Number.isFinite(p.angle) && Number.isFinite(p.x) && Number.isFinite(p.y)));
   });
 
   it('exports adapter object', () => {

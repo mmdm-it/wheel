@@ -5,8 +5,8 @@
 ### Release Train Status (v4)
 - v4.0.0 Baseline data + UI lift — done (seeded from v3)
 - v4.1 Adapter + state-store foundation — done (shipped as 4.1.0)
-- v4.2 Volume-safe interaction loop — active (queue/cancel + deep-link hydration done)
-- v4.3 Detail/pyramid rebuild on adapters — planned
+- v4.2 Volume-safe interaction loop — done (shipped as 4.2.0; queue/cancel + deep-link hydration + rapid-switch stress tests)
+- v4.3 Detail/pyramid rebuild on adapters — active
 - v4.4 Theming + accessibility hardening — planned
 - v4.5 Dimension System (lens: language/time) — planned
 
@@ -41,22 +41,19 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - One adapter end-to-end: manifest → validate/normalize → layoutSpec → focus-ring render using store state.
 - No data-specific conditionals remain in shared render/navigation paths.
 
-### v4.2 — Volume-Safe Interaction (current)
+### v4.2 — Volume-Safe Interaction (complete)
 **Goal:** Make volume switching a first-class, race-free operation.
 - Guarded transitions in the store (no switch mid-transition without queue/cancel).
 - Transition choreography between volumes (loading, placeholder, apply, reveal).
 - Integration tests: switch during rotation; invalid manifest rejection; deep-link hydration.
 
-**Near-term focus (internal):**
-- Add store-level guard rails for concurrent volume switches (queue/cancel behavior covered by tests).
-- Emit telemetry events for load/validate/switch/deep-link stages via `safeEmit` to prove observability during interactions. (DONE)
-- Add integration tests: rotation → switch → rotation (DONE); invalid manifest rejection (DONE); deep-link hydration stability (DONE).
-- Remaining: stress/perf scenarios under rapid switches; UI/UX error affordances.
+**Status:** Complete (released as 4.2.0). Queue/cancel guard rails, telemetry + `store:error` affordance, deep-link hydration, rapid-switch stress tests (50-cycle switch/rotate burst + in-flight deep-link), and child-pyramid geometry helpers (dynamic capacity, sampling, even-angle placement) are landed.
 
-**Exit criteria:** volume switch tests green; UX smooth under load; errors degrade gracefully.
+**Exit criteria:** volume switch tests green; UX smooth under load; errors degrade gracefully. (Met via rapid-switch stress coverage and deep-link-in-flight test.)
 
 **Build/Test Checkpoints:**
 - Integration: rotation → volume switch → rotation (no stale state); queued/cancelled switches behave deterministically.
+- Stress/perf: rapid switch + rotation bursts keep last requested volume/focus and clear hover; deep-link hydration stable while prior switch runs.
 - Error paths: invalid manifest surfaces warning and retains prior volume; deep-link hydration stable.
 - Telemetry hooks emit load/validate/switch events.
 
@@ -65,6 +62,8 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - Child pyramid consumes adapter layout; sampling and migration animations operate on normalized children.
 - Detail sector uses adapter-provided templates/layout metadata.
 - Expand plugin surface for detail renderers (text, cards, media) with per-volume themes.
+
+**Status:** Active. Pyramid geometry helpers landed; catalog adapter now emits pyramid capacity/sample/place hooks. Next: wire view layer to consume placements and stand up detail-sector plugin registry with adapter-provided templates.
 
 **Exit criteria:** pyramid/detail work for at least two volumes; migrations stable; theming respected.
 

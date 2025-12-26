@@ -1,6 +1,7 @@
 import assert from 'assert/strict';
 import { describe, it } from 'node:test';
 import { createStoreNavigationBridge } from '../src/core/store-navigation-bridge.js';
+import { interactionEvents } from '../src/core/interaction-store.js';
 
 const VM_ID = 'manufacturer:VM Motori';
 
@@ -253,6 +254,65 @@ describe('store-navigation-bridge (catalog)', () => {
 
     await bridge.setVolume(goodAdapter);
     assert.equal(bridge.store.getState().error, null);
+  });
+
+  it('invokes onError callback and emits store:error when error state changes', async () => {
+    const events = [];
+    const errors = [];
+
+    const goodAdapter = {
+      volumeId: 'good',
+      async loadManifest() {
+        return { items: [{ id: 'g', label: 'G' }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'good' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    };
+
+    const badAdapter = {
+      volumeId: 'bad',
+      async loadManifest() {
+        throw new Error('bad-load');
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'bad' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    };
+
+    const bridge = await createStoreNavigationBridge({
+      adapter: goodAdapter,
+      onEvent: evt => events.push(evt.type),
+      onError: (error, meta) => errors.push({ error, meta })
+    });
+
+    await assert.rejects(() => bridge.setVolume(badAdapter), /bad-load/);
+
+    assert.ok(events.includes('store:error'));
+    assert.ok(errors[0].error instanceof Error);
+    assert.equal(errors[0].meta.cleared, false);
+    assert.equal(errors[0].meta.volumeId, 'bad');
+
+    await bridge.setVolume(goodAdapter);
+
+    const final = errors.at(-1);
+    assert.equal(final.error, null);
+    assert.equal(final.meta.cleared, true);
+    assert.equal(final.meta.volumeId, 'good');
   });
 
   it('rejects invalid manifest switches and keeps prior volume', async () => {
@@ -736,6 +796,112 @@ describe('store-navigation-bridge (catalog)', () => {
     assert.ok(events.includes('volume-switch:queued'));
     assert.ok(events.includes('volume-switch:cancelled'));
     assert.ok(events.filter(e => e === 'volume-switch:complete').length === 2); // first and last only
+  });
+
+  it('survives sustained rapid switch/rotation bursts without stale state', async () => {
+    const events = [];
+
+    const mkAdapter = (id, delay = 2) => ({
+      volumeId: id,
+      async loadManifest() {
+        await sleep(delay);
+        return {
+          items: [
+            { id: `${id}-a`, label: `${id}-A` },
+            { id: `${id}-b`, label: `${id}-B` },
+            { id: `${id}-c`, label: `${id}-C` }
+          ]
+        };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: id } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    });
+
+    const bridge = await createStoreNavigationBridge({ adapter: mkAdapter('seed'), onEvent: evt => events.push(evt.type) });
+    events.length = 0;
+
+    const requests = [];
+    for (let i = 1; i <= 50; i += 1) {
+      const volumeId = `stress-${i}`;
+      const focusId = `${volumeId}-b`;
+
+      bridge.store.dispatch({ type: interactionEvents.HOVER, hoverId: `hover-${i}` });
+      bridge.nav.selectOffset(1);
+      requests.push(bridge.setVolume(mkAdapter(volumeId, (i % 5) + 1), { focusId }));
+    }
+
+    const results = await Promise.all(requests);
+    const lastResult = results.at(-1);
+
+    assert.equal(lastResult.volumeId, 'stress-50');
+    assert.equal(bridge.getVolumeId(), 'stress-50');
+    assert.equal(bridge.getFocusedId(), 'stress-50-b');
+    assert.equal(bridge.store.getState().hoverId, null);
+
+    const completes = events.filter(t => t === 'volume-switch:complete').length;
+    assert.ok(completes >= 2, 'expected multiple completed switches');
+    assert.ok(events.includes('volume-switch:queued'));
+    assert.ok(events.includes('volume-switch:cancelled'));
+  });
+
+  it('hydrates deep links while a prior switch is in flight without stale focus', async () => {
+    const events = [];
+
+    const mkAdapter = (id, delay = 5) => ({
+      volumeId: id,
+      async loadManifest() {
+        await sleep(delay);
+        return { items: [{ id: `${id}-a`, label: `${id}-A` }, { id: `${id}-b`, label: `${id}-B` }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: id } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: { deepLink: true },
+      resolveDeepLink(link) {
+        return { focusId: `${id}-${link}` };
+      }
+    });
+
+    const base = mkAdapter('base');
+    const slow = mkAdapter('slow', 25);
+    const target = mkAdapter('target', 1);
+
+    const bridge = await createStoreNavigationBridge({ adapter: base, onEvent: evt => events.push(evt) });
+    events.length = 0;
+
+    const slowSwitch = bridge.setVolume(slow, { focusId: 'slow-b' });
+    const hydrated = await bridge.hydrateDeepLink('b', { adapter: target });
+
+    assert.equal(hydrated, true);
+    assert.equal(bridge.getVolumeId(), 'target');
+    assert.equal(bridge.getFocusedId(), 'target-b');
+    assert.equal(bridge.store.getState().hoverId, null);
+
+    const types = events.map(e => e.type);
+    assert.ok(types.includes('deep-link:start'));
+    assert.ok(types.includes('deep-link:success'));
+    assert.ok(types.includes('volume-switch:start'));
+    assert.ok(types.includes('volume-switch:complete'));
+
+    const completes = events.filter(e => e.type === 'volume-switch:complete');
+    assert.equal(completes.at(-1)?.to, 'target');
+
+    const slowResult = await slowSwitch;
+    assert.equal(slowResult.volumeId, 'slow');
   });
 
 });

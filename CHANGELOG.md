@@ -2,6 +2,29 @@
 
 ## [Unreleased]
 
+## [4.2.1] - 2025-12-26
+
+### Added
+- Detail plugin registry scaffold (register/unregister/cache) with unit tests
+- Catalog adapter layoutSpec emits pyramid capacity/sample/place hooks using child-pyramid geometry helpers
+
+## [4.2.0] - 2025-12-26
+
+### Added
+- Rapid volume-switch stress coverage (50-cycle burst + in-flight deep-link hydration) to lock volume-safe interaction exit criteria
+- Child pyramid geometry helpers: dynamic capacity by viewport window, deterministic sampling, center-outward ordering, and even-angle placement across arcs
+
+### Changed
+- Marked volume-safe interaction loop complete; queue/cancel guards, telemetry, and error affordance solidified
+
+## [4.1.3] - 2025-12-25
+
+### Added
+- `store:error` emission and optional `onError` callback in `createStoreNavigationBridge` so hosts can surface error states
+
+### Changed
+- Error transitions now dedupe notifications and clear state on recovery
+
 ## [4.1.2] - 2025-12-25
 
 ### Added
