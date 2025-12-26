@@ -54,6 +54,38 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
   let switching = false;
   let queuedSwitch = null;
 
+  const hydrateDeepLink = async (link, { adapter: linkAdapter = adapter } = {}) => {
+    emit({ type: 'deep-link:start', link, adapter: linkAdapter });
+    try {
+      const resolver = typeof linkAdapter.resolveDeepLink === 'function' ? linkAdapter.resolveDeepLink : null;
+      let resolvedFocusId = null;
+
+      if (resolver) {
+        const resolved = await resolver(link);
+        resolvedFocusId = resolved?.focusId ?? resolved?.id ?? resolved ?? null;
+      } else if (typeof link === 'string') {
+        resolvedFocusId = link;
+      }
+
+      if (!resolvedFocusId) {
+        emit({ type: 'deep-link:error', link, adapter: linkAdapter, error: new Error('unable to resolve deep link') });
+        return false;
+      }
+
+      if (linkAdapter !== adapter) {
+        await setVolume(linkAdapter, { focusId: resolvedFocusId });
+      } else {
+        focusById(resolvedFocusId);
+      }
+
+      emit({ type: 'deep-link:success', link, adapter: linkAdapter, focusId: resolvedFocusId });
+      return true;
+    } catch (error) {
+      emit({ type: 'deep-link:error', link, adapter: linkAdapter, error });
+      throw error;
+    }
+  };
+
   const loadVolume = async (volAdapter, { requestedFocusId = null } = {}) => {
     emit({ type: 'volume-load:start', adapter: volAdapter, requestedFocusId });
 
@@ -146,6 +178,7 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
     focusById,
     getFocusedId,
     setVolume,
+    hydrateDeepLink,
     getVolumeId
   };
 }

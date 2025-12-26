@@ -157,4 +157,91 @@ describe('store-navigation-bridge (catalog)', () => {
     assert.ok(events.includes('volume-load:error'));
     assert.ok(events.includes('volume-switch:error'));
   });
+
+  it('hydrates deep links on the current volume via adapter resolver', async () => {
+    const events = [];
+
+    const adapter = {
+      volumeId: 'dl-current',
+      async loadManifest() {
+        return { items: [{ id: 'dl-a', label: 'DL A' }, { id: 'dl-b', label: 'DL B' }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'dl-current' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: { deepLink: true },
+      resolveDeepLink(link) {
+        return { focusId: link === 'pick-b' ? 'dl-b' : 'dl-a' };
+      }
+    };
+
+    const bridge = await createStoreNavigationBridge({ adapter, onEvent: evt => events.push(evt.type) });
+
+    const ok = await bridge.hydrateDeepLink('pick-b');
+
+    assert.equal(ok, true);
+    assert.equal(bridge.getVolumeId(), 'dl-current');
+    assert.equal(bridge.getFocusedId(), 'dl-b');
+    assert.ok(events.includes('deep-link:start'));
+    assert.ok(events.includes('deep-link:success'));
+  });
+
+  it('hydrates deep links by switching volumes when adapter differs', async () => {
+    const events = [];
+
+    const adapterOne = {
+      volumeId: 'one',
+      async loadManifest() {
+        return { items: [{ id: 'one-a', label: 'One A' }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'one' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    };
+
+    const adapterTwo = {
+      volumeId: 'two',
+      async loadManifest() {
+        return { items: [{ id: 'two-a', label: 'Two A' }, { id: 'two-b', label: 'Two B' }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'two' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: { deepLink: true },
+      resolveDeepLink(link) {
+        return { focusId: link === 'two-b' ? 'two-b' : 'two-a' };
+      }
+    };
+
+    const bridge = await createStoreNavigationBridge({ adapter: adapterOne, onEvent: evt => events.push(evt.type) });
+
+    const ok = await bridge.hydrateDeepLink('two-b', { adapter: adapterTwo });
+
+    assert.equal(ok, true);
+    assert.equal(bridge.getVolumeId(), 'two');
+    assert.equal(bridge.getFocusedId(), 'two-b');
+    assert.ok(events.includes('deep-link:start'));
+    assert.ok(events.includes('deep-link:success'));
+    assert.ok(events.includes('volume-switch:start'));
+    assert.ok(events.includes('volume-switch:complete'));
+  });
 });
