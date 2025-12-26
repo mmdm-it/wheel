@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## [4.2.3] - 2025-12-26
+
+### Added
+- Pyramid preview builder that samples/places children and produces render instructions (with tests)
+- Optional pyramid configuration in `createApp` to render instructions and handle pyramid clicks
+- Pyramid child resolvers for all volumes (Bible/Calendar/Catalog/Places) with pyramid click drill-down (chapters/months/models/places)
+
+### Changed
+- Pyramid instruction builder now retains the source item to support click affordances
+
 ## [4.2.2] - 2025-12-26
 
 ### Added

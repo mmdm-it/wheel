@@ -673,6 +673,84 @@
       return { items, selectedIndex };
     };
 
+    const getCatalogChildren = (manifest, selected) => {
+      const id = selected?.id;
+      if (!id) return [];
+      const [marketId, countryId, manufacturerId] = id.split('__');
+      const manufacturer = manifest?.MMdM?.markets?.[marketId]?.countries?.[countryId]?.manufacturers?.[manufacturerId];
+      if (!manufacturer) return [];
+      const cylinders = manufacturer.cylinders || {};
+      const children = [];
+      Object.entries(cylinders).forEach(([cylKey, cylVal]) => {
+        const models = Array.isArray(cylVal.models) ? cylVal.models : [];
+        models.forEach((model, idx) => {
+          const modelId = `model:${manufacturerId}:${cylKey}:${model.engine_model || idx}`;
+          children.push({
+            id: modelId,
+            name: model.engine_model || modelId,
+            order: idx,
+            parentId: id,
+            cylinder: cylKey,
+            level: 'model'
+          });
+        });
+      });
+      return children.map((child, idx) => ({ ...child, order: Number.isFinite(child.order) ? child.order : idx }));
+    };
+
+    const getCalendarMonths = (manifest, selected, calendarMode) => {
+      if (calendarMode !== 'year') return [];
+      const yearId = selected?.id;
+      if (!yearId) return [];
+      const years = manifest?.Calendar?.years || {};
+      const yearEntry = years[yearId] || Object.values(years).find(y => String(y.id || '') === String(yearId));
+      if (!yearEntry?.months) return [];
+      return Object.entries(yearEntry.months).map(([monthKey, monthVal], idx) => ({
+        id: monthVal?.id || `${yearId}:${monthKey}`,
+        name: monthVal?.name || monthKey,
+        order: Number.isFinite(monthVal?.sort_number) ? monthVal.sort_number : idx,
+        parentId: yearId,
+        level: 'month'
+      })).sort((a, b) => {
+        if (a.order === b.order) return (a.name || '').localeCompare(b.name || '');
+        return a.order - b.order;
+      }).map((item, idx) => ({ ...item, order: idx }));
+    };
+
+    const getBibleChapters = (manifest, selected, namesMap, bibleMode) => {
+      if (bibleMode !== 'book') return [];
+      const bookId = selected?.id;
+      if (!bookId) return [];
+      const testaments = manifest?.Gutenberg_Bible?.testaments || {};
+      let bookEntry = null;
+      Object.values(testaments).some(testament => {
+        const sections = testament?.sections || {};
+        return Object.values(sections).some(section => {
+          const books = section?.books || {};
+          if (books[bookId]) {
+            bookEntry = books[bookId];
+            return true;
+          }
+          return false;
+        });
+      });
+      if (!bookEntry?.chapters) return [];
+      return Object.entries(bookEntry.chapters).map(([chapterKey, chapterVal], idx) => {
+        const chapterNum = Number.parseInt(chapterKey, 10);
+        const label = Number.isFinite(chapterNum) ? `Chapter ${chapterNum}` : (namesMap?.sections?.[chapterKey] || chapterKey);
+        return {
+          id: chapterVal?.id || `${bookId}:${chapterKey}`,
+          name: chapterVal?.name || label,
+          order: Number.isFinite(chapterVal?.sort_number) ? chapterVal.sort_number : idx,
+          parentId: bookId,
+          level: 'chapter'
+        };
+      }).sort((a, b) => {
+        if (a.order === b.order) return (a.name || '').localeCompare(b.name || '');
+        return a.order - b.order;
+      }).map((item, idx) => ({ ...item, order: idx }));
+    };
+
     loadConfig().then(async ({ volume, manifest, translationsMeta, options }) => {
       applyTheme(manifest, volume);
       const translationId = options.translation || 'NAB';
@@ -696,10 +774,31 @@
       let calendarMode = volume === 'calendar' ? 'year' : null;
       let bibleMode = volume === 'bible' ? 'book' : null;
       let placesState = volume === 'places' ? { ...(meta || {}), manifest } : null;
+      let catalogMode = volume === 'catalog' ? 'manufacturer' : null;
+      const catalogRoot = volume === 'catalog' ? { items, selectedIndex, preserveOrder } : null;
+      let calendarMonthContext = null; // tracks current year + millennium when viewing months
+      let bibleChapterContext = null; // tracks current book when viewing chapters
       const lastBookBySection = {};
       const lastYearByMillennium = {};
       const calendarParentHandler = ({ selected }) => {
         if (volume !== 'calendar') return false;
+        if (calendarMode === 'month') {
+          const yearId = calendarMonthContext?.yearId;
+          const milliId = calendarMonthContext?.millenniumId;
+          const { items: yearItems, selectedIndex: yearSelected } = buildCalendarYears(manifest, {
+            arrangement: options.arrangement,
+            initialItemId: yearId,
+            filterMillenniumId: milliId
+          });
+          calendarMode = 'year';
+          if (app?.setParentButtons) {
+            app.setParentButtons({ showOuter: true, showInner: true });
+          }
+          if (app?.setPrimaryItems) {
+            app.setPrimaryItems(yearItems, yearSelected, true);
+          }
+          return true;
+        }
         if (calendarMode !== 'year') return false;
         const millenniumId = selected?.parentId || selected?.parent_id || null;
         if (millenniumId && selected?.id) {
@@ -718,6 +817,22 @@
 
       const calendarChildrenHandler = ({ selected }) => {
         if (volume !== 'calendar') return false;
+        if (calendarMode === 'year') {
+          const months = getCalendarMonths(manifest, selected, calendarMode);
+          if (!months.length) return false;
+          calendarMode = 'month';
+          calendarMonthContext = {
+            yearId: selected?.id || null,
+            millenniumId: selected?.parentId || selected?.parent_id || null
+          };
+          if (app?.setParentButtons) {
+            app.setParentButtons({ showOuter: true, showInner: true });
+          }
+          if (app?.setPrimaryItems) {
+            app.setPrimaryItems(months, 0, true);
+          }
+          return true;
+        }
         if (calendarMode !== 'millennium') return false;
         const millenniumId = selected?.id;
         if (!millenniumId) return true;
@@ -739,6 +854,24 @@
 
       const bibleParentHandler = ({ selected }) => {
         if (volume !== 'bible') return false;
+        if (bibleMode === 'chapter') {
+          const ctx = bibleChapterContext;
+          const { items: bookItems, selectedIndex: bookSelected, preserveOrder: bookPreserve } = buildBibleBookCousinChain(manifest, {
+            testamentId: ctx?.testamentId,
+            initialItemId: ctx?.bookId,
+            names: namesMap
+          });
+          if (!bookItems.length) return false;
+          bibleMode = 'book';
+          bibleChapterContext = null;
+          if (app?.setParentButtons) {
+            app.setParentButtons({ showOuter: true, showInner: true });
+          }
+          if (app?.setPrimaryItems) {
+            app.setPrimaryItems(bookItems, bookSelected, bookPreserve);
+          }
+          return true;
+        }
         if (bibleMode !== 'book') return false;
         const sectionId = selected?.sectionId;
         if (sectionId && selected?.id) {
@@ -837,9 +970,25 @@
         return true;
       };
 
+      const catalogParentHandler = () => {
+        if (volume !== 'catalog') return false;
+        if (catalogMode !== 'model') return false;
+        if (!catalogRoot) return false;
+        catalogMode = 'manufacturer';
+        if (app?.setParentButtons) {
+          app.setParentButtons({ showOuter: true, showInner: true });
+        }
+        if (app?.setPrimaryItems) {
+          const { items: rootItems, selectedIndex: rootSelected, preserveOrder: rootPreserve } = catalogRoot;
+          app.setPrimaryItems(rootItems || [], rootSelected ?? 0, rootPreserve ?? false);
+        }
+        return true;
+      };
+
       const parentHandler = params => {
         if (bibleParentHandler(params)) return true;
         if (calendarParentHandler(params)) return true;
+        if (catalogParentHandler(params)) return true;
         if (placesParentHandler(params)) return true;
         return false;
       };
@@ -850,6 +999,102 @@
         if (placesChildrenHandler(params)) return true;
         return false;
       };
+
+      const pyramidConfig = (() => {
+        const byVolume = {
+          places: {
+            getChildren: ({ selected }) => {
+              if (!selected?.id) return [];
+              if (!placesState?.levels?.length) return [];
+              if (placesState.levelIndex >= placesState.levels.length - 1) return [];
+              const nextLevelIndex = placesState.levelIndex + 1;
+              const nextLevelName = placesState.levels[nextLevelIndex];
+              const { items: childItems } = buildPlacesLevel(
+                placesState.manifest,
+                placesState.levels,
+                nextLevelIndex,
+                {
+                  parentItem: selected,
+                  contextParentId: selected.id,
+                  selectedId: placesState.selections[nextLevelName] || null
+                }
+              );
+              return childItems || [];
+            },
+            onClick: instr => {
+              if (!instr?.item || volume !== 'places') return;
+              const nextLevelIndex = placesState.levelIndex + 1;
+              if (nextLevelIndex >= (placesState.levels?.length || 0)) return;
+              const nextLevelName = placesState.levels[nextLevelIndex];
+              placesState.selections[nextLevelName] = instr.item.id || instr.id || null;
+              placesChildrenHandler({ selected: instr.item, setItems: app?.setPrimaryItems });
+            }
+          },
+          catalog: {
+            getChildren: ({ selected }) => getCatalogChildren(manifest, selected),
+            onClick: instr => {
+              if (!instr?.item || volume !== 'catalog') return;
+              const parent = app?.nav?.getCurrent?.();
+              const models = getCatalogChildren(manifest, parent);
+              if (!models.length) return;
+              const selectedIdx = models.findIndex(m => m.id === instr.item.id);
+              catalogMode = 'model';
+              if (app?.setParentButtons) {
+                app.setParentButtons({ showOuter: true, showInner: true });
+              }
+              if (app?.setPrimaryItems) {
+                app.setPrimaryItems(models, selectedIdx >= 0 ? selectedIdx : 0, true);
+              }
+            }
+          },
+          calendar: {
+            getChildren: ({ selected }) => getCalendarMonths(manifest, selected, calendarMode),
+            onClick: instr => {
+              if (!instr?.item || volume !== 'calendar') return;
+              const year = app?.nav?.getCurrent?.();
+              if (!year) return;
+              const months = getCalendarMonths(manifest, year, calendarMode);
+              if (!months.length) return;
+              const selectedIdx = months.findIndex(m => m.id === instr.item.id);
+              calendarMode = 'month';
+              calendarMonthContext = {
+                yearId: year?.id || null,
+                millenniumId: year?.parentId || year?.parent_id || null
+              };
+              if (app?.setParentButtons) {
+                app.setParentButtons({ showOuter: true, showInner: true });
+              }
+              if (app?.setPrimaryItems) {
+                app.setPrimaryItems(months, selectedIdx >= 0 ? selectedIdx : 0, true);
+              }
+            }
+          },
+          bible: {
+            getChildren: ({ selected }) => getBibleChapters(manifest, selected, namesMap, bibleMode),
+            onClick: instr => {
+              if (!instr?.item || volume !== 'bible') return;
+              const book = app?.nav?.getCurrent?.();
+              if (!book || bibleMode !== 'book') return;
+              const chapters = getBibleChapters(manifest, book, namesMap, bibleMode);
+              if (!chapters.length) return;
+              const selectedIdx = chapters.findIndex(c => c.id === instr.item.id);
+              bibleMode = 'chapter';
+              bibleChapterContext = {
+                bookId: book.id,
+                sectionId: book.sectionId,
+                testamentId: book.testamentId
+              };
+              if (app?.setParentButtons) {
+                app.setParentButtons({ showOuter: true, showInner: true });
+              }
+              if (app?.setPrimaryItems) {
+                app.setPrimaryItems(chapters, selectedIdx >= 0 ? selectedIdx : 0, true);
+              }
+            }
+          }
+        };
+        return byVolume[volume] || null;
+      })();
 
       app = createApp({
         svgRoot: svg,
@@ -864,6 +1109,7 @@
         contextOptions: { ...options, locale: resolvedLocale },
         onParentClick: parentHandler,
         onChildrenClick: childrenHandler,
+        pyramid: pyramidConfig,
         onSelectSecondary: translationId => {
           const url = new URL(window.location.href);
           const currentItem = app?.nav?.getCurrent?.();

@@ -14,6 +14,7 @@ export function buildPyramidInstructions(placements = [], options = {}) {
     return {
       id,
       label,
+      item,
       arc: placement?.arc ?? 'pyramid',
       angle: placement?.angle ?? 0,
       x: placement?.x ?? 0,

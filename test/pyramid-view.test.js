@@ -23,6 +23,7 @@ describe('pyramid view helper', () => {
     assert.deepEqual(instructions[0], {
       id: 'a',
       label: 'name-a',
+      item: placements[0].item,
       arc: 'inner',
       angle: 0.5,
       x: 10,
@@ -37,6 +38,7 @@ describe('pyramid view helper', () => {
     const instructions = buildPyramidInstructions([{}]);
     assert.equal(instructions[0].id, 'p-0');
     assert.equal(instructions[0].label, 'p-0');
+    assert.deepEqual(instructions[0].item, {});
     assert.equal(instructions[0].r, 12);
   });
 

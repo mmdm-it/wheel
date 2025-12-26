@@ -5,6 +5,7 @@ import { RotationChoreographer } from './interaction/rotation-choreographer.js';
 import { FocusRingView } from './view/focus-ring-view.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
+import { buildPyramidPreview } from './core/pyramid-preview.js';
 
 export {
   getViewportInfo,
@@ -75,7 +76,8 @@ export function createApp({
   onSelectSecondary,
   contextOptions = {},
   onParentClick,
-  onChildrenClick
+  onChildrenClick,
+  pyramid
 }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const debug = Boolean(contextOptions.debug);
@@ -160,6 +162,25 @@ export function createApp({
   let parentButtonsVisibility = { showOuter: true, showInner: true };
   let lastParentLabelOut = '';
   let lastSelectedLabelOut = '';
+  const pyramidConfig = pyramid || null;
+  const getPyramidChildren = typeof pyramidConfig?.getChildren === 'function'
+    ? args => pyramidConfig.getChildren({ ...args, items: nav.items, normalized, viewport: vp })
+    : null;
+  const buildPyramid = selected => {
+    if (!getPyramidChildren) return null;
+    try {
+      const instructions = buildPyramidPreview({
+        viewport: vp,
+        selected,
+        getChildren: ctx => getPyramidChildren({ ...ctx, selected }),
+        pyramidConfig
+      });
+      return Array.isArray(instructions) && instructions.length > 0 ? instructions : null;
+    } catch (err) {
+      if (debug) console.warn('[FocusRing] pyramid preview error', err);
+      return null;
+    }
+  };
 
   const setBlur = enabled => {
     isBlurred = Boolean(enabled);
@@ -420,6 +441,7 @@ export function createApp({
     const secondaryMagnifier = getSecondaryMagnifier();
     const secondarySelected = secondaryNav.getCurrent();
     const secondaryNodes = calculateSecondaryNodePositions(secondaryNav.items, secondaryRotation);
+    const pyramidInstructions = buildPyramid(selected);
     const parentLabel = getParentLabel(selected);
     const selectedMagnifierLabel = formatLabel({ item: selected, context: 'magnifier' });
     const magnifierLabel = isLayerOut
@@ -467,7 +489,9 @@ export function createApp({
           onNodeClick: node => rotateSecondaryNodeIntoMagnifier(node),
           selectedId: secondarySelected?.id,
           magnifierLabel: secondarySelected?.name || ''
-        } : null
+        } : null,
+        pyramidInstructions,
+        onPyramidClick: pyramidConfig?.onClick
       }
     );
 
