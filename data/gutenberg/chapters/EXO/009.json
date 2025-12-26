@@ -1,0 +1,644 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_009",
+  "book_key": "EXO",
+  "sequence": 9,
+  "chapter_in": {
+    "MT": 9,
+    "VUL": 9,
+    "LXX": 9
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֶל מֹשֶׁ֔ה בֹּ֖א אֶל פַּרְעֹ֑ה וְ/דִבַּרְתָּ֣ אֵלָ֗י/ו כֹּֽה אָמַ֤ר יְהוָה֙ אֱלֹהֵ֣י הָֽ/עִבְרִ֔ים שַׁלַּ֥ח אֶת עַמִּ֖/י וְ/יַֽעַבְדֻֽ/נִי׃",
+        "LXX": "Εἶπεν δὲ Κύριος πρὸς Μωυσῆν Εἴσελθε πρὸς Φαραὼ καὶ ἐρεῖς αὐτῷ Τάδε λέγει Κύριος ὁ θεὸς τῶν Ἐβραίων Ἐξαπόστειλον τὸν λαόν μου ἵνα μοι λατρεύσωσιν·",
+        "VUL": "Dixit autem Dominus ad Moysen : Ingredere ad Pharaonem, et loquere ad eum : Hæc dicit Dominus Deus Hebræorum : Dimitte populum meum ut sacrificet mihi.",
+        "SYN": "И сказал Господь Моисею: пойди к фараону и скажи ему: так говорит Господь, Бог Евреев: отпусти народ Мой, чтобы он совершил Мне служение;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Va vers Pharaon et dis-lui : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu des Hébreux : Laisse aller mon peuple, afin qu’il me serve.",
+        "NAB": "Then the LORD said to Moses, \"Go to Pharaoh and tell him: Thus says the LORD, the God of the Hebrews: Let my people go to worship me.",
+        "VAT_ES": "El Señor dijo a Moisés: «Ve a presentarte ante el Faraón y dile: «Así habla el Señor, el Dios de los hebreos: Deja que mi pueblo salga a rendirme culto.",
+        "CEI": "Allora il Signore si rivolse a Mosè: \"Và a riferire al faraone: Dice il Signore, il Dio degli Ebrei: Lascia partire il mio popolo, perché mi possa servire!"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כִּ֛י אִם מָאֵ֥ן אַתָּ֖ה לְ/שַׁלֵּ֑חַ וְ/עוֹדְ/ךָ֖ מַחֲזִ֥יק בָּֽ/ם׃",
+        "LXX": "εἰ μὲν οὖν μὴ βούλει ἐξαποστεῖλαι τὸν λαόν μου ἀλλ’ ἔτι ἐνκρατεῖς αὐτοῦ,",
+        "VUL": "Quod si adhuc renuis, et retines eos,",
+        "SYN": "ибо если ты не захочешь отпустить [народ Мой] и еще будешь удерживать его,",
+        "NEO": "Si tu refuses de le laisser aller, et si tu le retiens encore,",
+        "NAB": "If you refuse to let them go and persist in holding them,",
+        "VAT_ES": "Porque si te resistes a dejarlo partir y sigues reteniéndolo,",
+        "CEI": "Se tu rifiuti di lasciarlo partire e lo trattieni ancora,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הִנֵּ֨ה יַד יְהוָ֜ה הוֹיָ֗ה בְּ/מִקְנְ/ךָ֙ אֲשֶׁ֣ר בַּ/שָּׂדֶ֔ה בַּ/סּוּסִ֤ים בַּֽ/חֲמֹרִים֙ בַּ/גְּמַלִּ֔ים בַּ/בָּקָ֖ר וּ/בַ/צֹּ֑אן דֶּ֖בֶר כָּבֵ֥ד מְאֹֽד׃",
+        "LXX": "ἰδοὺ χεὶρ Κυρίου ἐπέσται ἐν τοῖς κτήνεσίν σου τοῖς ἐν τοῖς πεδίοις, ἔν τε τοῖς ἵπποις καὶ ἐν τοῖς ὑποζυγίοις καὶ ταῖς καμήλοις καὶ βουσὶν καὶ προβάτοις, θάνατος μέγας σφόδρα.",
+        "VUL": "ecce manus mea erit super agros tuos, et super equos, et asinos, et camelos, et boves, et oves, pestis valde gravis.",
+        "SYN": "то вот, рука Господня будет на скоте твоем, который в поле, на конях, на ослах, на верблюдах, на волах и овцах: будет моровая язва весьма тяжкая;",
+        "NEO": "voici que la main de \\+w Yahweh|strong=\"H3068\"\\+w** sera sur tes troupeaux qui sont dans les champs, sur les chevaux, sur les ânes, sur les chameaux, sur les bœufs et sur les brebis : ce sera une peste très meurtrière.",
+        "NAB": "I warn you, the LORD will afflict all your livestock in the field - your horses, asses, camels, herds and flocks - with a very severe pestilence.",
+        "VAT_ES": "la mano del Señor enviará una peste mortífera contra el ganado que está en los campos: contra los caballos, los asnos, los camellos, los bueyes y el ganado menor.",
+        "CEI": "ecco la mano del Signore viene sopra il tuo bestiame che è nella campagna, sopra i cavalli, gli asini, i cammelli, sopra gli armenti e le greggi, con una peste assai grave!"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/הִפְלָ֣ה יְהוָ֔ה בֵּ֚ין מִקְנֵ֣ה יִשְׂרָאֵ֔ל וּ/בֵ֖ין מִקְנֵ֣ה מִצְרָ֑יִם וְ/לֹ֥א יָמ֛וּת מִ/כָּל לִ/בְנֵ֥י יִשְׂרָאֵ֖ל דָּבָֽר׃",
+        "LXX": "καὶ παραδοξάσω ἐγὼ ἐν τῷ καιρῷ ἐκείνῳ ἀνὰ μέσον τῶν κτηνῶν τῶν Αἰγυπτίων καὶ ἀνὰ μέσον τῶν κτηνῶν τῶν υἱῶν Ἰσραήλ· οὐ τελευτήσει ἀπὸ πάντων τῶν τοῦ Ἰσραὴλ υἱῶν ῥητόν.",
+        "VUL": "Et faciet Dominus mirabile inter possessiones Israël et possessiones Ægyptiorum, ut nihil omnino pereat ex eis quæ pertinent ad filios Israël.",
+        "SYN": "и разделит Господь [в то время] между скотом Израильским и скотом Египетским, и из всего [скота] сынов Израилевых не умрет ничего.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** fera une distinction entre les troupeaux d’Israël et les troupeaux des Égyptiens, et il ne périra rien de tout ce qui appartient aux enfants d’Israël. »",
+        "NAB": "But the LORD will distinguish between the livestock of Israel and that of Egypt, so that none belonging to the Israelites will die.\"",
+        "VAT_ES": "Pero el Señor hará una distinción entre el ganado de Israel y el de Egipto, de manera que no morirá ni uno solo de los animales que pertenecen a Israel».",
+        "CEI": "Ma il Signore farà distinzione tra il bestiame di Israele e quello degli Egiziani, così che niente muoia di quanto appartiene agli Israeliti\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥שֶׂם יְהוָ֖ה מוֹעֵ֣ד לֵ/אמֹ֑ר מָחָ֗ר יַעֲשֶׂ֧ה יְהוָ֛ה הַ/דָּבָ֥ר הַ/זֶּ֖ה בָּ/אָֽרֶץ׃",
+        "LXX": "καὶ ἔδωκεν ὁ θεὸς ὅρον λέγων Ἐν τῇ αὔριον ποιήσει Κύριος τὸ ῥῆμα τοῦτο ἐπὶ τῆς γῆς.",
+        "VUL": "Constituitque Dominus tempus, dicens : Cras faciet Dominus verbum istud in terra.",
+        "SYN": "И назначил Господь время, сказав: завтра сделает это Господь в земле сей.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** fixa le moment, en disant : « Demain \\+w Yahweh|strong=\"H3068\"\\+w** fera cela dans le pays. »",
+        "NAB": "And setting a definite time, the LORD added, \"Tomorrow the LORD shall do this in the land.\"",
+        "VAT_ES": "Y el Señor fijó un plazo, diciendo: «Mañana cumpliré esta amenaza contra el país».",
+        "CEI": "Il Signore fissò la data, dicendo: \"Domani il Signore compirà questa cosa nel paese!\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַשׂ יְהוָ֜ה אֶת הַ/דָּבָ֤ר הַ/זֶּה֙ מִֽ/מָּחֳרָ֔ת וַ/יָּ֕מָת כֹּ֖ל מִקְנֵ֣ה מִצְרָ֑יִם וּ/מִ/מִּקְנֵ֥ה בְנֵֽי יִשְׂרָאֵ֖ל לֹא מֵ֥ת אֶחָֽד׃",
+        "LXX": "καὶ ἐποίησεν Κύριος τὸ ῥῆμα τοῦτο τῇ ἐπαύριον, καὶ ἐτελεύτησεν πάντα τὰ κτήνη τῶν Αἰγυπτίων· ἀπὸ δὲ τῶν κτηνῶν τῶν υἱῶν Ἰσραὴλ οὐκ ἐτελεύτησεν οὐδέν.",
+        "VUL": "Fecit ergo Dominus verbum hoc altera die : mortuaque sunt omnia animantia Ægyptiorum ; de animalibus vero filiorum Israël, nihil omnino periit.",
+        "SYN": "И сделал это Господь на другой день, и вымер весь скот Египетский; из скота же сынов Израилевых не умерло ничего.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** fit ainsi dès le lendemain. Tout le bétail des Égyptiens périt, et il ne mourut pas une bête des troupeaux des enfants d’Israël.",
+        "NAB": "And on the next day the LORD did so. All the livestock of the Egyptians died, but not one beast belonging to the Israelites.",
+        "VAT_ES": "En efecto, al día siguiente el Señor cumplió su palabra y entonces murió todo el ganado de Egipto. A los israelitas, en cambio, no se les murió ni un solo animal.",
+        "CEI": "Appunto il giorno dopo, il Signore compì questa cosa: morì tutto il bestiame degli Egiziani, ma del bestiame degli Israeliti non morì neppure un capo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֣ח פַּרְעֹ֔ה וְ/הִנֵּ֗ה לֹא מֵ֛ת מִ/מִּקְנֵ֥ה יִשְׂרָאֵ֖ל עַד אֶחָ֑ד וַ/יִּכְבַּד֙ לֵ֣ב פַּרְעֹ֔ה וְ/לֹ֥א שִׁלַּ֖ח אֶת הָ/עָֽם׃",
+        "LXX": "ἰδὼν δὲ Φαραὼ ὅτι οὐκ ἐτελεύτησεν ἀπὸ πάντων τῶν κτηνῶν τῶν υἱῶν Ἰσραὴλ οὐδέν, ἐβαρύνθη ἡ καρδία Φαραώ, καὶ οὐκ ἐξαπέστειλεν τὸν λαόν.",
+        "VUL": "Et misit Pharao ad videndum : nec erat quidquam mortuum de his quæ possidebat Israël. Ingravatumque est cor Pharaonis, et non dimisit populum.",
+        "SYN": "Фараон послал _узнать,_ и вот, из [всего] скота [сынов] Израилевых не умерло ничего. Но сердце фараоново ожесточилось, и он не отпустил народа.",
+        "NEO": "Pharaon prit des informations, et voici, pas une bête des troupeaux d’Israël n’avait péri. Mais le cœur de Pharaon s’endurcit, et il ne laissa pas aller le peuple.",
+        "NAB": "But though Pharaoh's messengers informed him that not even one beast belonging to the Israelites had died, he still remained obdurate and would not let the people go.",
+        "VAT_ES": "Y cuando el Faraón ordenó que hicieran un recuento, se comprobó que los israelitas no habían perdido ni una sola cabeza de ganado. A pesar de eso, el Faraón se obstinó y no dejó partir al pueblo.",
+        "CEI": "Il faraone mandò a vedere ed ecco neppur un capo era morto del bestiame d'Israele. Ma il cuore del faraone rimase ostinato e non lasciò partire il popolo. 6a piaga: le ulcere"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוָה֮ אֶל מֹשֶׁ֣ה וְ/אֶֽל אַהֲרֹן֒ קְח֤וּ לָ/כֶם֙ מְלֹ֣א חָפְנֵי/כֶ֔ם פִּ֖יחַ כִּבְשָׁ֑ן וּ/זְרָק֥/וֹ מֹשֶׁ֛ה הַ/שָּׁמַ֖יְמָ/ה לְ/עֵינֵ֥י פַרְעֹֽה׃",
+        "LXX": "Εἶπεν δὲ Κύριος πρὸς Μωυσῆν καὶ Ἀαρὼν λέγων Λάβετε ὑμεῖς πλήρεις τὰς χεῖρας αἰθάλης καμιναίας, καὶ πασάτω Μωυσῆς εἰς τὸν οὐρανὸν ἐναντίον Φαραὼ καὶ ἐναντίον τῶν θεραπόντων αὐτοῦ,",
+        "VUL": "Et dixit Dominus ad Moysen et Aaron : Tollite plenas manus cineris de camino, et spargat illum Moyses in cælum coram Pharaone.",
+        "SYN": "И сказал Господь Моисею и Аарону: возьмите по полной горсти пепла из печи, и пусть бросит его Моисей к небу в глазах фараона [и рабов его];",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse et à Aaron : « Prenez plein vos mains de cendre de fournaise, et que Moïse la jette vers le ciel sous les yeux de Pharaon ;",
+        "NAB": "Then the LORD said to Moses and Aaron, \"Take a double handful of soot from a furnace, and in the presence of Pharaoh let Moses scatter it toward the sky.",
+        "VAT_ES": "El Señor dijo a Moisés y a Aarón: «Recojan un puñado el hollín que se forma en los hornos, y que Moisés lo arroje hacia el cielo, en la presencia del Faraón.",
+        "CEI": "Il Signore disse a Mosè e ad Aronne: \"Procuratevi una manciata di fuliggine di fornace: Mosè la getterà in aria sotto gli occhi del faraone."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֣ה לְ/אָבָ֔ק עַ֖ל כָּל אֶ֣רֶץ מִצְרָ֑יִם וְ/הָיָ֨ה עַל הָ/אָדָ֜ם וְ/עַל הַ/בְּהֵמָ֗ה לִ/שְׁחִ֥ין פֹּרֵ֛חַ אֲבַעְבֻּעֹ֖ת בְּ/כָל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "καὶ γενηθήτω κονιορτὸς ἐπὶ πᾶσαν τὴν γῆν Αἰγύπτου· καὶ ἔσται ἐπὶ τοὺς ἀνθρώπους καὶ ἐπὶ τὰ τετράποδα ἕλκη, φλυκτίδες ἀναζέουσαι, ἔν τε τοῖς ἀνθρώποις καὶ ἐν τοῖς τετράποσιν καὶ πάσῃ γῇ Αἰγύπτου.",
+        "VUL": "Sitque pulvis super omnem terram Ægypti : erunt enim in hominibus et jumentis ulcera, et vesicæ turgentes in universa terra Ægypti.",
+        "SYN": "и поднимется пыль по всей земле Египетской, и будет на людях и на скоте воспаление с нарывами, во всей земле Египетской.",
+        "NEO": "qu’elle devienne une fine poussière sur tout le pays d’Égypte, et qu’elle forme, dans tout le pays d’Égypte, sur les hommes et sur les animaux, des tumeurs bourgeonnant en pustules. »",
+        "NAB": "It will then turn into fine dust over the whole land of Egypt and cause festering boils on man and beast throughout the land.\"",
+        "VAT_ES": "Ese hollín se convertirá en un polvo que se expandirá por todo el territorio de Egipto y producirá úlceras purulentas en los hombres y en los animales».",
+        "CEI": "Essa diventerà un pulviscolo diffuso su tutto il paese d'Egitto e produrrà, sugli uomini e sulle bestie, un'ulcera con pustole, in tutto il paese d'Egitto\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּקְח֞וּ אֶת פִּ֣יחַ הַ/כִּבְשָׁ֗ן וַ/יַּֽעַמְדוּ֙ לִ/פְנֵ֣י פַרְעֹ֔ה וַ/יִּזְרֹ֥ק אֹת֛/וֹ מֹשֶׁ֖ה הַ/שָּׁמָ֑יְמָ/ה וַ/יְהִ֗י שְׁחִין֙ אֲבַעְבֻּעֹ֔ת פֹּרֵ֕חַ בָּ/אָדָ֖ם וּ/בַ/בְּהֵמָֽה׃",
+        "LXX": "καὶ ἔλαβεν τὴν αἰθάλην τῆς καμιναίας ἐναντίον Φαραὼ καὶ ἔπασεν αὐτὴν Μωυσῆς εἰς τὸν οὐρανόν, καὶ ἐγένετο ἕλκη, φλυκτίδες ἀναζέουσαι, ἐν τοῖς ἀνθρώποις καὶ ἐν τοῖς τετράποσιν.",
+        "VUL": "Tuleruntque cinerem de camino, et steterunt coram Pharaone, et sparsit illum Moyses in cælum : factaque sunt ulcera vesicarum turgentium in hominibus et jumentis :",
+        "SYN": "Они взяли пепла из печи и предстали пред лице фараона. Моисей бросил его к небу, и сделалось воспаление с нарывами на людях и на скоте.",
+        "NEO": "Ils prirent de la cendre de fournaise et se présentèrent devant Pharaon ; Moïse la jeta vers le ciel, et elle produisit sur les hommes et sur les animaux des tumeurs bourgeonnant en pustules.",
+        "NAB": "So they took soot from a furnace and stood in the presence of Pharaoh. Moses scattered it toward the sky, and it caused festering boils on man and beast.",
+        "VAT_ES": "Ellos recogieron el hollín y se presentaron ante el Faraón. Moisés lo arrojó hacia el cielo, y tanto los hombres como los animales se cubrieron de úlceras.",
+        "CEI": "Presero dunque fuliggine di fornace, si posero alla presenza del faraone, Mosè la gettò in aria ed essa produsse ulcere pustolose, con eruzioni su uomini e bestie."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא יָכְל֣וּ הַֽ/חַרְטֻמִּ֗ים לַ/עֲמֹ֛ד לִ/פְנֵ֥י מֹשֶׁ֖ה מִ/פְּנֵ֣י הַ/שְּׁחִ֑ין כִּֽי הָיָ֣ה הַ/שְּׁחִ֔ין בַּֽ/חֲרְטֻמִּ֖ם וּ/בְ/כָל מִצְרָֽיִם׃",
+        "LXX": "καὶ οὐκ ἠδύναντο οἱ φαρμακοὶ στῆναι ἐναντίον Μωυσῆ διὰ τὰ ἕλκη· ἐγένετο γὰρ τὰ ἕλκη ἐν τοῖς φαρμακοῖς καὶ ἐν πάσῃ γῇ Αἰγύπτου.",
+        "VUL": "nec poterant malefici stare coram Moyse propter ulcera quæ in illis erant, et in omni terra Ægypti.",
+        "SYN": "И не могли волхвы устоять пред Моисеем по причине воспаления, потому что воспаление было на волхвах и на всех Египтянах.",
+        "NEO": "Les magiciens ne purent se tenir devant Moïse à cause des tumeurs, car les tumeurs étaient sur les magiciens, comme sur tous les Égyptiens.",
+        "NAB": "The magicians could not stand in Moses' presence, for there were boils on the magicians no less than on the rest of the Egyptians.",
+        "VAT_ES": "Los magos no pudieron enfrentarse con Moisés a causa de las úlceras que les habían salido como a todos los demás egipcios.",
+        "CEI": "I maghi non poterono stare alla presenza di Mosè a causa delle ulcere che li avevano colpiti come tutti gli Egiziani."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יְחַזֵּ֤ק יְהוָה֙ אֶת לֵ֣ב פַּרְעֹ֔ה וְ/לֹ֥א שָׁמַ֖ע אֲלֵ/הֶ֑ם כַּ/אֲשֶׁ֛ר דִּבֶּ֥ר יְהוָ֖ה אֶל מֹשֶֽׁה׃",
+        "LXX": "ἐσκλήρυνεν δὲ Κύριος τὴν καρδίαν Φαραώ, καὶ οὐκ εἰσήκουσεν αὐτῶν, καθὰ συνέταξεν Κύριος.",
+        "VUL": "Induravitque Dominus cor Pharaonis, et non audivit eos, sicut locutus est Dominus ad Moysen.",
+        "SYN": "Но Господь ожесточил сердце фараона, и он не послушал их, как и говорил Господь Моисею.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** endurcit le cœur de Pharaon, et Pharaon n’écouta pas Moïse et Aaron, selon que \\+w Yahweh|strong=\"H3068\"\\+w** l’avait dit à Moïse.",
+        "NAB": "But the LORD made Pharaoh obstinate, and he would not listen to them, just as the LORD had foretold to Moses.",
+        "VAT_ES": "Pero el Señor endureció el corazón del Faraón, y él no los escuchó, como el Señor había predicho a Moisés.",
+        "CEI": "Ma il Signore rese ostinato il cuore del faraone, il quale non diede loro ascolto, come il Signore aveva predetto a Mosè. 7a piaga: la grandine"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֶל מֹשֶׁ֔ה הַשְׁכֵּ֣ם בַּ/בֹּ֔קֶר וְ/הִתְיַצֵּ֖ב לִ/פְנֵ֣י פַרְעֹ֑ה וְ/אָמַרְתָּ֣ אֵלָ֗י/ו כֹּֽה אָמַ֤ר יְהוָה֙ אֱלֹהֵ֣י הָֽ/עִבְרִ֔ים שַׁלַּ֥ח אֶת עַמִּ֖/י וְ/יַֽעַבְדֻֽ/נִי׃",
+        "LXX": "Εἶπεν δὲ Κύριος πρὸς Μωυσῆν Ὄρθρισον τὸ πρωὶ καὶ στῆθι ἐναντίον Φαραώ, καὶ ἐρεῖς πρός αὐτόν Τάδε λέγει Κύριος ὁ θεὸς τῶν Ἐβραίων Ἐξαπόστειλον τὸν λαόν μου ἵνα λατρεύσωσίν μοι.",
+        "VUL": "Dixitque Dominus ad Moysen : Mane consurge, et sta coram Pharaone, et dices ad eum : Hæc dicit Dominus Deus Hebræorum : Dimitte populum meum ut sacrificet mihi.",
+        "SYN": "И сказал Господь Моисею: завтра встань рано и явись пред лице фараона, и скажи ему: так говорит Господь, Бог Евреев: отпусти народ Мой, чтобы он совершил Мне служение;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Lève-toi de bon matin et présente-toi devant Pharaon ; tu lui diras : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu des Hébreux : Laisse aller mon peuple, afin qu’il me serve.",
+        "NAB": "Then the LORD told Moses, \"Early tomorrow morning present yourself to Pharaoh and say to him: Thus says the LORD, the God of the Hebrews: Let my people go to worship me,",
+        "VAT_ES": "Luego el Señor dijo a Moisés: «Mañana bien temprano preséntate al Faraón y dile: «Así habla el Señor, el Dios de los hebreos: Deja que mi pueblo salga a rendirme culto.",
+        "CEI": "Poi il Signore disse a Mosè: \"Alzati di buon mattino, presentati al faraone e annunziagli: Dice il Signore, il Dio degli Ebrei: Lascia partire il mio popolo, perché mi possa servire!"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כִּ֣י בַּ/פַּ֣עַם הַ/זֹּ֗את אֲנִ֨י שֹׁלֵ֜חַ אֶת כָּל מַגֵּפֹתַ/י֙ אֶֽל לִבְּ/ךָ֔ וּ/בַ/עֲבָדֶ֖י/ךָ וּ/בְ/עַמֶּ֑/ךָ בַּ/עֲב֣וּר תֵּדַ֔ע כִּ֛י אֵ֥ין כָּמֹ֖/נִי בְּ/כָל הָ/אָֽרֶץ׃",
+        "LXX": "ἐν τῷ γὰρ νῦν καιρῷ ἐγὼ ἐξαποστέλλω πάντα τὰ συναντήματά μου εἰς τὴν καρδίαν σου καὶ τῶν θεραπόντων σου καὶ τοῦ λαοῦ σου, ἵν’ εἰδῇς ὅτι οὐκ ἔστιν ὡς ἐγὼ ἄλλος ἐν πάσῃ τῇ γῇ.",
+        "VUL": "Quia in hac vice mittam omnes plagas meas super cor tuum, et super servos tuos, et super populum tuum : ut scias quod non sit similis mei in omni terra.",
+        "SYN": "ибо в этот раз Я пошлю все язвы Мои в сердце твое, и на рабов твоих, и на народ твой, дабы ты узнал, что нет подобного Мне на всей земле;",
+        "NEO": "Car, cette fois, je vais envoyer tous mes fléaux contre ton cœur, ainsi que sur tes serviteurs et sur ton peuple, afin que tu saches que nul n’est semblable à moi par toute la terre.",
+        "NAB": "or this time I will hurl all my blows upon you and your servants and your subjects, that you may know that there is none like me anywhere on earth.",
+        "VAT_ES": "Porque esta vez estoy dispuesto a enviar todas mis plagas contra ti, contra tus servidores y contra todo tu pueblo, para que sepas que no hay nadie como yo en toda la tierra.",
+        "CEI": "Perché questa volta io mando tutti i miei flagelli contro di te, contro i tuoi ministri e contro il tuo popolo, perché tu sappia che nessuno è come me su tutta la terra."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כִּ֤י עַתָּה֙ שָׁלַ֣חְתִּי אֶת יָדִ֔/י וָ/אַ֥ךְ אוֹתְ/ךָ֛ וְ/אֶֽת עַמְּ/ךָ֖ בַּ/דָּ֑בֶר וַ/תִּכָּחֵ֖ד מִן הָ/אָֽרֶץ׃",
+        "LXX": "νῦν γὰρ ἀποστείλας τὴν χεῖρα πατάξω σε, καὶ τὸν λαόν σου θανατώσω, καὶ ἐκτριβήσῃ ἀπὸ τῆς γῆς·",
+        "VUL": "Nunc enim extendens manum percutiam te, et populum tuum peste, peribisque de terra.",
+        "SYN": "так как Я простер руку Мою, то поразил бы тебя и народ твой язвою, и ты истреблен был бы с земли:",
+        "NEO": "Si j’avais étendu ma main et que je t’eusse frappé de la peste, toi et ton peuple, tu aurais été effacé de la terre.",
+        "NAB": "For by now I would have stretched out my hand and struck you and your subjects with such pestilence as would wipe you from the earth.",
+        "VAT_ES": "Si yo hubiera extendido mi mano y enviado una peste contra ti y contra tu pueblo, ya habrías desaparecido de la tierra.",
+        "CEI": "Se fin da principio io avessi steso la mano per colpire te e il tuo popolo con la peste, tu saresti ormai cancellato dalla terra;"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/אוּלָ֗ם בַּ/עֲב֥וּר זֹאת֙ הֶעֱמַדְתִּ֔י/ךָ בַּ/עֲב֖וּר הַרְאֹתְ/ךָ֣ אֶת כֹּחִ֑/י וּ/לְמַ֛עַן סַפֵּ֥ר שְׁמִ֖/י בְּ/כָל הָ/אָֽרֶץ׃",
+        "LXX": "καὶ ἕνεκεν τούτου διετηρήθης ἵνα ἐνδείξωμαι ἐν σοὶ τὴν ἰσχύν μου, καὶ ὅπως διαγγελῇ τὸ ὄνομά μου ἐν πάσῃ τῇ γῇ.",
+        "VUL": "Idcirco autem posui te, ut ostendam in te fortitudinem meam, et narretur nomen meum in omni terra.",
+        "SYN": "но для того Я сохранил тебя, чтобы показать на тебе силу Мою, и чтобы возвещено было имя Мое по всей земле;",
+        "NEO": "Mais à cette fin je t’ai laissé subsister, afin que tu voies ma puissance, et qu’on célèbre mon nom par toute la terre.",
+        "NAB": "But this is why I have spared you: to show you my power and to make my name resound throughout the earth!",
+        "VAT_ES": "Pero preferí dejarte con vida, para mostrarte mi poder y para que mi Nombre sea pregonado por toda la tierra.",
+        "CEI": "invece ti ho lasciato vivere, per dimostrarti la mia potenza e per manifestare il mio nome in tutta la terra."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "עוֹדְ/ךָ֖ מִסְתּוֹלֵ֣ל בְּ/עַמִּ֑/י לְ/בִלְתִּ֖י שַׁלְּחָֽ/ם׃",
+        "LXX": "ἔτι οὖν σὺ ἐνποιῇ τοῦ λαοῦ μου τοῦ μὴ ἐξαποστεῖλαι αὐτούς;",
+        "VUL": "Adhuc retines populum meum, et non vis dimittere eum ?",
+        "SYN": "ты еще противостоишь народу Моему, чтобы не отпускать его, --",
+        "NEO": "Tu te mets encore comme une barrière devant mon peuple pour ne pas le laisser aller !",
+        "NAB": "Will you still block the way for my people by refusing to let them go?",
+        "VAT_ES": "&iexcl;Y todavía tienes la audacia de oponerte a mi pueblo para impedir su partida!",
+        "CEI": "Ancora ti opponi al mio popolo e non lo lasci partire!"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "הִנְ/נִ֤י מַמְטִיר֙ כָּ/עֵ֣ת מָחָ֔ר בָּרָ֖ד כָּבֵ֣ד מְאֹ֑ד אֲשֶׁ֨ר לֹא הָיָ֤ה כָמֹ֨/הוּ֙ בְּ/מִצְרַ֔יִם לְ/מִן הַ/יּ֥וֹם הִוָּסְדָ֖/ה וְ/עַד עָֽתָּה׃",
+        "LXX": "ἰδοὺ ἐγὼ ὕω ταύτην τὴν ὥραν αὔριον χάλαζαν πολλὴν σφόδρα, ἥτις τοιαύτη οὐ γέγονεν ἐν Αἰγύπτῳ ἀφ’ ἧς ἡμέρας ἔκτισται ἕως τῆς ἡμέρας ταύτης.",
+        "VUL": "En pluam cras hac ipsa hora grandinem multam nimis, qualis non fuit in Ægypto a die qua fundata est, usque in præsens tempus.",
+        "SYN": "вот, Я пошлю завтра, в это самое время, град весьма сильный, которому подобного не было в Египте со дня основания его доныне;",
+        "NEO": "Voici que, demain, à cette heure, je ferai pleuvoir une grêle si forte, qu’il n’y en a pas eu de semblable en Égypte depuis le jour où elle a été fondée jusqu’à présent.",
+        "NAB": "I warn you, then, tomorrow at this hour I will rain down such fierce hail as there has never been in Egypt from the day the nation was founded up to the present.",
+        "VAT_ES": "Pero mañana, a esta misma hora, haré caer sobre Egipto una terrible granizada, como no la hubo desde su fundación hasta el presente.",
+        "CEI": "Ecco, io faccio cadere domani a questa stessa ora una grandine violentissima come non c'era mai stata in Egitto dal giorno della sua fondazione fino ad oggi."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה שְׁלַ֤ח הָעֵז֙ אֶֽת מִקְנְ/ךָ֔ וְ/אֵ֛ת כָּל אֲשֶׁ֥ר לְ/ךָ֖ בַּ/שָּׂדֶ֑ה כָּל הָ/אָדָ֨ם וְ/הַ/בְּהֵמָ֜ה אֲשֶֽׁר יִמָּצֵ֣א בַ/שָּׂדֶ֗ה וְ/לֹ֤א יֵֽאָסֵף֙ הַ/בַּ֔יְתָ/ה וְ/יָרַ֧ד עֲלֵ/הֶ֛ם הַ/בָּרָ֖ד וָ/מֵֽתוּ׃",
+        "LXX": "νῦν οὖν κατάσπευσον συναγαγεῖν τὰ κτήνη σου καὶ ὅσα σοί ἐστιν ἐν τῷ πεδίῳ· πάντες γὰρ οἱ ἄνθρωποι καὶ τὰ κτήνη ὅσα σοί ἐστιν ἐν τῷ πεδίῳ καὶ μὴ εἰσέλθῃ εἰς οἰκίαν, πέσῃ δὲ ἐπ’ αὐτὰ ἡ χάλαζα, τελευτήσει.",
+        "VUL": "Mitte ergo jam nunc, et congrega jumenta tua, et omnia quæ habes in agro : homines enim, et jumenta, et universa quæ inventa fuerint foris, nec congregata de agris, cecideritque super ea grando, morientur.",
+        "SYN": "итак пошли собрать стада твои и все, что есть у тебя в поле: на всех людей и скот, которые останутся в поле и не соберутся в домы, падет град, и они умрут.",
+        "NEO": "Et maintenant fais mettre en sûreté ton bétail et tout ce que tu as dans les champs ; car tous les hommes et tous les animaux qui se trouveront dans les champs et qui ne seront pas ramenés dans les maisons seront frappés de la grêle et périront. »",
+        "NAB": "Therefore, order all your livestock and whatever else you have in the open fields to be brought to a place of safety. Whatever man or beast remains in the fields and is not brought to shelter shall die when the hail comes upon them.\"",
+        "VAT_ES": "Por eso, ordena que pongan bajo techo tu ganado y todo lo que tengas al aire libre, porque todo lo que esté al aire libre, porque todo lo que esté al aire libre y no se encuentre bajo techo –sea hombre o animal– morirá víctima del granizo».",
+        "CEI": "Manda dunque fin d'ora a mettere al riparo il tuo bestiame e quanto hai in campagna. Su tutti gli uomini e su tutti gli animali che si trovano in campagna e che non saranno ricondotti in casa, scenderà la grandine ed essi moriranno\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "הַ/יָּרֵא֙ אֶת דְּבַ֣ר יְהוָ֔ה מֵֽ/עַבְדֵ֖י פַּרְעֹ֑ה הֵנִ֛יס אֶת עֲבָדָ֥י/ו וְ/אֶת מִקְנֵ֖/הוּ אֶל הַ/בָּתִּֽים׃",
+        "LXX": "ὁ φοβούμενος τὸ ῥῆμα Κυρίου τῶν θεραπόντων Φαραὼ συνήγαγεν τὰ κτήνη αὐτοῦ εἰς τοὺς οἴκους·",
+        "VUL": "Qui timuit verbum Domini de servis Pharaonis, fecit confugere servos suos et jumenta in domos :",
+        "SYN": "Те из рабов фараоновых, которые убоялись слова Господня, поспешно собрали рабов своих и стада свои в домы;",
+        "NEO": "Ceux des serviteurs de Pharaon qui craignirent la parole de \\+w Yahweh|strong=\"H3068\"\\+w** firent retirer dans les maisons leurs serviteurs et leurs troupeaux.",
+        "NAB": "Some of Pharaoh's servants feared the warning of the LORD and hurried their servants and livestock off to shelter.",
+        "VAT_ES": "Algunos servidores del Faraón, atemorizados por la palabra del Señor, pusieron bajo techo a sus esclavos y su ganado;",
+        "CEI": "Chi tra i ministri del faraone temeva il Signore fece ricoverare nella casa i suoi schiavi e il suo bestiame;"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/אֲשֶׁ֥ר לֹא שָׂ֛ם לִבּ֖/וֹ אֶל דְּבַ֣ר יְהוָ֑ה וַֽ/יַּעֲזֹ֛ב אֶת עֲבָדָ֥י/ו וְ/אֶת מִקְנֵ֖/הוּ בַּ/שָּׂדֶֽה׃",
+        "LXX": "ὃς δὲ μὴ προσέσχεν τῇ διανοίᾳ εἰς τὸ ῥῆμα Κυρίου, ἀφῆκεν τὰ κτήνη ἐν τοῖς πεδίοις.",
+        "VUL": "qui autem neglexit sermonem Domini, dimisit servos suos et jumenta in agris.",
+        "SYN": "а кто не обратил сердца своего к слову Господню, тот оставил рабов своих и стада свои в поле.",
+        "NEO": "Mais ceux qui n’appliquèrent pas leur cœur à la parole de \\+w Yahweh|strong=\"H3068\"\\+w** laissèrent leurs serviteurs et leurs troupeaux dans les champs.",
+        "NAB": "Others, however, did not take the warning of the LORD to heart and left their servants and livestock in the fields.",
+        "VAT_ES": "pero otros no hicieron caso de esta amenaza y dejaron en el campo a sus esclavos y su ganado.",
+        "CEI": "chi invece non diede retta alla parola del Signore lasciò schiavi e bestiame in campagna."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֜ה אֶל מֹשֶׁה נְטֵ֤ה אֶת יָֽדְ/ךָ֙ עַל הַ/שָּׁמַ֔יִם וִ/יהִ֥י בָרָ֖ד בְּ/כָל אֶ֣רֶץ מִצְרָ֑יִם עַל הָ/אָדָ֣ם וְ/עַל הַ/בְּהֵמָ֗ה וְ/עַ֛ל כָּל עֵ֥שֶׂב הַ/שָּׂדֶ֖ה בְּ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "Εἶπεν δὲ Κύριος πρὸς Μωυσῆν Ἔκτεινον τὴν χεῖρά σου εἰς τὸν οὐρανόν, καὶ ἔσται χάλαζα ἐπὶ πᾶσαν γῆν Αἰγύπτου, ἐπί τε τοὺς ἀνθρώπους καὶ τὰ κτήνη καὶ ἐπὶ πᾶσαν βοτάνην τὴν ἐπὶ τῆς γῆς.",
+        "VUL": "Et dixit Dominus ad Moysen : Extende manum tuam in cælum, ut fiat grando in universa terra Ægypti super homines, et super jumenta, et super omnem herbam agri in terra Ægypti.",
+        "SYN": "И сказал Господь Моисею: простри руку твою к небу, и падет град на всю землю Египетскую, на людей, на скот и на всю траву полевую в земле Египетской.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Etends ta main vers le ciel, afin qu’il tombe de la grêle dans tout le pays d’Égypte sur les hommes, sur les animaux et sur toutes les herbes des champs. »",
+        "NAB": "The LORD then said to Moses, \"Stretch out your hand toward the sky, that hail may fall upon the entire land of Egypt, on man and beast and every growing thing in the land of Egypt.\"",
+        "VAT_ES": "Entonces el Señor dijo a Moisés: «Extiende tu mano hacia el cielo, y que caiga el granizo sobre la gente, los animales y la vegetación que crece en los campos, en todo el territorio de Egipto».",
+        "CEI": "Il Signore disse a Mosè: \"Stendi la mano verso il cielo: vi sia grandine in tutto il paese di Egitto, sugli uomini, sulle bestie e su tutte le erbe dei campi nel paese di Egitto!\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨ט מֹשֶׁ֣ה אֶת מַטֵּ/הוּ֮ עַל הַ/שָּׁמַיִם֒ וַֽ/יהוָ֗ה נָתַ֤ן קֹלֹת֙ וּ/בָרָ֔ד וַ/תִּ֥הֲלַךְ אֵ֖שׁ אָ֑רְצָ/ה וַ/יַּמְטֵ֧ר יְהוָ֛ה בָּרָ֖ד עַל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "ἐξέτεινεν δὲ Μωυσῆς τὴν χεῖρα εἰς τὸν οὐρανόν, καὶ Κύριος ἔδωκεν φωνάς καὶ χάλαζαν, καὶ διέτρεχεν τὸ πῦρ ἐπὶ τῆς γῆς· καὶ ἔβρεξεν Κύριος χάλαζαν ἐπὶ πᾶσαν γῆν Αἰγύπτου.",
+        "VUL": "Extenditque Moyses virgam in cælum, et Dominus dedit tonitrua, et grandinem, ac discurrentia fulgura super terram : pluitque Dominus grandinem super terram Ægypti.",
+        "SYN": "И простер Моисей жезл свой к небу, и Господь произвел гром и град, и огонь разливался по земле; и послал Господь град на [всю] землю Египетскую;",
+        "NEO": "Moïse étendit son bâton vers le ciel, et \\+w Yahweh|strong=\"H3068\"\\+w** envoya le tonnerre et la grêle, et le feu se précipitait sur la terre. \\+w Yahweh|strong=\"H3068\"\\+w** fit pleuvoir de la grêle sur le pays d’Égypte.",
+        "NAB": "But Pharaoh, seeing that the rain and hail and thunder had ceased, sinned again: he with his servants became obdurate,",
+        "VAT_ES": "Moisés extendió su bastón hacia el cielo, y el Señor envió truenos y granizo. Cayeron rayos sobre la tierra, y el Señor hizo llover granizo sobre Egipto.",
+        "CEI": "Mosè stese il bastone verso il cielo e il Signore mandò tuoni e grandine; un fuoco guizzò sul paese e il Signore fece piovere grandine su tutto il paese d'Egitto."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י בָרָ֔ד וְ/אֵ֕שׁ מִתְלַקַּ֖חַת בְּ/ת֣וֹךְ הַ/בָּרָ֑ד כָּבֵ֣ד מְאֹ֔ד אֲ֠שֶׁר לֹֽא הָיָ֤ה כָמֹ֨/הוּ֙ בְּ/כָל אֶ֣רֶץ מִצְרַ֔יִם מֵ/אָ֖ז הָיְתָ֥ה לְ/גֽוֹי׃",
+        "LXX": "ἦν δὲ ἡ χάλαζα, καὶ τὸ πῦρ φλογίζον ἐν τῇ χαλάζῃ· ἡ δὲ χάλαζα πολλὴ σφόδρα, ἥτις τοιαύτη οὐ γέγονεν ἐν Αἰγύπτῳ ἀφ’ ἧς ἡμέρας γεγένηται ἐπ’ αὐτῆς ἔθνος.",
+        "VUL": "Et grando et ignis mista pariter ferebantur : tantæque fuit magnitudinis, quanta ante numquam apparuit in universa terra Ægypti ex quo gens illa condita est.",
+        "SYN": "и был град и огонь между градом, [град] весьма сильный, какого не было во всей земле Египетской со времени населения ее.",
+        "NEO": "Il tomba de la grêle et du feu mêlé à la grêle ; elle était si forte qu’il n’y en avait pas eu de semblable dans tout le pays d’Égypte, depuis qu’il forme une nation.",
+        "NAB": "and lightning constantly flashed through the hail, such fierce hail as had never been seen in the land since Egypt became a nation.",
+        "VAT_ES": "El granizo y el fuego que formaba remolinos en medio de él, se precipitaron con tal violencia, que nunca hubo en Egipto nada semejante desde que comenzó a ser una nación.",
+        "CEI": "Ci furono grandine e folgori in mezzo alla grandine: grandinata così violenta non vi era mai stata in tutto il paese d'Egitto, dal tempo in cui era diventato nazione!"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨ךְ הַ/בָּרָ֜ד בְּ/כָל אֶ֣רֶץ מִצְרַ֗יִם אֵ֚ת כָּל אֲשֶׁ֣ר בַּ/שָּׂדֶ֔ה מֵ/אָדָ֖ם וְ/עַד בְּהֵמָ֑ה וְ/אֵ֨ת כָּל עֵ֤שֶׂב הַ/שָּׂדֶה֙ הִכָּ֣ה הַ/בָּרָ֔ד וְ/אֶת כָּל עֵ֥ץ הַ/שָּׂדֶ֖ה שִׁבֵּֽר׃",
+        "LXX": "ἐπάταξεν δὲ ἡ χάλαζα ἐν πάσῃ γῇ Αἰγύπτου ἀπὸ ἀνθρώπου ἕως κτήνους, καὶ πᾶσαν βοτάνην τὴν ἐν τῷ πεδίῳ ἐπάταξεν ἡ χάλαζα, καὶ πάντα τὰ ξύλα τὰ ἐν τοῖς πεδίοις συνέτριψεν ἡ χάλαζα·",
+        "VUL": "Et percussit grando in omni terra Ægypti cuncta quæ fuerunt in agris, ab homine usque ad jumentum : cunctamque herbam agri percussit grando, et omne lignum regionis confregit.",
+        "SYN": "И побил град по всей земле Египетской все, что было в поле, от человека до скота, и всю траву полевую побил град, и все деревья в поле поломал [град];",
+        "NEO": "La grêle frappa, dans tout le pays d’Égypte, tout ce qui était dans les champs, depuis les hommes jusqu’aux animaux ; la grêle frappa aussi toutes les herbes des champs et brisa tous les arbres des champs.",
+        "NAB": "It struck down every man and beast that was in the open throughout the land of Egypt; it beat down every growing thing and splintered every tree in the fields.",
+        "VAT_ES": "El granizo mató a todos los hombres y animales que se encontraban al aire libre en el territorio de Egipto, arrasó toda la vegetación de los campos y destrozó todos los árboles.",
+        "CEI": "La grandine colpì, in tutto il paese d'Egitto, quanto era nella campagna: uomini e bestie; la grandine colpì anche tutta l'erba della campagna e schiantò tutti gli alberi della campagna."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "רַ֚ק בְּ/אֶ֣רֶץ גֹּ֔שֶׁן אֲשֶׁר שָׁ֖ם בְּנֵ֣י יִשְׂרָאֵ֑ל לֹ֥א הָיָ֖ה בָּרָֽד׃",
+        "LXX": "πλὴν ἐν γῇ Γέσεμ, οὗ ἦσαν οἱ υἱοὶ Ἰσραήλ, οὐκ ἐγένετο ἡ χάλαζα.",
+        "VUL": "Tantum in terra Gessen, ubi erant filii Israël, grando non cecidit.",
+        "SYN": "только в земле Гесем, где жили сыны Израилевы, не было града.",
+        "NEO": "Il n’y eut que dans le pays de Gessen, où étaient les enfants d’Israël, qu’il ne tomba pas de grêle.",
+        "NAB": "Only in the land of Goshen, where the Israelites dwelt, was there no hail.",
+        "VAT_ES": "Sólo se libró el granizo la región de Gosen, donde habitaban los israelitas.",
+        "CEI": "Soltanto nel paese di Gosen, dove stavano gli Israeliti, non vi fu grandine."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֣ח פַּרְעֹ֗ה וַ/יִּקְרָא֙ לְ/מֹשֶׁ֣ה וּֽ/לְ/אַהֲרֹ֔ן וַ/יֹּ֥אמֶר אֲלֵ/הֶ֖ם חָטָ֣אתִי הַ/פָּ֑עַם יְהוָה֙ הַ/צַּדִּ֔יק וַ/אֲנִ֥י וְ/עַמִּ֖/י הָ/רְשָׁעִֽים׃",
+        "LXX": "ἀποστείλας δὲ Φαραὼ ἐκάλεσεν Μωυσῆν καὶ Ἀαρὼν καὶ εἶπεν αὐτοῖς Ἡμάρτηκα τὸ νῦν· ὁ κύριος δίκαιος, ἐγὼ δὲ καὶ ὁ λαός μου ἀσεβεῖς.",
+        "VUL": "Misitque Pharao, et vocavit Moysen et Aaron, dicens ad eos : Peccavi etiam nunc : Dominus justus ; ego et populus meus, impii.",
+        "SYN": "И послал фараон, и призвал Моисея и Аарона, и сказал им: на этот раз я согрешил; Господь праведен, а я и народ мой виновны;",
+        "NEO": "Pharaon fit appeler Moïse et Aaron, et leur dit : « Cette fois, j’ai péché ; c’est \\+w Yahweh|strong=\"H3068\"\\+w** qui est juste, et moi et mon peuple qui sommes coupables.",
+        "NAB": "Then Pharaoh summoned Moses and Aaron and said to them, \"I have sinned again! The LORD is just; it is I and my subjects who are at fault.",
+        "VAT_ES": "El Faraón mandó llamar a Moisés y a Aarón, y les dijo: «Esta vez debo confesar mi pecado. El Señor tiene razón, mientras que yo y mi pueblo estamos equivocados.",
+        "CEI": "Allora il faraone mandò a chiamare Mosè e Aronne e disse loro: \"Questa volta ho peccato: il Signore ha ragione; io e il mio popolo siamo colpevoli."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "הַעְתִּ֨ירוּ֙ אֶל יְהוָ֔ה וְ/רַ֕ב מִֽ/הְיֹ֛ת קֹלֹ֥ת אֱלֹהִ֖ים וּ/בָרָ֑ד וַ/אֲשַׁלְּחָ֣ה אֶתְ/כֶ֔ם וְ/לֹ֥א תֹסִפ֖וּ/ן לַ/עֲמֹֽד׃",
+        "LXX": "εὔξασθε οὖν περὶ ἐμοῦ πρὸς Κύριον, καὶ παυσάσθω τοῦ γενηθῆναι φωνὰς θεοῦ καὶ χάλαζαν καὶ πῦρ· καὶ ἐξαποστελῶ ὑμᾶς, καὶ οὐκέτι προστεθήσεσθε μένειν.",
+        "VUL": "Orate Dominum ut desinant tonitrua Dei, et grando : ut dimittam vos, et nequaquam hic ultra maneatis.",
+        "SYN": "помолитесь [обо мне] Господу: пусть перестанут громы Божии и град [и огонь на земле], и отпущу вас и не буду более удерживать.",
+        "NEO": "Priez \\+w Yahweh|strong=\"H3068\"\\+w**, pour qu’il n’y ait plus de tonnerres et de grêle, et je vous laisserai aller et l’on ne vous retiendra plus. »",
+        "NAB": "Pray to the LORD, for we have had enough of God's thunder and hail. Then I will let you go; you need stay no longer.\"",
+        "VAT_ES": "Rueguen al Señor que haga cesar los truenos y el granizo, y yo los dejaré partir. Ya no tendrán que permanecer aquí más tiempo.",
+        "CEI": "Pregate il Signore: basta con i tuoni e la grandine! Vi lascerò partire e non resterete qui più oltre\"."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֵלָי/ו֙ מֹשֶׁ֔ה כְּ/צֵאתִ/י֙ אֶת הָ/עִ֔יר אֶפְרֹ֥שׂ אֶת כַּפַּ֖/י אֶל יְהוָ֑ה הַ/קֹּל֣וֹת יֶחְדָּל֗וּ/ן וְ/הַ/בָּרָד֙ לֹ֣א יִֽהְיֶה ע֔וֹד לְמַ֣עַן תֵּדַ֔ע כִּ֥י לַ/יהוָ֖ה הָ/אָֽרֶץ׃",
+        "LXX": "εἶπεν δὲ αὐτῷ Μωυσῆς Ὡς ἂν ἐξέλθω τὴν πόλιν, ἐκπετάσω τὰς χεῖράς μου, καὶ αἱ φωναὶ παύσονται, καὶ ἡ χάλαζα καὶ ὁ ὑετὸς οὐκ ἔσται ἔτι· ἵνα γνῷς ὅτι τοῦ κυρίου ἡ γῆ.",
+        "VUL": "Ait Moyses : Cum egressus fuero de urbe, extendam palmas meas ad Dominum, et cessabunt tonitrua, et grando non erit, ut scias quia Domini est terra :",
+        "SYN": "Моисей сказал ему: как скоро я выйду из города, простру руки мои к Господу [на небо], громы перестанут, и града [и дождя] более не будет, дабы ты узнал, что Господня земля;",
+        "NEO": "Moïse lui dit : « En sortant de la ville, je lèverai mes mains vers \\+w Yahweh|strong=\"H3068\"\\+w**, et les tonnerres cesseront, et il n’y aura plus de grêle, afin que tu saches que la terre est à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Moses replied, \"As soon as I leave the city I will extend my hands to the LORD; the thunder will cease, and there will be no more hail. Thus you shall learn that the earth is the LORD'S.",
+        "VAT_ES": "Moisés respondió: «Apenas salga de la ciudad, extenderé mis manos al Señor, y cesarán los truenos y no habrá más granizo, para que sepas que la tierra pertenece al Señor.",
+        "CEI": "Mosè gli rispose: \"Quando sarò uscito dalla città, stenderò le mani verso il Signore: i tuoni cesseranno e non vi sarà più grandine, perché tu sappia che la terra è del Signore."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֖ה וַ/עֲבָדֶ֑י/ךָ יָדַ֕עְתִּי כִּ֚י טֶ֣רֶם תִּֽירְא֔וּ/ן מִ/פְּנֵ֖י יְהוָ֥ה אֱלֹהִֽים׃",
+        "LXX": "καὶ σὺ καὶ οἱ θεράποντές σου ἐπίσταμαι ὅτι οὐδέπω πεφόβησθε τὸν θεόν.",
+        "VUL": "novi autem quod et tu et servi tui necdum timeatis Dominum Deum.",
+        "SYN": "но я знаю, что ты и рабы твои еще не убоитесь Господа Бога.",
+        "NEO": "Mais je sais que toi et tes serviteurs, vous ne craindrez pas encore \\+w Yahweh|strong=\"H3068\"\\+w** Dieu. »",
+        "NAB": "But you and your servants, I know, do not yet fear the LORD God.\"",
+        "VAT_ES": "Sin embargo, yo sé muy bien que ni tú ni tus servidores temen todavía al Señor Dios».",
+        "CEI": "Ma quanto a te e ai tuoi ministri, io so che ancora non temerete il Signore Dio\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/הַ/פִּשְׁתָּ֥ה וְ/הַ/שְּׂעֹרָ֖ה נֻכָּ֑תָה כִּ֤י הַ/שְּׂעֹרָה֙ אָבִ֔יב וְ/הַ/פִּשְׁתָּ֖ה גִּבְעֹֽל׃",
+        "LXX": "τὸ δὲ λίνον καὶ ἡ κριθὴ ἐπλήγη· ἡ γὰρ κριθὴ παρεστηκυῖα, τὸ δὲ λίνον σπερματίζον·",
+        "VUL": "Linum ergo et hordeum læsum est, eo quod hordeum esset virens, et linum jam folliculos germinaret :",
+        "SYN": "Лен и ячмень были побиты, потому что ячмень выколосился, а лен осеменился;",
+        "NEO": "Le lin et l’orge avaient été frappés, car l’orge était en épis et le lin en fleurs ;",
+        "NAB": "Now the flax and the barley were ruined, because the barley was in ear and the flax in bud.",
+        "VAT_ES": "En aquella oportunidad fueron destruidos el lino y la cebada, porque la cebada ya había echado espigas, y el lino estaba florecido.",
+        "CEI": "Ora il lino e l'orzo erano stati colpiti, perché l'orzo era in spiga e il lino in fiore;"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/הַ/חִטָּ֥ה וְ/הַ/כֻּסֶּ֖מֶת לֹ֣א נֻכּ֑וּ כִּ֥י אֲפִילֹ֖ת הֵֽנָּה׃",
+        "LXX": "ὁ δὲ πυρὸς καὶ ἡ ὄλυρα οὐκ ἐπλήγησαν, ὄψιμα γὰρ ἦν.",
+        "VUL": "triticum autem et far non sunt læsa, quia serotina erant.",
+        "SYN": "а пшеница и полба не побиты, потому что они были поздние.",
+        "NEO": "mais le froment et l’épeautre n’avaient pas été frappés, parce qu’ils sont tardifs.",
+        "NAB": "But the wheat and the spelt were not ruined, for they grow later.",
+        "VAT_ES": "El trigo y la espelta, en cambio, como son tardíos, escaparon a la destrucción.",
+        "CEI": "ma il grano e la spelta non erano stati colpiti, perché tardivi."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֨א מֹשֶׁ֜ה מֵ/עִ֤ם פַּרְעֹה֙ אֶת הָ/עִ֔יר וַ/יִּפְרֹ֥שׂ כַּפָּ֖י/ו אֶל יְהוָ֑ה וַֽ/יַּחְדְּל֤וּ הַ/קֹּלוֹת֙ וְ/הַ/בָּרָ֔ד וּ/מָטָ֖ר לֹא נִתַּ֥ךְ אָֽרְצָ/ה׃",
+        "LXX": "ἐξῆλθεν δὲ Μωυσῆς ἀπὸ Φαραὼ ἐκτὸς τῆς πόλεως καὶ ἐξέτεινεν τὰς χεῖρας πρὸς Κύριον· καὶ αἱ φωναὶ ἐπαύσαντο καὶ ἡ χάλαζα, καὶ ὁ ὑετὸς οὐκ ἔσταξεν οὐκέτι ἐπὶ τὴν γῆν.",
+        "VUL": "Egressusque Moyses a Pharaone ex urbe, tetendit manus ad Dominum : et cessaverunt tonitrua et grando, nec ultra stillavit pluvia super terram.",
+        "SYN": "И вышел Моисей от фараона из города и простер руки свои к Господу, и прекратились гром и град, и дождь перестал литься на землю.",
+        "NEO": "Moïse quitta Pharaon et sortit de la ville ; il leva ses mains vers \\+w Yahweh|strong=\"H3068\"\\+w**, et les tonnerres et la grêle cessèrent, et la pluie ne tomba plus sur la terre.",
+        "NAB": "When Moses had left Pharaoh's presence and had gone out of the city, he extended his hands to the LORD. Then the thunder and the hail ceased, and the rain no longer poured down upon the earth.",
+        "VAT_ES": "Después que se alejó del Faraón, Moisés salió de la ciudad y extendió sus manos al Señor. Entonces cesaron los truenos y el granizo, y no cayó más lluvia sobre la tierra.",
+        "CEI": "Mosè si allontanò dal faraone e dalla città; stese allora le mani verso il Signore: i tuoni e la grandine cessarono e la pioggia non si rovesciò più sulla terra."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣רְא פַּרְעֹ֗ה כִּֽי חָדַ֨ל הַ/מָּטָ֧ר וְ/הַ/בָּרָ֛ד וְ/הַ/קֹּלֹ֖ת וַ/יֹּ֣סֶף לַ/חֲטֹ֑א וַ/יַּכְבֵּ֥ד לִבּ֖/וֹ ה֥וּא וַ/עֲבָדָֽי/ו׃",
+        "LXX": "ἰδὼν δὲ Φαραὼ ὅτι πέπαυται ὁ ὑετὸς καὶ ἡ χάλαζα καὶ αἱ φωναί, προσέθετο τοῦ ἁμαρτάνειν, καὶ ἐβάρυνεν αὐτοῦ τὴν καρδίαν καὶ τῶν θεραπόντων αὐτοῦ.",
+        "VUL": "Videns autem Pharao quod cessasset pluvia, et grando, et tonitrua, auxit peccatum :",
+        "SYN": "И увидел фараон, что перестал дождь и град и гром, и продолжал грешить, и отягчил сердце свое сам и рабы его.",
+        "NEO": "Pharaon, voyant que la pluie, la grêle et les tonnerres avaient cessé, continua de pécher,",
+        "VAT_ES": "Pero cuando el Faraón vio que la lluvia, el granizo y los truenos habían cesado, reincidió en su pecado y endureció su corazón, lo mismo que sus servidores.",
+        "CEI": "Il faraone vide che la pioggia era cessata, come anche la grandine e i tuoni, e allora continuò a peccare e si ostinò, insieme con i suoi ministri."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַֽ/יֶּחֱזַק֙ לֵ֣ב פַּרְעֹ֔ה וְ/לֹ֥א שִׁלַּ֖ח אֶת בְּנֵ֣י יִשְׂרָאֵ֑ל כַּ/אֲשֶׁ֛ר דִּבֶּ֥ר יְהוָ֖ה בְּ/יַד מֹשֶֽׁה׃",
+        "LXX": "καὶ ἐσκληρύνθη ἡ καρδία Φαραώ, καὶ οὐκ ἐξαπέστειλεν τοὺς υἱοὺς Ἰσραήλ, καθάπερ ἐλάλησεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "et ingravatum est cor ejus, et servorum illius, et induratum nimis : nec dimisit filios Israël, sicut præceperat Dominus per manum Moysi.",
+        "SYN": "И ожесточилось сердце фараона [и рабов его], и он не отпустил сынов Израилевых, как и говорил Господь чрез Моисея.",
+        "NEO": "et il appesantit son cœur, lui et ses serviteurs. Le cœur de Pharaon s’endurcit, et il ne laissa pas aller les enfants d’Israël, selon que \\+w Yahweh|strong=\"H3068\"\\+w** l’avait dit par l’intermédiaire de Moïse.",
+        "NAB": "and in his obstinacy he would not let the Israelites go, as the LORD had foretold through Moses.",
+        "VAT_ES": "El Faraón se obstinó y no dejó partir a los israelitas, como el Señor lo había predicho por medio de Moisés.",
+        "CEI": "Il cuore del faraone si ostinò ed egli non lasciò partire gli Israeliti, come aveva predetto il Signore per mezzo di Mosè."
+      }
+    }
+  }
+}

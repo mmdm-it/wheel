@@ -1,0 +1,474 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "SAPI_012",
+  "book_key": "SAPI",
+  "sequence": 12,
+  "chapter_in": {
+    "MT": 12,
+    "VUL": 12,
+    "LXX": 12
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "τὸ γὰρ ἄφθαρτὸν σου πνεῦμά ἐστιν ἐν πᾶσιν.",
+        "VUL": "[O quam bonus et suavis est, Domine, spiritus tuus in omnibus !/",
+        "SYN": "Нетленный Твой дух пребывает во всем.",
+        "NEO": "Car votre esprit incorruptible est dans tous les êtres.",
+        "NAB": "for your imperishable spirit is in all things!",
+        "VAT_ES": "porque tu espíritu incorruptible está en todas las cosas.",
+        "CEI": "poiché il tuo spirito incorruttibile è in tutte le cose."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "διὸ τοὺς παραπίπτοντας κατ’ ὀλίγον ἐλέγχεις, καὶ ἐν οἷς ἁμαρτάνουσιν ὑπομιμνήσκων νουθετεῖς, ἵνα ἀπαλλαγέντες τῆς κακίας πιστεύσωσιν ἐπὶ σέ, Κύριε.",
+        "VUL": "Ideoque eos qui exerrant partibus corripis,/ et de quibus peccant admones et alloqueris,/ ut relicta malitia credant in te, Domine.]",
+        "SYN": "Посему заблуждающихся Ты мало-помалу обличаешь и, напоминая им, в чем они согрешают, вразумляешь, чтобы они, отступив от зла, уверовали в Тебя, Господи.",
+        "NEO": "C’est pourquoi vous châtiez avec modération ceux qui tombent, et, quand ils pèchent, vous les avertissez et vous les reprenez, afin que, renonçant à leur malice, ils croient en vous, Seigneur.",
+        "NAB": "Therefore you rebuke offenders little by little, warn them, and remind them of the sins they are committing, that they may abandon their wickedness and believe in you, O LORD!",
+        "VAT_ES": "Por eso reprendes poco a poco a los que caen, y los amonestas recordándoles sus pecados, para que se aparten del mal y crean en ti, Señor.",
+        "CEI": "Per questo tu castighi poco alla volta i colpevoli e li ammonisci ricordando loro i propri peccati, perché, rinnegata la malvagità, credano in te, Signore."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "Καὶ γὰρ τοὺς παλαιοὺς οἰκήτορας τῆς ἁγίας σου γῆς",
+        "VUL": "[Illos enim antiquos inhabitatores terræ sanctæ tuæ,/ quos exhorruisti,/",
+        "SYN": "Так, возгнушавшись древними обитателями святой земли Твоей,",
+        "NEO": "Vous aviez en haine les anciens habitants de votre terre sainte,",
+        "NAB": "For truly, the ancient inhabitants of your holy land,",
+        "VAT_ES": "A los antiguos habitantes de tu Tierra santa",
+        "CEI": "Tu odiavi gli antichi abitanti della tua terra santa,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "μισήσας ἐπὶ τῷ ἔχθιστα πράσσειν ἔργα φαρμακειῶν καὶ τελετὰς ἀνοσίους,",
+        "VUL": "quoniam odibilia opera tibi faciebant/ per medicamina et sacrificia injusta,/",
+        "SYN": "совершавшими ненавистные дела волхвований и нечестивые жертвоприношения,",
+        "NEO": "parce qu’ils se livraient à des œuvres détestables de magie, à des cérémonies impies,",
+        "NAB": "whom you hated for deeds most odious - Works of witchcraft and impious sacrifices;",
+        "VAT_ES": "los aborreciste por sus prácticas detestables, actos de hechicería y ritos impíos.",
+        "CEI": "perché compivano delitti ripugnanti, pratiche di magìa e riti sacrileghi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "τέκνων τε φονέας ἀνελεήμονας, καὶ σπλαγχνοφάγων ἀνθρωπίνων σαρκῶν θοῖναν καὶ αἵματος, ἐκ μέσου μύστας θιάσου,",
+        "VUL": "et filiorum suorum necatores sine misericordia,/ et comestores viscerum hominum,/ et devoratores sanguinis a medio sacramento tuo,/",
+        "SYN": "и безжалостными убийцами детей, и на жертвенных пирах пожиравшими внутренности человеческой плоти и крови в тайных собраниях,",
+        "NEO": "et à des meurtres cruels d’enfants, dévorant des chairs humaines et s’abreuvant de sang. Ces initiés à d’abominables mystères,",
+        "NAB": "a cannibal feast of human flesh and of blood, from the midst of. . . - These merciless murderers of children,",
+        "VAT_ES": "A esos crueles asesinos de niños, a esos devoradores de entrañas en banquetes de carne humana y de sangre, a esos iniciados en ritos sangrientos,",
+        "CEI": "Questi spietati uccisori dei loro figli, divoratori di visceri in banchetti di carne umana, iniziati in orgiastici riti,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "καὶ αὐθέντας γονεῖς ψυχῶν ἀβοηθήτων, ἐβουλήθης ἀπολέσαι διὰ χειρῶν πατέρων ἡμῶν,",
+        "VUL": "et auctores parentes animarum inauxiliatarum,/ perdere voluisti per manus parentum nostrorum :/",
+        "SYN": "и родителями, убивавшими беспомощные души, - Ты восхотел погубить их руками отцов наших,",
+        "NEO": "ces parents meurtriers d’êtres sans défense, vous vouliez les détruire par la main de nos pères,",
+        "NAB": "and parents who took with their own hands defenseless lives, You willed to destroy by the hands of our fathers,",
+        "VAT_ES": "a esos padres asesinos de seres indefensos, decidiste hacerlos perecer por las manos de nuestros padres,",
+        "CEI": "genitori carnefici di vite indifese, tu li hai voluti distruggere per mano dei nostri antenati,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "ἵνα ἀξίαν ἀποικίαν δέξηται θεοῦ παίδων ἡ παρὰ σοὶ πασῶν τιμιωτάτη γῆ.",
+        "VUL": "ut dignam perciperent peregrinationem puerorum Dei,/ quæ tibi omnium carior est terra./",
+        "SYN": "дабы земля, драгоценнейшая всех у Тебя, приняла достойное население чад Божиих.",
+        "NEO": "afin que cette terre que vous honorez entre toutes reçût une digne colonie d’enfants de Dieu.",
+        "NAB": "that the land that is dearest of all to you might receive a worthy colony of God's children.",
+        "VAT_ES": "para que esta tierra, la más querida por ti entre todas, recibiera una digna colonia de hijos de Dios.",
+        "CEI": "perché ricevesse una degna colonia di figli di Dio la regione da te stimata più di ogni altra."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "ἀλλὰ καὶ τούτων ὡς ἀνθρώπων ἐφείσω, ἀπέστειλάς τε προδρόμους τοῦ στρατοπέδου σου σφῆκας, ἵνα αὐτοὺς κατὰ βραχὺ ἐξολεθρεύσωσιν·",
+        "VUL": "Sed et his tamquam hominibus pepercisti,/ et misisti antecessores exercitus tui vespas,/ ut illos paulatim exterminarent./",
+        "SYN": "Но и их, как людей, Ты щадил, послав предтечами воинства Твоего шершней, дабы они мало-помалу истребляли их.",
+        "NEO": "Cependant, comme ils étaient hommes, vous avez usé de clémence, et vous avez envoyé, comme avant-coureurs de votre armée, des frelons pour les faire périr peu à peu.",
+        "NAB": "But even these, as they were men, you spared, and sent wasps as forerunners of your army that they might exterminate them by degrees.",
+        "VAT_ES": "Pero aun a ellos, por ser hombres, los trataste con indulgencia, y enviaste avispas como precursores de tu ejército, para que los exterminaran gradualmente.",
+        "CEI": "Ma anche con loro, perché uomini, fosti indulgente mandando loro le vespe come avanguardie del tuo esercito, perché li distruggessero a poco a poco."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "οὐκ ἀδυνατῶν ἐν παρατάξει ἀσεβεῖς δικαίοις ὑποχειρίους δοῦναι, ἢ θηρίοις δεινοῖς, ἢ λόγῳ ἀποτόμῳ ὑφ’ ἓν ἐκτρῖψαι·",
+        "VUL": "Non quia impotens eras in bello subjicere impios justis,/ aut bestiis sævis, aut verbo duro simul exterminare :/",
+        "SYN": "Хотя не невозможно было Тебе войною покорить нечестивых праведным, или истребить их страшными зверями, или грозным словом в один раз;",
+        "NEO": "Non qu’il vous fût impossible de faire tomber ces impies, dans une bataille rangée, sous la main des justes, ou de les exterminer d’un seul coup par des bêtes féroces, ou par un ordre rigoureux ;",
+        "NAB": "Not that you were without power to have the wicked vanquished in battle by the just, or wiped out at once by terrible beasts or by one decisive word;",
+        "VAT_ES": "Ciertamente, tú hubieras podido, en una batalla campal, entregar a los impíos en manos de los justos, o bien aniquilarlos de un solo golpe por medio de animales feroces o por una sentencia inexorable.",
+        "CEI": "Pur potendo in battaglia dare gli empi in mano dei giusti, oppure distruggerli con bestie feroci o all'istante con un ordine inesorabile,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "κρίνων δὲ κατὰ βραχὺ ἐδίδους τόπον μετανοίας, ⸆ οὐκ ἀγνοῶν ὅτι πονηρὰ ἡ γένεσις αὐτῶν καὶ ἔμφυτος ἡ κακία αὐτῶν, καὶ ὅτι οὐ μὴ ἀλλαγῇ ὁ λογισμὸς αὐτῶν εἰς τὸν αἰῶνα,",
+        "VUL": "sed partibus judicans,/ dabas locum pnitentiæ,/ non ignorans quoniam nequam est natio eorum,/ et naturalis malitia ipsorum,/ et quoniam non poterat mutari cogitatio illorum in perpetuum./",
+        "SYN": "но Ты, мало-помалу наказывая их, давал место покаянию, зная, однако, что племя их негодное и зло их врожденное, и помышление их не изменится вовеки.",
+        "NEO": "mais, en exerçant vos jugements par degré, vous leur donniez lieu de faire pénitence, quoique vous sussiez bien qu’ils étaient une race perverse, que leur malice était innée, et que leurs pensées ne changeraient jamais ;",
+        "NAB": "But condemning them bit by bit, you gave them space for repentance. You were not unaware that their race was wicked and their malice ingrained, And that their dispositions would never change;",
+        "VAT_ES": "En cambio, ejecutando poco a poco tu sentencia, les dabas oportunidad de arrepentirse, aunque no ignorabas que su origen era perverso y su malicia innata y que jamás cambiarían su manera de pensar,",
+        "CEI": "colpendoli invece a poco a poco, lasciavi posto al pentimento, sebbene tu non ignorassi che la loro razza era perversa e la loro malvagità naturale e che la loro mentalità non sarebbe mai cambiata,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "σπέρμα γὰρ ἦν κατηραμένον ἀπ’ ἀρχῆς· οὐδὲ εὐλαβούμενός τινα ἐφ’ οἷς ἡμάρτανον ἄδειαν ἐδίδους.",
+        "VUL": "Semen enim erat maledictum ab initio ;/ nec timens aliquem, veniam dabas peccatis illorum./",
+        "SYN": "Ибо семя их было проклятое от начала, и не из опасения перед кем-либо Ты допускал безнаказанность грехов их.",
+        "NEO": "car c’était une race maudite dès l’origine.",
+        "NAB": "for they were a race accursed from the beginning. Neither out of fear for anyone did you grant amnesty for their sins.",
+        "VAT_ES": "porque una maldición pesaba sobre esa raza desde el principio. Y no fue por temor de nadie que les ofrecías dejar impunes sus pecados.",
+        "CEI": "perché era una stirpe maledetta fin da principio. Non certo per timore di alcuno lasciavi impunite le loro colpe."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "τίς γὰρ ἐρεῖ Τί ἐποίησας; ἢ τίς ἀντιστήσεται τῷ κρίματί σου; τίς δὲ ἐγκαλέσει σοι κατὰ ἐθνῶν ἀπολωλότων, ἃ σὺ ἐποίησας; ἢ τίς εἰς κατάστασίν σοι ἐλεύσεται ἔκδικος κατὰ ἀδίκων ἀνθρώπων;",
+        "VUL": "Quis enim dicet tibi : Quid fecisti ?/ aut quis stabit contra judicium tuum ?/ aut quis in conspectu tuo veniet vindex iniquorum hominum ?/ aut quis tibi imputabit, si perierint nationes quas tu fecisti ?/",
+        "SYN": "Ибо кто скажет: \"что Ты сделал?\"- или кто противостанет суду Твоему? и кто обвинит Тебя в погублении народов, которых Ты сотворил? Или какой защитник придет к Тебе с ходатайством за неправедных людей?",
+        "NEO": "Qui en effet pourrait vous dire : « Qu’avez-vous fait ? » Qui pourrait s’opposer à votre jugement ? Qui vous accuserait de faire périr les nations que vous avez faites ? Qui viendrait plaider contre vous la cause d’hommes impies ?",
+        "NAB": "For who can say to you, \"What have you done?\" or who can oppose your decree? Or when peoples perish, who can challenge you, their maker; or who can come into your presence as vindicator of unjust men?",
+        "VAT_ES": "&iquest;Quién podrá decirte: «&iquest;Qué has hecho?». &iquest;Quién se opondrá a tu sentencia? &iquest;Quién te hará algún cargo por destruir a las naciones que tú creaste? &iquest;Quién se levantará contra ti como vengador de los injustos?",
+        "CEI": "E chi potrebbe domandarti: \"Che hai fatto?\", o chi potrebbe opporsi a una tua sentenza? Chi oserebbe accusarti per l'eliminazione di genti da te create? Chi si potrebbe costituire contro di te come difensore di uomini ingiusti?"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "οὔτε γὰρ θεός ἐστιν πλὴν σοῦ, ᾧ μέλει περὶ πάντων, ἵνα δείξῃς ὅτι οὐκ ἀδίκως ἔκρινας·",
+        "VUL": "Non enim est alius deus quam tu,/ cui cura est de omnibus,/ ut ostendas quoniam non injuste judicas judicium./",
+        "SYN": "Ибо, кроме, Тебя нет Бога, который имеет попечение о всех, чтобы доказывать Тебе, что Ты несправедливо судил.",
+        "NEO": "Car il n’y a pas d’autre Dieu que vous, qui prenez soin de toutes choses, afin de montrer que vous ne jugez pas injustement.",
+        "NAB": "For neither is there any god besides you who have the care of all, that you need show you have not unjustly condemned;",
+        "VAT_ES": "Porque, fuera de ti, no hay otro Dios que cuide de todos, a quien tengas que probar que tus juicios no son injustos;",
+        "CEI": "Non c'è Dio fuori di te, che abbia cura di tutte le cose, perché tu debba difenderti dall'accusa di giudice ingiusto."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "οὔτε βασιλεὺς ἢ τύραννος ἀντοφθαλμῆσαι δυνήσεταί σοι περὶ ὧν ἐκόλασας.",
+        "VUL": "Neque rex, neque tyrannus in conspectu tuo inquirent/ de his quos perdidisti./",
+        "SYN": "Ни царь, ни властелин не в состоянии явиться к Тебе на глаза за тех, которых Ты погубил.",
+        "NEO": "Il n’y a ni roi ni tyran qui puisse se lever contre vous, pour la défense* de ceux que vous avez châtiés.",
+        "NAB": "Nor can any king or prince confront you on behalf of those you have punished.",
+        "VAT_ES": "ni tampoco hay rey ni soberano que pueda enfrentarse contigo para defender a los que tú has castigado.",
+        "CEI": "Né un re né un tiranno potrebbe affrontarti in difesa di quelli che hai punito."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "δίκαιος δὲ ὢν δικαίως τὰ πάντα διέπεις, αὐτὸν τὸν μὴ ὀφείλοντα κολασθῆναι καταδικάσαι ἀλλότριον ἡγούμενος τῆς σῆς δυνάμεως.",
+        "VUL": "Cum ergo sis justus, juste omnia disponis ;/ ipsum quoque qui non debet puniri, condemnare,/ exterum æstimas a tua virtute./",
+        "SYN": "Будучи праведен, Ты всем управляешь праведно, почитая не свойственным Твоей силе осудить того, кто не заслуживает наказания.",
+        "NEO": "Mais, comme vous êtes juste, vous réglez tout avec justice, et vous regardez comme une chose contraire à votre puissance de condamner aussi celui qui ne mérite pas de châtiment.",
+        "NAB": "But as you are just, you govern all things justly; you regard it as unworthy of your power to punish one who has incurred no blame.",
+        "VAT_ES": "Como eres justo, riges el universo con justicia, y consideras incompatible con tu poder condenar a quien no merece ser castigado.",
+        "CEI": "Essendo giusto, governi tutto con giustizia. Condannare chi non merita il castigo lo consideri incompatibile con la tua potenza."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ἡ γὰρ ἰσχύς σου δικαιοσύνης ἀρχή, καὶ τὸ πάντων σε δεσπόζειν πάντων φείδεσθαι ποιεῖ·",
+        "VUL": "Virtus enim tua justitiæ initium est,/ et ob hoc quod Dominus es,/ omnibus te parcere facis./",
+        "SYN": "Ибо сила Твоя есть начало правды, и то самое, что Ты господствуешь над всеми, располагает Тебя щадить всех.",
+        "NEO": "Car votre puissance est le fondement de la justice, et c’est parce que vous êtes le Seigneur de tous que vous usez d’indulgence envers tous.+ 12:16 \\+it Et parce que vous êtes le Seigneur\\+it* etc. M. à m., \\+it Et être le Seigneur de tous vous les fait ménager tous\\+it*.*",
+        "NAB": "For your might is the source of justice; your mastery over all things makes you lenient to all.",
+        "VAT_ES": "Porque tu fuerza es el principio de tu justicia, y tu dominio sobre todas las cosas te hace indulgente con todos.",
+        "CEI": "La tua forza infatti è principio di giustizia; il tuo dominio universale ti rende indulgente con tutti."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "ἰσχὺν γὰρ ἐνδείκνυσαι ἀπιστούμενος ἐπὶ δυνάμεως τελειότητι, καὶ ἐν τοῖς εἰδόσι τὸ θράσος ἐξελέγχεις·",
+        "VUL": "Virtutem enim ostendis tu,/ qui non crederis esse in virtute consummatus,/ et horum qui te nesciunt audaciam traducis./",
+        "SYN": "Силу Твою Ты показываешь не верующим всемогуществу Твоему, и в не признающих Тебя обличаешь дерзость;",
+        "NEO": "C’est à ceux qui ne croient pas à votre toute-puissance que vous montrez votre force, et vous confondez l’audace de ceux qui la connaissent.+ 12:17 Verset difficile, sens incertain.*",
+        "NAB": "For you show your might when the perfection of your power is disbelieved; and in those who know you, you rebuke temerity.",
+        "VAT_ES": "Tú muestras tu fuerza cuando alguien no cree en la plenitud de tu poder, y confundes la temeridad de aquellos que la conocen.",
+        "CEI": "Mostri la forza se non si crede nella tua onnipotenza e reprimi l'insolenza in coloro che la conoscono."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "σὺ δὲ δεσπόζων ἰσχύος ἐν ἐπιεικείᾳ κρίνεις, καὶ μετὰ πολλῆς φειδοῦς διοικεῖς ἡμᾶς· πάρεστιν γάρ σοι ὅταν θέλῃς τὸ δύνασθαι.",
+        "VUL": "Tu autem dominator virtutis, cum tranquillitate judicas,/ et cum magna reverentia disponis nos :/ subest enim tibi, cum volueris posse.]",
+        "SYN": "но, обладая силою, Ты судишь снисходительно и управляешь нами с великою милостью, ибо могущество Твое всегда в Твоей воле.",
+        "NEO": "Maître de votre force, vous jugez avec douceur, et vous nous gouvernez avec une grande indulgence, car la puissance est avec vous quand vous le voulez.",
+        "NAB": "But though you are master of might, you judge with clemency, and with much lenience you govern us; for power, whenever you will, attends you.",
+        "VAT_ES": "Pero, como eres dueño absoluto de tu fuerza, juzgas con serenidad y nos gobiernas con gran indulgencia, porque con sólo quererlo puedes ejercer tu poder.",
+        "CEI": "Tu, padrone della forza, giudichi con mitezza; ci governi con molta indulgenza, perché il potere lo eserciti quando vuoi."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ἐδίδαξας δέ σου τὸν λαὸν διὰ τῶν τοιούτων ἔργων, ὅτι δεῖ τὸν δίκαιον εἶναι φιλάνθρωπον· καὶ εὐέλπιδας ἐποίησας τοὺς υἱούς σου, ὅτι διδοῖς ἐπὶ ἁμαρτήμασιν μετάνοιαν.",
+        "VUL": "[Docuisti autem populum tuum per talia opera,/ quoniam oportet justum esse et humanum ;/ et bonæ spei fecisti filios tuos,/ quoniam judicans das locum in peccatis pnitentiæ./",
+        "SYN": "Но такими делами Ты поучал народ Твой, что праведному должно быть человеколюбивым, и внушал сынам Твоим благую надежду, что Ты даешь время покаяния во грехах.",
+        "NEO": "En agissant ainsi, vous avez appris à votre peuple que le juste doit être humain, et vous avez inspiré à vos enfants la joyeuse espérance que, s’ils pèchent, vous leur accordez le temps* du repentir.",
+        "NAB": "And you taught your people, by these deeds, that those who are just must be kind; And you gave your sons good ground for hope that you would permit repentance for their sins.",
+        "VAT_ES": "Al obrar así, tú enseñaste a tu pueblo que el justo debe ser amigo de los hombres y colmaste a tus hijos de una feliz esperanza, porque, después del pecado, das lugar al arrepentimiento.",
+        "CEI": "Con tale modo di agire hai insegnato al tuo popolo che il giusto deve amare gli uomini; inoltre hai reso i tuoi figli pieni di dolce speranza perché tu concedi dopo i peccati la possibilità di pentirsi."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "εἰ γὰρ ἐχθροὺς παίδων σου καὶ ὀφειλομένους θανάτῳ μετὰ τοσαύτης ἐτιμώρησας προσοχῆς καὶ δεήσεως, δοὺς χρόνους καὶ τόπον δι’ ὧν ἀπαλλαγῶσι τῆς κακίας,",
+        "VUL": "Si enim inimicos servorum tuorum, et debitos morti,/ cum tanta cruciasti attentione,/ dans tempus et locum per quæ possent mutari a malitia :/",
+        "SYN": "Ибо, если врагов сынам Твоим и повинных смерти Ты наказывал с таким снисхождением и пощадою, давая им время и побуждение освободиться от зла,",
+        "NEO": "Si, en effet, vous avez puni, avec tant de ménagement et d’indulgence, les ennemis de vos serviteurs, bien qu’ils fussent dignes de mort, leur donnant le temps et l’occasion de se convertir de leur* malice,",
+        "NAB": "For these were enemies of your servants, doomed to death; yet, while you punished them with such solicitude and pleading, granting time and opportunity to abandon wickedness,",
+        "VAT_ES": "Si a los enemigos de tus hijos, que eran reos de muerte, los castigaste con tanta consideración y miramiento, dándoles el tiempo y el lugar para apartarse de su maldad,",
+        "CEI": "Se gente nemica dei tuoi figli e degna di morte tu hai punito con tanto riguardo e indulgenza, concedendole tempo e modo per ravvedersi dalla sua malvagità,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "μετὰ πόσης ἀκριβείας ἔκρινας τοὺς υἱούς σου, ὧν τοῖς πατράσιν ὅρκους καὶ συνθήκας ἔδωκας ἀγαθῶν ὑποσχέσεων;",
+        "VUL": "cum quanta diligentia judicasti filios tuos,/ quorum parentibus juramenta et conventiones dedisti bonarum promissionum !/",
+        "SYN": "то с каким вниманием Ты судил сынов Твоих, которых отцам Ты дал клятвы и заветы благих обетований!",
+        "NEO": "avec quelle circonspection jugez-vous vos enfants, dont les pères ont reçu de vous des serments et des alliances, jointes à de magnifiques promesses !",
+        "NAB": "With what exactitude you judged your sons, to whose fathers you gave the sworn covenants of goodly promises!",
+        "VAT_ES": "&iexcl;con cuántas más precauciones habrás juzgado a tus hijos, tú que con juramentos y alianzas, hiciste a sus padres tan magníficas promesas!",
+        "CEI": "con quanta attenzione hai castigato i tuoi figli, con i cui padri concludesti, giurando, alleanze di così buone promesse?"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ἡμᾶς οὖν παιδεύων τοὺς ἐχθροὺς ἡμῶν ἐν μυριότητι μαστιγοῖς, ἵνα σου τὴν ἀγαθότητα μεριμνῶμεν κρίνοντες, κρινόμενοι δὲ προσδοκῶμεν ἔλεος.",
+        "VUL": "Cum ergo das nobis disciplinam,/ inimicos nostros multipliciter flagellas,/ ut bonitatem tuam cogitemus judicantes,/ et cum de nobis judicatur, speremus misericordiam tuam./",
+        "SYN": "Итак, вразумляя нас, Ты наказываешь врагов наших тысячекратно, дабы мы, когда судим, помышляли о Твоей благости и, когда бываем судимы, ожидали помилования.",
+        "NEO": "Quand vous nous corrigez, vous flagellez nos ennemis mille fois plus fort, pour nous apprendre, quand nous jugeons, à songer à votre bonté, et, quand nous sommes jugés, à espérer en votre miséricorde.",
+        "NAB": "Us, therefore, you chastise and our enemies with a thousand blows you punish, that we may think earnestly of your goodness when we judge, and, when being judged, may look for mercy.",
+        "VAT_ES": "Así, cuando castigas a nuestros enemigos con moderación, nos instruyes a fin de que, al juzgar a los otros, recordemos tu bondad y, al ser juzgados, contemos con tu misericordia.;",
+        "CEI": "Mentre dunque ci correggi, tu colpisci i nostri nemici in svariatissimi modi, perché nel giudicare riflettiamo sulla tua bontà e speriamo nella misericordia, quando siamo giudicati. Ancora gli Egiziani. La loro punizione è progressiva"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "ὅθεν καὶ τοὺς ἐν ἀφροσύνῃ ζωῆς βιώσαντας ἀδίκους διὰ τῶν ἰδίων ἐβασάνισας βδελυγμάτων.",
+        "VUL": "Unde et illis qui in vita sua insensate et injuste vixerunt,/ per hæc quæ coluerunt dedisti summa tormenta./",
+        "SYN": "Посему-то и тех нечестивых, которые проводили жизнь в неразумии, Ты истязал собственными их мерзостями,",
+        "NEO": "Voilà pourquoi vous avez tourmenté par leurs propres abominations, les injustes qui passaient leur vie dans la folie.+ 12:23 \\+it Par leurs propres abominations\\+it*, faisant servir à leur tourment les créatures qu’ils adoraient : les animaux, le Nil, honoré comme un dieu, etc. Allusion aux plaies d’Égypte.*",
+        "NAB": "Hence those unjust also, who lived a life of folly, you tormented through their own abominations.",
+        "VAT_ES": "Por eso, a los que en su locura habían llevado una vida injusta, los atormentaste con sus propias abominaciones,",
+        "CEI": "Perciò quanti vissero ingiustamente con stoltezza tu li hai tormentati con i loro stessi abomini."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "καὶ γὰρ τῶν πλάνης ὁδῶν μακρότερον ἐπλανήθησαν, θεοὺς ὑπολαμβάνοντες τὰ καὶ ἐν ζῴοις τῶν ἐχθρῶν ἄτιμα, νηπίων δίκην ἀφρόνων ψευσθέντες.",
+        "VUL": "Etenim in erroris via diutius erraverunt,/ deos æstimantes hæc quæ in animalibus sunt supervacua,/ infantium insensatorum more viventes./",
+        "SYN": "ибо они очень далеко уклонились на путях заблуждения, обманываясь, подобно неразумным детям, и почитая за богов тех из животных, которые и у врагов были презренными.",
+        "NEO": "Car ils s’étaient enfoncés si loin dans les voies de l’erreur, qu’ils regardaient comme des dieux les plus vils des animaux, s’étant laissé tromper comme des enfants sans raison.",
+        "NAB": "For they went far astray in the paths of error, taking for gods the worthless and disgusting among beasts, deceived like senseless infants.",
+        "VAT_ES": "porque se habían extraviado demasiado lejos, por los caminos del error, tomando por dioses a los animales más viles y despreciables y dejándose engañar como niños sin juicio.",
+        "CEI": "Essi s'erano allontanati troppo sulla via dell'errore, ritenendo dei i più abietti e i più ripugnanti animali, ingannati come bambini senza ragione."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "διὰ τοῦτο ὡς παισὶν ἀλογίστοις τὴν κρίσιν εἰς ἐμπαιγμὸν ἔπεμψας·",
+        "VUL": "Propter hoc tamquam pueris insensatis judicium in derisum dedisti./",
+        "SYN": "Посему, как неразумным детям, в посмеяние послал Ты им и наказание.",
+        "NEO": "Aussi comme à des enfants sans raison, leur avez-vous envoyé d’abord* un châtiment dérisoire.",
+        "NAB": "Therefore as though upon unreasoning children, you sent your judgment on them as a mockery;",
+        "VAT_ES": "Entonces, como a niños que no razonan, les enviaste un castigo irrisorio.",
+        "CEI": "Per questo, come a fanciulli irragionevoli, hai mandato loro un castigo per derisione."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "οἱ δὲ παιγνίοις ἐπιτιμήσεως μὴ νουθετηθέντες ἀξίαν θεοῦ κρίσιν πειράσουσιν.",
+        "VUL": "Qui autem ludibriis et increpationibus non sunt correcti,/ dignum Dei judicium experti sunt./",
+        "SYN": "Но, не вразумившись обличительным посмеянием, они испытывали заслуженный суд Божий.",
+        "NEO": "Mais ceux qu’une correction dérisoire n’a pas amendés, subiront un châtiment digne de Dieu.",
+        "NAB": "But they who took no heed of punishment which was but child's play were to experience a condemnation worthy of God.",
+        "VAT_ES": "Pero aquellos que no se enmendaron con esa corrección irrisoria soportarán un juicio digno de Dios.",
+        "CEI": "Ma chi non si lascia correggere da castighi di derisione, sperimenterà un giudizio degno di Dio."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "ἐφ’ οἷς γὰρ αὐτοὶ πάσχοντες ἠγανάκτουν, ἐπὶ τούτοις οὓς ἐδόκουν θεούς, ἐν αὐτοῖς κολαζόμενοι, ἰδόντες ὃν πάλαι ἠρνοῦντο εἰδέναι θεὸν ἐπέγνωσαν ἀληθῆ· διὸ καὶ τὸ τέρμα τῆς καταδίκης ἐπ’ αὐτοὺς ἐπῆλθεν.",
+        "VUL": "In quibus enim patientes indignabantur/ per hæc quos putabant deos,/ in ipsis cum exterminarentur videntes,/ illum quem olim negabant se nosse, verum Deum agnoverunt ;/ propter quod et finis condemnationis eorum venit super illos.]",
+        "SYN": "Ибо, что они сами терпели с досадою, то же увидев на тех, которых считали богами и чрез которых были наказываемы, они познали Бога истинного, Которого прежде отрекались знать;",
+        "NEO": "Châtiés par ceux qu’ils prenaient pour des dieux, ils furent exaspérés de leurs souffrances, et, voyant Celui qu’ils avaient autrefois refusé de connaître, ils le reconnurent pour le Dieu véritable ; c’est pourquoi la suprême condamnation tomba sur eux.",
+        "NAB": "For in the things through which they suffered distress, since they were tortured by the very things they deemed gods, They saw and recognized the true God whom before they had refused to know; with this, their final condemnation came upon them.",
+        "VAT_ES": "Exasperados por los animales que los hacían sufrir y viéndose castigados por aquellos a quienes tenían por dioses, reconocieron como Dios verdadero al que antes se negaban a conocer. Por eso se abatió sobre ellos todo el rigor de la condena. Es así, que cayó sobre ellos el peor de los castigos.",
+        "CEI": "Infatti, soffrendo per questi animali, si sdegnavano, perché puniti con gli stessi esseri che stimavano dei, e capirono e riconobbero il vero Dio, che prima non avevano voluto conoscere. Per questo si abbatté su di loro il supremo dei castighi."
+      }
+    }
+  }
+}

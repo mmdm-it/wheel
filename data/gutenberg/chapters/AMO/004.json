@@ -1,0 +1,236 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "AMO_004",
+  "book_key": "AMO",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שִׁמְע֞וּ הַ/דָּבָ֣ר הַ/זֶּ֗ה פָּר֤וֹת הַ/בָּשָׁן֙ אֲשֶׁר֙ בְּ/הַ֣ר שֹֽׁמְר֔וֹן הָ/עֹשְׁק֣וֹת דַּלִּ֔ים הָ/רֹצְצ֖וֹת אֶבְיוֹנִ֑ים הָ/אֹמְרֹ֥ת לַ/אֲדֹֽנֵי/הֶ֖ם הָבִ֥יאָ/ה וְ/נִשְׁתֶּֽה׃",
+        "VUL": "[Audite verbum hoc, vaccæ pingues,/ quæ estis in monte Samariæ,/ quæ calumniam facitis egenis/ et confringitis pauperes ;/ quæ dicitis dominis vestris : Afferte, et bibemus./",
+        "SYN": "Слушайте слово сие, телицы Васанские, которые на горе Самарийской, вы, притесняющие бедных, угнетающие нищих, говорящие господам своим: \"подавай, и мы будем пить!\"",
+        "NEO": "Écoutez cette parole, vaches de Basan, qui êtes sur la montagne de Samarie, vous qui opprimez les faibles, et qui foulez les indigents, vous qui dites à vos maris : « Apportez et buvons ! »",
+        "NAB": "Hear this word, women of the mountain of Samaria, you cows of Bashan, You who oppress the weak and abuse the needy; Who say to your lords, \"Bring drink for us!\"",
+        "VAT_ES": "Escuchen esta palabra, vacas de Basán, que están sobre las montañas de Samaría, ustedes, que oprimen a los débiles, maltratan a los indigentes y dicen a sus maridos: «&iexcl;Trae de beber!».",
+        "CEI": "Ascoltate queste parole, o vacche di Basàn, che siete sul monte di Samaria, che opprimete i deboli, schiacciate i poveri e dite ai vostri mariti: Porta qua, beviamo!"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "נִשְׁבַּ֨ע אֲדֹנָ֤/י יְהוִה֙ בְּ/קָדְשׁ֔/וֹ כִּ֛י הִנֵּ֥ה יָמִ֖ים בָּאִ֣ים עֲלֵי/כֶ֑ם וְ/נִשָּׂ֤א אֶתְ/כֶם֙ בְּ/צִנּ֔וֹת וְ/אַחֲרִיתְ/כֶ֖ן בְּ/סִיר֥וֹת דּוּגָֽה׃",
+        "VUL": "Juravit Dominus Deus in sancto suo,/ quia ecce dies venient super vos,/ et levabunt vos in contis,/ et reliquias vestras in ollis ferventibus./",
+        "SYN": "Клялся Господь Бог святостью Своею, что вот, придут на вас дни, когда повлекут вас крюками и остальных ваших удами.",
+        "NEO": "Le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** a juré par sa sainteté : Voici que des jours viendront sur vous où l’on vous enlèvera avec des crocs, et votre postérité avec des harpons.",
+        "NAB": "The Lord GOD has sworn by his holiness: Truly the days are coming upon you When they shall drag you away with hooks, the last of you with fishhooks;",
+        "VAT_ES": "El Señor ha jurado por su santidad: Sí, llegarán días sobre ustedes en que las levantarán con garfios, y hasta a la última de ustedes, con arpones.",
+        "CEI": "Il Signore Dio ha giurato per la sua santità: Ecco, verranno per voi giorni, in cui sarete prese con ami e le rimanenti di voi con arpioni da pesca."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וּ/פְרָצִ֥ים תֵּצֶ֖אנָה אִשָּׁ֣ה נֶגְדָּ֑/הּ וְ/הִשְׁלַכְתֶּ֥נָה הַ/הַרְמ֖וֹנָ/ה נְאֻם יְהוָֽה׃",
+        "VUL": "Et per aperturas exibitis altera contra alteram,/ et projiciemini in Armon,/ dicit Dominus.]",
+        "SYN": "И сквозь проломы стен выйдете, каждая, как случится, и бросите все убранство чертогов, говорит Господь.",
+        "NEO": "Vous sortirez par les brèches, chacune devant soi, et vous serez jetées en Armon, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "You shall go out through the breached walls each by the most direct way, And you shall be cast into the mire, says the LORD.",
+        "VAT_ES": "Saldrán por las brechas, una tras otra, y serán arrojadas hacia el Hermón –oráculo del Señor–.",
+        "CEI": "Uscirete per le brecce, una dopo l'altra e sarete cacciate oltre l'Ermon, oracolo del Signore."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "בֹּ֤אוּ בֵֽית אֵל֙ וּ/פִשְׁע֔וּ הַ/גִּלְגָּ֖ל הַרְבּ֣וּ לִ/פְשֹׁ֑עַ וְ/הָבִ֤יאוּ לַ/בֹּ֨קֶר֙ זִבְחֵי/כֶ֔ם לִ/שְׁלֹ֥שֶׁת יָמִ֖ים מַעְשְׂרֹֽתֵי/כֶֽם׃",
+        "VUL": "[Venite ad Bethel, et impie agite ;/ ad Galgalam, et multiplicate prævaricationem :/ et afferte mane victimas vestras,/ tribus diebus decimas vestras./",
+        "SYN": "Идите в Вефиль - и грешите, в Галгал - и умножайте преступления; приносите жертвы ваши каждое утро, десятины ваши хотя через каждые три дня.",
+        "NEO": "Venez à Béthel et péchez, à Galgala, et multipliez vos péchés ! Amenez chaque matin vos sacrifices, et tous les trois jours vos dîmes !",
+        "NAB": "Come to Bethel and sin, to Gilgal, and sin the more; Each morning bring your sacrifices, every third day, your tithes;",
+        "VAT_ES": "&iexcl;Vayan a Betel, y pequen, a Guilgal, y pequen más todavía! Ofrezcan sus sacrificios por la mañana, y al tercer día sus diezmos;",
+        "CEI": "Andate pure a Betel e peccate! Offrite ogni mattina i vostri sacrifici e ogni tre giorni le vostre decime."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/קַטֵּ֤ר מֵֽ/חָמֵץ֙ תּוֹדָ֔ה וְ/קִרְא֥וּ נְדָב֖וֹת הַשְׁמִ֑יעוּ כִּ֣י כֵ֤ן אֲהַבְתֶּם֙ בְּנֵ֣י יִשְׂרָאֵ֔ל נְאֻ֖ם אֲדֹנָ֥/י יְהוִֽה׃",
+        "VUL": "Et sacrificate de fermentato laudem,/ et vocate voluntarias oblationes, et annuntiate ;/ sic enim voluistis, filii Israël,/ dicit Dominus Deus./",
+        "SYN": "Приносите в жертву благодарения квасное, провозглашайте о добровольных приношениях ваших и разглашайте о них, ибо это вы любите, сыны Израилевы, говорит Господь Бог.",
+        "NEO": "Faites fumer l’oblation de louange sans levain ; annoncez des dons volontaires, publiez-les ! Car c’est cela que vous aimez, enfants d’Israël, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Burn leavened food as a thanksgiving sacrifice, proclaim publicly your freewill offerings, For so you love to do, O men of Israel, says the Lord GOD.",
+        "VAT_ES": "quemen masa fermentada en acción de gracias, proclamen públicamente sus ofrendas voluntarias, ya que es eso lo que les gusta, israelitas, –oráculo del Señor–.",
+        "CEI": "Offrite anche sacrifici di grazie con lievito e proclamate ad alta voce le offerte spontanee perchè così vi piace di fare, o Israeliti, dice il Signore."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/גַם אֲנִי֩ נָתַ֨תִּי לָ/כֶ֜ם נִקְי֤וֹן שִׁנַּ֨יִם֙ בְּ/כָל עָ֣רֵי/כֶ֔ם וְ/חֹ֣סֶר לֶ֔חֶם בְּ/כֹ֖ל מְקוֹמֹֽתֵי/כֶ֑ם וְ/לֹֽא שַׁבְתֶּ֥ם עָדַ֖/י נְאֻם יְהוָֽה׃",
+        "VUL": "Unde et ego dedi vobis stuporem dentium in cunctis urbibus vestris,/ et indigentiam panum in omnibus locis vestris ;/ et non estis reversi ad me,/ dicit Dominus./",
+        "SYN": "За то и дал Я вам голые зубы во всех городах ваших и недостаток хлеба во всех селениях ваших; но вы не обратились ко Мне, говорит Господь.",
+        "NEO": "Aussi je vous ai procuré la netteté des dents en toutes vos villes, et la disette de pain dans toutes vos demeures ; et vous n’êtes pas revenus à moi, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Though I have made your teeth clean of food in all your cities, and have made bread scarce in all your dwellings, Yet you returned not to me, says the LORD.",
+        "VAT_ES": "Yo les hice pasar hambre en todas sus ciudades, y los privé de pan en todas sus poblaciones, &iexcl;pero ustedes no han vuelto a mí! –oráculo del Señor–.",
+        "CEI": "Eppure, vi ho lasciato a denti asciutti in tutte le vostre città e con mancanza di pane in tutti i vostri villaggi: e non siete ritornati a me, dice il Signore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/גַ֣ם אָנֹכִי֩ מָנַ֨עְתִּי מִ/כֶּ֜ם אֶת הַ/גֶּ֗שֶׁם בְּ/ע֨וֹד שְׁלֹשָׁ֤ה חֳדָשִׁים֙ לַ/קָּצִ֔יר וְ/הִמְטַרְתִּי֙ עַל עִ֣יר אֶחָ֔ת וְ/עַל עִ֥יר אַחַ֖ת לֹ֣א אַמְטִ֑יר חֶלְקָ֤ה אַחַת֙ תִּמָּטֵ֔ר וְ/חֶלְקָ֛ה אֲשֶֽׁר לֹֽא תַמְטִ֥יר עָלֶ֖י/הָ תִּיבָֽשׁ׃",
+        "VUL": "Ego quoque prohibui a vobis imbrem,/ cum adhuc tres menses superessent usque ad messem :/ et plui super unam civitatem,/ et super alteram civitatem non plui ;/ pars una compluta est,/ et pars super quam non plui, aruit./",
+        "SYN": "И удерживал от вас дождь за три месяца до жатвы; проливал дождь на один город, а на другой город не проливал дождя; один участок напояем был дождем, а другой, не окропленный дождем, засыхал.",
+        "NEO": "Aussi je vous ai retenu la pluie, lorsqu’il y avait encore trois mois avant la moisson ; j’ai fait pleuvoir sur une ville, et je ne faisais pas pleuvoir sur une autre ville ; une région était arrosée par la pluie, et une autre région, sur laquelle il ne pleuvait pas, se desséchait.",
+        "NAB": "Though I also withheld the rain from you when the harvest was still three months away; I sent rain upon one city but not upon another; One field was watered by rain, but another without rain dried up;",
+        "VAT_ES": "Yo les negué la lluvia tres meses antes de la cosecha; hice llover sobre una ciudad y sobre la otra no; un campo recibía la lluvia y el campo donde no llovía, se secaba;",
+        "CEI": "Vi ho pure rifiutato la pioggia tre mesi prima della mietitura; facevo piovere sopra una città e non sopra l'altra; un campo era bagnato di pioggia, mentre l'altro, su cui non pioveva, seccava;"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/נָע֡וּ שְׁתַּיִם֩ שָׁלֹ֨שׁ עָרִ֜ים אֶל עִ֥יר אַחַ֛ת לִ/שְׁתּ֥וֹת מַ֖יִם וְ/לֹ֣א יִשְׂבָּ֑עוּ וְ/לֹֽא שַׁבְתֶּ֥ם עָדַ֖/י נְאֻם יְהוָֽה׃",
+        "VUL": "Et venerunt duæ et tres civitates ad unam civitatem/ ut biberent aquam, et non sunt satiatæ ;/ et non redistis ad me,/ dicit Dominus./",
+        "SYN": "И сходились два-три города в один город, чтобы напиться воды, и не могли досыта напиться; но и тогда вы не обратились ко Мне, говорит Господь.",
+        "NEO": "Deux, trois villes couraient à une autre ville, pour boire de l’eau, et ne se désaltéraient pas ; et vous n’êtes pas revenus à moi, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Though two or three cities staggered to one city for water that did not quench their thirst; Yet you returned not to me, says the LORD.",
+        "VAT_ES": "dos y tres ciudades se arrastraban hasta la otra ciudad, para beber agua, y no calmaban su sed; &iexcl;pero ustedes no han vuelto a mí! –oráculo del Señor–.",
+        "CEI": "due, tre città si muovevano titubanti verso un'altra città per bervi acqua, senza potersi dissetare: e non siete ritornati a me, dice il Signore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הִכֵּ֣יתִי אֶתְ/כֶם֮ בַּ/שִּׁדָּפ֣וֹן וּ/בַ/יֵּרָקוֹן֒ הַרְבּ֨וֹת גַּנּוֹתֵי/כֶ֧ם וְ/כַרְמֵי/כֶ֛ם וּ/תְאֵנֵי/כֶ֥ם וְ/זֵיתֵי/כֶ֖ם יֹאכַ֣ל הַ/גָּזָ֑ם וְ/לֹֽא שַׁבְתֶּ֥ם עָדַ֖/י נְאֻם יְהוָֽה׃",
+        "VUL": "Percussi vos in vento urente, et in aurugine :/ multitudinem hortorum vestrorum et vinearum vestrarum,/ oliveta vestra et ficeta vestra comedit eruca :/ et non redistis ad me,/ dicit Dominus./",
+        "SYN": "Я поражал вас ржою и блеклостью хлеба; множество садов ваших и виноградников ваших, и смоковниц ваших, и маслин ваших пожирала гусеница, - и при всем том вы не обратились ко Мне, говорит Господь.",
+        "NEO": "Je vous ai frappés par la rouille et la nielle ; vos nombreux jardins, vos vignes, vos figuiers et vos oliviers, la sauterelle les a dévorés ; et vous n’êtes pas revenus à moi, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "I struck you with blight and searing wind; your many gardens and vineyards, your fig trees and olive trees the locust devoured; Yet you returned not to me, says the LORD.",
+        "VAT_ES": "Yo los castigué con la seguía y el pulgón, devasté sus huertas y sus viñas; la langosta devoró sus higueras y olivares, &iexcl;pero ustedes no han vuelto a mí! –oráculo del Señor–.",
+        "CEI": "Vi ho colpiti con ruggine e carbonchio, vi ho inaridito i giardini e le vigne; i fichi, gli oliveti li ha divorati la cavalletta: e non siete ritornati a me, dice il Signore."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "שִׁלַּ֨חְתִּי בָ/כֶ֥ם דֶּ֨בֶר֙ בְּ/דֶ֣רֶךְ מִצְרַ֔יִם הָרַ֤גְתִּי בַ/חֶ֨רֶב֙ בַּח֣וּרֵי/כֶ֔ם עִ֖ם שְׁבִ֣י סֽוּסֵי/כֶ֑ם וָ/אַעֲלֶ֞ה בְּאֹ֤שׁ מַחֲנֵי/כֶם֙ וּֽ/בְ/אַפְּ/כֶ֔ם וְ/לֹֽא שַׁבְתֶּ֥ם עָדַ֖/י נְאֻם יְהוָֽה׃",
+        "VUL": "Misi in vos mortem in via Ægypti ;/ percussi in gladio juvenes vestros,/ usque ad captivitatem equorum vestrorum,/ et ascendere feci putredinem castrorum vestrorum in nares vestras :/ et non redistis ad me,/ dicit Dominus./",
+        "SYN": "Посылал Я на вас моровую язву, подобную Египетской, убивал мечом юношей ваших, отводя коней в плен, так что смрад от станов ваших поднимался в ноздри ваши; и при всем том вы не обратились ко Мне, говорит Господь.",
+        "NEO": "J’ai envoyé parmi vous la peste, à la manière d’Égypte ; j’ai tué par l’épée vos jeunes gens, pendant que vos chevaux étaient capturés ; j’ai fait monter la puanteur de votre camp, et elle est arrivée à vos narines ; et vous n’êtes pas revenus à moi, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "I sent upon you a pestilence like that of Egypt, and with the sword I slew your young men; Your horses I let be captured, to your nostrils I brought the stench of your camps; Yet you returned not to me, says the LORD.",
+        "VAT_ES": "Yo desencadené la peste contra ustedes, como la peste de Egipto; maté con la espada a sus jóvenes, mientras sus caballos eran capturados; hice subir hasta sus narices el hedor de sus campamentos, &iexcl;pero ustedes no han vuelto a mí! –oráculo del Señor–.",
+        "CEI": "Ho mandato contro di voi la peste, come un tempo contro l'Egitto; ho ucciso di spada i vostri giovani, mentre i vostri cavalli diventavano preda; ho fatto salire il fetore dei vostri campi fino alle vostre narici: e non siete ritornati a me, dice il Signore."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "הָפַ֣כְתִּי בָ/כֶ֗ם כְּ/מַהְפֵּכַ֤ת אֱלֹהִים֙ אֶת סְדֹ֣ם וְ/אֶת עֲמֹרָ֔ה וַ/תִּהְי֕וּ כְּ/א֖וּד מֻצָּ֣ל מִ/שְׂרֵפָ֑ה וְ/לֹֽא שַׁבְתֶּ֥ם עָדַ֖/י נְאֻם יְהוָֽה׃",
+        "VUL": "Subverti vos sicut subvertit Deus Sodomam et Gomorrham,/ et facti estis quasi torris raptus ab incendio :/ et non redistis ad me,/ dicit Dominus./",
+        "SYN": "Производил Я среди вас разрушения, как разрушил Бог Содом и Гоморру, и вы были выхвачены, как головня из огня, - и при всем том вы не обратились ко Мне, говорит Господь.",
+        "NEO": "J’ai causé en vous des bouleversements, comme Dieu a bouleversé Sodome et Gomorrhe, et vous avez été comme un tison arraché de l’incendie ; et vous n’êtes pas revenus à moi, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "I brought upon you such upheaval as when God overthrew Sodom and Gomorrah: you were like a brand plucked from the fire; Yet you returned not to me, says the LORD.",
+        "VAT_ES": "Yo les envié una catástrofe como la de Sodoma y Gomorra, y ustedes fueron como un tizón salvado del incendio, &iexcl;pero ustedes no han vuelto a mí! –oráculo del Señor–.",
+        "CEI": "Vi ho travolti come Dio aveva travolto Sòdoma e Gomorra; eravate come un tizzone strappato da un incendio: e non siete ritornati a me dice il Signore."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "לָ/כֵ֕ן כֹּ֥ה אֶעֱשֶׂה לְּ/ךָ֖ יִשְׂרָאֵ֑ל עֵ֚קֶב כִּֽי זֹ֣את אֶֽעֱשֶׂה לָּ֔/ךְ הִכּ֥וֹן לִ/קְרַאת אֱלֹהֶ֖י/ךָ יִשְׂרָאֵֽל׃",
+        "VUL": "Quapropter hæc faciam tibi, Israël :/ postquam autem hæc fecero tibi,/ præparare in occursum Dei tui, Israël./",
+        "SYN": "Посему так поступлю Я с тобою, Израиль; и как Я так поступлю с тобою, то приготовься к сретению Бога твоего, Израиль,",
+        "NEO": "C’est pourquoi, ainsi te ferai-je, Israël ! Puisque je te ferai cela, prépare-toi à la rencontre de ton Dieu, Israël !",
+        "NAB": "So now I will deal with you in my own way, O Israel! and since I will deal thus with you, prepare to meet your God, O Israel:",
+        "VAT_ES": "Por eso, mira cómo voy a tratarte, Israel; y ya que te voy a tratar así, prepárate a enfrentarte con tu Dios, Israel.",
+        "CEI": "Perciò ti tratterò così, Israele! Poiché questo devo fare di te, prepàrati all'incontro con il tuo Dio, o Israele!"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כִּ֡י הִנֵּה֩ יוֹצֵ֨ר הָרִ֜ים וּ/בֹרֵ֣א ר֗וּחַ וּ/מַגִּ֤יד לְ/אָדָם֙ מַה שֵּׂח֔/וֹ עֹשֵׂ֥ה שַׁ֨חַר֙ עֵיפָ֔ה וְ/דֹרֵ֖ךְ עַל בָּ֣מֳתֵי אָ֑רֶץ יְהוָ֥ה אֱלֹהֵֽי צְבָא֖וֹת שְׁמֽ/וֹ׃",
+        "VUL": "Quia ecce formans montes,/ et creans ventum,/ et annuntians homini eloquium suum,/ faciens matutinam nebulam,/ et gradiens super excelsa terræ :/ Dominus Deus exercituum nomen ejus.]",
+        "SYN": "ибо вот Он, Который образует горы, и творит ветер, и объявляет человеку намерения его, утренний свет обращает в мрак, и шествует превыше земли; Господь Бог Саваоф - имя Ему.",
+        "NEO": "Car c’est lui qui a formé les montagnes, et qui a créé le vent, qui fait connaître à l’homme quelle est sa pensée, qui fait de l’aurore les ténèbres, et qui marche sur les sommets de la terre ! \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu des armées, est son nom.",
+        "NAB": "Him who formed the mountains, and created the wind, and declares to man his thoughts; Who made the dawn and the darkness, and strides upon the heights of the earth: The LORD, the God of hosts by name.",
+        "VAT_ES": "Porque el que forma las montañas y crea el viento, el que descubre al hombre cuál es sus designio, el que hace la aurora y las tinieblas, el que camina sobre las alturas de la tierra, se llama «Señor, Dios de los ejércitos».",
+        "CEI": "Ecco colui che forma i monti e crea i venti, che manifesta all'uomo qual è il suo pensiero, che fa l'alba e le tenebre e cammina sulle alture della terra, Signore, Dio degli eserciti è il suo nome."
+      }
+    }
+  }
+}

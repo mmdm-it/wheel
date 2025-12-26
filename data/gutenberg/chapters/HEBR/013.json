@@ -1,0 +1,430 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "HEBR_013",
+  "book_key": "HEBR",
+  "sequence": 13,
+  "chapter_in": {
+    "MT": 13,
+    "VUL": 13,
+    "LXX": 13
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Ἡ φιλαδελφία μενέτω.",
+        "VUL": "Caritas fraternitatis maneat in vobis,",
+        "SYN": "Братолюбие _между_ _вами_ да пребывает.",
+        "NEO": "Persévérez dans l’amour fraternel.",
+        "NAB": "Let mutual love continue.",
+        "VAT_ES": "Santiago, servidor de Dios y del Señor Jesucristo, saluda a las doce tribus de la Dispersión.",
+        "CEI": "Io, il presbitero, al carissimo Gaio, che amo nella verità."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Τῆς φιλοξενίας μὴ ἐπιλανθάνεσθε· διὰ ταύτης γὰρ ἔλαθόν τινες ξενίσαντες ἀγγέλους.",
+        "VUL": "et hospitalitatem nolite oblivisci : per hanc enim latuerunt quidam, angelis hospitio receptis.",
+        "SYN": "Страннолюбия не забывайте, ибо через него некоторые, не зная, оказали гостеприимство Ангелам.",
+        "NEO": "N’oubliez pas l’hospitalité ; quelques-uns en la pratiquant ont, à leur insu, logé des anges.",
+        "NAB": "Do not neglect hospitality, for through it some have unknowingly entertained angels.",
+        "VAT_ES": "Hermanos, alégrense profundamente cuando se vean sometidos a cualquier clase de pruebas,",
+        "CEI": "Carissimo, faccio voti che tutto vada bene e che tu sia in buona salute, come va bene per la tua anima."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Μιμνῄσκεσθε τῶν δεσμίων, ὡς συνδεδεμένοι· τῶν κακουχουμένων, ὡς καὶ αὐτοὶ ὄντες ἐν σώματι.",
+        "VUL": "Mementote vinctorum, tamquam simul vincti : et laborantium, tamquam et ipsi in corpore morantes.",
+        "SYN": "Помните узников, как бы и вы с ними были в узах, и страждущих, как и сами находитесь в теле.",
+        "NEO": "Souvenez-vous des prisonniers, comme si vous étiez aussi prisonniers ; et de ceux qui sont maltraités, comme étant vous aussi dans un corps.",
+        "NAB": "Be mindful of prisoners as if sharing their imprisonment, and of the ill-treated as of yourselves, for you also are in the body.",
+        "VAT_ES": "sabiendo que la fe, al ser probada, produce la paciencia.",
+        "CEI": "Molto infatti mi sono rallegrato quando sono giunti alcuni fratelli e hanno reso testimonianza che tu sei verace in quanto tu cammini nella verità."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Τίμιος ὁ γάμος ἐν πᾶσιν, καὶ ἡ κοίτη ἀμίαντος· πόρνους δὲ καὶ μοιχοὺς κρινεῖ ὁ θεός.",
+        "VUL": "Honorabile connubium in omnibus, et thorus immaculatus. Fornicatores enim, et adulteros judicabit Deus.",
+        "SYN": "Брак у всех _да_ _будет_ честен и ложе непорочно; блудников же и прелюбодеев судит Бог.",
+        "NEO": "Que le mariage soit honoré de tous, et le lit conjugal exempt de souillure, car Dieu condamnera les impudiques et les adultères.",
+        "NAB": "Let marriage be honored among all and the marriage bed be kept undefiled, for God will judge the immoral and adulterers.",
+        "VAT_ES": "Y la paciencia debe ir acompañada de obras perfectas, a fin de que ustedes lleguen a la perfección y a la madurez, sin que les falte nada.",
+        "CEI": "Non ho gioia più grande di questa, sapere che i miei figli camminano nella verità."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ἀφιλάργυρος ὁ τρόπος, ἀρκούμενοι τοῖς παροῦσιν· αὐτὸς γὰρ εἴρηκεν, Οὐ μή σε ἀνῶ, οὐδ’ οὐ μή σε ἐγκαταλείπω.",
+        "VUL": "Sint mores sine avaritia, contenti præsentibus : ipse enim dixit : Non te deseram, neque derelinquam :",
+        "SYN": "Имейте нрав несребролюбивый, довольствуясь тем, что есть. Ибо Сам сказал: не оставлю тебя и не покину тебя,",
+        "NEO": "Que votre conduite soit exempte d’avarice, vous contentant de ce que vous avez ; car Dieu lui-même a dit : « Je ne te délaisserai pas et ne t’abandonnerai pas » ;",
+        "NAB": "Let your life be free from love of money but be content with what you have, for he has said, \"I will never forsake you or abandon you.\"",
+        "VAT_ES": "Si a alguno de ustedes le falta sabiduría, que la pida a Dios, y la recibirá, porque él la da a todos generosamente, sin exigir nada en cambio.",
+        "CEI": "Carissimo, tu ti comporti fedelmente in tutto ciò che fai in favore dei fratelli, benché forestieri."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ὥστε θαρροῦντας ἡμᾶς λέγειν, Κύριος ἐμοὶ βοηθός, καὶ οὐ φοβηθήσομαι τί ποιήσει μοι ἄνθρωπος.",
+        "VUL": "ita ut confidenter dicamus : Dominus mihi adjutor : non timebo quid faciat mihi homo.",
+        "SYN": "так что мы смело говорим: Господь мне помощник, и не убоюсь: что сделает мне человек?",
+        "NEO": "de sorte que nous pouvons dire en toute assurance : « Le Seigneur est mon secours, je ne craindrai rien ; que pourraient me faire les hommes ? »",
+        "NAB": "Thus we may say with confidence: \"The Lord is my helper, (and) I will not be afraid. What can anyone do to me?\"",
+        "VAT_ES": "Pero que pida con fe, sin vacilar, porque el que vacila se parece a las olas del mar levantadas y agitadas por el viento.",
+        "CEI": "Essi hanno reso testimonianza della tua carità davanti alla Chiesa, e farai bene a provvederli nel viaggio in modo degno di Dio,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "¶Μνημονεύετε τῶν ἡγουμένων ὑμῶν, οἵτινες ἐλάλησαν ὑμῖν τὸν λόγον τοῦ θεοῦ· ὧν ἀναθεωροῦντες τὴν ἔκβασιν τῆς ἀναστροφῆς, μιμεῖσθε τὴν πίστιν.",
+        "VUL": "Mementote præpositorum vestrorum, qui vobis locuti sunt verbum Dei : quorum intuentes exitum conversationis, imitamini fidem.",
+        "SYN": "Поминайте наставников ваших, которые проповедывали вам слово Божие, и, взирая на кончину их жизни, подражайте вере их.",
+        "NEO": "Souvenez-vous de ceux qui vous conduisent, qui vous ont annoncé la parole de Dieu ; et considérant quelle a été l’issue de leur vie, imitez leur foi.+ 13:7 XIII, 7. M. à m. conducteurs, les chefs spirituels de l’Église de Jérusalem, apôtres, anciens, diacres, qui étaient déjà morts, par ex. S. Étienne, S. Jacques le frère de S. Jean, et S. Jacques, évêque de Jérusalem.*",
+        "NAB": "Remember your leaders who spoke the word of God to you. Consider the outcome of their way of life and imitate their faith.",
+        "VAT_ES": "El que es así no espere recibir nada del Señor,",
+        "CEI": "perché sono partiti per amore del nome di Cristo, senza accettare nulla dai pagani."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἰησοῦς χριστὸς χθὲς καὶ σήμερον ὁ αὐτός, καὶ εἰς τοὺς αἰῶνας.",
+        "VUL": "Jesus Christus heri, et hodie : ipse et in sæcula.",
+        "SYN": "Иисус Христос вчера и сегодня и во веки Тот же.",
+        "NEO": "Jésus-Christ est le même hier et aujourd’hui ; il le sera éternellement.",
+        "NAB": "Jesus Christ is the same yesterday, today, and forever.",
+        "VAT_ES": "ya que es un hombre interiormente dividido e inconstante en su manera de proceder.",
+        "CEI": "Noi dobbiamo perciò accogliere tali persone per cooperare alla diffusione della verità."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Διδαχαῖς ποικίλαις καὶ ξέναις μὴ παραφέρεσθε· καλὸν γὰρ χάριτι βεβαιοῦσθαι τὴν καρδίαν, οὐ βρώμασιν, ἐν οἷς οὐκ ὠφελήθησαν οἱ περιπατήσαντες.",
+        "VUL": "Doctrinis variis et peregrinis nolite abduci. Optimum est enim gratia stabilire cor, non escis : quæ non profuerunt ambulantibus in eis.",
+        "SYN": "Учениями различными и чуждыми не увлекайтесь; ибо хорошо благодатью укреплять сердца, а не яствами, от которых не получили пользы занимающиеся ими.",
+        "NEO": "Ne vous laissez pas entraîner par des doctrines diverses et étrangères, car il vaut mieux affermir son cœur par la grâce, que par des aliments, qui n’ont servi de rien à ceux qui s’y attachent.",
+        "NAB": "Do not be carried away by all kinds of strange teaching. It is good to have our hearts strengthened by grace and not by foods, which do not benefit those who live by them.",
+        "VAT_ES": "Que el hermano de condición humilde se gloríe cuando es exaltado,",
+        "CEI": "Ho scritto qualche parola alla Chiesa ma Diòtrefe, che ambisce il primo posto tra loro, non ci vuole accogliere."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Ἔχομεν θυσιαστήριον, ἐξ οὗ φαγεῖν οὐκ ἔχουσιν ἐξουσίαν οἱ τῇ σκηνῇ λατρεύοντες.",
+        "VUL": "Habemus altare, de quo edere non habent potestatem, qui tabernaculo deserviunt.",
+        "SYN": "Мы имеем жертвенник, от которого не имеют права питаться служащие скинии.",
+        "NEO": "Nous avons un autel dont ceux-là n’ont pas le droit de manger qui restent au service du tabernacle.",
+        "NAB": "We have an altar from which those who serve the tabernacle have no right to eat.",
+        "VAT_ES": "y el rico se alegre cuando es humillado, porque pasará como una flor del campo:",
+        "CEI": "Per questo, se verrò, gli rinfaccerò le cose che va facendo, sparlando contro di noi con voci maligne. Non contento di questo, non riceve personalmente i fratelli e impedisce di farlo a quelli che lo vorrebbero e li scaccia dalla Chiesa."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Ὧν γὰρ εἰσφέρεται ζῴων τὸ αἷμα περὶ ἁμαρτίας εἰς τὰ ἅγια διὰ τοῦ ἀρχιερέως, τούτων τὰ σώματα κατακαίεται ἔξω τῆς παρεμβολῆς.",
+        "VUL": "Quorum enim animalium infertur sanguis pro peccato in Sancta per pontificem, horum corpora cremantur extra castra.",
+        "SYN": "Так как тела животных, которых кровь для _очищения_ греха вносится первосвященником во святилище, сжигаются вне стана, --",
+        "NEO": "Car pour les animaux dont le sang, expiation du péché, est porté dans le sanctuaire par le grand prêtre, leurs corps sont brûlés hors du camp.+ 13:11 11-12. Dans la fête de l’expiation (Lév. xvi, 27 : Comp. Lév. iv, 12, 21 ; vi, 30) le sang des victimes était porté par le grand prêtre dans le Saint des saints ; mais les corps étaient brûlés hors du camp: à l’époque où cette cérémonie fut instituée, les Israélites \\+qt campaient\\+qt* dans le désert. C’est une figure du sacrifice de Jésus-Christ non seulement dans les victimes immolées, mais aussi dans le rite qui accompagnait cette immolation. Ce rite signifiait que le péché, dont on avait comme chargé la victime, était banni de la communauté et détruit. Jésus-Christ, véritable victime expiatoire pour les péchés du monde, a été crucifié hors de la porte de Jérusalem (Matth, xxvii, 33 ; Jean, xix, 20).*",
+        "NAB": "The bodies of the animals whose blood the high priest brings into the sanctuary as a sin offering are burned outside the camp.",
+        "VAT_ES": "apenas sale el sol y calienta con fuerza, la hierba se seca, su flor se marchita y desaparece su hermosura. Lo mismo sucederá con el rico en sus empresas.",
+        "CEI": "Carissimo, non imitare il male, ma il bene. Chi fa il bene è da Dio; chi fa il male non ha veduto Dio."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Διὸ καὶ Ἰησοῦς, ἵνα ἁγιάσῃ διὰ τοῦ ἰδίου αἵματος τὸν λαόν, ἔξω τῆς πύλης ἔπαθεν.",
+        "VUL": "Propter quod et Jesus, ut sanctificaret per suum sanguinem populum, extra portam passus est.",
+        "SYN": "то и Иисус, дабы освятить людей Кровию Своею, пострадал вне врат.",
+        "NEO": "C’est pour cela que Jésus aussi, devant sanctifier le peuple par son sang, a souffert hors de la porte.",
+        "NAB": "Therefore, Jesus also suffered outside the gate, to consecrate the people by his own blood.",
+        "VAT_ES": "Feliz el hombre que soporta la prueba, porque después de haberla superado, recibirá la corona de Vida que el Señor prometió a los que lo aman.",
+        "CEI": "Quanto a Demetrio, tutti gli rendono testimonianza, anche la stessa verità; anche noi ne diamo testimonianza e tu sai che la nostra testimonianza è veritiera."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Τοίνυν ἐξερχώμεθα πρὸς αὐτὸν ἔξω τῆς παρεμβολῆς, τὸν ὀνειδισμὸν αὐτοῦ φέροντες.",
+        "VUL": "Exeamus igitur ad eum extra castra, improperium ejus portantes.",
+        "SYN": "Итак выйдем к Нему за стан, нося Его поругание;",
+        "NEO": "Donc, pour aller à lui, sortons hors du camp, en portant son opprobre.",
+        "NAB": "Let us then go to him outside the camp, bearing the reproach that he bore.",
+        "VAT_ES": "Nadie, al ser tentado, diga que Dios lo tienta: Dios no puede ser tentado por el mal, ni tienta a nadie,",
+        "CEI": "Molte cose avrei da scriverti, ma non voglio farlo con inchiostro e penna."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Οὐ γὰρ ἔχομεν ὧδε μένουσαν πόλιν, ἀλλὰ τὴν μέλλουσαν ἐπιζητοῦμεν.",
+        "VUL": "Non enim habemus hic manentem civitatem, sed futuram inquirimus.",
+        "SYN": "ибо не имеем здесь постоянного града, но ищем будущего.",
+        "NEO": "Car nous n’avons pas ici-bas de cité permanente, mais nous cherchons celle qui est à venir.",
+        "NAB": "For here we have no lasting city, but we seek the one that is to come.",
+        "VAT_ES": "sino que cada uno es tentado por su propia concupiscencia, que lo atrae y lo seduce.",
+        "CEI": "Spero però di vederti presto e parleremo a viva voce."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Δι’ αὐτοῦ οὖν ἀναφέρωμεν θυσίαν αἰνέσεως διὰ παντὸς τῷ θεῷ, τοῦτ’ ἔστιν, καρπὸν χειλέων ὁμολογούντων τῷ ὀνόματι αὐτοῦ.",
+        "VUL": "Per ipsum ergo offeramus hostiam laudis semper Deo, id est, fructum labiorum confitentium nomini ejus.",
+        "SYN": "Итак будем через Него непрестанно приносить Богу жертву хвалы, то есть плод уст, прославляющих имя Его.",
+        "NEO": "Que ce soit donc par lui que nous offrions sans cesse à Dieu « un sacrifice de louange », c’est-à-dire « le fruit de lèvres » qui célèbrent son nom.",
+        "NAB": "Through him (then) let us continually offer God a sacrifice of praise, that is, the fruit of lips that confess his name.",
+        "VAT_ES": "La concupiscencia es madre del pecado, y este, una vez cometido, engendra la muerte.",
+        "CEI": "La pace sia con te. Gli amici ti salutano. Saluta gli amici ad uno ad uno."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Τῆς δὲ εὐποιΐας καὶ κοινωνίας μὴ ἐπιλανθάνεσθε· τοιαύταις γὰρ θυσίαις εὐαρεστεῖται ὁ θεός.",
+        "VUL": "Beneficentiæ autem et communionis nolite oblivisci : talibus enim hostiis promeretur Deus.",
+        "SYN": "Не забывайте также благотворения и общительности, ибо таковые жертвы благоугодны Богу.",
+        "NEO": "Et n’oubliez pas la bienfaisance et la libéralité ;+ 13:16 16. La libéralité, grec κοινωνίας ; (Comp. Rom. xii, 13 ; xv, 26 ; II Cor. ix, 13), la générosité à l’égard des chrétiens leurs frères par la communication de leurs biens, c’est-à-dire l’aumône. \\+qt Prend plaisir\\+qt* : Vulg. \\+qt promeretur\\+qt*, déponent avec le sens passif.* car Dieu se plaît à de tels sacrifices.",
+        "NAB": "Do not neglect to do good and to share what you have; God is pleased by sacrifices of that kind.",
+        "VAT_ES": "No se engañen, queridos hermanos."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Πείθεσθε τοῖς ἡγουμένοις ὑμῶν, καὶ ὑπείκετε· αὐτοὶ γὰρ ἀγρυπνοῦσιν ὑπὲρ τῶν ψυχῶν ὑμῶν, ὡς λόγον ἀποδώσοντες· ἵνα μετὰ χαρᾶς τοῦτο ποιῶσιν, καὶ μὴ στενάζοντες· ἀλυσιτελὲς γὰρ ὑμῖν τοῦτο.",
+        "VUL": "Obedite præpositis vestris, et subjacete eis. Ipsi enim pervigilant quasi rationem pro animabus vestris reddituri, ut cum gaudio hoc faciant, et non gementes : hoc enim non expedit vobis.",
+        "SYN": "Повинуйтесь наставникам вашим и будьте покорны, ибо они неусыпно пекутся о душах ваших, как обязанные дать отчет; чтобы они делали это с радостью, а не воздыхая, ибо это для вас неполезно.",
+        "NEO": "Obéissez à ceux qui vous conduisent, et ayez pour eux de la déférence, car ils veillent sur vos âmes comme devant en rendre compte, — afin qu’ils le fassent avec joie, et non en gémissant ; ce qui ne vous serait pas avantageux. ÉPILOGUE.",
+        "NAB": "Obey your leaders and defer to them, for they keep watch over you and will have to give an account, that they may fulfill their task with joy and not with sorrow, for that would be of no advantage to you.",
+        "VAT_ES": "Todo lo que es bueno y perfecto es un don de lo alto y desciende del Padre de los astros luminosos, en quien no hay cambio ni sombra de declinación."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "¶Προσεύχεσθε περὶ ἡμῶν· πεποίθαμεν γὰρ ὅτι καλὴν συνείδησιν ἔχομεν, ἐν πᾶσιν καλῶς θέλοντες ἀναστρέφεσθαι.",
+        "VUL": "Orate pro nobis : confidimus enim quia bonam conscientiam habemus in omnibus bene volentes conversari.",
+        "SYN": "Молитесь о нас; ибо мы уверены, что имеем добрую совесть, потому что во всем желаем вести себя честно.",
+        "NEO": "Priez pour nous ; car nous sommes assurés d’avoir une bonne conscience, voulant en toutes choses nous bien conduire.",
+        "NAB": "Pray for us, for we are confident that we have a clear conscience, wishing to act rightly in every respect.",
+        "VAT_ES": "El ha querido engendrarnos por su Palabra de verdad, para que seamos como las primicias de su creación."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Περισσοτέρως δὲ παρακαλῶ τοῦτο ποιῆσαι, ἵνα τάχιον ἀποκατασταθῶ ὑμῖν.",
+        "VUL": "Amplius autem deprecor vos hoc facere, quo celerius restituar vobis.",
+        "SYN": "Особенно же прошу делать это, дабы я скорее возвращен был вам.",
+        "NEO": "C’est avec instance que je vous conjure de le faire, afin que je vous sois plus tôt rendu.",
+        "NAB": "I especially ask for your prayers that I may be restored to you very soon.",
+        "VAT_ES": "Tengan bien presente, hermanos muy queridos, que debemos estar dispuestos a escuchar y ser lentos para hablar y para enojarnos."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "¶Ὁ δὲ θεὸς τῆς εἰρήνης, ὁ ἀναγαγὼν ἐκ νεκρῶν τὸν ποιμένα τῶν προβάτων τὸν μέγαν ἐν αἵματι διαθήκης αἰωνίου, τὸν κύριον ἡμῶν Ἰησοῦν,",
+        "VUL": "Deus autem pacis, qui eduxit de mortuis pastorem magnum ovium, in sanguine testamenti æterni, Dominum nostrum Jesum Christum,",
+        "SYN": "Бог же мира, воздвигший из мертвых Пастыря овец великого Кровию завета вечного, Господа нашего Иисуса [Христа],",
+        "NEO": "Que le Dieu de la paix, — qui a ramené d’entre les morts celui qui, par le sang d’une alliance éternelle, est devenu* le grand Pasteur des brebis, notre Seigneur Jésus, —+ 13:20 20-21. I Pier. v, 4 : Jean, x, 11, 16.*",
+        "NAB": "May the God of peace, who brought up from the dead the great shepherd of the sheep by the blood of the eternal covenant, Jesus our Lord,",
+        "VAT_ES": "La ira del hombre nunca realiza la justicia de Dios."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "καταρτίσαι ὑμᾶς ἐν παντὶ ἔργῳ ἀγαθῷ εἰς τὸ ποιῆσαι τὸ θέλημα αὐτοῦ, ποιῶν ἐν ὑμῖν τὸ εὐάρεστον ἐνώπιον αὐτοῦ, διὰ Ἰησοῦ χριστοῦ· ᾧ ἡ δόξα εἰς τοὺς αἰῶνας τῶν αἰώνων. Ἀμήν.",
+        "VUL": "aptet vos in omni bono, ut faciatis ejus voluntatem : faciens in vobis quod placeat coram se per Jesum Christum : cui est gloria in sæcula sæculorum. Amen.",
+        "SYN": "да усовершит вас во всяком добром деле, к исполнению воли Его, производя в вас благоугодное Ему через Иисуса Христа. Ему слава во веки веков! Аминь.",
+        "NEO": "vous rende capables de toute bonne œuvre pour l’accomplissement de sa volonté, en opérant en vous ce qui est agréable à ses yeux, par Jésus-Christ, auquel soit la gloire dans les siècles des siècles ! Amen !",
+        "NAB": "furnish you with all that is good, that you may do his will. May he carry out in you what is pleasing to him through Jesus Christ, to whom be glory forever (and ever). Amen.",
+        "VAT_ES": "Dejen de lado, entonces, toda impureza y todo resto de maldad, y reciban con docilidad la Palabra sembrada en ustedes, que es capaz de salvarlos."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "¶Παρακαλῶ δὲ ὑμᾶς, ἀδελφοί, ἀνέχεσθε τοῦ λόγου τῆς παρακλήσεως· καὶ γὰρ διὰ βραχέων ἐπέστειλα ὑμῖν.",
+        "VUL": "Rogo autem vos fratres, ut sufferatis verbum solatii. Etenim perpaucis scripsi vobis.",
+        "SYN": "Прошу вас, братия, примите сие слово увещания; я же не много и написал вам.",
+        "NEO": "Je vous prie, frères, d’agréer+ 13:22 22. Agréer, prendre en bonne part, litt. \\+qt supporter\\+qt* : comp. Rom. xv, 15 sv. \\+qt Parole\\+qt*, discours d’exhortation, d’encouragement, de consolation. C’est ainsi que l’auteur caractérise les paroles qu’il adresse à ses lecteurs, et qui sont moins une lettre qu’une sorte d’homélie.* cette parole d’exhortation, car je vous ai écrit brièvement.",
+        "NAB": "Brothers, I ask you to bear with this message of encouragement, for I have written to you rather briefly.",
+        "VAT_ES": "Pongan en práctica la Palabra y no se contenten sólo con oírla, de manera que se engañen a ustedes mismos."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Γινώσκετε τὸν ἀδελφὸν Τιμόθεον ἀπολελυμένον, μεθ’ οὗ, ἐὰν τάχιον ἔρχηται, ὄψομαι ὑμᾶς.",
+        "VUL": "Cognoscite fratrem nostrum Timotheum dimissum : cum quo (si celerius venerit) videbo vos.",
+        "SYN": "Знайте, что брат наш Тимофей освобожден, и я вместе с ним, если он скоро придет, увижу вас.",
+        "NEO": "Apprenez que notre frère Timothée est relâché ; s’il vient assez tôt, j’irai vous voir avec lui.",
+        "NAB": "I must let you know that our brother Timothy has been set free. If he comes soon, I shall see you together with him.",
+        "VAT_ES": "El que oye la Palabra y no la practica, se parece a un hombre que se mira en el espejo,"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "¶Ἀσπάσασθε πάντας τοὺς ἡγουμένους ὑμῶν, καὶ πάντας τοὺς ἁγίους. Ἀσπάζονται ὑμᾶς οἱ ἀπὸ τῆς Ἰταλίας.",
+        "VUL": "Salutate omnes præpositos vestros, et omnes sanctos. Salutant vos de Italia fratres.",
+        "SYN": "Приветствуйте всех наставников ваших и всех святых. Приветствуют вас Италийские.",
+        "NEO": "Saluez tous ceux qui vous conduisent et tous les saints. Les frères d’Italie vous saluent.",
+        "NAB": "Greetings to all your leaders and to all the holy ones. Those from Italy send you greetings.",
+        "VAT_ES": "pero en seguida se va y se olvida de cómo es."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "¶Ἡ χάρις μετὰ πάντων ὑμῶν. Ἀμήν.",
+        "VUL": "Gratia cum omnibus vobis. Amen.",
+        "SYN": "Благодать со всеми вами. Аминь.",
+        "NEO": "Que la grâce soit avec vous tous ! Amen !",
+        "NAB": "Grace be with all of you.",
+        "VAT_ES": "En cambio, el que considera atentamente la Ley perfecta, que nos hace libres, y se aficiona a ella, no como un oyente distraído, sino como un verdadero cumplidor de la Ley, será feliz al practicarla."
+      }
+    }
+  }
+}

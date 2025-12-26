@@ -1,0 +1,461 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOB_024",
+  "book_key": "IOB",
+  "sequence": 24,
+  "chapter_in": {
+    "MT": 24,
+    "VUL": 24,
+    "LXX": 24
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מַדּ֗וּעַ מִ֭/שַּׁדַּי לֹא נִצְפְּנ֣וּ עִתִּ֑ים ו/ידע/ו וְ֝/יֹדְעָ֗י/ו לֹא חָ֥זוּ יָמָֽי/ו׃",
+        "LXX": "διὰ τί δὲ Κύριον ἔλαθον ὧραι,",
+        "VUL": "[Ab Omnipotente non sunt abscondita tempora :/ qui autem noverunt eum,/ ignorant dies illius./",
+        "SYN": "Почему не сокрыты от Вседержителя времена, и знающие Его не видят дней Его?",
+        "NEO": "Pourquoi n’y a-t-il pas de temps réservés par le Tout-Puissant, et ceux qui le servent ne voient-ils pas son jour ?",
+        "NAB": "Why are not times set by the Almighty, and why do his friends not see his days?",
+        "VAT_ES": "&iquest;Por qué al Todopoderoso no se le ocultan los tiempos, pero sus fieles no ven esos días?",
+        "CEI": "Perché l'Onnipotente non si riserva i suoi tempi e i suoi fedeli non vedono i suoi giorni?"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "גְּבֻל֥וֹת יַשִּׂ֑יגוּ עֵ֥דֶר גָּ֝זְל֗וּ וַ/יִּרְעֽוּ׃",
+        "LXX": "ἀσεβεῖς δὲ ὅριον ὑπερέβησαν, ποίμνιον σὺν ποιμένι ἁρπάσαντες;",
+        "VUL": "Alii terminos transtulerunt ;/ diripuerunt greges, et paverunt eos./",
+        "SYN": "Межи передвигают, угоняют стада и пасут _у_ _себя._",
+        "NEO": "On voit des hommes qui déplacent les bornes, qui font paître le troupeau qu’ils ont volé.",
+        "NAB": "The wicked remove landmarks; they steal away herds and pasture them.",
+        "VAT_ES": "Los malvados remueven los mojones, se apoderan del rebaño y del pastor.",
+        "CEI": "I malvagi spostano i confini, rubano le greggi e le menano al pascolo;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "חֲמ֣וֹר יְתוֹמִ֣ים יִנְהָ֑גוּ יַ֝חְבְּל֗וּ שׁ֣וֹר אַלְמָנָֽה׃",
+        "LXX": "ὑποζύγιον ὀρφανῶν ἀπήγαγον, καὶ βοῦν χήρας ἠνεχύρασαν.",
+        "VUL": "Asinum pupillorum abegerunt,/ et abstulerunt pro pignore bovem viduæ./",
+        "SYN": "У сирот уводят осла, у вдовы берут в залог вола;",
+        "NEO": "Ils poussent devant eux l’âne de l’orphelin, et retiennent en gage le bœuf de la veuve.",
+        "NAB": "The asses of orphans they drive away; they take the widow's ox for a pledge.",
+        "VAT_ES": "Se llevan el asno de los huérfanos, toman en prenda el buey de la viuda;",
+        "CEI": "portano via l'asino degli orfani, prendono in pegno il bue della vedova."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "יַטּ֣וּ אֶבְיוֹנִ֣ים מִ/דָּ֑רֶךְ יַ֥חַד חֻ֝בְּא֗וּ עֲנִיֵּי אָֽרֶץ׃",
+        "LXX": "ἐξέκλιναν ἀδυνάτους ἐξ ὁδοῦ δικαίας, ὁμοθυμαδὸν δὲ ἐκρύβησαν πρᾳεῖς γῆς.",
+        "VUL": "Subverterunt pauperum viam,/ et oppresserunt pariter mansuetos terræ./",
+        "SYN": "бедных сталкивают с дороги, все уничиженные земли принуждены скрываться.",
+        "NEO": "Ils forcent les pauvres à se détourner du chemin ; tous les humbles du pays sont réduits à se cacher.",
+        "NAB": "They force the needy off the road; all the poor of the land are driven into hiding.",
+        "VAT_ES": "Desvían al indigente del camino, y los pobres del país tienen que esconderse.",
+        "CEI": "Spingono i poveri fuori strada, tutti i miseri del paese vanno a nascondersi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הֵ֤ן פְּרָאִ֨ים בַּֽ/מִּדְבָּ֗ר יָצְא֣וּ בְּ֭/פָעֳלָ/ם מְשַׁחֲרֵ֣י לַ/טָּ֑רֶף עֲרָבָ֥ה ל֥/וֹ לֶ֝֗חֶם לַ/נְּעָרִֽים׃",
+        "LXX": "ἀπέβησαν δὲ ὥσπερ ὄνοι ἐν ἀγρῷ, ὑπὲρ ἐμοῦ ἐξελθόντες τὴν ἑαυτῶν τάξιν· ἡδύνθη αὐτῷ ἄρτος εἰς νεωτέρους.",
+        "VUL": "Alii quasi onagri in deserto egrediuntur ad opus suum :/ vigilantes ad prædam, præparant panem liberis./",
+        "SYN": "Вот они, _как_ дикие ослы в пустыне, выходят на дело свое, вставая рано на добычу; степь _дает_ хлеб для них и для детей их;",
+        "NEO": "Comme l’onagre dans la solitude, ils sortent pour leur travail, dès le matin, cherchant leur nourriture. Le désert leur fournit la subsistance de leurs enfants ;",
+        "NAB": "Like wild asses in the desert, these go forth to their task of seeking food; The steppe provides food for the young among them;",
+        "VAT_ES": "Como asnos salvajes en el desierto, salen los pobres, buscando una presa; y aunque ellos trabajan hasta la tarde, no tienen pan para sus hijos.",
+        "CEI": "Eccoli, come ònagri nel deserto escono per il lavoro; di buon mattino vanno in cerca di vitto; la steppa offre loro cibo per i figli."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בַּ֭/שָּׂדֶה בְּלִיל֣/וֹ יקצירו יִקְצ֑וֹרוּ וְ/כֶ֖רֶם רָשָׁ֣ע יְלַקֵּֽשׁוּ׃",
+        "LXX": "ἀγρὸν πρὸ ὥρας οὐκ αὐτῶν ὄντα ἐθέρισαν· ἀδύνατοι ἀμπελῶνας ἀσεβῶν ἀμισθὶ καὶ ἀσιτὶ ἠργάσαντο.",
+        "VUL": "Agrum non suum demetunt,/ et vineam ejus, quem vi oppresserint, vindemiant./",
+        "SYN": "жнут они на поле не своем и собирают виноград у нечестивца;",
+        "NEO": "ils coupent les épis dans les champs, ils maraudent dans la vigne de leur oppresseur.",
+        "NAB": "they harvest at night in the untilled land.",
+        "VAT_ES": "Cosechan en el campo del impío, vendimian la viña del malvado.",
+        "CEI": "Mietono nel campo non loro; racimolano la vigna del malvagio."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "עָר֣וֹם יָ֭לִינוּ מִ/בְּלִ֣י לְב֑וּשׁ וְ/אֵ֥ין כְּ֝ס֗וּת בַּ/קָּרָֽה׃",
+        "LXX": "⸂⸆⸃ γυμνοὺς πολλοὺς ἐκοίμισαν ἄνευ ἱματίων, ἀμφίασιν δὲ ψυχῆς αὐτῶν ἀφείλαντο·",
+        "VUL": "Nudos dimittunt homines, indumenta tollentes,/ quibus non est operimentum in frigore :/",
+        "SYN": "нагие ночуют без покрова и без одеяния на стуже;",
+        "NEO": "Nus, ils passent la nuit, faute de vêtements, sans couverture contre le froid.",
+        "NAB": "They pass the night naked, without clothing, for they have no covering against the cold;",
+        "VAT_ES": "Pasan la noche desnudos, por falta de ropa, sin un abrigo para taparse del frío.",
+        "CEI": "Nudi passan la notte, senza panni, non hanno da coprirsi contro il freddo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "מִ/זֶּ֣רֶם הָרִ֣ים יִרְטָ֑בוּ וּֽ/מִ/בְּלִ֥י מַ֝חְסֶ֗ה חִבְּקוּ צֽוּר׃",
+        "LXX": "ἀπὸ ψεκάδων ὀρέων ὑγραίνονται, παρὰ τὸ μὴ ἔχειν ἑαυτοὺς σκέπην πέτραν περιεβάλοντο.",
+        "VUL": "quos imbres montium rigant,/ et non habentes velamen, amplexantur lapides./",
+        "SYN": "мокнут от горных дождей и, не имея убежища, жмутся к скале;",
+        "NEO": "La pluie des montagnes les pénètre ; à défaut d’abri, ils se blottissent contre le rocher.",
+        "NAB": "They are drenched with the rain of the mountains, and for want of shelter they cling to the rock.",
+        "VAT_ES": "Empapados por el aguacero de las montañas, sin refugio, se acurrucan contra las rocas.",
+        "CEI": "Dagli scrosci dei monti sono bagnati, per mancanza di rifugi si aggrappano alle rocce."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "יִ֭גְזְלוּ מִ/שֹּׁ֣ד יָת֑וֹם וְֽ/עַל עָנִ֥י יַחְבֹּֽלוּ׃",
+        "LXX": "ἥρπασαν ὀρφανὸν ἀπὸ μαστοῦ, ἐκπεπτωκότα δὲ ἐταπείνωσαν.",
+        "VUL": "Vim fecerunt deprædantes pupillos,/ et vulgum pauperem spoliaverunt./",
+        "SYN": "отторгают от сосцов сироту и с нищего берут залог;",
+        "NEO": "Ils arrachent l’orphelin à la mamelle, ils prennent des gages sur les pauvres.",
+        "VAT_ES": "Arrancan al huérfano del pecho materno y toman en prenda al niño pequeño del pobre.",
+        "CEI": "Rapiscono con violenza l'orfano e prendono in pegno ciò che copre il povero."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "עָר֣וֹם הִ֭לְּכוּ בְּלִ֣י לְב֑וּשׁ וּ֝/רְעֵבִ֗ים נָ֣שְׂאוּ עֹֽמֶר׃",
+        "LXX": "γυμνοὺς δὲ ἐκοίμισαν ἀδίκως, πεινώντων δὲ τὸν ψωμὸν ἀφείλαντο.",
+        "VUL": "Nudis et incedentibus absque vestitu,/ et esurientibus tulerunt spicas./",
+        "SYN": "заставляют ходить нагими, без одеяния, и голодных кормят колосьями;",
+        "NEO": "Ceux-ci, tout nus, sans vêtements, portent, affamés, les gerbes du maître ;",
+        "NAB": "and famished are those who carry the sheaves.",
+        "VAT_ES": "Andan desnudos, por falta de ropa, cargan las gavillas, y están hambrientos.",
+        "CEI": "Ignudi se ne vanno, senza vesti e affamati portano i covoni."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "בֵּין שׁוּרֹתָ֥/ם יַצְהִ֑ירוּ יְקָבִ֥ים דָּ֝רְכ֗וּ וַ/יִּצְמָֽאוּ׃",
+        "LXX": "ἐν στενοῖς ἀδίκως ἐνήδρευσαν, ὁδὸν δὲ δικαίων οὐκ ᾔδεισαν.",
+        "VUL": "Inter acervos eorum meridiati sunt,/ qui calcatis torcularibus sitiunt./",
+        "SYN": "между стенами выжимают масло оливковое, топчут в точилах и жаждут.",
+        "NEO": "Ils expriment l’huile dans ses celliers ; ils foulent la vendange, et ils ont soif.",
+        "NAB": "Between the rows they press out the oil; they glean in the the vineyard of the wicked. They tread the wine presses, yet suffer thirst,",
+        "VAT_ES": "Exprimen el aceite entre dos máquinas de moler, pisotean el lagar, y están sedientos.",
+        "CEI": "Tra i filari frangono le olive, pigiano l'uva e soffrono la sete."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "מֵ֘/עִ֤יר מְתִ֨ים יִנְאָ֗קוּ וְ/נֶֽפֶשׁ חֲלָלִ֥ים תְּשַׁוֵּ֑עַ וֶ֝/אֱל֗וֹהַּ לֹא יָשִׂ֥ים תִּפְלָֽה׃",
+        "LXX": "οἱ ἐκ πόλεως καὶ οἴκων ἰδίων ἐξεβάλλοντο, ψυχὴ δὲ νηπίων ἐστέναξεν μέγα.",
+        "VUL": "De civitatibus fecerunt viros gemere,/ et anima vulneratorum clamavit :/ et Deus inultum abire non patitur./",
+        "SYN": "В городе люди стонут, и душа убиваемых вопит, и Бог не воспрещает того.",
+        "NEO": "Du sein des villes s’élèvent les gémissements des hommes, et l’âme des blessés crie ; et Dieu ne prend pas garde à ces forfaits !",
+        "NAB": "From the dust the dying groan, and the souls of the wounded cry out (yet God does not treat it as unseemly).",
+        "VAT_ES": "De la ciudad, salen los gemidos de los moribundos, las gargantas de los heridos piden auxilio, &iexcl;pero Dios no escucha sus plegarias!",
+        "CEI": "Dalla città si alza il gemito dei moribondi e l'anima dei feriti grida aiuto: Dio non presta attenzione alle loro preghiere."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הֵ֤מָּה הָיוּ֮ בְּֽ/מֹרְדֵ֫י א֥וֹר לֹֽא הִכִּ֥ירוּ דְרָכָ֑י/ו וְ/לֹ֥א יָ֝שְׁב֗וּ בִּ/נְתִיבֹתָֽי/ו׃",
+        "LXX": "αὐτὸς δὲ διὰ τί τούτων ἐπισκοπὴν οὐ πεποίηται; ἐπὶ γῆς ὄντων αὐτῶν καὶ οὐκ ἐπέγνωσαν, ὁδὸν δὲ δικαιοσύνης οὐκ ᾔδεισαν, οὐδὲ ἀτραποὺς αὐτῶν ἐπορεύθησαν.",
+        "VUL": "Ipsi fuerunt rebelles lumini :/ nescierunt vias ejus,/ nec reversi sunt per semitas ejus./",
+        "SYN": "Есть из них враги света, не знают путей его и не ходят по стезям его.",
+        "NEO": "D’autres sont parmi les ennemis de la lumière, ils n’en connaissent pas les voies, ils ne se tiennent pas dans ses sentiers.",
+        "NAB": "There are those who are rebels against the light; they know not its ways; they abide not in its paths.",
+        "VAT_ES": "Hay otros que se rebelan contra la luz: no reconocen sus caminos ni se detienen en sus senderos.",
+        "CEI": "Altri odiano la luce, non ne vogliono riconoscere le vie né vogliono batterne i sentieri."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לָ/א֡וֹר יָ֘ק֤וּם רוֹצֵ֗חַ יִֽקְטָל עָנִ֥י וְ/אֶבְי֑וֹן וּ֝/בַ/לַּ֗יְלָה יְהִ֣י כַ/גַּנָּֽב׃",
+        "LXX": "γνοὺς δὲ αὐτῶν τὰ ἔργα παρέδωκεν αὐτοὺς εἰς σκότος, καὶ νυκτὸς ἔσται ὡς κλέπτης.",
+        "VUL": "Mane primo consurgit homicida ;/ interficit egenum et pauperem :/ per noctem vero erit quasi fur./",
+        "SYN": "С рассветом встает убийца, умерщвляет бедного и нищего, а ночью бывает вором.",
+        "NEO": "L’assassin se lève au point du jour ; il tue le pauvre et l’indigent, il rôde la nuit comme un voleur.",
+        "NAB": "When there is no light the murderer rises, to kill the poor and needy.",
+        "VAT_ES": "El asesino se levanta antes del alba para matar al pobre y al indigente. El ladrón merodea por la noche,",
+        "CEI": "Quando non c'è luce, si alza l'omicida per uccidere il misero e il povero; nella notte si aggira il ladro e si mette un velo sul volto."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/עֵ֤ין נֹאֵ֨ף שָׁ֤מְרָֽה נֶ֣שֶׁף לֵ֭/אמֹר לֹא תְשׁוּרֵ֣/נִי עָ֑יִן וְ/סֵ֖תֶר פָּנִ֣ים יָשִֽׂים׃",
+        "LXX": "καὶ ὀφθαλμὸς μοιχοῦ ἐφύλαξεν σκότος, λέγων Οὐ προσνοήσει με ὀφθαλμός, καὶ ἀποκρυβὴν προσώπου ἔθετο.",
+        "VUL": "Oculus adulteri observat caliginem,/ dicens : Non me videbit oculus :/ et operiet vultum suum./",
+        "SYN": "И око прелюбодея ждет сумерков, говоря: ничей глаз не увидит меня, -- и закрывает лице.",
+        "NEO": "L’œil de l’adultère épie le crépuscule ; « Personne ne me voit, » dit-il, et il jette un voile sur son visage.",
+        "NAB": "The eye of the adulterer watches for the twilight; he says, \"No eye will see me.\" In the night the thief roams about, and he puts a mask over his face;",
+        "VAT_ES": "El adúltero aguarda la penumbra, pensando: «&iexcl;Ningún ojo me verá!», y se cubre la cara con un velo.",
+        "CEI": "L'occhio dell'adultero spia il buio e pensa: \"Nessun occhio mi osserva!\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "חָתַ֥ר בַּ/חֹ֗שֶׁךְ בָּ֫תִּ֥ים יוֹמָ֥ם חִתְּמוּ לָ֗/מוֹ לֹא יָ֥דְעוּ אֽוֹר׃",
+        "LXX": "διώρυξεν ἐν σκότει οἰκίας· ἡμέρας ἐσφράγισαν ἑαυτούς, οὐκ ἐπέγνωσαν φῶς·",
+        "VUL": "Perfodit in tenebris domos,/ sicut in die condixerant sibi,/ et ignoraverunt lucem./",
+        "SYN": "В темноте подкапываются под домы, которые днем они заметили для себя; не знают света.",
+        "NEO": "La nuit, d’autres forcent les maisons, le jour, ils se tiennent cachés : ils ne connaissent pas la lumière.",
+        "NAB": "in the dark he breaks into houses. By day they shut themselves in; none of them know the light,",
+        "CEI": "Nelle tenebre forzano le case, di giorno se ne stanno nascosti: non vogliono saperne della luce;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כִּ֤י יַחְדָּ֨ו בֹּ֣קֶר לָ֣/מוֹ צַלְמָ֑וֶת כִּֽי יַ֝כִּ֗יר בַּלְה֥וֹת צַלְמָֽוֶת׃",
+        "LXX": "ὅτι ὁμοθυμαδὸν αὐτοῖς τὸ πρωὶ σκιὰ θανάτου, ὅτι ἐπιγνώσεται τάραχος σκιᾶς θανάτου.",
+        "VUL": "Si subito apparuerit aurora, arbitrantur umbram mortis :/ et sic in tenebris quasi in luce ambulant./",
+        "SYN": "Ибо для них утро -- смертная тень, так как они знакомы с ужасами смертной тени.",
+        "NEO": "Pour eux, le matin est comme l’ombre de la mort, car les horreurs de la nuit leur sont familières.",
+        "NAB": "for daylight they regard as darkness.",
+        "VAT_ES": "Porque, para ellos, la mañana es la hora sombría, están habituados a los temores de la noche.",
+        "CEI": "l'alba è per tutti loro come spettro di morte; quando schiarisce, provano i terrori del buio fondo."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "קַֽל ה֤וּא עַל פְּנֵי מַ֗יִם תְּקֻלַּ֣ל חֶלְקָתָ֣/ם בָּ/אָ֑רֶץ לֹֽא יִ֝פְנֶה דֶּ֣רֶךְ כְּרָמִֽים׃",
+        "LXX": "ἐλαφρός ἐστιν ἐπὶ πρόσωπον ὕδατος· καταραθείη ἡ μερὶς αὐτῶν ἐπὶ γῆς, ἀναφανείη δὲ τὰ φυτὰ αὐτῶν",
+        "VUL": "Levis est super faciem aquæ :/ maledicta sit pars ejus in terra,/ nec ambulet per viam vinearum./",
+        "SYN": "Легок такой на поверхности воды, проклята часть его на земле, и не смотрит он на дорогу садов виноградных.",
+        "NEO": "Ah ! l’impie glisse comme un corps léger sur la face des eaux, il n’a sur la terre qu’une part maudite, il ne se dirige pas sur le chemin des vignes !",
+        "NAB": "Their portion in the land is accursed,",
+        "VAT_ES": "Es algo frágil sobre la superficie de las aguas, su posesión es maldecida en el país y nadie toma el camino de sus viñedos.",
+        "CEI": "Fuggono veloci di fronte al giorno; maledetta è la loro porzione di campo sulla terra, non si volgono più per la strada delle vigne."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "צִיָּ֤ה גַם חֹ֗ם יִגְזְל֥וּ מֵֽימֵי שֶׁ֗לֶג שְׁא֣וֹל חָטָֽאוּ׃",
+        "LXX": "ἐπὶ γῆς ξηρά· ἀγκαλίδα γὰρ ὀρφανῶν ἥρπασαν.",
+        "VUL": "Ad nimium calorem transeat ab aquis nivium,/ et usque ad inferos peccatum illius./",
+        "SYN": "Засуха и жара поглощают снежную воду: так преисподняя -- грешников.",
+        "NEO": "Comme la sécheresse et la chaleur absorbent l’eau des neiges, ainsi le schéol engloutit les pécheurs !",
+        "VAT_ES": "La sequía y el calor consumen las aguas de la nieve, y el Abismo arrebata a aquellos que pecaron.",
+        "CEI": "Come siccità e calore assorbono le acque nevose, così la morte rapisce il peccatore."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "יִשְׁכָּ֘חֵ֤/הוּ רֶ֨חֶם מְתָ֘ק֤/וֹ רִמָּ֗ה ע֥וֹד לֹֽא יִזָּכֵ֑ר וַ/תִּשָּׁבֵ֖ר כָּ/עֵ֣ץ עַוְלָֽה׃",
+        "LXX": "εἶτ’ ἀνεμνήσθη αὐτοῦ ἡ ἁμαρτία· ὥσπερ δὲ ὁμίχλη δρόσου ἀφανὴς ἐγένετο· ἀποδοθείη δὲ αὐτῷ ἃ ἔπραξεν, συντριβείη δὲ πᾶς ἄδικος ἴσα ξύλῳ ἀνιάτῳ.",
+        "VUL": "Obliviscatur ejus misericordia ; dulcedo illius vermes :/ non sit in recordatione,/ sed conteratur quasi lignum infructuosum./",
+        "SYN": "Пусть забудет его утроба _матери;_ пусть лакомится им червь; пусть не остается о нем память; как дерево, пусть сломится беззаконник,",
+        "NEO": "Ah ! Le sein maternel l’oublie, les vers en font leurs délices ; on ne se souvient plus de lui, et l’iniquité est brisée comme un arbre.",
+        "NAB": "and wickedness is splintered like wood.",
+        "VAT_ES": "El seno que lo formó se olvida de él, nadie más se acuerda de su hombre, y la injusticia es quebrada como un árbol.",
+        "CEI": "Il seno che l'ha portato lo dimentica, i vermi ne fanno la loro delizia, non se ne conserva la memoria ed è troncata come un albero l'iniquità."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "רֹעֶ֣ה עֲ֭קָרָה לֹ֣א תֵלֵ֑ד וְ֝/אַלְמָנָ֗ה לֹ֣א יְיֵטִֽיב׃",
+        "LXX": "στεῖραν δὲ οὐκ εὖ ἐποίησεν, καὶ ἀγύναιον οὐκ ἠλέησεν,",
+        "VUL": "Pavit enim sterilem quæ non parit,/ et viduæ bene non fecit./",
+        "SYN": "который угнетает бездетную, не рождавшую, и вдове не делает добра.",
+        "NEO": "Il dévorait la femme stérile et sans enfants, il ne faisait pas de bien à la veuve !...",
+        "VAT_ES": "El maltrataba a la estéril privada de hijos y no hacía ningún bien a la viuda.",
+        "CEI": "Egli maltratta la sterile che non genera e non fa del bene alla vedova."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וּ/מָשַׁ֣ךְ אַבִּירִ֣ים בְּ/כֹח֑/וֹ יָ֝ק֗וּם וְֽ/לֹא יַאֲמִ֥ין בַּֽ/חַיִּֽין׃",
+        "LXX": "θυμῷ δὲ κατέστρεψεν ἀδυνάτους. ἀναστὰς τοιγαροῦν οὐ μὴ πιστεύσῃ κατὰ τῆς ἑαυτοῦ ζωῆς·",
+        "VUL": "Detraxit fortes in fortitudine sua,/ et cum steterit, non credet vitæ suæ./",
+        "SYN": "Он и сильных увлекает своею силою; он встает и никто не уверен за жизнь свою.",
+        "NEO": "Mais Dieu par sa force ébranle les puissants, il se lève, et ils ne comptent plus sur la vie ;",
+        "NAB": "To him who rises without assurance of his life",
+        "VAT_ES": "Pero aquel que con su fuerza sojuzga a los tiranos, se levanta, y no le permite que cuente más con su vida.",
+        "CEI": "Ma egli con la sua forza trascina i potenti, sorge quando più non può contare sulla vita."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "יִתֶּן ל֣/וֹ לָ֭/בֶטַח וְ/יִשָּׁעֵ֑ן וְ֝/עֵינֵ֗י/הוּ עַל דַּרְכֵי/הֶֽם׃",
+        "LXX": "μαλακισθεὶς μὴ ἐλπιζέτω ὑγιασθῆναι, ἀλλὰ πεσεῖται νόσῳ.",
+        "VUL": "Dedit ei Deus locum pnitentiæ,/ et ille abutitur eo in superbiam :/ oculi autem ejus sunt in viis illius./",
+        "SYN": "А Он дает ему _все_ для безопасности, и он _на_ _то_ опирается, и очи Его видят пути их.",
+        "NEO": "il leur donne la sécurité et la confiance, et ses yeux veillent sur leurs voies.",
+        "NAB": "he gives safety and support. He sustains the mighty by his strength, and his eyes are on their ways.",
+        "VAT_ES": "El lo dejaba apoyarse con seguridad, pero sus ojos vigilaban sus caminos.",
+        "CEI": "Anche Dio gli concede sicurezza ed egli sta saldo, ma i suoi occhi sono sopra la sua condotta."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "ר֤וֹמּוּ מְּעַ֨ט וְֽ/אֵינֶ֗/נּוּ וְֽ/הֻמְּכ֗וּ כַּ/כֹּ֥ל יִקָּפְצ֑וּ/ן וּ/כְ/רֹ֖אשׁ שִׁבֹּ֣לֶת יִמָּֽלוּ׃",
+        "LXX": "πολλοὺς γὰρ ἐκάκωσεν τὸ ὕψωμα αὐτοῦ· ἐμαράνθη δὲ ὥσπερ μολόχη ἐν καύματι, ἢ ὥσπερ στάχυς ἀπὸ καλάμης αὐτόματος ἀποπεσών.",
+        "VUL": "Elevati sunt ad modicum, et non subsistent :/ et humiliabuntur sicut omnia, et auferentur,/ et sicut summitates spicarum conterentur./",
+        "SYN": "Поднялись высоко, -- и вот, нет их; падают и умирают, как и все, и, как верхушки колосьев, срезываются.",
+        "NEO": "Ils se sont élevés, et en un instant ils ne sont plus ; ils tombent, ils sont moissonnés comme tous les hommes ; ils sont coupés comme la tête des épis.",
+        "NAB": "They are exalted for a while, and then they are gone; they are laid low and, like all others, are gathered up; like ears of grain they shrivel.",
+        "VAT_ES": "Se encumbró por un instante, y ya no existe, se dobla como una hierba amarga que se arranca y se marchita como la cabeza de una espiga.",
+        "CEI": "Salgono in alto per un poco, poi non sono più, sono buttati giù come tutti i mortali, falciati come la testa di una spiga."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/אִם לֹ֣א אֵ֭פוֹ מִ֣י יַכְזִיבֵ֑/נִי וְ/יָשֵׂ֥ם לְ֝/אַ֗ל מִלָּתִֽ/י׃",
+        "LXX": "εἰ δὲ μή, τίς ἐστιν ὁ φάμενος ψευδῆ με λέγειν, καὶ θήσει εἰς οὐδὲν τὰ ῥήματά μου;",
+        "VUL": "Quod si non est ita, quis me potest arguere esse mentitum,/ et ponere ante Deum verba mea ?]",
+        "SYN": "Если это не так, -- кто обличит меня во лжи и в ничто обратит речь мою?",
+        "NEO": "S’il n’en est pas ainsi, qui me convaincra de mensonge ? Qui réduira mes paroles à néant ?",
+        "NAB": "If this be not so, who will confute me, and reduce my argument to nought?",
+        "VAT_ES": "&iquest;Acaso no es así? &iquest;Quién me puede desmentir o reducir a la nada mis palabras?",
+        "CEI": "Non è forse così? Chi può smentirmi e ridurre a nulla le mie parole?"
+      }
+    }
+  }
+}

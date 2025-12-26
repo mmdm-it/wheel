@@ -1,0 +1,470 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ACTU_025",
+  "book_key": "ACTU",
+  "sequence": 25,
+  "chapter_in": {
+    "MT": 25,
+    "VUL": 25,
+    "LXX": 25
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Actus_Apostolorum",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Φῆστος οὖν ἐπιβὰς τῇ ἐπαρχίᾳ, μετὰ τρεῖς ἡμέρας ἀνέβη εἰς Ἱεροσόλυμα ἀπὸ Καισαρείας.",
+        "VUL": "Festus ergo cum venisset in provinciam, post triduum ascendit Jerosolymam a Cæsarea.",
+        "SYN": "Фест, прибыв в область, через три дня отправился из Кесарии в Иерусалим.",
+        "NEO": "Festus, étant donc arrivé dans sa province, monta trois jours après de Césarée à Jérusalem.",
+        "NAB": "Three days after his arrival in the province, Festus went up from Caesarea to Jerusalem",
+        "VAT_ES": "Tres días después de haberse hecho cargo de su provincia, Festo subió de Cesarea a Jerusalén.",
+        "CEI": "Accogliete tra voi chi è debole nella fede, senza discuterne le esitazioni."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Ἐνεφάνισαν δὲ αὐτῷ ὁ ἀρχιερεὺς καὶ οἱ πρῶτοι τῶν Ἰουδαίων κατὰ τοῦ Παύλου, καὶ παρεκάλουν αὐτόν,",
+        "VUL": "Adieruntque eum principes sacerdotum et primi Judæorum adversus Paulum : et rogabant eum,",
+        "SYN": "Тогда первосвященник и знатнейшие из Иудеев явились к нему _с_ _жалобою_ на Павла и убеждали его,",
+        "NEO": "Les chefs des prêtres et les principaux d’entre les Juifs vinrent lui porter plainte contre Paul. Avec beaucoup d’instances",
+        "NAB": "where the chief priests and Jewish leaders presented him their formal charges against Paul. They asked him",
+        "VAT_ES": "Los sumos sacerdotes y los judíos más importantes acusaron entonces a Pablo en su presencia,",
+        "CEI": "Uno crede di poter mangiare di tutto, l'altro invece, che è debole, mangia solo legumi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "αἰτούμενοι χάριν κατ’ αὐτοῦ, ὅπως μεταπέμψηται αὐτὸν εἰς Ἱερουσαλήμ, ἐνέδραν ποιοῦντες ἀνελεῖν αὐτὸν κατὰ τὴν ὁδόν.",
+        "VUL": "postulantes gratiam adversus eum, ut juberet perduci eum in Jerusalem, insidias tendentes ut interficerent eum in via.",
+        "SYN": "прося, чтобы он сделал милость, вызвал его в Иерусалим; и злоумышляли убить его на дороге.",
+        "NEO": "ils lui demandèrent comme une faveur, dans un but hostile à l’Apôtre, qu’il le fît transférer à Jérusalem ; ils préparaient un guet-apens pour le faire périr en route.",
+        "NAB": "as a favor to have him sent to Jerusalem, for they were plotting to kill him along the way.",
+        "VAT_ES": "y le pidieron la gracia de que lo hiciera trasladar a Jerusalén. En realidad preparaban una emboscada para matarlo en el camino.",
+        "CEI": "Colui che mangia non disprezzi chi non mangia; chi non mangia, non giudichi male chi mangia, perché Dio lo ha accolto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ὁ μὲν οὖν Φῆστος ἀπεκρίθη, τηρεῖσθαι τὸν Παῦλον ἐν Καισαρείᾳ, ἑαυτὸν δὲ μέλλειν ἐν τάχει ἐκπορεύεσθαι.",
+        "VUL": "Festus autem respondit servari Paulum in Cæsarea : se autem maturius profecturum.",
+        "SYN": "Но Фест отвечал, что Павел содержится в Кесарии под стражею и что он сам скоро отправится туда.",
+        "NEO": "Festus répondit que Paul était gardé à Césarée et que lui-même y retournerait sous peu.",
+        "NAB": "Festus replied that Paul was being held in custody in Caesarea and that he himself would be returning there shortly.",
+        "VAT_ES": "Pero Festo respondió que Pablo debía quedar bajo custodia en Cesarea, y que él mismo iría allí inmediatamente.",
+        "CEI": "Chi sei tu per giudicare un servo che non è tuo? Stia in piedi o cada, ciò riguarda il suo padrone; ma starà in piedi, perché il Signore ha il potere di farcelo stare."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Οἱ οὖν δυνατοὶ ἐν ὑμῖν, φησίν, συγκαταβάντες, εἴ τι ἐστὶν ἐν τῷ ἀνδρὶ τούτῳ, κατηγορείτωσαν αὐτοῦ.",
+        "VUL": "Qui ergo in vobis, ait, potentes sunt, descendentes simul, si quod est in viro crimen, accusent eum.",
+        "SYN": "Итак, сказал он, которые из вас могут, пусть пойдут со мною, и если есть что-нибудь за этим человеком, пусть обвиняют его.",
+        "NEO": "« Que ceux d’entre vous, ajouta-t-il, qui ont qualité pour cela, descendent avec moi, et s’il y a des charges contre cet homme, qu’ils l’accusent. »",
+        "NAB": "He said, \"Let your authorities come down with me, and if this man has done something improper, let them accuse him.\"",
+        "VAT_ES": "«Que los de más autoridad entre ustedes, añadió, vengan conmigo y presenten su acusación, si tienen algo contra él».",
+        "CEI": "C'è chi distingue giorno da giorno, chi invece li giudica tutti uguali; ciascuno però cerchi di approfondire le sue convinzioni personali."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "¶Διατρίψας δὲ ἐν αὐτοῖς ἡμέρας πλείους ἢ δέκα, καταβὰς εἰς Καισάρειαν, τῇ ἐπαύριον καθίσας ἐπὶ τοῦ βήματος ἐκέλευσεν τὸν Παῦλον ἀχθῆναι.",
+        "VUL": "Demoratus autem inter eos dies non amplius quam octo aut decem, descendit Cæsaream, et altera die sedit pro tribunali, et jussit Paulum adduci.",
+        "SYN": "Пробыв же у них не больше восьми или десяти дней, возвратился в Кесарию, и на другой день, сев на судейское место, повелел привести Павла.",
+        "NEO": "Après avoir seulement passé huit ou dix jours à Jérusalem, Festus descendit à Césarée. Le lendemain, ayant pris place sur son tribunal, il fit amener Paul.",
+        "NAB": "After spending no more than eight or ten days with them, he went down to Caesarea, and on the following day took his seat on the tribunal and ordered that Paul be brought in.",
+        "VAT_ES": "Festo permaneció en Jerusalén unos ocho o diez días, y luego bajó a Cesarea. Al día siguiente, se sentó en el tribunal e hizo comparecer a Pablo.",
+        "CEI": "Chi si preoccupa del giorno, se ne preoccupa per il Signore; chi mangia, mangia per il Signore, dal momento che rende grazie a Dio; anche chi non mangia, se ne astiene per il Signore e rende grazie a Dio."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Παραγενομένου δὲ αὐτοῦ, περιέστησαν οἱ ἀπὸ Ἱεροσολύμων καταβεβηκότες Ἰουδαῖοι, πολλὰ καὶ βαρέα αἰτιώματα φέροντες κατὰ τοῦ Παύλου, ἃ οὐκ ἴσχυον ἀποδεῖξαι,",
+        "VUL": "Qui cum perductus esset, circumsteterunt eum, qui ab Jerosolyma descenderant Judæi, multas et graves causas objicientes, quas non poterant probare :",
+        "SYN": "Когда он явился, стали кругом пришедшие из Иерусалима Иудеи, принося на Павла многие и тяжкие обвинения, которых не могли доказать.",
+        "NEO": "Quand on l’eut amené, les Juifs venus de Jérusalem l’entourèrent, en portant contre lui de nombreuses et graves accusations, qu’ils ne pouvaient prouver.",
+        "NAB": "When he appeared, the Jews who had come down from Jerusalem surrounded him and brought many serious charges against him, which they were unable to prove.",
+        "VAT_ES": "En cuanto llegó, los judíos venidos de Jerusalén lo rodearon, y presentaron contra él numerosas y graves acusaciones que no podían probar.",
+        "CEI": "Nessuno di noi, infatti, vive per se stesso e nessuno muore per se stesso,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "ἀπολογουμένου αὐτοῦ ὅτι Οὔτε εἰς τὸν νόμον τῶν Ἰουδαίων, οὔτε εἰς τὸ ἱερόν, οὔτε εἰς Καίσαρά τι ἥμαρτον.",
+        "VUL": "Paulo rationem reddente : Quoniam neque in legem Judæorum, neque in templum, neque in Cæsarem quidquam peccavi.",
+        "SYN": "Он же в оправдание свое сказал: я не сделал никакого преступления ни против закона Иудейского, ни против храма, ни против кесаря.",
+        "NEO": "Paul dit pour sa défense : « Je n’ai rien fait de répréhensible, ni contre la loi des Juifs, ni contre le temple, ni contre César. »",
+        "NAB": "In defending himself Paul said, \"I have committed no crime either against the Jewish law or against the temple or against Caesar.\"",
+        "VAT_ES": "Pablo se defendía diciendo: «Yo no he cometido ninguna falta contra la Ley de los judíos, ni contra el Templo, ni contra el Emperador».",
+        "CEI": "perché se noi viviamo, viviamo per il Signore, se noi moriamo, moriamo per il Signore. Sia che viviamo, sia che moriamo, siamo dunque del Signore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Ὁ Φῆστος δὲ τοῖς Ἰουδαίοις θέλων χάριν καταθέσθαι, ἀποκριθεὶς τῷ Παύλῳ εἶπεν, Θέλεις εἰς Ἱεροσόλυμα ἀναβάς, ἐκεῖ περὶ τούτων κρίνεσθαι ἐπ’ ἐμοῦ;",
+        "VUL": "Festus autem volens gratiam præstare Judæis, respondens Paulo, dixit : Vis Jerosolymam ascendere, et ibi de his judicari apud me ?",
+        "SYN": "Фест, желая сделать угождение Иудеям, сказал в ответ Павлу: хочешь ли идти в Иерусалим, чтобы я там судил тебя в этом?",
+        "NEO": "Festus, qui voulait faire plaisir aux Juifs, dit à Paul : « Veux-tu monter à Jérusalem et y être jugé sur ces griefs en ma présence ? »",
+        "NAB": "Then Festus, wishing to ingratiate himself with the Jews, said to Paul in reply, \"Are you willing to go up to Jerusalem and there stand trial before me on these charges?\"",
+        "VAT_ES": "Festo, queriendo congraciarse con los judíos, se dirigió a Pablo y le dijo: «&iquest;Quieres subir a Jerusalén para ser juzgado allí en mi presencia?».",
+        "CEI": "Per questo infatti Cristo è morto ed è ritornato alla vita: per essere il Signore dei morti e dei vivi."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Εἶπεν δὲ ὁ Παῦλος, Ἐπὶ τοῦ βήματος Καίσαρος ἑστώς εἰμι, οὗ με δεῖ κρίνεσθαι· Ἰουδαίους οὐδὲν ἠδίκησα, ὡς καὶ σὺ κάλλιον ἐπιγινώσκεις.",
+        "VUL": "Dixit autem Paulus : Ad tribunal Cæsaris sto : ibi me oportet judicari : Judæis non nocui, sicut tu melius nosti.",
+        "SYN": "Павел сказал: я стою перед судом кесаревым, где мне и следует быть судиму. Иудеев я ничем не обидел, как и ты хорошо знаешь.",
+        "NEO": "Paul répondit : « Je suis devant le tribunal de César ; c’est là que je dois être jugé. Je n’ai fait aucun tort aux Juifs, comme tu le sais bien toi-même.",
+        "NAB": "Paul answered, \"I am standing before the tribunal of Caesar; this is where I should be tried. I have committed no crime against the Jews, as you very well know.",
+        "VAT_ES": "Pablo respondió: «Estoy delante del tribunal del Emperador, y es aquí donde debo ser juzgado. Yo no hice ningún mal a los judíos, como tú lo sabes perfectamente.",
+        "CEI": "Ma tu, perché giudichi il tuo fratello? E anche tu, perché disprezzi il tuo fratello? Tutti infatti ci presenteremo al tribunale di Dio,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Εἰ μὲν γὰρ ἀδικῶ καὶ ἄξιον θανάτου πέπραχά τι, οὐ παραιτοῦμαι τὸ ἀποθανεῖν· εἰ δὲ οὐδέν ἐστιν ὧν οὗτοι κατηγοροῦσίν μου, οὐδείς με δύναται αὐτοῖς χαρίσασθαι. Καίσαρα ἐπικαλοῦμαι.",
+        "VUL": "Si enim nocui, aut dignum morte aliquid feci, non recuso mori : si vero nihil est eorum quæ hi accusant me, nemo potest me illis donare. Cæsarem appello.",
+        "SYN": "Ибо, если я неправ и сделал что-нибудь, достойное смерти, то не отрекаюсь умереть; а если ничего того нет, в чем сии обвиняют меня, то никто не может выдать меня им. Требую суда кесарева.",
+        "NEO": "Si j’ai commis quelque injustice ou quelque attentat qui mérite la mort, je ne refuse pas de mourir ; mais s’il n’y a rien de fondé dans leurs accusations, personne n’a le droit de me livrer à eux. J’en appelle à César. »",
+        "NAB": "If I have committed a crime or done anything deserving death, I do not seek to escape the death penalty; but if there is no substance to the charges they are bringing against me, then no one has the right to hand me over to them. I appeal to Caesar.\"",
+        "VAT_ES": "Si soy culpable y he cometido algún delito que merezca la muerte, no me niego a morir, pero si las acusaciones que hacen los judíos contra mí carecen de fundamento, nadie tiene el derecho de entregarme a ellos. Apelo al Emperador».",
+        "CEI": "poiché sta scritto: Come è vero che io vivo, dice il Signore, ogni ginocchio si piegherà davanti a me e ogni lingua renderà gloria a Dio."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Τότε ὁ Φῆστος συλλαλήσας μετὰ τοῦ συμβουλίου ἀπεκρίθη, Καίσαρα ἐπικέκλησαι; Ἐπὶ Καίσαρα πορεύσῃ.",
+        "VUL": "Tunc Festus cum concilio locutus, respondit : Cæsarem appellasti ? ad Cæsarem ibis.",
+        "SYN": "Тогда Фест, поговорив с советом, отвечал: ты потребовал суда кесарева, к кесарю и отправишься.",
+        "NEO": "Alors Festus, après en avoir conféré avec son conseil, répondit : « Tu en as appelé à César, tu iras à César. »",
+        "NAB": "Then Festus, after conferring with his council, replied, \"You have appealed to Caesar. To Caesar you will go.\"",
+        "VAT_ES": "Festo, después de haber consultado con su Consejo, respondió: «Ya que apelaste al Emperador, comparecerás ante él».",
+        "CEI": "Quindi ciascuno di noi renderà conto a Dio di se stesso."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "¶Ἡμερῶν δὲ διαγενομένων τινῶν, Ἀγρίππας ὁ βασιλεὺς καὶ Βερνίκη κατήντησαν εἰς Καισάρειαν, ἀσπασάμενοι τὸν Φῆστον.",
+        "VUL": "Et cum dies aliquot transacti essent, Agrippa rex et Bernice descenderunt Cæsaream ad salutandum Festum.",
+        "SYN": "Через несколько дней царь Агриппа и Вереника прибыли в Кесарию поздравить Феста.",
+        "NEO": "Quelques jours après le roi Agrippa+ 25:13 XXV, 13. Agrippa II, fils d’Hérode Agrippa I (xii, 21-23) et arrière petit-fils d’Hérode le Grand.* et Bérénice arrivèrent à Césarée pour saluer Festus.",
+        "NAB": "When a few days had passed, King Agrippa and Bernice arrived in Caesarea on a visit to Festus.",
+        "VAT_ES": "Algunos días más tarde, el rey Agripa y Berenice llegaron a Cesarea y fueron a saludar a Festo.",
+        "CEI": "Cessiamo dunque di giudicarci gli uni gli altri; pensate invece a non esser causa di inciampo o di scandalo al fratello."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ὡς δὲ πλείους ἡμέρας διέτριβεν ἐκεῖ, ὁ Φῆστος τῷ βασιλεῖ ἀνέθετο τὰ κατὰ τὸν Παῦλον, λέγων, Ἀνήρ τίς ἐστιν καταλελειμμένος ὑπὸ Φήλικος δέσμιος,",
+        "VUL": "Et cum dies plures ibi demorarentur, Festus regi indicavit de Paulo, dicens : Vir quidam est derelictus a Felice vinctus,",
+        "SYN": "И как они провели там много дней, то Фест предложил царю дело Павлово, говоря: _здесь_ есть человек, оставленный Феликсом в узах,",
+        "NEO": "Comme ils y passèrent plusieurs jours, Festus exposa au roi l’affaire de Paul, en disant : « Il y a ici* un homme que Félix a laissé prisonnier.",
+        "NAB": "Since they spent several days there, Festus referred Paul's case to the king, saying, \"There is a man here left in custody by Felix.",
+        "VAT_ES": "Como ellos permanecieron varios días, Festo expuso al rey el caso de Pablo, diciéndole: «Félix ha dejado a un prisionero,",
+        "CEI": "Io so, e ne sono persuaso nel Signore Gesù, che nulla è immondo in se stesso; ma se uno ritiene qualcosa come immondo, per lui è immondo."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "περὶ οὗ, γενομένου μου εἰς Ἱεροσόλυμα, ἐνεφάνισαν οἱ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι τῶν Ἰουδαίων, αἰτούμενοι κατ’ αὐτοῦ δίκην.",
+        "VUL": "de quo cum essem Jerosolymis, adierunt me principes sacerdotum et seniores Judæorum, postulantes adversus illum damnationem.",
+        "SYN": "на которого, в бытность мою в Иерусалиме, _с_ _жалобою_ явились первосвященники и старейшины Иудейские, требуя осуждения его.",
+        "NEO": "Lorsque j’étais à Jérusalem, les princes des prêtres et les Anciens des Juifs ont porté plainte contre lui, demandant sa condamnation.",
+        "NAB": "When I was in Jerusalem the chief priests and the elders of the Jews brought charges against him and demanded his condemnation.",
+        "VAT_ES": "y durante mi estadía en Jerusalén, los sumos sacerdotes y los ancianos de los judíos, presentaron quejas pidiendo su condena.",
+        "CEI": "Ora se per il tuo cibo il tuo fratello resta turbato, tu non ti comporti più secondo carità. Guardati perciò dal rovinare con il tuo cibo uno per il quale Cristo è morto!"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Πρὸς οὓς ἀπεκρίθην, ὅτι οὐκ ἔστιν ἔθος Ῥωμαίοις χαρίζεσθαί τινα ἄνθρωπον εἰς ἀπώλειαν, πρὶν ἢ ὁ κατηγορούμενος κατὰ πρόσωπον ἔχοι τοὺς κατηγόρους, τόπον τε ἀπολογίας λάβοι περὶ τοῦ ἐγκλήματος.",
+        "VUL": "Ad quos respondi : Quia non est Romanis consuetudo damnare aliquem hominem priusquam is qui accusatur præsentes habeat accusatores, locumque defendendi accipiat ad abluenda crimina.",
+        "SYN": "Я отвечал им, что у Римлян нет обыкновения выдавать какого-- нибудь человека на смерть, прежде нежели обвиняемый будет иметь обвинителей налицо и получит свободу защищаться против обвинения.",
+        "NEO": "Je leur ai répondu que ce n’est pas la coutume des Romains de livrer un homme avant d’avoir confronté l’accusé avec ses accusateurs et de lui avoir donné les moyens de se justifier de ce dont on l’accuse.",
+        "NAB": "I answered them that it was not Roman practice to hand over an accused person before he has faced his accusers and had the opportunity to defend himself against their charge.",
+        "VAT_ES": "Yo les respondí que los romanos no tienen la costumbre de entregar a un hombre antes de enfrentarlo con sus acusadores y darle la oportunidad de defenderse.",
+        "CEI": "Non divenga motivo di biasimo il bene di cui godete!"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Συνελθόντων οὖν αὐτῶν ἐνθάδε, ἀναβολὴν μηδεμίαν ποιησάμενος, τῇ ἑξῆς καθίσας ἐπὶ τοῦ βήματος, ἐκέλευσα ἀχθῆναι τὸν ἄνδρα·",
+        "VUL": "Cum ergo huc convenissent sine ulla dilatione, sequenti die sedens pro tribunali, jussi adduci virum.",
+        "SYN": "Когда же они пришли сюда, то, без всякого отлагательства, на другой же день сел я на судейское место и повелел привести того человека.",
+        "NEO": "Ils sont donc venus ici, et, sans différer, j’ai pris place le lendemain sur mon tribunal, et j’ai ordonné de m’amener cet homme.",
+        "NAB": "So when (they) came together here, I made no delay; the next day I took my seat on the tribunal and ordered the man to be brought in.",
+        "VAT_ES": "Ellos vinieron aquí, y sin ninguna demora, me senté en el tribunal e hice comparecer a ese hombre al día siguiente.",
+        "CEI": "Il regno di Dio infatti non è questione di cibo o di bevanda, ma è giustizia, pace e gioia nello Spirito Santo:"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "περὶ οὗ σταθέντες οἱ κατήγοροι οὐδεμίαν αἰτίαν ἐπέφερον ὧν ὑπενόουν ἐγώ,",
+        "VUL": "De quo, cum stetissent accusatores, nullam causam deferebant, de quibus ego suspicabar malum.",
+        "SYN": "Обступив его, обвинители не представили ни одного из обвинений, какие я предполагал;",
+        "NEO": "Les accusateurs, s’étant présentés, ne lui imputèrent aucun des crimes que je supposais ;",
+        "NAB": "His accusers stood around him, but did not charge him with any of the crimes I suspected.",
+        "VAT_ES": "Pero cuando se presentaron los acusadores, estos no alegaron contra él ninguno de los cargos que yo sospechaba.",
+        "CEI": "chi serve il Cristo in queste cose, è bene accetto a Dio e stimato dagli uomini."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "ζητήματα δέ τινα περὶ τῆς ἰδίας δεισιδαιμονίας εἶχον πρὸς αὐτόν, καὶ περί τινος Ἰησοῦ τεθνηκότος, ὃν ἔφασκεν ὁ Παῦλος ζῇν.",
+        "VUL": "Quæstiones vero quasdam de sua superstitione habebant adversus eum, et de quodam Jesu defuncto, quem affirmabat Paulus vivere.",
+        "SYN": "но они имели некоторые споры с ним об их Богопочитании и о каком-то Иисусе умершем, о Котором Павел утверждал, что Он жив.",
+        "NEO": "mais ils eurent avec lui des controverses ayant trait à leur religion particulière et à un certain Jésus, qui est mort et que Paul affirmait être vivant.",
+        "NAB": "Instead they had some issues with him about their own religion and about a certain Jesus who had died but who Paul claimed was alive.",
+        "VAT_ES": "Lo que había entre ellos eran no sé qué discusiones sobre su religión, y sobre un tal Jesús que murió y que Pablo asegura que vive.",
+        "CEI": "Diamoci dunque alle opere della pace e alla edificazione vicendevole."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Ἀπορούμενος δὲ ἐγὼ τὴν περὶ τούτου ζήτησιν, ἔλεγον, εἰ βούλοιτο πορεύεσθαι εἰς Ἱερουσαλήμ, κἀκεῖ κρίνεσθαι περὶ τούτων.",
+        "VUL": "Hæsitans autem ego de hujusmodi quæstione, dicebam si vellet ire Jerosolymam, et ibi judicari de istis.",
+        "SYN": "Затрудняясь в решении этого вопроса, я сказал: хочет ли он идти в Иерусалим и там быть судимым в этом?",
+        "NEO": "Comme j’étais embarrassé pour faire une enquête sur ces matières, je lui demandai s’il voulait aller à Jérusalem et y être jugé sur ces accusations.",
+        "NAB": "Since I was at a loss how to investigate this controversy, I asked if he were willing to go to Jerusalem and there stand trial on these charges.",
+        "VAT_ES": "No sabiendo bien qué partido tomar en un asunto de esta índole le pregunté a Pablo si quería ir a Jerusalén para ser juzgado allí.",
+        "CEI": "Non distruggere l'opera di Dio per una questione di cibo! Tutto è mondo, d'accordo; ma è male per un uomo mangiare dando scandalo."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Τοῦ δὲ Παύλου ἐπικαλεσαμένου τηρηθῆναι αὐτὸν εἰς τὴν τοῦ Σεβαστοῦ διάγνωσιν, ἐκέλευσα τηρεῖσθαι αὐτόν, ἕως οὗ πέμψω αὐτὸν πρὸς Καίσαρα.",
+        "VUL": "Paulo autem appellante ut servaretur ad Augusti cognitionem, jussi servari eum, donec mittam eum ad Cæsarem.",
+        "SYN": "Но как Павел потребовал, чтобы он оставлен был на рассмотрение Августово, то я велел содержать его под стражею до тех пор, как пошлю его к кесарю.",
+        "NEO": "Mais Paul en ayant appelé, pour que sa cause fût réservée à la connaissance de l’empereur, j’ai ordonné de le garder jusqu’à ce que je l’envoie à César. »",
+        "NAB": "And when Paul appealed that he be held in custody for the Emperor's decision, I ordered him held until I could send him to Caesar.\"",
+        "VAT_ES": "Pero como este apeló al juicio de Su Majestad imperial, yo ordené que lo dejaran bajo custodia hasta que lo enviara al Emperador».",
+        "CEI": "Perciò è bene non mangiare carne, né bere vino, né altra cosa per la quale il tuo fratello possa scandalizzarsi."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Ἀγρίππας δὲ πρὸς τὸν Φῆστον ἔφη, Ἐβουλόμην καὶ αὐτὸς τοῦ ἀνθρώπου ἀκοῦσαι. Ὁ δέ, Αὔριον, φησίν, ἀκούσῃ αὐτοῦ.",
+        "VUL": "Agrippa autem dixit ad Festum : Volebam et ipse hominem audire. Cras, inquit, audies eum.",
+        "SYN": "Агриппа же сказал Фесту: хотел бы и я послушать этого человека. Завтра же, отвечал тот, услышишь его.",
+        "NEO": "Agrippa dit à Festus : « J’aurais voulu, moi aussi, entendre cet homme. » — « Demain, répondit Festus, tu l’entendras. »",
+        "NAB": "Agrippa said to Festus, \"I too should like to hear this man.\" He replied, \"Tomorrow you will hear him.\"",
+        "VAT_ES": "Agripa dijo entonces a Festo: «A mí también me gustaría escuchar a ese hombre». «Mañana lo escucharás», respondió Festo.",
+        "CEI": "La fede che possiedi, conservala per te stesso davanti a Dio. Beato chi non si condanna per ciò che egli approva."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "¶Τῇ οὖν ἐπαύριον, ἐλθόντος τοῦ Ἀγρίππα καὶ τῆς Βερνίκης μετὰ πολλῆς φαντασίας, καὶ εἰσελθόντων εἰς τὸ ἀκροατήριον, σύν τε τοῖς χιλιάρχοις καὶ ἀνδράσιν τοῖς κατ’ ἐξοχὴν οὖσιν τῆς πόλεως, καὶ κελεύσαντος τοῦ Φήστου, ἤχθη ὁ Παῦλος.",
+        "VUL": "Altera autem die cum venisset Agrippa et Bernice cum multa ambitione, et introissent in auditorium cum tribunis et viris principalibus civitatis, jubente Festo, adductus est Paulus.",
+        "SYN": "На другой день, когда Агриппа и Вереника пришли с великою пышностью и вошли в судебную палату с тысяченачальниками и знатнейшими гражданами, по приказанию Феста приведен был Павел.",
+        "NEO": "Le lendemain, Agrippa et Bérénice vinrent en grand faste. Quand ils furent dans la salle d’audience avec les tribuns et les principaux personnages de la ville, Paul fut amené par l’ordre de Festus.",
+        "NAB": "The next day Agrippa and Bernice came with great ceremony and entered the audience hall in the company of cohort commanders and the prominent men of the city and, by command of Festus, Paul was brought in.",
+        "VAT_ES": "Al día siguiente, Agripa y Berenice llegaron con gran pompa y entraron en la sala de audiencias, rodeados de los tribunos y de los hombres más importantes de la ciudad. A una orden de Festo, trajeron a Pablo.",
+        "CEI": "Ma chi è nel dubbio, mangiando si condanna, perché non agisce per fede; tutto quello, infatti, che non viene dalla fede è peccato."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Καί φησιν ὁ Φῆστος, Ἀγρίππα βασιλεῦ, καὶ πάντες οἱ συμπαρόντες ἡμῖν ἄνδρες, θεωρεῖτε τοῦτον περὶ οὗ πᾶν τὸ πλῆθος τῶν Ἰουδαίων ἐνέτυχόν μοι ἔν τε Ἱεροσολύμοις καὶ ἐνθάδε, ἐπιβοῶντες μὴ δεῖν ζῇν αὐτὸν μηκέτι.",
+        "VUL": "Et dicit Festus : Agrippa rex, et omnes qui simul adestis nobiscum viri, videtis hunc de quo omnis multitudo Judæorum interpellavit me Jerosolymis, petentes et acclamantes non oportere eum vivere amplius.",
+        "SYN": "И сказал Фест: царь Агриппа и все присутствующие с нами мужи! вы видите того, против которого все множество Иудеев приступали ко мне в Иерусалиме и здесь и кричали, что ему не должно более жить.",
+        "NEO": "Et Festus dit : « Roi Agrippa, et vous tous qui êtes présents avec nous, vous avez devant vous l’homme au sujet duquel les Juifs sont venus en foule me parler soit à Jérusalem, soit ici, en criant qu’il ne fallait plus le laisser vivre.",
+        "NAB": "And Festus said, \"King Agrippa and all you here present with us, look at this man about whom the whole Jewish populace petitioned me here and in Jerusalem, clamoring that he should live no longer.",
+        "VAT_ES": "Festo tomó la palabra, diciendo: «Rey Agripa y todos los que están aquí presentes, ustedes ven a este hombre, por quien toda la comunidad judía ha venido a verme, tanto aquí como en Jerusalén, insistiendo a gritos que no había que dejarlo vivir más."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Ἐγὼ δὲ καταλαβόμενος μηδὲν ἄξιον θανάτου αὐτὸν πεπραχέναι, καὶ αὐτοῦ δὲ τούτου ἐπικαλεσαμένου τὸν Σεβαστόν, ἔκρινα πέμπειν αὐτόν.",
+        "VUL": "Ego vere comperi nihil dignum morte eum admisisse. Ipso autem hoc appellante ad Augustum, judicavi mittere.",
+        "SYN": "Но я нашел, что он не сделал ничего, достойного смерти; и как он сам потребовал суда у Августа, то я решился послать его _к_ _нему._",
+        "NEO": "Pour moi, ayant reconnu qu’il n’a rien fait qui mérite la mort, et lui-même en ayant appelé à l’empereur, j’ai résolu de le lui envoyer.",
+        "NAB": "I found, however, that he had done nothing deserving death, and so when he appealed to the Emperor, I decided to send him.",
+        "VAT_ES": "Yo no he encontrado en él nada que merezca la muerte; pero ya que él mismo ha apelado al Emperador, he decidido enviárselo."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Περὶ οὗ ἀσφαλές τι γράψαι τῷ κυρίῳ οὐκ ἔχω. Διὸ προήγαγον αὐτὸν ἐφ’ ὑμῶν, καὶ μάλιστα ἐπὶ σοῦ, βασιλεῦ Ἀγρίππα, ὅπως τῆς ἀνακρίσεως γενομένης σχῶ τι γράψαι.",
+        "VUL": "De quo quid certum scribam domino, non habeo. Propter quod produxi eum ad vos, et maxime ad te, rex Agrippa, ut interrogatione facta habeam quid scribam.",
+        "SYN": "Я не имею ничего верного написать о нем государю; посему привел его пред вас, и особенно пред тебя, царь Агриппа, дабы, по рассмотрении, было мне что написать.",
+        "NEO": "Comme je n’ai rien de précis à écrire à l’empereur sur son compte, je l’ai fait comparaître devant vous, et surtout devant toi, roi Agrippa, afin qu’après cette audience je puisse rédiger mon rapport.",
+        "NAB": "But I have nothing definite to write about him to our sovereign; therefore I have brought him before all of you, and particularly before you, King Agrippa, so that I may have something to write as a result of this investigation.",
+        "VAT_ES": "Como no tengo nada preciso que escribir sobre él al Soberano, lo hice comparecer ante ustedes, especialmente ante ti, rey Agripa; así, después de este interrogatorio, yo tendré algo para informar."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Ἄλογον γάρ μοι δοκεῖ, πέμποντα δέσμιον, μὴ καὶ τὰς κατ’ αὐτοῦ αἰτίας σημᾶναι.",
+        "VUL": "Sine ratione enim mihi videtur mittere vinctum, et causas ejus non significare.",
+        "SYN": "Ибо, мне кажется, нерассудительно послать узника и не показать обвинений на него.",
+        "NEO": "Car il me paraît déraisonnable d’envoyer un prisonnier, sans indiquer en même temps de quoi on l’accuse. »",
+        "NAB": "For it seems senseless to me to send up a prisoner without indicating the charges against him.\"",
+        "VAT_ES": "Porque me parece absurdo enviar a un prisionero, sin indicar al mismo tiempo los cargos que se le imputan»."
+      }
+    }
+  }
+}

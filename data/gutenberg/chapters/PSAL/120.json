@@ -1,0 +1,140 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_120",
+  "book_key": "PSAL",
+  "sequence": 120,
+  "chapter_in": {
+    "MT": 120,
+    "VUL": 119,
+    "LXX": 119
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שִׁ֗יר הַֽ/מַּ֫עֲל֥וֹת אֶל יְ֭הוָה בַּ/צָּרָ֣תָ/ה לִּ֑/י קָ֝רָ֗אתִי וַֽ/יַּעֲנֵֽ/נִי׃",
+        "LXX": "ᾨδὴ τῶν ἀναβαθμῶν. Ἦρα τοὺς ὀφθαλμούς μου εἰς τὰ ὄρη· πόθεν ἥξει ἡ βοήθειά μου;",
+        "VUL": "Canticum graduum. [Levavi oculos meos in montes,/ unde veniet auxilium mihi./",
+        "SYN": "Возвожу очи мои к горам, откуда придет помощь моя.",
+        "NEO": "Cantique des montées.",
+        "NAB": "A song of ascents. The LORD answered me when I called in my distress:",
+        "CEI": "Canto delle ascensioni. Nella mia angoscia ho gridato al Signore ed egli mi ha risposto."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "יְֽהוָ֗ה הַצִּ֣ילָ/ה נַ֭פְשִׁ/י מִ/שְּׂפַת שֶׁ֑קֶר מִ/לָּשׁ֥וֹן רְמִיָּֽה׃",
+        "LXX": "ἡ βοήθειά μου παρὰ Κυρίου τοῦ ποιήσαντος τὸν οὐρανὸν καὶ τὴν γῆν.",
+        "VUL": "Auxilium meum a Domino,/ qui fecit cælum et terram./",
+        "SYN": "Помощь моя от Господа, сотворившего небо и землю.",
+        "NEO": "« \\+w Yahweh|strong=\"H3068\"\\+w** délivre mon âme de la lèvre de mensonge, de la langue astucieuse ! »",
+        "NAB": "LORD, deliver me from lying lips, from treacherous tongues.",
+        "VAT_ES": "&iexcl;Líbrame, Señor, de los labios mentirosos",
+        "CEI": "Signore, libera la mia vita dalle labbra di menzogna, dalla lingua ingannatrice."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "מַה יִּתֵּ֣ן לְ֭/ךָ וּ/מַה יֹּסִ֥יף לָ֗/ךְ לָשׁ֥וֹן רְמִיָּֽה׃",
+        "LXX": "μὴ δῷς εἰς σάλον τὸν πόδα σου, μηδὲ νυστάξει ὁ φυλάσσων σε.",
+        "VUL": "Non det in commotionem pedem tuum,/ neque dormitet qui custodit te./",
+        "SYN": "Не даст Он поколебаться ноге твоей, не воздремлет хранящий тебя;",
+        "NEO": "Que te sera-t-il donné, quel sera ton profit, langue perfide ?",
+        "NAB": "What will the Lord inflict on you, O treacherous tongue, and what more besides?",
+        "VAT_ES": "&iquest;Con qué te castigará el Señor,",
+        "CEI": "Che ti posso dare, come ripagarti, lingua ingannatrice?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "חִצֵּ֣י גִבּ֣וֹר שְׁנוּנִ֑ים עִ֝֗ם גַּחֲלֵ֥י רְתָמִֽים׃",
+        "LXX": "ἰδοὺ οὐ νυστάξει οὐδὲ ἐξυπνώσει ὁ φυλάσσων τὸν Ἰσραήλ.",
+        "VUL": "Ecce non dormitabit neque dormiet/ qui custodit Israël./",
+        "SYN": "не дремлет и не спит хранящий Израиля.",
+        "NEO": "Les flèches aiguës du Tout-Puissant, avec les charbons ardents du genêt.",
+        "NAB": "A warrior's sharpened arrows and fiery coals of brush wood!",
+        "VAT_ES": "Con flechas afiladas de guerrero",
+        "CEI": "Frecce acute di un prode, con carboni di ginepro."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אֽוֹיָה לִ֭/י כִּי גַ֣רְתִּי מֶ֑שֶׁךְ שָׁ֝כַ֗נְתִּי עִֽם אָהֳלֵ֥י קֵדָֽר׃",
+        "LXX": "Κύριος φυλάξει σε, Κύριος σκέπη σου ἐπὶ χεῖρα δεξιάν σου·",
+        "VUL": "Dominus custodit te ;/ Dominus protectio tua super manum dexteram tuam./",
+        "SYN": "Господь - хранитель твой; Господь - сень твоя с правой руки твоей.",
+        "NEO": "Malheureux que je suis de séjourner dans Mések, d’habiter sous les tentes de Cédar !",
+        "NAB": "Alas, I was an alien in Meshech, I lived near the tents of Kedar!",
+        "VAT_ES": "&iexcl;Ay de mí, que estoy desterrado en Mésec,",
+        "CEI": "Me infelice: abito straniero in Mosoch, dimoro fra le tende di Cedar!"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "רַ֭בַּת שָֽׁכְנָה לָּ֣/הּ נַפְשִׁ֑/י עִ֝֗ם שׂוֹנֵ֥א שָׁלֽוֹם׃",
+        "LXX": "ἡμέρας ὁ ἥλιος οὐκ ἐκκαύσει σε, καὶ ἡ σελήνη τὴν νύκτα.",
+        "VUL": "Per diem sol non uret te,/ neque luna per noctem./",
+        "SYN": "Днем солнце не поразит тебя, ни луна ночью.",
+        "NEO": "Trop longtemps j’ai demeuré avec ceux qui haïssent la paix.",
+        "NAB": "Too long did I live among those who hated peace.",
+        "VAT_ES": "Mucho tiempo he convivido",
+        "CEI": "Troppo io ho dimorato con chi detesta la pace."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אֲֽנִי שָׁ֭לוֹם וְ/כִ֣י אֲדַבֵּ֑ר הֵ֝֗מָּה לַ/מִּלְחָמָֽה׃",
+        "LXX": "Κύριος φυλάξει σε ἀπὸ παντὸς κακοῦ, φυλάξαι τὴν ψυχήν σου.",
+        "VUL": "Dominus custodit te ab omni malo ;/ custodiat animam tuam Dominus./",
+        "SYN": "Господь сохранит тебя от всякого зла; сохранит душу твою [Господь].",
+        "NEO": "Je suis un homme de paix et, quand je leur parle, ils sont pour la guerre.",
+        "NAB": "When I spoke of peace, they were for war.",
+        "VAT_ES": "Cuando yo hablo de paz,",
+        "CEI": "Io sono per la pace, ma quando ne parlo, essi vogliono la guerra."
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_011",
+  "book_key": "PSAL",
+  "sequence": 11,
+  "chapter_in": {
+    "MT": 11,
+    "VUL": 10,
+    "LXX": 10
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֗חַ לְ/דָ֫וִ֥ד בַּֽ/יהוָ֨ה חָסִ֗יתִי אֵ֭יךְ תֹּאמְר֣וּ לְ/נַפְשִׁ֑/י נודו נ֝֗וּדִי הַרְ/כֶ֥ם צִפּֽוֹר׃",
+        "LXX": "Εἰς τὸ τέλος, ὑπὲρ τῆς ὀγδόης· ψαλμὸς τῷ Δαυείδ.",
+        "VUL": "In finem, pro octava. Psalmus David.",
+        "SYN": "Начальнику хора. На восьмиструнном. Псалом Давида.",
+        "NEO": "Au maître de chant. De David.",
+        "NAB": "For the leader. Of David. In the LORD I take refuge; how can you say to me, \"Flee like a bird to the mountains!",
+        "CEI": "Al maestro del coro. Di Davide. Nel Signore mi sono rifugiato, come potete dirmi: \"Fuggi come un passero verso il monte\"?"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כִּ֤י הִנֵּ֪ה הָ/רְשָׁעִ֡ים יִדְרְכ֬וּ/ן קֶ֗שֶׁת כּוֹנְנ֣וּ חִצָּ֣/ם עַל יֶ֑תֶר לִ/יר֥וֹת בְּמוֹ אֹ֝֗פֶל לְ/יִשְׁרֵי לֵֽב׃",
+        "LXX": "Σῶσόν με, Κύριε· ὅτι ἐκλέλοιπεν ὅσιος, ὅτι ὠλιγώθησαν αἱ ἀλήθειαι ἀπὸ τῶν υἱῶν τῶν ἀνθρώπων.",
+        "VUL": "[Salvum me fac, Domine, quoniam defecit sanctus,/ quoniam diminutæ sunt veritates a filiis hominum./",
+        "SYN": "Спаси [меня], Господи, ибо не стало праведного, ибо нет верных между сынами человеческими.",
+        "NEO": "Car voici que les méchants bandent l’arc, ils ont ajusté leur flèche sur la corde, pour tirer dans l’ombre sur les hommes au cœur droit.",
+        "NAB": "See how the wicked string their bows, fit their arrows to the string to shoot from the shadows at the upright.",
+        "VAT_ES": "porque los malvados tienden su arco",
+        "CEI": "Ecco, gli empi tendono l'arco, aggiustano la freccia sulla corda per colpire nel buio i retti di cuore."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כִּ֣י הַ֭/שָּׁתוֹת יֵֽהָרֵס֑וּ/ן צַ֝דִּ֗יק מַה פָּעָֽל׃",
+        "LXX": "μάταια ἐλάλησεν ἕκαστος πρὸς τὸν πλησίον αὐτοῦ, χείλη δόλια ἐν καρδίᾳ καὶ ἐν καρδίᾳ ἐλάλησαν.",
+        "VUL": "Vana locuti sunt unusquisque ad proximum suum ;/ labia dolosa, in corde et corde locuti sunt./",
+        "SYN": "Ложь говорит каждый своему ближнему; уста льстивы, говорят от сердца притворного.",
+        "NEO": "Quand les fondements sont renversés, que peut faire le juste ? »",
+        "NAB": "When foundations are being destroyed, what can the upright do?\"",
+        "VAT_ES": "Cuando ceden los cimientos,",
+        "CEI": "Quando sono scosse le fondamenta, il giusto che cosa può fare?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "יְהוָ֤ה בְּֽ/הֵ֘יכַ֤ל קָדְשׁ֗/וֹ יְהוָה֮ בַּ/שָּׁמַ֪יִם כִּ֫סְא֥/וֹ עֵינָ֥י/ו יֶחֱז֑וּ עַפְעַפָּ֥י/ו יִ֝בְחֲנ֗וּ בְּנֵ֣י אָדָֽם׃",
+        "LXX": "ἐξολεθρεύσαι Κύριος πάντα τὰ χείλη τὰ δόλια καὶ γλῶσσαν μεγαλορήμονα,",
+        "VUL": "Disperdat Dominus universa labia dolosa,/ et linguam magniloquam./",
+        "SYN": "Истребит Господь все уста льстивые, язык велеречивый,",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dans son saint temple, \\+w Yahweh|strong=\"H3068\"\\+w**, qui a son trône dans les cieux, a les yeux ouverts ; ses paupières sondent les enfants des hommes.",
+        "NAB": "The LORD is in his holy temple; the LORD'S throne is in heaven. God's eyes keep careful watch; they test all peoples.",
+        "VAT_ES": "Pero el Señor está en su santo Templo,",
+        "CEI": "Ma il Signore nel tempio santo, il Signore ha il trono nei cieli. I suoi occhi sono aperti sul mondo, le sue pupille scrutano ogni uomo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "יְהוָה֮ צַדִּ֪יק יִ֫בְחָ֥ן וְ֭/רָשָׁע וְ/אֹהֵ֣ב חָמָ֑ס שָֽׂנְאָ֥ה נַפְשֽׁ/וֹ׃",
+        "LXX": "τοὺς εἰπόντας Τὴν γλῶσσαν ἡμῶν μεγαλυνοῦμεν, τὰ χείλη ἡμῶν παρ’ ἡμῶν ἐστίν· τίς ἡμῶν κύριός ἐστιν;",
+        "VUL": "Qui dixerunt : Linguam nostram magnificabimus ;/ labia nostra a nobis sunt./ Quis noster dominus est ?/",
+        "SYN": "_тех,_ которые говорят: \"языком нашим пересилим, уста наши с нами; кто нам господин\"?",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** sonde le juste ; il hait le méchant et celui qui se plaît à la violence.",
+        "NAB": "The LORD tests the good and the bad, hates those who love violence,",
+        "VAT_ES": "el Señor examina al justo y al culpable,",
+        "CEI": "Il Signore scruta giusti ed empi, egli odia chi ama la violenza."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "יַמְטֵ֥ר עַל רְשָׁעִ֗ים פַּ֫חִ֥ים אֵ֣שׁ וְ֭/גָפְרִית וְ/ר֥וּחַ זִלְעָפ֗וֹת מְנָ֣ת כּוֹסָֽ/ם׃",
+        "LXX": "ἀπὸ τῆς ταλαιπωρίας τῶν πτωχῶν καὶ ἀπὸ τοῦ στεναγμοῦ τῶν πενήτων νῦν ἀναστήσομαι, λέγει Κύριος· θήσομαι ἐν σωτηρίᾳ, παρησιάσομαι ἐν αὐτῷ.",
+        "VUL": "Propter miseriam inopum, et gemitum pauperum,/ nunc exsurgam, dicit Dominus./ Ponam in salutari ;/ fiducialiter agam in eo./",
+        "SYN": "Ради страдания нищих и воздыхания бедных ныне восстану, говорит Господь, поставлю в безопасности того, кого уловить хотят.",
+        "NEO": "Il fera pleuvoir sur les méchants des lacets, du feu et du soufre ; un vent brûlant, voilà la coupe qu’ils auront en partage.",
+        "NAB": "And rains upon the wicked fiery coals and brimstone, a scorching wind their allotted cup.",
+        "VAT_ES": "Que él haga llover brasas y azufre sobre los impíos,",
+        "CEI": "Farà piovere sugli empi brace, fuoco e zolfo, vento bruciante toccherà loro in sorte;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּֽי צַדִּ֣יק יְ֭הוָה צְדָק֣וֹת אָהֵ֑ב יָ֝שָׁ֗ר יֶחֱז֥וּ פָנֵֽי/מוֹ׃",
+        "LXX": "τὰ λόγια Κυρίου λόγια ἁγνά, ἀργύριον πεπυρωμένον, δοκίμιον τῇ γῇ, κεκαθαρισμένον ἑπταπλασίως.",
+        "VUL": "Eloquia Domini, eloquia casta ; argentum igne examinatum,/ probatum terræ, purgatum septuplum./",
+        "SYN": "Слова Господни - слова чистые, серебро, очищенное от земли в горниле, семь раз переплавленное.",
+        "NEO": "Car \\+w Yahweh|strong=\"H3068\"\\+w** est juste, il aime la justice ; les hommes droits contempleront sa face.",
+        "NAB": "The LORD is just and loves just deeds; the upright shall see his face.",
+        "VAT_ES": "Porque el Señor es justo y ama la justicia,",
+        "CEI": "Giusto è il Signore, ama le cose giuste; gli uomini retti vedranno il suo volto."
+      }
+    }
+  }
+}

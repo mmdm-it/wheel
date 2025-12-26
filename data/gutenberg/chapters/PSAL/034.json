@@ -1,0 +1,409 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_034",
+  "book_key": "PSAL",
+  "sequence": 34,
+  "chapter_in": {
+    "MT": 34,
+    "VUL": 33,
+    "LXX": 33
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לְ/דָוִ֗ד בְּ/שַׁנּוֹת֣/וֹ אֶת טַ֭עְמ/וֹ לִ/פְנֵ֣י אֲבִימֶ֑לֶךְ וַֽ֝/יְגָרֲשֵׁ֗/הוּ וַ/יֵּלַֽךְ׃",
+        "LXX": "Τῷ Δαυείδ. Δίκασον, Κύριε, τοὺς ἀδικοῦντάς ⸆ με, πολέμησον τοὺς πολεμοῦντάς με·",
+        "VUL": "Ipsi David. [Judica, Domine, nocentes me ;/ expugna impugnantes me./",
+        "SYN": "Вступись, Господи, в тяжбу с тяжущимися со мною, побори борющихся со мною;",
+        "NEO": "De David : lorsqu’il contrefit l’insensé en présence d’Abimélek, et que, chassé par lui, il s’en alla.",
+        "NAB": "Of David, when he feigned madness before Abimelech, who forced him to depart.",
+        "CEI": "Di Davide, quando si finse pazzo in presenza di Abimelech e, da lui scacciato, se ne andò."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אֲבָרֲכָ֣ה אֶת יְהוָ֣ה בְּ/כָל עֵ֑ת תָּ֝מִ֗יד תְּֽהִלָּת֥/וֹ בְּ/פִֽ/י׃",
+        "LXX": "ἐπιλαβοῦ ὅπλου καὶ θυρεοῦ, καὶ ἀνάστηθι εἰς βοήθειάν μοι·",
+        "VUL": "Apprehende arma et scutum,/ et exsurge in adjutorium mihi./",
+        "SYN": "возьми щит и латы и восстань на помощь мне;",
+        "NEO": "Je veux bénir \\+w Yahweh|strong=\"H3068\"\\+w** en tout temps ; sa louange sera toujours dans ma bouche.",
+        "NAB": "I will bless the LORD at all times; praise shall be always in my mouth.",
+        "VAT_ES": "[Alef] Bendeciré al Señor en todo tiempo,",
+        "CEI": "Benedirò il Signore in ogni tempo, sulla mia bocca sempre la sua lode."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "בַּ֭/יהוָה תִּתְהַלֵּ֣ל נַפְשִׁ֑/י יִשְׁמְע֖וּ עֲנָוִ֣ים וְ/יִשְׂמָֽחוּ׃",
+        "LXX": "⸂⸆⸃ ἔκχεον ῥομφαίαν καὶ σύνκλεισον ἐξ ἐναντίας τῶν καταδιωκόντων με· εἰπὸν τῇ ψυχῇ μου Σωτηρία σου ἐγώ εἰμι.",
+        "VUL": "Effunde frameam, et conclude adversus eos qui persequuntur me ;/ dic animæ meæ : Salus tua ego sum./",
+        "SYN": "обнажи мечь и прегради _путь_ преследующим меня; скажи душе моей: \"Я - спасение твое!\"",
+        "NEO": "En \\+w Yahweh|strong=\"H3068\"\\+w** mon âme se glorifiera : que les humbles entendent et se réjouissent !",
+        "NAB": "My soul will glory in the LORD that the poor may hear and be glad.",
+        "VAT_ES": "[Bet] Mi alma se gloría en el Señor;",
+        "CEI": "Io mi glorio nel Signore, ascoltino gli umili e si rallegrino."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "גַּדְּל֣וּ לַ/יהוָ֣ה אִתִּ֑/י וּ/נְרוֹמְמָ֖ה שְׁמ֣/וֹ יַחְדָּֽו׃",
+        "LXX": "αἰσχυνθείησαν καὶ ἐντραπείησαν οἱ ζητοῦντες τὴν ψυχήν μου, ἀποστραφείησαν εἰς τὰ ὀπίσω καὶ καταισχυνθείησαν οἱ λογιζόμενοί μοι κακά.",
+        "VUL": "Confundantur et revereantur quærentes animam meam ;/ avertantur retrorsum et confundantur cogitantes mihi mala./",
+        "SYN": "Да постыдятся и посрамятся ищущие души моей; да обратятся назад и покроются бесчестием умышляющие мне зло;",
+        "NEO": "Exaltez avec moi \\+w Yahweh|strong=\"H3068\"\\+w**, ensemble célébrons son nom !",
+        "NAB": "Magnify the LORD with me; let us exalt his name together.",
+        "VAT_ES": "[Guímel] Glorifiquen conmigo al Señor,",
+        "CEI": "Celebrate con me il Signore, esaltiamo insieme il suo nome."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "דָּרַ֣שְׁתִּי אֶת יְהוָ֣ה וְ/עָנָ֑/נִי וּ/מִ/כָּל מְ֝גוּרוֹתַ֗/י הִצִּילָֽ/נִי׃",
+        "LXX": "γενηθήτωσαν ὡσεὶ χνοῦς κατὰ πρόσωπον ἀνέμου, καὶ ἄγγελος Κυρίου ἐκθλίβων αὐτούς·",
+        "VUL": "Fiant tamquam pulvis ante faciem venti,/ et angelus Domini coarctans eos./",
+        "SYN": "да будут они, как прах пред лицем ветра, и Ангел Господень да прогоняет _их;_",
+        "NEO": "J’ai cherché \\+w Yahweh|strong=\"H3068\"\\+w**, et il m’a exaucé, et il m’a délivré de toutes mes frayeurs.",
+        "NAB": "I sought the LORD, who answered me, delivered me from all my fears.",
+        "VAT_ES": "[Dálet] Busqué al Señor: él me respondió",
+        "CEI": "Ho cercato il Signore e mi ha risposto e da ogni timore mi ha liberato."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "הִבִּ֣יטוּ אֵלָ֣י/ו וְ/נָהָ֑רוּ וּ֝/פְנֵי/הֶ֗ם אַל יֶחְפָּֽרוּ׃",
+        "LXX": "γενηθήτω ἡ ὁδὸς αὐτῶν σκότος καὶ ὀλίσθημα, καὶ ἄγγελος Κυρίου καταδιώκων ⸆ αὐτούς.",
+        "VUL": "Fiat via illorum tenebræ et lubricum,/ et angelus Domini persequens eos./",
+        "SYN": "да будет путь их темен и скользок, и Ангел Господень да преследует их,",
+        "NEO": "Quand on regarde vers lui, on est rayonnant de joie,",
+        "NAB": "Look to God that you may be radiant with joy and your faces may not blush for shame.",
+        "VAT_ES": "[He] Miren hacia él y quedarán resplandecientes,",
+        "CEI": "Guardate a lui e sarete raggianti, non saranno confusi i vostri volti."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "זֶ֤ה עָנִ֣י קָ֭רָא וַ/יהוָ֣ה שָׁמֵ֑עַ וּ/מִ/כָּל צָ֝רוֹתָ֗י/ו הוֹשִׁיעֽ/וֹ׃",
+        "LXX": "ὅτι δωρεὰν ἔκρυψάν μοι διαφθορὰν παγίδος αὐτῶν, μάτην ὠνείδισαν τὴν ψυχήν μου.",
+        "VUL": "Quoniam gratis absconderunt mihi interitum laquei sui ; supervacue exprobraverunt animam meam./",
+        "SYN": "ибо они без вины скрыли для меня яму - сеть свою, без вины выкопали _ее_ для души моей.",
+        "NEO": "Ce pauvre a crié, et \\+w Yahweh|strong=\"H3068\"\\+w** l’a entendu, et il l’a sauvé de toutes ses angoisses.",
+        "NAB": "In my misfortune I called, the LORD heard and saved me from all distress.",
+        "VAT_ES": "[Zain] Este pobre hombre invocó al Señor:",
+        "CEI": "Questo povero grida e il Signore lo ascolta, lo libera da tutte le sue angosce."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "חֹנֶ֤ה מַלְאַךְ יְהוָ֓ה סָ֘בִ֤יב לִֽ/ירֵאָ֗י/ו וַֽ/יְחַלְּצֵֽ/ם׃",
+        "LXX": "ἐλθέτω αὐτοῖς παγὶς ἣν οὐ γινώσκουσιν, καὶ ἡ θήρα ἣν ἔκρυψαν συλλαβέτω αὐτούς, καὶ ἐν τῇ παγίδι πεσοῦνται ἐν αὐτῇ.",
+        "VUL": "Veniat illi laqueus quem ignorat,/ et captio quam abscondit apprehendat eum,/ et in laqueum cadat in ipsum./",
+        "SYN": "Да придет на него гибель неожиданная, и сеть его, которую он скрыл _для меня,_ да уловит его самого; да впадет в нее на погибель.",
+        "NEO": "L’ange de \\+w Yahweh|strong=\"H3068\"\\+w** campe autour de ceux qui le craignent, et il les sauve.",
+        "NAB": "The angel of the LORD, who encamps with them, delivers all who fear God.",
+        "VAT_ES": "[Jet] El Angel del Señor acampa",
+        "CEI": "L'angelo del Signore si accampa attorno a quelli che lo temono e li salva."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "טַעֲמ֣וּ וּ֭/רְאוּ כִּי ט֣וֹב יְהוָ֑ה אַֽשְׁרֵ֥י הַ֝/גֶּ֗בֶר יֶחֱסֶה בּֽ/וֹ׃",
+        "LXX": "ἡ δὲ ψυχή μου ἀγαλλιάσεται ἐπὶ τῷ κυρίῳ, τερφθήσεται ἐπὶ τῷ σωτηρίῳ αὐτοῦ.",
+        "VUL": "Anima autem mea exsultabit in Domino,/ et delectabitur super salutari suo./",
+        "SYN": "А моя душа будет радоваться о Господе, будет веселиться о спасении от Него.",
+        "NEO": "Goûtez et voyez combien \\+w Yahweh|strong=\"H3068\"\\+w** est bon ! Heureux l’homme qui met en lui son refuge !",
+        "NAB": "Learn to savor how good the LORD is; happy are those who take refuge in him.",
+        "VAT_ES": "[Tet] &iexcl;Gusten y vean qué bueno es el Señor!",
+        "CEI": "Gustate e vedete quanto è buono il Signore; beato l'uomo che in lui si rifugia."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "יְר֣אוּ אֶת יְהוָ֣ה קְדֹשָׁ֑י/ו כִּי אֵ֥ין מַ֝חְס֗וֹר לִ/ירֵאָֽי/ו׃",
+        "LXX": "πάντα τὰ ὀστᾶ μου ἐροῦσιν Κύριε, τίς ὅμοιός σοι; ῥυόμενος πτωχὸν ἐκ χειρὸς στερεωτέρων αὐτοῦ, καὶ πτωχὸν καὶ πένητα ἀπὸ τῶν διαρπαζόντων αὐτόν.",
+        "VUL": "Omnia ossa mea dicent :/ Domine, quis similis tibi ?/ eripiens inopem de manu fortiorum ejus ;/ egenum et pauperem a diripientibus eum./",
+        "SYN": "Все кости мои скажут: \"Господи! кто подобен Тебе, избавляющему слабого от сильного, бедного и нищего от грабителя его?\"",
+        "NEO": "Craignez \\+w Yahweh|strong=\"H3068\"\\+w**, vous ses saints, car il n’y a pas d’indigence pour ceux qui le craignent.",
+        "NAB": "Fear the LORD, you holy ones; nothing is lacking to those who fear him.",
+        "CEI": "Temete il Signore, suoi santi, nulla manca a coloro che lo temono."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כְּ֭פִירִים רָשׁ֣וּ וְ/רָעֵ֑בוּ וְ/דֹרְשֵׁ֥י יְ֝הוָ֗ה לֹא יַחְסְר֥וּ כָל טֽוֹב׃",
+        "LXX": "ἀναστάντες μάρτυρες ἄδικοι ἃ οὐκ ἐγίνωσκον ἐπηρώτων με·",
+        "VUL": "Surgentes testes iniqui,/ quæ ignorabam interrogabant me./",
+        "SYN": "Восстали на меня свидетели неправедные: чего я не знаю, о том допрашивают меня;",
+        "NEO": "Les lionceaux peuvent connaître la disette et la faim, mais ceux qui cherchent \\+w Yahweh|strong=\"H3068\"\\+w** ne manquent d’aucun bien.",
+        "NAB": "The powerful grow poor and hungry, but those who seek the LORD lack no good thing.",
+        "VAT_ES": "[Caf] Los ricos se empobrecen y sufren hambre,",
+        "CEI": "I ricchi impoveriscono e hanno fame, ma chi cerca il Signore non manca di nulla."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "לְֽכוּ בָ֭נִים שִׁמְעוּ לִ֑/י יִֽרְאַ֥ת יְ֝הוָ֗ה אֲלַמֶּדְ/כֶֽם׃",
+        "LXX": "ἀνταπεδίδοσάν μοι πονηρὰ ἀντὶ καλῶν, καὶ ἀτεκνίαν τῇ ψυχῇ μου·",
+        "VUL": "Retribuebant mihi mala pro bonis,/ sterilitatem animæ meæ./",
+        "SYN": "воздают мне злом за добро, сиротством душе моей.",
+        "NEO": "Venez, mes fils, écoutez-moi, je vous enseignerai la crainte de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Come, children, listen to me; I will teach you the fear of the LORD.",
+        "VAT_ES": "[Lámed] Vengan, hijos, escuchen:",
+        "CEI": "Venite, figli, ascoltatemi; v'insegnerò il timore del Signore."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "מִֽי הָ֭/אִישׁ הֶ/חָפֵ֣ץ חַיִּ֑ים אֹהֵ֥ב יָ֝מִ֗ים לִ/רְא֥וֹת טֽוֹב׃",
+        "LXX": "ἐγὼ δὲ ἐν τῷ αὐτοὺς παρενοχλεῖν μοι ἐνεδυόμην σάκκον, καὶ ἐταπείνουν ἐν νηστίᾳ τὴν ψυχήν μου, καὶ ἡ προσευχή μου εἰς κόλπον μου ἀποστραφήσεται.",
+        "VUL": "Ego autem, cum mihi molesti essent, induebar cilicio ;/ humiliabam in jejunio animam meam,/ et oratio mea in sinu meo convertetur./",
+        "SYN": "Я во время болезни их одевался во вретище, изнурял постом душу мою, и молитва моя возвращалась в недро мое.",
+        "NEO": "Quel est l’homme qui aime la vie, qui désire de longs jours pour jouir du bonheur ? —",
+        "NAB": "Who among you loves life, takes delight in prosperous days?",
+        "VAT_ES": "[Mem] &iquest;Quién es el hombre que ama la vida",
+        "CEI": "C'è qualcuno che desidera la vita e brama lunghi giorni per gustare il bene?"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "נְצֹ֣ר לְשׁוֹנְ/ךָ֣ מֵ/רָ֑ע וּ֝/שְׂפָתֶ֗י/ךָ מִ/דַּבֵּ֥ר מִרְמָֽה׃",
+        "LXX": "ὡς πλησίον, ὡς ἀδελφὸν ἡμέτερον, οὕτως εὐηρέστουν· ὡς πενθῶν καὶ σκυθρωπάζων οὕτως ἐταπεινούμην.",
+        "VUL": "Quasi proximum et quasi fratrem nostrum sic complacebam ;/ quasi lugens et contristatus sic humiliabar./",
+        "SYN": "Я поступал, как бы это был друг мой, брат мой; я ходил скорбный, с поникшею головою, как бы оплакивающий мать.",
+        "NEO": "Préserve ta langue du mal, et tes lèvres des paroles trompeuses ;",
+        "NAB": "Keep your tongue from evil, your lips from speaking lies.",
+        "VAT_ES": "[Nun] Guarda tu lengua del mal,",
+        "CEI": "Preserva la lingua dal male, le labbra da parole bugiarde."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "ס֣וּר מֵ֭/רָע וַ/עֲשֵׂה ט֑וֹב בַּקֵּ֖שׁ שָׁל֣וֹם וְ/רָדְפֵֽ/הוּ׃",
+        "LXX": "καὶ κατ’ ἐμοῦ ηὐφράνθησαν καὶ συνήχθησαν, συνήχθησαν ἐπ’ ἐμὲ μάστιγες καὶ οὐκ ἔγνων, διεσχίσθησαν καὶ οὐ κατενύγησαν·",
+        "VUL": "Et adversum me lætati sunt, et convenerunt ;/ congregata sunt super me flagella, et ignoravi./",
+        "SYN": "А когда я претыкался, они радовались и собирались; собирались ругатели против меня, не знаю за что, поносили и не переставали;",
+        "NEO": "éloigne-toi du mal et fais le bien, recherche la paix, et poursuis-la.",
+        "NAB": "Turn from evil and do good; seek peace and pursue it.",
+        "VAT_ES": "[Sámec] Apártate del mal y practica el bien,",
+        "CEI": "Stà lontano dal male e fà il bene, cerca la pace e perseguila."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "עֵינֵ֣י יְ֭הוָה אֶל צַדִּיקִ֑ים וְ֝/אָזְנָ֗י/ו אֶל שַׁוְעָתָֽ/ם׃",
+        "LXX": "ἐπείρασάν με, ἐξεμυκτήρισάν με μυκτηρισμόν, ἔβρυξαν ἐπ’ ἐμὲ τοὺς ὀδόντας αὐτῶν.",
+        "VUL": "Dissipati sunt, nec compuncti ;/ tentaverunt me, subsannaverunt me subsannatione ;/ frenduerunt super me dentibus suis./",
+        "SYN": "с лицемерными насмешниками скрежетали на меня зубами своими.",
+        "NEO": "Les yeux de \\+w Yahweh|strong=\"H3068\"\\+w** sont sur les justes ; et ses oreilles sont attentives à leurs cris.",
+        "NAB": "The LORD has eyes for the just and ears for their cry.",
+        "VAT_ES": "[Ain] Los ojos del Señor miran al justo",
+        "CEI": "Gli occhi del Signore sui giusti, i suoi orecchi al loro grido di aiuto."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "פְּנֵ֣י יְ֭הוָה בְּ/עֹ֣שֵׂי רָ֑ע לְ/הַכְרִ֖ית מֵ/אֶ֣רֶץ זִכְרָֽ/ם׃",
+        "LXX": "Κύριε, πότε ἐπόψῃ; ἀποκατάστησον τὴν ψυχήν μου ἀπὸ τῆς κακουργίας αὐτῶν, ἀπὸ λεόντων τὴν μονογενῆ μου.",
+        "VUL": "Domine, quando respicies ?/ Restitue animam meam a malignitate eorum ;/ a leonibus unicam meam./",
+        "SYN": "Господи! долго ли будешь смотреть _на это?_ Отведи душу мою от злодейств их, от львов - одинокую мою.",
+        "NEO": "La face de \\+w Yahweh|strong=\"H3068\"\\+w** est contre ceux qui font le mal, pour retrancher de la terre leur souvenir.",
+        "NAB": "The LORD'S face is against evildoers to wipe out their memory from the earth.",
+        "VAT_ES": "[Pe] pero el Señor rechaza a los que hacen el mal",
+        "CEI": "Il volto del Signore contro i malfattori, per cancellarne dalla terra il ricordo."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "צָעֲק֣וּ וַ/יהוָ֣ה שָׁמֵ֑עַ וּ/מִ/כָּל צָ֝רוֹתָ֗/ם הִצִּילָֽ/ם׃",
+        "LXX": "ἐξομολογήσομαί σοι, Κύριε, ἐν ἐκκλησίᾳ πολλῇ, ἐν λαῷ βαρεῖ αἰνέσω σε.",
+        "VUL": "Confitebor tibi in ecclesia magna ; in populo gravi laudabo te./",
+        "SYN": "Я прославлю Тебя в собрании великом, среди народа многочисленного восхвалю Тебя,",
+        "NEO": "Les justes crient, et \\+w Yahweh|strong=\"H3068\"\\+w** les entend, et il les délivre de toutes leurs angoisses.",
+        "NAB": "When the just cry out, the LORD hears and rescues them from all distress.",
+        "VAT_ES": "[Sade] Cuando ellos claman, el Señor los escucha",
+        "CEI": "Gridano e il Signore li ascolta, li salva da tutte le loro angosce."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "קָר֣וֹב יְ֭הוָה לְ/נִשְׁבְּרֵי לֵ֑ב וְֽ/אֶת דַּכְּאֵי ר֥וּחַ יוֹשִֽׁיעַ׃",
+        "LXX": "μὴ ἐπιχαρείησάν μοι οἱ ἐχθραίνοντές μοι ματαίως, οἱ μισοῦντές με δωρεὰν καὶ διανεύοντες ὀφθαλμοῖς.",
+        "VUL": "Non supergaudeant mihi qui adversantur mihi inique,/ qui oderunt me gratis, et annuunt oculis./",
+        "SYN": "чтобы не торжествовали надо мною враждующие против меня неправедно, и не перемигивались глазами ненавидящие меня безвинно;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est près de ceux qui ont le cœur brisé, il sauve ceux dont l’esprit est abattu.",
+        "NAB": "The LORD is close to the brokenhearted, saves those whose spirit is crushed.",
+        "VAT_ES": "[Qof] El Señor está cerca del que sufre",
+        "CEI": "Il Signore è vicino a chi ha il cuore ferito, egli salva gli spiriti affranti."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "רַ֭בּוֹת רָע֣וֹת צַדִּ֑יק וּ֝/מִ/כֻּלָּ֗/ם יַצִּילֶ֥/נּוּ יְהוָֽה׃",
+        "LXX": "ὅτι ἐμοὶ μὲν εἰρηνικὰ ἐλάλουν, καὶ ἐπ’ ὀργῇ δόλους διελογίζοντο·",
+        "VUL": "Quoniam mihi quidem pacifice loquebantur ;/ et in iracundia terræ loquentes, dolos cogitabant./",
+        "SYN": "ибо не о мире говорят они, но против мирных земли составляют лукавые замыслы;",
+        "NEO": "Nombreux sont les malheurs du juste, mais de tous \\+w Yahweh|strong=\"H3068\"\\+w** le délivre.",
+        "NAB": "Many are the troubles of the just, but the LORD delivers from them all.",
+        "VAT_ES": "[Res] El justo padece muchos males,",
+        "CEI": "Molte sono le sventure del giusto, ma lo libera da tutte il Signore."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "שֹׁמֵ֥ר כָּל עַצְמוֹתָ֑י/ו אַחַ֥ת מֵ֝/הֵ֗נָּה לֹ֣א נִשְׁבָּֽרָה׃",
+        "LXX": "καὶ ἐπλάτυναν ἐπ’ ἐμὲ τὸ στόμα αὐτῶν, εἶπαν Εὖγε εὖγε, εἶδαν οἱ ὀφθαλμοὶ ἡμῶν.",
+        "VUL": "Et dilataverunt super me os suum ;/ dixerunt : Euge, euge ! viderunt oculi nostri./",
+        "SYN": "расширяют на меня уста свои; говорят: \"хорошо! хорошо! видел глаз наш\".",
+        "NEO": "Il garde tous ses os, aucun d’eux ne sera brisé.",
+        "NAB": "God watches over all their bones; not a one shall be broken.",
+        "VAT_ES": "[Sin] El cuida todos sus huesos,",
+        "CEI": "Preserva tutte le sue ossa, neppure uno sarà spezzato."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "תְּמוֹתֵ֣ת רָשָׁ֣ע רָעָ֑ה וְ/שֹׂנְאֵ֖י צַדִּ֣יק יֶאְשָֽׁמוּ׃",
+        "LXX": "εἶδες, Κύριε, μὴ παρασιωπήσῃς· Κύριε, μὴ ἀποστῇς ἀπ’ ἐμοῦ.",
+        "VUL": "Vidisti, Domine : ne sileas ;/ Domine, ne discedas a me./",
+        "SYN": "Ты видел, Господи, не умолчи; Господи! не удаляйся от меня.",
+        "NEO": "Le mal tue le méchant, et les ennemis du juste sont châtiés.",
+        "NAB": "Evil will slay the wicked; those who hate the just are condemned.",
+        "VAT_ES": "[Tau] La maldad hará morir al malvado,",
+        "CEI": "La malizia uccide l'empio e chi odia il giusto sarà punito."
+      }
+    }
+  }
+}

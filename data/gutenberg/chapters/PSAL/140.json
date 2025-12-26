@@ -1,0 +1,239 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_140",
+  "book_key": "PSAL",
+  "sequence": 140,
+  "chapter_in": {
+    "MT": 140,
+    "VUL": 139,
+    "LXX": 139
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֗חַ מִזְמ֥וֹר לְ/דָוִֽד׃",
+        "LXX": "Ψαλμὸς τῷ Δαυείδ. Κύριε, πρὸς σὲ ἐκέκραξα, εἰσάκουσόν μου· πρόσχες τῇ φωνῇ τῆς δεήσεώς μου ἐν τῷ κεκραγέναι με πρὸς σέ.",
+        "VUL": "Psalmus David. [Domine, clamavi ad te : exaudi me ;/ intende voci meæ, cum clamavero ad te./",
+        "SYN": "Господи! к Тебе взываю: поспеши ко мне, внемли голосу моления моего, когда взываю к Тебе.",
+        "NEO": "Au maître de chant. Psaume de David.",
+        "NAB": "For the leader. A psalm of David.",
+        "CEI": "Al maestro del coro. Salmo. Di Davide."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "חַלְּצֵ֣/נִי יְ֭הוָה מֵ/אָדָ֣ם רָ֑ע מֵ/אִ֖ישׁ חֲמָסִ֣ים תִּנְצְרֵֽ/נִי׃",
+        "LXX": "κατευθυνθήτω ἡ προσευχή μου ὡς θυμίαμα ἐνώπιόν σου, ἔπαρσις τῶν χειρῶν μου θυσία ἑσπερινή.",
+        "VUL": "Dirigatur oratio mea sicut incensum in conspectu tuo ;/ elevatio manuum mearum sacrificium vespertinum./",
+        "SYN": "Да направится молитва моя, как фимиам, пред лице Твое, воздеяние рук моих - как жертва вечерняя.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, délivre-moi de l’homme méchant, préserve-moi des hommes de violence,",
+        "NAB": "Deliver me, LORD, from the wicked; preserve me from the violent,",
+        "VAT_ES": "Líbrame, Señor, de la gente malvada,",
+        "CEI": "Salvami, Signore, dal malvagio, proteggimi dall'uomo violento,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֤ר חָשְׁב֣וּ רָע֣וֹת בְּ/לֵ֑ב כָּל י֝֗וֹם יָג֥וּרוּ מִלְחָמֽוֹת׃",
+        "LXX": "θοῦ, Κύριε, φυλακὴν τῷ στόματί μου, καὶ θύραν περιοχῆς περὶ τὰ χείλη μου.",
+        "VUL": "Pone, Domine, custodiam ori meo,/ et ostium circumstantiæ labiis meis./",
+        "SYN": "Положи, Господи, охрану устам моим, и огради двери уст моих;",
+        "NEO": "qui méditent de mauvais desseins dans leur cœur, qui excitent sans cesse la guerre contre moi,",
+        "NAB": "From those who plan evil in their hearts, who stir up conflicts every day,",
+        "VAT_ES": "de los que sólo piensan en hacer el mal",
+        "CEI": "da quelli che tramano sventure nel cuore e ogni giorno scatenano guerre."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "שָֽׁנֲנ֣וּ לְשׁוֹנָ/ם֮ כְּֽמוֹ נָ֫חָ֥שׁ חֲמַ֥ת עַכְשׁ֑וּב תַּ֖חַת שְׂפָתֵ֣י/מוֹ סֶֽלָה׃",
+        "LXX": "μὴ ἐκκλίνῃς τὴν καρδίαν μου εἰς λόγους πονηρίας, τοῦ προφασίζεσθαι προφάσεις ἐν ἁμαρτίαις, σὺν ἀνθρώποις ἐργαζομένοις ἀνομίαν, καὶ οὐ μὴ συνδοιάσω μετὰ τῶν ἐκλεκτῶν αὐτῶν.",
+        "VUL": "Non declines cor meum in verba malitiæ,/ ad excusandas excusationes in peccatis ;/ cum hominibus operantibus iniquitatem,/ et non communicabo cum electis eorum./",
+        "SYN": "не дай уклониться сердцу моему к словам лукавым для извинения дел греховных вместе с людьми, делающими беззаконие, и да не вкушу я от сластей их.",
+        "NEO": "qui aiguisent leur langue comme le serpent, et qui ont sous leurs lèvres le venin de l’aspic. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "Who sharpen their tongues like serpents, venom of asps upon their lips. Selah",
+        "VAT_ES": "Ellos afilan su lengua como serpientes,",
+        "CEI": "Aguzzano la lingua come serpenti; veleno d'aspide è sotto le loro labbra."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "שָׁמְרֵ֤/נִי יְהוָ֨ה מִ֘/ידֵ֤י רָשָׁ֗ע מֵ/אִ֣ישׁ חֲמָסִ֣ים תִּנְצְרֵ֑/נִי אֲשֶׁ֥ר חָ֝שְׁב֗וּ לִ/דְח֥וֹת פְּעָמָֽ/י׃",
+        "LXX": "παιδεύσει με δίκαιος ἐν ἐλέει καὶ ἐλέγξει με, ἔλαιον δὲ ἁμαρτωλοῦ μὴ λιπανάτω τὴν κεφαλὴν μου· ὅτι ἔτι καὶ ἔτι ἡ προσευχή μου ἐν ταῖς εὐδοκίαις αὐτῶν.",
+        "VUL": "Corripiet me justus in misericordia, et increpabit me :/ oleum autem peccatoris non impinguet caput meum./ Quoniam adhuc et oratio mea in beneplacitis eorum :/",
+        "SYN": "Пусть наказывает меня праведник: это милость; пусть обличает меня: это лучший елей, который не повредит голове моей; но мольбы мои - против злодейств их.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, garde-moi des mains du méchant, préserve-moi des hommes de violence, qui méditent de me faire trébucher.",
+        "NAB": "Keep me, LORD, from the clutches of the wicked; preserve me from the violent, who plot to trip me up.",
+        "VAT_ES": "Defiéndeme, Señor, de las manos del impío,",
+        "CEI": "Proteggimi, Signore, dalle mani degli empi, salvami dall'uomo violento: essi tramano per farmi cadere."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "טָֽמְנֽוּ גֵאִ֨ים פַּ֡ח לִ֗/י וַ/חֲבָלִ֗ים פָּ֣רְשׂוּ רֶ֭שֶׁת לְ/יַד מַעְגָּ֑ל מֹקְשִׁ֖ים שָֽׁתוּ לִ֣/י סֶֽלָה׃",
+        "LXX": "κατεπόθησαν ἐχόμενα πέτρας οἱ κραταιοὶ αὐτῶν· ἀκούσονται τὰ ῥήματά μου, ὅτι ἠδυνήθησαν.",
+        "VUL": "absorpti sunt juncti petræ judices eorum./ Audient verba mea, quoniam potuerunt./",
+        "SYN": "Вожди их рассыпались по утесам и слышат слова мои, что они кротки.",
+        "NEO": "Des orgueilleux me dressent un piège et des filets, ils placent des rets le long de mon sentier, ils me tendent des embûches. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "The arrogant have set a trap for me; villains have spread a net, laid snares for me by the wayside. Selah",
+        "VAT_ES": "los prepotentes me han ocultado trampas y lazos,",
+        "CEI": "I superbi mi tendono lacci e stendono funi come una rete, pongono agguati sul mio cammino."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אָמַ֣רְתִּי לַ֭/יהוָה אֵ֣לִ/י אָ֑תָּה הַאֲזִ֥ינָ/ה יְ֝הוָ֗ה ק֣וֹל תַּחֲנוּנָֽ/י׃",
+        "LXX": "ὡσεὶ πάχος γῆς διερράγη ἐπὶ τῆς γῆς, διεσκορπίσθη τὰ ὀστᾶ ἡμῶν παρὰ τὸν ᾅδην.",
+        "VUL": "Sicut crassitudo terræ erupta est super terram,/ dissipata sunt ossa nostra secus infernum./",
+        "SYN": "Как будто землю рассекают и дробят нас; сыплются кости наши в челюсти преисподней.",
+        "NEO": "Je dis à \\+w Yahweh|strong=\"H3068\"\\+w** : Tu es mon Dieu ! Ecoute, \\+w Yahweh|strong=\"H3068\"\\+w**, la voix de mes supplications !",
+        "NAB": "I say to the LORD: You are my God; listen, LORD, to the words of my prayer.",
+        "VAT_ES": "Pero yo digo al Señor: «Tú eres mi Dios»:",
+        "CEI": "Io dico al Signore: \"Tu sei il mio Dio; ascolta, Signore, la voce della mia preghiera\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "יְהֹוִ֣ה אֲ֭דֹנָ/י עֹ֣ז יְשׁוּעָתִ֑/י סַכֹּ֥תָה לְ֝/רֹאשִׁ֗/י בְּ/י֣וֹם נָֽשֶׁק׃",
+        "LXX": "ὅτι πρὸς σέ, Κύριε κύριε, οἱ ὀφθαλμοί μου, ἐπὶ σὲ ἤλπισα, μὴ ἀντανέλῃς τὴν ψυχήν μου·",
+        "VUL": "Quia ad te, Domine, Domine, oculi mei ;/ in te speravi, non auferas animam meam./",
+        "SYN": "Но к Тебе, Господи, Господи, очи мои; на Тебя уповаю, не отринь души моей!",
+        "NEO": "Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**, mon puissant sauveur, tu couvres ma tête au jour du combat.",
+        "NAB": "My revered LORD, my strong helper, my helmet on the day of battle.",
+        "VAT_ES": "Señor, mi Señor, mi ayuda poderosa,",
+        "CEI": "Signore, mio Dio, forza della mia salvezza, proteggi il mio capo nel giorno della lotta."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אַל תִּתֵּ֣ן יְ֭הוָה מַאֲוַיֵּ֣י רָשָׁ֑ע זְמָמ֥/וֹ אַל תָּ֝פֵ֗ק יָר֥וּמוּ סֶֽלָה׃",
+        "LXX": "φύλαξόν με ἀπὸ παγίδος ἧς συνεστήσαντό μοι, καὶ ἀπὸ σκανδάλων τῶν ἐργαζομένων τὴν ἀνομίαν.",
+        "VUL": "Custodi me a laqueo quem statuerunt mihi,/ et a scandalis operantium iniquitatem./",
+        "SYN": "Сохрани меня от силков, поставленных для меня, от тенет беззаконников.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, n’accomplis pas les désirs du méchant, ne laisse pas réussir ses desseins : il en serait trop fier ! — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "LORD, do not grant the desires of the wicked; do not let their plots succeed. Selah",
+        "VAT_ES": "No satisfagas los deseos del malvado",
+        "CEI": "Signore, non soddisfare i desideri degli empi, non favorire le loro trame."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "רֹ֥אשׁ מְסִבָּ֑/י עֲמַ֖ל שְׂפָתֵ֣י/מוֹ יכסו/מו יְכַסֵּֽ/מוֹ׃",
+        "LXX": "πεσοῦνται ἐν ἀμφιβλήστρῳ αὐτοῦ ἁμαρτωλοί· κατὰ μόνας εἰμὶ ἐγὼ ἕως οὗ ἂν παρέλθω.",
+        "VUL": "Cadent in retiaculo ejus peccatores :/ singulariter sum ego, donec transeam.]",
+        "SYN": "Падут нечестивые в сети свои, а я перейду.",
+        "NEO": "Que sur la tête de ceux qui m’assiègent retombe l’iniquité de leurs lèvres,",
+        "NAB": "Around me they raise their proud heads; may the mischief they threaten overwhelm them.",
+        "VAT_ES": "que no levanten cabeza los que me asedian,",
+        "CEI": "Alzano la testa quelli che mi circondano, ma la malizia delle loro labbra li sommerge."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "ימיטו יִמּ֥וֹטוּ עֲלֵי/הֶ֗ם גֶּֽחָ֫לִ֥ים בָּ/אֵ֥שׁ יַפִּלֵ֑/ם בְּ֝/מַהֲמֹר֗וֹת בַּֽל יָקֽוּמוּ׃",
+        "NEO": "que des charbons ardents soient secoués sur eux ! Que Dieu les précipite dans le feu, dans les abîmes d’où ils ne se relèvent plus !",
+        "NAB": "May God rain burning coals upon them, cast them into the grave never more to rise.",
+        "VAT_ES": "Que se acumulen sobre ellos carbones encendidos,",
+        "CEI": "Fà piovere su di loro carboni ardenti, gettali nel bàratro e più non si rialzino."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אִ֥ישׁ לָשׁוֹן֮ בַּל יִכּ֪וֹן בָּ֫/אָ֥רֶץ אִישׁ חָמָ֥ס רָ֑ע יְ֝צוּדֶ֗/נּוּ לְ/מַדְחֵפֹֽת׃",
+        "NEO": "Non, le calomniateur ne prospérera pas sur la terre, et le malheur poursuivra sans merci l’homme violent.",
+        "NAB": "Slanderers will not survive on earth; evil will quickly entrap the violent.",
+        "VAT_ES": "Que los difamadores no estén seguros en la tierra,",
+        "CEI": "Il maldicente non duri sulla terra, il male spinga il violento alla rovina."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "ידעת יָדַ֗עְתִּי כִּֽי יַעֲשֶׂ֣ה יְ֭הוָה דִּ֣ין עָנִ֑י מִ֝שְׁפַּ֗ט אֶבְיֹנִֽים׃",
+        "NEO": "Je sais que \\+w Yahweh|strong=\"H3068\"\\+w** fait droit au misérable, et justice au pauvre.",
+        "NAB": "For I know the LORD will secure justice for the needy, their rights for the poor.",
+        "VAT_ES": "Yo sé que el Señor hace justicia a los humildes",
+        "CEI": "So che il Signore difende la causa dei miseri, il diritto dei poveri."
+      }
+    }
+  }
+}

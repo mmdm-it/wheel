@@ -1,0 +1,429 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_PETR_001",
+  "book_key": "I_PETR",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Πέτρος, ἀπόστολος Ἰησοῦ χριστοῦ, ἐκλεκτοῖς παρεπιδήμοις διασπορᾶς Πόντου, Γαλατίας, Καππαδοκίας, Ἀσίας, καὶ Βιθυνίας,",
+        "VUL": "Petrus Apostolus Jesu Christi, electis advenis dispersionis Ponti, Galatiæ, Cappadociæ, Asiæ, et Bithyniæ,",
+        "SYN": "Петр, Апостол Иисуса Христа, пришельцам, рассеянным в Понте, Галатии, Каппадокии, Асии и Вифинии, избранным,",
+        "NEO": "Pierre apôtre de Jésus-Christ, aux élus, étrangers et dispersés dans le Pont, la Galatie, la Cappadoce, l’Asie et la Bithynie,",
+        "NAB": "Peter, an apostle of Jesus Christ, to the chosen sojourners of the dispersion in Pontus, Galatia, Cappadocia, Asia, and Bithynia,",
+        "VAT_ES": "Renuncien a toda maldad y a todo engaño, a la hipocresía, a la envidia y a toda clase de maledicencia.",
+        "CEI": "E vidi nella mano destra di Colui che era assiso sul trono un libro a forma di rotolo, scritto sul lato interno e su quello esterno, sigillato con sette sigilli."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "κατὰ πρόγνωσιν θεοῦ πατρός, ἐν ἁγιασμῷ πνεύματος, εἰς ὑπακοὴν καὶ ῥαντισμὸν αἵματος Ἰησοῦ χριστοῦ· χάρις ὑμῖν καὶ εἰρήνη πληθυνθείη.",
+        "VUL": "secundum præscientiam Dei Patris, in sanctificationem Spiritus, in obedientiam, et aspersionem sanguinis Jesu Christi. Gratia vobis, et pax multiplicetur.",
+        "SYN": "по предведению Бога Отца, при освящении от Духа, к послушанию и окроплению Кровию Иисуса Христа: благодать вам и мир да умножится.",
+        "NEO": "choisis* selon la prescience de Dieu le Père, par la sanctification de l’Esprit, pour obéir à la foi et pour avoir part à l’aspersion du sang de Jésus-Christ : à vous grâce et paix de plus en plus.",
+        "NAB": "in the foreknowledge of God the Father, through sanctification by the Spirit, for obedience and sprinkling with the blood of Jesus Christ: may grace and peace be yours in abundance.",
+        "VAT_ES": "Como niños recién nacidos, deseen la leche pura de la Palabra, que los haré crecer para la salvación,",
+        "CEI": "Vidi un angelo forte che proclamava a gran voce: \"Chi è degno di aprire il libro e scioglierne i sigilli?\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "¶Εὐλογητὸς ὁ θεὸς καὶ πατὴρ τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ, ὁ κατὰ τὸ πολὺ αὐτοῦ ἔλεος ἀναγεννήσας ἡμᾶς εἰς ἐλπίδα ζῶσαν δι’ ἀναστάσεως Ἰησοῦ χριστοῦ ἐκ νεκρῶν,",
+        "VUL": "Benedictus Deus et Pater Domini nostri Jesu Christi, qui secundum misericordiam suam magnam regeneravit nos in spem vivam, per resurrectionem Jesu Christi ex mortuis,",
+        "SYN": "Благословен Бог и Отец Господа нашего Иисуса Христа, по великой Своей милости возродивший нас воскресением Иисуса Христа из мертвых к упованию живому,",
+        "NEO": "Béni soit Dieu, le Père de Notre Seigneur Jésus-Christ, qui selon sa grande miséricorde nous a régénérés par la résurrection de Jésus-Christ d’entre les morts pour une vivante espérance ;",
+        "NAB": "Blessed be the God and Father of our Lord Jesus Christ, who in his great mercy gave us a new birth to a living hope through the resurrection of Jesus Christ from the dead,",
+        "VAT_ES": "ya que han gustado qué bueno es el Señor.",
+        "CEI": "Ma nessuno né in cielo, né in terra, né sotto terra era in grado di aprire il libro e di leggerlo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "εἰς κληρονομίαν ἄφθαρτον καὶ ἀμίαντον καὶ ἀμάραντον, τετηρημένην ἐν οὐρανοῖς εἰς ὑμᾶς,",
+        "VUL": "in hæreditatem incorruptibilem, et incontaminatam, et immarcescibilem, conservatam in cælis in vobis,",
+        "SYN": "к наследству нетленному, чистому, неувядаемому, хранящемуся на небесах для вас,",
+        "NEO": "pour un héritage incorruptible, sans souillure et inflétrissable, qui vous est réservé dans les cieux,",
+        "NAB": "to an inheritance that is imperishable, undefiled, and unfading, kept in heaven for you",
+        "VAT_ES": "Al acercarse a él, la piedra viva, rechazada por los hombres pero elegida y preciosa a los ojos de Dios,",
+        "CEI": "Io piangevo molto perché non si trovava nessuno degno di aprire il libro e di leggerlo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "τοὺς ἐν δυνάμει θεοῦ φρουρουμένους διὰ πίστεως εἰς σωτηρίαν ἑτοίμην ἀποκαλυφθῆναι ἐν καιρῷ ἐσχάτῳ.",
+        "VUL": "qui in virtute Dei custodimini per fidem in salutem, paratam revelari in tempore novissimo.",
+        "SYN": "силою Божиею через веру соблюдаемых ко спасению, готовому открыться в последнее время.",
+        "NEO": "à vous que la puissance de Dieu garde par la foi pour le salut, qui est prêt à se manifester au dernier moment.",
+        "NAB": "who by the power of God are safeguarded through faith, to a salvation that is ready to be revealed in the final time.",
+        "VAT_ES": "también ustedes, a manera de piedras vivas, son edificados como una casa espiritual, para ejercer un sacerdocio santo y ofrecer sacrificios espirituales, agradables a Dios por Jesucristo.",
+        "CEI": "Uno dei vegliardi mi disse: \"Non piangere più; ha vinto il leone della tribù di Giuda, il Germoglio di Davide, e aprirà il libro e i suoi sette sigilli\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ἐν ᾧ ἀγαλλιᾶσθε, ὀλίγον ἄρτι, εἰ δέον ἐστίν, λυπηθέντες ἐν ποικίλοις πειρασμοῖς,",
+        "VUL": "In quo exsultabis, modicum nunc si oportet contristari in variis tentationibus :",
+        "SYN": "О сем радуйтесь, поскорбев теперь немного, если нужно, от различных искушений,",
+        "NEO": "Dans cette pensée, vous tressaillez de joie, bien qu’il vous faille encore pour un peu de temps être affligés par diverses épreuves,",
+        "NAB": "In this you rejoice, although now for a little while you may have to suffer through various trials,",
+        "VAT_ES": "Porque dice la Escritura: Yo pongo en Sión una piedra angular, elegida y preciosa: el que deposita su confianza en ella, no será confundido.",
+        "CEI": "Poi vidi ritto in mezzo al trono circondato dai quattro esseri viventi e dai vegliardi un Agnello, come immolato. Egli aveva sette corna e sette occhi, simbolo dei sette spiriti di Dio mandati su tutta la terra."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "ἵνα τὸ δοκίμιον ὑμῶν τῆς πίστεως πολὺ τιμιώτερον χρυσίου τοῦ ἀπολλυμένου, διὰ πυρὸς δὲ δοκιμαζομένου, εὑρεθῇ εἰς ἔπαινον καὶ τιμὴν καὶ εἰς δόξαν ἐν ἀποκαλύψει Ἰησοῦ χριστοῦ·",
+        "VUL": "ut probatio vestræ fidei multo pretiosior auro (quod per ignem probatur) inveniatur in laudem, et gloriam, et honorem in revelatione Jesu Christi :",
+        "SYN": "дабы испытанная вера ваша оказалась драгоценнее гибнущего, хотя и огнем испытываемого золота, к похвале и чести и славе в явление Иисуса Христа,",
+        "NEO": "afin que l’épreuve de votre foi beaucoup plus précieuse que l’or périssable que l’on ne laisse pourtant pas d’éprouver par le feu, vous soit un sujet de louange, de gloire et d’honneur lorsque se manifestera Jésus-Christ.",
+        "NAB": "so that the genuineness of your faith, more precious than gold that is perishable even though tested by fire, may prove to be for praise, glory, and honor at the revelation of Jesus Christ.",
+        "VAT_ES": "Por lo tanto, a ustedes, los que creen, les corresponde el honor. En cambio, para los incrédulos, la piedra que los constructores rechazaron ha llegado a ser la piedra angular:",
+        "CEI": "E l'Agnello giunse e prese il libro dalla destra di Colui che era seduto sul trono."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "ὃν οὐκ εἰδότες ἀγαπᾶτε, εἰς ὃν ἄρτι μὴ ὁρῶντες, πιστεύοντες δέ, ἀγαλλιᾶσθε χαρᾷ ἀνεκλαλήτῳ καὶ δεδοξασμένῃ,",
+        "VUL": "quem cum non videritis, diligitis : in quem nunc quoque non videntes creditis : credentes autem exsultabitis lætitia inenarrabili, et glorificata :",
+        "SYN": "Которого, не видев, любите, и Которого доселе не видя, но веруя в Него, радуетесь радостью неизреченною и преславною,",
+        "NEO": "Vous l’aimez sans l’avoir jamais vu ; vous croyez en lui, bien que maintenant encore vous ne le voyiez pas ; et vous tressaillez d’une joie ineffable, et pleine de gloire,",
+        "NAB": "Although you have not seen him you love him; even though you do not see him now yet believe in him, you rejoice with an indescribable and glorious joy,",
+        "VAT_ES": "piedra de tropiezo y roca de escándalo. Ellos tropiezan porque no creen en la Palabra: esa es la suerte que les está reservada.",
+        "CEI": "E quando l'ebbe preso, i quattro esseri viventi e i ventiquattro vegliardi si prostrarono davanti all'Agnello, avendo ciascuno un'arpa e coppe d'oro colme di profumi, che sono le preghiere dei santi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "κομιζόμενοι τὸ τέλος τῆς πίστεως ὑμῶν, σωτηρίαν ψυχῶν.",
+        "VUL": "reportantes finem fidei vestræ, salutem animarum.",
+        "SYN": "достигая наконец верою вашею спасения душ.",
+        "NEO": "sûrs que vous êtes de remporter le prix de votre foi, le salut de vos âmes.+ 1:9 I, 9. Le prix, litt, \\+qt la fin de notre foi\\+qt*, ce vers quoi elle tend, savoir \\+qt le salut\\+qt*, etc.*",
+        "NAB": "as you attain the goal of (your) faith, the salvation of your souls.",
+        "VAT_ES": "Ustedes, en cambio, son una raza elegida, un sacerdocio real, una nación santa, un pueblo adquirido para anunciar las maravillas de aquel que los llamó de las tinieblas a su admirable luz:",
+        "CEI": "Cantavano un canto nuovo: \"Tu sei degno di prendere il libro e di aprirne i sigilli, perché sei stato immolato e hai riscattato per Dio con il tuo sangue uomini di ogni tribù, lingua, popolo e nazione"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Περὶ ἧς σωτηρίας ἐξεζήτησαν καὶ ἐξηρεύνησαν προφῆται οἱ περὶ τῆς εἰς ὑμᾶς χάριτος προφητεύσαντες·",
+        "VUL": "De qua salute exquisierunt, atque scrutati sunt prophetæ, qui de futura in vobis gratia prophetaverunt :",
+        "SYN": "К сему-то спасению относились изыскания и исследования пророков, которые предсказывали о назначенной вам благодати,",
+        "NEO": "Ce salut a été l’objet des recherches et des méditations de ceux d’entre les prophètes dont les prédictions annoncent la grâce qui vous était destinée ;",
+        "NAB": "Concerning this salvation, prophets who prophesied about the grace that was to be yours searched and investigated it,",
+        "VAT_ES": "ustedes, que antes no eran un pueblo, ahora son el Pueblo de Dios; ustedes que antes no habían obtenido misericordia, ahora la han alcanzado.",
+        "CEI": "e li hai costituiti per il nostro Dio un regno di sacerdoti e regneranno sopra la terra\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "ἐρευνῶντες εἰς τίνα ἢ ποῖον καιρὸν ἐδήλου τὸ ἐν αὐτοῖς πνεῦμα χριστοῦ, προμαρτυρόμενον τὰ εἰς χριστὸν παθήματα, καὶ τὰς μετὰ ταῦτα δόξας.",
+        "VUL": "scrutantes in quod vel quale tempus significaret in eis Spiritus Christi : prænuntians eas quæ in Christo sunt passiones, et posteriores glorias :",
+        "SYN": "исследывая, на которое и на какое время указывал сущий в них Дух Христов, когда Он предвозвещал Христовы страдания и последующую за ними славу.",
+        "NEO": "ils cherchaient à découvrir quel temps et quelles circonstances indiquait l’Esprit du Christ qui était en eux, et qui attestait d’avance les souffrances réservées au Christ et la gloire dont elles devaient être suivies.",
+        "NAB": "investigating the time and circumstances that the Spirit of Christ within them indicated when it testified in advance to the sufferings destined for Christ and the glories to follow them.",
+        "VAT_ES": "Queridos míos, yo los exhorto, como a gente de paso y extranjeros: no cedan a esos deseos carnales que combaten contra el alma.",
+        "CEI": "Durante la visione poi intesi voci di molti angeli intorno al trono e agli esseri viventi e ai vegliardi. Il loro numero era miriadi di miriadi e migliaia di migliaia"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Οἷς ἀπεκαλύφθη ὅτι οὐχ ἑαυτοῖς, ὑμῖν δὲ διηκόνουν αὐτά, ἃ νῦν ἀνηγγέλη ὑμῖν διὰ τῶν εὐαγγελισαμένων ὑμᾶς ἐν πνεύματι ἁγίῳ ἀποσταλέντι ἀπ’ οὐρανοῦ, εἰς ἃ ἐπιθυμοῦσιν ἄγγελοι παρακύψαι.",
+        "VUL": "quibus revelatum est quia non sibimetipsis, vobis autem ministrabant ea quæ nunc nuntiata sunt vobis per eos qui evangelizaverunt vobis, Spiritu Sancto misso de cælo, in quem desiderant angeli prospicere.",
+        "SYN": "Им открыто было, что не им самим, а нам служило то, что ныне проповедано вам благовествовавшими Духом Святым, посланным с небес, во что желают проникнуть Ангелы.",
+        "NEO": "Il leur a été révélé que ce n’était pas pour eux-mêmes, mais pour vous, qu’ils avaient charge de dispenser les choses que vous ont aujourd’hui annoncées ceux qui, par le Saint-Esprit envoyé du ciel, vous ont prêché l’Évangile : mystère profond,* où les anges désirent plonger leurs regards.+ 1:12 12. Mais pour vous; d’autres manuscrits ont \\+qt pour nous\\+qt*. Sens : ce qu’ils annonçaient touchant le Messie ne devait s’accomplir que plus tard, de nos jours : ils n’en jouirent que par la foi.* EXHORTATION. [I, 13 — V, 11.]",
+        "NAB": "It was revealed to them that they were serving not themselves but you with regard to the things that have now been announced to you by those who preached the good news to you (through) the holy Spirit sent from heaven, things into which angels longed to look.",
+        "VAT_ES": "Observen una buena conducta en medio de los paganos y así, los mismos que ahora calumnian como a malhechores, al ver sus buenas obras, tendrán que glorificar a Dios el día de su Visita.",
+        "CEI": "e dicevano a gran voce: \"L'Agnello che fu immolato è degno di ricevere potenza e ricchezza, sapienza e forza, onore, gloria e benedizione\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "¶Διὸ ἀναζωσάμενοι τὰς ὀσφύας τῆς διανοίας ὑμῶν, νήφοντες, τελείως ἐλπίσατε ἐπὶ τὴν φερομένην ὑμῖν χάριν ἐν ἀποκαλύψει Ἰησοῦ χριστοῦ·",
+        "VUL": "Propter quod succincti lumbos mentis vestræ, sobrii, perfecte sperate in eam, quæ offertur vobis, gratiam, in revelationem Jesu Christi :",
+        "SYN": "Посему, [возлюбленные,] препоясав чресла ума вашего, бодрствуя, совершенно уповайте на подаваемую вам благодать в явлении Иисуса Христа.",
+        "NEO": "C’est pourquoi, ayant ceint les reins de votre esprit, soyez sobres, et tournez toute votre espérance vers cette grâce qui vous sera apportée le jour où Jésus-Christ paraîtra.+ 1:13 13. Luc, xii, 25 ; Eph. vi, 14.*",
+        "NAB": "Therefore, gird up the loins of your mind, live soberly, and set your hopes completely on the grace to be brought to you at the revelation of Jesus Christ.",
+        "VAT_ES": "Respeten a toda autoridad humana como quiere el Señor;",
+        "CEI": "Tutte le creature del cielo e della terra, sotto la terra e nel mare e tutte le cose ivi contenute, udii che dicevano: \"A Colui che siede sul trono e all'Agnello lode, onore, gloria e potenza, nei secoli dei secoli\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "ὡς τέκνα ὑπακοῆς, μὴ συσχηματιζόμενοι ταῖς πρότερον ἐν τῇ ἀγνοίᾳ ὑμῶν ἐπιθυμίαις,",
+        "VUL": "quasi filii obedientiæ, non configurati prioribus ignorantiæ vestræ desideriis :",
+        "SYN": "Как послушные дети, не сообразуйтесь с прежними похотями, бывшими в неведении вашем,",
+        "NEO": "Comme des enfants obéissants, ne vous conformez plus aux convoitises que vous suiviez autrefois, au temps de votre ignorance ;",
+        "NAB": "Like obedient children, do not act in compliance with the desires of your former ignorance",
+        "VAT_ES": "ya sea el rey, porque es el soberano, ya sea a los gobernadores, como delegados por él para castigar a los que obran el mal y recompensar a los que practican el bien.",
+        "CEI": "E i quattro esseri viventi dicevano: \"Amen\". E i vegliardi si prostrarono in adorazione."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "ἀλλὰ κατὰ τὸν καλέσαντα ὑμᾶς ἅγιον καὶ αὐτοὶ ἅγιοι ἐν πάσῃ ἀναστροφῇ γενήθητε·",
+        "VUL": "sed secundum eum qui vocavit vos, Sanctum : et ipsi in omni conversatione sancti sitis :",
+        "SYN": "но, по примеру призвавшего вас Святаго, и сами будьте святы во всех поступках.",
+        "NEO": "mais à l’imitation du Saint qui vous a appelés, vous-mêmes aussi soyez saints dans toute votre conduite,",
+        "NAB": "but, as he who called you is holy, be holy yourselves in every aspect of your conduct,",
+        "VAT_ES": "La voluntad de Dios es que ustedes, practicando el bien, pongan freno a la ignorancia de los insensatos."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "διότι γέγραπται, Ἅγιοι γίνεσθε, ὅτι ἐγὼ ἅγιός εἰμι.",
+        "VUL": "quoniam scriptum est : Sancti eritis, quoniam ego sanctus sum.",
+        "SYN": "Ибо написано: будьте святы, потому что Я свят.",
+        "NEO": "car il est écrit : « Soyez saints, parce que je suis saint. »+ 1:16 16. Lév. xi, 14.*",
+        "NAB": "for it is written, \"Be holy because I (am) holy.\"",
+        "VAT_ES": "Procedan como hombres verdaderamente libres, obedeciendo a Dios, y no como quienes hacen de la libertad una excusa para su malicia."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Καὶ εἰ πατέρα ἐπικαλεῖσθε τὸν ἀπροσωπολήπτως κρίνοντα κατὰ τὸ ἑκάστου ἔργον, ἐν φόβῳ τὸν τῆς παροικίας ὑμῶν χρόνον ἀναστράφητε·",
+        "VUL": "Et si patrem invocatis eum, qui sine acceptione personarum judicat secundum uniuscujusque opus, in timore incolatus vestri tempore conversamini.",
+        "SYN": "И если вы называете Отцем Того, Который нелицеприятно судит каждого по делам, то со страхом проводите время странствования вашего,",
+        "NEO": "Et si vous donnez le nom de Père à celui qui, sans faire acception des personnes, juge chacun selon ses œuvres, vivez dans la crainte+ 1:17 17. La crainte filiale d’offenser un père (comp. Phil. ii, 12). Ou bien : N’oubliez pas que ce Père reste notre Juge, un Juge impartial.* pendant le temps de votre séjour comme étrangers ici-bas* :",
+        "NAB": "Now if you invoke as Father him who judges impartially according to each one's works, conduct yourselves with reverence during the time of your sojourning,",
+        "VAT_ES": "Respeten a todo el mundo, amen a sus hermanos, teman a Dios, honren al rey."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "εἰδότες ὅτι οὐ φθαρτοῖς, ἀργυρίῳ ἢ χρυσίῳ, ἐλυτρώθητε ἐκ τῆς ματαίας ὑμῶν ἀναστροφῆς πατροπαραδότου,",
+        "VUL": "Scientes quod non corruptibilibus, auro vel argento, redempti estis de vana vestra conversatione paternæ traditionis :",
+        "SYN": "зная, что не тленным серебром или золотом искуплены вы от суетной жизни, преданной вам от отцов,",
+        "NEO": "sachant que vous avez été affranchis de la vaine manière de vivre que vous teniez de vos pères, non par des choses périssables, de l’argent ou de l’or,",
+        "NAB": "realizing that you were ransomed from your futile conduct, handed on by your ancestors, not with perishable things like silver or gold",
+        "VAT_ES": "Servidores, traten a sus señores con el debido respeto, no solamente a los buenos y comprensivos, sino también a los malos."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "ἀλλὰ τιμίῳ αἵματι ὡς ἀμνοῦ ἀμώμου καὶ ἀσπίλου χριστοῦ,",
+        "VUL": "sed pretioso sanguine quasi agni immaculati Christi, et incontaminati :",
+        "SYN": "но драгоценною Кровию Христа, как непорочного и чистого Агнца,",
+        "NEO": "mais par un sang précieux, celui de l’agneau sans défaut et sans tache, le sang du Christ,+ 1:19 19. Lév. xxii, 18 ; Is. liii, 7 ; Jean, i, 29.*",
+        "NAB": "but with the precious blood of Christ as of a spotless unblemished lamb.",
+        "VAT_ES": "Porque es una gracia soportar, con el pensamiento puesto en Dios, las penas que se sufren injustamente."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "προεγνωσμένου μὲν πρὸ καταβολῆς κόσμου, φανερωθέντος δὲ ἐπ’ ἐσχάτων τῶν χρόνων δι’ ὑμᾶς,",
+        "VUL": "præcogniti quidem ante mundi constitutionem, manifestati autem novissimis temporibus propter vos,",
+        "SYN": "предназначенного еще прежде создания мира, но явившегося в последние времена для вас,",
+        "NEO": "qui a été désigné dès avant la création du monde, et manifesté dans les derniers temps à cause de vous.",
+        "NAB": "He was known before the foundation of the world but revealed in the final time for you,",
+        "VAT_ES": "En efecto, &iquest;qué gloria habría en soportar el castigo por una falta que se ha cometido? Pero si a pesar de hacer el bien, ustedes soportan el sufrimiento, esto sí es una gracia delante de Dios."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "τοὺς δι’ αὐτοῦ πιστεύοντας εἰς θεόν, τὸν ἐγείραντα αὐτὸν ἐκ νεκρῶν, καὶ δόξαν αὐτῷ δόντα, ὥστε τὴν πίστιν ὑμῶν καὶ ἐλπίδα εἶναι εἰς θεόν.",
+        "VUL": "qui per ipsum fideles estis in Deo, qui suscitavit eum a mortuis, et dedit ei gloriam, ut fides vestra et spes esset in Deo :",
+        "SYN": "уверовавших чрез Него в Бога, Который воскресил Его из мертвых и дал Ему славу, чтобы вы имели веру и упование на Бога.",
+        "NEO": "C’est par lui que vous avez la foi en Dieu, qui l’a ressuscité des morts et qui lui a donné la gloire, en sorte que votre foi+ 1:21 21. Notre foi en la résurrection de J.C., gage de la nôtre, porte avec elle la joyeuse \\+qt espérance\\+qt* que nous serons un jour associés à sa gloire. D’autres : \\+qt en sorte que\\+qt* (Vulgate \\+qt afin que\\+qt*) \\+qt notre foi et notre espérance soient\\+qt* (ou \\+qt sont\\+qt*) en Dieu.* est en même temps votre espérance en Dieu.",
+        "NAB": "who through him believe in God who raised him from the dead and gave him glory, so that your faith and hope are in God.",
+        "VAT_ES": "A esto han sido llamados, porque también Cristo padeció por ustedes, y les dejó un ejemplo a fin de que sigan sus huellas."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Τὰς ψυχὰς ὑμῶν ἡγνικότες ἐν τῇ ὑπακοῇ τῆς ἀληθείας διὰ πνεύματος εἰς φιλαδελφίαν ἀνυπόκριτον, ἐκ καθαρᾶς καρδίας ἀλλήλους ἀγαπήσατε ἐκτενῶς·",
+        "VUL": "animas vestras castificantes in obedientia caritatis, in fraternitatis amore, simplici ex corde invicem diligite attentius :",
+        "SYN": "Послушанием истине чрез Духа, очистив души ваши к нелицемерному братолюбию, постоянно любите друг друга от чистого сердца,",
+        "NEO": "Puisque vous avez, en obéissant à la vérité,+ 1:22 22. À la vérité, à la doctrine évangélique. Telle est la leçon de tous les manuscrits grecs. Vulgate \\+qt par l’obéissance à la charité\\+qt*.* purifié vos âmes et que par là vous vous êtes engagés à un sincère amour fraternel, aimez-vous ardemment les uns les autres, du fond du cœur,",
+        "NAB": "Since you have purified yourselves by obedience to the truth for sincere mutual love, love one another intensely from a (pure) heart.",
+        "VAT_ES": "El no cometió pecado y nadie pudo encontrar una mentira en su boca."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "ἀναγεγεννημένοι οὐκ ἐκ σπορᾶς φθαρτῆς, ἀλλὰ ἀφθάρτου, διὰ λόγου ζῶντος θεοῦ καὶ μένοντος εἰς τὸν αἰῶνα.",
+        "VUL": "renati non ex semine corruptibili, sed incorruptibili per verbum Dei vivi, et permanentis in æternum :",
+        "SYN": "_как_ возрожденные не от тленного семени, но от нетленного, от слова Божия, живаго и пребывающего вовек.",
+        "NEO": "régénérés que vous êtes d’un germe non corruptible mais incorruptible, par la parole de Dieu vivante et éternelle.+ 1:23 23. Hébr. iv, 12 ; Act. vii, 38.*",
+        "NAB": "You have been born anew, not from perishable but from imperishable seed, through the living and abiding word of God,",
+        "VAT_ES": "Cuando era insultado, no devolvía el insulto, y mientras padecía no profería amenazas; al contrario, confiaba su causa al que juzga rectamente."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Διότι, Πᾶσα σὰρξ ὡς χόρτος, καὶ πᾶσα δόξα ἀνθρώπου ὡς ἄνθος χόρτου. Ἐξηράνθη ὁ χόρτος, καὶ τὸ ἄνθος αὐτοῦ ἐξέπεσεν·",
+        "VUL": "quia omnis caro ut fnum : et omnis gloria ejus tamquam flos fni : exaruit fnum, et flos ejus decidit.",
+        "SYN": "Ибо всякая плоть -- как трава, и всякая слава человеческая -- как цвет на траве: засохла трава, и цвет ее опал;",
+        "NEO": "Car « toute chair est comme l’herbe, et toute sa gloire comme la fleur de l’herbe : l’herbe sèche et sa fleur tombe ;+ 1:24 24. Is. xl, 6 sv. Comp. Jac. i, 10.*",
+        "NAB": "for: \"All flesh is like grass, and all its glory like the flower of the field; the grass withers, and the flower wilts;",
+        "VAT_ES": "El llevó sobre la cruz nuestros pecados, cargándolos en su cuerpo, a fin de que, muertos al pecado, vivamos para la justicia. Gracias a sus llagas, ustedes fueron curados."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "τὸ δὲ ῥῆμα κυρίου μένει εἰς τὸν αἰῶνα. Τοῦτο δέ ἐστιν τὸ ῥῆμα τὸ εὐαγγελισθὲν εἰς ὑμᾶς.",
+        "VUL": "Verbum autem Domini manet in æternum : hoc est autem verbum, quod evangelizatum est in vos.",
+        "SYN": "но слово Господне пребывает вовек; а это есть то слово, которое вам проповедано.",
+        "NEO": "mais la parole du Seigneur demeure éternellement. « C’est cette parole dont la bonne nouvelle vous a été apportée.",
+        "NAB": "but the word of the Lord remains forever.\" This is the word that has been proclaimed to you.",
+        "VAT_ES": "Porque antes andaban como ovejas perdidas, pero ahora han vuelto al Pastor y Guardián de ustedes."
+      }
+    }
+  }
+}

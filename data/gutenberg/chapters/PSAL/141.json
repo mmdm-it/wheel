@@ -1,0 +1,187 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_141",
+  "book_key": "PSAL",
+  "sequence": 141,
+  "chapter_in": {
+    "MT": 141,
+    "VUL": 140,
+    "LXX": 140
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מִזְמ֗וֹר לְ/דָ֫וִ֥ד יְהוָ֣ה קְ֭רָאתִי/ךָ ח֣וּשָׁ/ה לִּ֑/י הַאֲזִ֥ינָ/ה ק֝וֹלִ֗/י בְּ/קָרְאִ/י לָֽ/ךְ׃",
+        "LXX": "Συνέσεως τῷ Δαυεὶδ ἐν τῷ εἶναι αὐτὸν ἐν τῷ σπηλαίῳ· προσευχή",
+        "VUL": "Intellectus David, cum esset in spelunca, oratio.",
+        "SYN": "Голосом моим к Господу воззвал я, голосом моим к Господу помолился;",
+        "NEO": "Psaume de David.",
+        "NAB": "A psalm of David. LORD, I call to you; come quickly to help me; listen to my plea when I call.",
+        "CEI": "Salmo. Di Davide. Signore, a te grido, accorri in mio aiuto; ascolta la mia voce quando t'invoco."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "תִּכּ֤וֹן תְּפִלָּתִ֣/י קְטֹ֣רֶת לְ/פָנֶ֑י/ךָ מַֽשְׂאַ֥ת כַּ֝פַּ֗/י מִנְחַת עָֽרֶב׃",
+        "LXX": "Φωνῇ μου πρὸς Κύριον ἐκέκραξα, φωνῇ μου πρὸς Κύριον ἐδεήθην.",
+        "VUL": "[Voce mea ad Dominum clamavi,/ voce mea ad Dominum deprecatus sum./",
+        "SYN": "излил пред Ним моление мое; печаль мою открыл Ему.",
+        "NEO": "Que ma prière soit devant ta face comme l’encens, et l’élévation de mes mains comme l’offrande du soir !",
+        "NAB": "Let my prayer be incense before you; my uplifted hands an evening sacrifice.",
+        "VAT_ES": "que mi oración suba hasta ti como el incienso,",
+        "CEI": "Come incenso salga a te la mia preghiera, le mie mani alzate come sacrificio della sera."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "שִׁיתָ֣/ה יְ֭הוָה שָׁמְרָ֣ה לְ/פִ֑/י נִ֝צְּרָ֗/ה עַל דַּ֥ל שְׂפָתָֽ/י׃",
+        "LXX": "ἐκχεῶ ἐναντίον αὐτοῦ τὴν δέησίν μου, τὴν θλίψιν μου ἐνώπιον αὐτοῦ ἀπαγγελῶ.",
+        "VUL": "Effundo in conspectu ejus orationem meam,/ et tribulationem meam ante ipsum pronuntio :/",
+        "SYN": "Когда изнемогал во мне дух мой, Ты знал стезю мою. На пути, которым я ходил, они скрытно поставили сети для меня.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, mets une garde à ma bouche, une sentinelle à la porte de mes lèvres.",
+        "NAB": "Set a guard, LORD, before my mouth, a gatekeeper at my lips.",
+        "VAT_ES": "Coloca, Señor, un guardián en mi boca",
+        "CEI": "Poni, Signore, una custodia alla mia bocca, sorveglia la porta delle mie labbra."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אַל תַּט לִבִּ֨/י לְ/דָבָ֪ר רָ֡ע לְ/הִתְע֘וֹלֵ֤ל עֲלִל֨וֹת בְּ/רֶ֗שַׁע אֶת אִישִׁ֥ים פֹּֽעֲלֵי אָ֑וֶן וּ/בַל אֶ֝לְחַ֗ם בְּ/מַנְעַמֵּי/הֶֽם׃",
+        "LXX": "ἐν τῷ ἐκλείπειν ἐξ ἐμοῦ τὸ πνεῦμά μου, καὶ σὺ ἔγνως τὰς τρίβους μου· ἐν ὁδῷ ταύτῃ ᾗ ἐπορευόμην ἔκρυψάν μοι παγίδα.",
+        "VUL": "in deficiendo ex me spiritum meum,/ et tu cognovisti semitas meas./ In via hac qua ambulabam/ absconderunt laqueum mihi./",
+        "SYN": "Смотрю на правую сторону, и вижу, что никто не признает меня: не стало для меня убежища, никто не заботится о душе моей.",
+        "NEO": "N’incline pas mon cœur vers des choses mauvaises ; ne l’incline pas à se livrer à des actes de méchanceté avec les hommes qui commettent l’iniquité ; que je ne prenne aucune part à leurs festins !",
+        "NAB": "Do not let my heart incline to evil, or yield to any sin. I will never feast upon the fine food of evildoers.",
+        "VAT_ES": "no dejes que mi corazón se incline a la maldad,",
+        "CEI": "Non lasciare che il mio cuore si pieghi al male e compia azioni inique con i peccatori: che io non gusti i loro cibi deliziosi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "יֶֽהֶלְמֵֽ/נִי צַדִּ֨יק חֶ֡סֶד וְֽ/יוֹכִיחֵ֗/נִי שֶׁ֣מֶן רֹ֭אשׁ אַל יָנִ֣י רֹאשִׁ֑/י כִּי ע֥וֹד וּ֝/תְפִלָּתִ֗/י בְּ/רָעוֹתֵי/הֶֽם׃",
+        "LXX": "κατενόουν εἰς τὰ δεξιὰ καὶ ἐπέβλεπον, ὅτι οὐκ ἦν ὁ ἐπιγινώσκων με· ἀπώλετο φυγὴ ἀπ’ ἐμοῦ, καὶ οὐκ ἔστιν ὁ ἐκζητῶν τὴν ψυχήν μου.",
+        "VUL": "Considerabam ad dexteram, et videbam,/ et non erat qui cognosceret me :/ periit fuga a me,/ et non est qui requirat animam meam./",
+        "SYN": "Я воззвал к Тебе, Господи, я сказал: Ты прибежище мое и часть моя на земле живых.",
+        "NEO": "Que le juste me frappe, c’est une faveur ; qu’il me reprenne, c’est un parfum sur ma tête ; ma tête ne le refusera pas, car alors je n’opposerai que ma prière à leurs mauvais desseins.",
+        "NAB": "Let the just strike me; that is kindness; let them rebuke me; that is oil for my head. All this I shall not refuse, but will pray despite these trials.",
+        "VAT_ES": "Que el justo me golpee como amigo y me corrija,",
+        "CEI": "Mi percuota il giusto e il fedele mi rimproveri, ma l'olio dell'empio non profumi il mio capo; tra le loro malvagità continui la mia preghiera."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "נִשְׁמְט֣וּ בִֽ/ידֵי סֶ֭לַע שֹׁפְטֵי/הֶ֑ם וְ/שָׁמְע֥וּ אֲ֝מָרַ֗/י כִּ֣י נָעֵֽמוּ׃",
+        "LXX": "πρὸς σέ, Κύριε, ἐκέκραξα, καὶ εἶπα Σὺ εἶ ἡ ἐλπίς μου, μερίς μου ἐν γῇ ζώντων.",
+        "VUL": "Clamavi ad te, Domine ;/ dixi : Tu es spes mea,/ portio mea in terra viventium./",
+        "SYN": "Внемли воплю моему, ибо я очень изнемог; избавь меня от гонителей моих, ибо они сильнее меня.",
+        "NEO": "Mais bientôt leurs chefs seront précipités le long des rochers ; et l’on écoutera mes paroles, car elles sont agréables.",
+        "NAB": "When their leaders are cast over the cliff, all will learn that my prayers were heard.",
+        "VAT_ES": "Sus príncipes cayeron despeñados,",
+        "CEI": "Dalla rupe furono gettati i loro capi, che da me avevano udito dolci parole."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כְּמ֤וֹ פֹלֵ֣חַ וּ/בֹקֵ֣עַ בָּ/אָ֑רֶץ נִפְזְר֥וּ עֲ֝צָמֵ֗י/נוּ לְ/פִ֣י שְׁאֽוֹל׃",
+        "LXX": "πρόσχες πρὸς τὴν δέησίν μου, ὅτι ἐταπεινώθην σφόδρα· ῥῦσαί με ἐκ τῶν καταδιωκόντων με, ὅτι ἐκραταιώθησαν ὑπὲρ ἐμέ.",
+        "VUL": "Intende ad deprecationem meam,/ quia humiliatus sum nimis./ Libera me a persequentibus me,/ quia confortati sunt super me./",
+        "SYN": "Выведи из темницы душу мою, чтобы мне славить имя Твое. Вокруг меня соберутся праведные, когда Ты явишь мне благодеяние.",
+        "NEO": "Comme lorsqu’on laboure et que l’on ameublit la terre, ainsi nos ossements sont semés au bord du schéol.",
+        "NAB": "As when a farmer plows a field into broken clods, so their bones will be strewn at the mouth of Sheol.",
+        "VAT_ES": "«Como una piedra de molino hecha pedazos",
+        "CEI": "Come si fende e si apre la terra, le loro ossa furono disperse alla bocca degli inferi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּ֤י אֵלֶ֨י/ךָ יְהֹוִ֣ה אֲדֹנָ֣/י עֵינָ֑/י בְּ/כָ֥ה חָ֝סִ֗יתִי אַל תְּעַ֥ר נַפְשִֽׁ/י׃",
+        "LXX": "ἐξάγαγε ἐκ φυλακῆς τὴν ψυχήν μου, τοῦ ἐξομολογήσασθαι τῷ ὀνόματί σου, Κύριε· ἐμὲ ὑπομενοῦσιν δίκαιοι ἕως οὗ ἀνταποδῷς μοι.",
+        "VUL": "Educ de custodia animam meam/ ad confitendum nomini tuo ;/ me exspectant justi donec retribuas mihi.]",
+        "NEO": "Car vers toi, Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**, je tourne mes yeux ; auprès de toi je cherche un refuge : n’abandonne pas mon âme !",
+        "NAB": "My eyes are upon you, O GOD, my Lord; in you I take refuge; do not strip me of life.",
+        "VAT_ES": "Pero mis ojos, Señor, fijos en ti:",
+        "CEI": "A te, Signore mio Dio, sono rivolti i miei occhi; in te mi rifugio, proteggi la mia vita."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "שָׁמְרֵ֗/נִי מִ֣/ידֵי פַ֭ח יָ֣קְשׁוּ לִ֑/י וּ֝/מֹקְשׁ֗וֹת פֹּ֣עֲלֵי אָֽוֶן׃",
+        "NEO": "Préserve-moi des pièges qu’ils me tendent, des embûches de ceux qui font le mal !",
+        "NAB": "Guard me from the trap they have set for me, from the snares of evildoers.",
+        "VAT_ES": "Protégeme del lazo que me han tendido",
+        "CEI": "Preservami dal laccio che mi tendono, dagli agguati dei malfattori."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "יִפְּל֣וּ בְ/מַכְמֹרָ֣י/ו רְשָׁעִ֑ים יַ֥חַד אָ֝נֹכִ֗י עַֽד אֶעֱבֽוֹר׃",
+        "NEO": "Que les méchants tombent dans leurs propres filets, et que j’échappe en même temps !",
+        "NAB": "Into their own nets let all the wicked fall, while I make good my own escape.",
+        "VAT_ES": "&iexcl;Caigan los malvados en sus propias redes,",
+        "CEI": "Gli empi cadono insieme nelle loro reti, ma io passerò oltre incolume."
+      }
+    }
+  }
+}

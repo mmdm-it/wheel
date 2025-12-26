@@ -1,0 +1,408 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IERE_042",
+  "book_key": "IERE",
+  "sequence": 42,
+  "chapter_in": {
+    "MT": 42,
+    "VUL": 42,
+    "LXX": 42
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַֽ/יִּגְּשׁוּ֙ כָּל שָׂרֵ֣י הַ/חֲיָלִ֔ים וְ/יֽוֹחָנָן֙ בֶּן קָרֵ֔חַ וִֽ/יזַנְיָ֖ה בֶּן הוֹשַֽׁעְיָ֑ה וְ/כָל הָ/עָ֖ם מִ/קָּטֹ֥ן וְ/עַד גָּדֽוֹל׃",
+        "LXX": "Ὁ λόγος ὁ γενόμενος πρὸς Ἰερεμίαν παρὰ Κυρίου ἐν ἡμέραις Ἰωακεὶμ βασιλέως Ἰούδα λέγων",
+        "VUL": "Et accesserunt omnes principes bellatorum, et Johanan filius Caree, et Jezonias filius Osaiæ, et reliquum vulgus, a parvo usque ad magnum,",
+        "SYN": "И приступили все военные начальники, и Иоанан, сын Карея, и Иезания, сын Гошаии, и весь народ от малого до большого,",
+        "NEO": "Alors tous les chefs de troupes, ainsi que Johanan, fils de Carée, Jezonias, fils d’Osaïas, et tout le peuple, petits et grands, s’approchèrent",
+        "NAB": "Then all the army leaders, Johanan, son of Kareah, Azariah, son of Hoshaiah, and all the people, high and low, approached the prophet Jeremiah",
+        "VAT_ES": "Entonces todos los jefes de las tropas, con Iojanán, hijo de Caréaj, Azarías, hijo de Maasías, y todo el pueblo, desde el más pequeño al más grande, acudieron",
+        "CEI": "Tutti i capi delle bande armate e Giovanni figlio di Kàreca, e Azaria figlio di Osaia e tutto il popolo, dai piccoli ai grandi, si presentarono"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֞וּ אֶֽל יִרְמְיָ֣הוּ הַ/נָּבִ֗יא תִּפָּל נָ֤א תְחִנָּתֵ֨/נוּ֙ לְ/פָנֶ֔י/ךָ וְ/הִתְפַּלֵּ֤ל בַּעֲדֵ֨/נוּ֙ אֶל יְהוָ֣ה אֱלֹהֶ֔י/ךָ בְּעַ֖ד כָּל הַ/שְּׁאֵרִ֣ית הַ/זֹּ֑את כִּֽי נִשְׁאַ֤רְנוּ מְעַט֙ מֵֽ/הַרְבֵּ֔ה כַּ/אֲשֶׁ֥ר עֵינֶ֖י/ךָ רֹא֥וֹת אֹתָֽ/נוּ׃",
+        "LXX": "Βάδισον εἰς οἶκον Ἁρχαβεὶν καὶ ἄξεις αὐτοὺς εἰς οἶκον Κυρίου εἰς μίαν τῶν αὐλῶν, καὶ ποτιεῖς αὐτοὺς οἶνον.",
+        "VUL": "dixeruntque ad Jeremiam prophetam : Cadat oratio nostra in conspectu tuo, et ora pro nobis ad Dominum Deum tuum, pro universis reliquiis istis, quia derelicti sumus pauci de pluribus, sicut oculi tui nos intuentur :",
+        "SYN": "и сказали Иеремии пророку: да падет пред лице твое прошение наше, помолись о нас Господу Богу твоему обо всем этом остатке, ибо из многого осталось нас мало, как глаза твои видят нас,",
+        "NEO": "et dirent à Jérémie, le prophète : « Que notre supplication arrive devant toi ; intercède pour nous auprès de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, pour tout ce reste de Juda ; car, de beaucoup que nous étions, nous sommes réduits à un petit nombre, comme tes yeux nous voient.",
+        "NAB": "and said, \"Grant our petition; pray for us to the LORD, your God, for all this remnant. We are now few who once were many, as you well see.",
+        "VAT_ES": "al profeta Jeremías y le dijeron: «&iexcl;Que nuestra súplica llegue hasta ti! Ruega al Señor, tu Dios, en favor de todo este resto, porque de los muchos que éramos hemos quedado unos pocos, como lo ves con tus propios ojos.",
+        "CEI": "al profeta Geremia e gli dissero: \"Ti sia gradita la nostra supplica! Prega per noi il Signore tuo Dio, in favore di tutto questo residuo di popolazione, perché noi siamo rimasti in pochi dopo essere stati molti, come vedi con i tuoi occhi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/יַגֶּד לָ֨/נוּ֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ אֶת הַ/דֶּ֖רֶךְ אֲשֶׁ֣ר נֵֽלֶךְ בָּ֑/הּ וְ/אֶת הַ/דָּבָ֖ר אֲשֶׁ֥ר נַעֲשֶֽׂה׃",
+        "LXX": "καὶ ἐξήγαγον τὸν Ἰεχονίαν υἱὸν Ἰερεμὶν υἱοῦ Χαβασεὶν καὶ τοὺς ἀδελφοὺς αὐτοῦ καὶ τοὺς υἱοὺς αὐτοῦ καὶ πᾶσαν τὴν οἰκίαν Ἁρχαβείν,",
+        "VUL": "et annuntiet nobis Dominus Deus tuus viam per quam pergamus, et verbum quod faciamus.",
+        "SYN": "чтобы Господь, Бог твой, указал нам путь, по которому нам идти, и то, что нам делать.",
+        "NEO": "Que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, nous indique le chemin que nous devons suivre, et ce que nous avons à faire. »",
+        "NAB": "Let the LORD, your God, show us what way we should take and what we should do.\"",
+        "VAT_ES": "Que el Señor, tu Dios, nos indique el camino que debemos seguir y lo que debemos hacer».",
+        "CEI": "Il Signore tuo Dio ci indichi la via per la quale dobbiamo andare e che cosa dobbiamo fare\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֲלֵי/הֶ֜ם יִרְמְיָ֤הוּ הַ/נָּבִיא֙ שָׁמַ֔עְתִּי הִנְ/נִ֧י מִתְפַּלֵּ֛ל אֶל יְהוָ֥ה אֱלֹהֵי/כֶ֖ם כְּ/דִבְרֵי/כֶ֑ם וְֽ/הָיָ֡ה כָּֽל הַ/דָּבָר֩ אֲשֶׁר יַעֲנֶ֨ה יְהוָ֤ה אֶתְ/כֶם֙ אַגִּ֣יד לָ/כֶ֔ם לֹֽא אֶמְנַ֥ע מִ/כֶּ֖ם דָּבָֽר׃",
+        "LXX": "καὶ εἰσήγαγον αὐτοὺς εἰς οἶκον Κυρίου εἰς τὸ παστοφόριον υἱῶν Ἰωνὰν υἱοῦ Ἁνανίου υἱοῦ Γοδολίου ἀνθρώπου τοῦ θεοῦ, ὅς ἐστιν ἐγγὺς τοῦ οἴκου τῶν ἀρχόντων τῶν ἐπάνω τοῦ οἴκου Μαασαίου υἱοῦ Σελὼμ τοῦ φυλάσσοντος τὴν αὐλήν.",
+        "VUL": "Dixit autem ad eos Jeremias propheta : Audivi. Ecce ego oro ad Dominum Deum vestrum secundum verba vestra : omne verbum quodcumque responderit mihi indicabo vobis, nec celabo vos quidquam.",
+        "SYN": "И сказал им Иеремия пророк: слышу, помолюсь Господу Богу вашему по словам вашим, и все, что ответит вам Господь, объявлю вам, не скрою от вас ни слова.",
+        "NEO": "Jérémie, le prophète, leur répondit : « J’ai entendu ; voici que je vais prier \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, selon vos paroles, et tout ce que \\+w Yahweh|strong=\"H3068\"\\+w** vous répondra, je vous le ferai connaître, sans rien vous cacher. »",
+        "NAB": "Very well! the prophet Jeremiah answered them: I will pray to the LORD, your God, as you desire; whatever the LORD answers you, I will tell you; I will withhold nothing from you.",
+        "VAT_ES": "El profeta Jeremías les dijo: «De acuerdo. Voy a rogar al Señor, su Dios, como ustedes dicen, y les comunicaré todo lo que el Señor les responda, sin ocultarle nada».",
+        "CEI": "Il profeta Geremia rispose loro: \"Comprendo! Ecco, pregherò il Signore vostro Dio secondo le vostre parole e vi riferirò quanto il Signore risponde per voi; non vi nasconderò nulla\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/הֵ֨מָּה֙ אָמְר֣וּ אֶֽל יִרְמְיָ֔הוּ יְהִ֤י יְהוָה֙ בָּ֔/נוּ לְ/עֵ֖ד אֱמֶ֣ת וְ/נֶאֱמָ֑ן אִם לֹ֡א כְּֽ/כָל הַ֠/דָּבָר אֲשֶׁ֨ר יִֽשְׁלָחֲ/ךָ֜ יְהוָ֧ה אֱלֹהֶ֛י/ךָ אֵלֵ֖י/נוּ כֵּ֥ן נַעֲשֶֽׂה׃",
+        "LXX": "καὶ ἔδωκα κατὰ πρόσωπον αὐτῶν κεράμιον οἴνου καὶ ποτήρια, καὶ εἶπα Πίετε οἶνον.",
+        "VUL": "Et illi dixerunt ad Jeremiam : Sit Dominus inter nos testis veritatis et fidei, si non juxta omne verbum in quo miserit te Dominus Deus tuus ad nos, sic faciemus :",
+        "SYN": "Они сказали Иеремии: Господь да будет между нами свидетелем верным и истинным в том, что мы точно выполним все то, с чем пришлет тебя к нам Господь Бог Твой:",
+        "NEO": "Ils dirent à Jérémie : « Que \\+w Yahweh|strong=\"H3068\"\\+w** soit un témoin véridique et fidèle contre nous, si nous n’agissons pas en tout selon la parole que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’aura envoyé nous communiquer.",
+        "NAB": "And they said to Jeremiah, \"May the LORD be our witness: we will truly and faithfully follow all the instructions the LORD, your God, will send us.",
+        "VAT_ES": "Ellos dijeron a Jeremías: «Que el Señor sea un testigo veraz y fidedigno contra nosotros, si no obramos en todo conforme a la palabra que el Señor, tu Dios, te enviará para nosotros.",
+        "CEI": "Essi allora dissero a Geremia: \"Il Signore sia contro di noi testimone verace e fedele, se non faremo quanto il Signore tuo Dio ti rivelerà per noi."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אִם ט֣וֹב וְ/אִם רָ֔ע בְּ/ק֣וֹל יְהוָ֣ה אֱלֹהֵ֗י/נוּ אֲשֶׁ֨ר אנו אֲנַ֜חְנוּ שֹׁלְחִ֥ים אֹתְ/ךָ֛ אֵלָ֖י/ו נִשְׁמָ֑ע לְמַ֨עַן֙ אֲשֶׁ֣ר יִֽיטַב לָ֔/נוּ כִּ֣י נִשְׁמַ֔ע בְּ/ק֖וֹל יְהוָ֥ה אֱלֹהֵֽי/נוּ׃",
+        "LXX": "καὶ εἶπαν Οὐ μὴ πίωμεν οἶνον, ὅτι Ἰωναδὰβ υἱὸς Ῥηχὰβ ὁ πατὴρ ἡμῶν ἐνετείλατο ἡμῖν λέγων Οὐ μὴ πίητε οἶνον, ὑμεῖς καὶ οἱ υἱοὶ ὑμῶν ἕως αἰῶνος,",
+        "VUL": "sive bonum est, sive malum, voci Domini Dei nostri, ad quem mittimus te, obediemus, ut bene sit nobis cum audierimus vocem Domini Dei nostri.",
+        "SYN": "хорошо ли, худо ли то будет, но гласа Господа Бога нашего, к Которому посылаем тебя, послушаемся, чтобы нам было хорошо, когда будем послушны гласу Господа Бога нашего.",
+        "NEO": "Que ce soit du bien ou du mal, nous obéirons à la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, vers qui nous t’envoyons, afin qu’il nous arrive du bien, en obéissant à la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu. »",
+        "NAB": "Whether it is pleasant or difficult, we will obey the command of the LORD, our God, to whom we are sending you, so that it will go well with us for obeying the command of the LORD, our God.\"",
+        "VAT_ES": "Nos guste o no, oiremos la voz del Señor, nuestro Dios, para que nos vaya bien por haber obedecido la voz del Señor, nuestro Dios».",
+        "CEI": "Che ci sia gradita o no, noi ascolteremo la voce del Signore nostro Dio al quale ti mandiamo, perché ce ne venga bene obbedendo alla voce del Signore nostro Dio\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֕י מִ/קֵּ֖ץ עֲשֶׂ֣רֶת יָמִ֑ים וַ/יְהִ֥י דְבַר יְהוָ֖ה אֶֽל יִרְמְיָֽהוּ׃",
+        "LXX": "καὶ οἰκίαν οὐ μὴ οἰκοδομήσητε, καὶ σπέρμα οὐ μὴ σπείρητε, καὶ ἀμπελὼν οὐκ ἔσται ὑμῖν, ὅτι ἐν σκηναῖς οἰκήσετε πάσας τὰς ἡμέρας ὑμῶν, ὅπως ἂν ζήσητε ἡμέρας πολλὰς ἐπὶ τῆς γῆς ἐφ’ ἧς διατρίβετε ὑμεῖς ἐπ’ αὐτῆς.",
+        "VUL": "Cum autem completi essent decem dies, factum est verbum Domini ad Jeremiam,",
+        "SYN": "По прошествии десяти дней было слово Господне к Иеремии.",
+        "NEO": "Et au bout de dix jours, la parole de \\+w Yahweh|strong=\"H3068\"\\+w** fut adressée à Jérémie,.",
+        "NAB": "Ten days passed before the word of the LORD came to Jeremiah.",
+        "VAT_ES": "Al cabo de diez días, la palabra del Señor llegó a Jeremías.",
+        "CEI": "Al termine di dieci giorni, la parola del Signore fu rivolta a Geremia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֗א אֶל יֽוֹחָנָן֙ בֶּן קָרֵ֔חַ וְ/אֶ֛ל כָּל שָׂרֵ֥י הַ/חֲיָלִ֖ים אֲשֶׁ֣ר אִתּ֑/וֹ וּ/לְ/כָ֨ל הָ/עָ֔ם לְ/מִ/קָּטֹ֥ן וְ/עַד גָּדֽוֹל׃",
+        "LXX": "καὶ ἠκούσαμεν τῆς φωνῆς Ἰωναδὰβ τοῦ πατρὸς ἡμῶν πρὸς τὸ μὴ πιεῖν οἶνον πάσας τὰς ἡμέρας ἡμῶν, ἡμεῖς καὶ αἱ γυναῖκες ἡμῶν καὶ οἱ υἱοὶ ἡμῶν καὶ αἱ θυγατέρες ἡμῶν,",
+        "VUL": "vocavitque Johanan filium Caree, et omnes principes bellatorum qui erant cum eo, et universum populum, a minimo usque ad magnum.",
+        "SYN": "Он позвал к себе Иоанана, сына Карея, и всех бывших с ним военных начальников и весь народ, от малого и до большого,",
+        "NEO": "Et il appela Johanan, fils de Carée, tous les chefs des troupes qui étaient avec lui, et tout le peuple, petits et grands ;",
+        "NAB": "Then he called Johanan, son of Kareah, his army leaders, and all the people, high and low,",
+        "VAT_ES": "El llamó a Iojanán, hijo de Caréaj, a todos los jefes de las tropas que estaban con él, y también a todo el pueblo, del más pequeño al más grande,",
+        "CEI": "Questi chiamò Giovanni figlio di Kàreca e tutti i capi delle bande armate che erano con lui e tutto il popolo, dai piccoli ai grandi,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֲלֵי/הֶ֔ם כֹּֽה אָמַ֥ר יְהוָ֖ה אֱלֹהֵ֣י יִשְׂרָאֵ֑ל אֲשֶׁ֨ר שְׁלַחְתֶּ֤ם אֹתִ/י֙ אֵלָ֔י/ו לְ/הַפִּ֥יל תְּחִנַּתְ/כֶ֖ם לְ/פָנָֽי/ו׃",
+        "LXX": "καὶ πρὸς τὸ μὴ οἰκοδομεῖν οἰκίας τοῦ κατοικεῖν ἐκεῖ· ἀμπελὼν καὶ ἀγρὸς καὶ σπέρμα οὐκ ἐγένετο ἡμῖν·",
+        "VUL": "Et dixit ad eos : Hæc dicit Dominus Deus Israël, ad quem misistis me ut prosternerem preces vestras in conspectu ejus :",
+        "SYN": "и сказал им: так говорит Господь, Бог Израилев, к Которому вы посылали меня, чтобы повергнуть пред Ним моление ваше:",
+        "NEO": "et il leur dit : Ainsi, parle \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu d’Israël, vers qui vous m’avez envoyé pour présenter devant lui votre supplication :",
+        "NAB": "and said to them: Thus says the LORD, the God of Israel, to whom you sent me to offer your prayer:",
+        "VAT_ES": "y les dijo: «Así habla el Señor, el Dios de Israel, a quien ustedes me enviaron para presentarle una súplica:",
+        "CEI": "e riferì loro: \"Dice il Signore, Dio di Israele, al quale mi avete inviato perché gli presentassi la vostra supplica:"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אִם שׁ֤וֹב תֵּֽשְׁבוּ֙ בָּ/אָ֣רֶץ הַ/זֹּ֔את וּ/בָנִ֤יתִי אֶתְ/כֶם֙ וְ/לֹ֣א אֶהֱרֹ֔ס וְ/נָטַעְתִּ֥י אֶתְ/כֶ֖ם וְ/לֹ֣א אֶתּ֑וֹשׁ כִּ֤י נִחַ֨מְתִּי֙ אֶל הָ֣/רָעָ֔ה אֲשֶׁ֥ר עָשִׂ֖יתִי לָ/כֶֽם׃",
+        "LXX": "καὶ ᾠκήσαμεν ἐν σκηναῖς, καὶ ἠκούσαμεν καὶ ἐποιήσαμεν κατὰ πάντα ἃ ἐνετείλατο ἡμῖν Ἰωναδὰβ ὁ πατὴρ ἡμῶν.",
+        "VUL": "Si quiescentes manseritis in terra hac, ædificabo vos, et non destruam : plantabo, et non evellam : jam enim placatus sum super malo quod feci vobis.",
+        "SYN": "если останетесь на земле сей, то Я устрою вас и не разорю, насажду вас и не искореню, ибо Я сожалею о том бедствии, какое сделал вам.",
+        "NEO": "Si vous continuez à demeurer dans ce pays, je vous établirai et ne vous détruirai point, je vous planterai et ne vous arracherai point ; car je me repens du mal que je vous ai fait.",
+        "NAB": "If you remain quietly in this land I will build you up, and not tear you down; I will plant you, not uproot you; for I regret the evil I have done you.",
+        "VAT_ES": "Si ustedes permanecen en este país, yo los edificaré y no los demoleré, los plantaré y no los arrancaré, porque me arrepiento del mal que les hice.",
+        "CEI": "Se continuate ad abitare in questa regione, vi renderò stabili e non vi distruggerò, vi pianterò e non vi sradicherò, perché ho pietà del male che vi ho arrecato."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "אַל תִּֽירְא֗וּ מִ/פְּנֵי֙ מֶ֣לֶךְ בָּבֶ֔ל אֲשֶׁר אַתֶּ֥ם יְרֵאִ֖ים מִ/פָּנָ֑י/ו אַל תִּֽירְא֤וּ מִמֶּ֨/נּוּ֙ נְאֻם יְהוָ֔ה כִּֽי אִתְּ/כֶ֣ם אָ֔נִי לְ/הוֹשִׁ֧יעַ אֶתְ/כֶ֛ם וּ/לְ/הַצִּ֥יל אֶתְ/כֶ֖ם מִ/יָּדֽ/וֹ׃",
+        "LXX": "καὶ ἐγενήθη ὅτε ἀνέβη Ναβουχοδονοσὸρ ἐπὶ τὴν γῆν, καὶ εἴπαμεν εἰσελθεῖν, καὶ εἰσήλθομεν εἰς Ἰερουσαλὴμ ἀπὸ προσώπου τῆς δυνάμεως τῶν Χαλδαίων καὶ ἀπὸ προσώπου τῆς δυνάμεως τῶν Ἀσσυρίων, καὶ ᾠκοῦμεν ἐκεῖ.",
+        "VUL": "Nolite timere a facie regis Babylonis, quem vos pavidi formidatis : nolite metuere eum, dicit Dominus, quia vobiscum sum ego ut salvos vos faciam, et eruam de manu ejus :",
+        "SYN": "Не бойтесь царя Вавилонского, которого вы боитесь; не бойтесь его, говорит Господь, ибо Я с вами, чтобы спасать вас и избавлять вас от руки его.",
+        "NEO": "Ne craignez pas le roi de Babylone, dont vous avez peur ; ne le craignez point, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, — car je suis avec vous pour vous sauver et vous délivrer de sa main.",
+        "NAB": "Do not fear the king of Babylon, before whom you are now afraid; do not fear him, says the LORD, for I am with you to save you, to rescue you from his power.",
+        "VAT_ES": "No teman al rey de Babilonia, del que ahora tienen miedo; no le teman –oráculo del Señor– porque yo estoy con ustedes para salvarlos y para librarlos de su mano.",
+        "CEI": "Non temete il re di Babilonia, che vi incute timore; non temetelo - dice il Signore - perché io sarò con voi per salvarvi e per liberarvi dalla sua mano."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/אֶתֵּ֥ן לָ/כֶ֛ם רַחֲמִ֖ים וְ/רִחַ֣ם אֶתְ/כֶ֑ם וְ/הֵשִׁ֥יב אֶתְ/כֶ֖ם אֶל אַדְמַתְ/כֶֽם׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "et dabo vobis misericordias, et miserebor vestri, et habitare vos faciam in terra vestra.",
+        "SYN": "И явлю к вам милость, и он умилостивится к вам и возвратит вас в землю вашу.",
+        "NEO": "Je vous ferai obtenir compassion, et il aura compassion de vous, et il vous fera retourner dans votre pays.",
+        "NAB": "I will grant you mercy, so that he will be sorry for you and let you return to your land.",
+        "VAT_ES": "Yo haré que ustedes encuentren compasión, y él se compadecerá de ustedes y los dejará habitar en el país.",
+        "CEI": "Io gli ispirerò sentimenti di pietà per voi, così egli avrà compassione di voi e vi lascerà dimorare nel vostro paese."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/אִם אֹמְרִ֣ים אַתֶּ֔ם לֹ֥א נֵשֵׁ֖ב בָּ/אָ֣רֶץ הַ/זֹּ֑את לְ/בִלְתִּ֣י שְׁמֹ֔עַ בְּ/ק֖וֹל יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "Οὕτως λέγει Κύριος Πορεύου καὶ εἰπὸν ἀνθρώπῳ Ἰούδα καὶ τοῖς κατοικοῦσιν Ἰερουσαλήμ Οὐ μὴ λάβητε παιδίαν τοῦ ἀκούειν τοὺς λόγους μου;",
+        "VUL": "Si autem dixeritis vos : Non habitabimus in terra ista, nec audiemus vocem Domini Dei nostri,",
+        "SYN": "Если же вы скажете: \"не хотим жить в этой земле\", и не послушаетесь гласа Господа Бога вашего, говоря:",
+        "NEO": "Que si vous dites : Nous ne demeurerons pas dans ce pays, de telle sorte que vous n’obéissiez pas à la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu ;",
+        "NAB": "But if you disobey the voice of the LORD, your God, and decide not to remain in this land,",
+        "VAT_ES": "Pero si ustedes, desoyendo la voz del Señor, su Dios, dicen: «No permaneceremos en este país»;",
+        "CEI": "Se invece, non dando retta alla voce del Signore vostro Dio, voi direte: Non vogliamo abitare in questo paese,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לֵ/אמֹ֗ר לֹ֚א כִּ֣י אֶ֤רֶץ מִצְרַ֨יִם֙ נָב֔וֹא אֲשֶׁ֤ר לֹֽא נִרְאֶה֙ מִלְחָמָ֔ה וְ/ק֥וֹל שׁוֹפָ֖ר לֹ֣א נִשְׁמָ֑ע וְ/לַ/לֶּ֥חֶם לֹֽא נִרְעָ֖ב וְ/שָׁ֥ם נֵשֵֽׁב׃",
+        "LXX": "ἔστησαν ῥῆμα υἱοὶ Ἰωναδὰβ υἱοῦ Ῥηχάβ, ὃ ἐνετείλατο τοῖς τέκνοις αὐτοῦ πρὸς τὸ μὴ πιεῖν οἶνον, καὶ οὐκ ἐπίοσαν· καὶ ἐγὼ ἐλάλησα πρὸς ὑμᾶς ὄρθρου, καὶ ἐλάλησα καὶ οὐκ ἠκούσατε.",
+        "VUL": "dicentes : Nequaquam, sed ad terram Ægypti pergemus, ubi non videbimus bellum, et clangorem tubæ non audiemus, et famem non sustinebimus, et ibi habitabimus :",
+        "SYN": "\"нет, мы пойдем в землю Египетскую, где войны не увидим и трубного голоса не услышим, и голодать не будем, и там будем жить\";",
+        "NEO": "si vous dites : Non ! mais nous irons au pays d’Égypte, où nous ne verrons pas de guerre, où nous n’entendrons pas le son de la trompette, où nous ne sentirons pas la faim, et c’est là que nous habiterons, —",
+        "NAB": "saying, \"No, we will go to Egypt, where we will see no more of war, hear the trumpet alarm no longer, nor hunger for bread; there we will live\";",
+        "VAT_ES": "si dicen: «No, entraremos en el país de Egipto; allí no veremos guerra, no oiremos el sonido de la trompeta, ni estaremos hambrientos de pan; es allí donde queremos permanecer»,",
+        "CEI": "e direte: No, vogliamo andare nel paese d'Egitto, perché là non vedremo guerre e non udremo squilli di tromba né soffriremo carestia di pane: là abiteremo;"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֕ה לָ/כֵ֛ן שִׁמְע֥וּ דְבַר יְהוָ֖ה שְׁאֵרִ֣ית יְהוּדָ֑ה כֹּֽה אָמַר֩ יְהוָ֨ה צְבָא֜וֹת אֱלֹהֵ֣י יִשְׂרָאֵ֗ל אִם אַ֠תֶּם שׂ֣וֹם תְּשִׂמ֤וּ/ן פְּנֵי/כֶם֙ לָ/בֹ֣א מִצְרַ֔יִם וּ/בָאתֶ֖ם לָ/ג֥וּר שָֽׁם׃",
+        "LXX": "καὶ ἀπέστειλα πρὸς ὑμᾶς τοὺς παῖδάς μου τοὺς προφήτας λέγων Ἀποστράφητε ἕκαστος ἀπὸ τῆς ὁδοῦ αὐτοῦ τῆς πονηρᾶς καὶ βελτίω ποιήσατε τὰ ἐπιτηδεύματα ὑμῶν, καὶ οὐ πορεύεσθε ὀπίσω θεῶν ἑτέρων τοῦ δουλεύειν αὐτοῖς, καὶ οἰκήσετε ἐπὶ τῆς γῆς ἧς ἔδωκα ὑμῖν καὶ τοῖς πατράσιν ὑμῶν· καὶ οὐκ ἐκλίνατε τὰ ὦτα ὑμῶν καὶ οὐκ ἠκούσατε.",
+        "VUL": "propter hoc nunc audite verbum Domini, reliquiæ Juda : Hæc dicit Dominus exercituum, Deus Israël : Si posueritis faciem vestram ut ingrediamini Ægyptum, et intraveritis ut ibi habitetis,",
+        "SYN": "то выслушайте ныне слово Господне, вы, остаток Иуды: так говорит Господь Саваоф, Бог Израилев: если вы решительно обратите лица ваши, чтобы идти в Египет, и пойдете, чтобы жить там,",
+        "NEO": "alors entendez la parole de \\+w Yahweh|strong=\"H3068\"\\+w**, vous, les restes de Juda : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** des armées, Dieu d’Israël : Si vous tournez vos regards vers l’Égypte pour y aller, et que vous y entriez pour y habiter,",
+        "NAB": "then listen to the word of the LORD, remnant of Judah: Thus says the LORD of hosts, the God of Israel: If you are determined to go to Egypt, when you arrive there to stay,",
+        "VAT_ES": "entonces, escuchen la palabra del Señor, ustedes, resto de Judá: Así habla el Señor de los ejércitos, el Dios de Israel: Si ustedes pretenden a toda costa entrar en Egipto, para residir allí,",
+        "CEI": "in questo caso ascolta la parola del Signore, o resto di Giuda: Dice il Signore degli eserciti, Dio di Israele: Se voi intendete veramente andare in Egitto e vi andate per stabilirvi colà,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/הָיְתָ֣ה הַ/חֶ֗רֶב אֲשֶׁ֤ר אַתֶּם֙ יְרֵאִ֣ים מִמֶּ֔/נָּה שָׁ֛ם תַּשִּׂ֥יג אֶתְ/כֶ֖ם בְּ/אֶ֣רֶץ מִצְרָ֑יִם וְ/הָ/רָעָ֞ב אֲשֶׁר אַתֶּ֣ם דֹּאֲגִ֣ים מִמֶּ֗/נּוּ שָׁ֣ם יִדְבַּ֧ק אַחֲרֵי/כֶ֛ם מִצְרַ֖יִם וְ/שָׁ֥ם תָּמֻֽתוּ׃",
+        "LXX": "καὶ ἔστησαν υἱοὶ Ἰωναδὰβ υἱοῦ Ῥηχὰβ τὴν ἐντολὴν τοῦ πατρὸς αὐτῶν, ὁ δὲ λαὸς οὗτος οὐκ ἤκουσέν μου.",
+        "VUL": "gladius quem vos formidatis ibi comprehendet vos in terra Ægypti : et fames, pro qua estis solliciti, adhærebit vobis in Ægypto, et ibi moriemini.",
+        "SYN": "то меч, которого вы боитесь, настигнет вас там, в земле Египетской, и голод, которого вы страшитесь, будет всегда следовать за вами там, в Египте, и там умрете.",
+        "NEO": "l’épée que vous craignez vous atteindra là, au pays d’Égypte, et la famine que vous redoutez s’attachera à vous là, en Égypte ; et là vous mourrez.",
+        "NAB": "the sword you fear shall reach you in the land of Egypt; the hunger you dread shall cling to you no less in Egypt, and there you shall die.",
+        "VAT_ES": "la espada que ustedes temen los alcanzará allí, en Egipto, y el hambre que les da miedo se adherirá a ustedes allí, en Egipto, y morirán.",
+        "CEI": "ebbene, la spada che temete vi raggiungerà laggiù nel paese d'Egitto, e la fame che temete vi sarà addosso laggiù in Egitto e là morirete."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/יִֽהְי֣וּ כָל הָ/אֲנָשִׁ֗ים אֲשֶׁר שָׂ֨מוּ אֶת פְּנֵי/הֶ֜ם לָ/ב֤וֹא מִצְרַ֨יִם֙ לָ/ג֣וּר שָׁ֔ם יָמ֕וּתוּ בַּ/חֶ֖רֶב בָּ/רָעָ֣ב וּ/בַ/דָּ֑בֶר וְ/לֹֽא יִהְיֶ֤ה לָ/הֶם֙ שָׂרִ֣יד וּ/פָלִ֔יט מִ/פְּנֵי֙ הָֽ/רָעָ֔ה אֲשֶׁ֥ר אֲנִ֖י מֵבִ֥יא עֲלֵי/הֶֽם׃",
+        "LXX": "διὰ τοῦτο οὕτως εἶπεν Κύριος Ἰδοὺ ἐγὼ φέρω ἐπὶ Ἰούδαν καὶ ἐπὶ τοὺς κατοικοῦντας Ἰερουσαλὴμ πάντα τὰ κακὰ ἃ ἐλάλησα ἐπ’ αὐτούς.",
+        "VUL": "Omnesque viri qui posuerunt faciem suam ut ingrediantur Ægyptum, ut habitent ibi, morientur gladio, et fame, et peste : nullus de eis remanebit, nec effugiet a facie mali quod ego afferam super eos.",
+        "SYN": "И все, которые обратят лице свое, чтобы идти в Египет и там жить, умрут от меча, голода и моровой язвы, и ни один из них не останется и не избежит того бедствия, которое Я наведу на них.",
+        "NEO": "Tous ceux qui auront tourné leurs regards vers l’Égypte pour y aller et pour y habiter mourront par l’épée, par la famine et la peste, et il n’y en aura pas parmi eux qui survive et qui échappe au mal que je ferai venir sur eux.",
+        "NAB": "All those men who determine to go to Egypt to stay, shall die by the sword, famine, and pestilence; not one shall survive or escape the evil that I will bring upon them.",
+        "VAT_ES": "Todos los que pretendan a toda costa entrar en Egipto para residir allí, morirán por la espada, el hambre y la peste; ninguno de ellos sobrevivirá ni escapará a la desgracia que atraeré sobre ellos.",
+        "CEI": "Allora tutti gli uomini che avranno deciso di recarsi in Egitto per dimorarvi moriranno di spada, di fame e di peste. Nessuno di loro scamperà o sfuggirà alla sventura che io manderò su di loro."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כִּי֩ כֹ֨ה אָמַ֜ר יְהוָ֣ה צְבָאוֹת֮ אֱלֹהֵ֣י יִשְׂרָאֵל֒ כַּ/אֲשֶׁר֩ נִתַּ֨ךְ אַפִּ֜/י וַ/חֲמָתִ֗/י עַל יֹֽשְׁבֵי֙ יְר֣וּשָׁלִַ֔ם כֵּ֣ן תִּתַּ֤ךְ חֲמָתִ/י֙ עֲלֵי/כֶ֔ם בְּ/בֹאֲ/כֶ֖ם מִצְרָ֑יִם וִ/הְיִיתֶ֞ם לְ/אָלָ֤ה וּ/לְ/שַׁמָּה֙ וְ/לִ/קְלָלָ֣ה וּ/לְ/חֶרְפָּ֔ה וְ/לֹֽא תִרְא֣וּ ע֔וֹד אֶת הַ/מָּק֖וֹם הַ/זֶּֽה׃",
+        "LXX": "διὰ τοῦτο οὕτως εἶπεν Κύριος Ἐπειδὴ ἤκουσαν υἱοὶ Ἰωναδὰβ υἱοῦ Ῥηχὰβ τὴν ἐντολὴν τοῦ πατρὸς αὐτῶν ποιεῖν καθότι ἐνετείλατο αὐτοῖς ὁ πατὴρ αὐτῶν,",
+        "VUL": "Quia hæc dicit Dominus exercituum, Deus Israël : Sicut conflatus est furor meus et indignatio mea super habitatores Jerusalem, sic conflabitur indignatio mea super vos cum ingressi fueritis Ægyptum : et eritis in jusjurandum, et in stuporem, et in maledictum, et in opprobrium, et nequaquam ultra videbitis locum istum.",
+        "SYN": "Ибо так говорит Господь Саваоф, Бог Израилев: как излился гнев Мой и ярость Моя на жителей Иерусалима, так изольется ярость Моя на вас, когда войдете в Египет, и вы будете проклятием и ужасом, и поруганием и поношением, и не увидите более места сего.",
+        "NEO": "Car ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** des armées, Dieu d’Israël : Comme ma colère et ma fureur ont fondu sur les habitants de Jérusalem, ainsi ma fureur fondra sur vous quand vous serez entrés en Égypte ; vous serez un objet d’exécration, de stupéfaction, de malédiction et d’outrages, et vous ne reverrez plus ce lieu-ci.",
+        "NAB": "For thus says the LORD of hosts, the God of Israel: Just as my furious anger was poured out upon the citizens of Jerusalem, so shall my anger be poured out on you when you reach Egypt. You shall become an example of malediction and horror, a curse and a reproach, and you shall never see this place again.",
+        "VAT_ES": "Porque así habla el Señor de los ejércitos, el Dios de Israel: Como se ha derramado mi ira y mi furor sobre los habitantes de Jerusalén, así se derramará sobre ustedes mi furor cuando entren en Egipto; ustedes se convertirán en imprecación, devastación, maldición e ignominia, y no volverán más a este lugar».",
+        "CEI": "Poiché, dice il Signore degli eserciti, Dio di Israele: Come si è rovesciato il mio furore e la mia ira contro gli abitanti di Gerusalemme, così la mia ira si rovescerà contro di voi quando sarete andati in Egitto. Voi sarete oggetto di maledizione, di orrore, di esecrazione e di scherno e non vedrete mai più questo luogo\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "דִּבֶּ֨ר יְהוָ֤ה עֲלֵי/כֶם֙ שְׁאֵרִ֣ית יְהוּדָ֔ה אַל תָּבֹ֖אוּ מִצְרָ֑יִם יָדֹ֨עַ֙ תֵּֽדְע֔וּ כִּי הַעִידֹ֥תִי בָ/כֶ֖ם הַ/יּֽוֹם׃",
+        "LXX": "οὐ μὴ ἐκλίπῃ ἀνὴρ τῶν υἱῶν Ἰωναδὰβ υἱοῦ Ῥηχὰβ παρεστηκὼς κατὰ πρόσωπόν μου πάσας τὰς ἡμέρας τῆς γῆς.",
+        "VUL": "Verbum Domini super vos, reliquiæ Juda : Nolite intrare Ægyptum : scientes scietis, quia obtestatus sum vos hodie,",
+        "SYN": "К вам, остаток Иуды, изрек Господь: \"не ходите в Египет\"; твердо знайте, что я ныне предостерегал вас,",
+        "NEO": "Restes de Juda, \\+w Yahweh|strong=\"H3068\"\\+w** vous dit : N’entrez pas en Égypte ; sachez bien que je vous avertis solennellement aujourd’hui.",
+        "NAB": "It is the LORD who has spoken to you, remnant of Judah; do not go to Egypt! You can never say that I did not warn you this day.",
+        "VAT_ES": "Pero Jeremías dijo: «Esta es la palabra que el Señor les dirige, resto de Judá: «No entren en Egipto». Sepan bien que hoy yo les hago una solemne advertencia.",
+        "CEI": "Questo vi dice il Signore, o superstiti di Giuda: \"Non andate in Egitto. Sappiate bene che oggi io vi ho solennemente avvertiti."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "כִּ֣י התעתי/ם הִתְעֵיתֶם֮ בְּ/נַפְשֽׁוֹתֵי/כֶם֒ כִּֽי אַתֶּ֞ם שְׁלַחְתֶּ֣ם אֹתִ֗/י אֶל יְהוָ֤ה אֱלֹֽהֵי/כֶם֙ לֵ/אמֹ֔ר הִתְפַּלֵּ֣ל בַּעֲדֵ֔/נוּ אֶל יְהוָ֖ה אֱלֹהֵ֑י/נוּ וּ/כְ/כֹל֩ אֲשֶׁ֨ר יֹאמַ֜ר יְהוָ֧ה אֱלֹהֵ֛י/נוּ כֵּ֥ן הַגֶּד לָ֖/נוּ וְ/עָשִֽׂינוּ׃",
+        "VUL": "quia decepistis animas vestras. Vos enim misistis me ad Dominum Deum nostrum, dicentes : Ora pro nobis ad Dominum Deum nostrum, et juxta omnia quæcumque dixerit tibi Dominus Deus noster, sic annuntia nobis, et faciemus.",
+        "SYN": "ибо вы погрешили против себя самих: вы послали меня к Господу Богу нашему сказав: \"помолись о нас Господу Богу нашему и все, что скажет Господь Бог наш, объяви нам, и мы сделаем\".",
+        "NEO": "Car vous vous abusiez vous-mêmes, lorsque vous m’avez envoyé vers \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, en disant : Intercède pour nous auprès de \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, et tout ce que \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, dira, déclare-le-nous, et nous le ferons.",
+        "NAB": "At the cost of your lives you have deceived me, sending me to the LORD, your God, saying, \"Pray for us to the LORD, our God; make known to us all that the LORD, our God, shall say, and we will do it.\"",
+        "VAT_ES": "Ustedes se han perjudicado a sí mismos cuando me enviaron ante el Señor, su Dios, diciendo: «Ruega en favor nuestro al Señor, nuestro Dios; comunícanos todo lo que diga el Señor, nuestro Dios, y nosotros lo haremos».",
+        "CEI": "Poiché avete messo a rischio le vostre vite, quando mi avete mandato dal Signore vostro Dio, dicendomi: Intercedi per noi presso il Signore nostro Dio, dicci ciò che il Signore nostro Dio dirà e noi lo eseguiremo."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וָ/אַגִּ֥ד לָ/כֶ֖ם הַ/יּ֑וֹם וְ/לֹ֣א שְׁמַעְתֶּ֗ם בְּ/קוֹל֙ יְהוָ֣ה אֱלֹֽהֵי/כֶ֔ם וּ/לְ/כֹ֖ל אֲשֶׁר שְׁלָחַ֥/נִי אֲלֵי/כֶֽם׃",
+        "VUL": "Et annuntiavi vobis hodie, et non audistis vocem Domini Dei vestri super universis pro quibus misit me ad vos.",
+        "SYN": "Я объявил вам ныне; но вы не послушали гласа Господа Бога нашего и всего того, с чем Он послал меня к вам.",
+        "NEO": "Je vous l’ai déclaré aujourd’hui ; mais vous n’avez pas écouté la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, ni rien de ce qu’il m’a envoyé vous communiquer.",
+        "NAB": "Today I proclaim his message, but you obey the voice of the LORD, your God, in nothing that he has commissioned me to make known to you.",
+        "VAT_ES": "Hoy se lo he comunicado a ustedes, pero ustedes no han oído la voz del Señor, su Dios, en nada de lo que él me envió a decirles.",
+        "CEI": "Oggi ve l'ho riferito, ma voi non ascoltate la voce del Signore vostro Dio riguardo a tutto ciò per cui egli mi ha inviato a voi."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/עַתָּה֙ יָדֹ֣עַ תֵּֽדְע֔וּ כִּ֗י בַּ/חֶ֛רֶב בָּ/רָעָ֥ב וּ/בַ/דֶּ֖בֶר תָּמ֑וּתוּ בַּ/מָּקוֹם֙ אֲשֶׁ֣ר חֲפַצְתֶּ֔ם לָ/ב֖וֹא לָ/ג֥וּר שָֽׁם׃",
+        "VUL": "Nunc ergo scientes scietis quia gladio, et fame, et peste moriemini in loco ad quem voluistis intrare ut habitaretis ibi.",
+        "SYN": "Итак знайте, что вы умрете от меча, голода и моровой язвы в том месте, куда хотите идти, чтобы жить там.",
+        "NEO": "Sachez donc bien maintenant que vous mourrez par l’épée, par la famine et par la peste, au lieu où il vous a plu d’aller pour y habiter. »",
+        "NAB": "Have no doubt of this, you shall die by the sword, famine, and pestilence in the place where you wish to go and settle.",
+        "VAT_ES": "Y ahora pueden estar seguros de que morirán por la espada, el hambre y la peste, en el lugar donde quieren entrar para residir allí».",
+        "CEI": "Perciò sappiate bene che morirete di spada, di fame e di peste nel luogo in cui desiderate andare a dimorare\"."
+      }
+    }
+  }
+}

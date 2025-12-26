@@ -1,0 +1,609 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_023",
+  "book_key": "EXO",
+  "sequence": 23,
+  "chapter_in": {
+    "MT": 23,
+    "VUL": 23,
+    "LXX": 23
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לֹ֥א תִשָּׂ֖א שֵׁ֣מַע שָׁ֑וְא אַל תָּ֤שֶׁת יָֽדְ/ךָ֙ עִם רָשָׁ֔ע לִ/הְיֹ֖ת עֵ֥ד חָמָֽס׃",
+        "LXX": "Οὐ παραδέξῃ ἀκοὴν ματαίαν· οὐ συνκαταθήσῃ μετὰ τοῦ ἀδίκου γενέσθαι μάρτυς ἄδικος.",
+        "VUL": "Non suscipies vocem mendacii, nec junges manum tuam ut pro impio dicas falsum testimonium.",
+        "SYN": "Не внимай пустому слуху, не давай руки твоей нечестивому, чтоб быть свидетелем неправды.",
+        "NEO": "Tu ne sèmeras pas de faux bruit ; tu ne donneras pas la main à un méchant en lui servant de témoin à charge.",
+        "NAB": "\"You shall not repeat a false report. Do not join the wicked in putting your hand, as an unjust witness, upon anyone.",
+        "VAT_ES": "No divulgarás falsos rumores. No te pondrás de parte del culpable, dando testimonio en favor de una injusticia.",
+        "CEI": "Non spargerai false dicerie; non presterai mano al colpevole per essere testimone in favore di un'ingiustizia."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "לֹֽא תִהְיֶ֥ה אַחֲרֵֽי רַבִּ֖ים לְ/רָעֹ֑ת וְ/לֹא תַעֲנֶ֣ה עַל רִ֗ב לִ/נְטֹ֛ת אַחֲרֵ֥י רַבִּ֖ים לְ/הַטֹּֽת׃",
+        "LXX": "οὐκ ἔσῃ μετὰ πλειόνων ἐν κακίᾳ· οὐ προσθήσῃ μετὰ πλήθους ἐκκλῖναι μετὰ πλειόνων, ὥστε ἐκκλεῖσαι κρίσιν.",
+        "VUL": "Non sequeris turbam ad faciendum malum : nec in judicio, plurimorum acquiesces sententiæ, ut a vero devies.",
+        "SYN": "Не следуй за большинством на зло, и не решай тяжбы, отступая по большинству от правды;",
+        "NEO": "Tu ne suivras pas la multitude pour faire le mal, et tu ne déposeras pas dans un procès en te mettant du côté du grand nombre pour faire fléchir la justice.",
+        "NAB": "Neither shall you allege the example of the many as an excuse for doing wrong, nor shall you, when testifying in a lawsuit, side with the many in perverting justice.",
+        "VAT_ES": "No seguirás a la mayoría para hacer el mal, ni atestiguarás en un proceso plegándote a la mayoría, para conculcar el derecho.",
+        "CEI": "Non seguirai la maggioranza per agire male e non deporrai in processo per deviare verso la maggioranza, per falsare la giustizia."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/דָ֕ל לֹ֥א תֶהְדַּ֖ר בְּ/רִיבֽ/וֹ׃",
+        "LXX": "καὶ πένητα οὐκ ἐλεήσεις ἐν κρίσει.",
+        "VUL": "Pauperis quoque non misereberis in judicio.",
+        "SYN": "и бедному не потворствуй в тяжбе его.",
+        "NEO": "Tu ne favoriseras pas non plus un faible dans son procès.",
+        "NAB": "You shall not favor a poor man in his lawsuit.",
+        "VAT_ES": "Tampoco favorecerás arbitrariamente al pobre que está implicado en un pleito.",
+        "CEI": "Non favorirai nemmeno il debole nel suo processo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּ֣י תִפְגַּ֞ע שׁ֧וֹר אֹֽיִבְ/ךָ֛ א֥וֹ חֲמֹר֖/וֹ תֹּעֶ֑ה הָשֵׁ֥ב תְּשִׁיבֶ֖/נּוּ לֽ/וֹ׃",
+        "LXX": "Ἐὰν δὲ συναντήσῃς τῷ βοὶ τοῦ ἐχθροῦ σου ἢ τῷ ὑποζυγίῳ αὐτοῦ πλανωμένοις, ἀποστρέψας ἀποδώσεις αὐτῷ.",
+        "VUL": "Si occurreris bovi inimici tui, aut asino erranti, reduc ad eum.",
+        "SYN": "Если найдешь вола врага твоего, или осла его заблудившегося, приведи его к нему;",
+        "NEO": "Si tu rencontres le bœuf de ton ennemi ou son âne égaré, tu ne manqueras pas de le lui ramener.",
+        "NAB": "\"When you come upon your enemy's ox or ass going astray, see to it that it is returned to him.",
+        "VAT_ES": "Si encuentras perdido el buey o el asno de tu enemigo, se los llevarás inmediatamente.",
+        "CEI": "Quando incontrerai il bue del tuo nemico o il suo asino dispersi, glieli dovrai ricondurre."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּֽי תִרְאֶ֞ה חֲמ֣וֹר שֹׂנַאֲ/ךָ֗ רֹבֵץ֙ תַּ֣חַת מַשָּׂא֔/וֹ וְ/חָדַלְתָּ֖ מֵ/עֲזֹ֣ב ל֑/וֹ עָזֹ֥ב תַּעֲזֹ֖ב עִמּֽ/וֹ׃",
+        "LXX": "ἐὰν δὲ ἴδῃς τὸ ὑποζύγιον τοῦ ἐχθροῦ σου πεπτωκὸς ὑπὸ τὸν γόμον αὐτοῦ, οὐ παρελεύσῃ αὐτό, ἀλλὰ συναρεῖς αὐτὸ μετ’ αὐτοῦ.",
+        "VUL": "Si videris asinum odientis te jacere sub onere, non pertransibis, sed sublevabis cum eo.",
+        "SYN": "если увидишь осла врага твоего упавшим под ношею своею, то не оставляй его; развьючь вместе с ним.",
+        "NEO": "Si tu vois l’âne de celui qui te hait succombant sous sa charge, tu te garderas de l’abandonner ; joins tes efforts aux siens pour le décharger.",
+        "NAB": "When you notice the ass of one who hates you lying prostrate under its burden, by no means desert him; help him, rather, to raise it up.",
+        "VAT_ES": "Si ves al asno del que te aborrece, caído bajo el peso de su carga, no lo dejarás abandonado; más aún, acudirás a auxiliarlo junto con su dueño.",
+        "CEI": "Quando vedrai l'asino del tuo nemico accasciarsi sotto il carico, non abbandonarlo a se stesso: mettiti con lui ad aiutarlo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "לֹ֥א תַטֶּ֛ה מִשְׁפַּ֥ט אֶבְיֹנְ/ךָ֖ בְּ/רִיבֽ/וֹ׃",
+        "LXX": "Οὐ διαστρέψεις κρίμα πένητος ἐν κρίσει αὐτοῦ.",
+        "VUL": "Non declinabis in judicium pauperis.",
+        "SYN": "Не суди превратно тяжбы бедного твоего.",
+        "NEO": "Tu ne feras pas fléchir le droit du pauvre dans son procès.",
+        "NAB": "\"You shall not deny one of your needy fellow men his rights in his lawsuit.",
+        "VAT_ES": "No conculcarás el derecho de tu compatriota indigente cuando tenga un pleito.",
+        "CEI": "Non farai deviare il giudizio del povero, che si rivolge a te nel suo processo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "מִ/דְּבַר שֶׁ֖קֶר תִּרְחָ֑ק וְ/נָקִ֤י וְ/צַדִּיק֙ אַֽל תַּהֲרֹ֔ג כִּ֥י לֹא אַצְדִּ֖יק רָשָֽׁע׃",
+        "LXX": "ἀπὸ παντὸς ῥήματος ἀδίκου ἀποστήσῃ· ἀθῷον καὶ δίκαιον οὐκ ἀποκτενεῖς, καὶ οὐ δικαιώσεις τὸν ἀσεβῆ ἕνεκεν δώρων.",
+        "VUL": "Mendacium fugies. Insontem et justum non occides : quia aversor impium.",
+        "SYN": "Удаляйся от неправды и не умерщвляй невинного и правого, ибо Я не оправдаю беззаконника.",
+        "NEO": "Tu t’éloigneras d’une cause mensongère, et tu ne feras pas mourir l’innocent et le juste ; car je n’absoudrai pas un coupable.",
+        "NAB": "You shall keep away from anything dishonest. The innocent and the just you shall not put to death, nor shall you acquit the guilty.",
+        "VAT_ES": "Permanecerás alejado de las causas falsas, y no harás morir al inocente y al que está en su derecho, porque yo no absolveré al culpable.",
+        "CEI": "Ti terrai lontano da parola menzognera. Non far morire l'innocente e il giusto, perché io non assolvo il colpevole."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/שֹׁ֖חַד לֹ֣א תִקָּ֑ח כִּ֤י הַ/שֹּׁ֨חַד֙ יְעַוֵּ֣ר פִּקְחִ֔ים וִֽ/יסַלֵּ֖ף דִּבְרֵ֥י צַדִּיקִֽים׃",
+        "LXX": "καὶ δῶρα οὐ λήμψῃ· τὰ γὰρ δῶρα ἐκτυφλοῖ ὀφθαλμοὺς βλεπόντων καὶ λυμαίνεται ῥήματα δίκαια.",
+        "VUL": "Nec accipies munera, quæ etiam excæcant prudentes, et subvertunt verba justorum.",
+        "SYN": "Даров не принимай, ибо дары слепыми делают зрячих и превращают дело правых.",
+        "NEO": "Tu n’accepteras pas de présents ; car les présents aveuglent les clairvoyants et ruinent les causes justes.",
+        "NAB": "Never take a bribe, for a bribe blinds even the most clear-sighted and twists the words even of the just.",
+        "VAT_ES": "No te dejes sobornar con regalos, porque el regalo enceguece al que ve con claridad y pervierte las causas de los justos.",
+        "CEI": "Non accetterai doni, perché il dono acceca chi ha gli occhi aperti e perverte anche le parole dei giusti."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/גֵ֖ר לֹ֣א תִלְחָ֑ץ וְ/אַתֶּ֗ם יְדַעְתֶּם֙ אֶת נֶ֣פֶשׁ הַ/גֵּ֔ר כִּֽי גֵרִ֥ים הֱיִיתֶ֖ם בְּ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "καὶ προσήλυτον οὐ θλίψετε· ὑμεῖς γὰρ οἴδατε τὴν ψυχὴν τοῦ προσηλύτου· αὐτοὶ γὰρ προσήλυτοι ἦτε ἐν γῇ Αἰγύπτῳ.",
+        "VUL": "Peregrino molestus non eris. Scitis enim advenarum animas : quia et ipsi peregrini fuistis in terra Ægypti.",
+        "SYN": "Пришельца не обижай [и не притесняй его]: вы знаете душу пришельца, потому что сами были пришельцами в земле Египетской.",
+        "NEO": "Tu n’opprimeras pas l’étranger ; vous savez ce que ressent l’étranger, car vous avez été étrangers dans le pays d’Égypte.",
+        "NAB": "You shall not oppress an alien; you well know how it feels to be an alien, since you were once aliens yourselves in the land of Egypt.",
+        "VAT_ES": "No oprimirás al extranjero. Ustedes saben muy bien lo que significa ser extranjero, ya que lo fueron en Egipto.",
+        "CEI": "Non opprimerai il forestiero: anche voi conoscete la vita del forestiero, perché siete stati forestieri nel paese d'Egitto."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/שֵׁ֥שׁ שָׁנִ֖ים תִּזְרַ֣ע אֶת אַרְצֶ֑/ךָ וְ/אָסַפְתָּ֖ אֶת תְּבוּאָתָֽ/הּ׃",
+        "LXX": "Ἓξ ἔτη σπερεῖς τὴν γῆν σου καὶ συνάξεις τὰ γενήματα αὐτῆς·",
+        "VUL": "Sex annis seminabis terram tuam, et congregabis fruges ejus :",
+        "SYN": "Шесть лет засевай землю твою и собирай произведения ее,",
+        "NEO": "Pendant six années tu ensemenceras ta terre et tu en récolteras les produits.",
+        "NAB": "\"For six years you may sow your land and gather in its produce.",
+        "VAT_ES": "Durante seis años sembrarás tus tierras y recogerás sus productos.",
+        "CEI": "Per sei anni seminerai la tua terra e ne raccoglierai il prodotto,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/הַ/שְּׁבִיעִ֞ת תִּשְׁמְטֶ֣/נָּה וּ/נְטַשְׁתָּ֗/הּ וְ/אָֽכְלוּ֙ אֶבְיֹנֵ֣י עַמֶּ֔/ךָ וְ/יִתְרָ֕/ם תֹּאכַ֖ל חַיַּ֣ת הַ/שָּׂדֶ֑ה כֵּֽן תַּעֲשֶׂ֥ה לְ/כַרְמְ/ךָ֖ לְ/זֵיתֶֽ/ךָ׃",
+        "LXX": "τῷ δὲ ἑβδόμῳ ἄφεσιν ποιήσεις καὶ ἀνήσεις αὐτήν, καὶ ἔδονται οἱ πτωχοὶ τοῦ ἔθνους σου· τὰ δὲ ὑπολειπόμενα ἔδεται τὰ ἄγρια θηρία. οὕτως ποιήσεις τὸν ἀμπελῶνά σου καὶ τὸν ἐλαιῶνά σου.",
+        "VUL": "anno autem septimo dimittes eam, et requiescere facies, ut comedant pauperes populi tui : et quidquid reliquum fuerit, edant bestiæ agri : ita facies in vinea et in oliveto tuo.",
+        "SYN": "а в седьмой оставляй ее в покое, чтобы питались убогие из твоего народа, а остатками после них питались звери полевые; так же поступай с виноградником твоим и с маслиною твоею.",
+        "NEO": "Mais, la septième, tu les laisseras et les abandonneras ; et les indigents de ton peuple les mangeront, et les bêtes des champs mangeront ce qui restera. Tu feras de même pour tes vignes et les oliviers.",
+        "NAB": "But the seventh year you shall let the land lie untilled and unharvested, that the poor among you may eat of it and the beasts of the field may eat what the poor leave. So also shall you do in regard to your vineyard and your olive grove.",
+        "VAT_ES": "Al séptimo año, les darás un descanso y las dejarás sin cultivar. Allí encontrarán su alimento tus compatriotas indigentes, y los animales del campo comerán el resto. Lo mismo harás con tus viñas y tus olivares.",
+        "CEI": "ma nel settimo anno non la sfrutterai e la lascerai incolta: ne mangeranno gli indigenti del tuo popolo e ciò che lasceranno sarà divorato dalle bestie della campagna. Così farai per la tua vigna e per il tuo oliveto."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "שֵׁ֤שֶׁת יָמִים֙ תַּעֲשֶׂ֣ה מַעֲשֶׂ֔י/ךָ וּ/בַ/יּ֥וֹם הַ/שְּׁבִיעִ֖י תִּשְׁבֹּ֑ת לְמַ֣עַן יָנ֗וּחַ שֽׁוֹרְ/ךָ֙ וַ/חֲמֹרֶ֔/ךָ וְ/יִנָּפֵ֥שׁ בֶּן אֲמָתְ/ךָ֖ וְ/הַ/גֵּֽר׃",
+        "LXX": "ἓξ ἡμέρας ποιήσεις τὰ ἔργα σου, τῇ δὲ ἡμέρᾳ τῇ ἑβδόμῃ ἀνάπαυσις· ἵνα ἀναπαύσηται ὁ βοῦς σου καὶ τὸ ὑποζύγιόν σου, καὶ ἵνα ἀναπαύσηται ὁ υἱὸς τῆς παιδίσκης σου καὶ ὁ προσήλυτος.",
+        "VUL": "Sex diebus operaberis : septimo die cessabis, ut requiescat bos et asinus tuus, et refrigeretur filius ancillæ tuæ, et advena.",
+        "SYN": "Шесть дней делай дела твои, а в седьмой день покойся, чтобы отдохнул вол твой и осел твой и успокоился сын рабы твоей и пришлец.",
+        "NEO": "Pendant six jours tu feras ton ouvrage ; mais le septième jour tu te reposeras, afin que ton bœuf et ton âne aient du repos, et que le fils de ta servante et l’étranger respirent.",
+        "NAB": "\"For six days you may do your work, but on the seventh day you must rest, that your ox and your ass may also have rest, and that the son of your maidservant and the alien may be refreshed.",
+        "VAT_ES": "Durante seis días harás tus trabajos, pero el séptimo deberás descansar, a fin de que reposen tu buey y tu asno, y el hijo de tu esclava y el extranjero tengan un respiro;.",
+        "CEI": "Per sei giorni farai i tuoi lavori, ma nel settimo giorno farai riposo, perché possano goder quiete il tuo bue e il tuo asino e possano respirare i figli della tua schiava e il forestiero."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וּ/בְ/כֹ֛ל אֲשֶׁר אָמַ֥רְתִּי אֲלֵי/כֶ֖ם תִּשָּׁמֵ֑רוּ וְ/שֵׁ֨ם אֱלֹהִ֤ים אֲחֵרִים֙ לֹ֣א תַזְכִּ֔ירוּ לֹ֥א יִשָּׁמַ֖ע עַל פִּֽי/ךָ׃",
+        "LXX": "πάντα ὅσα εἴρηκα πρὸς ὑμᾶς φυλάξασθε· καὶ ὄνομα θεῶν ἑτέρων οὐκ ἀναμνησθήσεσθε, οὐδὲ μὴ ἀκουσθῇ ἐκ τοῦ στόματος ὑμῶν.",
+        "VUL": "Omnia quæ dixi vobis, custodite. Et per nomen externorum deorum non jurabitis, neque audietur ex ore vestro.",
+        "SYN": "Соблюдайте всё, что Я сказал вам, и имени других богов не упоминайте; да не слышится оно из уст твоих.",
+        "NEO": "Vous prendrez garde à tout ce que je vous ai dit ; vous ne prononcerez pas le nom de dieux étrangers, et on n’en entendra pas sortir de votre bouche.",
+        "NAB": "Give heed to all that I have told you. \"Never mention the name of any other god; it shall not be heard from your lips.",
+        "VAT_ES": "Ustedes observarán todo lo que les he dicho. Ni siquiera pronunciarán el nombre de otros dioses: que nadie lo oiga en boca de ustedes.",
+        "CEI": "Farete attenzione a quanto vi ho detto: non pronunciate il nome di altri dei; non si senta sulla tua bocca!"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "שָׁלֹ֣שׁ רְגָלִ֔ים תָּחֹ֥ג לִ֖/י בַּ/שָּׁנָֽה׃",
+        "LXX": "Τρεῖς καιροὺς τοῦ ἐνιαυτοῦ ἑορτάσατέ μοι.",
+        "VUL": "Tribus vicibus per singulos annos mihi festa celebrabitis.",
+        "SYN": "Три раза в году празднуй Мне:",
+        "NEO": "Trois fois chaque année tu célébreras une fête+ 23:14 Litt. \\+it Pèlerinages (regalim)\\+it* : mot traditionnel pour désigner, entre toutes les fêtes, les trois où il fallait se rendre à Jérusalem. On peut entendre aussi « Tous les trois ans ».* en mon honneur.",
+        "NAB": "\"Three times a year you shall celebrate a pilgrim feast to me.",
+        "VAT_ES": "Tres veces al año celebrarás una fiesta en mi honor.",
+        "CEI": "Tre volte all'anno farai festa in mio onore:"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אֶת חַ֣ג הַ/מַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֣ת יָמִים֩ תֹּאכַ֨ל מַצּ֜וֹת כַּֽ/אֲשֶׁ֣ר צִוִּיתִ֗/ךָ לְ/מוֹעֵד֙ חֹ֣דֶשׁ הָֽ/אָבִ֔יב כִּי ב֖/וֹ יָצָ֣אתָ מִ/מִּצְרָ֑יִם וְ/לֹא יֵרָא֥וּ פָנַ֖/י רֵיקָֽם׃",
+        "LXX": "τὴν ἑορτὴν τῶν ἀζύμων φυλάξασθε ποιεῖν· ἑπτὰ ἡμέρας ἔδεσθε ἄζυμα, καθάπερ ἐνετειλάμην σοι, κατὰ τὸν καιρὸν τοῦ μηνὸς τῶν νέων· ἐν γὰρ αὐτῷ ἐξῆλθες ἐξ Αἰγύπτου. οὐκ ὀφθήσῃ ἐνώπιόν μου κενός.",
+        "VUL": "Solemnitatem azymorum custodies. Septem diebus comedes azyma, sicut præcepi tibi, tempore mensis novorum, quando egressus es de Ægypto : non apparebis in conspectu meo vacuus.",
+        "SYN": "наблюдай праздник опресноков: семь дней ешь пресный хлеб, как Я повелел тебе, в назначенное время месяца Авива, ибо в оном ты вышел из Египта; и пусть не являются пред лице Мое с пустыми _руками;_",
+        "NEO": "Tu observeras la fête des Azymes : pendant sept jours tu mangeras des pains sans levain, comme je t’en ai donné l’ordre, au temps fixé, au mois d’abib, car c’est dans ce mois que tu es sorti d’Égypte ; et l’on ne se présentera pas les mains vides devant ma face.",
+        "NAB": "You shall keep the feast of Unleavened Bread. As I have commanded you, you must eat unleavened bread for seven days at the prescribed time in the month of Abib, for it was then that you came out of Egypt. No one shall appear before me empty-handed.",
+        "VAT_ES": "Celebrarás la fiesta de los Acimos. Durante siete días comerás pan sin levadura, como te lo he mandado, en el tiempo señalado del mes de Abib, porque en ese mes saliste de Egipto. Y nadie se presentará ante mí con las manos vacías.",
+        "CEI": "Osserverai la festa degli azzimi: mangerai azzimi durante sette giorni, come ti ho ordinato, nella ricorrenza del mese di Abib, perché in esso sei uscito dall'Egitto. Non si dovrà comparire davanti a me a mani vuote."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/חַ֤ג הַ/קָּצִיר֙ בִּכּוּרֵ֣י מַעֲשֶׂ֔י/ךָ אֲשֶׁ֥ר תִּזְרַ֖ע בַּ/שָּׂדֶ֑ה וְ/חַ֤ג הָֽ/אָסִף֙ בְּ/צֵ֣את הַ/שָּׁנָ֔ה בְּ/אָסְפְּ/ךָ֥ אֶֽת מַעֲשֶׂ֖י/ךָ מִן הַ/שָּׂדֶֽה׃",
+        "LXX": "καὶ ἑορτὴν θερισμοῦ πρωτογενημάτων ποιήσεις τῶν ἔργων σου ὧν ἐὰν σπείρῃς ἐν τῷ ἀγρῷ σου, καὶ ἑορτὴν συντελείας ἐπ’ ἐξόδου τοῦ ἐνιαυτοῦ ἐν τῇ συναγωγῇ τῶν ἔργων σου τῶν ἐκ τοῦ ἀγροῦ σου.",
+        "VUL": "Et solemnitatem messis primitivorum operis tui, quæcumque seminaveris in agro : solemnitatem quoque in exitu anni, quando congregaveris omnes fruges tuas de agro.",
+        "SYN": "_наблюдай_ и праздник жатвы первых плодов труда твоего, какие ты сеял на поле, и праздник собирания плодов в конце года, когда уберешь с поля работу твою.",
+        "NEO": "Tu observeras la fête de la Moisson, des prémices de ton travail, de ce que tu auras semé dans les champs ; et la fête de la Récolte, à la fin de l’année, quand tu recueilleras des champs le fruit de ton travail.",
+        "NAB": "You shall also keep the feast of the grain harvest with the first of the crop that you have sown in the field; and finally, the feast at the fruit harvest at the end of the year, when you gather in the produce from the fields.",
+        "VAT_ES": "También celebrarás la fiesta de la Cosecha, o sea, de las primicias de tus trabajos, de lo que hayas sembrado en los campos. Y al comienzo del año, cuando recojas los frutos de tu trabajo, celebrarás la fiesta de la Recolección.",
+        "CEI": "Osserverai la festa della mietitura, delle primizie dei tuoi lavori, di ciò che semini nel campo; la festa del raccolto, al termine dell'anno, quando raccoglierai il frutto dei tuoi lavori nei campi."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "שָׁלֹ֥שׁ פְּעָמִ֖ים בַּ/שָּׁנָ֑ה יֵרָאֶה֙ כָּל זְכ֣וּרְ/ךָ֔ אֶל פְּנֵ֖י הָ/אָדֹ֥ן יְהוָֽה׃",
+        "LXX": "τρεῖς καιροὺς τοῦ ἐνιαυτοῦ ὀφθήσεται πᾶν ἀρσενικόν σου ἐνώπιον Κυρίου τοῦ θεοῦ σου.",
+        "VUL": "Ter in anno apparebit omne masculinum tuum coram Domino Deo tuo.",
+        "SYN": "Три раза в году должен являться весь мужеский пол твой пред лице Владыки, Господа [твоего].",
+        "NEO": "Trois fois l’année, tous tes mâles se présenteront devant le seigneur \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Thrice a year shall all your men appear before the Lord GOD.",
+        "VAT_ES": "Todos los varones se presentarán delante del Señor tres veces al año.",
+        "CEI": "Tre volte all'anno ogni tuo maschio comparirà alla presenza del Signore Dio."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "לֹֽא תִזְבַּ֥ח עַל חָמֵ֖ץ דַּם זִבְחִ֑/י וְ/לֹֽא יָלִ֥ין חֵֽלֶב חַגִּ֖/י עַד בֹּֽקֶר׃",
+        "LXX": "Ὅταν γὰρ ἐκβάλω ἔθνη ἀπὸ προσώπου σου καὶ ἐμπλατύνω τὰ ὅριά σου, οὐ θύσεις ἐπὶ ζύμῃ αἷμα θυμιάματός μου, οὐδὲ μὴ κοιμηθῇ στέαρ τῆς ἑορτῆς μου ἕως πρωί.",
+        "VUL": "Non immolabis super fermento sanguinem victimæ meæ, nec remanebit adeps solemnitatis meæ usque mane.",
+        "SYN": "[Когда изгоню язычников от лица твоего и распространю пределы твои], не изливай крови жертвы Моей на квасное, и тук от праздничной жертвы Моей не должен оставаться до утра.",
+        "NEO": "Tu n’offriras pas avec du pain levé le sang de ma victime, et la graisse de ma fête ne sera pas gardée pendant la nuit jusqu’au matin.",
+        "NAB": "\"You shall not offer the blood of my sacrifice with leavened bread; nor shall the fat of my feast be kept overnight till the next day.",
+        "VAT_ES": "No acompañarás con pan fermentado la sangre de mis sacrificios, ni dejarás para el día siguiente la grasa de la víctima ofrecida en mi fiesta.",
+        "CEI": "Non offrirai con pane lievitato il sangue del sacrificio in mio onore e il grasso della vittima per la mia festa non starà fino al mattino."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "רֵאשִׁ֗ית בִּכּוּרֵי֙ אַדְמָ֣תְ/ךָ֔ תָּבִ֕יא בֵּ֖ית יְהוָ֣ה אֱלֹהֶ֑י/ךָ לֹֽא תְבַשֵּׁ֥ל גְּדִ֖י בַּ/חֲלֵ֥ב אִמּֽ/וֹ׃",
+        "LXX": "τὰς ἀπαρχὰς τῶν πρωτογενημάτων σου εἰσοίσεις εἰς τὸν οἶκον Κυρίου τοῦ θεοῦ σου. οὐχ ἑψήσεις ἄρνα ἐν γάλακτι μητρὸς αὐτοῦ.",
+        "VUL": "Primitias frugum terræ tuæ deferes in domum Domini Dei tui. Non coques hædum in lacte matris suæ.",
+        "SYN": "Начатки плодов земли твоей приноси в дом Господа, Бога твоего. Не вари козленка в молоке матери его.",
+        "NEO": "Tu apporteras les prémices des premiers fruits de ton sol à la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu.",
+        "NAB": "The choicest first fruits of your soil you shall bring to the house of the LORD, your God. \"You shall not boil a kid in its mother's milk.",
+        "VAT_ES": "Llevarás a la Casa del Señor, tu Dios, lo mejor de los primeros frutos de tu suelo. No harás cocer un cabrito en la lecha de su madre.",
+        "CEI": "Il meglio delle primizie del tuo suolo lo porterai alla casa del Signore, tuo Dio. Non farai cuocere un capretto nel latte di sua madre."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "הִנֵּ֨ה אָנֹכִ֜י שֹׁלֵ֤חַ מַלְאָךְ֙ לְ/פָנֶ֔י/ךָ לִ/שְׁמָרְ/ךָ֖ בַּ/דָּ֑רֶךְ וְ/לַ/הֲבִ֣יאֲ/ךָ֔ אֶל הַ/מָּק֖וֹם אֲשֶׁ֥ר הֲכִנֹֽתִי׃",
+        "LXX": "Καὶ ἰδοὺ ἐγὼ ἀποστέλλω τὸν ἄγγελόν μου πρὸ προσώπου σου ἵνα φυλάξῃ σε ἐν τῇ ὁδῷ, ὅπως εἰσαγάγῃ σε εἰς τὴν γῆν ἣν ἡτοίμασά σοι.",
+        "VUL": "Ecce ego mittam angelum meum, qui præcedat te, et custodiat in via, et introducat in locum quem paravi.",
+        "SYN": "Вот, Я посылаю пред тобою Ангела [Моего] хранить тебя на пути и ввести тебя в то место, которое Я приготовил [тебе];",
+        "NEO": "Voici que j’envoie un ange devant toi, pour te garder dans le chemin et pour te faire arriver au lieu que j’ai préparé.",
+        "NAB": "\"See, I am sending an angel before you, to guard you on the way and bring you to the place I have prepared.",
+        "VAT_ES": "Yo voy a enviar un ángel delante de ti, para que te proteja en el camino y te conduzca hasta el lugar que te he preparado.",
+        "CEI": "Ecco, io mando un angelo davanti a te per custodirti sul cammino e per farti entrare nel luogo che ho preparato."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "הִשָּׁ֧מֶר מִ/פָּנָ֛י/ו וּ/שְׁמַ֥ע בְּ/קֹל֖/וֹ אַל תַּמֵּ֣ר בּ֑/וֹ כִּ֣י לֹ֤א יִשָּׂא֙ לְ/פִשְׁעֲ/כֶ֔ם כִּ֥י שְׁמִ֖/י בְּ/קִרְבּֽ/וֹ׃",
+        "LXX": "πρόσεχε σεαυτῷ καὶ εἰσάκουε αὐτοῦ καὶ μὴ ἀπείθει αὐτῷ· οὐ γὰρ μὴ ὑποστείληταί σε, τὸ γὰρ ὄνομά μού ἐστιν ἐπ’ αὐτῷ.",
+        "VUL": "Observa eum, et audi vocem ejus, nec contemnendum putes : quia non dimittet cum peccaveris, et est nomen meum in illo.",
+        "SYN": "блюди себя пред лицем Его и слушай гласа Его; не упорствуй против Него, потому что Он не простит греха вашего, ибо имя Мое в Нем.",
+        "NEO": "Sois sur tes gardes en sa présence et écoute sa voix ; ne lui résiste pas, car il ne pardonnerait pas votre transgression, parce que mon nom est en lui.",
+        "NAB": "Be attentive to him and heed his voice. Do not rebel against him, for he will not forgive your sin. My authority resides in him.",
+        "VAT_ES": "Respétalo y escucha su voz. No te rebeles contra él, porque no les perdonará las transgresiones, ya que mi Nombre está en él.",
+        "CEI": "Abbi rispetto della sua presenza, ascolta la sua voce e non ribellarti a lui; egli infatti non perdonerebbe la vostra trasgressione, perché il mio nome è in lui."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כִּ֣י אִם שָׁמֹ֤עַ תִּשְׁמַע֙ בְּ/קֹל֔/וֹ וְ/עָשִׂ֕יתָ כֹּ֖ל אֲשֶׁ֣ר אֲדַבֵּ֑ר וְ/אָֽיַבְתִּי֙ אֶת אֹ֣יְבֶ֔י/ךָ וְ/צַרְתִּ֖י אֶת צֹרְרֶֽי/ךָ׃",
+        "LXX": "ἐὰν ἀκοῇ ἀκούσητε τῆς ἐμῆς φωνῆς, καὶ ποιήσῃς πάντα ὅσα ἂν ἐντείλωμαί σοι, καὶ φυλάξητε τὴν διαθήκην μου, ἔσεσθέ μοι λαὸς περιούσιος ἀπὸ πάντων τῶν ἐθνῶν· ἐμὴ γάρ ἐστιν πᾶσα ἡ γῆ, ὑμεῖς δὲ ἔσεσθέ μοι βασίλειον ἱεράτευμα καὶ ἔθνος ἅγιον. ταῦτα τὰ ῥήματα ἐρεῖς τοῖς υἱοῖς Ἰσραήλ Ἐὰν ἀκοῇ ἀκούσητε τῆς φωνῆς μου, καὶ ποιήσητε πάντα ὅσα ἂν εἴπω σοι, ἐχθρεύσω τοῖς ἐχθροῖς σου καὶ ἀντικείσομαι τοῖς ἀντικειμένοις σοι.",
+        "VUL": "Quod si audieris vocem ejus, et feceris omnia quæ loquor, inimicus ero inimicis tuis, et affligam affligentes te.",
+        "SYN": "[Если будешь слушать гласа Моего, и будешь исполнять все, что скажу тебе, и сохранишь завет Мой, то вы будете у Меня народом избранным из всех племен, ибо вся земля Моя; вы будете у Меня царственным священством и народом святым. Сии слова скажи сынам Израилевым.] Если ты будешь слушать гласа Его и исполнять все, что скажу [тебе], то врагом буду врагов твоих и противником противников твоих.",
+        "NEO": "Mais si tu écoutes sa voix, et si tu fais tout ce que je dirai, je serai l’ennemi de tes ennemis et l’adversaire de tes adversaires.",
+        "NAB": "If you heed his voice and carry out all I tell you, I will be an enemy to your enemies and a foe to your foes.",
+        "VAT_ES": "Si tú escuchas realmente su voz y haces todo lo que te diga, seré enemigo de tus enemigos y adversario de tus adversarios.",
+        "CEI": "Se tu ascolti la sua voce e fai quanto ti dirò, io sarò il nemico dei tuoi nemici e l'avversario dei tuoi avversari."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "כִּֽי יֵלֵ֣ךְ מַלְאָכִ/י֮ לְ/פָנֶי/ךָ֒ וֶ/הֱבִֽיאֲ/ךָ֗ אֶל הָֽ/אֱמֹרִי֙ וְ/הַ֣/חִתִּ֔י וְ/הַ/פְּרִזִּי֙ וְ/הַֽ/כְּנַעֲנִ֔י הַ/חִוִּ֖י וְ/הַ/יְבוּסִ֑י וְ/הִכְחַדְתִּֽי/ו׃",
+        "LXX": "πορεύσεται γὰρ ὁ ἄγγελός μου ἡγούμενος ὑμῶν, καὶ εἰσάξει σε πρὸς τὸν Ἀμορραῖον καὶ Χετταῖον καὶ Φερεζαῖον καὶ Χαναναῖον καὶ Γεργεσαῖον καὶ Εὑαῖον καὶ Ἰεβουσαῖον, καὶ ἐκτρίψω αὐτούς.",
+        "VUL": "Præcedetque te angelus meus, et introducet te ad Amorrhæum, et Hethæum, et Pherezæum, Chananæumque, et Hevæum, et Jebusæum, quos ego conteram.",
+        "SYN": "Когда пойдет пред тобою Ангел Мой и поведет тебя к Аморреям, Хеттеям, Ферезеям, Хананеям, [Гергесеям,] Евеям и Иевусеям, и истреблю их [от лица вашего],",
+        "NEO": "Car mon ange marchera devant toi et te conduira vers les Amorrhéens, les Hittites, les Phérézéens, les Chananéens, les Hévéens et les Jébuséens, et je les exterminerai.",
+        "NAB": "\"My angel will go before you and bring you to the Amorites, Hittites, Perizzites, Canaanites, Hivites and Jebusites; and I will wipe them out.",
+        "VAT_ES": "Entonces mi ángel irá delante de ti y te introducirá en el país de los amorreos, los hititas, los perizitas, los cananeos, los jivitas y los jebuseos, y los exterminará.",
+        "CEI": "Quando il mio angelo camminerà alla tua testa e ti farà entrare presso l'Amorreo, l'Hittita, il Perizzita, il Cananeo, l'Eveo e il Gebuseo e io li distruggerò,"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "לֹֽא תִשְׁתַּחֲוֶ֤ה לֵ/אלֹֽהֵי/הֶם֙ וְ/לֹ֣א תָֽעָבְדֵ֔/ם וְ/לֹ֥א תַעֲשֶׂ֖ה כְּ/מַֽעֲשֵׂי/הֶ֑ם כִּ֤י הָרֵס֙ תְּהָ֣רְסֵ֔/ם וְ/שַׁבֵּ֥ר תְּשַׁבֵּ֖ר מַצֵּבֹתֵי/הֶֽם׃",
+        "LXX": "οὐ προσκυνήσεις τοῖς θεοῖς αὐτῶν· οὐδὲ μὴ λατρεύσῃς αὐτοῖς· οὐ ποιήσεις κατὰ τὰ ἔργα αὐτῶν, ἀλλὰ καθαιρέσει καθελεῖς καὶ συντρίβων συντρίψεις τὰς στήλας αὐτῶν.",
+        "VUL": "Non adorabis deos eorum, nec coles eos : non facies opera eorum, sed destrues eos, et confringes statuas eorum.",
+        "SYN": "то не поклоняйся богам их, и не служи им, и не подражай делам их, но сокруши их и разрушь столбы их:",
+        "NEO": "Tu n’adoreras pas leurs dieux et tu ne les serviras pas ; tu ne les imiteras pas dans leurs pratiques, mais tu renverseras et briseras leurs stèles+ 23:24 Litt. \\+it Pierres levées\\+it* traduit le mot \\+it masséba\\+it*, souvent rendu par stèle, c’était des pierres ne portant pas ordinairement de figures, mais représentant la divinité.*.",
+        "NAB": "Therefore, you shall not bow down in worship before their gods, nor shall you make anything like them; rather, you must demolish them and smash their sacred pillars.",
+        "VAT_ES": "No te postrarás delante de sus dioses ni los servirás; no imitarás sus costumbres, sino que derribarás y harás pedazos sus piedras conmemorativas.",
+        "CEI": "tu non ti prostrerai davanti ai loro dei e non li servirai; tu non ti comporterai secondo le loro opere, ma dovrai demolire e dovrai frantumare le loro stele."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/עֲבַדְתֶּ֗ם אֵ֚ת יְהוָ֣ה אֱלֹֽהֵי/כֶ֔ם וּ/בֵרַ֥ךְ אֶֽת לַחְמְ/ךָ֖ וְ/אֶת מֵימֶ֑י/ךָ וַ/הֲסִרֹתִ֥י מַחֲלָ֖ה מִ/קִּרְבֶּֽ/ךָ׃",
+        "LXX": "καὶ λατρεύσεις Κυρίῳ τῷ θεῷ σου, καὶ εὐλογήσω τὸν ἄρτον σου καὶ τὸν οἶνόν σου καὶ τὸ ὕδωρ σου, καὶ ἀποστρέψω μαλακίαν ἀφ’ ὑμῶν.",
+        "VUL": "Servietisque Domino Deo vestro, ut benedicam panibus tuis et aquis, et auferam infirmitatem de medio tui.",
+        "SYN": "служите Господу, Богу вашему, и Он благословит хлеб твой [и вино твое] и воду твою; и отвращу от вас болезни.",
+        "NEO": "Vous servirez \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, et il bénira ton pain et ton eau, et j’éloignerai la maladie du milieu de toi.",
+        "NAB": "The LORD, your God, you shall worship; then I will bless your food and drink, and I will remove all sickness from your midst;",
+        "VAT_ES": "Ustedes servirán al Señor, su Dios, y él bendecirá tu pan y tu agua. Yo apartaré de ti las enfermedades;",
+        "CEI": "Voi servirete al Signore, vostro Dio. Egli benedirà il tuo pane e la tua acqua. Terrò lontana da te la malattia."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "לֹ֥א תִהְיֶ֛ה מְשַׁכֵּלָ֥ה וַ/עֲקָרָ֖ה בְּ/אַרְצֶ֑/ךָ אֶת מִסְפַּ֥ר יָמֶ֖י/ךָ אֲמַלֵּֽא׃",
+        "LXX": "οὐκ ἔσται ἄγονος οὐδὲ στεῖρα ἐπὶ τῆς γῆς σου· τὸν ἀριθμὸν τῶν ἡμερῶν σου ἀναπληρώσω.",
+        "VUL": "Non erit infcunda, nec sterilis in terra tua : numerum dierum tuorum implebo.",
+        "SYN": "Не будет преждевременно рождающих и бесплодных в земле твоей; число дней твоих сделаю полным.",
+        "NEO": "Il n’y aura dans ton pays ni femme qui perde son fruit, ni femme stérile ; je remplirai le nombre de tes jours.",
+        "NAB": "no woman in your land will be barren or miscarry; and I will give you a full span of life.",
+        "VAT_ES": "en tu país ninguna mujer abortará ni será estéril, y colmaré el número de tus días.",
+        "CEI": "Non vi sarà nel tuo paese donna che abortisca o che sia sterile. Ti farò giungere al numero completo dei tuoi giorni."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "אֶת אֵֽימָתִ/י֙ אֲשַׁלַּ֣ח לְ/פָנֶ֔י/ךָ וְ/הַמֹּתִי֙ אֶת כָּל הָ/עָ֔ם אֲשֶׁ֥ר תָּבֹ֖א בָּ/הֶ֑ם וְ/נָתַתִּ֧י אֶת כָּל אֹיְבֶ֛י/ךָ אֵלֶ֖י/ךָ עֹֽרֶף׃",
+        "LXX": "καὶ τὸν φόβον ἀποστελῶ ἡγούμενόν σου, καὶ ἐκστήσω πάντα τὰ ἔθνη εἰς οὓς σὺ εἰσπορεύῃ εἰς αὐτούς, καὶ δώσω πάντας τοὺς ὑπεναντίους σου φυγάδας.",
+        "VUL": "Terrorem meum mittam in præcursum tuum, et occidam omnem populum, ad quem ingredieris : cunctorumque inimicorum tuorum coram te terga vertam :",
+        "SYN": "Ужас Мой пошлю пред тобою, и в смущение приведу всякий народ, к которому ты придешь, и буду обращать к тебе тыл всех врагов твоих;",
+        "NEO": "J’enverrai ma terreur devant toi, je jetterai dans la confusion tous les peuples chez lesquels tu arriveras, et je ferai tourner le dos devant toi à tous tes ennemis.",
+        "NAB": "\"I will have the fear of me precede you, so that I will throw into panic every nation you reach. I will make all your enemies turn from you in flight,",
+        "VAT_ES": "Yo sembraré el terror delante de ti, llenaré de confusión a los pueblos que encuentres a tu paso, y haré que todos tus enemigos te vuelvan las espaldas.",
+        "CEI": "Manderò il mio terrore davanti a te e metterò in rotta ogni popolo in mezzo al quale entrerai; farò voltar le spalle a tutti i tuoi nemici davanti a te."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/שָׁלַחְתִּ֥י אֶת הַ/צִּרְעָ֖ה לְ/פָנֶ֑י/ךָ וְ/גֵרְשָׁ֗ה אֶת הַ/חִוִּ֧י אֶת הַֽ/כְּנַעֲנִ֛י וְ/אֶת הַ/חִתִּ֖י מִ/לְּ/פָנֶֽי/ךָ׃",
+        "LXX": "καὶ ἀποστελῶ τὰς σφηκίας προτέρας σου, καὶ ἐκβαλεῖς τοὺς Ἀμορραίους καὶ Εὑαίους καὶ Χαναναίους καὶ τοὺς Χετταίους ἀπὸ σοῦ.",
+        "VUL": "emittens crabrones prius, qui fugabunt Hevæum, et Chananæum, et Hethæum, antequam introëas.",
+        "SYN": "пошлю пред тобою шершней, и они погонят от лица твоего [Аморреев,] Евеев, [Иевусеев,] Хананеев и Хеттеев;",
+        "NEO": "J’enverrai devant toi les frelons, qui chasseront loin de ta face les Hévéens, les Chananéens et les Hittites.",
+        "NAB": "and ahead of you I will send hornets to drive the Hivites, Canaanites and Hittites out of your way.",
+        "VAT_ES": "Haré cundir el pánico delante de ti, y él pondrá en fuga delante de ti al jivita, al cananeo y al hitita.",
+        "CEI": "Manderò i calabroni davanti a te ed essi scacceranno dalla tua presenza l'Eveo, il Cananeo e l'Hittita."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "לֹ֧א אֲגָרְשֶׁ֛/נּוּ מִ/פָּנֶ֖י/ךָ בְּ/שָׁנָ֣ה אֶחָ֑ת פֶּן תִּהְיֶ֤ה הָ/אָ֨רֶץ֙ שְׁמָמָ֔ה וְ/רַבָּ֥ה עָלֶ֖י/ךָ חַיַּ֥ת הַ/שָּׂדֶֽה׃",
+        "LXX": "οὐκ ἐκβαλῶ αὐτοὺς ἐν ἐνιαυτῷ ἑνί, ἵνα μὴ γένηται ἡ γῆ ἔρημος καὶ πολλὰ γένηται ἐπὶ σὲ τὰ θηρία τῆς γῆς·",
+        "VUL": "Non ejiciam eos a facie tua anno uno : ne terra in solitudinem redigatur, et crescant contra te bestiæ.",
+        "SYN": "не выгоню их от лица твоего в один год, чтобы земля не сделалась пуста и не умножились против тебя звери полевые:",
+        "NEO": "Je ne les chasserai pas de ta face en une seule année, de peur que le pays ne devienne un désert, et que les bêtes sauvages ne se multiplient contre toi.",
+        "NAB": "But not in one year will I drive them all out before you; else the land will become so desolate that the wild beasts will multiply against you.",
+        "VAT_ES": "Pero no los expulsaré en un solo año, no sea que el país se convierta en un desierto y las bestias salvajes se multipliquen en perjuicio tuyo.",
+        "CEI": "Non li scaccerò dalla tua presenza in un solo anno, perché il paese non resti deserto e le bestie selvatiche si moltiplichino contro di te."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "מְעַ֥ט מְעַ֛ט אֲגָרְשֶׁ֖/נּוּ מִ/פָּנֶ֑י/ךָ עַ֚ד אֲשֶׁ֣ר תִּפְרֶ֔ה וְ/נָחַלְתָּ֖ אֶת הָ/אָֽרֶץ׃",
+        "LXX": "κατὰ μικρὸν ἐκβαλῶ αὐτοὺς ἀπὸ σοῦ, ἕως ἂν αὐξηθῇς καὶ κληρονομήσῃς τὴν γῆν.",
+        "VUL": "Paulatim expellam eos de conspectu tuo, donec augearis, et possideas terram.",
+        "SYN": "мало-помалу буду прогонять их от тебя, доколе ты не размножишься и не возьмешь во владение земли сей.",
+        "NEO": "Je les chasserai peu à peu de devant toi, jusqu’à ce que tu augmentes en nombre et que tu puisses occuper le pays.",
+        "NAB": "Instead, I will drive them out little by little before you, until you have grown numerous enough to take possession of the land.",
+        "VAT_ES": "Los iré expulsando de tu vista poco a poco, hasta que crezcas en número y puedas tomar posesión del país.",
+        "CEI": "A poco a poco li scaccerò dalla tua presenza, finché avrai tanti figli da occupare il paese."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/שַׁתִּ֣י אֶת גְּבֻלְ/ךָ֗ מִ/יַּם סוּף֙ וְ/עַד יָ֣ם פְּלִשְׁתִּ֔ים וּ/מִ/מִּדְבָּ֖ר עַד הַ/נָּהָ֑ר כִּ֣י אֶתֵּ֣ן בְּ/יֶדְ/כֶ֗ם אֵ֚ת יֹשְׁבֵ֣י הָ/אָ֔רֶץ וְ/גֵרַשְׁתָּ֖/מוֹ מִ/פָּנֶֽי/ךָ׃",
+        "LXX": "καὶ θήσω τὰ ὅριά σου ἀπὸ τῆς ἐρυθρᾶς θαλάσσης ἕως τῆς θαλάσσης τῆς Φυλιστιείμ, καὶ ἀπὸ τῆς ἐρήμου ἕως τοῦ μεγάλου ποταμοῦ Εὐφράτου· καὶ παραδώσω εἰς τὰς χεῖρας ὑμῶν τοὺς ἐνκαθημένους ἐν τῇ γῇ, καὶ ἐκβαλῶ αὐτοὺς ἀπὸ σοῦ.",
+        "VUL": "Ponam autem terminos tuos a mari Rubro usque ad mare Palæstinorum, et a deserto usque ad fluvium : tradam in manibus vestris habitatores terræ, et ejiciam eos de conspectu vestro.",
+        "SYN": "Проведу пределы твои от моря Чермного до моря Филистимского и от пустыни до реки [великой Евфрата], ибо предам в руки ваши жителей сей земли, и прогонишь их от лица твоего;",
+        "NEO": "J’établirai tes limites depuis la mer Rouge jusqu’à la mer des Philistins, et depuis le désert jusqu’au fleuve ; car je livrerai entre vos mains les habitants du pays, et tu les chasseras de devant toi.",
+        "NAB": "I will set your boundaries from the Red Sea to the sea of the Philistines, and from the desert to the River; all who dwell in this land I will hand over to you to be driven out of your way.",
+        "VAT_ES": "Extenderé tus dominios desde el Mar Rojo hasta el mar de los filisteos, y desde el desierto hasta el Eufrates, porque yo pondré en tus manos a los habitantes del país para que los expulses delante de ti.",
+        "CEI": "Stabilirò il tuo confine dal Mare Rosso fino al mare dei Filistei e dal deserto fino al fiume, perché ti consegnerò in mano gli abitanti del paese e li scaccerò dalla tua presenza."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "לֹֽא תִכְרֹ֥ת לָ/הֶ֛ם וְ/לֵ/אלֹֽהֵי/הֶ֖ם בְּרִֽית׃",
+        "LXX": "οὐ συνκαταθήσῃ αὐτοῖς καὶ τοῖς θεοῖς αὐτῶν διαθήκην·",
+        "VUL": "Non inibis cum eis fdus, nec cum diis eorum.",
+        "SYN": "[не смешивайся и] не заключай союза ни с ними, ни с богами их;",
+        "NEO": "Tu ne feras pas alliance avec eux, ni avec leurs dieux.",
+        "NAB": "You shall not make a covenant with them or their gods.",
+        "VAT_ES": "No harás ningún pacto con ellos ni con sus dioses.",
+        "CEI": "Ma tu non farai alleanza con loro e con i loro dei;"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "לֹ֤א יֵשְׁבוּ֙ בְּ/אַרְצְ/ךָ֔ פֶּן יַחֲטִ֥יאוּ אֹתְ/ךָ֖ לִ֑/י כִּ֤י תַעֲבֹד֙ אֶת אֱלֹ֣הֵי/הֶ֔ם כִּֽי יִהְיֶ֥ה לְ/ךָ֖ לְ/מוֹקֵֽשׁ׃",
+        "LXX": "καὶ οὐκ ἐνκαθήσονται ἐν τῇ γῇ σου, ἵνα μὴ ἁμαρτεῖν σε ποιήσωσιν πρὸς μέ· ἐὰν γὰρ δουλεύσῃς τοῖς θεοῖς αὐτῶν, οὗτοι ἔσονταί σοι πρόσκομμα.",
+        "VUL": "Non habitent in terra tua, ne forte peccare te faciant in me, si servieris diis eorum : quod tibi certe erit in scandalum.",
+        "SYN": "не должны они жить в земле твоей, чтобы они не ввели тебя в грех против Меня; ибо если ты будешь служить богам их, то это будет тебе сетью.",
+        "NEO": "Ils n’habiteront pas dans ton pays, de peur qu’ils ne te fassent pécher contre moi ; tu servirais leurs dieux, et ce serait un piège pour toi. »",
+        "NAB": "They must not abide in your land, lest they make you sin against me by ensnaring you into worshiping their gods.\"",
+        "VAT_ES": "Y ellos no deberán permanecer en tu país, para que no te inciten a pecar contra mí. Porque entonces servirías a sus dioses, y eso sería un grave riesgo para ti.",
+        "CEI": "essi non abiteranno più nel tuo paese, altrimenti ti farebbero peccare contro di me, perché tu serviresti i loro dei e ciò diventerebbe una trappola per te\"."
+      }
+    }
+  }
+}

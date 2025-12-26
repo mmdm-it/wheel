@@ -1,0 +1,158 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_004",
+  "book_key": "PSAL",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֥חַ בִּ/נְגִינ֗וֹת מִזְמ֥וֹר לְ/דָוִֽד׃",
+        "LXX": "Εἰς τὸ τέλος, ἐν ψαλμοῖς· ᾠδὴ τῷ Δαυείδ.",
+        "VUL": "In finem, in carminibus. Psalmus David.",
+        "SYN": "Начальнику хора. На струнных _орудиях._ Псалом Давида.",
+        "NEO": "Au maître de chant, sur les instruments à cordes. Psaume de David.",
+        "NAB": "For the leader; with stringed instruments. A psalm of David.",
+        "CEI": "Al maestro del coro. Per strumenti a corda. Salmo. Di Davide."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בְּ/קָרְאִ֡/י עֲנֵ֤/נִי אֱלֹ֘הֵ֤י צִדְקִ֗/י בַּ֭/צָּר הִרְחַ֣בְתָּ לִּ֑/י חָ֝נֵּ֗/נִי וּ/שְׁמַ֥ע תְּפִלָּתִֽ/י׃",
+        "LXX": "Ἐν τῷ ἐπικαλεῖσθαί με εἰσήκουσέν μου ὁ θεὸς τῆς δικαιοσύνης μου, ἐν θλίψει ἐπλάτυνάς μοι· οἰκτείρησόν με καὶ εἰσάκουσον τῆς προσευχῆς μου.",
+        "VUL": "[Cum invocarem exaudivit me Deus justitiæ meæ,/ in tribulatione dilatasti mihi./ Miserere mei, et exaudi orationem meam./",
+        "SYN": "Когда я взываю, услышь меня, Боже правды моей! В тесноте Ты давал мне простор. Помилуй меня и услышь молитву мою.",
+        "NEO": "Quand je t’invoque, réponds-moi, Dieu de ma justice, toi qui dans ma détresse, me mets au large. Aie pitié de moi et entends ma prière !",
+        "NAB": "Answer when I call, my saving God. In my troubles, you cleared a way; show me favor; hear my prayer.",
+        "VAT_ES": "Respóndeme cuando te invoco, Dios, mi defensor,",
+        "CEI": "Quando ti invoco, rispondimi, Dio, mia giustizia: dalle angosce mi hai liberato; pietà di me, ascolta la mia preghiera."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "בְּנֵ֥י אִ֡ישׁ עַד מֶ֬ה כְבוֹדִ֣/י לִ֭/כְלִמָּה תֶּאֱהָב֣וּ/ן רִ֑יק תְּבַקְשׁ֖וּ כָזָ֣ב סֶֽלָה׃",
+        "LXX": "υἱοὶ ἀνθρώπων, ἕως πότε βαρυκάρδιοι; ἵνα τί ἀγαπᾶτε ματαιότητα καὶ ζητεῖτε ψεῦδος; διάψαλμα.",
+        "VUL": "Filii hominum, usquequo gravi corde ?/ ut quid diligitis vanitatem, et quæritis mendacium ?/",
+        "SYN": "Сыны мужей! доколе слава моя будет в поругании? доколе будете любить суету и искать лжи?",
+        "NEO": "Fils des hommes, jusques à quand ma gloire sera-t-elle outragée ? Jusques à quand aimerez-vous la vanité, et rechercherez-vous le mensonge ? — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "How long will you people mock my honor, love what is worthless, chase after lies? Selah",
+        "VAT_ES": "Y ustedes, señores,",
+        "CEI": "Fino a quando, o uomini, sarete duri di cuore? Perché amate cose vane e cercate la menzogna?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וּ/דְע֗וּ כִּֽי הִפְלָ֣ה יְ֭הוָה חָסִ֣יד ל֑/וֹ יְהוָ֥ה יִ֝שְׁמַ֗ע בְּ/קָרְאִ֥/י אֵלָֽי/ו׃",
+        "LXX": "καὶ γνῶτε ὅτι ἐθαυμάστωσεν Κύριος τὸν ὅσιον αὐτοῦ· Κύριος εἰσακούσεταί μου ἐν τῷ κεκραγέναι με πρὸς αὐτόν.",
+        "VUL": "Et scitote quoniam mirificavit Dominus sanctum suum ;/ Dominus exaudiet me cum clamavero ad eum./",
+        "SYN": "Знайте, что Господь отделил для Себя святаго Своего; Господь слышит, когда я призываю Его.",
+        "NEO": "Sachez que \\+w Yahweh|strong=\"H3068\"\\+w** s’est choisi un homme pieux ; \\+w Yahweh|strong=\"H3068\"\\+w** entend quand je l’invoque.",
+        "NAB": "Know that the LORD works wonders for the faithful; the LORD hears when I call out.",
+        "VAT_ES": "Sepan que el Señor hizo maravillas por su amigo:",
+        "CEI": "Sappiate che il Signore fa prodigi per il suo fedele: il Signore mi ascolta quando lo invoco."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "רִגְז֗וּ וְֽ/אַל תֶּ֫חֱטָ֥אוּ אִמְר֣וּ בִ֭/לְבַבְ/כֶם עַֽל מִשְׁכַּבְ/כֶ֗ם וְ/דֹ֣מּוּ סֶֽלָה׃",
+        "LXX": "ὀργίζεσθε καὶ μὴ ἁμαρτάνετε· ἃ λέγετε ἐν καρδίᾳ, ἐπὶ ταῖς κοίταις ὑμῶν κατανύγητε. διάψαλμα.",
+        "VUL": "Irascimini, et nolite peccare ;/ quæ dicitis in cordibus vestris, in cubilibus vestris compungimini./",
+        "SYN": "Гневаясь, не согрешайте: размыслите в сердцах ваших на ложах ваших, и утишитесь;",
+        "NEO": "Tremblez, et ne péchez plus ! Parlez-vous à vous-mêmes sur votre couche, et cessez ! — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "Tremble and do not sin; upon your beds ponder in silence.",
+        "VAT_ES": "Tiemblen, y no pequen más;",
+        "CEI": "Tremate e non peccate, sul vostro giaciglio riflettete e placatevi."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "זִבְח֥וּ זִבְחֵי צֶ֑דֶק וּ֝/בִטְח֗וּ אֶל יְהוָֽה׃",
+        "LXX": "θύσατε θυσίαν δικαιοσύνης, καὶ ἐλπίσατε ἐπὶ Κύριον.",
+        "VUL": "Sacrificate sacrificium justitiæ, et sperate in Domino./ Multi dicunt : Quis ostendit nobis bona ?/",
+        "SYN": "приносите жертвы правды и уповайте на Господа.",
+        "NEO": "Offrez des sacrifices de justice, et confiez-vous en \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Offer fitting sacrifice and trust in the LORD.",
+        "VAT_ES": "ofrezcan los sacrificios que son debidos",
+        "CEI": "Offrite sacrifici di giustizia e confidate nel Signore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "רַבִּ֥ים אֹמְרִים֮ מִֽי יַרְאֵ֪/נ֫וּ ט֥וֹב נְֽסָ/ה עָ֭לֵי/נוּ א֨וֹר פָּנֶ֬י/ךָ יְהוָֽה׃",
+        "LXX": "πολλοὶ λέγουσιν Τίς δείξει ἡμῖν τὰ ἀγαθά; ἐσημειώθη ἐφ’ ἡμᾶς τὸ φῶς τοῦ προσώπου σου, Κύριε·",
+        "VUL": "Signatum est super nos lumen vultus tui, Domine :/ dedisti lætitiam in corde meo./",
+        "SYN": "Многие говорят: \"кто покажет нам благо?\" Яви нам свет лица Твоего, Господи!",
+        "NEO": "Beaucoup disent : « Qui nous fera voir le bonheur ? » Fais lever sur nous la lumière de ta face, \\+w Yahweh|strong=\"H3068\"\\+w** !",
+        "NAB": "Many say, \"May we see better times! LORD, show us the light of your face!\" Selah",
+        "VAT_ES": "Hay muchos que preguntan:",
+        "CEI": "Molti dicono: \"Chi ci farà vedere il bene?\". Risplenda su di noi, Signore, la luce del tuo volto."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "נָתַ֣תָּה שִׂמְחָ֣ה בְ/לִבִּ֑/י מֵ/עֵ֬ת דְּגָנָ֖/ם וְ/תִֽירוֹשָׁ֣/ם רָֽבּוּ׃",
+        "LXX": "ἔδωκας εὐφροσύνην εἰς τὴν καρδίαν μου, ἀπὸ καρποῦ σίτου καὶ οἴνου καὶ ἐλαίου αὐτῶν ἐπληθύνθησαν.",
+        "VUL": "A fructu frumenti, vini, et olei sui, multiplicati sunt./",
+        "SYN": "Ты исполнил сердце мое веселием с того времени, как у них хлеб и вино [и елей] умножились.",
+        "NEO": "Tu as mis dans mon cœur plus de joie qu’ils n’en ont au temps où abondent leur froment et leur vin nouveau.",
+        "NAB": "But you have given my heart more joy than they have when grain and wine abound.",
+        "VAT_ES": "Pero tú has puesto en mi corazón más alegría",
+        "CEI": "Hai messo più gioia nel mio cuore di quando abbondano vino e frumento."
+      }
+    }
+  }
+}

@@ -1,0 +1,422 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_032",
+  "book_key": "ECCLU",
+  "sequence": 32,
+  "chapter_in": {
+    "MT": 32,
+    "VUL": 32,
+    "LXX": 32
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Ὁ συντηρῶν νόμον πλεονάζει προσφοράς,",
+        "VUL": "[Rectorem te posuerunt ? noli extolli :/ esto in illis quasi unus ex ipsis./",
+        "SYN": "Если поставили тебя старшим на пиру, не возносись; будь между другими как один из них:",
+        "NEO": "On t’a établi roi du festin ? Ne t’élève pas ; sois au milieu des convives comme l’un d’eux. Prends soin d’eux, et ensuite assieds-toi.",
+        "NAB": "If you are chosen to preside at dinner, be not puffed up, but with the guests be as one of themselves; Take care of them first before you sit down;",
+        "VAT_ES": "&iquest;Te toca presidir la mesa? No te envanezcas: compórtate con los demás como uno de ellos y atiéndelos bien antes de sentarte.",
+        "CEI": "Ti hanno fatto capotavola? Non esaltarti; comportati con gli altri come uno di loro. Pensa a loro e poi mettiti a tavola;"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "θυσιάζων σωτηρίου ὁ προσέχων ἐντολαῖς·",
+        "VUL": "Curam illorum habe, et sic conside,/ et omni cura tua explicita recumbe :/",
+        "SYN": "позаботься о них и потом садись. И когда всё твое дело исполнишь, тогда займи твое место,",
+        "NEO": "Quand tu auras rempli tous tes devoirs, prends place, afin de te réjouir à cause d’eux, et, pour la belle ordonnance du banquet, recevoir la couronne.",
+        "NAB": "when you have fulfilled your duty, then take your place, To share in their joy and win praise for your hospitality.",
+        "VAT_ES": "Una vez cumplido todo tu oficio, ocupa tu puesto para alegrarte a causa de los comensales y verte coronado porque todo está en orden.",
+        "CEI": "quando avrai assolto il tuo compito, accòmodati per ricrearti con loro e ricevere la corona per la tua cortesia."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ἀνταποδιδοὺς χάριν προσφέρων σεμίδαλιν,",
+        "VUL": "ut læteris propter illos,/ et ornamentum gratiæ accipias coronam,/ et dignationem consequaris corrogationis./",
+        "SYN": "чтобы порадоваться на них и за хорошее распоряжение получить венок.",
+        "NEO": "Parle, vieillard, car cela te convient, mais avec justesse et doctrine, et sans empêcher la musique.",
+        "NAB": "Being older, you may talk; that is only your right, but temper your wisdom, not to disturb the singing.",
+        "VAT_ES": "Habla, anciano, porque te corresponde hacerlo, pero con discreción y sin interrumpir la música.",
+        "CEI": "Parla, o anziano, ciò ti s'addice, ma con discrezione e non disturbare la musica."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "καὶ ὁ ποιῶν ἐλεημοσύνην θυσιάζων αἰνέσεως.",
+        "VUL": "Loquere major natu :/ decet enim te/",
+        "SYN": "Разговор веди ты, старший, - ибо это прилично тебе, -",
+        "NEO": "Lorsqu’on écoute la musique, ne prodigue pas les paroles, et n’étale pas ta sagesse à contre-temps.",
+        "NAB": "When wine is present, do not pour out discourse, and flaunt not your wisdom at the wrong time.",
+        "VAT_ES": "Mientras se escucha, no te pongas a charlar ni te hagas el sabio fuera de tiempo",
+        "CEI": "Quando ascolti non effonderti in chiacchiere, non fare fuori luogo il sapiente."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "εὐδοκία Κυρίου ἀποστῆναι ἀπὸ πονηρίας, καὶ ἐξιλασμὸς ἀποστῆναι ἀπὸ ἀδικίας.",
+        "VUL": "primum verbum diligenti scientia,/ et non impedias musicam./",
+        "SYN": "с основательным знанием, и не возбраняй музыки.",
+        "NEO": "Un sceau d’escarboucle enchâssé dans l’or, tel un concert harmonieux dans un banquet.",
+        "NAB": "Like a seal of carnelian in a setting of gold is a concert when wine is served.",
+        "VAT_ES": "Sello de rubí en una alhaja de oro es un concierto musical mientras se bebe vino;",
+        "CEI": "Sigillo di rubino in un anello d'oro è un concerto musicale in un banchetto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "μὴ ὀφθῇς ἐν προσώπῳ Κυρίου κενός,",
+        "VUL": "Ubi auditus non est, non effundas sermonem,/ et importune noli extolli in sapientia tua./",
+        "SYN": "Когда слушают, не размножай разговора и безвременно не мудрствуй.",
+        "NEO": "Un sceau d’émeraude dans une garniture d’or, telle une douce mélodie avec un vin agréable.",
+        "NAB": "Like a gold mounting with an emerald seal is string music with delicious wine.",
+        "VAT_ES": "sello de esmeralda en un engaste de oro es la música melodiosa sobre la dulzura del vino.",
+        "CEI": "Sigillo di smeraldo in una guarnizione d'oro è la melodia dei canti unita alla dolcezza del vino."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "πάντα γὰρ ταῦτα χάριν ἐντολῆς.",
+        "VUL": "Gemmula carbunculi in ornamento auri,/ et comparatio musicorum in convivio vini./",
+        "SYN": "Что рубиновая печать в золотом украшении, то благозвучие музыки в пиру за вином;",
+        "NEO": "Parle, jeune homme, s’il y a utilité pour toi ; à peine deux fois, si l’on t’interroge.",
+        "NAB": "Young man, speak only when necessary, when they have asked you more than once;",
+        "VAT_ES": "Habla, joven, cuando sea necesario, pero dos veces a lo más, y si te preguntan.",
+        "CEI": "Parla, giovinetto, se è necessario, ma appena un paio di volte, se interrogato."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "προσφορὰ δικαίου λιπαίνει θυσιαστήριον, καὶ ἡ εὐωδία αὐτῆς ἔναντι Ὑψίστου·",
+        "VUL": "Sicut in fabricatione auri signum est smaragdi,/ sic numerus musicorum in jucundo et moderato vino./",
+        "SYN": "что смарагдовая печать в золотой оправе, то приятность песней за вкусным вином.",
+        "NEO": "Abrège ton discours, beaucoup de choses en peu de mots ; sois comme un homme qui a la science et qui sait se taire.",
+        "NAB": "Be brief, but say much in those few words, be like the wise man, taciturn.",
+        "VAT_ES": "Habla concisamente, di mucho en pocas palabras: sé como uno que sabe y sin embargo se calla.",
+        "CEI": "Compendia il tuo discorso, molte cose in poche parole; compòrtati come uno che sa ma che tace."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "θυσία ἀνδρὸς δικαίου δεκτή, καὶ τὸ μνημόσυνον αὐτῆς οὐκ ἐπιλησθήσεται.",
+        "VUL": "Audi tacens,/ et pro reverentia accedet tibi bona gratia./",
+        "SYN": "Говори, юноша, если нужно тебе, едва слова два, когда будешь спрошен,",
+        "NEO": "Au milieu des grands, ne te fais pas leur égal, et où il y a des vieillards, sois sobre de paroles.",
+        "NAB": "When among your elders be not forward, and with officials be not too insistent.",
+        "VAT_ES": "En medio de los grandes, no pretendas igualarlos, y si otro habla, sé parco en tus palabras.",
+        "CEI": "Fra i grandi non crederti loro uguale, se un altro parla, non ciarlare troppo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ἐν ἀγαθῷ ὀφθαλμῷ δόξασον τὸν κύριον, καὶ μὴ μικρύνῃς ἀπαρχὴν χειρῶν σου·",
+        "VUL": "Adolescens, loquere in tua causa vix./",
+        "SYN": "говори главное, многое в немногих словах. Будь как знающий и, вместе, как умеющий молчать.",
+        "NEO": "Avant le tonnerre l’éclair brille : ainsi devant le jeune homme modeste marche la grâce.",
+        "NAB": "Like the lightning that flashes before a storm is the esteem that shines on modesty.",
+        "VAT_ES": "El relámpago brilla antes del trueno y el encanto precede al hombre modesto.",
+        "CEI": "Prima del tuono viene la folgore, la grazia precede l'uomo modesto."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἐν πάσῃ δόσει ἱλάρωσον τὸ πρόσωπόν σου, καὶ ἐν εὐφροσύνῃ ἁγίασον δεκάτην.",
+        "VUL": "Si bis interrogatus fueris,/ habeat caput responsum tuum./",
+        "SYN": "Среди вельмож не равняйся с ними, и, когда говорит другой, ты много не говори.",
+        "NEO": "L’heure venue, lève-toi de table sans tarder ; cours à ta maison, et ne sois pas insouciant.",
+        "NAB": "When it is time to leave, tarry not; be off for home! There take your ease,",
+        "VAT_ES": "Levántate a tiempo, se seas el último en irte, ve derecho a tu casa, sin entretenerte por el camino.",
+        "CEI": "All'ora stabilita àlzati e non restare per ultimo, corri a casa e non indugiare."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "δὸς Ὑψίστῳ κατὰ τὴν δόσιν αὐτοῦ, καὶ ἐν ἀγαθῷ ὀφθαλμῷ καθ’ εὕρεμα χειρός·",
+        "VUL": "In multis esto quasi inscius,/ et audi tacens simul et quærens./",
+        "SYN": "Грому предшествует молния, а стыдливого предваряет благорасположение.",
+        "NEO": "Là divertis-toi, fais tes fantaisies, toutefois sans pécher par des discours insolents.",
+        "NAB": "And there enjoy doing as you wish, but without sin or words of pride.",
+        "VAT_ES": "Diviértete allí como más te guste, pero sin pecar con palabras arrogantes.",
+        "CEI": "Là divèrtiti e fà quello che desideri, ma non peccare con un discorso arrogante."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "ὅτι Κύριος ἀνταποδιδούς ἐστιν, καὶ ἑπταπλᾶ ἀνταποδώσει σοι.",
+        "VUL": "In medio magnatorum non præsumas :/ et ubi sunt senes non multum loquaris./",
+        "SYN": "Вставай вовремя и не будь последним; поспешай домой и не останавливайся.",
+        "NEO": "Et pour tout cela, bénis Celui qui t’a créé, et qui t’enivre de tous ses biens.",
+        "NAB": "Above all, give praise to your Creator, who showers his favors upon you.",
+        "VAT_ES": "Y por todo eso, bendice a tu Creador, que te embriaga con sus bienes.",
+        "CEI": "Per tutto ciò benedici chi ti ha creato, chi ti colma dei suoi benefici."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "μὴ δωροκόπει, οὐ γὰρ προσδέξεται·",
+        "VUL": "Ante grandinem præibit coruscatio :/ et ante verecundiam præibit gratia,/ et pro reverentia accedet tibi bona gratia./",
+        "SYN": "Там забавляйся и делай, что тебе нравится; но не согрешай гордым словом.",
+        "NEO": "Celui qui craint le Seigneur reçoit l’instruction, et ceux qui le cherchent avec empressement trouveront sa faveur.",
+        "NAB": "He who would find God must accept discipline; he who seeks him obtains his request.",
+        "VAT_ES": "El que teme al Señor acepta ser instruido y los que lo buscan ardientemente alcanzarán su favor.",
+        "CEI": "Chi teme il Signore accetterà la correzione, coloro che lo ricercano troveranno il suo favore."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "καὶ μὴ ἔπεχε θυσίᾳ ἀδίκῳ, ὅτι Κύριος κριτής ἐστιν, καὶ οὐκ ἔστιν παρ’ αὐτῷ δόξα προσώπου.",
+        "VUL": "Et hora surgendi non te trices :/ præcurre autem prior in domum tuam,/ et illic avocare, et illic lude,/",
+        "SYN": "И за это благословляй Сотворившего тебя и Насыщающего тебя Своими благами.",
+        "NEO": "Celui qui cherche la loi y trouvera son rassasiement ; mais pour l’hypocrite, elle sera une occasion de chute.",
+        "NAB": "He who studies the law masters it, but the hypocrite finds it a trap.",
+        "VAT_ES": "El que busca la Ley se saciará de ella, pero al que finge observarla le sirve de tropiezo.",
+        "CEI": "Chi indaga la legge ne sarà appagato, ma l'ipocrita vi troverà motivo di scandalo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "οὐ λήμψεται πρόσωπον ἐπὶ πτωχοῦ, καὶ δέησιν ἠδικημένου εἰσακούσεται·",
+        "VUL": "et age conceptiones tuas,/ et non in delictis et verbo superbo :/",
+        "SYN": "Боящийся Господа примет наставление, и с раннего утра обращающиеся к Нему приобретут благоволение Его.",
+        "NEO": "Ceux qui craignent le Seigneur trouveront le jugement vrai, et ils feront briller, comme un flambeau, de justes sentences.",
+        "NAB": "His judgment is sound who fears the LORD; out of obscurity he draws forth a clear plan.",
+        "VAT_ES": "Los que temen al Señor descubren lo que es recto y hacen brillar sus preceptos como una lámpara.",
+        "CEI": "Quanti temono il Signore troveranno la giustizia, le loro virtù brilleranno come luci."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "οὐ μὴ ὑπερίδῃ ἱκετίαν ὀρφανοῦ, καὶ χήραν ἐὰν ἐκχέῃ λαλιάν.",
+        "VUL": "et super his omnibus benedicito Dominum, qui fecit te,/ et inebriantem te ab omnibus bonis suis.]",
+        "SYN": "Ищущий закона насытится им, а лицемер преткнется в нем.",
+        "NEO": "Le pécheur décline la correction, et il trouve des excuses à son gré.",
+        "NAB": "The sinner turns aside reproof and distorts the law to suit his purpose.",
+        "VAT_ES": "El hombre pecador no tolera ningún reproche y encuentra pretextos para hacer lo que quiere.",
+        "CEI": "Un uomo peccatore schiva il rimprovero, trova scuse secondo i suoi capricci."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "οὐχὶ δάκρυα χήρας ἐπὶ σιαγόνα καταβαίνει,",
+        "VUL": "[Qui timet Dominum excipiet doctrinam ejus :/ et qui vigilaverint ad illum invenient benedictionem./",
+        "SYN": "Боящиеся Господа найдут суд и, как свет, возжгут правосудие.",
+        "NEO": "L’homme intelligent ne méprise aucun avis, mais l’étranger et l’orgueilleux ne sont arrêtés par aucune crainte, et, après avoir agi, ils sont sans réflexion, [et ainsi ils sont convaincus de folie.]",
+        "NAB": "The thoughtful man will not neglect direction; the proud and insolent man is deterred by nothing.",
+        "VAT_ES": "El hombre de consejo no descuida la reflexión; el impío y el arrogante proceden temerariamente.",
+        "CEI": "Un uomo assennato non trascura l'avvertimento, quello empio e superbo non prova alcun timore."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "καὶ ἡ καταβόησις ἐπὶ τῷ καταγαγόντι αὐτά;",
+        "VUL": "Qui quærit legem replebitur ab ea,/ et qui insidiose agit scandalizabitur in ea./",
+        "SYN": "Человек грешный уклоняется от обличения и находит извинение, согласно желанию своему.",
+        "NEO": "Ne fais rien sans réflexion, et, après l’action, tu n’auras pas à te repentir.",
+        "NAB": "Do nothing without counsel, and then you need have no regrets.",
+        "VAT_ES": "No hagas nada sin el debido consejo y no te arrepentirás de tus acciones.",
+        "CEI": "Non far nulla senza riflessione, alla fine dell'azione non te ne pentirai."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "θεραπεύων ἐν εὐδοκίᾳ δεχθήσεται, καὶ ἡ δέησις αὐτοῦ ἕως νεφελῶν συνάψει·",
+        "VUL": "Qui timent Dominum invenient judicium justum,/ et justitias quasi lumen accendent./",
+        "SYN": "Человек рассудительный не пренебрегает размышлением, а безрассудный и гордый не содрогается от страха и после того, как сделал что-либо без размышления.",
+        "NEO": "Ne va pas sur un chemin dégradé, et tu ne te heurteras pas aux pierres.",
+        "NAB": "Go not on a way that is set with snares, and let not the same thing trip you twice.",
+        "VAT_ES": "No vayas por un camino lleno de obstáculos y no tropezarás contra las piedras.",
+        "CEI": "Non camminare in una via piena d'ostacoli, per non inciampare contro i sassi."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "προσευχὴ ταπεινοῦ νεφέλας διῆλθεν, καὶ ἕως συνεγγίσῃ, οὐ μὴ παρακληθῇ· καὶ οὐ μὴ ἀποστῇ ἕως ἐπισκέψηται ὁ ὕψιστος,",
+        "VUL": "Peccator homo vitabit correptionem,/ et secundum voluntatem suam inveniet comparationem./",
+        "SYN": "Без рассуждения не делай ничего, и когда сделаешь, не раскаивайся.",
+        "NEO": "Ne te fie pas à un chemin uni, et sois sur tes gardes vis-à-vis de tes enfants.",
+        "NAB": "Be not too sure even of smooth roads,",
+        "VAT_ES": "No te fíes del camino despejado",
+        "CEI": "Non fidarti di una via senza inciampi,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "καὶ κρινεῖ δικαίως καὶ ποιήσει κρίσιν. ⸂⸆⸃ καὶ ὁ κύριος οὐ μὴ βραδύνῃ οὐδὲ μὴ μακροθυμήσει ἐπ’ αὐτοῖς, ἕως ἂν συντρίψῃ ὀσφὺν ἀνελεημόνων,",
+        "VUL": "Vir consilii non disperdet intelligentiam :/ alienus et superbus non pertimescet timorem :/",
+        "SYN": "Не ходи по пути, где развалины, чтобы не споткнуться о камень;",
+        "NEO": "Dans tout ce que tu fais, aie confiance en ton âme, car cela aussi est observation des commandements.",
+        "NAB": "be careful on all your paths.",
+        "VAT_ES": "y cuídate hasta de tus hijos.",
+        "CEI": "e guàrdati anche dai tuoi figli."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "καὶ τοῖς ἔθνεσιν ἀνταποδώσει ἐκδίκησιν· ἕως ἐξάρῃ πλῆθος ὑβριστῶν καὶ σκῆπτρα ἀδίκων συντρίψει·",
+        "VUL": "etiam postquam fecit cum eo sine consilio,/ et suis insectationibus arguetur./",
+        "SYN": "не полагайся и на ровный путь; остерегайся даже детей твоих.",
+        "NEO": "Celui qui a confiance en la loi est attentif à ses préceptes, et celui qui se confie au Seigneur ne souffrira aucun dommage.",
+        "NAB": "Whatever you do, be on your guard, for in this way you will keep the commandments.",
+        "VAT_ES": "En todo lo que hagas, sé fiel a ti mismo, porque también eso es observar los mandamientos.",
+        "CEI": "In ogni azione abbi fiducia in te stesso, poiché anche questo è osservare i comandamenti."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "ἕως ἀνταποδῷ ἀνθρώπῳ κατὰ τὰς πράξεις αὐτοῦ, καὶ τὰ ἔργα τῶν ἀνθρώπων κατὰ τὰ ἐνθυμήματα αὐτῶν·",
+        "VUL": "Fili, sine consilio nihil facias,/ et post factum non pnitebis./",
+        "SYN": "Во всяком деле верь душе твоей: и это есть соблюдение заповедей.",
+        "NAB": "He who keeps the law preserves himself; and he who trusts in the LORD shall not be put to shame.",
+        "VAT_ES": "El que confía en la Ley presta atención a los mandamientos y el que confía en el Señor no sufrirá menoscabo.",
+        "CEI": "Chi crede alla legge è attento ai comandamenti, chi confida nel Signore non resterà deluso."
+      }
+    }
+  }
+}

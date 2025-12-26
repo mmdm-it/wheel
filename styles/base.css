@@ -1,0 +1,131 @@
+:root {
+  --color-bg: #f5f5f5;
+  --color-nodes: #555555;
+  --color-text: #111111;
+  --color-band: #7a7979;
+  --focus-node-radius: 12px;
+  --focus-node-stroke: 1px;
+  --focus-node-font: 'Montserrat', sans-serif;
+  --magnifier-font: 'Montserrat', sans-serif;
+  --focus-label-transform: uppercase;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  overflow: hidden;
+  touch-action: none;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+}
+
+.version-badge {
+  position: fixed;
+  top: 10px;
+  right: 14px;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.08);
+  color: var(--color-text);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.focus-ring-node {
+  fill: var(--color-nodes);
+  stroke: none;
+}
+
+.focus-ring-label {
+  fill: var(--color-text);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: clamp(14px, 1.6vmin, 26px);
+  text-transform: var(--focus-label-transform, uppercase);
+  pointer-events: none;
+}
+
+.focus-ring-band {
+  fill: var(--color-band);
+  opacity: 1;
+}
+
+.focus-mirror-layer {
+  pointer-events: auto;
+}
+
+.focus-ring-node-secondary {
+  fill: var(--color-nodes);
+  stroke: none;
+}
+
+.focus-ring-label-secondary {
+  fill: var(--color-text);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: clamp(14px, 1.6vmin, 26px);
+  text-transform: var(--focus-label-transform, uppercase);
+  pointer-events: none;
+}
+
+.focus-ring-magnifier-circle {
+  fill: var(--color-nodes);
+  stroke: var(--color-magnifier-stroke, #000);
+  stroke-width: 1px;
+}
+
+.focus-ring-magnifier-circle-mirrored {
+  filter: none;
+  fill: var(--color-nodes);
+}
+
+.focus-ring-magnifier-circle-mirrored.rotating {
+  fill: none;
+  stroke: var(--color-magnifier-stroke, #000);
+  stroke-width: 1px;
+}
+
+.focus-ring-magnifier-label-mirrored {
+  fill: var(--color-text);
+  font-family: 'Noto Sans', 'Montserrat', sans-serif;
+  font-size: clamp(24px, 2.8vmin, 46px);
+  text-transform: var(--focus-label-transform, uppercase);
+  pointer-events: none;
+}
+
+.focus-ring-magnifier-label-mirrored.rotating {
+  display: none;
+}
+
+.focus-ring-label-secondary {
+  font-family: 'Noto Sans', 'Montserrat', sans-serif;
+}
+
+.focus-ring-magnifier-label {
+  fill: var(--color-text);
+  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
+  font-size: clamp(21px, 2.4vmin, 39px);
+  text-transform: var(--focus-label-transform, uppercase);
+  pointer-events: none;
+}
+
+.focus-ring-magnifier.rotating .focus-ring-magnifier-circle {
+  fill: none;
+  stroke: var(--color-magnifier-stroke, #000);
+  stroke-width: 1px;
+}
+
+.focus-ring-magnifier.rotating .focus-ring-magnifier-label {
+  display: none;
+}
+
+.dimension-button {
+  filter: none;
+}

@@ -1,0 +1,672 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ROM_008",
+  "book_key": "ROM",
+  "sequence": 8,
+  "chapter_in": {
+    "MT": 8,
+    "VUL": 8,
+    "LXX": 8
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Οὐδὲν ἄρα νῦν κατάκριμα τοῖς ἐν χριστῷ Ἰησοῦ, μὴ κατὰ σάρκα περιπατοῦσιν, ἀλλὰ κατὰ πνεῦμα.",
+        "VUL": "Nihil ergo nunc damnationis est iis qui sunt in Christo Jesu : qui non secundum carnem ambulant.",
+        "SYN": "Итак нет ныне никакого осуждения тем, которые во Христе Иисусе живут не по плоти, но по духу,",
+        "NEO": "Il n’y a donc maintenant aucune condamnation pour ceux qui sont en Jésus-Christ, [qui ne marchent pas selon la chair].",
+        "NAB": "Hence, now there is no condemnation for those who are in Christ Jesus.",
+        "VAT_ES": "Por lo tanto, ya no hay condenación para aquellos que viven unidos a Cristo Jesús.",
+        "CEI": "Non voglio infatti che ignoriate, o fratelli, che i nostri padri furono tutti sotto la nuvola, tutti attraversarono il mare,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Ὁ γὰρ νόμος τοῦ πνεύματος τῆς ζωῆς ἐν χριστῷ Ἰησοῦ ἠλευθέρωσέν με ἀπὸ τοῦ νόμου τῆς ἁμαρτίας καὶ τοῦ θανάτου.",
+        "VUL": "Lex enim spiritus vitæ in Christo Jesu liberavit me a lege peccati et mortis.",
+        "SYN": "потому что закон духа жизни во Христе Иисусе освободил меня от закона греха и смерти.",
+        "NEO": "En effet, la loi de l’Esprit de la vie m’a affranchi en Jésus-Christ de la loi du péché et de la mort+ 8:2 La loi de l’Esprit, etc., la puissance, le règne du Saint-Esprit vivant dans l’âme du chrétien et lui communiquant la véritable vie (II Cor. iii, 6), \\+qt m’a affranchi\\+qt*, a rendu sans force \\+qt la loi\\+qt*, la puissance \\+qt du péché ;\\+qt* elle m’aide à triompher de cette tyrannie. — \\+qt En J.-C.\\+qt* : il faut être uni à J.-C. par la foi et l’amour pour avoir part à cette délivrance.*.",
+        "NAB": "For the law of the spirit of life in Christ Jesus has freed you from the law of sin and death.",
+        "VAT_ES": "Porque la ley del Espíritu, que da la Vida, me libró, me libró, en Cristo Jesús, de la ley del pecado y de la muerte.",
+        "CEI": "tutti furono battezzati in rapporto a Mosè nella nuvola e nel mare,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Τὸ γὰρ ἀδύνατον τοῦ νόμου, ἐν ᾧ ἠσθένει διὰ τῆς σαρκός, ὁ θεὸς τὸν ἑαυτοῦ υἱὸν πέμψας ἐν ὁμοιώματι σαρκὸς ἁμαρτίας καὶ περὶ ἁμαρτίας κατέκρινεν τὴν ἁμαρτίαν ἐν τῇ σαρκί·",
+        "VUL": "Nam quod impossibile erat legi, in quo infirmabatur per carnem : Deus Filium suum mittens in similitudinem carnis peccati et de peccato, damnavit peccatum in carne,",
+        "SYN": "Как закон, ослабленный плотию, был бессилен, то Бог послал Сына Своего в подобии плоти греховной _в_ _жертву_ за грех и осудил грех во плоти,",
+        "NEO": "Car, ce qui était impossible à la Loi parce qu’elle était sans force à cause de la chair, Dieu l’a fait : en envoyant, pour le péché, son propre Fils dans une chair semblable à celle du péché, et il a condamné le péché dans la chair,",
+        "NAB": "For what the law, weakened by the flesh, was powerless to do, this God has done: by sending his own Son in the likeness of sinful flesh and for the sake of sin, he condemned sin in the flesh,",
+        "VAT_ES": "Lo que no podía hacer la Ley, reducida a la impotencia por la carne, Dios lo hizo, enviando a su propio Hijo, en una carne semejante a la del pecado, y como víctima por el pecado. Así él condenó el pecado en la carne,",
+        "CEI": "tutti mangiarono lo stesso cibo spirituale,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "ἵνα τὸ δικαίωμα τοῦ νόμου πληρωθῇ ἐν ἡμῖν, τοῖς μὴ κατὰ σάρκα περιπατοῦσιν, ἀλλὰ κατὰ πνεῦμα.",
+        "VUL": "ut justificatio legis impleretur in nobis, qui non secundum carnem ambulamus, sed secundum spiritum.",
+        "SYN": "чтобы оправдание закона исполнилось в нас, живущих не по плоти, но по духу.",
+        "NEO": "afin que la justice de la loi fût accomplie en nous, qui marchons, non selon la chair, mais selon l’Esprit.",
+        "NAB": "so that the righteous decree of the law might be fulfilled in us, who live not according to the flesh but according to the spirit.",
+        "VAT_ES": "para que la justicia de la Ley se cumpliera en nosotros, que ya no vivimos conforme a la carne sino al espíritu.",
+        "CEI": "tutti bevvero la stessa bevanda spirituale: bevevano infatti da una roccia spirituale che li accompagnava, e quella roccia era il Cristo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Οἱ γὰρ κατὰ σάρκα ὄντες τὰ τῆς σαρκὸς φρονοῦσιν· οἱ δὲ κατὰ πνεῦμα τὰ τοῦ πνεύματος.",
+        "VUL": "Qui enim secundum carnem sunt, quæ carnis sunt, sapiunt : qui vero secundum spiritum sunt, quæ sunt spiritus, sentiunt.",
+        "SYN": "Ибо живущие по плоти о плотском помышляют, а живущие по духу -- о духовном.",
+        "NEO": "Ceux, en effet, qui vivent selon la chair, s’affectionnent aux choses de la chair ; mais ceux qui vivent selon l’Esprit s’affectionnent aux choses de l’Esprit.",
+        "NAB": "For those who live according to the flesh are concerned with the things of the flesh, but those who live according to the spirit with the things of the spirit.",
+        "VAT_ES": "En efecto, los que viven según la carne desean lo que es carnal; en cambio, los que viven según el espíritu, desean lo que es espiritual.",
+        "CEI": "Ma della maggior parte di loro Dio non si compiacque e perciò furono abbattuti nel deserto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Τὸ γὰρ φρόνημα τῆς σαρκὸς θάνατος· τὸ δὲ φρόνημα τοῦ πνεύματος ζωὴ καὶ εἰρήνη·",
+        "VUL": "Nam prudentia carnis, mors est : prudentia autem spiritus, vita et pax :",
+        "SYN": "Помышления плотские суть смерть, а помышления духовные -- жизнь и мир,",
+        "NEO": "Et les affections de la chair, c’est la mort, tandis que les affections de l’Esprit, c’est la vie et la paix :",
+        "NAB": "The concern of the flesh is death, but the concern of the spirit is life and peace.",
+        "VAT_ES": "Ahora bien, los deseos de la carne conducen a la muerte, pero los deseos del espíritu conducen a la vida y a la paz,",
+        "CEI": "Ora ciò avvenne come esempio per noi, perché non desiderassimo cose cattive, come essi le desiderarono."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "διότι τὸ φρόνημα τῆς σαρκὸς ἔχθρα εἰς θεόν, τῷ γὰρ νόμῳ τοῦ θεοῦ οὐχ ὑποτάσσεται, οὐδὲ γὰρ δύναται·",
+        "VUL": "quoniam sapientia carnis inimica est Deo : legi enim Dei non est subjecta, nec enim potest.",
+        "SYN": "потому что плотские помышления суть вражда против Бога; ибо закону Божию не покоряются, да и не могут.",
+        "NEO": "parce que les affections de la chair sont inimitié contre Dieu, car elles ne se soumettent pas à la loi divine, et elles ne le peuvent même pas.",
+        "NAB": "For the concern of the flesh is hostility toward God; it does not submit to the law of God, nor can it;",
+        "VAT_ES": "porque los deseos de la carne se oponen a Dios, ya que no se someten a su Ley, ni pueden hacerlo.",
+        "CEI": "Non diventate idolàtri come alcuni di loro, secondo quanto sta scritto: Il popolo sedette a mangiare e a bere e poi si alzò per divertirsi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "οἱ δὲ ἐν σαρκὶ ὄντες θεῷ ἀρέσαι οὐ δύνανται.",
+        "VUL": "Qui autem in carne sunt, Deo placere non possunt.",
+        "SYN": "Посему живущие по плоти Богу угодить не могут.",
+        "NEO": "Or ceux qui vivent dans la chair ne sauraient plaire à Dieu.",
+        "NAB": "and those who are in the flesh cannot please God.",
+        "VAT_ES": "Por eso, los que viven de acuerdo con la carne no pueden agradar a Dios.",
+        "CEI": "Non abbandoniamoci alla fornicazione, come vi si abbandonarono alcuni di essi e ne caddero in un solo giorno ventitremila."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Ὑμεῖς δὲ οὐκ ἐστὲ ἐν σαρκί, ἀλλ’ ἐν πνεύματι, εἴπερ πνεῦμα θεοῦ οἰκεῖ ἐν ὑμῖν. Εἰ δέ τις πνεῦμα χριστοῦ οὐκ ἔχει, οὗτος οὐκ ἔστιν αὐτοῦ.",
+        "VUL": "Vos autem in carne non estis, sed in spiritu : si tamen Spiritus Dei habitat in vobis. Si quis autem Spiritum Christi non habet, hic non est ejus.",
+        "SYN": "Но вы не по плоти живете, а по духу, если только Дух Божий живет в вас. Если же кто Духа Христова не имеет, тот _и_ не Его.",
+        "NEO": "Pour vous, vous ne vivez pas dans la chair, mais dans l’Esprit, si du moins l’Esprit de Dieu habite en vous. Si quelqu’un n’a pas l’Esprit du Christ, il ne lui appartient pas.",
+        "NAB": "But you are not in the flesh; on the contrary, you are in the spirit, if only the Spirit of God dwells in you. Whoever does not have the Spirit of Christ does not belong to him.",
+        "VAT_ES": "Pero ustedes no están animados por la carne sino por el espíritu, dado que el Espíritu de Dios habita en ustedes. El que no tiene el Espíritu de Cristo no puede ser de Cristo.",
+        "CEI": "Non mettiamo alla prova il Signore, come fecero alcuni di essi, e caddero vittime dei serpenti."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ χριστὸς ἐν ὑμῖν, τὸ μὲν σῶμα νεκρὸν διὰ ἁμαρτίαν, τὸ δὲ πνεῦμα ζωὴ διὰ δικαιοσύνην.",
+        "VUL": "Si autem Christus in vobis est, corpus quidem mortuum est propter peccatum, spiritus vero vivit propter justificationem.",
+        "SYN": "А если Христос в вас, то тело мертво для греха, но дух жив для праведности.",
+        "NEO": "Mais si le Christ est en vous, le corps, il est vrai, est mort à cause du péché, mais l’esprit est vie à cause de la justice.",
+        "NAB": "But if Christ is in you, although the body is dead because of sin, the spirit is alive because of righteousness.",
+        "VAT_ES": "Pero si Cristo vive en ustedes, aunque el cuerpo esté sometido a la muerte a causa del pecado, el espíritu vive a causa de la justicia.",
+        "CEI": "Non mormorate, come mormorarono alcuni di essi, e caddero vittime dello sterminatore."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ τὸ πνεῦμα τοῦ ἐγείραντος Ἰησοῦν ἐκ νεκρῶν οἰκεῖ ἐν ὑμῖν, ὁ ἐγείρας τὸν χριστὸν ἐκ νεκρῶν ζῳοποιήσει καὶ τὰ θνητὰ σώματα ὑμῶν, διὰ τὸ ἐνοικοῦν αὐτοῦ πνεῦμα ἐν ὑμῖν.",
+        "VUL": "Quod si Spiritus ejus, qui suscitavit Jesum a mortuis, habitat in vobis : qui suscitavit Jesum Christum a mortuis, vivificabit et mortalia corpora vestra, propter inhabitantem Spiritum ejus in vobis.",
+        "SYN": "Если же Дух Того, Кто воскресил из мертвых Иисуса, живет в вас, то Воскресивший Христа из мертвых оживит и ваши смертные тела Духом Своим, живущим в вас.",
+        "NEO": "Et si l’Esprit de celui qui a ressuscité Jésus d’entre les morts habite en vous, celui qui a ressuscité le Christ d’entre les morts rendra aussi la vie à vos corps mortels, à cause de son Esprit qui habite en vous+ 8:11 11. Si l’Esprit du Père qui, etc. Jésus, comme Dieu, est sorti du tombeau par sa propre vertu (Jean, x, 18) ; comme homme, sa résurrection est l’œuvre du Père, auquel on \\+qt attribue\\+qt* les œuvres de puissance. — \\+qt À cause de l'Esprit-Saint\\+qt*, dont l’habitation dans notre âme communique au corps lui-même un principe d’immortalité.*.",
+        "NAB": "If the Spirit of the one who raised Jesus from the dead dwells in you, the one who raised Christ from the dead will give life to your mortal bodies also, through his Spirit that dwells in you.",
+        "VAT_ES": "Y si el Espíritu de aquel que resucitó a Jesús habita en ustedes, el que resucitó a Cristo Jesús también dará vida a sus cuerpos mortales, por medio del mismo Espíritu que habita en ustedes.",
+        "CEI": "Tutte queste cose però accaddero a loro come esempio, e sono state scritte per ammonimento nostro, di noi per i quali è arrivata la fine dei tempi."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "¶Ἄρα οὖν, ἀδελφοί, ὀφειλέται ἐσμέν, οὐ τῇ σαρκί, τοῦ κατὰ σάρκα ζῇν·",
+        "VUL": "Ergo fratres, debitores sumus non carni, ut secundum carnem vivamus.",
+        "SYN": "Итак, братия, мы не должники плоти, чтобы жить по плоти;",
+        "NEO": "Ainsi donc, mes frères, nous ne sommes pas redevables à la chair pour vivre selon la chair.",
+        "NAB": "Consequently, brothers, we are not debtors to the flesh, to live according to the flesh.",
+        "VAT_ES": "Hermanos, nosotros no somos deudores de la carne, para vivir de una manera carnal.",
+        "CEI": "Quindi, chi crede di stare in piedi, guardi di non cadere."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "εἰ γὰρ κατὰ σάρκα ζῆτε, μέλλετε ἀποθνῄσκειν· εἰ δὲ πνεύματι τὰς πράξεις τοῦ σώματος θανατοῦτε, ζήσεσθε.",
+        "VUL": "Si enim secundum carnem vixeritis, moriemini : si autem spiritu facta carnis mortificaveritis, vivetis.",
+        "SYN": "ибо если живете по плоти, то умрете, а если духом умерщвляете дела плотские, то живы будете.",
+        "NEO": "Car si vous vivez, selon la chair, vous mourrez ; mais si, par l’Esprit, vous faites mourir les œuvres du corps, vous vivrez ;",
+        "NAB": "For if you live according to the flesh, you will die, but if by the spirit you put to death the deeds of the body, you will live.",
+        "VAT_ES": "Si ustedes viven según la carne, morirán. Al contrario, si hacen morir las obras de la carne por medio del Espíritu, entonces vivirán.",
+        "CEI": "Nessuna tentazione vi ha finora sorpresi se non umana; infatti Dio è fedele e non permetterà che siate tentati oltre le vostre forze, ma con la tentazione vi darà anche la via d'uscita e la forza per sopportarla."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ὅσοι γὰρ πνεύματι θεοῦ ἄγονται, οὗτοί εἰσιν υἱοὶ θεοῦ.",
+        "VUL": "Quicumque enim Spiritu Dei aguntur, ii sunt filii Dei.",
+        "SYN": "Ибо все, водимые Духом Божиим, суть сыны Божии.",
+        "NEO": "car tous ceux qui sont conduits par l’Esprit de Dieu sont fils de Dieu.",
+        "NAB": "For those who are led by the Spirit of God are children of God.",
+        "VAT_ES": "Todos los que son conducidos por el Espíritu de Dios son hijos de Dios.",
+        "CEI": "Perciò, o miei cari, fuggite l'idolatria."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Οὐ γὰρ ἐλάβετε πνεῦμα δουλείας πάλιν εἰς φόβον, ἀλλ’ ἐλάβετε πνεῦμα υἱοθεσίας, ἐν ᾧ κράζομεν, Ἀββᾶ, ὁ πατήρ.",
+        "VUL": "Non enim accepistis spiritum servitutis iterum in timore, sed accepistis spiritum adoptionis filiorum, in quo clamamus : Abba (Pater).",
+        "SYN": "Потому что вы не приняли духа рабства, _чтобы_ опять _жить_ в страхе, но приняли Духа усыновления, Которым взываем: \"Авва, Отче!\"",
+        "NEO": "En effet, vous n’avez pas reçu un Esprit de servitude, pour être encore dans la crainte ; mais vous avez reçu un Esprit d’adoption, en qui nous crions : Abba ! Père !+ 8:15 Un Esprit d’adoption, l’Esprit-Saint donné aux fils adoptifs (Gal. iv, 6), comme sceau de leur adoption et comme gage de l’héritage céleste (Eph. i, 13 sv.).*",
+        "NAB": "For you did not receive a spirit of slavery to fall back into fear, but you received a spirit of adoption, through which we cry, \"Abba, Father!\"",
+        "VAT_ES": "Y ustedes no han recibido un espíritu de esclavos para volver a caer en el temor, sino el espíritu de hijos adoptivos, que nos hace llamar a Dios",
+        "CEI": "Parlo come a persone intelligenti; giudicate voi stessi quello che dico:"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Αὐτὸ τὸ πνεῦμα συμμαρτυρεῖ τῷ πνεύματι ἡμῶν, ὅτι ἐσμὲν τέκνα θεοῦ·",
+        "VUL": "Ipse enim Spiritus testimonium reddit spiritui nostro quod sumus filii Dei.",
+        "SYN": "Сей самый Дух свидетельствует духу нашему, что мы -- дети Божии.",
+        "NEO": "Cet Esprit lui-même rend témoignage à notre esprit que nous sommes enfants de Dieu+ 8:16 L’Esprit-Saint qui opère en nous excite ce mouvement d’amour et nous rend ainsi un témoignage immédiat de notre amitié avec Dieu et de notre filiation divine.*.",
+        "NAB": "The Spirit itself bears witness with our spirit that we are children of God,",
+        "VAT_ES": "El mismo espíritu se une a nuestro espíritu para dar testimonio de que somos hijos de Dios.",
+        "CEI": "il calice della benedizione che noi benediciamo, non è forse comunione con il sangue di Cristo? E il pane che noi spezziamo, non è forse comunione con il corpo di Cristo?"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "εἰ δὲ τέκνα, καὶ κληρονόμοι· κληρονόμοι μὲν θεοῦ, συγκληρονόμοι δὲ χριστοῦ· εἴπερ συμπάσχομεν, ἵνα καὶ συνδοξασθῶμεν.",
+        "VUL": "Si autem filii, et hæredes : hæredes, quidem Dei, cohæredes autem Christi : si tamen compatimur ut et conglorificemur.",
+        "SYN": "А если дети, то и наследники, наследники Божии, сонаследники же Христу, если только с Ним страдаем, чтобы с Ним и прославиться.",
+        "NEO": "Or, si nous sommes enfants, nous sommes aussi héritiers, héritiers de Dieu et cohéritiers du Christ, si toutefois nous souffrons avec lui, pour être glorifiés avec lui.",
+        "NAB": "and if children, then heirs, heirs of God and joint heirs with Christ, if only we suffer with him so that we may also be glorified with him.",
+        "VAT_ES": "Si somos hijos, también somos herederos, herederos de Dios y coherederos de Cristo, porque sufrimos con él para ser glorificados con el.",
+        "CEI": "Poiché c'è un solo pane, noi, pur essendo molti, siamo un corpo solo: tutti infatti partecipiamo dell'unico pane."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "¶Λογίζομαι γὰρ ὅτι οὐκ ἄξια τὰ παθήματα τοῦ νῦν καιροῦ πρὸς τὴν μέλλουσαν δόξαν ἀποκαλυφθῆναι εἰς ἡμᾶς.",
+        "VUL": "Existimo enim quod non sunt condignæ passiones hujus temporis ad futuram gloriam, quæ revelabitur in nobis.",
+        "SYN": "Ибо думаю, что нынешние временные страдания ничего не стоят в сравнении с тою славою, которая откроется в нас.",
+        "NEO": "Car j’estime que les souffrances du temps présent sont sans proportion avec la gloire à venir qui sera manifestée en nous.",
+        "NAB": "I consider that the sufferings of this present time are as nothing compared with the glory to be revealed for us.",
+        "VAT_ES": "Yo considero que los sufrimientos del tiempo presente no pueden compararse con la gloria futura que se revelará en nosotros.",
+        "CEI": "Guardate Israele secondo la carne: quelli che mangiano le vittime sacrificali non sono forse in comunione con l'altare?"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ἡ γὰρ ἀποκαραδοκία τῆς κτίσεως τὴν ἀποκάλυψιν τῶν υἱῶν τοῦ θεοῦ ἀπεκδέχεται.",
+        "VUL": "Nam exspectatio creaturæ revelationem filiorum Dei exspectat.",
+        "SYN": "Ибо тварь с надеждою ожидает откровения сынов Божиих,",
+        "NEO": "Aussi la création attend-elle avec un ardent désir la manifestation des enfants de Dieu+ 8:19 Avec un ardent désir. La Vulg. assez faiblement : \\+qt est dans l’attente\\+qt*.*.",
+        "NAB": "For creation awaits with eager expectation the revelation of the children of God;",
+        "VAT_ES": "En efecto, toda la creación espera ansiosamente esta revelación de los hijos de Dios.",
+        "CEI": "Che cosa dunque intendo dire? Che la carne immolata agli idoli è qualche cosa? O che un idolo è qualche cosa?"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Τῇ γὰρ ματαιότητι ἡ κτίσις ὑπετάγη, οὐχ ἑκοῦσα, ἀλλὰ διὰ τὸν ὑποτάξαντα, ἐπ’ ἐλπίδι·",
+        "VUL": "Vanitati enim creatura subjecta est non volens, sed propter eum, qui subjecit eam in spe :",
+        "SYN": "потому что тварь покорилась суете не добровольно, но по воле покорившего ее, в надежде,",
+        "NEO": "La création, en effet, a été assujettie à la vanité, — non de son gré, mais par la volonté de celui qui l’y a soumise+ 8:20 Les créatures sont assujetties à la vanité, à la caducité ou bien aux vaines fantaisies et aux passions dépravées de l’homme pécheur, contraintes de servir à ses viles satisfactions et à ses vices, au lieu d’atteindre la fin pour laquelle Dieu les avait faites, c.-à-d. le glorifier par l’entremise de l’homme. Comp. Eph. iv, 17. D’après le texte, l’état de souffrance, de violence dans lequel se trouve actuellement la création ne lui est pas naturel.*, — avec l’espérance",
+        "NAB": "for creation was made subject to futility, not of its own accord but because of the one who subjected it, in hope",
+        "VAT_ES": "Ella quedó sujeta a la vanidad, no voluntariamente, sino por causa de quien la sometió, pero conservando una esperanza.",
+        "CEI": "No, ma dico che i sacrifici dei pagani sono fatti a demòni e non a Dio. Ora, io non voglio che voi entriate in comunione con i demòni;"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "ὅτι καὶ αὐτὴ ἡ κτίσις ἐλευθερωθήσεται ἀπὸ τῆς δουλείας τῆς φθορᾶς εἰς τὴν ἐλευθερίαν τῆς δόξης τῶν τέκνων τοῦ θεοῦ.",
+        "VUL": "quia et ipsa creatura liberabitur a servitute corruptionis in libertatem gloriæ filiorum Dei.",
+        "SYN": "что и сама тварь освобождена будет от рабства тлению в свободу славы детей Божиих.",
+        "NEO": "qu’elle aussi sera affranchie de la servitude de la corruption, pour avoir part à la liberté glorieuse des enfants de Dieu.",
+        "NAB": "that creation itself would be set free from slavery to corruption and share in the glorious freedom of the children of God.",
+        "VAT_ES": "Porque también la creación será liberada de la esclavitud de la corrupción para participar de la gloriosa libertad de los hijos de Dios.",
+        "CEI": "non potete bere il calice del Signore e il calice dei demòni; non potete partecipare alla mensa del Signore e alla mensa dei demòni."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Οἴδαμεν γὰρ ὅτι πᾶσα ἡ κτίσις συστενάζει καὶ συνωδίνει ἄχρι τοῦ νῦν.",
+        "VUL": "Scimus enim quod omnis creatura ingemiscit, et parturit usque adhuc.",
+        "SYN": "Ибо знаем, что вся тварь совокупно стенает и мучится доныне;",
+        "NEO": "Car nous savons que, jusqu’à ce jour, la création tout entière gémit et souffre les douleurs de l’enfantement.",
+        "NAB": "We know that all creation is groaning in labor pains even until now;",
+        "VAT_ES": "Sabemos que la creación entera, hasta el presente, gime y sufre dolores de parto.",
+        "CEI": "O vogliamo provocare la gelosia del Signore? Siamo forse più forti di lui?"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Οὐ μόνον δέ, ἀλλὰ καὶ αὐτοὶ τὴν ἀπαρχὴν τοῦ πνεύματος ἔχοντες, καὶ ἡμεῖς αὐτοὶ ἐν ἑαυτοῖς στενάζομεν, υἱοθεσίαν ἀπεκδεχόμενοι, τὴν ἀπολύτρωσιν τοῦ σώματος ἡμῶν.",
+        "VUL": "Non solum autem illa, sed et nos ipsi primitias spiritus habentes : et ipsi intra nos gemimus adoptionem filiorum Dei exspectantes, redemptionem corporis nostri.",
+        "SYN": "и не только _она,_ но и мы сами, имея начаток Духа, и мы в себе стенаем, ожидая усыновления, искупления тела нашего.",
+        "NEO": "Et ce n’est pas elle seulement ; nous aussi, qui avons les prémices de l’Esprit, nous gémissons en nous-mêmes, attendant l’adoption [des enfants de Dieu], la rédemption de notre corps.",
+        "NAB": "and not only that, but we ourselves, who have the firstfruits of the Spirit, we also groan within ourselves as we wait for adoption, the redemption of our bodies.",
+        "VAT_ES": "Y no sólo ella: también nosotros, que poseemos las primicias del Espíritu, gemimos interiormente anhelando que se realice la redención de nuestro cuerpo.",
+        "CEI": "\"Tutto è lecito!\". Ma non tutto è utile! \"Tutto è lecito!\". Ma non tutto edifica."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Τῇ γὰρ ἐλπίδι ἐσώθημεν· ἐλπὶς δὲ βλεπομένη οὐκ ἔστιν ἐλπίς· ὃ γὰρ βλέπει τις, τί καὶ ἐλπίζει;",
+        "VUL": "Spe enim salvi facti sumus. Spes autem, quæ videtur, non est spes : nam quod videt quis, quid sperat ?",
+        "SYN": "Ибо мы спасены в надежде. Надежда же, когда видит, не есть надежда; ибо если кто видит, то чего ему и надеяться?",
+        "NEO": "Car c’est en espérance que nous sommes sauvés. Or, voir ce qu’on espère, ce n’est plus espérer : car ce qu’on voit pourquoi l’espérer encore ?",
+        "NAB": "For in hope we were saved. Now hope that sees for itself is not hope. For who hopes for what one sees?",
+        "VAT_ES": "Porque solamente en esperanza estamos salvados. Ahora bien, cuando se ve lo que se espera, ya no se espera más: &iquest;acaso se puede esperar lo que se ve?",
+        "CEI": "Nessuno cerchi l'utile proprio, ma quello altrui."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ ὃ οὐ βλέπομεν ἐλπίζομεν, δι’ ὑπομονῆς ἀπεκδεχόμεθα.",
+        "VUL": "Si autem quod non videmus, speramus : per patientiam exspectamus.",
+        "SYN": "Но когда надеемся того, чего не видим, тогда ожидаем в терпении.",
+        "NEO": "Mais si nous espérons ce que nous ne voyons pas, nous l’attendons avec patience.",
+        "NAB": "But if we hope for what we do not see, we wait with endurance.",
+        "VAT_ES": "En cambio, si esperamos lo que no vemos, lo esperamos con constancia.",
+        "CEI": "Tutto ciò che è in vendita sul mercato, mangiatelo pure senza indagare per motivo di coscienza,"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "¶Ὡσαύτως δὲ καὶ τὸ πνεῦμα συναντιλαμβάνεται ταῖς ἀσθενείαις ἡμῶν· τὸ γὰρ τί προσευξόμεθα καθὸ δεῖ, οὐκ οἴδαμεν, ἀλλ’ αὐτὸ τὸ πνεῦμα ὑπερεντυγχάνει ὑπὲρ ἡμῶν στεναγμοῖς ἀλαλήτοις·",
+        "VUL": "Similiter autem et Spiritus adjuvat infirmitatem nostram : nam quid oremus, sicut oportet, nescimus : sed ipse Spiritus postulat pro nobis gemitibus inenarrabilibus.",
+        "SYN": "Также и Дух подкрепляет нас в немощах наших; ибо мы не знаем, о чем молиться, как должно, но Сам Дух ходатайствует за нас воздыханиями неизреченными.",
+        "NEO": "De même aussi l’Esprit vient en aide à notre faiblesse, car nous ne savons pas ce que nous devons, selon nos besoins, demander dans nos prières. Mais l’Esprit lui-même prie pour nous par des gémissements ineffables+ 8:26 Ineffables, inexprimables, ou inexprimés.* ;",
+        "NAB": "In the same way, the Spirit too comes to the aid of our weakness; for we do not know how to pray as we ought, but the Spirit itself intercedes with inexpressible groanings.",
+        "VAT_ES": "Igualmente, el mismo Espíritu viene en ayuda de nuestra debilidad porque no sabemos orar como es debido; pero es Espíritu intercede por nosotros con gemidos inefables.",
+        "CEI": "perché del Signore è la terra e tutto ciò che essa contiene."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "ὁ δὲ ἐρευνῶν τὰς καρδίας οἶδεν τί τὸ φρόνημα τοῦ πνεύματος, ὅτι κατὰ θεὸν ἐντυγχάνει ὑπὲρ ἁγίων.",
+        "VUL": "Qui autem scrutatur corda, scit quid desideret Spiritus : quia secundum Deum postulat pro sanctis.",
+        "SYN": "Испытующий же сердца знает, какая мысль у Духа, потому что Он ходатайствует за святых по _воле_ Божией.",
+        "NEO": "et celui qui sonde les cœurs connaît quels sont les désirs de l’Esprit ; il sait* qu’il prie selon Dieu pour des saints.",
+        "NAB": "And the one who searches hearts knows what is the intention of the Spirit, because it intercedes for the holy ones according to God's will.",
+        "VAT_ES": "Y el que sondea los corazones conoce el deseo del Espíritu y sabe que su intercesión en favor de los santos está de acuerdo con la voluntad divina.",
+        "CEI": "Se qualcuno non credente vi invita e volete andare, mangiate tutto quello che vi viene posto davanti, senza fare questioni per motivo di coscienza."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Οἴδαμεν δὲ ὅτι τοῖς ἀγαπῶσιν τὸν θεὸν πάντα συνεργεῖ εἰς ἀγαθόν, τοῖς κατὰ πρόθεσιν κλητοῖς οὖσιν.",
+        "VUL": "Scimus autem quoniam diligentibus Deum omnia cooperantur in bonum, iis qui secundum propositum vocati sunt sancti.",
+        "SYN": "Притом знаем, что любящим Бога, призванным по _Его_ изволению, все содействует ко благу.",
+        "NEO": "Nous savons d’ailleurs que toutes choses concourent au bien de ceux qui aiment Dieu, de ceux qui sont appelés selon son éternel* dessein.",
+        "NAB": "We know that all things work for good for those who love God, who are called according to his purpose.",
+        "VAT_ES": "Sabemos, además, que Dios dispone, todas las cosas para el bien de los que lo aman, de aquellos que él llamó según su designio.",
+        "CEI": "Ma se qualcuno vi dicesse: \"È carne immolata in sacrificio\", astenetevi dal mangiarne, per riguardo a colui che vi ha avvertito e per motivo di coscienza;"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Ὅτι οὓς προέγνω, καὶ προώρισεν συμμόρφους τῆς εἰκόνος τοῦ υἱοῦ αὐτοῦ, εἰς τὸ εἶναι αὐτὸν πρωτότοκον ἐν πολλοῖς ἀδελφοῖς·",
+        "VUL": "Nam quos præscivit, et prædestinavit conformes fieri imaginis Filii sui, ut sit ipse primogenitus in multis fratribus.",
+        "SYN": "Ибо кого Он предузнал, тем и предопределил быть подобными образу Сына Своего, дабы Он был первородным между многими братиями.",
+        "NEO": "Car ceux qu’il a connus d’avance, il les a aussi prédestinés à être conformes à l’image de son Fils, afin que son Fils soit le premier-né d’un grand nombre de frères.",
+        "NAB": "For those he foreknew he also predestined to be conformed to the image of his Son, so that he might be the firstborn among many brothers.",
+        "VAT_ES": "En efecto, a los que Dios conoció de antemano, los predestinó a reproducir la imagen de su Hijo, para que él fuera el Primogénito entre muchos hermanos;",
+        "CEI": "della coscienza, dico, non tua, ma dell'altro. Per qual motivo, infatti, questa mia libertà dovrebbe esser sottoposta al giudizio della coscienza altrui?"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "οὓς δὲ προώρισεν, τούτους καὶ ἐκάλεσεν· καὶ οὓς ἐκάλεσεν, τούτους καὶ ἐδικαίωσεν· οὓς δὲ ἐδικαίωσεν, τούτους καὶ ἐδόξασεν.",
+        "VUL": "Quos autem prædestinavit, hos et vocavit : et quos vocavit, hos et justificavit : quos autem justificavit, illos et glorificavit.",
+        "SYN": "А кого Он предопределил, тех и призвал, а кого призвал, тех и оправдал; а кого оправдал, тех и прославил.",
+        "NEO": "Et ceux qu’il a prédestinés, il les a aussi appelés ; et ceux qu’il a appelés, il les a aussi justifiés ; et ceux qu’il a justifiés il les a glorifiés.",
+        "NAB": "And those he predestined he also called; and those he called he also justified; and those he justified he also glorified.",
+        "VAT_ES": "y a los que predestinó, también los llamó; y a los que llamó, también los justificó; y a los que justificó, también los glorificó.",
+        "CEI": "Se io con rendimento di grazie partecipo alla mensa, perché dovrei essere biasimato per quello di cui rendo grazie?"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "¶Τί οὖν ἐροῦμεν πρὸς ταῦτα; Εἰ ὁ θεὸς ὑπὲρ ἡμῶν, τίς καθ’ ἡμῶν;",
+        "VUL": "Quid ergo dicemus ad hæc ? si Deus pro nobis, quis contra nos ?",
+        "SYN": "Что же сказать на это? Если Бог за нас, кто против нас?",
+        "NEO": "Que dirons-nous donc après cela ? Si Dieu est pour nous, qui sera contre nous+ 8:31 Après cela, ou \\+qt à ce propos\\+qt*, relativement à ces choses. Le chrétien n’a donc plus rien à craindre, mais tout à espérer, son salut éternel reposant sur le fondement inébranlable de l’amour de Dieu et de J.-C.Les vers. 33-43 pourraient être ponctués : \\+qt Qui accusera les élus de Dieu ? Sera-ce Dieu qui les justifie ? Qui les condamnera ? Sera-ce le Christ qui est mort ?\\+qt* etc.* ?",
+        "NAB": "What then shall we say to this? If God is for us, who can be against us?",
+        "VAT_ES": "&iquest;Qué diremos después de todo esto? Si Dios está con nosotros, &iquest;quién estará contra nosotros?",
+        "CEI": "Sia dunque che mangiate sia che beviate sia che facciate qualsiasi altra cosa, fate tutto per la gloria di Dio."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "Ὅς γε τοῦ ἰδίου υἱοῦ οὐκ ἐφείσατο, ἀλλ’ ὑπὲρ ἡμῶν πάντων παρέδωκεν αὐτόν, πῶς οὐχὶ καὶ σὺν αὐτῷ τὰ πάντα ἡμῖν χαρίσεται;",
+        "VUL": "Qui etiam proprio Filio suo non pepercit, sed pro nobis omnibus tradidit illum : quomodo non etiam cum illo omnia nobis donavit ?",
+        "SYN": "Тот, Который Сына Своего не пощадил, но предал Его за всех нас, как с Ним не дарует нам и всего?",
+        "NEO": "Lui qui n’a pas épargné son propre Fils, mais qui l’a livré à la mort pour nous tous, comment avec lui ne nous donnera-t-il pas toutes choses ?",
+        "NAB": "He who did not spare his own Son but handed him over for us all, how will he not also give us everything else along with him?",
+        "VAT_ES": "El que no escatimó a su propio Hijo, sino que lo entregó por todos nosotros, &iquest;no nos concederá con él toda clase de favores?",
+        "CEI": "Non date motivo di scandalo né ai Giudei, né ai Greci, né alla Chiesa di Dio;"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Τίς ἐγκαλέσει κατὰ ἐκλεκτῶν θεοῦ; Θεὸς ὁ δικαιῶν·",
+        "VUL": "Quis accusabit adversus electos Dei ? Deus qui justificat,",
+        "SYN": "Кто будет обвинять избранных Божиих? Бог оправдывает _их._",
+        "NEO": "Qui accusera des élus de Dieu ? C’est Dieu qui les justifie !",
+        "NAB": "Who will bring a charge against God's chosen ones? It is God who acquits us.",
+        "VAT_ES": "&iquest;Quién podrá acusar a los elegidos de Dios? Dios es el que justifica.",
+        "CEI": "così come io mi sforzo di piacere a tutti in tutto, senza cercare l'utile mio ma quello di molti, perché giungano alla salvezza."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "τίς ὁ κατακρίνων; Χριστὸς ὁ ἀποθανών, μᾶλλον δὲ καὶ ἐγερθείς, ὃς καὶ ἔστιν ἐν δεξιᾷ τοῦ θεοῦ, ὃς καὶ ἐντυγχάνει ὑπὲρ ἡμῶν.",
+        "VUL": "quis est qui condemnet ? Christus Jesus, qui mortuus est, immo qui et resurrexit, qui est ad dexteram Dei, qui etiam interpellat pro nobis.",
+        "SYN": "Кто осуждает? Христос Иисус умер, но и воскрес: Он и одесную Бога, Он и ходатайствует за нас.",
+        "NEO": "Qui les condamnera ? Le Christ est mort, bien plus il est ressuscité, il est à la droite de Dieu, il intercède pour nous !",
+        "NAB": "Who will condemn? It is Christ (Jesus) who died, rather, was raised, who also is at the right hand of God, who indeed intercedes for us.",
+        "VAT_ES": "&iquest;Quién se atreverá a condenarlos? &iquest;Será acaso Jesucristo, el que murió, más aún, el que resucitó, y está a la derecha de Dios e intercede por nosotros?"
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "Τίς ἡμᾶς χωρίσει ἀπὸ τῆς ἀγάπης τοῦ χριστοῦ; Θλίψις, ἢ στενοχωρία, ἢ διωγμός, ἢ λιμός, ἢ γυμνότης, ἢ κίνδυνος, ἢ μάχαιρα;",
+        "VUL": "Quis ergo nos separabit a caritate Christi ? tribulatio ? an angustia ? an fames ? an nuditas ? an periculum ? an persecutio ? an gladius ?",
+        "SYN": "Кто отлучит нас от любви Божией: скорбь, или теснота, или гонение, или голод, или нагота, или опасность, или меч? как написано:",
+        "NEO": "Qui nous séparera de l’amour du Christ ? Sera-ce* la tribulation, ou l’angoisse, ou la persécution, ou la faim, ou la nudité, ou le péril, ou l’épée+ 8:35 L’amour du Christ désigne tout d’abord l’amour de J.-C. pour nous, mais en tant que reçu dans la conscience du fidèle, où il allume un amour réciproque.* ?",
+        "NAB": "What will separate us from the love of Christ? Will anguish, or distress, or persecution, or famine, or nakedness, or peril, or the sword?",
+        "VAT_ES": "&iquest;Quién podrá entonces separarnos del amor de Cristo? &iquest;Las tribulaciones, las angustias, la persecución, el hambre, la desnudez, los peligros, la espada?"
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "Καθὼς γέγραπται ὅτι Ἕνεκέν σου θανατούμεθα ὅλην τὴν ἡμέραν· ἐλογίσθημεν ὡς πρόβατα σφαγῆς.",
+        "VUL": "(Sicut scriptum est : [Quia propter te mortificamur tota die :/ æstimati sumus sicut oves occisionis.)]",
+        "SYN": "за Тебя умерщвляют нас всякий день, считают нас за овец, _обреченных_ на заклание.",
+        "NEO": "Selon qu’il est écrit : « À cause de toi, tout le jour nous sommes livrés à la mort, et on nous regarde comme des brebis destinées à la boucherie+ 8:36 Ps. xliv (43), 23, cité d’après les Septante.*. »",
+        "NAB": "As it is written: \"For your sake we are being slain all the day; we are looked upon as sheep to be slaughtered.\"",
+        "VAT_ES": "Como dice la Escritura: Por tu causa somos entregados continuamente a la muerte; se nos considera como a ovejas destinadas al matadero."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ ἐν τούτοις πᾶσιν ὑπερνικῶμεν διὰ τοῦ ἀγαπήσαντος ἡμᾶς.",
+        "VUL": "Sed in his omnibus superamus propter eum qui dilexit nos.",
+        "SYN": "Но все сие преодолеваем силою Возлюбившего нас.",
+        "NEO": "Mais dans toutes ces épreuves nous sommes plus que vainqueurs, par celui qui nous a aimés.",
+        "NAB": "No, in all these things we conquer overwhelmingly through him who loved us.",
+        "VAT_ES": "Pero en todo esto obtenemos una amplia victoria, gracias a aquel que nos amó."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "BYZ": "Πέπεισμαι γὰρ ὅτι οὔτε θάνατος οὔτε ζωὴ οὔτε ἄγγελοι οὔτε ἀρχαὶ οὔτε δυνάμεις οὔτε ἐνεστῶτα οὔτε μέλλοντα",
+        "VUL": "Certus sum enim quia neque mors, neque vita, neque angeli, neque principatus, neque virtutes, neque instantia, neque futura, neque fortitudo,",
+        "SYN": "Ибо я уверен, что ни смерть, ни жизнь, ни Ангелы, ни Начала, ни Силы, ни настоящее, ни будущее,",
+        "NEO": "Car j’ai l’assurance que ni la mort, ni la vie, ni les anges, ni les principautés, ni les choses présentes, ni les choses à venir, ni les puissances,",
+        "NAB": "For I am convinced that neither death, nor life, nor angels, nor principalities, nor present things, nor future things, nor powers,",
+        "VAT_ES": "Porque tengo la certeza de que ni la muerte ni la vida, ni los ángeles ni los principados, ni lo presente ni lo futuro, ni los poderes espirituales,"
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "BYZ": "οὔτε ὕψωμα οὔτε βάθος οὔτε τις κτίσις ἑτέρα δυνήσεται ἡμᾶς χωρίσαι ἀπὸ τῆς ἀγάπης τοῦ θεοῦ τῆς ἐν χριστῷ Ἰησοῦ τῷ κυρίῳ ἡμῶν.",
+        "VUL": "neque altitudo, neque profundum, neque creatura alia poterit nos separare a caritate Dei, quæ est in Christo Jesu Domino nostro.",
+        "SYN": "ни высота, ни глубина, ни другая какая тварь не может отлучить нас от любви Божией во Христе Иисусе, Господе нашем.",
+        "NEO": "ni la hauteur, ni la profondeur, ni aucune autre créature ne pourra nous séparer de l’amour de Dieu dans le Christ Jésus Notre-Seigneur+ 8:39 Pensée : aucune puissance, quelle qu’elle soit, quelle que puisse la concevoir notre imagination, ne pourra faire que Dieu abandonne les justifiés, — si eux-mêmes ne l’abandonnent les premiers.*.",
+        "NAB": "nor height, nor depth, nor any other creature will be able to separate us from the love of God in Christ Jesus our Lord.",
+        "VAT_ES": "ni lo alto ni lo profundo, ni ninguna otra criatura podrá separarnos jamás del amor de Dios, manifestado en Cristo Jesús, nuestro Señor."
+      }
+    }
+  }
+}

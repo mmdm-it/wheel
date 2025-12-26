@@ -1,0 +1,752 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_022",
+  "book_key": "NUME",
+  "sequence": 22,
+  "chapter_in": {
+    "MT": 22,
+    "VUL": 22,
+    "LXX": 22
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ בְּנֵ֣י יִשְׂרָאֵ֑ל וַֽ/יַּחֲנוּ֙ בְּ/עַֽרְב֣וֹת מוֹאָ֔ב מֵ/עֵ֖בֶר לְ/יַרְדֵּ֥ן יְרֵחֽוֹ׃",
+        "LXX": "καὶ ἀπάραντες οἱ υἱοὶ Ἰσραὴλ παρενέβαλον ἐπὶ δυσμῶν Μωὰβ παρὰ τὸν Ἰορδάνην κατὰ Ἰερειχώ.",
+        "VUL": "Profectique castrametati sunt in campestribus Moab, ubi trans Jordanem Jericho sita est.",
+        "SYN": "И отправились сыны Израилевы, и остановились на равнинах Моава, при Иордане, против Иерихона.",
+        "NEO": "Les enfants d’Israël, étant partis, campèrent dans les plaines de Moab, au-delà du Jourdain, vis-à-vis de Jéricho. CINQUIÈME PARTIE DANS LES PLAINES DE MOAB.",
+        "NAB": "Then the Israelites moved on and encamped in the plains of Moab on the other side of the Jericho stretch of the Jordan.",
+        "VAT_ES": "Luego los israelitas reanudaron la marcha y fueron a acampar en las estepas de Moab, el otro lado del Jordán, a la altura de Jericó.",
+        "CEI": "Poi gli Israeliti partirono e si accamparono nelle steppe di Moab, oltre il Giordano verso Gerico."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥רְא בָּלָ֖ק בֶּן צִפּ֑וֹר אֵ֛ת כָּל אֲשֶׁר עָשָׂ֥ה יִשְׂרָאֵ֖ל לָֽ/אֱמֹרִֽי׃",
+        "LXX": "Καὶ ἰδὼν Βαλὰκ υἱὸς Σεπφὼρ πάντα ὅσα ἐποίησεν Ἰσραὴλ τῷ Ἀμορραίῳ,",
+        "VUL": "Videns autem Balac filius Sephor omnia quæ fecerat Israël Amorrhæo,",
+        "SYN": "И видел Валак, сын Сепфоров, все, что сделал Израиль Аморреям;",
+        "NEO": "Balac, fils de Séphor, vit tout ce qu’Israël avait fait aux Amorrhéens ;",
+        "NAB": "Now Balak, son of Zippor, saw all that Israel did to the Amorites.",
+        "VAT_ES": "Balac, hijo de Sipor, vio todo lo que los israelitas habían hecho a los amorreos,",
+        "CEI": "Or Balak, figlio di Zippor, vide quanto Israele aveva fatto agli Amorrèi"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יָּ֨גָר מוֹאָ֜ב מִ/פְּנֵ֥י הָ/עָ֛ם מְאֹ֖ד כִּ֣י רַב ה֑וּא וַ/יָּ֣קָץ מוֹאָ֔ב מִ/פְּנֵ֖י בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐφοβήθη Μωὰβ τὸν λαὸν σφόδρα, ὅτι πολλοὶ ἦσαν· καὶ προσώχθισεν Μωὰβ ἀπὸ προσώπου υἱῶν Ἰσραήλ.",
+        "VUL": "et quod pertimuissent eum Moabitæ, et impetum ejus ferre non possent,",
+        "SYN": "и весьма боялись Моавитяне народа сего, потому что он был многочислен; и устрашились Моавитяне сынов Израилевых.",
+        "NEO": "et Moab fut très effrayé en face du peuple, car celui-ci était nombreux ; il fut saisi d’épouvante en face des enfants d’Israël.",
+        "NAB": "Indeed, Moab feared the Israelites greatly because of their numbers, and detested them.",
+        "VAT_ES": "y los moabitas sintieron un gran temor a la vista de ese pueblo tan numeroso. Atemorizados por la presencia de los israelitas,",
+        "CEI": "e Moab ebbe grande paura di questo popolo, che era così numeroso; Moab fu preso da spavento di fronte agli Israeliti."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר מוֹאָ֜ב אֶל זִקְנֵ֣י מִדְיָ֗ן עַתָּ֞ה יְלַחֲכ֤וּ הַ/קָּהָל֙ אֶת כָּל סְבִ֣יבֹתֵ֔י/נוּ כִּ/לְחֹ֣ךְ הַ/שּׁ֔וֹר אֵ֖ת יֶ֣רֶק הַ/שָּׂדֶ֑ה וּ/בָלָ֧ק בֶּן צִפּ֛וֹר מֶ֥לֶךְ לְ/מוֹאָ֖ב בָּ/עֵ֥ת הַ/הִֽוא׃",
+        "LXX": "καὶ εἶπεν Μωὰβ τῇ γερουσίᾳ Μαδιάμ Νῦν ἐκλίξει ἡ συναγωγὴ αὕτη πάντας τοὺς κύκλῳ ἡμῶν, ὡς ἐκλίξαι ὁ μόσχος τὰ χλωρὰ ἐκ τοῦ πεδίου. καὶ Βαλὰκ υἱὸς Σεπφὼρ βασιλεὺς Μωὰβ ἦν κατὰ τὸν καιρὸν ἐκεῖνον.",
+        "VUL": "dixit ad majores natu Madian : Ita delebit hic populus omnes, qui in nostris finibus commorantur, quomodo solet bos herbas usque ad radices carpere. Ipse erat eo tempore rex in Moab.",
+        "SYN": "И сказали Моавитяне старейшинам Мадиамским: этот народ поедает теперь все вокруг нас, как вол поедает траву полевую. Валак же, сын Сепфоров, был царем Моавитян в то время.",
+        "NEO": "Moab dit aux anciens de Madian : « Cette multitude va dévorer tout ce qui nous entoure, comme le bœuf dévore la verdure des champs. » — Balac, fils de Séphor était alors roi de Moab. —",
+        "NAB": "So Moab said to the elders of Midian, \"Soon this horde will devour all the country around us as an ox devours the grass of the field.\" And Balak, Zippor's son, who was king of Moab at that time,",
+        "VAT_ES": "los moabitas dijeron a los ancianos de Madián: «Ahora esta turba va a devorarlo todo a nuestro alrededor como un buey devora la hierba del campo». Entonces Balac, hijo de Sipor, que era rey de Moab en aquel tiempo,",
+        "CEI": "Quindi Moab disse agli anziani di Madian: \"Ora questa moltitudine divorerà quanto è intorno a noi, come il bue divora l'erba dei campi\". Balak, figlio di Zippor, era in quel tempo re di Moab."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֨ח מַלְאָכִ֜ים אֶל בִּלְעָ֣ם בֶּן בְּע֗וֹר פְּ֠תוֹרָ/ה אֲשֶׁ֧ר עַל הַ/נָּהָ֛ר אֶ֥רֶץ בְּנֵי עַמּ֖/וֹ לִ/קְרֹא ל֑/וֹ לֵ/אמֹ֗ר הִ֠נֵּה עַ֣ם יָצָ֤א מִ/מִּצְרַ֨יִם֙ הִנֵּ֤ה כִסָּה֙ אֶת עֵ֣ין הָ/אָ֔רֶץ וְ/ה֥וּא יֹשֵׁ֖ב מִ/מֻּלִֽ/י׃",
+        "LXX": "καὶ ἀπέστειλεν πρέσβεις πρὸς Βαλαὰμ υἱὸν Βεὼρ Φαθούρα, ὅ ἐστιν ἐπὶ τοῦ ποταμοῦ γῆς υἱῶν λαοῦ αὐτοῦ, καλέσαι αὐτὸν λέγων Ἰδοὺ λαὸς ἐξελήλυθεν ἐξ Αἰγύπτου, καὶ ἰδοὺ κατεκάλυψεν τὴν ὄψιν τῆς γῆς· καὶ οὗτος ἐνκάθηται ἐχόμενός μου.",
+        "VUL": "Misit ergo nuntios ad Balaam filium Beor ariolum, qui habitabat super flumen terræ filiorum Ammon, ut vocarent eum, et dicerent : Ecce egressus est populus ex Ægypto, qui operuit superficiem terræ, sedens contra me.",
+        "SYN": "И послал он послов к Валааму, сыну Веорову, в Пефор, который на реке _Евфрате,_ в земле сынов народа его, чтобы позвать его _и_ сказать: вот, народ вышел из Египта и покрыл лице земли, и живет он подле меня;",
+        "NEO": "Il envoya des messagers à Balaam, fils de Béor, à Péthor, qui est sur le Fleuve, dans le pays des fils de son peuple, pour l’appeler et lui dire : « Voici, un peuple est sorti d’Égypte ; il couvre la face de la terre, et il habite vis-à-vis de moi.",
+        "NAB": "sent messengers to Balaam, son of Beor, at Pethor on the Euphrates, in the land of the Amawites, summoning him with these words, \"A people has come here from Egypt who now cover the face of the earth and are settling down opposite us!",
+        "VAT_ES": "envió unos mensajeros a Balaam, hijo de Beor –que vivía en Petor, junto al Eufrates, en el país en Petor, junto al Eufrates, en el país de los descendientes de Amav– para que le hicieran esta invitación: «Un pueblo que salió de Egipto y cubrió toda la tierra se ha establecido frente a mí.",
+        "CEI": "Egli mandò messaggeri a Balaam, figlio di Beor, a Petor che sta sul fiume, nel paese dei figli di Amau, per chiamarlo e dirgli: \"Ecco un popolo è uscito dall'Egitto; ricopre la terra e si è stabilito di fronte a me;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/עַתָּה֩ לְכָ/ה נָּ֨א אָֽרָ/ה לִּ֜/י אֶת הָ/עָ֣ם הַ/זֶּ֗ה כִּֽי עָצ֥וּם הוּא֙ מִמֶּ֔/נִּי אוּלַ֤י אוּכַל֙ נַכֶּה בּ֔/וֹ וַ/אֲגָרְשֶׁ֖/נּוּ מִן הָ/אָ֑רֶץ כִּ֣י יָדַ֗עְתִּי אֵ֤ת אֲשֶׁר תְּבָרֵךְ֙ מְבֹרָ֔ךְ וַ/אֲשֶׁ֥ר תָּאֹ֖ר יוּאָֽר׃",
+        "LXX": "καὶ νῦν δεῦρο ἄρασαί μοι τὸν λαὸν τοῦτον, ὅτι ἰσχύει οὗτος ἢ ἡμεῖς, ἐὰν δυνώμεθα πατάξαι ἐξ αὐτῶν, καὶ ἐκβαλῶ αὐτοὺς ἐκ τῆς γῆς· ὅτι οἶδα οὓς ἐὰν εὐλογήσῃς σύ, εὐλόγηνται, καὶ οὓς ἐὰν καταράσῃ σύ, κεκατήρανται.",
+        "VUL": "Veni igitur, et maledic populo huic, quia fortior me est : si quomodo possim percutere et ejicere eum de terra mea. Novi enim quod benedictus sit cui benedixeris, et maledictus in quem maledicta congesseris.",
+        "SYN": "итак приди, прокляни мне народ сей, ибо он сильнее меня: может быть, я тогда буду в состоянии поразить его и выгнать его из земли; я знаю, что кого ты благословишь, тот благословен, и кого ты проклянешь, тот проклят.",
+        "NEO": "Viens donc, je te prie, maudis-moi ce peuple, car il est plus puissant que moi ; peut-être ainsi pourrai-je le battre et le jeter hors du pays ; car je sais que celui que tu bénis est béni, et que celui que tu maudis est maudit. »",
+        "NAB": "Please come and curse this people for us; they are stronger than we are. We may then be able to defeat them and drive them out of the country. For I know that whoever you bless is blessed and whoever you curse is cursed.\"",
+        "VAT_ES": "Ven, por favor, y maldíceme a este pueblo, porque es más fuerte que yo. Tal vez así podré derrotarlo y expulsarlo del país. Porque yo sé que el que tú bendices, queda bendecido, y el que maldices, queda maldecido».",
+        "CEI": "ora dunque, vieni e maledicimi questo popolo; poiché è troppo potente per me; forse così riusciremo a sconfiggerlo e potrò scacciarlo dal paese; so infatti che chi tu benedici è benedetto e chi tu maledici è maledetto\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨לְכ֜וּ זִקְנֵ֤י מוֹאָב֙ וְ/זִקְנֵ֣י מִדְיָ֔ן וּ/קְסָמִ֖ים בְּ/יָדָ֑/ם וַ/יָּבֹ֨אוּ֙ אֶל בִּלְעָ֔ם וַ/יְדַבְּר֥וּ אֵלָ֖י/ו דִּבְרֵ֥י בָלָֽק׃",
+        "LXX": "καὶ ἐπορεύθη ἡ γερουσία Μωὰβ καὶ ἡ γερουσία Μαδιάμ, καὶ τὰ μαντεῖα ἐν ταῖς χερσὶν αὐτῶν· καὶ ἦλθον πρὸς Βαλαὰμ καὶ εἶπαν αὐτῷ τὰ ῥήματα Βαλάκ.",
+        "VUL": "Perrexeruntque seniores Moab, et majores natu Madian, habentes divinationis pretium in manibus. Cumque venissent ad Balaam, et narrassent ei omnia verba Balac,",
+        "SYN": "И пошли старейшины Моавитские и старейшины Мадиамские, с подарками в руках за волхвование, и пришли к Валааму, и пересказали ему слова Валаковы.",
+        "NEO": "Les anciens de Moab et les anciens de Madian se mirent en route, emportant avec eux le salaire du devin. Arrivés auprès de Balaam, ils lui rapportèrent les paroles de Balac.",
+        "NAB": "Then the elders of Moab and of Midian left with the divination fee in hand and went to Balaam. When they had given him Balak's message,",
+        "VAT_ES": "Los ancianos de Moab y de Madián partieron, llevando la retribución para el adivino. Cuando se presentaron a Balaam y le transmitieron el mensaje de Balac,",
+        "CEI": "Gli anziani di Moab e gli anziani di Madian partirono portando in mano il salario dell'indovino; arrivati da Balaam, gli riferirono le parole di Balak."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֲלֵי/הֶ֗ם לִ֤ינוּ פֹה֙ הַ/לַּ֔יְלָה וַ/הֲשִׁבֹתִ֤י אֶתְ/כֶם֙ דָּבָ֔ר כַּ/אֲשֶׁ֛ר יְדַבֵּ֥ר יְהוָ֖ה אֵלָ֑/י וַ/יֵּשְׁב֥וּ שָׂרֵֽי מוֹאָ֖ב עִם בִּלְעָֽם׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτούς Καταλύσατε αὐτοῦ τὴν νύκτα, καὶ ἀποκριθήσομαι ὑμῖν πράγματα ἃ ἐὰν λαλήσῃ Κύριος πρὸς μέ. καὶ κατέμειναν οἱ ἄρχοντες Μωὰβ παρὰ Βαλαάμ.",
+        "VUL": "ille respondit : Manete hic nocte, et respondebo quidquid mihi dixerit Dominus. Manentibus illis apud Balaam, venit Deus, et ait ad eum :",
+        "SYN": "И сказал он им: переночуйте здесь ночь, и дам вам ответ, как скажет мне Господь. И остались старейшины Моавитские у Валаама.",
+        "NEO": "Balaam leur dit : « Passez ici la nuit, et je vous donnerai réponse, selon ce que \\+w Yahweh|strong=\"H3068\"\\+w** me dira. » Et les princes de Moab restèrent chez Balaam.",
+        "NAB": "he said to them in reply, \"Stay here overnight, and I will give you whatever answer the LORD gives me.\" So the princes of Moab lodged with Balaam.",
+        "VAT_ES": "Balaam les respondió: «Pasen aquí la noche, y yo les daré la respuesta que el Señor me inspire». Entonces los jefes de Moab se quedaron con Balaam.",
+        "CEI": "Balaam disse loro: \"Alloggiate qui stanotte e vi darò la risposta secondo quanto mi dirà il Signore\". I capi di Moab si fermarono da Balaam."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֥א אֱלֹהִ֖ים אֶל בִּלְעָ֑ם וַ/יֹּ֕אמֶר מִ֛י הָ/אֲנָשִׁ֥ים הָ/אֵ֖לֶּה עִמָּֽ/ךְ׃",
+        "LXX": "καὶ ἦλθεν ὁ θεὸς παρὰ Βαλαὰμ καὶ εἶπεν αὐτῷ Τί οἱ ἄνθρωποι οὗτοι παρὰ σοί;",
+        "VUL": "Quid sibi volunt homines isti apud te ?",
+        "SYN": "И пришел Бог к Валааму и сказал: какие это люди у тебя?",
+        "NEO": "Dieu vint à Balaam et lui dit : « Qui sont ces hommes que tu as chez toi ? »",
+        "NAB": "Then God came to Balaam and said, \"Who are these men visiting you?\"",
+        "VAT_ES": "Pero Dios se manifestó a Balaam y le dijo: «&iquest;Quiénes son esos hombres que están contigo?».",
+        "CEI": "Ora Dio venne a Balaam e gli disse: \"Chi sono questi uomini che stanno da te?\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר בִּלְעָ֖ם אֶל הָ/אֱלֹהִ֑ים בָּלָ֧ק בֶּן צִפֹּ֛ר מֶ֥לֶךְ מוֹאָ֖ב שָׁלַ֥ח אֵלָֽ/י׃",
+        "LXX": "καὶ εἶπεν Βαλαὰμ πρὸς τὸν θεόν Βαλὰκ υἱὸς Σεπφὼρ βασιλεὺς Μωὰβ ἀπέστειλεν αὐτοὺς πρὸς μὲ λέγων",
+        "VUL": "Respondit : Balac filius Sephor rex Moabitarum misit ad me,",
+        "SYN": "Валаам сказал Богу: Валак, сын Сепфоров, царь Моавитский, прислал [их] ко мне [сказать]:",
+        "NEO": "Balaam répondit à Dieu : « Balac, fils de Séphor, roi de Moab, les a envoyés pour me dire :",
+        "NAB": "Balaam answered God, \"Balak, son of Zippor, king of Moab, sent me the message:",
+        "VAT_ES": "Balaam respondió a Dios: «Balac, hijo de Sipor, rey de Moab, me envió este mensaje:",
+        "CEI": "Balaam rispose a Dio: \"Balak, figlio di Zippor, re di Moab, mi ha mandato a dire:"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "הִנֵּ֤ה הָ/עָם֙ הַ/יֹּצֵ֣א מִ/מִּצְרַ֔יִם וַ/יְכַ֖ס אֶת עֵ֣ין הָ/אָ֑רֶץ עַתָּ֗ה לְכָ֤/ה קָֽבָ/ה לִּ/י֙ אֹת֔/וֹ אוּלַ֥י אוּכַ֛ל לְ/הִלָּ֥חֶם בּ֖/וֹ וְ/גֵרַשְׁתִּֽי/ו׃",
+        "LXX": "Ἰδοὺ λαὸς ἐξελήλυθεν ἐξ Αἰγύπτου, καὶ ἰδοὺ κεκάλυφεν τὴν ὄψιν τῆς γῆς, καὶ οὗτος ἐνκάθηται ἐχόμενός μου· καὶ νῦν δεῦρο ἄρασαί μοι αὐτόν, εἰ ἄρα δυνήσομαι πατάξαι αὐτὸν καὶ ἐκβαλῶ αὐτὸν ἀπὸ τῆς γῆς.",
+        "VUL": "dicens : Ecce populus qui egressus est de Ægypto, operuit superficiem terræ : veni, et maledic ei, si quomodo possim pugnans abigere eum.",
+        "SYN": "вот, народ вышел из Египта и покрыл лице земли, [и живет подле меня]; итак приди, прокляни мне его; может быть я тогда буду в состоянии сразиться с ним и выгнать его [из земли].",
+        "NEO": "Voici, le peuple qui est sorti d’Égypte couvre la face de la terre ; viens donc, maudis-le-moi ; peut-être ainsi pourrai-je le combattre et le chasser. »",
+        "NAB": "'This people that came here from Egypt now cover the face of the earth. Please come and lay a curse on them for us; we may then be able to give them battle and drive them out.'\"",
+        "VAT_ES": "«Aquí hay un pueblo que salió de Egipto y cubrió toda la tierra. Por eso, ven a maldecírmelo. Tal vez así podré combatir contra él y expulsarlo».",
+        "CEI": "Ecco, il popolo che è uscito dall'Egitto, ricopre la terra; ora vieni a maledirmelo; forse riuscirò così a batterlo e potrò scacciarlo\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֱלֹהִים֙ אֶל בִּלְעָ֔ם לֹ֥א תֵלֵ֖ךְ עִמָּ/הֶ֑ם לֹ֤א תָאֹר֙ אֶת הָ/עָ֔ם כִּ֥י בָר֖וּךְ הֽוּא׃",
+        "LXX": "καὶ εἶπεν ὁ θεὸς πρὸς Βαλαάμ Οὐ πορεύσῃ μετ’ αὐτῶν οὐδὲ καταράσῃ τὸν λαόν· ἔστιν γὰρ εὐλογημένος.",
+        "VUL": "Dixitque Deus ad Balaam : Noli ire cum eis, neque maledicas populo : quia benedictus est.",
+        "SYN": "И сказал Бог Валааму: не ходи с ними, не проклинай народа сего, ибо он благословен.",
+        "NEO": "Dieu dit à Balaam : « Tu n’iras pas avec eux ; tu ne maudiras pas ce peuple, car il est béni. »",
+        "NAB": "But God said to Balaam, \"Do not go with them and do not curse this people, for they are blessed.\"",
+        "VAT_ES": "Dios dijo a Balaam: «No vayas con ellos ni maldigas a ese pueblo, porque está bendecido».",
+        "CEI": "Dio disse a Balaam: \"Tu non andrai con loro, non maledirai quel popolo, perché esso è benedetto\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יָּ֤קָם בִּלְעָם֙ בַּ/בֹּ֔קֶר וַ/יֹּ֨אמֶר֙ אֶל שָׂרֵ֣י בָלָ֔ק לְכ֖וּ אֶֽל אַרְצְ/כֶ֑ם כִּ֚י מֵאֵ֣ן יְהוָ֔ה לְ/תִתִּ֖/י לַ/הֲלֹ֥ךְ עִמָּ/כֶֽם׃",
+        "LXX": "καὶ ἀναστὰς Βαλαὰμ τὸ πρωὶ εἶπεν τοῖς ἄρχουσιν Βαλάκ Ἀποτρέχετε πρὸς τὸν κύριον ὑμῶν· οὐκ ἀφίησίν με ὁ θεὸς πορεύεσθαι μεθ’ ὑμῶν.",
+        "VUL": "Qui mane consurgens dixit ad principes : Ite in terram vestram, quia prohibuit me Dominus venire vobiscum.",
+        "SYN": "И встал Валаам поутру и сказал князьям Валаковым: пойдите в землю вашу, ибо не хочет Господь позволить мне идти с вами.",
+        "NEO": "Le matin, Balaam, s’étant levé, dit aux princes de Balac : « Allez dans votre pays, car \\+w Yahweh|strong=\"H3068\"\\+w** refuse de me laisser aller avec vous. »",
+        "NAB": "The next morning Balaam arose and told the princes of Balak, \"Go back to your own country, for the LORD has refused to let me go with you.\"",
+        "VAT_ES": "A la mañana siguiente, Balaam se levantó y dijo a los jefes enviados por Balac: «Vuélvanse a su país, porque el Señor me prohíbe acompañarlos».",
+        "CEI": "Balaam si alzò la mattina e disse ai capi di Balak: \"Andatevene al vostro paese, perché il Signore si è rifiutato di lasciarmi venire con voi\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יָּק֨וּמוּ֙ שָׂרֵ֣י מוֹאָ֔ב וַ/יָּבֹ֖אוּ אֶל בָּלָ֑ק וַ/יֹּ֣אמְר֔וּ מֵאֵ֥ן בִּלְעָ֖ם הֲלֹ֥ךְ עִמָּֽ/נוּ׃",
+        "LXX": "καὶ ἀναστάντες οἱ ἄρχοντες Μωὰβ ἦλθον πρὸς Βαλὰκ καὶ εἶπαν Οὐ θέλει Βαλαὰμ πορευθῆναι μεθ’ ἡμῶν.",
+        "VUL": "Reversi principes dixerunt ad Balac : Noluit Balaam venire nobiscum.",
+        "SYN": "И встали князья Моавитские, и пришли к Валаку, и сказали [ему]: не согласился Валаам идти с нами.",
+        "NEO": "Alors les princes de Moab se levèrent et retournèrent vers Balac, et ils dirent : « Balaam a refusé de venir avec nous. »",
+        "NAB": "So the princes of Moab went back to Balak with the report, \"Balaam refused to come with us.\"",
+        "VAT_ES": "Entonces los jefes de Moab partieron, y cuando estuvieron de regreso dijeron a Balac: «Balaam se niega a venir con nosotros».",
+        "CEI": "I capi di Moab si alzarono, tornarono da Balak e dissero: \"Balaam si è rifiutato di venire con noi\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥סֶף ע֖וֹד בָּלָ֑ק שְׁלֹ֣חַ שָׂרִ֔ים רַבִּ֥ים וְ/נִכְבָּדִ֖ים מֵ/אֵֽלֶּה׃",
+        "LXX": "καὶ προσέθετο Βαλὰκ ἔτι ἀποστεῖλαι ἄρχοντας πλείους καὶ ἐντιμοτέρους τούτων.",
+        "VUL": "Rursum ille multo plures et nobiliores quam ante miserat, misit.",
+        "SYN": "Валак послал еще князей, более и знаменитее тех.",
+        "NEO": "Balac envoya de nouveau des princes en plus grand nombre et de plus haut rang que les premiers.",
+        "NAB": "Balak again sent princes, who were more numerous and more distinguished than the others.",
+        "VAT_ES": "Entonces Balac envió otros jefes, más numerosos y distinguidos que los primeros.",
+        "CEI": "Allora Balak mandò di nuovo i capi, in maggior numero e più influenti di quelli di prima."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֖אוּ אֶל בִּלְעָ֑ם וַ/יֹּ֣אמְרוּ ל֗/וֹ כֹּ֤ה אָמַר֙ בָּלָ֣ק בֶּן צִפּ֔וֹר אַל נָ֥א תִמָּנַ֖ע מֵ/הֲלֹ֥ךְ אֵלָֽ/י׃",
+        "LXX": "καὶ ἦλθον πρὸς Βαλαὰμ καὶ λέγουσιν αὐτῷ Τάδε λέγει Βαλὰκ ὁ τοῦ Σεπφώρ Ἀξιῶ σε, μὴ ὀκνήσῃς ἐλθεῖν πρὸς μέ.",
+        "VUL": "Qui cum venissent ad Balaam, dixerunt : Sic dicit Balac filius Sephor : Ne cuncteris venire ad me :",
+        "SYN": "И пришли они к Валааму и сказали ему: так говорит Валак, сын Сепфоров: не откажись придти ко мне;",
+        "NEO": "Arrivés auprès de Balaam, ils lui dirent : « Ainsi parle Balac, fils de Séphor : « Que rien, je te prie, ne t’empêche de venir vers moi ;",
+        "NAB": "On coming to Balaam they told him, \"This is what Balak, son of Zippor, has to say: Please do not refuse to come to me.",
+        "VAT_ES": "Ellos se presentaron a Balaam y le dijeron: «Así habla Balac, hijo de Sipor: «Por favor, no te niegues a venir en mi ayuda.",
+        "CEI": "Vennero da Balaam e gli dissero: \"Così dice Balak, figlio di Zippor: Nulla ti trattenga dal venire da me;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כִּֽי כַבֵּ֤ד אֲכַבֶּדְ/ךָ֙ מְאֹ֔ד וְ/כֹ֛ל אֲשֶׁר תֹּאמַ֥ר אֵלַ֖/י אֶֽעֱשֶׂ֑ה וּ/לְכָ/ה נָּא֙ קָֽבָ/ה לִּ֔/י אֵ֖ת הָ/עָ֥ם הַ/זֶּֽה׃",
+        "LXX": "ἐντίμως γὰρ τιμήσω σε, καὶ ὅσα ἐὰν εἴπῃς ποιήσω σοι· καὶ δεῦρο ἐπικατάρασαί μοι τὸν λαὸν τοῦτον.",
+        "VUL": "paratus sum honorare te, et quidquid volueris, dabo tibi : veni, et maledic populo isti.",
+        "SYN": "я окажу тебе великую почесть и сделаю [тебе] все, что ни скажешь мне; приди же, прокляни мне народ сей.",
+        "NEO": "car je te rendrai les plus grands honneurs, et je ferai tout ce que tu me diras. Mais viens, je te prie ; maudis-moi ce peuple. »",
+        "NAB": "I will reward you very handsomely and will do anything you ask of me. Please come and lay a curse on this people for me.\"",
+        "VAT_ES": "Yo te colmaré de honores y haré todo lo que me digas. Te ruego que vengas y me maldigas a este pueblo».",
+        "CEI": "perché io ti colmerò di onori e farò quanto mi dirai; vieni dunque e maledicimi questo popolo\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַן בִּלְעָ֗ם וַ/יֹּ֨אמֶר֙ אֶל עַבְדֵ֣י בָלָ֔ק אִם יִתֶּן לִ֥/י בָלָ֛ק מְלֹ֥א בֵית֖/וֹ כֶּ֣סֶף וְ/זָהָ֑ב לֹ֣א אוּכַ֗ל לַ/עֲבֹר֙ אֶת פִּי֙ יְהוָ֣ה אֱלֹהָ֔/י לַ/עֲשׂ֥וֹת קְטַנָּ֖ה א֥וֹ גְדוֹלָֽה׃",
+        "LXX": "καὶ ἀπεκρίθη Βαλαὰμ καὶ εἶπεν τοῖς ἄρχουσιν Βαλάκ Ἐὰν δῷ μοι Βαλὰκ πλήρη τὸν οἶκον αὐτοῦ ἀργυρίου καὶ χρυσίου, οὐ δυνήσομαι παραβῆναι τὸ ῥῆμα Κυρίου τοῦ θεοῦ, ποιῆσαι αὐτὸ μικρὸν ἢ μέγα ἐν τῇ διανοίᾳ μου.",
+        "VUL": "Respondit Balaam : Si dederit mihi Balac plenam domum suam argenti et auri, non potero immutare verbum Domini Dei mei, ut vel plus, vel minus loquar.",
+        "SYN": "И отвечал Валаам и сказал рабам Валаковым: хотя бы Валак давал мне полный свой дом серебра и золота, не могу преступить повеления Господа, Бога моего, и сделать что-либо малое или великое [по своему произволу];",
+        "NEO": "Balaam répondit et dit aux serviteurs de Balac : « Quand Balac me donnerait plein sa maison d’argent et d’or, je ne pourrai transgresser l’ordre de \\+w Yahweh|strong=\"H3068\"\\+w** mon Dieu, en faisant une chose, petite ou grande.",
+        "NAB": "But Balaam replied to Balak's officials, \"Even if Balak gave me his house full of silver and gold, I could not do anything, small or great, contrary to the command of the LORD, my God.",
+        "VAT_ES": "Pero Balaam respondió a los servidores de Balac: «Aunque Balac me diera su casa llena de planta y oro, yo no podría transgredir, ni siguiera en lo más mínimo, una orden del Señor, mi Dios.",
+        "CEI": "Ma Balaam rispose e disse ai ministri di Balak: \"Quand'anche Balak mi desse la sua casa piena d'argento e oro, non potrei trasgredire l'ordine del Signore, mio Dio, per fare cosa piccola o grande."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה שְׁב֨וּ נָ֥א בָ/זֶ֛ה גַּם אַתֶּ֖ם הַ/לָּ֑יְלָה וְ/אֵ֣דְעָ֔ה מַה יֹּסֵ֥ף יְהוָ֖ה דַּבֵּ֥ר עִמִּֽ/י׃",
+        "LXX": "καὶ νῦν ὑπομείνατε αὐτοῦ καὶ ὑμεῖς τὴν νύκτα ταύτην, καὶ γνώσομαι τί προσθήσει Κύριος λαλῆσαι πρὸς μέ.",
+        "VUL": "Obsecro ut hic maneatis etiam hac nocte, et scire queam quid mihi rursum respondeat Dominus.",
+        "SYN": "впрочем, останьтесь здесь и вы на ночь, и я узнаю, что еще скажет мне Господь.",
+        "NEO": "Maintenant, je vous prie, restez ici, vous aussi, cette nuit, que je sache ce que \\+w Yahweh|strong=\"H3068\"\\+w** me dira encore. »",
+        "NAB": "But, you too shall stay here overnight, till I learn what else the LORD may tell me.\"",
+        "VAT_ES": "Con todo, quédense aquí también ustedes esta noche, y veré qué me dice el Señor esta vez».",
+        "CEI": "Nondimeno, trattenetevi qui anche voi stanotte, perché io sappia ciò che il Signore mi dirà ancora\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֨א אֱלֹהִ֥ים אֶל בִּלְעָם֮ לַיְלָה֒ וַ/יֹּ֣אמֶר ל֗/וֹ אִם לִ/קְרֹ֤א לְ/ךָ֙ בָּ֣אוּ הָ/אֲנָשִׁ֔ים ק֖וּם לֵ֣ךְ אִתָּ֑/ם וְ/אַ֗ךְ אֶת הַ/דָּבָ֛ר אֲשֶׁר אֲדַבֵּ֥ר אֵלֶ֖י/ךָ אֹת֥/וֹ תַעֲשֶֽׂה׃",
+        "LXX": "καὶ ἦλθεν ὁ θεὸς πρὸς Βαλαὰμ καὶ εἶπεν αὐτῷ Εἰ καλέσαι σε πάρεισιν οἱ ἄνθρωποι οὗτοι, ἀναστὰς ἀκολούθησον αὐτοῖς· ἀλλὰ τὸ ῥῆμα ὃ ἂν λαλήσω πρὸς σέ, τοῦτο ποιήσεις.",
+        "VUL": "Venit ergo Deus ad Balaam nocte, et ait ei : Si vocare te venerunt homines isti, surge, et vade cum eis : ita dumtaxat, ut quod tibi præcepero, facias.",
+        "SYN": "И пришел Бог к Валааму ночью и сказал ему: если люди сии пришли звать тебя, встань, пойди с ними; но только делай то, что Я буду говорить тебе.",
+        "NEO": "Dieu vint à Balaam dans la nuit, et lui dit : « Si ces hommes sont venus pour t’appeler, lève-toi et va avec eux ; mais tu feras ce que je te dirai. »",
+        "NAB": "That night God came to Balaam and said to him, \"If these men have come to summon you, you may go with them; yet only on the condition that you do exactly as I tell you.\"",
+        "VAT_ES": "Durante la noche, Dios se manifestó a Balaam y le dijo: «Si esta gente ha venido a buscarte, puedes ir con ellos. Pero no hagas nada fuera de lo que yo te ordene».",
+        "CEI": "Dio venne la notte a Balaam e gli disse: \"Se quegli uomini sono venuti a chiamarti, alzati e và con loro; ma farai ciò che io ti dirò\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יָּ֤קָם בִּלְעָם֙ בַּ/בֹּ֔קֶר וַֽ/יַּחֲבֹ֖שׁ אֶת אֲתֹנ֑/וֹ וַ/יֵּ֖לֶךְ עִם שָׂרֵ֥י מוֹאָֽב׃",
+        "LXX": "καὶ ἀναστὰς Βαλαὰμ τὸ πρωὶ ἐπέσαξεν τὴν ὄνον αὐτοῦ, καὶ ἐπορεύθη μετὰ τῶν ἀρχόντων Μωάβ.",
+        "VUL": "Surrexit Balaam mane, et strata asina sua profectus est cum eis.",
+        "SYN": "Валаам встал поутру, оседлал ослицу свою и пошел с князьями Моавитскими.",
+        "NEO": "Balaam se leva le matin et, ayant sellé son ânesse, il partit avec les princes de Moab.",
+        "NAB": "So the next morning when Balaam arose, he saddled his ass, and went off with the princes of Moab.",
+        "VAT_ES": "Por la mañana, Balaam se levantó, ensilló su asna y partió junto con los jefes de Moab.",
+        "CEI": "Balaam quindi si alzò la mattina, sellò l'asina e se ne andò con i capi di Moab."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּֽחַר אַ֣ף אֱלֹהִים֮ כִּֽי הוֹלֵ֣ךְ הוּא֒ וַ/יִּתְיַצֵּ֞ב מַלְאַ֧ךְ יְהוָ֛ה בַּ/דֶּ֖רֶךְ לְ/שָׂטָ֣ן ל֑/וֹ וְ/הוּא֙ רֹכֵ֣ב עַל אֲתֹנ֔/וֹ וּ/שְׁנֵ֥י נְעָרָ֖י/ו עִמּֽ/וֹ׃",
+        "LXX": "καὶ ὠργίσθη θυμῷ ὁ θεὸς ὅτι ἐπορεύθη αὐτός, καὶ ἀνέστη ὁ ἄγγελος τοῦ θεοῦ ἐνδιαβαλεῖν αὐτόν· καὶ αὐτὸς ἐπιβεβήκει ἐπὶ τῆς ὄνου αὐτοῦ, καὶ δύο παῖδες αὐτοῦ μετ’ αὐτοῦ.",
+        "VUL": "Et iratus est Deus. Stetitque angelus Domini in via contra Balaam, qui insidebat asinæ, et duos pueros habebat secum.",
+        "SYN": "И воспылал гнев Божий за то, что он пошел, и стал Ангел Господень на дороге, чтобы воспрепятствовать ему. Он ехал на ослице своей и с ними двое слуг его.",
+        "NEO": "La colère de Dieu s’alluma parce qu’il allait, et l’ange de \\+w Yahweh|strong=\"H3068\"\\+w** se plaça sur le chemin, pour lui faire obstacle. — Balaam était monté sur son ânesse, et il avait avec lui ses deux serviteurs. —",
+        "NAB": "But now the anger of God flared up at him for going, and the angel of the LORD stationed himself on the road to hinder him as he was riding along on his ass, accompanied by two of his servants.",
+        "VAT_ES": "Pero su partida encendió la ira de Dios, y el Angel del Señor se interpuso en el camino para cerrarle el paso. Balaam iba montado en su asna y lo acompañaban dos muchachos.",
+        "CEI": "Ma l'ira di Dio si accese perché egli era andato; l'angelo del Signore si pose sulla strada per ostacolarlo. Egli cavalcava l'asina e aveva con sé due servitori."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֣רֶא הָ/אָתוֹן֩ אֶת מַלְאַ֨ךְ יְהוָ֜ה נִצָּ֣ב בַּ/דֶּ֗רֶךְ וְ/חַרְבּ֤/וֹ שְׁלוּפָה֙ בְּ/יָד֔/וֹ וַ/תֵּ֤ט הָֽ/אָתוֹן֙ מִן הַ/דֶּ֔רֶךְ וַ/תֵּ֖לֶךְ בַּ/שָּׂדֶ֑ה וַ/יַּ֤ךְ בִּלְעָם֙ אֶת הָ֣/אָת֔וֹן לְ/הַטֹּתָ֖/הּ הַ/דָּֽרֶךְ׃",
+        "LXX": "καὶ ἰδοῦσα ἡ ὄνος τὸν ἄγγελον τοῦ θεοῦ ἀνθεστηκότα ἐν τῇ ὁδῷ καὶ τὴν ῥομφαίαν ἐσπασμένην ἐν τῇ χειρὶ αὐτοῦ, καὶ ἐξέκλινεν ἡ ὄνος ἐκ τῆς ὁδοῦ αὐτῆς καὶ ἐπορεύετο εἰς τὸ πεδίον· καὶ ἐπάταξεν τὴν ὄνον τῇ ῥάβδῳ, τοῦ εὐθῦναι αὐτὴν ἐν τῇ ὁδῷ.",
+        "VUL": "Cernens asina angelum stantem in via, evaginato gladio, avertit se de itinere, et ibat per agrum. Quam cum verberaret Balaam, et vellet ad semitam reducere,",
+        "SYN": "И увидела ослица Ангела Господня, стоящего на дороге с обнаженным мечом в руке, и своротила ослица с дороги, и пошла на поле; а Валаам стал бить ослицу, чтобы возвратить ее на дорогу.",
+        "NEO": "L’ânesse vit l’ange de \\+w Yahweh|strong=\"H3068\"\\+w** qui se tenait sur le chemin, son épée nue à la main ; elle se détourna du chemin et alla dans les champs ; et Balaam frappa l’ânesse pour la ramener dans le chemin.",
+        "NAB": "When the ass saw the angel of the LORD standing on the road with sword drawn, she turned off the road and went into the field, and Balaam had to beat her to bring her back on the road.",
+        "VAT_ES": "Cuando el asna vio al Angel del Señor parado en el camino, con la espada desenvainada en su mano, se apartó y se fue por el campo. Pero Balaam la castigó para hacerla volver al camino.",
+        "CEI": "L'asina, vedendo l'angelo del Signore che stava sulla strada con la spada sguainata in mano, deviò dalla strada e cominciò ad andare per i campi. Balaam percosse l'asina per rimetterla sulla strada."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַֽ/יַּעֲמֹד֙ מַלְאַ֣ךְ יְהוָ֔ה בְּ/מִשְׁע֖וֹל הַ/כְּרָמִ֑ים גָּדֵ֥ר מִ/זֶּ֖ה וְ/גָדֵ֥ר מִ/זֶּֽה׃",
+        "LXX": "καὶ ἔστη ὁ ἄγγελος τοῦ θεοῦ ἐν ταῖς αὔλαξιν τῶν ἀμπέλων, φραγμὸς ἐντεῦθεν καὶ φραγμὸς ἐντεῦθεν·",
+        "VUL": "stetit angelus in angustiis duarum maceriarum, quibus vineæ cingebantur.",
+        "SYN": "И стал Ангел Господень на узкой дороге, между виноградниками, _где_ с одной стороны стена и с другой стороны стена.",
+        "NEO": "Alors l’ange de \\+w Yahweh|strong=\"H3068\"\\+w** se tint dans un chemin creux entre les vignes, où il y avait une clôture de chaque côté.",
+        "NAB": "Then the angel of the LORD took his stand in a narrow lane between vineyards with a stone wall on each side.",
+        "VAT_ES": "El Angel del Señor se paró entonces en un sendero angosto, que pasaba por los viñedos y estaba rodeado de los dos lados por un cerco.",
+        "CEI": "Allora l'angelo del Signore si fermò in un sentiero infossato tra le vigne, che aveva un muro di qua e un muro di là."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֨רֶא הָ/אָת֜וֹן אֶת מַלְאַ֣ךְ יְהוָ֗ה וַ/תִּלָּחֵץ֙ אֶל הַ/קִּ֔יר וַ/תִּלְחַ֛ץ אֶת רֶ֥גֶל בִּלְעָ֖ם אֶל הַ/קִּ֑יר וַ/יֹּ֖סֶף לְ/הַכֹּתָֽ/הּ׃",
+        "LXX": "καὶ ἰδοῦσα ἡ ὄνος τὸν ἄγγελον τοῦ θεοῦ προσέθλιψεν αὐτὸν πρὸς τὸν τοῖχον, καὶ ἀπέθλιψεν τὸν πόδα Βαλαάμ, καὶ προσέθετο ἔτι μαστίξαι αὐτήν.",
+        "VUL": "Quem videns asina, junxit se parieti, et attrivit sedentis pedem. At ille iterum verberabat eam :",
+        "SYN": "Ослица, увидев Ангела Господня, прижалась к стене и прижала ногу Валаамову к стене; и он опять стал бить ее.",
+        "NEO": "Voyant l’ange de \\+w Yahweh|strong=\"H3068\"\\+w**, l’ânesse se serra contre le mur, et pressa contre le mur le pied de Balaam, et celui-ci la frappa de nouveau.",
+        "NAB": "When the ass saw the angel of the LORD there, she shrank against the wall; and since she squeezed Balaam's leg against it, he beat her again.",
+        "VAT_ES": "Al verlo, el asna se fue contra el cerco y apretó el pie de Balaam que la castigó nuevamente.",
+        "CEI": "L'asina vide l'angelo del Signore, si serrò al muro e strinse il piede di Balaam contro il muro e Balaam la percosse di nuovo."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יּ֥וֹסֶף מַלְאַךְ יְהוָ֖ה עֲב֑וֹר וַֽ/יַּעֲמֹד֙ בְּ/מָק֣וֹם צָ֔ר אֲשֶׁ֛ר אֵֽין דֶּ֥רֶךְ לִ/נְט֖וֹת יָמִ֥ין וּ/שְׂמֹֽאול׃",
+        "LXX": "καὶ προσέθετο ὁ ἄγγελος τοῦ θεοῦ καὶ ἀπελθὼν ὑπέστη ἐν τόπῳ στενῷ, εἰς ὃν οὐκ ἦν ἐκκλῖναι δεξιὰν οὐδὲ ἀριστεράν.",
+        "VUL": "et nihilominus angelus ad locum angustum transiens, ubi nec ad dexteram, nec ad sinistram poterat deviare, obvius stetit.",
+        "SYN": "Ангел Господень опять перешел и стал в тесном месте, где некуда своротить, ни направо, ни налево.",
+        "NEO": "L’ange de \\+w Yahweh|strong=\"H3068\"\\+w** passa plus loin et se tint dans un lieu étroit où il n’y avait pas d’espace pour se détourner à droite ou à gauche.",
+        "NAB": "The angel of the LORD then went ahead, and stopped next in a passage so narrow that there was no room to move either to the right or to the left.",
+        "VAT_ES": "Una vez más, el Angel del Señor se adelantó y fue a colocarse en un lugar tan estrecho, que imposible desviarse a la derecha o a la izquierda.",
+        "CEI": "L'angelo del Signore passò di nuovo più avanti e si fermò in un luogo stretto, tanto stretto che non vi era modo di ritirarsi né a destra, né a sinistra."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֤רֶא הָֽ/אָתוֹן֙ אֶת מַלְאַ֣ךְ יְהוָ֔ה וַ/תִּרְבַּ֖ץ תַּ֣חַת בִּלְעָ֑ם וַ/יִּֽחַר אַ֣ף בִּלְעָ֔ם וַ/יַּ֥ךְ אֶת הָ/אָת֖וֹן בַּ/מַּקֵּֽל׃",
+        "LXX": "καὶ ἰδοῦσα ἡ ὄνος τὸν ἄγγελον τοῦ θεοῦ συνεκάθισεν ὑποκάτω Βαλαάμ· καὶ ἐθυμώθη Βαλαὰμ καὶ ἔτυπτεν τὴν ὄνον τῇ ῥάβδῳ.",
+        "VUL": "Cumque vidisset asina stantem angelum, concidit sub pedibus sedentis : qui iratus, vehementius cædebat fuste latera ejus.",
+        "SYN": "Ослица, увидев Ангела Господня, легла под Валаамом. И воспылал гнев Валаама, и стал он бить ослицу палкою.",
+        "NEO": "L’ânesse, en voyant l’ange de \\+w Yahweh|strong=\"H3068\"\\+w**, se coucha sous Balaam, et la colère de Balaam s’enflamma, et il frappa l’ânesse de son bâton.",
+        "NAB": "When the ass saw the angel of the LORD there, she cowered under Balaam. So, in anger, he again beat the ass with his stick.",
+        "VAT_ES": "Cuando el asna lo vio, se echó al suelo debajo de Balaam, y este, enfurecido, la golpeó con su bastón.",
+        "CEI": "L'asina vide l'angelo del Signore e si accovacciò sotto Balaam; l'ira di Balaam si accese ed egli percosse l'asina con il bastone."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יִּפְתַּ֥ח יְהוָ֖ה אֶת פִּ֣י הָ/אָת֑וֹן וַ/תֹּ֤אמֶר לְ/בִלְעָם֙ מֶה עָשִׂ֣יתִֽי לְ/ךָ֔ כִּ֣י הִכִּיתַ֔/נִי זֶ֖ה שָׁלֹ֥שׁ רְגָלִֽים׃",
+        "LXX": "καὶ ἤνοιξεν ὁ θεὸς τὸ στόμα τῆς ὄνου, καὶ λέγει τῷ Βαλαάμ Τί ἐποίησά σοι ὅτι πέπαικάς με τοῦτο τρίτον;",
+        "VUL": "Aperuitque Dominus os asinæ, et locuta est : Quid feci tibi ? cur percutis me ecce jam tertio ?",
+        "SYN": "И отверз Господь уста ослицы, и она сказала Валааму: что я тебе сделала, что ты бьешь меня вот уже третий раз?",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** ouvrit la bouche de l’ânesse, et elle dit à Balaam : « Que t’ai-je fait, que tu m’aies frappée ces trois fois ? »",
+        "NAB": "But now the LORD opened the mouth of the ass, and she asked Balaam, \"What have I done to you that you should beat me these three times?\"",
+        "VAT_ES": "Entonces el Señor abrió la boca del asna, y ella, dijo a Balaam: «&iquest;Qué te hice para que me golpearas así tres veces?».",
+        "CEI": "Allora il Signore aprì la bocca all'asina ed essa disse a Balaam: \"Che ti ho fatto perché tu mi percuota già per la terza volta?\"."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר בִּלְעָם֙ לָֽ/אָת֔וֹן כִּ֥י הִתְעַלַּ֖לְתְּ בִּ֑/י ל֤וּ יֶשׁ חֶ֨רֶב֙ בְּ/יָדִ֔/י כִּ֥י עַתָּ֖ה הֲרַגְתִּֽי/ךְ׃",
+        "LXX": "καὶ εἶπεν Βαλαὰμ τῇ ὄνῳ Ὅτι ἐμπέπαιχάς μοι· καὶ εἰ εἶχον μάχαιραν ἐν τῇ χειρί, ἤδη ἂν ἐξεκέντησά σε.",
+        "VUL": "Respondit Balaam : Quia commeruisti, et illusisti mihi : utinam haberem gladium, ut te percuterem !",
+        "SYN": "Валаам сказал ослице: за то, что ты поругалась надо мною; если бы у меня в руке был меч, то я теперь же убил бы тебя.",
+        "NEO": "Balaam répondit à l’ânesse : « C’est parce que tu t’es jouée de moi ; si j’avais une épée dans la main, je te tuerais à l’instant. »",
+        "NAB": "\"You have acted so willfully against me,\" said Balaam to the ass, \"that if I but had a sword at hand, I would kill you here and now.\"",
+        "VAT_ES": "«&iexcl;Te estás burlando de mí!, respondió Balaam. Si tuviera una espada en mi mano, te mataría ahora mismo».",
+        "CEI": "Balaam rispose all'asina: \"Perché ti sei beffata di me! Se avessi una spada in mano, ti ammazzerei subito\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר הָ/אָת֜וֹן אֶל בִּלְעָ֗ם הֲ/לוֹא֩ אָנֹכִ֨י אֲתֹֽנְ/ךָ֜ אֲשֶׁר רָכַ֣בְתָּ עָלַ֗/י מֵ/עֽוֹדְ/ךָ֙ עַד הַ/יּ֣וֹם הַ/זֶּ֔ה הַֽ/הַסְכֵּ֣ן הִסְכַּ֔נְתִּי לַ/עֲשׂ֥וֹת לְ/ךָ֖ כֹּ֑ה וַ/יֹּ֖אמֶר לֹֽא׃",
+        "LXX": "καὶ λέγει ἡ ὄνος τῷ Βαλαάμ Οὐκ ἐγὼ ἡ ὄνος σου, ἐφ’ ἧς ἐπέβαινες ἀπὸ νεότητός σου ἕως τῆς σήμερον ἡμέρας; μὴ ὑπεροράσει ὑπεριδοῦσα ἐποίησά σοι οὕτως; ὁ δὲ εἶπεν Οὐχί.",
+        "VUL": "Dixit asina : Nonne animal tuum sum, cui semper sedere consuevisti usque in præsentem diem ? dic quid simile umquam fecerim tibi. At ille ait : Numquam.",
+        "SYN": "Ослица же сказала Валааму: не я ли твоя ослица, на которой ты ездил сначала до сего дня? имела ли я привычку так поступать с тобою? Он сказал: нет.",
+        "NEO": "L’ânesse dit à Balaam : « Ne suis-je pas ton ânesse, que tu as toujours montée jusqu’à présent ? Ai-je l’habitude d’agir ainsi envers toi ? » Et il répondit : « Non. »",
+        "NAB": "But the ass said to Balaam, \"Am I not your own beast, and have you not always ridden upon me until now? Have I been in the habit of treating you this way before?\" \"No,\" replied Balaam.",
+        "VAT_ES": "El asna le respondió: «&iquest;Acaso yo no soy tu asna, la que siempre has montado hasta el día de hoy? &iquest;Acostumbro yo a tratarte de ese modo?». El respondió: «No».",
+        "CEI": "L'asina disse a Balaam: \"Non sono io la tua asina sulla quale hai sempre cavalcato fino ad oggi? Sono forse abituata ad agire così?\". Ed egli rispose: \"No\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יְגַ֣ל יְהוָה֮ אֶת עֵינֵ֣י בִלְעָם֒ וַ/יַּ֞רְא אֶת מַלְאַ֤ךְ יְהוָה֙ נִצָּ֣ב בַּ/דֶּ֔רֶךְ וְ/חַרְבּ֥/וֹ שְׁלֻפָ֖ה בְּ/יָד֑/וֹ וַ/יִּקֹּ֥ד וַ/יִּשְׁתַּ֖חוּ לְ/אַפָּֽי/ו׃",
+        "LXX": "ἀπεκάλυψεν δὲ ὁ θεὸς τοὺς ὀφθαλμοὺς Βαλαάμ, καὶ ὁρᾷ τὸν ἄγγελον Κυρίου ἀνθεστηκότα ἐν τῇ ὁδῷ καὶ τὴν μάχαιραν ἐσπασμένην ἐν τῇ χειρὶ αὐτοῦ, καὶ κύψας προσεκύνησεν τῷ προσώπῳ αὐτοῦ.",
+        "VUL": "Protinus aperuit Dominus oculos Balaam, et vidit angelum stantem in via, evaginato gladio, adoravitque eum pronus in terram.",
+        "SYN": "И открыл Господь глаза Валааму, и увидел он Ангела Господня, стоящего на дороге с обнаженным мечом в руке, и преклонился, и пал на лице свое.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** ouvrit les yeux de Balaam, et Balaam vit l’ange de \\+w Yahweh|strong=\"H3068\"\\+w** qui se tenait sur le chemin, son épée nue dans la main ; et il s’inclina et se prosterna sur son visage.",
+        "NAB": "Then the LORD removed the veil from Balaam's eyes, so that he too saw the angel of the LORD standing on the road with sword drawn; and he fell on his knees and bowed to the ground.",
+        "VAT_ES": "El Señor abrió los ojos de Balaam, y este vio al Angel del Señor parado en la camino, con la espada desenvainada en su mano; se inclinó y lo adoró con el rostro en tierra.",
+        "CEI": "Allora il Signore aprì gli occhi a Balaam ed egli vide l'angelo del Signore, che stava sulla strada con la spada sguainata. Balaam si inginocchiò e si prostrò con la faccia a terra."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֵלָי/ו֙ מַלְאַ֣ךְ יְהוָ֔ה עַל מָ֗ה הִכִּ֨יתָ֙ אֶת אֲתֹ֣נְ/ךָ֔ זֶ֖ה שָׁל֣וֹשׁ רְגָלִ֑ים הִנֵּ֤ה אָנֹכִי֙ יָצָ֣אתִי לְ/שָׂטָ֔ן כִּֽי יָרַ֥ט הַ/דֶּ֖רֶךְ לְ/נֶגְדִּֽ/י׃",
+        "LXX": "καὶ εἶπεν αὐτῷ ὁ ἄγγελος τοῦ θεοῦ Διὰ τί ἐπάταξας τὴν ὄνον σου τοῦτο τρίτον; καὶ ἰδοὺ ἐγὼ ἐξῆλθον εἰς διαβολήν σου, ὅτι οὐκ ἀστεία ἡ ὁδός σου ἐναντίον μου.",
+        "VUL": "Cui angelus : Cur, inquit, tertio verberas asinam tuam ? ego veni ut adversarer tibi, quia perversa est via tua, mihique contraria :",
+        "SYN": "И сказал ему Ангел Господень: за что ты бил ослицу твою вот уже три раза? Я вышел, чтобы воспрепятствовать [тебе], потому что путь [твой] не прав предо Мною;",
+        "NEO": "L’ange de \\+w Yahweh|strong=\"H3068\"\\+w** lui dit : « Pourquoi as-tu frappé ton ânesse ces trois fois ? Voici, je suis sorti pour te faire obstacle, car, à mes yeux, le chemin que tu suis te mène à la ruine.",
+        "NAB": "But the angel of the LORD said to him, \"Why have you beaten your ass these three times? It is I who have come armed to hinder you because this rash journey of yours is directly opposed to me.",
+        "VAT_ES": "El Angel del Señor le dijo: «&iquest;Por qué le has pegado tres veces a tu asna? Era yo el que te cerraba el paso, porque tu viaje me disgusta.",
+        "CEI": "L'angelo del Signore gli disse: \"Perché hai percosso la tua asina già tre volte? Ecco io sono uscito a ostacolarti il cammino, perché il cammino davanti a me va in precipizio."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/תִּרְאַ֨/נִי֙ הָֽ/אָת֔וֹן וַ/תֵּ֣ט לְ/פָנַ֔/י זֶ֖ה שָׁלֹ֣שׁ רְגָלִ֑ים אוּלַי֙ נָטְתָ֣ה מִ/פָּנַ֔/י כִּ֥י עַתָּ֛ה גַּם אֹתְ/כָ֥ה הָרַ֖גְתִּי וְ/אוֹתָ֥/הּ הֶחֱיֵֽיתִי׃",
+        "LXX": "καὶ ἰδοῦσά με ἡ ὄνος ἐξέκλινεν ἀπ’ ἐμοῦ τρίτον τοῦτο· καὶ εἰ μὴ ἐξέκλινεν, νῦν οὖν σὲ μὲν ἀπέκτεινα, ἐκείνην δὲ περιεποιησάμην.",
+        "VUL": "et nisi asina declinasset de via, dans locum resistenti, te occidissem, et illa viveret.",
+        "SYN": "и ослица, видев Меня, своротила от Меня вот уже три раза; если бы она не своротила от Меня, то Я убил бы тебя, а ее оставил бы живою.",
+        "NEO": "L’ânesse m’a vu ; et elle s’est détournée devant moi ces trois fois ; si elle ne s’était pas détournée devant moi, je t’aurais tué, toi, et je lui aurais laissé la vie. »",
+        "NAB": "When the ass saw me, she turned away from me these three times. If she had not turned away from me, I would have killed you; her I would have spared.\"",
+        "VAT_ES": "Ella me vio y se apartó de mí tres veces. Hizo muy bien en apartarse, porque de los contrario yo te hubiera matado, mientras que a ella la hubiera dejado con vida».",
+        "CEI": "Tre volte l'asina mi ha visto ed è uscita di strada davanti a me; se non fosse uscita di strada davanti a me, certo io avrei già ucciso te e lasciato in vita lei\"."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר בִּלְעָ֜ם אֶל מַלְאַ֤ךְ יְהוָה֙ חָטָ֔אתִי כִּ֚י לֹ֣א יָדַ֔עְתִּי כִּ֥י אַתָּ֛ה נִצָּ֥ב לִ/קְרָאתִ֖/י בַּ/דָּ֑רֶךְ וְ/עַתָּ֛ה אִם רַ֥ע בְּ/עֵינֶ֖י/ךָ אָשׁ֥וּבָה לִּֽ/י׃",
+        "LXX": "καὶ εἶπεν Βαλαὰμ τῷ ἀγγέλῳ Κυρίου Ἡμάρτηκα, οὐ γὰρ ἠπιστάμην ὅτι σύ μοι ἀνθέστηκας ἐν τῇ ὁδῷ εἰς συνάντησιν· καὶ νῦν εἰ μή σοι ἀρέσκει, ἀποστραφήσομαι.",
+        "VUL": "Dixit Balaam : Peccavi, nesciens quod tu stares contra me : et nunc si displicet tibi ut vadam, revertar.",
+        "SYN": "И сказал Валаам Ангелу Господню: согрешил я, ибо не знал, что Ты стоишь против меня на дороге; итак, если это неприятно в очах Твоих, то я возвращусь.",
+        "NEO": "Balaam dit à l’ange de \\+w Yahweh|strong=\"H3068\"\\+w** : « J’ai péché, car je ne savais pas que tu te tenais devant moi sur le chemin ; et maintenant, si cela te déplaît, je m’en retournerai. »",
+        "NAB": "Then Balaam said to the angel of the LORD, \"I have sinned. Yet I did not know that you stood against me to oppose my journey. Since it has displeased you, I will go back home.\"",
+        "VAT_ES": "Balaam dijo al Angel del Señor: «He pecado, porque no sabía que tú estabas apostado delante de mí en el camino. Si esto te desagrada, ahora mismo regreso».",
+        "CEI": "Allora Balaam disse all'angelo del Signore: \"Io ho peccato, perché non sapevo che tu ti fossi posto contro di me sul cammino; ora se questo ti dispiace, io tornerò indietro\"."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֩ מַלְאַ֨ךְ יְהוָ֜ה אֶל בִּלְעָ֗ם לֵ֚ךְ עִם הָ֣/אֲנָשִׁ֔ים וְ/אֶ֗פֶס אֶת הַ/דָּבָ֛ר אֲשֶׁר אֲדַבֵּ֥ר אֵלֶ֖י/ךָ אֹת֣/וֹ תְדַבֵּ֑ר וַ/יֵּ֥לֶךְ בִּלְעָ֖ם עִם שָׂרֵ֥י בָלָֽק׃",
+        "LXX": "καὶ εἶπεν ὁ ἄγγελος τοῦ θεοῦ πρὸς Βαλαάμ Συνπορεύθητι μετὰ τῶν ἀνθρώπων· πλὴν τὸ ῥῆμα ὃ ἐὰν εἴπω πρὸς σέ, τοῦτο φυλάξῃ λαλῆσαι. καὶ ἐπορεύθη Βαλαὰμ μετὰ τῶν ἀρχόντων Βαλάκ.",
+        "VUL": "Ait angelus : Vade cum istis, et cave ne aliud quam præcepero tibi loquaris. Ivit igitur cum principibus.",
+        "SYN": "И сказал Ангел Господень Валааму: пойди с людьми сими, только говори то, что Я буду говорить тебе. И пошел Валаам с князьями Валаковыми.",
+        "NEO": "L’ange de \\+w Yahweh|strong=\"H3068\"\\+w** dit à Balaam : « Va avec ces hommes ; mais tu ne diras pas autre chose que ce que je te dirai. » Et Balaam alla avec les princes de Balac.",
+        "NAB": "But the angel of the LORD said to Balaam, \"Go with the men; but you may say only what I tell you.\" So Balaam went on with the princes of Balak.",
+        "VAT_ES": "El Angel del Señor respondió a Balaam: «Ve con estos hombres, pero dirás solamente lo que yo te indique». Y Balaam se fue con los jefes que le había enviado Balac.",
+        "CEI": "L'angelo del Signore disse a Balaam: \"Và pure con quegli uomini; ma dirai soltanto quello che io ti dirò\". Balaam andò con i capi di Balak."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֥ע בָּלָ֖ק כִּ֣י בָ֣א בִלְעָ֑ם וַ/יֵּצֵ֨א לִ/קְרָאת֜/וֹ אֶל עִ֣יר מוֹאָ֗ב אֲשֶׁר֙ עַל גְּב֣וּל אַרְנֹ֔ן אֲשֶׁ֖ר בִּ/קְצֵ֥ה הַ/גְּבֽוּל׃",
+        "LXX": "καὶ ἀκούσας Βαλὰκ ὅτι ἥκει Βαλαάμ, ἐξῆλθεν εἰς συνάντησιν αὐτῷ εἰς πόλιν Μωάβ, ἥτις ἐπὶ τῶν ὁρίων Ἀρνών, ὅ ἐστιν ἐκ μέρους τῶν ὁρίων.",
+        "VUL": "Quod cum audisset Balac, egressus est in occursum ejus in oppido Moabitarum, quod situm est in extremis finibus Arnon.",
+        "SYN": "Валак, услышав, что идет Валаам, вышел навстречу ему в город Моавитский, который на границе при Арноне, что у самого предела.",
+        "NEO": "Balac, ayant appris que Balaam arrivait, sortit à sa rencontre jusqu’à la ville de Moab, qui est sur la frontière de l’Arnon, à l’extrême frontière.",
+        "NAB": "When Balak heard that Balaam was coming, he went out to meet him at the boundary city Ir-Moab on the Arnon at the end of the Moabite territory.",
+        "VAT_ES": "Cuando Balac supo que Balaam estaba por llegar, fue a encontrarlo en Ar Moab, sobre la frontera del Arnón, en el límite de su territorio,",
+        "CEI": "Quando Balak udì che Balaam arrivava, gli andò incontro a Ir-Moab che è sul confine dell'Arnon, all'estremità del confine."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר בָּלָ֜ק אֶל בִּלְעָ֗ם הֲ/לֹא֩ שָׁלֹ֨חַ שָׁלַ֤חְתִּי אֵלֶ֨י/ךָ֙ לִ/קְרֹא לָ֔/ךְ לָ֥/מָּה לֹא הָלַ֖כְתָּ אֵלָ֑/י הַֽ/אֻמְנָ֔ם לֹ֥א אוּכַ֖ל כַּבְּדֶֽ/ךָ׃",
+        "LXX": "καὶ εἶπεν Βαλὰκ πρὸς Βαλαάμ Οὐχὶ ἀπέστειλα πρὸς σὲ καλέσαι σε; διὰ τί οὐκ ἤρχου πρὸς μέ; οὐ δυνήσομαι ὄντως τιμῆσαί σε;",
+        "VUL": "Dixitque ad Balaam : Misi nuntios ut vocarent te : cur non statim venisti ad me ? an quia mercedem adventui tuo reddere nequeo ?",
+        "SYN": "И сказал Валак Валааму: не посылал ли я к тебе, звать тебя? почему ты не шел ко мне? неужели я в самом деле не могу почтить тебя?",
+        "NEO": "Balac dit à Balaam : « N’avais-je pas envoyé déjà vers toi pour t’appeler ? Pourquoi n’es-tu pas venu vers moi ? Ne puis-je pas en vérité te traiter avec honneur ? »",
+        "NAB": "And he said to Balaam, \"I sent an urgent summons to you! Why did you not come to me? Did you think I could not reward you?\"",
+        "VAT_ES": "y le dijo: «Yo te mandé a llamar urgentemente. &iquest;Por qué no querías venir? &iquest;Acaso no dispongo de medios para colmarte de honores?».",
+        "CEI": "Balak disse a Balaam: \"Non ti avevo forse mandato a chiamare con insistenza? Perché non sei venuto da me? Non sono forse in grado di farti onore?\"."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר בִּלְעָ֜ם אֶל בָּלָ֗ק הִֽנֵּה בָ֨אתִי֙ אֵלֶ֔י/ךָ עַתָּ֕ה הֲ/יָכ֥וֹל אוּכַ֖ל דַּבֵּ֣ר מְא֑וּמָה הַ/דָּבָ֗ר אֲשֶׁ֨ר יָשִׂ֧ים אֱלֹהִ֛ים בְּ/פִ֖/י אֹת֥/וֹ אֲדַבֵּֽר׃",
+        "LXX": "καὶ εἶπεν Βαλαὰμ πρὸς Βαλάκ Ἰδοὺ ἥκω πρὸς σὲ νῦν· δυνατὸς ἔσομαι λαλῆσαί τι; τὸ ῥῆμα ὃ ἐὰν βάλῃ ὁ θεὸς εἰς τὸ στόμα μου, τοῦτο λαλήσω.",
+        "VUL": "Cui ille respondit : Ecce adsum : numquid loqui potero aliud, nisi quod Deus posuerit in ore meo ?",
+        "SYN": "И сказал Валаам Валаку: вот, я и пришел к тебе, но могу ли я что _от_ _себя_ сказать? что вложит Бог в уста мои, то и буду говорить.",
+        "NEO": "Balaam dit à Balac : « Voici, je suis venu vers toi ; mais maintenant pourrai-je dire quoi que ce soit ? Les paroles que Dieu mettra dans ma bouche, je les dirai. »",
+        "NAB": "Balaam answered him, \"Well, I have come to you after all. But what power have I to say anything? I can speak only what God puts in my mouth.\"",
+        "VAT_ES": "Entonces Balaam respondió a Balac: «Aquí me tienes. Pero, &iquest;qué puedo decir yo ahora? Sólo diré la palabra que Dios ponga en mi boca».",
+        "CEI": "Balaam rispose a Balak: \"Ecco, sono venuto da te; ma ora posso forse dire qualsiasi cosa? La parola che Dio mi metterà in bocca, quella dirò\"."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֥לֶךְ בִּלְעָ֖ם עִם בָּלָ֑ק וַ/יָּבֹ֖אוּ קִרְיַ֥ת חֻצֽוֹת׃",
+        "LXX": "καὶ ἐπορεύθη Βαλαὰμ μετὰ Βαλάκ, καὶ ἦλθον εἰς Πόλεις ἐπαύλεων.",
+        "VUL": "Perrexerunt ergo simul, et venerunt in urbem, quæ in extremis regni ejus finibus erat.",
+        "SYN": "И пошел Валаам с Валаком и пришли в Кириаф-Хуцоф.",
+        "NEO": "Balaam se mit en route avec Balac, et ils arrivèrent à Qiriath-Chutsoth.",
+        "NAB": "Then Balaam went with Balak, and they came to Kiriath-huzoth.",
+        "VAT_ES": "Luego Balaam se fue con Balac. Llegados a Quiriat Jusot,",
+        "CEI": "Balaam andò con Balak e giunsero a Kiriat-Cusot."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וַ/יִּזְבַּ֥ח בָּלָ֖ק בָּקָ֣ר וָ/צֹ֑אן וַ/יְשַׁלַּ֣ח לְ/בִלְעָ֔ם וְ/לַ/שָּׂרִ֖ים אֲשֶׁ֥ר אִתּֽ/וֹ׃",
+        "LXX": "καὶ ἔθυσεν Βαλὰκ πρόβατα καὶ μόσχους, καὶ ἀπέστειλεν τῷ Βαλαὰμ καὶ τοῖς ἄρχουσι τοῖς μετ’ αὐτοῦ.",
+        "VUL": "Cumque occidisset Balac boves et oves, misit ad Balaam, et principes qui cum eo erant, munera.",
+        "SYN": "И заколол Валак волов и овец, и послал к Валааму и князьям, которые были с ним.",
+        "NEO": "Balac immola en sacrifice des bœufs et des brebis, et il en envoya des portions à Balaam et aux princes qui étaient avec lui.",
+        "NAB": "Here Balak slaughtered oxen and sheep, and sent portions to Balaam and to the princes who were with him.",
+        "VAT_ES": "Balac inmoló vacas y ovejas y se las envió a Balaam y lo hizo subir a Bamot Baal, desde donde pudo ver a una parte del pueblo.",
+        "CEI": "Balak immolò bestiame grosso e minuto e mandò parte della carne a Balaam e ai capi che erano con lui."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י בַ/בֹּ֔קֶר וַ/יִּקַּ֤ח בָּלָק֙ אֶת בִּלְעָ֔ם וַֽ/יַּעֲלֵ֖/הוּ בָּמ֣וֹת בָּ֑עַל וַ/יַּ֥רְא מִ/שָּׁ֖ם קְצֵ֥ה הָ/עָֽם׃",
+        "LXX": "καὶ ἐγενήθη πρωί, καὶ παραλαβὼν Βαλὰκ τὸν Βαλαὰμ ἀνεβίβασεν αὐτὸν ἐπὶ τὴν στήλην τοῦ Βάαλ, καὶ ἔδειξεν αὐτῷ ἐκεῖθεν μέρος τι τοῦ λαοῦ.",
+        "VUL": "Mane autem facto, duxit eum ad excelsa Baal, et intuitus est extremam partem populi.",
+        "SYN": "На другой день утром Валак взял Валаама и возвел его на высоты Вааловы, чтобы он увидел оттуда часть народа.",
+        "NEO": "Le matin, Balac prit avec lui Balaam et le fit monter à Bamoth-Baal, d’où Balaam put apercevoir les derniers rangs du peuple.",
+        "NAB": "The next morning Balak took Balaam up on Bamoth-baal, and from there he saw some of the clans.",
+        "CEI": "La mattina Balak prese Balaam e lo fece salire a Bamot-Baal, da dove si vedeva un'estremità dell'accampamento del popolo."
+      }
+    }
+  }
+}

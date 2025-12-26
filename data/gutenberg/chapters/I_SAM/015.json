@@ -1,0 +1,645 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_SAM_015",
+  "book_key": "I_SAM",
+  "sequence": 15,
+  "chapter_in": {
+    "MT": 15,
+    "VUL": 15,
+    "LXX": 15
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר שְׁמוּאֵל֙ אֶל שָׁא֔וּל אֹתִ֨/י שָׁלַ֤ח יְהוָה֙ לִ/מְשָׁחֳ/ךָ֣ לְ/מֶ֔לֶךְ עַל עַמּ֖/וֹ עַל יִשְׂרָאֵ֑ל וְ/עַתָּ֣ה שְׁמַ֔ע לְ/ק֖וֹל דִּבְרֵ֥י יְהוָֽה׃",
+        "LXX": "Καὶ εἶπεν Σαμουὴλ πρὸς Σαούλ Ἐμὲ ἀπέστειλεν Κύριος χρίσαι σε εἰς βασιλέα ἐπὶ Ἰσραήλ, καὶ νῦν ἄκουε τῆς φωνῆς Κυρίου.",
+        "VUL": "Et dixit Samuel ad Saul : Me misit Dominus ut ungerem te in regem super populum ejus Israël : nunc ergo audi vocem Domini.",
+        "SYN": "И сказал Самуил Саулу: Господь послал меня помазать тебя царем над народом Его, над Израилем; теперь послушай гласа Господа.",
+        "NEO": "Samuel dit à Saül : « C’est moi que \\+w Yahweh|strong=\"H3068\"\\+w** a envoyé pour t’oindre comme roi sur son peuple, sur Israël ; écoute donc ce que dit \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Samuel said to Saul: \"It was I the LORD sent to anoint you king over his people Israel. Now, therefore, listen to the message of the LORD.",
+        "VAT_ES": "Samuel dijo a Saúl: «Fue el Señor el que me envió a ungirte rey de mi pueblo Israel. Por eso, escucha ahora las palabras del Señor.",
+        "CEI": "Samuele disse a Saul: \"Il Signore ha inviato me per consacrarti re sopra Israele suo popolo. Ora ascolta la voce del Signore."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כֹּ֤ה אָמַר֙ יְהוָ֣ה צְבָא֔וֹת פָּקַ֕דְתִּי אֵ֛ת אֲשֶׁר עָשָׂ֥ה עֲמָלֵ֖ק לְ/יִשְׂרָאֵ֑ל אֲשֶׁר שָׂ֥ם ל/וֹ֙ בַּ/דֶּ֔רֶךְ בַּ/עֲלֹת֖/וֹ מִ/מִּצְרָֽיִם׃",
+        "LXX": "τάδε εἶπεν Κύριος σαβαώθ Νῦν ἐκδικήσω ἃ ἐποίησεν Ἀμαλὴκ τῷ Ἰσραήλ, ὡς ἀπήντησεν αὐτῷ ἐν τῇ ὁδῷ ἀναβαίνοντος αὐτοῦ ἐξ Αἰγύπτου.",
+        "VUL": "Hæc dicit Dominus exercituum : Recensui quæcumque fecit Amalec Israëli : quomodo restitit ei in via cum ascenderet de Ægypto.",
+        "SYN": "Так говорит Господь Саваоф: вспомнил Я о том, что сделал Амалик Израилю, как он противостал ему на пути, когда он шел из Египта;",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** des armées : J’ai considéré ce qu’Amalec a fait à Israël, lorsqu’il s’est élevé contre lui sur le chemin, quand Israël montait d’Égypte.",
+        "NAB": "This is what the LORD of hosts has to say: 'I will punish what Amalek did to Israel when he barred his way as he was coming up from Egypt.",
+        "VAT_ES": "Así habla el Señor de los ejércitos: Voy a pedir cuenta a Amalec de lo que hizo a Israel, al cortarle el camino cuando este subía de Egipto.",
+        "CEI": "Così dice il Signore degli eserciti: Ho considerato ciò che ha fatto Amalek a Israele, ciò che gli ha fatto per via, quando usciva dall'Egitto."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "עַתָּה֩ לֵ֨ךְ וְ/הִכִּֽיתָ֜ה אֶת עֲמָלֵ֗ק וְ/הַֽחֲרַמְתֶּם֙ אֶת כָּל אֲשֶׁר ל֔/וֹ וְ/לֹ֥א תַחְמֹ֖ל עָלָ֑י/ו וְ/הֵמַתָּ֞ה מֵ/אִ֣ישׁ עַד אִשָּׁ֗ה מֵֽ/עֹלֵל֙ וְ/עַד יוֹנֵ֔ק מִ/שּׁ֣וֹר וְ/עַד שֶׂ֔ה מִ/גָּמָ֖ל וְ/עַד חֲמֽוֹר׃",
+        "LXX": "καὶ νῦν πορεύου καὶ πατάξεις τὸν Ἀμαλὴκ καὶ Ἰερεὶμ καὶ πάντα τὰ αὐτοῦ, καὶ οὐ περιποιήσῃ ἐξ αὐτοῦ καὶ ἐξολεθρεύσεις αὐτόν· καὶ ἀναθεματιεῖς αὐτὸν καὶ πάντα τὰ αὐτοῦ, καὶ οὐ φείσῃ ἀπ’ αὐτοῦ· καὶ ἀποκτενεῖς ἀπὸ ἀνδρὸς καὶ ἕως γυναικὸς καὶ ἀπὸ νηπίου ἕως θηλάζοντος, καὶ ἀπὸ μόσχου ἕως προβάτου καὶ ἀπὸ καμήλου ἕως ὄνου.",
+        "VUL": "Nunc ergo vade, et percute Amalec, et demolire universa ejus : non parcas ei, et non concupiscas ex rebus ipsius aliquid, sed interfice a viro usque ad mulierem, et parvulum atque lactentem, bovem et ovem, camelum et asinum.",
+        "SYN": "теперь иди и порази Амалика [и Иерима] и истреби все, что у него; [не бери себе ничего у них, но уничтожь и предай заклятию все, что у него;] и не давай пощады ему, но предай смерти от мужа до жены, от отрока до грудного младенца, от вола до овцы, от верблюда до осла.",
+        "NEO": "Va maintenant, frappe Amalec, et dévoue par anathème tout ce qui lui appartient ; tu n’auras pas pitié de lui, et tu feras mourir hommes et femmes, enfants et nourrissons, bœufs et brebis, chameaux et ânes. »",
+        "NAB": "Go, now, attack Amalek, and deal with him and all that he has under the ban. Do not spare him, but kill men and women, children and infants, oxen and sheep, camels and asses.'\"",
+        "VAT_ES": "Ahora ve y derrota a Amalec. Conságralo al exterminio con todo lo que posee y no lo perdones, mata a hombres y mujeres, niños y pequeños, vacas y ovejas, camellos y asnos».",
+        "CEI": "Và dunque e colpisci Amalek e vota allo sterminio quanto gli appartiene, non lasciarti prendere da compassione per lui, ma uccidi uomini e donne, bambini e lattanti, buoi e pecore, cammelli e asini\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יְשַׁמַּ֤ע שָׁאוּל֙ אֶת הָ/עָ֔ם וַֽ/יִּפְקְדֵ/ם֙ בַּ/טְּלָאִ֔ים מָאתַ֥יִם אֶ֖לֶף רַגְלִ֑י וַ/עֲשֶׂ֥רֶת אֲלָפִ֖ים אֶת אִ֥ישׁ יְהוּדָֽה׃",
+        "LXX": "Καὶ παρήγγειλεν Σαοὺλ τῷ λαῷ, καὶ ἐπισκέπτεται αὐτοὺς ἐν Γαλγάλοις τετρακοσίας χιλιάδας ταγμάτων, καὶ τὸν Ἰσύδαν τριάκοντα χιλιάδας ταγμάτων.",
+        "VUL": "Præcepit itaque Saul populo, et recensuit eos quasi agnos : ducenta millia peditum, et decem millia virorum Juda.",
+        "SYN": "И собрал Саул народ и насчитал их в Телаиме двести тысяч Израильтян пеших и десять тысяч из колена Иудина.",
+        "NEO": "Saül le fit savoir au peuple, qu’il passa en revue à Télaïm : il compta deux cent mille hommes de pied et dix mille hommes de Juda.",
+        "NAB": "Saul alerted the soldiers, and at Telaim reviewed two hundred thousand foot soldiers and ten thousand men of Judah.",
+        "VAT_ES": "Saúl convocó al pueblo y le pasó revista en Telam: eran doscientos mil hombres de a pie y diez mil hombres de Judá.",
+        "CEI": "Saul convocò il popolo e passò in rassegna le truppe in Telaìm: erano duecentomila fanti e diecimila uomini di Giuda."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֥א שָׁא֖וּל עַד עִ֣יר עֲמָלֵ֑ק וַ/יָּ֖רֶב בַּ/נָּֽחַל׃",
+        "LXX": "καὶ ἦλθεν Σαοὺλ ἕως τῶν πόλεων Ἀμαλήκ, καὶ ἐνήδρευσεν ἐν τῷ χειμάρρῳ.",
+        "VUL": "Cumque venisset Saul usque ad civitatem Amalec, tetendit insidias in torrente.",
+        "SYN": "И дошел Саул до города Амаликова, и сделал засаду в долине.",
+        "NEO": "Saül s’avança jusqu’à la ville d’Amalec, et il mit une embuscade dans la vallée.",
+        "NAB": "Saul went to the city of Amalek, and after setting an ambush in the wadi,",
+        "VAT_ES": "Luego avanzó hasta la ciudad de Amalec y tendió una emboscada en el barranco.",
+        "CEI": "Saul venne alla città di Amalek e tese un'imboscata nella valle."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שָׁא֣וּל אֶֽל הַ/קֵּינִ֡י לְכוּ֩ סֻּ֨רוּ רְד֜וּ מִ/תּ֣וֹךְ עֲמָלֵקִ֗י פֶּן אֹֽסִפְ/ךָ֙ עִמּ֔/וֹ וְ/אַתָּ֞ה עָשִׂ֤יתָה חֶ֨סֶד֙ עִם כָּל בְּנֵ֣י יִשְׂרָאֵ֔ל בַּ/עֲלוֹתָ֖/ם מִ/מִּצְרָ֑יִם וַ/יָּ֥סַר קֵינִ֖י מִ/תּ֥וֹךְ עֲמָלֵֽק׃",
+        "LXX": "καὶ εἶπεν Σαοὺλ πρὸς τὸν Κειναῖον Ἄπελθε καὶ ἔκκλινον ἐκ μέσου τοῦ Ἀμαληκείτου, μὴ προσθῶ σε μετ’ αὐτοῦ, καὶ σὺ ἐποίησας ἔλεος μετὰ τῶν υἱῶν Ἰσραὴλ ἐν τῷ ἀναβαίνειν αὐτοὺς ἐξ Αἰγύπτου· καὶ ἐξέκλινεν ὁ Κειναῖος ἐκ μέσου Ἀμαλήκ.",
+        "VUL": "Dixitque Saul Cinæo : Abite, recedite, atque descendite ab Amalec, ne forte involvam te cum eo : tu enim fecisti misericordiam cum omnibus filiis Israël, cum ascenderent de Ægypto. Et recessit Cinæus de medio Amalec.",
+        "SYN": "И сказал Саул Кинеянам: пойдите, отделитесь, выйдите из среды Амалика, чтобы мне не погубить вас с ним, ибо вы оказали благосклонность всем Израильтянам, когда они шли из Египта. И отделились Кинеяне из среды Амалика.",
+        "NEO": "Saül dit aux Cinéens : « Allez, retirez-vous, descendez du milieu d’Amalec, de peur que je ne vous enveloppe avec lui ; car vous avez usé de bonté envers tous les enfants d’Israël, lorsqu’ils montèrent d’Égypte. » Et les Cinéens se retirèrent du milieu d’Amalec.",
+        "NAB": "warned the Kenites: \"Come! Leave Amalek and withdraw, that I may not have to destroy you with them, for you were kind to the Israelites when they came up from Egypt.\" After the Kenites left,",
+        "VAT_ES": "Entonces Saúl avisó a los quenitas: «&iexcl;Vamos, retírense de en medio de los amalecitas y bajen, no sea que los trate igual que a ellos! Porque ustedes han sido benévolos con todos los israelitas, cuando bajaban de Egipto». Así los quenitas se retiraron de en medio de Amalec.",
+        "CEI": "Disse inoltre Saul ai Keniti: \"Andate via, ritiratevi dagli Amaleciti prima che vi travolga insieme con loro, poiché avete usato benevolenza con tutti gli Israeliti, quando uscivano dall'Egitto\". I Keniti si ritirarono da Amalek."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥ךְ שָׁא֖וּל אֶת עֲמָלֵ֑ק מֵֽ/חֲוִילָה֙ בּוֹאֲ/ךָ֣ שׁ֔וּר אֲשֶׁ֖ר עַל פְּנֵ֥י מִצְרָֽיִם׃",
+        "LXX": "καὶ ἐπάταξεν Σαοὺλ τὸν Ἀμαλὴκ ἀπὸ Εὑειλὰτ ἕως Ἀσσοὺρ ἐπὶ προσώπου Αἰγύπτου.",
+        "VUL": "Percussitque Saul Amalec ab Hevila donec venias ad Sur, quæ est e regione Ægypti.",
+        "SYN": "И поразил Саул Амалика от Хавилы до окрестностей Сура, что пред Египтом;",
+        "NEO": "Saül battit Amalec depuis Hévila jusqu’à Sur, qui est à l’est de l’Égypte.",
+        "NAB": "Saul routed Amalek from Havilah to the approaches of Shur, on the frontier of Egypt.",
+        "VAT_ES": "Saúl derrotó a Amalec desde Javilá hasta la entrada de Sur, que está frente a Egipto.",
+        "CEI": "Saul colpì Amalek da Avila procedendo verso Sur, che è di fronte all'Egitto."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּתְפֹּ֛שׂ אֶת אֲגַ֥ג מֶֽלֶךְ עֲמָלֵ֖ק חָ֑י וְ/אֶת כָּל הָ/עָ֖ם הֶחֱרִ֥ים לְ/פִי חָֽרֶב׃",
+        "LXX": "καὶ συνέλαβεν τὸν Ἀγὰγ βασιλέα Ἀμαλὴκ ζῶντα, καὶ πάντα τὸν λαὸν Ἰερεὶμ ἀπέκτεινεν ἐν στόματι ῥομφαίας.",
+        "VUL": "Et apprehendit Agag regem Amalec vivum : omne autem vulgus interfecit in ore gladii.",
+        "SYN": "и Агага, царя Амаликова, захватил живого, а народ весь истребил мечом [и Иерима умертвил].",
+        "NEO": "Il prit vivant Agag, roi d’Amalec, et il dévoua tout le peuple par anathème, en le passant au fil de l’épée.",
+        "NAB": "He took Agag, king of Amalek, alive, but on the rest of the people he put into effect the ban of destruction by the sword.",
+        "VAT_ES": "Capturó vivo a Agag, rey de Amalec, y consagró al exterminio a todo el pueblo, pasándolos al filo de la espada.",
+        "CEI": "Egli prese vivo Agag, re di Amalek, e passò a fil di spada tutto il popolo."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יַּחְמֹל֩ שָׁא֨וּל וְ/הָ/עָ֜ם עַל אֲגָ֗ג וְ/עַל מֵיטַ֣ב הַ/צֹּאן֩ וְ/הַ/בָּקָ֨ר וְ/הַ/מִּשְׁנִ֤ים וְ/עַל הַ/כָּרִים֙ וְ/עַל כָּל הַ/טּ֔וֹב וְ/לֹ֥א אָב֖וּ הַחֲרִימָ֑/ם וְ/כָל הַ/מְּלָאכָ֛ה נְמִבְזָ֥ה וְ/נָמֵ֖ס אֹתָ֥/הּ הֶחֱרִֽימוּ׃",
+        "LXX": "καὶ περιεποιήσατο Σαοὺλ καὶ πᾶς ὁ λαὸς τὸν Ἀγὰγ ζῶντα, καὶ τὰ ἀγαθὰ τῶν ποιμνίων καὶ τῶν βουκολίων καὶ τῶν ἐδεσμάτων καὶ τῶν ἀμπελώνων καὶ πάντων τῶν ἀγαθῶν, καὶ οὐκ ἐβούλετο αὐτὰ ἐξολεθρεῦσαι· καὶ πᾶν ἔργον ἠτιμωμένον καὶ ἐξουδενωμένον ἐξωλέθρευσαν.",
+        "VUL": "Et pepercit Saul et populus Agag, et optimis gregibus ovium et armentorum, et vestibus et arietibus, et universis quæ pulchra erant, nec voluerunt disperdere ea : quidquid vero vile fuit et reprobum, hoc demoliti sunt.",
+        "SYN": "Но Саул и народ пощадили Агага и лучших из овец и волов и откормленных ягнят, и все хорошее, и не хотели истребить, а все вещи маловажные и худые истребили.",
+        "NEO": "Mais Saül et le peuple épargnèrent Agag, ainsi que le meilleur des brebis, des bœufs, des bêtes de la seconde portée, les agneaux et tout ce qu’il y avait de bon ; ils ne voulurent pas le dévouer à l’anathème ; et tout ce qui était chétif et sans valeur, ils le vouèrent à l’anathème.",
+        "NAB": "He and his troops spared Agag and the best of the fat sheep and oxen, and the lambs. They refused to carry out the doom on anything that was worthwhile, dooming only what was worthless and of no account.",
+        "VAT_ES": "Pero Saúl y el pueblo perdonaron la vida a Agag y a lo mejor del ganado mayor y menor, a los animales cebados, a los corderos y a todo lo que había de bueno, y no quisieron consagrarlos al exterminio. Exterminaron, en cambio, todo lo que era despreciable y sin valor.",
+        "CEI": "Ma Saul e il popolo risparmiarono Agag e il meglio del bestiame minuto e grosso, gli animali grassi e gli agnelli, cioè tutto il meglio, e non vollero sterminarli; invece votarono allo sterminio tutto il bestiame scadente e patito."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ דְּבַר יְהוָ֔ה אֶל שְׁמוּאֵ֖ל לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγενήθη ῥῆμα Κυρίου πρὸς Σαμουὴλ λέγων",
+        "VUL": "Factum est autem verbum Domini ad Samuel, dicens :",
+        "SYN": "И было слово Господа к Самуилу такое:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** fut adressée à Samuel, en ces termes :",
+        "NAB": "Then the LORD spoke to Samuel:",
+        "VAT_ES": "La palabra del Señor llegó entonces a Samuel en estos términos:",
+        "CEI": "Allora fu rivolta a Samuele questa parola del Signore:"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "נִחַ֗מְתִּי כִּֽי הִמְלַ֤כְתִּי אֶת שָׁאוּל֙ לְ/מֶ֔לֶךְ כִּֽי שָׁב֙ מֵ/אַֽחֲרַ֔/י וְ/אֶת דְּבָרַ֖/י לֹ֣א הֵקִ֑ים וַ/יִּ֨חַר֙ לִ/שְׁמוּאֵ֔ל וַ/יִּזְעַ֥ק אֶל יְהוָ֖ה כָּל הַ/לָּֽיְלָה׃",
+        "LXX": "Παρακέκλημαι ὅτι ἐβασίλευσα τὸν Σαοὺλ εἰς βασιλέα, ὅτι ἀπέστρεψεν ἀπὸ ὄπισθέν μου καὶ τοὺς λόγους μου οὐκ ἐτήρησεν. καὶ ἠθύμησεν Σαμουήλ, καὶ ἐβόησεν πρὸς Κύριον ὅλην τὴν νύκτα.",
+        "VUL": "Pnitet me quod constituerim Saul regem : quia dereliquit me, et verba mea opere non implevit. Contristatusque est Samuel, et clamavit ad Dominum tota nocte.",
+        "SYN": "жалею, что поставил Я Саула царем, ибо он отвратился от Меня и слова Моего не исполнил. И опечалился Самуил и взывал к Господу целую ночь.",
+        "NEO": "« Je me repens d’avoir établi Saül pour roi, car il s’est détourné de moi, et il n’a pas exécuté mes paroles. » Samuel s’attrista, et il cria vers \\+w Yahweh|strong=\"H3068\"\\+w** toute la nuit.",
+        "NAB": "\"I regret having made Saul king, for he has turned from me and has not kept my command.\" At this Samuel grew angry and cried out to the LORD all night.",
+        "VAT_ES": "«Estoy arrepentido de haber hecho rey a Saúl, porque se ha apartado de mí y no ha cumplido mis palabras». Samuel quedó muy perturbado y pasó la noche clamando al Señor.",
+        "CEI": "\"Mi pento di aver costituito Saul re, perché si è allontanato da me e non ha messo in pratica la mia parola\". Samuele rimase turbato e alzò grida al Signore tutta la notte."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יַּשְׁכֵּ֧ם שְׁמוּאֵ֛ל לִ/קְרַ֥את שָׁא֖וּל בַּ/בֹּ֑קֶר וַ/יֻּגַּ֨ד לִ/שְׁמוּאֵ֜ל לֵ/אמֹ֗ר בָּֽא שָׁא֤וּל הַ/כַּרְמֶ֨לָ/ה֙ וְ/הִנֵּ֨ה מַצִּ֥יב ל/וֹ֙ יָ֔ד וַ/יִּסֹּב֙ וַֽ/יַּעֲבֹ֔ר וַ/יֵּ֖רֶד הַ/גִּלְגָּֽל׃",
+        "LXX": "καὶ ὤρθρισεν Σαμουὴλ καὶ ἐπορεύθη εἰς ἀπάντησιν Ἰσραὴλ πρωί· καὶ ἀπηγγέλη τῷ Σαοὺλ λέγοντες Ἥκει Σαμουὴλ εἰς Κάρμηλον, καὶ ἀνέστακεν αὐτῷ χεῖρα. καὶ ἐπέστρεψεν τὸ ἅρμα καὶ κατέβη εἰς Γάλγαλα",
+        "VUL": "Cumque de nocte surrexisset Samuel ut iret ad Saul mane, nuntiatum est Samueli eo quod venisset Saul in Carmelum, et erexisset sibi fornicem triumphalem, et reversus transisset, descendissetque in Galgala. Venit ergo Samuel ad Saul, et Saul offerebat holocaustum Domino de initiis prædarum quæ attulerat ex Amalec.",
+        "SYN": "И встал Самуил рано утром _и_ _пошел_ навстречу Саулу. И известили Самуила, что Саул ходил на Кармил и там поставил себе памятник, [но оттуда возвратил колесницу] и сошел в Галгал.",
+        "NEO": "Samuel se leva de bon matin pour aller à la rencontre de Saül ; et on avertit Samuel en disant : « Saül est allé à Carmel, et voici qu’il s’est élevé un monument ; puis il s’en est retourné et, passant plus loin, il est descendu à Galgala. »",
+        "NAB": "Early in the morning he went to meet Saul, but was informed that Saul had gone to Carmel, where he erected a trophy in his own honor, and that on his return he had passed on and gone down to Gilgal.",
+        "VAT_ES": "A la mañana temprano, Samuel partió al encuentro de Saúl, y le dieron esta información: «Saúl llegó a Carmel y allí se erigió una columna conmemorativa; luego dio la vuelta y siguió adelante para bajar a Guilgal».",
+        "CEI": "Al mattino presto Samuele si alzò per andare incontro a Saul, ma fu annunziato a Samuele: \"Saul è andato a Carmel, ed ecco si è fatto costruire un trofeo, poi è tornato passando altrove ed è sceso a Gàlgala\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֥א שְׁמוּאֵ֖ל אֶל שָׁא֑וּל וַ/יֹּ֧אמֶר ל֣/וֹ שָׁא֗וּל בָּר֤וּךְ אַתָּה֙ לַֽ/יהוָ֔ה הֲקִימֹ֖תִי אֶת דְּבַ֥ר יְהוָֽה׃",
+        "LXX": "πρὸς Σαούλ, καὶ ἰδοὺ αὐτὸς ἀνέφερεν ὁλοκαύτωσιν τῷ κυρίῳ, τὰ πρῶτα τῶν σκύλων ὧν ἤνεγκεν ἐξ Ἀμαλήκ. καὶ παρεγένετο Σαμουὴλ πρὸς Σαούλ, καὶ εἶπεν αὐτῷ Σαούλ Εὐλογητὸς σὺ τῷ κυρίῳ· ἔστησα ὅσα ἐλάλησεν Κύριος.",
+        "VUL": "Et cum venisset Samuel ad Saul, dixit ei Saul : Benedictus tu Domino : implevi verbum Domini.",
+        "SYN": "Когда пришел Самуил к Саулу, то Саул сказал ему: благословен ты у Господа; я исполнил слово Господа.",
+        "NEO": "Samuel vint vers Saül, et Saül lui dit : « Sois béni de \\+w Yahweh|strong=\"H3068\"\\+w** ! J’ai exécuté la parole de \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "When Samuel came to him, Saul greeted him: \"The LORD bless you! I have kept the command of the LORD.\"",
+        "VAT_ES": "Entonces Samuel se presentó ante Saúl y este le dijo: «&iexcl;Que el Señor te bendiga! Ya he cumplido la palabra del Señor».",
+        "CEI": "Samuele raggiunse Saul e Saul gli disse: \"Benedetto tu davanti al Signore; ho eseguito gli ordini del Signore\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שְׁמוּאֵ֔ל וּ/מֶ֛ה קֽוֹל הַ/צֹּ֥אן הַ/זֶּ֖ה בְּ/אָזְנָ֑/י וְ/ק֣וֹל הַ/בָּקָ֔ר אֲשֶׁ֥ר אָנֹכִ֖י שֹׁמֵֽעַ׃",
+        "LXX": "καὶ εἶπεν Σαμουήλ Καὶ τίς ἡ φωνὴ τοῦ ποιμνίου τούτου ἐν τοῖς ὠσίν μου, καὶ φωνὴ τῶν βοῶν ἣν ἐγὼ ἀκούω;",
+        "VUL": "Dixitque Samuel : Et quæ est hæc vox gregum, quæ resonat in auribus meis, et armentorum, quam ego audio ?",
+        "SYN": "И сказал Самуил: а что это за блеяние овец в ушах моих и мычание волов, которое я слышу?",
+        "NEO": "Samuel dit : « Qu’est-ce donc que ce bêlement de brebis à mes oreilles, et ce mugissement de bœufs que j’entends ? »",
+        "NAB": "But Samuel asked, \"What, then, is the meaning of this bleating of sheep that comes to my ears, and the lowing of oxen that I hear?\"",
+        "VAT_ES": "Pero Samuel le preguntó: «&iquest;Qué son esos balidos que oigo y esos mugidos que llegan a mis oídos?».",
+        "CEI": "Rispose Samuele: \"Ma che è questo belar di pecore, che mi giunge all'orecchio, e questi muggiti d'armento che odo?\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר שָׁא֜וּל מֵ/עֲמָלֵקִ֣י הֱבִיא֗וּ/ם אֲשֶׁ֨ר חָמַ֤ל הָ/עָם֙ עַל מֵיטַ֤ב הַ/צֹּאן֙ וְ/הַ/בָּקָ֔ר לְמַ֥עַן זְבֹ֖חַ לַ/יהוָ֣ה אֱלֹהֶ֑י/ךָ וְ/אֶת הַ/יּוֹתֵ֖ר הֶחֱרַֽמְנוּ׃",
+        "LXX": "καὶ εἶπεν Σαούλ Ἐξ Ἀμαλὴκ ἤνεγκα αὐτά, ἃ περιεποιήσατο ὁ λαός, τὰ κράτιστα τοῦ ποιμνίου καὶ τῶν βοῶν, ὅπως τυθῇ τῷ κυρίῳ θεῷ σου· καὶ τὰ λοιπὰ ἐξωλέθρευσα.",
+        "VUL": "Et ait Saul : De Amalec adduxerunt ea : pepercit enim populus melioribus ovibus et armentis ut immolarentur Domino Deo tuo, reliqua vero occidimus.",
+        "SYN": "И сказал Саул: привели их от Амалика, так как народ пощадил лучших из овец и волов для жертвоприношения Господу Богу твоему; прочее же мы истребили.",
+        "NEO": "Saül répondit : « Ils les ont amenés de chez les Amalécites, car le peuple a épargné le meilleur des brebis et des bœufs pour les sacrifier à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu ; le reste, nous l’avons voué à l’anathème. »",
+        "NAB": "Saul replied: \"They were brought from Amalek. The men spared the best sheep and oxen to sacrifice to the LORD, your God; but we have carried out the ban on the rest.\"",
+        "VAT_ES": "Saúl respondió: «Los han traído a Amalec, porque el pueblo ha perdonado lo mejor del ganado mayor y menor, para ofrecer sacrificios al Señor, tu Dios. El resto lo hemos consagrado al exterminio».",
+        "CEI": "Disse Saul: \"Li hanno condotti qui dagli Amaleciti, come il meglio del bestiame grosso e minuto, che il popolo ha risparmiato per sacrificarli al Signore, tuo Dio. Il resto l'abbiamo votato allo sterminio\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר שְׁמוּאֵל֙ אֶל שָׁא֔וּל הֶ֚רֶף וְ/אַגִּ֣ידָה לְּ/ךָ֔ אֵת֩ אֲשֶׁ֨ר דִּבֶּ֧ר יְהוָ֛ה אֵלַ֖/י הַ/לָּ֑יְלָה ו/יאמרו וַ/יֹּ֥אמֶר ל֖/וֹ דַּבֵּֽר׃",
+        "LXX": "καὶ εἶπεν Σαμουὴλ πρὸς Σαούλ Ἄνες, καὶ ἀπαγγελῶ σοι ἃ ἐλάλησεν Κύριος πρὸς μὲ τὴν νύκτα· καὶ εἶπεν αὐτῷ Λάλησον.",
+        "VUL": "Ait autem Samuel ad Saul : Sine me, et indicabo tibi quæ locutus sit Dominus ad me nocte. Dixitque ei : Loquere.",
+        "SYN": "И сказал Самуил Саулу: подожди, я скажу тебе, что сказал мне Господь ночью. И сказал ему Саул: говори.",
+        "NEO": "Samuel dit à Saül : « Assez ! Je vais te faire connaître ce que \\+w Yahweh|strong=\"H3068\"\\+w** m’a dit cette nuit. » Et Saül lui dit : « Parle ! »",
+        "NAB": "Samuel said to Saul: \"Stop! Let me tell you what the LORD said to me last night.\" \"Speak!\" he replied.",
+        "VAT_ES": "Entonces Samuel dijo a Saúl: «&iexcl;Basta! Voy a anunciarte lo que el Señor me dijo anoche». «Habla», replicó él.",
+        "CEI": "Rispose Samuele a Saul: \"Basta! Lascia che ti annunzi ciò che il Signore mi ha rivelato questa notte\". E Saul gli disse: \"Parla!\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שְׁמוּאֵ֔ל הֲ/ל֗וֹא אִם קָטֹ֤ן אַתָּה֙ בְּ/עֵינֶ֔י/ךָ רֹ֛אשׁ שִׁבְטֵ֥י יִשְׂרָאֵ֖ל אָ֑תָּה וַ/יִּמְשָׁחֲ/ךָ֧ יְהוָ֛ה לְ/מֶ֖לֶךְ עַל יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ εἶπεν Σαμουὴλ πρὸς Σαούλ Οὐχὶ μικρὸς σὺ εἶ ἐνώπιον αὐτοῦ, ἡγούμενος σκήπτρου φυλῆς Ἰσραήλ; καὶ ἔχρισέν σε Κύριος εἰς βασιλέα ἐπὶ Ἰσραήλ.",
+        "VUL": "Et ait Samuel : Nonne cum parvulus esses in oculis tuis, caput in tribubus Israël factus es ? unxitque te Dominus in regem super Israël,",
+        "SYN": "И сказал Самуил: не малым ли ты был в глазах твоих, когда сделался главою колен Израилевых, и Господь помазал тебя царем над Израилем?",
+        "NEO": "Samuel dit : « Est-ce que, lorsque tu étais petit à tes propres yeux, tu n’es pas devenu le chef des tribus d’Israël, et \\+w Yahweh|strong=\"H3068\"\\+w** ne t’a-t-il pas oint pour roi sur Israël ?",
+        "NAB": "Samuel then said: \"Though little in your own esteem, are you not leader of the tribes of Israel? The LORD anointed you king of Israel",
+        "VAT_ES": "Samuel añadió: «Aunque tú mismo te consideres poca cosa, &iquest;no estás al frente de las tribus de Israel? El Señor te ha ungido rey de Israel.",
+        "CEI": "Samuele cominciò: \"Non sei tu capo delle tribù d'Israele, benché piccolo ai tuoi stessi occhi? Non ti ha forse il Signore consacrato re d'Israele?"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלָחֲ/ךָ֥ יְהוָ֖ה בְּ/דָ֑רֶךְ וַ/יֹּ֗אמֶר לֵ֣ךְ וְ/הַחֲרַמְתָּ֞ה אֶת הַֽ/חַטָּאִים֙ אֶת עֲמָלֵ֔ק וְ/נִלְחַמְתָּ֣ ב֔/וֹ עַ֥ד כַּלּוֹתָ֖/ם אֹתָֽ/ם׃",
+        "LXX": "καὶ ἀπέστειλέν σε Κύριος ἐν ὁδῷ καὶ εἶπέν σοι Πορεύθητι καὶ ἐξολέθρευσον· ἀνελεῖς τοὺς ἁμαρτάνοντας εἰς ἐμέ, τὸν Ἀμαλήκ, καὶ πολεμήσεις αὐτοὺς ἕως συντελέσῃς αὐτούς.",
+        "VUL": "et misit te Dominus in viam, et ait : Vade, et interfice peccatores Amalec, et pugnabis contra eos usque ad internecionem eorum ?",
+        "SYN": "И послал тебя Господь в путь, сказав: \"иди и предай заклятию нечестивых Амаликитян и воюй против них, доколе не уничтожишь их\".",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** t’avait envoyé dans le chemin en disant : Va, et dévoue à l’anathème ces pécheurs, les Amalécites, et combats-les jusqu’à ce qu’ils soient exterminés.",
+        "NAB": "and sent you on a mission, saying, 'Go and put the sinful Amalekites under a ban of destruction. Fight against them until you have exterminated them.'",
+        "VAT_ES": "El te mandó hacer una expedición y le dijo: Ve y consagra al exterminio a esos pecadores, los amalecitas; combátelos hasta acabar con ellos.",
+        "CEI": "Il Signore ti aveva mandato per una spedizione e aveva detto: Và, vota allo sterminio quei peccatori di Amaleciti, combattili finché non li avrai distrutti."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/לָ֥/מָּה לֹא שָׁמַ֖עְתָּ בְּ/ק֣וֹל יְהוָ֑ה וַ/תַּ֨עַט֙ אֶל הַ/שָּׁלָ֔ל וַ/תַּ֥עַשׂ הָ/רַ֖ע בְּ/עֵינֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἵνα τί οὐκ ἤκουσας φωνῆς Κυρίου, ἀλλ’ ὥρμησας τοῦ θέσθαι ἐπὶ τὰ σκῦλα καὶ ἐποίησας τὸ πονηρὸν ἐνώπιον Κυρίου;",
+        "VUL": "Quare ergo non audisti vocem Domini : sed versus ad prædam es, et fecisti malum in oculis Domini ?",
+        "SYN": "Зачем же ты не послушал гласа Господа и бросился на добычу, и сделал зло пред очами Господа?",
+        "NEO": "Pourquoi n’as-tu pas écouté la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, et t’es-tu jeté sur le butin, et as-tu fait ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w** ? »",
+        "NAB": "Why then have you disobeyed the LORD? You have pounced on the spoil, thus displeasing the LORD.\"",
+        "VAT_ES": "&iquest;Por qué entonces no has escuchado la voz del Señor? &iquest;Por qué te has lanzado sobre el botín y has hecho lo malo a los ojos del Señor?».",
+        "CEI": "Perché dunque non hai ascoltato la voce del Signore e ti sei attaccato al bottino e hai fatto il male agli occhi del Signore?\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר שָׁא֜וּל אֶל שְׁמוּאֵ֗ל אֲשֶׁ֤ר שָׁמַ֨עְתִּי֙ בְּ/ק֣וֹל יְהוָ֔ה וָ/אֵלֵ֕ךְ בַּ/דֶּ֖רֶךְ אֲשֶׁר שְׁלָחַ֣/נִי יְהוָ֑ה וָ/אָבִ֗יא אֶת אֲגַג֙ מֶ֣לֶךְ עֲמָלֵ֔ק וְ/אֶת עֲמָלֵ֖ק הֶחֱרַֽמְתִּי׃",
+        "LXX": "καὶ εἶπεν Σαοὺλ πρὸς Σαμουήλ Διὰ τὸ ἀκοῦσαί με τῆς φωνῆς τοῦ λαοῦ· καὶ ἐπορεύθην τῇ ὁδῷ ᾗ ἀπέστειλέν με Κύριος, καὶ ἤγαγον τὸν Ἀγὰγ βασιλέα Ἀμαλήκ, καὶ τὸν Ἀμαλὴκ ἐξωλέθρευσα.",
+        "VUL": "Et ait Saul ad Samuelem : Immo audivi vocem Domini, et ambulavi in via per quam misit me Dominus, et adduxi Agag regem Amalec, et Amalec interfeci.",
+        "SYN": "И сказал Саул Самуилу: я послушал гласа Господа и пошел в путь, куда послал меня Господь, и привел Агага, царя Амаликитского, а Амалика истребил;",
+        "NEO": "Saül dit à Samuel : « Mais oui, j’ai écouté la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, et j’ai marché dans le chemin où \\+w Yahweh|strong=\"H3068\"\\+w** m’envoyait. J’ai amené Agag, roi d’Amalec, et j’ai voué Amalec à l’anathème.",
+        "NAB": "Saul answered Samuel: \"I did indeed obey the LORD and fulfill the mission on which the LORD sent me. I have brought back Agag, and I have destroyed Amalek under the ban.",
+        "VAT_ES": "Saúl le replicó: «&iexcl;Yo escuché la voz del Señor! Hice la expedición que él me había encomendado; traje a Agad, rey de Amalec, consagré al exterminio a los amalecitas,",
+        "CEI": "Saul insistè con Samuele: \"Ma io ho obbedito alla parola del Signore, ho fatto la spedizione che il Signore mi ha ordinato, ho condotto Agag re di Amalek e ho sterminato gli Amaleciti."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֨ח הָ/עָ֧ם מֵ/הַ/שָּׁלָ֛ל צֹ֥אן וּ/בָקָ֖ר רֵאשִׁ֣ית הַ/חֵ֑רֶם לִ/זְבֹּ֛חַ לַֽ/יהוָ֥ה אֱלֹהֶ֖י/ךָ בַּ/גִּלְגָּֽל׃",
+        "LXX": "καὶ ἔλαβεν ὁ λαὸς τῶν σκύλων ποίμνια καὶ βουκόλια τὰ πρῶτα τοῦ ἐξολεθρεύματος, ἐνώπιον Κυρίου θεοῦ ἡμῶν ἐν Γαλγάλοις.",
+        "VUL": "Tulit autem de præda populus oves et boves, primitias eorum quæ cæsa sunt, ut immolet Domino Deo suo in Galgalis.",
+        "SYN": "народ же из добычи, из овец и волов, взял лучшее из заклятого, для жертвоприношения Господу Богу твоему, в Галгале.",
+        "NEO": "Et le peuple a pris, sur le butin des brebis et des bœufs, les prémices de l’anathème, pour les sacrifier à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, à Galgala. »",
+        "NAB": "But from the spoil the men took sheep and oxen, the best of what had been banned, to sacrifice to the LORD their God in Gilgal.\"",
+        "VAT_ES": "y el pueblo tomó del botín ovejas y vacas, lo mejor de lo destinado al exterminio, para ofrecer sacrificios al Señor, tu Dios, en Guilgal».",
+        "CEI": "Il popolo poi ha preso dal bottino pecore e armenti, primizie di ciò che è votato allo sterminio per sacrificare al Signore tuo Dio in Gàlgala\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שְׁמוּאֵ֗ל הַ/חֵ֤פֶץ לַֽ/יהוָה֙ בְּ/עֹל֣וֹת וּ/זְבָחִ֔ים כִּ/שְׁמֹ֖עַ בְּ/ק֣וֹל יְהוָ֑ה הִנֵּ֤ה שְׁמֹ֨עַ֙ מִ/זֶּ֣בַח ט֔וֹב לְ/הַקְשִׁ֖יב מֵ/חֵ֥לֶב אֵילִֽים׃",
+        "LXX": "καὶ εἶπεν Σαμουήλ Εἰ θελητὸν τῷ κυρίῳ ὁλοκαυτώματα καὶ θυσίας ὡς τὸ ἀκοῦσαι φωνῆς Κυρίου; ἰδοὺ ἀκοὴ ὑπὲρ θυσίαν ἀγαθήν, καὶ ἡ ἐπακρόασις ὑπὲρ στέαρ κριῶν.",
+        "VUL": "Et ait Samuel : Numquid vult Dominus holocausta et victimas, et non potius ut obediatur voci Domini ? melior est enim obedientia quam victimæ, et auscultare magis quam offerre adipem arietum.",
+        "SYN": "И отвечал Самуил: неужели всесожжения и жертвы столько же приятны Господу, как послушание гласу Господа? Послушание лучше жертвы и повиновение лучше тука овнов;",
+        "NEO": "Samuel dit : « \\+w Yahweh|strong=\"H3068\"\\+w** trouve-t-il du plaisir aux holocaustes et aux sacrifices, comme à l’obéissance à la voix de \\+w Yahweh|strong=\"H3068\"\\+w** ?",
+        "NAB": "But Samuel said: \"Does the LORD so delight in holocausts and sacrifices as in obedience to the command of the LORD? Obedience is better than sacrifice, and submission than the fat of rams.",
+        "VAT_ES": "Samuel respondió: «&iquest;Quiere el Señor holocaustos y sacrificios o quiere que se obedezca su voz? La obediencia vale más que el sacrificio; la docilidad, más que la grasa de carneros.",
+        "CEI": "Samuele esclamò: \"Il Signore forse gradisce gli olocausti e i sacrifici come obbedire alla voce del Signore? Ecco, obbedire è meglio del sacrificio, essere docili è più del grasso degli arieti."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "כִּ֤י חַטַּאת קֶ֨סֶם֙ מֶ֔רִי וְ/אָ֥וֶן וּ/תְרָפִ֖ים הַפְצַ֑ר יַ֗עַן מָאַ֨סְתָּ֙ אֶת דְּבַ֣ר יְהוָ֔ה וַ/יִּמְאָסְ/ךָ֖ מִ/מֶּֽלֶךְ׃",
+        "LXX": "ὅτι ἁμαρτία οἰώνισμά ἐστιν, ὀδύνη καὶ πόνος θεραπείαν ἐπάγουσιν· ὅτι ἐξουδένωσας τὸ ῥῆμα Κυρίου, καὶ ἐξουδενώσει σε Κύριος μὴ εἶναι βασιλέα ἐπὶ Ἰσραήλ.",
+        "VUL": "Quoniam quasi peccatum ariolandi est, repugnare : et quasi scelus idololatriæ, nolle acquiescere. Pro eo ergo quod abjecisti sermonem Domini, abjecit te Dominus ne sis rex.",
+        "SYN": "ибо непокорность есть _такой_ _же_ грех, что волшебство, и противление _то_ _же,_ _что_ идолопоклонство; за то, что ты отверг слово Господа, и Он отверг тебя, чтобы ты не был царем [над Израилем].",
+        "NEO": "Car la rébellion est aussi coupable que la divination, et la résistance que l’idolâtrie et les théraphim. Puisque tu as rejeté la parole de \\+w Yahweh|strong=\"H3068\"\\+w**, il te rejette aussi pour que tu ne sois plus roi. »",
+        "NAB": "For a sin like divination is rebellion, and presumption is the crime of idolatry. Because you have rejected the command of the LORD, he, too, has rejected you as ruler.\"",
+        "VAT_ES": "Como pecado de hechicería es la rebeldía; como crimen de idolatría es la contumacia. Porque tú has rechazado la palabra del Señor, él te ha rechazado a ti para que no seas rey».",
+        "CEI": "Poiché peccato di divinazione è la ribellione, e iniquità e terafim l'insubordinazione. Perché hai rigettato la parola del Signore, Egli ti ha rigettato come re\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר שָׁא֤וּל אֶל שְׁמוּאֵל֙ חָטָ֔אתִי כִּֽי עָבַ֥רְתִּי אֶת פִּֽי יְהוָ֖ה וְ/אֶת דְּבָרֶ֑י/ךָ כִּ֤י יָרֵ֨אתִי֙ אֶת הָ/עָ֔ם וָ/אֶשְׁמַ֖ע בְּ/קוֹלָֽ/ם׃",
+        "LXX": "καὶ εἶπεν Σαοὺλ πρὸς Σαμουήλ Ἡμάρτηκα· ὅτι παρέβην τὸν λόγον Κυρίου καὶ τὸ ῥῆμά σου, ὅτι ἐφοβήθην τὸν λαὸν καὶ ἤκουσα τῆς φωνῆς αὐτῶν.",
+        "VUL": "Dixitque Saul ad Samuelem : Peccavi, quia prævaricatus sum sermonem Domini et verba tua, timens populum, et obediens voci eorum.",
+        "SYN": "И сказал Саул Самуилу: согрешил я, ибо преступил повеление Господа и слово твое; но я боялся народа и послушал голоса их;",
+        "NEO": "Alors Saül dit à Samuel : « J’ai péché, car j’ai transgressé l’ordre de \\+w Yahweh|strong=\"H3068\"\\+w** et tes paroles ; je craignais le peuple et j’ai écouté sa voix.",
+        "NAB": "Saul replied to Samuel: \"I have sinned, for I have disobeyed the command of the LORD and your instructions. In my fear of the people, I did what they said.",
+        "VAT_ES": "Saúl dijo a Samuel: «He pecado, porque transgredí la orden del Señor y tus palabras. Tuve miedo del pueblo y escuché su demanda.",
+        "CEI": "Saul disse allora a Samuele: \"Ho peccato per avere trasgredito il comando del Signore e i tuoi ordini, mentre ho temuto il popolo e ho ascoltato la sua voce."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֕ה שָׂ֥א נָ֖א אֶת חַטָּאתִ֑/י וְ/שׁ֣וּב עִמִּ֔/י וְ/אֶֽשְׁתַּחֲוֶ֖ה לַֽ/יהוָֽה׃",
+        "LXX": "καὶ νῦν ἆρον δὴ τὸ ἁμάρτημά μου καὶ ἀνάστρεψον μετ’ ἐμοῦ, καὶ προσκυνήσω κυρίῳ τῷ θεῷ σου.",
+        "VUL": "Sed nunc porta, quæso, peccatum meum, et revertere mecum, ut adorem Dominum.",
+        "SYN": "теперь же сними с меня грех мой и воротись со мною, чтобы я поклонился Господу [Богу твоему].",
+        "NEO": "Maintenant, je te prie, pardonne mon péché, reviens avec moi, et j’adorerai \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "Now forgive my sin, and return with me, that I may worship the LORD.\"",
+        "VAT_ES": "Pero ahora, te ruego, que perdones mi pecado; vuelve conmigo, e iré a postrarme delante del Señor».",
+        "CEI": "Ma ora, perdona il mio peccato e ritorna con me, perché mi prostri al Signore\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר שְׁמוּאֵל֙ אֶל שָׁא֔וּל לֹ֥א אָשׁ֖וּב עִמָּ֑/ךְ כִּ֤י מָאַ֨סְתָּה֙ אֶת דְּבַ֣ר יְהוָ֔ה וַ/יִּמְאָסְ/ךָ֣ יְהוָ֔ה מִ/הְי֥וֹת מֶ֖לֶךְ עַל יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ εἶπεν Σαμουὴλ πρὸς Σαούλ Οὐκ ἀναστρέφω μετὰ σοῦ, ὅτι ἐξουδένωσας τὸ ῥῆμα Κυρίου, καὶ ἐξουδενώσει σε Κύριος τοῦ μὴ εἶναι βασιλέα ἐπὶ τὸν Ἰσραήλ.",
+        "VUL": "Et ait Samuel ad Saul : Non revertar tecum, quia projecisti sermonem Domini, et projecit te Dominus ne sis rex super Israël.",
+        "SYN": "И отвечал Самуил Саулу: не ворочусь я с тобою, ибо ты отверг слово Господа, и Господь отверг тебя, чтобы ты не был царем над Израилем.",
+        "NEO": "Samuel dit à Saül : « Je ne reviendrai pas avec toi, car tu as rejeté la parole de \\+w Yahweh|strong=\"H3068\"\\+w**, et \\+w Yahweh|strong=\"H3068\"\\+w** te rejette afin que tu ne sois plus roi sur Israël. »",
+        "NAB": "But Samuel said to Saul, \"I will not return with you, because you rejected the command of the LORD and the LORD rejects you as king of Israel.\"",
+        "VAT_ES": "Samuel respondió a Saúl: «No volveré contigo, porque tú has rechazado la palabra del Señor, y él te ha rechazado a ti para que ya no seas más rey de Israel».",
+        "CEI": "Ma Samuele rispose a Saul: \"Non posso ritornare con te, perché tu stesso hai rigettato la parola del Signore e il Signore ti ha rigettato perché tu non sia più re sopra Israele\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יִּסֹּ֥ב שְׁמוּאֵ֖ל לָ/לֶ֑כֶת וַ/יַּחֲזֵ֥ק בִּ/כְנַף מְעִיל֖/וֹ וַ/יִּקָּרַֽע׃",
+        "LXX": "καὶ ἐπέστρεψεν Σαμουὴλ τὸ πρόσωπον αὐτοῦ τοῦ ἀπελθεῖν, καὶ ἐκράτησεν Σαοὺλ τοῦ πτερυγίου τῆς διπλοίδος αὐτοῦ καὶ διέρρηξεν αὐτό.",
+        "VUL": "Et conversus est Samuel ut abiret : ille autem apprehendit summitatem pallii ejus, quæ et scissa est.",
+        "SYN": "И обратился Самуил, чтобы уйти. Но [Саул] ухватился за край одежды его и разодрал ее.",
+        "NEO": "Et, comme Samuel se tournait pour s’en aller, Saül saisit l’extrémité de son manteau, qui se déchira.",
+        "NAB": "As Samuel turned to go, Saul seized a loose end of his mantle, and it tore off.",
+        "VAT_ES": "Samuel se dio vuelta para irse, pero Saúl le tomó el borde de su manto, y este se rasgó.",
+        "CEI": "Samuele si voltò per andarsene ma Saul gli afferrò un lembo del mantello, che si strappò."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֵלָי/ו֙ שְׁמוּאֵ֔ל קָרַ֨ע יְהוָ֜ה אֶֽת מַמְלְכ֧וּת יִשְׂרָאֵ֛ל מֵ/עָלֶ֖י/ךָ הַ/יּ֑וֹם וּ/נְתָנָ֕/הּ לְ/רֵעֲ/ךָ֖ הַ/טּ֥וֹב מִמֶּֽ/ךָּ׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτὸν Σαμουήλ Διέρρηξεν Κύριος τὴν βασιλείαν σου ἀπὸ Ἰσραὴλ ἐκ χειρός σου σήμερον, καὶ δώσει αὐτὴν τῷ πλησίον σου τῷ ἀγαθῷ ὑπὲρ σέ·",
+        "VUL": "Et ait ad eum Samuel : Scidit Dominus regnum Israël a te hodie, et tradidit illud proximo tuo meliori te.",
+        "SYN": "Тогда сказал Самуил: ныне отторг Господь царство Израильское от тебя и отдал его ближнему твоему, лучшему тебя;",
+        "NEO": "Et Samuel lui dit : « \\+w Yahweh|strong=\"H3068\"\\+w** a déchiré aujourd’hui de dessus toi la royauté d’Israël, et il l’a donnée à ton voisin qui est meilleur que toi.",
+        "NAB": "So Samuel said to him: \"The LORD has torn the kingdom of Israel from you this day, and has given it to a neighbor of yours, who is better than you.",
+        "VAT_ES": "Entonces Samuel le dijo: «Hoy el Señor te ha arrebatado el poder real sobre Israel, y se lo ha conferido a otro mejor que tú».",
+        "CEI": "Samuele gli disse: \"Il Signore ha strappato da te il regno d'Israele e l'ha dato ad un altro migliore di te."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/גַם֙ נֵ֣צַח יִשְׂרָאֵ֔ל לֹ֥א יְשַׁקֵּ֖ר וְ/לֹ֣א יִנָּחֵ֑ם כִּ֣י לֹ֥א אָדָ֛ם ה֖וּא לְ/הִנָּחֵֽם׃",
+        "LXX": "καὶ διαιρεθήσεται Ἰσραὴλ εἰς δύο, καὶ οὐκ ἀποστρέψει οὐδὲ μετανοήσει, ὅτι οὐχ ὡς ἄνθρωπός ἐστιν τοῦ μετανοῆσαι αὐτός.",
+        "VUL": "Porro triumphator in Israël non parcet, et pnitudine non flectetur : neque enim homo est ut agat pnitentiam.",
+        "SYN": "и не скажет неправды и не раскается Верный Израилев; ибо не человек Он, чтобы раскаяться Ему.",
+        "NEO": "Celui qui est la splendeur d’Israël ne ment pas et ne se repent point, car il n’est pas un homme pour se repentir. »",
+        "NAB": "The Glory of Israel neither retracts nor repents, for he is not man that he should repent.\"",
+        "VAT_ES": "–Sin embargo, el Esplendor de Israel no miente ni se arrepiente, porque él no es un hombre para arrepentirse–.",
+        "CEI": "D'altra parte la Gloria di Israele non mentisce né può ricredersi, perché Egli non è uomo per ricredersi\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר חָטָ֔אתִי עַתָּ֗ה כַּבְּדֵ֥/נִי נָ֛א נֶ֥גֶד זִקְנֵֽי עַמִּ֖/י וְ/נֶ֣גֶד יִשְׂרָאֵ֑ל וְ/שׁ֣וּב עִמִּ֔/י וְ/הִֽשְׁתַּחֲוֵ֖יתִי לַֽ/יהוָ֥ה אֱלֹהֶֽי/ךָ׃",
+        "LXX": "καὶ εἶπεν Σαούλ Ἡμάρτηκα, ἀλλὰ δόξασόν με δὴ ἐνώπιον πρεσβυτέρων Ἰσραὴλ καὶ ἐνώπιον λαοῦ μου, καὶ ἀνάστρεψον μετ’ ἐμοῦ καὶ προσκυνήσω τῷ κυρίῳ θεῷ σου.",
+        "VUL": "At ille ait : Peccavi : sed nunc honora me coram senioribus populi mei et coram Israël, et revertere mecum, ut adorem Dominum Deum tuum.",
+        "SYN": "И сказал [Саул]: я согрешил, но почти меня ныне пред старейшинами народа моего и пред Израилем и воротись со мною, и я поклонюсь Господу Богу твоему.",
+        "NEO": "Saül dit : « J’ai péché ! Maintenant, honore-moi, je te prie, en présence des anciens de mon peuple et en présence d’Israël ; reviens avec moi, et j’adorerai \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu. »",
+        "NAB": "But he answered: \"I have sinned, yet honor me now before the elders of my people and before Israel. Return with me that I may worship the LORD your God.\"",
+        "VAT_ES": "Saúl dijo: «He pecado, pero te ruego que me honres ante los ancianos de mi pueblo y ante Israel: vuelve conmigo, y me postraré ante el Señor, tu Dios».",
+        "CEI": "Saul disse: \"Ho peccato sì, ma onorami davanti agli anziani del mio popolo e davanti a Israele; ritorna con me perché mi prostri al Signore tuo Dio\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥שָׁב שְׁמוּאֵ֖ל אַחֲרֵ֣י שָׁא֑וּל וַ/יִּשְׁתַּ֥חוּ שָׁא֖וּל לַֽ/יהוָֽה׃",
+        "LXX": "καὶ ἀνέστρεψεν Σαμουὴλ ὀπίσω Σαούλ, καὶ προσεκύνησεν τῷ κυρίῳ.",
+        "VUL": "Reversus ergo Samuel secutus est Saulem : et adoravit Saul Dominum.",
+        "SYN": "И возвратился Самуил за Саулом, и поклонился Саул Господу.",
+        "NEO": "Samuel revint et suivit Saül, et Saül adora \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "And so Samuel returned with him, and Saul worshiped the LORD.",
+        "VAT_ES": "Entonces Samuel volvió en compañía de Saúl, y este se postró delante del Señor.",
+        "CEI": "Samuele ritornò con Saul e questi si prostrò al Signore."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שְׁמוּאֵ֗ל הַגִּ֤ישׁוּ אֵלַ/י֙ אֶת אֲגַג֙ מֶ֣לֶךְ עֲמָלֵ֔ק וַ/יֵּ֣לֶךְ אֵלָ֔י/ו אֲגַ֖ג מַעֲדַנֹּ֑ת וַ/יֹּ֣אמֶר אֲגָ֔ג אָכֵ֖ן סָ֥ר מַר הַ/מָּֽוֶת׃",
+        "LXX": "Καὶ εἶπεν Σαμουήλ Προσαγάγετέ μοι τὸν Ἀγὰγ βασιλέα Ἀμαλήκ· καὶ προσῆλθεν πρὸς αὐτὸν Ἀγὰγ τρέμων. καὶ εἶπεν Ἀγάγ Εἰ οὕτως πικρὸς ὁ θάνατος;",
+        "VUL": "Dixitque Samuel : Adducite ad me Agag regem Amalec. Et oblatus est ei Agag, pinguissimus et tremens. Et dixit Agag : Siccine separat amara mors ?",
+        "SYN": "Потом сказал Самуил: приведите ко мне Агага, царя Амаликитского. И подошел к нему Агаг дрожащий, и сказал Агаг: конечно горечь смерти миновалась?",
+        "NEO": "Et Samuel dit : « Amenez-moi Agag, roi d’Amalec. » Et Agag s’avança vers lui d’un air joyeux ; Agag disait : Certainement l’amertume de la mort est passée !",
+        "NAB": "Afterward Samuel commanded, \"Bring Agag, king of Amalek, to me.\" Agag came to him struggling and saying, \"So it is bitter death!\"",
+        "VAT_ES": "Luego dijo Samuel: «Tráiganme a Agag, rey de los amalecitas». Agag se acercó a él muy complacido, pensando: «Seguramente, me he librado de la amargura de la muerte».",
+        "CEI": "Poi Samuele disse: \"Conducetemi Agag, re di Amalek\". Agag avanzò verso di lui tutto tremante, dicendo: \"Certo è passata l'amarezza della morte!\"."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שְׁמוּאֵ֔ל כַּ/אֲשֶׁ֨ר שִׁכְּלָ֤ה נָשִׁים֙ חַרְבֶּ֔/ךָ כֵּן תִּשְׁכַּ֥ל מִ/נָּשִׁ֖ים אִמֶּ֑/ךָ וַ/יְשַׁסֵּ֨ף שְׁמוּאֵ֧ל אֶת אֲגָ֛ג לִ/פְנֵ֥י יְהוָ֖ה בַּ/גִּלְגָּֽל׃",
+        "LXX": "καὶ εἶπεν Σαμουὴλ πρὸς Ἀγάγ Καθότι ἠτέκνωσεν γυναῖκας ἡ ῥομφαία σου, οὕτως ἀτεκνωθήσεται ἐκ γυναικῶν ἡ μήτηρ σου· καὶ ἔσφαξεν Σαμουὴλ τὸν Ἀγὰγ ἐνώπιον Κυρίου ἐν Γαλγάλ.",
+        "VUL": "Et ait Samuel : Sicut fecit absque liberis mulieres gladius tuus, sic absque liberis erit inter mulieres mater tua. Et in frusta concidit eum Samuel coram Domino in Galgalis.",
+        "SYN": "Но Самуил сказал: как меч твой жен лишал детей, так мать твоя между женами пусть лишена будет _сына._ И разрубил Самуил Агага пред Господом в Галгале.",
+        "NEO": "Samuel dit : « De même que ton épée a privé des femmes de leurs enfants, ainsi ta mère sera privée d’enfants, entre les femmes ! » Et Samuel coupa Agag en morceaux devant \\+w Yahweh|strong=\"H3068\"\\+w**, à Galgala.",
+        "NAB": "And Samuel said, \"As your sword has made women childless, so shall your mother be childless among women.\" Then he cut Agag down before the LORD in Gilgal.",
+        "VAT_ES": "Pero Samuel dijo: «Como tu espada ha dejado sin hijos a tantas mujeres, así tu madre quedará sin su hijo entre las mujeres». Y descuartizó a Agag delante del Señor, en Guilgal.",
+        "CEI": "Samuele l'apostrofò: \"Come la tua spada ha privato di figli le donne, così sarà privata di figli tra le donne tua madre\". Poi Samuele trafisse Agag davanti al Signore in Gàlgala."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֥לֶךְ שְׁמוּאֵ֖ל הָ/רָמָ֑תָ/ה וְ/שָׁא֛וּל עָלָ֥ה אֶל בֵּית֖/וֹ גִּבְעַ֥ת שָׁאֽוּל׃",
+        "LXX": "Καὶ ἀπῆλθεν Σαμουὴλ εἰς Ἁρμαθάιμ· καὶ Σαοὺλ ἀνέβη εἰς τὸν οἶκον αὐτοῦ εἰς Γαβαά.",
+        "VUL": "Abiit autem Samuel in Ramatha : Saul vero ascendit in domum suam in Gabaa.",
+        "SYN": "И отошел Самуил в Раму, а Саул пошел в дом свой, в Гиву Саулову.",
+        "NEO": "Samuel partit pour Rama, et Saül monta dans sa maison, à Gabaa de Saül.",
+        "NAB": "Samuel departed for Ramah, while Saul went up to his home in Gibeah of Saul.",
+        "VAT_ES": "Luego Samuel partió hacia Ramá, y Saúl se fue a su casa, en Guibeá de Saúl.",
+        "CEI": "Samuele andò quindi a Rama e Saul salì a casa sua a Gàbaa di Saul."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וְ/לֹא יָסַ֨ף שְׁמוּאֵ֜ל לִ/רְא֤וֹת אֶת שָׁאוּל֙ עַד י֣וֹם מוֹת֔/וֹ כִּֽי הִתְאַבֵּ֥ל שְׁמוּאֵ֖ל אֶל שָׁא֑וּל וַ/יהוָ֣ה נִחָ֔ם כִּֽי הִמְלִ֥יךְ אֶת שָׁא֖וּל עַל יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ οὐ προσέθετο Σαμουὴλ ἔτι ἰδεῖν τὸν Σαοὺλ ἕως ἡμέρας θανάτου αὐτοῦ, ὅτι ἐπένθει Σαμουὴλ ἐπὶ Σαούλ, καὶ Κύριος μετεμελήθη ὅτι ἐβασίλευσεν τὸν Σαοὺλ ἐπὶ Ἰσραήλ.",
+        "VUL": "Et non vidit Samuel ultra Saul usque ad diem mortis suæ : verumtamen lugebat Samuel Saulem, quoniam Dominum pnitebat quod constituisset eum regem super Israël.",
+        "SYN": "И более не видался Самуил с Саулом до дня смерти своей; но печалился Самуил о Сауле, потому что Господь раскаялся, что воцарил Саула над Израилем.",
+        "NEO": "Et Samuel ne revit plus Saül jusqu’au jour de sa mort. TROISIÈME PARTIE. SAÜL ET DAVID.",
+        "NAB": "Never again, as long as he lived, did Samuel see Saul. Yet he grieved over Saul, because the LORD regretted having made him king of Israel.",
+        "VAT_ES": "Samuel no vio nunca más a Saúl hasta el día de su muerte. Pero estaba de duelo por él, porque el Señor se había arrepentido de haberlo hecho rey de Israel.",
+        "CEI": "Né Samuele tornò a rivedere Saul fino al giorno della sua morte, ma Samuele piangeva per Saul, perché il Signore si era pentito di aver fatto regnare Saul su Israele."
+      }
+    }
+  }
+}

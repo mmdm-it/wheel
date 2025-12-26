@@ -1,0 +1,465 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_SAM_028",
+  "book_key": "I_SAM",
+  "sequence": 28,
+  "chapter_in": {
+    "MT": 28,
+    "VUL": 28,
+    "LXX": 28
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ בַּ/יָּמִ֣ים הָ/הֵ֔ם וַ/יִּקְבְּצ֨וּ פְלִשְׁתִּ֤ים אֶת מַֽחֲנֵי/הֶם֙ לַ/צָּבָ֔א לְ/הִלָּחֵ֖ם בְּ/יִשְׂרָאֵ֑ל וַ/יֹּ֤אמֶר אָכִישׁ֙ אֶל דָּוִ֔ד יָדֹ֣עַ תֵּדַ֗ע כִּ֤י אִתִּ/י֙ תֵּצֵ֣א בַֽ/מַּחֲנֶ֔ה אַתָּ֖ה וַ/אֲנָשֶֽׁי/ךָ׃",
+        "LXX": "Καὶ ἐγενήθη ἐν ταῖς ἡμέραις ἐκείναις καὶ συναθροίζονται ἀλλόφυλοι ἐν ταῖς παρεμβολαῖς αὐτῶν, ἐξελθεῖν πολεμεῖν μετὰ Ἰσραήλ· καὶ εἶπεν Ἀγχοὺς πρὸς Δαυείδ Γινώσκων γνώσει ὅτι μετ’ ἐμοῦ ἐξελεύσει εἰς πόλεμον σὺ καὶ οἱ ἄνδρες σου.",
+        "VUL": "Factum est autem in diebus illis, congregaverunt Philisthiim agmina sua, ut præpararentur ad bellum contra Israël : dixitque Achis ad David : Sciens nunc scito quoniam mecum egredieris in castris, tu et viri tui.",
+        "SYN": "В то время Филистимляне собрали войска свои для войны, чтобы воевать с Израилем. И сказал Анхус Давиду: да будет тебе известно, что ты пойдешь со мною в ополчение, ты и люди твои.",
+        "NEO": "En ce temps-là, les Philistins rassemblèrent leurs troupes en une seule armée pour aller combattre contre Israël. Et Achis dit à David : « Sache que tu viendras avec moi au camp, toi et tes hommes. »",
+        "NAB": "In those days the Philistines mustered their military forces to fight against Israel. So Achish said to David, \"You realize, of course, that you and your men must go out on campaign with me to Jezreel.\"",
+        "VAT_ES": "En aquellos días, los filisteos concentraron sus fuerzas para entrar en batalla y combatir contra Israel. Aquís dijo a David: «Tienes que saber que irás conmigo al frente, tú y tus hombres».",
+        "CEI": "In quei giorni i Filistei radunarono l'esercito per combattere contro Israele e Achis disse a Davide: \"Tieni bene a mente che devi uscire in campo con me insieme con i tuoi uomini\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר דָּוִד֙ אֶל אָכִ֔ישׁ לָ/כֵן֙ אַתָּ֣ה תֵדַ֔ע אֵ֥ת אֲשֶׁר יַעֲשֶׂ֖ה עַבְדֶּ֑/ךָ וַ/יֹּ֤אמֶר אָכִישׁ֙ אֶל דָּוִ֔ד לָ/כֵ֗ן שֹׁמֵ֧ר לְ/רֹאשִׁ֛/י אֲשִֽׂימְ/ךָ֖ כָּל הַ/יָּמִֽים׃",
+        "LXX": "καὶ εἶπεν Δαυεὶδ πρὸς Ἀγχούς Οὕτω νῦν γνώσει ἃ ποιήσει ὁ δοῦλός σου· καὶ εἶπεν Ἀγχοὺς πρὸς Δαυείδ Οὕτως ἀρχισωματοφύλακα θήσομαί σε πάσας τὰς ἡμέρας.",
+        "VUL": "Dixitque David ad Achis : Nunc scies quæ facturus est servus tuus. Et ait Achis ad David : Et ego custodem capitis mei ponam te cunctis diebus.",
+        "SYN": "И сказал Давид Анхусу: ныне ты узнаешь, что сделает раб твой. И сказал Анхус Давиду: за то я сделаю тебя хранителем головы моей на все время.",
+        "NEO": "David répondit à Achis : « Aussi tu verras ce que fera ton serviteur. » Et Achis dit à David : « Et moi je t’établirai pour toujours gardien de ma personne. »",
+        "NAB": "David answered Achish, \"Good! Now you shall learn what your servant can do.\" Then Achish said to David, \"I shall appoint you my permanent bodyguard.\"",
+        "VAT_ES": "«De acuerdo, le respondió David; ahora sabrás lo que hará tu servidor». «Muy bien, dijo Aquís a David; yo te haré para siempre jefe de mi guardia personal».",
+        "CEI": "Davide rispose ad Achis: \"Tu sai già quello che farà il tuo servo\". Achis disse: \"Bene! Ti faccio per sempre mia guardia del corpo\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וּ/שְׁמוּאֵ֣ל מֵ֔ת וַ/יִּסְפְּדוּ ל/וֹ֙ כָּל יִשְׂרָאֵ֔ל וַ/יִּקְבְּרֻ֥/הוּ בָ/רָמָ֖ה וּ/בְ/עִיר֑/וֹ וְ/שָׁא֗וּל הֵסִ֛יר הָ/אֹב֥וֹת וְ/אֶת הַ/יִּדְּעֹנִ֖ים מֵ/הָ/אָֽרֶץ׃",
+        "LXX": "Καὶ Σαμουὴλ ἀπέθανεν, καὶ ἐκόψαντο αὐτὸν πᾶς Ἰσραήλ, καὶ θάπτουσιν αὐτὸν ἐν Ἁρμαθάιμ ἐν πόλει αὐτοῦ. καὶ Σαοὺλ περιεῖλεν τοὺς ἐνγαστριμύθους καὶ τοὺς γνώστας ἀπὸ τῆς γῆς.",
+        "VUL": "Samuel autem mortuus est, planxitque eum omnis Israël, et sepelierunt eum in Ramatha urbe sua. Et Saul abstulit magos et hariolos de terra.",
+        "SYN": "И умер Самуил, и оплакивали его все Израильтяне и погребли его в Раме, в городе его. Саул же изгнал волшебников и гадателей из страны.",
+        "NEO": "Samuel était mort ; tout Israël l’avait pleuré, et on l’avait enterré à Rama, dans sa ville. Et Saül avait fait disparaître du pays ceux qui évoquaient les morts et les devins.",
+        "NAB": "Now Samuel had died and, after being mourned by all Israel, was buried in his city, Ramah. Meanwhile Saul had driven mediums and fortune-tellers out of the land.",
+        "VAT_ES": "Samuel había muerto. Todo Israel había estado de duelo por él y lo habían sepultado en Ramá, en su ciudad. Saúl, por su parte, había expulsado del país a los nigromantes y adivinos.",
+        "CEI": "Samuele era morto e tutto Israele aveva fatto il lamento su di lui; poi l'avevano seppellito in Rama sua città. Saul aveva bandito dal paese i negromanti e gl'indovini."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יִּקָּבְצ֣וּ פְלִשְׁתִּ֔ים וַ/יָּבֹ֖אוּ וַ/יַּחֲנ֣וּ בְ/שׁוּנֵ֑ם וַ/יִּקְבֹּ֤ץ שָׁאוּל֙ אֶת כָּל יִשְׂרָאֵ֔ל וַֽ/יַּחֲנ֖וּ בַּ/גִּלְבֹּֽעַ׃",
+        "LXX": "καὶ συναθροίζονται οἱ ἀλλόφυλοι καὶ ἔρχονται καὶ παρεμβάλλουσιν εἰς Σωμάν· καὶ συναθροίζει Σαοὺλ πάντα ἄνδρα Ἰσραήλ, καὶ παρεμβάλλουσιν εἰς Γελβοῦε.",
+        "VUL": "Congregatique sunt Philisthiim, et venerunt, et castrametati sunt in Sunam : congregavit autem et Saul universum Israël, et venit in Gelboë.",
+        "SYN": "И собрались Филистимляне и пошли и стали станом в Сонаме; собрал и Саул весь народ Израильский, и стали станом на Гелвуе.",
+        "NEO": "Les Philistins s’étant rassemblés, vinrent camper à Sunam ; Saül rassembla tout Israël, et ils campèrent à Gelboé.",
+        "NAB": "The Philistine levies advanced to Shunem and encamped. Saul, too, mustered all Israel; they camped on Gilboa.",
+        "VAT_ES": "Los filisteos se reunieron y fueron a acampar a Suném. Saúl concentró a todo Israel y acamparon en Gelboé.",
+        "CEI": "I Filistei si radunarono, si mossero e posero il campo in Sunàm. Saul radunò tutto Israele e si accampò sul Gelboe."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥רְא שָׁא֖וּל אֶת מַחֲנֵ֣ה פְלִשְׁתִּ֑ים וַ/יִּרָ֕א וַ/יֶּחֱרַ֥ד לִבּ֖/וֹ מְאֹֽד׃",
+        "LXX": "καὶ εἶδεν Σαοὺλ τὴν παρεμβολὴν τῶν ἀλλοφύλων, καὶ ἐφοβήθη καὶ ἐξέστη ἡ καρδία αὐτοῦ σφόδρα.",
+        "VUL": "Et vidit Saul castra Philisthiim, et timuit, et expavit cor ejus nimis.",
+        "SYN": "И увидел Саул стан Филистимский и испугался, и крепко дрогнуло сердце его.",
+        "NEO": "A la vue du camp des Philistins, Saül eut peur, et son cœur fut fort agité.",
+        "NAB": "When Saul saw the camp of the Philistines, he was dismayed and lost heart completely.",
+        "VAT_ES": "Pero al divisar el campamento filisteo, tuvo miedo y se estremeció su corazón.",
+        "CEI": "Quando Saul vide il campo dei Filistei, rimase atterrito e il suo cuore tremò di paura."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁאַ֤ל שָׁאוּל֙ בַּֽ/יהוָ֔ה וְ/לֹ֥א עָנָ֖/הוּ יְהוָ֑ה גַּ֧ם בַּ/חֲלֹמ֛וֹת גַּ֥ם בָּ/אוּרִ֖ים גַּ֥ם בַּ/נְּבִיאִֽם׃",
+        "LXX": "καὶ ἐπηρώτησεν Σαοὺλ διὰ Κυρίου, καὶ οὐκ ἀπεκρίθη αὐτῷ Κύριος ἐν τοῖς ἐνυπνίοις καὶ ἐν τοῖς δήλοις καὶ ἐν τοῖς προφήταις.",
+        "VUL": "Consuluitque Dominum, et non respondit ei neque per somnia, neque per sacerdotes, neque per prophetas.",
+        "SYN": "И вопросил Саул Господа; но Господь не отвечал ему ни во сне, ни чрез урим, ни чрез пророков.",
+        "NEO": "Saül consulta \\+w Yahweh|strong=\"H3068\"\\+w**, et \\+w Yahweh|strong=\"H3068\"\\+w** ne lui répondit point, ni par les songes, ni par l’Urim, ni par les prophètes.",
+        "NAB": "He therefore consulted the LORD; but the LORD gave no answer, whether in dreams or by the Urim or through prophets.",
+        "VAT_ES": "Luego interrogó al Señor, pero él no le respondió ni por sueños, ni por el Urim, ni por los profetas.",
+        "CEI": "Saul consultò il Signore e il Signore non gli rispose né attraverso sogni, né mediante gli Urim, né per mezzo dei profeti."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר שָׁא֜וּל לַ/עֲבָדָ֗י/ו בַּקְּשׁוּ לִ/י֙ אֵ֣שֶׁת בַּעֲלַת א֔וֹב וְ/אֵלְכָ֥ה אֵלֶ֖י/הָ וְ/אֶדְרְשָׁה בָּ֑/הּ וַ/יֹּאמְר֤וּ עֲבָדָי/ו֙ אֵלָ֔י/ו הִנֵּ֛ה אֵ֥שֶׁת בַּֽעֲלַת א֖וֹב בְּ/עֵ֥ין דּֽוֹר׃",
+        "LXX": "καὶ εἶπεν Σαοὺλ τοῖς παισὶν αὐτοῦ Ζητήσατέ μοι γυναῖκα ἐνγαστρίμυθον, καὶ πορεύσομαι πρὸς αὐτὴν καὶ ζητήσω ἐν αὐτῇ· καὶ εἶπαν οἱ παῖδες αὐτοῦ πρὸς αὐτόν Ἰδοὺ γυνὴ ἐνγαστρίμυθος ἐν Ἀελδώρ.",
+        "VUL": "Dixitque Saul servis suis : Quærite mihi mulierem habentem pythonem, et vadam ad eam, et sciscitabor per illam. Et dixerunt servi ejus ad eum : Est mulier pythonem habens in Endor.",
+        "SYN": "Тогда Саул сказал слугам своим: сыщите мне женщину волшебницу, и я пойду к ней и спрошу ее. И отвечали ему слуги его: здесь в Аэндоре есть женщина волшебница.",
+        "NEO": "Alors Saül dit à ses serviteurs : « Cherchez-moi une femme qui évoque les morts, et j’irai vers elle et je la consulterai. » Ses serviteurs lui dirent : « Il y a à Endor une femme qui évoque les morts. »",
+        "NAB": "Then Saul said to his servants, \"Find me a woman who is a medium, to whom I can go to seek counsel through her.\" His servants answered him, \"There is a woman in Endor who is a medium.\"",
+        "VAT_ES": "Entonces Saúl dijo a sus servidores: «Búsquenme una nigromante, para que yo vaya a verla y la consulte». Sus servidores le dijeron: «Precisamente hay una nigromante en Endor».",
+        "CEI": "Allora Saul disse ai suoi ministri: \"Cercatemi una negromante, perché voglio andare a consultarla\". I suoi ministri gli risposero: \"Vi è una negromante nella città di Endor\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּתְחַפֵּ֣שׂ שָׁא֗וּל וַ/יִּלְבַּשׁ֙ בְּגָדִ֣ים אֲחֵרִ֔ים וַ/יֵּ֣לֶךְ ה֗וּא וּ/שְׁנֵ֤י אֲנָשִׁים֙ עִמּ֔/וֹ וַ/יָּבֹ֥אוּ אֶל הָ/אִשָּׁ֖ה לָ֑יְלָה וַ/יֹּ֗אמֶר קסומי קָֽסֳמִי נָ֥א לִ/י֙ בָּ/א֔וֹב וְ/הַ֣עֲלִי לִ֔/י אֵ֥ת אֲשֶׁר אֹמַ֖ר אֵלָֽיִ/ךְ׃",
+        "LXX": "καὶ συνεκαλύψατο Σαοὺλ καὶ περιεβάλετο ἱμάτια ἕτερα, καὶ πορεύεται αὐτὸς καὶ δύο ἄνδρες μετ’ αὐτοῦ, καὶ ἔρχονται πρὸς τὴν γυναῖκα νυκτὸς καὶ εἶπεν αὐτῇ Μάντευσαι δὴ μοι ἐν τῷ ἐνγαστριμύθῳ καὶ ἀνάγαγέ μοι ὃν ἐὰν εἴπω σοι.",
+        "VUL": "Mutavit ergo habitum suum, vestitusque est aliis vestimentis, et abiit ipse, et duo viri cum eo : veneruntque ad mulierem nocte, et ait illi : Divina mihi in pythone, et suscita mihi quem dixero tibi.",
+        "SYN": "И снял с себя Саул одежды свои и надел другие, и пошел сам и два человека с ним, и пришли они к женщине ночью. И сказал ей _Саул:_ прошу тебя, поворожи мне и выведи мне, о ком я скажу тебе.",
+        "NEO": "Saül se déguisa et mit d’autres vêtements, et il partit, accompagné de deux hommes. Ils arrivèrent de nuit chez la femme, et Saül lui dit : « Prédis-moi l’avenir en évoquant un mort, et fais-moi monter celui que je te dirai. »",
+        "NAB": "So he disguised himself, putting on other clothes, and set out with two companions. They came to the woman by night, and Saul said to her, \"Tell my fortune through a ghost; conjure up for me the one I ask you to.\"",
+        "VAT_ES": "Saúl se disfrazó, poniéndose otra ropa, y partió en compañía de dos hombres. Llegaron de noche, y Saúl dijo a la mujer: «Predíceme el futuro evocando a un muerto, y haz que se aparezca el que yo te diga».",
+        "CEI": "Saul si camuffò, si travestì e partì con due uomini. Arrivò da quella donna di notte. Disse: \"Pratica la divinazione per me con uno spirito. Evocami colui che io ti dirò\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר הָֽ/אִשָּׁ֜ה אֵלָ֗י/ו הִנֵּ֨ה אַתָּ֤ה יָדַ֨עְתָּ֙ אֵ֣ת אֲשֶׁר עָשָׂ֣ה שָׁא֔וּל אֲשֶׁ֥ר הִכְרִ֛ית אֶת הָ/אֹב֥וֹת וְ/אֶת הַ/יִּדְּעֹנִ֖י מִן הָ/אָ֑רֶץ וְ/לָ/מָ֥ה אַתָּ֛ה מִתְנַקֵּ֥שׁ בְּ/נַפְשִׁ֖/י לַ/הֲמִיתֵֽ/נִי׃",
+        "LXX": "καὶ εἶπεν ἡ γυνὴ πρὸς αὐτόν Ἰδοὺ δὴ σὺ οἶδας ὅσα ἐποίησεν Σαούλ, ὡς ἐξωλέθρευσεν τοὺς ἐνγαστριμύθους καὶ τοὺς γνώστας ἀπὸ τῆς γῆς· καὶ ἵνα τί σὺ παγιδεύεις τὴν ψυχήν μου θανατῶσαι αὐτήν;",
+        "VUL": "Et ait mulier ad eum : Ecce, tu nosti quanta fecerit Saul, et quomodo eraserit magos et hariolos de terra : quare ergo insidiaris animæ meæ, ut occidar ?",
+        "SYN": "Но женщина отвечала ему: ты знаешь, что сделал Саул, как выгнал он из страны волшебников и гадателей; для чего же ты расставляешь сеть душе моей на погибель мне?",
+        "NEO": "La femme lui répondit : « Voici que tu sais ce qu’a fait Saül, comment il a retranché du pays ceux qui évoquent les morts et les devins ; pourquoi me tends-tu un piège, pour me faire mourir ? »",
+        "NAB": "But the woman answered him, \"You are surely aware of what Saul has done, in driving the mediums and fortune-tellers out of the land. Why, then, are you laying snares for my life, to have me killed?\"",
+        "VAT_ES": "Pero la mujer le respondió: «Tú sabes bien lo que hizo Saúl, cómo extirpó del país a nigromantes y adivinos. &iquest;Por qué me tiendes una trampa para hacerme morir?».",
+        "CEI": "La donna gli rispose: \"Tu sai bene quello che ha fatto Saul: ha eliminato dal paese i negromanti e gli indovini e tu perché tendi un tranello alla mia vita per uccidermi?\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּשָּׁ֤בַֽע לָ/הּ֙ שָׁא֔וּל בַּֽ/יהוָ֖ה לֵ/אמֹ֑ר חַי יְהוָ֕ה אִֽם יִקְּרֵ֥/ךְ עָוֺ֖ן בַּ/דָּבָ֥ר הַ/זֶּֽה׃",
+        "LXX": "καὶ ὤμοσεν αὐτῇ Σαοὺλ λέγων Ζῇ Κύριος, εἰ ἀπαντήσεταί σοι ἀδικία ἐν τῷ λόγῳ τούτῳ.",
+        "VUL": "Et juravit ei Saul in Domino, dicens : Vivit Dominus, quia non eveniet tibi quidquam mali propter hanc rem.",
+        "SYN": "И поклялся ей Саул Господом, говоря: жив Господь! не будет тебе беды за это дело.",
+        "NEO": "Saül lui jura par \\+w Yahweh|strong=\"H3068\"\\+w** en disant : « Aussi vrai que \\+w Yahweh|strong=\"H3068\"\\+w** est vivant ! il ne t’arrivera aucun mal à cause de cela. »",
+        "NAB": "But Saul swore to her by the LORD, \"As the LORD lives, you shall incur no blame for this.\"",
+        "VAT_ES": "Entonces Saúl le juró por el Señor: «&iexcl;Por la vida del Señor, nadie te inculpará a causa de esto!».",
+        "CEI": "Saul le giurò per il Signore: \"Per la vita del Signore, non avrai alcuna colpa per questa faccenda\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר֙ הָֽ/אִשָּׁ֔ה אֶת מִ֖י אַֽעֲלֶה לָּ֑/ךְ וַ/יֹּ֕אמֶר אֶת שְׁמוּאֵ֖ל הַֽעֲלִי לִֽ/י׃",
+        "LXX": "καὶ εἶπεν ἡ γυνή Τίνα ἀναγάγω σοι; καὶ εἶπεν Τὸν Σαμουὴλ ἀνάγαγέ μοι.",
+        "VUL": "Dixitque ei mulier : Quem suscitabo tibi ? Qui ait : Samuelem mihi suscita.",
+        "SYN": "Тогда женщина спросила: кого же вывесть тебе? И отвечал он: Самуила выведи мне.",
+        "NEO": "Et la femme dit : « Qui te ferai-je monter ? » Il répondit : « Fais-moi monter Samuel. »",
+        "NAB": "Then the woman asked him, \"Whom do you want me to conjure up?\" and he answered, \"Samuel.\"",
+        "VAT_ES": "La mujer le dijo: «&iquest;Quién quieres que se te aparezca?». Que se me aparezca Samuel», respondió él.",
+        "CEI": "Essa disse: \"Chi devo evocarti?\". Rispose: \"Evocami Samuele\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֤רֶא הָֽ/אִשָּׁה֙ אֶת שְׁמוּאֵ֔ל וַ/תִּזְעַ֖ק בְּ/ק֣וֹל גָּד֑וֹל וַ/תֹּאמֶר֩ הָ/אִשָּׁ֨ה אֶל שָׁא֧וּל לֵ/אמֹ֛ר לָ֥/מָּה רִמִּיתָ֖/נִי וְ/אַתָּ֥ה שָׁאֽוּל׃",
+        "LXX": "καὶ εἶδεν ἡ γυνὴ τὸν Σαμουήλ, καὶ ἀνεβόησεν φωνῇ μεγάλῃ· καὶ εἶπεν ἡ γυνὴ πρὸς Σαούλ Ἵνα τί παρελογίσω με; καὶ σὺ εἶ Σαούλ.",
+        "VUL": "Cum autem vidisset mulier Samuelem, exclamavit voce magna, et dixit ad Saul : Quare imposuisti mihi ? tu es enim Saul.",
+        "SYN": "И увидела женщина Самуила и громко вскрикнула; и обратилась женщина к Саулу, говоря: зачем ты обманул меня? ты -- Саул.",
+        "NEO": "A la vue de Samuel, la femme poussa un grand cri ; et la femme dit à Saül : « Pourquoi m’as-tu trompée ? Tu es Saül ! »",
+        "NAB": "When the woman saw Samuel, she shrieked at the top of her voice and said to Saul, \"Why have you deceived me? You are Saul!\"",
+        "VAT_ES": "La mujer vio a Samuel y lanzó un fuerte grito. Luego dijo a Saúl: «&iquest;Por qué me has engañado? &iexcl;Tú eres Saúl!».",
+        "CEI": "La donna vide Samuele e proruppe in un forte grido e disse quella donna a Saul: \"Perché mi hai ingannata? Tu sei Saul!\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר לָ֥/הּ הַ/מֶּ֛לֶךְ אַל תִּֽירְאִ֖י כִּ֣י מָ֣ה רָאִ֑ית וַ/תֹּ֤אמֶר הָֽ/אִשָּׁה֙ אֶל שָׁא֔וּל אֱלֹהִ֥ים רָאִ֖יתִי עֹלִ֥ים מִן הָ/אָֽרֶץ׃",
+        "LXX": "καὶ εἶπεν αὐτῇ ὁ βασιλεύς Μὴ φοβοῦ, εἰπὸν τίνα ἑόρακας· καὶ εἶπεν αὐτῷ Θεοὺς ἑόρακα ἀναβαίνοντας ἐκ τῆς γῆς.",
+        "VUL": "Dixitque ei rex : Noli timere : quid vidisti ? Et ait mulier ad Saul : Deos vidi ascendentes de terra.",
+        "SYN": "И сказал ей царь: не бойся; [скажи,] что ты видишь? И отвечала женщина: вижу как бы бога, выходящего из земли.",
+        "NEO": "Le roi lui dit : « Ne crains pas ; mais qu’as-tu vu ? » La femme dit à Saül : « Je vois un dieu qui monte de la terre. »",
+        "NAB": "But the king said to her, \"Have no fear. What do you see?\" The woman answered Saul, \"I see a preternatural being rising from the earth.\"",
+        "VAT_ES": "Pero el rey le dijo: «No temas. Dime qué has visto». La mujer respondió a Saúl: «Vi un dios que subía de lo profundo de la tierra».",
+        "CEI": "Le rispose il re: \"Non aver paura, che cosa vedi?\". La donna disse a Saul: \"Vedo un essere divino che sale dalla terra\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר לָ/הּ֙ מַֽה תָּאֳר֔/וֹ וַ/תֹּ֗אמֶר אִ֤ישׁ זָקֵן֙ עֹלֶ֔ה וְ/ה֥וּא עֹטֶ֖ה מְעִ֑יל וַ/יֵּ֤דַע שָׁאוּל֙ כִּֽי שְׁמוּאֵ֣ל ה֔וּא וַ/יִּקֹּ֥ד אַפַּ֛יִם אַ֖רְצָ/ה וַ/יִּשְׁתָּֽחוּ׃",
+        "LXX": "καὶ εἶπεν αὐτῇ Τί ἔγνως; καὶ εἶπεν αὐτῷ Ἄνδρα ὄρθιον ἀναβαίνοντα ἐκ τῆς γῆς, καὶ οὗτος διπλοίδα ἀναβεβλημένος· καὶ ἔγνω Σαοὺλ ὅτι Σαμουὴλ οὗτος, καὶ ἔκυψεν ἐπὶ πρόσωπον αὐτοῦ ἐπὶ τὴν γῆν καὶ προσεκύνησεν αὐτῷ.",
+        "VUL": "Dixitque ei : Qualis est forma ejus ? Quæ ait : Vir senex ascendit, et ipse amictus est pallio. Et intellexit Saul quod Samuel esset, et inclinavit se super faciem suam in terra, et adoravit.",
+        "SYN": "Какой он видом? -- спросил у нее _Саул._ Она сказала: выходит из земли муж престарелый, одетый в длинную одежду. Тогда узнал Саул, что это Самуил, и пал лицем на землю и поклонился.",
+        "NEO": "Il lui dit : « Quelle figure a-t-il ? » Et elle répondit : « C’est un vieillard qui monte, et il est enveloppé d’un manteau. » Saül comprit que c’était Samuel, et il se jeta le visage contre terre et se prosterna.",
+        "NAB": "\"What does he look like?\" asked Saul. And she replied, \"It is an old man who is rising, clothed in a mantle.\" Saul knew that it was Samuel, and so he bowed face to the ground in homage.",
+        "VAT_ES": "«&iquest;Qué forma tiene?», preguntó él. Ella respondió: «Es un anciano que sube, y está envuelto en un manto». Saúl comprendió entonces que era Samuel, y se postró con el rostro en tierra.",
+        "CEI": "Le domandò: \"Che aspetto ha?\". Rispose: \"È un uomo anziano che sale ed è avvolto in un mantello\". Saul comprese che era veramente Samuele e si inginocchiò con la faccia a terra e si prostrò."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר שְׁמוּאֵל֙ אֶל שָׁא֔וּל לָ֥/מָּה הִרְגַּזְתַּ֖/נִי לְ/הַעֲל֣וֹת אֹתִ֑/י וַ/יֹּ֣אמֶר שָׁ֠אוּל צַר לִ֨/י מְאֹ֜ד וּ/פְלִשְׁתִּ֣ים נִלְחָמִ֣ים בִּ֗/י וֵֽ/אלֹהִ֞ים סָ֤ר מֵֽ/עָלַ/י֙ וְ/לֹֽא עָנָ֣/נִי ע֗וֹד גַּ֤ם בְּ/יַֽד הַ/נְּבִיאִם֙ גַּם בַּ֣/חֲלֹמ֔וֹת וָ/אֶקְרָאֶ֣/ה לְ/ךָ֔ לְ/הוֹדִיעֵ֖/נִי מָ֥ה אֶעֱשֶֽׂה׃",
+        "LXX": "καὶ εἶπεν Σαμουήλ Ἵνα τί παρηνώχλησάς μοι ἀναβῆναί με; καὶ εἶπεν Σαούλ Θλίβομαι σφόδρα, καὶ οἱ ἀλλόφυλοι πολεμοῦσιν ἐν ἐμοί, καὶ ὁ θεὸς ἀφέστηκεν ἀπ’ ἐμοῦ καὶ οὐκ ἐπακήκοέν μοι ἔτι καὶ ἐν χειρὶ τῶν προφητῶν καὶ ἐν τοῖς ἐνυπνίοις· καὶ νῦν κέκληκά σε γνωρίσαι μοι τί ποιήσω.",
+        "VUL": "Dixit autem Samuel ad Saul : Quare inquietasti me ut suscitarer ? Et ait Saul : Coarctor nimis : siquidem Philisthiim pugnant adversum me, et Deus recessit a me, et exaudire me noluit neque in manu prophetarum, neque per somnia : vocavi ergo te, ut ostenderes mihi quid faciam.",
+        "SYN": "И сказал Самуил Саулу: для чего ты тревожишь меня, чтобы я вышел? И отвечал Саул: тяжело мне очень; Филистимляне воюют против меня, а Бог отступил от меня и более не отвечает мне ни чрез пророков, ни во сне, [ни в видении]; потому я вызвал тебя, чтобы ты научил меня, что мне делать.",
+        "NEO": "Samuel dit à Saül : « Pourquoi m’as-tu troublé, en me faisant monter ? » Saül répondit : « Je suis dans une grande détresse : les Philistins me font la guerre, et Dieu s’est retiré de moi ; il ne m’a répondu ni par les prophètes ni par les songes. Je t’ai évoqué pour que tu me fasses connaître ce que j’ai à faire. »",
+        "NAB": "Samuel then said to Saul, \"Why do you disturb me by conjuring me up?\" Saul replied: \"I am in great straits, for the Philistines are waging war against me and God has abandoned me. Since he no longer answers me through prophets or in dreams, I have called you to tell me what I should do.\"",
+        "VAT_ES": "Samuel dijo a Saúl: «&iquest;Por qué me has perturbado, haciéndome subir?». «Es que estoy en un grave aprieto, respondió Saúl; los filisteos me hacen la guerra, y Dios se ha apartado de mí; ya no me responde, ni por medio de los profetas ni en sueños. Por eso te llamé para que me indiques lo que debo hacer».",
+        "CEI": "Allora Samuele disse a Saul: \"Perché mi hai disturbato e costretto a salire?\". Saul rispose: \"Sono in grande difficoltà. I Filistei mi muovono guerra e Dio si è allontanato da me; non mi ha più risposto né per mezzo dei profeti, né per mezzo dei sogni; perciò ti ho evocato, perché tu mi manifesti quello che devo fare\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שְׁמוּאֵ֔ל וְ/לָ֖/מָּה תִּשְׁאָלֵ֑/נִי וַ/יהוָ֛ה סָ֥ר מֵ/עָלֶ֖י/ךָ וַ/יְהִ֥י עָרֶֽ/ךָ׃",
+        "LXX": "καὶ εἶπεν Σαμουήλ Ἵνα τί ἐπερωτᾷς με, καὶ Κύριος ἀφέστηκεν ἀπὸ σοῦ καὶ γέγονεν μετὰ τοῦ πλησίον σου;",
+        "VUL": "Et ait Samuel : Quid interrogas me, cum Dominus recesserit a te, et transierit ad æmulum tuum ?",
+        "SYN": "И сказал Самуил: для чего же ты спрашиваешь меня, когда Господь отступил от тебя и сделался врагом твоим?",
+        "NEO": "Samuel dit : « Pourquoi me consultes-tu, puisque \\+w Yahweh|strong=\"H3068\"\\+w** s’est retiré de toi et qu’il est devenu ton adversaire ?",
+        "NAB": "To this Samuel said: \"But why do you ask me, if the LORD has abandoned you and is with your neighbor?",
+        "VAT_ES": "Samuel replicó: «Si el Señor se ha apartado de ti y se te ha vuelto hostil, &iquest;por qué me interrogas a mí?",
+        "CEI": "Samuele rispose: \"Perché mi vuoi consultare, quando il Signore si è allontanato da te ed è divenuto tuo nemico?"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤עַשׂ יְהוָה֙ ל֔/וֹ כַּ/אֲשֶׁ֖ר דִּבֶּ֣ר בְּ/יָדִ֑/י וַ/יִּקְרַ֨ע יְהוָ֤ה אֶת הַ/מַּמְלָכָה֙ מִ/יָּדֶ֔/ךָ וַֽ/יִּתְּנָ֖/הּ לְ/רֵעֲ/ךָ֥ לְ/דָוִֽד׃",
+        "LXX": "καὶ πεποίηκεν Κύριός σοι καθὼς ἐλάλησεν Κύριος ἐν χειρί μου, καὶ διαρρήξει Κύριος τὴν βασιλείαν σου ἐκ χειρός σου καὶ δώσει αὐτὴν τῷ πλησίον σου τῷ Δαυείδ.",
+        "VUL": "Faciet enim tibi Dominus sicut locutus est in manu mea, et scindet regnum tuum de manu tua et dabit illud proximo tuo David :",
+        "SYN": "Господь сделает то, что говорил чрез меня; отнимет Господь царство из рук твоих и отдаст его ближнему твоему, Давиду.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** a agi comme il l’avait annoncé par mon intermédiaire : \\+w Yahweh|strong=\"H3068\"\\+w** a arraché la royauté de ta main, et l’a donnée à ton compagnon, à David.",
+        "NAB": "The LORD has done to you what he foretold through me: he has torn the kingdom from your grasp and has given it to your neighbor David.",
+        "VAT_ES": "El Señor ha obrado contigo conforme a lo que predijo por mi intermedio: él ha arrancado de tu mano la realeza, para dársela a otro, a David.",
+        "CEI": "Il Signore ha fatto nei tuoi riguardi quello che ha detto per mia bocca. Il Signore ha strappato da te il regno e l'ha dato al tuo prossimo, a Davide."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כַּ/אֲשֶׁ֤ר לֹֽא שָׁמַ֨עְתָּ֙ בְּ/ק֣וֹל יְהוָ֔ה וְ/לֹֽא עָשִׂ֥יתָ חֲרוֹן אַפּ֖/וֹ בַּ/עֲמָלֵ֑ק עַל כֵּן֙ הַ/דָּבָ֣ר הַ/זֶּ֔ה עָשָֽׂה לְ/ךָ֥ יְהוָ֖ה הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "διότι οὐκ ἤκουσας φωνῆς Κυρίου καὶ οὐκ ἐποίησας θυμὸν ὀργῆς αὐτοῦ ἐν Ἀναλήκ, διὰ τοῦτο τὸ ῥῆμα ἐποίησεν Κύριός σοι τῇ ἡμέρᾳ ταύτῃ.",
+        "VUL": "quia non obedisti voci Domini, neque fecisti iram furoris ejus in Amalec : idcirco quod pateris, fecit tibi Dominus hodie.",
+        "SYN": "Так как ты не послушал гласа Господня и не выполнил ярости гнева Его на Амалика, то Господь и делает это над тобою ныне.",
+        "NEO": "Parce que tu n’as pas obéi à la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, et que tu n’as pas traité Amalec selon l’ardeur de sa colère, c’est pour cela que \\+w Yahweh|strong=\"H3068\"\\+w** a ainsi agi envers toi en ce jour.",
+        "NAB": "\"Because you disobeyed the LORD'S directive and would not carry out his fierce anger against Amalek, the LORD has done this to you today.",
+        "VAT_ES": "Porque tú no escuchaste la voz del Señor y no diste libre curso a su ira contra Amalec, por eso, el Señor te ha tratado de esta manera en el día de hoy.",
+        "CEI": "Poiché non hai ascoltato il comando del Signore e non hai dato effetto alla sua ira contro Amalek, per questo il Signore ti ha trattato oggi in questo modo."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/יִתֵּ֣ן יְ֠הוָה גַּ֣ם אֶת יִשְׂרָאֵ֤ל עִמְּ/ךָ֙ בְּ/יַד פְּלִשְׁתִּ֔ים וּ/מָחָ֕ר אַתָּ֥ה וּ/בָנֶ֖י/ךָ עִמִּ֑/י גַּ֚ם אֶת מַחֲנֵ֣ה יִשְׂרָאֵ֔ל יִתֵּ֥ן יְהוָ֖ה בְּ/יַד פְּלִשְׁתִּֽים׃",
+        "LXX": "καὶ παραδώσει Κύριος τὸν Ἰσραὴλ μετὰ σοῦ εἰς χεῖρας ἀλλοφύλων, καὶ αὔριον σὺ καὶ οἱ υἱοί σου μετὰ σοῦ πεσοῦνται, καὶ τὴν παρεμβολὴν Ἰσραὴλ δώσει Κύριος εἰς χεῖρας ἀλλοφύλων.",
+        "VUL": "Et dabit Dominus etiam Israël tecum in manus Philisthiim : cras autem tu et filii tui mecum eritis : sed et castra Israël tradet Dominus in manus Philisthiim.",
+        "SYN": "И предаст Господь Израиля вместе с тобою в руки Филистимлян: завтра ты и сыны твои _будете_ со мною, и стан Израильский предаст Господь в руки Филистимлян.",
+        "NEO": "Et même \\+w Yahweh|strong=\"H3068\"\\+w** livrera Israël avec toi aux mains des Philistins. Demain, toi et tes fils, vous serez avec moi, et \\+w Yahweh|strong=\"H3068\"\\+w** livrera le camp d’Israël entre les mains des Philistins. »",
+        "NAB": "Moreover, the LORD will deliver Israel, and you as well, into the clutches of the Philistines. By tomorrow you and your sons will be with me, and the LORD will have delivered the army of Israel into the hands of the Philistines.\"",
+        "VAT_ES": "Y junto contigo, el Señor entregará también a Israel en manos de los filisteos. Mañana, tú y tus hijos estarán conmigo, y también al ejército de Israel el Señor lo entregará en manos de los filisteos».",
+        "CEI": "Il Signore abbandonerà inoltre Israele insieme con te nelle mani dei Filistei. Domani tu e i tuoi figli sarete con me; il Signore consegnerà anche l'accampamento d'Israele in mano ai Filistei\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יְמַהֵ֣ר שָׁא֗וּל וַ/יִּפֹּ֤ל מְלֹא קֽוֹמָת/וֹ֙ אַ֔רְצָ/ה וַ/יִּרָ֥א מְאֹ֖ד מִ/דִּבְרֵ֣י שְׁמוּאֵ֑ל גַּם כֹּ֨חַ֙ לֹא הָ֣יָה ב֔/וֹ כִּ֣י לֹ֤א אָכַל֙ לֶ֔חֶם כָּל הַ/יּ֖וֹם וְ/כָל הַ/לָּֽיְלָה׃",
+        "LXX": "καὶ ἔσπευσεν Σαοὺλ καὶ ἔπεσεν ἑστηκὼς ἐπὶ τὴν γῆν, καὶ ἐφοβήθη σφόδρα ἀπὸ τῶν λόγων Σαμουήλ· καὶ ἰσχὺς ἐν αὐτῷ οὐκ ἦν ἔτι, οὐ γὰρ ἔφαγεν ἄρτον ὁλην τὴν ἡμέραν καὶ ὅλην τὴν νύκτα ἐκείνην.",
+        "VUL": "Statimque Saul cecidit porrectus in terram : extimuerat enim verba Samuelis, et robur non erat in eo, quia non comederat panem tota die illa.",
+        "SYN": "Тогда Саул вдруг пал всем телом своим на землю, ибо сильно испугался слов Самуила; притом и силы не стало в нем, ибо он не ел хлеба весь тот день и всю ночь.",
+        "NEO": "Aussitôt Saül tomba par terre de toute sa hauteur, car les paroles de Samuel l’avaient rempli d’effroi ; de plus, les forces lui manquaient, car il n’avait pris aucune nourriture de tout le jour et de toute la nuit.",
+        "NAB": "Immediately Saul fell full length on the ground, for he was badly shaken by Samuel's message. Moreover, he had no bodily strength left, since he had eaten nothing all that day and night.",
+        "VAT_ES": "Al instante, Saúl se desplomó en tierra cuan largo era, aterrorizado por lo que había dicho Samuel. Además, estaba sin fuerzas porque no había comido nada en todo el día y toda la noche.",
+        "CEI": "All'istante Saul cadde a terra lungo disteso, pieno di terrore per le parole di Samuele; inoltre era già senza forze perché non aveva mangiato niente tutto quel giorno e la notte."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/תָּב֤וֹא הָֽ/אִשָּׁה֙ אֶל שָׁא֔וּל וַ/תֵּ֖רֶא כִּי נִבְהַ֣ל מְאֹ֑ד וַ/תֹּ֣אמֶר אֵלָ֗י/ו הִנֵּ֨ה שָׁמְעָ֤ה שִׁפְחָֽתְ/ךָ֙ בְּ/קוֹלֶ֔/ךָ וָ/אָשִׂ֤ים נַפְשִׁ/י֙ בְּ/כַפִּ֔/י וָֽ/אֶשְׁמַע֙ אֶת דְּבָרֶ֔י/ךָ אֲשֶׁ֥ר דִּבַּ֖רְתָּ אֵלָֽ/י׃",
+        "LXX": "καὶ εἰσῆλθεν ἡ γυνὴ πρὸς Σαούλ, καὶ εἶδεν ὅτι ἔσπευσεν σφόδρα· καὶ εἶπεν πρὸς αὐτόν Ἰδοὺ δὴ ἤκουσεν ἡ δούλη σου τῆς φωνῆς σου, καὶ ἐθέμην τὴν ψυχήν μου ἐν τῇ χειρί μου, καὶ ἤκουσα τοὺς λόγους οὓς ἐλάλησάς μοι.",
+        "VUL": "Ingressa est itaque mulier illa ad Saul (conturbatus enim erat valde), dixitque ad eum : Ecce obedivit ancilla tua voci tuæ, et posui animam meam in manu mea : et audivi sermones tuos, quos locutus es ad me.",
+        "SYN": "И подошла женщина та к Саулу, и увидела, что он очень испугался, и сказала: вот, раба твоя послушалась голоса твоего и подвергала жизнь свою опасности и исполнила приказание, которое ты дал мне;",
+        "NEO": "La femme vint vers Saül et, voyant son grand trouble, elle lui dit : « Ta servante a obéi à ta voix ; j’ai exposé ma vie, en obéissant aux paroles que tu m’as dites.",
+        "NAB": "Then the woman came to Saul, and seeing that he was quite terror-stricken, said to him: \"Remember, your maidservant obeyed you: I took my life in my hands and fulfilled the request you made of me.",
+        "VAT_ES": "La mujer se acercó a Saúl y, al verlo tan abatido por el terror, le dijo: «Ya ves que tu servidora te ha hecho caso. Yo arriesgué mi vida y obedecí la orden que me diste.",
+        "CEI": "Allora la donna si accostò a Saul e vedendolo tutto spaventato, gli disse: \"Ecco, la tua serva ha ascoltato i tuoi ordini. Ho esposto al pericolo la vita per obbedire alla parola che mi hai detto."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה שְׁמַֽע נָ֤א גַם אַתָּה֙ בְּ/ק֣וֹל שִׁפְחָתֶ֔/ךָ וְ/אָשִׂ֧מָה לְ/פָנֶ֛י/ךָ פַּת לֶ֖חֶם וֶ/אֱכ֑וֹל וִ/יהִ֤י בְ/ךָ֙ כֹּ֔חַ כִּ֥י תֵלֵ֖ךְ בַּ/דָּֽרֶךְ׃",
+        "LXX": "καὶ νῦν ἄκουσον δὴ φωνῆς τῆς δούλης σου, καὶ παραθήσω ἐνώπιόν σου ψωμὸν ἄρτου, καὶ φάγε· καὶ ἔσται ἐν σοὶ ἰσχύς, ὅτι πορεύσῃ ἐν ὁδῷ.",
+        "VUL": "Nunc igitur audi et tu vocem ancillæ tuæ, et ponam coram te buccellam panis, ut comedens convalescas, et possis iter agere.",
+        "SYN": "теперь прошу, послушайся и ты голоса рабы твоей: я предложу тебе кусок хлеба, поешь, и будет в тебе крепость, когда пойдешь в путь.",
+        "NEO": "Ecoute maintenant, toi aussi, la voix de ta servante, et que je t’offre un morceau de pain ; manges-en, pour avoir de la force lorsque tu poursuivras ta route. »",
+        "NAB": "Now you, in turn, please listen to your maidservant. Let me set something before you to eat, so that you may have strength when you go on your way.\"",
+        "VAT_ES": "Ahora tú tienes que hacerme caso: deja que te sirva un pedazo de pan y come. Así tendrás fuerza cuando vayas por el camino».",
+        "CEI": "Ma ora ascolta anche tu la voce della tua serva. Ti ho preparato un pezzo di pane: mangia e riprenderai le forze, perché devi rimetterti in viaggio\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יְמָאֵ֗ן וַ/יֹּ֨אמֶר֙ לֹ֣א אֹכַ֔ל וַ/יִּפְרְצוּ ב֤/וֹ עֲבָדָי/ו֙ וְ/גַם הָ֣/אִשָּׁ֔ה וַ/יִּשְׁמַ֖ע לְ/קֹלָ֑/ם וַ/יָּ֨קָם֙ מֵֽ/הָ/אָ֔רֶץ וַ/יֵּ֖שֶׁב אֶל הַ/מִּטָּֽה׃",
+        "LXX": "καὶ οὐκ ἐβουλήθη φαγεῖν· καὶ παρεβιάζοντο αὐτὸν οἱ παῖδες αὐτοῦ καὶ ἡ γυνή, καὶ ἤκουσεν τῆς φωνῆς αὐτῶν, καὶ ἀνέστη ἀπὸ τῆς γῆς καὶ ἐκάθισεν ἐπὶ τὸν δίφρον.",
+        "VUL": "Qui renuit, et ait : Non comedam. Coëgerunt autem eum servi sui et mulier, et tandem audita voce eorum surrexit de terra, et sedit super lectum.",
+        "SYN": "Но он отказался и сказал: не буду есть. И стали уговаривать его слуги его, а также и женщина; и он послушался голоса их, и встал с земли и сел на ложе.",
+        "NEO": "Mais il refusa et dit : « Je ne mangerai point. » Ses serviteurs, ainsi que la femme, le pressèrent, et il se rendit à leurs instances. Il se leva de terre et s’assit sur le divan.",
+        "NAB": "But he refused, saying, \"I will not eat.\" However, when his servants joined the woman in urging him, he listened to their entreaties, got up from the ground, and sat on a couch.",
+        "VAT_ES": "Pero él rehusó, diciendo: «&iexcl;No comeré!». Sus servidores, y también la mujer, le insistieron, y al fin Saúl les hizo caso; se levantó del suelo y se sentó en el catre.",
+        "CEI": "Egli rifiutava e diceva: \"Non mangio\". Ma i suoi servi insieme alla donna lo costrinsero e accettò di mangiare. Si alzò da terra e sedette sul letto."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/לָ/אִשָּׁ֤ה עֵֽגֶל מַרְבֵּק֙ בַּ/בַּ֔יִת וַ/תְּמַהֵ֖ר וַ/תִּזְבָּחֵ֑/הוּ וַ/תִּקַּח קֶ֣מַח וַ/תָּ֔לָשׁ וַ/תֹּפֵ֖/הוּ מַצּֽוֹת׃",
+        "LXX": "καὶ τῇ γυναικὶ ἦν δάμαλις νομὰς ἐν τῇ οἰκίᾳ· καὶ ἔσπευσεν καὶ ἔθυσεν αὐτήν, καὶ ἔλαβεν ἄλευρα καὶ ἐφύρασεν καὶ ἔπεψεν ἄζυμα,",
+        "VUL": "Mulier autem illa habebat vitulum pascualem in domo, et festinavit, et occidit eum : tollensque farinam, miscuit eam, et coxit azyma,",
+        "SYN": "У женщины же был в доме откормленный теленок, и она поспешила заколоть его и, взяв муки, замесила и испекла опресноки,",
+        "NEO": "La femme avait chez elle un veau gras, elle se hâta de le tuer et, prenant de la farine, elle la pétrit et en cuisit des pains sans levain.",
+        "NAB": "The woman had a stall-fed calf in the house, which she now quickly slaughtered. Then taking flour, she kneaded it and baked unleavened bread.",
+        "VAT_ES": "La mujer tenía en casa un ternero cebado. En seguida lo mató, tomó un poco de harina, la amasó e hizo cocer unos panes sin levadura.",
+        "CEI": "La donna aveva in casa un vitello da ingrasso; si affrettò a ucciderlo, poi prese la farina, la impastò e gli fece cuocere pani azzimi."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/תַּגֵּ֧שׁ לִ/פְנֵֽי שָׁא֛וּל וְ/לִ/פְנֵ֥י עֲבָדָ֖י/ו וַ/יֹּאכֵ֑לוּ וַ/יָּקֻ֥מוּ וַ/יֵּלְכ֖וּ בַּ/לַּ֥יְלָה הַ/הֽוּא׃",
+        "LXX": "καὶ προσήγαγεν ἐνώπιον Σαοὺλ καὶ ἐνώπιον τῶν παίδων αὐτοῦ· καὶ ἔφαγον, καὶ ἀνέστησαν καὶ ἀπῆλθον τὴν νύκτα ἐκείνην.",
+        "VUL": "et posuit ante Saul et ante servos ejus. Qui cum comedissent, surrexerunt, et ambulaverunt per totam noctem illam.",
+        "SYN": "и предложила Саулу и слугам его, и они поели, и встали, и ушли в ту же ночь.",
+        "NEO": "Elle les mit devant Saül et devant ses serviteurs, et ils mangèrent. Puis s’étant levés, ils partirent la nuit même.",
+        "NAB": "She set the meal before Saul and his servants, and they ate. Then they stood up and left the same night.",
+        "VAT_ES": "Después sirvió todo eso a Saúl y a sus servidores. Ellos comieron y se pusieron en camino aquella misma noche.",
+        "CEI": "Mise tutto davanti a Saul e ai suoi servi. Essi mangiarono, poi si alzarono e partirono quella stessa notte."
+      }
+    }
+  }
+}

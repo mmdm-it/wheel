@@ -1,0 +1,604 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ROM_011",
+  "book_key": "ROM",
+  "sequence": 11,
+  "chapter_in": {
+    "MT": 11,
+    "VUL": 11,
+    "LXX": 11
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Λέγω οὖν, μὴ ἀπώσατο ὁ θεὸς τὸν λαὸν αὐτοῦ; Μὴ γένοιτο. Καὶ γὰρ ἐγὼ Ἰσραηλίτης εἰμί, ἐκ σπέρματος Ἀβραάμ, φυλῆς Βενιαμίν.",
+        "VUL": "Dico ergo : Numquid Deus repulit populum suum ? Absit. Nam et ego Israëlita sum ex semine Abraham, de tribu Benjamin :",
+        "SYN": "Итак, спрашиваю: неужели Бог отверг народ Свой? Никак. Ибо и я Израильтянин, от семени Авраамова, из колена Вениаминова.",
+        "NEO": "Je dis donc : Est-ce que Dieu a rejeté son peuple ? Loin de là ! Car moi aussi, je suis Israélite, de la postérité d’Abraham, de la race de Benjamin.",
+        "NAB": "I ask, then, has God rejected his people? Of course not! For I too am an Israelite, a descendant of Abraham, of the tribe of Benjamin.",
+        "VAT_ES": "Entonces me pregunto: &iquest;Dios habrá rechazado a su Pueblo? &iexcl;Nada de eso! Yo mismo soy israelita, descendiente de Abraham y miembro de la tribu de Benjamín.",
+        "CEI": "Se anche parlassi le lingue degli uomini e degli angeli, ma non avessi la carità, sono come un bronzo che risuona o un cembalo che tintinna."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Οὐκ ἀπώσατο ὁ θεὸς τὸν λαὸν αὐτοῦ ὃν προέγνω. Ἢ οὐκ οἴδατε ἐν Ἠλίᾳ τί λέγει ἡ γραφή; Ὡς ἐντυγχάνει τῷ θεῷ κατὰ τοῦ Ἰσραήλ, λέγων,",
+        "VUL": "non repulit Deus plebem suam, quam præscivit. An nescitis in Elia quid dicit Scriptura ? quemadmodum interpellat Deum adversum Israël :",
+        "SYN": "Не отверг Бог народа Своего, который Он наперед знал. Или не знаете, что говорит Писание в _повествовании_ _об_ Илии? как он жалуется Богу на Израиля, говоря:",
+        "NEO": "Non, Dieu n’a pas rejeté son peuple, qu’il a connu d’avance. Ne savez-vous pas ce que l’Écriture rapporte dans le chapitre* d’Élie, comment il adresse à Dieu cette plainte contre Israël :",
+        "NAB": "God has not rejected his people whom he foreknew. Do you not know what the scripture says about Elijah, how he pleads with God against Israel?",
+        "VAT_ES": "Dios no ha rechazado a su Pueblo, al que eligió de antemano. &iquest;Ustedes no saben acaso lo que dice la Escritura en la historia de Elías? El se quejó de Israel delante de Dios, diciendo:",
+        "CEI": "E se avessi il dono della profezia e conoscessi tutti i misteri e tutta la scienza, e possedessi la pienezza della fede così da trasportare le montagne, ma non avessi la carità, non sono nulla."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Κύριε, τοὺς προφήτας σου ἀπέκτειναν, καὶ τὰ θυσιαστήριά σου κατέσκαψαν· κἀγὼ ὑπελείφθην μόνος, καὶ ζητοῦσιν τὴν ψυχήν μου.",
+        "VUL": "Domine, prophetas tuos occiderunt, altaria tua suffoderunt : et ego relictus sum solus, et quærunt animam meam.",
+        "SYN": "Господи! пророков Твоих убили, жертвенники Твои разрушили; остался я один, и моей души ищут.",
+        "NEO": "« Seigneur, ils ont tué vos prophètes, ils ont renversé vos autels, je suis resté moi seul, et ils en veulent à ma vie+ 11:3 I Rois, xviii, 4.*. »",
+        "NAB": "\"Lord, they have killed your prophets, they have torn down your altars, and I alone am left, and they are seeking my life.\"",
+        "VAT_ES": "\"Señor, han matado a tus profetas, destruyeron tus altares; he quedado yo solo y tratan de quitarme la vida\".",
+        "CEI": "E se anche distribuissi tutte le mie sostanze e dessi il mio corpo per esser bruciato, ma non avessi la carità, niente mi giova."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ἀλλὰ τί λέγει αὐτῷ ὁ χρηματισμός; Κατέλιπον ἐμαυτῷ ἑπτακισχιλίους ἄνδρας, οἵτινες οὐκ ἔκαμψαν γόνυ τῇ Βάαλ.",
+        "VUL": "Sed quid dicit illi divinum responsum ? Reliqui mihi septem millia virorum, qui non curvaverunt genua ante Baal.",
+        "SYN": "Что же говорит ему Божеский ответ? Я соблюл Себе семь тысяч человек, которые не преклонили колени перед Ваалом.",
+        "NEO": "Mais que lui répond la voix divine ? « Je me suis réservé sept mille hommes qui n’ont pas fléchi le genou devant Baal. »",
+        "NAB": "But what is God's response to him? \"I have left for myself seven thousand men who have not knelt to Baal.\"",
+        "VAT_ES": "&iquest;Y que le respondió el oráculo divino?: \"Me he reservado siete mil hombres que no doblaron su rodilla ante Baal\".",
+        "CEI": "La carità è paziente, è benigna la carità; non è invidiosa la carità, non si vanta, non si gonfia,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Οὕτως οὖν καὶ ἐν τῷ νῦν καιρῷ λεῖμμα κατ’ ἐκλογὴν χάριτος γέγονεν.",
+        "VUL": "Sic ergo et in hoc tempore reliquiæ secundum electionem gratiæ salvæ factæ sunt.",
+        "SYN": "Так и в нынешнее время, по избранию благодати, сохранился остаток.",
+        "NEO": "De même aussi, dans le temps présent, il y a une réserve selon un choix de grâce.",
+        "NAB": "So also at the present time there is a remnant, chosen by grace.",
+        "VAT_ES": "Así, en el tiempo presente, hay también un resto elegido gratuitamente.",
+        "CEI": "non manca di rispetto, non cerca il suo interesse, non si adira, non tiene conto del male ricevuto,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ χάριτι, οὐκέτι ἐξ ἔργων· ἐπεὶ ἡ χάρις οὐκέτι γίνεται χάρις. Εἰ δὲ ἐξ ἔργων, οὐκέτι ἐστὶν χάρις· ἐπεὶ τὸ ἔργον οὐκέτι ἐστὶν ἔργον.",
+        "VUL": "Si autem gratia, jam non ex operibus : alioquin gratia jam non est gratia.",
+        "SYN": "Но если по благодати, то не по делам; иначе благодать не была бы уже благодатью. А если по делам, то это уже не благодать; иначе дело не есть уже дело.",
+        "NEO": "Or, si c’est par grâce, ce n’est plus par les œuvres+ 11:6 La phrase mise entre parenthèses se lit dans le texte reçu, dans le manuscrit du Vatican et dans bon nombre d’autres manuscrits grecs. Toutefois, d’après l’opinion la plus générale, ce n’est qu’une glose marginale, anciennement introduite dans le texte. — Vulg. Un reste a été sauvé, addition empruntée probablement à ix, 27.* ; autrement la grâce cesse d’être une grâce. [Et si c’est par les œuvres, ce n’est plus une grâce ; autrement l’œuvre cesse d’être une œuvre.]",
+        "NAB": "But if by grace, it is no longer because of works; otherwise grace would no longer be grace.",
+        "VAT_ES": "Y si es por gracia, no es por las obras; de lo contrario, la gracia no sería gracia.",
+        "CEI": "non gode dell'ingiustizia, ma si compiace della verità."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Τί οὖν; Ὃ ἐπιζητεῖ Ἰσραήλ, τοῦτο οὐκ ἐπέτυχεν, ἡ δὲ ἐκλογὴ ἐπέτυχεν, οἱ δὲ λοιποὶ ἐπωρώθησαν·",
+        "VUL": "Quid ergo ? Quod quærebat Israël, hoc non est consecutus : electio autem consecuta est : ceteri vero excæcati sunt :",
+        "SYN": "Что же? Израиль, чего искал, того не получил; избранные же получили, а прочие ожесточились,",
+        "NEO": "Que dirons-nous* donc ? Ce qu’Israël cherche, il ne l’a pas obtenu ; mais ceux que Dieu* a choisis l’ont obtenu, tandis que les autres ont été aveuglés,",
+        "NAB": "What then? What Israel was seeking it did not attain, but the elect attained it; the rest were hardened,",
+        "VAT_ES": "&iquest;Qué conclusión sacaremos de esto? Que Israel no alcanzó lo que buscaba, sino que lo consiguieron los elegidos; en cuanto a los demás, se endurecieron,",
+        "CEI": "Tutto copre, tutto crede, tutto spera, tutto sopporta."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "καθὼς γέγραπται, Ἔδωκεν αὐτοῖς ὁ θεὸς πνεῦμα κατανύξεως, ὀφθαλμοὺς τοῦ μὴ βλέπειν, καὶ ὦτα τοῦ μὴ ἀκούειν, ἕως τῆς σήμερον ἡμέρας.",
+        "VUL": "sicut scriptum est : Dedit illis Deus spiritum compunctionis : oculos ut non videant, et aures ut non audiant, usque in hodiernum diem.",
+        "SYN": "как написано: Бог дал им дух усыпления, глаза, которыми не видят, и уши, которыми не слышат, даже до сего дня.",
+        "NEO": "selon qu’il est écrit : « Dieu leur a donné un esprit d’étourdissement, des yeux pour ne pas voir, et des oreilles pour ne pas entendre, jusqu’à ce jour+ 11:8 Deut. xxix, 3; Is. xxix, 10.*. »",
+        "NAB": "as it is written: \"God gave them a spirit of deep sleep, eyes that should not see and ears that should not hear, down to this very day.\"",
+        "VAT_ES": "según la palabra de la Escritura: \"Dios los insensibilizó, para que sus ojos no vean y sus oídos no escuchen hasta el día de hoy\".",
+        "CEI": "La carità non avrà mai fine. Le profezie scompariranno; il dono delle lingue cesserà e la scienza svanirà."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Καὶ Δαυὶδ λέγει, Γενηθήτω ἡ τράπεζα αὐτῶν εἰς παγίδα καὶ εἰς θήραν, καὶ εἰς σκάνδαλον, καὶ εἰς ἀνταπόδομα αὐτοῖς·",
+        "VUL": "Et David dicit : Fiat mensa eorum in laqueum, et in captionem, et in scandalum, et in retributionem illis.",
+        "SYN": "И Давид говорит: да будет трапеза их сетью, тенетами и петлею в возмездие им;",
+        "NEO": "Et David dit : « Que leur table leur devienne un piège, un lacet, un trébuchet et un juste châtiment+ 11:9 Ps. lxix (68), 23, cité librement d’après les Septante qui eux-mêmes traduisent peu littéralement l’hébreu.* !",
+        "NAB": "And David says: \"Let their table become a snare and a trap, a stumbling block and a retribution for them;",
+        "VAT_ES": "Y David añade: \"Que su mesa se convierta en una trampa y en un lazo, en ocasión de caída y en justo castigo.",
+        "CEI": "La nostra conoscenza è imperfetta e imperfetta la nostra profezia."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "σκοτισθήτωσαν οἱ ὀφθαλμοὶ αὐτῶν τοῦ μὴ βλέπειν, καὶ τὸν νῶτον αὐτῶν διὰ παντὸς σύγκαμψον.",
+        "VUL": "Obscurentur oculi eorum ne videant : et dorsum eorum semper incurva.",
+        "SYN": "да помрачатся глаза их, чтобы не видеть, и хребет их да будет согбен навсегда.",
+        "NEO": "Que leurs yeux soient obscurcis pour ne pas voir ; tiens leur dos continuellement courbé ! »",
+        "NAB": "let their eyes grow dim so that they may not see, and keep their backs bent forever.\"",
+        "VAT_ES": "Que se nublen sus ojos para que no puedan ver, y doblégales la espalda para siempre\".",
+        "CEI": "Ma quando verrà ciò che è perfetto, quello che è imperfetto scomparirà."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Λέγω οὖν, μὴ ἔπταισαν ἵνα πέσωσιν; Μὴ γένοιτο· ἀλλὰ τῷ αὐτῶν παραπτώματι ἡ σωτηρία τοῖς ἔθνεσιν, εἰς τὸ παραζηλῶσαι αὐτούς.",
+        "VUL": "Dico ergo : Numquid sic offenderunt ut caderent ? Absit. Sed illorum delicto, salus est gentibus ut illos æmulentur.",
+        "SYN": "Итак спрашиваю: неужели они преткнулись, чтобы _совсем_ пасть? Никак. Но от их падения спасение язычникам, чтобы возбудить в них ревность.",
+        "NEO": "Je demande donc : Ont-ils bronché, afin de tomber pour toujours ? Loin de là ! mais par leur chute, le salut est arrivé aux Gentils, de manière à exciter la jalousie d’Israël.",
+        "NAB": "Hence I ask, did they stumble so as to fall? Of course not! But through their transgression salvation has come to the Gentiles, so as to make them jealous.",
+        "VAT_ES": "Yo me pregunto entonces: &iquest;El tropiezo de Israel significará su caída definitiva? De ninguna manera. Por el contrario, a raíz de su caída, la salvación llegó a los paganos, a fin de provocar los celos de Israel.",
+        "CEI": "Quand'ero bambino, parlavo da bambino, pensavo da bambino, ragionavo da bambino. Ma, divenuto uomo, ciò che era da bambino l'ho abbandonato."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ τὸ παράπτωμα αὐτῶν πλοῦτος κόσμου, καὶ τὸ ἥττημα αὐτῶν πλοῦτος ἐθνῶν, πόσῳ μᾶλλον τὸ πλήρωμα αὐτῶν;",
+        "VUL": "Quod si delictum illorum divitiæ sunt mundi, et diminutio eorum divitiæ gentium : quanto magis plenitudo eorum ?",
+        "SYN": "Если же падение их -- богатство миру, и оскудение их -- богатство язычникам, то тем более полнота их.",
+        "NEO": "Or, si leur chute a été la richesse du monde, et leur amoindrissement la richesse des Gentils, que ne sera pas leur plénitude !",
+        "NAB": "Now if their transgression is enrichment for the world, and if their diminished number is enrichment for the Gentiles, how much more their full number.",
+        "VAT_ES": "Ahora bien, si su caída enriqueció al mundo y su disminución a los paganos, &iquest;qué no conseguirá su conversión total?",
+        "CEI": "Ora vediamo come in uno specchio, in maniera confusa; ma allora vedremo a faccia a faccia. Ora conosco in modo imperfetto, ma allora conoscerò perfettamente, come anch'io sono conosciuto."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "¶Ὑμῖν γὰρ λέγω τοῖς ἔθνεσιν. Ἐφ’ ὅσον μέν εἰμι ἐγὼ ἐθνῶν ἀπόστολος, τὴν διακονίαν μου δοξάζω·",
+        "VUL": "Vobis enim dico gentibus : Quamdiu quidem ego sum gentium Apostolus, ministerium meum honorificabo,",
+        "SYN": "Вам говорю, язычникам. Как Апостол язычников, я прославляю служение мое.",
+        "NEO": "En effet, je vous le dis, à vous, chrétiens* nés dans la gentilité : moi-même, en tant qu’apôtre des Gentils, je m’efforce de rendre mon ministère glorieux,",
+        "NAB": "Now I am speaking to you Gentiles. Inasmuch then as I am the apostle to the Gentiles, I glory in my ministry",
+        "VAT_ES": "A ustedes, que son de origen pagano, les aseguro que en mi condición de Apóstol de los paganos, hago honor a mi ministerio",
+        "CEI": "Queste dunque le tre cose che rimangono: la fede, la speranza e la carità; ma di tutte più grande è la carità!"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "εἴ πως παραζηλώσω μου τὴν σάρκα, καὶ σώσω τινὰς ἐξ αὐτῶν.",
+        "VUL": "si quomodo ad æmulandum provocem carnem meam, et salvos faciam aliquos ex illis.",
+        "SYN": "Не возбужу ли ревность в _сродниках_ моих по плоти и не спасу ли некоторых из них?",
+        "NEO": "afin, s’il est possible, d’exciter la jalousie de ceux de mon sang, et d’en sauver quelques-uns.",
+        "NAB": "in order to make my race jealous and thus save some of them.",
+        "VAT_ES": "provocando los celos de mis hermanos de raza, con la esperanza de salvar a algunos de ellos."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Εἰ γὰρ ἡ ἀποβολὴ αὐτῶν καταλλαγὴ κόσμου, τίς ἡ πρόσληψις, εἰ μὴ ζωὴ ἐκ νεκρῶν;",
+        "VUL": "Si enim amissio eorum, reconciliatio est mundi : quæ assumptio, nisi vita ex mortuis ?",
+        "SYN": "Ибо если отвержение их -- примирение мира, то что _будет_ принятие, как не жизнь из мертвых?",
+        "NEO": "Car si leur rejet a été la réconciliation du monde, que sera leur réintégration, sinon une résurrection d’entre les morts+ 11:15 Rejet (ἡ ἀποβολὴ). Comp. Act. xxii, 2. Vulg. \\+qt Leur perte\\+qt*.* ?",
+        "NAB": "For if their rejection is the reconciliation of the world, what will their acceptance be but life from the dead?",
+        "VAT_ES": "Porque si la exclusión de Israel trajo consigo la reconciliación del mundo, su reintegración, &iquest;no será un retorno a la vida?"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ ἡ ἀπαρχὴ ἁγία, καὶ τὸ φύραμα· καὶ εἰ ἡ ῥίζα ἁγία, καὶ οἱ κλάδοι.",
+        "VUL": "Quod si delibatio sancta est, et massa : et si radix sancta, et rami.",
+        "SYN": "Если начаток свят, то и целое; и если корень свят, то и ветви.",
+        "NEO": "Si les prémices sont saintes, la masse l’est aussi ; et si la racine est sainte, les branches le sont aussi.",
+        "NAB": "If the firstfruits are holy, so is the whole batch of dough; and if the root is holy, so are the branches.",
+        "VAT_ES": "Si las primicias son santas, también lo es toda la masa; si la raíz es santa, también lo son las ramas."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Εἰ δέ τινες τῶν κλάδων ἐξεκλάσθησαν, σὺ δὲ ἀγριέλαιος ὢν ἐνεκεντρίσθης ἐν αὐτοῖς, καὶ συγκοινωνὸς τῆς ῥίζης καὶ τῆς πιότητος τῆς ἐλαίας ἐγένου,",
+        "VUL": "Quod si aliqui ex ramis fracti sunt, tu autem cum oleaster esses, insertus es in illis, et socius radicis, et pinguedinis olivæ factus es,",
+        "SYN": "Если же некоторые из ветвей отломились, а ты, дикая маслина, привился на место их и стал общником корня и сока маслины,",
+        "NEO": "Mais si quelques-unes des branches ont été retranchées, et si toi, qui n*’étais qu*’un olivier sauvage, tu as été enté à leur place et rendu participant de la racine et de la sève de l’olivier,",
+        "NAB": "But if some of the branches were broken off, and you, a wild olive shoot, were grafted in their place and have come to share in the rich root of the olive tree,",
+        "VAT_ES": "Si algunas de las ramas fueron cortadas, y tú, que eres un olivo silvestre, fuiste injertado en lugar de ellas, haciéndote partícipe de la raíz y de la savia del olivo,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "μὴ κατακαυχῶ τῶν κλάδων· εἰ δὲ κατακαυχᾶσαι, οὐ σὺ τὴν ῥίζαν βαστάζεις, ἀλλ’ ἡ ῥίζα σέ.",
+        "VUL": "noli gloriari adversus ramos. Quod si gloriaris : non tu radicem portas, sed radix te.",
+        "SYN": "то не превозносись перед ветвями. Если же превозносишься, _то_ _вспомни,_ _что_ не ты корень держишь, но корень тебя.",
+        "NEO": "ne te glorifie pas à l’encontre des branches. Si tu te glorifies, sache que* ce n’est pas toi qui portes la racine, mais que* c’est la racine qui te porte.",
+        "NAB": "do not boast against the branches. If you do boast, consider that you do not support the root; the root supports you.",
+        "VAT_ES": "no te enorgullezcas frente a las ramas. Y si lo haces, recuerda que no eres tú quien mantiene a la raíz, sino la raíz a ti."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ἐρεῖς οὖν, Ἐξεκλάσθησαν κλάδοι, ἵνα ἐγὼ ἐγκεντρισθῶ.",
+        "VUL": "Dices ergo : Fracti sunt rami ut ego inserar.",
+        "SYN": "Скажешь: \"ветви отломились, чтобы мне привиться\".",
+        "NEO": "Tu diras donc : Ces branches ont été retranchées, afin que moi je fusse enté.",
+        "NAB": "Indeed you will say, \"Branches were broken off so that I might be grafted in.\"",
+        "VAT_ES": "Me dirás: Estas ramas han sido cortadas para que yo fuera injertado."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Καλῶς· τῇ ἀπιστίᾳ ἐξεκλάσθησαν, σὺ δὲ τῇ πίστει ἕστηκας. Μὴ ὑψηλοφρόνει, ἀλλὰ φοβοῦ·",
+        "VUL": "Bene : propter incredulitatem fracti sunt. Tu autem fide stas : noli altum sapere, sed time.",
+        "SYN": "Хорошо. Они отломились неверием, а ты держишься верою: не гордись, но бойся.",
+        "NEO": "Cela est vrai ; ils ont été retranchés à cause de leur incrédulité, et toi, tu subsistes par la foi ; garde-toi de pensées orgueilleuses, mais crains.",
+        "NAB": "That is so. They were broken off because of unbelief, but you are there because of faith. So do not become haughty, but stand in awe.",
+        "VAT_ES": "De acuerdo, pero ellas fueron cortadas por su falta de fe; tú, en cambio, estás firme gracias a la fe. No te enorgullezcas por eso; más bien, teme."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "εἰ γὰρ ὁ θεὸς τῶν κατὰ φύσιν κλάδων οὐκ ἐφείσατο, μήπως οὐδέ σου φείσεται.",
+        "VUL": "Si enim Deus naturalibus ramis non pepercit : ne forte nec tibi parcat.",
+        "SYN": "Ибо если Бог не пощадил природных ветвей, то смотри, пощадит ли и тебя.",
+        "NEO": "Car si Dieu n’a pas épargné les branches naturelles, crains qu’il ne t’épargne pas non plus.",
+        "NAB": "For if God did not spare the natural branches, (perhaps) he will not spare you either.",
+        "VAT_ES": "Porque si Dios no perdonó a las ramas naturales, tampoco te perdonará a ti."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Ἴδε οὖν χρηστότητα καὶ ἀποτομίαν θεοῦ· ἐπὶ μὲν τοὺς πεσόντας, ἀποτομίαν· ἐπὶ δέ σε, χρηστότητα, ἐὰν ἐπιμείνῃς τῇ χρηστότητι· ἐπεὶ καὶ σὺ ἐκκοπήσῃ.",
+        "VUL": "Vide ergo bonitatem, et severitatem Dei : in eos quidem qui ceciderunt, severitatem : in te autem bonitatem Dei, si permanseris in bonitate, alioquin et tu excideris.",
+        "SYN": "Итак видишь благость и строгость Божию: строгость к отпадшим, а благость к тебе, если пребудешь в благости _Божией;_ иначе и ты будешь отсечен.",
+        "NEO": "Considère donc la bonté et la sévérité de Dieu : sa sévérité envers ceux qui sont tombés, et sa bonté envers toi, si tu te maintiens dans cette bonté ; autrement toi aussi tu seras retranché.",
+        "NAB": "See, then, the kindness and severity of God: severity toward those who fell, but God's kindness to you, provided you remain in his kindness; otherwise you too will be cut off.",
+        "VAT_ES": "Considera tanto la bondad cuanto la severidad de Dios: él es severo para con los que cayeron y es bueno contigo, siempre y cuando seas fiel a su bondad; de lo contrario, también tú serás arrancado."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Καὶ ἐκεῖνοι δέ, ἐὰν μὴ ἐπιμείνωσιν τῇ ἀπιστίᾳ, ἐγκεντρισθήσονται· δυνατὸς γὰρ ὁ θεός ἐστιν πάλιν ἐγκεντρίσαι αὐτούς.",
+        "VUL": "Sed et illi, si non permanserint in incredulitate, inserentur : potens est enim Deus iterum inserere illos.",
+        "SYN": "Но и те, если не пребудут в неверии, привьются, потому что Бог силен опять привить их.",
+        "NEO": "Eux aussi, s’ils ne persévèrent pas dans leur incrédulité, ils seront entés ; car Dieu est puissant pour les enter de nouveau.",
+        "NAB": "And they also, if they do not remain in unbelief, will be grafted in, for God is able to graft them in again.",
+        "VAT_ES": "Y si ellos no persisten en su incredulidad, también serán injertados, porque Dios es suficientemente poderoso para injertarlos de nuevo."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Εἰ γὰρ σὺ ἐκ τῆς κατὰ φύσιν ἐξεκόπης ἀγριελαίου, καὶ παρὰ φύσιν ἐνεκεντρίσθης εἰς καλλιέλαιον, πόσῳ μᾶλλον οὗτοι, οἱ κατὰ φύσιν, ἐγκεντρισθήσονται τῇ ἰδίᾳ ἐλαίᾳ;",
+        "VUL": "Nam si tu ex naturali excisus es oleastro, et contra naturam insertus es in bonam olivam : quanto magis ii qui secundum naturam inserentur suæ olivæ ?",
+        "SYN": "Ибо если ты отсечен от дикой по природе маслины и не по природе привился к хорошей маслине, то тем более сии природные привьются к своей маслине.",
+        "NEO": "Si toi, tu as été coupé sur un olivier de nature sauvage, et enté, contrairement à ta nature, sur l’olivier franc, à plus forte raison les branches naturelles seront-elles entées sur leur propre olivier.",
+        "NAB": "For if you were cut from what is by nature a wild olive tree, and grafted, contrary to nature, into a cultivated one, how much more will they who belong to it by nature be grafted back into their own olive tree.",
+        "VAT_ES": "En efecto, si tú fuiste cortado de un olivo silvestre, al que pertenecías naturalmente, y fuiste injertado contra tu condición natural en el olivo bueno, &iquest;cuánto más ellos podrán ser injertados en su propio olivo, al que pertenecen por naturaleza!"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "¶Οὐ γὰρ θέλω ὑμᾶς ἀγνοεῖν, ἀδελφοί, τὸ μυστήριον τοῦτο, ἵνα μὴ ἦτε παρ’ ἑαυτοῖς φρόνιμοι, ὅτι πώρωσις ἀπὸ μέρους τῷ Ἰσραὴλ γέγονεν, ἄχρι οὗ τὸ πλήρωμα τῶν ἐθνῶν εἰσέλθῃ·",
+        "VUL": "Nolo enim vos ignorare, fratres, mysterium hoc (ut non sitis vobis ipsis sapientes), quia cæcitas ex parte contigit in Israël, donec plenitudo gentium intraret,",
+        "SYN": "Ибо не хочу оставить вас, братия, в неведении о тайне сей, -- чтобы вы не мечтали о себе, -- что ожесточение произошло в Израиле отчасти, _до_ _времени,_ пока войдет полное _число_ язычников;",
+        "NEO": "Car je ne veux pas, frères, que vous ignoriez ce mystère, afin que vous ne soyez pas sages à vos propres yeux : c’est qu’une partie d’Israël est tombée dans l’aveuglement jusqu’à ce que la masse des Gentils soit entrée.",
+        "NAB": "I do not want you to be unaware of this mystery, brothers, so that you will not become wise (in) your own estimation: a hardening has come upon Israel in part, until the full number of the Gentiles comes in,",
+        "VAT_ES": "Hermanos, no quiero que ignoren este misterio, a fin de que no presuman de ustedes mismos: el endurecimiento de una parte de Israel durará hasta que haya entrado la totalidad de los paganos."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "καὶ οὕτως πᾶς Ἰσραὴλ σωθήσεται· καθὼς γέγραπται, Ἥξει ἐκ Σιὼν ὁ ῥυόμενος, καὶ ἀποστρέψει ἀσεβείας ἀπὸ Ἰακώβ·",
+        "VUL": "et sic omnis Israël salvus fieret, sicut scriptum est : Veniet ex Sion, qui eripiat, et avertat impietatem a Jacob.",
+        "SYN": "и так весь Израиль спасется, как написано: придет от Сиона Избавитель, и отвратит нечестие от Иакова.",
+        "NEO": "Et ainsi tout Israël sera sauvé, selon qu’il est écrit : « Le libérateur viendra de Sion, et il éloignera de Jacob toute impiété ;",
+        "NAB": "and thus all Israel will be saved, as it is written: \"The deliverer will come out of Zion, he will turn away godlessness from Jacob;",
+        "VAT_ES": "Y entonces todo Israel será salvado, según lo que dice la Escritura: \"De Sión vendrá el Libertador. El apartará la impiedad de Jacob."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "καὶ αὕτη αὐτοῖς ἡ παρ’ ἐμοῦ διαθήκη, ὅταν ἀφέλωμαι τὰς ἁμαρτίας αὐτῶν.",
+        "VUL": "Et hoc illis a me testamentum : cum abstulero peccata eorum.",
+        "SYN": "И сей завет им от Меня, когда сниму с них грехи их.",
+        "NEO": "et ce sera mon alliance avec eux, lorsque j’aurai ôté leurs péchés+ 11:27 Tout Israël ici au sens propre, Israël selon la chair (I Cor. x, 18) ; \\+qt tout\\+qt*, c’est-à-dire, l’ensemble, l’universalité morale, non chaque individu. Is. lix, 20 sv. et xxvii, 9.*. »",
+        "NAB": "and this is my covenant with them when I take away their sins.\"",
+        "VAT_ES": "Y esta será mi alianza con ellos, cuando los purifique de sus pecados\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Κατὰ μὲν τὸ εὐαγγέλιον, ἐχθροὶ δι’ ὑμᾶς· κατὰ δὲ τὴν ἐκλογήν, ἀγαπητοὶ διὰ τοὺς πατέρας.",
+        "VUL": "Secundum Evangelium quidem, inimici propter vos : secundum electionem autem, carissimi propter patres.",
+        "SYN": "В отношении к благовестию, они враги ради вас; а в отношении к избранию, возлюбленные _Божии_ ради отцов.",
+        "NEO": "Il est vrai, en ce qui concerne l’Évangile, ils sont encore* ennemis à cause de vous ; mais eu égard au choix divin, ils sont aimés à cause de leurs pères.",
+        "NAB": "In respect to the gospel, they are enemies on your account; but in respect to election, they are beloved because of the patriarchs.",
+        "VAT_ES": "Ahora bien, en lo que se refiere a la Buena Noticia, ellos son enemigos de Dios, a causa de ustedes; pero desde el punto de vista de la elección divina, son amados en atención a sus padres."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Ἀμεταμέλητα γὰρ τὰ χαρίσματα καὶ ἡ κλῆσις τοῦ θεοῦ.",
+        "VUL": "Sine pnitentia enim sunt dona et vocatio Dei.",
+        "SYN": "Ибо дары и призвание Божие непреложны.",
+        "NEO": "Car les dons et la vocation de Dieu sont sans repentance.",
+        "NAB": "For the gifts and the call of God are irrevocable.",
+        "VAT_ES": "Porque los dones y el llamado de Dios son irrevocables."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Ὥσπερ γὰρ καὶ ὑμεῖς ποτὲ ἠπειθήσατε τῷ θεῷ, νῦν δὲ ἠλεήθητε τῇ τούτων ἀπειθείᾳ·",
+        "VUL": "Sicut enim aliquando et vos non credidistis Deo, nunc autem misericordiam consecuti estis propter incredulitatem illorum :",
+        "SYN": "Как и вы некогда были непослушны Богу, а ныне помилованы, по непослушанию их,",
+        "NEO": "Et comme vous-mêmes autrefois* vous avez désobéi à Dieu, et que, par le fait de leur désobéissance, vous avez maintenant obtenu miséricorde,",
+        "NAB": "Just as you once disobeyed God but have now received mercy because of their disobedience,",
+        "VAT_ES": "En efecto, ustedes antes desobedecieron a Dios, pero ahora, a causa de la desobediencia de ellos, han alcanzado misericordia."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "οὕτως καὶ οὗτοι νῦν ἠπείθησαν, τῷ ὑμετέρῳ ἐλέει ἵνα καὶ αὐτοὶ ἐλεηθῶσιν·",
+        "VUL": "ita et isti nunc non crediderunt in vestram misericordiam : ut et ipsi misericordiam consequantur.",
+        "SYN": "так и они теперь непослушны для помилования вас, чтобы и сами они были помилованы.",
+        "NEO": "de même, eux aussi, ils ont maintenant désobéi, à cause de la miséricorde qui vous a été faite, afin qu’ils obtiennent également miséricorde+ 11:31 Afin que: voy. vers. 11. D’autres : \\+qt De même eux aussi ont désobéi maintenant par\\+qt* (ou à cause de) la miséricorde qui vous a été faite. Vulgate : \\+qt Ils n’ont pas cru pour votre miséricorde\\+qt*, ce qui forme tautologie avec la fin du vers. 30 ; ou bien, \\+qt en votre miséricorde\\+qt*, c’est-à-dire, que vous ayez obtenu miséricorde.*.",
+        "NAB": "so they have now disobeyed in order that, by virtue of the mercy shown to you, they too may (now) receive mercy.",
+        "VAT_ES": "De la misma manera, ahora que ustedes han alcanzado misericordia, ellos se niegan a obedecer a Dios. Pero esto es para que ellos también alcancen misericordia."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "συνέκλεισεν γὰρ ὁ θεὸς τοὺς πάντας εἰς ἀπείθειαν, ἵνα τοὺς πάντας ἐλεήσῃ.",
+        "VUL": "Conclusit enim Deus omnia in incredulitate, ut omnium misereatur.",
+        "SYN": "Ибо всех заключил Бог в непослушание, чтобы всех помиловать.",
+        "NEO": "Car Dieu a enfermé tous les hommes dans la désobéissance, pour faire miséricorde à tous.",
+        "NAB": "For God delivered all to disobedience, that he might have mercy upon all.",
+        "VAT_ES": "Porque Dios sometió a todos a la desobediencia, para tener misericordia de todos."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "¶Ὦ βάθος πλούτου καὶ σοφίας καὶ γνώσεως θεοῦ. Ὡς ἀνεξερεύνητα τὰ κρίματα αὐτοῦ, καὶ ἀνεξιχνίαστοι αἱ ὁδοὶ αὐτοῦ.",
+        "VUL": "O altitudo divitiarum sapientiæ, et scientiæ Dei : quam incomprehensibilia sunt judicia ejus, et investigabiles viæ ejus !",
+        "SYN": "О, бездна богатства и премудрости и ведения Божия! Как непостижимы судьбы Его и неисследимы пути Его!",
+        "NEO": "Ô profondeur inépuisable et de la sagesse et de la science de Dieu ! Que ses jugements sont insondables et ses voies incompréhensibles+ 11:33 La richesse serait, selon quelques-uns, la miséricorde et la grâce (comp. ; Eph. iii, 8 ; Phil. iv, 19). Mais \\+qt profondeur de richesse\\+qt* est plutôt un hébraïsme : \\+qt profondes richesses\\+qt*. Ainsi Vulg., \\+qt des richesses\\+qt* (des trésors) \\+qt de la sagesse\\+qt*, etc.* !",
+        "NAB": "Oh, the depth of the riches and wisdom and knowledge of God! How inscrutable are his judgments and how unsearchable his ways!",
+        "VAT_ES": "&iexcl;Qué profunda y llena de riqueza es la sabiduría y la ciencia de Dios! &iexcl;Qué insondables son sus designios y qué incomprensibles sus caminos!"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "Τίς γὰρ ἔγνω νοῦν κυρίου; Ἢ τίς σύμβουλος αὐτοῦ ἐγένετο;",
+        "VUL": "Quis enim cognovit sensum Domini ? aut quis consiliarius ejus fuit ?",
+        "SYN": "Ибо кто познал ум Господень? Или кто был советником Ему?",
+        "NEO": "Car « qui a connu la pensée du Seigneur ou qui a été son conseiller ? »",
+        "NAB": "\"For who has known the mind of the Lord or who has been his counselor?\"",
+        "VAT_ES": "&iquest;Quién penetró en el pensamiento del Señor? &iquest;Quién fue su consejero?"
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "Ἢ τίς προέδωκεν αὐτῷ, καὶ ἀνταποδοθήσεται αὐτῷ;",
+        "VUL": "aut quis prior dedit illi, et retribuetur ei ?",
+        "SYN": "Или кто дал Ему наперед, чтобы Он должен был воздать?",
+        "NEO": "Ou bien « qui lui a donné le premier, pour qu’il ait à recevoir en retour+ 11:35 Is. xl, 13; Job, xii, 2 (héb.).* ? »",
+        "NAB": "\"Or who has given him anything that he may be repaid?\"",
+        "VAT_ES": "&iquest;Quién le dio algo, para que tenga derecho a ser retribuido?"
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "Ὅτι ἐξ αὐτοῦ καὶ δι’ αὐτοῦ καὶ εἰς αὐτὸν τὰ πάντα· αὐτῷ ἡ δόξα εἰς τοὺς αἰῶνας. Ἀμήν.",
+        "VUL": "Quoniam ex ipso, et per ipsum, et in ipso sunt omnia : ipsi gloria in sæcula. Amen.",
+        "SYN": "Ибо все из Него, Им и к Нему. Ему слава во веки, аминь.",
+        "NEO": "De lui, par lui et pour lui sont toutes choses. À lui la gloire dans tous les siècles ! Amen+ 11:36 De lui, qui les a créées de rien ; par lui, qui les conserve et les gouverne ; \\+qt pour lui\\+qt*, comme pour leur fin dernière.* !",
+        "NAB": "For from him and through him and for him are all things. To him be glory forever. Amen.",
+        "VAT_ES": "Porque todo viene de él, ha sido por él, y es para él. &iexcl;A él sea la gloria eternamente! Amén."
+      }
+    }
+  }
+}

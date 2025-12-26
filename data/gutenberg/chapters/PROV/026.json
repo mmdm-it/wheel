@@ -1,0 +1,519 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PROV_026",
+  "book_key": "PROV",
+  "sequence": 26,
+  "chapter_in": {
+    "MT": 26,
+    "VUL": 26,
+    "LXX": 26
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "כַּ/שֶּׁ֤לֶג בַּ/קַּ֗יִץ וְ/כַ/מָּטָ֥ר בַּ/קָּצִ֑יר כֵּ֤ן לֹא נָאוֶ֖ה לִ/כְסִ֣יל כָּבֽוֹד׃",
+        "LXX": "ὥσπερ δρόσος ἐν ἀμήτῳ καὶ ὥσπερ ὑετὸς ἐν θέρει, οὕτως οὐκ ἔστιν ἄφρονι τιμή.",
+        "VUL": "[Quomodo nix in æstate, et pluviæ in messe,/ sic indecens est stulto gloria./",
+        "SYN": "Как снег летом и дождь во время жатвы, так честь неприлична глупому.",
+        "NEO": "Comme la neige en été, et la pluie pendant la moisson, ainsi la gloire ne convient pas à un insensé.",
+        "NAB": "Like snow in summer, or rain in harvest, honor for a fool is out of place.",
+        "VAT_ES": "Como nieve en verano y lluvia en la cosecha, así de mal le sienta la gloria al insensato.",
+        "CEI": "Come la neve d'estate e la pioggia alla mietitura, così l'onore non conviene allo stolto."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כַּ/צִּפּ֣וֹר לָ֭/נוּד כַּ/דְּר֣וֹר לָ/ע֑וּף כֵּ֥ן קִֽלְלַ֥ת חִ֝נָּ֗ם לא ל֣/וֹ תָבֹֽא׃",
+        "LXX": "ὥσπερ ὄρνεα πέταται καὶ στρουθοί, οὕτως ἀρὰ ματαία οὐκ ἐπελεύσεται οὐδενί.",
+        "VUL": "Sicut avis ad alia transvolans, et passer quolibet vadens,/ sic maledictum frustra prolatum in quempiam superveniet./",
+        "SYN": "Как воробей вспорхнет, как ласточка улетит, так незаслуженное проклятие не сбудется.",
+        "NEO": "Comme le passereau qui s’échappe, comme l’hirondelle qui s’envole, ainsi la malédiction sans cause n’atteint pas.",
+        "NAB": "Like the sparrow in its flitting, like the swallow in its flight, a curse uncalled-for arrives nowhere.",
+        "VAT_ES": "Como revolotea el pájaro y vuela la golondrina, así no alcanza una maldición gratuita.",
+        "CEI": "Come il passero che svolazza, come la rondine che vola, così una maledizione senza motivo non avverrà."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "שׁ֣וֹט לַ֭/סּוּס מֶ֣תֶג לַ/חֲמ֑וֹר וְ֝/שֵׁ֗בֶט לְ/גֵ֣ו כְּסִילִֽים׃",
+        "LXX": "ὥσπερ μάστιξ ἵππῳ καὶ κέντρον ὄνῳ, οὕτως ῥάβδος ἔθνει παρανόμῳ.",
+        "VUL": "Flagellum equo, et camus asino,/ et virga in dorso imprudentium./",
+        "SYN": "Бич для коня, узда для осла, а палка для глупых.",
+        "NEO": "Le fouet est pour le cheval, le mors pour l’âne et la verge pour le dos des insensés.",
+        "NAB": "The whip for the horse, the bridle for the ass, and the rod for the back of fools.",
+        "VAT_ES": "El látigo para el caballo, el freno para el asno, y la vara para las espaldas del insensato.",
+        "CEI": "La frusta per il cavallo, la cavezza per l'asino e il bastone per la schiena degli stolti."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אַל תַּ֣עַן כְּ֭סִיל כְּ/אִוַּלְתּ֑/וֹ פֶּֽן תִּשְׁוֶה לּ֥/וֹ גַם אָֽתָּה׃",
+        "LXX": "μὴ ἀποκρίνου ἄφρονι πρὸς τὴν ἐκείνου ἀφροσύνην, ἵνα μὴ ὅμοιος γένῃ αὐτῷ·",
+        "VUL": "Ne respondeas stulto juxta stultitiam suam,/ ne efficiaris ei similis./",
+        "SYN": "Не отвечай глупому по глупости его, чтобы и тебе не сделаться подобным ему;",
+        "NEO": "Ne réponds pas à l’insensé selon sa folie, de peur de lui ressembler toi-même.",
+        "NAB": "Answer not the fool according to his folly, lest you too become like him.",
+        "VAT_ES": "No respondas al insensato según su necedad, no sea que también tú te asemejes a él;",
+        "CEI": "Non rispondere allo stolto secondo la sua stoltezza per non divenire anche tu simile a lui."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "עֲנֵ֣ה כְ֭סִיל כְּ/אִוַּלְתּ֑/וֹ פֶּן יִהְיֶ֖ה חָכָ֣ם בְּ/עֵינָֽי/ו׃",
+        "LXX": "ἀλλὰ ἀποκρίνου ἄφρονι κατὰ τὴν ἀφροσύνην αὐτοῦ, ἵνα μὴ φαίνηται σοφὸς παρ’ ἑαυτῷ.",
+        "VUL": "Responde stulto juxta stultitiam suam,/ ne sibi sapiens esse videatur./",
+        "SYN": "но отвечай глупому по глупости его, чтобы он не стал мудрецом в глазах своих.",
+        "NEO": "Réponds à l’insensé selon sa folie, de peur qu’il ne se regarde comme sage.",
+        "NAB": "Answer the fool according to his folly, lest he become wise in his own eyes.",
+        "VAT_ES": "responde al insensato según su necedad, no sea que pase por sabio a sus propios ojos.",
+        "CEI": "Rispondi allo stolto secondo la sua stoltezza perché egli non si creda saggio."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "מְקַצֶּ֣ה רַ֭גְלַיִם חָמָ֣ס שֹׁתֶ֑ה שֹׁלֵ֖חַ דְּבָרִ֣ים בְּ/יַד כְּסִֽיל׃",
+        "LXX": "ἐκ τῶν ἑαυτοῦ ὁδῶν ὄνειδος ποιεῖται ὁ ἀποστείλας δι’ ἀγγέλου ἄφρονος λόγον.",
+        "VUL": "Claudus pedibus, et iniquitatem bibens,/ qui mittit verba per nuntium stultum./",
+        "SYN": "Подрезывает себе ноги, терпит неприятность тот, кто дает словесное поручение глупцу.",
+        "NEO": "Il se coupe les pieds, il boit l’iniquité, celui qui donne des messages à un insensé.",
+        "NAB": "He cuts off his feet, he drinks down violence, who sends messages by a fool.",
+        "VAT_ES": "Se mutila los pies, bebe sinsabores, el que envía mensajes por medio de un necio.",
+        "CEI": "Si taglia i piedi e beve amarezze chi invia messaggi per mezzo di uno stolto."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "דַּלְי֣וּ שֹׁ֭קַיִם מִ/פִּסֵּ֑חַ וּ֝/מָשָׁ֗ל בְּ/פִ֣י כְסִילִֽים׃",
+        "LXX": "ἀφελοῦ πορείαν σκελῶν καὶ παρανομίαν ἐκ στόματος ἀφρόνων.",
+        "VUL": "Quomodo pulchras frustra habet claudus tibias,/ sic indecens est in ore stultorum parabola./",
+        "SYN": "Неровно поднимаются ноги у хромого, - и притча в устах глупцов.",
+        "NEO": "Otez les jambes au boiteux, est la sentence de la bouche de l’insensé.",
+        "NAB": "A proverb in the mouth of a fool hangs limp, like crippled legs.",
+        "VAT_ES": "Como las piernas vacilantes del rengo, así es un proverbio en boca de los necios.",
+        "CEI": "Malferme sono le gambe dello zoppo, così una massima sulla bocca degli stolti."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּ/צְר֣וֹר אֶ֭בֶן בְּ/מַרְגֵּמָ֑ה כֵּן נוֹתֵ֖ן לִ/כְסִ֣יל כָּבֽוֹד׃",
+        "LXX": "ὃς ἀποδεσμεύει λίθον ἐν σφενδόνῃ, ὅμοιός ἐστιν τῷ διδόντι ἄφρονι δόξαν.",
+        "VUL": "Sicut qui mittit lapidem in acervum Mercurii,/ ita qui tribuit insipienti honorem./",
+        "SYN": "Что влагающий драгоценный камень в пращу, то воздающий глупому честь.",
+        "NEO": "C’est attacher une pierre à la fronde, que de rendre gloire à un insensé.",
+        "NAB": "Like one who entangles the stone in the sling is he who gives honor to a fool.",
+        "VAT_ES": "Como sujetar una piedra en la honda, es tributar honores a un insensato.",
+        "CEI": "Come chi lega il sasso alla fionda, così chi attribuisce onori a uno stolto."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "ח֭וֹחַ עָלָ֣ה בְ/יַד שִׁכּ֑וֹר וּ֝/מָשָׁ֗ל בְּ/פִ֣י כְסִילִֽים׃",
+        "LXX": "ἄκανθαι φύονται ἐν χειρὶ μεθύσου, δουλεία δὲ ἐν χειρὶ τῶν ἀφρόνων.",
+        "VUL": "Quomodo si spina nascatur in manu temulenti,/ sic parabola in ore stultorum./",
+        "SYN": "Что _колючий_ терн в руке пьяного, то притча в устах глупцов.",
+        "NEO": "Comme une épine qui s’enfonce dans la main d’un homme ivre, ainsi est une sentence dans la bouche des insensés.",
+        "NAB": "Like a thorn stick brandished by the hand of a drunkard is a proverb in the mouth of fools.",
+        "VAT_ES": "Espina en la mano de un borracho es un proverbio en la boca de los insensatos.",
+        "CEI": "Una spina penetrata nella mano d'un ubriaco, tale è una massima sulla bocca degli stolti."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "רַ֥ב מְחֽוֹלֵֽל כֹּ֑ל וְ/שֹׂכֵ֥ר כְּ֝סִ֗יל וְ/שֹׂכֵ֥ר עֹבְרִֽים׃",
+        "LXX": "πολλὰ χειμάζεται πᾶσα σὰρξ ἀφρόνων, συντρίβεται γὰρ ἡ ἔκστασις αὐτῶν.",
+        "VUL": "Judicium determinat causas,/ et qui imponit stulto silentium iras mitigat./",
+        "SYN": "Сильный делает все произвольно: и глупого награждает, и всякого прохожего награждает.",
+        "NEO": "Comme un archer qui blesse tout le monde, ainsi est celui qui prend à gage les insensés et les passants.",
+        "NAB": "Like an archer wounding all who pass by is he who hires a drunken fool.",
+        "VAT_ES": "Arquero que hiere a todos los que pasan es el que toma a sueldo a un insensato o a un borracho.",
+        "CEI": "Arciere che ferisce tutti i passanti, tale è chi assume uno stolto o un ubriaco."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כְּ֭/כֶלֶב שָׁ֣ב עַל קֵא֑/וֹ כְּ֝סִ֗יל שׁוֹנֶ֥ה בְ/אִוַּלְתּֽ/וֹ׃",
+        "LXX": "ὥσπερ κύων ὅταν ἐπέλθῃ ἐπὶ τὸν ἑαυτοῦ ἔμετον καὶ μισητὸς γένηται, οὕτως ἄφρων τῇ ἑαυτοῦ κακίᾳ ἀναστρέψας ἐπὶ τὴν ἑαυτοῦ ἁμαρτίαν. [1] ἔστιν αἰσχύνη ἐπάγουσα ἁμαρτίαν, καὶ ἔστιν αἰσχύνη δόξα καὶ χάρις.",
+        "VUL": "Sicut canis qui revertitur ad vomitum suum,/ sic imprudens qui iterat stultitiam suam./",
+        "SYN": "Как пес возвращается на блевотину свою, так глупый повторяет глупость свою.",
+        "NEO": "Comme un chien qui retourne à son vomissement, ainsi est un insensé qui revient à sa folie.",
+        "NAB": "As the dog returns to his vomit, so the fool repeats his folly.",
+        "VAT_ES": "Como el perro vuelve sobre su vómito, así el insensato reincide en su necedad.",
+        "CEI": "Come il cane torna al suo vomito, così lo stolto ripete le sue stoltezze."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "רָאִ֗יתָ אִ֭ישׁ חָכָ֣ם בְּ/עֵינָ֑י/ו תִּקְוָ֖ה לִ/כְסִ֣יל מִמֶּֽ/נּוּ׃",
+        "LXX": "εἶδον ἄνδρα δόξαντα παρ’ ἑαυτῷ σοφὸν εἶναι, ἐλπίδα μέντοι ἔσχεν μᾶλλον ἄφρων αὐτοῦ.",
+        "VUL": "Vidisti hominem sapientem sibi videri ?/ magis illo spem habebit insipiens.]",
+        "SYN": "Видал ли ты человека, мудрого в глазах его? На глупого больше надежды, нежели на него.",
+        "NEO": "Si tu vois un homme qui est sage à ses yeux, il faut plus espérer d’un insensé que de lui.",
+        "NAB": "You see a man wise in his own eyes? There is more hope for a fool than for him.",
+        "VAT_ES": "&iquest;Has visto a un hombre que se tiene por sabio? Se puede esperar más de un necio que de él.",
+        "CEI": "Hai visto un uomo che si crede saggio? È meglio sperare in uno stolto che in lui."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "אָמַ֣ר עָ֭צֵל שַׁ֣חַל בַּ/דָּ֑רֶךְ אֲ֝רִ֗י בֵּ֣ין הָ/רְחֹבֽוֹת׃",
+        "LXX": "λέγει ὀκνηρὸς ἀποστελλόμενος εἰς ὁδόν Λέων ἐν ταῖς ὁδοῖς.",
+        "VUL": "[Dicit piger : Leo est in via,/ et leæna in itineribus./",
+        "SYN": "Ленивец говорит: \"лев на дороге! лев на площадях!\"",
+        "NEO": "Le paresseux dit : « Il y a un lion sur la route, il y a un lion dans les rues. »",
+        "NAB": "The sluggard says, \"There is a lion in the street, a lion in the middle of the square!\"",
+        "VAT_ES": "El perezoso dice: «&iexcl;Hay un león en el camino! &iexcl;Un león por las plazas!.",
+        "CEI": "Il pigro dice: \"C'è una belva per la strada, un leone si aggira per le piazze\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הַ֭/דֶּלֶת תִּסּ֣וֹב עַל צִירָ֑/הּ וְ֝/עָצֵ֗ל עַל מִטָּתֽ/וֹ׃",
+        "LXX": "ὥσπερ θύρα στρέφεται ἐπὶ τοῦ στρόφιγγος, οὕτως ὀκνηρὸς ἐπὶ τῆς κλίνης αὐτοῦ.",
+        "VUL": "Sicut ostium vertitur in cardine suo,/ ita piger in lectulo suo./",
+        "SYN": "Дверь ворочается на крючьях своих, а ленивец на постели своей.",
+        "NEO": "La porte tourne sur ses gonds, ainsi le paresseux sur sa couche.",
+        "NAB": "The door turns on its hinges, the sluggard, on his bed!",
+        "VAT_ES": "La puerta gira sus bisagras y el perezoso sobre su lecho.",
+        "CEI": "La porta gira sui cardini, così il pigro sul suo letto."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "טָ֘מַ֤ן עָצֵ֣ל יָ֭ד/וֹ בַּ/צַּלָּ֑חַת נִ֝לְאָ֗ה לַֽ/הֲשִׁיבָ֥/הּ אֶל פִּֽי/ו׃",
+        "LXX": "κρύψας ὀκνηρὸς τὴν χεῖρα ἐν τῷ κόλπῳ αὐτοῦ οὐ δυνήσεται ἐπενεγκεῖν ἐπὶ στόμα.",
+        "VUL": "Abscondit piger manum sub ascella sua,/ et laborat si ad os suum eam converterit./",
+        "SYN": "Ленивец опускает руку свою в чашу, и ему тяжело донести ее до рта своего.",
+        "NEO": "Le paresseux met sa main dans le plat, et il a de la peine à la porter à la bouche.",
+        "NAB": "The sluggard loses his hand in the dish; he is too weary to lift it to his mouth.",
+        "VAT_ES": "El perezoso hunde su mano en el plato y se fatiga de sólo llevarla a la boca.",
+        "CEI": "Il pigro tuffa la mano nel piatto, ma dura fatica a portarla alla bocca."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "חָכָ֣ם עָצֵ֣ל בְּ/עֵינָ֑י/ו מִ֝/שִּׁבְעָ֗ה מְשִׁ֣יבֵי טָֽעַם׃",
+        "LXX": "σοφώτερος ἑαυτῷ ὀκνηρὸς φαίνεται τοῦ ἐν πλησμονῇ ἀποκομίζοντος ἀγγελίαν.",
+        "VUL": "Sapientior sibi piger videtur/ septem viris loquentibus sententias.]",
+        "SYN": "Ленивец в глазах своих мудрее семерых, отвечающих обдуманно.",
+        "NEO": "Le paresseux est plus sage à ses yeux que sept conseillers prudents.",
+        "NAB": "The sluggard imagines himself wiser than seven men who answer with good sense.",
+        "VAT_ES": "El perezoso se tiene por más sabio que siete personas que responden con acierto.",
+        "CEI": "Il pigro si crede saggio più di sette persone che rispondono con senno."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "מַחֲזִ֥יק בְּ/אָזְנֵי כָ֑לֶב עֹבֵ֥ר מִ֝תְעַבֵּ֗ר עַל רִ֥יב לֹּֽא לֽ/וֹ׃",
+        "LXX": "ὥσπερ ὁ κρατῶν κέρκου κυνός, οὕτως ὁ προεστὼς ἀλλοτρίας κρίσεως.",
+        "VUL": "[Sicut qui apprehendit auribus canem,/ sic qui transit impatiens et commiscetur rixæ alterius./",
+        "SYN": "Хватает пса за уши, кто, проходя мимо, вмешивается в чужую ссору.",
+        "NEO": "Comme celui qui saisit un chien par les oreilles, tel est le passant qui s’échauffe dans la querelle d’autrui.",
+        "NAB": "Like the man who seizes a passing dog by the ears is he who meddles in a quarrel not his own.",
+        "VAT_ES": "Como agarrar de las orejas a un perro suelto, es entrometerse en una disputa ajena.",
+        "CEI": "Prende un cane per le orecchie chi si intromette in una lite che non lo riguarda."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כְּֽ֭/מִתְלַהְלֵהַּ הַ/יֹּרֶ֥ה זִקִּ֗ים חִצִּ֥ים וָ/מָֽוֶת׃",
+        "LXX": "ὥσπερ οἱ ἰώμενοι προβάλλουσιν λόγους εἰς ἀνθρώπους, ὁ δὲ ἀπαντήσας τῷ λόγῳ πρῶτος ὑποσκελισθήσεται·",
+        "VUL": "Sicut noxius est qui mittit sagittas et lanceas in mortem,/",
+        "SYN": "Как притворяющийся помешанным бросает огонь, стрелы и смерть,",
+        "NEO": "Comme un furieux qui lance des traits enflammés, des flèches et la mort,",
+        "NAB": "Like a crazed archer scattering firebrands and deadly arrows",
+        "VAT_ES": "Como un loco que arroja al azar teas y flechas mortíferas,",
+        "CEI": "Come un pazzo che scaglia tizzoni e frecce di morte,"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כֵּֽן אִ֭ישׁ רִמָּ֣ה אֶת רֵעֵ֑/הוּ וְ֝/אָמַ֗ר הֲֽ/לֹא מְשַׂחֵ֥ק אָֽנִי׃",
+        "LXX": "οὕτως πάντες οἱ ἐνεδρεύοντες τοὺς ἑαυτῶν φίλους, ὅταν δὲ ὁραθῶσιν, λέγουσιν ὅτι Παίζων ἔπραξα.",
+        "VUL": "ita vir fraudulenter nocet amico suo,/ et cum fuerit deprehensus dicit : Ludens feci./",
+        "SYN": "так - человек, который коварно вредит другу своему и потом говорит: \"я только пошутил\".",
+        "NEO": "ainsi est un homme qui a trompé son prochain et qui dit : « Est-ce que je ne plaisantais pas. »",
+        "NAB": "Is the man who deceives his neighbor, and then says, \"I was only joking.\"",
+        "VAT_ES": "así es el hombre que engaña a su prójimo y después le dice: «&iexcl;No era más que una broma!».",
+        "CEI": "così è quell'uomo che inganna il suo prossimo e poi dice: \"Ma sì, è stato uno scherzo!\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "בְּ/אֶ֣פֶס עֵ֭צִים תִּכְבֶּה אֵ֑שׁ וּ/בְ/אֵ֥ין נִ֝רְגָּ֗ן יִשְׁתֹּ֥ק מָדֽוֹן׃",
+        "LXX": "ἐν πολλοῖς ξύλοις θάλλει πῦρ, ὅπου δὲ οὐκ ἔστιν δίθυμος, ἡσυχάζει μάχη.",
+        "VUL": "Cum defecerint ligna extinguetur ignis,/ et susurrone subtracto, jurgia conquiescent./",
+        "SYN": "Где нет больше дров, огонь погасает, и где нет наушника, раздор утихает.",
+        "NEO": "Faute de bois, le feu s’éteint ; éloignez le rapporteur, et la querelle s’apaise.",
+        "NAB": "For lack of wood, the fire dies out; and when there is no talebearer, strife subsides.",
+        "VAT_ES": "Sin leña se apaga el fuego, y si no hay un detractor se apacigua la pelea.",
+        "CEI": "Per mancanza di legna il fuoco si spegne; se non c'è il delatore, il litigio si calma."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "פֶּחָ֣ם לְ֭/גֶחָלִים וְ/עֵצִ֣ים לְ/אֵ֑שׁ וְ/אִ֥ישׁ מדונים מִ֝דְיָנִ֗ים לְ/חַרְחַר רִֽיב׃",
+        "LXX": "ἐσχάρα ἄνθραξιν καὶ ξύλα πυρί, ἀνὴρ δὲ λοίδορος εἰς ταραχὴν μάχης.",
+        "VUL": "Sicut carbones ad prunas, et ligna ad ignem,/ sic homo iracundus suscitat rixas./",
+        "SYN": "Уголь - для жара и дрова - для огня, а человек сварливый - для разжжения ссоры.",
+        "NEO": "Le charbon donne un brasier et le bois du feu : ainsi l’homme querelleur irrite une discussion.",
+        "NAB": "What a bellows is to live coals, what wood is to fire, such is a contentious man in enkindling strife.",
+        "VAT_ES": "Carbón para las brasas y leña para el fuego es el pendenciero para atizar una disputa.",
+        "CEI": "Mantice per il carbone e legna per il fuoco, tale è l'attaccabrighe per rattizzar le liti."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "דִּבְרֵ֣י נִ֭רְגָּן כְּ/מִֽתְלַהֲמִ֑ים וְ֝/הֵ֗ם יָרְד֥וּ חַדְרֵי בָֽטֶן׃",
+        "LXX": "λόγοι κερκώπων μαλακοί, οὗτοι δὲ τύπτουσιν εἰς ταμεῖα σπλάγχνων.",
+        "VUL": "Verba susurronis quasi simplicia,/ et ipsa perveniunt ad intima ventris./",
+        "SYN": "Слова наушника - как лакомства, и они входят во внутренность чрева.",
+        "NEO": "Les paroles du rapporteur sont comme des friandises ; elles descendent jusqu’au fond des entrailles.",
+        "NAB": "The words of a talebearer are like dainty morsels that sink into one's inmost being.",
+        "VAT_ES": "Las palabras del detractor son como golosinas que bajan hasta el fondo de las entrañas.",
+        "CEI": "Le parole del sussurrone sono come ghiotti bocconi, esse scendono in fondo alle viscere."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "כֶּ֣סֶף סִ֭יגִים מְצֻפֶּ֣ה עַל חָ֑רֶשׂ שְׂפָתַ֖יִם דֹּלְקִ֣ים וְ/לֶב רָֽע׃",
+        "LXX": "ἀργύριον διδόμενον μετὰ δόλου ὥσπερ ὄστρακον ἡγητέον· ⸂⸆⸃ χείλη λεῖα καρδίαν καλύπτει λυπηράν.",
+        "VUL": "Quomodo si argento sordido ornare velis vas fictile,/ sic labia tumentia cum pessimo corde sociata./",
+        "SYN": "Что нечистым серебром обложенный глиняный сосуд, то пламенные уста и сердце злобное.",
+        "NEO": "Des scories d’argent appliquées sur un vase de terre, telles sont les lèvres brûlantes avec un cœur mauvais.",
+        "NAB": "Like a glazed finish on earthenware are smooth lips with a wicked heart.",
+        "VAT_ES": "Escorias de plata aplicadas a un vaso de barro son los labios melosos con un corazón maligno.",
+        "CEI": "Come vernice d'argento sopra un coccio di creta sono le labbra lusinghiere con un cuore maligno."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "ב/שפת/ו בִּ֭/שְׂפָתָי/ו יִנָּכֵ֣ר שׂוֹנֵ֑א וּ֝/בְ/קִרְבּ֗/וֹ יָשִׁ֥ית מִרְמָֽה׃",
+        "LXX": "χείλεσιν πάντα ἐπινεύει ἀποκλαιόμενος ἐχθρούς, ἐν δὲ τῇ καρδίᾳ τεκταίνεται λόγους.",
+        "VUL": "Labiis suis intelligitur inimicus,/ cum in corde tractaverit dolos./",
+        "SYN": "Устами своими притворяется враг, а в сердце своем замышляет коварство.",
+        "NEO": "Celui qui hait se déguise par ses lèvres, mais il met au dedans de lui la perfidie.",
+        "NAB": "With his lips an enemy pretends, but in his inmost being he maintains deceit;",
+        "VAT_ES": "El que odia finge con sus labios, pero alberga engaño en su interior:",
+        "CEI": "Chi odia si maschera con le labbra, ma nel suo intimo cova il tradimento;"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "כִּֽי יְחַנֵּ֣ן ק֭וֹל/וֹ אַל תַּֽאֲמֶן בּ֑/וֹ כִּ֤י שֶׁ֖בַע תּוֹעֵב֣וֹת בְּ/לִבּֽ/וֹ׃",
+        "LXX": "ἐάν σου δέηται ὁ ἐχθρὸς μεγάλῃ τῇ φωνῇ, μὴ πεισθῇς· ἑπτὰ γὰρ πονηρίαι ἐν τῇ ψυχῇ αὐτοῦ.",
+        "VUL": "Quando submiserit vocem suam, ne credideris ei,/ quoniam septem nequitiæ sunt in corde illius./",
+        "SYN": "Если он говорит и нежным голосом, не верь ему, потому что семь мерзостей в сердце его.",
+        "NEO": "Quand il adoucit sa voix, ne te fies pas à lui, car il a sept abominations dans son cœur.",
+        "NAB": "When he speaks graciously, trust him not, for seven abominations are in his heart.",
+        "VAT_ES": "si adopta un tono amable, no te fíes, porque hay siete abominaciones en su corazón;",
+        "CEI": "anche se usa espressioni melliflue, non ti fidare, perché egli ha sette abomini nel cuore."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "תִּכַּסֶּ֣ה שִׂ֭נְאָה בְּ/מַשָּׁא֑וֹן תִּגָּלֶ֖ה רָעָת֣/וֹ בְ/קָהָֽל׃",
+        "LXX": "ὁ κρύπτων ἔχθραν συνίστησιν δόλον, ἐνκαλύπτει δὲ τὰς ἑαυτοῦ ἁμαρτίας εὔγνωστος ἐν συνεδρίοις.",
+        "VUL": "Qui operit odium fraudulenter,/ revelabitur malitia ejus in consilio./",
+        "SYN": "Если ненависть прикрывается наедине, то откроется злоба его в народном собрании.",
+        "NEO": "Il peut bien cacher sa haine sous la dissimulation, mais sa méchanceté se révélera dans l’assemblée.",
+        "NAB": "A man may conceal hatred under dissimulation, but his malice will be revealed in the assembly.",
+        "VAT_ES": "el odio se puede ocultar con astucia, pero en la asamblea se descubrirá su malicia.",
+        "CEI": "L'odio si copre di simulazione, ma la sua malizia apparirà pubblicamente."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "כֹּֽרֶה שַּׁ֭חַת בָּ֣/הּ יִפֹּ֑ל וְ/גֹ֥לֵ֥ל אֶ֝בֶן אֵלָ֥י/ו תָּשֽׁוּב׃",
+        "LXX": "ὁ ὀρύσσων βόθρον τῷ πλησίον ἐμπεσεῖται εἰς αὐτόν· ὁ δὲ κυλίων λίθον ἐφ’ ἑαυτὸν κυλίει.",
+        "VUL": "Qui fodit foveam incidet in eam,/ et qui volvit lapidem revertetur ad eum./",
+        "SYN": "Кто роет яму, тот упадет в нее, и кто покатит вверх камень, к тому он воротится.",
+        "NEO": "Celui qui creuse une fosse y tombe, et la pierre revient sur celui qui la roule.",
+        "NAB": "He who digs a pit falls into it; and a stone comes back upon him who rolls it.",
+        "VAT_ES": "El que cava una fosa caerá en ella, al que hace rodar una piedra, se le vuelve encima.",
+        "CEI": "Chi scava una fossa vi cadrà dentro e chi rotola una pietra, gli ricadrà addosso."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "לְֽשׁוֹן שֶׁ֭קֶר יִשְׂנָ֣א דַכָּ֑י/ו וּ/פֶ֥ה חָ֝לָ֗ק יַעֲשֶׂ֥ה מִדְחֶֽה׃",
+        "LXX": "γλῶσσα ψευδὴς μισεῖ ἀλήθειαν, στόμα δὲ ἄστεγον ποιεῖ ἀκαταστασίας.",
+        "VUL": "Lingua fallax non amat veritatem,/ et os lubricum operatur ruinas.]",
+        "SYN": "Лживый язык ненавидит уязвляемых им, и льстивые уста готовят падение.",
+        "NEO": "La langue fausse hait ceux qu’elle blesse, et la bouche flatteuse cause la ruine.",
+        "NAB": "The lying tongue is its owner's enemy, and the flattering mouth works ruin.",
+        "VAT_ES": "La lengua mentirosa detesta a sus víctimas y la boca aduladora causa la ruina.",
+        "CEI": "Una lingua bugiarda odia la verità, una bocca adulatrice produce rovina."
+      }
+    }
+  }
+}

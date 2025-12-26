@@ -1,0 +1,174 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOSU_020",
+  "book_key": "IOSU",
+  "sequence": 20,
+  "chapter_in": {
+    "MT": 20,
+    "VUL": 20,
+    "LXX": 20
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר יְהוָ֔ה אֶל יְהוֹשֻׁ֖עַ לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος τῷ Ἰησοῖ λέγων",
+        "VUL": "Et locutus est Dominus ad Josue, dicens : Loquere filiis Israël, et dic eis :",
+        "SYN": "И сказал Господь Иисусу, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Josué, en disant : « Parle aux enfants d’Israël et dis-leur :",
+        "NAB": "The LORD said to Joshua:",
+        "VAT_ES": "El Señor dijo a Josué:",
+        "CEI": "Poi il Signore disse a Giosuè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "דַּבֵּ֛ר אֶל בְּנֵ֥י יִשְׂרָאֵ֖ל לֵ/אמֹ֑ר תְּנ֤וּ לָ/כֶם֙ אֶת עָרֵ֣י הַ/מִּקְלָ֔ט אֲשֶׁר דִּבַּ֥רְתִּי אֲלֵי/כֶ֖ם בְּ/יַד מֹשֶֽׁה׃",
+        "LXX": "Λάλησον τοῖς υἱοῖς Ἰσραὴλ λέγων Δότε τὰς πόλεις τῶν φυγαδευτηρίων ἃς εἶπα πρὸς ὑμᾶς διὰ Μωυσῆ.",
+        "VUL": "Separate urbes fugitivorum, de quibus locutus sum ad vos per manum Moysi :",
+        "SYN": "скажи сынам Израилевым: сделайте у себя города убежища, о которых Я говорил вам чрез Моисея,",
+        "NEO": "Désignez-vous, comme je vous l’ai ordonné par Moïse, des villes de refuge",
+        "NAB": "\"Tell the Israelites to designate the cities of which I spoke to them through Moses,",
+        "VAT_ES": "«Habla en estos términos a los israelitas: Determinen cuáles serán las ciudades de refugio –esas de las que yo les hablé por medio de Moisés–",
+        "CEI": "\"Parla agli Israeliti e dì loro: Stabilitevi le città di rifugio, delle quali vi ho parlato per mezzo di Mosè,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "לָ/נ֥וּס שָׁ֨מָּ/ה֙ רוֹצֵ֔חַ מַכֵּה נֶ֥פֶשׁ בִּ/שְׁגָגָ֖ה בִּ/בְלִי דָ֑עַת וְ/הָי֤וּ לָ/כֶם֙ לְ/מִקְלָ֔ט מִ/גֹּאֵ֖ל הַ/דָּֽם׃",
+        "LXX": "φυγαδευτήριον τῷ φονευτῇ τῷ πατάξαντι ψυχὴν ἀκουσίως· καὶ ἔσονται ὑμῖν αἱ πόλεις φυγαδευτήριον, καὶ οὐκ ἀποθανεῖται ὁ φονευτὴς ὑπὸ τοῦ ἀγχιστεύοντος τὸ αἷμα, ἕως ἄν καταστῇ ἐναντίον τῆς συναγωγῆς εἰς κρίσιν.",
+        "VUL": "ut confugiat ad eas quicumque animam percusserit nescius, et possit evadere iram proximi, qui ultor est sanguinis :",
+        "SYN": "чтобы мог убегать туда убийца, убивший человека по ошибке, без умысла; пусть [города сии] будут у вас убежищем [чтобы не умер убивший] от мстящего за кровь, [доколе не предстанет пред общество на суд].",
+        "NEO": "où pourra s’enfuir le meurtrier qui aura tué quelqu’un par erreur, sans le savoir, et elles vous serviront de refuge contre le vengeur du sang.",
+        "NAB": "to which one guilty of accidental and unintended homicide may flee for asylum from the avenger of blood.",
+        "VAT_ES": "para que allí puedan encontrar asilo los homicidas que hayan matado a una persona sin premeditación e inadvertidamente. Así ustedes tendrán un refugio contra el vengador del homicidio.",
+        "CEI": "perché l'omicida che avrà ucciso qualcuno per errore o per inavvertenza, vi si possa rifugiare; vi serviranno di rifugio contro il vendicatore del sangue."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/נָ֞ס אֶל אַחַ֣ת מֵ/הֶ/עָרִ֣ים הָ/אֵ֗לֶּה וְ/עָמַד֙ פֶּ֚תַח שַׁ֣עַר הָ/עִ֔יר וְ/דִבֶּ֛ר בְּ/אָזְנֵ֛י זִקְנֵ֥י הָ/עִֽיר הַ/הִ֖יא אֶת דְּבָרָ֑י/ו וְ/אָסְפ֨וּ אֹת֤/וֹ הָ/עִ֨ירָ/ה֙ אֲלֵי/הֶ֔ם וְ/נָתְנוּ ל֥/וֹ מָק֖וֹם וְ/יָשַׁ֥ב עִמָּֽ/ם׃",
+        "VUL": "cum ad unam harum confugerit civitatum, stabit ante portam civitatis, et loquetur senioribus urbis illius ea quæ se comprobent innocentem : sicque suscipient eum, et dabunt ei locum ad habitandum.",
+        "SYN": "И кто убежит в один из городов сих, пусть станет у ворот города и расскажет вслух старейшин города сего дело свое; и они примут его к себе в город и дадут ему место, чтоб он жил у них;",
+        "NEO": "Le meurtrier s’enfuira vers une de ces villes ; il s’arrêtera à l’entrée de la porte de la ville, et exposera son cas aux anciens de cette ville ; ceux-ci le recueilleront auprès d’eux dans la ville, et lui donneront une demeure pour qu’il habite avec eux.",
+        "NAB": "To one of these cities the killer shall flee, and standing at the entrance of the city gate, he shall plead his case before the elders, who must receive him and assign him a place in which to live among them.",
+        "VAT_ES": "El homicida huirá a una de estas ciudades, se detendrá a la entrada de la puerta, y expondrá su caso a los ancianos de la ciudad. Estos lo admitirán, y le asignarán un lugar para que habite con ellos.",
+        "CEI": "L'omicida fuggirà in una di quelle città e, fermatosi all'ingresso della porta della città, esporrà il suo caso agli anziani di quella città; questi lo accoglieranno presso di loro dentro la città, gli assegneranno una dimora ed egli si stabilirà in mezzo a loro."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/כִ֨י יִרְדֹּ֜ף גֹּאֵ֤ל הַ/דָּם֙ אַֽחֲרָ֔י/ו וְ/לֹֽא יַסְגִּ֥רוּ אֶת הָ/רֹצֵ֖חַ בְּ/יָד֑/וֹ כִּ֤י בִ/בְלִי דַ֨עַת֙ הִכָּ֣ה אֶת רֵעֵ֔/הוּ וְ/לֹֽא שֹׂנֵ֥א ה֛וּא ל֖/וֹ מִ/תְּמ֥וֹל שִׁלְשֽׁוֹם׃",
+        "VUL": "Cumque ultor sanguinis eum fuerit persecutus, non tradent in manus ejus : quia ignorans percussit proximum ejus, nec ante biduum triduumve ejus probatur inimicus.",
+        "SYN": "и когда погонится за ним мстящий за кровь, то они не должны выдавать в руки его убийцу, потому что он без умысла убил ближнего своего, не имел к нему ненависти ни вчера, ни третьего дня;",
+        "NEO": "Si le vengeur du sang le poursuit, ils ne livreront pas le meurtrier entre ses mains, car c’est sans le savoir qu’il a tué son prochain, qu’il ne haïssait pas auparavant.",
+        "NAB": "Though the avenger of blood pursues him, they are not to deliver up the homicide who slew his fellow man unintentionally and not out of previous hatred.",
+        "VAT_ES": "Y si el vengador del homicidio lo persigue, no lo pondrán en sus manos, porque mató a su prójimo inadvertidamente, sin haberlo odiado antes.",
+        "CEI": "Se il vendicatore del sangue lo inseguirà, essi non gli daranno nelle mani l'omicida, perché ha ucciso il prossimo senza averne l'intenzione, senza averlo prima odiato."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/יָשַׁ֣ב בָּ/עִ֣יר הַ/הִ֗יא עַד עָמְד֞/וֹ לִ/פְנֵ֤י הָֽ/עֵדָה֙ לַ/מִּשְׁפָּ֔ט עַד מוֹת֙ הַ/כֹּהֵ֣ן הַ/גָּד֔וֹל אֲשֶׁ֥ר יִהְיֶ֖ה בַּ/יָּמִ֣ים הָ/הֵ֑ם אָ֣ז יָשׁ֣וּב הָ/רוֹצֵ֗חַ וּ/בָ֤א אֶל עִיר/וֹ֙ וְ/אֶל בֵּית֔/וֹ אֶל הָ/עִ֖יר אֲשֶׁר נָ֥ס מִ/שָּֽׁם׃",
+        "VUL": "Et habitabit in civitate illa, donec stet ante judicium, causam reddens facti sui, et moriatur sacerdos magnus, qui fuerit in illo tempore : tunc revertetur homicida, et ingredietur civitatem et domum suam de qua fugerat.",
+        "SYN": "пусть он живет в этом городе, доколе не предстанет пред общество на суд, доколе не умрет великий священник, который будет в те дни. А потом пусть возвратится убийца и пойдет в город свой и в дом свой, в город, из которого он убежал.",
+        "NEO": "Le meurtrier restera dans cette ville jusqu’à ce qu’il comparaisse devant l’assemblée pour être jugé, jusqu’à la mort du grand prêtre qui sera en fonctions en ces jours-là. Alors le meurtrier s’en retournera et rentrera dans sa ville et dans sa maison, dans la ville d’où il s’était enfui. »",
+        "NAB": "Once he has stood judgment before the community, he shall live on in that city till the death of the high priest who is in office at the time. Then the killer may go back home to his own city from which he fled.\"",
+        "VAT_ES": "Después de comparecer delante de la comunidad para ser juzgado, el homicida permanecerá en aquella ciudad hasta la muerte del Sumo Sacerdote que esté en funciones en aquellos días. Entonces podrá entrar de nuevo en la ciudad y en su casa, en la ciudad de donde había huido».",
+        "CEI": "L'omicida rimarrà in quella città finché, alla morte del sommo sacerdote, che sarà in funzione in quei giorni, comparirà in giudizio davanti all'assemblea. Allora l'omicida potrà tornarsene e rientrare nella sua città e nella sua casa, nella città da dove era fuggito\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יַּקְדִּ֜שׁוּ אֶת קֶ֤דֶשׁ בַּ/גָּלִיל֙ בְּ/הַ֣ר נַפְתָּלִ֔י וְ/אֶת שְׁכֶ֖ם בְּ/הַ֣ר אֶפְרָ֑יִם וְ/אֶת קִרְיַ֥ת אַרְבַּ֛ע הִ֥יא חֶבְר֖וֹן בְּ/הַ֥ר יְהוּדָֽה׃",
+        "LXX": "καὶ διέστειλεν τὴν Κάδης ἐν τῇ Γαλειλαίᾳ ἐν τῷ ὄρει τῷ Νεφθαλεί, καὶ Συχὲμ ἐν τῷ ὄρει τῷ Ἐφράιμ, καὶ τὴν πόλιν Ἀρβόκ, αὕτη ἐστὶν Χεβρὼν ἐν τῷ ὄρει τῷ Ἰούδᾳ.",
+        "VUL": "Decreveruntque Cedes in Galilæa montis Nephthali, et Sichem in monte Ephraim, et Cariatharbe, ipsa est Hebron in monte Juda.",
+        "SYN": "И отделили Кедес в Галилее на горе Неффалимовой, Сихем на горе Ефремовой, и Кириаф-Арбы, иначе Хеврон, на горе Иудиной;",
+        "NEO": "Ils consacrèrent Cédès en Gallilée, dans la montagne de Nephthali ; Sichem, dans la montagne d’Ephraïm, et Cariath-Arbé, qui est Hébron, dans la montagne de Juda.",
+        "NAB": "So they set apart Kedesh in Galilee in the mountain region of Naphtali, Shechem in the mountain region of Ephraim, and Kiriath-arba (that is, Hebron) in the mountain region of Judah.",
+        "VAT_ES": "Con este fin, los israelitas consagraron las siguientes ciudades: Quedes, en Galilea, en la montaña de Neftalí; Siquem, en la montaña de Efraím; Quiriat Arba –o sea Hebrón– en la montaña de Judá.",
+        "CEI": "Consacrarono dunque Kades in Galilea sulle montagne di Nèftali, Sichem sulle montagne di Efraim e Kiriat-Arba, cioè Ebron sulle montagne di Giuda."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וּ/מֵ/עֵ֜בֶר לְ/יַרְדֵּ֤ן יְרִיחוֹ֙ מִזְרָ֔חָ/ה נָתְנ֞וּ אֶת בֶּ֧צֶר בַּ/מִּדְבָּ֛ר בַּ/מִּישֹׁ֖ר מִ/מַּטֵּ֣ה רְאוּבֵ֑ן וְ/אֶת רָאמֹ֤ת בַּ/גִּלְעָד֙ מִ/מַּטֵּה גָ֔ד וְ/אֶת גלון גּוֹלָ֥ן בַּ/בָּשָׁ֖ן מִ/מַּטֵּ֥ה מְנַשֶּֽׁה׃",
+        "LXX": "καὶ ἐν τῷ πέραν τοῦ Ἰορδάνου ἔδωκεν Βόσορ ἐν τῇ ἐρήμῳ ἐν τῷ πεδίῳ ἀπὸ τῆς φυλῆς Ῥουβήν, καὶ Ἀρημὼθ ἐν τῇ Γαλαὰδ ἐκ τῆς φυλῆς Γάδ, καὶ τὴν Γαυλὼν ἐν τῇ Βασανείτιδι ἐκ τῆς φυλῆς Μανασσή.",
+        "VUL": "Et trans Jordanem contra orientalem plagam Jericho, statuerunt Bosor, quæ sita est in campestri solitudine de tribu Ruben, et Ramoth in Galaad de tribu Gad, et Gaulon in Basan de tribu Manasse.",
+        "SYN": "за Иорданом, против Иерихона к востоку, отделили: Бецер в пустыне, на равнине, от колена Рувимова, и Рамоф в Галааде от колена Гадова, и Голан в Васане от колена Манассиина;",
+        "NEO": "De l’autre côté du Jourdain, vis-à-vis de Jéricho, à l’orient, ils désignèrent Bosor, dans le désert, dans la plaine, ville de la tribu de Ruben ; Ramoth en Galaad, de la tribu de Gad, et Gaulon en Basan, de la tribu de Manassé.",
+        "NAB": "And beyond the Jordan east of Jericho they designated Bezer on the open tableland in the tribe of Reuben, Ramoth in Gilead in the tribe of Gad, and Golan in Bashan in the tribe of Manasseh.",
+        "VAT_ES": "Y al otro lado del Jordán, al este de Jericó, se designó a Béser –de la tribu de Rubén, que estaba situada en el desierto, sobre el altiplano– a Ramot de Galaad, de la tribu de Gad, y a Golán, situada en Basán y perteneciente a la tribu de Manasés.",
+        "CEI": "Oltre il Giordano, a oriente di Gerico, stabilirono Bezer della tribù di Ruben, nel deserto, sull'altipiano; Ramot in Gàlaad nella tribù di Gad e Golan in Basan, nella tribù di Manàsse."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אֵ֣לֶּה הָיוּ֩ עָרֵ֨י הַ/מּֽוּעָדָ֜ה לְ/כֹ֣ל בְּנֵ֣י יִשְׂרָאֵ֗ל וְ/לַ/גֵּר֙ הַ/גָּ֣ר בְּ/תוֹכָ֔/ם לָ/נ֣וּס שָׁ֔מָּ/ה כָּל מַכֵּה נֶ֖פֶשׁ בִּ/שְׁגָגָ֑ה וְ/לֹ֣א יָמ֗וּת בְּ/יַד֙ גֹּאֵ֣ל הַ/דָּ֔ם עַד עָמְד֖/וֹ לִ/פְנֵ֥י הָ/עֵדָֽה׃",
+        "LXX": "αὗται αἱ πόλεις αἱ ἐπίκλητοι τοῖς υἱοῖς Ἰσραὴλ καὶ τῷ προσηλύτῳ τῷ προσκειμένῳ ἐν αὐτοῖς, καταφυγεῖν ἐκεῖ παντὶ παίοντι ψυχὴν ἀκουσίως, ἵνα μὴ ἀποθάνῃ ἐν χειρὶ τοῦ ἀγχιστεύοντος τὸ αἷμα, ἕως ἂν καταστῇ ἔναντι τῆς συναγωγῆς εἰς κρίσιν.",
+        "VUL": "Hæ civitates constitutæ sunt cunctis filiis Israël, et advenis qui habitabant inter eos, ut fugeret ad eas qui animam nescius percussisset, et non moreretur in manu proximi, effusum sanguinem vindicare cupientis, donec staret ante populum expositurus causam suam.",
+        "SYN": "сии города назначены для всех сынов Израилевых и для пришельцев, живущих у них, дабы убегал туда всякий, убивший человека по ошибке, дабы не умер он от руки мстящего за кровь, доколе не предстанет пред общество [на суд].",
+        "NEO": "Telles furent les villes assignées à tous les enfants d’Israël et à l’étranger qui séjourne au milieu d’eux, afin que quiconque aurait tué quelqu’un par erreur pût s’y réfugier, et qu’il ne mourût pas de la main du vengeur du sang, avant d’avoir comparu devant l’assemblée.",
+        "NAB": "These were the designated cities to which any Israelite or stranger living among them who had killed a person accidentally might flee to escape death at the hand of the avenger of blood, until he could appear before the community.",
+        "VAT_ES": "Estas fueron las ciudades asignadas a todos los israelitas y a los extranjeros que residían en medio de ellos, para que todo el que matara sin premeditación a una persona pudiera refugiarse en ellas, y así no muriera en manos del vengador del homicidio, antes de comparecer delante de la comunidad.",
+        "CEI": "Queste furono le città stabilite per tutti gli Israeliti e per lo straniero che abita in mezzo a loro, perché chiunque avesse ucciso qualcuno per inavvertenza, potesse rifugiarvisi e non morisse per mano del vendicatore del sangue, prima d'essere comparso davanti all'assemblea."
+      }
+    }
+  }
+}

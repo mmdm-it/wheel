@@ -1,0 +1,840 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_016",
+  "book_key": "NUME",
+  "sequence": 16,
+  "chapter_in": {
+    "MT": 16,
+    "VUL": 16,
+    "LXX": 16
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֣ח קֹ֔רַח בֶּן יִצְהָ֥ר בֶּן קְהָ֖ת בֶּן לֵוִ֑י וְ/דָתָ֨ן וַ/אֲבִירָ֜ם בְּנֵ֧י אֱלִיאָ֛ב וְ/א֥וֹן בֶּן פֶּ֖לֶת בְּנֵ֥י רְאוּבֵֽן׃",
+        "LXX": "Καὶ ἐλάλησεν Κόρε υἱὸς Ἰσσαὰρ υἱοῦ Καὰθ υἱοῦ Λευεί, καὶ Δαθὰν καὶ Ἀβειρὼν υἱοὶ Ἐλιάβ, καὶ Αὒν υἱὸς Φάλεθ υἱοῦ Ῥουβήν·",
+        "VUL": "Ecce autem Core filius Isaar, filii Caath, filii Levi, et Dathan atque Abiron filii Eliab, Hon quoque filius Pheleth de filiis Ruben,",
+        "SYN": "Корей, сын Ицгара, сын Каафов, сын Левиин, и Дафан и Авирон, сыны Елиава, и Авнан, сын Фалефа, сыны Рувимовы,",
+        "NEO": "Coré, fils d’Isaar, fils de Caath, fils de Lévi, se fit des partisans, avec Dathan et Abiron, fils d’Eliab, et Hon, fils de Phéleth, ceux-ci, fils de Ruben,",
+        "NAB": "Korah, son of Izhar, son of Kohath, son of Levi, (and Dathan and Abiram, sons of Eliab, son of Pallu, son of Reuben) took",
+        "VAT_ES": "Coré –hijo de Ishar, hijo de Quehat, hijo de Leví– junto con Datán y Abirón, hijos de Eliab, y On, hijo de Pelet –estos últimos eran descendientes de Rubén– decidieron",
+        "CEI": "Ora Core figlio di Izear, figlio di Keat, figlio di Levi, e Datan e Abiram, figli di Eliab, figlio di Pallu, figlio di Ruben,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יָּקֻ֨מוּ֙ לִ/פְנֵ֣י מֹשֶׁ֔ה וַ/אֲנָשִׁ֥ים מִ/בְּנֵֽי יִשְׂרָאֵ֖ל חֲמִשִּׁ֣ים וּ/מָאתָ֑יִם נְשִׂיאֵ֥י עֵדָ֛ה קְרִאֵ֥י מוֹעֵ֖ד אַנְשֵׁי שֵֽׁם׃",
+        "LXX": "καὶ ἀνέστησαν ἔναντι Μωυσῆ, καὶ ἄνδρες τῶν υἱῶν Ἰσραὴλ πεντήκοντα καὶ διακόσιοι, ἀρχηγοὶ συναγωγῆς, σύνκλητοι βουλῆς καὶ ἄνδρες ὀνομαστοί·",
+        "VUL": "surrexerunt contra Moysen, aliique filiorum Israël ducenti quinquaginta viri proceres synagogæ, et qui tempore concilii per nomina vocabantur.",
+        "SYN": "восстали на Моисея, и _с_ _ними_ из сынов Израилевых двести пятьдесят мужей, начальники общества, призываемые на собрания, люди именитые.",
+        "NEO": "et ils se soulevèrent en présence de Moïse, ayant avec eux deux cent cinquante hommes des enfants d’Israël, princes de l’assemblée, appelés aux conseils et gens de renom.",
+        "NAB": "two hundred and fifty Israelites who were leaders in the community, members of the council and men of note. They stood before Moses,",
+        "VAT_ES": "sublevarse contra Moisés, secundados por otros doscientos cincuenta israelitas, todos ellos jefes de la comunidad, representantes de la asamblea y personas de renombre.",
+        "CEI": "presero altra gente e insorsero contro Mosè, con duecentocinquanta uomini tra gli Israeliti, capi della comunità, membri del consiglio, uomini stimati;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּֽקָּהֲל֞וּ עַל מֹשֶׁ֣ה וְ/עַֽל אַהֲרֹ֗ן וַ/יֹּאמְר֣וּ אֲלֵ/הֶם֮ רַב לָ/כֶם֒ כִּ֤י כָל הָֽ/עֵדָה֙ כֻּלָּ֣/ם קְדֹשִׁ֔ים וּ/בְ/תוֹכָ֖/ם יְהוָ֑ה וּ/מַדּ֥וּעַ תִּֽתְנַשְּׂא֖וּ עַל קְהַ֥ל יְהוָֽה׃",
+        "LXX": "συνέστησαν ὀπίσω Μωυσῆ καὶ Ἀαρὼν καὶ εἶπαν Ἐχέτω ὑμῖν, ὅτι πᾶσα ἡ συναγωγὴ πάντες ἅγιοι, καὶ ἐν αὐτοῖς Κύριος· καὶ διὰ τί κατανίστασθε ἐπὶ τὴν συναγωγὴν Κυρίου;",
+        "VUL": "Cumque stetissent adversum Moysen et Aaron, dixerunt : Sufficiat vobis, quia omnis multitudo sanctorum est, et in ipsis est Dominus : cur elevamini super populum Domini ?",
+        "SYN": "И собрались против Моисея и Аарона и сказали им: полно вам; все общество, все святы, и среди их Господь! почему же вы ставите себя выше народа Господня?",
+        "NEO": "Ils s’attroupèrent contre Moïse et Aaron, et leur dirent : « C’en est assez ! car toute l’assemblée, tous sont saints, et \\+w Yahweh|strong=\"H3068\"\\+w** est au milieu d’eux. Pourquoi vous élevez-vous au-dessus de l’assemblée de \\+w Yahweh|strong=\"H3068\"\\+w** ? »",
+        "NAB": "and held an assembly against Moses and Aaron, to whom they said, \"Enough from you! The whole community, all of them, are holy; the LORD is in their midst. Why then should you set yourselves over the LORD'S congregation?\"",
+        "VAT_ES": "Se amotinaron contra Moisés y Aarón, y les dijeron: «&iexcl;Ustedes se han excedido en sus atribuciones! Toda la comunidad es sagrada, y el Señor está en medio de ella. &iquest;Por qué entonces ustedes se ponen por encima de la asamblea del Señor?».",
+        "CEI": "radunatisi contro Mosè e contro Aronne, dissero loro: \"Basta! Tutta la comunità, tutti sono santi e il Signore è in mezzo a loro; perché dunque vi innalzate sopra l'assemblea del Signore?\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֣ע מֹשֶׁ֔ה וַ/יִּפֹּ֖ל עַל פָּנָֽי/ו׃",
+        "LXX": "καὶ ἀκούσας Μωυσῆς ἔπεσεν ἐπὶ πρόσωπον,",
+        "VUL": "Quod cum audisset Moyses, cecidit pronus in faciem :",
+        "SYN": "Моисей, услышав это, пал на лице свое",
+        "NEO": "Quand Moïse entendit cela, il tomba sur son visage.",
+        "NAB": "When Moses heard this, he fell prostrate.",
+        "VAT_ES": "Cuando Moisés oyó esto, cayó con el rostro en tierra.",
+        "CEI": "Quando Mosè ebbe udito questo, si prostrò con la faccia a terra;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֨ר אֶל קֹ֜רַח וְ/אֶֽל כָּל עֲדָת/וֹ֮ לֵ/אמֹר֒ בֹּ֠קֶר וְ/יֹדַ֨ע יְהוָ֧ה אֶת אֲשֶׁר ל֛/וֹ וְ/אֶת הַ/קָּד֖וֹשׁ וְ/הִקְרִ֣יב אֵלָ֑י/ו וְ/אֵ֛ת אֲשֶׁ֥ר יִבְחַר בּ֖/וֹ יַקְרִ֥יב אֵלָֽי/ו׃",
+        "LXX": "καὶ ἐλάλησεν πρὸς Κόρε καὶ πρὸς πᾶσαν αὐτοῦ τὴν συναγωγὴν λέγων Ἐπέσκεπται καὶ ἔγνω ὁ θεὸς τοὺς ὄντας αὐτοῦ καὶ τοὺς ἁγίους, καὶ προσηγάγετο πρὸς ἑαυτόν, καὶ οὓς ἐξελέξατο ἑαυτῷ προσηγάγετο πρὸς ἑαυτόν.",
+        "VUL": "locutusque ad Core et ad omnem multitudinem : Mane, inquit, notum faciet Dominus qui ad se pertineant, et sanctos applicabit sibi : et quos elegerit, appropinquabunt ei.",
+        "SYN": "и сказал Корею и всем сообщникам его, говоря: завтра покажет Господь, кто Его, и кто свят, чтобы приблизить его к Себе; и кого Он изберет, того и приблизит к Себе;",
+        "NEO": "Il parla à Coré et à toute sa troupe en disant : « Demain, \\+w Yahweh|strong=\"H3068\"\\+w** fera connaître celui qui est à lui et qui est saint, et il le fera approcher de lui ; celui qu’il aura choisi, il le fera approcher de lui.",
+        "NAB": "Then he said to Korah and to all his band, \"May the LORD make known tomorrow morning who belongs to him and who is the holy one and whom he will have draw near to him! Whom he chooses, he will have draw near him.",
+        "VAT_ES": "Luego dijo a Coré y a todos sus secuaces: «Mañana, el Señor pondrá de manifiesto quién es el que le pertenece y quién está consagrado; y permitirá que se le acerque el que ha sido elegido por él.",
+        "CEI": "poi disse a Core e a tutta la gente che era con lui: \"Domani mattina il Signore farà conoscere chi è suo e chi è santo e se lo farà avvicinare: farà avvicinare a sé colui che egli avrà scelto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "זֹ֖את עֲשׂ֑וּ קְחוּ לָ/כֶ֣ם מַחְתּ֔וֹת קֹ֖רַח וְ/כָל עֲדָתֽ/וֹ׃",
+        "LXX": "τοῦτο ποιήσατε· λάβετε ὑμῖν αὐτοῖς πυρεῖα, Κόρε καὶ πᾶσα ἡ συναγωγὴ αὐτοῦ,",
+        "VUL": "Hoc igitur facite : tollat unusquisque thuribula sua, tu Core, et omne concilium tuum :",
+        "SYN": "вот что сделайте: Корей и все сообщники его возьмите себе кадильницы",
+        "NEO": "Faites ceci : Prenez des encensoirs, Coré et toute sa troupe.",
+        "NAB": "Do this: take your censers (Korah and all his band)",
+        "VAT_ES": "Por eso, hagan lo siguiente: tú, Coré, y todos tus secuaces, tomen unos incensarios,",
+        "CEI": "Fate questo: prendete gli incensieri tu e tutta la gente che è con te;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וּ/תְנ֣וּ בָ/הֵ֣ן אֵ֡שׁ וְ/שִׂימוּ֩ עֲלֵי/הֶ֨ן קְטֹ֜רֶת לִ/פְנֵ֤י יְהוָה֙ מָחָ֔ר וְ/הָיָ֗ה הָ/אִ֛ישׁ אֲשֶׁר יִבְחַ֥ר יְהוָ֖ה ה֣וּא הַ/קָּד֑וֹשׁ רַב לָ/כֶ֖ם בְּנֵ֥י לֵוִֽי׃",
+        "LXX": "καὶ ἐπίθετε ἐπ’ αὐτὰ πῦρ, καὶ ἐπίθετε ἐπ’ αὐτὰ θυμίαμα ἔναντι Κυρίου αὔριον· καὶ ἔσται ὁ ἀνὴρ ὃν ἐκλέγεται Κύριος, οὗτος ἅγιος· ἱκανούσθω ὑμῖν, υἱοὶ Λευεί.",
+        "VUL": "et hausto cras igne, ponite desuper thymiama coram Domino : et quemcumque elegerit, ipse erit sanctus : multum erigimini filii Levi.",
+        "SYN": "и завтра положите в них огня и всыпьте в них курения пред Господом; и кого изберет Господь, тот и будет свят. Полно вам, сыны Левиины!",
+        "NEO": "Demain, mettez-y du feu, et jetez dessus du parfum devant \\+w Yahweh|strong=\"H3068\"\\+w** ; celui que \\+w Yahweh|strong=\"H3068\"\\+w** choisira, c’est lui qui est saint. C’en est assez, enfants de Lévi. »",
+        "NAB": "and put fire in them and place incense in them before the LORD tomorrow. He whom the LORD then chooses is the holy one. Enough from you Levites!\"",
+        "VAT_ES": "pongan fuego en ellos, y mañana échenles incienso en la presencia del Señor. Aquel a quien el Señor elija será el consagrado. &iexcl;Ustedes, hijos de Leví, se han excedido en sus atribuciones!».",
+        "CEI": "domani vi metterete il fuoco e porrete profumo aromatico davanti al Signore; colui che il Signore avrà scelto sarà santo. Basta, figli di Levi!\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר מֹשֶׁ֖ה אֶל קֹ֑רַח שִׁמְעוּ נָ֖א בְּנֵ֥י לֵוִֽי׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς πρὸς Κόρε Εἰσακούσατέ μου, υἱοὶ Λευεί.",
+        "VUL": "Dixitque rursum ad Core : Audite, filii Levi :",
+        "SYN": "И сказал Моисей Корею: послушайте, сыны Левия!",
+        "NEO": "Moïse dit à Coré : « Ecoutez donc, enfants de Lévi.",
+        "NAB": "Moses also said to Korah, \"Listen to me, you Levites!",
+        "VAT_ES": "Luego Moisés siguió diciendo a Coré: «Escúchenme, hijos de Leví.",
+        "CEI": "Mosè disse poi a Core: \"Ora ascoltate, figli di Levi!"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הַ/מְעַ֣ט מִ/כֶּ֗ם כִּֽי הִבְדִּיל֩ אֱלֹהֵ֨י יִשְׂרָאֵ֤ל אֶתְ/כֶם֙ מֵ/עֲדַ֣ת יִשְׂרָאֵ֔ל לְ/הַקְרִ֥יב אֶתְ/כֶ֖ם אֵלָ֑י/ו לַ/עֲבֹ֗ד אֶת עֲבֹדַת֙ מִשְׁכַּ֣ן יְהוָ֔ה וְ/לַ/עֲמֹ֛ד לִ/פְנֵ֥י הָ/עֵדָ֖ה לְ/שָׁרְתָֽ/ם׃",
+        "LXX": "μὴ μικρόν ἐστιν τοῦτο ὑμῖν ὅτι διέστειλεν ὁ θεὸς Ἰσραὴλ ὑμᾶς ἐκ συναγωγῆς Ἰσραήλ, καὶ προσηγάγετο ὑμᾶς πρὸς ἑαυτὸν λειτουργεῖν τὰς λειτουργίας τῆς σκηνῆς Κυρίου καὶ παρίστασθαι ἔναντι τῆς σκηνῆς λατρεύειν αὐτοῖς,",
+        "VUL": "num parum vobis est quod separavit vos Deus Israël ab omni populo, et junxit sibi, ut serviretis ei in cultu tabernaculi, et staretis coram frequentia populi, et ministraretis ei ?",
+        "SYN": "неужели мало вам того, что Бог Израилев отделил вас от общества Израильского и приблизил вас к Себе, чтобы вы исполняли службы при скинии Господней и стояли пред обществом [Господним], служа для них?",
+        "NEO": "Est-ce trop peu pour vous que le Dieu d’Israël vous ait séparés de l’assemblée d’Israël en vous faisant approcher de lui, pour faire le service de la Demeure de \\+w Yahweh|strong=\"H3068\"\\+w**, et pour vous tenir devant l’assemblée pour faire son service ?",
+        "NAB": "Is it too little for you that the God of Israel has singled you out from the community of Israel, to have you draw near him for the service of the LORD'S Dwelling and to stand before the community to minister for them?",
+        "VAT_ES": "&iquest;No les basta que el Señor los haya separado de toda la comunidad de Israel y los haya acercado a él, para prestar servicios en la Morada del Señor y para estar como ministros al frente de la comunidad?",
+        "CEI": "È forse poco per voi che il Dio d'Israele vi abbia segregati dalla comunità d'Israele e vi abbia fatti avvicinare a sé per prestare servizio nella Dimora del Signore e per tenervi davanti alla comunità, esercitando per essa il vostro ministero?"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יַּקְרֵב֙ אֹֽתְ/ךָ֔ וְ/אֶת כָּל אַחֶ֥י/ךָ בְנֵי לֵוִ֖י אִתָּ֑/ךְ וּ/בִקַּשְׁתֶּ֖ם גַּם כְּהֻנָּֽה׃",
+        "LXX": "καὶ προσηγάγετό σε καὶ πάντας τοὺς ἀδελφούς σου υἱοὺς Λευεὶ μετὰ σοῦ; καὶ ζητεῖτε καὶ ἱερατεύειν;",
+        "VUL": "idcirco ad se fecit accedere te et omnes fratres tuos filios Levi, ut vobis etiam sacerdotium vindicetis,",
+        "SYN": "Он приблизил тебя и с тобою всех братьев твоих, сынов Левия, и вы домогаетесь еще и священства.",
+        "NEO": "Il t’a fait approcher de lui, toi et tous tes frères, les enfants de Lévi, avec toi, et vous ambitionnez encore le sacerdoce !",
+        "NAB": "He has allowed you and your kinsmen, the descendants of Levi, to approach him, and yet you now seek the priesthood too.",
+        "VAT_ES": "El Señor te promovió a ti y a todos tus hermanos, los descendientes de Leví, &iquest;y todavía reclaman el sacerdocio?",
+        "CEI": "Egli vi ha fatti avvicinare a sé, te e tutti i tuoi fratelli figli di Levi con te e ora pretendete anche il sacerdozio?"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "לָ/כֵ֗ן אַתָּה֙ וְ/כָל עֲדָ֣תְ/ךָ֔ הַ/נֹּעָדִ֖ים עַל יְהוָ֑ה וְ/אַהֲרֹ֣ן מַה ה֔וּא כִּ֥י תלונו תַלִּ֖ינוּ עָלָֽי/ו׃",
+        "LXX": "οὕτως σὺ καὶ πᾶσα ἡ συναγωγή σου ἡ συνηθροισμένη πρὸς τὸν θεόν· καὶ Ἀαρὼν τίς ἐστιν ὅτι διαγογγύζετε κατ’ αὐτοῦ;",
+        "VUL": "et omnis globus tuus stet contra Dominum ? quid est enim Aaron ut murmuretis contra eum ?",
+        "SYN": "Итак ты и все твое общество собрались против Господа. Что Аарон, что вы ропщете на него?",
+        "NEO": "C’est pour cela que toi et toute ta troupe, vous vous assemblez contre \\+w Yahweh|strong=\"H3068\"\\+w** ! Et Aaron, qui est-il, pour que vous murmuriez contre lui ? »",
+        "NAB": "It is therefore against the LORD that you and all your band are conspiring. For what has Aaron done that you should grumble against him?\"",
+        "VAT_ES": "En realidad, tú y tus secuaces se han confabulado contra el Señor. Porque &iquest;quién es Aarón para que ustedes protesten contra él?».",
+        "CEI": "Per questo tu e tutta la gente che è con te siete convenuti contro il Signore! E chi è Aronne perché vi mettiate a mormorare contro di lui?\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֣ח מֹשֶׁ֔ה לִ/קְרֹ֛א לְ/דָתָ֥ן וְ/לַ/אֲבִירָ֖ם בְּנֵ֣י אֱלִיאָ֑ב וַ/יֹּאמְר֖וּ לֹ֥א נַעֲלֶֽה׃",
+        "LXX": "καὶ ἀπέστειλεν Μωυσῆς καλέσαι Δαθὰν καὶ Ἀβειρὼν υἱοὺς Ἐλιάβ. καὶ εἶπαν Οὐκ ἀναβαίνομεν·",
+        "VUL": "Misit ergo Moyses ut vocaret Dathan et Abiron filios Eliab. Qui responderunt : Non venimus.",
+        "SYN": "И послал Моисей позвать Дафана и Авирона, сынов Елиава. Но они сказали: не пойдем!",
+        "NEO": "Moïse fit appeler Dathan et Abiron, fils d’Eliab ; et ils dirent : « Nous ne monterons pas.",
+        "NAB": "Moses summoned Dathan and Abiram, sons of Eliab, but they answered, \"We will not go.",
+        "VAT_ES": "Moisés manó llamar a Datán y a Abirón, hijos de Eliab. Pero ellos replicaron: «&iexcl;No iremos",
+        "CEI": "Poi Mosè mandò a chiamare Datan e Abiram, figli di Eliab; ma essi dissero: \"Noi non verremo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הַ/מְעַ֗ט כִּ֤י הֶֽעֱלִיתָ֨/נוּ֙ מֵ/אֶ֨רֶץ זָבַ֤ת חָלָב֙ וּ/דְבַ֔שׁ לַ/הֲמִיתֵ֖/נוּ בַּ/מִּדְבָּ֑ר כִּֽי תִשְׂתָּרֵ֥ר עָלֵ֖י/נוּ גַּם הִשְׂתָּרֵֽר׃",
+        "LXX": "μὴ μικρὸν τοῦτο ὅτι ἀνήγαγες ἡμᾶς εἰς γῆν ῥέουσαν γάλα καὶ μέλι, ἀποκτεῖναι ἡμᾶς ἐν τῇ ἐρήμῳ, ὅτι κατάρχεις ἡμῶν ἄρχων;",
+        "VUL": "Numquid parum est tibi quod eduxisti nos de terra, quæ lacte et melle manabat, ut occideres in deserto, nisi et dominatus fueris nostri ?",
+        "SYN": "разве мало того, что ты вывел нас из земли, в которой течет молоко и мед, чтобы погубить нас в пустыне? и ты еще хочешь властвовать над нами!",
+        "NEO": "N’est-ce pas assez de nous avoir fait sortir d’un pays où coulent le lait et le miel pour nous faire mourir au désert, que tu t’ériges en maître sur nous ?",
+        "NAB": "Are you not satisfied with having led us here away from a land flowing with milk and honey, to make us perish in the desert, that you must now lord it over us?",
+        "VAT_ES": "&iquest;No te basta con habernos sacado de una tierra que mana leche y miel, para hacernos morir en el desierto, que todavía quieres dominarnos?",
+        "CEI": "È forse poco per te l'averci fatti partire da un paese dove scorre latte e miele per farci morire nel deserto, perché tu voglia fare il nostro capo e dominare su di noi?"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אַ֡ף לֹ֣א אֶל אֶרֶץ֩ זָבַ֨ת חָלָ֤ב וּ/דְבַשׁ֙ הֲבִ֣יאֹתָ֔/נוּ וַ/תִּ֨תֶּן לָ֔/נוּ נַחֲלַ֖ת שָׂדֶ֣ה וָ/כָ֑רֶם הַ/עֵינֵ֞י הָ/אֲנָשִׁ֥ים הָ/הֵ֛ם תְּנַקֵּ֖ר לֹ֥א נַעֲלֶֽה׃",
+        "LXX": "εἰ καὶ εἰς γῆν ῥέουσαν γάλα καὶ μέλι εἰσήγαγες ἡμᾶς, καὶ ἔδωκας ἡμῖν κλῆρον ἀγροῦ καὶ ἀμπελῶνας. τοὺς ὀφθαλμοὺς τῶν ἀνθρώπων ἐκείνων ἄν ἐξέκοψας· οὐκ ἀναβαίνομεν.",
+        "VUL": "Revera induxisti nos in terram, quæ fluit rivis lactis et mellis, et dedisti nobis possessiones agrorum et vinearum : an et oculos nostros vis eruere ? non venimus.",
+        "SYN": "привел ли ты нас в землю, где течет молоко и мед, и дал ли нам во владение поля и виноградники? глаза людей сих ты хочешь ослепить? не пойдем!",
+        "NEO": "Ah ! Ce n’est pas dans un pays où coulent le lait et le miel que tu nous as conduits ; ce ne sont pas des champs et des vignes que tu nous as donnés en possession ! Penses-tu crever les yeux de ces gens ? Nous ne monterons pas ! »",
+        "NAB": "Far from bringing us to a land flowing with milk and honey, or giving us fields and vineyards for our inheritance, will you also gouge out our eyes? No, we will not go.\"",
+        "VAT_ES": "El lugar al que nos has traído no es una tierra que mana leche y miel, y no nos has dado como herencia campos y viñedos. &iquest;O pretendes impedir que esta gente vea? No iremos».",
+        "CEI": "Non ci hai davvero condotti in un paese dove scorre latte e miele, né ci hai dato il possesso di campi e di vigne! Credi tu di poter privare degli occhi questa gente? Noi non verremo\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּ֤חַר לְ/מֹשֶׁה֙ מְאֹ֔ד וַ/יֹּ֨אמֶר֙ אֶל יְהוָ֔ה אַל תֵּ֖פֶן אֶל מִנְחָתָ֑/ם לֹ֠א חֲמ֨וֹר אֶחָ֤ד מֵ/הֶם֙ נָשָׂ֔אתִי וְ/לֹ֥א הֲרֵעֹ֖תִי אֶת אַחַ֥ד מֵ/הֶֽם׃",
+        "LXX": "καὶ ἐβαρυθύμησεν Μωυσῆς σφόδρα, καὶ εἶπεν πρὸς Κύριον Μὴ προσχῇς εἰς τὴν θυσίαν αὐτῶν· οὐκ ἐπιθύμημα οὐδενὸς αὐτῶν εἴληφα, οὐδὲ ἐκάκωσα οὐδένα αὐτῶν.",
+        "VUL": "Iratusque Moyses valde, ait ad Dominum : Ne respicias sacrificia eorum : tu scis quod ne asellum quidem umquam acceperim ab eis, nec afflixerim quempiam eorum.",
+        "SYN": "Моисей весьма огорчился и сказал Господу: не обращай взора Твоего на приношение их; я не взял ни у одного из них осла и не сделал зла ни одному из них.",
+        "NEO": "Moïse, très irrité, dit à \\+w Yahweh|strong=\"H3068\"\\+w** : « N’ayez pas égard à leur oblation. Je ne leur ai pas même pris un âne, et je n’ai fait de mal à aucun d’eux. »",
+        "NAB": "Then Moses became very angry and said to the LORD, \"Pay no heed to their offering. I have never taken a single ass from them, nor have I wronged any one of them.\"",
+        "VAT_ES": "Moisés se indignó profundamente y dijo al Señor: «No aceptes su oblación. Yo no les he quitado ni un solo asno ni he perjudicado a ninguno de ellos».",
+        "CEI": "Allora Mosè si adirò molto e disse al Signore: \"Non gradire la loro oblazione; io non ho preso da costoro neppure un asino e non ho fatto torto ad alcuno di loro\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר מֹשֶׁה֙ אֶל קֹ֔רַח אַתָּה֙ וְ/כָל עֲדָ֣תְ/ךָ֔ הֱי֖וּ לִ/פְנֵ֣י יְהוָ֑ה אַתָּ֥ה וָ/הֵ֛ם וְ/אַהֲרֹ֖ן מָחָֽר׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς πρὸς Κόρε Ἁγίασον τὴν συναγωγήν σου, καὶ γίνεσθε ἕτοιμοι ἔναντι Κυρίου σὺ καὶ αὐτοὶ καὶ Ἀαρὼν αὔριον·",
+        "VUL": "Dixitque ad Core : Tu, et omnis congregatio tua, state seorsum coram Domino, et Aaron die crastino separatim.",
+        "SYN": "И сказал Моисей Корею: завтра ты и все общество твое будьте пред лицем Господа, ты, они и Аарон;",
+        "NEO": "Moïse dit à Coré : « Toi et toute ta troupe, trouvez-vous demain devant \\+w Yahweh|strong=\"H3068\"\\+w**, toi et eux, avec Aaron.",
+        "NAB": "Moses said to Korah, \"You and all your band shall appear before the LORD tomorrow-you and they and Aaron too.",
+        "VAT_ES": "Entonces Moisés dijo a Coré: «Tú y tus secuaces comparecerán mañana delante del Señor, y también comparecerá Aarón.",
+        "CEI": "Mosè disse a Core: \"Tu e tutta la tua gente trovatevi domani davanti al Signore: tu e loro con Aronne;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וּ/קְח֣וּ אִ֣ישׁ מַחְתָּת֗/וֹ וּ/נְתַתֶּ֤ם עֲלֵי/הֶם֙ קְטֹ֔רֶת וְ/הִקְרַבְתֶּ֞ם לִ/פְנֵ֤י יְהוָה֙ אִ֣ישׁ מַחְתָּת֔/וֹ חֲמִשִּׁ֥ים וּ/מָאתַ֖יִם מַחְתֹּ֑ת וְ/אַתָּ֥ה וְ/אַהֲרֹ֖ן אִ֥ישׁ מַחְתָּתֽ/וֹ׃",
+        "LXX": "καὶ λάβετε ἕκαστος τὸ πυρεῖον αὐτοῦ καὶ ἐπιθήσετε ἐπ’ αὐτὰ θυμιάματα, καὶ προσάξετε ἔναντι Κυρίου ἕκαστος τὸ πυρεῖον αὐτοῦ, πεντήκοντα καὶ διακόσια πυρεῖα, καὶ σὺ καὶ Ἀαρὼν ἕκαστος τὸ πυρεῖον αὐτοῦ.",
+        "VUL": "Tollite singuli thuribula vestra, et ponite super ea incensum, offerentes Domino ducenta quinquaginta thuribula : Aaron quoque teneat thuribulum suum.",
+        "SYN": "и возьмите каждый свою кадильницу, и положите в них курения, и принесите пред лице Господне каждый свою кадильницу, двести пятьдесят кадильниц; ты и Аарон, каждый свою кадильницу.",
+        "NEO": "Prenez chacun votre encensoir, mettez-y du parfum et présentez chacun votre encensoir devant \\+w Yahweh|strong=\"H3068\"\\+w** : deux cent cinquante encensoirs ; toi aussi et Aaron, vous prendrez chacun votre encensoir. »",
+        "NAB": "Then each of your two hundred and fifty followers shall take his own censer, put incense in it, and offer it to the LORD; and you and Aaron, each with his own censer, shall do the same.\"",
+        "VAT_ES": "Cada uno de ustedes tomará su incensario, le pondrá incienso y lo ofrecerá al Señor: serán doscientos cincuenta incensarios en total. También tú y Aarón llevarán cada uno el suyo».",
+        "CEI": "ciascuno di voi prenda l'incensiere, vi metta il profumo aromatico e porti ciascuno il suo incensiere davanti al Signore: duecentocinquanta incensieri. Anche tu e Aronne; ciascuno prenda un incensiere\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּקְח֞וּ אִ֣ישׁ מַחְתָּת֗/וֹ וַ/יִּתְּנ֤וּ עֲלֵי/הֶם֙ אֵ֔שׁ וַ/יָּשִׂ֥ימוּ עֲלֵי/הֶ֖ם קְטֹ֑רֶת וַֽ/יַּעַמְד֗וּ פֶּ֛תַח אֹ֥הֶל מוֹעֵ֖ד וּ/מֹשֶׁ֥ה וְ/אַהֲרֹֽן׃",
+        "LXX": "καὶ ἔλαβεν ἕκαστος τὸ πυρεῖον αὐτοῦ, καὶ ἐπέθηκαν ἐπ’ αὐτὰ πῦρ, καὶ ἐπέβαλον ἐπ’ αὐτὸ θυμίαμα· καὶ ἔστησαν παρὰ τὰς θύρας τῆς σκηνῆς τοῦ μαρτυρίου Μωυσῆς καὶ Ἀαρών.",
+        "VUL": "Quod cum fecissent, stantibus Moyses et Aaron,",
+        "SYN": "И взял каждый свою кадильницу, и положили в них огня, и всыпали в них курения, и стали при входе в скинию собрания; также и Моисей и Аарон.",
+        "NEO": "Ils prirent chacun leur encensoir, y mirent du feu et y jetèrent du parfum, et ils se tinrent à l’entrée de la tente de réunion, avec Moïse et Aaron.",
+        "NAB": "So they all took their censers, and laying incense on the fire they had put in them, they took their stand by the entrance of the meeting tent along with Moses and Aaron.",
+        "VAT_ES": "Cada uno tomó su incensario, le puso fuego y le echó incienso. Luego ocuparon sus puestos a la entrada de la Carpa del Encuentro, junto con Moisés y Aarón.",
+        "CEI": "Essi dunque presero ciascuno un incensiere, vi misero il fuoco, vi posero profumo aromatico e si fermarono all'ingresso della tenda del convegno; lo stesso fecero Mosè e Aronne."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יַּקְהֵ֨ל עֲלֵי/הֶ֥ם קֹ֨רַח֙ אֶת כָּל הָ֣/עֵדָ֔ה אֶל פֶּ֖תַח אֹ֣הֶל מוֹעֵ֑ד וַ/יֵּרָ֥א כְבוֹד יְהוָ֖ה אֶל כָּל הָ/עֵדָֽה׃",
+        "LXX": "καὶ ἐπισυνέστησεν ἐπ’ αὐτοὺς Κόρε τὴν πᾶσαν αὐτοῦ συναγωγὴν παρὰ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου· καὶ ὤφθη ἡ δόξα Κυρίου πάσῃ τῇ συναγωγῇ.",
+        "VUL": "et coacervassent adversum eos omnem multitudinem ad ostium tabernaculi, apparuit cunctis gloria Domini.",
+        "SYN": "И собрал против них Корей все общество ко входу скинии собрания. И явилась слава Господня всему обществу.",
+        "NEO": "Coré avait convoqué toute l’assemblée contre Moïse et Aaron, à l’entrée de la tente de réunion.",
+        "NAB": "Then, when Korah had assembled all his band against them at the entrance of the meeting tent, the glory of the LORD appeared to the entire community,",
+        "VAT_ES": "Y una vez que Coré convocó contra ellos a toda la comunidad, a la entrada de la Carpa del Encuentro, la gloria del Señor se apareció a toda la comunidad,",
+        "CEI": "Core convocò tutta la comunità presso Mosè e Aronne all'ingresso della tenda del convegno; la gloria del Signore apparve a tutta la comunità."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר יְהוָ֔ה אֶל מֹשֶׁ֥ה וְ/אֶֽל אַהֲרֹ֖ן לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν καὶ Ἀαρὼν λέγων",
+        "VUL": "Locutusque Dominus ad Moysen et Aaron, ait :",
+        "SYN": "И сказал Господь Моисею и Аарону, говоря:",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse et à Aaron, en disant :",
+        "NAB": "and the LORD said to Moses and Aaron,",
+        "VAT_ES": "y el Señor dijo a Moisés y a Aarón:",
+        "CEI": "Il Signore disse a Mosè e ad Aronne:"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "הִבָּ֣דְל֔וּ מִ/תּ֖וֹךְ הָ/עֵדָ֣ה הַ/זֹּ֑את וַ/אַכַלֶּ֥ה אֹתָ֖/ם כְּ/רָֽגַע׃",
+        "LXX": "Ἀποσχίσθητε ἐκ μέσου τῆς συναγωγῆς ταύτης, καὶ ἐξαναλώσω αὐτοὺς εἰς ἅπαξ.",
+        "VUL": "Separamini de medio congregationis hujus, ut eos repente disperdam.",
+        "SYN": "отделитесь от общества сего, и Я истреблю их во мгновение.",
+        "NEO": "« Séparez-vous du milieu de cette assemblée, et je les consumerai en un instant. »",
+        "NAB": "\"Stand apart from this band, that I may consume them at once.\"",
+        "VAT_ES": "«Sepárense de esta comunidad, porque los voy a exterminar en un instante».",
+        "CEI": "\"Allontanatevi da questa comunità e io li consumerò in un istante\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּפְּל֤וּ עַל פְּנֵי/הֶם֙ וַ/יֹּ֣אמְר֔וּ אֵ֕ל אֱלֹהֵ֥י הָ/רוּחֹ֖ת לְ/כָל בָּשָׂ֑ר הָ/אִ֤ישׁ אֶחָד֙ יֶחֱטָ֔א וְ/עַ֥ל כָּל הָ/עֵדָ֖ה תִּקְצֹֽף׃",
+        "LXX": "καὶ ἔπεσαν ἐπὶ πρόσωπον αὐτῶν καὶ εἶπαν Θεός, θεὸς τῶν πνευμάτων καὶ πάσης σαρκός, εἰ ἄνθρωπος εἷς ἥμαρτεν, ἐπὶ πᾶσαν τὴν συναγωγὴν ὀργὴ Κυρίου;",
+        "VUL": "Qui ceciderunt proni in faciem, atque dixerunt : Fortissime Deus spirituum universæ carnis, num uno peccante, contra omnes ira tua desæviet ?",
+        "SYN": "Они же пали на лица свои и сказали: Боже, Боже духов всякой плоти! один человек согрешил, и Ты гневаешься на все общество?",
+        "NEO": "Et ils tombèrent sur leur visage, et dirent : « O Dieu, Dieu des esprits de toute chair, un seul homme a péché, et tu t’irriterais contre toute l’assemblée ! »",
+        "NAB": "But they fell prostrate and cried out, \"O God, God of the spirits of all mankind, will one man's sin make you angry with the whole community?\"",
+        "VAT_ES": "Pero ellos cayeron con el rostro en tierra y exclamaron: «Dios, tú que das el aliento a todos los vivientes, &iquest;te vas a irritar contra toda la comunidad cuando el que peca es uno solo?».",
+        "CEI": "Ma essi, prostratisi con la faccia a terra, dissero: \"Dio, Dio degli spiriti di ogni essere vivente! Un uomo solo ha peccato e ti vorresti adirare contro tutta la comunità?\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Et ait Dominus ad Moysen :",
+        "SYN": "и сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD answered Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse a Mosè:"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "דַּבֵּ֥ר אֶל הָ/עֵדָ֖ה לֵ/אמֹ֑ר הֵֽעָלוּ֙ מִ/סָּבִ֔יב לְ/מִשְׁכַּן קֹ֖רַח דָּתָ֥ן וַ/אֲבִירָֽם׃",
+        "LXX": "Λάλησον τῇ συναγωγῇ λέγων Ἀναχωρήσατε κύκλῳ ἀπὸ τῆς συναγωγῆς Κόρε.",
+        "VUL": "Præcipe universo populo ut separetur a tabernaculis Core et Dathan et Abiron.",
+        "SYN": "скажи обществу: отступите со всех сторон от жилища Корея, Дафана и Авирона.",
+        "NEO": "« Parle à l’assemblée et dis : Ecartez-vous tout à l’entour de la demeure de Coré, de Dathan et d’Abiron. »",
+        "NAB": "\"Speak to the community and tell them: Withdraw from the space around the Dwelling\" (of Korah, Dathan and Abiram).",
+        "VAT_ES": "«Habla en estos términos a la comunidad: \"Aléjense de los alrededores de la Morada de Coré, Datán y Abirón\"».",
+        "CEI": "\"Parla alla comunità e ordinale: Ritiratevi dalle vicinanze della dimora di Core, Datan e Abiram\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣קָם מֹשֶׁ֔ה וַ/יֵּ֖לֶךְ אֶל דָּתָ֣ן וַ/אֲבִירָ֑ם וַ/יֵּלְכ֥וּ אַחֲרָ֖י/ו זִקְנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἀνέστη Μωυσῆς καὶ ἐπορεύθη πρὸς Δαθὰν καὶ Ἀβειρών, καὶ συνεπορεύθησαν μετ’ αὐτοῦ πάντες οἱ πρεσβύτεροι Ἰσραήλ.",
+        "VUL": "Surrexitque Moyses, et abiit ad Dathan et Abiron : et sequentibus eum senioribus Israël,",
+        "SYN": "И встал Моисей, и пошел к Дафану и Авирону, и за ним пошли старейшины Израилевы.",
+        "NEO": "Moïse se leva et alla vers Dathan et Abiron, et des anciens d’Israël allèrent après lui.",
+        "NAB": "Moses, followed by the elders of Israel, arose and went to Dathan and Abiram.",
+        "VAT_ES": "Moisés se levantó, fue adonde estaban Datán y Abirón, seguido de los ancianos de Israel,",
+        "CEI": "Mosè si alzò e andò da Datan e da Abiram; gli anziani di Israele lo seguirono."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֨ר אֶל הָ/עֵדָ֜ה לֵ/אמֹ֗ר ס֣וּרוּ נָ֡א מֵ/עַל֩ אָהֳלֵ֨י הָ/אֲנָשִׁ֤ים הָֽ/רְשָׁעִים֙ הָ/אֵ֔לֶּה וְ/אַֽל תִּגְּע֖וּ בְּ/כָל אֲשֶׁ֣ר לָ/הֶ֑ם פֶּן תִּסָּפ֖וּ בְּ/כָל חַטֹּאתָֽ/ם׃",
+        "LXX": "καὶ ἐλάλησεν πρὸς τὴν συναγωγὴν λέγων Ἀποσχίσθητε ἀπὸ τῶν σκηνῶν τῶν ἀνθρώπων τῶν σκληρῶν τούτων, καὶ μὴ ἅπτεσθε ἀπὸ πάντων ὧν ἐστὶν αὐτοῖς, μὴ συναπόλησθε ἐν πάσῃ τῇ ἀπαρτίᾳ ὑμῶν.",
+        "VUL": "dixit ad turbam : Recedite a tabernaculis hominum impiorum, et nolite tangere quæ ad eos pertinent, ne involvamini in peccatis eorum.",
+        "SYN": "И сказал обществу: отойдите от шатров нечестивых людей сих, и не прикасайтесь ни к чему, что принадлежит им, чтобы не погибнуть вам [вместе] во всех грехах их.",
+        "NEO": "Il parla à l’assemblée, en disant : « Eloignez-vous des tentes de ces méchants hommes, et ne touchez à rien de ce qui leur appartient, de peur que vous ne périssiez, enveloppés dans tous leurs péchés. »",
+        "NAB": "Then he warned the community, \"Keep away from the tents of these wicked men and do not touch anything that is theirs: otherwise you too will be swept away because of all their sins.\"",
+        "VAT_ES": "y dijo a la comunidad: «Apártense de las carpas de estos hombres perversos y no toquen nada de lo que les pertenece, porque de lo contrario también ustedes serán exterminados a causa de sus pecados».",
+        "CEI": "Egli disse alla comunità: \"Allontanatevi dalle tende di questi uomini empi e non toccate nulla di ciò che è loro, perché non periate a causa di tutti i loro peccati\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יֵּעָל֗וּ מֵ/עַ֧ל מִשְׁכַּן קֹ֛רֶח דָּתָ֥ן וַ/אֲבִירָ֖ם מִ/סָּבִ֑יב וְ/דָתָ֨ן וַ/אֲבִירָ֜ם יָצְא֣וּ נִצָּבִ֗ים פֶּ֚תַח אָֽהֳלֵי/הֶ֔ם וּ/נְשֵׁי/הֶ֥ם וּ/בְנֵי/הֶ֖ם וְ/טַפָּֽ/ם׃",
+        "LXX": "καὶ ἀπέστησαν ἀπὸ τῆς σκηνῆς Κόρε κύκλῳ· καὶ Δαθὰν καὶ Ἀβειρὼν ἐξῆλθον, καὶ ἱστὴκεισαν παρὰ τὰς θύρας τῶν σκηνῶν αὐτῶν, καὶ αἱ γυναῖκες αὐτῶν καὶ τὰ τέκνα αὐτῶν καὶ ἡ ἀποσκευὴ αὐτῶν.",
+        "VUL": "Cumque recessissent a tentoriis eorum per circuitum, Dathan et Abiron egressi stabant in introitu papilionum suorum cum uxoribus et liberis, omnique frequentia.",
+        "SYN": "И отошли они со всех сторон от жилища Корея, Дафана и Авирона; а Дафан и Авирон вышли и стояли у дверей шатров своих с женами своими и сыновьями своими и с малыми детьми своими.",
+        "NEO": "Ils s’écartèrent tout à l’entour de la demeure de Coré, de Dathan et d’Abiron. Alors Dathan et Abiron étant sortis se tinrent à l’entrée de leurs tentes, avec leurs femmes, leurs fils et leurs petits enfants.",
+        "NAB": "When Dathan and Abiram had come out and were standing at the entrances of their tents with their wives and sons and little ones,",
+        "VAT_ES": "Y todos se separaron de las moradas de Coré, Datán, y Abirón. Datán y Abirón, por su parte, salieron y se pusieron de pie a la entrada de sus carpas, junto con sus mujeres, sus hijos y sus pequeños.",
+        "CEI": "Così quelli si ritirarono dal luogo dove stavano Core, Datan e Abiram. Datan e Abiram uscirono e si fermarono all'ingresso delle loro tende con le mogli, i figli e i bambini."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֮ מֹשֶׁה֒ בְּ/זֹאת֙ תֵּֽדְע֔וּ/ן כִּֽי יְהוָ֣ה שְׁלָחַ֔/נִי לַ/עֲשׂ֕וֹת אֵ֥ת כָּל הַֽ/מַּעֲשִׂ֖ים הָ/אֵ֑לֶּה כִּי לֹ֖א מִ/לִּבִּֽ/י׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς Ἐν τούτῳ γνώσεσθε ὅτι Κύριος ἀπέστειλέν με ποιῆσαι πάντα τὰ ἔργα ταῦτα, ὅτι οὐκ ἀπ’ ἐμαυτοῦ·",
+        "VUL": "Et ait Moyses : In hoc scietis quod Dominus miserit me ut facerem universa quæ cernitis, et non ex proprio ea corde protulerim :",
+        "SYN": "И сказал Моисей: из сего узнаете, что Господь послал меня делать все дела сии, а не по своему произволу [я делаю сие]:",
+        "NEO": "Moïse dit : « Vous connaîtrez à ceci que \\+w Yahweh|strong=\"H3068\"\\+w** m’a envoyé pour faire toutes ces œuvres, et que je n’agis pas de moi-même :",
+        "NAB": "Moses said, \"This is how you shall know that it was the LORD who sent me to do all I have done, and that it was not I who planned it:",
+        "VAT_ES": "Moisés dijo: «En esto conocerán que ha sido el Señor el que me envió a hacer estas cosas, y que no es un capricho mío:",
+        "CEI": "Mosè disse: \"Da questo saprete che il Signore mi ha mandato per fare tutte queste opere e che io non ho agito di mia iniziativa."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "אִם כְּ/מ֤וֹת כָּל הָֽ/אָדָם֙ יְמֻת֣וּ/ן אֵ֔לֶּה וּ/פְקֻדַּת֙ כָּל הָ֣/אָדָ֔ם יִפָּקֵ֖ד עֲלֵי/הֶ֑ם לֹ֥א יְהוָ֖ה שְׁלָחָֽ/נִי׃",
+        "LXX": "εἰ κατὰ θάνατον πάντων ἀνθρώπων ἀποθανοῦνται οὗτοι, εἰ καὶ κατ’ ἐπίσκεψιν πάντων ἀνθρώπων ἐπισκοπὴ ἔσται αὐτῶν, οὐχὶ Κὺριος ἀπέσταλκὲν με.",
+        "VUL": "si consueta hominum morte interierint, et visitaverit eos plaga, qua et ceteri visitari solent, non misit me Dominus :",
+        "SYN": "если они умрут, как умирают все люди, и постигнет их такое наказание, какое _постигает_ всех людей, то не Господь послал меня;",
+        "NEO": "Si ces gens meurent comme meurent tous les hommes, et si leur sort est celui de tous les hommes, ce n’est pas \\+w Yahweh|strong=\"H3068\"\\+w** qui m’a envoyé ;",
+        "NAB": "if these men die an ordinary death, merely suffering the fate common to all mankind, then it was not the LORD who sent me.",
+        "VAT_ES": "si estos hombres mueren de muerte natural y su suerte es igual a la de todos los hombres, no ha sido el Señor el que me envió.",
+        "CEI": "Se questa gente muore come muoiono tutti gli uomini, se la loro sorte è la sorte comune a tutti gli uomini, il Signore non mi ha mandato;"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/אִם בְּרִיאָ֞ה יִבְרָ֣א יְהוָ֗ה וּ/פָצְתָ֨ה הָ/אֲדָמָ֤ה אֶת פִּ֨י/הָ֙ וּ/בָלְעָ֤ה אֹתָ/ם֙ וְ/אֶת כָּל אֲשֶׁ֣ר לָ/הֶ֔ם וְ/יָרְד֥וּ חַיִּ֖ים שְׁאֹ֑לָ/ה וִֽ/ידַעְתֶּ֕ם כִּ֧י נִֽאֲצ֛וּ הָ/אֲנָשִׁ֥ים הָ/אֵ֖לֶּה אֶת יְהוָֽה׃",
+        "LXX": "ἀλλ’ ἢ ἐν φάσματι δείξει Κύριος, καὶ ἀνοίξασα ἡ γῆ τὸ στόμα αὐτῆς καταπίεται αὐτοὺς καὶ τοὺς οἴκους αὐτῶν καὶ τὰς σκηνὰς αὐτῶν καὶ πάντα ὅσα ἐστὶν αὐτοῖς, καὶ καταβήσονται ζῶντες εἰς ᾅδου, καὶ γνώσεσθε ὅτι παρώξυναν οἱ ἄνθρωποι οὗτοι τὸν κύριον.",
+        "VUL": "sin autem novam rem fecerit Dominus, ut aperiens terra os suum deglutiat eos et omnia quæ ad illos pertinent, descenderintque viventes in infernum, scietis quod blasphemaverint Dominum.",
+        "SYN": "а если Господь сотворит необычайное, и земля разверзет уста свои и поглотит их [и домы их и шатры их] и все, что у них, и они живые сойдут в преисподнюю, то знайте, что люди сии презрели Господа.",
+        "NEO": "mais si \\+w Yahweh|strong=\"H3068\"\\+w** fait une chose inouïe, si la terre ouvre sa bouche et les engloutit, eux et tout ce qui leur appartient, et qu’ils descendent vivants dans le séjour des morts, vous saurez que ces gens ont méprisé \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "But if the LORD does something entirely new, and the ground opens its mouth and swallows them alive down into the nether world, with all belonging to them, then you will know that these men have defied the LORD.\"",
+        "VAT_ES": "Pero si el Señor realiza algo inusitado –si la tierra abre sus fauces para tragarlos con todos sus bienes y ellos bajan vivos al Abismo– ustedes sabrán que esta gente ha despreciado al Señor».",
+        "CEI": "ma se il Signore fa una cosa meravigliosa, se la terra spalanca la bocca e li ingoia con quanto appartiene loro e se essi scendono vivi agli inferi, allora saprete che questi uomini hanno disprezzato il Signore\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֙ כְּ/כַלֹּת֔/וֹ לְ/דַבֵּ֕ר אֵ֥ת כָּל הַ/דְּבָרִ֖ים הָ/אֵ֑לֶּה וַ/תִּבָּקַ֥ע הָ/אֲדָמָ֖ה אֲשֶׁ֥ר תַּחְתֵּי/הֶֽם׃",
+        "LXX": "ὡς δὲ ἐπαύσατο λαλῶν πάντας τοὺς λόγους τούτους, ἐρράγη ἡ γῆ ὑποκάτω αὐτῶν,",
+        "VUL": "Confestim igitur ut cessavit loqui, dirupta est terra sub pedibus eorum :",
+        "SYN": "Лишь только он сказал слова сии, расселась земля под ними;",
+        "NEO": "Comme il achevait de prononcer toutes ces paroles, le sol qui était sous eux se fendit.",
+        "NAB": "No sooner had he finished saying all this than the ground beneath them split open,",
+        "VAT_ES": "Apenas Moisés terminó de pronunciar estas palabras, el suelo se partió debajo de sus pies,",
+        "CEI": "Come egli ebbe finito di pronunciare tutte queste parole, il suolo si profondò sotto i loro piedi,"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/תִּפְתַּ֤ח הָ/אָ֨רֶץ֙ אֶת פִּ֔י/הָ וַ/תִּבְלַ֥ע אֹתָ֖/ם וְ/אֶת בָּתֵּי/הֶ֑ם וְ/אֵ֤ת כָּל הָ/אָדָם֙ אֲשֶׁ֣ר לְ/קֹ֔רַח וְ/אֵ֖ת כָּל הָ/רֲכֽוּשׁ׃",
+        "LXX": "καὶ ἠνοίχθη ἡ γῆ καὶ κατέπιεν αὐτοὺς καὶ τοὺς οἴκους αὐτῶν καὶ πάντας τοὺς ἀνθρώπους τοὺς ὄντας μετὰ Κόρε καὶ τὰ κτήνη αὐτῶν.",
+        "VUL": "et aperiens os suum, devoravit illos cum tabernaculis suis et universa substantia eorum,",
+        "SYN": "и разверзла земля уста свои, и поглотила их и домы их, и всех людей Кореевых и все имущество;",
+        "NEO": "La terre ouvrit sa bouche et les engloutit, eux et leurs familles, avec tous les gens de Coré et tous leurs biens.",
+        "NAB": "and the earth opened its mouth and swallowed them and their families (and all of Korah's men) and all their possessions.",
+        "VAT_ES": "la tierra abrió sus fauces y los tragó junto con sus familias, con toda la gente de Coré y con todos sus bienes.",
+        "CEI": "la terra spalancò la bocca e li inghiottì: essi e le loro famiglie, con tutta la gente che apparteneva a Core e tutta la loro roba."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨רְד֜וּ הֵ֣ם וְ/כָל אֲשֶׁ֥ר לָ/הֶ֛ם חַיִּ֖ים שְׁאֹ֑לָ/ה וַ/תְּכַ֤ס עֲלֵי/הֶם֙ הָ/אָ֔רֶץ וַ/יֹּאבְד֖וּ מִ/תּ֥וֹךְ הַ/קָּהָֽל׃",
+        "LXX": "καὶ κατέβησαν αὐτοὶ καὶ ὅσα ἐστὶν αὐτῶν ζῶντα εἰς ᾅδου, καὶ ἐκάλυψεν αὐτοὺς ἡ γῆ, καὶ ἀπώλοντο ἐκ μέσου τῆς συναγωγῆς.",
+        "VUL": "descenderuntque vivi in infernum operti humo, et perierunt de medio multitudinis.",
+        "SYN": "и сошли они со всем, что принадлежало им, живые в преисподнюю, и покрыла их земля, и погибли они из среды общества.",
+        "NEO": "Ils descendirent vivants dans le séjour des morts, eux et tout ce qui leur appartenait ; et la terre les recouvrit, et ils disparurent du milieu de l’assemblée.",
+        "NAB": "They went down alive to the nether world with all belonging to them; the earth closed over them, and they perished from the community.",
+        "VAT_ES": "Ellos bajaron vivos al Abismo, con todo lo que les pertenecía. La tierra los cubrió y desaparecieron de en medio de la asamblea.",
+        "CEI": "Scesero vivi agli inferi essi e quanto loro apparteneva; la terra li ricoprì ed essi scomparvero dall'assemblea."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְ/כָל יִשְׂרָאֵ֗ל אֲשֶׁ֛ר סְבִיבֹתֵי/הֶ֖ם נָ֣סוּ לְ/קֹלָ֑/ם כִּ֣י אָֽמְר֔וּ פֶּן תִּבְלָעֵ֖/נוּ הָ/אָֽרֶץ׃",
+        "LXX": "καὶ πᾶς Ἰσραὴλ οἱ κύκλῳ αὐτῶν ἔφυγον ἀπὸ τῆς φωνῆς αὐτῶν, ὅτι λέγοντες Μή ποτε καταπίῃ ἡμᾶς ἡ γῆ.",
+        "VUL": "At vero omnis Israël, qui stabat per gyrum, fugit ad clamorem pereuntium, dicens : Ne forte et nos terra deglutiat.",
+        "SYN": "И все Израильтяне, которые были вокруг них, побежали при их вопле, дабы, говорили они, и нас не поглотила земля.",
+        "NEO": "Tout Israël, qui était autour d’eux, s’enfuit à leur cri ; car ils disaient : « Fuyons, de peur que la terre ne nous engloutisse ! »",
+        "NAB": "But all the Israelites near them fled at their shrieks, saying, \"The earth might swallow us too!\"",
+        "VAT_ES": "Al oír sus gritos, todos los israelitas que estaban cerca de ellos huyeron, diciendo: «&iexcl;Que no nos trague la tierra!».",
+        "CEI": "Tutto Israele che era attorno ad essi fuggì alle loro grida; perché dicevano: \"La terra non inghiottisca anche noi!\"."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וְ/אֵ֥שׁ יָצְאָ֖ה מֵ/אֵ֣ת יְהוָ֑ה וַ/תֹּ֗אכַל אֵ֣ת הַ/חֲמִשִּׁ֤ים וּ/מָאתַ֨יִם֙ אִ֔ישׁ מַקְרִיבֵ֖י הַ/קְּטֹֽרֶת׃",
+        "LXX": "καὶ πῦρ ἐξῆλθεν παρὰ Κυρίου καὶ κατέφαγεν τοὺς πεντήκοντα καὶ διακοσίους ἄνδρας τοὺς προσφέροντας τὸ θυμίαμα.",
+        "VUL": "Sed et ignis egressus a Domino interfecit ducentos quinquaginta viros, qui offerebant incensum.",
+        "SYN": "И вышел огонь от Господа и пожрал тех двести пятьдесят мужей, которые принесли курение.",
+        "NEO": "Un feu sortit d’auprès de \\+w Yahweh|strong=\"H3068\"\\+w** et consuma les deux cent cinquante hommes qui offraient le parfum.",
+        "NAB": "So they withdrew from the space around the Dwelling (of Korah, Dathan and Abiram). And fire from the LORD came forth which consumed the two hundred and fifty men who were offering the incense.",
+        "VAT_ES": "Luego bajó fuego del Señor y consumió a los doscientos cincuenta hombres que habían ofrecido incienso.",
+        "CEI": "Un fuoco uscì dalla presenza del Signore e divorò i duecentocinquanta uomini, che offrivano l'incenso."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "LXX": "Καὶ εἶπεν Κύριος πρὸς Μωυσῆν",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:"
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "LXX": "καὶ πρὸς Ἐλεαζὰρ τὸν υἱὸν Ἀαρὼν τὸν ἱερέα Ἀνέλεσθε τὰ πυρεῖα τὰ χαλκᾶ ἐκ μέσου τῶν κατακεκαυμένων, καὶ τὸ πῦρ τὸ ἀλλότριον τοῦτο σπεῖρον ἐκεῖ, ὅτι ἡγίασαν τὰ πυρεῖα τῶν ἁμαρτωλῶν τούτων ἐν ταῖς ψυχαῖς αὐτῶν·",
+        "VUL": "Præcipe Eleazaro filio Aaron sacerdoti ut tollat thuribula quæ jacent in incendio, et ignem huc illucque dispergat : quoniam sanctificata sunt",
+        "SYN": "скажи Елеазару, сыну Аарона, священнику, пусть он соберет [медные] кадильницы сожженных и огонь выбросит вон; ибо освятились"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "LXX": "καὶ ποίησον αὐτὰ λεπίδας ἐλατάς, περίθεμα τῷ θυσιαστηρίῳ, ὅτι προσηνέχθησαν ἔναντι Κυρίου καὶ ἡγιάσθησαν, καὶ ἐγένοντο εἰς σημεῖον τοῖς υἱοῖς Ἰσραήλ.",
+        "VUL": "in mortibus peccatorum : producatque ea in laminas, et affigat altari, eo quod oblatum sit in eis incensum Domino, et sanctificata sint, ut cernant ea pro signo et monimento filii Israël.",
+        "SYN": "кадильницы грешников сих смертью их, и пусть разобьют их в листы для покрытия жертвенника, ибо они принесли их пред лице Господа, и они сделались освященными; и будут они знамением для сынов Израилевых."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "LXX": "καὶ ἔλαβεν Ἐλεαζὰρ υἱὸς Ἀαρὼν τοῦ ἱερέως τὰ πυρεῖα τὰ χαλκᾶ ὅσα προσήνεγκαν οἱ κατακεκαυμένοι, καὶ προσέθηκαν αὐτὰ περίθεμα τῷ θυσιαστηρίῳ,",
+        "VUL": "Tulit ergo Eleazar sacerdos thuribula ænea, in quibus obtulerant hi quos incendium devoravit, et produxit ea in laminas, affigens altari :",
+        "SYN": "И взял Елеазар священник медные кадильницы, которые принесли сожженные, и разбили их в листы для покрытия жертвенника,"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "LXX": "μνημόσυνον τοῖς υἱοῖς Ἰσραήλ, ὅπως ἂν μὴ προσέλθῃ μηθεὶς ἀλλογενής, ὃς οὐκ ἔστιν ἐκ τοῦ σπέρματος Ἀαρών, ἐπιθεῖναι θυμίαμα ἔναντι Κυρίου, καὶ οὐκ ἔσται ὥσπερ Κόρε καὶ ἡ ἐπισύστασις αὐτοῦ· καθὰ ἐλάλησεν Κύριος ἐν χειρὶ Μωυσῆ αὐτῷ.",
+        "VUL": "ut haberent postea filii Israël, quibus commonerentur ne quis accedat alienigena, et qui non est de semine Aaron ad offerendum incensum Domino, ne patiatur sicut passus est Core, et omnis congregatio ejus, loquente Domino ad Moysen.",
+        "SYN": "в память сынам Израилевым, чтобы никто посторонний, который не от семени Аарона, не приступал приносить курение пред лице Господне, и не было с ним, что с Кореем и сообщниками его, как говорил ему Господь чрез Моисея."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "LXX": "Καὶ ἐγόγγυσαν οἱ υἱοὶ Ἰσραήλ τῇ αὔριον ἐπὶ Μωυσῆν καὶ Ἀαρὼν λέγοντες Ὑμεῖς ἀπεκτάνκατε τὸν λαὸν Κυρίου.",
+        "VUL": "Murmuravit autem omnis multitudo filiorum Israël sequenti die contra Moysen et Aaron, dicens : Vos interfecistis populum Domini.",
+        "SYN": "На другой день все общество сынов Израилевых возроптало на Моисея и Аарона и говорило: вы умертвили народ Господень."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "LXX": "καὶ ἐγένετο ἐν τῷ ἐπισυστρέφεσθαι τὴν συναγωγὴν ἐπὶ Μωυσῆν καὶ Ἀαρών, καὶ ὥρμησαν ἐπὶ τὴν σκηνὴν τοῦ μαρτυρίου· καὶ τήνδε, ἐκάλυψεν αὐτὴν ἡ νεφέλη, καὶ ὤφθη ἡ δόξα Κυρίου.",
+        "VUL": "Cumque oriretur seditio, et tumultus incresceret,",
+        "SYN": "И когда собралось общество против Моисея и Аарона, они обратились к скинии собрания, и вот, облако покрыло ее, и явилась слава Господня."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "LXX": "καὶ εἰσῆλθεν Μωυσῆς καὶ Ἀαρὼν κατὰ πρόσωπον τῆς σκηνῆς τοῦ μαρτυρίου·",
+        "VUL": "Moyses et Aaron fugerunt ad tabernaculum fderis. Quod, postquam ingressi sunt, operuit nubes, et apparuit gloria Domini.",
+        "SYN": "И пришел Моисей и Аарон к скинии собрания."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "LXX": "καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν καὶ Ἀαρὼν λέγων",
+        "VUL": "Dixitque Dominus ad Moysen :",
+        "SYN": "И сказал Господь Моисею [и Аарону], говоря:"
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "LXX": "Ἐκχωρήσατε ἐκ μέσου τῆς συναγωγῆς ταύτης, καὶ ἐξαναλώσω αὐτοὺς εἰς ἅπαξ. καὶ ἔπεσαν ἐπὶ πρόσωπον αὐτῶν.",
+        "VUL": "Recedite de medio hujus multitudinis, etiam nunc delebo eos. Cumque jacerent in terra,",
+        "SYN": "отсторонитесь от общества сего, и Я погублю их во мгновение. Но они пали на лица свои."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν Μωυσῆς πρὸς Ἀαρών Λάβε τὸ πυρεῖον, καὶ ἐπίθες ἐπ’ αὐτὸ πῦρ ἀπὸ τοῦ θυσιαστηρίου, καὶ ἐπίβαλε ἐπ’ αὐτὸ θυμίαμα, καὶ ἀπένεγκε τὸ τάχος εἰς τὴν παρεμβολήν, καὶ ἐξιλάσεται περὶ αὐτῶν· ἐξῆλθεν γὰρ ὀργὴ ἀπὸ προσώπου Κυρίου, ἦρκται θραύειν τὸν λαόν.",
+        "VUL": "dixit Moyses ad Aaron : Tolle thuribulum, et hausto igne de altari, mitte incensum desuper, pergens cito ad populum, ut roges pro eis : jam enim egressa est ira a Domino, et plaga desævit.",
+        "SYN": "И сказал Моисей Аарону: возьми кадильницу и положи в нее огня с жертвенника и всыпь курения, и неси скорее к обществу и заступи их, ибо вышел гнев от Господа, [и] началось поражение."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "LXX": "καὶ ἔλαβεν Ἀαρὼν καθάπερ ἐλάλησεν αὐτῷ Μωυσῆς, καὶ ἔδραμεν εἰς τὴν συναγωγήν· καὶ ἤδη ἐνῆρκται ἡ θραῦσις ἐν τῷ λαῷ. καὶ ἐπέβαλεν τὸ θυμίαμα καὶ ἐξιλάσατο περὶ τοῦ λαοῦ·",
+        "VUL": "Quod cum fecisset Aaron, et cucurrisset ad mediam multitudinem, quam jam vastabat incendium, obtulit thymiama :",
+        "SYN": "И взял Аарон, как сказал Моисей, и побежал в среду общества, и вот, уже началось поражение в народе. И он положил курения и заступил народ;"
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "LXX": "καὶ ἔστη ἀνὰ μέσον τῶν τεθνηκότων καὶ τῶν ζώντων, καὶ ἐκόπασεν ἡ θραῦσις ἐν τῷ λαῷ.",
+        "VUL": "et stans inter mortuos ac viventes, pro populo deprecatus est, et plaga cessavit.",
+        "SYN": "стал он между мертвыми и живыми, и поражение прекратилось."
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "LXX": "καὶ ἐγένοντο οἱ τεθνηκότες ἐν τῇ θραύσει τέσσαρες καὶ δέκα χιλιάδες καὶ ἑπτακόσιοι, χωρὶς τῶν τεθνηκότων ἕνεκεν Κόρε.",
+        "VUL": "Fuerunt autem qui percussi sunt, quatuordecim millia hominum, et septingenti, absque his qui perierant in seditione Core.",
+        "SYN": "И умерло от поражения четырнадцать тысяч семьсот человек, кроме умерших по делу Корееву."
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "LXX": "καὶ ἐπέστρεψεν Ἀαρὼν πρὸς Μωυσῆν ἐπὶ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου, καὶ ἐκόπασεν ἡ θραῦσις.",
+        "VUL": "Reversusque est Aaron ad Moysen ad ostium tabernaculi fderis postquam quievit interitus.",
+        "SYN": "И возвратился Аарон к Моисею, ко входу скинии собрания, после того как поражение прекратилось."
+      }
+    }
+  }
+}

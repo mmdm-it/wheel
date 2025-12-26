@@ -1,0 +1,644 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MARC_007",
+  "book_key": "MARC",
+  "sequence": 7,
+  "chapter_in": {
+    "MT": 7,
+    "VUL": 7,
+    "LXX": 7
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Καὶ συνάγονται πρὸς αὐτὸν οἱ Φαρισαῖοι, καί τινες τῶν γραμματέων, ἐλθόντες ἀπὸ Ἱεροσολύμων·",
+        "VUL": "Et conveniunt ad eum pharisæi, et quidam de scribis, venientes ab Jerosolymis.",
+        "SYN": "Собрались к Нему фарисеи и некоторые из книжников, пришедшие из Иерусалима,",
+        "NEO": "Les Pharisiens et plusieurs Scribes venus de Jérusalem s’assemblèrent auprès de Jésus.+ 7:1 VII, 1. Matth. xv, 1.*",
+        "NAB": "Now when the Pharisees with some scribes who had come from Jerusalem gathered around him,",
+        "VAT_ES": "Los fariseos con algunos escribas llegados de Jerusalén se acercaron a Jesús,",
+        "CEI": "Un giorno di sabato passava attraverso campi di grano e i suoi discepoli coglievano e mangiavano le spighe, sfregandole con le mani."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "καὶ ἰδόντες τινὰς τῶν μαθητῶν αὐτοῦ κοιναῖς χερσίν, τοῦτ’ ἔστιν ἀνίπτοις, ἐσθίοντας ἄρτους ἐμέμψαντο.",
+        "VUL": "Et cum vidissent quosdam ex discipulis ejus communibus manibus, id est non lotis, manducare panes, vituperaverunt.",
+        "SYN": "и, увидев некоторых из учеников Его, евших хлеб нечистыми, то есть неумытыми, руками, укоряли.",
+        "NEO": "Ayant vu quelques-uns de ses disciples prendre leur repas avec des mains impures, c’est-à-dire non lavées, ils les* blâmèrent. —",
+        "NAB": "they observed that some of his disciples ate their meals with unclean, that is, unwashed, hands.",
+        "VAT_ES": "y vieron que algunos de sus discípulos comían con las manos impuras, es decir, sin lavar.",
+        "CEI": "Alcuni farisei dissero: \"Perché fate ciò che non è permesso di sabato?\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Οἱ γὰρ Φαρισαῖοι καὶ πάντες οἱ Ἰουδαῖοι, ἐὰν μὴ πυγμῇ νίψωνται τὰς χεῖρας, οὐκ ἐσθίουσιν, κρατοῦντες τὴν παράδοσιν τῶν πρεσβυτέρων·",
+        "VUL": "Pharisæi enim, et omnes Judæi, nisi crebro laverint manus, non manducant, tenentes traditionem seniorum :",
+        "SYN": "Ибо фарисеи и все Иудеи, держась предания старцев, не едят, не умыв тщательно рук;",
+        "NEO": "Car les Pharisiens et tous les Juifs ne mangent pas sans s’être lavé soigneusement+ 7:3 3. Soigneusement πυγμῇ. litt. à poing fermé, ou \\+qt jusqu’au coude\\+qt*. La Vulgate a lu πυγνα, \\+qt souvent\\+qt*.* les mains, suivant la tradition des anciens.",
+        "NAB": "(For the Pharisees and, in fact, all Jews, do not eat without carefully washing their hands, keeping the tradition of the elders.",
+        "VAT_ES": "Los fariseos, en efecto, y los judíos en general, no comen sin lavarse antes cuidadosamente las manos, siguiendo la tradición de sus antepasados;",
+        "CEI": "Gesù rispose: \"Allora non avete mai letto ciò che fece Davide, quando ebbe fame lui e i suoi compagni?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "καὶ ἀπὸ ἀγορᾶς, ἐὰν μὴ βαπτίσωνται, οὐκ ἐσθίουσιν· καὶ ἄλλα πολλά ἐστιν ἃ παρέλαβον κρατεῖν, βαπτισμοὺς ποτηρίων καὶ ξεστῶν καὶ χαλκίων καὶ κλινῶν.",
+        "VUL": "et a foro nisi baptizentur, non comedunt : et alia multa sunt, quæ tradita sunt illis servare, baptismata calicum, et urceorum, et æramentorum, et lectorum :",
+        "SYN": "и, _придя_ с торга, не едят не омывшись. Есть и многое другое, чего они приняли держаться: наблюдать омовение чаш, кружек, котлов и скамей.",
+        "NEO": "Et lorsqu’ils reviennent de la place publique ils ne mangent pas sans avoir pratiqué des ablutions. Ils pratiquent encore beaucoup d’autres observances traditionnelles, la purification des coupes, des cruches, des vases d’airain, et des lits+ 7:4 4. Lits, voir .*. —",
+        "NAB": "And on coming from the marketplace they do not eat without purifying themselves. And there are many other things that they have traditionally observed, the purification of cups and jugs and kettles (and beds).)",
+        "VAT_ES": "y al volver del mercado, no comen sin hacer primero las abluciones. Además, hay muchas otras prácticas, a las que están aferrados por tradición, como el lavado de los vasos, de las jarras y de la vajilla de bronce.",
+        "CEI": "Come entrò nella casa di Dio, prese i pani dell'offerta, ne mangiò e ne diede ai suoi compagni, sebbene non fosse lecito mangiarli se non ai soli sacerdoti?\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ἔπειτα ἐπερωτῶσιν αὐτὸν οἱ Φαρισαῖοι καὶ οἱ γραμματεῖς, Διὰ τί οἱ μαθηταί σου οὐ περιπατοῦσιν κατὰ τὴν παράδοσιν τῶν πρεσβυτέρων, ἀλλὰ ἀνίπτοις χερσὶν ἐσθίουσιν τὸν ἄρτον;",
+        "VUL": "et interrogabant eum pharisæi et scribæ : Quare discipuli tui non ambulant juxta traditionem seniorum, sed communibus manibus manducant panem ?",
+        "SYN": "Потом спрашивают Его фарисеи и книжники: зачем ученики Твои не поступают по преданию старцев, но неумытыми руками едят хлеб?",
+        "NEO": "Les Pharisiens et les Scribes lui demandèrent donc : « Pourquoi vos disciples ne suivent-ils pas la tradition des anciens, et prennent-ils leur repas avec des mains impures ? »",
+        "NAB": "So the Pharisees and scribes questioned him, \"Why do your disciples not follow the tradition of the elders but instead eat a meal with unclean hands?\"",
+        "VAT_ES": "Entonces los fariseos y los escribas preguntaron a Jesús: «&iquest;Por qué tus discípulos no proceden de acuerdo con la tradición de nuestros antepasados, sino que comen con las manos impuras?».",
+        "CEI": "E diceva loro: \"Il Figlio dell'uomo è signore del sabato\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς ὅτι Καλῶς προεφήτευσεν Ἠσαΐας περὶ ὑμῶν τῶν ὑποκριτῶν, ὡς γέγραπται, Οὗτος ὁ λαὸς τοῖς χείλεσίν με τιμᾷ, ἡ δὲ καρδία αὐτῶν πόρρω ἀπέχει ἀπ’ ἐμοῦ.",
+        "VUL": "At ille respondens, dixit eis : Bene prophetavit Isaias de vobis hypocritis, sicut scriptum est : [Populus hic labiis me honorat,/ cor autem eorum longe est a me :/",
+        "SYN": "Он сказал им в ответ: хорошо пророчествовал о вас, лицемерах, Исаия, как написано: люди сии чтут Меня устами, сердце же их далеко отстоит от Меня,",
+        "NEO": "Il leur répondit : « Isaïe a bien prophétisé de vous, hypocrites, ainsi qu’il est écrit : Ce peuple m’honore des lèvres, mais leur cœur est loin de moi*+ 7:6 6. Is. xxix, 13 selon les LXX.*.",
+        "NAB": "He responded, \"Well did Isaiah prophesy about you hypocrites, as it is written: 'This people honors me with their lips, but their hearts are far from me;",
+        "VAT_ES": "El les respondió: «&iexcl;Hipócritas! Bien profetizó de ustedes Isaías, en el pasaje de la Escritura que dice: Este pueblo me honra con los labios, pero su corazón está lejos de mí.",
+        "CEI": "Un altro sabato egli entrò nella sinagoga e si mise a insegnare. Ora c'era là un uomo, che aveva la mano destra inaridita."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Μάτην δὲ σέβονταί με, διδάσκοντες διδασκαλίας ἐντάλματα ἀνθρώπων.",
+        "VUL": "in vanum autem me colunt,/ docentes doctrinas, et præcepta hominum.]",
+        "SYN": "но тщетно чтут Меня, уча учениям, заповедям человеческим.",
+        "NEO": "Vain est le culte qu’ils me rendent, enseignant des doctrines qui sont des préceptes d’hommes.*",
+        "NAB": "In vain do they worship me, teaching as doctrines human precepts.'",
+        "VAT_ES": "En vano me rinde culto: las doctrinas que enseñan no son sino preceptos humanos.",
+        "CEI": "Gli scribi e i farisei lo osservavano per vedere se lo guariva di sabato, allo scopo di trovare un capo di accusa contro di lui."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἀφέντες γὰρ τὴν ἐντολὴν τοῦ θεοῦ, κρατεῖτε τὴν παράδοσιν τῶν ἀνθρώπων, βαπτισμοὺς ξεστῶν καὶ ποτηρίων· καὶ ἄλλα παρόμοια τοιαῦτα πολλὰ ποιεῖτε.",
+        "VUL": "Relinquentes enim mandatum Dei, tenetis traditionem hominum, baptismata urceorum et calicum : et alia similia his facitis multa.",
+        "SYN": "Ибо вы, оставив заповедь Божию, держитесь предания человеческого, омовения кружек и чаш, и делаете многое другое, сему подобное.",
+        "NEO": "Vous laissez de côté le commandement de Dieu, pour vous attacher à la tradition des hommes, purifiant les vases+ 7:8 8. Purifiant les vases, etc. : ce membre de phrase manque dans plusieurs manuscrits.* et les coupes, et faisant beaucoup d’autres choses semblables.",
+        "NAB": "You disregard God's commandment but cling to human tradition.\"",
+        "VAT_ES": "Ustedes dejan de lado el mandamiento de Dios, por seguir la tradición de los hombres».",
+        "CEI": "Ma Gesù era a conoscenza dei loro pensieri e disse all'uomo che aveva la mano inaridita: \"Alzati e mettiti nel mezzo!\". L'uomo, alzatosi, si mise nel punto indicato."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Καὶ ἔλεγεν αὐτοῖς, Καλῶς ἀθετεῖτε τὴν ἐντολὴν τοῦ θεοῦ, ἵνα τὴν παράδοσιν ὑμῶν τηρήσητε.",
+        "VUL": "Et dicebat illis : Bene irritum facitis præceptum Dei, ut traditionem vestram servetis.",
+        "SYN": "И сказал им: хорошо ли, _что_ вы отменяете заповедь Божию, чтобы соблюсти свое предание?",
+        "NEO": "Vous savez fort bien, ajouta-t-il, anéantir ainsi le commandement de Dieu, pour observer votre tradition !",
+        "NAB": "He went on to say, \"How well you have set aside the commandment of God in order to uphold your tradition!",
+        "VAT_ES": "Y les decía: «Por mantenerse fieles a su tradición, ustedes descartan tranquilamente el mandamiento de Dios.",
+        "CEI": "Poi Gesù disse loro: \"Domando a voi: È lecito in giorno di sabato fare del bene o fare del male, salvare una vita o perderla?\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Μωσῆς γὰρ εἶπεν, Τίμα τὸν πατέρα σου καὶ τὴν μητέρα σου· καί, Ὁ κακολογῶν πατέρα ἢ μητέρα θανάτῳ τελευτάτω·",
+        "VUL": "Moyses enim dixit : Honora patrem tuum, et matrem tuam. Et : Qui maledixerit patri, vel matri, morte moriatur.",
+        "SYN": "Ибо Моисей сказал: почитай отца своего и мать свою; и: злословящий отца или мать смертью да умрет.",
+        "NEO": "Car Moïse a dit : Honore ton père et ta mère ;*+ 7:10 10. Exod. xx, 12 ; Deu 5,16.* et : Celui qui maudira son père et sa mère, qu’il soit puni de mort*+ 7:10 10. Exod. xx, 12 ; Lev 20,9 ; Pro 20,20.*.",
+        "NAB": "For Moses said, 'Honor your father and your mother,' and 'Whoever curses father or mother shall die.'",
+        "VAT_ES": "Porque Moisés dijo: Honra a tu padre y a tu madre, y además: El que maldice a su padre y a su madre será condenado a muerte.",
+        "CEI": "E volgendo tutt'intorno lo sguardo su di loro, disse all'uomo: \"Stendi la mano!\". Egli lo fece e la mano guarì."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "ὑμεῖς δὲ λέγετε, Ἐὰν εἴπῃ ἄνθρωπος τῷ πατρὶ ἢ τῇ μητρί, Κορβᾶν, ὅ ἐστιν, δῶρον, ὃ ἐὰν ἐξ ἐμοῦ ὠφεληθῇς·",
+        "VUL": "Vos autem dicitis : Si dixerit homo patri, aut matri, Corban (quod est donum) quodcumque ex me, tibi profuerit :",
+        "SYN": "А вы говорите: кто скажет отцу или матери: корван, то есть дар _Богу_ то, чем бы ты от меня пользовался,",
+        "NEO": "Et vous, vous dites : Si un homme dit à son père ou à sa mère : Le bien dont j’aurais pu t’assister est corban+ 7:11 \\+it Corban\\+it* est un terme araméen : voir Mat 15,5 (note).*, c’est-à-dire un don fait à Dieu*,+ 7:11 11. Voy. Matth. xv, 5. La phrase est suspendue ici comme là ; il faut suppléer : cet homme est quitte envers ses parents, et ainsi (v. 12) vous le dispensez de toute autre obligation.*",
+        "NAB": "Yet you say, 'If a person says to father or mother, \"Any support you might have had from me is qorban\"' (meaning, dedicated to God),",
+        "VAT_ES": "En cambio, ustedes afirman: «Si alguien dice a su padre o a su madre: Declaro \"corbán\" –es decir, ofrenda sagrada– todo aquello con lo que podría ayudarte...»",
+        "CEI": "Ma essi furono pieni di rabbia e discutevano fra di loro su quello che avrebbero potuto fare a Gesù."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "καὶ οὐκέτι ἀφίετε αὐτὸν οὐδὲν ποιῆσαι τῷ πατρὶ αὐτοῦ ἢ τῇ μητρὶ αὐτοῦ,",
+        "VUL": "et ultra non dimittitis eum quidquam facere patri suo, aut matri,",
+        "SYN": "тому вы уже попускаете ничего не делать для отца своего или матери своей,",
+        "NEO": "vous ne le laissez plus rien faire pour son père ou sa mère, —",
+        "NAB": "you allow him to do nothing more for his father or mother.",
+        "VAT_ES": "En ese caso, le permiten no hacer más nada por su padre o por su madre.",
+        "CEI": "In quei giorni Gesù se ne andò sulla montagna a pregare e passò la notte in orazione."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "ἀκυροῦντες τὸν λόγον τοῦ θεοῦ τῇ παραδόσει ὑμῶν ᾗ παρεδώκατε· καὶ παρόμοια τοιαῦτα πολλὰ ποιεῖτε.",
+        "VUL": "rescindentes verbum Dei per traditionem vestram, quam tradidistis : et similia hujusmodi multa facitis.",
+        "SYN": "устраняя слово Божие преданием вашим, которое вы установили; и делаете многое сему подобное.",
+        "NEO": "anéantissant ainsi la parole de Dieu par la tradition que vous enseignez. Et vous faites beaucoup d’autres choses semblables. »",
+        "NAB": "You nullify the word of God in favor of your tradition that you have handed on. And you do many such things.\"",
+        "VAT_ES": "Así anulan la palabra de Dios por la tradición que ustedes mismos se han transmitido. &iexcl;Y como estas, hacen muchas otras cosas!».",
+        "CEI": "Quando fu giorno, chiamò a sé i suoi discepoli e ne scelse dodici, ai quali diede il nome di apostoli:"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Καὶ προσκαλεσάμενος πάντα τὸν ὄχλον, ἔλεγεν αὐτοῖς, Ἀκούετέ μου πάντες, καὶ συνίετε.",
+        "VUL": "Et advocans iterum turbam, dicebat illis : Audite me omnes, et intelligite.",
+        "SYN": "И, призвав весь народ, говорил им: слушайте Меня все и разумейте:",
+        "NEO": "Ayant rappelé le peuple, Jésus leur dit : « Écoutez-moi tous, et comprenez.",
+        "NAB": "He summoned the crowd again and said to them, \"Hear me, all of you, and understand.",
+        "VAT_ES": "Y Jesús, llamando otra vez a la gente, les dijo: «Escúchenme todos y entiéndanlo bien.",
+        "CEI": "Simone, che chiamò anche Pietro, Andrea suo fratello, Giacomo, Giovanni, Filippo, Bartolomeo,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Οὐδέν ἐστιν ἔξωθεν τοῦ ἀνθρώπου εἰσπορευόμενον εἰς αὐτόν, ὃ δύναται αὐτὸν κοινῶσαι· ἀλλὰ τὰ ἐκπορευόμενα ἀπ’ αὐτοῦ, ἐκεῖνά ἐστιν τὰ κοινοῦντα τὸν ἄνθρωπον.",
+        "VUL": "Nihil est extra hominem introiens in eum, quod possit eum coinquinare, sed quæ de homine procedunt illa sunt quæ communicant hominem.",
+        "SYN": "ничто, входящее в человека извне, не может осквернить его; но что исходит из него, то оскверняет человека.",
+        "NEO": "Rien de ce qui est hors de l’homme et qui entre dans l’homme ne peut le souiller ; mais ce qui sort de l’homme, voilà ce qui souille l’homme.",
+        "NAB": "Nothing that enters one from outside can defile that person; but the things that come out from within are what defile.\"",
+        "VAT_ES": "Ninguna cosa externa que entra en el hombre puede mancharlo; lo que lo hace impuro es aquello que sale del hombre.",
+        "CEI": "Matteo, Tommaso, Giacomo d'Alfeo, Simone soprannominato Zelòta,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Εἴ τις ἔχει ὦτα ἀκούειν ἀκουέτω.",
+        "VUL": "Si quis habet aures audiendi, audiat.",
+        "SYN": "Если кто имеет уши слышать, да слышит!",
+        "NEO": "Que celui qui a des oreilles entende bien. »",
+        "NAB": ")",
+        "VAT_ES": "&iexcl;Si alguien tiene oídos para oír, que oiga!».",
+        "CEI": "Giuda di Giacomo e Giuda Iscariota, che fu il traditore."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Καὶ ὅτε εἰσῆλθεν εἰς οἶκον ἀπὸ τοῦ ὄχλου, ἐπηρώτων αὐτὸν οἱ μαθηταὶ αὐτοῦ περὶ τῆς παραβολῆς.",
+        "VUL": "Et cum introisset in domum a turba, interrogabant eum discipuli ejus parabolam.",
+        "SYN": "И когда Он от народа вошел в дом, ученики Его спросили Его о притче.",
+        "NEO": "Lorsqu’il fut entré dans une maison, loin de la foule, ses disciples l’interrogèrent sur cette parabole+ 7:17 17. Parabole: la sentence énigmatique du v. 15.*.",
+        "NAB": "When he got home away from the crowd his disciples questioned him about the parable.",
+        "VAT_ES": "Cuando se apartó de la multitud y entró en la casa, sus discípulos le preguntaron por el sentido de esa parábola.",
+        "CEI": "Disceso con loro, si fermò in un luogo pianeggiante. C'era gran folla di suoi discepoli e gran moltitudine di gente da tutta la Giudea, da Gerusalemme e dal litorale di Tiro e di Sidone,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Καὶ λέγει αὐτοῖς, Οὕτως καὶ ὑμεῖς ἀσύνετοί ἐστε; Οὐ νοεῖτε ὅτι πᾶν τὸ ἔξωθεν εἰσπορευόμενον εἰς τὸν ἄνθρωπον οὐ δύναται αὐτὸν κοινῶσαι,",
+        "VUL": "Et ait illis : Sic et vos imprudentes estis ? Non intelligitis quia omne extrinsecus introiens in hominem, non potest eum communicare :",
+        "SYN": "Он сказал им: неужели и вы так непонятливы? Неужели не разумеете, что ничто, извне входящее в человека, не может осквернить его?",
+        "NEO": "Il leur dit : « Vous aussi, avez-vous si peu d’intelligence ? Ne comprenez-vous pas que tout ce qui du dehors entre dans l’homme ne peut le souiller,",
+        "NAB": "He said to them, \"Are even you likewise without understanding? Do you not realize that everything that goes into a person from outside cannot defile,",
+        "VAT_ES": "El les dijo: «&iquest;Ni siquiera ustedes son capaces de comprender? &iquest;No saben que nada de lo que entra de afuera en el hombre puede mancharlo,",
+        "CEI": "che erano venuti per ascoltarlo ed esser guariti dalle loro malattie; anche quelli che erano tormentati da spiriti immondi, venivano guariti."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "ὅτι οὐκ εἰσπορεύεται αὐτοῦ εἰς τὴν καρδίαν, ἀλλ’ εἰς τὴν κοιλίαν, καὶ εἰς τὸν ἀφεδρῶνα ἐκπορεύεται, καθαρίζον πάντα τὰ βρώματα.",
+        "VUL": "quia non intrat in cor ejus, sed in ventrum vadit, et in secessum exit, purgans omnes escas ?",
+        "SYN": "Потому что не в сердце его входит, а в чрево, и выходит вон, _чем_ очищается всякая пища.",
+        "NEO": "parce que cela n’entre pas dans son cœur, mais va au ventre, et est rejeté au lieu secret, ce qui purifie tous les aliments ?",
+        "NAB": "since it enters not the heart but the stomach and passes out into the latrine?\" (Thus he declared all foods clean.)",
+        "VAT_ES": "porque eso no va al corazón sino al vientre, y después se elimina en lugares retirados?». Así Jesús declaraba que eran puros todos los alimentos.",
+        "CEI": "Tutta la folla cercava di toccarlo, perché da lui usciva una forza che sanava tutti."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Ἔλεγεν δὲ ὅτι Τὸ ἐκ τοῦ ἀνθρώπου ἐκπορευόμενον, ἐκεῖνο κοινοῖ τὸν ἄνθρωπον.",
+        "VUL": "Dicebat autem, quoniam quæ de homine exeunt, illa communicant hominem.",
+        "SYN": "Далее сказал: исходящее из человека оскверняет человека.",
+        "NEO": "Mais ajouta-t-il, ce qui sort de l’homme, voilà ce qui souille l’homme.",
+        "NAB": "\"But what comes out of a person, that is what defiles.",
+        "VAT_ES": "Luego agregó: «Lo que sale del hombre es lo que lo hace impuro.",
+        "CEI": "Alzati gli occhi verso i suoi discepoli, Gesù diceva: \"Beati voi poveri, perché vostro è il regno di Dio."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Ἔσωθεν γάρ, ἐκ τῆς καρδίας τῶν ἀνθρώπων οἱ διαλογισμοὶ οἱ κακοὶ ἐκπορεύονται, μοιχεῖαι, πορνεῖαι, φόνοι,",
+        "VUL": "Ab intus enim de corde hominum malæ cogitationes procedunt, adulteria, fornicationes, homicidia,",
+        "SYN": "Ибо извнутрь, из сердца человеческого, исходят злые помыслы, прелюбодеяния, любодеяния, убийства,",
+        "NEO": "Car c’est du dedans, du cœur des hommes, que sortent les pensées mauvaises, les adultères, les fornications, les homicides,",
+        "NAB": "From within people, from their hearts, come evil thoughts, unchastity, theft, murder,",
+        "VAT_ES": "Porque es del interior, del corazón de los hombres, de donde provienen las malas intenciones, las fornicaciones, los robos, los homicidios,",
+        "CEI": "Beati voi che ora avete fame, perché sarete saziati. Beati voi che ora piangete, perché riderete."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "κλοπαί, πλεονεξίαι, πονηρίαι, δόλος, ἀσέλγεια, ὀφθαλμὸς πονηρός, βλασφημία, ὑπερηφανία, ἀφροσύνη·",
+        "VUL": "furta, avaritiæ, nequitiæ, dolus, impudicitiæ, oculus malus, blasphemia, superbia, stultitia.",
+        "SYN": "кражи, лихоимство, злоба, коварство, непотребство, завистливое око, богохульство, гордость, безумство, --",
+        "NEO": "les vols, l’avarice, les méchancetés, la fraude, le libertinage, l’œil malin, la calomnie, l’orgueil, la folie.",
+        "NAB": "adultery, greed, malice, deceit, licentiousness, envy, blasphemy, arrogance, folly.",
+        "VAT_ES": "los adulterios, la avaricia, la maldad, los engaños, las deshonestidades, la envidia, la difamación, el orgullo, el desatino.",
+        "CEI": "Beati voi quando gli uomini vi odieranno e quando vi metteranno al bando e v'insulteranno e respingeranno il vostro nome come scellerato, a causa del Figlio dell'uomo."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "πάντα ταῦτα τὰ πονηρὰ ἔσωθεν ἐκπορεύεται, καὶ κοινοῖ τὸν ἄνθρωπον.",
+        "VUL": "Omnia hæc mala ab intus procedunt, et communicant hominem.",
+        "SYN": "все это зло извнутрь исходит и оскверняет человека.",
+        "NEO": "Toutes ces choses mauvaises sortent du dedans et souillent l’homme. » SUR LES CONFINS DE LA GALILÉE",
+        "NAB": "All these evils come from within and they defile.\"",
+        "VAT_ES": "Todas estas cosas malas proceden del interior y son las que manchan al hombre».",
+        "CEI": "Rallegratevi in quel giorno ed esultate, perché, ecco, la vostra ricompensa è grande nei cieli. Allo stesso modo infatti facevano i loro padri con i profeti."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "¶Καὶ ἐκεῖθεν ἀναστὰς ἀπῆλθεν εἰς τὰ μεθόρια Τύρου καὶ Σιδῶνος. Καὶ εἰσελθὼν εἰς οἰκίαν, οὐδένα ἤθελεν γνῶναι, καὶ οὐκ ἠδυνήθη λαθεῖν.",
+        "VUL": "Et inde surgens abiit in fines Tyri et Sidonis : et ingressus domum, neminem voluit scire, et non potuit latere.",
+        "SYN": "И, отправившись оттуда, пришел в пределы Тирские и Сидонские; и, войдя в дом, не хотел, чтобы кто узнал; но не мог утаиться.",
+        "NEO": "Il partit ensuite de ce lieu, et s’en alla vers les confins de Tyr et de Sidon+ 7:24 24. Matth. xv, 21. Plusieurs mss. omettent : et de Sidon; Cf. vers. 31.*. Et étant entré dans une maison, il désirait que personne ne le sût, mais il ne put demeurer caché.",
+        "NAB": "From that place he went off to the district of Tyre. He entered a house and wanted no one to know about it, but he could not escape notice.",
+        "VAT_ES": "Después Jesús partió de allí y fue a la región de Tiro. Entró en una casa y no quiso que nadie lo supiera, pero no pudo permanecer oculto.",
+        "CEI": "Ma guai a voi, ricchi, perché avete già la vostra consolazione."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Ἀκούσασα γὰρ γυνὴ περὶ αὐτοῦ, ἧς εἶχεν τὸ θυγάτριον αὐτῆς πνεῦμα ἀκάθαρτον, ἐλθοῦσα προσέπεσεν πρὸς τοὺς πόδας αὐτοῦ·",
+        "VUL": "Mulier enim statim ut audivit de eo, cujus filia habebat spiritum immundum, intravit, et procidit ad pedes ejus.",
+        "SYN": "Ибо услышала о Нем женщина, у которой дочь одержима была нечистым духом, и, придя, припала к ногам Его;",
+        "NEO": "Car une femme, dont la petite fille était possédée d’un esprit impur, n’eut pas plus tôt entendu parler de lui, qu’elle vint se jeter à ses pieds.",
+        "NAB": "Soon a woman whose daughter had an unclean spirit heard about him. She came and fell at his feet.",
+        "VAT_ES": "En seguida una mujer cuya hija estaba poseída por un espíritu impuro, oyó hablar de él y fue a postrarse a sus pies.",
+        "CEI": "Guai a voi che ora siete sazi, perché avrete fame. Guai a voi che ora ridete, perché sarete afflitti e piangerete."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "ἦν δὲ ἡ γυνὴ Ἑλληνίς, Συραφοινίκισσα τῷ γένει· καὶ ἠρώτα αὐτὸν ἵνα τὸ δαιμόνιον ἐκβάλῃ ἐκ τῆς θυγατρὸς αὐτῆς.",
+        "VUL": "Erat enim mulier gentilis, Syrophnissa genere. Et rogabat eum ut dæmonium ejiceret de filia ejus.",
+        "SYN": "а женщина та была язычница, родом сирофиникиянка; и просила Его, чтобы изгнал беса из ее дочери.",
+        "NEO": "Cette femme était païenne, syro-phénicienne de nation ; elle le pria de chasser le démon hors de sa fille.",
+        "NAB": "The woman was a Greek, a Syrophoenician by birth, and she begged him to drive the demon out of her daughter.",
+        "VAT_ES": "Esta mujer, que era pagana y de origen sirofenicio, le pidió que expulsara de su hija al demonio.",
+        "CEI": "Guai quando tutti gli uomini diranno bene di voi. Allo stesso modo infatti facevano i loro padri con i falsi profeti."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ Ἰησοῦς εἶπεν αὐτῇ, Ἄφες πρῶτον χορτασθῆναι τὰ τέκνα· οὐ γὰρ καλόν ἐστιν λαβεῖν τὸν ἄρτον τῶν τέκνων καὶ βαλεῖν τοῖς κυναρίοις.",
+        "VUL": "Qui dixit illi : Sine prius saturari filios : non est enim bonum sumere panem filiorum, et mittere canibus.",
+        "SYN": "Но Иисус сказал ей: дай прежде насытиться детям, ибо нехорошо взять хлеб у детей и бросить псам.",
+        "NEO": "Il lui dit : « Laisse d’abord les enfants se rassasier, car il n’est pas bien de prendre le pain des enfants et de le jeter aux petits chiens. —",
+        "NAB": "He said to her, \"Let the children be fed first. For it is not right to take the food of the children and throw it to the dogs.\"",
+        "VAT_ES": "El le respondió: «Deja que antes se sacien los hijos; no está bien tomar el pan de los hijos para tirárselo a los cachorros».",
+        "CEI": "Ma a voi che ascoltate, io dico: Amate i vostri nemici, fate del bene a coloro che vi odiano,"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Ἡ δὲ ἀπεκρίθη καὶ λέγει αὐτῷ, Ναί, κύριε· καὶ γὰρ τὰ κυνάρια ὑποκάτω τῆς τραπέζης ἐσθίει ἀπὸ τῶν ψιχίων τῶν παιδίων.",
+        "VUL": "At illa respondit, et dixit illi : Utique Domine, nam et catelli comedunt sub mensa de micis puerorum.",
+        "SYN": "Она же сказала Ему в ответ: так, Господи; но и псы под столом едят крохи у детей.",
+        "NEO": "Il est vrai, Seigneur, répondit-elle ; mais les petits chiens mangent sous la table les miettes des enfants. »",
+        "NAB": "She replied and said to him, \"Lord, even the dogs under the table eat the children's scraps.\"",
+        "VAT_ES": "Pero ella le respondió: «Es verdad, Señor, pero los cachorros, debajo de la mesa, comen las migajas que dejan caer los hijos».",
+        "CEI": "benedite coloro che vi maledicono, pregate per coloro che vi maltrattano."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Καὶ εἶπεν αὐτῇ, Διὰ τοῦτον τὸν λόγον ὕπαγε· ἐξελήλυθεν τὸ δαιμόνιον ἐκ τῆς θυγατρός σου.",
+        "VUL": "Et ait illi : Propter hunc sermonem vade : exiit dæmonium a filia tua.",
+        "SYN": "И сказал ей: за это слово, пойди; бес вышел из твоей дочери.",
+        "NEO": "Alors il lui dit : « À cause de cette parole, va, le démon est sorti de ta fille. »",
+        "NAB": "Then he said to her, \"For saying this, you may go. The demon has gone out of your daughter.\"",
+        "VAT_ES": "Entonces él le dijo: «A causa de lo que has dicho, puedes irte: el demonio ha salido de tu hija».",
+        "CEI": "A chi ti percuote sulla guancia, porgi anche l'altra; a chi ti leva il mantello, non rifiutare la tunica."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Καὶ ἀπελθοῦσα εἰς τὸν οἶκον αὐτῆς, εὗρεν τὸ δαιμόνιον ἐξεληλυθός, καὶ τὴν θυγατέρα βεβλημένην ἐπὶ τῆς κλίνης.",
+        "VUL": "Et cum abiisset domum suam, invenit puellam jacentem supra lectum, et dæmonium exiisse.",
+        "SYN": "И, придя в свой дом, она нашла, что бес вышел и дочь лежит на постели.",
+        "NEO": "Étant retournée à sa maison, elle trouva sa fille couchée sur son lit ; le démon l’avait quittée.",
+        "NAB": "When the woman went home, she found the child lying in bed and the demon gone.",
+        "VAT_ES": "Ella regresó a su casa y encontró a la niña acostada en la cama y liberada del demonio.",
+        "CEI": "Dà a chiunque ti chiede; e a chi prende del tuo, non richiederlo."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "¶Καὶ πάλιν ἐξελθὼν ἐκ τῶν ὁρίων Τύρου καὶ Σιδῶνος, ἦλθεν πρὸς τὴν θάλασσαν τῆς Γαλιλαίας, ἀνὰ μέσον τῶν ὁρίων Δεκαπόλεως.",
+        "VUL": "Et iterum exiens de finibus Tyri, venit per Sidonem ad mare Galilææ inter medios fines Decapoleos.",
+        "SYN": "Выйдя из пределов Тирских и Сидонских, _Иисус_ опять пошел к морю Галилейскому через пределы Десятиградия.",
+        "NEO": "Sortant alors du pays de Tyr, Jésus revint par Sidon vers la mer de Galilée, au centre du pays de la Décapole.",
+        "NAB": "Again he left the district of Tyre and went by way of Sidon to the Sea of Galilee, into the district of the Decapolis.",
+        "VAT_ES": "Cuando Jesús volvía de la región de Tiro, pasó por Sidón y fue hacia el mar de Galilea, atravesando el territorio de la Decápolis.",
+        "CEI": "Ciò che volete gli uomini facciano a voi, anche voi fatelo a loro."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "Καὶ φέρουσιν αὐτῷ κωφὸν μογγιλάλον, καὶ παρακαλοῦσιν αὐτὸν ἵνα ἐπιθῇ αὐτῷ τὴν χεῖρα.",
+        "VUL": "Et adducunt ei surdum, et mutum, et deprecabantur eum, ut imponat illi manum.",
+        "SYN": "Привели к Нему глухого косноязычного и просили Его возложить на него руку.",
+        "NEO": "Là, on lui amena un sourd-bègue+ 7:32 32. Matth. xv, 29. Le grec μογιλάλον, litt. un sourd qui parlait difficilement. Mis ici pour muet (cf. ἀλάλους, vers. 37 et le même mot usité dans les Septante, Is. xxxv, 6, pour l’hébreu \\+qt ’illem\\+qt*, muet). On veut sans doute faire remarquer par là qu’il n’était pas sourd-muet de naissance.*, et on le pria de lui imposer les mains.",
+        "NAB": "And people brought to him a deaf man who had a speech impediment and begged him to lay his hand on him.",
+        "VAT_ES": "Entonces le presentaron a un sordomudo y le pidieron que le impusiera las manos.",
+        "CEI": "Se amate quelli che vi amano, che merito ne avrete? Anche i peccatori fanno lo stesso."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Καὶ ἀπολαβόμενος αὐτὸν ἀπὸ τοῦ ὄχλου κατ’ ἰδίαν, ἔβαλεν τοὺς δακτύλους αὐτοῦ εἰς τὰ ὦτα αὐτοῦ, καὶ πτύσας ἥψατο τῆς γλώσσης αὐτοῦ,",
+        "VUL": "Et apprehendens eum de turba seorsum, misit digitos suos in auriculas ejus : et exspuens, tetigit linguam ejus :",
+        "SYN": "_Иисус,_ отведя его в сторону от народа, вложил персты Свои в уши ему и, плюнув, коснулся языка его;",
+        "NEO": "Jésus, le tirant à part hors de la foule, lui mit les doigts dans les oreilles, et de sa salive sur la langue ;",
+        "NAB": "He took him off by himself away from the crowd. He put his finger into the man's ears and, spitting, touched his tongue;",
+        "VAT_ES": "Jesús lo separó de la multitud y, llevándolo aparte, le puso los dedos en las orejas y con su saliva le tocó la lengua.",
+        "CEI": "E se fate del bene a coloro che vi fanno del bene, che merito ne avrete? Anche i peccatori fanno lo stesso."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "καὶ ἀναβλέψας εἰς τὸν οὐρανόν, ἐστέναξεν, καὶ λέγει αὐτῷ, Ἐφφαθά, ὅ ἐστιν, Διανοίχθητι.",
+        "VUL": "et suspiciens in cælum, ingemuit, et ait illi : Ephphetha, quod est, Adaperire.",
+        "SYN": "и, воззрев на небо, вздохнул и сказал ему: \"еффафа\", то есть: отверзись.",
+        "NEO": "puis levant les yeux au ciel, il poussa un soupir et lui dit : « Ephphata », c’est-à-dire, ouvre-toi.",
+        "NAB": "then he looked up to heaven and groaned, and said to him, \"Ephphatha!\" (that is, \"Be opened!\")",
+        "VAT_ES": "Después, levantando los ojos al cielo, suspiró y dijo: «Efatá», que significa: «Abrete».",
+        "CEI": "E se prestate a coloro da cui sperate ricevere, che merito ne avrete? Anche i peccatori concedono prestiti ai peccatori per riceverne altrettanto."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "Καὶ εὐθέως διηνοίχθησαν αὐτοῦ αἱ ἀκοαί· καὶ ἐλύθη ὁ δεσμὸς τῆς γλώσσης αὐτοῦ, καὶ ἐλάλει ὀρθῶς.",
+        "VUL": "Et statim apertæ sunt aures ejus, et solutum est vinculum linguæ ejus, et loquebatur recte.",
+        "SYN": "И тотчас отверзся у него слух и разрешились узы его языка, и стал говорить чисто.",
+        "NEO": "Et aussitôt les oreilles de cet homme s’ouvrirent, sa langue se délia, et il parlait distinctement.",
+        "NAB": "And (immediately) the man's ears were opened, his speech impediment was removed, and he spoke plainly.",
+        "VAT_ES": "Y enseguida se abrieron sus oídos, se le soltó la lengua y comenzó a hablar normalmente.",
+        "CEI": "Amate invece i vostri nemici, fate del bene e prestate senza sperarne nulla, e il vostro premio sarà grande e sarete figli dell'Altissimo; perché egli è benevolo verso gl'ingrati e i malvagi."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "Καὶ διεστείλατο αὐτοῖς ἵνα μηδενὶ εἴπωσιν· ὅσον δὲ αὐτὸς αὐτοῖς διεστέλλετο, μᾶλλον περισσότερον ἐκήρυσσον.",
+        "VUL": "Et præcepit illis ne cui dicerent. Quanto autem eis præcipiebat, tanto magis plus prædicabant :",
+        "SYN": "И повелел им не сказывать никому. Но сколько Он ни запрещал им, они еще более разглашали.",
+        "NEO": "Jésus leur défendit d’en rien dire à personne. Mais plus il le leur défendait, plus ils le publiaient ;",
+        "NAB": "He ordered them not to tell anyone. But the more he ordered them not to, the more they proclaimed it.",
+        "VAT_ES": "Jesús les mandó insistentemente que no dijeran nada a nadie, pero cuanto más insistía, ellos más lo proclamaban",
+        "CEI": "Siate misericordiosi, come è misericordioso il Padre vostro."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "Καὶ ὑπερπερισσῶς ἐξεπλήσσοντο, λέγοντες, Καλῶς πάντα πεποίηκεν· καὶ τοὺς κωφοὺς ποιεῖ ἀκούειν, καὶ τοὺς ἀλάλους λαλεῖν.",
+        "VUL": "et eo amplius admirabantur, dicentes : Bene omnia fecit : et surdos fecit audire, et mutos loqui.",
+        "SYN": "И чрезвычайно дивились, и говорили: все хорошо делает, -- и глухих делает слышащими, и немых -- говорящими.",
+        "NEO": "et ravis d’une admiration sans bornes, ils disaient : « Tout ce qu’il a fait est merveilleux ! Il fait entendre les sourds et parler les muets. »",
+        "NAB": "They were exceedingly astonished and they said, \"He has done all things well. He makes the deaf hear and (the) mute speak.\"",
+        "VAT_ES": "y, en el colmo de la admiración, decían: «Todo lo ha hecho bien: hace oír a los sordos y hablar a los mudos».",
+        "CEI": "Non giudicate e non sarete giudicati; non condannate e non sarete condannati; perdonate e vi sarà perdonato;"
+      }
+    }
+  }
+}

@@ -1,0 +1,537 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_009",
+  "book_key": "DEUT",
+  "sequence": 9,
+  "chapter_in": {
+    "MT": 9,
+    "VUL": 9,
+    "LXX": 9
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שְׁמַ֣ע יִשְׂרָאֵ֗ל אַתָּ֨ה עֹבֵ֤ר הַ/יּוֹם֙ אֶת הַ/יַּרְדֵּ֔ן לָ/בֹא֙ לָ/רֶ֣שֶׁת גּוֹיִ֔ם גְּדֹלִ֥ים וַ/עֲצֻמִ֖ים מִמֶּ֑/ךָּ עָרִ֛ים גְּדֹלֹ֥ת וּ/בְצֻרֹ֖ת בַּ/שָּׁמָֽיִם׃",
+        "LXX": "Ἄκουε, Ἰσραήλ· σὺ διαβαίνεις σήμερον τὸν Ἰορδάνην τοῦτον εἰσελθεῖν κληρονομῆσαι ἔθνη μεγάλα καὶ ἰσχυρότερα μᾶλλον ἢ ὑμεῖς, πόλεις μεγάλας καὶ τειχήρεις ἕως τοῦ οὐρανοῦ,",
+        "VUL": "Audi, Israël : tu transgredieris hodie Jordanem, ut possideas nationes maximas et fortiores te, civitates ingentes, et ad cælum usque muratas,",
+        "SYN": "Слушай, Израиль: ты теперь идешь за Иордан, чтобы пойти овладеть народами, которые больше и сильнее тебя, городами большими, с укреплениями до небес,",
+        "NEO": "Ecoute, Israël. Tu vas aujourd’hui passer le Jourdain, pour marcher à la conquête de nations plus grandes et plus puissantes que toi, de grandes villes dont les murailles s’élèvent jusqu’au ciel,",
+        "NAB": "\"Hear, O Israel! You are now about to cross the Jordan to enter in and dispossess nations greater and stronger than yourselves, having large cities fortified to the sky,",
+        "VAT_ES": "Escucha, Israel. Hoy vas a cruzar el Jordán, para desposeer a naciones más numerosas y fuertes que tú, y a grandes ciudades defendidas por murallas que se alzan hasta el cielo.",
+        "CEI": "Ascolta, Israele! Oggi tu attraverserai il Giordano per andare a impadronirti di nazioni più grandi e più potenti di te, di città grandi e fortificate fino al cielo,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עַֽם גָּד֥וֹל וָ/רָ֖ם בְּנֵ֣י עֲנָקִ֑ים אֲשֶׁ֨ר אַתָּ֤ה יָדַ֨עְתָּ֙ וְ/אַתָּ֣ה שָׁמַ֔עְתָּ מִ֣י יִתְיַצֵּ֔ב לִ/פְנֵ֖י בְּנֵ֥י עֲנָֽק׃",
+        "LXX": "λαὸν μέγαν καὶ πολὺν καὶ εὐμήκη, υἱοὺς Ἐνάκ, οὓς σὺ οἶσθας καὶ σὺ ἀκήκοας Τίς ἀντιστήσεται κατὰ πρόσωπον υἱῶν Ἐνάκ;",
+        "VUL": "populum magnum atque sublimem, filios Enacim, quos ipse vidisti et audisti, quibus nullus potest ex adverso resistere.",
+        "SYN": "народом [великим,] многочисленным и великорослым, сынами Енаковыми, о которых ты знаешь и слышал: \"кто устоит против сынов Енаковых?\"",
+        "NEO": "d’un peuple grand et de haute stature, des enfants des Enacim, que tu connais et dont tu as entendu dire : Qui pourra tenir contre les enfants d’Enac ?",
+        "NAB": "the Anakim, a people great and tall. You know of them and have heard it said of them, 'Who can stand up against the Anakim?'",
+        "VAT_ES": "Son los anaquitas, un pueblo numeroso y de elevada estatura. Tú ya los conoces y has oído decir de ellos: «&iquest;Quién es capaz de enfrentar a los anaquitas?».",
+        "CEI": "di un popolo grande e alto di statura, dei figli degli Anakiti che tu conosci e dei quali hai sentito dire: Chi mai può resistere ai figli di Anak?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/יָדַעְתָּ֣ הַ/יּ֗וֹם כִּי֩ יְהוָ֨ה אֱלֹהֶ֜י/ךָ הֽוּא הָ/עֹבֵ֤ר לְ/פָנֶ֨י/ךָ֙ אֵ֣שׁ אֹֽכְלָ֔ה ה֧וּא יַשְׁמִידֵ֛/ם וְ/ה֥וּא יַכְנִיעֵ֖/ם לְ/פָנֶ֑י/ךָ וְ/הֽוֹרַשְׁתָּ֤/ם וְ/הַֽאַבַדְתָּ/ם֙ מַהֵ֔ר כַּ/אֲשֶׁ֛ר דִּבֶּ֥ר יְהוָ֖ה לָֽ/ךְ׃",
+        "LXX": "καὶ γνώσῃ σήμερον ὅτι Κύριος ὁ θεός σου, οὗτος προπορεύεται πρὸ προσώπου σου· πῦρ καταναλίσκον ἐστίν· οὗτος ἐξολεθρεύσει αὐτούς, καὶ οὗτος ἀποστρέψει αὐτοὺς ἀπὸ προσώπου σου, καὶ ἀπολεῖς αὐτοὺς καθάπερ εἶπέν σοι Κύριος.",
+        "VUL": "Scies ergo hodie quod Dominus Deus tuus ipse transibit ante te, ignis devorans atque consumens, qui conterat eos, et deleat atque disperdat ante faciem tuam velociter, sicut locutus est tibi :",
+        "SYN": "Знай же ныне, что Господь, Бог твой, идет пред тобою, _как_ огнь поядающий; Он будет истреблять их и низлагать их пред тобою, и ты изгонишь их, и погубишь их скоро, как говорил тебе Господь.",
+        "NEO": "Sache aujourd’hui que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, passera lui-même devant toi comme un feu dévorant ; c’est lui qui les détruira, lui qui les humiliera devant toi ; tu les chasseras et tu les feras périr promptement, comme \\+w Yahweh|strong=\"H3068\"\\+w** te l’a dit.",
+        "NAB": "Understand, then, today that it is the LORD, your God, who will cross over before you as a consuming fire; he it is who will reduce them to nothing and subdue them before you, so that you can drive them out and destroy them quickly, as the LORD promised you.",
+        "VAT_ES": "Pero ten presente que desde hoy el Señor irá delante de ti como un fuego devorador, y los destruirá. El los someterá a ti para que puedas desposeerlos y hacerlos desaparecer rápidamente, como el Señor te lo ha prometido.",
+        "CEI": "Sappi dunque oggi che il Signore tuo Dio passerà davanti a te come fuoco divoratore, li distruggerà e li abbatterà davanti a te; tu li scaccerai e li farai perire in fretta, come il Signore ti ha detto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אַל תֹּאמַ֣ר בִּ/לְבָבְ/ךָ֗ בַּ/הֲדֹ֣ף יְהוָה֩ אֱלֹהֶ֨י/ךָ אֹתָ֥/ם מִ/לְּ/פָנֶי/ךָ֮ לֵ/אמֹר֒ בְּ/צִדְקָתִ/י֙ הֱבִיאַ֣/נִי יְהוָ֔ה לָ/רֶ֖שֶׁת אֶת הָ/אָ֣רֶץ הַ/זֹּ֑את וּ/בְ/רִשְׁעַת֙ הַ/גּוֹיִ֣ם הָ/אֵ֔לֶּה יְהוָ֖ה מוֹרִישָׁ֥/ם מִ/פָּנֶֽי/ךָ׃",
+        "LXX": "μὴ εἴπῃς ἐν τῇ καρδίᾳ σου, ἐν τῷ ἐξαναλῶσαι Κύριον τὸν θεόν σου τὰ ἔθνη ταῦτα ἀπὸ προσώπου, λέγων Διὰ τὴν δικαιοσύνην μου εἰσήγαγέν με Κύριος κληρονομῆσαι τὴν γῆν τὴν ἀγαθὴν ταύτην.",
+        "VUL": "ne dicas in corde tuo, cum deleverit eos Dominus Deus tuus in conspectu tuo : Propter justitiam meam introduxit me Dominus ut terram hanc possiderem, cum propter impietates suas istæ deletæ sint nationes.",
+        "SYN": "Когда будет изгонять их Господь, Бог твой, от лица твоего, не говори в сердце твоем, что за праведность мою привел меня Господь овладеть сею [доброю] землею, и что за нечестие народов сих Господь изгоняет их от лица твоего;",
+        "NEO": "Ne dis pas dans ton cœur, lorsque \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, les chassera de devant toi : « C’est à cause de ma justice que \\+w Yahweh|strong=\"H3068\"\\+w** m’a fait venir pour prendre possession de ce pays ». Car c’est à cause de la méchanceté de ces nations que \\+w Yahweh|strong=\"H3068\"\\+w** les chasse de devant toi.",
+        "NAB": "After the LORD, your God, has thrust them out of your way, do not say to yourselves, 'It is because of my merits that the LORD has brought me in to possess this land'; for it is really because of the wickedness of these nations that the LORD is driving them out before you.",
+        "VAT_ES": "Y cuando el Señor, tu Dios, los arroje lejos de ti, no digas en tu corazón: «A causa de mi justicia, el Señor me ha puesto en posesión de esta tierra». Porque sólo por la perversidad de esas naciones, el Señor, tu Dios, las despoja ante ti.",
+        "CEI": "Quando il Signore tuo Dio li avrà scacciati dinanzi a te, non pensare: A causa della mia giustizia, il Signore mi ha fatto entrare in possesso di questo paese; mentre per la malvagità di queste nazioni il Signore le scaccia dinanzi a te."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לֹ֣א בְ/צִדְקָתְ/ךָ֗ וּ/בְ/יֹ֨שֶׁר֙ לְבָ֣בְ/ךָ֔ אַתָּ֥ה בָ֖א לָ/רֶ֣שֶׁת אֶת אַרְצָ֑/ם כִּ֞י בְּ/רִשְׁעַ֣ת הַ/גּוֹיִ֣ם הָ/אֵ֗לֶּה יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ מוֹרִישָׁ֣/ם מִ/פָּנֶ֔י/ךָ וּ/לְמַ֜עַן הָקִ֣ים אֶת הַ/דָּבָ֗ר אֲשֶׁ֨ר נִשְׁבַּ֤ע יְהוָה֙ לַ/אֲבֹתֶ֔י/ךָ לְ/אַבְרָהָ֥ם לְ/יִצְחָ֖ק וּֽ/לְ/יַעֲקֹֽב׃",
+        "LXX": "οὐχὶ διὰ τὴν δικαιοσύνην σου οὐδὲ διὰ τὴν ὁσιότητα τῆς καρδίας σου σὺ εἰσπορεύῃ κληρονομῆσαι τὴν γῆν αὐτῶν, ἀλλὰ διὰ τὴν ἀσέβειαν τῶν ἐθνῶν τούτων Κύριος ἐξολεθρεύσει αὐτοὺς ἀπὸ προσώπου σου· καὶ ἵνα στήσῃ τὴν διαθήκην αὐτοῦ ἣν ὤμοσεν τοῖς πατράσιν ὑμῶν, τῷ Ἀβραὰμ καὶ τῷ Ἰσαὰκ καὶ τῷ Ἰακώβ.",
+        "VUL": "Neque enim propter justitias tuas, et æquitatem cordis tui ingredieris, ut possideas terras earum : sed quia illæ egerunt impie, introëunte te deletæ sunt : et ut compleret verbum suum Dominus, quod sub juramento pollicitus est patribus tuis, Abraham, Isaac, et Jacob.",
+        "SYN": "не за праведность твою и не за правоту сердца твоего идешь ты наследовать землю их, но за нечестие [и беззакония] народов сих Господь, Бог твой, изгоняет их от лица твоего, и дабы исполнить слово, которым клялся Господь отцам твоим Аврааму, Исааку и Иакову;",
+        "NEO": "Non, ce n’est pas à cause de ta justice et de la droiture de ton cœur que tu viens prendre possession de leur pays ; mais c’est à cause de la méchanceté de ces nations que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, les chasse de devant toi ; c’est aussi pour accomplir la parole que \\+w Yahweh|strong=\"H3068\"\\+w** a jurée à tes pères, à Abraham, à Isaac et à Jacob.",
+        "NAB": "No, it is not because of your merits or the integrity of your heart that you are going in to take possession of their land; but the LORD, your God, is driving these nations out before you on account of their wickedness and in order to keep the promise which he made on oath to your fathers, Abraham, Isaac and Jacob.",
+        "VAT_ES": "No son ni tu justicia ni la rectitud de tu corazón las que te harán tomar posesión de esa tierra. todo lo contrario: es a causa de la maldad de esas naciones que el Señor las despoja ante ti, para cumplir la promesa que él juró a tus padres, a Abraham, a Isaac y a Jacob.",
+        "CEI": "No, tu non entri in possesso del loro paese a causa della tua giustizia, né a causa della rettitudine del tuo cuore; ma il Signore tuo Dio scaccia quelle nazioni dinanzi a te per la loro malvagità e per mantenere la parola che il Signore ha giurato ai tuoi padri, ad Abramo, a Isacco e a Giacobbe."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/יָדַעְתָּ֗ כִּ֠י לֹ֤א בְ/צִדְקָֽתְ/ךָ֙ יְהוָ֣ה אֱ֠לֹהֶי/ךָ נֹתֵ֨ן לְ/ךָ֜ אֶת הָ/אָ֧רֶץ הַ/טּוֹבָ֛ה הַ/זֹּ֖את לְ/רִשְׁתָּ֑/הּ כִּ֥י עַם קְשֵׁה עֹ֖רֶף אָֽתָּה׃",
+        "LXX": "καὶ γνώσῃ σήμερον ὅτι οὐχὶ διὰ τὰς δικαιοσύνας σου Κύριος ὁ θεός σου δίδωσίν σοι τὴν γῆν τὴν ἀγαθὴν ταύτην κληρονομῆσαι, ὅτι λαὸς σκληροτράχηλος εἶ.",
+        "VUL": "Scito ergo quod non propter justitias tuas Dominus Deus tuus dederit tibi terram hanc optimam in possessionem, cum durissimæ cervicis sis populus.",
+        "SYN": "посему знай [ныне], что не за праведность твою Господь, Бог твой, дает тебе овладеть сею доброю землею, ибо ты народ жестоковыйный.",
+        "NEO": "Sache donc que ce n’est pas à cause de ta justice que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te donne ce bon pays en propriété ; car tu es un peuple au cou raide.",
+        "NAB": "Understand this, therefore: it is not because of your merits that the LORD, your God, is giving you this good land to possess, for you are a stiff-necked people.",
+        "VAT_ES": "Reconoce, entonces, que el Señor no te da la posesión de esa hermosa tierra a causa de tu justicia, porque tú eres un pueblo obstinado.",
+        "CEI": "Sappi dunque che non a causa della tua giustizia il Signore tuo Dio ti dà il possesso di questo fertile paese; anzi tu sei un popolo di dura cervice."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "זְכֹר֙ אַל תִּשְׁכַּ֔ח אֵ֧ת אֲשֶׁר הִקְצַ֛פְתָּ אֶת יְהוָ֥ה אֱלֹהֶ֖י/ךָ בַּ/מִּדְבָּ֑ר לְ/מִן הַ/יּ֞וֹם אֲשֶׁר יָצָ֣אתָ מֵ/אֶ֣רֶץ מִצְרַ֗יִם עַד בֹּֽאֲ/כֶם֙ עַד הַ/מָּק֣וֹם הַ/זֶּ֔ה מַמְרִ֥ים הֱיִיתֶ֖ם עִם יְהוָֽה׃",
+        "LXX": "μνήσθητι μὴ ἐπιλάθῃ ὅσα παρώξυνας Κύριον τὸν θεόν σου ἐν τῇ ἐρήμῳ· ἀφ’ ἧς ἡμέρας ἐξήλθετε ἐξ Αἰγύπτου καὶ ἤλθετε εἰς τὸν τόπον τοῦτον, ἀπειθοῦντες διετελεῖτε τὰ πρὸς Κύριον.",
+        "VUL": "Memento, et ne obliviscaris, quomodo ad iracundiam provocaveris Dominum Deum tuum in solitudine. Ex eo die, quo egressus es ex Ægypto usque ad locum istum, semper adversum Dominum contendisti.",
+        "SYN": "Помни, не забудь, сколько ты раздражал Господа, Бога твоего, в пустыне: с самого того дня, как вышел ты из земли Египетской, и до самого прихода вашего на место сие вы противились Господу.",
+        "NEO": "Souviens-toi, n’oublie pas combien tu as irrité \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, dans le désert. Depuis le jour où tu es sorti du pays d’Égypte jusqu’à votre arrivée dans ce lieu, vous avez été rebelles envers \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "\"Bear in mind and do not forget how you angered the LORD, your God, in the desert. From the day you left the land of Egypt until you arrived in this place, you have been rebellious toward the LORD.",
+        "VAT_ES": "Acuérdate de esto, no lo olvides: has irritado en el desierto al Señor, tu Dios. Desde el día en que salieron de Egipto hasta que llegaron a este lugar, ustedes han sido rebeldes al Señor.",
+        "CEI": "Ricordati, non dimenticare, come hai provocato all'ira il Signore tuo Dio nel deserto. Da quando usciste dal paese d'Egitto fino al vostro arrivo in questo luogo, siete stati ribelli al Signore."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וּ/בְ/חֹרֵ֥ב הִקְצַפְתֶּ֖ם אֶת יְהוָ֑ה וַ/יִּתְאַנַּ֧ף יְהוָ֛ה בָּ/כֶ֖ם לְ/הַשְׁמִ֥יד אֶתְ/כֶֽם׃",
+        "LXX": "καὶ ἐν Χωρὴβ παρωξύνατε Κύριον, καὶ ἐθυμώθη ἐφ’ ὑμῖν ἐξολεθρεῦσαι ὑμᾶς,",
+        "VUL": "Nam et in Horeb provocasti eum, et iratus delere te voluit,",
+        "SYN": "И при Хориве вы раздражали Господа, и прогневался на вас Господь, так что _хотел_ истребить вас,",
+        "NEO": "Même en Horeb vous avez excité \\+w Yahweh|strong=\"H3068\"\\+w** à la colère, et \\+w Yahweh|strong=\"H3068\"\\+w** fut irrité contre vous jusqu’à vouloir vous détruire.",
+        "NAB": "At Horeb you so provoked the LORD that he was angry enough to destroy you,",
+        "VAT_ES": "Ya en el Horeb lo irritaron, y él se indignó tanto que estuvo a punto de destruirlos.",
+        "CEI": "Anche sull'Oreb provocaste all'ira il Signore; il Signore si adirò contro di voi fino a volere la vostra distruzione."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "בַּ/עֲלֹתִ֣/י הָ/הָ֗רָ/ה לָ/קַ֜חַת לוּחֹ֤ת הָֽ/אֲבָנִים֙ לוּחֹ֣ת הַ/בְּרִ֔ית אֲשֶׁר כָּרַ֥ת יְהוָ֖ה עִמָּ/כֶ֑ם וָ/אֵשֵׁ֣ב בָּ/הָ֗ר אַרְבָּעִ֥ים יוֹם֙ וְ/אַרְבָּעִ֣ים לַ֔יְלָה לֶ֚חֶם לֹ֣א אָכַ֔לְתִּי וּ/מַ֖יִם לֹ֥א שָׁתִֽיתִי׃",
+        "LXX": "ἀναβαίνοντός μου εἰς τὸ ὄρος λαβεῖν τὰς πλάκας τὰς λιθίνας, πλάκας διαθήκης ἃς διέθετο Κύριος πρὸς ὑμᾶς· καὶ κατεγινόμην ἐν τῷ ὄρει τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας· ἄρτον οὐκ ἔφαγον καὶ ὕδωρ οὐκ ἔπιον.",
+        "VUL": "quando ascendi in montem, ut acciperem tabulas lapideas, tabulas pacti quod pepigit vobiscum Dominus : et perseveravi in monte quadraginta diebus ac noctibus, panem non comedens, et aquam non bibens.",
+        "SYN": "когда я взошел на гору, чтобы принять скрижали каменные, скрижали завета, который поставил Господь с вами, и пробыл на горе сорок дней и сорок ночей, хлеба не ел и воды не пил,",
+        "NEO": "Lorsque je montai sur la montagne, pour recevoir les tables de pierre, les tables de l’alliance que \\+w Yahweh|strong=\"H3068\"\\+w** avait conclue avec vous, je demeurai sur la montagne quarante jours et quarante nuits, sans manger de pain et sans boire d’eau ;",
+        "NAB": "when I had gone up the mountain to receive the stone tablets of the covenant which the LORD made with you. Meanwhile I stayed on the mountain forty days and forty nights without eating or drinking,",
+        "VAT_ES": "Eso sucedió cuando yo subí a la montaña para recibir las tablas de piedra, las tablas de la alianza que el Señor hizo con ustedes. Yo estuve arriba, en la montaña cuarenta días y cuarenta noches, sin comer ni beber.",
+        "CEI": "Quando io salii sul monte a prendere le tavole di pietra, le tavole dell'alleanza che il Signore aveva stabilita con voi, rimasi sul monte quaranta giorni e quaranta notti, senza mangiare pane né bere acqua;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֨ן יְהוָ֜ה אֵלַ֗/י אֶת שְׁנֵי֙ לוּחֹ֣ת הָֽ/אֲבָנִ֔ים כְּתֻבִ֖ים בְּ/אֶצְבַּ֣ע אֱלֹהִ֑ים וַ/עֲלֵי/הֶ֗ם כְּֽ/כָל הַ/דְּבָרִ֡ים אֲשֶׁ֣ר דִּבֶּר֩ יְהוָ֨ה עִמָּ/כֶ֥ם בָּ/הָ֛ר מִ/תּ֥וֹךְ הָ/אֵ֖שׁ בְּ/י֥וֹם הַ/קָּהָֽל׃",
+        "LXX": "καὶ ἔδωκεν Κύριος ἐμοὶ τὰς δύο πλάκας τὰς λιθίνας, γεγραμμένας ἐν τῷ δακτύλῳ τοῦ θεοῦ, καὶ ἐπ’ αὐταῖς ἐγέγραπτο πάντες οἱ λόγοι οὓς ἐλάλησεν Κύριος πρὸς ὑμᾶς ἐν τῷ ὄρει ἡμέρᾳ ἐκκλησίας·",
+        "VUL": "Deditque mihi Dominus duas tabulas lapideas scriptas digito Dei, et continentes omnia verba quæ vobis locutus est in monte de medio ignis, quando concio populi congregata est.",
+        "SYN": "и дал мне Господь две скрижали каменные, написанные перстом Божиим, а на них [написаны были] все слова, которые изрек вам Господь на горе из среды огня в день собрания.",
+        "NEO": "et \\+w Yahweh|strong=\"H3068\"\\+w** me donna les deux tables de pierre écrites du doigt de Dieu, et contenant toutes les paroles que \\+w Yahweh|strong=\"H3068\"\\+w** vous avait dites sur la montagne, du milieu du feu, le jour de l’assemblée.",
+        "NAB": "till the LORD gave me the two tablets of stone inscribed, by God's own finger, with a copy of all the words that the LORD spoke to you on the mountain from the midst of the fire on the day of the assembly.",
+        "VAT_ES": "Entonces el Señor me entregó las dos tablas de piedra, escritas por el dedo de Dios, donde estaban todas las palabras que él les dirigió en la montaña, desde el fuego, el día de la asamblea.",
+        "CEI": "il Signore mi diede le due tavole di pietra, scritte dal dito di Dio, sulle quali stavano tutte le parole che il Signore vi aveva dette sul monte, in mezzo al fuoco, il giorno dell'assemblea."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י מִ/קֵּץ֙ אַרְבָּעִ֣ים י֔וֹם וְ/אַרְבָּעִ֖ים לָ֑יְלָה נָתַ֨ן יְהוָ֜ה אֵלַ֗/י אֶת שְׁנֵ֛י לֻחֹ֥ת הָ/אֲבָנִ֖ים לֻח֥וֹת הַ/בְּרִֽית׃",
+        "LXX": "καὶ ἐγένετο διὰ τεσσεράκοντα ἡμερῶν καὶ τεσσεράκοντα νυκτῶν ἔδωκεν Κύριος ἐμοὶ τὰς δύο πλάκας τὰς λιθίνας, πλάκας διαθήκης.",
+        "VUL": "Cumque transissent quadraginta dies, et totidem noctes, dedit mihi Dominus duas tabulas lapideas, tabulas fderis,",
+        "SYN": "По окончании же сорока дней и сорока ночей дал мне Господь две скрижали каменные, скрижали завета,",
+        "NEO": "Au bout des quarante jours et des quarante nuits, \\+w Yahweh|strong=\"H3068\"\\+w** me donna les deux tables de pierre, les tables de l’alliance.",
+        "NAB": "Then, at the end of the forty days and forty nights, when the LORD had given me the two stone tablets of the covenant,",
+        "VAT_ES": "Al cabo de esos cuarenta días, cuando el Señor me entregó las dos tablas de piedras, las tablas de la alianza.",
+        "CEI": "Alla fine dei quaranta giorni e delle quaranta notti, il Signore mi diede le due tavole di pietra, le tavole dell'alleanza."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֜ה אֵלַ֗/י ק֣וּם רֵ֤ד מַהֵר֙ מִ/זֶּ֔ה כִּ֚י שִׁחֵ֣ת עַמְּ/ךָ֔ אֲשֶׁ֥ר הוֹצֵ֖אתָ מִ/מִּצְרָ֑יִם סָ֣רוּ מַהֵ֗ר מִן הַ/דֶּ֨רֶךְ֙ אֲשֶׁ֣ר צִוִּיתִ֔/ם עָשׂ֥וּ לָ/הֶ֖ם מַסֵּכָֽה׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς μέ Ἀνάστηθι, κατάβηθι τὸ τάχος ἐντεῦθεν, ὅτι ἠνόμησεν ὁ λαός σου οὓς ἐξήγαγες ἐκ γῆς Αἰγύπτου· παρέβησαν ταχὺ ἐκ τῆς ὁδοῦ ἧς ἐνετείλω αὐτοῖς, καὶ ἐποίησαν ἑαυτοῖς χώνευμα.",
+        "VUL": "dixitque mihi : Surge, et descende hinc cito : quia populus tuus, quem eduxisti de Ægypto, deseruerunt velociter viam, quam demonstrasti eis, feceruntque sibi conflatile.",
+        "SYN": "и сказал мне Господь: встань, пойди скорее отсюда, ибо развратился народ твой, который ты вывел из Египта; скоро уклонились они от пути, который Я заповедал им; они сделали себе литый истукан.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** me dit alors : « Lève-toi, descends vite d’ici, car ton peuple, que tu as fait sortir d’Égypte, s’est corrompu. Ils se sont promptement écartés de la voie que je leur avais prescrite ; ils se sont fait une image de fonte. »",
+        "NAB": "he said to me, 'Go down from here now, quickly, for your people whom you have brought out of Egypt have become depraved; they have already turned aside from the way I pointed out to them and have made for themselves a molten idol.",
+        "VAT_ES": "me dijo: «Baja de la montaña ahora mismo, porque tu pueblo, ese que sacaste de Egipto, se ha pervertido. Ellos se apartaron rápidamente del camino que yo les había trazado y se han fabricado una estatua de metal fundido».",
+        "CEI": "Poi il Signore mi disse: Scendi in fretta di qui, perché il tuo popolo, che hai fatto uscire dall'Egitto, si è traviato; presto si sono allontanati dalla via che io avevo loro indicata: si sono fatti un idolo di metallo fuso."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר יְהוָ֖ה אֵלַ֣/י לֵ/אמֹ֑ר רָאִ֨יתִי֙ אֶת הָ/עָ֣ם הַ/זֶּ֔ה וְ/הִנֵּ֥ה עַם קְשֵׁה עֹ֖רֶף הֽוּא׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς μέ Λελάληκα πρὸς σὲ ἅπαξ καὶ δὶς λέγων Ἑώρακα τὸν λαὸν τοῦτον, καὶ ἰδοὺ λαὸς σκληροτράχηλός ἐστιν·",
+        "VUL": "Rursumque ait Dominus ad me : Cerno quod populus iste duræ cervicis sit :",
+        "SYN": "И сказал мне Господь: [Я говорил тебе один и другой раз:] вижу Я народ сей, вот он народ жестоковыйный;",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** me dit : « Je vois que ce peuple est un peuple au cou raide.",
+        "NAB": "I have seen now how stiff-necked this people is,' the LORD said to me.",
+        "VAT_ES": "Después agregó» «Ya veo que este es un pueblo obstinado.",
+        "CEI": "Il Signore mi aggiunse: Io ho visto questo popolo; ecco, è un popolo di dura cervice;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הֶ֤רֶף מִמֶּ֨/נִּי֙ וְ/אַשְׁמִידֵ֔/ם וְ/אֶמְחֶ֣ה אֶת שְׁמָ֔/ם מִ/תַּ֖חַת הַ/שָּׁמָ֑יִם וְ/אֶֽעֱשֶׂה֙ אֽוֹתְ/ךָ֔ לְ/גוֹי עָצ֥וּם וָ/רָ֖ב מִמֶּֽ/נּוּ׃",
+        "LXX": "καὶ νῦν ἔασόν με ἐξολεθρεῦσαι αὐτούς, καὶ ἐξαλείψω τὸ ὄνομα αὐτῶν ὑποκάτωθεν τοῦ οὐρανοῦ, καὶ ποιήσω σε εἰς ἔθνος μέγα καὶ ἰσχυρὸν καὶ πολὺ μᾶλλον ἢ τοῦτο.",
+        "VUL": "dimitte me ut conteram eum, et deleam nomen ejus de sub cælo, et constituam te super gentem, quæ hac major et fortior sit.",
+        "SYN": "не удерживай Меня, и Я истреблю их, и изглажу имя их из поднебесной, а от тебя произведу народ, _который_ _будет_ [больше,] сильнее и многочисленнее их.",
+        "NEO": "Laisse-moi, que je les détruise et que j’efface leur nom de dessous les cieux ; et je ferai de toi une nation plus puissante et plus nombreuse que ce peuple. »",
+        "NAB": "'Let me be, that I may destroy them and blot out their name from under the heavens. I will then make of you a nation mightier and greater than they.'",
+        "VAT_ES": "Por eso, déjame que los destruya y que borre de la tierra hasta su nombre. De ti, en cambio, suscitaré una nación más numerosa y fuerte que ellos».",
+        "CEI": "lasciami fare; io li distruggerò e cancellerò il loro nome sotto i cieli e farò di te una nazione più potente e più grande di loro."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וָ/אֵ֗פֶן וָֽ/אֵרֵד֙ מִן הָ/הָ֔ר וְ/הָ/הָ֖ר בֹּעֵ֣ר בָּ/אֵ֑שׁ וּ/שְׁנֵי֙ לֻחֹ֣ת הַ/בְּרִ֔ית עַ֖ל שְׁתֵּ֥י יָדָֽ/י׃",
+        "LXX": "καὶ ἐπιστρέψας κατέβην ἐκ τοῦ ὄρους, καὶ τὸ ὄρος ἐκαίετο πυρὶ ἕως τοῦ οὐρανοῦ, καὶ αἱ δύο πλάκες ἐπὶ ταῖς δυσὶ χερσίν μου.",
+        "VUL": "Cumque de monte ardente descenderem, et duas tabulas fderis utraque tenerem manu,",
+        "SYN": "Я обратился и пошел с горы, гора же горела огнем; две скрижали завета _были_ в обеих руках моих;",
+        "NEO": "Je me tournai et je descendis de la montagne, et la montagne était toute en feu, et j’avais dans mes deux mains les deux tables de l’alliance.",
+        "NAB": "\"When I had come down again from the blazing, fiery mountain, with the two tablets of the covenant in both my hands,",
+        "VAT_ES": "Yo me di vuelta y bajé de la montaña, que ardía envuelta en llamas, llevando en mis manos las tablas de la alianza.",
+        "CEI": "Così io mi volsi e scesi dal monte, dal monte tutto in fiamme, tenendo nelle mani le due tavole dell'alleanza."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וָ/אֵ֗רֶא וְ/הִנֵּ֤ה חֲטָאתֶם֙ לַ/יהוָ֣ה אֱלֹֽהֵי/כֶ֔ם עֲשִׂיתֶ֣ם לָ/כֶ֔ם עֵ֖גֶל מַסֵּכָ֑ה סַרְתֶּ֣ם מַהֵ֔ר מִן הַ/דֶּ֕רֶךְ אֲשֶׁר צִוָּ֥ה יְהוָ֖ה אֶתְ/כֶֽם׃",
+        "LXX": "καὶ ἰδὼν ὅτι ἡμάρτετε ἐναντίον Κυρίου τοῦ θεοῦ ὑμῶν, καὶ ἐποιήσατε ὑμῖν ἑαυτοῖς χωνευτόν, καὶ παρέβητε ἀπὸ τῆς ὁδοῦ ἧς ἐνετείλατο ὑμῖν Κύριος,",
+        "VUL": "vidissemque vos peccasse Domino Deo vestro, et fecisse vobis vitulum conflatilem, ac deseruisse velociter viam ejus, quam vobis ostenderat :",
+        "SYN": "и видел я, что вы согрешили против Господа, Бога вашего, сделали себе литого тельца, скоро уклонились от пути, которого [держаться] заповедал вам Господь;",
+        "NEO": "Je regardai, et voici que vous aviez péché contre \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu ; vous vous étiez fait un veau de fonte, et vous vous étiez promptement écartés de la voie que \\+w Yahweh|strong=\"H3068\"\\+w** vous avait prescrite.",
+        "NAB": "I saw how you had sinned against the LORD, your God: you had already turned aside from the way which the LORD had pointed out to you by making for yourselves a molten calf!",
+        "VAT_ES": "Entonces vi que ustedes habían pecado contra el Señor, su Dios, haciéndose un ternero de metal fundido y apartándose rápidamente del camino que él les había trazado.",
+        "CEI": "Guardai ed ecco, avevate peccato contro il Signore vostro Dio; vi eravate fatto un vitello di metallo fuso; avevate ben presto lasciato la via che il Signore vi aveva imposta."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וָ/אֶתְפֹּשׂ֙ בִּ/שְׁנֵ֣י הַ/לֻּחֹ֔ת וָֽ/אַשְׁלִכֵ֔/ם מֵ/עַ֖ל שְׁתֵּ֣י יָדָ֑/י וָ/אֲשַׁבְּרֵ֖/ם לְ/עֵינֵי/כֶֽם׃",
+        "LXX": "καὶ ἐπιλαβόμενος τῶν δύο πλακῶν ἔρριψα αὐτὰς ἀπὸ τῶν δύο χειρῶν μου καὶ συνέτριψα ἐναντίον ὑμῶν.",
+        "VUL": "projeci tabulas de manibus meis, confregique eas in conspectu vestro.",
+        "SYN": "и взял я обе скрижали, и бросил их из обеих рук своих, и разбил их пред глазами вашими.",
+        "NEO": "Alors, saisissant les deux tables, je les jetai de mes mains et je les brisai sous vos yeux.",
+        "NAB": "Raising the two tablets with both hands I threw them from me and broke them before your eyes.",
+        "VAT_ES": "Por eso tomé las dos tablas de piedras, las arrojé violentamente, y las hice añicos en presencia de todos.",
+        "CEI": "Allora afferrai le due tavole, le gettai con le mie mani e le spezzai sotto i vostri occhi."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וָֽ/אֶתְנַפַּל֩ לִ/פְנֵ֨י יְהוָ֜ה כָּ/רִאשֹׁנָ֗ה אַרְבָּעִ֥ים יוֹם֙ וְ/אַרְבָּעִ֣ים לַ֔יְלָה לֶ֚חֶם לֹ֣א אָכַ֔לְתִּי וּ/מַ֖יִם לֹ֣א שָׁתִ֑יתִי עַ֤ל כָּל חַטַּאתְ/כֶם֙ אֲשֶׁ֣ר חֲטָאתֶ֔ם לַ/עֲשׂ֥וֹת הָ/רַ֛ע בְּ/עֵינֵ֥י יְהוָ֖ה לְ/הַכְעִיסֽ/וֹ׃",
+        "LXX": "καὶ ἐδεήθην ἐναντίον Κυρίου δεύτερον καθάπερ καὶ τὸ πρότερον τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας· ἄρτον οὐκ ἔφαγον καὶ ὕδωρ οὐκ ἔπιον· περὶ πασῶν τῶν ἁμαρτιῶν ὑμῶν ὧν ἡμάρτετε, ποιῆσαι τὸ πονηρὸν ἐναντίον Κυρίου τοῦ θεοῦ παροξῦναι αὐτόν.",
+        "VUL": "Et procidi ante Dominum sicut prius, quadraginta diebus et noctibus panem non comedens, et aquam non bibens, propter omnia peccata vestra quæ gessistis contra Dominum, et eum ad iracundiam provocastis :",
+        "SYN": "И [вторично] повергшись пред Господом, молился я, как прежде, сорок дней и сорок ночей, хлеба не ел и воды не пил, за все грехи ваши, которыми вы согрешили, сделав зло в очах Господа [Бога вашего] и раздражив Его;",
+        "NEO": "Et je tombai devant \\+w Yahweh|strong=\"H3068\"\\+w**, comme la première fois, pendant quarante jours et quarante nuits, sans manger de pain, et sans boire d’eau, à cause de tous les péchés que vous aviez commis en faisant ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**, de manière à l’irriter.",
+        "NAB": "Then, as before, I lay prostrate before the LORD for forty days and forty nights without eating or drinking, because of all the sin you had committed in the sight of the LORD and the evil you had done to provoke him.",
+        "VAT_ES": "Luego me postré delante del Señor, y permanecí cuarenta días y cuarenta noches sin comer ni beber, como lo había hecho la vez anterior. Lo hice a causa de todos los pecados que ustedes habían cometido, haciendo lo que es malo a los ojos del Señor y provocando su enojo.",
+        "CEI": "Poi mi prostrai davanti al Signore, come avevo fatto la prima volta, per quaranta giorni e per quaranta notti; non mangiai pane né bevvi acqua, a causa del gran peccato che avevate commesso, facendo ciò che è male agli occhi del Signore per provocarlo."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כִּ֣י יָגֹ֗רְתִּי מִ/פְּנֵ֤י הָ/אַף֙ וְ/הַ֣/חֵמָ֔ה אֲשֶׁ֨ר קָצַ֧ף יְהוָ֛ה עֲלֵי/כֶ֖ם לְ/הַשְׁמִ֣יד אֶתְ/כֶ֑ם וַ/יִּשְׁמַ֤ע יְהוָה֙ אֵלַ֔/י גַּ֖ם בַּ/פַּ֥עַם הַ/הִֽוא׃",
+        "LXX": "καὶ ἔκφοβός εἰμι διὰ τὴν ὀργὴν καὶ τὸν θυμόν, ὅτι παρωξύνθη Κύριος ἐφ’ ὑμῖν ἐξολεθρεῦσαι ὑμᾶς· καὶ εἰσήκουσεν Κύριος ἐμοῦ καὶ ἐν τῷ καιρῷ τούτῳ.",
+        "VUL": "timui enim indignationem et iram illius, qua adversum vos concitatus, delere vos voluit. Et exaudivit me Dominus etiam hac vice.",
+        "SYN": "ибо я страшился гнева и ярости, которыми Господь прогневался на вас _и_ _хотел_ погубить вас. И послушал меня Господь и на сей раз.",
+        "NEO": "Car j’étais effrayé en voyant la colère et la fureur dont \\+w Yahweh|strong=\"H3068\"\\+w** était animé contre vous, jusqu’à vouloir vous détruire ; mais cette fois encore \\+w Yahweh|strong=\"H3068\"\\+w** m’exauça.",
+        "NAB": "For I dreaded the fierce anger of the LORD against you: his wrath would destroy you. Yet once again the LORD listened to me.",
+        "VAT_ES": "Porque yo sentía un gran temor ante la ira y la indignación del Señor que se había desatado contra ustedes, hasta el punto de querer aniquilarlos. Pero él me escuchó una vez más.",
+        "CEI": "Io avevo paura di fronte all'ira e al furore di cui il Signore era acceso contro di voi, al punto di volervi distruggere. Ma il Signore mi esaudì anche quella volta."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וּֽ/בְ/אַהֲרֹ֗ן הִתְאַנַּ֧ף יְהוָ֛ה מְאֹ֖ד לְ/הַשְׁמִיד֑/וֹ וָֽ/אֶתְפַּלֵּ֛ל גַּם בְּעַ֥ד אַהֲרֹ֖ן בָּ/עֵ֥ת הַ/הִֽוא׃",
+        "LXX": "καὶ ἐπὶ Ἀαρὼν ἐθυμώθη ἐξολεθρεῦσαι αὐτόν, καὶ ηὐξάμην καὶ περὶ Ἀαρὼν ἐν τῷ καιρῷ ἐκείνῳ.",
+        "VUL": "Adversum Aaron quoque vehementer iratus, voluit eum conterere, et pro illo similiter deprecatus sum.",
+        "SYN": "И на Аарона весьма прогневался Господь _и_ _хотел_ погубить его; но я молился и за Аарона в то время.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** était aussi fortement irrité contre Aaron, au point de vouloir le faire périr, et j’intercédai aussi pour Aaron en ce temps-là.",
+        "NAB": "With Aaron, too, the LORD was deeply angry, and would have killed him had I not prayed for him also at that time.",
+        "VAT_ES": "El Señor estaba tan irritado contra Aarón que quería destruirlo, y en aquella oportunidad también intercedí por él.",
+        "CEI": "Anche contro Aronne il Signore si era fortemente adirato, al punto di volerlo far perire; io pregai in quell'occasione anche per Aronne."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְֽ/אֶת חַטַּאתְ/כֶ֞ם אֲשֶׁר עֲשִׂיתֶ֣ם אֶת הָ/עֵ֗גֶל לָקַחְתִּי֮ וָ/אֶשְׂרֹ֣ף אֹת֣/וֹ בָּ/אֵשׁ֒ וָ/אֶכֹּ֨ת אֹת֤/וֹ טָחוֹן֙ הֵיטֵ֔ב עַ֥ד אֲשֶׁר דַּ֖ק לְ/עָפָ֑ר וָֽ/אַשְׁלִךְ֙ אֶת עֲפָר֔/וֹ אֶל הַ/נַּ֖חַל הַ/יֹּרֵ֥ד מִן הָ/הָֽר׃",
+        "LXX": "καὶ τὴν ἁμαρτίαν ὑμῶν ἣν ἐποιήσατε, τὸν μόσχον, ἔλαβον αὐτὸν καὶ κατέκαυσα αὐτὸν ἐν πυρί, καὶ συνέκοψα αὐτὸν καταλέσας σφόδρα ἕως ἐγένετο λεπτόν· καὶ ἐγένετο ὡσεὶ κονιορτός, καὶ ἔρριψα τὸν κονιορτὸν εἰς τὸν χειμάρρουν τὸν καταβαίνοντα ἐκ τοῦ ὄρους.",
+        "VUL": "Peccatum autem vestrum quod feceratis, id est, vitulum, arripiens, igne combussi, et in frusta comminuens, omninoque in pulverem redigens, projeci in torrentem, qui de monte descendit.",
+        "SYN": "Грех же ваш, который вы сделали, -- тельца я взял, сожег его в огне, разбил его и всего истер до того, что он стал мелок, как прах, и я бросил прах сей в поток, текущий с горы.",
+        "NEO": "Je pris le péché que vous aviez fait, le veau d’or, je le brûlai au feu, je le broyai jusqu’à ce qu’il fût bien réduit en poudre, et je jetai cette poudre dans le torrent qui descend de la montagne.",
+        "NAB": "Then, taking the calf, the sinful object you had made, and fusing it with fire, I ground it down to powder as fine as dust, which I threw into the wadi that went down the mountainside.",
+        "VAT_ES": "Y a esa obra del pecado, a ese ternero que ustedes habían fabricado, lo tomé, lo quemé y lo molí, hasta convertirlo en polvo muy fino, y después lo arrojé en el torrente que baja de la montaña.",
+        "CEI": "Poi presi l'oggetto del vostro peccato, il vitello che avevate fatto, lo bruciai nel fuoco, lo feci a pezzi, frantumandolo finché fosse ridotto in polvere, e buttai quella polvere nel torrente che scende dal monte."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וּ/בְ/תַבְעֵרָה֙ וּ/בְ/מַסָּ֔ה וּ/בְ/קִבְרֹ֖ת הַֽתַּאֲוָ֑ה מַקְצִפִ֥ים הֱיִיתֶ֖ם אֶת יְהוָֽה׃",
+        "LXX": "καὶ ἐν τῷ Ἐνπυρισμῷ καὶ ἐν τῷ Πειρασμῷ καὶ ἐν τοῖς Μνήμασιν τῆς ἐπιθυμίας παροξύνοντες ἦτε Κύριον.",
+        "VUL": "In incendio quoque, et in tentatione, et in Sepulchris concupiscentiæ provocastis Dominum :",
+        "SYN": "И в Тавере, в Массе и в Киброт-Гаттааве вы раздражили Господа [Бога вашего].",
+        "NEO": "A Tabéera, à Massah et à Kibroth-Hattaava, vous avez encore excité \\+w Yahweh|strong=\"H3068\"\\+w** à la colère.",
+        "NAB": "\"At Taberah, at Massah, and at Kibroth-hattaavah likewise, you provoked the LORD to anger.",
+        "VAT_ES": "Además, ustedes irritaron al Señor en Taberá, en Masá y en Quibrot Hataavá.",
+        "CEI": "Anche a Tabera, a Massa e a Kibrot-Taava, voi provocaste il Signore."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וּ/בִ/שְׁלֹ֨חַ יְהוָ֜ה אֶתְ/כֶ֗ם מִ/קָּדֵ֤שׁ בַּרְנֵ֨עַ֙ לֵ/אמֹ֔ר עֲלוּ֙ וּ/רְשׁ֣וּ אֶת הָ/אָ֔רֶץ אֲשֶׁ֥ר נָתַ֖תִּי לָ/כֶ֑ם וַ/תַּמְר֗וּ אֶת פִּ֤י יְהוָה֙ אֱלֹ֣הֵי/כֶ֔ם וְ/לֹ֤א הֶֽאֱמַנְתֶּם֙ ל֔/וֹ וְ/לֹ֥א שְׁמַעְתֶּ֖ם בְּ/קֹלֽ/וֹ׃",
+        "LXX": "καὶ ὅτε ἐξαπέστειλεν Κύριος ὑμᾶς ἐκ Καδὴς Βαρνὴ λέγων Ἀνάβητε καὶ κληρονομήσατε τὴν γῆν ἣν δίδωμι ὑμῖν, καὶ ἠπειθήσατε τῷ ῥήματι Κυρίου τοῦ θεοῦ ὑμῶν, καὶ οὐκ ἐπιστεύσατε αὐτῷ, καὶ οὐκ εἰσηκούσατε τῆς φωνῆς αὐτοῦ.",
+        "VUL": "et quando misit vos de Cadesbarne, dicens : Ascendite, et possidete terram, quam dedi vobis, et contempsistis imperium Domini Dei vestri, et non credidistis ei, neque vocem ejus audire voluistis :",
+        "SYN": "И когда посылал вас Господь из Кадес-Варни, говоря: пойдите, овладейте землею, которую Я даю вам, -- то вы воспротивились повелению Господа Бога вашего, и не поверили Ему, и не послушали гласа Его.",
+        "NEO": "Et lorsque \\+w Yahweh|strong=\"H3068\"\\+w** vous envoya de Cadès-Barné, en disant : Montez et prenez possession du pays que je vous donne, vous fûtes rebelles à l’ordre de \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, vous n’eûtes pas foi en lui et vous n’obéîtes pas à sa voix.",
+        "NAB": "And when he sent you up from Kadesh-barnea to take possession of the land he was giving you, you rebelled against this command of the LORD, your God, and would not trust or obey him.",
+        "VAT_ES": "Y cuando el Señor les ordenó que salieran de Cades Barné, diciéndoles. «Suban a tomar posesión de la tierra que yo les he dado», ustedes se rebelaron contra la orden del Señor, su Dios; no le tuvieron confianza ni le obedecieron.",
+        "CEI": "Quando il Signore volle farvi partire da Kades-Barnea dicendo: Entrate e prendete in possesso il paese che vi dò, voi vi ribellaste all'ordine del Signore vostro Dio, non aveste fede in lui e non obbediste alla sua voce."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "מַמְרִ֥ים הֱיִיתֶ֖ם עִם יְהוָ֑ה מִ/יּ֖וֹם דַּעְתִּ֥/י אֶתְ/כֶֽם׃",
+        "LXX": "ἀπειθοῦντες ἦτε τὰ πρὸς Κύριον ἀπὸ τῆς ἡμέρας ἧς ἐγνώσθη ὑμῖν.",
+        "VUL": "sed semper fuistis rebelles a die qua nosse vos cpi.",
+        "SYN": "Вы были непокорны Господу с того самого дня, как я стал знать вас.",
+        "NEO": "Vous avez été rebelles à \\+w Yahweh|strong=\"H3068\"\\+w** depuis le jour où je vous ai connus.",
+        "NAB": "Ever since I have known you, you have been rebels against the LORD.",
+        "VAT_ES": "Rebeldes! Eso es lo que ustedes han sido para con el Señor, su Dios, desde el día en que los conocí.",
+        "CEI": "Siete stati ribelli al Signore da quando vi ho conosciuto."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וָֽ/אֶתְנַפַּ֞ל לִ/פְנֵ֣י יְהוָ֗ה אֵ֣ת אַרְבָּעִ֥ים הַ/יּ֛וֹם וְ/אֶת אַרְבָּעִ֥ים הַ/לַּ֖יְלָה אֲשֶׁ֣ר הִתְנַפָּ֑לְתִּי כִּֽי אָמַ֥ר יְהוָ֖ה לְ/הַשְׁמִ֥יד אֶתְ/כֶֽם׃",
+        "LXX": "καὶ ἐδεήθην ἐναντίον Κυρίου τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας ὅσας ἐδεήθην, εἶπεν γὰρ Κύριος ἐξολεθρεῦσαι ὑμᾶς·",
+        "VUL": "Et jacui coram Domino quadraginta diebus ac noctibus, quibus eum suppliciter deprecabar, ne deleret vos ut fuerat comminatus :",
+        "SYN": "И повергшись пред Господом, умолял я сорок дней и сорок ночей, в которые я молился, ибо Господь хотел погубить вас;",
+        "NEO": "Je me prosternai donc devant \\+w Yahweh|strong=\"H3068\"\\+w** pendant les quarante jours et les quarante nuits que je restai prosterné, car \\+w Yahweh|strong=\"H3068\"\\+w** parlait de vous détruire.",
+        "NAB": "\"Those forty days, then, and forty nights, I lay prostrate before the LORD, because he had threatened to destroy you.",
+        "VAT_ES": "A pesar de todo, yo me postré delante del Señor y así estuve cuarenta días y cuarenta noches, porque el Señor amenazaba con destruirlos.",
+        "CEI": "Io stetti prostrato davanti al Signore, quei quaranta giorni e quelle quaranta notti, perché il Signore aveva minacciato di distruggervi."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וָ/אֶתְפַּלֵּ֣ל אֶל יְהוָה֮ וָ/אֹמַר֒ אֲדֹנָ֣/י יְהוִ֗ה אַל תַּשְׁחֵ֤ת עַמְּ/ךָ֙ וְ/נַחֲלָ֣תְ/ךָ֔ אֲשֶׁ֥ר פָּדִ֖יתָ בְּ/גָדְלֶ֑/ךָ אֲשֶׁר הוֹצֵ֥אתָ מִ/מִּצְרַ֖יִם בְּ/יָ֥ד חֲזָקָֽה׃",
+        "LXX": "καὶ εὐξάμην πρὸς τὸν θεὸν καὶ εἶπα Κύριε βασιλεῦ τῶν θεῶν, μὴ ἐξολεθρεύσῃς τὸν λαόν σου καὶ τὴν μερίδα σου ἣν ἐλυτρώσω, οὓς ἐξήγαγες ἐκ γῆς Αἰγύπτου ἐν τῇ ἰσχύι σου τῇ μεγάλῃ καὶ ἐν τῇ χειρί σου τῇ κραταιᾷ καὶ ἐν τῷ βραχίονί σου τῷ ὑψηλῷ·",
+        "VUL": "et orans dixi : Domine Deus, ne disperdas populum tuum, et hæreditatem tuam, quam redemisti in magnitudine tua, quos eduxisti de Ægypto in manu forti.",
+        "SYN": "и молился я Господу и сказал: Владыка Господи, [Царь богов,] не погубляй народа Твоего и удела Твоего, который Ты избавил величием [крепости] Твоей, который вывел Ты из Египта рукою сильною [и мышцею Твоею высокою];",
+        "NEO": "Je priai \\+w Yahweh|strong=\"H3068\"\\+w** et je dis : « Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**, ne détruisez pas votre peuple, votre héritage, que vous avez racheté par votre grandeur, que vous avez fait sortir d’Égypte par votre main puissante.",
+        "NAB": "This was my prayer to him: O Lord GOD, destroy not your people, the heritage which your majesty has ransomed and brought out of Egypt with your strong hand.",
+        "VAT_ES": "Entonces intercedí ante el Señor con estas palabras: «Señor, no destruyas al pueblo que es tu herencia, ese pueblo que tú has rescatado por tu grandeza, y que hiciste salir de Egipto con mano poderosa.",
+        "CEI": "Pregai il Signore e dissi: Signore Dio, non distruggere il tuo popolo, la tua eredità, che hai riscattato nella tua grandezza, che hai fatto uscire dall'Egitto con mano potente."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "זְכֹר֙ לַ/עֲבָדֶ֔י/ךָ לְ/אַבְרָהָ֥ם לְ/יִצְחָ֖ק וּֽ/לְ/יַעֲקֹ֑ב אַל תֵּ֗פֶן אֶל קְשִׁי֙ הָ/עָ֣ם הַ/זֶּ֔ה וְ/אֶל רִשְׁע֖/וֹ וְ/אֶל חַטָּאתֽ/וֹ׃",
+        "LXX": "μνήσθητι Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακὼβ τῶν θεραπόντων σου οἷς ὤμοσας κατὰ σεαυτοῦ· μὴ ἐπιβλέψῃς ἐπὶ τὴν σκληρότητα τοῦ λαοῦ τούτου καὶ τὰ ἀσεβήματα καὶ τὰ ἁμαρτήματα αὐτῶν·",
+        "VUL": "Recordare servorum tuorum Abraham, Isaac, et Jacob : ne aspicias duritiam populi hujus, et impietatem atque peccatum :",
+        "SYN": "вспомни рабов Твоих, Авраама, Исаака и Иакова, [которым Ты клялся Собою]; не смотри на ожесточение народа сего и на нечестие его и на грехи его,",
+        "NEO": "Souvenez-vous de vos serviteurs, Abraham, Isaac et Jacob ; ne regardez pas à l’opiniâtreté de ce peuple, à sa méchanceté et à son péché,",
+        "NAB": "Remember your servants, Abraham, Isaac and Jacob. Look not upon the stubbornness of this people nor upon their wickedness and sin,",
+        "VAT_ES": "Acuérdate de Abraham, de Isaac y de Jacob, tus servidores, y no tengas en cuenta la obstinación de este pueblo, ni su maldad, ni su pecado.",
+        "CEI": "Ricordati dei tuoi servi Abramo, Isacco e Giacobbe; non guardare alla caparbietà di questo popolo e alla sua malvagità e al suo peccato,"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "פֶּן יֹאמְר֗וּ הָ/אָרֶץ֮ אֲשֶׁ֣ר הוֹצֵאתָ֣/נוּ מִ/שָּׁם֒ מִ/בְּלִי֙ יְכֹ֣לֶת יְהוָ֔ה לַ/הֲבִיאָ֕/ם אֶל הָ/אָ֖רֶץ אֲשֶׁר דִּבֶּ֣ר לָ/הֶ֑ם וּ/מִ/שִּׂנְאָת֣/וֹ אוֹתָ֔/ם הוֹצִיאָ֖/ם לַ/הֲמִתָ֥/ם בַּ/מִּדְבָּֽר׃",
+        "LXX": "μὴ εἴπωσιν οἱ κατοικοῦντες τὴν γῆν ὅθεν ἐξήγαγες ἡμᾶς ἐκεῖθεν λέγοντες Παρὰ τὸ μὴ δύνασθαι Κύριον εἰσαγαγεῖν αὐτοὺς εἰς τὴν γῆν ἣν εἶπεν αὐτοῖς, καὶ παρὰ τὸ μισῆσαι αὐτούς, ἐξήγαγεν αὐτοὺς ἐν τῇ ἐρήμῳ ἀποκτεῖναι αὐτούς.",
+        "VUL": "ne forte dicant habitatores terræ, de qua eduxisti nos : Non poterat Dominus introducere eos in terram, quam pollicitus est eis, et oderat illos : idcirco eduxit, ut interficeret eos in solitudine :",
+        "SYN": "дабы [живущие] в той земле, откуда Ты вывел нас, не сказали: \"Господь не мог ввести их в землю, которую обещал им, и, ненавидя их, вывел Он их, чтоб умертвить их в пустыне\".",
+        "NEO": "de peur que le pays d’où vous nous avez fait sortir ne dise : Parce que \\+w Yahweh|strong=\"H3068\"\\+w** n’avait pas le pouvoir de les faire entrer dans le pays qu’il leur avait promis, et parce qu’il les haïssait, il les a fait sortir pour les faire mourir dans le désert.",
+        "NAB": "lest the people from whose land you have brought us say, 'The LORD was not able to bring them into the land he promised them'; or 'Out of hatred for them, he brought them out to slay them in the desert.'",
+        "VAT_ES": "De lo contrario, se dirá en el país de donde nos hiciste salir: «El Señor es impotente para introducirlos en la tierra que les había prometido, y por el odio que les tiene, los sacó para hacerlos morir en el desierto».",
+        "CEI": "perché il paese da dove ci hai fatti uscire non dica: Poiché il Signore non era in grado di introdurli nella terra che aveva loro promessa e poiché li odiava, li ha fatti uscire di qui per farli morire nel deserto."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/הֵ֥ם עַמְּ/ךָ֖ וְ/נַחֲלָתֶ֑/ךָ אֲשֶׁ֤ר הוֹצֵ֨אתָ֙ בְּ/כֹחֲ/ךָ֣ הַ/גָּדֹ֔ל וּ/בִֽ/זְרֹעֲ/ךָ֖ הַ/נְּטוּיָֽה׃",
+        "LXX": "καὶ οὗτοι λαός σου καὶ κλῆρός σου, οὓς ἐξήγαγες ἐκ γῆς Αἰγύπτου ἐν τῇ ἰσχύι σου τῇ μεγάλῃ καὶ ἐν τῇ χειρί σου τῇ κραταιᾷ καὶ ἐν τῷ βραχίονί σου τῷ ὑψηλῷ.",
+        "VUL": "qui sunt populus tuus et hæreditas tua, quos eduxisti in fortitudine tua magna, et in brachio tuo extento.",
+        "SYN": "А они Твой народ и Твой удел, который Ты вывел [из земли Египетской] силою Твоею великою и мышцею Твоею высокою.",
+        "NEO": "Et pourtant ils sont votre peuple et votre héritage, que vous avez fait sortir d’Égypte par votre grande puissance et par votre bras étendu ! »",
+        "NAB": "They are, after all, your people and your heritage, whom you have brought out by your great power and with your outstretched arm.",
+        "VAT_ES": "Después de todo, ellos son tu pueblo y tu herencia, y tú los libraste con tu gran fuerza y tu brazo poderoso».",
+        "CEI": "Al contrario essi sono il tuo popolo, la tua eredità, che tu hai fatto uscire dall'Egitto con grande potenza e con braccio teso."
+      }
+    }
+  }
+}

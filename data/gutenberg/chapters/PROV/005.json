@@ -1,0 +1,429 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PROV_005",
+  "book_key": "PROV",
+  "sequence": 5,
+  "chapter_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בְּ֭נִ/י לְ/חָכְמָתִ֣/י הַקְשִׁ֑יבָ/ה לִ֝/תְבוּנָתִ֗/י הַט אָזְנֶֽ/ךָ׃",
+        "LXX": "Υἱέ, ἐμῇ σοφίᾳ πρόσεχε, ἐμοῖς δὲ λόγοις παράβαλλε σὸν οὖς,",
+        "VUL": "[Fili mi, attende ad sapientiam meam,/ et prudentiæ meæ inclina aurem tuam :/",
+        "SYN": "Сын мой! внимай мудрости моей, и приклони ухо твое к разуму моему,",
+        "NEO": "Mon fils, sois attentif à ma sagesse, et prête l’oreille à mon intelligence,",
+        "NAB": "My son, to my wisdom be attentive, to my knowledge incline your ear,",
+        "VAT_ES": "Hijo mío, atiende a mi sabiduría, inclina tu oído a mi inteligencia,",
+        "CEI": "Figlio mio, fà attenzione alla mia sapienza e porgi l'orecchio alla mia intelligenza,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "לִ/שְׁמֹ֥ר מְזִמּ֑וֹת וְ֝/דַ֗עַת שְׂפָתֶ֥י/ךָ יִנְצֹֽרוּ׃",
+        "LXX": "ἵνα φυλάξῃς ἔννοιαν ἀγαθήν· αἴσθησις δὲ ἐμῶν χειλέων ἐντέλλεταί σοι.",
+        "VUL": "ut custodias cogitationes, et disciplinam labia tua conservent./ Ne attendas fallaciæ mulieris ;/",
+        "SYN": "чтобы соблюсти рассудительность, и чтобы уста твои сохранили знание. [Не внимай льстивой женщине;]",
+        "NEO": "afin que tu conserves la réflexion, et que tes lèvres gardent la science.",
+        "NAB": "That discretion may watch over you, and understanding may guard you.",
+        "VAT_ES": "para que guardes la debida discreción y tus labios conserven la ciencia.",
+        "CEI": "perché tu possa seguire le mie riflessioni e le tue labbra custodiscano la scienza."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כִּ֤י נֹ֣פֶת תִּ֭טֹּפְנָה שִׂפְתֵ֣י זָרָ֑ה וְ/חָלָ֖ק מִ/שֶּׁ֣מֶן חִכָּֽ/הּ׃",
+        "LXX": "μὴ πρόσεχε φαύλῃ γυναικί· μέλι γὰρ ἀποστάζει ἀπὸ χειλέων γυναικὸς πόρνης, ἣ πρὸς καιρὸν λιπαίνει σὸν φάρυγγα·",
+        "VUL": "favus enim distillans labia meretricis,/ et nitidius oleo guttur ejus :/",
+        "SYN": "ибо мед источают уста чужой жены, и мягче елея речь ее;",
+        "NEO": "Car les lèvres de l’étrangère distillent le miel, et son palais est plus doux que l’huile.",
+        "NAB": "The lips of an adulteress drip with honey, and her mouth is smoother than oil;",
+        "VAT_ES": "Porque los labios de la mujer ajena destilan miel y su paladar en más suave que el aceite,",
+        "CEI": "Stillano miele le labbra di una straniera e più viscida dell'olio è la sua bocca;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְֽ֭/אַחֲרִיתָ/הּ מָרָ֣ה כַֽ/לַּעֲנָ֑ה חַ֝דָּ֗ה כְּ/חֶ֣רֶב פִּיּֽוֹת׃",
+        "LXX": "ὕστερον μέντοι πικρότερον χολῆς εὑρήσεις καὶ ἠκονημένον μᾶλλον μαχαίρας διστόμου.",
+        "VUL": "novissima autem illius amara quasi absinthium,/ et acuta quasi gladius biceps./",
+        "SYN": "но последствия от нее горьки, как полынь, остры, как меч обоюдоострый;",
+        "NEO": "Mais à la fin elle est amère comme l’absinthe, aiguë comme un glaive à deux tranchants.",
+        "NAB": "But in the end she is as bitter as wormwood, as sharp as a two-edged sword.",
+        "VAT_ES": "pero al final, ella es amarga como el ajenjo, cortante como una espada de doble filo.",
+        "CEI": "ma ciò che segue è amaro come assenzio, pungente come spada a doppio taglio."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "רַ֭גְלֶי/הָ יֹרְד֣וֹת מָ֑וֶת שְׁ֝א֗וֹל צְעָדֶ֥י/הָ יִתְמֹֽכוּ׃",
+        "LXX": "τῆς γὰρ ἀφροσύνης οἱ πόδες κατάγουσιν τοὺς χρωμένους αὐτῇ μετὰ θανάτου εἰς τὸν ᾅδην, τὰ δὲ ἴχνη αὐτῆς οὐκ ἐρείδεται·",
+        "VUL": "Pedes ejus descendunt in mortem,/ et ad inferos gressus illius penetrant./",
+        "SYN": "ноги ее нисходят к смерти, стопы ее достигают преисподней.",
+        "NEO": "Ses pieds descendent vers la mort, ses pas vont droit au schéol.",
+        "NAB": "Her feet go down to death, to the nether world her steps attain;",
+        "VAT_ES": "Sus pies descienden a la Muerte, sus pasos se precipitan en el Abismo;",
+        "CEI": "I suoi piedi scendono verso la morte, i suoi passi conducono agli inferi."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אֹ֣רַח חַ֭יִּים פֶּן תְּפַלֵּ֑ס נָע֥וּ מַ֝עְגְּלֹתֶ֗י/הָ לֹ֣א תֵדָֽע׃",
+        "LXX": "ὁδοὺς γὰρ ζωῆς οὐκ ἐπέρχεται, σφαλεραὶ δὲ αἱ τροχιαὶ αὐτῆς καὶ οὐκ εὔγνωστοι.",
+        "VUL": "Per semitam vitæ non ambulant ;/ vagi sunt gressus ejus et investigabiles./",
+        "SYN": "Если бы ты захотел постигнуть стезю жизни ее, то пути ее непостоянны, и ты не узнаешь их.",
+        "NEO": "Elle ne considère pas le chemin de la vie, ses pas s’en vont incertains elle ne sait où.",
+        "NAB": "Lest you see before you the road to life, her paths will ramble, you know not where.",
+        "VAT_ES": "ella no tiene en cuenta el sendero de la vida, va errante sin saber adonde.",
+        "CEI": "Per timore che tu guardi al sentiero della vita, le sue vie volgono qua e là; essa non se ne cura."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֣ה בָ֭נִים שִׁמְעוּ לִ֑/י וְ/אַל תָּ֝ס֗וּרוּ מֵ/אִמְרֵי פִֽ/י׃",
+        "LXX": "νῦν οὖν, υἱέ, ἄκουέ μου, καὶ μὴ ἀκύρους ποιήσῃς ἐμοὺς λόγους.",
+        "VUL": "Nunc ergo fili mi, audi me,/ et ne recedas a verbis oris mei./",
+        "SYN": "Итак, дети, слушайте меня и не отступайте от слов уст моих.",
+        "NEO": "Et maintenant, mes fils, écoutez-moi, et ne vous écartez pas des paroles de ma bouche.",
+        "NAB": "So now, O children, listen to me, go not astray from the words of my mouth.",
+        "VAT_ES": "Por eso, hijos, escúchenme y no se aparten de las palabras de mi boca.",
+        "CEI": "Ora, figlio mio, ascoltami e non allontanarti dalle parole della mia bocca."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הַרְחֵ֣ק מֵ/עָלֶ֣י/הָ דַרְכֶּ֑/ךָ וְ/אַל תִּ֝קְרַ֗ב אֶל פֶּ֥תַח בֵּיתָֽ/הּ׃",
+        "LXX": "μακρὰν ποίησον ἀπ’ αὐτῆς σὴν ὁδόν, μὴ ἐγγίσῃς πρὸς θύραις οἴκων αὐτῆς·",
+        "VUL": "Longe fac ab ea viam tuam,/ et ne appropinques foribus domus ejus./",
+        "SYN": "Держи дальше от нее путь твой и не подходи близко к дверям дома ее,",
+        "NEO": "Eloigne d’auprès d’elle ton chemin, ne t’approche pas de la porte de sa maison,",
+        "NAB": "Keep your way far from her, approach not the door of her house,",
+        "VAT_ES": "Aleja de ella tu camino y no te acerques a la entrada de su casa,",
+        "CEI": "Tieni lontano da lei il tuo cammino e non avvicinarti alla porta della sua casa,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "פֶּן תִּתֵּ֣ן לַ/אֲחֵרִ֣ים הוֹדֶ֑/ךָ וּ֝/שְׁנֹתֶ֗י/ךָ לְ/אַכְזָרִֽי׃",
+        "LXX": "ἵνα μὴ πρόῃ ἄλλοις ζωήν σου, καὶ σὸν βίον ἀνελεήμοσιν·",
+        "VUL": "Ne des alienis honorem tuum,/ et annos tuos crudeli :/",
+        "SYN": "чтобы здоровья твоего не отдать другим и лет твоих мучителю;",
+        "NEO": "de peur que tu ne livres à d’autres la fleur de ta jeunesse, et tes années au tyran cruel ;",
+        "NAB": "Lest you give your honor to others, and your years to a merciless one;",
+        "VAT_ES": "no sea que entregues a otros tu honor y tus años, a un hombre cruel;",
+        "CEI": "per non mettere in balìa di altri il tuo vigore e i tuoi anni in balìa di un uomo crudele,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "פֶּֽן יִשְׂבְּע֣וּ זָרִ֣ים כֹּחֶ֑/ךָ וַ֝/עֲצָבֶ֗י/ךָ בְּ/בֵ֣ית נָכְרִֽי׃",
+        "LXX": "ἵνα μὴ πλησθῶσιν ἀλλότριοι σῆς ἰσχύος, οἱ δὲ σοὶ πόνοι εἰς οἴκους ἀλλοτρίων ἔλθωσιν·",
+        "VUL": "ne forte impleantur extranei viribus tuis,/ et labores tui sint in domo aliena,/",
+        "SYN": "чтобы не насыщались силою твоею чужие, и труды твои не были для чужого дома.",
+        "NEO": "de peur que des étrangers ne se rassasient de tes biens, et que le fruit de ton travail ne passe dans la maison d’autrui ;",
+        "NAB": "Lest strangers have their fill of your wealth, your hard-won earnings go to an alien's house;",
+        "VAT_ES": "que gente extraña se sacie con tu fuerza y tus trabajos vayan a parar a casa ajena,",
+        "CEI": "perché non si sazino dei tuoi beni gli estranei, non finiscano le tue fatiche in casa di un forestiero"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/נָהַמְתָּ֥ בְ/אַחֲרִיתֶ֑/ךָ בִּ/כְל֥וֹת בְּ֝שָׂרְ/ךָ֗ וּ/שְׁאֵרֶֽ/ךָ׃",
+        "LXX": "καὶ μεταμεληθήσῃ ἐπ’ ἐσχάτων, ἡνίκα ἂν κατατριβῶσιν σάρκες σώματός σου,",
+        "VUL": "et gemas in novissimis,/ quando consumpseris carnes tuas et corpus tuum,/ et dicas :",
+        "SYN": "И ты будешь стонать после, когда плоть твоя и тело твое будут истощены, -",
+        "NEO": "de peur que tu ne gémisses à la fin, quand ta chair et ton corps seront consumés,",
+        "NAB": "And you groan in the end, when your flesh and your body are consumed;",
+        "VAT_ES": "y que al fin tengas que gemir, cuando estén consumidos tu cuerpo y tu carne.",
+        "CEI": "e tu non gema sulla tua sorte, quando verranno meno il tuo corpo e la tua carne,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְֽ/אָמַרְתָּ֗ אֵ֭יךְ שָׂנֵ֣אתִי מוּסָ֑ר וְ֝/תוֹכַ֗חַת נָאַ֥ץ לִבִּֽ/י׃",
+        "LXX": "καὶ ἐρεῖς Πῶς ἐμίσησα παιδείαν, καὶ ἐλέγχους ἐξέκλινεν ἡ καρδία μου·",
+        "VUL": "Cur detestatus sum disciplinam,/ et increpationibus non acquievit cor meum,/",
+        "SYN": "и скажешь: \"зачем я ненавидел наставление, и сердце мое пренебрегало обличением,",
+        "NEO": "et que tu ne dises : Comment donc ai-je pu haïr la correction, et comment mon cœur a-t-il dédaigné la réprimande ?",
+        "NAB": "And you say, \"Oh, why did I hate instruction, and my heart spurn reproof!",
+        "VAT_ES": "Entonces dirás, «&iquest;Cómo aborrecí la instrucción y mi corazón despreció las advertencias?",
+        "CEI": "e dica: \"Perché mai ho odiato la disciplina e il mio cuore ha disprezzato la correzione?"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְֽ/לֹא שָׁ֭מַעְתִּי בְּ/ק֣וֹל מוֹרָ֑/י וְ֝/לִֽ/מְלַמְּדַ֗/י לֹא הִטִּ֥יתִי אָזְנִֽ/י׃",
+        "LXX": "οὐκ ἤκουον φωνὴν παιδεύοντός με καὶ διδάσκοντός με, οὐδὲ παρέβαλλον τὸ οὖς μου·",
+        "VUL": "nec audivi vocem docentium me,/ et magistris non inclinavi aurem meam ?/",
+        "SYN": "и я не слушал голоса учителей моих, не приклонял уха моего к наставникам моим:",
+        "NEO": "Comment ai-je pu ne pas écouter la voix de mes maîtres, ne pas prêter l’oreille à ceux qui m’instruisaient ?",
+        "NAB": "Why did I not listen to the voice of my teachers, nor to my instructors incline my ear!",
+        "VAT_ES": "Yo no escuché la voz de mis maestros ni atendí a los que me enseñaban.",
+        "CEI": "Non ho ascoltato la voce dei miei maestri, non ho prestato orecchio a chi m'istruiva."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כִּ֭/מְעַט הָיִ֣יתִי בְ/כָל רָ֑ע בְּ/ת֖וֹךְ קָהָ֣ל וְ/עֵדָֽה׃",
+        "LXX": "παρ’ ὀλίγον ἐγενόμην ἐν παντὶ κακῷ ἐν μέσῳ ἐκκλησίας καὶ συναγωγῆς.",
+        "VUL": "pene fui in omni malo,/ in medio ecclesiæ et synagogæ./",
+        "SYN": "едва не впал я во всякое зло среди собрания и общества!\"",
+        "NEO": "J’ai failli en venir au comble du malheur, au milieu du peuple et de l’assemblée.",
+        "NAB": "I have all but come to utter ruin, condemned by the public assembly!\"",
+        "VAT_ES": "Faltó poco para que estuviera en el colmo de la desgracia, en medio de la asamblea y de la comunidad».",
+        "CEI": "Per poco non mi son trovato nel colmo dei mali in mezzo alla folla e all'assemblea\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "שְׁתֵה מַ֥יִם מִ/בּוֹרֶ֑/ךָ וְ֝/נֹזְלִ֗ים מִ/תּ֥וֹךְ בְּאֵרֶֽ/ךָ׃",
+        "LXX": "πῖνε ὕδατα ἀπὸ σῶν ἀγγείων καὶ ἀπὸ σῶν φρεάτων πηγῆς.",
+        "VUL": "Bibe aquam de cisterna tua,/ et fluenta putei tui ;/",
+        "SYN": "Пей воду из твоего водоема и текущую из твоего колодезя.",
+        "NEO": "Bois l’eau de ta citerne, les ruisseaux qui sortent de ton puits.",
+        "NAB": "Drink water from your own cistern, running water from your own well.",
+        "VAT_ES": "Bebe el agua de tu cisterna y la que fluye de tu propio pozo.",
+        "CEI": "Bevi l'acqua della tua cisterna e quella che zampilla dal tuo pozzo,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "יָפ֣וּצוּ מַעְיְנֹתֶ֣י/ךָ ח֑וּצָ/ה בָּ֝/רְחֹב֗וֹת פַּלְגֵי מָֽיִם׃",
+        "LXX": "μὴ ὑπερεκχείσθω σοι ὕδατα ἐκ τῆς σῆς πηγῆς, εἰς δὲ σὰς πλατείας διαπορευέσθω τὰ σὰ ὕδατα·",
+        "VUL": "deriventur fontes tui foras,/ et in plateis aquas tuas divide./",
+        "SYN": "Пусть [не] разливаются источники твои по улице, потоки вод - по площадям;",
+        "NEO": "Que tes sources se répandent au dehors, que tes ruisseaux coulent sur les places publiques !",
+        "NAB": "How may your water sources be dispersed abroad, streams of water in the streets?",
+        "VAT_ES": "Que tus fuentes no se dispersen hacia afuera ni tus corrientes de agua, por las calles.",
+        "CEI": "perché le tue sorgenti non scorrano al di fuori, i tuoi ruscelli nelle pubbliche piazze,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "יִֽהְיוּ לְ/ךָ֥ לְ/בַדֶּ֑/ךָ וְ/אֵ֖ין לְ/זָרִ֣ים אִתָּֽ/ךְ׃",
+        "LXX": "ἔστω σοι μόνα ὑπάρχοντα, καὶ μηδεὶς ἀλλότριος μετασχέτω σοι·",
+        "VUL": "Habeto eas solus,/ nec sint alieni participes tui./",
+        "SYN": "пусть они будут принадлежать тебе одному, а не чужим с тобою.",
+        "NEO": "Qu’ils soient pour toi seul, et non pour des étrangers avec toi !",
+        "NAB": "Let your fountain be yours alone, not one shared with strangers;",
+        "VAT_ES": "Que ellas sean para ti solo y que no haya extraños junto a ti.",
+        "CEI": "ma siano per te solo e non per degli estranei insieme a te."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "יְהִֽי מְקוֹרְ/ךָ֥ בָר֑וּךְ וּ֝/שְׂמַ֗ח מֵ/אֵ֥שֶׁת נְעוּרֶֽ/ךָ׃",
+        "LXX": "ἡ πηγή σου τοῦ ὕδατος ἔστω σοι ἰδία, καὶ συνευφραίνου μετὰ γυναικὸς τῆς ἐκ νεότητός σου.",
+        "VUL": "Sit vena tua benedicta,/ et lætare cum muliere adolescentiæ tuæ./",
+        "SYN": "Источник твой да будет благословен; и утешайся женою юности твоей,",
+        "NEO": "Que ta source soit bénie, et mets ta joie dans la femme de ta jeunesse.",
+        "NAB": "And have joy of the wife of your youth,",
+        "VAT_ES": "&iexcl;Bendita sea tu fuente, y encuentra tu alegría en la mujer de tu juventud,",
+        "CEI": "Sia benedetta la tua sorgente; trova gioia nella donna della tua giovinezza:"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "אַיֶּ֥לֶת אֲהָבִ֗ים וְֽ/יַעֲלַ֫ת חֵ֥ן דַּ֭דֶּי/הָ יְרַוֻּ֣/ךָ בְ/כָל עֵ֑ת בְּ֝/אַהֲבָתָ֗/הּ תִּשְׁגֶּ֥ה תָמִֽיד׃",
+        "LXX": "ἔλαφος φιλίας καὶ πῶλος σῶν χαρίτων ὁμιλείτω σοι, ἡ δὲ ἰδία ἡγείσθω σου καὶ συνέστω σοι ἐν παντὶ καιρῷ· ἐν γὰρ τῇ ταύτης φιλίᾳ συνπεριφερόμενος πολλοστὸς ἔσῃ.",
+        "VUL": "Cerva carissima, et gratissimus hinnulus :/ ubera ejus inebrient te in omni tempore ;/ in amore ejus delectare jugiter./",
+        "SYN": "любезною ланью и прекрасною серною: груди ее да упоявают тебя во всякое время, любовью ее услаждайся постоянно.",
+        "NEO": "Biche charmante, gracieuse gazelle, — que ses charmes t’enivrent en tout temps, sois toujours épris de son amour !",
+        "NAB": "your lovely hind, your graceful doe. Her love will invigorate you always, through her love you will flourish continually,",
+        "VAT_ES": "cierva amable, graciosa gacela! Que en todo tiempo te embriaguen sus amores y estés siempre prendado de su afecto.",
+        "CEI": "cerva amabile, gazzella graziosa, essa s'intrattenga con te; le sue tenerezze ti inebrino sempre; sii tu sempre invaghito del suo amore!"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/לָ֤/מָּה תִשְׁגֶּ֣ה בְנִ֣/י בְ/זָרָ֑ה וּ֝/תְחַבֵּ֗ק חֵ֣ק נָכְרִיָּֽה׃",
+        "LXX": "μὴ πολὺς ἴσθι πρὸς ἀλλοτρίαν, μηδὲ συνέρχου ἀγκάλαις τῆς μὴ ἰδίας·",
+        "VUL": "Quare seduceris, fili mi, ab aliena,/ et foveris in sinu alterius ?/",
+        "SYN": "И для чего тебе, сын мой, увлекаться постороннею и обнимать груди чужой?",
+        "NEO": "Pourquoi, mon fils, t’éprendrais-tu d’une étrangère, et embrasserais-tu le sein d’une inconnue ?",
+        "NAB": "Why then, my son, should you go astray for another's wife and accept the embraces of an adulteress?",
+        "VAT_ES": "Hijo mío, &iquest;por qué te dejarás prendar por la mujer ajena y abrazarás los pechos de una extraña?",
+        "CEI": "Perché, figlio mio, invaghirti d'una straniera e stringerti al petto di un'estranea?"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "כִּ֤י נֹ֨כַח עֵינֵ֣י יְ֭הוָה דַּרְכֵי אִ֑ישׁ וְֽ/כָל מַעְגְּלֹתָ֥י/ו מְפַלֵּֽס׃",
+        "LXX": "ἐνώπιον γὰρ εἰσιν τῶν τοῦ θεοῦ ὀφθαλμῶν ὁδοὶ ἀνδρός, εἰς δὲ πάσας τὰς τροχιὰς αὐτοῦ σκοπεύει.",
+        "VUL": "Respicit Dominus vias hominis,/ et omnes gressus ejus considerat./",
+        "SYN": "Ибо пред очами Господа пути человека, и Он измеряет все стези его.",
+        "NEO": "Car devant les yeux de \\+w Yahweh|strong=\"H3068\"\\+w** sont les voies de l’homme, il considère tous ses sentiers.",
+        "NAB": "For each man's ways are plain to the LORD'S sight; all their paths he surveys;",
+        "VAT_ES": "Los caminos del hombre están bajo la mirada del Señor y él tiene en cuenta todos sus senderos.",
+        "CEI": "Poiché gli occhi del Signore osservano le vie dell'uomo ed egli vede tutti i suoi sentieri."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "עַֽווֹנוֹתָ֗י/ו יִלְכְּדֻ/נ֥וֹ אֶת הָ/רָשָׁ֑ע וּ/בְ/חַבְלֵ֥י חַ֝טָּאת֗/וֹ יִתָּמֵֽךְ׃",
+        "LXX": "παρανομίαι ἄνδρα ἀγρεύουσιν, σειραῖς δὲ τῶν ἑαυτοῦ ἁμαρτιῶν ἕκαστος σφίγγεται.",
+        "VUL": "Iniquitates suas capiunt impium,/ et funibus peccatorum suorum constringitur./",
+        "SYN": "Беззаконного уловляют собственные беззакония его, и в узах греха своего он содержится:",
+        "NEO": "Le méchant est pris dans ses propres iniquités, il est saisi par les liens de son péché.",
+        "NAB": "By his own iniquities the wicked man will be caught, in the meshes of his own sin he will be held fast;",
+        "VAT_ES": "El malvado será presa de sus propias faltas y quedará atrapado en los lazos de su pecado.",
+        "CEI": "L'empio è preda delle sue iniquità, è catturato con le funi del suo peccato."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "ה֗וּא יָ֭מוּת בְּ/אֵ֣ין מוּסָ֑ר וּ/בְ/רֹ֖ב אִוַּלְתּ֣/וֹ יִשְׁגֶּֽה׃",
+        "LXX": "οὗτος τελευτᾷ μετὰ ἀπαιδεύτων, ἐκ δὲ πλήθους τῆς ἑαυτοῦ βιότητος ἐξερίφη καὶ ἀπώλετο δι’ ἀφροσύνην.",
+        "VUL": "Ipse morietur, quia non habuit disciplinam,/ et in multitudine stultitiæ suæ decipietur.]",
+        "SYN": "он умирает без наставления, и от множества безумия своего теряется.",
+        "NEO": "Il mourra faute de correction, il sera trompé par l’excès de sa folie.",
+        "NAB": "He will die from lack of discipline, through the greatness of his folly he will be lost.",
+        "VAT_ES": "Morirá por falta de instrucción y se extraviará por su gran necedad.",
+        "CEI": "Egli morirà per mancanza di disciplina, si perderà per la sua grande stoltezza."
+      }
+    }
+  }
+}

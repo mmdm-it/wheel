@@ -1,0 +1,897 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EZE_023",
+  "book_key": "EZE",
+  "sequence": 23,
+  "chapter_in": {
+    "MT": 23,
+    "VUL": 23,
+    "LXX": 23
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu rivolta questa parola del Signore:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֑ם שְׁתַּ֣יִם נָשִׁ֔ים בְּנ֥וֹת אֵם אַחַ֖ת הָיֽוּ׃",
+        "LXX": "Υἱὲ ἀνθρώπου, δύο γυναῖκες ἦσαν θυγατέρες μητρὸς μιᾶς,",
+        "VUL": "[Fili hominis, duæ mulieres filiæ matris unius fuerunt :/",
+        "SYN": "сын человеческий! были две женщины, дочери одной матери,",
+        "NEO": "« Fils de l’homme, il y avait deux femmes, filles d’une même mère.",
+        "NAB": "Son of man, there were two women, daughters of the same mother,",
+        "VAT_ES": "Hijo de hombre, había dos mujeres, hijas de una misma madre,",
+        "CEI": "\"Figlio dell'uomo, vi erano due donne, figlie della stessa madre,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/תִּזְנֶ֣ינָה בְ/מִצְרַ֔יִם בִּ/נְעוּרֵי/הֶ֖ן זָנ֑וּ שָׁ֚מָּ/ה מֹעֲכ֣וּ שְׁדֵי/הֶ֔ן וְ/שָׁ֣ם עִשּׂ֔וּ דַּדֵּ֖י בְּתוּלֵי/הֶֽן׃",
+        "LXX": "καὶ ἐξεπόρνευσαν ἐν Αἰγύπτῳ ἐν τῇ νεότητι αὐτῶν, ἐκεῖ ἔπεσον οἱ μαστοὶ αὐτῶν, ἐκεῖ διεπαρθενεύθησαν.",
+        "VUL": "et fornicatæ sunt in Ægypto,/ in adolescentia sua fornicatæ sunt :/ ibi subacta sunt ubera earum,/ et fractæ sunt mammæ pubertatis earum./",
+        "SYN": "и блудили они в Египте, блудили в своей молодости; там измяты груди их, и там растлили девственные сосцы их.",
+        "NEO": "Elles se prostituèrent en Égypte, elles se prostituèrent dans leur jeunesse. Là on a saisi leurs mamelles, là on a pressé leur sein virginal.",
+        "NAB": "who even as young girls played the harlot in Egypt. There the Egyptians caressed their bosoms and fondled their virginal breasts.",
+        "VAT_ES": "que se prostituyeron en Egipto, se prostituyeron en su juventud; allí manosearon sus senos, allí acariciaron sus pechos virginales.",
+        "CEI": "le quali si erano prostituite in Egitto fin dalla loro giovinezza, dove venne profanato il loro petto e oppresso il loro seno verginale."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וּ/שְׁמוֹתָ֗/ן אָהֳלָ֤ה הַ/גְּדוֹלָה֙ וְ/אָהֳלִיבָ֣ה אֲחוֹתָ֔/הּ וַ/תִּֽהְיֶ֣ינָה לִ֔/י וַ/תֵּלַ֖דְנָה בָּנִ֣ים וּ/בָנ֑וֹת וּ/שְׁמוֹתָ֕/ן שֹׁמְר֣וֹן אָהֳלָ֔ה וִ/ירוּשָׁלִַ֖ם אָהֳלִיבָֽה׃",
+        "LXX": "καὶ τὰ ὀνόματα αὐτῶν ἦν Ὄολλα ἡ πρεσβυτέρα, καὶ Ὀόλιβα ἡ ἀδελφή αὐτῆς. καὶ ἐγένοντό μοι, καὶ ἔτεκον υἱοὺς καὶ θυγατέρας· καὶ τὰ ὀνόματα αὐτῶν, Σαμάρεια ἦν Ὄολλα, καὶ Ἰερουσαλὴμ ἦν Ὀόλιβα.",
+        "VUL": "Nomina autem earum,/ Oolla major, et Ooliba soror ejus minor :/ et habui eas, et pepererunt filios et filias./ Porro earum nomina,/ Samaria Oolla, et Jerusalem Ooliba./",
+        "SYN": "Имена им: большой - Огола, а сестре ее - Оголива. И были они Моими, и рождали сыновей и дочерей; и именовались - Огола Самариею, а Оголива Иерусалимом.",
+        "NEO": "Voici leurs noms : Oolla, la plus grande, et Ooliba, sa sœur. Elles furent à moi, et elles enfantèrent des fils et des filles. Voici leurs noms : Oolla, c’est Samarie ; Ooliba, c’est Jérusalem.",
+        "NAB": "Oholah was the name of the elder, and the name of her sister was Oholibah. They became mine and bore sons and daughters. (As for their names: Samaria is Oholah, and Jerusalem is Oholibah.)",
+        "VAT_ES": "La mayor se llamaba Oholá, y su hermana, Oholibá. Ellas fueron mías y engendraron hijos e hijas –Oholá es el nombre de Samaría, y Oholibá, el de Jerusalén –",
+        "CEI": "Esse si chiamano Oolà la maggiore e Oolibà la più piccola, sua sorella. L'una e l'altra divennero mie e partorirono figli e figlie. Oolà è Samaria e Oolibà è Gerusalemme."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/תִּ֥זֶן אָהֳלָ֖ה תַּחְתָּ֑/י וַ/תַּעְגַּב֙ עַֽל מְאַהֲבֶ֔י/הָ אֶל אַשּׁ֖וּר קְרוֹבִֽים׃",
+        "LXX": "καὶ ἐξεπόρνευσεν ἡ Ὄολα ἀπ’ ἐμοῦ καὶ ἐπέθετο ἐπὶ τοὺς ἐραστὰς αὐτῆς, ἐπὶ τοὺς Ἀσσυρίους τοὺς ἐγγίζοντας αὐτῇ,",
+        "VUL": "Fornicata est igitur super me Oolla,/ et insanivit in amatores suos,/ in Assyrios propinquantes,/",
+        "SYN": "И стала Огола блудить от Меня и пристрастилась к своим любовникам, к Ассириянам, к соседям своим,",
+        "NEO": "Oolla me fut infidèle ; elle brûla d’amour pour ses amants, les Assyriens, ses voisins.",
+        "NAB": "Oholah became a harlot faithless to me; she lusted after her lovers, the Assyrians, warriors",
+        "VAT_ES": "Oholá se prostituyó mientras me pertenecía: se enamoró perdidamente de sus amantes, de los asirios, guerreros",
+        "CEI": "Oolà mentre era mia si dimostrò infedele: arse d'amore per i suoi spasimanti, gli Assiri suoi vicini,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "לְבֻשֵׁ֤י תְכֵ֨לֶת֙ פַּח֣וֹת וּ/סְגָנִ֔ים בַּח֥וּרֵי חֶ֖מֶד כֻּלָּ֑/ם פָּרָשִׁ֕ים רֹכְבֵ֖י סוּסִֽים׃",
+        "LXX": "ἐνδεδυκότας ὑακίνθινα, ἡγουμένους καὶ στρατηγούς· νεανίσκοι καὶ ἐπίλεκτοι, πάντες ἱππεῖς ἱππαζόμενοι ἐφ’ ἵππων.",
+        "VUL": "vestitos hyacintho,/ principes et magistratus,/ juvenes cupidinis,/ universos equites, ascensores equorum./",
+        "SYN": "к одевавшимся в ткани яхонтового цвета, к областеначальникам и градоправителям, ко всем красивым юношам, всадникам, ездящим на конях;",
+        "NEO": "Vêtus de pourpre, gouverneurs et magistrats, tous beaux jeunes hommes, cavaliers montés sur des chevaux.",
+        "NAB": "dressed in purple, governors and officers, all of them attractive young men, knights mounted on horses.",
+        "VAT_ES": "vestidos de púrpura, gobernadores y prefectos, todos jóvenes y atrayentes, hábiles jinetes.",
+        "CEI": "vestiti di porpora, prìncipi e governatori, tutti giovani attraenti, cavalieri montati su cavalli."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/תִּתֵּ֤ן תַּזְנוּתֶ֨י/הָ֙ עֲלֵי/הֶ֔ם מִבְחַ֥ר בְּנֵֽי אַשּׁ֖וּר כֻּלָּ֑/ם וּ/בְ/כֹ֧ל אֲשֶׁר עָֽגְבָ֛ה בְּ/כָל גִּלּוּלֵי/הֶ֖ם נִטְמָֽאָה׃",
+        "LXX": "καὶ ἔδωκεν τὴν πορνείαν αὐτῆς ἐπ’ αὐτούς· ἐπίλεκτοι υἱοὶ Ἀσσυρίων πάντες, καὶ ἐπὶ πάντας οὓς ἐπέθετο, ἐν πᾶσι τοῖς ἐνθυμήμασιν αὐτῆς ἐμιαίνετο.",
+        "VUL": "Et dedit fornicationes suas super eos electos,/ filios Assyriorum universos :/ et in omnibus in quos insanivit,/ in immunditiis eorum polluta est./",
+        "SYN": "и расточала блудодеяния свои со всеми отборными из сынов Ассура, и оскверняла себя всеми идолами тех, к кому ни пристращалась;",
+        "NEO": "C’est vers eux qu’elle dirigea ses prostitutions, vers toute l’élite des fils de l’Assyrie ; et près de tous ceux pour qui elle brûlait d’amour, elle se souilla avec toutes leurs infâmes idoles.",
+        "NAB": "Thus she gave herself as a harlot to them, to all the elite of the Assyrians, and she defiled herself with all those for whom she lusted (with all their idols).",
+        "VAT_ES": "Ella ofreció sus prostituciones a lo mejor de los asirios y después de enamorarse perdidamente, se contaminó con todos sus ídolos.",
+        "CEI": "Concesse loro i suoi favori, al fiore degli Assiri, e si contaminò con gli idoli di coloro dei quali si era innamorata."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אֶת תַּזְנוּתֶ֤י/הָ מִ/מִּצְרַ֨יִם֙ לֹ֣א עָזָ֔בָה כִּ֤י אוֹתָ/הּ֙ שָׁכְב֣וּ בִ/נְעוּרֶ֔י/הָ וְ/הֵ֥מָּה עִשּׂ֖וּ דַּדֵּ֣י בְתוּלֶ֑י/הָ וַ/יִּשְׁפְּכ֥וּ תַזְנוּתָ֖/ם עָלֶֽי/הָ׃",
+        "LXX": "καὶ τὴν πορνείαν αὐτῆς ἐξ Αἰγύπτου οὐκ ἐνκατέλιπεν, ὅτι μετ’ αὐτῆς ἐκοιμῶντο ἐν νεότητι αὐτῆς, καὶ αὐτοὶ διεπαρθένευσαν αὐτὴν καὶ ⸆ ἐξέχεαν τὴν πορνείαν αὐτῶν ἐπ’ αὐτήν.",
+        "VUL": "Insuper et fornicationes suas, quas habuerat in Ægypto, non reliquit :/ nam et illi dormierunt cum ea in adolescentia ejus,/ et illi confregerunt ubera pubertatis ejus,/ et effuderunt fornicationem suam super eam./",
+        "SYN": "не переставала блудить и с Египтянами, потому что они с нею спали в молодости ее и растлевали девственные сосцы ее, и изливали на нее похоть свою.",
+        "NEO": "Et elle n’abandonna pas ses prostitutions de l’Égypte ; car ils l’avaient déshonorée dans sa jeunesse ; ils avaient pressé son sein virginal, et répandu sur elle leur impudicité.",
+        "NAB": "She did not give up the harlotry which she had begun in Egypt, when they had lain with her as a young girl, fondling her virginal breasts and pouring out their impurities on her.",
+        "VAT_ES": "Pero no dejó de prostituirse con los Egipcios, que se habían acostado con ella, cuando era joven, acariciando sus pechos virginales y prodigando sobre ella sus prostituciones.",
+        "CEI": "Non rinunciò alle sue relazioni amorose con gli Egiziani, i quali avevano abusato di lei nella sua giovinezza, avevano profanato il suo seno verginale, sfogando su di lei la loro libidine."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לָ/כֵ֥ן נְתַתִּ֖י/הָ בְּ/יַד מְאַֽהֲבֶ֑י/הָ בְּ/יַד֙ בְּנֵ֣י אַשּׁ֔וּר אֲשֶׁ֥ר עָגְבָ֖ה עֲלֵי/הֶֽם׃",
+        "LXX": "διὰ τοῦτο παρέδωκα αὐτὴν εἰς χεῖρας τῶν ἐραστῶν αὐτῆς, εἰς χεῖρας υἱῶν Ἀσσυρίων ἐφ’ οὓς ἐπετίθετο.",
+        "VUL": "Propterea tradidi eam in manus amatorum suorum,/ in manus filiorum Assur,/ super quorum insanivit libidine./",
+        "SYN": "За то Я и отдал ее в руки любовников ее, в руки сынов Ассура, к которым она пристрастилась.",
+        "NEO": "C’est pourquoi je l’ai livrée aux mains de ses amants, aux mains des fils de l’Assyrie, pour qui elle avait brûlé d’amour.",
+        "NAB": "Therefore I handed her over to her lovers, the Assyrians for whom she had lusted.",
+        "VAT_ES": "Por eso la entregué en manos de sus amantes, en manos de los asirios, de los que se había enamorado perdidamente.",
+        "CEI": "Per questo l'ho data in mano ai suoi amanti, in mano agli Assiri, dei quali si era innamorata."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "הֵמָּה֮ גִּלּ֣וּ עֶרְוָתָ/הּ֒ בָּנֶ֤י/הָ וּ/בְנוֹתֶ֨י/הָ֙ לָקָ֔חוּ וְ/אוֹתָ֖/הּ בַּ/חֶ֣רֶב הָרָ֑גוּ וַ/תְּהִי שֵׁם֙ לַ/נָּשִׁ֔ים וּ/שְׁפוּטִ֖ים עָ֥שׂוּ בָֽ/הּ׃",
+        "LXX": "αὐτοὶ ἀπεκάλυψαν τὴν αἰσχύνην αὐτῆς, υἱοὺς καὶ θυγατέρας αὐτῆς ἔλαβον, καὶ αὐτὴν ἐν ῥομφαίᾳ ἀπέκτειναν· καὶ ἐγένετο λάλημα εἰς γυναῖκας, καὶ ἐκδικήσεις ἐποίησαν ἐν αὐτῇ εἰς τὰς θυγατέρας.",
+        "VUL": "Ipsi discooperuerunt ignominiam ejus,/ filios et filias ejus tulerunt,/ et ipsam occiderunt gladio :/ et factæ sunt famosæ mulieres,/ et judicia perpetraverunt in ea./",
+        "SYN": "Они открыли наготу ее, взяли сыновей ее и дочерей ее, а ее убили мечом. И она сделалась позором между женщинами, когда совершили над нею казнь.",
+        "NEO": "Ils ont découvert sa nudité ; ils ont pris ses fils et ses filles ; ils l’ont égorgée avec l’épée. Et elle devint en renom parmi les femmes ; car justice en avait été faite.",
+        "NAB": "They exposed her nakedness, her sons and daughters they took away, and herself they slew with the sword. Thus she became a byword for women, for they punished her grievously.",
+        "VAT_ES": "Ellos descubrieron su desnudez, tomaron a sus hijos y a sus hijas, y a ella misma la mataron con la espada. Así se hizo famosa entre las mujeres, por el castigo que le habían infligido.",
+        "CEI": "Essi scoprirono la sua nudità, presero i suoi figli e le sue figlie e la uccisero di spada. Divenne così come un monito fra le donne, per la condanna esemplare che essi avevano eseguita su di lei."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֨רֶא֙ אֲחוֹתָ֣/הּ אָהֳלִיבָ֔ה וַ/תַּשְׁחֵ֥ת עַגְבָתָ֖/הּ מִמֶּ֑/נָּה וְ/אֶת תַּ֨זְנוּתֶ֔י/הָ מִ/זְּנוּנֵ֖י אֲחוֹתָֽ/הּ׃",
+        "LXX": "καὶ ἴδεν ἡ ἀδελφὴ αὐτῆς Ὀόλιβα, καὶ διέφθειρε τὴν ἐπίθεσιν αὐτῆς ὑπὲρ αὐτήν, καὶ τὴν πορνείαν αὐτῆς ὑπὲρ τὴν πορνείαν τῆς ἀδελφῆς αὐτῆς·",
+        "VUL": "Quod cum vidisset soror ejus Ooliba,/ plus quam illa insanivit libidine,/ et fornicationem suam super fornicationem sororis suæ :/",
+        "SYN": "Сестра ее, Оголива, видела это, и еще развращеннее была в любви своей, и блужение ее превзошло блужение сестры ее.",
+        "NEO": "Et sa sœur Ooliba l’a vu, et plus qu’elle elle a rendu pervers ses amours ; et ses prostitutions ont surpassé celles de sa sœur.",
+        "NAB": "Though her sister Oholibah saw all this, her lust was more depraved than her sister's, and she outdid her in harlotry.",
+        "VAT_ES": "Su hermana Oholibá vio todo esto, pero se entregó a una pasión más perversa y se prostituyó más que su hermana.",
+        "CEI": "Sua sorella Oolibà la vide e si corruppe più di lei nei suoi amoreggiamenti; con le sue infedeltà superò la sorella."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אֶל בְּנֵי֩ אַשּׁ֨וּר עָגָ֜בָה פַּח֨וֹת וּ/סְגָנִ֤ים קְרֹבִים֙ לְבֻשֵׁ֣י מִכְל֔וֹל פָּרָשִׁ֖ים רֹכְבֵ֣י סוּסִ֑ים בַּח֥וּרֵי חֶ֖מֶד כֻּלָּֽ/ם׃",
+        "LXX": "ἐπὶ τοὺς υἱοὺς τῶν Ἀσσυρίων ἐπέθετο ἡγουμένους καὶ στρατηγοὺς τοὺς ἐγγὺς αὐτῆς, ἐνδεδυκότας εὐπάρυφα, ἱππεῖς ἱππαζομένους ἐφ’ ἵππων· νεανίσκοι ἐπίλεκτοι πάντες.",
+        "VUL": "ad filios Assyriorum præbuit impudenter,/ ducibus et magistratibus ad se venientibus,/ indutis veste varia,/ equitibus qui vectabantur equis,/ et adolescentibus forma cunctis egregia./",
+        "SYN": "Она пристрастилась к сынам Ассуровым, к областеначальникам и градоправителям, соседям ее, пышно одетым, к всадникам, ездящим на конях, ко всем отборным юношам.",
+        "NEO": "Elle a brûlé d’amour pour les fils de l’Assyrie, gouverneurs et chefs, ses voisins richement vêtus, cavaliers montés sur des chevaux, tous beaux jeunes hommes.",
+        "NAB": "She too lusted after the Assyrians, governors and officers, warriors impeccably clothed, knights mounted on horses, all of them attractive young men.",
+        "VAT_ES": "Ella se enamoró perdidamente de los asirios, gobernadores y prefectos, guerreros espléndidamente vestidos, hábiles jinetes, todos jóvenes y atrayentes.",
+        "CEI": "Spasimò per gli Assiri suoi vicini, prìncipi e capi, vestiti di porpora, cavalieri montati su cavalli, tutti giovani attraenti."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וָ/אֵ֖רֶא כִּ֣י נִטְמָ֑אָה דֶּ֥רֶךְ אֶחָ֖ד לִ/שְׁתֵּי/הֶֽן׃",
+        "LXX": "καὶ ἴδον ὅτι μεμίανται ὁδὸς μία τῶν δύο.",
+        "VUL": "Et vidi quod polluta esset via una ambarum./",
+        "SYN": "И Я видел, что она осквернила себя, _и что_ у обеих их одна дорога.",
+        "NEO": "Je vis qu’elle aussi se souillait ; toutes deux suivaient la même voie.",
+        "NAB": "I saw that she had defiled herself. Both had gone down the same path,",
+        "VAT_ES": "Yo vi que se había contaminado: las dos habían tomado el mismo camino.",
+        "CEI": "Io vidi che si era contaminata e che tutt'e due seguivano la stessa via."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/תּ֖וֹסֶף אֶל תַּזְנוּתֶ֑י/הָ וַ/תֵּ֗רֶא אַנְשֵׁי֙ מְחֻקֶּ֣ה עַל הַ/קִּ֔יר צַלְמֵ֣י כשדיים כַשְׂדִּ֔ים חֲקֻקִ֖ים בַּ/שָּׁשַֽׁר׃",
+        "LXX": "καὶ προσέθετο πρὸς τὴν πορνείαν αὐτῆς, καὶ ἴδεν ἄνδρας ἐζωγραφημένους ἐπὶ τοῦ τοίχου, εἰκόνας Χαλδαίων, ἐζωγραφημένους ἐν γραφίδι,",
+        "VUL": "Et auxit fornicationes suas :/ cumque vidisset viros depictos in pariete,/ imagines Chaldæorum expressas coloribus,/",
+        "SYN": "Но эта еще умножила блудодеяния свои, потому что, увидев вырезанных на стене мужчин, красками нарисованные изображения Халдеев,",
+        "NEO": "Elle ajouta encore à ses prostitutions : elle vit des hommes peints sur le mur, des images de Chaldéens peintes au vermillon ;",
+        "NAB": "yet she went further in her harlotry. When she saw men drawn on the wall, the images of Chaldeans drawn with vermillion,",
+        "VAT_ES": "Pero Oholibá fue más lejos todavía con sus prostituciones: vio unos hombres esculpidos en el muro, imágenes de caldeos pintados de rojo,",
+        "CEI": "Ma essa moltiplicò le prostituzioni. Vide uomini effigiati su una parete, figure di Caldei, disegnati con il minio,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "חֲגוֹרֵ֨י אֵז֜וֹר בְּ/מָתְנֵי/הֶ֗ם סְרוּחֵ֤י טְבוּלִים֙ בְּ/רָ֣אשֵׁי/הֶ֔ם מַרְאֵ֥ה שָׁלִשִׁ֖ים כֻּלָּ֑/ם דְּמ֤וּת בְּנֵֽי בָבֶל֙ כַּשְׂדִּ֔ים אֶ֖רֶץ מוֹלַדְתָּֽ/ם׃",
+        "LXX": "ἐζωσμένους ποικίλματα ἐπὶ τὰς ὀσφύας αὐτῶν παραβαπτὰ καὶ ἐπὶ τῶν κεφαλῶν αὐτῶν, ὄψις τρισσὴ πάντων, ὁμοίωμα υἱῶν Χαλδαίων, γῆς πατρίδος αὐτοῦ.",
+        "VUL": "et accinctos balteis renes,/ et tiaras tinctas in capitibus eorum,/ formam ducum omnium,/ similitudinem filiorum Babylonis,/ terræque Chaldæorum, in qua orti sunt,/",
+        "SYN": "опоясанных по чреслам своим поясом, с роскошными на голове их повязками, имеющих вид военачальников, похожих на сынов Вавилона, которых родина земля Халдейская,",
+        "NEO": "ils portaient des ceintures sur leurs reins, ils avaient sur leurs têtes d’amples turbans ; tous paraissaient de grands seigneurs. C’étaient les figures des fils de Babylone, dont la Chaldée était la terre d’origine.",
+        "NAB": "with sashes girded about their waists, flowing turbans on their heads, all looking like chariot warriors, the portraits of Babylonians, natives of Chaldea,",
+        "VAT_ES": "con cinturones ceñidos a las caderas, con amplios turbantes en la cabeza, todos ellos con prestancia de oficiales; eran imágenes de babilonios, originarios de Caldea.",
+        "CEI": "con cinture ai fianchi, ampi turbanti in capo, dall'aspetto di grandi capi, rappresentanti i figli di Babilonia, originari di Caldea:"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "ו/תעגב וַ/תַּעְגְּבָ֥/ה עֲלֵי/הֶ֖ם לְ/מַרְאֵ֣ה עֵינֶ֑י/הָ וַ/תִּשְׁלַ֧ח מַלְאָכִ֛ים אֲלֵי/הֶ֖ם כַּשְׂדִּֽימָ/ה׃",
+        "LXX": "καὶ ἐπέθετο ἐπ’ αὐτοὺς τῇ ὁράσει ὀφθαλμῶν αὐτῆς, καὶ ἐξαπέστειλεν ἀγγέλους πρὸς αὐτοὺς εἰς γῆν Χαλδαίων.",
+        "VUL": "insanivit super eos concupiscentia oculorum suorum,/ et misit nuntios ad eos in Chaldæam./",
+        "SYN": "она влюбилась в них по одному взгляду очей своих и послала к ним в Халдею послов.",
+        "NEO": "Elle brûla pour eux dès que ses yeux les virent, et elle envoya des messagers vers eux en Chaldée ;",
+        "NAB": "she lusted for them; no sooner had she set eyes on them than she sent messengers to them in Chaldea.",
+        "VAT_ES": "Apenas los vio, se enamoró perdidamente de ellos y les envió mensajeros a Caldea.",
+        "CEI": "essa se ne innamorò non appena li vide e inviò loro messaggeri in Caldea."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֨אוּ אֵלֶ֤י/הָ בְנֵֽי בָבֶל֙ לְ/מִשְׁכַּ֣ב דֹּדִ֔ים וַ/יְטַמְּא֥וּ אוֹתָ֖/הּ בְּ/תַזְנוּתָ֑/ם וַ/תִּ֨טְמָא בָ֔/ם וַ/תֵּ֥קַע נַפְשָׁ֖/הּ מֵ/הֶֽם׃",
+        "LXX": "καὶ ἤλθοσαν πρὸς αὐτὴν υἱοὶ Βαβυλῶνος, εἰς κοίτην καταλυόντων, καὶ ἐμίαινον αὐτὴν ἐν τῇ πορνείᾳ αὐτῆς, καὶ ἐμιάνθη ἐν αὐτοῖς, καὶ ἀπέστη ἡ ψυχὴ αὐτῆς ἀπ’ αὐτῶν.",
+        "VUL": "Cumque venissent ad eam filii Babylonis ad cubile mammarum,/ polluerunt eam stupris suis :/ et polluta est ab eis,/ et saturata est anima ejus ab illis./",
+        "SYN": "И пришли к ней сыны Вавилона на любовное ложе, и осквернили ее блудодейством своим, и она осквернила себя ими; и отвратилась от них душа ее.",
+        "NEO": "et les fils de Babylone vinrent vers elle au lit des amours et ils la souillèrent par leurs prostitutions, et elle se souilla avec eux ; puis son âme se dégoûta d’eux.",
+        "NAB": "Then the Babylonians came to her, to the love couch, and defiled her with their intercourse. As soon as she was defiled by them, she became disgusted with them.",
+        "VAT_ES": "Los babilonios fueron a compartir el lecho de sus amores y la contaminaron con sus prostituciones, y una vez que se contaminó, su corazón se hastió de ellos.",
+        "CEI": "I figli di Babilonia andarono da lei al letto degli amori e la contaminarono con le loro fornicazioni ed essa si contaminò con loro finché ne fu nauseata."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/תְּגַל֙ תַּזְנוּתֶ֔י/הָ וַ/תְּגַ֖ל אֶת עֶרְוָתָ֑/הּ וַ/תֵּ֤קַע נַפְשִׁ/י֙ מֵֽ/עָלֶ֔י/הָ כַּ/אֲשֶׁ֛ר נָקְעָ֥ה נַפְשִׁ֖/י מֵ/עַ֥ל אֲחוֹתָֽ/הּ׃",
+        "LXX": "καὶ ἀπεκάλυψεν τὴν πορνείαν αὐτῆς, καὶ ἀπεκάλυψεν αἰσχύνην αὐτῆς· καὶ ἀπέστη ἡ ψυχή μου ἀπ’ αὐτῆς, ὃν τρόπον ἀπέστη ἡ ψυχή μου ἀπὸ τῆς ἀδελφῆς αὐτῆς.",
+        "VUL": "Denudavit quoque fornicationes suas,/ et discooperuit ignominiam suam :/ et recessit anima mea ab ea,/ sicut recesserat anima mea a sorore ejus :/",
+        "SYN": "Когда же она явно предалась блудодеяниям своим и открыла наготу свою, тогда и от нее отвратилась душа Моя, как отвратилась душа Моя от сестры ее.",
+        "NEO": "Elle fit voir à découvert ses prostitutions, elle découvrit sa nudité ; et mon âme se dégoûta d’elle, comme mon âme s’était dégoûtée de sa sœur.",
+        "NAB": "Her harlotry was discovered and her shame was revealed, and I became disgusted with her as I had become disgusted with her sister.",
+        "VAT_ES": "Ella había puesto de manifiesto sus prostituciones y había descubierto su desnudez. Entonces mi corazón se hastió de ella, como me había hastiado de su hermana.",
+        "CEI": "Poiché aveva messo in pubblico le sue tresche e scoperto la sua nudità, anch'io mi allontanai da lei come mi ero allontanato dalla sorella."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/תַּרְבֶּ֖ה אֶת תַּזְנוּתֶ֑י/הָ לִ/זְכֹּר֙ אֶת יְמֵ֣י נְעוּרֶ֔י/הָ אֲשֶׁ֥ר זָנְתָ֖ה בְּ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "καὶ ἐπλήθυνας τὴν πορνείαν σου τοῦ ἀναμνῆσαι ἡμέραν νεότητός σου ἐν αἷς ἐπόρνευσας ἐν Αἰγύπτῳ,",
+        "VUL": "multiplicavit enim fornicationes suas,/ recordans dies adolescentiæ suæ,/ quibus fornicata est in terra Ægypti./",
+        "SYN": "И она умножала блудодеяния свои, вспоминая дни молодости своей, когда блудила в земле Египетской;",
+        "NEO": "Elle a multiplié ses prostitutions, se rappelant les jours de sa jeunesse, lorsqu’elle se prostituait au pays d’Égypte.",
+        "NAB": "But she played the harlot all the more, recalling the days of her girlhood, when she had been a harlot in the land of Egypt.",
+        "VAT_ES": "Multiplicó sus prostituciones, acordándose de los días de su juventud, cuando se prostituía en Egipto:",
+        "CEI": "Ma essa continuò a moltiplicare prostituzioni, ricordando il tempo della sua gioventù, quando si prostituiva in Egitto."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַֽ/תַּעְגְּבָ֔/ה עַ֖ל פִּֽלַגְשֵׁי/הֶ֑ם אֲשֶׁ֤ר בְּשַׂר חֲמוֹרִים֙ בְּשָׂרָ֔/ם וְ/זִרְמַ֥ת סוּסִ֖ים זִרְמָתָֽ/ם׃",
+        "LXX": "καὶ ἐπέθου ἐπὶ τοὺς Χαλδαίους, ὧν ὡς ὄνων αἱ σάρκες αὐτῶν, καὶ αἰδοῖα ἵππων τὰ αἰδοῖα αὐτῶν,",
+        "VUL": "Et insanivit libidine super concubitum eorum,/ quorum carnes sunt ut carnes asinorum,/ et sicut fluxus equorum fluxus eorum./",
+        "SYN": "и пристрастилась к любовникам своим, у которых плоть - плоть ослиная, и похоть, как у жеребцов.",
+        "NEO": "Elle a brûlé pour ses impudiques, dont les membres sont des membres d’âne, et l’ardeur lubrique celle des étalons.",
+        "NAB": "She lusted for the lechers of Egypt, whose members are like that of an ass, and whose heat is like that of stallions.",
+        "VAT_ES": "se enamoró perdidamente de hombres disolutos, que tiene miembros de asnos y semen de padrillos.",
+        "CEI": "Arse di libidine per quegli amanti lussuriosi come asini, libidinosi come stalloni,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַֽ/תִּפְקְדִ֔י אֵ֖ת זִמַּ֣ת נְעוּרָ֑יִ/ךְ בַּ/עְשׂ֤וֹת מִ/מִּצְרַ֨יִם֙ דַּדַּ֔יִ/ךְ לְמַ֖עַן שְׁדֵ֥י נְעוּרָֽיִ/ךְ׃",
+        "LXX": "καὶ ἐπεσκέψω τὴν ἀνομίαν νεότητός σου, ἃ ἐποίεις ἐν Αἰγύπτῳ ἐν τῷ καταλύματί σου, οὗ οἱ μαστοὶ νεότητός σου.",
+        "VUL": "Et visitasti scelus adolescentiæ tuæ,/ quando subacta sunt in Ægypto ubera tua,/ et confractæ sunt mammæ pubertatis tuæ.]",
+        "SYN": "Так ты вспомнила распутство молодости твоей, когда Египтяне жали сосцы твои из-за девственных грудей твоих.",
+        "NEO": "Tu es revenue aux crimes de ta jeunesse, quand les Egyptiens pressaient tes mamelles, à cause de ton sein virginal.",
+        "NAB": "You yearned for the lewdness of your girlhood, when the Egyptians fondled your breasts, caressing your bosom.",
+        "VAT_ES": "&iexcl;Tú añorabas la lascivia de tu juventud, cuando los Egipcios manoseaban tus senos, acariciando tus pechos juveniles!",
+        "CEI": "e così rinnovò l'infamia della sua giovinezza, quando in Egitto veniva profanato il suo petto, oppresso il suo seno verginale."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "לָ/כֵ֣ן אָהֳלִיבָ֗ה כֹּֽה אָמַר֮ אֲדֹנָ֣/י יְהוִה֒ הִנְ/נִ֨י מֵעִ֤יר אֶת מְאַהֲבַ֨יִ/ךְ֙ עָלַ֔יִ/ךְ אֵ֛ת אֲשֶׁר נָקְעָ֥ה נַפְשֵׁ֖/ךְ מֵ/הֶ֑ם וַ/הֲבֵאתִ֥י/ם עָלַ֖יִ/ךְ מִ/סָּבִֽיב׃",
+        "LXX": "Διὰ τοῦτο, Ὀόλιβα, τάδε λέγει Κύριος Ἰδοὺ ἐγὼ ἐξεγείρω τοὺς ἐραστάς σου ἐπὶ σέ, ἀφ’ ὧν ἀπέστη ἡ ψυχή σου ἀπ’ αὐτῶν, καὶ ἐπάξω αὐτοὺς ἐπὶ σὲ κυκλόθεν,",
+        "VUL": "[Propterea, Ooliba, hæc dicit Dominus Deus :/ Ecce ego suscitabo omnes amatores tuos contra te,/ de quibus satiata est anima tua,/ et congregabo eos adversum te in circuitu :/",
+        "SYN": "Посему, Оголива, так говорит Господь Бог: вот, Я возбужу против тебя любовников твоих, от которых отвратилась душа твоя, и приведу их против тебя со всех сторон:",
+        "NEO": "C’est pourquoi, Ooliba, ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Voici que je vais exciter contre toi tes amants, ceux dont ton âme s’est dégoûtée, et je les ferai venir contre toi de toute part,",
+        "NAB": "Therefore, Oholibah, thus says the Lord GOD: I will now stir up your lovers against you, those with whom you are disgusted, and I will bring them against you from every side:",
+        "VAT_ES": "Por eso, Oholibá, así habla el Señor: Y o voy a suscitar contra ti a tus amantes, de los que te habías hastiado, y los traeré contra ti de todas partes:",
+        "CEI": "Per questo, Oolibà, così dice il Signore Dio: Ecco, io suscito contro di te gli amanti di cui mi sono disgustato e li condurrò contro di te da ogni parte,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "בְּנֵ֧י בָבֶ֣ל וְ/כָל כַּשְׂדִּ֗ים פְּק֤וֹד וְ/שׁ֨וֹעַ֙ וְ/ק֔וֹעַ כָּל בְּנֵ֥י אַשּׁ֖וּר אוֹתָ֑/ם בַּח֨וּרֵי חֶ֜מֶד פַּח֤וֹת וּ/סְגָנִים֙ כֻּלָּ֔/ם שָֽׁלִשִׁים֙ וּ/קְרוּאִ֔ים רֹכְבֵ֥י סוּסִ֖ים כֻּלָּֽ/ם׃",
+        "LXX": "υἱοὺς Βαβυλῶνος καὶ πάντας τοὺς Χαλδαίους, Φακοὺκ καὶ Σοῦε καὶ Ὑχοῦε, καὶ πάντας υἱοὺς Ἀσσυρίων μετ’ αὐτῶν, νεανίσκους ἐπιλέκτους, ἡγεμόνας καὶ στρατηγούς, πάντας τρισσοὺς καὶ ὀνομαστούς, ἱππεύοντας ἐφ’ ἵππων.",
+        "VUL": "filios Babylonis, et universos Chaldæos,/ nobiles, tyrannosque, et principes,/ omnes filios Assyriorum,/ juvenes forma egregia,/ duces et magistratus universos,/ principes principum, et nominatos ascensores equorum :/",
+        "SYN": "сынов Вавилона и всех Халдеев, из Пехода, из Шоа и Коа, и с ними всех сынов Ассура, красивых юношей, областеначальников и градоправителей, сановных и именитых, всех искусных наездников.",
+        "NEO": "les fils de Babylone et tous les Chaldéens, princes, chefs et seigneurs, et avec eux tous les fils de l’Assyrie, beaux jeunes hommes, tous gouverneurs et magistrats, dignitaires et personnages illustres, tous montés sur des chevaux.",
+        "NAB": "the men of Babylon and all of Chaldea, Pekod, Shoa and Koa, along with all those of Assyria, attractive young men, all of them governors and officers, charioteers and warriors, all of them horsemen.",
+        "VAT_ES": "a los babilonios y a todos los caldeos, a los de Pecod, de Soa y de Coa –y con ellos, a todos los asirios– jóvenes atrayentes, gobernadores y prefectos, escuderos, guerreros y jinetes.",
+        "CEI": "i figli di Babilonia e di tutti i Caldei, quelli di Pekòd, di Soa e di Koa e con loro tutti gli Assiri, tutti i giovani attraenti, prìncipi e capi, tutti capitani e cavalieri famosi;"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וּ/בָ֣אוּ עָלַ֡יִ/ךְ הֹ֠צֶן רֶ֤כֶב וְ/גַלְגַּל֙ וּ/בִ/קְהַ֣ל עַמִּ֔ים צִנָּ֤ה וּ/מָגֵן֙ וְ/קוֹבַ֔ע יָשִׂ֥ימוּ עָלַ֖יִ/ךְ סָבִ֑יב וְ/נָתַתִּ֤י לִ/פְנֵי/הֶם֙ מִשְׁפָּ֔ט וּ/שְׁפָט֖וּ/ךְ בְּ/מִשְׁפְּטֵי/הֶֽם׃",
+        "LXX": "καὶ πάντες ἥξουσιν ἐπὶ σὲ ἀπὸ βορρᾶ, ἅρματα καὶ τροχοὶ μετ’ ὄχλου λαῶν, θυρεοὶ καὶ πέλται, καὶ βαλεῖ φυλακὴν ἐπὶ σὲ κύκλῳ.",
+        "VUL": "et venient super te instructi curru et rota,/ multitudo populorum :/ lorica, et clypeo, et galea armabuntur contra te undique :/ et dabo coram eis judicium,/ et judicabunt te judiciis suis./",
+        "SYN": "И придут на тебя с оружием, с конями и колесницами и с множеством народа, и обступят тебя кругом в латах, со щитами и в шлемах, и отдам им тебя на суд, и будут судить тебя своим судом.",
+        "NEO": "Contre toi s’avancent armes, chars et roues, avec une multitude de peuples ; ils disposent contre toi boucliers, écus et casques ; je remets devant eux le jugement, et ils te jugeront selon leurs lois.",
+        "NAB": "They shall come against you from the north with chariots and wagons and many peoples. Shields, bucklers, and helmets they shall array against you everywhere.",
+        "VAT_ES": "Llegarán contra ti desde el Norte, con carros y rodados, al frente de una multitud de pueblos, y te atacarán por todas partes con escudos y cascos. Yo los encargaré del juicio, y ellos te juzgarán conforme a sus leyes.",
+        "CEI": "verranno contro di te dal settentrione con cocchi e carri e con una moltitudine di popolo e si schiereranno contro di te da ogni parte con scudi grandi e piccoli ed elmi. A loro ho rimesso il giudizio e ti giudicheranno secondo le loro leggi."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/נָתַתִּ֨י קִנְאָתִ֜/י בָּ֗/ךְ וְ/עָשׂ֤וּ אוֹתָ/ךְ֙ בְּ/חֵמָ֔ה אַפֵּ֤/ךְ וְ/אָזְנַ֨יִ/ךְ֙ יָסִ֔ירוּ וְ/אַחֲרִיתֵ֖/ךְ בַּ/חֶ֣רֶב תִּפּ֑וֹל הֵ֗מָּה בָּנַ֤יִ/ךְ וּ/בְנוֹתַ֨יִ/ךְ֙ יִקָּ֔חוּ וְ/אַחֲרִיתֵ֖/ךְ תֵּאָכֵ֥ל בָּ/אֵֽשׁ׃",
+        "LXX": "καὶ δώσω πρὸ προσώπου αὐτῶν κρίμα, καὶ ἐκδικήσουσίν σε ἐν τοῖς κρίμασιν αὐτῶν· καὶ δώσω τὸν ζῆλόν μου ἐν σοί, καὶ ποιήσουσιν μετὰ σοῦ ἐν ὀργῇ θυμοῦ· μυκτῆράς σου καὶ ὦτά σου ἀφελοῦσιν, καὶ τοὺς καταλοίπους σου ἐν ῥομφαίᾳ καταβαλοῦσιν. αὐτοὶ υἱούς σου καὶ θυγατέρας σου λήμψονται, καὶ τοὺς καταλοίπους σου πῦρ καταφάγεται·",
+        "VUL": "Et ponam zelum meum in te,/ quem exercent tecum in furore :/ nasum tuum et aures tuas præcident,/ et quæ remanserint, gladio concident./ Ipsi filios tuos et filias tuas capient,/ et novissimum tuum devorabitur igni :/",
+        "SYN": "И обращу ревность Мою против тебя, и поступят с тобою яростно: отрежут у тебя нос и уши, а остальное твое от меча падет; возьмут сыновей твоих и дочерей твоих, а остальное твое огнем будет пожрано;",
+        "NEO": "Je dirigerai ma jalousie contre toi ; et ils te traiteront avec fureur ; ils te couperont le nez et les oreilles, et ce qui restera de toi tombera par l’épée ; ils prendront tes fils et tes filles, et ce qui restera de toi sera dévoré par le feu.",
+        "NAB": "I will leave it to them to judge, and they will judge you by their own ordinances. I will let loose my jealousy against you, so that they shall deal with you in fury, cutting off your nose and ears; and what is left of you shall fall by the sword. They shall take away your sons and daughters, and what is left of you shall be devoured by fire.",
+        "VAT_ES": "Desataré mis celos contra ti, y será tratada con furor: te arrancarán la nariz y las orejas, y lo quede de ti caerá bajo la espada. Se apoderarán de tus hijos y de tus hijas, y lo que quede de ti será devorado por el fuego.",
+        "CEI": "Scatenerò la mia gelosia contro di te e ti tratteranno con furore: ti taglieranno il naso e gli orecchi e i superstiti cadranno di spada; deporteranno i tuoi figli e le tue figlie e ciò che rimarrà di te sarà preda del fuoco."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/הִפְשִׁיט֖וּ/ךְ אֶת בְּגָדָ֑יִ/ךְ וְ/לָקְח֖וּ כְּלֵ֥י תִפְאַרְתֵּֽ/ךְ׃",
+        "LXX": "καὶ ἐκδύσουσίν σε τὸν ἱματισμόν σου, καὶ λήμψονται τὰ σκεύη τῆς καυχήσεώς σου.",
+        "VUL": "et denudabunt te vestimentis tuis,/ et tollent vasa gloriæ tuæ./",
+        "SYN": "и снимут с тебя одежды твои, возьмут наряды твои.",
+        "NEO": "Ils te dépouilleront de tes vêtements, et ils enlèveront tes bijoux.",
+        "NAB": "They shall strip off your clothes and seize your splendid ornaments.",
+        "VAT_ES": "Te despojarán de tus vestidos y se apoderarán de tus joyas.",
+        "CEI": "Ti spoglieranno delle tue vesti e s'impadroniranno dei tuoi gioielli."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/הִשְׁבַּתִּ֤י זִמָּתֵ/ךְ֙ מִמֵּ֔/ךְ וְ/אֶת זְנוּתֵ֖/ךְ מֵ/אֶ֣רֶץ מִצְרָ֑יִם וְ/לֹֽא תִשְׂאִ֤י עֵינַ֨יִ/ךְ֙ אֲלֵי/הֶ֔ם וּ/מִצְרַ֖יִם לֹ֥א תִזְכְּרִי עֽוֹד׃",
+        "LXX": "καὶ ἀποστρέψω τὰς ἀσεβείας σου ἐκ σοῦ καὶ τὴν πορνείαν σου ἐκ γῆς Αἰγύπτου, καὶ οὐ μὴ ἄρῃς τοὺς ὀφθαλμούς σου ἐπ’ αὐτούς, καὶ Αἰγύπτου οὐ μὴ μνησθῇς οὐκέτι.",
+        "VUL": "Et requiescere faciam scelus tuum de te,/ et fornicationem tuam de terra Ægypti :/ nec levabis oculos tuos ad eos,/ et Ægypti non recordaberis amplius.]",
+        "SYN": "И положу конец распутству твоему и блужению твоему, принесенному из земли Египетской, и не будешь обращать к ним глаз твоих, и о Египте уже не вспомнишь.",
+        "NEO": "Je mettrai un terme à ton crime, et à tes prostitutions du pays d’Égypte ; tu ne lèveras plus les yeux vers eux, et tu ne te souviendras plus de l’Égypte.",
+        "NAB": "I will put an end to your lewdness and to the harlotry you began in Egypt; you shall no longer look toward it, nor shall you remember Egypt again.",
+        "VAT_ES": "Pondré fin a tu lascivia y a la prostitución que comenzaste en Egipto; ya no levantarás tus ojos hacia ellos y no te acordarás más Egipto.",
+        "CEI": "Metterò fine alle tue scelleratezze e alle tue prostituzioni commesse in Egitto: non alzerai più gli occhi verso di loro, non ricorderai più l'Egitto."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "כִּ֣י כֹ֤ה אָמַר֙ אֲדֹנָ֣/י יְהוִ֔ה הִנְ/נִי֙ נֹֽתְנָ֔/ךְ בְּ/יַ֖ד אֲשֶׁ֣ר שָׂנֵ֑את בְּ/יַ֛ד אֲשֶׁר נָקְעָ֥ה נַפְשֵׁ֖/ךְ מֵ/הֶֽם׃",
+        "LXX": "διότι τάδε λέγει κύριος Κύριος Ἰδοὺ ἐγὼ παραδίδωμί σε εἰς χεῖρας ὧν μισεῖς, ἀφ’ ὧν ἀπέστη ἡ ψυχή σου ἀπ’ αὐτῶν·",
+        "VUL": "[Quia hæc dicit Dominus Deus :/ Ecce ego tradam te in manus eorum quos odisti,/ in manus de quibus satiata est anima tua./",
+        "SYN": "Ибо так говорит Господь Бог: вот, Я предаю тебя в руки тех, которых ты возненавидела, в руки тех, от которых отвратилась душа твоя.",
+        "NEO": "Car ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Voici que je vais te livrer aux mains de ceux que tu hais, aux mains de ceux dont ton âme s’est dégoûtée.",
+        "NAB": "For thus says the Lord GOD: I am now handing you over to those whom you hate, to those who fill you with disgust.",
+        "VAT_ES": "Porque así habla el Señor: Voy a entregarte en manos de los que tú detestas, en manos de aquellos de los que te has hastiado.",
+        "CEI": "Perché così dice il Signore Dio: Ecco, io ti consegno in mano a coloro che tu odii, in mano a coloro di cui sei nauseata."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/עָשׂ֨וּ אוֹתָ֜/ךְ בְּ/שִׂנְאָ֗ה וְ/לָקְחוּ֙ כָּל יְגִיעֵ֔/ךְ וַ/עֲזָב֖וּ/ךְ עֵירֹ֣ם וְ/עֶרְיָ֑ה וְ/נִגְלָה֙ עֶרְוַ֣ת זְנוּנַ֔יִ/ךְ וְ/זִמָּתֵ֖/ךְ וְ/תַזְנוּתָֽיִ/ךְ׃",
+        "LXX": "καὶ ποιήσουσιν ἐν σοὶ ἐν μίσει, καὶ λήμψονται πάντας τούς πόνους σου καὶ τοὺς μόχθους σου, καὶ ἔσῃ γυμνὴ καὶ αἰσχύνουσα, καὶ ἀποκαλυφθήσεται αἰσχύνη πορνείας σου καὶ ἀσέβειά σου. καὶ ἡ πορνεία σου",
+        "VUL": "Et agent tecum in odio,/ et tollent omnes labores tuos,/ et dimittent te nudam et ignominia plenam :/ et revelabitur ignominia fornicationum tuarum,/ scelus tuum, et fornicationes tuæ./",
+        "SYN": "И поступят с тобою жестоко, и возьмут у тебя все, нажитое трудами, и оставят тебя нагою и непокрытою, и открыта будет срамная нагота твоя, и распутство твое, и блудодейство твое.",
+        "NEO": "Ils te traiteront avec haine, ils emporteront tout ce que tu as gagné, et te laisseront nue, complètement nue ; et ta nudité impudique, ton impureté et tes prostitutions seront découvertes.",
+        "NAB": "They shall deal with you in hatred, seizing all that you have worked for and leaving you stark naked, so that your indecent nakedness is exposed. Your lewdness and harlotry",
+        "VAT_ES": "Te tratarán con odio, se apoderarán de todo el fruto de tus esfuerzos y te abandonarán completamente desnuda. Así quedará al descubierto la verg&uuml;enza de tus prostituciones. Tu lascivia y tus prostituciones",
+        "CEI": "Ti tratteranno con odio e si impadroniranno di tutti i tuoi beni, lasciandoti nuda e scoperta; sarà svelata la turpitudine delle tue scelleratezze, la tua libidine e la tua disonestà."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "עָשֹׂ֥ה אֵ֖לֶּה לָ֑/ךְ בִּ/זְנוֹתֵ/ךְ֙ אַחֲרֵ֣י גוֹיִ֔ם עַ֥ל אֲשֶׁר נִטְמֵ֖את בְּ/גִלּוּלֵי/הֶֽם׃",
+        "LXX": "ἐποίησεν ταῦτά σοι, ἐν τῷ ἐκπορνεῦσαί σε ὀπίσω ἐθνῶν, καὶ ἐμιαίνου ἐν τοῖς ἐνθυμήμασιν αὐτῶν.",
+        "VUL": "Fecerunt hæc tibi,/ quia fornicata es post gentes/ inter quas polluta es in idolis earum./",
+        "SYN": "Это будет сделано с тобою за блудодейство твое с народами, которых идолами ты осквернила себя.",
+        "NEO": "On te traitera ainsi parce que tu t’es prostituée aux nations, parce que tu t’es souillée avec leurs idoles infâmes.",
+        "NAB": "have brought these things upon you, because you played the harlot with the nations by defiling yourself with their idols.",
+        "VAT_ES": "serán la causa de todo esto, porque te has prostituido yendo detrás de las naciones y te has contaminado con sus oídos.",
+        "CEI": "Così sarai trattata perché tu mi hai tradito con le genti, perché ti sei contaminata con i loro idoli."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "בְּ/דֶ֥רֶךְ אֲחוֹתֵ֖/ךְ הָלָ֑כְתְּ וְ/נָתַתִּ֥י כוֹסָ֖/הּ בְּ/יָדֵֽ/ךְ׃",
+        "LXX": "ἐν τῇ ὁδῷ τῆς ἀδελφῆς σου ἐπορεύθης, καὶ δώσω τὸ ποτήριον αὐτῆς εἰς χεῖράς σου.",
+        "VUL": "In via sororis tuæ ambulasti,/ et dabo calicem ejus in manu tua./",
+        "SYN": "Ты ходила дорогою сестры твоей; за то и дам в руку тебе чашу ее.",
+        "NEO": "Tu as marché dans la voie de ta sœur ; je mettrai sa coupe dans ta main.",
+        "NAB": "Because you followed in the path of your sister, I will hand you her cup.",
+        "VAT_ES": "Por haber seguido el camino de tu hermana, yo pondré su copa en tu mano.",
+        "CEI": "Hai seguito la via di tua sorella, la sua coppa porrò nelle tue mani\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "כֹּ֤ה אָמַר֙ אֲדֹנָ֣/י יְהֹוִ֔ה כּ֤וֹס אֲחוֹתֵ/ךְ֙ תִּשְׁתִּ֔י הָ/עֲמֻקָּ֖ה וְ/הָ/רְחָבָ֑ה תִּהְיֶ֥ה לִ/צְחֹ֛ק וּ/לְ/לַ֖עַג מִרְבָּ֥ה לְ/הָכִֽיל׃",
+        "LXX": "τάδε λέγει Κύριος Τὸ ποτήριον τῆς ἀδελφῆς σου πίεσαι, τὸ βαθὺ καὶ τὸ πλατὺ καὶ τὸ πλεονάζον τοῦ συντελέσαι μέθην,",
+        "VUL": "Hæc dicit Dominus Deus :/ Calicem sororis tuæ bibes profundum et latum :/ eris in derisum et in subsannationem quæ est capacissima./",
+        "SYN": "Так говорит Господь Бог: ты будешь пить чашу сестры твоей, глубокую и широкую, и подвергнешься посмеянию и позору, по огромной вместительности ее.",
+        "NEO": "Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Tu boiras la coupe de ta sœur, coupe profonde et large ; elle donnera à rire et à se moquer de toi, tant est grande sa capacité.",
+        "NAB": "Thus says the Lord GOD: The cup of your sister you shall drink, so wide and deep, which holds so much,",
+        "VAT_ES": "Así habla el Señor: Tú beberás la copa de tu hermana, ancha y profunda, de gran capacidad. Serás motivo de burla y escarnio.",
+        "CEI": "Dice il Signore Dio: \"Berrai la coppa di tua sorella, profonda e larga, sarai oggetto di derisione e di scherno; la coppa sarà di grande capacità."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "שִׁכָּר֥וֹן וְ/יָג֖וֹן תִּמָּלֵ֑אִי כּ֚וֹס שַׁמָּ֣ה וּ/שְׁמָמָ֔ה כּ֖וֹס אֲחוֹתֵ֥/ךְ שֹׁמְרֽוֹן׃",
+        "LXX": "καὶ ἐκλύσεως πλησθήσῃ· καὶ τὸ ποτήριον ἀφανισμοῦ ποτήριον ἀδελφῆς σου,",
+        "VUL": "Ebrietate et dolore repleberis :/ calice mroris et tristitiæ,/ calice sororis tuæ Samariæ./",
+        "SYN": "Опьянения и горести будешь исполнена: чаша ужаса и опустошения - чаша сестры твоей, Самарии!",
+        "NEO": "Tu seras remplie d’ivresse et de douleur ; c’est une coupe de désolation et de dévastation que la coupe de ta sœur, Samarie.",
+        "NAB": "Filled with destruction and grief, a cup of dismay, the cup of your sister.",
+        "VAT_ES": "Te llenarás de embriaguez y de aflicción. &iexcl;Copa de ruina y desolación es la copa de tu hermana Samaría!",
+        "CEI": "Tu sarai colma d'ubriachezza e d'affanno, coppa di desolazione e di sterminio era la coppa di tua sorella Samaria."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְ/שָׁתִ֨ית אוֹתָ֜/הּ וּ/מָצִ֗ית וְ/אֶת חֲרָשֶׂ֛י/הָ תְּגָרֵ֖מִי וְ/שָׁדַ֣יִ/ךְ תְּנַתֵּ֑קִי כִּ֚י אֲנִ֣י דִבַּ֔רְתִּי נְאֻ֖ם אֲדֹנָ֥/י יְהוִֽה׃",
+        "LXX": "καὶ πίεσαι αὐτό, καὶ τὰς ἑορτὰς καὶ τὰς νεομηνίας αὐτῆς ἀποστρέψω· διότι ἐγὼ λελάληκα, λέγει Κύριος.",
+        "VUL": "Et bibes illum, et epotabis usque ad fæces :/ et fragmenta ejus devorabis,/ et ubera tua lacerabis,/ quia ego locutus sum, ait Dominus Deus./",
+        "SYN": "И выпьешь ее, и осушишь, и черепки ее оближешь, и груди твои истерзаешь: ибо Я сказал это, говорит Господь Бог.",
+        "NEO": "Tu la boiras et la videras, tu en mordras les morceaux et t’en déchireras le sein ; car moi j’ai parlé, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "You shall drain it dry, and gnaw at the very sherds of the cup, and you shall tear out your breasts; for I have spoken, says the Lord GOD.",
+        "VAT_ES": "Tú la beberás hasta las heces, la romperás con tus dientes, y con sus pedazos te desgarrarás los pechos. Porque yo he hablado –oráculo del Señor–.",
+        "CEI": "Anche tu la berrai, la vuoterai, ne succhierai i cocci, ti lacererai il seno, poiché io ho parlato\". Parola del Signore."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "לָ/כֵ֗ן כֹּ֤ה אָמַר֙ אֲדֹנָ֣/י יְהוִ֔ה יַ֚עַן שָׁכַ֣חַתְּ אוֹתִ֔/י וַ/תַּשְׁלִ֥יכִי אוֹתִ֖/י אַחֲרֵ֣י גַוֵּ֑/ךְ וְ/גַם אַ֛תְּ שְׂאִ֥י זִמָּתֵ֖/ךְ וְ/אֶת תַּזְנוּתָֽיִ/ךְ׃",
+        "LXX": "διὰ τοῦτο τάδε λέγει Κύριος Ἀνθ’ ὧν ἐπελάθου μου καὶ ἀπέρριψάς με ὀπίσω τοῦ σώματός σου, καὶ σὺ λάβε τὴν ἀσέβειάν σου καὶ τὴν πορνείαν σου.",
+        "VUL": "Propterea hæc dicit Dominus Deus :/ Quia oblita es mei,/ et projecisti me post corpus tuum,/ tu quoque porta scelus tuum et fornicationes tuas.]",
+        "SYN": "Посему так говорит Господь Бог: так как ты забыла Меня и отвратилась от Меня, то и терпи за беззаконие твое и за блудодейство твое.",
+        "NEO": "C’est pourquoi ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Parce que tu m’as oublié, et que tu m’as rejeté derrière ton dos, porte donc, toi aussi, la peine de ton impureté et de tes prostitutions ! »",
+        "NAB": "Therefore thus says the Lord GOD: Because you have forgotten me and cast me behind your back, it is for you to bear the penalty of your lewdness and harlotry.",
+        "VAT_ES": "Por eso, así habla el Señor: Porque tú me has olvidado y me has arrojado detrás de tu espada, carga tú también con tu lascivia y tus prostituciones.",
+        "CEI": "Perciò dice il Signore Dio: \"Poiché tu mi hai dimenticato e mi hai voltato le spalle, sconterai dunque la tua disonestà e le tue dissolutezze!\"."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֵלַ֔/י בֶּן אָדָ֕ם הֲ/תִשְׁפּ֥וֹט אֶֽת אָהֳלָ֖ה וְ/אֶת אָהֳלִיבָ֑ה וְ/הַגֵּ֣ד לָ/הֶ֔ן אֵ֖ת תוֹעֲבוֹתֵי/הֶֽן׃",
+        "LXX": "Καὶ εἶπεν Κύριος πρὸς μέ Υἱὲ ἀνθρώπου, οὐ κρινεῖς τὴν Ὄολαν καὶ τὴν Ὄλιβαν; καὶ ἀναγγελεῖς αὐταῖς τὰς ἀνομίας αὐτῶν,",
+        "VUL": "Et ait Dominus ad me, dicens : [Fili hominis, numquid judicas Oollam et Oolibam,/ et annuntias eis scelera earum ?/",
+        "SYN": "И сказал мне Господь: сын человеческий! хочешь ли судить Оголу и Оголиву? выскажи им мерзости их;",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** me dit : « Fils de l’homme, jugeras-tu Oolla et Ooliba ? Déclare-leur leurs abominations.",
+        "NAB": "Then the LORD said to me: Son of man, would you judge Oholah and Oholibah? Then make known to them their abominations.",
+        "VAT_ES": "El Señor me dijo: Hijo de hombre, &iquest;no vas a juzgar a Oholá y Oholibá? Dales a conocer sus abominaciones.",
+        "CEI": "Il Signore mi disse: \"Figlio dell'uomo, non giudicherai tu Oolà e Oolibà? Non mostrerai ad esse i loro abomini?"
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "כִּ֣י נִאֵ֗פוּ וְ/דָם֙ בִּֽ/ידֵי/הֶ֔ן וְ/אֶת גִּלּֽוּלֵי/הֶ֖ן נִאֵ֑פוּ וְ/גַ֤ם אֶת בְּנֵי/הֶן֙ אֲשֶׁ֣ר יָֽלְדוּ לִ֔/י הֶעֱבִ֥ירוּ לָ/הֶ֖ם לְ/אָכְלָֽה׃",
+        "LXX": "ὅτι ἐμοιχῶντο, καὶ αἷμα ἐν χερσίν αὐτῶν· τὰ ἐνθυμήματα αὐτῶν ἐμοιχῶντο, καὶ τὰ τέκνα αὐτῶν ἃ ἐγέννησάν μοι διήγαγον αὐτοῖς δι’ ἐμπύρων.",
+        "VUL": "Quia adulteratæ sunt, et sanguis in manibus earum,/ et cum idolis suis fornicatæ sunt :/ insuper et filios suos quos genuerunt mihi,/ obtulerunt eis ad devorandum./",
+        "SYN": "ибо они прелюбодействовали, и кровь на руках их, и с идолами своими прелюбодействовали, и сыновей своих, которых родили Мне, через огонь проводили в пищу им.",
+        "NEO": "Car elles ont été adultères, et il y a du sang dans leurs mains ; elles ont commis l’adultère avec leurs idoles infâmes, et même leurs fils qu’elles m’avaient enfantés, elles les ont fait passer par le feu, pour qu’ils les mangent.",
+        "NAB": "For they committed adultery, and blood is on their hands. They committed adultery with their idols; to feed them they immolated the children they had borne me.",
+        "VAT_ES": "porque han sido adúlteras y hay sangre en sus manos; han cometido adulterios con sus ídolos y les han ofrecido como alimento a mis hijos, los que ellas me habían engendrado,",
+        "CEI": "Sono state adultere e le loro mani sono lorde di sangue, hanno commesso adulterio con i loro idoli; perfino i figli che mi avevano partorito, li hanno fatti passare per il fuoco in loro pasto."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "ע֥וֹד זֹ֖את עָ֣שׂוּ לִ֑/י טִמְּא֤וּ אֶת מִקְדָּשִׁ/י֙ בַּ/יּ֣וֹם הַ/ה֔וּא וְ/אֶת שַׁבְּתוֹתַ֖/י חִלֵּֽלוּ׃",
+        "LXX": "ἕως καὶ ταῦτα ἐποίησάν μοι, τὰ ἅγιά μου ἐμίαινον καὶ τὰ σάββατά μου ἐβεβήλουν,",
+        "VUL": "Sed et hoc fecerunt mihi :/ polluerunt sanctuarium meum in die illa,/ et sabbata mea profanaverunt./",
+        "SYN": "Еще вот что они делали Мне: оскверняли святилище Мое в тот же день, и нарушали субботы Мои;",
+        "NEO": "Voici encore ce qu’elles ont fait : Elles ont souillé mon sanctuaire en ce jour-là, et elles ont profané mes sabbats.",
+        "NAB": "(This, too, they did to me: they defiled my sanctuary and desecrated my sabbaths.",
+        "VAT_ES": "Y todavía me hicieron algo más: contaminaron mi Santuario en aquel día y profanaron mis sábados.",
+        "CEI": "Ancor questo mi hanno fatto: in quello stesso giorno hanno contaminato il mio santuario e profanato i miei sabati;"
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וּֽ/בְ/שַׁחֲטָ֤/ם אֶת בְּנֵי/הֶם֙ לְ/גִלּ֣וּלֵי/הֶ֔ם וַ/יָּבֹ֧אוּ אֶל מִקְדָּשִׁ֛/י בַּ/יּ֥וֹם הַ/ה֖וּא לְ/חַלְּל֑/וֹ וְ/הִנֵּה כֹ֥ה עָשׂ֖וּ בְּ/ת֥וֹךְ בֵּיתִֽ/י׃",
+        "LXX": "καὶ ἐν τῷ σφάζειν αὐτοὺς τὰ τέκνα αὐτῶν τοῖς εἰδώλοις αὐτῶν, καὶ εἰσεπορεύοντο εἰς τὰ ἅγιά μου τοῦ βεβηλοῦν αὐτά. καὶ ὅτι οὕτως ἐποίουν ἐν μέσῳ τοῦ οἴκου μου,",
+        "VUL": "Cumque immolarent filios suos idolis suis,/ et ingrederentur sanctuarium meum in die illa ut polluerent illud,/ etiam hæc fecerunt in medio domus meæ./",
+        "SYN": "потому что, когда они заколали детей своих для идолов своих, в тот же день приходили в святилище Мое, чтобы осквернять его: вот как поступали они в доме Моем!",
+        "NEO": "Et lorsqu’elles immolaient leurs fils à leurs idoles infâmes, elles entraient le même jour dans mon sanctuaire, pour le profaner : Voilà ce qu’elles ont fait au milieu de ma maison.",
+        "NAB": "On the very day they slew their children for their idols, they entered my sanctuary to desecrate it. Thus they acted within my house.)",
+        "VAT_ES": "Y mientras inmolaban a sus hijos en honor de sus ídolos, entraban ese mismo día en mi Santuario para profanarlo. &iexcl;Esto es lo que han hecho en medio de mi casa!",
+        "CEI": "dopo avere immolato i loro figli ai loro idoli, sono venute in quel medesimo giorno al mio santuario per profanarlo: ecco quello che hanno fatto dentro la mia casa!"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וְ/אַ֗ף כִּ֤י תִשְׁלַ֨חְנָה֙ לַֽ/אֲנָשִׁ֔ים בָּאִ֖ים מִ/מֶּרְחָ֑ק אֲשֶׁ֨ר מַלְאָ֜ךְ שָׁל֤וּחַ אֲלֵי/הֶם֙ וְ/הִנֵּה בָ֔אוּ לַ/אֲשֶׁ֥ר רָחַ֛צְתְּ כָּחַ֥לְתְּ עֵינַ֖יִ/ךְ וְ/עָ֥דִית עֶֽדִי׃",
+        "LXX": "καὶ ὅτι τοῖς ἀνδράσιν τοῖς ἐρχομένοις μακρόθεν, οἷς ἀγγέλους ἐξαπέστελλον πρὸς αὐτούς, καὶ ἅμα τῷ ἔρχεσθαι αὐτοὺς εὐθὺς ἐλούου καὶ ἐστιβίζου τοὺς ὀφθαλμούς σου καὶ ἐκόσμου κόσμῳ,",
+        "VUL": "Miserunt ad viros venientes de longe,/ ad quos nuntium miserant :/ itaque ecce venerunt quibus te lavisti,/ et circumlinisti stibio oculos tuos,/ et ornata es mundo muliebri./",
+        "SYN": "Кроме сего посылали за людьми, приходившими издалека; к ним отправляли послов, и вот, они приходили, и ты для них умывалась, сурьмила глаза твои и украшалась нарядами,",
+        "NEO": "Et même elles ont envoyé chercher des hommes venant de loin ; et ceux à qui avait été envoyé un messager, voici qu’ils sont venus,... ceux pour qui tu t’es lavée, tu as mis du fard à tes yeux, tu t’es ornée de parures !",
+        "NAB": "Moreover, they sent for men who had to come from afar, to whom messengers were sent. And so they came - and for them you bathed yourself, painted your eyes, and put on ornaments.",
+        "VAT_ES": "Más aún, ellas mandaron llamar por medio de un mensajero a hombres que debían venir de lejos. Así llegaron aquellos para los que tú te bañaste, te pintaste los ojos y te adornaste con joyas.",
+        "CEI": "Si rivolsero anche a uomini di paesi lontani, invitandoli per mezzo di messaggeri, ed essi giunsero. Per loro ti sei lavata, ti sei dipinta gli occhi, ti sei adornata dei tuoi vestiti preziosi,"
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וְ/יָשַׁבְתְּ֙ עַל מִטָּ֣ה כְבוּדָּ֔ה וְ/שֻׁלְחָ֥ן עָר֖וּךְ לְ/פָנֶ֑י/הָ וּ/קְטָרְתִּ֥/י וְ/שַׁמְנִ֖/י שַׂ֥מְתְּ עָלֶֽי/הָ׃",
+        "LXX": "καὶ ἐκάθου ἐπὶ κλίνης ἐστρωμένης, καὶ τράπεζα κεκοσμημένη πρὸ προσώπου αὐτῆς. καὶ τὸ θυμίαμα καὶ τὸ ἔλαιόν μου εὐφραίνοντο ἐν αὐτοῖς,",
+        "VUL": "Sedisti in lecto pulcherrimo,/ et mensa ornata est ante te :/ thymiama meum et unguentum meum posuisti super eam./",
+        "SYN": "и садились на великолепное ложе, перед которым приготовляем был стол и на котором предлагала ты благовонные курения Мои и елей Мой.",
+        "NEO": "Et tu t’es assise sur un lit d’apparat, devant lequel une table était dressée, où tu as posé mon encens et mon huile.",
+        "NAB": "You sat on a couch prepared for them, with a table spread before it, on which you had set my incense and oil.",
+        "VAT_ES": "Luego te recostaste en un lecho suntuoso, ante una mesa servida donde habías puesto mi incienso y mi aceite.",
+        "CEI": "ti sei stesa su un magnifico divano davanti ad una tavola imbandita, su cui hai posto il mio olio, i miei profumi."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וְ/ק֣וֹל הָמוֹן֮ שָׁלֵ֣ו בָ/הּ֒ וְ/אֶל אֲנָשִׁים֙ מֵ/רֹ֣ב אָדָ֔ם מוּבָאִ֥ים סובאים סָבָאִ֖ים מִ/מִּדְבָּ֑ר וַֽ/יִּתְּנ֤וּ צְמִידִים֙ אֶל יְדֵי/הֶ֔ן וַ/עֲטֶ֥רֶת תִּפְאֶ֖רֶת עַל רָאשֵׁי/הֶֽן׃",
+        "LXX": "καὶ φωνὴν ἁρμονίας ἀνεκρούοντο, καὶ πρὸς ἄνδρας ἐκ πλήθους ἀνθρώπων ἥκοντας ἐκ τῆς ἐρήμου· καὶ ἐδίδοσαν ψέλια ἐπὶ τὰς χεῖρας αὐτῶν καὶ στέφανον καυχήσεως ἐπὶ τὰς κεφαλὰς αὐτῶν.",
+        "VUL": "Et vox multitudinis exsultantis erat in ea :/ et in viris, qui de multitudine hominum adducebantur,/ et veniebant de deserto,/ posuerunt armillas in manibus eorum,/ et coronas speciosas in capitibus eorum./",
+        "SYN": "И раздавался голос народа, ликовавшего у нее, и к людям из толпы народной вводимы были пьяницы из пустыни; и они возлагали на руки их запястья и на головы их красивые венки.",
+        "NEO": "On y entendait le bruit d’une foule à l’aise ; aux gens venus des grands amas d’hommes, se sont joints les buveurs du désert, qui ont mis des bracelets aux mains des deux sœurs, et des couronnes magnifiques sur leurs têtes.",
+        "NAB": "Then was heard the shout of a carefree mob in the city, and these were men brought in from the desert, who put bracelets on the women's arms and splendid diadems on their heads.",
+        "VAT_ES": "Allí se escuchaba el ruido de una multitud despreocupada; y junto a hombres comunes, había allí sabeos traídos del desierto. Ellos pusieron pulseras en los brazos de las mujeres y espléndidas coronas en sus cabezas.",
+        "CEI": "Si udiva lo strepito di una moltitudine festante di uomini venuti dal deserto, i quali avevano messo braccialetti ai polsi e una corona di gloria sul loro capo."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וָ/אֹמַ֕ר לַ/בָּלָ֖ה נִֽאוּפִ֑ים עת עַתָּ֛ה יזנה יִזְנ֥וּ תַזְנוּתֶ֖/הָ וָ/הִֽיא׃",
+        "LXX": "καὶ εἶπα Οὐκ ἐν τούτοις μοιχεύουσιν; καὶ ἔργα πόρνης καὶ αὐτὴ ἐξεπόρνευσεν·",
+        "VUL": "Et dixi ei, quæ attrita est in adulteriis :/ Nunc fornicabitur in fornicatione sua etiam hæc./",
+        "SYN": "Тогда сказал Я об одряхлевшей в прелюбодействе: теперь кончатся блудодеяния ее вместе с нею.",
+        "NEO": "Et je dis à cette femme usée dans les adultères : Va-t-elle maintenant continuer ses prostitutions, elle aussi ?",
+        "NAB": "So I said: \"Oh, this woman jaded with adulteries! Now they will commit whoredom with her, and as for her. . . .\"",
+        "VAT_ES": "Entonces, yo pensé de esa mujer consumida por tantos adulterios: Ahora todos se van a prostituir con ella.",
+        "CEI": "Io pensavo di costei, abituata agli adultèri: Ora costoro si faranno complici delle sue prostituzioni."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וַ/יָּב֣וֹא אֵלֶ֔י/הָ כְּ/ב֖וֹא אֶל אִשָּׁ֣ה זוֹנָ֑ה כֵּ֣ן בָּ֗אוּ אֶֽל אָֽהֳלָה֙ וְ/אֶל אָ֣הֳלִיבָ֔ה אִשֹּׁ֖ת הַ/זִּמָּֽה׃",
+        "LXX": "καὶ εἰσεπορεύοντο πρὸς αὐτήν, ὃν τρόπον εἰσπορεύονται πρὸς γυναῖκα πόρνην, οὕτως εἰσεπορεύοντο πρὸς Ὄολαν καὶ πρὸς Ὀόλιβαν τοῦ ποιῆσαι ἀνομίαν.",
+        "VUL": "Et ingressi sunt ad eam quasi ad mulierem meretricem :/ sic ingrediebantur ad Oollam et Oolibam, mulieres nefarias./",
+        "SYN": "Но приходили к ней, как приходят к жене блуднице, так приходили к Оголе и Оголиве, к распутным женам.",
+        "NEO": "On va vers elle comme on va chez une prostituée. C’est ainsi qu’on est allé chez Oolla et Ooliba, ces femmes criminelles.",
+        "NAB": "And indeed they did come to her as men come to a harlot. Thus they came to Oholah and Oholibah, the lewd women.",
+        "VAT_ES": "Y se acercaron a ella como a una prostituta, se acercaron a Oholá y Oholibá, esas mujeres lascivas.",
+        "CEI": "Infatti entrarono da lei, come si entra da una prostituta: così entrarono da Oolà e da Oolibà, donne di malaffare."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וַ/אֲנָשִׁ֣ים צַדִּיקִ֗ם הֵ֚מָּה יִשְׁפְּט֣וּ אֽוֹתְ/הֶ֔ם מִשְׁפַּט֙ נֹֽאֲפ֔וֹת וּ/מִשְׁפַּ֖ט שֹׁפְכ֣וֹת דָּ֑ם כִּ֤י נֹֽאֲפֹת֙ הֵ֔נָּה וְ/דָ֖ם בִּֽ/ידֵי/הֶֽן׃",
+        "LXX": "καὶ ἄνδρες δίκαιοι αὐτοὶ καὶ ἐκδικήσουσιν αὐτὰς ἐκδικήσει μοιχαλίδος καὶ ἐκδικήσει αἵματος, ὅτι μοιχαλίδες εἰσίν, καὶ αἷμα ἐν χερσὶν αὐτῶν.",
+        "VUL": "Viri ergo justi sunt :/ hi judicabunt eas judicio adulterarum,/ et judicio effundentium sanguinem :/ quia adulteræ sunt,/ et sanguis in manibus earum./",
+        "SYN": "Но мужи праведные будут судить их; они будут судить их судом прелюбодейц и судом проливающих кровь, потому что они прелюбодейки, и у них кровь на руках.",
+        "NEO": "Mais des hommes justes les condamneront à la peine des femmes adultères, et à la peine de celles qui répandent le sang ; car elles sont adultères, et il y a du sang dans leurs mains.",
+        "NAB": "But just men shall punish them with the sentence meted out to adulteresses and murderesses, for they have committed adultery, and blood is on their hands.",
+        "VAT_ES": "Pero hombres justos las juzgarán como se juzga a las adúlteras y a las sanguinarias, porque son adúlteras y hay sangre en sus manos.",
+        "CEI": "Ma uomini retti le giudicheranno come si giudicano le adultere e le assassine. Le loro mani sono lorde di sangue\"."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "כִּ֛י כֹּ֥ה אָמַ֖ר אֲדֹנָ֣/י יְהוִ֑ה הַעֲלֵ֤ה עֲלֵי/הֶם֙ קָהָ֔ל וְ/נָתֹ֥ן אֶתְ/הֶ֖ן לְ/זַעֲוָ֥ה וְ/לָ/בַֽז׃",
+        "LXX": "τάδε λέγει κύριος Κύριος Ἀνάγαγε ἐπ’ αὐτὰς ὄχλον, καὶ δὸς ἐν αὐταῖς ταραχὴν καὶ διαρπαγήν,",
+        "VUL": "Hæc enim dicit Dominus Deus :/ Adduc ad eas multitudinem,/ et trade eas in tumultum et in rapinam./",
+        "SYN": "Ибо так сказал Господь Бог: созвать на них собрание и предать их озлоблению и грабежу.",
+        "NEO": "Car ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Fais monter contre elles une assemblée, et qu’on les livre à la terreur et au pillage ;",
+        "NAB": "Thus says the Lord GOD: Summon an assembly against them, and deliver them over to terror and plunder.",
+        "VAT_ES": "Porque así habla el Señor: Que se convoque contra ellas una asamblea y se las entregue a la vejación y al saqueo.",
+        "CEI": "Dice infatti il Signore Dio: \"Si farà venire contro di loro una folla ed esse saranno abbandonate alle malversazioni e al saccheggio."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "וְ/רָגְמ֨וּ עֲלֵי/הֶ֥ן אֶ֨בֶן֙ קָהָ֔ל וּ/בָרֵ֥א אוֹתְ/הֶ֖ן בְּ/חַרְבוֹתָ֑/ם בְּנֵי/הֶ֤ם וּ/בְנֽוֹתֵי/הֶם֙ יַהֲרֹ֔גוּ וּ/בָתֵּי/הֶ֖ן בָּ/אֵ֥שׁ יִשְׂרֹֽפוּ׃",
+        "LXX": "καὶ λιθοβόλησον ἐπ’ αὐτὰς λίθοις ὄχλων, καὶ κατακέντει αὐτὰς ἐν τοῖς ξίφεσιν αὐτῶν· υἱοὺς αὐτῶν καὶ θυγατέρας αὐτῶν ἀποκτενοῦσι, καὶ τοὺς οἴκους αὐτῶν ἐνπρήσουσιν.",
+        "VUL": "Et lapidentur lapidibus populorum,/ et confodiantur gladiis eorum :/ filios et filias earum interficient,/ et domos earum igne succendent./",
+        "SYN": "И собрание побьет их камнями, и изрубит их мечами своими, и убьет сыновей их и дочерей их, и домы их сожжет огнем.",
+        "NEO": "et que l’assemblée les accable sous les pierres, et les taille en pièces avec ses épées ; qu’on tue leurs fils et leurs filles, et qu’on brûle au feu leurs maisons !",
+        "NAB": "The assembly shall stone them and hack them to pieces with their swords. They shall slay their sons and daughters, and burn their houses with fire.",
+        "VAT_ES": "Que la asamblea las mate a pedradas, y se las despedace con la espada; que se deg&uuml;elle a sus hijos y a sus hijas, y que se prenda fuego a sus casas.",
+        "CEI": "La folla le lapiderà e le farà a pezzi con le spade; ne ucciderà i figli e le figlie e darà alle fiamme le case."
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "וְ/הִשְׁבַּתִּ֥י זִמָּ֖ה מִן הָ/אָ֑רֶץ וְ/נִֽוַּסְּרוּ֙ כָּל הַ/נָּשִׁ֔ים וְ/לֹ֥א תַעֲשֶׂ֖ינָה כְּ/זִמַּתְ/כֶֽנָה׃",
+        "LXX": "καὶ ἀποστρέψω ἀσέβειαν ἐκ τῆς γῆς, καὶ παιδευθήσονται πᾶσαι αἱ γυναῖκες καὶ οὐ μὴ ποιήσουσιν κατὰ τὰς ἀσεβείας αὐτῶν.",
+        "VUL": "Et auferam scelus de terra,/ et discent omnes mulieres ne faciant secundum scelus earum./",
+        "SYN": "Так положу конец распутству на сей земле, и все женщины примут урок, и не будут делать срамных дел подобно вам;",
+        "NEO": "Et je ferai cesser l’impureté dans le pays, et toutes les femmes en recevront une leçon, et ne commettront pas des impuretés pareilles aux vôtres,",
+        "NAB": "Thus I will put an end to lewdness in the land, and all the women will be warned not to imitate your lewdness.",
+        "VAT_ES": "Así haré desaparecer la lascivia del país. Todas las mujeres recibirán una lección y no imitarán la mala conducta de ustedes.",
+        "CEI": "Eliminerò così un'infamia dalla terra e tutte le donne impareranno a non commettere infamie simili."
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "וְ/נָתְנ֤וּ זִמַּתְ/כֶ֨נָה֙ עֲלֵי/כֶ֔ן וַ/חֲטָאֵ֥י גִלּוּלֵי/כֶ֖ן תִּשֶּׂ֑אינָה וִ/ידַעְתֶּ֕ם כִּ֥י אֲנִ֖י אֲדֹנָ֥/י יְהוִֽה׃",
+        "LXX": "καὶ δοθήσεται ἡ ἀσέβεια ὑμῶν ἐφ’ ὑμᾶς, καὶ τὰς ἁμαρτίας τῶν ἐνθυμημάτων ὑμῶν λήμψεσθε· καὶ γνώσεσθε διότι ἐγὼ Κύριος.",
+        "VUL": "Et dabunt scelus vestrum super vos,/ et peccata idolorum vestrorum portabitis :/ et scietis quia ego Dominus Deus.]",
+        "SYN": "и возложат на вас ваше распутство, и понесете наказание за грехи с идолами вашими, и узнаете, что Я Господь Бог.",
+        "NEO": "On fera retomber votre impureté sur vous, et vous porterez la peine de votre idolâtrie ; et vous saurez que je suis le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "They shall inflict on you the penalty of your lewdness, and you shall pay for your sins of idolatry. Thus you shall know that I am the LORD.",
+        "VAT_ES": "Sobre ustedes recaerá su propia lascivia y cargarán con los pecados de idolatría. Entonces sabrán que yo soy el Señor.",
+        "CEI": "Faranno ricadere la vostra infamia su di voi e sconterete i vostri peccati di idolatria: saprete così che io sono il Signore Dio\"."
+      }
+    }
+  }
+}

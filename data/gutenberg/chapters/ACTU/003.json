@@ -1,0 +1,457 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ACTU_003",
+  "book_key": "ACTU",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Actus_Apostolorum",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Ἐπὶ τὸ αὐτὸ δὲ Πέτρος καὶ Ἰωάννης ἀνέβαινον εἰς τὸ ἱερὸν ἐπὶ τὴν ὥραν τῆς προσευχῆς τὴν ἐνάτην.",
+        "VUL": "Petrus autem et Joannes ascendebant in templum ad horam orationis nonam.",
+        "SYN": "Петр и Иоанн шли вместе в храм в час молитвы девятый.",
+        "NEO": "Pierre et Jean montaient (ensemble) au temple pour la prière de la neuvième heure.+ 3:1 III, 1. Les heures destinées chez les Juifs à la prière publique étaient la troisième, la sixième et la neuvième (9 h. du matin, midi, 3 h. après-midi). C’est à la neuvième heure qu’on offrait le sacrifice du soir (Voy. Exod. xxix, 38 ; Nombr. xxviii, 3 ; Josèphe, Ant. xiv, 4, 3).*",
+        "NAB": "Now Peter and John were going up to the temple area for the three o'clock hour of prayer.",
+        "VAT_ES": "En una ocasión, Pedro y Juan subían al Templo para la oración de la tarde.",
+        "CEI": "Appena cessato il tumulto, Paolo mandò a chiamare i discepoli e, dopo averli incoraggiati, li salutò e si mise in viaggio per la Macedonia."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Καί τις ἀνὴρ χωλὸς ἐκ κοιλίας μητρὸς αὐτοῦ ὑπάρχων ἐβαστάζετο· ὃν ἐτίθουν καθ’ ἡμέραν πρὸς τὴν θύραν τοῦ ἱεροῦ τὴν λεγομένην Ὡραίαν, τοῦ αἰτεῖν ἐλεημοσύνην παρὰ τῶν εἰσπορευομένων εἰς τὸ ἱερόν.",
+        "VUL": "Et quidam vir, qui erat claudus ex utero matris suæ, bajulabatur : quem ponebant quotidie ad portam templi, quæ dicitur Speciosa, ut peteret eleemosynam ab introëuntibus in templum.",
+        "SYN": "И был человек, хромой от чрева матери его, которого носили и сажали каждый день при дверях храма, называемых Красными, просить милостыни у входящих в храм.",
+        "NEO": "Or, il y avait un homme, boiteux de naissance, qui se faisait transporter. On le posait chaque jour près de la porte du temple, appelée la Belle-Porte, pour qu’il pût demander l’aumône à ceux qui entraient dans le temple.+ 3:2 2. La porte orientale s’appelait Porte de Nicanor ; on la surnommait \\+qt la Belle\\+qt*, sans doute à cause des ornements d’or et d’airain qui la décoraient.*",
+        "NAB": "And a man crippled from birth was carried and placed at the gate of the temple called \"the Beautiful Gate\" every day to beg for alms from the people who entered the temple.",
+        "VAT_ES": "Allí encontraron a un paralítico de nacimiento, que ponían diariamente junto a la puerta del Templo llamada «la Hermosa», para pedir limosna a los que entraban.",
+        "CEI": "Dopo aver attraversato quelle regioni, esortando con molti discorsi i fedeli, arrivò in Grecia."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Ὃς ἰδὼν Πέτρον καὶ Ἰωάννην μέλλοντας εἰσιέναι εἰς τὸ ἱερόν, ἠρώτα ἐλεημοσύνην.",
+        "VUL": "Is cum vidisset Petrum et Joannem incipientes introire in templum, rogabat ut eleemosynam acciperet.",
+        "SYN": "Он, увидев Петра и Иоанна перед входом в храм, просил у них милостыни.",
+        "NEO": "Cet homme, ayant vu Pierre et Jean qui allaient y entrer, leur demanda l’aumône.",
+        "NAB": "When he saw Peter and John about to go into the temple, he asked for alms.",
+        "VAT_ES": "Cuando él vio a Pedro y a Juan entrar en el Templo, les pidió una limosna.",
+        "CEI": "Trascorsi tre mesi, poiché ci fu un complotto dei Giudei contro di lui, mentre si apprestava a salpare per la Siria, decise di far ritorno attraverso la Macedonia."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ἀτενίσας δὲ Πέτρος εἰς αὐτὸν σὺν τῷ Ἰωάννῃ, εἶπεν, Βλέψον εἰς ἡμᾶς.",
+        "VUL": "Intuens autem in eum Petrus cum Joanne, dixit : Respice in nos.",
+        "SYN": "Петр с Иоанном, всмотревшись в него, сказали: взгляни на нас.",
+        "NEO": "Pierre, ainsi que Jean, fixa les yeux sur lui et dit : « Regarde-nous. »",
+        "NAB": "But Peter looked intently at him, as did John, and said, \"Look at us.\"",
+        "VAT_ES": "Entonces Pedro, fijando la mirada en él, lo mismo que Juan, le dijo: «Míranos».",
+        "CEI": "Lo accompagnarono Sòpatro di Berèa, figlio di Pirro, Aristarco e Secondo di Tessalonica, Gaio di Derbe e Timòteo, e gli asiatici Tìchico e Tròfimo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ ἐπεῖχεν αὐτοῖς, προσδοκῶν τι παρ’ αὐτῶν λαβεῖν.",
+        "VUL": "At ille intendebat in eos, sperans se aliquid accepturum ab eis.",
+        "SYN": "И он пристально смотрел на них, надеясь получить от них что-- нибудь.",
+        "NEO": "Il les regarda attentivement, s’attendant à recevoir d’eux quelque chose.",
+        "NAB": "He paid attention to them, expecting to receive something from them.",
+        "VAT_ES": "El hombre los miró fijamente esperando que le dieran algo.",
+        "CEI": "Questi però, partiti prima di noi ci attendevano a Troade;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Εἶπεν δὲ Πέτρος, Ἀργύριον καὶ χρυσίον οὐχ ὑπάρχει μοι· ὃ δὲ ἔχω, τοῦτό σοι δίδωμι. Ἐν τῷ ὀνόματι Ἰησοῦ χριστοῦ τοῦ Ναζωραίου, ἔγειραι καὶ περιπάτει.",
+        "VUL": "Petrus autem dixit : Argentum et aurum non est mihi : quod autem habeo, hoc tibi do : in nomine Jesu Christi Nazareni surge, et ambula.",
+        "SYN": "Но Петр сказал: серебра и золота нет у меня; а что имею, то даю тебе: во имя Иисуса Христа Назорея встань и ходи.",
+        "NEO": "Mais Pierre lui dit : « Je n’ai ni or ni argent ; mais ce que j’ai, je te le donne : au nom de Jésus-Christ de Nazareth, lève-toi et marche. »",
+        "NAB": "Peter said, \"I have neither silver nor gold, but what I do have I give you: in the name of Jesus Christ the Nazorean, (rise and) walk.\"",
+        "VAT_ES": "Pedro le dijo: «No tengo plata ni oro, pero te doy lo que tengo: en el nombre de Jesucristo de Nazaret, levántate y camina».",
+        "CEI": "noi invece salpammo da Filippi dopo i giorni degli Azzimi e li raggiungemmo in capo a cinque giorni a Troade dove ci trattenemmo una settimana."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Καὶ πιάσας αὐτὸν τῆς δεξιᾶς χειρὸς ἤγειρεν· παραχρῆμα δὲ ἐστερεώθησαν αὐτοῦ αἱ βάσεις καὶ τὰ σφυρά.",
+        "VUL": "Et apprehensa manu ejus dextera, allevavit eum, et protinus consolidatæ sunt bases ejus et plantæ.",
+        "SYN": "И, взяв его за правую руку, поднял; и вдруг укрепились его ступни и колени,",
+        "NEO": "Et le prenant par la main, il l’aida à se lever. Au même instant, ses jambes et ses pieds devinrent fermes ;",
+        "NAB": "Then Peter took him by the right hand and raised him up, and immediately his feet and ankles grew strong.",
+        "VAT_ES": "Y tomándolo de la mano derecha, lo levantó; de inmediato, se le fortalecieron los pies y los tobillos.",
+        "CEI": "Il primo giorno della settimana ci eravamo riuniti a spezzare il pane e Paolo conversava con loro; e poiché doveva partire il giorno dopo, prolungò la conversazione fino a mezzanotte."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Καὶ ἐξαλλόμενος ἔστη καὶ περιεπάτει, καὶ εἰσῆλθεν σὺν αὐτοῖς εἰς τὸ ἱερόν, περιπατῶν καὶ ἁλλόμενος καὶ αἰνῶν τὸν θεόν.",
+        "VUL": "Et exiliens stetit, et ambulabat : et intravit cum illis in templum ambulans, et exiliens, et laudans Deum.",
+        "SYN": "и вскочив, стал, и начал ходить, и вошел с ними в храм, ходя и скача, и хваля Бога.",
+        "NEO": "d’un bond il fut debout, et il se mit à marcher. Puis il entra avec eux dans le temple, marchant, sautant et louant Dieu.",
+        "NAB": "He leaped up, stood, and walked around, and went into the temple with them, walking and jumping and praising God.",
+        "VAT_ES": "Dando un salto, se puso de pie y comenzó a caminar; y entró con ellos en el Templo, caminando, saltando y glorificando a Dios.",
+        "CEI": "C'era un buon numero di lampade nella stanza al piano superiore, dove eravamo riuniti;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Καὶ εἶδεν αὐτὸν πᾶς ὁ λαὸς περιπατοῦντα καὶ αἰνοῦντα τὸν θεόν·",
+        "VUL": "Et vidit omnis populus eum ambulantem et laudantem Deum.",
+        "SYN": "И весь народ видел его ходящим и хвалящим Бога;",
+        "NEO": "Tout le peuple le vit marcher et louer Dieu.",
+        "NAB": "When all the people saw him walking and praising God,",
+        "VAT_ES": "Toda la gente lo vio caminar y alabar a Dios.",
+        "CEI": "un ragazzo chiamato Eutico, che stava seduto sulla finestra, fu preso da un sonno profondo mentre Paolo continuava a conversare e, sopraffatto dal sonno, cadde dal terzo piano e venne raccolto morto."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "ἐπεγίνωσκόν τε αὐτὸν ὅτι οὗτος ἦν ὁ πρὸς τὴν ἐλεημοσύνην καθήμενος ἐπὶ τῇ Ὡραίᾳ πύλῃ τοῦ ἱεροῦ· καὶ ἐπλήσθησαν θάμβους καὶ ἐκστάσεως ἐπὶ τῷ συμβεβηκότι αὐτῷ.",
+        "VUL": "Cognoscebant autem illum, quod ipse erat qui ad eleemosynam sedebat ad Speciosam portam templi : et impleti sunt stupore et extasi in eo quod contigerat illi.",
+        "SYN": "и узнали его, что это был тот, который сидел у Красных дверей храма для милостыни; и исполнились ужаса и изумления от случившегося с ним.",
+        "NEO": "Et reconnaissant que c’était celui-là même qui se tenait assis à la Belle-Porte du temple pour demander l’aumône, ils furent stupéfaits et hors d’eux-mêmes de ce qui lui était arrivé.",
+        "NAB": "they recognized him as the one who used to sit begging at the Beautiful Gate of the temple, and they were filled with amazement and astonishment at what had happened to him.",
+        "VAT_ES": "Reconocieron que era el mendigo que pedía limosna sentado a la puerta del Templo llamada «la Hermosa», y quedaron asombrados y llenos de admiración por lo que le había sucedido.",
+        "CEI": "Paolo allora scese giù, si gettò su di lui, lo abbracciò e disse: \"Non vi turbate; è ancora in vita!\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "¶Κρατοῦντος δὲ τοῦ ἰαθέντος χωλοῦ τὸν Πέτρον καὶ Ἰωάννην, συνέδραμεν πρὸς αὐτοὺς πᾶς ὁ λαὸς ἐπὶ τῇ στοᾷ τῇ καλουμένῃ Σολομῶντος, ἔκθαμβοι.",
+        "VUL": "Cum teneret autem Petrum et Joannem, cucurrit omnis populus ad eos ad porticum quæ appellatur Salomonis, stupentes.",
+        "SYN": "И как исцеленный хромой не отходил от Петра и Иоанна, то весь народ в изумлении сбежался к ним в притвор, называемый Соломонов.",
+        "NEO": "Comme il ne quittait pas Pierre et Jean, tout le peuple étonné accourut vers eux, au portique dit de Salomon.+ 3:11 11. Jean, x, 23.*",
+        "NAB": "As he clung to Peter and John, all the people hurried in amazement toward them in the portico called \"Solomon's Portico.\"",
+        "VAT_ES": "Como él no soltaba a Pedro y a Juan, todo el pueblo, lleno de asombro, corrió hacia ellos, que estaban en el pórtico de Salomón.",
+        "CEI": "Poi risalì, spezzò il pane e ne mangiò e dopo aver parlato ancora molto fino all'alba, partì."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Ἰδὼν δὲ Πέτρος ἀπεκρίνατο πρὸς τὸν λαόν, Ἄνδρες Ἰσραηλῖται, τί θαυμάζετε ἐπὶ τούτῳ, ἢ ἡμῖν τί ἀτενίζετε, ὡς ἰδίᾳ δυνάμει ἢ εὐσεβείᾳ πεποιηκόσιν τοῦ περιπατεῖν αὐτόν;",
+        "VUL": "Videns autem Petrus, respondit ad populum : Viri Israëlitæ, quid miramini in hoc, aut nos quid intuemini, quasi nostra virtute aut potestate fecerimus hunc ambulare ?",
+        "SYN": "Увидев это, Петр сказал народу: мужи Израильские! что дивитесь сему, или что смотрите на нас, как будто бы мы своею силою или благочестием сделали то, что он ходит?",
+        "NEO": "Voyant cela, Pierre dit au peuple : « Enfants d’Israël, pourquoi vous étonnez-vous de cela ? Et pourquoi tenez-vous les yeux fixés sur nous, comme si c’était par notre propre puissance ou par notre piété que nous eussions fait marcher cet homme ?",
+        "NAB": "When Peter saw this, he addressed the people, \"You Israelites, why are you amazed at this, and why do you look so intently at us as if we had made him walk by our own power or piety?",
+        "VAT_ES": "Al ver esto, Pedro dijo al pueblo: «Israelitas, &iquest;de qué se asombran? &iquest;Por qué nos miran así, como si fuera por nuestro poder o por nuestra santidad, que hemos hecho caminar a este hombre?",
+        "CEI": "Intanto avevano ricondotto il ragazzo vivo, e si sentirono molto consolati."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Ὁ θεὸς Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακώβ, ὁ θεὸς τῶν πατέρων ἡμῶν, ἐδόξασεν τὸν παῖδα αὐτοῦ Ἰησοῦν· ὃν ὑμεῖς μὲν παρεδώκατε, καὶ ἠρνήσασθε αὐτὸν κατὰ πρόσωπον Πιλάτου, κρίναντος ἐκείνου ἀπολύειν.",
+        "VUL": "Deus Abraham, et Deus Isaac, et Deus Jacob, Deus patrum nostrorum glorificavit filium suum Jesum, quem vos quidem tradidistis, et negastis ante faciem Pilati, judicante illo dimitti.",
+        "SYN": "Бог Авраама и Исаака и Иакова, Бог отцов наших, прославил Сына Своего Иисуса, Которого вы предали и от Которого отреклись перед лицом Пилата, когда он полагал освободить Его.",
+        "NEO": "Le Dieu d’Abraham, d’Isaac et de Jacob, le Dieu de vos pères a glorifié son serviteur Jésus, que vous avez livré, et renié devant Pilate alors qu’il était d’avis qu’on le relâchât.+ 3:13 13. Allusion au Serviteur de \\+qt Yahweh\\+qt* dont parle Isaïe (lii, liii), qui désigne ainsi le Messie. Comp. iv, 27, 30.*",
+        "NAB": "The God of Abraham, (the God) of Isaac, and (the God) of Jacob, the God of our ancestors, has glorified his servant Jesus whom you handed over and denied in Pilate's presence, when he had decided to release him.",
+        "VAT_ES": "El Dios de Abraham, de Isaac y de Jacob, el Dios de nuestros padres, glorificó a su servidor Jesús, a quien ustedes entregaron, renegando de él delante de Pilato, cuando este había resuelto ponerlo en libertad.",
+        "CEI": "Noi poi, che eravamo partiti per nave, facemmo vela per Asso, dove dovevamo prendere a bordo Paolo; così infatti egli aveva deciso, intendendo di fare il viaggio a piedi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ὑμεῖς δὲ τὸν ἅγιον καὶ δίκαιον ἠρνήσασθε, καὶ ᾐτήσασθε ἄνδρα φονέα χαρισθῆναι ὑμῖν,",
+        "VUL": "Vos autem sanctum et justum negastis, et petistis virum homicidam donari vobis :",
+        "SYN": "Но вы от Святого и Праведного отреклись, и просили даровать вам человека убийцу,",
+        "NEO": "Vous, vous avez renié le Saint et le Juste, et vous avez sollicité la grâce d’un meurtrier.",
+        "NAB": "You denied the Holy and Righteous One and asked that a murderer be released to you.",
+        "VAT_ES": "Ustedes renegaron del Santo y del Justo, y pidiendo como una gracia la liberación de un homicida,",
+        "CEI": "Quando ci ebbe raggiunti ad Asso, lo prendemmo con noi e arrivammo a Mitilène."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "τὸν δὲ ἀρχηγὸν τῆς ζωῆς ἀπεκτείνατε· ὃν ὁ θεὸς ἤγειρεν ἐκ νεκρῶν, οὗ ἡμεῖς μάρτυρές ἐσμεν.",
+        "VUL": "auctorem vero vitæ interfecistis, quem Deus suscitavit a mortuis, cujus nos testes sumus.",
+        "SYN": "а Начальника жизни убили. Сего Бог воскресил из мертвых, чему мы свидетели.",
+        "NEO": "Vous avez fait mourir l’Auteur de la vie, que Dieu a ressuscité des morts ; nous en sommes tous témoins.+ 3:15 15. Surtout de la vie surnaturelle dont l’auteur et le dispensateur est le Messie que les Juifs ont fait mourir. Comp. Jean, i, 4 ; x, 10 ; xiv, 6.*",
+        "NAB": "The author of life you put to death, but God raised him from the dead; of this we are witnesses.",
+        "VAT_ES": "mataron al autor de la vida. Pero Dios lo resucitó de entre los muertos, de lo cual nosotros somos testigos.",
+        "CEI": "Salpati da qui il giorno dopo, ci trovammo di fronte a Chio; l'indomani toccammo Samo e il giorno dopo giungemmo a Milèto."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Καὶ ἐπὶ τῇ πίστει τοῦ ὀνόματος αὐτοῦ, τοῦτον ὃν θεωρεῖτε καὶ οἴδατε ἐστερέωσεν τὸ ὄνομα αὐτοῦ· καὶ ἡ πίστις ἡ δι’ αὐτοῦ ἔδωκεν αὐτῷ τὴν ὁλοκληρίαν ταύτην ἀπέναντι πάντων ὑμῶν.",
+        "VUL": "Et in fide nominis ejus, hunc quem vos vidistis et nostis, confirmavit nomen ejus : et fides, quæ per eum est, dedit integram sanitatem istam in conspectu omnium vestrum.",
+        "SYN": "И ради веры во имя Его, имя Его укрепило сего, которого вы видите и знаете, и вера, которая от Него, даровала ему исцеление сие перед всеми вами.",
+        "NEO": "C’est à cause de la foi reçue de lui que son nom a raffermi l’homme que vous voyez et connaissez ; c’est la foi qui vient de lui qui a opéré devant vous tous cette parfaite guérison.+ 3:16 16. I Pier. i, 21.*",
+        "NAB": "And by faith in his name, this man, whom you see and know, his name has made strong, and the faith that comes through it has given him this perfect health, in the presence of all of you.",
+        "VAT_ES": "Por haber creído en su Nombre, ese mismo Nombre ha devuelto la fuerza al que ustedes ven y conocen. Esta fe que proviene de él, es la que lo ha curado completamente, como ustedes pueden comprobar.",
+        "CEI": "Paolo aveva deciso di passare al largo di Efeso per evitare di subire ritardi nella provincia d'Asia: gli premeva di essere a Gerusalemme, se possibile, per il giorno della Pentecoste."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Καὶ νῦν, ἀδελφοί, οἶδα ὅτι κατὰ ἄγνοιαν ἐπράξατε, ὥσπερ καὶ οἱ ἄρχοντες ὑμῶν.",
+        "VUL": "Et nunc, fratres, scio quia per ignorantiam fecistis, sicut et principes vestri.",
+        "SYN": "Впрочем я знаю, братия, что вы, как и начальники ваши, сделали это по неведению;",
+        "NEO": "Je sais bien, frères, que vous avez agi par ignorance, ainsi que vos magistrats.",
+        "NAB": "Now I know, brothers, that you acted out of ignorance, just as your leaders did;",
+        "VAT_ES": "Ahora bien, hermanos, yo sé que ustedes obraron por ignorancia, lo mismo que sus jefes.",
+        "CEI": "Da Milèto mandò a chiamare subito ad Efeso gli anziani della Chiesa."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ θεὸς ἃ προκατήγγειλεν διὰ στόματος πάντων τῶν προφητῶν αὐτοῦ, παθεῖν τὸν χριστόν, ἐπλήρωσεν οὕτως.",
+        "VUL": "Deus autem, quæ prænuntiavit per os omnium prophetarum, pati Christum suum, sic implevit.",
+        "SYN": "Бог же, как предвозвестил устами всех Своих пророков пострадать Христу, так и исполнил.",
+        "NEO": "Mais Dieu a accompli de la sorte ce qu’il avait prédit par la bouche de tous les prophètes, que son Christ devait souffrir.",
+        "NAB": "but God has thus brought to fulfillment what he had announced beforehand through the mouth of all the prophets, that his Messiah would suffer.",
+        "VAT_ES": "Pero así, Dios cumplió lo que había anunciado por medio de todos los profetas: que su Mesías debía padecer.",
+        "CEI": "Quando essi giunsero disse loro: \"Voi sapete come mi sono comportato con voi fin dal primo giorno in cui arrivai in Asia e per tutto questo tempo:"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Μετανοήσατε οὖν καὶ ἐπιστρέψατε, εἰς τὸ ἐξαλειφθῆναι ὑμῶν τὰς ἁμαρτίας, ὅπως ἂν ἔλθωσιν καιροὶ ἀναψύξεως ἀπὸ προσώπου τοῦ κυρίου,",
+        "VUL": "Pnitemini igitur et convertimini, ut deleantur peccata vestra :",
+        "SYN": "Итак покайтесь и обратитесь, чтобы загладились грехи ваши,",
+        "NEO": "Repentez-vous donc et convertissez-vous, pour que vos péchés soient effacés,",
+        "NAB": "Repent, therefore, and be converted, that your sins may be wiped away,",
+        "VAT_ES": "Por lo tanto, hagan penitencia y conviértanse, para que sus pecados sean perdonados.",
+        "CEI": "ho servito il Signore con tutta umiltà, tra le lacrime e tra le prove che mi hanno procurato le insidie dei Giudei."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "καὶ ἀποστείλῃ τὸν προκεχειρισμένον ὑμῖν χριστὸν Ἰησοῦν·",
+        "VUL": "ut cum venerint tempora refrigerii a conspectu Domini, et miserit eum qui prædicatus est vobis, Jesum Christum,",
+        "SYN": "да придут времена отрады от лица Господа, и да пошлет Он предназначенного вам Иисуса Христа,",
+        "NEO": "afin que des temps de rafraîchissement viennent de la part du Seigneur, et qu’il envoie celui qui vous a été destiné, Jésus-Christ,+ 3:20 20-21. De la part du Seigneur ; litt. \\+qt de devant la face du Seigneur. — Destiné\\+qt*, préparé d’avance ; Vulgate, \\+qt annoncé.\\+qt**",
+        "NAB": "and that the Lord may grant you times of refreshment and send you the Messiah already appointed for you, Jesus,",
+        "VAT_ES": "Así el Señor les concederá el tiempo del consuelo y enviará a Jesús, el Mesías destinado para ustedes.",
+        "CEI": "Sapete come non mi sono mai sottratto a ciò che poteva essere utile, al fine di predicare a voi e di istruirvi in pubblico e nelle vostre case,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "ὃν δεῖ οὐρανὸν μὲν δέξασθαι ἄχρι χρόνων ἀποκαταστάσεως πάντων, ὧν ἐλάλησεν ὁ θεὸς διὰ στόματος πάντων τῶν ἁγίων αὐτοῦ προφητῶν ἀπ’ αἰῶνος.",
+        "VUL": "quem oportet quidem cælum suscipere usque in tempora restitutionis omnium quæ locutus est Deus per os sanctorum suorum a sæculo prophetarum.",
+        "SYN": "Которого небо должно было принять до времен совершения всего, что говорил Бог устами всех святых Своих пророков от века.",
+        "NEO": "que le ciel doit recevoir jusqu’aux jours du rétablissement de toutes choses, jours dont Dieu a parlé anciennement par la bouche de ses saints prophètes.",
+        "NAB": "whom heaven must receive until the times of universal restoration of which God spoke through the mouth of his holy prophets from of old.",
+        "VAT_ES": "El debe permanecer en el cielo hasta el momento de la restauración universal, que Dios anunció antiguamente por medio de sus santos profetas.",
+        "CEI": "scongiurando Giudei e Greci di convertirsi a Dio e di credere nel Signore nostro Gesù."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Μωσῆς μὲν γὰρ πρὸς τοὺς πατέρας εἶπεν ὅτι Προφήτην ὑμῖν ἀναστήσει κύριος ὁ θεὸς ἡμῶν ἐκ τῶν ἀδελφῶν ὑμῶν ὡς ἐμέ· αὐτοῦ ἀκούσεσθε κατὰ πάντα ὅσα ἂν λαλήσῃ πρὸς ὑμᾶς.",
+        "VUL": "Moyses quidem dixit : Quoniam prophetam suscitabit vobis Dominus Deus vester de fratribus vestris, tamquam me : ipsum audietis juxta omnia quæcumque locutus fuerit vobis.",
+        "SYN": "Моисей сказал отцам: Господь Бог ваш воздвигнет вам из братьев ваших Пророка, как меня, слушайтесь Его во всем, что Он ни будет говорить вам;",
+        "NEO": "Moïse a dit :+ 3:22 22. Moise a dit: Deut. xviii, 15-19. Cette parole de Moïse s’est vérifiée d’abord dans toute la série des Prophètes, mais elle s’est ensuite réalisée éminemment dans le Messie, médiateur par excellence entre le ciel et la terre, auteur de la nouvelle alliance et \\+qt du rétablissement de toutes choses\\+qt*.* « Le Seigneur votre Dieu vous suscitera d’entre vos frères un prophète semblable à moi ; vous l’écouterez dans tout ce qu’il vous dira.",
+        "NAB": "For Moses said: 'A prophet like me will the Lord, your God, raise up for you from among your own kinsmen; to him you shall listen in all that he may say to you.",
+        "VAT_ES": "Moisés, en efecto, dijo: \"El Señor Dios suscitará para ustedes, de entre sus hermanos, un profeta semejante a mí, y ustedes obedecerán a todo lo que él les diga.",
+        "CEI": "Ed ecco ora, avvinto dallo Spirito, io vado a Gerusalemme senza sapere ciò che là mi accadrà."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Ἔσται δέ, πᾶσα ψυχή, ἥτις ἐὰν μὴ ἀκούσῃ τοῦ προφήτου ἐκείνου, ἐξολοθρευθήσεται ἐκ τοῦ λαοῦ.",
+        "VUL": "Erit autem : omnis anima quæ non audierit prophetam illum, exterminabitur de plebe.",
+        "SYN": "и будет, что всякая душа, которая не послушает Пророка того, истребится из народа.",
+        "NEO": "Et quiconque n’écoutera pas ce prophète, sera exterminé du milieu du peuple. » —",
+        "NAB": "Everyone who does not listen to that prophet will be cut off from the people.'",
+        "VAT_ES": "El que no escuche a ese profeta será excluido del pueblo\".",
+        "CEI": "So soltanto che lo Spirito Santo in ogni città mi attesta che mi attendono catene e tribolazioni."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Καὶ πάντες δὲ οἱ προφῆται ἀπὸ Σαμουὴλ καὶ τῶν καθεξῆς, ὅσοι ἐλάλησαν, καὶ κατήγγειλαν τὰς ἡμέρας ταύτας.",
+        "VUL": "Et omnes prophetæ, a Samuel et deinceps, qui locuti sunt, annuntiaverunt dies istos.",
+        "SYN": "И все пророки, от Самуила и после него, сколько их ни говорили, также предвозвестили дни сии.",
+        "NEO": "Tous les prophètes qui ont successivement parlé depuis Samuel ont aussi annoncé ces jours-là.",
+        "NAB": "Moreover, all the prophets who spoke, from Samuel and those afterwards, also announced these days.",
+        "VAT_ES": "Y todos los profetas que ha hablado a partir de Samuel, anunciaron también estos días.",
+        "CEI": "Non ritengo tuttavia la mia vita meritevole di nulla, purché conduca a termine la mia corsa e il servizio che mi fu affidato dal Signore Gesù, di rendere testimonianza al messaggio della grazia di Dio."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Ὑμεῖς ἐστε υἱοὶ τῶν προφητῶν, καὶ τῆς διαθήκης ἧς διέθετο ὁ θεὸς πρὸς τοὺς πατέρας ἡμῶν, λέγων πρὸς Ἀβραάμ, Καὶ ἐν τῷ σπέρματί σου ἐνευλογηθήσονται πᾶσαι αἱ πατριαὶ τῆς γῆς.",
+        "VUL": "Vos estis filii prophetarum, et testamenti quod disposuit Deus ad patres nostros, dicens ad Abraham : Et in semine tuo benedicentur omnes familiæ terræ.",
+        "SYN": "Вы сыны пророков и завета, который завещевал Бог отцам вашим, говоря Аврааму: и в семени твоем благословятся все племена земные.",
+        "NEO": "Vous êtes, vous, les fils des prophètes et de l’alliance que Dieu a faite avec vos pères, lorsqu’il a dit à Abraham : « En ta postérité seront bénies toutes les nations de la terre. »",
+        "NAB": "You are the children of the prophets and of the covenant that God made with your ancestors when he said to Abraham, 'In your offspring all the families of the earth shall be blessed.'",
+        "VAT_ES": "Ustedes son los herederos de los profetas y de la Alianza que Dios hizo con sus antepasados, cuando dijo a Abraham: \"En tu descendencia serán bendecidos todos los pueblos de la tierra\".",
+        "CEI": "Ecco, ora so che non vedrete più il mio volto, voi tutti tra i quali sono passato annunziando il regno di Dio."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Ὑμῖν πρῶτον ὁ θεός, ἀναστήσας τὸν παῖδα αὐτοῦ Ἰησοῦν, ἀπέστειλεν αὐτὸν εὐλογοῦντα ὑμᾶς, ἐν τῷ ἀποστρέφειν ἕκαστον ἀπὸ τῶν πονηριῶν ὑμῶν.",
+        "VUL": "Vobis primum Deus suscitans filium suum, misit eum benedicentem vobis : ut convertat se unusquisque a nequitia sua.",
+        "SYN": "Бог, воскресив Сына Своего Иисуса, к вам первым послал Его благословить вас, отвращая каждого от злых дел ваших.",
+        "NEO": "C’est à vous premièrement que Dieu, ayant suscité son Fils, l’a envoyé pour vous bénir, lorsque chacun de vous se détournera de ses iniquités.+ 3:26 26. La mission du Sauveur fut en effet de ramener d’abord à Dieu les enfants d’Israël (Comp. Is. xlix, 5 ; Matth. xv, 24 ; Act. ii, 39 ; xiii, 46 ; Rom. i, 16, et surtout Rom. xi. — Lorsque chacun de vous se détournera… Une conversion sincère qui corresponde aux premières faveurs de Dieu est une condition indispensable pour avoir part à de plus amples bénédictions et être admis dans le royaume du Sauveur. Au lieu d’exprimer cette condition, la Vulgate marque le but de la venue du Sauveur : \\+qt afin que chacun se détourne\\+qt*.*",
+        "NAB": "For you first, God raised up his servant and sent him to bless you by turning each of you from your evil ways.\"",
+        "VAT_ES": "Ante todo para ustedes Dios resucitó a su Servidor, y lo envió para bendecirlos y para que cada uno se aparte de sus iniquidades».",
+        "CEI": "Per questo dichiaro solennemente oggi davanti a voi che io sono senza colpa riguardo a coloro che si perdessero,"
+      }
+    }
+  }
+}

@@ -1,0 +1,610 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MARC_003",
+  "book_key": "MARC",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Καὶ εἰσῆλθεν πάλιν εἰς τὴν συναγωγήν, καὶ ἦν ἐκεῖ ἄνθρωπος ἐξηραμμένην ἔχων τὴν χεῖρα.",
+        "VUL": "Et introivit iterum in synagogam : et erat ibi homo habens manum aridam.",
+        "SYN": "И пришел опять в синагогу; там был человек, имевший иссохшую руку.",
+        "NEO": "Jésus étant entré une autre fois dans la synagogue, il s’y trouvait un homme qui avait la main desséchée.",
+        "NAB": "Again he entered the synagogue. There was a man there who had a withered hand.",
+        "VAT_ES": "Jesús entró nuevamente en una sinagoga, y había allí un hombre que tenía una mano paralizada.",
+        "CEI": "In quei giorni un decreto di Cesare Augusto ordinò che si facesse il censimento di tutta la terra."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Καὶ παρετήρουν αὐτὸν εἰ τοῖς σάββασιν θεραπεύσει αὐτόν, ἵνα κατηγορήσωσιν αὐτοῦ.",
+        "VUL": "Et observabant eum, si sabbatis curaret, ut accusarent illum.",
+        "SYN": "И наблюдали за Ним, не исцелит ли его в субботу, чтобы обвинить Его.",
+        "NEO": "Et on+ 3:2 III, 2. On: les Scribes et les Pharisiens (Luc, vi, 7).* l’observait pour voir s’il le guérirait le jour du sabbat, afin de pouvoir l’accuser.",
+        "NAB": "They watched him closely to see if he would cure him on the sabbath so that they might accuse him.",
+        "VAT_ES": "Los fariseos observaban atentamente a Jesús para ver si lo curaba en sábado, con el fin de acusarlo.",
+        "CEI": "Questo primo censimento fu fatto quando era governatore della Siria Quirinio."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Καὶ λέγει τῷ ἀνθρώπῳ τῷ ἐξηραμμένην ἔχοντι τὴν χεῖρα, Ἔγειραι εἰς τὸ μέσον.",
+        "VUL": "Et ait homini habenti manum aridam : Surge in medium.",
+        "SYN": "Он же говорит человеку, имевшему иссохшую руку: стань на средину.",
+        "NEO": "Jésus dit à l’homme qui avait la main desséchée : « Tiens-toi là debout au milieu » ;",
+        "NAB": "He said to the man with the withered hand, \"Come up here before us.\"",
+        "VAT_ES": "Jesús dijo al hombre de la mano paralizada: «Ven y colócate aquí delante».",
+        "CEI": "Andavano tutti a farsi registrare, ciascuno nella sua città."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Καὶ λέγει αὐτοῖς, Ἔξεστιν τοῖς σάββασιν ἀγαθοποιῆσαι ἢ κακοποιῆσαι; Ψυχὴν σῶσαι ἢ ἀποκτεῖναι; Οἱ δὲ ἐσιώπων.",
+        "VUL": "Et dicit eis : Licet sabbatis benefacere, an male ? animam salvam facere, an perdere ? At illi tacebant.",
+        "SYN": "А им говорит: должно ли в субботу добро делать, или зло делать? душу спасти, или погубить? Но они молчали.",
+        "NEO": "puis il leur dit : « Est-il permis le jour du sabbat, de faire du bien ou de faire du mal, de sauver la vie ou de l’ôter ? » Et ils se taisaient.",
+        "NAB": "Then he said to them, \"Is it lawful to do good on the sabbath rather than to do evil, to save life rather than to destroy it?\" But they remained silent.",
+        "VAT_ES": "Y les dijo: «&iquest;Está permitido en sábado hacer el bien o el mal, salvar una vida o perderla?». Pero ellos callaron.",
+        "CEI": "Anche Giuseppe, che era della casa e della famiglia di Davide, dalla città di Nazaret e dalla Galilea salì in Giudea alla città di Davide, chiamata Betlemme,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Καὶ περιβλεψάμενος αὐτοὺς μετ’ ὀργῆς, συλλυπούμενος ἐπὶ τῇ πωρώσει τῆς καρδίας αὐτῶν, λέγει τῷ ἀνθρώπῳ, Ἔκτεινον τὴν χεῖρά σου. Καὶ ἐξέτεινεν, καὶ ἀποκατεστάθη ἡ χεὶρ αὐτοῦ ὑγιὴς ὡς ἡ ἄλλη.",
+        "VUL": "Et circumspiciens eos cum ira, contristatus super cæcitate cordis eorum, dicit homini : Extende manum tuam. Et extendit, et restituta est manus illi.",
+        "SYN": "И, воззрев на них с гневом, скорбя об ожесточении сердец их, говорит тому человеку: протяни руку твою. Он протянул, и стала рука его здорова, как другая.",
+        "NEO": "Alors, les regardant avec indignation, et contristé de l’aveuglement de leur cœur, il dit à cet homme : « Étends ta main. » Il l’étendit, et sa main redevint saine.",
+        "NAB": "Looking around at them with anger and grieved at their hardness of heart, he said to the man, \"Stretch out your hand.\" He stretched it out and his hand was restored.",
+        "VAT_ES": "Entonces, dirigiendo sobre ellos una mirada llena de indignación y apenado por la dureza de sus corazones, dijo al hombre: «Extiende tu mano». El la extendió y su mano quedó curada.",
+        "CEI": "per farsi registrare insieme con Maria sua sposa, che era incinta."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Καὶ ἐξελθόντες οἱ Φαρισαῖοι εὐθέως μετὰ τῶν Ἡρῳδιανῶν συμβούλιον ἐποίουν κατ’ αὐτοῦ, ὅπως αὐτὸν ἀπολέσωσιν.",
+        "VUL": "Exeuntes autem pharisæi, statim cum Herodianis consilium faciebant adversus eum quomodo eum perderent.",
+        "SYN": "Фарисеи, выйдя, немедленно составили с иродианами совещание против Него, как бы погубить Его.",
+        "NEO": "Les Pharisiens, étant sortis, allèrent aussitôt s’entendre contre lui avec les Hérodiens+ 3:6 6. Hérodiens: voy. Matth. xxii, 16.*, pour tâcher de le perdre.",
+        "NAB": "The Pharisees went out and immediately took counsel with the Herodians against him to put him to death.",
+        "VAT_ES": "Los fariseos salieron y se confabularon con los herodianos para buscar la forma de acabar con él.",
+        "CEI": "Ora, mentre si trovavano in quel luogo, si compirono per lei i giorni del parto."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Καὶ ὁ Ἰησοῦς ἀνεχώρησεν μετὰ τῶν μαθητῶν αὐτοῦ πρὸς τὴν θάλασσαν· καὶ πολὺ πλῆθος ἀπὸ τῆς Γαλιλαίας ἠκολούθησαν αὐτῷ, καὶ ἀπὸ τῆς Ἰουδαίας,",
+        "VUL": "Jesus autem cum discipulis suis secessit ad mare : et multa turba a Galilæa et Judæa secuta est eum,",
+        "SYN": "Но Иисус с учениками Своими удалился к морю; и за Ним последовало множество народа из Галилеи, Иудеи,",
+        "NEO": "Jésus se retira vers la mer avec ses disciples, et une foule nombreuse le suivit de la Galilée, de la Judée+ 3:7 7. Matth. xii, 15 : Luc. vi, 17.*,",
+        "NAB": "Jesus withdrew toward the sea with his disciples. A large number of people (followed) from Galilee and from Judea.",
+        "VAT_ES": "Jesús se retiró con sus discípulos a la orilla del mar, y lo siguió mucha gente de Galilea.",
+        "CEI": "Diede alla luce il suo figlio primogenito, lo avvolse in fasce e lo depose in una mangiatoia, perché non c'era posto per loro nell'albergo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "καὶ ἀπὸ Ἱεροσολύμων, καὶ ἀπὸ τῆς Ἰδουμαίας, καὶ πέραν τοῦ Ἰορδάνου, καὶ οἱ περὶ Τύρον καὶ Σιδῶνα, πλῆθος πολύ, ἀκούσαντες ὅσα ἐποίει, ἦλθον πρὸς αὐτόν.",
+        "VUL": "et ab Jerosolymis, et ab Idumæa, et trans Jordanem : et qui circa Tyrum et Sidonem multitudo magna, audientes quæ faciebat, venerunt ad eum.",
+        "SYN": "Иерусалима, Идумеи и из-за Иордана. И _живущие_ в окрестностях Тира и Сидона, услышав, что Он делал, шли к Нему в великом множестве.",
+        "NEO": "de Jérusalem, de l’Idumée et d’au delà du Jourdain+ 3:8 8. D’au delà du Jourdain, de la Pérée.*. Ceux des environs de Tyr et de Sidon, ayant appris les choses qu’il faisait, vinrent aussi à lui en grande foule.",
+        "NAB": "Hearing what he was doing, a large number of people came to him also from Jerusalem, from Idumea, from beyond the Jordan, and from the neighborhood of Tyre and Sidon.",
+        "VAT_ES": "Al enterarse de lo que hacía, también fue a su encuentro una gran multitud de Judea, de Jerusalén, de Idumea, de la Transjordania y de la región de Tiro y Sidón.",
+        "CEI": "C'erano in quella regione alcuni pastori che vegliavano di notte facendo la guardia al loro gregge."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Καὶ εἶπεν τοῖς μαθηταῖς αὐτοῦ ἵνα πλοιάριον προσκαρτερῇ αὐτῷ διὰ τὸν ὄχλον, ἵνα μὴ θλίβωσιν αὐτόν.",
+        "VUL": "Et dicit discipulis suis ut navicula sibi deserviret propter turbam, ne comprimerent eum :",
+        "SYN": "И сказал ученикам Своим, чтобы готова была для Него лодка по причине многолюдства, дабы не теснили Его.",
+        "NEO": "Et il dit à ses disciples de tenir toujours une barque à sa disposition, afin qu’il ne fût pas pressé par la foule.",
+        "NAB": "He told his disciples to have a boat ready for him because of the crowd, so that they would not crush him.",
+        "VAT_ES": "Entonces mandó a sus discípulos que le prepararan una barca, para que la muchedumbre no lo apretujara.",
+        "CEI": "Un angelo del Signore si presentò davanti a loro e la gloria del Signore li avvolse di luce. Essi furono presi da grande spavento,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Πολλοὺς γὰρ ἐθεράπευσεν, ὥστε ἐπιπίπτειν αὐτῷ, ἵνα αὐτοῦ ἅψωνται, ὅσοι εἶχον μάστιγας.",
+        "VUL": "multos enim sanabat, ita ut irruerent in eum ut illum tangerent, quotquot habebant plagas.",
+        "SYN": "Ибо многих Он исцелил, так что имевшие язвы бросались к Нему, чтобы коснуться Его.",
+        "NEO": "Car, comme il guérissait beaucoup de gens, tous ceux qui avaient quelque mal se jetaient sur lui pour le toucher.",
+        "NAB": "He had cured many and, as a result, those who had diseases were pressing upon him to touch him.",
+        "VAT_ES": "Porque, como curaba a muchos, todos los que padecían algún mal se arrojaban sobre él para tocarlo.",
+        "CEI": "ma l'angelo disse loro: \"Non temete, ecco vi annunzio una grande gioia, che sarà di tutto il popolo:"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Καὶ τὰ πνεύματα τὰ ἀκάθαρτα, ὅταν αὐτὸν ἐθεώρει, προσέπιπτεν αὐτῷ, καὶ ἔκραζεν, λέγοντα ὅτι Σὺ εἶ ὁ υἱὸς τοῦ θεοῦ.",
+        "VUL": "Et spiritus immundi, cum illum videbant, procidebant ei : et clamabant, dicentes :",
+        "SYN": "И духи нечистые, когда видели Его, падали пред Ним и кричали: Ты Сын Божий.",
+        "NEO": "Les esprits impurs, en le voyant, se prosternaient devant lui et s’écriaient :",
+        "NAB": "And whenever unclean spirits saw him they would fall down before him and shout, \"You are the Son of God.\"",
+        "VAT_ES": "Y los espíritus impuros, apenas lo veían, se tiraban a sus pies, gritando: «&iexcl;Tú eres el Hijo de Dios!».",
+        "CEI": "oggi vi è nato nella città di Davide un salvatore, che è il Cristo Signore."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Καὶ πολλὰ ἐπετίμα αὐτοῖς ἵνα μὴ φανερὸν αὐτὸν ποιήσωσιν.",
+        "VUL": "Tu es Filius Dei. Et vehementer comminabatur eis ne manifestarent illum.",
+        "SYN": "Но Он строго запрещал им, чтобы не делали Его известным.",
+        "NEO": "« Tu es le Fils de Dieu » ; mais il leur défendait avec de grandes menaces de faire connaître qui il était.",
+        "NAB": "He warned them sternly not to make him known.",
+        "VAT_ES": "Pero Jesús les ordenaba terminantemente que no lo pusieran de manifiesto.",
+        "CEI": "Questo per voi il segno: troverete un bambino avvolto in fasce, che giace in una mangiatoia\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "¶Καὶ ἀναβαίνει εἰς τὸ ὄρος, καὶ προσκαλεῖται οὓς ἤθελεν αὐτός· καὶ ἀπῆλθον πρὸς αὐτόν.",
+        "VUL": "Et ascendens in montem vocavit ad se quos voluit ipse : et venerunt ad eum.",
+        "SYN": "Потом взошел на гору и позвал к Себе, кого Сам хотел; и пришли к Нему.",
+        "NEO": "Étant monté ensuite sur la montagne+ 3:13 13. La montagne, probablement la montagne des Béatitudes (voy. Luc, v, 12 et .) \\+qt Il appela\\+qt* ; la Vulg. ajoute, \\+qt à lui\\+qt*.*, il appela ceux que lui-même voulut ; et ils vinrent à lui.",
+        "NAB": "He went up the mountain and summoned those whom he wanted and they came to him.",
+        "VAT_ES": "Después subió a la montaña y llamó a su lado a los que quiso. Ellos fueron hacia él,",
+        "CEI": "E subito apparve con l'angelo una moltitudine dell'esercito celeste che lodava Dio e diceva:"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Καὶ ἐποίησεν δώδεκα, ἵνα ὦσιν μετ’ αὐτοῦ, καὶ ἵνα ἀποστέλλῃ αὐτοὺς κηρύσσειν,",
+        "VUL": "Et fecit ut essent duodecim cum illo : et ut mitteret eos prædicare.",
+        "SYN": "И поставил _из_ _них_ двенадцать, чтобы с Ним были и чтобы посылать их на проповедь,",
+        "NEO": "Il en établit douze pour les avoir avec lui et pour les envoyer prêcher,",
+        "NAB": "He appointed twelve (whom he also named apostles) that they might be with him and he might send them forth to preach",
+        "VAT_ES": "y Jesús instituyó a doce para que estuvieran con él, y para enviarlos a predicar",
+        "CEI": "\"Gloria a Dio nel più alto dei cieli e pace in terra agli uomini che egli ama\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "καὶ ἔχειν ἐξουσίαν θεραπεύειν τὰς νόσους, καὶ ἐκβάλλειν τὰ δαιμόνια·",
+        "VUL": "Et dedit illis potestatem curandi infirmitates et ejiciendi dæmonia.",
+        "SYN": "и чтобы они имели власть исцелять от болезней и изгонять бесов;",
+        "NEO": "avec le pouvoir de guérir les maladies et de chasser les démons.",
+        "NAB": "and to have authority to drive out demons:",
+        "VAT_ES": "con el poder de expulsar a los demonios.",
+        "CEI": "Appena gli angeli si furono allontanati per tornare al cielo, i pastori dicevano fra loro: \"Andiamo fino a Betlemme, vediamo questo avvenimento che il Signore ci ha fatto conoscere\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "καὶ ἐπέθηκεν τῷ Σίμωνι ὄνομα Πέτρον·",
+        "VUL": "Et imposuit Simoni nomen Petrus :",
+        "SYN": "_поставил_ Симона, нарекши ему имя Петр,",
+        "NEO": "À Simon il donna le surnom de Pierre ;",
+        "NAB": "(he appointed the twelve:) Simon, whom he named Peter;",
+        "VAT_ES": "Así instituyó a los Doce: Simón, al que puso el sobrenombre de Pedro;",
+        "CEI": "Andarono dunque senz'indugio e trovarono Maria e Giuseppe e il bambino, che giaceva nella mangiatoia."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "καὶ Ἰάκωβον τὸν τοῦ Ζεβεδαίου, καὶ Ἰωάννην τὸν ἀδελφὸν τοῦ Ἰακώβου· καὶ ἐπέθηκεν αὐτοῖς ὀνόματα Βοανεργές, ὅ ἐστιν, Υἱοὶ Βροντῆς·",
+        "VUL": "et Jacobum Zebedæi, et Joannem fratrem Jacobi, et imposuit eis nomina Boanerges, quod est, Filii tonitrui :",
+        "SYN": "Иакова Зеведеева и Иоанна, брата Иакова, нарекши им имена Воанергес, то есть \"сыны громовы\",",
+        "NEO": "puis il choisit* Jacques, fils de Zébédée, et Jean, frère de Jacques, auxquels il donna le surnom de Boanergès, c’est-à-dire, fils du tonnerre ;",
+        "NAB": "James, son of Zebedee, and John the brother of James, whom he named Boanerges, that is, sons of thunder;",
+        "VAT_ES": "Santiago, hijo de Zebedeo, y Juan, hermano de Santiago, a los que dio el nombre de Boanerges, es decir, hijos del trueno;",
+        "CEI": "E dopo averlo visto, riferirono ciò che del bambino era stato detto loro."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "καὶ Ἀνδρέαν, καὶ Φίλιππον, καὶ Βαρθολομαῖον, καὶ Ματθαῖον, καὶ Θωμᾶν, καὶ Ἰάκωβον τὸν τοῦ Ἀλφαίου, καὶ Θαδδαῖον, καὶ Σίμωνα τὸν Κανανίτην,",
+        "VUL": "et Andream, et Philippum, et Bartholomæum, et Matthæum, et Thomam, et Jacobum Alphæi, et Thaddæum, et Simonem Cananæum,",
+        "SYN": "Андрея, Филиппа, Варфоломея, Матфея, Фому, Иакова Алфеева, Фаддея, Симона Кананита",
+        "NEO": "André, Philippe, Barthélemy, Matthieu, Thomas, Jacques fils d’Alphée, Thaddée+ 3:18 \\+it Thaddée\\+it* figure sous le nom de Judas, fils de Jacques, dans Luc 6,16 et Act 1,13*, Simon le Zélé,",
+        "NAB": "Andrew, Philip, Bartholomew, Matthew, Thomas, James the son of Alphaeus; Thaddeus, Simon the Cananean,",
+        "VAT_ES": "luego, Andrés, Felipe, Bartolomé, Mateo, Tomás, Santiago, hijo de Alfeo, Tadeo, Simón, el Cananeo,",
+        "CEI": "Tutti quelli che udirono, si stupirono delle cose che i pastori dicevano."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "καὶ Ἰούδαν Ἰσκαριώτην, ὃς καὶ παρέδωκεν αὐτόν. ¶Καὶ ἔρχονται εἰς οἶκον·",
+        "VUL": "et Judam Iscariotem, qui et tradidit illum.",
+        "SYN": "и Иуду Искариотского, который и предал Его.",
+        "NEO": "et Judas Iscariote, qui le trahit.",
+        "NAB": "and Judas Iscariot who betrayed him.",
+        "VAT_ES": "y Judas Iscariote, el mismo que lo entregó.",
+        "CEI": "Maria, da parte sua, serbava tutte queste cose meditandole nel suo cuore."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "καὶ συνέρχεται πάλιν ὄχλος, ὥστε μὴ δύνασθαι αὐτοὺς μήτε ἄρτον φαγεῖν.",
+        "VUL": "Et veniunt ad domum : et convenit iterum turba, ita ut non possent neque panem manducare.",
+        "SYN": "Приходят в дом; и опять сходится народ, так что им невозможно было и хлеба есть.",
+        "NEO": "Ils revinrent à la maison, et la foule s’y assembla de nouveau, de sorte qu’ils ne pouvaient pas même prendre leur repas.",
+        "NAB": "He came home. Again (the) crowd gathered, making it impossible for them even to eat.",
+        "VAT_ES": "Jesús regresó a la casa, y de nuevo se juntó tanta gente que ni siquiera podían comer.",
+        "CEI": "I pastori poi se ne tornarono, glorificando e lodando Dio per tutto quello che avevano udito e visto, com'era stato detto loro."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Καὶ ἀκούσαντες οἱ παρ’ αὐτοῦ ἐξῆλθον κρατῆσαι αὐτόν· ἔλεγον γὰρ ὅτι Ἐξέστη.",
+        "VUL": "Et cum audissent sui, exierunt tenere eum : dicebant enim : Quoniam in furorem versus est.",
+        "SYN": "И, услышав, ближние Его пошли взять Его, ибо говорили, что Он вышел из себя.",
+        "NEO": "Ce que ses parents ayant appris, ils vinrent pour se saisir de lui, car ils disaient : « Il est hors de sens. »",
+        "NAB": "When his relatives heard of this they set out to seize him, for they said, \"He is out of his mind.\"",
+        "VAT_ES": "Cuando sus parientes se enteraron, salieron para llevárselo, porque decían: «Es un exaltado».",
+        "CEI": "Quando furon passati gli otto giorni prescritti per la circoncisione, gli fu messo nome Gesù, come era stato chiamato dall'angelo prima di essere concepito nel grembo della madre."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Καὶ οἱ γραμματεῖς οἱ ἀπὸ Ἱεροσολύμων καταβάντες ἔλεγον ὅτι Βεελζεβοὺλ ἔχει, καὶ ὅτι Ἐν τῷ ἄρχοντι τῶν δαιμονίων ἐκβάλλει τὰ δαιμόνια.",
+        "VUL": "Et scribæ, qui ab Jerosolymis descenderant, dicebant : Quoniam Beelzebub habet, et quia in principe dæmoniorum ejicit dæmonia.",
+        "SYN": "А книжники, пришедшие из Иерусалима, говорили, что Он имеет _в_ _Себе_ веельзевула и что изгоняет бесов силою бесовского князя.",
+        "NEO": "Mais les Scribes, qui étaient venus de Jérusalem, disaient : « Il est possédé de Béelzéboul+ 3:22 Sur \\+it Béelzéboul\\+it*, voir Mat 10,25 (note).* ; et c’est par le prince des démons qu’il chasse les démons. »",
+        "NAB": "The scribes who had come from Jerusalem said, \"He is possessed by Beelzebul,\" and \"By the prince of demons he drives out demons.\"",
+        "VAT_ES": "Los escribas que habían venido de Jerusalén decían: «Está poseído por Belzebul y expulsa a los demonios por el poder del Príncipe de los Demonios».",
+        "CEI": "Quando venne il tempo della loro purificazione secondo la Legge di Mosè, portarono il bambino a Gerusalemme per offrirlo al Signore,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Καὶ προσκαλεσάμενος αὐτούς, ἐν παραβολαῖς ἔλεγεν αὐτοῖς, Πῶς δύναται Σατανᾶς Σατανᾶν ἐκβάλλειν;",
+        "VUL": "Et convocatis eis in parabolis dicebat illis : Quomodo potest Satanas Satanam ejicere ?",
+        "SYN": "И, призвав их, говорил им притчами: как может сатана изгонять сатану?",
+        "NEO": "Jésus les appela et leur dit en parabole : « Comment Satan peut-il chasser Satan ?",
+        "NAB": "Summoning them, he began to speak to them in parables, \"How can Satan drive out Satan?",
+        "VAT_ES": "Jesús los llamó y por medio de comparaciones les explicó: «&iquest;Cómo Satanás va a expulsar a Satanás?",
+        "CEI": "come è scritto nella Legge del Signore: ogni maschio primogenito sarà sacro al Signore;"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Καὶ ἐὰν βασιλεία ἐφ’ ἑαυτὴν μερισθῇ, οὐ δύναται σταθῆναι ἡ βασιλεία ἐκείνη.",
+        "VUL": "Et si regnum in se dividatur, non potest regnum illud stare.",
+        "SYN": "Если царство разделится само в себе, не может устоять царство то;",
+        "NEO": "Si un royaume est divisé contre lui-même, ce royaume ne saurait subsister ;",
+        "NAB": "If a kingdom is divided against itself, that kingdom cannot stand.",
+        "VAT_ES": "Un reino donde hay luchas internas no puede subsistir,",
+        "CEI": "e per offrire in sacrificio una coppia di tortore o di giovani colombi, come prescrive la Legge del Signore."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Καὶ ἐὰν οἰκία ἐφ’ ἑαυτὴν μερισθῇ, οὐ δύναται σταθῆναι ἡ οἰκία ἐκείνη.",
+        "VUL": "Et si domus super semetipsam dispertiatur, non potest domus illa stare.",
+        "SYN": "и если дом разделится сам в себе, не может устоять дом тот;",
+        "NEO": "et si une maison est divisée contre elle-même, cette maison ne saurait subsister.",
+        "NAB": "And if a house is divided against itself, that house will not be able to stand.",
+        "VAT_ES": "Y una familia dividida tampoco puede subsistir.",
+        "CEI": "Ora a Gerusalemme c'era un uomo di nome Simeone, uomo giusto e timorato di Dio, che aspettava il conforto d'Israele;"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Καὶ εἰ ὁ Σατανᾶς ἀνέστη ἐφ’ ἑαυτὸν καὶ μεμέρισται, οὐ δύναται σταθῆναι, ἀλλὰ τέλος ἔχει.",
+        "VUL": "Et si Satanas consurrexerit in semetipsum, dispertitus est, et non poterit stare, sed finem habet.",
+        "SYN": "и если сатана восстал на самого себя и разделился, не может устоять, но пришел конец его.",
+        "NEO": "Si donc Satan s’élève contre lui-même, il est divisé, il ne pourra subsister, et sa puissance* touche à sa fin.",
+        "NAB": "And if Satan has risen up against himself and is divided, he cannot stand; that is the end of him.",
+        "VAT_ES": "Por lo tanto, si Satanás se dividió, levantándose contra sí mismo, ya no puede subsistir, sino que ha llega a su fin.",
+        "CEI": "lo Spirito Santo che era sopra di lui, gli aveva preannunziato che non avrebbe visto la morte senza prima aver veduto il Messia del Signore."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Οὐδεὶς δύναται τὰ σκεύη τοῦ ἰσχυροῦ, εἰσελθὼν εἰς τὴν οἰκίαν αὐτοῦ, διαρπάσαι, ἐὰν μὴ πρῶτον τὸν ἰσχυρὸν δήσῃ, καὶ τότε τὴν οἰκίαν αὐτοῦ διαρπάσῃ.",
+        "VUL": "Nemo potest vasa fortis ingressus in domum diripere, nisi prius fortem alliget, et tunc domum ejus diripiet.",
+        "SYN": "Никто, войдя в дом сильного, не может расхитить вещей его, если прежде не свяжет сильного, и тогда расхитит дом его.",
+        "NEO": "Nul ne peut entrer dans la maison du fort et enlever ses meubles, si auparavant il ne l’enchaîne ; et alors il pillera sa maison.",
+        "NAB": "But no one can enter a strong man's house to plunder his property unless he first ties up the strong man. Then he can plunder his house.",
+        "VAT_ES": "Pero nadie puede entrar en la casa de un hombre fuerte y saquear sus bienes, si primero no lo ata. Sólo así podrá saquear la casa.",
+        "CEI": "Mosso dunque dallo Spirito, si recò al tempio; e mentre i genitori vi portavano il bambino Gesù per adempiere la Legge,"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Ἀμὴν λέγω ὑμῖν ὅτι πάντα ἀφεθήσεται τὰ ἁμαρτήματα τοῖς υἱοῖς τῶν ἀνθρώπων, καὶ βλασφημίαι ὅσας ἂν βλασφημήσωσιν·",
+        "VUL": "Amen dico vobis, quoniam omnia dimittentur filiis hominum peccata, et blasphemiæ quibus blasphemaverint :",
+        "SYN": "Истинно говорю вам: будут прощены сынам человеческим все грехи и хуления, какими бы ни хулили;",
+        "NEO": "En vérité, je vous le dis, tous les péchés seront remis aux enfants des hommes, même les blasphèmes qu’ils auront proférés.",
+        "NAB": "Amen, I say to you, all sins and all blasphemies that people utter will be forgiven them.",
+        "VAT_ES": "Les aseguro que todo será perdonado a los hombres: todos los pecados y cualquier blasfemia que profieran.",
+        "CEI": "lo prese tra le braccia e benedisse Dio:"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "ὃς δ’ ἂν βλασφημήσῃ εἰς τὸ πνεῦμα τὸ ἅγιον, οὐκ ἔχει ἄφεσιν εἰς τὸν αἰῶνα, ἀλλ’ ἔνοχός ἐστιν αἰωνίου κρίσεως.",
+        "VUL": "qui autem blasphemaverit in Spiritum Sanctum, non habebit remissionem in æternum, sed reus erit æterni delicti.",
+        "SYN": "но кто будет хулить Духа Святаго, тому не будет прощения вовек, но подлежит он вечному осуждению.",
+        "NEO": "Mais celui qui aura blasphémé contre l’Esprit-Saint n’obtiendra jamais de pardon ; il est coupable d’un péché éternel. »",
+        "NAB": "But whoever blasphemes against the holy Spirit will never have forgiveness, but is guilty of an everlasting sin.\"",
+        "VAT_ES": "Pero el que blasfeme contra el Espíritu Santo, no tendrá perdón jamás: es culpable de pecado para siempre».",
+        "CEI": "\"Ora lascia, o Signore, che il tuo servo vada in pace secondo la tua parola;"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Ὅτι ἔλεγον, Πνεῦμα ἀκάθαρτον ἔχει.",
+        "VUL": "Quoniam dicebant : Spiritum immundum habet.",
+        "SYN": "_Сие_ _сказал_ _Он,_ потому что говорили: в Нем нечистый дух.",
+        "NEO": "Jésus parla ainsi*, parce qu’ils disaient : « Il est possédé d’un esprit impur. »",
+        "NAB": "For they had said, \"He has an unclean spirit.\"",
+        "VAT_ES": "Jesús dijo esto porque ellos decían: «Está poseído por un espíritu impuro».",
+        "CEI": "perché i miei occhi han visto la tua salvezza,"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "¶Ἔρχονται οὖν οἱ ἀδελφοὶ καὶ ἡ μήτηρ αὐτοῦ, καὶ ἔξω ἑστῶτες ἀπέστειλαν πρὸς αὐτόν, φωνοῦντες αὐτόν.",
+        "VUL": "Et veniunt mater ejus et fratres : et foris stantes miserunt ad eum vocantes eum,",
+        "SYN": "И пришли Матерь и братья Его и, стоя _вне_ дома, послали к Нему звать Его.",
+        "NEO": "Sa mère et ses frères étant venus, ils se tinrent dehors et l’envoyèrent appeler+ 3:31 31. Matth. xii, 46 ; Luc. viii, 19.*.",
+        "NAB": "His mother and his brothers arrived. Standing outside they sent word to him and called him.",
+        "VAT_ES": "Entonces llegaron su madre y sus hermanos y, quedándose afuera, lo mandaron llamar.",
+        "CEI": "preparata da te davanti a tutti i popoli,"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "Καὶ ἐκάθητο ὄχλος περὶ αὐτόν· εἶπον δὲ αὐτῷ, Ἰδού, ἡ μήτηρ σου καὶ οἱ ἀδελφοί σου καὶ αἱ ἀδελφαί σου ἔξω ζητοῦσίν σε.",
+        "VUL": "et sedebat circa eum turba : et dicunt ei : Ecce mater tua et fratres tui foris quærunt te.",
+        "SYN": "Около Него сидел народ. И сказали Ему: вот, Матерь Твоя и братья Твои и сестры Твои, _вне_ дома, спрашивают Тебя.",
+        "NEO": "Or le peuple était assis autour de lui, et on lui dit : « Ta mère et tes frères sont là dehors, qui te cherchent. »",
+        "NAB": "A crowd seated around him told him, \"Your mother and your brothers (and your sisters) are outside asking for you.\"",
+        "VAT_ES": "La multitud estaba sentada alrededor de Jesús, y le dijeron: «Tu madre y tus hermanos te buscan ahí fuera».",
+        "CEI": "luce per illuminare le genti e gloria del tuo popolo Israele\"."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Καὶ ἀπεκρίθη αὐτοῖς λέγων, Τίς ἐστιν ἡ μήτηρ μου ἢ οἱ ἀδελφοί μου;",
+        "VUL": "Et respondens eis, ait : Quæ est mater mea et fratres mei ?",
+        "SYN": "И отвечал им: кто матерь Моя и братья Мои?",
+        "NEO": "Il répondit : « Qui est ma mère et qui sont mes frères ? »",
+        "NAB": "But he said to them in reply, \"Who are my mother and (my) brothers?\"",
+        "VAT_ES": "El les respondió: «&iquest;Quién es mi madre y quiénes son mis hermanos?».",
+        "CEI": "Il padre e la madre di Gesù si stupivano delle cose che si dicevano di lui."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "Καὶ περιβλεψάμενος κύκλῳ τοὺς περὶ αὐτὸν καθημένους, λέγει, Ἴδε, ἡ μήτηρ μου καὶ οἱ ἀδελφοί μου.",
+        "VUL": "Et circumspiciens eos, qui in circuitu ejus sedebant, ait : Ecce mater mea et fratres mei.",
+        "SYN": "И обозрев сидящих вокруг Себя, говорит: вот матерь Моя и братья Мои;",
+        "NEO": "Puis, promenant ses regards sur ceux qui étaient assis autour de lui : « Voici, dit-il, ma mère et mes frères.",
+        "NAB": "And looking around at those seated in the circle he said, \"Here are my mother and my brothers.",
+        "VAT_ES": "Y dirigiendo su mirada sobre los que estaban sentados alrededor de él, dijo: «Estos son mi madre y mis hermanos.",
+        "CEI": "Simeone li benedisse e parlò a Maria, sua madre: \"Egli è qui per la rovina e la risurrezione di molti in Israele, segno di contraddizione"
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "Ὃς γὰρ ἂν ποιήσῃ τὸ θέλημα τοῦ θεοῦ, οὗτος ἀδελφός μου καὶ ἀδελφή μου καὶ μήτηρ ἐστίν.",
+        "VUL": "Qui enim fecerit voluntatem Dei, hic frater meus, et soror mea, et mater est.",
+        "SYN": "ибо кто будет исполнять волю Божию, тот Мне брат, и сестра, и матерь.",
+        "NEO": "Car quiconque fait la volonté de Dieu, celui-là est mon frère, et ma sœur et ma mère. »",
+        "NAB": "(For) whoever does the will of God is my brother and sister and mother.\"",
+        "VAT_ES": "Porque el que hace la voluntad de Dios, ese es mi hermano, mi hermana y mi madre».",
+        "CEI": "perché siano svelati i pensieri di molti cuori. E anche a te una spada trafiggerà l'anima\"."
+      }
+    }
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MICH_007",
+  "book_key": "MICH",
+  "sequence": 7,
+  "chapter_in": {
+    "MT": 7,
+    "VUL": 7,
+    "LXX": 7
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אַ֣לְלַי לִ֗/י כִּ֤י הָיִ֨יתִי֙ כְּ/אָסְפֵּי קַ֔יִץ כְּ/עֹלְלֹ֖ת בָּצִ֑יר אֵין אֶשְׁכּ֣וֹל לֶ/אֱכ֔וֹל בִּכּוּרָ֖ה אִוְּתָ֥ה נַפְשִֽׁ/י׃",
+        "SYN": "Горе мне! ибо со мною теперь - как по собрании летних плодов, как по уборке винограда: ни одной ягоды для еды, ни спелого плода, которого желает душа моя.",
+        "NEO": "Hélas ! je suis comme après la récolte des fruits d’été, comme après le grappillage de la vendange : pas une grappe a manger ! pas une des premières figues que mon âme désire !",
+        "NAB": "Alas! I am as when the fruit is gathered, as when the vines have been gleaned; There is no cluster to eat, no early fig that I crave.",
+        "VAT_ES": "&iexcl;Ay de mí! He llegado a ser como los segadores en verano, como el que rebusca después de la vendimia: &iexcl;ni un racimo para comer, ni una breva de las que tanto me gustan!",
+        "CEI": "Ahimè! Sono diventato come uno spigolatore d'estate, come un racimolatore dopo la vendemmia! Non un grappolo da mangiare, non un fico per la mia voglia."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אָבַ֤ד חָסִיד֙ מִן הָ/אָ֔רֶץ וְ/יָשָׁ֥ר בָּ/אָדָ֖ם אָ֑יִן כֻּלָּ/ם֙ לְ/דָמִ֣ים יֶאֱרֹ֔בוּ אִ֥ישׁ אֶת אָחִ֖י/הוּ יָצ֥וּדוּ חֵֽרֶם׃",
+        "SYN": "Не стало милосердых на земле, нет правдивых между людьми; все строят ковы, чтобы проливать кровь; каждый ставит брату своему сеть.",
+        "NEO": "L’homme pieux a disparu de la terre, et il n’y a plus un juste parmi les hommes.",
+        "NAB": "The faithful are gone from the earth, among men the upright are no more! They all lie in wait to shed blood, each one ensnares the other.",
+        "VAT_ES": "El hombre fiel ha desaparecido del país: &iexcl;no queda ni un justo entre los hombres! Todos están al acecho para derramar sangre, cada uno atrapa a su hermano en la red.",
+        "CEI": "L'uomo pio è scomparso dalla terra, non c'è più un giusto fra gli uomini: tutti stanno in agguato per spargere sangue; ognuno dà la caccia con la rete al fratello."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "עַל הָ/רַ֤ע כַּפַּ֨יִם֙ לְ/הֵיטִ֔יב הַ/שַּׂ֣ר שֹׁאֵ֔ל וְ/הַ/שֹּׁפֵ֖ט בַּ/שִׁלּ֑וּם וְ/הַ/גָּד֗וֹל דֹּבֵ֨ר הַוַּ֥ת נַפְשׁ֛/וֹ ה֖וּא וַֽ/יְעַבְּתֽוּ/הָ׃",
+        "SYN": "Руки их обращены к тому, чтобы уметь делать зло; начальник требует подарков, и судья судит за взятки, а вельможи высказывают злые хотения души своей и извращают дело.",
+        "NEO": "Le mal, il y a des mains pour le bien faire ; le prince exige, le juge fait son prix, et le grand manifeste son avidité ; c’est ainsi qu’ils ourdissent ensemble leur trame.",
+        "NAB": "Their hands succeed at evil; the prince makes demands, The judge is had for a price, The great man speaks as he pleases,",
+        "VAT_ES": "Sus manos se emplean para el mal; para hacer un favor, el príncipe exige y el juez reclama una gratificación; el poderoso manifiesta su avidez y se pervierte la justicia.",
+        "CEI": "Le loro mani son pronte per il male; il principe avanza pretese, il giudice si lascia comprare, il grande manifesta la cupidigia e così distorcono tutto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "טוֹבָ֣/ם כְּ/חֵ֔דֶק יָשָׁ֖ר מִ/מְּסוּכָ֑ה י֤וֹם מְצַפֶּ֨י/ךָ֙ פְּקֻדָּתְ/ךָ֣ בָ֔אָה עַתָּ֥ה תִהְיֶ֖ה מְבוּכָתָֽ/ם׃",
+        "SYN": "Лучший из них - как терн, и справедливый - хуже колючей изгороди, день провозвестников Твоих, посещение Твое наступает; ныне постигнет их смятение.",
+        "NEO": "Le meilleur d’entre eux est pareil à l’épine ; le plus droit, pire qu’une haie de ronces.",
+        "NAB": "The best of them is like a brier, the most upright like a thorn hedge. The day announced by your watchmen! your punishment has come; now is the time of your confusion.",
+        "VAT_ES": "El mejor entre ellos es como una zarza, el más justo, peor que una mata espinosa. Pero ha llegado tu castigo, el día anunciado por tus centinelas: es el momento de su consternación.",
+        "CEI": "Il migliore di loro non è che un pruno, il più retto una siepe di spine. Il giorno predetto dalle tue sentinelle, il giorno del castigo è giunto, adesso è la loro rovina."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אַל תַּאֲמִ֣ינוּ בְ/רֵ֔עַ אַֽל תִּבְטְח֖וּ בְּ/אַלּ֑וּף מִ/שֹּׁכֶ֣בֶת חֵיקֶ֔/ךָ שְׁמֹ֖ר פִּתְחֵי פִֽי/ךָ׃",
+        "SYN": "Не верьте другу, не полагайтесь на приятеля; от лежащей на лоне твоем стереги двери уст твоих.",
+        "NEO": "Ne croyez pas à un ami, ne vous fiez pas à un intime ; devant celle qui repose sur ton sein, garde les paroles de ta bouche !",
+        "NAB": "Put no trust in a friend, have no confidence in a companion; Against her who lies in your bosom guard the portals of your mouth.",
+        "VAT_ES": "No se fíen de un compañero, no tengan confianza en un amigo; cuídate de abrir la boca delante de la que se recuesta en tu pecho.",
+        "CEI": "Non credete all'amico, non fidatevi del compagno. Custodisci le porte della tua bocca davanti a colei che riposa vicino a te."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כִּֽי בֵן֙ מְנַבֵּ֣ל אָ֔ב בַּ֚ת קָמָ֣ה בְ/אִמָּ֔/הּ כַּלָּ֖ה בַּ/חֲמֹתָ֑/הּ אֹיְבֵ֥י אִ֖ישׁ אַנְשֵׁ֥י בֵיתֽ/וֹ׃",
+        "SYN": "Ибо сын позорит отца, дочь восстает против матери, невестка - против свекрови своей; враги человеку - домашние его.",
+        "NEO": "Car le fils traite son père de fou ; la fille s’insurge contre sa mère, la belle-fille contre sa belle-mère ; chacun a pour ennemis les gens de sa maison.",
+        "NAB": "For the son dishonors his father, the daughter rises up against her mother, The daughter-in-law against her mother-in-law, and a man's enemies are those of his household.",
+        "VAT_ES": "Porque el hijo denigra al padre, la hija se alza contra su madre, la nuera contra su suegra, y cada uno tiene como enemigos a los de su casa.",
+        "CEI": "Il figlio insulta suo padre, la figlia si rivolta contro la madre, la nuora contro la suocera e i nemici dell'uomo sono quelli di casa sua."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/אֲנִי֙ בַּ/יהוָ֣ה אֲצַפֶּ֔ה אוֹחִ֖ילָה לֵ/אלֹהֵ֣י יִשְׁעִ֑/י יִשְׁמָעֵ֖/נִי אֱלֹהָֽ/י׃",
+        "SYN": "А я буду взирать на Господа, уповать на Бога спасения моего: Бог мой услышит меня.",
+        "NEO": "Et moi je regarderai vers \\+w Yahweh|strong=\"H3068\"\\+w**, j’espérerai dans le Dieu de mon salut ; mon Dieu m’écoutera.",
+        "NAB": "But as for me, I will look to the LORD, I will put my trust in God my savior; my God will hear me!",
+        "VAT_ES": "Pero yo aguardo al Señor, espero en el Dios de mi salvación. &iexcl;Mi Dios me escuchará!",
+        "CEI": "Ma io volgo lo sguardo al Signore, spero nel Dio della mia salvezza, il mio Dio m'esaudirà."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אַֽל תִּשְׂמְחִ֤י אֹיַ֨בְתִּ/י֙ לִ֔/י כִּ֥י נָפַ֖לְתִּי קָ֑מְתִּי כִּֽי אֵשֵׁ֣ב בַּ/חֹ֔שֶׁךְ יְהוָ֖ה א֥וֹר לִֽ/י׃",
+        "SYN": "Не радуйся ради меня, неприятельница моя! хотя я упал, но встану; хотя я во мраке, но Господь свет для меня.",
+        "NEO": "Ne te réjouis pas à mon sujet, ô mon ennemie ; car, si je suis tombée, je me relèverai ; si je suis assise dans les ténèbres, \\+w Yahweh|strong=\"H3068\"\\+w** est ma lumière.",
+        "NAB": "Rejoice not over me, O my enemy! though I have fallen, I will arise; though I sit in darkness, the LORD is my light.",
+        "VAT_ES": "No te alegres de mi suerte, enemiga mía, porque si he caído, me levantaré; si habito en las tinieblas, el Señor es mi luz.",
+        "CEI": "Non gioire della mia sventura, o mia nemica! Se son caduta, mi rialzerò; se siedo nelle tenebre, il Signore sarà la mia luce."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "זַ֤עַף יְהוָה֙ אֶשָּׂ֔א כִּ֥י חָטָ֖אתִי ל֑/וֹ עַד֩ אֲשֶׁ֨ר יָרִ֤יב רִיבִ/י֙ וְ/עָשָׂ֣ה מִשְׁפָּטִ֔/י יוֹצִיאֵ֣/נִי לָ/א֔וֹר אֶרְאֶ֖ה בְּ/צִדְקָתֽ/וֹ׃",
+        "SYN": "Гнев Господень я буду нести, потому что согрешил пред Ним, доколе Он не решит дела моего и не совершит суда надо мною; тогда Он выведет меня на свет, и я увижу правду Его.",
+        "NEO": "Je porterai la colère de \\+w Yahweh|strong=\"H3068\"\\+w**, puisque j’ai péché contre lui, jusqu’à ce qu’il prenne en main ma cause, et qu’il établisse mon droit ; il me fera sortir à la lumière, je contemplerai sa justice.",
+        "NAB": "The wrath of the LORD I will endure because I have sinned against him, Until he takes up my cause, and establishes my right. He will bring me forth to the light; I will see his justice.",
+        "VAT_ES": "Tengo que soportar la ira del Señor, porque he pecado contra él, hasta que él juzgue mi causa y me haga justicia. El me hará salir a la luz y yo contemplaré su justicia.",
+        "CEI": "Sopporterò lo sdegno del Signore perchè ho peccato contro di lui, finchè egli tratti la mia causa e mi renda ragione, finchè mi faccia uscire alla luce e io veda la sua giustizia."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/תֵרֶ֤א אֹיַ֨בְתִּ/י֙ וּ/תְכַסֶּ֣/הָ בוּשָׁ֔ה הָ/אֹמְרָ֣ה אֵלַ֔/י אַיּ֖/וֹ יְהוָ֣ה אֱלֹהָ֑יִ/ךְ עֵינַ/י֙ תִּרְאֶ֣ינָּה בָּ֔/הּ עַתָּ֛ה תִּֽהְיֶ֥ה לְ/מִרְמָ֖ס כְּ/טִ֥יט חוּצֽוֹת׃",
+        "SYN": "И увидит это неприятельница моя и стыд покроет ее, говорившую мне: \"где Господь Бог твой?\" Насмотрятся на нее глаза мои, как она будет попираема подобно грязи на улицах.",
+        "NEO": "Que mon ennemie le voie, et que la honte la recouvre, elle qui me disait : « Où est \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu ? » Mes yeux la contempleront ; maintenant elle sera foulée aux pieds, comme la boue des rues.",
+        "NAB": "When my enemy sees this, shame shall cover her: She who said to me, \"Where is the LORD, thy God?\" My eyes shall see her downfall; now shall she be trampled underfoot, like the mire in the streets.",
+        "VAT_ES": "Mi enemiga lo verá y se cubrirá de verg&uuml;enza, ella, que me decía: «&iquest;Dónde está el Señor, tu Dios?». Mis ojos gozarán al verla, cuando sea pisoteada como el barro de las calles.",
+        "CEI": "La mia nemica lo vedrà e sarà coperta di vergogna, lei che mi diceva: \"Dov'è il Signore tuo Dio?\". I miei occhi gioiranno nel vederla calpestata come fango della strada."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "י֖וֹם לִ/בְנ֣וֹת גְּדֵרָ֑יִ/ךְ י֥וֹם הַ/ה֖וּא יִרְחַק חֹֽק׃",
+        "SYN": "В день сооружения стен твоих, в этот день отдалится определение.",
+        "NEO": "Le jour vient où tes murs seront rebâtis ; ce jour-là le décret sera retiré.",
+        "NAB": "It is the day for building your walls; on that day the boundary shall be taken away.",
+        "VAT_ES": "&iexcl;Llega el día de reconstruir tus murallas! Aquel día se extenderán tus fronteras;",
+        "CEI": "È il giorno in cui le tue mura saranno riedificate; in quel giorno più ampi saranno i tuoi confini;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "י֥וֹם הוּא֙ וְ/עָדֶ֣י/ךָ יָב֔וֹא לְ/מִנִּ֥י אַשּׁ֖וּר וְ/עָרֵ֣י מָצ֑וֹר וּ/לְ/מִנִּ֤י מָצוֹר֙ וְ/עַד נָהָ֔ר וְ/יָ֥ם מִ/יָּ֖ם וְ/הַ֥ר הָ/הָֽר׃",
+        "SYN": "В тот день придут к тебе из Ассирии и городов Египетских, и от Египта до реки _Евфрата,_ и от моря до моря, и от горы до горы.",
+        "NEO": "Ce jour-là, on viendra jusqu’à toi, de l’Assyrie et des villes d’Égypte, de l’Égypte jusqu’au fleuve, d’une mer à l’autre et d’une montagne à l’autre.",
+        "NAB": "It is the day; and they shall come to you from Assyria and from Egypt, From Tyre even to the River, from sea to sea, and from mountain to mountain;",
+        "VAT_ES": "aquel día vendrán hacia ti desde Asiria hasta Egipto y desde Egipto hasta el Río, de un mar hasta el otro y de una montaña hasta la otra.",
+        "CEI": "in quel giorno si verrà a te dall'Assiria fino all'Egitto, dall'Egitto fino all'Eufràte, da mare a mare, da monte a monte."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/הָיְתָ֥ה הָ/אָ֛רֶץ לִ/שְׁמָמָ֖ה עַל יֹֽשְׁבֶ֑י/הָ מִ/פְּרִ֖י מַֽעַלְלֵי/הֶֽם׃",
+        "SYN": "А земля та будет пустынею за _вину_ жителей ее, за плоды деяний их.",
+        "NEO": "Le pays deviendra un désert, à cause de ses habitants : c’est là le fruit de leurs actions.",
+        "NAB": "And the land shall be a waste because of its citizens, as a result of their deeds.",
+        "VAT_ES": "La tierra quedará desolada a causa de sus habitantes, como pago de sus malas acciones.",
+        "CEI": "La terra diventerà un deserto a causa dei suoi abitanti, a motivo delle loro azioni."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "רְעֵ֧ה עַמְּ/ךָ֣ בְ/שִׁבְטֶ֗/ךָ צֹ֚אן נַֽחֲלָתֶ֔/ךָ שֹׁכְנִ֣י לְ/בָדָ֔ד יַ֖עַר בְּ/ת֣וֹךְ כַּרְמֶ֑ל יִרְע֥וּ בָשָׁ֛ן וְ/גִלְעָ֖ד כִּ/ימֵ֥י עוֹלָֽם׃",
+        "SYN": "Паси народ Твой жезлом Твоим, овец наследия Твоего, обитающих уединенно в лесу среди Кармила; да пасутся они на Васане и Галааде, как во дни древние!",
+        "NEO": "Pais ton peuple avec ta houlette, le troupeau de ton héritage, qui habite solitaire dans la forêt, au milieu du Carmel ; qu’elles paissent en Basan et en Galaad, comme aux jours anciens !",
+        "NAB": "Shepherd your people with your staff, the flock of your inheritance, That dwells apart in a woodland, in the midst of Carmel. Let them feed in Bashan and Gilead, as in the days of old;",
+        "VAT_ES": "Apacienta con tu cayado a tu pueblo, al rebaño de tu herencia, al que vive solitario en un bosque, en medio de un vergel. &iexcl;Que sean apacentados en Basán y en Galaad, como en los tiempos antiguos!",
+        "CEI": "Pasci il tuo popolo con la tua verga, il gregge della tua eredità, che sta solitario nella foresta in mezzo ai giardini; pascolino in Basàn e in Gàlaad come nei tempi antichi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כִּ/ימֵ֥י צֵאתְ/ךָ֖ מֵ/אֶ֣רֶץ מִצְרָ֑יִם אַרְאֶ֖/נּוּ נִפְלָאֽוֹת׃",
+        "SYN": "Как во дни исхода твоего из земли Египетской, явлю ему дивные дела.",
+        "NEO": "Comme au jour où tu sortis du pays d’Égypte, je lui ferai voir des prodiges.",
+        "NAB": "As in the days when you came from the land of Egypt, show us wonderful signs.",
+        "VAT_ES": "Como en los días en que salías de Egipto, muéstranos tus maravillas.",
+        "CEI": "Come quando sei uscito dall'Egitto, mostraci cose prodigiose."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "יִרְא֤וּ גוֹיִם֙ וְ/יֵבֹ֔שׁוּ מִ/כֹּ֖ל גְּבֽוּרָתָ֑/ם יָשִׂ֤ימוּ יָד֙ עַל פֶּ֔ה אָזְנֵי/הֶ֖ם תֶּחֱרַֽשְׁנָה׃",
+        "SYN": "Увидят это народы и устыдятся при всем могуществе своем; положат руку на уста, уши их сделаются глухими;",
+        "NEO": "Les nations le verront, et seront confuses de toute leur puissance ; elles mettront la main sur la bouche ; leurs oreilles seront assourdies.",
+        "NAB": "The nations shall behold and be put to shame, in spite of all their strength; They shall put their hands over their mouths; their ears shall become deaf.",
+        "VAT_ES": "Las naciones verán y se avergonzarán de todo su poderío; se taparán la boca con la mano y quedarán sordos sus oídos.",
+        "CEI": "Vedranno le genti e resteranno deluse di tutta la loro potenza. Si porranno la mano sulla bocca, i loro orecchi ne resteranno assorditi."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "יְלַחֲכ֤וּ עָפָר֙ כַּ/נָּחָ֔שׁ כְּ/זֹחֲלֵ֣י אֶ֔רֶץ יִרְגְּז֖וּ מִ/מִּסְגְּרֹֽתֵי/הֶ֑ם אֶל יְהוָ֤ה אֱלֹהֵ֨י/נוּ֙ יִפְחָ֔דוּ וְ/יִֽרְא֖וּ מִמֶּֽ/ךָּ׃",
+        "SYN": "будут лизать прах как змея, как черви земные выползут они из укреплений своих; устрашатся Господа Бога нашего и убоятся Тебя.",
+        "NEO": "Elles lécheront la poussière comme le serpent ; comme les reptiles de la terre, elles sortiront avec effroi de leurs retraites ; elles viendront en tremblant vers \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, et elles vous craindront.",
+        "NAB": "They shall lick the dust like the serpent, like reptiles on the ground; They shall come quaking from their fastnesses, trembling in fear of you (the LORD, our God).",
+        "VAT_ES": "Lamerán el polvo como la serpiente, como los gusanos de la tierra; saldrán temblorosas de sus refugios, irán temblando hacia el Señor, nuestro Dios, y sentirán temor delante de ti.",
+        "CEI": "Leccheranno la polvere come il serpente, come i rettili della terra; usciranno tremanti dai loro nascondigli, trepideranno e di te avranno timore."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "מִי אֵ֣ל כָּמ֗וֹ/ךָ נֹשֵׂ֤א עָוֺן֙ וְ/עֹבֵ֣ר עַל פֶּ֔שַׁע לִ/שְׁאֵרִ֖ית נַחֲלָת֑/וֹ לֹא הֶחֱזִ֤יק לָ/עַד֙ אַפּ֔/וֹ כִּֽי חָפֵ֥ץ חֶ֖סֶד הֽוּא׃",
+        "SYN": "Кто Бог, как Ты, прощающий беззаконие и не вменяющий преступления остатку наследия Твоего? не вечно гневается Он, потому что любит миловать.",
+        "NEO": "Quel Dieu est semblable à vous, qui ôtez l’iniquité, et qui pardonnez la transgression au reste de votre héritage ? Il ne fait pas à toujours prévaloir sa colère, car il prend plaisir, lui, à faire grâce.",
+        "NAB": "Who is there like you, the God who removes guilt and pardons sin for the remnant of his inheritance; Who does not persist in anger forever, but delights rather in clemency,",
+        "VAT_ES": "&iquest;Qué dios es como tú, que perdonas la falta y pasas por alto la rebeldía del resto de tu herencia? El no mantiene su ira para siempre, porque ama la fidelidad.",
+        "CEI": "Qual dio è come te, che toglie l'iniquità e perdona il peccato al resto della sua eredità; che non serba per sempre l'ira, ma si compiace d'usar misericordia?"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "יָשׁ֣וּב יְרַֽחֲמֵ֔/נוּ יִכְבֹּ֖שׁ עֲוֺֽנֹתֵ֑י/נוּ וְ/תַשְׁלִ֛יךְ בִּ/מְצֻל֥וֹת יָ֖ם כָּל חַטֹּאותָֽ/ם׃",
+        "SYN": "Он опять умилосердится над нами, изгладит беззакония наши. Ты ввергнешь в пучину морскую все грехи наши.",
+        "NEO": "Il aura encore pitié de nous, il foulera encore aux pieds nos iniquités ! Vous jetterez au fond de la mer tous leurs péchés ;",
+        "NAB": "And will again have compassion on us, treading underfoot our guilt? You will cast into the depths of the sea all our sins;",
+        "VAT_ES": "El volverá a compadecerse de nosotros y pisoteará nuestras faltas. Tú arrojarás en lo más profundo del mar todos nuestros pecados.",
+        "CEI": "Egli tornerà ad aver pietà di noi, calpesterà le nostre colpe. Tu getterai in fondo al mare tutti i nostri peccati."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "תִּתֵּ֤ן אֱמֶת֙ לְ/יַֽעֲקֹ֔ב חֶ֖סֶד לְ/אַבְרָהָ֑ם אֲשֶׁר נִשְׁבַּ֥עְתָּ לַ/אֲבֹתֵ֖י/נוּ מִ֥/ימֵי קֶֽדֶם׃",
+        "SYN": "Ты явишь верность Иакову, милость Аврааму, которую с клятвою обещал отцам нашим от дней первых.",
+        "NEO": "vous ferez voir à Jacob votre fidélité, à Abraham la miséricorde, que vous avez jurée à nos pères, dès les jours anciens.",
+        "NAB": "You will show faithfulness to Jacob, and grace to Abraham, As you have sworn to our fathers from days of old.",
+        "VAT_ES": "Manifestarás tu lealtad a Jacob y tu fidelidad a Abraham, como juraste a nuestros padres desde los tiempos remotos.",
+        "CEI": "Conserverai a Giacobbe la tua fedeltà, ad Abramo la tua benevolenza, come hai giurato ai nostri padri fino dai tempi antichi."
+      }
+    }
+  }
+}

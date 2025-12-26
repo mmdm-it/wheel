@@ -1,0 +1,158 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_121",
+  "book_key": "PSAL",
+  "sequence": 121,
+  "chapter_in": {
+    "MT": 121,
+    "VUL": 120,
+    "LXX": 120
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שִׁ֗יר לַֽ/מַּ֫עֲל֥וֹת אֶשָּׂ֣א עֵ֭ינַ/י אֶל הֶ/הָרִ֑ים מֵ֝/אַ֗יִן יָבֹ֥א עֶזְרִֽ/י׃",
+        "LXX": "ᾨδὴ τῶν ἀναβαθμῶν· τῷ Δαυείδ. Εὐφράνθην ἐπὶ τοῖς εἰρηκόσιν μοι Εἰς οἶκον Κυρίου πορευσόμεθα·",
+        "VUL": "Canticum graduum. [Lætatus sum in his quæ dicta sunt mihi :/ In domum Domini ibimus./",
+        "SYN": "Возрадовался я, когда сказали мне: \"пойдем в дом Господень\".",
+        "NEO": "Cantique pour les montées.",
+        "NAB": "A song of ascents. I raise my eyes toward the mountains. From where will my help come?",
+        "CEI": "Canto delle ascensioni. Alzo gli occhi verso i monti: da dove mi verrà l'aiuto?"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עֶ֭זְרִ/י מֵ/עִ֣ם יְהוָ֑ה עֹ֝שֵׂ֗ה שָׁמַ֥יִם וָ/אָֽרֶץ׃",
+        "LXX": "ἑστῶτες ἦσαν οἱ πόδες ἡμῶν ἐν ταῖς αὐλαῖς Ἰερουσαλήμ.",
+        "VUL": "Stantes erant pedes nostri/ in atriis tuis, Jerusalem./",
+        "SYN": "Вот, стоят ноги наши во вратах твоих, Иерусалим, -",
+        "NEO": "Mon secours viendra de \\+w Yahweh|strong=\"H3068\"\\+w**, qui a fait le ciel et la terre.",
+        "NAB": "My help comes from the LORD, the maker of heaven and earth.",
+        "VAT_ES": "La ayuda me viene del Señor,",
+        "CEI": "Il mio aiuto viene dal Signore, che ha fatto cielo e terra."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אַל יִתֵּ֣ן לַ/מּ֣וֹט רַגְלֶ֑/ךָ אַל יָ֝נ֗וּם שֹֽׁמְרֶֽ/ךָ׃",
+        "LXX": "Ἰερουσαλὴμ οἰκοδομουμένη ὡς πόλις ἧς ἡ μετοχὴ αὐτῆς ἐπὶ τὸ αὐτό.",
+        "VUL": "Jerusalem, quæ ædificatur ut civitas,/ cujus participatio ejus in idipsum./",
+        "SYN": "Иерусалим, устроенный как город, слитый в одно,",
+        "NEO": "Il ne permettra pas que ton pied trébuche ; celui qui te garde ne sommeillera pas.",
+        "NAB": "God will not allow your foot to slip; your guardian does not sleep.",
+        "VAT_ES": "El no dejará que resbale tu pie:",
+        "CEI": "Non lascerà vacillare il tuo piede, non si addormenterà il tuo custode."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הִנֵּ֣ה לֹֽא יָ֭נוּם וְ/לֹ֣א יִישָׁ֑ן שׁ֝וֹמֵ֗ר יִשְׂרָאֵֽל׃",
+        "LXX": "ἐκεῖ γὰρ ἀνέβησαν αἱ φυλαὶ Κυρίου, μαρτύριον τοῦ Ἰσραήλ, τοῦ ἐξομολογήσασθαι τῷ ὀνόματι Κυρίου·",
+        "VUL": "Illuc enim ascenderunt tribus, tribus Domini :/ testimonium Israël,/ ad confitendum nomini Domini./",
+        "SYN": "куда восходят колена, колена Господни, по закону Израилеву, славить имя Господне.",
+        "NEO": "Non, il ne sommeille ni ne dort, celui qui garde Israël.",
+        "NAB": "Truly, the guardian of Israel never slumbers nor sleeps.",
+        "VAT_ES": "No, no duerme ni dormita",
+        "CEI": "Non si addormenterà, non prenderà sonno, il custode d'Israele."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "יְהוָ֥ה שֹׁמְרֶ֑/ךָ יְהוָ֥ה צִ֝לְּ/ךָ֗ עַל יַ֥ד יְמִינֶֽ/ךָ׃",
+        "LXX": "ὅτι ἐκεῖ ἐκάθισαν θρόνοι εἰς κρίσιν, θρόνοι ἐπὶ οἶκον Δαυείδ,",
+        "VUL": "Quia illic sederunt sedes in judicio,/ sedes super domum David./",
+        "SYN": "Там стоят престолы суда, престолы дома Давидова.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est ton gardien ; \\+w Yahweh|strong=\"H3068\"\\+w** est ton abri, toujours à ta droite.",
+        "NAB": "The LORD is your guardian; the LORD is your shade at your righthand.",
+        "VAT_ES": "El Señor es tu guardián,",
+        "CEI": "Il Signore è il tuo custode, il Signore è come ombra che ti copre, e sta alla tua destra."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "יוֹמָ֗ם הַ/שֶּׁ֥מֶשׁ לֹֽא יַכֶּ֗/כָּה וְ/יָרֵ֥חַ בַּ/לָּֽיְלָה׃",
+        "LXX": "καὶ εὐθηνία τοῖς ἀγαπῶσίν σε· ἐρωτήσατε δὴ τὰ εἰς εἰρήνην τῇ Ἰερουσαλήμ.",
+        "VUL": "Rogate quæ ad pacem sunt Jerusalem,/ et abundantia diligentibus te./",
+        "SYN": "Просите мира Иерусалиму: да благоденствуют любящие тебя!",
+        "NEO": "Pendant le jour le soleil ne te frappera point, ni la lune pendant la nuit.",
+        "NAB": "By day the sun cannot harm you, nor the moon by night.",
+        "VAT_ES": "de día, no te dañará el sol,",
+        "CEI": "Di giorno non ti colpirà il sole, né la luna di notte."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יְֽהוָ֗ה יִשְׁמָרְ/ךָ֥ מִ/כָּל רָ֑ע יִ֝שְׁמֹ֗ר אֶת נַפְשֶֽׁ/ךָ׃",
+        "LXX": "γενέσθω δὴ εἰρήνη σου ἐν τῇ δυνάμει σου, καὶ εὐθηνία ἐν τοῖς πυργοβάρεσίν σου,",
+        "VUL": "Fiat pax in virtute tua,/ et abundantia in turribus tuis./",
+        "SYN": "Да будет мир в стенах твоих, благоденствие - в чертогах твоих!",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** te gardera de tout mal, il gardera ton âme :",
+        "NAB": "The LORD will guard you from all evil, will always guard your life.",
+        "VAT_ES": "El Señor te protegerá de todo mal",
+        "CEI": "Il Signore ti proteggerà da ogni male, egli proteggerà la tua vita."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "יְֽהוָ֗ה יִשְׁמָר צֵאתְ/ךָ֥ וּ/בוֹאֶ֑/ךָ מֵֽ֝/עַתָּ֗ה וְ/עַד עוֹלָֽם׃",
+        "LXX": "ἕνεκα τῶν ἀδελφῶν μου καὶ τῶν πλησίον μου. ἐλάλουν δὲ εἰρήνην περὶ σοῦ·",
+        "VUL": "Propter fratres meos et proximos meos,/ loquebar pacem de te./",
+        "SYN": "Ради братьев моих и ближних моих говорю я: \"мир тебе!\"",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** gardera ton départ et ton arrivée maintenant et à jamais.",
+        "NAB": "The LORD will guard your coming and going both now and forever.",
+        "VAT_ES": "El te protegerá en la partida y el regreso,",
+        "CEI": "Il Signore veglierà su di te, quando esci e quando entri, da ora e per sempre."
+      }
+    }
+  }
+}

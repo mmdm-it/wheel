@@ -1,0 +1,520 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LEVI_006",
+  "book_key": "LEVI",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutus est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse ancora a Mosè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "צַ֤ו אֶֽת אַהֲרֹן֙ וְ/אֶת בָּנָ֣י/ו לֵ/אמֹ֔ר זֹ֥את תּוֹרַ֖ת הָ/עֹלָ֑ה הִ֣וא הָ/עֹלָ֡ה עַל֩ מוֹקְדָ֨ה עַל הַ/מִּזְבֵּ֤חַ כָּל הַ/לַּ֨יְלָה֙ עַד הַ/בֹּ֔קֶר וְ/אֵ֥שׁ הַ/מִּזְבֵּ֖חַ תּ֥וּקַד בּֽ/וֹ׃",
+        "LXX": "Ψυχὴ ἐὰν ἁμάρτῃ καὶ παριδὼν παρίδῃ τὰς ἐντολὰς Κυρίου, καὶ ψεύσηται τὰ πρὸς τὸν πλησίον ἐν παραθήκῃ ἢ περὶ κοινωνίας ἢ περὶ ἁρπαγῆς, ἢ ἠδίκησέν τι τὸν πλησίον,",
+        "VUL": "Anima quæ peccaverit, et contempto Domino, negaverit proximo suo depositum quod fidei ejus creditum fuerat, vel vi aliquid extorserit, aut calumniam fecerit,",
+        "SYN": "если кто согрешит и сделает преступление пред Господом и запрется пред ближним своим в том, что ему поручено, или у него положено, или им похищено, или обманет ближнего своего,",
+        "NEO": "« Donne cet ordre à Aaron et à ses fils, et dis-leur : Voici la loi de l’holocauste. L’holocauste brûlera sur le foyer de l’autel toute la nuit jusqu’au matin, et le feu de l’autel y sera tenu allumé.",
+        "NAB": "\"Give Aaron and his sons the following command: This is the ritual for holocausts. The holocaust is to remain on the hearth of the altar all night until the next morning, and the fire is to be kept burning on the altar.",
+        "VAT_ES": "Transmite esta orden a Aarón y a sus hijos: Este es el ritual del holocausto que arde toda la noche sobre el altar, hasta la mañana siguiente, y por el cual el fuego del altar se mantiene encendido:",
+        "CEI": "\"Dà quest'ordine ad Aronne e ai suoi figli: Questa è la legge per l'olocausto. L'olocausto rimarrà acceso sul braciere sopra l'altare tutta la notte, fino al mattino; il fuoco dell'altare sarà tenuto acceso."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/לָבַ֨שׁ הַ/כֹּהֵ֜ן מִדּ֣/וֹ בַ֗ד וּ/מִֽכְנְסֵי בַד֮ יִלְבַּ֣שׁ עַל בְּשָׂר/וֹ֒ וְ/הֵרִ֣ים אֶת הַ/דֶּ֗שֶׁן אֲשֶׁ֨ר תֹּאכַ֥ל הָ/אֵ֛שׁ אֶת הָ/עֹלָ֖ה עַל הַ/מִּזְבֵּ֑חַ וְ/שָׂמ֕/וֹ אֵ֖צֶל הַ/מִּזְבֵּֽחַ׃",
+        "LXX": "ἢ εὗρεν ἀπωλίαν καὶ ψεύσηται περὶ αὐτῆς, καὶ ὀμόσῃ ἀδίκως περὶ ἑνὸς ἀπὸ πάντων ὧν ἐὰν ποιήσῃ ὁ ἄνθρωπος ὥστε ἁμαρτεῖν ἐν τούτοις·",
+        "VUL": "sive rem perditam invenerit, et inficians insuper pejeraverit, et quodlibet aliud ex pluribus fecerit, in quibus solent peccare homines,",
+        "SYN": "или найдет потерянное и запрется в том, и поклянется ложно в чем-нибудь, что люди делают и тем грешат, --",
+        "NEO": "Chaque matin, le prêtre, ayant revêtu sa tunique de lin et mis des caleçons de lin sur sa chair, enlèvera la cendre laissée par le feu qui aura consumé l’holocauste sur l’autel, et la déposera à côté de l’autel ;",
+        "NAB": "The priest, clothed in his linen robe and wearing linen drawers on his body, shall take away the ashes to which the fire has reduced the holocaust on the altar, and lay them at the side of the altar.",
+        "VAT_ES": "El sacerdote se vestirá con su túnica de lino y se cubrirá con pantalones de lino. Luego recogerá las cenizas a que habrá quedado reducido el holocausto por la acción del fuego, y las depositará a un costado del altar.",
+        "CEI": "Il sacerdote, indossata la tunica di lino e vestiti i calzoni di lino, toglierà la cenere, in cui il fuoco avrà ridotto l'olocausto sull'altare, e la deporrà al fianco dell'altare."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וּ/פָשַׁט֙ אֶת בְּגָדָ֔י/ו וְ/לָבַ֖שׁ בְּגָדִ֣ים אֲחֵרִ֑ים וְ/הוֹצִ֤יא אֶת הַ/דֶּ֨שֶׁן֙ אֶל מִ/ח֣וּץ לַֽ/מַּחֲנֶ֔ה אֶל מָק֖וֹם טָהֽוֹר׃",
+        "LXX": "καὶ ἔσται ἡνίκα ἐὰν ἁμάρτῃ καὶ πλημμελήσῃ, καὶ ἀποδῷ τὸ ἅρπαγμα ὃ ἥρπασεν, ἢ τὸ ἀδίκημα ὃ ἠδίκησεν, ἢ τὴν παραθήκην ἥτις παρετέθη αὐτῷ, ἢ τὴν ἀπωλίαν ἣν εὗρεν,",
+        "VUL": "convicta delicti,",
+        "SYN": "то, согрешив и сделавшись виновным, он должен возвратить похищенное, что похитил, или отнятое, что отнял, или порученное, что ему поручено, или потерянное, что он нашел;",
+        "NEO": "puis il quittera ses vêtements et en mettra d’autres pour porter la cendre hors du camp, en un lieu pur.",
+        "NAB": "Then, having taken off these garments and put on other garments, he shall carry the ashes to a clean place outside the camp.",
+        "VAT_ES": "Entones se cambiará las vestiduras y llevará las cenizas fuera del campamento, a un lugar puro.",
+        "CEI": "Poi, spogliatosi delle vesti e indossatene altre, porterà la cenere fuori del campo, in un luogo mondo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/הָ/אֵ֨שׁ עַל הַ/מִּזְבֵּ֤חַ תּֽוּקַד בּ/וֹ֙ לֹ֣א תִכְבֶּ֔ה וּ/בִעֵ֨ר עָלֶ֧י/הָ הַ/כֹּהֵ֛ן עֵצִ֖ים בַּ/בֹּ֣קֶר בַּ/בֹּ֑קֶר וְ/עָרַ֤ךְ עָלֶ֨י/הָ֙ הָֽ/עֹלָ֔ה וְ/הִקְטִ֥יר עָלֶ֖י/הָ חֶלְבֵ֥י הַ/שְּׁלָמִֽים׃",
+        "LXX": "ἀπὸ παντὸς πράγματος οὗ ὤμοσεν περὶ αὐτοῦ ἀδίκως, καὶ ἀποτίσει αὐτὸ τὸ κεφάλαιον, καὶ τὸ πέμπτον προσθήσει ἐπ’ αὐτό· τίνος ἐστίν, αὐτῷ ἀποδώσει ᾗ ἡμέρᾳ ἐλεγχθῇ.",
+        "VUL": "reddet omnia, quæ per fraudem voluit obtinere, integra, et quintam insuper partem domino cui damnum intulerat.",
+        "SYN": "или если он в чем поклялся ложно, то должен отдать сполна, и приложить к тому пятую долю и отдать тому, кому принадлежит, в день приношения жертвы повинности;",
+        "NEO": "Le feu sur l’autel y sera entretenu sans qu’il s’éteigne ; le prêtre y allumera du bois chaque matin, arrangera dessus l’holocauste, et y fera fumer la graisse des sacrifices pacifiques.",
+        "NAB": "The fire on the altar is to be kept burning; it must not go out. Every morning the priest shall put firewood on it. On this he shall lay out the holocaust and burn the fat of the peace offerings.",
+        "VAT_ES": "El fuego permanecerá siempre encendido sobre el altar y no deberá extinguirse. Todas las mañanas el sacerdote lo avivará con leña, dispondrá el holocausto sobre él, y hará arder las partes grasosas de los sacrificios de comunión.",
+        "CEI": "Il fuoco sarà tenuto acceso sull'altare e non si lascerà spegnere; il sacerdote vi brucerà legna ogni mattina, vi disporrà sopra l'olocausto e vi brucerà sopra il grasso dei sacrifici."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אֵ֗שׁ תָּמִ֛יד תּוּקַ֥ד עַל הַ/מִּזְבֵּ֖חַ לֹ֥א תִכְבֶֽה׃",
+        "LXX": "καὶ τῆς πλημμελίας αὐτοῦ οἴσει τῷ κυρίῳ κριὸν ἀπὸ τῶν προβάτων ἄμωμον τιμῆς εἰς ὃ ἐπλημμέλησεν αὐτῷ.",
+        "VUL": "Pro peccato autem suo offeret arietem immaculatum de grege, et dabit eum sacerdoti, juxta æstimationem mensuramque delicti :",
+        "SYN": "и за вину свою пусть принесет Господу к священнику в жертву повинности из стада овец овна без порока, по оценке твоей;",
+        "NEO": "Un feu perpétuel doit brûler sur l’autel sans s’éteindre.",
+        "NAB": "The fire is to be kept burning continuously on the altar; it must not go out.",
+        "VAT_ES": "Un fuego perpetuo, que nunca deberá extinguirse, permanecerá encendido sobre el altar.",
+        "CEI": "Il fuoco dev'esser sempre tenuto acceso sull'altare, senza lasciarlo spegnere."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/זֹ֥את תּוֹרַ֖ת הַ/מִּנְחָ֑ה הַקְרֵ֨ב אֹתָ֤/הּ בְּנֵֽי אַהֲרֹן֙ לִ/פְנֵ֣י יְהוָ֔ה אֶל פְּנֵ֖י הַ/מִּזְבֵּֽחַ׃",
+        "LXX": "καὶ ἐξιλάσεται περὶ αὐτοῦ ὁ ἱερεὺς ἔναντι Κυρίου, καὶ ἀφεθήσεται αὐτῷ περὶ ἑνὸς ἀπὸ πάντων ὧν ἐποίησεν καὶ ἐπλημμέλησεν αὐτῷ.",
+        "VUL": "qui rogabit pro eo coram Domino, et dimittetur illi pro singulis quæ faciendo peccavit.",
+        "SYN": "и очистит его священник пред Господом, и прощено будет ему, что бы он ни сделал, все, в чем он сделался виновным.",
+        "NEO": "Voici la loi de l’oblation : les fils d’Aaron la présenteront devant \\+w Yahweh|strong=\"H3068\"\\+w**, devant l’autel.",
+        "NAB": "\"This is the ritual of the cereal offering. One of Aaron's sons shall first present it before the LORD, in front of the altar.",
+        "VAT_ES": "Este es el ritual de la oblación, que los hijos de Aarón ofrecerán delante del Señor, frente al altar:",
+        "CEI": "Questa è la legge dell'oblazione. I figli di Aronne la offriranno al Signore, dinanzi all'altare."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/הֵרִ֨ים מִמֶּ֜/נּוּ בְּ/קֻמְצ֗/וֹ מִ/סֹּ֤לֶת הַ/מִּנְחָה֙ וּ/מִ/שַּׁמְנָ֔/הּ וְ/אֵת֙ כָּל הַ/לְּבֹנָ֔ה אֲשֶׁ֖ר עַל הַ/מִּנְחָ֑ה וְ/הִקְטִ֣יר הַ/מִּזְבֵּ֗חַ רֵ֧יחַ נִיחֹ֛חַ אַזְכָּרָתָ֖/הּ לַ/יהוָֽה׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "Le prêtre en prélèvera une poignée de fleur de farine avec son huile, et tout l’encens qui est sur l’oblation, et il fera fumer cela sur l’autel, en agréable odeur, comme souvenir à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Then he shall take from it a handful of its fine flour and oil, together with all the frankincense that is on it, and this he shall burn on the altar as its token offering, a sweet-smelling oblation to the LORD.",
+        "VAT_ES": "El sacerdote tomará de la oblación un puñado de harina de la mejor calidad, con su aceite y con todo el incienso añadido a ella, y lo hará arder sobre el altar como un memorial para el Señor, como una ofrenda de aroma agradable.",
+        "CEI": "Il sacerdote preleverà una manciata di fior di farina con il suo olio e con tutto l'incenso che è sopra l'offerta e brucerà ogni cosa sull'altare con soave profumo in ricordo del Signore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הַ/נּוֹתֶ֣רֶת מִמֶּ֔/נָּה יֹאכְל֖וּ אַהֲרֹ֣ן וּ/בָנָ֑י/ו מַצּ֤וֹת תֵּֽאָכֵל֙ בְּ/מָק֣וֹם קָדֹ֔שׁ בַּ/חֲצַ֥ר אֹֽהֶל מוֹעֵ֖ד יֹאכְלֽוּ/הָ׃",
+        "LXX": "Ἔντειλαι Ἀαρὼν καὶ τοῖς υἱοῖς αὐτοῦ λέγων Οὗτος ὁ νόμος τῆς ὁλοκαυτώσεως· αὐτὴ ἡ ὁλοκαύτωσις ἐπὶ τῆς καύσεως αὐτῆς ἐπὶ τοῦ θυσιαστηρίου ὅλην τὴν νύκτα ἕως τὸ πρωί, καὶ τὸ πῦρ τοῦ θυσιαστηρίου καυθήσεται ἐπ’ αὐτοῦ, οὐ σβεσθήσεται.",
+        "VUL": "Præcipe Aaron et filiis ejus : Hæc est lex holocausti : cremabitur in altari tota nocte usque mane : ignis ex eodem altari erit.",
+        "SYN": "заповедай Аарону и сынам его: вот закон всесожжения: всесожжение пусть остается на месте сожигания на жертвеннике всю ночь до утра, и огонь жертвенника пусть горит на нем [и не угасает];",
+        "NEO": "Ce qui restera de l’oblation, Aaron et ses fils le mangeront ; ils le mangeront sans levain, en lieu saint, dans le parvis de la tente de réunion.",
+        "NAB": "The rest of it Aaron and his sons may eat; but it must be eaten in the form of unleavened cakes and in a sacred place: in the court of the meeting tent they shall eat it.",
+        "VAT_ES": "Aarón y sus hijos comerán el resto. Lo comerán sin levadura, en el recinto sagrado, o sea, en el atrio de la Carpa del Encuentro.",
+        "CEI": "Aronne e i suoi figli mangeranno quel che rimarrà dell'oblazione; lo si mangerà senza lievito, in luogo santo, nel recinto della tenda del convegno."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "לֹ֤א תֵאָפֶה֙ חָמֵ֔ץ חֶלְקָ֛/ם נָתַ֥תִּי אֹתָ֖/הּ מֵ/אִשָּׁ֑/י קֹ֤דֶשׁ קָֽדָשִׁים֙ הִ֔וא כַּ/חַטָּ֖את וְ/כָ/אָשָֽׁם׃",
+        "LXX": "καὶ ἐνδύσεται ὁ ἱερεὺς χιτῶνα λινοῦν, καὶ περισκελὲς λινοῦν ἐνδύσεται περὶ τὸ σῶμα αὐτοῦ, καὶ ἀφελεῖ τὴν κατακάρπωσιν ἣν ἂν καταναλώσῃ τὸ πῦρ, τὴν ὁλοκαύτωσιν ἀπὸ τοῦ θυσιαστηρίου, καὶ παραθήσει αὐτὸ ἐχόμενον τοῦ θυσιαστηρίου.",
+        "VUL": "Vestietur tunica sacerdos et feminalibus lineis : tolletque cineres, quos vorans ignis exussit, et ponens juxta altare,",
+        "SYN": "и пусть священник оденется в льняную одежду свою, и наденет на тело свое льняное нижнее платье, и снимет пепел от всесожжения, которое сжег огонь на жертвеннике, и положит его подле жертвенника;",
+        "NEO": "On ne le cuira pas avec du levain. C’est la part que je leur ai assignée de mes offrandes consumées par le feu. C’est une chose très sainte, comme le sacrifice pour le péché et comme le sacrifice de réparation.",
+        "NAB": "It shall not be baked with leaven. I have given it to them as their portion from the oblations of the LORD; it is most sacred, like the sin offering and the guilt offering.",
+        "VAT_ES": "Ese resto no deberá ser cocido con levadura. Yo les doy esa parte de las ofrendas que se queman en mi honor: es una cosa santísima, lo mismo que la ofrenda por el pecado y la ofrenda de reparación.",
+        "CEI": "Non si cuocerà con lievito; è la parte che ho loro assegnata delle offerte a me bruciate con il fuoco. È cosa santissima come il sacrificio espiatorio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כָּל זָכָ֞ר בִּ/בְנֵ֤י אַהֲרֹן֙ יֹֽאכֲלֶ֔/נָּה חָק עוֹלָם֙ לְ/דֹרֹ֣תֵי/כֶ֔ם מֵ/אִשֵּׁ֖י יְהוָ֑ה כֹּ֛ל אֲשֶׁר יִגַּ֥ע בָּ/הֶ֖ם יִקְדָּֽשׁ׃",
+        "LXX": "καὶ ἐκδύσεται τὴν στολὴν αὐτοὺ καὶ ἐνδύσεται στολὴν ἄλλην, καὶ ἐξοίσει τὴν κατακάρπωσιν ἔξω τῆς παρεμβολῆς εἰς τόπον καθαρόν.",
+        "VUL": "spoliabitur prioribus vestimentis, indutusque aliis, efferret eos extra castra, et in loco mundissimo usque ad favillam consumi faciet.",
+        "SYN": "и пусть снимет с себя одежды свои, и наденет другие одежды, и вынесет пепел вне стана на чистое место;",
+        "NEO": "Tout mâle des enfants d’Aaron en mangera. C’est une loi perpétuelle pour vos descendants sur les offrandes faites par le feu à \\+w Yahweh|strong=\"H3068\"\\+w**. Quiconque y touchera sera saint. »",
+        "NAB": "All the male descendants of Aaron may partake of it as their rightful share in the oblations of the LORD perpetually throughout your generations. Whatever touches the oblations becomes sacred.\"",
+        "VAT_ES": "Podrán comerla todos los varones descendientes de Aarón, como un derecho que tendrán siempre a lo largo de las generaciones, sobre las ofrendas que se queman para el Señor. Todo lo que toque esas ofrendas quedará santificado.",
+        "CEI": "Ogni maschio tra i figli di Aronne potrà mangiarne. È un diritto perenne delle vostre generazioni sui sacrifici consumati dal fuoco in onore del Signore. Tutto ciò che verrà a contatto con queste cose sarà sacro\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "καὶ πῦρ ἐπὶ τὸ θυσιαστήριον καυθήσεται ἀπ’ αὐτοῦ, καὶ οὐ σβεσθήσεται· καὶ καύσει ὁ ἱερεὺς ἐπ’ αὐτὸ ξύλα τὸ πρωί, καὶ στοιβάσει ἐπ’ αὐτοῦ τὴν ὁλοκαύτωσιν, καὶ ἐπιθήσει ἐπ’ αὐτὸ τὸ στέαρ τοῦ σωτηρίου.",
+        "VUL": "Ignis autem in altari semper ardebit, quem nutriet sacerdos subjiciens ligna mane per singulos dies, et imposito holocausto, desuper adolebit adipes pacificorum.",
+        "SYN": "а огонь на жертвеннике пусть горит [и] не угасает; и пусть священник зажигает на нем дрова каждое утро, и раскладывает на нем всесожжение, и сожигает на нем тук мирной жертвы;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore aggiunse a Mosè:"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "זֶ֡ה קָרְבַּן֩ אַהֲרֹ֨ן וּ/בָנָ֜י/ו אֲשֶׁר יַקְרִ֣יבוּ לַֽ/יהוָ֗ה בְּ/יוֹם֙ הִמָּשַׁ֣ח אֹת֔/וֹ עֲשִׂירִ֨ת הָ/אֵפָ֥ה סֹ֛לֶת מִנְחָ֖ה תָּמִ֑יד מַחֲצִיתָ֣/הּ בַּ/בֹּ֔קֶר וּ/מַחֲצִיתָ֖/הּ בָּ/עָֽרֶב׃",
+        "LXX": "καὶ πῦρ διὰ παντὸς καυθήσεται ἐπὶ τὸ θυσιαστήριον, οὐ σβεσθήσεται.",
+        "VUL": "Ignis est iste perpetuus, qui numquam deficiet in altari.",
+        "SYN": "огонь непрестанно пусть горит на жертвеннике _и_ не угасает.",
+        "NEO": "« Voici l’offrande qu’Aaron et ses fils feront à \\+w Yahweh|strong=\"H3068\"\\+w** le jour où il recevra l’onction : un dixième d’épha de fleur de farine, comme oblation perpétuelle, moitié le matin et moitié le soir.",
+        "NAB": "\"This is the offering that Aaron and his sons shall present to the LORD (on the day he is anointed): one tenth of an ephah of fine flour for the established cereal offering, half in the morning and half in the evening.",
+        "VAT_ES": "Esta es la ofrenda que Aarón y sus hijos harán al Señor, el día en que aquel reciba la unción: Presentarán la décima parte de una medida de harina de la mejor calidad –la mitad por la mañana y la mitad por la tarde– como oblación perpetua.",
+        "CEI": "\"L'offerta che Aronne e i suoi figli faranno al Signore il giorno in cui riceveranno l'unzione è questa: un decimo di efa di fior di farina, come oblazione perpetua, metà la mattina e metà la sera."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "עַֽל מַחֲבַ֗ת בַּ/שֶּׁ֛מֶן תֵּעָשֶׂ֖ה מֻרְבֶּ֣כֶת תְּבִיאֶ֑/נָּה תֻּפִינֵי֙ מִנְחַ֣ת פִּתִּ֔ים תַּקְרִ֥יב רֵֽיחַ נִיחֹ֖חַ לַ/יהוָֽה׃",
+        "LXX": "Οὗτος ὁ νόμος τῆς θυσίας ἣν προσάξουσιν αὐτὴν οἱ υἱοὶ Ἀαρὼν ἔναντι Κυρίου ἀπέναντι τοῦ θυσιαστηρίου·",
+        "VUL": "Hæc est lex sacrificii et libamentorum, quæ offerent filii Aaron coram Domino, et coram altari.",
+        "SYN": "Вот закон о приношении хлебном: [священники] сыны Аароновы должны приносить его пред Господа к жертвеннику;",
+        "NEO": "Elle sera préparée dans la poêle avec de l’huile ; tu l’apporteras quand elle sera frite, et tu l’offriras en morceaux, comme offrande divisée, d’agréable odeur à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "It shall be well kneaded and fried in oil on a griddle when you bring it in. Having broken the offering into pieces, you shall present it as a sweet-smelling oblation to the LORD.",
+        "VAT_ES": "Deberá estar preparada con aceite, en una sartén; la presentarás bien embebida en aceite, la cortarás en pedazos y la ofrecerás como una oblación de aroma agradable al Señor.",
+        "CEI": "Essa sarà preparata con olio, nella teglia: la presenterai in una misura stemperata; l'offrirai in pezzi, come profumo soave per il Signore."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/הַ/כֹּהֵ֨ן הַ/מָּשִׁ֧יחַ תַּחְתָּ֛י/ו מִ/בָּנָ֖י/ו יַעֲשֶׂ֣ה אֹתָ֑/הּ חָק עוֹלָ֕ם לַ/יהוָ֖ה כָּלִ֥יל תָּקְטָֽר׃",
+        "LXX": "καὶ ἀφελεῖ ἀπ’ αὐτοῦ τῇ δρακὶ ἀπὸ τῆς σεμιδάλεως τῆς θυσίας σὺν τῷ ἐλαίῳ αὐτῆς καὶ σὺν τῷ λιβάνῳ αὐτῆς, τὰ ὄντα ἐπὶ τῆς θυσίας, καὶ ἀνοίσει ἐπὶ τὸ θυσιαστήριον κάρπωμα· ὀσμὴ εὐωδίας, τὸ μνημόσυνον αὐτῆς τῷ κυρίῳ.",
+        "VUL": "Tollet sacerdos pugillum similæ, quæ conspersa est oleo, et totum thus, quod super similam positum est : adolebitque illud in altari in monimentum odoris suavissimi Domino :",
+        "SYN": "и пусть возьмет [священник] горстью своею из приношения хлебного и пшеничной муки и елея и весь ливан, который на жертве, и сожжет на жертвеннике: _это_ приятное благоухание, в память пред Господом;",
+        "NEO": "Le prêtre ayant reçu l’onction, qui lui succédera d’entre ses fils, fera aussi cette oblation : c’est une loi perpétuelle devant \\+w Yahweh|strong=\"H3068\"\\+w** ; elle montera tout entière en fumée.",
+        "NAB": "Aaron's descendant who succeeds him as the anointed priest shall do likewise. This is a perpetual ordinance: for the Lord the whole offering shall be burned.",
+        "VAT_ES": "Así deberá prepararla también el sacerdote que sea consagrado por la unción entre los hijos de Aarón, para ser su sucesor: este es un decreto del Señor, válido para siempre. La oblación deberá arder enteramente,",
+        "CEI": "Anche il sacerdote che, tra i figli di Aronne, sarà unto per succedergli, farà questa offerta; è una prescrizione perenne: sarà bruciata tutta in onore del Signore."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/כָל מִנְחַ֥ת כֹּהֵ֛ן כָּלִ֥יל תִּהְיֶ֖ה לֹ֥א תֵאָכֵֽל׃",
+        "LXX": "τὸ δὲ καταλειφθὲν ἀπ’ αὐτῆς ἔδεται Ἀαρὼν καὶ οἱ υἱοὶ αὐτοῦ· ἄζυμα βρωθήσεται ἐν τόπῳ ἁγίῳ, ἐν αὐλῇ τῆς σκηνῆς τοῦ μαρτυρίου ἔδονται αὐτήν.",
+        "VUL": "reliquam autem partem similæ comedet Aaron cum filiis suis, absque fermento : et comedet in loco sancto atrii tabernaculi.",
+        "SYN": "а остальное из него пусть едят Аарон и сыны его; пресным должно есть его на святом месте, на дворе скинии собрания пусть едят его;",
+        "NEO": "Toute offrande de prêtre sera consumée tout entière ; on ne la mangera pas. »",
+        "NAB": "Every cereal offering of a priest shall be a whole burnt offering; it may not be eaten.\"",
+        "VAT_ES": "y toda oblación de un sacerdote será quemada en su totalidad: nadie la podrá comer.",
+        "CEI": "Ogni oblazione del sacerdote sarà bruciata tutta; non se ne potrà mangiare\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "οὐ πεφθήσεται ἐζυμωμένη· μερίδα αὐτὴν ἔδωκα αὐτοῖς ἀπὸ τῶν καρπωμάτων Κυρίου· ἅγια ἁγίων, ὥσπερ τὸ τῆς ἁμαρτίας καὶ ὥσπερ τὸ τῆς πλημμελίας.",
+        "VUL": "Ideo autem non fermentabitur, quia pars ejus in Domini offertur incensum. Sanctum sanctorum erit, sicut pro peccato atque delicto.",
+        "SYN": "не должно печь его квасным. Сие даю Я им в долю из жертв Моих. Это великая святыня, подобно как жертва за грех и жертва повинности.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse ancora a Mosè:"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "דַּבֵּ֤ר אֶֽל אַהֲרֹן֙ וְ/אֶל בָּנָ֣י/ו לֵ/אמֹ֔ר זֹ֥את תּוֹרַ֖ת הַֽ/חַטָּ֑את בִּ/מְק֡וֹם אֲשֶׁר֩ תִּשָּׁחֵ֨ט הָ/עֹלָ֜ה תִּשָּׁחֵ֤ט הַֽ/חַטָּאת֙ לִ/פְנֵ֣י יְהוָ֔ה קֹ֥דֶשׁ קָֽדָשִׁ֖ים הִֽוא׃",
+        "LXX": "πᾶν ἀρσενικὸν τῶν ἱερέων ἔδονται αὐτήν· νόμιμον αἰώνιον εἰς τὰς γενεὰς ὑμῶν ἀπὸ τῶν καρπωμάτων Κυρίου· πᾶς ὃς ἐὰν ἅψηται αὐτῶν ἁγιασθήσεται.",
+        "VUL": "Mares tantum stirpis Aaron comedent illud. Legitimum ac sempiternum erit in generationibus vestris de sacrificiis Domini : omnis qui tetigerit illa, sanctificabitur.",
+        "SYN": "Все потомки Аароновы мужеского пола могут есть ее. Это вечный участок в роды ваши из жертв Господних. Все, прикасающееся к ним, освятится.",
+        "NEO": "« Parle à Aaron et à ses fils, et dis-leur : Voici la loi du sacrifice pour le péché : c’est dans le lieu où l’on égorge l’holocauste que sera égorgée la victime pour le péché devant \\+w Yahweh|strong=\"H3068\"\\+w** : c’est une chose très sainte.",
+        "NAB": "\"Tell Aaron and his sons: This is the ritual for sin offerings. At the place where holocausts are slaughtered, there also, before the LORD, shall the sin offering be slaughtered. It is most sacred.",
+        "VAT_ES": "Habla en estos términos a Aarón y a sus hijos: Este es el ritual del sacrificio por el pecado: La víctima del sacrificio por el pecado deberá será inmolada en el mismo lugar en que se inmola el holocausto, delante del Señor: es una cosa santísima.",
+        "CEI": "\"Parla ad Aronne e ai suoi figli e dì loro: Questa è la legge del sacrificio espiatorio. Nel luogo dove si immola l'olocausto sarà immolata davanti al Signore la vittima per il peccato. È cosa santissima."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "הַ/כֹּהֵ֛ן הַֽ/מְחַטֵּ֥א אֹתָ֖/הּ יֹאכֲלֶ֑/נָּה בְּ/מָק֤וֹם קָדֹשׁ֙ תֵּֽאָכֵ֔ל בַּ/חֲצַ֖ר אֹ֥הֶל מוֹעֵֽד׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "Le prêtre qui offrira la victime pour le péché la mangera ; elle sera mangée en lieu saint, dans le parvis de la tente de réunion.",
+        "NAB": "The priest who presents the sin offering may partake of it; but it must be eaten in a sacred place, in the court of the meeting tent.",
+        "VAT_ES": "El sacerdote que la ofrezca como sacrificio por el pecado, comerá de ella. Tendrá que ser comida en el recinto sagrado, o sea, en el atrio de la Carpa del Encuentro.",
+        "CEI": "La mangerà il sacerdote che l'offrirà per il peccato; dovrà mangiarla in luogo santo, nel recinto della tenda del convegno."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "כֹּ֛ל אֲשֶׁר יִגַּ֥ע בִּ/בְשָׂרָ֖/הּ יִקְדָּ֑שׁ וַ/אֲשֶׁ֨ר יִזֶּ֤ה מִ/דָּמָ/הּ֙ עַל הַ/בֶּ֔גֶד אֲשֶׁר֙ יִזֶּ֣ה עָלֶ֔י/הָ תְּכַבֵּ֖ס בְּ/מָק֥וֹם קָדֹֽשׁ׃",
+        "LXX": "Τοῦτο τὸ δῶρον Ἀαρὼν καὶ τῶν υἱῶν αὐτοῦ ὃ προσοίσουσιν Κυρίῳ ἐν τῇ ἡμέρᾳ ᾗ ἂν χρίσῃς αὐτόν, τὸ δέκατον τοῦ οἰφὶ σεμιδάλεως εἰς θυσίαν διὰ παντός, τὸ ἥμισυ αὐτῆς τὸ πρωὶ καὶ τὸ ἥμισυ αὐτῆς τὸ δειλινόν.",
+        "VUL": "Hæc est oblatio Aaron, et filiorum ejus, quam offerre debent Domino in die unctionis suæ. Decimam partem ephi offerent similæ in sacrificio sempiterno, medium ejus mane, et medium ejus vespere :",
+        "SYN": "вот приношение от Аарона и сынов его, которое принесут они Господу в день помазания его: десятая часть ефы пшеничной муки в жертву постоянную, половина сего для утра и половина для вечера;",
+        "NEO": "Quiconque en touchera la chair sera saint. S’il en rejaillit du sang sur un vêtement, la place où le sang aura rejailli, tu la laveras en lieu saint.",
+        "NAB": "Whatever touches its flesh shall become sacred. If any of its blood is spilled on a garment, the stained part must be washed in a sacred place.",
+        "VAT_ES": "Todo cuanto toque la carne de la víctima quedará santificado; y si la sangre salpica alguna vestidura, tendrás que lavar en el recinto sagrado la parte salpicada.",
+        "CEI": "Qualunque cosa ne toccherà le carni sarà sacra; se parte del suo sangue schizza sopra una veste, il posto dove sarà schizzato il sangue lo laverai in luogo santo."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וּ/כְלִי חֶ֛רֶשׂ אֲשֶׁ֥ר תְּבֻשַּׁל בּ֖/וֹ יִשָּׁבֵ֑ר וְ/אִם בִּ/כְלִ֤י נְחֹ֨שֶׁת֙ בֻּשָּׁ֔לָה וּ/מֹרַ֥ק וְ/שֻׁטַּ֖ף בַּ/מָּֽיִם׃",
+        "LXX": "ἐπὶ τηγάνου ἐν ἐλαίῳ ποιηθήσεται, πεφυραμένην οἴσει αὐτήν, ἑλικτά, θυσίαν ἐκ κλασμάτων, θυσίαν ὀσμὴν εὐωδίας Κυρίῳ.",
+        "VUL": "quæ in sartagine oleo conspersa frigetur. Offeret autem eam calidam in odorem suavissimum Domino",
+        "SYN": "на сковороде в елее она должна быть приготовлена; напитанную _елеем_ приноси ее в кусках, как разламывается в куски приношение хлебное; приноси ее в приятное благоухание Господу;",
+        "NEO": "Le vase de terre dans lequel elle aura cuit sera brisé ; si elle a cuit dans un vase d’airain, il sera nettoyé et rincé dans l’eau.",
+        "NAB": "A clay vessel in which it has been cooked shall thereafter be broken; if it is cooked in a bronze vessel, this shall be scoured afterward and rinsed with water.",
+        "VAT_ES": "La vasija de barro en que haya sido cocida se deberá romper; y si fue cocida en un recipiente de bronce, este será fregado y limpiado con agua.",
+        "CEI": "Ma il vaso di terra, che sarà servito a cuocerla, sarà spezzato; che se è stata cotta in un vaso di rame, questo sarà strofinato bene e sciacquato con acqua."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כָּל זָכָ֥ר בַּ/כֹּהֲנִ֖ים יֹאכַ֣ל אֹתָ֑/הּ קֹ֥דֶשׁ קָֽדָשִׁ֖ים הִֽוא׃",
+        "LXX": "ὁ ἱερεὺς ὁ χριστὸς ἀντ’ αὐτοῦ ἐκ τῶν υἱῶν αὐτοῦ ποιήσει αὐτήν· νόμος αἰώνιος, ἅπαν ἐπιτελεσθήσεται.",
+        "VUL": "sacerdos, qui jure patri successerit, et tota cremabitur in altari.",
+        "SYN": "и священник, помазанный на место его из сынов его, должен совершать сие: это вечный устав Господа. Вся она должна быть сожжена;",
+        "NEO": "Tout mâle parmi les prêtres en mangera : c’est une chose très sainte.",
+        "NAB": "All the males of the priestly line may partake of the sin offering, since it is most sacred.",
+        "VAT_ES": "Sólo podrán comer de ella los varones de la familia sacerdotal: es una cosa santísima.",
+        "CEI": "Ogni maschio di famiglia sacerdotale ne potrà mangiare; è cosa santissima."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/כָל חַטָּ֡את אֲשֶׁר֩ יוּבָ֨א מִ/דָּמָ֜/הּ אֶל אֹ֧הֶל מוֹעֵ֛ד לְ/כַפֵּ֥ר בַּ/קֹּ֖דֶשׁ לֹ֣א תֵאָכֵ֑ל בָּ/אֵ֖שׁ תִּשָּׂרֵֽף׃",
+        "LXX": "καὶ πᾶσα θυσία ἱερέως ὁλόκαυτος ἔσται, καὶ οὐ βρωθήσεται.",
+        "VUL": "Omne enim sacrificium sacerdotum igne consumetur, nec quisquam comedet ex eo.",
+        "SYN": "и всякое хлебное приношение от священника все да будет сожигаемо, а не съедаемо.",
+        "NEO": "Mais on ne mangera aucune victime pour le péché dont on doit porter le sang dans la tente de réunion pour faire l’expiation dans le sanctuaire : elle sera brûlée au feu.",
+        "NAB": "But no one may partake of any sin offering of which some blood has been brought into the meeting tent to make atonement in the sanctuary; such an offering must be burned up in the fire.",
+        "VAT_ES": "En cambio, no se podrá comer ninguna víctima cuya sangre haya sido introducida en la Carpa del Encuentro para practicar el rito de expiación en el Santuario, sino que deberá ser consumida por el fuego.",
+        "CEI": "Ma non si potrà mangiare alcuna vittima espiatoria, il cui sangue va portato nella tenda del convegno, per il rito espiatorio nel santuario. Essa sarà bruciata nel fuoco."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutus est autem Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "Λάλησον Ἀαρὼν καὶ τοῖς υἱοῖς αὐτοῦ λέγων Οὗτος ὁ νόμος τῆς ἁμαρτίας· ἐν τόπῳ οὗ σφάζουσιν τὸ ὁλοκαύτωμα σφάξουσιν τὰ περὶ τῆς ἁμαρτίας ἔναντι Κυρίου· ἅγια ἁγίων ἐστίν.",
+        "VUL": "Loquere Aaron et filiis ejus : Ista est lex hostiæ pro peccato : in loco ubi offertur holocaustum, immolabitur coram Domino. Sanctum sanctorum est.",
+        "SYN": "скажи Аарону и сынам его: вот закон о жертве за грех: жертва за грех должна быть заколаема пред Господом на том месте, где заколается всесожжение; это великая святыня;"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "ὁ ἱερεὺς ὁ ἀναφέρων αὐτὴν ἔδεται αὐτήν· ἐν τόπῳ ἁγίῳ βρωθήσεται, ἐν αὐλῇ τῆς σκηνῆς τοῦ μαρτυρίου.",
+        "VUL": "Sacerdos, qui offert, comedet eam in loco sancto, in atrio tabernaculi.",
+        "SYN": "священник, совершающий жертву за грех, должен есть ее; она должна быть съедаема на святом месте, на дворе скинии собрания;"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "πᾶς ὁ ἁπτόμενος τῶν κρεῶν αὐτῆς ἁγιασθήσεται· καὶ ᾧ ἐὰν ἐπιραντισθῇ ἀπὸ τοῦ αἵματος αὐτῆς ἐπὶ τὸ ἱμάτιον, ὃς ἐὰν ῥαντισθῇ ἐπ’ αὐτό, πλυθήσεται ἐν τόπῳ ἁγίῳ.",
+        "VUL": "Quidquid tetigerit carnes ejus, sanctificabitur. Si de sanguine illius vestis fuerit aspersa, lavabitur in loco sancto.",
+        "SYN": "все, что прикоснется к мясу ее, освятится; и если кровью ее обрызгана будет одежда, то обрызганное омой на святом месте;"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "καὶ σκεῦος ὀστράκινον οὗ ἐὰν ἑψεθῇ ἐν αὐτῷ συντριβήσεται· ἐὰν δὲ ἐν σκεύει χαλκῷ ἑψεθῇ, ἐκτρίψει αὐτὸ καὶ ἐκκλύσει ὕδατι.",
+        "VUL": "Vas autem fictile, in quo cocta est, confringetur ; quod si vas æneum fuerit, defricabitur, et lavabitur aqua.",
+        "SYN": "глиняный сосуд, в котором она варилась, должно разбить; если же она варилась в медном сосуде, то должно его вычистить и вымыть водою;"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "πᾶς ἄρσην ἐν τοῖς ἱερεῦσιν φάγεται αὐτά· ἅγια ἁγίων ἐστὶν Κυρίου.",
+        "VUL": "Omnis masculus de genere sacerdotali vescetur de carnibus ejus, quia Sanctum sanctorum est.",
+        "SYN": "весь мужеский пол священнического рода может есть ее: это великая святыня [у Господа];"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "καὶ πάντα τὰ περὶ τῆς ἁμαρτίας ὧν ἐὰν εἰσενεχθῇ ἀπὸ τοῦ αἵματος αὐτῶν εἰς τὴν σκηνὴν τοῦ μαρτυρίου ἐξιλάσασθαι ἐν τῷ ἁγίῳ, οὐ βρωθήσεται, ἐν πυρὶ κατακαυθήσεται.",
+        "VUL": "Hostia enim quæ cæditur pro peccato, cujus sanguis infertur in tabernaculum testimonii ad expiandum in sanctuario, non comedetur, sed comburetur igni.",
+        "SYN": "а всякая жертва за грех, от которой кровь вносится в скинию собрания для очищения во святилище, не должна быть съедаема; ее должно сожигать на огне."
+      }
+    }
+  }
+}

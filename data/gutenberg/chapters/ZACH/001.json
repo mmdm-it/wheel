@@ -1,0 +1,352 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ZACH_001",
+  "book_key": "ZACH",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בַּ/חֹ֨דֶשׁ֙ הַ/שְּׁמִינִ֔י בִּ/שְׁנַ֥ת שְׁתַּ֖יִם לְ/דָרְיָ֑וֶשׁ הָיָ֣ה דְבַר יְהוָ֗ה אֶל זְכַרְיָה֙ בֶּן בֶּ֣רֶכְיָ֔ה בֶּן עִדּ֥וֹ הַ/נָּבִ֖יא לֵ/אמֹֽר׃",
+        "LXX": "ΕΝ τῷ ὀγδόῳ μηνὶ ἔτους δευτέρου ἐπὶ Δαρείου ἐγένετο λόγος Κυρίου πρὸς Ζαχαρίαν τὸν τοῦ Βαραχίου υἱὸν Ἀδδὼ τὸν προφήτην λέγων",
+        "SYN": "В восьмом месяце, во второй год Дария, было слово Господне к Захарии, сыну Варахиину, сыну Аддову, пророку:",
+        "NEO": "Le huitième mois+ 1:1 I, 1. \\+it Le huitième mois\\+it*, par conséquent entre la deuxième et la troisième prophétie d’Aggée ; le peuple était revenu de l’exil depuis seize ans.*, en la deuxième année de Darius, la parole de \\+w Yahweh|strong=\"H3068\"\\+w** fut adressée à Zacharie, fils de Barachie, petit-fils d’Addo, le prophète, en ces termes :",
+        "NAB": "In the second year of Darius, in the eighth month, the word of the LORD came to the prophet Zechariah, son of Berechiah, son of Iddo:",
+        "VAT_ES": "En el octavo mes del segundo año de Darío, la palabra del Señor llegó al profeta Zacarías, hijo de Berequías, hijo de Idó, en estos términos:",
+        "CEI": "Nell'ottavo mese dell'anno secondo del regno di Dario, fu rivolta questa parola del Signore al profeta Zaccaria figlio di Barachia, figlio di Iddò:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "קָצַ֧ף יְהוָ֛ה עַל אֲבֽוֹתֵי/כֶ֖ם קָֽצֶף׃",
+        "LXX": "Ὠργίσθη Κύριος ἐπὶ τοὺς πατέρας ὑμῶν ὀργὴν μεγάλην.",
+        "SYN": "прогневался Господь на отцов ваших великим гневом,",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** a été dans un grand courroux contre vos pères.",
+        "NAB": "The LORD was indeed angry with your fathers. . .",
+        "VAT_ES": "El Señor se irritó violentamente contra los padres de ustedes.",
+        "CEI": "\"Il Signore si è molto sdegnato contro i vostri padri."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/אָמַרְתָּ֣ אֲלֵ/הֶ֗ם כֹּ֤ה אָמַר֙ יְהוָ֣ה צְבָא֔וֹת שׁ֣וּבוּ אֵלַ֔/י נְאֻ֖ם יְהוָ֣ה צְבָא֑וֹת וְ/אָשׁ֣וּב אֲלֵי/כֶ֔ם אָמַ֖ר יְהוָ֥ה צְבָאֽוֹת׃",
+        "LXX": "καὶ ἐρεῖς πρὸς αὐτούς Τάδε λέγει Κύριος Παντοκράτωρ Ἐπιστρέψατε πρὸς μέ, λέγει Κύριος τῶν δυνάμεων, καὶ ἐπιστραφήσομαι πρὸς ὑμᾶς, λέγει Κύριος τῶν δυνάμεων.",
+        "SYN": "и ты скажи им: так говорит Господь Саваоф: обратитесь ко Мне, говорит Господь Саваоф, и Я обращусь к вам, говорит Господь Саваоф.",
+        "NEO": "Et tu leur diras : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** des armées : Revenez à moi, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** des armées, et je reviendrai à vous, — dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "and say to them: Thus says the LORD of hosts: Return to me, says the LORD of hosts, and I will return to you, says the LORD of hosts.",
+        "VAT_ES": "Tú les dirás: Así habla el Señor de los ejércitos: Vuelvan a mí –oráculo del Señor de los ejércitos– y yo volveré a ustedes, dice el Señor de los ejércitos.",
+        "CEI": "Tu dunque riferirai loro: Così parla il Signore degli eserciti: Convertitevi a me - oracolo del Signore degli eserciti - e io mi rivolgerò a voi, dice il Signore degli eserciti."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אַל תִּהְי֣וּ כַ/אֲבֹֽתֵי/כֶ֡ם אֲשֶׁ֣ר קָרְאֽוּ אֲלֵי/הֶם֩ הַ/נְּבִיאִ֨ים הָ/רִֽאשֹׁנִ֜ים לֵ/אמֹ֗ר כֹּ֤ה אָמַר֙ יְהוָ֣ה צְבָא֔וֹת שׁ֤וּבוּ נָא֙ מִ/דַּרְכֵי/כֶ֣ם הָ/רָעִ֔ים ו/מעלילי/כם וּ/מַֽעֲלְלֵי/כֶ֖ם הָֽ/רָעִ֑ים וְ/לֹ֥א שָׁמְע֛וּ וְ/לֹֽא הִקְשִׁ֥יבוּ אֵלַ֖/י נְאֻם יְהוָֽה׃",
+        "LXX": "καὶ μὴ γίνεσθε καθὼς οἱ πατέρες ὑμῶν, οἷς ἐνεκάλεσαν αὐτοῖς οἱ προφῆται ἔμπροσθεν λέγοντες Τάδε λέγει Κύριος Παντοκράτωρ Ἀποστρέψατε ἀπὸ τῶν ὁδῶν ὑμῶν τῶν πονηρῶν καὶ ἀπὸ τῶν ἐπιτηδευμάτων ὑμῶν τῶν πονηρῶν· καὶ οὐκ εἰσήκουσαν, καὶ οὐ προσέσχον τοῦ εἰσακοῦσαί μου, λέγει Κύριος.",
+        "SYN": "Не будьте такими, как отцы ваши, к которым взывали прежде бывшие пророки, говоря: \"так говорит Господь Саваоф: обратитесь от злых путей ваших и от злых дел ваших\"; но они не слушались и не внимали Мне, говорит Господь.",
+        "NEO": "Ne soyez pas comme vos pères, auxquels ont prêché les premiers prophètes en disant : « Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** des armées : Revenez donc de vos mauvaises voies, et de vos mauvaises actions ! » et qui n’ont pas écouté et ne m’ont pas prêté attention, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Be not like your fathers whom the former prophets warned: Thus says the LORD of hosts: Turn from your evil ways and from your wicked deeds. But they would not listen or pay attention to me, says the LORD.",
+        "VAT_ES": "No sean como sus padres, a quienes los antiguos profetas interpelaron, diciendo: Así habla el Señor de los ejércitos: Vuelvan de sus malos caminos y de sus malas acciones. Pero ellos no escucharon, ni me prestaron atención –oráculo del Señor–.",
+        "CEI": "Non siate come i vostri padri, ai quali i profeti di un tempo andavan gridando: Dice il Signore degli eserciti: Tornate indietro dal vostro cammino perverso e dalle vostre opere malvagie. Ma essi non vollero ascoltare e non mi prestarono attenzione, dice il Signore."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אֲבֽוֹתֵי/כֶ֖ם אַיֵּה הֵ֑ם וְ/הַ֨/נְּבִאִ֔ים הַ/לְ/עוֹלָ֖ם יִֽחְיֽוּ׃",
+        "LXX": "οἱ πατέρες ὑμῶν, ποῦ εἰσιν; καὶ οἱ προφῆται, μὴ τὸν αἰῶνα ζήσονται;",
+        "SYN": "Отцы ваши - где они? да и пророки, будут ли они вечно жить?",
+        "NEO": "Vos pères, où sont-ils ? Et les prophètes, pouvaient-ils vivre éternellement ?",
+        "NAB": "Your fathers, where are they? And the prophets, can they live forever?",
+        "VAT_ES": "&iquest;Dónde están sus padres? Y los profetas &iquest;viven para siempre?",
+        "CEI": "Dove sono i vostri padri? I profeti forse vivranno sempre?"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אַ֣ךְ דְּבָרַ֣/י וְ/חֻקַּ֗/י אֲשֶׁ֤ר צִוִּ֨יתִי֙ אֶת עֲבָדַ֣/י הַ/נְּבִיאִ֔ים הֲ/ל֥וֹא הִשִּׂ֖יגוּ אֲבֹתֵי/כֶ֑ם וַ/יָּשׁ֣וּבוּ וַ/יֹּאמְר֗וּ כַּ/אֲשֶׁ֨ר זָמַ֜ם יְהוָ֤ה צְבָאוֹת֙ לַ/עֲשׂ֣וֹת לָ֔/נוּ כִּ/דְרָכֵ֨י/נוּ֙ וּ/כְ/מַ֣עֲלָלֵ֔י/נוּ כֵּ֖ן עָשָׂ֥ה אִתָּֽ/נוּ׃",
+        "LXX": "πλὴν τοὺς λόγους μου καὶ τὰ νόμιμά μου δέχεσθε, ὅσα ἐγὼ ἐντέλλομαι ἐν πνεύματί μου τοῖς δούλοις μου τοῖς προφήταις, οἳ κατελάβοσαν τοὺς πατέρας ὑμῶν. καὶ ἀπεκρίθησαν καὶ εἶπαν Καθὼς παρατέτακται Κύριος Παντοκράτωρ τοῦ ποιῆσαι ἡμῖν κατὰ τὰς ὁδοὺς ἡμῶν καὶ κατὰ τὰ ἑπιτηδεύματα ἡμῶν, οὕτως ἐποίησεν ἡμῖν.",
+        "SYN": "Но слова Мои и определения Мои, которые заповедал Я рабам Моим, пророкам, разве не постигли отцов ваших? и они обращались и говорили: \"как определил Господь Саваоф поступить с нами по нашим путям и по нашим делам, так и поступил с нами\".",
+        "NEO": "Mais mes paroles et mes décrets, dont j’avais chargé mes serviteurs les prophètes, n’ont-ils pas atteint vos pères, si bien qu’ils se sont convertis+ 1:6 6. \\+it Se sont convertis\\+it*, mais trop tard pour leur salut.* et ont dit : « Comme \\+w Yahweh|strong=\"H3068\"\\+w** des armées avait résolu d’agir à notre égard, selon nos voies et selon nos actions, ainsi il a agi envers nous. »",
+        "NAB": "But my words and my decrees, which I entrusted to my servants the prophets, did not these overtake your fathers? Then they repented and admitted: \"The LORD of hosts has treated us according to our ways and deeds, just as he had determined he would.\"",
+        "VAT_ES": "Pero mis palabras y mis decretos, que yo había ordenado a mis servidores los profetas, &iquest;acaso no alcanzaron a sus padres? Por eso, ellos se convirtieron y dijeron: «El Señor de los ejércitos nos ha tratado según nuestros caminos y nuestras acciones, como había resuelto hacerlo».",
+        "CEI": "Le parole e i decreti che io avevo comunicato ai miei servi, i profeti, non si sono forse adempiuti sui padri vostri? Essi si sono convertiti e hanno detto: Quanto il Signore degli eserciti ci aveva minacciato a causa dei nostri traviamenti e delle nostre colpe, l'ha eseguito sopra di noi\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "בְּ/יוֹם֩ עֶשְׂרִ֨ים וְ/אַרְבָּעָ֜ה לְ/עַשְׁתֵּֽי עָשָׂ֥ר חֹ֨דֶשׁ֙ הוּא חֹ֣דֶשׁ שְׁבָ֔ט בִּ/שְׁנַ֥ת שְׁתַּ֖יִם לְ/דָרְיָ֑וֶשׁ הָיָ֣ה דְבַר יְהוָ֗ה אֶל זְכַרְיָה֙ בֶּן בֶּ֣רֶכְיָ֔הוּ בֶּן עִדּ֥וֹא הַ/נָּבִ֖יא לֵ/אמֹֽר׃",
+        "LXX": "Τῇ τετράδι καὶ εἰκάδι τῷ ἑνδεκάτῳ μηνί, οὗτός ἐστιν ὁ μὴν Σαβάτ, ἐν τῷ δευτέρῳ ἔτει ἐπὶ Δαρείου ἐγένετο λόγος Κυρίου πρὸς Ζαχαρίαν τὸν τοῦ Βαραχίου υἱὸν Ἀδδὼ τὸν προφήτην λέγων",
+        "SYN": "В двадцать четвертый день одиннадцатого месяца, - это месяц Шеват, - во второй год Дария, было слово Господне к Захарии, сыну Варахиину, сыну Аддову, пророку:",
+        "NEO": "Le vingt-quatrième jour du onzième mois, qui est le mois de Sabath+ 1:7 7. \\+it Sabath\\+it* (hébr. \\+it Schebal\\+it*), février-mars. La date donnée en ce vers. et complétée par l’indication « pendant la nuit » du vers. suiv., convient à toutes les visions des chap, i, 8 — vi, 8.* , en la deuxième année de Darius, la parole de Dieu fut adressée à Zacharie, fils de Barachie, petit-fils d’Addo, le prophète, en ces termes :",
+        "NAB": "In the second year of Darius, on the twenty-fourth day of Shebat, the eleventh month, the word of the LORD came to the prophet Zechariah, son of Berechiah, son of Iddo, in the following way:",
+        "VAT_ES": "El vigésimo cuarto día del undécimo mes, que es el mes de Seta, en el segundo año de Darío, la palabra del Señor fue dirigida al profeta Zacarías, hijo de Berequías, hijo de Idó, en estos términos:",
+        "CEI": "Il ventiquattro dell'undecimo mese, cioè il mese di Sebàt, l'anno secondo di Dario, questa parola del Signore si manifestò al profeta Zaccaria, figlio di Iddò."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "רָאִ֣יתִי הַ/לַּ֗יְלָה וְ/הִנֵּה אִישׁ֙ רֹכֵב֙ עַל ס֣וּס אָדֹ֔ם וְ/ה֣וּא עֹמֵ֔ד בֵּ֥ין הַ/הֲדַסִּ֖ים אֲשֶׁ֣ר בַּ/מְּצֻלָ֑ה וְ/אַחֲרָי/ו֙ סוּסִ֣ים אֲדֻמִּ֔ים שְׂרֻקִּ֖ים וּ/לְבָנִֽים׃",
+        "LXX": "Ἑόρακα τὴν νύκτα, καὶ ἰδοὺ ἀνὴρ ἐπιβεβηκὼς ἐπὶ ἳππον πυρρόν, καὶ οὗτος ἱστήκει ἀνὰ μέσον τῶν ὀρέων τῶν κατασκίων, καὶ ὀπίσω αὐτοῦ ἵπποι πυρροὶ καὶ ψαροὶ καὶ ποικίλοι καὶ λευκοί.",
+        "SYN": "видел я ночью: вот, муж на рыжем коне стоит между миртами, которые в углублении, а позади него кони рыжие, пегие и белые, -",
+        "NEO": "J’ai eu une vision pendant la nuit : Voici qu’un homme+ 1:8 8. \\+it Un homme\\+it*, un ange suivi de trois groupes de cavaliers dont il est le chef ; ils sont chargés de reconnaître l’état actuel des peuples qui environnent le pays d’Israël (vers. 10), et sont comme le symbole du regard divin qui se promène sur la terre : comp. Job 1,7 ; 2,2. — \\+it Entre des myrtes\\+it*. LXX, \\+it au milieu des montagnes\\+it* de même vers. 10, 11. cheval roux, et il se tenait entre des myrtes dans un lieu ombragé, et il y avait derrière lui des chevaux roux, alezans et blancs.* était monté sur un cheval roux, et il se tenait entre des myrtes dans un lieu ombragé, et il y avait derrière lui des chevaux roux, alezans et blancs.",
+        "NAB": "I had a vision during the night. There appeared the driver of a red horse, standing among myrtle trees in a shady place, and behind him were red, sorrel, and white horses.",
+        "VAT_ES": "Yo tuve una visión durante la noche: Había un hombre montado en un caballo rojo. Estaba parado entre los mirtos que se encuentran en la hondonada, y detrás de él había caballos rojos, alazanes, negros y blancos.",
+        "CEI": "Io ebbi una visione di notte. Un uomo, in groppa a un cavallo rosso, stava fra i mirti in una valle profonda; dietro a lui stavano altri cavalli rossi, sauri e bianchi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וָ/אֹמַ֖ר מָה אֵ֣לֶּה אֲדֹנִ֑/י וַ/יֹּ֣אמֶר אֵלַ֗/י הַ/מַּלְאָךְ֙ הַ/דֹּבֵ֣ר בִּ֔/י אֲנִ֥י אַרְאֶ֖/ךָּ מָה הֵ֥מָּה אֵֽלֶּה׃",
+        "LXX": "καὶ εἶπα Τί οὗτοι, κύριε; καὶ εἶπεν πρὸς μὲ ὁ ἄγγελος ὁ λαλῶν ἐν ἐμοί Ἐγὼ δείξω σοι τί ἐστιν ταῦτα.",
+        "SYN": "и сказал я: кто они, господин мой? И сказал мне Ангел, говоривший со мною: я покажу тебе, кто они.",
+        "NEO": "Je dis+ 1:9 9. \\+it Je dis\\+it* à l’ange qui va servir d’interprète à Zacharie dans tout le cours de ses visions, et qu’il voit déjà présent à côté de lui. — \\+it L’ange qui parlait avec moi\\+it*, ou \\+it en moi\\+it*.* : « Que sont ceux-ci, mon seigneur ? » Et l’ange qui parlait avec moi me dit : « Je te ferai voir ce que sont ceux-ci. »",
+        "NAB": "Then I asked, \"What are these, my lord?\"; and the angel who spoke with me answered me, \"I will show you what these are.\"",
+        "VAT_ES": "Yo pregunté: «&iquest;Quiénes son estos, mi Señor?». Y el ángel que hablaba conmigo me respondió: «Yo te indicaré quiénes son estos».",
+        "CEI": "Io domandai: \"Mio signore, che significano queste cose?\". L'angelo che parlava con me mi rispose: \"Io t'indicherò ciò che esse significano\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יַּ֗עַן הָ/אִ֛ישׁ הָ/עֹמֵ֥ד בֵּין הַ/הַדַסִּ֖ים וַ/יֹּאמַ֑ר אֵ֚לֶּה אֲשֶׁ֣ר שָׁלַ֣ח יְהוָ֔ה לְ/הִתְהַלֵּ֖ךְ בָּ/אָֽרֶץ׃",
+        "LXX": "καὶ ἀπεκρίθη ὁ ἀνὴρ ὁ ἐφεστηκὼς ἀνὰ μέσον τῶν ὀρέων καὶ εἶπεν πρὸς μέ Οὗτοί εἰσιν οὓς ἐξαπέστειλεν Κύριος περιοδεῦσαι τὴν γῆν.",
+        "SYN": "И отвечал муж, который стоял между миртами, и сказал: это те, которых Господь послал обойти землю.",
+        "NEO": "Et l’homme qui se tenait entre les myrtes prit la parole et dit : « Ce sont ceux que \\+w Yahweh|strong=\"H3068\"\\+w** a envoyés pour parcourir la terre. »",
+        "NAB": "The man who was standing among the myrtle trees spoke up and said, \"These are they whom the LORD has sent to patrol the earth.\"",
+        "VAT_ES": "El hombre que estaba entre los mirtos dijo: «Estos son los que el Señor envió a recorrer la tierra».",
+        "CEI": "Allora l'uomo che stava fra i mirti prese a dire: \"Essi sono coloro che il Signore ha inviati a percorrere la terra\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַֽ/יַּעֲנ֞וּ אֶת מַלְאַ֣ךְ יְהוָ֗ה הָֽ/עֹמֵד֙ בֵּ֣ין הַ/הֲדַסִּ֔ים וַ/יֹּאמְר֖וּ הִתְהַלַּ֣כְנוּ בָ/אָ֑רֶץ וְ/הִנֵּ֥ה כָל הָ/אָ֖רֶץ יֹשֶׁ֥בֶת וְ/שֹׁקָֽטֶת׃",
+        "LXX": "καὶ ἀπεκρίθησαν τῷ ἀγγέλῳ Κυρίου τῷ ἐφεστῶτι ἀνὰ μέσον τῶν ὀρέων καὶ εἶπον Περιωδεύσαμεν πᾶσαν τὴν γῆν, καὶ ἰδοὺ πᾶσα ἡ γῆ κατοικεῖται καὶ ἡσυχάζει.",
+        "SYN": "И они отвечали Ангелу Господню, стоявшему между миртами, и сказали: обошли мы землю, и вот, вся земля населена и спокойна.",
+        "NEO": "Et ils répondirent à l’ange de \\+w Yahweh|strong=\"H3068\"\\+w**+ 1:11 11. \\+it L’ange de Yahweh\\+it*, l’image personnelle du Dieu invisible, qui toutefois s’en distingue (vers. 12). — \\+it Toute la terre\\+it*, les contrées voisines de la Palestine, est en repos : la paix et la tranquilité régnaient partout dans les premières années de Darius, tandis que les villes de Juda étaient encore en ruines.* qui se tenait entre les myrtes, et ils dirent : « Nous avons parcouru la terre, et voici que toute la terre est habitée et tranquille. »",
+        "NAB": "And they answered the angel of the LORD who was standing among the myrtle trees and said, \"We have patrolled the earth; see, the whole earth is tranquil and at rest!\"",
+        "VAT_ES": "Ellos se dirigieron al ángel del Señor que estaba entre los mirtos, y le dijeron: «Venimos de recorrer la tierra y hemos visto que toda la tierra está en calma y tranquila».",
+        "CEI": "Si rivolsero infatti all'angelo del Signore che stava fra i mirti e gli dissero: \"Abbiamo percorso la terra: è tutta tranquilla\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַן מַלְאַךְ יְהוָה֮ וַ/יֹּאמַר֒ יְהוָ֣ה צְבָא֔וֹת עַד מָתַ֗י אַתָּה֙ לֹֽא תְרַחֵ֣ם אֶת יְרוּשָׁלִַ֔ם וְ/אֵ֖ת עָרֵ֣י יְהוּדָ֑ה אֲשֶׁ֣ר זָעַ֔מְתָּה זֶ֖ה שִׁבְעִ֥ים שָׁנָֽה׃",
+        "LXX": "καὶ ἀπεκρίθη ὁ ἄγγελος Κυρίου καὶ εἶπεν Κύριε Παντοκράτωρ, ἕως τίνος οὐ μὴ ἐλεήσῃς τὴν Ἰερουσαλὴμ καὶ τὰς πόλεις Ἰούδα, ἃς ὑπερεῖδες τοῦτο ἑβδομηκοστὸν ἔτος;",
+        "SYN": "И отвечал Ангел Господень и сказал: Господи Вседержителю! Доколе Ты не умилосердишься над Иерусалимом и над городами Иуды, на которые Ты гневаешься вот уже семьдесят лет?",
+        "NEO": "L’ange de \\+w Yahweh|strong=\"H3068\"\\+w** prit la parole et dit : « \\+w Yahweh|strong=\"H3068\"\\+w** des armées, jusques à quand n’auras-tu pas pitié de Jérusalem et des villes de Juda contre lesquelles tu es irrité voilà soixante-dix+ 1:12 12. \\+it Soixante-dix ans\\+it*, en prenant comme point de départ la destruction complète de Jérusalem (an 588).* ans ? »",
+        "NAB": "Then the angel of the Lord spoke out and said, \"O LORD of hosts, how long will you be without mercy for Jerusalem and the cities of Judah that have felt your anger these seventy years?\"",
+        "VAT_ES": "Entonces el ángel del Señor dijo: «Señor de los ejércitos, &iquest;hasta cuándo esperarás para compadecerte de Jerusalén y de las ciudades de Judá, contra las cuales estás irritado desde hace setenta años?».",
+        "CEI": "Allora l'angelo del Signore disse: \"Signore degli eserciti, fino a quando rifiuterai di aver pietà di Gerusalemme e delle città di Giuda, contro le quali sei sdegnato? Sono ormai settant'anni!\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַן יְהוָ֗ה אֶת הַ/מַּלְאָ֛ךְ הַ/דֹּבֵ֥ר בִּ֖/י דְּבָרִ֣ים טוֹבִ֑ים דְּבָרִ֖ים נִחֻמִֽים׃",
+        "LXX": "καὶ ἀπεκρίθη Κύριος Παντοκράτωρ τῷ ἀγγέλῳ τῷ λαλοῦντι ἐν ἐμοὶ ῥήματα καλὰ καὶ λόγους παρακλητικούς.",
+        "SYN": "Тогда в ответ Ангелу, говорившему со мною, изрек Господь слова благие, слова утешительные.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** adressa à l’ange qui parlait avec moi de bonnes paroles, des paroles de consolation.",
+        "NAB": "To the angel who spoke with me, the LORD replied with comforting words.",
+        "VAT_ES": "El señor dirigió al ángel que hablaba conmigo palabras buenas, palabras consoladoras.",
+        "CEI": "E all'angelo che parlava con me il Signore rivolse parole buone, piene di conforto."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֵלַ֗/י הַ/מַּלְאָךְ֙ הַ/דֹּבֵ֣ר בִּ֔/י קְרָ֣א לֵ/אמֹ֔ר כֹּ֥ה אָמַ֖ר יְהוָ֣ה צְבָא֑וֹת קִנֵּ֧אתִי לִ/ירוּשָׁלִַ֛ם וּ/לְ/צִיּ֖וֹן קִנְאָ֥ה גְדוֹלָֽה׃",
+        "LXX": "καὶ εἶπεν πρὸς μὲ ὁ ἄγγελος ὁ λαλῶν ἐν ἐμοί Ἀνάκραγε λέγων Τάδε λέγει Κύριος Παντοκράτωρ Ἐζήλωκα τὴν Ἰερουσαλὴμ καὶ τὴν Σειὼν ζῆλον μέγαν,",
+        "SYN": "И сказал мне Ангел, говоривший со мною: провозгласи и скажи: так говорит Господь Саваоф: возревновал Я о Иерусалиме и о Сионе ревностью великою;",
+        "NEO": "Et l’ange qui parlait avec moi me dit : « Proclame ceci : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** des armées : J’ai été animé d’une grande jalousie pour Jérusalem et pour Sion ;",
+        "NAB": "And the angel who spoke with me said to me, Proclaim: Thus says the LORD of hosts: I am deeply moved for the sake of Jerusalem and Zion,",
+        "VAT_ES": "Entonces el ángel me dijo: «Proclama esto: Así habla el Señor de los ejércitos: Yo siento un gran celo por Jerusalén y por Sión,",
+        "CEI": "Poi l'angelo che parlava con me mi disse: \"Fà sapere questo: Così dice il Signore degli eserciti: Io sono ingelosito per Gerusalemme e per Sion di gelosia grande;"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/קֶ֤צֶף גָּדוֹל֙ אֲנִ֣י קֹצֵ֔ף עַל הַ/גּוֹיִ֖ם הַ/שַּֽׁאֲנַנִּ֑ים אֲשֶׁ֤ר אֲנִי֙ קָצַ֣פְתִּי מְּעָ֔ט וְ/הֵ֖מָּה עָזְר֥וּ לְ/רָעָֽה׃",
+        "LXX": "καὶ ὀργὴν μεγάλην ἐγὼ ὀργίζομαι ἐπὶ τὰ ἔθνη τὰ συνεπιτιθέμενα, ἀνθ’ ὧν μὲν ἐγὼ ὠργίσθην ὀλίγα, αὐτοὶ δὲ συνεπέθεντο εἰς κακά.",
+        "SYN": "и великим негодованием негодую на народы, живущие в покое; ибо, когда Я мало прогневался, они усилили зло.",
+        "NEO": "et je suis animé d’un grand courroux contre les nations qui vivent dans l’opulence ! Car moi, j’étais un peu irrité ; et elles ont, elles, travaillé à la ruine+ 1:15 15. \\+it Et elles ont, elles, travaillé à la ruine\\+it* ; m. à m., \\+it et elles ont, elles, aidé, concouru, au mal\\+it*. Les nations, dépassant ma volonté et se montrant cruelles à l’excès, ont travaillé à la destruction totale d’Israël.*.",
+        "NAB": "and I am exceedingly angry with the complacent nations; whereas I was but a little angry, they added to the harm.",
+        "VAT_ES": "y estoy violentamente irritado contra las naciones seguras de sí mismas; porque yo estaba un poco irritado, pero ellas agravaron la desgracia.",
+        "CEI": "ma ardo di sdegno contro le nazioni superbe, poiché mentre io ero un poco sdegnato, esse cooperarono al disastro."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "לָ/כֵ֞ן כֹּֽה אָמַ֣ר יְהוָ֗ה שַׁ֤בְתִּי לִ/ירוּשָׁלִַ֨ם֙ בְּֽ/רַחֲמִ֔ים בֵּיתִ/י֙ יִבָּ֣נֶה בָּ֔/הּ נְאֻ֖ם יְהוָ֣ה צְבָא֑וֹת ו/קוה וְ/קָ֥ו יִנָּטֶ֖ה עַל יְרוּשָׁלִָֽם׃",
+        "LXX": "διὰ τοῦτο τάδε λέγει Κύριος Ἐπιβλέψω ἐπὶ Ἰερουσαλὴμ ἐν οἰκτιρμῷ, καὶ ὁ οἶκός μου ἀνοικοδομηθήσεται ἐν αὐτῇ, λέγει Κύριος Παντοκράτωρ, καὶ μέτρον ἐκταθήσεται ἐπὶ Ἰερουσαλὴμ ἔτι.",
+        "SYN": "Посему так говорит Господь: Я обращаюсь к Иерусалиму с милосердием; в нем соорудится дом Мой, говорит Господь Саваоф, и землемерная вервь протянется по Иерусалиму.",
+        "NEO": "C’est pourquoi ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Je reviens à Jérusalem avec compassion ; ma maison y sera rebâtie, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** des armées, et le cordeau sera étendu sur Jérusalem.",
+        "NAB": "Therefore, says the LORD: I will turn to Jerusalem in mercy; my house shall be built in it, says the LORD of hosts, and a measuring line shall be stretched over Jerusalem.",
+        "VAT_ES": "Por eso, así habla el Señor: Yo he vuelvo a Jerusalén con piedad; allí será reconstruida mi Casa –oráculo del Señor de los ejércitos– y la cuerda de medir será tendida sobre Jerusalén.",
+        "CEI": "Perciò dice il Signore: Io di nuovo mi volgo con compassione a Gerusalemme: la mia casa vi sarà riedificata - parola del Signore degli eserciti - e la corda del muratore sarà tesa di nuovo sopra Gerusalemme."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "ע֣וֹד קְרָ֣א לֵ/אמֹ֗ר כֹּ֤ה אָמַר֙ יְהוָ֣ה צְבָא֔וֹת ע֛וֹד תְּפוּצֶ֥ינָה עָרַ֖/י מִ/טּ֑וֹב וְ/נִחַ֨ם יְהוָ֥ה עוֹד֙ אֶת צִיּ֔וֹן וּ/בָחַ֥ר ע֖וֹד בִּ/ירוּשָׁלִָֽם׃",
+        "LXX": "καὶ εἶπεν πρὸς μὲ ὁ ἄγγελος ὁ λαλῶν ἐν ἐμοί Ἀνάκραγε λέγων Τάδε λέγει Κύριος Παντοκράτωρ Ἔτι διαχυθήσονται πόλεις ἐν ἀγαθοῖς, καὶ ἐλεήσει Κύριος ἔτι τὴν Σειὼν καὶ αἱρετιεῖ τὴν Ἰερουσαλήμ.",
+        "SYN": "Еще провозгласи и скажи: так говорит Господь Саваоф: снова переполнятся города Мои добром, и утешит Господь Сион, и снова изберет Иерусалим.",
+        "NEO": "Proclame encore ceci : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** des armées : Mes villes regorgeront encore de biens, et \\+w Yahweh|strong=\"H3068\"\\+w** consolera encore Sion, et choisira encore Jérusalem. »",
+        "NAB": "Proclaim further: Thus says the LORD of hosts: My cities shall again overflow with prosperity; the LORD will again comfort Zion, and again choose Jerusalem.",
+        "VAT_ES": "Proclama también esto: Así habla el Señor de los ejércitos: Mis ciudades rebosarán de bienes; el Señor consolará de nuevo a Sión y elegirá otra vez a Jerusalén».",
+        "CEI": "Fà sapere anche questo: Così dice il Signore degli eserciti: Le mie città avranno sovrabbondanza di beni, il Signore avrà ancora compassione di Sion ed eleggerà di nuovo Gerusalemme\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "Καὶ ἦρα τοὺς ὀφθαλμούς μου καὶ εἶδον, καὶ ἰδοὺ τέσσαρα κέρατα.",
+        "SYN": "И поднял я глаза мои и увидел: вот четыре рога."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "καὶ εἶπα πρὸς τὸν ἄγγελον τὸν λαλοῦντα ἐν ἐμοί Τί ἐστιν ταῦτα, κύριε; καὶ εἶπεν πρὸς μέ Ταῦτα τὰ κέρατα τὰ διασκορπίσαντα τὸν Ἰούδαν καὶ τὸν Ἰσραὴλ καὶ Ἰερουσαλήμ.",
+        "SYN": "И сказал я Ангелу, говорившему со мною: что это? И он ответил мне: это роги, которые разбросали Иуду, Израиля и Иерусалим."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "καὶ ἔδειξέν μοι Κύριος τέσσαρας τέκτονας.",
+        "SYN": "Потом показал мне Господь четырех рабочих."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "καὶ εἶπα Τί οὗτοι ἔρχονται ποιῆσαι; καὶ εἶπεν Ταῦτα τὰ κέρατα τὰ διασκορπίσαντα τὸν Ἰούδαν καὶ τὸν Ἰσραὴλ κατέαξαν, καὶ οὐδεὶς αὐτῶν ἦρεν κεφαλήν· καὶ ἐξήλθοσαν οὗτοι τοῦ ὀξῦναι αὐτὰ εἰς χεῖρας αὐτῶν τὰ τέσσαρα κέρατα, τὰ ἔθνη τὰ ⸂⸆⸃ ἐπαιρόμενα κέρας ἐπὶ τὴν γῆν Κυρίου τοῦ διασκορπίσαι αὐτήν.",
+        "SYN": "И сказал я: что они идут делать? Он сказал мне так: эти роги разбросали Иуду, так что никто не может поднять головы своей; а сии пришли устрашить их, сбить роги народов, поднявших рог свой против земли Иуды, чтобы рассеять ее."
+      }
+    }
+  }
+}

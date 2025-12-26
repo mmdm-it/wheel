@@ -1,0 +1,176 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_028",
+  "book_key": "PSAL",
+  "sequence": 28,
+  "chapter_in": {
+    "MT": 28,
+    "VUL": 27,
+    "LXX": 27
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לְ/דָוִ֡ד אֵ֘לֶ֤י/ךָ יְהוָ֨ה אֶקְרָ֗א צוּרִ/י֮ אַֽל תֶּחֱרַ֪שׁ מִ֫מֶּ֥/נִּי פֶּן תֶּֽחֱשֶׁ֥ה מִמֶּ֑/נִּי וְ֝/נִמְשַׁ֗לְתִּי עִם י֥וֹרְדֵי בֽוֹר׃",
+        "LXX": "Ψαλμὸς τῷ Δαυείδ· ἐξοδίου σκηνῆς. Ἐνέγκατε τῷ κυρίῳ, υἱοὶ θεοῦ, ἐνέγκατε τῷ κυρίῳ υἱοὺς κριῶν· ἐνέγκατε τῷ κυρίῳ δόξαν καὶ τιμήν,",
+        "VUL": "Psalmus David, in consummatione tabernaculi. [Afferte Domino, filii Dei,/ afferte Domino filios arietum./",
+        "SYN": "Воздайте Господу, сыны Божии, воздайте Господу славу и честь,",
+        "NEO": "De David.",
+        "NAB": "Of David. To you, LORD, I call; my Rock, do not be deaf to me. If you fail to answer me, I will join those who go down to the pit.",
+        "CEI": "Di Davide. A te grido, Signore; non restare in silenzio, mio Dio, perché, se tu non mi parli, io sono come chi scende nella fossa."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "שְׁמַ֤ע ק֣וֹל תַּ֭חֲנוּנַ/י בְּ/שַׁוְּעִ֣/י אֵלֶ֑י/ךָ בְּ/נָשְׂאִ֥/י יָ֝דַ֗/י אֶל דְּבִ֥יר קָדְשֶֽׁ/ךָ׃",
+        "LXX": "ἐνέγκατε τῷ κυρίῳ δόξαν ὀνόματι αὐτοῦ· προσκυνήσατε τῷ κυρίῳ ἐν αὐλῇ ἁγίᾳ αὐτοῦ.",
+        "VUL": "Afferte Domino gloriam et honorem ;/ afferte Domino gloriam nomini ejus ;/ adorate Dominum in atrio sancto ejus./",
+        "SYN": "воздайте Господу славу имени Его; поклонитесь Господу в благолепном святилище _Его._",
+        "NEO": "Ecoute la voix de mes supplications, quand je crie vers toi, quand j’élève mes mains vers ton saint sanctuaire.",
+        "NAB": "Hear the sound of my pleading when I cry to you, lifting my hands toward your holy place.",
+        "VAT_ES": "Oye la voz de mi plegaria,",
+        "CEI": "Ascolta la voce della mia supplica, quando ti grido aiuto, quando alzo le mie mani verso il tuo santo tempio."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אַל תִּמְשְׁכֵ֣/נִי עִם רְשָׁעִים֮ וְ/עִם פֹּ֪עֲלֵ֫י אָ֥וֶן דֹּבְרֵ֣י שָׁ֭לוֹם עִם רֵֽעֵי/הֶ֑ם וְ֝/רָעָ֗ה בִּ/לְבָבָֽ/ם׃",
+        "LXX": "φωνὴ Κυρίου ἐπὶ τῶν ὑδάτων, ὁ θεὸς τῆς δόξης ἐβρόντησεν, Κύριος ἐπὶ ὑδάτων πολλῶν.",
+        "VUL": "Vox Domini super aquas ;/ Deus majestatis intonuit :/ Dominus super aquas multas./",
+        "SYN": "Глас Господень над водами; Бог славы возгремел, Господь над водами многими.",
+        "NEO": "Ne m’emporte pas avec les méchants et les artisans d’iniquité, qui parlent de paix à leur prochain, et qui ont la malice dans le cœur.",
+        "NAB": "Do not drag me off with the wicked, with those who do wrong, Who speak peace to their neighbors though evil is in their hearts.",
+        "VAT_ES": "No me arrastres con los malvados",
+        "CEI": "Non travolgermi con gli empi, con quelli che operano il male. Parlano di pace al loro prossimo, ma hanno la malizia nel cuore."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "תֶּן לָ/הֶ֣ם כְּ/פָעֳלָ/ם֮ וּ/כְ/רֹ֪עַ מַֽעַלְלֵ֫י/הֶ֥ם כְּ/מַעֲשֵׂ֣ה יְ֭דֵי/הֶם תֵּ֣ן לָ/הֶ֑ם הָשֵׁ֖ב גְּמוּלָ֣/ם לָ/הֶֽם׃",
+        "LXX": "φωνὴ Κυρίου ἐν ἰσχύι, φωνὴ Κυρίου ἐν μεγαλοπρεπίᾳ.",
+        "VUL": "Vox Domini in virtute ;/ vox Domini in magnificentia./",
+        "SYN": "Глас Господа силен, глас Господа величествен.",
+        "NEO": "Rends-leur selon leurs œuvres, et selon la malice de leurs actions ; rends-leur selon l’ouvrage de leurs mains, donne-leur le salaire qu’ils méritent.",
+        "NAB": "Repay them for their deeds, for the evil that they do. For the work of their hands repay them; give them what they deserve.",
+        "VAT_ES": "Trátalos conforme a sus acciones,",
+        "CEI": "Ripagali secondo la loro opera e la malvagità delle loro azioni. Secondo le opere delle loro mani, rendi loro quanto meritano."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּ֤י לֹ֤א יָבִ֡ינוּ אֶל פְּעֻלֹּ֣ת יְ֭הוָה וְ/אֶל מַעֲשֵׂ֣ה יָדָ֑י/ו יֶ֝הֶרְסֵ֗/ם וְ/לֹ֣א יִבְנֵֽ/ם׃",
+        "LXX": "φωνὴ Κυρίου συντρίβοντος κέδρους· συντρίψει Κύριος τὰς κέδρους τοῦ Λιβάνου,",
+        "VUL": "Vox Domini confringentis cedros,/ et confringet Dominus cedros Libani :/",
+        "SYN": "Глас Господа сокрушает кедры; Господь сокрушает кедры Ливанские",
+        "NEO": "Car ils ne prennent pas garde aux œuvres de \\+w Yahweh|strong=\"H3068\"\\+w**, à l’ouvrage de ses mains : il les détruira et ne les bâtira pas.",
+        "NAB": "They pay no heed to the LORD'S works, to the deeds of God's hands. God will tear them down, never to be rebuilt.",
+        "VAT_ES": "Ellos no valoran lo que hace el Señor",
+        "CEI": "Poiché non hanno compreso l'agire del Signore e le opere delle sue mani, egli li abbatta e non li rialzi."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בָּר֥וּךְ יְהוָ֑ה כִּי שָׁ֝מַע ק֣וֹל תַּחֲנוּנָֽ/י׃",
+        "LXX": "καὶ λεπτυνεῖ αὐτὰς ὡς τὸν μόσχον τὸν Λίβανον· καὶ ὁ ἠγαπημένος ὡς υἱὸς μονοκερώτων.",
+        "VUL": "et comminuet eas, tamquam vitulum Libani,/ et dilectus quemadmodum filius unicornium./",
+        "SYN": "и заставляет их скакать подобно тельцу, Ливан и Сирион, подобно молодому единорогу.",
+        "NEO": "Béni soit \\+w Yahweh|strong=\"H3068\"\\+w**, car il a entendu la voix de mes supplications !",
+        "NAB": "Blessed be the LORD, who has heard the sound of my pleading.",
+        "VAT_ES": "Bendito sea el Señor,",
+        "CEI": "Sia benedetto il Signore, che ha dato ascolto alla voce della mia preghiera;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יְהוָ֤ה עֻזִּ֥/י וּ/מָגִנִּ/י֮ בּ֤/וֹ בָטַ֥ח לִבִּ֗/י וְֽ/נֶ֫עֱזָ֥רְתִּי וַ/יַּעֲלֹ֥ז לִבִּ֑/י וּֽ/מִ/שִּׁירִ֥/י אֲהוֹדֶֽ/נּוּ׃",
+        "LXX": "φωνὴ Κυρίου διακόπτοντος φλόγα πυρός.",
+        "VUL": "Vox Domini intercidentis flammam ignis ;/",
+        "SYN": "Глас Господа высекает пламень огня.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est ma force et mon bouclier ; en lui s’est confié mon cœur.",
+        "NAB": "The LORD is my strength and my shield, in whom my heart trusted and found help. So my heart rejoices; with my song I praise my God.",
+        "VAT_ES": "el Señor es mi fuerza y mi escudo,",
+        "CEI": "il Signore è la mia forza e il mio scudo, ho posto in lui la mia fiducia; mi ha dato aiuto ed esulta il mio cuore, con il mio canto gli rendo grazie."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "יְהוָ֥ה עֹֽז לָ֑/מוֹ וּ/מָ֘ע֤וֹז יְשׁוּע֖וֹת מְשִׁיח֣/וֹ הֽוּא׃",
+        "LXX": "φωνὴ Κυρίου συνσείοντος ἔρημον, συνσείσει κύριος τὴν ἔρημον Καδής.",
+        "VUL": "vox Domini concutientis desertum :/ et commovebit Dominus desertum Cades./",
+        "SYN": "Глас Господа потрясает пустыню; потрясает Господь пустыню Кадес.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est la force de son peuple, il est une forteresse de salut pour son Oint.",
+        "NAB": "LORD, you are the strength of your people, the saving refuge of your anointed king.",
+        "VAT_ES": "El Señor es la fuerza de su pueblo,",
+        "CEI": "Il Signore è la forza del suo popolo, rifugio di salvezza del suo consacrato."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הוֹשִׁ֤יעָ/ה אֶת עַמֶּ֗/ךָ וּ/בָרֵ֥ךְ אֶת נַחֲלָתֶ֑/ךָ וּֽ/רְעֵ֥/ם וְ֝/נַשְּׂאֵ֗/ם עַד הָ/עוֹלָֽם׃",
+        "LXX": "φωνὴ Κυρίου καταρτιζομένου ἐλάφους, καὶ ἀποκαλύψει δρυμούς· καὶ ἐν τῷ ναῷ αὐτοῦ πᾶς τις λέγει δόξαν.",
+        "VUL": "Vox Domini præparantis cervos :/ et revelabit condensa,/ et in templo ejus omnes dicent gloriam./",
+        "SYN": "Глас Господа разрешает от бремени ланей и обнажает леса; и во храме Его все возвещает о _Его_ славе.",
+        "NEO": "Sauve ton peuple et bénis ton héritage ! Sois leur pasteur et porte-les à jamais !",
+        "NAB": "Save your people, bless your inheritance; feed and sustain them forever!",
+        "VAT_ES": "Salva a tu pueblo y bendice a tu herencia;",
+        "CEI": "Salva il tuo popolo e la tua eredità benedici, guidali e sostienili per sempre."
+      }
+    }
+  }
+}

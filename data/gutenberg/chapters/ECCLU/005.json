@@ -1,0 +1,270 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_005",
+  "book_key": "ECCLU",
+  "sequence": 5,
+  "chapter_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "μὴ ἔπεχε ἐπὶ τοῖς χρήμασίν σου, καὶ μὴ εἴπῃς Αὐτάρκη μοί ἐστιν.",
+        "VUL": "[Noli attendere ad possessiones iniquas,/ et ne dixeris : Est mihi sufficiens vita :/ nihil enim proderit in tempore vindictæ et obductionis./",
+        "SYN": "Не полагайся на имущества твои и не говори: \"станет на жизнь мою\".",
+        "NEO": "Ne t’appuie pas sur tes richesses, et ne dis pas : « J’ai assez de bien ! »",
+        "NAB": "Rely not on your wealth; say not: \"I have the power.\"",
+        "VAT_ES": "No te fíes de tus riquezas ni digas: «Con esto me basta».",
+        "CEI": "Non confidare nelle tue ricchezze e non dire: \"Questo mi basta\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "μὴ ἐξακολούθει τῇ ψυχῇ σου καὶ τῇ ἰσχύι σου, πορεύεσθαι ἐν ἐπιθυμίαις καρδίας σου·",
+        "VUL": "Ne sequaris in fortitudine tua concupiscentiam cordis tui,/",
+        "SYN": "Не следуй влечению души твоей и крепости твоей, чтобы ходить в похотях сердца твоего,",
+        "NEO": "Ne suis pas ta convoitise et ta force, pour satisfaire les désirs de ton cœur ;",
+        "NAB": "Rely not on your strength in following the desires of your heart.",
+        "VAT_ES": "No dejes que tu deseo y tu fuerza te lleven a obrar según tus caprichos.",
+        "CEI": "Non seguire il tuo istinto e la tua forza, assecondando le passioni del tuo cuore."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "καὶ μὴ εἴπῃς Τίς με δυναστεύσει; ὁ γὰρ κύριος ἐκδικῶν ἐκδικήσει σε.",
+        "VUL": "et ne dixeris : Quomodo potui ?/ aut, Quis me subjiciet propter facta mea ?/ Deus enim vindicans vindicabit./",
+        "SYN": "и не говори: \"кто властен в делах моих?\", ибо Господь непременно отмстит за дерзость твою.",
+        "NEO": "et ne dis pas : « Qui sera mon maître ? » Car certainement le Seigneur te punira.",
+        "NAB": "Say not: \"Who can prevail against me?\" for the LORD will exact the punishment.",
+        "VAT_ES": "No digas: «&iquest;Quién podrá dominarme?», porque el Señor da a cada uno su merecido.",
+        "CEI": "Non dire: \"Chi mi dominerà?\", perché il Signore senza dubbio farà giustizia."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "μὴ εἴπῃς Ἥμαρτον, καὶ τί μοι ἐγένετο; ὁ γὰρ κύριός ἐστιν μακρόθυμος.",
+        "VUL": "Ne dixeris : Peccavi : et quid mihi accidit triste ?/ Altissimus enim est patiens redditor./",
+        "SYN": "Не говори: \"я грешил, и что мне было?\", ибо Господь долготерпелив.",
+        "NEO": "Ne dis point : « J’ai péché, et que m’est-il arrivé ? » Car le Seigneur est patient.",
+        "NAB": "Say not: \"I have sinned, yet what has befallen me?\" for the LORD bides his time.",
+        "VAT_ES": "No digas: «Pequé, &iquest;y qué me sucedió?, porque el Señor es paciente.",
+        "CEI": "Non dire: \"Ho peccato, e che cosa mi è successo?\", perché il Signore è paziente."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "περὶ ἐξιλασμοῦ μὴ ἄφοβος γίνου, προσθεῖναι ἁμαρτίαν ἐφ’ ἁμαρτίαις·",
+        "VUL": "De propitiatio peccato noli esse sine metu,/ neque adjicias peccatum super peccatum./",
+        "SYN": "При мысли об умилостивлении не будь бесстрашен, чтобы прилагать грех ко грехам",
+        "NEO": "Ne sois pas sans crainte au sujet de l’expiation, pour ajouter péché à péché.",
+        "NAB": "Of forgiveness be not overconfident, adding sin upon sin.",
+        "VAT_ES": "No estés tan seguro del perdón, mientras cometes un pecado tras otro.",
+        "CEI": "Non esser troppo sicuro del perdono tanto da aggiungere peccato a peccato."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "καὶ μὴ εἴπῃς Ὁ οἰκτειρμὸς αὐτοῦ πολύς, τὸ πλῆθος τῶν ἁμαρτιῶν μου ἐξιλάσεται· ἔλεος γὰρ καὶ ὀργὴ παρ’ αὐτοῦ, καὶ ἐπὶ ἁμαρτωλοὺς καταπαύσει ὁ θυμὸς αὐτοῦ.",
+        "VUL": "Et ne dicas : Miseratio Domini magna est,/ multitudinis peccatorum meorum miserebitur :/",
+        "SYN": "и не говори: \"милосердие Его велико, Он простит множество грехов моих\";",
+        "NEO": "Ne dis point : « La miséricorde de Dieu est grande, il pardonnera la multitude de mes péchés. » Car en lui se trouvent la pitié et la colère, et son courroux tombe sur les pécheurs.",
+        "NAB": "Say not: \"Great is his mercy; my many sins he will forgive.\"",
+        "VAT_ES": "No digas: «Su compasión es grande; él perdonará la multitud de mis pecados», porque en él está la misericordia, pero también la ira, y su indignación recae sobre los pecadores.",
+        "CEI": "Non dire: \"La sua misericordia è grande; mi perdonerà i molti peccati\", perché presso di lui ci sono misericordia e ira, il suo sdegno si riverserà sui peccatori."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "μὴ ἀνάμενε ἐπιστρέψαι πρὸς Κύριον, καὶ μὴ ὑπερβάλλου ἡμέραν ἐξ ἡμέρας· ἐξάπινα γὰρ ἐξελεύσεται ὀργὴ Κυρίου, καὶ ἐν καιρῷ ἐκδικήσεως ἐξολῇ.",
+        "VUL": "misericordia enim et ira ab illo cito proximant,/ et in peccatores respicit ira illius./",
+        "SYN": "ибо милосердие и гнев у Него, и на грешниках пребывает ярость Его.",
+        "NEO": "Ne tarde pas à te convertir au Seigneur, et ne diffère pas de jour en jour ; car la colère du Seigneur éclatera tout à coup, et, au jour de la vengeance, tu périras.",
+        "NAB": "For mercy and anger alike are with him; upon the wicked alights his wrath.",
+        "VAT_ES": "No tardes en volver al Señor, dejando pasar un día tras otro, porque la ira del Señor irrumpirá súbitamente y perecerás en el momento del castigo.",
+        "CEI": "Non aspettare a convertirti al Signore e non rimandare di giorno in giorno, poiché improvvisa scoppierà l'ira del Signore e al tempo del castigo sarai annientato."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "μὴ ἔπεχε ἐπὶ χρήμασιν ἀδίκοις· οὐδὲν γὰρ ὠφελήσεις ἐν ἡμέρᾳ ἐπαγωγῆς.",
+        "VUL": "Non tardes converti ad Dominum,/ et ne differas de die in diem :/",
+        "SYN": "Не медли обратиться к Господу и не откладывай со дня на день:",
+        "NEO": "Ne t’appuie pas sur des richesses injustes, car elles ne te serviront de rien au jour du malheur.",
+        "NAB": "Delay not your conversion to the LORD, put it not off from day to day;",
+        "VAT_ES": "No te fíes de las riquezas adquiridas injustamente: de nada te servirán en el día de la desgracia.",
+        "CEI": "Non confidare in ricchezze ingiuste, perché non ti gioveranno nel giorno della sventura."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "μὴ λίκμα ἐν παντὶ ἀνέμῳ, καὶ μὴ πορεύου ἐν πάσῃ ἀτραπῷ· οὕτως ὁ ἁμαρτωλὸς ὁ δίγλωσσος.",
+        "VUL": "subito enim veniet ira illius,/ et in tempore vindictæ disperdet te./",
+        "SYN": "ибо внезапно найдет гнев Господа, и ты погибнешь во время отмщения.",
+        "NEO": "Ne vanne pas à tout vent, et ne marche pas dans toute voie ; ainsi fait le pécheur à la langue double.",
+        "NAB": "For suddenly his wrath flames forth; at the time of vengeance, you will be destroyed.",
+        "VAT_ES": "No te dejes llevar por todos los vientos ni vayas por cualquier camino: así obra el pecador que habla con doblez.",
+        "CEI": "Non ventilare il grano a qualsiasi vento e non camminare su qualsiasi sentiero."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ἴσθι ἐστηριγμένος ἐν συνέσει σου, καὶ εἷς ἔστω σου ὁ λόγος.",
+        "VUL": "Noli anxius esse in divitiis injustis :/ non enim proderunt tibi in die obductionis et vindictæ.]",
+        "SYN": "Не полагайся на имущества неправедные, ибо они не принесут тебе пользы в день посещения.",
+        "NEO": "Sois ferme dans ton sentiment, et que ton langage soit un.",
+        "NAB": "Rely not upon deceitful wealth, for it will be no help on the day of wrath.",
+        "VAT_ES": "Sé firme en tus convicciones y que tu palabra sea una sola.",
+        "CEI": "Sii costante nel tuo sentimento, e unica sia la tua parola."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "γίνου ταχὺς ἐν ἀκροάσει σου, καὶ ἐν μακροθυμίᾳ φθέγγου ἀπόκρισιν.",
+        "VUL": "[Non ventiles te in omnem ventum,/ et non eas in omnem viam :/ sic enim omnis peccator probatur in duplici lingua./",
+        "SYN": "Не вей при всяком ветре и не ходи всякою стезею: таков двоязычный грешник.",
+        "NEO": "Sois prompt à écouter, et lent à donner une réponse.",
+        "NAB": "Winnow not in every wind, and start not off in every direction.",
+        "VAT_ES": "Está siempre dispuesto a escuchar y sé lento para responder.",
+        "CEI": "Sii pronto nell'ascoltare, lento nel proferire una risposta."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "εἰ ἔστιν σοι σύνεσις, ἀποκρίθητι τῷ πλησίον· εἰ δὲ μή, ἡ χείρ σου ἔστω ἐπὶ στόματί σου.",
+        "VUL": "Esto firmus in via Domini,/ et in veritate sensus tui et scientia :/ et prosequatur te verbum pacis et justitiæ./",
+        "SYN": "Будь тверд в твоем убеждении, и одно да будет твое слово.",
+        "NEO": "Si tu as de l’intelligence, réponds à ton prochain ; sinon, mets ta main sur ta bouche.",
+        "NAB": "Be consistent in your thoughts; steadfast be your words.",
+        "VAT_ES": "Si sabes, responde a tu prójimo; de lo contrario, quédate callado.",
+        "CEI": "Se conosci una cosa, rispondi al tuo prossimo; altrimenti mettiti la mano sulla bocca."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "δόξα καὶ ἀτιμία ἐν λαλιᾷ, καὶ γλῶσσα ἀνθρώπου πτῶσις αὐτῷ·",
+        "VUL": "Esto mansuetus ad audiendum verbum, ut intelligas,/ et cum sapientia proferas responsum verum./",
+        "SYN": "Будь скор к слушанию, и обдуманно давай ответ.",
+        "NEO": "La gloire et la honte sont dans la parole, et la langue de l’homme cause sa perte.",
+        "NAB": "Be swift to hear, but slow to answer.",
+        "VAT_ES": "Las palabras traen gloria o deshonor, y la lengua del hombre puede provocar su caída.",
+        "CEI": "Nel parlare ci può essere onore o disonore; la lingua dell'uomo è la sua rovina."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "μὴ κληθῇς ψίθυρος, καὶ τῇ γλώσσῃ σου μὴ ἐνεδρευθῇς· ἐπὶ γὰρ τῷ κλέπτῃ ἐστὶν αἰσχύνη, καὶ κατάγνωσις πονηρὰ ἐπὶ διγλώσσου.",
+        "VUL": "Si est tibi intellectus, responde proximo :/ sin autem, sit manus tua super os tuum,/ ne capiaris in verbo indisciplinato, et confundaris./",
+        "SYN": "Если имеешь знание, то отвечай ближнему, а если нет, то рука твоя да будет на устах твоих.",
+        "NEO": "Ne t’attire pas le nom de médisant, et ne tends pas des pièges avec ta langue ; car la confusion tombe sur le voleur, et une condamnation sévère atteint la langue double.",
+        "NAB": "If you have the knowledge, answer your neighbor; if not, put your hand over your mouth.",
+        "VAT_ES": "Que no tengan que llamarte chismoso, y no seas insidioso al hablar, porque la verg&uuml;enza pesa sobre el ladrón y una severa condena sobre el que habla con doblez.",
+        "CEI": "Non meritare il titolo di calunniatore e non tendere insidie con la lingua, poiché la vergogna è per il ladro e una condanna severa per l'uomo falso."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ἐν μεγάλῳ καὶ ἐν μικρῷ μὴ ἀγνόει,",
+        "VUL": "Honor et gloria in sermone sensati :/ lingua vero imprudentis subversio est ipsius./",
+        "SYN": "В речах - слава и бесчестие, и язык человека бывает падением ему.",
+        "NEO": "Ne sois en faute ni beaucoup ni peu,",
+        "NAB": "Honor and dishonor through talking! A man's tongue can be his downfall.",
+        "VAT_ES": "No faltes ni en lo grande ni en lo pequeño, y de amigo, no te vuelvas enemigo,",
+        "CEI": "Non far male né molto né poco, e da amico non divenire nemico,"
+      }
+    }
+  }
+}

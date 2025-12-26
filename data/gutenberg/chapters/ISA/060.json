@@ -1,0 +1,403 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_060",
+  "book_key": "ISA",
+  "sequence": 60,
+  "chapter_in": {
+    "MT": 60,
+    "VUL": 60,
+    "LXX": 60
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "ק֥וּמִי א֖וֹרִי כִּ֣י בָ֣א אוֹרֵ֑/ךְ וּ/כְב֥וֹד יְהוָ֖ה עָלַ֥יִ/ךְ זָרָֽח׃",
+        "LXX": "Φωτίζου φωτίζου, Ἰερουσαλήμ, ἥκει γάρ σου τὸ φῶς, καὶ ἡ δόξα Κυρίου ἐπὶ σὲ ἀνατέταλκεν.",
+        "VUL": "[Surge, illuminare, Jerusalem, quia venit lumen tuum,/ et gloria Domini super te orta est./",
+        "SYN": "Восстань, светись, [Иерусалим], ибо пришел свет твой, и слава Господня взошла над тобою.",
+        "NEO": "Lève-toi, et resplendis ! Car ta lumière paraît, et la gloire de \\+w Yahweh|strong=\"H3068\"\\+w** s’est levée sur toi.",
+        "NAB": "Rise up in splendor! Your light has come, the glory of the Lord shines upon you.",
+        "VAT_ES": "&iexcl;Grita a voz en cuello, no te contengas, alza tu voz como una trompeta: denúnciale a mi pueblo su rebeldía y sus pecados a la casa de Jacob!",
+        "CEI": "Alzati, rivestiti di luce, perché viene la tua luce, la gloria del Signore brilla sopra di te."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כִּֽי הִנֵּ֤ה הַ/חֹ֨שֶׁךְ֙ יְכַסֶּה אֶ֔רֶץ וַ/עֲרָפֶ֖ל לְאֻמִּ֑ים וְ/עָלַ֨יִ/ךְ֙ יִזְרַ֣ח יְהוָ֔ה וּ/כְבוֹד֖/וֹ עָלַ֥יִ/ךְ יֵרָאֶֽה׃",
+        "LXX": "ἰδοὺ σκότος καλύψει γῆν, καὶ γνόφος ἐπ’ ἔθνη· ἐπὶ δὲ σὲ φανήσεται Κύριος, καὶ ἡ δόξα αὐτοῦ ἐπὶ σὲ ὀφθήσεται·",
+        "VUL": "Quia ecce tenebræ operient terram,/ et caligo populos ;/ super te autem orietur Dominus,/ et gloria ejus in te videbitur./",
+        "SYN": "Ибо вот, тьма покроет землю, и мрак - народы; а над тобою воссияет Господь, и слава Его явится над тобою.",
+        "NEO": "Voici que les ténèbres couvrent la terre, et une sombre obscurité les peuples ; mais sur toi \\+w Yahweh|strong=\"H3068\"\\+w** se lève, et sa gloire se manifeste sur toi.",
+        "NAB": "See, darkness covers the earth, and thick clouds cover the peoples; But upon you the LORD shines, and over you appears his glory.",
+        "VAT_ES": "Ellos me consultan día tras día y quieren conocer mis caminos, como lo hará una nación que practica la justicia y no abandona el derecho de su Dios; reclaman de mí sentencias justas, les gusta estar cerca de Dios:",
+        "CEI": "Poiché, ecco, le tenebre ricoprono la terra, nebbia fitta avvolge le nazioni; ma su di te risplende il Signore, la sua gloria appare su di te."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/הָלְכ֥וּ גוֹיִ֖ם לְ/אוֹרֵ֑/ךְ וּ/מְלָכִ֖ים לְ/נֹ֥גַהּ זַרְחֵֽ/ךְ׃",
+        "LXX": "καὶ πορεύσονται βασιλεῖς τῷ φωτί σου, καὶ ἔθνη τῇ λαμπρότητί σου.",
+        "VUL": "Et ambulabunt gentes in lumine tuo,/ et reges in splendore ortus tui./",
+        "SYN": "И придут народы к свету твоему, и цари - к восходящему над тобою сиянию.",
+        "NEO": "Les nations marchent vers ta lumière, et les rois vers la clarté de ton lever.",
+        "NAB": "Nations shall walk by your light, and kings by your shining radiance.",
+        "VAT_ES": "«&iquest;Por qué ayunamos a tú no lo ves, nos afligimos y tú no lo reconoces?». Porque ustedes, el mismo día en que ayunan, se ocupan de negocios y maltratan a su servidumbre.",
+        "CEI": "Cammineranno i popoli alla tua luce, i re allo splendore del tuo sorgere."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "שְׂאִֽי סָבִ֤יב עֵינַ֨יִ/ךְ֙ וּ/רְאִ֔י כֻּלָּ֖/ם נִקְבְּצ֣וּ בָֽאוּ לָ֑/ךְ בָּנַ֨יִ/ךְ֙ מֵ/רָח֣וֹק יָבֹ֔אוּ וּ/בְנֹתַ֖יִ/ךְ עַל צַ֥ד תֵּאָמַֽנָה׃",
+        "LXX": "ἆρον κύκλῳ τοὺς ὀφθαλμούς σου καὶ ἴδε συνηγμένα τὰ τέκνα σου· ἥκασιν πάντες οἱ υἱοί σου μακρόθεν, καὶ αἱ θυγατέρες σου ἐπ’ ὤμων ἀρθήσονται.",
+        "VUL": "Leva in circuitu oculos tuos, et vide :/ omnes isti congregati sunt, venerunt tibi ;/ filii tui de longe venient/ et filiæ tuæ de latere surgent./",
+        "SYN": "Возведи очи твои и посмотри вокруг: все они собираются, идут к тебе; сыновья твои издалека идут и дочерей твоих на руках несут.",
+        "NEO": "Lève tes regards autour de toi, et vois : Tous se rassemblent, ils viennent à toi ; tes fils viennent de loin, et tes filles sont portées sur les bras.",
+        "NAB": "Raise your eyes and look about; they all gather and come to you: Your sons come from afar, and your daughters in the arms of their nurses.",
+        "VAT_ES": "Ayunan para entregarse a pleitos y querellas y para golpear perversamente con el puño. No ayunen como en esos días, si quieren hacer oír su voz en las alturas,",
+        "CEI": "Alza gli occhi intorno e guarda: tutti costoro si sono radunati, vengono a te. I tuoi figli vengono da lontano, le tue figlie sono portate in braccio."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אָ֤ז תִּרְאִי֙ וְ/נָהַ֔רְתְּ וּ/פָחַ֥ד וְ/רָחַ֖ב לְבָבֵ֑/ךְ כִּֽי יֵהָפֵ֤ךְ עָלַ֨יִ/ךְ֙ הֲמ֣וֹן יָ֔ם חֵ֥יל גּוֹיִ֖ם יָבֹ֥אוּ לָֽ/ךְ׃",
+        "LXX": "τότε ὄψῃ, καὶ φοβηθήσῃ καὶ ἐκστήσῃ τῇ καρδίᾳ, ὅτι μεταβαλεῖ εἰς σὲ πλοῦτος θαλάσσης καὶ ἐθνῶν καὶ λαῶν. καὶ ἥξουσίν σοι",
+        "VUL": "Tunc videbis, et afflues ;/ mirabitur et dilatabitur cor tuum :/ quando conversa fuerit ad te multitudo maris ;/ fortitudo gentium venerit tibi./",
+        "SYN": "Тогда увидишь, и возрадуешься, и затрепещет и расширится сердце твое, потому что богатство моря обратится к тебе, достояние народов придет к тебе.",
+        "NEO": "Tu le verras alors, et tu seras radieuse ; ton cœur tressaillira et se dilatera ; car les richesses de la mer se dirigeront vers toi, les trésors des nations viendront à toi.",
+        "NAB": "Then you shall be radiant at what you see, your heart shall throb and overflow, For the riches of the sea shall be emptied out before you, the wealth of nations shall be brought to you.",
+        "VAT_ES": "&iquest;Es este acaso el ayuno que yo amo, el día en que el hombre se aflige a sí mismo? Doblar la cabeza como un junco, tenderse sobre el cilicio y la ceniza: &iquest;a eso llamas ayuno y día aceptable al Señor?",
+        "CEI": "A quella vista sarai raggiante, palpiterà e si dilaterà il tuo cuore, perché le ricchezze del mare si riverseranno su di te, verranno a te i beni dei popoli."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "שִֽׁפְעַ֨ת גְּמַלִּ֜ים תְּכַסֵּ֗/ךְ בִּכְרֵ֤י מִדְיָן֙ וְ/עֵיפָ֔ה כֻּלָּ֖/ם מִ/שְּׁבָ֣א יָבֹ֑אוּ זָהָ֤ב וּ/לְבוֹנָה֙ יִשָּׂ֔אוּ וּ/תְהִלֹּ֥ת יְהוָ֖ה יְבַשֵּֽׂרוּ׃",
+        "LXX": "ἀγέλαι καμήλων, καὶ καλύψουσίν σε κάμηλοι Μαδιὰμ καὶ Γαιφά· πάντες ἐκ Σαβὰ ἥξουσιν φέροντες χρυσίον, καὶ λίβανον οἴσουσιν, καὶ τὸ σωτήριον Κυρίου εὐαγγελιοῦνται·",
+        "VUL": "Inundatio camelorum operiet te,/ dromedarii Madian et Epha ;/ omnes de Saba venient,/ aurum et thus deferentes,/ et laudem Domino annuntiantes./",
+        "SYN": "Множество верблюдов покроет тебя - дромадеры из Мадиама и Ефы; все они из Савы придут, принесут золото и ладан и возвестят славу Господа.",
+        "NEO": "Des multitudes de chameaux te couvriront, les dromadaires de Madian et d’Epha ; tous ceux de Saba viendront, ils apporteront de l’or et de l’encens, et publieront les louanges de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Caravans of camels shall fill you, dromedaries from Midian and Ephah; All from Sheba shall come bearing gold and frankincense, and proclaiming the praises of the LORD.",
+        "VAT_ES": "Este es el ayuno que yo amo –oráculo del Señor–: soltar las cadenas injustas, desatar los lazos del yugo, dejar en libertad a los oprimidos y romper todos los yugos;",
+        "CEI": "Uno stuolo di cammelli ti invaderà, dromedari di Madian e di Efa, tutti verranno da Saba, portando oro e incenso e proclamando le glorie del Signore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כָּל צֹ֤אן קֵדָר֙ יִקָּ֣בְצוּ לָ֔/ךְ אֵילֵ֥י נְבָי֖וֹת יְשָׁרְת֑וּ/נֶךְ יַעֲל֤וּ עַל רָצוֹן֙ מִזְבְּחִ֔/י וּ/בֵ֥ית תִּפְאַרְתִּ֖/י אֲפָאֵֽר׃",
+        "LXX": "καὶ πάντα τὰ πρόβατα Κηδὰρ συναχθήσονται, καὶ κριοὶ Ναβαιὼθ ἥξουσιν, καὶ ἀνενεχθήσεται δεκτὰ ἐπὶ τὸ θυσιαστήριόν μου, καὶ ὁ οἶκος τῆς προσευχῆς μου δοξασθήσεται.",
+        "VUL": "Omne pecus Cedar congregabitur tibi ;/ arietes Nabaioth ministrabunt tibi :/ offerentur super placabili altari meo,/ et domum majestatis meæ glorificabo./",
+        "SYN": "Все овцы Кидарские будут собраны к тебе; овны Неваиофские послужат тебе: взойдут на алтарь Мой жертвою благоугодною, и Я прославлю дом славы Моей.",
+        "NEO": "Tous les troupeaux de Cédar se rassembleront chez toi ; les béliers de Nabaïoth seront à ton service ; ils monteront sur mon autel comme une offrande agréable, et je glorifierai la maison de ma gloire.",
+        "NAB": "All the flocks of Kedar shall be gathered for you, the rams of Nebaioth shall be your sacrifices; They will be acceptable offerings on my altar, and I will enhance the splendor of my house.",
+        "VAT_ES": "compartir tu pan con el hambriento y albergar a los pobres sin techo; cubrir al que veas desnudo y no despreocuparte de tu propia carne.",
+        "CEI": "Tutti i greggi di Kedàr si raduneranno da te, i montoni dei Nabatei saranno a tuo servizio, saliranno come offerta gradita sul mio altare; renderò splendido il tempio della mia gloria."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "מִי אֵ֖לֶּה כָּ/עָ֣ב תְּעוּפֶ֑ינָה וְ/כַ/יּוֹנִ֖ים אֶל אֲרֻבֹּתֵי/הֶֽם׃",
+        "LXX": "τίνες οἵδε ὡς νεφέλαι πέτονται, καὶ ὡς περιστεραὶ σὺν νοσσοῖς ἐπ’ ἐμέ;",
+        "VUL": "Qui sunt isti qui ut nubes volant,/ et quasi columbæ ad fenestras suas ?/",
+        "SYN": "Кто это летят, как облака, и как голуби - к голубятням своим?",
+        "NEO": "Qui sont ceux-là qui volent comme des nuées, comme des colombes vers leur colombier ?",
+        "NAB": "What are these that fly along like clouds, like doves to their cotes?",
+        "VAT_ES": "Entonces despuntará tu luz como la aurora y tu llaga no tardará en cicatrizar; delante de ti avanzará tu justicia y detrás de ti irá la gloria del Señor.",
+        "CEI": "Chi sono quelle che volano come nubi e come colombe verso le loro colombaie?"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "כִּֽי לִ֣/י אִיִּ֣ים יְקַוּ֗וּ וָ/אֳנִיּ֤וֹת תַּרְשִׁישׁ֙ בָּ/רִ֣אשֹׁנָ֔ה לְ/הָבִ֤יא בָנַ֨יִ/ךְ֙ מֵֽ/רָח֔וֹק כַּסְפָּ֥/ם וּ/זְהָבָ֖/ם אִתָּ֑/ם לְ/שֵׁם֙ יְהוָ֣ה אֱלֹהַ֔יִ/ךְ וְ/לִ/קְד֥וֹשׁ יִשְׂרָאֵ֖ל כִּ֥י פֵאֲרָֽ/ךְ׃",
+        "LXX": "ἐμὲ αἱ νῆσοι ὑπέμειναν καὶ πλοῖα Θαρσεὶς ἐν πρώτοις, ἀγαγεῖν τὰ τέκνα σου μακρόθεν καὶ τὸν ἄργυρον καὶ τὸν χρυσὸν αὐτῶν μετ’ αὐτῶν, καὶ τὸ ὄνομα Κυρίου τὸ ἅγιον, καὶ διὰ τὸ τὸν ἅγιον τοῦ Ἰσραὴλ ἔνδοξον εἶναι.",
+        "VUL": "Me enim insulæ exspectant,/ et naves maris in principio,/ ut adducam filios tuos de longe ;/ argentum eorum, et aurum eorum cum eis,/ nomini Domini Dei tui,/ et Sancto Israël, quia glorificavit te./",
+        "SYN": "Так, Меня ждут острова и впереди их - корабли Фарсисские, чтобы перевезти сынов твоих издалека и с ними серебро их и золото их, во имя Господа Бога твоего и Святаго Израилева, потому что Он прославил тебя.",
+        "NEO": "Car les îles espèrent en moi, et les vaisseaux de Tarsis viendront les premiers ;",
+        "NAB": "All the vessels of the sea are assembled, with the ships of Tarshish in the lead, To bring your children from afar with their silver and gold, In the name of the LORD, your God, the Holy One of Israel, who has glorified you.",
+        "VAT_ES": "Entonces llamarás, y el Señor responderá; pedirás auxilio, y él dirá: «&iexcl;Aquí estoy!». Si eliminas de ti todos los yugos, el gesto amenazador y la palabra maligna;",
+        "CEI": "Sono navi che si radunano per me, le navi di Tarsis in prima fila, per portare i tuoi figli da lontano, con argento e oro, per il nome del Signore tuo Dio, per il Santo di Israele che ti onora."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וּ/בָנ֤וּ בְנֵֽי נֵכָר֙ חֹמֹתַ֔יִ/ךְ וּ/מַלְכֵי/הֶ֖ם יְשָׁרְת֑וּ/נֶךְ כִּ֤י בְ/קִצְפִּ/י֙ הִכִּיתִ֔י/ךְ וּ/בִ/רְצוֹנִ֖/י רִֽחַמְתִּֽי/ךְ׃",
+        "LXX": "καὶ οἰκοδομήσουσιν ἀλλογενεῖς τὰ τείχη σου, καὶ οἱ βασιλεῖς αὐτῶν παραστήσονταί σοι· διὰ γὰρ ὀργήν μου ἐπάταξά σε, καὶ διὰ ἔλεον ἠγάπησά σε.",
+        "VUL": "Et ædificabunt filii peregrinorum muros tuos,/ et reges eorum ministrabunt tibi ;/ in indignatione enim mea percussi te,/ et in reconciliatione mea misertus sum tui./",
+        "SYN": "Тогда сыновья иноземцев будут строить стены твои, и цари их - служить тебе; ибо во гневе Моем Я поражал тебя, но в благоволении Моем буду милостив к тебе.",
+        "NEO": "Les fils de l’étranger rebâtiront tes murailles, et leurs rois seront tes serviteurs ; car je t’ai frappée dans ma colère, mais, dans ma bienveillance, j’ai eu compassion de toi.",
+        "NAB": "Foreigners shall rebuild your walls, and their kings shall be your attendants; Though I struck you in my wrath, yet in my good will I have shown you mercy.",
+        "VAT_ES": "si ofreces tu pan al hambriento y sacias al que vive en la penuria, tu luz se alzará en las tinieblas y tu oscuridad será como al mediodía,",
+        "CEI": "Stranieri ricostruiranno le tue mura, i loro re saranno al tuo servizio, perché nella mia ira ti ho colpito, ma nella mia benevolenza ho avuto pietà di te."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/פִתְּח֨וּ שְׁעָרַ֧יִ/ךְ תָּמִ֛יד יוֹמָ֥ם וָ/לַ֖יְלָה לֹ֣א יִסָּגֵ֑רוּ לְ/הָבִ֤יא אֵלַ֨יִ/ךְ֙ חֵ֣יל גּוֹיִ֔ם וּ/מַלְכֵי/הֶ֖ם נְהוּגִֽים׃",
+        "LXX": "καὶ ἀνοιχθήσονται αἱ πύλαι σου διὰ παντός, ἡμέρας καὶ νυκτὸς οὐ κλεισθήσονται, εἰσαγαγεῖν πρὸς σὲ δύναμιν ἐθνῶν καὶ βασιλεῖς αὐτῶν ἀγομένους.",
+        "VUL": "Et aperientur portæ tuæ jugiter ;/ die ac nocte non claudentur,/ ut afferatur ad te fortitudo gentium,/ et reges earum adducantur./",
+        "SYN": "И будут всегда отверсты врата твои, не будут затворяться ни днем ни ночью, чтобы приносимо было к тебе достояние народов и приводимы были цари их.",
+        "NEO": "Tes portes seront toujours ouvertes ; jour et nuit, elles ne seront pas fermées, afin de laisser entrer chez toi les trésors des nations et leurs rois en cortège triomphal.",
+        "NAB": "Your gates shall stand open constantly; day and night they shall not be closed But shall admit to you the wealth of nations, and their kings, in the vanguard.",
+        "VAT_ES": "El Señor te guiará incesantemente, te saciará en los ardores del desierto y llenará tus huesos de vigor; tú serás como un jardín bien regado, como una vertiente de agua, cuyas aguas nunca se agotan.",
+        "CEI": "Le tue porte saranno sempre aperte, non si chiuderanno né di giorno né di notte, per lasciar introdurre da te le ricchezze dei popoli e i loro re che faranno da guida."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כִּֽי הַ/גּ֧וֹי וְ/הַ/מַּמְלָכָ֛ה אֲשֶׁ֥ר לֹא יַעַבְד֖וּ/ךְ יֹאבֵ֑דוּ וְ/הַ/גּוֹיִ֖ם חָרֹ֥ב יֶחֱרָֽבוּ׃",
+        "LXX": "τὰ γὰρ ἔθνη καὶ οἱ βασιλεῖς οἵτινες οὐ δουλεύσουσίν σοι ἀπολοῦνται, καὶ τὰ ἔθνη ἐρημίᾳ ἐρημωθήσεται.",
+        "VUL": "Gens enim et regnum quod non servierit tibi peribit,/ et gentes solitudine vastabuntur./",
+        "SYN": "Ибо народ и царства, которые не захотят служить тебе, - погибнут, и такие народы совершенно истребятся.",
+        "NEO": "Car la nation et le royaume qui ne te serviront pas périront ; ces nations-là seront entièrement détruites.",
+        "NAB": "For the people or kingdom shall perish that does not serve you; those nations shall be utterly destroyed.",
+        "VAT_ES": "Reconstruirás las ruinas antiguas, restaurarás los cimientos seculares, y te llamarán «Reparador de brechas», «Restaurador de moradas en ruinas».",
+        "CEI": "Perché il popolo e il regno che non vorranno servirti periranno e le nazioni saranno tutte sterminate."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כְּב֤וֹד הַ/לְּבָנוֹן֙ אֵלַ֣יִ/ךְ יָב֔וֹא בְּר֛וֹשׁ תִּדְהָ֥ר וּ/תְאַשּׁ֖וּר יַחְדָּ֑ו לְ/פָאֵר֙ מְק֣וֹם מִקְדָּשִׁ֔/י וּ/מְק֥וֹם רַגְלַ֖/י אֲכַבֵּֽד׃",
+        "LXX": "καὶ ἡ δόξα τοῦ Λιβάνου πρὸς σὲ ἥξει ἐν κυπαρίσσῳ καὶ πεύκῃ καὶ κέδρῳ ἅμα, δοξάσαι τὸν τόπον τὸν ἅγιόν μου.",
+        "VUL": "Gloria Libani ad te veniet,/ abies, et buxus, et pinus simul/ ad ornandum locum sanctificationis meæ ;/ et locum pedum meorum glorificabo./",
+        "SYN": "Слава Ливана придет к тебе, кипарис и певг и вместе кедр, чтобы украсить место святилища Моего, и Я прославлю подножие ног Моих.",
+        "NEO": "La gloire du Liban viendra chez toi, le cyprès, le platane et le buis tous ensemble, pour orner le lieu de mon sanctuaire, et je glorifierai le lieu où reposent mes pieds.",
+        "NAB": "The glory of Lebanon shall come to you: the cypress, the plane and the pine, To bring beauty to my sanctuary, and glory to the place where I set my feet.",
+        "VAT_ES": "Si dejas de pisotear el sábado, de hacer tus negocios en mi día santo; si llamas al sábado «Delicioso» y al día santo del Señor «Honorable»; si lo honras absteniéndote de traficar, de entregarte a tus negocios y de hablar ociosamente,",
+        "CEI": "La gloria del Libano verrà a te, cipressi, olmi e abeti insieme, per abbellire il luogo del mio santuario, per glorificare il luogo dove poggio i miei piedi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/הָלְכ֨וּ אֵלַ֤יִ/ךְ שְׁח֨וֹחַ֙ בְּנֵ֣י מְעַנַּ֔יִ/ךְ וְ/הִֽשְׁתַּחֲו֛וּ עַל כַּפּ֥וֹת רַגְלַ֖יִ/ךְ כָּל מְנַֽאֲצָ֑יִ/ךְ וְ/קָ֤רְאוּ לָ/ךְ֙ עִ֣יר יְהוָ֔ה צִיּ֖וֹן קְד֥וֹשׁ יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ πορεύσονται πρὸς σὲ δεδοικότες υἱοὶ ταπεινωσάντων σε καὶ παροξυνάντων σε, καὶ κληθήσῃ Πόλις Κυρίου, Σειὼν Ἁγίου Ἰσραήλ.",
+        "VUL": "Et venient ad te curvi filii eorum qui humiliaverunt te,/ et adorabunt vestigia pedum tuorum omnes qui detrahebant tibi :/ et vocabunt te civitatem Domini,/ Sion Sancti Israël./",
+        "SYN": "И придут к тебе с покорностью сыновья угнетавших тебя, и падут к стопам ног твоих все, презиравшие тебя, и назовут тебя городом Господа, Сионом Святаго Израилева.",
+        "NEO": "Les fils de tes oppresseurs viendront à toi le front courbé, et tous ceux qui te méprisaient se prosterneront à tes pieds ; et l’on t’appellera la Ville de \\+w Yahweh|strong=\"H3068\"\\+w**, la Sion du Saint d’Israël.",
+        "NAB": "The children of your oppressors shall come, bowing low before you; All those who despised you shall fall prostrate at your feet. They shall call you \"City of the LORD,\" \"Zion of the Holy One of Israel.\"",
+        "VAT_ES": "entonces te deleitarás en el Señor; yo te haré cabalgar sobre las alturas del país y te alimentaré con la herencia de tu padre Jacob, porque ha hablado la boca del Señor.",
+        "CEI": "Verranno a te in atteggiamento umile i figli dei tuoi oppressori; ti si getteranno proni alle piante dei piedi quanti ti disprezzavano. Ti chiameranno Città del Signore, Sion del Santo di Israele."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "תַּ֧חַת הֱיוֹתֵ֛/ךְ עֲזוּבָ֥ה וּ/שְׂנוּאָ֖ה וְ/אֵ֣ין עוֹבֵ֑ר וְ/שַׂמְתִּי/ךְ֙ לִ/גְא֣וֹן עוֹלָ֔ם מְשׂ֖וֹשׂ דּ֥וֹר וָ/דֽוֹר׃",
+        "LXX": "διὰ τὸ γεγενῆσθαί σε ἐνκαταλελιμμένην καὶ μεμισημένην, καὶ οὐκ ἦν ὁ βοηθῶν· καὶ θήσω σε ἀγαλλίαμα αἰώνιον, εὐφροσύνην γενεῶν γενεαῖς.",
+        "VUL": "Pro eo quod fuisti derelicta/ et odio habita,/ et non erat qui per te transiret :/ ponam te in superbiam sæculorum,/ gaudium in generationem et generationem :/",
+        "SYN": "Вместо того, что ты был оставлен и ненавидим, так что никто не проходил чрез _тебя,_ Я соделаю тебя величием навеки, радостью в роды родов.",
+        "NEO": "Au lieu que tu étais délaissée, haïe et solitaire, je ferai de toi l’orgueil des siècles, la joie de toutes les générations.",
+        "NAB": "Once you were forsaken, hated and unvisited, Now I will make you the pride of the ages, a joy to generation after generation.",
+        "CEI": "Dopo essere stata derelitta, odiata, senza che alcuno passasse da te, io farò di te l'orgoglio dei secoli, la gioia di tutte le generazioni."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/יָנַקְתְּ֙ חֲלֵ֣ב גּוֹיִ֔ם וְ/שֹׁ֥ד מְלָכִ֖ים תִּינָ֑קִי וְ/יָדַ֗עַתְּ כִּ֣י אֲנִ֤י יְהוָה֙ מֽוֹשִׁיעֵ֔/ךְ וְ/גֹאֲלֵ֖/ךְ אֲבִ֥יר יַעֲקֹֽב׃",
+        "LXX": "καὶ θηλάσεις γάλα ἐθνῶν, καὶ πλοῦτον βασιλέων φάγεσαι, καὶ γνώσῃ ὅτι ἐγὼ Κύριος ὁ σώζων σε, καὶ ἐξαιρούμενός σε θεὸς Ἰσραήλ.",
+        "VUL": "et suges lac gentium,/ et mamilla regum lactaberis ;/ et scies quia ego Dominus salvans te,/ et redemptor tuus, Fortis Jacob./",
+        "SYN": "Ты будешь насыщаться молоком народов, и груди царские сосать будешь, и узнаешь, что Я Господь - Спаситель твой и Искупитель твой, Сильный Иаковлев.",
+        "NEO": "Tu suceras le lait des nations, tu suceras la mamelle des rois, et tu sauras que moi, \\+w Yahweh|strong=\"H3068\"\\+w**, je suis ton Sauveur, et que le Puissant de Jacob est ton Rédempteur.",
+        "NAB": "You shall suck the milk of nations, and be nursed at royal breasts; You shall know that I, the LORD, am your savior, your redeemer, the Mighty One of Jacob.",
+        "CEI": "Tu succhierai il latte dei popoli, succhierai le ricchezze dei re. Saprai che io sono il Signore tuo salvatore e tuo redentore, io il Forte di Giacobbe."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "תַּ֣חַת הַ/נְּחֹ֜שֶׁת אָבִ֣יא זָהָ֗ב וְ/תַ֤חַת הַ/בַּרְזֶל֙ אָ֣בִיא כֶ֔סֶף וְ/תַ֤חַת הָֽ/עֵצִים֙ נְחֹ֔שֶׁת וְ/תַ֥חַת הָ/אֲבָנִ֖ים בַּרְזֶ֑ל וְ/שַׂמְתִּ֤י פְקֻדָּתֵ/ךְ֙ שָׁל֔וֹם וְ/נֹגְשַׂ֖יִ/ךְ צְדָקָֽה׃",
+        "LXX": "ἀντὶ χαλκοῦ οἴσω σοι χρυσίον, ἀντὶ δὲ σιδήρου οἴσω σοι ἀργύριον, ἀντὶ δὲ ξύλων οἴσω σοι χαλκόν, ἀντὶ δὲ λίθων σίδηρον. καὶ δώσω τοὺς ἄρχοντάς σου ἐν εἰρήνῃ, καὶ τοὺς ἐπισκόπους σου ἐν δικαιοσύνῃ·",
+        "VUL": "Pro ære afferam aurum,/ et pro ferro afferam argentum,/ et pro lignis æs,/ et pro lapidibus ferrum :/ et ponam visitationem tuam pacem,/ et præpositos tuos justitiam./",
+        "SYN": "Вместо меди буду доставлять тебе золото, и вместо железа серебро, и вместо дерева медь, и вместо камней железо; и поставлю правителем твоим мир и надзирателями твоими - правду.",
+        "NEO": "Au lieu de l’airain, je ferai venir de l’or, et au lieu du fer, je ferai venir de l’argent ; et au lieu du bois, de l’airain, et au lieu des pierres, du fer ; et je te donnerai pour gouverneurs, la paix, pour magistrats, la justice.",
+        "NAB": "In place of bronze I will bring gold, instead of iron, silver; In place of wood, bronze, instead of stones, iron; I will appoint peace your governor, and justice your ruler.",
+        "CEI": "Farò venire oro anziché bronzo, farò venire argento anziché ferro, bronzo anziché legno, ferro anziché pietre. Costituirò tuo sovrano la pace, tuo governatore la giustizia."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "לֹא יִשָּׁמַ֨ע ע֤וֹד חָמָס֙ בְּ/אַרְצֵ֔/ךְ שֹׁ֥ד וָ/שֶׁ֖בֶר בִּ/גְבוּלָ֑יִ/ךְ וְ/קָרָ֤את יְשׁוּעָה֙ חוֹמֹתַ֔יִ/ךְ וּ/שְׁעָרַ֖יִ/ךְ תְּהִלָּֽה׃",
+        "LXX": "καὶ οὐκ ἀκουσθήσεται ἔτι ἀδικία ἐν τῇ γῇ σου, οὐδὲ σύντριμμα οὐδὲ ταλαιπωρία ἐν τοῖς ὁρίοις σου, ἀλλά κληθήσεται Σωτήριον τὰ τείχη σου, καὶ αἱ πύλαι σου Γλύμμα.",
+        "VUL": "Non audietur ultra iniquitas in terra tua ;/ vastitas et contritio in terminis tuis :/ et occupabit salus muros tuos,/ et portas tuas laudatio./",
+        "SYN": "Не слышно будет более насилия в земле твоей, опустошения и разорения - в пределах твоих; и будешь называть стены твои спасением и ворота твои - славою.",
+        "NEO": "On n’entendra plus parler de violence dans ton pays, de ravage ni de ruine dans tes frontières ; tu appelleras tes murailles : Salut, et tes portes : Louange.",
+        "NAB": "No longer shall violence be heard of in your land, or plunder and ruin within your boundaries. You shall call your walls \"Salvation\" and your gates \"Praise.\"",
+        "CEI": "Non si sentirà più parlare di prepotenza nel tuo paese, di devastazione e di distruzione entro i tuoi confini. Tu chiamerai salvezza le tue mura e gloria le tue porte."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "לֹא יִֽהְיֶה לָּ֨/ךְ ע֤וֹד הַ/שֶּׁ֨מֶשׁ֙ לְ/א֣וֹר יוֹמָ֔ם וּ/לְ/נֹ֕גַהּ הַ/יָּרֵ֖חַ לֹא יָאִ֣יר לָ֑/ךְ וְ/הָיָה לָ֤/ךְ יְהוָה֙ לְ/א֣וֹר עוֹלָ֔ם וֵ/אלֹהַ֖יִ/ךְ לְ/תִפְאַרְתֵּֽ/ךְ׃",
+        "LXX": "καὶ οὐκ ἔσται σοι ἔτι ὁ ἥλιος εἰς φῶς ἡμέρας, οὐδὲ ἀνατολὴ σελήνης φωτιεῖ σοι τὴν νύκτα, ἀλλ’ ἔσται σοι Κύριος φῶς αἰώνιον, καὶ ὁ θεὸς δόξα σου.",
+        "VUL": "Non erit tibi amplius sol ad lucendum per diem,/ nec splendor lunæ illuminabit te :/ sed erit tibi Dominus in lucem sempiternam,/ et Deus tuus in gloriam tuam./",
+        "SYN": "Не будет уже солнце служить тебе светом дневным, и сияние луны - светить тебе; но Господь будет тебе вечным светом, и Бог твой - славою твоею.",
+        "NEO": "Le soleil ne sera plus ta lumière pendant le jour, et la lueur de la lune ne t’éclairera plus ; \\+w Yahweh|strong=\"H3068\"\\+w** sera pour toi une lumière éternelle, et ton Dieu sera ta gloire.",
+        "NAB": "No longer shall the sun be your light by day, Nor the brightness of the moon shine upon you at night; The LORD shall be your light forever, your God shall be your glory.",
+        "CEI": "Il sole non sarà più la tua luce di giorno, né ti illuminerà più il chiarore della luna. Ma il Signore sarà per te luce eterna, il tuo Dio sarà il tuo splendore."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "לֹא יָב֥וֹא עוֹד֙ שִׁמְשֵׁ֔/ךְ וִ/ירֵחֵ֖/ךְ לֹ֣א יֵאָסֵ֑ף כִּ֣י יְהוָ֗ה יִֽהְיֶה לָּ/ךְ֙ לְ/א֣וֹר עוֹלָ֔ם וְ/שָׁלְמ֖וּ יְמֵ֥י אֶבְלֵֽ/ךְ׃",
+        "LXX": "οὐ γὰρ δύσεται ὁ ἥλιός σοι, καὶ ἡ σελήνη σοι οὐκ ἐκλείψει· ἔσται γὰρ Κύριός σοι φῶς αἰώνιον, καὶ ἀναπληρωθήσονται αἱ ἡμέραι τοῦ πένθους σου.",
+        "VUL": "Non occidet ultra sol tuus,/ et luna tua non minuetur,/ quia erit tibi Dominus in lucem sempiternam,/ et complebuntur dies luctus tui./",
+        "SYN": "Не зайдет уже солнце твое, и луна твоя не сокроется, ибо Господь будет для тебя вечным светом, и окончатся дни сетования твоего.",
+        "NEO": "Ton soleil ne se couchera plus, et ta lune ne se retirera plus ; car \\+w Yahweh|strong=\"H3068\"\\+w** sera pour toi une lumière éternelle, et les jours de ton deuil seront achevés.",
+        "NAB": "No longer shall your sun go down, or your moon withdraw, For the LORD will be your light forever, and the days of your mourning shall be at an end.",
+        "CEI": "Il tuo sole non tramonterà più né la tua luna si dileguerà, perché il Signore sarà per te luce eterna; saranno finiti i giorni del tuo lutto."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/עַמֵּ/ךְ֙ כֻּלָּ֣/ם צַדִּיקִ֔ים לְ/עוֹלָ֖ם יִ֣ירְשׁוּ אָ֑רֶץ נֵ֧צֶר מטע/ו מַטָּעַ֛/י מַעֲשֵׂ֥ה יָדַ֖/י לְ/הִתְפָּאֵֽר׃",
+        "LXX": "καὶ ὁ λαός σου πᾶς δίκαιος, δι’ αἰῶνος κληρονομήσουσιν τὴν γῆν, φυλάσσων τὸ φύτευμα, ἔργα χειρῶν αὐτοῦ εἰς δόξαν.",
+        "VUL": "Populus autem tuus omnes justi ;/ in perpetuum hæreditabunt terram :/ germen plantationis meæ,/ opus manus meæ ad glorificandum./",
+        "SYN": "И народ твой весь будет праведный, на веки наследует землю, - отрасль насаждения Моего, дело рук Моих, к прославлению Моему.",
+        "NEO": "Dans ton peuple, tous seront justes, et ils posséderont le pays pour toujours, eux, le rejeton que j’ai planté, l’ouvrage de mes mains, créé pour ma gloire.",
+        "NAB": "Your people shall all be just, they shall always possess the land, They, the bud of my planting, my handiwork to show my glory.",
+        "CEI": "Il tuo popolo sarà tutto di giusti, per sempre avranno in possesso la terra, germogli delle piantagioni del Signore, lavoro delle sue mani per mostrare la sua gloria."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "הַ/קָּטֹן֙ יִֽהְיֶ֣ה לָ/אֶ֔לֶף וְ/הַ/צָּעִ֖יר לְ/ג֣וֹי עָצ֑וּם אֲנִ֥י יְהוָ֖ה בְּ/עִתָּ֥/הּ אֲחִישֶֽׁ/נָּה׃",
+        "LXX": "ὁ ὀλιγοστὸς ἔσται εἰς χιλιάδας, καὶ ὁ ἐλάχιστος εἰς ἔθνος μέγα· ἐγὼ Κύριος κατὰ καιρὸν συνάξω αὐτούς.",
+        "VUL": "Minimus erit in mille,/ et parvulus in gentem fortissimam./ Ego Dominus in tempore ejus/ subito faciam istud.]",
+        "SYN": "От малого произойдет тысяча, и от самого слабого - сильный народ. Я, Господь, ускорю совершить это в свое время.",
+        "NEO": "Le plus petit deviendra un millier, et le moindre une nation puissante. Moi, \\+w Yahweh|strong=\"H3068\"\\+w**, en leur temps, je hâterai ces choses.",
+        "NAB": "The smallest shall become a thousand, the youngest, a mighty nation; I, the LORD, will swiftly accomplish these things when their time comes.",
+        "CEI": "Il piccolo diventerà un migliaio, il minimo un immenso popolo; io sono il Signore: a suo tempo, farò ciò speditamente."
+      }
+    }
+  }
+}

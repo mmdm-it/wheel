@@ -1,0 +1,8 @@
+:root[data-theme="bible"] {
+  --color-bg: #d4a574;
+  --color-nodes: #8b6f47;
+  --color-text: #000000;
+  --color-band: #7a7979;
+  --focus-node-font: 'Montserrat', sans-serif;
+  --magnifier-font: 'Montserrat', sans-serif;
+}

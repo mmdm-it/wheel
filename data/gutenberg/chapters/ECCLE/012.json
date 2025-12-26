@@ -1,0 +1,267 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLE_012",
+  "book_key": "ECCLE",
+  "sequence": 12,
+  "chapter_in": {
+    "MT": 12,
+    "VUL": 12,
+    "LXX": 12
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וּ/זְכֹר֙ אֶת בּ֣וֹרְאֶ֔י/ךָ בִּ/ימֵ֖י בְּחוּרֹתֶ֑י/ךָ עַ֣ד אֲשֶׁ֤ר לֹא יָבֹ֨אוּ֙ יְמֵ֣י הָֽ/רָעָ֔ה וְ/הִגִּ֣יעוּ שָׁנִ֔ים אֲשֶׁ֣ר תֹּאמַ֔ר אֵֽין לִ֥/י בָ/הֶ֖ם חֵֽפֶץ׃",
+        "LXX": "καὶ μνήσθητι τοῦ κτίσαντός σε ἐν ἡμέραις νεότητός σου, ἕως ὅτου μὴ ἔλθωσιν αἱ ἡμέραι τῆς κακίας, καὶ φθάσουσιν ἔτη ἐν οἷς ἐρεῖς· Οὐκ ἔστιν μοι ἐν αὐτοῖς θέλημα·",
+        "VUL": "[Memento Creatoris tui in diebus juventutis tuæ,/ antequam veniat tempus afflictionis,/ et appropinquent anni de quibus dicas :/ Non mihi placent ;/",
+        "SYN": "И помни Создателя твоего в дни юности твоей, доколе не пришли тяжелые дни и не наступили годы, о которых ты будешь говорить: \"нет мне удовольствия в них!\"",
+        "NEO": "Et souviens-toi de ton créateur aux jours de ta jeunesse, avant que viennent les jours mauvais et qu’approchent les années dont tu diras : « Je n’y ai pas de plaisir ; »",
+        "NAB": "Remember your Creator in the days of your youth, before the evil days come And the years approach of which you will say, I have no pleasure in them;",
+        "VAT_ES": "Acuérdate de tu Creador en los días de tu juventud, antes que lleguen los días penosos y vengan los años en los que dirás: «No encuentro en ellos ningún placer»;",
+        "CEI": "Ricòrdati del tuo creatore nei giorni della tua giovinezza, prima che vengano i giorni tristi e giungano gli anni di cui dovrai dire: \"Non ci provo alcun gusto\","
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עַ֠ד אֲשֶׁ֨ר לֹֽא תֶחְשַׁ֤ךְ הַ/שֶּׁ֨מֶשׁ֙ וְ/הָ/א֔וֹר וְ/הַ/יָּרֵ֖חַ וְ/הַ/כּוֹכָבִ֑ים וְ/שָׁ֥בוּ הֶ/עָבִ֖ים אַחַ֥ר הַ/גָּֽשֶׁם׃",
+        "LXX": "ἕως οὗ μὴ σκοτισθῇ ὁ ἥλιος καὶ τὸ φῶς καὶ ἡ σελήνη καὶ οἱ ἀστέρες, καὶ ἐπιστρέψουσιν τὰ νέφη ὀπίσω τοῦ ὑετοῦ·",
+        "VUL": "antequam tenebrescat sol, et lumen, et luna, et stellæ,/ et revertantur nubes post pluviam ;/",
+        "SYN": "доколе не померкли солнце и свет и луна и звезды, и не нашли новые тучи вслед за дождем.",
+        "NEO": "avant que s’obscurcissent le soleil et la lumière, et la lune et les étoiles, et que les nuages reviennent après la pluie ;",
+        "NAB": "Before the sun is darkened. and the light, and the moon, and the stars, while the clouds return after the rain;",
+        "VAT_ES": "antes que se oscurezcan el sol y la luz, la luna y las estrellas, y vuelvan las nubes cargadas de lluvia.",
+        "CEI": "prima che si oscuri il sole, la luce, la luna e le stelle e ritornino le nubi dopo la pioggia;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "בַּ/יּ֗וֹם שֶׁ/יָּזֻ֨עוּ֙ שֹׁמְרֵ֣י הַ/בַּ֔יִת וְ/הִֽתְעַוְּת֖וּ אַנְשֵׁ֣י הֶ/חָ֑יִל וּ/בָטְל֤וּ הַ/טֹּֽחֲנוֹת֙ כִּ֣י מִעֵ֔טוּ וְ/חָשְׁכ֥וּ הָ/רֹא֖וֹת בָּ/אֲרֻבּֽוֹת׃",
+        "LXX": "ἐν ἡμέρᾳ ᾗ ἐὰν σαλευθῶσιν φύλακες τῆς οἰκίας, καὶ διαστραφῶσιν ἄνδρες τῆς δυνάμεως, καὶ ἤργησαν αἱ ἀλήθουσαι ὅτι ὠλιγώθησαν, καὶ σκοτάσουσιν αἱ βλέπουσαι ἐν ταῖς ὀπαῖς·",
+        "VUL": "quando commovebuntur custodes domus,/ et nutabunt viri fortissimi,/ et otiosæ erunt molentes in minuto numero,/ et tenebrescent videntes per foramina ;/",
+        "SYN": "В тот день, когда задрожат стерегущие дом и согнутся мужи силы; и перестанут молоть мелющие, потому что их немного осталось; и помрачатся смотрящие в окно;",
+        "NEO": "au jour où tremblent les gardiens de la maison, où se courbent les hommes forts, où celles qui moulent s’arrêtent parce que leur nombre est diminué, où s’obscurcissent celles qui regardent par les fenêtres,",
+        "NAB": "When the guardians of the house tremble, and the strong men are bent, And the grinders are idle because they are few, and they who look through the windows grow blind;",
+        "VAT_ES": "En aquel día temblarán los guardianes de la casa y se encorvarán los hombres vigorosos; se detendrán las moledoras, que ya serán pocas, y se oscurecerán las que miran por las ventanas;",
+        "CEI": "quando tremeranno i custodi della casa e si curveranno i gagliardi e cesseranno di lavorare le donne che macinano, perché rimaste in poche, e si offuscheranno quelle che guardano dalle finestre"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/סֻגְּר֤וּ דְלָתַ֨יִם֙ בַּ/שּׁ֔וּק בִּ/שְׁפַ֖ל ק֣וֹל הַֽ/טַּחֲנָ֑ה וְ/יָקוּם֙ לְ/ק֣וֹל הַ/צִּפּ֔וֹר וְ/יִשַּׁ֖חוּ כָּל בְּנ֥וֹת הַ/שִּֽׁיר׃",
+        "LXX": "καὶ κλείσουσιν θύρας ἐν ἀγορᾷ ἐν ἀσθενείᾳ φωνῆς τῆς ἀληθούσης, καὶ ἀναστήσεται εἰς φωνὴν τοῦ στρουθίου, καὶ ταπεινωθήσονται πᾶσαι αἱ θυγατέρες τοῦ ᾄσματος,",
+        "VUL": "et claudent ostia in platea,/ in humilitate vocis molentis,/ et consurgent ad vocem volucris,/ et obsurdescent omnes filiæ carminis :/",
+        "SYN": "и запираться будут двери на улицу; когда замолкнет звук жернова, и будет вставать _человек_ по крику петуха и замолкнут дщери пения;",
+        "NEO": "où les deux battants de la porte se ferment sur la rue, tandis que s’affaiblit le bruit de la meule ; où l’on se lève au chant de l’oiseau, où disparaissent toutes les filles du chant ;",
+        "NAB": "When the doors to the street are shut, and the sound of the mill is low; When one waits for the chirp of a bird, but all the daughters of song are suppressed;",
+        "VAT_ES": "se cerrarán las puertas de la calle, mientras declina el ruido del molino; cesará el canto de los pájaros y enmudecerán las que entonan canciones.",
+        "CEI": "e si chiuderanno le porte sulla strada; quando si abbasserà il rumore della mola e si attenuerà il cinguettio degli uccelli e si affievoliranno tutti i toni del canto;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "גַּ֣ם מִ/גָּבֹ֤הַּ יִרָ֨אוּ֙ וְ/חַתְחַתִּ֣ים בַּ/דֶּ֔רֶךְ וְ/יָנֵ֤אץ הַ/שָּׁקֵד֙ וְ/יִסְתַּבֵּ֣ל הֶֽ/חָגָ֔ב וְ/תָפֵ֖ר הָֽ/אֲבִיּוֹנָ֑ה כִּֽי הֹלֵ֤ךְ הָ/אָדָם֙ אֶל בֵּ֣ית עוֹלָמ֔/וֹ וְ/סָבְב֥וּ בָ/שּׁ֖וּק הַ/סֹּפְדִֽים׃",
+        "LXX": "καὶ εἰς τὸ ὕψος ὄψονται, καὶ θάμβοι ἐν τῇ ὁδῷ· καὶ ἀνθήσῃ τὸ ἀμύγδαλον, καὶ παχυνθῇ ἡ ἀκρίς, καὶ διασκεδασθῇ ἡ κάππαρις, ὅτι ἐπορεύθη ὁ ἄνθρωπος εἰς οἶκον αἰῶνος αὐτοῦ, καὶ ἐκύκλωσαν ἐν ἀγορᾷ οἱ κοπτόμενοι·",
+        "VUL": "excelsa quoque timebunt, et formidabunt in via./ Florebit amygdalus, impinguabitur locusta,/ et dissipabitur capparis,/ quoniam ibit homo in domum æternitatis suæ,/ et circuibunt in platea plangentes./",
+        "SYN": "и высоты будут им страшны, и на дороге ужасы; и зацветет миндаль, и отяжелеет кузнечик, и рассыплется каперс. Ибо отходит человек в вечный дом свой, и готовы окружить его по улице плакальщицы; -",
+        "NEO": "où l’on redoute les lieux élevés, où l’on a des terreurs dans le chemin, où l’amandier fleurit, où la sauterelle devient pesante, et où la câpre n’a plus d’effet, car l’homme s’en va vers sa maison d’éternité, et les pleureurs parcourent les rues ;",
+        "NAB": "And one fears heights, and perils in the street; When the almond tree blooms, and the locust grows sluggish and the caper berry is without effect, Because man goes to his lasting home, and mourners go about the streets;",
+        "VAT_ES": "Entonces se temerán las cuestas empinadas y los terrores acecharán por el camino. El almendro estará florecido, se pondrá pesada la langosta y la alcaparra perderá su eficacia. Porque el hombre se va a su morada eterna, mientras las plañideras rondan por la calle.",
+        "CEI": "quando si avrà paura delle alture e degli spauracchi della strada; quando fiorirà il mandorlo e la locusta si trascinerà a stento e il cappero non avrà più effetto, poiché l'uomo se ne va nella dimora eterna e i piagnoni si aggirano per la strada;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "עַ֣ד אֲשֶׁ֤ר לֹֽא ירחק יֵרָתֵק֙ חֶ֣בֶל הַ/כֶּ֔סֶף וְ/תָרֻ֖ץ גֻּלַּ֣ת הַ/זָּהָ֑ב וְ/תִשָּׁ֤בֶר כַּד֙ עַל הַ/מַּבּ֔וּעַ וְ/נָרֹ֥ץ הַ/גַּלְגַּ֖ל אֶל הַ/בּֽוֹר׃",
+        "LXX": "ἕως ὅτου μὴ ἀνατραπῇ τὸ σχοινίον τοῦ ἀργυρίου, καὶ συντριβῇ τὸ ἀνθέμιον τοῦ χρυσίου, καὶ συντριβῇ ὑδρεία ἐπὶ τῇ πηγῇ, καὶ συντροχάσῃ ὁ τροχὸς ἐπὶ τὸν λάκκον·",
+        "VUL": "Antequam rumpatur funiculus argenteus,/ et recurrat vitta aurea,/ et conteratur hydria super fontem,/ et confringatur rota super cisternam,/",
+        "SYN": "доколе не порвалась серебряная цепочка, и не разорвалась золотая повязка, и не разбился кувшин у источника, и не обрушилось колесо над колодезем.",
+        "NEO": "avant que se rompe le cordon d’argent, que se brise l’ampoule d’or, que la cruche se casse à la fontaine, que la poulie se brise et roule dans la citerne ;",
+        "NAB": "Before the silver cord is snapped and the golden bowl is broken, And the pitcher is shattered at the spring, and the broken pulley falls into the well,",
+        "VAT_ES": "Sí, acuérdate de él antes que se corte la hebra de plata y se quiebre la ampolla de oro, antes que se haga pedazos el cántaro en la fuente y se rompa la cuerda del aljibe;",
+        "CEI": "prima che si rompa il cordone d'argento e la lucerna d'oro s'infranga e si rompa l'anfora alla fonte e la carrucola cada nel pozzo"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/יָשֹׁ֧ב הֶ/עָפָ֛ר עַל הָ/אָ֖רֶץ כְּ/שֶׁ/הָיָ֑ה וְ/הָ/ר֣וּחַ תָּשׁ֔וּב אֶל הָ/אֱלֹהִ֖ים אֲשֶׁ֥ר נְתָנָֽ/הּ׃",
+        "LXX": "καὶ ἐπιστρέψῃ ὁ χοῦς ἐπὶ τὴν γῆν ὡς ἦν, καὶ τὸ πνεῦμα ἐπιστρέψῃ πρὸς τὸν θεὸν ὃς ἔδωκεν αὐτό.",
+        "VUL": "et revertatur pulvis in terram suam unde erat,/ et spiritus redeat ad Deum, qui dedit illum./",
+        "SYN": "И возвратится прах в землю, чем он и был; а дух возвратился к Богу, Который дал его.",
+        "NEO": "et que la poussière retourne à la terre, selon ce qu’elle était ; et que l’esprit retourne à Dieu qui l’a donné.",
+        "NAB": "And the dust returns to the earth as it once was, and the life breath returns to God who gave it.",
+        "VAT_ES": "antes que el polvo vuelva a la tierra, como lo que es, y el aliento vuelva a Dios, porque es él quien lo dio.",
+        "CEI": "e ritorni la polvere alla terra, com'era prima, e lo spirito torni a Dio che lo ha dato."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הֲבֵ֧ל הֲבָלִ֛ים אָמַ֥ר הַ/קּוֹהֶ֖לֶת הַ/כֹּ֥ל הָֽבֶל׃",
+        "LXX": "ματαιότης ματαιοτήτων, εἶπεν ὁ ἐκκλησιαστής, τὰ πάντα ματαιότης.",
+        "VUL": "Vanitas vanitatum, dixit Ecclesiastes,/ et omnia vanitas.]",
+        "SYN": "Суета сует, сказал Екклесиаст, все - суета!",
+        "NEO": "Vanité des vanités, dit l’Écclésiaste, tout est vanité.",
+        "NAB": "Vanity of vanities, says Qoheleth, all things are vanity!",
+        "VAT_ES": "&iexcl;Vanidad, pura vanidad!, dice Cohélet. &iexcl;Nada más que vanidad!",
+        "CEI": "Vanità delle vanità, dice Qoèlet, e tutto è vanità."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/יֹתֵ֕ר שֶׁ/הָיָ֥ה קֹהֶ֖לֶת חָכָ֑ם ע֗וֹד לִמַּד דַּ֨עַת֙ אֶת הָ/עָ֔ם וְ/אִזֵּ֣ן וְ/חִקֵּ֔ר תִּקֵּ֖ן מְשָׁלִ֥ים הַרְבֵּֽה׃",
+        "LXX": "Καὶ περισσὸν ὅτι ἐγένετο Ἐκκλησιαστὴς σοφός, ὅτι ἐδίδαξεν γνῶσιν σὺν τὸν ἄνθρωπον, καὶ οὖς ἐξιχνιάσεται κόσμιον παραβολῶν.",
+        "VUL": "[Cumque esset sapientissimus Ecclesiastes,/ docuit populum, et enarravit quæ fecerat ;/ et investigans composuit parabolas multas./",
+        "SYN": "Кроме того, что Екклесиаст был мудр, он учил еще народ знанию. Он _все_ испытывал, исследовал, _и_ составил много притчей.",
+        "NEO": "Outre que l’Écclésiaste fut un sage, il a encore enseigné la science au peuple ; il a pesé et sondé, et il a disposé un grand nombre de sentences.",
+        "NAB": "Besides being wise, Qoheleth taught the people knowledge, and weighed, scrutinized and arranged many proverbs.",
+        "VAT_ES": "Cohélet, además de ser sabio, también enseñó la ciencia al pueblo; él pesó, examinó y ajustó numerosos proverbios.",
+        "CEI": "Oltre a essere saggio, Qoèlet insegnò anche la scienza al popolo; ascoltò, indagò e compose un gran numero di massime."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "בִּקֵּ֣שׁ קֹהֶ֔לֶת לִ/מְצֹ֖א דִּבְרֵי חֵ֑פֶץ וְ/כָת֥וּב יֹ֖שֶׁר דִּבְרֵ֥י אֱמֶֽת׃",
+        "LXX": "πολλὰ ἐζήτησεν Ἐκκλησιαστὴς τοῦ εὑρεῖν λόγους θελήματος καὶ γεγραμμένον εὐθύτητος, λόγους ἀληθείας.",
+        "VUL": "Quæsivit verba utilia,/ et conscripsit sermones rectissimos ac veritate plenos./",
+        "SYN": "Старался Екклесиаст приискивать изящные изречения, и слова истины написаны _им_ верно.",
+        "NEO": "L’Ecclésiaste s’est étudié à trouver un langage agréable, et à écrire avec exactitude des paroles de vérité.",
+        "NAB": "Qoheleth sought to find pleasing sayings, and to write down true sayings with precision.",
+        "VAT_ES": "Cohélet trató de encontrar sentencias agradables y escribió exactamente palabras verdaderas",
+        "CEI": "Qoèlet cercò di trovare pregevoli detti e scrisse con esattezza parole di verità."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "דִּבְרֵ֤י חֲכָמִים֙ כַּ/דָּ֣רְבֹנ֔וֹת וּֽ/כְ/מַשְׂמְר֥וֹת נְטוּעִ֖ים בַּעֲלֵ֣י אֲסֻפּ֑וֹת נִתְּנ֖וּ מֵ/רֹעֶ֥ה אֶחָֽד׃",
+        "LXX": "Λόγοι σοφῶν ὡς τὰ βούκεντρα καὶ ὡς ἧλοι πεφυτευμένοι, οἱ παρὰ τῶν συνθεμάτων· ἐδόθησαν ἐκ ποιμένος ἑνός,",
+        "VUL": "Verba sapientium sicut stimuli,/ et quasi clavi in altum defixi,/ quæ per magistrorum consilium data sunt a pastore uno./",
+        "SYN": "Слова мудрых - как иглы и как вбитые гвозди, и составители их - от единого пастыря.",
+        "NEO": "Les paroles des sages sont comme des aiguillons, et leurs recueils comme des clous plantés ; elles sont données par un seul Pasteur.",
+        "NAB": "The sayings of the wise are like goads; like fixed spikes are the topics given by one collector.",
+        "VAT_ES": "Los dichos de los sabios son como aguijones y las colecciones de sentencias, como mojones bien plantados, dones de un solo pastor.",
+        "CEI": "Le parole dei saggi sono come pungoli; come chiodi piantati, le raccolte di autori: esse sono date da un solo pastore."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/יֹתֵ֥ר מֵ/הֵ֖מָּה בְּנִ֣/י הִזָּהֵ֑ר עֲשׂ֨וֹת סְפָרִ֤ים הַרְבֵּה֙ אֵ֣ין קֵ֔ץ וְ/לַ֥הַג הַרְבֵּ֖ה יְגִעַ֥ת בָּשָֽׂר׃",
+        "LXX": "καὶ περισσὸν ἐξ αὐτῶν. υἱέ μου, φύλαξαι τοῦ ποιῆσαι βιβλία πολλά· οὐκ ἔστιν περασμός, καὶ μελέτη πολλὴ κόπωσις σαρκός.",
+        "VUL": "His amplius, fili mi, ne requiras./ Faciendi plures libros nullus est finis ;/ frequensque meditatio, carnis afflictio est./",
+        "SYN": "А что сверх всего этого, сын мой, того берегись: составлять много книг - конца не будет, и много читать - утомительно для тела.",
+        "NEO": "Et quand à plus de paroles que celles-ci, mon fils, sois averti. Multiplier les livres n’aurait pas de fin, et beaucoup d’étude est une fatigue pour la chair.",
+        "NAB": "As to more than these, my son, beware. Of the making of many books there is no end, and in much study there is weariness for the flesh.",
+        "VAT_ES": "Una advertencia más, hijo mío: multiplicar los libros es una cosa interminable y estudiar demasiado deja el cuerpo exhausto.",
+        "CEI": "Quanto a ciò che è in più di questo, figlio mio, bada bene: i libri si moltiplicano senza fine ma il molto studio affatica il corpo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "ס֥וֹף דָּבָ֖ר הַ/כֹּ֣ל נִשְׁמָ֑ע אֶת הָ/אֱלֹהִ֤ים יְרָא֙ וְ/אֶת מִצְוֺתָ֣י/ו שְׁמ֔וֹר כִּי זֶ֖ה כָּל הָ/אָדָֽם׃",
+        "LXX": "Τέλος λόγου τὸ πᾶν ἄκουε Τὸν θεὸν φοβοῦ καὶ τὰς ἐντολὰς αὐτοῦ φύλασσε, ὅτι τοῦτο πᾶς ὁ ἄνθρωπος.",
+        "VUL": "Finem loquendi pariter omnes audiamus./ Deum time, et mandata ejus observa :/ hoc est enim omnis homo,/",
+        "SYN": "Выслушаем сущность всего: бойся Бога и заповеди Его соблюдай, потому что в этом все для человека;",
+        "NEO": "Fin du discours, le tout entendu : Crains Dieu et observe ses commandements, car c’est là le tout de l’homme.",
+        "NAB": "The last word, when all is heard: Fear God and keep his commandments, for this is man's all;",
+        "VAT_ES": "En conclusión: una vez oído todo esto, teme al Señor y observa sus mandamientos, porque esto es todo para el hombre.",
+        "CEI": "Conclusione del discorso, dopo che si è ascoltato ogni cosa: Temi Dio e osserva i suoi comandamenti, perché questo per l'uomo è tutto."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כִּ֤י אֶת כָּל מַֽעֲשֶׂ֔ה הָ/אֱלֹהִ֛ים יָבִ֥א בְ/מִשְׁפָּ֖ט עַ֣ל כָּל נֶעְלָ֑ם אִם ט֖וֹב וְ/אִם רָֽע׃",
+        "LXX": "ὅτι σύμπαν τὸ ποίημα ὁ θεὸς ἄξει ἐν κρίσει ἐν παντὶ παρεωραμένῳ, ἐὰν ἀγαθὸν καὶ ἐὰν πονηρόν.",
+        "VUL": "et cuncta quæ fiunt adducet Deus in judicium/ pro omni errato, sive bonum, sive malum illud sit.]",
+        "SYN": "ибо всякое дело Бог приведет на суд, и все тайное, хорошо ли оно, или худо.",
+        "NEO": "Car Dieu citera en un jugement portant sur tout ce qui est caché, toute œuvre, soit bonne, soit mauvaise.",
+        "NAB": "because God will bring to judgment every work, with all its hidden qualities, whether good or bad.",
+        "VAT_ES": "Dios llevará a juicio todas las obras, aun loa que está escondido, sea bueno o malo.",
+        "CEI": "Infatti, Dio citerà in giudizio ogni azione, tutto ciò che è occulto, bene o male."
+      }
+    }
+  }
+}

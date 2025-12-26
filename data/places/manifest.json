@@ -1,0 +1,792 @@
+{
+  "Places": {
+    "display_config": {
+      "wheel_volume_version": "0.1-dev",
+      "volume_schema_version": "0.1-dev",
+      "volume_data_version": "0.1-dev",
+      "structure_type": "deep_hierarchy",
+      "volume_type": "wheel_hierarchical",
+      "volume_name": "Deep Places",
+      "volume_description": "Synthetic deep hierarchy for stress testing many levels",
+      "leaf_level": "room",
+      "focus_ring_startup": {
+        "initial_magnified_item": "milky_way",
+        "top_navigation_level": "galaxy"
+      },
+      "hierarchy_levels": {
+        "galaxy": { "display_name": "Galaxy" },
+        "star": { "display_name": "Star" },
+        "planet": { "display_name": "Planet" },
+        "hemisphere": { "display_name": "Hemisphere" },
+        "continent": { "display_name": "Continent" },
+        "country": { "display_name": "Country" },
+        "state": { "display_name": "State" },
+        "county": { "display_name": "County" },
+        "city": { "display_name": "City" },
+        "neighborhood": { "display_name": "Neighborhood" },
+        "street": { "display_name": "Street" },
+        "block": { "display_name": "Block" },
+        "building": { "display_name": "Building" },
+        "floor": { "display_name": "Floor" },
+        "room": { "display_name": "Room" }
+      }
+    },
+    "root": {
+      "id": "root",
+      "children": ["milky_way", "andromeda"]
+    },
+    "galaxies": {
+      "milky_way": {
+        "id": "milky_way",
+        "name": "Milky Way",
+        "sort_number": 1,
+        "stars": ["sol", "proxima"]
+      },
+      "andromeda": {
+        "id": "andromeda",
+        "name": "Andromeda",
+        "sort_number": 2,
+        "stars": ["andr_star_alpha"]
+      }
+    },
+    "stars": {
+      "sol": {
+        "id": "sol",
+        "name": "Sol",
+        "sort_number": 1,
+        "galaxy_id": "milky_way",
+        "planets": ["earth", "mars"]
+      },
+      "proxima": {
+        "id": "proxima",
+        "name": "Proxima Centauri",
+        "sort_number": 2,
+        "galaxy_id": "milky_way",
+        "planets": ["proxima_b"]
+      },
+      "andr_star_alpha": {
+        "id": "andr_star_alpha",
+        "name": "Andromeda Alpha",
+        "sort_number": 1,
+        "galaxy_id": "andromeda",
+        "planets": ["andr_one"]
+      }
+    },
+    "planets": {
+      "earth": {
+        "id": "earth",
+        "name": "Earth",
+        "sort_number": 1,
+        "star_id": "sol",
+        "hemispheres": ["earth_north", "earth_south"]
+      },
+      "mars": {
+        "id": "mars",
+        "name": "Mars",
+        "sort_number": 2,
+        "star_id": "sol",
+        "hemispheres": ["mars_north"]
+      },
+      "proxima_b": {
+        "id": "proxima_b",
+        "name": "Proxima b",
+        "sort_number": 1,
+        "star_id": "proxima",
+        "hemispheres": ["proxima_b_north"]
+      },
+      "andr_one": {
+        "id": "andr_one",
+        "name": "Andr-One",
+        "sort_number": 1,
+        "star_id": "andr_star_alpha",
+        "hemispheres": ["andr_one_north"]
+      }
+    },
+    "hemispheres": {
+      "earth_north": {
+        "id": "earth_north",
+        "name": "Northern Hemisphere",
+        "sort_number": 1,
+        "planet_id": "earth",
+        "continents": ["north_america", "europe"]
+      },
+      "earth_south": {
+        "id": "earth_south",
+        "name": "Southern Hemisphere",
+        "sort_number": 2,
+        "planet_id": "earth",
+        "continents": ["south_america", "australia"]
+      },
+      "mars_north": {
+        "id": "mars_north",
+        "name": "Mars Northern",
+        "sort_number": 1,
+        "planet_id": "mars",
+        "continents": ["marineris"]
+      },
+      "proxima_b_north": {
+        "id": "proxima_b_north",
+        "name": "Proxima b North",
+        "sort_number": 1,
+        "planet_id": "proxima_b",
+        "continents": ["prox_plateau"]
+      },
+      "andr_one_north": {
+        "id": "andr_one_north",
+        "name": "Andr-One North",
+        "sort_number": 1,
+        "planet_id": "andr_one",
+        "continents": ["andr_terra"]
+      }
+    },
+    "continents": {
+      "north_america": {
+        "id": "north_america",
+        "name": "North America",
+        "sort_number": 1,
+        "hemisphere_id": "earth_north",
+        "countries": ["usa", "canada"]
+      },
+      "europe": {
+        "id": "europe",
+        "name": "Europe",
+        "sort_number": 2,
+        "hemisphere_id": "earth_north",
+        "countries": ["france"]
+      },
+      "south_america": {
+        "id": "south_america",
+        "name": "South America",
+        "sort_number": 1,
+        "hemisphere_id": "earth_south",
+        "countries": ["brazil"]
+      },
+      "australia": {
+        "id": "australia",
+        "name": "Australia",
+        "sort_number": 2,
+        "hemisphere_id": "earth_south",
+        "countries": ["australia_country"]
+      },
+      "marineris": {
+        "id": "marineris",
+        "name": "Valles Marineris",
+        "sort_number": 1,
+        "hemisphere_id": "mars_north",
+        "countries": ["marineris_country"]
+      },
+      "prox_plateau": {
+        "id": "prox_plateau",
+        "name": "Proxima Plateau",
+        "sort_number": 1,
+        "hemisphere_id": "proxima_b_north",
+        "countries": ["prox_country"]
+      },
+      "andr_terra": {
+        "id": "andr_terra",
+        "name": "Andr Terra",
+        "sort_number": 1,
+        "hemisphere_id": "andr_one_north",
+        "countries": ["andr_country"]
+      }
+    },
+    "countries": {
+      "usa": {
+        "id": "usa",
+        "name": "United States",
+        "sort_number": 1,
+        "continent_id": "north_america",
+        "states": ["california", "alabama"]
+      },
+      "canada": {
+        "id": "canada",
+        "name": "Canada",
+        "sort_number": 2,
+        "continent_id": "north_america",
+        "states": ["ontario"]
+      },
+      "france": {
+        "id": "france",
+        "name": "France",
+        "sort_number": 3,
+        "continent_id": "europe",
+        "states": ["ile_de_france"]
+      },
+      "brazil": {
+        "id": "brazil",
+        "name": "Brazil",
+        "sort_number": 1,
+        "continent_id": "south_america",
+        "states": ["rio_de_janeiro_state"]
+      },
+      "australia_country": {
+        "id": "australia_country",
+        "name": "Australia",
+        "sort_number": 1,
+        "continent_id": "australia",
+        "states": ["nsw"]
+      },
+      "marineris_country": {
+        "id": "marineris_country",
+        "name": "Marineris Union",
+        "sort_number": 1,
+        "continent_id": "marineris",
+        "states": ["marineris_state"]
+      },
+      "prox_country": {
+        "id": "prox_country",
+        "name": "Proxima Province",
+        "sort_number": 1,
+        "continent_id": "prox_plateau",
+        "states": ["prox_state"]
+      },
+      "andr_country": {
+        "id": "andr_country",
+        "name": "Andr Commonwealth",
+        "sort_number": 1,
+        "continent_id": "andr_terra",
+        "states": ["andr_state"]
+      }
+    },
+    "states": {
+      "california": {
+        "id": "california",
+        "name": "California",
+        "sort_number": 1,
+        "country_id": "usa",
+        "counties": ["san_mateo"]
+      },
+      "alabama": {
+        "id": "alabama",
+        "name": "Alabama",
+        "sort_number": 2,
+        "country_id": "usa",
+        "counties": ["baldwin_county"]
+      },
+      "ontario": {
+        "id": "ontario",
+        "name": "Ontario",
+        "sort_number": 1,
+        "country_id": "canada",
+        "counties": ["ottawa_county"]
+      },
+      "ile_de_france": {
+        "id": "ile_de_france",
+        "name": "Ile-de-France",
+        "sort_number": 1,
+        "country_id": "france",
+        "counties": ["paris_county"]
+      },
+      "rio_de_janeiro_state": {
+        "id": "rio_de_janeiro_state",
+        "name": "Rio de Janeiro",
+        "sort_number": 1,
+        "country_id": "brazil",
+        "counties": ["rio_county"]
+      },
+      "nsw": {
+        "id": "nsw",
+        "name": "New South Wales",
+        "sort_number": 1,
+        "country_id": "australia_country",
+        "counties": ["sydney_county"]
+      },
+      "marineris_state": {
+        "id": "marineris_state",
+        "name": "Marineris State",
+        "sort_number": 1,
+        "country_id": "marineris_country",
+        "counties": ["marineris_county"]
+      },
+      "prox_state": {
+        "id": "prox_state",
+        "name": "Proxima State",
+        "sort_number": 1,
+        "country_id": "prox_country",
+        "counties": ["prox_county"]
+      },
+      "andr_state": {
+        "id": "andr_state",
+        "name": "Andr State",
+        "sort_number": 1,
+        "country_id": "andr_country",
+        "counties": ["andr_county"]
+      }
+    },
+    "counties": {
+      "san_mateo": {
+        "id": "san_mateo",
+        "name": "San Mateo County",
+        "sort_number": 1,
+        "state_id": "california",
+        "cities": ["san_mateo_city"]
+      },
+      "ottawa_county": {
+        "id": "ottawa_county",
+        "name": "Ottawa County",
+        "sort_number": 1,
+        "state_id": "ontario",
+        "cities": ["ottawa_city"]
+      },
+      "paris_county": {
+        "id": "paris_county",
+        "name": "Paris County",
+        "sort_number": 1,
+        "state_id": "ile_de_france",
+        "cities": ["paris_city"]
+      },
+      "rio_county": {
+        "id": "rio_county",
+        "name": "Rio County",
+        "sort_number": 1,
+        "state_id": "rio_de_janeiro_state",
+        "cities": ["rio_city"]
+      },
+      "baldwin_county": {
+        "id": "baldwin_county",
+        "name": "Baldwin County",
+        "sort_number": 2,
+        "state_id": "alabama",
+        "cities": ["fairhope_city"]
+      },
+      "sydney_county": {
+        "id": "sydney_county",
+        "name": "Sydney County",
+        "sort_number": 1,
+        "state_id": "nsw",
+        "cities": ["sydney_city"]
+      },
+      "marineris_county": {
+        "id": "marineris_county",
+        "name": "Marineris County",
+        "sort_number": 1,
+        "state_id": "marineris_state",
+        "cities": ["marineris_city"]
+      },
+      "prox_county": {
+        "id": "prox_county",
+        "name": "Proxima County",
+        "sort_number": 1,
+        "state_id": "prox_state",
+        "cities": ["prox_city"]
+      },
+      "andr_county": {
+        "id": "andr_county",
+        "name": "Andr County",
+        "sort_number": 1,
+        "state_id": "andr_state",
+        "cities": ["andr_city"]
+      }
+    },
+    "cities": {
+      "san_mateo_city": {
+        "id": "san_mateo_city",
+        "name": "San Mateo",
+        "sort_number": 1,
+        "county_id": "san_mateo",
+        "neighborhoods": ["central_sm"]
+      },
+      "ottawa_city": {
+        "id": "ottawa_city",
+        "name": "Ottawa",
+        "sort_number": 1,
+        "county_id": "ottawa_county",
+        "neighborhoods": ["byward"]
+      },
+      "paris_city": {
+        "id": "paris_city",
+        "name": "Paris",
+        "sort_number": 1,
+        "county_id": "paris_county",
+        "neighborhoods": ["montmartre"]
+      },
+      "rio_city": {
+        "id": "rio_city",
+        "name": "Rio",
+        "sort_number": 1,
+        "county_id": "rio_county",
+        "neighborhoods": ["copacabana"]
+      },
+      "fairhope_city": {
+        "id": "fairhope_city",
+        "name": "Fairhope",
+        "sort_number": 2,
+        "county_id": "baldwin_county",
+        "neighborhoods": ["fruit_and_nut"]
+      },
+      "sydney_city": {
+        "id": "sydney_city",
+        "name": "Sydney",
+        "sort_number": 1,
+        "county_id": "sydney_county",
+        "neighborhoods": ["the_rocks"]
+      },
+      "marineris_city": {
+        "id": "marineris_city",
+        "name": "Marineris City",
+        "sort_number": 1,
+        "county_id": "marineris_county",
+        "neighborhoods": ["trench_town"]
+      },
+      "prox_city": {
+        "id": "prox_city",
+        "name": "Proxima City",
+        "sort_number": 1,
+        "county_id": "prox_county",
+        "neighborhoods": ["north_rim"]
+      },
+      "andr_city": {
+        "id": "andr_city",
+        "name": "Andr City",
+        "sort_number": 1,
+        "county_id": "andr_county",
+        "neighborhoods": ["andr_center"]
+      }
+    },
+    "neighborhoods": {
+      "central_sm": {
+        "id": "central_sm",
+        "name": "Central San Mateo",
+        "sort_number": 1,
+        "city_id": "san_mateo_city",
+        "streets": ["elm_street"]
+      },
+      "byward": {
+        "id": "byward",
+        "name": "ByWard Market",
+        "sort_number": 1,
+        "city_id": "ottawa_city",
+        "streets": ["sussex"]
+      },
+      "montmartre": {
+        "id": "montmartre",
+        "name": "Montmartre",
+        "sort_number": 1,
+        "city_id": "paris_city",
+        "streets": ["abbesses"]
+      },
+      "copacabana": {
+        "id": "copacabana",
+        "name": "Copacabana",
+        "sort_number": 1,
+        "city_id": "rio_city",
+        "streets": ["atlantica"]
+      },
+      "fruit_and_nut": {
+        "id": "fruit_and_nut",
+        "name": "Fruit & Nut",
+        "sort_number": 2,
+        "city_id": "fairhope_city",
+        "streets": ["pier_ave"]
+      },
+      "the_rocks": {
+        "id": "the_rocks",
+        "name": "The Rocks",
+        "sort_number": 1,
+        "city_id": "sydney_city",
+        "streets": ["george"]
+      },
+      "trench_town": {
+        "id": "trench_town",
+        "name": "Trench Town",
+        "sort_number": 1,
+        "city_id": "marineris_city",
+        "streets": ["canyon"]
+      },
+      "north_rim": {
+        "id": "north_rim",
+        "name": "North Rim",
+        "sort_number": 1,
+        "city_id": "prox_city",
+        "streets": ["crimson"]
+      },
+      "andr_center": {
+        "id": "andr_center",
+        "name": "Andr Center",
+        "sort_number": 1,
+        "city_id": "andr_city",
+        "streets": ["coreway"]
+      }
+    },
+    "streets": {
+      "elm_street": {
+        "id": "elm_street",
+        "name": "Elm Street",
+        "sort_number": 1,
+        "neighborhood_id": "central_sm",
+        "blocks": ["elm_block_100"]
+      },
+      "sussex": {
+        "id": "sussex",
+        "name": "Sussex Drive",
+        "sort_number": 1,
+        "neighborhood_id": "byward",
+        "blocks": ["sussex_block_1"]
+      },
+      "abbesses": {
+        "id": "abbesses",
+        "name": "Rue des Abbesses",
+        "sort_number": 1,
+        "neighborhood_id": "montmartre",
+        "blocks": ["abbesses_block_10"]
+      },
+      "atlantica": {
+        "id": "atlantica",
+        "name": "Avenida Atlantica",
+        "sort_number": 1,
+        "neighborhood_id": "copacabana",
+        "blocks": ["atlantica_block_50"]
+      },
+      "pier_ave": {
+        "id": "pier_ave",
+        "name": "Pier Avenue",
+        "sort_number": 2,
+        "neighborhood_id": "fruit_and_nut",
+        "blocks": ["pier_ave_block_100"]
+      },
+      "george": {
+        "id": "george",
+        "name": "George Street",
+        "sort_number": 1,
+        "neighborhood_id": "the_rocks",
+        "blocks": ["george_block_20"]
+      },
+      "canyon": {
+        "id": "canyon",
+        "name": "Canyon Road",
+        "sort_number": 1,
+        "neighborhood_id": "trench_town",
+        "blocks": ["canyon_block_7"]
+      },
+      "crimson": {
+        "id": "crimson",
+        "name": "Crimson Way",
+        "sort_number": 1,
+        "neighborhood_id": "north_rim",
+        "blocks": ["crimson_block_3"]
+      },
+      "coreway": {
+        "id": "coreway",
+        "name": "Coreway",
+        "sort_number": 1,
+        "neighborhood_id": "andr_center",
+        "blocks": ["coreway_block_1"]
+      }
+    },
+    "blocks": {
+      "elm_block_100": {
+        "id": "elm_block_100",
+        "name": "100 Block",
+        "sort_number": 1,
+        "street_id": "elm_street",
+        "buildings": ["elm_120"]
+      },
+      "sussex_block_1": {
+        "id": "sussex_block_1",
+        "name": "Block 1",
+        "sort_number": 1,
+        "street_id": "sussex",
+        "buildings": ["sussex_24"]
+      },
+      "abbesses_block_10": {
+        "id": "abbesses_block_10",
+        "name": "Block 10",
+        "sort_number": 1,
+        "street_id": "abbesses",
+        "buildings": ["abbesses_10"]
+      },
+      "atlantica_block_50": {
+        "id": "atlantica_block_50",
+        "name": "Block 50",
+        "sort_number": 1,
+        "street_id": "atlantica",
+        "buildings": ["atlantica_1500"]
+      },
+      "pier_ave_block_100": {
+        "id": "pier_ave_block_100",
+        "name": "100 Block",
+        "sort_number": 1,
+        "street_id": "pier_ave",
+        "buildings": ["pier_ave_119"]
+      },
+      "george_block_20": {
+        "id": "george_block_20",
+        "name": "Block 20",
+        "sort_number": 1,
+        "street_id": "george",
+        "buildings": ["george_20"]
+      },
+      "canyon_block_7": {
+        "id": "canyon_block_7",
+        "name": "Block 7",
+        "sort_number": 1,
+        "street_id": "canyon",
+        "buildings": ["canyon_7"]
+      },
+      "crimson_block_3": {
+        "id": "crimson_block_3",
+        "name": "Block 3",
+        "sort_number": 1,
+        "street_id": "crimson",
+        "buildings": ["crimson_3"]
+      },
+      "coreway_block_1": {
+        "id": "coreway_block_1",
+        "name": "Block 1",
+        "sort_number": 1,
+        "street_id": "coreway",
+        "buildings": ["coreway_1"]
+      }
+    },
+    "buildings": {
+      "elm_120": {
+        "id": "elm_120",
+        "name": "120 Elm",
+        "sort_number": 1,
+        "block_id": "elm_block_100",
+        "floors": ["elm_120_f1", "elm_120_f2"]
+      },
+      "sussex_24": {
+        "id": "sussex_24",
+        "name": "24 Sussex",
+        "sort_number": 1,
+        "block_id": "sussex_block_1",
+        "floors": ["sussex_24_f1"]
+      },
+      "abbesses_10": {
+        "id": "abbesses_10",
+        "name": "10 Abbesses",
+        "sort_number": 1,
+        "block_id": "abbesses_block_10",
+        "floors": ["abbesses_10_f1"]
+      },
+      "atlantica_1500": {
+        "id": "atlantica_1500",
+        "name": "1500 Atlantica",
+        "sort_number": 1,
+        "block_id": "atlantica_block_50",
+        "floors": ["atlantica_1500_f1"]
+      },
+      "pier_ave_119": {
+        "id": "pier_ave_119",
+        "name": "119 Pier Avenue",
+        "sort_number": 2,
+        "block_id": "pier_ave_block_100",
+        "floors": ["pier_ave_119_f1"]
+      },
+      "george_20": {
+        "id": "george_20",
+        "name": "20 George",
+        "sort_number": 1,
+        "block_id": "george_block_20",
+        "floors": ["george_20_f1"]
+      },
+      "canyon_7": {
+        "id": "canyon_7",
+        "name": "7 Canyon",
+        "sort_number": 1,
+        "block_id": "canyon_block_7",
+        "floors": ["canyon_7_f1"]
+      },
+      "crimson_3": {
+        "id": "crimson_3",
+        "name": "3 Crimson",
+        "sort_number": 1,
+        "block_id": "crimson_block_3",
+        "floors": ["crimson_3_f1"]
+      },
+      "coreway_1": {
+        "id": "coreway_1",
+        "name": "1 Coreway",
+        "sort_number": 1,
+        "block_id": "coreway_block_1",
+        "floors": ["coreway_1_f1"]
+      }
+    },
+    "floors": {
+      "elm_120_f1": {
+        "id": "elm_120_f1",
+        "name": "Floor 1",
+        "sort_number": 1,
+        "building_id": "elm_120",
+        "rooms": ["elm_120_f1_r1", "elm_120_f1_r2"]
+      },
+      "elm_120_f2": {
+        "id": "elm_120_f2",
+        "name": "Floor 2",
+        "sort_number": 2,
+        "building_id": "elm_120",
+        "rooms": ["elm_120_f2_r1"]
+      },
+      "sussex_24_f1": {
+        "id": "sussex_24_f1",
+        "name": "Floor 1",
+        "sort_number": 1,
+        "building_id": "sussex_24",
+        "rooms": ["sussex_24_f1_r1"]
+      },
+      "abbesses_10_f1": {
+        "id": "abbesses_10_f1",
+        "name": "Floor 1",
+        "sort_number": 1,
+        "building_id": "abbesses_10",
+        "rooms": ["abbesses_10_f1_r1"]
+      },
+      "atlantica_1500_f1": {
+        "id": "atlantica_1500_f1",
+        "name": "Floor 1",
+        "sort_number": 1,
+        "building_id": "atlantica_1500",
+        "rooms": ["atlantica_1500_f1_r1"]
+      },
+      "pier_ave_119_f1": {
+        "id": "pier_ave_119_f1",
+        "name": "First Floor",
+        "sort_number": 1,
+        "building_id": "pier_ave_119",
+        "rooms": ["pier_ave_119_f1_fan_room"]
+      },
+      "george_20_f1": {
+        "id": "george_20_f1",
+        "name": "Floor 1",
+        "sort_number": 1,
+        "building_id": "george_20",
+        "rooms": ["george_20_f1_r1"]
+      },
+      "canyon_7_f1": {
+        "id": "canyon_7_f1",
+        "name": "Floor 1",
+        "sort_number": 1,
+        "building_id": "canyon_7",
+        "rooms": ["canyon_7_f1_r1"]
+      },
+      "crimson_3_f1": {
+        "id": "crimson_3_f1",
+        "name": "Floor 1",
+        "sort_number": 1,
+        "building_id": "crimson_3",
+        "rooms": ["crimson_3_f1_r1"]
+      },
+      "coreway_1_f1": {
+        "id": "coreway_1_f1",
+        "name": "Floor 1",
+        "sort_number": 1,
+        "building_id": "coreway_1",
+        "rooms": ["coreway_1_f1_r1"]
+      }
+    },
+    "rooms": {
+      "elm_120_f1_r1": { "id": "elm_120_f1_r1", "name": "Room 101", "sort_number": 1, "floor_id": "elm_120_f1" },
+      "elm_120_f1_r2": { "id": "elm_120_f1_r2", "name": "Room 102", "sort_number": 2, "floor_id": "elm_120_f1" },
+      "elm_120_f2_r1": { "id": "elm_120_f2_r1", "name": "Room 201", "sort_number": 1, "floor_id": "elm_120_f2" },
+      "sussex_24_f1_r1": { "id": "sussex_24_f1_r1", "name": "Room 1", "sort_number": 1, "floor_id": "sussex_24_f1" },
+      "abbesses_10_f1_r1": { "id": "abbesses_10_f1_r1", "name": "Room 1", "sort_number": 1, "floor_id": "abbesses_10_f1" },
+      "atlantica_1500_f1_r1": { "id": "atlantica_1500_f1_r1", "name": "Room 1", "sort_number": 1, "floor_id": "atlantica_1500_f1" },
+      "pier_ave_119_f1_fan_room": { "id": "pier_ave_119_f1_fan_room", "name": "Fan Room", "sort_number": 1, "floor_id": "pier_ave_119_f1" },
+      "george_20_f1_r1": { "id": "george_20_f1_r1", "name": "Room 1", "sort_number": 1, "floor_id": "george_20_f1" },
+      "canyon_7_f1_r1": { "id": "canyon_7_f1_r1", "name": "Room 1", "sort_number": 1, "floor_id": "canyon_7_f1" },
+      "crimson_3_f1_r1": { "id": "crimson_3_f1_r1", "name": "Room 1", "sort_number": 1, "floor_id": "crimson_3_f1" },
+      "coreway_1_f1_r1": { "id": "coreway_1_f1_r1", "name": "Room 1", "sort_number": 1, "floor_id": "coreway_1_f1" }
+    }
+  }
+}

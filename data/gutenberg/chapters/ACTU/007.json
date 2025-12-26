@@ -1,0 +1,1001 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ACTU_007",
+  "book_key": "ACTU",
+  "sequence": 7,
+  "chapter_in": {
+    "MT": 7,
+    "VUL": 7,
+    "LXX": 7
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Actus_Apostolorum",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Εἶπεν δὲ ὁ ἀρχιερεύς, Εἰ ἄρα ταῦτα οὕτως ἔχει;",
+        "VUL": "Dixit autem princeps sacerdotum : Si hæc ita se habent ?",
+        "SYN": "Тогда сказал первосвященник: так ли это?",
+        "NEO": "Le grand prêtre lui demanda : « En est-il bien ainsi ? »",
+        "NAB": "Then the high priest asked, \"Is this so?\"",
+        "VAT_ES": "El Sumo Sacerdote preguntó a Esteban: «&iquest;Es verdad lo que estos dicen?».",
+        "CEI": "Cinque giorni dopo arrivò il sommo sacerdote Anania insieme con alcuni anziani e a un avvocato di nome Tertullo e si presentarono al governatore per accusare Paolo."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ ἔφη, ¶Ἄνδρες ἀδελφοὶ καὶ πατέρες, ἀκούσατε. Ὁ θεὸς τῆς δόξης ὤφθη τῷ πατρὶ ἡμῶν Ἀβραὰμ ὄντι ἐν τῇ Μεσοποταμίᾳ, πρὶν ἢ κατοικῆσαι αὐτὸν ἐν Χαρράν,",
+        "VUL": "Qui ait : Viri fratres et patres, audite : Deus gloriæ apparuit patri nostro Abrahæ cum esset in Mesopotamia, priusquam moraretur in Charan,",
+        "SYN": "Но он сказал: мужи братия и отцы! послушайте. Бог славы явился отцу нашему Аврааму в Месопотамии, прежде переселения его в Харран,",
+        "NEO": "Étienne répondit : « Mes frères et mes pères, écoutez. Le Dieu de gloire apparut à notre père Abraham, lorsqu’il était en Mésopotamie, avant qu’il vint demeurer à Haran,+ 7:2 VII, 2. Étienne se justifie successivement d’avoir blasphémé contre Dieu (vers. 2-16) ; contre Moïse et contre la Loi (vers. 17-43) ; contre le temple (vers. 44-55).*",
+        "NAB": "And he replied, \"My brothers and fathers, listen. The God of glory appeared to our father Abraham while he was in Mesopotamia, before he had settled in Haran,",
+        "VAT_ES": "El respondió: «Hermanos y padres, escuchen: El Dios de la gloria se apareció a nuestro padre Abraham, cuando aún estaba en la Mesopotamia, antes de establecerse en Jarán,",
+        "CEI": "Quando questi fu fatto venire, Tertullo cominciò l'accusa dicendo:"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "καὶ εἶπεν πρὸς αὐτόν, Ἔξελθε ἐκ τῆς γῆς σου καὶ ἐκ τῆς συγγενείας σου, καὶ δεῦρο εἰς γῆν ἣν ἄν σοι δείξω.",
+        "VUL": "et dixit ad illum : Exi de terra tua, et de cognatione tua, et veni in terram quam monstravero tibi.",
+        "SYN": "и сказал ему: выйди из земли твоей и из родства твоего и из дома отца твоего, и пойди в землю, которую покажу тебе.",
+        "NEO": "et lui dit : « Quitte ton pays et ta famille, et va dans le pays que je te montrerai. »",
+        "NAB": "and said to him, 'Go forth from your land and (from) your kinsfolk to the land that I will show you.'",
+        "VAT_ES": "y le dijo: «Abandona tu tierra natal y la casa de tu padre y ve al país que yo te indicaré».",
+        "CEI": "\"La lunga pace di cui godiamo grazie a te e le riforme che ci sono state in favore di questo popolo grazie alla tua provvidenza, le accogliamo in tutto e per tutto, eccellentissimo Felice, con profonda gratitudine."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Τότε ἐξελθὼν ἐκ γῆς Χαλδαίων κατῴκησεν ἐν Χαρράν· κἀκεῖθεν, μετὰ τὸ ἀποθανεῖν τὸν πατέρα αὐτοῦ, μετῴκισεν αὐτὸν εἰς τὴν γῆν ταύτην εἰς ἣν ὑμεῖς νῦν κατοικεῖτε·",
+        "VUL": "Tunc exiit de terra Chaldæorum, et habitavit in Charan. Et inde, postquam mortuus est pater ejus, transtulit illum in terram istam, in qua nunc vos habitatis.",
+        "SYN": "Тогда он вышел из земли Халдейской и поселился в Харране; а оттуда, по смерти отца его, переселил его _Бог_ в сию землю, в которой вы ныне живете.",
+        "NEO": "Alors il quitta le pays des Chaldéens et s’établit à Haran. De là, après la mort de son père, Dieu le fit émigrer dans ce pays que vous habitez maintenant.",
+        "NAB": "So he went forth from the land of the Chaldeans and settled in Haran. And from there, after his father died, he made him migrate to this land where you now dwell.",
+        "VAT_ES": "Abraham salió de Caldea para establecerse en Jarán. Después de la muerte de su padre, Dios le ordenó que se trasladara a este país, donde ustedes ahora están viviendo.",
+        "CEI": "Ma per non trattenerti troppo a lungo, ti prego di darci ascolto brevemente nella tua benevolenza."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "καὶ οὐκ ἔδωκεν αὐτῷ κληρονομίαν ἐν αὐτῇ, οὐδὲ βῆμα ποδός· καὶ ἐπηγγείλατο δοῦναι αὐτῷ εἰς κατάσχεσιν αὐτήν, καὶ τῷ σπέρματι αὐτοῦ μετ’ αὐτόν, οὐκ ὄντος αὐτῷ τέκνου.",
+        "VUL": "Et non dedit illi hæreditatem in ea, nec passum pedis : sed repromisit dare illi eam in possessionem, et semini ejus post ipsum, cum non haberet filium.",
+        "SYN": "И не дал ему на ней наследства ни на стопу ноги, а обещал дать ее во владение ему и потомству его по нем, когда еще был он бездетен.",
+        "NEO": "Et il ne lui donna aucune propriété dans ce pays, pas même où poser le pied ; mais il lui promit, à une époque où le patriarche n’avait pas d’enfants, de lui en donner la possession, à lui et à sa postérité après lui.",
+        "NAB": "Yet he gave him no inheritance in it, not even a foot's length, but he did promise to give it to him and his descendants as a possession, even though he was childless.",
+        "VAT_ES": "El no le dio nada en propiedad, ni siquiera un palmo de tierra, pero prometió darle en posesión este país, a él, y después de él a sus descendientes, aunque todavía no tenía hijos.",
+        "CEI": "Abbiamo scoperto che quest'uomo è una peste, fomenta continue rivolte tra tutti i Giudei che sono nel mondo ed è capo della setta dei Nazorei."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ἐλάλησεν δὲ οὕτως ὁ θεός, ὅτι ἔσται τὸ σπέρμα αὐτοῦ πάροικον ἐν γῇ ἀλλοτρίᾳ, καὶ δουλώσουσιν αὐτὸ καὶ κακώσουσιν, ἔτη τετρακόσια.",
+        "VUL": "Locutus est autem ei Deus : Quia erit semen ejus accola in terra aliena, et servituti eos subjicient, et male tractabunt eos annis quadringentis :",
+        "SYN": "И сказал ему Бог, что потомки его будут переселенцами в чужой земле и будут в порабощении и притеснении лет четыреста.",
+        "NEO": "Dieu parla ainsi : « Sa postérité habitera en pays étranger ; on la réduira en servitude, et on la maltraitera pendant quatre cents ans.+ 7:6 6. Quatre cents ans, chiffre rond, qui s’explique bien dans un oracle. Voy. Gal. iii, 17.*",
+        "NAB": "And God spoke thus, 'His descendants shall be aliens in a land not their own, where they shall be enslaved and oppressed for four hundred years;",
+        "VAT_ES": "Y Dios le anunció que sus descendientes emigrarían a una tierra extranjera, y serían esclavizados y maltratados durante cuatrocientos años.",
+        "CEI": "Ha perfino tentato di profanare il tempio e noi l'abbiamo arrestato."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Καὶ τὸ ἔθνος, ᾧ ἐὰν δουλεύσωσιν, κρινῶ ἐγώ, εἶπεν ὁ θεός· καὶ μετὰ ταῦτα ἐξελεύσονται, καὶ λατρεύσουσίν μοι ἐν τῷ τόπῳ τούτῳ.",
+        "VUL": "et gentem cui servierint, judicabo ego, dixit Dominus : et post hæc exibunt, et servient mihi in loco isto.",
+        "SYN": "Но Я, сказал Бог, произведу суд над тем народом, у которого они будут в порабощении; и после того они выйдут и будут служить Мне на сем месте.",
+        "NEO": "Mais la nation qui les aura tenus en esclavage, c’est moi qui la jugerai, dit le Seigneur. Après quoi ils sortiront et me serviront en ce lieu. » —",
+        "NAB": "but I will bring judgment on the nation they serve,' God said, 'and after that they will come out and worship me in this place.'",
+        "VAT_ES": "Pero yo juzgaré al pueblo que los esclavizará –dice el Señor– y después quedarán en libertad y me tributarán culto en este mismo lugar.",
+        "CEI": "."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Καὶ ἔδωκεν αὐτῷ διαθήκην περιτομῆς· καὶ οὕτως ἐγέννησεν τὸν Ἰσαάκ, καὶ περιέτεμεν αὐτὸν τῇ ἡμέρᾳ τῇ ὀγδόῃ· καὶ ὁ Ἰσαὰκ τὸν Ἰακώβ, καὶ ὁ Ἰακὼβ τοὺς δώδεκα πατριάρχας.",
+        "VUL": "Et dedit illi testamentum circumcisionis : et sic genuit Isaac, et circumcidit eum die octavo : et Isaac, Jacob : et Jacob, duodecim patriarchas.",
+        "SYN": "И дал ему завет обрезания. По сем родил он Исаака и обрезал его в восьмой день; а Исаак _родил_ Иакова, Иаков же двенадцать патриархов.",
+        "NEO": "Puis il donna à Abraham l’alliance de la circoncision ; et ainsi Abraham après avoir engendré Isaac le circoncit le huitième jour ; Isaac engendra et circoncit Jacob, et Jacob les douze patriarches.",
+        "NAB": "Then he gave him the covenant of circumcision, and so he became the father of Isaac, and circumcised him on the eighth day, as Isaac did Jacob, and Jacob the twelve patriarchs.",
+        "VAT_ES": "Le dio luego la alianza sellada con la circuncisión y así Abraham, cuando nació su hijo Isaac, lo circuncidó al octavo día; Isaac hizo lo mismo con Jacob, y Jacob con los doce patriarcas.",
+        "CEI": "Interrogandolo personalmente, potrai renderti conto da lui di tutte queste cose delle quali lo accusiamo\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Καὶ οἱ πατριάρχαι ζηλώσαντες τὸν Ἰωσὴφ ἀπέδοντο εἰς Αἴγυπτον· καὶ ἦν ὁ θεὸς μετ’ αὐτοῦ,",
+        "VUL": "Et patriarchæ æmulantes, Joseph vendiderunt in Ægyptum : et erat Deus cum eo,",
+        "SYN": "Патриархи, по зависти, продали Иосифа в Египет; но Бог был с ним,",
+        "NEO": "Poussés par la jalousie, les patriarches vendirent Joseph pour être emmené en Égypte. Mais Dieu était avec lui,",
+        "NAB": "\"And the patriarchs, jealous of Joseph, sold him into slavery in Egypt; but God was with him",
+        "VAT_ES": "Los patriarcas, movidos por la envidia, vendieron a su hermano José para que fuera llevado a Egipto. Pero Dios estaba con él",
+        "CEI": "Si associarono nell'accusa anche i Giudei, affermando che i fatti stavano così."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "καὶ ἐξείλετο αὐτὸν ἐκ πασῶν τῶν θλίψεων αὐτοῦ, καὶ ἔδωκεν αὐτῷ χάριν καὶ σοφίαν ἐναντίον Φαραὼ βασιλέως Αἰγύπτου, καὶ κατέστησεν αὐτὸν ἡγούμενον ἐπ’ Αἴγυπτον καὶ ὅλον τὸν οἶκον αὐτοῦ.",
+        "VUL": "et eripuit eum ex omnibus tribulationibus ejus, et dedit ei gratiam et sapientiam in conspectu pharaonis regis Ægypti : et constituit eum præpositum super Ægyptum, et super omnem domum suam.",
+        "SYN": "и избавил его от всех скорбей его, и даровал мудрость ему и благоволение царя Египетского фараона, _который_ и поставил его начальником над Египтом и над всем домом своим.",
+        "NEO": "et il le délivra de toutes ses épreuves, et lui donna grâce et sagesse devant Pharaon, roi d’Égypte, qui le mit à la tête de l’Égypte et de toute sa maison.",
+        "NAB": "and rescued him from all his afflictions. He granted him favor and wisdom before Pharaoh, the king of Egypt, who put him in charge of Egypt and (of) his entire household.",
+        "VAT_ES": "y lo salvó en todas sus tribulaciones, le dio sabiduría, y lo hizo grato al Faraón, rey de Egipto, el cual lo nombró gobernador de su país y lo puso al frente de su casa real.",
+        "CEI": "Quando il governatore fece cenno a Paolo di parlare, egli rispose: \"So che da molti anni sei giudice di questo popolo e parlo in mia difesa con fiducia."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Ἦλθεν δὲ λιμὸς ἐφ’ ὅλην τὴν γῆν Αἰγύπτου καὶ Χαναάν, καὶ θλίψις μεγάλη· καὶ οὐχ εὕρισκον χορτάσματα οἱ πατέρες ἡμῶν.",
+        "VUL": "Venit autem fames in universam Ægyptum et Chanaan, et tribulatio magna : et non inveniebant cibos patres nostri.",
+        "SYN": "И пришел голод и великая скорбь на всю землю Египетскую и Ханаанскую, и отцы наши не находили пропитания.",
+        "NEO": "Or il survint une famine dans tout le pays d’Égypte et dans celui de Chanaan. La détresse était grande, et nos pères ne trouvaient pas de quoi se nourrir.",
+        "NAB": "Then a famine and great affliction struck all Egypt and Canaan, and our ancestors could find no food;",
+        "VAT_ES": "Luego sobrevino una época de hambre y de extrema miseria en toda la tierra de Egipto y de Canaán, y nuestros padres no tenían qué comer.",
+        "CEI": "Tu stesso puoi accertare che non sono più di dodici giorni da quando mi sono recato a Gerusalemme per il culto."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Ἀκούσας δὲ Ἰακὼβ ὄντα σῖτα ἐν Αἰγύπτῳ, ἐξαπέστειλεν τοὺς πατέρας ἡμῶν πρῶτον.",
+        "VUL": "Cum audisset autem Jacob esse frumentum in Ægypto, misit patres nostros primum :",
+        "SYN": "Иаков же, услышав, что есть хлеб в Египте, послал _туда_ отцов наших в первый раз.",
+        "NEO": "Jacob, ayant appris qu’il y avait des vivres en Égypte, y envoya nos pères une première fois.",
+        "NAB": "but when Jacob heard that there was grain in Egypt, he sent our ancestors there a first time.",
+        "VAT_ES": "Jacob, al enterarse de que en Egipto había trigo, decidió enviar allí a nuestros padres. Esta fue la primera visita.",
+        "CEI": "Essi non mi hanno mai trovato nel tempio a discutere con qualcuno o a incitare il popolo alla sommossa, né nelle sinagoghe, né per la città"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Καὶ ἐν τῷ δευτέρῳ ἀνεγνωρίσθη Ἰωσὴφ τοῖς ἀδελφοῖς αὐτοῦ, καὶ φανερὸν ἐγένετο τῷ Φαραὼ τὸ γένος τοῦ Ἰωσήφ.",
+        "VUL": "et in secundo cognitus est Joseph a fratribus suis, et manifestatum est Pharaoni genus ejus.",
+        "SYN": "А когда [они пришли] во второй раз, Иосиф открылся братьям своим, и известен стал фараону род Иосифов.",
+        "NEO": "Et la seconde fois, Joseph fut reconnu par ses frères, et Pharaon sut quelle était son origine.",
+        "NAB": "The second time, Joseph made himself known to his brothers, and Joseph's family became known to Pharaoh.",
+        "VAT_ES": "Cuando llegaron por segunda vez, José se dio a conocer a sus hermanos, y el mismo Faraón se enteró de origen de José.",
+        "CEI": "e non possono provare nessuna delle cose delle quali ora mi accusano."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ἀποστείλας δὲ Ἰωσὴφ μετεκαλέσατο τὸν πατέρα αὐτοῦ Ἰακώβ, καὶ πᾶσαν τὴν συγγένειαν, ἐν ψυχαῖς ἑβδομήκοντα πέντε.",
+        "VUL": "Mittens autem Joseph, accersivit Jacob patrem suum et omnem cognationem suam, in animabus septuaginta quinque.",
+        "SYN": "Иосиф, послав, призвал отца своего Иакова и все родство свое, душ семьдесят пять.",
+        "NEO": "Alors Joseph envoya chercher son père Jacob et toute sa famille, composée de soixante-quinze personnes.+ 7:14 14. Soixante-quinze personnes. Soixante-dix seulement, d’après le texte hébreu de la Genèse, xlvi, 27b, et la traduction de la Vulg. Mais les LXX ont le chiffre de soixante-quinze.*",
+        "NAB": "Then Joseph sent for his father Jacob, inviting him and his whole clan, seventy-five persons;",
+        "VAT_ES": "Este mandó llamar a su padre Jacob y a toda su familia, unas setenta y cinco personas.",
+        "CEI": "Ammetto invece che adoro il Dio dei miei padri, secondo quella dottrina che essi chiamano setta, credendo in tutto ciò che è conforme alla Legge e sta scritto nei Profeti,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Κατέβη δὲ Ἰακὼβ εἰς Αἴγυπτον, καὶ ἐτελεύτησεν αὐτὸς καὶ οἱ πατέρες ἡμῶν·",
+        "VUL": "Et descendit Jacob in Ægyptum : et defunctus est ipse, et patres nostri.",
+        "SYN": "Иаков перешел в Египет, и скончался сам и отцы наши;",
+        "NEO": "Et Jacob descendit en Égypte, où il mourut, ainsi que nos pères.",
+        "NAB": "and Jacob went down to Egypt. And he and our ancestors died",
+        "VAT_ES": "Jacob se radicó entonces en Egipto, y allí murió, lo mismo que nuestros padres.",
+        "CEI": "nutrendo in Dio la speranza, condivisa pure da costoro, che ci sarà una risurrezione dei giusti e degli ingiusti."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "καὶ μετετέθησαν εἰς Συχέμ, καὶ ἐτέθησαν ἐν τῷ μνήματι ὃ ὠνήσατο Ἀβραὰμ τιμῆς ἀργυρίου παρὰ τῶν υἱῶν Ἐμμὸρ τοῦ Συχέμ.",
+        "VUL": "Et translati sunt in Sichem, et positi sunt in sepulchro, quod emit Abraham pretio argenti a filiis Hemor filii Sichem.",
+        "SYN": "и перенесены были в Сихем и положены во гробе, который купил Авраам ценою серебра у сынов Еммора Сихемова.",
+        "NEO": "Et ils furent transportés à Sichem, et déposés dans le sépulcre qu’Abraham avait acheté à prix d’argent des fils d’Hémor, à Sichem.+ 7:16 16. Les mots « ils furent transportés» doivent s’entendre des douze patriarches, fils de Jacob, mais non de Jacob lui-même qui fut enseveli à Hébron. — \\+qt À Sichem\\+qt*, c’est la leçon de plusieurs anciens manuscrits. Les éditions critiques modernes la reproduisent. D’autres manuscrits ont : τοῦ Συχὲμ, qui peut se traduire \\+qt Père de Sichem\\+qt*, ou bien avec la Vulgate : \\+qt Fils de Sichem.\\+qt**",
+        "NAB": "and were brought back to Shechem and placed in the tomb that Abraham had purchased for a sum of money from the sons of Hamor at Shechem.",
+        "VAT_ES": "Sus restos fueron trasladados a Siquem y sepultados en la tumba que Abraham Había comprado por una suma de dinero a los hijos de Emor, que habitaban en Siquem.",
+        "CEI": "Per questo mi sforzo di conservare in ogni momento una coscienza irreprensibile davanti a Dio e davanti agli uomini."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Καθὼς δὲ ἤγγιζεν ὁ χρόνος τῆς ἐπαγγελίας ἧς ὤμοσεν ὁ θεὸς τῷ Ἀβραάμ, ηὔξησεν ὁ λαὸς καὶ ἐπληθύνθη ἐν Αἰγύπτῳ,",
+        "VUL": "Cum autem appropinquaret tempus promissionis quam confessus erat Deus Abrahæ, crevit populus, et multiplicatus est in Ægypto,",
+        "SYN": "А по мере, как приближалось время _исполниться_ обетованию, о котором клялся Бог Аврааму, народ возрастал и умножался в Египте,",
+        "NEO": "Comme le temps approchait où devait s’accomplir la promesse que Dieu avait jurée à Abraham, le peuple s’accrut et se multiplia en Égypte,",
+        "NAB": "\"When the time drew near for the fulfillment of the promise that God pledged to Abraham, the people had increased and become very numerous in Egypt,",
+        "VAT_ES": "Al acercarse el tiempo en que debía cumplirse la promesa que Dios había hecho a Abraham, el pueblo creció y se multiplicó en Egipto,",
+        "CEI": "Ora, dopo molti anni, sono venuto a portare elemosine al mio popolo e per offrire sacrifici;"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "ἄχρι οὗ ἀνέστη βασιλεὺς ἕτερος, ὃς οὐκ ᾔδει τὸν Ἰωσήφ.",
+        "VUL": "quoadusque surrexit alius rex in Ægypto, qui non sciebat Joseph.",
+        "SYN": "до тех пор, как восстал иной царь, который не знал Иосифа.",
+        "NEO": "jusqu’à ce que parut dans ce pays un autre roi qui n’avait pas connu Joseph.",
+        "NAB": "until another king who knew nothing of Joseph came to power (in Egypt).",
+        "VAT_ES": "hasta que vino un nuevo rey que no sabía nada acerca de José.",
+        "CEI": "in occasione di questi essi mi hanno trovato nel tempio dopo che avevo compiuto le purificazioni. Non c'era folla né tumulto."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Οὗτος κατασοφισάμενος τὸ γένος ἡμῶν, ἐκάκωσεν τοὺς πατέρας ἡμῶν, τοῦ ποιεῖν ἔκθετα τὰ βρέφη αὐτῶν, εἰς τὸ μὴ ζῳογονεῖσθαι.",
+        "VUL": "Hic circumveniens genus nostrum, afflixit patres nostros ut exponerent infantes suos, ne vivificarentur.",
+        "SYN": "Сей, ухищряясь против рода нашего, притеснял отцов наших, принуждая их бросать детей своих, чтобы не оставались в живых.",
+        "NEO": "Ce roi, usant d’artifice envers notre race, maltraita nos pères, au point de leur faire exposer leurs enfants, afin qu’ils ne vécussent pas.",
+        "NAB": "He dealt shrewdly with our people and oppressed (our) ancestors by forcing them to expose their infants, that they might not survive.",
+        "VAT_ES": "Este rey, empleando la astucia contra nuestro pueblo, maltrató a nuestros padres y los obligó a que abandonaran a sus hijos recién nacidos para que no sobrevivieran.",
+        "CEI": "Furono dei Giudei della provincia d'Asia a trovarmi, e loro dovrebbero comparire qui davanti a te ad accusarmi, se hanno qualche cosa contro di me;"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Ἐν ᾧ καιρῷ ἐγεννήθη Μωσῆς, καὶ ἦν ἀστεῖος τῷ θεῷ· ὃς ἀνετράφη μῆνας τρεῖς ἐν τῷ οἴκῳ τοῦ πατρός.",
+        "VUL": "Eodem tempore natus est Moyses, et fuit gratus Deo : qui nutritus est tribus mensibus in domo patris sui.",
+        "SYN": "В это время родился Моисей, и был прекрасен пред Богом. Три месяца он был питаем в доме отца своего.",
+        "NEO": "À cette époque naquit Moïse, qui était beau aux yeux de Dieu ;+ 7:20 20. Beau aux yeux de Dieu, c.‑à-d. très beau ; litt., si beau, qu’il paraissait tel aux yeux de Dieu même. Comp. Gen. x, 9 ; Jon. iii, 3.* il fut nourri trois mois dans la maison de son père.",
+        "NAB": "At this time Moses was born, and he was extremely beautiful. For three months he was nursed in his father's house;",
+        "VAT_ES": "En ese tiempo nació Moisés, que era muy hermoso delante de Dios. Durante tres meses fue criado en la casa de su padre,",
+        "CEI": "oppure dicano i presenti stessi quale colpa han trovato in me quando sono comparso davanti al sinedrio,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Ἐκτεθέντα δὲ αὐτόν, ἀνείλετο ἡ θυγάτηρ Φαραώ, καὶ ἀνεθρέψατο αὐτὸν ἑαυτῇ εἰς υἱόν.",
+        "VUL": "Exposito autem illo, sustulit eum filia Pharaonis, et nutrivit eum sibi in filium.",
+        "SYN": "А когда был брошен, взяла его дочь фараонова и воспитала его у себя, как сына.",
+        "NEO": "Et quand il eut été exposé, la fille de Pharaon le recueillit et l’éleva comme son fils.",
+        "NAB": "but when he was exposed, Pharaoh's daughter adopted him and brought him up as her own son.",
+        "VAT_ES": "y al ser abandonado, la hija del Faraón lo recogió y lo crió como a su propio hijo.",
+        "CEI": "se non questa sola frase che gridai stando in mezzo a loro: A motivo della risurrezione dei morti io vengo giudicato oggi davanti a voi!\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Καὶ ἐπαιδεύθη Μωσῆς πάσῃ σοφίᾳ Αἰγυπτίων· ἦν δὲ δυνατὸς ἐν λόγοις καὶ ἔργοις.",
+        "VUL": "Et eruditus est Moyses omni sapientia Ægyptiorum, et erat potens in verbis et in operibus suis.",
+        "SYN": "И научен был Моисей всей мудрости Египетской, и был силен в словах и делах.",
+        "NEO": "Moïse fut instruit dans toute la sagesse des Égyptiens, et il était puissant en paroles et en œuvres.",
+        "NAB": "Moses was educated (in) all the wisdom of the Egyptians and was powerful in his words and deeds.",
+        "VAT_ES": "Así Moisés fue iniciado en toda la sabiduría de los egipcios y llegó a ser poderoso en palabras y obras.",
+        "CEI": "Allora Felice, che era assai bene informato circa la nuova dottrina, li rimandò dicendo: \"Quando verrà il tribuno Lisia, esaminerò il vostro caso\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Ὡς δὲ ἐπληροῦτο αὐτῷ τεσσαρακονταετὴς χρόνος, ἀνέβη ἐπὶ τὴν καρδίαν αὐτοῦ ἐπισκέψασθαι τοὺς ἀδελφοὺς αὐτοῦ τοὺς υἱοὺς Ἰσραήλ.",
+        "VUL": "Cum autem impleretur ei quadraginta annorum tempus, ascendit in cor ejus ut visitaret fratres suos filios Israël.",
+        "SYN": "Когда же исполнилось ему сорок лет, пришло ему на сердце посетить братьев своих, сынов Израилевых.",
+        "NEO": "Quand il eut atteint l’âge de quarante ans, il lui vint dans l’esprit de visiter ses frères, les enfants d’Israël.",
+        "NAB": "\"When he was forty years old, he decided to visit his kinsfolk, the Israelites.",
+        "VAT_ES": "Al cumplir cuarenta años, sintió un vivo deseo de visitar a sus hermanos, los israelitas.",
+        "CEI": "E ordinò al centurione di tenere Paolo sotto custodia, concedendogli però una certa libertà e senza impedire a nessuno dei suoi amici di dargli assistenza."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Καὶ ἰδών τινα ἀδικούμενον, ἠμύνατο καὶ ἐποίησεν ἐκδίκησιν τῷ καταπονουμένῳ, πατάξας τὸν Αἰγύπτιον·",
+        "VUL": "Et cum vidisset quemdam injuriam patientem, vindicavit illum, et fecit ultionem ei qui injuriam sustinebat, percusso Ægyptio.",
+        "SYN": "И, увидев одного из них обижаемого, вступился и отмстил за оскорбленного, поразив Египтянина.",
+        "NEO": "Il en vit un qu’on outrageait ; prenant sa défense, il vengea l’opprimé en tuant l’Égyptien.",
+        "NAB": "When he saw one of them treated unjustly, he defended and avenged the oppressed man by striking down the Egyptian.",
+        "VAT_ES": "Y como vio que maltrataban a uno de ellos salió en su defensa, y vengó al oprimido matando al egipcio.",
+        "CEI": "Dopo alcuni giorni Felice arrivò in compagnia della moglie Drusilla, che era giudea; fatto chiamare Paolo, lo ascoltava intorno alla fede in Cristo Gesù."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "ἐνόμιζεν δὲ συνιέναι τοὺς ἀδελφοὺς αὐτοῦ ὅτι ὁ θεὸς διὰ χειρὸς αὐτοῦ δίδωσιν αὐτοῖς σωτηρίαν· οἱ δὲ οὐ συνῆκαν.",
+        "VUL": "Existimabat autem intelligere fratres, quoniam Deus per manum ipsius daret salutem illis : at illi non intellexerunt.",
+        "SYN": "Он думал, поймут братья его, что Бог рукою его дает им спасение; но они не поняли.",
+        "NEO": "Or il pensait que ses frères comprendraient que Dieu leur accordait la délivrance par sa main ; mais ils ne le* comprirent pas.",
+        "NAB": "He assumed (his) kinsfolk would understand that God was offering them deliverance through him, but they did not understand.",
+        "VAT_ES": "Moisés pensaba que sus hermanos iban a comprender que Dios, por su intermedio, les daría la salvación. Pero ellos no lo entendieron así.",
+        "CEI": "Ma quando egli si mise a parlare di giustizia, di continenza e del giudizio futuro, Felice si spaventò e disse: \"Per il momento puoi andare; ti farò chiamare di nuovo quando ne avrò il tempo\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Τῇ τε ἐπιούσῃ ἡμέρᾳ ὤφθη αὐτοῖς μαχομένοις, καὶ συνήλασεν αὐτοὺς εἰς εἰρήνην, εἰπών, Ἄνδρες, ἀδελφοί ἐστε ὑμεῖς· ἵνα τί ἀδικεῖτε ἀλλήλους;",
+        "VUL": "Sequenti vero die apparuit illis litigantibus : et reconciliabat eos in pace, dicens : Viri, fratres estis : ut quid nocetis alterutrum ?",
+        "SYN": "На следующий день, когда некоторые из них дрались, он явился и склонял их к миру, говоря: вы братья; зачем обижаете друг друга?",
+        "NEO": "Le jour suivant, en ayant rencontré deux* qui se battaient, il les exhorta à la paix en disant : « Hommes, vous êtes frères : pourquoi vous maltraiter l’un l’autre ? »",
+        "NAB": "The next day he appeared to them as they were fighting and tried to reconcile them peacefully, saying, 'Men, you are brothers. Why are you harming one another?'",
+        "VAT_ES": "Al día siguiente sorprendió a dos israelitas que se estaban peleando y trató de reconciliarlos, diciéndoles: «Ustedes son hermanos, &iquest;por qué se hacen daño?».",
+        "CEI": "Sperava frattanto che Paolo gli avrebbe dato del denaro; per questo abbastanza spesso lo faceva chiamare e conversava con lui."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ ἀδικῶν τὸν πλησίον ἀπώσατο αὐτόν, εἰπών, Τίς σε κατέστησεν ἄρχοντα καὶ δικαστὴν ἐφ’ ἡμᾶς;",
+        "VUL": "Qui autem injuriam faciebat proximo, repulit eum, dicens : Quis te constituit principem et judicem super nos ?",
+        "SYN": "Но обижающий ближнего оттолкнул его, сказав: кто тебя поставил начальником и судьею над нами?",
+        "NEO": "Mais celui qui maltraitait son prochain le repoussa, en disant : « Qui t’a établi chef et juge sur nous ?",
+        "NAB": "Then the one who was harming his neighbor pushed him aside, saying, 'Who appointed you ruler and judge over us?",
+        "VAT_ES": "Pero el que maltrataba a su compañero rechazó a Moisés y le dijo: «&iquest;Quién te ha nombrado jefe o árbitro nuestro?",
+        "CEI": "Trascorsi due anni, Felice ebbe come successore Porcio Festo; ma Felice, volendo dimostrare benevolenza verso i Giudei, lasciò Paolo in prigione."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Μὴ ἀνελεῖν με σὺ θέλεις, ὃν τρόπον ἀνεῖλες χθὲς τὸν Αἰγύπτιον;",
+        "VUL": "Numquid interficere me tu vis, quemadmodum interfecisti heri Ægyptium ?",
+        "SYN": "Не хочешь ли ты убить и меня, как вчера убил Египтянина?",
+        "NEO": "Veux-tu me tuer, comme tu as tué hier l’Égyptien ? »",
+        "NAB": "Are you thinking of killing me as you killed the Egyptian yesterday?'",
+        "VAT_ES": "&iquest;Acaso piensas matarme como mataste ayer al egipcio?»."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Ἔφυγεν δὲ Μωσῆς ἐν τῷ λόγῳ τούτῳ, καὶ ἐγένετο πάροικος ἐν γῇ Μαδιάμ, οὗ ἐγέννησεν υἱοὺς δύο.",
+        "VUL": "Fugit autem Moyses in verbo isto : et factus est advena in terra Madian, ubi generavit filios duos.",
+        "SYN": "От сих слов Моисей убежал и сделался пришельцем в земле Мадиамской, где родились от него два сына.",
+        "NEO": "À cette parole, Moïse s’enfuit et alla habiter dans la terre de Madian, où il engendra deux fils.",
+        "NAB": "Moses fled when he heard this and settled as an alien in the land of Midian, where he became the father of two sons.",
+        "VAT_ES": "Al oír esto, Moisés huyó y fue a vivir al país de Madián, donde tuvo dos hijos."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Καὶ πληρωθέντων ἐτῶν τεσσαράκοντα, ὤφθη αὐτῷ ἐν τῇ ἐρήμῳ τοῦ ὄρους Σινᾶ ἄγγελος κυρίου ἐν φλογὶ πυρὸς βάτου.",
+        "VUL": "Et expletis annis quadraginta, apparuit illi in deserto montis Sina angelus in igne flammæ rubi.",
+        "SYN": "По исполнении сорока лет явился ему в пустыне горы Синая Ангел Господень в пламени горящего тернового куста.",
+        "NEO": "Quarante ans après, au désert du mont Sinaï, un ange+ 7:30 30. Un ange, le Seigneur lui-même (versets 31, 33). Comp. Exod. iii, 4.* lui apparut dans la flamme d’un buisson en feu.",
+        "NAB": "\"Forty years later, an angel appeared to him in the desert near Mount Sinai in the flame of a burning bush.",
+        "VAT_ES": "Al cabo de cuarenta años se le apareció un ángel en el desierto del monto Sinaí, en la llama de una zarza ardiente."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ Μωσῆς ἰδὼν ἐθαύμαζεν τὸ ὅραμα· προσερχομένου δὲ αὐτοῦ κατανοῆσαι, ἐγένετο φωνὴ κυρίου πρὸς αὐτόν,",
+        "VUL": "Moyses autem videns, admiratus est visum. Et accedente illo ut consideraret, facta est ad eum vox Domini, dicens :",
+        "SYN": "Моисей, увидев, дивился видению; а когда подходил рассмотреть, был к нему глас Господень:",
+        "NEO": "À cette vue, Moïse fut saisi d’étonnement, et comme il s’approchait pour examiner, la voix du Seigneur se fit entendre [à lui] :",
+        "NAB": "When Moses saw it, he was amazed at the sight, and as he drew near to look at it, the voice of the Lord came,",
+        "VAT_ES": "Moisés quedó maravillado ante tal aparición y, al acercarse para ver mejor, oyó la voy del Señor que le decía:"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "Ἐγὼ ὁ θεὸς τῶν πατέρων σου, ὁ θεὸς Ἀβραὰμ καὶ ὁ θεὸς Ἰσαὰκ καὶ ὁ θεὸς Ἰακώβ. Ἔντρομος δὲ γενόμενος Μωσῆς οὐκ ἐτόλμα κατανοῆσαι.",
+        "VUL": "Ego sum Deus patrum tuorum, Deus Abraham, Deus Isaac, et Deus Jacob. Tremefactus autem Moyses, non audebat considerare.",
+        "SYN": "Я Бог отцов твоих, Бог Авраама и Бог Исаака и Бог Иакова. Моисей, объятый трепетом, не смел смотреть.",
+        "NEO": "« Je suis le Dieu de tes pères, le Dieu d’Abraham, d’Isaac et de Jacob. » — Et Moïse tout tremblant n’osait regarder.",
+        "NAB": "'I am the God of your fathers, the God of Abraham, of Isaac, and of Jacob.' Then Moses, trembling, did not dare to look at it.",
+        "VAT_ES": "«Yo soy el Dios de tus padres, el Dios de Abraham, de Isaac y de Jacob». Moisés atemorizado, no se atrevió a mirar."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Εἶπεν δὲ αὐτῷ ὁ κύριος, Λῦσον τὸ ὑπόδημα τῶν ποδῶν σου· ὁ γὰρ τόπος ἐν ᾧ ἕστηκας γῆ ἁγία ἐστίν.",
+        "VUL": "Dixit autem illi Dominus : Solve calceamentum pedum tuorum : locus enim in quo stas, terra sancta est.",
+        "SYN": "И сказал ему Господь: сними обувь с ног твоих, ибо место, на котором ты стоишь, есть земля святая.",
+        "NEO": "Alors le seigneur lui dit : « Ôte la chaussure de tes pieds, car le lieu que tu foules est une terre sainte.",
+        "NAB": "But the Lord said to him, 'Remove the sandals from your feet, for the place where you stand is holy ground.",
+        "VAT_ES": "Entonces el Señor le dijo: «Quítate las sandalias porque estás pisando un lugar sagrado."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "Ἰδὼν εἶδον τὴν κάκωσιν τοῦ λαοῦ μου τοῦ ἐν Αἰγύπτῳ, καὶ τοῦ στεναγμοῦ αὐτῶν ἤκουσα· καὶ κατέβην ἐξελέσθαι αὐτούς· καὶ νῦν δεῦρο, ἀποστελῶ σε εἰς Αἴγυπτον.",
+        "VUL": "Videns vidi afflictionem populi mei qui est in Ægypto, et gemitum eorum audivi, et descendi liberare eos. Et nunc veni, et mittam te in Ægyptum.",
+        "SYN": "Я вижу притеснение народа Моего в Египте, и слышу стенание его, и нисшел избавить его: итак пойди, Я пошлю тебя в Египет.",
+        "NEO": "J’ai vu l’affliction de mon peuple qui est en Égypte, j’ai entendu ses gémissements, et je suis descendu pour le délivrer. Viens donc maintenant et je t’enverrai en Égypte. » —",
+        "NAB": "I have witnessed the affliction of my people in Egypt and have heard their groaning, and I have come down to rescue them. Come now, I will send you to Egypt.'",
+        "VAT_ES": "Yo he visto la opresión de mi Pueblo que está en Egipto, he oído sus gritos de dolor, y por eso he venido a librarlos. Ahora prepárate, porque he decidido enviarte a Egipto»."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "Τοῦτον τὸν Μωσῆν ὃν ἠρνήσαντο εἰπόντες, Τίς σε κατέστησεν ἄρχοντα καὶ δικαστήν; τοῦτον ὁ θεὸς ἄρχοντα καὶ λυτρωτὴν ἀπέστειλεν ἐν χειρὶ ἀγγέλου τοῦ ὀφθέντος αὐτῷ ἐν τῇ βάτῳ.",
+        "VUL": "Hunc Moysen, quem negaverunt, dicentes : Quis te constituit principem et judicem ? hunc Deus principem et redemptorem misit, cum manu angeli qui apparuit illi in rubo.",
+        "SYN": "Сего Моисея, которого они отвергли, сказав: кто тебя поставил начальником и судьею? сего Бог чрез Ангела, явившегося ему в терновом кусте, послал начальником и избавителем.",
+        "NEO": "Ce Moïse qu’ils avaient renié en disant : Qui t’a établi chef et juge ? c’est lui que Dieu a envoyé comme chef et libérateur, avec l’assistance de l’ange qui lui était apparu dans le buisson.",
+        "NAB": "This Moses, whom they had rejected with the words, 'Who appointed you ruler and judge?' God sent as (both) ruler and deliverer, through the angel who appeared to him in the bush.",
+        "VAT_ES": "Y a este Moisés, a quien ellos rechazaron diciendo: &iquest;Quién te ha nombrado jefe o árbitro nuestro?, Dios lo envió como jefe y libertador con la ayuda del ángel que se apareció en la zarza."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "Οὗτος ἐξήγαγεν αὐτούς, ποιήσας τέρατα καὶ σημεῖα ἐν γῇ Αἰγύπτῳ καὶ ἐν Ἐρυθρᾷ θαλάσσῃ, καὶ ἐν τῇ ἐρήμῳ ἔτη τεσσαράκοντα.",
+        "VUL": "Hic eduxit illos faciens prodigia et signa in terra Ægypti, et in rubro mari, et in deserto annis quadraginta.",
+        "SYN": "Сей вывел их, сотворив чудеса и знамения в земле Египетской, и в Чермном море, и в пустыне в продолжение сорока лет.",
+        "NEO": "C’est lui qui les a fait sortir, en opérant des prodiges et des miracles dans la terre d’Égypte, dans la mer Rouge et au désert pendant quarante ans.",
+        "NAB": "This man led them out, performing wonders and signs in the land of Egypt, at the Red Sea, and in the desert for forty years.",
+        "VAT_ES": "El los liberó, obrando milagros y signos en Egipto, en el Mar Rojo y en el desierto, durante cuarenta años."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "Οὗτός ἐστιν ὁ Μωσῆς ὁ εἰπὼν τοῖς υἱοῖς Ἰσραήλ, Προφήτην ὑμῖν ἀναστήσει κύριος ὁ θεὸς ἡμῶν ἐκ τῶν ἀδελφῶν ὑμῶν ὡς ἐμέ.",
+        "VUL": "Hic est Moyses, qui dixit filiis Israël : Prophetam suscitabit vobis Deus de fratribus vestris, tamquam me : ipsum audietis.",
+        "SYN": "Это тот Моисей, который сказал сынам Израилевым: Пророка воздвигнет вам Господь Бог ваш из братьев ваших, как меня; Его слушайте.",
+        "NEO": "C’est ce Moïse qui dit aux enfants d’Israël : « Dieu vous suscitera d’entre vos frères un prophète+ 7:37 37. Un prophète: allusion au Messie. Voy. Deut. xviii, 15. Comp. .* comme moi : [écoutez-le]. »",
+        "NAB": "It was this Moses who said to the Israelites, 'God will raise up for you, from among your own kinsfolk, a prophet like me.'",
+        "VAT_ES": "Y este mismo Moisés dijo a los israelitas: Dios suscitará de entre ustedes un profeta semejante a mí."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "BYZ": "Οὗτός ἐστιν ὁ γενόμενος ἐν τῇ ἐκκλησίᾳ ἐν τῇ ἐρήμῳ μετὰ τοῦ ἀγγέλου τοῦ λαλοῦντος αὐτῷ ἐν τῷ ὄρει Σινᾶ καὶ τῶν πατέρων ἡμῶν· ὃς ἐδέξατο λόγον ζῶντα δοῦναι ἡμῖν·",
+        "VUL": "Hic est qui fuit in ecclesia in solitudine cum angelo, qui loquebatur ei in monte Sina, et cum patribus nostris : qui accepit verba vitæ dare nobis.",
+        "SYN": "Это тот, который был в собрании в пустыне с Ангелом, говорившим ему на горе Синае, и с отцами нашими, и который принял живые слова, чтобы передать нам,",
+        "NEO": "C’est lui qui, au milieu de l’assemblée, au désert, conférant avec l’ange qui lui parlait sur le mont Sinaï, et avec nos pères, a reçu des oracles vivants pour nous les transmettre.+ 7:38 38. Au désert, au pied du Sinaï, pour la promulgation de la Loi.*",
+        "NAB": "It was he who, in the assembly in the desert, was with the angel who spoke to him on Mount Sinai and with our ancestors, and he received living utterances to hand on to us.",
+        "VAT_ES": "Y cuando el pueblo estaba congregado en el desierto, él hizo de intermediario en el monte Sinaí, entre el ángel que le habló y nuestros padres, y recibió las palabras de vida que luego nos comunicó."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "BYZ": "ᾧ οὐκ ἠθέλησαν ὑπήκοοι γενέσθαι οἱ πατέρες ἡμῶν, ἀλλ’ ἀπώσαντο, καὶ ἐστράφησαν τῇ καρδίᾳ αὐτῶν εἰς Αἴγυπτον,",
+        "VUL": "Cui noluerunt obedire patres nostri : sed repulerunt, et aversi sunt cordibus suis in Ægyptum,",
+        "SYN": "которому отцы наши не хотели быть послушными, но отринули его и обратились сердцами своими к Египту,",
+        "NEO": "Nos pères, loin de vouloir lui obéir, le repoussèrent, et, retournant de cœur en Égypte,",
+        "NAB": "\"Our ancestors were unwilling to obey him; instead, they pushed him aside and in their hearts turned back to Egypt,",
+        "VAT_ES": "Pero nuestros padres no sólo se negaron a obedecerle, sino que lo rechazaron y, sintiendo una gran nostalgia por Egipto,"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "BYZ": "εἰπόντες τῷ Ἀαρών, Ποίησον ἡμῖν θεοὺς οἳ προπορεύσονται ἡμῶν· ὁ γὰρ Μωσῆς οὗτος, ὃς ἐξήγαγεν ἡμᾶς ἐκ γῆς Αἰγύπτου, οὐκ οἴδαμεν τί γέγονεν αὐτῷ.",
+        "VUL": "dicentes ad Aaron : Fac nobis deos qui præcedant nos : Moyses enim hic, qui eduxit nos de terra Ægypti, nescimus quid factum sit ei.",
+        "SYN": "сказав Аарону: сделай нам богов, которые предшествовали бы нам; ибо с Моисеем, который вывел нас из земли Египетской, не знаем, что случилось.",
+        "NEO": "ils dirent à Aaron : « Fais-nous des dieux qui marchent devant nous ; car ce Moïse qui nous a fait sortir du pays d’Égypte, nous ne savons ce qu’il est devenu. »",
+        "NAB": "saying to Aaron, 'Make us gods who will be our leaders. As for that Moses who led us out of the land of Egypt, we do not know what has happened to him.'",
+        "VAT_ES": "dijeron a Aarón: «Fabrícanos dioses que vayan al frente de nosotros, porque no sabemos qué le ha pasado a ese Moisés, ese hombre que nos hizo salir de Egipto»."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "BYZ": "Καὶ ἐμοσχοποίησαν ἐν ταῖς ἡμέραις ἐκείναις, καὶ ἀνήγαγον θυσίαν τῷ εἰδώλῳ, καὶ εὐφραίνοντο ἐν τοῖς ἔργοις τῶν χειρῶν αὐτῶν.",
+        "VUL": "Et vitulum fecerunt in diebus illis, et obtulerunt hostiam simulacro, et lætabantur in operibus manuum suarum.",
+        "SYN": "И сделали в те дни тельца, и принесли жертву идолу, и веселились перед делом рук своих.",
+        "NEO": "Ils fabriquèrent alors un veau d’or, et ils offrirent un sacrifice à l’idole et se réjouirent de l’œuvre de leurs mains.+ 7:41 42-43. S. Étienne cite Amos d’après les LXX.*",
+        "NAB": "So they made a calf in those days, offered sacrifice to the idol, and reveled in the works of their hands.",
+        "VAT_ES": "Entonces, fabricaron un ternero de oro, ofrecieron un sacrificio al ídolo y festejaron la obra de sus manos."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "BYZ": "Ἔστρεψεν δὲ ὁ θεός, καὶ παρέδωκεν αὐτοὺς λατρεύειν τῇ στρατιᾷ τοῦ οὐρανοῦ· καθὼς γέγραπται ἐν βίβλῳ τῶν προφητῶν, Μὴ σφάγια καὶ θυσίας προσηνέγκατέ μοι ἔτη τεσσαράκοντα ἐν τῇ ἐρήμῳ, οἶκος Ἰσραήλ;",
+        "VUL": "Convertit autem Deus, et tradidit eos servire militiæ cæli, sicut scriptum est in libro prophetarum : [Numquid victimas et hostias obtulistis mihi/ annis quadraginta in deserto, domus Israël ?/",
+        "SYN": "Бог же отвратился и оставил их служить воинству небесному, как написано в книге пророков: дом Израилев! приносили ли вы Мне заколения и жертвы в продолжение сорока лет в пустыне?",
+        "NEO": "Mais Dieu se détourna et les livra au culte de l’armée du ciel,+ 7:42 42. L’armée du ciel, les astres : soleil, lune, étoiles.* selon qu’il est écrit au livre des prophètes : « M’avez-vous offert des victimes et des sacrifices pendant quarante ans au désert, maison d’Israël… ?",
+        "NAB": "Then God turned and handed them over to worship the host of heaven, as it is written in the book of the prophets: 'Did you bring me sacrifices and offerings for forty years in the desert, O house of Israel?",
+        "VAT_ES": "Pero Dios se apartó de ellos y los entregó al culto de los astros, como está escrito en el libro de los Profetas: \"Israelitas, &iquest;acaso ustedes me ofrecieron víctimas y sacrificios durante los cuarenta años que estuvieron en el desierto?"
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "BYZ": "Καὶ ἀνελάβετε τὴν σκηνὴν τοῦ Μολόχ, καὶ τὸ ἄστρον τοῦ θεοῦ ὑμῶν Ῥεμφάν, τοὺς τύπους οὓς ἐποιήσατε προσκυνεῖν αὐτοῖς· καὶ μετοικιῶ ὑμᾶς ἐπέκεινα Βαβυλῶνος.",
+        "VUL": "Et suscepistis tabernaculum Moloch,/ et sidus dei vestri Rempham,/ figuras quas fecistis adorare eas :/ et transferam vos trans Babylonem.]",
+        "SYN": "Вы приняли скинию Молохову и звезду бога вашего Ремфана, изображения, которые вы сделали, чтобы поклоняться им: и Я переселю вас далее Вавилона.",
+        "NEO": "Vous avez porté la tente de Moloch+ 7:43 43. Vous avez porté la tente de Moloch, petite tente renfermant l’image de ce dieu des Ammonites, et que l’on portait dans les expéditions. — \\+qt Raiphan\\+qt*, Vulgate : \\+qt Rempham\\+qt*, corruption de Ῥαιφάν, nom de Saturne ; en assyrien, \\+qt Kaaiwanu\\+qt*. En hébreu, \\+qt Kioun\\+qt*, Amos, v, 26. ponctuation fautive des massorètes pour \\+qt Kévan\\+qt* (arabe \\+qt Keiwan\\+qt*).* et l’astre de votre dieu Raiphan, ces images que vous avez faites pour les adorer ! C’est pourquoi je vous transporterai au delà de Babylone. » —",
+        "NAB": "No, you took up the tent of Moloch and the star of (your) god Rephan, the images that you made to worship. So I shall take you into exile beyond Babylon.'",
+        "VAT_ES": "Por el contrario, llevaron consigo la carpa de Moloc y la estrella del Dios Refán, esos ídolos que ustedes fabricaron para adorarlos. Por eso yo los deportaré más allá de Babilonia\"."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "BYZ": "Ἡ σκηνὴ τοῦ μαρτυρίου ἦν τοῖς πατράσιν ἡμῶν ἐν τῇ ἐρήμῳ, καθὼς διετάξατο ὁ λαλῶν τῷ Μωσῇ, ποιῆσαι αὐτὴν κατὰ τὸν τύπον ὃν ἑωράκει.",
+        "VUL": "Tabernaculum testimonii fuit cum patribus nostris in deserto, sicut disposuit illis Deus loquens ad Moysen, ut faceret illud secundum formam quam viderat.",
+        "SYN": "Скиния свидетельства была у отцов наших в пустыне, как повелел Говоривший Моисею сделать ее по образцу, им виденному.",
+        "NEO": "Nos pères dans le désert avaient le tabernacle du témoignage, comme l’avait ordonné celui qui dit à Moïse de le construire selon le modèle qu’il avait vu.+ 7:44 44. Le tabernacle du témoignage, le \\+qt ’ôhel mô’éd\\+qt* du texte hébreu () que les LXX ont traduit par σκηνῇ τοῦ μαρτυρίου.*",
+        "NAB": "\"Our ancestors had the tent of testimony in the desert just as the One who spoke to Moses directed him to make it according to the pattern he had seen.",
+        "VAT_ES": "En el desierto, nuestros padres tenían la Morada del Testimonio. Así lo había dispuesto Dios, cuando ordenó a Moisés que la hiciera conforme al modelo que había visto."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "BYZ": "Ἣν καὶ εἰσήγαγον διαδεξάμενοι οἱ πατέρες ἡμῶν μετὰ Ἰησοῦ ἐν τῇ κατασχέσει τῶν ἐθνῶν, ὧν ἐξῶσεν ὁ θεὸς ἀπὸ προσώπου τῶν πατέρων ἡμῶν, ἕως τῶν ἡμερῶν Δαυίδ·",
+        "VUL": "Quod et induxerunt, suscipientes patres nostri cum Jesu in possessionem gentium quas expulit Deus a facie patrum nostrorum, usque in diebus David,",
+        "SYN": "Отцы наши с Иисусом, взяв ее, внесли во владения народов, изгнанных Богом от лица отцов наших. _Так_ _было_ до дней Давида.",
+        "NEO": "L’ayant reçu de Moïse*, nos pères l’apportèrent, sous la conduite de Josué, lorsqu’ils firent la conquête du pays sur les nations que Dieu chassa devant eux, et il y subsista* jusqu’aux jours de David.",
+        "NAB": "Our ancestors who inherited it brought it with Joshua when they dispossessed the nations that God drove out from before our ancestors, up to the time of David,",
+        "VAT_ES": "Nuestros padres recibieron como herencia esta Morada y, bajo la guía de Josué, la introdujeron en el país conquistado a los pueblos que Dios iba expulsando a su paso. Así fue hasta el tiempo de David."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "BYZ": "ὃς εὗρεν χάριν ἐνώπιον τοῦ θεοῦ, καὶ ᾐτήσατο εὑρεῖν σκήνωμα τῷ θεῷ Ἰακώβ.",
+        "VUL": "qui invenit gratiam ante Deum, et petiit ut inveniret tabernaculum Deo Jacob.",
+        "SYN": "Сей обрел благодать пред Богом и молил, _чтобы_ найти жилище Богу Иакова.",
+        "NEO": "Ce roi trouva grâce devant Dieu, et demanda d’élever une demeure pour le Dieu de Jacob.",
+        "NAB": "who found favor in the sight of God and asked that he might find a dwelling place for the house of Jacob.",
+        "VAT_ES": "David, que gozó del favor de Dios, le pidió la gracia de construir una Morada para el Dios de Jacob."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "BYZ": "Σολομῶν δὲ ᾠκοδόμησεν αὐτῷ οἶκον.",
+        "VUL": "Salomon autem ædificavit illi domum.",
+        "SYN": "Соломон же построил Ему дом.",
+        "NEO": "Néanmoins ce fut Salomon qui lui bâtit un temple.+ 7:47 47. I Rois, vi, 1-38.*",
+        "NAB": "But Solomon built a house for him.",
+        "VAT_ES": "Pero fue Salomón el que le edificó una casa,"
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ οὐχ ὁ ὕψιστος ἐν χειροποιήτοις ναοῖς κατοικεῖ, καθὼς ὁ προφήτης λέγει,",
+        "VUL": "Sed non Excelsus in manufactis habitat, sicut propheta dicit :",
+        "SYN": "Но Всевышний не в рукотворенных храмах живет, как говорит пророк:",
+        "NEO": "Mais le Très-Haut n’habite pas dans les temples faits de main d’homme, selon la parole du prophète :",
+        "NAB": "Yet the Most High does not dwell in houses made by human hands. As the prophet says:",
+        "VAT_ES": "si bien es cierto que el Altísimo no habita en casas hechas por la mano del hombre. Así lo dice el Profeta:"
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "BYZ": "Ὁ οὐρανός μοι θρόνος, ἡ δὲ γῆ ὑποπόδιον τῶν ποδῶν μου· ποῖον οἶκον οἰκοδομήσετέ μοι; λέγει κύριος· ἢ τίς τόπος τῆς καταπαύσεώς μου;",
+        "VUL": "[Cælum mihi sedes est :/ terra autem scabellum pedum meorum./ Quam domum ædificabitis mihi ? dicit Dominus :/ aut quis locus requietionis meæ est ?/",
+        "SYN": "Небо -- престол Мой, и земля -- подножие ног Моих. Какой дом созиждете Мне, говорит Господь, или какое место для покоя Моего?",
+        "NEO": "« Le ciel est mon trône, et la terre l’escabeau de mes pieds. Quelle demeure me bâtirez-vous, dit le Seigneur, ou quel sera le lieu de mon repos ?+ 7:49 49-50. Texte d’Isaïe cité d’après les LXX.*",
+        "NAB": "'The heavens are my throne, the earth is my footstool. What kind of house can you build for me? says the Lord, or what is to be my resting place?",
+        "VAT_ES": "\"El cielo es mi trono, y la tierra la tarima de mis pies. &iquest;Qué casa me edificarán ustedes, dice el Señor, o donde podrá estar mi lugar de reposo?"
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "BYZ": "Οὐχὶ ἡ χείρ μου ἐποίησεν ταῦτα πάντα;",
+        "VUL": "Nonne manus mea fecit hæc omnia ?]",
+        "SYN": "Не Моя ли рука сотворила все сие?",
+        "NEO": "N’est-ce pas ma main qui a fait toutes ces choses ? » —",
+        "NAB": "Did not my hand make all these things?'",
+        "VAT_ES": "&iquest;No fueron acaso mis manos las que hicieron todas las cosas?\""
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "BYZ": "¶Σκληροτράχηλοι καὶ ἀπερίτμητοι τῇ καρδίᾳ καὶ τοῖς ὠσίν, ὑμεῖς ἀεὶ τῷ πνεύματι τῷ ἁγίῳ ἀντιπίπτετε· ὡς οἱ πατέρες ὑμῶν, καὶ ὑμεῖς.",
+        "VUL": "Dura cervice, et incircumcisis cordibus et auribus, vos semper Spiritui Sancto resistitis : sicut patres vestri, ita et vos.",
+        "SYN": "Жестоковыйные! люди с необрезанным сердцем и ушами! вы всегда противитесь Духу Святому, как отцы ваши, так и вы.",
+        "NEO": "Hommes à la tête dure, incirconcis de cœur et d’oreilles, vous résistez toujours au Saint-Esprit ; tels furent vos pères, tels vous êtes.",
+        "NAB": "\"You stiff-necked people, uncircumcised in heart and ears, you always oppose the holy Spirit; you are just like your ancestors.",
+        "VAT_ES": "&iexcl;Hombres rebeldes, paganos de corazón y cerrados a la verdad! Ustedes siempre resisten al Espíritu Santo y son iguales a sus padres."
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "BYZ": "Τίνα τῶν προφητῶν οὐκ ἐδίωξαν οἱ πατέρες ὑμῶν; Καὶ ἀπέκτειναν τοὺς προκαταγγείλαντας περὶ τῆς ἐλεύσεως τοῦ δικαίου, οὗ νῦν ὑμεῖς προδόται καὶ φονεῖς γεγένησθε·",
+        "VUL": "Quem prophetarum non sunt persecuti patres vestri ? et occiderunt eos qui prænuntiabant de adventu Justi, cujus vos nunc proditores et homicidæ fuistis :",
+        "SYN": "Кого из пророков не гнали отцы ваши? Они убили предвозвестивших пришествие Праведника, Которого предателями и убийцами сделались ныне вы, --",
+        "NEO": "Quel prophète vos pères n’ont-ils pas persécuté ? Ils ont même tué ceux qui annonçaient d’avance la venue du Juste ; et vous, aujourd’hui, vous l’avez trahi et mis à mort.",
+        "NAB": "Which of the prophets did your ancestors not persecute? They put to death those who foretold the coming of the righteous one, whose betrayers and murderers you have now become.",
+        "VAT_ES": "&iquest;Hubo algún profeta a quien ellos no persiguieran? Mataron a los que anunciaban la venida del Justo, el mismo que acaba de ser traicionado y asesinado por ustedes,"
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "BYZ": "οἵτινες ἐλάβετε τὸν νόμον εἰς διαταγὰς ἀγγέλων, καὶ οὐκ ἐφυλάξατε.",
+        "VUL": "qui accepistis legem in dispositione angelorum, et non custodistis.",
+        "SYN": "вы, которые приняли закон при служении Ангелов и не сохранили.",
+        "NEO": "Vous qui avez reçu la Loi, en considération des anges qui vous l’intimaient, et vous ne l’avez pas gardée !… »+ 7:53 53. En considération des anges (εἰς διαταγὰς ἀγγέλων) c’est-à-dire par égard à l’autorité des anges qui vous ont apporté et imposé la Loi. Selon une tradition juive (Josèphe, Ant. xv, 5, 3) dont la première origine semble retracée Deut. xxxiii, 2(LXX), ce sont les Anges qui auraient apporté la Loi à Moïse (Comp. Gal. iii, 19).*",
+        "NAB": "You received the law as transmitted by angels, but you did not observe it.\"",
+        "VAT_ES": "los que recibieron la Ley por intermedio de los ángeles y no la cumplieron»."
+      }
+    },
+    "54": {
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "BYZ": "¶Ἀκούοντες δὲ ταῦτα, διεπρίοντο ταῖς καρδίαις αὐτῶν, καὶ ἔβρυχον τοὺς ὀδόντας ἐπ’ αὐτόν.",
+        "VUL": "Audientes autem hæc, dissecabantur cordibus suis, et stridebant dentibus in eum.",
+        "SYN": "Слушая сие, они рвались сердцами своими и скрежетали на него зубами.",
+        "NEO": "En entendant ces paroles, la rage déchirait leurs cœurs, et ils grinçaient des dents contre lui.",
+        "NAB": "When they heard this, they were infuriated, and they ground their teeth at him.",
+        "VAT_ES": "Al oír esto, se enfurecieron y rechinaban los dientes contra él."
+      }
+    },
+    "55": {
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "BYZ": "Ὑπάρχων δὲ πλήρης πνεύματος ἁγίου, ἀτενίσας εἰς τὸν οὐρανόν, εἶδεν δόξαν θεοῦ, καὶ Ἰησοῦν ἑστῶτα ἐκ δεξιῶν τοῦ θεοῦ,",
+        "VUL": "Cum autem esset plenus Spiritu Sancto, intendens in cælum, vidit gloriam Dei, et Jesum stantem a dextris Dei. Et ait : Ecce video cælos apertos, et Filium hominis stantem a dextris Dei.",
+        "SYN": "Стефан же, будучи исполнен Духа Святаго, воззрев на небо, увидел славу Божию и Иисуса, стоящего одесную Бога,",
+        "NEO": "Mais Étienne, qui était rempli de l’Esprit-Saint, ayant fixé les yeux au ciel, vit la gloire de Dieu, et Jésus debout à la droite de son Père.",
+        "NAB": "But he, filled with the holy Spirit, looked up intently to heaven and saw the glory of God and Jesus standing at the right hand of God,",
+        "VAT_ES": "Esteban, lleno del Espíritu Santo y con los ojos fijos en el cielo, vio la gloria de Dios, y a Jesús, que estaba de pie a la derecha de Dios."
+      }
+    },
+    "56": {
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "BYZ": "καὶ εἶπεν, Ἰδού, θεωρῶ τοὺς οὐρανοὺς ἀνεῳγμένους, καὶ τὸν υἱὸν τοῦ ἀνθρώπου ἐκ δεξιῶν ἑστῶτα τοῦ θεοῦ.",
+        "VUL": "Exclamantes autem voce magna continuerunt aures suas, et impetum fecerunt unanimiter in eum.",
+        "SYN": "и сказал: вот, я вижу небеса отверстые и Сына Человеческого, стоящего одесную Бога.",
+        "NEO": "Et il dit : « Voici que je vois les cieux ouverts, et le Fils de l’homme debout à la droite de Dieu. »+ 7:56 56. Le Fils de l’homme. Nom messianique qui paraît pour la première fois dans la vision de Daniel, vii, 13 ; Notre-Seigneur se l’est souvent appliqué à lui-même. Les écrivains sacrés du N. T. ne s’en sont servis eux-mêmes que trois fois pour désigner le Sauveur, à savoir ici et dans l’Apocalypse, i, 13 ; xiv, 14.*",
+        "NAB": "and he said, \"Behold, I see the heavens opened and the Son of Man standing at the right hand of God.\"",
+        "VAT_ES": "Entonces exclamó: «Veo el cielo abierto y al Hijo del hombre de pie a la derecha de Dios»."
+      }
+    },
+    "57": {
+      "seq": 57,
+      "v_in": {
+        "MT": 57,
+        "VUL": 57,
+        "LXX": 57
+      },
+      "text": {
+        "BYZ": "Κράξαντες δὲ φωνῇ μεγάλῃ, συνέσχον τὰ ὦτα αὐτῶν, καὶ ὥρμησαν ὁμοθυμαδὸν ἐπ’ αὐτόν·",
+        "VUL": "Et ejicientes eum extra civitatem, lapidabant : et testes deposuerunt vestimenta sua secus pedes adolescentis qui vocabatur Saulus.",
+        "SYN": "Но они, закричав громким голосом, затыкали уши свои, и единодушно устремились на него,",
+        "NEO": "Les Juifs poussèrent alors de grands cris, en se bouchant les oreilles, et se jetèrent tous ensemble sur lui.",
+        "NAB": "But they cried out in a loud voice, covered their ears, and rushed upon him together.",
+        "VAT_ES": "Ellos comenzaron a vociferar y, tapándose los oídos, se precipitaron sobre él como un solo hombre,"
+      }
+    },
+    "58": {
+      "seq": 58,
+      "v_in": {
+        "MT": 58,
+        "VUL": 58,
+        "LXX": 58
+      },
+      "text": {
+        "BYZ": "καὶ ἐκβαλόντες ἔξω τῆς πόλεως, ἐλιθοβόλουν· καὶ οἱ μάρτυρες ἀπέθεντο τὰ ἱμάτια παρὰ τοὺς πόδας νεανίου καλουμένου Σαύλου.",
+        "VUL": "Et lapidabant Stephanum invocantem, et dicentem : Domine Jesu, suscipe spiritum meum.",
+        "SYN": "и, выведя за город, стали побивать его камнями. Свидетели же положили свои одежды у ног юноши, именем Савла,",
+        "NEO": "Et l’ayant entraîné hors de la ville, ils le lapidèrent. Les témoins déposèrent leurs vêtements aux pieds d’un jeune homme nommé Saul.+ 7:58 58. La lapidation était le supplice des blasphémateurs (Lév. xxiv, 14, 16).*",
+        "NAB": "They threw him out of the city, and began to stone him. The witnesses laid down their cloaks at the feet of a young man named Saul.",
+        "VAT_ES": "y arrastrándolo fuera de la ciudad, lo apedrearon. Los testigos se quitaron los mantos, confiándolos a un joven llamado Saulo."
+      }
+    },
+    "59": {
+      "seq": 59,
+      "v_in": {
+        "MT": 59,
+        "VUL": 59,
+        "LXX": 59
+      },
+      "text": {
+        "BYZ": "Καὶ ἐλιθοβόλουν τὸν Στέφανον, ἐπικαλούμενον καὶ λέγοντα, Κύριε Ἰησοῦ, δέξαι τὸ πνεῦμά μου.",
+        "VUL": "Positis autem genibus, clamavit voce magna, dicens : Domine, ne statuas illis hoc peccatum. Et cum hoc dixisset, obdormivit in Domino. Saulus autem erat consentiens neci ejus.",
+        "SYN": "и побивали камнями Стефана, который молился и говорил: Господи Иисусе! приими дух мой.",
+        "NEO": "Pendant qu’ils le lapidaient, Étienne priait en disant : « Seigneur Jésus, recevez mon esprit ! »",
+        "NAB": "As they were stoning Stephen, he called out, \"Lord Jesus, receive my spirit.\"",
+        "VAT_ES": "Mientras lo apedreaban, Esteban oraba, diciendo: «Señor Jesús, recibe mi espíritu»."
+      }
+    },
+    "60": {
+      "seq": 60,
+      "v_in": {
+        "MT": 60,
+        "VUL": 60,
+        "LXX": 60
+      },
+      "text": {
+        "BYZ": "Θεὶς δὲ τὰ γόνατα, ἔκραξεν φωνῇ μεγάλῃ, Κύριε, μὴ στήσῃς αὐτοῖς τὴν ἁμαρτίαν ταύτην. Καὶ τοῦτο εἰπὼν ἐκοιμήθη.",
+        "SYN": "И, преклонив колени, воскликнул громким голосом: Господи! не вмени им греха сего. И, сказав сие, почил.",
+        "NEO": "Puis s’étant mis à genoux, il s’écria d’une voix forte : « Seigneur, ne leur imputez pas ce péché. » Après cette parole, il s’endormit [dans le Seigneur].",
+        "NAB": "Then he fell to his knees and cried out in a loud voice, \"Lord, do not hold this sin against them\"; and when he said this, he fell asleep.",
+        "VAT_ES": "Después, poniéndose de rodillas, exclamó en alta voz: «Señor, no les tengas en cuenta este pecado». Y al decir esto, expiró."
+      }
+    }
+  }
+}

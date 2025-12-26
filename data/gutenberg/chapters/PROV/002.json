@@ -1,0 +1,411 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PROV_002",
+  "book_key": "PROV",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בְּ֭נִ/י אִם תִּקַּ֣ח אֲמָרָ֑/י וּ֝/מִצְוֺתַ֗/י תִּצְפֹּ֥ן אִתָּֽ/ךְ׃",
+        "LXX": "Υἱέ, ἐὰν δεξάμενος ῥῆσιν ἐμῆς ἐντολῆς κρύψῃς παρὰ σεαυτῷ,",
+        "VUL": "[Fili mi, si susceperis sermones meos,/ et mandata mea absconderis penes te :/",
+        "SYN": "Сын мой! если ты примешь слова мои и сохранишь при себе заповеди мои,",
+        "NEO": "Mon fils, si tu reçois mes paroles ; et si tu gardes avec toi mes préceptes ;",
+        "NAB": "My son, if you receive my words and treasure my commands,",
+        "VAT_ES": "Hijo mío, si recibes mis palabras y guardas contigo mis mandamientos,",
+        "CEI": "Figlio mio, se tu accoglierai le mie parole e custodirai in te i miei precetti,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "לְ/הַקְשִׁ֣יב לַֽ/חָכְמָ֣ה אָזְנֶ֑/ךָ תַּטֶּ֥ה לִ֝בְּ/ךָ֗ לַ/תְּבוּנָֽה׃",
+        "LXX": "ὑπακούσεται σοφίας τὸ οὖς σου, καὶ παραβαλεῖς καρδίαν σου εἰς σύνεσιν, παραβαλεῖς δὲ αὐτὴν ἐπὶ νουθέτησιν τῷ υἱῷ σου.",
+        "VUL": "ut audiat sapientiam auris tua,/ inclina cor tuum ad cognoscendam prudentiam./",
+        "SYN": "так что ухо твое сделаешь внимательным к мудрости и наклонишь сердце твое к размышлению;",
+        "NEO": "rendant ton oreille attentive à la sagesse, et inclinant ton cœur vers l’intelligence ;",
+        "NAB": "Turning your ear to wisdom, inclining your heart to understanding;",
+        "VAT_ES": "prestando oído a la sabiduría e inclinando tu corazón al entendimiento;",
+        "CEI": "tendendo il tuo orecchio alla sapienza, inclinando il tuo cuore alla prudenza,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כִּ֤י אִ֣ם לַ/בִּינָ֣ה תִקְרָ֑א לַ֝/תְּבוּנָ֗ה תִּתֵּ֥ן קוֹלֶֽ/ךָ׃",
+        "LXX": "ἐὰν γὰρ τὴν σοφίαν ἐπικαλέσῃ καὶ τῇ συνέσει δῷς φωνήν σου,",
+        "VUL": "Si enim sapientiam invocaveris,/ et inclinaveris cor tuum prudentiæ ;/",
+        "SYN": "если будешь призывать знание и взывать к разуму;",
+        "NEO": "oui, si tu appelles la prudence, et si tu élèves ta voix vers l’intelligence,",
+        "NAB": "Yes, if you call to intelligence, and to understanding raise your voice;",
+        "VAT_ES": "si llamas a la inteligencia y elevas tu voz hacia el entendimiento,",
+        "CEI": "se appunto invocherai l'intelligenza e chiamerai la saggezza,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אִם תְּבַקְשֶׁ֥/נָּה כַ/כָּ֑סֶף וְֽ/כַ/מַּטְמוֹנִ֥ים תַּחְפְּשֶֽׂ/נָּה׃",
+        "LXX": "καὶ ἐὰν ζητήσῃς αὐτὴν ὡς ἀργύριον καὶ ὡς θησαυροὺς ἐξεραυνήσῃς αὐτήν·",
+        "VUL": "si quæsieris eam quasi pecuniam,/ et sicut thesauros effoderis illam :/",
+        "SYN": "если будешь искать его, как серебра, и отыскивать его, как сокровище,",
+        "NEO": "si tu la cherches comme l’argent, et si tu la creuses comme pour découvrir un trésor ; —",
+        "NAB": "If you seek her like silver, and like hidden treasures search her out:",
+        "VAT_ES": "si la buscas como si fuera plata y la exploras como un tesoro,",
+        "CEI": "se la ricercherai come l'argento e per essa scaverai come per i tesori,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אָ֗ז תָּ֭בִין יִרְאַ֣ת יְהוָ֑ה וְ/דַ֖עַת אֱלֹהִ֣ים תִּמְצָֽא׃",
+        "LXX": "τότε συνήσεις φόβον Κυρίου, καὶ ἐπίγνωσιν θεοῦ εὑρήσεις.",
+        "VUL": "tunc intelliges timorem Domini,/ et scientiam Dei invenies,/",
+        "SYN": "то уразумеешь страх Господень и найдешь познание о Боге.",
+        "NEO": "alors tu comprendras la crainte de \\+w Yahweh|strong=\"H3068\"\\+w**, et tu trouveras la connaissance de Dieu.",
+        "NAB": "Then will you understand the fear of the LORD; the knowledge of God you will find;",
+        "VAT_ES": "entonces comprenderás el temor del Señor y encontrarás la ciencia de Dios.",
+        "CEI": "allora comprenderai il timore del Signore e troverai la scienza di Dio,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כִּֽי יְ֭הוָה יִתֵּ֣ן חָכְמָ֑ה מִ֝/פִּ֗י/ו דַּ֣עַת וּ/תְבוּנָֽה׃",
+        "LXX": "ὅτι Κύριος δίδωσιν σοφίαν, καὶ ἀπὸ προσώπου αὐτοῦ γνῶσις καὶ σύνεσις·",
+        "VUL": "quia Dominus dat sapientiam,/ et ex ore ejus prudentia et scientia./",
+        "SYN": "Ибо Господь дает мудрость; из уст Его - знание и разум;",
+        "NEO": "Car \\+w Yahweh|strong=\"H3068\"\\+w** donne la sagesse, de sa bouche sortent la science et la prudence ;",
+        "NAB": "For the LORD gives wisdom, from his mouth come knowledge and understanding;",
+        "VAT_ES": "Porque el Señor da la sabiduría, de su boca proceden la ciencia y la inteligencia.",
+        "CEI": "perché il Signore dà la sapienza, dalla sua bocca esce scienza e prudenza."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "ו/צפן יִצְפֹּ֣ן לַ֭/יְשָׁרִים תּוּשִׁיָּ֑ה מָ֝גֵ֗ן לְ/הֹ֣לְכֵי תֹֽם׃",
+        "LXX": "καὶ θησαυρίζει τοῖς κατορθοῦσι σωτηρίαν, ὑπερασπιεῖ τὴν πορείαν αὐτῶν",
+        "VUL": "Custodiet rectorum salutem,/ et proteget gradientes simpliciter,/",
+        "SYN": "Он сохраняет для праведных спасение; Он - щит для ходящих непорочно;",
+        "NEO": "il garde le bonheur pour les hommes droits, il est un bouclier pour ceux qui marchent dans la perfection ;",
+        "NAB": "He has counsel in store for the upright, he is the shield of those who walk honestly,",
+        "VAT_ES": "El reserva su auxilio para los hombres rectos, es un escudo para los que caminan con integridad;",
+        "CEI": "Egli riserva ai giusti la sua protezione, è scudo a coloro che agiscono con rettitudine,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "לִ֭/נְצֹר אָרְח֣וֹת מִשְׁפָּ֑ט וְ/דֶ֖רֶךְ חסיד/ו חֲסִידָ֣י/ו יִשְׁמֹֽר׃",
+        "LXX": "τοῦ φυλάξαι ὁδοὺς δικαιωμάτων, καὶ ὁδὸν εὐλαβουμένων αὐτὸν διαφυλάξει. ⸆",
+        "VUL": "servans semitas justitiæ,/ et vias sanctorum custodiens./",
+        "SYN": "Он охраняет пути правды и оберегает стезю святых Своих.",
+        "NEO": "il protège les sentiers de l’équité, il veille sur la voie de ses fidèles. —",
+        "NAB": "Guarding the paths of justice, protecting the way of his pious ones.",
+        "VAT_ES": "él protege los senderos de la equidad y cuida el camino de sus fieles.",
+        "CEI": "vegliando sui sentieri della giustizia e custodendo le vie dei suoi amici."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אָ֗ז תָּ֭בִין צֶ֣דֶק וּ/מִשְׁפָּ֑ט וּ֝/מֵישָׁרִ֗ים כָּל מַעְגַּל טֽוֹב׃",
+        "LXX": "τότε συνήσεις δικαιοσύνην καὶ κρίμα, καὶ κατορθώσεις πάντας ἄξονας ἀγαθούς.",
+        "VUL": "Tunc intelliges justitiam, et judicium,/ et æquitatem, et omnem semitam bonam.]",
+        "SYN": "Тогда ты уразумеешь правду и правосудие и прямоту, всякую добрую стезю.",
+        "NEO": "Alors tu comprendras la justice, l’équité, la droiture et tous les sentiers du bien.",
+        "NAB": "Then you will understand rectitude and justice, honesty, every good path;",
+        "VAT_ES": "Entonces comprenderás la justicia y la equidad, la rectitud y todas las sendas del bien.",
+        "CEI": "Allora comprenderai l'equità e la giustizia, e la rettitudine con tutte le vie del bene,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּֽי תָב֣וֹא חָכְמָ֣ה בְ/לִבֶּ֑/ךָ וְ֝/דַ֗עַת לְֽ/נַפְשְׁ/ךָ֥ יִנְעָֽם׃",
+        "LXX": "ἐὰν γὰρ ἔλθῃ ἡ σοφία εἰς σὴν διάνοιαν, ἡ δὲ αἴσθησις τῇ σῇ ψυχῇ καλὴ εἶναι δόξῃ,",
+        "VUL": "[Si intraverit sapientia cor tuum,/ et scientia animæ tuæ placuerit,/",
+        "SYN": "Когда мудрость войдет в сердце твое, и знание будет приятно душе твоей,",
+        "NEO": "Lorsque la sagesse viendra dans ton cœur, et que la science fera les délices de ton âme,",
+        "NAB": "For wisdom will enter your heart, knowledge will please your soul,",
+        "VAT_ES": "Porque la sabiduría penetrará en tu corazón y la ciencia será la delicia de tu alma;",
+        "CEI": "perché la sapienza entrerà nel tuo cuore e la scienza delizierà il tuo animo."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "מְ֭זִמָּה תִּשְׁמֹ֥ר עָלֶ֗י/ךָ תְּבוּנָ֥ה תִנְצְרֶֽ/כָּה׃",
+        "LXX": "βουλὴ καλὴ φυλάξει σε, ἔννοια δὲ ὁσία τηρήσει σε·",
+        "VUL": "consilium custodiet te,/ et prudentia servabit te :/",
+        "SYN": "тогда рассудительность будет оберегать тебя, разум будет охранять тебя,",
+        "NEO": "la réflexion veillera sur toi, et l’intelligence te gardera,",
+        "NAB": "Discretion will watch over you, understanding will guard you;",
+        "VAT_ES": "la reflexión cuidará de ti y la inteligencia te protegerá,",
+        "CEI": "La riflessione ti custodirà e l'intelligenza veglierà su di te,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "לְ֭/הַצִּ֣ילְ/ךָ מִ/דֶּ֣רֶךְ רָ֑ע מֵ֝/אִ֗ישׁ מְדַבֵּ֥ר תַּהְפֻּכֽוֹת׃",
+        "LXX": "ἵνα ῥύσηταί σε ἀπὸ ὁδοῦ κακῆς καὶ ἀπὸ ἀνδρὸς λαλοῦντος μηδὲν πιστόν.",
+        "VUL": "ut eruaris a via mala,/ et ab homine qui perversa loquitur ;/",
+        "SYN": "дабы спасти тебя от пути злого, от человека, говорящего ложь,",
+        "NEO": "pour te délivrer de la voie du mal, de l’homme qui tient des discours pervers,",
+        "NAB": "Saving you from the way of evil men, from men of perverse speech,",
+        "VAT_ES": "para librarte del mal camino, del hombre que habla con perversidad;",
+        "CEI": "per salvarti dalla via del male, dall'uomo che parla di propositi perversi,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הַ֭/עֹ֣זְבִים אָרְח֣וֹת יֹ֑שֶׁר לָ֝/לֶ֗כֶת בְּ/דַרְכֵי חֹֽשֶׁךְ׃",
+        "LXX": "ὦ οἱ ἐγκαταλείποντες ὁδοὺς εὐθείας τοῦ πορεύεσθαι ἐν ὁδοῖς σκότους,",
+        "VUL": "qui relinquunt iter rectum,/ et ambulant per vias tenebrosas ;/",
+        "SYN": "от тех, которые оставляют стези прямые, чтобы ходить путями тьмы;",
+        "NEO": "de ceux qui abandonnent les droits sentiers, afin de marcher dans des chemins ténébreux,",
+        "NAB": "Who leave the straight paths to walk in the way of darkness,",
+        "VAT_ES": "de los que abandonan los senderos de la rectitud, para tomar por caminos tenebrosos;",
+        "CEI": "da coloro che abbandonano i retti sentieri per camminare nelle vie delle tenebre,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הַ֭/שְּׂמֵחִים לַ/עֲשׂ֥וֹת רָ֑ע יָ֝גִ֗ילוּ בְּֽ/תַהְפֻּכ֥וֹת רָֽע׃",
+        "LXX": "οἱ εὐφραινόμενοι ἐπὶ κακοῖς καὶ χαίροντες ἐπὶ διαστροφῇ κακῇ,",
+        "VUL": "qui lætantur cum malefecerint,/ et exsultant in rebus pessimis ;/",
+        "SYN": "от тех, которые радуются, делая зло, восхищаются злым развратом,",
+        "NEO": "qui se réjouissent de faire le mal, et mettent leur plaisir dans les pires perversités,",
+        "NAB": "Who delight in doing evil, rejoice in perversity;",
+        "VAT_ES": "de los que gozan haciendo el mal y se regocijan en las perversiones de la maldad;",
+        "CEI": "che godono nel fare il male, gioiscono dei loro propositi perversi;"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֣ר אָרְחֹתֵי/הֶ֣ם עִקְּשִׁ֑ים וּ֝/נְלוֹזִ֗ים בְּ/מַעְגְּלוֹתָֽ/ם׃",
+        "LXX": "ὧν αἱ τρίβοι σκολιαὶ καὶ καμπύλαι αἱ τροχιαὶ αὐτῶν,",
+        "VUL": "quorum viæ perversæ sunt,/ et infames gressus eorum./",
+        "SYN": "которых пути кривы, и которые блуждают на стезях своих;",
+        "NEO": "dont les sentiers sont tortueux et qui suivent des voies obliques ; —",
+        "NAB": "Whose ways are crooked, and devious their paths;",
+        "VAT_ES": "de los que van por caminos tortuosos y por senderos retorcidos.",
+        "CEI": "i cui sentieri sono tortuosi e le cui strade sono oblique,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "לְ֭/הַצִּ֣ילְ/ךָ מֵ/אִשָּׁ֣ה זָרָ֑ה מִ֝/נָּכְרִיָּ֗ה אֲמָרֶ֥י/הָ הֶחֱלִֽיקָה׃",
+        "LXX": "τοῦ μακράν σε ποιῆσαι ἀπὸ ὁδοῦ εὐθείας καὶ ἀλλότριον τῆς δικαίας γνώμης. υἱέ, μή σε καταλάβῃ κακὴ βουλή,",
+        "VUL": "Ut eruaris a muliere aliena,/ et ab extranea quæ mollit sermones suos,/",
+        "SYN": "дабы спасти тебя от жены другого, от чужой, которая умягчает речи свои,",
+        "NEO": "pour te délivrer de la femme qui est à un autre, de l’étrangère qui use de paroles doucereuses,",
+        "NAB": "Saving you from the wife of another, from the adulteress with her smooth words,",
+        "VAT_ES": "Así te librarás de la mujer ajena, de la extraña que se vale de palabras seductoras,",
+        "CEI": "per salvarti dalla donna straniera, dalla forestiera che ha parole seducenti,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "הַ֭/עֹזֶבֶת אַלּ֣וּף נְעוּרֶ֑י/הָ וְ/אֶת בְּרִ֖ית אֱלֹהֶ֣י/הָ שָׁכֵֽחָה׃",
+        "LXX": "ἡ ἀπολείπουσα διδασκαλίαν νεότητος, καὶ διαθήκην θείαν ἐπιλελησμένη.",
+        "VUL": "et relinquit ducem pubertatis suæ,/",
+        "SYN": "которая оставила руководителя юности своей и забыла завет Бога своего.",
+        "NEO": "qui abandonne le compagnon de sa jeunesse, et oublie l’alliance de son Dieu ;",
+        "NAB": "Who forsakes the companion of her youth and forgets the pact with her God;",
+        "VAT_ES": "que abandona al amigo de su juventud y olvida la alianza de su Dios.",
+        "CEI": "che abbandona il compagno della sua giovinezza e dimentica l'alleanza con il suo Dio."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כִּ֤י שָׁ֣חָה אֶל מָ֣וֶת בֵּיתָ֑/הּ וְ/אֶל רְ֝פָאִ֗ים מַעְגְּלֹתֶֽי/הָ׃",
+        "LXX": "ἔθετο γὰρ παρὰ τῷ θανάτῳ τὸν οἶκον αὐτῆς, καὶ παρὰ τῷ ᾅδῃ μετὰ τῶν γηγενῶν τοὺς ἄξονας αὐτῆς·",
+        "VUL": "et pacti Dei sui oblita est./ Inclinata est enim ad mortem domus ejus,/ et ad inferos semitæ ipsius./",
+        "SYN": "Дом ее ведет к смерти, и стези ее - к мертвецам;",
+        "NEO": "car elle penche avec sa maison vers la mort, et sa route conduit aux enfers ;",
+        "NAB": "For her path sinks down to death, and her footsteps lead to the shades;",
+        "VAT_ES": "su casa se hunde en la muerte y sus senderos van hacia las Sombras;",
+        "CEI": "La sua casa conduce verso la morte e verso il regno delle ombre i suoi sentieri."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כָּל בָּ֭אֶי/הָ לֹ֣א יְשׁוּב֑וּ/ן וְ/לֹֽא יַ֝שִּׂ֗יגוּ אָרְח֥וֹת חַיִּֽים׃",
+        "LXX": "πάντες οἱ πορευόμενοι ἐν αὐτῇ οὐκ ἀναστρέψουσιν οὐδὲ μὴ καταλάβωσιν τρίβους εὐθείας· οὐ γὰρ καταλαμβάνονται ὑπὸ ἐνιαυτῶν ζωῆς.",
+        "VUL": "Omnes qui ingrediuntur ad eam non revertentur,/ nec apprehendent semitas vitæ./",
+        "SYN": "никто из вошедших к ней не возвращается и не вступает на путь жизни.",
+        "NEO": "de tous ceux qui vont à elle, nul ne revient, aucun ne retrouve les sentiers de la vie.",
+        "NAB": "None who enter thereon come back again, or gain the paths of life.",
+        "VAT_ES": "los que entren en ella no podrán volver atrás ni alcanzarán los senderos de la vida.",
+        "CEI": "Quanti vanno da lei non fanno ritorno, non raggiungono i sentieri della vita."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "לְמַ֗עַן תֵּ֭לֵךְ בְּ/דֶ֣רֶךְ טוֹבִ֑ים וְ/אָרְח֖וֹת צַדִּיקִ֣ים תִּשְׁמֹֽר׃",
+        "LXX": "εἰ γὰρ ἐπορεύοντο τρίβους ἀγαθάς, εὕροσαν ἂν τρίβους δικαιοσύνης λείους.",
+        "VUL": "Ut ambules in via bona,/ et calles justorum custodias :/",
+        "SYN": "Посему ходи путем добрых и держись стезей праведников,",
+        "NEO": "Ainsi tu marcheras dans la voie des hommes de bien, et tu garderas les sentiers des justes.",
+        "NAB": "Thus you may walk in the way of good men, and keep to the paths of the just.",
+        "VAT_ES": "Así tú irás por el camino de los buenos y seguirás el sendero de los justos,",
+        "CEI": "Per questo tu camminerai sulla strada dei buoni e ti atterrai ai sentieri dei giusti,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "כִּֽי יְשָׁרִ֥ים יִשְׁכְּנוּ אָ֑רֶץ וּ֝/תְמִימִ֗ים יִוָּ֥תְרוּ בָֽ/הּ׃",
+        "LXX": "ὅτι εὐθεῖς κατασκηνώσουσι γῆν, καὶ ὅσιοι ὑπολειφθήσονται ἐν αὐτῇ·",
+        "VUL": "qui enim recti sunt habitabunt in terra,/ et simplices permanebunt in ea ;/",
+        "SYN": "потому что праведные будут жить на земле, и непорочные пребудут на ней;",
+        "NEO": "Car les hommes droits habiteront la terre et les hommes intègres y demeureront ;",
+        "NAB": "For the upright will dwell in the land, the honest will remain in it;",
+        "VAT_ES": "porque los rectos habitarán la tierra y los hombres íntegros permanecerán en ella.",
+        "CEI": "perché gli uomini retti abiteranno nel paese e gli integri vi resteranno,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וּ֭/רְשָׁעִים מֵ/אֶ֣רֶץ יִכָּרֵ֑תוּ וּ֝/בוֹגְדִ֗ים יִסְּח֥וּ מִמֶּֽ/נָּה׃",
+        "LXX": "ὁδοὶ ἀσεβῶν ἐκ γῆς ὀλοῦνται, οἱ δὲ παράνομοι ἐξωσθήσονται ἀπ’ αὐτῆς.",
+        "VUL": "impii vero de terra perdentur,/ et qui inique agunt auferentur ex ea.]",
+        "SYN": "а беззаконные будут истреблены с земли, и вероломные искоренены из нее.",
+        "NEO": "mais les méchants seront retranchés de la terre, et les infidèles en seront arrachés.",
+        "NAB": "But the wicked will be cut off from the land, the faithless will be rooted out of it.",
+        "VAT_ES": "Pero los malvados serán extirpados de la tierra y los traidores serán arrancados de ella.",
+        "CEI": "ma i malvagi saranno sterminati dalla terra, gli infedeli ne saranno strappati."
+      }
+    }
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LAME_004",
+  "book_key": "LAME",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אֵיכָה֙ יוּעַ֣ם זָהָ֔ב יִשְׁנֶ֖א הַ/כֶּ֣תֶם הַ/טּ֑וֹב תִּשְׁתַּפֵּ֨כְנָה֙ אַבְנֵי קֹ֔דֶשׁ בְּ/רֹ֖אשׁ כָּל חוּצֽוֹת׃",
+        "LXX": "Ἄλεφ. Πῶς ἀμαυρωθήσεται χρυσίον, ἀλλοιωθήσεται τὸ ἀργύριον τὸ ἀγαθόν; ἐξεχύθησαν λίθοι ἅγιοι ἐπ’ ἀρχῆς πασῶν ἐξόδων.",
+        "VUL": "[<Aleph>Quomodo obscuratum est aurum,/ mutatus est color optimus !/ dispersi sunt lapides sanctuarii/ in capite omnium platearum !/",
+        "SYN": "Как потускло золото, изменилось золото наилучшее! камни святилища раскиданы по всем перекресткам.",
+        "NEO": "Comment l’or s’est-il terni, l’or pur s’est-il altéré, les pierres sacrées ont-elles été dispersées au coin de toutes les rues ?",
+        "NAB": "How tarnished is the gold, how changed the noble metal; How the sacred stones lie strewn at every street corner!",
+        "VAT_ES": "[Alef] &iexcl;Cómo se ha oscurecido el oro, se ha empañado el oro más puro! Las piedras sagradas están tiradas en todas las esquinas.",
+        "CEI": "Ah! come si è annerito l'oro, si è alterato l'oro migliore. Sono disperse le pietre sante all'angolo di ogni strada."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בְּנֵ֤י צִיּוֹן֙ הַ/יְקָרִ֔ים הַ/מְסֻלָּאִ֖ים בַּ/פָּ֑ז אֵיכָ֤ה נֶחְשְׁבוּ֙ לְ/נִבְלֵי חֶ֔רֶשׂ מַעֲשֵׂ֖ה יְדֵ֥י יוֹצֵֽר׃",
+        "LXX": "Βή. υἱοὶ Σειὼν οἱ τίμιοι οἱ ἐπηρμένοι ἐν χρυσίῳ, πῶς ἐλογίσθησαν εἰς ἄγγια ὀστράκινα, ἔργα χειρῶν κεραμέως;",
+        "VUL": "<Beth>Filii Sion inclyti,/ et amicti auro primo :/ quomodo reputati sunt in vasa testea,/ opus manuum figuli !/",
+        "SYN": "Сыны Сиона драгоценные, равноценные чистейшему золоту, как они сравнены с глиняною посудою, изделием рук горшечника!",
+        "NEO": "Les plus nobles fils de Sion, estimés au poids de l’or fin, comment ont-ils été comptés pour des vases de terre, ouvrage des mains d’un potier ?",
+        "NAB": "Zion's precious sons, fine gold their counterpart, Now worth no more than earthen jars made by the hands of a potter!",
+        "VAT_ES": "[Bet] Los hijos de Sión, tan preciados, valuados a precio de oro fino, &iexcl;cómo son tenidos por vasos de arcilla, obra de las manos de un alfarero!",
+        "CEI": "I preziosi figli di Sion, valutati come oro fino, ah! come sono stimati quali vasi di creta, lavoro delle mani di vasaio!"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "גַּם תנין תַּנִּים֙ חָ֣לְצוּ שַׁ֔ד הֵינִ֖יקוּ גּוּרֵי/הֶ֑ן בַּת עַמִּ֣/י לְ/אַכְזָ֔ר כי ענים כַּ/יְעֵנִ֖ים בַּ/מִּדְבָּֽר׃",
+        "LXX": "Γίμελ. Καί γε δράκοντες ἐξέδυσαν μαστούς, ἐθήλασαν σκύμνοι αὐτῶν θυγατέρας λαοῦ μου εἰς ἀνίατον, ὡς στρουθίον ἐν ἐρήμῳ.",
+        "VUL": "<Ghimel>Sed et lamiæ nudaverunt mammam,/ lactaverunt catulos suos :/ filia populi mei crudelis/ quasi struthio in deserto./",
+        "SYN": "И чудовища подают сосцы и кормят своих детенышей, а дщерь народа моего стала жестока подобно страусам в пустыне.",
+        "NEO": "Même les chacals présentent les mamelles, et allaitent leurs petits ; la fille de mon peuple est devenue cruelle, comme les autruches dans le désert.",
+        "NAB": "Even the jackals bare their breasts and suckle their young; The daughter of my people has become as cruel as the ostrich in the desert.",
+        "VAT_ES": "[Guímel] Hasta los chacales presentan las ubres para amamantar a sus cachorros; pero la hija de mi pueblo se ha vuelto cruel como los avestruces del desierto.",
+        "CEI": "Perfino gli sciacalli porgono le mammelle e allattano i loro cuccioli, ma la figlia del mio popolo è divenuta crudele come gli struzzi nel deserto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "דָּבַ֨ק לְשׁ֥וֹן יוֹנֵ֛ק אֶל חכּ֖/וֹ בַּ/צָּמָ֑א עֽוֹלָלִים֙ שָׁ֣אֲלוּ לֶ֔חֶם פֹּרֵ֖שׂ אֵ֥ין לָ/הֶֽם׃",
+        "LXX": "Δάλεθ. Ἐκολλήθη ἡ γλῶσσα θηλάζοντος πρὸς τὸν φάρυγγα αὐτοῦ ἐν δίψει· νήπια ᾔτησαν ἄρτον, ὁ διακλῶν οὐκ ἔστιν αὐτοῖς.",
+        "VUL": "<Daleth>Adhæsit lingua lactentis/ ad palatum ejus in siti ;/ parvuli petierunt panem,/ et non erat qui frangeret eis./",
+        "SYN": "Язык грудного младенца прилипает к гортани его от жажды; дети просят хлеба, и никто не подает им.",
+        "NEO": "La langue du nourrisson s’attache à son palais, à cause de la soif ; les petits enfants demandent du pain, et personne ne leur en donne.",
+        "NAB": "The tongue of the suckling cleaves to the roof of its mouth in thirst; The babes cry for food, but there is no one to give it to them.",
+        "VAT_ES": "[Dálet] La lengua de las criaturas se pega al paladar a causa de la sed; los niños pequeños piden pan, y nadie se lo reparte.",
+        "CEI": "La lingua del lattante si è attaccata al palato per la sete; i bambini chiedevano il pane e non c'era chi lo spezzasse loro."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הָ/אֹֽכְלִים֙ לְ/מַ֣עֲדַנִּ֔ים נָשַׁ֖מּוּ בַּ/חוּצ֑וֹת הָ/אֱמֻנִים֙ עֲלֵ֣י תוֹלָ֔ע חִבְּק֖וּ אַשְׁפַּתּֽוֹת׃",
+        "LXX": "Ἥ. Οἱ ἔσθοντες τὰς τροφὰς ἠφανίσθησαν ἐν ταῖς ἐξόδοις, οἱ τιθηνούμενοι ἐπὶ κόκκῳ περιεβάλοντο κοπρίας.",
+        "VUL": "<He>Qui vescebantur voluptuose,/ interierunt in viis ;/ qui nutriebantur in croceis,/ amplexati sunt stercora./",
+        "SYN": "Евшие сладкое истаевают на улицах; воспитанные на багрянице жмутся к навозу.",
+        "NEO": "Ceux qui se nourrissaient de mets délicats tombent d’inanition dans les rues ; ceux qu’on portait sur la pourpre embrassent le fumier.",
+        "NAB": "Those accustomed to dainty food perish in the streets; Those brought up in purple now cling to the ash heaps.",
+        "VAT_ES": "[He] Los que comían manjares exquisitos desfallecen por las calles; los que se habían criado entre púrpura se abrazan a los residuos.",
+        "CEI": "Coloro che si cibavano di leccornìe languono lungo le strade; coloro che erano allevati sulla porpora abbracciano letame."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּגְדַּל֙ עֲוֺ֣ן בַּת עַמִּ֔/י מֵֽ/חַטַּ֖את סְדֹ֑ם הַֽ/הֲפוּכָ֣ה כְמוֹ רָ֔גַע וְ/לֹא חָ֥לוּ בָ֖/הּ יָדָֽיִם׃",
+        "LXX": "Οὐαύ. Καὶ ἐμεγαλύνθη ἀνομία θυγατρὸς λαοῦ μου ὑπὲρ ἀνομίας Σοδόμων, τῆς κατεστραμμένης ὥσπερ σπουδῇ, καὶ οὐκ ἐπόνεσαν ἐν αὐτῇ χεῖρας.",
+        "VUL": "<Vau>Et major effecta est iniquitas filiæ populi mei/ peccato Sodomorum,/ quæ subversa est in momento,/ et non ceperunt in ea manus./",
+        "SYN": "Наказание нечестия дщери народа моего превышает казнь за грехи Содома: тот низринут мгновенно, и руки человеческие не касались его.",
+        "NEO": "Et l’iniquité de la fille de mon peuple a été plus grande que le péché de Sodome, qui fut renversée en un instant, sans que des mains se levassent contre elle.",
+        "NAB": "The punishment of the daughter of my people is greater than the penalty of Sodom, Which was overthrown in an instant without the turning of a hand.",
+        "VAT_ES": "[Vau] La iniquidad de la hija de mi pueblo ha superado el pecado de Sodoma, que fue destruida en un instante sin que se moviera una mano contra ella.",
+        "CEI": "Grande è stata l'iniquità della figlia del mio popolo, maggiore del peccato di Sòdoma, la quale fu distrutta in un attimo, senza fatica di mani."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "זַכּ֤וּ נְזִירֶ֨י/הָ֙ מִ/שֶּׁ֔לֶג צַח֖וּ מֵ/חָלָ֑ב אָ֤דְמוּ עֶ֨צֶם֙ מִ/פְּנִינִ֔ים סַפִּ֖יר גִּזְרָתָֽ/ם׃",
+        "LXX": "Ζάιν. Ἐκαθαριώθησαν Ναζειραῖοι αὐτῆς ὑπὲρ χιόνα, ἔλαμψαν ὑπὲρ γάλα, ἐπυρώθησαν ὑπὲρ λίθους, σαπφείρου τὸ ἀπόσπασμα αὐτῶν.",
+        "VUL": "<Zain>Candidiores Nazaræi ejus nive,/ nitidiores lacte,/ rubicundiores ebore antiquo,/ sapphiro pulchriores./",
+        "SYN": "Князья ее _были_ в ней чище снега, белее молока; они были телом краше коралла, вид их был, как сапфир;",
+        "NEO": "Ses princes surpassaient la neige en éclat, le lait en blancheur ; leur corps était plus vermeil que le corail, leur figure était un saphir.",
+        "NAB": "Brighter than snow were her princes, whiter than milk, More ruddy than coral, more precious than sapphire.",
+        "VAT_ES": "[Zain] Sus jóvenes eran más puros que la nieve, más blancos que la leche; sus cuerpos, más rojizos que el coral, su figura, un zafiro.",
+        "CEI": "I suoi giovani erano più splendenti della neve, più candidi del latte; avevano il corpo più roseo dei coralli, era zaffìro la loro figura."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "חָשַׁ֤ךְ מִ/שְּׁחוֹר֙ תָּֽאֳרָ֔/ם לֹ֥א נִכְּר֖וּ בַּ/חוּצ֑וֹת צָפַ֤ד עוֹרָ/ם֙ עַל עַצְמָ֔/ם יָבֵ֖שׁ הָיָ֥ה כָ/עֵֽץ׃",
+        "LXX": "Ἥθ. Ἐσκότασεν ὑπὲρ ἀσβόλην τὸ εἶδος αὐτῶν, οὐκ ἐπεγνώσθησαν ἐν ταῖς ἐξόδοις· ἐπάγη δέρμα αὐτῶν ἐπὶ τὰ ὀστέα αὐτῶν, ἐξηράνθησαν, ἐγενήθησαν ὥσπερ ξύλον.",
+        "VUL": "<Heth>Denigrata est super carbones facies eorum/ et non sunt cogniti in plateis ;/ adhæsit cutis eorum ossibus :/ aruit, et facta est quasi lignum./",
+        "SYN": "а теперь темнее всего черного лице их; не узнают их на улицах; кожа их прилипла к костям их, стала суха, как дерево.",
+        "NEO": "Leur aspect est plus sombre que le noir même ; on ne les reconnaît plus dans les rues ; leur peau est collée à leurs os, elle est sèche comme du bois.",
+        "NAB": "Now their appearance is blacker than soot, they are unrecognized on the streets; Their skin shrinks on their bones, as dry as wood.",
+        "VAT_ES": "[Jet] Su semblante se ha vuelto más oscuro que el hollín, no se los reconoce por las calles; tienen la piel pegada a los huesos, reseca como madera.",
+        "CEI": "Ora il loro aspetto s'è fatto più scuro della fuliggine, non si riconoscono più per le strade; si è raggrinzita la loro pelle sulle ossa, è divenuta secca come legno."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "טוֹבִ֤ים הָיוּ֙ חַלְלֵי חֶ֔רֶב מֵֽ/חַלְלֵ֖י רָעָ֑ב שֶׁ֣/הֵ֤ם יָז֨וּבוּ֙ מְדֻקָּרִ֔ים מִ/תְּנוּבֹ֖ת שָׂדָֽי׃",
+        "LXX": "Τήθ. Καλοὶ ἦσαν οἱ τραυματίαι ῥομφαίας ἢ οἱ τραυματίαι λιμοῦ· ἐπορεύθησαν ἐκκεκεντημένοι ἀπὸ γενημάτων ἀγρῶν.",
+        "VUL": "<Teth>Melius fuit occisis gladio/ quam interfectis fame,/ quoniam isti extabuerunt consumpti/ a sterilitate terræ./",
+        "SYN": "Умерщвляемые мечом счастливее умерщвляемых голодом, потому что сии истаевают, поражаемые недостатком плодов полевых.",
+        "NEO": "Plus heureuses sont les victimes de l’épée que les victimes de la faim, qui s’épuisent lentement, blessées, faute des produits des champs !",
+        "NAB": "Better for those who perish by the sword than for those who die of hunger, Who waste away, as though pierced through, lacking the fruits of the field!",
+        "VAT_ES": "[Tet] Fueron más dichosos los muertos por la espada, que los muertos por el hambre: aquellos se desangraron, traspasados; estos, por falta de frutos en los campos.",
+        "CEI": "Sono più fortunati gli uccisi di spada che i morti per fame, che son caduti estenuati per mancanza dei prodotti del campo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "יְדֵ֗י נָשִׁים֙ רַחֲמָ֣נִיּ֔וֹת בִּשְּׁל֖וּ יַלְדֵי/הֶ֑ן הָי֤וּ לְ/בָרוֹת֙ לָ֔/מוֹ בְּ/שֶׁ֖בֶר בַּת עַמִּֽ/י׃",
+        "LXX": "Ἰώδ. Χεῖρες γυναικῶν οἰκτειρμόνων ἥψησαν τὰ παιδία αὐτῶν, ἐγενήθησαν εἰς βρῶσιν αὐταῖς ἐν τῷ συντρίμματι τῆς θυγατρὸς λαοῦ μου.",
+        "VUL": "<Jod>Manus mulierum misericordium/ coxerunt filios suos ;/ facti sunt cibus earum/ in contritione filiæ populi mei./",
+        "SYN": "Руки мягкосердых женщин варили детей своих, чтобы они были для них пищею во время гибели дщери народа моего.",
+        "NEO": "Des femmes compatissantes ont de leurs mains fait cuire leurs enfants ; ils leur ont servi de nourriture, dans le désastre de la fille de mon peuple.",
+        "NAB": "The hands of compassionate women boiled their own children, To serve them as mourners' food in the downfall of the daughter of my people.",
+        "VAT_ES": "[Iod] Las mismas manos de tiernas mujeres cocinaron a sus hijos: ellos les sirvieron de alimento en el desastre de la hija de mi pueblo.",
+        "CEI": "Mani di donne, già inclini a pietà, hanno cotto i loro bambini, che sono serviti loro di cibo nel disastro della figlia del mio popolo."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּלָּ֤ה יְהוָה֙ אֶת חֲמָת֔/וֹ שָׁפַ֖ךְ חֲר֣וֹן אַפּ֑/וֹ וַ/יַּצֶּת אֵ֣שׁ בְּ/צִיּ֔וֹן וַ/תֹּ֖אכַל יְסוֹדֹתֶֽי/הָ׃",
+        "LXX": "Χάφ. Συνετέλεσεν Κύριος θυμὸν αὐτοῦ, ἐξέχεεν θυμὸν ὀργῆς αὐτοῦ, καὶ ἀνῆψεν πῦρ ἐν Σειών, καὶ κατέφαγεν τὰ θεμέλια αὐτῆς.",
+        "VUL": "<Caph>Complevit Dominus furorem suum,/ effudit iram indignationis suæ :/ et succendit ignem in Sion,/ et devoravit fundamenta ejus./",
+        "SYN": "Совершил Господь гнев Свой, излил ярость гнева Своего и зажег на Сионе огонь, который пожрал основания его.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** a épuisé sa fureur ; il a répandu l’ardeur de sa colère, et a allumé dans Sion un feu qui en a dévoré les fondements.",
+        "NAB": "The LORD has spent his anger, poured out his blazing wrath; He has kindled a fire in Zion that has consumed her foundations.",
+        "VAT_ES": "[Caf] El Señor desahogó su furor, derramó el ardor de su ira; encendió un fuego en Sión que devoró hasta sus cimientos.",
+        "CEI": "Il Signore ha esaurito la sua collera, ha rovesciato l'ira ardente; ha acceso in Sion un fuoco, che ha divorato le sue fondamenta."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "לֹ֤א הֶאֱמִ֨ינוּ֙ מַלְכֵי אֶ֔רֶץ ו/כל כֹּ֖ל יֹשְׁבֵ֣י תֵבֵ֑ל כִּ֤י יָבֹא֙ צַ֣ר וְ/אוֹיֵ֔ב בְּ/שַׁעֲרֵ֖י יְרוּשָׁלִָֽם׃",
+        "LXX": "Λάβδ. Οὐκ ἐπίστευσαν βασιλεῖς γῆς, πάντες οἱ κατοικοῦντες τὴν οἰκουμένην, ὅτι εἰσελεύσεται ἐχθρὸς καὶ ἐκθλίβων διὰ τῶν πυλῶν Ἰερουσαλήμ.",
+        "VUL": "<Lamed>Non crediderunt reges terræ,/ et universi habitatores orbis,/ quoniam ingrederetur hostis et inimicus/ per portas Jerusalem./",
+        "SYN": "Не верили цари земли и все живущие во вселенной, чтобы враг и неприятель вошел во врата Иерусалима.",
+        "NEO": "Ils ne croyaient pas, les rois de la terre, ni tous les habitants du monde, que l’adversaire, l’ennemi entrerait dans les portes de Jérusalem.",
+        "NAB": "The kings of the earth did not believe, nor any of the world's inhabitants, That enemy or foe could enter the gates of Jerusalem.",
+        "VAT_ES": "[Lámed] Nunca hubieran creído los reyes de la tierra ni todos los habitantes del mundo, que entrarían el adversario y el enemigo por las puertas de Jerusalén.",
+        "CEI": "Non credevano i re della terra e tutti gli abitanti del mondo che l'avversario e il nemico sarebbero penetrati entro le porte di Gerusalemme."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "מֵֽ/חַטֹּ֣את נְבִיאֶ֔י/הָ עֲוֺנ֖וֹת כֹּהֲנֶ֑י/הָ הַ/שֹּׁפְכִ֥ים בְּ/קִרְבָּ֖/הּ דַּ֥ם צַדִּיקִֽים׃",
+        "LXX": "Μήμ. Ἐξ ἁμαρτιῶν προφητῶν αὐτῆς, ἀδικιῶν ἱερέων αὐτῆς, τῶν ἐκχεόντων αἷμα δίκαιον ἐν μέσῳ αὐτῆς.",
+        "VUL": "<Mem>Propter peccata prophetarum ejus,/ et iniquitates sacerdotum ejus,/ qui effuderunt in medio ejus/ sanguinem justorum./",
+        "SYN": "_Все это_ - за грехи лжепророков его, за беззакония священников его, которые среди него проливали кровь праведников;",
+        "NEO": "C’est à cause des péchés de ses prophètes, des iniquités de ses prêtres, qui répandaient dans son enceinte le sang des justes.",
+        "NAB": "Because of the sins of her prophets and the crimes of her priests, Who shed in her midst the blood of the just! -",
+        "VAT_ES": "[Mem] Esto sucedió por los pecados de sus profetas, por las iniquidades de sus sacerdotes, que derramaron en medio de ella la sangre de los justos.",
+        "CEI": "Fu per i peccati dei suoi profeti, per le iniquità dei suoi sacerdoti, che versarono in mezzo ad essa il sangue dei giusti."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "נָע֤וּ עִוְרִים֙ בַּֽ/חוּצ֔וֹת נְגֹֽאֲל֖וּ בַּ/דָּ֑ם בְּ/לֹ֣א יֽוּכְל֔וּ יִגְּע֖וּ בִּ/לְבֻשֵׁי/הֶֽם׃",
+        "LXX": "Νούν. Ἐσαλεύθησαν ἐγρήγοροι αὐτῆς ἐν ταῖς ἐξόδοις, ἐμολύνθησαν ἐν αἵματι ἐν τῷ μὴ δύνασθαι αὐτούς, ἥψαντο ἐνδυμάτων αὐτῶν.",
+        "VUL": "<Nun>Erraverunt cæci in plateis,/ polluti sunt in sanguine ;/ cumque non possent,/ tenuerunt lacinias suas./",
+        "SYN": "бродили как слепые по улицам, осквернялись кровью, так что невозможно было прикоснуться к одеждам их.",
+        "NEO": "Ils erraient comme des aveugles dans les rues, souillés de sang, de sorte qu’on ne pouvait toucher leurs vêtements.",
+        "NAB": "They staggered blindly in the streets, soiled with blood, So that people could not touch even their garments:",
+        "VAT_ES": "[Nun] Vagaban como ciegos por las calles, manchados de sangre, de manera que no se podía tocar sus vestiduras.",
+        "CEI": "Costoro vagavano come ciechi per le strade, insozzati di sangue, così che non si potevan toccare le loro vesti."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "ס֣וּרוּ טָמֵ֞א קָ֣רְאוּ לָ֗/מוֹ ס֤וּרוּ ס֨וּרוּ֙ אַל תִּגָּ֔עוּ כִּ֥י נָצ֖וּ גַּם נָ֑עוּ אָֽמְרוּ֙ בַּ/גּוֹיִ֔ם לֹ֥א יוֹסִ֖יפוּ לָ/גֽוּר׃",
+        "LXX": "Σάμεχ. Ἀπόστητε ἀκαθάρτων, καλέσατε αὐτούς Ἀπόστητε ἀπόστητε, μὴ ἅπτεσθε, ὅτι ἀνήφθησαν καί γε ἐσαλεύθησαν· εἴπατε ἐν τοῖς ἔθνεσιν Οὐ μὴ προσθῶσιν τοῦ παροικεῖν.",
+        "VUL": "<Samech>Recedite polluti, clamaverunt eis ;/ recedite, abite, nolite tangere :/ jurgati quippe sunt, et commoti dixerunt inter gentes :/ Non addet ultra ut habitet in eis./",
+        "SYN": "\"Сторонитесь! нечистый!\" кричали им; \"сторонитесь, сторонитесь, не прикасайтесь\"; и они уходили в смущении; а между народом говорили: \"их более не будет!",
+        "NEO": "« Écartez-vous ! Un impur ! » leur criait-on. « Écartez-vous ! Écartez-vous ! Ne le touchez pas ! » Ils erraient, et l’on disait parmi les nations : « Qu’ils ne séjournent pas ici ! »",
+        "NAB": "\"Away you unclean!\" they cried to them, \"Away, away, do not draw near!\" If they left and wandered among the nations, nowhere could they remain.",
+        "VAT_ES": "[Sámec] «&iexcl;Apártense! &iexcl;Un impuro! –les gritaban– &iexcl;Apártense, apártense! &iexcl;No toquen!». Si huían y vagaban entre las naciones, se decía: «&iexcl;No pueden quedarse más aquí!».",
+        "CEI": "\"Scostatevi! Un impuro!\", si gridava per loro, \"Scostatevi! Non toccate!\". Fuggivano e andavano randagi tra le genti, non potevano trovare dimora."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "פְּנֵ֤י יְהוָה֙ חִלְּקָ֔/ם לֹ֥א יוֹסִ֖יף לְ/הַבִּיטָ֑/ם פְּנֵ֤י כֹהֲנִים֙ לֹ֣א נָשָׂ֔אוּ זקנים וּ/זְקֵנִ֖ים לֹ֥א חָנָֽנוּ׃",
+        "LXX": "Ἄιν. Πρόσωπον Κυρίου μερὶς αὐτῶν, οὐ προσθήσει ἐπιβλέψαι αὐτοῖς· πρόσωπον ἱερέων οὐκ ἔλαβον, προφήτας οὐκ ἠλέησαν.",
+        "VUL": "<Phe>Facies Domini divisit eos,/ non addet ut respiciat eos ;/ facies sacerdotum non erubuerunt,/ neque senum miserti sunt./",
+        "SYN": "лице Господне рассеет их; Он уже не призрит на них\", потому что они лица священников не уважают, старцев не милуют.",
+        "NEO": "La face irritée de \\+w Yahweh|strong=\"H3068\"\\+w** les a dispersés ; il ne les regarde plus. L’ennemi n’a eu ni respect pour les prêtres, ni pitié pour les vieillards.",
+        "NAB": "The LORD himself has dispersed them, he regards them no more; He does not receive the priests with favor, nor show kindness to the elders.",
+        "VAT_ES": "[Pe] El rostro del Señor los dispersó, no volverá a mirarlos. Ya no se respeta a los sacerdotes ni se tiene piedad de los ancianos.",
+        "CEI": "La faccia del Signore li ha dispersi, egli non gli volgerà più lo sguardo; non si è avuto riguardo dei sacerdoti, non si è usata pietà agli anziani."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "עוד/ינה עוֹדֵ֨י/נוּ֙ תִּכְלֶ֣ינָה עֵינֵ֔י/נוּ אֶל עֶזְרָתֵ֖/נוּ הָ֑בֶל בְּ/צִפִּיָּתֵ֣/נוּ צִפִּ֔ינוּ אֶל גּ֖וֹי לֹ֥א יוֹשִֽׁעַ׃",
+        "LXX": "Φή. Ἔτι ὄντων ἡμῶν ἐξέλιπον οἱ ὀφθαλμοὶ ἡμῶν, εἰς τὴν βοήθειαν ἡμῶν μάταια ἀποσκοπευόντων ἡμῶν.",
+        "VUL": "<Ain>Cum adhuc subsisteremus, defecerunt oculi nostri/ ad auxilium nostrum vanum ;/ cum respiceremus attenti ad gentem/ quæ salvare non poterat./",
+        "SYN": "Наши глаза истомлены в напрасном ожидании помощи; со сторожевой башни нашей мы ожидали народ, который не мог спасти нас.",
+        "NEO": "Et nous, nos yeux se consumaient encore à attendre un vain secours ; du haut de nos tours, nous regardions vers une nation qui ne peut sauver.",
+        "NAB": "Our eyes ever wasted away, looking in vain for aid; From our watchtower we watched for a nation that could not save us.",
+        "VAT_ES": "[Ain] Aún se consumían nuestros ojos, aguardando en vano una ayuda; en nuestros puestos de guardia, mirábamos hacia una nación que no puede salvar.",
+        "CEI": "Ancora si consumavano i nostri occhi, in cerca di un vano soccorso. Dal nostro osservatorio scrutavamo verso una nazione che non poteva salvarci."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "צָד֣וּ צְעָדֵ֔י/נוּ מִ/לֶּ֖כֶת בִּ/רְחֹבֹתֵ֑י/נוּ קָרַ֥ב קִצֵּ֛י/נוּ מָלְא֥וּ יָמֵ֖י/נוּ כִּי בָ֥א קִצֵּֽי/נוּ׃",
+        "LXX": "Τιαδή. Ἀπεσκοπεύσαμεν εἰς ἔθνος οὐ σῶζον, ἐθηρεύσαμεν μικροὺς ἡμῶν τοῦ μὴ πορεύεσθαι ἐν ταῖς πλατείαις ἡμῶν.",
+        "VUL": "<Sade>Lubricaverunt vestigia nostra/ in itinere platearum nostrarum ;/ appropinquavit finis noster, completi sunt dies nostri,/ quia venit finis noster./",
+        "SYN": "А они подстерегали шаги наши, чтобы мы не могли ходить по улицам нашим; приблизился конец наш, дни наши исполнились; пришел конец наш.",
+        "NEO": "Ils épiaient nos pas, nous empêchant de marcher dans nos places. Notre fin approche, nos jours sont accomplis ; oui, notre fin est arrivée !",
+        "NAB": "Men dogged our steps so that we could not walk in our streets; Our end drew near, and came; our time had expired.",
+        "VAT_ES": "[Sade] Se acechaban nuestros pasos, no podíamos andar por las calles. Se acercaba nuestro fin, se habían cumplido nuestros días: &iexcl;sí, había llegado nuestro fin!",
+        "CEI": "Han dato la caccia ai nostri passi, impedendoci di andare per le nostre piazze. \"Prossima è la nostra fine; son compiuti i nostri giorni! Certo, è arrivata la nostra fine\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "קַלִּ֤ים הָיוּ֙ רֹדְפֵ֔י/נוּ מִ/נִּשְׁרֵ֖י שָׁמָ֑יִם עַל הֶ/הָרִ֣ים דְּלָקֻ֔/נוּ בַּ/מִּדְבָּ֖ר אָ֥רְבוּ לָֽ/נוּ׃",
+        "LXX": "Κώφ. Ἤγγικεν ὁ καιρὸς ἡμῶν, ἐπληρώθησαν αἱ ἡμέραι ἡμῶν, πάρεστιν ὁ καιρὸς ἡμῶν· κοῦφοι ἐγένοντο οἱ διώκοντες ἡμᾶς ὑπὲρ ἀετοὺς οὐρανοῦ, ἐπὶ τῶν ὀρέων ἐξέπτησαν, ἐν ἐρήμῳ ἐνήδρευσαν ἡμᾶς.",
+        "VUL": "<Coph>Velociores fuerunt persecutores nostri/ aquilis cæli ;/ super montes persecuti sunt nos,/ in deserto insidiati sunt nobis./",
+        "SYN": "Преследовавшие нас были быстрее орлов небесных; гонялись за нами по горам, ставили засаду для нас в пустыне.",
+        "NEO": "Ceux qui nous poursuivaient ont été plus légers que les aigles du ciel ; ils nous ont pourchassés sur les montagnes ; ils nous ont dressé des embûches dans le désert.",
+        "NAB": "Our pursuers were swifter than eagles in the air, They harassed us on the mountains and waylaid us in the desert.",
+        "VAT_ES": "[Qof] Nuestros perseguidores eran más veloces que las águilas del cielo: nos hostigaban en las montañas, nos tendían emboscadas en el desierto.",
+        "CEI": "I nostri inseguitori erano più veloci delle aquile del cielo; sui monti ci hanno inseguiti, nel deserto ci hanno teso agguati."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "ר֤וּחַ אַפֵּ֨י/נוּ֙ מְשִׁ֣יחַ יְהוָ֔ה נִלְכַּ֖ד בִּ/שְׁחִיתוֹתָ֑/ם אֲשֶׁ֣ר אָמַ֔רְנוּ בְּ/צִלּ֖/וֹ נִֽחְיֶ֥ה בַ/גּוֹיִֽם׃",
+        "LXX": "Ῥήχς. Πνεῦμα προσώπου ἡμῶν χριστὸς Κύριος συνελήμφθη ἐν ταῖς διαφθοραῖς αὐτῶν, οὗ εἴπαμεν Ἐν τῇ σκιᾷ αὐτοῦ ζησόμεθα ἐν τοῖς ἔθνεσιν.",
+        "VUL": "<Res>Spiritus oris nostri, christus Dominus,/ captus est in peccatis nostris,/ cui diximus : In umbra tua/ vivemus in gentibus./",
+        "SYN": "Дыхание жизни нашей, помазанник Господень пойман в ямы их, тот, о котором мы говорили: \"под тенью его будем жить среди народов\".",
+        "NEO": "Le souffle de nos narines, l’oint de \\+w Yahweh|strong=\"H3068\"\\+w**, a été pris dans leurs fosses, lui dont nous disions : « A son ombre nous vivrons parmi les nations. »",
+        "NAB": "The anointed one of the LORD, our breath of life, was caught in their snares, He in whose shadow we thought we could live on among the nations.",
+        "VAT_ES": "[Res] El Ungido del Señor, nuestro aliento vital, quedó atrapado en sus fosas: aquel de quien decíamos: «&iexcl;A su sombra viviremos entre las naciones!».",
+        "CEI": "Il nostro respiro, l'unto del Signore, è stato preso nei loro trabocchetti, lui, di cui dicevamo: \"Alla sua ombra vivremo fra le nazioni\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "שִׂ֤ישִׂי וְ/שִׂמְחִי֙ בַּת אֱד֔וֹם יושבתי יוֹשֶׁ֖בֶת בְּ/אֶ֣רֶץ ע֑וּץ גַּם עָלַ֨יִ/ךְ֙ תַּעֲבָר כּ֔וֹס תִּשְׁכְּרִ֖י וְ/תִתְעָרִֽי׃",
+        "LXX": "Χσέν. Χαῖρε καὶ εὐφραίνου, θύγατερ Ἰδουμαίας ἡ κατοικοῦσα ἐπὶ γῆς, καί γε ἐπὶ σὲ διελεύσεται τὸ ποτήριον Κυρίου, μεθυσθήσῃ καὶ ἀποχεεῖς.",
+        "VUL": "<Sin>Gaude et lætare, filia Edom,/ quæ habitas in terra Hus !/ ad te quoque perveniet calix : inebriaberis,/ atque nudaberis./",
+        "SYN": "Радуйся и веселись, дочь Едома, обитательница земли Уц! И до тебя дойдет чаша; напьешься допьяна и обнажишься.",
+        "NEO": "Réjouis-toi et sois dans l’allégresse, fille d’Edom, qui habite au pays de Hus ! A toi aussi passera la coupe ; tu t’enivreras et tu te mettras à nu.",
+        "NAB": "Though you rejoice and are glad, O daughter Edom, you who dwell in the land of Uz, To you also shall the cup be passed; you shall become drunk and naked.",
+        "VAT_ES": "[Sin] &iexcl;Regocíjate y alégrate, hija de Edom, tú que habitas en el país de Us! También tú recibirás la copa: te embriagarás y te desnudarás.",
+        "CEI": "Esulta pure, gioisci, figlia di Edom, che abiti nella terra di Uz; anche a te arriverà il calice, ti inebrierai ed esporrai la tua nudità."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "תַּם עֲוֺנֵ/ךְ֙ בַּת צִיּ֔וֹן לֹ֥א יוֹסִ֖יף לְ/הַגְלוֹתֵ֑/ךְ פָּקַ֤ד עֲוֺנֵ/ךְ֙ בַּת אֱד֔וֹם גִּלָּ֖ה עַל חַטֹּאתָֽיִ/ךְ׃",
+        "LXX": "Θαύ. Ἐξέλιπεν ἡ ἀνομία σου, θύγατερ Σειών, οὐ προσθήσει ἀποικίσαι σε. ἐπεσκέψατο ἀνομίας σου, θυγάτηρ Ἐδώμ, ἀπεκάλυψεν ἐπὶ τὰ ἀσεβήματά σου.",
+        "VUL": "<Thau>Completa est iniquitas tua, filia Sion :/ non addet ultra ut transmigret te./ Visitavit iniquitatem tuam, filia Edom ;/ discooperuit peccata tua.]",
+        "SYN": "Дщерь Сиона! наказание за беззаконие твое кончилось; Он не будет более изгонять тебя; но твое беззаконие, дочь Едома, Он посетит и обнаружит грехи твои.",
+        "NEO": "Ton iniquité a pris fin, fille de Sion, il ne t’enverra plus en exil. Il visite ton iniquité, fille d’Edom ; il met à découvert tes péchés.",
+        "NAB": "Your chastisement is completed, O daughter Zion, he will not prolong your exile; But your wickedness, O daughter Edom, he will punish, he will lay bare your sins.",
+        "VAT_ES": "[Tau] Tu iniquidad se ha borrado, hija de Sión: &iexcl;él no volverá a desterrarte! El castigará tu culpa, hija de Edom, &iexcl;pondrá al descubierto tus pecados!",
+        "CEI": "È completa la tua punizione, figlia di Sion, egli non ti manderà più in esilio; ma punirà la tua iniquità, figlia di Edom, scoprirà i tuoi peccati."
+      }
+    }
+  }
+}

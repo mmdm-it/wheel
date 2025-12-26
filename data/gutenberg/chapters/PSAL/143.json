@@ -1,0 +1,230 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_143",
+  "book_key": "PSAL",
+  "sequence": 143,
+  "chapter_in": {
+    "MT": 143,
+    "VUL": 142,
+    "LXX": 142
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מִזְמ֗וֹר לְ/דָ֫וִ֥ד יְהוָ֤ה שְׁמַ֬ע תְּפִלָּתִ֗/י הַאֲזִ֥ינָ/ה אֶל תַּחֲנוּנַ֑/י בֶּ/אֱמֻנָתְ/ךָ֥ עֲ֝נֵ֗/נִי בְּ/צִדְקָתֶֽ/ךָ׃",
+        "LXX": "Τῷ Δαυείδ, πρὸς τὸν Γολιάδ. Εὐλογητὸς Κύριος ὁ θεός μου, ὁ διδάσκων τὰς χεῖράς μου εἰς παράταξιν, τοὺς δακτύλους μου εἰς πόλεμον·",
+        "VUL": "Psalmus David. Adversus Goliath. [Benedictus Dominus Deus meus,/ qui docet manus meas ad prælium,/ et digitos meos ad bellum./",
+        "SYN": "Благословен Господь, твердыня моя, научающий руки мои битве и персты мои брани,",
+        "NEO": "Psaume de David.",
+        "NAB": "A psalm of David. LORD, hear my prayer; in your faithfulness listen to my pleading; answer me in your justice.",
+        "CEI": "Salmo. Di Davide. Signore, ascolta la mia preghiera, porgi l'orecchio alla mia supplica, tu che sei fedele, e per la tua giustizia rispondimi."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/אַל תָּב֣וֹא בְ֭/מִשְׁפָּט אֶת עַבְדֶּ֑/ךָ כִּ֤י לֹֽא יִצְדַּ֖ק לְ/פָנֶ֣י/ךָ כָל חָֽי׃",
+        "LXX": "ἔλεός μου καὶ καταφυγή μου, ἀντιλήμπτωρ μου καὶ ῥύστης μου, ὑπερασπιστής μου καὶ ἐπ’ αὐτῷ ἤλπισα. ὁ ὑποτάσσων τὸν λαόν μου ὑπ’ ἐμέ.",
+        "VUL": "Misericordia mea et refugium meum ;/ susceptor meus et liberator meus ;/ protector meus, et in ipso speravi,/ qui subdit populum meum sub me./",
+        "SYN": "милость моя и ограждение мое, прибежище мое и Избавитель мой, щит мой, - и я на Него уповаю; Он подчиняет мне народ мой.",
+        "NEO": "N’entre pas en jugement avec ton serviteur, car aucun homme vivant n’est juste devant toi.",
+        "NAB": "Do not enter into judgment with your servant; before you no living being can be just.",
+        "VAT_ES": "No llames a juicio a tu servidor,",
+        "CEI": "Non chiamare in giudizio il tuo servo: nessun vivente davanti a te è giusto."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כִּ֥י רָ֘דַ֤ף אוֹיֵ֨ב נַפְשִׁ֗/י דִּכָּ֣א לָ֭/אָרֶץ חַיָּתִ֑/י הוֹשִׁיבַ֥/נִי בְ֝/מַחֲשַׁכִּ֗ים כְּ/מֵתֵ֥י עוֹלָֽם׃",
+        "LXX": "Κύριε, τί ἐστιν ἄνθρωπος ὅτι ἐγνώσθης αὐτῷ, ἢ υἱὸς ἀνθρώπου ὅτι λογίζῃ αὐτόν;",
+        "VUL": "Domine, quid est homo, quia innotuisti ei ?/ aut filius hominis, quia reputas eum ?/",
+        "SYN": "Господи! что есть человек, что Ты знаешь о нем, и сын человеческий, что обращаешь на него внимание?",
+        "NEO": "L’ennemi en veut à mon âme, il foule à terre ma vie ; il me relègue dans les lieux ténébreux, comme ceux qui sont morts depuis longtemps.",
+        "NAB": "The enemy has pursued me; they have crushed my life to the ground. They have left me in darkness like those long dead.",
+        "VAT_ES": "El enemigo me persiguió a muerte,",
+        "CEI": "Il nemico mi perseguita, calpesta a terra la mia vita, mi ha relegato nelle tenebre come i morti da gran tempo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/תִּתְעַטֵּ֣ף עָלַ֣/י רוּחִ֑/י בְּ֝/תוֹכִ֗/י יִשְׁתּוֹמֵ֥ם לִבִּֽ/י׃",
+        "LXX": "ἄνθρωπος ματαιότητι ὡμοιώθη, αἱ ἡμέραι αὐτοῦ ὡσεὶ σκιὰ παράγουσιν.",
+        "VUL": "Homo vanitati similis factus est ;/ dies ejus sicut umbra prætereunt./",
+        "SYN": "Человек подобен дуновению; дни его - как уклоняющаяся тень.",
+        "NEO": "Mon esprit défaille en moi, mon cœur est troublé dans mon sein.",
+        "NAB": "My spirit is faint within me; my heart is dismayed.",
+        "VAT_ES": "El aliento se extingue en mi interior,",
+        "CEI": "In me languisce il mio spirito, si agghiaccia il mio cuore."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "זָ֘כַ֤רְתִּי יָמִ֨ים מִ/קֶּ֗דֶם הָגִ֥יתִי בְ/כָל פָּעֳלֶ֑/ךָ בְּֽ/מַעֲשֵׂ֖ה יָדֶ֣י/ךָ אֲשׂוֹחֵֽחַ׃",
+        "LXX": "Κύριε, κλῖνον οὐρανούς σου καὶ κατάβηθι, ἅψαι τῶν ὀρέων καὶ καπνισθήσονται·",
+        "VUL": "Domine, inclina cælos tuos, et descende ;/ tange montes, et fumigabunt./",
+        "SYN": "Господи! Приклони небеса Твои и сойди; коснись гор, и воздымятся;",
+        "NEO": "Je pense aux jours d’autrefois, je médite sur toutes tes œuvres, je réfléchis sur l’ouvrage de tes mains.",
+        "NAB": "I remember the days of old; I ponder all your deeds; the works of your hands I recall.",
+        "VAT_ES": "Me acuerdo de los tiempos pasados,",
+        "CEI": "Ricordo i giorni antichi, ripenso a tutte le tue opere, medito sui tuoi prodigi."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "פֵּרַ֣שְׂתִּי יָדַ֣/י אֵלֶ֑י/ךָ נַפְשִׁ֓/י כְּ/אֶֽרֶץ עֲיֵפָ֖ה לְ/ךָ֣ סֶֽלָה׃",
+        "LXX": "ἄστραψον ἀστραπὴν καὶ σκορπιεῖς αὐτούς, ἐξαπόστειλον τὰ βέλη σου καὶ συνταράξεις αὐτούς.",
+        "VUL": "Fulgura coruscationem, et dissipabis eos ;/ emitte sagittas tuas, et conturbabis eos./",
+        "SYN": "блесни молниею и рассей их; пусти стрелы Твои и расстрой их;",
+        "NEO": "j’étends vers toi mes mains, et mon âme, comme une terre desséchée, soupire après toi. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "I stretch out my hands to you; I thirst for you like a parched land. Selah",
+        "VAT_ES": "y extiendo mis brazos hacia ti:",
+        "CEI": "A te protendo le mie mani, sono davanti a te come terra riarsa."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "מַ֘הֵ֤ר עֲנֵ֨/נִי יְהוָה֮ כָּלְתָ֪ה ר֫וּחִ֥/י אַל תַּסְתֵּ֣ר פָּנֶ֣י/ךָ מִמֶּ֑/נִּי וְ֝/נִמְשַׁ֗לְתִּי עִם יֹ֥רְדֵי בֽוֹר׃",
+        "LXX": "ἐξαπόστειλον τὴν χεῖρά σου ἐξ ὕψους, ἐξελοῦ με καὶ ῥῦσαί με ἐξ ὑδάτων πολλῶν, ἐκ χειρὸς υἱῶν ἀλλοτρίων,",
+        "VUL": "Emitte manum tuam de alto : eripe me,/ et libera me de aquis multis,/ de manu filiorum alienorum :/",
+        "SYN": "простри с высоты руку Твою, избавь меня и спаси меня от вод многих, от руки сынов иноплеменных,",
+        "NEO": "Hâte-toi de m’exaucer, \\+w Yahweh|strong=\"H3068\"\\+w**, mon esprit défaille ; ne me cache pas ta face, je deviens semblable à ceux qui descendent dans la fosse.",
+        "NAB": "Hasten to answer me, LORD; for my spirit fails me. Do not hide your face from me, lest I become like those descending to the pit.",
+        "VAT_ES": "Respóndeme en seguida, Señor,",
+        "CEI": "Rispondimi presto, Signore, viene meno il mio spirito. Non nascondermi il tuo volto, perché non sia come chi scende nella fossa."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הַשְׁמִ֘יעֵ֤/נִי בַ/בֹּ֨קֶר חַסְדֶּ/ךָ֮ כִּֽי בְ/ךָ֪ בָ֫טָ֥חְתִּי הוֹדִיעֵ֗/נִי דֶּֽרֶךְ ז֥וּ אֵלֵ֑ךְ כִּֽי אֵ֝לֶי/ךָ נָשָׂ֥אתִי נַפְשִֽׁ/י׃",
+        "LXX": "ὧν τὸ στόμα ἐλάλησεν ματαιότητα, καὶ ἡ δεξιὰ αὐτῶν δεξιὰ ἀδικίας.",
+        "VUL": "quorum os locutum est vanitatem,/ et dextera eorum dextera iniquitatis./",
+        "SYN": "которых уста говорят суетное и которых десница - десница лжи.",
+        "NEO": "Fais-moi de bonne heure sentir ta bonté, car c’est en toi que j’espère ; fais-moi connaître la voie où je dois marcher, car c’est vers toi que j’élève mon âme.",
+        "NAB": "At dawn let me hear of your kindness, for in you I trust. Show me the path I should walk, for to you I entrust my life.",
+        "VAT_ES": "Que yo experimente tu amor por la mañana,",
+        "CEI": "Al mattino fammi sentire la tua grazia, poiché in te confido. Fammi conoscere la strada da percorrere, perché a te si innalza l'anima mia."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הַצִּילֵ֖/נִי מֵ/אֹיְבַ֥/י יְהוָ֗ה אֵלֶ֥י/ךָ כִסִּֽתִי׃",
+        "LXX": "ὁ θεός, ᾠδὴν καινὴν ᾄσομαί σοι, ἐν ψαλτηρίῳ δεκαχόρδῳ ψαλῶ σοι,",
+        "VUL": "Deus, canticum novum cantabo tibi ;/ in psalterio decachordo psallam tibi./",
+        "SYN": "Боже! новую песнь воспою Тебе, на десятиструнной псалтири воспою Тебе,",
+        "NEO": "Délivre-moi de mes ennemis, \\+w Yahweh|strong=\"H3068\"\\+w**, je me réfugie auprès de toi.",
+        "NAB": "Rescue me, LORD, from my foes, for in you I hope.",
+        "VAT_ES": "Líbrame, Señor, de mis enemigos,",
+        "CEI": "Salvami dai miei nemici, Signore, a te mi affido."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "לַמְּדֵ֤/נִי לַֽ/עֲשׂ֣וֹת רְצוֹנֶ/ךָ֮ כִּֽי אַתָּ֪ה אֱל֫וֹהָ֥/י רוּחֲ/ךָ֥ טוֹבָ֑ה תַּ֝נְחֵ֗/נִי בְּ/אֶ֣רֶץ מִישֽׁוֹר׃",
+        "LXX": "τῷ διδόντι τὴν σωτηρίαν τοῖς βασιλεῦσιν, τῷ λυτρουμένῳ Δαυεὶδ τὸν δοῦλον αὐτοῦ. ἐκ ῥομφαίας πονηρᾶς",
+        "VUL": "Qui das salutem regibus,/ qui redemisti David servum tuum de gladio maligno,/",
+        "SYN": "дарующему спасение царям и избавляющему Давида, раба Твоего, от лютого меча.",
+        "NEO": "Apprends-moi à faire ta volonté, car tu es mon Dieu. Que ton bon esprit me conduise dans la voie droite !",
+        "NAB": "Teach me to do your will, for you are my God. May your kind spirit guide me on ground that is level.",
+        "VAT_ES": "enséñame a hacer tu voluntad,",
+        "CEI": "Insegnami a compiere il tuo volere, perché sei tu il mio Dio. Il tuo spirito buono mi guidi in terra piana."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "לְמַֽעַן שִׁמְ/ךָ֣ יְהוָ֣ה תְּחַיֵּ֑/נִי בְּ/צִדְקָתְ/ךָ֓ תוֹצִ֖יא מִ/צָּרָ֣ה נַפְשִֽׁ/י׃",
+        "LXX": "ῥῦσαί με, καὶ ἐξελοῦ με ἐκ χειρὸς υἱῶν ἀλλοτρίων, ὧν τὸ στόμα ἐλάλησεν ματαιότητα, καὶ ἡ δεξιὰ αὐτῶν δεξιὰ ἀδικίας·",
+        "VUL": "eripe me, et erue me de manu filiorum alienorum,/ quorum os locutum est vanitatem,/ et dextera eorum dextera iniquitatis./",
+        "SYN": "Избавь меня и спаси меня от руки сынов иноплеменных, которых уста говорят суетное и которых десница - десница лжи.",
+        "NEO": "A cause de ton nom, \\+w Yahweh|strong=\"H3068\"\\+w**, rends-moi la vie ; dans ta justice, retire mon âme de la détresse.",
+        "NAB": "For your name's sake, LORD, give me life; in your justice lead me out of distress.",
+        "VAT_ES": "Por amor de tu Nombre, Señor,",
+        "CEI": "Per il tuo nome, Signore, fammi vivere, liberami dall'angoscia, per la tua giustizia."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וּֽ/בְ/חַסְדְּ/ךָ֮ תַּצְמִ֪ית אֹ֫יְבָ֥/י וְֽ֭/הַאֲבַדְתָּ כָּל צֹרֲרֵ֣י נַפְשִׁ֑/י כִּ֝֗י אֲנִ֣י עַבְדֶּֽ/ךָ׃",
+        "LXX": "ὧν οἱ υἱοὶ ὡς νεόφυτα ἡδρυμμένα ἐν τῇ νεότητι αὐτῶν, αἱ θυγατέρες αὐτῶν κεκαλλωπισμέναι, περικεκοσμημέναι ὡς ὁμοίωμα ναοῦ·",
+        "VUL": "Quorum filii sicut novellæ plantationes in juventute sua ;/ filiæ eorum compositæ,/ circumornatæ ut similitudo templi./",
+        "SYN": "Да будут сыновья наши, как разросшиеся растения в их молодости; дочери наши - как искусно изваянные столпы в чертогах.",
+        "NEO": "Dans ta bonté, anéantis mes ennemis, et fais périr tous ceux qui m’oppriment, car je suis ton serviteur.",
+        "NAB": "In your kindness put an end to my foes; destroy all who attack me, for I am your servant. Psalm",
+        "VAT_ES": "por tu fidelidad, destruye a mi enemigo;",
+        "CEI": "Per la tua fedeltà disperdi i miei nemici, fà perire chi mi opprime, poiché io sono tuo servo."
+      }
+    }
+  }
+}

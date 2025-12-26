@@ -1,0 +1,248 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_055",
+  "book_key": "ISA",
+  "sequence": 55,
+  "chapter_in": {
+    "MT": 55,
+    "VUL": 55,
+    "LXX": 55
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "ה֤וֹי כָּל צָמֵא֙ לְכ֣וּ לַ/מַּ֔יִם וַ/אֲשֶׁ֥ר אֵֽין ל֖/וֹ כָּ֑סֶף לְכ֤וּ שִׁבְרוּ֙ וֶֽ/אֱכֹ֔לוּ וּ/לְכ֣וּ שִׁבְר֗וּ בְּ/לוֹא כֶ֛סֶף וּ/בְ/ל֥וֹא מְחִ֖יר יַ֥יִן וְ/חָלָֽב׃",
+        "LXX": "Οἱ διψῶντες, πορεύεσθε ἐφ’ ὕδωρ, καὶ ὅσοι μὴ ἔχετε ἀργύριον, βαδίσαντες ἀγοράσατε, καὶ φάγετε ἄνευ ἀργυρίου καὶ τιμῆς οἴνου καὶ στέαρ.",
+        "VUL": "[Omnes sitientes, venite ad aquas,/ et qui non habetis argentum,/ properate, emite, et comedite :/ venite, emite absque argento/ et absque ulla commutatione/ vinum et lac./",
+        "SYN": "Жаждущие! идите все к водам; даже и вы, у которых нет серебра, идите, покупайте и ешьте; идите, покупайте без серебра и без платы вино и молоко.",
+        "NEO": "O vous tous qui avez soif, venez aux eaux, vous-mêmes qui n’avez pas d’argent ; venez, achetez du blé et mangez ; venez, achetez sans argent, et sans rien donner en échange, du vin et du lait.",
+        "NAB": "All you who are thirsty, come to the water! You who have no money, come, receive grain and eat; Come, without paying and without cost, drink wine and milk!",
+        "VAT_ES": "&iquest;Quién creyó lo que nosotros hemos oído y a quién se le reveló el brazo del Señor?",
+        "CEI": "O voi tutti assetati venite all'acqua, chi non ha denaro venga ugualmente; comprate e mangiate senza denaro e, senza spesa, vino e latte."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "לָ֤/מָּה תִשְׁקְלוּ כֶ֨סֶף֙ בְּֽ/לוֹא לֶ֔חֶם וִ/יגִיעֲ/כֶ֖ם בְּ/ל֣וֹא לְ/שָׂבְעָ֑ה שִׁמְע֨וּ שָׁמ֤וֹעַ אֵלַ/י֙ וְ/אִכְלוּ ט֔וֹב וְ/תִתְעַנַּ֥ג בַּ/דֶּ֖שֶׁן נַפְשְׁ/כֶֽם׃",
+        "LXX": "ἵνα τί τιμᾶσθε ἀργυρίου, καὶ τὸν μόχθον ὑμῶν οὐκ εἰς πλησμονήν; καὶ φάγεσθε ἀγαθά, καὶ ἐντρυφήσει ἐν ἀγαθοῖς ἡ ψυχὴ ὑμῶν.",
+        "VUL": "Quare appenditis argentum non in panibus,/ et laborem vestrum non in saturitate ?/ Audite, audientes me, et comedite bonum,/ et delectabitur in crassitudine anima vestra./",
+        "SYN": "Для чего вам отвешивать серебро за то, что не хлеб, и трудовое свое за то, что не насыщает? Послушайте Меня внимательно и вкушайте благо, и душа ваша да насладится туком.",
+        "NEO": "Pourquoi dépenser de l’argent pour ce qui n’est pas du pain, votre travail pour ce qui ne rassasie pas ? Ecoutez-moi donc, et mangez ce qui est bon, et que votre âme se délecte de mets succulents.",
+        "NAB": "Why spend your money for what is not bread; your wages for what fails to satisfy? Heed me, and you shall eat well, you shall delight in rich fare.",
+        "VAT_ES": "El creció como un retoño en su presencia, como una raíz que brota de una tierra árida, sin forma ni hermosura que atrajera nuestras miradas, sin un aspecto que pudiera agradarnos.",
+        "CEI": "Perché spendete denaro per ciò che non è pane, il vostro patrimonio per ciò che non sazia? Su, ascoltatemi e mangerete cose buone e gusterete cibi succulenti."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הַטּ֤וּ אָזְנְ/כֶם֙ וּ/לְכ֣וּ אֵלַ֔/י שִׁמְע֖וּ וּ/תְחִ֣י נַפְשְׁ/כֶ֑ם וְ/אֶכְרְתָ֤ה לָ/כֶם֙ בְּרִ֣ית עוֹלָ֔ם חַֽסְדֵ֥י דָוִ֖ד הַ/נֶּאֱמָנִֽים׃",
+        "LXX": "προσέχετε τοῖς ὠσὶν ὑμῶν καὶ ἐπακολουθήσατε ταῖς ὁδοῖς μου· εἰσακούσατέ μου, ⸂⸆⸃ καὶ ζήσεται ἐν ἀγαθοῖς ἡ ψυχὴ ὑμῶν, καὶ διαθήσομαι ὑμῖν διαθήκην αἰώνιον, τὰ ὅσια Δαυεὶδ τὰ πιστά.",
+        "VUL": "Inclinate aurem vestram, et venite ad me ;/ audite, et vivet anima vestra,/ et feriam vobiscum pactum sempiternum,/ misericordias David fideles./",
+        "SYN": "Приклоните ухо ваше и придите ко Мне: послушайте, и жива будет душа ваша, - и дам вам завет вечный, неизменные милости, _обещанные_ Давиду.",
+        "NEO": "Prêtez l’oreille et venez à moi ; écoutez, et que votre âme vive ; et je conclurai avec vous un pacte éternel, vous accordant les grâces assurées à David.",
+        "NAB": "Come to me heedfully, listen, that you may have life. I will renew with you the everlasting covenant, the benefits assured to David.",
+        "VAT_ES": "Despreciado, desechado por los hombres, abrumado de dolores y habituado al sufrimiento, como alguien ante quien se aparta el rostro, tan despreciado, que lo tuvimos por nada.",
+        "CEI": "Porgete l'orecchio e venite a me, ascoltate e voi vivrete. Io stabilirò per voi un'alleanza eterna, i favori assicurati a Davide."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הֵ֛ן עֵ֥ד לְאוּמִּ֖ים נְתַתִּ֑י/ו נָגִ֥יד וּ/מְצַוֵּ֖ה לְאֻמִּֽים׃",
+        "LXX": "ἰδοὺ μαρτύριον ἐν ἔθνεσιν ἔδωκα αὐτόν, ἄρχοντα καὶ προστάσσοντα ἔθνεσιν.",
+        "VUL": "Ecce testem populis dedi eum,/ ducem ac præceptorem gentibus./",
+        "SYN": "Вот, Я дал Его свидетелем для народов, вождем и наставником народам.",
+        "NEO": "Voici que je l’ai établi témoin auprès des peuples, prince et dominateur des peuples.",
+        "NAB": "As I made him a witness to the peoples, a leader and commander of nations,",
+        "VAT_ES": "Pero él soportaba nuestros sufrimientos y cargaba con nuestras dolencias, y nosotros lo considerábamos golpeado, herido por Dios y humillado.",
+        "CEI": "Ecco l'ho costituito testimonio fra i popoli, principe e sovrano sulle nazioni."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הֵ֣ן גּ֤וֹי לֹֽא תֵדַע֙ תִּקְרָ֔א וְ/ג֥וֹי לֹֽא יְדָע֖וּ/ךָ אֵלֶ֣י/ךָ יָר֑וּצוּ לְמַ֨עַן֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ וְ/לִ/קְד֥וֹשׁ יִשְׂרָאֵ֖ל כִּ֥י פֵאֲרָֽ/ךְ׃",
+        "LXX": "ἔθνη ἃ οὐκ οἴδασίν σε ἐπικαλέσονταί σε, καὶ λαοὶ οἳ οὐκ ἐπίστανταί σε ἐπὶ σὲ καταφεύξονται, ἕνεκεν Κυρίου τοῦ θεοῦ σου τοῦ ἁγίου Ἰσραήλ, ὅτι ἐδόξασέν σε.",
+        "VUL": "Ecce gentem quam nesciebas vocabis,/ et gentes quæ te non cognoverunt ad te current,/ propter Dominum Deum tuum,/ et Sanctum Israël, quia glorificavit te./",
+        "SYN": "Вот, ты призовешь народ, которого ты не знал, и народы, которые тебя не знали, поспешат к тебе ради Господа Бога твоего и ради Святаго Израилева, ибо Он прославил тебя.",
+        "NEO": "Voici que tu appelleras la nation que tu ne connaissais pas, et les nations qui ne te connaissaient pas accourront à toi, à cause de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, et du Saint d’Israël, parce qu’il t’a glorifié !",
+        "NAB": "So shall you summon a nation you knew not, and nations that knew you not shall run to you, Because of the LORD, your God, the Holy One of Israel, who has glorified you.",
+        "VAT_ES": "El fue traspasado por nuestras rebeldías y triturado por nuestras iniquidades. El castigo que nos da la paz recayó sobre él y por sus heridas fuimos sanados.",
+        "CEI": "Ecco tu chiamerai gente che non conoscevi; accorreranno a te popoli che non ti conoscevano a causa del Signore, tuo Dio, del Santo di Israele, perché egli ti ha onorato."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "דִּרְשׁ֥וּ יְהוָ֖ה בְּ/הִמָּצְא֑/וֹ קְרָאֻ֖/הוּ בִּֽ/הְיוֹת֥/וֹ קָרֽוֹב׃",
+        "LXX": "Ζητήσατε τὸν κύριον, καὶ ἐν τῷ εὑρίσκειν αὐτὸν ἐπικαλέσασθε· ἡνίκα δ’ ἂν ἐγγίζῃ ὑμῖν,",
+        "VUL": "Quærite Dominum dum inveniri potest ;/ invocate eum dum prope est./",
+        "SYN": "Ищите Господа, когда можно найти Его; призывайте Его, когда Он близко.",
+        "NEO": "Cherchez \\+w Yahweh|strong=\"H3068\"\\+w**, pendant qu’on peut le trouver ; invoquez-le, tandis qu’il est près.",
+        "NAB": "Seek the LORD while he may be found, call him while he is near.",
+        "VAT_ES": "Todos andábamos errantes como ovejas, siguiendo cada uno su propio camino, y el Señor hizo recaer sobre él las iniquidades de todos nosotros.",
+        "CEI": "Cercate il Signore, mentre si fa trovare, invocatelo, mentre è vicino."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יַעֲזֹ֤ב רָשָׁע֙ דַּרְכּ֔/וֹ וְ/אִ֥ישׁ אָ֖וֶן מַחְשְׁבֹתָ֑י/ו וְ/יָשֹׁ֤ב אֶל יְהוָה֙ וִֽ/ירַחֲמֵ֔/הוּ וְ/אֶל אֱלֹהֵ֖י/נוּ כִּֽי יַרְבֶּ֥ה לִ/סְלֽוֹחַ׃",
+        "LXX": "ἀπολιπέτω ὁ ἀσεβὴς τὰς ὁδοὺς αὐτοῦ καὶ ἀνὴρ ἄνομος τὰς βουλὰς αὐτοῦ καὶ ἐπιστραφήτω ἐπὶ Κύριον, καὶ ἐλεηθήσεται, ὅτι ἐπὶ πολὺ ἀφήσει τὰς ἁμαρτίας ὑμῶν.",
+        "VUL": "Derelinquat impius viam suam,/ et vir iniquus cogitationes suas,/ et revertatur ad Dominum, et miserebitur ejus ;/ et ad Deum nostrum, quoniam multus est ad ignoscendum./",
+        "SYN": "Да оставит нечестивый путь свой и беззаконник - помыслы свои, и да обратится к Господу, и Он помилует его, и к Богу нашему, ибо Он многомилостив.",
+        "NEO": "Que le méchant abandonne sa voie, et le criminel ses pensées ; qu’il revienne à \\+w Yahweh|strong=\"H3068\"\\+w**, et il lui fera grâce ; à notre Dieu, car il pardonne largement.",
+        "NAB": "Let the scoundrel forsake his way, and the wicked man his thoughts; Let him turn to the LORD for mercy; to our God, who is generous in forgiving.",
+        "VAT_ES": "Al ser maltratado, se humillaba y ni siquiera abría su boca: como un cordero llevado al matadero, como una oveja muda ante el que la esquila, él no abría su boca.",
+        "CEI": "L'empio abbandoni la sua via e l'uomo iniquo i suoi pensieri; ritorni al Signore che avrà misericordia di lui e al nostro Dio che largamente perdona."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּ֣י לֹ֤א מַחְשְׁבוֹתַ/י֙ מַחְשְׁב֣וֹתֵי/כֶ֔ם וְ/לֹ֥א דַרְכֵי/כֶ֖ם דְּרָכָ֑/י נְאֻ֖ם יְהוָֽה׃",
+        "LXX": "οὐ γάρ εἰσιν αἱ βουλαί μου ὥσπερ αἱ βουλαὶ ὑμῶν, οὐδ’ ὥσπερ αἱ ὁδοὶ ὑμῶν αἱ ὁδοί μου, λέγει Κύριος·",
+        "VUL": "Non enim cogitationes meæ cogitationes vestræ,/ neque viæ vestræ viæ meæ, dicit Dominus./",
+        "SYN": "Мои мысли - не ваши мысли, ни ваши пути - пути Мои, говорит Господь.",
+        "NEO": "Car mes pensées ne sont pas vos pensées, et vos voies ne sont pas mes voies, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "For my thoughts are not your thoughts, nor are your ways my ways, says the LORD.",
+        "VAT_ES": "Fue detenido y juzgado injustamente, y &iquest;quién se preocupó de su suerte? Porque fue arrancado de la tierra de los vivientes y golpeado por las rebeldías de mi pueblo.",
+        "CEI": "Perché i miei pensieri non sono i vostri pensieri, le vostre vie non sono le mie vie - oracolo del Signore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "כִּֽי גָבְה֥וּ שָׁמַ֖יִם מֵ/אָ֑רֶץ כֵּ֣ן גָּבְה֤וּ דְרָכַ/י֙ מִ/דַּרְכֵי/כֶ֔ם וּ/מַחְשְׁבֹתַ֖/י מִ/מַּחְשְׁבֹתֵי/כֶֽם׃",
+        "LXX": "ἀλλ’ ὡς ἀπέχει ὁ οὐρανὸς ἀπὸ τῆς γῆς, οὕτως ἀπέχει ἡ ὁδός μου ἀπὸ τῶν ὁδῶν ὑμῶν καὶ τὰ διανοήματα ὑμῶν ἀπὸ τῆς διανοίας μου.",
+        "VUL": "Quia sicut exaltantur cæli a terra,/ sic exaltatæ sunt viæ meæ a viis vestris,/ et cogitationes meæ a cogitationibus vestris./",
+        "SYN": "Но как небо выше земли, так пути Мои выше путей ваших, и мысли Мои выше мыслей ваших.",
+        "NEO": "Autant les cieux sont élevés au-dessus de la terre, autant mes voies sont élevées au-dessus de vos voies et mes pensées au-dessus de vos pensées.",
+        "NAB": "As high as the heavens are above the earth, so high are my ways above your ways and my thoughts above your thoughts.",
+        "VAT_ES": "Se le dio un sepulcro con los malhechores y una tumba con los impíos, aunque no había cometido violencia ni había engaño en su boca.",
+        "CEI": "Quanto il cielo sovrasta la terra, tanto le mie vie sovrastano le vostre vie, i miei pensieri sovrastano i vostri pensieri."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּ֡י כַּ/אֲשֶׁ֣ר יֵרֵד֩ הַ/גֶּ֨שֶׁם וְ/הַ/שֶּׁ֜לֶג מִן הַ/שָּׁמַ֗יִם וְ/שָׁ֨מָּ/ה֙ לֹ֣א יָשׁ֔וּב כִּ֚י אִם הִרְוָ֣ה אֶת הָ/אָ֔רֶץ וְ/הוֹלִידָ֖/הּ וְ/הִצְמִיחָ֑/הּ וְ/נָ֤תַן זֶ֨רַע֙ לַ/זֹּרֵ֔עַ וְ/לֶ֖חֶם לָ/אֹכֵֽל׃",
+        "LXX": "ὡς γὰρ ἂν καταβῇ ὁ ὑετὸς ἢ χιὼν ἐκ τοῦ οὐρανοῦ, καὶ οὐ μὴ ἀποστραφῇ ἕως ἂν μεθύσῃ τὴν γῆν, καὶ ἐκτέκῃ καὶ ἐκβλαστήσῃ, καὶ δῷ σπέρμα τῷ σπείροντι καὶ ἄρτον εἰς βρῶσιν·",
+        "VUL": "Et quomodo descendit imber et nix de cælo,/ et illuc ultra non revertitur,/ sed inebriat terram, et infundit eam,/ et germinare eam facit,/ et dat semen serenti,/ et panem comedenti :/",
+        "SYN": "Как дождь и снег нисходит с неба и туда не возвращается, но напояет землю и делает ее способною рождать и произращать, чтобы она давала семя тому, кто сеет, и хлеб тому, кто ест, -",
+        "NEO": "Comme la pluie et la neige descendent du ciel et n’y retournent pas, qu’elles n’aient abreuvé et fécondé la terre et qu’elles ne l’aient fait germer, qu’elles n’aient donné la semence au semeur, et le pain à celui qui mange ;",
+        "NAB": "For just as from the heavens the rain and snow come down And do not return there till they have watered the earth, making it fertile and fruitful, Giving seed to him who sows and bread to him who eats,",
+        "VAT_ES": "El Señor quiso aplastarlo con el sufrimiento. Si ofrece su vida en sacrificio de reparación, verá su descendencia, prolongará sus días, y la voluntad del Señor se cumplirá por medio de él.",
+        "CEI": "Come infatti la pioggia e la neve scendono dal cielo e non vi ritornano senza avere irrigato la terra, senza averla fecondata e fatta germogliare, perché dia il seme al seminatore e pane da mangiare,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כֵּ֣ן יִֽהְיֶ֤ה דְבָרִ/י֙ אֲשֶׁ֣ר יֵצֵ֣א מִ/פִּ֔/י לֹֽא יָשׁ֥וּב אֵלַ֖/י רֵיקָ֑ם כִּ֤י אִם עָשָׂה֙ אֶת אֲשֶׁ֣ר חָפַ֔צְתִּי וְ/הִצְלִ֖יחַ אֲשֶׁ֥ר שְׁלַחְתִּֽי/ו׃",
+        "LXX": "οὕτως ἔσται τὸ ῥῆμά μου ὃ ἐὰν ἐξέλθῃ ἐκ τοῦ στόματός μου, οὐ μὴ ἀποστραφῇ ἕως ἂν τελεσθῇ ὅσα ἠθέλησα, καὶ εὐοδώσω τὰς ὁδούς σου καὶ τὰ ἐντάλματά μου.",
+        "VUL": "sic erit verbum meum quod egredietur de ore meo ;/ non revertetur ad me vacuum,/ sed faciet quæcumque volui,/ et prosperabitur in his ad quæ misi illud./",
+        "SYN": "так и слово Мое, которое исходит из уст Моих, - оно не возвращается ко Мне тщетным, но исполняет то, что Мне угодно, и совершает то, для чего Я послал его.",
+        "NEO": "ainsi en est-il de ma parole qui sort de ma bouche : elle ne revient pas à moi sans effet, mais elle exécute ce que j’ai voulu, et accomplit ce pour quoi je l’ai envoyée.",
+        "NAB": "So shall my word be that goes forth from my mouth; It shall not return to me void, but shall do my will, achieving the end for which I sent it.",
+        "VAT_ES": "A causa de tantas fatigas, él verá la luz y, al saberlo, quedará saciado. Mi Servidor justo justificará a muchos y cargará sobre sí las faltas de ellos.",
+        "CEI": "così sarà della parola uscita dalla mia bocca: non ritornerà a me senza effetto, senza aver operato ciò che desidero e senza aver compiuto ciò per cui l'ho mandata."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כִּֽי בְ/שִׂמְחָ֣ה תֵצֵ֔אוּ וּ/בְ/שָׁל֖וֹם תּֽוּבָל֑וּ/ן הֶ/הָרִ֣ים וְ/הַ/גְּבָע֗וֹת יִפְצְח֤וּ לִ/פְנֵי/כֶם֙ רִנָּ֔ה וְ/כָל עֲצֵ֥י הַ/שָּׂדֶ֖ה יִמְחֲאוּ כָֽף׃",
+        "LXX": "ἐν γὰρ εὐφροσύνῃ ἐξελεύσεσθε καὶ ἐν χαρᾷ διδαχθήσεσθε· τὰ γὰρ ὄρη καὶ οἱ βουνοὶ ἐξαλοῦνται προσδεχόμενοι ὑμᾶς ἐν χαρᾷ, καὶ πάντα τὰ ξύλα τοῦ ἀγροῦ ἐπικροτήσει τοῖς κλάδοις,",
+        "VUL": "Quia in lætitia egrediemini,/ et in pace deducemini ;/ montes et colles cantabunt coram vobis laudem,/ et omnia ligna regionis plaudent manu./",
+        "SYN": "Итак вы выйдете с веселием и будете провожаемы с миром; горы и холмы будут петь пред вами песнь, и все дерева в поле рукоплескать вам.",
+        "NEO": "Car vous sortirez pleins de joie, et vous serez conduits en paix ; les montagnes et les collines, à votre vue, éclateront de joie, et tous les arbres de la campagne applaudiront.",
+        "NAB": "Yes, in joy you shall depart, in peace you shall be brought back; Mountains and hills shall break out in song before you, and all the trees of the countryside shall clap their hands.",
+        "VAT_ES": "Por eso le daré una parte entre los grandes y él repartirá el botín junto con los poderosos. Porque expuso su vida a la muerte y fue contado entre los culpables, siendo así que llevaba el pecado de muchos e intercedía en favor de los culpables.",
+        "CEI": "Voi dunque partirete con gioia, sarete condotti in pace. I monti e i colli davanti a voi eromperanno in grida di gioia e tutti gli alberi dei campi batteranno le mani."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "תַּ֤חַת הַֽ/נַּעֲצוּץ֙ יַעֲלֶ֣ה בְר֔וֹשׁ תחת וְ/תַ֥חַת הַ/סִּרְפַּ֖ד יַעֲלֶ֣ה הֲדַ֑ס וְ/הָיָ֤ה לַֽ/יהוָה֙ לְ/שֵׁ֔ם לְ/א֥וֹת עוֹלָ֖ם לֹ֥א יִכָּרֵֽת׃",
+        "LXX": "καὶ ἀντὶ τῆς στοιβῆς ἀναβήσεται κυπάρισσος, ἀντὶ δὲ τῆς κονύζης ἀναβήσεται μυρσίνη· καὶ ἔσται Κύριος εἰς ὄνομα καὶ εἰς σημεῖον αἰώνιον, καὶ οὐκ ἐκλείψει.",
+        "VUL": "Pro saliunca ascendet abies,/ et pro urtica crescet myrtus ;/ et erit Dominus nominatus/ in signum æternum quod non auferetur.]",
+        "SYN": "Вместо терновника вырастет кипарис; вместо крапивы возрастет мирт; и это будет во славу Господа, в знамение вечное, несокрушимое.",
+        "NEO": "Au lieu de l’épine s’élèvera le cyprès, et au lieu de la ronce croîtra le myrte ; ce sera pour \\+w Yahweh|strong=\"H3068\"\\+w** un honneur, un monument éternel qui ne sera pas détruit.",
+        "NAB": "In place of the thornbush, the cypress shall grow, instead of nettles, the myrtle. This shall be to the LORD'S renown, an everlasting imperishable sign.",
+        "CEI": "Invece di spine cresceranno cipressi, invece di ortiche cresceranno mirti; ciò sarà a gloria del Signore, un segno eterno che non scomparirà."
+      }
+    }
+  }
+}

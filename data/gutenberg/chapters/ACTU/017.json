@@ -1,0 +1,582 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ACTU_017",
+  "book_key": "ACTU",
+  "sequence": 17,
+  "chapter_in": {
+    "MT": 17,
+    "VUL": 17,
+    "LXX": 17
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Actus_Apostolorum",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Διοδεύσαντες δὲ τὴν Ἀμφίπολιν καὶ Ἀπολλωνίαν, ἦλθον εἰς Θεσσαλονίκην, ὅπου ἦν ἡ συναγωγὴ τῶν Ἰουδαίων·",
+        "VUL": "Cum autem perambulassent Amphipolim et Apolloniam, venerunt Thessalonicam, ubi erat synagoga Judæorum.",
+        "SYN": "Пройдя через Амфиполь и Аполлонию, они пришли в Фессалонику, где была Иудейская синагога.",
+        "NEO": "Ayant ensuite traversé Amphipolis et Apollonie, Paul et Silas arrivèrent à Thessalonique, où était la synagogue des Juifs.+ 17:1 XVII, 1. La Macédoine était divisée en quatre régions. La Macédoine première avait pour capitale Amphipolis. — Thessalonique ville très riche et très peuplée, capitale de la Macédoine IIe, sur le golfe Thermaïque. — \\+qt Une synagogue\\+qt*, servant de centre religieux aux Juifs des villes voisines, qui n’avaient que de simples oratoires.*",
+        "NAB": "When they took the road through Amphipolis and Apollonia, they reached Thessalonica, where there was a synagogue of the Jews.",
+        "VAT_ES": "Atravesaron Anfípolis y Apolonia, y llegaron a Tesalónica, donde los judíos tenían una sinagoga.",
+        "CEI": "Che diremo dunque? Continuiamo a restare nel peccato perché abbondi la grazia?"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "κατὰ δὲ τὸ εἰωθὸς τῷ Παύλῳ εἰσῆλθεν πρὸς αὐτούς, καὶ ἐπὶ σάββατα τρία διελέξατο αὐτοῖς ἀπὸ τῶν γραφῶν,",
+        "VUL": "Secundum consuetudinem autem Paulus introivit ad eos, et per sabbata tria disserebat eis de Scripturis,",
+        "SYN": "Павел, по своему обыкновению, вошел к ним и три субботы говорил с ними из Писаний,",
+        "NEO": "Selon sa coutume, Paul y entra, et pendant trois sabbats, il discuta avec eux. Partant des Écritures,",
+        "NAB": "Following his usual custom, Paul joined them, and for three sabbaths he entered into discussions with them from the scriptures,",
+        "VAT_ES": "Pablo, como de costumbre, se dirigió a ellos y discutió durante tres sábados, basándose en la Escritura.",
+        "CEI": "È assurdo! Noi che già siamo morti al peccato, come potremo ancora vivere nel peccato?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "διανοίγων καὶ παρατιθέμενος, ὅτι Τὸν χριστὸν ἔδει παθεῖν καὶ ἀναστῆναι ἐκ νεκρῶν, καὶ ὅτι Οὗτός ἐστιν ὁ χριστὸς Ἰησοῦς, ὃν ἐγὼ καταγγέλλω ὑμῖν.",
+        "VUL": "adaperiens et insinuans quia Christum oportuit pati, et resurgere a mortuis : et quia hic est Jesus Christus, quem ego annuntio vobis.",
+        "SYN": "открывая и доказывая им, что Христу надлежало пострадать и воскреснуть из мертвых и что Сей Христос есть Иисус, Которого я проповедую вам.",
+        "NEO": "il expliquait et établissait que le Messie avait dû souffrir et ressusciter des morts ; et « ce Messie, disait-il, c’est le Christ Jésus que je vous annonce. »",
+        "NAB": "expounding and demonstrating that the Messiah had to suffer and rise from the dead, and that \"This is the Messiah, Jesus, whom I proclaim to you.\"",
+        "VAT_ES": "Explicaba los textos y demostraba que el Mesías debía sufrir y resucitar de entre los muertos. «Y el Mesías, afirmaba, es este Jesús que yo les anuncio».",
+        "CEI": "O non sapete che quanti siamo stati battezzati in Cristo Gesù, siamo stati battezzati nella sua morte?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Καί τινες ἐξ αὐτῶν ἐπείσθησαν, καὶ προσεκληρώθησαν τῷ Παύλῳ καὶ τῷ Σίλᾳ, τῶν τε σεβομένων Ἑλλήνων πολὺ πλῆθος, γυναικῶν τε τῶν πρώτων οὐκ ὀλίγαι.",
+        "VUL": "Et quidam ex eis crediderunt et adjuncti sunt Paulo et Silæ : et de colentibus gentilibusque multitudo magna, et mulieres nobiles non paucæ.",
+        "SYN": "И некоторые из них уверовали и присоединились к Павлу и Силе, как из Еллинов, чтущих _Бога,_ великое множество, так и из знатных женщин немало.",
+        "NEO": "Quelques Juifs furent persuadés, et ils se joignirent à Paul et à Silas, ainsi qu’une grande multitude de gentils craignant Dieu, et un assez grand nombre de femmes du premier rang.",
+        "NAB": "Some of them were convinced and joined Paul and Silas; so, too, a great number of Greeks who were worshipers, and not a few of the prominent women.",
+        "VAT_ES": "Algunos se convencieron y se unieron al grupo de Pablo y de Silas, lo mismo que un gran número de adoradores de Dios, de paganos y no pocas mujeres influyentes.",
+        "CEI": "Per mezzo del battesimo siamo dunque stati sepolti insieme a lui nella morte, perché come Cristo fu risuscitato dai morti per mezzo della gloria del Padre, così anche noi possiamo camminare in una vita nuova."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Προσλαβόμενοι δὲ οἱ Ἰουδαῖοι οἱ ἀπειθοῦντες, τῶν ἀγοραίων τινὰς ἄνδρας πονηρούς, καὶ ὀχλοποιήσαντες, ἐθορύβουν τὴν πόλιν· ἐπιστάντες τε τῇ οἰκίᾳ Ἰάσονος, ἐζήτουν αὐτοὺς ἀγαγεῖν εἰς τὸν δῆμον.",
+        "VUL": "Zelantes autem Judæi, assumentesque de vulgo viros quosdam malos, et turba facta, concitaverunt civitatem : et assistentes domui Jasonis quærebant eos producere in populum.",
+        "SYN": "Но неуверовавшие Иудеи, возревновав и взяв с площади некоторых негодных людей, собрались толпою и возмущали город и, приступив к дому Иасона, домогались вывести их к народу.",
+        "NEO": "Mais les Juifs, piqués de jalousie, enrôlèrent quelques mauvais sujets de la lie du peuple, provoquèrent des attroupements, et répandirent l’agitation dans la ville. Puis, s’étant précipités vers la maison de Jason, ils cherchèrent Paul et Silas pour les amener devant le peuple.+ 17:5 5. Devant le peuple ; εἰς τὸν δῆμον, à l’assemblée du peuple.*",
+        "NAB": "But the Jews became jealous and recruited some worthless men loitering in the public square, formed a mob, and set the city in turmoil. They marched on the house of Jason, intending to bring them before the people's assembly.",
+        "VAT_ES": "Llenos de envidia, los judíos reunieron un grupo de gente de la calle y promovieron un alboroto, sembrando la agitación en la ciudad. Entonces se presentaron delante de la casa de Jasón en busca de Pablo y de Silas, para conducirlos ante la asamblea del pueblo.",
+        "CEI": "Se infatti siamo stati completamente uniti a lui con una morte simile alla sua, lo saremo anche con la sua risurrezione."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Μὴ εὑρόντες δὲ αὐτούς, ἔσυρον τὸν Ἰάσονα καί τινας ἀδελφοὺς ἐπὶ τοὺς πολιτάρχας, βοῶντες ὅτι Οἱ τὴν οἰκουμένην ἀναστατώσαντες, οὗτοι καὶ ἐνθάδε πάρεισιν,",
+        "VUL": "Et cum non invenissent eos, trahebant Jasonem et quosdam fratres ad principes civitatis, clamantes : Quoniam hi qui urbem concitant, et huc venerunt,",
+        "SYN": "Не найдя же их, повлекли Иасона и некоторых братьев к городским начальникам, крича, что эти всесветные возмутители пришли и сюда,",
+        "NEO": "Ne les ayant pas trouvés, ils traînèrent Jason et quelques frères devant les politarques, en criant : « Ces hommes qui ont bouleversé le monde sont aussi venus ici,",
+        "NAB": "When they could not find them, they dragged Jason and some of the brothers before the city magistrates, shouting, \"These people who have been creating a disturbance all over the world have now come here,",
+        "VAT_ES": "Como no los encontraron, arrastraron a Jasón y a algunos hermanos ante los magistrados de la ciudad, gritando: «Esos que han revolucionado todo el mundo, han venido también aquí",
+        "CEI": "Sappiamo bene che il nostro uomo vecchio è stato crocifisso con lui, perché fosse distrutto il corpo del peccato, e noi non fossimo più schiavi del peccato."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "οὓς ὑποδέδεκται Ἰάσων· καὶ οὗτοι πάντες ἀπέναντι τῶν δογμάτων Καίσαρος πράσσουσιν, βασιλέα λέγοντες ἕτερον εἶναι, Ἰησοῦν.",
+        "VUL": "quos suscepit Jason, et hi omnes contra decreta Cæsaris faciunt, regem alium dicentes esse, Jesum.",
+        "SYN": "а Иасон принял их, и все они поступают против повелений кесаря, почитая другого царем, Иисуса.",
+        "NEO": "et Jason les a reçus. Ils sont tous en contravention avec les édits de César, disant qu’il y a un autre roi, Jésus. »",
+        "NAB": "and Jason has welcomed them. They all act in opposition to the decrees of Caesar and claim instead that there is another king, Jesus.\"",
+        "VAT_ES": "y Jasón los ha recibido en su casa. Toda esta gente contraviene los edictos del Emperador, pretendiendo que hay otro rey, llamado Jesús».",
+        "CEI": "Infatti chi è morto, è ormai libero dal peccato."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἐτάραξαν δὲ τὸν ὄχλον καὶ τοὺς πολιτάρχας ἀκούοντας ταῦτα.",
+        "VUL": "Concitaverunt autem plebem et principes civitatis audientes hæc.",
+        "SYN": "И встревожили народ и городских начальников, слушавших это.",
+        "NEO": "Ils mirent ainsi en émoi le peuple et les politarques qui les écoutaient.",
+        "NAB": "They stirred up the crowd and the city magistrates who, upon hearing these charges,",
+        "VAT_ES": "Estos gritos impresionaron mucho a la multitud y a los magistrados,",
+        "CEI": "Ma se siamo morti con Cristo, crediamo che anche vivremo con lui,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Καὶ λαβόντες τὸ ἱκανὸν παρὰ τοῦ Ἰάσονος καὶ τῶν λοιπῶν, ἀπέλυσαν αὐτούς.",
+        "VUL": "Et accepta satisfactione a Jasone et a ceteris, dimiserunt eos.",
+        "SYN": "Но _сии,_ получив удостоверение от Иасона и прочих, отпустили их.",
+        "NEO": "Et ce ne fut qu’après avoir reçu une caution de Jason et des autres qu’ils les laissèrent aller.",
+        "NAB": "took a surety payment from Jason and the others before releasing them.",
+        "VAT_ES": "y solamente después de haber exigido una fianza de parte de Jasón y de los otros, los pusieron en libertad.",
+        "CEI": "sapendo che Cristo risuscitato dai morti non muore più; la morte non ha più potere su di lui."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "¶Οἱ δὲ ἀδελφοὶ εὐθέως διὰ τῆς νυκτὸς ἐξέπεμψαν τόν τε Παῦλον καὶ τὸν Σίλαν εἰς Βέροιαν· οἵτινες παραγενόμενοι εἰς τὴν συναγωγὴν ἀπῄεσαν τῶν Ἰουδαίων.",
+        "VUL": "Fratres vero confestim per noctem dimiserunt Paulum et Silam in Beram. Qui cum venissent, in synagogam Judæorum introierunt.",
+        "SYN": "Братия же немедленно ночью отправили Павла и Силу в Верию, куда они прибыв, пошли в синагогу Иудейскую.",
+        "NEO": "Les frères, sans perdre de temps, firent partir de nuit Paul et Silas pour Bérée. Quand ils furent arrivés dans cette ville, ils se rendirent à la synagogue des Juifs.",
+        "NAB": "The brothers immediately sent Paul and Silas to Beroea during the night. Upon arrival they went to the synagogue of the Jews.",
+        "VAT_ES": "Esa misma noche, los hermanos hicieron partir a Pablo y a Silas hacia Berea. En cuanto llegaron, se dirigieron a la sinagoga de los judíos.",
+        "CEI": "Per quanto riguarda la sua morte, egli morì al peccato una volta per tutte; ora invece per il fatto che egli vive, vive per Dio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Οὗτοι δὲ ἦσαν εὐγενέστεροι τῶν ἐν Θεσσαλονίκῃ, οἵτινες ἐδέξαντο τὸν λόγον μετὰ πάσης προθυμίας, τὸ καθ’ ἡμέραν ἀνακρίνοντες τὰς γραφάς, εἰ ἔχοι ταῦτα οὕτως.",
+        "VUL": "Hi autem erant nobiliores eorum qui sunt Thessalonicæ, qui susceperunt verbum cum omni aviditate, quotidie scrutantes Scripturas, si hæc ita se haberent.",
+        "SYN": "Здешние были благомысленнее Фессалоникских: они приняли слово со всем усердием, ежедневно разбирая Писания, точно ли это так.",
+        "NEO": "Ces derniers avaient des sentiments plus nobles que ceux de Thessalonique ; ils reçurent la parole avec beaucoup d’empressement, examinant chaque jour les Écritures, pour voir si ce qu’on leur enseignait était exact.",
+        "NAB": "These Jews were more fair-minded than those in Thessalonica, for they received the word with all willingness and examined the scriptures daily to determine whether these things were so.",
+        "VAT_ES": "Como estos eran mejores que los de Tesalónica, acogieron la Palabra con sumo interés, y examinaban todos los días las Escrituras para verificar la exactitud de lo que oían.",
+        "CEI": "Così anche voi consideratevi morti al peccato, ma viventi per Dio, in Cristo Gesù."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Πολλοὶ μὲν οὖν ἐξ αὐτῶν ἐπίστευσαν, καὶ τῶν Ἑλληνίδων γυναικῶν τῶν εὐσχημόνων καὶ ἀνδρῶν οὐκ ὀλίγοι.",
+        "VUL": "Et multi quidem crediderunt ex eis, et mulierum gentilium honestarum, et viri non pauci.",
+        "SYN": "И многие из них уверовали, и из Еллинских почетных женщин и из мужчин немало.",
+        "NEO": "Beaucoup d’entre eux, et, parmi les Grecs, des femmes de qualité et des hommes en grand nombre, embrassèrent la foi.",
+        "NAB": "Many of them became believers, as did not a few of the influential Greek women and men.",
+        "VAT_ES": "Muchos de ellos abrazaron la fe, lo mismo que algunos paganos, entre los cuales había mujeres de la aristocracia y un buen número de hombres.",
+        "CEI": "Non regni più dunque il peccato nel vostro corpo mortale, sì da sottomettervi ai suoi desideri;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Ὡς δὲ ἔγνωσαν οἱ ἀπὸ τῆς Θεσσαλονίκης Ἰουδαῖοι ὅτι καὶ ἐν τῇ Βεροίᾳ κατηγγέλη ὑπὸ τοῦ Παύλου ὁ λόγος τοῦ θεοῦ, ἦλθον κἀκεῖ σαλεύοντες τοὺς ὄχλους.",
+        "VUL": "Cum autem cognovissent in Thessalonica Judæi quia et Beræ prædicatum est a Paulo verbum Dei, venerunt et illuc commoventes, et turbantes multitudinem.",
+        "SYN": "Но когда Фессалоникские Иудеи узнали, что и в Верии проповедано Павлом слово Божие, то пришли и туда, возбуждая и возмущая народ.",
+        "NEO": "Mais quand les Juifs de Thessalonique surent que Paul annonçait aussi à Bérée la parole de Dieu, ils vinrent encore y agiter la population.",
+        "NAB": "But when the Jews of Thessalonica learned that the word of God had now been proclaimed by Paul in Beroea also, they came there too to cause a commotion and stir up the crowds.",
+        "VAT_ES": "Pero, cuando los judíos de Tesalónica se enteraron de que Pablo había anunciado la Palabra de Dios también en Berea, fueron allí a perturbar a la multitud sembrando la agitación.",
+        "CEI": "non offrite le vostre membra come strumenti di ingiustizia al peccato, ma offrite voi stessi a Dio come vivi tornati dai morti e le vostre membra come strumenti di giustizia per Dio."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Εὐθέως δὲ τότε τὸν Παῦλον ἐξαπέστειλαν οἱ ἀδελφοὶ πορεύεσθαι ὡς ἐπὶ τὴν θάλασσαν· ὑπέμενον δὲ ὅ τε Σίλας καὶ ὁ Τιμόθεος ἐκεῖ.",
+        "VUL": "Statimque tunc Paulum dimiserunt fratres, ut iret usque ad mare : Silas autem et Timotheus remanserunt ibi.",
+        "SYN": "Тогда братия тотчас отпустили Павла, как будто идущего к морю; а Сила и Тимофей остались там.",
+        "NEO": "Alors les frères firent sur-le-champ partir Paul jusqu’à la mer ;+ 17:14 14. Jusqu’à la mer, ἕως ἐπί, \\+qt usque ad.\\+qt* Telle est la leçon des meilleure manuscrits grecs et de la Vulgate. Il est donc probable que S. Paul s’est rendu à Athènes par mer.* mais Silas et Timothée restèrent à Bérée.",
+        "NAB": "So the brothers at once sent Paul on his way to the seacoast, while Silas and Timothy remained behind.",
+        "VAT_ES": "Entonces los hermanos hicieron partir inmediatamente a Pablo en dirección al mar; Silas y Timoteo, en cambio, permanecieron allí.",
+        "CEI": "Il peccato infatti non dominerà più su di voi poiché non siete più sotto la legge, ma sotto la grazia."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Οἱ δὲ καθιστῶντες τὸν Παῦλον, ἤγαγον αὐτὸν ἕως Ἀθηνῶν· καὶ λαβόντες ἐντολὴν πρὸς τὸν Σίλαν καὶ Τιμόθεον, ἵνα ὡς τάχιστα ἔλθωσιν πρὸς αὐτόν, ἐξῄεσαν.",
+        "VUL": "Qui autem deducebant Paulum, perduxerunt eum usque Athenas, et accepto mandato ab eo ad Silam et Timotheum ut quam celeriter venirent ad illum, profecti sunt.",
+        "SYN": "Сопровождавшие Павла проводили его до Афин и, получив приказание к Силе и Тимофею, чтобы они скорее пришли к нему, отправились.",
+        "NEO": "Ceux qui conduisaient Paul l’accompagnèrent jusqu’à Athènes ; puis, chargés de mander à Silas et à Timothée de venir le rejoindre au plus tôt, ils s’en retournèrent.",
+        "NAB": "After Paul's escorts had taken him to Athens, they came away with instructions for Silas and Timothy to join him as soon as possible.",
+        "VAT_ES": "Los que acompañaban a Pablo lo condujeron hasta Atenas, y luego volvieron con la orden de que Silas y Timoteo se reunieran con él lo más pronto posible.",
+        "CEI": "Che dunque? Dobbiamo commettere peccati perché non siamo più sotto la legge, ma sotto la grazia? È assurdo!"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "¶Ἐν δὲ ταῖς Ἀθήναις ἐκδεχομένου αὐτοὺς τοῦ Παύλου, παρωξύνετο τὸ πνεῦμα αὐτοῦ ἐν αὐτῷ, θεωροῦντι κατείδωλον οὖσαν τὴν πόλιν.",
+        "VUL": "Paulus autem cum Athenis eos exspectaret, incitabatur spiritus ejus in ipso, videns idololatriæ deditam civitatem.",
+        "SYN": "В ожидании их в Афинах Павел возмутился духом при виде этого города, полного идолов.",
+        "NEO": "Pendant que Paul les attendait à Athènes, il sentait en son âme une vive indignation au spectacle de cette ville pleine d’idoles.",
+        "NAB": "While Paul was waiting for them in Athens, he grew exasperated at the sight of the city full of idols.",
+        "VAT_ES": "Mientras los esperaba en Atenas, Pablo sentía que la indignación se apoderaba de él, al contemplar la ciudad llena de ídolos.",
+        "CEI": "Non sapete voi che, se vi mettete a servizio di qualcuno come schiavi per obbedirgli, siete schiavi di colui al quale servite: sia del peccato che porta alla morte, sia dell'obbedienza che conduce alla giustizia?"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Διελέγετο μὲν οὖν ἐν τῇ συναγωγῇ τοῖς Ἰουδαίοις καὶ τοῖς σεβομένοις, καὶ ἐν τῇ ἀγορᾷ κατὰ πᾶσαν ἡμέραν πρὸς τοὺς παρατυγχάνοντας.",
+        "VUL": "Disputabat igitur in synagoga cum Judæis et colentibus, et in foro, per omnes dies ad eos qui aderant.",
+        "SYN": "Итак он рассуждал в синагоге с Иудеями и с чтущими _Бога,_ и ежедневно на площади со встречающимися.",
+        "NEO": "Il discutait donc dans la synagogue avec les Juifs et les hommes craignant Dieu, et tous les jours dans l’Agora avec ceux qu’il rencontrait.",
+        "NAB": "So he debated in the synagogue with the Jews and with the worshipers, and daily in the public square with whoever happened to be there.",
+        "VAT_ES": "Discutía en la sinagoga con los judíos y con los que adoraban a Dios, y también lo hacía diariamente en la plaza pública con los que pasaban por allí.",
+        "CEI": "Rendiamo grazie a Dio, perché voi eravate schiavi del peccato, ma avete obbedito di cuore a quell'insegnamento che vi è stato trasmesso"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Τινὲς δὲ καὶ τῶν Ἐπικουρείων καὶ τῶν Στοϊκῶν φιλοσόφων συνέβαλλον αὐτῷ. Καί τινες ἔλεγον, Τί ἂν θέλοι ὁ σπερμολόγος οὗτος λέγειν; Οἱ δέ, Ξένων δαιμονίων δοκεῖ καταγγελεὺς εἶναι· ὅτι τὸν Ἰησοῦν καὶ τὴν ἀνάστασιν εὐηγγελίζετο.",
+        "VUL": "Quidam autem epicurei et stoici philosophi disserebant cum eo, et quidam dicebant : Quid vult seminiverbius hic dicere ? Alii vero : Novorum dæmoniorum videtur annuntiator esse : quia Jesum et resurrectionem annuntiabat eis.",
+        "SYN": "Некоторые из эпикурейских и стоических философов стали спорить с ним; и одни говорили: \"что хочет сказать этот суеслов?\", а другие: \"кажется, он проповедует о чужих божествах\", потому что он благовествовал им Иисуса и воскресение.",
+        "NEO": "Or quelques philosophes épicuriens et stoïciens ayant conféré avec lui, les uns disaient : « Que nous veut ce semeur de paroles ? » D’autres, l’entendant prêcher Jésus et la résurrection, disaient : « Il paraît qu’il vient nous annoncer des divinités étrangères. »",
+        "NAB": "Even some of the Epicurean and Stoic philosophers engaged him in discussion. Some asked, \"What is this scavenger trying to say?\" Others said, \"He sounds like a promoter of foreign deities,\" because he was preaching about 'Jesus' and 'Resurrection.'",
+        "VAT_ES": "Incluso, algunos filósofos epicúreos y estoicos dialogaban con él. Algunos comentaban: «&iquest;Qué estará diciendo este charlatán?», y otros: «Parece ser un predicador de divinidades extranjeras», porque Pablo anunciaba a Jesús y la resurrección.",
+        "CEI": "e così, liberati dal peccato, siete diventati servi della giustizia."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ἐπιλαβόμενοί τε αὐτοῦ, ἐπὶ τὸν Ἄρειον πάγον ἤγαγον λέγοντες, Δυνάμεθα γνῶναι, τίς ἡ καινὴ αὕτη ἡ ὑπὸ σοῦ λαλουμένη διδαχή;",
+        "VUL": "Et apprehensum eum ad Areopagum duxerunt, dicentes : Possumus scire quæ est hæc nova, quæ a te dicitur, doctrina ?",
+        "SYN": "И, взяв его, привели в ареопаг и говорили: можем ли мы знать, что это за новое учение, проповедуемое тобою?",
+        "NEO": "Et l’ayant pris avec eux, ils le menèrent sur l’Aréopage, disant : « Pourrions-nous savoir quelle est cette nouvelle doctrine que tu enseignes ?+ 17:19 19. Sur la colline de l’Aréopage.*",
+        "NAB": "They took him and led him to the Areopagus and said, \"May we learn what this new teaching is that you speak of?",
+        "VAT_ES": "Entonces lo llevaron con ellos al Areópago y le dijeron: «&iquest;Podríamos saber en qué consiste la nueva doctrina que tú enseñas?",
+        "CEI": "Parlo con esempi umani, a causa della debolezza della vostra carne. Come avete messo le vostre membra a servizio dell'impurità e dell'iniquità a pro dell'iniquità, così ora mettete le vostre membra a servizio della giustizia per la vostra santificazione."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Ξενίζοντα γάρ τινα εἰσφέρεις εἰς τὰς ἀκοὰς ἡμῶν· βουλόμεθα οὖν γνῶναι, τί ἂν θέλοι ταῦτα εἶναι-",
+        "VUL": "nova enim quædam infers auribus nostris : volumus ergo scire quidnam velint hæc esse.",
+        "SYN": "Ибо что-то странное ты влагаешь в уши наши. Посему хотим знать, что это такое?",
+        "NEO": "Car tu nous fais entendre des choses étranges ; nous voudrions donc savoir ce qu’il en est. »",
+        "NAB": "For you bring some strange notions to our ears; we should like to know what these things mean.\"",
+        "VAT_ES": "Las cosas que nos predicas nos parecen extrañas y quisiéramos saber qué significan».",
+        "CEI": "Quando infatti eravate sotto la schiavitù del peccato, eravate liberi nei riguardi della giustizia."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Ἀθηναῖοι δὲ πάντες καὶ οἱ ἐπιδημοῦντες ξένοι εἰς οὐδὲν ἕτερον εὐκαίρουν, ἢ λέγειν τι καὶ ἀκούειν καινότερον.",
+        "VUL": "(Athenienses autem omnes, et advenæ hospites, ad nihil aliud vacabant nisi aut dicere aut audire aliquid novi.)",
+        "SYN": "Афиняне же все и живущие _у_ _них_ иностранцы ни в чем охотнее не проводили время, как в том, чтобы говорить или слушать что-- нибудь новое.",
+        "NEO": "Or tous les Athéniens et les étrangers établis dans la ville ne passaient leur temps qu’à dire ou à écouter des nouvelles.",
+        "NAB": "Now all the Athenians as well as the foreigners residing there used their time for nothing else but telling or hearing something new.",
+        "VAT_ES": "Porque todos los atenienses y los extranjeros que residían allí, no tenían otro pasatiempo que el de transmitir o escuchar la última novedad.",
+        "CEI": "Ma quale frutto raccoglievate allora da cose di cui ora vi vergognate? Infatti il loro destino è la morte."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "¶Σταθεὶς δὲ ὁ Παῦλος ἐν μέσῳ τοῦ Ἀρείου πάγου ἔφη, Ἄνδρες Ἀθηναῖοι, κατὰ πάντα ὡς δεισιδαιμονεστέρους ὑμᾶς θεωρῶ.",
+        "VUL": "Stans autem Paulus in medio Areopagi, ait : Viri Athenienses, per omnia quasi superstitiosiores vos video.",
+        "SYN": "И, став Павел среди ареопага, сказал: Афиняне! по всему вижу я, что вы как бы особенно набожны.",
+        "NEO": "Paul, debout au milieu de l’Aréopage, parla ainsi : « Athéniens, je constate qu’à tous égards vous êtes éminemment religieux.+ 17:22 22. Eminemment religieux, litt. \\+qt plus religieux\\+qt* que les autres hommes.*",
+        "NAB": "Then Paul stood up at the Areopagus and said: \"You Athenians, I see that in every respect you are very religious.",
+        "VAT_ES": "Pablo, de pie, en medio del Aréopago, dijo: Atenienses, veo que ustedes son, desde todo punto de vista, los más religiosos de todos los hombres.",
+        "CEI": "Ora invece, liberati dal peccato e fatti servi di Dio, voi raccogliete il frutto che vi porta alla santificazione e come destino avete la vita eterna."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Διερχόμενος γὰρ καὶ ἀναθεωρῶν τὰ σεβάσματα ὑμῶν, εὗρον καὶ βωμὸν ἐν ᾧ ἐπεγέγραπτο, Ἀγνώστῳ θεῷ. Ὃν οὖν ἀγνοοῦντες εὐσεβεῖτε, τοῦτον ἐγὼ καταγγέλλω ὑμῖν.",
+        "VUL": "Præteriens enim, et videns simulacra vestra, inveni et aram in qua scriptum erat : Ignoto Deo. Quod ergo ignorantes colitis, hoc ego annuntio vobis.",
+        "SYN": "Ибо, проходя и осматривая ваши святыни, я нашел и жертвенник, на котором написано \"неведомому Богу\". Сего-то, Которого вы, не зная, чтите, я проповедую вам.",
+        "NEO": "Car lorsqu’en passant je regardais les objets de votre culte, j’ai trouvé même un autel avec cette inscription : AU DIEU INCONNU. Celui que vous adorez sans le connaître, je viens vous l’annoncer.",
+        "NAB": "For as I walked around looking carefully at your shrines, I even discovered an altar inscribed, 'To an Unknown God.' What therefore you unknowingly worship, I proclaim to you.",
+        "VAT_ES": "En efecto, mientras me paseaba mirando los monumentos sagrados que ustedes tienen, encontré entre otras cosas un altar con esta inscripción: «Al dios desconocido». Ahora, yo vengo a anunciarles eso que ustedes adoran sin conocer.",
+        "CEI": "Perché il salario del peccato è la morte; ma il dono di Dio è la vita eterna in Cristo Gesù nostro Signore."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Ὁ θεὸς ὁ ποιήσας τὸν κόσμον καὶ πάντα τὰ ἐν αὐτῷ, οὗτος, οὐρανοῦ καὶ γῆς κύριος ὑπάρχων, οὐκ ἐν χειροποιήτοις ναοῖς κατοικεῖ,",
+        "VUL": "Deus, qui fecit mundum, et omnia quæ in eo sunt, hic cæli et terræ cum sit Dominus, non in manufactis templis habitat,",
+        "SYN": "Бог, сотворивший мир и все, что в нем, Он, будучи Господом неба и земли, не в рукотворенных храмах живет",
+        "NEO": "Le Dieu qui a fait le monde et tout ce qu’il renferme, étant le Seigneur du ciel et de la terre, n’habite pas dans des temples faits de main d’homme ;",
+        "NAB": "The God who made the world and all that is in it, the Lord of heaven and earth, does not dwell in sanctuaries made by human hands,",
+        "VAT_ES": "El Dios que ha hecho el mundo y todo lo que hay en él no habita en templos hechos por manos de hombre, porque es el Señor del cielo y de la tierra."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "οὐδὲ ὑπὸ χειρῶν ἀνθρώπων θεραπεύεται, προσδεόμενός τινος, αὐτὸς διδοὺς πᾶσιν ζωὴν καὶ πνοὴν κατὰ πάντα·",
+        "VUL": "nec manibus humanis colitur indigens aliquo, cum ipse det omnibus vitam, et inspirationem, et omnia :",
+        "SYN": "и не требует служения рук человеческих, _как_ _бы_ имеющий в чем-либо нужду, Сам дая всему жизнь и дыхание и все.",
+        "NEO": "il n’est pas servi par des mains humaines, comme s’il avait besoin de quelque chose, lui qui donne à tous la vie, le souffle et toutes choses.",
+        "NAB": "nor is he served by human hands because he needs anything. Rather it is he who gives to everyone life and breath and everything.",
+        "VAT_ES": "Tampoco puede ser servido por manos humanas como si tuviera necesidad de algo, ya que él da a todos la vida, el aliento y todas las cosas."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "ἐποίησέν τε ἐξ ἑνὸς αἵματος πᾶν ἔθνος ἀνθρώπων, κατοικεῖν ἐπὶ πᾶν τὸ πρόσωπον τῆς γῆς, ὁρίσας προστεταγμένους καιροὺς καὶ τὰς ὁροθεσίας τῆς κατοικίας αὐτῶν·",
+        "VUL": "fecitque ex uno omne genus hominum inhabitare super universam faciem terræ, definiens statuta tempora, et terminos habitationis eorum,",
+        "SYN": "От одной крови Он произвел весь род человеческий для обитания по всему лицу земли, назначив предопределенные времена и пределы их обитанию,",
+        "NEO": "D’un seul homme il a fait sortir tout le genre humain, pour peupler la surface de toute la terre, ayant déterminé pour chaque nation la durée de son existence et les bornes de son domaine,",
+        "NAB": "He made from one the whole human race to dwell on the entire surface of the earth, and he fixed the ordered seasons and the boundaries of their regions,",
+        "VAT_ES": "El hizo salir de un solo principio a todo el género humano para que habite sobre toda la tierra, y señaló de antemano a cada pueblo sus épocas y sus fronteras,"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "ζητεῖν τὸν κύριον, εἰ ἄρα γε ψηλαφήσειαν αὐτὸν καὶ εὕροιεν, καί γε οὐ μακρὰν ἀπὸ ἑνὸς ἑκάστου ἡμῶν ὑπάρχοντα.",
+        "VUL": "quærere Deum si forte attrectent eum, aut inveniant, quamvis non longe sit ab unoquoque nostrum.",
+        "SYN": "дабы они искали Бога, не ощутят ли Его и не найдут ли, хотя Он и недалеко от каждого из нас:",
+        "NEO": "afin que les hommes le cherchent et le trouvent comme à tâtons : quoiqu’il ne soit pas loin de chacun de nous,",
+        "NAB": "so that people might seek God, even perhaps grope for him and find him, though indeed he is not far from any one of us.",
+        "VAT_ES": "para que ellos busquen a Dios, aunque sea a tientas, y puedan encontrarlo. Porque en realidad, él no está lejos de cada uno de nosotros."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Ἐν αὐτῷ γὰρ ζῶμεν καὶ κινούμεθα καί ἐσμεν· ὡς καί τινες τῶν καθ’ ὑμᾶς ποιητῶν εἰρήκασιν, Τοῦ γὰρ καὶ γένος ἐσμέν.",
+        "VUL": "In ipso enim vivimus, et movemur, et sumus : sicut et quidam vestrorum poëtarum dixerunt : Ipsius enim et genus sumus.",
+        "SYN": "ибо мы Им живем и движемся и существуем, как и некоторые из ваших стихотворцев говорили: \"мы Его и род\".",
+        "NEO": "car c’est en lui que nous avons la vie, le mouvement et l’être ; et, comme l’ont dit aussi quelques-uns de vos poètes… de sa race nous sommes.*",
+        "NAB": "For 'In him we live and move and have our being,' as even some of your poets have said, 'For we too are his offspring.'",
+        "VAT_ES": "En efecto, en él vivimos, nos movemos y existimos, como muy bien lo dijeron algunos poetas de ustedes: «Nosotros somos también de su raza»."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Γένος οὖν ὑπάρχοντες τοῦ θεοῦ, οὐκ ὀφείλομεν νομίζειν χρυσῷ ἢ ἀργύρῳ ἢ λίθῳ, χαράγματι τέχνης καὶ ἐνθυμήσεως ἀνθρώπου, τὸ θεῖον εἶναι ὅμοιον.",
+        "VUL": "Genus ergo cum simus Dei, non debemus æstimare auro, aut argento, aut lapidi, sculpturæ artis, et cogitationis hominis, divinum esse simile.",
+        "SYN": "Итак мы, будучи родом Божиим, не должны думать, что Божество подобно золоту, или серебру, или камню, получившему образ от искусства и вымысла человеческого.",
+        "NEO": "Étant donc de la race de Dieu, nous ne devons pas croire que la divinité soit semblable à de l’or, à de l’argent, ou à de la pierre, sculptés par l’art et le génie de l’homme.",
+        "NAB": "Since therefore we are the offspring of God, we ought not to think that the divinity is like an image fashioned from gold, silver, or stone by human art and imagination.",
+        "VAT_ES": "Y si nosotros somos de la raza de Dios, no debemos creer que la divinidad es semejante al oro, la plata o la piedra, trabajados por el arte y el genio del hombre."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Τοὺς μὲν οὖν χρόνους τῆς ἀγνοίας ὑπεριδὼν ὁ θεός, τὰ νῦν παραγγέλλει τοῖς ἀνθρώποις πᾶσιν πανταχοῦ μετανοεῖν·",
+        "VUL": "Et tempora quidem hujus ignorantiæ despiciens Deus, nunc annuntiat hominibus ut omnes ubique pnitentiam agant,",
+        "SYN": "Итак, оставляя времена неведения, Бог ныне повелевает людям всем повсюду покаяться,",
+        "NEO": "Dieu ne tenant pas compte+ 17:30 30. Ne tenant pas compte, litt. \\+qt Ayant regardé d’en haut,\\+qt* ὑπεριδών. Parmi les significations usuelles du mot grec, celle de \\+qt mépriser.\\+qt** de ces temps d’ignorance, annonce maintenant aux hommes qu’ils aient tous, en tous lieux, à se repentir ;",
+        "NAB": "God has overlooked the times of ignorance, but now he demands that all people everywhere repent",
+        "VAT_ES": "Pero ha llegado el momento en que Dios, pasando por alto el tiempo de la ignorancia, manda a todos los hombres, en todas partes, que se arrepientan."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "διότι ἔστησεν ἡμέραν, ἐν ᾗ μέλλει κρίνειν τὴν οἰκουμένην ἐν δικαιοσύνῃ, ἐν ἀνδρὶ ᾧ ὥρισεν, πίστιν παρασχὼν πᾶσιν, ἀναστήσας αὐτὸν ἐκ νεκρῶν.",
+        "VUL": "eo quod statuit diem in quo judicaturus est orbem in æquitate, in viro in quo statuit, fidem præbens omnibus, suscitans eum a mortuis.",
+        "SYN": "ибо Он назначил день, в который будет праведно судить вселенную, посредством предопределенного Им Мужа, подав удостоверение всем, воскресив Его из мертвых.",
+        "NEO": "car il a fixé un jour où il jugera le monde selon la justice, par l’homme qu’il a désigné, et qu’il a accrédité auprès de tous, en le ressuscitant des morts. »",
+        "NAB": "because he has established a day on which he will 'judge the world with justice' through a man he has appointed, and he has provided confirmation for all by raising him from the dead.\"",
+        "VAT_ES": "Porque él ha establecido un día para juzgar al universo con justicia, por medio de un Hombre que él ha destinado y acreditado delante de todos, haciéndolo resucitar de entre los muertos»."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "¶Ἀκούσαντες δὲ ἀνάστασιν νεκρῶν, οἱ μὲν ἐχλεύαζον· οἱ δὲ εἶπον, Ἀκουσόμεθά σου πάλιν περὶ τούτου.",
+        "VUL": "Cum audissent autem resurrectionem mortuorum, quidam quidem irridebant, quidam vero dixerunt : Audiemus te de hoc iterum.",
+        "SYN": "Услышав о воскресении мертвых, одни насмехались, а другие говорили: об этом послушаем тебя в другое время.",
+        "NEO": "Lorsqu’ils entendirent parler de résurrection des morts, les uns se moquèrent, les autres dirent : « Nous t’entendrons là-dessus une autre fois. »",
+        "NAB": "When they heard about resurrection of the dead, some began to scoff, but others said, \"We should like to hear you on this some other time.\"",
+        "VAT_ES": "Al oír las palabras «resurrección de los muertos», unos se burlaban y otros decían: «Otro día te oiremos hablar sobre esto»."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Καὶ οὕτως ὁ Παῦλος ἐξῆλθεν ἐκ μέσου αὐτῶν.",
+        "VUL": "Sic Paulus exivit de medio eorum.",
+        "SYN": "Итак Павел вышел из среды их.",
+        "NEO": "C’est ainsi que Paul se retira du milieu d’eux.",
+        "NAB": "And so Paul left them.",
+        "VAT_ES": "Así fue cómo Pablo se alejó de ellos."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "Τινὲς δὲ ἄνδρες κολληθέντες αὐτῷ, ἐπίστευσαν· ἐν οἷς καὶ Διονύσιος ὁ Ἀρεοπαγίτης, καὶ γυνὴ ὀνόματι Δάμαρις, καὶ ἕτεροι σὺν αὐτοῖς.",
+        "VUL": "Quidam vero viri adhærentes ei, crediderunt : in quibus et Dionysius Areopagita, et mulier nomine Damaris, et alii cum eis.",
+        "SYN": "Некоторые же мужи, пристав к нему, уверовали; между ними был Дионисий Ареопагит и женщина, именем Дамарь, и другие с ними.",
+        "NEO": "Quelques personnes néanmoins s’attachèrent à lui et crurent ; de ce nombre furent Denys l’Aréopagite, une femme nommée Damaris, et d’autres avec eux.",
+        "NAB": "But some did join him, and became believers. Among them were Dionysius, a member of the Court of the Areopagus, a woman named Damaris, and others with them.",
+        "VAT_ES": "Sin embargo, algunos lo siguieron y abrazaron la fe. Entre ellos, estaban Dionisio el Areopagita, una mujer llamada Dámaris y algunos otros."
+      }
+    }
+  }
+}

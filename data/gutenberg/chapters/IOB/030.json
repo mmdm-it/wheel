@@ -1,0 +1,567 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOB_030",
+  "book_key": "IOB",
+  "sequence": 30,
+  "chapter_in": {
+    "MT": 30,
+    "VUL": 30,
+    "LXX": 30
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֤ה שָֽׂחֲק֣וּ עָלַ/י֮ צְעִירִ֥ים מִמֶּ֗/נִּי לְ/יָ֫מִ֥ים אֲשֶׁר מָאַ֥סְתִּי אֲבוֹתָ֑/ם לָ֝/שִׁ֗ית עִם כַּלְבֵ֥י צֹאנִֽ/י׃",
+        "LXX": "νυνὶ δὲ κατεγέλασάν μου· ἐλάχιστοι νῦν νουθετοῦσίν με ἐν μέρει, ⸆ ὧν ἐξουδένουν τοὺς πατέρας αὐτῶν, οὓς οὐχ ἡγησάμην ἀξίους κυνῶν τῶν ἐμῶν νομάδων.",
+        "VUL": "[Nunc autem derident me juniores tempore,/ quorum non dignabar patres ponere cum canibus gregis mei :/",
+        "SYN": "А ныне смеются надо мною младшие меня летами, те, которых отцов я не согласился бы поместить с псами стад моих.",
+        "NEO": "Et maintenant, je suis la risée d’hommes plus jeunes que moi, dont je n’aurais pas daigné mettre les pères parmi les chiens de mon troupeau.",
+        "NAB": "But now they hold me in derision who are younger in years than I; Whose fathers I should have disdained to rank with the dogs of my flock.",
+        "VAT_ES": "Job continuó pronunciando su poema, y dijo:",
+        "CEI": "Ora invece si ridono di me i più giovani di me in età, i cui padri non avrei degnato di mettere tra i cani del mio gregge."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "גַּם כֹּ֣חַ יְ֭דֵי/הֶם לָ֣/מָּה לִּ֑/י עָ֝לֵ֗י/מוֹ אָ֣בַד כָּֽלַח׃",
+        "LXX": "καὶ γε ἰσχὺς χειρῶν αὐτῶν ἵνα τί μοι; ἐπ’ αὐτοὺς ἀπώλετο συντέλεια.",
+        "VUL": "quorum virtus manuum mihi erat pro nihilo,/ et vita ipsa putabantur indigni :/",
+        "SYN": "И сила рук их к чему мне? Над ними уже прошло время.",
+        "NEO": "Qu’aurais-je fait de la force de leurs bras ? Ils sont privés de toute vigueur.",
+        "NAB": "Such strength as they had, to me meant nought; they were utterly destitute.",
+        "VAT_ES": "&iexcl;Si pudiera volver a los tiempos pasados, a los días en que Dios cuidaba de mí,",
+        "CEI": "Anche la forza delle loro mani a che mi giova? Hanno perduto ogni vigore;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "בְּ/חֶ֥סֶר וּ/בְ/כָפָ֗ן גַּ֫לְמ֥וּד הַֽ/עֹרְקִ֥ים צִיָּ֑ה אֶ֝֗מֶשׁ שׁוֹאָ֥ה וּ/מְשֹׁאָֽה׃",
+        "LXX": "ἐν ἐνδείᾳ καὶ λιμῷ ἄγονος, οἱ φεύγοντες ἄνυδρον ἐχθὲς συνοχὴν καὶ ταλαιπωρίαν·",
+        "VUL": "egestate et fame steriles, qui rodebant in solitudine,/ squallentes calamitate et miseria./",
+        "SYN": "Бедностью и голодом истощенные, они убегают в степь безводную, мрачную и опустевшую;",
+        "NEO": "Desséchés par la misère et la faim, ils broutent le désert, un sol depuis longtemps aride et désolé.",
+        "NAB": "In want and hunger was their lot, they who fled to the parched wastelands:",
+        "VAT_ES": "cuando hacía brillar su lámpara sobre mi cabeza y yo caminaba a su luz entre las tinieblas!",
+        "CEI": "disfatti dalla indigenza e dalla fame, brucano per l'arido deserto,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הַ/קֹּטְפִ֣ים מַלּ֣וּחַ עֲלֵי שִׂ֑יחַ וְ/שֹׁ֖רֶשׁ רְתָמִ֣ים לַ/חְמָֽ/ם׃",
+        "LXX": "οἱ περικυκλοῦντες ἅλιμα ἐπὶ ἠχοῦντι, οἵτινες ἅλιμα ἦν αὐτῶν τὰ σῖτα· ἄτιμοι δὲ καὶ πεφαυλισμένοι, ἐνδεεῖς παντὸς ἀγαθοῦ.",
+        "VUL": "Et mandebant herbas, et arborum cortices,/ et radix juniperorum erat cibus eorum :/",
+        "SYN": "щиплют зелень подле кустов, и ягоды можжевельника -- хлеб их.",
+        "NEO": "Ils cueillent sur les buissons des bourgeons amers, ils n’ont pour pain que la racine des genêts.",
+        "NAB": "They plucked saltwort and shrubs; the roots of the broom plant were their food.",
+        "VAT_ES": "&iexcl;Si estuviera como en el otoño de mi vida, cuando Dios protegía mi carpa,",
+        "CEI": "da lungo tempo regione desolata, raccogliendo l'erba salsa accanto ai cespugli e radici di ginestra per loro cibo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "מִן גֵּ֥ו יְגֹרָ֑שׁוּ יָרִ֥יעוּ עָ֝לֵ֗י/מוֹ כַּ/גַּנָּֽב׃",
+        "LXX": "ἐπανέστησάν μοι κλέπται,",
+        "VUL": "qui de convallibus ista rapientes,/ cum singula reperissent, ad ea cum clamore currebant./",
+        "SYN": "Из общества изгоняют их, кричат на них, как на воров,",
+        "NEO": "On les écarte de la société des hommes, on crie après eux comme après le voleur.",
+        "NAB": "They were banished from among men, with an outcry like that against a thief -",
+        "VAT_ES": "cuando el Todopoderoso aún estaba conmigo y me rodeaban mis hijos;",
+        "CEI": "Cacciati via dal consorzio umano, a loro si grida dietro come al ladro;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בַּ/עֲר֣וּץ נְחָלִ֣ים לִ/שְׁכֹּ֑ן חֹרֵ֖י עָפָ֣ר וְ/כֵפִֽים׃",
+        "LXX": "ὧν οἱ οἶκοι αὐτῶν ἦσαν τρῶγλαι πετρῶν·",
+        "VUL": "In desertis habitabant torrentium,/ et in cavernis terræ, vel super glaream :/",
+        "SYN": "чтобы жили они в рытвинах потоков, в ущельях земли и утесов.",
+        "NEO": "Ils habitent dans d’affreuses vallées, dans les cavernes de la terre et les rochers.",
+        "NAB": "To dwell on the slopes of the wadies, in caves of sand and stone;",
+        "VAT_ES": "cuando mis pies se bañaban en lecha cuajada y la roca derramaba para mí arroyos de aceite!",
+        "CEI": "sì che dimorano in valli orrende, nelle caverne della terra e nelle rupi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "בֵּין שִׂיחִ֥ים יִנְהָ֑קוּ תַּ֖חַת חָר֣וּל יְסֻפָּֽחוּ׃",
+        "LXX": "ἀνὰ μέσον εὐήχων βοήσονται οἳ ὑπὸ φρύγανα ἄγρια διῃτῶντο·",
+        "VUL": "qui inter hujuscemodi lætabantur,/ et esse sub sentibus delicias computabant :/",
+        "SYN": "Ревут между кустами, жмутся под терном.",
+        "NEO": "On entend leurs cris sauvages parmi les broussailles, ils se couchent ensemble sous les ronces :",
+        "NAB": "Among the bushes they raised their raucous cry; under the nettles they huddled together.",
+        "VAT_ES": "Si yo salía a la puerta principal de la ciudad y ocupaba mi puesto en la plaza,",
+        "CEI": "In mezzo alle macchie urlano e sotto i roveti si adunano;"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "בְּֽנֵי נָ֭בָל גַּם בְּנֵ֣י בְלִי שֵׁ֑ם נִ֝כְּא֗וּ מִן הָ/אָֽרֶץ׃",
+        "LXX": "ἀφρόνων υἱοὶ καὶ ἀτίμων ὄνομα, καὶ κλέος ἐσβεσμένον ἀπὸ γῆς.",
+        "VUL": "filii stultorum et ignobilium,/ et in terra penitus non parentes./",
+        "SYN": "Люди отверженные, люди без имени, отребье земли!",
+        "NEO": "gens insensés, race sans nom, bannis avec mépris de la terre habitée !",
+        "NAB": "Irresponsible, nameless men, they were driven out of the land.",
+        "VAT_ES": "los jóvenes se retiraban al verme, los ancianos se levantaban y permanecían de pie.",
+        "CEI": "razza ignobile, anzi razza senza nome, sono calpestati più della terra."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ֭/עַתָּה נְגִינָתָ֣/ם הָיִ֑יתִי וָ/אֱהִ֖י לָ/הֶ֣ם לְ/מִלָּֽה׃",
+        "LXX": "νυνὶ δὲ κιθάρα ἐγώ εἰμι αὐτῶν, καὶ ἐμὲ θρύλημα ἔχουσιν·",
+        "VUL": "Nunc in eorum canticum versus sum,/ et factus sum eis in proverbium./",
+        "SYN": "Их-то сделался я ныне песнью и пищею разговора их.",
+        "NEO": "Et maintenant je suis l’objet de leurs chansons, je suis en butte à leurs propos.",
+        "NAB": "Yet now they sing of me in mockery; I am become a byword among them.",
+        "VAT_ES": "Los príncipes retenían sus palabras y se tapaban la boca con la mano;",
+        "CEI": "Ora io sono la loro canzone, sono diventato la loro favola!"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "תִּֽ֭עֲבוּ/נִי רָ֣חֲקוּ מֶ֑/נִּי וּ֝/מִ/פָּנַ֗/י לֹא חָ֥שְׂכוּ רֹֽק׃",
+        "LXX": "ἐβδελύξαντο δέ με ἀποστάντες μακράν, ἀπὸ δὲ προσώπου μου οὐκ ἐφείσαντο πτύελον.",
+        "VUL": "Abominantur me, et longe fugiunt a me,/ et faciem meam conspuere non verentur./",
+        "SYN": "Они гнушаются мною, удаляются от меня и не удерживаются плевать пред лицем моим.",
+        "NEO": "Ils ont horreur de moi, ils me fuient, ils ne détournent pas leur crachat de mon visage.",
+        "NAB": "They abhor me, they stand aloof from me, they do not hesitate to spit in my face!",
+        "VAT_ES": "a los jefes se les apagaba la voz, se les pegaba la lengua al paladar.",
+        "CEI": "Hanno orrore di me e mi schivano e non si astengono dallo sputarmi in faccia!"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּֽי יתר/ו יִתְרִ֣/י פִ֭תַּח וַ/יְעַנֵּ֑/נִי וְ֝/רֶ֗סֶן מִ/פָּנַ֥/י שִׁלֵּֽחוּ׃",
+        "LXX": "ἀνοίξας γὰρ φαρέτραν αὐτοῦ ἐκάκωσέν με, καὶ χαλινὸν τοῦ προσώπου μου ἐξαπέστειλεν.",
+        "VUL": "Pharetram enim suam aperuit, et afflixit me,/ et frenum posuit in os meum./",
+        "SYN": "Так как Он развязал повод мой и поразил меня, то они сбросили с себя узду пред лицем моим.",
+        "NEO": "Ils se donnent libre carrière pour m’outrager, ils rejettent tout frein devant moi.",
+        "NAB": "Indeed, they have loosed their bonds; they lord it over me, and have thrown off restraint in my presence.",
+        "VAT_ES": "Sí, el que me oía me felicitaba y el que me veía daba testimonio a mi favor.",
+        "CEI": "Poiché egli ha allentato il mio arco e mi ha abbattuto, essi han rigettato davanti a me ogni freno."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "עַל יָמִין֮ פִּרְחַ֪ח יָ֫ק֥וּמוּ רַגְלַ֥/י שִׁלֵּ֑חוּ וַ/יָּסֹ֥לּוּ עָ֝לַ֗/י אָרְח֥וֹת אֵידָֽ/ם׃",
+        "LXX": "ἐπὶ δεξιῶν βλαστοῦ ἐπανέστησαν, πόδα αὐτῶν ἐξέτειναν καὶ ὡδοποίησαν ἐπ’ ἐμὲ τρίβους ἀπωλείας αὐτῶν.",
+        "VUL": "Ad dexteram orientis calamitates meæ illico surrexerunt :/ pedes meos subverterunt,/ et oppresserunt quasi fluctibus semitis suis./",
+        "SYN": "С правого боку встает это исчадие, сбивает меня с ног, направляет гибельные свои пути ко мне.",
+        "NEO": "Des misérables se lèvent à ma droite, ils cherchent à ébranler mes pieds, ils frayent jusqu’à moi leurs routes meurtrières.",
+        "NAB": "To subvert my paths they rise up; they build their approaches for my ruin.",
+        "VAT_ES": "Porque yo salvaba al pobre que pedía auxilio y al huérfano privado de ayuda.",
+        "CEI": "A destra insorge la ragazzaglia; smuovono i miei passi e appianano la strada contro di me per perdermi."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "נָתְס֗וּ נְֽתִיבָ֫תִ֥/י לְ/הַוָּתִ֥/י יֹעִ֑ילוּ לֹ֖א עֹזֵ֣ר לָֽ/מוֹ׃",
+        "LXX": "ἐξετρίβησαν τρίβοι μου, ἐξέδυσαν γάρ μου τὴν στολήν·",
+        "VUL": "Dissipaverunt itinera mea ;/ insidiati sunt mihi, et prævaluerunt :/ et non fuit qui ferret auxilium./",
+        "SYN": "А мою стезю испортили: всё успели сделать к моей погибели, не имея помощника.",
+        "NEO": "Ils ont bouleversé mes sentiers, ils travaillent à ma ruine, eux à qui personne ne porterait secours.",
+        "NAB": "To destroy me, they attack with none to stay them;",
+        "VAT_ES": "El desesperado me hacía llegar su bendición, y yo alegraba el corazón de la viuda.",
+        "CEI": "Hanno demolito il mio sentiero, cospirando per la mia disfatta e nessuno si oppone a loro."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כְּ/פֶ֣רֶץ רָחָ֣ב יֶאֱתָ֑יוּ תַּ֥חַת שֹׁ֝אָ֗ה הִתְגַּלְגָּֽלוּ׃",
+        "LXX": "βέλεσιν αὐτοῦ κατηκόντισέν με, κέχρηταί μοι ὡς βούλεται· ἐν ὀδύναις πέφυρμαι.",
+        "VUL": "Quasi rupto muro, et aperta janua, irruerunt super me,/ et ad meas miserias devoluti sunt./",
+        "SYN": "Они пришли ко мне, как сквозь широкий пролом; с шумом бросились на меня.",
+        "NEO": "Ils fondent sur moi, comme par une large brèche, ils se précipitent parmi les décombres.",
+        "NAB": "as through a wide breach they advance. Amid the uproar they come on in waves;",
+        "VAT_ES": "Me había revestido de justicia, y ella me cubría, mi rectitud era como un manto y un turbante.",
+        "CEI": "Avanzano come attraverso una larga breccia, sbucano in mezzo alle macerie."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "הָהְפַּ֥ךְ עָלַ֗/י בַּלָּ֫ה֥וֹת תִּרְדֹּ֣ף כָּ֭/רוּחַ נְדִבָתִ֑/י וּ֝/כְ/עָ֗ב עָבְרָ֥ה יְשֻׁעָתִֽ/י׃",
+        "LXX": "ἐπιστρέφονταί μου αἱ ὀδύναι, ᾤχετό μου ἡ ἐλπὶς ὥσπερ πνεῦμα, καὶ ὥσπερ νέφος ἡ σωτηρία μου.",
+        "VUL": "Redactus sum in nihilum :/ abstulisti quasi ventus desiderium meum,/ et velut nubes pertransiit salus mea./",
+        "SYN": "Ужасы устремились на меня; как ветер, развеялось величие мое, и счастье мое унеслось, как облако.",
+        "NEO": "Les terreurs m’assiègent, ma prospérité est emportée comme un souffle, mon bonheur a passé comme un nuage.",
+        "NAB": "over me rolls the terror. My dignity is borne off on the wind, and my welfare vanishes like a cloud.",
+        "VAT_ES": "Yo era ojos para el ciego y pies para el lisiado,",
+        "CEI": "I terrori si sono volti contro di me; si è dileguata, come vento, la mia grandezza e come nube è passata la mia felicità."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה עָ֭לַ/י תִּשְׁתַּפֵּ֣ךְ נַפְשִׁ֑/י יֹ֭אחֲז֣וּ/נִי יְמֵי עֹֽנִי׃",
+        "LXX": "καὶ νῦν ἐπ’ ἐμὲ ἐκχυθήσεται ἡ ψυχή μου, ἔχουσιν δέ με ἡμέραι ὀδυνῶν·",
+        "VUL": "Nunc autem in memetipso marcescit anima mea,/ et possident me dies afflictionis./",
+        "SYN": "И ныне изливается душа моя во мне: дни скорби объяли меня.",
+        "NEO": "Et maintenant, mon âme s’épanche en moi, les jours d’affliction m’ont saisi.",
+        "NAB": "My soul ebbs away from me;",
+        "VAT_ES": "era un padre para los indigentes y examinaba a fondo el caso del desconocido.",
+        "CEI": "Ora mi consumo e mi colgono giorni d'afflizione."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "לַ֗יְלָה עֲ֭צָמַ/י נִקַּ֣ר מֵ/עָלָ֑/י וְ֝/עֹרְקַ֗/י לֹ֣א יִשְׁכָּבֽוּ/ן׃",
+        "LXX": "νυκτὶ δέ μου τὰ ὀστᾶ συγκέχυται, τὰ δὲ νεῦρά μου διαλέλυται.",
+        "VUL": "Nocte os meum perforatur doloribus,/ et qui me comedunt, non dormiunt./",
+        "SYN": "Ночью ноют во мне кости мои, и жилы мои не имеют покоя.",
+        "NEO": "La nuit perce mes os, les consume, le mal qui me ronge ne dort pas.",
+        "NAB": "My frame takes no rest by night; my inward parts seethe and will not be stilled.",
+        "VAT_ES": "Rompía las mandíbulas del injusto y le hacía soltar la presa de sus dientes.",
+        "CEI": "Di notte mi sento trafiggere le ossa e i dolori che mi rodono non mi danno riposo."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "בְּ/רָב כֹּ֭חַ יִתְחַפֵּ֣שׂ לְבוּשִׁ֑/י כְּ/פִ֖י כֻתָּנְתִּ֣/י יַֽאַזְרֵֽ/נִי׃",
+        "LXX": "ἐν πολλῇ ἰσχύι ἐπελάβετό μου τῆς στολῆς, ὥσπερ τὸ περιστόμιον τοῦ χιτῶνός μου περιέσχεν με.",
+        "VUL": "In multitudine eorum consumitur vestimentum meum,/ et quasi capitio tunicæ succinxerunt me./",
+        "SYN": "С великим трудом снимается с меня одежда моя; края хитона моего жмут меня.",
+        "NEO": "Par sa violence, mon vêtement a perdu sa forme, il me serre comme une tunique.",
+        "NAB": "One with great power lays hold of my clothing; by the collar of my tunic he seizes me:",
+        "VAT_ES": "Entonces pensaba: «Moriré en mi nido, multiplicaré mis días como el ave fénix",
+        "CEI": "A gran forza egli mi afferra per la veste, mi stringe per l'accollatura della mia tunica."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "הֹרָ֥/נִי לַ/חֹ֑מֶר וָ֝/אֶתְמַשֵּׁ֗ל כֶּ/עָפָ֥ר וָ/אֵֽפֶר׃",
+        "LXX": "ἥγησαι δέ με ἴσα πηλῷ, ἐν γῇ καὶ σποδῷ μου ἡ μερίς·",
+        "VUL": "Comparatus sum luto,/ et assimilatus sum favillæ et cineri./",
+        "SYN": "Он бросил меня в грязь, и я стал, как прах и пепел.",
+        "NEO": "Dieu m’a jeté dans la fange, je suis comme la poussière et la cendre.",
+        "NAB": "He has cast me into the mire; I am leveled with the dust and ashes.",
+        "VAT_ES": "Mi raíz se extenderá hacia el agua y el rocío se posará en mi ramaje.",
+        "CEI": "Mi ha gettato nel fango: son diventato polvere e cenere."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "אֲשַׁוַּ֣ע אֵ֭לֶי/ךָ וְ/לֹ֣א תַעֲנֵ֑/נִי עָ֝מַ֗דְתִּי וַ/תִּתְבֹּ֥נֶן בִּֽ/י׃",
+        "LXX": "κέκραγα δὲ πρὸς σὲ καὶ οὐκ ἀκούεις μου, ἔστησαν δὲ καὶ κατενόησάν με·",
+        "VUL": "Clamo ad te, et non exaudis me :/ sto, et non respicis me./",
+        "SYN": "Я взываю к Тебе, и Ты не внимаешь мне, -- стою, а Ты _только_ смотришь на меня.",
+        "NEO": "Je crie vers toi, et tu ne me réponds pas ; je me tiens debout, et tu me regardes avec indifférence.",
+        "NAB": "I cry to you, but you do not answer me; you stand off and look at me,",
+        "VAT_ES": "Mi gloria será siempre nueva en mí y el arco rejuvenecerá en mi mano».",
+        "CEI": "Io grido a te, ma tu non mi rispondi, insisto, ma tu non mi dai retta."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "תֵּהָפֵ֣ךְ לְ/אַכְזָ֣ר לִ֑/י בְּ/עֹ֖צֶם יָדְ/ךָ֣ תִשְׂטְמֵֽ/נִי׃",
+        "LXX": "ἐπέβησαν δέ μοι ἀνελεημόνως, χειρὶ κραταιᾷ με ἐμαστίγωσας·",
+        "VUL": "Mutatus es mihi in crudelem,/ et in duritia manus tuæ adversaris mihi./",
+        "SYN": "Ты сделался жестоким ко мне, крепкою рукою враждуешь против меня.",
+        "NEO": "Tu deviens cruel à mon égard, tu m’attaques avec toute la force de ton bras.",
+        "NAB": "Then you turn upon me without mercy and with your strong hand you buffet me.",
+        "VAT_ES": "Ellos me escuchaban con expectación, callaban para oír mi consejo.",
+        "CEI": "Tu sei un duro avversario verso di me e con la forza delle tue mani mi perseguiti;"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "תִּשָּׂאֵ֣/נִי אֶל ר֭וּחַ תַּרְכִּיבֵ֑/נִי וּ֝/תְמֹגְגֵ֗/נִי תשוה תּוּשִׁיָּֽה׃",
+        "LXX": "ἔταξας δέ με ἐν ὀδύναις, καὶ ἀπέρριψάς με ἀπὸ σωτηρίας.",
+        "VUL": "Elevasti me, et quasi super ventum ponens ;/ elisisti me valide./",
+        "SYN": "Ты поднял меня и заставил меня носиться по ветру и сокрушаешь меня.",
+        "NEO": "Tu m’enlèves, tu me fais voler au gré du vent, et tu m’anéantis dans le fracas de la tempête.",
+        "NAB": "You raise me up and drive me before the wind; I am tossed about by the tempest.",
+        "VAT_ES": "Después que yo hablaba, nadie replicaba, mi palabra caía sobre ellos gota a gota.",
+        "CEI": "mi sollevi e mi poni a cavallo del vento e mi fai sballottare dalla bufera."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "כִּֽי יָ֭דַעְתִּי מָ֣וֶת תְּשִׁיבֵ֑/נִי וּ/בֵ֖ית מוֹעֵ֣ד לְ/כָל חָֽי׃",
+        "LXX": "οἶδα γὰρ ὅτι θάνατός με ἐκτρίψει· οἰκία γὰρ παντὶ θνητῷ γῆ·",
+        "VUL": "Scio quia morti trades me,/ ubi constituta est domus omni viventi./",
+        "SYN": "Так, я знаю, что Ты приведешь меня к смерти и в дом собрания всех живущих.",
+        "NEO": "Car, je le sais, tu me mènes à la mort, au rendez-vous de tous les vivants.",
+        "NAB": "Indeed I know you will turn me back in death to the destined place of everyone alive.",
+        "VAT_ES": "Me esperaban como a la lluvia, abrían su boca como a la lluvia de primavera.",
+        "CEI": "So bene che mi conduci alla morte, alla casa dove si riunisce ogni vivente."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אַ֣ךְ לֹא בְ֭/עִי יִשְׁלַח יָ֑ד אִם בְּ֝/פִיד֗/וֹ לָהֶ֥ן שֽׁוּעַ׃",
+        "LXX": "εἰ γὰρ ὄφελον δυναίμην ἐμαυτὸν χειρώσασθαι, ἢ δεηθείς γε ἑτέρου, καὶ ποιήσει μοι τοῦτο.",
+        "VUL": "Verumtamen non ad consumptionem eorum emittis manum tuam :/ et si corruerint, ipse salvabis./",
+        "SYN": "Верно, Он не прострет руки Своей на дом костей: будут ли они кричать при своем разрушении?",
+        "NEO": "Cependant celui qui va périr n’étendra-t-il pas les mains et, dans sa détresse, ne poussera-t-il pas un cri ?",
+        "NAB": "Yet should not a hand be held out to help a wretched man in his calamity?",
+        "VAT_ES": "Si les sonreía, les costaba creerlo y no querían perderse la luz de mi rostro.",
+        "CEI": "Ma qui nessuno tende la mano alla preghiera, né per la sua sventura invoca aiuto."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "אִם לֹ֣א בָ֭כִיתִי לִ/קְשֵׁה י֑וֹם עָֽגְמָ֥ה נַ֝פְשִׁ֗/י לָ/אֶבְיֽוֹן׃",
+        "LXX": "ἐγὼ δὲ ἐπὶ παντὶ ἀδυνάτῳ ἔκλαυσα, ἐστέναξα δὲ ἰδὼν ἄνδρα ἐν ἀνάγκαις.",
+        "VUL": "Flebam quondam super eo qui afflictus erat,/ et compatiebatur anima mea pauperi./",
+        "SYN": "Не плакал ли я о том, кто был в горе? не скорбела ли душа моя о бедных?",
+        "NEO": "N’avais-je pas des larmes pour l’infortuné ? Mon cœur ne s’est-il pas attendri sur l’indigent ?",
+        "NAB": "Or have I not wept for the hardships of others; was not my soul grieved for the destitute?",
+        "VAT_ES": "Yo les elegía el camino y me ponía al frente; me instalaba como un rey con sus tropas y adonde yo los llevaba, se dejaban guiar.",
+        "CEI": "Non ho pianto io forse con chi aveva i giorni duri e non mi sono afflitto per l'indigente?"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "כִּ֤י ט֣וֹב קִ֭וִּיתִי וַ/יָּ֣בֹא רָ֑ע וַֽ/אֲיַחֲלָ֥ה לְ֝/א֗וֹר וַ/יָּ֥בֹא אֹֽפֶל׃",
+        "LXX": "ἐγὼ δὲ ἐπέχων ἀγαθοῖς, ἰδοὺ συνήντησάν μοι μᾶλλον ἡμέραι κακῶν.",
+        "VUL": "Expectabam bona, et venerunt mihi mala :/ præstolabar lucem, et eruperunt tenebræ./",
+        "SYN": "Когда я чаял добра, пришло зло; когда ожидал света, пришла тьма.",
+        "NEO": "J’attendais le bonheur, et le malheur est arrivé ; j’espérais la lumière, et les ténèbres sont venues.",
+        "NAB": "Yet when I looked for good, then evil came; when I expected light, then came darkness.",
+        "CEI": "Eppure aspettavo il bene ed è venuto il male, aspettavo la luce ed è venuto il buio."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "מֵעַ֖/י רֻתְּח֥וּ וְ/לֹא דָ֗מּוּ קִדְּמֻ֥/נִי יְמֵי עֹֽנִי׃",
+        "LXX": "ἡ κοιλία μου ἐξέζεσεν καὶ οὐ σιωπήσεται, προέφθασάν με ἡμέραι πτωχίας.",
+        "VUL": "Interiora mea efferbuerunt absque ulla requie :/ prævenerunt me dies afflictionis./",
+        "SYN": "Мои внутренности кипят и не перестают; встретили меня дни печали.",
+        "NEO": "Mes entrailles bouillonnent sans relâche, les jours d’affliction ont fondu sur moi.",
+        "NAB": "days of affliction have overtaken me.",
+        "CEI": "Le mie viscere ribollono senza posa e giorni d'affanno mi assalgono."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "קֹדֵ֣ר הִ֭לַּכְתִּי בְּ/לֹ֣א חַמָּ֑ה קַ֖מְתִּי בַ/קָּהָ֣ל אֲשַׁוֵּֽעַ׃",
+        "LXX": "στένων πεπόρευμαι ἄνευ φιμοῦ, ἕστηκα δὲ ἐν ἐκκλησίᾳ κεκραγώς.",
+        "VUL": "Mrens incedebam sine furore ;/ consurgens, in turba clamabam./",
+        "SYN": "Я хожу почернелый, но не от солнца; встаю в собрании и кричу.",
+        "NEO": "Je marche dans le deuil, sans soleil ; si je me lève dans l’assemblée, c’est pour pousser des cris.",
+        "NAB": "I go about in gloom, without the sun; I rise up in public to voice my grief.",
+        "CEI": "Avanzo con il volto scuro, senza conforto, nell'assemblea mi alzo per invocare aiuto."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "אָ֭ח הָיִ֣יתִי לְ/תַנִּ֑ים וְ֝/רֵ֗עַ לִ/בְנ֥וֹת יַעֲנָֽה׃",
+        "LXX": "ἀδελφὸς γέγονα σειρήνων, ἑταῖρος δὲ στρουθῶν.",
+        "VUL": "Frater fui draconum,/ et socius struthionum./",
+        "SYN": "Я стал братом шакалам и другом страусам.",
+        "NEO": "Je suis devenu le frère des chacals, le compagnon des filles de l’autruche.",
+        "NAB": "I have become the brother of jackals, companion to the ostrich.",
+        "CEI": "Sono divenuto fratello degli sciacalli e compagno degli struzzi."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "ע֭וֹרִ/י שָׁחַ֣ר מֵ/עָלָ֑/י וְ/עַצְמִ/י חָ֝֗רָה מִנִּי חֹֽרֶב׃",
+        "LXX": "τὸ δὲ δέρμα μου ἐσκότωται μεγάλως, τὰ δὲ ὀστᾶ μου ἀπὸ καύματος.",
+        "VUL": "Cutis mea denigrata est super me,/ et ossa mea aruerunt præ caumate./",
+        "SYN": "Моя кожа почернела на мне, и кости мои обгорели от жара.",
+        "NEO": "Ma peau livide tombe en lambeaux, mes os sont brûlés par un feu intérieur.",
+        "NAB": "My blackened skin falls away from me; the heat scorches my very frame.",
+        "CEI": "La mia pelle si è annerita, mi si stacca e le mie ossa bruciano dall'arsura."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י לְ֭/אֵבֶל כִּנֹּרִ֑/י וְ֝/עֻגָבִ֗/י לְ/ק֣וֹל בֹּכִֽים׃",
+        "LXX": "ἀπέβη δὲ εἰς πάθος μου ἡ κιθάρα, ὁ δὲ ψαλμός μου εἰς κλαυθμὸν ἐμοί.",
+        "VUL": "Versa est in luctum cithara mea,/ et organum meum in vocem flentium.]",
+        "SYN": "И цитра моя сделалась унылою, и свирель моя -- голосом плачевным.",
+        "NEO": "Ma cithare ne rend plus que des accords lugubres, mon chalumeau que des sons plaintifs.",
+        "NAB": "My harp is turned to mourning, and my reed pipe to sounds of weeping.",
+        "CEI": "La mia cetra serve per lamenti e il mio flauto per la voce di chi piange."
+      }
+    }
+  }
+}

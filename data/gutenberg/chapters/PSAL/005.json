@@ -1,0 +1,230 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_005",
+  "book_key": "PSAL",
+  "sequence": 5,
+  "chapter_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֥חַ אֶֽל הַ/נְּחִיל֗וֹת מִזְמ֥וֹר לְ/דָוִֽד׃",
+        "LXX": "Εἰς τὸ τέλος, ὑπὲρ τῆς κληρονομούσης· ψαλμὸς τῷ Δαυείδ.",
+        "VUL": "In finem, pro ea quæ hæreditatem consequitur. Psalmus David.",
+        "SYN": "Начальнику хора. На духовых _орудиях._ Псалом Давида.",
+        "NEO": "Au maître de chant. Sur les flûtes. Psaume de David.",
+        "NAB": "For the leader; with wind instruments. A psalm of David.",
+        "CEI": "Al maestro del coro. Per flauti. Salmo. Di Davide."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אֲמָרַ֖/י הַאֲזִ֥ינָ/ה יְהוָ֗ה בִּ֣ינָ/ה הֲגִֽיגִ/י׃",
+        "LXX": "Τὰ ῥήματά μου ἐνώτισαι, Κύριε, σύνες τῆς κραυγῆς μου,",
+        "VUL": "[Verba mea auribus percipe, Domine ;/ intellige clamorem meum./",
+        "SYN": "Услышь, Господи, слова мои, уразумей помышления мои.",
+        "NEO": "Prête l’oreille à mes paroles, \\+w Yahweh|strong=\"H3068\"\\+w**, entends mes soupirs ;",
+        "NAB": "Hear my words, O LORD; listen to my sighing.",
+        "VAT_ES": "Señor, escucha mis palabras,",
+        "CEI": "Porgi l'orecchio, Signore, alle mie parole: intendi il mio lamento."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הַקְשִׁ֤יבָ/ה לְ/ק֬וֹל שַׁוְעִ֗/י מַלְכִּ֥/י וֵ/אלֹהָ֑/י כִּֽי אֵ֝לֶ֗י/ךָ אֶתְפַּלָּֽל׃",
+        "LXX": "πρόσχες τῆς φωνῆς τῆς δεήσεώς μου, ὁ βασιλεύς μου καὶ ὁ θεός μου· ὅτι πρὸς σὲ προσεύξομαι, Κύριε.",
+        "VUL": "Intende voci orationis meæ,/ rex meus et Deus meus./",
+        "SYN": "Внемли гласу вопля моего, Царь мой и Бог мой! ибо я к Тебе молюсь.",
+        "NEO": "sois attentif à mes cris, ô mon Roi et mon Dieu ; car c’est à toi que j’adresse ma prière.",
+        "NAB": "Hear my cry for help, my king, my God! To you I pray, O LORD;",
+        "VAT_ES": "oye mi clamor, mi Rey y mi Dios,",
+        "CEI": "Ascolta la voce del mio grido, o mio re e mio Dio, perché ti prego, Signore."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "יְֽהוָ֗ה בֹּ֭קֶר תִּשְׁמַ֣ע קוֹלִ֑/י בֹּ֥קֶר אֶֽעֱרָךְ לְ֝/ךָ֗ וַ/אֲצַפֶּֽה׃",
+        "LXX": "τὸ πρωὶ εἰσακούσῃ τῆς φωνῆς μου· τὸ πρωὶ παραστήσομαί σοι καὶ ἐπόψομαι.",
+        "VUL": "Quoniam ad te orabo, Domine :/ mane exaudies vocem meam./",
+        "SYN": "Господи! рано услышь голос мой, - рано предстану пред Тобою, и буду ожидать,",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, dès le matin, tu entends ma voix ; dès le matin, je t’offre mes vœux et j’attends.",
+        "NAB": "at dawn you will hear my cry; at dawn I will plead before you and wait.",
+        "VAT_ES": "Señor, de madrugada ya escuchas mi voz:",
+        "CEI": "Al mattino ascolta la mia voce; fin dal mattino t'invoco e sto in attesa."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּ֤י לֹ֤א אֵֽל חָפֵ֘ץ רֶ֥שַׁע אָ֑תָּה לֹ֖א יְגֻרְ/ךָ֣ רָֽע׃",
+        "LXX": "ὅτι οὐχὶ θεὸς θέλων ἀνομίαν σὺ εἶ· οὐδὲ παροικήσει σοι πονηρευόμενος.",
+        "VUL": "Mane astabo tibi, et videbo/ quoniam non Deus volens iniquitatem tu es./",
+        "SYN": "ибо Ты Бог, не любящий беззакония; у Тебя не водворится злой;",
+        "NEO": "Car tu n’es pas un Dieu qui prenne plaisir au mal ; avec toi le méchant ne saurait habiter.",
+        "NAB": "You are not a god who delights in evil; no wicked person finds refuge with you;",
+        "VAT_ES": "Tú no eres un Dios que ama la maldad;",
+        "CEI": "Tu non sei un Dio che si compiace del male; presso di te il malvagio non trova dimora;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "לֹֽא יִתְיַצְּב֣וּ הֽ֭וֹלְלִים לְ/נֶ֣גֶד עֵינֶ֑י/ךָ שָׂ֝נֵ֗אתָ כָּל פֹּ֥עֲלֵי אָֽוֶן׃",
+        "LXX": "οὐ διαμενοῦσιν παράνομοι κατέναντι τῶν ὀφθαλμῶν σου· ἐμίσησας, Κύριε, πάντας τοὺς ἐργαζομένους τὴν ἀνομίαν.",
+        "VUL": "Neque habitabit juxta te malignus,/ neque permanebunt injusti ante oculos tuos./",
+        "SYN": "нечестивые не пребудут пред очами Твоими: Ты ненавидишь всех, делающих беззаконие.",
+        "NEO": "Les insensés ne subsistent pas devant tes yeux ; tu hais tous les artisans d’iniquité.",
+        "NAB": "the arrogant cannot stand before you. You hate all who do evil;",
+        "VAT_ES": "ni los orgullosos podrán resistir",
+        "CEI": "gli stolti non sostengono il tuo sguardo. Tu detesti chi fa il male,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "תְּאַבֵּד֮ דֹּבְרֵ֪י כָ֫זָ֥ב אִישׁ דָּמִ֥ים וּ/מִרְמָ֗ה יְתָ֘עֵ֥ב יְהוָֽה׃",
+        "LXX": "ἀπολεῖς πάντας τοὺς λαλοῦντας τὸ ψεῦδος· ἄνδρα αἱμάτων καὶ δόλιον βδελύσσεται Κύριος.",
+        "VUL": "Odisti omnes qui operantur iniquitatem ;/ perdes omnes qui loquuntur mendacium./ Virum sanguinum et dolosum abominabitur Dominus./",
+        "SYN": "Ты погубишь говорящих ложь; кровожадного и коварного гнушается Господь.",
+        "NEO": "Tu fais périr les menteurs ; \\+w Yahweh|strong=\"H3068\"\\+w** abhorre l’homme de sang et de fraude.",
+        "NAB": "you destroy all who speak falsely. Murderers and deceivers the LORD abhors.",
+        "VAT_ES": "y destruyes a los mentirosos.",
+        "CEI": "fai perire i bugiardi. Il Signore detesta sanguinari e ingannatori."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֗י בְּ/רֹ֣ב חַ֭סְדְּ/ךָ אָב֣וֹא בֵיתֶ֑/ךָ אֶשְׁתַּחֲוֶ֥ה אֶל הֵֽיכַל קָ֝דְשְׁ/ךָ֗ בְּ/יִרְאָתֶֽ/ךָ׃",
+        "LXX": "ἐγὼ δὲ ἐν τῷ πλήθει τοῦ ἐλέου σου εἰσελεύσομαι εἰς τὸν οἶκόν σου, προσκυνήσω πρὸς ναὸν ἅγιόν σου ἐν φόβῳ σου.",
+        "VUL": "Ego autem in multitudine misericordiæ tuæ/ introibo in domum tuam ;/ adorabo ad templum sanctum tuum in timore tuo./",
+        "SYN": "А я, по множеству милости Твоей, войду в дом Твой, поклонюсь святому храму Твоему в страхе Твоем.",
+        "NEO": "Pour moi, par ta grande miséricorde, j’irai dans ta maison ; je me prosternerai, dans ta crainte, devant ton saint temple.",
+        "NAB": "But I can enter your house because of your great love. I can worship in your holy temple because of my reverence for you, LORD.",
+        "VAT_ES": "Pero yo, por tu inmensa bondad,",
+        "CEI": "Ma io per la tua grande misericordia entrerò nella tua casa; mi prostrerò con timore nel tuo santo tempio."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "יְהוָ֤ה נְחֵ֬/נִי בְ/צִדְקָתֶ֗/ךָ לְמַ֥עַן שׁוֹרְרָ֑/י הושר הַיְשַׁ֖ר לְ/פָנַ֣/י דַּרְכֶּֽ/ךָ׃",
+        "LXX": "Κύριε, ὁδήγησόν με ἐν τῇ δικαιοσύνῃ σου ἕνεκα τῶν ἐχθρῶν μου, κατεύθυνον ἐνώπιόν σου τὴν ὁδόν μου.",
+        "VUL": "Domine, deduc me in justitia tua :/ propter inimicos meos dirige in conspectu tuo viam meam./",
+        "SYN": "Господи! путеводи меня в правде Твоей, ради врагов моих; уровняй предо мною путь Твой.",
+        "NEO": "Seigneur, conduis-moi, dans ta justice, à cause de mes ennemis aplanis ta voie sous mes pas.",
+        "NAB": "Guide me in your justice because of my foes; make straight your way before me.",
+        "VAT_ES": "Guíame, Señor, por tu justicia,",
+        "CEI": "Signore, guidami con giustizia di fronte ai miei nemici; spianami davanti il tuo cammino."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּ֤י אֵ֪ין בְּ/פִ֡י/הוּ נְכוֹנָה֮ קִרְבָּ֪/ם הַ֫וּ֥וֹת קֶֽבֶר פָּת֥וּחַ גְּרוֹנָ֑/ם לְ֝שׁוֹנָ֗/ם יַחֲלִֽיקוּ/ן׃",
+        "LXX": "ὅτι οὐκ ἔστιν ἐν τῷ στόματι αὐτῶν ἀλήθεια, ἡ καρδία αὐτῶν ματαία· τάφος ἀνεῳγμένος ὁ λάρυγξ αὐτῶν, ταῖς γλώσσαις αὐτῶν ἐδολιοῦσαν.",
+        "VUL": "Quoniam non est in ore eorum veritas ;/ cor eorum vanum est./",
+        "SYN": "Ибо нет в устах их истины: сердце их - пагуба, гортань их - открытый гроб, языком своим льстят.",
+        "NEO": "Car il n’y a pas de sincérité dans leur bouche ; leur cœur n’est que malice ; leur gosier est un sépulcre ouvert, leur langue se fait caressante.",
+        "NAB": "For there is no sincerity in their mouths; their hearts are corrupt. Their throats are open graves; on their tongues are subtle lies.",
+        "VAT_ES": "En su boca no hay sinceridad,",
+        "CEI": "Non c'è sincerità sulla loro bocca, è pieno di perfidia il loro cuore; la loro gola è un sepolcro aperto, la loro lingua è tutta adulazione."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "הַֽאֲשִׁימֵ֨/ם אֱֽלֹהִ֗ים יִפְּלוּ֮ מִֽ/מֹּעֲצ֪וֹתֵ֫י/הֶ֥ם בְּ/רֹ֣ב פִּ֭שְׁעֵי/הֶם הַדִּיחֵ֑/מוֹ כִּי מָ֥רוּ בָֽ/ךְ׃",
+        "LXX": "κρῖνον αὐτούς, ὁ θεός· ἀποπεσάτωσαν ἀπὸ τῶν διαβουλιῶν αὐτῶν· κατὰ τὸ πλῆθος τῶν ἀσεβειῶν αὐτῶν ἔξωσον αὐτούς, ὅτι παρεπίκρανάν σε, Κύριε.",
+        "VUL": "Sepulchrum patens est guttur eorum ;/ linguis suis dolose agebant :/ judica illos, Deus./ Decidant a cogitationibus suis ;/ secundum multitudinem impietatum eorum expelle eos,/ quoniam irritaverunt te, Domine./",
+        "SYN": "Осуди их, Боже, да падут они от замыслов своих; по множеству нечестия их, отвергни их, ибо они возмутились против Тебя.",
+        "NEO": "Châtie-les, ô Dieu. Qu’ils échouent dans leurs desseins ! A cause de leurs crimes sans nombre, précipite-les ; car ils sont en révolte contre toi.",
+        "NAB": "Declare them guilty, God; make them fall by their own devices. Drive them out for their many sins; they have rebelled against you.",
+        "VAT_ES": "Castígalos, Señor, como culpables,",
+        "CEI": "Condannali, o Dio, soccombano alle loro trame, per tanti loro delitti disperdili, perché a te si sono ribellati."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/יִשְׂמְח֨וּ כָל ח֪וֹסֵי בָ֡/ךְ לְ/עוֹלָ֣ם יְ֭רַנֵּנוּ וְ/תָסֵ֣ךְ עָלֵ֑י/מוֹ וְֽ/יַעְלְצ֥וּ בְ֝/ךָ֗ אֹהֲבֵ֥י שְׁמֶֽ/ךָ׃",
+        "LXX": "καὶ εὐφρανθήτωσαν ἐπὶ σοὶ πάντες οἱ ἐλπίζοντες ἐπὶ σέ· εἰς αἰῶνα ἀγαλλιάσονται, καὶ κατασκηνώσεις ἐν αὐτοῖς. καὶ καυχήσονται ἐπὶ σοὶ πάντες οἱ ἀγαπῶντες τὸ ὄνομά σου,",
+        "VUL": "Et lætentur omnes qui sperant in te ;/ in æternum exsultabunt, et habitabis in eis./ Et gloriabuntur in te omnes qui diligunt nomen tuum,/",
+        "SYN": "И возрадуются все уповающие на Тебя, вечно будут ликовать, и Ты будешь покровительствовать им; и будут хвалиться Тобою любящие имя Твое.",
+        "NEO": "Alors se réjouiront tous ceux qui se confient en toi ; ils seront dans une perpétuelle allégresse, et tu les protégeras ; ils se livreront à de joyeux transports, ceux qui aiment ton nom.",
+        "NAB": "Then all who take refuge in you will be glad and forever shout for joy. Protect them that you may be the joy of those who love your name.",
+        "VAT_ES": "Así se alegrarán los que en ti se refugian",
+        "CEI": "Gioiscano quanti in te si rifugiano, esultino senza fine. Tu li proteggi e in te si allieteranno quanti amano il tuo nome."
+      }
+    }
+  }
+}

@@ -1,0 +1,429 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IUDI_002",
+  "book_key": "IUDI",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יַּ֧עַל מַלְאַךְ יְהוָ֛ה מִן הַ/גִּלְגָּ֖ל אֶל הַ/בֹּכִ֑ים וַ/יֹּאמֶר֩ אַעֲלֶ֨ה אֶתְ/כֶ֜ם מִ/מִּצְרַ֗יִם וָ/אָבִ֤יא אֶתְ/כֶם֙ אֶל הָ/אָ֗רֶץ אֲשֶׁ֤ר נִשְׁבַּ֨עְתִּי֙ לַ/אֲבֹ֣תֵי/כֶ֔ם וָ/אֹמַ֕ר לֹֽא אָפֵ֧ר בְּרִיתִ֛/י אִתְּ/כֶ֖ם לְ/עוֹלָֽם׃",
+        "LXX": "Καὶ ἀνέβη ἄγγελος Κυρίου ἀπὸ Γαλγὰλ ἐπὶ τὸν Κλαυθμῶνα καὶ ἐπὶ Βαιθὴλ καὶ ἐπὶ τὸν οἶκον Ἰσραήλ, καὶ εἶπεν πρὸς αὐτούς Τάδε λέγει Κύριος Ἀνεβίβασα ὑμᾶς ἐξ Αἰγύπτου, καὶ εἰσήγαγον ὑμᾶς εἰς τὴν γῆν ἣν ὤμοσα τοῖς πατράσιν ὑμῶν, καὶ εἶπα Οὐ διασκεδάσω τὴν διαθήκην μου τὴν μεθ’ ὑμῶν εἰς τὸν αἰῶνα.",
+        "VUL": "Ascenditque angelus Domini de Galgalis ad Locum flentium, et ait : Eduxi vos de Ægypto, et introduxi in terram, pro qua juravi patribus vestris : et pollicitus sum ut non facerem irritum pactum meum vobiscum in sempiternum,",
+        "SYN": "И пришел Ангел Господень из Галгала в Бохим [и в Вефиль и к дому Израилеву] и сказал [им: так говорит Господь]: Я вывел вас из Египта и ввел вас в землю, о которой клялся отцам вашим [дать вам], и сказал Я: \"не нарушу завета Моего с вами вовек;",
+        "NEO": "L’ange de \\+w Yahweh|strong=\"H3068\"\\+w** monta de Galgala à Bokim, et dit : « Je vous ai fait monter hors d’Égypte et je vous ai amenés dans le pays que j’ai juré à vos pères de vous donner. J’ai dit : Jamais je ne romprai mon alliance avec vous ;",
+        "NAB": "An angel of the LORD went up from Gilgal to Bochim and said, \"It was I who brought you up from Egypt and led you into the land which I promised on oath to your fathers. I said that I would never break my covenant with you,",
+        "VAT_ES": "El Angel del Señor subió de Guilgal a Bojím y dijo: «Yo los hice subir de Egipto y los introduje en la tierra que prometí a sus padres con un juramento. También dije: «Jamás quebrantaré mi alianza con ustedes.",
+        "CEI": "Ora l'angelo del Signore salì da Gàlgala a Bochim e disse: \"Io vi ho fatti uscire dall'Egitto e vi ho condotti nel paese, che avevo giurato ai vostri padri di darvi. Avevo anche detto: Non romperò mai la mia alleanza con voi;"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/אַתֶּ֗ם לֹֽא תִכְרְת֤וּ בְרִית֙ לְ/יֽוֹשְׁבֵי֙ הָ/אָ֣רֶץ הַ/זֹּ֔את מִזְבְּחוֹתֵי/הֶ֖ם תִּתֹּצ֑וּ/ן וְ/לֹֽא שְׁמַעְתֶּ֥ם בְּ/קֹלִ֖/י מַה זֹּ֥את עֲשִׂיתֶֽם׃",
+        "LXX": "καὶ ὑμεῖς οὐ διαθήσεσθε διαθήκην τοῖς ἐνκαθημένοις εἰς τὴν γῆν ταύτην, οὐδὲ τοῖς θεοῖς αὐτῶν προσκυνήσετε, ἀλλὰ τὰ γλυπτὰ αὐτῶν συντρίψετε, τὰ θυσιαστήρια αὐτῶν καθελεῖτε· καὶ οὐκ εἰσηκούσατε τῆς φωνῆς μου, ὅτι ταῦτα ἐποιήσατε.",
+        "VUL": "ita dumtaxat ut non feriretis fdus cum habitatoribus terræ hujus, sed aras eorum subverteretis : et noluistis audire vocem meam : cur hoc fecistis ?",
+        "SYN": "и вы не вступайте в союз с жителями земли сей; [богам их не поклоняйтесь, изваяния их разбейте,] жертвенники их разрушьте\". Но вы не послушали гласа Моего. Что вы это сделали?",
+        "NEO": "et vous, vous ne ferez, pas alliance avec les habitants de ce pays, vous renverserez leurs autels. Mais vous n’avez pas obéi à ma voix. Pourquoi avez-vous fait cela ?",
+        "NAB": "but that you were not to make a pact with the inhabitants of this land, and you were to pull down their altars. Yet you have not obeyed me. What did you mean by this?",
+        "VAT_ES": "Pero ustedes no harán ninguna alianza con los habitantes de este país y destruirán sus altares». A pesar de eso, no escucharon mi voz. &iquest;Por qué han obrado así?",
+        "CEI": "voi non farete alleanza con gli abitanti di questo paese; distruggerete i loro altari. Ma voi non avete obbedito alla mia voce. Perché avete fatto questo?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/גַ֣ם אָמַ֔רְתִּי לֹֽא אֲגָרֵ֥שׁ אוֹתָ֖/ם מִ/פְּנֵי/כֶ֑ם וְ/הָי֤וּ לָ/כֶם֙ לְ/צִדִּ֔ים וֵ/אלֹ֣הֵי/הֶ֔ם יִהְי֥וּ לָ/כֶ֖ם לְ/מוֹקֵֽשׁ׃",
+        "LXX": "κἀγὼ εἶπον Οὐ μὴ ἐξαρῶ αὐτοὺς ἐκ προσώπου ὑμῶν, καὶ ἔσονται ὑμῖν εἰς συνοχάς, καὶ οἱ θεοὶ αὐτῶν ἔσονται ὑμῖν εἰς σκάνδαλον.",
+        "VUL": "Quam ob rem nolui delere eos a facie vestra : ut habeatis hostes, et dii eorum sint vobis in ruinam.",
+        "SYN": "И потому говорю Я: [не стану уже переселять людей сих, которых Я хотел изгнать,] не изгоню их от вас, и будут они вам петлею, и боги их будут для вас сетью.",
+        "NEO": "Et moi aussi, j’ai dit : Je ne les chasserai pas devant vous ; ils seront à vos côtés, et leurs dieux vous seront un piège. »",
+        "NAB": "For now I tell you, I will not clear them out of your way; they shall oppose you and their gods shall become a snare for you.\"",
+        "VAT_ES": "Por eso les digo: «&iquest;No expulsaré a esos pueblos delante de ustedes: ellos no dejarán de hostigarlos, y sus dioses serán una trampa para ustedes».",
+        "CEI": "Perciò anch'io dico: non li scaccerò dinanzi a voi; ma essi vi staranno ai fianchi e i loro dei saranno per voi un inciampo\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י כְּ/דַבֵּ֞ר מַלְאַ֤ךְ יְהוָה֙ אֶת הַ/דְּבָרִ֣ים הָ/אֵ֔לֶּה אֶֽל כָּל בְּנֵ֖י יִשְׂרָאֵ֑ל וַ/יִּשְׂא֥וּ הָ/עָ֛ם אֶת קוֹלָ֖/ם וַ/יִּבְכּֽוּ׃",
+        "LXX": "καὶ ἐγένετο ὡς ἐλάλησεν ὁ ἄγγελος Κυρίου τοὺς λόγους τούτους πρὸς πάντας υἱοὺς Ἰσραήλ, καὶ ἐπῆραν ὁ λαὸς τὴν φωνὴν αὐτῶν καὶ ἔκλαυσαν.",
+        "VUL": "Cumque loqueretur angelus Domini hæc verba ad omnes filios Israël, elevaverunt ipsi vocem suam, et fleverunt.",
+        "SYN": "Когда Ангел Господень сказал слова сии всем сынам Израилевым, то народ поднял громкий вопль и заплакал.",
+        "NEO": "Comme l’ange de \\+w Yahweh|strong=\"H3068\"\\+w** disait ces paroles à tous les enfants d’Israël, le peuple éleva la voix et pleura.",
+        "NAB": "When the angel of the LORD had made these threats to all the Israelites, the people wept aloud;",
+        "VAT_ES": "Y Mientras el Angel del Señor dirigía estas palabras a los israelitas, el pueblo se puso a llorar a gritos.",
+        "CEI": "Appena l'angelo del Signore disse queste parole a tutti gli Israeliti, il popolo alzò la voce e pianse."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַֽ/יִּקְרְא֛וּ שֵֽׁם הַ/מָּק֥וֹם הַ/ה֖וּא בֹּכִ֑ים וַ/יִּזְבְּחוּ שָׁ֖ם לַֽ/יהוָֽה׃",
+        "LXX": "καὶ ἐπωνόμασαν τὸ ὄνομα τοῦ τόπου ἐκείνου Κλαυθμῶνες· καὶ ἐθυσίασαν ἐκεῖ τῷ κυρίῳ.",
+        "VUL": "Et vocatum est nomen loci illius, Locus flentium, sive lacrimarum : immolaveruntque ibi hostias Domino.",
+        "SYN": "От сего и называют то место Бохим. Там принесли они жертву Господу.",
+        "NEO": "Ils donnèrent à ce lieu le nom de Bokim, et ils y offrirent des sacrifices à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "and so that place came to be called Bochim. They offered sacrifice there to the LORD.",
+        "VAT_ES": "Por eso llamaron a aquel lugar Bojím –que significa «los que lloran»– y ofrecieron allí sacrificios al Señor.",
+        "CEI": "Chiamarono quel luogo Bochim e vi offrirono sacrifici al Signore."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יְשַׁלַּ֥ח יְהוֹשֻׁ֖עַ אֶת הָ/עָ֑ם וַ/יֵּלְכ֧וּ בְנֵֽי יִשְׂרָאֵ֛ל אִ֥ישׁ לְ/נַחֲלָת֖/וֹ לָ/רֶ֥שֶׁת אֶת הָ/אָֽרֶץ׃",
+        "LXX": "Καὶ ἐξαπέστειλεν Ἰησοῦς τὸν λαόν, καὶ ἦλθεν ἀνὴρ εἰς τὴν κληρονομίαν αὐτοῦ κατακληρονομῆσαι τὴν γῆν.",
+        "VUL": "Dimisit ergo Josue populum, et abierunt filii Israël unusquisque in possessionem suam, ut obtinerent eam :",
+        "SYN": "Когда Иисус распустил народ, и пошли сыны Израилевы, [каждый в свой дом и] каждый в свой удел, чтобы получить в наследие землю,",
+        "NEO": "Josué renvoya le peuple, et les enfants d’Israël s’en allèrent chacun dans son héritage pour prendre possession du pays.",
+        "NAB": "When Joshua dismissed the people, each Israelite went to take possession of his own hereditary land.",
+        "VAT_ES": "Josué despidió al pueblo, y los israelitas se fueron cada uno a su herencia, para tomar posesión del país.",
+        "CEI": "Quando Giosuè ebbe congedato il popolo, gli Israeliti se ne andarono, ciascuno nel suo territorio, a prendere in possesso il paese."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יַּעַבְד֤וּ הָ/עָם֙ אֶת יְהוָ֔ה כֹּ֖ל יְמֵ֣י יְהוֹשֻׁ֑עַ וְ/כֹ֣ל יְמֵ֣י הַ/זְּקֵנִ֗ים אֲשֶׁ֨ר הֶאֱרִ֤יכוּ יָמִים֙ אַחֲרֵ֣י יְהוֹשׁ֔וּעַ אֲשֶׁ֣ר רָא֗וּ אֵ֣ת כָּל מַעֲשֵׂ֤ה יְהוָה֙ הַ/גָּד֔וֹל אֲשֶׁ֥ר עָשָׂ֖ה לְ/יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐδούλευσεν ὁ λαὸς τῷ κυρίῳ πάσας τὰς ἡμέρας Ἰησοῦ καὶ πάσας τὰς ἡμέρας τῶν πρεσβυτέρων, ὅσοι ἐμακροημέρευσαν μετὰ Ἰησοῦ, ὅσοι ἔγνωσαν πᾶν τὸ ἔργον Κυρίου τὸ μέγα, ὅσα ἐποίησεν ἐν τῷ Ἰσραήλ.",
+        "VUL": "servieruntque Domino cunctis diebus ejus, et seniorum, qui longo post eum vixerunt tempore, et noverant omnia opera Domini quæ fecerat cum Israël.",
+        "SYN": "тогда народ служил Господу во все дни Иисуса и во все дни старейшин, которых жизнь продлилась после Иисуса и которые видели все великие дела Господни, какие Он сделал Израилю.",
+        "NEO": "Le peuple servit \\+w Yahweh|strong=\"H3068\"\\+w** pendant toute la vie de Josué, et pendant toute la vie des anciens qui survécurent à Josué et qui avaient vu toute la grande œuvre que \\+w Yahweh|strong=\"H3068\"\\+w** avait accomplie en faveur d’Israël.",
+        "NAB": "The people served the LORD during the entire lifetime of Joshua, and of those elders who outlived Joshua and who had seen all the great work which the LORD had done for Israel.",
+        "VAT_ES": "El pueblo sirvió al Señor mientras vivió Josué, y durante toda la vida de los ancianos que le sobrevivieron y que habían visto las hazañas del Señor en favor de Israel.",
+        "CEI": "Il popolo servì il Signore durante tutta la vita degli anziani che sopravvissero a Giosuè e che avevano visto tutte le grandi opere, che il Signore aveva fatte in favore d'Israele."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יָּ֛מָת יְהוֹשֻׁ֥עַ בִּן נ֖וּן עֶ֣בֶד יְהוָ֑ה בֶּן מֵאָ֥ה וָ/עֶ֖שֶׂר שָׁנִֽים׃",
+        "LXX": "καὶ ἐτελεύτησεν Ἰησοῦς υἱὸς Ναυὴ δοῦλος Κυρίου, υἱὸς ἑκατὸν δέκα ἐτῶν.",
+        "VUL": "Mortuus est autem Josue filius Nun, famulus Domini, centum et decem annorum,",
+        "SYN": "Но когда умер Иисус, сын Навин, раб Господень, будучи ста десяти лет,",
+        "NEO": "Josué, fils de Nun, serviteur de \\+w Yahweh|strong=\"H3068\"\\+w**, mourut âgé de cent dix ans.",
+        "NAB": "Joshua, son of Nun, the servant of the LORD, was a hundred and ten years old when he died;",
+        "VAT_ES": "Josué, hijo de Nun, el servidor del Señor, murió a la edad de ciento diez años.",
+        "CEI": "Poi Giosuè, figlio di Nun, servo del Signore, morì a centodieci anni"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּקְבְּר֤וּ אוֹת/וֹ֙ בִּ/גְב֣וּל נַחֲלָת֔/וֹ בְּ/תִמְנַת חֶ֖רֶס בְּ/הַ֣ר אֶפְרָ֑יִם מִ/צְּפ֖וֹן לְ/הַר גָּֽעַשׁ׃",
+        "LXX": "καὶ ἔθαψαν αὐτὸν ἐν ὁρίῳ τῆς κληρονομίας αὐτοῦ ἐν Θαμναθάρες ἐν ὄρει Ἐφράιμ, ἀπὸ βορρᾶ τοῦ ὄρους Γάας.",
+        "VUL": "et sepelierunt eum in finibus possessionis suæ in Thamnathsare in monte Ephraim, a septentrionali plaga montis Gaas.",
+        "SYN": "и похоронили его в пределе удела его в Фамнаф-Сараи, на горе Ефремовой, на север от горы Гааша;",
+        "NEO": "On l’ensevelit dans le territoire qu’il avait eu en partage, à Thamnath-Hérès, dans la montagne d’Ephraïm, au nord du mont Gaas.",
+        "NAB": "and they buried him within the borders of his heritage at Timnath-heres in the mountain region of Ephraim north of Mount Gaash.",
+        "VAT_ES": "Lo enterraron en el territorio de su propiedad, en Timnat Séraj, en la montaña de Efraím, al norte del monte Gaás.",
+        "CEI": "e fu sepolto nel territorio, che gli era toccato a Timnat-Cheres sulle montagne di Efraim, a settentrione del monte Gaas."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/גַם֙ כָּל הַ/דּ֣וֹר הַ/ה֔וּא נֶאֶסְפ֖וּ אֶל אֲבוֹתָ֑י/ו וַ/יָּקָם֩ דּ֨וֹר אַחֵ֜ר אַחֲרֵי/הֶ֗ם אֲשֶׁ֤ר לֹא יָֽדְעוּ֙ אֶת יְהוָ֔ה וְ/גַם֙ אֶת הַֽ/מַּעֲשֶׂ֔ה אֲשֶׁ֥ר עָשָׂ֖ה לְ/יִשְׂרָאֵֽל׃",
+        "LXX": "καί γε πᾶσα ἡ γενεὰ ἐκείνη προσετέθη πρὸς τοὺς πατέρας αὐτῶν· καὶ ἀνέστη γενεὰ ἑτέρα μετ’ αὐτούς, οἳ οὐκ ἔγνωσαν τὸν κύριον καί γε τὸ ἔργον ὃ ἐποίησεν ἐν τῷ Ἰσραήλ.",
+        "VUL": "Omnisque illa generatio congregata est ad patres suos : et surrexerunt alii, qui non noverant Dominum, et opera quæ fecerat cum Israël.",
+        "SYN": "и когда весь народ оный отошел к отцам своим, и восстал после них другой род, который не знал Господа и дел Его, какие Он делал Израилю, -",
+        "NEO": "Toute cette génération fut aussi recueillie auprès de ses pères, et il s’éleva après elle une autre génération qui ne connaissait pas \\+w Yahweh|strong=\"H3068\"\\+w**, ni l’œuvre qu’il avait faite en faveur d’Israël.",
+        "NAB": "But once the rest of that generation were gathered to their fathers, and a later generation arose that did not know the LORD, or what he had done for Israel,",
+        "VAT_ES": "Y cuando toda aquella generación fue a reunirse con sus padres, surgió una nueva generación que no conocía al Señor ni la obra que había hecho en favor de Israel.",
+        "CEI": "Anche tutta quella generazione fu riunita ai suoi padri; dopo di essa ne sorse un'altra, che non conosceva il Signore, né le opere che aveva compiute in favore d'Israele."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲשׂ֧וּ בְנֵֽי יִשְׂרָאֵ֛ל אֶת הָ/רַ֖ע בְּ/עֵינֵ֣י יְהוָ֑ה וַ/יַּעַבְד֖וּ אֶת הַ/בְּעָלִֽים׃",
+        "LXX": "Καὶ ἐποίησαν οἱ υἱοὶ Ἰσραὴλ τὸ πονηρὸν ἐνώπιον Κυρίου, καὶ ἐλάτρευσαν τοῖς Βααλείμ.",
+        "VUL": "Feceruntque filii Israël malum in conspectu Domini, et servierunt Baalim.",
+        "SYN": "тогда сыны Израилевы стали делать злое пред очами Господа и стали служить Ваалам;",
+        "NEO": "Les enfants d’Israël firent ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**, et ils servirent les Baals.",
+        "NAB": "the Israelites offended the LORD by serving the Baals.",
+        "VAT_ES": "Los israelitas hicieron lo que es malo a los ojos del Señor y sirvieron a los Baales.",
+        "CEI": "Gli Israeliti fecero ciò che è male agli occhi del Signore e servirono i Baal;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יַּעַזְב֞וּ אֶת יְהוָ֣ה אֱלֹהֵ֣י אֲבוֹתָ֗/ם הַ/מּוֹצִ֣יא אוֹתָ/ם֮ מֵ/אֶ֣רֶץ מִצְרַיִם֒ וַ/יֵּלְכ֞וּ אַחֲרֵ֣י אֱלֹהִ֣ים אֲחֵרִ֗ים מֵ/אֱלֹהֵ֤י הָֽ/עַמִּים֙ אֲשֶׁר֙ סְבִיב֣וֹתֵי/הֶ֔ם וַ/יִּֽשְׁתַּחֲו֖וּ לָ/הֶ֑ם וַ/יַּכְעִ֖סוּ אֶת יְהוָֽה׃",
+        "LXX": "καὶ ἐνκατέλιπον τὸν κύριον τὸν θεὸν τῶν πατέρων αὐτῶν τὸν ἐξαγαγόντα αὐτοὺς ἐκ γῆς Αἰγύπτου, καὶ ἐπορεύθησαν ὀπίσω θεῶν ἑτέρων ἀπὸ τῶν θεῶν τῶν ἐθνῶν τῶν περικύκλῳ αὐτῶν, καὶ προσεκύνησαν αὐτοῖς· καὶ παρώργισαν τὸν κύριον",
+        "VUL": "Ac dimiserunt Dominum Deum patrum suorum, qui eduxerat eos de terra Ægypti, et secuti sunt deos alienos, deosque populorum, qui habitabant in circuitu eorum, et adoraverunt eos : et ad iracundiam concitaverunt Dominum,",
+        "SYN": "оставили Господа Бога отцов своих, Который вывел их из земли Египетской, и обратились к другим богам, богам народов, окружавших их, и стали поклоняться им, и раздражили Господа;",
+        "NEO": "Ils abandonnèrent \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu de leurs pères, qui les avait fait sortir du pays d’Égypte, et ils allèrent après d’autres dieux, d’entre les dieux des peuples qui les entouraient ; ils se prosternèrent devant eux et ils irritèrent \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Abandoning the LORD, the God of their fathers, who had led them out of the land of Egypt, they followed the other gods of the various nations around them, and by their worship of these gods provoked the LORD.",
+        "VAT_ES": "Abandonaron al Señor, el Dios de sus padres, que los había hecho salir de Egipto; fueron detrás de otros dioses –los dioses de los pueblos vecinos– y se postraron delante de ellos, provocando así la indignación del Señor.",
+        "CEI": "abbandonarono il Signore, Dio dei loro padri, che li aveva fatti uscire dal paese d'Egitto, e seguirono altri dei di quei popoli che avevano intorno: si prostrarono davanti a loro e provocarono il Signore,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יַּעַזְב֖וּ אֶת יְהוָ֑ה וַ/יַּעַבְד֥וּ לַ/בַּ֖עַל וְ/לָ/עַשְׁתָּרֽוֹת׃",
+        "LXX": "καὶ ἐγκατέλιπον αὐτόν, καὶ ἐλάτρευσαν τῷ Βάαλ καὶ ταῖς Ἀστάρταις.",
+        "VUL": "dimittentes eum, et servientes Baal et Astaroth.",
+        "SYN": "оставили Господа и стали служить Ваалу и Астартам.",
+        "NEO": "Abandonnant \\+w Yahweh|strong=\"H3068\"\\+w**, ils servirent Baal et les Astartés.",
+        "NAB": "Because they had thus abandoned him and served Baal and the Ashtaroth,",
+        "VAT_ES": "Abandonaron al Señor para servir a Baal y a Astarté.",
+        "CEI": "abbandonarono il Signore e servirono Baal e Astarte."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּֽחַר אַ֤ף יְהוָה֙ בְּ/יִשְׂרָאֵ֔ל וַֽ/יִּתְּנֵ/ם֙ בְּ/יַד שֹׁסִ֔ים וַ/יָּשֹׁ֖סּוּ אוֹתָ֑/ם וַֽ/יִּמְכְּרֵ֞/ם בְּ/יַ֤ד אֽוֹיְבֵי/הֶם֙ מִ/סָּבִ֔יב וְ/לֹֽא יָכְל֣וּ ע֔וֹד לַ/עֲמֹ֖ד לִ/פְנֵ֥י אוֹיְבֵי/הֶֽם׃",
+        "LXX": "καὶ ὠργίσθη θυμῷ Κύριος ἐν τῷ Ἰσραήλ, καὶ παρέδωκεν αὐτοὺς εἰς χεῖρας προνομευόντων, καὶ κατεπρονόμευσαν αὐτούς· καί ἀπέδοτο αὐτοὺς ἐν χερσὶ τῶν ἐχθρῶν αὐτῶν κυκλόθεν, καὶ οὐκ ἠδυνήθησαν ἔτι ἀντιστῆναι κατὰ πρόσωπον τῶν ἐχθρῶν αὐτῶν",
+        "VUL": "Iratusque Dominus contra Israël, tradidit eos in manus diripientium : qui ceperunt eos, et vendiderunt hostibus qui habitabant per gyrum : nec potuerunt resistere adversariis suis,",
+        "SYN": "И воспылал гнев Господень на Израиля, и предал их в руки грабителей, и грабили их; и предал их в руки врагов, окружавших их, и не могли уже устоять пред врагами своими.",
+        "NEO": "La colère de \\+w Yahweh|strong=\"H3068\"\\+w** s’enflamma contre Israël ; il les livra aux mains des pillards qui les pillèrent, et il les vendit entre les mains de leurs ennemis d’alentour,et ils ne purent plus tenir devant leurs ennemis.",
+        "NAB": "the anger of the LORD flared up against Israel, and he delivered them over to plunderers who despoiled them. He allowed them to fall into the power of their enemies round about whom they were no longer able to withstand.",
+        "VAT_ES": "Por eso, la ira del Señor se encendió contra Israel: él los puso en manos de salteadores, que los despojaron; los entregó a los enemigos que tenían a su alrededor, y no pudieron oponerles resistencia.",
+        "CEI": "Allora si accese l'ira del Signore contro Israele e li mise in mano a razziatori, che li depredarono; li vendette ai nemici che stavano loro intorno ed essi non potevano più tener testa ai nemici."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "בְּ/כֹ֣ל אֲשֶׁ֣ר יָצְא֗וּ יַד יְהוָה֙ הָיְתָה בָּ֣/ם לְ/רָעָ֔ה כַּֽ/אֲשֶׁר֙ דִּבֶּ֣ר יְהוָ֔ה וְ/כַ/אֲשֶׁ֛ר נִשְׁבַּ֥ע יְהוָ֖ה לָ/הֶ֑ם וַ/יֵּ֥צֶר לָ/הֶ֖ם מְאֹֽד׃",
+        "LXX": "ἐν πᾶσιν οἷς ἐξεπορεύοντο. καὶ χεὶρ Κυρίου ἦν ἐπ’ αὐτοὺς εἰς κακά, καθὼς ἐλάλησεν Κύριος, καὶ καθὼς ὤμοσεν Κύριος αὐτοῖς, καὶ ἐξέθλιψεν αὐτοὺς σφόδρα.",
+        "VUL": "sed quocumque pergere voluissent, manus Domini super eos erat, sicut locutus est, et juravit eis, et vehementer afflicti sunt.",
+        "SYN": "Куда они ни пойдут, рука Господня везде была им во зло, как говорил им Господь и как клялся им Господь. И им было весьма тесно.",
+        "NEO": "Partout où ils allaient, la main de \\+w Yahweh|strong=\"H3068\"\\+w** était contre eux pour leur malheur, comme \\+w Yahweh|strong=\"H3068\"\\+w** l’avait dit, comme \\+w Yahweh|strong=\"H3068\"\\+w** le leur avait juré, et ils en vinrent à une grande détresse.",
+        "NAB": "Whatever they undertook, the LORD turned into disaster for them, as in his warning he had sworn he would do, till they were in great distress.",
+        "VAT_ES": "En todas las campañas, la mano del Señor se ponía en contra de ellos para hacerles mal, como el mismo Señor lo había dicho y jurado. Así encontraron en una situación muy angustiosa.",
+        "CEI": "Dovunque uscivano in campo, la mano del Signore era contro di loro, come il Signore aveva detto, come il Signore aveva loro giurato: furono ridotti all'estremo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥קֶם יְהוָ֖ה שֹֽׁפְטִ֑ים וַ/יּ֣וֹשִׁיע֔וּ/ם מִ/יַּ֖ד שֹׁסֵי/הֶֽם׃",
+        "LXX": "καὶ ἤγειρεν Κύριος κριτάς, καὶ ἔσωσεν αὐτοὺς Κύριος ἐκ χειρὸς τῶν προνομευόντων αὐτούς.",
+        "VUL": "Suscitavitque Dominus judices, qui liberarent eos de vastantium manibus : sed nec eos audire voluerunt,",
+        "SYN": "И воздвигал [им] Господь судей, которые спасали их от рук грабителей их;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** suscitait des juges qui les délivraient de la main de ceux qui les pillaient.",
+        "NAB": "Even when the LORD raised up judges to deliver them from the power of their despoilers,",
+        "VAT_ES": "Entonces el Señor suscitaba jueces, que salvaban a los israelitas del poder de los salteadores.",
+        "CEI": "Allora il Signore fece sorgere dei giudici, che li liberavano dalle mani di quelli che li spogliavano."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/גַ֤ם אֶל שֹֽׁפְטֵי/הֶם֙ לֹ֣א שָׁמֵ֔עוּ כִּ֣י זָנ֗וּ אַֽחֲרֵי֙ אֱלֹהִ֣ים אֲחֵרִ֔ים וַ/יִּֽשְׁתַּחֲו֖וּ לָ/הֶ֑ם סָ֣רוּ מַהֵ֗ר מִן הַ/דֶּ֜רֶךְ אֲשֶׁ֨ר הָלְכ֧וּ אֲבוֹתָ֛/ם לִ/שְׁמֹ֥עַ מִצְוֺת יְהוָ֖ה לֹא עָ֥שׂוּ כֵֽן׃",
+        "LXX": "καὶ γε τῶν κριτῶν οὐχ ὑπήκουσαν, ὅτι ἐξεπόρνευσαν ὀπίσω θεῶν ἑτέρων καὶ προσεκύνησαν αὐτοῖς, καὶ ἐξέκλιναν ταχὺ ἐκ τῆς ὁδοῦ ἧς ἐπορεύθησαν οἱ πατέρες αὐτῶν τοῦ εἰσακούειν τῶν λόγων Κυρίου· οὐκ ἐποίησαν οὕτως.",
+        "VUL": "fornicantes cum diis alienis, et adorantes eos. Cito deseruerunt viam, per quam ingressi fuerant patres eorum : et audientes mandata Domini, omnia fecere contraria.",
+        "SYN": "но и судей они не слушали, а ходили блудно вслед других богов и поклонялись им [и раздражали Господа], скоро уклонялись от пути, коим ходили отцы их, повинуясь заповедям Господним. Они так не делали.",
+        "NEO": "Mais ils n’écoutèrent pas leurs juges, car ils se prostituèrent à d’autres dieux et se prosternèrent devant eux. Ils se détournèrent promptement de la voie qu’avaient suivie leurs pères en obéissant aux commandements de \\+w Yahweh|strong=\"H3068\"\\+w** ; ils ne firent pas de même.",
+        "NAB": "they did not listen to their judges, but abandoned themselves to the worship of other gods. They were quick to stray from the way their fathers had taken, and did not follow their example of obedience to the commandments of the LORD.",
+        "VAT_ES": "Pero los israelitas no escuchaban a sus jueces, sino que se prostituían, yendo detrás de otros dioses y postrándose delante de ellos. Se desviaban muy pronto del camino seguido por sus padres, que habían obedecido los mandamientos del Señor. Ellos, en cambio, no hacían lo mismo.",
+        "CEI": "Ma neppure ai loro giudici davano ascolto, anzi si prostituivano ad altri dei e si prostravano davanti a loro. Abbandonarono ben presto la via battuta dai loro padri, i quali avevano obbedito ai comandi del Signore: essi non fecero così."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/כִֽי הֵקִ֨ים יְהוָ֥ה לָ/הֶם֮ שֹֽׁפְטִים֒ וְ/הָיָ֤ה יְהוָה֙ עִם הַ/שֹּׁפֵ֔ט וְ/הֽוֹשִׁיעָ/ם֙ מִ/יַּ֣ד אֹֽיְבֵי/הֶ֔ם כֹּ֖ל יְמֵ֣י הַ/שּׁוֹפֵ֑ט כִּֽי יִנָּחֵ֤ם יְהוָה֙ מִ/נַּֽאֲקָתָ֔/ם מִ/פְּנֵ֥י לֹחֲצֵי/הֶ֖ם וְ/דֹחֲקֵי/הֶֽם׃",
+        "LXX": "καὶ ὅτι ἤγειρεν Κύριος κριτὰς αὐτοῖς, καὶ ἦν Κύριος μετὰ τοῦ κριτοῦ, καὶ ἔσωσεν αὐτοὺς ἐκ χειρὸς ἐχθρῶν αὐτῶν πάσας τὰς ἡμέρας τοῦ κριτοῦ· ὅτι παρεκλήθη Κύριος ἀπὸ τοῦ στεναγμοῦ αὐτῶν ἀπὸ προσώπου τῶν πολιορκούντων αὐτοὺς καὶ ἐκθλιβόντων αὐτούς.",
+        "VUL": "Cumque Dominus judices suscitaret, in diebus eorum flectebatur misericordia, et audiebat afflictorum gemitus, et liberabat eos de cæde vastantium.",
+        "SYN": "Когда Господь воздвигал им судей, то Сам Господь был с судьею и спасал их от врагов их во все дни судьи: ибо жалел _их_ Господь, слыша стон их от угнетавших и притеснявших их.",
+        "NEO": "Lorsque \\+w Yahweh|strong=\"H3068\"\\+w** leur suscitait des juges, \\+w Yahweh|strong=\"H3068\"\\+w** était avec le juge et il les délivrait de la main de leurs ennemis, tant que le juge vivait ; car \\+w Yahweh|strong=\"H3068\"\\+w** se repentait à cause de leurs gémissements devant ceux qui les opprimaient et les tourmentaient.",
+        "NAB": "Whenever the LORD raised up judges for them, he would be with the judge and save them from the power of their enemies as long as the judge lived; it was thus the LORD took pity on their distressful cries of affliction under their oppressors.",
+        "VAT_ES": "Cuando el Señor les suscitaba jueces, estaba con el juez y los salvaba de las manos de sus enemigos mientras vivía el juez, porque se compadecía de los gemidos que les provocaban sus opresores y perseguidores.",
+        "CEI": "Quando il Signore suscitava loro dei giudici, il Signore era con il giudice e li liberava dalla mano dei loro nemici durante tutta la vita del giudice; perché il Signore si lasciava commuovere dai loro gemiti sotto il giogo dei loro oppressori."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֣ה בְּ/מ֣וֹת הַ/שּׁוֹפֵ֗ט יָשֻׁ֨בוּ֙ וְ/הִשְׁחִ֣יתוּ מֵֽ/אֲבוֹתָ֔/ם לָ/לֶ֗כֶת אַֽחֲרֵי֙ אֱלֹהִ֣ים אֲחֵרִ֔ים לְ/עָבְדָ֖/ם וּ/לְ/הִשְׁתַּחֲוֺ֣ת לָ/הֶ֑ם לֹ֤א הִפִּ֨ילוּ֙ מִ/מַּ֣עַלְלֵי/הֶ֔ם וּ/מִ/דַּרְכָּ֖/ם הַ/קָּשָֽׁה׃",
+        "LXX": "καὶ ἐγένετο ὡς ἀπέθνησκεν ὁ κριτής, καὶ ἀπέστρεψαν καὶ πάλιν διέφθειραν ὑπέρ τοὺς πατέρας αὐτῶν πορεύεσθαι ὀπίσω θεῶν ἑτέρων, λατρεύειν αὐτοῖς καὶ προσκυνεῖν αὐτοῖς· οὐκ ἀπέριψαν τὰ ἐπιτηδεύματα αὐτῶν καὶ τὰς ὁδοὺς αὐτῶν τὰς σκληράς.",
+        "VUL": "Postquam autem mortuus esset judex, revertebantur, et multo faciebant pejora quam fecerant patres eorum, sequentes deos alienos, servientes eis, et adorantes illos. Non dimiserunt adinventiones suas, et viam durissimam per quam ambulare consueverunt.",
+        "SYN": "Но как скоро умирал судья, они опять делали хуже отцов своих, уклоняясь к другим богам, служа им и поклоняясь им. Не отставали от дел своих и [не отступали] от стропотного пути своего.",
+        "NEO": "Mais, à la mort du juge, ils se corrompaient de nouveau plus que leurs pères, en allant après d’autres dieux pour les servir et se prosterner devant eux ; ils n’abandonnaient pas leurs errements et leur opiniâtreté.",
+        "NAB": "But when the judge died, they would relapse and do worse than their fathers, following other gods in service and worship, relinquishing none of their evil practices or stubborn conduct.",
+        "VAT_ES": "Pero cuando moría el juez, volvían a pervertirse más aún que sus antepasados: iban detrás de otros dioses para servirlos y postrarse delante de ellos, sin renunciar en nada a sus malas acciones y a su conducta obstinada.",
+        "CEI": "Ma quando il giudice moriva, tornavano a corrompersi più dei loro padri, seguendo altri dei per servirli e prostrarsi davanti a loro, non desistendo dalle loro pratiche e dalla loro condotta ostinata."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּֽחַר אַ֥ף יְהוָ֖ה בְּ/יִשְׂרָאֵ֑ל וַ/יֹּ֗אמֶר יַעַן֩ אֲשֶׁ֨ר עָבְר֜וּ הַ/גּ֣וֹי הַ/זֶּ֗ה אֶת בְּרִיתִ/י֙ אֲשֶׁ֣ר צִוִּ֣יתִי אֶת אֲבוֹתָ֔/ם וְ/לֹ֥א שָׁמְע֖וּ לְ/קוֹלִֽ/י׃",
+        "LXX": "καὶ ὠργίσθη θυμῷ Κύριος ἐν τῷ Ἰσραὴλ καὶ εἶπεν Ἀνθ’ ὧν ὅσα ἐγκατέλιπον τὸ ἔθνος τοῦτο τὴν διαθήκην μου ἥν ἐνετειλάμην τοῖς πατράσιν αὐτῶν, καὶ οὐκ εἰσήκουσαν τῆς φωνῆς μου,",
+        "VUL": "Iratusque est furor Domini in Israël, et ait : Quia irritum fecit gens ista pactum meum, quod pepigeram cum patribus eorum, et vocem meam audire contempsit :",
+        "SYN": "И воспылал гнев Господень на Израиля, и сказал Он: за то, что народ сей преступает завет Мой, который Я поставил с отцами их, и не слушает гласа Моего,",
+        "NEO": "Alors la colère de \\+w Yahweh|strong=\"H3068\"\\+w** s’enflamma contre Israël, et il dit : « Puisque cette nation a transgressé mon alliance que j’avais prescrite à ses pères, et puisqu’ils n’ont pas obéi à ma voix,",
+        "NAB": "In his anger toward Israel the LORD said, \"Inasmuch as this nation has violated my covenant which I enjoined on their fathers, and has disobeyed me,",
+        "VAT_ES": "La ira del Señor se encendió contra Israel, y él les dijo: «Ya que este pueblo ha quebrantado mi alianza, la que yo prescribí a sus padres, y no ha escuchado mi voz,",
+        "CEI": "Perciò l'ira del Signore si accese contro Israele e disse: \"Poiché questa nazione ha violato l'alleanza che avevo stabilita con i loro padri e non hanno obbedito alla mia voce,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "גַּם אֲנִי֙ לֹ֣א אוֹסִ֔יף לְ/הוֹרִ֥ישׁ אִ֖ישׁ מִ/פְּנֵי/הֶ֑ם מִן הַ/גּוֹיִ֛ם אֲשֶׁר עָזַ֥ב יְהוֹשֻׁ֖עַ וַ/יָּמֹֽת׃",
+        "LXX": "καί γε ἐγὼ οὐ προσθήσω τοῦ ἐξᾶραι ἄνδρα ἐκ προσώπου αὐτῶν ἀπὸ τῶν ἐθνῶν ὧν κατέλιπεν Ἰησοῦς υἱὸς Ναυὴ ἐν τῇ γῇ· καὶ ἀφῆκεν",
+        "VUL": "et ego non delebo gentes, quas dimisit Josue, et mortuus est :",
+        "SYN": "и Я не стану уже изгонять от них ни одного из тех народов, которых оставил Иисус, [сын Навин, на земле,] когда умирал, -",
+        "NEO": "moi, je ne chasserai plus devant eux une seule des nations que Josué a laissées quand il est mort,",
+        "NAB": "I for my part will not clear away for them any more of the nations which Joshua left when he died.\"",
+        "VAT_ES": "tampoco yo arrojaré de su presencia a ninguna de las naciones que dejó Josué cuando murió».",
+        "CEI": "nemmeno io scaccerò più dinanzi a loro nessuno dei popoli, che Giosuè lasciò quando morì."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "לְמַ֛עַן נַסּ֥וֹת בָּ֖/ם אֶת יִשְׂרָאֵ֑ל הֲ/שֹׁמְרִ֣ים הֵם֩ אֶת דֶּ֨רֶךְ יְהוָ֜ה לָ/לֶ֣כֶת בָּ֗/ם כַּ/אֲשֶׁ֛ר שָׁמְר֥וּ אֲבוֹתָ֖/ם אִם לֹֽא׃",
+        "LXX": "τοῦ πειράσαι ἐν αὐτοῖς τὸν Ἰσραήλ, εἰ φυλάσσονται τὴν ὁδὸν Κυρίου πορεύεσθαι ἐν αὐτῇ, ὅν τρόπον ἐφύλαξαν οἱ πατέρες αὐτῶν, ἢ οὔ.",
+        "VUL": "ut in ipsis experiar Israël, utrum custodiant viam Domini, et ambulent in ea, sicut custodierunt patres eorum, an non.",
+        "SYN": "чтобы искушать ими Израиля: станут ли они держаться пути Господня и ходить по нему, как держались отцы их, или нет?",
+        "NEO": "afin de mettre par elles Israël à l’épreuve, pour voir s’ils seront attentifs, ou non, à suivre la voie de \\+w Yahweh|strong=\"H3068\"\\+w**, comme leurs pères y ont été attentifs. »",
+        "NAB": "Through these nations the Israelites were to be made to prove whether or not they would keep to the way of the LORD and continue in it as their fathers had done;",
+        "VAT_ES": "Esto lo hacía para probar a Israel por medio de ellas, y para ver si seguían el camino del Señor, como lo habían seguido sus padres.",
+        "CEI": "Così, per mezzo loro, metterò alla prova Israele, per vedere se cammineranno o no sulla via del Signore, come fecero i loro padri\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יַּנַּ֤ח יְהוָה֙ אֶת הַ/גּוֹיִ֣ם הָ/אֵ֔לֶּה לְ/בִלְתִּ֥י הוֹרִישָׁ֖/ם מַהֵ֑ר וְ/לֹ֥א נְתָנָ֖/ם בְּ/יַד יְהוֹשֻֽׁעַ׃",
+        "LXX": "καὶ ἀφήσει Κύριος τὰ ἔθνη ταῦτα τοῦ μὴ ἐξᾶραι αὐτὰ τὸ τάχος, καὶ οὐ παρέδωκεν αὐτὰ ἐν χειρὶ Ἰησοῦ.",
+        "VUL": "Dimisit ergo Dominus omnes nationes has, et cito subvertere noluit, nec tradidit in manus Josue.",
+        "SYN": "И оставил Господь народы сии и не изгнал их вскоре и не предал их в руки Иисуса.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** laissa en repos, sans se hâter de les chasser, ces nations qu’il n’avait pas livrées entre les mains de Josué.",
+        "NAB": "therefore the LORD allowed them to remain instead of expelling them immediately, or delivering them into the power of Israel.",
+        "VAT_ES": "Por eso el Señor, en lugar de expulsar inmediatamente a esas naciones, las dejó en paz y no las entregó en manos de Josué.",
+        "CEI": "Il Signore lasciò quelle nazioni senza affrettarsi a scacciarle e non le mise nelle mani di Giosuè."
+      }
+    }
+  }
+}

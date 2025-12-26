@@ -1,0 +1,755 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MARC_001",
+  "book_key": "MARC",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Ἀρχὴ τοῦ εὐαγγελίου Ἰησοῦ χριστοῦ, υἱοῦ τοῦ θεοῦ.",
+        "VUL": "Initium Evangelii Jesu Christi, Filii Dei.",
+        "SYN": "Начало Евангелия Иисуса Христа, Сына Божия,",
+        "NEO": "Commencement de l’Évangile de Jésus-Christ, Fils de Dieu+ 1:1 \\+it Fils de Dieu\\+it* n’est pas attesté par tous les témoins*.",
+        "NAB": "The beginning of the gospel of Jesus Christ (the Son of God).",
+        "VAT_ES": "Comienzo de la Buena Noticia de Jesús, Mesías, Hijo de Dios.",
+        "CEI": "Passato il sabato, Maria di Màgdala, Maria di Giacomo e Salome comprarono oli aromatici per andare a imbalsamare Gesù."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "¶Ὡς γέγραπται ἐν τοῖς προφήταις, Ἰδού, ἐγὼ ἀποστέλλω τὸν ἄγγελόν μου πρὸ προσώπου σου, ὃς κατασκευάσει τὴν ὁδόν σου ἔμπροσθέν σου.",
+        "VUL": "Sicut scriptum est in Isaia propheta : [Ecce ego mitto angelum meum ante faciem tuam,/ qui præparabit viam tuam ante te./",
+        "SYN": "как написано у пророков: вот, Я посылаю Ангела Моего пред лицем Твоим, который приготовит путь Твой пред Тобою.",
+        "NEO": "Selon ce qui est écrit dans le prophète Isaïe : « \\+w Voici|strong=\"G3708\"\\+w* que \\+w j|strong=\"G1473\"\\+w*’\\+w envoie|strong=\"G6493588\"\\+w* \\+w mon|strong=\"G1473\"\\+w* \\+w messager|strong=\"G0032\"\\+w* \\+w devant|strong=\"G4253\"\\+w* \\+w toi|strong=\"G4771,G4383\"\\+w*+ 1:2 Litt. \\+it ta face\\+it*.*, \\+w pour|strong=\"G37392\"\\+w* te \\+w frayer|strong=\"G2680\"\\+w* \\+w ton|strong=\"G4771,G4771\"\\+w* \\+w chemin|strong=\"G3598,G1715\"\\+w*.*",
+        "NAB": "As it is written in Isaiah the prophet: \"Behold, I am sending my messenger ahead of you; he will prepare your way.",
+        "VAT_ES": "Como está escrito en el libro del profeta Isaías: \"Mira, yo envío a mi mensajero delante de ti para prepararte el camino.",
+        "CEI": "Di buon mattino, il primo giorno dopo il sabato, vennero al sepolcro al levar del sole."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Φωνὴ βοῶντος ἐν τῇ ἐρήμῳ, Ἑτοιμάσατε τὴν ὁδὸν κυρίου· εὐθείας ποιεῖτε τὰς τρίβους αὐτοῦ.",
+        "VUL": "Vox clamantis in deserto :/ Parate viam Domini, rectas facite semitas ejus.]",
+        "SYN": "Глас вопиющего в пустыне: приготовьте путь Господу, прямыми сделайте стези Ему.",
+        "NEO": "Une \\+w voix|strong=\"G5456\"\\+w* \\+w crie|strong=\"G0994\"\\+w* \\+w dans|strong=\"G1722\"\\+w* le \\+w désert|strong=\"G2048\"\\+w* : Préparez le \\+w chemin|strong=\"G3588,G3598\"\\+w* du \\+w Seigneur|strong=\"G2962\"\\+w*, \\+w aplanissez|strong=\"G5147,G2117\"\\+w* \\+w ses|strong=\"G3588\"\\+w* \\+w sentiers|strong=\"G5147\"\\+w*.*+ 1:3 2-3. La première partie de la citation est de Malachie (iii, 1), la seconde (vers. 3) d’Isaïe (xl, 3).* »",
+        "NAB": "A voice of one crying out in the desert: 'Prepare the way of the Lord, make straight his paths.'\"",
+        "VAT_ES": "Una voz grita en el desierto: Preparen el camino del Señor, allanen sus senderos\",",
+        "CEI": "Esse dicevano tra loro: \"Chi ci rotolerà via il masso dall'ingresso del sepolcro?\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ἐγένετο Ἰωάννης βαπτίζων ἐν τῇ ἐρήμῳ, καὶ κηρύσσων βάπτισμα μετανοίας εἰς ἄφεσιν ἁμαρτιῶν.",
+        "VUL": "Fuit Joannes in deserto baptizans, et prædicans baptismum pnitentiæ in remissionem peccatorum.",
+        "SYN": "Явился Иоанн, крестя в пустыне и проповедуя крещение покаяния для прощения грехов.",
+        "NEO": "Jean parut, baptisant dans le désert+ 1:4 \\+it Au désert de Judée\\+it*, dans la région voisine du Jourdain.*, et prêchant le baptême de pénitence pour la rémission des péchés.",
+        "NAB": "John (the) Baptist appeared in the desert proclaiming a baptism of repentance for the forgiveness of sins.",
+        "VAT_ES": "así se presentó Juan el Bautista en el desierto, proclamando un bautismo de conversión para el perdón de los pecados.",
+        "CEI": "Ma, guardando, videro che il masso era già stato rotolato via, benché fosse molto grande."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Καὶ ἐξεπορεύετο πρὸς αὐτὸν πᾶσα ἡ Ἰουδαία χώρα, καὶ οἱ Ἱεροσολυμῖται, καὶ ἐβαπτίζοντο πάντες ἐν τῷ Ἰορδάνῃ ποταμῷ ὑπ’ αὐτοῦ, ἐξομολογούμενοι τὰς ἁμαρτίας αὐτῶν.",
+        "VUL": "Et egrediebatur ad eum omnis Judææ regio, et Jerosolymitæ universi, et baptizabantur ab illo in Jordanis flumine, confitentes peccata sua.",
+        "SYN": "И выходили к нему вся страна Иудейская и Иерусалимляне, и крестились от него все в реке Иордане, исповедуя грехи свои.",
+        "NEO": "Et tout le pays de Judée et tous les habitants de Jérusalem venaient* à lui, et, confessant leurs péchés, ils recevaient de lui le baptême dans le fleuve du Jourdain.",
+        "NAB": "People of the whole Judean countryside and all the inhabitants of Jerusalem were going out to him and were being baptized by him in the Jordan River as they acknowledged their sins.",
+        "VAT_ES": "Toda la gente de Judea y todos los habitantes de Jerusalén acudían a él, y se hacían bautizar en las aguas del Jordán, confesando sus pecados.",
+        "CEI": "Entrando nel sepolcro, videro un giovane, seduto sulla destra, vestito d'una veste bianca, ed ebbero paura."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ἦν δὲ ὁ Ἰωάννης ἐνδεδυμένος τρίχας καμήλου, καὶ ζώνην δερματίνην περὶ τὴν ὀσφὺν αὐτοῦ, καὶ ἐσθίων ἀκρίδας καὶ μέλι ἄγριον.",
+        "VUL": "Et erat Joannes vestitus pilis cameli, et zona pellicea circa lumbos ejus, et locustas et mel silvestre edebat.",
+        "SYN": "Иоанн же носил одежду из верблюжьего волоса и пояс кожаный на чреслах своих, и ел акриды и дикий мед.",
+        "NEO": "Or, Jean était vêtu de poils de chameau ; et avait autour de ses reins une ceinture de cuir, et se nourrissait de sauterelles et de miel sauvage.",
+        "NAB": "John was clothed in camel's hair, with a leather belt around his waist. He fed on locusts and wild honey.",
+        "VAT_ES": "Juan estaba vestido con una piel de camello y un cinturón de cuero, y se alimentaba con langostas y miel silvestre. Y predicaba, diciendo:",
+        "CEI": "Ma egli disse loro: \"Non abbiate paura! Voi cercate Gesù Nazareno, il crocifisso. È risorto, non è qui. Ecco il luogo dove l'avevano deposto."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Καὶ ἐκήρυσσεν, λέγων, Ἔρχεται ὁ ἰσχυρότερός μου ὀπίσω μου, οὗ οὐκ εἰμὶ ἱκανὸς κύψας λῦσαι τὸν ἱμάντα τῶν ὑποδημάτων αὐτοῦ.",
+        "VUL": "Et prædicabat dicens : Venit fortior me post me, cujus non sum dignus procumbens solvere corrigiam calceamentorum ejus.",
+        "SYN": "И проповедывал, говоря: идет за мною Сильнейший меня, у Которого я недостоин, наклонившись, развязать ремень обуви Его;",
+        "NEO": "Et il prêchait en disant : « Il vient après moi, celui qui est plus puissant que moi, et je ne suis pas digne de délier, en me baissant, les cordons de sa chaussure.",
+        "NAB": "And this is what he proclaimed: \"One mightier than I is coming after me. I am not worthy to stoop and loosen the thongs of his sandals.",
+        "VAT_ES": "«Detrás de mi vendrá el que es más poderoso que yo, y yo ni siquiera soy digno de ponerme a sus pies para desatar la correa de sus sandalias.",
+        "CEI": "Ora andate, dite ai suoi discepoli e a Pietro che egli vi precede in Galilea. Là lo vedrete, come vi ha detto\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἐγὼ μὲν ἐβάπτισα ὑμᾶς ἐν ὕδατι· αὐτὸς δὲ βαπτίσει ὑμᾶς ἐν πνεύματι ἁγίῳ.",
+        "VUL": "Ego baptizavi vos aqua, ille vero baptizabit vos Spiritu Sancto.",
+        "SYN": "я крестил вас водою, а Он будет крестить вас Духом Святым.",
+        "NEO": "Moi, je vous ai baptisés dans l’eau, mais lui vous baptisera dans le Saint-Esprit. »",
+        "NAB": "I have baptized you with water; he will baptize you with the holy Spirit.\"",
+        "VAT_ES": "Yo los he bautizado a ustedes con agua, pero él los bautizará con el Espíritu Santo».",
+        "CEI": "Ed esse, uscite, fuggirono via dal sepolcro perché erano piene di timore e di spavento. E non dissero niente a nessuno, perché avevano paura."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "¶Καὶ ἐγένετο ἐν ἐκείναις ταῖς ἡμέραις, ἦλθεν Ἰησοῦς ἀπὸ Ναζαρὲτ τῆς Γαλιλαίας, καὶ ἐβαπτίσθη ὑπὸ Ἰωάννου εἰς τὸν Ἰορδάνην.",
+        "VUL": "Et factum est : in diebus illis venit Jesus a Nazareth Galilææ : et baptizatus est a Joanne in Jordane.",
+        "SYN": "И было в те дни, пришел Иисус из Назарета Галилейского и крестился от Иоанна в Иордане.",
+        "NEO": "Or, il arriva en ces jours-là que Jésus vint de Nazareth, ville* de Galilée, et il fut baptisé par Jean dans le Jourdain.",
+        "NAB": "It happened in those days that Jesus came from Nazareth of Galilee and was baptized in the Jordan by John.",
+        "VAT_ES": "En aquellos días, Jesús llegó desde Nazaret de Galilea y fue bautizado por Juan en el Jordán.",
+        "CEI": "Risuscitato al mattino nel primo giorno dopo il sabato, apparve prima a Maria di Màgdala, dalla quale aveva cacciato sette demòni."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Καὶ εὐθέως ἀναβαίνων ἀπὸ τοῦ ὕδατος, εἶδεν σχιζομένους τοὺς οὐρανούς, καὶ τὸ πνεῦμα ὡσεὶ περιστερὰν καταβαῖνον ἐπ’ αὐτόν·",
+        "VUL": "Et statim ascendens de aqua, vidit cælos apertos, et Spiritum tamquam columbam descendentem, et manentem in ipso.",
+        "SYN": "И когда выходил из воды, тотчас увидел _Иоанн_ разверзающиеся небеса и Духа, как голубя, сходящего на Него.",
+        "NEO": "Et aussitôt, comme* il sortait de l’eau, il vit les cieux se déchirer et l’Esprit descendre sur lui comme une colombe.",
+        "NAB": "On coming up out of the water he saw the heavens being torn open and the Spirit, like a dove, descending upon him.",
+        "VAT_ES": "Y al salir del agua, vio que los cielos se abrían y que el Espíritu Santo descendía sobre él como una paloma;",
+        "CEI": "Questa andò ad annunziarlo ai suoi seguaci che erano in lutto e in pianto."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "καὶ φωνὴ ἐγένετο ἐκ τῶν οὐρανῶν, Σὺ εἶ ὁ υἱός μου ὁ ἀγαπητός, ἐν ᾧ εὐδόκησα.",
+        "VUL": "Et vox facta est de cælis : Tu es Filius meus dilectus, in te complacui.",
+        "SYN": "И глас был с небес: Ты Сын Мой возлюбленный, в Котором Мое благоволение.",
+        "NEO": "Et du ciel vint une voix qui se fit entendre* : « Tu es mon Fils bien-aimé, en toi je me complais. »",
+        "NAB": "And a voice came from the heavens, \"You are my beloved Son; with you I am well pleased.\"",
+        "VAT_ES": "y una voz desde el cielo dijo: «Tú eres mi Hijo muy querido, en ti tengo puesta toda mi predilección».",
+        "CEI": "Ma essi, udito che era vivo ed era stato visto da lei, non vollero credere."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "¶Καὶ εὐθὺς τὸ πνεῦμα αὐτὸν ἐκβάλλει εἰς τὴν ἔρημον.",
+        "VUL": "Et statim Spiritus expulit eum in desertum.",
+        "SYN": "Немедленно после того Дух ведет Его в пустыню.",
+        "NEO": "Et aussitôt l’Esprit le poussa au désert.",
+        "NAB": "At once the Spirit drove him out into the desert,",
+        "VAT_ES": "En seguida el Espíritu lo llevó al desierto,",
+        "CEI": "Dopo ciò, apparve a due di loro sotto altro aspetto, mentre erano in cammino verso la campagna."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Καὶ ἦν ἐκεῖ ἐν τῇ ἐρήμῳ ἡμέρας τεσσαράκοντα πειραζόμενος ὑπὸ τοῦ Σατανᾶ, καὶ ἦν μετὰ τῶν θηρίων, καὶ οἱ ἄγγελοι διηκόνουν αὐτῷ.",
+        "VUL": "Et erat in deserto quadraginta diebus, et quadraginta noctibus : et tentabatur a Satana : eratque cum bestiis, et angeli ministrabant illi.",
+        "SYN": "И был Он там в пустыне сорок дней, искушаемый сатаною, и был со зверями; и Ангелы служили Ему.",
+        "NEO": "Et il était dans le désert quarante jours, tenté par Satan ; et il était parmi les bêtes sauvages, et les anges le servaient.+ 1:13 13. S. Marc résume ici en quelques traits ce que S. Matth. iv, 1-11, et S. Luc, iv, 1-13 rapportent en détail.*. PREMIÈRE PARTIE. [I, 14 — VI, 13] MINISTÈRE DE JÉSUS EN GALILÉE.",
+        "NAB": "and he remained in the desert for forty days, tempted by Satan. He was among wild beasts, and the angels ministered to him.",
+        "VAT_ES": "donde estuvo cuarenta días y fue tentado por Satanás. Vivía entre las fieras, y los ángeles lo servían.",
+        "CEI": "Anch'essi ritornarono ad annunziarlo agli altri; ma neanche a loro vollero credere."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "¶Μετὰ δὲ τὸ παραδοθῆναι τὸν Ἰωάννην, ἦλθεν ὁ Ἰησοῦς εἰς τὴν Γαλιλαίαν, κηρύσσων τὸ εὐαγγέλιον τῆς βασιλείας τοῦ θεοῦ,",
+        "VUL": "Postquam autem traditus est Joannes, venit Jesus in Galilæam, prædicans Evangelium regni Dei,",
+        "SYN": "После же того, как предан был Иоанн, пришел Иисус в Галилею, проповедуя Евангелие Царствия Божия",
+        "NEO": "Après que Jean eut été mis en prison, Jésus vint en Galilée, prêchant l’Évangile du royaume de Dieu+ 1:14 14. Matth. iv, 12 : Luc, iv, 14. Les trois synoptiques ayant pour principal objet la prédication de Jésus en Galilée, passent sous silence les faits accomplis en Judée (Jean, ii, 12 — iv, 3).*.",
+        "NAB": "After John had been arrested, Jesus came to Galilee proclaiming the gospel of God:",
+        "VAT_ES": "Después que Juan fue arrestado, Jesús se dirigió a Galilea. Allí proclamaba la Buena Noticia de Dios, diciendo:",
+        "CEI": "Alla fine apparve agli undici, mentre stavano a mensa, e li rimproverò per la loro incredulità e durezza di cuore, perché non avevano creduto a quelli che lo avevano visto risuscitato."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "καὶ λέγων ὅτι Πεπλήρωται ὁ καιρός, καὶ ἤγγικεν ἡ βασιλεία τοῦ θεοῦ· μετανοεῖτε, καὶ πιστεύετε ἐν τῷ εὐαγγελίῳ.",
+        "VUL": "et dicens : Quoniam impletum est tempus, et appropinquavit regnum Dei : pnitemini, et credite Evangelio.",
+        "SYN": "и говоря, что исполнилось время и приблизилось Царствие Божие: покайтесь и веруйте в Евангелие.",
+        "NEO": "Et il disait : « Le temps est accompli, et le royaume de Dieu est proche ; repentez-vous et croyez à l’Évangile. »",
+        "NAB": "\"This is the time of fulfillment. The kingdom of God is at hand. Repent, and believe in the gospel.\"",
+        "VAT_ES": "«El tiempo se ha cumplido: el Reino de Dios está cerca. Conviértanse y crean en la Buena Noticia». Los primeros discípulos",
+        "CEI": "Gesù disse loro: \"Andate in tutto il mondo e predicate il vangelo ad ogni creatura."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "¶Περιπατῶν δὲ παρὰ τὴν θάλασσαν τῆς Γαλιλαίας εἶδεν Σίμωνα καὶ Ἀνδρέαν τὸν ἀδελφὸν αὐτοῦ τοῦ Σίμωνος βάλλοντας ἀμφίβληστρον ἐν τῇ θαλάσσῃ· ἦσαν γὰρ ἁλιεῖς.",
+        "VUL": "Et præteriens secus mare Galilææ, vidit Simonem, et Andream fratrem ejus, mittentes retia in mare (erant enim piscatores),",
+        "SYN": "Проходя же близ моря Галилейского, увидел Симона и Андрея, брата его, закидывающих сети в море, ибо они были рыболовы.",
+        "NEO": "Alors qu’il passait le long de la mer de Galilée, il vit Simon et André son frère qui jetaient leurs filets dans la mer, car ils étaient pêcheurs.",
+        "NAB": "As he passed by the Sea of Galilee, he saw Simon and his brother Andrew casting their nets into the sea; they were fishermen.",
+        "VAT_ES": "Mientras iba por la orilla del mar de Galilea, vio a Simón y a su hermano Andrés, que echaban las redes en el agua, porque eran pescadores.",
+        "CEI": "Chi crederà e sarà battezzato sarà salvo, ma chi non crederà sarà condannato."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Καὶ εἶπεν αὐτοῖς ὁ Ἰησοῦς, Δεῦτε ὀπίσω μου, καὶ ποιήσω ὑμᾶς γενέσθαι ἁλιεῖς ἀνθρώπων.",
+        "VUL": "et dixit eis Jesus : Venite post me, et faciam vos fieri piscatores hominum.",
+        "SYN": "И сказал им Иисус: идите за Мною, и Я сделаю, что вы будете ловцами человеков.",
+        "NEO": "Et Jésus leur dit : « Venez à ma suite, et je vous ferai devenir pêcheurs d’hommes. »",
+        "NAB": "Jesus said to them, \"Come after me, and I will make you fishers of men.\"",
+        "VAT_ES": "Jesús les dijo: «Síganme, y yo los haré pescadores de hombres».",
+        "CEI": "E questi saranno i segni che accompagneranno quelli che credono: nel mio nome scacceranno i demòni, parleranno lingue nuove,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Καὶ εὐθέως ἀφέντες τὰ δίκτυα αὐτῶν, ἠκολούθησαν αὐτῷ.",
+        "VUL": "Et protinus relictis retibus, secuti sunt eum.",
+        "SYN": "И они тотчас, оставив свои сети, последовали за Ним.",
+        "NEO": "Et aussitôt, laissant leurs filets, ils le suivirent.",
+        "NAB": "Then they abandoned their nets and followed him.",
+        "VAT_ES": "Inmediatamente, ellos dejaron sus redes y lo siguieron.",
+        "CEI": "prenderanno in mano i serpenti e, se berranno qualche veleno, non recherà loro danno, imporranno le mani ai malati e questi guariranno\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Καὶ προβὰς ἐκεῖθεν ὀλίγον, εἶδεν Ἰάκωβον τὸν τοῦ Ζεβεδαίου, καὶ Ἰωάννην τὸν ἀδελφὸν αὐτοῦ, καὶ αὐτοὺς ἐν τῷ πλοίῳ καταρτίζοντας τὰ δίκτυα.",
+        "VUL": "Et progressus inde pusillum, vidit Jacobum Zebedæi, et Joannem fratrem ejus, et ipsos componentes retia in navi :",
+        "SYN": "И, пройдя оттуда немного, Он увидел Иакова Зеведеева и Иоанна, брата его, также в лодке починивающих сети;",
+        "NEO": "Et avançant un peu, il vit Jacques, fils* de Zébédée, et Jean son frère, qui étaient, eux aussi, dans une barque, réparant leurs filets.",
+        "NAB": "He walked along a little farther and saw James, the son of Zebedee, and his brother John. They too were in a boat mending their nets.",
+        "VAT_ES": "Y avanzando un poco, vio a Santiago, hijo de Zebedeo, y a su hermano Juan, que estaban también en su barca arreglando las redes. En seguida los llamó,",
+        "CEI": "Il Signore Gesù, dopo aver parlato con loro, fu assunto in cielo e sedette alla destra di Dio."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Καὶ εὐθέως ἐκάλεσεν αὐτούς· καὶ ἀφέντες τὸν πατέρα αὐτῶν Ζεβεδαῖον ἐν τῷ πλοίῳ μετὰ τῶν μισθωτῶν ἀπῆλθον ὀπίσω αὐτοῦ.",
+        "VUL": "et statim vocavit illos. Et relicto patre suo Zebedæo in navi cum mercenariis, secuti sunt eum.",
+        "SYN": "и тотчас призвал их. И они, оставив отца своего Зеведея в лодке с работниками, последовали за Ним.",
+        "NEO": "Et il les appela aussitôt ; et, laissant leur père Zébédée dans la barque avec les employés, ils partirent à sa suite.",
+        "NAB": "Then he called them. So they left their father Zebedee in the boat along with the hired men and followed him.",
+        "VAT_ES": "y con ellos, dejando en la barca a su padre Zebedeo con los jornaleros, lo siguieron.",
+        "CEI": "Allora essi partirono e predicarono dappertutto, mentre il Signore operava insieme con loro e confermava la parola con i prodigi che l'accompagnavano."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "¶Καὶ εἰσπορεύονται εἰς Καπερναούμ· καὶ εὐθέως τοῖς σάββασιν εἰσελθὼν εἰς τὴν συναγωγήν, ἐδίδασκεν.",
+        "VUL": "Et ingrediuntur Capharnaum : et statim sabbatis ingressus in synagogam, docebat eos.",
+        "SYN": "И приходят в Капернаум; и вскоре в субботу вошел Он в синагогу и учил.",
+        "NEO": "Et ils entrèrent à Capharnaüm, et dès le jour du* sabbat, entrant dans la synagogue, il se mit à enseigner.",
+        "NAB": "Then they came to Capernaum, and on the sabbath he entered the synagogue and taught.",
+        "VAT_ES": "Entraron en Cafarnaúm, y cuando llegó el sábado, Jesús fue a la sinagoga y comenzó a enseñar."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Καὶ ἐξεπλήσσοντο ἐπὶ τῇ διδαχῇ αὐτοῦ· ἦν γὰρ διδάσκων αὐτοὺς ὡς ἐξουσίαν ἔχων, καὶ οὐχ ὡς οἱ γραμματεῖς.",
+        "VUL": "Et stupebant super doctrina ejus : erat enim docens eos quasi potestatem habens, et non sicut scribæ.",
+        "SYN": "И дивились Его учению, ибо Он учил их, как власть имеющий, а не как книжники.",
+        "NEO": "Et ils étaient frappés de sa doctrine, car il les enseignait comme ayant autorité, et non comme les scribes.",
+        "NAB": "The people were astonished at his teaching, for he taught them as one having authority and not as the scribes.",
+        "VAT_ES": "Todos estaban asombrados de su enseñanza, porque les enseñaba como quien tiene autoridad y no como los escribas."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Καὶ ἦν ἐν τῇ συναγωγῇ αὐτῶν ἄνθρωπος ἐν πνεύματι ἀκαθάρτῳ, καὶ ἀνέκραξεν,",
+        "VUL": "Et erat in synagoga eorum homo in spiritu immundo : et exclamavit,",
+        "SYN": "В синагоге их был человек, _одержимый_ духом нечистым, и вскричал:",
+        "NEO": "Et \\+w aussitôt|strong=\"G2112\"\\+w**+ 1:23 Uniquement dans la version de Tischendorf* il se trouva dans leur synagogue un homme possédé+ 1:23 Litt. avec* d’un esprit impur, qui s’écria",
+        "NAB": "In their synagogue was a man with an unclean spirit;",
+        "VAT_ES": "Y había en la sinagoga un hombre poseído de un espíritu impuro, que comenzó a gritar;"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "λέγων, Ἔα, τί ἡμῖν καὶ σοί, Ἰησοῦ Ναζαρηνέ; Ἦλθες ἀπολέσαι ἡμᾶς; Οἶδά σε τίς εἶ, ὁ ἅγιος τοῦ θεοῦ.",
+        "VUL": "dicens : Quid nobis et tibi, Jesu Nazarene ? venisti perdere nos ? scio qui sis, Sanctus Dei.",
+        "SYN": "оставь! что Тебе до нас, Иисус Назарянин? Ты пришел погубить нас! знаю Тебя, кто Ты, Святый Божий.",
+        "NEO": "en disant : « Qu’avons-nous à faire avec toi, Jésus de Nazareth ? Tu es venu pour nous perdre ! Je sais qui tu es, le Saint de Dieu.+ 1:24 24. Le Saint de Dieu, le Messie: comp. Dan. ix, 24. Cf. Matth. viii, 24. Jean, x, 36.* »",
+        "NAB": "he cried out, \"What have you to do with us, Jesus of Nazareth? Have you come to destroy us? I know who you are - the Holy One of God!\"",
+        "VAT_ES": "«&iquest;Qué quieres de nosotros, Jesús Nazareno? &iquest;Has venido para acabar con nosotros? Ya sé quién eres: el Santo de Dios»."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Καὶ ἐπετίμησεν αὐτῷ ὁ Ἰησοῦς, λέγων, Φιμώθητι, καὶ ἔξελθε ἐξ αὐτοῦ.",
+        "VUL": "Et comminatus est ei Jesus, dicens : Obmutesce, et exi de homine.",
+        "SYN": "Но Иисус запретил ему, говоря: замолчи и выйди из него.",
+        "NEO": "Mais Jésus, le menaçant : « Tais-toi, dit-il, et sors de cet homme. »",
+        "NAB": "Jesus rebuked him and said, \"Quiet! Come out of him!\"",
+        "VAT_ES": "Pero Jesús lo increpó, diciendo: «Cállate y sal de este hombre»."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Καὶ σπαράξαν αὐτὸν τὸ πνεῦμα τὸ ἀκάθαρτον καὶ κράξαν φωνῇ μεγάλῃ, ἐξῆλθεν ἐξ αὐτοῦ.",
+        "VUL": "Et discerpens eum spiritus immundus, et exclamans voce magna, exiit ab eo.",
+        "SYN": "Тогда дух нечистый, сотрясши его и вскричав громким голосом, вышел из него.",
+        "NEO": "Et l’esprit impur, l’agitant violemment, sortit de lui en jetant un grand cri.",
+        "NAB": "The unclean spirit convulsed him and with a loud cry came out of him.",
+        "VAT_ES": "El espíritu impuro lo sacudió violentamente, y dando un alarido, salió de ese hombre."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Καὶ ἐθαμβήθησαν πάντες, ὥστε συζητεῖν πρὸς ἑαυτούς, λέγοντας, Τί ἐστιν τοῦτο; Τίς ἡ διδαχὴ ἡ καινὴ αὕτη, ὅτι κατ’ ἐξουσίαν καὶ τοῖς πνεύμασιν τοῖς ἀκαθάρτοις ἐπιτάσσει, καὶ ὑπακούουσιν αὐτῷ;",
+        "VUL": "Et mirati sunt omnes, ita ut conquirerent inter se dicentes : Quidnam est hoc ? quænam doctrina hæc nova ? quia in potestate etiam spiritibus immundis imperat, et obediunt ei.",
+        "SYN": "И все ужаснулись, так что друг друга спрашивали: что это? что это за новое учение, что Он и духам нечистым повелевает со властью, и они повинуются Ему?",
+        "NEO": "Et tous furent saisis d’étonnement, de sorte qu’ils se demandaient entre eux en disant : « Qu’est-ce que ceci ? Quelle est cette doctrine nouvelle ? Car il commande avec autorité, même aux esprits impurs, et ils lui obéissent. »",
+        "NAB": "All were amazed and asked one another, \"What is this? A new teaching with authority. He commands even the unclean spirits and they obey him.\"",
+        "VAT_ES": "Todos quedaron asombrados y se preguntaban unos a otros: «&iquest;Qué es esto? &iexcl;Enseña de una manera nueva, llena de autoridad; da órdenes a los espíritus impuros, y estos le obedecen!»."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Ἐξῆλθεν δὲ ἡ ἀκοὴ αὐτοῦ εὐθὺς εἰς ὅλην τὴν περίχωρον τῆς Γαλιλαίας.",
+        "VUL": "Et processit rumor ejus statim in omnem regionem Galilææ.",
+        "SYN": "И скоро разошлась о Нем молва по всей окрестности в Галилее.",
+        "NEO": "Et sa renommée se répandit aussitôt partout, dans tout le pays qui avoisine la Galilée.",
+        "NAB": "His fame spread everywhere throughout the whole region of Galilee.",
+        "VAT_ES": "Y su fama se extendió rápidamente por todas partes, en toda la región de Galilea."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "¶Καὶ εὐθέως ἐκ τῆς συναγωγῆς ἐξελθόντες, ἦλθον εἰς τὴν οἰκίαν Σίμωνος καὶ Ἀνδρέου, μετὰ Ἰακώβου καὶ Ἰωάννου.",
+        "VUL": "Et protinus egredientes de synagoga, venerunt in domum Simonis et Andreæ, cum Jacobo et Joanne.",
+        "SYN": "Выйдя вскоре из синагоги, пришли в дом Симона и Андрея, с Иаковом и Иоанном.",
+        "NEO": "Et aussitôt, sortant de la synagogue, ils allèrent dans la maison de Simon et d’André, avec Jacques et Jean.+ 1:29 29. Matth. viii, 14 ; Luc, iv, 38.*",
+        "NAB": "On leaving the synagogue he entered the house of Simon and Andrew with James and John.",
+        "VAT_ES": "Cuando salió de la sinagoga, fue con Santiago y Juan a casa de Simón y Andrés."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Ἡ δὲ πενθερὰ Σίμωνος κατέκειτο πυρέσσουσα, καὶ εὐθέως λέγουσιν αὐτῷ περὶ αὐτῆς·",
+        "VUL": "Decumbebat autem socrus Simonis febricitans : et statim dicunt ei de illa.",
+        "SYN": "Теща же Симонова лежала в горячке; и тотчас говорят Ему о ней.",
+        "NEO": "Or, la belle-mère de Simon était au lit, ayant la fièvre ; et aussitôt ils lui parlèrent à son sujet.",
+        "NAB": "Simon's mother-in-law lay sick with a fever. They immediately told him about her.",
+        "VAT_ES": "La suegra de Simón estaba en cama con fiebre, y se lo dijeron de inmediato."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "καὶ προσελθὼν ἤγειρεν αὐτήν, κρατήσας τῆς χειρὸς αὐτῆς· καὶ ἀφῆκεν αὐτὴν ὁ πυρετὸς εὐθέως, καὶ διηκόνει αὐτοῖς.",
+        "VUL": "Et accedens elevavit eam, apprehensa manu ejus : et continuo dimisit eam febris, et ministrabat eis.",
+        "SYN": "Подойдя, Он поднял ее, взяв ее за руку; и горячка тотчас оставила ее, и она стала служить им.",
+        "NEO": "Et s’approchant, il la fit lever, en* la prenant par la main ; et aussitôt la fièvre la quitta, et elle se mit à les servir.",
+        "NAB": "He approached, grasped her hand, and helped her up. Then the fever left her and she waited on them.",
+        "VAT_ES": "El se acercó, la tomó de la mano y la hizo levantar. Entonces ella no tuvo más fiebre y se puso a servirlos."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "¶Ὀψίας δὲ γενομένης, ὅτε ἔδυ ὁ ἥλιος, ἔφερον πρὸς αὐτὸν πάντας τοὺς κακῶς ἔχοντας καὶ τοὺς δαιμονιζομένους·",
+        "VUL": "Vespere autem facto cum occidisset sol, afferebant ad eum omnes male habentes, et dæmonia habentes :",
+        "SYN": "При наступлении же вечера, когда заходило солнце, приносили к Нему всех больных и бесноватых.",
+        "NEO": "Sur le soir, lorsque le soleil fut couché, on se mit à lui amener tous ceux qui* étaient malades et les démoniaques,",
+        "NAB": "When it was evening, after sunset, they brought to him all who were ill or possessed by demons.",
+        "VAT_ES": "Al atardecer, después de ponerse el sol, le llevaron a todos los enfermos y endemoniados,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "καὶ ἡ πόλις ὅλη ἐπισυνηγμένη ἦν πρὸς τὴν θύραν.",
+        "VUL": "et erat omnis civitas congregata ad januam.",
+        "SYN": "И весь город собрался к дверям.",
+        "NEO": "et toute la ville était rassemblée devant la porte.",
+        "NAB": "The whole town was gathered at the door.",
+        "VAT_ES": "y la ciudad entera se reunió delante de la puerta."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "Καὶ ἐθεράπευσεν πολλοὺς κακῶς ἔχοντας ποικίλαις νόσοις, καὶ δαιμόνια πολλὰ ἐξέβαλεν, καὶ οὐκ ἤφιεν λαλεῖν τὰ δαιμόνια, ὅτι ᾔδεισαν αὐτόν.",
+        "VUL": "Et curavit multos, qui vexabantur variis languoribus, et dæmonia multa ejiciebat, et non sinebat ea loqui, quoniam sciebant eum.",
+        "SYN": "И Он исцелил многих, страдавших различными болезнями; изгнал многих бесов, и не позволял бесам говорить, что они знают, что Он Христос.",
+        "NEO": "Et il guérit beaucoup de malades affligés de diverses infirmités, et il chassa beaucoup de démons ;et il ne leur permettait pas de parler, parce qu’ils le connaissaient.+ 1:34 Jésus impose la consigne du silence sur sa qualité messianique.*",
+        "NAB": "He cured many who were sick with various diseases, and he drove out many demons, not permitting them to speak because they knew him.",
+        "VAT_ES": "Jesús curó a muchos enfermos, que sufrían de diversos males, y expulsó a muchos demonios; pero a estos no los dejaba hablar, porque sabían quién era él."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "¶Καὶ πρωῒ ἔννυχον λίαν ἀναστὰς ἐξῆλθεν, καὶ ἀπῆλθεν εἰς ἔρημον τόπον, κἀκεῖ προσηύχετο.",
+        "VUL": "Et diluculo valde surgens, egressus abiit in desertum locum, ibique orabat.",
+        "SYN": "А утром, встав весьма рано, вышел и удалился в пустынное место, и там молился.",
+        "NEO": "Et au petit matin, alors qu’il faisait encore* grandement nuit, il se leva, sortit, et s’en alla dans un lieu solitaire, et* il y pria.",
+        "NAB": "Rising very early before dawn, he left and went off to a deserted place, where he prayed.",
+        "VAT_ES": "Por la mañana, antes que amaneciera, Jesús se levantó, salió y fue a un lugar desierto; allí estuvo orando."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "Καὶ κατεδίωξαν αὐτὸν ὁ Σίμων καὶ οἱ μετ’ αὐτοῦ·",
+        "VUL": "Et prosecutus est eum Simon, et qui cum illo erant.",
+        "SYN": "Симон и бывшие с ним пошли за Ним",
+        "NEO": "Et Simon et ceux qui étaient* avec lui le recherchèrent ;",
+        "NAB": "Simon and those who were with him pursued him",
+        "VAT_ES": "Simón salió a buscarlo con sus compañeros,"
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "καὶ εὑρόντες αὐτὸν λέγουσιν αὐτῷ ὅτι Πάντες σε ζητοῦσιν.",
+        "VUL": "Et cum invenissent eum, dixerunt ei : Quia omnes quærunt te.",
+        "SYN": "и, найдя Его, говорят Ему: все ищут Тебя.",
+        "NEO": "et l’ayant trouvé, ils lui dirent : « Tout le monde* te cherche. »",
+        "NAB": "and on finding him said, \"Everyone is looking for you.\"",
+        "VAT_ES": "y cuando lo encontraron, le dijeron: «Todos te andan buscando»."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "BYZ": "Καὶ λέγει αὐτοῖς, Ἄγωμεν εἰς τὰς ἐχομένας κωμοπόλεις, ἵνα καὶ ἐκεῖ κηρύξω· εἰς τοῦτο γὰρ ἐξελήλυθα.",
+        "VUL": "Et ait illis : Eamus in proximos vicos, et civitates, ut et ibi prædicem : ad hoc enim veni.",
+        "SYN": "Он говорит им: пойдем в ближние селения и города, чтобы Мне и там проповедывать, ибо Я для того пришел.",
+        "NEO": "Il leur répondit : « Allons ailleurs dans les bourgades+ 1:38 38. Bourgades, en grec \\+qt κωμοπόλεις\\+qt* terme que la Vulg. a rendu par \\+qt vicos et civitates\\+qt*.* voisines, afin que j’y prêche aussi ; car c’est pour cela que je suis sorti+ 1:38 Dans un sens profond et réel Jésus est \\+it sorti\\+it* d’auprès de Dieu, son Père, pour venir en ce monde.*. »",
+        "NAB": "He told them, \"Let us go on to the nearby villages that I may preach there also. For this purpose have I come.\"",
+        "VAT_ES": "El les respondió: «Vayamos a otra parte, a predicar también en las poblaciones vecinas, porque para eso he salido»."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "BYZ": "Καὶ ἦν κηρύσσων ἐν ταῖς συναγωγαῖς αὐτῶν εἰς ὅλην τὴν Γαλιλαίαν, καὶ τὰ δαιμόνια ἐκβάλλων.",
+        "VUL": "Et erat prædicans in synagogis eorum, et in omni Galilæa, et dæmonia ejiciens.",
+        "SYN": "И Он проповедывал в синагогах их по всей Галилее и изгонял бесов.",
+        "NEO": "Et il prêchait dans leurs synagogues, parcourant la Galilée entière, et chassait les démons.",
+        "NAB": "So he went into their synagogues, preaching and driving out demons throughout the whole of Galilee.",
+        "VAT_ES": "Y fue predicando en las sinagogas de toda la Galilea y expulsando demonios"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "BYZ": "¶Καὶ ἔρχεται πρὸς αὐτὸν λεπρός, παρακαλῶν αὐτὸν καὶ γονυπετῶν αὐτόν, καὶ λέγων αὐτῷ ὅτι Ἐὰν θέλῃς, δύνασαί με καθαρίσαι.",
+        "VUL": "Et venit ad eum leprosus deprecans eum : et genu flexo dixit ei : Si vis, potes me mundare.",
+        "SYN": "Приходит к Нему прокаженный и, умоляя Его и падая пред Ним на колени, говорит Ему: если хочешь, можешь меня очистить.",
+        "NEO": "Un lépreux vint à lui, et se jetant à genoux, il lui dit d’un ton* suppliant : « Si tu le* veux, tu peux me purifier. »",
+        "NAB": "A leper came to him (and kneeling down) begged him and said, \"If you wish, you can make me clean.\"",
+        "VAT_ES": "Entonces se le acercó un leproso para pedirle ayuda y, cayendo de rodillas, le dijo: «Si quieres, puedes purificarme»."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ Ἰησοῦς σπλαγχνισθείς, ἐκτείνας τὴν χεῖρα, ἥψατο αὐτοῦ, καὶ λέγει αὐτῷ, Θέλω, καθαρίσθητι.",
+        "VUL": "Jesus autem misertus ejus, extendit manum suam : et tangens eum, ait illi : Volo : mundare.",
+        "SYN": "Иисус, умилосердившись над ним, простер руку, коснулся его и сказал ему: хочу, очистись.",
+        "NEO": "Ému de compassion, Jésus étendit la main, le toucha, en disant : « Je le* veux, sois purifié. »",
+        "NAB": "Moved with pity, he stretched out his hand, touched him, and said to him, \"I do will it. Be made clean.\"",
+        "VAT_ES": "Jesús, conmovido, extendió la mano y lo tocó, diciendo: «Lo quiero, queda purificado»."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "BYZ": "Καὶ εἰπόντος αὐτοῦ εὐθέως ἀπῆλθεν ἀπ’ αὐτοῦ ἡ λέπρα, καὶ ἐκαθαρίσθη.",
+        "VUL": "Et cum dixisset, statim discessit ab eo lepra, et mundatus est.",
+        "SYN": "После сего слова проказа тотчас сошла с него, и он стал чист.",
+        "NEO": "Et aussitôt qu’il eut parlé*, la lèpre le quitta, et il fut purifié.",
+        "NAB": "The leprosy left him immediately, and he was made clean.",
+        "VAT_ES": "En seguida la lepra desapareció y quedó purificado."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "BYZ": "Καὶ ἐμβριμησάμενος αὐτῷ, εὐθέως ἐξέβαλεν αὐτόν,",
+        "VUL": "Et comminatus est ei, statimque ejecit illum,",
+        "SYN": "И, посмотрев на него строго, тотчас отослал его",
+        "NEO": "Jésus* en le sermonnant le renvoya aussitôt,",
+        "NAB": "Then, warning him sternly, he dismissed him at once.",
+        "VAT_ES": "Jesús lo despidió, advirtiéndole severamente:"
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "BYZ": "καὶ λέγει αὐτῷ, Ὅρα μηδενὶ μηδὲν εἴπῃς· ἀλλ’ ὕπαγε, σεαυτὸν δεῖξον τῷ ἱερεῖ, καὶ προσένεγκε περὶ τοῦ καθαρισμοῦ σου ἃ προσέταξεν Μωσῆς, εἰς μαρτύριον αὐτοῖς.",
+        "VUL": "et dicit ei : Vide nemini dixeris : sed vade, ostende te principi sacerdotum, et offer pro emundatione tua, quæ præcepit Moyses in testimonium illis.",
+        "SYN": "и сказал ему: смотри, никому ничего не говори, но пойди, покажись священнику и принеси за очищение твое, что повелел Моисей, во свидетельство им.",
+        "NEO": "et lui dit : « Garde-toi d’en parler à personne ; mais va te montrer au prêtre, et offre pour ta purification ce que Moïse a ordonné pour leur servir de témoignage.+ 1:44 Lev 14:2* »",
+        "NAB": "Then he said to him, \"See that you tell no one anything, but go, show yourself to the priest and offer for your cleansing what Moses prescribed; that will be proof for them.\"",
+        "VAT_ES": "«No le digas nada a nadie, pero ve a presentarte al sacerdote y entrega por tu purificación la ofrenda que ordenó Moisés, para que les sirva de testimonio»."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ ἐξελθὼν ἤρξατο κηρύσσειν πολλὰ καὶ διαφημίζειν τὸν λόγον, ὥστε μηκέτι αὐτὸν δύνασθαι φανερῶς εἰς πόλιν εἰσελθεῖν, ἀλλ’ ἔξω ἐν ἐρήμοις τόποις ἦν· καὶ ἤρχοντο πρὸς αὐτὸν πανταχόθεν.",
+        "VUL": "At ille egressus cpit prædicare, et diffamare sermonem, ita ut jam non posset manifeste introire in civitatem, sed foris in desertis locis esset, et conveniebant ad eum undique.",
+        "SYN": "А он, выйдя, начал провозглашать и рассказывать о происшедшем, так что _Иисус_ не мог уже явно войти в город, но находился вне, в местах пустынных. И приходили к Нему отовсюду.",
+        "NEO": "Mais cet homme étant parti, se mit à raconter et à publier partout ce qui s’était passé : de sorte que Jésus ne pouvait plus entrer publiquement dans une ville ; il se tenait dehors, dans des lieux solitaires, et l’on venait à lui de tous côtés.",
+        "NAB": "The man went away and began to publicize the whole matter. He spread the report abroad so that it was impossible for Jesus to enter a town openly. He remained outside in deserted places, and people kept coming to him from everywhere.",
+        "VAT_ES": "Sin embargo, apenas se fue, empezó a proclamarlo a todo el mundo, divulgando lo sucedido, de tal manera que Jesús ya no podía entrar públicamente en ninguna ciudad, sino que debía quedarse afuera, en lugares desiertos, Y acudían a él de todas partes."
+      }
+    }
+  }
+}

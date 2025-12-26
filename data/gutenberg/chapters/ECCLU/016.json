@@ -1,0 +1,519 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_016",
+  "book_key": "ECCLU",
+  "sequence": 16,
+  "chapter_in": {
+    "MT": 16,
+    "VUL": 16,
+    "LXX": 16
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Μὴ ἐπιθύμει τέκνων πλῆθος ἀχρήστων, ⸆ μηδὲ εὐφραίνου ἐπὶ υἱοῖς ἀσεβέσιν·",
+        "VUL": "[Ne jucunderis in filiis impiis, si multiplicentur :/ nec oblecteris super ipsos, si non est timor Dei in illis./",
+        "SYN": "Не желай множества негодных детей и не радуйся о сыновьях нечестивых. Когда они умножаются, не радуйся о них, если нет в них страха Господня.",
+        "NEO": "Ne désire pas un grand nombre d’enfants inutiles, et ne mets pas ta joie dans des fils impies.",
+        "NAB": "Desire not a brood of worthless children, nor rejoice in wicked offspring.",
+        "VAT_ES": "No desees un gran número de hijos inútiles ni se alegres de los hijos impíos.",
+        "CEI": "Non desiderare una moltitudine di figli buoni a nulla, non gioire per figli empi."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ἐὰν πληθύνωσιν, μὴ εὐφραίνου ἐπ’ αὐτοῖς· εἰ μή ἐστιν φόβος Κυρίου μετ’ αὐτῶν,",
+        "VUL": "Non credas vitæ illorum,/ et ne respexeris in labores eorum./",
+        "SYN": "Не надейся на их жизнь и не опирайся на их множество.",
+        "NEO": "S’ils se multiplient, ne t’en réjouis pas, si la crainte du Seigneur n’est pas avec eux.",
+        "NAB": "Many though they be, exult not in them if they have not the fear of the LORD.",
+        "VAT_ES": "Por muchos que sean, no te alegres de ellos, si les falta el temor del Señor.",
+        "CEI": "Se aumentano di numero non gioire, se sono privi del timore del Signore."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "μὴ ἐνπιστεύσῃς τῇ ζωῇ αὐτῶν, καὶ μὴ ἔπεχε ἐπὶ τὸν τόπον αὐτῶν· κρείσσων γὰρ εἷς ἢ χίλιοι, καὶ ἀποθανεῖν ἄτεκνον ἢ ἔχειν τέκνα ἀσεβῆ·",
+        "VUL": "Melior est enim unus timens Deum,/ quam mille filii impii :/",
+        "SYN": "Лучше один праведник, нежели тысяча грешников,",
+        "NEO": "N’espère pas pour eux une longue vie, et ne fais aucun fond sur leur prospérité. Un seul vaut mieux que mille ; et mieux vaut mourir sans enfants que d’avoir des fils impies.",
+        "NAB": "Count not on their length of life, have no hope in their future. For one can be better than a thousand; rather die childless than have godless children!",
+        "VAT_ES": "No esperes que vivan mucho tiempo ni te sientas seguro porque son numerosos: vale más uno solo que mil y es mejor morir sin hijos que tenerlos impíos.",
+        "CEI": "Non confidare su una loro vita lunga e non fondarti sul loro numero, poiché è preferibile uno a mille e morir senza figli che averne degli empi."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ἀπὸ γὰρ ἑνὸς συνετοῦ συνοικισθήσεται πόλις, φυλὴ δὲ ἀνόμων ἐρημωθήσεται.",
+        "VUL": "et utile est mori sine filiis,/ quam relinquere filios impios./",
+        "SYN": "и лучше умереть бездетным, нежели иметь детей нечестивых,",
+        "NEO": "Car un seul homme intelligent peuplera un pays, mais la race des méchants sera détruite.",
+        "NAB": "Through one wise man can a city be peopled; through a clan of rebels it becomes desolate.",
+        "VAT_ES": "Con uno solo inteligente se puebla una ciudad, pero la estirpe de los hombres sin ley es arrasada.",
+        "CEI": "La città potrà ripopolarsi per opera di un solo assennato, mentre la stirpe degli iniqui sarà distrutta."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "πολλὰ τοιαῦτα ἑόρακα ἐν ὀφθαλμοῖς μου, καὶ ἰσχυρότερα τούτων ἀκήκοεν τὸ οὖς μου.",
+        "VUL": "Ab uno sensato inhabitabitur patria :/ tribus impiorum deseretur./",
+        "SYN": "ибо от одного разумного населится город, а племя беззаконных опустеет.",
+        "NEO": "J’en ai vu de mes yeux beaucoup d’exemples, et mes oreilles en on entendu de plus graves encore.",
+        "NAB": "Many such things has my eye seen, even more than these has my ear heard.",
+        "VAT_ES": "Mis ojos han visto muchas cosas semejantes y cosas peores aún escucharon mis oídos.",
+        "CEI": "Il mio occhio ha visto molte simili cose; il mio orecchio ne ha sentite ancora più gravi."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ἐν συναγωγῇ ἁμαρτωλῶν ἐκκαυθήσεται πῦρ, καὶ ἐν ἔθνει ἀπειθεῖ ἐξεκαύθη ὀργή.",
+        "VUL": "Multa talia vidit oculus meus,/ et fortiora horum audivit auris mea./",
+        "SYN": "Много такого видело око мое, и еще более того слышало ухо мое.",
+        "NEO": "Le feu s’allume sur l’assemblée des pécheurs, et la colère de Dieu s’enflamme sur un peuple rebelle.",
+        "NAB": "Against a sinful band fire is enkindled, upon a godless people wrath flames out.",
+        "VAT_ES": "En la reunión de los pecadores arde el fuego y contra la nación rebelde se enciende la ira.",
+        "CEI": "Nell'assemblea dei peccatori un fuoco si accende, contro un popolo ribelle è divampata l'ira."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "οὐκ ἐξιλάσατο περὶ τῶν ἀρχαίων γιγάντων, οἳ ἀπέστησαν τῇ ἰσχύι αὐτῶν·",
+        "VUL": "In synagoga peccantium exardebit ignis,/ et in gente incredibili exardescet ira./",
+        "SYN": "В сборище грешников возгорится огонь, как и в народе непокорном возгорался гнев.",
+        "NEO": "Le Seigneur n’a pas pardonné aux antiques géants, lesquels, confiants dans leur force, s’étaient révoltés.",
+        "NAB": "He forgave not the leaders of old who rebelled long ago in their might;",
+        "VAT_ES": "El Señor no perdonó a los antiguos gigantes que se rebelaron con toda su fuerza.",
+        "CEI": "Dio non perdonò agli antichi giganti, che si erano ribellati per la loro forza."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "οὐκ ἐφείσατο περὶ τῆς παροικίας Λώτ, οὓς ἐβδελύξατο διὰ τὴν ὑπερηφανίαν αὐτῶν·",
+        "VUL": "Non exoraverunt pro peccatis suis antiqui gigantes,/ qui destructi sunt confidentes suæ virtuti./",
+        "SYN": "Не умилостивился Он над древними исполинами, которые в надежде на силу свою сделались отступниками;",
+        "NEO": "Il n’a pas épargné ceux qui habitaient avec Lot, il les eut en horreur à cause de leur orgueil insolent.",
+        "NAB": "He spared not the neighbors of Lot whom he detested for their pride;",
+        "VAT_ES": "No dejó sin castigo a la ciudad donde vivía Lot, a los que abominaba a causa de su orgullo.",
+        "CEI": "Non risparmiò i concittadini di Lot, che egli aveva in orrore per la loro superbia."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "οὐκ ἠλέησεν ἔθνος ἀπωλείας, τοὺς ἐξηρμένους ἐν ἁμαρτίαις αὐτῶν·",
+        "VUL": "Et non pepercit peregrinationi Lot,/ et execratus est eos præ superbia verbi illorum./",
+        "SYN": "не пощадил и живших в одном месте с Лотом, которыми возгнушался за их гордость;",
+        "NEO": "Il n’a pas eu pitié du peuple voué à la perdition, lequel fut exterminé avec ses péchés.",
+        "NAB": "Nor did he spare the doomed people who were uprooted because of their sin;",
+        "VAT_ES": "No se apiadó de la nación condenada al exterminio. de los que fueron expulsado a causa de sus pecados.",
+        "CEI": "Non ebbe pietà di nazioni di perdizione, che si erano esaltate per i loro peccati."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "καὶ οὕτως ἑξακοσίας χιλιάδας πεζῶν τοὺς ἐπισυναχθέντας ἐν σκληροκαρδίᾳ αὐτῶν.",
+        "VUL": "Non misertus est illis, gentem totam perdens,/ et extollentem se in peccatis suis./",
+        "SYN": "не помиловал народа погибельного, который надмевался грехами своими,",
+        "NEO": "De même il extermina six cent mille hommes de pied qui s’étaient rassemblés dans l’endurcissement de leurs cœurs.",
+        "NAB": "Nor the six hundred thousand foot soldiers who perished for the impiety of their hearts.",
+        "VAT_ES": "Así trató también a los seiscientos mil soldados que se amotinaron por la dureza de su corazón.",
+        "CEI": "Così trattò i seicentomila uomini che sono periti per l'ostinazione del loro cuore."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "κἂν ᾖ εἷς σκληροτράχηλος, θαυμαστὸν τοῦτο εἰ ἀθῳωθήσεται· ἔλεος γὰρ καὶ ὀργὴ παρ’ αὐτοῦ, δυνάστης ἐξιλασμῶν καὶ ἐκχέων ὀργήν.",
+        "VUL": "Et sicut sexcenta millia peditum,/ qui congregati sunt in duritia cordis sui :/ et si unus fuisset cervicatus,/ mirum si fuisset immunis./",
+        "SYN": "равно как и шестисот тысяч человек, соединившихся в жестокосердии своем. И хотя бы и один был непокорный, было бы удивительно, если б он остался ненаказанным;",
+        "NEO": "Un seul raidit-il le cou, ce serait merveille s’il restait impuni. Car du Seigneur viennent la miséricorde et la colère ; puissant en pardon, il déchaîne aussi sa colère.",
+        "NAB": "And had there been but one stiffnecked man, it were a wonder had he gone unpunished. For mercy and anger alike are with him who remits and forgives, though on the wicked alights his wrath.",
+        "VAT_ES": "Aunque fuera uno solo el hombre obstinado, sería un milagro que quedara impune, porque en él está la misericordia, pero también la ira, es tan fuera para el perdón como pródigo para la ira.",
+        "CEI": "Ci fosse un solo uomo di dura cervice, sarebbe strano se restasse impunito,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "κατὰ τὸ πολὺ ἔλεος αὐτοῦ, οὕτως καὶ πολὺς ὁ ἔλεγχος αὐτοῦ· ἄνδρα κατὰ τὰ ἔργα αὐτοῦ κρινεῖ.",
+        "VUL": "Misericordia enim et ira est cum illo :/ potens exoratio, et effundens iram./",
+        "SYN": "ибо и милость и гнев - во власти Его: силен Он помиловать и излить гнев.",
+        "NEO": "Autant est grande sa miséricorde, autant le sont ses châtiments ; il jugera l’homme selon ses œuvres.",
+        "NAB": "Great as his mercy is his punishment; he judges men, each according to his deeds.",
+        "VAT_ES": "Tan grande como su misericordia es su reprobación: él juzga a cada uno según sus obras.",
+        "CEI": "poiché misericordia e ira sono in Dio, potente quando perdona e quando riversa l'ira."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "οὐκ ἐκφεύξεται ἐν ἁρπάγμασιν ἁμαρτωλός, καὶ οὐ μὴ καθυστερήσει ὑπομονὴν εὐσεβοῦς.",
+        "VUL": "Secundum misericordiam suam,/ sic correptio illius homines secundum opera sua judicat./",
+        "SYN": "Как велика милость Его, так велико и обличение Его. Он судит человека по делам его.",
+        "NEO": "Le pécheur n’échappera pas avec ses rapines, et il ne retardera pas l’attente de l’homme pieux.",
+        "NAB": "A criminal does not escape with his plunder; a just man's hope God does not leave unfulfilled.",
+        "VAT_ES": "El pecador no escapará con su presa ni será defraudada la constancia de los buenos.",
+        "CEI": "Tanto grande la sua misericordia, quanto grande la sua severità; egli giudicherà l'uomo secondo le sue opere."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "πάσῃ ἐλεημοσύνῃ ποιήσει τόπον, ἕκαστος κατὰ τὰ ἔργα αὐτοῦ εὑρήσει.",
+        "VUL": "Non effugiet in rapina peccator,/ et non retardabit sufferentia misericordiam facientis./",
+        "SYN": "Не убежит от Него грешник с хищением, и терпение благочестивого не останется тщетным.",
+        "NEO": "Il donnera carrière à toute sa miséricorde, et chacun recevra selon ses œuvres.",
+        "NAB": "Whoever does good has his reward, which each receives according to his deeds.",
+        "VAT_ES": "El tiene en cuenta cada limosna y cada uno recibirá conforme a sus obras.",
+        "CEI": "Non sfuggirà il peccatore con la sua rapina, ma neppure la pazienza del pio sarà delusa."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Omnis misericordia faciet locum unicuique,/ secundum meritum operum suorum,/ et secundum intellectum peregrinationis ipsius.]",
+        "SYN": "Всякой милостыне Он даст место, каждый получит по делам своим.",
+        "NEO": "Ne dis pas : « Je me déroberai au regard du Seigneur, et de là-haut qui donc pensera à moi ? Au milieu de la foule je serai oublié, et que suis-je au sein de l’immense création ? »",
+        "NAB": "Say not: \"I am hidden from God; in heaven who remembers me? Among so many people I cannot be known; what am I in the world of spirits?",
+        "VAT_ES": "[El Señor endureció al Faraón para que no lo reconociera a fin de dar a conocer sus obras bajo el cielo.]",
+        "CEI": "Egli farà posto a tutta la sua generosità; ciascuno sarà trattato secondo le sue opere."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "[Non dicas : A Deo abscondar :/ et ex summo, quis mei memorabitur ?/",
+        "SYN": "Не говори: \"я скроюсь от Господа; неужели с высоты кто вспомнит обо мне?",
+        "NEO": "Vois : le ciel et le ciel des cieux de Dieu, l’abîme et la terre sont ébranlés quand il les visite ;",
+        "NAB": "Behold, the heavens, the heaven of heavens, the earth and the abyss tremble at his visitation;",
+        "VAT_ES": "[Su misericordia se manifiesta a toda la creación; su luz y su oscuridad las repartió a los hijos de Adán.]",
+        "CEI": "Non dire: \"Mi terrò celato al Signore! Chi penserà a me lassù?"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "μὴ εἴπῃς ὅτι Ἀπὸ Κυρίου κρυβήσομαι· μὴ ἐξ ὕψους τίς μου μνησθήσεται; ἐν λαῷ πλείονι οὐ μὴ μνησθῶ, τίς γὰρ ἡ ψυχή μου ἐν ἀμετρήτῳ κτίσει;",
+        "VUL": "in populo magno non agnoscar :/ quæ est enim anima mea in tam immensa creatura ?/",
+        "SYN": "Во множестве народа меня не заметят; ибо что душа моя в неизмеримом создании?",
+        "NEO": "ensemble les montagnes et les fondements de la terre sont saisis de tremblement quand il les regarde.",
+        "NAB": "The roots of the mountains, the earth's foundations, at his mere glance, quiver and quake.",
+        "VAT_ES": "No digas: «Me ocultaré del Señor, y allá en lo alto, &iquest;quién se acordará de mí? Entre tanta gente pasaré inadvertido: &iquest;quién soy yo en la inmensa creación?».",
+        "CEI": "Non sarò riconosciuto fra un popolo numeroso, chi sarò io in mezzo a una creazione senza numero?\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "ἰδοὺ ὁ οὐρανὸς καὶ ὁ οὐρανὸς τοῦ οὐρανοῦ τοῦ θεοῦ, ἄβυσσος καὶ γῆ σαλευθήσονται ἐν τῇ ἐπισκοπῇ αὐτοῦ·",
+        "VUL": "Ecce cælum et cæli cælorum,/ abyssus, et universa terra, et quæ in eis sunt,/ in conspectu illius commovebuntur./",
+        "SYN": "Вот, небо и небо небес - Божие, бездна и земля колеблются от посещения Его.",
+        "NEO": "Mais le cœur de l’homme ne réfléchit pas à cela, et quel est celui qui étudie ses voies ?",
+        "NAB": "Of me, therefore, he will take no thought; with my ways who will concern himself?",
+        "VAT_ES": "Mira: el cielo y lo más alto del cielo, el Abismo y la tierra se conmueven cuando él los visita:",
+        "CEI": "Ecco il cielo e il cielo dei cieli, l'abisso e la terra sussultano quando egli appare."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ἅμα τὰ ὄρη καὶ τὰ θεμέλια τῆς γῆς ἐν τῷ ἐπιβλέψαι εἰς αὐτὰ τρόμῳ συνσείονται,",
+        "VUL": "Montes simul, et colles, et fundamenta terræ,/ cum conspexerit illa Deus, tremore concutientur./",
+        "SYN": "Равно сотрясаются от страха горы и основания земли, когда Он взирает.",
+        "NEO": "La tempête échappe à l’œil de l’homme : et la plupart des œuvres de Dieu sont cachées.",
+        "NAB": "If I sin, no eye will see me; if all in secret I am disloyal, who is to know?",
+        "VAT_ES": "las montañas junto con los cimientos de la tierra tiemblan de espanto bajo su mirada.",
+        "CEI": "Anche i monti e le fondamenta della terra si scuotono di spavento quando egli li guarda."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "καὶ ἐπ’ αὐτοῖς οὐ διανοηθήσεται καρδία· καὶ τὰς ὁδοὺς αὐτοῦ τίς ἐνθυμηθήσεται;",
+        "VUL": "Et in omnibus his insensatum est cor,/ et omne cor intelligitur ab illo./",
+        "SYN": "И этого не может понять сердце;",
+        "NEO": "« Qui nous dira les œuvres de sa justice et qui les attendra ? Elle est si loin l’alliance du châtiment ! »",
+        "NAB": "Who tells him of just deeds and what could I expect for doing my duty?\"",
+        "VAT_ES": "Pero no se reflexiona en estas cosas &iquest;y quién presta atención a sus designios?",
+        "CEI": "Ma nessuno riflette su queste cose; al suo modo di agire chi ci bada?"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "καὶ καταιγίς, ἣν οὐκ ὄψεται ἄνθρωπος, τὰ δὲ πλείονα τῶν ἔργων αὐτοῦ ἐν ἀποκρύφοις.",
+        "VUL": "Et vias illius quis intelligit,/ et procellam quam nec oculus videbit hominis ?/",
+        "SYN": "а пути Его кто постигнет? Как ветер, которого человек не может видеть, так и большая часть дел Его сокрыта.",
+        "NEO": "Ainsi pense l’homme sans intelligence ; l’insensé qui s’égare n’imagine que folies.",
+        "NAB": "Such are the thoughts of senseless men, which only the foolish knave will think.",
+        "VAT_ES": "Como una tempestad que se desata sin que el hombre se dé cuenta, así la mayoría de sus obras permanecen ocultas.",
+        "CEI": "Anche la bufera che nessuno contempla, e la maggior parte delle sue opere, sono nel mistero."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ἔργα δικαιοσύνης τίς ἀναγγελεῖ; ἤ τίς ὑπομενεῖ; μακρὰν γὰρ ἡ διαθήκη.",
+        "VUL": "Nam plurima illius opera sunt in absconsis :/ sed opera justitiæ ejus quis enuntiabit, aut quis sustinebit ?/ longe enim est testamentum a quibusdam,/ et interrogatio omnium in consummatione est./",
+        "SYN": "Кто возвестит о делах правосудия Его? или кто будет ожидать их? ибо далеко это определение\".",
+        "NEO": "Ecoute-moi, mon fils, et apprends la sagesse ; et rends ton cœur attentif à mes paroles.",
+        "NAB": "Hearken to me, my son, take my advice, apply your mind to my words,",
+        "VAT_ES": "«&iquest;Quién anuncia las obras de justicia? &iquest;Quién las espera? Porque la alianza está lejos»:",
+        "CEI": "\"Chi a Dio annunzierà le opere di giustizia? Ovvero chi le attende? L'alleanza infatti è lontana\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "ἐλαττούμενος καρδίᾳ διανοεῖται ταῦτα, καὶ ἀνὴρ ἄφρων καὶ πλανώμενος διανοεῖται μωρά.",
+        "VUL": "Qui minoratur corde cogitat inania,/ et vir imprudens et errans cogitat stulta.]",
+        "SYN": "Скудный умом думает так, и человек неразумный и заблуждающийся размышляет так глупо.",
+        "NEO": "Je te découvrirai une doctrine pesée dans la balance, et je te ferai connaître une science exacte.",
+        "NAB": "While I propose measured wisdom, and impart accurate knowledge.",
+        "VAT_ES": "así razona el que no tiene entendimiento; el insensato, el extraviado, sólo piensa necedades.",
+        "CEI": "Tali cose pensa chi ha il cuore perverso; lo stolto, appunto errando, pensa sciocchezze."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "Ἄκουσόν μου, τέκνον, καὶ μάθε ἐπιστήμην, καὶ ἐπὶ τῶν λόγων μου πρόσεχε τῇ καρδίᾳ σου·",
+        "VUL": "[Audi me, fili, et disce disciplinam sensus,/ et in verbis meis attende in corde tuo :/",
+        "SYN": "Слушай меня, сын мой, и учись знанию, и внимай сердцем твоим словам моим.",
+        "NEO": "Les œuvres du Seigneur subsistent depuis l’origine comme il les a disposées, et dès leur création il en a séparé les parties.",
+        "NAB": "When at the first God created his works and, as he made them, assigned their tasks,",
+        "VAT_ES": "Escucha, hijo mío, e instrúyete, presta mucha atención a mis palabras.",
+        "CEI": "Ascoltami, figlio, e impara la scienza; e sii attento nel tuo cuore alle mie parole."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "ἐκφαίνω ἐν σταθμῷ παιδείαν, καὶ ἐν ἀκριβείᾳ ἀπαγγέλλω ἐπιστήμην.",
+        "VUL": "et dicam in æquitate disciplinam,/ et scrutabor enarrare sapientiam :/ et in verbis meis attende in corde tuo,/ et dico in æquitate spiritus virtutes/ quas posuit Deus in opera sua ab initio,/ et in veritate enuntio scientiam ejus./",
+        "SYN": "Я показываю тебе учение обдуманное и передаю знание точное.",
+        "NEO": "Il a orné pour toujours ses ouvrages, et les plus beaux pour briller d’âge en âge. Ils n’éprouvent ni la faim ni la fatigue, et ils n’interrompent pas leur tâche.",
+        "NAB": "He ordered for all time what they were to do and their domains from generation to generation. They were not to hunger, nor grow weary, nor ever cease from their tasks.",
+        "VAT_ES": "Revelaré mi enseñanza con mesura y expondré la ciencia con exactitud.",
+        "CEI": "Manifesterò con esattezza la mia dottrina; con cura annunzierò la scienza."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "ἐν κρίσει Κυρίου τὰ ἔργα αὐτοῦ ἀπ’ ἀρχῆς, καὶ ἀπὸ ποιήσεως αὐτῶν διέστελλεν μερίδας αὐτῶν·",
+        "VUL": "In judicio Dei opera ejus ab initio,/ et ab institutione ipsorum distinxit partes illorum,/ et initia eorum in gentibus suis./",
+        "SYN": "По определению Господа дела Его от начала, и от сотворения их Он разделил части их.",
+        "NEO": "Aucun d’eux ne heurte son voisin, et à jamais ils obéissent au divin commandement.",
+        "NAB": "Not one should ever crowd its neighbor, nor should they ever disobey his word.",
+        "VAT_ES": "Por decisión del Señor existen sus obras desde el principio: desde que fueron hechas, él fijó sus límites.",
+        "CEI": "Nella creazione del Signore le sue opere sono fin dal principio, e dalla loro origine ne separò le parti."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "ἐκόσμησεν εἰς αἰῶνα τὰ ἔργα αὐτοῦ, καὶ τὰς ἀρχὰς αὐτῶν εἰς γενεὰς αὐτῶν· οὔτε ἐπείνασαν οὔτε ἐκοπίασαν, καὶ οὐκ ἐξέλιπον ἀπὸ τῶν ἔργων αὐτῶν·",
+        "VUL": "Ornavit in æternum opera illorum :/ nec esurierunt, nec laboraverunt,/ et non destiterunt ab operibus suis./",
+        "SYN": "Навек устроил Он дела Свои, и начала их - в роды их. Они не алчут, не утомляются и не прекращают своих действий.",
+        "NEO": "Après cela, le Seigneur regarda sur la terre et il l’a remplit de ses biens.",
+        "NAB": "Then the LORD looked upon the earth, and filled it with his blessings.",
+        "VAT_ES": "El ordenó sus obras para siempre, y su gobierno por todas las generaciones. Ellas no sufren hambre ni se fatigan y nunca interrumpen su actividad.",
+        "CEI": "Egli ordinò per l'eternità le sue opere, ne stabilì l'attività per le generazioni future. Non hanno fame né si stancano, eppure non interrompono il loro lavoro."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "ἕκαστος τὸν πλησίον αὐτοῦ οὐκ ἔθλιψεν, καὶ ἕως αἰῶνος οὐκ ἀπειθήσουσιν τοῦ ῥήματος αὐτοῦ.",
+        "VUL": "Unusquisque proximum sibi non angustiabit in æternum :/",
+        "SYN": "Ни одно не стесняет близкого ему,",
+        "NEO": "D’animaux de toutes sortes il en a couvert la surface, et c’est dans son sein qu’ils doivent retourner.",
+        "NAB": "Its surface he covered with all manner of life which must return into it again.",
+        "VAT_ES": "No se chocan unas contra otras y jamás desobedecen a su palabra.",
+        "CEI": "Nessuna di loro urta la sua vicina, mai disubbidiranno ad un suo comando."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "καὶ μετὰ ταῦτα Κύριος εἰς τὴν γῆν ἐπέβλεψεν καὶ ἐνέπλησεν αὐτὴν τῶν ἀγαθῶν αὐτοῦ·",
+        "VUL": "non sis incredibilis verbo illius./",
+        "SYN": "и до века не воспротивятся они слову Его.",
+        "VAT_ES": "Luego el Señor fijó sus ojos en la tierra y la colmó de sus bienes.",
+        "CEI": "Dopo ciò il Signore riguardò sulla terra e la riempì dei suoi doni."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "ψυχὴν παντὸς ζῴου ἐκάλυψεν τὸ πρόσωπον αὐτῆς, καὶ εἰς αὐτὴν ἡ ἀποστροφὴ αὐτῶν.",
+        "VUL": "Post hæc Deus in terram respexit,/ et implevit illam bonis suis :/",
+        "SYN": "И потом воззрел Господь на землю и наполнил ее Своими благами.",
+        "VAT_ES": "La cubrió con toda clase de vivientes y todos volverán a ella.",
+        "CEI": "Ne ricoprì la superficie con ogni genere di viventi e ad essa faranno ritorno."
+      }
+    }
+  }
+}

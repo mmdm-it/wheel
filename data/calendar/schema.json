@@ -1,0 +1,51 @@
+{
+  "name": "Calendar",
+  "version": "0.1-dev",
+  "levels": [
+    {
+      "name": "Millennium",
+      "depth": 0,
+      "properties": [
+        "id",
+        "name",
+        "era",
+        "bucket",
+        "start_year",
+        "end_year",
+        "sort_number"
+      ]
+    },
+    {
+      "name": "Year",
+      "depth": 1,
+      "properties": [
+        "id",
+        "name",
+        "year_number",
+        "sort_number",
+        "millennium_id"
+      ]
+    },
+    {
+      "name": "Month",
+      "depth": 2,
+      "properties": [
+        "id",
+        "name",
+        "month_number"
+      ],
+      "isLeaf": true
+    }
+  ],
+  "root": {
+    "id": "root",
+    "children": [
+      "millennium_bc_3",
+      "millennium_bc_2",
+      "millennium_bc_1",
+      "millennium_ad_1",
+      "millennium_ad_2",
+      "millennium_ad_3"
+    ]
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ROM_014",
+  "book_key": "ROM",
+  "sequence": 14,
+  "chapter_in": {
+    "MT": 14,
+    "VUL": 14,
+    "LXX": 14
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Τὸν δὲ ἀσθενοῦντα τῇ πίστει προσλαμβάνεσθε, μὴ εἰς διακρίσεις διαλογισμῶν.",
+        "VUL": "Infirmum autem in fide assumite, non in disceptationibus cogitationum.",
+        "SYN": "Немощного в вере принимайте без споров о мнениях.",
+        "NEO": "Quant à celui qui est faible dans la foi, accueillez-le sans discuter ses opinions.",
+        "NAB": "Welcome anyone who is weak in faith, but not for disputes over opinions.",
+        "VAT_ES": "Sean comprensivos con el que es débil en la fe, sin entrar en discusiones.",
+        "CEI": "Quanto poi alla colletta in favore dei fratelli, fate anche voi come ho ordinato alle Chiese della Galazia."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Ὃς μὲν πιστεύει φαγεῖν πάντα, ὁ δὲ ἀσθενῶν λάχανα ἐσθίει.",
+        "VUL": "Alius enim credit se manducare omnia : qui autem infirmus est, olus manducet.",
+        "SYN": "Ибо иной уверен, _что_ _можно_ есть все, а немощный ест овощи.",
+        "NEO": "Tel croit pouvoir manger de tout ; tel autre, qui est faible, se nourrit de légumes.",
+        "NAB": "One person believes that one may eat anything, while the weak person eats only vegetables.",
+        "VAT_ES": "Mientras algunos creen que les está permitido comer de todo, los débiles sólo comen verduras.",
+        "CEI": "Ogni primo giorno della settimana ciascuno metta da parte ciò che gli è riuscito di risparmiare, perché non si facciano le collette proprio quando verrò io."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Ὁ ἐσθίων τὸν μὴ ἐσθίοντα μὴ ἐξουθενείτω, καὶ ὁ μὴ ἐσθίων τὸν ἐσθίοντα μὴ κρινέτω· ὁ θεὸς γὰρ αὐτὸν προσελάβετο.",
+        "VUL": "Is qui manducat, non manducantem non spernat : et qui non manducat, manducantem non judicet : Deus enim illum assumpsit.",
+        "SYN": "Кто ест, не уничижай того, кто не ест; и кто не ест, не осуждай того, кто ест, потому что Бог принял его.",
+        "NEO": "Que celui qui mange ne méprise pas celui qui ne mange pas, et que celui qui ne mange pas ne juge pas celui qui mange, car Dieu l’a accueilli parmi les siens*.",
+        "NAB": "The one who eats must not despise the one who abstains, and the one who abstains must not pass judgment on the one who eats; for God has welcomed him.",
+        "VAT_ES": "Aquel que come de todo no debe despreciar al que se abstiene, y este a su vez, no debe criticar al que come de todo, porque Dios ha recibido también a este.",
+        "CEI": "Quando poi giungerò, manderò con una mia lettera quelli che voi avrete scelto per portare il dono della vostra liberalità a Gerusalemme."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Σὺ τίς εἶ ὁ κρίνων ἀλλότριον οἰκέτην; Τῷ ἰδίῳ κυρίῳ στήκει ἢ πίπτει. Σταθήσεται δέ· δυνατὸς γάρ ἐστιν ὁ θεὸς στῆσαι αὐτόν.",
+        "VUL": "Tu quis es, qui judicas alienum servum ? domino suo stat, aut cadit : stabit autem : potens est enim Deus statuere illum.",
+        "SYN": "Кто ты, осуждающий чужого раба? Перед своим Господом стоит он, или падает. И будет восставлен, ибо силен Бог восставить его.",
+        "NEO": "Qui es-tu, toi qui juges le serviteur d’autrui ? S’il se tient debout, ou s’il tombe, cela regarde son maître. Mais il se tiendra debout, car Dieu a le pouvoir de le soutenir.",
+        "NAB": "Who are you to pass judgment on someone else's servant? Before his own master he stands or falls. And he will be upheld, for the Lord is able to make him stand.",
+        "VAT_ES": "&iquest;Quién eres tú para criticar al servidor de otro? Si él se mantiene firme o cae, es cosa que incumbe a su dueño, pero se mantendrá firme porque el Señor es poderoso para sostenerlo.",
+        "CEI": "E se converrà che vada anch'io, essi partiranno con me."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ὃς μὲν κρίνει ἡμέραν παρ’ ἡμέραν, ὃς δὲ κρίνει πᾶσαν ἡμέραν. Ἕκαστος ἐν τῷ ἰδίῳ νοῒ πληροφορείσθω.",
+        "VUL": "Nam alius judicat diem inter diem : alius autem judicat omnem diem : unusquisque in suo sensu abundet.",
+        "SYN": "Иной отличает день от дня, а другой судит о всяком дне _равно._ Всякий _поступай_ по удостоверению своего ума.",
+        "NEO": "Tel met de la différence entre les jours ; tel autre les estime tous pareils : que chacun ait dans son esprit une pleine conviction+ 14:5 Conviction: quand il s’agit de choses indifférentes ou non commandées par une loi, le principal est que chacun se forme la conscience et la suive. Vulgate : \\+qt Que chacun abonde dans son sens ;\\+qt* elle traduit mieux ailleurs (iv, 21) le même verbe grec.*.",
+        "NAB": "(For) one person considers one day more important than another, while another person considers all days alike. Let everyone be fully persuaded in his own mind.",
+        "VAT_ES": "Unos tienen preferencia por algunos días, mientras que para otros, todos los días son iguales. Que cada uno se atenga a su propio juicio.",
+        "CEI": "Verrò da voi dopo aver attraversato la Macedonia, poiché la Macedonia intendo solo attraversarla;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ὁ φρονῶν τὴν ἡμέραν, κυρίῳ φρονεῖ· καὶ ὁ μὴ φρονῶν τὴν ἡμέραν, κυρίῳ οὐ φρονεῖ. Καὶ ὁ ἐσθίων κυρίῳ ἐσθίει, εὐχαριστεῖ γὰρ τῷ θεῷ· καὶ ὁ μὴ ἐσθίων κυρίῳ οὐκ ἐσθίει, καὶ εὐχαριστεῖ τῷ θεῷ.",
+        "VUL": "Qui sapit diem, Domino sapit, et qui manducat, Domino manducat : gratias enim agit Deo. Et qui non manducat, Domino non manducat, et gratias agit Deo.",
+        "SYN": "Кто различает дни, для Господа различает; и кто не различает дней, для Господа не различает. Кто ест, для Господа ест, ибо благодарит Бога; и кто не ест, для Господа не ест, и благодарит Бога.",
+        "NEO": "Celui qui observe tel ou tel jour, l’observe en vue du Seigneur ; et celui qui mange, mange en vue du Seigneur, car il rend grâces à Dieu ; et celui qui ne mange pas, c’est en vue du Seigneur qu’il ne mange pas, et il rend aussi* grâces à Dieu.",
+        "NAB": "Whoever observes the day, observes it for the Lord. Also whoever eats, eats for the Lord, since he gives thanks to God; while whoever abstains, abstains for the Lord and gives thanks to God.",
+        "VAT_ES": "El que distingue un día de otro lo hace en honor del Señor; y el que come, también lo hace en honor del Señor, puesto que da gracias a Dios; del mismo modo, el que se abstiene lo hace en honor del Señor, y también da gracias a Dios.",
+        "CEI": "ma forse mi fermerò da voi o anche passerò l'inverno, perché siate voi a predisporre il necessario per dove andrò."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Οὐδεὶς γὰρ ἡμῶν ἑαυτῷ ζῇ, καὶ οὐδεὶς ἑαυτῷ ἀποθνῄσκει.",
+        "VUL": "Nemo enim nostrum sibi vivit, et nemo sibi moritur.",
+        "SYN": "Ибо никто из нас не живет для себя, и никто не умирает для себя;",
+        "NEO": "En effet, nul de nous ne vit pour soi-même, et nul ne meurt pour soi-même.",
+        "NAB": "None of us lives for oneself, and no one dies for oneself.",
+        "VAT_ES": "Ninguno de nosotros vive para sí, ni tampoco muere para sí.",
+        "CEI": "Non voglio vedervi solo di passaggio, ma spero di trascorrere un pò di tempo con voi, se il Signore lo permetterà."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἐάν τε γὰρ ζῶμεν, τῷ κυρίῳ ζῶμεν· ἐάν τε ἀποθνῄσκωμεν, τῷ κυρίῳ ἀποθνῄσκομεν· ἐάν τε οὖν ζῶμεν, ἐάν τε ἀποθνῄσκωμεν, τοῦ κυρίου ἐσμέν.",
+        "VUL": "Sive enim vivimus, Domino vivimus : sive morimur, Domino morimur. Sive ergo vivimus, sive morimur, Domini sumus.",
+        "SYN": "а живем ли -- для Господа живем; умираем ли -- для Господа умираем: и потому, живем ли или умираем, -- _всегда_ Господни.",
+        "NEO": "Car, soit que nous vivions, nous vivons pour le Seigneur ; soit que nous mourrions, nous mourons pour le Seigneur. Soit donc que nous vivions, soit que nous mourions, nous appartenons au Seigneur.",
+        "NAB": "For if we live, we live for the Lord, and if we die, we die for the Lord; so then, whether we live or die, we are the Lord's.",
+        "VAT_ES": "Si vivimos, vivimos para el Señor, y si morimos, morimos para el Señor: tanto en la vida como en la muerte, pertenecemos al Señor.",
+        "CEI": "Mi fermerò tuttavia a Efeso fino a Pentecoste,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Εἰς τοῦτο γὰρ χριστὸς καὶ ἀπέθανεν καὶ ἀνέστη καὶ ἔζησεν, ἵνα καὶ νεκρῶν καὶ ζώντων κυριεύσῃ.",
+        "VUL": "In hoc enim Christus mortuus est, et resurrexit : ut et mortuorum et vivorum dominetur.",
+        "SYN": "Ибо Христос для того и умер, и воскрес, и ожил, чтобы владычествовать и над мертвыми и над живыми.",
+        "NEO": "Car le Christ est mort et a vécu afin d’être le Seigneur et des morts et des vivants+ 14:9 9. A vécu (Vulg. \\+qt est ressuscité\\+qt*) comprend la vie de Jésus sur la terre et sa résurrection. Les morts sont les âmes dans le \\+qt scheol\\+qt*, les limbes (Phil. ii, 10).*.",
+        "NAB": "For this is why Christ died and came to life, that he might be Lord of both the dead and the living.",
+        "VAT_ES": "Porque Cristo murió y volvió a la vida para ser Señor de los vivos y de los muertos.",
+        "CEI": "perché mi si è aperta una porta grande e propizia, anche se gli avversari sono molti."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Σὺ δὲ τί κρίνεις τὸν ἀδελφόν σου; Ἢ καὶ σὺ τί ἐξουθενεῖς τὸν ἀδελφόν σου; Πάντες γὰρ παραστησόμεθα τῷ βήματι τοῦ χριστοῦ.",
+        "VUL": "Tu autem quid judicas fratrem tuum ? aut tu quare spernis fratrem tuum ? omnes enim stabimus ante tribunal Christi.",
+        "SYN": "А ты что осуждаешь брата твоего? Или и ты, что унижаешь брата твоего? Все мы предстанем на суд Христов.",
+        "NEO": "Mais toi, pourquoi juges-tu ton frère ? Toi, aussi, pourquoi méprises-tu ton frère ? puisque nous paraîtrons tous devant le tribunal du Christ ;",
+        "NAB": "Why then do you judge your brother? Or you, why do you look down on your brother? For we shall all stand before the judgment seat of God;",
+        "VAT_ES": "Entonces, &iquest;Con qué derecho juzgas a tu hermano? &iquest;Por qué lo desprecias? Todos, en efecto, tendremos que comparecer ante el tribunal de Dios,",
+        "CEI": "Quando verrà Timòteo, fate che non si trovi in soggezione presso di voi, giacché anche lui lavora come me per l'opera del Signore."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Γέγραπται γάρ, Ζῶ ἐγώ, λέγει κύριος· ὅτι ἐμοὶ κάμψει πᾶν γόνυ, καὶ πᾶσα γλῶσσα ἐξομολογήσεται τῷ θεῷ.",
+        "VUL": "Scriptum est enim : Vivo ego, dicit Dominus, quoniam mihi flectetur omne genu : et omnis lingua confitebitur Deo.",
+        "SYN": "Ибо написано: живу Я, говорит Господь, предо Мною преклонится всякое колено, и всякий язык будет исповедывать Бога.",
+        "NEO": "car il est écrit : « Je suis vivant, dit le Seigneur ; tout genou fléchira devant moi, et toute langue donnera gloire à Dieu+ 14:11 11. Écrit. Is. xlv, 23, cité librement. — Je suis vivant: formule abrégée de serment, dont l’expression complète serait : Aussi vrai que \\+qt je suis vivant\\+qt*, il est vrai que \\+qt tout genou\\+qt*, etc. Cf. Hébr. vi, 13.*. »",
+        "NAB": "for it is written: \"As I live, says the Lord, every knee shall bend before me, and every tongue shall give praise to God.\"",
+        "VAT_ES": "porque está escrito: \"Juro que toda rodilla se doblará ante mí y toda lengua dará gloria a Dios\", dice el Señor.",
+        "CEI": "Nessuno dunque gli manchi di riguardo; al contrario, accomiatatelo in pace, perché ritorni presso di me: io lo aspetto con i fratelli."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Ἄρα οὖν ἕκαστος ἡμῶν περὶ ἑαυτοῦ λόγον δώσει τῷ θεῷ.",
+        "VUL": "Itaque unusquisque nostrum pro se rationem reddet Deo.",
+        "SYN": "Итак каждый из нас за себя даст отчет Богу.",
+        "NEO": "Ainsi chacun de nous rendra compte à Dieu pour soi-même.",
+        "NAB": "So (then) each of us shall give an account of himself (to God).",
+        "VAT_ES": "Por lo tanto, cada uno de nosotros tendrá que rendir cuenta de sí mismo a Dios.",
+        "CEI": "Quanto poi al fratello Apollo, l'ho pregato vivamente di venire da voi con i fratelli, ma non ha voluto assolutamente saperne di partire ora; verrà tuttavia quando gli si presenterà l'occasione."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "¶Μηκέτι οὖν ἀλλήλους κρίνωμεν· ἀλλὰ τοῦτο κρίνατε μᾶλλον, τὸ μὴ τιθέναι πρόσκομμα τῷ ἀδελφῷ ἢ σκάνδαλον.",
+        "VUL": "Non ergo amplius invicem judicemus : sed hoc judicate magis, ne ponatis offendiculum fratri, vel scandalum.",
+        "SYN": "Не станем же более судить друг друга, а лучше судите о том, как бы не подавать брату _случая_ _к_ преткновению или соблазну.",
+        "NEO": "Ne nous jugeons donc plus les uns les autres ; mais jugez plutôt qu’il ne faut rien faire qui soit pour votre frère une pierre d’achoppement ou une occasion de chute.",
+        "NAB": "Then let us no longer judge one another, but rather resolve never to put a stumbling block or hindrance in the way of a brother.",
+        "VAT_ES": "Dejemos entonces de juzgarnos mutuamente; traten más bien de no poner delante de su hermano nada que lo haga tropezar o caer.",
+        "CEI": "Vigilate, state saldi nella fede, comportatevi da uomini, siate forti."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Οἶδα καὶ πέπεισμαι ἐν κυρίῳ Ἰησοῦ, ὅτι οὐδὲν κοινὸν δι’ αὐτοῦ· εἰ μὴ τῷ λογιζομένῳ τι κοινὸν εἶναι, ἐκείνῳ κοινόν.",
+        "VUL": "Scio, et confido in Domino Jesu, quia nihil commune per ipsum, nisi ei qui existimat quid commune esse, illi commune est.",
+        "SYN": "Я знаю и уверен в Господе Иисусе, что нет ничего в себе самом нечистого; только почитающему что-либо нечистым, тому нечисто.",
+        "NEO": "Je sais et je suis persuadé dans le Seigneur Jésus que rien n’est impur en soi ; néanmoins, si quelqu’un estime qu’une chose est impure, elle est impure pour lui.",
+        "NAB": "I know and am convinced in the Lord Jesus that nothing is unclean in itself; still, it is unclean for someone who thinks it unclean.",
+        "VAT_ES": "Estoy plenamente convencido en el Señor Jesús de que nada es impuro por sí mismo; pero si alguien estima que una cosa es impura, para él sí es impura.",
+        "CEI": "Tutto si faccia tra voi nella carità."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ διὰ βρῶμα ὁ ἀδελφός σου λυπεῖται, οὐκέτι κατὰ ἀγάπην περιπατεῖς. Μὴ τῷ βρώματί σου ἐκεῖνον ἀπόλλυε, ὑπὲρ οὗ χριστὸς ἀπέθανεν.",
+        "VUL": "Si enim propter cibum frater tuus contristatur, jam non secundum caritatem ambulas. Noli cibo tuo illum perdere, pro quo Christus mortuus est.",
+        "SYN": "Если же за пищу огорчается брат твой, то ты уже не по любви поступаешь. Не губи твоею пищею того, за кого Христос умер.",
+        "NEO": "Or, si pour un aliment, tu contristes ton frère, tu ne marches plus selon la charité ; n’entraîne pas à la perdition, par ton aliment, un homme pour lequel le Christ est mort.",
+        "NAB": "If your brother is being hurt by what you eat, your conduct is no longer in accord with love. Do not because of your food destroy him for whom Christ died.",
+        "VAT_ES": "Si por un alimento, afliges a tu hermano, ya no obras de acuerdo con el amor. &iexcl;No permitas que por una cuestión de alimentos se pierda aquel por quien murió Cristo!",
+        "CEI": "Una raccomandazione ancora, o fratelli: conoscete la famiglia di Stefana, che è primizia dell'Acaia; hanno dedicato se stessi a servizio dei fedeli;"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Μὴ βλασφημείσθω οὖν ὑμῶν τὸ ἀγαθόν·",
+        "VUL": "Non ergo blasphemetur bonum nostrum.",
+        "SYN": "Да не хулится ваше доброе.",
+        "NEO": "Que votre bien ne soit pas un sujet de blasphème !",
+        "NAB": "So do not let your good be reviled.",
+        "VAT_ES": "No expongan a la maledicencia el buen uso de la libertad.",
+        "CEI": "siate anche voi deferenti verso di loro e verso quanti collaborano e si affaticano con loro."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "οὐ γάρ ἐστιν ἡ βασιλεία τοῦ θεοῦ βρῶσις καὶ πόσις, ἀλλὰ δικαιοσύνη καὶ εἰρήνη καὶ χαρὰ ἐν πνεύματι ἁγίῳ.",
+        "VUL": "Non est enim regnum Dei esca et potus : sed justitia, et pax, et gaudium in Spiritu Sancto :",
+        "SYN": "Ибо Царствие Божие не пища и питие, но праведность и мир и радость во Святом Духе.",
+        "NEO": "Car le royaume de Dieu ce n’est pas le manger et le boire ; mais la justice et la paix et la joie dans l’Esprit-Saint.",
+        "NAB": "For the kingdom of God is not a matter of food and drink, but of righteousness, peace, and joy in the holy Spirit;",
+        "VAT_ES": "Después de todo el Reino de Dios no es cuestión de comida o de bebida, sino de justicia, de paz y de gozo en el Espíritu Santo.",
+        "CEI": "Io mi rallegro della visita di Stefana, di Fortunato e di Acàico, i quali hanno supplito alla vostra assenza;"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Ὁ γὰρ ἐν τούτοις δουλεύων τῷ χριστῷ εὐάρεστος τῷ θεῷ, καὶ δόκιμος τοῖς ἀνθρώποις.",
+        "VUL": "qui enim in hoc servit Christo, placet Deo, et probatus est hominibus.",
+        "SYN": "Кто сим служит Христу, тот угоден Богу и _достоин_ одобрения от людей.",
+        "NEO": "Celui qui sert le Christ de cette manière est agréable à Dieu et approuvé des hommes.",
+        "NAB": "whoever serves Christ in this way is pleasing to God and approved by others.",
+        "VAT_ES": "El que sirve a Cristo de esta manera es agradable a Dios y goza de la aprobación de los hombres.",
+        "CEI": "essi hanno allietato il mio spirito e allieteranno anche il vostro. Sappiate apprezzare siffatte persone."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ἄρα οὖν τὰ τῆς εἰρήνης διώκωμεν, καὶ τὰ τῆς οἰκοδομῆς τῆς εἰς ἀλλήλους.",
+        "VUL": "Itaque quæ pacis sunt, sectemur : et quæ ædificationis sunt, in invicem custodiamus.",
+        "SYN": "Итак будем искать того, что служит к миру и ко взаимному назиданию.",
+        "NEO": "Recherchons donc ce qui contribue à la paix et à l’édification mutuelle.",
+        "NAB": "Let us then pursue what leads to peace and to building up one another.",
+        "VAT_ES": "Busquemos, por lo tanto, lo que contribuye a la paz y a la mutua edificación.",
+        "CEI": "Le comunità dell'Asia vi salutano. Vi salutano molto nel Signore Aquila e Prisca, con la comunità che si raduna nella loro casa."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Μὴ ἕνεκεν βρώματος κατάλυε τὸ ἔργον τοῦ θεοῦ. Πάντα μὲν καθαρά, ἀλλὰ κακὸν τῷ ἀνθρώπῳ τῷ διὰ προσκόμματος ἐσθίοντι.",
+        "VUL": "Noli propter escam destruere opus Dei, omnia quidem sunt munda : sed malum est homini, qui per offendiculum manducat.",
+        "SYN": "Ради пищи не разрушай дела Божия. Все чисто, но худо человеку, который ест на соблазн.",
+        "NEO": "Garde-toi, pour un aliment, de détruire l’œuvre de Dieu. Il est vrai que toutes choses sont pures, mais il est mal à un homme de devenir en mangeant une pierre d’achoppement.",
+        "NAB": "For the sake of food, do not destroy the work of God. Everything is indeed clean, but it is wrong for anyone to become a stumbling block by eating;",
+        "VAT_ES": "No arruines la obra de Dios por un alimento. En realidad, todo es puro, pero se hace malo para el que come provocando escándalo.",
+        "CEI": "Vi salutano i fratelli tutti. Salutatevi a vicenda con il bacio santo."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Καλὸν τὸ μὴ φαγεῖν κρέα, μηδὲ πιεῖν οἶνον, μηδὲ ἐν ᾧ ὁ ἀδελφός σου προσκόπτει ἢ σκανδαλίζεται ἢ ἀσθενεῖ.",
+        "VUL": "Bonum est non manducare carnem, et non bibere vinum, neque in quo frater tuus offenditur, aut scandalizatur, aut infirmatur.",
+        "SYN": "Лучше не есть мяса, не пить вина и не _делать_ ничего _такого,_ отчего брат твой претыкается, или соблазняется, или изнемогает.",
+        "NEO": "Ce qui est bien, c’est de ne pas manger de viande, de ne pas boire de vin, de ne rien faire* qui soit pour ton frère une occasion de chute, [de scandale ou de faiblesse].",
+        "NAB": "it is good not to eat meat or drink wine or do anything that causes your brother to stumble.",
+        "VAT_ES": "Lo mejor es no comer carne ni beber vino ni hacer nada que pueda escandalizar a su hermano.",
+        "CEI": "Il saluto è di mia mano, di Paolo."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Σὺ πίστιν ἔχεις; Κατὰ σεαυτὸν ἔχε ἐνώπιον τοῦ θεοῦ. Μακάριος ὁ μὴ κρίνων ἑαυτὸν ἐν ᾧ δοκιμάζει.",
+        "VUL": "Tu fidem habes ? penes temetipsum habe coram Deo. Beatus qui non judicat semetipsum in eo quod probat.",
+        "SYN": "Ты имеешь веру? имей ее сам в себе, пред Богом. Блажен, кто не осуждает себя в том, что избирает.",
+        "NEO": "As-tu une conviction ? Garde-la pour toi-même devant Dieu. Heureux celui qui ne se condamne pas dans l’acte qu’il approuve.",
+        "NAB": "Keep the faith (that) you have to yourself in the presence of God; blessed is the one who does not condemn himself for what he approves.",
+        "VAT_ES": "Guarda para ti, delante de Dios, lo que te dicta tu propia convicción. &iexcl;Feliz el que no tiene nada que reprocharse por aquello que elige!",
+        "CEI": "Se qualcuno non ama il Signore sia anàtema. Marana tha: vieni, o Signore!"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ διακρινόμενος, ἐὰν φάγῃ, κατακέκριται, ὅτι οὐκ ἐκ πίστεως· πᾶν δὲ ὃ οὐκ ἐκ πίστεως, ἁμαρτία ἐστίν.",
+        "VUL": "Qui autem discernit, si manducaverit, damnatus est : quia non ex fide. Omne autem, quod non est ex fide, peccatum est.",
+        "SYN": "А сомневающийся, если ест, осуждается, потому что не по вере; а все, что не по вере, грех.",
+        "NEO": "Mais celui qui a des doutes, s’il mange, il est condamné, parce qu’il n’agit pas par conviction ; tout ce qui ne procède pas d’une conviction est péché.",
+        "NAB": "But whoever has doubts is condemned if he eats, because this is not from faith; for whatever is not from faith is sin.",
+        "VAT_ES": "Pero el que come a pesar de sus dudas, es culpable porque obra de mala fe. Y todo lo que no se hace de buena fe es pecado.",
+        "CEI": "La grazia del Signore Gesù sia con voi."
+      }
+    }
+  }
+}

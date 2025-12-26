@@ -1,0 +1,321 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MATHE_003",
+  "book_key": "MATHE",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "In diebus autem illis venit Joannes Baptista prædicans in deserto Judææ,",
+        "LXX": "Ἐν δὲ ταῖς ἡμέραις ἐκείναις παραγίνεται Ἰωάννης ὁ βαπτιστής, κηρύσσων ἐν τῇ ἐρήμῳ τῆς Ἰουδαίας,",
+        "SYN": "В те дни приходит Иоанн Креститель и проповедует в пустыне Иудейской",
+        "BYZ": "Ἐν δὲ ταῖς ἡμέραις ἐκείναις παραγίνεται Ἰωάννης ὁ βαπτιστής, κηρύσσων ἐν τῇ ἐρήμῳ τῆς Ἰουδαίας,",
+        "NEO": "En ces jours-là parut Jean-Baptiste, prêchant dans le désert de Judée,",
+        "NAB": "In those days John the Baptist appeared, preaching in the desert of Judea",
+        "VAT_ES": "En aquel tiempo se presentó Juan el Bautista, proclamando en el desierto de Judea:",
+        "CEI": "In quei giorni comparve Giovanni il Battista a predicare nel deserto della Giudea,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "et dicens : Pnitentiam agite : appropinquavit enim regnum cælorum.",
+        "LXX": "καὶ λέγων, Μετανοεῖτε· ἤγγικεν γὰρ ἡ βασιλεία τῶν οὐρανῶν.",
+        "SYN": "и говорит: покайтесь, ибо приблизилось Царство Небесное.",
+        "BYZ": "καὶ λέγων, Μετανοεῖτε· ἤγγικεν γὰρ ἡ βασιλεία τῶν οὐρανῶν.",
+        "NEO": "et disant : « Repentez-vous+ 3:2 III. 2. Repentez-vous: littér, \\+qt changez de sentiments\\+qt*, Μετανοεῖτε, c’est le \\+qt convertissez-vous\\+qt* des anciens Prophètes. — \\+qt Royaume des cieux\\+qt* : Voy. le Vocab.*, car le royaume des cieux est proche. »",
+        "NAB": "(and) saying, \"Repent, for the kingdom of heaven is at hand!\"",
+        "VAT_ES": "«Conviértanse, porque el Reino de los Cielos está cerca».",
+        "CEI": "dicendo: \"Convertitevi, perché il regno dei cieli è vicino!\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "Hic est enim, qui dictus est per Isaiam prophetam dicentem : [Vox clamantis in deserto :/ Parate viam Domini ;/ rectas facite semitas ejus.]",
+        "LXX": "Οὗτος γάρ ἐστιν ὁ ῥηθεὶς ὑπὸ Ἠσαΐου τοῦ προφήτου, λέγοντος, Φωνὴ βοῶντος ἐν τῇ ἐρήμῳ, Ἑτοιμάσατε τὴν ὁδὸν κυρίου· εὐθείας ποιεῖτε τὰς τρίβους αὐτοῦ.",
+        "SYN": "Ибо он тот, о котором сказал пророк Исаия: глас вопиющего в пустыне: приготовьте путь Господу, прямыми сделайте стези Ему.",
+        "BYZ": "Οὗτος γάρ ἐστιν ὁ ῥηθεὶς ὑπὸ Ἠσαΐου τοῦ προφήτου, λέγοντος, Φωνὴ βοῶντος ἐν τῇ ἐρήμῳ, Ἑτοιμάσατε τὴν ὁδὸν κυρίου· εὐθείας ποιεῖτε τὰς τρίβους αὐτοῦ.",
+        "NEO": "C’est lui qui a été annoncé par le prophète Isaïe, disant : « \\+w Une|strong=\"G1722\"\\+w* \\+w voix|strong=\"G5456\"\\+w* \\+w a|strong=\"G1722\"\\+w* retenti \\+w au|strong=\"G1722\"\\+w* \\+w désert|strong=\"G2048\"\\+w* : \\+w Préparez|strong=\"G2090\"\\+w* \\+w le|strong=\"G1722\"\\+w* \\+w chemin|strong=\"G3598\"\\+w* \\+w du|strong=\"G1722\"\\+w* \\+w Seigneur|strong=\"G2962\"\\+w*, \\+w aplanissez|strong=\"G4160\"\\+w* \\+w ses|strong=\"G1722\"\\+w* \\+w sentiers|strong=\"G5147\"\\+w**. »+ 3:3 3. Dans ce passage, Isaïe (xl, 3-5) contemple et décrit d’une manière dramatique le retour des Juifs après l’exil de Babylone : Yahweh, leur roi, s’avance à leur tête, suivant l’usage de l’Orient, un héraut le précède pour annoncer son passage et faire aplanir les chemins devant lui. Dans le sens typique, Israël revenant de la Chaldée représente les enfants de Dieu sortant, sous la conduite du Dieu Sauveur, de la captivité du péché ; le héraut, c’est Jean-Baptiste, le Précurseur. Les trois autres évangélistes ont également signalé ce rapport prophétique (Marc, i, 3 ; Luc, iii, 4 ; Jean, i, 23)*",
+        "NAB": "It was of him that the prophet Isaiah had spoken when he said: \"A voice of one crying out in the desert, 'Prepare the way of the Lord, make straight his paths.'\"",
+        "VAT_ES": "A él se refería el profeta Isaías cuando dijo: \"Una voz grita en el desierto: Preparen el camino del Señor, allanen sus senderos\".",
+        "CEI": "Egli è colui che fu annunziato dal profeta Isaia quando disse: Voce di uno che grida nel deserto: Preparate la via del Signore, raddrizzate i suoi sentieri!"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "Ipse autem Joannes habebat vestimentum de pilis camelorum, et zonam pelliceam circa lumbos suos : esca autem ejus erat locustæ, et mel silvestre.",
+        "LXX": "Αὐτὸς δὲ ὁ Ἰωάννης εἶχεν τὸ ἔνδυμα αὐτοῦ ἀπὸ τριχῶν καμήλου, καὶ ζώνην δερματίνην περὶ τὴν ὀσφὺν αὐτοῦ· ἡ δὲ τροφὴ αὐτοῦ ἦν ἀκρίδες καὶ μέλι ἄγριον.",
+        "SYN": "Сам же Иоанн имел одежду из верблюжьего волоса и пояс кожаный на чреслах своих, а пищею его были акриды и дикий мед.",
+        "BYZ": "Αὐτὸς δὲ ὁ Ἰωάννης εἶχεν τὸ ἔνδυμα αὐτοῦ ἀπὸ τριχῶν καμήλου, καὶ ζώνην δερματίνην περὶ τὴν ὀσφὺν αὐτοῦ· ἡ δὲ τροφὴ αὐτοῦ ἦν ἀκρίδες καὶ μέλι ἄγριον.",
+        "NEO": "Or Jean avait un vêtement de poils de chameau, et autour de ses reins une ceinture de cuir, et il se nourrissait de sauterelles et de miel sauvage.",
+        "NAB": "John wore clothing made of camel's hair and had a leather belt around his waist. His food was locusts and wild honey.",
+        "VAT_ES": "Juan tenía una túnica de pelos de camello y un cinturón de cuero, y se alimentaba con langostas y miel silvestre.",
+        "CEI": "Giovanni portava un vestito di peli di cammello e una cintura di pelle attorno ai fianchi; il suo cibo erano locuste e miele selvatico."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Tunc exibat ad eum Jerosolyma, et omnis Judæa, et omnis regio circa Jordanem ;",
+        "LXX": "Τότε ἐξεπορεύετο πρὸς αὐτὸν Ἱεροσόλυμα καὶ πᾶσα ἡ Ἰουδαία καὶ πᾶσα ἡ περίχωρος τοῦ Ἰορδάνου·",
+        "SYN": "Тогда Иерусалим и вся Иудея и вся окрестность Иорданская выходили к нему",
+        "BYZ": "Τότε ἐξεπορεύετο πρὸς αὐτὸν Ἱεροσόλυμα καὶ πᾶσα ἡ Ἰουδαία καὶ πᾶσα ἡ περίχωρος τοῦ Ἰορδάνου·",
+        "NEO": "Alors venaient à lui Jérusalem, et toute la Judée, et tout le pays qu’arrose le Jourdain.",
+        "NAB": "At that time Jerusalem, all Judea, and the whole region around the Jordan were going out to him",
+        "VAT_ES": "La gente de Jerusalén, de toda la Judea y de toda la región del Jordán iba a su encuentro,",
+        "CEI": "Allora accorrevano a lui da Gerusalemme, da tutta la Giudea e dalla zona adiacente il Giordano;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "et baptizabantur ab eo in Jordane, confitentes peccata sua.",
+        "LXX": "καὶ ἐβαπτίζοντο ἐν τῷ Ἰορδάνῃ ὑπ’ αὐτοῦ, ἐξομολογούμενοι τὰς ἁμαρτίας αὐτῶν.",
+        "SYN": "и крестились от него в Иордане, исповедуя грехи свои.",
+        "BYZ": "καὶ ἐβαπτίζοντο ἐν τῷ Ἰορδάνῃ ὑπ’ αὐτοῦ, ἐξομολογούμενοι τὰς ἁμαρτίας αὐτῶν.",
+        "NEO": "Et, confessant leurs péchés, ils se faisaient baptiser par lui dans le Jourdain.",
+        "NAB": "and were being baptized by him in the Jordan River as they acknowledged their sins.",
+        "VAT_ES": "y se hacía bautizar por él en las aguas del Jordán, confesando sus pecados.",
+        "CEI": "e, confessando i loro peccati, si facevano battezzare da lui nel fiume Giordano."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Videns autem multos pharisæorum, et sadducæorum, venientes ad baptismum suum, dixit eis : Progenies viperarum, quis demonstravit vobis fugere a ventura ira ?",
+        "LXX": "Ἰδὼν δὲ πολλοὺς τῶν Φαρισαίων καὶ Σαδδουκαίων ἐρχομένους ἐπὶ τὸ βάπτισμα αὐτοῦ, εἶπεν αὐτοῖς, Γεννήματα ἐχιδνῶν, τίς ὑπέδειξεν ὑμῖν φυγεῖν ἀπὸ τῆς μελλούσης ὀργῆς;",
+        "SYN": "Увидев же Иоанн многих фарисеев и саддукеев, идущих к нему креститься, сказал им: порождения ехиднины! кто внушил вам бежать от будущего гнева?",
+        "BYZ": "Ἰδὼν δὲ πολλοὺς τῶν Φαρισαίων καὶ Σαδδουκαίων ἐρχομένους ἐπὶ τὸ βάπτισμα αὐτοῦ, εἶπεν αὐτοῖς, Γεννήματα ἐχιδνῶν, τίς ὑπέδειξεν ὑμῖν φυγεῖν ἀπὸ τῆς μελλούσης ὀργῆς;",
+        "NEO": "Voyant un grand nombre de Pharisiens et de Sadducéens venir à ce baptême il leur dit : « Race de vipères, qui vous a appris à fuir la colère qui vient ?+ 3:7 7. La colère qui vient, le dernier jugement (comp. Rom. i, 18 ; Eph. ii, 4), conçu dans l’Ancien Testament comme lié à l’avènement du Messie.*",
+        "NAB": "When he saw many of the Pharisees and Sadducees coming to his baptism, he said to them, \"You brood of vipers! Who warned you to flee from the coming wrath?",
+        "VAT_ES": "Al ver que muchos fariseos y saduceos se acercaban a recibir su bautismo, Juan les dijo: «Raza de víboras, &iquest;quién les enseñó a escapar de la ira de Dios que se acerca?",
+        "CEI": "Vedendo però molti farisei e sadducei venire al suo battesimo, disse loro: \"Razza di vipere! Chi vi ha suggerito di sottrarvi all'ira imminente?"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Facite ergo fructum dignum pnitentiæ.",
+        "LXX": "Ποιήσατε οὖν καρπὸν ἄξιον τῆς μετανοίας·",
+        "SYN": "сотворите же достойный плод покаяния",
+        "BYZ": "Ποιήσατε οὖν καρπὸν ἄξιον τῆς μετανοίας·",
+        "NEO": "Faites donc de dignes fruits de repentir.",
+        "NAB": "Produce good fruit as evidence of your repentance.",
+        "VAT_ES": "Produzcan el fruto de una sincera conversión,",
+        "CEI": "Fate dunque frutti degni di conversione,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "Et ne velitis dicere intra vos : Patrem habemus Abraham. Dico enim vobis quoniam potens est Deus de lapidibus istis suscitare filios Abrahæ.",
+        "LXX": "καὶ μὴ δόξητε λέγειν ἐν ἑαυτοῖς, Πατέρα ἔχομεν τὸν Ἀβραάμ· λέγω γὰρ ὑμῖν ὅτι δύναται ὁ θεὸς ἐκ τῶν λίθων τούτων ἐγεῖραι τέκνα τῷ Ἀβραάμ.",
+        "SYN": "и не думайте говорить в себе: \"отец у нас Авраам\", ибо говорю вам, что Бог может из камней сих воздвигнуть детей Аврааму.",
+        "BYZ": "καὶ μὴ δόξητε λέγειν ἐν ἑαυτοῖς, Πατέρα ἔχομεν τὸν Ἀβραάμ· λέγω γὰρ ὑμῖν ὅτι δύναται ὁ θεὸς ἐκ τῶν λίθων τούτων ἐγεῖραι τέκνα τῷ Ἀβραάμ.",
+        "NEO": "Et n’essayez pas de dire en vous-mêmes : Nous avons Abraham pour père ; car je vous dis que de ces pierres mêmes Dieu peut faire naître des enfants à Abraham.",
+        "NAB": "And do not presume to say to yourselves, 'We have Abraham as our father.' For I tell you, God can raise up children to Abraham from these stones.",
+        "VAT_ES": "y no se contenten con decir: «Tenemos por padre a Abraham». Porque yo les digo que de estas piedras Dios puede hacer surgir hijos de Abraham.",
+        "CEI": "e non crediate di poter dire fra voi: Abbiamo Abramo per padre. Vi dico che Dio può far sorgere figli di Abramo da queste pietre."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Jam enim securis ad radicem arborum posita est. Omnis ergo arbor, quæ non facit fructum bonum, excidetur, et in ignem mittetur.",
+        "LXX": "Ἤδη δὲ καὶ ἡ ἀξίνη πρὸς τὴν ῥίζαν τῶν δένδρων κεῖται· πᾶν οὖν δένδρον μὴ ποιοῦν καρπὸν καλὸν ἐκκόπτεται καὶ εἰς πῦρ βάλλεται.",
+        "SYN": "Уже и секира при корне дерев лежит: всякое дерево, не приносящее доброго плода, срубают и бросают в огонь.",
+        "BYZ": "Ἤδη δὲ καὶ ἡ ἀξίνη πρὸς τὴν ῥίζαν τῶν δένδρων κεῖται· πᾶν οὖν δένδρον μὴ ποιοῦν καρπὸν καλὸν ἐκκόπτεται καὶ εἰς πῦρ βάλλεται.",
+        "NEO": "Déjà la cognée est à la racine des arbres : tout arbre donc qui ne porte pas de bon fruit sera coupé et jeté au feu.",
+        "NAB": "Even now the ax lies at the root of the trees. Therefore every tree that does not bear good fruit will be cut down and thrown into the fire.",
+        "VAT_ES": "El hacha ya está puesta a la raíz de los árboles: el árbol que no produce buen fruto será cortado y arrojado al fuego.",
+        "CEI": "Gia la scure è posta alla radice degli alberi: ogni albero che non produce frutti buoni viene tagliato e gettato nel fuoco."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Ego quidem baptizo vos in aqua in pnitentiam : qui autem post me venturus est, fortior me est, cujus non sum dignus calceamenta portare : ipse vos baptizabit in Spiritu Sancto, et igni.",
+        "LXX": "Ἐγὼ μὲν βαπτίζω ὑμᾶς ἐν ὕδατι εἰς μετάνοιαν· ὁ δὲ ὀπίσω μου ἐρχόμενος ἰσχυρότερός μου ἐστίν, οὗ οὐκ εἰμὶ ἱκανὸς τὰ ὑποδήματα βαστάσαι· αὐτὸς ὑμᾶς βαπτίσει ἐν πνεύματι ἁγίῳ.",
+        "SYN": "Я крещу вас в воде в покаяние, но Идущий за мною сильнее меня; я не достоин понести обувь Его; Он будет крестить вас Духом Святым и огнем;",
+        "BYZ": "Ἐγὼ μὲν βαπτίζω ὑμᾶς ἐν ὕδατι εἰς μετάνοιαν· ὁ δὲ ὀπίσω μου ἐρχόμενος ἰσχυρότερός μου ἐστίν, οὗ οὐκ εἰμὶ ἱκανὸς τὰ ὑποδήματα βαστάσαι· αὐτὸς ὑμᾶς βαπτίσει ἐν πνεύματι ἁγίῳ.",
+        "NEO": "Moi, je vous baptise dans l’eau pour le repentir ; mais celui qui doit venir après moi est plus puissant que moi, et je ne suis pas digne de porter sa chaussure ; il vous baptisera dans l’Esprit-Saint et dans le feu.",
+        "NAB": "I am baptizing you with water, for repentance, but the one who is coming after me is mightier than I. I am not worthy to carry his sandals. He will baptize you with the holy Spirit and fire.",
+        "VAT_ES": "Yo los bautizo con agua para que se conviertan; pero aquel que viene detrás de mí es más poderoso que yo, y yo ni siquiera soy digno de quitarle las sandalias. El los bautizará en el Espíritu Santo y en el fuego.",
+        "CEI": "Io vi battezzo con acqua per la conversione; ma colui che viene dopo di me è più potente di me e io non son degno neanche di portargli i sandali; egli vi battezzerà in Spirito santo e fuoco."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "Cujus ventilabrum in manu sua : et permundabit aream suam : et congregabit triticum suum in horreum, paleas autem comburet igni inextinguibili.",
+        "LXX": "Οὗ τὸ πτύον ἐν τῇ χειρὶ αὐτοῦ, καὶ διακαθαριεῖ τὴν ἅλωνα αὐτοῦ, καὶ συνάξει τὸν σῖτον αὐτοῦ εἰς τὴν ἀποθήκην, τὸ δὲ ἄχυρον κατακαύσει πυρὶ ἀσβέστῳ.",
+        "SYN": "лопата Его в руке Его, и Он очистит гумно Свое и соберет пшеницу Свою в житницу, а солому сожжет огнем неугасимым.",
+        "BYZ": "Οὗ τὸ πτύον ἐν τῇ χειρὶ αὐτοῦ, καὶ διακαθαριεῖ τὴν ἅλωνα αὐτοῦ, καὶ συνάξει τὸν σῖτον αὐτοῦ εἰς τὴν ἀποθήκην, τὸ δὲ ἄχυρον κατακαύσει πυρὶ ἀσβέστῳ.",
+        "NEO": "Sa main tient le van ; il nettoiera son aire, il amassera son froment dans le grenier, et il brûlera la paille dans un feu qui ne s’éteint pas. »",
+        "NAB": "His winnowing fan is in his hand. He will clear his threshing floor and gather his wheat into his barn, but the chaff he will burn with unquenchable fire.\"",
+        "VAT_ES": "Tiene en su mano la horquilla y limpiará su era: recogerá su trigo en el granero y quemará la paja en un fuego inextinguible».",
+        "CEI": "Egli ha in mano il ventilabro, pulirà la sua aia e raccoglierà il suo grano nel granaio, ma brucerà la pula con un fuoco inestinguibile\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "Tunc venit Jesus a Galilæa in Jordanem ad Joannem, ut baptizaretur ab eo.",
+        "LXX": "Τότε παραγίνεται ὁ Ἰησοῦς ἀπὸ τῆς Γαλιλαίας ἐπὶ τὸν Ἰορδάνην πρὸς τὸν Ἰωάννην, τοῦ βαπτισθῆναι ὑπ’ αὐτοῦ.",
+        "SYN": "Тогда приходит Иисус из Галилеи на Иордан к Иоанну креститься от него.",
+        "BYZ": "¶Τότε παραγίνεται ὁ Ἰησοῦς ἀπὸ τῆς Γαλιλαίας ἐπὶ τὸν Ἰορδάνην πρὸς τὸν Ἰωάννην, τοῦ βαπτισθῆναι ὑπ’ αὐτοῦ.",
+        "NEO": "Alors Jésus, venant de Galilée, alla trouver Jean au Jourdain pour être baptisé par lui.",
+        "NAB": "Then Jesus came from Galilee to John at the Jordan to be baptized by him.",
+        "VAT_ES": "Entonces Jesús fue desde Galilea hasta el Jordán y se presentó a Juan para ser bautizado por él.",
+        "CEI": "In quel tempo Gesù dalla Galilea andò al Giordano da Giovanni per farsi battezzare da lui."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Joannes autem prohibebat eum, dicens : Ego a te debeo baptizari, et tu venis ad me ?",
+        "LXX": "Ὁ δὲ Ἰωάννης διεκώλυεν αὐτόν, λέγων, Ἐγὼ χρείαν ἔχω ὑπὸ σοῦ βαπτισθῆναι, καὶ σὺ ἔρχῃ πρός με;",
+        "SYN": "Иоанн же удерживал Его и говорил: мне надобно креститься от Тебя, и Ты ли приходишь ко мне?",
+        "BYZ": "Ὁ δὲ Ἰωάννης διεκώλυεν αὐτόν, λέγων, Ἐγὼ χρείαν ἔχω ὑπὸ σοῦ βαπτισθῆναι, καὶ σὺ ἔρχῃ πρός με;",
+        "NEO": "Jean s’en défendait en disant : « C’est moi qui doit être baptisé par vous, et vous venez à moi ! »",
+        "NAB": "John tried to prevent him, saying, \"I need to be baptized by you, and yet you are coming to me?\"",
+        "VAT_ES": "Juan se resistía, diciéndole: «Soy yo el que tiene necesidad de ser bautizado por ti, &iexcl;y eres tú el que viene a mi encuentro!».",
+        "CEI": "Giovanni però voleva impedirglielo, dicendo: \"Io ho bisogno di essere battezzato da te e tu vieni da me?\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Respondens autem Jesus, dixit ei : Sine modo : sic enim decet nos implere omnem justitiam. Tunc dimisit eum.",
+        "LXX": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν πρὸς αὐτόν, Ἄφες ἄρτι· οὕτως γὰρ πρέπον ἐστὶν ἡμῖν πληρῶσαι πᾶσαν δικαιοσύνην. Τότε ἀφίησιν αὐτόν.",
+        "SYN": "Но Иисус сказал ему в ответ: оставь теперь, ибо так надлежит нам исполнить всякую правду. Тогда _Иоанн_ допускает Его.",
+        "BYZ": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν πρὸς αὐτόν, Ἄφες ἄρτι· οὕτως γὰρ πρέπον ἐστὶν ἡμῖν πληρῶσαι πᾶσαν δικαιοσύνην. Τότε ἀφίησιν αὐτόν.",
+        "NEO": "Jésus lui répondit : « Laisse faire maintenant, car il convient que nous accomplissions ainsi toute justice. » Alors Jean le laissa faire.",
+        "NAB": "Jesus said to him in reply, \"Allow it now, for thus it is fitting for us to fulfill all righteousness.\" Then he allowed him.",
+        "VAT_ES": "Pero Jesús le respondió: «Ahora déjame hacer esto, porque conviene que así cumplamos todo lo que es justo». Y Juan se lo permitió.",
+        "CEI": "Ma Gesù gli disse: \"Lascia fare per ora, poiché conviene che così adempiamo ogni giustizia\". Allora Giovanni acconsentì."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "Baptizatus autem Jesus, confestim ascendit de aqua, et ecce aperti sunt ei cæli : et vidit Spiritum Dei descendentem sicut columbam, et venientem super se.",
+        "LXX": "Καὶ βαπτισθεὶς ὁ Ἰησοῦς ἀνέβη εὐθὺς ἀπὸ τοῦ ὕδατος· καὶ ἰδού, ἀνεῴχθησαν αὐτῷ οἱ οὐρανοί, καὶ εἶδεν τὸ πνεῦμα τοῦ θεοῦ καταβαῖνον ὡσεὶ περιστερὰν καὶ ἐρχόμενον ἐπ’ αὐτόν.",
+        "SYN": "И, крестившись, Иисус тотчас вышел из воды, -- и се, отверзлись Ему небеса, и увидел _Иоанн_ Духа Божия, Который сходил, как голубь, и ниспускался на Него.",
+        "BYZ": "Καὶ βαπτισθεὶς ὁ Ἰησοῦς ἀνέβη εὐθὺς ἀπὸ τοῦ ὕδατος· καὶ ἰδού, ἀνεῴχθησαν αὐτῷ οἱ οὐρανοί, καὶ εἶδεν τὸ πνεῦμα τοῦ θεοῦ καταβαῖνον ὡσεὶ περιστερὰν καὶ ἐρχόμενον ἐπ’ αὐτόν.",
+        "NEO": "Jésus ayant été baptisé sortit aussitôt de l’eau, et voilà que les cieux lui furent ouverts, et il vit l’Esprit de Dieu descendre comme une colombe et venir sur lui.",
+        "NAB": "After Jesus was baptized, he came up from the water and behold, the heavens were opened (for him), and he saw the Spirit of God descending like a dove (and) coming upon him.",
+        "VAT_ES": "Apenas fue bautizado, Jesús salió del agua. En ese momento se abrieron los cielos, y vio al Espíritu de Dios descender como una paloma y dirigirse hacia él.",
+        "CEI": "Appena battezzato, Gesù uscì dall'acqua: ed ecco, si aprirono i cieli ed egli vide lo Spirito di Dio scendere come una colomba e venire su di lui."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Et ecce vox de cælis dicens : Hic est Filius meus dilectus, in quo mihi complacui.",
+        "LXX": "Καὶ ἰδού, φωνὴ ἐκ τῶν οὐρανῶν, λέγουσα, Οὗτός ἐστιν ὁ υἱός μου ὁ ἀγαπητός, ἐν ᾧ εὐδόκησα.",
+        "SYN": "И се, глас с небес глаголющий: Сей есть Сын Мой возлюбленный, в Котором Мое благоволение.",
+        "BYZ": "Καὶ ἰδού, φωνὴ ἐκ τῶν οὐρανῶν, λέγουσα, Οὗτός ἐστιν ὁ υἱός μου ὁ ἀγαπητός, ἐν ᾧ εὐδόκησα.",
+        "NEO": "Et du ciel une voix disait : « Celui-ci est mon Fils bien-aimé, en qui j’ai mis mes complaisances. »",
+        "NAB": "And a voice came from the heavens, saying, \"This is my beloved Son, with whom I am well pleased.\"",
+        "VAT_ES": "Y se oyó una voz del cielo que decía: «Este es mi Hijo muy querido, en quien tengo puesta toda mi predilección».",
+        "CEI": "Ed ecco una voce dal cielo che disse: \"Questi è il Figlio mio prediletto, nel quale mi sono compiaciuto\"."
+      }
+    }
+  }
+}

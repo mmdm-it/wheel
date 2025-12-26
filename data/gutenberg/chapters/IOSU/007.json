@@ -1,0 +1,483 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOSU_007",
+  "book_key": "IOSU",
+  "sequence": 7,
+  "chapter_in": {
+    "MT": 7,
+    "VUL": 7,
+    "LXX": 7
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יִּמְעֲל֧וּ בְנֵֽי יִשְׂרָאֵ֛ל מַ֖עַל בַּ/חֵ֑רֶם וַ/יִּקַּ֡ח עָכָ֣ן בֶּן כַּרְמִי֩ בֶן זַבְדִּ֨י בֶן זֶ֜רַח לְ/מַטֵּ֤ה יְהוּדָה֙ מִן הַ/חֵ֔רֶם וַ/יִּֽחַר אַ֥ף יְהוָ֖ה בִּ/בְנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "Καὶ ἐπλημμέλησαν οἱ υἱοὶ Ἰσραὴλ πλημμελίαν μεγάλην καὶ ἐνοσφίσαντο ἀπὸ τοῦ ἀναθέματος· καὶ ἔλαβεν Ἀχὰρ υἱὸς Χαρμεὶ υἱοῦ ⸂⸆⸃ Ζαμβρεὶ υἱοῦ Ζάρα ἐκ τῆς φυλῆς Ἰούδα ἀπὸ τοῦ ἀναθέματος· καὶ ἐθυμώθη ὀργῇ Κύριος τοῖς υἱοῖς Ἰσραήλ.",
+        "VUL": "Filii autem Israël prævaricati sunt mandatum, et usurpaverunt de anathemate. Nam Achan filius Charmi filii Zabdi filii Zare de tribu Juda tulit aliquid de anathemate : iratusque est Dominus contra filios Israël.",
+        "SYN": "Но сыны Израилевы сделали [великое] преступление [и взяли] из заклятого. Ахан, сын Хармия, сына Завдия, сына Зары, из колена Иудина, взял из заклятого, и гнев Господень возгорелся на сынов Израиля.",
+        "NEO": "Les enfants d’Israël commirent une infidélité au sujet de l’anathème. Achan, fils de Charmi, fils de Zabdi, fils de Zaré, de la tribu de Juda, prit des choses dévouées, et la colère de \\+w Yahweh|strong=\"H3068\"\\+w** s’enflamma contre les enfants d’Israël.",
+        "NAB": "But the Israelites violated the ban; Achan, son of Carmi, son of Zerah, son of Zara of the tribe of Judah, took goods that were under the ban, and the anger of the LORD flared up against the Israelites.",
+        "VAT_ES": "Pero los israelitas cometieron una infidelidad con las cosas que debían ser consagradas al exterminio. En efecto, Acán –hijo de Carmí, hijo de Zabdí, hijo de Zéraj, de la tribu de Judá– se reservó algunas de esas cosas, y la ira del Señor se encendió contra los israelitas.",
+        "CEI": "Gli Israeliti si resero colpevoli di violazione quanto allo sterminio: Acan, figlio di Carmi, figlio di Zabdi, figlio di Zerach, della tribù di Giuda, si impadronì di quanto era votato allo sterminio e allora la collera del Signore si accese contro gli Israeliti."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַח֩ יְהוֹשֻׁ֨עַ אֲנָשִׁ֜ים מִֽ/ירִיח֗וֹ הָ/עַ֞י אֲשֶׁ֨ר עִם בֵּ֥ית אָ֨וֶן֙ מִ/קֶּ֣דֶם לְ/בֵֽית אֵ֔ל וַ/יֹּ֤אמֶר אֲלֵי/הֶם֙ לֵ/אמֹ֔ר עֲל֖וּ וְ/רַגְּל֣וּ אֶת הָ/אָ֑רֶץ וַֽ/יַּעֲלוּ֙ הָ/אֲנָשִׁ֔ים וַֽ/יְרַגְּל֖וּ אֶת הָ/עָֽי׃",
+        "LXX": "Καὶ ἀπέστειλεν Ἰησοῦς ἄνδρας εἰς Γαί, ἥ ἐστιν κατὰ Βαιθήλ, λέγων Κατασκέψασθε τὴν Γαί.",
+        "VUL": "Cumque mitteret Josue de Jericho viros contra Hai, quæ est juxta Bethaven, ad orientalem plagam oppidi Bethel, dixit eis : Ascendite, et explorate terram. Qui præcepta complentes exploraverunt Hai.",
+        "SYN": "Иисус из Иерихона послал людей в Гай, что близ Беф-Авена, с восточной стороны Вефиля, и сказал им: пойдите, осмотрите землю. Они пошли и осмотрели Гай.",
+        "NEO": "Josué envoya de Jéricho des hommes vers Haï, qui est près de Beth-Aven, à l’orient de Béthel ; il leur dit : « Montez et explorez le pays. » Ces hommes montèrent et explorèrent Haï.",
+        "NAB": "Joshua next sent men from Jericho to Ai, which is near Bethel on its eastern side, with instructions to go up and reconnoiter the land. When they had explored Ai,",
+        "VAT_ES": "Desde Jericó, Josué envió unos hombres a Ai, que está cerca de Bet Aven, al este de Betel, con esta consigna: «Suban a explorar la región». Los hombres subieron hasta Ai, la exploraron,",
+        "CEI": "Giosuè inviò uomini di Gerico ad Ai, che è presso Bet-Aven, ad oriente di Betel. Disse loro: \"Andate a esplorare la regione\". Gli uomini andarono a esplorare Ai."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יָּשֻׁ֣בוּ אֶל יְהוֹשֻׁ֗עַ וַ/יֹּאמְר֣וּ אֵלָי/ו֮ אַל יַ֣עַל כָּל הָ/עָם֒ כְּ/אַלְפַּ֣יִם אִ֗ישׁ א֚וֹ כִּ/שְׁלֹ֣שֶׁת אֲלָפִ֣ים אִ֔ישׁ יַעֲל֖וּ וְ/יַכּ֣וּ אֶת הָ/עָ֑י אַל תְּיַגַּע שָׁ֨מָּ/ה֙ אֶת כָּל הָ/עָ֔ם כִּ֥י מְעַ֖ט הֵֽמָּה׃",
+        "LXX": "καὶ ἀνέβησαν οἱ ἄνδρες καὶ κατεσκέψαντο τὴν Γαί, καὶ ἀνέστρεψαν πρὸς Ἰησοῦν καὶ εἶπαν πρὸς αὐτόν Μὴ ἀναβήτω πᾶς ὁ λαός, ἀλλ’ ὡς δισχίλιοι ἢ τρισχίλιοι ἄνδρες ἀναβήτωσαν καὶ ἐκπολιορκησάτωσαν τὴν πόλιν· μὴ ἀναγάγῃς ἐκεῖ τὸν λαὸν πάντα, ὀλίγοι γάρ εἰσιν.",
+        "VUL": "Et reversi dixerunt ei : Non ascendat omnis populus, sed duo vel tria millia virorum pergant, et deleant civitatem : quare omnis populus frustra vexabitur contra hostes paucissimos ?",
+        "SYN": "И возвратившись к Иисусу, сказали ему: не весь народ пусть идет, а пусть пойдет около двух тысяч или около трех тысяч человек, и поразят Гай; всего народа не утруждай туда, ибо их мало [там].",
+        "NEO": "Revenus auprès de Josué, ils lui dirent : « Que le peuple ne monte pas tout entier ! Deux mille hommes ou trois mille hommes n’ont qu’à monter et ils battront Haï ; ne fatigue pas tout le peuple pour cette ville, car ses habitants sont peu nombreux. »",
+        "NAB": "they returned to Joshua and advised, \"Do not send all the people up; if only about two or three thousand go up, they can overcome Ai. The enemy there are few; you need not call for an effort from all the people.\"",
+        "VAT_ES": "y cuando estuvieron de regreso, dijeron a Josué: «no es necesario que se movilice toda la gente. Dos o tres mil hombres bastan para derrotar a Ai. No fatigues a todos haciéndolos ir hasta allá, porque ellos son unos pocos».",
+        "CEI": "Poi ritornarono da Giosuè e gli dissero: \"Non vada tutto il popolo; vadano all'assalto due o tremila uomini per espugnare Ai; non impegnateci tutto il popolo, perché sono pochi\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲל֤וּ מִן הָ/עָם֙ שָׁ֔מָּ/ה כִּ/שְׁלֹ֥שֶׁת אֲלָפִ֖ים אִ֑ישׁ וַ/יָּנֻ֕סוּ לִ/פְנֵ֖י אַנְשֵׁ֥י הָ/עָֽי׃",
+        "LXX": "καὶ ἀνέβησαν ὡσεὶ τρισχίλιοι ἄνδρες, καὶ ἔφυγον ἀπὸ προσώπου τῶν ἀνδρῶν Γαί.",
+        "VUL": "Ascenderunt ergo tria millia pugnatorum. Qui statim terga vertentes,",
+        "SYN": "Итак пошло туда из народа около трех тысяч человек, но они обратились в бегство от жителей Гайских;",
+        "NEO": "Environ trois mille hommes du peuple y montèrent, mais ils prirent la fuite devant les hommes d’Haï.",
+        "NAB": "About three thousand of the people made the attack, but they were defeated by those at Ai,",
+        "VAT_ES": "Entonces subieron contra Ai unos tres mil hombres del pueblo, pero tuvieron que huir ante los hombres de Ai,",
+        "CEI": "Vi andarono allora del popolo circa tremila uomini, ma si diedero alla fuga dinanzi agli uomini di Ai."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יַּכּ֨וּ מֵ/הֶ֜ם אַנְשֵׁ֣י הָ/עַ֗י כִּ/שְׁלֹשִׁ֤ים וְ/שִׁשָּׁה֙ אִ֔ישׁ וַֽ/יִּרְדְּפ֞וּ/ם לִ/פְנֵ֤י הַ/שַּׁ֨עַר֙ עַד הַ/שְּׁבָרִ֔ים וַ/יַּכּ֖וּ/ם בַּ/מּוֹרָ֑ד וַ/יִּמַּ֥ס לְבַב הָ/עָ֖ם וַ/יְהִ֥י לְ/מָֽיִם׃",
+        "LXX": "καὶ ἀπέκτειναν ἀπ’ αὐτῶν ἄνδρες Γαὶ εἰς τριάκοντα καὶ ἓξ ἄνδρας, καὶ κατεδίωξαν αὐτοὺς ἀπὸ τῆς πύλης καὶ συνέτριψαν αὐτοὺς ἀπὸ τοῦ καταφεροῦς· καὶ ἐπτοήθη ἡ καρδία τοῦ λαοῦ καὶ ἐγένετο ὥσπερ ὕδωρ.",
+        "VUL": "percussi sunt a viris urbis Hai, et corruerunt ex eis triginta sex homines : persecutique sunt eos adversarii de porta usque ad Sabarim, et ceciderunt per prona fugientes : pertimuitque cor populi, et instar aquæ liquefactum est.",
+        "SYN": "жители Гайские убили из них до тридцати шести человек, и преследовали их от ворот до Севарим и разбили их на спуске с горы; отчего сердце народа растаяло и стало, как вода.",
+        "NEO": "Les gens d’Haï leur tuèrent environ trente-six hommes ; ils les poursuivirent depuis la porte jusqu’à Sabarim, et les battirent à la descente. Et le cœur du peuple se fondit et il perdit tout courage.",
+        "NAB": "who killed some thirty-six of them. They pressed them back across the clearing in front of the city gate till they broke ranks, and defeated them finally on the descent, so that the confidence of the people melted away like water.",
+        "VAT_ES": "que mataron a unos treinta y seis israelitas, los persiguieron desde la puerta de la ciudad hasta Sebarím y los derrotaron en la bajada. Ante esto, el pueblo quedó deprimido y sintió desfallecer.",
+        "CEI": "Gli uomini di Ai ne uccisero circa trentasei, li inseguirono davanti alla porta fino a Sebarim e li colpirono nella discesa. Allora al popolo venne meno il cuore e si sciolse come acqua."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרַ֨ע יְהוֹשֻׁ֜עַ שִׂמְלֹתָ֗י/ו וַ/יִּפֹּל֩ עַל פָּנָ֨י/ו אַ֜רְצָ/ה לִ/פְנֵ֨י אֲר֤וֹן יְהוָה֙ עַד הָ/עֶ֔רֶב ה֖וּא וְ/זִקְנֵ֣י יִשְׂרָאֵ֑ל וַ/יַּעֲל֥וּ עָפָ֖ר עַל רֹאשָֽׁ/ם׃",
+        "LXX": "καὶ διέρρηξεν Ἰησοῦς τὰ ἱμάτια αὐτοῦ· καὶ ἔπεσεν Ἰησοῦς ἐπὶ τὴν γῆν ἐπὶ πρόσωπον ἐναντίον Κυρίου ἕως ἑσπέρας, αὐτὸς καὶ οἱ πρεσβύτεροι Ἰσραήλ, καὶ ἐπεβάλοντο χοῦν ἐπὶ τὰς κεφαλὰς αὐτῶν.",
+        "VUL": "Josue vero scidit vestimenta sua, et pronus cecidit in terram coram arca Domini usque ad vesperam, tam ipse quam omnes senes Israël : miseruntque pulverem super capita sua,",
+        "SYN": "Иисус разодрал одежды свои и пал лицем своим на землю пред ковчегом Господним _и_ _лежал_ до самого вечера, он и старейшины Израилевы, и посыпали прахом головы свои.",
+        "NEO": "Josué déchira ses vêtements et se prosterna, le visage contre terre, devant l’arche de \\+w Yahweh|strong=\"H3068\"\\+w**, jusqu’au soir, lui et les anciens d’Israël, et ils jetèrent de la poussière sur leur tête.",
+        "NAB": "Joshua, together with the elders of Israel, rent his garments and lay prostrate before the ark of the LORD until evening; and they threw dust on their heads.",
+        "VAT_ES": "Josué desgarró sus vestiduras y se postró hasta la tarde delante del Arca del Señor, con el rostro en tierra. Los ancianos de Israel hicieron lo mismo, y todos esparcieron polvo sobre sus cabezas.",
+        "CEI": "Giosuè si stracciò le vesti, si prostrò con la faccia a terra davanti all'arca del Signore fino alla sera e con lui gli anziani di Israele e sparsero polvere sul loro capo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוֹשֻׁ֜עַ אֲהָ֣הּ אֲדֹנָ֣/י יְהוִ֗ה לָ֠/מָה הֵעֲבַ֨רְתָּ הַעֲבִ֜יר אֶת הָ/עָ֤ם הַ/זֶּה֙ אֶת הַ/יַּרְדֵּ֔ן לָ/תֵ֥ת אֹתָ֛/נוּ בְּ/יַ֥ד הָ/אֱמֹרִ֖י לְ/הַאֲבִידֵ֑/נוּ וְ/לוּ֙ הוֹאַ֣לְנוּ וַ/נֵּ֔שֶׁב בְּ/עֵ֖בֶר הַ/יַּרְדֵּֽן׃",
+        "LXX": "καὶ εἶπεν Ἰησοῦς Δέομαι, Κύριε, ἵνα τί διεβίβασεν ὁ παῖς σου τὸν λαὸν τοῦτον τὸν Ἰορδάνην, παραδοῦναι αὐτὸν τῷ Ἀμορραίῳ ἀπολέσαι ἡμᾶς; καὶ εἰ κατεμείναμεν καὶ κατῳκίσθημεν παρὰ τὸν Ἰορδάνην.",
+        "VUL": "et dixit Josue : Heu Domine Deus, quid voluisti traducere populum istum Jordanem fluvium, ut traderes nos in manus Amorrhæi, et perderes ? utinam ut cpimus, mansissemus trans Jordanem.",
+        "SYN": "И сказал Иисус: о, Господи Владыка! для чего Ты перевел народ сей чрез Иордан, дабы предать нас в руки Аморреев и погубить нас? о, если бы мы остались и жили за Иорданом!",
+        "NEO": "Josué dit : « Ah ! Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**, pourquoi avez-vous fait passer le Jourdain à ce peuple, pour nous livrer entre les mains des Amorrhéens, afin de nous faire périr ? Que n’avons-nous su rester de l’autre côté du Jourdain !",
+        "NAB": "\"Alas, O Lord GOD,\" Joshua prayed, \"why did you ever allow this people to pass over the Jordan, delivering us into the power of the Amorites, that they might destroy us? Would that we had been content to dwell on the other side of the Jordan.",
+        "VAT_ES": "Mientras tanto, Josué decía: «&iexcl;Señor! &iquest;Para qué hiciste pasar el Jordán a este pueblo? &iquest;Sólo para ponernos en manos de los amorreos y hacernos desaparecer? &iexcl;Ojalá nos hubiéramos decidido a quedarnos al otro lado del Jordán!",
+        "CEI": "Giosuè esclamò: \"Signore Dio, perché hai fatto passare il Giordano a questo popolo, per metterci poi nelle mani dell'Amorreo e distruggerci? Se avessimo deciso di stabilirci oltre il Giordano!"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "בִּ֖י אֲדֹנָ֑/י מָ֣ה אֹמַ֔ר אַ֠חֲרֵי אֲשֶׁ֨ר הָפַ֧ךְ יִשְׂרָאֵ֛ל עֹ֖רֶף לִ/פְנֵ֥י אֹיְבָֽי/ו׃",
+        "LXX": "καὶ τί ἐρῶ, ἐπεὶ μετέβαλεν Ἰσραὴλ αὐχένα ἀπέναντι τοῦ ἐχθροῦ αὐτοῦ;",
+        "VUL": "Mi Domine Deus, quid dicam, videns Israëlem hostibus suis terga vertentem ?",
+        "SYN": "О, Господи! что сказать мне после того, как Израиль обратил тыл врагам своим?",
+        "NEO": "De grâce, Seigneur, que dirai-je, après qu’Israël a tourné le dos devant ses ennemis ?",
+        "NAB": "Pray, Lord, what can I say, now that Israel has turned its back to its enemies?",
+        "VAT_ES": "&iexcl;Señor! &iquest;Qué más puedo decir, ahora que Israel ha tenido que volver las espaldas a sus enemigos?",
+        "CEI": "Perdonami, Signore: che posso dire, dopo che Israele ha voltato le spalle ai suoi nemici?"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/יִשְׁמְע֣וּ הַֽ/כְּנַעֲנִ֗י וְ/כֹל֙ יֹשְׁבֵ֣י הָ/אָ֔רֶץ וְ/נָסַ֣בּוּ עָלֵ֔י/נוּ וְ/הִכְרִ֥יתוּ אֶת שְׁמֵ֖/נוּ מִן הָ/אָ֑רֶץ וּ/מַֽה תַּעֲשֵׂ֖ה לְ/שִׁמְ/ךָ֥ הַ/גָּדֽוֹל׃",
+        "LXX": "καὶ ἀκούσας ὁ Χαναναῖος καὶ πάντες οἱ κατοικοῦντες τὴν γῆν περικυκλώσουσιν ἡμᾶς καὶ ἐκτρίψουσιν ἡμᾶς ἀπὸ τῆς γῆς· καὶ τί ποιήσεις τὸ ὄνομά σου τὸ μέγα;",
+        "VUL": "Audient Chananæi, et omnes habitatores terræ, et pariter conglobati circumdabunt nos, atque delebunt nomen nostrum de terra : et quid facies magno nomini tuo ?",
+        "SYN": "Хананеи и все жители земли услышат и окружат нас и истребят имя наше с земли. И что сделаешь _тогда_ имени Твоему великому?",
+        "NEO": "Les Chananéens et tous les habitants du pays l’apprendront ; ils nous envelopperont et feront disparaître notre nom de la terre. Et que ferez-vous pour votre grand nom ? »",
+        "NAB": "When the Canaanites and the other inhabitants of the land hear of it, they will close in around us and efface our name from the earth. What will you do for your great name?\"",
+        "VAT_ES": "Apenas se enteren los cananeos y todos los habitantes del país, estrecharán un círculo contra nosotros y borrarán nuestro nombre de la tierra. Y entonces, &iquest;Qué harás tú por tu Nombre glorioso?».",
+        "CEI": "Lo sapranno i Cananei e tutti gli abitanti della regione, ci accerchieranno e cancelleranno il nostro nome dal paese. E che farai tu per il tuo grande nome?\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמֶר יְהוָ֛ה אֶל יְהוֹשֻׁ֖עַ קֻ֣ם לָ֑/ךְ לָ֣/מָּה זֶּ֔ה אַתָּ֖ה נֹפֵ֥ל עַל פָּנֶֽי/ךָ׃",
+        "LXX": "Καὶ εἶπεν Κύριος πρὸς Ἰησοῦν Ἀνάστηθι· ἵνα τί τοῦτο σὺ πέπτωκας ἐπὶ πρόσωπόν σου;",
+        "VUL": "Dixitque Dominus ad Josue : Surge : cur jaces pronus in terra ?",
+        "SYN": "Господь сказал Иисусу: встань, для чего ты пал на лице твое?",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Josué : « Lève-toi ! Pourquoi es-tu ainsi tombé sur ta face ?",
+        "NAB": "The LORD replied to Joshua: \"Stand up. Why are you lying prostrate?",
+        "VAT_ES": "El Señor respondió a Josué: «&iexcl;Levántate! &iquest;Por qué estás ahí postrado sobre tu rostro?",
+        "CEI": "Rispose il Signore a Giosuè: \"Alzati, perché stai prostrato sulla faccia?"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "חָטָא֙ יִשְׂרָאֵ֔ל וְ/גַם֙ עָבְר֣וּ אֶת בְּרִיתִ֔/י אֲשֶׁ֥ר צִוִּ֖יתִי אוֹתָ֑/ם וְ/גַ֤ם לָֽקְחוּ֙ מִן הַ/חֵ֔רֶם וְ/גַ֤ם גָּֽנְבוּ֙ וְ/גַ֣ם כִּֽחֲשׁ֔וּ וְ/גַ֖ם שָׂ֥מוּ בִ/כְלֵי/הֶֽם׃",
+        "LXX": "ἡμάρτηκεν ὁ λαὸς καὶ παρέβη τὴν διαθήκην ἣν διεθέμην πρὸς αὐτούς· κλέψαντες ἀπὸ τοῦ ἀναθέματος ἐνέβαλον εἰς τὰ σκεύη αὐτῶν.",
+        "VUL": "Peccavit Israël, et prævaricatus est pactum meum : tuleruntque de anathemate, et furati sunt atque mentiti, et absconderunt inter vasa sua.",
+        "SYN": "Израиль согрешил, и преступили они завет Мой, который Я завещал им; и взяли из заклятого, и украли, и утаили, и положили между своими вещами;",
+        "NEO": "Israël a péché, jusqu’à transgresser mon alliance que je leur ai prescrite d’observer, jusqu’à prendre des choses vouées par l’anathème, à les dérober, à mentir et à les cacher dans leurs bagages !",
+        "NAB": "Israel has sinned: they have violated the covenant which I enjoined on them. They have stealthily taken goods subject to the ban, and have deceitfully put them in their baggage.",
+        "VAT_ES": "Israel ha pecado: ellos han transgredido mi alianza, la que yo les impuse. Se han quedado con algo que debía ser consagrado al exterminio: se han atrevido a robarlo, a esconderlo y a reservarlo para su uso personal.",
+        "CEI": "Israele ha peccato. Essi hanno trasgredito l'alleanza che avevo loro prescritto e hanno preso ciò che era votato allo sterminio: hanno rubato, hanno dissimulato e messo nei loro sacchi!"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/לֹ֨א יֻכְל֜וּ בְּנֵ֣י יִשְׂרָאֵ֗ל לָ/קוּם֙ לִ/פְנֵ֣י אֹיְבֵי/הֶ֔ם עֹ֗רֶף יִפְנוּ֙ לִ/פְנֵ֣י אֹֽיְבֵי/הֶ֔ם כִּ֥י הָי֖וּ לְ/חֵ֑רֶם לֹ֤א אוֹסִיף֙ לִֽ/הְי֣וֹת עִמָּ/כֶ֔ם אִם לֹ֥א תַשְׁמִ֛ידוּ הַ/חֵ֖רֶם מִֽ/קִּרְבְּ/כֶֽם׃",
+        "LXX": "οὐ μὴ δύνωνται οἱ υἱοὶ Ἰσραὴλ ὑποστῆναι κατὰ πρόσωπον τῶν ἐχθρῶν αὐτῶν· αὐχένα ὑποστρέψουσιν ἔναντι τῶν ἐχθρῶν αὐτῶν, ὅτι ἐγενήθησαν ἀνάθεμα· οὐ προσθήσω ἔτι εἶναι μεθ’ ὑμῶν, ἐὰν μὴ ἐξάρητε τὸ ἀνάθεμα ἐξ ὑμῶν αὐτῶν.",
+        "VUL": "Nec poterit Israël stare ante hostes suos, eosque fugiet : quia pollutus est anathemate. Non ero ultra vobiscum, donec conteratis eum qui hujus sceleris reus est.",
+        "SYN": "за то сыны Израилевы не могли устоять пред врагами своими и обратили тыл врагам своим, ибо они подпали заклятию; не буду более с вами, если не истребите из среды вашей заклятого.",
+        "NEO": "Aussi les enfants d’Israël ne peuvent tenir devant leurs ennemis ; mais ils tournent le dos devant leurs ennemis, car ils sont devenus anathème. Je ne serai plus avec vous désormais, si vous n’ôtez pas l’anathème du milieu de vous.",
+        "NAB": "If the Israelites cannot stand up to their enemies, but must turn their back to them, it is because they are under the ban. I will not remain with you unless you remove from among you whoever has incurred the ban.",
+        "VAT_ES": "Por eso los israelitas no podrán hacer frente a sus enemigos, sino que tendrán que volver las espaldas ante sus adversarios, por haberse convertido ellos mismos en algo que debe ser consagrado al exterminio. Yo no estaré más con ustedes si no eliminan lo que debió ser consagrado al exterminio.",
+        "CEI": "Gli Israeliti non potranno resistere ai loro nemici, volteranno le spalle ai loro nemici, perché sono incorsi nello sterminio. Non sarò più con voi, se non eliminerete da voi chi è incorso nello sterminio."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "קֻ֚ם קַדֵּ֣שׁ אֶת הָ/עָ֔ם וְ/אָמַרְתָּ֖ הִתְקַדְּשׁ֣וּ לְ/מָחָ֑ר כִּ֣י כֹה֩ אָמַ֨ר יְהוָ֜ה אֱלֹהֵ֣י יִשְׂרָאֵ֗ל חֵ֤רֶם בְּ/קִרְבְּ/ךָ֙ יִשְׂרָאֵ֔ל לֹ֣א תוּכַ֗ל לָ/קוּם֙ לִ/פְנֵ֣י אֹיְבֶ֔י/ךָ עַד הֲסִירְ/כֶ֥ם הַ/חֵ֖רֶם מִֽ/קִּרְבְּ/כֶֽם׃",
+        "LXX": "ἀναστὰς ἁγίασον τὸν λαόν, καὶ εἰπὸν ἁγιασθῆναι εἰς αὔριον. τάδε λέγει Κύριος ὁ θεὸς Ἰσραήλ Τὸ ἀνάθεμα ἐν ὑμῖν ἐστιν· οὐ δυνήσεσθε ἀντιστῆναι ἀπέναντι τῶν ἐχθρῶν ὑμῶν, ἕως ἂν ἐξάρητε τὸ ἀνάθεμα ἐξ ὑμῶν.",
+        "VUL": "Surge, sanctifica populum, et dic eis : Sanctificamini in crastinum : hæc enim dicit Dominus Deus Israël : Anathema in medio tui est, Israël : non poteris stare coram hostibus tuis, donec deleatur ex te qui hoc contaminatus est scelere.",
+        "SYN": "Встань, освяти народ и скажи: освятитесь к утру, ибо так говорит Господь Бог Израилев: \"заклятое среди тебя, Израиль; посему ты не можешь устоять пред врагами твоим, доколе не отдалишь от себя заклятого\";",
+        "NEO": "Lève-toi, sanctifie le peuple et dis-leur : Sanctifiez-vous pour demain ; car ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël : Il y a un anathème au milieu de toi, Israël ; tu ne pourras pas tenir devant tes ennemis, jusqu’à ce que vous ayez ôté l’anathème du milieu de vous.",
+        "NAB": "Rise, sanctify the people. Tell them to sanctify themselves before tomorrow, for the LORD, the God of Israel, says: You are under the ban, O Israel. You cannot stand up to your enemies until you remove from among you whoever has incurred the ban.",
+        "VAT_ES": "Ahora levántate y purifica al pueblo. Tú dirás: «Purifíquense para mañana, porque así habla el Señor, el Dios de Israel: En medio de ti, Israel, hay algo que debió ser consagrado al exterminio, y tú no podrás hacer frente a tus enemigos hasta que lo hayas extirpado».",
+        "CEI": "Orsù, santifica il popolo. Dirai: Santificatevi per domani, perché dice il Signore, Dio di Israele: Uno votato allo sterminio è in mezzo a te, Israele; tu non potrai resistere ai tuoi nemici, finché non eliminerete da voi chi è votato allo sterminio."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/נִקְרַבְתֶּ֥ם בַּ/בֹּ֖קֶר לְ/שִׁבְטֵי/כֶ֑ם וְ/הָיָ֡ה הַ/שֵּׁבֶט֩ אֲשֶׁר יִלְכְּדֶ֨/נּוּ יְהוָ֜ה יִקְרַ֣ב לַ/מִּשְׁפָּח֗וֹת וְ/הַ/מִּשְׁפָּחָ֞ה אֲשֶֽׁר יִלְכְּדֶ֤/נָּה יְהוָה֙ תִּקְרַ֣ב לַ/בָּתִּ֔ים וְ/הַ/בַּ֨יִת֙ אֲשֶׁ֣ר יִלְכְּדֶ֣/נּוּ יְהוָ֔ה יִקְרַ֖ב לַ/גְּבָרִֽים׃",
+        "LXX": "καὶ συναχθήσεσθε πάντες τὸ πρωὶ κατὰ φυλάς, καὶ ἔσται ἡ φυλὴ ἣν ἂν δείξῃ Κύριος, προσάξετε κατὰ δήμους· καὶ τὸν δῆμον ὃν ἐὰν δείξῃ Κύριος, προσάξετε κατ’ οἶκον· καὶ τὸν οἶκον ὃν ἐὰν δέξῃ Κύριος, προσάξετε κατ’ ἄνδρα.",
+        "VUL": "Accedetisque mane singuli per tribus vestras : et quamcumque tribum sors invenerit, accedet per cognationes suas, et cognatio per domos, domusque per viros.",
+        "SYN": "завтра подходите [все] по коленам вашим; колено же, которое укажет Господь, пусть подходит по племенам; племя, которое укажет Господь, пусть подходит по семействам; семейство, которое укажет Господь, пусть подходит по одному человеку;",
+        "NEO": "Vous vous approcherez le matin selon vos tribus, et la tribu que \\+w Yahweh|strong=\"H3068\"\\+w** aura saisie s’approchera par familles, et la famille que \\+w Yahweh|strong=\"H3068\"\\+w** aura saisie s’approchera par maisons, et la maison que \\+w Yahweh|strong=\"H3068\"\\+w** aura saisie s’approchera par têtes.",
+        "NAB": "In the morning you must present yourselves by tribes. The tribe which the LORD designates shall come forward by clans; the clan which the LORD designates shall come forward by families; the family which the LORD designates shall come forward one by one.",
+        "VAT_ES": "Mañana por la mañana ustedes comparecerán por tribus; la tribu que el Señor señale por medio de la suerte comparecerá por clanes; el clan que el Señor señale comparecerá por familias; y la familia que el Señor señale, comparecerá hombre por hombre.",
+        "CEI": "Vi accosterete dunque domattina secondo le vostre tribù; la tribù che il Signore avrà designato con la sorte si accosterà per famiglie e la famiglia che il Signore avrà designata si accosterà per case; la casa che il Signore avrà designata si accosterà per individui;"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֙ הַ/נִּלְכָּ֣ד בַּ/חֵ֔רֶם יִשָּׂרֵ֣ף בָּ/אֵ֔שׁ אֹת֖/וֹ וְ/אֶת כָּל אֲשֶׁר ל֑/וֹ כִּ֤י עָבַר֙ אֶת בְּרִ֣ית יְהוָ֔ה וְ/כִֽי עָשָׂ֥ה נְבָלָ֖ה בְּ/יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ὃς ἂν ἐνδειχθῇ, κατακαυθήσεται ἐν πυρί, καὶ πάντα ὅσα ἐστὶν αὐτῷ· ὅτι παρέβη τὴν διαθήκην Κυρίου καὶ ἐποίησεν ἀνόμημα ἐν Ἰσραήλ.",
+        "VUL": "Et quicumque ille in hoc facinore fuerit deprehensus, comburetur igni cum omni substantia sua : quoniam prævaricatus est pactum Domini, et fecit nefas in Israël.",
+        "SYN": "и обличенного в _похищении_ заклятого пусть сожгут огнем, его и все, что у него, за то, что он преступил завет Господень и сделал беззаконие среди Израиля.",
+        "NEO": "Celui qui sera saisi comme atteint par l’anathème sera consumé par le feu, lui et tout ce qui lui appartient, parce qu’il transgresse l’alliance de \\+w Yahweh|strong=\"H3068\"\\+w** et commet une infamie en Israël. »",
+        "NAB": "He who is designated as having incurred the ban shall be destroyed by fire, with all that is his, because he has violated the covenant of the LORD and has committed a shameful crime in Israel.\"",
+        "VAT_ES": "El que sea sorprendido en posesión de los objetos condenados al exterminio, será quemado con todos sus bienes porque ha quebrantado la alianza del Señor y ha cometido una infamia en Israel».",
+        "CEI": "colui che risulterà votato allo sterminio sarà bruciato dal fuoco con quanto è suo, perché ha trasgredito l'alleanza del Signore e ha commesso un'infamia in Israele\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יַּשְׁכֵּ֤ם יְהוֹשֻׁ֨עַ֙ בַּ/בֹּ֔קֶר וַ/יַּקְרֵ֥ב אֶת יִשְׂרָאֵ֖ל לִ/שְׁבָטָ֑י/ו וַ/יִּלָּכֵ֖ד שֵׁ֥בֶט יְהוּדָֽה׃",
+        "LXX": "Καὶ ὤρθρισεν Ἰησοῦς καὶ προσήγαγεν τὸν λαὸν κατὰ φυλάς· καὶ ἐνεδείχθη ἡ φυλὴ Ἰούδα.",
+        "VUL": "Surgens itaque Josue mane, applicuit Israël per tribus suas, et inventa est tribus Juda.",
+        "SYN": "Иисус, встав рано поутру, велел подходить Израилю по коленам его, и указано колено Иудино;",
+        "NEO": "Le lendemain, Josué se leva de bon matin et fit approcher Israël selon ses tribus, et la tribu de Juda fut saisie.",
+        "NAB": "Early the next morning Joshua had Israel come forward by tribes, and the tribe of Judah was designated.",
+        "VAT_ES": "A la mañana siguiente, bien temprano, Josué hizo que Israel se fuera acercando tribu por tribu, y la suerte cayó sobre Judá.",
+        "CEI": "Giosuè si alzò di buon mattino e fece accostare Israele secondo le sue tribù e fu designata dalla sorte la tribù di Giuda."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יַּקְרֵב֙ אֶת מִשְׁפַּ֣חַת יְהוּדָ֔ה וַ/יִּלְכֹּ֕ד אֵ֖ת מִשְׁפַּ֣חַת הַ/זַּרְחִ֑י וַ/יַּקְרֵ֞ב אֶת מִשְׁפַּ֤חַת הַ/זַּרְחִי֙ לַ/גְּבָרִ֔ים וַ/יִּלָּכֵ֖ד זַבְדִּֽי׃",
+        "LXX": "καὶ προσήχθη κατὰ δήμους, καὶ ἐνεδείχθη δῆμος Ζαραεί· καὶ προσήχθη κατὰ ἄνδρα,",
+        "VUL": "Quæ cum juxta familias suas esset oblata, inventa est familia Zare. Illam quoque per domos offerens, reperit Zabdi :",
+        "SYN": "потом велел подходить племенам Иуды, и указано племя Зары; велел подходить племени Зарину по семействам, и указано [семейство] Завдиево;",
+        "NEO": "Il fit approcher les familles de Juda, et la famille de Zaré fut saisie. Il fit approcher la famille de Zaré par maisons, et Zabdi fut saisi.",
+        "NAB": "Then he had the clans of Judah come forward, and the clan of Zerah was designated. He had the clan of Zerah come forward by families, and Zabdi was designated.",
+        "VAT_ES": "Luego mandó que se acercaran los clanes de Judá, y la suerte cayó sobre el clan de Zéraj. En seguida ordenó que se acercaran las familias del clan de Zéraj, y la suerte cayó sobre Zabdí, hombre por hombre, la suerte cayó sobre",
+        "CEI": "Fece accostare le famiglie di Giuda e fu designata la famiglia degli Zerachiti; fece accostare la famiglia degli Zerachiti per case e fu designato Zabdi;"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יַּקְרֵ֥ב אֶת בֵּית֖/וֹ לַ/גְּבָרִ֑ים וַ/יִּלָּכֵ֗ד עָכָ֞ן בֶּן כַּרְמִ֧י בֶן זַבְדִּ֛י בֶּן זֶ֖רַח לְ/מַטֵּ֥ה יְהוּדָֽה׃",
+        "LXX": "καὶ ἐνεδείχθη Ἀχὰρ υἱὸς Ζαμβρεὶ υἱοῦ Ζάρα.",
+        "VUL": "cujus domum in singulos dividens viros, invenit Achan filium Charmi filii Zabdi filii Zare de tribu Juda.",
+        "SYN": "велел подходить семейству его по одному человеку, и указан Ахан, сын Хармия, сына Завдия, сына Зары, из колена Иудина.",
+        "NEO": "Il fit approcher la maison de Zabdi par têtes, et Achan, fils de Charmi, fils de Zabdi, fils de Zaré, de la tribu de Juda, fut saisi.",
+        "NAB": "Finally he had that family come forward one by one, and Achan, son of Carmi, son of Zabdi, son of Zerah of the tribe of Judah, was designated.",
+        "VAT_ES": "Y Cuando hizo acercar a la familia de Zabdí, hombre por hombre, la suerte cayó sobre Acán, hijo de Carmí, hijo de Zabdí, hijo de Zéraj, de la tribu de Judá.",
+        "CEI": "fece accostare la sua casa per individui e fu designato dalla sorte Acan, figlio di Carmi, figlio di Zabdi, figlio di Zerach, della tribù di Giuda."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוֹשֻׁ֜עַ אֶל עָכָ֗ן בְּנִ/י֙ שִֽׂים נָ֣א כָב֗וֹד לַֽ/יהוָ֛ה אֱלֹהֵ֥י יִשְׂרָאֵ֖ל וְ/תֶן ל֣/וֹ תוֹדָ֑ה וְ/הַגֶּד נָ֥א לִ/י֙ מֶ֣ה עָשִׂ֔יתָ אַל תְּכַחֵ֖ד מִמֶּֽ/נִּי׃",
+        "LXX": "καὶ εἶπεν Ἰησοῦς τῷ Ἀχάρ Δὸς δόξαν σήμερον τῷ κυρίῳ θεῷ Ἰσραήλ, καὶ δὸς τὴν ἐξομολόγησιν καὶ ἀνάγγειλόν μοι τί ἐποίησας, καὶ μὴ κρύψῃς ἀπ’ ἐμοῦ.",
+        "VUL": "Et ait Josue ad Achan : Fili mi, da gloriam Domino Deo Israël, et confitere, atque indica mihi quid feceris, ne abscondas.",
+        "SYN": "Тогда Иисус сказал Ахану: сын мой! воздай славу Господу, Богу Израилеву и сделай пред Ним исповедание и объяви мне, что ты сделал; не скрой от меня.",
+        "NEO": "Josué dit à Achan : « Mon fils, donne gloire, je te prie, à \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël, et rends-lui hommage. Avoue-moi ce que tu as fait, ne me le cache point. »",
+        "NAB": "Joshua said to Achan, \"My son, give to the LORD, the God of Israel, glory and honor by telling me what you have done; do not hide it from me.\"",
+        "VAT_ES": "Josué dijo a Acán: «Hijo mío, da gloria al Señor, el Dios de Israel, y tribútale homenaje. Dime lo que has hecho, sin ocultarme nada».",
+        "CEI": "Disse allora Giosuè ad Acan: \"Figlio mio, dà gloria al Signore, Dio di Israele, e rendigli omaggio e raccontami ciò che hai fatto, non me lo nascondere\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יַּ֧עַן עָכָ֛ן אֶת יְהוֹשֻׁ֖עַ וַ/יֹּאמַ֑ר אָמְנָ֗ה אָנֹכִ֤י חָטָ֨אתִי֙ לַֽ/יהוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל וְ/כָ/זֹ֥את וְ/כָ/זֹ֖את עָשִֽׂיתִי׃",
+        "LXX": "καὶ ἀπεκρίθη Ἀχὰρ τῷ Ἰησοῖ καὶ εἶπεν Ἀληθῶς ἥμαρτον ἐναντίον Κυρίου θεοῦ Ἰσραήλ· οὕτως καὶ οὕτως ἐποίησα.",
+        "VUL": "Responditque Achan Josue, et dixit ei : Vere ego peccavi Domino Deo Israël, et sic et sic feci.",
+        "SYN": "В ответ Иисусу Ахан сказал: точно, я согрешил пред Господом Богом Израилевым и сделал то и то:",
+        "NEO": "Achan répondit à Josué et dit : « C’est la vérité ; c’est moi qui ai péché contre \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël ; voici ce que j’ai fait :",
+        "NAB": "Achan answered Joshua, \"I have indeed sinned against the LORD, the God of Israel. This is what I have done:",
+        "VAT_ES": "Acán respondió a Josué: «Es verdad, he pecado contra el Señor, el Dios de Israel. Esto es lo que hice:",
+        "CEI": "Rispose Acan a Giosuè: \"In verità, proprio io ho peccato contro il Signore, Dio di Israele, e ho fatto questo e quest'altro."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "ו/אראה וָ/אֵ֣רֶא בַ/שָּׁלָ֡ל אַדֶּ֣רֶת שִׁנְעָר֩ אַחַ֨ת טוֹבָ֜ה וּ/מָאתַ֧יִם שְׁקָלִ֣ים כֶּ֗סֶף וּ/לְשׁ֨וֹן זָהָ֤ב אֶחָד֙ חֲמִשִּׁ֤ים שְׁקָלִים֙ מִשְׁקָל֔/וֹ וָֽ/אֶחְמְדֵ֖/ם וָֽ/אֶקָּחֵ֑/ם וְ/הִנָּ֨/ם טְמוּנִ֥ים בָּ/אָ֛רֶץ בְּ/ת֥וֹךְ הָ/אָֽהֳלִ֖/י וְ/הַ/כֶּ֥סֶף תַּחְתֶּֽי/הָ׃",
+        "LXX": "ἴδον ἐν τῇ προνομῇ ψιλὴν ποικίλην καὶ διακόσια δίδραχμα ἀργυρίου καὶ γλῶσσαν μίαν χρυσῆν πεντήκοντα διδράχμων, καὶ ἐνθυμηθεὶς αὐτῶν ἔλαβον· καὶ ἰδοὺ αὐτὰ ἐνκέκρυπται ἐν τῇ σκηνῇ μου, καὶ τὸ ἀργύριον κέκρυπται ὑποκάτω αὐτῶν.",
+        "VUL": "Vidi enim inter spolia pallium coccineum valde bonum, et ducentos siclos argenti, regulamque auream quinquaginta siclorum : et concupiscens abstuli, et abscondi in terra contra medium tabernaculi mei, argentumque fossa humo operui.",
+        "SYN": "между добычею увидел я одну прекрасную Сеннаарскую одежду и двести сиклей серебра и слиток золота весом в пятьдесят сиклей; это мне полюбилось и я взял это; и вот, оно спрятано в земле среди шатра моего, и серебро под ним [спрятано].",
+        "NEO": "J’ai vu parmi les dépouilles un beau manteau de Sennaar, deux cents sicles d’argent, et un lingot d’or du poids de cinquante sicles ; je les ai convoités et je les ai pris ; ils sont cachés dans la terre au milieu de ma tente, et l’argent est dessous. »",
+        "NAB": "Among the spoils, I saw a beautiful Babylonian mantle, two hundred shekels of silver, and a bar of gold fifty shekels in weight; in my greed I took them. They are now hidden in the ground inside my tent, with the silver underneath.\"",
+        "VAT_ES": "Yo vi entre el botín un hermoso manto de Senaar, doscientos siclos de plata y un lingote de oro que pesa cincuenta siclos; me gustaron y los guardé. Ahora están escondidos en la tierra, en medio de mi carpa, y la plata está debajo.",
+        "CEI": "Avevo visto nel bottino un bel mantello di Sennaar, duecento sicli d'argento e un lingotto d'oro del peso di cinquanta sicli; ne sentii bramosia e li presi ed eccoli nascosti in terra in mezzo alla mia tenda e l'argento è sotto\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח יְהוֹשֻׁ֨עַ֙ מַלְאָכִ֔ים וַ/יָּרֻ֖צוּ הָ/אֹ֑הֱלָ/ה וְ/הִנֵּ֧ה טְמוּנָ֛ה בְּ/אָהֳל֖/וֹ וְ/הַ/כֶּ֥סֶף תַּחְתֶּֽי/הָ׃",
+        "LXX": "καὶ ἀπέστειλεν Ἰησοῦς ἀγγέλους, καὶ ἔδραμον εἰς τὴν σκηνὴν εἰς τὴν παρεμβολήν· καὶ ταῦτα ἦν ἐνκεκρυμμένα εἰς τὴν σκηνήν, καὶ τὸ ἀργύριον ὑποκάτω αὐτῶν.",
+        "VUL": "Misit ergo Josue ministros : qui currentes ad tabernaculum illius, repererunt cuncta abscondita in eodem loco, et argentum simul.",
+        "SYN": "Иисус послал людей, и они побежали в шатер [в стан]; и вот, _все_ это спрятано было в шатре его, и серебро под ним.",
+        "NEO": "Josué envoya des messagers qui coururent à la tente, et voici, les objets étaient cachés dans la tente d’Achan, et l’argent était dessous.",
+        "NAB": "The messengers whom Joshua sent hastened to the tent and found them hidden there, with the silver underneath.",
+        "VAT_ES": "Josué envío a dos emisarios, que fueron corriendo a la carpa, y encontraron el manto que estaba escondido en ella, y la plata debajo de él.",
+        "CEI": "Giosuè mandò allora messaggeri che corsero alla tenda, ed ecco tutto era nascosto nella tenda e l'argento era sotto."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יִּקָּחוּ/ם֙ מִ/תּ֣וֹךְ הָ/אֹ֔הֶל וַ/יְבִאוּ/ם֙ אֶל יְהוֹשֻׁ֔עַ וְ/אֶ֖ל כָּל בְּנֵ֣י יִשְׂרָאֵ֑ל וַ/יַּצִּקֻ֖/ם לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἐξήνεγκαν αὐτὰ ἐκ τῆς σκηνῆς καὶ ἤνεγκαν πρὸς Ἰησοῦν καὶ τοὺς πρεσβυτέρους Ἰσραήλ, καὶ ἔθηκαν αὐτὰ ἔναντι Κυρίου.",
+        "VUL": "Auferentesque de tentorio, tulerunt ea ad Josue, et ad omnes filios Israël, projeceruntque ante Dominum.",
+        "SYN": "Они взяли это из шатра и принесли к Иисусу и ко всем сынам Израилевым и положили пред Господом.",
+        "NEO": "Les ayant pris du milieu de la tente, ils les apportèrent à Josué et à tous les enfants d’Israël, et les déposèrent devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "They took them from the tent, brought them to Joshua and all the Israelites, and spread them out before the LORD.",
+        "VAT_ES": "En seguida retiraron las cosas de la carpa, se las presentaron a Josué y a todos los israelitas, y las extendieron delante del Señor.",
+        "CEI": "Li presero dalla tenda, li portarono a Giosuè e a tutti gli Israeliti e li deposero davanti al Signore."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֣ח יְהוֹשֻׁ֣עַ אֶת עָכָ֣ן בֶּן זֶ֡רַח וְ/אֶת הַ/כֶּ֣סֶף וְ/אֶת הָ/אַדֶּ֣רֶת וְֽ/אֶת לְשׁ֣וֹן הַ/זָּהָ֡ב וְֽ/אֶת בָּנָ֡י/ו וְֽ/אֶת בְּנֹתָ֡י/ו וְ/אֶת שׁוֹר/וֹ֩ וְ/אֶת חֲמֹר֨/וֹ וְ/אֶת צֹאנ֤/וֹ וְ/אֶֽת אָהֳל/וֹ֙ וְ/אֶת כָּל אֲשֶׁר ל֔/וֹ וְ/כָל יִשְׂרָאֵ֖ל עִמּ֑/וֹ וַ/יַּעֲל֥וּ אֹתָ֖/ם עֵ֥מֶק עָכֽוֹר׃",
+        "LXX": "καὶ ἔλαβεν Ἰησοῦς τὸν Ἀχὰρ υἱὸν Ζάρα καὶ ἀνήγαγεν αὐτὸν εἰς φάραγγα Ἀχώρ, καὶ τοὺς υἱοὺς αὐτοῦ καὶ τὰς θυγατέρας αὐτοῦ καὶ τοὺς μόσχους αὐτοῦ καὶ τὰ ὑποζύγια αὐτοῦ καὶ πάντα τὰ πρόβατα αὐτοῦ καὶ τὴν σκηνὴν αὐτοῦ καὶ πάντα τὰ ὑπάρχοντα αὐτοῦ, καὶ πᾶς ὁ λαὸς μετ’ αὐτοῦ· καὶ ἀνήγαγεν αὐτοὺς εἰς Ἐμεκαχώρ.",
+        "VUL": "Tollens itaque Josue Achan filium Zare, argentumque et pallium, et auream regulam, filios quoque et filias ejus, boves et asinos et oves, ipsumque tabernaculum, et cunctam supellectilem (et omnis Israël cum eo), duxerunt eos ad vallem Achor :",
+        "SYN": "Иисус и все Израильтяне с ним взяли Ахана, сына Зарина, и серебро, и одежду, и слиток золота, и сыновей его и дочерей его, и волов его и ослов его, и овец его и шатер его, и все, что у него _было,_ и вывели их [со всем] на долину Ахор.",
+        "NEO": "Josué et tout Israël avec lui prirent Achan, fils de Zaré, l’argent, le manteau, le lingot d’or, les fils et les filles d’Achan, ses bœufs, ses ânes, ses brebis, sa tente et tout ce qui lui appartenait, et il les firent monter dans la vallée d’Achor.",
+        "NAB": "Then Joshua and all Israel took Achan, son of Zerah, with the silver, the mantle, and the bar of gold, and with his sons and daughters, his ox, his ass and his sheep, his tent, and all his possessions, and led them off to the Valley of Achor.",
+        "VAT_ES": "Entonces Josué tomó a Acán, hijo de Zéraj, con la plata, el manto y el lingote de oro, a sus hijos y sus hijas, sus vacas, sus ovejas y sus asnos, su carpa y todo lo que poseía, y los condujo hasta el valle de Acor, acompañado de todo Israel.",
+        "CEI": "Giosuè allora prese Acan di Zerach e l'argento, il mantello, il lingotto d'oro, i suoi figli, le sue figlie, il suo bue, il suo asino, le sue pecore, la sua tenda e quanto gli apparteneva. Tutto Israele lo seguiva ed egli li condusse alla valle di Acòr."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוֹשֻׁ֨עַ֙ מֶ֣ה עֲכַרְתָּ֔/נוּ יַעְכֳּרְ/ךָ֥ יְהוָ֖ה בַּ/יּ֣וֹם הַ/זֶּ֑ה וַ/יִּרְגְּמ֨וּ אֹת֤/וֹ כָל יִשְׂרָאֵל֙ אֶ֔בֶן וַ/יִּשְׂרְפ֤וּ אֹתָ/ם֙ בָּ/אֵ֔שׁ וַ/יִּסְקְל֥וּ אֹתָ֖/ם בָּ/אֲבָנִֽים׃",
+        "LXX": "καὶ εἶπεν Ἰησοῦς τῷ Ἀχάρ Τί ὠλέθρευσας ἡμᾶς; ἐξολεθρεύσαι σε Κύριος, καθὰ καὶ σήμερον. καὶ ἐλιθοβόλησαν αὐτὸν λίθοις πᾶς Ἰσραήλ,",
+        "VUL": "ubi dixit Josue : Quia turbasti nos, exturbet te Dominus in die hac. Lapidavitque eum omnis Israël : et cuncta quæ illius erant, igne consumpta sunt.",
+        "SYN": "И сказал Иисус: за то, что ты навел на нас беду, Господь на тебя наводит беду в день сей. И побили его все Израильтяне камнями, и сожгли их огнем, и наметали на них камни.",
+        "NEO": "Là Josué dit : « Pourquoi nous as-tu troublés ? \\+w Yahweh|strong=\"H3068\"\\+w** te troublera aujourd’hui. » Et tout Israël le lapida. On les consuma par le feu, et on les lapida.",
+        "NAB": "Joshua said, \"The LORD bring upon you today the misery with which you have afflicted us!\" And all Israel stoned him to death",
+        "VAT_ES": "Allí le dijo Josué: «&iquest;Por qué nos has traído la desgracia? Que el Señor te haga desgraciado en este día». Y todo Israel lo mató a pedradas; también apedrearon a los suyos y los quemaron.",
+        "CEI": "Giosuè disse: \"Come tu hai portato sventura a noi, così il Signore oggi la porti a te!\". Tutto Israele lo lapidò, li bruciarono tutti e li uccisero tutti a sassate."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יָּקִ֨ימוּ עָלָ֜י/ו גַּל אֲבָנִ֣ים גָּד֗וֹל עַ֚ד הַ/יּ֣וֹם הַ/זֶּ֔ה וַ/יָּ֥שָׁב יְהוָ֖ה מֵ/חֲר֣וֹן אַפּ֑/וֹ עַל כֵּ֠ן קָרָ֞א שֵׁ֣ם הַ/מָּק֤וֹם הַ/הוּא֙ עֵ֣מֶק עָכ֔וֹר עַ֖ד הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ ἐπέστησαν αὐτῷ σωρὸν λίθων μέγαν· καὶ ἐπαύσατο Κύριος τοῦ θυμοῦ τῆς ὀργῆς. διὰ τοῦτο ἐπωνόμασεν αὐτὸ Ἐμεκαχὼρ ἕως τῆς ἡμέρας ταύτης.",
+        "VUL": "Congregaveruntque super eum acervum magnum lapidum, qui permanet usque in præsentem diem. Et aversus est furor Domini ab eis. Vocatumque est nomen loci illius, vallis Achor, usque hodie.",
+        "SYN": "И набросали на него большую груду камней, _которая_ _уцелела_ и до сего дня. После сего утихла ярость гнева Господня. Посему то место называется долиною Ахор даже до сего дня.",
+        "NEO": "Et on éleva sur Achan un grand monceau de pierres, qui subsiste encore aujourd’hui. Et \\+w Yahweh|strong=\"H3068\"\\+w** revint de l’ardeur de sa colère. — A cause de cet événement, on a appelé ce lieu vallée d’Achor jusqu’à ce jour.",
+        "NAB": "and piled a great heap of stones over him, which remains to the present day. Then the anger of the LORD relented. That is why the place is called the Valley of Achor to this day.",
+        "VAT_ES": "Encima de él pusieron un gran montón de piedras, que ha quedado hasta el presente. Así el Señor aplacó su indignación. Por eso aquel lugar se llama valle de Acor, hasta el día de hoy.",
+        "CEI": "Eressero poi sul posto un gran mucchio di pietre, che esiste fino ad oggi. Il Signore allora desistette dal suo tremendo sdegno. Per questo quel luogo si chiama fino ad oggi Valle di Acòr."
+      }
+    }
+  }
+}

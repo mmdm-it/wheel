@@ -1,0 +1,807 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IV_REG_004",
+  "book_key": "IV_REG",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/אִשָּׁ֣ה אַחַ֣ת מִ/נְּשֵׁ֣י בְנֵֽי הַ֠/נְּבִיאִים צָעֲקָ֨ה אֶל אֱלִישָׁ֜ע לֵ/אמֹ֗ר עַבְדְּ/ךָ֤ אִישִׁ/י֙ מֵ֔ת וְ/אַתָּ֣ה יָדַ֔עְתָּ כִּ֣י עַבְדְּ/ךָ֔ הָיָ֥ה יָרֵ֖א אֶת יְהוָ֑ה וְ/הַ֨/נֹּשֶׁ֔ה בָּ֗א לָ/קַ֜חַת אֶת שְׁנֵ֧י יְלָדַ֛/י ל֖/וֹ לַ/עֲבָדִֽים׃",
+        "LXX": "Καὶ γυνὴ μία ἀπὸ τῶν υἱῶν τῶν προφητῶν ἐβόα πρὸς Ἐλεισαῖε λέγουσα Ὁ δοῦλός σου ὁ ἀνήρ μου ἀπέθανεν, καὶ σὺ ἔγνως ὅτι δοῦλος ἦν φοβούμενος τὸν κύριον· καὶ ὁ δανειστὴς ἦλθε λαβεῖν τοὺς δύο υἱούς μου ἑαυτῷ εἰς δούλους.",
+        "VUL": "Mulier autem quædam de uxoribus prophetarum clamabat ad Eliseum, dicens : Servus tuus vir meus mortuus est, et tu nosti quia servus tuus fuit timens Dominum : et ecce creditor venit ut tollat duos filios meos ad serviendum sibi.",
+        "SYN": "Одна из жен сынов пророческих с воплем говорила Елисею: раб твой, мой муж, умер; а ты знаешь, что раб твой боялся Господа; теперь пришел заимодавец взять обоих детей моих в рабы себе.",
+        "NEO": "Une femme d’entre les femmes des fils de prophètes cria vers Elisée, en disant : « Ton serviteur mon mari est mort, et tu sais que ton serviteur craignait \\+w Yahweh|strong=\"H3068\"\\+w** ; or le créancier est venu prendre mes deux enfants pour en faire ses esclaves. »",
+        "NAB": "A certain woman, the widow of one of the guild prophets, complained to Elisha: \"My husband, your servant, is dead. You know that he was a God-fearing man, yet now his creditor has come to take my two children as his slaves.\"",
+        "VAT_ES": "La mujer de uno de la comunidad de profetas imploró a Eliseo, diciendo: «Tu servidor, mi marido, ha muerto, y tú sabes que era un hombre temeroso del Señor. Pero ahora ha venido un acreedor para llevarse a mis dos hijos como esclavos».",
+        "CEI": "Una donna, moglie di uno dei profeti, gridò a Eliseo: \"Mio marito, tuo servo, è morto; tu sai che il tuo servo temeva il Signore. Ora è venuto il suo creditore per prendersi come schiavi i due miei figli\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֵלֶ֤י/הָ אֱלִישָׁע֙ מָ֣ה אֶֽעֱשֶׂה לָּ֔/ךְ הַגִּ֣ידִי לִ֔/י מַה יֶּשׁ ל/כי לָ֖/ךְ בַּ/בָּ֑יִת וַ/תֹּ֗אמֶר אֵ֣ין לְ/שִׁפְחָתְ/ךָ֥ כֹל֙ בַּ/בַּ֔יִת כִּ֖י אִם אָס֥וּךְ שָֽׁמֶן׃",
+        "LXX": "καὶ εἶπεν Ἐλεισαῖε Τί ποιήσω σοι; τί ἔστιν σοι ἐν τῷ οἴκῳ; ἡ δὲ εἶπεν Οὐκ ἔστιν τῇ δούλῃ σου οὐθὲν ὅτι ἀλλ’ ἢ ὃ ἀλείψομαι ἔλαιον.",
+        "VUL": "Cui dixit Eliseus : Quid vis ut faciam tibi ? dic mihi, quid habes in domo tua ? At illa respondit : Non habeo ancilla tua quidquam in domo mea, nisi parum olei quo ungar.",
+        "SYN": "И сказал ей Елисей: что мне сделать тебе? скажи мне, что есть у тебя в доме? Она сказала: нет у рабы твоей ничего в доме, кроме сосуда с елеем.",
+        "NEO": "Elisée lui dit : « Que puis-je faire pour toi ? Dis-moi, qu’as-tu à la maison ? » Elle répondit : « Ta servante n’a rien du tout à la maison, si ce n’est un vase d’huile. »",
+        "NAB": "\"How can I help you?\" Elisha answered her. \"Tell me what you have in the house.\" \"This servant of yours has nothing in the house but a jug of oil,\" she replied.",
+        "VAT_ES": "Eliseo le dijo: «&iquest;Qué puedo hacer por ti? Dime qué tienes en tu casa». Ella le respondió: «Tu servidora no tiene en su casa nada más que un frasco de aceite».",
+        "CEI": "Eliseo le disse: \"Che posso fare io per te? Dimmi che cosa hai in casa\". Quella rispose: \"In casa la tua serva non ha altro che un orcio di olio\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר לְכִ֨י שַׁאֲלִי לָ֤/ךְ כֵּלִים֙ מִן הַ/ח֔וּץ מֵ/אֵ֖ת כָּל שכנ/כי שְׁכֵנָ֑יִ/ךְ כֵּלִ֥ים רֵקִ֖ים אַל תַּמְעִֽיטִי׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτήν Δεῦρο αἴτησον σαυτῇ σκεύη ἔξωθεν παρὰ πάντων τῶν γειτόνων, σκεύη κενά· μὴ ὀλιγώσῃς.",
+        "VUL": "Cui ait : Vade, pete mutuo ab omnibus vicinis tuis vasa vacua non pauca,",
+        "SYN": "И сказал он: пойди, попроси себе сосудов на стороне, у всех соседей твоих, сосудов порожних; набери немало,",
+        "NEO": "Il dit : « Va demander au dehors des vases à tous tes voisins, des vases vides ; n’en emprunte pas trop peu.",
+        "NAB": "\"Go out,\" he said, \"borrow vessels from all your neighbors - as many empty vessels as you can.",
+        "VAT_ES": "Eliseo le dijo: «Ve y pide prestados a tos tus vecinos unos recipientes vacíos; cuántos más sean, mejor.",
+        "CEI": "Le disse: \"Su, chiedi in prestito vasi da tutti i tuoi vicini, vasi vuoti, nel numero maggiore possibile."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וּ/בָ֗את וְ/סָגַ֤רְתְּ הַ/דֶּ֨לֶת֙ בַּעֲדֵ֣/ךְ וּ/בְעַד בָּנַ֔יִ/ךְ וְ/יָצַ֕קְתְּ עַ֥ל כָּל הַ/כֵּלִ֖ים הָ/אֵ֑לֶּה וְ/הַ/מָּלֵ֖א תַּסִּֽיעִי׃",
+        "LXX": "καὶ εἰσελεύσῃ καὶ ἀποκλείσεις τὴν θύραν κατὰ σοῦ καὶ κατὰ τῶν υἱῶν σου, καὶ ἀποχεεῖς εἰς τὰ σκεύη ταῦτα· καὶ τὸ πληρωθὲν ἀρεῖς.",
+        "VUL": "et ingredere, et claude ostium tuum cum intrinsecus fueris tu, et filii tui : et mitte inde in omnia vasa hæc, et cum plena fuerint, tolles.",
+        "SYN": "и пойди, запри дверь за собою и за сыновьями твоими, и наливай во все эти сосуды; полные отставляй.",
+        "NEO": "Quand tu seras rentrée, tu fermeras la porte sur toi et sur tes enfants ; tu verseras de ton huile dans tous ces vases, et ceux qui seront pleins, tu les mettras de côté. »",
+        "NAB": "Then come back and close the door on yourself and your children; pour the oil into all the vessels, and as each is filled, set it aside.\"",
+        "VAT_ES": "Luego entra y enciérrate con tus hijos; echa el aceite en todos esos recipientes, y cuando estén llenos, colócalos aparte».",
+        "CEI": "Poi entra in casa e chiudi la porta dietro a te e ai tuoi figli; versa olio in tutti quei vasi; i pieni mettili da parte\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֨לֶךְ֙ מֵֽ/אִתּ֔/וֹ וַ/תִּסְגֹּ֣ר הַ/דֶּ֔לֶת בַּעֲדָ֖/הּ וּ/בְעַ֣ד בָּנֶ֑י/הָ הֵ֛ם מַגִּשִׁ֥ים אֵלֶ֖י/הָ וְ/הִ֥יא מיצקת מוֹצָֽקֶת׃",
+        "LXX": "καὶ ἀπῆλθεν παρ’ αὐτοῦ, καὶ ἀπέκλεισεν τὴν θύραν κατ’ αὐτῆς καὶ κατὰ τῶν υἱῶν αὐτῆς· αὐτοὶ προσήγγιζον πρὸς αὐτήν, καὶ αὐτὴ ἐπέχεεν ἕως ἐπλήσθησαν τὰ σκεύη.",
+        "VUL": "Ivit itaque mulier, et clausit ostium super se, et super filios suos : illi offerebant vasa, et illa infundebat.",
+        "SYN": "И пошла от него и заперла дверь за собой и за сыновьями своими. Они подавали ей, а она наливала.",
+        "NEO": "Alors elle le quitta. Elle ferma la porte sur elle et sur ses enfants ; ils approchaient d’elle les vases, et elle versait.",
+        "NAB": "She went and did so, closing the door on herself and her children. As they handed her the vessels, she would pour in oil.",
+        "VAT_ES": "Ella se fue y se encerró con sus hijos; estos le presentaban los recipientes, y ella los iba llenando.",
+        "CEI": "Si allontanò da lui e chiuse la porta dietro a sé e ai suoi figli; questi porgevano ed essa versava."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י כִּ/מְלֹ֣את הַ/כֵּלִ֗ים וַ/תֹּ֤אמֶר אֶל בְּנָ/הּ֙ הַגִּ֨ישָׁ/ה אֵלַ֥/י עוֹד֙ כֶּ֔לִי וַ/יֹּ֣אמֶר אֵלֶ֔י/הָ אֵ֥ין ע֖וֹד כֶּ֑לִי וַֽ/יַּעֲמֹ֖ד הַ/שָּֽׁמֶן׃",
+        "LXX": "καὶ εἶπεν πρὸς τοὺς υἱοὺς αὐτῆς Ἐγγίσατε ἔτι πρὸς μὲ τὸ σκεῦος· καὶ εἶπον αὐτῇ Οὐκ ἔστιν ἔτι σκεῦος· καὶ ἔστη τὸ ἔλαιον.",
+        "VUL": "Cumque plena fuissent vasa, dixit ad filium suum : Affer mihi adhuc vas. Et ille respondit : Non habeo. Stetitque oleum.",
+        "SYN": "Когда наполнены были сосуды, она сказала сыну своему: подай мне еще сосуд. Он сказал ей: нет более сосудов. И остановилось масло.",
+        "NEO": "Lorsque les vases furent pleins, elle dit à son fils : « Approche encore de moi un vase. » Mais il lui répondit : « Il n’y a plus de vase. » Et l’huile s’arrêta.",
+        "NAB": "When all the vessels were filled, she said to her son, \"Bring me another vessel.\" \"There is none left,\" he answered her. And then the oil stopped.",
+        "VAT_ES": "Cuando todos estuvieron llenos, ella dijo a su hijo: «Alcánzame otro recipiente». Pero él respondió: «Ya no quedan más». Entonces dejó de correr el aceite.",
+        "CEI": "Quando i vasi furono pieni, disse a un figlio: \"Porgimi ancora un vaso\". Le rispose: \"Non ce ne sono più\". L'olio cessò."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/תָּבֹ֗א וַ/תַּגֵּד֙ לְ/אִ֣ישׁ הָ/אֱלֹהִ֔ים וַ/יֹּ֗אמֶר לְכִי֙ מִכְרִ֣י אֶת הַ/שֶּׁ֔מֶן וְ/שַׁלְּמִ֖י אֶת נשי/כי נִשְׁיֵ֑/ךְ וְ/אַ֣תְּ בני/כי וּ/בָנַ֔יִ/ךְ תִֽחְיִ֖י בַּ/נּוֹתָֽר׃",
+        "LXX": "καὶ ἦλθεν καὶ ἀπήγγειλεν τῷ ἀνθρώπῳ τοῦ θεοῦ· καὶ εἶπεν Ἐλεισαῖε Δεῦρο καὶ ἀπόδου τὸ ἔλαιον καὶ ἀποτίσεις τοὺς τόκους σου, καὶ σὺ καὶ οἱ υἱοί σου ζήσεσθε ἐν τῷ ἐπιλοίπῳ ἐλαίῳ.",
+        "VUL": "Venit autem illa, et indicavit homini Dei. Et ille : Vade, inquit, vende oleum, et redde creditori tuo : tu autem, et filii tui vivite de reliquo.",
+        "SYN": "И пришла она, и пересказала человеку Божию. Он сказал: пойди, продай масло и заплати долги твои; а что останется, тем будешь жить с сыновьями твоими.",
+        "NEO": "Elle alla le rapporter à l’homme de Dieu, et il dit : « Va vendre l’huile et paie ta dette ; et tu vivras, toi et tes fils, de ce qui restera. »",
+        "NAB": "She went and told the man of God, who said, \"Go and sell the oil to pay off your creditor; with what remains, you and your children can live.\"",
+        "VAT_ES": "Ella fue a informar al hombre de Dios, y este le dijo: «Ve a vender el aceite y paga la deuda; después, tú y tus hijos podrán vivir con el resto».",
+        "CEI": "Essa andò a riferire la cosa all'uomo di Dio, che le disse: \"Và, vendi l'olio e accontenta i tuoi creditori; tu e i tuoi figli vivete con quanto ne resterà\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֨י הַ/יּ֜וֹם וַ/יַּעֲבֹ֧ר אֱלִישָׁ֣ע אֶל שׁוּנֵ֗ם וְ/שָׁם֙ אִשָּׁ֣ה גְדוֹלָ֔ה וַ/תַּחֲזֶק בּ֖/וֹ לֶ/אֱכָל לָ֑חֶם וַֽ/יְהִי֙ מִ/דֵּ֣י עָבְר֔/וֹ יָסֻ֥ר שָׁ֖מָּ/ה לֶ/אֱכָל לָֽחֶם׃",
+        "LXX": "Καὶ ἐγένετο ἡμέρα καὶ διέβη Ἐλεισαῖε εἰς Σουμάν, καὶ ἐκεῖ γυνὴ μεγάλη καὶ ἐκράτησεν αὐτὸν φαγεῖν ἄρτον· καὶ ἐγένετο ἀφ’ ἱκανοῦ τοῦ εἰσπορεύεσθαι αὐτὸν ἐξέκλινεν τοῦ ἐκεῖ φαγεῖν.",
+        "VUL": "Facta est autem quædam dies, et transibat Eliseus per Sunam : erat autem ibi mulier magna, quæ tenuit eum ut comederet panem : cumque frequenter inde transiret, divertebat ad eam ut comederet panem.",
+        "SYN": "В один день пришел Елисей в Сонам. Там одна богатая женщина упросила его _к_ _себе_ есть хлеба; и когда он ни проходил, всегда заходил туда есть хлеба.",
+        "NEO": "Un jour Elisée passait par Sunam. Il y avait là une femme riche, qui le pressa d’accepter à manger ; et toutes les fois qu’il passait, il se rendait chez elle pour manger.",
+        "NAB": "One day Elisha came to Shunem, where there was a woman of influence, who urged him to dine with her. Afterward, whenever he passed by, he used to stop there to dine.",
+        "VAT_ES": "Un día, Eliseo pasó por Sunam. Había allí una mujer pudiente, que le insistió para que se quedara a comer. Desde entonces, cada vez que pasaba, él iba a comer allí.",
+        "CEI": "Un giorno Eliseo passava per Sunem, ove c'era una donna facoltosa, che l'invitò con insistenza a tavola. In seguito, tutte le volte che passava, si fermava a mangiare da lei."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר֙ אֶל אִישָׁ֔/הּ הִנֵּה נָ֣א יָדַ֔עְתִּי כִּ֛י אִ֥ישׁ אֱלֹהִ֖ים קָד֣וֹשׁ ה֑וּא עֹבֵ֥ר עָלֵ֖י/נוּ תָּמִֽיד׃",
+        "LXX": "καὶ εἶπεν ἡ γυνὴ πρὸς τὸν ἄνδρα αὐτῆς Ἰδοὺ δὴ ἔγνων ὅτι ἄνθρωπος τοῦ θεοῦ ἅγιος οὗτος διαπορεύεται ἐφ’ ἡμᾶς διὰ παντός.",
+        "VUL": "Quæ dixit ad virum suum : Animadverto quod vir Dei sanctus est iste, qui transit per nos frequenter.",
+        "SYN": "И сказала она мужу своему: вот, я знаю, что человек Божий, который проходит мимо нас постоянно, святой;",
+        "NEO": "Elle dit à son mari : « Voici, je sais que c’est un saint homme de Dieu, qui passe ainsi souvent chez nous.",
+        "NAB": "So she said to her husband, \"I know that he is a holy man of God. Since he visits us often,",
+        "VAT_ES": "Ella dijo a su marido: «Mira, me he dado cuenta de que ese que pasa siempre por nuestra casa es un santo hombre de Dios.",
+        "CEI": "Essa disse al marito: \"Io so che è un uomo di Dio, un santo, colui che passa sempre da noi."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "נַֽעֲשֶׂה נָּ֤א עֲלִיַּת קִיר֙ קְטַנָּ֔ה וְ/נָשִׂ֨ים ל֥/וֹ שָׁ֛ם מִטָּ֥ה וְ/שֻׁלְחָ֖ן וְ/כִסֵּ֣א וּ/מְנוֹרָ֑ה וְ/הָיָ֛ה בְּ/בֹא֥/וֹ אֵלֵ֖י/נוּ יָס֥וּר שָֽׁמָּ/ה׃",
+        "LXX": "ποιήσωμεν δὴ αὐτῷ ὑπερῷον, τόπον μικρόν, καὶ θῶμεν αὐτῷ ἐκεῖ κλίνην καὶ τράπεζαν καὶ δίφρον καὶ λυχνίαν· καὶ ἔσται ἐν τῷ εἰσπορεύεσθαι πρὸς ἡμᾶς καὶ ἐκκλινεῖ ἐκεῖ.",
+        "VUL": "Faciamus ergo ei cnaculum parvum, et ponamus ei in eo lectulum, et mensam, et sellam, et candelabrum, ut cum venerit ad nos, maneat ibi.",
+        "SYN": "сделаем небольшую горницу над стеною и поставим ему там постель, и стол, и седалище, и светильник; и когда он будет приходить к нам, пусть заходит туда.",
+        "NEO": "Faisons-lui une petite chambre haute contre le mur, et mettons-y pour lui un lit, une table, un siège et un chandelier, afin qu’il s’y retire quand il viendra chez nous. »",
+        "NAB": "let us arrange a little room on the roof and furnish it for him with a bed, table, chair, and lamp, so that when he comes to us he can stay there.\"",
+        "VAT_ES": "Vamos a construirle una pequeña habitación en la terraza; le pondremos allí una cama, una mesa, una silla y una lámpara, y así, cuando él venga, tendrá donde alojarse».",
+        "CEI": "Prepariamogli una piccola camera al piano di sopra, in muratura, mettiamoci un letto, un tavolo, una sedia e una lampada, sì che, venendo da noi, vi si possa ritirare\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י הַ/יּ֖וֹם וַ/יָּ֣בֹא שָׁ֑מָּ/ה וַ/יָּ֥סַר אֶל הָ/עֲלִיָּ֖ה וַ/יִּשְׁכַּב שָֽׁמָּ/ה׃",
+        "LXX": "καὶ ἐγένετο ἡμέρα καὶ εἰσῆλθεν ἐκεῖ, καὶ ἐξέκλινεν εἰς τὸ ὑπερῷον καὶ ἐκοιμήθη ἐκεῖ.",
+        "VUL": "Facta est ergo dies quædam, et veniens divertit in cnaculum, et requievit ibi.",
+        "SYN": "В один день он пришел туда, и зашел в горницу, и лег там,",
+        "NEO": "Elisée, étant revenu un autre jour à Sunam, se retira dans la chambre haute et y coucha.",
+        "NAB": "Sometime later Elisha arrived and stayed in the room overnight.",
+        "VAT_ES": "Un día Eliseo llegó por allí, se retiró a la habitación de arriba y se acostó.",
+        "CEI": "Recatosi egli un giorno là, si ritirò nella camera e vi si coricò."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ אֶל גֵּחֲזִ֣י נַעֲר֔/וֹ קְרָ֖א לַ/שּׁוּנַמִּ֣ית הַ/זֹּ֑את וַ/יִּקְרָא לָ֔/הּ וַֽ/תַּעֲמֹ֖ד לְ/פָנָֽי/ו׃",
+        "LXX": "καὶ εἶπεν πρὸς Γιεζεὶ τὸ παιδάριον αὐτοῦ Κάλεσόν μοι τὴν Σωμανεῖτιν ταύτην· καὶ ἐκάλεσεν αὐτήν, καὶ ἔστη ἐνώπιον αὐτοῦ.",
+        "VUL": "Dixitque ad Giezi puerum suum : Voca Sunamitidem istam. Qui cum vocasset eam, et illa stetisset coram eo,",
+        "SYN": "и сказал Гиезию, слуге своему: позови эту Сонамитянку. И позвал ее, и она стала пред ним.",
+        "NEO": "Il dit à Giézi, son serviteur : « Appelle cette Sunamite. » Giézi l’appela, et elle se présenta devant lui.",
+        "NAB": "Then he said to his servant Gehazi, \"Call this Shunammite woman.\" He did so, and when she stood before Elisha,",
+        "VAT_ES": "Después dijo a Guejazí, su servidor: «Llama a esa buena sunamita». El servidor la llamó, y ella se presentó ante él.",
+        "CEI": "Egli disse a Ghecazi suo servo: \"Chiama questa Sunammita\". La chiamò ed essa si presentò a lui."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר ל֗/וֹ אֱמָר נָ֣א אֵלֶי/הָ֮ הִנֵּ֣ה חָרַ֣דְתְּ אֵלֵי/נוּ֮ אֶת כָּל הַ/חֲרָדָ֣ה הַ/זֹּאת֒ מֶ֚ה לַ/עֲשׂ֣וֹת לָ֔/ךְ הֲ/יֵ֤שׁ לְ/דַבֶּר לָ/ךְ֙ אֶל הַ/מֶּ֔לֶךְ א֖וֹ אֶל שַׂ֣ר הַ/צָּבָ֑א וַ/תֹּ֕אמֶר בְּ/ת֥וֹךְ עַמִּ֖/י אָנֹכִ֥י יֹשָֽׁבֶת׃",
+        "LXX": "καὶ εἶπεν αὐτῷ Εἰπὸν δὴ πρὸς αὐτήν Ἰδοὺ ἐξέστησας ἡμῖν τὴν πᾶσαν ἔνκτησιν· τί δεῖ ποιῆσαί σοι; εἰ ἔστιν λόγος σοι πρὸς τὸν βασιλέα ἢ πρὸς τὸν ἄρχοντα τῆς δυνάμεως; ἡ δὲ εἶπεν Ἐν μέσῳ τοῦ λαοῦ ἐγώ εἰμι οἰκῶ.",
+        "VUL": "dixit ad puerum suum : Loquere ad eam : Ecce, sedule in omnibus ministrasti nobis : quid vis ut faciam tibi ? numquid habes negotium, et vis ut loquar regi, sive principi militiæ ? Quæ respondit : In medio populi mei habito.",
+        "SYN": "И сказал ему: скажи ей: \"вот, ты так заботишься о нас; что сделать бы тебе? не нужно ли поговорить о тебе с царем, или с военачальником?\" Она сказала: нет, среди своего народа я живу.",
+        "NEO": "Et Elisée dit à Giézi : « Dis-lui : Voici que tu nous as témoigné toute cette sollicitude : que peut-on faire pour toi ? Faut-il parler pour toi au roi ou au chef de l’armée ? » Elle répondit à Giézi : « J’habite au milieu de mon peuple. »",
+        "NAB": "he told Gehazi, \"Say to her, 'You have lavished all this care on us; what can we do for you? Can we say a good word for you to the king or to the commander of the army?'\" She replied, \"I am living among my own people.\"",
+        "VAT_ES": "Eliseo dijo entonces a Guejazí: «Dile: Realmente tú te has desvivido por nosotros: &iquest;qué se puede hacer por ti? &iquest;Necesitas una recomendación para el rey o el jefe del ejército?». Ella respondió: «Me siento muy bien donde estoy, en medio de mi gente».",
+        "CEI": "Eliseo disse al suo servo: \"Dille tu: Ecco hai avuto per noi tutta questa premura; che cosa possiamo fare per te? C'è forse bisogno di intervenire in tuo favore presso il re oppure presso il capo dell'esercito?\". Essa rispose: \"Io sto in mezzo al mio popolo\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֕אמֶר וּ/מֶ֖ה לַ/עֲשׂ֣וֹת לָ֑/הּ וַ/יֹּ֣אמֶר גֵּיחֲזִ֗י אֲבָ֛ל בֵּ֥ן אֵֽין לָ֖/הּ וְ/אִישָׁ֥/הּ זָקֵֽן׃",
+        "LXX": "καὶ εἶπεν Τί δεῖ ποιῆσαι αὐτῇ; καὶ εἶπεν Γιεζεὶ τὸ παιδάριον αὐτοῦ Καὶ μάλα υἱὸς οὐκ ἔστιν αὐτῇ, καὶ ὁ ἀνὴρ αὐτῆς πρεσβύτης.",
+        "VUL": "Et ait : Quid ergo vult ut faciam ei ? Dixitque Giezi : Ne quæras : filium enim non habet, et vir ejus senex est.",
+        "SYN": "И сказал он: что же сделать ей? И сказал Гиезий: да вот, сына нет у нее, а муж ее стар.",
+        "NEO": "Et Elisée dit : « Que faire pour elle ? » Giézi répondit : « Mais elle n’a pas de fils, et son mari est vieux. »",
+        "NAB": "Later Elisha asked, \"Can something be done for her?\" \"Yes!\" Gehazi answered. \"She has no son, and her husband is getting on in years.\"",
+        "VAT_ES": "Pero Eliseo insistió: «Entonces, &iquest;qué se puede hacer por ella?». Guejazí respondió: «Lamentablemente, no tiene un hijo y su marido es viejo».",
+        "CEI": "Eliseo replicò: \"Che cosa si può fare per lei?\". Ghecazi disse: \"Purtroppo essa non ha figli e suo marito è vecchio\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֖אמֶר קְרָא לָ֑/הּ וַ/יִּקְרָא לָ֔/הּ וַֽ/תַּעֲמֹ֖ד בַּ/פָּֽתַח׃",
+        "LXX": "καὶ ἐκάλεσεν αὐτήν, καὶ ἔστη παρὰ τὴν θύραν.",
+        "VUL": "Præcepit itaque ut vocaret eam : quæ cum vocata fuisset, et stetisset ante ostium,",
+        "SYN": "И сказал он: позови ее. Он позвал ее, и стала она в дверях.",
+        "NEO": "Et Elisée dit : « Appelle-la. » Giézi l’appela, et elle se tint à la porte.",
+        "NAB": "\"Call her,\" said Elisha. When she had been called, and stood at the door,",
+        "VAT_ES": "«Llámala», dijo Eliseo. Cuando la llamó, ella se quedó junto a la puerta,",
+        "CEI": "Eliseo disse: \"Chiamala!\". La chiamò; essa si fermò sulla porta."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר לַ/מּוֹעֵ֤ד הַ/זֶּה֙ כָּ/עֵ֣ת חַיָּ֔ה אתי אַ֖תְּ חֹבֶ֣קֶת בֵּ֑ן וַ/תֹּ֗אמֶר אַל אֲדֹנִ/י֙ אִ֣ישׁ הָ/אֱלֹהִ֔ים אַל תְּכַזֵּ֖ב בְּ/שִׁפְחָתֶֽ/ךָ׃",
+        "LXX": "καὶ εἶπεν Ἐλεισαῖε πρὸς αὐτήν Εἰς τὸν καιρὸν τοῦτον, ὡς ἡ ὥρα ζῶσα, σὺ περιειληφυῖα υἱόν· ἡ δὲ εἶπεν Μή, κύριε μου, μὴ διαψεύσῃ τὴν δούλην σου.",
+        "VUL": "dixit ad eam : In tempore isto, et in hac eadem hora, si vita comes fuerit, habebis in utero filium. At illa respondit : Noli quæso, domine mi vir Dei, noli mentiri ancillæ tuæ.",
+        "SYN": "И сказал он: через год, в это самое время ты будешь держать на руках сына. И сказала она: нет, господин мой, человек Божий, не обманывай рабы твоей.",
+        "NEO": "Et Elisée lui dit : « À cette même époque, dans un an, tu caresseras un fils. » Et elle dit : « Non, mon seigneur, homme de Dieu, ne trompe pas ta servante. »",
+        "NAB": "Elisha promised, \"This time next year you will be fondling a baby son.\" \"Please, my lord,\" she protested, \"you are a man of God; do not deceive your servant.\"",
+        "VAT_ES": "y Eliseo le dijo: El año próximo, para esta misma época, tendrás un hijo en tus brazos». Ella exclamó: «No, señor, por favor; tú eres un hombre de Dios, no engañes a tu servidora».",
+        "CEI": "Allora disse: \"L'anno prossimo, in questa stessa stagione, tu terrai in braccio un figlio\". Essa rispose: \"No, mio signore, uomo di Dio, non mentire con la tua serva\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/תַּ֥הַר הָ/אִשָּׁ֖ה וַ/תֵּ֣לֶד בֵּ֑ן לַ/מּוֹעֵ֤ד הַ/זֶּה֙ כָּ/עֵ֣ת חַיָּ֔ה אֲשֶׁר דִּבֶּ֥ר אֵלֶ֖י/הָ אֱלִישָֽׁע׃",
+        "LXX": "καὶ ἐν γαστρὶ ἔλαβεν ἡ γυνή, καὶ ἔτεκεν υἱὸν εἰς τὸν καιρὸν τοῦτον ὡς ἡ ὥρα ζῶσα, ὡς ἐλάλησεν πρὸς αὐτὴν Ἐλεισαῖε.",
+        "VUL": "Et concepit mulier, et peperit filium in tempore, et in hora eadem, qua dixerat Eliseus.",
+        "SYN": "И женщина стала беременною и родила сына на другой год, в то самое время, как сказал ей Елисей.",
+        "NEO": "Et la femme conçut, et elle enfanta un fils, à la même époque, l’année suivante, comme Elisée le lui avait dit.",
+        "NAB": "Yet the woman conceived, and by the same time the following year she had given birth to a son, as Elisha had promised.",
+        "VAT_ES": "Pero la mujer concibió, y dio a luz un hijo al año siguiente, para esa misma época, como se lo había dicho Eliseo.",
+        "CEI": "Ora la donna rimase incinta e partorì un figlio, proprio alla data indicata da Eliseo."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּגְדַּ֖ל הַ/יָּ֑לֶד וַ/יְהִ֣י הַ/יּ֔וֹם וַ/יֵּצֵ֥א אֶל אָבִ֖י/ו אֶל הַ/קֹּצְרִֽים׃",
+        "LXX": "καὶ ἡδρύνθη τὸ παιδάριον· καὶ ἐγένετο ἡνίκα ἐξῆλθεν πρὸς τὸν πατέρα αὐτοῦ πρὸς τοὺς θερίζοντας,",
+        "VUL": "Crevit autem puer : et cum esset quædam dies, et egressus isset ad patrem suum, ad messores,",
+        "SYN": "И подрос ребенок и в один день пошел к отцу своему, к жнецам.",
+        "NEO": "L’enfant grandit. Un jour qu’il était allé trouver son père auprès des moissonneurs,",
+        "NAB": "The day came when the child was old enough to go out to his father among the reapers.",
+        "VAT_ES": "El niño creció. Y un día en que había ido a ver a su padre, que estaba con los segadores,",
+        "CEI": "Il bambino crebbe e un giorno uscì per andare dal padre fra i mietitori."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר אֶל אָבִ֖י/ו רֹאשִׁ֣/י רֹאשִׁ֑/י וַ/יֹּ֨אמֶר֙ אֶל הַ/נַּ֔עַר שָׂאֵ֖/הוּ אֶל אִמּֽ/וֹ׃",
+        "LXX": "καὶ εἶπεν πρὸς τὸν πατέρα αὐτοῦ Τὴν κεφαλήν μου, τὴν κεφαλήν μου· καὶ εἶπεν τῷ παιδαρίῳ Ἆρον αὐτὸν πρὸς τὴν μητέρα αὐτοῦ.",
+        "VUL": "ait patri suo : Caput meum doleo, caput meum doleo. At ille dixit puero : Tolle, et duc eum ad matrem suam.",
+        "SYN": "И сказал отцу своему: голова моя! голова моя болит! И сказал тот слуге своему: отнеси его к матери его.",
+        "NEO": "il dit à son père : « Ma tête ! ma tête ! » Le père dit à son serviteur : « Porte-le à sa mère. »",
+        "NAB": "\"My head hurts!\" he complained to his father. \"Carry him to his mother,\" the father said to a servant.",
+        "VAT_ES": "le dijo: «&iexcl;Ay, mi cabeza! &iexcl;Ay, mi cabeza!». El padre dijo al servidor: «Llévaselo a su madre».",
+        "CEI": "Egli disse al padre: \"La mia testa, la mia testa!\". Il padre ordinò a un servo: \"Portalo dalla mamma\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּשָּׂאֵ֔/הוּ וַ/יְבִיאֵ֖/הוּ אֶל אִמּ֑/וֹ וַ/יֵּ֧שֶׁב עַל בִּרְכֶּ֛י/הָ עַד הַֽ/צָּהֳרַ֖יִם וַ/יָּמֹֽת׃",
+        "LXX": "καὶ ἐκοιμήθη ἐπὶ τῶν γονάτων αὐτῆς ἕως μεσημβρίας, καὶ ἀπέθανεν.",
+        "VUL": "Qui cum tulisset, et duxisset eum ad matrem suam, posuit eum illa super genua sua usque ad meridiem, et mortuus est.",
+        "SYN": "И понес его и принес его к матери его. И он сидел на коленях у нее до полудня, и умер.",
+        "NEO": "Le serviteur l’ayant emporté et amené à sa mère, l’enfant resta sur les genoux de sa mère jusqu’à midi, puis il mourut.",
+        "NAB": "The servant picked him up and carried him to his mother; he stayed with her until noon, when he died in her lap.",
+        "VAT_ES": "El lo tomó y se lo llevó a su madre. El niño estuvo en la falda de su madre hasta el mediodía y luego murió.",
+        "CEI": "Questi lo prese e lo portò da sua madre. Il bambino stette sulle ginocchia di costei fino a mezzogiorno, poi morì."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/תַּ֨עַל֙ וַ/תַּשְׁכִּבֵ֔/הוּ עַל מִטַּ֖ת אִ֣ישׁ הָ/אֱלֹהִ֑ים וַ/תִּסְגֹּ֥ר בַּעֲד֖/וֹ וַ/תֵּצֵֽא׃",
+        "LXX": "καὶ ἀνήνεγκεν αὐτὸν καὶ ἐκοίμισεν αὐτὸν ἐπὶ τὴν κλίνην τοῦ ἀνθρώπου τοῦ θεοῦ, καὶ ἀπέκλεισεν κατ’ αὐτοῦ καὶ ἐξῆλθεν.",
+        "VUL": "Ascendit autem, et collocavit eum super lectulum hominis Dei, et clausit ostium : et egressa,",
+        "SYN": "И пошла она, и положила его на постели человека Божия, и заперла его, и вышла,",
+        "NEO": "Elle monta, le coucha sur le lit de l’homme de Dieu, ferma la porte sur lui et sortit.",
+        "NAB": "The mother took him upstairs and laid him on the bed of the man of God. Closing the door on him, she went out",
+        "VAT_ES": "Entonces ella subió, lo acostó en la cama del hombre de Dios, cerró la puerta y salió.",
+        "CEI": "Essa salì a stenderlo sul letto dell'uomo di Dio; chiuse la porta e uscì."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/תִּקְרָא֮ אֶל אִישָׁ/הּ֒ וַ/תֹּ֗אמֶר שִׁלְחָ֨/ה נָ֥א לִ/י֙ אֶחָ֣ד מִן הַ/נְּעָרִ֔ים וְ/אַחַ֖ת הָ/אֲתֹנ֑וֹת וְ/אָר֛וּצָה עַד אִ֥ישׁ הָ/אֱלֹהִ֖ים וְ/אָשֽׁוּבָה׃",
+        "LXX": "καὶ ἐκάλεσεν τὸν ἄνδρα αὐτῆς καὶ εἶπεν Ἀπόστειλον δή μοι ἓν τῶν παιδαρίων καὶ μίαν τῶν ὄνων, καὶ δραμοῦμαι ἕως τοῦ ἀνθρώπου τοῦ θεοῦ καὶ ἐπιστρέψω.",
+        "VUL": "vocavit virum suum, et ait : Mitte mecum, obsecro, unum de pueris, et asinam, ut excurram usque ad hominem Dei, et revertar.",
+        "SYN": "и позвала мужа своего и сказала: пришли мне одного из слуг и одну из ослиц, я поеду к человеку Божию и возвращусь.",
+        "NEO": "Elle appela son mari, et dit : « Envoie-moi, je te prie, un des serviteurs et une des ânesses, que je courre vers l’homme de Dieu, pour en revenir aussitôt. »",
+        "NAB": "and called to her husband, \"Let me have a servant and a donkey. I must go quickly to the man of God, and I will be back.\"",
+        "VAT_ES": "Después mandó llamar a su marido y le dijo: «Envíame, por favor, a uno de los servidores con un asna; voy corriendo a ver al hombre de Dios, y en seguida vuelvo».",
+        "CEI": "Chiamò il marito e gli disse: \"Su, mandami uno dei servi e un'asina; voglio correre dall'uomo di Dio; tornerò subito\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר מַ֠דּוּעַ אתי אַ֣תְּ הלכתי הֹלֶ֤כֶת אֵלָי/ו֙ הַ/יּ֔וֹם לֹֽא חֹ֖דֶשׁ וְ/לֹ֣א שַׁבָּ֑ת וַ/תֹּ֖אמֶר שָׁלֽוֹם׃",
+        "LXX": "καὶ εἶπεν Τί ὅτι σὺ πορεύῃ πρὸς αὐτὸν σήμερον; οὐ νεομηνία οὐδὲ σάββατον· ἡ δὲ εἶπεν Εἰρήνη.",
+        "VUL": "Qui ait illi : Quam ob causam vadis ad eum ? hodie non sunt calendæ, neque sabbatum. Quæ respondit : Vadam.",
+        "SYN": "Он сказал: зачем тебе ехать к нему? сегодня не новомесячие и не суббота. Но она сказала: хорошо.",
+        "NEO": "Il dit : « Pourquoi aller aujourd’hui vers lui ? Ce n’est ni la nouvelle lune, ni le sabbat. » Elle répondit : « Sois tranquille. »",
+        "NAB": "\"Why are you going to him today?\" he asked. \"It is neither the new moon nor the sabbath.\" But she bade him good-bye,",
+        "VAT_ES": "El le preguntó: «&iquest;Por qué vas a verlo hoy, si no es día de luna nueva ni sábado?». Pero ella le dijo: «No te preocupes».",
+        "CEI": "Quegli domandò: \"Perché vuoi andare oggi? Non è il novilunio né sabato\". Ma essa rispose: \"Addio\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַֽ/תַּחֲבֹשׁ֙ הָֽ/אָת֔וֹן וַ/תֹּ֥אמֶר אֶֽל נַעֲרָ֖/הּ נְהַ֣ג וָ/לֵ֑ךְ אַל תַּעֲצָר לִ֣/י לִ/רְכֹּ֔ב כִּ֖י אִם אָמַ֥רְתִּי לָֽ/ךְ׃",
+        "LXX": "καὶ ἐπέσαξεν τὴν ὄνον, καὶ εἶπεν πρὸς τὸ παιδάριον αὐτῆς Ἄγε πορεύου, μὴ ἐπίσχῃς μοι τοῦ ἐπιβῆναι, ὅτι ἐὰν εἴπω σοι",
+        "VUL": "Stravitque asinam, et præcepit puero : Mina, et propera : ne mihi moram facias in eundo : et hoc age quod præcipio tibi.",
+        "SYN": "И оседлала ослицу и сказала слуге своему: веди и иди; не останавливайся, доколе не скажу тебе.",
+        "NEO": "Et, ayant fait seller l’ânesse, elle dit à son serviteur : « Mène-moi et va ; ne m’arrête pas en route sans que je te le dise. »",
+        "NAB": "and when the donkey was saddled, said to her servant: \"Lead on! Do not stop my donkey unless I tell you to.\"",
+        "VAT_ES": "Luego hizo ensillar el asna y dijo a su servidor: «Toma la rienda y camina. No me detengas por el camino, a no ser que yo te lo diga».",
+        "CEI": "Fece sellare l'asina e disse al proprio servo: \"Conducimi, cammina, non fermarmi durante il tragitto, a meno che non te l'ordini io\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֗לֶךְ וַ/תָּב֛וֹא אֶל אִ֥ישׁ הָ/אֱלֹהִ֖ים אֶל הַ֣ר הַ/כַּרְמֶ֑ל וַ֠/יְהִי כִּ/רְא֨וֹת אִישׁ הָ/אֱלֹהִ֤ים אֹתָ/הּ֙ מִ/נֶּ֔גֶד וַ/יֹּ֨אמֶר֙ אֶל גֵּיחֲזִ֣י נַעֲר֔/וֹ הִנֵּ֖ה הַ/שּׁוּנַמִּ֥ית הַלָּֽז׃",
+        "LXX": "Δεῦρο καὶ πορεύσῃ, καὶ ἐλεύσῃ πρὸς τὸν ἄνθρωπον τοῦ θεοῦ εἰς τὸ ὄρος τὸ Καρμήλιον. καὶ ἐγένετο ὡς εἶδεν Ἐλεισαῖε ἐρχομένην αὐτήν, καὶ εἶπεν πρὸς Γιεζεὶ τὸ παιδάριον αὐτοῦ Ἰδοὺ δὴ ἡ Σωμανεῖτις ἐκείνη.",
+        "VUL": "Profecta est igitur, et venit ad virum Dei in montem Carmeli : cumque vidisset eam vir Dei e contra, ait ad Giezi puerum suum : Ecce Sunamitis illa.",
+        "SYN": "И отправилась и прибыла к человеку Божию, к горе Кармил. И когда увидел человек Божий ее издали, то сказал слуге своему Гиезию: это та Сонамитянка.",
+        "NEO": "Elle partit et se rendit vers l’homme de Dieu, sur la montagne du Carmel.",
+        "NAB": "She kept going till she reached the man of God on Mount Carmel. When he spied her at a distance, the man of God said to his servant Gehazi: \"There is the Shunammite!",
+        "VAT_ES": "Así partió y llegó adonde estaba el hombre de Dios, en el monte Carmelo. Cuando el hombre de Dios la divisó a lo lejos, dijo a Guejazí, su servidor: «Ahí viene nuestra sunamita.",
+        "CEI": "Si incamminò; giunse dall'uomo di Dio sul monte Carmelo. Quando l'uomo di Dio la vide da lontano, disse a Ghecazi suo servo: \"Ecco la Sunammita!"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "עַתָּה֮ רֽוּץ נָ֣א לִ/קְרָאתָ/הּ֒ וֶ/אֱמָר לָ֗/הּ הֲ/שָׁל֥וֹם לָ֛/ךְ הֲ/שָׁל֥וֹם לְ/אִישֵׁ֖/ךְ הֲ/שָׁל֣וֹם לַ/יָּ֑לֶד וַ/תֹּ֖אמֶר שָׁלֽוֹם׃",
+        "LXX": "νῦν δράμε εἰς ἀπαντὴν αὐτῆς καὶ ἐρεῖς Ἢ εἰρήνη σοι; ἢ εἰρήνη τῷ ἀνδρί σου; ἢ εἰρήνη τῷ παιδαρίῳ; ἡ δὲ εἶπεν Εἰρήνη.",
+        "VUL": "Vade ergo in occursum ejus, et dic ei : Recte ne agitur circa te, et circa virum tuum, et circa filium tuum ? Quæ respondit : Recte.",
+        "SYN": "Побеги к ней навстречу и скажи ей: \"здорова ли ты? здоров ли муж твой? здоров ли ребенок?\" -- Она сказала: здоровы.",
+        "NEO": "Cours donc à sa rencontre et dis-lui : Te portes-tu bien ? Ton mari se porte-t-il bien ? Ton enfant se porte-t-il bien ? » Elle répondit : « Bien ! »",
+        "NAB": "Hurry to meet her, and ask if all is well with her, with her husband, and with the boy.\" \"Greetings,\" she replied.",
+        "VAT_ES": "Corre a su encuentro y dile: &iquest;Cómo estás? &iquest;Cómo están tu marido y tu hijo?». Ella respondió: «Todos bien».",
+        "CEI": "Su, corrile incontro e domandale: Stai bene? Tuo marito sta bene? E tuo figlio sta bene?\". Quella rispose: \"Bene!\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/תָּבֹ֞א אֶל אִ֤ישׁ הָֽ/אֱלֹהִים֙ אֶל הָ/הָ֔ר וַֽ/תַּחֲזֵ֖ק בְּ/רַגְלָ֑י/ו וַ/יִּגַּ֨שׁ גֵּֽיחֲזִ֜י לְ/הָדְפָ֗/הּ וַ/יֹּאמֶר֩ אִ֨ישׁ הָ/אֱלֹהִ֤ים הַרְפֵּֽה לָ/הּ֙ כִּֽי נַפְשָׁ֣/הּ מָֽרָה לָ֔/הּ וַֽ/יהוָה֙ הֶעְלִ֣ים מִמֶּ֔/נִּי וְ/לֹ֥א הִגִּ֖יד לִֽ/י׃",
+        "LXX": "καὶ ἦλθεν πρὸς Ἐλεισαῖε εἰς τὸ ὄρος καὶ ἐπελάβετο τῶν ποδῶν αὐτοῦ· καὶ ἤγγισεν Γιεζεὶ ἀπεώσασθαι αὐτήν. καὶ εἶπεν Ἐλεισαῖε Ἄφες αὐτήν· ὅτι ἡ ψυχὴ αὐτῆς κατώδυνος αὐτῇ, καὶ Κύριος ἀπέκρυψεν ἀπ’ ἐμοῦ καὶ σοῦ καὶ οὐκ ἀνήγγειλέν μοι.",
+        "VUL": "Cumque venisset ad virum Dei in montem, apprehendit pedes ejus : et accessit Giezi ut amoveret eam. Et ait homo Dei : Dimitte illam : anima enim ejus in amaritudine est, et Dominus celavit a me, et non indicavit mihi.",
+        "SYN": "Когда же пришла к человеку Божию на гору, ухватилась за ноги его. И подошел Гиезий, чтобы отвести ее; но человек Божий сказал: оставь ее, душа у нее огорчена, а Господь скрыл от меня и не объявил мне.",
+        "NEO": "Dès qu’elle fut arrivée auprès de l’homme de Dieu, sur la montagne, elle saisit ses pieds. Giézi s’approcha pour la repousser ; mais l’homme de Dieu dit : « Laisse-la, car son âme est dans l’amertume, et \\+w Yahweh|strong=\"H3068\"\\+w** me l’a caché et ne me l’a pas fait connaître. »",
+        "NAB": "But when she reached the man of God on the mountain, she clasped his feet. Gehazi came near to push her away, but the man of God said: \"Let her alone, she is in bitter anguish; the LORD hid it from me and did not let me know.\"",
+        "VAT_ES": "Y al llegar junto al hombre de Dios, en la montaña, se abrazó a sus pies. Guejazí se acercó para apartarla, pero el hombre de Dios dijo: «Déjala, porque está muy apenada, y el Señor me lo tuvo oculto, no me manifestó nada».",
+        "CEI": "Giunta presso l'uomo di Dio sul monte, gli afferrò le ginocchia. Ghecazi si avvicinò per tirarla indietro, ma l'uomo di Dio disse: \"Lasciala stare, perché la sua anima è amareggiata e il Signore me ne ha nascosto il motivo; non me l'ha rivelato\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֕אמֶר הֲ/שָׁאַ֥לְתִּי בֵ֖ן מֵ/אֵ֣ת אֲדֹנִ֑/י הֲ/לֹ֣א אָמַ֔רְתִּי לֹ֥א תַשְׁלֶ֖ה אֹתִֽ/י׃",
+        "LXX": "ἡ δὲ εἶπεν Μὴ ᾐτησάμην υἱὸν παρὰ τοῦ κυρίου μου; ὅτι οὐκ εἶπα Οὐ πλανήσεις μετ’ ἐμοῦ;",
+        "VUL": "Quæ dixit illi : Numquid petivi filium a domino meo ? numquid non dixi tibi : Ne illudas me ?",
+        "SYN": "И сказала она: просила ли я сына у господина моего? не говорила ли я: \"не обманывай меня\"?",
+        "NEO": "Alors elle dit : « Ai-je demandé un fils à mon seigneur ? N’ai-je pas dit : Ne me trompe pas ? »",
+        "NAB": "\"Did I ask my lord for a son?\" she cried out. \"Did I not beg you not to deceive me?\"",
+        "VAT_ES": "Entonces ella dijo: «&iquest;Le pedí yo un hijo a mi señor? &iquest;No te dije que no me ilusionaras?».",
+        "CEI": "Essa disse: \"Avevo forse domandato io un figlio al mio signore? Non ti dissi forse: Non mi ingannare?\"."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר לְ/גֵיחֲזִ֜י חֲגֹ֣ר מָתְנֶ֗י/ךָ וְ/קַ֨ח מִשְׁעַנְתִּ֣/י בְ/יָדְ/ךָ֮ וָ/לֵךְ֒ כִּֽי תִמְצָ֥א אִישׁ֙ לֹ֣א תְבָרְכֶ֔/נּוּ וְ/כִֽי יְבָרֶכְ/ךָ֥ אִ֖ישׁ לֹ֣א תַעֲנֶ/נּ֑וּ וְ/שַׂמְתָּ֥ מִשְׁעַנְתִּ֖/י עַל פְּנֵ֥י הַ/נָּֽעַר׃",
+        "LXX": "καὶ εἶπεν Ἐλεισαῖε τῷ Γιεζεί Ζῶσαι τὴν ὀσφύν σου καὶ λάβε τὴν βακτηρίαν μου ἐν τῇ χειρί σου καὶ δεῦρο· ὅτι ἐὰν εὕρῃς ἄνδρα οὐκ εὐλογήσεις αὐτόν, καὶ ἐὰν εὐλογήσῃ σε ἀνὴρ οὐκ ἀποκριθήσῃ αὐτῷ· καὶ ἐπιθήσεις τὴν βακτηρίαν μου ἐπὶ πρόσωπον τοῦ παιδαρίου.",
+        "VUL": "Et ille ait ad Giezi : Accinge lumbos tuos, et tolle baculum meum in manu tua, et vade. Si occurrerit tibi homo, non salutes eum : et si salutaverit te quispiam, non respondeas illi : et pones baculum meum super faciem pueri.",
+        "SYN": "И сказал он Гиезию: опояшь чресла твои и возьми жезл мой в руку твою, и пойди; если встретишь кого, не приветствуй его, и если кто будет тебя приветствовать, не отвечай ему; и положи посох мой на лице ребенка.",
+        "NEO": "Et Elisée dit à Giézi : « Ceins tes reins, prends mon bâton dans ta main et pars. Si tu rencontres quelqu’un, ne le salue pas, et si quelqu’un te salue, ne lui réponds pas. Tu mettras mon bâton sur le visage de l’enfant. »",
+        "NAB": "\"Gird your loins,\" Elisha said to Gehazi, \"take my staff with you and be off; if you meet anyone, do not greet him, and if anyone greets you, do not answer. Lay my staff upon the boy.\"",
+        "VAT_ES": "Eliseo dijo a Guejazí: «Cíñete el cinturón, toma mi bastón y vete. Si encuentras a alguien por el camino no lo saludes, y si alguien te saluda no le respondas. Coloca mi bastón sobre el rostro del muchacho».",
+        "CEI": "Eliseo disse a Ghecazi: \"Cingi i tuoi fianchi, prendi il mio bastone e parti. Se incontrerai qualcuno, non salutarlo; se qualcuno ti saluta, non rispondergli. Metterai il mio bastone sulla faccia del ragazzo\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר֙ אֵ֣ם הַ/נַּ֔עַר חַי יְהוָ֥ה וְ/חֵֽי נַפְשְׁ/ךָ֖ אִם אֶעֶזְבֶ֑/ךָּ וַ/יָּ֖קָם וַ/יֵּ֥לֶךְ אַחֲרֶֽי/הָ׃",
+        "LXX": "καὶ εἶπεν ἡ μήτηρ τοῦ παιδαρίου Ζῇ Κύριος καὶ ζῇ ἡ ψυχή σου, εἰ ἐνκαταλείψω σε· καὶ ἀνέστη Ἐλεισαῖε καὶ ἐπορεύθη ὀπίσω αὐτῆς.",
+        "VUL": "Porro mater pueri ait : Vivit Dominus, et vivit anima tua, non dimittam te. Surrexit ergo, et secutus est eam.",
+        "SYN": "И сказала мать ребенка: жив Господь и жива душа твоя! не отстану от тебя. И он встал и пошел за нею.",
+        "NEO": "La mère de l’enfant dit : « \\+w Yahweh|strong=\"H3068\"\\+w** est vivant et ton âme est vivante ! je ne te quitterai point. » Et Elisée se leva et la suivit.",
+        "NAB": "But the boy's mother cried out: \"As the LORD lives and as you yourself live, I will not release you.\" So he started to go back with her.",
+        "VAT_ES": "Pero la madre replicó: «Juro por la vida del Señor y por tu propia vida que no te dejaré». Entonces Eliseo se levantó y fue detrás de ella.",
+        "CEI": "La madre del ragazzo disse: \"Per la vita del Signore e per la tua vita, non ti lascerò\". Allora quegli si alzò e la seguì."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/גֵחֲזִ֞י עָבַ֣ר לִ/פְנֵי/הֶ֗ם וַ/יָּ֤שֶׂם אֶת הַ/מִּשְׁעֶ֨נֶת֙ עַל פְּנֵ֣י הַ/נַּ֔עַר וְ/אֵ֥ין ק֖וֹל וְ/אֵ֣ין קָ֑שֶׁב וַ/יָּ֤שָׁב לִ/קְרָאת/וֹ֙ וַ/יַּגֶּד ל֣/וֹ לֵ/אמֹ֔ר לֹ֥א הֵקִ֖יץ הַ/נָּֽעַר׃",
+        "LXX": "καὶ Γιεζεὶ διῆλθεν ἔμπροσθεν αὐτῆς, καὶ ἐπέθηκεν τὴν βακτηρίαν ἐπὶ πρόσωπον τοῦ παιδαρίου, καὶ οὐκ ἦν φωνὴ καὶ οὐκ ἦν ἀκρόασις· καὶ ἐπέστρεψεν εἰς ἀπαντὴν αὐτοῦ καὶ ἀπήγγειλεν αὐτῷ λέγων Οὐκ ἠγέρθη τὸ παιδάριον.",
+        "VUL": "Giezi autem præcesserat ante eos, et posuerat baculum super faciem pueri, et non erat vox, neque sensus : reversusque est in occursum ejus, et nuntiavit ei, dicens : Non surrexit puer.",
+        "SYN": "Гиезий пошел впереди их и положил жезл на лице ребенка. Но не было ни голоса, ни ответа. И вышел навстречу ему, и донес ему, и сказал: не пробуждается ребенок.",
+        "NEO": "Giézi les avait devancés et il avait mis le bâton sur le visage de l’enfant ; mais il n’y eut ni voix, ni signe d’attention. Il s’en retourna au-devant d’Elisée et lui rapporta la chose en disant : « L’enfant ne s’est pas réveillé. »",
+        "NAB": "Meanwhile, Gehazi had gone on ahead and had laid the staff upon the boy, but there was no sound or sign of life. He returned to meet Elisha and informed him that the boy had not awakened.",
+        "VAT_ES": "Mientras tanto, Guejazí se les había adelantado y había puesto el bastón sobre el rostro del muchacho, pero este no dio señales de vida. Volvió entonces a presentarse ante Eliseo y le comunicó: «El muchacho no se ha despertado».",
+        "CEI": "Ghecazi li aveva preceduti; aveva posto il bastone sulla faccia del ragazzo, ma non c'era stato un gemito né altro segno di vita. Egli tornò verso Eliseo e gli riferì: \"Il ragazzo non si è svegliato\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֥א אֱלִישָׁ֖ע הַ/בָּ֑יְתָ/ה וְ/הִנֵּ֤ה הַ/נַּ֨עַר֙ מֵ֔ת מֻשְׁכָּ֖ב עַל מִטָּתֽ/וֹ׃",
+        "LXX": "καὶ εἰσῆλθεν Ἐλεισαῖε εἰς τὸν οἶκον, καὶ ἰδοὺ τὸ παιδάριον τεθνηκώς, κεκοιμισμένον ἐπὶ τὴν κλίνην αὐτοῦ.",
+        "VUL": "Ingressus est ergo Eliseus domum, et ecce puer mortuus jacebat in lectulo ejus :",
+        "SYN": "И вошел Елисей в дом, и вот, ребенок умерший лежит на постели его.",
+        "NEO": "Lorsqu’Elisée arriva dans la maison, voici que l’enfant était mort, couché sur son lit.",
+        "NAB": "When Elisha reached the house, he found the boy lying dead.",
+        "VAT_ES": "Cuando Eliseo llegó a la casa, vio que el muchacho estaba muerto, tendido sobre su lecho.",
+        "CEI": "Eliseo entrò in casa. Il ragazzo era morto, steso sul letto."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֕א וַ/יִּסְגֹּ֥ר הַ/דֶּ֖לֶת בְּעַ֣ד שְׁנֵי/הֶ֑ם וַ/יִּתְפַּלֵּ֖ל אֶל יְהוָֽה׃",
+        "LXX": "καὶ εἰσῆλθεν Ἐλεισαῖε εἰς τὸν οἶκον καὶ ἀπέκλεισεν τὴν θύραν κατὰ τῶν δύο ἑαυτῶν, καὶ προσηύξατο πρὸς Κύριον.",
+        "VUL": "ingressusque clausit ostium super se et super puerum, et oravit ad Dominum.",
+        "SYN": "И вошел, и запер дверь за собою, и помолился Господу.",
+        "NEO": "Elisée entra et, ayant fermé la porte sur eux deux, il pria \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "He went in, closed the door on them both, and prayed to the LORD.",
+        "VAT_ES": "En seguida entró, se encerró sólo con el muchacho y oró al Señor.",
+        "CEI": "Egli entrò, chiuse la porta dietro a loro due e pregò il Signore."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יַּ֜עַל וַ/יִּשְׁכַּ֣ב עַל הַ/יֶּ֗לֶד וַ/יָּשֶׂם֩ פִּ֨י/ו עַל פִּ֜י/ו וְ/עֵינָ֤י/ו עַל עֵינָי/ו֙ וְ/כַפָּ֣י/ו עַל כפ/ו כַּפָּ֔י/ו וַ/יִּגְהַ֖ר עָלָ֑י/ו וַ/יָּ֖חָם בְּשַׂ֥ר הַ/יָּֽלֶד׃",
+        "LXX": "καὶ ἀνέβη καὶ ἐκοιμήθη ἐπὶ τὸ παιδάριον, καὶ ἔθηκεν τὸ στόμα αὐτοῦ ἐπὶ τὸ στόμα αὐτοῦ καὶ τοὺς ὀφθαλμοὺς αὐτοῦ ἐπὶ τοὺς ὀφθαλμοὺς αὐτοῦ καὶ τὰς χεῖρας αὐτοῦ ἐπὶ τὰς χεῖρας αὐτοῦ, καὶ διέκαμψεν ἐπ’ αὐτόν· καὶ διεθερμάνθη ἡ σὰρξ τοῦ παιδαρίου.",
+        "VUL": "Et ascendit, et incubuit super puerum : posuitque os suum super os ejus, et oculos suos super oculos ejus, et manus suas super manus ejus : et incurvavit se super eum, et calefacta est caro pueri.",
+        "SYN": "И поднялся и лег над ребенком, и приложил свои уста к его устам, и свои глаза к его глазам, и свои ладони к его ладоням, и простерся на нем, и согрелось тело ребенка.",
+        "NEO": "Et il monta et se coucha sur l’enfant ; il mit sa bouche sur sa bouche, ses yeux sur ses yeux, ses mains sur ses mains, et il s’étendit sur lui ; et la chair de l’enfant se réchauffa.",
+        "NAB": "Then he lay upon the child on the bed, placing his mouth upon the child's mouth, his eyes upon the eyes, and his hands upon the hands. As Elisha stretched himself over the child, the body became warm.",
+        "VAT_ES": "Luego subió a la cama, se acostó sobre el niño y puso su boca, sus ojos y sus manos sobre la boca, los ojos y las manos del niño; permaneció recostado sobre él y la carne del niño entró en calor.",
+        "CEI": "Quindi salì, si distese sul ragazzo; pose la bocca sulla bocca di lui, gli occhi sugli occhi di lui, le mani nelle mani di lui e si curvò su di lui. Il corpo del bambino riprese calore."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יָּ֜שָׁב וַ/יֵּ֣לֶךְ בַּ/בַּ֗יִת אַחַ֥ת הֵ֨נָּה֙ וְ/אַחַ֣ת הֵ֔נָּה וַ/יַּ֖עַל וַ/יִּגְהַ֣ר עָלָ֑י/ו וַ/יְזוֹרֵ֤ר הַ/נַּ֨עַר֙ עַד שֶׁ֣בַע פְּעָמִ֔ים וַ/יִּפְקַ֥ח הַ/נַּ֖עַר אֶת עֵינָֽי/ו׃",
+        "LXX": "καὶ ἐπέστρεψεν καὶ ἐπορεύθη ἐν τῇ οἰκίᾳ ἔνθεν καὶ ἔνθεν, καὶ ἀνέβη καὶ συνέκαμψεν ἐπὶ τὸ παιδάριον ἕως ἑπτάκις· καὶ ἤνοιξεν τὸ παιδάριον τοὺς ὀφθαλμοὺς αὐτοῦ.",
+        "VUL": "At ille reversus, deambulavit in domo, semel huc atque illuc : et ascendit, et incubuit super eum : et oscitavit puer septies, aperuitque oculos.",
+        "SYN": "И встал и прошел по горнице взад и вперед; потом опять поднялся и простерся на нем. И чихнул ребенок раз семь, и открыл ребенок глаза свои.",
+        "NEO": "Elisée s’éloigna, et il allait çà et là dans la maison ; puis il remonta sur le lit et s’étendit sur l’enfant ; et l’enfant éternua sept fois, et l’enfant ouvrit les yeux.",
+        "NAB": "He arose, paced up and down the room, and then once more lay down upon the boy, who now sneezed seven times and opened his eyes.",
+        "VAT_ES": "Se puso a caminar por la casa de un lado a otro, se levantó y se recostó sobre él hasta siete veces. Entonces el muchacho estornudó y abrió los ojos.",
+        "CEI": "Quindi si alzò e girò qua e là per la casa; tornò a curvarsi su di lui; il ragazzo starnutì sette volte, poi aprì gli occhi."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֣א אֶל גֵּיחֲזִ֗י וַ/יֹּ֨אמֶר֙ קְרָא֙ אֶל הַ/שֻּׁנַמִּ֣ית הַ/זֹּ֔את וַ/יִּקְרָאֶ֖/הָ וַ/תָּב֣וֹא אֵלָ֑י/ו וַ/יֹּ֖אמֶר שְׂאִ֥י בְנֵֽ/ךְ׃",
+        "LXX": "καὶ ἐξεβόησεν Ἐλεισαῖε πρὸς Γιεζεὶ καὶ εἶπεν Κάλεσον τὴν Σωμανεῖτιν ταύτην· καὶ ἐκάλεσεν, καὶ εἰσῆλθεν πρὸς αὐτόν. καὶ εἶπεν Ἐλεισαῖε Λάβε τὸν υἱόν σου.",
+        "VUL": "At ille vocavit Giezi, et dixit ei : Voca Sunamitidem hanc. Quæ vocata, ingressa est ad eum. Qui ait : Tolle filium tuum.",
+        "SYN": "И позвал он Гиезия и сказал: позови эту Сонамитянку. И тот позвал ее. Она пришла к нему, и он сказал: возьми сына твоего.",
+        "NEO": "Elisée appela Giézi, et dit : « Appelle la Sunamite. » Giézi l’ayant appelée, elle vint vers Elisée qui lui dit : « Prends ton fils. »",
+        "NAB": "Elisha summoned Gehazi and said, \"Call the Shunammite.\" She came at his call, and Elisha said to her, \"Take your son.\"",
+        "VAT_ES": "Eliseo llamó a Guejazí y le ordenó: «Llama a la sunamita». Cuando la llamó, ella vino y Eliseo le dijo: «Toma a tu hijo».",
+        "CEI": "Eliseo chiamò Ghecazi e gli disse: \"Chiama questa Sunammita!\". La chiamò e, quando essa gli giunse vicino, le disse: \"Prendi tuo figlio!\"."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/תָּבֹא֙ וַ/תִּפֹּ֣ל עַל רַגְלָ֔י/ו וַ/תִּשְׁתַּ֖חוּ אָ֑רְצָ/ה וַ/תִּשָּׂ֥א אֶת בְּנָ֖/הּ וַ/תֵּצֵֽא׃",
+        "LXX": "καὶ εἰσῆλθεν ἡ γυνὴ καὶ ἔπεσεν ἐπὶ τοὺς πόδας αὐτοῦ καὶ προσεκύνησεν ἐπὶ τὴν γῆν, καὶ ἔλαβεν τὸν υἱὸν αὐτῆς καὶ ἐξῆλθεν.",
+        "VUL": "Venit illa, et corruit ad pedes ejus, et adoravit super terram : tulitque filium suum, et egressa est.",
+        "SYN": "И подошла, и упала ему в ноги, и поклонилась до земли; и взяла сына своего и пошла.",
+        "NEO": "Elle vint tomber à ses pieds et se prosterna contre terre ; et, prenant son fils, elle sortit.",
+        "NAB": "She came in and fell at his feet in gratitude; then she took her son and left the room.",
+        "VAT_ES": "Ella entró y cayó a los pies de Eliseo con el rostro en tierra. Después levantó a su hijo y salió.",
+        "CEI": "Quella entrò, cadde ai piedi di lui, gli si prostrò davanti, prese il figlio e uscì."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וֶ/אֱלִישָׁ֞ע שָׁ֤ב הַ/גִּלְגָּ֨לָ/ה֙ וְ/הָ/רָעָ֣ב בָּ/אָ֔רֶץ וּ/בְנֵי֙ הַ/נְּבִיאִ֔ים יֹשְׁבִ֖ים לְ/פָנָ֑י/ו וַ/יֹּ֣אמֶר לְ/נַעֲר֗/וֹ שְׁפֹת֙ הַ/סִּ֣יר הַ/גְּדוֹלָ֔ה וּ/בַשֵּׁ֥ל נָזִ֖יד לִ/בְנֵ֥י הַ/נְּבִיאִֽים׃",
+        "LXX": "Καὶ Ἐλεισαῖε ἐπέστρεψεν εἰς Γάλγαλα· καὶ ὁ λιμὸς ἐν τῇ γῇ, καὶ οἱ υἱοὶ τῶν προφητῶν ἐκάθηντο ἐνώπιον αὐτοῦ· καὶ εἶπεν Ἐλεισαῖε τῷ παιδαρίῳ αὐτοῦ Ἐπίστησον τὸν λέβητα, καὶ ἕψε ἕψεμα τοῖς υἱοῖς τῶν προφητῶν.",
+        "VUL": "Et Eliseus reversus est in Galgala. Erat autem fames in terra, et filii prophetarum habitabant coram eo. Dixitque uni de pueris suis : Pone ollam grandem, et coque pulmentum filiis prophetarum.",
+        "SYN": "Елисей же возвратился в Галгал. И был голод в земле той, и сыны пророков сидели пред ним. И сказал он слуге своему: поставь большой котел и свари похлебку для сынов пророческих.",
+        "NEO": "Elisée revint à Galgala, et la famine était dans le pays. Comme les fils des prophètes étaient assis devant lui, il dit à son serviteur : « Mets le grand pot, et fais cuire un potage pour les fils des prophètes. »",
+        "NAB": "When Elisha returned to Gilgal, there was a famine in the land. Once, when the guild prophets were seated before him, he said to his servant, \"Put the large pot on, and make some vegetable stew for the guild prophets.\"",
+        "VAT_ES": "Eliseo volvió a Guilgal, cuando el hambre se hacía sentir en la región. Mientras la comunidad de profetas estaba sentada delante de él, dijo a su servidor: «Coloca sobre el fuego la olla grande y prepara un caldo para la comunidad de profetas».",
+        "CEI": "Eliseo tornò in Gàlgala. Nella regione imperversava la carestia. Mentre i figli dei profeti stavano seduti davanti a lui, egli disse al suo servo: \"Metti la pentola grande e cuoci una minestra per i figli dei profeti\"."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֨א אֶחָ֣ד אֶל הַ/שָּׂדֶה֮ לְ/לַקֵּ֣ט אֹרֹת֒ וַ/יִּמְצָא֙ גֶּ֣פֶן שָׂדֶ֔ה וַ/יְלַקֵּ֥ט מִמֶּ֛/נּוּ פַּקֻּעֹ֥ת שָׂדֶ֖ה מְלֹ֣א בִגְד֑/וֹ וַ/יָּבֹ֗א וַ/יְפַלַּ֛ח אֶל סִ֥יר הַ/נָּזִ֖יד כִּֽי לֹ֥א יָדָֽעוּ׃",
+        "LXX": "καὶ ἐξῆλθεν εἰς τὸν ἀγρὸν συνλέξαι ἀριώθ· καὶ εὗρεν ἄμπελον ἐν τῷ ἀγρῷ, καὶ συνέλεξεν ἀπ’ αὐτῆς τολύπην ἀγρίαν πλῆρες τὸ ἱμάτιον αὐτοῦ· καὶ ἐνέβαλεν εἰς τὸν λέβητα τοῦ ἑψέματος, ὅτι οὐκ ἔγνωσαν.",
+        "VUL": "Et egressus est unus in agrum ut colligeret herbas agrestes : invenitque quasi vitem silvestrem, et collegit ex ea colocynthidas agri, et implevit pallium suum, et reversus concidit in ollam pulmenti : nesciebat enim quid esset.",
+        "SYN": "И вышел один из них в поле собирать овощи, и нашел дикое вьющееся растение, и набрал с него диких плодов полную одежду свою; и пришел и накрошил их в котел с похлебкою, так как они не знали _их._",
+        "NEO": "L’un d’eux sortit dans les champs pour cueillir des herbes ; il trouva une espèce de vigne sauvage et il y cueillit des coloquintes sauvages, plein son vêtement. A son retour, il les coupa en morceaux dans le pot où se préparait le potage, sans qu’ils en eussent connaissance.",
+        "NAB": "Someone went out into the field to gather herbs and found a wild vine, from which he picked a clothful of wild gourds. On his return he cut them up into the pot of vegetable stew without anybody's knowing it.",
+        "VAT_ES": "Uno de ellos salió al campo para recoger algunas hierbas. Encontró una especie de viña silvestre, de la que recogió los frutos salvajes hasta llenar su manto. Al volver, los cortó en pedazos y los echó a la olla del caldo, porque nadie sabía lo que eran.",
+        "CEI": "Uno di essi andò in campagna per cogliere erbe selvatiche e trovò una specie di vite selvatica: da essa colse zucche agresti e se ne riempì il mantello. Ritornò e gettò i frutti a pezzi nella pentola della minestra, non sapendo cosa fossero."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וַ/יִּֽצְק֥וּ לַ/אֲנָשִׁ֖ים לֶ/אֱכ֑וֹל וַ֠/יְהִי כְּ/אָכְלָ֨/ם מֵ/הַ/נָּזִ֜יד וְ/הֵ֣מָּה צָעָ֗קוּ וַ/יֹּֽאמְרוּ֙ מָ֤וֶת בַּ/סִּיר֙ אִ֣ישׁ הָ/אֱלֹהִ֔ים וְ/לֹ֥א יָכְל֖וּ לֶ/אֱכֹֽל׃",
+        "LXX": "καὶ ἐνέχει τοῖς ἀνδράσιν φαγεῖν· καὶ ἐγένετο ἐν τῷ ἐσθίειν αὐτοὺς ἐκ τοῦ ἑψέματος, καὶ ἰδοὺ ἀνεβόησαν καὶ εἶπαν Θάνατος ἐν τῷ λέβητι, ἄνθρωπε τοῦ θεοῦ· καὶ οὐκ ἠδύναντο φαγεῖν.",
+        "VUL": "Infuderunt ergo sociis ut comederent : cumque gustassent de coctione, clamaverunt, dicentes : Mors in olla, vir Dei. Et non potuerunt comedere.",
+        "SYN": "И налили им есть. Но как скоро они стали есть похлебку, то подняли крик и говорили: смерть в котле, человек Божий! И не могли есть.",
+        "NEO": "On versa du potage à ces hommes pour qu’ils en mangent ; mais dès qu’ils eurent mangé du potage, ils poussèrent des cris en disant : « La mort est dans le pot, homme de Dieu ! » Et ils ne purent manger.",
+        "NAB": "The stew was poured out for the men to eat, but when they began to eat it, they exclaimed, \"Man of God, there is poison in the pot!\" And they could not eat it.",
+        "VAT_ES": "Luego sirvieron la comida a los hombres, pero apenas probaron el caldo, se pusieron a gritar: «&iexcl;La muerte está en esa olla, hombre de Dios!» Y no pudieron comer.",
+        "CEI": "Si versò da mangiare agli uomini, che appena assaggiata la minestra gridarono: \"Nella pentola c'è la morte, uomo di Dio!\". Non ne potevano mangiare."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ וּ/קְחוּ קֶ֔מַח וַ/יַּשְׁלֵ֖ךְ אֶל הַ/סִּ֑יר וַ/יֹּ֗אמֶר צַ֤ק לָ/עָם֙ וְ/יֹאכֵ֔לוּ וְ/לֹ֥א הָיָ֛ה דָּבָ֥ר רָ֖ע בַּ/סִּֽיר׃",
+        "LXX": "καὶ εἶπεν Λάβετε ἄλευρον καὶ ἐμβάλετε εἰς τὸν λέβητα· καὶ εἶπεν Ἐλεισαῖε πρὸς Γιεζεὶ τὸ παιδάριον Ἔγχει τῷ λαῷ καὶ ἐσθιέτωσαν· καὶ οὐκ ἐγενήθη ἔτι ἐκεῖ ῥῆμα πονηρὸν ἐν τῷ λέβητι.",
+        "VUL": "At ille : Afferte, inquit, farinam. Cumque tulissent, misit in ollam, et ait : Infunde turbæ, ut comedant. Et non fuit amplius quidquam amaritudinis in olla.",
+        "SYN": "И сказал он: подайте муки. И всыпал ее в котел и сказал [Гиезию]: наливай людям, пусть едят. И не стало ничего вредного в котле.",
+        "NEO": "Elisée dit : « Apportez-moi de la farine. » Il en jeta dans le pot et dit : « Verse aux gens, et qu’ils mangent. » Et il n’y avait plus rien de mauvais dans le pot.",
+        "NAB": "\"Bring some meal,\" Elisha said. He threw it into the pot and said, \"Serve it to the people to eat.\" And there was no longer anything harmful in the pot.",
+        "VAT_ES": "Eliseo dijo: «Traigan harina». El la arrojó en la olla y agregó: «Sírvele a esta gente, para que coman». Y ya no había nada malo en la olla.",
+        "CEI": "Allora Eliseo ordinò: \"Portatemi della farina\". Versatala nella pentola, disse: \"Danne da mangiare alla gente\". Non c'era più nulla di cattivo nella pentola."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וְ/אִ֨ישׁ בָּ֜א מִ/בַּ֣עַל שָׁלִ֗שָׁה וַ/יָּבֵא֩ לְ/אִ֨ישׁ הָ/אֱלֹהִ֜ים לֶ֤חֶם בִּכּוּרִים֙ עֶשְׂרִֽים לֶ֣חֶם שְׂעֹרִ֔ים וְ/כַרְמֶ֖ל בְּ/צִקְלֹנ֑/וֹ וַ/יֹּ֕אמֶר תֵּ֥ן לָ/עָ֖ם וְ/יֹאכֵֽלוּ׃",
+        "LXX": "Καὶ ἀνὴρ διῆλθεν ἐκ Βαιθσαρεῖσα καὶ ἤνεγκεν πρὸς τὸν ἄνθρωπον τοῦ θεοῦ πρωτογενημάτων εἴκοσι ἄρτους κριθίνους καὶ παλάθας· καὶ εἶπεν Δότε τῷ λαῷ καὶ ἐσθιέτωσαν.",
+        "VUL": "Vir autem quidam venit de Baalsalisa deferens viro Dei panes primitiarum, viginti panes hordeaceos, et frumentum novum in pera sua. At ille dixit : Da populo, ut comedat.",
+        "SYN": "Пришел некто из Ваал-Шалиши, и принес человеку Божию хлебный начаток -- двадцать ячменных хлебцев и сырые зерна в шелухе. И сказал Елисей: отдай людям, пусть едят.",
+        "NEO": "Un homme vint de Baal-Salisa, apportant à l’homme de Dieu du pain des prémices, savoir vingt pains d’orge, et du blé frais dans son sac. Elisée dit : « Donne aux gens, et qu’ils mangent. »",
+        "NAB": "A man came from Baal-shalishah bringing the man of God twenty barely loaves made from the first fruits, and fresh grain in the ear. \"Give it to the people to eat,\" Elisha said.",
+        "VAT_ES": "Llegó un hombre de Baal Salisá, trayendo al hombre de Dios pan de los primeros frutos: veinte panes de cebada y grano recién cortado, en una alforja. Eliseo dijo: «Dáselo a la gente para que coman».",
+        "CEI": "Da Baal-Salisa venne un individuo, che offrì primizie all'uomo di Dio, venti pani d'orzo e farro che aveva nella bisaccia. Eliseo disse: \"Dallo da mangiare alla gente\"."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ מְשָׁ֣רְת֔/וֹ מָ֚ה אֶתֵּ֣ן זֶ֔ה לִ/פְנֵ֖י מֵ֣אָה אִ֑ישׁ וַ/יֹּ֗אמֶר תֵּ֤ן לָ/עָם֙ וְ/יֹאכֵ֔לוּ כִּ֣י כֹ֥ה אָמַ֛ר יְהוָ֖ה אָכֹ֥ל וְ/הוֹתֵֽר׃",
+        "LXX": "καὶ εἶπεν ὁ λειτουργὸς αὐτοῦ Τί; δῶ τοῦτο ἐνώπιον ἑκατὸν ἀνδρῶν; καὶ εἶπεν Δὸς τῷ λαῷ καὶ ἐσθιέτωσαν, ὅτι τάδε λέγει Κύριος Φάγονται καὶ καταλείψουσιν.",
+        "VUL": "Responditque ei minister ejus : Quantum est hoc, ut apponam centum viris ? Rursum ille ait : Da populo, ut comedat : hæc enim dicit Dominus : Comedent, et supererit.",
+        "SYN": "И сказал слуга его: что тут я дам ста человекам? И сказал он: отдай людям, пусть едят, ибо так говорит Господь: \"насытятся, и останется\".",
+        "NEO": "Son serviteur répondit : « Comment mettrai-je cela devant cent personnes ? » Mais Elisée dit : « Donne aux gens et qu’ils mangent. Car ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : On mangera, et il y aura un reste. »",
+        "NAB": "But his servant objected, \"How can I set this before a hundred men?\" \"Give it to the people to eat,\" Elisha insisted. \"For thus says the LORD, 'They shall eat and there shall be some left over.'\"",
+        "VAT_ES": "Pero su servidor respondió: «&iquest;Cómo voy a servir esto a cien personas?». «Dáselo a la gente para que coman, replicó él, porque así habla el Señor: Comerán y sobrará».",
+        "CEI": "Ma colui che serviva disse: \"Come posso mettere questo davanti a cento persone?\". Quegli replicò: \"Dallo da mangiare alla gente. Poiché così dice il Signore: Ne mangeranno e ne avanzerà anche\"."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֧ן לִ/פְנֵי/הֶ֛ם וַ/יֹּאכְל֥וּ וַ/יּוֹתִ֖רוּ כִּ/דְבַ֥ר יְהוָֽה׃",
+        "LXX": "καὶ ἔφαγον καὶ κατέλιπον κατὰ τὸ ῥῆμα Κυρίου.",
+        "VUL": "Posuit itaque coram eis : qui comederunt, et superfuit juxta verbum Domini.",
+        "SYN": "Он подал им, и они насытились, и еще осталось, по слову Господню.",
+        "NEO": "Il mit donc les pains devant eux, et ils mangèrent et ils en eurent de reste, selon la parole de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "And when they had eaten, there was some left over, as the LORD had said.",
+        "VAT_ES": "El servidor se lo sirvió: todos comieron y sobró, conforme a la palabra del Señor.",
+        "CEI": "Lo pose davanti a quelli, che mangiarono, e ne avanzò, secondo la parola del Signore."
+      }
+    }
+  }
+}

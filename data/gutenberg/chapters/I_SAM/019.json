@@ -1,0 +1,447 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_SAM_019",
+  "book_key": "I_SAM",
+  "sequence": 19,
+  "chapter_in": {
+    "MT": 19,
+    "VUL": 19,
+    "LXX": 19
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר שָׁא֗וּל אֶל יוֹנָתָ֤ן בְּנ/וֹ֙ וְ/אֶל כָּל עֲבָדָ֔י/ו לְ/הָמִ֖ית אֶת דָּוִ֑ד וִ/יהֽוֹנָתָן֙ בֶּן שָׁא֔וּל חָפֵ֥ץ בְּ/דָוִ֖ד מְאֹֽד׃",
+        "LXX": "Καὶ ἐλάλησεν Σαοὺλ πρὸς Ἰωναθὰν τὸν υἱὸν αὐτοῦ καὶ πρὸς πάντας τοὺς παῖδας αὐτοῦ θανατῶσαι τὸν Δαυείδ.",
+        "VUL": "Locutus est autem Saul ad Jonathan filium suum, et ad omnes servos suos, ut occiderent David. Porro Jonathas filius Saul diligebat David valde :",
+        "SYN": "И говорил Саул Ионафану, сыну своему, и всем слугам своим, чтобы умертвить Давида; но Ионафан, сын Саула, очень любил Давида.",
+        "NEO": "Saül parla à Jonathas, son fils, et à tous ses serviteurs de faire mourir David. Mais Jonathas, fils de Saül, avait une grande affection pour David.",
+        "NAB": "Saul discussed his intention of killing David with his son Jonathan and with all his servants. But Saul's son Jonathan, who was very fond of David,",
+        "VAT_ES": "Saúl habló a su hijo Jonatán y a todos sus servidores de su proyecto de matar a David. Pero Jonatán, hijo de Saúl, quería mucho a David,",
+        "CEI": "Saul comunicò a Giònata suo figlio e ai suoi ministri di aver deciso di uccidere Davide. Ma Giònata figlio di Saul nutriva grande affetto per Davide."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יַּגֵּ֤ד יְהוֹנָתָן֙ לְ/דָוִ֣ד לֵ/אמֹ֔ר מְבַקֵּ֛שׁ שָׁא֥וּל אָבִ֖/י לַ/הֲמִיתֶ֑/ךָ וְ/עַתָּה֙ הִשָּֽׁמֶר נָ֣א בַ/בֹּ֔קֶר וְ/יָשַׁבְתָּ֥ בַ/סֵּ֖תֶר וְ/נַחְבֵּֽאתָ׃",
+        "LXX": "καὶ Ἰωναθὰν υἱὸς Σαοὺλ ᾑρεῖτο τὸν Δαυεὶδ σφόδρα· καὶ ἀπήγγειλεν Ἰωναθὰν τῷ Δαυεὶδ λέγων Σαοὺλ ζητεῖ θανατῶσαί σε· φύλαξαι οὖν αὔριον πρωί, καὶ κρύβηθι καὶ κάθισον κρυβῇ·",
+        "VUL": "et indicavit Jonathas David, dicens : Quærit Saul pater meus occidere te : quapropter observa te, quæso, mane : et manebis clam, et absconderis.",
+        "SYN": "И известил Ионафан Давида, говоря: отец мой Саул ищет умертвить тебя; итак берегись завтра; скройся и будь в потаенном месте;",
+        "NEO": "Et Jonathas informa David en disant : « Saül, mon père, cherche à te faire mourir. Sois donc sur tes gardes demain au matin, tiens-toi à l’écart et cache-toi.",
+        "NAB": "told him: \"My father Saul is trying to kill you. Therefore, please be on your guard tomorrow morning; get out of sight and remain in hiding.",
+        "VAT_ES": "y lo puso sobre aviso, diciéndole: «Mi padre Saúl intenta matarte. Ten mucho cuidado mañana por la mañana; retírate a un lugar oculto y no te dejes ver.",
+        "CEI": "Giònata informò Davide dicendo: \"Saul mio padre cerca di ucciderti. Stà in guardia da domani all'alba, stà fermo in un luogo nascosto e non farti vedere."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֨י אֵצֵ֜א וְ/עָמַדְתִּ֣י לְ/יַד אָבִ֗/י בַּ/שָּׂדֶה֙ אֲשֶׁ֣ר אַתָּ֣ה שָׁ֔ם וַ/אֲנִ֕י אֲדַבֵּ֥ר בְּ/ךָ֖ אֶל אָבִ֑/י וְ/רָאִ֥יתִי מָ֖ה וְ/הִגַּ֥דְתִּי לָֽ/ךְ׃",
+        "LXX": "καὶ ἐγὼ ἐξελεύσομαι καὶ στήσομαι ἐχόμενος τοῦ πατρός μου ἐν ἀγρῷ οὗ ἐὰν ᾖς ἐκεῖ, καὶ ἐγὼ λαλήσω περὶ σοῦ πρὸς τὸν πατέρα μου· καὶ ὄψομαι ὅ τι ἐὰν ᾖ, καὶ ἀπαγγελῶ σοι.",
+        "VUL": "Ego autem egrediens stabo juxta patrem meum in agro, ubicumque fueris : et ego loquar de te ad patrem meum, et quodcumque videro, nuntiabo tibi.",
+        "SYN": "а я выйду и стану подле отца моего на поле, где ты будешь, и поговорю о тебе отцу моему, и что увижу, расскажу тебе.",
+        "NEO": "Moi, je sortirai et je me tiendrai à côté de mon père dans le champ où tu seras ; je parlerai de toi à mon père, je verrai ce qu’il dira et je te le ferai savoir. »",
+        "NAB": "I, however, will go out and stand beside my father in the countryside where you are, and will speak to him about you. If I learn anything, I will let you know.\"",
+        "VAT_ES": "Yo saldré y me quedaré junto con mi padre en el campo donde tú estés; le hablaré de ti, veré que pasa y te lo comunicaré».",
+        "CEI": "Io uscirò e starò al fianco di mio padre nella campagna dove sarai tu e parlerò in tuo favore a mio padre. Vedrò ciò che succede e te lo farò sapere\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֨ר יְהוֹנָתָ֤ן בְּ/דָוִד֙ ט֔וֹב אֶל שָׁא֖וּל אָבִ֑י/ו וַ/יֹּ֣אמֶר אֵ֠לָי/ו אַל יֶחֱטָ֨א הַ/מֶּ֜לֶךְ בְּ/עַבְדּ֣/וֹ בְ/דָוִ֗ד כִּ֣י ל֤וֹא חָטָא֙ לָ֔/ךְ וְ/כִ֥י מַעֲשָׂ֖י/ו טוֹב לְ/ךָ֥ מְאֹֽד׃",
+        "LXX": "καὶ ἐλάλησεν Ἰωναθὰν περὶ Δαυεὶδ ἀγαθὰ πρὸς Σαοὺλ τὸν πατέρα αὐτοῦ, καὶ εἶπεν πρὸς αὐτόν Μὴ ἁμαρτησάτω ὁ βασιλεὺς εἰς τὸν δοῦλόν σου Δαυείδ, ὅτι οὐχ ἡμάρτηκεν εἰς σέ, καὶ τὰ ποιήματα αὐτοῦ ἀγαθὰ σφόδρα·",
+        "VUL": "Locutus est ergo Jonathas de David bona ad Saul patrem suum : dixitque ad eum : Ne pecces rex in servum tuum David, quia non peccavit tibi, et opera ejus bona sunt tibi valde.",
+        "SYN": "И говорил Ионафан доброе о Давиде Саулу, отцу своему, и сказал ему: да не грешит царь против раба своего Давида, ибо он ничем не согрешил против тебя, и дела его весьма полезны для тебя;",
+        "NEO": "Jonathas parla favorablement de David à Saül, son père ; il lui dit : « Que le roi ne pèche pas contre son serviteur David, car il n’a pas péché à ton égard. Ses actions, au contraire, sont toutes pour ton bien :",
+        "NAB": "Jonathan then spoke well of David to his father Saul, saying to him: \"Let not your majesty sin against his servant David, for he has committed no offense against you, but has helped you very much by his deeds.",
+        "VAT_ES": "Jonatán habló a su padre Saúl en favor de David, y le dijo: «Que el rey no peque contra su servidor David, ya que él no ha pecado contra ti. Al contrario, sus acciones te reportan grandes beneficios.",
+        "CEI": "Giònata parlò difatti a Saul suo padre in favore di Davide e gli disse: \"Non si macchi il re contro il suo servo, contro Davide, che non si è macchiato contro di te, che anzi ti ha reso un servizio molto grande."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יָּשֶׂם֩ אֶת נַפְשׁ֨/וֹ בְ/כַפּ֜/וֹ וַ/יַּ֣ךְ אֶת הַ/פְּלִשְׁתִּ֗י וַ/יַּ֨עַשׂ יְהוָ֜ה תְּשׁוּעָ֤ה גְדוֹלָה֙ לְ/כָל יִשְׂרָאֵ֔ל רָאִ֖יתָ וַ/תִּשְׂמָ֑ח וְ/לָ֤/מָּה תֶֽחֱטָא֙ בְּ/דָ֣ם נָקִ֔י לְ/הָמִ֥ית אֶת דָּוִ֖ד חִנָּֽם׃",
+        "LXX": "καὶ ἔθετο τὴν ψυχὴν αὐτοῦ ἐν τῇ χειρὶ αὐτοῦ καὶ ἐπάταξεν τὸν ἀλλόφυλον, καὶ ἐποίησεν Κύριος σωτηρίαν μεγάλην, καὶ πᾶς Ἰσραὴλ εἶδον καὶ ἐχάρησαν· καὶ ἵνα τί ἁμαρτάνεις εἰς αἷμα ἀθῷον θανατῶσαι τὸν Δαυεὶδ δωρεάν;",
+        "VUL": "Et posuit animam suam in manu sua, et percussit Philisthæum, et fecit Dominus salutem magnam universo Israëli : vidisti, et lætatus es. Quare ergo peccas in sanguine innoxio, interficiens David, qui est absque culpa ?",
+        "SYN": "он подвергал опасности душу свою, чтобы поразить Филистимлянина, и Господь соделал великое спасение всему Израилю; ты видел _это_ и радовался; для чего же ты хочешь согрешить _против_ невинной крови и умертвить Давида без причины?",
+        "NEO": "il a exposé sa vie, il a frappé le Philistin, et \\+w Yahweh|strong=\"H3068\"\\+w** a opéré par lui une grande délivrance pour tout Israël. Tu l’as vu, et tu t’en es réjoui ; pourquoi te rendrais-tu coupable du sang innocent, en faisant mourir David sans raison ? »",
+        "NAB": "When he took his life in his hands and slew the Philistine, and the LORD brought about a great victory for all Israel through him, you were glad to see it. Why, then, should you become guilty of shedding innocent blood by killing David without cause?\"",
+        "VAT_ES": "El se jugó la vida cuando derrotó al filisteo, y el Señor dio una gran victoria a todo Israel. Si tanto te alegraste al verlo, &iquest;por qué vas a pecar con sangre inocente, matando a David sin motivo?».",
+        "CEI": "Egli ha esposto la vita, quando sconfisse il Filisteo, e il Signore ha concesso una grande vittoria a tutto Israele. Hai visto e hai gioito. Dunque, perché pecchi contro un innocente, uccidendo Davide senza motivo?\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֥ע שָׁא֖וּל בְּ/ק֣וֹל יְהוֹנָתָ֑ן וַ/יִּשָּׁבַ֣ע שָׁא֔וּל חַי יְהוָ֖ה אִם יוּמָֽת׃",
+        "LXX": "καὶ ἤκουσεν Σαοὺλ τῆς φωνῆς Ἰωναθάν, καὶ ὤμοσεν Σαοὺλ λέγων Ζῇ Κύριος, εἰ ἀποθανεῖται.",
+        "VUL": "Quod cum audisset Saul, placatus voce Jonathæ, juravit : Vivit Dominus, quia non occidetur.",
+        "SYN": "И послушал Саул голоса Ионафана и поклялся Саул: жив Господь, _Давид_ не умрет.",
+        "NEO": "Saül écouta la voix de Jonathas, et Saül fit ce serment : « \\+w Yahweh|strong=\"H3068\"\\+w** est vivant ! David ne sera pas mis à mort. »",
+        "NAB": "Saul heeded Jonathan's plea and swore, \"As the LORD lives, he shall not be killed.\"",
+        "VAT_ES": "Saúl hizo caso a Jonatán y pronunció este juramento: «&iexcl;Por la vida del Señor, no morirá!».",
+        "CEI": "Saul ascoltò la voce di Giònata e giurò: \"Per la vita del Signore, non morirà!\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֤א יְהוֹנָתָן֙ לְ/דָוִ֔ד וַ/יַּגֶּד ל/וֹ֙ יְה֣וֹנָתָ֔ן אֵ֥ת כָּל הַ/דְּבָרִ֖ים הָ/אֵ֑לֶּה וַ/יָּבֵ֨א יְהוֹנָתָ֤ן אֶת דָּוִד֙ אֶל שָׁא֔וּל וַ/יְהִ֥י לְ/פָנָ֖י/ו כְּ/אֶתְמ֥וֹל שִׁלְשֽׁוֹם׃",
+        "LXX": "καὶ ἐκάλεσεν Ἰωναθὰν τὸν Δαυεὶδ καὶ ἀπήγγειλεν αὐτῷ πάντα τὰ ῥήματα ταῦτα· καὶ εἰσήγαγεν Ἰωναθὰν τὸν Δαυεὶδ πρὸς Σαούλ, καὶ ἦν ἐνώπιον αὐτοῦ ὡσεὶ ἐχθὲς καὶ τρίτην ἡμέραν.",
+        "VUL": "Vocavit itaque Jonathas David, et indicavit ei omnia verba hæc : et introduxit Jonathas David ad Saul, et fuit ante eum sicut fuerat heri et nudiustertius.",
+        "SYN": "И позвал Ионафан Давида, и пересказал ему Ионафан все слова сии, и привел Ионафан Давида к Саулу, и он был при нем, как вчера и третьего дня.",
+        "NEO": "Jonathas appela David et Jonathas lui rapporta toutes ces paroles ; puis Jonathas ramena David auprès de Saül, et David se tint en sa présence comme auparavant.",
+        "NAB": "So Jonathan summoned David and repeated the whole conversation to him. Jonathan then brought David to Saul, and David served him as before.",
+        "VAT_ES": "Jonatán llamó a David y lo puso al tanto de todo. Luego lo llevó a la presencia de Saúl, y David quedó a su servicio como antes.",
+        "CEI": "Giònata chiamò Davide e gli riferì questo colloquio. Poi Giònata introdusse presso Saul Davide, che rimase al suo seguito come prima."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/תּ֥וֹסֶף הַ/מִּלְחָמָ֖ה לִֽ/הְי֑וֹת וַ/יֵּצֵ֨א דָוִ֜ד וַ/יִּלָּ֣חֶם בַּ/פְּלִשְׁתִּ֗ים וַ/יַּ֤ךְ בָּ/הֶם֙ מַכָּ֣ה גְדוֹלָ֔ה וַ/יָּנֻ֖סוּ מִ/פָּנָֽי/ו׃",
+        "LXX": "Καὶ προσέθετο ὁ πόλεμος γενέσθαι πρὸς Δαυείδ· καὶ κατίσχυσεν Δαυεὶδ καὶ ἐπολέμησεν τοὺς ἀλλοφύλους, καὶ ἐπάταξεν ἐν αὐτοῖς πληγὴν μεγάλην σφόδρα, καὶ ἔφυγον ἐκ προσώπου αὐτοῦ.",
+        "VUL": "Motum est autem rursum bellum : et egressus David, pugnavit adversum Philisthiim : percussitque eos plaga magna, et fugerunt a facie ejus.",
+        "SYN": "Опять началась война, и вышел Давид, и воевал с Филистимлянами, и нанес им великое поражение, и они побежали от него.",
+        "NEO": "La guerre ayant recommencé, David sortit contre les Philistins et leur livra bataille ; il leur fit éprouver une grande défaite, et ils s’enfuirent devant lui.",
+        "NAB": "When war broke out again, David went out to fight against the Philistines and inflicted a great defeat upon them, putting them to flight.",
+        "VAT_ES": "Al reanudarse la guerra, David salió a combatir contra los filisteos; les infligió una gran derrota y ellos huyeron ante él.",
+        "CEI": "La guerra si riaccese e Davide uscì a combattere i Filistei e inflisse loro una grande sconfitta, sicché si dettero alla fuga davanti a lui."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/תְּהִי֩ ר֨וּחַ יְהוָ֤ה רָעָה֙ אֶל שָׁא֔וּל וְ/הוּא֙ בְּ/בֵית֣/וֹ יוֹשֵׁ֔ב וַ/חֲנִית֖/וֹ בְּ/יָד֑/וֹ וְ/דָוִ֖ד מְנַגֵּ֥ן בְּ/יָֽד׃",
+        "LXX": "καὶ ἐγένετο πνεῦμα θεοῦ πονηρὸν ἐπὶ Σαούλ, καὶ αὐτὸς ἐν οἴκῳ καθεύδων, καὶ δόρυ ἐν τῇ χειρὶ αὐτοῦ, καὶ Δαυεὶδ ἔψαλλεν ταῖς χερσὶν αὐτοῦ.",
+        "VUL": "Et factus est spiritus Domini malus in Saul : sedebat autem in domo sua, et tenebat lanceam : porro David psallebat manu sua.",
+        "SYN": "И злой дух от Бога напал на Саула, и он сидел в доме своем, и копье его было в руке его, а Давид играл рукою своею на струнах.",
+        "NEO": "Alors le mauvais esprit de \\+w Yahweh|strong=\"H3068\"\\+w** fut sur Saül, pendant qu’il était assis dans sa maison, sa lance à la main ; et David jouait de la harpe avec sa main.",
+        "NAB": "Then an evil spirit from the LORD came upon Saul as he was sitting in his house with spear in hand and David was playing the harp nearby.",
+        "VAT_ES": "Entonces, un mal espíritu del Señor se apoderó de Saúl. Mientras él estaba sentado en su casa, con la lanza en la mano, y David tocaba su instrumento,",
+        "CEI": "Ma un sovrumano spirito cattivo si impadronì di Saul. Egli stava in casa e teneva in mano la lancia, mentre Davide suonava la cetra."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יְבַקֵּ֨שׁ שָׁא֜וּל לְ/הַכּ֤וֹת בַּֽ/חֲנִית֙ בְּ/דָוִ֣ד וּ/בַ/קִּ֔יר וַ/יִּפְטַר֙ מִ/פְּנֵ֣י שָׁא֔וּל וַ/יַּ֥ךְ אֶֽת הַ/חֲנִ֖ית בַּ/קִּ֑יר וְ/דָוִ֛ד נָ֥ס וַ/יִּמָּלֵ֖ט בַּ/לַּ֥יְלָה הֽוּא׃",
+        "LXX": "καὶ ἐζήτει Σαοὺλ πατάξαι τὸ δόρυ εἰς Δαυείδ, καὶ ἀπέστη Δαυεὶδ ἐκ προσώπου Σαούλ· καὶ ἐπάταξεν τὸ δόρυ εἰς τὸν τοῖχον, καὶ Δαυεὶδ ἀνεχώρησεν καὶ διεσώθη.",
+        "VUL": "Nisusque est Saul configere David lancea in pariete, et declinavit David a facie Saul : lancea autem casso vulnere perlata est in parietem, et David fugit, et salvatus est nocte illa.",
+        "SYN": "И хотел Саул пригвоздить Давида копьем к стене, но Давид отскочил от Саула, и копье вонзилось в стену; Давид же убежал и спасся в ту ночь.",
+        "NEO": "Saül chercha à frapper de sa lance David et le mur ; mais David s’enfuit de devant Saül, qui frappa la lance contre le mur. David prit la fuite et s’échappa pendant la nuit.",
+        "NAB": "Saul tried to nail David to the wall with the spear, but David eluded Saul, so that the spear struck only the wall, and David got away safe.",
+        "VAT_ES": "Saúl trató de clavarlo contra la pared con la lanza. Pero David esquivó el golpe de Saúl, y la lanza se clavó en la pared. En seguida David huyó y se puso a salvo.",
+        "CEI": "Saul tentò di colpire Davide con la lancia contro il muro. Ma Davide si scansò da Saul, che infisse la lancia nel muro. Davide fuggì e quella notte fu salvo."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַח֩ שָׁא֨וּל מַלְאָכִ֜ים אֶל בֵּ֤ית דָּוִד֙ לְ/שָׁמְר֔/וֹ וְ/לַ/הֲמִית֖/וֹ בַּ/בֹּ֑קֶר וַ/תַּגֵּ֣ד לְ/דָוִ֗ד מִיכַ֤ל אִשְׁתּ/וֹ֙ לֵ/אמֹ֔ר אִם אֵ֨ינְ/ךָ֜ מְמַלֵּ֤ט אֶֽת נַפְשְׁ/ךָ֙ הַ/לַּ֔יְלָה מָחָ֖ר אַתָּ֥ה מוּמָֽת׃",
+        "LXX": "καὶ ἐγενήθη ἐν τῇ νυκτὶ ἐκείνῃ καὶ ἀπέστειλεν Σαοὺλ ἀγγέλους εἰς οἶκον Δαυεὶδ φυλάξαι αὐτόν, τοῦ θανατῶσαι αὐτὸν πρωί· καὶ ἀπήγγειλεν τῷ Δαυεὶδ Μελχὸλ ἡ γυνὴ αὐτοῦ λέγουσα Ἐὰν μὴ σὺ σώσῃς τὴν ψυχὴν σαυτοῦ τὴν νύκτα ταύτην, αὔριον θανατωθήσῃ.",
+        "VUL": "Misit ergo Saul satellites suos in domum David, ut custodirent eum, et interficeretur mane. Quod cum annuntiasset David Michol uxor sua, dicens : Nisi salvaveris te nocte hac, cras morieris :",
+        "SYN": "И послал Саул слуг в дом к Давиду, чтобы стеречь его и убить его до утра. И сказала Давиду Мелхола, жена его: если ты не спасешь души твоей в эту ночь, то завтра будешь убит.",
+        "NEO": "Saül envoya des messagers à la maison de David, pour s’assurer de lui et le faire mourir au matin ; mais Michol, femme de David, l’en informa, en disant : « Si tu ne t’échappes pas cette nuit, demain tu es mis à mort. »",
+        "NAB": "The same night, Saul sent messengers to David's house to guard it, that he might kill him in the morning. David's wife Michal informed him, \"Unless you save yourself tonight, tomorrow you will be killed.\"",
+        "VAT_ES": "Saúl envió unos emisarios a la casa de David, para vigilarlo y darle muerte a la mañana. Pero Mical, su esposa, le advirtió: «Si no salvas tu vida esta noche, mañana estarás muerto».",
+        "CEI": "Saul mandò messaggeri alla casa di Davide per sorvegliarlo e ucciderlo il mattino dopo. Mikal moglie di Davide lo avvertì dicendo: \"Se non metti al sicuro la tua vita questa notte, domani sarai ucciso\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֧רֶד מִיכַ֛ל אֶת דָּוִ֖ד בְּעַ֣ד הַ/חַלּ֑וֹן וַ/יֵּ֥לֶךְ וַ/יִּבְרַ֖ח וַ/יִּמָּלֵֽט׃",
+        "LXX": "καὶ κατάγει ἡ Μελχὸλ τὸν Δαυεὶδ διὰ τῆς θυρίδος, καὶ ἀπῆλθεν καὶ ἔφυγεν καὶ σώζεται.",
+        "VUL": "deposuit eum per fenestram. Porro ille abiit et aufugit, atque salvatus est.",
+        "SYN": "И спустила Мелхола Давида из окна, и он пошел, и убежал и спасся.",
+        "NEO": "Michol fit descendre David par la fenêtre, et David s’en alla et s’enfuit, et il fut sauvé.",
+        "NAB": "Then Michal let David down through a window, and he made his escape in safety.",
+        "VAT_ES": "Mical ayudó a David a bajar por la ventana, y él huyó para ponerse a salvo.",
+        "CEI": "Mikal calò Davide dalla finestra e quegli partì di corsa e si mise in salvo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/תִּקַּ֨ח מִיכַ֜ל אֶת הַ/תְּרָפִ֗ים וַ/תָּ֨שֶׂם֙ אֶל הַ/מִּטָּ֔ה וְ/אֵת֙ כְּבִ֣יר הָֽ/עִזִּ֔ים שָׂ֖מָה מְרַֽאֲשֹׁתָ֑י/ו וַ/תְּכַ֖ס בַּ/בָּֽגֶד׃",
+        "LXX": "καὶ ἔλαβεν ἡ Μελχὸλ τὰ κενοτάφια καὶ ἔθετο ἐπὶ τὴν κλίνην, καὶ ἧπαρ τῶν αἰγῶν ἔθετο πρὸς κεφαλῆς αὐτοῦ, καὶ ἐκάλυψεν αὐτὰ ἱματίῳ.",
+        "VUL": "Tulit autem Michol statuam, et posuit eam super lectum, et pellem pilosam caprarum posuit ad caput ejus, et operuit eam vestimentis.",
+        "SYN": "Мелхола же взяла статую и положила на постель, а в изголовье ее положила козью кожу, и покрыла одеждою.",
+        "NEO": "Michol prit ensuite le théraphim et, l’ayant placé dans le lit, elle mit une peau de chèvre à l’endroit de sa tête, et le couvrit d’un vêtement.",
+        "NAB": "Michal took the household idol and laid it in the bed, putting a net of goat's hair at its head and covering it with a spread.",
+        "VAT_ES": "Luego, Mical tomó el ídolo familiar y lo colocó sobre la cama; puso en la cabecera un cuero de cabra y lo cubrió con una manta.",
+        "CEI": "Mikal prese allora i terafim e li pose presso il letto. Mise dalla parte del capo un tessuto di pelo di capra e coprì il letto con una coltre."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֥ח שָׁא֛וּל מַלְאָכִ֖ים לָ/קַ֣חַת אֶת דָּוִ֑ד וַ/תֹּ֖אמֶר חֹלֶ֥ה הֽוּא׃",
+        "LXX": "καὶ ἀπέστειλεν Σαοὺλ ἀγγέλους λαβεῖν τὸν Δαυείδ, καὶ λέγουσιν ἐνοχλεῖσθαι αὐτόν.",
+        "VUL": "Misit autem Saul apparitores, qui raperent David : et responsum est quod ægrotaret.",
+        "SYN": "И послал Саул слуг, чтобы взять Давида; но _Мелхола_ сказала: он болен.",
+        "NEO": "Et lorsque Saül envoya des messagers pour prendre David, elle dit : « Il est malade. »",
+        "NAB": "When Saul sent messengers to arrest David, she said, \"He is sick.\"",
+        "VAT_ES": "Saúl envió emisarios para que detuvieran a David, pero Mical les dijo: «Está enfermo».",
+        "CEI": "Saul mandò dunque messaggeri a prendere Davide ma essa disse: \"È malato\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח שָׁאוּל֙ אֶת הַ/מַּלְאָכִ֔ים לִ/רְא֥וֹת אֶת דָּוִ֖ד לֵ/אמֹ֑ר הַעֲל֨וּ אֹת֧/וֹ בַ/מִּטָּ֛ה אֵלַ֖/י לַ/הֲמִתֽ/וֹ׃",
+        "LXX": "καὶ ἀποστέλλει ἐπὶ τὸν Δαυεὶδ λέγων Ἀγάγετε αὐτὸν ἐπὶ τῆς κλίνης πρὸς μὲ τοῦ θανατῶσαι αὐτόν.",
+        "VUL": "Rursumque misit Saul nuntios ut viderent David, dicens : Afferte eum ad me in lecto, ut occidatur.",
+        "SYN": "И послал Саул слуг, чтобы осмотреть Давида, говоря: принесите его ко мне на постели, чтоб убить его.",
+        "NEO": "Saül renvoya les messagers pour voir David, en disant : « Apportez-le-moi dans son lit, afin que je le fasse mourir. »",
+        "NAB": "Saul, however, sent the messengers back to see David and commanded them, \"Bring him up to me in the bed, that I may kill him.\"",
+        "VAT_ES": "Saúl los mandó de nuevo a ver a David, con esta orden: «&iexcl;Tráiganmelo con cama y todo, para que yo lo mate!».",
+        "CEI": "Saul rimandò i messaggeri a vedere Davide con questo ordine: \"Portatelo qui da me nel suo letto, perché lo faccia morire\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֨אוּ֙ הַ/מַּלְאָכִ֔ים וְ/הִנֵּ֥ה הַ/תְּרָפִ֖ים אֶל הַ/מִּטָּ֑ה וּ/כְבִ֥יר הָ/עִזִּ֖ים מְרַאֲשֹׁתָֽי/ו׃",
+        "LXX": "καὶ ἔρχονται οἱ ἄγγελοι, καὶ ἰδοὺ τὰ κενοτάφια ἐπὶ τῆς κλίνης, καὶ ἧπαρ τῶν αἰγῶν πρὸς κεφαλῆς αὐτοῦ.",
+        "VUL": "Cumque venissent nuntii, inventum est simulacrum super lectum, et pellis caprarum ad caput ejus.",
+        "SYN": "И пришли слуги, и вот, на постели статуя, а в изголовье ее козья кожа.",
+        "NEO": "Les messagers revinrent et voici que le théraphim était sur le lit avec une peau de chèvre à l’endroit de sa tête.",
+        "NAB": "But when the messengers entered, they found the household idol in the bed, with the net of goat's hair at its head.",
+        "VAT_ES": "Pero cuando los emisarios entraron, no encontraron en la cama más que el ídolo, con el cuero de cabra en la cabecera.",
+        "CEI": "Tornarono i messaggeri ed ecco presso il letto c'erano i terafim e il tessuto di pelo di capra dalla parte del capo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר שָׁא֜וּל אֶל מִיכַ֗ל לָ֤/מָּה כָּ֨כָה֙ רִמִּיתִ֔/נִי וַ/תְּשַׁלְּחִ֥י אֶת אֹיְבִ֖/י וַ/יִּמָּלֵ֑ט וַ/תֹּ֤אמֶר מִיכַל֙ אֶל שָׁא֔וּל הוּא אָמַ֥ר אֵלַ֛/י שַׁלְּחִ֖/נִי לָ/מָ֥ה אֲמִיתֵֽ/ךְ׃",
+        "LXX": "καὶ εἶπεν Σαοὺλ τῇ Μελχόλ Ἵνα τί οὕτως παρελογίσω με, καὶ ἐξαπέστειλας τὸν ἐχθρόν μου καὶ διεσώθη; καὶ εἶπεν Μελχὸλ τῷ Σαούλ Αὐτὸς εἶπεν Ἐξαπόστειλόν με· εἰ δὲ μή, θανατώσω σε.",
+        "VUL": "Dixitque Saul ad Michol : Quare sic illusisti mihi, et dimisisti inimicum meum ut fugeret ? Et respondit Michol ad Saul : Quia ipse locutus est mihi : Dimitte me, alioquin interficiam te.",
+        "SYN": "Тогда Саул сказал Мелхоле: для чего ты так обманула меня и отпустила врага моего, чтоб он убежал? И сказала Мелхола Саулу: он сказал мне: отпусти меня, иначе я убью тебя.",
+        "NEO": "Et Saül dit à Michol : « Pourquoi m’as-tu trompé ainsi, et as-tu laissé aller mon ennemi, pour qu’il fût sauvé ? » Michol répondit à Saül : « Il m’a dit : Laisse-moi aller, ou je te tue. »",
+        "NAB": "Saul therefore asked Michal: \"Why did you play this trick on me? You have helped my enemy to get away!\" Michal answered Saul: \"He threatened me, 'Let me go or I will kill you.'\"",
+        "VAT_ES": "Saúl dijo a Mical: «&iquest;Qué manera de engañarme es esta? &iexcl;Has dejado escapar a mi enemigo!». Mical le respondió: «El me dijo: «O me dejas partir o te mato».",
+        "CEI": "Saul disse a Mikal: \"Perché mi hai ingannato a questo modo e hai fatto fuggire il mio nemico, perché si mettesse in salvo?\". Rispose Mikal a Saul: \"Egli mi ha detto: Lasciami fuggire, altrimenti ti uccido\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/דָוִ֨ד בָּרַ֜ח וַ/יִּמָּלֵ֗ט וַ/יָּבֹ֤א אֶל שְׁמוּאֵל֙ הָ/רָמָ֔תָ/ה וַ/יַּ֨גֶּד ל֔/וֹ אֵ֛ת כָּל אֲשֶׁ֥ר עָֽשָׂה ל֖/וֹ שָׁא֑וּל וַ/יֵּ֤לֶךְ הוּא֙ וּ/שְׁמוּאֵ֔ל וַ/יֵּשְׁב֖וּ ב/נוית בְּ/נָֽיוֹת׃",
+        "LXX": "Καὶ Δαυεὶδ ἔφυγεν καὶ διεσώθη, καὶ παραγίνεται πρὸς Σαμουὴλ εἰς Ἁρμαθάιμ, καὶ ἀπαγγέλλει αὐτῷ πάντα ὅσα ἐποίησεν αὐτῷ Σαούλ· καὶ ἐπορεύθη Δαυεὶδ καὶ Σαμουήλ, καὶ ἐκάθισαν ἐν Ἀυὰθ ἐν Ῥαμά.",
+        "VUL": "David autem fugiens salvatus est, et venit ad Samuel in Ramatha, et nuntiavit ei omnia quæ fecerat sibi Saul : et abierunt ipse et Samuel, et morati sunt in Najoth.",
+        "SYN": "И убежал Давид и спасся, и пришел к Самуилу в Раму и рассказал ему все, что делал с ним Саул. И пошел он с Самуилом, и остановились они в Навафе [в Раме].",
+        "NEO": "C’est ainsi que David prit la fuite et fut sauvé. Il se rendit auprès de Samuel à Rama, et lui raconta tout ce que Saül lui avait fait. Puis il alla avec Samuel demeurer à Naioth.",
+        "NAB": "Thus David got safely away; he went to Samuel in Ramah, informing him of all that Saul had done to him. Then he and Samuel went to stay in the sheds.",
+        "VAT_ES": "Una vez que huyó y se puso a salvo, David se presentó a Samuel en Ramá y le contó todo lo que le había hecho Saúl. Luego, él y Samuel fueron a alojarse en Naiot.",
+        "CEI": "Davide dunque fuggì e si mise in salvo. Andò da Samuele in Rama e gli narrò quanto gli aveva fatto Saul; poi Davide e Samuele andarono ad abitare a Naiot."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֻּגַּ֥ד לְ/שָׁא֖וּל לֵ/אמֹ֑ר הִנֵּ֣ה דָוִ֔ד ב/נוית בְּ/נָי֖וֹת בָּ/רָמָֽה׃",
+        "LXX": "καὶ ἀπηγγέλη τῷ Σαοὺλ λέγοντες Ἰδοὺ Δαυεὶδ ἐν Ἀυὰθ ἐν Ῥαμά.",
+        "VUL": "Nuntiatum est autem Sauli a dicentibus : Ecce David in Najoth in Ramatha.",
+        "SYN": "И донесли Саулу, говоря: вот, Давид в Навафе, в Раме.",
+        "NEO": "On le fit savoir à Saül, en disant : « Voici que David est à Naioth, en Rama. »",
+        "NAB": "When Saul was told that David was in the sheds near Ramah,",
+        "VAT_ES": "Cuando informaron a Saúl de que David estaba en Naiot, en Ramá,",
+        "CEI": "La cosa fu riferita a Saul: \"Ecco, Davide sta a Naiot presso Rama\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֨ח שָׁא֣וּל מַלְאָכִים֮ לָ/קַ֣חַת אֶת דָּוִד֒ וַ/יַּ֗רְא אֶֽת לַהֲקַ֤ת הַ/נְּבִיאִים֙ נִבְּאִ֔ים וּ/שְׁמוּאֵ֕ל עֹמֵ֥ד נִצָּ֖ב עֲלֵי/הֶ֑ם וַ/תְּהִ֞י עַֽל מַלְאֲכֵ֤י שָׁאוּל֙ ר֣וּחַ אֱלֹהִ֔ים וַ/יִּֽתְנַבְּא֖וּ גַּם הֵֽמָּה׃",
+        "LXX": "καὶ ἀπέστειλεν Σαοὺλ ἀγγέλους λαβεῖν τὸν Δαυείδ· καὶ εἶδαν τὴν ἐκκλησίαν τῶν προφητῶν, καὶ Σαμουὴλ εἱστήκει καθεστηκὼς ἐπ’ αὐτῶν. καὶ ἐγενήθη ἐπὶ τοὺς ἀγγέλους τοῦ Σαοὺλ πνεῦμα θεοῦ, καὶ προφητεύουσιν.",
+        "VUL": "Misit ergo Saul lictores, ut raperent David : qui cum vidissent cuneum prophetarum vaticinantium, et Samuelem stantem super eos, factus est etiam spiritus Domini in illis, et prophetare cperunt etiam ipsi.",
+        "SYN": "И послал Саул слуг взять Давида, и _когда_ увидели они сонм пророков пророчествующих и Самуила, начальствующего над ними, то Дух Божий сошел на слуг Саула, и они стали пророчествовать.",
+        "NEO": "Aussitôt Saül envoya des messagers pour prendre David ; ils virent la troupe de prophètes qui prophétisaient, et Samuel était debout, les présidant ; et l’Esprit de Dieu fut sur les envoyés de Saül, qui eux aussi prophétisèrent.",
+        "NAB": "he sent messengers to arrest David. But when they saw the band of prophets, presided over by Samuel, in a prophetic frenzy, they too fell into the prophetic state.",
+        "VAT_ES": "aquel envió emisarios para que detuvieran a David. Ellos vieron a la comunidad de profetas, con Samuel a la cabeza, en estado de trance profético. Entonces el espíritu del Señor invadió a los emisarios de Saúl, y también ellos entraron en trance.",
+        "CEI": "Allora Saul spedì messaggeri a catturare Davide, ma quando videro profetare la comunità dei profeti, mentre Samuele stava in piedi alla loro testa, lo spirito di Dio investì i messaggeri di Saul e anch'essi fecero i profeti."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יַּגִּ֣דוּ לְ/שָׁא֗וּל וַ/יִּשְׁלַח֙ מַלְאָכִ֣ים אֲחֵרִ֔ים וַ/יִּֽתְנַבְּא֖וּ גַּם הֵ֑מָּה וַ/יֹּ֣סֶף שָׁא֗וּל וַ/יִּשְׁלַח֙ מַלְאָכִ֣ים שְׁלִשִׁ֔ים וַ/יִּֽתְנַבְּא֖וּ גַּם הֵֽמָּה׃",
+        "LXX": "καὶ ἀπηγγέλη τῷ Σαούλ, καὶ ἀπέστειλεν ἀγγέλους ἑτέρους, καὶ ἐπροφήτευσαν καὶ αὐτοί· καὶ προσέθετο Σαοὺλ ἀποστεῖλαι ἀγγέλους τρίτους, καὶ ἐπροφήτευσαν καὶ αὐτοί·.",
+        "VUL": "Quod cum nuntiatum esset Sauli, misit et alios nuntios : prophetaverunt autem et illi. Et rursum misit Saul tertios nuntios : qui et ipsi prophetaverunt. Et iratus iracundia Saul,",
+        "SYN": "Донесли _об_ _этом_ Саулу, и он послал других слуг, но и эти стали пророчествовать. Потом послал Саул третьих слуг, и эти стали пророчествовать.",
+        "NEO": "On l’annonça à Saül, et il envoya d’autres messagers, et eux aussi prophétisèrent. Pour la troisième fois, Saül envoya des messagers, et eux aussi prophétisèrent.",
+        "NAB": "Informed of this, Saul sent other messengers, who also fell into the prophetic state. For the third time Saul sent messengers, but they too fell into the prophetic state.",
+        "VAT_ES": "Al enterarse de esto, Saúl envió otros emisarios, pero también ellos entraron en trance. Por tercera vez, Saúl volvió a enviar emisarios, y también ellos entraron en trance.",
+        "CEI": "Annunziarono a Saul questa cosa ed egli spedì altri messaggeri, ma anch'essi fecero i profeti. Saul mandò di nuovo messaggeri per la terza volta, ma anch'essi fecero i profeti."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨לֶךְ גַּם ה֜וּא הָ/רָמָ֗תָ/ה וַ/יָּבֹא֙ עַד בּ֤וֹר הַ/גָּדוֹל֙ אֲשֶׁ֣ר בַּ/שֶּׂ֔כוּ וַ/יִּשְׁאַ֣ל וַ/יֹּ֔אמֶר אֵיפֹ֥ה שְׁמוּאֵ֖ל וְ/דָוִ֑ד וַ/יֹּ֕אמֶר הִנֵּ֖ה ב/נוית בְּ/נָי֥וֹת בָּ/רָמָֽה׃",
+        "LXX": "καὶ ἐθυμώθη ὀργῇ Σαούλ, καὶ ἐπορεύθη καὶ αὐτὸς εἰς Ἁρμαθάιμ, καὶ ἔρχεται ἕως τοῦ φρέατος τοῦ ἅλω τοῦ ἐν τῷ Σεφεί, καὶ ἠρώτησεν καὶ εἶπεν Ποῦ Σαμουὴλ καὶ Δαυείδ; καὶ εἶπεν Ἰδοὺ ἐν Ἀυὰθ ἐν Ῥαμά.",
+        "VUL": "abiit etiam ipse in Ramatha, et venit usque ad cisternam magnam quæ est in Socho, et interrogavit, et dixit : In quo loco sunt Samuel et David ? Dictumque est ei : Ecce in Najoth sunt in Ramatha.",
+        "SYN": "[Разгневавшись,] Саул сам пошел в Раму, и дошел до большого источника, что в Сефе, и спросил, говоря: где Самуил и Давид? И сказали: вот, в Навафе, в Раме.",
+        "NEO": "Alors Saül alla, lui aussi, à Rama. Arrivé à la grande citerne qui est à Socho, il demanda : « Où sont Samuel et David ? » On lui répondit : « Voici, ils sont à Naioth en Rama. »",
+        "NAB": "Saul then went to Ramah himself. Arriving at the cistern of the threshing floor on the bare hilltop, he inquired, \"Where are Samuel and David?\", and was told, \"At the sheds near Ramah.\"",
+        "VAT_ES": "Entonces fue él personalmente a Ramá. Al llegar a la gran cisterna que está en Secú, Saúl preguntó: «&iquest;Dónde están Samuel y David?». «Están en Naiot, cerca de Ramá», le respondieron,",
+        "CEI": "Allora venne egli stesso a Rama e si portò alla grande cisterna che si trova a Secu e domandò: \"C'è qui forse Samuele con Davide?\". Gli risposero: \"Eccoli: sono a Naiot di Rama\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֣לֶךְ שָׁ֔ם אֶל נוית נָי֖וֹת בָּ/רָמָ֑ה וַ/תְּהִי֩ עָלָ֨י/ו גַּם ה֜וּא ר֣וּחַ אֱלֹהִ֗ים וַ/יֵּ֤לֶךְ הָלוֹךְ֙ וַ/יִּתְנַבֵּ֔א עַד בֹּא֖/וֹ ב/נוית בְּ/נָי֥וֹת בָּ/רָמָֽה׃",
+        "LXX": "καὶ ἐπορεύθη ἐκεῖθεν ἐν Ἀυὰθ ἐν Ῥαμά, καὶ ἐγενήθη καὶ ἐπ’ αὐτῷ πνεῦμα θεοῦ, καὶ ἐπορεύετο προφητεύων ἕως τοῦ ἐλθεῖν αὐτὸν εἰς Ἀυὰθ ἐν Ῥαμά.",
+        "VUL": "Et abiit in Najoth in Ramatha, et factus est etiam super eum spiritus Domini, et ambulabat ingrediens, et prophetabat usque dum veniret in Najoth in Ramatha.",
+        "SYN": "И пошел он туда в Наваф в Раме, и на него сошел Дух Божий, и он шел и пророчествовал, доколе не пришел в Наваф в Раме.",
+        "NEO": "Et il se dirigea là, vers Naioth en Rama. L’Esprit de Dieu fut aussi sur lui, et il allait et il prophétisait, jusqu’à son arrivée à Naioth en Rama.",
+        "NAB": "As he set out from the hilltop toward the sheds, the spirit of God came upon him also, and he continued on in a prophetic condition until he reached the spot. At the sheds near Ramah",
+        "VAT_ES": "De allí se dirigió a Naiot, en Ramá, y el espíritu del Señor se apoderó de él, de manera que fue caminando en estado de trance hasta Naiot, en Ramá.",
+        "CEI": "Egli si incamminò verso Naiot di Rama, ma cadde anche su di lui lo spirito di Dio e andava avanti facendo il profeta finché giunse a Naiot di Rama."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּפְשַׁ֨ט גַּם ה֜וּא בְּגָדָ֗י/ו וַ/יִּתְנַבֵּ֤א גַם הוּא֙ לִ/פְנֵ֣י שְׁמוּאֵ֔ל וַ/יִּפֹּ֣ל עָרֹ֔ם כָּל הַ/יּ֥וֹם הַ/ה֖וּא וְ/כָל הַ/לָּ֑יְלָה עַל כֵּן֙ יֹֽאמְר֔וּ הֲ/גַ֥ם שָׁא֖וּל בַּ/נְּבִיאִֽם׃",
+        "LXX": "καὶ ἐξεδύσατο τὰ ἱμάτια αὐτοῦ καὶ ἐπροφήτευσεν ἐνώπιον αὐτῶν, καὶ ἔπεσεν γυμνὸς ὅλην τὴν ἡμέραν ἐκείνην καὶ ὅλην τὴν νύκτα· διὰ τοῦτο ἔλεγον Εἰ καὶ Σαοὺλ ἐν προφήταις;",
+        "VUL": "Et expoliavit etiam ipse se vestimentis suis, et prophetavit cum ceteris coram Samuele, et cecidit nudus tota die illa et nocte. Unde et exivit proverbium : Num et Saul inter prophetas ?",
+        "SYN": "И снял и он одежды свои, и пророчествовал пред Самуилом, и весь день тот и всю ту ночь лежал неодетый; поэтому говорят: \"неужели и Саул во пророках?\"",
+        "NEO": "Là, ayant aussi ôté ses vêtements, il prophétisa, lui aussi, devant Samuel, et il resta nu par terre tout ce jour-là et toute la nuit. C’est pourquoi on dit : « Saül est-il aussi parmi les prophètes ? »",
+        "NAB": "he, too, stripped himself of his garments and he, too, remained in the prophetic state in the presence of Samuel; all that day and night he lay naked. That is why they say, \"Is Saul also among the prophets?\"",
+        "VAT_ES": "También él se despojó de su ropa y estuvo en trance delante de Samuel. Luego cayó rendido, y estuvo desnudo todo aquel día y aquella noche. Por eso se puede decir: «&iquest;También Saúl está entre los profetas?».",
+        "CEI": "Anch'egli si tolse gli abiti e continuò a fare il profeta davanti a Samuele; poi crollò e restò nudo tutto quel giorno e tutta la notte. Da qui è venuto il detto: \"Anche Saul è tra i profeti?\"."
+      }
+    }
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "SOPH_001",
+  "book_key": "SOPH",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "דְּבַר יְהוָ֣ה אֲשֶׁ֣ר הָיָ֗ה אֶל צְפַנְיָה֙ בֶּן כּוּשִׁ֣י בֶן גְּדַלְיָ֔ה בֶּן אֲמַרְיָ֖ה בֶּן חִזְקִיָּ֑ה בִּ/ימֵ֛י יֹאשִׁיָּ֥הוּ בֶן אָמ֖וֹן מֶ֥לֶךְ יְהוּדָֽה׃",
+        "LXX": "ΛΟΓΟΣ Κυρίου ὃς ἐγενήθη πρὸς Σοφονίαν τὸν τοῦ Χουσεὶ υἱὸν Γοδολίου τοῦ Ἀμορίου τοῦ Ἑζεκίου ἐν ἡμέραις Ἰωσείου υἱοῦ Ἀμὼν βασιλέως Ἰούδα.",
+        "SYN": "Слово Господне, которое было к Софонии, сыну Хусия, сыну Годолии, сыну Амории, сыну Езекии, во дни Иосии, сына Амонова, царя Иудейского.",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** qui fut adressée à Sophonie, fils de Chusi, fils de Godolias, fils d’Amarias, fils d’Ezéchias, dans les jours de Josias, fils d’Amon, roi de Juda.",
+        "NAB": "The word of the LORD which came to Zephaniah, the son of Cushi, the son of Gedaliah, the son of Amariah, the son of Hezekiah, in the days of Josiah, the son of Amon, king of Judah.",
+        "VAT_ES": "Palabra del Señor dirigida a Sofonías, hijo de Cusí, hijo de Guedalías, hijo de Amarías, hijo de Ezequías, en tiempos de Josías, hijo de Amón, rey de Judá.",
+        "CEI": "Parola del Signore rivolta a Sofonìa figlio dell'Etiope, figlio di Godolia, figlio di Amaria, figlio di Ezechia, al tempo di Giosia figlio di Amon, re di Giuda."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אָסֹ֨ף אָסֵ֜ף כֹּ֗ל מֵ/עַ֛ל פְּנֵ֥י הָ/אֲדָמָ֖ה נְאֻם יְהוָֽה׃",
+        "LXX": "Ἐκλείψει ἐκλιπέτω ἀπὸ προσώπου τῆς γῆς, λέγει Κύριος·",
+        "SYN": "Все истреблю с лица земли, говорит Господь:",
+        "NEO": "J’enlèverai tout de dessus la face de la terre, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** ;",
+        "NAB": "I will completely sweep away all things from the face of the earth, says the LORD.",
+        "VAT_ES": "Yo lo arrasaré todo de la superficie de la tierra –oráculo del Señor–.",
+        "CEI": "Tutto farò sparire dalla terra. Oracolo del Signore."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אָסֵ֨ף אָדָ֜ם וּ/בְהֵמָ֗ה אָסֵ֤ף עוֹף הַ/שָּׁמַ֨יִם֙ וּ/דְגֵ֣י הַ/יָּ֔ם וְ/הַ/מַּכְשֵׁל֖וֹת אֶת הָ/רְשָׁעִ֑ים וְ/הִכְרַתִּ֣י אֶת הָ/אָדָ֗ם מֵ/עַ֛ל פְּנֵ֥י הָ/אֲדָמָ֖ה נְאֻם יְהוָֽה׃",
+        "LXX": "ἐκλιπέτω ἄνθρωπος καὶ κτήνη, ἐκλιπέτω τὰ πετεινὰ τοῦ οὐρανοῦ καὶ οἱ ἰχθύες τῆς θαλάσσης· καὶ ἀσθενήσουσιν οἱ ἀσεβεῖς, καὶ ἐξαρῶ τοὺς ἀνόμους ἀπὸ προσώπου τῆς γῆς, λέγει Κύριος.",
+        "SYN": "истреблю людей и скот, истреблю птиц небесных и рыб морских, и соблазны вместе с нечестивыми; истреблю людей с лица земли, говорит Господь.",
+        "NEO": "j’enlèverai les hommes et les bêtes, j’enlèverai les oiseaux du ciel et les poissons de la mer, et les scandales avec les impies, et j’exterminerai l’homme de dessus la face de la terre, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "I will sweep away man and beast, I will sweep away the birds of the sky, and the fishes of the sea. I will overthrow the wicked; I will destroy mankind from the face of the earth, says the LORD.",
+        "VAT_ES": "Arrasaré a los hombres y a las bestias, arrasaré a los pájaros del cielo y a los peces del mar; haré caer a los malvados y extirparé a los hombres de la superficie de la tierra –oráculo del Señor–.",
+        "CEI": "Distruggerò uomini e bestie; sterminerò gli uccelli del cielo e i pesci del mare, abbatterò gli empi; sterminerò l'uomo dalla terra. Oracolo del Signore."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/נָטִ֤יתִי יָדִ/י֙ עַל יְהוּדָ֔ה וְ/עַ֖ל כָּל יוֹשְׁבֵ֣י יְרוּשָׁלִָ֑ם וְ/הִכְרַתִּ֞י מִן הַ/מָּק֤וֹם הַ/זֶּה֙ אֶת שְׁאָ֣ר הַ/בַּ֔עַל אֶת שֵׁ֥ם הַ/כְּמָרִ֖ים עִם הַ/כֹּהֲנִֽים׃",
+        "LXX": "καὶ ἐκτενῶ τὴν χεῖρά μου ἐπὶ Ἰούδαν καὶ ἐπὶ πάντας τοὺς κατοικοῦντας Ἰερουσαλήμ· καὶ ἐξαρῶ ἐκ τοῦ τόπου τούτου τὰ ὀνόματα τῆς Βάαλ καὶ τὰ ὀνόματα τῶν ἱερέων,",
+        "SYN": "И простру руку Мою на Иудею и на всех жителей Иерусалима: истреблю с места сего остатки Ваала, имя жрецов со священниками,",
+        "NEO": "Et j’étendrai ma main sur Juda, et sur tous les habitants de Jérusalem, et j’exterminerai de ce lieu le reste de Baal, le nom de ses ministres en même temps que les prêtres ;",
+        "NAB": "I will stretch out my hand against Judah, and against all the inhabitants of Jerusalem; I will destroy from this place the last vestige of Baal, the very names of his priests.",
+        "VAT_ES": "Extenderé mi mano contra Judá y contra todos los habitantes de Jerusalén; extirparé de este lugar todo lo que queda de Baal, el nombre de sus ministros y a los sacerdotes junto con ellos.",
+        "CEI": "Stenderò la mano su Giuda e su tutti gli abitanti di Gerusalemme; sterminerò da questo luogo gli avanzi di Baal e il nome stesso dei suoi falsi sacerdoti;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/מִּשְׁתַּחֲוִ֥ים עַל הַ/גַּגּ֖וֹת לִ/צְבָ֣א הַ/שָּׁמָ֑יִם וְ/אֶת הַ/מִּֽשְׁתַּחֲוִים֙ הַ/נִּשְׁבָּעִ֣ים לַֽ/יהוָ֔ה וְ/הַ/נִּשְׁבָּעִ֖ים בְּ/מַלְכָּֽ/ם׃",
+        "LXX": "καὶ τούς προσκυνοῦντας ἐπὶ τὰ δώματα τῇ στρατιᾷ τοῦ οὐρανοῦ, καὶ τοὺς προσκυνοῦντας καὶ τοὺς ὀμνύοντας κατὰ τοῦ κυρίου, καὶ τούς ὀμνύοντας κατὰ τοῦ βασιλέως αὐτῶν,",
+        "SYN": "и тех, которые на кровлях поклоняются воинству небесному, и тех поклоняющихся, которые клянутся Господом и клянутся царем своим,",
+        "NEO": "et ceux qui se prosternent sur les toits, devant l’armée des cieux ; et ceux qui se prosternent en faisant serment à \\+w Yahweh|strong=\"H3068\"\\+w**, tout en jurant par leur roi ;",
+        "NAB": "And those who adore the host of heaven on the roofs, with those who adore the LORD but swear by Milcom;",
+        "VAT_ES": "Exterminaré a los que se postran en las terrazas ante el Ejército de los cielos, a lo que se postran delante del Señor y juran por Milcóm,",
+        "CEI": "quelli che sui tetti si prostrano davanti alla milizia celeste e quelli che si prostrano davanti al Signore, e poi giurano per Milcom;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/נְּסוֹגִ֖ים מֵ/אַחֲרֵ֣י יְהוָ֑ה וַ/אֲשֶׁ֛ר לֹֽא בִקְשׁ֥וּ אֶת יְהוָ֖ה וְ/לֹ֥א דְרָשֻֽׁ/הוּ׃",
+        "LXX": "καὶ τοὺς ἐκκλίνοντας ἀπὸ τοῦ κυρίου, καὶ τοὺς μὴ ζητοῦντας τὸν κύριον, καὶ τοὺς μὴ ἀντεχομένους τοῦ κυρίου.",
+        "SYN": "и тех, которые отступили от Господа, не искали Господа и не вопрошали о Нем.",
+        "NEO": "et ceux qui se détournent de \\+w Yahweh|strong=\"H3068\"\\+w**, qui ne cherchent pas \\+w Yahweh|strong=\"H3068\"\\+w**, et ne se soucient pas de lui.",
+        "NAB": "And those who have fallen away from the LORD, and those who do not seek the LORD.",
+        "VAT_ES": "a los que se apartan del Señor, a los que no lo buscan ni lo consultan.",
+        "CEI": "quelli che si allontanano dal seguire il Signore, che non lo cercano, né si curano di lui."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "הַ֕ס מִ/פְּנֵ֖י אֲדֹנָ֣/י יְהוִ֑ה כִּ֤י קָרוֹב֙ י֣וֹם יְהוָ֔ה כִּֽי הֵכִ֧ין יְהוָ֛ה זֶ֖בַח הִקְדִּ֥ישׁ קְרֻאָֽי/ו׃",
+        "LXX": "Εὐλαβεῖσθε ἀπὸ προσώπου Κυρίου τοῦ θεοῦ, διότι ἐγγὺς ἡμέρα τοῦ κυρίου, ὅτι ἡτοίμακεν Κύριος τὴν θυσίαν αὐτοῦ, ἡγίακεν τοὺς κλητοὺς αὐτοῦ.",
+        "SYN": "Умолкни пред лицем Господа Бога! ибо близок день Господень: уже приготовил Господь жертвенное заклание, назначил, кого позвать.",
+        "NEO": "Silence devant le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** ! Car le jour de \\+w Yahweh|strong=\"H3068\"\\+w** est proche ; car \\+w Yahweh|strong=\"H3068\"\\+w** a préparé un sacrifice, il a consacré ses invités.",
+        "NAB": "Silence in the presence of the Lord GOD! for near is the day of the LORD, Yes, the LORD has prepared a slaughter feast, he has consecrated his guests.",
+        "VAT_ES": "&iexcl;Silencio delante del Señor, porque el Día del Señor está cerca! Sí, el Señor ha preparado un sacrificio y ha consagrado a sus invitados.",
+        "CEI": "Silenzio, alla presenza del Signore Dio, perchè il giorno del Signore è vicino, perchè il Signore ha preparato un sacrificio, ha mandato a chiamare i suoi invitati."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה בְּ/יוֹם֙ זֶ֣בַח יְהוָ֔ה וּ/פָקַדְתִּ֥י עַל הַ/שָּׂרִ֖ים וְ/עַל בְּנֵ֣י הַ/מֶּ֑לֶךְ וְ/עַ֥ל כָּל הַ/לֹּבְשִׁ֖ים מַלְבּ֥וּשׁ נָכְרִֽי׃",
+        "LXX": "καὶ ἔσται ἐν ἡμέρᾳ θυσίας Κυρίου καὶ ἐκδικήσω ἐπὶ τοὺς ἄρχοντας καὶ ἐπὶ τὸν οἶκον τοῦ βασιλέως καὶ ἐπὶ πάντας τοὺς ἐνδεδυμένους ἐνδύματα ἀλλότρια·",
+        "SYN": "И будет в день жертвы Господней: Я посещу князей и сыновей царя и всех, одевающихся в одежду иноплеменников;",
+        "NEO": "Et il arrivera : Au jour du sacrifice de \\+w Yahweh|strong=\"H3068\"\\+w**, je châtierai les princes, et les fils de roi, et tous ceux qui revêtent des vêtements étrangers.",
+        "NAB": "On the day of the LORD'S slaughter feast I will punish the princes, and the king's sons, and all that dress in foreign apparel.",
+        "VAT_ES": "El día del sacrificio del Señor, yo pediré cuenta a los jefes y a los hijos del rey, y a todos los que se visten a la moda extranjera.",
+        "CEI": "Nel giorno del sacrificio del Signore, io punirò i prìncipi e i figli di re e quanti vestono alla moda straniera;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וּ/פָקַדְתִּ֗י עַ֧ל כָּל הַ/דּוֹלֵ֛ג עַל הַ/מִּפְתָּ֖ן בַּ/יּ֣וֹם הַ/ה֑וּא הַֽ/מְמַלְאִ֛ים בֵּ֥ית אֲדֹנֵי/הֶ֖ם חָמָ֥ס וּ/מִרְמָֽה׃",
+        "LXX": "καὶ ἐκδικήσω ἐμφανῶς ἐπὶ τὰ πρόπυλα ἐν ἐκείνῃ τῇ ἡμέρᾳ, τοὺς πληροῦντας τὸν οἶκον Κυρίου θεοῦ αὐτῶν ἀσεβείας καὶ δόλου.",
+        "SYN": "посещу в тот день всех, которые перепрыгивают через порог, которые дом Господа своего наполняют насилием и обманом.",
+        "NEO": "Et je châtierai en ce jour-là tous ceux qui sautent par-dessus le seuil, qui remplissent de violence et de fraude la maison de leur maître.",
+        "NAB": "I will punish, on that day, all who leap over the threshold, Who fill the house of their master with violence and deceit.",
+        "VAT_ES": "Aquel día pediré cuenta a todos los que saltan por encima del umbral, a los que llenan de violencia y de fraude la casa de su señor.",
+        "CEI": "punirò in quel giorno chiunque salta la soglia, chi riempie di rapine e di frodi il palazzo del suo padrone."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֩ בַ/יּ֨וֹם הַ/ה֜וּא נְאֻם יְהוָ֗ה ק֤וֹל צְעָקָה֙ מִ/שַּׁ֣עַר הַ/דָּגִ֔ים וִֽ/ילָלָ֖ה מִן הַ/מִּשְׁנֶ֑ה וְ/שֶׁ֥בֶר גָּד֖וֹל מֵ/הַ/גְּבָעֽוֹת׃",
+        "LXX": "καὶ ἔσται ἐν τῇ ἡμέρᾳ ἐκείνῃ, λέγει Κύριος, φωνὴ κραυγῆς ἀπὸ πύλης ἀποκεντούντων, καὶ ὀλολυγμὸς ἀπὸ τῆς δευτέρας, καὶ συντριμμὸς μέγας ἀπὸ τῶν βουνῶν.",
+        "SYN": "И будет в тот день, говорит Господь, вопль у ворот рыбных и рыдание у других ворот и великое разрушение на холмах.",
+        "NEO": "Et il arrivera en ce jour-là, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** : De la porte des poissons retentiront des cris, de la seconde ville des gémissements, et des collines un grand fracas.",
+        "NAB": "On that day, says the LORD, A cry will be heard from the Fish Gate, a wail from the New Quarter, loud crashing from the hills.",
+        "VAT_ES": "Aquel día –oráculo del Señor– se oirá un clamor desde la puerta de los Peces, un alarido desde la Ciudad nueva y un gran estruendo desde las colinas.",
+        "CEI": "In quel giorno - parola del Signore - grida d'aiuto verranno dalla Porta dei pesci, ululati dal quartiere nuovo e grande fragore dai colli."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "הֵילִ֖ילוּ יֹשְׁבֵ֣י הַ/מַּכְתֵּ֑שׁ כִּ֤י נִדְמָה֙ כָּל עַ֣ם כְּנַ֔עַן נִכְרְת֖וּ כָּל נְטִ֥ילֵי כָֽסֶף׃",
+        "LXX": "θρηνήσατε, οἱ κατοικοῦντες τὴν κατακεκομμένην, ὅτι ὡμοιώθη πᾶς ὁ λαὸς Χανάαν, ἐξωλεθρεύθησαν πάντες οἱ ἐπηρμένοι ἀργυρίῳ.",
+        "SYN": "Рыдайте, жители нижней части города, ибо исчезнет весь торговый народ и истреблены будут обремененные серебром.",
+        "NEO": "Gémissez, habitants du Mortier, car tout le peuple chananéen est anéanti, tous ceux qui sont chargés d’argent sont exterminés.",
+        "NAB": "Wail, O inhabitants of the Mortar! for all the merchants will be destroyed, all who weigh out silver, done away with.",
+        "VAT_ES": "Giman, habitantes del Mortero, porque todos los mercaderes han sido aniquilados, y han sido extirpados todos los que pesan la plata.",
+        "CEI": "Urlate, abitanti del Mortaio, poiché tutta la turba dei trafficanti è finita, tutti i pesatori d'argento sono sterminati."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֙ בָּ/עֵ֣ת הַ/הִ֔יא אֲחַפֵּ֥שׂ אֶת יְרוּשָׁלִַ֖ם בַּ/נֵּר֑וֹת וּ/פָקַדְתִּ֣י עַל הָ/אֲנָשִׁ֗ים הַ/קֹּֽפְאִים֙ עַל שִׁמְרֵי/הֶ֔ם הָ/אֹֽמְרִים֙ בִּ/לְבָבָ֔/ם לֹֽא יֵיטִ֥יב יְהוָ֖ה וְ/לֹ֥א יָרֵֽעַ׃",
+        "LXX": "καὶ ἔσται ἐν τῇ ἡμέρᾳ ἐκείνῃ ἐξερευνήσω τὴν Ἰερυσαλὴμ μετὰ λύχνου, καὶ ἐκδικήσω ἐπὶ τοὺς ἄνδρας τοὺς καταφρονοῦντας ἐπὶ τὰ φυλάγματα αὐτῶν· οἱ δὲ λέγοντες ἐν ταῖς καρδίαις αὐτῶν Οὐ μὴ ἀγαθοποιήσῃ Κύριος οὐδὲ μὴ κακώσῃ,",
+        "SYN": "И будет в то время: Я со светильником осмотрю Иерусалим и накажу тех, которые сидят на дрожжах своих и говорят в сердце своем: \"не делает Господь ни добра, ни зла\".",
+        "NEO": "Et il arrivera en ce temps-là : Je fouillerai Jérusalem avec des lanternes, et je châtierai les hommes figés sur leur lie, qui disent en leur cœur : « \\+w Yahweh|strong=\"H3068\"\\+w** ne fait ni bien ni mal ! »",
+        "NAB": "At that time I will explore Jerusalem with lamps; I will punish the men who thicken on their lees, Who say in their hearts, \"Neither good nor evil can the LORD do.\"",
+        "VAT_ES": "En aquel tiempo yo escudriñaré con lámparas a Jerusalén y pediré cuenta a los hombres que se sientan sobre sus heces, los que dicen en su corazón: «El Señor no hace ni bien ni mal».",
+        "CEI": "In quel tempo perlustrerò Gerusalemme con lanterne e farò giustizia di quegli uomini che riposando sulle loro fecce pensano: \"Il Signore non fa né bene né male\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֤ה חֵילָ/ם֙ לִ/מְשִׁסָּ֔ה וּ/בָתֵּי/הֶ֖ם לִ/שְׁמָמָ֑ה וּ/בָנ֤וּ בָתִּים֙ וְ/לֹ֣א יֵשֵׁ֔בוּ וְ/נָטְע֣וּ כְרָמִ֔ים וְ/לֹ֥א יִשְׁתּ֖וּ אֶת יֵינָֽ/ם׃",
+        "LXX": "καὶ ἔσται ἡ δύναμις αὐτῶν εἰς διαρπαγήν, καὶ οἱ οἶκοι αὐτῶν εἰς ἀφανισμόν· καὶ οἰκοδομήσουσιν οἰκίας καὶ οὐ μὴ κατοικήσουσιν ἐν αὐταῖς, καὶ καταφυτεύσουσιν ἀμπελῶνας καὶ οὐ μὴ πίωσιν τὸν οἶνον αὐτῶν.",
+        "SYN": "И обратятся богатства их в добычу и домы их - в запустение; они построят домы, а жить в них не будут, насадят виноградники, а вина из них не будут пить.",
+        "NEO": "Leurs biens seront livrés au pillage, et leurs maisons à la dévastation ; ils bâtiront des maisons, et ils n’y habiteront point ; ils planteront des vignes, et ils n’en boiront pas le vin.",
+        "NAB": "Their wealth shall be given to pillage and their houses to devastation; They will build houses, but shall not dwell in them, plant vineyards, but not drink their wine,",
+        "VAT_ES": "Entonces, su riqueza será entregada al saqueo y sus casas, a la desolación; construirán casas y no las habitarán, plantarán viñas y no beberán su vino.",
+        "CEI": "I loro beni saranno saccheggiati e le loro case distrutte. Hanno costruito case ma non le abiteranno, hanno piantato viti, ma non ne berranno il vino."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "קָר֤וֹב יוֹם יְהוָה֙ הַ/גָּד֔וֹל קָר֖וֹב וּ/מַהֵ֣ר מְאֹ֑ד ק֚וֹל י֣וֹם יְהוָ֔ה מַ֥ר צֹרֵ֖חַ שָׁ֥ם גִּבּֽוֹר׃",
+        "LXX": "Ὅτι ἐγγὺς ἡμέρα Κυρίου ἡ μεγάλη, ἐγγὺς καὶ ταχεῖα σφόδρα· φωνὴ ἡμέρας Κυρίου πικρὰ καὶ σκληρὰ τέτακται, δυνατή.",
+        "SYN": "Близок великий день Господа, близок, и очень поспешает: уже слышен голос дня Господня; горько возопиет тогда и самый храбрый!",
+        "NEO": "Il est proche le grand jour de \\+w Yahweh|strong=\"H3068\"\\+w**, il est proche, il vient en toute hâte ! On l’entend venir, le jour de \\+w Yahweh|strong=\"H3068\"\\+w** ! L’homme brave y poussera des cris amers.",
+        "NAB": "Near is the great day of the LORD, near and very swiftly coming, Hark, the day of the LORD! bitter, then, the warrior's cry.",
+        "VAT_ES": "&iexcl;Está cerca el gran Día del Señor! &iexcl;Está cerca y llega rápidamente! &iexcl;Qué amargo es el clamor del Día del Señor! &iexcl;Hasta el valeroso lanza un grito estridente!",
+        "CEI": "È vicino il gran giorno del Signore, è vicino e avanza a grandi passi. Una voce: Amaro è il giorno del Signore! anche un prode lo grida."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "י֥וֹם עֶבְרָ֖ה הַ/יּ֣וֹם הַ/ה֑וּא י֧וֹם צָרָ֣ה וּ/מְצוּקָ֗ה י֤וֹם שֹׁאָה֙ וּ/מְשׁוֹאָ֔ה י֥וֹם חֹ֨שֶׁךְ֙ וַ/אֲפֵלָ֔ה י֥וֹם עָנָ֖ן וַ/עֲרָפֶֽל׃",
+        "LXX": "ἡμέρα ὀργῆς, ἡ ἡμέρα ἐκείνη, ἡμέρα θλίψεως καὶ ἀνάγκης, ἡμέρα ἀωρίας καὶ ἀφανισμοῦ, ἡμέρα σκότους καὶ γνόφου, ἡμέρα νεφέλης καὶ ὁμίχλης,",
+        "SYN": "День гнева - день сей, день скорби и тесноты, день опустошения и разорения, день тьмы и мрака, день облака и мглы,",
+        "NEO": "C’est un jour de fureur que ce jour-là, un jour d’angoisse et d’affliction, un jour de désolation et de ruine, un jour de ténèbres et d’obscurité, un jour de nuages et d’épais brouillards,",
+        "NAB": "A day of wrath is that day a day of anguish and distress, A day of destruction and desolation, a day of darkness and gloom, A day of thick black clouds,",
+        "VAT_ES": "&iexcl;Día de ira será aquel día, día de angustia y aflicción, día de ruina y desolación, día de tinieblas y oscuridad, día nublado y de sombríos nubarrones,",
+        "CEI": "\"Giorno d'ira quel giorno, giorno di angoscia e di afflizione, giorno di rovina e di sterminio, giorno di tenebre e di caligine, giorno di nubi e di oscurità,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "י֥וֹם שׁוֹפָ֖ר וּ/תְרוּעָ֑ה עַ֚ל הֶ/עָרִ֣ים הַ/בְּצֻר֔וֹת וְ/עַ֖ל הַ/פִּנּ֥וֹת הַ/גְּבֹהֽוֹת׃",
+        "LXX": "ἡμέρα σάλπιγγος καὶ κραυγῆς ἐπὶ τὰς πόλεις τὰς ὀχυρὰς καὶ ἐπὶ τὰς γωνίας τὰς ὑψηλάς.",
+        "SYN": "день трубы и бранного крика против укрепленных городов и высоких башен.",
+        "NEO": "un jour de trompette et d’alarme, sur les villes fortes et les créneaux élevés.",
+        "NAB": "a day of trumpet blasts and battle alarm Against fortified cities, against battlements on high.",
+        "VAT_ES": "día de sonidos de trompeta y de gritos de guerra contra las ciudades fortificadas y contra las almenas elevadas!",
+        "CEI": "giorno di squilli di tromba e d'allarme sulle fortezze e sulle torri d'angolo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/הֲצֵרֹ֣תִי לָ/אָדָ֗ם וְ/הָֽלְכוּ֙ כַּֽ/עִוְרִ֔ים כִּ֥י לַֽ/יהוָ֖ה חָטָ֑אוּ וְ/שֻׁפַּ֤ךְ דָּמָ/ם֙ כֶּֽ/עָפָ֔ר וּ/לְחֻמָ֖/ם כַּ/גְּלָלִֽים׃",
+        "LXX": "καὶ ἐκθλίψω τοὺς ἀνθρώπους, καὶ πορεύσονται ὡς τυφλοί, ὅτι τῷ κυρίῳ ἐξήμαρτον· καὶ ἐκχεεῖ τὸ αἷμα αὐτῶν ὡς χοῦν, καὶ τὰς σάρκας αὐτῶν ὡς βόλβιτα·",
+        "SYN": "И Я стесню людей, и они будут ходить, как слепые, потому что они согрешили против Господа, и разметана будет кровь их, как прах, и плоть их - как помет.",
+        "NEO": "Je mettrai les hommes dans la détresse, et ils marcheront comme des aveugles, parce qu’ils ont péché contre \\+w Yahweh|strong=\"H3068\"\\+w** ; leur sang sera répandu comme la poussière ; et leur chair comme du fumier.",
+        "NAB": "I will hem men in till they walk like the blind, because they have sinned against the LORD; And their blood shall be poured out like dust, and their brains like dung.",
+        "VAT_ES": "Yo llenaré a los hombres de angustia, y ellos caminarán como ciegos, porque han pecado contra el Señor ; su sangre será derramada como polvo y sus entrañas, como estiércol:",
+        "CEI": "Metterò gli uomini in angoscia e cammineranno come ciechi, perchè han peccato contro il Signore; il loro sangue sarà sparso come polvere e le loro viscere come escrementi."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "גַּם כַּסְפָּ֨/ם גַּם זְהָבָ֜/ם לֹֽא יוּכַ֣ל לְ/הַצִּילָ֗/ם בְּ/יוֹם֙ עֶבְרַ֣ת יְהוָ֔ה וּ/בְ/אֵשׁ֙ קִנְאָת֔/וֹ תֵּאָכֵ֖ל כָּל הָ/אָ֑רֶץ כִּֽי כָלָ֤ה אַךְ נִבְהָלָה֙ יַֽעֲשֶׂ֔ה אֵ֥ת כָּל יֹשְׁבֵ֖י הָ/אָֽרֶץ׃",
+        "LXX": "καὶ τὸ ἀργύριον αὐτῶν καὶ τὸ χρυσίον αὐτῶν οὐ μὴ δύνηται ἐξελέσθαι αὐτοὺς ἐν ἡμέρᾳ ὀργῆς Κυρίου. καὶ ἐν πυρί ζήλους αὐτοῦ καταναλωθήσεται πᾶσα ἡ γῆ, διότι συντέλειαν καὶ σπουδὴν ποιήσει ἐπὶ πάντας τούς κατοικοῦντας τὴν γῆν.",
+        "SYN": "Ни серебро их, ни золото их не может спасти их в день гнева Господа, и огнем ревности Его пожрана будет вся эта земля, ибо истребление, и притом внезапное, совершит Он над всеми жителями земли.",
+        "NEO": "Ni leur argent, ni leur or ne pourront les délivrer ; au jour de la fureur de \\+w Yahweh|strong=\"H3068\"\\+w** ; par le feu de sa jalousie, toute la terre sera dévorée ; car il fera une destruction totale, une ruine soudaine, de tous les habitants de la terre.",
+        "NAB": "Neither their silver nor their gold shall be able to save them on the day of the LORD'S wrath, When in the fire of his jealousy all the earth shall be consumed. For he shall make an end, yes, a sudden end, of all who live on the earth.",
+        "VAT_ES": "ni su plata ni su oro podrán librarlos. En el Día de la ira del Señor y por el fuego de sus celos, será devorada toda la tierra; porque él hará un terrible exterminio de todos los habitantes de la tierra.",
+        "CEI": "Neppure il loro argento, neppure il loro oro potranno salvarli\". Nel giorno dell'ira del Signore e al fuoco della sua gelosia tutta la terra sarà consumata, poiché farà improvvisa distruzione di tutti gli abitanti della terra."
+      }
+    }
+  }
+}

@@ -1,0 +1,586 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IERE_036",
+  "book_key": "IERE",
+  "sequence": 36,
+  "chapter_in": {
+    "MT": 36,
+    "VUL": 36,
+    "LXX": 36
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ בַּ/שָּׁנָ֣ה הָ/רְבִיעִ֔ת לִ/יהוֹיָקִ֥ים בֶּן יֹאשִׁיָּ֖הוּ מֶ֣לֶךְ יְהוּדָ֑ה הָיָ֞ה הַ/דָּבָ֤ר הַ/זֶּה֙ אֶֽל יִרְמְיָ֔הוּ מֵ/אֵ֥ת יְהוָ֖ה לֵ/אמֹֽר׃",
+        "LXX": "Καὶ οὗτοι οἱ λόγοι τῆς βίβλου οὓς ἀπέστειλεν Ἰερεμίας ἐξ Ἰερουσαλὴμ πρὸς τοὺς πρεσβυτέρους τῆς ἀποικίας καὶ πρὸς τοὺς ἱερεῖς καὶ πρὸς τοὺς ψευδοπροφήτας, ἐπιστολὴν εἰς Βαβυλῶνα τῇ ἀποικίᾳ, καὶ πρὸς ἅπαντα τὸν λαόν,",
+        "VUL": "Et factum est in anno quarto Joakim filii Josiæ regis Juda, factum est verbum hoc ad Jeremiam a Domino, dicens :",
+        "SYN": "В четвертый год Иоакима, сына Иосии, царя Иудейского, было такое слово к Иеремии от Господа:",
+        "NEO": "La quatrième année de Joakim, fils de Josias, roi de Juda, cette parole fut adressée à Jérémie de la part de \\+w Yahweh|strong=\"H3068\"\\+w**, en ces termes :",
+        "NAB": "In the fourth year of Jehoiakim, son of Josiah, king of Judah, this word came to Jeremiah from the LORD:",
+        "VAT_ES": "El cuarto año de Joaquím, hijo de Josías, rey de Judá, llegó a Jeremías esta palabra de parte del Señor :",
+        "CEI": "Nel quarto anno di Ioiakìm figlio di Giosia, re di Giuda, questa parola fu rivolta a Geremia da parte del Signore:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "קַח לְ/ךָ֮ מְגִלַּת סֵפֶר֒ וְ/כָתַבְתָּ֣ אֵלֶ֗י/הָ אֵ֣ת כָּל הַ/דְּבָרִ֞ים אֲשֶׁר דִּבַּ֧רְתִּי אֵלֶ֛י/ךָ עַל יִשְׂרָאֵ֥ל וְ/עַל יְהוּדָ֖ה וְ/עַל כָּל הַ/גּוֹיִ֑ם מִ/יּ֞וֹם דִּבַּ֤רְתִּי אֵלֶ֨י/ךָ֙ מִ/ימֵ֣י יֹאשִׁיָּ֔הוּ וְ/עַ֖ד הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "ὕστερον ἐξελθόντος Ἰεχονίου τοῦ βασιλέως καὶ τῆς βασιλίσσης καὶ τῶν εὐνούχων καὶ παντὸς ἐλευθέρου καὶ δεσμώτου καὶ τεχνίτου ἐξ Ἰερουσαλήμ,",
+        "VUL": "Tolle volumen libri, et scribes in eo omnia verba quæ locutus sum tibi adversum Israël et Judam, et adversum omnes gentes, a die qua locutus sum ad te ex diebus Josiæ usque ad diem hanc :",
+        "SYN": "возьми себе книжный свиток и напиши в нем все слова, которые Я говорил тебе об Израиле и об Иуде и о всех народах с того дня, как Я начал говорить тебе, от дней Иосии до сего дня;",
+        "NEO": "« Prends un volume, et tu y écriras toutes les paroles que je t’ai dites contre Israël, contre Juda et contre toutes les nations, depuis le jour où je t’ai parlé, depuis les jours de Josias, jusqu’aujourd’hui.",
+        "NAB": "Take a scroll and write on it all the words I have spoken to you against Israel, Judah, and all the nations, from the day I first spoke to you, in the days of Josiah, until today.",
+        "VAT_ES": "Toma un rollo y escribe en él todas las palabras que yo te he dicho acerca de Israel, de Judá y de todas las naciones, desde que comencé a hablarte en tiempos de Josías, hasta el día de hoy.",
+        "CEI": "\"Prendi un rotolo da scrivere e scrivici tutte le cose che ti ho detto riguardo a Gerusalemme, a Giuda e a tutte le nazioni, da quando cominciai a parlarti dal tempo di Giosia fino ad oggi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אוּלַ֤י יִשְׁמְעוּ֙ בֵּ֣ית יְהוּדָ֔ה אֵ֚ת כָּל הָ֣/רָעָ֔ה אֲשֶׁ֛ר אָנֹכִ֥י חֹשֵׁ֖ב לַ/עֲשׂ֣וֹת לָ/הֶ֑ם לְמַ֣עַן יָשׁ֗וּבוּ אִ֚ישׁ מִ/דַּרְכּ֣/וֹ הָ/רָעָ֔ה וְ/סָלַחְתִּ֥י לַ/עֲוֺנָ֖/ם וּ/לְ/חַטָּאתָֽ/ם׃",
+        "LXX": "ἐν χειρὶ Ἐλεασὰν υἱοῦ Σαφὰν καὶ Γαμαρίου υἱοῦ Χελκίου, ὃν ἀπέστειλεν Σεδεκίας βασιλεὺς Ἰούδα πρὸς βασιλέα Βαβυλῶνος εἰς Βαβυλῶνα, λέγων",
+        "VUL": "si forte, audiente domo Juda universa mala quæ ego cogito facere eis, revertatur unusquisque a via sua pessima, et propitius ero iniquitati et peccato eorum.",
+        "SYN": "может быть, дом Иудин услышит о всех бедствиях, какие Я помышляю сделать им, чтобы они обратились каждый от злого пути своего, чтобы Я простил неправду их и грех их.",
+        "NEO": "Peut-être que la maison de Juda entendra tout le mal que j’ai dessein de leur faire, afin qu’ils se détournent chacun de sa mauvaise voie, et que je pardonne leur iniquité et leur péché. »",
+        "NAB": "Perhaps, when the house of Judah hears all the evil I have in mind to do to them, they will turn back each from his evil way, so that I may forgive their wickedness and their sin.",
+        "VAT_ES": "Tal vez los de la casa de Judá, al enterarse de todo el mal que tengo pensado hacerles, se vuelvan cada uno de su mal camino, y así yo pueda perdonarles su iniquidad y su pecado.",
+        "CEI": "Forse quelli della casa di Giuda, sentendo tutto il male che mi propongo di fare loro, abbandoneranno ciascuno la sua condotta perversa e allora perdonerò le loro iniquità e i loro peccati\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֣א יִרְמְיָ֔הוּ אֶת בָּר֖וּךְ בֶּן נֵֽרִיָּ֑ה וַ/יִּכְתֹּ֨ב בָּר֜וּךְ מִ/פִּ֣י יִרְמְיָ֗הוּ אֵ֣ת כָּל דִּבְרֵ֧י יְהוָ֛ה אֲשֶׁר דִּבֶּ֥ר אֵלָ֖י/ו עַל מְגִלַּת סֵֽפֶר׃",
+        "LXX": "Οὕτως εἶπεν Κύριος ὁ θεὸς Ἰσραὴλ ἐπὶ τὴν ἀποικίαν ἣν ἀπῴκισα ἀπὸ Ἰερουσαλήμ",
+        "VUL": "Vocavit ergo Jeremias Baruch filium Neriæ : et scripsit Baruch ex ore Jeremiæ omnes sermones Domini quos locutus est ad eum, in volumine libri :",
+        "SYN": "И призвал Иеремия Варуха, сына Нирии, и написал Варух в книжный свиток из уст Иеремии все слова Господа, которые Он говорил ему.",
+        "NEO": "Jérémie appela donc Baruch, fils de Néria ; et Baruch écrivit dans le volume, sous la dictée de Jérémie, toutes les paroles que \\+w Yahweh|strong=\"H3068\"\\+w** avait dites à celui-ci.",
+        "NAB": "So Jeremiah called Baruch, son of Neriah, who wrote down on a scroll, as Jeremiah dictated, all the words which the LORD had spoken to him.",
+        "VAT_ES": "Jeremías llamó a Baruc, hijo de Nerías, y Baruc escribió en un rollo, bajo el dictado de Jeremías, todas las palabras que el Señor le había dicho.",
+        "CEI": "Geremia chiamò Baruc figlio di Neria e Baruc scrisse, sotto la dettatura di Geremia, tutte le cose che il Signore gli aveva detto su un rotolo per scrivere."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יְצַוֶּ֣ה יִרְמְיָ֔הוּ אֶת בָּר֖וּךְ לֵ/אמֹ֑ר אֲנִ֣י עָצ֔וּר לֹ֣א אוּכַ֔ל לָ/ב֖וֹא בֵּ֥ית יְהוָֽה׃",
+        "LXX": "Οἰκοδομήσατε οἴκους καὶ κατοικήσατε, καὶ φυτεύσατε παραδείσους καὶ φάγετε τοὺς καρποὺς αὐτῶν,",
+        "VUL": "et præcepit Jeremias Baruch, dicens : Ego clausus sum, nec valeo ingredi domum Domini.",
+        "SYN": "И приказал Иеремия Варуху и сказал: я заключен и не могу идти в дом Господень;",
+        "NEO": "Et Jérémie donna cet ordre à Baruch, en disant : « Je suis empêché, et ne puis aller dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Then Jeremiah charged Baruch: I cannot go to the house of the LORD; I am prevented from doing so.",
+        "VAT_ES": "Luego Jeremías dio esta orden a Baruc: «Yo estoy impedido; no puedo entrar en la Casa del Señor.",
+        "CEI": "Quindi Geremia ordinò a Baruc: \"Io ne sono impedito e non posso andare nel tempio del Signore."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וּ/בָאתָ֣ אַתָּ֡ה וְ/קָרָ֣אתָ בַ/מְּגִלָּ֣ה אֲשֶׁר כָּתַֽבְתָּ מִ/פִּ/י֩ אֶת דִּבְרֵ֨י יְהוָ֜ה בְּ/אָזְנֵ֥י הָ/עָ֛ם בֵּ֥ית יְהוָ֖ה בְּ/י֣וֹם צ֑וֹם וְ/גַ֨ם בְּ/אָזְנֵ֧י כָל יְהוּדָ֛ה הַ/בָּאִ֥ים מֵ/עָרֵי/הֶ֖ם תִּקְרָאֵֽ/ם׃",
+        "LXX": "καὶ λάβετε γυναῖκας καὶ τεκνοποιήσατε υἱοὺς καὶ θυγατέρας, καὶ λάβετε τοῖς υἱοῖς ὑμῶν γυναῖκας, καὶ τὰς θυγατέρας ὑμῶν ἀνδράσιν δότε, καὶ πληθύνεσθε καὶ μὴ σμικρυνθῆτε,",
+        "VUL": "Ingredere ergo tu, et lege de volumine in quo scripsisti ex ore meo verba Domini, audiente populo in domo Domini, in die jejunii : insuper et audiente universo Juda qui veniunt de civitatibus suis, leges eis,",
+        "SYN": "итак иди ты и прочитай написанные тобою в свитке с уст моих слова Господни вслух народа в доме Господнем в день поста, также и вслух всех Иудеев, пришедших из городов своих, прочитай их;",
+        "NEO": "Tu iras donc, toi, et tu liras, dans le volume que tu as écrit sous ma dictée, les paroles de \\+w Yahweh|strong=\"H3068\"\\+w** aux oreilles du peuple, dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, le jour du jeûne ; tu les liras aussi aux oreilles de tous ceux de Juda qui seront venus de leurs villes.",
+        "NAB": "Do you go on the fast day and read publicly in the LORD'S house the LORD'S words from the scroll you wrote at my dictation; read them also to all the men of Judah who come up from their cities.",
+        "VAT_ES": "Por eso irás tú, y leerás las palabras del Señor en el rollo que has escrito bajo mi dictado. Lo harás a oídos del pueblo, en la Casa del Señor, en el día del ayuno; y que lo oigan también todos los hombres de Judá que vengan de sus ciudades.",
+        "CEI": "Andrai dunque tu a leggere, nel rotolo che hai scritto sotto la mia dettatura, le parole del Signore, facendole udire al popolo nel tempio del Signore in un giorno di digiuno; le leggerai anche ad alta voce a tutti quelli di Giuda che vengono dalle loro città."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אוּלַ֞י תִּפֹּ֤ל תְּחִנָּתָ/ם֙ לִ/פְנֵ֣י יְהוָ֔ה וְ/יָשֻׁ֕בוּ אִ֖ישׁ מִ/דַּרְכּ֣/וֹ הָ/רָעָ֑ה כִּֽי גָד֤וֹל הָ/אַף֙ וְ/הַ֣/חֵמָ֔ה אֲשֶׁר דִּבֶּ֥ר יְהוָ֖ה אֶל הָ/עָ֥ם הַ/זֶּֽה׃",
+        "LXX": "καὶ ζητήσατε εἰς εἰρήνην τῆς γῆς εἰς ἣν ἀπῴκισα ὑμᾶς ἐκεῖ, καὶ προσεύξασθε περὶ αὐτῶν πρὸς Κύριον, ὅτι ἐν εἰρήνῃ αὐτῆς εἰρήνη ὑμῶν.",
+        "VUL": "si forte cadat oratio eorum in conspectu Domini, et revertatur unusquisque a via sua pessima : quoniam magnus furor et indignatio est quam locutus est Dominus adversus populum hunc.",
+        "SYN": "может быть, они вознесут смиренное моление пред лице Господа и обратятся каждый от злого пути своего; ибо велик гнев и негодование, которое объявил Господь на народ сей.",
+        "NEO": "Peut-être que leur supplication arrivera devant \\+w Yahweh|strong=\"H3068\"\\+w**, et qu’ils se détourneront chacun de sa mauvaise voie ; car grande est la colère et l’indignation que \\+w Yahweh|strong=\"H3068\"\\+w** a exprimées contre ce peuple. »",
+        "NAB": "Perhaps they will lay their supplication before the LORD and will all turn back from their evil way; for great is the fury of anger with which the LORD has threatened this people.",
+        "VAT_ES": "Tal vez su plegaria llegue hasta el Señor, y se vuelva cada uno de su mal camino. Porque es grande la ira y el furor con que el Señor ha amenazado a este pueblo».",
+        "CEI": "Forse si umilieranno con suppliche dinanzi al Signore e abbandoneranno ciascuno la sua condotta perversa, perché grande è l'ira e il furore che il Signore ha espresso verso questo popolo\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יַּ֗עַשׂ בָּרוּךְ֙ בֶּן נֵ֣רִיָּ֔ה כְּ/כֹ֥ל אֲשֶׁר צִוָּ֖/הוּ יִרְמְיָ֣הוּ הַ/נָּבִ֑יא לִ/קְרֹ֥א בַ/סֵּ֛פֶר דִּבְרֵ֥י יְהוָ֖ה בֵּ֥ית יְהֹוָֽה׃",
+        "LXX": "ὅτι οὕτως εἶπεν Κύριος Μὴ ἀναπειθέτωσαν ὑμᾶς οἱ ψευδοπροφῆται οἱ ἐν ὑμῖν, καὶ μὴ ἀναπειθέτωσαν ὑμᾶς οἱ μάντεις ὑμῶν, καὶ μὴ ἀκούετε εἰς τὰ ἐνύπνια ὑμῶν ἃ ὑμεῖς ἐνυπνιάζεσθε·",
+        "VUL": "Et fecit Baruch filius Neriæ juxta omnia quæ præceperat ei Jeremias propheta, legens ex volumine sermones Domini in domo Domini.",
+        "SYN": "Варух, сын Нирии, сделал все, что приказал ему пророк Иеремия, чтобы слова Господни, написанные в свитке, прочитать в доме Господнем.",
+        "NEO": "Et Baruch, fils de Néria, fit tout ce que Jérémie le prophète lui avait commandé, lisant dans le livre les paroles de \\+w Yahweh|strong=\"H3068\"\\+w**, dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Baruch, son of Neriah, did everything the prophet Jeremiah commanded; from the book-scroll he read the LORD'S words in the LORD'S house.",
+        "VAT_ES": "Baruc, hijo de Nerías, hizo exactamente lo que le había ordenado el profeta Jeremías, leyendo en el rollo las palabras del Señor, en la Casa del Señor.",
+        "CEI": "Baruc figlio di Neria fece quanto gli aveva comandato il profeta Geremia, leggendo sul rotolo le parole del Signore nel tempio."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י בַ/שָּׁנָ֣ה הַ֠/חֲמִשִׁית לִ/יהוֹיָקִ֨ים בֶּן יֹאשִׁיָּ֤הוּ מֶֽלֶךְ יְהוּדָה֙ בַּ/חֹ֣דֶשׁ הַ/תְּשִׁעִ֔י קָרְא֨וּ צ֜וֹם לִ/פְנֵ֧י יְהוָ֛ה כָּל הָ/עָ֖ם בִּ/ירֽוּשָׁלִָ֑ם וְ/כָל הָ/עָ֗ם הַ/בָּאִ֛ים מֵ/עָרֵ֥י יְהוּדָ֖ה בִּ/ירוּשָׁלִָֽם׃",
+        "LXX": "ὅτι ἄδικα αὐτοὶ προφητεύουσιν ὑμῖν ἐπὶ τῷ ὀνόματί μου καὶ οὐκ ἀπέστειλα αὐτούς.",
+        "VUL": "Factum est autem in anno quinto Joakim filii Josiæ regis Juda, in mense nono : prædicaverunt jejunium in conspectu Domini omni populo in Jerusalem, et universæ multitudini quæ confluxerat de civitatibus Juda in Jerusalem.",
+        "SYN": "В пятый год Иоакима, сына Иосии, царя Иудейского, в девятом месяце объявили пост пред лицем Господа всему народу в Иерусалиме и всему народу, пришедшему в Иерусалим из городов Иудейских.",
+        "NEO": "La cinquième année de Joakim, fils de Josias, roi de Juda, le neuvième mois, on publia un jeûne devant \\+w Yahweh|strong=\"H3068\"\\+w**, pour tout le peuple de Jérusalem et pour tout le peuple qui viendrait des villes de Juda à Jérusalem.",
+        "NAB": "In the ninth month, in the fifth year of Jehoiakim, son of Josiah, king of Judah, a fast to placate the LORD was proclaimed for all the people of Jerusalem and all who came from Judah's cities to Jerusalem.",
+        "VAT_ES": "El quinto año de Joaquím, hijo de Josías, en el noveno mes, se convocó para un ayuno del Señor a todo el pueblo de Jerusalén y a todo el pueblo que llegaba de las ciudades de Judá a Jerusalén.",
+        "CEI": "Nel quinto anno di Ioiakìm figlio di Giosia, re di Giuda, nel nono mese, fu indetto un digiuno davanti al Signore per tutto il popolo di Gerusalemme e per tutto il popolo che era venuto dalle città di Giuda a Gerusalemme."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֨א בָר֥וּךְ בַּ/סֵּ֛פֶר אֶת דִּבְרֵ֥י יִרְמְיָ֖הוּ בֵּ֣ית יְהוָ֑ה בְּ/לִשְׁכַּ֡ת גְּמַרְיָהוּ֩ בֶן שָׁפָ֨ן הַ/סֹּפֵ֜ר בֶּ/חָצֵ֣ר הָ/עֶלְי֗וֹן פֶּ֣תַח שַׁ֤עַר בֵּית יְהוָה֙ הֶֽ/חָדָ֔שׁ בְּ/אָזְנֵ֖י כָּל הָ/עָֽם׃",
+        "LXX": "ὅτι οὕτως εἶπεν Κύριος Ὅταν μέλλῃ πληροῦσθαι Βαβυλῶνι ἑβδομήκοντα ἔτη, ἐπισκέψομαι ὑμᾶς καὶ ἐπιστήσω τοὺς λόγους μου ἐφ’ ὑμᾶς τοῦ τὸν λαὸν ὑμῶν ἀποστρέψαι εἰς τὸν τόπον τοῦτον,",
+        "VUL": "Legitque Baruch ex volumine sermones Jeremiæ in domo Domini, in gazophylacio Gamariæ filii Saphan scribæ, in vestibulo superiori, in introitu portæ novæ domus Domini, audiente omni populo.",
+        "SYN": "И прочитал Варух написанные в свитке слова Иеремии в доме Господнем, в комнате Гемарии, сына Сафанова, писца, на верхнем дворе, у входа в новые ворота дома Господня, вслух всего народа.",
+        "NEO": "Alors Baruch lut dans le livre les paroles de \\+w Yahweh|strong=\"H3068\"\\+w**, dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, dans la chambre de Gamarias, fils de Saphan, le secrétaire, dans le parvis supérieur, à l’entrée de la porte Neuve de la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, aux oreilles de tout le peuple.",
+        "NAB": "It was in the room of Gemariah, son of the scribe Shaphan, in the upper court of the LORD'S house, at the entrance of the New Temple-Gate, that Baruch publicly read the words of Jeremiah from his book.",
+        "VAT_ES": "Entonces Baruc leyó en el rollo las palabras de Jeremías, en la Casa del Señor, en la sala de Guemarías, hijo de Safán, el secretario, en el atrio superior, a la entrada de la puerta Nueva de la Casa del Señor ; y lo hizo en presencia de todo el pueblo.",
+        "CEI": "Baruc dunque lesse nel libro facendo udire a tutto il popolo le parole di Geremia, nel tempio del Signore, nella stanza di Ghemarià, figlio di Safàn lo scriba, nel cortile superiore presso l'ingresso della Porta Nuova del tempio del Signore."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ֠/יִּשְׁמַ֗ע מִכָ֨יְהוּ בֶן גְּמַרְיָ֧הוּ בֶן שָׁפָ֛ן אֶת כָּל דִּבְרֵ֥י יְהוָ֖ה מֵ/עַ֥ל הַ/סֵּֽפֶר׃",
+        "LXX": "καὶ λογιοῦμαι ἐφ’ ὑμᾶς λογισμὸν εἰρήνης καὶ οὐ κακά, τοῦ δοῦναι ὑμῖν ταῦτα.",
+        "VUL": "Cumque audisset Michæas filius Gamariæ filii Saphan omnes sermones Domini ex libro,",
+        "SYN": "Михей, сын Гемарии, сына Сафанова, слышал все слова Господни, _написанные_ в свитке,",
+        "NEO": "Michée, fils de Gamarias, fils de Saphan, entendit toutes les paroles de \\+w Yahweh|strong=\"H3068\"\\+w** contenues dans le livre.",
+        "NAB": "Now Micaiah, son of Gemariah, son of Shaphan, heard all the words of the LORD read from the book.",
+        "VAT_ES": "Miqueas, hijo de Guemarías, hijo de Safán, al oír todas las palabras del Señor escritas en el rollo,",
+        "CEI": "Michea figlio di Ghemarià, figlio di Safàn, udite tutte le parole del Signore lette dal libro,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֤רֶד בֵּית הַ/מֶּ֨לֶךְ֙ עַל לִשְׁכַּ֣ת הַ/סֹּפֵ֔ר וְ/הִ֨נֵּה שָׁ֔ם כָּל הַ/שָּׂרִ֖ים יֽוֹשְׁבִ֑ים אֱלִישָׁמָ֣ע הַ/סֹּפֵ֡ר וּ/דְלָיָ֣הוּ בֶן שְׁ֠מַעְיָהוּ וְ/אֶלְנָתָ֨ן בֶּן עַכְבּ֜וֹר וּ/גְמַרְיָ֧הוּ בֶן שָׁפָ֛ן וְ/צִדְקִיָּ֥הוּ בֶן חֲנַנְיָ֖הוּ וְ/כָל הַ/שָּׂרִֽים׃",
+        "LXX": "καὶ προσεύξασθε πρὸς μέ, καὶ εἰσακούσομαι ὑμῶν·",
+        "VUL": "descendit in domum regis, ad gazophylacium scribæ, et ecce ibi omnes principes sedebant : Elisama scriba, et Dalaias filius Semeiæ, et Elnathan filius Achobor, et Gamarias filius Saphan, et Sedecias filius Hananiæ, et universi principes :",
+        "SYN": "и сошел в дом царя, в комнату царского писца, и вот, там сидели все князья: Елисам, царский писец, и Делаия, сын Семаия, и Елнафан, сын Ахбора, и Гемария, сын Сафана, и Седекия, сын Анании, и все князья;",
+        "NEO": "Il descendit à la maison du roi, dans la chambre du secrétaire ; et voici que là étaient assis tous les chefs, Elisama, le secrétaire, Dalaïas, fils de Séméïas, Elnathan, fils d’Achobor, Gamarias, fils de Saphan, Sédécias, fils de Hananias, et tous les chefs.",
+        "NAB": "So he went down to the king's palace, into the scribe's chamber, where the princes were just then in session: Elishama, the scribe, Delaiah, son of Shemaiah, Elnathan, son of Achbor, Gemariah, son of Shaphan, Zedekiah, son of Hananiah, and the other princes.",
+        "VAT_ES": "bajó a la casa del rey, a la sala del secretario, donde estaban sesionando todos los jefes: Elisamá, el secretario, Delaías, hijo de Semaías, Elnatán, hijo de Acbor, Guemarías, hijo de Safán, Sedecías, hijo de Ananías, y todos los demás jefes.",
+        "CEI": "scese alla reggia nella stanza dello scriba; ed ecco là si trovavano in seduta tutti i capi dignitari: Elisamà lo scriba e Delaià figlio di Semaià, Elnatàn figlio di Acbòr, Ghemarià figlio di Safàn, e Sedecìa figlio di Anania, insieme con tutti i capi."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יַּגֵּ֤ד לָ/הֶם֙ מִכָ֔יְהוּ אֵ֥ת כָּל הַ/דְּבָרִ֖ים אֲשֶׁ֣ר שָׁמֵ֑עַ בִּ/קְרֹ֥א בָר֛וּךְ בַּ/סֵּ֖פֶר בְּ/אָזְנֵ֥י הָ/עָֽם׃",
+        "LXX": "καὶ ἐκζητήσατέ με, καὶ εὑρήσετέ με· ὅτι ζητήσετέ με ἐν ὅλῃ καρδίᾳ ὑμῶν,",
+        "VUL": "et nuntiavit eis Michæas omnia verba quæ audivit, legente Baruch ex volumine in auribus populi.",
+        "SYN": "и пересказал им Михей все слова, которые он слышал, когда Варух читал свиток вслух народа.",
+        "NEO": "Et Michée leur rapporta toutes les paroles qu’il avait entendues lorsque Baruch lisait dans le livre, aux oreilles du peuple.",
+        "NAB": "To them Micaiah reported all that he had heard Baruch read publicly from his book.",
+        "VAT_ES": "Y Miqueas les contó todo lo que había oído cuando Baruc leía en el rollo, delante de todo el pueblo.",
+        "CEI": "Michea riferì loro tutte le parole che aveva udite quando Baruc leggeva nel libro al popolo in ascolto."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלְח֨וּ כָל הַ/שָּׂרִ֜ים אֶל בָּר֗וּךְ אֶת יְהוּדִ֡י בֶּן נְ֠תַנְיָהוּ בֶּן שֶׁלֶמְיָ֣הוּ בֶן כּוּשִׁי֮ לֵ/אמֹר֒ הַ/מְּגִלָּ֗ה אֲשֶׁ֨ר קָרָ֤אתָ בָּ/הּ֙ בְּ/אָזְנֵ֣י הָ/עָ֔ם קָחֶ֥/נָּה בְ/יָדְ/ךָ֖ וָ/לֵ֑ךְ וַ֠/יִּקַּח בָּר֨וּךְ בֶּן נֵרִיָּ֤הוּ אֶת הַ/מְּגִלָּה֙ בְּ/יָד֔/וֹ וַ/יָּבֹ֖א אֲלֵי/הֶֽם׃",
+        "LXX": "καὶ ἐπιφανοῦμαι ὑμῖν.",
+        "VUL": "Miserunt itaque omnes principes ad Baruch Judi filium Nathaniæ filii Selemiæ filii Chusi, dicentes : Volumen ex quo legisti, audiente populo, sume in manu tua, et veni. Tulit ergo Baruch filius Neriæ volumen in manu sua, et venit ad eos :",
+        "SYN": "Тогда все князья послали к Варуху Иегудия, сына Нафании, сына Селемии, сына Хусии, сказать ему: свиток, который ты читал вслух народа, возьми в руку твою и приди. И взял Варух, сын Нирии, свиток в руку свою и пришел к ним.",
+        "NEO": "Alors tous les chefs envoyèrent vers Baruch Judi, fils de Nathanias, fils de Sélémias, fils de Chusi, pour lui dire : « Prends le volume dans lequel tu as lu aux oreilles du peuple, et viens ! » Baruch, fils de Néria, prit le volume et se rendit auprès d’eux.",
+        "NAB": "Thereupon the princes sent Jehudi, son of Nethaniah, son of Shelemiah, son of Cushi, to Baruch with the order: \"Come, and bring with you the scroll you read publicly to the people.\" Scroll in hand, Baruch, son of Neriah, went to them.",
+        "VAT_ES": "Entonces todos los jefes enviaron a Iehudí, hijo de Natanías, hijo de Selemías, hijo de Cusí, para que dijera a Baruc: «Toma el libro que has leído en presencia del pueblo y ven». Baruc, hijo de Nerías, tomo consigo el rollo y se presentó ante ellos.",
+        "CEI": "Allora tutti i capi inviarono da Baruc Iudi figlio di Natania, figlio di Selemia, figlio dell'Etiope, per dirgli: \"Prendi nelle mani il rotolo che leggevi ad alta voce al popolo e vieni\". Baruc figlio di Neria prese il rotolo in mano e si recò da loro."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֣וּ אֵלָ֔י/ו שֵׁ֣ב נָ֔א וּ/קְרָאֶ֖/נָּה בְּ/אָזְנֵ֑י/נוּ וַ/יִּקְרָ֥א בָר֖וּךְ בְּ/אָזְנֵי/הֶֽם׃",
+        "LXX": "Ὅτι εἴπατε Κατέστησεν ἡμῖν Κύριος προφήτας ἐν Βαβυλῶνι·",
+        "VUL": "et dixerunt ad eum : Sede, et lege hæc in auribus nostris. Et legit Baruch in auribus eorum.",
+        "SYN": "Они сказали ему: сядь, и прочитай нам вслух. И прочитал Варух вслух им.",
+        "NEO": "Ils lui dirent : « Assieds-toi, et lis ce livre à nos oreilles ! » Et Baruch le lut à leurs oreilles.",
+        "NAB": "\"Sit down,\" they said to him, \"and read it to us.\" Baruch read it to them,",
+        "VAT_ES": "Ellos le dijeron: «Siéntate y léelo delante de nosotros». Baruc lo leyó delante de ellos.",
+        "CEI": "Ed essi gli dissero: \"Siedi e leggi davanti a noi\". Baruc lesse davanti a loro."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י כְּ/שָׁמְעָ/ם֙ אֶת כָּל הַ/דְּבָרִ֔ים פָּחֲד֖וּ אִ֣ישׁ אֶל רֵעֵ֑/הוּ וַ/יֹּֽאמְרוּ֙ אֶל בָּר֔וּךְ הַגֵּ֤יד נַגִּיד֙ לַ/מֶּ֔לֶךְ אֵ֥ת כָּל הַ/דְּבָרִ֖ים הָ/אֵֽלֶּה׃",
+        "VUL": "Igitur cum audissent omnia verba, obstupuerunt unusquisque ad proximum suum, et dixerunt ad Baruch : Nuntiare debemus regi omnes sermones istos.",
+        "SYN": "Когда они выслушали все слова, то с ужасом посмотрели друг на друга и сказали Варуху: мы непременно перескажем все сии слова царю.",
+        "NEO": "Lorsqu’ils eurent entendu toutes ces paroles, ils se regardèrent avec effroi les uns les autres, et dirent à Baruch : « Il faut que nous rapportions au roi toutes ces paroles. »",
+        "NAB": "and when they heard all its words, they were frightened and said to one another, \"We must certainly tell the king all these things.\"",
+        "VAT_ES": "Y cuando oyeron todas las palabras, temblando, se miraron unos a otros, y exclamaron: «Es preciso que comuniquemos al rey todas estas palabras».",
+        "CEI": "Allora, quando udirono tutte quelle parole, ebbero paura e si dissero l'un l'altro: \"Dobbiamo senz'altro riferire al re tutte queste parole\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/אֶ֨ת בָּר֔וּךְ שָׁאֲל֖וּ לֵ/אמֹ֑ר הַגֶּד נָ֣א לָ֔/נוּ אֵ֗יךְ כָּתַ֛בְתָּ אֶת כָּל הַ/דְּבָרִ֥ים הָ/אֵ֖לֶּה מִ/פִּֽי/ו׃",
+        "VUL": "Et interrogaverunt eum, dicentes : Indica nobis quomodo scripsisti omnes sermones istos ex ore ejus.",
+        "SYN": "И спросили Варуха: скажи же нам, как ты написал все слова сии из уст его?",
+        "NEO": "Puis ils interrogèrent Baruch en ces termes : « Déclare-nous comment tu as écrit toutes ces paroles sorties de sa bouche. »",
+        "NAB": "Then they asked Baruch: \"Tell us, please, how you came to write down all these words.\"",
+        "VAT_ES": "Luego interrogaron a Baruc, diciendo: «Indícanos cómo has escrito todas estas palabras».",
+        "CEI": "Poi interrogarono Baruc: \"Dicci come hai fatto a scrivere tutte queste parole\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר לָ/הֶם֙ בָּר֔וּךְ מִ/פִּי/ו֙ יִקְרָ֣א אֵלַ֔/י אֵ֥ת כָּל הַ/דְּבָרִ֖ים הָ/אֵ֑לֶּה וַ/אֲנִ֛י כֹּתֵ֥ב עַל הַ/סֵּ֖פֶר בַּ/דְּיֽוֹ׃",
+        "VUL": "Dixit autem eis Baruch : Ex ore suo loquebatur quasi legens ad me omnes sermones istos, et ego scribebam in volumine atramento.",
+        "SYN": "И сказал им Варух: он произносил мне устами своими все сии слова, а я чернилами писал их в этот свиток.",
+        "NEO": "Baruch leur dit : « Il m’a dicté de sa bouche toutes ces paroles, et je les ai écrites sur le livre avec de l’encre. »",
+        "NAB": "\"Jeremiah dictated all these words to me,\" Baruch answered them, \"and I wrote them down with ink in the book.\"",
+        "VAT_ES": "Baruc les respondió: «Jeremías me dictaba de viva voz todas estas palabras, y yo escribía con tinta en el rollo».",
+        "CEI": "Baruc rispose: \"Di sua bocca Geremia mi dettava tutte queste parole e io le scrivevo nel libro con l'inchiostro\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֤וּ הַ/שָּׂרִים֙ אֶל בָּר֔וּךְ לֵ֥ךְ הִסָּתֵ֖ר אַתָּ֣ה וְ/יִרְמְיָ֑הוּ וְ/אִ֥ישׁ אַל יֵדַ֖ע אֵיפֹ֥ה אַתֶּֽם׃",
+        "VUL": "Et dixerunt principes ad Baruch : Vade, et abscondere, tu et Jeremias, et nemo sciat ubi sitis.",
+        "SYN": "Тогда сказали князья Варуху: пойди, скройся, ты и Иеремия, чтобы никто не знал, где вы.",
+        "NEO": "Alors les chefs dirent à Baruch : « Va, cache-toi, ainsi que Jérémie, et que personne ne sache où vous êtes. »",
+        "NAB": "At this the princes said to Baruch, \"Go into hiding, you and Jeremiah; let no one know where you are.\"",
+        "VAT_ES": "Los jefes dijeron a Baruc: «Ve y ocúltate, tú lo mismo que Jeremías; que nadie sepa dónde están».",
+        "CEI": "I capi dissero a Baruc: \"Và e nasconditi insieme con Geremia; nessuno sappia dove siete\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֤אוּ אֶל הַ/מֶּ֨לֶךְ֙ חָצֵ֔רָ/ה וְ/אֶת הַ/מְּגִלָּ֣ה הִפְקִ֔דוּ בְּ/לִשְׁכַּ֖ת אֱלִישָׁמָ֣ע הַ/סֹּפֵ֑ר וַ/יַּגִּ֨ידוּ֙ בְּ/אָזְנֵ֣י הַ/מֶּ֔לֶךְ אֵ֖ת כָּל הַ/דְּבָרִֽים׃",
+        "VUL": "Et ingressi sunt ad regem in atrium : porro volumen commendaverunt in gazophylacio Elisamæ scribæ, et nuntiaverunt, audiente rege, omnes sermones.",
+        "SYN": "И пошли они к царю во дворец, а свиток оставили в комнате Елисама, царского писца, и пересказали вслух царя все слова сии.",
+        "NEO": "Ils entrèrent ensuite chez le roi dans la cour, laissant le volume dans la chambre d’Elisama, le secrétaire, et ils racontèrent aux oreilles du roi toute l’affaire.",
+        "NAB": "Leaving the scroll in safekeeping in the room of Elishama the scribe, they entered the room where the king was. When they told him everything that had happened,",
+        "VAT_ES": "Y después de depositar el rollo en la sala de Elisamá, el secretario, se presentaron ante el rey en la corte, y lo pusieron al tanto de todo.",
+        "CEI": "Essi poi si recarono dal re nell'appartamento interno, dopo aver riposto il rotolo nella stanza di Elisamà lo scriba, e riferirono al re tutte queste cose."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֨ח הַ/מֶּ֜לֶךְ אֶת יְהוּדִ֗י לָ/קַ֨חַת֙ אֶת הַ/מְּגִלָּ֔ה וַ/יִּ֨קָּחֶ֔/הָ מִ/לִּשְׁכַּ֖ת אֱלִישָׁמָ֣ע הַ/סֹּפֵ֑ר וַ/יִּקְרָאֶ֤/הָ יְהוּדִי֙ בְּ/אָזְנֵ֣י הַ/מֶּ֔לֶךְ וּ/בְ/אָזְנֵי֙ כָּל הַ/שָּׂרִ֔ים הָ/עֹמְדִ֖ים מֵ/עַ֥ל הַ/מֶּֽלֶךְ׃",
+        "LXX": "οὕτως εἶπεν Κύριος ἐπὶ Ἀχιὰβ καὶ ἐπὶ Σεδεκίαν Ἰδοὺ ἐγὼ δίδωμι αὐτοὺς εἰς χεῖρας βασιλέως Βαβυλῶνος, καὶ πατάξει αὐτοὺς κατ’ ὀφθαλμοὺς ὑμῶν.",
+        "VUL": "Misitque rex Judi ut sumeret volumen : qui tollens illud de gazophylacio Elisamæ scribæ, legit, audiente rege et universis principibus qui stabant circa regem.",
+        "SYN": "Царь послал Иегудия принести свиток, и он взял его из комнаты Елисама, царского писца; и читал его Иегудий вслух царя и вслух всех князей, стоявших подле царя.",
+        "NEO": "Le roi envoya Judi pour prendre le volume ; et Judi le prit dans la chambre d’Elisama, le secrétaire, et il le lut aux oreilles du roi et aux oreilles de tous les chefs qui se tenaient debout devant le roi.",
+        "NAB": "he sent Jehudi to fetch the scroll. Jehudi brought it from the room of Elishama the scribe, and read it to the king and to all the princes who were in attendance on the king.",
+        "VAT_ES": "El rey envió a Iehudí para que tomara el rollo, y este lo tomó de la sala del secretario Elisamá, Iehudí lo leyó delante del rey y de todos los jefes que estaban de pie junto a él.",
+        "CEI": "Allora il re mandò Iudi a prendere il rotolo. Iudi lo prese dalla stanza di Elisamà lo scriba e lo lesse davanti al re e a tutti i capi che stavano presso il re."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/הַ/מֶּ֗לֶךְ יוֹשֵׁב֙ בֵּ֣ית הַ/חֹ֔רֶף בַּ/חֹ֖דֶשׁ הַ/תְּשִׁיעִ֑י וְ/אֶת הָ/אָ֖ח לְ/פָנָ֥י/ו מְבֹעָֽרֶת׃",
+        "LXX": "καὶ λήμψονται ἀπ’ αὐτῶν κατάραν ἐν πάσῃ τῇ ἀποικίᾳ Ἰούδα ἐν Βαβυλῶνι λέγοντες Ποιήσαι σε Κύριος ὡς Σεδεκίαν ἐποίησεν καὶ ὡς Ἀχιάβ, οὓς ἀπετηγάνισεν βασιλεὺς Βαβυλῶνος ἐν πυρί,",
+        "VUL": "Rex autem sedebat in domo hiemali, in mense nono, et posita erat arula coram eo plena prunis.",
+        "SYN": "Царь в то время, в девятом месяце, сидел в зимнем доме, и перед ним горела жаровня.",
+        "NEO": "Or le roi était assis dans l’appartement d’hiver, au neuvième mois, et le brasier était allumé devant lui.",
+        "NAB": "Now the king was sitting in his winter house, since it was the ninth month, and fire was burning in a brazier before him.",
+        "VAT_ES": "El rey estaba sentado en la sala de invierno –era entonces el noveno mes– y había ante él un brasero encendido.",
+        "CEI": "Il re sedeva nel palazzo d'inverno - si era al nono mese - con un braciere acceso davanti."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י כִּ/קְר֣וֹא יְהוּדִ֗י שָׁלֹ֣שׁ דְּלָתוֹת֮ וְ/אַרְבָּעָה֒ יִֽקְרָעֶ֨/הָ֙ בְּ/תַ֣עַר הַ/סֹּפֵ֔ר וְ/הַשְׁלֵ֕ךְ אֶל הָ/אֵ֖שׁ אֲשֶׁ֣ר אֶל הָ/אָ֑ח עַד תֹּם֙ כָּל הַ/מְּגִלָּ֔ה עַל הָ/אֵ֖שׁ אֲשֶׁ֥ר עַל הָ/אָֽח׃",
+        "LXX": "δι’ ἣν ἐποίησαν ἀνομίαν ἐν Ἰσραήλ, καὶ ἐμοιχῶντο τὰς γυναῖκας τῶν πολιτῶν αὐτῶν, καὶ λόγον ἐχρημάτισαν ἐν τῷ ὀνόματί μου ὃν οὐ συνέταξα αὐτοῖς, καὶ ἐγὼ μάρτυς, φησὶν Κύριος.",
+        "VUL": "Cumque legisset Judi tres pagellas vel quatuor, scidit illud scalpello scribæ, et projecit in ignem qui erat super arulam, donec consumeretur omne volumen igni qui erat in arula.",
+        "SYN": "Когда Иегудий прочитывал три или четыре столбца, _царь_ отрезывал их писцовым ножичком и бросал на огонь в жаровне, доколе не уничтожен был весь свиток на огне, который был в жаровне.",
+        "NEO": "Dès que Judi avait lu trois ou quatre colonnes, le roi coupait le livre avec le canif du secrétaire, et le jetait dans le feu du brasier, jusqu’à ce que tout le volume fût consumé par le feu du brasier.",
+        "NAB": "Each time Jehudi finished reading three or four columns, the king would cut off the piece with a scribe's knife and cast it into the fire in the brazier, until the entire roll was consumed in the fire.",
+        "VAT_ES": "Y a medida que Iehudí leía tres o cuatro columnas, el rey las cortaba con el cortaplumas del secretario y las arrojaba al fuego del brasero. Así hasta que todo el rollo se consumió por completo en el fuego del brasero.",
+        "CEI": "Ora, quando Iudi aveva letto tre o quattro colonne, il re le lacerava con il temperino da scriba e le gettava nel fuoco sul braciere, finché non fu distrutto l'intero rotolo nel fuoco che era sul braciere."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/לֹ֣א פָחֲד֔וּ וְ/לֹ֥א קָרְע֖וּ אֶת בִּגְדֵי/הֶ֑ם הַ/מֶּ֨לֶךְ֙ וְ/כָל עֲבָדָ֔י/ו הַ/שֹּׁ֣מְעִ֔ים אֵ֥ת כָּל הַ/דְּבָרִ֖ים הָ/אֵֽלֶּה׃",
+        "LXX": "Καὶ πρὸς Σαμαίαν τὸν Αἰλαμείτην ἐρεῖς",
+        "VUL": "Et non timuerunt, neque sciderunt vestimenta sua, rex et omnes servi ejus qui audierunt universos sermones istos.",
+        "SYN": "И не убоялись, и не разодрали одежд своих ни царь, ни все слуги его, слышавшие все слова сии.",
+        "NEO": "Le roi et tous ses serviteurs qui entendirent toutes ces paroles, ne furent pas effrayés et ne déchirèrent pas leurs vêtements.",
+        "NAB": "Hearing all these words did not frighten the king and his ministers or cause them to rend their garments.",
+        "VAT_ES": "Pero ni el rey ni sus servidores temblaron al oír todas estas palabras, ni se rasgaron las vestiduras.",
+        "CEI": "Il re e tutti i suoi ministri non tremarono né si strapparono le vesti all'udire tutte quelle cose."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/גַם֩ אֶלְנָתָ֨ן וּ/דְלָיָ֤הוּ וּ/גְמַרְיָ֨הוּ֙ הִפְגִּ֣עוּ בַ/מֶּ֔לֶךְ לְ/בִלְתִּ֥י שְׂרֹ֖ף אֶת הַ/מְּגִלָּ֑ה וְ/לֹ֥א שָׁמַ֖ע אֲלֵי/הֶֽם׃",
+        "LXX": "Οὐκ ἀπέστειλά σε τῷ ὀνόματί μου. καὶ πρὸς Σοφονίαν υἱὸν Μαασαίου τὸν ἱερέα εἰπέ",
+        "VUL": "Verumtamen Elnathan, et Dalaias, et Gamarias, contradixerunt regi, ne combureret librum : et non audivit eos.",
+        "SYN": "Хотя Елнафан и Делаия и Гемария упрашивали царя не сожигать свитка, но он не послушал их.",
+        "NEO": "Pourtant Elnathan, Dalaïas et Gamarias avaient fait des instances auprès du roi pour qu’il ne brûlât pas le volume ; mais il ne les avait pas écoutés.",
+        "NAB": "And though Elnathan, Delaiah, and Gemariah urged the king not to burn the scroll, he would not listen to them,",
+        "VAT_ES": "Y aunque Elnatán, Delaías y Guemarías intervinieron ante el rey para que no quemara el rollo, él no les hizo caso.",
+        "CEI": "Eppure Elnatàn, Delaià e Ghemarià avevano supplicato il re di non bruciare il rotolo, ma egli non diede loro ascolto."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יְצַוֶּ֣ה הַ֠/מֶּלֶךְ אֶת יְרַחְמְאֵ֨ל בֶּן הַ/מֶּ֜לֶךְ וְ/אֶת שְׂרָיָ֣הוּ בֶן עַזְרִיאֵ֗ל וְ/אֶת שֶֽׁלֶמְיָ֨הוּ֙ בֶּֽן עַבְדְּאֵ֔ל לָ/קַ֨חַת֙ אֶת בָּר֣וּךְ הַ/סֹּפֵ֔ר וְ/אֵ֖ת יִרְמְיָ֣הוּ הַ/נָּבִ֑יא וַ/יַּסְתִּרֵ֖/ם יְהוָֽה׃",
+        "LXX": "Κύριος ἔδωκέν σε εἰς ἱερέα ἀντὶ Ἰωδᾶε τοῦ ἱερέως, γενέσθαι ἐπιστάτην ἐν τῷ οἴκῳ Κυρίου παντὶ ἀνθρώπῳ προφητεύοντι καὶ παντὶ ἀνθρώπῳ μαινομένῳ, καὶ δώσεις αὐτὸν εἰς τὸ ἀπόκλεισμα καὶ εἰς τὸν καταράκτην.",
+        "VUL": "Et præcepit rex Jeremiel filio Amelech, et Saraiæ filio Ezriel, et Selemiæ filio Abdeel, ut comprehenderent Baruch scribam, et Jeremiam prophetam : abscondit autem eos Dominus.",
+        "SYN": "И приказал царь Иерамеилу, сыну царя, и Сераии, сыну Азриилову, и Селемии, сыну Авдиилову, взять Варуха писца и Иеремию пророка; но Господь сокрыл их.",
+        "NEO": "Puis le roi ordonna à Jérémiel, fils du roi, et à Saraïas, fils d’Ezriel, et à Sélémias, fils d’Abdéel, de saisir Baruch, le secrétaire, et Jérémie, le prophète ; mais \\+w Yahweh|strong=\"H3068\"\\+w** les cacha.",
+        "NAB": "but commanded Jerahmeel, a royal prince, and Seraiah, son of Azriel, and Shelemiah, son of Abdeel, to arrest Baruch, the secretary, and the prophet Jeremiah. But the LORD kept them concealed.",
+        "VAT_ES": "Luego el rey ordenó a Ierajmel, hijo del rey, a Seraías, hijo de Azriel, y a Selemías, hijo de Abdel, que apresaran a Baruc, el escriba, y a Jeremías, el profeta. Pero el Señor los mantuvo ocultos.",
+        "CEI": "Anzi ordinò a Ieracmeèl, un principe regale, a Seraià figlio di Azrièl e a Selemia figlio di Abdeèl, di arrestare Baruc lo scriba e il profeta Geremia, ma il Signore li aveva nascosti."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֶֽל יִרְמְיָ֑הוּ אַחֲרֵ֣י שְׂרֹ֣ף הַ/מֶּ֗לֶךְ אֶת הַ/מְּגִלָּה֙ וְ/אֶת הַ/דְּבָרִ֔ים אֲשֶׁ֨ר כָּתַ֥ב בָּר֛וּךְ מִ/פִּ֥י יִרְמְיָ֖הוּ לֵ/אמֹֽר׃",
+        "LXX": "καὶ νῦν διὰ τί συνελοιδορήσατε Ἰερεμίαν τὸν ἐξ Ἀναθὼθ τὸν προφητεύσαντα ὑμῖν;",
+        "VUL": "Et factum est verbum Domini ad Jeremiam prophetam, postquam combusserat rex volumen et sermones quos scripserat Baruch ex ore Jeremiæ, dicens :",
+        "SYN": "И было слово Господне к Иеремии, после того как царь сожег свиток и слова, которые Варух написал из уст Иеремии, и сказано ему:",
+        "NEO": "Et la parole de \\+w Yahweh|strong=\"H3068\"\\+w** fut adressée à Jérémie, après que le roi eut brûlé le volume avec les paroles que Baruch avait écrites sous la dictée de Jérémie, en ces termes :",
+        "NAB": "This word of the LORD came to Jeremiah, after the king burned the scroll with the text Jeremiah had dictated to Baruch:",
+        "VAT_ES": "La palabra del Señor llegó a Jeremías, después que el rey quemó el rollo con las palabras que había escrito Baruc bajo el dictado de Jeremías, en estos términos:",
+        "CEI": "Questa parola del Signore fu rivolta a Geremia dopo che il re ebbe bruciato il rotolo con le parole che Baruc aveva scritte sotto la dettatura di Geremia:"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "שׁ֥וּב קַח לְ/ךָ֖ מְגִלָּ֣ה אַחֶ֑רֶת וּ/כְתֹ֣ב עָלֶ֗י/הָ אֵ֤ת כָּל הַ/דְּבָרִים֙ הָ/רִ֣אשֹׁנִ֔ים אֲשֶׁ֣ר הָי֗וּ עַל הַ/מְּגִלָּה֙ הָ/רִ֣אשֹׁנָ֔ה אֲשֶׁ֥ר שָׂרַ֖ף יְהוֹיָקִ֥ים מֶֽלֶךְ יְהוּדָֽה׃",
+        "LXX": "οὐ διὰ τοῦτο ἀπέστειλεν πρὸς ὑμᾶς εἰς Βαβυλῶνα λέγων Μακράν ἐστιν, οἰκοδομήσατε οἰκίας καὶ κατοικήσατε, καὶ φυτεύσατε κήπους καὶ φάγεσθε τὸν καρπὸν αὐτῶν;",
+        "VUL": "Rursum tolle volumen aliud, et scribe in eo omnes sermones priores qui erant in primo volumine, quod combussit Joakim rex Juda.",
+        "SYN": "возьми себе опять другой свиток и напиши в нем все прежние слова, какие были в первом свитке, который сожег Иоаким, царь Иудейский;",
+        "NEO": "Va prendre un autre volume, et tu y écriras toutes les premières paroles qui étaient dans le premier volume que Joakim, roi de Juda, a brûlé.",
+        "NAB": "Take another scroll, and write on it everything that the first scroll contained, which Jehoiakim, king of Judah, burned up.",
+        "VAT_ES": "«Toma otro rollo y escribe en él todas las palabras que estaban en el primer rollo, el que quemó Joaquím, rey de Judá.",
+        "CEI": "Prendi di nuovo un rotolo e scrivici tutte le parole di prima, che erano nel primo rotolo bruciato da Ioiakìm re di Giuda."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/עַל יְהוֹיָקִ֤ים מֶֽלֶךְ יְהוּדָה֙ תֹּאמַ֔ר כֹּ֖ה אָמַ֣ר יְהוָ֑ה אַ֠תָּה שָׂרַ֜פְתָּ אֶת הַ/מְּגִלָּ֤ה הַ/זֹּאת֙ לֵ/אמֹ֔ר מַדּוּעַ֩ כָּתַ֨בְתָּ עָלֶ֜י/הָ לֵ/אמֹ֗ר בֹּֽא יָב֤וֹא מֶֽלֶךְ בָּבֶל֙ וְ/הִשְׁחִית֙ אֶת הָ/אָ֣רֶץ הַ/זֹּ֔את וְ/הִשְׁבִּ֥ית מִמֶּ֖/נָּה אָדָ֥ם וּ/בְהֵמָֽה׃",
+        "LXX": "καὶ ἀνέγνω Σοφονίας τὸ βιβλίον εἰς τὰ ὦτα Ἰερεμίου.",
+        "VUL": "Et ad Joakim regem Juda dices : Hæc dicit Dominus : Tu combussisti volumen illud, dicens : Quare scripsisti in eo annuntians : Festinus veniet rex Babylonis, et vastabit terram hanc, et cessare faciet ex illa hominem et jumentum ?",
+        "SYN": "а царю Иудейскому Иоакиму скажи: так говорит Господь: ты сожег свиток сей, сказав: \"зачем ты написал в нем: непременно придет царь Вавилонский и разорит землю сию, и истребит на ней людей и скот?\"",
+        "NEO": "Et tu diras à Joakim, roi de Juda : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Toi, tu as brûlé ce volume, en disant : « Pourquoi y as-tu écrit que le roi de Babylone viendra certainement, qu’il dévastera ce pays et qu’il en fera disparaître hommes et bêtes ? »",
+        "NAB": "And against Jehoiakim, king of Judah, say this: Thus says the LORD: You burned that scroll, saying, \"Why did you write on it: Babylon's king shall surely come and lay waste this land and empty it of man and beast?\"",
+        "VAT_ES": "Y tú dirás contra Joaquím, rey de Judá: Así habla el Señor: Tú has quemado este rollo, diciendo: &iquest;Por qué has escrito que el rey de Babilonia vendrá indefectiblemente, que él arrasará este país y hará desaparecer de él a hombres y animales?",
+        "CEI": "Contro Ioiakìm re di Giuda dichiarerai: \"Dice il Signore: Hai bruciato quel rotolo, dicendo: Perché vi hai scritto queste parole: Certo verrà il re di Babilonia e devasterà questo paese e farà scomparire da esso uomini e bestie?"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "לָ/כֵ֞ן כֹּֽה אָמַ֣ר יְהוָ֗ה עַל יְהֽוֹיָקִים֙ מֶ֣לֶךְ יְהוּדָ֔ה לֹא יִֽהְיֶה לּ֥/וֹ יוֹשֵׁ֖ב עַל כִּסֵּ֣א דָוִ֑ד וְ/נִבְלָת/וֹ֙ תִּֽהְיֶ֣ה מֻשְׁלֶ֔כֶת לַ/חֹ֥רֶב בַּ/יּ֖וֹם וְ/לַ/קֶּ֥רַח בַּ/לָּֽיְלָה׃",
+        "LXX": "καὶ ἐγένετο λόγος Κυρίου πρὸς Ἰερεμίαν λέγων",
+        "VUL": "Propterea hæc dicit Dominus contra Joakim regem Juda : Non erit ex eo qui sedeat super solium David : et cadaver ejus projicietur ad æstum per diem, et ad gelu per noctem.",
+        "SYN": "за это, так говорит Господь об Иоакиме, царе Иудейском: не будет от него сидящего на престоле Давидовом, и труп его будет брошен на зной дневной и на холод ночной;",
+        "NEO": "C’est pourquoi ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** touchant Joakim, roi de Juda : Il n’aura pas un des siens assis sur le trône de David ; et son cadavre sera jeté dehors, à la chaleur pendant le jour, et au froid pendant la nuit.",
+        "NAB": "The LORD now says of Jehoiakim, king of Judah: No descendant of his shall succeed to David's throne; his corpse shall be cast out, exposed to the heat of day, to the cold of night.",
+        "VAT_ES": "Por eso, así habla el Señor contra Joaquím, rey de Judá: El no tendrá un descendiente que se siente en el trono de David, y su cadáver será arrojado al calor durante el día y al frío durante la noche.",
+        "CEI": "Per questo dice il Signore contro Ioiakìm re di Giuda: Egli non avrà un erede sul trono di Davide; il suo cadavere sarà esposto al calore del giorno e al freddo della notte."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וּ/פָקַדְתִּ֨י עָלָ֧י/ו וְ/עַל זַרְע֛/וֹ וְ/עַל עֲבָדָ֖י/ו אֶת עֲוֺנָ֑/ם וְ/הֵבֵאתִ֣י עֲ֠לֵי/הֶם וְ/עַל יֹשְׁבֵ֨י יְרוּשָׁלִַ֜ם וְ/אֶל אִ֣ישׁ יְהוּדָ֗ה אֵ֧ת כָּל הָ/רָעָ֛ה אֲשֶׁר דִּבַּ֥רְתִּי אֲלֵי/הֶ֖ם וְ/לֹ֥א שָׁמֵֽעוּ׃",
+        "LXX": "Ἀπόστειλον πρὸς τὴν ἀποικίαν λέγων Οὕτως εἶπεν Κύριος ἐπὶ Σαμαίαν τὸν Αἰλαμείτην Ἐπειδὴ ἐπροφήτευσεν ὑμῖν Σαμαίας καὶ ἐγὼ οὐκ ἀπέστειλα αὐτόν, καὶ πεποιθέναι ἐποίησεν ὑμᾶς ἐπ’ ἀδίκοις,",
+        "VUL": "Et visitabo contra eum, et contra semen ejus, et contra servos ejus, iniquitates suas : et adducam super eos, et super habitatores Jerusalem, et super viros Juda, omne malum quod locutus sum ad eos, et non audierunt.",
+        "SYN": "и посещу его и племя его и слуг его за неправду их, и наведу на них и на жителей Иерусалима и на мужей Иуды все зло, которое Я изрек на них, а они не слушали.",
+        "NEO": "Je punirai sur lui, sur sa race et sur ses serviteurs leur iniquité, et je ferai venir sur eux, sur les habitants de Jérusalem et sur les hommes de Juda, tous le mal que je leur ai annoncé sans qu’ils m’aient écouté.",
+        "NAB": "I will punish him and his descendants and his ministers for their wickedness; against them and the citizens of Jerusalem and the men of Judah I will fulfill all the threats of evil which went unheeded.",
+        "VAT_ES": "A él, a su descendencia y a sus servidores, los castigaré por su iniquidad, y haré venir sobre ellos, sobre los habitantes de Jerusalén y sobre la gente de Judá, todo el mal con que los amenacé, sin que ellos me escucharan».",
+        "CEI": "Io punirò lui, la sua discendenza e i suoi ministri per le loro iniquità e manderò su di loro, sugli abitanti di Gerusalemme e sugli uomini di Giuda, tutto il male che ho minacciato, senza che mi abbiano dato ascolto\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/יִרְמְיָ֜הוּ לָקַ֣ח מְגִלָּ֣ה אַחֶ֗רֶת וַֽ/יִּתְּנָ/הּ֮ אֶל בָּר֣וּךְ בֶּן נֵרִיָּהוּ֮ הַ/סֹּפֵר֒ וַ/יִּכְתֹּ֤ב עָלֶ֨י/הָ֙ מִ/פִּ֣י יִרְמְיָ֔הוּ אֵ֚ת כָּל דִּבְרֵ֣י הַ/סֵּ֔פֶר אֲשֶׁ֥ר שָׂרַ֛ף יְהוֹיָקִ֥ים מֶֽלֶךְ יְהוּדָ֖ה בָּ/אֵ֑שׁ וְ/ע֨וֹד נוֹסַ֧ף עֲלֵי/הֶ֛ם דְּבָרִ֥ים רַבִּ֖ים כָּ/הֵֽמָּה׃",
+        "LXX": "διὰ τοῦτο οὕτως εἶπεν Κύριος Ἰδοὺ ἐγὼ ἐπισκέψομαι ἐπὶ Σαμαίαν καὶ ἐπὶ τὸ γένος αὐτοῦ, καὶ οὐκ ἔσται αὐτῶν ἄνθρωπος ἐν μέσῳ ὑμῶν τοῦ ἰδεῖν τὰ ἀγαθὰ ἃ ἐγὼ ποιήσω ὑμῖν· οὐκ ὄψονται.",
+        "VUL": "Jeremias autem tulit volumen aliud, et dedit illud Baruch filio Neriæ scribæ : qui scripsit in eo ex ore Jeremiæ omnes sermones libri quem combusserat Joakim rex Juda igni : et insuper additi sunt sermones multo plures quam antea fuerant.",
+        "SYN": "И взял Иеремия другой свиток и отдал его Варуху писцу, сыну Нирии, и он написал в нем из уст Иеремии все слова того свитка, который сожег Иоаким, царь Иудейский, на огне; и еще прибавлено к ним много подобных тем слов.",
+        "NEO": "Jérémie prit donc un autre volume et le donna à Baruch, fils de Nérias, le secrétaire ; et Baruch y écrivit, sous la dictée de Jérémie, toutes les paroles du livre que Joakim, roi de Juda, avait brûlé au feu ; et beaucoup d’autres paroles semblables y furent ajoutées.",
+        "NAB": "Jeremiah took another scroll, and gave it to his secretary, Baruch, son of Neriah; he wrote on it at Jeremiah's dictation all the words contained in the book which Jehoiakim, king of Judah, had burned in the fire, and many others of the same kind in addition.",
+        "VAT_ES": "Entonces Jeremías tomó otro rollo y se lo entregó a Baruc, hijo de Nerías, el escriba. Este escribió en él, bajo el dictado de Jeremías, todas las palabras del rollo que Joaquím, rey de Judá, había quemado en el fuego. Y además, fueron añadidas muchas otras palabras como aquellas.",
+        "CEI": "Geremia prese un altro rotolo e lo consegnò a Baruc figlio di Neria, lo scriba, il quale vi scrisse, sotto la dettatura di Geremia, tutte le parole del libro che Ioiakìm re di Giuda aveva bruciato nel fuoco; inoltre vi furono aggiunte molte parole simili a quelle."
+      }
+    }
+  }
+}

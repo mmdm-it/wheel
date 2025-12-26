@@ -1,0 +1,339 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLE_001",
+  "book_key": "ECCLE",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "דִּבְרֵי֙ קֹהֶ֣לֶת בֶּן דָּוִ֔ד מֶ֖לֶךְ בִּ/ירוּשָׁלִָֽם׃",
+        "LXX": "ΡΗΜΑΤΑ Ἐκκλησιαστοῦ υἱοῦ Δαυεὶδ βασιλέως Ἰσραὴλ ἐν Ἰερουσαλήμ.",
+        "VUL": "Verba Ecclesiastæ, filii David, regis Jerusalem.",
+        "SYN": "Слова Екклесиаста, сына Давидова, царя в Иерусалиме.",
+        "NEO": "Paroles de l’Ecclésiaste, fils de David, roi dans Jérusalem.",
+        "NAB": "The words of David's son, Qoheleth, king in Jerusalem:",
+        "VAT_ES": "Palabras de Cohélet, hijo de David, rey en Jerusalén.",
+        "CEI": "Parole di Qoèlet, figlio di Davide, re di Gerusalemme."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "הֲבֵ֤ל הֲבָלִים֙ אָמַ֣ר קֹהֶ֔לֶת הֲבֵ֥ל הֲבָלִ֖ים הַ/כֹּ֥ל הָֽבֶל׃",
+        "LXX": "Ματαιότης ματαιοτήτων, εἶπεν ὁ ἐκκλησιαστής, ⸂⸆⸃ ματαιότης ματαιοτήτων, τὰ πάντα ματαιότης.",
+        "VUL": "[Vanitas vanitatum, dixit Ecclesiastes ;/ vanitas vanitatum, et omnia vanitas./",
+        "SYN": "Суета сует, сказал Екклесиаст, суета сует, - все суета!",
+        "NEO": "Vanité des vanités ! dit l’Ecclésiaste, vanité des vanités ! Tout est vanité.",
+        "NAB": "Vanity of vanities, says Qoheleth, vanity of vanities! All things are vanity!",
+        "VAT_ES": "&iexcl;Vanidad, pura vanidad!, dice Cohélet. &iexcl;Vanidad, pura vanidad! &iexcl;Nada más que vanidad!",
+        "CEI": "Vanità delle vanità, dice Qoèlet, vanità delle vanità, tutto è vanità."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "מַה יִּתְר֖וֹן לָֽ/אָדָ֑ם בְּ/כָל עֲמָל֔/וֹ שֶֽׁ/יַּעֲמֹ֖ל תַּ֥חַת הַ/שָּֽׁמֶשׁ׃",
+        "LXX": "τίς περισσεία τῷ ἀνθρώπῳ ἐν παντὶ μόχθῳ αὐτοῦ ᾧ μοχθεῖ ὑπὸ τὸν ἥλιον;",
+        "VUL": "Quid habet amplius homo/ de universo labore suo quo laborat sub sole ?]",
+        "SYN": "Что пользы человеку от всех трудов его, которыми трудится он под солнцем?",
+        "NEO": "Quel avantage revient-il à l’homme de toute la peine qu’il se donne sous le soleil ?",
+        "NAB": "What profit has man from all the labor which he toils at under the sun?",
+        "VAT_ES": "&iquest;Qué provecho saca el hombre de todo el esfuerzo que realiza bajo el sol?",
+        "CEI": "Quale utilità ricava l'uomo da tutto l'affanno per cui fatica sotto il sole?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "דּ֤וֹר הֹלֵךְ֙ וְ/ד֣וֹר בָּ֔א וְ/הָ/אָ֖רֶץ לְ/עוֹלָ֥ם עֹמָֽדֶת׃",
+        "LXX": "γενεὰ πορεύεται καὶ γενεὰ ἔρχεται, καὶ ἡ γῆ εἰς τὸν αἰῶνα ἕστηκεν.",
+        "VUL": "[Generatio præterit, et generatio advenit ;/ terra autem in æternum stat./",
+        "SYN": "Род проходит, и род приходит, а земля пребывает во веки.",
+        "NEO": "Une génération passe, une génération vient, et la terre subsiste toujours.",
+        "NAB": "One generation passes and another comes, but the world forever stays.",
+        "VAT_ES": "Una generación se va y la otra viene, y la tierra siempre permanece.",
+        "CEI": "Una generazione va, una generazione viene ma la terra resta sempre la stessa."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/זָרַ֥ח הַ/שֶּׁ֖מֶשׁ וּ/בָ֣א הַ/שָּׁ֑מֶשׁ וְ/אֶ֨ל מְקוֹמ֔/וֹ שׁוֹאֵ֛ף זוֹרֵ֥חַֽ ה֖וּא שָֽׁם׃",
+        "LXX": "καὶ ἀνατέλλει ὁ ἥλιος καὶ δύνει ὁ ἥλιος καὶ εἰς τὸν τόπον αὐτοῦ ἕλκει· αὐτὸς ἀνατέλλων ἐκεῖ",
+        "VUL": "Oritur sol et occidit,/ et ad locum suum revertitur ;/ ibique renascens,",
+        "SYN": "Восходит солнце, и заходит солнце, и спешит к месту своему, где оно восходит.",
+        "NEO": "Le soleil se lève, le soleil se couche, et il se hâte de retourner à sa demeure, d’où il se lève de nouveau.",
+        "NAB": "The sun rises and the sun goes down; then it presses on to the place where it rises.",
+        "VAT_ES": "El sol sale y se pone, y se dirige afanosamente hacia el lugar de donde saldrá otra vez.",
+        "CEI": "Il sole sorge e il sole tramonta, si affretta verso il luogo da dove risorgerà."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "הוֹלֵךְ֙ אֶל דָּר֔וֹם וְ/סוֹבֵ֖ב אֶל צָפ֑וֹן סוֹבֵ֤ב סֹבֵב֙ הוֹלֵ֣ךְ הָ/ר֔וּחַ וְ/עַל סְבִיבֹתָ֖י/ו שָׁ֥ב הָ/רֽוּחַ׃",
+        "LXX": "πορεύεται πρὸς νότον καὶ κυκλοῖ πρὸς βορρᾶν· κυκλοῖ κυκλῶν, πορεύεται τὸ πνεῦμα, καὶ ἐπὶ κύκλους αὐτοῦ ἐπιστρέφει τὸ πνεῦμα.",
+        "VUL": "gyrat per meridiem, et flectitur ad aquilonem./ Lustrans universa in circuitu pergit spiritus,/ et in circulos suos revertitur./",
+        "SYN": "Идет ветер к югу, и переходит к северу, кружится, кружится на ходу своем, и возвращается ветер на круги свои.",
+        "NEO": "Allant vers le midi, tournant vers le nord, le vent se retourne encore, et reprend les mêmes circuits.",
+        "NAB": "Blowing now toward the south, then toward the north, the wind turns again and again, resuming its rounds.",
+        "VAT_ES": "El viento va hacia el sur y gira hacia el norte; va dando vueltas y vueltas, y retorna sobre su curso.",
+        "CEI": "Il vento soffia a mezzogiorno, poi gira a tramontana; gira e rigira e sopra i suoi giri il vento ritorna."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כָּל הַ/נְּחָלִים֙ הֹלְכִ֣ים אֶל הַ/יָּ֔ם וְ/הַ/יָּ֖ם אֵינֶ֣/נּוּ מָלֵ֑א אֶל מְק֗וֹם שֶׁ֤/הַ/נְּחָלִים֙ הֹֽלְכִ֔ים שָׁ֛ם הֵ֥ם שָׁבִ֖ים לָ/לָֽכֶת׃",
+        "LXX": "πάντες οἱ χείμαρροι πορεύονται εἰς τὴν θάλασσαν, καὶ ἡ θάλασσα οὐκ ἔσται ἐμπιμπλαμένη· εἰς τόπον οἱ χείμαρροι πορεύονται, ἐκεῖ αὐτοὶ ἐπιστρέφουσιν τοῦ πορευθῆναι.",
+        "VUL": "Omnia flumina intrant in mare,/ et mare non redundat ;/ ad locum unde exeunt flumina/ revertuntur ut iterum fluant./",
+        "SYN": "Все реки текут в море, но море не переполняется: к тому месту, откуда реки текут, они возвращаются, чтобы опять течь.",
+        "NEO": "Tous les fleuves vont à la mer, et la mer n’est pas remplie ; vers le lieu où ils se dirigent, ils continuent à aller.",
+        "NAB": "All rivers go to the sea, yet never does the sea become full. To the place where they go, the rivers keep on going.",
+        "VAT_ES": "Todos los ríos van al mar y el mar nunca se llena; al mismo lugar donde van los ríos, allí vuelven a ir.",
+        "CEI": "Tutti i fiumi vanno al mare, eppure il mare non è mai pieno: raggiunta la loro mèta, i fiumi riprendono la loro marcia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כָּל הַ/דְּבָרִ֣ים יְגֵעִ֔ים לֹא יוּכַ֥ל אִ֖ישׁ לְ/דַבֵּ֑ר לֹא תִשְׂבַּ֥ע עַ֨יִן֙ לִ/רְא֔וֹת וְ/לֹא תִמָּלֵ֥א אֹ֖זֶן מִ/שְּׁמֹֽעַ׃",
+        "LXX": "πάντες οἱ λόγοι ἔγκοποι· οὐ δυνήσεται ἀνὴρ τοῦ λαλεῖν, καὶ οὐ πλησθήσεται ὀφθαλμὸς τοῦ ὁρᾶν, καὶ οὐ πληρωθήσεται οὖς ἀπὸ ἀκροάσεως.",
+        "VUL": "Cunctæ res difficiles ;/ non potest eas homo explicare sermone./ Non saturatur oculus visu,/ nec auris auditu impletur./",
+        "SYN": "Все вещи - в труде: не может человек пересказать всего; не насытится око зрением, не наполнится ухо слушанием.",
+        "NEO": "Toutes choses sont en travail, au-delà de ce qu’on peut dire ; l’œil n’est pas rassasié de voir, et l’oreille ne se lasse pas d’entendre.",
+        "NAB": "All speech is labored; there is nothing man can say. The eye is not satisfied with seeing nor is the ear filled with hearing.",
+        "VAT_ES": "Todas las personas están gastadas, más de lo que se puede expresar. &iquest;No se sacia el ojo de ver y el oído no se cansa de escuchar?",
+        "CEI": "Tutte le cose sono in travaglio e nessuno potrebbe spiegarne il motivo. Non si sazia l'occhio di guardare né mai l'orecchio è sazio di udire."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "מַה שֶּֽׁ/הָיָה֙ ה֣וּא שֶׁ/יִּהְיֶ֔ה וּ/מַה שֶׁ/נַּֽעֲשָׂ֔ה ה֖וּא שֶׁ/יֵּעָשֶׂ֑ה וְ/אֵ֥ין כָּל חָדָ֖שׁ תַּ֥חַת הַ/שָּֽׁמֶשׁ׃",
+        "LXX": "τί τὸ γεγονός; αὐτὸ τὸ γενησόμενον· καὶ τί τὸ πεποιημένον; αὐτὸ τὸ ποιηθησόμενον· καὶ οὐκ ἔστιν πᾶν πρόσφατον ὑπὸ τὸν ἥλιον.",
+        "VUL": "Quid est quod fuit ? Ipsum quod futurum est./ Quid est quod factum est ? Ipsum quod faciendum est./",
+        "SYN": "Что было, то и будет; и что делалось, то и будет делаться, и нет ничего нового под солнцем.",
+        "NEO": "Ce qui a été, c’est ce qui sera, et ce qui s’est fait, c’est ce qui se fera ; et il n’y a rien de nouveau sous le soleil.",
+        "NAB": "What has been, that will be; what has been done, that will be done. Nothing is new under the sun.",
+        "VAT_ES": "Lo que fue, eso mismo será; lo que se hizo, eso mismo se hará: &iexcl;no hay nada nuevo bajo el sol!",
+        "CEI": "Ciò che è stato sarà e ciò che si è fatto si rifarà; non c'è niente di nuovo sotto il sole."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "יֵ֥שׁ דָּבָ֛ר שֶׁ/יֹּאמַ֥ר רְאֵה זֶ֖ה חָדָ֣שׁ ה֑וּא כְּבָר֙ הָיָ֣ה לְ/עֹֽלָמִ֔ים אֲשֶׁ֥ר הָיָ֖ה מִ/לְּ/פָנֵֽ/נוּ׃",
+        "LXX": "ὃς λαλήσει καὶ ἐρεῖ Ἴδε τοῦτο καινόν ἐστιν, ἤδη γέγονεν ἐν τοῖς αἰῶσιν τοῖς γενομένοις ἀπὸ ἔμπροσθεν ἡμῶν.",
+        "VUL": "Nihil sub sole novum,/ nec valet quisquam dicere : Ecce hoc recens est :/ jam enim præcessit in sæculis quæ fuerunt ante nos./",
+        "SYN": "Бывает нечто, о чем говорят: \"смотри, вот это новое\"; но _это_ было уже в веках, бывших прежде нас.",
+        "NEO": "S’il est une chose dont on dise : « Vois, c’est nouveau ! », cette chose a déjà existé dans les siècles qui nous ont précédés.",
+        "NAB": "Even the thing of which we say, \"See, this is new!\" has already existed in the ages that preceded us.",
+        "VAT_ES": "Si hay algo de lo que dicen: «Mira, esto sí que es algo nuevo». en realidad, eso mismo ya existió muchísimo antes que nosotros.",
+        "CEI": "C'è forse qualcosa di cui si possa dire: \"Guarda, questa è una novità\"? Proprio questa è già stata nei secoli che ci hanno preceduto."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "אֵ֥ין זִכְר֖וֹן לָ/רִאשֹׁנִ֑ים וְ/גַ֨ם לָ/אַחֲרֹנִ֜ים שֶׁ/יִּהְי֗וּ לֹֽא יִהְיֶ֤ה לָ/הֶם֙ זִכָּר֔וֹן עִ֥ם שֶׁ/יִּהְי֖וּ לָ/אַחֲרֹנָֽה׃",
+        "LXX": "οὐκ ἔστιν μνήμη τοῖς πρώτοις, καί γε τοῖς ἐσχάτοις γενομένοις· οὐκ ἔσται αὐτῶν μνήμη μετὰ τῶν γενησομένων εἰς τὴν ἐσχάτην.",
+        "VUL": "Non est priorum memoria ;/ sed nec eorum quidem quæ postea futura sunt/ erit recordatio apud eos qui futuri sunt in novissimo.]",
+        "SYN": "Нет памяти о прежнем; да и о том, что будет, не останется памяти у тех, которые будут после.",
+        "NEO": "On ne se souvient pas de ce qui est ancien, et ce qui arrivera dans la suite ne laissera pas de souvenir chez ceux qui vivront plus tard.",
+        "NAB": "There is no remembrance of the men of old; nor of those to come will there be any remembrance among those who come after them.",
+        "VAT_ES": "No queda el recuerdo de las cosas pasadas, ni quedará el recuerdo de las futuras en aquellos que vendrán después.",
+        "CEI": "Non resta più ricordo degli antichi, ma neppure di coloro che saranno si conserverà memoria presso coloro che verranno in seguito."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אֲנִ֣י קֹהֶ֗לֶת הָיִ֥יתִי מֶ֛לֶךְ עַל יִשְׂרָאֵ֖ל בִּ/ירוּשָׁלִָֽם׃",
+        "LXX": "Ἐγὼ Ἐκκλησιαστὴς ἐγενόμην βασιλεὺς ἐπὶ Ἰσραὴλ ἐν Ἰερουσαλήμ·",
+        "VUL": "[Ego Ecclesiastes fui rex Israël in Jerusalem ;/",
+        "SYN": "Я, Екклесиаст, был царем над Израилем в Иерусалиме;",
+        "NEO": "Moi, l’Ecclésiaste, j’ai été roi d’Israël à Jérusalem,",
+        "NAB": "I, Qoheleth, was king over Israel in Jerusalem,",
+        "VAT_ES": "Yo, Cohélet, he sido rey de Israel, en Jerusalén,",
+        "CEI": "Io, Qoèlet, sono stato re d'Israele in Gerusalemme."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/נָתַ֣תִּי אֶת לִבִּ֗/י לִ/דְר֤וֹשׁ וְ/לָ/תוּר֙ בַּֽ/חָכְמָ֔ה עַ֛ל כָּל אֲשֶׁ֥ר נַעֲשָׂ֖ה תַּ֣חַת הַ/שָּׁמָ֑יִם ה֣וּא עִנְיַ֣ן רָ֗ע נָתַ֧ן אֱלֹהִ֛ים לִ/בְנֵ֥י הָ/אָדָ֖ם לַ/עֲנ֥וֹת בּֽ/וֹ׃",
+        "LXX": "καὶ ἔδωκα τὴν καρδίαν μου τοῦ ἐκζητῆσαι καὶ τοῦ κατασκέψασθαι ἐν τῇ σοφίᾳ περὶ πάντων τῶν γινομένων ὑπὸ τὸν οὐρανόν, ὅτι περισπασμὸν πονηρὸν ἔδωκεν ὁ θεὸς τοῖς υἱοῖς τῶν ἀνθρώπων τοῦ περισπᾶσθαι ἐν αὐτῷ.",
+        "VUL": "et proposui in animo meo quærere et investigare sapienter/ de omnibus quæ fiunt sub sole./ Hanc occupationem pessimam/ dedit Deus filiis hominum, ut occuparentur in ea./",
+        "SYN": "и предал я сердце мое тому, чтобы исследовать и испытать мудростью все, что делается под небом: это тяжелое занятие дал Бог сынам человеческим, чтобы они упражнялись в нем.",
+        "NEO": "et j’ai appliqué mon cœur à rechercher et à sonder par la sagesse tout ce qui se fait sous les cieux : c’est une occupation pénible à laquelle Dieu impose aux enfants des hommes de se livrer.",
+        "NAB": "and I applied my mind to search and investigate in wisdom all things that are done under the sun. A thankless task God has appointed for men to be busied about.",
+        "VAT_ES": "y me dediqué a investigar y a explorar con sabiduría todo lo que se hace bajo el cielo: es esta una ingrata tarea que Dios impuso a los hombres para que se ocupen de ella.",
+        "CEI": "Mi sono proposto di ricercare e investigare con saggezza tutto ciò che si fa sotto il cielo. È questa una occupazione penosa che Dio ha imposto agli uomini, perché in essa fatichino."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "רָאִ֨יתִי֙ אֶת כָּל הַֽ/מַּעֲשִׂ֔ים שֶֽׁ/נַּעֲשׂ֖וּ תַּ֣חַת הַ/שָּׁ֑מֶשׁ וְ/הִנֵּ֥ה הַ/כֹּ֛ל הֶ֖בֶל וּ/רְע֥וּת רֽוּחַ׃",
+        "LXX": "εἶδον σὺν πάντα τὰ ποιήματα τὰ πεποιημένα ὑπὸ τὸν ἥλιον, καὶ ἰδοὺ τὰ πάντα ματαιότης καὶ προαίρεσις πνεύματος. ⸆",
+        "VUL": "Vidi cuncta quæ fiunt sub sole,/ et ecce universa vanitas et afflictio spiritus./",
+        "SYN": "Видел я все дела, какие делаются под солнцем, и вот, все - суета и томление духа!",
+        "NEO": "J’ai examiné toutes les œuvres qui se font sous le soleil : et voici, tout est vanité et poursuite du vent.",
+        "NAB": "I have seen all things that are done under the sun, and behold, all is vanity and a chase after wind.",
+        "VAT_ES": "Así observé todas las obras que se hacen bajo el sol, y vi que todo es vanidad y correr tras el viento.",
+        "CEI": "Ho visto tutte le cose che si fanno sotto il sole ed ecco tutto è vanità e un inseguire il vento."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "מְעֻוָּ֖ת לֹא יוּכַ֣ל לִ/תְקֹ֑ן וְ/חֶסְר֖וֹן לֹא יוּכַ֥ל לְ/הִמָּנֽוֹת׃",
+        "LXX": "διεστραμμένον οὐ δυνήσεται ἐπικοσμηθῆναι, καὶ ὑστέρημα οὐ δυνήσεται ἀριθμηθῆναι.",
+        "VUL": "Perversi difficile corriguntur,/ et stultorum infinitus est numerus./",
+        "SYN": "Кривое не может сделаться прямым, и чего нет, того нельзя считать.",
+        "NEO": "Ce qui est courbé ne peut se redresser, et ce qui manque ne peut être compté.",
+        "NAB": "What is crooked cannot be made straight, and what is missing cannot be supplied.",
+        "VAT_ES": "Lo torcido no se puede enderezar, ni se puede contar lo que falta.",
+        "CEI": "Ciò che è storto non si può raddrizzare e quel che manca non si può contare."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "דִּבַּ֨רְתִּי אֲנִ֤י עִם לִבִּ/י֙ לֵ/אמֹ֔ר אֲנִ֗י הִנֵּ֨ה הִגְדַּ֤לְתִּי וְ/הוֹסַ֨פְתִּי֙ חָכְמָ֔ה עַ֛ל כָּל אֲשֶׁר הָיָ֥ה לְ/פָנַ֖/י עַל יְרוּשָׁלִָ֑ם וְ/לִבִּ֛/י רָאָ֥ה הַרְבֵּ֖ה חָכְמָ֥ה וָ/דָֽעַת׃",
+        "LXX": "ἐλάλησα ἐγὼ ἐν τῇ καρδίᾳ μου τῷ λέγειν Ἐγὼ ἰδοὺ ἐμεγαλύνθην, καὶ προσέθηκα σοφίαν ἐπὶ πᾶσιν οἳ ἐγένοντο ἔμπροσθέν μου ἐν Ἰερουσαλήμ·",
+        "VUL": "Locutus sum in corde meo, dicens :/ Ecce magnus effectus sum, et præcessi omnes sapientia/ qui fuerunt ante me in Jerusalem ;/ et mens mea contemplata est multa sapienter, et didici./",
+        "SYN": "Говорил я с сердцем моим так: вот, я возвеличился и приобрел мудрости больше всех, которые были прежде меня над Иерусалимом, и сердце мое видело много мудрости и знания.",
+        "NEO": "Je me suis dit en moi-même : Voici que j’ai accumulé et amassé de la sagesse, plus que tous ceux qui ont été avant moi à Jérusalem, et mon cœur a possédé amplement sagesse et science.",
+        "NAB": "Though I said to myself, \"Behold, I have become great and stored up wisdom beyond all who were before me in Jerusalem, and my mind has broad experience of wisdom and knowledge\";",
+        "VAT_ES": "Entonces me dije a mí mismo: Yo acumulé una gran sabiduría, más que todos mis predecesores en Jerusalén, y mi corazón ha visto mucha sabiduría y ciencia.",
+        "CEI": "Pensavo e dicevo fra me: \"Ecco, io ho avuto una sapienza superiore e più vasta di quella che ebbero quanti regnarono prima di me in Gerusalemme. La mia mente ha curato molto la sapienza e la scienza\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וָ/אֶתְּנָ֤/ה לִבִּ/י֙ לָ/דַ֣עַת חָכְמָ֔ה וְ/דַ֥עַת הוֹלֵל֖וֹת וְ/שִׂכְל֑וּת יָדַ֕עְתִּי שֶׁ/גַּם זֶ֥ה ה֖וּא רַעְי֥וֹן רֽוּחַ׃",
+        "LXX": "καὶ καρδία μου εἶδεν πολλά, σοφίαν καὶ γνῶσιν, καὶ ἔδωκα καρδίαν μου τοῦ γνῶναι σοφίαν καὶ γνῶσιν, παραβολὰς καὶ ἐπιστήμην ἔγνων ἐγώ. ὅτι καί γε τοῦτ’ ἔστιν προαίρεσις πνεύματος,",
+        "VUL": "Dedique cor meum ut scirem prudentiam atque doctrinam,/ erroresque et stultitiam ;/ et agnovi quod in his quoque esset labor et afflictio spiritus :/",
+        "SYN": "И предал я сердце мое тому, чтобы познать мудрость и познать безумие и глупость: узнал, что и это - томление духа;",
+        "NEO": "J’ai appliqué mon esprit à connaître la sagesse, et à connaître la sottise et la folie ; j’ai compris que cela aussi est poursuite du vent.",
+        "NAB": "yet when I applied my mind to know wisdom and knowledge, madness and folly, I learned that this also is a chase after wind.",
+        "VAT_ES": "Me dediqué a conocer la sabiduría, la ciencia, la locura y la necedad, y advertí que también eso es correr tras el viento.",
+        "CEI": "Ho deciso allora di conoscere la sapienza e la scienza, come anche la stoltezza e la follia, e ho compreso che anche questo è un inseguire il vento,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כִּ֛י בְּ/רֹ֥ב חָכְמָ֖ה רָב כָּ֑עַס וְ/יוֹסִ֥יף דַּ֖עַת יוֹסִ֥יף מַכְאֽוֹב׃",
+        "LXX": "ὅτι ἐν πλήθει σοφίας πλῆθος γνώσεως, καὶ ὁ προστιθεὶς γνῶσιν προσθήσει ἄλγημα.",
+        "VUL": "eo quod in multa sapientia multa sit indignatio ;/ et qui addit scientiam, addit et laborem.]",
+        "SYN": "потому что во многой мудрости много печали; и кто умножает познания, умножает скорбь.",
+        "NEO": "Car avec beaucoup de sagesse on a beaucoup de chagrin, et celui qui augmente sa science augmente sa douleur.",
+        "NAB": "For in much wisdom there is much sorrow, and he who stores up knowledge stores up grief.",
+        "VAT_ES": "Porque mucha sabiduría trae mucha aflicción, y el que acumula ciencia, acumula dolor.",
+        "CEI": "perchè molta sapienza, molto affanno; chi accresce il sapere, aumenta il dolore."
+      }
+    }
+  }
+}

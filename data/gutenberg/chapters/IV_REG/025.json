@@ -1,0 +1,554 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IV_REG_025",
+  "book_key": "IV_REG",
+  "sequence": 25,
+  "chapter_in": {
+    "MT": 25,
+    "VUL": 25,
+    "LXX": 25
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֩ בִ/שְׁנַ֨ת הַ/תְּשִׁיעִ֜ית לְ/מָלְכ֗/וֹ בַּ/חֹ֣דֶשׁ הָ/עֲשִׂירִי֮ בֶּ/עָשׂ֣וֹר לַ/חֹדֶשׁ֒ בָּ֠א נְבֻכַדְנֶאצַּ֨ר מֶֽלֶךְ בָּבֶ֜ל ה֧וּא וְ/כָל חֵיל֛/וֹ עַל יְרוּשָׁלִַ֖ם וַ/יִּ֣חַן עָלֶ֑י/הָ וַ/יִּבְנ֥וּ עָלֶ֖י/הָ דָּיֵ֥ק סָבִֽיב׃",
+        "LXX": "καὶ ἐγενήθη ἐν τῷ ἔτει τῷ ἐνάτῳ τῆς βασιλείας αὐτοῦ ἐν τῷ μηνὶ τῷ δεκάτῳ ἦλθεν Ναβουχοδονοσὸρ βασιλεὺς Βαβυλῶνος καὶ πᾶσα ἡ δύναμις αὐτοῦ ἐπὶ Ἰερουσαλήμ, καὶ παρενέβαλεν ἐπ’ αὐτήν, καὶ ᾠκοδόμησεν ἐπ’ αὐτὴν περίτειχος κύκλῳ.",
+        "VUL": "Factum est autem anno nono regni ejus, mense decimo, decima die mensis, venit Nabuchodonosor rex Babylonis, ipse et omnis exercitus ejus, in Jerusalem, et circumdederunt eam : et exstruxerunt in circuitu ejus munitiones.",
+        "SYN": "В девятый год царствования своего, в десятый месяц, в десятый день месяца, пришел Навуходоносор, царь Вавилонский, со всем войском своим к Иерусалиму, и осадил его, и устроил вокруг него вал.",
+        "NEO": "La neuvième année du règne de Sédécias, le dixième mois, le dixième jour du mois, Nabuchodonosor, roi de Babylone, vint avec toute son armée contre Jérusalem, et établit son camp devant elle ; on construisit tout autour des murs d’approche.",
+        "NAB": "In the tenth month of the ninth year of Zedekiah's reign, on the tenth day of the month, Nebuchadnezzar, king of Babylon, and his whole army advanced against Jerusalem, encamped around it, and built siege walls on every side.",
+        "VAT_ES": "El noveno año del reinado de Sedecías, el día diez del décimo mes, Nabucodonosor, rey de Babilonia, llegó con todo su ejército contra Jerusalén; acampó frente a la ciudad y la cercaron con una empalizada.",
+        "CEI": "Nell'anno nono del suo regno, nel decimo mese, il dieci del mese, Nabucodònosor re di Babilonia, con tutto l'esercito, marciò contro Gerusalemme, la circondò da tutte le parti e le costruì intorno opere d'assedio."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/תָּבֹ֥א הָ/עִ֖יר בַּ/מָּצ֑וֹר עַ֚ד עַשְׁתֵּ֣י עֶשְׂרֵ֣ה שָׁנָ֔ה לַ/מֶּ֖לֶךְ צִדְקִיָּֽהוּ׃",
+        "LXX": "καὶ ἦλθεν ἡ πόλις ἐν περιοχῇ ἕως τοῦ ἑνδεκάτου ἔτους τοῦ βασιλέως Σεδεκίου, ἐνάτῃ τοῦ μηνός·",
+        "VUL": "Et clausa est civitas atque vallata usque ad undecimum annum regis Sedeciæ,",
+        "SYN": "И находился город в осаде до одиннадцатого года царя Седекии.",
+        "NEO": "La ville fut assiégée jusqu’à la onzième année de Sédécias.",
+        "NAB": "The siege of the city continued until the eleventh year of Zedekiah.",
+        "VAT_ES": "Cro 36.17-21; Jr 39.8-10; 52.12-22",
+        "CEI": "La città rimase assediata fino all'undecimo anno del re Sedecìa."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "בְּ/תִשְׁעָ֣ה לַ/חֹ֔דֶשׁ וַ/יֶּחֱזַ֥ק הָ/רָעָ֖ב בָּ/עִ֑יר וְ/לֹא הָ֥יָה לֶ֖חֶם לְ/עַ֥ם הָ/אָֽרֶץ׃",
+        "LXX": "καὶ ἐνίσχυσεν ὁ λιμὸς ἐν τῇ πόλει, καὶ οὐκ ἦσαν ἄρτοι τῷ λαῷ τῆς γῆς.",
+        "VUL": "nona die mensis : prævaluitque fames in civitate, nec erat panis populo terræ.",
+        "SYN": "В девятый день месяца усилился голод в городе, и не было хлеба у народа земли.",
+        "NEO": "Le neuvième jour du mois, comme la famine était plus grande dans la ville, et qu’il n’y avait plus de pain pour le peuple du pays,",
+        "NAB": "On the ninth day of the fourth month, when famine had gripped the city, and the people had no more bread,",
+        "VAT_ES": "En el cuarto mes, el día nueve del mes, mientras apretaba el hambre en la ciudad y no había más pan para la gente del país,",
+        "CEI": "Al nono giorno del quarto mese, quando la fame dominava la città e non c'era più pane per la popolazione,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/תִּבָּקַ֣ע הָ/עִ֗יר וְ/כָל אַנְשֵׁ֨י הַ/מִּלְחָמָ֤ה הַ/לַּ֨יְלָה֙ דֶּ֜רֶךְ שַׁ֣עַר בֵּ֣ין הַ/חֹמֹתַ֗יִם אֲשֶׁר֙ עַל גַּ֣ן הַ/מֶּ֔לֶךְ וְ/כַשְׂדִּ֥ים עַל הָ/עִ֖יר סָבִ֑יב וַ/יֵּ֖לֶךְ דֶּ֥רֶךְ הָ/עֲרָבָֽה׃",
+        "LXX": "καὶ ἐρράγη ἡ πόλις, καὶ πάντες οἱ ἄνδρες τοῦ πολέμου ἐξῆλθον νυκτὸς ὁδὸν πύλης τῆς ἀνὰ μέσον τῶν τειχέων, αὕτη ἥ ἐστιν τοῦ κήπου τοῦ βασιλέως, καὶ οἱ Χαλδαῖοι ἐπὶ τὴν πόλιν κύκλῳ. καὶ ἐπορεύθη ὁδὸν τὴν Ἀραβά,",
+        "VUL": "Et interrupta est civitas : et omnes viri bellatores nocte fugerunt per viam portæ quæ est inter duplicem murum ad hortum regis. Porro Chaldæi obsidebant in circuitu civitatem. Fugit itaque Sedecias per viam quæ ducit ad campestria solitudinis.",
+        "SYN": "И взят был город, и _побежали_ все военные ночью по дороге к воротам, между двумя стенами, что подле царского сада; Халдеи же стояли вокруг города, и _царь_ ушел дорогою к равнине.",
+        "NEO": "une brèche fut faite à la ville, et tous les gens de guerre s’enfuirent la nuit par le chemin de la porte entre les deux murs, près du jardin du roi, pendant que les Chaldéens environnaient la ville. Le roi prit le chemin de l’Araba.",
+        "NAB": "the city walls were breached. Then the king and all the soldiers left the city by night through the gate between the two walls which was near the king's garden. Since the Chaldeans had the city surrounded, they went in the direction of the Arabah.",
+        "VAT_ES": "se abrió una brecha en la ciudad. Entonces huyeron todos los hombres de guerra, saliendo de la ciudad durante la noche, por el camino de la Puerta entre las dos murallas, que está cerca del jardín del rey; y mientras los caldeos rodeaban la ciudad, ellos tomaron por el camino de la Arabá.",
+        "CEI": "fu aperta una breccia nelle mura della città. Allora tutti i soldati fuggirono, uscendo dalla città di notte per la via della porta fra le due mura, presso il giardino del re e, mentre i Caldei erano tutt'intorno alla città, presero la via dell'Araba."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּרְדְּפ֤וּ חֵיל כַּשְׂדִּים֙ אַחַ֣ר הַ/מֶּ֔לֶךְ וַ/יַּשִּׂ֥גוּ אֹת֖/וֹ בְּ/עַרְב֣וֹת יְרֵח֑וֹ וְ/כָל חֵיל֔/וֹ נָפֹ֖צוּ מֵ/עָלָֽי/ו׃",
+        "LXX": "καὶ ἐδίωξεν ἡ δύναμις τῶν Χαλδαίων ὀπίσω τοῦ βασιλέως, καὶ κατέλαβον αὐτὸν ἐν ἀραβὼθ Ἰερειχώ, καὶ πᾶσα ἡ δύναμις αὐτοῦ διεσπάρη ἐπάνωθεν αὐτοῦ.",
+        "VUL": "Et persecutus est exercitus Chaldæorum regem, comprehenditque eum in planitie Jericho : et omnes bellatores qui erant cum eo, dispersi sunt, et reliquerunt eum.",
+        "SYN": "И погналось войско Халдейское за царем, и настигли его на равнинах Иерихонских, и все войско его разбежалось от него.",
+        "NEO": "Mais l’armée des Chaldéens poursuivit le roi et l’atteignit dans les plaines de Jéricho, et toute son armée se dispersa loin de lui.",
+        "NAB": "But the Chaldean army pursued the king and overtook him in the desert near Jericho, abandoned by his whole army.",
+        "VAT_ES": "Las tropas de los caldeos persiguieron al rey, y lo alcanzaron en las estepas de Jericó, donde se desbandó todo su ejército.",
+        "CEI": "I soldati dei Caldei inseguirono il re nelle steppe di Gerico, mentre tutto il suo esercito si disperse abbandonandolo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַֽ/יִּתְפְּשׂוּ֙ אֶת הַ/מֶּ֔לֶךְ וַ/יַּעֲל֥וּ אֹת֛/וֹ אֶל מֶ֥לֶךְ בָּבֶ֖ל רִבְלָ֑תָ/ה וַ/יְדַבְּר֥וּ אִתּ֖/וֹ מִשְׁפָּֽט׃",
+        "LXX": "καὶ συνέλαβον τὸν βασιλέα, καὶ ἤγαγον αὐτὸν πρὸς βασιλέα Βαβυλῶνος Ἰερδεβλάθαν· καὶ ἐλάλησεν μετ’ αὐτοῦ κρίσιν.",
+        "VUL": "Apprehensum ergo regem duxerunt ad regem Babylonis in Reblatha : qui locutus est cum eo judicium.",
+        "SYN": "И взяли царя, и отвели его к царю Вавилонскому в Ривлу, и произвели над ним суд:",
+        "NEO": "Ayant saisi le roi, ils le firent monter vers le roi de Babylone à Rébla, et on prononça sur lui une sentence.",
+        "NAB": "The king was therefore arrested and brought to Riblah to the king of Babylon, who pronounced sentence on him.",
+        "VAT_ES": "Los caldeos capturaron al rey y lo hicieron subir hasta Riblá, ante el rey de Babilonia, y este dictó sentencia contra él.",
+        "CEI": "Il re fu preso e condotto dal re di Babilonia a Ribla ove fu pronunziata contro di lui la sentenza."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/אֶת בְּנֵי֙ צִדְקִיָּ֔הוּ שָׁחֲט֖וּ לְ/עֵינָ֑י/ו וְ/אֶת עֵינֵ֤י צִדְקִיָּ֨הוּ֙ עִוֵּ֔ר וַ/יַּאַסְרֵ֨/הוּ֙ בַֽ/נְחֻשְׁתַּ֔יִם וַ/יְבִאֵ֖/הוּ בָּבֶֽל׃",
+        "LXX": "καὶ τοὺς υἱοὺς Σεδεκίου ἔσφαξεν κατ’ ὀφθαλμοὺς αὐτοῦ, καὶ τοὺς ὀφθαλμοὺς Σεδεκίου ἐξετύφλωσεν· καὶ ἔδησεν αὐτὸν ἐν πέδαις καὶ ἤγαγεν εἰς Βαβυλῶνα.",
+        "VUL": "Filios autem Sedeciæ occidit coram eo, et oculos ejus effodit, vinxitque eum catenis, et adduxit in Babylonem.",
+        "SYN": "и сыновей Седекии закололи пред глазами его, а _самому_ Седекии ослепили глаза и сковали его оковами, и отвели его в Вавилон.",
+        "NEO": "On égorgea les fils de Sédécias sous ses yeux. Puis Nabuchodonosor creva les yeux à Sédécias et le lia avec deux chaînes d’airain ; et on le mena à Babylone.",
+        "NAB": "He had Zedekiah's sons slain before his eyes. Then he blinded Zedekiah, bound him with fetters, and had him brought to Babylon.",
+        "VAT_ES": "Los hijos de Sedecías fueron degollados ante sus propios ojos. A Sedecías le sacó los ojos, lo ató con una doble cadena de bronce y lo llevó a Babilonia.",
+        "CEI": "Furono uccisi alla presenza di Sedecìa i suoi figli e a lui Nabucodònosor fece cavare gli occhi, l'incatenò e lo condusse a Babilonia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וּ/בַ/חֹ֤דֶשׁ הַֽ/חֲמִישִׁי֙ בְּ/שִׁבְעָ֣ה לַ/חֹ֔דֶשׁ הִ֗יא שְׁנַת֙ תְּשַֽׁע עֶשְׂרֵ֣ה שָׁנָ֔ה לַ/מֶּ֖לֶךְ נְבֻכַדְנֶאצַּ֣ר מֶֽלֶךְ בָּבֶ֑ל בָּ֞א נְבוּזַרְאֲדָ֧ן רַב טַבָּחִ֛ים עֶ֥בֶד מֶֽלֶךְ בָּבֶ֖ל יְרוּשָׁלִָֽם׃",
+        "LXX": "Καὶ ἐν τῷ μηνὶ τῷ πέμπτῳ, ἑβδόμῃ τοῦ μηνός, αὐτὸς ἐνιαυτὸς ἐννεακαιδέκατος τῷ Ναβουχοδονοσὸρ βασιλεῖ Βαβυλῶνος, ἦλθεν Ναβουζαρδὰν ὁ ἀρχιμάγειρος ἑστὼς ἐνώπιον βασιλέως Βαβυλῶνος εἰς Ἰερουσαλήμ.",
+        "VUL": "Mense quinto, septima die mensis, ipse est annus nonusdecimus regis Babylonis, venit Nabuzardan princeps exercitus, servus regis Babylonis, in Jerusalem.",
+        "SYN": "В пятый месяц, в седьмой день месяца, то есть в девятнадцатый год Навуходоносора, царя Вавилонского, пришел Навузардан, начальник телохранителей, слуга царя Вавилонского, в Иерусалим",
+        "NEO": "Le cinquième mois, le septième jour du mois, — c’était la dix-neuvième année du règne de Nabuchodonosor, roi de Babylone, — Nabuzardan, capitaine des gardes, serviteur du roi de Babylone, vint à Jérusalem.",
+        "NAB": "On the seventh day of the fifth month (this was in the nineteenth year of Nebuchadnezzar, king of Babylon), Nebuzaradan, captain of the bodyguard, came to Jerusalem as the representative of the king of Babylon.",
+        "VAT_ES": "El día siete del quinto mes –era el decimonoveno año de Nabucodonosor, rey de Babilonia– Nebuzaradán, comandante de la guardia, que prestaba servicio ante el rey de Babilonia, entró en Jerusalén.",
+        "CEI": "Il settimo giorno del quinto mese - era l'anno decimonono del re Nabucodònosor re di Babilonia - Nabuzardàn, capo delle guardie, ufficiale del re di Babilonia, entrò in Gerusalemme,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׂרֹ֥ף אֶת בֵּית יְהוָ֖ה וְ/אֶת בֵּ֣ית הַ/מֶּ֑לֶךְ וְ/אֵ֨ת כָּל בָּתֵּ֧י יְרוּשָׁלִַ֛ם וְ/אֶת כָּל בֵּ֥ית גָּד֖וֹל שָׂרַ֥ף בָּ/אֵֽשׁ׃",
+        "LXX": "καὶ ἐνέπρησεν τὸν οἶκον Κυρίου καὶ τὸν οἶκον τοῦ βασιλέως καὶ πάντας τοὺς οἴκους Ἰερουσαλήμ, καὶ πᾶν οἶκον ἐνέπρησεν ὁ ἀρχιμάγειρος.",
+        "VUL": "Et succendit domum Domini, et domum regis : et domos Jerusalem, omnemque domum combussit igni.",
+        "SYN": "и сжег дом Господень и дом царя, и все домы в Иерусалиме, и все домы большие сожег огнем;",
+        "NEO": "Il brûla la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, la maison du roi et toutes les maisons de Jérusalem ; il livra au feu toutes les grandes maisons.",
+        "NAB": "He burned the house of the LORD, the palace of the king, and all the houses of Jerusalem; every large building was destroyed by fire.",
+        "VAT_ES": "Incendió la Casa del Señor, la casa del rey y todas las casas de Jerusalén, y prendió fuego a todas las casas de los nobles.",
+        "CEI": "bruciò il tempio, la reggia e tutte le case di Gerusalemme, dando alle fiamme tutte le case di lusso."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/אֶת חוֹמֹ֥ת יְרוּשָׁלִַ֖ם סָבִ֑יב נָֽתְצוּ֙ כָּל חֵ֣יל כַּשְׂדִּ֔ים אֲשֶׁ֖ר רַב טַבָּחִֽים׃",
+        "VUL": "Et muros Jerusalem in circuitu destruxit omnis exercitus Chaldæorum, qui erat cum principe militum.",
+        "SYN": "и стены вокруг Иерусалима разрушило войско Халдейское, бывшее у начальника телохранителей.",
+        "NEO": "Toute l’armée des Chaldéens qui était avec le capitaine des gardes démolit les murailles formant l’enceinte de Jérusalem.",
+        "NAB": "Then the Chaldean troops who were with the captain of the guard tore down the walls that surrounded Jerusalem.",
+        "VAT_ES": "Después, el ejército de los caldeos que estaba con el comandante de la guardia derribo las murallas que rodeaban a Jerusalén.",
+        "CEI": "Tutto l'esercito dei Caldei, che era con il capo delle guardie, demolì il muro intorno a Gerusalemme."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/אֵת֩ יֶ֨תֶר הָ/עָ֜ם הַ/נִּשְׁאָרִ֣ים בָּ/עִ֗יר וְ/אֶת הַ/נֹּֽפְלִים֙ אֲשֶׁ֤ר נָפְלוּ֙ עַל הַ/מֶּ֣לֶךְ בָּבֶ֔ל וְ/אֵ֖ת יֶ֣תֶר הֶ/הָמ֑וֹן הֶגְלָ֕ה נְבוּזַרְאֲדָ֖ן רַב טַבָּחִֽים׃",
+        "LXX": "καὶ τὸ περισσὸν τοῦ λαοῦ τὸ καταλειφθὲν ἐν τῇ πόλει καὶ τοὺς ἐνπεπτωκότας οἳ ἐνέπεσον πρὸς βασιλέα Βαβυλῶνος καὶ τὸ λοιπὸν τοῦ στηρίγματος μετῆρεν Ναβουζαρδὰν ὁ ἀρχιμάγειρος.",
+        "VUL": "Reliquam autem populi partem quæ remanserat in civitate, et perfugas qui transfugerant ad regem Babylonis, et reliquum vulgus transtulit Nabuzardan princeps militiæ.",
+        "SYN": "И прочий народ, остававшийся в городе, и переметчиков, которые передались царю Вавилонскому, и прочий простой народ выселил Навузардан, начальник телохранителей.",
+        "NEO": "Nabuzardan, capitaine des gardes, emmena captifs le reste du peuple qui était demeuré dans la ville, les transfuges qui s’étaient rendus au roi de Babylone et le reste de la multitude.",
+        "NAB": "Then Nebuzaradan, captain of the guard, led into exile the last of the people remaining in the city, and those who had deserted to the king of Babylon, and the last of the artisans.",
+        "VAT_ES": "Nebuzaradán, el comandante de la guardia, deportó a toda la población que había quedado en la ciudad, a los desertores que se habían pasado al rey de Babilonia y al resto de los artesanos.",
+        "CEI": "Nabuzardàn capo delle guardie deportò il resto del popolo che era stato lasciato in città, quanti erano passati disertori al re di Babilonia e il resto della moltitudine."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וּ/מִ/דַּלַּ֣ת הָ/אָ֔רֶץ הִשְׁאִ֖יר רַב טַבָּחִ֑ים לְ/כֹֽרְמִ֖ים וּ/לְ/יֹגְבִֽים׃",
+        "LXX": "καὶ ἀπὸ τῶν πτωχῶν τῆς γῆς ὑπέλιπεν ὁ ἀρχιμάγειρος εἰς ἀμπελουργοὺς καὶ εἰς ταβείν.",
+        "VUL": "Et de pauperibus terræ reliquit vinitores et agricolas.",
+        "SYN": "Только несколько из бедного народа земли оставил начальник телохранителей работниками в виноградниках и землепашцами.",
+        "NEO": "Le capitaine des gardes laissa comme vignerons et comme laboureurs quelques-uns des pauvres du pays.",
+        "NAB": "But some of the country's poor, Nebuzaradan, captain of the guard, left behind as vinedressers and farmers.",
+        "VAT_ES": "Pero dejó una parte de la gente pobre del país como viñadores y cultivadores.",
+        "CEI": "Il capo delle guardie lasciò alcuni fra i più poveri del paese come vignaioli e come campagnoli."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/אֶת עַמּוּדֵ֨י הַ/נְּחֹ֜שֶׁת אֲשֶׁ֣ר בֵּית יְהוָ֗ה וְֽ/אֶת הַ/מְּכֹנ֞וֹת וְ/אֶת יָ֧ם הַ/נְּחֹ֛שֶׁת אֲשֶׁ֥ר בְּ/בֵית יְהוָ֖ה שִׁבְּר֣וּ כַשְׂדִּ֑ים וַ/יִּשְׂא֥וּ אֶת נְחֻשְׁתָּ֖/ם בָּבֶֽלָ/ה׃",
+        "LXX": "καὶ τοὺς στύλους τοὺς χαλκοῦς τοὺς ἐν οἴκῳ Κυρίου καὶ τοὺς μεχωνὼθ καὶ τὴν θάλασσαν τὴν χαλκῆν τὴν ἐν οἴκῳ Κυρίου συνέτριψαν οἱ Χαλδαῖοι, καὶ ἦραν τὸν χαλκὸν αὐτῶν εἰς Βαβυλῶνα.",
+        "VUL": "Columnas autem æreas quæ erant in templo Domini, et bases, et mare æreum quod erat in domo Domini, confregerunt Chaldæi, et transtulerunt æs omne in Babylonem.",
+        "SYN": "И столбы медные, которые были у дома Господня, и подставы, и море медное, которое в доме Господнем, изломали Халдеи, и отнесли медь их в Вавилон;",
+        "NEO": "Les Chaldéens brisèrent les colonnes d’airain qui étaient dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, ainsi que les bases et la mer d’airain qui étaient dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, et ils en emportèrent l’airain à Babylone.",
+        "NAB": "The bronze pillars that belonged to the house of the LORD, and the wheeled carts and the bronze sea in the house of the LORD, the Chaldeans broke into pieces; they carried away the bronze to Babylon.",
+        "VAT_ES": "Además, los caldeos hicieron pedazos las columnas de bronce de la Casa del Señor, las bases y el Mar de bronce que estaban en la Casa del Señor, y se llevaron el bronce a Babilonia.",
+        "CEI": "I Caldei fecero a pezzi le colonne di bronzo che erano nel tempio, le basi e il bacino grande di bronzo, che erano ivi, e asportarono tutto il loro bronzo in Babilonia."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/סִּירֹ֨ת וְ/אֶת הַ/יָּעִ֜ים וְ/אֶת הַֽ/מְזַמְּר֣וֹת וְ/אֶת הַ/כַּפּ֗וֹת וְ/אֵ֨ת כָּל כְּלֵ֧י הַ/נְּחֹ֛שֶׁת אֲשֶׁ֥ר יְשָֽׁרְתוּ בָ֖/ם לָקָֽחוּ׃",
+        "LXX": "καὶ τοὺς λέβητας καὶ τὰ ἰαμεὶν καὶ τὰς φιάλας καὶ τὰς θυίσκας καὶ πάντα τὰ σκεύη τὰ χαλκᾶ ἐν οἷς λειτουργοῦσιν ἐν αὐτοῖς ἔλαβεν·",
+        "VUL": "Ollas quoque æreas, et trullas, et tridentes, et scyphos, et mortariola, et omnia vasa ærea, in quibus ministrabant, tulerunt.",
+        "SYN": "и тазы, и лопатки, и ножи, и ложки, и все сосуды медные, которые употреблялись при служении, взяли;",
+        "NEO": "Ils prirent les pots, les pelles, les couteaux, les coupes et tous les ustensiles d’airain avec lesquels on faisait le service.",
+        "NAB": "They took also the pots, the shovels, the snuffers, the bowls, the pans and all the bronze vessels used for service.",
+        "VAT_ES": "Tomaron también las ollas, las palas, los cuchillos, las fuentes y todos los objetos de bronce que servían para el culto.",
+        "CEI": "Essi presero ancora le caldaie, le palette, i coltelli, le coppe e tutte le suppellettili di bronzo che servivano al culto."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/מַּחְתּוֹת֙ וְ/אֶת הַ/מִּזְרָק֗וֹת אֲשֶׁ֤ר זָהָב֙ זָהָ֔ב וַ/אֲשֶׁר כֶּ֖סֶף כָּ֑סֶף לָקַ֖ח רַב טַבָּחִֽים׃",
+        "LXX": "καὶ τὰ πυρεῖα καὶ τὰς φιάλας τὰς χρυσᾶς καὶ τὰς ἀργυρᾶς ἔλαβεν ὁ ἀρχιμάγειρος,",
+        "VUL": "Necnon et thuribula, et phialas : quæ aurea, aurea, et quæ argentea, argentea tulit princeps militiæ,",
+        "SYN": "и кадильницы, и чаши, что было золотое и что было серебряное, взял начальник телохранителей:",
+        "NEO": "Le capitaine des gardes, prit encore les encensoirs et les tasses, ce qui était d’or et ce qui était d’argent.",
+        "NAB": "The fire-holders and the bowls which were of gold or silver the captain of the guard also carried off.",
+        "VAT_ES": "El comandante de la guardia tomó asimismo los pebeteros, los aspersorios y todos los objetos de oro y plata.",
+        "CEI": "Il capo delle guardie prese ancora i bracieri e i bacini, quanto era d'oro puro e quanto era d'argento puro."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "הָ/עַמּוּדִ֣ים שְׁנַ֗יִם הַ/יָּ֤ם הָֽ/אֶחָד֙ וְ/הַ/מְּכֹנ֔וֹת אֲשֶׁר עָשָׂ֥ה שְׁלֹמֹ֖ה לְ/בֵ֣ית יְהוָ֑ה לֹא הָיָ֣ה מִשְׁקָ֔ל לִ/נְחֹ֖שֶׁת כָּל הַ/כֵּלִ֥ים הָ/אֵֽלֶּה׃",
+        "LXX": "στύλους δύο, ἡ θάλασσα ἡ μία, καὶ τὰ μεχωνὼθ ἃ ἐποίησεν Σαλωμὼν τῷ οἴκῳ Κυρίου· οὐκ ἦν σταθμὸς τοῦ χαλκοῦ πάντων τῶν σκευῶν.",
+        "VUL": "id est, columnas duas, mare unum, et bases quas fecerat Salomon in templo Domini : non erat pondus æris omnium vasorum.",
+        "SYN": "столбы _числом_ два, море одно, и подставы, которые сделал Соломон в дом Господень, -- меди во всех сих вещах не было весу.",
+        "NEO": "Quant aux deux colonnes, à la mer et aux bases que Salomon avait faites dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, il n’y avait pas à peser l’airain de tous ces ustensiles.",
+        "NAB": "The weight in bronze of the two pillars, the bronze sea, and the wheeled carts, all of them furnishings which Solomon had made for the house of the LORD, was never calculated.",
+        "VAT_ES": "En cuanto a las dos columnas, al único Mar de bronce y a las bases que había hecho Salomón para la Casa del Señor, no se podía evaluar el peso de bronce de todos esos objetos.",
+        "CEI": "Quanto alle due colonne, al grande bacino e alle basi, tutto opera di Salomone per il tempio, non si poteva calcolare il peso del loro bronzo, cioè di tutti questi oggetti."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "שְׁמֹנֶה֩ עֶשְׂרֵ֨ה אַמָּ֜ה קוֹמַ֣ת הָ/עַמּ֣וּד הָ/אֶחָ֗ד וְ/כֹתֶ֨רֶת עָלָ֥י/ו נְחֹשֶׁת֮ וְ/קוֹמַ֣ת הַ/כֹּתֶרֶת֮ שָׁלֹ֣שׁ אמה אַמּוֹת֒ וּ/שְׂבָכָ֨ה וְ/רִמֹּנִ֧ים עַֽל הַ/כֹּתֶ֛רֶת סָבִ֖יב הַ/כֹּ֣ל נְחֹ֑שֶׁת וְ/כָ/אֵ֛לֶּה לַֽ/עַמּ֥וּד הַ/שֵּׁנִ֖י עַל הַ/שְּׂבָכָֽה׃",
+        "LXX": "ὀκτὼ καὶ δέκα πήχεων ὕψος τοῦ στύλου τοῦ ἑνός, καὶ τὸ χωθὰρ ἐπ’ αὐτοῦ τὸ χαλκοῦν, καὶ τὸ ὕψος τοῦ χωθὰρ τριῶν πήχεων σακαχαρθαὶ ἐπὶ τοῦ χωθὰρ κύκλῳ, τὰ πάντα χαλκᾶ· καὶ κατὰ τὰ αὐτὰ τῷ στύλῳ τῷ δευτέρῳ ἐπὶ τῷ γαβαχά.",
+        "VUL": "Decem et octo cubitos altitudinis habebat columna una : et capitellum æreum super se altitudinis trium cubitorum : et retiaculum, et malogranata super capitellum columnæ, omnia ærea : similem et columna secunda habebat ornatum.",
+        "SYN": "Восемнадцать локтей вышины в одном столбе; венец на нем медный, а вышина венца три локтя, и сетка и гранатовые яблоки вокруг венца -- все из меди. То же и на другом столбе с сеткою.",
+        "NEO": "La hauteur d’une colonne était de dix-huit coudées ; et il y avait au-dessus un chapiteau d’airain, et la hauteur du chapiteau était de trois coudées ; et il y avait tout autour du chapiteau un treillis et des grenades, le tout d’airain ; il en était de même de la seconde colonne avec le treillis.",
+        "NAB": "Each of the pillars was eighteen cubits high; a bronze capital five cubits high surmounted each pillar, and a network with pomegranates encircled the capital, all of bronze; and so for the other pillar, as regards the network.",
+        "VAT_ES": "La altura de una columna era de nueve metros; estaba rematada por un capitel de bronce, y la altura del capital era de un metro y medio. Sobre el capitel, todo alrededor, había una moldura en forma de red y de granadas, todo de bronce. La segunda columna, con su red, era igual a la primera.",
+        "CEI": "Delle colonne, poi, ciascuna era alta diciotto cubiti ed era sormontata da un capitello di bronzo, la cui altezza era di cinque cubiti; tutto intorno al capitello c'erano un reticolato e melagrane, tutto di bronzo; così pure era l'altra colonna."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֣ח רַב טַבָּחִ֗ים אֶת שְׂרָיָה֙ כֹּהֵ֣ן הָ/רֹ֔אשׁ וְ/אֶת צְפַנְיָ֖הוּ כֹּהֵ֣ן מִשְׁנֶ֑ה וְ/אֶת שְׁלֹ֖שֶׁת שֹׁמְרֵ֥י הַ/סַּֽף׃",
+        "LXX": "καὶ ἔλαβεν ὁ ἀρχιμάγειρος τὸν Σαραίαν ἱερέα τὸν πρῶτον καὶ τὸν Σοφονίαν υἱὸν τῆς δευτερώσεως καὶ τοὺς τρεῖς τοὺς φυλάσσοντας τὸν σταθμόν·",
+        "VUL": "Tulit quoque princeps militiæ Saraiam sacerdotem primum, et Sophoniam sacerdotem secundum, et tres janitores.",
+        "SYN": "И взял начальник телохранителей Сераию первосвященника и Цефанию, священника второго, и трех, стоявших на страже у порога.",
+        "NEO": "Le capitaine des gardes prit Saraïas, le grand-prêtre, Sophonie, prêtre de second ordre, et les trois gardiens de la porte.",
+        "NAB": "The captain of the guard also took Seraiah the high priest, Zephaniah the second priest, and the three keepers of the entry.",
+        "VAT_ES": "El comandante de la guardia apresó a Seraías, el sumo sacerdote, a Sefanías, el segundo sacerdote, y a los tres guardianes del umbral.",
+        "CEI": "Il capo delle guardie prese Seraià, sacerdote capo, e Zofonia, sacerdote del secondo ordine, insieme con tre custodi della soglia."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וּ/מִן הָ/עִ֡יר לָקַח֩ סָרִ֨יס אֶחָ֜ד אֲֽשֶׁר ה֥וּא פָקִ֣יד עַל אַנְשֵׁ֣י הַ/מִּלְחָמָ֗ה וַ/חֲמִשָּׁ֨ה אֲנָשִׁ֜ים מֵ/רֹאֵ֤י פְנֵֽי הַ/מֶּ֨לֶךְ֙ אֲשֶׁ֣ר נִמְצְא֣וּ בָ/עִ֔יר וְ/אֵ֗ת הַ/סֹּפֵר֙ שַׂ֣ר הַ/צָּבָ֔א הַ/מַּצְבִּ֖א אֶת עַ֣ם הָ/אָ֑רֶץ וְ/שִׁשִּׁ֥ים אִישׁ֙ מֵ/עַ֣ם הָ/אָ֔רֶץ הַֽ/נִּמְצְאִ֖ים בָּ/עִֽיר׃",
+        "LXX": "καὶ ἐκ τῆς πόλεως ἔλαβεν εὐνοῦχον ἕνα ὅς ἦν ἐπιστάτης τῶν ἀνδρῶν τῶν πολεμιστῶν, καὶ πέντε ἄνδρας τῶν ὁρώντων τὸ πρόσωπον τοῦ βασιλέως τοὺς εὑρεθέντας ἐν τῇ πόλει, καὶ τὸν γραμματέα τοῦ ἄρχοντος τῆς δυνάμεως τὸν ἐκτάσσοντα τὸν λαὸν τῆς γῆς, καὶ ἑξήκοντα ἄνδρας τοῦ λαοῦ τῆς γῆς τοὺς εὑρεθέντας ἐν τῇ πόλει·",
+        "VUL": "Et de civitate eunuchum unum, qui erat præfectus super bellatores viros : et quinque viros de his qui steterant coram rege, quos reperit in civitate : et Sopher principem exercitus, qui probabat tyrones de populo terræ : et sexaginta viros e vulgo, qui inventi fuerant in civitate.",
+        "SYN": "И из города взял одного евнуха, который был начальствующим над людьми военными, и пять человек, предстоявших лицу царя, которые находились в городе, и писца главного в войске, записывавшего в войско народ земли, и шестьдесят человек из народа земли, находившихся в городе.",
+        "NEO": "Dans la ville, il prit un officier qui commandait aux gens de guerre, cinq hommes faisant partie du conseil privé du roi et qui furent trouvés dans la ville, le secrétaire du chef de l’armée chargé d’enrôler le peuple du pays, et soixante hommes du peuple du pays qui se trouvaient dans la ville.",
+        "NAB": "And from the city he took one courtier, a commander of soldiers, five men in the personal service of the king who were still in the city, the scribe of the army commander, who mustered the people of the land, and sixty of the common people still remaining in the city.",
+        "VAT_ES": "En la ciudad apresó también a un eunuco, que estaba al frente de los hombres de guerra, a cinco hombres del servicio personal del rey que fueron sorprendidos en la ciudad, al secretario del jefe del ejército, encargado de enrolar al pueblo del país, y a sesenta hombres del pueblo que estaban dentro de la ciudad.",
+        "CEI": "Dalla città egli prese un funzionario, che era a capo dei guerrieri, cinque uomini fra gli intimi del re, che furono trovati in città, il segretario del capo dell'esercito, che arruolava il popolo del paese, e sessanta uomini del popolo del paese, che si trovavano in città."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֣ח אֹתָ֔/ם נְבוּזַרְאֲדָ֖ן רַב טַבָּחִ֑ים וַ/יֹּ֧לֶךְ אֹתָ֛/ם עַל מֶ֥לֶךְ בָּבֶ֖ל רִבְלָֽתָ/ה׃",
+        "LXX": "καὶ ἔλαβεν αὐτοὺς Ναβουζαρδὰν ὁ ἀρχιμάγειρος καὶ ἀπήγαγεν αὐτοὺς πρὸς τὸν βασιλέα Βαβυλῶνος εἰς Δεβλάθα.",
+        "VUL": "Quos tollens Nabuzardan princeps militum, duxit ad regem Babylonis in Reblatha.",
+        "SYN": "И взял их Навузардан, начальник телохранителей, и отвел их к царю Вавилонскому в Ривлу.",
+        "NEO": "Les ayant pris, Nabuzardan, capitaine des gardes, les conduisit vers le roi de Babylone à Rébla.",
+        "NAB": "The captain of the guard, Nebuzaradan, arrested these and brought them to the king of Babylon at Riblah;",
+        "VAT_ES": "Después de tomarlos prisioneros, Nebuzaradán, comandante de la guardia, los llevó ante el rey de Babilonia, a Riblá.",
+        "CEI": "Nabuzardàn capo delle guardie li prese e li condusse al re di Babilonia, a Ribla."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣ךְ אֹתָ/ם֩ מֶ֨לֶךְ בָּבֶ֧ל וַ/יְמִיתֵ֛/ם בְּ/רִבְלָ֖ה בְּ/אֶ֣רֶץ חֲמָ֑ת וַ/יִּ֥גֶל יְהוּדָ֖ה מֵ/עַ֥ל אַדְמָתֽ/וֹ׃",
+        "LXX": "καὶ ἔπαισεν αὐτοὺς βασιλεὺς Βαβυλῶνος καὶ ἐθανάτωσεν αὐτοὺς ἐν Ῥεβλάθα ἐν γῇ Αἱμάθ· καὶ ἀπῳκίσθη Ἰούδας ἐπάνωθεν τῆς γῆς αὐτοῦ.",
+        "VUL": "Percussitque eos rex Babylonis, et interfecit eos in Reblatha in terra Emath : et translatus est Juda de terra sua.",
+        "SYN": "И поразил их царь Вавилонский, и умертвил их в Ривле, в земле Емаф. И выселены Иудеи из земли своей.",
+        "NEO": "Et le roi de Babylone les frappa et les fit mourir à Rébla, dans le pays d’Emath.",
+        "NAB": "the king had them struck down and put to death in Riblah, in the land of Hamath. Thus was Judah exiled from her land.",
+        "VAT_ES": "El rey de Babilonia los mandó golpear y ejecutar en Riblá, en el país de Jamat. Así fue deportado Judá lejos de su tierra.",
+        "CEI": "Il re di Babilonia li fece uccidere a Ribla, nel paese di Amat. Così fu deportato Giuda dal suo paese."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/הָ/עָ֗ם הַ/נִּשְׁאָר֙ בְּ/אֶ֣רֶץ יְהוּדָ֔ה אֲשֶׁ֣ר הִשְׁאִ֔יר נְבֽוּכַדְנֶאצַּ֖ר מֶ֣לֶךְ בָּבֶ֑ל וַ/יַּפְקֵ֣ד עֲלֵי/הֶ֔ם אֶת גְּדַלְיָ֖הוּ בֶּן אֲחִיקָ֥ם בֶּן שָׁפָֽן׃",
+        "LXX": "καὶ ὁ λαὸς ὁ καταλειφθεὶς ἐν τῇ γῇ Ἰούδα οὓς κατέιλπεν Ναβουχοδονοσὸρ βασιλεὺς Βαβυλῶνος, καὶ κατέστησεν ἐπ’ αὐτῶν τὸν Γοδολίαν υἱὸν Ἀχεικὰμ υἱὸν Σαφάν.",
+        "VUL": "Populo autem qui relictus erat in terra Juda, quem dimiserat Nabuchodonosor rex Babylonis, præfecit Godoliam filium Ahicam filii Saphan.",
+        "SYN": "Над народом же, остававшимся в земле Иудейской, который оставил Навуходоносор, царь Вавилонский, -- над ними поставил начальником Годолию, сына Ахикама, сына Шафанова.",
+        "NEO": "Quant au peuple demeuré au pays de Juda qu’y laissa Nabuchodonosor, roi de Babylone, il lui donna pour gouverneur Godolias, fils d’Ahicam, fils de Saphan.",
+        "NAB": "As for the people whom he had allowed to remain in the land of Judah, Nebuchadnezzar, king of Babylon, appointed as their governor Gedaliah, son of Ahikam, son of Shaphan.",
+        "VAT_ES": "A la población que había quedado en el país, la que había dejado Nabucodonosor, rey de Babilonia, el rey le puso como gobernador a Godolías, hijo de Ajicam, hijo de Safán.",
+        "CEI": "Quanto al popolo che restava nel paese di Giuda, lasciatovi da Nabucodònosor re di Babilonia, gli fu posto a loro capo Godolia figlio di Achikam, figlio di Safàn."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמְעוּ֩ כָל שָׂרֵ֨י הַ/חֲיָלִ֜ים הֵ֣מָּה וְ/הָ/אֲנָשִׁ֗ים כִּֽי הִפְקִ֤יד מֶֽלֶךְ בָּבֶל֙ אֶת גְּדַלְיָ֔הוּ וַ/יָּבֹ֥אוּ אֶל גְּדַלְיָ֖הוּ הַ/מִּצְפָּ֑ה וְ/יִשְׁמָעֵ֣אל בֶּן נְתַנְיָ֡ה וְ/יוֹחָנָ֣ן בֶּן קָ֠רֵחַ וּ/שְׂרָיָ֨ה בֶן תַּנְחֻ֜מֶת הַ/נְּטֹפָתִ֗י וְ/יַֽאֲזַנְיָ֨הוּ֙ בֶּן הַ/מַּ֣עֲכָתִ֔י הֵ֖מָּה וְ/אַנְשֵׁי/הֶֽם׃",
+        "LXX": "Καὶ ἤκουσαν πάντες οἱ ἄρχοντες τῆς δυνάμεως, αὐτοὶ καὶ οἱ ἄνδρες αὐτῶν, ὅτι κατέστησεν βασιλεὺς Βαβυλῶνος τὸν Γοδολίαν· καὶ ἦλθον πρὸς Γοδολίαν εἰς Μασσηφάθ, καὶ Ἰσμαὴλ υἱὸς Ναθανίου καὶ Ἰωνὰ υἱὸς Καρὴθ καὶ Σαραίας υἱὸς Θανέμαθ ὁ Νεφφαθιείτης καὶ Ὀζονίας υἱὸς τοῦ Ἀχαθεί, αὐτοὶ καὶ οἱ ἄνδρες αὐτῶν.",
+        "VUL": "Quod cum audissent omnes duces militum, ipsi et viri qui erant cum eis, videlicet quod constituisset rex Babylonis Godoliam, venerunt ad Godoliam in Maspha, Ismahel filius Nathaniæ, et Johanan filius Caree, et Saraia filius Thanehumeth Netophathites, et Jezonias filius Maachathi, ipsi et socii eorum.",
+        "SYN": "Когда услышали все военачальники, они и люди их, что царь Вавилонский поставил начальником Годолию, то пришли к Годолии в Массифу, и _именно:_ Исмаил, сын Нефании, и Иоханан, сын Карея, и Сераия, сын Танхумефа из Нетофафа, и Иезания, сын Маахитянина, они и люди их.",
+        "NEO": "Lorsque tous les chefs des troupes eurent appris, eux et leurs hommes, que le roi de Babylone avait établi Godolias pour gouverneur, ils vinrent vers Godolias à Maspha, savoir, Ismaël, fils de Nathanias, Johanan, fils de Carée, Saraïas, fils de Thanéhumeth, de Nétopha, et Jézonias, fils du Maachathien, eux et leurs hommes.",
+        "NAB": "Hearing that the king of Babylon had appointed Gedaliah governor, all the army commanders with their men came to him at Mizpah: Ishmael, son of Nethaniah, Johanan, son of Kareah, Seraiah, son of Tanhumeth the Netophathite, and Jaazaniah, from Beth-maacah.",
+        "VAT_ES": "Todos los jefes de las tropas, lo mismo que sus hombres, se enteraron de que el rey de Babilonia había nombrado gobernador a Godolías, y se presentaron ante él en Mispá: eran Ismael, hijo de Natanías, Iojanán, hijo de Caréaj, Seraías, hijo de Tanjumet, el netofita, y Iazanías, hijo del maacatita, junto con sus hombres.",
+        "CEI": "Quando tutti i capi delle bande armate e i loro uomini seppero che il re di Babilonia aveva fatto governatore Godolia, si presentarono a costui in Mizpà. Essi erano: Ismaele figlio di Netania, Giovanni figlio di Kareach, Seraia figlio di Tancùmet, il Netofatita e Iaazania figlio del Maacateo, insieme con i loro uomini."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּשָּׁבַ֨ע לָ/הֶ֤ם גְּדַלְיָ֨הוּ֙ וּ/לְ/אַנְשֵׁי/הֶ֔ם וַ/יֹּ֣אמֶר לָ/הֶ֔ם אַל תִּֽירְא֖וּ מֵ/עַבְדֵ֣י הַ/כַּשְׂדִּ֑ים שְׁב֣וּ בָ/אָ֗רֶץ וְ/עִבְד֛וּ אֶת מֶ֥לֶךְ בָּבֶ֖ל וְ/יִטַ֥ב לָ/כֶֽם׃",
+        "LXX": "καὶ ὤμοσεν Γοδολίας αὐτοῖς καὶ τοῖς ἀνδράσιν αὐτῶν, καὶ εἶπεν αὐτοῖς Μὴ φοβεῖσθε πάροδον τῶν Χαλδαίων· καθίσατε ἐν τῇ γῇ καὶ δουλεύσατε τῷ βασιλεῖ Βαβυλῶνος, καὶ καλῶς ἔσται ὑμῖν.",
+        "VUL": "Juravitque Godolias ipsis et sociis eorum, dicens : Nolite timere servire Chaldæis : manete in terra, et servite regi Babylonis, et bene erit vobis.",
+        "SYN": "И поклялся Годолия им и людям их, и сказал им: не бойтесь быть подвластными Халдеям, селитесь на земле и служите царю Вавилонскому, и будет хорошо вам.",
+        "NEO": "Godolias leur dit avec serment, à eux et à leurs hommes : « Ne craignez rien de la part des serviteurs des Chaldéens ; demeurez dans le pays, servez le roi de Babylone, et vous vous en trouverez bien. »",
+        "NAB": "Gedaliah gave the commanders and their men his oath. \"Do not be afraid of the Chaldean officials,\" he said to them. \"Remain in the country and serve the king of Babylon, and all will be well with you.\"",
+        "VAT_ES": "Godolías les hizo un juramento, a ellos y a sus hombres, y les dijo: «No tengan miedo de servir a los caldeos; permanezcan en el país, sirvan al rey de Babilonia, y les irá bien».",
+        "CEI": "Godolia giurò a loro e ai loro uomini: \"Non temete da parte degli ufficiali dei Caldei; rimanete nel paese e servite il re di Babilonia; sarà per il vostro meglio\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י בַּ/חֹ֣דֶשׁ הַ/שְּׁבִיעִ֗י בָּ֣א יִשְׁמָעֵ֣אל בֶּן נְ֠תַנְיָה בֶּן אֱלִ֨ישָׁמָ֜ע מִ/זֶּ֣רַע הַ/מְּלוּכָ֗ה וַ/עֲשָׂרָ֤ה אֲנָשִׁים֙ אִתּ֔/וֹ וַ/יַּכּ֥וּ אֶת גְּדַלְיָ֖הוּ וַ/יָּמֹ֑ת וְ/אֶת הַ/יְּהוּדִים֙ וְ/אֶת הַ/כַּשְׂדִּ֔ים אֲשֶׁר הָי֥וּ אִתּ֖/וֹ בַּ/מִּצְפָּֽה׃",
+        "LXX": "καὶ ἐγενήθη ἐν τῷ ἑβδόμῳ μηνὶ ἦλθεν Μαναὴλ υἱὸς Ναθανίου υἱὸς Ἐλεισαμὰ ἐκ τοῦ σπέρματος τῶν βασιλέων, καὶ ἄνδρες μετ’ αὐτοῦ· καὶ ἐπάταξεν τὸν Γοδολίαν καὶ ἀπέθανεν, καὶ τοὺς Ἰουδαίους καὶ τοὺς Χαλδαίους οἳ ἦσαν μετ’ αὐτοῦ εἰς Μασσηφάθ.",
+        "VUL": "Factum est autem in mense septimo, venit Ismahel filius Nathaniæ filii Elisama de semine regio, et decem viri cum eo : percusseruntque Godoliam, qui et mortuus est : sed et Judæos et Chaldæos qui erant cum eo in Maspha.",
+        "SYN": "Но в седьмой месяц пришел Исмаил, сын Нефании, сына Елишамы, из племени царского, с десятью человеками, и поразил Годолию, и он умер, и Иудеев и Халдеев, которые были с ним в Массифе.",
+        "NEO": "Mais, le septième mois, Ismaël, fils de Nathanias, fils d’Elisama, de la race royale, vint accompagné de dix hommes, et ils frappèrent à mort Godolias, ainsi que les Juifs et les Chaldéens qui étaient avec lui à Maspha.",
+        "NAB": "But in the seventh month Ishmael, son of Nethaniah, son of Elishama, of royal descent, came with ten men, attacked Gedaliah and killed him, along with the Jews and Chaldeans who were in Mizpah with him.",
+        "VAT_ES": "Pero en el séptimo mes, Ismael, hijo de Natanías, hijo de Elisamá, que era de estirpe real, llegó con diez hombres, y ellos mataron a Godolías y a los judíos y caldeos que estaban con él en Mispá.",
+        "CEI": "Nel settimo mese venne Ismaele figlio di Netania, figlio di Elisama, di stirpe regale, con dieci uomini; costoro colpirono a morte Godolia, i Giudei e i Caldei che erano con lui in Mizpà."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יָּקֻ֨מוּ כָל הָ/עָ֜ם מִ/קָּטֹ֤ן וְ/עַד גָּדוֹל֙ וְ/שָׂרֵ֣י הַ/חֲיָלִ֔ים וַ/יָּבֹ֖אוּ מִצְרָ֑יִם כִּ֥י יָרְא֖וּ מִ/פְּנֵ֥י כַשְׂדִּֽים׃",
+        "LXX": "καὶ ἀνέστη πᾶς ὁ λαὸς ἀπὸ μικροῦ καὶ ἕως μεγάλου καὶ οἱ ἄρχοντες τῶν δυνάμεων καὶ εἰσῆλθον εἰς Αἴγυπτον, ὅτι ἐφοβήθησαν ἀπὸ προσώπου τῶν Χαλδαίων.",
+        "VUL": "Consurgensque omnis populus a parvo usque ad magnum, et principes militum, venerunt in Ægyptum timentes Chaldæos.",
+        "SYN": "И встал весь народ, от малого до большого, и военачальники, и пошли в Египет, потому что боялись Халдеев.",
+        "NEO": "Alors tout le peuple, depuis le plus petit jusqu’au plus grand, et les chefs des troupes, se levèrent et s’en allèrent en Égypte, parce qu’ils avaient peur des Chaldéens.",
+        "NAB": "Then all the people, great and small, left with the army commanders and went to Egypt for fear of the Chaldeans.",
+        "VAT_ES": "Entonces todo el pueblo, desde el más pequeño hasta el más grande, y los jefes de las tropas, partieron y se fueron a Egipto, por miedo a los caldeos.",
+        "CEI": "Tutti, dal più piccolo al più grande, e tutti i capi delle bande armate si mossero per andare in Egitto, perché temevano da parte dei Caldei."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֩ בִ/שְׁלֹשִׁ֨ים וָ/שֶׁ֜בַע שָׁנָ֗ה לְ/גָלוּת֙ יְהוֹיָכִ֣ין מֶֽלֶךְ יְהוּדָ֔ה בִּ/שְׁנֵ֤ים עָשָׂר֙ חֹ֔דֶשׁ בְּ/עֶשְׂרִ֥ים וְ/שִׁבְעָ֖ה לַ/חֹ֑דֶשׁ נָשָׂ֡א אֱוִ֣יל מְרֹדַךְ֩ מֶ֨לֶךְ בָּבֶ֜ל בִּ/שְׁנַ֣ת מָלְכ֗/וֹ אֶת רֹ֛אשׁ יְהוֹיָכִ֥ין מֶֽלֶךְ יְהוּדָ֖ה מִ/בֵּ֥ית כֶּֽלֶא׃",
+        "LXX": "Καὶ ἐγενήθη ἐν τῷ τριακοστῷ ἑβδόμῳ ἔτει τῆς ἀποικίας τοῦ Ἰωακεὶμ βασιλέως Ἰούδα, ἐν τῷ δωδεκάτῳ μηνὶ ἑβδόμῃ καὶ εἰκάδι τοῦ μηνός, ὕψωσεν Εὐειαλμαρωδὲκ βασιλεὺς Βαβυλῶνος ἐν τῷ ἐνιαυτῷ τῆς βασιλείας αὐτοῦ τὴν κεφαλὴν Ἰωακεὶμ τοῦ βασιλέως Ἰούδα, καὶ ἐξήγαγεν αὐτὸν ἐξ οἴκου φυλακῆς αὐτοῦ.",
+        "VUL": "Factum est vero in anno trigesimo septimo transmigrationis Joachin regis Juda, mense duodecimo, vigesima septima die mensis : sublevavit Evilmerodach rex Babylonis, anno quo regnare cperat, caput Joachin regis Juda de carcere.",
+        "SYN": "В тридцать седьмой год переселения Иехонии, царя Иудейского, в двенадцатый месяц, в двадцать седьмой день месяца, Евилмеродах, царь Вавилонский, в год своего воцарения, вывел Иехонию, царя Иудейского, из дома темничного",
+        "NEO": "La trente-septième année de la captivité de Joachin, roi de Juda, le douzième mois, le vingt-septième jour du mois, Evil-Mérodach, roi de Babylone, en l’année de son avènement, releva la tête de Joachin, roi de Juda, et le tira de prison.",
+        "NAB": "In the thirty-seventh year of the exile of Jehoiachin, king of Judah, on the twenty-seventh day of the twelfth month, Evilmerodach, king of Babylon, in the inaugural year of his own reign, raised up Jehoiachin, king of Judah, from prison.",
+        "VAT_ES": "El trigésimo séptimo año de la deportación de Joaquín, rey de Judá, el día veintisiete del duodécimo mes, Evil Merodac, rey de Babilonia, en el año de su entronización, indultó a Joaquín, rey de Judá, y lo hizo salir de la prisión.",
+        "CEI": "Ora nell'anno trentasette della deportazione di Ioiachìn, re di Giuda, nel decimosecondo mese, il ventisette del mese, Evil-Merodach re di Babilonia, nell'anno in cui divenne re, fece grazia a Ioiachìn re di Giuda e lo fece uscire dalla prigione."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר אִתּ֖/וֹ טֹב֑וֹת וַ/יִּתֵּן֙ אֶת כִּסְא֔/וֹ מֵ/עַ֗ל כִּסֵּ֧א הַ/מְּלָכִ֛ים אֲשֶׁ֥ר אִתּ֖/וֹ בְּ/בָבֶֽל׃",
+        "LXX": "καὶ ἐλάλησεν μετ’ αὐτοῦ ἀγαθά, καὶ ἔδωκεν τὸν θρόνον αὐτοῦ ἐπάνωθεν τῶν θρόνων τῶν βασιλέων τῶν μετ’ αὐτοῦ ἐν Βαβυλῶνι.",
+        "VUL": "Et locutus est ei benigne, et posuit thronum ejus super thronum regum qui erant cum eo in Babylone.",
+        "SYN": "и говорил с ним дружелюбно, и поставил престол его выше престола царей, которые были у него в Вавилоне;",
+        "NEO": "Il lui parla avec bonté, et il mit son trône au-dessus du trône des rois qui étaient avec lui à Babylone.",
+        "NAB": "He spoke kindly to him and gave him a throne higher than that of the other kings who were with him in Babylon.",
+        "VAT_ES": "Le habló amigablemente y le asignó un sitial más elevado que el de los reyes que estaban con él en Babilonia.",
+        "CEI": "Gli parlò con benevolenza, gli assegnò un seggio superiore ai seggi dei re che si trovavano con lui in Babilonia"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/שִׁנָּ֕א אֵ֖ת בִּגְדֵ֣י כִלְא֑/וֹ וְ/אָכַ֨ל לֶ֧חֶם תָּמִ֛יד לְ/פָנָ֖י/ו כָּל יְמֵ֥י חַיָּֽי/ו׃",
+        "LXX": "καὶ ἠλλοίωσεν τὰ ἱμάτια τῆς φυλακῆς αὐτοῦ, καὶ ἤσθιεν ἄρτον διὰ παντὸς ἐνώπιον αὐτοῦ πάσας τὰς ἡμέρας τῆς ζωῆς αὐτοῦ.",
+        "VUL": "Et mutavit vestes ejus quas habuerat in carcere, et comedebat panem semper in conspectu ejus cunctis diebus vitæ suæ.",
+        "SYN": "и переменил темничные одежды его, и он всегда имел пищу у него, во все дни жизни его.",
+        "NEO": "Il lui fit changer ses vêtements de prison, et Joachin mangea toujours en sa présence, tout le temps de sa vie.",
+        "NAB": "Jehoiachin took off his prison garb and ate at the king's table as long as he lived.",
+        "VAT_ES": "Le hizo cambiar su ropa de prisionero, y Joaquín comió siempre en su presencia, durante toda su vida.",
+        "CEI": "e gli fece cambiare le vesti che aveva portato nella prigione. Ioiachìn mangiò sempre dalla tavola del re per tutto il resto della sua vita."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/אֲרֻחָת֗/וֹ אֲרֻחַ֨ת תָּמִ֧יד נִתְּנָה לּ֛/וֹ מֵ/אֵ֥ת הַ/מֶּ֖לֶךְ דְּבַר י֣וֹם בְּ/יוֹמ֑/וֹ כֹּ֖ל יְמֵ֥י חַיָּֽ/ו׃",
+        "LXX": "καὶ ἡ ἑστιατορεία αὐτοῦ ἑστιατορεία διὰ παντός· ἐδόθη αὐτῷ ἐξ οἴκου τοῦ βασιλέως, λόγον ἡμέρας ἐν τῇ ἡμέρᾳ αὐτοῦ, πάσας τὰς ἡμέρας τῆς ζωῆς αὐτοῦ.",
+        "VUL": "Annonam quoque constituit ei sine intermissione, quæ et dabatur ei a rege per singulos dies omnibus diebus vitæ suæ.",
+        "SYN": "И содержание его, содержание постоянное, выдаваемо было ему от царя, изо дня в день, во все дни жизни его.",
+        "NEO": "Quant à son entretien, son entretien perpétuel, le roi y pourvut chaque jour, tout le temps de sa vie.",
+        "NAB": "The allowance granted him by the king was a perpetual allowance, in fixed daily amounts, for as long as he lived.",
+        "VAT_ES": "Su mantenimiento fue asegurado por el rey con una asignación regular para cada día, durante toda su vida.",
+        "CEI": "Il suo vitto quotidiano gli fu assicurato sempre dal re di Babilonia, finché visse."
+      }
+    }
+  }
+}

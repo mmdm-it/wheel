@@ -1,0 +1,245 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_041",
+  "book_key": "PSAL",
+  "sequence": 41,
+  "chapter_in": {
+    "MT": 41,
+    "VUL": 40,
+    "LXX": 40
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֗חַ מִזְמ֥וֹר לְ/דָוִֽד׃",
+        "LXX": "Εἰς τὸ τέλος· εἰς σύνεσιν τοῖς υἱοῖς Κόρε.",
+        "VUL": "In finem. Intellectus filiis Core.",
+        "SYN": "Начальнику хора. Учение. Сынов Кореевых.",
+        "NEO": "Au maître de chant. Psaume de David.",
+        "NAB": "For the leader. A psalm of David.",
+        "CEI": "Al maestro del coro. Salmo. Di Davide."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אַ֭שְׁרֵי מַשְׂכִּ֣יל אֶל דָּ֑ל בְּ/י֥וֹם רָ֝עָ֗ה יְֽמַלְּטֵ֥/הוּ יְהוָֽה׃",
+        "LXX": "Ὃν τρόπον ἐπιποθεῖ ἡ ἔλαφος ἐπὶ τὰς πηγὰς τῶν ὑδάτων, οὕτως ἐπιποθεῖ ἡ ψυχή μου πρὸς σέ, ὁ θεός.",
+        "VUL": "[Quemadmodum desiderat cervus ad fontes aquarum,/ ita desiderat anima mea ad te, Deus./",
+        "SYN": "Как лань желает к потокам воды, так желает душа моя к Тебе, Боже!",
+        "NEO": "Heureux celui qui prend souci du pauvre !",
+        "NAB": "Happy those concerned for the lowly and poor; when misfortune strikes, the LORD delivers them.",
+        "VAT_ES": "Feliz el que se ocupa del débil y del pobre:",
+        "CEI": "Beato l'uomo che ha cura del debole, nel giorno della sventura il Signore lo libera."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "יְהוָ֤ה יִשְׁמְרֵ֣/הוּ וִֽ֭/יחַיֵּ/הוּ יאשר וְ/אֻשַּׁ֣ר בָּ/אָ֑רֶץ וְ/אַֽל תִּ֝תְּנֵ֗/הוּ בְּ/נֶ֣פֶשׁ אֹיְבָֽי/ו׃",
+        "LXX": "ἐδίψησεν ἡ ψυχή μου πρὸς τὸν θεὸν τὸν ζῶντα· πότε ἥξω καὶ ὀφθήσομαι τῷ προσώπῳ τοῦ θεοῦ;",
+        "VUL": "Sitivit anima mea ad Deum fortem, vivum ;/ quando veniam, et apparebo ante faciem Dei ?/",
+        "SYN": "Жаждет душа моя к Богу крепкому, живому: когда приду и явлюсь пред лице Божие!",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** le gardera et le fera vivre ;",
+        "NAB": "The LORD keeps and preserves them, makes them happy in the land, and does not betray them to their enemies.",
+        "VAT_ES": "El Señor lo protegerá y le dará larga vida,",
+        "CEI": "Veglierà su di lui il Signore, lo farà vivere beato sulla terra, non lo abbandonerà alle brame dei nemici."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "יְֽהוָ֗ה יִ֭סְעָדֶ/נּוּ עַל עֶ֣רֶשׂ דְּוָ֑י כָּל מִ֝שְׁכָּב֗/וֹ הָפַ֥כְתָּ בְ/חָלְיֽ/וֹ׃",
+        "LXX": "ἐγενήθη τὰ δάκρυά μου ἄρτος ἡμέρας καὶ νυκτός, ἐν τῷ λέγεσθαί μοι καθ’ ἑκάστην ἡμέραν Ποῦ ἐστιν ὁ θεός σου;",
+        "VUL": "Fuerunt mihi lacrimæ meæ panes die ac nocte,/ dum dicitur mihi quotidie : Ubi est Deus tuus ?/",
+        "SYN": "Слезы мои были для меня хлебом день и ночь, когда говорили мне всякий день: \"где Бог твой?\"",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** l’assistera sur son lit+ 41:4 \\+it Tu retourneras toute sa couche dans sa maladie\\+it* pour la rendre plus douce, comme fait une mère pour son enfant.* de douleur ; tu retourneras toute sa couche dans sa maladie.",
+        "NAB": "The LORD sustains them on their sickbed, allays the malady when they are ill.",
+        "VAT_ES": "El Señor lo sostendrá en su lecho de dolor",
+        "CEI": "Il Signore lo sosterrà sul letto del dolore; gli darai sollievo nella sua malattia."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אֲֽנִי אָ֭מַרְתִּי יְהוָ֣ה חָנֵּ֑/נִי רְפָאָ֥/ה נַ֝פְשִׁ֗/י כִּי חָטָ֥אתִי לָֽ/ךְ׃",
+        "LXX": "ταῦτα ἐμνήσθην, καὶ ἐξέχεα ἐπ’ ἐμὲ τὴν ψυχήν μου· ὅτι διελεύσομαι ἐν τόπῳ σκηνῆς θαυμαστῆς ἕως τοῦ οἴκου τοῦ θεοῦ, ἐν φωνῇ ἀγαλλιάσεως καὶ ἐξομολογήσεως, ἤχου ἑορταζόντων.",
+        "VUL": "Hæc recordatus sum, et effudi in me animam meam,/ quoniam transibo in locum tabernaculi admirabilis, usque ad domum Dei,/ in voce exsultationis et confessionis, sonus epulantis./",
+        "SYN": "Вспоминая об этом, изливаю душу мою, потому что я ходил в многолюдстве, вступал с ними в дом Божий со гласом радости и славословия празднующего сонма.",
+        "NEO": "Moi, je dis : « \\+w Yahweh|strong=\"H3068\"\\+w**, aie pitié de moi ! guéris mon âme, car j’ai péché contre toi ! »",
+        "NAB": "Once I prayed, \"LORD, have mercy on me; heal me, I have sinned against you.",
+        "VAT_ES": "Yo dije: «Ten piedad de mí, Señor,",
+        "CEI": "Io ho detto: \"Pietà di me, Signore; risanami, contro di te ho peccato\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אוֹיְבַ֗/י יֹאמְר֣וּ רַ֣ע לִ֑/י מָתַ֥י יָ֝מ֗וּת וְ/אָבַ֥ד שְׁמֽ/וֹ׃",
+        "LXX": "ἵνα τί περίλυπος εἶ, ἡ ψυχή, καὶ ἵνα τί συνταράσσεις με; ⸆ ἔλπισον ἐπὶ τὸν θεόν, ὅτι ἐξομολογήσομαι αὐτῷ· σωτήριον τοῦ προσώπου μου ὁ θεός μου.",
+        "VUL": "Quare tristis es, anima mea ?/ et quare conturbas me ?/ Spera in Deo, quoniam adhuc confitebor illi,/ salutare vultus mei,/",
+        "SYN": "Что унываешь ты, душа моя, и что смущаешься? Уповай на Бога, ибо я буду еще славить Его, Спасителя моего и Бога моего.",
+        "NEO": "Et mes ennemis profèrent contre moi des malédictions :",
+        "NAB": "My enemies say the worst of me: 'When will that one die and be forgotten?'",
+        "VAT_ES": "Mis enemigos sólo me auguran desgracias:",
+        "CEI": "I nemici mi augurano il male: \"Quando morirà e perirà il suo nome?\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/אִם בָּ֤א לִ/רְא֨וֹת שָׁ֤וְא יְדַבֵּ֗ר לִבּ֗/וֹ יִקְבָּץ אָ֥וֶן ל֑/וֹ יֵצֵ֖א לַ/ח֣וּץ יְדַבֵּֽר׃",
+        "LXX": "πρὸς ἐμαυτὸν ἡ ψυχή μου ἐταράχθη· διὰ τοῦτο μνησθήσομαί σου ἐκ γῆς Ἰορδάνου καὶ Ἑρμωνιείμ, ἀπὸ ὄρους μικροῦ.",
+        "VUL": "et Deus meus./ Ad meipsum anima mea conturbata est :/ propterea memor ero tui de terra Jordanis et Hermoniim a monte modico./",
+        "SYN": "Унывает во мне душа моя; посему я воспоминаю о Тебе с земли Иорданской, с Ермона, с горы Цоар.",
+        "NEO": "Si quelqu’un vient me visiter, il ne profère que mensonges ; son cœur recueille l’iniquité ; quand il s’en va, il parle au dehors.",
+        "NAB": "When people come to visit me, they speak without sincerity. Their hearts store up malice; they leave and spread their vicious lies.",
+        "VAT_ES": "Si alguien me visita, habla con falsedad,",
+        "CEI": "Chi viene a visitarmi dice il falso, il suo cuore accumula malizia e uscito fuori sparla."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "יַ֗חַד עָלַ֣/י יִ֭תְלַחֲשׁוּ כָּל שֹׂנְאָ֑/י עָלַ֓/י יַחְשְׁב֖וּ רָעָ֣ה לִֽ/י׃",
+        "LXX": "ἄβυσσος ἄβυσσον ἐπικαλεῖται εἰς φωνὴν τῶν καταρακτῶν σου· πάντες οἱ μετεωρισμοί σου καὶ τὰ κύματά σου ἐπ’ ἐμὲ διῆλθον.",
+        "VUL": "Abyssus abyssum invocat, in voce cataractarum tuarum ;/ omnia excelsa tua, et fluctus tui super me transierunt./",
+        "SYN": "Бездна бездну призывает голосом водопадов Твоих; все воды Твои и волны Твои прошли надо мною.",
+        "NEO": "Tous mes ennemis chuchotent ensemble contre moi, contre moi ils méditent le malheur.",
+        "NAB": "My foes all whisper against me; they imagine the worst about me:",
+        "VAT_ES": "Mis adversarios se juntan para murmurar contra mí,",
+        "CEI": "Contro di me sussurrano insieme i miei nemici, contro di me pensano il male:"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "דְּֽבַר בְּ֭לִיַּעַל יָצ֣וּק בּ֑/וֹ וַ/אֲשֶׁ֥ר שָׁ֝כַ֗ב לֹא יוֹסִ֥יף לָ/קֽוּם׃",
+        "LXX": "ἡμέρας ἐντελεῖται Κύριος τὸ ἔλεος αὐτοῦ, καὶ νυκτὸς δηλώσει· παρ’ ἐμοὶ προσευχὴ τῷ θεῷ τῆς ζωῆς μου.",
+        "VUL": "In die mandavit Dominus misericordiam suam,/ et nocte canticum ejus ;/ apud me oratio Deo vitæ meæ./",
+        "SYN": "Днем явит Господь милость Свою, и ночью песнь Ему у меня, молитва к Богу жизни моей.",
+        "NEO": "« Un mal irrémédiable+ 41:9 \\+it Un mal irrémédiable\\+it*. LXX \\+it ils répètent contre moi cette parole inique : “N’est ce pas que celui qui est là couché ne se relèvera jamais ?”\\+it**, disent-ils*, a fondu sur lui ; le voilà couché,",
+        "NAB": "I have a deadly disease, they say; I will never rise from my sickbed.",
+        "VAT_ES": "«Una enfermedad incurable ha caído sobre él;",
+        "CEI": "\"Un morbo maligno su di lui si è abbattuto, da dove si è steso non potrà rialzarsi\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "גַּם אִ֤ישׁ שְׁלוֹמִ֨/י אֲשֶׁר בָּטַ֣חְתִּי ב֭/וֹ אוֹכֵ֣ל לַחְמִ֑/י הִגְדִּ֖יל עָלַ֣/י עָקֵֽב׃",
+        "LXX": "ἐρῶ τῷ θεῷ Ἀντιλήμπτωρ μου εἶ, διὰ τὶ μου ἐπελάθου; ἵνα τὶ σκυθρωπάζων πορεύομαι ἐν τῷ ἐκθλίβειν τὸν ἐχθρόν μου;",
+        "VUL": "Dicam Deo : Susceptor meus es ;/ quare oblitus es mei ?/ et quare contristatus incedo, dum affligit me inimicus ?/",
+        "SYN": "Скажу Богу, заступнику моему: для чего Ты забыл меня? Для чего я сетуя хожу от оскорблений врага?",
+        "NEO": "Même l’homme qui était mon ami,",
+        "NAB": "Even the friend who had my trust, who shared my table, has scorned me.",
+        "VAT_ES": "Hasta mi amigo más íntimo, en quien yo confiaba,",
+        "CEI": "Anche l'amico in cui confidavo, anche lui, che mangiava il mio pane, alza contro di me il suo calcagno."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֤ה יְהוָ֗ה חָנֵּ֥/נִי וַ/הֲקִימֵ֑/נִי וַֽ/אֲשַׁלְּמָ֥ה לָ/הֶֽם׃",
+        "LXX": "ἐν τῷ καταθλάσαι τὰ ὀστᾶ μου ὠνείδισάν με οἱ θλίβοντές με, ἐν τῷ λέγειν αὐτούς μοι καθ’ ἑκάστην ἡμέραν Ποῦ ἐστιν ὁ θεός σου;",
+        "VUL": "Dum confringuntur ossa mea,/ exprobraverunt mihi qui tribulant me inimici mei,/ dum dicunt mihi per singulos dies : Ubi est Deus tuus ?/",
+        "SYN": "Как бы поражая кости мои, ругаются надо мною враги мои, когда говорят мне всякий день: \"где Бог твой?\"",
+        "NEO": "Toi, \\+w Yahweh|strong=\"H3068\"\\+w**, aie pitié de moi et relève-moi,",
+        "NAB": "But you, LORD, have mercy and raise me up that I may repay them as they deserve.\"",
+        "VAT_ES": "Pero tú, Señor, ten piedad de mí;",
+        "CEI": "Ma tu, Signore, abbi pietà e sollevami, che io li possa ripagare."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "בְּ/זֹ֣את יָ֭דַעְתִּי כִּֽי חָפַ֣צְתָּ בִּ֑/י כִּ֤י לֹֽא יָרִ֖יעַ אֹיְבִ֣/י עָלָֽ/י׃",
+        "LXX": "ἵνα τί περίλυπος εἶ, ἡ ψυχή, καὶ ἵνα τί συνταράσσεις με; ἔλπισον ἐπὶ τὸν θεόν, ὅτι ἐξομολογήσομαι αὐτῷ· ἡ σωτηρία τοῦ προσώπου μου ὁ θεός μου.",
+        "VUL": "Quare tristis es, anima mea ?/ et quare conturbas me ?/ Spera in Deo, quoniam adhuc confitebor illi,/ salutare vultus mei, et Deus meus.]",
+        "SYN": "Что унываешь ты, душа моя, и что смущаешься? Уповай на Бога, ибо я буду еще славить Его, Спасителя моего и Бога моего.",
+        "NEO": "Je connaîtrai que tu m’aimes,",
+        "NAB": "By this I know you are pleased with me, that my enemy no longer jeers at me.",
+        "VAT_ES": "En esto reconozco que tú me amas,",
+        "CEI": "Da questo saprò che tu mi ami se non trionfa su di me il mio nemico;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֗י בְּ֭/תֻמִּ/י תָּמַ֣כְתָּ בִּ֑/י וַ/תַּצִּיבֵ֖/נִי לְ/פָנֶ֣י/ךָ לְ/עוֹלָֽם׃",
+        "NEO": "À cause de mon innocence, tu m’as soutenu,",
+        "NAB": "For my integrity you have supported me and let me stand in your presence forever.",
+        "VAT_ES": "Tú me sostuviste a causa de mi integridad,",
+        "CEI": "per la mia integrità tu mi sostieni, mi fai stare alla tua presenza per sempre."
+      }
+    }
+  }
+}

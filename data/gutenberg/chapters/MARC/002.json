@@ -1,0 +1,491 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MARC_002",
+  "book_key": "MARC",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Καὶ εἰσῆλθεν πάλιν εἰς Καπερναοὺμ δι’ ἡμερῶν· καὶ ἠκούσθη ὅτι εἰς οἶκόν ἐστιν.",
+        "VUL": "Et iterum intravit Capharnaum post dies,",
+        "SYN": "Через _несколько_ дней опять пришел Он в Капернаум; и слышно стало, что Он в доме.",
+        "NEO": "Quelque temps après+ 2:1 II, 1. Litt. après des jours, locution hébraïque signifiant une durée indéterminée. Matth. ix, 1-8 ; Luc, v, 17-26.*, Jésus* revint à Capharnaüm. Lorsqu’on entendit qu’il était dans la maison+ 2:1 \\+it La maison\\+it* : celle de Pierre.*,",
+        "NAB": "When Jesus returned to Capernaum after some days, it became known that he was at home.",
+        "VAT_ES": "Unos días después, Jesús volvió a Cafarnaúm y se difundió la noticia de que estaba en la casa.",
+        "CEI": "Poiché molti han posto mano a stendere un racconto degli avvenimenti successi tra di noi,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Καὶ εὐθέως συνήχθησαν πολλοί, ὥστε μηκέτι χωρεῖν μηδὲ τὰ πρὸς τὴν θύραν· καὶ ἐλάλει αὐτοῖς τὸν λόγον.",
+        "VUL": "et auditum est quod in domo esset, et convenerunt multi, ita ut non caperet neque ad januam, et loquebatur eis verbum.",
+        "SYN": "Тотчас собрались многие, так что уже и у дверей не было места; и Он говорил им слово.",
+        "NEO": "il s’y assembla aussitôt un si grand nombre de personnes*, qu’elles ne pouvaient trouver place, pas même aux abords de la porte ; et il leur annonçait la parole.",
+        "NAB": "Many gathered together so that there was no longer room for them, not even around the door, and he preached the word to them.",
+        "VAT_ES": "Se reunió tanta gente, que no había más lugar ni siguiera delante de la puerta, y él les anunciaba la Palabra.",
+        "CEI": "come ce li hanno trasmessi coloro che ne furono testimoni fin da principio e divennero ministri della parola,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Καὶ ἔρχονται πρὸς αὐτόν, παραλυτικὸν φέροντες, αἰρόμενον ὑπὸ τεσσάρων.",
+        "VUL": "Et venerunt ad eum ferentes paralyticum, qui a quatuor portabatur.",
+        "SYN": "И пришли к Нему с расслабленным, которого несли четверо;",
+        "NEO": "Alors on lui amena un paralytique porté par quatre hommes*.",
+        "NAB": "They came bringing to him a paralytic carried by four men.",
+        "VAT_ES": "Le trajeron entonces a un paralítico, llevándolo entre cuatro hombres.",
+        "CEI": "così ho deciso anch'io di fare ricerche accurate su ogni circostanza fin dagli inizi e di scriverne per te un resoconto ordinato, illustre Teòfilo,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Καὶ μὴ δυνάμενοι προσεγγίσαι αὐτῷ διὰ τὸν ὄχλον, ἀπεστέγασαν τὴν στέγην ὅπου ἦν, καὶ ἐξορύξαντες χαλῶσιν τὸν κράββατον ἐφ’ ᾧ ὁ παραλυτικὸς κατέκειτο.",
+        "VUL": "Et cum non possent offerre eum illi præ turba, nudaverunt tectum ubi erat : et patefacientes submiserunt grabatum in quo paralyticus jacebat.",
+        "SYN": "и, не имея возможности приблизиться к Нему за многолюдством, раскрыли _кровлю_ дома, где Он находился, и, прокопав ее, спустили постель, на которой лежал расслабленный.",
+        "NEO": "Et, comme ils ne pouvaient le lui présenter+ 2:4 4. L’aborder. Vulg., \\+qt le lui présenter, remettre les péchés\\+qt*.* à cause de la foule, ils découvrirent le toit+ 2:4 \\+it Le toit\\+it* : en Orient, la terrasse.* à l’endroit où il était, et par l’ouverture ils descendirent le grabat où gisait le paralytique.",
+        "NAB": "Unable to get near Jesus because of the crowd, they opened up the roof above him. After they had broken through, they let down the mat on which the paralytic was lying.",
+        "VAT_ES": "Y como no podían acercarlo a él, a causa de la multitud, levantaron el techo sobre el lugar donde Jesús estaba, y haciendo un agujero descolgaron la camilla con el paralítico.",
+        "CEI": "perché ti possa rendere conto della solidità degli insegnamenti che hai ricevuto."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ἰδὼν δὲ ὁ Ἰησοῦς τὴν πίστιν αὐτῶν λέγει τῷ παραλυτικῷ, Τέκνον, ἀφέωνταί σοι αἱ ἁμαρτίαι σου.",
+        "VUL": "Cum autem vidisset Jesus fidem illorum, ait paralytico : Fili, dimittuntur tibi peccata tua.",
+        "SYN": "Иисус, видя веру их, говорит расслабленному: чадо! прощаются тебе грехи твои.",
+        "NEO": "Jésus, voyant leur foi, dit au paralytique : « Mon* fils, tes péchés te sont remis. »",
+        "NAB": "When Jesus saw their faith, he said to the paralytic, \"Child, your sins are forgiven.\"",
+        "VAT_ES": "Al ver la fe de esos hombres, Jesús dijo al paralítico: «Hijo, tus pecados te son perdonados».",
+        "CEI": "Al tempo di Erode, re della Giudea, c'era un sacerdote chiamato Zaccaria, della classe di Abìa, e aveva in moglie una discendente di Aronne chiamata Elisabetta."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ἦσαν δέ τινες τῶν γραμματέων ἐκεῖ καθήμενοι, καὶ διαλογιζόμενοι ἐν ταῖς καρδίαις αὐτῶν,",
+        "VUL": "Erant autem illic quidam de scribis sedentes, et cogitantes in cordibus suis :",
+        "SYN": "Тут сидели некоторые из книжников и помышляли в сердцах своих:",
+        "NEO": "Or il y avait là quelques scribes assis, qui pensaient dans leur cœur :",
+        "NAB": "Now some of the scribes were sitting there asking themselves,",
+        "VAT_ES": "Unos escribas que estaban sentados allí pensaban en su interior:",
+        "CEI": "Erano giusti davanti a Dio, osservavano irreprensibili tutte le leggi e le prescrizioni del Signore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Τί οὗτος οὕτως λαλεῖ βλασφημίας; Τίς δύναται ἀφιέναι ἁμαρτίας εἰ μὴ εἷς, ὁ θεός;",
+        "VUL": "Quid hic sic loquitur ? blasphemat. Quis potest dimittere peccata, nisi solus Deus ?",
+        "SYN": "что Он так богохульствует? кто может прощать грехи, кроме одного Бога?",
+        "NEO": "« Comment cet homme parle-t-il ainsi ? Il blasphème. Qui peut remettre les péchés sinon Dieu seul ? »",
+        "NAB": "\"Why does this man speak that way? He is blaspheming. Who but God alone can forgive sins?\"",
+        "VAT_ES": "«&iquest;Qué está diciendo este hombre? &iexcl;Está blasfemando! &iquest;Quién puede perdonar los pecados, sino sólo Dios?",
+        "CEI": "Ma non avevano figli, perché Elisabetta era sterile e tutti e due erano avanti negli anni."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Καὶ εὐθέως ἐπιγνοὺς ὁ Ἰησοῦς τῷ πνεύματι αὐτοῦ ὅτι οὕτως αὐτοὶ διαλογίζονται ἐν ἑαυτοῖς, εἶπεν αὐτοῖς, Τί ταῦτα διαλογίζεσθε ἐν ταῖς καρδίαις ὑμῶν;",
+        "VUL": "Quo statim cognito Jesus spiritu suo, quia sic cogitarent intra se, dicit illis : Quid ista cogitatis in cordibus vestris ?",
+        "SYN": "Иисус, тотчас узнав духом Своим, что они так помышляют в себе, сказал им: для чего так помышляете в сердцах ваших?",
+        "NEO": "Jésus, ayant aussitôt connu par son esprit qu’ils pensaient ainsi en eux-mêmes, leur dit : « Pourquoi avez-vous de telles pensées dans vos cœurs ?",
+        "NAB": "Jesus immediately knew in his mind what they were thinking to themselves, so he said, \"Why are you thinking such things in your hearts?",
+        "VAT_ES": "Jesús, advirtiendo en seguida que pensaban así, les dijo: «&iquest;Qué están pensando?",
+        "CEI": "Mentre Zaccaria officiava davanti al Signore nel turno della sua classe,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Τί ἐστιν εὐκοπώτερον, εἰπεῖν τῷ παραλυτικῷ, Ἀφέωνταί σου αἱ ἁμαρτίαι, ἢ εἰπεῖν, Ἔγειραι, καὶ ἆρόν σου τὸν κράββατον, καὶ περιπάτει;",
+        "VUL": "Quid est facilius dicere paralytico : Dimittuntur tibi peccata : an dicere : Surge, tolle grabatum tuum, et ambula ?",
+        "SYN": "Что легче? сказать ли расслабленному: прощаются тебе грехи? или сказать: встань, возьми свою постель и ходи?",
+        "NEO": "Lequel est le plus facile de dire au paralytique : Tes péchés te sont remis, ou de lui* dire : Lève-toi, prends ton grabat et marche ?",
+        "NAB": "Which is easier, to say to the paralytic, 'Your sins are forgiven,' or to say, 'Rise, pick up your mat and walk'?",
+        "VAT_ES": "&iquest;Qué es más fácil, decir al paralítico: \"Tus pecados te son perdonados\", o \"Levántate, toma tu camilla y camina\"?",
+        "CEI": "secondo l'usanza del servizio sacerdotale, gli toccò in sorte di entrare nel tempio per fare l'offerta dell'incenso."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Ἵνα δὲ εἰδῆτε ὅτι ἐξουσίαν ἔχει ὁ υἱὸς τοῦ ἀνθρώπου ἀφιέναι ἐπὶ τῆς γῆς ἁμαρτίας- λέγει τῷ παραλυτικῷ-",
+        "VUL": "Ut autem sciatis quia Filius hominis habet potestatem in terra dimittendi peccata (ait paralytico),",
+        "SYN": "Но чтобы вы знали, что Сын Человеческий имеет власть на земле прощать грехи, -- говорит расслабленному:",
+        "NEO": "Mais afin que vous sachiez que le Fils de l’homme a sur la terre, le pouvoir de remettre les péchés, – Jésus* s’adressa au paralytique –",
+        "NAB": "But that you may know that the Son of Man has authority to forgive sins on earth\" -",
+        "VAT_ES": "Para que ustedes sepan que el Hijo de hombre tiene sobre la tierra el poder de perdonar los pecados",
+        "CEI": "Tutta l'assemblea del popolo pregava fuori nell'ora dell'incenso."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Σοὶ λέγω, ἔγειραι καὶ ἆρον τὸν κράββατόν σου, καὶ ὕπαγε εἰς τὸν οἶκόν σου.",
+        "VUL": "tibi dico : Surge, tolle grabatum tuum, et vade in domum tuam.",
+        "SYN": "тебе говорю: встань, возьми постель твою и иди в дом твой.",
+        "NEO": "je te le commande : Lève-toi, prends ton grabat et va dans ta maison. »",
+        "NAB": "he said to the paralytic, \"I say to you, rise, pick up your mat, and go home.\"",
+        "VAT_ES": "–dijo al paralítico– yo te lo mando, levántate, toma tu camilla y vete a tu casa».",
+        "CEI": "Allora gli apparve un angelo del Signore, ritto alla destra dell'altare dell'incenso."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Καὶ ἠγέρθη εὐθέως, καὶ ἄρας τὸν κράββατον, ἐξῆλθεν ἐναντίον πάντων· ὥστε ἐξίστασθαι πάντας, καὶ δοξάζειν τὸν θεόν, λέγοντας ὅτι Οὐδέποτε οὕτως εἴδομεν.",
+        "VUL": "Et statim surrexit ille : et, sublato grabato, abiit coram omnibus, ita ut mirarentur omnes, et honorificent Deum, dicentes : Quia numquam sic vidimus.",
+        "SYN": "Он тотчас встал и, взяв постель, вышел перед всеми, так что все изумлялись и прославляли Бога, говоря: никогда ничего такого мы не видали.",
+        "NEO": "Et à l’instant celui-ci se leva, prit son grabat, et sortit en présence de tous, de sorte que tout le peuple était dans l’admiration et rendait gloire à Dieu, en disant : « Jamais nous n’avons rien vu de semblable. »",
+        "NAB": "He rose, picked up his mat at once, and went away in the sight of everyone. They were all astounded and glorified God, saying, \"We have never seen anything like this.\"",
+        "VAT_ES": "El se levantó en seguida, tomó su camilla y salió a la vista de todos. La gente quedó asombrada y glorificaba a Dios, diciendo: «Nunca hemos visto nada igual».",
+        "CEI": "Quando lo vide, Zaccaria si turbò e fu preso da timore."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "¶Καὶ ἐξῆλθεν πάλιν παρὰ τὴν θάλασσαν· καὶ πᾶς ὁ ὄχλος ἤρχετο πρὸς αὐτόν, καὶ ἐδίδασκεν αὐτούς.",
+        "VUL": "Et egressus est rursus ad mare, omnisque turba veniebat ad eum, et docebat eos.",
+        "SYN": "И вышел _Иисус_ опять к морю; и весь народ пошел к Нему, и Он учил их.",
+        "NEO": "Jésus sortit de nouveau le long de la mer+ 2:13 La \\+it mer\\+it* de Galilée ou lac de Tibériade.* ; et toute la foule venait à lui, et il les enseignait.",
+        "NAB": "Once again he went out along the sea. All the crowd came to him and he taught them.",
+        "VAT_ES": "Jesús salió nuevamente a la orilla del mar; toda la gente acudía allí, y él les enseñaba.",
+        "CEI": "Ma l'angelo gli disse: \"Non temere, Zaccaria, la tua preghiera è stata esaudita e tua moglie Elisabetta ti darà un figlio, che chiamerai Giovanni."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Καὶ παράγων εἶδεν Λευῒ τὸν τοῦ Ἀλφαίου καθήμενον ἐπὶ τὸ τελώνιον, καὶ λέγει αὐτῷ, Ἀκολούθει μοι. Καὶ ἀναστὰς ἠκολούθησεν αὐτῷ.",
+        "VUL": "Et cum præteriret, vidit Levi Alphæi sedentem ad telonium, et ait illi : Sequere me. Et surgens secutus est eum.",
+        "SYN": "Проходя, увидел Он Левия Алфеева, сидящего у сбора пошлин, и говорит ему: следуй за Мною. И _он,_ встав, последовал за Ним.",
+        "NEO": "En passant, il vit Lévi+ 2:14 14. Matth. ix, 9 ; Luc, v, 27. Lévi, appelé aussi Matthieu.*, fils d’Alphée, assis au bureau de péage ; il lui dit : « Suis-moi. » Lévi se leva et le suivit.",
+        "NAB": "As he passed by, he saw Levi, son of Alphaeus, sitting at the customs post. He said to him, \"Follow me.\" And he got up and followed him.",
+        "VAT_ES": "Al pasar vio a Leví, hijo de Alfeo, sentado a la mesa de recaudación de impuestos, y le dijo: «Sígueme». El se levantó y lo siguió.",
+        "CEI": "Avrai gioia ed esultanza e molti si rallegreranno della sua nascita,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Καὶ ἐγένετο ἐν τῷ κατακεῖσθαι αὐτὸν ἐν τῇ οἰκίᾳ αὐτοῦ, καὶ πολλοὶ τελῶναι καὶ ἁμαρτωλοὶ συνανέκειντο τῷ Ἰησοῦ καὶ τοῖς μαθηταῖς αὐτοῦ· ἦσαν γὰρ πολλοί, καὶ ἠκολούθησαν αὐτῷ.",
+        "VUL": "Et factum est, cum accumberet in domo illius, multi publicani et peccatores simul discumbebant cum Jesu et discipulis ejus : erant enim multi, qui et sequebantur eum.",
+        "SYN": "И когда Иисус возлежал в доме его, возлежали с Ним и ученики Его и многие мытари и грешники: ибо много их было, и они следовали за Ним.",
+        "NEO": "Il arriva que Jésus étant à table dans la maison de cet homme, plusieurs publicains et gens de mauvaise vie se trouvaient à table avec lui et ses disciples, car ils étaient nombreux à le suivre.",
+        "NAB": "While he was at table in his house, many tax collectors and sinners sat with Jesus and his disciples; for there were many who followed him.",
+        "VAT_ES": "Mientras Jesús estaba comiendo en su casa, muchos publicanos y pecadores se sentaron a comer con él y sus discípulos;",
+        "CEI": "poiché egli sarà grande davanti al Signore; non berrà vino né bevande inebrianti, sarà pieno di Spirito Santo fin dal seno di sua madre"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Καὶ οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι, ἰδόντες αὐτὸν ἐσθίοντα μετὰ τῶν τελωνῶν καὶ ἁμαρτωλῶν, ἔλεγον τοῖς μαθηταῖς αὐτοῦ, Τί ὅτι μετὰ τῶν τελωνῶν καὶ ἁμαρτωλῶν ἐσθίει καὶ πίνει;",
+        "VUL": "Et scribæ et pharisæi videntes quia manducaret cum publicanis et peccatoribus, dicebant discipulis ejus : Quare cum publicanis et peccatoribus manducat et bibit Magister vester ?",
+        "SYN": "Книжники и фарисеи, увидев, что Он ест с мытарями и грешниками, говорили ученикам Его: как это Он ест и пьет с мытарями и грешниками?",
+        "NEO": "Les scribes+ 2:16 \\+it Les scribes\\+it* appartenaient les uns au parti des Pharisiens (la grande majorité), les autres à celui des Saducéens.* et les Pharisiens, le voyant manger avec des pécheurs et des publicains, disaient à ses disciples : « D’où vient que votre Maître mange et boit avec des pécheurs et des publicains ? »",
+        "NAB": "Some scribes who were Pharisees saw that he was eating with sinners and tax collectors and said to his disciples, \"Why does he eat with tax collectors and sinners?\"",
+        "VAT_ES": "Los escribas del grupo de los fariseos, al ver que comía con pecadores y publicanos, decían a los discípulos: «&iquest;Por qué come con publicanos y pecadores?».",
+        "CEI": "e ricondurrà molti figli d'Israele al Signore loro Dio."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Καὶ ἀκούσας ὁ Ἰησοῦς λέγει αὐτοῖς, Οὐ χρείαν ἔχουσιν οἱ ἰσχύοντες ἰατροῦ, ἀλλ’ οἱ κακῶς ἔχοντες. Οὐκ ἦλθον καλέσαι δικαίους, ἀλλὰ ἁμαρτωλοὺς εἰς μετάνοιαν.",
+        "VUL": "Hoc audito Jesus ait illis : Non necesse habent sani medico, sed qui male habent : non enim veni vocare justos, sed peccatores.",
+        "SYN": "Услышав _сие,_ Иисус говорит им: не здоровые имеют нужду во враче, но больные; Я пришел призвать не праведников, но грешников к покаянию.",
+        "NEO": "Entendant cela, Jésus leur dit : « Ce ne sont pas ceux qui se portent bien qui ont besoin de médecin, mais les malades ; je ne suis pas venu appeler les justes, mais les pécheurs. »",
+        "NAB": "Jesus heard this and said to them (that), \"Those who are well do not need a physician, but the sick do. I did not come to call the righteous but sinners.\"",
+        "VAT_ES": "Jesús, que había oído, les dijo: «No son los sanos los que tienen necesidad del médico, sino los enfermos. Yo no he venido a llamar a los justos, sino a los pecadores».",
+        "CEI": "Gli camminerà innanzi con lo spirito e la forza di Elia, per ricondurre i cuori dei padri verso i figli e i ribelli alla saggezza dei giusti e preparare al Signore un popolo ben disposto\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "¶Καὶ ἦσαν οἱ μαθηταὶ Ἰωάννου καὶ οἱ τῶν Φαρισαίων νηστεύοντες· καὶ ἔρχονται καὶ λέγουσιν αὐτῷ, Διὰ τί οἱ μαθηταὶ Ἰωάννου καὶ οἱ τῶν Φαρισαίων νηστεύουσιν, οἱ δὲ σοὶ μαθηταὶ οὐ νηστεύουσιν;",
+        "VUL": "Et erant discipuli Joannis et pharisæi jejunantes : et veniunt, et dicunt illi : Quare discipuli Joannis et pharisæorum jejunant, tui autem discipuli non jejunant ?",
+        "SYN": "Ученики Иоанновы и фарисейские постились. Приходят к Нему и говорят: почему ученики Иоанновы и фарисейские постятся, а Твои ученики не постятся?",
+        "NEO": "Les disciples de Jean et les Pharisiens avaient coutume de jeûner. Ils vinrent le trouver et lui dirent : « Pourquoi, tandis que les disciples de Jean et ceux des Pharisiens pratiquent le jeûne, vos disciples ne jeûnent-ils pas ? »",
+        "NAB": "The disciples of John and of the Pharisees were accustomed to fast. People came to him and objected, \"Why do the disciples of John and the disciples of the Pharisees fast, but your disciples do not fast?\"",
+        "VAT_ES": "Un día en que los discípulos de Juan y los fariseos, fueron a decirle a Jesús: «&iquest;Por qué tus discípulos no ayunan, como lo hacen los discípulos de Juan y los discípulos de los fariseos?».",
+        "CEI": "Zaccaria disse all'angelo: \"Come posso conoscere questo? Io sono vecchio e mia moglie è avanzata negli anni\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Καὶ εἶπεν αὐτοῖς ὁ Ἰησοῦς, Μὴ δύνανται οἱ υἱοὶ τοῦ νυμφῶνος, ἐν ᾧ ὁ νυμφίος μετ’ αὐτῶν ἐστιν, νηστεύειν; Ὅσον χρόνον μεθ’ ἑαυτῶν ἔχουσιν τὸν νυμφίον, οὐ δύνανται νηστεύειν·",
+        "VUL": "Et ait illis Jesus : Numquid possunt filii nuptiarum, quamdiu sponsus cum illis est, jejunare ? Quanto tempore habent secum sponsum, non possunt jejunare.",
+        "SYN": "И сказал им Иисус: могут ли поститься сыны чертога брачного, когда с ними жених? Доколе с ними жених, не могут поститься,",
+        "NEO": "Jésus leur répondit : « Les compagnons de l’époux peuvent-ils jeûner pendant que l’époux est avec eux ? Aussi longtemps qu’ils ont avec eux l’époux, ils ne peuvent pas jeûner.",
+        "NAB": "Jesus answered them, \"Can the wedding guests fast while the bridegroom is with them? As long as they have the bridegroom with them they cannot fast.",
+        "VAT_ES": "Jesús les respondió: «&iquest;Acaso los amigos del esposo pueden ayunar cuando el esposo está con ellos? Es natural que no ayunen, mientras tienen consigo al esposo.",
+        "CEI": "L'angelo gli rispose: \"Io sono Gabriele che sto al cospetto di Dio e sono stato mandato a portarti questo lieto annunzio."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "ἐλεύσονται δὲ ἡμέραι ὅταν ἀπαρθῇ ἀπ’ αὐτῶν ὁ νυμφίος, καὶ τότε νηστεύσουσιν ἐν ἐκείναις ταῖς ἡμέραις.",
+        "VUL": "Venient autem dies cum auferetur ab eis sponsus : et tunc jejunabunt in illis diebus.",
+        "SYN": "но придут дни, когда отнимется у них жених, и тогда будут поститься в те дни.",
+        "NEO": "Mais les jours viendront où l’époux leur sera enlevé, et alors ils jeûneront en ces jours-là.",
+        "NAB": "But the days will come when the bridegroom is taken away from them, and then they will fast on that day.",
+        "VAT_ES": "Llegará el momento en que el esposo les será quitado, y entonces ayunarán.",
+        "CEI": "Ed ecco, sarai muto e non potrai parlare fino al giorno in cui queste cose avverranno, perché non hai creduto alle mie parole, le quali si adempiranno a loro tempo\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Καὶ οὐδεὶς ἐπίβλημα ῥάκους ἀγνάφου ἐπιρράπτει ἐπὶ ἱματίῳ παλαιῷ· εἰ δὲ μή, αἴρει τὸ πλήρωμα αὐτοῦ τὸ καινὸν τοῦ παλαιοῦ, καὶ χεῖρον σχίσμα γίνεται.",
+        "VUL": "Nemo assumentum panni rudis assuit vestimento veteri : alioquin aufert supplementum novum a veteri, et major scissura fit.",
+        "SYN": "Никто к ветхой одежде не приставляет заплаты из небеленой ткани: иначе вновь пришитое отдерет от старого, и дыра будет еще хуже.",
+        "NEO": "Personne ne coud une pièce d’étoffe neuve à un vieux vêtement : autrement la pièce neuve emporte un morceau du vieux, et la déchirure devient pire.",
+        "NAB": "No one sews a piece of unshrunken cloth on an old cloak. If he does, its fullness pulls away, the new from the old, and the tear gets worse.",
+        "VAT_ES": "Nadie usa un pedazo de género nuevo para remendar un vestido viejo, porque el pedazo añadido tira del vestido viejo y la rotura se hace más grande.",
+        "CEI": "Intanto il popolo stava in attesa di Zaccaria, e si meravigliava per il suo indugiare nel tempio."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Καὶ οὐδεὶς βάλλει οἶνον νέον εἰς ἀσκοὺς παλαιούς· εἰ δὲ μή, ῥήσσει ὁ οἶνος ὁ νέος τοὺς ἀσκούς, καὶ ὁ οἶνος ἐκχεῖται καὶ οἱ ἀσκοὶ ἀπολοῦνται· ἀλλὰ οἶνον νέον εἰς ἀσκοὺς καινοὺς βλητέον.",
+        "VUL": "Et nemo mittit vinum novum in utres veteres : alioquin dirumpet vinum utres, et vinum effundetur, et utres peribunt : sed vinum novum in utres novos mitti debet.",
+        "SYN": "Никто не вливает вина молодого в мехи ветхие: иначе молодое вино прорвет мехи, и вино вытечет, и мехи пропадут; но вино молодое надобно вливать в мехи новые.",
+        "NEO": "Et personne ne met du vin nouveau dans des outres vieilles : autrement, le vin fait rompre les outres et le vin se répand, et les outres sont perdues. Mais le vin nouveau doit se mettre dans des outres neuves. »",
+        "NAB": "Likewise, no one pours new wine into old wineskins. Otherwise, the wine will burst the skins, and both the wine and the skins are ruined. Rather, new wine is poured into fresh wineskins.\"",
+        "VAT_ES": "Tampoco se pone vino nuevo en odres viejos, porque hará reventar los odres, y ya no servirán más ni el vino ni los odres. &iexcl;A vino nuevo, odres nuevos!».",
+        "CEI": "Quando poi uscì e non poteva parlare loro, capirono che nel tempio aveva avuto una visione. Faceva loro dei cenni e restava muto."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "¶Καὶ ἐγένετο παραπορεύεσθαι αὐτὸν ἐν τοῖς σάββασιν διὰ τῶν σπορίμων, καὶ ἤρξαντο οἱ μαθηταὶ αὐτοῦ ὁδὸν ποιεῖν τίλλοντες τοὺς στάχυας.",
+        "VUL": "Et factum est iterum cum Dominus sabbatis ambularet per sata, et discipuli ejus cperunt progredi, et vellere spicas.",
+        "SYN": "И случилось Ему в субботу проходить засеянными _полями,_ и ученики Его дорогою начали срывать колосья.",
+        "NEO": "Il arriva+ 2:23 23. Vulg. : Il arriva encore… que le Seigneur, etc. Matth. i, 1 ; Luc. vi, 1.*, un jour de sabbat, que Jésus traversait des champs de blé, et ses disciples, tout en s’avançant, se mirent à cueillir des épis.",
+        "NAB": "As he was passing through a field of grain on the sabbath, his disciples began to make a path while picking the heads of grain.",
+        "VAT_ES": "Un sábado en que Jesús atravesaba unos sembrados, sus discípulos comenzaron a arrancar espigas al pasar.",
+        "CEI": "Compiuti i giorni del suo servizio, tornò a casa."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Καὶ οἱ Φαρισαῖοι ἔλεγον αὐτῷ, Ἴδε, τί ποιοῦσιν ἐν τοῖς σάββασιν ὃ οὐκ ἔξεστιν;",
+        "VUL": "Pharisæi autem dicebant ei : Ecce, quid faciunt sabbatis quod non licet ?",
+        "SYN": "И фарисеи сказали Ему: смотри, что они делают в субботу, чего не должно _делать?_",
+        "NEO": "Les Pharisiens lui dirent : « Voyez donc ! Pourquoi font-ils, le jour du sabbat, ce qui n’est pas permis ? »",
+        "NAB": "At this the Pharisees said to him, \"Look, why are they doing what is unlawful on the sabbath?\"",
+        "VAT_ES": "Entonces los fariseos le dijeron: «&iexcl;Mira! &iquest;Por qué hacen en sábado lo que no está permitido?».",
+        "CEI": "Dopo quei giorni Elisabetta, sua moglie, concepì e si tenne nascosta per cinque mesi e diceva:"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Καὶ αὐτὸς ἔλεγεν αὐτοῖς, Οὐδέποτε ἀνέγνωτε τί ἐποίησεν Δαυίδ, ὅτε χρείαν ἔσχεν καὶ ἐπείνασεν αὐτὸς καὶ οἱ μετ’ αὐτοῦ;",
+        "VUL": "Et ait illis : Numquam legistis quid fecerit David, quando necessitatem habuit, et esuriit ipse, et qui cum eo erant ?",
+        "SYN": "Он сказал им: неужели вы не читали никогда, что сделал Давид, когда имел нужду и взалкал сам и бывшие с ним?",
+        "NEO": "Il leur répondit : « N’avez-vous jamais lu ce que fit David lorsqu’il fut dans le besoin, ayant faim, lui et ceux qui l’accompagnaient :",
+        "NAB": "He said to them, \"Have you never read what David did when he was in need and he and his companions were hungry?",
+        "VAT_ES": "El les respondió: «&iquest;Ustedes no han leído nunca lo que hizo David, cuando él y sus compañeros se vieron obligados por el hambre,",
+        "CEI": "\"Ecco che cosa ha fatto per me il Signore, nei giorni in cui si è degnato di togliere la mia vergogna tra gli uomini\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Πῶς εἰσῆλθεν εἰς τὸν οἶκον τοῦ θεοῦ ἐπὶ Ἀβιάθαρ ἀρχιερέως, καὶ τοὺς ἄρτους τῆς προθέσεως ἔφαγεν, οὓς οὐκ ἔξεστιν φαγεῖν εἰ μὴ τοῖς ἱερεῦσιν, καὶ ἔδωκεν καὶ τοῖς σὺν αὐτῷ οὖσιν;",
+        "VUL": "quomodo introivit in domum Dei sub Abiathar principe sacerdotum, et panes propositionis manducavit, quos non licebat manducare, nisi sacerdotibus, et dedit eis qui cum eo erant ?",
+        "SYN": "как вошел он в дом Божий при первосвященнике Авиафаре и ел хлебы предложения, которых не должно было есть никому, кроме священников, и дал и бывшим с ним?",
+        "NEO": "comment il entra dans la maison de Dieu, au temps du grand prêtre Abiathar, et mangea les pains de proposition, qu’il n’est permis de manger qu’aux prêtres seuls, et en donna même à ceux qui étaient avec lui ?+ 2:26 1Sa 21,6* »",
+        "NAB": "How he went into the house of God when Abiathar was high priest and ate the bread of offering that only the priests could lawfully eat, and shared it with his companions?\"",
+        "VAT_ES": "cómo entró en la Casa de Dios, en el tiempo del Sumo Sacerdote Abiatar, y comió y dio a sus compañeros los panes de la ofrenda, que sólo pueden comer los sacerdotes?».",
+        "CEI": "Nel sesto mese, l'angelo Gabriele fu mandato da Dio in una città della Galilea, chiamata Nazaret,"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Καὶ ἔλεγεν αὐτοῖς, Τὸ σάββατον διὰ τὸν ἄνθρωπον ἐγένετο, οὐχ ὁ ἄνθρωπος διὰ τὸ σάββατον·",
+        "VUL": "Et dicebat eis : Sabbatum propter hominem factum est, et non homo propter sabbatum.",
+        "SYN": "И сказал им: суббота для человека, а не человек для субботы;",
+        "NEO": "Il leur dit encore : « Le sabbat a été fait pour l’homme, et non l’homme pour le sabbat ;",
+        "NAB": "Then he said to them, \"The sabbath was made for man, not man for the sabbath.",
+        "VAT_ES": "Y agregó: «El sábado ha sido hecho para el hombre, y no el hombre para el sábado.",
+        "CEI": "a una vergine, promessa sposa di un uomo della casa di Davide, chiamato Giuseppe. La vergine si chiamava Maria."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "ὥστε κύριός ἐστιν ὁ υἱὸς τοῦ ἀνθρώπου καὶ τοῦ σαββάτου.",
+        "VUL": "Itaque Dominus est Filius hominis, etiam sabbati.",
+        "SYN": "посему Сын Человеческий есть господин и субботы.",
+        "NEO": "c’est pourquoi le Fils de l’homme est maître même du sabbat. »",
+        "NAB": "That is why the Son of Man is lord even of the sabbath.\"",
+        "VAT_ES": "De manera que el Hijo del hombre es dueño también del sábado».",
+        "CEI": "Entrando da lei, disse: \"Ti saluto, o piena di grazia, il Signore è con te\"."
+      }
+    }
+  }
+}

@@ -1,0 +1,969 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "III_REG_001",
+  "book_key": "III_REG",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/הַ/מֶּ֤לֶךְ דָּוִד֙ זָקֵ֔ן בָּ֖א בַּ/יָּמִ֑ים וַ/יְכַסֻּ֨/הוּ֙ בַּ/בְּגָדִ֔ים וְ/לֹ֥א יִחַ֖ם לֽ/וֹ׃",
+        "LXX": "ΚΑΙ ὁ βασιλεὺς Δαυεὶδ πρεσβύτερος προβεβηκὼς ἡμέραις, καὶ περιέβαλλον αὐτὸν ἱματίοις, καὶ οὐκ ἐθερμαίνετο.",
+        "VUL": "Et rex David senuerat, habebatque ætatis plurimos dies : cumque operiretur vestibus, non calefiebat.",
+        "SYN": "Когда царь Давид состарился, вошел в _преклонные_ лета, то покрывали его одеждами, но не мог он согреться.",
+        "NEO": "Le roi David était vieux, avancé en âge ; on le couvrait de vêtements, sans qu’il pût se réchauffer.",
+        "NAB": "When King David was old and advanced in years, though they spread covers over him he could not keep warm.",
+        "VAT_ES": "El rey David estaba viejo, muy avanzado en años, y por más que lo abrigaban no entraba en calor.",
+        "CEI": "Il re Davide era vecchio e avanzato negli anni e, sebbene lo coprissero, non riusciva a riscaldarsi."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמְרוּ ל֣/וֹ עֲבָדָ֗י/ו יְבַקְשׁ֞וּ לַ/אדֹנִ֤/י הַ/מֶּ֨לֶךְ֙ נַעֲרָ֣ה בְתוּלָ֔ה וְ/עָֽמְדָה֙ לִ/פְנֵ֣י הַ/מֶּ֔לֶךְ וּ/תְהִי ל֖/וֹ סֹכֶ֑נֶת וְ/שָׁכְבָ֣ה בְ/חֵיקֶ֔/ךָ וְ/חַ֖ם לַ/אדֹנִ֥/י הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ εἶπον οἱ παῖδες αὐτοῦ Ζητησάτωσαν τῷ βασιλεῖ παρθένον νεάνιδα, καὶ παραστήσεται τῷ βασιλεῖ καὶ ἔσται αὐτὸν θάλπουσα καὶ κοιμηθήσεται μετ’ αὐτοῦ, καὶ θερμανθήσεται ὁ κύριός μου ὁ βασιλεύς.",
+        "VUL": "Dixerunt ergo ei servi sui : Quæramus domino nostro regi adolescentulam virginem, et stet coram rege, et foveat eum, dormiatque in sinu suo, et calefaciat dominum nostrum regem.",
+        "SYN": "И сказали ему слуги его: пусть поищут для господина нашего царя молодую девицу, чтоб она предстояла царю и ходила за ним и лежала с ним, -- и будет тепло господину нашему, царю.",
+        "NEO": "Ses serviteurs lui dirent : « Que l’on cherche pour mon seigneur le roi une jeune fille vierge ; qu’elle se tienne devant le roi et le soigne, et qu’elle couche dans ton sein, et mon seigneur le roi se réchauffera. »",
+        "NAB": "His servants therefore said to him, \"Let a young virgin be sought to attend you, lord king, and to nurse you. If she sleeps with your royal majesty, you will be kept warm.\"",
+        "VAT_ES": "Sus servidores le dijeron: «Sería conveniente buscarle al rey, mi señor, una jovencita: ella estará al servicio del rey y cuidará de él; dormirá entre sus brazos, y así mi señor, el rey, entrará en calor».",
+        "CEI": "I suoi ministri gli suggerirono: \"Si cerchi per il re nostro signore una vergine giovinetta, che assista il re e lo curi e dorma con lui; così il re nostro signore si riscalderà\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יְבַקְשׁוּ֙ נַעֲרָ֣ה יָפָ֔ה בְּ/כֹ֖ל גְּב֣וּל יִשְׂרָאֵ֑ל וַֽ/יִּמְצְא֗וּ אֶת אֲבִישַׁג֙ הַ/שּׁ֣וּנַמִּ֔ית וַ/יָּבִ֥אוּ אֹתָ֖/הּ לַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ ἐζήτησαν νεάνιδα καλὴν ἐκ παντὸς ὁρίου Ἰσραήλ· καὶ εὗρον τὴν Ἀβεισὰ τὴν Σωμανεῖτιν, καὶ ἤνεγκαν αὐτὴν πρὸς τὸν βασιλέα.",
+        "VUL": "Quæsierunt igitur adolescentulam speciosam in omnibus finibus Israël, et invenerunt Abisag Sunamitidem, et adduxerunt eam ad regem.",
+        "SYN": "И искали красивой девицы во всех пределах Израильских, и нашли Ависагу Сунамитянку, и привели ее к царю.",
+        "NEO": "On chercha dans tout le territoire d’Israël une jeune fille qui fût belle, et l’on trouva Abisag, la Sunamite, que l’on amena au roi.",
+        "NAB": "So they sought for a beautiful girl throughout the territory of Israel, and found Abishag the Shunamite, whom they brought to the king.",
+        "VAT_ES": "Entonces buscaron por todo el territorio de Israel una joven hermosa; encontraron a Abisag, la sunamita, y se la llevaron al rey.",
+        "CEI": "Si cercò in tutto il territorio d'Israele una giovane bella e si trovò Abisag da Sunem e la condussero al re."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/הַֽ/נַּעֲרָ֖ה יָפָ֣ה עַד מְאֹ֑ד וַ/תְּהִ֨י לַ/מֶּ֤לֶךְ סֹכֶ֨נֶת֙ וַ/תְּשָׁ֣רְתֵ֔/הוּ וְ/הַ/מֶּ֖לֶךְ לֹ֥א יְדָעָֽ/הּ׃",
+        "LXX": "καὶ ἡ νεᾶνις καλὴ ἕως σφόδρα· καὶ ἦν θάλπουσα τὸν βασιλέα καὶ ἐλειτούργει αὐτῷ, καὶ ὁ βασιλεὺς οὐκ ἔγνω αὐτήν.",
+        "VUL": "Erat autem puella pulchra nimis, dormiebatque cum rege, et ministrabat ei : rex vero non cognovit eam.",
+        "SYN": "Девица была очень красива, и ходила она за царем и прислуживала ему; но царь не познал ее.",
+        "NEO": "Cette jeune fille était fort belle ; elle soigna le roi et le servit ; mais le roi ne la connut point.",
+        "NAB": "The maiden, who was very beautiful, nursed the king and cared for him, but the king did not have relations with her.",
+        "VAT_ES": "La joven, que era muy hermosa, cuidaba al rey y estaba a su servicio. Pero el rey no se unió a ella.",
+        "CEI": "La giovane era molto bella; essa curava il re e lo serviva, ma il re non si unì a lei."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/אֲדֹנִיָּ֧ה בֶן חַגִּ֛ית מִתְנַשֵּׂ֥א לֵ/אמֹ֖ר אֲנִ֣י אֶמְלֹ֑ךְ וַ/יַּ֣עַשׂ ל֗/וֹ רֶ֚כֶב וּ/פָ֣רָשִׁ֔ים וַ/חֲמִשִּׁ֥ים אִ֖ישׁ רָצִ֥ים לְ/פָנָֽי/ו׃",
+        "LXX": "καὶ Ἀδωνείας υἱὸς Ἁγγεὶθ ἐπῄρετο λέγων Ἐγὼ βασιλεύσω· καὶ ἐποίησεν ἑαυτῷ ἅρματα καὶ ἱππεῖς καὶ πεντήκοντα ἄνδρας παρατρέχειν ἔμπροσθεν αὐτοῦ.",
+        "VUL": "Adonias autem filius Haggith elevabatur, dicens : Ego regnabo. Fecitque sibi currus et equites, et quinquaginta viros qui currerent ante eum.",
+        "SYN": "Адония, сын Аггифы, возгордившись говорил: я буду царем. И завел себе колесницы и всадников и пятьдесят человек скороходов.",
+        "NEO": "Or Adonias, fils de Haggith, s’élevait dans ses pensées, disant : « C’est moi qui serai roi. » Et il se procura des chars et des chevaux, et cinquante hommes courant devant lui.",
+        "NAB": "Adonijah, son of Haggith, began to display his ambition to be king. He acquired chariots, drivers, and fifty henchmen.",
+        "VAT_ES": "Mientras tanto, Adonías, hijo de Jaguit, se ufanaba diciendo: «Yo seré el rey». Y se consiguió un carro de guerra, caballos y cincuenta hombres que corrían delante de él.",
+        "CEI": "Ma Adonia, figlio di Agghìt, insuperbito, diceva: \"Sarò io il re\". Si procurò carri, cavalli e cinquanta uomini che lo precedessero."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא עֲצָב֨/וֹ אָבִ֤י/ו מִ/יָּמָי/ו֙ לֵ/אמֹ֔ר מַדּ֖וּעַ כָּ֣כָה עָשִׂ֑יתָ וְ/גַם ה֤וּא טֽוֹב תֹּ֨אַר֙ מְאֹ֔ד וְ/אֹת֥/וֹ יָלְדָ֖ה אַחֲרֵ֥י אַבְשָׁלֽוֹם׃",
+        "LXX": "καὶ οὐκ ἀπεκώλυσεν αὐτὸν ὁ πατὴρ αὐτοῦ οὐδέποτε λέγων Διὰ τί σὺ ἐποίησας; καὶ γε αὐτὸς ὡραῖος τῇ ὄψει σφόδρα, καὶ αὐτὸν ἔτεκεν ὀπίσω Ἀβεσσαλώμ.",
+        "VUL": "Nec corripuit eum pater suus aliquando, dicens : Quare hoc fecisti ? Erat autem et ipse pulcher valde, secundus natu post Absalom.",
+        "SYN": "Отец же никогда не стеснял его вопросом: для чего ты это делаешь? Он же был очень красив и родился ему после Авессалома.",
+        "NEO": "Et son père ne lui avait jamais fait de peine dans sa vie en lui disant : « Pourquoi agis-tu ainsi ? » En outre, Adonias était très beau de figure, et sa mère l’avait enfanté après Absalom.",
+        "NAB": "Yet his father never rebuked him or asked why he was doing this. Adonijah was also very handsome, and next in age to Absalom by the same mother.",
+        "VAT_ES": "Pero nunca su padre lo había reprendido, preguntándole por qué hacía eso. Además, era muy apuesto, y había nacido después de Absalón.",
+        "CEI": "Il re suo padre, per non affliggerlo, non gli disse mai: \"Perché ti comporti in questo modo?\". Adonia era molto bello; sua madre l'aveva partorito dopo Assalonne."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יִּהְי֣וּ דְבָרָ֔י/ו עִ֚ם יוֹאָ֣ב בֶּן צְרוּיָ֔ה וְ/עִ֖ם אֶבְיָתָ֣ר הַ/כֹּהֵ֑ן וַֽ/יַּעְזְר֔וּ אַחֲרֵ֖י אֲדֹנִיָּֽה׃",
+        "LXX": "καὶ ἐγένοντο οἱ λόγοι αὐτοῦ μετὰ Ἰωὰβ τοῦ υἱοῦ Σαρουίας καὶ μετὰ Ἀβιαθὰρ τοῦ ἱερέως, καὶ ἐβοήθουν ὀπίσω Ἀδωνειού.",
+        "VUL": "Et sermo ei cum Joab filio Sarviæ, et cum Abiathar sacerdote, qui adjuvabant partes Adoniæ.",
+        "SYN": "И советовался он с Иоавом, сыном Саруиным, и с Авиафаром священником, и они помогали Адонии.",
+        "NEO": "Il y eut des entretiens avec Joab, fils de Sarvia, et avec le prêtre Abiathar ; et ils embrassèrent le parti d’Adonias.",
+        "NAB": "He conferred with Joab, son of Zeruiah, and with Abiathar the priest, and they supported him.",
+        "VAT_ES": "Adonías mantuvo conversaciones con Joab, hijo de Sarvia, y con el sacerdote Abiatar, que le prestaron su apoyo.",
+        "CEI": "Si accordò con Ioab, figlio di Zeruià, e con il sacerdote Ebiatàr, che stavano dalla sua parte."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/צָד֣וֹק הַ֠/כֹּהֵן וּ/בְנָיָ֨הוּ בֶן יְהוֹיָדָ֜ע וְ/נָתָ֤ן הַ/נָּבִיא֙ וְ/שִׁמְעִ֣י וְ/רֵעִ֔י וְ/הַ/גִּבּוֹרִ֖ים אֲשֶׁ֣ר לְ/דָוִ֑ד לֹ֥א הָי֖וּ עִם אֲדֹנִיָּֽהוּ׃",
+        "LXX": "καὶ Σαδὼκ ὁ ἱερεὺς καὶ Βαναίας υἱὸς Ἰωδᾶε καὶ Ναθὰν ὁ προφήτης καὶ Σεμεεὶ καὶ Ῥησεὶ καὶ υἱοὶ δυνατοὶ τοῦ Δαυεὶδ οὐκ ἦσαν ὀπίσω Ἀδωνειού.",
+        "VUL": "Sadoc vero sacerdos, et Banaias filius Jojadæ, et Nathan propheta, et Semei et Rei, et robur exercitus David, non erat cum Adonia.",
+        "SYN": "Но священник Садок и Ванея, сын Иодаев, и пророк Нафан, и Семей, и Рисий, и сильные Давидовы не были на стороне Адонии.",
+        "NEO": "Mais le prêtre Sadoc, Banaïas, fils de Joïadas, Nathan le prophète, Séméï, Réï et les vaillants hommes de David ne furent pas avec Adonias.",
+        "NAB": "However, Zadok the priest, Benaiah, son of Jehoiada, Nathan the prophet, and Shimei and his companions, the pick of David's army, did not side with Adonijah.",
+        "VAT_ES": "En cambio, el sacerdote Sadoc, Benaías, hijo de Iehoiadá, el profeta Natán, Samei, Reí y el cuerpo de los valientes de David no estaban de su parte.",
+        "CEI": "Invece il sacerdote Zadòk, Benaià figlio di Ioiadà, il profeta Natan, Simei, Rei e il nerbo delle milizie di Davide non si schierarono con Adonia."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּזְבַּ֣ח אֲדֹנִיָּ֗הוּ צֹ֤אן וּ/בָקָר֙ וּ/מְרִ֔יא עִ֚ם אֶ֣בֶן הַזֹּחֶ֔לֶת אֲשֶׁר אֵ֖צֶל עֵ֣ין רֹגֵ֑ל וַ/יִּקְרָ֗א אֶת כָּל אֶחָי/ו֙ בְּנֵ֣י הַ/מֶּ֔לֶךְ וּ/לְ/כָל אַנְשֵׁ֥י יְהוּדָ֖ה עַבְדֵ֥י הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ ἐθυσίασεν Ἀδωνειοὺ πρόβατα καὶ μόσχους καὶ ἄρνας μετὰ Αἰθὴ τοῦ Ζωελεθεὶ ὃς ἦν ἐχόμενα τῆς Ῥωγήλ, καὶ ἐκάλεσεν τοὺς ἀδελφοὺς αὐτοῦ καὶ τοὺς ἁδροὺς Ἰούδα, παῖδας τοῦ βασιλέως·",
+        "VUL": "Immolatis ergo Adonias arietibus et vitulis, et universis pinguibus, juxta lapidem Zoheleth, qui erat vicinus fonti Rogel, vocavit universos fratres suos filios regis, et omnes viros Juda servos regis.",
+        "SYN": "И заколол Адония овец и волов и тельцов у камня Зохелет, что у источника Рогель, и пригласил всех братьев своих, сыновей царя, со всеми Иудеянами, служившими у царя.",
+        "NEO": "Adonias immola des brebis, des bœufs et des veaux gras près de la pierre de Zohéleth, qui est à côté d’En-Rogel, et il invita tous ses frères, fils du roi, et tous les hommes de Juda, serviteurs du roi.",
+        "NAB": "When he slaughtered sheep, oxen, and fatlings at the stone Zoheleth, near En-rogel, Adonijah invited all his brothers, the king's sons, and all the royal officials of Judah.",
+        "VAT_ES": "Un día, Adonías sacrificó ovejas, bueyes y terneros cebados junto a la Piedra de Zojélet, que está al lado de la fuente de Roguel, e invitó a todos sus hermanos, los hijos del rey, y a todos los hombres de Judá que estaban al servicio del rey;",
+        "CEI": "Adonia un giorno immolò pecore e buoi e vitelli grassi sulla pietra Zochelet, che è vicina alla fonte di Roghèl. Invitò tutti i suoi fratelli, figli del re, e tutti gli uomini di Giuda al servizio del re."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְֽ/אֶת נָתָן֩ הַ/נָּבִ֨יא וּ/בְנָיָ֜הוּ וְ/אֶת הַ/גִּבּוֹרִ֛ים וְ/אֶת שְׁלֹמֹ֥ה אָחִ֖י/ו לֹ֥א קָרָֽא׃",
+        "LXX": "καὶ τὸν Ναθὰν τὸν προφήτην καὶ Βαναίαν καὶ τοὺς δυνατοὺς καὶ τὸν Σαλωμὼν ἀδελφὸν αὐτοῦ οὐκ ἐκάλεσεν.",
+        "VUL": "Nathan autem prophetam, et Banaiam, et robustos quosque, et Salomonem fratrem suum non vocavit.",
+        "SYN": "Пророка же Нафана и Ванею, и тех сильных, и Соломона, брата своего, не пригласил.",
+        "NEO": "Mais il n’invita pas Nathan le prophète, ni Banaïas, ni les vaillants hommes, ni Salomon, son frère.",
+        "NAB": "But he did not invite the prophet Nathan, or Benaiah, or the pick of the army, or his brother Solomon.",
+        "VAT_ES": "pero no invitó al profeta Natán, a Benaías, al cuerpo de los valientes de David, ni a su hermano Salomón.",
+        "CEI": "Ma non invitò il profeta Natan, né Benaià, né i più valorosi soldati e neppure Salomone suo fratello."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר נָתָ֗ן אֶל בַּת שֶׁ֤בַע אֵם שְׁלֹמֹה֙ לֵ/אמֹ֔ר הֲ/ל֣וֹא שָׁמַ֔עַתְּ כִּ֥י מָלַ֖ךְ אֲדֹנִיָּ֣הוּ בֶן חַגִּ֑ית וַ/אֲדֹנֵ֥י/נוּ דָוִ֖ד לֹ֥א יָדָֽע׃",
+        "LXX": "καὶ εἶπεν Ναθὰν πρὸς Βηρσάβεε μητέρα Σαλωμὼν λέγων Οὐκ ἤκουσας ὅτι ἐβασίλευσεν Ἀδωνείας υἱὸς Ἁγγείθ, καὶ ὁ κύριος ἡμῶν Δαυεὶδ οὐκ ἔγνω;",
+        "VUL": "Dixit itaque Nathan ad Bethsabee matrem Salomonis : Num audisti quod regnaverit Adonias filius Haggith, et dominus noster David hoc ignorat ?",
+        "SYN": "Тогда Нафан сказал Вирсавии, матери Соломона, говоря: слышала ли ты, что Адония, сын Аггифин, сделался царем, а господин наш Давид не знает _о_ _том?_",
+        "NEO": "Alors Nathan dit à Bethsabée, mère de Salomon : « N’as-tu pas appris qu’Adonias, fils de Haggith, est devenu roi, sans que notre seigneur David le sache ?",
+        "NAB": "Then Nathan said to Bathsheba, Solomon's mother: \"Have you not heard that Adonijah, son of Haggith, has become king without the knowledge of our lord David?",
+        "VAT_ES": "Entonces Natán dijo a Betsabé, la madre de Salomón: «&iquest;No te has enterado de que Adonías, el hijo de Jaguit, se ha proclamado rey sin que nuestro señor David lo sepa?",
+        "CEI": "Allora Natan disse a Betsabea, madre di Salomone: \"Non hai sentito che Adonia, figlio di Agghìt, si è fatto re e Davide nostro signore non lo sa neppure?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֕ה לְכִ֛י אִיעָצֵ֥/ךְ נָ֖א עֵצָ֑ה וּ/מַלְּטִי֙ אֶת נַפְשֵׁ֔/ךְ וְ/אֶת נֶ֥פֶשׁ בְּנֵ֖/ךְ שְׁלֹמֹֽה׃",
+        "LXX": "καὶ νῦν δεῦρο συμβουλεύσω σοι δὴ συμβουλίαν, καὶ ἐξελοῦ τὴν ψυχήν σου καὶ τὴν ψυχὴν τοῦ υἱοῦ σου Σαλωμών.",
+        "VUL": "Nunc ergo veni, accipe consilium a me, et salva animam tuam, filiique tui Salomonis.",
+        "SYN": "Теперь, вот, я советую тебе: спасай жизнь твою и жизнь сына твоего Соломона.",
+        "NEO": "Viens donc maintenant, laisse-moi te donner un conseil, afin que tu sauves ta vie et celle de ton fils Salomon.",
+        "NAB": "Come now, let me advise you so that you may save your life and that of your son Solomon.",
+        "VAT_ES": "Ahora bien, te voy a dar un consejo para que salves tu vida y la de tu hijo Salomón.",
+        "CEI": "Ebbene, ti do un consiglio, perché tu salvi la tua vita e quella del tuo figlio Salomone."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "לְכִ֞י וּ/בֹ֣אִי אֶל הַ/מֶּ֣לֶךְ דָּוִ֗ד וְ/אָמַ֤רְתְּ אֵלָי/ו֙ הֲ/לֹֽא אַתָּ֞ה אֲדֹנִ֣/י הַ/מֶּ֗לֶךְ נִשְׁבַּ֤עְתָּ לַ/אֲמָֽתְ/ךָ֙ לֵ/אמֹ֔ר כִּֽי שְׁלֹמֹ֤ה בְנֵ/ךְ֙ יִמְלֹ֣ךְ אַחֲרַ֔/י וְ/ה֖וּא יֵשֵׁ֣ב עַל כִּסְאִ֑/י וּ/מַדּ֖וּעַ מָלַ֥ךְ אֲדֹנִיָֽהוּ׃",
+        "LXX": "δεῦρο εἴσελθε πρὸς τὸν βασιλέα Δαυεὶδ καὶ ἐρεῖς πρὸς αὐτὸν λέγουσα Οὐχὶ σύ, κύριέ μου βασιλεῦ, ὤμοσας τῇ δούλῃ σου λέγων ὅτι Ὁ υἱός σου Σαλωμὼν βασιλεύσει μετ’ ἐμέ, καὶ αὐτὸς καθιεῖται ἐπὶ τοῦ θρόνου μου; καὶ τί ὅτι ἐβασίλευσεν Ἀδωνείας;",
+        "VUL": "Vade, et ingredere ad regem David, et dic ei : Nonne tu, domine mi rex, jurasti mihi ancillæ tuæ, dicens : Salomon filius tuus regnabit post me, et ipse sedebit in solio meo ? quare ergo regnat Adonias ?",
+        "SYN": "Иди и войди к царю Давиду и скажи ему: не клялся ли ты, господин мой царь, рабе твоей, говоря: \"сын твой Соломон будет царем после меня и он сядет на престоле моем\"? Почему же воцарился Адония?",
+        "NEO": "Va, entre chez le roi David, et dis-lui : O roi, mon seigneur, n’as-tu pas fait serment à ta servante en disant : Salomon, ton fils, régnera après moi, et c’est lui qui s’assiéra sur mon trône ? Pourquoi donc Adonias est-il devenu roi ?",
+        "NAB": "Go, visit King David, and say to him, 'Did you not, lord king, swear to your handmaid: Your son Solomon shall be king after me and shall sit upon my throne? Why, then, has Adonijah become king?'",
+        "VAT_ES": "Ve a presentarte ante el rey y dile: Rey, mi señor, tú mismo has hecho este juramento a tu servidora: «Salomón, tu hijo, reinará después de mí y se sentará en mi trono». &iquest;Por qué entonces Adonías se ha proclamado rey?",
+        "CEI": "Và, presentati al re Davide e digli: Re mio signore, non hai forse giurato alla tua schiava che Salomone tuo figlio avrebbe regnato dopo di te, sedendo sul tuo trono? Perché si è fatto re Adonia?"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הִנֵּ֗ה עוֹדָ֛/ךְ מְדַבֶּ֥רֶת שָׁ֖ם עִם הַ/מֶּ֑לֶךְ וַ/אֲנִי֙ אָב֣וֹא אַחֲרַ֔יִ/ךְ וּ/מִלֵּאתִ֖י אֶת דְּבָרָֽיִ/ךְ׃",
+        "LXX": "καὶ ἰδοὺ ἔτι λαλούσης σου ἐκεῖ μετὰ τοῦ βασιλέως καὶ ἐγὼ εἰσελεύσομαι ὀπίσω καὶ πληρώσω τοὺς λόγους σου.",
+        "VUL": "Et adhuc ibi te loquente cum rege, ego veniam post te, et complebo sermones tuos.",
+        "SYN": "И вот, когда ты еще будешь говорить там с царем, войду и я вслед за тобою и дополню слова твои.",
+        "NEO": "Et voici, pendant que tu parleras là avec le roi, j’entrerai après toi, et je confirmerai tes paroles. »",
+        "NAB": "And while you are still there speaking to the king, I will come in after you and confirm what you have said.\"",
+        "VAT_ES": "Y cuando todavía estés allí, hablando con el rey, yo entraré detrás de ti y confirmaré tus palabras».",
+        "CEI": "Ecco, mentre tu starai ancora lì a parlare al re, io ti seguirò e confermerò le tue parole\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/תָּבֹ֨א בַת שֶׁ֤בֶע אֶל הַ/מֶּ֨לֶךְ֙ הַ/חַ֔דְרָ/ה וְ/הַ/מֶּ֖לֶךְ זָקֵ֣ן מְאֹ֑ד וַֽ/אֲבִישַׁג֙ הַ/שּׁ֣וּנַמִּ֔ית מְשָׁרַ֖ת אֶת הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ εἰσῆλθεν Βηρσάβεε πρὸς τὸν βασιλέα εἰς τὸ ταμεῖον· καὶ ὁ βασιλεὺς πρεσβύτης σφόδρα, καὶ Ἀβεισὰ ἡ Σωμανεῖτις ἡ λειτουργοῦσα τῷ βασιλεῖ.",
+        "VUL": "Ingressa est itaque Bethsabee ad regem in cubiculum : rex autem senuerat nimis, et Abisag Sunamitis ministrabat ei.",
+        "SYN": "Вирсавия пошла к царю в спальню; царь был очень стар, и Ависага Сунамитянка прислуживала царю;",
+        "NEO": "Bethsabée se rendit auprès du roi, dans sa chambre ; le roi était très vieux, et Abisag, la Sunamite, servait le roi.",
+        "NAB": "So Bathsheba visited the king in his room, while Abishag the Shunamite was attending him because of his advanced age.",
+        "VAT_ES": "Betsabé se presentó ante el rey en su habitación privada. El rey estaba muy viejo y Abisag, la sunamita, lo servía.",
+        "CEI": "Betsabea si presentò nella camera del re, che era molto vecchio, e Abisag la Sunammita lo serviva."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/תִּקֹּ֣ד בַּת שֶׁ֔בַע וַ/תִּשְׁתַּ֖חוּ לַ/מֶּ֑לֶךְ וַ/יֹּ֥אמֶר הַ/מֶּ֖לֶךְ מַה לָּֽ/ךְ׃",
+        "LXX": "καὶ ἔκυψεν Βηρσάβεε καὶ προσεκύνησεν τῷ βασιλεῖ· καὶ εἶπεν ὁ βασιλεύς Τί ἔστιν σοι;",
+        "VUL": "Inclinavit se Bethsabee, et adoravit regem. Ad quam rex : Quid tibi, inquit, vis ?",
+        "SYN": "и наклонилась Вирсавия и поклонилась царю; и сказал царь: что тебе?",
+        "NEO": "Bethsabée s’inclina et se prosterna devant lui, et le roi dit : « Que veux-tu ? »",
+        "NAB": "Bathsheba bowed in homage to the king, who said to her, \"What do you wish?\"",
+        "VAT_ES": "Betsabé se inclinó profundamente ante el rey, y este le preguntó: «&iquest;Qué quieres?».",
+        "CEI": "Betsabea si inginocchiò e si prostrò davanti al re, che le domandò: \"Che hai?\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֣אמֶר ל֗/וֹ אֲדֹנִ/י֙ אַתָּ֨ה נִשְׁבַּ֜עְתָּ בַּֽ/יהוָ֤ה אֱלֹהֶ֨י/ךָ֙ לַֽ/אֲמָתֶ֔/ךָ כִּֽי שְׁלֹמֹ֥ה בְנֵ֖/ךְ יִמְלֹ֣ךְ אַחֲרָ֑/י וְ/ה֖וּא יֵשֵׁ֥ב עַל כִּסְאִֽ/י׃",
+        "LXX": "ἡ δὲ εἶπεν Κύριε, σὺ ὤμοσας ἐν τῷ θεῷ σου τῇ δούλῃ σου λέγων ὅτι Ὁ υἱός σου Σαλωμὼν βασιλεύσει μετ’ ἐμέ, καὶ καθήσεται ἐπὶ τοῦ θρόνου μου.",
+        "VUL": "Quæ respondens, ait : Domine mi, tu jurasti per Dominum Deum tuum ancillæ tuæ : Salomon filius tuus regnabit post me, et ipse sedebit in solio meo.",
+        "SYN": "Она сказала ему: господин мой царь! ты клялся рабе твоей Господом Богом твоим: \"сын твой Соломон будет царствовать после меня и он сядет на престоле моем\".",
+        "NEO": "Elle lui répondit : « Mon seigneur, tu as fait serment à ta servante par \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, en disant : Salomon, ton fils, régnera après moi, et c’est lui qui sera assis sur mon trône.",
+        "NAB": "She answered him: \"My lord, you swore to me your handmaid by the LORD, your God, that my son Solomon should reign after you and sit upon your throne.",
+        "VAT_ES": "Ella le dijo: «Mi señor, tú mismo has hecho a tu servidora este juramento, por el Señor, tu Dios: «Tu hijo Salomón reinará después de mí y se sentará en mi trono».",
+        "CEI": "Essa gli rispose: \"Signore, tu hai giurato alla tua schiava per il Signore tuo Dio che Salomone tuo figlio avrebbe regnato dopo di te, sedendo sul tuo trono."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֕ה הִנֵּ֥ה אֲדֹנִיָּ֖ה מָלָ֑ךְ וְ/עַתָּ֛ה אֲדֹנִ֥/י הַ/מֶּ֖לֶךְ לֹ֥א יָדָֽעְתָּ׃",
+        "LXX": "καὶ νῦν ἰδοὺ Ἀδωνείας ἐβασίλευσεν, καὶ σύ, κύριέ μου βασιλεῦ, οὐκ ἔγνως·",
+        "VUL": "Et ecce nunc Adonias regnat, te, domine mi rex, ignorante.",
+        "SYN": "А теперь, вот, Адония _воцарился,_ и ты, господин мой царь, не знаешь _о_ _том._",
+        "NEO": "Et maintenant, voici qu’Adonias est devenu roi, et cependant, toi, ô roi mon seigneur, tu l’ignores !",
+        "NAB": "But now Adonijah has become king, and you, my lord king, do not know it.",
+        "VAT_ES": "Pero ahora Adonías se ha proclamado rey, sin que tú, mi señor el rey, lo sepas.",
+        "CEI": "Ora invece Adonia è divenuto re e tu, re mio signore, non lo sai neppure."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ֠/יִּזְבַּח שׁ֥וֹר וּֽ/מְרִיא וְ/צֹאן֮ לָ/רֹב֒ וַ/יִּקְרָא֙ לְ/כָל בְּנֵ֣י הַ/מֶּ֔לֶךְ וּ/לְ/אֶבְיָתָר֙ הַ/כֹּהֵ֔ן וּ/לְ/יֹאָ֖ב שַׂ֣ר הַ/צָּבָ֑א וְ/לִ/שְׁלֹמֹ֥ה עַבְדְּ/ךָ֖ לֹ֥א קָרָֽא׃",
+        "LXX": "καὶ ἐθυσίασεν μόσχους καὶ ἄρνας καὶ πρόβατα εἰς πλῆθος, καὶ ἐκάλεσεν πάντας τοὺς υἱοὺς τοῦ βασιλέως καὶ Ἀβιαθὰρ τὸν ἱερέα καὶ Ἰωὰβ τὸν ἄρχοντα τῆς δυνάμεως, καὶ τὸν Σαλωμὼν τὸν δοῦλόν σου οὐκ ἐκάλεσεν.",
+        "VUL": "Mactavit boves, et pinguia quæque, et arietes plurimos, et vocavit omnes filios regis, Abiathar quoque sacerdotem, et Joab principem militiæ : Salomonem autem servum tuum non vocavit.",
+        "SYN": "И заколол он множество волов, тельцов и овец, и пригласил всех сыновей царских и священника Авиафара, и военачальника Иоава; Соломона же, раба твоего, не пригласил.",
+        "NEO": "Il a immolé des bœufs, des veaux gras et des brebis en grand nombre ; et il a invité tous les fils du roi, le prêtre Abiathar, et Joab, chef de l’armée, mais il n’a pas invité Salomon, ton serviteur.",
+        "NAB": "He has slaughtered oxen, fatlings, and sheep in great numbers; he has invited all the king's sons, Abiathar the priest, and Joab, the general of the army, but not your servant Solomon.",
+        "VAT_ES": "El ha sacrificado una gran cantidad de bueyes, de terneros cebados y de corderos, y ha invitado a todos los hijos del rey, al sacerdote Abiatar, y a Joab, el jefe del ejército. Pero no ha invitado a tu hijo Salomón.",
+        "CEI": "Ha immolato molti buoi, vitelli grassi e pecore, ha invitato tutti i figli del re, il sacerdote Ebiatàr e Ioab capo dell'esercito, ma non ha invitato Salomone tuo servitore."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/אַתָּה֙ אֲדֹנִ֣/י הַ/מֶּ֔לֶךְ עֵינֵ֥י כָל יִשְׂרָאֵ֖ל עָלֶ֑י/ךָ לְ/הַגִּ֣יד לָ/הֶ֔ם מִ֗י יֵשֵׁ֛ב עַל כִּסֵּ֥א אֲדֹנִֽ/י הַ/מֶּ֖לֶךְ אַחֲרָֽי/ו׃",
+        "LXX": "καὶ σύ, κύριέ μου βασιλεῦ, οἱ ὀφθαλμοὶ παντὸς Ἰσραὴλ πρὸς σέ, ἀπαγγεῖλαι αὐτοῖς τίς καθήσεται ἐπὶ τοῦ θρόνου τοῦ κυρίου μου τοῦ βασιλέως μετ’ αὐτόν.",
+        "VUL": "Verumtamen, domine mi rex, in te oculi respiciunt totius Israël, ut indices eis quis sedere debeat in solio tuo, domine mi rex, post te.",
+        "SYN": "Но ты, господин мой, -- царь, и глаза всех Израильтян _устремлены_ на тебя, чтобы ты объявил им, кто сядет на престоле господина моего царя после него;",
+        "NEO": "Cependant, ô roi mon seigneur, tout Israël a les yeux sur toi, pour que tu fasses connaître qui doit s’asseoir sur le trône du roi mon seigneur après lui.",
+        "NAB": "Now, my lord king, all Israel is waiting for you to make known to them who is to sit on the throne after your royal majesty.",
+        "VAT_ES": "Por eso, todo Israel tiene los ojos puestos en ti, para que le anuncies quién debe sentarse en el trono de mi señor el rey, después de él.",
+        "CEI": "Re mio signore, gli occhi di tutto Israele sono su di te, perché annunzi loro chi siederà sul trono del re mio signore dopo di lui."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֕ה כִּ/שְׁכַ֥ב אֲדֹנִֽ/י הַ/מֶּ֖לֶךְ עִם אֲבֹתָ֑י/ו וְ/הָיִ֗יתִי אֲנִ֛י וּ/בְנִ֥/י שְׁלֹמֹ֖ה חַטָּאִֽים׃",
+        "LXX": "καὶ ἔσται ὡς ἂν κοιμηθῇ ὁ κύριός μου ὁ βασιλεὺς μετὰ τῶν πατέρων αὐτοῦ, καὶ ἔσομαι ἐγὼ καὶ Σαλωμὼν ὁ υἱός μου ἁμαρτωλοί.",
+        "VUL": "Eritque, cum dormierit dominus meus rex cum patribus suis, erimus ego et filius meus Salomon peccatores.",
+        "SYN": "иначе, когда господин мой царь почиет с отцами своими, падет обвинение на меня и на сына моего Соломона.",
+        "NEO": "Autrement, lorsque le roi mon seigneur sera couché avec ses pères, il arrivera que nous serons, moi et mon fils Salomon, traités comme des criminels. »",
+        "NAB": "If this is not done, when my lord the king sleeps with his fathers, I and my son Solomon will be considered criminals.\"",
+        "VAT_ES": "De lo contrario, cuando mi señor el rey se vaya a descansar con sus padres, yo y mi hijo Salomón correremos la suerte de los culpables».",
+        "CEI": "Quando il re mio signore si sarà addormentato con i suoi padri, io e mio figlio Salomone saremo trattati da colpevoli\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּ֛ה עוֹדֶ֥/נָּה מְדַבֶּ֖רֶת עִם הַ/מֶּ֑לֶךְ וְ/נָתָ֥ן הַ/נָּבִ֖יא בָּֽא׃",
+        "LXX": "καὶ ἰδοὺ ἔτι αὐτῆς λαλούσης μετὰ τοῦ βασιλέως καὶ Ναθὰν ὁ προφήτης ἦλθεν.",
+        "VUL": "Adhuc illa loquente cum rege, Nathan propheta venit.",
+        "SYN": "Когда она еще говорила с царем, пришел и пророк Нафан.",
+        "NEO": "Comme elle parlait encore avec le roi, voici que Nathan, le prophète, arriva.",
+        "NAB": "While she was still speaking to the king, the prophet Nathan came in.",
+        "VAT_ES": "Todavía estaba hablando con el rey, cuando llegó el profeta Natán.",
+        "CEI": "Mentre Betsabea ancora parlava con il re, arrivò il profeta Natan."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יַּגִּ֤ידוּ לַ/מֶּ֨לֶךְ֙ לֵ/אמֹ֔ר הִנֵּ֖ה נָתָ֣ן הַ/נָּבִ֑יא וַ/יָּבֹא֙ לִ/פְנֵ֣י הַ/מֶּ֔לֶךְ וַ/יִּשְׁתַּ֧חוּ לַ/מֶּ֛לֶךְ עַל אַפָּ֖י/ו אָֽרְצָ/ה׃",
+        "LXX": "καὶ ἀνηγγέλη τῷ βασιλεῖ Ἰδοὺ Ναθὰν ὁ προφήτης· καὶ εἰσῆλθεν κατὰ πρόσωπον τοῦ βασιλέως, καὶ προσεκύνησεν τῷ βασιλεῖ κατὰ πρόσωπον αὐτοῦ ἐπὶ τὴν γῆν.",
+        "VUL": "Et nuntiaverunt regi, dicentes : Adest Nathan propheta. Cumque introisset in conspectu regis, et adorasset eum pronus in terram,",
+        "SYN": "И сказали царю, говоря: вот Нафан пророк. И вошел он к царю и поклонился царю лицем до земли.",
+        "NEO": "On l’annonça au roi, en disant : « Voici Nathan, le prophète. » Il entra en présence du roi et se prosterna devant lui, le visage contre terre ;",
+        "NAB": "When he had been announced, the prophet entered the king's presence and, bowing to the floor, did him homage.",
+        "VAT_ES": "Le anunciaron al rey: «Está aquí el profeta Natán». El se presentó al rey y se postró delante de él con el rostro en tierra.",
+        "CEI": "Fu annunziato al re: \"Ecco c'è il profeta Natan\". Questi si presentò al re, davanti al quale si prostrò con la faccia a terra."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֮ נָתָן֒ אֲדֹנִ֣/י הַ/מֶּ֔לֶךְ אַתָּ֣ה אָמַ֔רְתָּ אֲדֹנִיָּ֖הוּ יִמְלֹ֣ךְ אַחֲרָ֑/י וְ/ה֖וּא יֵשֵׁ֥ב עַל כִּסְאִֽ/י׃",
+        "LXX": "καὶ εἶπεν Ναθάν Κύριέ μου βασιλεῦ, σὺ εἶπας Ἀδωνείας βασιλεύσει ὀπίσω μου, καὶ αὐτὸς καθήσεται ἐπὶ τοῦ θρόνου μου;",
+        "VUL": "dixit Nathan : Domine mi rex, tu dixisti : Adonias regnet post me, et ipse sedeat super thronum meum ?",
+        "SYN": "И сказал Нафан: господин мой царь! сказал ли ты: \"Адония будет царствовать после меня и он сядет на престоле моем\"?",
+        "NEO": "et Nathan dit : « O roi, mon seigneur, tu as donc dit : Adonias régnera après moi et il s’assiéra sur mon trône !",
+        "NAB": "Then Nathan said: \"Have you decided, my lord king, that Adonijah is to reign after you and sit on your throne?",
+        "VAT_ES": "Luego dijo Natán: «Mi señor el rey, sin duda tú has dicho: «Adonías reinará después de mí y se sentará en mi trono».",
+        "CEI": "Natan disse: \"Re mio signore, tu forse hai decretato: Adonia regnerà dopo di me e siederà sul mio trono?"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "כִּ֣י יָרַ֣ד הַ/יּ֗וֹם וַ֠/יִּזְבַּח שׁ֥וֹר וּֽ/מְרִיא וְ/צֹאן֮ לָ/רֹב֒ וַ/יִּקְרָא֩ לְ/כָל בְּנֵ֨י הַ/מֶּ֜לֶךְ וּ/לְ/שָׂרֵ֤י הַ/צָּבָא֙ וּ/לְ/אֶבְיָתָ֣ר הַ/כֹּהֵ֔ן וְ/הִנָּ֛/ם אֹכְלִ֥ים וְ/שֹׁתִ֖ים לְ/פָנָ֑י/ו וַ/יֹּ֣אמְר֔וּ יְחִ֖י הַ/מֶּ֥לֶךְ אֲדֹנִיָּֽהוּ׃",
+        "LXX": "ὅτι κατέβη σήμερον καὶ ἐθυσίασεν μόσχους καὶ ἄρνας καὶ πρόβατα εἰς πλῆθος, καὶ ἐκάλεσεν πάντας τοὺς υἱοὺς τοῦ βασιλέως καὶ τοὺς ἄρχοντας τῆς δυνάμεως καὶ Ἀβιαθὰρ τὸν ἱερέα· καὶ ἰδού εἰσιν ἐσθίοντες καὶ πίνοντες ἐνώπιον αὐτοῦ, καὶ εἶπαν Ζήτω ὁ βασιλεὺς Ἀδωνειού.",
+        "VUL": "Quia descendit hodie, et immolavit boves, et pinguia, et arietes plurimos, et vocavit universos filios regis et principes exercitus, Abiathar quoque sacerdotem, illisque vescentibus et bibentibus coram eo, et dicentibus : Vivat rex Adonias :",
+        "SYN": "Потому что он ныне сошел и заколол множество волов, тельцов и овец, и пригласил всех сыновей царских и военачальников и священника Авиафара, и вот, они едят и пьют у него и говорят: да живет царь Адония!",
+        "NEO": "Car il est descendu aujourd’hui, il a immolé des bœufs, des veaux gras et des brebis en quantité, et il a invité tous les fils du roi, les chefs de l’armée et le prêtre Abiathar. Et voici qu’ils mangent et boivent devant lui, et ils disent : Vive le roi Adonias !",
+        "NAB": "He went down today and slaughtered oxen, fatlings, and sheep in great numbers; he invited all the king's sons, the commanders of the army, and Abiathar the priest, and they are eating and drinking in his company and saying, 'Long live King Adonijah!'",
+        "VAT_ES": "Porque hoy bajó a sacrificar una gran cantidad de bueyes, de terneros cebados y de corderos, e invitó a todos los hijos del rey, a los jefes del ejército y al sacerdote Abiatar. Ahora están comiendo y bebiendo delante de él, y lo han aclamado: &iexcl;Viva el rey Adonías!",
+        "CEI": "Difatti oggi egli è andato ad immolare molti buoi, vitelli grassi e pecore e ha invitato tutti i figli del re, i capi dell'esercito e il sacerdote Ebiatàr. Costoro mangiano e bevono con lui e gridano: Viva il re Adonia!"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/לִ֣/י אֲנִֽי עַ֠בְדֶּ/ךָ וּ/לְ/צָדֹ֨ק הַ/כֹּהֵ֜ן וְ/לִ/בְנָיָ֧הוּ בֶן יְהוֹיָדָ֛ע וְ/לִ/שְׁלֹמֹ֥ה עַבְדְּ/ךָ֖ לֹ֥א קָרָֽא׃",
+        "LXX": "καὶ ἐμὲ αὐτὸν τὸν δοῦλόν σου καὶ Σαδὼκ τὸν ἱερέα καὶ Βαναίαν υἱὸν Ἰωδᾶε καὶ Σαλωμὼν τὸν δοῦλόν σου οὐκ ἐκάλεσεν.",
+        "VUL": "me servum tuum, et Sadoc sacerdotem, et Banaiam filium Jojadæ, et Salomonem famulum tuum non vocavit.",
+        "SYN": "А меня, раба твоего, и священника Садока, и Ванею, сына Иодаева, и Соломона, раба твоего, не пригласил.",
+        "NEO": "Mais il n’a invité ni moi, ton serviteur, ni le prêtre Sadoc, ni Banaïas, fils de Joïadas, ni Salomon, ton serviteur.",
+        "NAB": "But me, your servant, he did not invite; nor Zadok the priest, nor Benaiah, son of Jehoiada, nor your servant Solomon.",
+        "VAT_ES": "Pero a mí, que soy tu servidor, al sacerdote Sadoc, a Benaías, hijo de Iehoiadá, y a tu servidor Salomón, no nos ha invitado.",
+        "CEI": "Ma non ha invitato me tuo servitore, né il sacerdote Zadòk, né Benaià figlio di Ioiadà, né Salomone tuo servitore."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "אִ֗ם מֵ/אֵת֙ אֲדֹנִ֣/י הַ/מֶּ֔לֶךְ נִהְיָ֖ה הַ/דָּבָ֣ר הַ/זֶּ֑ה וְ/לֹ֤א הוֹדַ֨עְתָּ֙ אֶֽת עבדי/ך עַבְדְּ/ךָ֔ מִ֗י יֵשֵׁ֛ב עַל כִּסֵּ֥א אֲדֹנִֽ/י הַ/מֶּ֖לֶךְ אַחֲרָֽי/ו׃",
+        "LXX": "εἰ διὰ τοῦ κυρίου μου τοῦ βασιλέως γέγονεν τὸ ῥῆμα τοῦτο, καὶ οὐκ ἐγνώρισας τῷ δούλῳ σου τίς καθήσεται ἐπὶ τὸν θρόνον τοῦ κυρίου μου βασιλέως μετ’ αὐτόν;",
+        "VUL": "Numquid a domino meo rege exivit hoc verbum, et mihi non indicasti servo tuo quis sessurus esset super thronum domini mei regis post eum ?",
+        "SYN": "Не сталось ли это по _воле_ господина моего царя, и для чего ты не открыл рабу твоему, кто сядет на престоле господина моего царя после него?",
+        "NEO": "Est-ce bien par la volonté de mon seigneur le roi qu’une telle chose a lieu, sans que tu aies fait connaître à tes serviteurs qui doit s’asseoir sur le trône du roi mon seigneur, après lui ? »",
+        "NAB": "Was this done by my royal master's order without my being told who was to succeed to your majesty's kingly throne?\"",
+        "VAT_ES": "Tal vez esta decisión provenga de mi señor el rey, sin que tú hayas querido hacer saber a tus servidores quién se sentaría en el trono de mi señor el rey, después de él».",
+        "CEI": "Proprio il re mio signore ha ordinato ciò? Perché non hai indicato ai tuoi ministri chi siederà sul trono del re mio signore?\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַן הַ/מֶּ֤לֶךְ דָּוִד֙ וַ/יֹּ֔אמֶר קִרְאוּ לִ֖/י לְ/בַת שָׁ֑בַע וַ/תָּבֹא֙ לִ/פְנֵ֣י הַ/מֶּ֔לֶךְ וַֽ/תַּעֲמֹ֖ד לִ/פְנֵ֥י הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ ἀπεκρίθη Δαυεὶδ καὶ εἶπεν Καλέσατέ μοι τὴν Βηρσάβεε· καὶ εἰσῆλθεν ἐνώπιον τοῦ βασιλέως, καὶ ἔστη ἐνώπιον αὐτοῦ.",
+        "VUL": "Et respondit rex David, dicens : Vocate ad me Bethsabee. Quæ cum fuisset ingressa coram rege, et stetisset ante eum,",
+        "SYN": "И отвечал царь Давид и сказал: позовите ко мне Вирсавию. И вошла она и стала пред царем.",
+        "NEO": "Le roi David répondit et dit : « Appelez-moi Bethsabée. » Elle entra devant le roi et se présenta devant le roi.",
+        "NAB": "King David answered, \"Call Bathsheba here.\" When she re-entered the king's presence and stood before him,",
+        "VAT_ES": "Entonces el rey David tomó la palabra y dijo: «Llámenme a Betsabé». Ella se presentó al rey y se quedó de pie delante de él.",
+        "CEI": "Il re Davide, presa la parola, disse: \"Chiamatemi Betsabea!\". Costei si presentò al re e, restando essa alla sua presenza,"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יִּשָּׁבַ֥ע הַ/מֶּ֖לֶךְ וַ/יֹּאמַ֑ר חַי יְהוָ֕ה אֲשֶׁר פָּדָ֥ה אֶת נַפְשִׁ֖/י מִ/כָּל צָרָֽה׃",
+        "LXX": "καὶ ὤμοσεν ὁ βασιλεὺς καὶ εἶπεν Ζῇ Κύριος ὃς ἐλυτρώσατο τὴν ψυχήν μου ἐκ πάσης θλίψεως,",
+        "VUL": "juravit rex, et ait : Vivit Dominus, qui eruit animam meam de omni angustia,",
+        "SYN": "И клялся царь и сказал: жив Господь, избавлявший душу мою от всякой беды!",
+        "NEO": "Et le roi fit ce serment : « Vive \\+w Yahweh|strong=\"H3068\"\\+w** qui m’a délivré de toutes les adversités !",
+        "NAB": "the king swore, \"As the LORD lives, who has delivered me from all distress,",
+        "VAT_ES": "Y el rey juró, diciendo: «&iexcl;Por la vida del Señor, que me ha librado de todo peligro,",
+        "CEI": "il re giurò: \"Per la vita del Signore che mi ha liberato da ogni angoscia!"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "כִּ֡י כַּ/אֲשֶׁר֩ נִשְׁבַּ֨עְתִּי לָ֜/ךְ בַּ/יהוָ֨ה אֱלֹהֵ֤י יִשְׂרָאֵל֙ לֵ/אמֹ֔ר כִּֽי שְׁלֹמֹ֤ה בְנֵ/ךְ֙ יִמְלֹ֣ךְ אַחֲרַ֔/י וְ/ה֛וּא יֵשֵׁ֥ב עַל כִּסְאִ֖/י תַּחְתָּ֑/י כִּ֛י כֵּ֥ן אֶעֱשֶׂ֖ה הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "ὅτι καθὼς ὤμοσά σοι ἐν Κυρίῳ τῷ θεῷ Ἰσραὴλ λέγων ὅτι Σαλωμὼν ὁ υἱός σου βασιλεύσει μετ’ ἐμὲ καὶ αὐτὸς καθήσεται ἐπὶ τοῦ θρόνου μου ἀντ’ ἐμοῦ, ὅτι οὕτως ποιήσω τῇ ἡμέρᾳ ταύτῃ.",
+        "VUL": "quia sicut juravi tibi per Dominum Deum Israël, dicens : Salomon filius tuus regnabit post me, et ipse sedebit super solium meum pro me : sic faciam hodie.",
+        "SYN": "Как я клялся тебе Господом Богом Израилевым, говоря, что Соломон, сын твой, будет царствовать после меня и он сядет на престоле моем вместо меня, так я и сделаю это сегодня.",
+        "NEO": "Ce que je t’ai juré par \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël, en disant : Salomon, ton fils, régnera après moi, et il s’assiéra sur mon trône à ma place, — je le ferai en ce jour. »",
+        "NAB": "this very day I will fulfill the oath I swore to you by the LORD, the God of Israel, that your son Solomon should reign after me and should sit upon my throne in my place.\"",
+        "VAT_ES": "hoy mismo daré cumplimiento a lo que te he jurado por el Señor, el Dios de Israel, cuando dije: Tu hijo Salomón reinará después de mí y se sentará en mi trono en lugar mío!».",
+        "CEI": "Come ti ho giurato per il Signore, Dio di Israele, che Salomone tuo figlio avrebbe regnato dopo di me, sedendo sul mio trono al mio posto, così farò oggi\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/תִּקֹּ֨ד בַּת שֶׁ֤בַע אַפַּ֨יִם֙ אֶ֔רֶץ וַ/תִּשְׁתַּ֖חוּ לַ/מֶּ֑לֶךְ וַ/תֹּ֕אמֶר יְחִ֗י אֲדֹנִ֛/י הַ/מֶּ֥לֶךְ דָּוִ֖ד לְ/עֹלָֽם׃",
+        "LXX": "καὶ ἔκυψεν Βηρσάβεε ἐπὶ πρόσωπον ἐπὶ τὴν γῆν, καὶ προσεκύνησεν τῷ βασιλεῖ καὶ εἶπεν Ζήτω ὁ κύριός μου ὁ βασιλεὺς Δαυεὶδ εἰς τὸν αἰῶνα.",
+        "VUL": "Summissoque Bethsabee in terram vultu, adoravit regem, dicens : Vivat dominus meus David in æternum.",
+        "SYN": "И наклонилась Вирсавия лицем до земли, и поклонилась царю, и сказала: да живет господин мой царь Давид во веки!",
+        "NEO": "Bethsabée s’inclina le visage contre terre et se prosterna devant le roi ; et elle dit : « Vive à jamais mon seigneur, le roi David ! »",
+        "NAB": "Bowing to the floor in homage to the king, Bathsheba said, \"May my lord, King David, live forever!\"",
+        "VAT_ES": "Betsabé se inclinó con el rostro en tierra y se postró delante del rey. Luego exclamó: «&iexcl;Viva para siempre mi señor el rey David!».",
+        "CEI": "Betsabea si inginocchiò con la faccia a terra, si prostrò davanti al re dicendo: \"Viva il mio signore, il re Davide, per sempre!\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר הַ/מֶּ֣לֶךְ דָּוִ֗ד קִרְאוּ לִ֞/י לְ/צָד֤וֹק הַ/כֹּהֵן֙ וּ/לְ/נָתָ֣ן הַ/נָּבִ֔יא וְ/לִ/בְנָיָ֖הוּ בֶּן יְהוֹיָדָ֑ע וַ/יָּבֹ֖אוּ לִ/פְנֵ֥י הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεὺς Δαυείδ Καλέσατέ μοι Σαδὼκ τὸν ἱερέα καὶ Ναθὰν τὸν προφήτην καὶ Βαναίαν υἱὸν Ἰωδᾶε· καὶ εἰσῆλθον ἐνώπιον τοῦ βασιλέως.",
+        "VUL": "Dixit quoque rex David : Vocate mihi Sadoc sacerdotem, et Nathan prophetam, et Banaiam filium Jojadæ. Qui cum ingressi fuissent coram rege,",
+        "SYN": "И сказал царь Давид: позовите ко мне священника Садока и пророка Нафана и Ванею, сына Иодаева. И вошли они к царю.",
+        "NEO": "Le roi David dit : « Appelez-moi le prêtre Sadoc, Nathan le prophète, et Banaïas, fils de Joïadas. » Lorsqu’ils furent entrés en présence du roi,",
+        "NAB": "Then King David summoned Zadok the priest, Nathan the prophet, and Benaiah, son of Jehoiada. When they had entered the king's presence,",
+        "VAT_ES": "El rey David dijo: «Llámenme al sacerdote Sadoc, al profeta Natán y a Benaías, hijo de Iehoiadá». Ellos se presentaron ante el rey,",
+        "CEI": "Il re Davide fece chiamare il sacerdote Zadòk, il profeta Natan e Benaià figlio di Ioiadà. Costoro si presentarono al re,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר הַ/מֶּ֜לֶךְ לָ/הֶ֗ם קְח֤וּ עִמָּ/כֶם֙ אֶת עַבְדֵ֣י אֲדֹנֵי/כֶ֔ם וְ/הִרְכַּבְתֶּם֙ אֶת שְׁלֹמֹ֣ה בְנִ֔/י עַל הַ/פִּרְדָּ֖ה אֲשֶׁר לִ֑/י וְ/הוֹרַדְתֶּ֥ם אֹת֖/וֹ אֶל גִּחֽוֹן׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεὺς αὐτοῖς Λάβετε τοὺς δούλους τοῦ κυρίου ὑμῶν μεθ’ ὑμῶν καὶ ἐπιβιβάσατε τὸν υἱόν μου Σαλωμὼν ἐπὶ τὴν ἡμίονον τὴν ἐμὴν καὶ καταγάγετε αὐτὸν εἰς τὴν Γειών,",
+        "VUL": "dixit ad eos : Tollite vobiscum servos domini vestri, et imponite Salomonem filium meum super mulam meam, et ducite eum in Gihon.",
+        "SYN": "И сказал им царь: возьмите с собою слуг господина вашего и посадите Соломона, сына моего, на мула моего, и сведите его к Гиону,",
+        "NEO": "le roi leur dit : « Prenez avec vous les serviteurs de votre maître, faites monter mon fils Salomon sur ma mule, et vous le ferez descendre à Gihon.",
+        "NAB": "he said to them: \"Take with you the royal attendants. Mount my son Solomon upon my own mule and escort him down to Gihon.",
+        "VAT_ES": "y él les ordenó: «Tomen con ustedes a los servidores de su señor, monten a mi hijo Salomón en mi propia mula y háganlo bajar a Guijón.",
+        "CEI": "che disse loro: \"Prendete con voi la guardia del vostro signore: fate montare Salomone sulla mia mula e fatelo scendere a Ghicon."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וּ/מָשַׁ֣ח אֹת֣/וֹ שָׁ֠ם צָד֨וֹק הַ/כֹּהֵ֜ן וְ/נָתָ֧ן הַ/נָּבִ֛יא לְ/מֶ֖לֶךְ עַל יִשְׂרָאֵ֑ל וּ/תְקַעְתֶּם֙ בַּ/שּׁוֹפָ֔ר וַ/אֲמַרְתֶּ֕ם יְחִ֖י הַ/מֶּ֥לֶךְ שְׁלֹמֹֽה׃",
+        "LXX": "καὶ χρίσατε αὐτὸν ἐκεῖ, Σαδὼκ ὁ ἱερεὺς καὶ Ναθὰν ὁ προφήτης, εἰς βασιλέα ἐπὶ Ἰσραήλ, καὶ σαλπίσατε κερατίνῃ καὶ ἐρεῖτε Ζήτω ὁ βασιλεὺς Σαλωμών.",
+        "VUL": "Et ungat eum ibi Sadoc sacerdos et Nathan propheta in regem super Israël : et canetis buccina, atque dicetis : Vivat rex Salomon.",
+        "SYN": "и да помажет его там Садок священник и Нафан пророк в царя над Израилем, и затрубите трубою и возгласите: да живет царь Соломон!",
+        "NEO": "Là, le prêtre Sadoc et Nathan le prophète l’oindront pour roi sur Israël ; et vous sonnerez de la trompette et vous direz : Vive le roi Salomon !",
+        "NAB": "There Zadok the priest and Nathan the prophet are to anoint him king of Israel, and you shall blow the horn and cry, 'Long live King Solomon!'",
+        "VAT_ES": "Allí, el sacerdote Sadoc y el profeta Natán lo ungirán rey de Israel; ustedes sonarán la trompeta y lo aclamarán: &iexcl;Viva el rey Salomón!",
+        "CEI": "Ivi il sacerdote Zadòk e il profeta Natan lo ungano re d'Israele. Voi suonerete la tromba e griderete: Viva il re Salomone!"
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/עֲלִיתֶ֣ם אַחֲרָ֗י/ו וּ/בָא֙ וְ/יָשַׁ֣ב עַל כִּסְאִ֔/י וְ/ה֥וּא יִמְלֹ֖ךְ תַּחְתָּ֑/י וְ/אֹת֤/וֹ צִוִּ֨יתִי֙ לִֽ/הְי֣וֹת נָגִ֔יד עַל יִשְׂרָאֵ֖ל וְ/עַל יְהוּדָֽה׃",
+        "LXX": "καὶ καθήσεται ἐπὶ τοῦ θρόνου μου καὶ βασιλεύσει ἀντ’ ἐμοῦ, καὶ ἐγὼ ἐνετειλάμην τοῦ εἶναι εἰς ἡγούμενον ἐπὶ Ἰσραὴλ καὶ Ἰουδά.",
+        "VUL": "Et ascendetis post eum, et veniet, et sedebit super solium meum, et ipse regnabit pro me : illique præcipiam ut sit dux super Israël et super Judam.",
+        "SYN": "Потом проводите его назад, и он придет и сядет на престоле моем; он будет царствовать вместо меня; ему завещал я быть вождем Израиля и Иуды.",
+        "NEO": "Puis vous remonterez après lui ; il viendra s’asseoir sur mon trône, et il régnera à ma place, car c’est lui que j’établis pour être chef d’Israël et de Juda. »",
+        "NAB": "When you come back in his train, he is to go in and sit upon my throne and reign in my place. I designate him ruler of Israel and of Judah.\"",
+        "VAT_ES": "Luego volverán a subir detrás de él, y él vendrá a sentarse en mi trono y reinará en mi lugar: yo lo he constituido jefe de Israel y de Judá».",
+        "CEI": "Quindi risalirete dietro a lui, che verrà a sedere sul mio trono e regnerà al mio posto. Poiché io ho designato lui a divenire capo d'Israele e di Giuda\"."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַן בְּנָיָ֧הוּ בֶן יְהֽוֹיָדָ֛ע אֶת הַ/מֶּ֖לֶךְ וַ/יֹּ֣אמֶר אָמֵ֑ן כֵּ֚ן יֹאמַ֣ר יְהוָ֔ה אֱלֹהֵ֖י אֲדֹנִ֥/י הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ ἀπεκρίθη Βαναίας υἱὸς Ἰωδᾶε τῷ βασιλεῖ καὶ εἶπεν Γένοιτο· οὕτως πιστώσαι ὁ θεὸς τοῦ κυρίου μου τοῦ βασιλέως.",
+        "VUL": "Et respondit Banaias filius Jojadæ regi, dicens : Amen : sic loquatur Dominus Deus domini mei regis.",
+        "SYN": "И отвечал Ванея, сын Иодаев, царю и сказал: аминь, -- да скажет так Господь Бог господина моего царя!",
+        "NEO": "Banaïas, fils de Joïadas, répondit au roi : « Amen ! Qu’ainsi l’ordonne \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu de mon seigneur le roi !",
+        "NAB": "In answer to the king, Benaiah, son of Jehoiada, said: \"So be it! May the LORD, the God of my lord the king, so decree!",
+        "VAT_ES": "Entonces Benaías, hijo de Iehoiadá, respondió al rey: «&iexcl;Amén! Así lo haga el Señor, el Dios de mi señor el rey.",
+        "CEI": "Benaià figlio di Ioiadà rispose al re: \"Così sia! Anche il Signore, Dio del re mio signore, decida allo stesso modo!"
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "כַּ/אֲשֶׁ֨ר הָיָ֤ה יְהוָה֙ עִם אֲדֹנִ֣/י הַ/מֶּ֔לֶךְ כֵּ֖ן יהי יִֽהְיֶ֣ה עִם שְׁלֹמֹ֑ה וִֽ/יגַדֵּל֙ אֶת כִּסְא֔/וֹ מִ֨/כִּסֵּ֔א אֲדֹנִ֖/י הַ/מֶּ֥לֶךְ דָּוִֽד׃",
+        "LXX": "καθὼς ἦν Κύριος μετὰ τοῦ κυρίου μου τοῦ βασιλέως, οὕτως εἴη μετὰ Σαλωμών, καὶ μεγαλύναι τὸν θρόνον αὐτοῦ ὑπὲρ τὸν θρόνον τοῦ κυρίου μου τοῦ βασιλέως Δαυείδ.",
+        "VUL": "Quomodo fuit Dominus cum domino meo rege, sic sit cum Salomone, et sublimius faciat solium ejus a solio domini mei regis David.",
+        "SYN": "Как был Господь Бог с господином моим царем, так да будет Он с Соломоном и да возвеличит престол его более престола господина моего царя Давида!",
+        "NEO": "Comme \\+w Yahweh|strong=\"H3068\"\\+w** a été avec mon seigneur le roi, qu’il soit de même avec Salomon, et qu’il élève son trône au-dessus du trône de mon seigneur le roi David ! »",
+        "NAB": "As the LORD has been with your royal majesty, so may he be with Solomon, and exalt his throne even more than that of my lord, King David!\"",
+        "VAT_ES": "Como el señor estuvo con mi señor el rey, esté también con Salomón y engrandezca su trono más aún que el trono de mi señor el rey David».",
+        "CEI": "Come il Signore ha assistito il re mio signore, così assista Salomone e renda il suo trono più splendido di quello del re Davide mio signore\"."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֣רֶד צָד֣וֹק הַ֠/כֹּהֵן וְ/נָתָ֨ן הַ/נָּבִ֜יא וּ/בְנָיָ֣הוּ בֶן יְהוֹיָדָ֗ע וְ/הַ/כְּרֵתִי֙ וְ/הַ/פְּלֵתִ֔י וַ/יַּרְכִּ֨בוּ֙ אֶת שְׁלֹמֹ֔ה עַל פִּרְדַּ֖ת הַ/מֶּ֣לֶךְ דָּוִ֑ד וַ/יֹּלִ֥כוּ אֹת֖/וֹ עַל גִּחֽוֹן׃",
+        "LXX": "καὶ κατέβη Σαδὼκ ὁ ἱερεὺς καὶ Ναθὰν ὁ προφήτης καὶ Βαναίας υἱὸς Ἰωδᾶε καὶ ὁ Χερεθθεὶ καὶ ὁ Φελεθθεί, καὶ ἐπεκάθισαν τὸν Σαλωμὼν ἐπὶ τὴν ἡμίονον τοῦ βασιλέως Δαυεὶδ καὶ ἀπήγαγον αὐτὸν εἰς τὴν Γειών.",
+        "VUL": "Descendit ergo Sadoc sacerdos, et Nathan propheta, et Banaias filius Jojadæ, et Cerethi, et Phelethi : et imposuerunt Salomonem super mulam regis David, et adduxerunt eum in Gihon.",
+        "SYN": "И пошли Садок священник и Нафан пророк и Ванея, сын Иодая, и Хелефеи и Фелефеи, и посадили Соломона на мула царя Давида, и повели его к Гиону.",
+        "NEO": "Le prêtre Sadoc descendit avec Nathan le prophète, Banaïas, fils de Joïadas, les Céréthiens et les Phéléthiens, et, ayant fait monter Salomon sur la mule du roi David, ils le menèrent à Gihon.",
+        "NAB": "So Zadok the priest, Nathan the prophet, Benaiah, son of Jehoiada, and the Cherethites and Pelethites went down, and mounting Solomon on King David's mule, escorted him to Gihon.",
+        "VAT_ES": "El sacerdote Sadoc, el profeta Natán, Benaías, hijo de Iehoiadá, los quereteos y los peleteos bajaron, montaron a Salomón en la mula del rey David y lo llevaron a Guijón.",
+        "CEI": "Scesero il sacerdote Zadòk, il profeta Natan e Benaià figlio di Ioiadà, insieme con i Cretei e con i Peletei; fecero montare Salomone sulla mula del re Davide e lo condussero a Ghicon."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּח֩ צָד֨וֹק הַ/כֹּהֵ֜ן אֶת קֶ֤רֶן הַ/שֶּׁ֨מֶן֙ מִן הָ/אֹ֔הֶל וַ/יִּמְשַׁ֖ח אֶת שְׁלֹמֹ֑ה וַֽ/יִּתְקְעוּ֙ בַּ/שּׁוֹפָ֔ר וַ/יֹּֽאמְרוּ֙ כָּל הָ/עָ֔ם יְחִ֖י הַ/מֶּ֥לֶךְ שְׁלֹמֹֽה׃",
+        "LXX": "καὶ ἔλαβεν Σαδὼκ ὁ ἱερεὺς τὸ κέρας τοῦ ἐλαίου ἐκ τῆς σκηνῆς καὶ ἔχρισεν τὸν Σαλωμών, καὶ ἐσάλπισεν τῇ κερατίνῃ· καὶ εἶπεν πᾶς ὁ λαός Ζήτω ὁ βασιλεὺς Σαλωμών.",
+        "VUL": "Sumpsitque Sadoc sacerdos cornu olei de tabernaculo, et unxit Salomonem : et cecinerunt buccina, et dixit omnis populus : Vivat rex Salomon.",
+        "SYN": "И взял Садок священник рог с елеем из скинии и помазал Соломона. И затрубили трубою, и весь народ восклицал: да живет царь Соломон!",
+        "NEO": "Le prêtre Sadoc prit dans le tabernacle la corne d’huile, et il oignit Salomon ; on sonna de la trompette et tout le peuple dit : « Vive le roi Salomon ! »",
+        "NAB": "Then Zadok the priest took the horn of oil from the tent and anointed Solomon. They blew the horn and all the people shouted, \"Long live King Solomon!\"",
+        "VAT_ES": "El sacerdote tomó de la Carpa el cuerno de aceite y ungió a Salomón. Entonces sonó la trompeta y todo el pueblo exclamó: &iexcl;Viva el rey Salomón!",
+        "CEI": "Il sacerdote Zadòk prese il corno dell'olio dalla tenda e unse Salomone al suono della tromba. Tutti i presenti gridarono: \"Viva il re Salomone!\"."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲל֤וּ כָל הָ/עָם֙ אַֽחֲרָ֔י/ו וְ/הָ/עָם֙ מְחַלְּלִ֣ים בַּ/חֲלִלִ֔ים וּ/שְׂמֵחִ֖ים שִׂמְחָ֣ה גְדוֹלָ֑ה וַ/תִּבָּקַ֥ע הָ/אָ֖רֶץ בְּ/קוֹלָֽ/ם׃",
+        "LXX": "καὶ ἀνέβη πᾶς ὁ λαὸς ὀπίσω αὐτοῦ, καὶ ἐχόρευον ἐν χοροῖς καὶ εὐφραινόμενοι εὐφροσύνην μεγάλην· καὶ ἐρράγη ἡ γῆ ἐν τῇ φωνῇ αὐτῶν.",
+        "VUL": "Et ascendit universa multitudo post eum, et populus canentium tibiis, et lætantium gaudio magno : et insonuit terra a clamore eorum.",
+        "SYN": "И весь народ провожал Соломона, и играл народ на свирелях, и весьма радовался, так что земля расседалась от криков его.",
+        "NEO": "Puis tout le peuple monta après lui. Le peuple jouait de la flûte et se livrait à une grande joie ; la terre se fendait au bruit de leurs clameurs.",
+        "NAB": "Then all the people went up after him, playing flutes and rejoicing so much as to split open the earth with their shouting.",
+        "VAT_ES": "Después, todo el pueblo volvió a subir detrás de él, al son de las flautas y dando tales señales de alegría, que la tierra parecía estallar bajo sus gritos.",
+        "CEI": "Risalirono tutti dietro a lui, suonando i flauti e mostrando una grandissima gioia e i luoghi rimbombavano delle loro acclamazioni."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֣ע אֲדֹנִיָּ֗הוּ וְ/כָל הַ/קְּרֻאִים֙ אֲשֶׁ֣ר אִתּ֔/וֹ וְ/הֵ֖ם כִּלּ֣וּ לֶ/אֱכֹ֑ל וַ/יִּשְׁמַ֤ע יוֹאָב֙ אֶת ק֣וֹל הַ/שּׁוֹפָ֔ר וַ/יֹּ֕אמֶר מַדּ֥וּעַ קֽוֹל הַ/קִּרְיָ֖ה הוֹמָֽה׃",
+        "LXX": "καὶ ἤκουσεν Ἀδωνείας καὶ πάντες οἱ κλητοὶ αὐτοῦ, καὶ αὐτοὶ συνετέλεσαν φαγεῖν· καὶ ἤκουσεν Ἰωὰβ τὴν φωνὴν τῆς κερατίνης καὶ εἶπεν Τίς ἡ φωνὴ τῆς πόλεως ἠχούσης;",
+        "VUL": "Audivit autem Adonias, et omnes qui invitati fuerant ab eo : jamque convivium finitum erat : sed et Joab, audita voce tubæ, ait : Quid sibi vult clamor civitatis tumultuantis ?",
+        "SYN": "И услышал Адония и все приглашенные им, как только перестали есть; а Иоав, услышав звук трубы, сказал: отчего этот шум волнующегося города?",
+        "NEO": "Adonias entendis ce bruit, ainsi que tous les conviés qui étaient avec lui, au moment où ils achevaient leur festin. En entendant le son de la trompette, Joab dit : « Pourquoi ce bruit de la ville en émoi ? »",
+        "NAB": "Adonijah and all the guests who were with him heard it, just as they ended their banquet. When Joab heard the sound of the horn, he asked, \"What does this uproar in the city mean?\"",
+        "VAT_ES": "Adonías y los invitados que estaban con él oyeron el ruido cuando terminaban de comer. Joab, por su parte, al oír el sonido de la trompeta, preguntó: «&iquest;A qué se debe ese tumulto en la ciudad?».",
+        "CEI": "Li sentirono Adonia e i suoi invitati, che avevano appena finito di mangiare. Ioab, udito il suono della tromba, chiese: \"Che cos'è questo frastuono nella città in tumulto?\"."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "עוֹדֶ֣/נּוּ מְדַבֵּ֔ר וְ/הִנֵּ֧ה יוֹנָתָ֛ן בֶּן אֶבְיָתָ֥ר הַ/כֹּהֵ֖ן בָּ֑א וַ/יֹּ֤אמֶר אֲדֹנִיָּ֨הוּ֙ בֹּ֔א כִּ֣י אִ֥ישׁ חַ֛יִל אַ֖תָּה וְ/ט֥וֹב תְּבַשֵּֽׂר׃",
+        "LXX": "ἔτι αὐτοῦ λαλοῦντος καὶ ἰδοὺ Ἰωναθὰν υἱὸς Ἀβιαθὰρ τοῦ ἱερέως εἰσῆλθεν, καὶ εἶπεν Ἀδωνείας Εἴσελθε, ὅτι ἀνὴρ δυνάμεως εἶ σύ, καὶ ἀγαθὰ εὐαγγέλισαι.",
+        "VUL": "Adhuc illo loquente, Jonathas filius Abiathar sacerdotis venit : cui dixit Adonias : Ingredere, quia vir fortis es, et bona nuntians.",
+        "SYN": "Еще он говорил, как пришел Ионафан, сын священника Авиафара. И сказал Адония: войди; ты -- честный человек и несешь добрую весть.",
+        "NEO": "Il parlait encore, et voici que Jonathas, fils de prêtre Abiathar, arriva. Adonias lui dit : « Viens, car tu es un brave et porteur de bonnes nouvelles. »",
+        "NAB": "As he was speaking, Jonathan, son of Abiathar the priest, arrived. \"Come,\" said Adonijah, \"you are a man of worth and must bring good news.\"",
+        "VAT_ES": "Todavía estaba hablando, cuando llegó Jonatán, el hijo del sacerdote Abiatar. Adonías dijo: «Ven, tú eres un hombre de bien y seguro que traes buenas noticias».",
+        "CEI": "Mentre parlava ecco giungere Giònata figlio del sacerdote Ebiatàr, al quale Adonia disse: \"Vieni! Tu sei un valoroso e rechi certo buone notizie!\"."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַן֙ יוֹנָתָ֔ן וַ/יֹּ֖אמֶר לַ/אֲדֹנִיָּ֑הוּ אֲבָ֕ל אֲדֹנֵ֥י/נוּ הַ/מֶּֽלֶךְ דָּוִ֖ד הִמְלִ֥יךְ אֶת שְׁלֹמֹֽה׃",
+        "LXX": "καὶ ἀπεκρίθη Ἰωναθὰν καὶ εἶπεν Καὶ μάλα ὁ κύριος ἡμῶν ὁ βασιλεὺς Δαυεὶδ ἐβασίλευσεν τὸν Σαλωμών·",
+        "VUL": "Responditque Jonathas Adoniæ : Nequaquam : dominus enim noster rex David regem constituit Salomonem :",
+        "SYN": "И отвечал Ионафан и сказал Адонии: да, господин наш царь Давид поставил Соломона царем;",
+        "NEO": "Jonathas répondit et dit à Adonias : « Oui, vraiment ! notre seigneur le roi David a fait roi Salomon.",
+        "NAB": "\"On the contrary!\" Jonathan answered him. \"Our lord, King David, has made Solomon king.",
+        "VAT_ES": "Pero Jonatán tomó la palabra y dijo a Adonías: «&iexcl;Al contrario! Nuestro señor, el rey David, ha proclamado rey a Salomón.",
+        "CEI": "\"No - rispose Giònata ad Adonia - il re Davide nostro signore ha nominato re Salomone"
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֣ח אִתּֽ/וֹ הַ֠/מֶּלֶךְ אֶת צָד֨וֹק הַ/כֹּהֵ֜ן וְ/אֶת נָתָ֣ן הַ/נָּבִ֗יא וּ/בְנָיָ֨הוּ֙ בֶּן יְה֣וֹיָדָ֔ע וְ/הַ/כְּרֵתִ֖י וְ/הַ/פְּלֵתִ֑י וַ/יַּרְכִּ֣בוּ אֹת֔/וֹ עַ֖ל פִּרְדַּ֥ת הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ ἀπέστειλεν ὁ βασιλεὺς μετ’ αὐτοῦ τὸν Σαδὼκ τὸν ἱερέα καὶ Ναθὰν τὸν προφήτην καὶ Βαναιοὺ υἱὸν Ἰωδᾶε καὶ τὸν Χερεθθεὶ καὶ τὸν Φελεθθεί, καὶ ἐπεκάθισαν αὐτὸν ἐπὶ τὴν ἡμίονον τοῦ βασιλέως·",
+        "VUL": "misitque cum eo Sadoc sacerdotem, et Nathan prophetam, et Banaiam filium Jojadæ, et Cerethi, et Phelethi, et imposuerunt eum super mulam regis.",
+        "SYN": "и послал царь с ним Садока священника и Нафана пророка, и Ванею, сына Иодая, и Хелефеев и Фелефеев, и они посадили его на мула царского;",
+        "NEO": "Le roi a envoyé avec lui le prêtre Sadoc, Nathan le prophète, Banaïas, fils de Joïadas, les Céréthiens et les Phéléthiens, et ils l’ont fait monter sur la mule du roi.",
+        "NAB": "The king sent with him Zadok the priest, Nathan the prophet, Benaiah, son of Jehoiada, and the Cherethites and Pelethites, and they mounted him upon the king's own mule.",
+        "VAT_ES": "El rey envió con él al sacerdote Sadoc, al profeta Natán, a Benaías, hijo de Iehoiadá, a los quereteos y a los peleteos, y ellos lo hicieron montar en la mula del rey.",
+        "CEI": "e ha mandato con lui il sacerdote Zadòk, il profeta Natan e Benaià figlio di Ioiadà, insieme con i Cretei e con i Peletei che l'hanno fatto montare sulla mula del re."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וַ/יִּמְשְׁח֣וּ אֹת֡/וֹ צָד֣וֹק הַ/כֹּהֵ֣ן וְ/נָתָן֩ הַ/נָּבִ֨יא לְ/מֶ֜לֶךְ בְּ/גִח֗וֹן וַ/יַּעֲל֤וּ מִ/שָּׁם֙ שְׂמֵחִ֔ים וַ/תֵּהֹ֖ם הַ/קִּרְיָ֑ה ה֥וּא הַ/קּ֖וֹל אֲשֶׁ֥ר שְׁמַעְתֶּֽם׃",
+        "LXX": "καὶ ἔχρισαν αὐτὸν Σαδὼκ ὁ ἱερεὺς καὶ Ναθὰν ὁ προφήτης ἐν τῇ Γειών, καὶ ἀνέβησαν ἐκεῖθεν εὐφραινόμενοι, καὶ ἤχησεν ἡ πόλις· αὕτη ἡ φωνὴ ἣν ἠκούσατε.",
+        "VUL": "Unxeruntque eum Sadoc sacerdos et Nathan propheta regem in Gihon : et ascenderunt inde lætantes, et insonuit civitas : hæc est vox quam audistis.",
+        "SYN": "и помазали его Садок священник и Нафан пророк в царя в Гионе, и оттуда отправились с радостью, и пришел в движение город. Вот отчего шум, который вы слышите.",
+        "NEO": "Le prêtre Sadoc et Nathan le prophète l’ont oint pour roi à Gihon ; de là ils sont remontés remontés joyeux, et la ville est en émoi : c’est là le bruit que vous avez entendu.",
+        "NAB": "Zadok the priest and Nathan the prophet anointed him king at Gihon, and they went up from there rejoicing, so that the city is in an uproar. That is the noise you heard.",
+        "VAT_ES": "Luego el sacerdote Sadoc y el profeta Natán lo ungieron rey en Guijón. De allí todos volvieron a subir muy contentos, y la ciudad está alborotada. Ese es el ruido que ustedes han oído.",
+        "CEI": "Il sacerdote Zadòk e il profeta Natan l'hanno unto re in Ghicon; quindi sono risaliti esultanti, mentre la città echeggiava di grida. Questo il motivo del frastuono da voi udito."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "וְ/גַם֙ יָשַׁ֣ב שְׁלֹמֹ֔ה עַ֖ל כִּסֵּ֥א הַ/מְּלוּכָֽה׃",
+        "LXX": "καὶ ἐκάθισεν Σαλωμὼν ἐπὶ θρόνον βασιλείας,",
+        "VUL": "Sed et Salomon sedet super solium regni.",
+        "SYN": "И Соломон уже сел на царском престоле.",
+        "NEO": "Salomon s’est même assis sur le trône royal.",
+        "NAB": "Besides, Solomon took his seat on the royal throne,",
+        "VAT_ES": "Además, Salomón se ha sentado en el trono real,",
+        "CEI": "Anzi Salomone si è già seduto sul trono del regno"
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "וְ/גַם בָּ֜אוּ עַבְדֵ֣י הַ/מֶּ֗לֶךְ לְ֠/בָרֵךְ אֶת אֲדֹנֵ֜י/נוּ הַ/מֶּ֣לֶךְ דָּוִד֮ לֵ/אמֹר֒ יֵיטֵ֨ב אלהי/ך אֱלֹהִ֜ים אֶת שֵׁ֤ם שְׁלֹמֹה֙ מִ/שְּׁמֶ֔/ךָ וִֽ/יגַדֵּ֥ל אֶת כִּסְא֖/וֹ מִ/כִּסְאֶ֑/ךָ וַ/יִּשְׁתַּ֥חוּ הַ/מֶּ֖לֶךְ עַל הַ/מִּשְׁכָּֽב׃",
+        "LXX": "καὶ εἰσῆλθον οἱ δοῦλοι τοῦ βασιλέως εὐλογῆσαι τὸν κύριον ἡμῶν τὸν βασιλέα Δαυεὶδ λέγοντες Ἀγαθύναι ὁ θεὸς τὸ ὄνομα Σαλωμὼν ὑπὲρ τὸ ὄνομά σου, καὶ μεγαλύναι τὸν θρόνον αὐτοῦ ὑπὲρ τὸν θρόνον σου· καὶ προσεκύνησεν ὁ βασιλεὺς ἐπὶ τὴν κοίτην,",
+        "VUL": "Et ingressi servi regis benedixerunt domino nostro regi David, dicentes : Amplificet Deus nomen Salomonis super nomen tuum, et magnificet thronus ejus super thronum tuum. Et adoravit rex in lectulo suo :",
+        "SYN": "И слуги царя приходили поздравить господина нашего царя Давида, говоря: Бог твой да прославит имя Соломона более твоего имени и да возвеличит престол его более твоего престола. И поклонился царь на ложе своем,",
+        "NEO": "Et même les serviteurs du roi sont venus pour bénir notre seigneur le roi David, en disant : Que ton Dieu rende le nom de Salomon plus grand que ton nom, et qu’il élève son trône au-dessus de ton trône ! Et le roi s’est prosterné sur son lit.",
+        "NAB": "and the king's servants went in and paid their respects to our lord, King David, saying, 'May God make Solomon more famous than you and exalt his throne more than your own!' And the king in his bed worshiped God,",
+        "VAT_ES": "y también los servidores del rey fueron a felicitar a nuestro señor el rey David, diciendo: «Que tu Dios haga el nombre de Salomón más ilustre que el tuyo y engrandezca su trono más que el tuyo». El rey, en su lecho, hizo un gesto de asentimiento,",
+        "CEI": "e i ministri del re sono andati a felicitarsi con il re Davide dicendo: Il tuo Dio renda il nome di Salomone più celebre del tuo e renda il suo trono più splendido del tuo! Il re si è prostrato sul letto,"
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "וְ/גַם כָּ֖כָה אָמַ֣ר הַ/מֶּ֑לֶךְ בָּר֨וּךְ יְהוָ֜ה אֱלֹהֵ֣י יִשְׂרָאֵ֗ל אֲשֶׁ֨ר נָתַ֥ן הַ/יּ֛וֹם יֹשֵׁ֥ב עַל כִּסְאִ֖/י וְ/עֵינַ֥/י רֹאֽוֹת׃",
+        "LXX": "καί γε οὕτως εἶπεν ὁ βασιλεύς Εὐλογητὸς Κύριος ὁ θεὸς Ἰσραήλ, ὃς ἔδωκεν σήμερον ἐκ τοῦ σπέρματός μου καθήμενον ἐπὶ τοῦ θρόνου μου, καὶ οἱ ὀφθαλμοί μου βλέπουσιν.",
+        "VUL": "et locutus est : Benedictus Dominus Deus Israël, qui dedit hodie sedentem in solio meo, videntibus oculis meis.",
+        "SYN": "и сказал царь так: \"благословен Господь Бог Израилев, Который сегодня дал [от семени моего] сидящего на престоле моем, и очи мои видят это!\"",
+        "NEO": "Et même le roi a parlé ainsi : Béni soit \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël, qui m’a donné aujourd’hui un successeur sur mon trône, afin que je puisse le voir de mes yeux !»",
+        "NAB": "and this is what he said: 'Blessed be the LORD, the God of Israel, who has this day seated one of my sons upon my throne, so that I see it with my own eyes.'\"",
+        "VAT_ES": "y también pronunció estas palabras: «&iexcl;Bendito sea el Señor, el Dios de Israel, porque ha permitido hoy que un hombre de mi descendencia esté sentado en mi trono, y que lo vean mis ojos!».",
+        "CEI": "poi ha detto: Sia benedetto il Signore, Dio di Israele, perché oggi ha concesso che uno sedesse sul mio trono e i miei occhi lo vedessero\"."
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "וַ/יֶּֽחֶרְדוּ֙ וַ/יָּקֻ֔מוּ כָּל הַ֨/קְּרֻאִ֔ים אֲשֶׁ֖ר לַ/אֲדֹנִיָּ֑הוּ וַ/יֵּלְכ֖וּ אִ֥ישׁ לְ/דַרְכּֽ/וֹ׃",
+        "LXX": "καὶ ἐξανέστησαν πάντες οἱ κλητοὶ Ἀδωνειού, καὶ ἦλθον ἀνὴρ εἰς τὴν ὁδὸν αὐτοῦ.",
+        "VUL": "Territi sunt ergo, et surrexerunt omnes qui invitati fuerant ab Adonia, et ivit unusquisque in viam suam.",
+        "SYN": "_Тогда_ испугались и встали все приглашенные, которые были у Адонии, и пошли каждый своею дорогою.",
+        "NEO": "Tous les conviés d’Adonias furent saisis de terreur ; ils se levèrent et s’en allèrent chacun de son côté.",
+        "NAB": "All the guests of Adonijah left in terror, each going his own way.",
+        "VAT_ES": "Llenos de pánico, todos los invitados de Adonías se levantaron y se fueron cada uno por su lado.",
+        "CEI": "Tutti gli invitati di Adonia allora spaventati si alzarono e se ne andarono ognuno per la sua strada."
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "WLC": "וַ/אֲדֹ֣נִיָּ֔הוּ יָרֵ֖א מִ/פְּנֵ֣י שְׁלֹמֹ֑ה וַ/יָּ֣קָם וַ/יֵּ֔לֶךְ וַֽ/יַּחֲזֵ֖ק בְּ/קַרְנ֥וֹת הַ/מִּזְבֵּֽחַ׃",
+        "LXX": "καὶ Ἀδωνείας ἐφοβήθη ἀπὸ προσώπου Σαλωμών, καὶ ἀνέστη καὶ ἀπῆλθεν καὶ ἐπελάβετο τῶν κεράτων τοῦ θυσιαστηρίου.",
+        "VUL": "Adonias autem timens Salomonem, surrexit, et abiit, tenuitque cornu altaris.",
+        "SYN": "Адония же, боясь Соломона, встал и пошел и ухватился за роги жертвенника.",
+        "NEO": "Adonias, ayant peur de Salomon, se leva et s’en alla, et il saisit les cornes de l’autel.",
+        "NAB": "Adonijah, in fear of Solomon, also left; he went and seized the horns of the altar.",
+        "VAT_ES": "Adonías, por su parte, tuvo miedo de Salomón, se levantó y fue a agarrarse de los cuernos del altar.",
+        "CEI": "Adonia, che temeva Salomone, alzatosi andò ad aggrapparsi ai corni dell'altare."
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "WLC": "וַ/יֻּגַּ֤ד לִ/שְׁלֹמֹה֙ לֵ/אמֹ֔ר הִנֵּה֙ אֲדֹ֣נִיָּ֔הוּ יָרֵ֖א אֶת הַ/מֶּ֣לֶךְ שְׁלֹמֹ֑ה וְ֠/הִנֵּה אָחַ֞ז בְּ/קַרְנ֤וֹת הַ/מִּזְבֵּ֨חַ֙ לֵ/אמֹ֔ר יִשָּֽׁבַֽע לִ֤/י כַ/יּוֹם֙ הַ/מֶּ֣לֶךְ שְׁלֹמֹ֔ה אִם יָמִ֥ית אֶת עַבְדּ֖/וֹ בֶּ/חָֽרֶב׃",
+        "LXX": "καὶ ἀνηγγέλη τῷ Σαλωμὼν λέγοντες Ἰδοὺ Ἀδωνείας ἐφοβήθη τὸν βασιλέα Σαλωμών, καὶ κατέχει τῶν κεράτων τοῦ θυσιαστηρίου λέγων Ὀμοσάτω μοι σήμερον Σαλωμὼν εἰ οὐ θανατώσει τὸν δοῦλον αὐτοῦ ἐν ῥομφαίᾳ.",
+        "VUL": "Et nuntiaverunt Salomoni, dicentes : Ecce Adonias timens regem Salomonem, tenuit cornu altaris, dicens : Juret mihi rex Salomon hodie, quod non interficiat servum suum gladio.",
+        "SYN": "И донесли Соломону, говоря: вот, Адония боится царя Соломона, и вот, он держится за роги жертвенника, говоря: пусть поклянется мне теперь царь Соломон, что он не умертвит раба своего мечом.",
+        "NEO": "On l’annonça à Salomon en ces termes : « Voici qu’Adonias a peur du roi Salomon, et voici qu’il a saisi les cornes de l’autel en disant : Que le roi Salomon me jure aujourd’hui qu’il ne fera pas mourir son serviteur par l’épée ! »",
+        "NAB": "It was reported to Solomon that Adonijah, in his fear of King Solomon, had seized the horns of the altar and said, \"Let King Solomon first swear that he will not kill me, his servant, with the sword.\"",
+        "VAT_ES": "Entonces le avisaron a Salomón: «Adonías tiene miedo de ti y se ha agarrado de los cuernos del altar, diciendo: «Que el rey Salomón me jure primero que no hará morir a su servidor por la espada».",
+        "CEI": "Fu riferito a Salomone: \"Sappi che Adonia, avendo paura del re Salomone, ha afferrato i corni dell'altare dicendo: Mi giuri oggi il re Salomone che non farà morire di spada il suo servitore\"."
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שְׁלֹמֹ֔ה אִ֚ם יִהְיֶ֣ה לְ/בֶן חַ֔יִל לֹֽא יִפֹּ֥ל מִ/שַּׂעֲרָת֖/וֹ אָ֑רְצָ/ה וְ/אִם רָעָ֥ה תִמָּצֵא ב֖/וֹ וָ/מֵֽת׃",
+        "LXX": "καὶ εἶπεν Σαλωμών Ἐὰν γένηται εἰς υἱὸν δυνάμεως, εἰ πεσεῖται τῶν τριχῶν αὐτοῦ ἐπὶ τὴν γῆν· καὶ ἐὰν κακία εὑρεθῇ ἐν αὐτῷ, θανατωθήσεται.",
+        "VUL": "Dixitque Salomon : Si fuerit vir bonus, non cadet ne unus quidem capillus ejus in terram : sin autem malum inventum fuerit in eo, morietur.",
+        "SYN": "И сказал Соломон: если он будет человеком честным, то ни один волос его не упадет на землю; если же найдется в нем лукавство, то умрет.",
+        "NEO": "Salomon dit : « S’il se montre homme brave, il ne tombera pas à terre un de ses cheveux ; mais s’il se trouve du mal en lui, il mourra. »",
+        "NAB": "Solomon answered, \"If he proves himself worthy, not a hair shall fall from his head. But if he is found guilty of crime, he shall die.\"",
+        "VAT_ES": "El rey dijo: «Si se comporta como un hombre de bien, ni uno solo de sus cabellos caerá por tierra; pero si es sorprendido en falta, morirá».",
+        "CEI": "Salomone disse: \"Se si comporterà da uomo leale, neppure un suo capello cadrà a terra; ma se cadrà in qualche fallo, morirà\"."
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֞ח הַ/מֶּ֣לֶךְ שְׁלֹמֹ֗ה וַ/יֹּרִדֻ֨/הוּ֙ מֵ/עַ֣ל הַ/מִּזְבֵּ֔חַ וַ/יָּבֹ֕א וַ/יִּשְׁתַּ֖חוּ לַ/מֶּ֣לֶךְ שְׁלֹמֹ֑ה וַ/יֹּֽאמֶר ל֥/וֹ שְׁלֹמֹ֖ה לֵ֥ךְ לְ/בֵיתֶֽ/ךָ׃",
+        "LXX": "καὶ ἀπέστειλεν ὁ βασιλεὺς Σαλωμών, καὶ κατήνεγκεν αὐτὸν ἀπάνωθεν τοῦ θυσιαστηρίου· καὶ εἰσῆλθεν καὶ προσεκύνησεν τῷ Σαλωμών, καὶ εἶπεν αὐτῷ Σαλωμών Δεῦρο εἰς τὸν οἶκόν σου.",
+        "VUL": "Misit ergo rex Salomon, et eduxit eum ab altari : et ingressus adoravit regem Salomonem : dixitque ei Salomon : Vade in domum tuam.",
+        "SYN": "И послал царь Соломон, и привели его от жертвенника. И он пришел и поклонился царю Соломону; и сказал ему Соломон: иди в дом свой.",
+        "NEO": "Et le roi Salomon envoya des gens qui le firent descendre d’auprès de l’autel. Et Adonias vint se prosterner devant le roi Salomon ; et Salomon lui dit : « Va dans ta maison. »",
+        "NAB": "King Solomon sent to have him brought down from the altar, and he came and paid homage to the king. Solomon then said to him, \"Go to your home.\"",
+        "VAT_ES": "Salomón mandó que lo bajaran del altar. Adonías fue a postrarse ante el rey, y Salomón le dijo: «Vete a tu casa».",
+        "CEI": "Il re Salomone ordinò che lo facessero scendere dall'altare; quegli andò a prostrarsi davanti al re Salomone, che gli disse: \"Vattene a casa!\"."
+      }
+    }
+  }
+}

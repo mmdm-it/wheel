@@ -1,0 +1,897 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DAN_002",
+  "book_key": "DAN",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וּ/בִ/שְׁנַ֣ת שְׁתַּ֗יִם לְ/מַלְכוּת֙ נְבֻֽכַדְנֶצַּ֔ר חָלַ֥ם נְבֻֽכַדְנֶצַּ֖ר חֲלֹמ֑וֹת וַ/תִּתְפָּ֣עֶם רוּח֔/וֹ וּ/שְׁנָת֖/וֹ נִהְיְתָ֥ה עָלָֽי/ו׃",
+        "LXX": "Καὶ ἐν τῷ ἔτει τῷ δευτέρῳ τῆς βασιλείας Ναβουχοδονοσὸρ συνέβη εἰς ὁράματα καὶ ἐνύπνια ἐμπεσεῖν τὸν βασιλέα καὶ ταραχθῆναι ἐν τῷ ἐνυπνίῳ αὐτοῦ, καὶ ὁ ὕπνος αὐτοῦ ἐγένετο ἀπ’ αὐτοῦ.",
+        "VUL": "In anno secundo regni Nabuchodonosor, vidit Nabuchodonosor somnium, et conterritus est spiritus ejus, et somnium ejus fugit ab eo.",
+        "SYN": "Во второй год царствования Навуходоносора снились Навуходоносору сны, и возмутился дух его, и сон удалился от него.",
+        "NEO": "La seconde année du règne de Nabuchodonosor, Nabuchodonosor eut des songes, son esprit fut agité et le sommeil se retira de lui.",
+        "NAB": "In the second year of his reign, King Nebuchadnezzar had a dream which left his spirit no rest and robbed him of his sleep.",
+        "VAT_ES": "El segundo año del reinado de Nabucodonosor, este tuvo unos sueños, y su espíritu quedó tan perturbado que no pudo seguir durmiendo.",
+        "CEI": "Nel secondo anno del suo regno, Nabucodònosor fece un sogno e il suo animo ne fu tanto agitato da non poter più dormire."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר הַ֠/מֶּלֶךְ לִ/קְרֹ֨א לַֽ/חַרְטֻמִּ֜ים וְ/לָֽ/אַשָּׁפִ֗ים וְ/לַֽ/מְכַשְּׁפִים֙ וְ/לַ/כַּשְׂדִּ֔ים לְ/הַגִּ֥יד לַ/מֶּ֖לֶךְ חֲלֹמֹתָ֑י/ו וַ/יָּבֹ֕אוּ וַ/יַּֽעַמְד֖וּ לִ/פְנֵ֥י הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ ἐπέταξεν ὁ βασιλεὺς εἰσενεχθῆναι τοὺς ἐπαοιδοὺς καὶ τοὺς μάγους καὶ τοὺς φαρμακοὺς τῶν Χαλδαίων ἀναγγεῖλαι τῷ βασιλεῖ τὰ ἐνύπνια αὐτοῦ· καὶ παραγενόμενοι ἔστησαν παρὰ τῷ βασιλεῖ.",
+        "VUL": "Præcepit autem rex ut convocarentur arioli, et magi, et malefici, et Chaldæi, ut indicarent regi somnia sua. Qui cum venissent, steterunt coram rege.",
+        "SYN": "И велел царь созвать тайноведцев, и гадателей, и чародеев, и Халдеев, чтобы они рассказали царю сновидения его. Они пришли, и стали перед царем.",
+        "NEO": "Le roi fit appeler les lettrés, les magiciens, les enchanteurs et les Chaldéens pour lui expliquer ses songes ; ils vinrent et ils se tinrent devant le roi.",
+        "NAB": "So he ordered that the magicians, enchanters, sorcerers, and Chaldeans be summoned to interpret the dream for him. When they came and presented themselves to the king,",
+        "VAT_ES": "El rey mandó llamar a los magos, los adivinos, los hechiceros y los caldeos, para que le explicaran sus sueños. Ellos fueron a presentarse delante del rey,",
+        "CEI": "Allora il re ordinò che fossero chiamati i maghi, gli astrologi, gli incantatori e i caldei a spiegargli i sogni. Questi vennero e si presentarono al re."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמֶר לָ/הֶ֛ם הַ/מֶּ֖לֶךְ חֲל֣וֹם חָלָ֑מְתִּי וַ/תִּפָּ֣עֶם רוּחִ֔/י לָ/דַ֖עַת אֶֽת הַ/חֲלֽוֹם׃",
+        "LXX": "καὶ εἶπεν αὐτοῖς ὁ βασιλεύς Ἐνύπνιον ἑώρακα καὶ ἐκινήθη μου τὸ πνεῦμα· ἐπιγνῶναι οὖν θέλω τὸ ἐνύπνιον.",
+        "VUL": "Et dixit ad eos rex : Vidi somnium, et mente confusus ignoro quid viderim.",
+        "SYN": "И сказал им царь: сон снился мне, и тревожится дух мой; желаю знать этот сон.",
+        "NEO": "Le roi leur dit : « J’ai fait un songe, et mon esprit est agité, cherchant à connaître ce songe. »",
+        "NAB": "he said to them, \"I had a dream which will allow my spirit no rest until I know what it means.\"",
+        "VAT_ES": "y él les dijo: «He tenido un sueño, y mi espíritu está ansioso por conocer ese sueño».",
+        "CEI": "Egli disse loro: \"Ho fatto un sogno e il mio animo si è tormentato per trovarne la spiegazione\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַֽ/יְדַבְּר֧וּ הַ/כַּשְׂדִּ֛ים לַ/מֶּ֖לֶךְ אֲרָמִ֑ית מַלְכָּ/א֙ לְ/עָלְמִ֣ין חֱיִ֔י אֱמַ֥ר חֶלְמָ֛/א ל/עבדי/ך לְ/עַבְדָ֖/ךְ וּ/פִשְׁרָ֥/א נְחַוֵּֽא׃",
+        "LXX": "καὶ ἐλάλησαν οἱ Χαλδαῖοι πρὸς τὸν βασιλέα Συριστί Κύριε βασιλεῦ, τὸν αἰῶνα ζῆθι· ἀνάγγειλον τὸ ἐνύπνιόν σου τοῖς παισί σου, καὶ ἡμεῖς σοι φράσομεν τὴν σύγκρισιν αὐτοῦ.",
+        "VUL": "Responderuntque Chaldæi regi syriace : Rex, in sempiternum vive ! dic somnium servis tuis, et interpretationem ejus indicabimus.",
+        "SYN": "И сказали Халдеи царю по-арамейски: царь! вовеки живи! скажи сон рабам твоим, и мы объясним значение его.",
+        "NEO": "Les Chaldéens répondirent au roi en langue araméenne+ 2:4 \\+it La langue araméenne\\+it*, ou syriaque (hébr. \\+it ’aramith\\+it*), parlée en Syrie et répandue dans toute l’Asie occidentale, différait de la langue assyro-babylonienne en usage à Babylone. Mais les sages de la cour devaient la connaître, et ils auraient pu, pour une raison que nous ignorons, s’adresser au roi en araméen. Toutefois il n’est guère vraisemblable qu’ils l’aient fait ; et comme c’est précisément après les mots, \\+it en langue araméenne\\+it*, que le récit passe de la langue hébraïque au dialecte araméen (jusqu’à la fin du chap. 7), la plupart des interprètes regardent ces mots comme une note de copiste avertissant le lecteur de ce brusque changement d’idiome.* : « \\+w O|strong=\"H0577\"\\+w* \\+w roi|strong=\"H4428\"\\+w*, \\+w vis|strong=\"H2418\"\\+w* \\+w éternellement|strong=\"H5957\"\\+w* ! \\+w Dis|strong=\"H1696\"\\+w* \\+w le|strong=\"H1696\"\\+w* \\+w songe|strong=\"H2493\"\\+w* \\+w à|strong=\"H1696\"\\+w* \\+w tes|strong=\"H5375\"\\+w* \\+w serviteurs|strong=\"H5649\"\\+w*, \\+w et|strong=\"H4428\"\\+w* \\+w nous|strong=\"H4430\"\\+w* \\+w en|strong=\"H4428\"\\+w* \\+w ferons|strong=\"H6213\"\\+w* \\+w connaître|strong=\"H1696\"\\+w* \\+w la|strong=\"H1696\"\\+w* signification. »*",
+        "NAB": "The Chaldeans answered the king (Aramaic): \"O king, live forever! Tell your servants the dream and we will give its meaning.\"",
+        "VAT_ES": "Los caldeos respondieron al rey: «&iexcl;Viva el rey eternamente! Di a tus servidores lo que has soñado, y nosotros expondremos la interpretación».",
+        "CEI": "I caldei risposero al re (aramaico): \"Re, vivi per sempre. Racconta il sogno ai tuoi servi e noi te ne daremo la spiegazione\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "עָנֵ֤ה מַלְכָּ/א֙ וְ/אָמַ֣ר ל/כשדי/א לְ/כַשְׂדָּאֵ֔/י מִלְּתָ֖/א מִנִּ֣/י אַזְדָּ֑א הֵ֣ן לָ֤א תְהֽוֹדְעוּנַּ֨/נִי֙ חֶלְמָ֣/א וּ/פִשְׁרֵ֔/הּ הַדָּמִין֙ תִּתְעַבְד֔וּן וּ/בָתֵּי/כ֖וֹן נְוָלִ֥י יִתְּשָׂמֽוּן׃",
+        "LXX": "ἀποκριθεὶς δὲ ὁ βασιλεὺς εἶπε τοῖς Χαλδαίοις Ὁ λόγος ἀπ’ ἐμοῦ ἀπέστη· διότι ἐὰν μὴ ἀπαγγείλητέ μοι ἐπ’ ἀληθείας τὸ ἐνύπνιον καὶ τὴν τούτου σύγκρισιν δηλώσητέ μοι, παραδειγματισθήσεσθε, καὶ ἀναληφθήσεται ὑμῶν τὰ ὑπάρχοντα εἰς τὸ βασιλικόν.",
+        "VUL": "Et respondens rex ait Chaldæis : Sermo recessit a me : nisi indicaveritis mihi somnium, et conjecturam ejus, peribitis vos, et domus vestræ publicabuntur.",
+        "SYN": "Отвечал царь и сказал Халдеям: слово отступило от меня; если вы не скажете мне сновидения и значения его, то в куски будете изрублены, и домы ваши обратятся в развалины.",
+        "NEO": "\\+w Le|strong=\"H4481\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w répondit|strong=\"H6032\"\\+w* \\+w aux|strong=\"H0559\"\\+w* \\+w Chaldéens|strong=\"H3779\"\\+w*, \\+w en|strong=\"H5648\"\\+w* \\+w disant|strong=\"H0559\"\\+w* : « C’\\+w est|strong=\"H2493\"\\+w* \\+w chose|strong=\"H4406\"\\+w* \\+w arrêtée|strong=\"H6113\"\\+w* \\+w par|strong=\"H4481\"\\+w* \\+w moi|strong=\"H4481\"\\+w*. \\+w Si|strong=\"H2006\"\\+w* \\+w vous|strong=\"H3068\"\\+w* \\+w ne|strong=\"H3809\"\\+w* \\+w me|strong=\"H3068\"\\+w* \\+w faites|strong=\"H6213\"\\+w* \\+w savoir|strong=\"H3046\"\\+w* \\+w le|strong=\"H4481\"\\+w* \\+w songe|strong=\"H2493\"\\+w* \\+w et|strong=\"H6032\"\\+w* \\+w sa|strong=\"H4481\"\\+w* signification, \\+w vous|strong=\"H3068\"\\+w* \\+w serez|strong=\"H1961\"\\+w* \\+w coupés|strong=\"H4219\"\\+w* \\+w en|strong=\"H5648\"\\+w* \\+w morceaux|strong=\"H5409\"\\+w* \\+w et|strong=\"H6032\"\\+w* \\+w vos|strong=\"H5375\"\\+w* \\+w maisons|strong=\"H1005\"\\+w* \\+w seront|strong=\"H1005\"\\+w* \\+w réduites|strong=\"H7761\"\\+w* \\+w en|strong=\"H5648\"\\+w* cloaques.*",
+        "NAB": "The king answered the Chaldeans, \"This is what I have decided: unless you tell me the dream and its meaning, you shall be cut to pieces and your houses destroyed.",
+        "VAT_ES": "Pero el rey tomó la palabra y dijo a los caldeos: «Mi decisión ya está tomada: si no me dan a conocer el sueño y su interpretación, ustedes serán cortados en pedazos y sus casas quedarán reducidas a un basural.",
+        "CEI": "Rispose il re ai caldei: \"Questa è la mia decisione: se voi non mi rivelate il sogno e la sua spiegazione sarete fatti a pezzi e le vostre case saranno ridotte in letamai."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/הֵ֨ן חֶלְמָ֤/א וּ/פִשְׁרֵ/הּ֙ תְּֽהַחֲוֺ֔ן מַתְּנָ֤ן וּ/נְבִזְבָּה֙ וִ/יקָ֣ר שַׂגִּ֔יא תְּקַבְּל֖וּן מִן קֳדָמָ֑/י לָהֵ֕ן חֶלְמָ֥/א וּ/פִשְׁרֵ֖/הּ הַחֲוֺֽ/נִי׃",
+        "LXX": "ἐὰν δὲ τὸ ἐνύπνιον διασαφήσητέ μοι καὶ τὴν τούτου σύγκρισιν ἀναγγείλητε, λήψεσθε δόματα παντοῖα καὶ δοξασθήσεσθε ὑπ’ ἐμοῦ· δηλώσατέ μοι τὸ ἐνύπνιον καὶ κρίνατε.",
+        "VUL": "Si autem somnium, et conjecturam ejus narraveritis, præmia, et dona, et honorem multum accipietis a me. Somnium igitur, et interpretationem ejus indicate mihi.",
+        "SYN": "Если же расскажете сон и значение его, то получите от меня дары, награду и великую почесть; итак скажите мне сон и значение его.",
+        "NEO": "\\+w Mais|strong=\"H0199\"\\+w* \\+w si|strong=\"H2006\"\\+w* \\+w vous|strong=\"H3068\"\\+w* \\+w me|strong=\"H6925\"\\+w* \\+w faîtes|strong=\"H6213\"\\+w* \\+w connaître|strong=\"H2324\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w songe|strong=\"H2493\"\\+w* \\+w et|strong=\"H4481\"\\+w* \\+w sa|strong=\"H4481\"\\+w* signification, \\+w vous|strong=\"H3068\"\\+w* \\+w recevrez|strong=\"H6902\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w moi|strong=\"H6925\"\\+w* \\+w des|strong=\"H4481\"\\+w* \\+w dons|strong=\"H4978\"\\+w* \\+w et|strong=\"H4481\"\\+w* \\+w des|strong=\"H4481\"\\+w* \\+w présents|strong=\"H5023\"\\+w*, \\+w et|strong=\"H4481\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w grands|strong=\"H7690\"\\+w* \\+w honneurs|strong=\"H3367\"\\+w* ; \\+w ainsi|strong=\"H0559\"\\+w* faites-moi \\+w connaître|strong=\"H2324\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w songe|strong=\"H2493\"\\+w* \\+w et|strong=\"H4481\"\\+w* \\+w sa|strong=\"H4481\"\\+w* signification. »*",
+        "NAB": "But if you tell me the dream and its meaning, you shall receive from me gifts and presents and great honors. Now tell me the dream and its meaning.\"",
+        "VAT_ES": "En cambio, si me exponen el sueño y su interpretación, recibirán de mí obsequios, regalos y grandes honores. Por lo tanto, expónganme el sueño y su interpretación».",
+        "CEI": "Se invece mi rivelerete il sogno e me ne darete la spiegazione, riceverete da me doni, regali e grandi onori. Ditemi dunque il sogno e la sua spiegazione\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "עֲנ֥וֹ תִנְיָנ֖וּת וְ/אָמְרִ֑ין מַלְכָּ֕/א חֶלְמָ֛/א יֵאמַ֥ר לְ/עַבְד֖וֹ/הִי וּ/פִשְׁרָ֥/ה נְהַחֲוֵֽה׃",
+        "LXX": "ἀπεκρίθησαν δὲ ἐκ δευτέρου λέγοντες Βασιλεῦ, τὸ ὅραμα εἰπόν, καὶ οἱ παῖδές σου κρινοῦσι πρὸς ταῦτα.",
+        "VUL": "Responderunt secundo, atque dixerunt : Rex somnium dicat servis suis, et interpretationem illius indicabimus.",
+        "SYN": "Они вторично отвечали и сказали: да скажет царь рабам своим сновидение, и мы объясним его значение.",
+        "NEO": "\\+w Ils|strong=\"H1992\"\\+w* \\+w répondirent|strong=\"H6032\"\\+w* \\+w pour|strong=\"H5414\"\\+w* \\+w la|strong=\"H4430\"\\+w* \\+w deuxième|strong=\"H8147\"\\+w* \\+w fois|strong=\"H6471\"\\+w* \\+w en|strong=\"H6032\"\\+w* \\+w disant|strong=\"H0559\"\\+w* : « \\+w Que|strong=\"H1697\"\\+w* \\+w le|strong=\"H2324\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w dise|strong=\"H0559\"\\+w* \\+w le|strong=\"H2324\"\\+w* \\+w songe|strong=\"H2493\"\\+w* \\+w à|strong=\"H6032\"\\+w* \\+w ses|strong=\"H3526\"\\+w* \\+w serviteurs|strong=\"H5649\"\\+w*, \\+w et|strong=\"H6032\"\\+w* \\+w nous|strong=\"H4430\"\\+w* \\+w en|strong=\"H6032\"\\+w* \\+w ferons|strong=\"H6213\"\\+w* \\+w connaître|strong=\"H2324\"\\+w* \\+w la|strong=\"H4430\"\\+w* signification. »*",
+        "NAB": "Again they answered, \"Let the king tell his servants the dream and we will give its meaning.\"",
+        "VAT_ES": "Ellos respondieron por segunda vez, diciendo: «Que el rey diga a sus servidores lo que ha soñado, y nosotros expondremos la interpretación».",
+        "CEI": "Essi replicarono: \"Esponga il re il sogno ai suoi servi e noi ne daremo la spiegazione\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "עָנֵ֤ה מַלְכָּ/א֙ וְ/אָמַ֔ר מִן יַצִּיב֙ יָדַ֣ע אֲנָ֔ה דִּ֥י עִדָּנָ֖/א אַנְתּ֣וּן זָבְנִ֑ין כָּ/ל קֳבֵל֙ דִּ֣י חֲזֵית֔וֹן דִּ֥י אַזְדָּ֖א מִנִּ֥/י מִלְּתָֽ/א׃",
+        "LXX": "καὶ εἶπεν αὐτοῖς ὁ βασιλεύς Ἐπ’ ἀληθείας οἶδα ὅτι καιρὸν ὑμεῖς ἐξαγοράζετε, καθάπερ ἑωράκατε ὅτι ἀπέστη ἀπ’ ἐμοῦ τὸ πρᾶγμα· καθάπερ οὖν προστέταχα, οὕτως ἔσται.",
+        "VUL": "Respondit rex, et ait : Certe novi quod tempus redimitis, scientes quod recesserit a me sermo.",
+        "SYN": "Отвечал царь и сказал: верно знаю, что вы хотите выиграть время, потому что видите, что слово отступило от меня.",
+        "NEO": "\\+w Le|strong=\"H4481\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w répondit|strong=\"H6032\"\\+w* \\+w et|strong=\"H6032\"\\+w* \\+w dit|strong=\"H0559\"\\+w* : « \\+w En|strong=\"H6032\"\\+w* \\+w vérité|strong=\"H3330\"\\+w*, \\+w je|strong=\"H5315\"\\+w* \\+w sais|strong=\"H3046\"\\+w* \\+w que|strong=\"H3606\"\\+w* \\+w vous|strong=\"H3606\"\\+w* \\+w cherchez|strong=\"H1245\"\\+w* \\+w à|strong=\"H4481\"\\+w* \\+w gagner|strong=\"H2084\"\\+w* \\+w du|strong=\"H4481\"\\+w* \\+w temps|strong=\"H5732\"\\+w*, \\+w parce|strong=\"H6903\"\\+w* \\+w que|strong=\"H3606\"\\+w* \\+w vous|strong=\"H3606\"\\+w* \\+w voyez|strong=\"H2370\"\\+w* \\+w que|strong=\"H3606\"\\+w* c’\\+w est|strong=\"H4406\"\\+w* \\+w chose|strong=\"H4406\"\\+w* \\+w arrêtée|strong=\"H6113\"\\+w* \\+w par|strong=\"H4481\"\\+w* \\+w moi|strong=\"H4481\"\\+w*.*",
+        "NAB": "But the king replied: \"I know for certain that you are bargaining for time, since you know what I have decided.",
+        "VAT_ES": "El rey replicó: «Yo sé ciertamente que ustedes están tratando de ganar tiempo, porque han visto que mi decisión está tomada.",
+        "CEI": "Rispose il re: \"Comprendo bene che voi volete guadagnar tempo, perché avete inteso la mia decisione."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "דִּ֣י הֵן חֶלְמָ/א֩ לָ֨א תְהֽוֹדְעֻנַּ֜/נִי חֲדָה הִ֣יא דָֽתְ/כ֗וֹן וּ/מִלָּ֨ה כִדְבָ֤ה וּ/שְׁחִיתָה֙ הזמנתון הִזְדְּמִנְתּוּן֙ לְ/מֵאמַ֣ר קָֽדָמַ֔/י עַ֛ד דִּ֥י עִדָּנָ֖/א יִשְׁתַּנֵּ֑א לָהֵ֗ן חֶלְמָ/א֙ אֱמַ֣רוּ לִ֔/י וְֽ/אִנְדַּ֕ע דִּ֥י פִשְׁרֵ֖/הּ תְּהַחֲוֻנַּֽ/נִי׃",
+        "LXX": "ἐὰν μὴ τὸ ἐνύπνιον ἀπαγγείλητέ μοι ἐπ’ ἀληθείας καὶ τὴν τούτου σύγκρισιν δηλώσητε, θανάτῳ περιπεσεῖσθε· συνείπασθε γὰρ λόγους ψευδεῖς ποιήσασθαι ἐπ’ ἐμοῦ, ἕως ἂν ὁ καιρὸς ἀλλοιωθῇ. νῦν οὖν ἐὰν τὸ ῥῆμα εἴπητέ μοι ὃ τὴν νύκτα ἑώρακα, γνώσομαι ὅτι καὶ τὴν τούτου κρίσιν δηλώσητε.",
+        "VUL": "Si ergo somnium non indicaveritis mihi, una est de vobis sententia, quod interpretationem quoque fallacem, et deceptione plenam composueritis, ut loquamini mihi donec tempus pertranseat. Somnium itaque dicite mihi, ut sciam quod interpretationem quoque ejus veram loquamini.",
+        "SYN": "Так как вы не объявляете мне сновидения, то у вас один умысел: вы собираетесь сказать мне ложь и обман, пока минет время; итак расскажите мне сон, и тогда я узнаю, что вы можете объяснить мне и значение его.",
+        "NEO": "\\+w Puisque|strong=\"H0310\"\\+w* \\+w vous|strong=\"H3068\"\\+w* \\+w ne|strong=\"H3809\"\\+w* \\+w me|strong=\"H6925\"\\+w* \\+w faîtes|strong=\"H6213\"\\+w* \\+w pas|strong=\"H3809\"\\+w* \\+w savoir|strong=\"H3046\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w songe|strong=\"H2493\"\\+w*, c’\\+w est|strong=\"H2493\"\\+w* \\+w que|strong=\"H1768\"\\+w* \\+w vous|strong=\"H3068\"\\+w* n’avez \\+w qu|strong=\"H1768\"\\+w*’\\+w une|strong=\"H2298\"\\+w* \\+w pensée|strong=\"H3820\"\\+w*, \\+w celle|strong=\"H2459\"\\+w* \\+w de|strong=\"H8133\"\\+w* concerter \\+w un|strong=\"H2298\"\\+w* \\+w discours|strong=\"H1697\"\\+w* mensonger \\+w et|strong=\"H3809\"\\+w* \\+w trompeur|strong=\"H7423\"\\+w*, \\+w pour|strong=\"H5705\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w tenir|strong=\"H5975\"\\+w* \\+w devant|strong=\"H6925\"\\+w* \\+w moi|strong=\"H6925\"\\+w*, \\+w en|strong=\"H4406\"\\+w* \\+w attendant|strong=\"H5705\"\\+w* \\+w que|strong=\"H1768\"\\+w* \\+w les|strong=\"H3046\"\\+w* \\+w temps|strong=\"H5732\"\\+w* \\+w soient|strong=\"H5732\"\\+w* \\+w changés|strong=\"H8133\"\\+w* ; \\+w ainsi|strong=\"H0559\"\\+w*, dites-moi \\+w le|strong=\"H6925\"\\+w* \\+w songe|strong=\"H2493\"\\+w* \\+w et|strong=\"H3809\"\\+w* \\+w je|strong=\"H5315\"\\+w* \\+w saurai|strong=\"H3046\"\\+w* \\+w que|strong=\"H1768\"\\+w* \\+w vous|strong=\"H3068\"\\+w* pourrez m’\\+w en|strong=\"H4406\"\\+w* \\+w faire|strong=\"H6213\"\\+w* \\+w connaître|strong=\"H3046\"\\+w* \\+w la|strong=\"H3809\"\\+w* \\+w véritable|strong=\"H0571\"\\+w* signification. »*",
+        "NAB": "If you do not tell me the dream, there can be but one decree for you. You have framed a false and deceitful interpretation to present me with till the crisis is past. Tell me the dream, therefore, that I may be sure that you can also give its correct interpretation.\"",
+        "VAT_ES": "Pero si no me dan a conocer el sueño, habrá para ustedes una sola sentencia. Ustedes se han confabulado para entretenerme con palabras engañosas y perversas, hasta que los tiempos cambien. Por eso díganme el sueño, y así sabré que pueden exponerme su interpretación».",
+        "CEI": "Se non mi dite qual era il mio sogno, una sola sarà la vostra sorte. Vi siete messi d'accordo per darmi risposte astute e false in attesa che le circostanze si mutino. Perciò ditemi il sogno e io saprò che voi siete in grado di darmene anche la spiegazione\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "עֲנ֨וֹ כשדי/א כַשְׂדָּאֵ֤/י קֳדָם מַלְכָּ/א֙ וְ/אָ֣מְרִ֔ין לָֽא אִיתַ֤י אֲנָשׁ֙ עַל יַבֶּשְׁתָּ֔/א דִּ֚י מִלַּ֣ת מַלְכָּ֔/א יוּכַ֖ל לְ/הַחֲוָיָ֑ה כָּ/ל קֳבֵ֗ל דִּ֚י כָּל מֶ֨לֶךְ֙ רַ֣ב וְ/שַׁלִּ֔יט מִלָּ֤ה כִ/דְנָה֙ לָ֣א שְׁאֵ֔ל לְ/כָל חַרְטֹּ֖ם וְ/אָשַׁ֥ף וְ/כַשְׂדָּֽי׃",
+        "LXX": "καὶ ἀπεκρίθησαν οἱ Χαλδαῖοι ἐπὶ τοῦ βασιλέως ὅτι Οὐδεὶς τῶν ἐπὶ τῆς γῆς δυνήσεται εἰπεῖν τῷ βασιλεῖ ὃ ἑώρακε, καθάπερ σὺ ἐρωτᾷς, καὶ πᾶς βασιλεὺς καὶ πᾶς δυνάστης τοιοῦτο πρᾶγμα οὐκ ἐπερωτᾷ πάντα σοφὸν καὶ μάγον καὶ Χαλδαῖον·",
+        "VUL": "Respondentes ergo Chaldæi coram rege, dixerunt : Non est homo super terram, qui sermonem tuum, rex, possit implere : sed neque regum quisquam magnus et potens verbum hujuscemodi sciscitatur ab omni ariolo, et mago, et Chaldæo.",
+        "SYN": "Халдеи отвечали царю и сказали: нет на земле человека, который мог бы открыть это дело царю, и потому ни один царь, великий и могущественный, не требовал подобного ни от какого тайноведца, гадателя и Халдея.",
+        "NEO": "\\+w Les|strong=\"H3606\"\\+w* \\+w Chaldéens|strong=\"H3779\"\\+w* \\+w répondirent|strong=\"H6032\"\\+w* \\+w devant|strong=\"H6925\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w en|strong=\"H6032\"\\+w* \\+w disant|strong=\"H0559\"\\+w* : « \\+w Il|strong=\"H5922\"\\+w* n’\\+w y|strong=\"H5922\"\\+w* \\+w a|strong=\"H5922\"\\+w* \\+w pas|strong=\"H3809\"\\+w* \\+w d|strong=\"H1768\"\\+w*’homme \\+w sur|strong=\"H5922\"\\+w* \\+w la|strong=\"H3606\"\\+w* \\+w terre|strong=\"H3007\"\\+w* \\+w qui|strong=\"H3809\"\\+w* \\+w puisse|strong=\"H3202\"\\+w* \\+w faire|strong=\"H6213\"\\+w* \\+w connaître|strong=\"H2324\"\\+w* \\+w ce|strong=\"H1836\"\\+w* \\+w que|strong=\"H3606\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w demande|strong=\"H7593\"\\+w*. \\+w Aussi|strong=\"H6903\"\\+w* \\+w jamais|strong=\"H3809\"\\+w* \\+w roi|strong=\"H4430\"\\+w*, \\+w si|strong=\"H3863\"\\+w* \\+w grand|strong=\"H7229\"\\+w* \\+w et|strong=\"H6032\"\\+w* \\+w si|strong=\"H3863\"\\+w* \\+w puissant|strong=\"H7990\"\\+w* \\+w qu|strong=\"H6903\"\\+w*’\\+w il|strong=\"H5922\"\\+w* \\+w ait|strong=\"H3426\"\\+w* \\+w été|strong=\"H3809\"\\+w*, n’\\+w a|strong=\"H5922\"\\+w* \\+w demandé|strong=\"H7593\"\\+w* \\+w pareille|strong=\"H1836\"\\+w* \\+w chose|strong=\"H4406\"\\+w* \\+w d|strong=\"H1768\"\\+w*’\\+w aucun|strong=\"H3809\"\\+w* \\+w lettré|strong=\"H5612\"\\+w*, \\+w astrologue|strong=\"H6049\"\\+w* \\+w ou|strong=\"H1768\"\\+w* \\+w Chaldéen|strong=\"H3779\"\\+w*.*",
+        "NAB": "The Chaldeans answered the king: \"There is not a man on earth who can do what you ask, O king; never has any king, however great and mighty, asked such a thing of any magician, enchanter, or Chaldean.",
+        "VAT_ES": "Los caldeos respondieron delante del rey, diciendo: «No hay ningún hombre sobre la tierra que pueda exponer lo que pide el rey, ya que ningún rey, por grande y poderoso que sea, ha pedido jamás una cosa semejante a un mago, adivino o caldeo.",
+        "CEI": "I caldei risposero davanti al re: \"Non c'è nessuno al mondo che possa soddisfare la richiesa del re: difatti nessun re, per quanto potente e grande, ha mai domandato una cosa simile ad un mago, indovino o caldeo."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/מִלְּתָ֨/א דִֽי מַלְכָּ֤/ה שָׁאֵל֙ יַקִּירָ֔ה וְ/אָחֳרָן֙ לָ֣א אִיתַ֔י דִּ֥י יְחַוִּנַּ֖/הּ קֳדָ֣ם מַלְכָּ֑/א לָהֵ֣ן אֱלָהִ֔ין דִּ֚י מְדָ֣רְ/ה֔וֹן עִם בִּשְׂרָ֖/א לָ֥א אִיתֽוֹ/הִי׃",
+        "LXX": "καὶ ὁ λόγος ὃν ζητεῖς, βασιλεῦ, βαρύς ἐστι καὶ ἐπίδοξος, καὶ οὐδείς ἐστιν ὃς δηλώσει ταῦτα τῷ βασιλεῖ, εἰ μή τι ἄγγελος, οὗ οὐκ ἔστι κατοικητήριον μετὰ πάσης σαρκός· ὅθεν οὐκ ἐνδέχεται γενέσθαι καθάπερ οἴει.",
+        "VUL": "Sermo enim, quem tu quæris, rex, gravis est : nec reperietur quisquam qui indicet illum in conspectu regis, exceptis diis, quorum non est cum hominibus conversatio.",
+        "SYN": "Дело, которого царь требует, так трудно, что никто другой не может открыть его царю, кроме богов, которых обитание не с плотью.",
+        "NEO": "\\+w La|strong=\"H3809\"\\+w* \\+w chose|strong=\"H4406\"\\+w* \\+w que|strong=\"H1768\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w demande|strong=\"H7593\"\\+w* \\+w est|strong=\"H7593\"\\+w* \\+w difficile|strong=\"H3358\"\\+w*, \\+w et|strong=\"H4430\"\\+w* \\+w il|strong=\"H1732\"\\+w* n’y \\+w a|strong=\"H5974\"\\+w* \\+w personne|strong=\"H3809\"\\+w* \\+w qui|strong=\"H3809\"\\+w* \\+w puisse|strong=\"H3201\"\\+w* \\+w la|strong=\"H3809\"\\+w* \\+w faire|strong=\"H6213\"\\+w* \\+w connaître|strong=\"H2324\"\\+w* \\+w devant|strong=\"H6925\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w roi|strong=\"H4430\"\\+w*, hormis \\+w les|strong=\"H5974\"\\+w* \\+w dieux|strong=\"H0430\"\\+w* \\+w dont|strong=\"H1768\"\\+w* \\+w la|strong=\"H3809\"\\+w* \\+w demeure|strong=\"H4070\"\\+w* n’\\+w est|strong=\"H7593\"\\+w* \\+w pas|strong=\"H3809\"\\+w* \\+w parmi|strong=\"H5974\"\\+w* \\+w les|strong=\"H5974\"\\+w* mortels. »*",
+        "NAB": "What you demand, O king, is too difficult; there is no one who can tell it to the king except the gods who do not dwell among men.\"",
+        "VAT_ES": "Lo que pide el rey es excesivo, y no hay nadie que pueda exponerlo ante el rey, fuera de los dioses, cuya morada no está con los mortales».",
+        "CEI": "La richiesa del re è tanto difficile, che nessuno ne può dare al re la risposta, se non gli dei la cui dimora è lontano dagli uomini\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כָּ/ל קֳבֵ֣ל דְּנָ֔ה מַלְכָּ֕/א בְּנַ֖ס וּ/קְצַ֣ף שַׂגִּ֑יא וַ/אֲמַר֙ לְ/ה֣וֹבָדָ֔ה לְ/כֹ֖ל חַכִּימֵ֥י בָבֶֽל׃",
+        "LXX": "τότε ὁ βασιλεὺς στυγνὸς γενόμενος καὶ περίλυπος προσέταξεν ἐξαγαγεῖν πάντας τοὺς σοφοὺς τῆς Βαβυλωνίας.",
+        "VUL": "Quo audito, rex, in furore et in ira magna, præcepit ut perirent omnes sapientes Babylonis.",
+        "SYN": "Рассвирепел царь и сильно разгневался на это, и приказал истребить всех мудрецов Вавилонских.",
+        "NEO": "Là-dessus \\+w le|strong=\"H3606\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w se|strong=\"H4430\"\\+w* \\+w mit|strong=\"H7760\"\\+w* \\+w en|strong=\"H4430\"\\+w* \\+w colère|strong=\"H1149\"\\+w* \\+w et|strong=\"H4430\"\\+w* \\+w en|strong=\"H4430\"\\+w* \\+w grande|strong=\"H7690\"\\+w* \\+w fureur|strong=\"H2534\"\\+w*, \\+w et|strong=\"H4430\"\\+w* \\+w il|strong=\"H1732\"\\+w* \\+w donna|strong=\"H5414\"\\+w* l’ordre \\+w de|strong=\"H2445\"\\+w* \\+w mettre|strong=\"H7760\"\\+w* \\+w à|strong=\"H4430\"\\+w* \\+w mort|strong=\"H4191\"\\+w* \\+w tous|strong=\"H3606\"\\+w* \\+w les|strong=\"H3606\"\\+w* \\+w sages|strong=\"H2445\"\\+w* \\+w de|strong=\"H2445\"\\+w* \\+w Babylone|strong=\"H0894\"\\+w*.*",
+        "NAB": "At this the king became violently angry and ordered all the wise men of Babylon to be put to death.",
+        "VAT_ES": "El rey se enfureció terriblemente a causa de esto, y ordenó ejecutar a todos los sabios de Babilonia.",
+        "CEI": "Allora il re, acceso di furore, ordinò che tutti i saggi di Babilonia fossero messi a morte."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/דָתָ֣/א נֶפְקַ֔ת וְ/חַכִּֽימַיָּ֖/א מִֽתְקַטְּלִ֑ין וּ/בְע֛וֹ דָּנִיֵּ֥אל וְ/חַבְר֖וֹ/הִי לְ/הִתְקְטָלָֽה׃",
+        "LXX": "καὶ ἐδογματίσθη πάντας ἀποκτεῖναι· ἐζητήθη δὲ ὁ Δανιὴλ καὶ πάντες οἱ μετ’ αὐτοῦ χάριν τοῦ συναπολέσθαι.",
+        "VUL": "Et egressa sententia, sapientes interficiebantur : quærebanturque Daniel et socii ejus, ut perirent.",
+        "SYN": "Когда вышло это повеление, чтобы убивать мудрецов, искали Даниила и товарищей его, чтобы умертвить их.",
+        "NEO": "\\+w La|strong=\"H1156\"\\+w* \\+w sentence|strong=\"H1882\"\\+w* \\+w ayant|strong=\"H3701\"\\+w* \\+w été|strong=\"H7019\"\\+w* \\+w publiée|strong=\"H5312\"\\+w*, \\+w les|strong=\"H6992\"\\+w* \\+w sages|strong=\"H2445\"\\+w* \\+w étaient|strong=\"H5975\"\\+w* \\+w mis|strong=\"H5414\"\\+w* \\+w à|strong=\"H0559\"\\+w* \\+w mort|strong=\"H6992\"\\+w*, \\+w et|strong=\"H1841\"\\+w* \\+w on|strong=\"H0376\"\\+w* \\+w cherchait|strong=\"H1156\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w* \\+w et|strong=\"H1841\"\\+w* \\+w ses|strong=\"H3526\"\\+w* \\+w compagnons|strong=\"H2269\"\\+w* \\+w pour|strong=\"H5414\"\\+w* \\+w les|strong=\"H6992\"\\+w* \\+w tuer|strong=\"H2026\"\\+w*.*",
+        "NAB": "When the decree was issued that the wise men should be slain, Daniel and his companions were also sought out.",
+        "VAT_ES": "Se promulgó el decreto de hacer morir a los sabios, y también se buscó a Daniel y a sus compañeros para darles muerte.",
+        "CEI": "Il decreto fu pubblicato e già i saggi venivano uccisi; anche Daniele e i suoi compagni erano ricercati per essere messi a morte."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "בֵּ/אדַ֣יִן דָּנִיֵּ֗אל הֲתִיב֙ עֵטָ֣א וּ/טְעֵ֔ם לְ/אַרְי֕וֹךְ רַב טַבָּחַיָּ֖/א דִּ֣י מַלְכָּ֑/א דִּ֚י נְפַ֣ק לְ/קַטָּלָ֔ה לְ/חַכִּימֵ֖י בָּבֶֽל׃",
+        "LXX": "τότε Δανιὴλ εἶπε βουλὴν καὶ γνώμην ἣν εἶχεν Ἀριώχῃ τῷ ἀρχιμαγείρῳ τοῦ βασιλέως, ᾧ προσέταξεν ἐξαγαγεῖν τοὺς σοφιστὰς τῆς Βαβυλωνίας,",
+        "VUL": "Tunc Daniel requisivit de lege atque sententia ab Arioch principe militiæ regis, qui egressus fuerat ad interficiendos sapientes Babylonis.",
+        "SYN": "Тогда Даниил обратился с советом и мудростью к Ариоху, начальнику царских телохранителей, который вышел убивать мудрецов Вавилонских;",
+        "NEO": "\\+w Alors|strong=\"H0116\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w* \\+w fit|strong=\"H4430\"\\+w* \\+w une|strong=\"H0259\"\\+w* \\+w réponse|strong=\"H1697\"\\+w* \\+w prudente|strong=\"H5843\"\\+w* \\+w et|strong=\"H7229\"\\+w* \\+w sensée|strong=\"H2942\"\\+w* \\+w à|strong=\"H2942\"\\+w* Arioch, \\+w chef|strong=\"H7229\"\\+w* \\+w des|strong=\"H4430\"\\+w* \\+w gardes|strong=\"H2877\"\\+w* \\+w du|strong=\"H2877\"\\+w* \\+w roi|strong=\"H4430\"\\+w*, \\+w qui|strong=\"H1841\"\\+w* \\+w était|strong=\"H4430\"\\+w* \\+w sorti|strong=\"H5312\"\\+w* \\+w pour|strong=\"H5414\"\\+w* \\+w mettre|strong=\"H7760\"\\+w* \\+w à|strong=\"H2942\"\\+w* \\+w mort|strong=\"H6992\"\\+w* \\+w les|strong=\"H6992\"\\+w* \\+w sages|strong=\"H2445\"\\+w* \\+w de|strong=\"H2445\"\\+w* \\+w Babylone|strong=\"H0894\"\\+w*.*",
+        "NAB": "Then Daniel prudently took counsel with Arioch, the captain of the king's guard, who had set out to kill the wise men of Babylon:",
+        "VAT_ES": "Entonces Daniel se dirigió con cautela y discreción a Arioc, capitán de guardias del rey, que había salido para matar a los sabios de Babilonia.",
+        "CEI": "Ma Daniele rivolse parole piene di saggezza e di prudenza ad Ariòch, capo delle guardie del re, che stava per uccidere i saggi di Babilonia,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "עָנֵ֣ה וְ/אָמַ֗ר לְ/אַרְיוֹךְ֙ שַׁלִּיטָ֣/א דִֽי מַלְכָּ֔/א עַל מָ֥ה דָתָ֛/א מְהַחְצְפָ֖ה מִן קֳדָ֣ם מַלְכָּ֑/א אֱדַ֣יִן מִלְּתָ֔/א הוֹדַ֥ע אַרְי֖וֹךְ לְ/דָנִיֵּֽאל׃",
+        "LXX": "καὶ ἐπυνθάνετο αὐτοῦ λέγων Ἄρχων τοῦ βασιλέως, περὶ τίνος δογματίζεται πικρῶς παρὰ τοῦ βασιλέως; τότε τὸ πρόσταγμα ἐσήμανεν ὁ Ἀριώχης τῷ Δανιήλ.",
+        "VUL": "Et interrogavit eum, qui a rege potestatem acceperat, quam ob causam tam crudelis sententia a facie regis esset egressa. Cum ergo rem indicasset Arioch Danieli,",
+        "SYN": "и спросил Ариоха, сильного при царе: \"почему такое грозное повеление от царя?\" Тогда Ариох рассказал все дело Даниилу.",
+        "NEO": "\\+w Il|strong=\"H5922\"\\+w* \\+w prit|strong=\"H3947\"\\+w* \\+w la|strong=\"H4481\"\\+w* \\+w parole|strong=\"H6032\"\\+w* \\+w et|strong=\"H6032\"\\+w* \\+w dit|strong=\"H0559\"\\+w* \\+w à|strong=\"H5922\"\\+w* Arioch, \\+w commandant|strong=\"H7990\"\\+w* \\+w du|strong=\"H4481\"\\+w* \\+w roi|strong=\"H4430\"\\+w* : « \\+w Pourquoi|strong=\"H4101\"\\+w* \\+w cette|strong=\"H1836\"\\+w* \\+w sentence|strong=\"H1882\"\\+w* \\+w sévère|strong=\"H2685\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w la|strong=\"H4481\"\\+w* \\+w part|strong=\"H4481\"\\+w* \\+w du|strong=\"H4481\"\\+w* \\+w roi|strong=\"H4430\"\\+w* ? » \\+w Et|strong=\"H6032\"\\+w* Arioch \\+w exposa|strong=\"H3046\"\\+w* \\+w la|strong=\"H4481\"\\+w* \\+w chose|strong=\"H4406\"\\+w* \\+w à|strong=\"H5922\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w*.*",
+        "NAB": "\"O officer of the king,\" he asked, \"what is the reason for this harsh order from the king?\" When Arioch told him,",
+        "VAT_ES": "El tomó la palabra y dijo a Arioc, comandante del rey: «&iquest;Por qué este decreto tan perentorio de parte del rey?». Arioc informó del asunto a Daniel",
+        "CEI": "e disse ad Ariòch, ufficiale del re: \"Perché il re ha emanato un decreto così severo?\". Ariòch ne spiegò il motivo a Daniele."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/דָ֣נִיֵּ֔אל עַ֖ל וּ/בְעָ֣ה מִן מַלְכָּ֑/א דִּ֚י זְמָ֣ן יִנְתֵּן לֵ֔/הּ וּ/פִשְׁרָ֖/א לְ/הַֽחֲוָיָ֥ה לְ/מַלְכָּֽ/א׃",
+        "LXX": "ὁ δὲ Δανιὴλ εἰσῆλθε ταχέως πρὸς τὸν βασιλέα, καὶ ἠξίωσεν ἵνα δοθῇ αὐτῷ χρόνος παρὰ τοῦ βασιλέως, καὶ δηλώσῃ πάντα ἐπὶ τοῦ βασιλέως.",
+        "VUL": "Daniel ingressus rogavit regem ut tempus daret sibi ad solutionem indicandam regi.",
+        "SYN": "И Даниил вошел, и упросил царя дать ему время, и он представит царю толкование _сна._",
+        "NEO": "\\+w Alors|strong=\"H0116\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w* \\+w entra|strong=\"H5954\"\\+w* \\+w dans|strong=\"H8432\"\\+w* \\+w le|strong=\"H4481\"\\+w* \\+w palais|strong=\"H0759\"\\+w* \\+w et|strong=\"H4430\"\\+w* \\+w pria|strong=\"H1156\"\\+w* \\+w le|strong=\"H4481\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w lui|strong=\"H4481\"\\+w* \\+w accorder|strong=\"H5415\"\\+w* \\+w un|strong=\"H4481\"\\+w* \\+w délai|strong=\"H4900\"\\+w* \\+w afin|strong=\"H1768\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w faire|strong=\"H6213\"\\+w* \\+w connaître|strong=\"H2324\"\\+w* \\+w au|strong=\"H2324\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w la|strong=\"H4481\"\\+w* signification.*",
+        "NAB": "Daniel went and asked for time from the king, that he might give him the interpretation.",
+        "VAT_ES": "y este fue a pedir al rey que le concediera un plazo para exponerle la interpretación.",
+        "CEI": "Egli allora entrò dal re e pregò che gli si concedesse tempo: egli avrebbe dato la spiegazione dei sogni al re."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אֱדַ֥יִן דָּֽנִיֵּ֖אל לְ/בַיְתֵ֣/הּ אֲזַ֑ל וְ֠/לַ/חֲנַנְיָה מִֽישָׁאֵ֧ל וַ/עֲזַרְיָ֛ה חַבְר֖וֹ/הִי מִלְּתָ֥/א הוֹדַֽע׃",
+        "LXX": "Τότε ἀπελθὼν Δανιὴλ εἰς τὸν οἶκον αὐτοῦ τῷ Ἁνανίᾳ καὶ Μισαὴλ καὶ Ἀζαρίᾳ τοῖς συνεταίροις ὑπέδειξε πάντα,",
+        "VUL": "Et ingressus est domum suam, Ananiæque et Misaëli et Azariæ, sociis suis, indicavit negotium,",
+        "SYN": "Даниил пришел в дом свой, и рассказал дело Анании, Мисаилу и Азарии, товарищам своим,",
+        "NEO": "\\+w Aussitôt|strong=\"H4116\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w* \\+w alla|strong=\"H3212\"\\+w* \\+w dans|strong=\"H8432\"\\+w* \\+w sa|strong=\"H5414\"\\+w* \\+w maison|strong=\"H1005\"\\+w* \\+w et|strong=\"H1005\"\\+w* \\+w informa|strong=\"H5046\"\\+w* \\+w de|strong=\"H1005\"\\+w* l’\\+w affaire|strong=\"H4406\"\\+w* Ananias, Misaël \\+w et|strong=\"H1005\"\\+w* Azarias, \\+w ses|strong=\"H3526\"\\+w* \\+w compagnons|strong=\"H2269\"\\+w*,*",
+        "NAB": "Daniel went home and informed his companions Hananiah, Mishael, and Azariah,",
+        "VAT_ES": "Daniel se fue a su casa e informó del asunto a Ananías, Misael y Azarías, sus compañeros,",
+        "CEI": "Poi Daniele andò a casa e narrò la cosa ai suoi compagni, Anania, Misaele e Azaria,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/רַחֲמִ֗ין לְ/מִבְעֵא֙ מִן קֳדָם֙ אֱלָ֣הּ שְׁמַיָּ֔/א עַל רָזָ֖/ה דְּנָ֑ה דִּ֣י לָ֤א יְהֹֽבְדוּן֙ דָּנִיֵּ֣אל וְ/חַבְר֔וֹ/הִי עִם שְׁאָ֖ר חַכִּימֵ֥י בָבֶֽל׃",
+        "LXX": "καὶ παρήγγειλε νηστείαν καὶ δέησιν καὶ τιμωρίαν ζητῆσαι παρὰ τοῦ κυρίου τοῦ ὑψίστου περὶ τοῦ μυστηρίου τούτου, ὅπως μὴ ἐκδοθῶσι Δανιὴλ καὶ οἱ μετ’ αὐτοῦ εἰς ἀπώλειαν ἅμα τοῖς σοφισταῖς Βαβυλῶνος.",
+        "VUL": "ut quærerent misericordiam a facie Dei cæli super sacramento isto, et non perirent Daniel et socii ejus cum ceteris sapientibus Babylonis.",
+        "SYN": "чтобы они просили милости у Бога небесного об этой тайне, дабы Даниил и товарищи его не погибли с прочими мудрецами Вавилонскими.",
+        "NEO": "\\+w les|strong=\"H5922\"\\+w* \\+w engageant|strong=\"H5922\"\\+w* \\+w à|strong=\"H5922\"\\+w* \\+w implorer|strong=\"H1156\"\\+w* \\+w la|strong=\"H4481\"\\+w* \\+w miséricorde|strong=\"H7359\"\\+w* \\+w du|strong=\"H4481\"\\+w* \\+w Dieu|strong=\"H0430\"\\+w* \\+w du|strong=\"H4481\"\\+w* \\+w ciel|strong=\"H8065\"\\+w* \\+w sur|strong=\"H5922\"\\+w* \\+w ce|strong=\"H1836\"\\+w* \\+w mystère|strong=\"H5643\"\\+w*, \\+w pour|strong=\"H5922\"\\+w* \\+w qu|strong=\"H1768\"\\+w*’\\+w on|strong=\"H4481\"\\+w* \\+w ne|strong=\"H3809\"\\+w* \\+w fit|strong=\"H6213\"\\+w* \\+w pas|strong=\"H3809\"\\+w* \\+w périr|strong=\"H0006\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w* \\+w et|strong=\"H3809\"\\+w* \\+w ses|strong=\"H5922\"\\+w* \\+w compagnons|strong=\"H2269\"\\+w* \\+w avec|strong=\"H5974\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w reste|strong=\"H7606\"\\+w* \\+w des|strong=\"H4481\"\\+w* \\+w sages|strong=\"H2445\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w Babylone|strong=\"H0894\"\\+w*.*",
+        "NAB": "that they might implore the mercy of the God of heaven in regard to this mystery, so that Daniel and his companions might not perish with the rest of the wise men of Babylon.",
+        "VAT_ES": "instándolos a implorar misericordia ante el Dios del cielo acerca de aquel misterio, a fin de que no los hicieran perecer, a ellos y a él, con el resto de los sabios de Babilonia.",
+        "CEI": "ed essi implorarono misericordia dal Dio del cielo riguardo a questo mistero, perché Daniele e i suoi compagni non fossero messi a morte insieme con tutti gli altri saggi di Babilonia."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "אֱדַ֗יִן לְ/דָנִיֵּ֛אל בְּ/חֶזְוָ֥/א דִֽי לֵילְיָ֖/א רָזָ֣/ה גֲלִ֑י אֱדַ֨יִן֙ דָּֽנִיֵּ֔אל בָּרִ֖ךְ לֶ/אֱלָ֥הּ שְׁמַיָּֽ/א׃",
+        "LXX": "τότε τῷ Δανιὴλ ἐν ὁράματι ἐν αὐτῇ τῇ νυκτὶ τὸ μυστήριον τοῦ βασιλέως ἐξεφάνθη εὐσήμως. τότε Δανιὴλ εὐλόγησε τὸν κύριον τὸν ὕψιστον, καὶ ἐκφωνήσας εἶπεν",
+        "VUL": "Tunc Danieli mysterium per visionem nocte revelatum est : et benedixit Daniel Deum cæli,",
+        "SYN": "И тогда открыта была тайна Даниилу в ночном видении, и Даниил благословил Бога небесного.",
+        "NEO": "\\+w Alors|strong=\"H0116\"\\+w* \\+w le|strong=\"H1768\"\\+w* \\+w secret|strong=\"H7328\"\\+w* \\+w fut|strong=\"H1841\"\\+w* \\+w révélé|strong=\"H1541\"\\+w* \\+w à|strong=\"H1541\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w* \\+w dans|strong=\"H8432\"\\+w* \\+w une|strong=\"H0259\"\\+w* \\+w vision|strong=\"H2376\"\\+w* \\+w pendant|strong=\"H3478\"\\+w* \\+w la|strong=\"H1768\"\\+w* \\+w nuit|strong=\"H3916\"\\+w*, \\+w et|strong=\"H1541\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w* \\+w bénit|strong=\"H1289\"\\+w* \\+w le|strong=\"H1768\"\\+w* \\+w Dieu|strong=\"H0430\"\\+w* \\+w du|strong=\"H3117\"\\+w* \\+w ciel|strong=\"H8065\"\\+w*.*",
+        "NAB": "During the night the mystery was revealed to Daniel in a vision, and he blessed the God of heaven:",
+        "VAT_ES": "Entonces el misterio fue revelado a Daniel en una visión nocturna, y él bendijo al Dios del cielo.",
+        "CEI": "Allora il mistero fu svelato a Daniele in una visione notturna; perciò Daniele benedisse il Dio del cielo:"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "עָנֵ֤ה דָֽנִיֵּאל֙ וְ/אָמַ֔ר לֶהֱוֵ֨א שְׁמֵ֤/הּ דִּֽי אֱלָהָ/א֙ מְבָרַ֔ךְ מִן עָלְמָ֖/א וְ/עַ֣ד עָלְמָ֑/א דִּ֧י חָכְמְתָ֛/א וּ/גְבוּרְתָ֖/א דִּ֥י לֵֽ/הּ הִֽיא׃",
+        "LXX": "Ἔσται τὸ ὄνομα τοῦ κυρίου τοῦ μεγάλου εὐλογημένον εἰς τὸν αἰῶνα, ὅτι ἡ σοφία καὶ ἡ μεγαλωσύνη αὐτοῦ ἐστι·",
+        "VUL": "et locutus ait : Sit nomen Domini benedictum a sæculo et usque in sæculum : quia sapientia et fortitudo ejus sunt.",
+        "SYN": "И сказал Даниил: да будет благословенно имя Господа от века и до века! ибо у Него мудрость и сила;",
+        "NEO": "\\+w Daniel|strong=\"H1841\"\\+w* \\+w prit|strong=\"H3947\"\\+w* \\+w la|strong=\"H4481\"\\+w* \\+w parole|strong=\"H6032\"\\+w* \\+w et|strong=\"H6032\"\\+w* \\+w dit|strong=\"H0559\"\\+w* : « \\+w Béni|strong=\"H1289\"\\+w* \\+w soit|strong=\"H1934\"\\+w* \\+w le|strong=\"H4481\"\\+w* \\+w nom|strong=\"H8036\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w Dieu|strong=\"H0430\"\\+w*, \\+w d|strong=\"H4481\"\\+w*’\\+w éternité|strong=\"H5957\"\\+w* \\+w en|strong=\"H5957\"\\+w* \\+w éternité|strong=\"H5957\"\\+w*, \\+w car|strong=\"H3588\"\\+w* \\+w à|strong=\"H5705\"\\+w* \\+w lui|strong=\"H4481\"\\+w* \\+w appartiennent|strong=\"H1932\"\\+w* \\+w la|strong=\"H4481\"\\+w* \\+w sagesse|strong=\"H2452\"\\+w* \\+w et|strong=\"H6032\"\\+w* \\+w la|strong=\"H4481\"\\+w* \\+w force|strong=\"H1370\"\\+w*.*",
+        "NAB": "\"Blessed be the name of God forever and ever, for wisdom and power are his.",
+        "VAT_ES": "Daniel tomó la palabra y exclamó: «Bendito sea el nombre de Dios, desde siempre y para siempre, porque a él pertenecen la sabiduría y la fuerza.",
+        "CEI": "\"Sia benedetto il nome di Dio di secolo in secolo, perché a lui appartengono la sapienza e la potenza."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ֠/הוּא מְהַשְׁנֵ֤א עִדָּנַיָּ/א֙ וְ/זִמְנַיָּ֔/א מְהַעְדֵּ֥ה מַלְכִ֖ין וּ/מְהָקֵ֣ים מַלְכִ֑ין יָהֵ֤ב חָכְמְתָ/א֙ לְ/חַכִּימִ֔ין וּ/מַנְדְּעָ֖/א לְ/יָדְעֵ֥י בִינָֽה׃",
+        "LXX": "καὶ αὐτὸς ἀλλοιοῖ καιροὺς καὶ χρόνους, μεθιστῶν βασιλεῖς καὶ καθιστῶν, διδοὺς σοφοῖς σοφίαν καὶ σύνεσιν τοῖς ἐν ἐπιστήμῃ οὖσιν·",
+        "VUL": "Et ipse mutat tempora, et ætates : transfert regna, atque constituit : dat sapientiam sapientibus, et scientiam intelligentibus disciplinam.",
+        "SYN": "Он изменяет времена и лета, низлагает царей и поставляет царей; дает мудрость мудрым и разумение разумным;",
+        "NEO": "C’est \\+w lui|strong=\"H3068\"\\+w* \\+w qui|strong=\"H0376\"\\+w* \\+w change|strong=\"H8133\"\\+w* \\+w les|strong=\"H6966\"\\+w* moments \\+w et|strong=\"H4430\"\\+w* \\+w les|strong=\"H6966\"\\+w* \\+w temps|strong=\"H5732\"\\+w*, \\+w qui|strong=\"H0376\"\\+w* \\+w renverse|strong=\"H5709\"\\+w* \\+w les|strong=\"H6966\"\\+w* \\+w rois|strong=\"H4430\"\\+w* \\+w et|strong=\"H4430\"\\+w* \\+w qui|strong=\"H0376\"\\+w* \\+w élève|strong=\"H6966\"\\+w* \\+w les|strong=\"H6966\"\\+w* \\+w rois|strong=\"H4430\"\\+w*, \\+w qui|strong=\"H0376\"\\+w* \\+w donne|strong=\"H3052\"\\+w* \\+w la|strong=\"H3052\"\\+w* \\+w sagesse|strong=\"H2452\"\\+w* \\+w aux|strong=\"H3052\"\\+w* \\+w sages|strong=\"H2445\"\\+w* \\+w et|strong=\"H4430\"\\+w* \\+w le|strong=\"H6966\"\\+w* \\+w savoir|strong=\"H3046\"\\+w* \\+w aux|strong=\"H3052\"\\+w* \\+w intelligents|strong=\"H0995\"\\+w*.*",
+        "NAB": "He causes the changes of the times and seasons, makes kings and unmakes them. He gives wisdom to the wise and knowledge to those who understand.",
+        "VAT_ES": "El hace alternar los tiempos y las estaciones, él depone y entroniza a los reyes, da la sabiduría a los sabios y el conocimiento a los que saben discernir.",
+        "CEI": "Egli alterna tempi e stagioni, depone i re e li innalza, concede la sapienza ai saggi, agli intelligenti il sapere."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "ה֛וּא גָּלֵ֥א עַמִּיקָתָ֖/א וּ/מְסַתְּרָתָ֑/א יָדַע֙ מָ֣ה בַ/חֲשׁוֹכָ֔/א ו/נהיר/א וּ/נְהוֹרָ֖/א עִמֵּ֥/הּ שְׁרֵֽא׃",
+        "LXX": "ἀνακαλύπτων τὰ βαθέα καὶ σκοτεινὰ καὶ γινώσκων τὰ ἐν τῷ σκότει καὶ τὰ ἐν τῷ φωτί, καὶ παρ’ αὐτῷ κατάλυσις.",
+        "VUL": "Ipse revelat profunda et abscondita, et novit in tenebris constituta : et lux cum eo est.",
+        "SYN": "Он открывает глубокое и сокровенное, знает, что во мраке, и свет обитает с Ним.",
+        "NEO": "C’\\+w est|strong=\"H4101\"\\+w* \\+w lui|strong=\"H5974\"\\+w* \\+w qui|strong=\"H4101\"\\+w* \\+w révèle|strong=\"H1541\"\\+w* \\+w les|strong=\"H5974\"\\+w* \\+w choses|strong=\"H4101\"\\+w* \\+w profondes|strong=\"H3966\"\\+w* \\+w et|strong=\"H1541\"\\+w* \\+w cachées|strong=\"H5641\"\\+w*, \\+w qui|strong=\"H4101\"\\+w* \\+w sait|strong=\"H3045\"\\+w* \\+w ce|strong=\"H4101\"\\+w* \\+w qui|strong=\"H4101\"\\+w* \\+w est|strong=\"H3068\"\\+w* \\+w dans|strong=\"H8432\"\\+w* \\+w les|strong=\"H5974\"\\+w* \\+w ténèbres|strong=\"H2816\"\\+w*, \\+w et|strong=\"H1541\"\\+w* \\+w la|strong=\"H3046\"\\+w* \\+w lumière|strong=\"H5094\"\\+w* \\+w demeure|strong=\"H8271\"\\+w* \\+w avec|strong=\"H5974\"\\+w* \\+w lui|strong=\"H5974\"\\+w*.*",
+        "NAB": "He reveals deep and hidden things and knows what is in the darkness, for the light dwells with him.",
+        "VAT_ES": "El revela las cosas profundas y ocultas, conoce lo que está en las tinieblas y la luz habita junto a él.",
+        "CEI": "Svela cose profonde e occulte e sa quel che è celato nelle tenebre e presso di lui è la luce."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "לָ֣/ךְ אֱלָ֣הּ אֲבָהָתִ֗/י מְהוֹדֵ֤א וּ/מְשַׁבַּח֙ אֲנָ֔ה דִּ֧י חָכְמְתָ֛/א וּ/גְבוּרְתָ֖/א יְהַ֣בְתְּ לִ֑/י וּ/כְעַ֤ן הֽוֹדַעְתַּ֨/נִי֙ דִּֽי בְעֵ֣ינָא מִנָּ֔/ךְ דִּֽי מִלַּ֥ת מַלְכָּ֖/א הוֹדַעְתֶּֽ/נָא׃",
+        "LXX": "σοί, κύριε τῶν πατέρων μου, ἐξομολογοῦμαι καὶ αἰνῶ, ὅτι σοφίαν καὶ φρόνησιν ἔδωκάς μοι, καὶ νῦν ἐσήμανάς μοι ὅσα ἠξίωσα, τοῦ δηλῶσαι τῷ βασιλεῖ πρὸς ταῦτα.",
+        "VUL": "Tibi, Deus patrum nostrorum, confiteor, teque laudo, quia sapientiam et fortitudinem dedisti mihi, et nunc ostendisti mihi quæ rogavimus te, quia sermonem regis aperuisti nobis.",
+        "SYN": "Славлю и величаю Тебя, Боже отцов моих, что Ты даровал мне мудрость и силу и открыл мне то, о чем мы молили Тебя; ибо Ты открыл нам дело царя.",
+        "NEO": "C’\\+w est|strong=\"H4406\"\\+w* \\+w vous|strong=\"H3068\"\\+w*, \\+w Dieu|strong=\"H0430\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w mes|strong=\"H8104\"\\+w* \\+w pères|strong=\"H0001\"\\+w*, \\+w que|strong=\"H1768\"\\+w* \\+w je|strong=\"H5315\"\\+w* \\+w célèbre|strong=\"H3034\"\\+w* \\+w et|strong=\"H4430\"\\+w* \\+w que|strong=\"H1768\"\\+w* \\+w je|strong=\"H5315\"\\+w* \\+w loue|strong=\"H7624\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w ce|strong=\"H4481\"\\+w* \\+w que|strong=\"H1768\"\\+w* \\+w vous|strong=\"H3068\"\\+w* \\+w m|strong=\"H4481\"\\+w*’avez \\+w donné|strong=\"H3052\"\\+w* \\+w la|strong=\"H4481\"\\+w* \\+w sagesse|strong=\"H2452\"\\+w* \\+w et|strong=\"H4430\"\\+w* \\+w la|strong=\"H4481\"\\+w* \\+w force|strong=\"H1370\"\\+w*, \\+w et|strong=\"H4430\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w ce|strong=\"H4481\"\\+w* \\+w que|strong=\"H1768\"\\+w* \\+w maintenant|strong=\"H3705\"\\+w* \\+w vous|strong=\"H3068\"\\+w* \\+w m|strong=\"H4481\"\\+w*’avez \\+w fait|strong=\"H1156\"\\+w* \\+w savoir|strong=\"H3046\"\\+w* \\+w ce|strong=\"H4481\"\\+w* \\+w que|strong=\"H1768\"\\+w* \\+w nous|strong=\"H4430\"\\+w* \\+w vous|strong=\"H3068\"\\+w* \\+w avons|strong=\"H3426\"\\+w* \\+w demandé|strong=\"H1156\"\\+w*, \\+w en|strong=\"H4481\"\\+w* \\+w nous|strong=\"H4430\"\\+w* \\+w faisant|strong=\"H6213\"\\+w* \\+w savoir|strong=\"H3046\"\\+w* l’\\+w affaire|strong=\"H4406\"\\+w* \\+w du|strong=\"H4481\"\\+w* \\+w roi|strong=\"H4430\"\\+w*. »*",
+        "NAB": "To you, O God of my fathers, I give thanks and praise, because you have given me wisdom and power. Now you have shown me what we asked of you, you have made known to us the king's dream.\"",
+        "VAT_ES": "A ti, Dios de mis padres, yo te alabo y glorifico, porque me has dado la sabiduría y la fuerza; y ahora me has manifestado lo que te habíamos pedido, porque nos has hecho conocer lo concerniente al rey».",
+        "CEI": "Gloria e lode a te, Dio dei miei padri, che mi hai concesso la sapienza e la forza, mi hai manifestato ciò che ti abbiamo domandato e ci hai illustrato la richiesta del re\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "כָּ/ל קֳבֵ֣ל דְּנָ֗ה דָּֽנִיֵּאל֙ עַ֣ל עַל אַרְי֔וֹךְ דִּ֚י מַנִּ֣י מַלְכָּ֔/א לְ/הוֹבָדָ֖ה לְ/חַכִּימֵ֣י בָבֶ֑ל אֲזַ֣ל וְ/כֵ֣ן אֲמַר לֵ֗/הּ לְ/חַכִּימֵ֤י בָבֶל֙ אַל תְּהוֹבֵ֔ד הַעֵ֨לְ/נִי֙ קֳדָ֣ם מַלְכָּ֔/א וּ/פִשְׁרָ֖/א לְ/מַלְכָּ֥/א אֲחַוֵּֽא׃",
+        "LXX": "εἰσελθὼν δὲ Δανιὴλ πρὸς τὸν Ἀριὼχ τὸν κατασταθέντα ὑπὸ τοῦ βασιλέως ἀποκτεῖναι πάντας τοὺς σοφιστὰς τῆς Βαβυλωνίας εἶπεν αὐτῷ Τοὺς μὲν σοφιστὰς τῆς Βαβυλωνίας μὴ ἀπολέσῃς, εἰσάγαγε δέ με πρὸς τὸν βασιλέα, καὶ ἕκαστα τῷ βασιλεῖ δηλώσω.",
+        "VUL": "Post hæc Daniel ingressus ad Arioch, quem constituerat rex ut perderet sapientes Babylonis, sic ei locutus est : Sapientes Babylonis ne perdas : introduc me in conspectu regis, et solutionem regi narrabo.",
+        "SYN": "После сего Даниил вошел к Ариоху, которому царь повелел умертвить мудрецов Вавилонских, пришел и сказал ему: не убивай мудрецов Вавилонских; введи меня к царю, и я открою значение _сна._",
+        "NEO": "C’\\+w est|strong=\"H6591\"\\+w* \\+w pourquoi|strong=\"H6903\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w* \\+w se|strong=\"H1841\"\\+w* \\+w rendit|strong=\"H5954\"\\+w* \\+w auprès|strong=\"H5922\"\\+w* \\+w d|strong=\"H1768\"\\+w*’Arioch, \\+w que|strong=\"H3606\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w avait|strong=\"H4430\"\\+w* \\+w chargé|strong=\"H4853\"\\+w* \\+w de|strong=\"H2445\"\\+w* \\+w mettre|strong=\"H7760\"\\+w* \\+w à|strong=\"H5922\"\\+w* \\+w mort|strong=\"H4191\"\\+w* \\+w les|strong=\"H3606\"\\+w* \\+w sages|strong=\"H2445\"\\+w* \\+w de|strong=\"H2445\"\\+w* \\+w Babylone|strong=\"H0894\"\\+w* ; \\+w il|strong=\"H5922\"\\+w* \\+w alla|strong=\"H3212\"\\+w* \\+w et|strong=\"H4430\"\\+w* \\+w lui|strong=\"H5922\"\\+w* \\+w parla|strong=\"H1696\"\\+w* \\+w ainsi|strong=\"H3652\"\\+w* : « \\+w Ne|strong=\"H4430\"\\+w* \\+w fais|strong=\"H6213\"\\+w* \\+w pas|strong=\"H3809\"\\+w* \\+w périr|strong=\"H0006\"\\+w* \\+w les|strong=\"H3606\"\\+w* \\+w sages|strong=\"H2445\"\\+w* \\+w de|strong=\"H2445\"\\+w* \\+w Babylone|strong=\"H0894\"\\+w* ; introduis-moi \\+w devant|strong=\"H6925\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w roi|strong=\"H4430\"\\+w*, \\+w et|strong=\"H4430\"\\+w* \\+w je|strong=\"H1836\"\\+w* \\+w ferai|strong=\"H6213\"\\+w* \\+w connaître|strong=\"H2324\"\\+w* \\+w au|strong=\"H5922\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w la|strong=\"H3606\"\\+w* signification. »*",
+        "NAB": "So Daniel went to Arioch, whom the king had appointed to destroy the wise men of Babylon, and said to him, \"Do not put the wise men of Babylon to death. Bring me before the king, and I will tell him the interpretation of the dream.\" Arioch quickly brought Daniel to the king and said,",
+        "VAT_ES": "A causa de esto, Daniel se presentó a Arioc, a quien el rey había encargado ejecutar a los sabios de Babilonia, y le habló de esta manera: «No hagas morir a los sabios de Babilonia. Llévame ante la presencia del rey, y yo le expondré la interpretación».",
+        "CEI": "Allora Daniele si recò da Ariòch, al quale il re aveva affidato l'incarico di uccidere i saggi di Babilonia, e presentatosi gli disse: \"Non uccidere i saggi di Babilonia, ma conducimi dal re e io gli farò conoscere la spiegazione del sogno\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "אֱדַ֤יִן אַרְיוֹךְ֙ בְּ/הִתְבְּהָלָ֔ה הַנְעֵ֥ל לְ/דָנִיֵּ֖אל קֳדָ֣ם מַלְכָּ֑/א וְ/כֵ֣ן אֲמַר לֵ֗/הּ דִּֽי הַשְׁכַּ֤חַת גְּבַר֙ מִן בְּנֵ֤י גָֽלוּתָ/א֙ דִּ֣י יְה֔וּד דִּ֥י פִשְׁרָ֖/א לְ/מַלְכָּ֥/א יְהוֹדַֽע׃",
+        "LXX": "Τότε Ἀριὼχ κατὰ σπουδὴν εἰσήγαγεν τὸν Δανιὴλ πρὸς τὸν βασιλέα καὶ εἶπεν αὐτῷ ὅτι Εὕρηκα ἄνθρωπον σοφὸν ἐκ τῆς αἰχμαλωσίας τῶν υἱῶν τῆς Ἰουδαίας, ὃς τῷ βασιλεῖ δηλώσει ἕκαστα.",
+        "VUL": "Tunc Arioch festinus introduxit Danielem ad regem, et dixit ei : Inveni hominem de filiis transmigrationis Juda, qui solutionem regi annuntiet.",
+        "SYN": "Тогда Ариох немедленно привел Даниила к царю и сказал ему: я нашел из пленных сынов Иудеи человека, который может открыть царю значение _сна._",
+        "NEO": "Arioch s’empressa \\+w de|strong=\"H4481\"\\+w* \\+w faire|strong=\"H6213\"\\+w* \\+w entrer|strong=\"H0935\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w* \\+w devant|strong=\"H6925\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w et|strong=\"H4430\"\\+w* \\+w lui|strong=\"H6925\"\\+w* \\+w parla|strong=\"H1696\"\\+w* \\+w ainsi|strong=\"H3652\"\\+w* : « \\+w J|strong=\"H4481\"\\+w*’ai \\+w trouvé|strong=\"H7912\"\\+w* \\+w parmi|strong=\"H8432\"\\+w* \\+w les|strong=\"H4481\"\\+w* \\+w captifs|strong=\"H1123\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w Juda|strong=\"H3061\"\\+w* \\+w un|strong=\"H4481\"\\+w* \\+w homme|strong=\"H1400\"\\+w* \\+w qui|strong=\"H1400\"\\+w* \\+w fera|strong=\"H6213\"\\+w* \\+w savoir|strong=\"H3046\"\\+w* \\+w au|strong=\"H3046\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w la|strong=\"H4481\"\\+w* signification. »*",
+        "NAB": "\"I have found a man among the Judean captives who can give the interpretation to the king.\"",
+        "VAT_ES": "Arioc llevó rápidamente a Daniel ante la presencia del rey, y le dijo: «He hallado entre los deportados de Judá a un hombre que hará conocer al rey la interpretación».",
+        "CEI": "Ariòch condusse in fretta Daniele alla presenza del re e gli disse: \"Ho trovato un uomo fra i Giudei deportati, il quale farà conoscere al re la spiegazione del sogno\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "עָנֵ֤ה מַלְכָּ/א֙ וְ/אָמַ֣ר לְ/דָנִיֵּ֔אל דִּ֥י שְׁמֵ֖/הּ בֵּלְטְשַׁאצַּ֑ר ה/איתי/ך הַֽ/אִיתָ֣/ךְ כָּהֵ֗ל לְ/הוֹדָעֻתַ֛/נִי חֶלְמָ֥/א דִֽי חֲזֵ֖ית וּ/פִשְׁרֵֽ/הּ׃",
+        "LXX": "ἀποκριθεὶς δὲ ὁ βασιλεὺς εἶπε τῷ Δανιήλ, ἐπικαλουμένῳ δὲ Χαλδαιστὶ Βαλτασάρ Δυνήσῃ δηλῶσαί μοι τὸ ὅραμα ὃ εἶδον καὶ τὴν τούτου σύγκρισιν;",
+        "VUL": "Respondit rex, et dixit Danieli, cujus nomen erat Baltassar : Putasne vere potes mihi indicare somnium, quod vidi, et interpretationem ejus ?",
+        "SYN": "Царь сказал Даниилу, который назван был Валтасаром: можешь ли ты сказать мне сон, который я видел, и значение его?",
+        "NEO": "\\+w Le|strong=\"H3046\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w prit|strong=\"H3947\"\\+w* \\+w la|strong=\"H3046\"\\+w* \\+w parole|strong=\"H6032\"\\+w* \\+w et|strong=\"H6032\"\\+w* \\+w dit|strong=\"H0559\"\\+w* \\+w à|strong=\"H6032\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w*, \\+w qui|strong=\"H1841\"\\+w* s’appelait Baltassar : « Es-tu \\+w capable|strong=\"H3546\"\\+w* \\+w de|strong=\"H4430\"\\+w* \\+w me|strong=\"H3068\"\\+w* \\+w faire|strong=\"H6213\"\\+w* \\+w savoir|strong=\"H3046\"\\+w* \\+w le|strong=\"H3046\"\\+w* \\+w songe|strong=\"H2493\"\\+w* \\+w que|strong=\"H1768\"\\+w* j’ai \\+w eu|strong=\"H2370\"\\+w* \\+w et|strong=\"H6032\"\\+w* \\+w sa|strong=\"H5414\"\\+w* signification ? »*",
+        "NAB": "The king asked Daniel, whose name was Belteshazzar, \"Can you tell me the dream that I had, and its meaning?\"",
+        "VAT_ES": "El rey tomó la palabra y dijo a Daniel, llamado Beltsasar: «&iquest;Eres tú capaz de darme a conocer el sueño que tuve y su interpretación?».",
+        "CEI": "Il re disse allora a Daniele, chiamato Baltazzàr: \"Puoi tu davvero rivelarmi il sogno che ho fatto e darmene la spiegazione?\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "עָנֵ֧ה דָנִיֵּ֛אל קֳדָ֥ם מַלְכָּ֖/א וְ/אָמַ֑ר רָזָ/ה֙ דִּֽי מַלְכָּ֣/א שָׁאֵ֔ל לָ֧א חַכִּימִ֣ין אָֽשְׁפִ֗ין חַרְטֻמִּין֙ גָּזְרִ֔ין יָכְלִ֖ין לְ/הַֽחֲוָיָ֥ה לְ/מַלְכָּֽ/א׃",
+        "LXX": "ἐκφωνήσας δὲ ὁ Δανιὴλ ἐπὶ τοῦ βασιλέως εἶπεν Τὸ μυστήριον ὃ ἑώρακεν ὁ βασιλεύς, οὐκ ἔστι σοφῶν καὶ φαρμακῶν καὶ ἐπαοιδῶν καὶ γαζαρηνῶν ἡ δήλωσις·",
+        "VUL": "Et respondens Daniel coram rege, ait : Mysterium, quod rex interrogat, sapientes, magi, arioli, et aruspices nequeunt indicare regi :",
+        "SYN": "Даниил отвечал царю и сказал: тайны, о которой царь спрашивает, не могут открыть царю ни мудрецы, ни обаятели, ни тайноведцы, ни гадатели.",
+        "NEO": "\\+w Daniel|strong=\"H1841\"\\+w* \\+w répondit|strong=\"H6032\"\\+w* \\+w en|strong=\"H6032\"\\+w* \\+w présence|strong=\"H6925\"\\+w* \\+w du|strong=\"H6925\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w et|strong=\"H6032\"\\+w* \\+w dit|strong=\"H0559\"\\+w* : « \\+w Le|strong=\"H6925\"\\+w* \\+w secret|strong=\"H7328\"\\+w* \\+w que|strong=\"H1768\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w demande|strong=\"H7593\"\\+w*, \\+w ni|strong=\"H3809\"\\+w* \\+w sages|strong=\"H2445\"\\+w*, \\+w ni|strong=\"H3809\"\\+w* \\+w magiciens|strong=\"H2749\"\\+w*, \\+w ni|strong=\"H3809\"\\+w* \\+w lettrés|strong=\"H5612\"\\+w*, \\+w ni|strong=\"H3809\"\\+w* \\+w astrologues|strong=\"H0826\"\\+w* \\+w ne|strong=\"H3809\"\\+w* \\+w sont|strong=\"H0582\"\\+w* \\+w capables|strong=\"H1768\"\\+w* \\+w de|strong=\"H2445\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w faire|strong=\"H6213\"\\+w* \\+w connaître|strong=\"H2324\"\\+w* \\+w au|strong=\"H6925\"\\+w* \\+w roi|strong=\"H4430\"\\+w*.*",
+        "NAB": "In the king's presence Daniel made this reply: \"The mystery about which the king has inquired, the wise men, enchanters, magicians, and astrologers could not explain to the king.",
+        "VAT_ES": "Daniel respondió ante el rey, diciendo: «El rey interroga sobre un misterio que no se lo puede aclarar ningún sabio, adivino, mago o astrólogo.",
+        "CEI": "Daniele, davanti al re, rispose: \"Il mistero di cui il re chiede la spiegazione non può essere spiegato né da saggi, né da astrologi, né da maghi, né da indovini;"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "בְּרַ֡ם אִיתַ֞י אֱלָ֤הּ בִּ/שְׁמַיָּ/א֙ גָּלֵ֣א רָזִ֔ין וְ/הוֹדַ֗ע לְ/מַלְכָּ/א֙ נְבֽוּכַדְנֶצַּ֔ר מָ֛ה דִּ֥י לֶהֱוֵ֖א בְּ/אַחֲרִ֣ית יוֹמַיָּ֑/א חֶלְמָ֨/ךְ וְ/חֶזְוֵ֥י רֵאשָׁ֛/ךְ עַֽל מִשְׁכְּבָ֖/ךְ דְּנָ֥ה הֽוּא׃",
+        "LXX": "ἀλλ’ ἔστι θεὸς ἐν οὐρανῷ ἀνακαλύπτων μυστήρια, ὃς ἐδήλωσε τῷ βασιλεῖ Ναβουχοδονοσὸρ ἃ δεῖ γενέσθαι ἐπ’ ἐσχάτων τῶν ἡμερῶν·",
+        "VUL": "sed est Deus in cælo revelans mysteria, qui indicavit tibi, rex Nabuchodonosor, quæ ventura sunt in novissimis temporibus. Somnium tuum, et visiones capitis tui in cubili tuo hujuscemodi sunt.",
+        "SYN": "Но есть на небесах Бог, открывающий тайны; и Он открыл царю Навуходоносору, что будет в последние дни. Сон твой и видения главы твоей на ложе твоем были такие:",
+        "NEO": "\\+w Mais|strong=\"H1297\"\\+w* \\+w il|strong=\"H5922\"\\+w* \\+w y|strong=\"H5922\"\\+w* \\+w a|strong=\"H5922\"\\+w* \\+w un|strong=\"H1934\"\\+w* \\+w Dieu|strong=\"H0430\"\\+w* \\+w dans|strong=\"H5922\"\\+w* \\+w le|strong=\"H5922\"\\+w* \\+w ciel|strong=\"H8065\"\\+w* \\+w qui|strong=\"H4101\"\\+w* \\+w révèle|strong=\"H1541\"\\+w* \\+w les|strong=\"H5922\"\\+w* \\+w secrets|strong=\"H7328\"\\+w* \\+w et|strong=\"H4430\"\\+w* \\+w qui|strong=\"H4101\"\\+w* \\+w a|strong=\"H5922\"\\+w* \\+w fait|strong=\"H6213\"\\+w* \\+w savoir|strong=\"H3046\"\\+w* \\+w au|strong=\"H3046\"\\+w* \\+w roi|strong=\"H4430\"\\+w* Nabuchodonosor \\+w ce|strong=\"H4101\"\\+w* \\+w qui|strong=\"H4101\"\\+w* \\+w doit|strong=\"H5869\"\\+w* \\+w arriver|strong=\"H1934\"\\+w* \\+w à|strong=\"H5922\"\\+w* \\+w la|strong=\"H5922\"\\+w* \\+w fin|strong=\"H7093\"\\+w* \\+w des|strong=\"H4430\"\\+w* \\+w jours|strong=\"H3118\"\\+w*. \\+w Ton|strong=\"H1836\"\\+w* \\+w songe|strong=\"H2493\"\\+w* \\+w et|strong=\"H4430\"\\+w* \\+w les|strong=\"H5922\"\\+w* \\+w visions|strong=\"H2376\"\\+w* \\+w de|strong=\"H4430\"\\+w* \\+w ton|strong=\"H1836\"\\+w* \\+w esprit|strong=\"H7217\"\\+w* \\+w que|strong=\"H4101\"\\+w* \\+w tu|strong=\"H1768\"\\+w* \\+w as|strong=\"H4430\"\\+w* \\+w eues|strong=\"H7217\"\\+w* \\+w sur|strong=\"H5922\"\\+w* \\+w ta|strong=\"H5922\"\\+w* \\+w couche|strong=\"H4903\"\\+w*, \\+w les|strong=\"H5922\"\\+w* \\+w voici|strong=\"H1836\"\\+w* :*",
+        "NAB": "But there is a God in heaven who reveals mysteries, and he has shown King Nebuchadnezzar what is to happen in days to come; this was the dream you saw as you lay in bed.",
+        "VAT_ES": "Sin embargo, hay en el cielo un Dios que revela los misterios, y que ha dado a conocer al rey Nabucodonosor lo que sucederá en los días venideros. Tu sueño y las visiones de tu imaginación, cuando estabas en tu lecho, fueron estos:",
+        "CEI": "ma c'è un Dio nel cielo che svela i misteri ed egli ha rivelato al re Nabucodònosor quel che avverrà al finire dei giorni. Ecco dunque qual era il tuo sogno e le visioni che sono passate per la tua mente, mentre dormivi nel tuo letto."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "אַ֣נְתְּה מַלְכָּ֗/א רַעְיוֹנָ/ךְ֙ עַל מִשְׁכְּבָ֣/ךְ סְלִ֔קוּ מָ֛ה דִּ֥י לֶהֱוֵ֖א אַחֲרֵ֣י דְנָ֑ה וְ/גָלֵ֧א רָזַיָּ֛/א הוֹדְעָ֖/ךְ מָה דִ֥י לֶהֱוֵֽא׃",
+        "LXX": "καὶ ἀνακαλύπτων μυστήρια ἐδήλωσέ σοι ἃ δεῖ γενέσθαι.",
+        "VUL": "Tu, rex, cogitare cpisti in strato tuo, quid esset futurum post hæc : et qui revelat mysteria, ostendit tibi quæ ventura sunt.",
+        "SYN": "ты, царь, на ложе твоем думал о том, что будет после сего? и Открывающий тайны показал тебе то, что будет.",
+        "NEO": "\\+w Toi|strong=\"H5922\"\\+w*, \\+w ô|strong=\"H0577\"\\+w* \\+w roi|strong=\"H4430\"\\+w*, \\+w tes|strong=\"H1934\"\\+w* \\+w pensées|strong=\"H7476\"\\+w* s’élevaient \\+w en|strong=\"H1934\"\\+w* \\+w ton|strong=\"H1836\"\\+w* \\+w esprit|strong=\"H7307\"\\+w* \\+w sur|strong=\"H5922\"\\+w* \\+w ta|strong=\"H5922\"\\+w* \\+w couche|strong=\"H4903\"\\+w* \\+w au|strong=\"H3046\"\\+w* \\+w sujet|strong=\"H5922\"\\+w* \\+w de|strong=\"H4430\"\\+w* \\+w ce|strong=\"H4101\"\\+w* \\+w qui|strong=\"H4101\"\\+w* \\+w arriverait|strong=\"H6213\"\\+w* \\+w après|strong=\"H1934\"\\+w* \\+w ce|strong=\"H4101\"\\+w* temps-ci, \\+w et|strong=\"H4430\"\\+w* \\+w celui|strong=\"H0376\"\\+w* \\+w qui|strong=\"H4101\"\\+w* \\+w révèle|strong=\"H1541\"\\+w* \\+w les|strong=\"H5922\"\\+w* \\+w secrets|strong=\"H7328\"\\+w* t’\\+w a|strong=\"H5922\"\\+w* \\+w fait|strong=\"H6213\"\\+w* \\+w connaître|strong=\"H3046\"\\+w* \\+w ce|strong=\"H4101\"\\+w* \\+w qui|strong=\"H4101\"\\+w* \\+w doit|strong=\"H5869\"\\+w* \\+w arriver|strong=\"H1934\"\\+w*.*",
+        "NAB": "To you in your bed there came thoughts about what should happen in the future, and he who reveals mysteries showed you what is to be.",
+        "VAT_ES": "A ti, mientras estabas en tu lecho, te sobrevinieron pensamientos acerca de lo que va a suceder en adelante, y el que revela los misterios te ha hecho conocer lo que va a suceder.",
+        "CEI": "O re, i pensieri che ti sono venuti mentre eri a letto riguardano il futuro; colui che svela i misteri ha voluto svelarti ciò che dovrà avvenire."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/אֲנָ֗ה לָ֤א בְ/חָכְמָה֙ דִּֽי אִיתַ֥י בִּ/י֙ מִן כָּל חַיַּיָּ֔/א רָזָ֥/א דְנָ֖ה גֱּלִ֣י לִ֑/י לָהֵ֗ן עַל דִּבְרַת֙ דִּ֤י פִשְׁרָ/א֙ לְ/מַלְכָּ֣/א יְהוֹדְע֔וּן וְ/רַעְיוֹנֵ֥י לִבְבָ֖/ךְ תִּנְדַּֽע׃",
+        "LXX": "κἀμοὶ δὲ οὐ παρὰ τὴν σοφίαν τὴν οὖσαν ἐν ἐμοὶ ὑπὲρ πάντας τοὺς ἀνθρώπους τὸ μυστήριον τοῦτο ἐξεφάνθη, ἀλλ’ ἕνεκεν τοῦ δηλωθῆναι τῷ βασιλεῖ ἐσημάνθη μοι ἅ ὑπέλαβες τῇ καρδίᾳ σου ἐν γνώσει.",
+        "VUL": "Mihi quoque non in sapientia, quæ est in me plus quam in cunctis viventibus, sacramentum hoc revelatum est : sed ut interpretatio regi manifesta fieret, et cogitationes mentis tuæ scires.",
+        "SYN": "А мне тайна сия открыта не потому, чтобы я был мудрее всех живущих, но для того, чтобы открыто было царю разумение и чтобы ты узнал помышления сердца твоего.",
+        "NEO": "\\+w Et|strong=\"H4430\"\\+w* \\+w moi|strong=\"H4481\"\\+w*, \\+w ce|strong=\"H1836\"\\+w* n’\\+w est|strong=\"H6591\"\\+w* \\+w pas|strong=\"H3809\"\\+w* \\+w par|strong=\"H4481\"\\+w* \\+w une|strong=\"H0259\"\\+w* \\+w sagesse|strong=\"H2452\"\\+w* \\+w qui|strong=\"H3809\"\\+w* \\+w serait|strong=\"H3808\"\\+w* \\+w en|strong=\"H4481\"\\+w* \\+w moi|strong=\"H4481\"\\+w*, \\+w supérieure|strong=\"H4481\"\\+w* \\+w à|strong=\"H5922\"\\+w* \\+w celle|strong=\"H2459\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w tous|strong=\"H3606\"\\+w* \\+w les|strong=\"H3606\"\\+w* \\+w vivants|strong=\"H2417\"\\+w*, \\+w que|strong=\"H3606\"\\+w* \\+w ce|strong=\"H1836\"\\+w* \\+w secret|strong=\"H7328\"\\+w* \\+w m|strong=\"H4481\"\\+w*’\\+w a|strong=\"H5922\"\\+w* \\+w été|strong=\"H3809\"\\+w* \\+w révélé|strong=\"H1541\"\\+w*, \\+w mais|strong=\"H3861\"\\+w* c’\\+w est|strong=\"H6591\"\\+w* \\+w afin|strong=\"H5922\"\\+w* \\+w qu|strong=\"H1768\"\\+w*’\\+w on|strong=\"H4481\"\\+w* \\+w en|strong=\"H4481\"\\+w* \\+w fasse|strong=\"H6213\"\\+w* \\+w savoir|strong=\"H3046\"\\+w* \\+w la|strong=\"H3606\"\\+w* signification \\+w au|strong=\"H3046\"\\+w* \\+w roi|strong=\"H4430\"\\+w*, \\+w et|strong=\"H4430\"\\+w* \\+w que|strong=\"H3606\"\\+w* \\+w tu|strong=\"H1768\"\\+w* \\+w connaisses|strong=\"H3046\"\\+w* \\+w les|strong=\"H3606\"\\+w* \\+w pensées|strong=\"H7476\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w ton|strong=\"H1836\"\\+w* \\+w cœur|strong=\"H3825\"\\+w*.*",
+        "NAB": "To me also this mystery has been revealed; not that I am wiser than any other living person, but in order that its meaning may be made known to the king, that you may understand the thoughts in your own mind.",
+        "VAT_ES": "En cuanto a mí, este misterio me ha sido revelado no porque yo tenga una sabiduría superior a la de todos los vivientes, sino para que se ponga de manifiesto al rey la interpretación, y así conozcas los pensamientos de tu corazón.",
+        "CEI": "Se a me è stato svelato questo mistero, non è perché io possieda una sapienza superiore a tutti i viventi, ma perché ne sia data la spiegazione al re e tu possa conoscere i pensieri del tuo cuore."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "אַ֣נְתְּה מַלְכָּ֗/א חָזֵ֤ה הֲוַ֨יְתָ֙ וַ/אֲל֨וּ צְלֵ֥ם חַד֙ שַׂגִּ֔יא צַלְמָ֨/א דִּכֵּ֥ן רַ֛ב וְ/זִיוֵ֥/הּ יַתִּ֖יר קָאֵ֣ם לְ/קָבְלָ֑/ךְ וְ/רֵוֵ֖/הּ דְּחִֽיל׃",
+        "LXX": "καὶ σύ, βασιλεῦ, ἑώρακας, καὶ ἰδοὺ εἰκὼν μία, καὶ ἦν ἡ εἰκὼν ἐκείνη μεγάλη σφόδρα, καὶ ἡ πρόσοψις αὐτῆς ὑπερφερὴς ἑστήκει ἐναντίον σου· καὶ ἡ πρόσοψις τῆς εἰκόνος φοβερά.",
+        "VUL": "Tu, rex, videbas, et ecce quasi statua una grandis : statua illa magna, et statura sublimis stabat contra te, et intuitus ejus erat terribilis.",
+        "SYN": "Тебе, царь, было такое видение: вот, какой-то большой истукан; огромный был этот истукан, в чрезвычайном блеске стоял он пред тобою, и страшен был вид его.",
+        "NEO": "\\+w Toi|strong=\"H6440\"\\+w*, \\+w ô|strong=\"H0577\"\\+w* \\+w roi|strong=\"H4430\"\\+w*, \\+w tu|strong=\"H6903\"\\+w* \\+w regardais|strong=\"H1934\"\\+w*, \\+w et|strong=\"H7229\"\\+w* \\+w voici|strong=\"H2009\"\\+w* \\+w une|strong=\"H2298\"\\+w* \\+w grande|strong=\"H7229\"\\+w* \\+w statue|strong=\"H6755\"\\+w*. \\+w Cette|strong=\"H1797\"\\+w* \\+w statue|strong=\"H6755\"\\+w* \\+w était|strong=\"H6755\"\\+w* \\+w immense|strong=\"H7229\"\\+w* \\+w et|strong=\"H7229\"\\+w* \\+w sa|strong=\"H5414\"\\+w* \\+w splendeur|strong=\"H2122\"\\+w* \\+w extraordinaire|strong=\"H3493\"\\+w* ; \\+w elle|strong=\"H1366\"\\+w* \\+w se|strong=\"H4430\"\\+w* \\+w dressait|strong=\"H6965\"\\+w* \\+w devant|strong=\"H6903\"\\+w* \\+w toi|strong=\"H6440\"\\+w*, \\+w et|strong=\"H7229\"\\+w* \\+w son|strong=\"H6963\"\\+w* \\+w aspect|strong=\"H7299\"\\+w* \\+w était|strong=\"H6755\"\\+w* \\+w terrible|strong=\"H1763\"\\+w*.*",
+        "NAB": "\"In your vision, O king, you saw a statue, very large and exceedingly bright, terrifying in appearance as it stood before you.",
+        "VAT_ES": "Tú, rey, estabas mirando, y viste una gran estatua. Esa estatua, enorme y de un brillo extraordinario, se alzaba delante de ti, y su aspecto era impresionante.",
+        "CEI": "Tu stavi osservando, o re, ed ecco una statua, una statua enorme, di straordinario splendore, si ergeva davanti a te con terribile aspetto."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "ה֣וּא צַלְמָ֗/א רֵאשֵׁ/הּ֙ דִּֽי דְהַ֣ב טָ֔ב חֲד֥וֹ/הִי וּ/דְרָע֖וֹ/הִי דִּ֣י כְסַ֑ף מְע֥וֹ/הִי וְ/יַרְכָתֵ֖/הּ דִּ֥י נְחָֽשׁ׃",
+        "LXX": "καὶ ἦν ἡ κεφαλὴ αὐτῆς ἀπὸ χρυσίου χρηστοῦ, τὸ στῆθος καὶ οἱ βραχίονες ἀργυροῖ, ἡ κοιλία καὶ οἱ μηροὶ χαλκοῖ·",
+        "VUL": "Hujus statuæ caput ex auro optimo erat, pectus autem et brachia de argento, porro venter et femora ex ære,",
+        "SYN": "У этого истукана голова была из чистого золота, грудь его и руки его - из серебра, чрево его и бедра его медные,",
+        "NEO": "\\+w Cette|strong=\"H1836\"\\+w* \\+w statue|strong=\"H6755\"\\+w* \\+w avait|strong=\"H3068\"\\+w* \\+w la|strong=\"H1932\"\\+w* \\+w tête|strong=\"H7217\"\\+w* \\+w d|strong=\"H1768\"\\+w*’\\+w or|strong=\"H1722\"\\+w* \\+w fin|strong=\"H7093\"\\+w*, \\+w la|strong=\"H1932\"\\+w* \\+w poitrine|strong=\"H2306\"\\+w* \\+w et|strong=\"H4872\"\\+w* \\+w les|strong=\"H6213\"\\+w* \\+w bras|strong=\"H1872\"\\+w* \\+w d|strong=\"H1768\"\\+w*’\\+w argent|strong=\"H3702\"\\+w*, \\+w le|strong=\"H1768\"\\+w* \\+w ventre|strong=\"H4577\"\\+w* \\+w et|strong=\"H4872\"\\+w* \\+w les|strong=\"H6213\"\\+w* \\+w cuisses|strong=\"H3410\"\\+w* \\+w d|strong=\"H1768\"\\+w*’\\+w airain|strong=\"H5174\"\\+w*,*",
+        "NAB": "The head of the statue was pure gold, its chest and arms were silver, its belly and thighs bronze,",
+        "VAT_ES": "Su cabeza era de oro fino; su pecho y sus brazos, de plata; su vientre y sus caderas, de bronce;",
+        "CEI": "Aveva la testa d'oro puro, il petto e le braccia d'argento, il ventre e le cosce di bronzo,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "שָׁק֖וֹ/הִי דִּ֣י פַרְזֶ֑ל רַגְל֕וֹ/הִי מנ/הון מִנְּ/הֵין֙ דִּ֣י פַרְזֶ֔ל ו/מנ/הון וּ/מִנְּ/הֵ֖ין דִּ֥י חֲסַֽף׃",
+        "LXX": "τὰ δὲ σκέλη σιδηρᾶ, οἱ πόδες μέρος μέν τι σιδήρου, μέρος δέ τι ὀστράκινον.",
+        "VUL": "tibiæ autem ferreæ : pedum quædam pars erat ferrea, quædam autem fictilis.",
+        "SYN": "голени его железные, ноги его частью железные, частью глиняные.",
+        "NEO": "\\+w les|strong=\"H4481\"\\+w* \\+w jambes|strong=\"H8243\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w fer|strong=\"H6523\"\\+w*, \\+w les|strong=\"H4481\"\\+w* \\+w pieds|strong=\"H7271\"\\+w* \\+w en|strong=\"H4481\"\\+w* \\+w partie|strong=\"H4481\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w fer|strong=\"H6523\"\\+w* \\+w et|strong=\"H4481\"\\+w* \\+w en|strong=\"H4481\"\\+w* \\+w partie|strong=\"H4481\"\\+w* \\+w d|strong=\"H4481\"\\+w*’\\+w argile|strong=\"H2635\"\\+w*.*",
+        "NAB": "the legs iron, its feet partly iron and partly tile.",
+        "VAT_ES": "sus piernas, de hierro, y sus pies, parte de hierro y parte de arcilla.",
+        "CEI": "le gambe di ferro e i piedi in parte di ferro e in parte di creta."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "חָזֵ֣ה הֲוַ֗יְתָ עַ֠ד דִּ֣י הִתְגְּזֶ֤רֶת אֶ֨בֶן֙ דִּי לָ֣א בִ/ידַ֔יִן וּ/מְחָ֤ת לְ/צַלְמָ/א֙ עַל רַגְל֔וֹ/הִי דִּ֥י פַרְזְלָ֖/א וְ/חַסְפָּ֑/א וְ/הַדֵּ֖קֶת הִמּֽוֹן׃",
+        "LXX": "ἑώρακας ἕως ὅτου ἐτμήθη λίθος ἐξ ὄρους ἄνευ χειρῶν, καὶ ἐπάταξε τὴν εἰκόνα ἐπὶ τοὺς πόδας τοὺς σιδηροῦς καὶ ὀστρακίνους καὶ κατήλεσεν αὐτά.",
+        "VUL": "Videbas ita, donec abscissus est lapis de monte sine manibus : et percussit statuam in pedibus ejus ferreis et fictilibus, et comminuit eos.",
+        "SYN": "Ты видел его, доколе камень не оторвался от горы без содействия рук, ударил в истукана, в железные и глиняные ноги его, и разбил их.",
+        "NEO": "\\+w Tu|strong=\"H1768\"\\+w* \\+w regardais|strong=\"H1934\"\\+w*, jusqu’\\+w à|strong=\"H5922\"\\+w* \\+w ce|strong=\"H1697\"\\+w* \\+w qu|strong=\"H1768\"\\+w*’\\+w une|strong=\"H1934\"\\+w* \\+w pierre|strong=\"H0068\"\\+w* \\+w fut|strong=\"H3809\"\\+w* \\+w détachée|strong=\"H6605\"\\+w*, \\+w non|strong=\"H3808\"\\+w* \\+w par|strong=\"H3027\"\\+w* \\+w une|strong=\"H5705\"\\+w* \\+w main|strong=\"H3028\"\\+w*+ 2:34 \\+it Non par une main\\+it*, sans l’action d’une main d’homme.*, \\+w et|strong=\"H1855\"\\+w* \\+w frappa|strong=\"H4223\"\\+w* \\+w la|strong=\"H5922\"\\+w* \\+w statue|strong=\"H6755\"\\+w* \\+w à|strong=\"H5705\"\\+w* \\+w ses|strong=\"H5922\"\\+w* \\+w pieds|strong=\"H7271\"\\+w* \\+w de|strong=\"H5922\"\\+w* \\+w fer|strong=\"H6523\"\\+w* \\+w et|strong=\"H1855\"\\+w* \\+w d|strong=\"H1768\"\\+w*’\\+w argile|strong=\"H2635\"\\+w*, \\+w et|strong=\"H1855\"\\+w* \\+w les|strong=\"H5922\"\\+w* \\+w brisa|strong=\"H7665\"\\+w*.*",
+        "NAB": "While you looked at the statue, a stone which was hewn from a mountain without a hand being put to it, struck its iron and tile feet, breaking them in pieces.",
+        "VAT_ES": "Tú estabas mirando, y de pronto se desprendió una piedra, sin que interviniera ninguna mano: ella golpeó la estatua sobre sus pies de hierro y de arcilla, y los pulverizó.",
+        "CEI": "Mentre stavi guardando, una pietra si staccò dal monte, ma non per mano di uomo, e andò a battere contro i piedi della statua, che erano di ferro e di argilla, e li frantumò."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "בֵּ/אדַ֣יִן דָּ֣קוּ כַ/חֲדָ֡ה פַּרְזְלָ/א֩ חַסְפָּ֨/א נְחָשָׁ֜/א כַּסְפָּ֣/א וְ/דַהֲבָ֗/א וַ/הֲווֹ֙ כְּ/ע֣וּר מִן אִדְּרֵי קַ֔יִט וּ/נְשָׂ֤א הִמּוֹן֙ רוּחָ֔/א וְ/כָל אֲתַ֖ר לָא הִשְׁתֲּכַ֣ח לְ/ה֑וֹן וְ/אַבְנָ֣/א דִּֽי מְחָ֣ת לְ/צַלְמָ֗/א הֲוָ֛ת לְ/ט֥וּר רַ֖ב וּ/מְלָ֥ת כָּל אַרְעָֽ/א׃",
+        "LXX": "τότε λεπτὰ ἐγένετο ἅμα ὁ σίδηρος καὶ τὸ ὄστρακον καὶ ὁ χαλκὸς καὶ ὁ ἄργυρος καὶ τὸ χρυσίον, καὶ ἐγένετο ὡσεὶ λεπτότερον ἀχύρου ἐν ἅλωνι, καὶ ἐρρίπισεν αὐτὰ ὁ ἄνεμος ὥστε μηδὲν καταλειφθῆναι ἐξ αὐτῶν, καὶ ὁ λίθος ὁ πατάξας τὴν εἰκόνα ἐγένετο ὄρος μέγα, καὶ ἐπάταξε πᾶσαν τὴν γῆν.",
+        "VUL": "Tunc contrita sunt pariter ferrum, testa, æs, argentum, et aurum, et redacta quasi in favillam æstivæ areæ, quæ rapta sunt vento, nullusque locus inventus est eis : lapis autem, qui percusserat statuam, factus est mons magnus, et implevit universam terram.",
+        "SYN": "Тогда все вместе раздробилось: железо, глина, медь, серебро и золото сделались как прах на летних гумнах, и ветер унес их, и следа не осталось от них; а камень, разбивший истукана, сделался великою горою и наполнил всю землю.",
+        "NEO": "\\+w Alors|strong=\"H0116\"\\+w* \\+w furent|strong=\"H6485\"\\+w* \\+w brisés|strong=\"H1855\"\\+w* \\+w en|strong=\"H1934\"\\+w* \\+w même|strong=\"H0259\"\\+w* \\+w temps|strong=\"H6256\"\\+w* \\+w le|strong=\"H4481\"\\+w* \\+w fer|strong=\"H6523\"\\+w*, l’\\+w argile|strong=\"H2635\"\\+w*, l’\\+w airain|strong=\"H5174\"\\+w*, l’\\+w argent|strong=\"H3702\"\\+w* \\+w et|strong=\"H1855\"\\+w* l’\\+w or|strong=\"H1722\"\\+w*, \\+w et|strong=\"H1855\"\\+w* \\+w ils|strong=\"H1992\"\\+w* \\+w devinrent|strong=\"H1934\"\\+w* \\+w comme|strong=\"H4481\"\\+w* \\+w la|strong=\"H3606\"\\+w* \\+w balle|strong=\"H5784\"\\+w* \\+w qui|strong=\"H3809\"\\+w* s’élève \\+w de|strong=\"H4481\"\\+w* l’aire \\+w en|strong=\"H1934\"\\+w* \\+w été|strong=\"H3809\"\\+w*, \\+w et|strong=\"H1855\"\\+w* \\+w le|strong=\"H4481\"\\+w* \\+w vent|strong=\"H7308\"\\+w* \\+w les|strong=\"H3606\"\\+w* \\+w emporta|strong=\"H5376\"\\+w* \\+w sans|strong=\"H3809\"\\+w* \\+w qu|strong=\"H1768\"\\+w*’\\+w on|strong=\"H4481\"\\+w* \\+w en|strong=\"H1934\"\\+w* \\+w trouve|strong=\"H7912\"\\+w* \\+w plus|strong=\"H3809\"\\+w* \\+w aucune|strong=\"H3809\"\\+w* \\+w trace|strong=\"H1870\"\\+w* ; \\+w et|strong=\"H1855\"\\+w* \\+w la|strong=\"H3606\"\\+w* \\+w pierre|strong=\"H0068\"\\+w* \\+w qui|strong=\"H3809\"\\+w* \\+w avait|strong=\"H3068\"\\+w* \\+w frappé|strong=\"H4223\"\\+w* \\+w la|strong=\"H3606\"\\+w* \\+w statue|strong=\"H6755\"\\+w* \\+w devint|strong=\"H1934\"\\+w* \\+w une|strong=\"H2298\"\\+w* \\+w grande|strong=\"H7229\"\\+w* \\+w montagne|strong=\"H2906\"\\+w* \\+w et|strong=\"H1855\"\\+w* \\+w remplit|strong=\"H4391\"\\+w* \\+w toute|strong=\"H3606\"\\+w* \\+w la|strong=\"H3606\"\\+w* \\+w terre|strong=\"H0776\"\\+w*.*",
+        "NAB": "The iron, tile, bronze, silver, and gold all crumbled at once, fine as the chaff on the threshing floor in summer, and the wind blew them away without leaving a trace. But the stone that struck the statue became a great mountain and filled the whole earth.",
+        "VAT_ES": "Entonces fueron pulverizados al mismo tiempo el hierro, la arcilla, el bronce, la plata y el oro; fueron como la paja en la era durante el verano: el viento se los llevó y no quedó ningún rastro. En cuanto a la piedra que había golpeado la estatua, se convirtió en una gran montaña, y llenó toda la tierra.",
+        "CEI": "Allora si frantumarono anche il ferro, l'argilla, il bronzo, l'argento e l'oro e divennero come la pula sulle aie d'estate; il vento li portò via senza lasciar traccia, mentre la pietra, che aveva colpito la statua, divenne una grande montagna che riempì tutta quella regione."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "דְּנָ֣ה חֶלְמָ֔/א וּ/פִשְׁרֵ֖/הּ נֵאמַ֥ר קֳדָם מַלְכָּֽ/א׃",
+        "LXX": "τοῦτο τὸ ὅραμα· καὶ τὴν κρίσιν δὲ ἐροῦμεν ἐπὶ τοῦ βασιλέως.",
+        "VUL": "Hoc est somnium : interpretationem quoque ejus dicemus coram te, rex.",
+        "SYN": "Вот сон! Скажем пред царем и значение его.",
+        "NEO": "\\+w Voilà|strong=\"H1836\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w songe|strong=\"H2493\"\\+w* ; \\+w sa|strong=\"H5414\"\\+w* signification, \\+w nous|strong=\"H1836\"\\+w* \\+w allons|strong=\"H3212\"\\+w* \\+w la|strong=\"H1836\"\\+w* \\+w dire|strong=\"H0559\"\\+w* \\+w devant|strong=\"H6925\"\\+w* \\+w le|strong=\"H6925\"\\+w* \\+w roi|strong=\"H4430\"\\+w*.*",
+        "NAB": "\"This was the dream; the interpretation we shall also give in the king's presence.",
+        "VAT_ES": "Este fue el sueño; ahora diremos su interpretación en presencia del rey.",
+        "CEI": "Questo è il sogno: ora ne daremo la spiegazione al re."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "אַ֣נְתְּה מַלְכָּ֔/א מֶ֖לֶךְ מַלְכַיָּ֑/א דִּ֚י אֱלָ֣הּ שְׁמַיָּ֔/א מַלְכוּתָ֥/א חִסְנָ֛/א וְ/תָקְפָּ֥/א וִֽ/יקָרָ֖/א יְהַב לָֽ/ךְ׃",
+        "LXX": "σύ, βασιλεῦ, βασιλεὺς βασιλέων, καὶ σοὶ ὁ κύριος τοῦ οὐρανοῦ τὴν ἀρχὴν καὶ τὴν βασιλείαν καὶ τὴν ἰσχὺν καὶ τὴν τιμὴν καὶ τὴν δόξαν ἔδωκεν·",
+        "VUL": "Tu rex regum es : et Deus cæli regnum, et fortitudinem, et imperium, et gloriam dedit tibi :",
+        "SYN": "Ты, царь, царь царей, которому Бог небесный даровал царство, власть, силу и славу,",
+        "NEO": "\\+w Toi|strong=\"H6440\"\\+w*, \\+w ô|strong=\"H0577\"\\+w* \\+w roi|strong=\"H4430\"\\+w*, \\+w roi|strong=\"H4430\"\\+w* \\+w des|strong=\"H4430\"\\+w* \\+w rois|strong=\"H4430\"\\+w*, \\+w à|strong=\"H3052\"\\+w* \\+w qui|strong=\"H4437\"\\+w* \\+w le|strong=\"H1768\"\\+w* \\+w Dieu|strong=\"H0430\"\\+w* \\+w du|strong=\"H4437\"\\+w* \\+w ciel|strong=\"H8065\"\\+w* \\+w a|strong=\"H3052\"\\+w* \\+w donné|strong=\"H3052\"\\+w* l’\\+w empire|strong=\"H4437\"\\+w*, \\+w la|strong=\"H3052\"\\+w* \\+w puissance|strong=\"H8632\"\\+w*, \\+w la|strong=\"H3052\"\\+w* \\+w force|strong=\"H2632\"\\+w* \\+w et|strong=\"H4430\"\\+w* \\+w la|strong=\"H3052\"\\+w* \\+w gloire|strong=\"H3367\"\\+w*,*",
+        "NAB": "You, O king, are the king of kings; to you the God of heaven has given dominion and strength, power and glory;",
+        "VAT_ES": "Tú, rey, eres el rey de reyes, a quien el Dios del cielo ha conferido la realeza, el poder, la fuerza y la gloria;",
+        "CEI": "Tu o re, sei il re dei re; a te il Dio del cielo ha concesso il regno, la potenza, la forza e la gloria."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וּ/בְ/כָל דִּ֣י דארין דָֽיְרִ֣ין בְּֽנֵי אֲ֠נָשָׁ/א חֵיוַ֨ת בָּרָ֤/א וְ/עוֹף שְׁמַיָּ/א֙ יְהַ֣ב בִּ/ידָ֔/ךְ וְ/הַשְׁלְטָ֖/ךְ בְּ/כָלְּ/ה֑וֹן אַנְתְּה ה֔וּא רֵאשָׁ֖/ה דִּ֥י דַהֲבָֽ/א׃",
+        "LXX": "ἐν πάσῃ τῇ οἰκουμένῃ ἀπὸ ἀνθρώπων καὶ θηρίων ἀγρίων καὶ πετεινῶν οὐρανοῦ καὶ τῶν ἰχθύων τῆς θαλάσσης παρέδωκεν ὑπὸ τὰς χεῖράς σου, κυριεύειν πάντων· σὺ εἶ ἡ κεφαλὴ ἡ χρυσῆ.",
+        "VUL": "et omnia, in quibus habitant filii hominum, et bestiæ agri : volucres quoque cæli dedit in manu tua, et sub ditione tua universa constituit : tu es ergo caput aureum.",
+        "SYN": "и всех сынов человеческих, где бы они ни жили, зверей земных и птиц небесных Он отдал в твои руки и поставил тебя владыкою над всеми ими. Ты - это золотая голова!",
+        "NEO": "\\+w entre|strong=\"H0935\"\\+w* \\+w les|strong=\"H3606\"\\+w* \\+w mains|strong=\"H3028\"\\+w* \\+w de|strong=\"H3052\"\\+w* \\+w qui|strong=\"H3028\"\\+w* \\+w il|strong=\"H1732\"\\+w* \\+w a|strong=\"H3052\"\\+w* \\+w livré|strong=\"H3052\"\\+w*, \\+w en|strong=\"H0935\"\\+w* \\+w quelque|strong=\"H3606\"\\+w* \\+w lieu|strong=\"H3606\"\\+w* \\+w qu|strong=\"H1768\"\\+w*’ils \\+w habitent|strong=\"H1753\"\\+w*, \\+w les|strong=\"H3606\"\\+w* \\+w enfants|strong=\"H1123\"\\+w* \\+w des|strong=\"H2423\"\\+w* \\+w hommes|strong=\"H0582\"\\+w*, \\+w les|strong=\"H3606\"\\+w* \\+w bêtes|strong=\"H2423\"\\+w* \\+w des|strong=\"H2423\"\\+w* \\+w champs|strong=\"H1251\"\\+w*, \\+w les|strong=\"H3606\"\\+w* \\+w oiseaux|strong=\"H5776\"\\+w* \\+w des|strong=\"H2423\"\\+w* \\+w cieux|strong=\"H8065\"\\+w*, \\+w et|strong=\"H3606\"\\+w* \\+w qu|strong=\"H1768\"\\+w*’il \\+w a|strong=\"H3052\"\\+w* \\+w fait|strong=\"H6213\"\\+w* \\+w dominer|strong=\"H7981\"\\+w* \\+w sur|strong=\"H1753\"\\+w* \\+w eux|strong=\"H0310\"\\+w* \\+w tous|strong=\"H3606\"\\+w* : c’est \\+w toi|strong=\"H6440\"\\+w* \\+w qui|strong=\"H3028\"\\+w* \\+w es|strong=\"H0383\"\\+w* \\+w la|strong=\"H3606\"\\+w* \\+w tête|strong=\"H7217\"\\+w* \\+w d|strong=\"H1768\"\\+w*’\\+w or|strong=\"H1722\"\\+w*.+ 2:38 La statue tout entière représente la puissance du monde considérée au point de vue de son opposition au royaume de Dieu, et comme une dans les différentes phases de son développement historique. La tête d’or figure la monarchie babylonienne personnifiée dans Nabuchodonosor, son plus illustre représentant ; c’est aussi la première bête du chap. vii (vers. 4), le lion aux ailes d’aigle.**",
+        "NAB": "men, wild beasts, and birds of the air, wherever they may dwell, he has handed over to you, making you ruler over them all; you are the head of gold.",
+        "VAT_ES": "él ha puesto en tus manos a los hombres, los animales del campo y las aves del cielo, cualquiera sea el lugar donde habitan, y te ha hecho dominar sobre todos ellos: por eso la cabeza de oro eres tú.",
+        "CEI": "A te ha concesso il dominio sui figli dell'uomo, sugli animali selvatici, sugli uccelli del cielo; tu li domini tutti: tu sei la testa d'oro."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וּ/בָתְרָ֗/ךְ תְּק֛וּם מַלְכ֥וּ אָחֳרִ֖י ארע/א אֲרַע מִנָּ֑/ךְ וּ/מַלְכ֨וּ תליתיא תְלִיתָאָ֤ה אָחֳרִי֙ דִּ֣י נְחָשָׁ֔/א דִּ֥י תִשְׁלַ֖ט בְּ/כָל אַרְעָֽ/א׃",
+        "LXX": "καὶ μετὰ σὲ ἀναστήσεται βασιλεία ἐλάττων σου, καὶ τρίτη βασιλεία ἄλλη χαλκῆ ἣ κυριεύσει πάσης τῆς γῆς·",
+        "VUL": "Et post te consurget regnum aliud minus te argenteum : et regnum tertium aliud æreum, quod imperabit universæ terræ.",
+        "SYN": "После тебя восстанет другое царство, ниже твоего, и еще третье царство, медное, которое будет владычествовать над всею землею.",
+        "NEO": "\\+w Après|strong=\"H4481\"\\+w* \\+w toi|strong=\"H6440\"\\+w*, \\+w il|strong=\"H4481\"\\+w* s’\\+w élèvera|strong=\"H6966\"\\+w* \\+w un|strong=\"H6966\"\\+w* \\+w autre|strong=\"H3606\"\\+w* \\+w royaume|strong=\"H4437\"\\+w*,+ 2:39 \\+it Un autre royaume\\+it*, l’empire des Mèdes, et des Perses, que l’ours figure au chap, vii (vers. 5). — \\+it Un troisième royaume\\+it*, fondé par Alexandre le Grand, qui ajouta la domination de l’Orient à celle des Grecs ; il a pour emblème, en 7:6, le léopard. — Selon d’autres commentateurs le deuxième royaume serait celui des Mèdes, le troisième celui des Perses.* \\+w moindre|strong=\"H6810\"\\+w* \\+w que|strong=\"H3606\"\\+w* \\+w toi|strong=\"H6440\"\\+w*, \\+w puis|strong=\"H3201\"\\+w* \\+w un|strong=\"H6966\"\\+w* \\+w troisième|strong=\"H8523\"\\+w* \\+w royaume|strong=\"H4437\"\\+w* \\+w d|strong=\"H4481\"\\+w*’\\+w airain|strong=\"H5174\"\\+w*, \\+w qui|strong=\"H4437\"\\+w* \\+w dominera|strong=\"H7981\"\\+w* \\+w sur|strong=\"H7981\"\\+w* \\+w toute|strong=\"H3606\"\\+w* \\+w la|strong=\"H3606\"\\+w* \\+w terre|strong=\"H0776\"\\+w*.*",
+        "NAB": "Another kingdom shall take your place, inferior to yours, then a third kingdom, of bronze, which shall rule over the whole earth.",
+        "VAT_ES": "Después de ti surgirá otro reino inferior a ti, y luego aparecerá un tercer reino, que será de bronce y dominará sobre toda la tierra.",
+        "CEI": "Dopo di te sorgerà un altro regno, inferiore al tuo; poi un terzo regno, quello di bronzo, che dominerà su tutta la terra."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וּ/מַלְכוּ֙ רביעיה רְבִ֣יעָאָ֔ה תֶּהֱוֵ֥א תַקִּיפָ֖ה כְּ/פַרְזְלָ֑/א כָּ/ל קֳבֵ֗ל דִּ֤י פַרְזְלָ/א֙ מְהַדֵּ֤ק וְ/חָשֵׁל֙ כֹּ֔לָּ/א וּֽ/כְ/פַרְזְלָ֛/א דִּֽי מְרָעַ֥ע כָּל אִלֵּ֖ין תַּדִּ֥ק וְ/תֵרֹֽעַ׃",
+        "LXX": "καὶ βασιλεία τετάρτη ἰσχυρὰ ὡς ὁ σίδηρος, ὥσπερ ὁ σίδηρος ὁ δαμάζων πάντα, καὶ ὡς ὁ σίδηρος πᾶν δένδρον ἐκκόπτων· καὶ σεισθήσεται πᾶσα ἡ γῆ.",
+        "VUL": "Et regnum quartum erit velut ferrum : quomodo ferrum comminuit, et domat omnia, sic comminuet, et conteret omnia hæc.",
+        "SYN": "А четвертое царство будет крепко, как железо; ибо как железо разбивает и раздробляет все, так и оно, подобно всесокрушающему железу, будет раздроблять и сокрушать.",
+        "NEO": "\\+w Un|strong=\"H1934\"\\+w* \\+w quatrième|strong=\"H7244\"\\+w* \\+w royaume|strong=\"H4437\"\\+w*+ 2:40 \\+it Un quatrième royaume\\+it* ; selon beaucoup de commentateurs, l’empire romain. Les jambes de fer qui lui sont attribuées vers. 33, se rapportent sans doute à la première période de son histoire, période de force irrésistible ; dans la seconde période, celle du fer uni à l’argile, à la force se joindra la faiblesse. Selon d’autres (Dom Calmet, etc.), il s’agirait des royaumes d’Égypte et de Syrie qui, par des mariages (semence d’hommes, vers. 43), essayèrent de s’allier et de devenir forts. Ceux qui identifient le troisième royaume avec les Perses disent que, dans la quatrième image, l’empire d’Alexandre est successivement considéré dans son unité et dans sa division.* \\+w sera|strong=\"H1934\"\\+w* \\+w fort|strong=\"H8624\"\\+w* \\+w comme|strong=\"H6903\"\\+w* \\+w le|strong=\"H3606\"\\+w* \\+w fer|strong=\"H6523\"\\+w* ; \\+w de|strong=\"H4437\"\\+w* \\+w même|strong=\"H0259\"\\+w* \\+w que|strong=\"H3606\"\\+w* \\+w le|strong=\"H3606\"\\+w* \\+w fer|strong=\"H6523\"\\+w* \\+w écrase|strong=\"H4001\"\\+w* \\+w et|strong=\"H1855\"\\+w* \\+w brise|strong=\"H1855\"\\+w* \\+w tout|strong=\"H3606\"\\+w*, \\+w et|strong=\"H1855\"\\+w* \\+w comme|strong=\"H6903\"\\+w* \\+w le|strong=\"H3606\"\\+w* \\+w fer|strong=\"H6523\"\\+w* \\+w qui|strong=\"H4437\"\\+w* \\+w met|strong=\"H5414\"\\+w* \\+w en|strong=\"H1934\"\\+w* \\+w pièces|strong=\"H7490\"\\+w*, \\+w il|strong=\"H1732\"\\+w* \\+w écrasera|strong=\"H0947\"\\+w* \\+w et|strong=\"H1855\"\\+w* \\+w mettra|strong=\"H5414\"\\+w* \\+w en|strong=\"H1934\"\\+w* \\+w pièces|strong=\"H7490\"\\+w* \\+w tous|strong=\"H3606\"\\+w* ceux-là.*",
+        "NAB": "There shall be a fourth kingdom, strong as iron; it shall break in pieces and subdue all these others, just as iron breaks in pieces and crushes everything else.",
+        "VAT_ES": "Y un cuarto reino será duro como el hierro: así como el hierro tritura y pulveriza todo –como el hierro que destroza– él los triturará y destrozará a todos ellos.",
+        "CEI": "Vi sarà poi un quarto regno, duro come il ferro. Come il ferro spezza e frantuma tutto, così quel regno spezzerà e frantumerà tutto."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וְ/דִֽי חֲזַ֜יְתָה רַגְלַיָּ֣/א וְ/אֶצְבְּעָתָ֗/א מנ/הון מִנְּ/הֵ֞ן חֲסַ֤ף דִּֽי פֶחָר֙ ו/מנ/הון וּ/מִנְּ/הֵ֣ין פַּרְזֶ֔ל מַלְכ֤וּ פְלִיגָה֙ תֶּהֱוֵ֔ה וּ/מִן נִצְבְּתָ֥/א דִ֥י פַרְזְלָ֖/א לֶֽהֱוֵא בַ֑/הּ כָּ/ל קֳבֵל֙ דִּ֣י חֲזַ֔יְתָה פַּ֨רְזְלָ֔/א מְעָרַ֖ב בַּ/חֲסַ֥ף טִינָֽ/א׃",
+        "LXX": "καὶ ὡς ἑώρακας τοὺς πόδας αὐτῆς καὶ τοὺς δακτύλους μέρος μέν τι ὀστράκου κεραμικοῦ, μέρος δέ τι σιδήρου, βασιλεία ἄλλη διμερὴς ἔσται ἐν αὐτῇ, καθάπερ εἶδες τὸν σίδηρον ἀναμεμιγμένον ἅμα τῷ πηλίνῳ ὀστράκῳ.",
+        "VUL": "Porro quia vidisti pedum, et digitorum partem testæ figuli, et partem ferream, regnum divisum erit : quod tamen de plantario ferri orietur, secundum quod vidisti ferrum mistum testæ ex luto.",
+        "SYN": "А что ты видел ноги и пальцы на ногах частью из глины горшечной, а частью из железа, то будет царство разделенное, и в нем останется несколько крепости железа, так как ты видел железо, смешанное с горшечною глиною.",
+        "NEO": "\\+w Si|strong=\"H3863\"\\+w* \\+w tu|strong=\"H1768\"\\+w* \\+w as|strong=\"H1768\"\\+w* \\+w vu|strong=\"H2370\"\\+w* \\+w les|strong=\"H3606\"\\+w* \\+w pieds|strong=\"H7271\"\\+w* \\+w et|strong=\"H4481\"\\+w* \\+w les|strong=\"H3606\"\\+w* \\+w orteils|strong=\"H0677\"\\+w* \\+w en|strong=\"H1934\"\\+w* \\+w partie|strong=\"H4481\"\\+w* \\+w d|strong=\"H4481\"\\+w*’\\+w argile|strong=\"H2635\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w potier|strong=\"H6353\"\\+w* \\+w et|strong=\"H4481\"\\+w* \\+w en|strong=\"H1934\"\\+w* \\+w partie|strong=\"H4481\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w fer|strong=\"H6523\"\\+w*, c’\\+w est|strong=\"H1934\"\\+w* \\+w que|strong=\"H3606\"\\+w* \\+w ce|strong=\"H4481\"\\+w* \\+w sera|strong=\"H1934\"\\+w* \\+w un|strong=\"H1934\"\\+w* \\+w royaume|strong=\"H4437\"\\+w* \\+w divisé|strong=\"H6386\"\\+w* ; \\+w il|strong=\"H4481\"\\+w* \\+w y|strong=\"H8033\"\\+w* \\+w aura|strong=\"H1934\"\\+w* \\+w en|strong=\"H1934\"\\+w* \\+w lui|strong=\"H4481\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w la|strong=\"H3606\"\\+w* solidité \\+w du|strong=\"H4481\"\\+w* \\+w fer|strong=\"H6523\"\\+w*, \\+w selon|strong=\"H6310\"\\+w* \\+w que|strong=\"H3606\"\\+w* \\+w tu|strong=\"H1768\"\\+w* \\+w as|strong=\"H1768\"\\+w* \\+w vu|strong=\"H2370\"\\+w* \\+w du|strong=\"H4481\"\\+w* \\+w fer|strong=\"H6523\"\\+w* \\+w mêlé|strong=\"H6151\"\\+w* \\+w à|strong=\"H4481\"\\+w* l’\\+w argile|strong=\"H2635\"\\+w*.*",
+        "NAB": "The feet and toes you saw, partly of potter's tile and partly of iron, mean that it shall be a divided kingdom, but yet have some of the hardness of iron. As you saw the iron mixed with clay tile,",
+        "VAT_ES": "También has visto los pies y los dedos, en parte de arcilla de alfarero y en parte de hierro, porque ese será un reino dividido: habrá en él algo de la solidez de hierro, conforme a lo que has visto del hierro mezclado con la masa de arcilla;",
+        "CEI": "Come hai visto, i piedi e le dita erano in parte di argilla da vasaio e in parte di ferro: ciò significa che il regno sarà diviso, ma avrà la durezza del ferro unito all'argilla."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וְ/אֶצְבְּעָת֙ רַגְלַיָּ֔/א מנ/הון מִנְּ/הֵ֥ין פַּרְזֶ֖ל ו/מנ/הון וּ/מִנְּ/הֵ֣ין חֲסַ֑ף מִן קְצָ֤ת מַלְכוּתָ/א֙ תֶּהֱוֵ֣ה תַקִּיפָ֔ה וּ/מִנַּ֖/הּ תֶּהֱוֵ֥ה תְבִירָֽה׃",
+        "LXX": "καὶ οἱ δάκτυλοι τῶν ποδῶν μέρος μέν τι σιδηροῦν, μέρος δέ τι ὀστράκινον· μέρος δέ τι τῆς βασιλείας ἔσται ἰσχυρόν, καὶ μέρος τι ἔσται συντετριμμένον.",
+        "VUL": "Et digitos pedum ex parte ferreos, et ex parte fictiles : ex parte regnum erit solidum, et ex parte contritum.",
+        "SYN": "И как персты ног были частью из железа, а частью из глины, так и царство будет частью крепкое, частью хрупкое.",
+        "NEO": "\\+w Mais|strong=\"H0199\"\\+w* \\+w comme|strong=\"H4481\"\\+w* \\+w les|strong=\"H4481\"\\+w* \\+w orteils|strong=\"H0677\"\\+w* \\+w des|strong=\"H4481\"\\+w* \\+w pieds|strong=\"H7271\"\\+w* \\+w étaient|strong=\"H5975\"\\+w* \\+w en|strong=\"H1934\"\\+w* \\+w partie|strong=\"H4481\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w fer|strong=\"H6523\"\\+w* \\+w et|strong=\"H4481\"\\+w* \\+w en|strong=\"H1934\"\\+w* \\+w partie|strong=\"H4481\"\\+w* \\+w d|strong=\"H4481\"\\+w*’\\+w argile|strong=\"H2635\"\\+w*, \\+w ce|strong=\"H4481\"\\+w* \\+w royaume|strong=\"H4437\"\\+w* \\+w sera|strong=\"H1934\"\\+w* \\+w en|strong=\"H1934\"\\+w* \\+w partie|strong=\"H4481\"\\+w* \\+w fort|strong=\"H8624\"\\+w*, \\+w et|strong=\"H4481\"\\+w* \\+w il|strong=\"H4481\"\\+w* \\+w sera|strong=\"H1934\"\\+w* \\+w en|strong=\"H1934\"\\+w* \\+w partie|strong=\"H4481\"\\+w* \\+w fragile|strong=\"H8406\"\\+w*.*",
+        "NAB": "and the toes partly iron and partly tile, the kingdom shall be partly strong and partly fragile.",
+        "VAT_ES": "pero como los dedos de los pies son en parte de hierro y en parte de arcilla, una parte del reino será fuerte, y una parte frágil.",
+        "CEI": "Se le dita dei piedi erano in parte di ferro e in parte di argilla, ciò significa che una parte del regno sarà forte e l'altra fragile."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "די וְ/דִ֣י חֲזַ֗יְתָ פַּרְזְלָ/א֙ מְעָרַב֙ בַּ/חֲסַ֣ף טִינָ֔/א מִתְעָרְבִ֤ין לֶהֱוֺן֙ בִּ/זְרַ֣ע אֲנָשָׁ֔/א וְ/לָֽא לֶהֱוֺ֥ן דָּבְקִ֖ין דְּנָ֣ה עִם דְּנָ֑ה הֵֽא כְ/דִ֣י פַרְזְלָ֔/א לָ֥א מִתְעָרַ֖ב עִם חַסְפָּֽ/א׃",
+        "LXX": "καὶ ὡς εἶδες τὸν σίδηρον ἀναμεμιγμένον ἅμα τῷ πηλίνῳ ὀστράκῳ, καὶ συμμιγεῖς ἔσονται εἰς γένεσιν ἀνθρώπων· οὐκ ἔσονται δὲ ὁμονοοῦντες οὔτε εὐνοοῦντες ἀλλήλοις, ὥσπερ οὐδὲ ὁ σίδηρος δύναται συγκραθῆναι τῷ ὀστράκῳ.",
+        "VUL": "Quod autem vidisti ferrum mistum testæ ex luto, commiscebuntur quidem humano semine, sed non adhærebunt sibi, sicut ferrum misceri non potest testæ.",
+        "SYN": "А что ты видел железо, смешанное с глиною горшечною, это значит, что они смешаются через семя человеческое, но не сольются одно с другим, как железо не смешивается с глиною.",
+        "NEO": "\\+w Si|strong=\"H3863\"\\+w* \\+w tu|strong=\"H1768\"\\+w* \\+w as|strong=\"H1768\"\\+w* \\+w vu|strong=\"H2370\"\\+w* \\+w le|strong=\"H1768\"\\+w* \\+w fer|strong=\"H6523\"\\+w* \\+w mêlé|strong=\"H6151\"\\+w* \\+w à|strong=\"H5974\"\\+w* l’\\+w argile|strong=\"H2635\"\\+w*, c’\\+w est|strong=\"H1934\"\\+w* \\+w qu|strong=\"H1768\"\\+w*’ils \\+w seront|strong=\"H1934\"\\+w* mêlés \\+w de|strong=\"H3809\"\\+w* \\+w semence|strong=\"H2233\"\\+w* \\+w d|strong=\"H1768\"\\+w*’homme ; \\+w mais|strong=\"H0199\"\\+w* \\+w ils|strong=\"H1992\"\\+w* \\+w ne|strong=\"H3809\"\\+w* \\+w tiendront|strong=\"H5975\"\\+w* \\+w pas|strong=\"H3809\"\\+w* l’\\+w un|strong=\"H1934\"\\+w* \\+w à|strong=\"H5974\"\\+w* l’\\+w autre|strong=\"H1836\"\\+w*, \\+w de|strong=\"H3809\"\\+w* \\+w même|strong=\"H1888\"\\+w* \\+w que|strong=\"H1768\"\\+w* \\+w le|strong=\"H1768\"\\+w* \\+w fer|strong=\"H6523\"\\+w* \\+w ne|strong=\"H3809\"\\+w* \\+w peut|strong=\"H3809\"\\+w* s’allier \\+w avec|strong=\"H5974\"\\+w* l’\\+w argile|strong=\"H2635\"\\+w*.*",
+        "NAB": "The iron mixed with clay tile means that they shall seal their alliances by intermarriage, but they shall not stay united, any more than iron mixes with clay.",
+        "VAT_ES": "Tú has visto el hierro mezclado con la masa de arcilla, porque ellos se mezclarán entre sí por lazos matrimoniales, pero no llegarán a adherirse mutuamente, como el hierro no se mezcla con la arcilla.",
+        "CEI": "Il fatto d'aver visto il ferro mescolato all'argilla significa che le due parti si uniranno per via di matrimoni, ma non potranno diventare una cosa sola, come il ferro non si amalgama con l'argilla."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וּֽ/בְ/יוֹמֵי/ה֞וֹן דִּ֧י מַלְכַיָּ֣/א אִנּ֗וּן יְקִים֩ אֱלָ֨הּ שְׁמַיָּ֤/א מַלְכוּ֙ דִּ֤י לְ/עָלְמִין֙ לָ֣א תִתְחַבַּ֔ל וּ/מַ֨לְכוּתָ֔/ה לְ/עַ֥ם אָחֳרָ֖ן לָ֣א תִשְׁתְּבִ֑ק תַּדִּ֤ק וְ/תָסֵיף֙ כָּל אִלֵּ֣ין מַלְכְוָתָ֔/א וְ/הִ֖יא תְּק֥וּם לְ/עָלְמַיָּֽ/א׃",
+        "LXX": "καὶ ἐν τοῖς χρόνοις τῶν βασιλέων τούτων στήσει ὁ θεὸς τοῦ οὐρανοῦ βασιλείαν ἄλλην, ἥτις ἔσται εἰς τοὺς αἰῶνας καὶ οὐ φθαρήσεται· καὶ αὕτη ἡ βασιλεία ἄλλο ἔθνος οὐ μὴ ἐάσῃ, πατάξει δὲ καὶ ἀφανίσει τὰς βασιλείας ταύτας, καὶ αὐτὴ στήσεται εἰς τὸν αἰῶνα·",
+        "VUL": "In diebus autem regnorum illorum suscitabit Deus cæli regnum, quod in æternum non dissipabitur, et regnum ejus alteri populo non tradetur : comminuet autem, et consumet universa regna hæc, et ipsum stabit in æternum.",
+        "SYN": "И во дни тех царств Бог небесный воздвигнет царство, которое вовеки не разрушится, и царство это не будет передано другому народу; оно сокрушит и разрушит все царства, а само будет стоять вечно,",
+        "NEO": "\\+w Dans|strong=\"H8432\"\\+w* \\+w le|strong=\"H3606\"\\+w* \\+w temps|strong=\"H3118\"\\+w* \\+w de|strong=\"H4430\"\\+w* \\+w ces|strong=\"H3606\"\\+w* \\+w rois|strong=\"H4430\"\\+w*, \\+w le|strong=\"H3606\"\\+w* \\+w Dieu|strong=\"H0430\"\\+w* \\+w du|strong=\"H3118\"\\+w* \\+w ciel|strong=\"H8065\"\\+w* \\+w suscitera|strong=\"H6966\"\\+w* \\+w un|strong=\"H6966\"\\+w* \\+w royaume|strong=\"H4437\"\\+w* \\+w qui|strong=\"H5972\"\\+w* \\+w ne|strong=\"H3809\"\\+w* \\+w sera|strong=\"H4437\"\\+w* \\+w jamais|strong=\"H3809\"\\+w* \\+w détruit|strong=\"H2255\"\\+w*, \\+w et|strong=\"H1855\"\\+w* \\+w dont|strong=\"H1768\"\\+w* \\+w la|strong=\"H3606\"\\+w* \\+w domination|strong=\"H7985\"\\+w* \\+w ne|strong=\"H3809\"\\+w* \\+w sera|strong=\"H4437\"\\+w* \\+w pas|strong=\"H3809\"\\+w* \\+w abandonnée|strong=\"H5800\"\\+w* \\+w à|strong=\"H4430\"\\+w* \\+w un|strong=\"H6966\"\\+w* \\+w autre|strong=\"H3606\"\\+w* \\+w peuple|strong=\"H5972\"\\+w* ; \\+w il|strong=\"H1732\"\\+w* \\+w brisera|strong=\"H1855\"\\+w* \\+w et|strong=\"H1855\"\\+w* \\+w anéantira|strong=\"H5487\"\\+w* \\+w tous|strong=\"H3606\"\\+w* \\+w ces|strong=\"H3606\"\\+w* royaumes-là, \\+w et|strong=\"H1855\"\\+w* \\+w lui-même|strong=\"H5674\"\\+w* \\+w subsistera|strong=\"H6966\"\\+w* \\+w à|strong=\"H4430\"\\+w* \\+w jamais|strong=\"H3809\"\\+w*,*",
+        "NAB": "In the lifetime of those kings the God of heaven will set up a kingdom that shall never be destroyed or delivered up to another people; rather, it shall break in pieces all these kingdoms and put an end to them, and it shall stand forever.",
+        "VAT_ES": "Y en los días de estos reyes, el Dios del cielo suscitará un reino que nunca será destruido y cuya realeza no pasará a otro pueblo: él pulverizará y aniquilará a todos esos reinos, y él mismo subsistirá para siempre,",
+        "CEI": "Al tempo di questi re, il Dio del cielo farà sorgere un regno che non sarà mai distrutto e non sarà trasmesso ad altro popolo: stritolerà e annienterà tutti gli altri regni, mentre esso durerà per sempre."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "כָּ/ל קֳבֵ֣ל דִּֽי חֲזַ֡יְתָ דִּ֣י מִ/טּוּרָ/א֩ אִתְגְּזֶ֨רֶת אֶ֜בֶן דִּי לָ֣א בִ/ידַ֗יִן וְ֠/הַדֶּקֶת פַּרְזְלָ֨/א נְחָשָׁ֤/א חַסְפָּ/א֙ כַּסְפָּ֣/א וְ/דַהֲבָ֔/א אֱלָ֥הּ רַב֙ הוֹדַ֣ע לְ/מַלְכָּ֔/א מָ֛ה דִּ֥י לֶהֱוֵ֖א אַחֲרֵ֣י דְנָ֑ה וְ/יַצִּ֥יב חֶלְמָ֖/א וּ/מְהֵימַ֥ן פִּשְׁרֵֽ/הּ׃",
+        "LXX": "καθάπερ ἑώρακας ἐξ ὄρους τμηθῆναι λίθον ἄνευ χειρῶν, καὶ συνηλόησε τὸ ὄστρακον τὸν σίδηρον καὶ τὸν χαλκὸν καὶ τὸν ἄργυρον καὶ τὸν χρυσόν. ὁ θεὸς ὁ μέγας ἐσήμανε τῷ βασιλεῖ τὰ ἐσόμενα ἐπ’ ἐσχάτων τῶν ἡμερῶν· καὶ ἀκριβὲς τὸ ὅραμα, καὶ πιστὴ ἡ τούτου κρίσις.",
+        "VUL": "Secundum quod vidisti, quod de monte abscissus est lapis sine manibus, et comminuit testam, et ferrum, et æs, et argentum, et aurum, Deus magnus ostendit regi quæ ventura sunt postea : et verum est somnium, et fidelis interpretatio ejus.",
+        "SYN": "так как ты видел, что камень отторгнут был от горы не руками и раздробил железо, медь, глину, серебро и золото. Великий Бог дал знать царю, что будет после сего. И верен этот сон, и точно истолкование его!",
+        "NEO": "\\+w selon|strong=\"H6310\"\\+w* \\+w que|strong=\"H4101\"\\+w* \\+w tu|strong=\"H1768\"\\+w* \\+w as|strong=\"H4430\"\\+w* \\+w vu|strong=\"H2370\"\\+w* \\+w qu|strong=\"H6903\"\\+w*’\\+w une|strong=\"H1934\"\\+w* \\+w pierre|strong=\"H0068\"\\+w* \\+w a|strong=\"H4430\"\\+w* \\+w été|strong=\"H3809\"\\+w* \\+w détachée|strong=\"H6605\"\\+w* \\+w de|strong=\"H4430\"\\+w* \\+w la|strong=\"H3606\"\\+w* \\+w montagne|strong=\"H2906\"\\+w*+ 2:45 \\+it Une pierre détachée\\+it*, emblème du Messie, descendu du ciel. — \\+it À brisé le 1 \\+sup er\\+sup*\\+it* etc., la puissance du monde en tant qu’opposée à Dieu, et représentée par les monarchies païennes.*, \\+w non|strong=\"H3808\"\\+w* \\+w par|strong=\"H3027\"\\+w* \\+w une|strong=\"H1934\"\\+w* \\+w main|strong=\"H3028\"\\+w*, \\+w et|strong=\"H1855\"\\+w* \\+w qu|strong=\"H6903\"\\+w*’elle \\+w a|strong=\"H4430\"\\+w* \\+w brisé|strong=\"H1855\"\\+w* \\+w le|strong=\"H3606\"\\+w* \\+w fer|strong=\"H6523\"\\+w*, l’\\+w airain|strong=\"H5174\"\\+w*, l’\\+w argile|strong=\"H2635\"\\+w*, l’\\+w argent|strong=\"H3702\"\\+w* \\+w et|strong=\"H1855\"\\+w* l’\\+w or|strong=\"H1722\"\\+w*.*",
+        "NAB": "That is the meaning of the stone you saw hewn from the mountain without a hand being put to it, which broke in pieces the tile, iron, bronze, silver, and gold. The great God has revealed to the king what shall be in the future; this is exactly what you dreamed, and its meaning is sure.\"",
+        "VAT_ES": "porque tú has visto, que una piedra se desprendía de la montaña, sin la intervención de ninguna mano, y ella pulverizó el hierro, el bronce, la arcilla, la plata y el oro. El Dios grande hace conocer al rey lo que va a suceder en adelante. El sueño es cierto y su interpretación digna de fe».",
+        "CEI": "Questo significa quella pietra che tu hai visto staccarsi dal monte, non per mano di uomo, e che ha stritolato il ferro, il bronzo, l'argilla, l'argento e l'oro. Il Dio grande ha rivelato al re quello che avverrà da questo tempo in poi. Il sogno è vero e degna di fede ne è la spiegazione\"."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "בֵּ֠/אדַיִן מַלְכָּ֤/א נְבֽוּכַדְנֶצַּר֙ נְפַ֣ל עַל אַנְפּ֔וֹ/הִי וּ/לְ/דָנִיֵּ֖אל סְגִ֑ד וּ/מִנְחָה֙ וְ/נִ֣יחֹחִ֔ין אֲמַ֖ר לְ/נַסָּ֥כָה לֵֽ/הּ׃",
+        "LXX": "Τότε Ναβουχοδονοσὸρ ὁ βασιλεὺς πεσὼν ἐπὶ πρόσωπον χαμαὶ προσεκύνησεν τῷ Δανιήλ, καὶ ἐπέταξε θυσίας καὶ σπονδὰς ποιῆσαι αὐτῷ.",
+        "VUL": "Tunc rex Nabuchodonosor cecidit in faciem suam, et Danielem adoravit, et hostias, et incensum præcepit ut sacrificarent ei.",
+        "SYN": "Тогда царь Навуходоносор пал на лице свое и поклонился Даниилу, и велел принести ему дары и благовонные курения.",
+        "NEO": "\\+w Alors|strong=\"H0116\"\\+w* \\+w le|strong=\"H5922\"\\+w* \\+w roi|strong=\"H4430\"\\+w* Nabuchodonosor \\+w tomba|strong=\"H5308\"\\+w* \\+w sur|strong=\"H5922\"\\+w* \\+w sa|strong=\"H5922\"\\+w* \\+w face|strong=\"H6440\"\\+w* \\+w et|strong=\"H4430\"\\+w* \\+w se|strong=\"H1841\"\\+w* \\+w prosterna|strong=\"H5457\"\\+w* \\+w devant|strong=\"H5457\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w*, \\+w et|strong=\"H4430\"\\+w* \\+w il|strong=\"H5922\"\\+w* \\+w ordonna|strong=\"H6680\"\\+w* qu’\\+w on|strong=\"H1841\"\\+w* \\+w lui|strong=\"H5922\"\\+w* \\+w offrit|strong=\"H5260\"\\+w* \\+w des|strong=\"H4430\"\\+w* oblations \\+w et|strong=\"H4430\"\\+w* \\+w des|strong=\"H4430\"\\+w* \\+w parfums|strong=\"H5208\"\\+w*.*",
+        "NAB": "Then King Nebuchadnezzar fell down and worshiped Daniel and ordered sacrifice and incense offered to him.",
+        "VAT_ES": "Entonces el rey Nabucodonosor cayó con el rostro en tierra, se postró delante de Daniel y ordenó que le ofrecieran oblaciones y perfumes de aroma agradable.",
+        "CEI": "Allora il re Nabucodònosor piegò la faccia a terra, si prostrò davanti a Daniele e ordinò che gli si offrissero sacrifici e incensi."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "עָנֵה֩ מַלְכָּ֨/א לְ/דָנִיֵּ֜אל וְ/אָמַ֗ר מִן קְשֹׁט֙ דִּ֣י אֱלָהֲ/כ֗וֹן ה֣וּא אֱלָ֧הּ אֱלָהִ֛ין וּ/מָרֵ֥א מַלְכִ֖ין וְ/גָלֵ֣ה רָזִ֑ין דִּ֣י יְכֵ֔לְתָּ לְ/מִגְלֵ֖א רָזָ֥/ה דְנָֽה׃",
+        "LXX": "καὶ ἐκφωνήσας ὁ βασιλεὺς πρὸς τὸν Δανιὴλ εἶπεν Ἐπ’ ἀληθείας ἐστὶν ὁ θεὸς ὑμῶν θεὸς τῶν θεῶν καὶ κύριος τῶν βασιλέων, ὁ ἐκφαίνων μυστήρια κρυπτὰ μόνος· ὅτι ἐδυνάσθης δηλῶσαι τὸ μυστήριον τοῦτο.",
+        "VUL": "Loquens ergo rex, ait Danieli : Vere Deus vester Deus deorum est, et Dominus regum, et revelans mysteria : quoniam tu potuisti aperire hoc sacramentum.",
+        "SYN": "И сказал царь Даниилу: истинно Бог ваш есть Бог богов и Владыка царей, открывающий тайны, когда ты мог открыть эту тайну!",
+        "NEO": "\\+w Le|strong=\"H4481\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w parla|strong=\"H1696\"\\+w* \\+w ensuite|strong=\"H0310\"\\+w* \\+w à|strong=\"H4481\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w* \\+w et|strong=\"H6032\"\\+w* \\+w dit|strong=\"H0559\"\\+w* : « \\+w Vraiment|strong=\"H0552\"\\+w* \\+w votre|strong=\"H1768\"\\+w* \\+w Dieu|strong=\"H0430\"\\+w* \\+w est|strong=\"H3068\"\\+w* \\+w le|strong=\"H4481\"\\+w* \\+w Dieu|strong=\"H0430\"\\+w* \\+w des|strong=\"H4481\"\\+w* \\+w dieux|strong=\"H0430\"\\+w*, \\+w le|strong=\"H4481\"\\+w* \\+w seigneur|strong=\"H4756\"\\+w* \\+w des|strong=\"H4481\"\\+w* \\+w rois|strong=\"H4430\"\\+w* \\+w et|strong=\"H6032\"\\+w* \\+w le|strong=\"H4481\"\\+w* révélateur \\+w des|strong=\"H4481\"\\+w* \\+w secrets|strong=\"H7328\"\\+w*, \\+w puisque|strong=\"H0310\"\\+w* \\+w tu|strong=\"H1768\"\\+w* \\+w as|strong=\"H4430\"\\+w* \\+w pu|strong=\"H3202\"\\+w* \\+w révéler|strong=\"H3045\"\\+w* \\+w ce|strong=\"H1836\"\\+w* \\+w secret|strong=\"H7328\"\\+w*. »*",
+        "NAB": "To Daniel the king said, \"Truly your God is the God of gods and Lord of kings and a revealer of mysteries; that is why you were able to reveal this mystery.\"",
+        "VAT_ES": "El rey se dirigió a Daniel y le dijo: «Realmente, el Dios de ustedes es el Dios de los dioses, el Señor de los reyes, y el que revela los misterios, porque tú has podido revelarme este misterio».",
+        "CEI": "Quindi rivolto a Daniele gli disse: \"Certo, il vostro Dio è il Dio degli dei, il Signore dei re e il rivelatore dei misteri, poiché tu hai potuto svelare questo mistero\"."
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "אֱדַ֨יִן מַלְכָּ֜/א לְ/דָנִיֵּ֣אל רַבִּ֗י וּ/מַתְּנָ֨ן רַבְרְבָ֤ן שַׂגִּיאָן֙ יְהַב לֵ֔/הּ וְ/הַ֨שְׁלְטֵ֔/הּ עַ֖ל כָּל מְדִינַ֣ת בָּבֶ֑ל וְ/רַב סִגְנִ֔ין עַ֖ל כָּל חַכִּימֵ֥י בָבֶֽל׃",
+        "LXX": "τότε ὁ βασιλεὺς Ναβουχοδονοσὸρ Δανιὴλ μεγαλύνας καὶ δοὺς δωρεὰς μεγάλας καὶ πολλὰς κατέστησεν ἐπὶ τῶν πραγμάτων τῆς Βαβυλωνίας, καὶ ἀπέδειξεν αὐτὸν ἄρχοντα καὶ ἡγούμενον πάντων τῶν σοφιστῶν Βαβυλωνίας.",
+        "VUL": "Tunc rex Danielem in sublime extulit, et munera multa et magna dedit ei : et constituit eum principem super omnes provincias Babylonis, et præfectum magistratuum super cunctos sapientes Babylonis.",
+        "SYN": "Тогда возвысил царь Даниила и дал ему много больших подарков, и поставил его над всею областью Вавилонскою и главным начальником над всеми мудрецами Вавилонскими.",
+        "NEO": "\\+w Alors|strong=\"H0116\"\\+w* \\+w le|strong=\"H5922\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w éleva|strong=\"H7236\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w* \\+w et|strong=\"H7236\"\\+w* \\+w lui|strong=\"H5922\"\\+w* \\+w fit|strong=\"H4430\"\\+w* \\+w de|strong=\"H4083\"\\+w* \\+w nombreux|strong=\"H7690\"\\+w* \\+w et|strong=\"H7236\"\\+w* \\+w riches|strong=\"H7260\"\\+w* \\+w présents|strong=\"H4978\"\\+w* ; \\+w il|strong=\"H5922\"\\+w* l’établit \\+w gouverneur|strong=\"H6346\"\\+w* \\+w sur|strong=\"H5922\"\\+w* \\+w toute|strong=\"H3606\"\\+w* \\+w la|strong=\"H3606\"\\+w* \\+w province|strong=\"H4083\"\\+w* \\+w de|strong=\"H4083\"\\+w* \\+w Babylone|strong=\"H0894\"\\+w* \\+w et|strong=\"H7236\"\\+w* \\+w chef|strong=\"H7229\"\\+w* \\+w suprême|strong=\"H5460\"\\+w* \\+w sur|strong=\"H5922\"\\+w* \\+w tous|strong=\"H3606\"\\+w* \\+w les|strong=\"H3606\"\\+w* \\+w sages|strong=\"H2445\"\\+w* \\+w de|strong=\"H4083\"\\+w* \\+w Babylone|strong=\"H0894\"\\+w*.*",
+        "NAB": "He advanced Daniel to a high post, gave him many generous presents, made him ruler of the whole province of Babylon and chief prefect over all the wise men of Babylon.",
+        "VAT_ES": "Luego el rey confirió a Daniel un alto rango y le otorgó numerosos y magníficos regalos. Le dio autoridad sobre toda la provincia de Babilonia y lo hizo jefe de todos los sabios de Babilonia.",
+        "CEI": "Il re esaltò Daniele e gli fece molti preziosi regali, lo costituì governatore di tutta la provincia di Babilonia e capo di tutti i saggi di Babilonia;"
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "וְ/דָנִיֵּאל֙ בְּעָ֣א מִן מַלְכָּ֔/א וּ/מַנִּ֗י עַ֤ל עֲבִֽידְתָּ/א֙ דִּ֚י מְדִינַ֣ת בָּבֶ֔ל לְ/שַׁדְרַ֥ךְ מֵישַׁ֖ךְ וַ/עֲבֵ֣ד נְג֑וֹ וְ/דָנִיֵּ֖אל בִּ/תְרַ֥ע מַלְכָּֽ/א׃",
+        "LXX": "καὶ Δανιὴλ ἠξίωσε τὸν βασιλέα ἵνα κατασταθῶσιν ἐπὶ τῶν πραγμάτων τῆς Βαβυλωνίας Σεδράχ, Μισάχ, Ἀβδεναγώ· καὶ Δανιὴλ ἦν ἐν τῇ βασιλικῇ αὐλῇ.",
+        "VUL": "Daniel autem postulavit a rege, et constituit super opera provinciæ Babylonis Sidrach, Misach, et Abdenago : ipse autem Daniel erat in foribus regis.",
+        "SYN": "Но Даниил просил царя, и он поставил Седраха, Мисаха и Авденаго над делами страны Вавилонской, а Даниил остался при дворе царя.",
+        "NEO": "\\+w A|strong=\"H5922\"\\+w* \\+w la|strong=\"H4481\"\\+w* \\+w prière|strong=\"H8605\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w*, \\+w le|strong=\"H5922\"\\+w* \\+w roi|strong=\"H4430\"\\+w* \\+w commit|strong=\"H6213\"\\+w* \\+w aux|strong=\"H5922\"\\+w* \\+w affaires|strong=\"H1697\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w la|strong=\"H4481\"\\+w* \\+w province|strong=\"H4083\"\\+w* \\+w de|strong=\"H4481\"\\+w* \\+w Babylone|strong=\"H0894\"\\+w* Sidrac, Misac \\+w et|strong=\"H4430\"\\+w* Abdénago ; \\+w et|strong=\"H4430\"\\+w* \\+w Daniel|strong=\"H1841\"\\+w* \\+w demeura|strong=\"H3427\"\\+w* \\+w à|strong=\"H5922\"\\+w* \\+w la|strong=\"H4481\"\\+w* \\+w cour|strong=\"H8651\"\\+w*+ 2:49 \\+it Et Daniel demeura à la cour\\+it* ; m. à m., \\+it et Daniel demeura à la porte du roi\\+it*.*.*",
+        "NAB": "At Daniel's request the king made Shadrach, Meshach, and Abednego administrators of the province of Babylon, while Daniel himself remained at the king's court.",
+        "VAT_ES": "Daniel rogó al rey que pusiera al frente de la administración de la provincia de Babilonia a Sadrac, Mesac y Abed Negó, y él permaneció en la corte del rey.",
+        "CEI": "su richiesta di Daniele, il re fece amministratori della provincia di Babilonia, Sadràch, Mesàch e Abdènego. Daniele rimase alla corte del re."
+      }
+    }
+  }
+}

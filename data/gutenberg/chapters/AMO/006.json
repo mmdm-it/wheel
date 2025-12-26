@@ -1,0 +1,253 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "AMO_006",
+  "book_key": "AMO",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "ה֚וֹי הַ/שַּׁאֲנַנִּ֣ים בְּ/צִיּ֔וֹן וְ/הַ/בֹּטְחִ֖ים בְּ/הַ֣ר שֹׁמְר֑וֹן נְקֻבֵי֙ רֵאשִׁ֣ית הַ/גּוֹיִ֔ם וּ/בָ֥אוּ לָ/הֶ֖ם בֵּ֥ית יִשְׂרָאֵֽל׃",
+        "VUL": "[Væ qui opulenti estis in Sion,/ et confiditis in monte Samariæ :/ optimates capita populorum,/ ingredientes pompatice domum Israël !/",
+        "SYN": "Горе беспечным на Сионе и надеющимся на гору Самарийскую именитым первенствующего народа, к которым приходит дом Израиля!",
+        "NEO": "Malheur à ceux qui vivent tranquilles dans Sion, et en sécurité sur la montagne de Samarie, les plus nobles du premier des peuples, auprès desquels va la maison d’Israël !",
+        "NAB": "Woe to the complacent in Zion, to the overconfident on the mount of Samaria, Leaders of a nation favored from the first, to whom the people of Israel have recourse!",
+        "VAT_ES": "&iexcl;Ay de los que se sienten seguros en Sión y de los que viven confiados en la montaña de Samaría, esos notables de la primera de las naciones, a los que acude la casa de Israel!",
+        "CEI": "Guai agli spensierati di Sion e a quelli che si considerano sicuri sulla montagna di Samaria! Questi notabili della prima tra le nazioni, ai quali si recano gli Israeliti!"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עִבְר֤וּ כַֽלְנֵה֙ וּ/רְא֔וּ וּ/לְכ֥וּ מִ/שָּׁ֖ם חֲמַ֣ת רַבָּ֑ה וּ/רְד֣וּ גַת פְּלִשְׁתּ֗ים הֲ/טוֹבִים֙ מִן הַ/מַּמְלָכ֣וֹת הָ/אֵ֔לֶּה אִם רַ֥ב גְּבוּלָ֖/ם מִ/גְּבֻלְ/כֶֽם׃",
+        "VUL": "Transite in Chalane, et videte,/ et ite inde in Emath magnam,/ et descendite in Geth Palæstinorum,/ et ad optima quæque regna horum :/ si latior terminus eorum termino vestro est./",
+        "SYN": "Пройдите в Калне и посмотрите, оттуда перейдите в Емаф великий и спуститесь в Геф Филистимский: не лучше ли они сих царств? не обширнее ли пределы их пределов ваших?",
+        "NEO": "Passez à Calné et voyez ; allez de là à Hamath la grande ; descendez à Geth des Philistins ; Ces villes sont-elles plus prospères que ces royaumes, et leur territoire est-il plus étendu que le vôtre ?",
+        "NAB": "Pass over to Calneh and see, go from there to Hamath the great, and down to Gath of the Philistines! Are you better than these kingdoms, or is your territory wider than theirs?",
+        "VAT_ES": "Pasen por Calné y vean, de allí, vayan a Jamat la grande, bajen después a Gat de Filistea. &iquest;Son ellas más prósperas que estos reinos, y su territorio es más grande que el de ustedes?",
+        "CEI": "Passate a Calnè e guardate, andate di lì ad Amat la grande e scendete a Gat dei Filistei: siete voi forse migliori di quei regni o è più grande il vostro territorio del loro?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הַֽ/מְנַדִּ֖ים לְ/י֣וֹם רָ֑ע וַ/תַּגִּישׁ֖וּ/ן שֶׁ֥בֶת חָמָֽס׃",
+        "VUL": "Qui separati estis in diem malum,/ et appropinquatis solio iniquitatis ;/",
+        "SYN": "Вы, которые день бедствия считаете далеким и приближаете торжество насилия, -",
+        "NEO": "Vous éloignez le jour du malheur, et vous faites approcher le règne de la violence !",
+        "NAB": "You would put off the evil day, yet you hasten the reign of violence!",
+        "VAT_ES": "&iexcl;Ustedes creen alejar el día de la desgracia y apresuran el reinado de la violencia!",
+        "CEI": "Voi credete di ritardare il giorno fatale e affrettate il sopravvento della violenza."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הַ/שֹּֽׁכְבִים֙ עַל מִטּ֣וֹת שֵׁ֔ן וּ/סְרֻחִ֖ים עַל עַרְשׂוֹתָ֑/ם וְ/אֹכְלִ֤ים כָּרִים֙ מִ/צֹּ֔אן וַ/עֲגָלִ֖ים מִ/תּ֥וֹךְ מַרְבֵּֽק׃",
+        "VUL": "qui dormitis in lectis eburneis,/ et lascivitis in stratis vestris ;/ qui comeditis agnum de grege,/ et vitulos de medio armenti ;/",
+        "SYN": "вы, которые лежите на ложах из слоновой кости и нежитесь на постелях ваших, едите лучших овнов из стада и тельцов с тучного пастбища,",
+        "NEO": "Ils sont couchés sur des lits d’ivoire, et s’étendent sur leurs divans ; ils mangent les agneaux du troupeau, et les veaux engraissés dans l’étable.",
+        "NAB": "Lying upon beds of ivory, stretched comfortably on their couches, They eat lambs taken from the flock, and calves from the stall!",
+        "VAT_ES": "Acostados en lechos de marfil y apoltronados en sus divanes, comen los corderos del rebaño y los terneros sacados del establo.",
+        "CEI": "Essi su letti d'avorio e sdraiati sui loro divani mangiano gli agnelli del gregge e i vitelli cresciuti nella stalla."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הַ/פֹּרְטִ֖ים עַל פִּ֣י הַ/נָּ֑בֶל כְּ/דָוִ֕יד חָשְׁב֥וּ לָ/הֶ֖ם כְּלֵי שִֽׁיר׃",
+        "VUL": "qui canitis ad vocem psalterii,/ sicut David putaverunt se habere vasa cantici,/",
+        "SYN": "поете под звуки гуслей, думая, что владеете музыкальным орудием, как Давид,",
+        "NEO": "Ils folâtrent au son de la harpe ; comme David, ils ont inventé des instruments de musique.",
+        "NAB": "Improvising to the music of the harp, like David, they devise their own accompaniment.",
+        "VAT_ES": "Improvisan al son del arpa, y como David, inventan instrumentos musicales;",
+        "CEI": "Canterellano al suono dell'arpa, si pareggiano a David negli strumenti musicali;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "הַ/שֹּׁתִ֤ים בְּ/מִזְרְקֵי֙ יַ֔יִן וְ/רֵאשִׁ֥ית שְׁמָנִ֖ים יִמְשָׁ֑חוּ וְ/לֹ֥א נֶחְל֖וּ עַל שֵׁ֥בֶר יוֹסֵֽף׃",
+        "VUL": "bibentes vinum in phialis,/ et optimo unguento delibuti,/ et nihil patiebantur super contritione Joseph./",
+        "SYN": "пьете из чаш вино, мажетесь наилучшими мастями, и не болезнуете о бедствии Иосифа!",
+        "NEO": "Ils boivent le vin dans de larges coupes, ils se parfument avec les huiles les plus exquises. Et ils ne sont pas malades de la plaie de Joseph.",
+        "NAB": "They drink wine from bowls and anoint themselves with the best oils; yet they are not made ill by the collapse of Joseph!",
+        "VAT_ES": "beben el vino en grandes copas y se ungen con los mejores aceites, pero no se afligen por la ruina de José.",
+        "CEI": "bevono il vino in larghe coppe e si ungono con gli unguenti più raffinati, ma della rovina di Giuseppe non si preoccupano."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "לָ/כֵ֛ן עַתָּ֥ה יִגְל֖וּ בְּ/רֹ֣אשׁ גֹּלִ֑ים וְ/סָ֖ר מִרְזַ֥ח סְרוּחִֽים׃",
+        "VUL": "Quapropter nunc migrabunt in capite transmigrantium,/ et auferetur factio lascivientium./",
+        "SYN": "За то ныне пойдут они в плен во главе пленных, и кончится ликование изнеженных.",
+        "NEO": "C’est pourquoi ils iront en exil, à la tête des captifs, et les cris de joie des voluptueux disparaîtront.",
+        "NAB": "Therefore, now they shall be the first to go into exile, and their wanton revelry shall be done away with.",
+        "VAT_ES": "Por eso, ahora irán al cautiverio al frente de los deportados, y se terminará la orgía de los libertinos.",
+        "CEI": "Perciò andranno in esilio in testa ai deportati e cesserà l'orgia dei buontemponi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "נִשְׁבַּע֩ אֲדֹנָ֨/י יְהוִ֜ה בְּ/נַפְשׁ֗/וֹ נְאֻם יְהוָה֙ אֱלֹהֵ֣י צְבָא֔וֹת מְתָאֵ֤ב אָֽנֹכִי֙ אֶת גְּא֣וֹן יַֽעֲקֹ֔ב וְ/אַרְמְנֹתָ֖י/ו שָׂנֵ֑אתִי וְ/הִסְגַּרְתִּ֖י עִ֥יר וּ/מְלֹאָֽ/הּ׃",
+        "VUL": "Juravit Dominus Deus in anima sua,/ dicit Dominus Deus exercituum :/ Detestor ego superbiam Jacob,/ et domos ejus odi,/ et tradam civitatem cum habitatoribus suis./",
+        "SYN": "Клянется Господь Бог Самим Собою, и так говорит Господь Бог Саваоф: гнушаюсь высокомерием Иакова и ненавижу чертоги его, и предам город и все, что наполняет его.",
+        "NEO": "Le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** l’a juré par lui-même, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu des armées : J’ai en abomination l’orgueil de Jacob, et je hais ses palais ; je livrerai la ville et ce qu’elle renferme.",
+        "NAB": "The Lord GOD has sworn by his very self, say I, the LORD, the God of hosts: I abhor the pride of Jacob, I hate his castles, and I give over the city with everything in it;",
+        "VAT_ES": "El Señor lo ha jurado por sí mismo –oráculo del Señor, Dios de los ejércitos–: Yo aborrezco el orgullo de Jacob, y detesto sus palacios; entregaré la ciudad y todo lo que hay en ella.",
+        "CEI": "Ha giurato il Signore Dio, per se stesso! Oracolo del Signore, Dio degli eserciti. Detesto l'orgoglio di Giacobbe, odio i suoi palazzi, consegnerò la città e quanto contiene."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה אִם יִוָּ֨תְר֜וּ עֲשָׂרָ֧ה אֲנָשִׁ֛ים בְּ/בַ֥יִת אֶחָ֖ד וָ/מֵֽתוּ׃",
+        "VUL": "Quod si reliqui fuerint decem viri in domo una,/ et ipsi morientur./",
+        "SYN": "И будет: если в каком доме останется десять человек, то умрут и они,",
+        "NEO": "Et s’il reste dix hommes dans une seule maison, ils mourront.",
+        "NAB": "Should there remain ten men in a single house, these shall die.",
+        "VAT_ES": "Y si quedan diez hombres en una sola casa, morirán.",
+        "CEI": "Se sopravviveranno in una sola casa dieci uomini, anch'essi moriranno."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וּ/נְשָׂא֞/וֹ דּוֹד֣/וֹ וּ/מְסָרְפ֗/וֹ לְ/הוֹצִ֣יא עֲצָמִים֮ מִן הַ/בַּיִת֒ וְ/אָמַ֞ר לַ/אֲשֶׁ֨ר בְּ/יַרְכְּתֵ֥י הַ/בַּ֛יִת הַ/ע֥וֹד עִמָּ֖/ךְ וְ/אָמַ֣ר אָ֑פֶס וְ/אָמַ֣ר הָ֔ס כִּ֛י לֹ֥א לְ/הַזְכִּ֖יר בְּ/שֵׁ֥ם יְהוָֽה׃",
+        "VUL": "Et tollet eum propinquus suus, et comburet eum,/ ut efferat ossa de domo ;/ et dicet ei, qui in penetralibus domus est :/ Numquid adhuc est penes te ?/",
+        "SYN": "и возьмет их родственник их или сожигатель, чтобы вынести кости их из дома, и скажет находящемуся при доме: есть ли еще у тебя кто? Тот ответит: нет никого. И скажет сей: молчи! ибо нельзя упоминать имени Господня.",
+        "NEO": "Un parent avec celui qui brûle les cadavres enlèvera le mort, et emportera de la maison les ossements ; et l’un dira à celui qui est au fond de la maison : « Y en a-t-il encore avec toi ? » Il répondra : « Plus personne ! » Et le premier dira : « Silence ! » Car il ne faut pas prononcer le nom de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Only a few shall be left to carry the dead out of the houses; If one says to a man inside a house, \"Is anyone with you?\" and he answers, \"No one,\" Then he shall say, \"Silence!\" for no one must mention the name of the LORD.",
+        "VAT_ES": "Sólo quedarán unos pocos fugitivos para sacar los huesos de la casa; y si se pregunta al que está en el fondo de la casa: «&iquest;Hay alguien todavía contigo?», él responderá: «Nadie», y añadirá: «&iexcl;Silencio! &iexcl;No hay que pronunciar ahora el nombre del Señor!».",
+        "CEI": "Lo prenderà il suo parente e chi prepara il rogo, portando via le ossa dalla casa, egli dirà a chi è in fondo alla casa: \"Ce n'è ancora con te?\". L'altro risponderà: \"No\". Quegli dirà: \"Zitto!\": non si deve menzionare il nome del Signore."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּֽי הִנֵּ֤ה יְהוָה֙ מְצַוֶּ֔ה וְ/הִכָּ֛ה הַ/בַּ֥יִת הַ/גָּד֖וֹל רְסִיסִ֑ים וְ/הַ/בַּ֥יִת הַ/קָּטֹ֖ן בְּקִעִֽים׃",
+        "VUL": "Et respondebit : Finis est./ Et dicet ei : Tace,/ et non recorderis nominis Domini./",
+        "SYN": "Ибо вот, Господь даст повеление и поразит большие дома расселинами, а малые дома - трещинами.",
+        "NEO": "Car voici que \\+w Yahweh|strong=\"H3068\"\\+w** commande, et il fait tomber en ruines la grande maison, et en débris la petite maison.",
+        "NAB": "Indeed, the LORD has given the command to shatter the great house to bits, and reduce the small house to rubble.",
+        "VAT_ES": "Porque el Señor da una orden y bajo sus golpes, la casa grande se derrumba y la pequeña se agrieta.",
+        "CEI": "Poiché ecco: il Signore comanda di fare a pezzi la casa grande e quella piccola di ridurla in frantumi."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "הַ/יְרֻצ֤וּ/ן בַּ/סֶּ֨לַע֙ סוּסִ֔ים אִֽם יַחֲר֖וֹשׁ בַּ/בְּקָרִ֑ים כִּֽי הֲפַכְתֶּ֤ם לְ/רֹאשׁ֙ מִשְׁפָּ֔ט וּ/פְרִ֥י צְדָקָ֖ה לְ/לַעֲנָֽה׃",
+        "VUL": "Quia ecce Dominus mandabit,/ et percutiet domum majorem ruinis,/ et domum minorem scissionibus./",
+        "SYN": "Бегают ли кони по скале? можно ли распахивать ее волами? Вы между тем суд превращаете в яд и плод правды в горечь;",
+        "NEO": "Les chevaux courent-ils sur le rocher, où y laboure-t-on avec des bœufs, que vous avez changé le droit en poison, et le fruit de la justice en absinthe ?",
+        "NAB": "Can horses run across a cliff? or can one plow the sea with oxen? Yet you have turned judgment into gall, and the fruit of justice into wormwood.",
+        "VAT_ES": "&iquest;Acaso galopan los caballos por las rocas o se ara con bueyes en el mar? Pero ustedes convierten el derecho en veneno y el fruto de la justicia en ajenjo.",
+        "CEI": "Corrono forse i cavalli sulle rocce e si ara il mare con i buoi? Poiché voi cambiate il diritto in veleno e il frutto della giustizia in assenzio."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הַ/שְּׂמֵחִ֖ים לְ/לֹ֣א דָבָ֑ר הָ/אֹ֣מְרִ֔ים הֲ/ל֣וֹא בְ/חָזְקֵ֔/נוּ לָקַ֥חְנוּ לָ֖/נוּ קַרְנָֽיִם׃",
+        "VUL": "Numquid currere queunt in petris equi,/ aut arari potest in bubalis ?/ quoniam convertistis in amaritudinem judicium,/ et fructum justitiæ in absinthium./",
+        "SYN": "вы, которые восхищаетесь ничтожными вещами и говорите: \"не своею ли силою мы приобрели себе могущество?\"",
+        "NEO": "Vous vous réjouissez de ce qui n’est rien, vous dites : « N’est-ce pas par notre force que nous avons acquis de la puissance ? »",
+        "NAB": "You rejoice in Lodebar, and say, \"Have we not, by our own strength, seized for ourselves Karnaim?\"",
+        "VAT_ES": "Ustedes se alegran a causa de Lo Dabar y dicen: «&iquest;No es acaso por nuestra fuerza que nos hemos apoderado de Carnaín?».",
+        "CEI": "Voi vi compiacete di Lo-debàr dicendo: \"Non è per il nostro valore che abbiam preso Karnàim?\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כִּ֡י הִנְ/נִי֩ מֵקִ֨ים עֲלֵי/כֶ֜ם בֵּ֣ית יִשְׂרָאֵ֗ל נְאֻם יְהוָ֛ה אֱלֹהֵ֥י הַ/צְּבָא֖וֹת גּ֑וֹי וְ/לָחֲצ֥וּ אֶתְ/כֶ֛ם מִ/לְּב֥וֹא חֲמָ֖ת עַד נַ֥חַל הָ/עֲרָבָֽה׃",
+        "VUL": "Qui lætamini in nihilo ; qui dicitis :/ Numquid non in fortitudine nostra assumpsimus nobis cornua ?/",
+        "SYN": "Вот Я, говорит Господь Бог Саваоф, воздвигну народ против вас, дом Израилев, и будут теснить вас от входа в Емаф до потока в пустыне.",
+        "NEO": "Car voici que je suscite contre vous, maison d’Israël, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu des armées ! — une nation qui vous opprimera depuis l’entrée de Hamath jusqu’au torrent du désert.",
+        "NAB": "Beware, I am raising up against you, O house of Israel, say I, the LORD, the God of hosts, A nation that shall oppress you from Labo of Hamath even to the Wadi Arabah.",
+        "VAT_ES": "Por eso, yo voy a suscitar contra ustedes, casa de Israel –oráculo del Señor, Dios de los ejércitos– una nación que los oprimirá, desde la Entrada de Jamat hasta el torrente de la Arabá.",
+        "CEI": "Ora ecco, io susciterò contro di voi, gente d'Israele, - oracolo del Signore, Dio degli eserciti - un popolo che vi opprimerà dall'ingresso di Amat fino al torrente dell'Araba."
+      }
+    }
+  }
+}

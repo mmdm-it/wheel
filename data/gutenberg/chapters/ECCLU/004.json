@@ -1,0 +1,541 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_004",
+  "book_key": "ECCLU",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Τέκνον, τὴν ζωὴν τοῦ πτωχοῦ μὴ ἀποστερήσῃς, καὶ μὴ παρελκύσῃς ὀφθαλμοὺς ἐπιδεεῖς.",
+        "VUL": "[Fili, eleemosynam pauperis ne defraudes,/ et oculos tuos ne transvertas a paupere./",
+        "SYN": "Сын мой! не отказывай в пропитании нищему и не утомляй ожиданием очей нуждающихся;",
+        "NEO": "Mon fils, ne prive pas le pauvre de sa subsistance, ne fais pas attendre les yeux de l’indigent.",
+        "NAB": "My son, rob not the poor man of his livelihood; force not the eyes of the needy to turn away.",
+        "VAT_ES": "Hijo mío, no prives al pobre de su sustento ni hagas languidecer los ojos del indigente.",
+        "CEI": "Figlio, non rifiutare il sostentamento al povero, non essere insensibile allo sguardo dei bisognosi."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ψυχὴν πεινῶσαν μὴ λυπήσῃς, καὶ μὴ παροργίσῃς ἄνδρα ἐν ἀπορίᾳ αὐτοῦ.",
+        "VUL": "Animam esurientem ne despexeris,/ et non exasperes pauperem in inopia sua./",
+        "SYN": "не опечаль души алчущей и не огорчай человека в его скудости;",
+        "NEO": "N’afflige pas l’âme de celui qui a faim, et n’aigris pas l’homme indigent dans sa détresse.",
+        "NAB": "A hungry man grieve not, a needy man anger not;",
+        "VAT_ES": "No hagas sufrir al que tiene hambre ni irrites al que está en la miseria.",
+        "CEI": "Non rattristare un affamato, non esasperare un uomo già in difficoltà."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "καρδίαν παροργισμένην μὴ προσταράξῃς, καὶ μὴ παρελκύσῃς δόσιν προσδεομένου.",
+        "VUL": "Cor inopis ne afflixeris,/ et non protrahas datum angustianti./",
+        "SYN": "не смущай сердца уже огорченного и не откладывай подавать нуждающемуся;",
+        "NEO": "N’irrite pas davantage un cœur exaspéré, et ne diffère pas de donner au nécessiteux.",
+        "NAB": "Do not exasperate the downtrodden; delay not to give to the needy.",
+        "VAT_ES": "No exasperes más aún al que está irritado ni hagas esperar tu don al que lo necesita.",
+        "CEI": "Non turbare un cuore esasperato, non negare un dono al bisognoso."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ἱκέτην θλιβόμενον μὴ ἀπαναίνου, καὶ μὴ ἀποστρέψῃς τὸ πρόσωπόν σου ἀπὸ πτωχοῦ.",
+        "VUL": "Rogationem contribulati ne abjicias,/ et non avertas faciem tuam ab egeno./",
+        "SYN": "не отказывай угнетенному, умоляющему о помощи, и не отвращай лица твоего от нищего;",
+        "NEO": "Ne repousse pas le suppliant qui souffre, et ne détourne pas ton visage du pauvre.",
+        "NAB": "A beggar in distress do not reject; avert not your face from the poor.",
+        "VAT_ES": "No rechaces la súplica del afligido ni apartes tu rostro del pobre.",
+        "CEI": "Non respingere la supplica di un povero, non distogliere lo sguardo dall'indigente."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "ἀπὸ δεομένου μὴ ἀποστρέψῃς ὀφθαλμόν, καὶ μὴ δῷς τόπον ἀνθρώπῳ καταράσασθαί σε·",
+        "VUL": "Ab inope ne avertas oculos tuos propter iram :/ et non relinquas quærentibus tibi retro maledicere./",
+        "SYN": "не отвращай очей от просящего и не давай человеку повода проклинать тебя;",
+        "NEO": "Ne détourne pas ton regard du nécessiteux, et ne lui donne pas occasion de te maudire ;",
+        "NAB": "From the needy turn not your eyes, give no man reason to curse you;",
+        "VAT_ES": "No apartes tus ojos del indigente ni des lugar a que alguien te maldiga:",
+        "CEI": "Da chi ti chiede non distogliere lo sguardo, non offrire a nessuno l'occasione di maledirti,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "καταρωμένου γάρ σε ἐν πικρίᾳ ψυχῆς αὐτοῦ, τῆς δεήσεως αὐτοῦ ἐπακούσεται ὁ ποιήσας αὐτόν.",
+        "VUL": "Maledicentis enim tibi in amaritudine animæ,/ exaudietur deprecatio illius :/ exaudiet autem eum qui fecit illum./",
+        "SYN": "ибо, когда он в горести души своей будет проклинать тебя, Сотворивший его услышит моление его.",
+        "NEO": "car s’il te maudit dans l’amertume de son âme, celui qui l’a fait écoutera sa prière.",
+        "NAB": "For if in the bitterness of his soul he curse you, his Creator will hear his prayer.",
+        "VAT_ES": "porque si te maldice con amargura en el alma, su Creador escuchará su plegaria.",
+        "CEI": "perché se uno ti maledice con amarezza, il suo creatore esaudirà la sua preghiera."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "προσφιλῆ συναγωγῇ σεαυτὸν ποίει, καὶ μεγιστᾶνι ταπείνου τὴν κεφαλήν σου.",
+        "VUL": "Congregationi pauperum affabilem te facito :/ et presbytero humilia animam tuam,/ et magnato humilia caput tuum./",
+        "SYN": "В собрании старайся быть приятным и пред высшим наклоняй твою голову;",
+        "NEO": "Rends-toi agréable à la société, et devant un grand abaisse ton front.",
+        "NAB": "Endear yourself to the assembly; before a ruler bow your head.",
+        "VAT_ES": "Procura hacerte amar de la asamblea y ante un poderoso, inclina la cabeza.",
+        "CEI": "Fatti amare dalla comunità, davanti a un grande abbassa il capo. Porgi l'orecchio al povero e rispondigli al saluto con affabilità."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "κλῖνον πτωχῷ τὸ οὖς σου, καὶ ἀποκρίθητι αὐτῷ εἰρηνικὰ ἐν πρᾳύτητι.",
+        "VUL": "Declina pauperi sine tristitia aurem tuam,/ et redde debitum tuum,/ et responde illi pacifica in mansuetudine./",
+        "SYN": "приклоняй ухо твое к нищему и отвечай ему ласково, с кротостью;",
+        "NEO": "Prête l’oreille au pauvre, et fais-lui avec douceur une réponse qui le réjouisse.",
+        "NAB": "Give a hearing to the poor man, and return his greeting with courtesy;",
+        "VAT_ES": "Vuelve tu oído hacia el pobre y devuélvele el saludo con dulzura."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "ἐξελοῦ ἀδικούμενον ἐκ χειρὸς ἀδικοῦντος, καὶ μὴ ὀλιγοψυχήσῃς ἐν τῷ κρίνειν σε.",
+        "VUL": "Libera eum qui injuriam patitur de manu superbi,/ et non acide feras in anima tua./",
+        "SYN": "спасай обижаемого от руки обижающего и не будь малодушен, когда судишь;",
+        "NEO": "Tire l’opprimé des mains de l’oppresseur, et ne sois pas pusillanime quand tu rends la justice.",
+        "NAB": "Deliver the oppressed from the hand of the oppressor; let not justice be repugnant to you.",
+        "VAT_ES": "Arranca al oprimido de las manos del opresor y no te acobardes al hacer justicia.",
+        "CEI": "Strappa l'oppresso dal potere dell'oppressore, non esser pusillanime quando giudichi."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "γίνου ὀρφανοῖς ὡς πατήρ, καὶ ἀντὶ ἀνδρὸς τῇ μητρὶ αὐτῶν· καὶ ἔσῃ ὡς υἱὸς Ὑψίστου, καὶ ἀγαπήσει σε μᾶλλον ἢ μήτηρ σου.",
+        "VUL": "In judicando esto pupillis misericors ut pater,/ et pro viro matri illorum :/",
+        "SYN": "сиротам будь как отец и матери их - вместо мужа:",
+        "NEO": "Sois comme un père pour les orphelins, comme son mari pour leur mère ; et tu seras comme un fils du Très-Haut, qui t’aimera plus que ta mère.",
+        "NAB": "To the fatherless be as a father, and help their mother as a husband would; Thus will you be like a son to the Most High, and he will be more tender to you than a mother.",
+        "VAT_ES": "Sé un padre para los huérfanos y como un marido para su madre: así serás como un hijo del Altísimo y él te amará más que tu propia madre.",
+        "CEI": "Sii come un padre per gli orfani e come un marito per la loro madre e sarai come un figlio dell'Altissimo, ed egli ti amerà più di tua madre."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "Ἡ σοφία υἱοὺς ἑαυτῇ ἀνύψωσεν, καὶ ἐπιλαμβάνεται τῶν ζητούντων αὐτήν.",
+        "VUL": "et eris tu velut filius Altissimi obediens,/ et miserebitur tui magis quam mater.]",
+        "SYN": "и будешь как сын Вышнего, и Он возлюбит тебя более, нежели мать твоя.",
+        "NEO": "La sagesse exalte ses enfants, et prend soin de ceux qui la cherchent.",
+        "NAB": "Wisdom instructs her children and admonishes those who seek her.",
+        "VAT_ES": "La sabiduría encumbra a sus hijos y cuida de aquellos que la buscan.",
+        "CEI": "La sapienza esalta i suoi figli e si prende cura di quanti la cercano."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "ὁ ἀγαπῶν αὐτὴν ἀγαπᾷ ζωήν, καὶ οἱ ὀρθρίζοντες πρὸς αὐτὴν ἐμπλησθήσονται εὐφροσύνης·",
+        "VUL": "[Sapientia filiis suis vitam inspirat :/ et suscipit inquirentes se,/ et præibit in via justitiæ./",
+        "SYN": "Премудрость возвышает сынов своих и поддерживает ищущих ее:",
+        "NEO": "Celui qui l’aime aime la vie, et ceux qui la cherchent avec empressement sont remplis de joie.",
+        "NAB": "He who loves her loves life; those who seek her out win her favor.",
+        "VAT_ES": "El que la ama, ama la vida, y los que la buscan ardientemente serán colmados de gozo.",
+        "CEI": "Chi la ama ama la vita, quanti la cercano solleciti saranno ricolmi di gioia."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "ὁ κρατῶν αὐτῆς κληρονομήσει δόξαν, καὶ οὗ εἰσπορεύεται, εὐλογήσει Κύριος·",
+        "VUL": "Et qui illam diligit, diligit vitam,/ et qui vigilaverint ad illam complectentur placorem ejus./",
+        "SYN": "любящий ее любит жизнь, и ищущие ее с раннего утра исполнятся радости:",
+        "NEO": "Celui qui la saisit aura la gloire en partage, et, partout où il entrera, le Seigneur le bénira.",
+        "NAB": "He who holds her fast inherits glory; wherever he dwells, the LORD bestows blessings.",
+        "VAT_ES": "El que la posee heredará la gloria, y dondequiera que vaya, el Señor lo bendecirá.",
+        "CEI": "Chi la possiede erediterà la gloria, qualunque cosa intraprenda, il Signore lo benedice."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "οἱ λατρεύοντες αὐτῇ λειτουργήσουσιν ἁγίῳ, καὶ τοὺς ἀγαπῶντας αὐτὴν ἀγαπᾷ ὁ κύριος·",
+        "VUL": "Qui tenuerint illam, vitam hæreditabunt :/ et quo introibit benedicet Deus./",
+        "SYN": "обладающий ею наследует славу, и, куда бы ни пошел, Господь благословит его;",
+        "NEO": "Ceux qui la servent servent le Saint, et ceux qui l’aiment sont aimés du Seigneur.",
+        "NAB": "Those who serve her serve the Holy One; those who love her the LORD loves.",
+        "VAT_ES": "Los que la sirven rinden culto al Santo y los que la aman son amados por el Señor.",
+        "CEI": "Coloro che la venerano rendono culto al Santo, e il Signore ama coloro che la amano."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ὁ ὑπακούων αὐτῆς κρινεῖ ἔθνη, καὶ ὁ προσελθὼν αὐτῇ κατασκηνώσει πεποιθώς.",
+        "VUL": "Qui serviunt ei obsequentes erunt sancto :/ et eos qui diligunt illam, diligit Deus./",
+        "SYN": "служащие ей служат Святому, и любящих ее любит Господь;",
+        "NEO": "Celui qui l’écoute jugera les nations, et celui qui vient à elle habitera en sécurité.",
+        "NAB": "He who obeys her judges nations; he who hearkens to her dwells in her inmost chambers.",
+        "VAT_ES": "El que la escucha juzgará a las naciones y el que le presta atención habitará seguro.",
+        "CEI": "Chi l'ascolta giudica con equità; chi le presta attenzione vivrà tranquillo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ἐὰν ἐμπιστεύσῃς, κατακληρονομήσεις αὐτήν, καὶ ἐν κατασχέσει ἔσονται αἱ γενεαὶ αὐτοῦ·",
+        "VUL": "Qui audit illam judicabit gentes :/ et qui intuetur illam permanebit confidens./",
+        "SYN": "послушный ей будет судить народы, и внимающий ей будет жить надежно;",
+        "NEO": "Celui qui met en elle sa confiance l’aura en partage, et sa postérité en gardera la possession.",
+        "NAB": "If one trusts her, he will possess her; his descendants too will inherit her.",
+        "VAT_ES": "El que confía en ella la recibirá en herencia y sus descendientes también la poseerán.",
+        "CEI": "Chi confida in lei la otterrà in eredità; i suoi discendenti ne conserveranno il possesso."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "ὅτι διεστραμμένως πορεύεται μετ’ αὐτοῦ ἐν πρώτοις, φόβον δὲ καὶ δειλίαν ἐπάξει ἐπ’ αὐτόν, καὶ βασανίσει αὐτὸν ἐν παιδίᾳ αὐτῆς, ἕως οὗ ἐνπιστεύσῃ τῇ ψυχῇ αὐτοῦ· καὶ πειράσει αὐτὸν ἐν τοῖς δικαιώμασιν αὐτῆς·",
+        "VUL": "Si crediderit ei, hæreditabit illam,/ et erunt in confirmatione creaturæ illius :/",
+        "SYN": "кто вверится ей, тот наследует ее, и потомки его будут обладать ею:",
+        "NEO": "Car, au début, elle s’engage avec lui dans une voie difficile ; elle amène sur lui la crainte et la frayeur ; elle le tourmente par sa dure discipline, jusqu’à ce qu’elle puisse se fier à lui, et qu’elle l’ait éprouvé par ses prescriptions.",
+        "NAB": "She walks with him as a stranger, and at first she puts him to the test; Fear and dread she brings upon him and tries him with her discipline; With her precepts she puts him to the proof, until his heart is fully with her.",
+        "VAT_ES": "Al comienzo, ella lo conducirá por un camino sinuoso, le infundirá temor y estremecimiento y lo hará sufrir con su disciplina, hasta que tenga confianza en él y lo haya probado con sus exigencias.",
+        "CEI": "Dapprima lo condurrà per luoghi tortuosi, gli incuterà timore e paura, lo tormenterà con la sua disciplina, finché possa fidarsi di lui, e lo abbia provato con i suoi decreti;"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "καὶ πάλιν ἐπανήξει κατ’ εὐθεῖαν πρὸς αὐτὸν καὶ εὐφρανεῖ αὐτόν, καὶ ἀποκαλύψει αὐτῷ τὰ κρυπτὰ αὐτῆς.",
+        "VUL": "quoniam in tentatione ambulat cum eo,/ et in primis eligit eum./",
+        "SYN": "ибо сначала она пойдет с ним путями извилистыми, наведет на него страх и боязнь",
+        "NEO": "Mais alors, elle revient à lui par le droit chemin ; elle le réjouit et lui révèle ses secrets.",
+        "NAB": "Then she comes back to bring him happiness and reveal her secrets to him.",
+        "VAT_ES": "Después, volverá a él por el camino recto, lo alegrará y le revelará sus secretos.",
+        "CEI": "ma poi lo ricondurrà sulla retta via e gli manifesterà i propri segreti."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ἐὰν ἀποπλανηθῇ, ἐγκαταλείψει αὐτόν, καὶ παραδώσει αὐτὸν εἰς χεῖρας πτώσεως αὐτοῦ.",
+        "VUL": "Timorem, et metum, et probationem inducet super illum :/ et cruciabit illum in tribulatione doctrinæ suæ,/ donec tentet eum in cogitationibus suis,/ et credat animæ illius./",
+        "SYN": "и будет мучить его своим водительством, доколе не уверится в душе его и не искусит его своими уставами;",
+        "NEO": "S’il s’égare, elle l’abandonne, et le livre à sa perte.",
+        "NAB": "But if he fails her, she will abandon him and deliver him into the hands of despoilers.",
+        "VAT_ES": "Si él se desvía, ella lo abandonará y lo dejará librado a su propia caída.",
+        "CEI": "Se egli batte una falsa strada, lo lascerà andare e l'abbandonerà in balìa del suo destino."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "Συντήρησον καιρὸν καὶ φύλαξαι ἀπὸ πονηροῦ, καὶ περὶ τῆς ψυχῆς σου μὴ αἰσχυνθῇς·",
+        "VUL": "Et firmabit illum, et iter adducet directum ad illum,/ et lætificabit illum :/",
+        "SYN": "но потом она выйдет к нему на прямом пути и обрадует его",
+        "NEO": "Observe le temps et garde-toi du mal, et n’aie pas à rougir de toi-même.",
+        "NAB": "Use your time well; guard yourself from evil, and bring upon yourself no shame.",
+        "VAT_ES": "Ten en cuenta el momento y cuídate del mal, y no te averg&uuml;ences de ti mismo.",
+        "CEI": "Figlio, bada alle circostanze e guàrdati dal male così non ti vergognerai di te stesso."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "ἔστιν γὰρ αἰσχύνη ἐπάγουσα ἁμαρτίαν, καὶ ἔστιν αἰσχύνη δόξα καὶ χάρις.",
+        "VUL": "et denudabit absconsa sua illi,/ et thesaurizabit super illum scientiam et intellectum justitiæ./",
+        "SYN": "и откроет ему тайны свои.",
+        "NEO": "Il y a une honte qui amène le péché, et il y a une honte qui attire la gloire et la grâce.",
+        "NAB": "There is a sense of shame laden with guilt, and a shame that merits honor and respect.",
+        "VAT_ES": "Porque hay una verg&uuml;enza que lleva al pecado, y hay otra verg&uuml;enza que es gloria y gracia.",
+        "CEI": "C'è una vergogna che porta al peccato e c'è una vergogna che è onore e grazia."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "μὴ λάβῃς πρόσωπον κατὰ τῆς ψυχῆς σου, καὶ μὴ ἐντραπῇς εἰς πτῶσίν σου.",
+        "VUL": "Si autem oberraverit, derelinquet eum,/ et tradet eum in manus inimici sui.]",
+        "SYN": "Если он совратится с пути, она оставляет его и отдает его в руки падения его.",
+        "NEO": "N’aie égard à personne au préjudice de ton âme, et ne rougis pas pour ta perte.",
+        "NAB": "Show no favoritism to your own discredit; let no one intimidate you to your own downfall.",
+        "VAT_ES": "No te perjudiques por tener en cuenta a los demás, y que la verg&uuml;enza no provoque tu caída.",
+        "CEI": "Non usare riguardi a tuo danno e non vergognarti a tua rovina."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "μὴ κωλύσῃς λόγον ἐν καιρῷ σωτηρίας·",
+        "VUL": "[Fili, conserva tempus,/ et devita a malo./",
+        "SYN": "Наблюдай время и храни себя от зла -",
+        "NEO": "Ne retiens pas une parole au temps de salut, [et ne cache pas ta sagesse par vaine gloire] ;",
+        "NAB": "Refrain not from speaking at the proper time, and hide not away your wisdom;",
+        "VAT_ES": "No dejes de hablar cuando sea necesario, ni escondas tu sabiduría.",
+        "CEI": "Non astenerti dal parlare nel momento opportuno, non nascondere la tua sapienza."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "ἐν γὰρ λόγῳ γνωσθήσεται σοφία, καὶ παιδεία ἐν ῥήματι γλώσσης.",
+        "VUL": "Pro anima tua ne confundaris dicere verum :/",
+        "SYN": "и не постыдишься за душу твою:",
+        "NEO": "car c’est au langage qu’on reconnaît la sagesse, aux paroles de la langue que se montre la science.",
+        "NAB": "For it is through speech that wisdom becomes known, and knowledge through the tongue's rejoinder.",
+        "VAT_ES": "Porque la sabiduría se reconoce en las palabras, y la instrucción, en la manera de hablar.",
+        "CEI": "Difatti dalla parola si riconosce la sapienza e l'istruzione dai detti della lingua."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "μὴ ἀντίλεγε τῇ ἀληθείᾳ, καὶ περὶ τῆς ἀπαιδευσίας σου ἐντράπητι·",
+        "VUL": "est enim confusio adducens peccatum,/ et est confusio adducens gloriam et gratiam./",
+        "SYN": "есть стыд, ведущий ко греху, и есть стыд - слава и благодать.",
+        "NEO": "Ne contredis pas la vérité, mais rougis de manquer d’instruction.",
+        "NAB": "Never gainsay the truth, and struggle not against the rushing stream.",
+        "VAT_ES": "No digas nada contrario a la verdad y averg&uuml;énzate de tu falta de instrucción.",
+        "CEI": "Non contraddire alla verità, ma vergògnati della tua ignoranza."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "μὴ αἰσχυνθῇς ὁμολογῆσαι ἐφ’ ἁμαρτίαις σου, καὶ μὴ βιάζου ῥοῦν ποταμοῦ.",
+        "VUL": "Ne accipias faciem adversus faciem tuam,/ nec adversus animam tuam mendacium./",
+        "SYN": "Не будь лицеприятен против души твоей и не стыдись ко вреду твоему.",
+        "NEO": "N’aie pas honte de confesser tes péchés, et ne lutte pas contre le cours du fleuve.",
+        "NAB": "Be not ashamed to acknowledge your guilt, but of your ignorance rather be ashamed.",
+        "VAT_ES": "No tengas verg&uuml;enza de confesar tus pecados ni pretendas oponerte a la corriente de un río.",
+        "CEI": "Non arrossire di confessare i tuoi peccati, non opporti alla corrente di un fiume."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "καὶ μὴ ὑποστρώσῃς σεαυτὸν ἀνθρώπῳ μωρῷ, καὶ μὴ λάβῃς πρόσωπον δυνάστου.",
+        "VUL": "Ne reverearis proximum tuum in casu suo,/",
+        "SYN": "Не удерживай слова, когда оно может помочь:",
+        "NEO": "Ne te soumets pas à un homme insensé, et n’aie pas égard à la personne d’un puissant.",
+        "NAB": "Do not abase yourself before an impious man, nor refuse to do so before rulers.",
+        "VAT_ES": "No te rebajes ante un hombre necio ni seas parcial en favor del poderoso.",
+        "CEI": "Non sottometterti a un uomo stolto, e non essere parziale a favore di un potente."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "ἕως τοῦ θανάτου ἀγώνισαι περὶ τῆς ἀληθείας, καὶ Κύριος ὁ θεὸς πολεμήσει ὑπὲρ σοῦ.",
+        "VUL": "nec retineas verbum in tempore salutis./ Non abscondas sapientiam tuam in decore suo :/",
+        "SYN": "ибо в слове познается мудрость и в речи языка - знание.",
+        "NEO": "Jusqu’à la mort combats pour la vérité, et le Seigneur Dieu combattra pour toi.",
+        "NAB": "Even to the death fight for truth, and the LORD your God will battle for you.",
+        "VAT_ES": "Lucha hasta la muerte por la verdad, y el Señor Dios luchará por ti.",
+        "CEI": "Lotta sino alla morte per la verità e il Signore Dio combatterà per te."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "μὴ γίνου τραχὺς ἐν γλώσσῃ σου, καὶ νωθρὸς καὶ παρειμένος ἐν τοῖς ἔργοις σου.",
+        "VUL": "in lingua enim sapientia dignoscitur :/ et sensus, et scientia, et doctrina in verbo sensati,/ et firmamentum in operibus justitiæ./",
+        "SYN": "Не противоречь истине и стыдись твоего невежества.",
+        "NEO": "Ne sois pas dur dans ton langage, paresseux et lâche dans tes actions.",
+        "NAB": "Be not surly in your speech, nor lazy and slack in your deeds.",
+        "VAT_ES": "No seas atrevido con la lengua, ni perezoso y descuidado en tus acciones.",
+        "CEI": "Non essere arrogante nel tuo linguaggio, fiacco e indolente invece nelle opere."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "μὴ ἴσθι ὡς λέων ἐν τῷ οἴκῳ σου, καὶ φαντασιοκοπῶν ἐν τοῖς οἰκέταις σου.",
+        "VUL": "Non contradicas verbo veritatis ullo modo,/ et de mendacio ineruditionis tuæ confundere./",
+        "SYN": "Не стыдись исповедывать грехи твои и не удерживай течения реки.",
+        "NEO": "Ne sois pas comme un lion dans ta maison, ni capricieux au milieu de tes serviteurs.",
+        "NAB": "Be not a lion at home, nor sly and suspicious at work.",
+        "VAT_ES": "No seas como un león dentro de tu casa, y cobarde entre tus servidores.",
+        "CEI": "Non essere come un leone in casa tua, sospettoso con i tuoi dipendenti."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "μὴ ἔστω ἡ χείρ σου ἐκτεταμένη εἰς τὸ λαβεῖν, καὶ ἐν τῷ ἀποδιδόναι συνεσταλμένη.",
+        "VUL": "Non confundaris confiteri peccata tua,/ et ne subjicias te omni homini pro peccato./",
+        "SYN": "Не подчиняйся человеку глупому и не смотри на сильного.",
+        "NEO": "Que ta main ne soit pas étendue pour recevoir, et retirée en arrière pour donner.",
+        "NAB": "Let not your hand be open to receive and clenched when it is time to give.",
+        "VAT_ES": "No tengas la mano abierta para recibir y cerrada cuando hay que dar.",
+        "CEI": "La tua mano non sia tesa per prendere e chiusa invece nel restituire."
+      }
+    }
+  }
+}

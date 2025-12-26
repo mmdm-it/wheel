@@ -1,0 +1,51 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_117",
+  "book_key": "PSAL",
+  "sequence": 117,
+  "chapter_in": {
+    "MT": 117,
+    "VUL": 116,
+    "LXX": 116
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "הַֽלְל֣וּ אֶת יְ֭הוָה כָּל גּוֹיִ֑ם שַׁ֝בְּח֗וּ/הוּ כָּל הָ/אֻמִּֽים׃",
+        "LXX": "Ἁλληλουιά. Ἐξομολογεῖσθε τῷ κυρίῳ, ὅτι ἀγαθός, ὅτι εἰς τὸν αἰῶνα τὸ ἔλεος αὐτοῦ.",
+        "VUL": "Alleluja. [Confitemini Domino, quoniam bonus,/ quoniam in sæculum misericordia ejus./",
+        "SYN": "Славьте Господа, ибо Он благ, ибо вовек милость Его.",
+        "NEO": "Nations, louez toutes \\+w Yahweh|strong=\"H3068\"\\+w** ; peuples, célébrez-le tous !",
+        "NAB": "Praise the LORD, all you nations! Give glory, all you peoples!",
+        "VAT_ES": "&iexcl;Alaben al Señor, todas las naciones,",
+        "CEI": "Alleluia. Lodate il Signore, popoli tutti, voi tutte, nazioni, dategli gloria;"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כִּ֥י גָ֘בַ֤ר עָלֵ֨י/נוּ חַסְדּ֗/וֹ וֶֽ/אֱמֶת יְהוָ֥ה לְ/עוֹלָ֗ם הַֽלְלוּ יָֽהּ׃",
+        "LXX": "εἰπάτω δὴ οἶκος Ἰσραὴλ ὅτι ἀγαθός, ὅτι εἰς τὸν αἰῶνα τὸ ἔλεος αὐτοῦ·",
+        "VUL": "Dicat nunc Israël : Quoniam bonus,/ quoniam in sæculum misericordia ejus./",
+        "SYN": "Да скажет ныне [дом] Израилев: [Он благ,] ибо вовек милость Его.",
+        "NEO": "Car sa bonté pour nous est grande, et la vérité de \\+w Yahweh|strong=\"H3068\"\\+w** subsiste à jamais. Alleluia !",
+        "NAB": "The LORD'S love for us is strong; the LORD is faithful forever. Hallelujah!",
+        "VAT_ES": "Porque es inquebrantable su amor por nosotros,",
+        "CEI": "perché forte è il suo amore per noi e la fedeltà del Signore dura in eterno."
+      }
+    }
+  }
+}

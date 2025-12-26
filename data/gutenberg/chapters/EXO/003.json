@@ -1,0 +1,411 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_003",
+  "book_key": "EXO",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וּ/מֹשֶׁ֗ה הָיָ֥ה רֹעֶ֛ה אֶת צֹ֛אן יִתְר֥וֹ חֹתְנ֖/וֹ כֹּהֵ֣ן מִדְיָ֑ן וַ/יִּנְהַ֤ג אֶת הַ/צֹּאן֙ אַחַ֣ר הַ/מִּדְבָּ֔ר וַ/יָּבֹ֛א אֶל הַ֥ר הָ/אֱלֹהִ֖ים חֹרֵֽבָ/ה׃",
+        "LXX": "Καὶ Μωυσῆς ἦν ποιμαίνων τὰ πρόβατα Ἰοθὸρ τοῦ γαμβροῦ αὐτοῦ τοῦ ἱερέως Μαδιάμ, καὶ ἤγαγεν τὰ πρόβατα ὑπὸ τὴν ἔρημον καὶ ἦλθεν εἰς τὸ ὄρος Χωρήβ.",
+        "VUL": "Moyses autem pascebat oves Jethro soceri sui sacerdotis Madian : cumque minasset gregem ad interiora deserti, venit ad montem Dei Horeb.",
+        "SYN": "Моисей пас овец у Иофора, тестя своего, священника Мадиамского. Однажды провел он стадо далеко в пустыню и пришел к горе Божией, Хориву.",
+        "NEO": "Moïse faisait paître le troupeau de Jéthro, son beau-père, prêtre de Madian. Il mena le troupeau au delà du désert, et arriva à la montagne de Dieu, à Horeb+ 3:1 \\+it Horeb\\+it*, autre nom du Sinaï.*.",
+        "NAB": "Meanwhile Moses was tending the flock of his father-in-law Jethro, the priest of Midian. Leading the flock across the desert, he came to Horeb, the mountain of God.",
+        "VAT_ES": "Moisés, que apacentaba las ovejas de su suegro Jetró, el sacerdote de Madián, llevó una vez el rebaño más allá del desierto y llegó a la montaña de Dios, al Horeb.",
+        "CEI": "Ora Mosè stava pascolando il gregge di Ietro, suo suocero, sacerdote di Madian, e condusse il bestiame oltre il deserto e arrivò al monte di Dio, l'Oreb."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ֠/יֵּרָא מַלְאַ֨ךְ יְהֹוָ֥ה אֵלָ֛י/ו בְּ/לַבַּת אֵ֖שׁ מִ/תּ֣וֹךְ הַ/סְּנֶ֑ה וַ/יַּ֗רְא וְ/הִנֵּ֤ה הַ/סְּנֶה֙ בֹּעֵ֣ר בָּ/אֵ֔שׁ וְ/הַ/סְּנֶ֖ה אֵינֶ֥/נּוּ אֻכָּֽל׃",
+        "LXX": "ὤφθη δὲ αὐτῷ ἄγγελος Κυρίου ἐν πυρὶ φλογὸς ἐκ τοῦ βάτου· καὶ ὁρᾷ ὅτι ὁ βάτος καίεται πυρί, ὁ δὲ βάτος οὐ κατεκαίετο.",
+        "VUL": "Apparuitque ei Dominus in flamma ignis de medio rubi : et videbat quod rubus arderet, et non combureretur.",
+        "SYN": "И явился ему Ангел Господень в пламени огня из среды тернового куста. И увидел он, что терновый куст горит огнем, но куст не сгорает.",
+        "NEO": "L’ange de \\+w Yahweh|strong=\"H3068\"\\+w** lui apparut en flamme de feu, du milieu du buisson. Et Moïse vit, et voici, le buisson était tout en feu, et le buisson ne se consumait pas.",
+        "NAB": "There an angel of the LORD appeared to him in fire flaming out of a bush. As he looked on, he was surprised to see that the bush, though on fire, was not consumed.",
+        "VAT_ES": "Allí se le apareció el Angel del Señor en una llama de fuego, que salía de en medio de la zarza. Al ver que la zarza ardía sin consumirse,",
+        "CEI": "L'angelo del Signore gli apparve in una fiamma di fuoco in mezzo a un roveto. Egli guardò ed ecco: il roveto ardeva nel fuoco, ma quel roveto non si consumava."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר מֹשֶׁ֔ה אָסֻֽרָה נָּ֣א וְ/אֶרְאֶ֔ה אֶת הַ/מַּרְאֶ֥ה הַ/גָּדֹ֖ל הַ/זֶּ֑ה מַדּ֖וּעַ לֹא יִבְעַ֥ר הַ/סְּנֶֽה׃",
+        "LXX": "εἶπεν δὲ Μωυσῆς Παρελθὼν ὄψομαι τὸ ὅραμα τὸ μέγα τοῦτο, ὅτι οὐ κατακαίεται ὁ βάτος.",
+        "VUL": "Dixit ergo Moyses : Vadam, et videbo visionem hanc magnam, quare non comburatur rubus.",
+        "SYN": "Моисей сказал: пойду и посмотрю на сие великое явление, отчего куст не сгорает.",
+        "NEO": "Moïse dit : « Je veux faire un détour pour considérer cette grande vision, et voir pourquoi le buisson ne se consume point. »",
+        "NAB": "So Moses decided, \"I must go over to look at this remarkable sight, and see why the bush is not burned.\"",
+        "VAT_ES": "Moisés pensó: «Voy a observar este grandioso espectáculo. &iquest;Por qué será que la zarza no se consume?».",
+        "CEI": "Mosè pensò: \"Voglio avvicinarmi a vedere questo grande spettacolo: perché il roveto non brucia?\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥רְא יְהוָ֖ה כִּ֣י סָ֣ר לִ/רְא֑וֹת וַ/יִּקְרָא֩ אֵלָ֨י/ו אֱלֹהִ֜ים מִ/תּ֣וֹךְ הַ/סְּנֶ֗ה וַ/יֹּ֛אמֶר מֹשֶׁ֥ה מֹשֶׁ֖ה וַ/יֹּ֥אמֶר הִנֵּֽ/נִי׃",
+        "LXX": "ὡς δὲ ἴδεν Κύριος ὅτι προσάγει ἰδεῖν, ἐκάλεσεν αὐτὸν Κύριος ἐκ τοῦ βάτου λέγων Μωυσῆ Μωυσῆ. ὁ δὲ εἶπεν Τί ἐστιν;",
+        "VUL": "Cernens autem Dominus quod pergeret ad videndum, vocavit eum de medio rubi, et ait : Moyses, Moyses. Qui respondit : Adsum.",
+        "SYN": "Господь увидел, что он идет смотреть, и воззвал к нему Бог из среды куста, и сказал: Моисей! Моисей! Он сказал: вот я, [Господи]!",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** vit qu’il se détournait pour regarder ; et Dieu l’appela du milieu du buisson, et dit : « Moïse ! Moïse ! » Il répondit : « Me voici. »",
+        "NAB": "When the LORD saw him coming over to look at it more closely, God called out to him from the bush, \"Moses! Moses!\" He answered, \"Here I am.\"",
+        "VAT_ES": "Cuando el Señor vio que él se apartaba del camino para mirar, lo llamó desde la zarza, diciendo: «&iexcl;Moisés, Moisés!». «Aquí estoy», respondió el.",
+        "CEI": "Il Signore vide che si era avvicinato per vedere e Dio lo chiamò dal roveto e disse: \"Mosè, Mosè!\". Rispose: \"Eccomi!\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֖אמֶר אַל תִּקְרַ֣ב הֲלֹ֑ם שַׁל נְעָלֶ֨י/ךָ֙ מֵ/עַ֣ל רַגְלֶ֔י/ךָ כִּ֣י הַ/מָּק֗וֹם אֲשֶׁ֤ר אַתָּה֙ עוֹמֵ֣ד עָלָ֔י/ו אַדְמַת קֹ֖דֶשׁ הֽוּא׃",
+        "LXX": "ὁ δὲ εἶπεν Μὴ ἐγγίσῃς ὧδε· λῦσαι τὸ ὑπόδημα ἐκ τῶν ποδῶν σου, ὁ γὰρ τόπος ἐν ᾧ σὺ ἕστηκας γῆ ἁγία ἐστίν.",
+        "VUL": "At ille : Ne appropies, inquit, huc : solve calceamentum de pedibus tuis : locus enim, in quo stas, terra sancta est.",
+        "SYN": "И сказал Бог: не подходи сюда; сними обувь твою с ног твоих, ибо место, на котором ты стоишь, есть земля святая.",
+        "NEO": "Dieu dit : « N’approche pas d’ici, ôte tes sandales de tes pieds, car le lieu sur lequel tu te tiens est une terre sainte. »",
+        "NAB": "God said, \"Come no nearer! Remove the sandals from your feet, for the place where you stand is holy ground.",
+        "VAT_ES": "Entonces Dios le dijo: «No te acerques hasta aquí. Quítate las sandalias, porque el suelo que estás pisando es una tierra santa».",
+        "CEI": "Riprese: \"Non avvicinarti! Togliti i sandali dai piedi, perché il luogo sul quale tu stai è una terra santa!\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר אָנֹכִי֙ אֱלֹהֵ֣י אָבִ֔י/ךָ אֱלֹהֵ֧י אַבְרָהָ֛ם אֱלֹהֵ֥י יִצְחָ֖ק וֵ/אלֹהֵ֣י יַעֲקֹ֑ב וַ/יַּסְתֵּ֤ר מֹשֶׁה֙ פָּנָ֔י/ו כִּ֣י יָרֵ֔א מֵ/הַבִּ֖יט אֶל הָ/אֱלֹהִֽים׃",
+        "LXX": "καὶ εἶπεν Ἐγώ εἰμι ὁ θεὸς τοῦ πατρός σου, θεὸς Ἀβραὰμ καὶ θεὸς Ἰσαὰκ καὶ θεὸς Ἰακώβ. ἀπέστρεψεν δὲ Μωυσῆς τὸ πρόσωπον αὐτοῦ· εὐλαβεῖτο γὰρ κατεμβλέψαι ἐνώπιον τοῦ θεοῦ.",
+        "VUL": "Et ait : Ego sum Deus patris tui, Deus Abraham, Deus Isaac et Deus Jacob. Abscondit Moyses faciem suam : non enim audebat aspicere contra Deum.",
+        "SYN": "И сказал [ему]: Я Бог отца твоего, Бог Авраама, Бог Исаака и Бог Иакова. Моисей закрыл лице свое, потому что боялся воззреть на Бога.",
+        "NEO": "Il ajouta : « Je suis le Dieu de ton père, le Dieu d’Abraham, le Dieu d’Isaac et le Dieu de Jacob. » Moïse se cacha le visage, car il craignait de regarder Dieu.",
+        "NAB": "I am the God of your father,\" he continued, \"the God of Abraham, the God of Isaac, the God of Jacob.\" Moses hid his face, for he was afraid to look at God.",
+        "VAT_ES": "Luego siguió diciendo: «Yo soy el Dios de tu padre, el Dios de Abraham, el Dios de Isaac y el Dios de Jacob». Moisés se cubrió el rostro porque tuvo miedo de ver a Dios.",
+        "CEI": "E disse: \"Io sono il Dio di tuo padre, il Dio di Abramo, il Dio di Isacco, il Dio di Giacobbe\". Mosè allora si velò il viso, perché aveva paura di guardare verso Dio."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוָ֔ה רָאֹ֥ה רָאִ֛יתִי אֶת עֳנִ֥י עַמִּ֖/י אֲשֶׁ֣ר בְּ/מִצְרָ֑יִם וְ/אֶת צַעֲקָתָ֤/ם שָׁמַ֨עְתִּי֙ מִ/פְּנֵ֣י נֹֽגְשָׂ֔י/ו כִּ֥י יָדַ֖עְתִּי אֶת מַכְאֹבָֽי/ו׃",
+        "LXX": "εἶπεν δὲ Κύριος πρὸς Μωυσῆν Ἰδὼν ἴδον τὴν κάκωσιν τοῦ λαοῦ μου τοῦ ἐν Αἰγύπτῳ, καὶ τῆς κραυγῆς αὐτῶν ἀκήκοα ἀπὸ τῶν ἐργοδιωκτῶν· οἶδα γὰρ τὴν ὀδύνην αὐτῶν·",
+        "VUL": "Cui ait Dominus : Vidi afflictionem populi mei in Ægypto, et clamorem ejus audivi propter duritiam eorum qui præsunt operibus :",
+        "SYN": "И сказал Господь [Моисею]: Я увидел страдание народа Моего в Египте и услышал вопль его от приставников его; Я знаю скорби его",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit : « J’ai vu la souffrance de mon peuple qui est en Égypte, et j’ai entendu le cri que lui font pousser ses exacteurs, car je connais ses douleurs.",
+        "NAB": "But the LORD said, \"I have witnessed the affliction of my people in Egypt and have heard their cry of complaint against their slave drivers, so I know well what they are suffering.",
+        "VAT_ES": "El Señor dijo: «Yo he visto la opresión de mi pueblo, que está en Egipto, y he oído los gritos de dolor, provocados por sus capataces. Sí, conozco muy bien sus sufrimientos.",
+        "CEI": "Il Signore disse: \"Ho osservato la miseria del mio popolo in Egitto e ho udito il suo grido a causa dei suoi sorveglianti; conosco infatti le sue sofferenze."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וָ/אֵרֵ֞ד לְ/הַצִּיל֣/וֹ מִ/יַּ֣ד מִצְרַ֗יִם וּֽ/לְ/הַעֲלֹת/וֹ֮ מִן הָ/אָ֣רֶץ הַ/הִוא֒ אֶל אֶ֤רֶץ טוֹבָה֙ וּ/רְחָבָ֔ה אֶל אֶ֛רֶץ זָבַ֥ת חָלָ֖ב וּ/דְבָ֑שׁ אֶל מְק֤וֹם הַֽ/כְּנַעֲנִי֙ וְ/הַ֣/חִתִּ֔י וְ/הָֽ/אֱמֹרִי֙ וְ/הַ/פְּרִזִּ֔י וְ/הַ/חִוִּ֖י וְ/הַ/יְבוּסִֽי׃",
+        "LXX": "καὶ κατέβην ἐξελέσθαι αὐτοὺς ἐκ χειρὸς Αἰγυπτίων καὶ ἐξαγαγεῖν αὐτοὺς ἐκ τῆς γῆς ἐκείνης, καὶ εἰσαγαγεῖν αὐτοὺς εἰς γῆν ἀγαθὴν καὶ πολλήν, εἰς γῆν ῥέουσαν γάλα καὶ μέλι, εἰς τὸν τόπον τῶν Χαναναίων καὶ Χετταίων καὶ Ἀμορραίων καὶ Φερεζαίων καὶ Γεργεσαίων καὶ Εὑαίων καὶ Ἰεβουσαίων.",
+        "VUL": "et sciens dolorem ejus, descendi ut liberem eum de manibus Ægyptiorum, et educam de terra illa in terram bonam, et spatiosam, in terram quæ fluit lacte et melle, ad loca Chananæi et Hethæi, et Amorrhæi, et Pherezæi, et Hevæi, et Jebusæi.",
+        "SYN": "и иду избавить его от руки Египтян и вывести его из земли сей [и ввести его] в землю хорошую и пространную, где течет молоко и мед, в землю Хананеев, Хеттеев, Аморреев, Ферезеев, [Гергесеев,] Евеев и Иевусеев.",
+        "NEO": "Je suis descendu pour le délivrer de la main des Égyptiens et pour le faire monter de ce pays dans une terre fertile et spacieuse, dans une terre où coulent le lait et le miel, au lieu qu’habitent les Chananéens, les Hittites, les Amorrhéens, les Phérézéens, les Hévéens et les Jébuséens.",
+        "NAB": "Therefore I have come down to rescue them from the hands of the Egyptians and lead them out of that land into a good and spacious land, a land flowing with milk and honey, the country of the Canaanites, Hittites, Amorites, Perizzites, Hivites and Jebusites.",
+        "VAT_ES": "Por eso he bajado a librarlo del poder de los egipcios y a hacerlo subir, desde aquel país, a una tierra fértil y espaciosa, a una tierra que mana leche y miel, al país de los cananeos, los hititas, los amorreos, los perizitas, los jivitas y los jebuseos.",
+        "CEI": "Sono sceso per liberarlo dalla mano dell'Egitto e per farlo uscire da questo paese verso un paese bello e spazioso, verso un paese dove scorre latte e miele, verso il luogo dove si trovano il Cananeo, l'Hittita, l'Amorreo, il Perizzita, l'Eveo, il Gebuseo."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֕ה הִנֵּ֛ה צַעֲקַ֥ת בְּנֵי יִשְׂרָאֵ֖ל בָּ֣אָה אֵלָ֑/י וְ/גַם רָאִ֨יתִי֙ אֶת הַ/לַּ֔חַץ אֲשֶׁ֥ר מִצְרַ֖יִם לֹחֲצִ֥ים אֹתָֽ/ם׃",
+        "LXX": "καὶ νῦν ἰδοὺ κραυγὴ τῶν υἱῶν Ἰσραὴλ ἥκει πρὸς μέ, κἀγὼ ἑώρακα τὸν θλιμμὸν ὃν οἱ Αἰγύπτιοι θλίβουσιν αὐτούς.",
+        "VUL": "Clamor ergo filiorum Israël venit ad me : vidique afflictionem eorum, qua ab Ægyptiis opprimuntur.",
+        "SYN": "И вот, уже вопль сынов Израилевых дошел до Меня, и Я вижу угнетение, каким угнетают их Египтяне.",
+        "NEO": "Et maintenant voici, le cri des enfants d’Israël est venu jusqu’à moi, et j’ai vu l’oppression que font peser sur eux les Égyptiens.",
+        "NAB": "So indeed the cry of the Israelites has reached me, and I have truly noted that the Egyptians are oppressing them.",
+        "VAT_ES": "El clamor de los israelitas ha llegado hasta mi y he visto cómo son oprimidos por los egipcios.",
+        "CEI": "Ora dunque il grido degli Israeliti è arrivato fino a me e io stesso ho visto l'oppressione con cui gli Egiziani li tormentano."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֣ה לְכָ֔/ה וְ/אֶֽשְׁלָחֲ/ךָ֖ אֶל פַּרְעֹ֑ה וְ/הוֹצֵ֛א אֶת עַמִּ֥/י בְנֵֽי יִשְׂרָאֵ֖ל מִ/מִּצְרָֽיִם׃",
+        "LXX": "καὶ νῦν δεῦρο ἀποστείλω σε πρὸς Φαραὼ βασιλέα Αἰγύπτου, καὶ ἐξάξεις τὸν λαόν μου τοὺς υἱοὺς Ἰσραὴλ ἐκ γῆς Αἰγύπτου.",
+        "VUL": "Sed veni, et mittam te ad Pharaonem, ut educas populum meum, filios Israël, de Ægypto.",
+        "SYN": "Итак пойди: Я пошлю тебя к фараону [царю Египетскому]; и выведи из Египта народ Мой, сынов Израилевых.",
+        "NEO": "Et maintenant, va, je t’envoie auprès de Pharaon, pour faire sortir mon peuple, les enfants d’Israël. »",
+        "NAB": "Come, now! I will send you to Pharaoh to lead my people, the Israelites, out of Egypt.\"",
+        "VAT_ES": "Ahora ve, yo te envío al Faraón para que saques de Egipto a mi pueblo, a los israelitas».",
+        "CEI": "Ora và! Io ti mando dal faraone. Fà uscire dall'Egitto il mio popolo, gli Israeliti!\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר מֹשֶׁה֙ אֶל הָ֣/אֱלֹהִ֔ים מִ֣י אָנֹ֔כִי כִּ֥י אֵלֵ֖ךְ אֶל פַּרְעֹ֑ה וְ/כִ֥י אוֹצִ֛יא אֶת בְּנֵ֥י יִשְׂרָאֵ֖ל מִ/מִּצְרָֽיִם׃",
+        "LXX": "Καὶ εἶπεν Μωυσῆς πρὸς τὸν θεόν Τίς εἰμι ἐγὼ ὅτι πορεύσομαι πρὸς Φαραὼ βασιλέα Αἰγύπτου, καὶ ὅτι ἐξάξω τοὺς υἱοὺς Ἰσραὴλ ἐκ γῆς Αἰγύπτου;",
+        "VUL": "Dixitque Moyses ad Deum : Quis sum ego ut vadam ad Pharaonem, et educam filios Israël de Ægypto ?",
+        "SYN": "Моисей сказал Богу: кто я, чтобы мне идти к фараону [царю Египетскому] и вывести из Египта сынов Израилевых?",
+        "NEO": "Moïse dit à Dieu : « Qui suis-je, pour aller vers Pharaon et pour faire sortir d’Égypte les enfants d’Israël ? »",
+        "NAB": "But Moses said to God, \"Who am I that I should go to Pharaoh and lead the Israelites out of Egypt?\"",
+        "VAT_ES": "Pero Moisés dijo a Dios: «&iquest;Quién soy yo para presentarme ante el Faraón y hacer salir de Egipto a los israelitas?».",
+        "CEI": "Mosè disse a Dio: \"Chi sono io per andare dal faraone e per far uscire dall'Egitto gli Israeliti?\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ כִּֽי אֶֽהְיֶ֣ה עִמָּ֔/ךְ וְ/זֶה לְּ/ךָ֣ הָ/א֔וֹת כִּ֥י אָנֹכִ֖י שְׁלַחְתִּ֑י/ךָ בְּ/הוֹצִֽיאֲ/ךָ֤ אֶת הָ/עָם֙ מִ/מִּצְרַ֔יִם תַּֽעַבְדוּ/ן֙ אֶת הָ֣/אֱלֹהִ֔ים עַ֖ל הָ/הָ֥ר הַ/זֶּֽה׃",
+        "LXX": "εἶπεν δὲ ὁ θεὸς Μωυσεῖ λέγων Ὅτι ἔσομαι μετὰ σοῦ· καὶ τοῦτό σοι τὸ σημεῖον ὅτι ἐγώ σε ἐξαποστελῶ· ἐν τῷ ἐξαγαγεῖν σε τὸν λαόν μου ἐξ Αἰγύπτου, καὶ λατρεύσετε τῷ θεῷ ἐν τῷ ὄρει τούτῳ.",
+        "VUL": "Qui dixit ei : Ego ero tecum : et hoc habebis signum, quod miserim te : cum eduxeris populum meum de Ægypto, immolabis Deo super montem istum.",
+        "SYN": "И сказал [Бог]: Я буду с тобою, и вот тебе знамение, что Я послал тебя: когда ты выведешь народ [Мой] из Египта, вы совершите служение Богу на этой горе.",
+        "NEO": "Dieu dit : « Je serai avec toi ; et ceci sera pour toi le signe que c’est moi qui t’ai envoyé : Quand tu auras fait sortir le peuple d’Égypte, vous servirez Dieu sur cette montagne. »",
+        "NAB": "He answered, \"I will be with you; and this shall be your proof that it is I who have sent you: when you bring my people out of Egypt, you will worship God on this very mountain.\"",
+        "VAT_ES": "«Yo estaré contigo, les dijo a Dios, y esta es la señal de que soy yo el que te envía: después que hagas salir de Egipto al pueblo, ustedes darán culto a Dios en esta montaña».",
+        "CEI": "Rispose: \"Io sarò con te. Eccoti il segno che io ti ho mandato: quando tu avrai fatto uscire il popolo dall'Egitto, servirete Dio su questo monte\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר מֹשֶׁ֜ה אֶל הָֽ/אֱלֹהִ֗ים הִנֵּ֨ה אָנֹכִ֣י בָא֮ אֶל בְּנֵ֣י יִשְׂרָאֵל֒ וְ/אָמַרְתִּ֣י לָ/הֶ֔ם אֱלֹהֵ֥י אֲבוֹתֵי/כֶ֖ם שְׁלָחַ֣/נִי אֲלֵי/כֶ֑ם וְ/אָֽמְרוּ לִ֣/י מַה שְּׁמ֔/וֹ מָ֥ה אֹמַ֖ר אֲלֵ/הֶֽם׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς πρὸς τὸν θεόν Ἰδοὺ ἐγὼ ἐξελεύσομαι πρὸς τοὺς υἱοὺς Ἰσραὴλ καὶ ἐρῶ πρὸς αὐτούς Ὁ θεὸς τῶν πατέρων ἡμῶν ἀπέσταλκέν με πρὸς ὑμᾶς· ἐρωτήσουσίν με Τί ὄνομα αὐτῷ; τί ἐρῶ πρὸς αὐτούς;",
+        "VUL": "Ait Moyses ad Deum : Ecce ego vadam ad filios Israël, et dicam eis : Deus patrum vestrorum misit me ad vos. Si dixerint mihi : Quod est nomen ejus ? quid dicam eis ?",
+        "SYN": "И сказал Моисей Богу: вот, я приду к сынам Израилевым и скажу им: Бог отцов ваших послал меня к вам. А они скажут мне: как Ему имя? Что сказать мне им?",
+        "NEO": "Moïse dit à Dieu : « Voici, j’irai vers les enfants d’Israël, et je leur dirai : Le Dieu de vos pères m’envoie vers vous. S’ils me demandent quel est son nom, que leur répondrai-je ? »",
+        "NAB": "\"But,\" said Moses to God, \"when I go to the Israelites and say to them, 'The God of your fathers has sent me to you,' if they ask me, 'What is his name?' what am I to tell them?\"",
+        "VAT_ES": "Moisés dijo a Dios: «Si me presento ante los israelitas y les digo que el Dios de sus padres me envió a ellos, me preguntarán cual es su nombre. Y entonces, &iquest;qué les responderé?».",
+        "CEI": "Mosè disse a Dio: \"Ecco io arrivo dagli Israeliti e dico loro: Il Dio dei vostri padri mi ha mandato a voi. Ma mi diranno: Come si chiama? E io che cosa risponderò loro?\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֱלֹהִים֙ אֶל מֹשֶׁ֔ה אֶֽהְיֶ֖ה אֲשֶׁ֣ר אֶֽהְיֶ֑ה וַ/יֹּ֗אמֶר כֹּ֤ה תֹאמַר֙ לִ/בְנֵ֣י יִשְׂרָאֵ֔ל אֶֽהְיֶ֖ה שְׁלָחַ֥/נִי אֲלֵי/כֶֽם׃",
+        "LXX": "καὶ εἶπεν ὁ θεὸς πρὸς Μωυσῆν λέγων Ἐγώ εἰμι ὁ ὤν· καὶ εἶπεν Οὕτως ἐρεῖς τοῖς υἱοῖς Ἰσραήλ Ὁ ὢν ἀπέσταλκέν με πρὸς ὑμᾶς.",
+        "VUL": "Dixit Deus ad Moysen : Ego sum qui sum. Ait : Sic dices filiis Israël : Qui est, misit me ad vos.",
+        "SYN": "Бог сказал Моисею: Я есмь Сущий. И сказал: так скажи сынам Израилевым: Сущий [Иегова] послал меня к вам.",
+        "NEO": "Et Dieu dit à Moïse : « Je suis celui qui suis. » Et il ajouta : « C’est ainsi, que tu répondras aux enfants d’Israël : Celui qui est m’envoie vers vous. »",
+        "NAB": "God replied, \"I am who am.\" Then he added, \"This is what you shall tell the Israelites: I AM sent me to you.\"",
+        "VAT_ES": "Dios dijo a Moisés: «Yo soy el que soy». Luego añadió: «Tú hablarás así a los israelitas: «Yo soy» me envió a ustedes».",
+        "CEI": "Dio disse a Mosè: \"Io sono colui che sono!\". Poi disse: \"Dirai agli Israeliti: Io-Sono mi ha mandato a voi\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֩ ע֨וֹד אֱלֹהִ֜ים אֶל מֹשֶׁ֗ה כֹּֽה תֹאמַר֮ אֶל בְּנֵ֣י יִשְׂרָאֵל֒ יְהוָ֞ה אֱלֹהֵ֣י אֲבֹתֵי/כֶ֗ם אֱלֹהֵ֨י אַבְרָהָ֜ם אֱלֹהֵ֥י יִצְחָ֛ק וֵ/אלֹהֵ֥י יַעֲקֹ֖ב שְׁלָחַ֣/נִי אֲלֵי/כֶ֑ם זֶה שְּׁמִ֣/י לְ/עֹלָ֔ם וְ/זֶ֥ה זִכְרִ֖/י לְ/דֹ֥ר דֹּֽר׃",
+        "LXX": "καὶ εἶπεν ὁ θεὸς πάλιν πρὸς Μωυσῆν Οὕτως ἐρεῖς τοῖς υἱοῖς Ἰσραήλ Κύριος ὁ θεὸς τῶν πατέρων ὑμῶν, θεὸς Ἀβραὰμ καὶ θεὸς Ἰσαὰκ καὶ θεὸς Ἰακώβ, ἀπέσταλκέν με πρὸς ὑμᾶς· τοῦτό μού ἐστιν ὄνομα αἰώνιον καὶ μνημόσυνον γενεῶν γενεαῖς.",
+        "VUL": "Dixitque iterum Deus ad Moysen : Hæc dices filiis Israël : Dominus Deus patrum vestrorum, Deus Abraham, Deus Isaac et Deus Jacob, misit me ad vos : hoc nomen mihi est in æternum, et hoc memoriale meum in generationem et generationem.",
+        "SYN": "И сказал еще Бог Моисею: так скажи сынам Израилевым: Господь, Бог отцов ваших, Бог Авраама, Бог Исаака и Бог Иакова послал меня к вам. Вот имя Мое на веки, и памятование о Мне из рода в род.",
+        "NEO": "Dieu dit encore à Moïse : « Tu parleras ainsi aux enfants d’Israël : \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu de vos pères, le Dieu d’Abraham, le Dieu d’Isaac et le Dieu de Jacob, m’envoie vers vous. C’est là mon nom pour l’éternité ; c’est là mon souvenir de génération en génération.+ 3:15 Nom propre divin, déjà existant, rattaché au verbe être : JE SUIS ; et non CELUI QUI EST, plus métaphysique (et venu du grec, je suis celui qui existe).*",
+        "NAB": "God spoke further to Moses, \"Thus shall you say to the Israelites: The LORD, the God of your fathers, the God of Abraham, the God of Isaac, the God of Jacob, has sent me to you. \"This is my name forever; this is my title for all generations.",
+        "VAT_ES": "Y continuó diciendo a Moisés: «Tú hablarás así a los israelitas: El Señor, el Dios de sus padres, el Dios de Abraham, el Dios de Isaac y el Dios de Jacob, es el que me envía. Este es mi nombre para siempre y así será invocado en todos los tiempos futuros.",
+        "CEI": "Dio aggiunse a Mosè: \"Dirai agli Israeliti: Il Signore, il Dio dei vostri padri, il Dio di Abramo, il Dio di Isacco, il Dio di Giacobbe mi ha mandato a voi. Questo è il mio nome per sempre; questo è il titolo con cui sarò ricordato di generazione in generazione."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "לֵ֣ךְ וְ/אָֽסַפְתָּ֞ אֶת זִקְנֵ֣י יִשְׂרָאֵ֗ל וְ/אָמַרְתָּ֤ אֲלֵ/הֶם֙ יְהוָ֞ה אֱלֹהֵ֤י אֲבֹֽתֵי/כֶם֙ נִרְאָ֣ה אֵלַ֔/י אֱלֹהֵ֧י אַבְרָהָ֛ם יִצְחָ֥ק וְ/יַעֲקֹ֖ב לֵ/אמֹ֑ר פָּקֹ֤ד פָּקַ֨דְתִּי֙ אֶתְ/כֶ֔ם וְ/אֶת הֶ/עָשׂ֥וּי לָ/כֶ֖ם בְּ/מִצְרָֽיִם׃",
+        "LXX": "ἐλθὼν οὖν συνάγαγε τὴν γερουσίαν τῶν υἱῶν Ἰσραὴλ καὶ ἐρεῖς πρὸς αὐτούς Κύριος ὁ θεὸς τῶν πατέρων ὑμῶν ὦπταί μοι, θεὸς Ἀβραὰμ καὶ θεὸς Ἰσαὰκ καὶ θεὸς Ἰακώβ, λέγων Ἐπισκοπῇ ἐπέσκεμμαι ὑμᾶς καὶ ὅσα συμβέβηκεν ὑμῖν ἐν Αἰγύπτῳ·",
+        "VUL": "Vade, et congrega seniores Israël, et dices ad eos : Dominus Deus patrum vestrorum apparuit mihi, Deus Abraham, Deus Isaac et Deus Jacob, dicens : Visitans visitavi vos : et vidi omnia quæ acciderunt vobis in Ægypto.",
+        "SYN": "Пойди, собери старейшин [сынов] Израилевых и скажи им: Господь, Бог отцов ваших, явился мне, Бог Авраама, [Бог] Исаака и [Бог] Иакова, и сказал: Я посетил вас и _увидел,_ что делается с вами в Египте.",
+        "NEO": "Va, rassemble les anciens d’Israël et dis-leur : \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu de vos pères, m’est apparu, le Dieu d’Abraham, d’Isaac et de Jacob, en disant : Je vous ai visités, j’ai vu ce qu’on vous fait en Égypte,",
+        "NAB": "\"Go and assemble the elders of the Israelites, and tell them: The LORD, the God of your fathers, the God of Abraham, Isaac and Jacob, has appeared to me and said: I am concerned about you and about the way you are being treated in Egypt;",
+        "VAT_ES": "Ve a reunir a los ancianos de Israel y diles: El Señor, el Dios de sus padres, el Dios de Abraham, de Isaac y de Jacob, se me apareció y me dijo: «Yo los he visitado y he visto cómo los maltrataban los egipcios.",
+        "CEI": "Và! Riunisci gli anziani d'Israele e dì loro: Il Signore, Dio dei vostri padri, mi è apparso, il Dio di Abramo, di Isacco, di Giacobbe, dicendo: Sono venuto a vedere voi e ciò che vien fatto a voi in Egitto."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וָ/אֹמַ֗ר אַעֲלֶ֣ה אֶתְ/כֶם֮ מֵ/עֳנִ֣י מִצְרַיִם֒ אֶל אֶ֤רֶץ הַֽ/כְּנַעֲנִי֙ וְ/הַ֣/חִתִּ֔י וְ/הָֽ/אֱמֹרִי֙ וְ/הַ/פְּרִזִּ֔י וְ/הַ/חִוִּ֖י וְ/הַ/יְבוּסִ֑י אֶל אֶ֛רֶץ זָבַ֥ת חָלָ֖ב וּ/דְבָֽשׁ׃",
+        "LXX": "καὶ εἶπεν Ἀναβιβάσω ὑμᾶς ἐκ τῆς κακώσεως τῶν Αἰγυπτίων εἰς τὴν γῆν τῶν Χαναναίων καὶ Χετταίων καὶ Ἀμορραίων καὶ Φερεζαίων καὶ Γεργεσαίων καὶ Εὑαίων καὶ Ἰεβουσαίων, εἰς γῆν ῥέουσαν γάλα καὶ μέλι.",
+        "VUL": "Et dixi ut educam vos de afflictione Ægypti in terram Chananæi, et Hethæi, et Amorrhæi, et Pherezæi, et Hevæi, et Jebusæi, ad terram fluentem lacte et melle.",
+        "SYN": "И сказал: Я выведу вас от угнетения Египетского в землю Хананеев, Хеттеев, Аморреев, Ферезеев, [Гергесеев,] Евеев и Иевусеев, в землю, где течет молоко и мед.",
+        "NEO": "et j’ai dit : Je vous ferai monter de l’Égypte, où l’on vous opprime, dans le pays des Chananéens, des Hittites, des Amorrhéens, des Phérézéens, des Hévéens et des Jébuséens, dans un pays où coulent le lait et le miel.",
+        "NAB": "so I have decided to lead you up out of the misery of Egypt into the land of the Canaanites, Hittites, Amorites, Perizzites, Hivites and Jebusites, a land flowing with milk and honey.",
+        "VAT_ES": "Por eso decidí librarlos de la opresión que sufren en Egipto, para llevarlos al país de los cananeos, los hititas, los amorreos, los perizitas, los jivitas y los jebuseos, a una tierra que mana leche y miel».",
+        "CEI": "E ho detto: Vi farò uscire dalla umiliazione dell'Egitto verso il paese del Cananeo, dell'Hittita, dell'Amorreo, del Perizzita, dell'Eveo e del Gebuseo, verso un paese dove scorre latte e miele."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/שָׁמְע֖וּ לְ/קֹלֶ֑/ךָ וּ/בָאתָ֡ אַתָּה֩ וְ/זִקְנֵ֨י יִשְׂרָאֵ֜ל אֶל מֶ֣לֶךְ מִצְרַ֗יִם וַ/אֲמַרְתֶּ֤ם אֵלָי/ו֙ יְהוָ֞ה אֱלֹהֵ֤י הָֽ/עִבְרִיִּים֙ נִקְרָ֣ה עָלֵ֔י/נוּ וְ/עַתָּ֗ה נֵֽלֲכָה נָּ֞א דֶּ֣רֶךְ שְׁלֹ֤שֶׁת יָמִים֙ בַּ/מִּדְבָּ֔ר וְ/נִזְבְּחָ֖ה לַֽ/יהוָ֥ה אֱלֹהֵֽי/נוּ׃",
+        "LXX": "καὶ εἰσακούσονταί σου τῆς φωνῆς· καὶ εἰσελεύσῃ σὺ καὶ ἡ γερουσία Ἰσραὴλ πρὸς Φαραὼ βασιλέα Αἰγύπτου, καὶ ἐρεῖς πρὸς αὐτόν Ὁ θεὸς τῶν Ἐβραίων προσκέκληται ἡμᾶς· πορευσώμεθα οὖν ὁδὸν τριῶν ἡμερῶν εἰς τὴν ἔρημον, ἵνα θύσωμεν τῷ θεῷ ἡμῶν.",
+        "VUL": "Et audient vocem tuam : ingredierisque tu, et seniores Israël, ad regem Ægypti, et dices ad eum : Dominus Deus Hebræorum vocavit nos : ibimus viam trium dierum in solitudinem, ut immolemus Domino Deo nostro.",
+        "SYN": "И они послушают голоса твоего, и пойдешь ты и старейшины Израилевы к [фараону] царю Египетскому, и скажете ему: Господь, Бог Евреев, призвал нас; итак отпусти нас в пустыню, на три дня пути, чтобы принести жертву Господу, Богу нашему.",
+        "NEO": "Ils écouteront ta voix, et tu iras, toi et les anciens d’Israël, vers le roi d’Égypte, et vous lui direz : \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu des Hébreux, s’est présenté à nous. Et maintenant, laisse-nous aller à trois journées de marche dans le désert, pour offrir des sacrifices à \\+w Yahweh|strong=\"H3068\"\\+w** notre Dieu.",
+        "NAB": "\"Thus they will heed your message. Then you and the elders of Israel shall go to the king of Egypt and say to him: The LORD, the God of the Hebrews, has sent us word. Permit us, then, to go a three days' journey in the desert, that we may offer sacrifice to the LORD, our God.",
+        "VAT_ES": "Ellos te escucharán, y tú irás a presentarte ante el rey de Egipto, junto con los ancianos de Israel. Entonces le dirás: «El Señor, el Dios de los hebreos, vino a nuestro encuentro. Y ahora tenemos que realizar una marcha de tres días por el desierto, para ofrecer sacrificios al Señor, nuestro Dios».",
+        "CEI": "Essi ascolteranno la tua voce e tu e gli anziani d'Israele andrete dal re di Egitto e gli riferirete: Il Signore, Dio degli Ebrei, si è presentato a noi. Ci sia permesso di andare nel deserto a tre giorni di cammino, per fare un sacrificio al Signore, nostro Dio."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֣י יָדַ֔עְתִּי כִּ֠י לֹֽא יִתֵּ֥ן אֶתְ/כֶ֛ם מֶ֥לֶךְ מִצְרַ֖יִם לַ/הֲלֹ֑ךְ וְ/לֹ֖א בְּ/יָ֥ד חֲזָקָֽה׃",
+        "LXX": "ἐγὼ δὲ οἶδα ὅτι οὐ προήσεται ὑμᾶς Φαραὼ βασιλεὺς Αἰγύπτου πορευθῆναι, ἐὰν μὴ μετὰ χειρὸς κραταιᾶς·",
+        "VUL": "Sed ego scio quod non dimittet vos rex Ægypti ut eatis nisi per manum validam.",
+        "SYN": "Но Я знаю, что [фараон] царь Египетский не позволит вам идти, если _не_ _принудить_ _его_ рукою крепкою;",
+        "NEO": "Je sais que le roi d’Égypte ne vous permettra pas d’aller, si ce n’est forcé par une main puissante.",
+        "NAB": "\"Yet I know that the king of Egypt will not allow you to go unless he is forced.",
+        "VAT_ES": "Ya sé que el rey de Egipto no los dejará partir, si no es obligado por la fuerza.",
+        "CEI": "Io so che il re d'Egitto non vi permetterà di partire, se non con l'intervento di una mano forte."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/שָׁלַחְתִּ֤י אֶת יָדִ/י֙ וְ/הִכֵּיתִ֣י אֶת מִצְרַ֔יִם בְּ/כֹל֙ נִפְלְאֹתַ֔/י אֲשֶׁ֥ר אֶֽעֱשֶׂ֖ה בְּ/קִרְבּ֑/וֹ וְ/אַחֲרֵי כֵ֖ן יְשַׁלַּ֥ח אֶתְ/כֶֽם׃",
+        "LXX": "καὶ ἐκτείνας τὴν χεῖρα πατάξω τοὺς Αἰγυπτίους ἐν πᾶσι τοῖς θαυμασίοις μου οἷς ποιήσω ἐν αὐτοῖς, καὶ μετὰ ταῦτα ἐξαποστελεῖ ὑμᾶς.",
+        "VUL": "Extendam enim manum meam, et percutiam Ægyptum in cunctis mirabilibus meis, quæ facturus sum in medio eorum : post hæc dimittet vos.",
+        "SYN": "и простру руку Мою и поражу Египет всеми чудесами Моими, которые сделаю среди его; и после того он отпустит вас.",
+        "NEO": "J’étendrai ma main et je frapperai l’Égypte par toutes sortes de prodiges que je ferai au milieu d’elle ; après quoi, il vous laissera aller.",
+        "NAB": "I will stretch out my hand, therefore, and smite Egypt by doing all kinds of wondrous deeds there. After that he will send you away.",
+        "VAT_ES": "Pero yo extenderé mi mano y castigaré a Egipto, realizando ante ellos toda clase de prodigios. Así él los dejará partir,",
+        "CEI": "Stenderò dunque la mano e colpirò l'Egitto con tutti i prodigi che opererò in mezzo ad esso, dopo egli vi lascerà andare."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/נָתַתִּ֛י אֶת חֵ֥ן הָֽ/עָם הַ/זֶּ֖ה בְּ/עֵינֵ֣י מִצְרָ֑יִם וְ/הָיָה֙ כִּ֣י תֵֽלֵכ֔וּ/ן לֹ֥א תֵלְכ֖וּ רֵיקָֽם׃",
+        "LXX": "καὶ δώσω χάριν τῷ λαῷ τούτῳ ἐναντίον τῶν Αἰγυπτίων· ὅταν δὲ ἀποτρέχητε, οὐκ ἀπελεύσεσθε κενοί·",
+        "VUL": "Daboque gratiam populo huic coram Ægyptiis : et cum egrediemini, non exibitis vacui :",
+        "SYN": "И дам народу сему милость в глазах Египтян; и когда пойдете, то пойдете не с пустыми руками:",
+        "NEO": "Je ferai même que ce peuple trouve grâce aux yeux des Égyptiens et, quand vous partirez, vous ne partirez pas les mains vides.",
+        "NAB": "I will even make the Egyptians so well-disposed toward this people that, when you leave, you will not go empty-handed.",
+        "VAT_ES": "y haré que este pueblo se gane el favor de los egipcios, de manera que cuando ustedes salgan, no se vayan con las manos vacías.",
+        "CEI": "Farò sì che questo popolo trovi grazia agli occhi degli Egiziani: quando partirete, non ve ne andrete a mani vuote."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/שָׁאֲלָ֨ה אִשָּׁ֤ה מִ/שְּׁכֶנְתָּ/הּ֙ וּ/מִ/גָּרַ֣ת בֵּיתָ֔/הּ כְּלֵי כֶ֛סֶף וּ/כְלֵ֥י זָהָ֖ב וּ/שְׂמָלֹ֑ת וְ/שַׂמְתֶּ֗ם עַל בְּנֵי/כֶם֙ וְ/עַל בְּנֹ֣תֵי/כֶ֔ם וְ/נִצַּלְתֶּ֖ם אֶת מִצְרָֽיִם׃",
+        "LXX": "αἰτήσει γυνὴ παρὰ γείτονος καὶ συσκήνου αὐτῆς σκεύη ἀργυρᾶ καὶ χρυσᾶ καὶ ἱματισμόν, καὶ ἐπιθήσετε ἐπὶ τοὺς υἱοὺς ὑμῶν καὶ ἐπὶ τὰς θυγατέρας ὑμῶν· καὶ σκυλεύσατε τοὺς Αἰγυπτίους.",
+        "VUL": "sed postulabit mulier a vicina sua et ab hospita sua, vasa argentea et aurea, ac vestes : ponetisque eas super filios et filias vestras, et spoliabitis Ægyptum.",
+        "SYN": "каждая женщина выпросит у соседки своей и у живущей в доме ее вещей серебряных и вещей золотых, и одежд, и вы нарядите ими и сыновей ваших и дочерей ваших, и оберете Египтян.",
+        "NEO": "Mais chaque femme demandera à sa voisine et à celle qui demeure dans sa maison des objets d’argent, des objets d’or et des vêtements que vous mettrez sur vos fils et vos filles. Et vous dépouillerez l’Égypte. »",
+        "NAB": "Every woman shall ask her neighbor and her house guest for silver and gold articles and for clothing to put on your sons and daughters. Thus you will despoil the Egyptians.\"",
+        "VAT_ES": "Por eso, cada mujer pedirá a su vecina y a la que se hospeda en su casa, objetos de plata y oro, y también vestidos, y se los pondrán a sus hijos e hijas. Así despojarán a los egipcios.",
+        "CEI": "Ogni donna domanderà alla sua vicina e all'inquilina della sua casa oggetti di argento e oggetti d'oro e vesti; ne caricherete i vostri figli e le vostre figlie e spoglierete l'Egitto\"."
+      }
+    }
+  }
+}

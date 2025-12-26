@@ -1,0 +1,483 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_027",
+  "book_key": "DEUT",
+  "sequence": 27,
+  "chapter_in": {
+    "MT": 27,
+    "VUL": 27,
+    "LXX": 27
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְצַ֤ו מֹשֶׁה֙ וְ/זִקְנֵ֣י יִשְׂרָאֵ֔ל אֶת הָ/עָ֖ם לֵ/אמֹ֑ר שָׁמֹר֙ אֶת כָּל הַ/מִּצְוָ֔ה אֲשֶׁ֧ר אָנֹכִ֛י מְצַוֶּ֥ה אֶתְ/כֶ֖ם הַ/יּֽוֹם׃",
+        "LXX": "Καὶ προσέταξεν Μωυσῆς καὶ ἡ γερουσία Ἰσραηλειτῶν Φυλάσσεσθε πάσας τὰς ἐντολάς ταύτας ὅσας ἐγὼ ἐντέλλομαι ὑμῖν σήμερον.",
+        "VUL": "Præcepit autem Moyses et seniores Israël populo, dicentes : Custodite omne mandatum quod præcipio vobis hodie.",
+        "SYN": "И заповедал Моисей и старейшины [сынов] Израилевых народу, говоря: исполняйте все заповеди, которые заповедую вам ныне.",
+        "NEO": "Moïse, avec les anciens d’Israël, donna cet ordre au peuple : « Observez tout le commandement que je vous prescris aujourd’hui.",
+        "NAB": "Then Moses, with the elders of Israel, gave the people this order: \"Keep all these commandments which I enjoin on you today.",
+        "VAT_ES": "Moisés y los ancianos de Israel dieron esta orden al pueblo: Observa integramente el mandamiento que hoy les prescribo.",
+        "CEI": "Mosè e gli anziani d'Israele diedero quest'ordine al popolo: \"Osservate tutti i comandi che oggi vi do."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה בַּ/יּוֹם֮ אֲשֶׁ֣ר תַּעַבְר֣וּ אֶת הַ/יַּרְדֵּן֒ אֶל הָ/אָ֕רֶץ אֲשֶׁר יְהוָ֥ה אֱלֹהֶ֖י/ךָ נֹתֵ֣ן לָ֑/ךְ וַ/הֲקֵמֹתָ֤ לְ/ךָ֙ אֲבָנִ֣ים גְּדֹל֔וֹת וְ/שַׂדְתָּ֥ אֹתָ֖/ם בַּ/שִּֽׂיד׃",
+        "LXX": "καὶ ἔσται ᾗ ἂν ἡμέρᾳ διαβῆτε τὸν Ἰορδάνην εἰς τὴν γῆν ἣν Κύριος ὁ θεός σου δίδωσίν σοι, καὶ στήσεις σεαυτῷ λίθους μεγάλους καὶ κονιάσεις αὐτοὺς κονίᾳ·",
+        "VUL": "Cumque transieritis Jordanem in terram, quam Dominus Deus tuus dabit tibi, eriges ingentes lapides, et calce lævigabis eos,",
+        "SYN": "И когда перейдете за Иордан, в землю, которую Господь Бог твой дает тебе, тогда поставь себе большие камни и обмажь их известью;",
+        "NEO": "Lorsque vous aurez passé le Jourdain pour entrer dans le pays que te donne \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, tu dresseras de grandes pierres et tu les enduiras de chaux,",
+        "NAB": "On the day you cross the Jordan into the land which the LORD, your God, is giving you, set up some large stones and coat them with plaster.",
+        "VAT_ES": "El día en que crucen el Jordán para ir a la tierra que el Señor, tu Dios, te da, erigirás unas piedras, bien grandes, las blanquearás con cal,",
+        "CEI": "Quando avrete passato il Giordano per entrare nel paese che il Signore vostro Dio sta per darvi, erigerai grandi pietre e le intonacherai di calce."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/כָתַבְתָּ֣ עֲלֵי/הֶ֗ן אֶֽת כָּל דִּבְרֵ֛י הַ/תּוֹרָ֥ה הַ/זֹּ֖את בְּ/עָבְרֶ֑/ךָ לְמַ֡עַן אֲשֶׁר֩ תָּבֹ֨א אֶל הָ/אָ֜רֶץ אֲֽשֶׁר יְהוָ֥ה אֱלֹהֶ֣י/ךָ נֹתֵ֣ן לְ/ךָ֗ אֶ֣רֶץ זָבַ֤ת חָלָב֙ וּ/דְבַ֔שׁ כַּ/אֲשֶׁ֥ר דִּבֶּ֛ר יְהוָ֥ה אֱלֹהֵֽי אֲבֹתֶ֖י/ךָ לָֽ/ךְ׃",
+        "LXX": "καὶ γράψεις ἐπὶ τῶν λίθων τούτων πάντας τούς λόγους τοῦ νόμου τούτου, ὡς ἂν διαβῆτε τὸν Ἰορδάνην, ἡνίκα ἐὰν εἰσέλθητε εἰς τὴν γῆν ἣν Κύριος ὁ θεὸς τῶν πατέρων σου δίδωσίν σοι, γῆν ῥέουσαν γάλα καὶ μέλι, ὃν τρόπον εἶπεν Κύριος ὁ θεὸς τῶν πατέρων σού σοι.",
+        "VUL": "ut possis in eis scribere omnia verba legis hujus, Jordane transmisso : ut introëas terram, quam Dominus Deus tuus dabit tibi, terram lacte et melle manantem, sicut juravit patribus tuis.",
+        "SYN": "и напиши на [камнях] сих все слова закона сего, когда перейдешь [Иордан], чтобы вступить в землю, которую Господь Бог твой дает тебе, в землю, где течет молоко и мед, как говорил тебе Господь Бог отцов твоих.",
+        "NEO": "et tu écriras dessus toutes les paroles de cette loi, après ton passage, afin que tu entres dans le pays que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te donne, pays où coulent le lait et le miel, comme te l’a dit \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu de tes pères.",
+        "NAB": "Also write on them, at the time you cross, all the words of this law, that you may thus enter into the land flowing with milk and honey, which the LORD, your God, and the God of your fathers, is giving you as he promised you.",
+        "VAT_ES": "y escribirás en ellas todas las palabras de esta Ley. Harás esto cuando cruces el Jordán para entrar en el país que te da el Señor, tu Dios –esa tierra que mana leche y miel– como el Señor, el Dios de tus padres te lo ha prometido.",
+        "CEI": "Scriverai su di esse tutte le parole di questa legge, quando avrai passato il Giordano per entrare nel paese che il Signore tuo Dio sta per darti, paese dove scorre latte e miele, come il Signore, Dio dei tuoi padri, ti ha detto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֮ בְּ/עָבְרְ/כֶ֣ם אֶת הַ/יַּרְדֵּן֒ תָּקִ֜ימוּ אֶת הָ/אֲבָנִ֣ים הָ/אֵ֗לֶּה אֲשֶׁ֨ר אָנֹכִ֜י מְצַוֶּ֥ה אֶתְ/כֶ֛ם הַ/יּ֖וֹם בְּ/הַ֣ר עֵיבָ֑ל וְ/שַׂדְתָּ֥ אוֹתָ֖/ם בַּ/שִּֽׂיד׃",
+        "LXX": "καὶ ἔσται ὡς ἂν διαβῆτε τὸν Ἰορδάνην, στήσετε τοὺς λίθους τούτους οὓς ἐγὼ ἐντέλλομαί σοι σήμερον ἐν ὄρει Γαιβάλ, καὶ κονιάσεις αὐτοὺς κονίᾳ.",
+        "VUL": "Quando ergo transieritis Jordanem, erigite lapides, quos ego hodie præcipio vobis in monte Hebal, et lævigabis eos calce :",
+        "SYN": "Когда перейдете Иордан, поставьте камни те, как я повелеваю вам сегодня, на горе Гевал, и обмажьте их известью;",
+        "NEO": "Lors donc que vous aurez passé le Jourdain, vous dresserez sur le mont Hébal ces pierres que je vous prescris aujourd’hui, et tu les enduiras de chaux.",
+        "NAB": "When, moreover, you have crossed the Jordan, besides setting up on Mount Ebal these stones concerning which I command you today, and coating them with plaster,",
+        "VAT_ES": "Después de cruzar el Jordán, pondrán esas piedras en el monte Ebal, según instrucciones que hoy les doy, y las blanquearán con cal.",
+        "CEI": "Quando dunque avrete passato il Giordano, erigerete sul monte Ebal queste pietre, che oggi vi comando, e le intonacherete di calce."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וּ/בָנִ֤יתָ שָּׁם֙ מִזְבֵּ֔חַ לַ/יהוָ֖ה אֱלֹהֶ֑י/ךָ מִזְבַּ֣ח אֲבָנִ֔ים לֹא תָנִ֥יף עֲלֵי/הֶ֖ם בַּרְזֶֽל׃",
+        "LXX": "καὶ οἰκοδομήσεις ἐκεῖ θυσιαστήριον Κυρίῳ τῷ θεῷ σου, θυσιαστήριον ἐκ λίθων, οὐκ ἐπιβαλεῖς ἐπ’ αὐτὸ σίδηρον·",
+        "VUL": "et ædificabis ibi altare Domino Deo tuo de lapidibus, quos ferrum non tetigit,",
+        "SYN": "и устрой там жертвенник Господу Богу твоему, жертвенник из камней, не поднимая на них железа;",
+        "NEO": "Et tu bâtiras là un autel à \\+w Yahweh|strong=\"H3068\"\\+w**, un autel de pierres sur lesquelles tu ne porteras pas le fer.",
+        "NAB": "you shall also build to the LORD, your God, an altar made of stones that no iron tool has touched.",
+        "VAT_ES": "Allí erguirás también un altar de piedra en honor del Señor, tu Dios. No usarás ningún instrumento de hierro para trabajar las piedras,",
+        "CEI": "Là costruirai anche un altare al Signore tuo Dio, un altare di pietre non toccate da strumento di ferro."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אֲבָנִ֤ים שְׁלֵמוֹת֙ תִּבְנֶ֔ה אֶת מִזְבַּ֖ח יְהוָ֣ה אֱלֹהֶ֑י/ךָ וְ/הַעֲלִ֤יתָ עָלָי/ו֙ עוֹלֹ֔ת לַ/יהוָ֖ה אֱלֹהֶֽי/ךָ׃",
+        "LXX": "λίθους ὁλοκλήρους οἰκοδομήσεις θυσιαστήριον Κυρίῳ τῷ θεῷ σου, καὶ ἀνοίσεις ἐπ’ αὐτὸ τὰ ὁλοκαυτώματα Κυρίῳ τῷ θεῷ σου·",
+        "VUL": "et de saxis informibus et impolitis : et offeres super eo holocausta Domino Deo tuo,",
+        "SYN": "из камней цельных устрой жертвенник Господа Бога твоего, и возноси на нем всесожжения Господу Богу твоему,",
+        "NEO": "Tu bâtiras en pierres brutes l’autel de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu. Et tu offriras dessus des holocaustes à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu ;",
+        "NAB": "You shall make this altar of the LORD, your God, with undressed stones, and shall offer on it holocausts to the LORD, your God.",
+        "VAT_ES": "porque el altar del Señor deberá estar construido con piedras intactas. Ofrecerás en él holocaustos al Señor, tu Dios,",
+        "CEI": "Costruirai l'altare del Signore tuo Dio con pietre intatte e sopra vi offrirai olocausti al Signore tuo Dio,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/זָבַחְתָּ֥ שְׁלָמִ֖ים וְ/אָכַ֣לְתָּ שָּׁ֑ם וְ/שָׂ֣מַחְתָּ֔ לִ/פְנֵ֖י יְהוָ֥ה אֱלֹהֶֽי/ךָ׃",
+        "LXX": "καὶ θύσεις ἐκεῖ θυσίαν σωτηρίου, καὶ φάγῃ καὶ ἐμπλησθήσῃ καὶ εὐφρανθήσῃ ἐναντίον Κυρίου τοῦ θεοῦ σου·",
+        "VUL": "et immolabis hostias pacificas, comedesque ibi, et epulaberis coram Domino Deo tuo.",
+        "SYN": "и приноси жертвы мирные, и ешь [и насыщайся] там, и веселись пред Господом Богом твоим;",
+        "NEO": "tu offriras des sacrifices pacifiques, et tu mangeras là et tu te réjouiras devant \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu.",
+        "NAB": "You shall also sacrifice peace offerings and eat them there, making merry before the LORD, your God.",
+        "VAT_ES": "e inmolarás sacrificios de comunión. Allí comerás y te alegrarás en la presencia del Señor, tu Dios,",
+        "CEI": "offrirai sacrifici di comunione e là mangerai e ti gioirai davanti al Signore tuo Dio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/כָתַבְתָּ֣ עַל הָ/אֲבָנִ֗ים אֶֽת כָּל דִּבְרֵ֛י הַ/תּוֹרָ֥ה הַ/זֹּ֖את בַּאֵ֥ר הֵיטֵֽב׃",
+        "LXX": "καὶ γράψεις ἐπὶ τῶν λίθων πάντα τὸν νόμον τοῦτον σαφῶς σφόδρα.",
+        "VUL": "Et scribes super lapides omnia verba legis hujus plane et lucide.",
+        "SYN": "и напиши на камнях [сих] все слова закона сего очень явственно.",
+        "NEO": "Tu écriras sur ces pierres toutes les paroles de cette loi en caractères bien nets. »",
+        "NAB": "On the stones you shall inscribe all the words of this law very clearly.\"",
+        "VAT_ES": "y escribirás en las piedras, con rasgos bien claros, todas las palabras de esta Ley.",
+        "CEI": "Scriverai su quelle pietre tutte le parole di questa legge con scrittura ben chiara\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֤ר מֹשֶׁה֙ וְ/הַ/כֹּהֲנִ֣ים הַ/לְוִיִּ֔ם אֶ֥ל כָּל יִשְׂרָאֵ֖ל לֵ/אמֹ֑ר הַסְכֵּ֤ת וּ/שְׁמַע֙ יִשְׂרָאֵ֔ל הַ/יּ֤וֹם הַ/זֶּה֙ נִהְיֵ֣יתָֽ לְ/עָ֔ם לַ/יהוָ֖ה אֱלֹהֶֽי/ךָ׃",
+        "LXX": "Καὶ ἐλάλησεν Μωυσῆς καὶ οἱ ἱερεῖς οἱ Λευεῖται παντὶ Ἰσραὴλ λέγοντες Σιώπα καὶ ἄκουε, Ἰσραήλ· ἐν τῇ ἡμέρᾳ ταύτῃ γέγονας εἰς λαὸν Κυρίῳ τῷ θεῷ σου.",
+        "VUL": "Dixeruntque Moyses et sacerdotes Levitici generis ad omnem Israëlem : Attende, et audi, Israël : hodie factus es populus Domini Dei tui :",
+        "SYN": "И сказал Моисей и священники левиты всему Израилю, говоря: внимай и слушай, Израиль: в день сей ты сделался народом Господа Бога твоего;",
+        "NEO": "Moïse et les prêtres lévitiques parlèrent à tout Israël, en disant : « Garde le silence et écoute, ô Israël ! Aujourd’hui tu es devenu le peuple de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu.",
+        "NAB": "Moses, with the levitical priests, then said to all Israel: \"Be silent, O Israel, and listen! This day you have become the people of the LORD, your God.",
+        "VAT_ES": "Después, Moisés y los sacerdotes levitas se dirigieron a todo Israel en estos términos: «Calla, Israel, y escucha. Hoy te has convertido en el pueblo del Señor, tu Dios.",
+        "CEI": "Mosè e i sacerdoti leviti dissero a tutto Israele: \"Fà silenzio e ascolta, Israele! Oggi sei divenuto il popolo del Signore tuo Dio."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/שָׁ֣מַעְתָּ֔ בְּ/ק֖וֹל יְהוָ֣ה אֱלֹהֶ֑י/ךָ וְ/עָשִׂ֤יתָ אֶת מִצְוֺתָ/ו֙ וְ/אֶת חֻקָּ֔י/ו אֲשֶׁ֛ר אָנֹכִ֥י מְצַוְּ/ךָ֖ הַ/יּֽוֹם׃",
+        "LXX": "καὶ εἰσακούσῃ τῆς φωνῆς Κυρίου τοῦ θεοῦ σου, καὶ ποιήσεις πάσας τὰς ἐντολὰς αὐτοῦ καὶ τὰ δικαιώματα αὐτοῦ ὅσα ἐγὼ ἐντέλλομαί σοι σήμερον.",
+        "VUL": "audies vocem ejus, et facies mandata atque justitias, quas ego præcipio tibi.",
+        "SYN": "итак слушай гласа Господа Бога твоего и исполняй [все] заповеди Его и постановления Его, которые заповедую тебе сегодня.",
+        "NEO": "Tu obéiras donc à la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, et tu mettras en pratique ses commandements et ses lois, que je te prescris aujourd’hui. »",
+        "NAB": "You shall therefore hearken to the voice of the LORD, your God, and keep his commandments and statutes which I enjoin on you today.\"",
+        "VAT_ES": "Escucha la voz del Señor, tu Dios, y practica los mandamientos y las leyes que hoy te prescribo».",
+        "CEI": "Obbedirai quindi alla voce del Signore tuo Dio e metterai in pratica i suoi comandi e le sue leggi che oggi ti do\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יְצַ֤ו מֹשֶׁה֙ אֶת הָ/עָ֔ם בַּ/יּ֥וֹם הַ/ה֖וּא לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐνετείλατο Μωυσῆς τῷ λαῷ ἐν τῇ ἡμέρᾳ ἐκείνῃ λέγων",
+        "VUL": "Præcepitque Moyses populo in die illo, dicens :",
+        "SYN": "И заповедал Моисей народу в день тот, говоря:",
+        "NEO": "Le même jour, Moïse donna cet ordre au peuple :",
+        "NAB": "That same day Moses gave the people this order:",
+        "VAT_ES": "Aquel día, Moisés dio esta orden al pueblo:",
+        "CEI": "In quello stesso giorno Mosè diede quest'ordine al popolo:"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אֵ֠לֶּה יַֽעַמְד֞וּ לְ/בָרֵ֤ךְ אֶת הָ/עָם֙ עַל הַ֣ר גְּרִזִ֔ים בְּ/עָבְרְ/כֶ֖ם אֶת הַ/יַּרְדֵּ֑ן שִׁמְעוֹן֙ וְ/לֵוִ֣י וִֽ/יהוּדָ֔ה וְ/יִשָּׂשכָ֖ר וְ/יוֹסֵ֥ף וּ/בִנְיָמִֽן׃",
+        "LXX": "Οὗτοι στήσονται εὐλογεῖν τὸν λαὸν ἐν ὄρει Γαριζείν, διαβάντες τὸν Ἰορδάνην· Συμεών, Λευεί, Ἰουδά, Ἰσσαχάρ, Ἰωσὴφ καὶ Βενιαμείν.",
+        "VUL": "Hi stabunt ad benedicendum populo super montem Garizim, Jordane transmisso : Simeon, Levi, Judas, Issachar, Joseph, et Benjamin.",
+        "SYN": "сии должны стать на горе Гаризим, чтобы благословлять народ, когда перейдете Иордан: Симеон, Левий, Иуда, Иссахар, Иосиф и Вениамин;",
+        "NEO": "« Lorsque vous aurez passé le Jourdain, ceux-ci se tiendront sur le mont Garizim, pour bénir le peuple : Siméon, Lévi, Juda, Issachar, Joseph et Benjamin.",
+        "NAB": "\"When you cross the Jordan, Simeon, Levi, Judah, Issachar, Joseph and Benjamin shall stand on Mount Gerizim to pronounce blessings over the people,",
+        "VAT_ES": "Después de cruzar el Jordán, las tribus de Simeón, Leví y Judá, Isacar, José y Benjamín, estarán en el monte Garizim, para proclamar la bendición al pueblo;",
+        "CEI": "\"Quando avrete passato il Giordano, ecco quelli che staranno sul mont Garizim per benedire il popolo: Simeone, Levi, Giuda, Issacar, Giuseppe e Beniamino;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/אֵ֛לֶּה יַֽעַמְד֥וּ עַל הַ/קְּלָלָ֖ה בְּ/הַ֣ר עֵיבָ֑ל רְאוּבֵן֙ גָּ֣ד וְ/אָשֵׁ֔ר וּ/זְבוּלֻ֖ן דָּ֥ן וְ/נַפְתָּלִֽי׃",
+        "LXX": "καὶ οὗτοι στήσονται ἐπὶ τῆς κατάρας ἐν ὄρει Γαιβάλ· Ῥουβήν, Γὰδ καὶ Ἀσήρ, Ζαβουλών, Δὰν καὶ Νεφθαλεί.",
+        "VUL": "Et e regione isti stabunt ad maledicendum in monte Hebal : Ruben, Gad, et Aser, et Zabulon, Dan, et Nephthali.",
+        "SYN": "а сии должны стать на горе Гевал, чтобы _произносить_ проклятие: Рувим, Гад, Асир, Завулон, Дан и Неффалим.",
+        "NEO": "Et ceux-là se tiendront sur le mont Hébal pour la malédiction : Ruben, Gad, Aser, Zabulon, Dan et Nephthali.",
+        "NAB": "while Reuben, Gad, Asher, Zebulun, Dan and Naphtali shall stand on Mount Ebal to pronounce curses.",
+        "VAT_ES": "y las tribus de Rubén, Gad y Aser, Zabulón, Dan y Neftalí estarán en el monte Ebal, para proclamar la maldición.",
+        "CEI": "ecco quelli che staranno sul monte Ebal, per pronunciare la maledizione: Ruben, Gad, Aser, Zàbulon, Dan e Nèftali."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/עָנ֣וּ הַ/לְוִיִּ֗ם וְ/אָֽמְר֛וּ אֶל כָּל אִ֥ישׁ יִשְׂרָאֵ֖ל ק֥וֹל רָֽם׃",
+        "LXX": "Καὶ ἀποκριθέντες οἱ Λευεῖται ἐροῦσιν παντὶ Ἰσραὴλ φωνῇ μεγάλῃ",
+        "VUL": "Et pronuntiabunt Levitæ, dicentque ad omnes viros Israël excelsa voce :",
+        "SYN": "Левиты возгласят и скажут всем Израильтянам громким голосом:",
+        "NEO": "Et les Lévites prendront la parole et diront d’une voix haute à tous les hommes d’Israël :",
+        "NAB": "\"The Levites shall proclaim aloud to all the men of Israel:",
+        "VAT_ES": "Los levitas tomarán la palabra y dirán en alta voz a todos los hombres de Israel:",
+        "CEI": "I leviti prenderanno la parola e diranno ad alta voce a tutti gli Israeliti:"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אָר֣וּר הָ/אִ֡ישׁ אֲשֶׁ֣ר יַעֲשֶׂה֩ פֶ֨סֶל וּ/מַסֵּכָ֜ה תּוֹעֲבַ֣ת יְהוָ֗ה מַעֲשֵׂ֛ה יְדֵ֥י חָרָ֖שׁ וְ/שָׂ֣ם בַּ/סָּ֑תֶר וְ/עָנ֧וּ כָל הָ/עָ֛ם וְ/אָמְר֖וּ אָמֵֽן׃",
+        "LXX": "Ἐπικατάρατος ἄνθρωπος ὅστις ποιήσει γλυπτὸν καὶ χωνευτόν, βδέλυγμα Κυρίῳ, ἔργον χειρῶν τεχνιτῶν, καὶ θήσει αὐτὸ ἐν ἀποκρύφῳ. καὶ ἀποκριθεὶς ὁ λαὸς ἐροῦσιν Γένοιτο.",
+        "VUL": "Maledictus homo qui facit sculptile et conflatile, abominationem Domini, opus manuum artificum, ponetque illud in abscondito : et respondebit omnis populus, et dicet : Amen.",
+        "SYN": "проклят, кто сделает изваянный или литый кумир, мерзость пред Господом, произведение рук художника, и поставит его в тайном месте! Весь народ возгласит и скажет: аминь.",
+        "NEO": "Maudit soit l’homme qui fait une image taillée ou une image de fonte, abomination de \\+w Yahweh|strong=\"H3068\"\\+w**, œuvre des mains d’un artisan, et qui la place dans un lieu secret ! — Et tout le peuple répondra et dira : Amen !",
+        "NAB": "'Cursed be the man who makes a carved or molten idol - an abomination to the LORD, the product of a craftsman's hands - and sets it up in secret!' And all the people shall answer, 'Amen!'",
+        "VAT_ES": "Maldito sea el hombre que hace un ídolo tallado o de metal fundido –abominación para el Señor, obra de un artesano– y lo guarda en un lugar oculto. Y todo el pueblo responderá: Amén.",
+        "CEI": "Maledetto l'uomo che fa un'immagine scolpita o di metallo fuso, abominio per il Signore, lavoro di mano d'artefice, e la pone in luogo occulto! Tutto il popolo risponderà e dirà: Amen."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אָר֕וּר מַקְלֶ֥ה אָבִ֖י/ו וְ/אִמּ֑/וֹ וְ/אָמַ֥ר כָּל הָ/עָ֖ם אָמֵֽן׃",
+        "LXX": "Ἐπικατάρατος ὁ ἀτιμάζων πατέρα αὐτοῦ ἢ μητέρα αὐτοῦ. καὶ ἐροῦσιν πᾶς ὁ λαός Γένοιτο.",
+        "VUL": "Maledictus qui non honorat patrem suum, et matrem : et dicet omnis populus : Amen.",
+        "SYN": "Проклят злословящий отца своего или матерь свою! И весь народ скажет: аминь.",
+        "NEO": "Maudit soit celui qui méprise son père et sa mère ! — Et tout le peuple dira : Amen !",
+        "NAB": "'Cursed be he who dishonors his father or his mother!' And all the people shall answer, 'Amen!'",
+        "VAT_ES": "Maldito sea el que menosprecia a su padre o a su madre. Y todo el pueblo responderá: Amén.",
+        "CEI": "Maledetto chi maltratta il padre e la madre! Tutto il popolo dirà: Amen."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אָר֕וּר מַסִּ֖יג גְּב֣וּל רֵעֵ֑/הוּ וְ/אָמַ֥ר כָּל הָ/עָ֖ם אָמֵֽן׃",
+        "LXX": "Ἐπικατάρατος ὁ μετατιθεὶς ὅρια τοῦ πλησίον. καὶ ἐροῦσιν πᾶς ὁ λαός Γένοιτο.",
+        "VUL": "Maledictus qui transfert terminos proximi sui : et dicet omnis populus : Amen.",
+        "SYN": "Проклят нарушающий межи ближнего своего! И весь народ скажет: аминь.",
+        "NEO": "Maudit soit celui qui déplace la borne de son prochain ! — Et tout le peuple dira : Amen !",
+        "NAB": "'Cursed be he who moves his neighbor's landmarks!' And all the people shall answer, 'Amen!'",
+        "VAT_ES": "Maldito sea el que desplaza los límites de la propiedad de su vecino. Y todo el pueblo responderá: Amén.",
+        "CEI": "Maledetto chi sposta i confini del suo prossimo! Tutto il popolo dirà: Amen."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "אָר֕וּר מַשְׁגֶּ֥ה עִוֵּ֖ר בַּ/דָּ֑רֶךְ וְ/אָמַ֥ר כָּל הָ/עָ֖ם אָמֵֽן׃",
+        "LXX": "Ἐπικατάρατος ὁ πλανῶν τυφλὸν ἐν ὁδῷ. καὶ ἐροῦσιν πᾶς ὁ λαός Γένοιτο.",
+        "VUL": "Maledictus qui errare facit cæcum in itinere : et dicet omnis populus : Amen.",
+        "SYN": "Проклят, кто слепого сбивает с пути! И весь народ скажет: аминь.",
+        "NEO": "Maudit soit celui qui fait égarer un aveugle dans le chemin ! — Et tout le peuple dira : Amen !",
+        "NAB": "'Cursed be he who misleads a blind man on his way!' And all the people shall answer, 'Amen!'",
+        "VAT_ES": "Maldito sea el que aparta a un ciego del camino. Y todo el pueblo responderá: Amén.",
+        "CEI": "Maledetto chi fa smarrire il cammino al cieco! Tutto il popolo dirà: Amen."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "אָר֗וּר מַטֶּ֛ה מִשְׁפַּ֥ט גֵּר יָת֖וֹם וְ/אַלְמָנָ֑ה וְ/אָמַ֥ר כָּל הָ/עָ֖ם אָמֵֽן׃",
+        "LXX": "Ἐπικατάρατος ὃς ἂν ἐκκλίνῃ κρίσιν προσηλύτου καὶ ὀρφανοῦ καὶ χήρας. καὶ ἐροῦσιν πᾶς ὁ λαός Γένοιτο.",
+        "VUL": "Maledictus qui pervertit judicium advenæ, pupilli et viduæ : et dicet omnis populus : Amen.",
+        "SYN": "Проклят, кто превратно судит пришельца, сироту и вдову! И весь народ скажет: аминь.",
+        "NEO": "Maudit soit celui qui viole le droit de l’étranger, de l’orphelin et de la veuve ! — Et tout le peuple dira : Amen !",
+        "NAB": "'Cursed be he who violates the rights of the alien, the orphan or the widow!' And all the people shall answer, 'Amen!'",
+        "VAT_ES": "Maldito sea el que conculca el derecho del extranjero, del huérfano o de la viuda. Y todo el pueblo responderá. Amén.",
+        "CEI": "Maledetto chi lede il diritto del forestiero, dell'orfano e della vedova! Tutto il popolo dirà: Amen."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "אָר֗וּר שֹׁכֵב֙ עִם אֵ֣שֶׁת אָבִ֔י/ו כִּ֥י גִלָּ֖ה כְּנַ֣ף אָבִ֑י/ו וְ/אָמַ֥ר כָּל הָ/עָ֖ם אָמֵֽן׃",
+        "LXX": "Ἐπικατάρατος ὁ κοιμώμενος μετὰ γυναικὸς ἐκ πατρὸς αὐτοῦ, ὅτι ἀπεκάλυψεν συνκάλυμμα τοῦ πατρὸς αὐτοῦ. καὶ ἐροῦσιν πᾶς ὁ λαός Γένοιτο.",
+        "VUL": "Maledictus qui dormit cum uxore patris sui, et revelat operimentum lectuli ejus : et dicet omnis populus : Amen.",
+        "SYN": "Проклят, кто ляжет с женою отца своего, ибо он открыл край _одежды_ отца своего! И весь народ скажет: аминь.",
+        "NEO": "Maudit soit celui qui couche avec la femme de son père, car il soulève la couverture de son père ! — Et tout le peuple dira : Amen !",
+        "NAB": "'Cursed be he who has relations with his father's wife, for he dishonors his father's bed!' And all the people shall answer, 'Amen!'",
+        "VAT_ES": "Maldito sea el que se acuesta con la mujer de su padre, porque de esa manera descubre el borde de la manta de su padre. Y todo el pueblo responderá: Amén.",
+        "CEI": "Maledetto chi si unisce con la moglie del padre, perché solleva il lembo del mantello del padre! Tutto il popolo dirà: Amen."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "אָר֕וּר שֹׁכֵ֖ב עִם כָּל בְּהֵמָ֑ה וְ/אָמַ֥ר כָּל הָ/עָ֖ם אָמֵֽן׃",
+        "LXX": "Ἐπικατάρατος ὁ κοιμώμενος μετὰ παντὸς κτήνους. καὶ ἐροῦσιν πᾶς ὁ λαός Γένοιτο.",
+        "VUL": "Maledictus qui dormit cum omni jumento : et dicet omnis populus : Amen.",
+        "SYN": "Проклят, кто ляжет с каким-либо скотом! И весь народ скажет: аминь.",
+        "NEO": "Maudit soit celui qui couche avec une bête quelconque ! — Et tout le peuple dira : Amen !",
+        "NAB": "'Cursed be he who has relations with any animal!' And all the people shall answer, 'Amen!'",
+        "VAT_ES": "Maldito sea el que se acuesta con un animal. Y todo el pueblo responderá: Amén.",
+        "CEI": "Maledetto chi si unisce con qualsiasi bestia! Tutto il popolo dirà: Amen."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "אָר֗וּר שֹׁכֵב֙ עִם אֲחֹת֔/וֹ בַּת אָבִ֖י/ו א֣וֹ בַת אִמּ֑/וֹ וְ/אָמַ֥ר כָּל הָ/עָ֖ם אָמֵֽן׃",
+        "LXX": "Ἐπικατάρατος ὁ κοιμώμενος μετὰ ἀδελφῆς πατρὸς ἢ μητρὸς αὐτοῦ. καὶ ἐροῦσιν πᾶς ὁ λαός Γένοιτο.",
+        "VUL": "Maledictus qui dormit cum sorore sua, filia patris sui, vel matris suæ : et dicet omnis populus : Amen.",
+        "SYN": "Проклят, кто ляжет с сестрою своею, с дочерью отца своего, или дочерью матери своей! И весь народ скажет: аминь.",
+        "NEO": "Maudit soit celui qui couche avec sa sœur, fille de son père ou fille de sa mère ! — Et tout le peuple dira : Amen !",
+        "NAB": "'Cursed be he who has relations with his sister or his half-sister!' And all the people shall answer, 'Amen!'",
+        "VAT_ES": "Maldito sea el que se acuesta con su hermana, la hija de su padre o de su madre. Y todo el pueblo responderá: Amén. Maldito sea el que se acuesta con su suegra. Y todo el pueblo responderá: Amén.",
+        "CEI": "Maledetto chi si unisce con la propria sorella, figlia di suo padre o figlia di sua madre! Tutto il popolo dirà: Amen."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "אָר֕וּר שֹׁכֵ֖ב עִם חֹֽתַנְתּ֑/וֹ וְ/אָמַ֥ר כָּל הָ/עָ֖ם אָמֵֽן׃",
+        "LXX": "Ἐπικατάρατος ὁ κοιμώμενος μετὰ νύμφης αὐτοῦ. καὶ ἐροῦσιν πᾶς ὁ λαός Γένοιτο. Ἐπικατάρατος ὁ κοιμώμενος μετὰ ἀδελφῆς γυναικὸς αὐτοῦ. καὶ ἐροῦσιν πᾶς ὁ λαός Γένοιτο.",
+        "VUL": "Maledictus qui dormit cum socru sua : et dicet omnis populus : Amen.",
+        "SYN": "Проклят, кто ляжет с тещею своею! И весь народ скажет: аминь. [Проклят, кто ляжет с сестрою жены своей! И весь народ скажет: аминь.]",
+        "NEO": "Maudit soit celui qui couche avec sa belle-mère ! — Et tout le peuple dira : Amen !",
+        "NAB": "'Cursed be he who has relations with his mother-in-law!' And all the people shall answer, 'Amen!'",
+        "VAT_ES": "Maldito sea el que mata ocultamente a su prójimo. Y todo el pueblo responderá: Amén.",
+        "CEI": "Maledetto chi si unisce con la suocera! Tutto il popolo dirà: Amen."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אָר֕וּר מַכֵּ֥ה רֵעֵ֖/הוּ בַּ/סָּ֑תֶר וְ/אָמַ֥ר כָּל הָ/עָ֖ם אָמֵֽן׃",
+        "LXX": "Ἐπικατάρατος ὁ τύπτων τὸν πλησίον αὐτοῦ δόλῳ. καὶ ἐροῦσιν πᾶς ὁ λαός Γένοιτο.",
+        "VUL": "Maledictus qui clam percusserit proximum suum : et dicet omnis populus : Amen.",
+        "SYN": "Проклят, кто тайно убивает ближнего своего! И весь народ скажет: аминь.",
+        "NEO": "Maudit soit celui qui frappe en secret son prochain ! — Et tout le peuple dira : Amen !",
+        "NAB": "'Cursed be he who slays his neighbor in secret!' And all the people shall answer, 'Amen!'",
+        "VAT_ES": "Maldito sea el que mata ocultamente a su prójimo. Y todo el pueblo responderá: Amén.",
+        "CEI": "Maledetto chi uccide il suo prossimo in segreto! Tutto il popolo dirà: Amen."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "אָרוּר֙ לֹקֵ֣חַ שֹׁ֔חַד לְ/הַכּ֥וֹת נֶ֖פֶשׁ דָּ֣ם נָקִ֑י וְ/אָמַ֥ר כָּל הָ/עָ֖ם אָמֵֽן׃",
+        "LXX": "Ἐπικατάρατος ὃς ἂν λάβῃ δῶρα πατάξαι ψυχὴν αἵματος ἀθῴου. καὶ ἐροῦσιν πᾶς ὁ λαός Γένοιτο.",
+        "VUL": "Maledictus qui accipit munera, ut percutiat animam sanguinis innocentis : et dicet omnis populus : Amen.",
+        "SYN": "Проклят, кто берет подкуп, чтоб убить душу _и_ _пролить_ кровь невинную! И весь народ скажет: аминь.",
+        "NEO": "Maudit soit celui qui reçoit un présent pour frapper une vie, répandre le sang innocent ! — Et tout le peuple dira : Amen !",
+        "NAB": "'Cursed be he who accepts payment for slaying an innocent man!' And all the people shall answer, 'Amen!'",
+        "VAT_ES": "Maldito sea el que se deja sobornar para quitar la vida a un inocente: Y todo el pueblo responderá: Amén.",
+        "CEI": "Maledetto chi accetta un regalo per condannare a morte un innocente! Tutto il popolo dirà: Amen."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "אָר֗וּר אֲשֶׁ֧ר לֹא יָקִ֛ים אֶת דִּבְרֵ֥י הַ/תּוֹרָֽה הַ/זֹּ֖את לַ/עֲשׂ֣וֹת אוֹתָ֑/ם וְ/אָמַ֥ר כָּל הָ/עָ֖ם אָמֵֽן׃",
+        "LXX": "Ἐπικατάρατος πᾶς ἄνθρωπος ὃς οὐκ ἐμμένει ἐν πᾶσιν τοῖς λόγοις τοῦ νόμου τούτου ποιῆσαι αὐτούς. καὶ ἐροῦσιν πᾶς ὁ λαός Γένοιτο.",
+        "VUL": "Maledictus qui non permanet in sermonibus legis hujus, nec eos opere perficit : et dicet omnis populus : Amen.",
+        "SYN": "Проклят [всякий человек], кто не исполнит [всех] слов закона сего и не будет поступать по ним! И весь народ скажет: аминь.",
+        "NEO": "Maudit soit celui qui ne maintient pas les paroles de cette loi, en les mettant en pratique ! — Et tout le peuple dira : Amen !",
+        "NAB": "'Cursed be he who fails to fulfill any of the provisions of this law!' And all the people shall answer, 'Amen!'",
+        "VAT_ES": "Maldito sea el que no respeta ni cumple las palabras de esta Ley. Y todo el pueblo responderá: Amén.",
+        "CEI": "Maledetto chi non mantiene in vigore le parole di questa legge, per metterla in pratica! Tutto il popolo dirà: Amen."
+      }
+    }
+  }
+}

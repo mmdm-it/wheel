@@ -1,0 +1,554 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IERE_022",
+  "book_key": "IERE",
+  "sequence": 22,
+  "chapter_in": {
+    "MT": 22,
+    "VUL": 22,
+    "LXX": 22
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "כֹּ֚ה אָמַ֣ר יְהוָ֔ה רֵ֖ד בֵּֽית מֶ֣לֶךְ יְהוּדָ֑ה וְ/דִבַּרְתָּ֣ שָׁ֔ם אֶת הַ/דָּבָ֖ר הַ/זֶּֽה׃",
+        "LXX": "Τάδε λέγει Κύριος Πορεύου καὶ κατάβηθι εἰς τὸν οἶκον τοῦ βασιλέως Ἰούδα, καὶ λαλήσεις ἐκεῖ τὸν λόγον τοῦτον,",
+        "VUL": "Hæc dicit Dominus : Descende in domum regis Juda, et loqueris ibi verbum hoc,",
+        "SYN": "Так сказал Господь: сойди в дом царя Иудейского и произнеси слово сие",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Descends à la maison du roi de Juda, et là tu prononceras ces paroles :",
+        "NAB": "The LORD told me this: Go down to the palace of the king of Judah and there deliver this message:",
+        "VAT_ES": "Así habla el Señor: Baja a la casa del rey de Judá, y pronuncia allí esta palabra.",
+        "CEI": "Così dice il Signore: \"Scendi nella casa del re di Giuda e là proclama questo messaggio."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/אָֽמַרְתָּ֙ שְׁמַ֣ע דְּבַר יְהוָ֔ה מֶ֣לֶךְ יְהוּדָ֔ה הַ/יֹּשֵׁ֖ב עַל כִּסֵּ֣א דָוִ֑ד אַתָּ֤ה וַ/עֲבָדֶ֨י/ךָ֙ וְ/עַמְּ/ךָ֔ הַ/בָּאִ֖ים בַּ/שְּׁעָרִ֥ים הָ/אֵֽלֶּה׃",
+        "LXX": "καὶ ἐρεῖς Ἄκουε λόγον Κυρίου, βασιλεῦ Ἰούδα ὁ καθήμενος ἐπὶ θρόνου Δαυείδ, σὺ καὶ ὁ οἶκός σου καὶ ὁ λαός σου καὶ οἱ εἰσπορευόμενοι ταῖς πύλαις ταύταις",
+        "VUL": "et dices : [Audi verbum Domini, rex Juda,/ qui sedes super solium David :/ tu et servi tui, et populus tuus,/ qui ingredimini per portas istas./",
+        "SYN": "и скажи: выслушай слово Господне, царь Иудейский, сидящий на престоле Давидовом, ты, и слуги твои, и народ твой, входящие сими воротами.",
+        "NEO": "Tu diras : Ecoute la parole de \\+w Yahweh|strong=\"H3068\"\\+w**, ô roi de Juda, qui sièges sur le trône de David, toi, tes serviteurs et ton peuple, qui entrez par ces portes.",
+        "NAB": "You shall say: Listen to the word of the LORD, king of Judah, who sit on the throne of David, you, your ministers, and your people that enter by these gates!",
+        "VAT_ES": "Tú dirás: Escucha la palabra del Señor, rey de Judá que te sientas en el trono de David, tú y también tus servidores y tu pueblo, que entran por estas puertas.",
+        "CEI": "Tu dirai: Ascolta la parola del Signore, o re di Giuda che siedi sul trono di Davide, tu, i tuoi ministri e il tuo popolo, che entrano per queste porte."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כֹּ֣ה אָמַ֣ר יְהוָ֗ה עֲשׂ֤וּ מִשְׁפָּט֙ וּ/צְדָקָ֔ה וְ/הַצִּ֥ילוּ גָז֖וּל מִ/יַּ֣ד עָשׁ֑וֹק וְ/גֵר֩ יָת֨וֹם וְ/אַלְמָנָ֤ה אַל תֹּנוּ֙ אַל תַּחְמֹ֔סוּ וְ/דָ֣ם נָקִ֔י אַֽל תִּשְׁפְּכ֖וּ בַּ/מָּק֥וֹם הַ/זֶּֽה׃",
+        "LXX": "Τάδε λέγει Κύριος Ποιεῖτε κρίσιν καὶ δικαιοσύνην, καὶ ἐξαιρεῖσθε διηρπασμένον ἐκ χειρὸς ἀδικοῦντος αὐτόν, καὶ προσήλυτον καὶ ὀρφανὸν καὶ χήραν μὴ καταδυναστεύετε, καὶ μὴ ἀσεβεῖτε, καὶ αἷμα ἀθῷον μὴ ἐκχέητε ἐν τῷ τόπῳ τούτῳ.",
+        "VUL": "Hæc dicit Dominus :/ Facite judicium et justitiam,/ et liberate vi oppressum de manu calumniatoris :/ et advenam, et pupillum, et viduam/ nolite contristare, neque opprimatis inique,/ et sanguinem innocentem ne effundatis in loco isto./",
+        "SYN": "Так говорит Господь: производите суд и правду и спасайте обижаемого от руки притеснителя, не обижайте и не тесните пришельца, сироты и вдовы, и невинной крови не проливайте на месте сем.",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Faites droit et justice ; arrachez l’opprimé aux mains de l’oppresseur ; l’étranger, l’orphelin et la veuve, ne les maltraitez pas, ne les violentez pas, et ne versez pas le sang innocent dans ce lieu.",
+        "NAB": "Thus says the LORD: Do what is right and just. Rescue the victim from the hand of his oppressor. Do not wrong or oppress the resident alien, the orphan, or the widow, and do not shed innocent blood in this place.",
+        "VAT_ES": "Así habla el Señor: Practiquen el derecho y la justicia; libren al explotado de la mano del opresor; no maltraten ni hagan violencia al extranjero, al huérfano y a la viuda; no derramen sangre inocente en este lugar.",
+        "CEI": "Dice il Signore: Praticate il diritto e la giustizia, liberate l'oppresso dalle mani dell'oppressore, non fate violenza e non opprimete il forestiero, l'orfano e la vedova, e non spargete sangue innocente in questo luogo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּ֤י אִם עָשׂוֹ֙ תַּֽעֲשׂ֔וּ אֶת הַ/דָּבָ֖ר הַ/זֶּ֑ה וּ/בָ֣אוּ בְ/שַׁעֲרֵ֣י הַ/בַּ֣יִת הַ/זֶּ֡ה מְלָכִים֩ יֹשְׁבִ֨ים לְ/דָוִ֜ד עַל כִּסְא֗/וֹ רֹֽכְבִים֙ בָּ/רֶ֣כֶב וּ/בַ/סּוּסִ֔ים ה֥וּא ו/עבד/ו וַ/עֲבָדָ֖י/ו וְ/עַמּֽ/וֹ׃",
+        "LXX": "διότι ἐὰν ποιοῦντες ποιήσητε τὸν λόγον τοῦτον, καὶ εἰσελεύσονται ἐν ταῖς πύλαις τοῦ οἴκου τούτου βασιλεῖς καθήμενοι ἐπὶ θρόνου Δαυεὶδ καὶ ἐπιβεβηκότες ἐφ’ ἁρμάτων καὶ ἵππων, αὐτοὶ καὶ οἱ παῖδες αὐτῶν καὶ ὁ λαὸς αὐτῶν.",
+        "VUL": "Si enim facientes feceritis verbum istud,/ ingredientur per portas domus hujus/ reges sedentes de genere David super thronum ejus,/ et ascendentes currus et equos,/ ipsi, et servi, et populus eorum./",
+        "SYN": "Ибо если вы будете исполнять слово сие, то будут входить воротами дома сего цари, сидящие вместо Давида на престоле его, ездящие на колеснице и на конях, сами и слуги их и народ их.",
+        "NEO": "Si vous accomplissez exactement cette parole, les rois assis sur le trône de David entreront par la porte de cette maison, montés sur des chars et sur des chevaux, eux, leurs serviteurs et leur peuple.",
+        "NAB": "If you carry out these commands, kings who succeed to the throne of David will continue to enter the gates of this palace, riding in chariots or mounted on horses, with their ministers, and their people.",
+        "VAT_ES": "Porque si ustedes cumplen realmente esta palabra, entonces, por las puertas de esta Casa, entrarán reyes que se sientan en el trono de David; entrarán montados en carros y caballos, ellos con sus servidores y su pueblo,",
+        "CEI": "Se osserverete lealmente quest'ordine, entreranno ancora per le porte di questa casa i re che siederanno sul trono di Davide, montati su carri e cavalli, essi, i loro ministri e il loro popolo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/אִם֙ לֹ֣א תִשְׁמְע֔וּ אֶת הַ/דְּבָרִ֖ים הָ/אֵ֑לֶּה בִּ֤/י נִשְׁבַּ֨עְתִּי֙ נְאֻם יְהוָ֔ה כִּי לְ/חָרְבָּ֥ה יִֽהְיֶ֖ה הַ/בַּ֥יִת הַ/זֶּֽה׃",
+        "LXX": "ἐὰν δὲ μὴ ποιήσητε τοὺς λόγους τούτους, κατ’ ἐμαυτοῦ ὤμοσα, λέγει Κύριος, ὅτι εἰς ἐρήμωσιν ἔσται ὁ οἶκος οὗτος.",
+        "VUL": "Quod si non audieritis verba hæc :/ in memetipso juravi, dicit Dominus,/ quia in solitudinem erit domus hæc./",
+        "SYN": "А если не послушаете слов сих, то Мною клянусь, говорит Господь, что дом сей сделается пустым.",
+        "NEO": "Mais si vous n’écoutez pas ces paroles, je le jure par moi-même, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, cette maison deviendra une ruine.",
+        "NAB": "But if you do not obey these commands, I swear by myself, says the LORD: this palace shall become rubble.",
+        "VAT_ES": "Pero si ustedes no escuchan estas palabras, juro por mí mismo –oráculo del Señor– que esta Casa se convertirá en un montón de ruinas.",
+        "CEI": "Ma se non ascolterete queste parole, io lo giuro per me stesso - parola del Signore - questa casa diventerà una rovina."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כִּֽי כֹ֣ה אָמַ֣ר יְהוָ֗ה עַל בֵּית֙ מֶ֣לֶךְ יְהוּדָ֔ה גִּלְעָ֥ד אַתָּ֛ה לִ֖/י רֹ֣אשׁ הַ/לְּבָנ֑וֹן אִם לֹ֤א אֲשִֽׁיתְ/ךָ֙ מִדְבָּ֔ר עָרִ֖ים לֹ֥א נושבה נוֹשָֽׁבוּ׃",
+        "LXX": "ὅτι τάδε λέγει Κύριος κατὰ τοῦ οἴκου βασιλέως Ἰούδα Γαλαὰδ σύ μοι, ἀρχὴ τοῦ Λιβάνου, ἐὰν μὴ θῶ σε εἰς ἔρημον, πόλεις μὴ κατοικηθησομένας·",
+        "VUL": "Quia hæc dicit Dominus super domum regis Juda :/ Galaad, tu mihi caput Libani,/ si non posuero te solitudinem, urbes inhabitabiles !/",
+        "SYN": "Ибо так говорит Господь дому царя Иудейского: Галаад ты у Меня, вершина Ливана; но Я сделаю тебя пустынею и города необитаемыми",
+        "NEO": "Car ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, touchant la maison du roi de Juda : Tu es pour moi un Galaad, le sommet du Liban ; eh bien ! je ferai de toi un désert, des villes inhabitées.",
+        "NAB": "For thus says the LORD concerning the palace of the king of Judah: Though you be to me like Gilead, like the peak of Lebanon, I will turn you into a waste, a city uninhabited.",
+        "VAT_ES": "Porque así habla el Señor acerca de la casa real de Judá: Tú eras para mí como Galaad, como una cumbre del Líbano, pero juro que te convertiré en un desierto, en una ciudad deshabitada.",
+        "CEI": "Poiché così dice il Signore riguardo alla casa del re di Giuda: Come Gàlaad eri per me, come le vette del Libano; ma io ti ridurrò a deserto, a città disabitata."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/קִדַּשְׁתִּ֥י עָלֶ֛י/ךָ מַשְׁחִתִ֖ים אִ֣ישׁ וְ/כֵלָ֑י/ו וְ/כָֽרְתוּ֙ מִבְחַ֣ר אֲרָזֶ֔י/ךָ וְ/הִפִּ֖ילוּ עַל הָ/אֵֽשׁ׃",
+        "LXX": "καὶ ἐπάξω ἐπὶ σὲ ἄνδρα ὀλεθρεύοντα καὶ τὸν πέλεκυν αὐτοῦ, καὶ ἐκκόψουσιν τὰς ἐκλεκτὰς κέδρους σου καὶ ἐμβαλοῦσιν εἰς τὸ πῦρ.",
+        "VUL": "Et sanctificabo super te, interficientem virum et arma ejus :/ et succident electas cedros tuas,/ et præcipitabunt in ignem./",
+        "SYN": "и приготовлю против тебя истребителей, каждого со своими орудиями, и срубят лучшие кедры твои и бросят в огонь.",
+        "NEO": "Je prépare contre toi des destructeurs, chacun avec ses outils ; ils couperont tes cèdres de choix, et les jetteront au feu.",
+        "NAB": "Against you I will send destroyers, each with his axe: They shall cut down your choice cedars, and cast them into the fire.",
+        "VAT_ES": "Consagraré contra ti destructores, cada uno con sus armas; ellos talarán tus cedros escogidos y los harán caer en el fuego.",
+        "CEI": "Io preparerò contro di te i distruttori, ognuno con le armi. Essi abbatteranno i migliori dei tuoi cedri, li getteranno nel fuoco."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/עָֽבְרוּ֙ גּוֹיִ֣ם רַבִּ֔ים עַ֖ל הָ/עִ֣יר הַ/זֹּ֑את וְ/אָֽמְרוּ֙ אִ֣ישׁ אֶל רֵעֵ֔/הוּ עַל מֶ֨ה עָשָׂ֤ה יְהוָה֙ כָּ֔כָה לָ/עִ֥יר הַ/גְּדוֹלָ֖ה הַ/זֹּֽאת׃",
+        "LXX": "καὶ διελεύσονται ἔθνη διὰ τῆς πόλεως ταύτης, καὶ ἐρεῖ ἕκαστος πρὸς τὸν πλησίον αὐτοῦ Διὰ τί ἐποίησεν Κύριος οὕτως τῇ πόλει ταύτῃ τῇ μεγάλῃ;",
+        "VUL": "Et pertransibunt gentes multæ per civitatem hanc,/ et dicet unusquisque proximo suo :/ Quare fecit Dominus sic civitati huic grandi ?/",
+        "SYN": "И многие народы будут проходить через город сей и говорить друг другу: \"за что Господь так поступил с этим великим городом?\"",
+        "NEO": "De nombreuses nations passeront par cette ville, et elles se diront l’une à l’autre : « Pourquoi \\+w Yahweh|strong=\"H3068\"\\+w** a-t-il ainsi traité cette grande ville ? »",
+        "NAB": "Many people will pass by this city and ask one another: \"Why has the LORD done this to so great a city?\"",
+        "VAT_ES": "Numerosas naciones pasarán junto a esta ciudad, y se dirán unos a otros: «&iquest;Por qué el Señor trató así a esta gran ciudad?».",
+        "CEI": "Molte genti passeranno su questa città e si diranno l'un l'altro: Perché il Signore ha trattato così questa grande città?"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/אָ֣מְר֔וּ עַ֚ל אֲשֶׁ֣ר עָֽזְב֔וּ אֶת בְּרִ֥ית יְהוָ֖ה אֱלֹֽהֵי/הֶ֑ם וַ/יִּֽשְׁתַּחֲו֛וּ לֵ/אלֹהִ֥ים אֲחֵרִ֖ים וַ/יַּעַבְדֽוּ/ם׃",
+        "LXX": "καὶ ἐροῦσιν Ἀνθ’ ὧν ἐγκατέλιπον τὴν διαθήκην Κυρίου θεοῦ αὐτῶν, καὶ προσεκύνησαν θεοῖς ἀλλοτρίοις καὶ ἐδούλευσαν αὐτοῖς.",
+        "VUL": "Et respondebunt :/ Eo quod dereliquerint pactum Domini Dei sui,/ et adoraverint deos alienos, et servierint eis./",
+        "SYN": "И скажут в ответ: \"за то, что они оставили завет Господа Бога своего и поклонялись иным богам и служили им\".",
+        "NEO": "Et l’on dira : « Parce qu’ils ont abandonné l’alliance de \\+w Yahweh|strong=\"H3068\"\\+w**, leur Dieu, qu’ils se sont prosternés devant d’autres dieux, et les ont servis. »",
+        "NAB": "And the answer will be given: \"Because they have deserted their covenant with the LORD, their God, by worshiping and serving strange gods.\"",
+        "VAT_ES": "Y se les responderá: «Porque abandonaron la alianza del Señor, su Dios, y los sirvieron».",
+        "CEI": "E risponderanno: Perché essi hanno abbandonato l'alleanza del Signore, loro Dio, hanno adorato altri dei e li hanno serviti\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אַל תִּבְכּ֣וּ לְ/מֵ֔ת וְ/אַל תָּנֻ֖דוּ ל֑/וֹ בְּכ֤וּ בָכוֹ֙ לַֽ/הֹלֵ֔ךְ כִּ֣י לֹ֤א יָשׁוּב֙ ע֔וֹד וְ/רָאָ֖ה אֶת אֶ֥רֶץ מוֹלַדְתּֽ/וֹ׃",
+        "LXX": "Μὴ κλαίετε τὸν τεθνηκότα μηδὲ θρηνεῖτε αὐτόν· κλαύσατε κλαυθμῷ τὸν ἐκπορευόμενον, ὅτι οὐκ ἐπιστρέφει ἔτι οὐδὲ ὄψεται τὴν γῆν πατρίδος αὐτοῦ.",
+        "VUL": "Nolite flere mortuum,/ neque lugeatis super eum fletu :/ plangite eum qui egreditur,/ quia non revertetur ultra,/ nec videbit terram nativitatis suæ./",
+        "SYN": "Не плачьте об умершем и не жалейте о нем; но горько плачьте об отходящем в плен, ибо он уже не возвратится и не увидит родной страны своей.",
+        "NEO": "Ne pleurez pas celui qui est mort, et ne vous lamentez pas sur lui ; pleurez, pleurez celui qui s’en est allé, car il ne reviendra plus, et ne verra pas le pays de sa naissance !",
+        "NAB": "Weep not for him who is dead, mourn not for him! Weep rather for him who is going away; never again will he see the land of his birth.",
+        "VAT_ES": "No lloren por el que está muerto ni se lamenten por él. Lloren más bien por el parte, porque él no volverá nunca más ni verá otra vez su país natal.",
+        "CEI": "Non piangete sul morto e non fate lamenti per lui, ma piangete amaramente su chi parte, perché non tornerà più, non rivedrà il paese natio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּ֣י כֹ֣ה אָֽמַר יְ֠הוָה אֶל שַׁלֻּ֨ם בֶּן יֹאשִׁיָּ֜הוּ מֶ֣לֶךְ יְהוּדָ֗ה הַ/מֹּלֵךְ֙ תַּ֚חַת יֹאשִׁיָּ֣הוּ אָבִ֔י/ו אֲשֶׁ֥ר יָצָ֖א מִן הַ/מָּק֣וֹם הַ/זֶּ֑ה לֹֽא יָשׁ֥וּב שָׁ֖ם עֽוֹד׃",
+        "LXX": "διότι τάδε λέγει Κύριος ἐπὶ Σελλὴμ υἱὸν Ἰωσεία τὸν βασιλεύοντα ἀντὶ Ἰωσεία τοῦ πατρὸς αὐτοῦ, ὃς ἐξῆλθεν ἐκ τοῦ τόπου τούτου Οὐκ ἀναστρέψει ἐκεῖ ἔτι,",
+        "VUL": "Quia hæc dicit Dominus ad Sellum,/ filium Josiæ, regem Juda,/ qui regnavit pro Josia patre suo,/ qui egressus est de loco isto :/ Non revertetur huc amplius,/",
+        "SYN": "Ибо так говорит Господь о Саллуме, сыне Иосии, царе Иудейском, который царствовал после отца своего, Иосии, и который вышел из сего места: он уже не возвратится сюда,",
+        "NEO": "Car ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** touchant Sellum, fils de Josias, roi de Juda, qui a régné à la place de Josias, son père, et qui est sorti de ce lieu : Il n’y reviendra plus ;",
+        "NAB": "Thus says the LORD concerning Shallum, son of Josiah, king of Judah, who succeeded his father as king. He has left this place never to return.",
+        "VAT_ES": "Porque así habla el Señor acerca de Salúm, hijo de Josías, Rey de Judá, que sucedió en el trono a su padre Josías: «El que salió de este lugar ya no regresará:",
+        "CEI": "Poiché dice il Signore riguardo a Sallùm figlio di Giosia, re di Giuda, che regna al posto di Giosia suo padre: \"Chi esce da questo luogo non vi farà più ritorno,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כִּ֗י בִּ/מְק֛וֹם אֲשֶׁר הִגְל֥וּ אֹת֖/וֹ שָׁ֣ם יָמ֑וּת וְ/אֶת הָ/אָ֥רֶץ הַ/זֹּ֖את לֹֽא יִרְאֶ֥ה עֽוֹד׃",
+        "LXX": "ἀλλ’ ἢ ἐν τῷ τόπῳ οὗ μετῴκισα αὐτὸν ἐκεῖ ἀποθανεῖται, καὶ τὴν γῆν ταύτην οὐκ ὄψεται ἔτι.",
+        "VUL": "sed in loco ad quem transtuli eum, ibi morietur,/ et terram istam non videbit amplius./",
+        "SYN": "но умрет в том месте, куда отвели его пленным, и более не увидит земли сей.",
+        "NEO": "au lieu où on l’a emmené captif, il mourra, et il ne reverra plus ce pays.",
+        "NAB": "Rather, he shall die in the place where they exiled him; this land he shall not see again.",
+        "VAT_ES": "morirá en el lugar adonde ha sido deportado, no verá más que este país».",
+        "CEI": "ma morirà nel luogo dove lo condurranno prigioniero e non rivedrà più questo paese\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "ה֣וֹי בֹּנֶ֤ה בֵית/וֹ֙ בְּֽ/לֹא צֶ֔דֶק וַ/עֲלִיּוֹתָ֖י/ו בְּ/לֹ֣א מִשְׁפָּ֑ט בְּ/רֵעֵ֨/הוּ֙ יַעֲבֹ֣ד חִנָּ֔ם וּ/פֹעֲל֖/וֹ לֹ֥א יִתֶּן לֽ/וֹ׃",
+        "LXX": "Ὁ οἰκοδομῶν οἰκίαν αὐτοῦ οὐ μετὰ δικαιοσύνης καὶ τὰ ὑπερῷα αὐτοῦ οὐκ ἐν κρίματι, παρὰ τῷ πλησίον αὐτοῦ ἐργᾶται δωρεάν, καὶ τὸν μισθὸν αὐτοῦ οὐ μὴ ἀποδώσει αὐτῷ.",
+        "VUL": "Væ qui ædificat domum suam in injustitia,/ et cnacula sua non in judicio :/ amicum suum opprimet frustra,/ et mercedem ejus non reddet ei :/",
+        "SYN": "Горе тому, кто строит дом свой неправдою и горницы свои беззаконием, кто заставляет ближнего своего работать даром и не отдает ему платы его,",
+        "NEO": "Malheur à celui qui bâtit sa maison par l’injustice, et ses étages avec l’iniquité, qui fait travailler son prochain pour rien, sans lui donner son salaire !",
+        "NAB": "Woe to him who builds his house on wrong, his terraces on injustice; Who works his neighbor without pay, and gives him no wages.",
+        "VAT_ES": "&iexcl;Ay del que edifica su casa sin respetar la justicia y sus pisos altos sin respetar el derecho, del que hace trabajar de balde a su prójimo y no le remunera su trabajo!",
+        "CEI": "Guai a chi costruisce la casa senza giustizia e il piano di sopra senza equità, che fa lavorare il suo prossimo per nulla, senza dargli la paga,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הָ/אֹמֵ֗ר אֶבְנֶה לִּ/י֙ בֵּ֣ית מִדּ֔וֹת וַ/עֲלִיּ֖וֹת מְרֻוָּחִ֑ים וְ/קָ֤רַֽע ל/וֹ֙ חַלּוֹנָ֔/י וְ/סָפ֣וּן בָּ/אָ֔רֶז וּ/מָשׁ֖וֹחַ בַּ/שָּׁשַֽׁר׃",
+        "LXX": "ᾠκοδόμησας σεαυτῷ οἶκον σύμμετρον, ὑπερῷα ῥιπιστὰ διεσταλμένα θυρίσιν καὶ ἐξυλωμένα ἐν κέδρῳ καὶ κεχρισμένα ἐν μίλτῳ.",
+        "VUL": "qui dicit : Ædificabo mihi domum latam,/ et cnacula spatiosa :/ qui aperit sibi fenestras et facit laquearia cedrina,/ pingitque sinopide./",
+        "SYN": "кто говорит: \"построю себе дом обширный и горницы просторные\", - и прорубает себе окна, и обшивает кедром, и красит красною краскою.",
+        "NEO": "Qui dit : « Je me bâtirai une maison vaste, et des chambres spacieuses ; » qui y perce beaucoup de fenêtres, la couvre de cèdre, et la peint au vermillon !",
+        "NAB": "Who says, \"I will build myself a spacious house, with airy rooms,\" Who cuts out windows for it, panels it with cedar, and paints it with vermillion.",
+        "VAT_ES": "&iexcl;Ay del que dice: «Me edificaré una casa espaciosa, con pisos altos bien aireados», y luego le abre ventanas, la recubre de cedro y la pinta de rojo vivo!",
+        "CEI": "e dice: \"Mi costruirò una casa grande con spazioso piano di sopra\" e vi apre finestre e la riveste di tavolati di cedro e la dipinge di rosso."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "הֲ/תִֽמְלֹ֔ךְ כִּ֥י אַתָּ֖ה מְתַחֲרֶ֣ה בָ/אָ֑רֶז אָבִ֜י/ךָ הֲ/ל֧וֹא אָכַ֣ל וְ/שָׁתָ֗ה וְ/עָשָׂ֤ה מִשְׁפָּט֙ וּ/צְדָקָ֔ה אָ֖ז ט֥וֹב לֽ/וֹ׃",
+        "LXX": "μὴ βασιλεύσεις, ὅτι σὺ παροξύνῃ ἐν Ἀχὰζ τῷ πατρί σου; οὐ φάγονται καὶ οὐ πίονται· βέλτιόν σε ποιεῖν κρίμα καὶ δικαιοσύνην.",
+        "VUL": "Numquid regnabis quoniam confers te cedro ?/ pater tuus numquid non comedit et bibit,/ et fecit judicium et justitiam tunc cum bene erat ei ?/",
+        "SYN": "Думаешь ли ты быть царем, потому что заключил себя в кедр? отец твой ел и пил, но производил суд и правду, и потому ему было хорошо.",
+        "NEO": "Es-tu roi parce que tu as la passion du cèdre ! Ton père n’a-t-il pas mangé et bu ? Il faisait droit et justice, alors tout allait bien pour lui ;",
+        "NAB": "Must you prove your rank among kings by competing with them in cedar? Did not your father eat and drink? He did what was right and just, and it went well with him.",
+        "VAT_ES": "&iquest;Eres acaso rey porque ostentas la mejor madera de cedro? &iquest;Acaso tu padre no comía y bebía? Pero también practicaba el derecho y la justicia, y entonces todo lo iba bien.",
+        "CEI": "Forse tu agisci da re perché ostenti passione per il cedro? Forse tuo padre non mangiava e beveva? Ma egli praticava il diritto e la giustizia e tutto andava bene."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "דָּ֛ן דִּין עָנִ֥י וְ/אֶבְי֖וֹן אָ֣ז ט֑וֹב הֲ/לוֹא הִ֛יא הַ/דַּ֥עַת אֹתִ֖/י נְאֻם יְהוָֽה׃",
+        "LXX": "οὐκ ἔγνωσαν, οὐκ ἔκριναν κρίσιν ταπεινῷ οὐδὲ κρίσιν πένητος· οὐ τοῦτό ἐστιν τὸ μὴ γνῶναί σε ἐμέ, λέγει Κύριος;",
+        "VUL": "Judicavit causam pauperis et egeni in bonum suum :/ numquid non ideo quia cognovit me ? dicit Dominus./",
+        "SYN": "Он разбирал дело бедного и нищего, и потому ему хорошо было. Не это ли значит знать Меня? говорит Господь.",
+        "NEO": "il jugeait la cause du malheureux et du pauvre, alors tout allait bien. N’est-ce pas là me connaître, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** ?",
+        "NAB": "Because he dispensed justice to the weak and the poor, it went well with him. Is this not true knowledge of me? says the LORD.",
+        "VAT_ES": "El juzgaba la causa del pobre y del indigente, y entonces todo le iba bien. &iquest;No es eso conocerme? –oráculo del Señor–.",
+        "CEI": "Egli tutelava la causa del povero e del misero e tutto andava bene; questo non significa infatti conoscermi? Oracolo del Signore."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כִּ֣י אֵ֤ין עֵינֶ֨י/ךָ֙ וְ/לִבְּ/ךָ֔ כִּ֖י אִם עַל בִּצְעֶ֑/ךָ וְ/עַ֤ל דַּֽם הַ/נָּקִי֙ לִ/שְׁפּ֔וֹךְ וְ/עַל הָ/עֹ֥שֶׁק וְ/עַל הַ/מְּרוּצָ֖ה לַ/עֲשֽׂוֹת׃",
+        "LXX": "ἰδοὺ οὐκ εἰσὶν οἱ ὀφθαλμοί σου οὐδὲ ἡ καρδία σου καλή, ἀλλ’ εἰς τὴν πλεονεξίαν σου καὶ εἰς τὸ αἷμα τὸ ἀθῷον τοῦ ἐκχέειν αὐτό, καὶ εἰς ἀδίκημα καὶ εἰς φόνον τοῦ ποιεῖν.",
+        "VUL": "Tui vero oculi et cor ad avaritiam,/ et ad sanguinem innocentem fundendum,/ et ad calumniam, et ad cursum mali operis./",
+        "SYN": "Но твои глаза и твое сердце обращены только к твоей корысти и к пролитию невинной крови, к тому, чтобы делать притеснение и насилие.",
+        "NEO": "Mais tes yeux et ton cœur ne sont tournés qu’à ton intérêt, au sang innocent pour le répandre, à l’oppression et à la violence pour les commettre.",
+        "NAB": "But your eyes and heart are set on nothing except on your own gain, On shedding innocent blood, on practicing oppression and extortion.",
+        "VAT_ES": "Pero tú no tienes ojos ni corazón más que para tus ganancias, para derramar sangre inocente, para practicar la opresión y la violencia.",
+        "CEI": "I tuoi occhi e il tuo cuore, invece, non badano che al tuo interesse, a spargere sangue innocente, a commettere violenza e angherie."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "לָ/כֵ֞ן כֹּֽה אָמַ֣ר יְהוָ֗ה אֶל יְהוֹיָקִ֤ים בֶּן יֹאשִׁיָּ֨הוּ֙ מֶ֣לֶךְ יְהוּדָ֔ה לֹא יִסְפְּד֣וּ ל֔/וֹ ה֥וֹי אָחִ֖/י וְ/ה֣וֹי אָח֑וֹת לֹא יִסְפְּד֣וּ ל֔/וֹ ה֥וֹי אָד֖וֹן וְ/ה֥וֹי הֹדֹֽ/ה׃",
+        "LXX": "διὰ τοῦτο τάδε λέγει Κύριος ἐπὶ Ἰωακεὶμ υἱὸν Ἰωσεία βασιλέα Ἰούδα Καὶ ἐπὶ τὸν ἄνδρα τοῦτον οὐ μὴ κόψωνται αὐτόν Ὢ ἀδελφέ, οὐδὲ μὴ κλαύσονται αὐτόν Οἴμοι κύριε.",
+        "VUL": "Propterea hæc dicit Dominus ad Joakim,/ filium Josiæ, regem Juda :/ Non plangent eum : Væ frater ! et væ soror !/ non concrepabunt ei : Væ domine ! et væ inclyte !/",
+        "SYN": "Посему так говорит Господь о Иоакиме, сыне Иосии, царе Иудейском: не будут оплакивать его: \"увы, брат мой!\" и: \"увы, сестра!\" Не будут оплакивать его: \"увы, государь!\" и: \"увы, его величие!\"",
+        "NEO": "C’est pourquoi ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** touchant Joakim, fils de Josias, roi de Juda : On ne pleurera pas sur lui, en disant : « Hélas ! mon frère, hélas, ma sœur ! » On ne pleurera pas sur lui, en disant : « Hélas, seigneur ! hélas, majesté ! »",
+        "NAB": "Therefore, thus says the LORD concerning Jehoiakim, son of Josiah, king of Judah: They shall not lament him, \"Alas! my brother\"; \"Alas! sister.\" They shall not lament him, \"Alas, Lord! alas, Majesty!\"",
+        "VAT_ES": "Por eso, así habla el Señor acerca de Joaquím, hijo de Josías, rey de Judá: &iexcl;Pobre de ese hombre! Nadie se lamentará por él: «&iexcl;Ay, hermano mío! &iexcl;Ay, hermana mía!». Nadie se lamentará por él: «&iexcl;Ay, señor! &iexcl;Ay, su Majestad!».",
+        "CEI": "Per questo così dice il Signore su Ioiakìm figlio di Giosia, re di Giuda: \"Non faranno il lamento per lui, dicendo: Ahi, fratello mio! Ahi, sorella! Non faranno il lamento per lui, dicendo: Ahi, signore! Ahi, maestà!"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "קְבוּרַ֥ת חֲמ֖וֹר יִקָּבֵ֑ר סָח֣וֹב וְ/הַשְׁלֵ֔ךְ מֵ/הָ֖לְאָה לְ/שַׁעֲרֵ֥י יְרוּשָׁלִָֽם׃",
+        "LXX": "ταφὴν ὄνου ταφήσεται, συμψησθεὶς ῥιφήσεται ἐπέκεινα τῆς πύλης Ἰερουσαλήμ.",
+        "VUL": "Sepultura asini sepelietur,/ putrefactus et projectus extra portas Jerusalem.]",
+        "SYN": "Ослиным погребением будет он погребен; вытащат его и бросят далеко за ворота Иерусалима.",
+        "NEO": "Il sera enterré comme on enterre un âne, il sera traîné et jeté hors des portes de Jérusalem.",
+        "NAB": "The burial of an ass shall he be given, dragged forth and cast out beyond the gates of Jerusalem.",
+        "VAT_ES": "Será sepultado como un asno, será arrastrado y arrojado más allá de las puertas de Jerusalén.",
+        "CEI": "Sarà sepolto come si seppellisce un asino, lo trascineranno e lo getteranno al di là delle porte di Gerusalemme\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "עֲלִ֤י הַ/לְּבָנוֹן֙ וּֽ/צְעָ֔קִי וּ/בַ/בָּשָׁ֖ן תְּנִ֣י קוֹלֵ֑/ךְ וְ/צַֽעֲקִי֙ מֵֽ/עֲבָרִ֔ים כִּ֥י נִשְׁבְּר֖וּ כָּל מְאַהֲבָֽיִ/ךְ׃",
+        "LXX": "Ἀνάβηθι εἰς τὸν Λίβανον καὶ κράξον, καὶ εἰς τὴν Βασὰν δὸς τὴν φωνήν σου, καὶ βόησον εἰς τὸ πέραν τῆς θαλάσσης, ὅτι συνετρίβησαν πάντες οἱ ἐρασταί σου.",
+        "VUL": "[Ascende Libanum, et clama,/ et in Basan da vocem tuam :/ et clama ad transeuntes,/ quia contriti sunt omnes amatores tui./",
+        "SYN": "Взойди на Ливан и кричи, и на Васане возвысь голос твой и кричи с Аварима, ибо сокрушены все друзья твои.",
+        "NEO": "Monte au Liban et crie ; élève ta voix en Basan ! Crie du haut d’Abarim, car tous tes amants sont brisés.",
+        "NAB": "Scale Lebanon and cry out, in Bashan lift up your voice; Cry out from Abarim, for all your lovers are crushed.",
+        "VAT_ES": "Sube hasta el Líbano y grita, levanta tu voz en Basán, grita desde los Abarím, porque todos tus amantes han sido destrozados!",
+        "CEI": "Sali sul Libano e grida e sul Basàn alza la voce; grida dagli Abarìm, perché tutti i tuoi amanti sono abbattuti."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "דִּבַּ֤רְתִּי אֵלַ֨יִ/ךְ֙ בְּ/שַׁלְוֺתַ֔יִ/ךְ אָמַ֖רְתְּ לֹ֣א אֶשְׁמָ֑ע זֶ֤ה דַרְכֵּ/ךְ֙ מִ/נְּעוּרַ֔יִ/ךְ כִּ֥י לֹֽא שָׁמַ֖עַתְּ בְּ/קוֹלִֽ/י׃",
+        "LXX": "ἐλάλησα πρὸς σὲ ἐν τῇ παραπτώσει σου, καὶ εἶπας Οὐκ ἀκούσομαι· αὕτη ἡ ὁδός σου ἐκ νεότητός σου, οὐκ ἤκουσας τῆς φωνῆς μου.",
+        "VUL": "Locutus sum ad te in abundantia tua,/ et dixisti : Non audiam :/ hæc est via tua ab adolescentia tua,/ quia non audisti vocem meam./",
+        "SYN": "Я говорил тебе во время благоденствия твоего; но ты сказал: \"не послушаю\". Таково было поведение твое с самой юности твоей, что ты не слушал гласа Моего.",
+        "NEO": "Je t’ai parlé au temps de ta prospérité ; tu as dit : « Je n’écouterai pas ! » C’est là ta conduite dès ta jeunesse ; tu n’as pas écouté ma voix !",
+        "NAB": "I spoke to you when you were secure, but you answered, \"I will not listen.\" This has been your way from your youth, not to listen to my voice.",
+        "VAT_ES": "Yo te hablé cuando estabas tranquila, pero tú dijiste: «&iexcl;No escucharé!». Este ha sido tu camino desde tu juventud: nunca has escuchado mi voz.",
+        "CEI": "Ti parlai al tempo della tua tranquilla prosperità, ma tu dicesti: \"Io non voglio ascoltare\". Tale è stata la tua condotta fin dalla giovinezza: non hai ascoltato la mia voce."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כָּל רֹעַ֨יִ/ךְ֙ תִּרְעֶה ר֔וּחַ וּֽ/מְאַהֲבַ֖יִ/ךְ בַּ/שְּׁבִ֣י יֵלֵ֑כוּ כִּ֣י אָ֤ז תֵּבֹ֨שִׁי֙ וְ/נִכְלַ֔מְתְּ מִ/כֹּ֖ל רָעָתֵֽ/ךְ׃",
+        "LXX": "πάντας τοὺς ποιμένας σου ποιμανεῖ ἄνεμος, καὶ οἱ ἐρασταί σου ἐν αἰχμαλωσίᾳ ἐξελεύσονται, ὅτι τότε αἰσχυνθήσῃ καὶ ἀτιμωθήσῃ ἀπὸ πάντων τῶν φιλούντων σε.",
+        "VUL": "Omnes pastores tuos pascet ventus,/ et amatores tui in captivitatem ibunt :/ et tunc confunderis,/ et erubesces ab omni malitia tua./",
+        "SYN": "Всех пастырей твоих унесет ветер, и друзья твои пойдут в плен; и тогда ты будешь постыжен и посрамлен за все злодеяния твои.",
+        "NEO": "Car le vent emmènera paître tes pasteurs, et tes amants iront en captivité ; alors tu seras couverte de confusion et de honte pour toute ta méchanceté.",
+        "NAB": "The wind shall shepherd all your shepherds, your lovers shall go into exile. Surely then you shall be ashamed and confounded because of all your wickedness.",
+        "VAT_ES": "A todos tus pastores los apacentará el viento, tus amantes irán al cautiverio; entonces quedarás avergonzada y confundida por toda tu maldad.",
+        "CEI": "Tutti i tuoi pastori saranno pascolo del vento e i tuoi amanti andranno schiavi. Allora ti dovrai vergognare ed essere confusa, a causa di tutte le tue iniquità."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "ישבתי יֹשַׁבְתְּ֙ בַּ/לְּבָנ֔וֹן מקננתי מְקֻנַּ֖נְתְּ בָּֽ/אֲרָזִ֑ים מַה נֵּחַנְתְּ֙ בְּ/בֹא לָ֣/ךְ חֲבָלִ֔ים חִ֖יל כַּ/יֹּלֵדָֽה׃",
+        "LXX": "κατοικοῦσα ἐν τῷ Λιβάνῳ, ἐννοσσεύουσα ἐν ταῖς κέδροις, καταστενάξεις ἐν τῷ ἐλθεῖν σοι ὀδύνας ὡς τικτούσης.",
+        "VUL": "Quæ sedes in Libano,/ et nidificas in cedris,/ quomodo congemuisti cum venissent tibi dolores,/ quasi dolores parturientis ?/",
+        "SYN": "Живущий на Ливане, гнездящийся на кедрах! как жалок будешь ты, когда постигнут тебя муки, как боли женщины в родах!",
+        "NEO": "Toi qui habite au Liban, qui places ton nid dans les cèdres, comme tu gémiras quand viendront sur toi les douleurs, des convulsions pareilles à celles d’une femme en travail !",
+        "NAB": "You who dwell on Lebanon, who nest in the cedars, How you shall groan when pains come upon you, like the pangs of a woman in travail!",
+        "VAT_ES": "Tú, que habitas en el Líbano, que anidas entre los cedros, &iexcl;cómo gemirás cuando te asalten los dolores y un temblor como de parturienta!",
+        "CEI": "Tu che dimori sul Libano, che ti sei fatta il nido tra i cedri, come gemerai quando ti coglieranno le doglie, dolori come di partoriente!"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "חַי אָנִי֮ נְאֻם יְהוָה֒ כִּ֣י אִם יִהְיֶ֞ה כָּנְיָ֤הוּ בֶן יְהֽוֹיָקִים֙ מֶ֣לֶךְ יְהוּדָ֔ה חוֹתָ֖ם עַל יַ֣ד יְמִינִ֑/י כִּ֥י מִ/שָּׁ֖ם אֶתְּקֶֽ/נְךָּ׃",
+        "LXX": "ζῶ ἐγώ, λέγει Κύριος, ἐὰν γενόμενος γένηται Ἰεχονίας υἱὸς Ἰωακεὶμ βασιλεὺς Ἰούδα ἀποσφράγισμα ἐπὶ τῆς χειρὸς τῆς δεξιᾶς μου, ἐκεῖθεν ἐκσπάσω σε,",
+        "VUL": "Vivo ego, dicit Dominus,/ quia si fuerit Jechonias filius Joakim regis Juda/ annulus in manu dextera mea,/ inde evellam eum,/",
+        "SYN": "Живу Я, сказал Господь: если бы Иехония, сын Иоакима, царь Иудейский, был перстнем на правой руке Моей, то и отсюда Я сорву тебя",
+        "NEO": "Je suis vivant ! — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** : Quand Jéchonias, fils de Joakim, roi de Juda serait un anneau à ma main droite, je l’arracherais de là !",
+        "NAB": "As I live, says the LORD, if you, Coniah, son of Jehoiakim, king of Judah, are a signet ring on my right hand, I will snatch you from it.",
+        "VAT_ES": "&iexcl;Lo juro por mi vida! –oráculo del Señor–: Aunque Conías, hijo de Joaquím, rey de Judá, fuera un anillo en mi mano derecha, de allí lo arrancaría.",
+        "CEI": "\"Per la mia vita - oracolo del Signore - anche se Conìa figlio di Ioiakìm, re di Giuda, fosse un anello da sigillo nella mia destra, io me lo strapperei."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וּ/נְתַתִּ֗י/ךָ בְּ/יַד֙ מְבַקְשֵׁ֣י נַפְשֶׁ֔/ךָ וּ/בְ/יַ֛ד אֲשֶׁר אַתָּ֥ה יָג֖וֹר מִ/פְּנֵי/הֶ֑ם וּ/בְ/יַ֛ד נְבוּכַדְרֶאצַּ֥ר מֶֽלֶךְ בָּבֶ֖ל וּ/בְ/יַ֥ד הַ/כַּשְׂדִּֽים׃",
+        "LXX": "καὶ παραδώσω σε εἰς χεῖρας τῶν ζητούντων τὴν ψυχήν σου, ὧν σὺ εὐλαβῇ ἀπὸ προσώπου αὐτῶν, εἰς χεῖρας τῶν Χαλδαίων.",
+        "VUL": "et dabo te in manu quærentium animam tuam,/ et in manu quorum tu formidas faciem,/ et in manu Nabuchodonosor regis Babylonis,/ et in manu Chaldæorum :/",
+        "SYN": "и отдам тебя в руки ищущих души твоей и в руки тех, которых ты боишься, в руки Навуходоносора, царя Вавилонского, и в руки Халдеев,",
+        "NEO": "Je te livrerai aux mains de ceux qui en veulent à ta vie, aux mains de ceux devant qui tu trembles, aux mains de Nabuchodonosor, roi de Babylone, et aux mains des Chaldéens.",
+        "NAB": "I will deliver you into the hands of those who seek your life; the hands of those whom you fear; the hands of Nebuchadnezzar, king of Babylon, and the Chaldeans.",
+        "VAT_ES": "Yo entregaré en manos de los que atentan contra tu vida, en manos de los que tú más temes, en manos de Nabucodonosor, rey de Babilonia, y en manos de los caldeos.",
+        "CEI": "Ti metterò nelle mani di chi attenta alla tua vita, nelle mani di coloro che tu temi, nelle mani di Nabucodònosor re di Babilonia e nelle mani dei Caldei."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/הֵֽטַלְתִּ֣י אֹתְ/ךָ֗ וְ/אֶֽת אִמְּ/ךָ֙ אֲשֶׁ֣ר יְלָדַ֔תְ/ךָ עַ֚ל הָ/אָ֣רֶץ אַחֶ֔רֶת אֲשֶׁ֥ר לֹֽא יֻלַּדְתֶּ֖ם שָׁ֑ם וְ/שָׁ֖ם תָּמֽוּתוּ׃",
+        "LXX": "καὶ ἀπορίψω σὲ καὶ τὴν μητέρα σου τὴν τεκοῦσάν σε εἰς γῆν οὗ οὐκ ἐτέχθης ἐκεῖ, καὶ ἐκεῖ ἀποθανεῖσθε·",
+        "VUL": "et mittam te, et matrem tuam quæ genuit te,/ in terram alienam, in qua nati non estis,/ ibique moriemini./",
+        "SYN": "и выброшу тебя и твою мать, которая родила тебя, в чужую страну, где вы не родились, и там умрете;",
+        "NEO": "Je te jetterai, toi et ta mère qui t’a mis au monde, dans un autre pays où vous n’êtes pas nés, et là vous mourrez.",
+        "NAB": "I will cast you out, you and the mother who bore you, into a different land from the one you were born in; and there you shall die.",
+        "VAT_ES": "Yo te arrojaré, a ti y a tu madre que te dio a luz, a un país extraño, donde ustedes no han nacido, y allí morirán.",
+        "CEI": "Sbalzerò te e tua madre che ti ha generato in un paese dove non siete nati e là morirete."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/עַל הָ/אָ֗רֶץ אֲשֶׁר הֵ֛ם מְנַשְּׂאִ֥ים אֶת נַפְשָׁ֖/ם לָ/שׁ֣וּב שָׁ֑ם שָׁ֖מָּ/ה לֹ֥א יָשֽׁוּבוּ׃",
+        "LXX": "εἰς δὲ τὴν γῆν ἣν αὐτοὶ εὔχονται ταῖς ψυχαῖς αὐτῶν οὐ μὴ ἀποστρέψωσιν.",
+        "VUL": "Et in terram ad quam ipsi levant animam suam ut revertantur illuc,/ non revertentur./",
+        "SYN": "а в землю, куда душа их будет желать возвратиться, туда не возвратятся.",
+        "NEO": "Et au pays où ils aspireront à revenir, ils ne reviendront pas.",
+        "NAB": "Neither of them shall come back to the land for which they yearn.",
+        "VAT_ES": "Pero al país al que ansían volver, allí no volverán.",
+        "CEI": "Ma nel paese in cui brameranno tornare, là non torneranno."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "הַ/עֶ֨צֶב נִבְזֶ֜ה נָפ֗וּץ הָ/אִ֤ישׁ הַ/זֶּה֙ כָּנְיָ֔הוּ אִ֨ם כְּלִ֔י אֵ֥ין חֵ֖פֶץ בּ֑/וֹ מַדּ֤וּעַ הֽוּטֲלוּ֙ ה֣וּא וְ/זַרְע֔/וֹ וְ/הֻ֨שְׁלְכ֔וּ עַל הָ/אָ֖רֶץ אֲשֶׁ֥ר לֹא יָדָֽעוּ׃",
+        "LXX": "ἠτιμώθη Ἰεχονίας ὡς σκεῦος οὗ οὐκ ἔστιν χρεία αὐτοῦ, ὅτι ἐξερίφη καὶ ἐξεβλήθη εἰς γῆν ἣν οὐκ ᾔδει.",
+        "VUL": "Numquid vas fictile atque contritum/ vir iste Jechonias ?/ numquid vas absque omni voluptate ?/ quare abjecti sunt ipse et semen ejus,/ et projecti in terram quam ignoraverunt ?/",
+        "SYN": "\"Неужели этот человек, Иехония, есть создание презренное, отверженное? или он - сосуд непотребный? за что они выброшены - он и племя его, и брошены в страну, которой не знали?\"",
+        "NEO": "Est-ce donc un vase méprisé et brisé que cet homme, Jéchonias, ou bien un ustensile dont personne ne veut ?... Pourquoi les a-t-on chassés, lui et sa race, et les a-t-on jetés dans un pays qu’ils ne connaissaient pas ?",
+        "NAB": "Is this man Coniah a vessel despised, to be broken up, an instrument that no one wants? Why are he and his descendants cast out? why thrown into a land they know not?",
+        "VAT_ES": "&iquest;Es este hombre, Conías, una vasija despreciable, rota, un objeto que ya nadie quiere? &iquest;Por qué él y su descendencia han sido arrojados, echados a un país que no conocían?",
+        "CEI": "È forse questo Conìa un vaso spregevole, rotto, oppure un vaso che non piace più a nessuno? Perché sono dunque scacciati, egli e la sua discendenza, e gettati in un paese che non conoscono?\"."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "אֶ֥רֶץ אֶ֖רֶץ אָ֑רֶץ שִׁמְעִ֖י דְּבַר יְהוָֽה׃",
+        "LXX": "γῆ γῆ, ἄκουε λόγον Κυρίου·",
+        "VUL": "Terra, terra, terra, audi sermonem Domini./",
+        "SYN": "О, земля, земля, земля! слушай слово Господне.",
+        "NEO": "Terre, terre, terre, écoute la parole de \\+w Yahweh|strong=\"H3068\"\\+w** !",
+        "NAB": "O land, land, land, hear the word of the LORD -",
+        "VAT_ES": "&iexcl;Tierra, tierra, tierra! Escucha la palabra del Señor: Inscriban a este hombre: «Sin hijo, un fracasado en la vida», porque ninguno de su descendencia logrará sentarse en el trono de David ni seguir dominando en Judá.",
+        "CEI": "Terra, terra, terra! Ascolta la parola del Signore!"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "כֹּ֣ה אָמַ֣ר יְהוָ֗ה כִּתְב֞וּ אֶת הָ/אִ֤ישׁ הַ/זֶּה֙ עֲרִירִ֔י גֶּ֖בֶר לֹא יִצְלַ֣ח בְּ/יָמָ֑י/ו כִּי֩ לֹ֨א יִצְלַ֜ח מִ/זַּרְע֗/וֹ אִ֚ישׁ יֹשֵׁב֙ עַל כִּסֵּ֣א דָוִ֔ד וּ/מֹשֵׁ֥ל ע֖וֹד בִּ/יהוּדָֽה׃",
+        "LXX": "γράψον τὸν ἄνδρα τοῦτον ἐκκήρυκτον ἄνθρωπον, ὅτι οὐ μὴ αὐξηθῇ ἐκ τοῦ σπέρματος αὐτοῦ καθήμενος ἐπὶ θρόνου Δαυείδ, ἄρχων ἔτι ἐν τῷ Ἰούδᾳ.",
+        "VUL": "Hæc dicit Dominus :/ Scribe virum istum sterilem,/ virum qui in diebus suis non prosperabitur :/ nec enim erit de semine ejus vir/ qui sedeat super solium David,/ et potestatem habeat ultra in Juda.]",
+        "SYN": "Так говорит Господь: запишите человека сего лишенным детей, человеком злополучным во дни свои, потому что никто уже из племени его не будет сидеть на престоле Давидовом и владычествовать в Иудее.",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Inscrivez cet homme comme stérile, comme un homme qui ne réussit pas dans ses jours ! Car nul de sa race ne réussira à s’asseoir sur le trône de David pour régner encore sur Juda !",
+        "NAB": "Thus says the LORD: Write this man down as one childless, who will never thrive in his lifetime! No descendant of his shall achieve a seat on the throne of David as ruler again over Judah.",
+        "CEI": "Dice il Signore: \"Registrate quest'uomo come uno senza figli, un uomo che non ha successo nella sua vita, perché nessuno della sua stirpe avrà la fortuna di sedere sul trono di Davide né di regnare ancora su Giuda\"."
+      }
+    }
+  }
+}

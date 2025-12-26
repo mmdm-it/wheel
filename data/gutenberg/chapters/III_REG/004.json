@@ -1,0 +1,556 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "III_REG_004",
+  "book_key": "III_REG",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ הַ/מֶּ֣לֶךְ שְׁלֹמֹ֔ה מֶ֖לֶךְ עַל כָּל יִשְׂרָאֵֽל׃",
+        "LXX": "Καὶ ἦν ὁ βασιλεὺς Σαλωμὼν βασιλεύων ἐπὶ Ἰσραήλ.",
+        "VUL": "Erat autem rex Salomon regnans super omnem Israël :",
+        "SYN": "И был царь Соломон царем над всем Израилем.",
+        "NEO": "Le roi Salomon était roi sur tout Israël.",
+        "NAB": "Solomon was king over all Israel,",
+        "VAT_ES": "El rey Salomón reinó sobre todo Israel.",
+        "CEI": "Il re Salomone estendeva il suo dominio su tutto Israele."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/אֵ֥לֶּה הַ/שָּׂרִ֖ים אֲשֶׁר ל֑/וֹ עֲזַרְיָ֥הוּ בֶן צָד֖וֹק הַ/כֹּהֵֽן׃",
+        "LXX": "καὶ οὗτοι ἄρχοντες οἳ ἦσαν αὐτοῦ· Ἀζαρεὶ υἱὸς Σαδώκ,",
+        "VUL": "et hi principes quos habebat : Azarias filius Sadoc sacerdotis :",
+        "SYN": "И вот начальники, которые _были_ у него: Азария, сын Садока священника;",
+        "NEO": "Voici les chefs qu’il avait à son service : Azarias, fils de Sadoc, était le premier ministre ;",
+        "NAB": "and these were the officials he had in his service: Azariah, son of Zadok, priest;",
+        "VAT_ES": "Y estos eran sus ministros: Azarías, hijo de Sadoc, sacerdote;",
+        "CEI": "Questi furono i suoi dignitari: Azaria figlio di Zadòk fu sacerdote."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אֱלִיחֹ֧רֶף וַ/אֲחִיָּ֛ה בְּנֵ֥י שִׁישָׁ֖א סֹפְרִ֑ים יְהוֹשָׁפָ֥ט בֶּן אֲחִיל֖וּד הַ/מַּזְכִּֽיר׃",
+        "LXX": "καὶ Ἐλιὰφ καὶ Ἀχειὰ υἱὸς Σαβὰ γραμματεῖς, καὶ Ἰωσαφὰθ υἱὸς Ἀχειλιὰδ ὑπομιμνήσκων,",
+        "VUL": "Elihoreph et Ahia filii Sisa scribæ : Josaphat filius Ahilud a commentariis :",
+        "SYN": "Елихореф и Ахия, сыновья Сивы, писцы; Иосафат, сын Ахилуда, дееписатель;",
+        "NEO": "Elihoreph et Ahia, fils de Sisa, étaient secrétaires ; Josaphat, fils d’Ahilud, était archiviste ;",
+        "NAB": "Elihoreph and Ahijah, sons of Shisha, scribes; Jehoshaphat, son of Ahilud, chancellor;",
+        "VAT_ES": "Elijoref y Ajías, hijos de Sisá, secretarios; Josafat, hijo de Ajilud, archivista;",
+        "CEI": "Elicoref e Achia, figli di Sisa, scribi. Giòsafat, figlio di Achilùd, archivista."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וּ/בְנָיָ֥הוּ בֶן יְהוֹיָדָ֖ע עַל הַ/צָּבָ֑א וְ/צָד֥וֹק וְ/אֶבְיָתָ֖ר כֹּהֲנִֽים׃",
+        "LXX": "καὶ Σαδοὺχ καὶ Ἀβιαθὰρ ἱερεῖς,",
+        "VUL": "Banaias filius Jojadæ super exercitum : Sadoc autem et Abiathar sacerdotes :",
+        "SYN": "Ванея, сын Иодая, военачальник; Садок и Авиафар -- священники;",
+        "NEO": "Banaïas, fils de Joïadas, commandait l’armée ; Sadoc et Abiathar étaient prêtres ;",
+        "NAB": "(Benaiah, son of Jehoiada, commander of the army; Zadok and Abiathar, priests;)",
+        "VAT_ES": "Benaías, hijo de Iehoiadá, jefe del ejército; Sadoc y Abiatar, sacerdotes;",
+        "CEI": "Benaià, figlio di Ioiadà, capo dell'esercito. Zadòk e Ebiatàr, sacerdoti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/עֲזַרְיָ֥הוּ בֶן נָתָ֖ן עַל הַ/נִּצָּבִ֑ים וְ/זָב֧וּד בֶּן נָתָ֛ן כֹּהֵ֖ן רֵעֶ֥ה הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ Ὀρνειὰ υἱὸς Ναθὰν ἐπὶ τῶν καθεσταμένων, καὶ Ζαβοὺθ υἱὸς Ναθὰν ἑταῖρος τοῦ βασιλέως,",
+        "VUL": "Azarias filius Nathan super eos qui assistebant regi : Zabud filius Nathan sacerdos, amicus regis :",
+        "SYN": "Азария, сын Нафана, начальник над приставниками, и Завуф, сын Нафана священника -- друг царя;",
+        "NEO": "Azarias, fils de Nathan, était chef des intendants ; Zabud, fils de Nathan, prêtre, était conseiller intime du roi ;",
+        "NAB": "Azariah, son of Nathan, chief of the commissaries; Zabud, son of Nathan, companion to the king;",
+        "VAT_ES": "Azarías, hijo de Natán, jefe de los prefectos; Zabud, hijo de Natán, familiar del rey;",
+        "CEI": "Azaria, figlio di Natan, capo dei prefetti. Zabud, figlio di Natan, sacerdote, amico del re."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/אֲחִישָׁ֖ר עַל הַ/בָּ֑יִת וַ/אֲדֹנִירָ֥ם בֶּן עַבְדָּ֖א עַל הַ/מַּֽס׃",
+        "LXX": "καὶ Ἀχεὶ ἦν οἰκονόμος, καὶ Ἐλιὰκ ὁ οἰκονόμος, καὶ Ἐλιάβ υἱὸς Σὰφ ἐπὶ τῆς πατριᾶς, καὶ Ἀδωνειρὰμ υἱὸς Ἐφρὰ ἐπὶ τῶν φόρων.",
+        "VUL": "et Ahisar præpositus domus : et Adoniram filius Abda super tributa.",
+        "SYN": "Ахисар -- начальник над домом _царским,_ и Адонирам, сын Авды, -- над податями.",
+        "NEO": "Ahisar était préfet du palais ; et Adoniram, fils d’Abda, était préposé aux corvées.",
+        "NAB": "Ahishar, major-domo of the palace; and Adoniram, son of Abda, superintendent of the forced labor.",
+        "VAT_ES": "Ajisar, mayordomo de palacio; Adoniram, hijo de Abdá, encargado de las prestaciones de servicio.",
+        "CEI": "Achisar maggiordomo. Adoniram, figlio di Abda, sovrintendente ai lavori forzati."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/לִ/שְׁלֹמֹ֞ה שְׁנֵים עָשָׂ֤ר נִצָּבִים֙ עַל כָּל יִשְׂרָאֵ֔ל וְ/כִלְכְּל֥וּ אֶת הַ/מֶּ֖לֶךְ וְ/אֶת בֵּית֑/וֹ חֹ֧דֶשׁ בַּ/שָּׁנָ֛ה יִהְיֶ֥ה עַל אחד הָ/אֶחָ֖ד לְ/כַלְכֵּֽל׃",
+        "LXX": "καὶ τῷ Σαλωμὼν δώδεκα καθεσταμένοι ἐπὶ πάντα Ἰσραήλ, χορηγεῖν τῷ βασιλεῖ καὶ τῷ οἴκῳ αὐτοῦ· μῆνα ἐν τῷ ἐνιαυτῷ ἐγίνετο ἐπὶ τὸν ἕνα χορηγεῖν.",
+        "VUL": "Habebat autem Salomon duodecim præfectos super omnem Israël, qui præbebant annonam regi et domui ejus : per singulos enim menses in anno, singuli necessaria ministrabant.",
+        "SYN": "И было у Соломона двенадцать приставников над всем Израилем, и они доставляли продовольствие царю и дому его; каждый должен был доставлять продовольствие на один месяц в году.",
+        "NEO": "Salomon avait douze intendants sur tout Israël ; ils pourvoyaient à l’entretien du roi et de sa maison, chacun devant y pourvoir pendant un mois de l’année.",
+        "NAB": "Solomon had twelve commissaries for all Israel who supplied food for the king and his household, each having to provide for one month in the year.",
+        "VAT_ES": "Salomón tenía doce prefectos distribuidos por todo Israel. Ellos abastecían al rey y a su casa, un mes por año cada uno.",
+        "CEI": "Salomone aveva dodici prefetti su tutto Israele; costoro provvedevano al re e alla sua famiglia; ognuno aveva l'incarico di procurare il necessario per un mese all'anno."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אֵ֣לֶּה שְׁמוֹתָ֔/ם בֶּן ח֖וּר בְּ/הַ֥ר אֶפְרָֽיִם׃",
+        "LXX": "καὶ ταῦτα τὰ ὀνόματα αὐτῶν· Βαιὼρ ἐν ὄρει Ἐφράιμ, εἷς·",
+        "VUL": "Et hæc nomina eorum : Benhur in monte Ephraim.",
+        "SYN": "Вот имена их: Бен-Хур -- на горе Ефремовой;",
+        "NEO": "Voici leurs noms : Ben-Hur, dans la montagne d’Ephraïm ; —",
+        "NAB": "Their names were: the son of Hur in the hill country of Ephraim;",
+        "VAT_ES": "Sus nombres eran estos: el hijo de Jur, en la montaña de Efraím;",
+        "CEI": "Questi sono i loro nomi:...figlio di Cur, sulle montagne di Efraim;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "בֶּן דֶּ֛קֶר בְּ/מָקַ֥ץ וּ/בְ/שַֽׁעַלְבִ֖ים וּ/בֵ֣ית שָׁ֑מֶשׁ וְ/אֵיל֖וֹן בֵּ֥ית חָנָֽן׃",
+        "LXX": "υἱὸς Ῥῆχας ἐν Μαχεμὰς καὶ Βηθαλαμεὶ καὶ Βαιθσάμυς καὶ Ἐλὼμ ἕως Βαιθλαμάν, εἷς·",
+        "VUL": "Bendecar in Macces, et in Salebim, et in Bethsames, et in Elon, et in Bethanan.",
+        "SYN": "Бен-Декер -- в Макаце и в Шаалбиме, в Вефсамисе и в Елоне и в Беф-Ханане;",
+        "NEO": "Ben-Décar, à Maccès, à Salebim, à Beth-Sames et à Elon de Béthanan ; —",
+        "NAB": "the son of Deker in Makaz, Shaalbim, Beth-shemesh, Elon and Beth-hanan;",
+        "VAT_ES": "el hijo de Déquer, en Macás, Saalbím, Bet Semes y Elón, hasta Bet Janán;",
+        "CEI": "...figlio di Deker, a Makaz, a Saalbìm, a Bet-Sèmes, ad Aialon fino a Bet-Canan;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "בֶּן חֶ֖סֶד בָּֽ/אֲרֻבּ֑וֹת ל֥/וֹ שֹׂכֹ֖ה וְ/כָל אֶ֥רֶץ חֵֽפֶר׃",
+        "LXX": "υἱὸς Ἕσωθ, Βηρνεμαλουσαμηνχὰ καὶ Ῥησφαραχεὶν",
+        "VUL": "Benhesed in Aruboth : ipsius erat Socho, et omnis terra Epher.",
+        "SYN": "Бен-Хесед -- в Арюбофе; ему же принадлежал Соко и вся земля Хефер;",
+        "NEO": "Ben-Hésed, à Aruboth : il avait Socho et toute la contrée d’Epher ; —",
+        "NAB": "the son of Hesed in Arubboth, as well as in Socoh and the whole region of Hepher;",
+        "VAT_ES": "el hijo de Jésed, en Arubot; él tenía a su cargo Soco y toda la región de Jéfer;",
+        "CEI": "...figlio di Chesed, in Arubbot; a lui appartenevano Soco e tutto il paese di Chefer;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "בֶּן אֲבִֽינָדָ֖ב כָּל נָ֣פַת דֹּ֑אר טָפַת֙ בַּת שְׁלֹמֹ֔ה הָ֥יְתָה לּ֖/וֹ לְ/אִשָּֽׁה׃",
+        "LXX": "ἀνὰ Δὰν καὶ ἀνὰ Φαθεί, ἀνὴρ Ταβληθεί, θυγάτηρ Σαλωμὼν ἦν αὐτῷ εἰς γυναῖκα, εἷς·",
+        "VUL": "Benabinadab, cujus omnis Nephath Dor : Tapheth filiam Salomonis habebat uxorem.",
+        "SYN": "Бен-Авинадав -- _над_ всем Нафаф-Дором; Тафафь, дочь Соломона, была его женою;",
+        "NEO": "Ben-Abinadab, qui avait toutes les hauteurs de Dor ; Tapheth, fille de Salomon, était sa femme ; —",
+        "NAB": "the son of Abinadab, who was married to Solomon's daughter Taphath, in all the Naphath-dor;",
+        "VAT_ES": "el hijo de Abinadab, en todas las alturas de Dor; Tafat, hija de Salomón, era su esposa;",
+        "CEI": "...figlio di Abinadàb, aveva tutta la costa di Dor (sua moglie era Tafat, figlia di Salomone);"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "בַּֽעֲנָא֙ בֶּן אֲחִיל֔וּד תַּעְנַ֖ךְ וּ/מְגִדּ֑וֹ וְ/כָל בֵּ֣ית שְׁאָ֡ן אֲשֶׁר֩ אֵ֨צֶל צָרְתַ֜נָ/ה מִ/תַּ֣חַת לְ/יִזְרְעֶ֗אל מִ/בֵּ֤ית שְׁאָן֙ עַ֚ד אָבֵ֣ל מְחוֹלָ֔ה עַ֖ד מֵ/עֵ֥בֶר לְ/יָקְמֳעָֽם׃",
+        "LXX": "Βακχὰ υἱὸς Ἀχειμάχ, Πολαμὰχ καὶ Μεκεδώ, καὶ πᾶς ὁ οἶκος Δὰν ὁ παρὰ Σεσαθὰν ὑποκάτω τοῦ Ἐσρᾶε, καὶ ἐκ Βαισαφοὺτ Ἐβελμαωλὰ ἕως Μαέβερ Λουκάμ, εἷς·",
+        "VUL": "Bana filius Ahilud regebat Thanac et Mageddo, et universam Bethsan, quæ est juxta Sarthana subter Jezrahel, a Bethsan usque Abelmehula e regione Jecmaan.",
+        "SYN": "Ваана, сын Ахилуда, в Фаанахе и Мегиддо и во всем Беф-Сане, что близ Цартана ниже Иезрееля, от Беф-Сана до Абел-Мехола, и даже за Иокмеам;",
+        "NEO": "Bana, fils d’Ahilud, qui avait Thanac et Mageddo, et tout Bethsan, qui est près de Sarthana au-dessous de Jezraël, depuis Bethsan jusqu’à Abel-méhula, jusqu’au delà de Jecmaan. —",
+        "NAB": "Baana, son of Ahilud, in Taanach and Megiddo, and beyond Jokmeam, and in all Beth-shean, and in the country around Zarethan below Jezreel from Beth-shean to Abel-meholah;",
+        "VAT_ES": "Baaná, hijo de Ajilud, en Taanac y Meguido, y en todo Bet Seán, que está al lado de Sartán por debajo de Izreel, desde Bet Seán hasta Abel Mejolá, más allá de Iocmeam;",
+        "CEI": "Baana, figlio di Achilùd, aveva Tàanach, Meghìddo, sino al di là di Iakmeam, e tutto Beisan che è sotto Izreèl, da Beisan fino ad Abel-Mecola che è verso Zartan;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "בֶּן גֶּ֖בֶר בְּ/רָמֹ֣ת גִּלְעָ֑ד ל֡/וֹ חַוֺּת֩ יָאִ֨יר בֶּן מְנַשֶּׁ֜ה אֲשֶׁ֣ר בַּ/גִּלְעָ֗ד ל֚/וֹ חֶ֤בֶל אַרְגֹּב֙ אֲשֶׁ֣ר בַּ/בָּשָׁ֔ן שִׁשִּׁים֙ עָרִ֣ים גְּדֹל֔וֹת חוֹמָ֖ה וּ/בְרִ֥יחַ נְחֹֽשֶׁת׃",
+        "LXX": "υἱὸς Γάβερ Ἐρεμὰθ Γαλαάθ, τούτῳ σχοίνισμα Ἐρεταβὰμ ἐν τῇ Βασάν, ἑξήκοντα πόλεις μεγάλαι τειχήρεις καὶ μοχλοὶ χαλκοῖ, εἷς·",
+        "VUL": "Bengaber in Ramoth Galaad : habebat Avothjair filii Manasse in Galaad : ipse præerat in omni regione Argob, quæ est in Basan, sexaginta civitatibus magnis atque muratis quæ habebant seras æreas.",
+        "SYN": "Бен-Гевер -- в Рамофе Галаадском; у него были селения Иаира, сына Манассиина, что в Галааде; у него также область Аргов, что в Васане, шестьдесят больших городов со стенами и медными затворами;",
+        "NEO": "Ben-Gaber, à Ramoth-de-Galaad : il avait les Bourgs de Jaïr, fils de Manassé, qui sont en Galaad ; il avait la contrée d’Argob qui est en Basan, soixante grandes villes à murailles et à barres d’airain ; —",
+        "NAB": "the son of Geber in Ramoth-gilead, having charge of the villages of Jair, son of Manasseh, in Gilead; and of the district of Argob in Bashan - sixty large walled cities with gates barred with bronze;",
+        "VAT_ES": "el hijo de Guéber, en Ramot de Galaad; él tenía a su cargo los campamentos de Iaír, hijo de Manasés, que están en Galaad, y también el distrito de Argob, que está en Basán: sesenta grandes ciudades, amuralladas y con cerrojos de bronce;",
+        "CEI": "... figlio di Gheber, in Ramot di Gàlaad; a lui appartenevano i villaggi di Iair figlio di Manàsse in Gàlaad, il distretto di Argob in Basan, sessanta grandi città con mura e spranghe di bronzo;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אֲחִֽינָדָ֥ב בֶּן עִדֹּ֖א מַחֲנָֽיְמָ/ה׃",
+        "LXX": "Ἀχειναὰβ υἱὸς Ἀχέλ, Μααναιεῖον·",
+        "VUL": "Ahinadab filius Addo præerat in Manaim.",
+        "SYN": "Ахинадав, сын Гиддо, в Маханаиме;",
+        "NEO": "Ahinadab, fils d’Addo, à Manaïm ; —",
+        "NAB": "Ahinadab, son of Iddo, in Mahanaim;",
+        "VAT_ES": "Ajinadab, hijo de Idó, en Majanaim;",
+        "CEI": "Achinadàb, figlio di Iddo, a Macanàim;"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אֲחִימַ֖עַץ בְּ/נַפְתָּלִ֑י גַּם ה֗וּא לָקַ֛ח אֶת בָּשְׂמַ֥ת בַּת שְׁלֹמֹ֖ה לְ/אִשָּֽׁה׃",
+        "LXX": "Ἀχειμάας ἐν Νεφθαλεί, καὶ οὗτος ἔλαβεν τὴν Βασεμμὰθ θυγατέρα Σαλωμών, εἷς·",
+        "VUL": "Achimaas in Nephthali : sed et ipse habebat Basemath filiam Salomonis in conjugio.",
+        "SYN": "Ахимаас -- в _земле_ Неффалимовой; он взял себе в жену Васемафу, дочь Соломона;",
+        "NEO": "Ahimaas, en Nephthali : lui aussi avait pris pour femme une fille de Salomon, nommée Basemath ; —",
+        "NAB": "Ahimaaz, who was married to Basemath, another daughter of Solomon, in Naphtali;",
+        "VAT_ES": "Ajimaás, en Neftalí; también este se había casado con una hija de Salomón, llamada Basmat;",
+        "CEI": "Achimaaz in Nèftali - anche costui aveva preso in moglie una figlia di Salomone, Bosmat -;"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "בַּֽעֲנָא֙ בֶּן חוּשָׁ֔י בְּ/אָשֵׁ֖ר וּ/בְעָלֽוֹת׃",
+        "LXX": "Βαανὰ υἱὸς Χουσεὶ ἐν τῇ Μααλά, εἷς·",
+        "VUL": "Baana filius Husi in Aser, et in Baloth.",
+        "SYN": "Ваана, сын Хушая, в _земле_ Асировой и в Баалофе;",
+        "NEO": "Baana, fils de Husi, en Aser et à Aloth ; —",
+        "NAB": "Baana, son of Hushai, in Asher and along the rocky coast;",
+        "VAT_ES": "Baaná, hijo de Jusai, en Aser y en Bealot;",
+        "CEI": "Baana, figlio di Cusai, in Aser e in Zàbulon;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "יְהוֹשָׁפָ֥ט בֶּן פָּר֖וּחַ בְּ/יִשָׂשכָֽר׃",
+        "LXX": "υἱὸς Ἠλὰ ἐν τῷ Βενιαμείν·",
+        "VUL": "Josaphat filius Pharue in Issachar.",
+        "SYN": "Иосафат, сын Паруаха, в _земле_ Иссахаровой;",
+        "NEO": "Josaphat, fils de Pharué, en Issachar ; —",
+        "NAB": "Jehoshaphat, son of Paruah, in Issachar;",
+        "VAT_ES": "Josafat, hijo de Paruá, en Isacar;",
+        "CEI": "Giòsafat, figlio di Paruach, in Issacar;"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "שִׁמְעִ֥י בֶן אֵלָ֖א בְּ/בִנְיָמִֽן׃",
+        "LXX": "υἱὸς Ἀδαὶ ἐν τῇ γῇ Γὰδ τῇ Σηὼν βασιλέως τοῦ Ἑσεβὼν καὶ Ὢγ βασιλέως τοῦ Βασάν· καὶ νασὲφ εἷς ἐν γῇ Ἰούδα·",
+        "VUL": "Semei filius Ela in Benjamin.",
+        "SYN": "Шимей, сын Елы, в _земле_ Вениаминовой;",
+        "NEO": "Séméï, fils d’Ela, en Benjamin ; —",
+        "NAB": "Shimei, son of Ela, in Benjamin;",
+        "VAT_ES": "Simei, hijo de Elá, en Benjamín;",
+        "CEI": "Simei, figlio di Ela, in Beniamino;"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "גֶּ֥בֶר בֶּן אֻרִ֖י בְּ/אֶ֣רֶץ גִּלְעָ֑ד אֶ֜רֶץ סִיח֣וֹן מֶ֣לֶךְ הָ/אֱמֹרִ֗י וְ/עֹג֙ מֶ֣לֶךְ הַ/בָּשָׁ֔ן וּ/נְצִ֥יב אֶחָ֖ד אֲשֶׁ֥ר בָּ/אָֽרֶץ׃",
+        "LXX": "Ἰωσαφὰτ υἱὸς Φουασοὺδ ἐν Ἰσσαχάρ.",
+        "VUL": "Gaber filius Uri in terra Galaad, in terra Sehon regis Amorrhæi et Og regis Basan, super omnia quæ erant in illa terra.",
+        "SYN": "Гевер, сын Урия, в земле Галаадской, в земле Сигона, царя Аморрейского, и Ога, царя Васанского. Он был приставник в этой земле.",
+        "NEO": "Gabar, fils d’Uri, dans le pays de Galaad, pays de Séhon, roi des Amorrhéens, et de Og, roi de Basan : il y avait un seul intendant pour cette contrée.",
+        "NAB": "Geber, son of Uri, in the land of Gilead, the land of Sihon, king of the Amorites, and of Og, king of Bashan. There was one prefect besides, in the king's own land.",
+        "VAT_ES": "Guéber, hijo de Urí, en la región de Galaad, el país de Sijón, rey de los amorreos, y de Og, rey de Basán. El tenía además un prefecto en el país de Judá.",
+        "CEI": "Gheber, figlio di Uri, nel paese di Gad, già terra di Sicon re degli Amorrèi e di Og re di Basan. Inoltre c'era un prefetto nel territorio di Giuda."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "יְהוּדָ֤ה וְ/יִשְׂרָאֵל֙ רַבִּ֔ים כַּ/ח֥וֹל אֲשֶׁר עַל הַ/יָּ֖ם לָ/רֹ֑ב אֹכְלִ֥ים וְ/שֹׁתִ֖ים וּ/שְׂמֵחִֽים׃",
+        "LXX": "καὶ ἐχορήγουν οἱ καθεσταμένοι οὕτως τῷ βσαιλεῖ Σαλωμών, καὶ πάντα διαγγέλματα ἐπὶ τὴν τράπεζαν τοῦ βασιλέως, ἕκαστος μῆνα αὐτοῦ· οὐ παραλλάσσουσιν λόγον·",
+        "VUL": "Juda et Israël innumerabiles, sicut arena maris in multitudine : comedentes, et bibentes, atque lætantes.",
+        "SYN": "Иуда и Израиль, многочисленные как песок у моря, ели, пили и веселились.",
+        "NEO": "Juda et Israël étaient nombreux comme le sable qui est sur le bord de la mer ; ils mangeaient, buvaient et se réjouissaient.",
+        "NAB": "Judah and Israel were as numerous as the sands by the sea; they ate and drank and made merry.",
+        "VAT_ES": "Judá e Israel eran tan numerosos como la arena que está a la orilla del mar; todos comían, bebían y vivían felices.",
+        "CEI": "Giuda e Israele erano numerosi come la sabbia del mare e mangiavano e bevevano allegramente."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "καὶ τὰς κριθὰς καὶ τὸ ἄχυρον τοῖς ἵπποις καὶ τοῖς ἅρμασιν ᾖρον εἰς τὸν τόπον οὗ ἂν ᾖ ὁ βασιλεύς, ἕκαστος κατὰ τὴν σύνταξιν αὐτοῦ.",
+        "VUL": "Salomon autem erat in ditione sua, habens omnia regna a flumine terræ Philisthiim usque ad terminum Ægypti : offerentium sibi munera, et servientium ei cunctis diebus vitæ ejus.",
+        "SYN": "Соломон владел всеми царствами от реки _Евфрата_ до земли Филистимской и до пределов Египта. Они приносили дары и служили Соломону во все дни жизни его."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "καὶ ταῦτα τὰ δέοντα τῷ Σαλωμὼν ἐν ἡμέρᾳ μιᾷ· τριάκοντα κόροι σεμιδάλεως καὶ ἑξήκοντα κόροι ἀλεύρου κεκοπανισμένου,",
+        "VUL": "Erat autem cibus Salomonis per dies singulos triginta cori similæ, et sexaginta cori farinæ,",
+        "SYN": "Продовольствие Соломона на каждый день составляли: тридцать коров муки пшеничной и шестьдесят коров прочей муки,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "καὶ δέκα μόσχοι ἐκλεκτοὶ καὶ εἴκοσι βόες νομάδες καὶ ἑκατὸν πρόβατα, ἐκτὸς ἐλάφων καὶ δορκάδων καὶ ὀρνίθων ἐκλεκτῶν, σιτευτά.",
+        "VUL": "decem boves pingues, et viginti boves pascuales, et centum arietes, excepta venatione cervorum, caprearum, atque bubalorum, et avium altilium.",
+        "SYN": "десять волов откормленных и двадцать волов с пастбища, и сто овец, кроме оленей, и серн, и сайгаков, и откормленных птиц;"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "ὅτι ἦν ἄρχων πέραν τοῦ ποταμοῦ, καὶ ἦν αὐτῷ εἰρήνη ἐκ πάντων τῶν μερῶν κυκλόθεν.",
+        "VUL": "Ipse enim obtinebat omnem regionem quæ erat trans flumen, a Thaphsa usque ad Gazan, et cunctos reges illarum regionum : et habebat pacem ex omni parte in circuitu.",
+        "SYN": "ибо он владычествовал над всею землею по эту сторону реки, от Типсаха до Газы, над всеми царями по эту сторону реки, и был у него мир со всеми окрестными странами."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "καὶ ἔδωκεν Κύριος φρόνησιν τῷ Σαλωμὼν καὶ σοφίαν πολλὴν σφόδρα καὶ χύμα καρδίας ὡς ἡ ἄμμος ἡ παρὰ τὴν θάλασσαν.",
+        "VUL": "Habitabatque Juda et Israël absque timore ullo, unusquisque sub vite sua et sub ficu sua, a Dan usque Bersabee, cunctis diebus Salomonis.",
+        "SYN": "И жили Иуда и Израиль спокойно, каждый под виноградником своим и под смоковницею своею, от Дана до Вирсавии, во все дни Соломона."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "καὶ ἐπληθύνθη Σαλωμὼν σφόδρα ὑπὲρ τὴν φρόνησιν πάντων ἀρχαίων ἀνθρώπων καὶ ὑπὲρ πάντας φρονίμους Αἰγύπτου.",
+        "VUL": "Et habebat Salomon quadraginta millia præsepia equorum currilium, et duodecim millia equestrium.",
+        "SYN": "И было у Соломона сорок тысяч стойл для коней колесничных и двенадцать тысяч для конницы."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "καὶ ἐσοφίσατο ὑπὲρ πάντας τοὺς ἀνθρώπους, καὶ ἐσοφίσατο ὑπὲρ Γαιθὰν τὸν Ζαρείτην καὶ τὸν Αἱνὰν καὶ τὸν Χαλκὰδ καὶ Δαραλά, υἱὸς Μάλ.",
+        "VUL": "Nutriebantque eos supradicti regis præfecti : sed et necessaria mensæ regis Salomonis cum ingenti cura præbebant in tempore suo.",
+        "SYN": "И те приставники доставляли царю Соломону все принадлежащее к столу царя, каждый в свой месяц, и не допускали недостатка ни в чем."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "καὶ ἐλάλησεν Σαλωμὼν τρισχιλίας παραβολάς, καὶ ἦσαν ᾠδαὶ αὐτοῦ πεντακισχίλιαι.",
+        "VUL": "Hordeum quoque, et paleas equorum et jumentorum, deferebant in locum ubi erat rex, juxta constitutum sibi.",
+        "SYN": "И ячмень и солому для коней и для мулов доставляли каждый в свою очередь на место, где находился царь."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "καὶ ἐλάλησεν ὑπὲρ τῶν ξύλων ἀπὸ τῆς κέδρου τῆς ἐν τῷ Λιβάνῳ καὶ ἕως τῆς ὑσσώπου τῆς ἐκπορευομένης διὰ τοῦ τοίχου, καὶ ἐλάλησεν περὶ τῶν κτηνῶν καὶ περὶ τῶν πετεινῶν καὶ περὶ τῶν ἑρπετῶν καὶ περὶ τῶν ἰχθύων.",
+        "VUL": "Dedit quoque Deus sapientiam Salomoni, et prudentiam multam nimis, et latitudinem cordis quasi arenam quæ est in littore maris.",
+        "SYN": "И дал Бог Соломону мудрость и весьма великий разум, и обширный ум, как песок на берегу моря."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "καὶ παρεγίνοντο πάντες οἱ λαοὶ ἀκοῦσαι τῆς σοφίας Σαλωμών, καὶ παρὰ πάντων τῶν βασιλέων τῆς γῆς ὅσοι ἤκουον τῆς σοφίας αὐτοῦ.",
+        "VUL": "Et præcedebat sapientia Salomonis sapientiam omnium Orientalium et Ægyptiorum,",
+        "SYN": "И была мудрость Соломона выше мудрости всех сынов востока и всей мудрости Египтян."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "Καὶ ἔλαβεν Σαλωμὼν τὴν θυγατέρα Φαραὼ ἑαυτῷ εἰς γυναῖκα, καὶ εἰσήγαγεν αὐτὴν εἰς τὴν πόλιν Δαυεὶδ ἕως συντελέσαι αὐτὸν τὸν οἶκον Κυρίου καὶ τὸν οἶκον ἑαυτοῦ καὶ τὸ τεῖχος Ἰερουσαλήμ.",
+        "VUL": "et erat sapientior cunctis hominibus : sapientior Ethan Ezrahita, et Heman, et Chalcol, et Dorda filiis Mahol : et erat nominatus in universis gentibus per circuitum.",
+        "SYN": "Он был мудрее всех людей, мудрее и Ефана Езрахитянина, и Емана, и Халкола, и Дарды, сыновей Махола, и имя его было в славе у всех окрестных народов."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "LXX": "ὅτε ἀνέβη Φαραὼ βασιλεὺς Αἰγύπτου, καὶ προκατελάβετο τὴν Γάζερ καὶ ἐνεπύρισεν αὐτὴν καὶ τὸν Χανανείτην τὸν κατοικοῦντα ἐν Μεργάβ· καὶ ἔδωκεν αὐτὰς Φαραὼ ἀποστολὰς θυγατρὶ αὐτοῦ γυναικὶ Σαλωμών·",
+        "VUL": "Locutus est quoque Salomon tria millia parabolas : et fuerunt carmina ejus quinque et mille.",
+        "SYN": "И изрек он три тысячи притчей, и песней его было тысяча и пять;"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "LXX": "καὶ Σαλωμὼν ᾠκοδόμησεν τὴν Γάζερ.",
+        "VUL": "Et disputavit super lignis a cedro quæ est in Libano, usque ad hyssopum quæ egreditur de pariete : et disseruit de jumentis, et volucribus, et reptilibus, et piscibus.",
+        "SYN": "и говорил он о деревах, от кедра, что в Ливане, до иссопа, вырастающего из стены; говорил и о животных, и о птицах, и о пресмыкающихся, и о рыбах."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Et veniebant de cunctis populis ad audiendam sapientiam Salomonis, et ab universis regibus terræ qui audiebant sapientiam ejus.",
+        "SYN": "И приходили от всех народов послушать мудрости Соломона, от всех царей земных, которые слышали о мудрости его."
+      }
+    }
+  }
+}

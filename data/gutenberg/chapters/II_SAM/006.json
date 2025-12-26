@@ -1,0 +1,429 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "II_SAM_006",
+  "book_key": "II_SAM",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨סֶף ע֥וֹד דָּוִ֛ד אֶת כָּל בָּח֥וּר בְּ/יִשְׂרָאֵ֖ל שְׁלֹשִׁ֥ים אָֽלֶף׃",
+        "LXX": "Καὶ συνήγαγεν ἔτι Δαυεὶδ πάντα νεανίαν ἐξ Ἰσραὴλ ὡς ἑβδομήκοντα χιλιάδας.",
+        "VUL": "Congregavit autem rursum David omnes electos ex Israël, triginta millia.",
+        "SYN": "И собрал снова Давид всех отборных _людей_ из Израиля, тридцать тысяч.",
+        "NEO": "David rassembla encore toute l’élite d’Israël, au nombre de trente mille hommes.",
+        "NAB": "David again assembled all the picked men of Israel, thirty thousand in number.",
+        "VAT_ES": "David reunió nuevamente a lo más selecto de Israel –treinta mil hombres–",
+        "CEI": "Davide radunò di nuovo tutti gli uomini migliori d'Israele, in numero di trentamila."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣קָם וַ/יֵּ֣לֶךְ דָּוִ֗ד וְ/כָל הָ/עָם֙ אֲשֶׁ֣ר אִתּ֔/וֹ מִֽ/בַּעֲלֵ֖י יְהוּדָ֑ה לְ/הַעֲל֣וֹת מִ/שָּׁ֗ם אֵ֚ת אֲר֣וֹן הָ/אֱלֹהִ֔ים אֲשֶׁר נִקְרָ֣א שֵׁ֗ם שֵׁ֣ם יְהוָ֧ה צְבָא֛וֹת יֹשֵׁ֥ב הַ/כְּרֻבִ֖ים עָלָֽי/ו׃",
+        "LXX": "καὶ ἀνέστη καὶ ἐπορεύθη Δαυεὶδ καὶ πᾶς ὁ λαὸς ὁ μετ’ αὐτοῦ ἀπὸ τῶν ἀρχόντων Ἰούδα ἐν ἀναβάσει, τοῦ ἀναγαγεῖν ἐκεῖθεν τὴν κιβωτὸν τοῦ θεοῦ, ἐφ’ ἣν ἐπεκλήθη τὸ ὄνομα Κυρίου τῶν δυνάμεων καθημένου ἐπὶ τῶν χερουβεὶν ἐπ’ αὐτῆς.",
+        "VUL": "Surrexitque David, et abiit, et universus populus qui erat cum eo de viris Juda, ut adducerent arcam Dei, super quam invocatum est nomen Domini exercituum, sedentis in cherubim super eam.",
+        "SYN": "И встал и пошел Давид и весь народ, бывший с ним из Ваала Иудина, чтобы перенести оттуда ковчег Божий, на котором нарицается имя Господа Саваофа, сидящего на херувимах.",
+        "NEO": "Accompagné de tout le peuple réuni auprès de lui, David se leva et se mit en marche depuis Baalé-Juda, pour faire monter de là l’arche de Dieu, sur laquelle est invoqué le Nom, le nom de \\+w Yahweh|strong=\"H3068\"\\+w** des armées qui siège sur les Chérubins.",
+        "NAB": "Then David and all the people who were with him set out for Baala of Judah to bring up from there the ark of God, which bears the name of the LORD of hosts enthroned above the cherubim.",
+        "VAT_ES": "y con todo el pueblo que lo acompañaba se dirigió hacia Baalá de Judá, para subir de allí el Arca de Dios, la cual es llamada con el Nombre, el nombre del Señor de los ejércitos, que tiene su trono sobre los querubines.",
+        "CEI": "Poi si alzò e partì con tutta la sua gente da Baalà di Giuda, per trasportare di là l'arca di Dio, sulla quale è invocato il nome, il nome del Signore degli eserciti, che siede in essa sui cherubini."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יַּרְכִּ֜בוּ אֶת אֲר֤וֹן הָֽ/אֱלֹהִים֙ אֶל עֲגָלָ֣ה חֲדָשָׁ֔ה וַ/יִּשָּׂאֻ֔/הוּ מִ/בֵּ֥ית אֲבִינָדָ֖ב אֲשֶׁ֣ר בַּ/גִּבְעָ֑ה וְ/עֻזָּ֣א וְ/אַחְי֗וֹ בְּנֵי֙ אֲבִ֣ינָדָ֔ב נֹהֲגִ֖ים אֶת הָ/עֲגָלָ֥ה חֲדָשָֽׁה׃",
+        "LXX": "καὶ ἐπεβίβασεν τὴν κιβωτὸν Κυρίου ἐφ’ ἅμαξαν καινὴν καὶ ἦρεν αὐτὴν εἰς οἶκον Ἀμειναδὰβ τοῦ ἐν τῷ βουνῷ· καὶ Ὀζὰ καὶ οἱ ἀδελφοὶ αὐτοῦ υἱοὶ Ἀμειναδὰβ ἦγαν τὴν ἅμαξαν",
+        "VUL": "Et imposuerunt arcam Dei super plaustrum novum : tuleruntque eam de domo Abinadab, qui erat in Gabaa : Oza autem et Ahio, filii Abinadab, minabant plaustrum novum.",
+        "SYN": "И поставили ковчег Божий на новую колесницу и вывезли его из дома Аминадава, что на холме. Сыновья же Аминадава, Оза и Ахио, вели новую колесницу.",
+        "NEO": "Ils placèrent sur un chariot neuf l’arche de Dieu, et l’emmenèrent de la maison d’Abinadab, qui était sur la colline ; Oza et Achio, fils d’Abinadab, conduisaient le chariot neuf",
+        "NAB": "The ark of God was placed on a new cart and taken away from the house of Abinadab on the hill. Uzzah and Ahio, sons of Abinadab, guided the cart,",
+        "VAT_ES": "Luego cargaron el Arca de Dios en un carro nuevo y se la llevaron de la casa de Abinadab, que está sobre la colina. Uzá y Ajió, los hijos de Abinadab, conducían el carro.",
+        "CEI": "Posero l'arca di Dio sopra un carro nuovo e la tolsero dalla casa di Abinadàb che era sul colle; Uzzà e Achìo, figli di Abinadàb, conducevano il carro nuovo:"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יִּשָּׂאֻ֗/הוּ מִ/בֵּ֤ית אֲבִֽינָדָב֙ אֲשֶׁ֣ר בַּ/גִּבְעָ֔ה עִ֖ם אֲר֣וֹן הָ/אֱלֹהִ֑ים וְ/אַחְי֕וֹ הֹלֵ֖ךְ לִ/פְנֵ֥י הָ/אָרֽוֹן׃",
+        "LXX": "σὺν τῇ κιβωτῷ, καὶ οἱ ἀδελφοὶ αὐτοῦ ἐπορεύοντο ἔμπροσθεν τῆς κιβωτοῦ.",
+        "VUL": "Cumque tulissent eam de domo Abinadab, qui erat in Gabaa, custodiens arcam Dei Ahio præcedebat arcam.",
+        "SYN": "И повезли ее с ковчегом Божиим из дома Аминадава, что на холме; и Ахио шел пред ковчегом [Господним].",
+        "NEO": "(et ils l’emmenèrent de la maison d’Abinadab, qui était sur la colline) avec l’arche de Dieu ; Achio marchait devant l’arche.",
+        "NAB": "with Ahio walking before it,",
+        "VAT_ES": "Uzá iba al lado del Arca, y Ajió avanzaba delante de ella.",
+        "CEI": "Uzzà stava presso l'arca di Dio e Achìo precedeva l'arca."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/דָוִ֣ד וְ/כָל בֵּ֣ית יִשְׂרָאֵ֗ל מְשַֽׂחֲקִים֙ לִ/פְנֵ֣י יְהוָ֔ה בְּ/כֹ֖ל עֲצֵ֣י בְרוֹשִׁ֑ים וּ/בְ/כִנֹּר֤וֹת וּ/בִ/נְבָלִים֙ וּ/בְ/תֻפִּ֔ים וּ/בִ/מְנַֽעַנְעִ֖ים וּֽ/בְ/צֶלְצֶלִֽים׃",
+        "LXX": "καὶ Δαυεὶδ καὶ οἱ υἱοὶ Ἰσραὴλ παίζοντες ἐνώπιον Κυρίου ἐν ὀργάνοις ἡρμοσμένοις, ἐν ἰσχύι καὶ ἐν ᾠδαῖς καὶ ἐν κινύραις καὶ ἐν νάβλαις καὶ ἐν τυμπάνοις καὶ ἐν κυμβάλοις καὶ ἐν αὐλοῖς.",
+        "VUL": "David autem et omnis Israël ludebant coram Domino in omnibus lignis fabrefactis, et citharis et lyris et tympanis et sistris et cymbalis.",
+        "SYN": "А Давид и все сыны Израилевы играли пред Господом на всяких музыкальных орудиях из кипарисового дерева, и на цитрах, и на псалтирях, и на тимпанах, и на систрах, и на кимвалах.",
+        "NEO": "David et toute la maison d’Israël dansaient devant \\+w Yahweh|strong=\"H3068\"\\+w**, au son de toutes sortes d’instruments de bois de cyprès, de harpes, de luths, de tambourins, de sistres et de cymbales.",
+        "NAB": "while David and all the Israelites made merry before the LORD with all their strength, with singing and with citharas, harps, tambourines, sistrums and cymbals.",
+        "VAT_ES": "Mientras tanto, David y toda la casa de Israel hacían grandes festejos en honor del Señor, cantando al son de cítaras, arpas, tamboriles, címbalos y platillos.",
+        "CEI": "Davide e tutta la casa d'Israele facevano festa davanti al Signore con tutte le forze, con canti e con cetre, arpe, timpani, sistri e cembali."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֖אוּ עַד גֹּ֣רֶן נָכ֑וֹן וַ/יִּשְׁלַ֨ח עֻזָּ֜א אֶל אֲר֤וֹן הָֽ/אֱלֹהִים֙ וַ/יֹּ֣אחֶז בּ֔/וֹ כִּ֥י שָׁמְט֖וּ הַ/בָּקָֽר׃",
+        "LXX": "καὶ παραγίνονται ἕως ἅλω Νωδάβ· καὶ ἐξέτεινεν Ὀζὰ τὴν χεῖρα αὐτοῦ ἐπὶ τὴν κιβωτὸν τοῦ θεοῦ κατασχεῖν αὐτήν· καὶ ἐκράτησεν αὐτήν, ὅτι περιέσπασεν αὐτὸν ὁ μόσχος, τοῦ κατασχεῖν αὐτήν.",
+        "VUL": "Postquam autem venerunt ad aream Nachon, extendit Oza manum ad arcam Dei, et tenuit eam : quoniam calcitrabant boves, et declinaverunt eam.",
+        "SYN": "И когда дошли до гумна Нахонова, Оза простер руку свою к ковчегу Божию [чтобы придержать его] и взялся за него, ибо волы наклонили его.",
+        "NEO": "Lorsqu’ils furent arrivés à l’aire de Nachon, Oza étendit la main vers l’arche de Dieu et la saisit, parce que les bœufs avaient fait un faux pas.",
+        "NAB": "When they came to the threshing floor of Nodan, Uzzah reached out his hand to the ark of God and steadied it, for the oxen were making it tip.",
+        "VAT_ES": "Cuando llegaron a la era de Nacón, Uzá extendió su mano hacia el Arca de Dios y la sostuvo, porque los bueyes habían resbalado.",
+        "CEI": "Ma quando furono giunti all'aia di Nacon, Uzzà stese la mano verso l'arca di Dio e vi si appoggiò perché i buoi la facevano piegare."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יִּֽחַר אַ֤ף יְהוָה֙ בְּ/עֻזָּ֔ה וַ/יַּכֵּ֥/הוּ שָׁ֛ם הָ/אֱלֹהִ֖ים עַל הַ/שַּׁ֑ל וַ/יָּ֣מָת שָׁ֔ם עִ֖ם אֲר֥וֹן הָ/אֱלֹהִֽים׃",
+        "LXX": "καὶ ἐθυμώθη Κύριος τῷ Ὀζά, καὶ ἔπαισεν αὐτὸν ἐκεῖ ὁ θεός, καὶ ἀπέθανεν ἐκεῖ παρὰ τὴν κιβωτὸν τοῦ κυρίου ἐνώπιον τοῦ θεοῦ.",
+        "VUL": "Iratusque est indignatione Dominus contra Ozam, et percussit eum super temeritate : qui mortuus est ibi juxta arcam Dei.",
+        "SYN": "Но Господь прогневался на Озу, и поразил его Бог там же за дерзновение, и умер он там у ковчега Божия.",
+        "NEO": "La colère de \\+w Yahweh|strong=\"H3068\"\\+w** s’enflamma contre Oza, et Dieu le frappa sur place, à cause de sa précipitation ; et Oza mourut là, près de l’arche de Dieu.",
+        "NAB": "But the LORD was angry with Uzzah; God struck him on that spot, and he died there before God.",
+        "VAT_ES": "Entonces la ira del Señor se encendió contra Uzá, y Dios lo hirió allí mismo por ese error. Así el murió junto al Arca de Dios.",
+        "CEI": "L'ira del Signore si accese contro Uzzà; Dio lo percosse per la sua colpa ed egli morì sul posto, presso l'arca di Dio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּ֣חַר לְ/דָוִ֔ד עַל֩ אֲשֶׁ֨ר פָּרַ֧ץ יְהוָ֛ה פֶּ֖רֶץ בְּ/עֻזָּ֑ה וַ/יִּקְרָ֞א לַ/מָּק֤וֹם הַ/הוּא֙ פֶּ֣רֶץ עֻזָּ֔ה עַ֖ד הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ ἠθύμησεν Δαυεὶδ ὑπὲρ οὗ διέκοψεν Κύριος διακοπὴν ἐν τῷ Ὀζά· καὶ ἐκλήθη ὁ τόπος ἐκεῖνος Διακοπὴ Ὀζὰ ἕως τῆς ἡμέρας ταύτης.",
+        "VUL": "Contristatus est autem David, eo quod percussisset Dominus Ozam, et vocatum est nomen loci illius : Percussio Ozæ, usque in diem hanc.",
+        "SYN": "И опечалился Давид, что Господь поразил Озу. Место сие и доныне называется: \"поражение Озы\".",
+        "NEO": "David fut fâché de ce que \\+w Yahweh|strong=\"H3068\"\\+w** avait ainsi porté un coup à Oza ; et ce lieu a été appelé jusqu’à ce jour Phéréts-Oza.",
+        "NAB": "David was disturbed because the LORD had vented his anger on Uzzah. (The place has been called Perez-uzzah down to the present day.)",
+        "VAT_ES": "David se conmovió, porque el Señor había acometido contra Uzá, y aquel lugar se llamó Peres Uzá –que significa \"Brecha de Uzá\"– hasta el día de hoy.",
+        "CEI": "Davide si rattristò per il fatto che il Signore si era scagliato con impeto contro Uzzà; quel luogo fu chiamato Perez-Uzzà fino ad oggi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּרָ֥א דָוִ֛ד אֶת יְהוָ֖ה בַּ/יּ֣וֹם הַ/ה֑וּא וַ/יֹּ֕אמֶר אֵ֛יךְ יָב֥וֹא אֵלַ֖/י אֲר֥וֹן יְהוָֽה׃",
+        "LXX": "καὶ ἐφοβήθη Δαυεὶδ τὸν κύριον ἐν τῇ ἡμέρᾳ ἐκείνῃ λέγων Πῶς εἰσελεύσεται πρὸς μὲ ἡ κιβωτὸς Κυρίου;",
+        "VUL": "Et extimuit David Dominum in die illa, dicens : Quomodo ingredietur ad me arca Domini ?",
+        "SYN": "И устрашился Давид в тот день Господа и сказал: как войти ко мне ковчегу Господню?",
+        "NEO": "David eut peur de \\+w Yahweh|strong=\"H3068\"\\+w** en ce jour-là, et il dit : « Comment l’arche de \\+w Yahweh|strong=\"H3068\"\\+w** viendrait-elle vers moi ? »",
+        "NAB": "David feared the LORD that day and said, \"How can the ark of the LORD come to me?\"",
+        "VAT_ES": "Aquel día, David tuvo miedo del Señor y dijo: «&iquest;Cómo va a entrar en mi casa el Arca del Señor?».",
+        "CEI": "Davide in quel giorno ebbe paura del Signore e disse: \"Come potrà venire da me l'arca del Signore?\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא אָבָ֣ה דָוִ֗ד לְ/הָסִ֥יר אֵלָ֛י/ו אֶת אֲר֥וֹן יְהוָ֖ה עַל עִ֣יר דָּוִ֑ד וַ/יַּטֵּ֣/הוּ דָוִ֔ד בֵּ֥ית עֹבֵֽד אֱד֖וֹם הַ/גִּתִּֽי׃",
+        "LXX": "καὶ οὐκ ἐβούλετο Δαυεὶδ τοῦ ἐκκλῖναι πρὸς αὐτὸν τὴν κιβωτὸν διαθήκης Κυρίου εἰς τὴν πόλιν Δαυείδ· καὶ ἀπέκλινεν αὐτὴν Δαυεὶδ εἰς οἶκον Ἀβεδδαρὰ τοῦ Γεθθαίου.",
+        "VUL": "Et noluit divertere ad se arcam Domini in civitatem David : sed divertit eam in domum Obededom Gethæi.",
+        "SYN": "И не захотел Давид везти ковчег Господень к себе, в город Давидов, а обратил его в дом Аведдара Гефянина.",
+        "NEO": "Et David ne voulut pas retirer l’arche de \\+w Yahweh|strong=\"H3068\"\\+w** chez lui, dans la cité de David ; et la David la fit conduire dans la maison d’Obédédom de Geth.",
+        "NAB": "So David would not have the ark of the LORD brought to him in the City of David, but diverted it to the house of Obed-edom the Gittite.",
+        "VAT_ES": "Y no quiso trasladar el Arca del Señor a su casa, a la Ciudad de David, sino que mandó que la llevaran a la casa de Obededom de Gat.",
+        "CEI": "Davide non volle trasferire l'arca del Signore presso di sé nella città di Davide, ma la fece portare in casa di Obed-Edom di Gat."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֵּשֶׁב֩ אֲר֨וֹן יְהוָ֜ה בֵּ֣ית עֹבֵ֥ד אֱדֹ֛ם הַ/גִּתִּ֖י שְׁלֹשָׁ֣ה חֳדָשִׁ֑ים וַ/יְבָ֧רֶךְ יְהוָ֛ה אֶת עֹבֵ֥ד אֱדֹ֖ם וְ/אֶת כָּל בֵּיתֽ/וֹ׃",
+        "LXX": "καὶ ἐκάθισεν ἡ κιβωτὸς τοῦ κυρίου εἰς οἶκον Ἀβεδδαρὰ τοῦ Γεθθαίου μῆνας τρεῖς· καὶ εὐλόγησεν Κύριος ὅλον τὸν οἶκον Ἀβεδδαρὰ καὶ πάντα τὰ αὐτοῦ.",
+        "VUL": "Et habitavit arca Domini in domo Obededom Gethæi tribus mensibus : et benedixit Dominus Obededom, et omnem domum ejus.",
+        "SYN": "И оставался ковчег Господень в доме Аведдара Гефянина три месяца, и благословил Господь Аведдара и весь дом его.",
+        "NEO": "L’arche de \\+w Yahweh|strong=\"H3068\"\\+w** resta trois mois dans la maison d’Obédédom de Geth, et \\+w Yahweh|strong=\"H3068\"\\+w** bénit Obédédom et toute sa maison.",
+        "NAB": "The ark of the LORD remained in the house of Obed-edom the Gittite for three months, and the LORD blessed Obed-edom and his whole house.",
+        "VAT_ES": "El Arca del Señor permaneció tres meses en la casa de Obededom de Gat, y el Señor bendijo a Obededom y a toda su familia.",
+        "CEI": "L'arca del Signore rimase tre mesi in casa di Obed-Edom di Gat e il Signore benedisse Obed-Edom e tutta la sua casa."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֻּגַּ֗ד לַ/מֶּ֣לֶךְ דָּוִד֮ לֵ/אמֹר֒ בֵּרַ֣ךְ יְהוָ֗ה אֶת בֵּ֨ית עֹבֵ֤ד אֱדֹם֙ וְ/אֶת כָּל אֲשֶׁר ל֔/וֹ בַּ/עֲב֖וּר אֲר֣וֹן הָ/אֱלֹהִ֑ים וַ/יֵּ֣לֶךְ דָּוִ֗ד וַ/יַּעַל֩ אֶת אֲר֨וֹן הָ/אֱלֹהִ֜ים מִ/בֵּ֨ית עֹבֵ֥ד אֱדֹ֛ם עִ֥יר דָּוִ֖ד בְּ/שִׂמְחָֽה׃",
+        "LXX": "Καὶ ἀπηγγέλη τῷ βασιλεῖ Δαυεὶδ λέγοντες Ηὐλόγησεν Κύριος τὸν οἶκον Ἀβεδδαρὰ καὶ πάντα τὰ αὐτοῦ ἕνεκεν τῆς κιβωτοῦ τοῦ θεοῦ· καὶ ἐπορεύθη Δαυεὶδ καὶ ἀνήγαγεν τὴν κιβωτὸν τοῦ κυρίου ἐκ τοῦ οἴκου Ἀβεδδαρὰ εἰς τὴν πόλιν Δαυεὶδ ἐν εὐφροσύνῃ.",
+        "VUL": "Nuntiatumque est regi David quod benedixisset Dominus Obededom, et omnia ejus, propter arcam Dei. Abiit ergo David, et adduxit arcam Dei de domo Obededom in civitatem David cum gaudio : et erant cum David septem chori, et victima vituli.",
+        "SYN": "Когда донесли царю Давиду, говоря: \"Господь благословил дом Аведдара и все, что было у него, ради ковчега Божия\", то пошел Давид и с торжеством перенес ковчег Божий из дома Аведдара в город Давидов.",
+        "NEO": "On vint dire au roi David : « \\+w Yahweh|strong=\"H3068\"\\+w** a béni la maison d’Obédédom et tout ce qui est à lui, à cause de l’arche de Dieu. » Et David se mit en route, et il fit monter l’arche de Dieu de la maison d’Obédédom dans la cité de David, avec un joyeux cortège.",
+        "NAB": "When it was reported to King David that the LORD had blessed the family of Obed-edom and all that belonged to him, David went to bring up the ark of God from the house of Obed-edom into the City of David amid festivities.",
+        "VAT_ES": "Cuando informaron a David: «El Señor ha bendecido a la familia de Obededom y todos sus bienes a causa del Arca de Dios», David partió e hizo subir el Arca de Dios desde la casa de Obededom a la Ciudad de David, con gran alegría.",
+        "CEI": "Ma poi fu detto al re Davide: \"Il Signore ha benedetto la casa di Obed-Edom e quanto gli appartiene, a causa dell'arca di Dio\". Allora Davide andò e trasportò l'arca di Dio dalla casa di Obed-Edom nella città di Davide, con gioia."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י כִּ֧י צָעֲד֛וּ נֹשְׂאֵ֥י אֲרוֹן יְהוָ֖ה שִׁשָּׁ֣ה צְעָדִ֑ים וַ/יִּזְבַּ֥ח שׁ֖וֹר וּ/מְרִֽיא׃",
+        "LXX": "καὶ ἦσαν μετ’ αὐτῶν αἴροντες τὴν κιβωτὸν ἑπτὰ χοροί, καὶ θύμα μόσχος, καὶ ἄρνα.",
+        "VUL": "Cumque transcendissent qui portabant arcam Domini sex passus, immolabat bovem et arietem,",
+        "SYN": "И когда несшие ковчег Господень проходили по шести шагов, он приносил в жертву тельца и овна.",
+        "NEO": "Quand les porteurs de l’arche de \\+w Yahweh|strong=\"H3068\"\\+w** eurent fait six pas, on offrit en sacrifice un bœuf et un veau gras.",
+        "NAB": "As soon as the bearers of the ark of the LORD had advanced six steps, he sacrificed an ox and a fatling.",
+        "VAT_ES": "Los que transportaban el Arca del Señor avanzaron seis pasos, y él sacrificó un buey un ternero cebado.",
+        "CEI": "Quando quelli che portavano l'arca del Signore ebbero fatto sei passi, egli immolò un bue e un ariete grasso."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/דָוִ֛ד מְכַרְכֵּ֥ר בְּ/כָל עֹ֖ז לִ/פְנֵ֣י יְהוָ֑ה וְ/דָוִ֕ד חָג֖וּר אֵפ֥וֹד בָּֽד׃",
+        "LXX": "καὶ Δαυεὶδ ἀνεκρούετο ἐν ὀργάνοις ἡρμοσμένοις ἐνώπιον Κυρίου, καὶ ὁ Δαυεὶδ ἐνδεδυκὼς στολὴν ἔξαλλον.",
+        "VUL": "et David saltabat totis viribus ante Dominum : porro David erat accinctus ephod lineo.",
+        "SYN": "Давид скакал из всей силы пред Господом; одет же был Давид в льняной ефод.",
+        "NEO": "David dansait de toute sa force devant \\+w Yahweh|strong=\"H3068\"\\+w**, et David était ceint d’un éphod de lin.",
+        "NAB": "Then David, girt with a linen apron, came dancing before the LORD with abandon,",
+        "VAT_ES": "David, que sólo llevaba ceñido un efod de lino, iba danzando con todas sus fuerzas delante del Señor.",
+        "CEI": "Davide danzava con tutte le forze davanti al Signore. Ora Davide era cinto di un efod di lino."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/דָוִד֙ וְ/כָל בֵּ֣ית יִשְׂרָאֵ֔ל מַעֲלִ֖ים אֶת אֲר֣וֹן יְהוָ֑ה בִּ/תְרוּעָ֖ה וּ/בְ/ק֥וֹל שׁוֹפָֽר׃",
+        "LXX": "καὶ Δαυεὶδ καὶ πᾶς ὁ οἶκος Ἰσραὴλ ἀνήγαγον τὴν κιβωτὸν Κυρίου μετὰ κραυγῆς καὶ μετὰ φωνῆς σάλπιγγος.",
+        "VUL": "Et David et omnis domus Israël ducebant arcam testamenti Domini in jubilo, et in clangore buccinæ.",
+        "SYN": "Так Давид и весь дом Израилев несли ковчег Господень с восклицаниями и трубными звуками.",
+        "NEO": "David et toute la maison d’Israël firent monter l’arche de \\+w Yahweh|strong=\"H3068\"\\+w** avec des cris de joie et au son des trompettes.",
+        "NAB": "as he and all the Israelites were bringing up the ark of the LORD with shouts of joy and to the sound of the horn.",
+        "VAT_ES": "Así, David y toda la casa de Israel subieron el Arca del Señor en medio de aclamaciones y al sonido de trompetas.",
+        "CEI": "Così Davide e tutta la casa d'Israele trasportavano l'arca del Signore con tripudi e a suon di tromba."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֙ אֲר֣וֹן יְהוָ֔ה בָּ֖א עִ֣יר דָּוִ֑ד וּ/מִיכַ֨ל בַּת שָׁא֜וּל נִשְׁקְפָ֣ה בְּעַ֣ד הַ/חַלּ֗וֹן וַ/תֵּ֨רֶא אֶת הַ/מֶּ֤לֶךְ דָּוִד֙ מְפַזֵּ֤ז וּ/מְכַרְכֵּר֙ לִ/פְנֵ֣י יְהוָ֔ה וַ/תִּ֥בֶז ל֖/וֹ בְּ/לִבָּֽ/הּ׃",
+        "LXX": "καὶ ἐγένετο τῆς κιβωτοῦ παραγινομένης ἕως πόλεως Δαυείδ, καὶ Μελχὸλ ἡ θυγάτηρ Σαοὺλ διέκυπτεν διὰ τῆς θυρίδος, καὶ εἶδεν τὸν βασιλέα Δαυεὶδ ὀρχούμενον καὶ ἀνακρουόμενον ἐνώπιον Κυρίου, καὶ ἐξουδένωσεν αὐτὸν ἐν τῇ καρδίᾳ ἑαυτῆς.",
+        "VUL": "Cumque intrasset arca Domini in civitatem David, Michol filia Saul, prospiciens per fenestram, vidit regem David subsilientem atque saltantem coram Domino : et despexit eum in corde suo.",
+        "SYN": "Когда входил ковчег Господень в город Давидов, Мелхола, дочь Саула, смотрела в окно и, увидев царя Давида, скачущего и пляшущего пред Господом, уничижила его в сердце своем.",
+        "NEO": "Lorsque l’arche de \\+w Yahweh|strong=\"H3068\"\\+w** entra dans la cité de David, Michol, fille de Saül, regarda par la fenêtre et, voyant le roi David sauter et danser devant \\+w Yahweh|strong=\"H3068\"\\+w**, elle le méprisa dans son cœur.",
+        "NAB": "As the ark of the LORD was entering the City of David, Saul's daughter Michal looked down through the window and saw King David leaping and dancing before the LORD, and she despised him in her heart.",
+        "VAT_ES": "Mientras el Arca del Señor entraba en la Ciudad de David, Mical, la hija de Saúl, se asomó por la ventana. Y al ver al rey David que saltaba y danzaba delante del Señor, lo despreció en su corazón.",
+        "CEI": "Mentre l'arca del Signore entrava nella città di David, Mikal, figlia di Saul, guardò dalla finestra; vedendo il re Davide che saltava e danzava dinanzi al Signore, lo disprezzò in cuor suo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יָּבִ֜אוּ אֶת אֲר֣וֹן יְהוָ֗ה וַ/יַּצִּ֤גוּ אֹת/וֹ֙ בִּ/מְקוֹמ֔/וֹ בְּ/ת֣וֹךְ הָ/אֹ֔הֶל אֲשֶׁ֥ר נָטָה ל֖/וֹ דָּוִ֑ד וַ/יַּ֨עַל דָּוִ֥ד עֹל֛וֹת לִ/פְנֵ֥י יְהוָ֖ה וּ/שְׁלָמִֽים׃",
+        "LXX": "καὶ φέρουσιν τὴν κιβωτὸν τοῦ κυρίου καὶ ἀνέθηκαν αὐτὴν εἰς τὸν τόπον αὐτῆς εἰς μέσον τῆς σκηνῆς ἧς ἔπηξεν αὐτῇ Δαυείδ· καὶ ἀνήνεγκεν αὐτῇ ὁλοκαυτώματα ἐνώπιον Κυρίου, καὶ εἰρηνικάς.",
+        "VUL": "Et introduxerunt arcam Domini, et imposuerunt eam in loco suo in medio tabernaculi, quod tetenderat ei David : et obtulit David holocausta et pacifica coram Domino.",
+        "SYN": "И принесли ковчег Господень и поставили его на своем месте посреди скинии, которую устроил для него Давид; и принес Давид всесожжения пред Господом и жертвы мирные.",
+        "NEO": "Après qu’on eut fait entrer l’arche de \\+w Yahweh|strong=\"H3068\"\\+w** et qu’on l’eut déposée à sa place, au milieu de la tente que David avait dressée pour elle, David offrit devant \\+w Yahweh|strong=\"H3068\"\\+w** des holocaustes et des sacrifices pacifiques.",
+        "NAB": "The ark of the LORD was brought in and set in its place within the tent David had pitched for it. Then David offered holocausts and peace offerings before the LORD.",
+        "VAT_ES": "Luego introdujeron el Arca del Señor y la instalaron en su sitio, en medio de la carpa que David había levantado para ella, y David ofreció holocaustos y sacrificios de comunión delante del Señor.",
+        "CEI": "Introdussero dunque l'arca del Signore e la collocarono al suo posto, in mezzo alla tenda che Davide aveva piantata per essa; Davide offrì olocausti e sacrifici di comunione davanti al Signore."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יְכַ֣ל דָּוִ֔ד מֵ/הַעֲל֥וֹת הָ/עוֹלָ֖ה וְ/הַ/שְּׁלָמִ֑ים וַ/יְבָ֣רֶךְ אֶת הָ/עָ֔ם בְּ/שֵׁ֖ם יְהוָ֥ה צְבָאֽוֹת׃",
+        "LXX": "καὶ συνετέλεσεν Δαυεὶδ συναναφέρων τὰς ὁλοκαυτώσεις καὶ τὰς εἰρηνικάς, καὶ εὐλόγησεν τὸν λαὸν ἐν ὀνόματι Κυρίου τῶν δυνάμεων.",
+        "VUL": "Cumque complesset offerens holocausta et pacifica, benedixit populo in nomine Domini exercituum.",
+        "SYN": "Когда Давид окончил приношение всесожжений и жертв мирных, то благословил он народ именем Господа Саваофа;",
+        "NEO": "Quand David eut achevé d’offrir les holocaustes et les sacrifices pacifiques, il bénit le peuple au nom de \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "When he finished making these offerings, he blessed the people in the name of the LORD of hosts.",
+        "VAT_ES": "Cuando David terminó de ofrecer el holocausto y los sacrificios de comunión, bendijo al pueblo en nombre del Señor de los ejércitos.",
+        "CEI": "Quando ebbe finito di offrire gli olocausti e i sacrifici di comunione, Davide benedisse il popolo nel nome del Signore degli eserciti"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יְחַלֵּ֨ק לְ/כָל הָ/עָ֜ם לְ/כָל הֲמ֣וֹן יִשְׂרָאֵל֮ לְ/מֵ/אִ֣ישׁ וְ/עַד אִשָּׁה֒ לְ/אִ֗ישׁ חַלַּ֥ת לֶ֨חֶם֙ אַחַ֔ת וְ/אֶשְׁפָּ֣ר אֶחָ֔ד וַ/אֲשִׁישָׁ֖ה אֶחָ֑ת וַ/יֵּ֥לֶךְ כָּל הָ/עָ֖ם אִ֥ישׁ לְ/בֵיתֽ/וֹ׃",
+        "LXX": "καὶ διεμέρισεν παντὶ τῷ λαῷ εἰς πᾶσαν τὴν δύναμιν τοῦ Ἰσραὴλ ἀπὸ Δὰν ἕως Βηρσάβεε, ἀπὸ ἀνδρὸς ἕως γυναικός, ἑκάστῳ κολλυρίδα ἄρτου καὶ ἐσχαρίτην καὶ λάγανον ἀπὸ τηγάνου· καὶ ἀπῆλθεν πᾶς ὁ λαὸς ἕκαστος εἰς τὸν οἶκον αὐτοῦ.",
+        "VUL": "Et partitus est universæ multitudini Israël tam viro quam mulieri singulis collyridam panis unam, et assaturam bubulæ carnis unam, et similam frixam oleo : et abiit omnis populus, unusquisque in domum suam.",
+        "SYN": "и роздал всему народу, всему множеству Израильтян [от Дана даже до Вирсавии], как мужчинам, так и женщинам, по одному хлебу и по куску жареного мяса и по одной лепешке каждому. И пошел весь народ, каждый в дом свой.",
+        "NEO": "Puis il distribua à tout le peuple, à toute la multitude d’Israël, hommes et femmes, à chacun un gâteau, une portion de viande et une pâte de raisins. Et tout le peuple s’en alla chacun dans sa maison.",
+        "NAB": "He then distributed among all the people, to each man and each woman in the entire multitude of Israel, a loaf of bread, a cut of roast meat, and a raisin cake. With this, all the people left for their homes.",
+        "VAT_ES": "Después repartió a todo el pueblo, a toda la multitud de Israel, hombres y mujeres, una hogaza de pan, un pastel de dátiles y uno de pasas de uva por persona. Luego todo el pueblo se fue, cada uno a su casa.",
+        "CEI": "e distribuì a tutto il popolo, a tutta la moltitudine d'Israele, uomini e donne, una focaccia di pane per ognuno, una porzione di carne e una schiacciata di uva passa. Poi tutto il popolo se ne andò, ciascuno a casa sua."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥שָׁב דָּוִ֖ד לְ/בָרֵ֣ךְ אֶת בֵּית֑/וֹ וַ/תֵּצֵ֞א מִיכַ֤ל בַּת שָׁאוּל֙ לִ/קְרַ֣את דָּוִ֔ד וַ/תֹּ֗אמֶר מַה נִּכְבַּ֨ד הַ/יּ֜וֹם מֶ֣לֶךְ יִשְׂרָאֵ֗ל אֲשֶׁ֨ר נִגְלָ֤ה הַ/יּוֹם֙ לְ/עֵינֵ֨י אַמְה֣וֹת עֲבָדָ֔י/ו כְּ/הִגָּל֥וֹת נִגְל֖וֹת אַחַ֥ד הָ/רֵקִֽים׃",
+        "LXX": "Καὶ ἐπέστρεψεν Δαυεὶδ εὐλογῆσαι τὸν οἶκον αὐτοῦ, καὶ ἐξῆλθεν Μελχὸλ ἡ θυγάτηρ Σαοὺλ εἰς ἀπάντησιν Δαυεὶδ καὶ εὐλόγησεν αὐτὸν καὶ εἶπεν Τί δεδόξασται σήμερον ὁ βασιλεὺς Ἰσραήλ, ὃς ἀπεκαλύφθη σήμερον ἐν ὀφθαλμοῖς παιδισκῶν τῶν δούλων ἑαυτοῦ καθὼς ἀποκαλύπτεται ἀποκαλυφθεὶς εἷς τῶν ὀρχουμένων.",
+        "VUL": "Reversusque est David ut benediceret domui suæ : et egressa Michol filia Saul in occursum David, ait : Quam gloriosus fuit hodie rex Israël discooperiens se ante ancillas servorum suorum, et nudatus est, quasi si nudetur unus de scurris.",
+        "SYN": "Когда Давид возвратился, чтобы благословить дом свой, то Мелхола, дочь Саула, вышла к нему навстречу, [и приветствовала его] и сказала: как отличился сегодня царь Израилев, обнажившись сегодня пред глазами рабынь рабов своих, как обнажается какой-- нибудь пустой человек!",
+        "NEO": "Comme David s’en retournait pour bénir sa maison, Michol, fille de Saül, sortit à la rencontre de David, et elle dit : « Quelle gloire aujourd’hui pour le roi d’Israël de s’être découvert aujourd’hui aux yeux des servantes de ses serviteurs, comme se découvrirait un homme de rien ! »",
+        "NAB": "When David returned to bless his own family, Saul's daughter Michal came out to meet him and said, \"How the king of Israel has honored himself today, exposing himself to the view of the slave girls of his followers, as a commoner might do!\"",
+        "VAT_ES": "Cuando David se volvía para bendecir a su casa, le salió al encuentro Mical, la hija de Saúl, y le dijo: «&iexcl;Hoy sí que se ha lucido el rey de Israel, mostrándose desnudo a la vista de las esclavas de sus servidores, como se desnudaría un inútil cualquiera!».",
+        "CEI": "Ma quando Davide tornava per benedire la sua famiglia, Mikal figlia di Saul gli uscì incontro e gli disse: \"Bell'onore si è fatto oggi il re di Israele a mostrarsi scoperto davanti agli occhi delle serve dei suoi servi, come si scoprirebbe un uomo da nulla!\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר דָּוִד֮ אֶל מִיכַל֒ לִ/פְנֵ֣י יְהוָ֗ה אֲשֶׁ֨ר בָּֽחַר בִּ֤/י מֵֽ/אָבִי/ךְ֙ וּ/מִ/כָּל בֵּית֔/וֹ לְ/צַוֺּ֨ת אֹתִ֥/י נָגִ֛יד עַל עַ֥ם יְהוָ֖ה עַל יִשְׂרָאֵ֑ל וְ/שִׂחַקְתִּ֖י לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ εἶπεν Δαυεὶδ πρὸς Μελχόλ Ἐνώπιον Κυρίου ὀρχήσομαι· εὐλογητὸς Κύριος ὃς ἐξελέξατό με ὑπὲρ τὸν πατέρα σου καὶ ὑπὲρ πάντα τὸν οἶκον αὐτοῦ, καταστῆσαί με εἰς ἡγούμενον ἐπὶ τὸν λαὸν αὐτοῦ ἐπὶ τὸν Ἰσραήλ· καὶ παίξομαι καὶ ὀρχήσομαι ἐνώπιον Κυρίου,",
+        "VUL": "Dixitque David ad Michol : Ante Dominum, qui elegit me potius quam patrem tuum et quam omnem domum ejus, et præcepit mihi ut essem dux super populum Domini in Israël,",
+        "SYN": "И сказал Давид Мелхоле: пред Господом [плясать буду. И благословен Господь], Который предпочел меня отцу твоему и всему дому его, утвердив меня вождем народа Господня, Израиля; пред Господом играть и плясать буду;",
+        "NEO": "David répondit à Michol : « C’est devant \\+w Yahweh|strong=\"H3068\"\\+w**, qui m’a choisi de préférence à ton père et à toute sa maison pour m’établir prince sur son peuple, sur Israël, c’est devant \\+w Yahweh|strong=\"H3068\"\\+w** que j’ai dansé.",
+        "NAB": "But David replied to Michal: \"I was dancing before the LORD. As the LORD lives, who preferred me to your father and his whole family when he appointed me commander of the LORD'S people, Israel, not only will I make merry before the LORD,",
+        "VAT_ES": "Pero David replicó a Mical: «Lo hice delante del Señor, que me eligió en lugar de tu padre y de toda su casa, para constituirme jefe del pueblo del Señor, de Israel. He bailado ante el Señor,",
+        "CEI": "Davide rispose a Mikal: \"L'ho fatto dinanzi al Signore, che mi ha scelto invece di tuo padre e di tutta la sua casa per stabilirmi capo sul popolo del Signore, su Israele; ho fatto festa davanti al Signore."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וּ/נְקַלֹּ֤תִי עוֹד֙ מִ/זֹּ֔את וְ/הָיִ֥יתִי שָׁפָ֖ל בְּ/עֵינָ֑/י וְ/עִם הָֽ/אֲמָהוֹת֙ אֲשֶׁ֣ר אָמַ֔רְתְּ עִמָּ֖/ם אִכָּבֵֽדָה׃",
+        "LXX": "καὶ ἀποκαλυφθήσομαι ἔτι οὕτως, καὶ ἔσομαι ἀχρεῖος ἐν ὀφθαλμοῖς σου, καὶ μετὰ τῶν παιδισκῶν ὧν εἶπάς με δοξασθῆναι.",
+        "VUL": "et ludam, et vilior fiam plus quam factus sum : et ero humilis in oculis meis, et cum ancillis de quibus locuta es, gloriosior apparebo.",
+        "SYN": "и я еще больше уничижусь, и сделаюсь еще ничтожнее в глазах моих, и пред служанками, о которых ты говоришь, я буду славен.",
+        "NEO": "Je m’humilierai encore plus que cela et je serai vil à mes propres yeux, et auprès des servantes dont tu parles, auprès d’elles, je serai en honneur. »",
+        "NAB": "but I will demean myself even more. I will be lowly in your esteem, but in the esteem of the slave girls you spoke of I will be honored.\"",
+        "VAT_ES": "y me humillaré todavía más, envileciéndome así a tus ojos. En cambio, esas esclavas de que hablas, ellas sí me considerarán digno de honra».",
+        "CEI": "Anzi mi abbasserò anche più di così e mi renderò vile ai tuoi occhi, ma presso quelle serve di cui tu parli, proprio presso di loro, io sarò onorato!\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וּ/לְ/מִיכַל֙ בַּת שָׁא֔וּל לֹֽא הָ֥יָה לָ֖/הּ יָ֑לֶד עַ֖ד י֥וֹם מוֹתָֽ/הּ׃",
+        "LXX": "καὶ τῇ Μελχὸλ θυγατρὶ Σαοὺλ οὐκ ἐγένετο παιδίον ἕως τῆς ἡμέρας τοῦ ἀποθανεῖν αὐτήν.",
+        "VUL": "Igitur Michol filiæ Saul non est natus filius usque in diem mortis suæ.",
+        "SYN": "И у Мелхолы, дочери Сауловой, не было детей до дня смерти ее.",
+        "NEO": "Et Michol, fille de Saül, n’eut pas d’enfant jusqu’au jour de sa mort.",
+        "NAB": "And so Saul's daughter Michal was childless to the day of her death.",
+        "VAT_ES": "Y Mical, hija de Saúl, no tuvo hijos hasta el día de su muerte.",
+        "CEI": "Mikal, figlia di Saul, non ebbe figli fino al giorno della sua morte."
+      }
+    }
+  }
+}

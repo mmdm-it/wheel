@@ -1,0 +1,1201 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "III_REG_008",
+  "book_key": "III_REG",
+  "sequence": 8,
+  "chapter_in": {
+    "MT": 8,
+    "VUL": 8,
+    "LXX": 8
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אָ֣ז יַקְהֵ֣ל שְׁלֹמֹ֣ה אֶת זִקְנֵ֣י יִשְׂרָאֵ֡ל אֶת כָּל רָאשֵׁ֣י הַ/מַּטּוֹת֩ נְשִׂיאֵ֨י הָ/אָב֜וֹת לִ/בְנֵ֧י יִשְׂרָאֵ֛ל אֶל הַ/מֶּ֥לֶךְ שְׁלֹמֹ֖ה יְרוּשָׁלִָ֑ם לְֽ/הַעֲל֞וֹת אֶת אֲר֧וֹן בְּרִית יְהוָ֛ה מֵ/עִ֥יר דָּוִ֖ד הִ֥יא צִיּֽוֹן׃",
+        "LXX": "Καὶ ἐγένετο ὡς συνετέλεσεν Σαλωμὼν τοῦ οἰκοδομῆσαι τὸν οἶκον Κυρίου καὶ τὸν οἶκον ἑαυτοῦ μετὰ εἴκοσι ἔτη, τότε ἐξεκκλησίασεν ὁ βασιλεὺς Σαλωμὼν πάντας τοὺς πρεσβυτέρους Ἰσραὴλ ἐν Σειὼν τοῦ ἐνεγκεῖν τὴν κιβωτὸν διαθήκης Κυρίου ἐκ πόλεως Δαυείδ, αὕτη ἐστὶν Σειών,",
+        "VUL": "Tunc congregati sunt omnes majores natu Israël cum principibus tribuum, et duces familiarum filiorum Israël, ad regem Salomonem in Jerusalem, ut deferrent arcam fderis Domini de civitate David, id est, de Sion.",
+        "SYN": "Тогда созвал Соломон старейшин Израилевых и всех начальников колен, глав поколений сынов Израилевых, к царю Соломону в Иерусалим, чтобы перенести ковчег завета Господня из города Давидова, то есть Сиона.",
+        "NEO": "Alors le roi Salomon assembla près de lui à Jérusalem les anciens d’Israël et tous les chefs des tribus, les princes des familles des enfants d’Israël, pour transporter de la cité de David, c’est-à-dire de Sion, l’arche de l’alliance de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "At the order of Solomon, the elders of Israel and all the leaders of the tribes, the princes in the ancestral houses of the Israelites, came to King Solomon in Jerusalem, to bring up the ark of the LORD'S covenant from the city of David (which is Zion).",
+        "VAT_ES": "Entonces Salomón reunió junto a él en Jerusalén, a los ancianos de Israel, a todos los jefes de las tribus y a los príncipes de las casas paternas de los israelitas, para subir el Arca de la Alianza del Señor desde la Ciudad de David, o sea, desde Sión.",
+        "CEI": "A questo punto Salomone convocò in assemblea a Gerusalemme gli anziani di Israele, tutti i capitribù, i principi dei casati degli Israeliti, per trasportare l'arca dell'alleanza del Signore dalla città di Davide, cioè da Sion."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּקָּ֨הֲל֜וּ אֶל הַ/מֶּ֤לֶךְ שְׁלֹמֹה֙ כָּל אִ֣ישׁ יִשְׂרָאֵ֔ל בְּ/יֶ֥רַח הָ/אֵֽתָנִ֖ים בֶּ/חָ֑ג ה֖וּא הַ/חֹ֥דֶשׁ הַ/שְּׁבִיעִֽי׃",
+        "LXX": "ἐν μηνὶ Ἀθαμείν.",
+        "VUL": "Convenitque ad regem Salomonem universus Israël in mense Ethanim, in solemni die : ipse est mensis septimus.",
+        "SYN": "И собрались к царю Соломону на праздник все Израильтяне в месяце Афаниме, который есть седьмой месяц.",
+        "NEO": "Tous les hommes d’Israël se réunirent auprès du roi Salomon, au mois d’éthanim, qui est le septième mois, pendant la fête.",
+        "NAB": "All the men of Israel assembled before King Solomon during the festival in the month of Ethanim (the seventh month).",
+        "VAT_ES": "Cro 7.4-10",
+        "CEI": "Tutto Israele si radunò presso il re Salomone per la festa, nel mese di Etanim, cioè il settimo mese."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֕אוּ כֹּ֖ל זִקְנֵ֣י יִשְׂרָאֵ֑ל וַ/יִּשְׂא֥וּ הַ/כֹּהֲנִ֖ים אֶת הָ/אָרֽוֹן׃",
+        "LXX": "καὶ ἦραν οἱ ἱερεῖς τὴν κιβωτὸν",
+        "VUL": "Veneruntque cuncti senes de Israël, et tulerunt arcam sacerdotes,",
+        "SYN": "И пришли все старейшины Израилевы; и подняли священники ковчег,",
+        "NEO": "Lorsque tous les anciens d’Israël furent arrivés, les prêtres portèrent l’arche.",
+        "NAB": "When all the elders of Israel had arrived, the priests took up the ark;",
+        "VAT_ES": "Cuando llegaron todos los ancianos de Israel, los sacerdotes levantaron el Arca,",
+        "CEI": "Presenti tutti gli anziani di Israele, l'arca del Signore fu sollevata e i sacerdoti e i leviti la trasportarono"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַֽ/יַּעֲל֞וּ אֶת אֲר֤וֹן יְהוָה֙ וְ/אֶת אֹ֣הֶל מוֹעֵ֔ד וְ/אֶֽת כָּל כְּלֵ֥י הַ/קֹּ֖דֶשׁ אֲשֶׁ֣ר בָּ/אֹ֑הֶל וַ/יַּעֲל֣וּ אֹתָ֔/ם הַ/כֹּהֲנִ֖ים וְ/הַ/לְוִיִּֽם׃",
+        "LXX": "καὶ τὸ σκήνωμα τοῦ μαρτυρίου καὶ τὰ σκεύη τὰ ἅγια τὰ ἐν τῷ σκηνώματι τοῦ μαρτυρίου·",
+        "VUL": "et portaverunt arcam Domini, et tabernaculum fderis, et omnia vasa sanctuarii quæ erant in tabernaculo : et ferebant ea sacerdotes et Levitæ.",
+        "SYN": "и понесли ковчег Господень и скинию собрания и все священные вещи, которые были в скинии; и несли их священники и левиты.",
+        "NEO": "Ils transportèrent l’arche de \\+w Yahweh|strong=\"H3068\"\\+w**, ainsi que la tente de réunion et tous les ustensiles sacrés qui étaient dans la tente ; ce furent les prêtres et les lévites qui les transportèrent.",
+        "NAB": "they carried the ark of the LORD and the meeting tent with all the sacred vessels that were in the tent. (The priests and Levites carried them.)",
+        "VAT_ES": "y subieron el Arca del Señor, con la Carpa del Encuentro y todos los objetos sagrados que había en la Carpa. Los que trasladaron todo eso fueron los sacerdotes y los levitas.",
+        "CEI": "con la tenda del convegno e con tutti gli arredi sacri che erano nella tenda."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/הַ/מֶּ֣לֶךְ שְׁלֹמֹ֗ה וְ/כָל עֲדַ֤ת יִשְׂרָאֵל֙ הַ/נּוֹעָדִ֣ים עָלָ֔י/ו אִתּ֖/וֹ לִ/פְנֵ֣י הָֽ/אָר֑וֹן מְזַבְּחִים֙ צֹ֣אן וּ/בָקָ֔ר אֲשֶׁ֧ר לֹֽא יִסָּפְר֛וּ וְ/לֹ֥א יִמָּנ֖וּ מֵ/רֹֽב׃",
+        "LXX": "καὶ ὁ βασιλεὺς καὶ πᾶς Ἰσραὴλ ἔμπροσθεν τῆς κιβωτοῦ θύοντες πρόβατα, βόας, ἀναρίθμητα.",
+        "VUL": "Rex autem Salomon, et omnis multitudo Israël quæ convenerat ad eum, gradiebatur cum illo ante arcam, et immolabant oves et boves absque æstimatione et numero.",
+        "SYN": "А царь Соломон и с ним все общество Израилево, собравшееся к нему, шли пред ковчегом, принося жертвы из мелкого и крупного скота, которых невозможно исчислить и определить, по множеству их.",
+        "NEO": "Le roi Salomon et toute l’assemblée d’Israël convoquée auprès de lui se tenaient avec lui devant l’arche. Ils immolèrent des brebis et des bœufs, qui ne pouvaient être ni comptés ni nombrés à cause de leur multitude.",
+        "NAB": "King Solomon and the entire community of Israel present for the occasion sacrificed before the ark sheep and oxen too many to number or count.",
+        "VAT_ES": "Mientras tanto, el rey Salomón y toda la comunidad de Israel reunida junto a él delante del Arca, sacrificaban carneros y toros, en tal cantidad que no se los podía contar ni calcular.",
+        "CEI": "Il re Salomone e tutta la comunità di Israele, convenuta presso di lui, immolavano davanti all'arca pecore e buoi che non si contavano né si calcolavano."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יָּבִ֣אוּ הַ֠/כֹּהֲנִים אֶת אֲר֨וֹן בְּרִית יְהוָ֧ה אֶל מְקוֹמ֛/וֹ אֶל דְּבִ֥יר הַ/בַּ֖יִת אֶל קֹ֣דֶשׁ הַ/קֳּדָשִׁ֑ים אֶל תַּ֖חַת כַּנְפֵ֥י הַ/כְּרוּבִֽים׃",
+        "LXX": "καὶ εἰσφέρουσιν οἱ ἱερεῖς τὴν κιβωτὸν εἰς τὸν τόπον αὐτῆς, εἰς τὸ δαβεὶρ τοῦ οἴκου, εἰς τὰ ἅγια τῶν ἁγίων, ὑπὸ τὰς πτέρυγας τῶν χερουβείν.",
+        "VUL": "Et intulerunt sacerdotes arcam fderis Domini in locum suum, in oraculum templi, in Sanctum sanctorum, subter alas cherubim.",
+        "SYN": "И внесли священники ковчег завета Господня на место его, в давир храма, во Святое Святых, под крылья херувимов.",
+        "NEO": "Les prêtres portèrent l’arche de l’alliance de \\+w Yahweh|strong=\"H3068\"\\+w** à sa place, dans le sanctuaire de la maison, dans le Saint des saints, sous les ailes des Chérubins.",
+        "NAB": "The priests brought the ark of the covenant of the LORD to its place beneath the wings of the cherubim in the sanctuary, the holy of holies of the temple.",
+        "VAT_ES": "Los sacerdotes introdujeron el Arca de la Alianza en su sitio, en el lugar santísimo de la Casa –el Santo de los santos– bajo las alas de los querubines.",
+        "CEI": "I sacerdoti introdussero l'arca dell'alleanza del Signore al suo posto nella cella del tempio, cioè nel Santo dei santi, sotto le ali dei cherubini."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּ֤י הַ/כְּרוּבִים֙ פֹּרְשִׂ֣ים כְּנָפַ֔יִם אֶל מְק֖וֹם הָֽ/אָר֑וֹן וַ/יָּסֹ֧כּוּ הַ/כְּרֻבִ֛ים עַל הָ/אָר֥וֹן וְ/עַל בַּדָּ֖י/ו מִ/לְ/מָֽעְלָ/ה׃",
+        "LXX": "ὅτι τὰ χερουβεὶν διαπεπετασμένα ταῖς πτέρυξιν ἐπὶ τὸν τόπον τῆς κιβωτοῦ· καὶ περιεκάλυπτον τὰ χερουβεὶν ἐπὶ τὴν κιβωτὸν καὶ ἐπὶ τὰ ἅγια αὐτῆς ἐπάνωθεν,",
+        "VUL": "Siquidem cherubim expandebant alas super locum arcæ, et protegebant arcam, et vectes ejus desuper.",
+        "SYN": "Ибо херувимы простирали крылья над местом ковчега, и покрывали херувимы сверху ковчег и шесты его.",
+        "NEO": "Car les Chérubins étendaient leurs ailes sur la place de l’arche, et les Chérubins couvraient l’arche et ses barres par-dessus.",
+        "NAB": "The cherubim had their wings spread out over the place of the ark, sheltering the ark and its poles from above.",
+        "VAT_ES": "Porque los querubines desplegaban sus alas sobre el sitio destinado al Arca, y resguardaban por encima el Arca y sus andas.",
+        "CEI": "Difatti i cherubini stendevano le ali sopra l'arca; essi coprivano l'arca e le sue stanghe dall'alto."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַֽ/יַּאֲרִכוּ֮ הַ/בַּדִּים֒ וַ/יֵּרָאוּ֩ רָאשֵׁ֨י הַ/בַּדִּ֤ים מִן הַ/קֹּ֨דֶשׁ֙ עַל פְּנֵ֣י הַ/דְּבִ֔יר וְ/לֹ֥א יֵרָא֖וּ הַ/ח֑וּצָ/ה וַ/יִּ֣הְיוּ שָׁ֔ם עַ֖ד הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ ὑπερεῖχον τὰ ἡγιασμένα· καὶ ἐνεβλέποντο αἱ κεφαλαὶ τῶν ἡγιασμένων ἐκ τῶν ἁγίων εἰς πρόσωπον τοῦ δαβείρ, καὶ οὐκ ὠπτάνοντο ἔξω.",
+        "VUL": "Cumque eminerent vectes, et apparerent summitates eorum foris sanctuarium ante oraculum, non apparebant ultra extrinsecus, qui et fuerunt ibi usque in præsentem diem.",
+        "SYN": "И выдвинулись шесты так, что головки шестов видны были из святилища пред давиром, но не выказывались наружу; они там и до сего дня.",
+        "NEO": "Les barres avaient une longueur telle que leurs extrémités se voyaient du lieu saint devant le sanctuaire, mais on ne les voyait pas du dehors. Elles ont été là jusqu’à ce jour.",
+        "NAB": "The poles were so long that their ends could be seen from that part of the holy place adjoining the sanctuary; however, they could not be seen beyond. (They have remained there to this day.)",
+        "VAT_ES": "Las andas eran tan largas que sus extremos se veían desde el Santo, por delante del lugar santísimo, aunque no se las veía desde afuera. Allí han estado hasta el día de hoy.",
+        "CEI": "Le stanghe erano più lunghe, per questo le loro punte si vedevano dal Santo di fronte alla cella, ma non si vedevano di fuori; tali cose ci sono fino ad oggi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אֵ֚ין בָּֽ/אָר֔וֹן רַ֗ק שְׁנֵי֙ לֻח֣וֹת הָ/אֲבָנִ֔ים אֲשֶׁ֨ר הִנִּ֥חַ שָׁ֛ם מֹשֶׁ֖ה בְּ/חֹרֵ֑ב אֲשֶׁ֨ר כָּרַ֤ת יְהוָה֙ עִם בְּנֵ֣י יִשְׂרָאֵ֔ל בְּ/צֵאתָ֖/ם מֵ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "οὐκ ἦν ἐν τῇ κιβωτῷ πλὴν δύο πλάκες λίθιναι, πλάκες τῆς διαθήκης ἃ ἔθηκεν Μωυσῆς ἐν Χωρήβ, ἃ διέθετο Κύριος μετὰ τῶν υἱῶν Ἰσραὴλ ἐν τῷ ἐκπορεύεσθαι αὐτοὺς ἐκ γῆς Αἰγύπτου.",
+        "VUL": "In arca autem non erat aliud nisi duæ tabulæ lapideæ quas posuerat in ea Moyses in Horeb, quando pepigit Dominus fdus cum filiis Israël, cum egrederentur de terra Ægypti.",
+        "SYN": "В ковчеге ничего не было, кроме двух каменных скрижалей, которые положил туда Моисей на Хориве, когда Господь заключил завет с сынами Израилевыми, по исшествии их из земли Египетской.",
+        "NEO": "Il n’y avait dans l’arche que les deux tables de pierre, que Moïse y avait déposées sur le mont Horeb, lorsque \\+w Yahweh|strong=\"H3068\"\\+w** conclut une alliance avec les enfants d’Israël à leur sortie du pays d’Égypte.",
+        "NAB": "There was nothing in the ark but the two stone tablets which Moses had put there at Horeb, when the LORD made a covenant with the Israelites at their departure from the land of Egypt.",
+        "VAT_ES": "En el Arca se encontraban únicamente las dos tablas de piedra que Moisés, en el Horeb, había depositado allí: las tablas de la Alianza que el Señor había hecho con los israelitas a su salida de Egipto.",
+        "CEI": "Nell'arca non c'era nulla se non le due tavole di pietra, che vi aveva deposte Mosè sull'Oreb, cioè le tavole dell'alleanza conclusa dal Signore con gli Israeliti quando uscirono dal paese d'Egitto."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֕י בְּ/צֵ֥את הַ/כֹּהֲנִ֖ים מִן הַ/קֹּ֑דֶשׁ וְ/הֶ/עָנָ֥ן מָלֵ֖א אֶת בֵּ֥ית יְהוָֽה׃",
+        "LXX": "καὶ ἐγένετο ὡς ἐξῆλθον οἱ ἱερεῖς ἐκ τοῦ ἁγίου, καὶ ἡ νεφέλη ἔπλησεν τὸν οἶκον·",
+        "VUL": "Factum est autem cum exissent sacerdotes de sanctuario, nebula implevit domum Domini,",
+        "SYN": "Когда священники вышли из святилища, облако наполнило дом Господень;",
+        "NEO": "Au moment où les prêtres sortirent du lieu saint, la nuée remplit la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "When the priests left the holy place, the cloud filled the temple of the LORD",
+        "VAT_ES": "Mientras los sacerdotes salían del Santo, la nube llenó la Casa del Señor,",
+        "CEI": "Appena i sacerdoti furono usciti dal santuario, la nuvola riempì il tempio"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא יָכְל֧וּ הַ/כֹּהֲנִ֛ים לַ/עֲמֹ֥ד לְ/שָׁרֵ֖ת מִ/פְּנֵ֥י הֶֽ/עָנָ֑ן כִּי מָלֵ֥א כְבוֹד יְהוָ֖ה אֶת בֵּ֥ית יְהוָֽה׃",
+        "LXX": "καὶ οὐκ ἠδύναντο οἱ ἱερεῖς στήκειν λειτουργεῖν ἀπὸ προσώπου τῆς νεφέλης, ὅτι ἔπλησεν δόξα Κυρίου τὸν οἶκον.",
+        "VUL": "et non poterant sacerdotes stare et ministrare propter nebulam : impleverat enim gloria Domini domum Domini.",
+        "SYN": "и не могли священники стоять на служении, по причине облака, ибо слава Господня наполнила храм Господень.",
+        "NEO": "Les prêtres ne purent pas y rester pour faire leur service, à cause de la nuée ; car la gloire de \\+w Yahweh|strong=\"H3068\"\\+w** remplissait la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "so that the priests could no longer minister because of the cloud, since the LORD'S glory had filled the temple of the LORD.",
+        "VAT_ES": "de manera que los sacerdotes no pudieron continuar sus servicios a causa de la nube, porque la gloria del Señor llenaba la Casa.",
+        "CEI": "e i sacerdoti non poterono rimanervi per compiere il servizio a causa della nube, perché la gloria del Signore riempiva il tempio."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אָ֖ז אָמַ֣ר שְׁלֹמֹ֑ה יְהוָ֣ה אָמַ֔ר לִ/שְׁכֹּ֖ן בָּ/עֲרָפֶֽל׃",
+        "VUL": "Tunc ait Salomon : Dominus dixit ut habitaret in nebula.",
+        "SYN": "Тогда сказал Соломон: Господь сказал, что Он благоволит обитать во мгле;",
+        "NEO": "Alors Salomon dit : « \\+w Yahweh|strong=\"H3068\"\\+w** veut habiter dans l’obscurité.",
+        "NAB": "Then Solomon said, \"The LORD intends to dwell in the dark cloud;",
+        "VAT_ES": "Entonces Salomón dijo: «El Señor ha decidido habitar en la nube oscura.",
+        "CEI": "Allora Salomone disse: \"Il Signore ha deciso di abitare sulla nube."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "בָּנֹ֥ה בָנִ֛יתִי בֵּ֥ית זְבֻ֖ל לָ֑/ךְ מָכ֥וֹן לְ/שִׁבְתְּ/ךָ֖ עוֹלָמִֽים׃",
+        "VUL": "Ædificans ædificavi domum in habitaculum tuum : firmissimum solium tuum in sempiternum.",
+        "SYN": "я построил храм в жилище Тебе, место, чтобы пребывать Тебе во веки.",
+        "NEO": "J’ai bâti une maison qui sera votre demeure, un lieu pour que vous y résidiez à jamais. »",
+        "NAB": "I have truly built you a princely house, a dwelling where you may abide forever.\"",
+        "VAT_ES": "Sí, yo te he construido la Casa de tu señorío, un lugar donde habitarás para siempre».",
+        "CEI": "Io ti ho costruito una casa potente, un luogo per la tua dimora perenne\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יַּסֵּ֤ב הַ/מֶּ֨לֶךְ֙ אֶת פָּנָ֔י/ו וַ/יְבָ֕רֶךְ אֵ֖ת כָּל קְהַ֣ל יִשְׂרָאֵ֑ל וְ/כָל קְהַ֥ל יִשְׂרָאֵ֖ל עֹמֵֽד׃",
+        "LXX": "Καὶ ἀπέστρεψεν ὁ βασιλεὺς τὸ πρόσωπον αὐτοῦ, καὶ εὐλόγησεν ὁ βασιλεὺς πάντα Ἰσραήλ· καὶ πᾶσα ἐκκλησία Ἰσραὴλ ἱστήκει·",
+        "VUL": "Convertitque rex faciem suam, et benedixit omni ecclesiæ Israël : omnis enim ecclesia Israël stabat.",
+        "SYN": "И обратился царь лицем своим, и благословил все собрание Израильтян; все собрание Израильтян стояло, --",
+        "NEO": "Puis le roi tourna son visage et bénit toute l’assemblée d’Israël, et toute l’assemblée d’Israël était debout.",
+        "NAB": "The king turned and greeted the whole community of Israel as they stood.",
+        "VAT_ES": "Después el rey se volvió y bendijo a toda la asamblea de Israel, mientras esta permanecía de pie.",
+        "CEI": "Il re si voltò e benedisse tutta l'assemblea di Israele, mentre tutti i presenti stavano in piedi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר בָּר֤וּךְ יְהוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל אֲשֶׁר֙ דִּבֶּ֣ר בְּ/פִ֔י/ו אֵ֖ת דָּוִ֣ד אָבִ֑/י וּ/בְ/יָד֥/וֹ מִלֵּ֖א לֵ/אמֹֽר׃",
+        "LXX": "καὶ εἶπεν Εὐλογητὸς Κύριος ὁ θεὸς Ἰσραὴλ σήμερον, ὃς ἐλάλησεν ἐν τῷ στόματι αὐτοῦ περὶ Δαυεὶδ τοῦ πατρός μου καὶ ἐν ταῖς χερσὶν αὐτοῦ ἐπλήρωσεν λέγων",
+        "VUL": "Et ait Salomon : Benedictus Dominus Deus Israël, qui locutus est ore suo ad David patrem meum, et in manibus ejus perfecit, dicens :",
+        "SYN": "и сказал: благословен Господь Бог Израилев, Который сказал Своими устами Давиду, отцу моему, и ныне исполнил рукою Своею! Он говорил:",
+        "NEO": "Et il dit : « Béni soit \\+w Yahweh|strong=\"H3068\"\\+w**. Dieu d’Israël, qui a parlé par sa bouche à David, mon père, et qui a accompli par sa main ce qu’il avait déclaré en disant :",
+        "NAB": "He said to them: \"Blessed be the LORD, the God of Israel, who with his own mouth made a promise to my father David and by his hand has brought it to fulfillment. It was he who said,",
+        "VAT_ES": "El dijo: «Bendito sea el Señor, el Dios de Israel, que ha cumplido con su mano lo que su boca había anunciado a mi padre David, cuando le dijo:",
+        "CEI": "Salomone disse: \"Benedetto il Signore, Dio di Israele, che ha adempiuto con potenza quanto aveva promesso con la sua bocca a Davide mio padre:"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "מִן הַ/יּ֗וֹם אֲשֶׁ֨ר הוֹצֵ֜אתִי אֶת עַמִּ֣/י אֶת יִשְׂרָאֵל֮ מִ/מִּצְרַיִם֒ לֹֽא בָחַ֣רְתִּי בְ/עִ֗יר מִ/כֹּל֙ שִׁבְטֵ֣י יִשְׂרָאֵ֔ל לִ/בְנ֣וֹת בַּ֔יִת לִ/הְי֥וֹת שְׁמִ֖/י שָׁ֑ם וָ/אֶבְחַ֣ר בְּ/דָוִ֔ד לִֽ/הְי֖וֹת עַל עַמִּ֥/י יִשְׂרָאֵֽל׃",
+        "LXX": "Ἀφ’ ἧς ἡμέρας ἐξήγαγον τὸν λαόν μου τὸν Ἰσραὴλ ἐξ Αἰγύπτου, οὐκ ἐξελεξάμην ἐν πόλει ἐν ἑνὶ σκήπτρῳ Ἰσραήλ, τοῦ οἰκοδομῆσαι οἶκον τοῦ εἶναι τὸ ὄνομά μου ἐκεῖ· καὶ ἐξελεξάμην ἐν Ἰερουσαλὴμ μεῖναι τὸ ὄνομά μου ἐκεῖ, καὶ ἐξελεξάμην τὸν Δαυεὶδ τοῦ εἶναι ἐπὶ τὸν λαόν μου τὸν Ἰσραήλ.",
+        "VUL": "A die qua eduxi populum meum Israël de Ægypto, non elegi civitatem de universis tribubus Israël, ut ædificaretur domus, et esset nomen meum ibi : sed elegi David ut esset super populum meum Israël.",
+        "SYN": "\"с того дня, как Я вывел народ Мой Израиля из Египта, Я не избрал города ни в одном из колен Израилевых, чтобы построен был дом, в котором пребывало бы имя Мое; [но избрал Иерусалим для пребывания в нем имени Моего] и избрал Давида, чтобы быть ему над народом Моим Израилем\".",
+        "NEO": "Depuis le jour où j’ai fait sortir d’Égypte mon peuple d’Israël, je n’ai pas choisi de ville, parmi toutes les tribus d’Israël, pour qu’on y bâtisse une maison où réside mon nom, mais j’ai choisi David pour qu’il règne sur mon peuple d’Israël.",
+        "NAB": "'Since the day I brought my people Israel out of Egypt, I have not chosen a city out of any tribe of Israel for the building of a temple to my honor; but I choose David to rule my people Israel.'",
+        "VAT_ES": "«Desde el día en que hice salir de Egipto a mi pueblo Israel, no había elegido ninguna ciudad, entre todas las tribus de Israel, para que allí se edificara una Casa donde residiera mi Nombre, sino que elegí a David para que estuviera al frente de mi pueblo Israel».",
+        "CEI": "Da quando ho fatto uscire Israele mio popolo dall'Egitto, io non mi sono scelto una città fra tutte le tribù di Israele perché mi si costruisse una casa, ove abitasse il mio nome; ora mi sono scelto Gerusalemme perché vi dimori il mio nome e mi sono scelto Davide perché sia capo del popolo di Israele."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֕י עִם לְבַ֖ב דָּוִ֣ד אָבִ֑/י לִ/בְנ֣וֹת בַּ֔יִת לְ/שֵׁ֥ם יְהוָ֖ה אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐγένετο ἐπὶ τῆς καρδίας τοῦ πατρός μου οἰκοδομῆσαι οἶκον τῷ ὀνόματι Κυρίου θεοῦ Ἰσραήλ.",
+        "VUL": "Voluitque David pater meus ædificare domum nomini Domini Dei Israël :",
+        "SYN": "У Давида, отца моего, было на сердце построить храм имени Господа Бога Израилева;",
+        "NEO": "David, mon père, avait l’intention de bâtir une maison au nom de \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu d’Israël ;",
+        "NAB": "When my father David wished to build a temple to the honor of the LORD, the God of Israel,",
+        "VAT_ES": "Mi padre David pensó edificar una Casa para el Nombre del Señor, el Dios de Israel.",
+        "CEI": "Davide mio padre aveva deciso di costruire un tempio al nome del Signore, Dio di Israele,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֶל דָּוִ֣ד אָבִ֔/י יַ֗עַן אֲשֶׁ֤ר הָיָה֙ עִם לְבָ֣בְ/ךָ֔ לִ/בְנ֥וֹת בַּ֖יִת לִ/שְׁמִ֑/י הֱטִיבֹ֔תָ כִּ֥י הָיָ֖ה עִם לְבָבֶֽ/ךָ׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς Δαυεὶδ τὸν πατέρα μου Ἀνθ’ ὧν ἦλθεν ἐπὶ τὴν καρδίαν σου τοῦ οἰκοδομῆσαι οἶκον τῷ ὀνόματί μου, καλῶς ἐποίησας ὅτι ἐγενήθη ἐπὶ τὴν καρδίαν σου.",
+        "VUL": "et ait Dominus ad David patrem meum : Quod cogitasti in corde tuo ædificare domum nomini meo, bene fecisti, hoc ipsum mente tractans.",
+        "SYN": "но Господь сказал Давиду, отцу моему: \"у тебя есть на сердце построить храм имени Моему; хорошо, что это у тебя лежит на сердце;",
+        "NEO": "mais \\+w Yahweh|strong=\"H3068\"\\+w** dit à David, mon père : Puisque tu as eu l’intention de bâtir une maison à mon nom, tu as bien fait d’avoir eu cette intention.",
+        "NAB": "the LORD said to him, 'In wishing to build a temple to my honor, you do well.",
+        "VAT_ES": "Pero el Señor dijo a mi padre David: «Tú has pensado edificar una Casa para mi Nombre, y has hecho bien al pensar así.",
+        "CEI": "ma il Signore gli disse: Tu hai pensato di edificare un tempio al mio nome; hai fatto bene a formulare tale progetto."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "רַ֣ק אַתָּ֔ה לֹ֥א תִבְנֶ֖ה הַ/בָּ֑יִת כִּ֤י אִם בִּנְ/ךָ֙ הַ/יֹּצֵ֣א מֵ/חֲלָצֶ֔י/ךָ הֽוּא יִבְנֶ֥ה הַ/בַּ֖יִת לִ/שְׁמִֽ/י׃",
+        "LXX": "σὺ οὐκ οἰκοδομήσεις τὸν οἶκον· ἀλλ’ ἢ ὁ υἱός σου ὁ ἐξελθὼν ἐκ τῶν πλευρῶν σου, οὗτος οἰκοδομήσει τὸν οἶκον τῷ ὀνόματί μου.",
+        "VUL": "Verumtamen tu non ædificabis mihi domum, sed filius tuus, qui egredietur de renibus tuis, ipse ædificabit domum nomini meo.",
+        "SYN": "однако не ты построишь храм, а сын твой, исшедший из чресл твоих, он построит храм имени Моему\".",
+        "NEO": "Seulement, ce ne sera pas toi qui bâtiras la maison ; ce sera ton fils, sorti de tes entrailles, qui bâtira la maison à mon nom.",
+        "NAB": "It will not be you, however, who will build the temple; but the son who will spring from you, he shall build the temple to my honor.'",
+        "VAT_ES": "Sin embargo, no serás tú el que edificará la Casa, sino un hijo nacido de tus entrañas; él construirá la Casa para mi Nombre».",
+        "CEI": "Non tu costruirai il tempio, ma il figlio che uscirà dai tuoi fianchi, lui costruirà un tempio al mio nome."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣קֶם יְהוָ֔ה אֶת דְּבָר֖/וֹ אֲשֶׁ֣ר דִּבֵּ֑ר וָ/אָקֻ֡ם תַּחַת֩ דָּוִ֨ד אָבִ֜/י וָ/אֵשֵׁ֣ב עַל כִּסֵּ֣א יִשְׂרָאֵ֗ל כַּֽ/אֲשֶׁר֙ דִּבֶּ֣ר יְהוָ֔ה וָ/אֶבְנֶ֣ה הַ/בַּ֔יִת לְ/שֵׁ֥ם יְהוָ֖ה אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἀνέστησεν Κύριος τὸ ῥῆμα αὐτοῦ ὃ ἐλάλησεν· καὶ ἀνέστην ἀντὶ Δαυεὶδ τοῦ πατρός μου, καὶ ἐκάθισα ἐπὶ τοῦ θρόνου Ἰσραὴλ καθὼς ἐλάλησεν, καὶ ᾠκοδόμησα τὸν οἶκον τῷ ὀνόματι Κυρίου θεοῦ Ἰσραήλ.",
+        "VUL": "Confirmavit Dominus sermonem suum quem locutus est : stetique pro David patre meo, et sedi super thronum Israël, sicut locutus est Dominus : et ædificavi domum nomini Domini Dei Israël.",
+        "SYN": "И исполнил Господь слово Свое, которое изрек. Я вступил на место отца моего Давида и сел на престоле Израилевом, как сказал Господь, и построил храм имени Господа Бога Израилева;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** a accompli la parole qu’il avait prononcée : je me suis élevé à la place de David, mon père, et je me suis assis sur le trône d’Israël, comme \\+w Yahweh|strong=\"H3068\"\\+w** l’avait dit, et j’ai bâti la maison au nom de \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu d’Israël.",
+        "NAB": "And now the LORD has fulfilled the promise that he made: I have succeeded my father David and sit on the throne of Israel, as the LORD foretold, and I have built this temple to honor the LORD, the God of Israel.",
+        "VAT_ES": "Y el Señor cumplió la palabra que había dicho: yo he sucedido a mi padre David, y me he sentado en el trono de Israel, como lo había dicho el Señor. Yo edifiqué la Casa para el Nombre del Señor,",
+        "CEI": "Il Signore ha attuato la parola che aveva pronunziata; io ho preso il posto di Davide mio padre, mi sono seduto sul trono di Israele, come aveva preannunziato il Signore, e ho costruito il tempio al nome del Signore, Dio di Israele."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וָ/אָשִׂ֨ם שָׁ֤ם מָקוֹם֙ לָֽ/אָר֔וֹן אֲשֶׁר שָׁ֖ם בְּרִ֣ית יְהוָ֑ה אֲשֶׁ֤ר כָּרַת֙ עִם אֲבֹתֵ֔י/נוּ בְּ/הוֹצִיא֥/וֹ אֹתָ֖/ם מֵ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "καὶ ἐθέμην ἐκεῖ τόπον τῇ κιβωτῷ ἐν ᾗ ἐστιν ἐκεῖ διαθήκη Κυρίου ἣν διέθετο Κύριος μετὰ τῶν πατέρων ἡμῶν ἐν τῷ ἐξαγαγεῖν αὐτὸν αὐτοὺς ἐκ γῆς Αἰγύπτου.",
+        "VUL": "Et constitui ibi locum arcæ in qua fdus Domini est, quod percussit cum patribus nostris quando egressi sunt de terra Ægypti.",
+        "SYN": "и приготовил там место для ковчега, в котором завет Господа, заключенный Им с отцами нашими, когда Он вывел их из земли Египетской.",
+        "NEO": "J’y ai établi un lieu pour l’arche où se trouve l’alliance de \\+w Yahweh|strong=\"H3068\"\\+w**, alliance qu’il a conclue avec nos pères quand il les a fait sortir du pays d’Égypte. »",
+        "NAB": "I have provided in it a place for the ark in which is the covenant of the LORD, which he made with our fathers when he brought them out of the land of Egypt.\"",
+        "VAT_ES": "y allí he asignado un lugar para el Arca, donde se encuentra la Alianza que el Señor concluyó con nuestros padres cuando los hizo salir del país de Egipto».",
+        "CEI": "In esso ho fissato un posto per l'arca, dove c'è l'alleanza che il Signore aveva conclusa con i nostri padri quando li fece uscire dal paese di Egitto\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲמֹ֣ד שְׁלֹמֹ֗ה לִ/פְנֵי֙ מִזְבַּ֣ח יְהוָ֔ה נֶ֖גֶד כָּל קְהַ֣ל יִשְׂרָאֵ֑ל וַ/יִּפְרֹ֥שׂ כַּפָּ֖י/ו הַ/שָּׁמָֽיִם׃",
+        "LXX": "Καὶ ἀνέστη Σαλωμὼν κατὰ πρόσωπον τοῦ θυσιαστηρίου Κυρίου ἐνώπιον πάσης ἐκκλησίας Ἰσραήλ, καὶ διεπέτασεν τὰς χεῖρας αὐτοῦ εἰς τὸν οὐρανὸν",
+        "VUL": "Stetit autem Salomon ante altare Domini in conspectu ecclesiæ Israël, et expandit manus suas in cælum,",
+        "SYN": "И стал Соломон пред жертвенником Господним впереди всего собрания Израильтян, и воздвиг руки свои к небу,",
+        "NEO": "Salomon se plaça devant l’autel de \\+w Yahweh|strong=\"H3068\"\\+w**, en face de toute l’assemblée d’Israël, et, étendant ses mains vers le ciel,",
+        "NAB": "Solomon stood before the altar of the LORD in the presence of the whole community of Israel, and stretching forth his hands toward heaven,",
+        "VAT_ES": "Salomón se puso ante el altar del Señor, frente a toda la asamblea de Israel, extendió sus manos hacia el cielo",
+        "CEI": "Poi Salomone si pose davanti all'altare del Signore, di fronte a tutta l'assemblea di Israele, e, stese le mani verso il cielo,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמַ֗ר יְהוָ֞ה אֱלֹהֵ֤י יִשְׂרָאֵל֙ אֵין כָּמ֣וֹ/ךָ אֱלֹהִ֔ים בַּ/שָּׁמַ֣יִם מִ/מַּ֔עַל וְ/עַל הָ/אָ֖רֶץ מִ/תָּ֑חַת שֹׁמֵ֤ר הַ/בְּרִית֙ וְֽ/הַ/חֶ֔סֶד לַ/עֲבָדֶ֕י/ךָ הַ/הֹלְכִ֥ים לְ/פָנֶ֖י/ךָ בְּ/כָל לִבָּֽ/ם׃",
+        "LXX": "καὶ εἶπεν Κύριε ὁ θεὸς Ἰσραήλ, οὐκ ἔστιν ὡς σὺ θεὸς ἐν τῷ οὐρανῷ ἄνω καὶ ἐπὶ τῆς γῆς κάτω, φυλάσσων διαθήκην καὶ ἔλεος τῷ δούλῳ σου τῷ πορευομένῳ ἐνώπιόν σου ἐν ὅλῃ τῇ καρδίᾳ αὐτοῦ,",
+        "VUL": "et ait : Domine Deus Israël, non est similis tui deus in cælo desuper, et super terram deorsum : qui custodis pactum et misericordiam servis tuis qui ambulant coram te in toto corde suo.",
+        "SYN": "и сказал: Господи Боже Израилев! нет подобного Тебе Бога на небесах вверху и на земле внизу; Ты хранишь завет и милость к рабам Твоим, ходящим пред Тобою всем сердцем своим.",
+        "NEO": "il dit : « \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu d’Israël, il n’y a pas de Dieu semblable à vous, ni en haut dans les cieux, ni en bas sur la terre : à vous, qui gardez l’alliance et la miséricorde envers vos serviteurs qui marchent de tout leur cœur en votre présence ;",
+        "NAB": "he said, \"LORD, God of Israel, there is no God like you in heaven above or on earth below; you keep your covenant of kindness with your servants who are faithful to you with their whole heart.",
+        "VAT_ES": "y dijo: «Señor, Dios de Israel, ni arriba en el cielo ni abajo en la tierra hay un Dios como tú, que mantienes la Alianza y eres fiel con tus servidores, cuando caminan delante de ti de todo corazón.",
+        "CEI": "disse: \"Signore, Dio di Israele, non c'è un Dio come te, né lassù nei cieli né quaggiù sulla terra! Tu mantieni l'alleanza e la misericordia con i tuoi servi che camminano davanti a te con tutto il cuore."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֣ר שָׁמַ֗רְתָּ לְ/עַבְדְּ/ךָ֙ דָּוִ֣ד אָבִ֔/י אֵ֥ת אֲשֶׁר דִּבַּ֖רְתָּ ל֑/וֹ וַ/תְּדַבֵּ֥ר בְּ/פִ֛י/ךָ וּ/בְ/יָדְ/ךָ֥ מִלֵּ֖אתָ כַּ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "ἃ ἐφύλαξας τῷ δούλῳ σου Δαυεὶδ τῷ πατρί μου· καὶ γὰρ ἐλάλησας ἐν τῷ στόματί σου, καὶ ἐν χερσίν σου ἐπλήρωσας ὡς ἡ ἡμέρα αὕτη.",
+        "VUL": "Qui custodisti servo tuo David patri meo quæ locutus es ei : ore locutus es, et manibus perfecisti, ut hæc dies probat.",
+        "SYN": "Ты исполнил рабу Твоему Давиду, отцу моему, что говорил ему; что изрек Ты устами Твоими, то в сей день совершил рукою Твоею.",
+        "NEO": "comme vous avez gardé à votre serviteur David, mon père, ce que vous lui avez dit ; ce que vous avez déclaré par votre bouche, vous l’avez accompli par votre main, comme on le voit en ce jour.",
+        "NAB": "You have kept the promise you made to my father David, your servant. You who spoke that promise, have this day, by your own power, brought it to fulfillment.",
+        "VAT_ES": "Tú has cumplido, en favor de mi padre David, la promesa que le habías hecho, y hoy mismo has realizado con tu mano lo que había dicho tu boca.",
+        "CEI": "Tu hai mantenuto nei riguardi del tuo servo Davide mio padre quanto gli avevi promesso; quanto avevi detto con la bocca l'hai adempiuto con potenza, come appare oggi."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֞ה יְהוָ֣ה אֱלֹהֵ֣י יִשְׂרָאֵ֗ל שְׁ֠מֹר לְ/עַבְדְּ/ךָ֨ דָוִ֤ד אָבִ/י֙ אֵת֩ אֲשֶׁ֨ר דִּבַּ֤רְתָּ לּ/וֹ֙ לֵ/אמֹ֔ר לֹא יִכָּרֵ֨ת לְ/ךָ֥ אִישׁ֙ מִ/לְּ/פָנַ֔/י יֹשֵׁ֖ב עַל כִּסֵּ֣א יִשְׂרָאֵ֑ל רַ֠ק אִם יִשְׁמְר֨וּ בָנֶ֤י/ךָ אֶת דַּרְכָּ/ם֙ לָ/לֶ֣כֶת לְ/פָנַ֔/י כַּ/אֲשֶׁ֥ר הָלַ֖כְתָּ לְ/פָנָֽ/י׃",
+        "LXX": "καὶ νῦν, Κύριε ὁ θεὸς Ἰσραήλ, φύλαξον τῷ δούλῳ σου τῷ Δαυεὶδ τῷ πατρί μου ἃ ἐλάλησας αὐτῷ λέγων Οὐκ ἐξαρθήσεταί σου ἀνὴρ ἐκ προσώπου μου καθήμενος ἐπὶ θρόνου Ἰσραήλ, πλὴν ἐὰν φυλάξωνται τὰ τέκνα σου τὰς ὁδοὺς αὐτῶν τοῦ πορεύεσθαι ἐνώπιον ἐμοῦ καθὼς ἐπορεύθης ἐνώπιον ἐμοῦ.",
+        "VUL": "Nunc igitur Domine Deus Israël, conserva famulo tuo David patri meo quæ locutus es ei, dicens : Non auferetur de te vir coram me, qui sedeat super thronum Israël : ita tamen si custodierint filii tui viam suam, ut ambulent coram me sicut tu ambulasti in conspectu meo.",
+        "SYN": "И ныне, Господи Боже Израилев, исполни рабу Твоему Давиду, отцу моему, то, что говорил Ты ему, сказав: \"не прекратится у тебя пред лицем Моим сидящий на престоле Израилевом, если только сыновья твои будут держаться пути своего, ходя предо Мною так, как ты ходил предо Мною\".",
+        "NEO": "Maintenant, \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu d’Israël, observez en faveur de votre serviteur David, mon père, ce que vous lui avez dit en ces termes : “Il ne te manquera jamais devant moi un descendant qui siège sur le trône d’Israël, pourvu que tes fils prennent garde à leur voie, en marchant devant moi comme tu as marché devant moi.”",
+        "NAB": "Now, therefore, LORD, God of Israel, keep the further promise you made to my father David, your servant, saying, 'You shall always have someone from your line to sit before me on the throne of Israel, provided only that your descendants look to their conduct so that they live in my presence, as you have lived in my presence.'",
+        "VAT_ES": "Y ahora, Señor, Dios de Israel, cumple en favor de tu servidor David, mi padre, la promesa que le hiciste, diciendo: «Nunca te faltará un descendiente que esté sentado delante de mí en el trono de Israel, con tal que tus hijos vigilen su conducta, caminando en mi presencia como has caminado tú».",
+        "CEI": "Ora, Signore Dio di Israele, mantieni al tuo servo Davide mio padre quanto gli hai promesso: Non ti mancherà un discendente che stia davanti a me e sieda sul trono di Israele, purché i tuoi figli veglino sulla loro condotta camminando davanti a me come vi hai camminato tu."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֖ה אֱלֹהֵ֣י יִשְׂרָאֵ֑ל יֵאָ֤מֶן נָא֙ דברי/ך דְּבָ֣רְ/ךָ֔ אֲשֶׁ֣ר דִּבַּ֔רְתָּ לְ/עַבְדְּ/ךָ֖ דָּוִ֥ד אָבִֽ/י׃",
+        "LXX": "καὶ νῦν, Κύριε ὁ θεὸς Ἰσραήλ, πιστωθήτω δὴ τὸ ῥῆμά σου τῷ Δαυεὶδ τῷ πατρί μου.",
+        "VUL": "Et nunc Domine Deus Israël, firmentur verba tua quæ locutus es servo tuo David patri meo.",
+        "SYN": "И ныне, Боже Израилев, да будет верно слово Твое, которое Ты изрек рабу Твоему Давиду, отцу моему!",
+        "NEO": "Et maintenant, Dieu d’Israël, qu’elle s’accomplisse donc la parole que vous avez dite à votre serviteur David, mon père !",
+        "NAB": "Now, LORD, God of Israel, may this promise which you made to my father David, your servant, be confirmed.",
+        "VAT_ES": "Y ahora, Dios de Israel, que se verifique la promesa que hiciste a mi padre, tu servidor David.",
+        "CEI": "Ora, Signore Dio di Israele, si adempia la parola che tu hai rivolta a Davide mio padre."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "כִּ֚י הַֽ/אֻמְנָ֔ם יֵשֵׁ֥ב אֱלֹהִ֖ים עַל הָ/אָ֑רֶץ הִ֠נֵּה הַ/שָּׁמַ֜יִם וּ/שְׁמֵ֤י הַ/שָּׁמַ֨יִם֙ לֹ֣א יְכַלְכְּל֔וּ/ךָ אַ֕ף כִּֽי הַ/בַּ֥יִת הַ/זֶּ֖ה אֲשֶׁ֥ר בָּנִֽיתִי׃",
+        "LXX": "ὅτι εἰ ἀληθῶς κατοικήσει ὁ θεὸς μετὰ ἀνθρώπων ἐπὶ τῆς γῆς; εἰ ὁ οὐρανὸς καὶ ὁ οὐρανὸς τοῦ οὐρανοῦ οὐκ ἀρκέσουσίν σοι, πλὴν καὶ ὁ οἶκος οὗτος ὃν ᾠκοδόμησα τῷ ὀνόματί σου;",
+        "VUL": "Ergone putandum est quod vere Deus habitet super terram ? si enim cælum, et cæli cælorum, te capere non possunt, quanto magis domus hæc, quam ædificavi ?",
+        "SYN": "Поистине, Богу ли жить на земле? Небо и небо небес не вмещают Тебя, тем менее сей храм, который я построил [имени Твоему];",
+        "NEO": "« Mais est-il vrai que Dieu habite sur la terre ? Voici que le ciel et le ciel des cieux ne peuvent vous contenir : combien moins cette maison que j’ai bâtie !",
+        "NAB": "\"Can it indeed be that God dwells among men on earth? If the heavens and the highest heavens cannot contain you, how much less this temple which I have built!",
+        "VAT_ES": "Pero &iquest;es posible que Dios habite realmente en la tierra? Si el cielo y lo más alto del cielo no pueden contenerte, &iexcl;cuánto menos esta Casa que yo he construido!",
+        "CEI": "Ma è proprio vero che Dio abita sulla terra? Ecco i cieli e i cieli dei cieli non possono contenerti, tanto meno questa casa che io ho costruita!"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וּ/פָנִ֜יתָ אֶל תְּפִלַּ֧ת עַבְדְּ/ךָ֛ וְ/אֶל תְּחִנָּת֖/וֹ יְהוָ֣ה אֱלֹהָ֑/י לִ/שְׁמֹ֤עַ אֶל הָֽ/רִנָּה֙ וְ/אֶל הַ/תְּפִלָּ֔ה אֲשֶׁ֧ר עַבְדְּ/ךָ֛ מִתְפַּלֵּ֥ל לְ/פָנֶ֖י/ךָ הַ/יּֽוֹם׃",
+        "LXX": "καὶ ἐπιβλέψῃ ἐπὶ τὴν δέησίν μου, Κύριε ὁ θεὸς Ἰσραήλ, ἀκούειν τῆς τέρψεως ἧς ὁ δοῦλός σου προσεύχεται ἐνώπιόν σου πρὸς σὲ σήμερον,",
+        "VUL": "Sed respice ad orationem servi tui, et ad preces ejus, Domine Deus meus : audi hymnum et orationem quam servus tuus orat coram te hodie :",
+        "SYN": "но призри на молитву раба Твоего и на прошение его, Господи Боже мой; услышь воззвание и молитву, которою раб Твой умоляет Тебя ныне.",
+        "NEO": "Cependant soyez attentif, \\+w Yahweh|strong=\"H3068\"\\+w**, mon Dieu, à la prière de votre serviteur et à sa supplication, en écoutant le cri joyeux et la prière que votre serviteur prononce devant vous aujourd’hui,",
+        "NAB": "Look kindly on the prayer and petition of your servant, O LORD, my God, and listen to the cry of supplication which I, your servant, utter before you this day.",
+        "VAT_ES": "No obstante, Señor, Dios mío, vuelve tu rostro hacia la oración y la súplica de tu servidor, y escucha el clamor y la oración que te dirige hoy tu servidor.",
+        "CEI": "Volgiti alla preghiera del tuo servo e alla sua supplica, Signore mio Dio; ascolta il grido e la preghiera che il tuo servo oggi innalza davanti a te!"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "לִ/הְיוֹת֩ עֵינֶ֨/ךָ פְתֻח֜וֹת אֶל הַ/בַּ֤יִת הַ/זֶּה֙ לַ֣יְלָה וָ/י֔וֹם אֶל הַ֨/מָּק֔וֹם אֲשֶׁ֣ר אָמַ֔רְתָּ יִהְיֶ֥ה שְׁמִ֖/י שָׁ֑ם לִ/שְׁמֹ֨עַ֙ אֶל הַ/תְּפִלָּ֔ה אֲשֶׁ֣ר יִתְפַּלֵּ֣ל עַבְדְּ/ךָ֔ אֶל הַ/מָּק֖וֹם הַ/זֶּֽה׃",
+        "LXX": "τοῦ εἶναι ὀφθαλμούς σου ἠνεῳγμένους εἰς τὸν οἶκον τοῦτον ἡμέρας καὶ νυκτός, εἰς τὸν τόπον ὃν εἶπας Ἔσται τὸ ὄνομά μου ἐκεῖ, τοῦ εἰσακούειν τῆς προσευχῆς ἧς προσεύχεται ὁ δοῦλός σου εἰς τὸν τόπον τοῦτον ἡμέρας καὶ νυκτός.",
+        "VUL": "ut sint oculi tui aperti super domum hanc nocte ac die : super domum, de qua dixisti : Erit nomen meum ibi : ut exaudias orationem quam orat in loco isto ad te servus tuus :",
+        "SYN": "Да будут очи Твои отверсты на храм сей день и ночь, на сие место, о котором Ты сказал: \"Мое имя будет там\"; услышь молитву, которою будет молиться раб Твой на месте сем.",
+        "NEO": "en tenant vos yeux ouverts nuit et jour sur cette maison, sur le lieu dont vous avez dit : Là sera mon nom, en écoutant la prière que votre serviteur fait en ce lieu.",
+        "NAB": "May your eyes watch night and day over this temple, the place where you have decreed you shall be honored; may you heed the prayer which I, your servant, offer in this place.",
+        "VAT_ES": "Que tus ojos estén abiertos día y noche sobre esta Casa, sobre el lugar del que tú dijiste: «Allí residirá mi Nombre». &iexcl;Escucha la oración que tu servidor dirige hacia este lugar!",
+        "CEI": "Siano aperti i tuoi occhi notte e giorno verso questa casa, verso il luogo di cui hai detto: Lì sarà il mio nome! Ascolta la preghiera che il tuo servo innalza in questo luogo."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/שָׁ֨מַעְתָּ֜ אֶל תְּחִנַּ֤ת עַבְדְּ/ךָ֙ וְ/עַמְּ/ךָ֣ יִשְׂרָאֵ֔ל אֲשֶׁ֥ר יִֽתְפַּֽלְל֖וּ אֶל הַ/מָּק֣וֹם הַ/זֶּ֑ה וְ֠/אַתָּה תִּשְׁמַ֞ע אֶל מְק֤וֹם שִׁבְתְּ/ךָ֙ אֶל הַ/שָּׁמַ֔יִם וְ/שָׁמַעְתָּ֖ וְ/סָלָֽחְתָּ׃",
+        "LXX": "καὶ εἰσακούσῃ τῆς δεήσεως τοῦ δούλου σου καὶ τοῦ λαοῦ σου Ἰσραήλ, ἃ ἂν προσεύξωνται εἰς τὸν τόπον τοῦτον· καὶ σὺ εἰσακούσῃ ἐν τῷ τόπῳ τῆς κατοικήσεώς σου ἐν οὐρανῷ, καὶ ποιήσεις καὶ ἵλεως ἔσῃ.",
+        "VUL": "ut exaudias deprecationem servi tui et populi tui Israël, quodcumque oraverint in loco isto, et exaudies in loco habitaculi tui in cælo : et cum exaudieris, propitius eris.",
+        "SYN": "Услышь моление раба Твоего и народа Твоего Израиля, когда они будут молиться на месте сем; услышь на месте обитания Твоего, на небесах, услышь и помилуй.",
+        "NEO": "Ecoutez la supplication de votre serviteur et de votre peuple d’Israël, lorsqu’ils prieront en ce lieu ; écoutez du lieu de votre demeure, du ciel, écoutez et pardonnez.",
+        "NAB": "Listen to the petitions of your servant and of your people Israel which they offer in this place. Listen from your heavenly dwelling and grant pardon.",
+        "VAT_ES": "&iexcl;Escucha la súplica y la oración que tu servidor y tu pueblo Israel dirijan hacia este lugar! &iexcl;Escucha desde tu morada en el cielo, escucha y perdona!",
+        "CEI": "Ascolta la supplica del tuo servo e di Israele tuo popolo, quando pregheranno in questo luogo. Ascoltali dal luogo della tua dimora, dal cielo; ascolta e perdona."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "אֵת֩ אֲשֶׁ֨ר יֶחֱטָ֥א אִישׁ֙ לְ/רֵעֵ֔/הוּ וְ/נָֽשָׁא ב֥/וֹ אָלָ֖ה לְ/הַֽאֲלֹת֑/וֹ וּ/בָ֗א אָלָ֛ה לִ/פְנֵ֥י מִֽזְבַּחֲ/ךָ֖ בַּ/בַּ֥יִת הַ/זֶּֽה׃",
+        "LXX": "ὅσα ἂν ἁμάρτῃ ἕκαστος τῷ πλησίον αὐτοῦ, καὶ ἐὰν λάβῃ ἐπ’ αὐτὸν ἀρὰν τοῦ ἀρᾶσθαι αὐτόν, καὶ ἔλθῃ καὶ ἐξαγορεύσῃ κατὰ πρόσωπον τοῦ θυσιαστηρίου σου ἐν τῷ οἴκῳ τούτῳ·",
+        "VUL": "Si peccaverit homo in proximum suum, et habuerit aliquod juramentum quo teneatur astrictus, et venerit propter juramentum coram altari tuo in domum tuam,",
+        "SYN": "Когда кто согрешит против ближнего своего, и потребует от него клятвы, чтобы он поклялся, и для клятвы придут пред жертвенник Твой в храм сей,",
+        "NEO": "« Si quelqu’un pèche contre son prochain et qu’on lui fasse prêter un serment, s’il vient jurer devant votre autel, dans cette maison,",
+        "NAB": "\"If a man sins against his neighbor and is required to take an oath sanctioned by a curse, when he comes and takes the oath before your altar in this temple,",
+        "VAT_ES": "Cuando un hombre peque contra su prójimo, si se lo obliga a prestar el juramento imprecatorio, y él viene a pronunciar la imprecación ante tu altar, en esta Casa,",
+        "CEI": "Se uno pecca contro il suo fratello e, perché gli è imposto un giuramento di imprecazione, viene a giurare davanti al tuo altare in questo tempio,"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֣ה תִּשְׁמַ֣ע הַ/שָּׁמַ֗יִם וְ/עָשִׂ֨יתָ֙ וְ/שָׁפַטְתָּ֣ אֶת עֲבָדֶ֔י/ךָ לְ/הַרְשִׁ֣יעַ רָשָׁ֔ע לָ/תֵ֥ת דַּרְכּ֖/וֹ בְּ/רֹאשׁ֑/וֹ וּ/לְ/הַצְדִּ֣יק צַדִּ֔יק לָ֥/תֶת ל֖/וֹ כְּ/צִדְקָתֽ/וֹ׃",
+        "LXX": "καὶ σὺ εἰσακούσει ἐκ τοῦ οὐρανοῦ καὶ ποιήσεις, καὶ κρινεῖς τὸν λαόν σου Ἰσραήλ, ἀνομηθῆναι ἄνομον, δοῦναι τὴν ὁδὸν αὐτοῦ εἰς κεφαλὴν αὐτοῦ, καὶ τοῦ δικαιῶσαι δίκαιον, δοῦναι αὐτῷ κατὰ τὴν δικαιοσύνην αὐτοῦ.",
+        "VUL": "tu exaudies in cælo : et facies, et judicabis servos tuos, condemnans impium, et reddens viam suam super caput ejus, justificansque justum, et retribuens ei secundum justitiam suam.",
+        "SYN": "тогда Ты услышь с неба и произведи суд над рабами Твоими, обвини виновного, возложив поступок его на голову его, и оправдай правого, воздав ему по правде его.",
+        "NEO": "écoutez-le du ciel, agissez, et jugez vos serviteurs, condamnant le coupable et faisant retomber sa conduite sur sa tête, déclarant juste l’innocent et lui rendant selon son innocence.",
+        "NAB": "listen in heaven; take action and pass judgment on your servants. Condemn the wicked and punish him for his conduct, but acquit the just and establish his innocence.",
+        "VAT_ES": "escucha tú desde el cielo, actúa y juzga a tus servidores: condena al culpable, dándole su merecido, y absuelve al inocente, tratándolo según su justicia.",
+        "CEI": "tu ascoltalo dal cielo, intervieni e fà giustizia con i tuoi servi; condanna l'empio, facendogli ricadere sul capo la sua condotta, e dichiara giusto l'innocente rendendogli quanto merita la sua innocenza."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "בְּֽ/הִנָּגֵ֞ף עַמְּ/ךָ֧ יִשְׂרָאֵ֛ל לִ/פְנֵ֥י אוֹיֵ֖ב אֲשֶׁ֣ר יֶחֶטְאוּ לָ֑/ךְ וְ/שָׁ֤בוּ אֵלֶ֨י/ךָ֙ וְ/הוֹד֣וּ אֶת שְׁמֶ֔/ךָ וְ/הִֽתְפַּֽלְל֧וּ וְ/הִֽתְחַנְּנ֛וּ אֵלֶ֖י/ךָ בַּ/בַּ֥יִת הַ/זֶּֽה׃",
+        "LXX": "ἐν τῷ πταῖσαι τὸν λαόν σου Ἰσραὴλ ἐνώπιον ἐχθρῶν ὅτι ἁμαρτήσονταί σοι, καὶ ἐπιστρέψουσιν καὶ ἐξομολογήσονται τῷ ὀνόματί σου, καὶ προσεύξονται καὶ δεηθήσονται ἐν τῷ οἴκῳ τούτῳ·",
+        "VUL": "Si fugerit populus tuus Israël inimicos suos (quia peccaturus est tibi), et agentes pnitentiam, et confitentes nomini tuo, venerint, et oraverint, et deprecati te fuerint in domo hac :",
+        "SYN": "Когда народ Твой Израиль будет поражен неприятелем за то, что согрешил пред Тобою, и когда они обратятся к Тебе, и исповедают имя Твое, и будут просить и умолять Тебя в сем храме,",
+        "NEO": "« Quand votre peuple d’Israël sera battu devant l’ennemi parce qu’il aura péché contre vous, s’ils reviennent à vous et rendent gloire à votre nom, s’ils vous adressent des prières et des supplications dans cette maison,",
+        "NAB": "\"If your people Israel sin against you and are defeated by an enemy, and if then they return to you, praise your name, pray to you, and entreat you in this temple,",
+        "VAT_ES": "Cuando tu pueblo Israel sea derrotado por el enemigo por haber pecado contra ti, si ellos se vuelven hacia ti y celebran tu Nombre, si oran y te suplican en esta Casa,",
+        "CEI": "Quando il tuo popolo Israele sarà sconfitto di fronte al nemico perché ha peccato contro di te, se si rivolge a te, se loda il tuo nome, se ti prega e ti supplica in questo tempio,"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְ/אַתָּה֙ תִּשְׁמַ֣ע הַ/שָּׁמַ֔יִם וְ/סָ֣לַחְתָּ֔ לְ/חַטַּ֖את עַמְּ/ךָ֣ יִשְׂרָאֵ֑ל וַ/הֲשֵֽׁבֹתָ/ם֙ אֶל הָ֣/אֲדָמָ֔ה אֲשֶׁ֥ר נָתַ֖תָּ לַ/אֲבוֹתָֽ/ם׃",
+        "LXX": "καὶ σὺ εἰσακούσῃ ἐκ τοῦ οὐρανοῦ καὶ ἵλεως ἔσῃ ταῖς ἁμαρτίαις τοῦ δούλου σου Ἰσραήλ, καὶ ἀποστρέψεις αὐτοὺς εἰς τὴν γῆν ἣν ἔδωκας τοῖς πατράσιν αὐτῶν.",
+        "VUL": "exaudi in cælo, et dimitte peccatum populi tui Israël, et reduces eos in terram quam dedisti patribus eorum.",
+        "SYN": "тогда Ты услышь с неба и прости грех народа Твоего Израиля, и возврати их в землю, которую Ты дал отцам их.",
+        "NEO": "écoutez-les du ciel, pardonnez le péché de votre peuple d’Israël, et ramenez-les dans le pays que vous avez donné à leurs pères.",
+        "NAB": "listen in heaven and forgive the sin of your people Israel, and bring them back to the land you gave their fathers.",
+        "VAT_ES": "escucha tú desde el cielo: perdona el pecado de tu pueblo Israel y tráelo de nuevo a la tierra que diste a sus padres.",
+        "CEI": "tu ascolta dal cielo, perdona il peccato di Israele tuo popolo e fallo tornare nel paese che hai dato ai suoi padri."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "בְּ/הֵעָצֵ֥ר שָׁמַ֛יִם וְ/לֹא יִהְיֶ֥ה מָטָ֖ר כִּ֣י יֶחֶטְאוּ לָ֑/ךְ וְ/הִֽתְפַּֽלְל֞וּ אֶל הַ/מָּק֤וֹם הַ/זֶּה֙ וְ/הוֹד֣וּ אֶת שְׁמֶ֔/ךָ וּ/מֵ/חַטָּאתָ֥/ם יְשׁוּב֖וּ/ן כִּ֥י תַעֲנֵֽ/ם׃",
+        "LXX": "ἐν τῷ συσχεθῆναι τὸν οὐρανὸν καὶ μὴ γενέσθαι ὑετὸν ὅτι ἁμαρτήσονταί σοι, καὶ προσεύξονται εἰς τὸν τόπον τοῦτον καὶ ἐξομολογήσονται τῷ ὀνόματί σου, καὶ ἀπὸ τῶν ἁμαρτιῶν αὐτῶν ἀποστρέψουσιν ὅταν ταπεινώσῃς αὐτούς·",
+        "VUL": "Si clausum fuerit cælum, et non pluerit propter peccata eorum, et orantes in loco isto, pnitentiam egerint nomini tuo, et a peccatis suis conversi fuerint propter afflictionem suam :",
+        "SYN": "Когда заключится небо и не будет дождя за то, что они согрешат пред Тобою, и когда помолятся на месте сем и исповедают имя Твое и обратятся от греха своего, ибо Ты смирил их,",
+        "NEO": "« Quand le ciel sera fermé et qu’il n’y aura pas de pluie parce qu’ils auront péché contre vous, s’ils prient dans ce lieu et rendent gloire à votre nom, et s’ils se détournent de leurs péchés, parce que vous les aurez affligés,",
+        "NAB": "\"If the sky is closed, so that there is no rain, because they have sinned against you and you afflict them, and if then they repent of their sin, and pray, and praise your name in this place,",
+        "VAT_ES": "Cuando se cierre el cielo y no haya lluvia, porque ellos pecaron contra ti, si oran hacia este lugar, si celebran tu Nombre y se convierten de su pecado, porque tú los humillaste,",
+        "CEI": "Quando si chiuderà il cielo e non ci sarà pioggia perché hanno peccato contro di te, se ti pregano in questo luogo, se lodano il tuo nome e si convertono dal loro peccato perché tu li hai umiliati,"
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֣ה תִּשְׁמַ֣ע הַ/שָּׁמַ֗יִם וְ/סָ֨לַחְתָּ֜ לְ/חַטַּ֤את עֲבָדֶ֨י/ךָ֙ וְ/עַמְּ/ךָ֣ יִשְׂרָאֵ֔ל כִּ֥י תוֹרֵ֛/ם אֶת הַ/דֶּ֥רֶךְ הַ/טּוֹבָ֖ה אֲשֶׁ֣ר יֵֽלְכוּ בָ֑/הּ וְ/נָתַתָּ֤ה מָטָר֙ עַל אַרְצְ/ךָ֔ אֲשֶׁר נָתַ֥תָּה לְ/עַמְּ/ךָ֖ לְ/נַחֲלָֽה׃",
+        "LXX": "καὶ εἰσακούσῃ ἐκ τοῦ οὐρανοῦ καὶ ἵλεως ἔσῃ ταῖς ἁμαρτίαις τοῦ δούλου σου καὶ τοῦ λαοῦ σου Ἰσραήλ· ὅτι δηλώσεις αὐτοῖς τὴν ὁδὸν τὴν ἀγαθὴν πορεύεσθαι ἐν αὐτῇ, καὶ δώσεις ὑετὸν ἐπὶ τὴν γῆν ἣν ἔδωκας τῷ δούλῳ σου ἐν κληρονομίᾳ.",
+        "VUL": "exaudi eos in cælo, et dimitte peccata servorum tuorum, et populi tui Israël : et ostende eis viam bonam per quam ambulent, et da pluviam super terram tuam, quam dedisti populo tuo in possessionem.",
+        "SYN": "тогда услышь с неба и прости грех рабов Твоих и народа Твоего Израиля, указав им добрый путь, по которому идти, и пошли дождь на землю Твою, которую Ты дал народу Твоему в наследие.",
+        "NEO": "écoutez-les du ciel, pardonnez les péchés de vos serviteurs et de votre peuple d’Israël, en leur enseignant la bonne voie dans laquelle ils doivent marcher, et faites tomber la pluie sur la terre que vous avez donnée en héritage à votre peuple.",
+        "NAB": "listen in heaven and forgive the sin of your servant and of your people Israel, teaching them the right way to live and sending rain upon this land of yours which you have given to your people as their heritage.",
+        "VAT_ES": "escucha tú desde el cielo: perdona el pecado de tus servidores y de tu pueblo Israel, mostrándoles el buen camino que deben seguir, y envía lluvia a la tierra que diste en herencia a tu pueblo.",
+        "CEI": "tu ascolta dal cielo e perdona il peccato dei tuoi servi e di Israele tuo popolo, ai quali indicherai la strada buona su cui camminare, e concedi la pioggia alla terra che hai dato in eredità al tuo popolo."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "רָעָ֞ב כִּֽי יִהְיֶ֣ה בָ/אָ֗רֶץ דֶּ֣בֶר כִּֽי יִ֠הְיֶה שִׁדָּפ֨וֹן יֵרָק֜וֹן אַרְבֶּ֤ה חָסִיל֙ כִּ֣י יִהְיֶ֔ה כִּ֧י יָֽצַר ל֛/וֹ אֹיְב֖/וֹ בְּ/אֶ֣רֶץ שְׁעָרָ֑י/ו כָּל נֶ֖גַע כָּֽל מַחֲלָֽה׃",
+        "LXX": "λιμὸς ἐὰν γένηται, θάνατος ἐὰν γένηται, ὅτι ἔσται ἐνπυρισμός, βροῦχος, ἐρυσίβη ἐὰν γένηται, καὶ ἐὰν θλίψῃ αὐτὸν ἐχθρὸς αὐτοῦ ἐν μιᾷ τῶν πόλεων αὐτοῦ, πᾶν συνάντημα, πᾶν πόνον,",
+        "VUL": "Fames si oborta fuerit in terra, aut pestilentia, aut corruptus aër, aut ærugo, aut locusta, vel rubigo, et afflixerit eum inimicus ejus portas obsidens : omnis plaga, universa infirmitas,",
+        "SYN": "Будет ли на земле голод, будет ли моровая язва, будет ли палящий ветер, ржавчина, саранча, червь, неприятель ли будет теснить его в земле его, _будет_ _ли_ какое бедствие, какая болезнь, --",
+        "NEO": "« Quand la famine sera dans le pays, quand il y aura la peste, quand il y aura la rouille, la nielle, la sauterelle, le hasil ; quand l’ennemi assiégera votre peuple dans le pays, dans ses portes ; quand il y aura fléau ou maladie quelconques,",
+        "NAB": "\"If there is famine in the land or pestilence; or if blight comes, or mildew, or a locust swarm, or devouring insects; if an enemy of your people besieges them in one of their cities; whatever plague or sickness there may be,",
+        "VAT_ES": "Cuando haya hambre en el país, o haya peste, quemazón o plaga en los sembrados, langosta o pulgón; cuando el enemigo lo tenga sitiado en alguna de sus ciudades, o sobrevenga un flagelo o epidemia,",
+        "CEI": "Quando nella regione ci sarà carestia o peste, carbonchio o ruggine, invasione di locuste o di bruchi; quando il nemico assedierà il tuo popolo in qualcuna delle sue porte o quando scoppierà un'epidemia o un flagello qualsiasi;"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "כָּל תְּפִלָּ֣ה כָל תְּחִנָּ֗ה אֲשֶׁ֤ר תִֽהְיֶה֙ לְ/כָל הָ֣/אָדָ֔ם לְ/כֹ֖ל עַמְּ/ךָ֣ יִשְׂרָאֵ֑ל אֲשֶׁ֣ר יֵדְע֗וּ/ן אִ֚ישׁ נֶ֣גַע לְבָב֔/וֹ וּ/פָרַ֥שׂ כַּפָּ֖י/ו אֶל הַ/בַּ֥יִת הַ/זֶּֽה׃",
+        "LXX": "πᾶσαν προσευχήν, πᾶσαν δέησιν ἐὰν γένηται παντὶ ἀνθρώπῳ, ὡς ἂν γνῶσιν ἕκαστος ἁφὴν καρδίας αὐτοῦ, καὶ διαπετάσῃ τὰς χεῖρας αὐτοῦ εἰς τὸν οἶκον τοῦτον·",
+        "VUL": "cuncta devotatio, et imprecatio quæ acciderit omni homini de populo tuo Israël : si quis cognoverit plagam cordis sui, et expanderit manus suas in domo hac,",
+        "SYN": "при всякой молитве, при всяком прошении, какое будет от какого-либо человека во всем народе Твоем Израиле, когда они почувствуют бедствие в сердце своем и прострут руки свои к храму сему,",
+        "NEO": "si un homme, si tout votre peuple d’Israël fait entendre des prières et des supplications, et que chacun, reconnaissant la plaie de son cœur, étende ses mains vers cette maison,",
+        "NAB": "if then any one (of your entire people Israel) has remorse of conscience and offers some prayer or petition, stretching out his hands toward this temple,",
+        "VAT_ES": "cualquiera sea la oración o la súplica que te dirija un miembro de tu pueblo Israel, sintiéndose tocado en su corazón y con las manos extendidas hacia esta Casa,",
+        "CEI": "se uno qualunque oppure tutto Israele tuo popolo, dopo avere provato il rimorso nel cuore, ti prega o supplica con le mani tese verso questo tempio,"
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וְ֠/אַתָּה תִּשְׁמַ֨ע הַ/שָּׁמַ֜יִם מְכ֤וֹן שִׁבְתֶּ֨/ךָ֙ וְ/סָלַחְתָּ֣ וְ/עָשִׂ֔יתָ וְ/נָתַתָּ֤ לָ/אִישׁ֙ כְּ/כָל דְּרָכָ֔י/ו אֲשֶׁ֥ר תֵּדַ֖ע אֶת לְבָב֑/וֹ כִּֽי אַתָּ֤ה יָדַ֨עְתָּ֙ לְ/בַדְּ/ךָ֔ אֶת לְבַ֖ב כָּל בְּנֵ֥י הָ/אָדָֽם׃",
+        "LXX": "καὶ σὺ εἰσακούσῃ ἐκ τοῦ οὐρανοῦ ἐξ ἑτοίμου κατοικητηρίου σου καὶ ἵλεως ἔσῃ, καὶ ποιήσεις καὶ δώσεις ἀνδρὶ κατὰ τὰς ὁδοὺς αὐτοῦ καθὼς ἂν γνῷς τὴν καρδίαν αὐτοῦ, ὅτι σὺ μονώτατος οἶδας τὴν καρδίαν πάντων υἱῶν ἀνθρώπων,",
+        "VUL": "tu exaudies in cælo in loco habitationis tuæ, et repropitiaberis, et facies ut des unicuique secundum omnes vias suas, sicut videris cor ejus (quia tu nosti solus cor omnium filiorum hominum),",
+        "SYN": "Ты услышь с неба, с места обитания Твоего, и помилуй; соделай и воздай каждому по путям его, как Ты усмотришь сердце его, ибо Ты один знаешь сердце всех сынов человеческих:",
+        "NEO": "écoutez-les du ciel, du lieu de votre demeure, et pardonnez ; agissez et rendez à chacun selon toutes ses voies, vous qui connaissez son cœur, — car seul vous connaissez les cœurs de tous les enfants des hommes, —",
+        "NAB": "listen from your heavenly dwelling place and forgive. You who alone know the hearts of all men, render to each one of them according to his conduct; knowing their hearts, so treat them",
+        "VAT_ES": "escúchalas tú desde el cielo, desde el lugar donde habitas; escucha y actúa: trátalo a cada uno según su conducta, tú que conoces su corazón, porque sólo tú conoces el corazón de todos los humanos.",
+        "CEI": "tu ascoltalo dal cielo, luogo della tua dimora, perdona, intervieni e rendi a ognuno secondo la sua condotta, tu che conosci il suo cuore - tu solo conosci il cuore di tutti i figli degli uomini -"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "לְמַ֨עַן֙ יִֽרָא֔וּ/ךָ כָּל הַ֨/יָּמִ֔ים אֲשֶׁר הֵ֥ם חַיִּ֖ים עַל פְּנֵ֣י הָ/אֲדָמָ֑ה אֲשֶׁ֥ר נָתַ֖תָּה לַ/אֲבֹתֵֽי/נוּ׃",
+        "LXX": "ὅπως φοβῶνταί σε πάσας τὰς ἡμέρας ὅσας αὐτοὶ ζῶσιν ἐπὶ τῆς γῆς ἧς ἔδωκας τοῖς πατράσιν ἡμῶν.",
+        "VUL": "ut timeant te cunctis diebus quibus vivunt super faciem terræ quam dedisti patribus nostris.",
+        "SYN": "чтобы они боялись Тебя во все дни, доколе живут на земле, которую Ты дал отцам нашим.",
+        "NEO": "afin qu’ils vous craignent tous les jours qu’ils vivront sur la face du pays que vous avez donné à nos pères.",
+        "NAB": "that they may fear you as long as they live on the land you gave our fathers.",
+        "VAT_ES": "Así los israelitas sentirán temor de ti mientras vivan en el suelo que diste a sus padres.",
+        "CEI": "perché ti temano durante tutti i giorni della loro vita nel paese che hai dato ai nostri padri."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וְ/גַם֙ אֶל הַ/נָּכְרִ֔י אֲשֶׁ֛ר לֹא מֵ/עַמְּ/ךָ֥ יִשְׂרָאֵ֖ל ה֑וּא וּ/בָ֛א מֵ/אֶ֥רֶץ רְחוֹקָ֖ה לְמַ֥עַן שְׁמֶֽ/ךָ׃",
+        "LXX": "καὶ τῷ ἀλλοτρίῳ ὃς οὐκ ἔστιν ἀπὸ λαοῦ σου οὗτος,",
+        "VUL": "Insuper et alienigena, qui non est de populo tuo Israël, cum venerit de terra longinqua propter nomen tuum (audietur enim nomen tuum magnum, et manus tua fortis, et brachium tuum",
+        "SYN": "Если и иноплеменник, который не от Твоего народа Израиля, придет из земли далекой ради имени Твоего, --",
+        "NEO": "« Quant à l’étranger, qui n’est pas de votre peuple d’Israël, mais qui viendra d’un pays lointain à cause de votre nom,",
+        "NAB": "\"To the foreigner, likewise, who is not of your people Israel, but comes from a distant land to honor you",
+        "VAT_ES": "También al extranjero, que no pertenezca a tu pueblo Israel, y llegue de un país lejano a causa de tu Nombre",
+        "CEI": "Anche lo straniero, che non appartiene a Israele tuo popolo, se viene da un paese lontano a causa del tuo nome"
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "כִּ֤י יִשְׁמְעוּ/ן֙ אֶת שִׁמְ/ךָ֣ הַ/גָּד֔וֹל וְ/אֶת יָֽדְ/ךָ֙ הַֽ/חֲזָקָ֔ה וּֽ/זְרֹעֲ/ךָ֖ הַ/נְּטוּיָ֑ה וּ/בָ֥א וְ/הִתְפַּלֵּ֖ל אֶל הַ/בַּ֥יִת הַ/זֶּֽה׃",
+        "LXX": "καὶ ἥξουσιν καὶ προσεύξονται εἰς τὸν τόπον τοῦτον·",
+        "VUL": "extentum ubique), cum venerit ergo, et oraverit in hoc loco,",
+        "SYN": "ибо и они услышат о Твоем имени великом и о Твоей руке сильной и о Твоей мышце простертой, -- и придет он и помолится у храма сего,",
+        "NEO": "— car on entendra parler de votre grand nom, de votre main forte et de votre bras étendu, — quand il viendra prier dans cette maison,",
+        "NAB": "(since men will learn of your great name and your mighty hand and your outstretched arm), when he comes and prays toward this temple,",
+        "VAT_ES": "–porque se oirá hablar de tu gran Nombre, de tu mano poderosa y de tu brazo extendido– cuando él venga a orar hacia esta Casa,",
+        "CEI": "perché si sarà sentito parlare del tuo grande nome, della tua mano potente e del tuo braccio teso, se egli viene a pregare in questo tempio,"
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "אַתָּ֞ה תִּשְׁמַ֤ע הַ/שָּׁמַ֨יִם֙ מְכ֣וֹן שִׁבְתֶּ֔/ךָ וְ/עָשִׂ֕יתָ כְּ/כֹ֛ל אֲשֶׁר יִקְרָ֥א אֵלֶ֖י/ךָ הַ/נָּכְרִ֑י לְמַ֣עַן יֵדְעוּ/ן֩ כָּל עַמֵּ֨י הָ/אָ֜רֶץ אֶת שְׁמֶ֗/ךָ לְ/יִרְאָ֤ה אֹֽתְ/ךָ֙ כְּ/עַמְּ/ךָ֣ יִשְׂרָאֵ֔ל וְ/לָ/דַ֕עַת כִּי שִׁמְ/ךָ֣ נִקְרָ֔א עַל הַ/בַּ֥יִת הַ/זֶּ֖ה אֲשֶׁ֥ר בָּנִֽיתִי׃",
+        "LXX": "καὶ σὺ εἰσακούσῃ ἐκ τοῦ οὐρανοῦ ἐξ ἑτοίμου κατοικητηρίου σου, καὶ ποιήσεις κατὰ πάντα ὅσα ἂν ἐπικαλέσηταί σε ὁ ἀλλότριος, ὅπως γνῶσιν πάντες οἱ λαοὶ τὸ ὄνομά σου καὶ φοβῶνταί σε καθὼς ὁ λαός σου Ἰσραήλ, καὶ γνῶσιν ὅτι τὸ ὄνομά σου ἐπικέκληται ἐπὶ τὸν οἶκον τοῦτον ὃν ᾠκοδόμησα.",
+        "VUL": "tu exaudies in cælo, in firmamento habitaculi tui, et facies omnia pro quibus invocaverit te alienigena : ut discant universi populi terrarum nomen tuum timere, sicut populus tuus Israël, et probent quia nomen tuum invocatum est super domum hanc quam ædificavi.",
+        "SYN": "услышь с неба, с места обитания Твоего, и сделай все, о чем будет взывать к Тебе иноплеменник, чтобы все народы земли знали имя Твое, чтобы боялись Тебя, как народ Твой Израиль, чтобы знали, что именем Твоим называется храм сей, который я построил.",
+        "NEO": "écoutez-le du ciel, du lieu de votre demeure, et agissez selon tout ce que vous demandera l’étranger, afin que tous les peuples de la terre connaissent votre nom, pour vous craindre, comme votre peuple d’Israël, et qu’ils sachent que votre nom est appelé sur cette maison que j’ai bâtie.",
+        "NAB": "listen from your heavenly dwelling. Do all that the foreigner asks of you, that all the peoples of the earth may know your name, may fear you as do your people Israel, and may acknowledge that this temple which I have built is dedicated to your honor.",
+        "VAT_ES": "escucha tú desde el cielo, desde el lugar donde habitas, y concede al extranjero todo lo que te pida. Así todos los pueblos de la tierra conocerán tu Nombre, sentirán temor de ti cómo tu pueblo Israel, y sabrán que esta Casa, que yo he construido, es llamada con tu Nombre.",
+        "CEI": "tu ascoltalo dal cielo, luogo della tua dimora, e soddisfa tutte le richieste dello straniero, perché tutti i popoli della terra conoscano il tuo nome, ti temano come Israele tuo popolo e sappiano che al tuo nome è stato dedicato questo tempio che io ho costruito."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "כִּי יֵצֵ֨א עַמְּ/ךָ֤ לַ/מִּלְחָמָה֙ עַל אֹ֣יְב֔/וֹ בַּ/דֶּ֖רֶךְ אֲשֶׁ֣ר תִּשְׁלָחֵ֑/ם וְ/הִתְפַּֽלְל֣וּ אֶל יְהוָ֗ה דֶּ֤רֶךְ הָ/עִיר֙ אֲשֶׁ֣ר בָּחַ֣רְתָּ בָּ֔/הּ וְ/הַ/בַּ֖יִת אֲשֶׁר בָּנִ֥תִי לִ/שְׁמֶֽ/ךָ׃",
+        "LXX": "ὅτι ἐξελεύσεται ὁ λαός σου εἰς πόλεμον ἐπὶ τοὺς ἐχθροὺς αὐτοῦ ἐν ὁδῷ ᾗ ἐπιστρέψεις αὐτούς, καὶ προσεύξονται ἐν ὀνόματι Κυρίου ὁδὸν τῆς πόλεως ἧς ἐξελέξω ἐν αὐτῇ καὶ τοῦ οἴκου οὗ ᾠκοδόμησα τῷ ὀνόματί σου·",
+        "VUL": "Si egressus fuerit populus tuus ad bellum contra inimicos suos per viam, quocumque miseris eos, orabunt te contra viam civitatis quam elegisti, et contra domum quam ædificavi nomini tuo,",
+        "SYN": "Когда выйдет народ Твой на войну против врага своего путем, которым Ты пошлешь его, и будет молиться Господу, обратившись к городу, который Ты избрал, и к храму, который я построил имени Твоему,",
+        "NEO": "« Quand votre peuple sortira pour combattre son ennemi, en suivant la voie dans laquelle vous les aurez envoyés, et qu’ils adresseront des prières à \\+w Yahweh|strong=\"H3068\"\\+w**, le visage tourné vers la ville que vous avez choisie et vers la maison que j’ai bâtie à votre nom,",
+        "NAB": "\"Whatever the direction in which you may send your people forth to war against their enemies, if they pray to you, O LORD, toward the city you have chosen and the temple I have built in your honor,",
+        "VAT_ES": "Cuando tu pueblo salga a combatir contra su enemigo, por el camino que tú le señales, si ellos oran al Señor y vueltos hacia la ciudad que tú has elegido y hacia la Casa que yo edifiqué para tu Nombre,",
+        "CEI": "Quando il tuo popolo uscirà in guerra contro il suo nemico, seguendo le vie in cui l'avrai indirizzato, se ti pregheranno rivolti verso la città che ti sei scelta e verso il tempio che io ho costruito al tuo nome,"
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וְ/שָׁמַעְתָּ֙ הַ/שָּׁמַ֔יִם אֶת תְּפִלָּתָ֖/ם וְ/אֶת תְּחִנָּתָ֑/ם וְ/עָשִׂ֖יתָ מִשְׁפָּטָֽ/ם׃",
+        "LXX": "καὶ σὺ εἰσακούσει ἐκ τοῦ οὐρανοῦ τῆς δεήσεως αὐτῶν καὶ τῆς προσευχῆς αὐτῶν, καὶ ποιήσεις τὸ δικαίωμα αὐτοῖς.",
+        "VUL": "et exaudies in cælo orationes eorum et preces eorum, et facies judicium eorum.",
+        "SYN": "тогда услышь с неба молитву их и прошение их и сделай, что потребно для них.",
+        "NEO": "écoutez du ciel leur prière et leur supplication, et rendez-leur justice.",
+        "NAB": "listen in heaven to their prayer and petition, and defend their cause.",
+        "VAT_ES": "escucha tú desde el cielo esa oración y esa súplica, y hazles justicia.",
+        "CEI": "ascolta dal cielo la loro preghiera e la loro supplica e rendi loro giustizia."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "כִּ֣י יֶֽחֶטְאוּ לָ֗/ךְ כִּ֣י אֵ֤ין אָדָם֙ אֲשֶׁ֣ר לֹא יֶחֱטָ֔א וְ/אָנַפְתָּ֣ בָ֔/ם וּ/נְתַתָּ֖/ם לִ/פְנֵ֣י אוֹיֵ֑ב וְ/שָׁב֤וּ/ם שֹֽׁבֵי/הֶם֙ אֶל אֶ֣רֶץ הָ/אוֹיֵ֔ב רְחוֹקָ֖ה א֥וֹ קְרוֹבָֽה׃",
+        "LXX": "ὅτι ἁμαρτήσονταί σοι, ὅτι οὐκ ἔστιν ἄνθρωπος ὃς οὐχ ἁμαρτήσεται, καὶ ἐπάξεις αὐτοὺς καὶ παραδώσεις αὐτοὺς ἐνώπιον ἐχθρῶν, καὶ αἰχμαλωτιοῦσιν οἱ αἰχμαλωτίζοντες εἰς γῆν μακρὰν καὶ ἐγγύς,",
+        "VUL": "Quod si peccaverint tibi (non est enim homo qui non peccet) et iratus tradideris eos inimicis suis, et captivi ducti fuerint in terram inimicorum longe vel prope,",
+        "SYN": "Когда они согрешат пред Тобою, -- ибо нет человека, который не грешил бы, -- и Ты прогневаешься на них и предашь их врагам, и пленившие их отведут их в неприятельскую землю, далекую или близкую;",
+        "NEO": "« Quand ils pécheront contre vous, — car il n’y a pas d’homme qui ne pèche, — et quand, irrité contre eux, vous les livrerez à l’ennemi, et que leur vainqueur les emmènera captifs au pays de l’ennemi, lointain ou rapproché,",
+        "NAB": "\"When they sin against you (for there is no man who does not sin), and in your anger against them you deliver them to the enemy, so that their captors deport them to a hostile land, far or near,",
+        "VAT_ES": "Cuando pequen contra ti –porque no hay hombre que no peque– y tú, irritado contra ellos, los pongas a merced del enemigo, y sus vencedores los lleven cautivos a un país enemigo, próximo o lejano,",
+        "CEI": "Quando peccheranno contro di te, poiché non c'è nessuno che non pecchi, e tu, adirato contro di loro, li consegnerai a un nemico e i loro conquistatori li deporteranno in un paese ostile, lontano o vicino,"
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "וְ/הֵשִׁ֨יבוּ֙ אֶל לִבָּ֔/ם בָּ/אָ֖רֶץ אֲשֶׁ֣ר נִשְׁבּוּ שָׁ֑ם וְ/שָׁ֣בוּ וְ/הִֽתְחַנְּנ֣וּ אֵלֶ֗י/ךָ בְּ/אֶ֤רֶץ שֹֽׁבֵי/הֶם֙ לֵ/אמֹ֔ר חָטָ֥אנוּ וְ/הֶעֱוִ֖ינוּ רָשָֽׁעְנוּ׃",
+        "LXX": "καὶ ἐπιστρέψουσιν καρδίας αὐτῶν ἐν τῇ γῇ οὗ μετήχθησαν ἐκεῖ, καὶ ἐπιστρέψωσιν ἐν γῇ μετοικίας αὐτῶν καὶ δεηθῶσίν σου λέγοντες Ἡμάρτομεν, ἠδικήσαμεν, ἠνομήσαμεν·",
+        "VUL": "et egerint pnitentiam in corde suo in loco captivitatis, et conversi deprecati te fuerint in captivitate sua, dicentes : Peccavimus : inique egimus, impie gessimus :",
+        "SYN": "и когда они в земле, в которой будут находиться в плену, войдут в себя и обратятся и будут молиться Тебе в земле пленивших их, говоря: \"мы согрешили, сделали беззаконие, мы виновны\";",
+        "NEO": "s’ils rentrent en eux-mêmes dans le pays de leurs vainqueurs, s’ils se convertissent et vous adressent des supplications dans le pays de leurs tyrans, en disant : Nous avons péché, nous avons fait l’iniquité, nous avons commis le crime ;",
+        "NAB": "may they repent in the land of their captivity and be converted. If then they entreat you in the land of their captors and say, 'We have sinned and done wrong; we have been wicked';",
+        "VAT_ES": "si en el país al que han sido deportados reflexionan y se convierten, si en el país de sus vencedores te suplican, diciendo: «&iexcl;Hemos pecado, somos culpables, hemos cometido el mal!»;",
+        "CEI": "se nel paese in cui saranno deportati rientreranno in se stessi e faranno ritorno a te supplicandoti nel paese della loro prigionia, dicendo: Abbiamo peccato, abbiamo agito da malvagi e da empi,"
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "וְ/שָׁ֣בוּ אֵלֶ֗י/ךָ בְּ/כָל לְבָבָ/ם֙ וּ/בְ/כָל נַפְשָׁ֔/ם בְּ/אֶ֥רֶץ אֹיְבֵי/הֶ֖ם אֲשֶׁר שָׁב֣וּ אֹתָ֑/ם וְ/הִֽתְפַּֽלְל֣וּ אֵלֶ֗י/ךָ דֶּ֤רֶךְ אַרְצָ/ם֙ אֲשֶׁ֣ר נָתַ֣תָּה לַ/אֲבוֹתָ֔/ם הָ/עִיר֙ אֲשֶׁ֣ר בָּחַ֔רְתָּ וְ/הַ/בַּ֖יִת אֲשֶׁר בנית בָּנִ֥יתִי לִ/שְׁמֶֽ/ךָ׃",
+        "LXX": "καὶ ἐπιστρέψωσιν πρὸς σὲ ἐν ὅλῃ καρδίᾳ αὐτῶν καὶ ἐν ὅλῃ ψυχῇ αὐτῶν ἐν τῇ γῇ ἐχθρῶν αὐτῶν οὗ μετήγαγες αὐτούς, καὶ προσεύξονται πρὸς σὲ ὁδὸν γῆς αὐτῶν ἧς ἔδωκας τοῖς πατράσιν αὐτῶν, τῆς πόλεως ἧς ἐξελέξω καὶ τοῦ οἴκου οὗ ᾠκοδόμηκα τῷ ὀνόματί σου·",
+        "VUL": "et reversi fuerint ad te in universo corde suo et tota anima sua in terra inimicorum suorum, ad quam captivi ducti fuerint : et oraverint te contra viam terræ suæ, quam dedisti patribus eorum, et civitatis quam elegisti, et templi quod ædificavi nomini tuo :",
+        "SYN": "и когда обратятся к Тебе всем сердцем своим и всею душею своею в земле врагов, которые пленили их, и будут молиться Тебе, обратившись к земле своей, которую Ты дал отцам их, к городу, который Ты избрал, и к храму, который я построил имени Твоему,",
+        "NEO": "s’ils reviennent à vous de tout leur cœur et de toute leur âme, dans le pays de leurs ennemis qui les ont emmenés captifs, s’ils vous adressent des prières, le visage tourné vers leur pays que vous avez donné à leurs pères, vers la ville que vous avez choisie et vers la maison que j’ai bâtie à votre nom,",
+        "NAB": "if with their whole heart and soul they turn back to you in the land of the enemies who took them captive, pray to you toward the land you gave their fathers, the city you have chosen, and the temple I have built in your honor,",
+        "VAT_ES": "si en el país de los enemigos que los hayan deportado se vuelven hacia ti de todo corazón y con toda el alma, si te suplican en dirección al país que diste a sus padres, a la ciudad que tú has elegido y a la Casa que yo edifiqué para tu Nombre,",
+        "CEI": "se torneranno a te con tutto il cuore e con tutta l'anima nel paese dei nemici che li avranno deportati, e ti supplicheranno rivolti verso il paese che tu hai dato ai loro padri, verso la città che ti sei scelta e verso il tempio che io ho costruito al tuo nome,"
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "וְ/שָׁמַעְתָּ֤ הַ/שָּׁמַ֨יִם֙ מְכ֣וֹן שִׁבְתְּ/ךָ֔ אֶת תְּפִלָּתָ֖/ם וְ/אֶת תְּחִנָּתָ֑/ם וְ/עָשִׂ֖יתָ מִשְׁפָּטָֽ/ם׃",
+        "LXX": "καὶ εἰσακούσῃ ἐκ τοῦ οὐρανοῦ ἐξ ἑτοίμου κατοικητηρίου σου,",
+        "VUL": "exaudies in cælo, in firmamento solii tui, orationes eorum et preces eorum, et facies judicium eorum :",
+        "SYN": "тогда услышь с неба, с места обитания Твоего, молитву и прошение их и сделай, что потребно для них;",
+        "NEO": "écoutez, du ciel, du lieu de votre demeure, leur prière et leur supplication, et faites-leur droit ;",
+        "NAB": "listen from your heavenly dwelling.",
+        "VAT_ES": "escucha tú desde el cielo, desde el lugar donde habitas, esa oración y esa súplica y hazles justicia:",
+        "CEI": "tu ascolta dal cielo, luogo della tua dimora, la loro preghiera e la loro supplica e rendi loro giustizia."
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "WLC": "וְ/סָלַחְתָּ֤ לְ/עַמְּ/ךָ֙ אֲשֶׁ֣ר חָֽטְאוּ לָ֔/ךְ וּ/לְ/כָל פִּשְׁעֵי/הֶ֖ם אֲשֶׁ֣ר פָּשְׁעוּ בָ֑/ךְ וּ/נְתַתָּ֧/ם לְ/רַחֲמִ֛ים לִ/פְנֵ֥י שֹׁבֵי/הֶ֖ם וְ/רִֽחֲמֽוּ/ם׃",
+        "LXX": "καὶ ἵλεως ἔσῃ ταῖς ἀδικίαις αὐτῶν αἷς ἥμαρτόν σοι καὶ κατὰ πάντα τὰ ἀθετήματα αὐτῶν ἃ ἠθέτησάν σοι, καὶ δώσεις αὐτοὺς εἰς οἰκτειρμοὺς ἐνώπιον αἰχμαλωτευόντων αὐτοὺς καὶ οἰκτειρήσουσιν εἰς αὐτούς·",
+        "VUL": "et propitiaberis populo tuo qui peccavit tibi, et omnibus iniquitatibus eorum quibus prævaricati sunt in te : et dabis misericordiam coram eis qui eos captivos habuerint, ut misereantur eis.",
+        "SYN": "и прости народу Твоему, в чем он согрешил пред Тобою, и все проступки его, которые он сделал пред Тобою, и возбуди сострадание к ним в пленивших их, чтобы они были милостивы к ним:",
+        "NEO": "pardonnez à votre peuple ses transgressions et tous ses péchés qu’il a commis contre vous ; faites-en un sujet de compassion devant leurs tyrans, afin qu’ils aient pitié d’eux ;",
+        "NAB": "Forgive your people their sins and all the offenses they have committed against you, and grant them mercy before their captors, so that these will be merciful to them.",
+        "VAT_ES": "perdona a tu pueblo los pecados que haya cometido contra ti y todas las rebeldías de las que se hizo culpable; concédeles que sus enemigos se compadezcan de ellos,",
+        "CEI": "Perdona al tuo popolo, che ha peccato contro di te, tutte le ribellioni di cui si è reso colpevole verso di te, fà che i suoi deportatori gli usino misericordia,"
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "WLC": "כִּֽי עַמְּ/ךָ֥ וְ/נַחֲלָתְ/ךָ֖ הֵ֑ם אֲשֶׁ֤ר הוֹצֵ֨אתָ֙ מִ/מִּצְרַ֔יִם מִ/תּ֖וֹךְ כּ֥וּר הַ/בַּרְזֶֽל׃",
+        "LXX": "ὅτι λαός σου καὶ κληρονομία σου, οὓς ἐξήγαγες ἐκ γῆς Αἰγύπτου ἐκ μέσου χωνευτηρίου σιδήρου.",
+        "VUL": "Populus enim tuus est, et hæreditas tua, quos eduxisti de terra Ægypti, de medio fornacis ferreæ.",
+        "SYN": "ибо они Твой народ и Твой удел, который Ты вывел из Египта, из железной печи.",
+        "NEO": "car ils sont votre peuple et votre héritage, que vous avez fait sortir d’Égypte, du milieu d’une fournaise de fer :",
+        "NAB": "For they are your people and your inheritance, whom you brought out of Egypt, from the midst of an iron furnace.",
+        "VAT_ES": "porque son tu pueblo y tu herencia, la que tú hiciste salir de Egipto, del horno de fuego.",
+        "CEI": "perché si tratta del tuo popolo e della tua eredità, di coloro che hai fatto uscire dall'Egitto, da una fornace per fondere il ferro."
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "WLC": "לִ/הְי֨וֹת עֵינֶ֤י/ךָ פְתֻחוֹת֙ אֶל תְּחִנַּ֣ת עַבְדְּ/ךָ֔ וְ/אֶל תְּחִנַּ֖ת עַמְּ/ךָ֣ יִשְׂרָאֵ֑ל לִ/שְׁמֹ֣עַ אֲלֵי/הֶ֔ם בְּ/כֹ֖ל קָרְאָ֥/ם אֵלֶֽי/ךָ׃",
+        "LXX": "καὶ ἔστωσαν οἱ ὀφθαλμοί σου καὶ τὰ ὦτά σου ἠνεῳγμένα εἰς τὴν δέησιν τοῦ δούλου σου καὶ εἰς τὴν δεήσιν τοῦ λαοῦ σου Ἰσραήλ, εἰσακούειν αὐτῶν ἐν πᾶσιν οἷς ἂν ἐπικαλέσωνταί σε.",
+        "VUL": "Ut sint oculi tui aperti ad deprecationem servi tui, et populi tui Israël, et exaudias eos in universis pro quibus invocaverint te.",
+        "SYN": "Да будут [уши Твои и] очи Твои отверсты на молитву раба Твоего и на молитву народа Твоего Израиля, чтобы слышать их всегда, когда они будут призывать Тебя,",
+        "NEO": "afin que vos yeux soient ouverts à la supplication de votre serviteur et à la supplication de votre peuple d’Israël, pour les écouter en tout ce qu’ils vous demanderont.",
+        "NAB": "\"Thus may your eyes be open to the petition of your servant and to the petition of your people Israel. Hear them whenever they call upon you,",
+        "VAT_ES": "Que tus ojos estén abiertos a la súplica de tu servidor y de tu pueblo Israel, para escucharlos cada vez que te invoquen,",
+        "CEI": "Siano attenti i tuoi occhi alla preghiera del tuo servo e del tuo popolo Israele e ascoltali in quanto ti chiedono,"
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "WLC": "כִּֽי אַתָּ֞ה הִבְדַּלְתָּ֤/ם לְ/ךָ֙ לְֽ/נַחֲלָ֔ה מִ/כֹּ֖ל עַמֵּ֣י הָ/אָ֑רֶץ כַּ/אֲשֶׁ֨ר דִּבַּ֜רְתָּ בְּ/יַ֣ד מֹשֶׁ֣ה עַבְדֶּ֗/ךָ בְּ/הוֹצִיאֲ/ךָ֧ אֶת אֲבֹתֵ֛י/נוּ מִ/מִּצְרַ֖יִם אֲדֹנָ֥/י יְהוִֽה׃",
+        "LXX": "καὶ σὺ διέστειλας σαυτῷ εἰς κληρονομίαν ἐκ πάντων τῶν λαῶν τῆς γῆς, καθὼς ἐλάλησας ἐν χειρὶ δούλου σου Μωυσῆ, ἐν τῷ ἐξαγαγεῖν σε τοὺς πατέρας ἡμῶν ἐκ γῆς Αἰγύπτου, κύριε Κύριε. [1] Τότε ἐλάλησεν Σαλωμὼν ὑπὲρ τοῦ οἴκου ὡς συνετέλεσεν τοῦ οἰκοδομῆσαι αὐτόν Ἥλιον ἐγνώρισεν ἐν οὐρανῷ Κύριος· εἶπεν τοῦ κατοικεῖν ἐκ γνόφου. Οἰκοδόμησον οἶκόν μου, οἶκον ἐκπρεπῆ σαυτῷ, τοῦ κατοικεῖν ἐπὶ καινότητος. οὐκ ἰδοὺ αὕτη γέγραπται ἐν βιβλίῳ τῆς ᾠδῆς;",
+        "VUL": "Tu enim separasti eos tibi in hæreditatem de universis populis terræ, sicut locutus es per Moysen servum tuum quando eduxisti patres nostros de Ægypto, Domine Deus.",
+        "SYN": "ибо Ты отделил их Себе в удел из всех народов земли, как Ты изрек чрез Моисея, раба Твоего, когда вывел отцов наших из Египта, Владыка Господи!",
+        "NEO": "Car vous les avez séparés de tous les peuples de la terre pour vous, pour en faire votre héritage, comme vous l’avez déclaré par Moïse, votre serviteur, quand vous avez fait sortir nos pères d’Égypte, ô Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "because you have set them apart among all the peoples of the earth for your inheritance, as you declared through your servant Moses when you brought our fathers out of Egypt, O Lord GOD.\"",
+        "VAT_ES": "porque tú los separaste para ti de entre todos los pueblos, a fin de que fueran tu herencia, como lo dijiste tú mismo, Señor, por medio de tu servidor Moisés, cuando hiciste salir de Egipto a nuestros padres».",
+        "CEI": "perché tu li hai separati da tutti i popoli del paese come tua proprietà secondo quanto avevi dichiarato per mezzo di Mosè tuo servo, mentre facevi uscire, o Signore, i nostri padri dall'Egitto\"."
+      }
+    },
+    "54": {
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י כְּ/כַלּ֣וֹת שְׁלֹמֹ֗ה לְ/הִתְפַּלֵּל֙ אֶל יְהוָ֔ה אֵ֛ת כָּל הַ/תְּפִלָּ֥ה וְ/הַ/תְּחִנָּ֖ה הַ/זֹּ֑את קָ֞ם מִ/לִּ/פְנֵ֨י מִזְבַּ֤ח יְהוָה֙ מִ/כְּרֹ֣עַ עַל בִּרְכָּ֔י/ו וְ/כַפָּ֖י/ו פְּרֻשׂ֥וֹת הַ/שָּׁמָֽיִם׃",
+        "LXX": "Καὶ ἐγένετο ὡς συνετέλεσεν Σαλωμὼν προσευχόμενος πρὸς Κύριον ὅλην τὴν προσευχὴν καὶ τὴν δέησιν ταύτην, καὶ ἀνέστη ἀπὸ προσώπου τοῦ θυσιαστηρίου Κυρίου, ὀκλακὼς ἐπὶ τὰ γόνατα αὐτοῦ καὶ αἱ χεῖρες αὐτοῦ διαπεπετασμέναι εἰς τὸν οὐρανόν.",
+        "VUL": "Factum est autem, cum complesset Salomon orans Dominum omnem orationem et deprecationem hanc, surrexit de conspectu altaris Domini : utrumque enim genu in terram fixerat, et manus expanderat in cælum.",
+        "SYN": "Когда Соломон произнес все сие моление и прошение к Господу, тогда встал с колен от жертвенника Господня, _руки_ _же_ его были распростерты к небу.",
+        "NEO": "Lorsque Salomon eut achevé d’adresser à \\+w Yahweh|strong=\"H3068\"\\+w** toute cette prière et cette supplication, il se leva de devant l’autel de \\+w Yahweh|strong=\"H3068\"\\+w**, où il était à genoux, les mains étendues vers le ciel.",
+        "NAB": "When Solomon finished offering this entire prayer of petition to the LORD, he rose from before the altar of the LORD, where he had been kneeling with his hands outstretched toward heaven.",
+        "VAT_ES": "Cuando Salomón terminó de dirigir al Señor toda esta oración y esta súplica, se levantó de delante del altar del Señor, donde estaba arrodillado con las manos extendidas hacia el cielo.",
+        "CEI": "Quando Salomone ebbe finito di rivolgere al Signore questa preghiera e questa supplica, si alzò davanti all'altare del Signore, dove era inginocchiato con le palme tese verso il cielo,"
+      }
+    },
+    "55": {
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "WLC": "וַֽ/יַּעְמֹ֕ד וַ/יְבָ֕רֶךְ אֵ֖ת כָּל קְהַ֣ל יִשְׂרָאֵ֑ל ק֥וֹל גָּד֖וֹל לֵ/אמֹֽר׃",
+        "LXX": "καὶ ἔστη καὶ εὐλόγησεν πᾶσαν ἐκκλησίαν Ἰσραὴλ φωνῇ μεγάλῃ λέγων",
+        "VUL": "Stetit ergo, et benedixit omni ecclesiæ Israël voce magna, dicens :",
+        "SYN": "И стоя благословил все собрание Израильтян, громким голосом говоря:",
+        "NEO": "S’étant levé, il bénit toute l’assemblée d’Israël à haute voix en disant :",
+        "NAB": "He stood and blessed the whole community of Israel, saying in a loud voice:",
+        "VAT_ES": "Y puesto de pie, bendijo en voz alta a toda la asamblea de Israel, diciendo:",
+        "CEI": "si mise in piedi e benedisse tutta l'assemblea di Israele, a voce alta:"
+      }
+    },
+    "56": {
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "WLC": "בָּר֣וּךְ יְהוָ֗ה אֲשֶׁ֨ר נָתַ֤ן מְנוּחָה֙ לְ/עַמּ֣/וֹ יִשְׂרָאֵ֔ל כְּ/כֹ֖ל אֲשֶׁ֣ר דִּבֵּ֑ר לֹֽא נָפַ֞ל דָּבָ֣ר אֶחָ֗ד מִ/כֹּל֙ דְּבָר֣/וֹ הַ/טּ֔וֹב אֲשֶׁ֣ר דִּבֶּ֔ר בְּ/יַ֖ד מֹשֶׁ֥ה עַבְדּֽ/וֹ׃",
+        "LXX": "Εὐλογητὸς Κύριος σήμερον, ὃς ἔδωκεν κατάπαυσιν τῷ λαῷ αὐτοῦ Ἰσραὴλ κατὰ πάντα ὅσα ἐλάλησεν· οὐ διεφώνησεν λόγος εἷς ἐν πᾶσιν τοῖς λόγοις αὐτοῦ τοῖς ἀγαθοῖς οἷς ἐλάλησεν ἐν χειρὶ δούλου αὐτοῦ Μωυσῆ.",
+        "VUL": "Benedictus Dominus, qui dedit requiem populo suo Israël, juxta omnia quæ locutus est : non cecidit ne unus quidem sermo ex omnibus bonis quæ locutus est per Moysen servum suum.",
+        "SYN": "благословен Господь [Бог], Который дал покой народу Своему Израилю, как говорил! не осталось неисполненным ни одного слова из всех благих слов Его, которые Он изрек чрез раба Своего Моисея;",
+        "NEO": "« Béni soit \\+w Yahweh|strong=\"H3068\"\\+w** qui a donné du repos à son peuple d’Israël, selon tout ce qu’il a dit ! De toutes les bonnes paroles qu’il a fait entendre par l’organe de Moïse, son serviteur, aucune parole n’est restée sans effet.",
+        "NAB": "\"Blessed be the LORD who has given rest to his people Israel, just as he promised. Not a single word has gone unfulfilled of the entire generous promise he made through his servant Moses.",
+        "VAT_ES": "«&iexcl;Bendito sea el Señor, que ha dado a su pueblo el descanso, conforme a todo lo que había dicho! No ha caído por tierra ninguna de las promesas que él hizo por medio de tu servidor Moisés.",
+        "CEI": "\"Benedetto il Signore, che ha concesso tranquillità a Israele suo popolo, secondo la sua parola. Non è venuta meno neppure una delle parole buone che aveva pronunziate per mezzo di Mosè suo servo."
+      }
+    },
+    "57": {
+      "seq": 57,
+      "v_in": {
+        "MT": 57,
+        "VUL": 57,
+        "LXX": 57
+      },
+      "text": {
+        "WLC": "יְהִ֨י יְהוָ֤ה אֱלֹהֵ֨י/נוּ֙ עִמָּ֔/נוּ כַּ/אֲשֶׁ֥ר הָיָ֖ה עִם אֲבֹתֵ֑י/נוּ אַל יַעַזְבֵ֖/נוּ וְ/אַֽל יִטְּשֵֽׁ/נוּ׃",
+        "LXX": "γένοιτο Κύριος ὁ θεὸς ἡμῶν μεθ’ ἡμῶν καθὼς ἦν μετὰ τῶν πατέρων ἡμῶν· μὴ ἐγκαταλίποιτο ἡμᾶς μηδὲ ἀποστρέψοιτο ἡμᾶς,",
+        "VUL": "Sit Dominus Deus noster nobiscum, sicut fuit cum patribus nostris, non derelinquens nos, neque projiciens.",
+        "SYN": "да будет с нами Господь Бог наш, как был Он с отцами нашими, да не оставит нас, да не покинет нас,",
+        "NEO": "Que \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, soit avec nous, comme il a été avec nos pères ; qu’il ne nous abandonne pas et ne nous délaisse point,",
+        "NAB": "May the LORD, our God, be with us as he was with our fathers and may he not forsake us nor cast us off.",
+        "VAT_ES": "&iexcl;Que el Señor, nuestro Dios, esté con nosotros como lo estuvo con nuestros padres, que no nos abandone ni nos rechace!",
+        "CEI": "Il Signore nostro Dio sia con noi come è stato con i nostri padri; non ci abbandoni e non ci respinga,"
+      }
+    },
+    "58": {
+      "seq": 58,
+      "v_in": {
+        "MT": 58,
+        "VUL": 58,
+        "LXX": 58
+      },
+      "text": {
+        "WLC": "לְ/הַטּ֥וֹת לְבָבֵ֖/נוּ אֵלָ֑י/ו לָ/לֶ֣כֶת בְּ/כָל דְּרָכָ֗י/ו וְ/לִ/שְׁמֹ֨ר מִצְוֺתָ֤י/ו וְ/חֻקָּי/ו֙ וּ/מִשְׁפָּטָ֔י/ו אֲשֶׁ֥ר צִוָּ֖ה אֶת אֲבֹתֵֽי/נוּ׃",
+        "LXX": "ἐπικλῖναι καρδίας ἡμῶν ἐπ’ αὐτὸν τοῦ πορεύεσθαι ἐν πάσαις ὁδοῖς αὐτοῦ καὶ φυλάσσειν πάσας ἐντολὰς αὐτοῦ καὶ προστάγματα αὐτοῦ ἃ ἐνετείλατο τοῖς πατράσιν ἡμῶν.",
+        "VUL": "Sed inclinet corda nostra ad se, ut ambulemus in universis viis ejus, et custodiamus mandata ejus, et cæremonias ejus, et judicia quæcumque mandavit patribus nostris.",
+        "SYN": "наклоняя к Себе сердце наше, чтобы мы ходили по всем путям Его и соблюдали заповеди Его и уставы Его и законы Его, которые Он заповедал отцам нашим;",
+        "NEO": "mais qu’il incline nos cœurs vers lui, afin que nous marchions dans toutes ses voies, et que nous observions ses commandements, ses lois et ses ordonnances, qu’il a prescrits à nos pères.",
+        "NAB": "May he draw our hearts to himself, that we may follow him in everything and keep the commands, statutes, and ordinances which he enjoined on our fathers.",
+        "VAT_ES": "&iexcl;Que incline nuestro corazón hacia él, para que vayamos por todos sus caminos y observemos sus mandamientos, sus preceptos y sus leyes, que él dio a nuestros padres!",
+        "CEI": "ma volga piuttosto i nostri cuori verso di lui, perché seguiamo tutte le sue vie e osserviamo i comandi, gli statuti e i decreti che ha imposti ai nostri padri."
+      }
+    },
+    "59": {
+      "seq": 59,
+      "v_in": {
+        "MT": 59,
+        "VUL": 59,
+        "LXX": 59
+      },
+      "text": {
+        "WLC": "וְ/יִֽהְי֨וּ דְבָרַ֜/י אֵ֗לֶּה אֲשֶׁ֤ר הִתְחַנַּ֨נְתִּי֙ לִ/פְנֵ֣י יְהוָ֔ה קְרֹבִ֛ים אֶל יְהוָ֥ה אֱלֹהֵ֖י/נוּ יוֹמָ֣ם וָ/לָ֑יְלָה לַ/עֲשׂ֣וֹת מִשְׁפַּ֣ט עַבְדּ֗/וֹ וּ/מִשְׁפַּ֛ט עַמּ֥/וֹ יִשְׂרָאֵ֖ל דְּבַר י֥וֹם בְּ/יוֹמֽ/וֹ׃",
+        "LXX": "καὶ ἔστωσαν οἱ λόγοι οὗτοι ὡς δεδέημαι ἐνώπιον Κυρίου θεοῦ ἡμῶν ἐγγίζοντες πρὸς Κύριον θεὸν ἡμῶν ἡμέρας καὶ νυκτός, τοῦ ποιεῖν τὸ δικαίωμα τοῦ δούλου σου Ἰσραὴλ ῥῆμα ἡμέρας ἐν ἡμέρᾳ ἐνιαυτοῦ·",
+        "VUL": "Et sint sermones mei isti, quibus deprecatus sum coram Domino, appropinquantes Domino Deo nostro die ac nocte, ut faciat judicium servo suo, et populo suo Israël per singulos dies :",
+        "SYN": "и да будут слова сии, которыми я молился [ныне] пред Господом, близки к Господу Богу нашему день и ночь, дабы Он делал, что потребно для раба Своего, и что потребно для народа Своего Израиля, изо дня в день,",
+        "NEO": "Que mes paroles de supplication que j’ai prononcées devant \\+w Yahweh|strong=\"H3068\"\\+w** soient proches de \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, nuit et jour, pour que, selon le besoin de chaque jour, il fasse droit à son serviteur et à son peuple d’Israël,",
+        "NAB": "May this prayer I have offered to the LORD, our God, be present to him day and night, that he may uphold the cause of his servant and of his people Israel as each day requires,",
+        "VAT_ES": "Que estas súplicas que yo he pronunciado en presencia del Señor, nuestro Dios, estén presentes ante él día y noche, para que haga justicia a su servidor y a su pueblo Israel, según la necesidad de cada día.",
+        "CEI": "Queste parole, usate da me per supplicare il Signore, siano presenti davanti al Signore nostro Dio, giorno e notte, perché renda giustizia al suo servo e a Israele suo popolo secondo le necessità di ogni giorno."
+      }
+    },
+    "60": {
+      "seq": 60,
+      "v_in": {
+        "MT": 60,
+        "VUL": 60,
+        "LXX": 60
+      },
+      "text": {
+        "WLC": "לְמַ֗עַן דַּ֚עַת כָּל עַמֵּ֣י הָ/אָ֔רֶץ כִּ֥י יְהוָ֖ה ה֣וּא הָ/אֱלֹהִ֑ים אֵ֖ין עֽוֹד׃",
+        "LXX": "ὅπως γνῶσιν πάντες οἱ λαοὶ τῆς γῆς ὅτι Κύριος ὁ θεός, αὐτὸς θεὸς καὶ οὐκ ἔστιν ἔτι.",
+        "VUL": "ut sciant omnes populi terræ quia Dominus ipse est Deus, et non est ultra absque eo.",
+        "SYN": "чтобы все народы познали, что Господь есть Бог и нет кроме Его;",
+        "NEO": "afin que tous les peuples de la terre sachent que \\+w Yahweh|strong=\"H3068\"\\+w** est Dieu, qu’il n’y en a pas d’autre.",
+        "NAB": "that all the peoples of the earth may know the LORD is God and there is no other.",
+        "VAT_ES": "Así sabrán todos los pueblos de la tierra que el Señor es Dios, y no hay otro;",
+        "CEI": "Allora tutti i popoli della terra sapranno che il Signore è Dio e che non ce n'è altri."
+      }
+    },
+    "61": {
+      "seq": 61,
+      "v_in": {
+        "MT": 61,
+        "VUL": 61,
+        "LXX": 61
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֤ה לְבַבְ/כֶם֙ שָׁלֵ֔ם עִ֖ם יְהוָ֣ה אֱלֹהֵ֑י/נוּ לָ/לֶ֧כֶת בְּ/חֻקָּ֛י/ו וְ/לִ/שְׁמֹ֥ר מִצְוֺתָ֖י/ו כַּ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ ἔστωσαν αἱ καρδίαι ἡμῶν τέλειαι πρὸς Κύριον θεὸν ἡμῶν, καὶ ὁσίως πορεύεσθαι ἐν τοῖς προστάγμασιν αὐτοῦ καὶ φυλάσσειν ἐντολὰς αὐτοῦ ὡς ἡ ἡμέρα αὕτη.",
+        "VUL": "Sit quoque cor nostrum perfectum cum Domino Deo nostro, ut ambulemus in decretis ejus, et custodiamus mandata ejus, sicut et hodie.",
+        "SYN": "да будет сердце ваше вполне предано Господу Богу нашему, чтобы ходить по уставам Его и соблюдать заповеди Его, как ныне.",
+        "NEO": "Que votre cœur soit tout à \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, pour marcher selon ses lois et pour observer ses commandements, comme nous le faisons aujourd’hui. »",
+        "NAB": "You must be wholly devoted to the LORD, our God, observing his statutes and keeping his commandments, as on this day.\"",
+        "VAT_ES": "y el corazón de ustedes pertenecerá íntegramente al Señor, nuestro Dios, para caminar según sus preceptos y observar sus mandamientos, como en el día de hoy».",
+        "CEI": "Il vostro cuore sarà tutto dedito al Signore nostro Dio, perché cammini secondo i suoi decreti e osservi i suoi comandi, come avviene oggi\"."
+      }
+    },
+    "62": {
+      "seq": 62,
+      "v_in": {
+        "MT": 62,
+        "VUL": 62,
+        "LXX": 62
+      },
+      "text": {
+        "WLC": "וְֽ/הַ/מֶּ֔לֶךְ וְ/כָל יִשְׂרָאֵ֖ל עִמּ֑/וֹ זֹבְחִ֥ים זֶ֖בַח לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "Καὶ ὁ βασιλεὺς καὶ πάντες οἱ υἱοὶ Ἰσραὴλ ἔθυσαν θυσίαν ἐνώπιον Κυρίου.",
+        "VUL": "Igitur rex, et omnis Israël cum eo, immolabant victimas coram Domino.",
+        "SYN": "И царь и все Израильтяне с ним принесли жертву Господу.",
+        "NEO": "Le roi et tout Israël avec lui offrirent des sacrifices devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The king and all Israel with him offered sacrifices before the LORD.",
+        "VAT_ES": "El rey, y con él todo Israel, ofrecieron sacrificios delante del Señor.",
+        "CEI": "Il re e tutto Israele offrirono un sacrificio davanti al Signore."
+      }
+    },
+    "63": {
+      "seq": 63,
+      "v_in": {
+        "MT": 63,
+        "VUL": 63,
+        "LXX": 63
+      },
+      "text": {
+        "WLC": "וַ/יִּזְבַּ֣ח שְׁלֹמֹ֗ה אֵ֣ת זֶ֣בַח הַ/שְּׁלָמִים֮ אֲשֶׁ֣ר זָבַ֣ח לַ/יהוָה֒ בָּקָ֗ר עֶשְׂרִ֤ים וּ/שְׁנַ֨יִם֙ אֶ֔לֶף וְ/צֹ֕אן מֵאָ֥ה וְ/עֶשְׂרִ֖ים אָ֑לֶף וַֽ/יַּחְנְכוּ֙ אֶת בֵּ֣ית יְהוָ֔ה הַ/מֶּ֖לֶךְ וְ/כָל בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἔθυσεν ὁ βασιλεὺς Σαλωμὼν τὰς θυσίας τῶν εἰρηνικῶν ὧν ἔθυσεν τῷ κυρίῳ, βοῶν δύο καὶ εἴκοσι χιλιάδες· καὶ ἐνεκαίνισεν τὸν οἶκον Κυρίου ὁ βασιλεὺς καὶ πάντες οἱ υἱοὶ Ἰσραήλ.",
+        "VUL": "Mactavitque Salomon hostias pacificas, quas immolavit Domino, boum viginti duo millia, et ovium centum viginti millia : et dedicaverunt templum Domini rex et filii Israël.",
+        "SYN": "И принес Соломон в мирную жертву, которую принес он Господу, двадцать две тысячи крупного скота и сто двадцать тысяч мелкого скота. Так освятили храм Господу царь и все сыны Израилевы.",
+        "NEO": "Salomon immola vingt-deux mille bœufs et cent vingt mille brebis pour le sacrifice pacifique qu’il offrit à \\+w Yahweh|strong=\"H3068\"\\+w**. C’est ainsi que le roi et tous les enfants d’Israël firent la dédicace de la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Solomon offered as peace offerings to the LORD twenty-two thousand oxen and one hundred twenty thousand sheep. Thus the king and all the Israelites dedicated the temple of the LORD.",
+        "VAT_ES": "Salomón inmoló, como sacrificios de comunión en honor del Señor, veintidós mil bueyes y ciento veinte mil carneros. Así, el rey y todos los israelitas dedicaron la Casa del Señor.",
+        "CEI": "Salomone immolò al Signore, in sacrificio di comunione, ventiduemila buoi e centoventimila pecore; così il re e tutti gli Israeliti dedicarono il tempio al Signore."
+      }
+    },
+    "64": {
+      "seq": 64,
+      "v_in": {
+        "MT": 64,
+        "VUL": 64,
+        "LXX": 64
+      },
+      "text": {
+        "WLC": "בַּ/יּ֣וֹם הַ/ה֗וּא קִדַּ֨שׁ הַ/מֶּ֜לֶךְ אֶת תּ֣וֹךְ הֶ/חָצֵ֗ר אֲשֶׁר֙ לִ/פְנֵ֣י בֵית יְהוָ֔ה כִּי עָ֣שָׂה שָׁ֗ם אֶת הָֽ/עֹלָה֙ וְ/אֶת הַ/מִּנְחָ֔ה וְ/אֵ֖ת חֶלְבֵ֣י הַ/שְּׁלָמִ֑ים כִּֽי מִזְבַּ֤ח הַ/נְּחֹ֨שֶׁת֙ אֲשֶׁ֣ר לִ/פְנֵ֣י יְהוָ֔ה קָטֹ֗ן מֵֽ/הָכִיל֙ אֶת הָ/עֹלָ֣ה וְ/אֶת הַ/מִּנְחָ֔ה וְ/אֵ֖ת חֶלְבֵ֥י הַ/שְּׁלָמִֽים׃",
+        "LXX": "τῇ ἡμέρᾳ ἐκείνῃ ἡγίασεν ὁ βασιλεὺς τὸ μέσον τῆς αὐλῆς τὸ κατὰ πρόσωπον τοῦ οἴκου Κυρίου· ὅτι ἐποίησεν ἐκεῖ τὴν ὁλοκαύτωσιν καὶ τὰς θυσίας καὶ τὰ στέατα τῶν εἰρηνικῶν, ὅτι τὸ θυσιαστήριον τὸ χαλκοῦν τὸ ἐνώπιον Κυρίου μικρὸν τοῦ μὴ δύνασθαι τὴν ὁλοκαύτωσιν καὶ τάς θυσίας τῶν εἰρηνικῶν ὑπενεγκεῖν.",
+        "VUL": "In die illa sanctificavit rex medium atrii quod erat ante domum Domini : fecit quippe holocaustum ibi, et sacrificium, et adipem pacificorum : quoniam altare æreum quod erat coram Domino, minus erat, et capere non poterat holocaustum, et sacrificium, et adipem pacificorum.",
+        "SYN": "В тот же день освятил царь среднюю часть двора, который пред храмом Господним, совершив там всесожжение и хлебное приношение и _вознеся_ тук мирных жертв, потому что медный жертвенник, который пред Господом, был мал для помещения всесожжения и хлебного приношения и тука мирных жертв.",
+        "NEO": "En ce jour, le roi consacra le milieu du parvis qui est devant la maison de \\+w Yahweh|strong=\"H3068\"\\+w** ; car il offrit là les holocaustes, les oblations et les graisses des sacrifices pacifiques, parce que l’autel d’airain qui est devant \\+w Yahweh|strong=\"H3068\"\\+w** était trop petit pour contenir les holocaustes, les oblations et les graisses des sacrifices pacifiques.",
+        "NAB": "On that day the king consecrated the middle of the court facing the temple of the LORD; he offered there the holocausts, the cereal offerings, and the fat of the peace offerings, because the bronze altar before the LORD was too small to hold these offerings.",
+        "VAT_ES": "Aquel día, el rey consagró el centro del atrio que está delante de la Casa del Señor, ofreciendo allí el holocausto, la oblación y la grasa de los sacrificios de comunión, porque el altar de bronce que está delante del Señor resultaba demasiado pequeño para contener los holocaustos, las oblaciones y la grasa de los sacrificios de comunión.",
+        "CEI": "In quel giorno il re consacrò il centro del cortile di fronte al tempio del Signore; infatti ivi offrì l'olocausto, l'oblazione e il grasso dei sacrifici di comunione, perché l'altare di bronzo, che era davanti al Signore, era troppo piccolo per contenere l'olocausto, l'oblazione e il grasso dei sacrifici di comunione."
+      }
+    },
+    "65": {
+      "seq": 65,
+      "v_in": {
+        "MT": 65,
+        "VUL": 65,
+        "LXX": 65
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ שְׁלֹמֹ֣ה בָֽ/עֵת הַ/הִ֣יא אֶת הֶ/חָ֡ג וְ/כָל יִשְׂרָאֵ֣ל עִמּ/וֹ֩ קָהָ֨ל גָּד֜וֹל מִ/לְּב֥וֹא חֲמָ֣ת עַד נַ֣חַל מִצְרַ֗יִם לִ/פְנֵי֙ יְהוָ֣ה אֱלֹהֵ֔י/נוּ שִׁבְעַ֥ת יָמִ֖ים וְ/שִׁבְעַ֣ת יָמִ֑ים אַרְבָּעָ֥ה עָשָׂ֖ר יֽוֹם׃",
+        "LXX": "καὶ ἐποίησεν Σαλωμὼν τὴν ἑορτὴν ἐν τῇ ἡμέρᾳ ἐκείνῃ καὶ πᾶς Ἰσραὴλ μετ’ αὐτοῦ, ἐκκλησία μεγάλη ἀπὸ τῆς εἰσόδου Ἡμὰθ ἕως ποταμοῦ Αἰγύπτου, ἐνώπιον Κυρίου θεοῦ ἡμῶν ἐν τῷ οἴκῳ ᾧ ᾠκοδόμησεν, ἐσθίων καὶ πίνων καὶ εὐφραινόμενος ἐνώπιον Κυρίου θεοῦ ἡμῶν ἑπτὰ ἡμέρας.",
+        "VUL": "Fecit ergo Salomon in tempore illo festivitatem celebrem, et omnis Israël cum eo, multitudo magna ab introitu Emath usque ad rivum Ægypti, coram Domino Deo nostro, septem diebus et septem diebus, id est, quatuordecim diebus.",
+        "SYN": "И сделал Соломон в это время праздник, и весь Израиль с ним, -- большое собрание, _сошедшееся_ от входа в Емаф до реки Египетской пред Господом Богом нашим; [и ели, и пили, и молились пред Господом Богом нашим у построенного храма] -- семь дней и еще семь дней, четырнадцать дней.",
+        "NEO": "Salomon célébra la fête en ce temps-là, et tout Israël avec lui, grande multitude venue depuis l’entrée d’Emath jusqu’au torrent d’Égypte, — devant \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, — pendant sept jours et sept autres jours, soit quatorze jours.",
+        "NAB": "On this occasion Solomon and all the Israelites, who had assembled in large numbers from Labo of Hamath to the Wadi of Egypt, celebrated the festival before the LORD, our God, for seven days.",
+        "VAT_ES": "En aquella ocasión, Salomón, y con él todo Israel, celebró la Fiesta delante del Señor, nuestro Dios, durante siete días. Se congregó una gran asamblea, venida desde la Entrada de Jamat hasta el Torrente de Egipto.",
+        "CEI": "In quell'occasione Salomone celebrò la festa davanti al Signore nostro Dio per sette giorni: tutto Israele, dall'ingresso di Amat al torrente d'Egitto, un'assemblea molto grande, era con lui."
+      }
+    },
+    "66": {
+      "seq": 66,
+      "v_in": {
+        "MT": 66,
+        "VUL": 66,
+        "LXX": 66
+      },
+      "text": {
+        "WLC": "בַּ/יּ֤וֹם הַ/שְּׁמִינִי֙ שִׁלַּ֣ח אֶת הָ/עָ֔ם וַֽ/יְבָרֲכ֖וּ אֶת הַ/מֶּ֑לֶךְ וַ/יֵּלְכ֣וּ לְ/אָהֳלֵי/הֶ֗ם שְׂמֵחִים֙ וְ/ט֣וֹבֵי לֵ֔ב עַ֣ל כָּל הַ/טּוֹבָ֗ה אֲשֶׁ֨ר עָשָׂ֤ה יְהוָה֙ לְ/דָוִ֣ד עַבְדּ֔/וֹ וּ/לְ/יִשְׂרָאֵ֖ל עַמּֽ/וֹ׃",
+        "LXX": "καὶ ἐν τῇ ἡμέρᾳ τῇ ὀγδόῃ ἐξαπέστειλεν τὸν λαόν, καὶ εὐλόγησεν αὐτόν, καὶ ἀπῆλθεν ἕκαστος εἰς τὰ σκηνώματα αὐτοῦ χαίροντες· καὶ ἀγαθὴ ἡ καρδία ἐπὶ τοῖς ἀγαθοῖς οἷς ἐποίησεν Κύριος τῷ Δαυεὶδ δούλῳ αὐτοῦ καὶ τῷ Ἰσραὴλ λαῷ αὐτοῦ.",
+        "VUL": "Et in die octava dimisit populos : qui benedicentes regi, profecti sunt in tabernacula sua lætantes, et alacri corde super omnibus bonis quæ fecerat Dominus David servo suo, et Israël populo suo.",
+        "SYN": "В восьмой день Соломон отпустил народ. И благословили царя и пошли в шатры свои, радуясь и веселясь в сердце о всем добром, что сделал Господь рабу Своему Давиду и народу Своему Израилю.",
+        "NEO": "Le huitième jour il renvoya le peuple. Et ils bénirent le roi, et s’en allèrent dans leurs demeures, joyeux et le cœur content pour tout le bien que \\+w Yahweh|strong=\"H3068\"\\+w** avait fait à David, son serviteur, et à Israël, son peuple.",
+        "NAB": "On the eighth day he dismissed the people, who bade the king farewell and went to their homes, rejoicing and happy over all the blessings the LORD had given to his servant David and to his people Israel.",
+        "VAT_ES": "Al octavo día, Salomón despidió al pueblo. Ellos bendijeron al rey y se fueron a sus campamentos, con el corazón desbordante de alegría por todo el bien que el Señor había hecho a su servidor David y a su pueblo Israel.",
+        "CEI": "Nel giorno ottavo congedò il popolo. I convenuti, salutato il re, tornarono alle loro case, contenti e con la gioia nel cuore per tutto il bene concesso dal Signore a Davide suo servo e a Israele suo popolo."
+      }
+    }
+  }
+}

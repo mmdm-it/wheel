@@ -1,0 +1,554 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_033",
+  "book_key": "ECCLU",
+  "sequence": 33,
+  "chapter_in": {
+    "MT": 33,
+    "VUL": 33,
+    "LXX": 33
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Ἐλέησον ἡμᾶς, δέσποτα ὁ θεὸς πάντων,",
+        "VUL": "[Timenti Dominum non occurrent mala :/ sed in tentatione Deus illum conservabit, et liberabit a malis./",
+        "SYN": "Боящемуся Господа не приключится зла, но и в искушении Он избавит его.",
+        "NEO": "A celui qui craint le Seigneur le malheur ne surviendra pas ; mais, s’il est éprouvé, il sera délivré.",
+        "NAB": "No evil can harm the man who fears the LORD; through trials, again and again he is safe.",
+        "VAT_ES": "El que teme al Señor no sufrirá ningún mal y en la prueba será librado una y otra vez.",
+        "CEI": "Chi teme il Signore non incorre in alcun male, se subisce tentazioni, ne sarà liberato di nuovo."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "καὶ ἐπίβλεψον, καὶ ἐπίβαλε τὸν φόβον σου ἐπὶ πάντα τὰ ἔθνη·",
+        "VUL": "Sapiens non odit mandata et justitias,/ et non illidetur quasi in procella navis./",
+        "SYN": "Мудрый муж не возненавидит закона, а притворно держащийся его - как корабль в бурю.",
+        "NEO": "L’homme sage ne hait pas la loi, mais qui est hypocrite envers elle est comme un vaisseau dans la tempête.",
+        "NAB": "He who hates the law is without wisdom, and is tossed about like a boat in a storm.",
+        "VAT_ES": "Un hombre sabio nunca detesta la Ley, pero el que finge observarla es como un barco en la tempestad.",
+        "CEI": "Un uomo saggio non detesta la legge, ma l'ipocrita a suo riguardo è come una nave nella tempesta."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ἔπαρον τὴν χεῖρά σου ἐπὶ ἔθνη ἀλλότρια, καὶ ἰδέτωσαν τὴν δυναστείαν σου.",
+        "VUL": "Homo sensatus credit legi Dei,/ et lex illi fidelis.]",
+        "SYN": "Разумный человек верит закону, и закон для него верен, как ответ урима.",
+        "NEO": "L’homme intelligent a confiance dans la loi, et pour lui la loi est digne de foi comme l’oracle de l’Urim.",
+        "NAB": "The prudent man trusts in the word of the LORD, and the law is dependable for him as a divine oracle.",
+        "VAT_ES": "Un hombre inteligente confía en la Ley y la tiene tanta fe como a un oráculo divino.",
+        "CEI": "L'uomo assennato ha fiducia nella legge, la legge per lui è degna di fede come un oracolo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ὥσπερ ἐνώπιον αὐτῶν ἡγιάσθης ἐν ἡμῖν, οὕτως ἐνώπιον ἡμῶν μεγαλυνθείης ἐν αὐτοῖς·",
+        "VUL": "[Qui interrogationem manifestat parabit verbum,/ et sic deprecatus exaudietur :/ et conservabit disciplinam, et tunc respondebit./",
+        "SYN": "Приготовь слово - и будешь выслушан; собери наставления - и отвечай.",
+        "NEO": "Prépare ton discours, et ainsi tu seras écouté ; rassemble ton savoir, et réponds.",
+        "NAB": "Prepare your words and you will be listened to; draw upon your training, and then give your answer.",
+        "VAT_ES": "Prepara lo que vas a decir, y así serás escuchado, resume lo que sabes, y luego responde.",
+        "CEI": "Prepàrati il discorso, così sarai ascoltato; concatena il tuo sapere e poi rispondi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "καὶ ἐπιγνώτωσάν σε καθάπερ καὶ ἡμεῖς ἐπέγνωμεν, ὅτι οὐκ ἔστιν θεὸς πλὴν σοῦ, Κύριε.",
+        "VUL": "Præcordia fatui quasi rota carri,/ et quasi axis versatilis cogitatus illius./",
+        "SYN": "Колесо в колеснице - сердце глупого, и как вертящаяся ось - мысль его.",
+        "NEO": "L’intérieur de l’insensé est comme une roue de chariot, et sa pensée comme un essieu qui tourne.",
+        "NAB": "Like the wheel of a cart is the mind of a fool; his thoughts revolve in circles.",
+        "VAT_ES": "Los sentimientos del necio son una rueda de carro y su conversación, como un eje que da vueltas.",
+        "CEI": "Ruota di carro il sentimento dello stolto, il suo ragionamento è come l'asse che gira."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ἐγκαίνισον σημεῖα καὶ ἀλλοίωσον θαυμάσια,",
+        "VUL": "Equus emissarius, sic et amicus subsannator :/ sub omni supra sedente hinnit.]",
+        "SYN": "Насмешливый друг то же, что ярый конь, который под всяким седоком ржет.",
+        "NEO": "L’étalon est l’image de l’ami moqueur : il hennit sous tout cavalier.",
+        "NAB": "A fickle friend is like the stallion that neighs, no matter who the rider.",
+        "VAT_ES": "Un amigo burlón es como un caballo en celo: relincha bajo cualquier jinete.",
+        "CEI": "Come uno stallone è un amico beffardo, nitrisce sotto chiunque lo cavalca."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "δόξασον χεῖρα καὶ βραχίονα δεξιόν·",
+        "VUL": "[Quare dies diem superat, et iterum lux lucem,/ et annus annum a sole ?/",
+        "SYN": "Почему один день лучше другого, тогда как каждый дневной свет в году исходит от солнца?",
+        "NEO": "Pourquoi un jour l’emporte-t-il sur un autre jour, puisque la lumière de tous les jours de l’année vient du soleil ?",
+        "NAB": "Why is one day more important than another, when it is the sun that lights up every day?",
+        "VAT_ES": "&iquest;Por qué un día es más importante que otro, si a todos los días del año la luz les viene del sol?",
+        "CEI": "Perché un giorno è più importante d'un altro? Eppure la luce di ogni giorno dell'anno viene dal sole."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "ἔγειρον θυμὸν καὶ ἔκχεον ὀργήν,",
+        "VUL": "A Domini scientia separati sunt,/ facto sole, et præceptum custodiente./",
+        "SYN": "Они разделены премудростью Господа; Он отличил времена и празднества:",
+        "NEO": "C’est la sagesse du Seigneur qui a établi entre eux des distinctions, il a institué des temps divers et des fêtes.",
+        "NAB": "It is due to the LORD'S wisdom that they differ; it is through him the seasons and feasts come and go.",
+        "VAT_ES": "Es la ciencia del Señor la que los hizo diferentes, y él diversificó los tiempos y las fiestas:",
+        "CEI": "Essi sono distinti secondo il pensiero del Signore che ha variato le stagioni e le feste."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "ἔξαρον ἀντίδικον καὶ ἔκτριψον ἐχθρόν.",
+        "VUL": "Et immutavit tempora, et dies festos ipsorum,/ et in illis dies festos celebraverunt ad horam./",
+        "SYN": "некоторые из них Он возвысил и освятил, а прочие положил в числе обыкновенных дней.",
+        "NEO": "Parmi les jours, il y en a qu’il a élevés et sanctifiés, et il y en a qu’il a mis au nombre des jours ordinaires.",
+        "NAB": "Some he dignifies and sanctifies, and others he lists as ordinary days.",
+        "VAT_ES": "a unos días los exaltó y consagró, y a otros los computó entre los días ordinarios.",
+        "CEI": "Alcuni giorni li ha nobilitati e santificati, altri li ha lasciati nel numero dei giorni ordinari."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "σπεῦσον καιρὸν καὶ μνήσθητι ὁρκισμοῦ, καὶ ἐκδιηγησάσθωσαν τὰ μεγαλεῖά σου.",
+        "VUL": "Ex ipsis exaltavit et magnificavit Deus,/ et ex ipsis posuit in numerum dierum :/ et omnes homines de solo et ex terra unde creatus est Adam./",
+        "SYN": "И все люди из праха, и Адам был создан из земли;",
+        "NEO": "Ainsi tous les hommes viennent de la poussière, de la terre dont Adam a été formé.",
+        "NAB": "So too, all men are of clay, for from earth man was formed;",
+        "VAT_ES": "Todos los hombres provienen del suelo, y Adán fue creado de la tierra;",
+        "CEI": "Anche gli uomini provengono tutti dalla polvere e dalla terra fu creato Adamo."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἐν ὀργῇ πυρὸς καταβρωθήτω ὁ σωζόμενος, καὶ οἱ ἀδικοῦντες τὸν λαόν σου εὕροισαν ἀπώλειαν.",
+        "VUL": "In multitudine disciplinæ Dominus separavit eos,/ et immutavit vias eorum./",
+        "SYN": "но по всеведению Своему Господь положил различие между ними и назначил им разные пути:",
+        "NEO": "Mais avec une grande sagesse le Seigneur les a distingués, et les a fait marcher dans des voies différentes.",
+        "NAB": "Yet with his great knowledge the LORD makes men unlike; in different paths he has them walk.",
+        "VAT_ES": "pero, en su gran sabiduría, el Señor los distinguió y los hizo marchar por caminos diversos:",
+        "CEI": "Ma il Signore li ha distinti nella sua grande sapienza, ha assegnato loro diversi destini."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "σύντριψον κεφαλὰς ἀρχόντων ἐχθρῶν, λεγόντων Οὐκ ἔστιν πλὴν ἡμῶν.",
+        "VUL": "Ex ipsis benedixit et exaltavit,/ et ex ipsis sanctificavit, et ad se applicavit,/ et ex ipsis maledixit, et humiliavit,/ et convertit illos a separatione ipsorum./",
+        "SYN": "одних из них благословил и возвысил, других освятил и приблизил к Себе, а иных проклял и унизил и сдвинул с места их.",
+        "NEO": "Il a béni les uns et les a élevés ; il a sanctifié les autres et les a approchés de lui. D’autres, il les a maudits et abaissés, et les a précipités de leurs places",
+        "NAB": "Some he blesses and makes great, some he sanctifies and draws to himself. Others he curses and brings low, and expels them from their place.",
+        "VAT_ES": "a unos los bendijo y exaltó, los consagró y los acercó a él; a otros los maldijo y humilló, y los derribó de sus puestos.",
+        "CEI": "Alcuni li ha benedetti ed esaltati, altri li ha santificati e avvicinati a sé, altri li ha maledetti e umiliati e li ha scacciati dalle loro posizioni."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "σύναγε πάσας φυλὰς Ἰακώβ, ⸆",
+        "VUL": "Quasi lutum figuli in manu ipsius,/ plasmare illud et disponere./",
+        "SYN": "Как глина у горшечника в руке его и все судьбы ее в его произволе, так люди - в руке Сотворившего их, и Он воздает им по суду Своему.",
+        "NEO": "Comme l’argile est dans la main du potier, et qu’il en dispose selon son bon plaisir, ainsi les hommes sont dans la main de Celui qui les a faits, et il leur donne selon son jugement.",
+        "NAB": "Like clay in the hands of a potter, to be molded according to his pleasure, So are men in the hands of their Creator, to be assigned by him their function.",
+        "VAT_ES": "Como está la arcilla en las manos del alfarero, que dispone de ella según su voluntad, así están los hombres en las manos de su Creador, y él les retribuirá según su decisión.",
+        "CEI": "Come l'argilla nelle mani del vasaio che la forma a suo piacimento, così gli uomini nelle mani di colui che li ha creati, per retribuirli secondo la sua giustizia."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Omnes viæ ejus secundum dispositionem ejus :/ sic homo in manu illius qui se fecit,/ et reddet illi secundum judicium suum./",
+        "SYN": "Как напротив зла - добро и напротив смерти - жизнь, так напротив благочестивого - грешник. Так смотри и на все дела Всевышнего: их по два, одно напротив другого.",
+        "NEO": "En face du mal est le bien, en face de la mort, la vie : ainsi en face du juste est le pécheur.",
+        "NAB": "As evil contrasts with good, and death with life, so are sinners in contrast with the just;",
+        "VAT_ES": "Frente al mal, está el bien y frente a la muerte, la vida: así, frente al hombre bueno, está el pecador.",
+        "CEI": "Di fronte al male c'è il bene, di fronte alla morte, la vita; così di fronte al pio il peccatore."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Contra malum bonum est, et contra mortem vita :/ sic et contra virum justum peccator,/ et sic intuere in omnia opera Altissimi,/ duo et duo, et unum contra unum.]",
+        "SYN": "И я последний бодрственно потрудился, как подбиравший позади собирателей винограда,",
+        "NEO": "Considère de même toutes les œuvres du Très-Haut : elles sont deux à deux, l’une opposée à l’autre.",
+        "NAB": "See now all the works of the Most High: they come in pairs, the one the opposite of the other.",
+        "VAT_ES": "Considera asimismo todas las obras del Altísimo: están de dos en dos, una frente a otra.",
+        "CEI": "Considera perciò tutte le opere dell'Altissimo; due a due, una di fronte all'altra."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "[Et ego novissimus evigilavi,/ et quasi qui colligit acinos post vindemiatores./",
+        "SYN": "и по благословению Господа успел и наполнил точило, как собиратель винограда.",
+        "NEO": "Pour moi, venu le dernier, j’ai consacré mes veilles à la sagesse, semblable à celui qui grappille les raisins après la vendange ; par la bénédiction du Seigneur, j’ai pris les devants, et, comme le vendangeur, j’ai rempli le pressoir.",
+        "NAB": "Now I am the last to keep vigil, like a gleaner after the vintage;",
+        "VAT_ES": "Yo, el último en llegar, me mantuve alerta como quien recoge detrás de los viñadores.",
+        "CEI": "Io mi sono dedicato per ultimo allo studio, come un racimolatore dietro i vendemmiatori."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "In benedictione Dei et ipse speravi,/ et quasi qui vindemiat replevi torcular./",
+        "SYN": "Поймите, что я трудился не для себя одного, но для всех ищущих наставления.",
+        "NEO": "Reconnaissez que je n’ai pas travaillé pour moi seul, mais pour tous ceux qui recherchent la sagesse.",
+        "NAB": "Since by the LORD'S blessing I have made progress till like a vintager I have filled my wine press,",
+        "VAT_ES": "Por la bendición del Señor, he llegado a tiempo, y como un viñador, he llenado el lagar.",
+        "CEI": "Con la benedizione del Signore ho raggiunto lo scopo, come un vendemmiatore ho riempito il tino."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Respicite quoniam non mihi soli laboravi,/ sed omnibus exquirentibus disciplinam./",
+        "SYN": "Послушайте меня, князья народа, и внимайте, начальники собрания:",
+        "NEO": "Ecoutez-moi donc, chefs du peuple ; présidents de l’assemblée, prêtez-moi l’oreille.",
+        "NAB": "I would inform you that not for myself only have I toiled, but for every seeker after wisdom.",
+        "VAT_ES": "Sepan que no me fatigué para mí solamente, sino para todos los que buscan la instrucción.",
+        "CEI": "Badate che non ho faticato solo per me, ma per quanti ricercano l'istruzione."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "Audite me, magnates et omnes populi :/ et rectores ecclesiæ, auribus percipite.]",
+        "SYN": "ни сыну, ни жене, ни брату, ни другу не давай власти над тобою при жизни твоей;",
+        "NEO": "Ni à ton fils ni à ton épouse, ni à ton frère ni à ton ami, ne donne pouvoir sur toi durant ta vie, et ne donne pas tes biens à un autre, de peur que, plein de regret, tu ne doives leur adresser des supplications.",
+        "NAB": "Listen to me, O leaders of the multitude; O rulers of the assembly, give ear!",
+        "VAT_ES": "Escúchenme, grandes del pueblo, y ustedes, jefes de la asamblea, préstenme atención.",
+        "CEI": "Ascoltatemi, capi del popolo, e voi che dirigete le assemblee, fate attenzione."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "[Filio et mulieri, fratri et amico,/ non des potestatem super te in vita tua :/ et non dederis alii possessionem tuam,/ ne forte pniteat te, et depreceris pro illis./",
+        "SYN": "и не отдавай другому имения твоего, чтобы, раскаявшись, не умолять о нем.",
+        "NEO": "Tant que tu vis et qu’il te reste un souffle, ne t’aliène toi-même à aucune chair.",
+        "NAB": "Let neither son nor wife, neither brother nor friend, have power over you as long as you live.",
+        "VAT_ES": "Sea hijo o mujer, hermano o amigo, a nadie des autoridad sobre ti mientras vivas. Tampoco entregues tus bienes a otro, no sea que te arrepientas y los tengas que reclamar.",
+        "CEI": "Al figlio e alla moglie, al fratello e all'amico non dare un potere su di te finché sei in vita. Non dare ad altri le tue ricchezze, perché poi non ti penta e debba richiederle."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Dum adhuc superes et aspiras,/ non immutabit te omnis caro./",
+        "SYN": "Доколе ты жив и дыхание в тебе, не заменяй себя никем;",
+        "NEO": "Car il vaut mieux que tes enfants te demandent, que d’avoir toi-même à regarder vers les mains de tes enfants.",
+        "NAB": "While breath of life is still in you, let no man have dominion over you. Give not to another your wealth, lest then you have to plead with him;",
+        "VAT_ES": "Mientras vivas y tengas aliento, no te dejes enajenar por nadie:",
+        "CEI": "Finché vivi e c'è respiro in te, non abbandonarti in potere di nessuno."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Melius est enim ut filii tui te rogent,/ quam te respicere in manus filiorum tuorum./",
+        "SYN": "ибо лучше, чтобы дети просили тебя, нежели тебе смотреть в руки сыновей твоих.",
+        "NEO": "Dans tout ce que tu fais reste le maître, et n’imprime aucune tache à ta renommée.",
+        "NAB": "Far better that your children plead with you than that you should look to their generosity.",
+        "VAT_ES": "es mejor que tus hijos te pidan que tener tus ojos fijos en sus manos.",
+        "CEI": "È meglio che i figli ti preghino che non rivolgerti tu alle loro mani."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "In omnibus operibus tuis præcellens esto./",
+        "SYN": "Во всех делах твоих будь главным, и не клади пятна на честь твою.",
+        "NEO": "Quand viendra la fin des jours de ta vie, et le moment de mourir, distribue ton héritage.",
+        "NAB": "Keep control over all your affairs; let no one tarnish your glory.",
+        "VAT_ES": "En todo lo que hagas, sé tú el que dirige, y no manches con nada tu reputación.",
+        "CEI": "In tutte le azioni sii sempre superiore, non permettere che si offuschi la tua fama."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Ne dederis maculam in gloria tua./ In die consummationis dierum vitæ tuæ, et in tempore exitus tui,/ distribue hæreditatem tuam.]",
+        "SYN": "При скончании дней жизни твоей и при смерти передай наследство.",
+        "NEO": "A l’âne le fourrage, le bâton et la charge ; à l’esclave le pain, la correction et le travail.",
+        "NAB": "When your few days reach their limit, at the time of death distribute your inheritance.",
+        "VAT_ES": "Cuando lleguen a su término los días de tu vida, a la hora de la muerte, reparte tu herencia.",
+        "CEI": "Quando finiranno i giorni della tua vita, al momento della morte, assegna la tua eredità."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "[Cibaria, et virga, et onus asino :/ panis, et disciplina, et opus servo./",
+        "SYN": "Корм, палка и бремя - для осла; хлеб, наказание и дело - для раба.",
+        "NEO": "Fais travailler ton esclave, et tu seras en repos ; laisse-lui les mains libres, et il cherchera la liberté.",
+        "NAB": "Fodder and whip and loads for an ass; the yoke and harness and the rod of his master.",
+        "VAT_ES": "Al asno el forraje, el bastón y la carga; al servidor el pan, la disciplina y el trabajo.",
+        "CEI": "Foraggio, bastone e pesi per l'asino; pane, castigo e lavoro per lo schiavo."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Operatur in disciplina, et quærit requiescere :/ laxa manus illi, et quærit libertatem./",
+        "SYN": "Занимай раба работою - и будешь иметь покой; ослабь руки ему - и он будет искать свободы.",
+        "NEO": "Le joug et la lanière font plier le cou ; à l’esclave méchant la torture et la douleur.",
+        "NAB": "Make a slave work and he will look for his rest; let his hands be idle and he will seek to be free.",
+        "VAT_ES": "Obliga a trabajar a tu esclavo, y encontrarás descanso; déjalo desocupado, y buscará la libertad.",
+        "CEI": "Fà lavorare il tuo servo, e potrai trovare riposo, lasciagli libere le mani e cercherà la libertà."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "Jugum et lorum curvant collum durum,/ et servum inclinant operationes assiduæ./",
+        "SYN": "Ярмо и ремень согнут выю вола, а для лукавого раба - узы и раны;",
+        "NEO": "Envoie-le au travail, afin qu’il ne reste pas oisif, car l’oisiveté enseigne beaucoup de mal.",
+        "NAB": "Food, correction and work for a slave; and for a wicked slave, punishment in the stocks.",
+        "VAT_ES": "El yugo y las riendas doblegan la nuca, y para el servidor perverso, están la tortura y el tormento.",
+        "CEI": "Giogo e redini piegano il collo; per lo schiavo cattivo torture e castighi."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "Servo malevolo tortura et compedes :/ mitte illum in operationem, ne vacet :/",
+        "SYN": "употребляй его на работу, чтобы он не оставался в праздности, ибо праздность научила многому худому;",
+        "NEO": "Mets-le à l’ouvrage, c’est ce qui lui convient ; et, s’il n’obéit pas, serre-lui les entraves ; mais ne dépasse la mesure envers personne, et ne fais rien de contraire à la justice.",
+        "NAB": "Force him to work that he be not idle, for idleness is an apt teacher of mischief.",
+        "VAT_ES": "Fuérzalo a trabajar, para que no se quede ocioso, porque el ocio enseña muchas cosas malas.",
+        "CEI": "Fallo lavorare perché non stia in ozio, poiché l'ozio insegna molte cattiverie."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "multam enim malitiam docuit otiositas./",
+        "SYN": "приставь его к делу, как ему следует, и если он не будет повиноваться, наложи на него тяжкие оковы.",
+        "NEO": "Si tu as un esclave, qu’il soit comme toi-même, car tu l’as acquis avec du sang.",
+        "NAB": "Put him to work, for that is what befits him; if he becomes unruly, load him with chains.",
+        "VAT_ES": "Oblígalo a trabajar como le corresponde, y si no obedece, ata sus pies con cadenas.",
+        "CEI": "Obbligalo al lavoro come gli conviene, e se non obbedisce, stringi i suoi ceppi."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "In opera constitue eum :/ sic enim condecet illum./ Quod si non obaudierit, curva illum compedibus,/ et non amplifices super omnem carnem :/ verum sine judicio nihil facias grave./",
+        "SYN": "Но ни на кого не налагай лишнего и ничего не делай без рассуждения.",
+        "NEO": "Si tu as un esclave, traite-le comme toi-même, et ainsi tu l’attacheras à ton âme.",
+        "NAB": "But never lord it over any human being, and do nothing unjust.",
+        "VAT_ES": "Pero a nadie le exijas más de la cuenta, y no hagas nada sin justicia.",
+        "CEI": "Non esagerare con nessuno; non fare nulla senza giustizia."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "Si est tibi servus fidelis, sit tibi quasi anima tua :/ quasi fratrem sic eum tracta,/ quoniam in sanguine animæ comparasti illum./",
+        "SYN": "Если есть у тебя раб, то да будет он как ты, ибо ты приобрел его кровью;",
+        "NEO": "Si tu le maltraites et qu’il prenne la fuite, sur quel chemin iras-tu le chercher ?",
+        "NAB": "If you have but one slave, treat him like yourself, for you have acquired him with your life's blood;",
+        "VAT_ES": "Si no tienes más que un servidor, considéralo como a ti mismo, porque lo has adquirido con sangre;",
+        "CEI": "Se hai uno schiavo, sia come te stesso, poiché l'hai acquistato con il sangue."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "Si læseris eum injuste,/ in fugam convertetur :/",
+        "SYN": "если есть у тебя раб, то поступай с ним, как с братом, ибо ты будешь нуждаться в нем, как в душе твоей;",
+        "NAB": "If you have but one slave, deal with him as a brother, for you need him as you need your life:",
+        "VAT_ES": "si no tienes más que un servidor, trátalo como a un hermano, porque lo necesitas tanto como a ti mismo.",
+        "CEI": "Se hai uno schiavo, trattalo come fratello, perché ne avrai bisogno come di te stesso,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "et si extollens discesserit,/ quem quæras et in qua via quæras illum nescis.]",
+        "SYN": "если ты будешь обижать его, и он встанет и убежит от тебя, то на какой дороге ты будешь искать его?",
+        "NAB": "If you mistreat him and he runs away, in what direction will you look for him?",
+        "VAT_ES": "Si tú lo maltratas y él termina por escaparse, &iquest;por qué camino lo irás a buscar?",
+        "CEI": "Se tu lo maltratti ed egli fuggirà, per quale strada andrai a ricercarlo?"
+      }
+    }
+  }
+}

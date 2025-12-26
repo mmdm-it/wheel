@@ -1,0 +1,789 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_036",
+  "book_key": "GENE",
+  "sequence": 36,
+  "chapter_in": {
+    "MT": 36,
+    "VUL": 36,
+    "LXX": 36
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/אֵ֛לֶּה תֹּלְד֥וֹת עֵשָׂ֖ו ה֥וּא אֱדֽוֹם׃",
+        "VUL": "Hæ sunt autem generationes Esau, ipse est Edom.",
+        "LXX": "Αὗται δὲ αἱ γενέσεις Ἠσαύ· αὐτός ἐστιν Ἐδώμ.",
+        "NAB": "These are the descendants of Esau (that is, Edom).",
+        "SYN": "Вот родословие Исава, он же Едом.",
+        "NEO": "Voici l’histoire d’Esaü, qui est Edom.",
+        "VAT_ES": "La descendencia de Esaú –es decir, de Edom– es la siguiente:",
+        "CEI": "Questa è la discendenza di Esaù, cioè Edom."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עֵשָׂ֛ו לָקַ֥ח אֶת נָשָׁ֖י/ו מִ/בְּנ֣וֹת כְּנָ֑עַן אֶת עָדָ֗ה בַּת אֵילוֹן֙ הַֽ/חִתִּ֔י וְ/אֶת אָהֳלִֽיבָמָה֙ בַּת עֲנָ֔ה בַּת צִבְע֖וֹן הַֽ/חִוִּֽי׃",
+        "VUL": "Esau accepit uxores de filiabus Chanaan : Ada filiam Elon Hethæi, et Oolibama filiam Anæ filiæ Sebeon Hevæi :",
+        "LXX": "Ἠσαὺ δὲ ἔλαβεν γυναῖκας ἑαυτῷ ἀπὸ τῶν θυγατέρων τῶν Χαναναίων· τὴν Ἀδά, θυγατέρα Ἐλὼμ τοῦ Χετταίου, καὶ τὴν Ὀλιβεμά, θυγατέρα Ἀνὰ τοῦ υἱοῦ Σεβεγὼν τοῦ Εὑαίου,",
+        "NAB": "Esau took his wives from among the Canaanite women: Adah, daughter of Elon the Hittite; Oholibamah, granddaughter through Anah of Zibeon the Hivite;",
+        "SYN": "Исав взял себе жен из дочерей Ханаанских: Аду, дочь Елона Хеттеянина, и Оливему, дочь Аны, сына Цивеона Евеянина,",
+        "NEO": "Esaü prit ses femmes parmi les filles de Canaan : Ada, fille d’Elon, le Hittite ; Oolibama, fille d’Ana, fille de Sébéon, le Hévéen ;",
+        "VAT_ES": "Esaú tomó sus esposas de entre las mujeres cananeas: a Adá, hija de Elón, el hitita; a Oholibamá, hija de Aná, que a su vez era hijo de Sibeón, el jivita;",
+        "CEI": "Esaù prese le mogli tra le figlie dei Cananei: Ada, figlia di Elon, l'Hittita; Oolibama, figlia di Ana, figlio di Zibeon, l'Hurrita;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/אֶת בָּשְׂמַ֥ת בַּת יִשְׁמָעֵ֖אל אֲח֥וֹת נְבָיֽוֹת׃",
+        "VUL": "Basemath quoque filiam Ismaël sororem Nabaioth.",
+        "LXX": "καὶ τὴν Βασεμμάθ, θυγατέρα Ἰσμαήλ, ἀδελφὴν Ναβαιώθ.",
+        "NAB": "and Basemath, daughter of Ishmael and sister of Nebaioth.",
+        "SYN": "и Васемафу, дочь Измаила, сестру Наваиофа.",
+        "NEO": "et Basemath, fille d’Ismaël, sœur de Nabaïoth.",
+        "VAT_ES": "y a Basmat, hija de Ismael y hermana de Nebaiot.",
+        "CEI": "Basemat, figlia di Ismaele, sorella di Nebaiòt."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֧לֶד עָדָ֛ה לְ/עֵשָׂ֖ו אֶת אֱלִיפָ֑ז וּ/בָ֣שְׂמַ֔ת יָלְדָ֖ה אֶת רְעוּאֵֽל׃",
+        "VUL": "Peperit autem Ada Eliphaz : Basemath genuit Rahuel :",
+        "LXX": "ἔτεκεν δὲ Ἀδὰ τῷ Ἠσαὺ τὸν Ἐλιφάς, καὶ Βασεμμὰθ ἔτεκεν τὸν Ῥαγουήλ,",
+        "NAB": "Adah bore Eliphaz to Esau; Basemath bore Reuel;",
+        "SYN": "Ада родила Исаву Елифаза, Васемафа родила Рагуила,",
+        "NEO": "Ada enfanta à Esaü Eliphaz, Basemath enfanta Rahuel,",
+        "VAT_ES": "Adá fue madre de Elifaz; Basmat, madre de Reuel",
+        "CEI": "Ada partorì ad Esaù Elifaz, Basemat partorì Reuel,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/אָהֳלִֽיבָמָה֙ יָֽלְדָ֔ה אֶת יעיש יְע֥וּשׁ וְ/אֶת יַעְלָ֖ם וְ/אֶת קֹ֑רַח אֵ֚לֶּה בְּנֵ֣י עֵשָׂ֔ו אֲשֶׁ֥ר יֻלְּדוּ ל֖/וֹ בְּ/אֶ֥רֶץ כְּנָֽעַן׃",
+        "VUL": "Oolibama genuit Jehus et Ihelon et Core. Hi filii Esau qui nati sunt ei in terra Chanaan.",
+        "LXX": "καὶ Ὀλιβεμὰ ἔτεκεν τὸν Ἰεοὺς καὶ τὸν Ἰεγλὸμ καὶ τὸν Κόρε· οὗτοι υἱοὶ Ἠσαύ, οἳ ἐγένοντο αὐτῷ ἐν γῇ Χανάαν.",
+        "NAB": "and Oholibamah bore Jeush, Jalam and Korah. These are the sons of Esau who were born to him in the land of Canaan.",
+        "SYN": "Оливема родила Иеуса, Иеглома и Корея. Это сыновья Исава, родившиеся ему в земле Ханаанской.",
+        "NEO": "et Oolibama enfanta Jéhus, Ihélon et Coré. Ce sont là les fils d’Esaü, qui lui naquirent au pays de Canaan.",
+        "VAT_ES": "y Oholibamá, madre de Ieús, Ialam y Coré. Estos son los hijos que Esaú tuvo en Canaán.",
+        "CEI": "Oolibama partorì Ieus, Iaalam e Core. Questi sono i figli di Esaù, che gli nacquero nel paese di Cànaan."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֣ח עֵשָׂ֡ו אֶת נָ֠שָׁי/ו וְ/אֶת בָּנָ֣י/ו וְ/אֶת בְּנֹתָי/ו֮ וְ/אֶת כָּל נַפְשׁ֣וֹת בֵּית/וֹ֒ וְ/אֶת מִקְנֵ֣/הוּ וְ/אֶת כָּל בְּהֶמְתּ֗/וֹ וְ/אֵת֙ כָּל קִנְיָנ֔/וֹ אֲשֶׁ֥ר רָכַ֖שׁ בְּ/אֶ֣רֶץ כְּנָ֑עַן וַ/יֵּ֣לֶךְ אֶל אֶ֔רֶץ מִ/פְּנֵ֖י יַעֲקֹ֥ב אָחִֽי/ו׃",
+        "VUL": "Tulit autem Esau uxores suas et filios et filias, et omnem animam domus suæ, et substantiam, et pecora, et cuncta quæ habere poterat in terra Chanaan : et abiit in alteram regionem, recessitque a fratre suo Jacob.",
+        "LXX": "ἔλαβεν δὲ Ἠσαὺ τὰς γυναῖκας αὐτοῦ καὶ τοὺς υἱοὺς καὶ τὰς θυγατέρας καὶ πάντα τὰ σώματα τοῦ οἴκου αὐτοῦ, καὶ πάντα τὰ ὑπάρχοντα καὶ τὰ κτήνη, καὶ πάντα ὅσα ἐκτήσατο καὶ ὅσα περιεποιήσατο ἐν γῇ Χανάαν· καὶ ἐπορεύθη ἐκ γῆς Χανάαν ἀπὸ προσώπου Ἰακὼβ τοῦ ἀδελφοῦ αὐτοῦ.",
+        "NAB": "Esau took his wives, his sons, his daughters, and all the members of his household, as well as his livestock comprising various animals and all the property he had acquired in the land of Canaan, and went to the land of Seir, out of the way of his brother Jacob.",
+        "SYN": "И взял Исав жен своих и сыновей своих, и дочерей своих, и всех людей дома своего, и [все] стада свои, и весь скот свой, и всё имение свое, которое он приобрел в земле Ханаанской, и пошел [Исав] в _другую_ землю от лица Иакова, брата своего,",
+        "NEO": "Esaü prit ses femmes, ses fils et ses filles, et toutes les personnes de sa maison, ses troupeaux, tout son bétail et tous les biens qu’il avait acquis dans le pays de Canaan, et il s’en alla dans un autre pays, loin de Jacob, son frère.",
+        "VAT_ES": "Después Esaú tomó a sus mujeres, a sus hijos e hijas, y a toda su servidumbre, su ganado, todos sus animales, y todos sus bienes que había adquirido en Canaán, y emigró a Seír, lejos de su hermano Jacob.",
+        "CEI": "Poi Esaù prese le mogli e i figli e le figlie e tutte le persone della sua casa, il suo gregge e tutto il suo bestiame e tutti i suoi beni che aveva acquistati nel paese di Cànaan e andò nel paese di Seir, lontano dal fratello Giacobbe."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּֽי הָיָ֧ה רְכוּשָׁ֛/ם רָ֖ב מִ/שֶּׁ֣בֶת יַחְדָּ֑ו וְ/לֹ֨א יָֽכְלָ֜ה אֶ֤רֶץ מְגֽוּרֵי/הֶם֙ לָ/שֵׂ֣את אֹתָ֔/ם מִ/פְּנֵ֖י מִקְנֵי/הֶֽם׃",
+        "VUL": "Divites enim erant valde, et simul habitare non poterant : nec sustinebat eos terra peregrinationis eorum præ multitudine gregum.",
+        "LXX": "ἦν γὰρ αὐτῶν τὰ ὑπάρχοντα πολλὰ τοῦ οἰκεῖν ἅμα, καὶ οὐκ ἐδύνατο ἡ γῆ τῆς παροικήσεως αὐτῶν φέρειν αὐτοὺς ἀπὸ τοῦ πλήθους τῶν ὑπαρχόντων αὐτῶν.",
+        "NAB": "Their possessions had become too great for them to dwell together, and the land in which they were staying could not support them because of their livestock.",
+        "SYN": "ибо имение их было так велико, что они не могли жить вместе, и земля странствования их не вмещала их, по множеству стад их.",
+        "NEO": "Car leurs biens étaient trop considérables pour qu’ils demeurassent ensemble, et le pays où ils séjournaient ne pouvait leur suffire à cause de leurs troupeaux.",
+        "VAT_ES": "Porque los dos tenían demasiadas posesiones para vivir juntos, y el territorio donde residían no daba abasto para tanto ganado.",
+        "CEI": "Infatti i loro possedimenti erano troppo grandi perché essi potessero abitare insieme e il territorio, dove essi soggiornavano, non poteva sostenerli per causa del loro bestiame."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֤שֶׁב עֵשָׂו֙ בְּ/הַ֣ר שֵׂעִ֔יר עֵשָׂ֖ו ה֥וּא אֱדֽוֹם׃",
+        "VUL": "Habitavitque Esau in monte Seir, ipse est Edom.",
+        "LXX": "ᾤκησεν δὲ Ἠσαὺ ἐν τῷ ὄρει Σηείρ· Ἠσαὺ αὐτός ἐστιν Ἐδώμ.",
+        "NAB": "So Esau settled in the highlands of Seir. (Esau is Edom.)",
+        "SYN": "И поселился Исав на горе Сеир, Исав, он же Едом.",
+        "NEO": "Esaü s’établit dans la montagne de Séir ; Esaü est Edom.",
+        "VAT_ES": "Así Esaú se estableció en la montaña de Seír. Esaú es Edom.",
+        "CEI": "Così Esaù si stabilì sulle montagne di Seir. Ora Esaù è Edom."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/אֵ֛לֶּה תֹּלְד֥וֹת עֵשָׂ֖ו אֲבִ֣י אֱד֑וֹם בְּ/הַ֖ר שֵׂעִֽיר׃",
+        "VUL": "Hæ autem sunt generationes Esau patris Edom in monte Seir,",
+        "LXX": "Αὗται δὲ αἱ γενέσεις Ἠσαὺ πατρὸς Ἐδὼμ ἐν τῷ ὄρει Σηείρ.",
+        "NAB": "These are the descendants of Esau, ancestor of the Edomites, in the highlands of Seir.",
+        "SYN": "И вот родословие Исава, отца Идумеев, на горе Сеир.",
+        "NEO": "Voici la postérité d’Esaü, père d’Edom, dans la montagne de Séir.",
+        "VAT_ES": "Esta es la descendencia de Esaú, padre de Edom, en la montaña de Seír.",
+        "CEI": "Questa è la discendenza di Esaù, padre degli Idumei, nelle montagne di Seir."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אֵ֖לֶּה שְׁמ֣וֹת בְּנֵֽי עֵשָׂ֑ו אֱלִיפַ֗ז בֶּן עָדָה֙ אֵ֣שֶׁת עֵשָׂ֔ו רְעוּאֵ֕ל בֶּן בָּשְׂמַ֖ת אֵ֥שֶׁת עֵשָֽׂו׃",
+        "VUL": "et hæc nomina filiorum ejus : Eliphaz filius Ada uxoris Esau : Rahuel quoque filius Basemath uxoris ejus.",
+        "LXX": "καὶ ταῦτα τὰ ὀνόματα τῶν υἱῶν Ἠσαύ· Ἐλιφάς, υἱὸς Ἀδὰ γυναικὸς Ἠσαύ, καὶ Ῥαγουήλ, υἱὸς Βασεμμὰθ γυναικὸς Ἠσαύ.",
+        "NAB": "These are the names of Esau's sons: Eliphaz, son of Esau's wife Adah; and Reuel, son of Esau's wife Basemath.",
+        "SYN": "Вот имена сынов Исава: Елифаз, сын Ады, жены Исавовой, и Рагуил, сын Васемафы, жены Исавовой.",
+        "NEO": "Voici les noms des fils d’Esaü : Eliphaz, fils d’Ada, femme d’Esaü ; Rahuel, fils de Basemath, femme d’Esaü. —",
+        "VAT_ES": "Los nombres de sus hijos son los siguientes: Elifaz, hijo de Adá, mujer de Esaú, y Reuel, hijo de Basmat, mujer de Esaú.",
+        "CEI": "Questi sono i nomi dei figli di Esaù: Elifaz, figlio di Ada, moglie di Esaù; Reuel, figlio di Basemat, moglie di Esaù."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יִּהְי֖וּ בְּנֵ֣י אֱלִיפָ֑ז תֵּימָ֣ן אוֹמָ֔ר צְפ֥וֹ וְ/גַעְתָּ֖ם וּ/קְנַֽז׃",
+        "VUL": "Fueruntque Eliphaz filii : Theman, Omar, Sepho, et Gatham, et Cenez.",
+        "LXX": "ἐγένοντο δὲ οἱ υἱοὶ Ἐλιφάς· Θαιμάν, Ὠμάν, Σωφάρ,Γοθὸμ καὶ Κενέζ.",
+        "NAB": "The sons of Eliphaz were Teman, Omar, Zepho, Gatam, and Kenaz.",
+        "SYN": "У Елифаза были сыновья: Феман, Омар, Цефо, Гафам и Кеназ.",
+        "NEO": "Les fils d’Eliphaz furent : Théman, Omar, Sépho, Gatham et Cénez.",
+        "VAT_ES": "Los hijos de Elifaz fueron: Temán, Omar, Sefó, Gaetam y Quenaz.",
+        "CEI": "I figli di Elifaz furono: Teman, Omar, Zefo, Gatam, Kenaz."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/תִמְנַ֣ע הָיְתָ֣ה פִילֶ֗גֶשׁ לֶֽ/אֱלִיפַז֙ בֶּן עֵשָׂ֔ו וַ/תֵּ֥לֶד לֶ/אֱלִיפַ֖ז אֶת עֲמָלֵ֑ק אֵ֕לֶּה בְּנֵ֥י עָדָ֖ה אֵ֥שֶׁת עֵשָֽׂו׃",
+        "VUL": "Erat autem Thamna concubina Eliphaz filii Esau : quæ peperit ei Amalech. Hi sunt filii Ada uxoris Esau.",
+        "LXX": "Θαμνὰ δὲ ἦν παλλακὴ Ἐλιφὰς τοῦ υἱοῦ Ἠσαύ, καὶ ἔτεκεν τῷ Ἐλιφὰς τὸν Ἀμαλήκ. οὗτοι οἱ υἱοὶ Ἀδὰ γυναικὸς Ἠσαύ.",
+        "NAB": "(Esau's son Eliphaz had a concubine Timna, and she bore Amalek to Eliphaz.) These are the descendants of Esau's wife Adah.",
+        "SYN": "Фамна же была наложница Елифаза, сына Исавова, и родила Елифазу Амалика. Вот сыновья Ады, жены Исавовой.",
+        "NEO": "Thamna fut concubine d’Eliphaz, fils d’Esaü, et elle enfanta Amalech à Eliphaz. Ce sont là les fils d’Ada, femme d’Esaü. —",
+        "VAT_ES": "Elifaz, el hijo de Esaú, también tuvo una esclava, Timná, que fue madre de Amalec. Estos son los descendientes de Adá, la mujer de Esaú.",
+        "CEI": "Elifaz, figlio di Esaù, aveva per concubina Timna, la quale ad Elifaz partorì Amalek. Questi sono i figli di Ada, moglie di Esaù."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨לֶּה֙ בְּנֵ֣י רְעוּאֵ֔ל נַ֥חַת וָ/זֶ֖רַח שַׁמָּ֣ה וּ/מִזָּ֑ה אֵ֣לֶּ֣ה הָי֔וּ בְּנֵ֥י בָשְׂמַ֖ת אֵ֥שֶׁת עֵשָֽׂו׃",
+        "VUL": "Filii autem Rahuel : Nahath et Zara, Samma et Meza : hi filii Basemath uxoris Esau.",
+        "LXX": "οὗτοι δὲ υἱοὶ Ῥαγουήλ· Νάχομ, Ζάρε, Σομὲ καὶ Μοζέ· οὗτοι ἦσαν υἱοὶ Μασεμμὰθ γυναικὸς Ἠσαύ.",
+        "NAB": "The sons of Reuel were Nahath, Zerah, Shammah, and Mizzah. These are the descendants of Esau's wife Basemath.",
+        "SYN": "И вот сыновья Рагуила: Нахаф и Зерах, Шамма и Миза. Это сыновья Васемафы, жены Исавовой.",
+        "NEO": "Voici les fils de Rahuel : Nahath, Zara, Samma et Méza. Ce sont là les fils de Basemath, femme d’Esaü. —",
+        "VAT_ES": "Los hijos de Reuel fueron: Nájat, Zéraj, Samá y Mizá. Estos son los descendientes de Basmat, la mujer de Esaú.",
+        "CEI": "Questi sono i figli di Reuel: Naat e Zerach, Samma e Mizza. Questi furono i figli di Basemat, moglie di Esaù."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/אֵ֣לֶּה הָי֗וּ בְּנֵ֨י אָהֳלִיבָמָ֧ה בַת עֲנָ֛ה בַּת צִבְע֖וֹן אֵ֣שֶׁת עֵשָׂ֑ו וַ/תֵּ֣לֶד לְ/עֵשָׂ֔ו אֶת יעיש יְע֥וּשׁ וְ/אֶת יַעְלָ֖ם וְ/אֶת קֹֽרַח׃",
+        "VUL": "Isti quoque erant filii Oolibama filiæ Anæ filiæ Sebeon, uxoris Esau, quos genuit ei, Jehus et Ihelon et Core.",
+        "LXX": "οὗτοι δὲ υἱοὶ Ἐλιβέμας θυγατρὸς Ἀνὰ τοῦ υἱοῦ Σεβεγών, γυναικὸς Ἠσαύ· ἔτεκεν δὲ τῷ Ἠσαὺ τὸν Ἰεὺς καὶ τὸν Ἰεγλὸμ καὶ τὸν Κόρε.",
+        "NAB": "The descendants of Esau's wife Oholibamah - granddaughter through Anah of Zibeon - whom she bore to Esau were Jeush, Jalam, and Korah.",
+        "SYN": "И сии были сыновья Оливемы, дочери Аны, сына Цивеонова, жены Исавовой: она родила Исаву Иеуса, Иеглома и Корея.",
+        "NEO": "Voici les fils d’Oolibama, fille d’Ana, fille de Sébéon, femme d’Esaü : elle enfanta à Esaü Jéhus, Ihélon et Coré.",
+        "VAT_ES": "Y los hijos de la otra esposa de Esaú, Oholibamá, hija de Aná, el hijo de Sibeón, fueron Ieús, Ialam y Coré.",
+        "CEI": "Questi furono i figli di Oolibama, moglie di Esaù, figlia di Ana, figlio di Zibeon; essa partorì a Esaù Ieus, Iaalam e Core."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אֵ֖לֶּה אַלּוּפֵ֣י בְנֵֽי עֵשָׂ֑ו בְּנֵ֤י אֱלִיפַז֙ בְּכ֣וֹר עֵשָׂ֔ו אַלּ֤וּף תֵּימָן֙ אַלּ֣וּף אוֹמָ֔ר אַלּ֥וּף צְפ֖וֹ אַלּ֥וּף קְנַֽז׃",
+        "VUL": "Hi duces filiorum Esau : filii Eliphaz primogeniti Esau : dux Theman, dux Omra, dux Sepho, dux Cenez,",
+        "LXX": "οὗτοι οἱ ἡγεμόνες υἱοῦ Ἠσαύ. υἱοὶ Ἐλιφὰς πρωτοτόκου Ἠσαύ· ἡγεμὼν Θαιμάν, ἡγεμὼν Ὠμάρ, ἡγεμὼν Σωφάρ, ἡγεμὼν Κενέζ,",
+        "NAB": "The following are the clans of Esau's descendants. The descendants of Eliphaz, Esau's first-born: the clans of Teman, Omar, Zepho, Kenaz,",
+        "SYN": "Вот старейшины сынов Исавовых. Сыновья Елифаза, первенца Исавова: старейшина Феман, старейшина Омар, старейшина Цефо, старейшина Кеназ,",
+        "NEO": "Voici les chefs des tribus issues des fils d’Esaü. Fils d’Eliphaz, premier-né d’Esaü : le chef Théman, le chef Omar, le chef Sépho, le chef Cénez,",
+        "VAT_ES": "Los clanes de los hijos de Esaú son los siguientes: Los hijos de Elifaz, el primogénito de Esaú, fueron los clanes de Temán, Omar, Sefó, Quenaz,",
+        "CEI": "Questi sono i capi dei figli di Esaù: i figli di Elifaz primogenito di Esaù: il capo di Teman, il capo di Omar, il capo di Zefo, il capo di Kenaz,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אַלּֽוּף קֹ֛רַח אַלּ֥וּף גַּעְתָּ֖ם אַלּ֣וּף עֲמָלֵ֑ק אֵ֣לֶּה אַלּוּפֵ֤י אֱלִיפַז֙ בְּ/אֶ֣רֶץ אֱד֔וֹם אֵ֖לֶּה בְּנֵ֥י עָדָֽה׃",
+        "VUL": "dux Core, dux Gathan, dux Amalech. Hi filii Eliphaz in terra Edom, et hi filii Ada.",
+        "LXX": "ἡγεμὼν Κόρε, ἡγεμὼν Γοθά, ἡγεμὼν Ἀμαλήκ· οὗτοι ἡγεμόνες Ἐλιφὰς ἐν γῇ Ἰδουμαίᾳ, οὗτοι υἱοὶ Ἄδας.",
+        "NAB": "Korah, Gatam, and Amalek. These are the clans of Eliphaz in the land of Edom; they are descended from Adah.",
+        "SYN": "старейшина Корей, старейшина Гафам, старейшина Амалик. Сии старейшины Елифазовы в земле Едома; сии сыновья Ады.",
+        "NEO": "le chef Coré, le chef Gatham, le chef Amalech. Ce sont là les chefs issus d’Eliphaz, au pays d’Edom ; ce sont là les fils d’Ada. —",
+        "VAT_ES": "Coré, Gaetam y Amalec. Estos son los clanes de Elifaz en el país de Edom, los que descienden de Adá.",
+        "CEI": "il capo di Core, il capo di Gatam, il capo di Amalek. Questi sono i capi di Elifaz nel paese di Edom: questi sono i figli di Ada."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/אֵ֗לֶּה בְּנֵ֤י רְעוּאֵל֙ בֶּן עֵשָׂ֔ו אַלּ֥וּף נַ֨חַת֙ אַלּ֣וּף זֶ֔רַח אַלּ֥וּף שַׁמָּ֖ה אַלּ֣וּף מִזָּ֑ה אֵ֣לֶּה אַלּוּפֵ֤י רְעוּאֵל֙ בְּ/אֶ֣רֶץ אֱד֔וֹם אֵ֕לֶּה בְּנֵ֥י בָשְׂמַ֖ת אֵ֥שֶׁת עֵשָֽׂו׃",
+        "VUL": "Hi quoque filii Rahuel filii Esau : dux Nahath, dux Zara, dux Samma, dux Meza : hi autem duces Rahuel in terra Edom : isti filii Basemath uxoris Esau.",
+        "LXX": "καὶ οὗτοι υἱοὶ Ῥαγουὴλ υἱοῦ Ἠσαύ· ἡγεμὼν Νάχοθ, ἡγεμὼν Ζάρε, ἡγεμὼν Μοζέ, ἡγεμὼν Σομέ· οὗτοι ἡγεμόνες Ῥαγουὴλ ἐν γῇ Ἐδώμ, οὗτοι υἱοὶ Μασεμμὰθ γυναικὸς Ἠσαύ.",
+        "NAB": "The descendants of Esau's son Reuel: the clans of Nahath, Zerah, Shammah, and Mizzah. These are the clans of Reuel in the land of Edom; they are descended from Esau's wife Basemath.",
+        "SYN": "Сии сыновья Рагуила, сына Исавова: старейшина Нахаф, старейшина Зерах, старейшина Шамма, старейшина Миза. Сии старейшины Рагуиловы в земле Едома; сии сыновья Васемафы, жены Исавовой.",
+        "NEO": "Fils de Rahuel, fils d’Esaü : le chef Nahath, le chef Zara, le chef Samma et le chef Méza. Ce sont là les chefs issus de Rahuel, au pays d’Edom ; ce sont là les fils de Basemath, femme d’Esaü. —",
+        "VAT_ES": "Los hijos de Reuel, hijo de Esaú, fueron los clanes de Nájat, Zéraj, Samá y Mizá. Estos son los clanes de Reuel en el país de Edom, los que descienden de Basmat.",
+        "CEI": "Questi i figli di Reuel, figlio di Esaù: il capo di Naat, il capo di Zerach, il capo di Samma, il capo di Mizza. Questi sono i capi di Reuel nel paese di Edom; questi sono i figli di Basemat, moglie di Esaù."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/אֵ֗לֶּה בְּנֵ֤י אָהֳלִֽיבָמָה֙ אֵ֣שֶׁת עֵשָׂ֔ו אַלּ֥וּף יְע֛וּשׁ אַלּ֥וּף יַעְלָ֖ם אַלּ֣וּף קֹ֑רַח אֵ֣לֶּה אַלּוּפֵ֞י אָֽהֳלִיבָמָ֛ה בַּת עֲנָ֖ה אֵ֥שֶׁת עֵשָֽׂו׃",
+        "VUL": "Hi autem filii Oolibama uxoris Esau : dux Jehus, dux Ihelon, dux Core : hi duces Oolibama filiæ Anæ uxoris Esau.",
+        "LXX": "οὗτοι δὲ υἱοὶ Ὀλιβέμας γυναικὸς Ἠσαύ· ἡγεμὼν Ἰεούλ, ἡγεμὼν Ἰεγλόμ, ἡγεμὼν Κόρε· οὗτοι ἡγεμόνες Ἐλιβέμας.",
+        "NAB": "The descendants of Esau's wife Oholibamah: the clans of Jeush, Jalam, and Korah. These are the clans of Esau's wife Oholibamah, daughter of Anah.",
+        "SYN": "Сии сыновья Оливемы, жены Исавовой: старейшина Иеус, старейшина Иеглом, старейшина Корей. Сии старейшины Оливемы, дочери Аны, жены Исавовой.",
+        "NEO": "Fils d’Oolibama, femme d’Esaü : le chef Jéhus, le chef Ihélon et le chef Coré. Ce sont là les chefs issus d’Oolibama, fille d’Ana et femme d’Esaü. —",
+        "VAT_ES": "Los hijos de Oholibamá, esposa de Esaú, fueron los clanes de Ieús, Ialam y Coré. Estos son los clanes de Oholibamá, hija de Aná, mujer de Esaú.",
+        "CEI": "Questi sono i figli di Oolibama, moglie di Esaù: il capo di Ieus, il capo di Iaalam, il capo di Core. Questi sono i capi di Oolibama, figlia di Ana, moglie di Esaù."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "אֵ֧לֶּה בְנֵי עֵשָׂ֛ו וְ/אֵ֥לֶּה אַלּוּפֵי/הֶ֖ם ה֥וּא אֱדֽוֹם׃",
+        "VUL": "Isti sunt filii Esau, et hi duces eorum : ipse est Edom.",
+        "LXX": "οὗτοι δὲ υἱοὶ Ἠσαύ, καὶ οὗτοι οἱ ἡγεμόνες αὐτῶν· οὗτοί εἰσιν οἱ ἡγεμόνες αὐτῶν, υἱοὶ Ἐδώμ.",
+        "NAB": "Such are the descendants of Esau (that is, Edom) according to their clans.",
+        "SYN": "Вот сыновья Исава, и вот старейшины их. Это Едом.",
+        "NEO": "Ce sont là les fils d’Esaü, et ce sont là leurs chefs ; c’est Edom.",
+        "VAT_ES": "Estos son los hijos de Esaú –es decir, de Edom– con sus respectivos clanes.",
+        "CEI": "Questi sono i figli di Esaù e questi i loro capi. Egli è Edom."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "אֵ֤לֶּה בְנֵֽי שֵׂעִיר֙ הַ/חֹרִ֔י יֹשְׁבֵ֖י הָ/אָ֑רֶץ לוֹטָ֥ן וְ/שׁוֹבָ֖ל וְ/צִבְע֥וֹן וַ/עֲנָֽה׃",
+        "VUL": "Isti sunt filii Seir Horræi, habitatores terræ : Lotan, et Sobal, et Sebeon, et Ana,",
+        "LXX": "Οὗτοι δὲ υἱοὶ Σηεὶρ τοῦ Χορραίου τοῦ κατοικοῦντος τὴν γῆν· Λωτάν, Σωβάλ, Σεβεγών, Ἀνὰ",
+        "NAB": "The following are the descendants of Seir the Horite, the original settlers in the land: Lotan, Shobal, Zibeon, Anah,",
+        "SYN": "Сии сыновья Сеира Хорреянина, жившие в земле той: Лотан, Шовал, Цивеон, Ана,",
+        "NEO": "Voici les fils de Séir, le Horréen, qui habitaient le pays : Lotan, Sobal, Sébéon, Ana,",
+        "VAT_ES": "Los hijos de Seír, el hurrita, que vivían en aquella región son los siguientes: Lotán, Sobal, Sibeón, Aná,",
+        "CEI": "Questi sono i figli di Seir l'Hurrita, che abitano il paese: Lotan, Sobal, Zibeon, Ana,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/דִשׁ֥וֹן וְ/אֵ֖צֶר וְ/דִישָׁ֑ן אֵ֣לֶּה אַלּוּפֵ֧י הַ/חֹרִ֛י בְּנֵ֥י שֵׂעִ֖יר בְּ/אֶ֥רֶץ אֱדֽוֹם׃",
+        "VUL": "et Dison, et Eser, et Disan : hi duces Horræi, filii Seir in terra Edom.",
+        "LXX": "καὶ Δησὼν καὶ Σάαρ καὶ Ῥεισών· οὗτοι οἱ ἡγεμόνες τοῦ Χορραίου τοῦ υἱοῦ Σηεὶρ ἐν τῇ γῇ Ἐδώμ.",
+        "NAB": "Dishon, Ezer, and Dishan; they are the Horite clans descended from Seir, in the land of Edom.",
+        "SYN": "Дишон, Эцер и Дишан. Сии старейшины Хорреев, сынов Сеира, в земле Едома.",
+        "NEO": "Dison, Eser et Disan. Ce sont là les chefs des Horréens, fils de Séir, au pays d’Edom. —",
+        "VAT_ES": "Disón, Eser y Disán. Estos son los clanes de los hurritas, hijos de Seír, en el país de Edom.",
+        "CEI": "Dison, Eser e Disan. Questi sono i capi degli Hurriti, figli di Seir, nel paese di Edom."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּהְי֥וּ בְנֵי לוֹטָ֖ן חֹרִ֣י וְ/הֵימָ֑ם וַ/אֲח֥וֹת לוֹטָ֖ן תִּמְנָֽע׃",
+        "VUL": "Facti sunt autem filii Lotan : Hori et Heman. Erat autem soror Lotan, Thamna.",
+        "LXX": "ἐγένοντο δὲ υἱοὶ Λωτὰν Χορρεὶ καὶ Αἱμάν· ἀδελφὴ δὲ Λωτὰν Θαμνά.",
+        "NAB": "Lotan's descendants were Hori and Hemam, and Lotan's sister was Timna.",
+        "SYN": "Сыновья Лотана были: Хори и Геман; а сестра у Лотана: Фамна.",
+        "NEO": "Les fils de Lotan furent Hori et Héman, et Thamma était sœur de Lotan. —",
+        "VAT_ES": "Los hijos de Lotán fueron Jorí y Hemam, y la hermana de Lotán fue Timná.",
+        "CEI": "I figli di Lotan furono Ori e Emam e la sorella di Lotan era Timna."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨לֶּה֙ בְּנֵ֣י שׁוֹבָ֔ל עַלְוָ֥ן וּ/מָנַ֖חַת וְ/עֵיבָ֑ל שְׁפ֖וֹ וְ/אוֹנָֽם׃",
+        "VUL": "Et isti filii Sobal : Alvan et Manahat et Ebal, et Sepho et Onam.",
+        "LXX": "οὗτοι δὲ υἱοὶ Σωβάλ· Γωλὼν καὶ Μαννάχαθ καὶ Γαιβήλ, Σὼφ καὶ Ὠμάν.",
+        "NAB": "Shobal's descendants were Alvan, Mahanath, Ebal, Shepho, and Onam.",
+        "SYN": "Сии сыновья Шовала: Алван, Манахаф, Эвал, Шефо и Онам.",
+        "NEO": "Voici les fils de Sobal : Alvan, Manahat, Ebal, Sépho et Onam. —",
+        "VAT_ES": "Los hijos de Sobal fueron Alván, Manájat, Ebal, Sefó y Onam.",
+        "CEI": "I figli di Sobal sono Alvan, Manacat, Ebal, Sefo e Onam."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/אֵ֥לֶּה בְנֵֽי צִבְע֖וֹן וְ/אַיָּ֣ה וַ/עֲנָ֑ה ה֣וּא עֲנָ֗ה אֲשֶׁ֨ר מָצָ֤א אֶת הַ/יֵּמִם֙ בַּ/מִּדְבָּ֔ר בִּ/רְעֹת֥/וֹ אֶת הַ/חֲמֹרִ֖ים לְ/צִבְע֥וֹן אָבִֽי/ו׃",
+        "VUL": "Et hi filii Sebeon : Aja et Ana. Iste est Ana qui invenit aquas calidas in solitudine, cum pasceret asinos Sebeon patris sui :",
+        "LXX": "καὶ οὗτοι υἱοὶ Σεβεγών· Ἀιὲ καὶ Ὠνάν· οὗτός ἐστιν ὁ Ὠνᾶς ὃς εὗρεν τὸν Ἰαμεὶν ἐν τῇ ἐρήμῳ, ὅτε ἔνεμεν τὰ ὑποζύγια Σεβεγὼν τοῦ πατρὸς αὐτοῦ.",
+        "NAB": "Zibeon's descendants were Aiah and Anah. (He is the Anah who found water in the desert while he was pasturing the asses of his father Zibeon.)",
+        "SYN": "Сии сыновья Цивеона: Аиа и Ана. Это тот Ана, который нашел теплые воды в пустыне, когда пас ослов Цивеона, отца своего.",
+        "NEO": "Voici les fils de Sébéon : Aja et Ana. C’est cet Ana qui trouva les sources chaudes dans le désert, en faisant paître les ânes de Sébéon, son père. —",
+        "VAT_ES": "Los hijos de Sibeón: Aiá y Aná. Este es el mismo Aná que encontró las aguas termales en el desierto, mientras apacentaba los rebaños de su padre Sibeón.",
+        "CEI": "I figli di Zibeon sono Aia e Ana; questo è l'Ana che trovò le sorgenti calde nel deserto, mentre pascolava gli asini del padre Zibeon."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/אֵ֥לֶּה בְנֵֽי עֲנָ֖ה דִּשֹׁ֑ן וְ/אָהֳלִיבָמָ֖ה בַּת עֲנָֽה׃",
+        "VUL": "habuitque filium Dison, et filiam Oolibama.",
+        "LXX": "οὗτοι δὲ υἱοὶ Ἀνά· Δησὼν καὶ Ὀλιβεμὰ θυγάτηρ Ἀνά.",
+        "NAB": "The descendants of Anah were Dishon and Oholibamah, daughter of Anah.",
+        "SYN": "Сии дети Аны: Дишон и Оливема, дочь Аны.",
+        "NEO": "Voici les enfants d’Ana : Dison et Oolibama, fille d’Ana. —",
+        "VAT_ES": "Los hijos de Aná fueron Disón y Oholibamá, hija de Aná.",
+        "CEI": "I figli di Ana sono Dison e Oolibama, figlia di Ana."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/אֵ֖לֶּה בְּנֵ֣י דִישָׁ֑ן חֶמְדָּ֥ן וְ/אֶשְׁבָּ֖ן וְ/יִתְרָ֥ן וּ/כְרָֽן׃",
+        "VUL": "Et isti filii Dison : Hamdan, et Eseban, et Jethram, et Charan.",
+        "LXX": "οὗτοι δὲ υἱοὶ Δησών· Ἁμαδὰ καὶ Ἀσβὰν καὶ Ἰεθρὰν καὶ Χαρράν.",
+        "NAB": "The descendants of Dishon were Hemdan, Eshban, Ithran, and Cheran.",
+        "SYN": "Сии сыновья Дишона: Хемдан, Эшбан, Ифран и Херан.",
+        "NEO": "Voici les fils de Dison : Hamdan, Eséban, Jéthram et Charan. —",
+        "VAT_ES": "Los hijos de Disón fueron Jemdam, Esbán, Itrán y Querán.",
+        "CEI": "I figli di Dison sono Emdam, Esban, Itran e Cheran."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "אֵ֖לֶּה בְּנֵי אֵ֑צֶר בִּלְהָ֥ן וְ/זַעֲוָ֖ן וַ/עֲקָֽן׃",
+        "VUL": "Hi quoque filii Eser : Balaan, et Zavan, et Acan.",
+        "LXX": "οὗτοι δὲ υἱοὶ Σάαρ· Βαλαὰν καὶ Ζουκὰμ καὶ Ἰωυκὰμ καὶ Οὐκάν.",
+        "NAB": "The descendants of Ezer were Bilhan, Zaavan, and Akan.",
+        "SYN": "Сии сыновья Эцера: Билган, Зааван, [Укам] и Акан.",
+        "NEO": "Voici les fils d’Eser : Balan, Zavan et Acan. —",
+        "VAT_ES": "Los hijos de Eser fueron Bilhán, Zaaván y Acán.",
+        "CEI": "I figli di Eser sono Bilan, Zaavan e Akan."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "אֵ֥לֶּה בְנֵֽי דִישָׁ֖ן ע֥וּץ וַ/אֲרָֽן׃",
+        "VUL": "Habuit autem filios Disan : Hus et Aram.",
+        "LXX": "οὗτοι δὲ υἱοὶ Ῥεισών· Ὢς καὶ Ἀράμ.",
+        "NAB": "The descendants of Dishan were Uz and Aran.",
+        "SYN": "Сии сыновья Дишана: Уц и Аран.",
+        "NEO": "Voici les fils de Disan : Hus et Aram.",
+        "VAT_ES": "Los hijos de Disán fueron Us y Arán.",
+        "CEI": "I figli di Disan sono Uz e Aran."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "אֵ֖לֶּה אַלּוּפֵ֣י הַ/חֹרִ֑י אַלּ֤וּף לוֹטָן֙ אַלּ֣וּף שׁוֹבָ֔ל אַלּ֥וּף צִבְע֖וֹן אַלּ֥וּף עֲנָֽה׃",
+        "VUL": "Hi duces Horræorum : dux Lotan, dux Sobal, dux Sebeon, dux Ana,",
+        "LXX": "οὗτοι ἡγεμόνες Χορρεί· ἡγεμὼν Λωτάν, ἡγεμὼν Σωβάλ, ἡγεμὼν Σεβεγών, ἡγεμὼν Ἀνά,",
+        "NAB": "These are the Horite clans: the clans of Lotan, Shobal, Zibeon, Anah,",
+        "SYN": "Сии старейшины Хорреев: старейшина Лотан, старейшина Шовал, старейшина Цивеон, старейшина Ана,",
+        "NEO": "Voici les chefs des Horréens : le chef Lotan, le chef Sobal, le chef Sébéon, le chef Ana,",
+        "VAT_ES": "Los clanes de los hurritas fueron Lotán, Sobal, Sibeón, Aná,",
+        "CEI": "Questi sono i capi degli Hurriti: il capo di Lotan, il capo di Sobal, il capo di Zibeon, il capo di Ana,"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "אַלּ֥וּף דִּשֹׁ֛ן אַלּ֥וּף אֵ֖צֶר אַלּ֣וּף דִּישָׁ֑ן אֵ֣לֶּה אַלּוּפֵ֧י הַ/חֹרִ֛י לְ/אַלֻּפֵי/הֶ֖ם בְּ/אֶ֥רֶץ שֵׂעִֽיר׃",
+        "VUL": "dux Dison, dux Eser, dux Disan : isti duces Horræorum qui imperaverunt in terra Seir.",
+        "LXX": "ἡγεμὼν Δησών, ἡγεμὼν Σάαρ, ἡγεμὼν Ῥεισών· οὗτοι ἡγεμόνες Χορρεὶ ἐν ταῖς ἡγεμονίαις αὐτῶν ἐν γῇ Ἐδώμ.",
+        "NAB": "Dishon, Ezer, and Dishan; they were the clans of the Horites, clan by clan, in the land of Seir.",
+        "SYN": "старейшина Дишон, старейшина Эцер, старейшина Дишан. Вот старейшины Хорреев, по старшинствам их в земле Сеир.",
+        "NEO": "le chef Dison, le chef Eser, le chef Disan. Ce sont là les chefs des Horréens, chacun de leurs chefs au pays de Séir.",
+        "VAT_ES": "Disón, Eser y Disán. Estos son, uno por uno los clanes de los hurritas en el territorio de Seír.",
+        "CEI": "il capo di Dison, il capo di Eser, il capo di Disan. Questi sono i capi degli Hurriti, secondo le loro tribù nel paese di Seir."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨לֶּה֙ הַ/מְּלָכִ֔ים אֲשֶׁ֥ר מָלְכ֖וּ בְּ/אֶ֣רֶץ אֱד֑וֹם לִ/פְנֵ֥י מְלָךְ מֶ֖לֶךְ לִ/בְנֵ֥י יִשְׂרָאֵֽל׃",
+        "VUL": "Reges autem qui regnaverunt in terra Edom antequam haberent regem filii Israël, fuerunt hi :",
+        "LXX": "Καὶ οὗτοι οἱ βασιλεῖς οἱ βασιλεύσαντες ἐν Ἐδὼμ πρὸ τοῦ βασιλεῦσαι βασιλέα ἐν Ἰερουσαλήμ.",
+        "NAB": "The following are the kings who reigned in the land of Edom before any king reigned over the Israelites.",
+        "SYN": "Вот цари, царствовавшие в земле Едома, прежде царствования царей у сынов Израилевых:",
+        "NEO": "Voici les rois qui ont régné dans le pays d’Edom, avant qu’un roi régnât sur les enfants d’Israël :",
+        "VAT_ES": "Los reyes que reinaron en el país de Edom antes que ningún rey reinara sobre los israelitas son los siguientes:",
+        "CEI": "Questi sono i re che regnarono nel paese di Edom, prima che regnasse un re degli Israeliti."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יִּמְלֹ֣ךְ בֶּ/אֱד֔וֹם בֶּ֖לַע בֶּן בְּע֑וֹר וְ/שֵׁ֥ם עִיר֖/וֹ דִּנְהָֽבָה׃",
+        "VUL": "Bela filius Beor, nomenque urbis ejus Denaba.",
+        "LXX": "καὶ ἐβασίλευσεν ἐν Ἐδὼμ Βάλακ υἱὸς τοῦ Βεώρ, καὶ ὄνομα τῇ πόλει αὐτοῦ Δεννάβα.",
+        "NAB": "Bela, son of Beor, became king in Edom; the name of his city was Dinhabah.",
+        "SYN": "царствовал в Едоме Бела, сын Веоров, а имя городу его Дингава.",
+        "NEO": "Béla, fils de Béor, régna en Edom, et le nom de sa ville était Denaba. —",
+        "VAT_ES": "Belá, hijo de Beor, reinó en Edom, y el nombre de su ciudad era Dinhabá.",
+        "CEI": "Regnò dunque in Edom Bela, figlio di Beor, e la sua città si chiama Dinaba."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יָּ֖מָת בָּ֑לַע וַ/יִּמְלֹ֣ךְ תַּחְתָּ֔י/ו יוֹבָ֥ב בֶּן זֶ֖רַח מִ/בָּצְרָֽה׃",
+        "VUL": "Mortuus est autem Bela, et regnavit pro eo Jobab filius Zaræ de Bosra.",
+        "LXX": "ἀπέθανεν δὲ Βάλακ, καὶ ἐβασίλευσεν ἀντ’ αὐτοῦ Ἰωβὰδ υἱὸς Ζάρα ἐκ Βοσόρρας.",
+        "NAB": "When Bela died, Jobab, son of Zerah, from Bozrah, succeeded him as king.",
+        "SYN": "И умер Бела, и воцарился по нем Иовав, сын Зераха, из Восоры.",
+        "NEO": "Béla mourut, et à sa place régna Jobab, fils de Zara, de Bosra. —",
+        "VAT_ES": "Cuando murió Belá, lo sucedió Iobab, hijo de Zéraj, de Bosrá.",
+        "CEI": "Poi morì Bela e regnò al suo posto Iobab, figlio di Zerach, da Bosra."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יָּ֖מָת יוֹבָ֑ב וַ/יִּמְלֹ֣ךְ תַּחְתָּ֔י/ו חֻשָׁ֖ם מֵ/אֶ֥רֶץ הַ/תֵּימָנִֽי׃",
+        "VUL": "Cumque mortuus esset Jobab, regnavit pro eo Husam de terra Themanorum.",
+        "LXX": "ἀπέθανεν δὲ Ἰωβάβ, καὶ ἐβασίλευσεν ἀντ’ αὐτοῦ Ἁσὸμ ἐκ γῆς Θεμανῶν.",
+        "NAB": "When Jobab died, Husham, from the land of the Temanites, succeeded him as king. He defeated the Midianites in the country of Moab; the name of his city was Avith.",
+        "SYN": "Умер Иовав, и воцарился по нем Хушам, из земли Феманитян.",
+        "NEO": "Jobab mourut, et à sa place régna Husam, du pays des Thémanites. —",
+        "VAT_ES": "Cuando murió Iobab, lo sucedió Jusam, del país de los temanitas.",
+        "CEI": "Poi morì Iobab e regnò al suo posto Usam, del territorio dei Temaniti."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יָּ֖מָת חֻשָׁ֑ם וַ/יִּמְלֹ֨ךְ תַּחְתָּ֜י/ו הֲדַ֣ד בֶּן בְּדַ֗ד הַ/מַּכֶּ֤ה אֶת מִדְיָן֙ בִּ/שְׂדֵ֣ה מוֹאָ֔ב וְ/שֵׁ֥ם עִיר֖/וֹ עֲוִֽית׃",
+        "VUL": "Hoc quoque mortuo, regnavit pro eo Adad filius Badad, qui percussit Madian in regione Moab : et nomen urbis ejus Avith.",
+        "LXX": "ἀπέθανεν δὲ Ἁσόμ, καὶ ἐβασίλευσεν ἀντ’ αὐτοῦ Ἁδὰδ υἱὸς Βαράδ, ὁ ἐκκόψας Μαδιὰμ ἐν τῷ πεδίῳ Μωάβ· καὶ ὄνομα τῇ πόλει αὐτοῦ Γεθθάιμ.",
+        "NAB": "When Husham died, Hadad, son of Bedad, succeeded him as king.",
+        "SYN": "И умер Хушам, и воцарился по нем Гадад, сын Бедадов, который поразил Мадианитян на поле Моава; имя городу его Авиф.",
+        "NEO": "Husam mourut, et à sa place régna Adad, fils de Badad, qui défit Madian dans les champs de Moab ; le nom de sa ville était Avith. —",
+        "VAT_ES": "Cuando murió Jusam, lo sucedió Hadad, hijo de Bedad, el que derrotó a Madián en el campo de Moab; el nombre de su ciudad era Avit.",
+        "CEI": "Poi morì Usam e regnò al suo posto Adad, figlio di Bedad, colui che vinse i Madianiti nelle steppe di Moab; la sua città si chiama Avit."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יָּ֖מָת הֲדָ֑ד וַ/יִּמְלֹ֣ךְ תַּחְתָּ֔י/ו שַׂמְלָ֖ה מִ/מַּשְׂרֵקָֽה׃",
+        "VUL": "Cumque mortuus esset Adad, regnavit pro eo Semla de Masreca.",
+        "LXX": "ἀπέθανεν δὲ Ἁδάδ, καὶ ἐβασίλευσεν ἀντ’ αὐτοῦ Σαλαμὰ ἐκ Μασέκκας.",
+        "NAB": "When Hadad died, Samlah, from Masrekah, succeeded him as king.",
+        "SYN": "И умер Гадад, и воцарился по нем Самла из Масреки.",
+        "NEO": "Hadad mourut, et à sa place régna Semla, de Masréca. —",
+        "VAT_ES": "Cuando murió Hadad, lo sucedió Samlá, de Masrecá.",
+        "CEI": "Poi morì Adad e regnò al suo posto Samla da Masreka."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/יָּ֖מָת שַׂמְלָ֑ה וַ/יִּמְלֹ֣ךְ תַּחְתָּ֔י/ו שָׁא֖וּל מֵ/רְחֹב֥וֹת הַ/נָּהָֽר׃",
+        "VUL": "Hoc quoque mortuo regnavit pro eo Saul de fluvio Rohoboth.",
+        "LXX": "ἀπέθανεν δὲ Σαλαμά, καὶ ἐβασίλευσεν ἀντ’ αὐτοῦ Σαοὺλ ἐκ Ῥοωβὼθ τῆς παρὰ ποταμόν.",
+        "NAB": "When Samlah died, Shaul, from Rehoboth-on-the-River, succeeded him as king.",
+        "SYN": "И умер Самла, и воцарился по нем Саул из Реховофа, что при реке.",
+        "NEO": "Semla mourut, et à sa place régna Saül, de Rohoboth sur le fleuve. —",
+        "VAT_ES": "Cuando murió Samlá, lo sucedió Saúl, de Rejobot del Río.",
+        "CEI": "Poi morì Samla e regnò al suo posto Saul da Recobot-Naar."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יָּ֖מָת שָׁא֑וּל וַ/יִּמְלֹ֣ךְ תַּחְתָּ֔י/ו בַּ֥עַל חָנָ֖ן בֶּן עַכְבּֽוֹר׃",
+        "VUL": "Cumque et hic obiisset, successit in regnum Balanan filius Achobor.",
+        "LXX": "ἀπέθανεν δὲ Σαούλ, καὶ ἐβασίλευσεν ἀντ’ αὐτοῦ Βαλαεννὼν υἱὸς Ἀχοβώρ.",
+        "NAB": "When Shaul died, Baal-hanan, son of Achbor, succeeded him as king.",
+        "SYN": "И умер Саул, и воцарился по нем Баал-Ханан, сын Ахбора.",
+        "NEO": "Saül mourut, et à sa place régna Balanan, fils d’Achor. —",
+        "VAT_ES": "Cuando murió Saúl, lo sucedió Baal Janán, hijo de Acbor.",
+        "CEI": "Poi morì Saul e regnò al suo posto Baal-Canan, figlio di Acbor."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַ/יָּמָת֮ בַּ֣עַל חָנָ֣ן בֶּן עַכְבּוֹר֒ וַ/יִּמְלֹ֤ךְ תַּחְתָּי/ו֙ הֲדַ֔ר וְ/שֵׁ֥ם עִיר֖/וֹ פָּ֑עוּ וְ/שֵׁ֨ם אִשְׁתּ֤/וֹ מְהֵֽיטַבְאֵל֙ בַּת מַטְרֵ֔ד בַּ֖ת מֵ֥י זָהָֽב׃",
+        "VUL": "Isto quoque mortuo regnavit pro eo Adar, nomenque urbis ejus Phau : et appellabatur uxor ejus Meetabel, filia Matred filiæ Mezaab.",
+        "LXX": "ἀπέθανεν δὲ Βαλαεννὼν υἱὸς Ἀχοβώρ, καὶ ἐβασίλευσεν ἀντ’ αὐτοῦ Ἁρὰθ υἱὸς Βαράθ· καὶ ὄνομα τῇ πόλει αὐτοῦ Φόγωρ· ὄνομα δὲ τῇ γυναικὶ αὐτοῦ Μετεβεήλ, θυγάτηρ Ματραεὶθ υἱοῦ Μεζοόβ.",
+        "NAB": "When Baal-hanan died, Hadar succeeded him as king; the name of his city was Pau. (His wife's name was Mehetabel; she was the daughter of Matred, son of Mezahab.)",
+        "SYN": "И умер Баал-Ханан, сын Ахбора, и воцарился по нем Гадар [сын Варадов]; имя городу его Пау; имя жене его Мегетавеель, дочь Матреды, сына Мезагава.",
+        "NEO": "Balanan, fils d’Achor, mourut, et à sa place régna Hadar ; le nom de sa ville était Phaü, et le nom de sa femme Méétabel, fille de Matred, fille de Mézaab.",
+        "VAT_ES": "Cuando murió Baal Janán, hijo de Acbor, lo sucedió Hadad; el nombre de su ciudad era Pau, y el nombre de su mujer, Mehetabel, hija de Matred, que a su vez era hija de Mezahab.",
+        "CEI": "Poi morì Baal-Canan, figlio di Acbor, e regnò al suo posto Adar: la sua città si chiama Pau e la moglie si chiamava Meetabel, figlia di Matred, da Me-Zaab."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וְ֠/אֵלֶּה שְׁמ֞וֹת אַלּוּפֵ֤י עֵשָׂו֙ לְ/מִשְׁפְּחֹתָ֔/ם לִ/מְקֹמֹתָ֖/ם בִּ/שְׁמֹתָ֑/ם אַלּ֥וּף תִּמְנָ֛ע אַלּ֥וּף עַֽלְוָ֖ה אַלּ֥וּף יְתֵֽת׃",
+        "VUL": "Hæc ergo nomina ducum Esau in cognationibus, et locis, et vocabulis suis : dux Thamna, dux Alva, dux Jetheth,",
+        "LXX": "ταῦτα τὰ ὀνόματα τῶν ἡγεμόνων Ἠσαὺ ἐν ταῖς φυλαῖς αὐτῶν κατὰ τόπον αὐτῶν, ἐν ταῖς χώραις αὐτῶν καὶ ἐν τοῖς ἔθνεσιν αὐτῶν · ἡγεμὼν Θαμνά, ἡγεμὼν Γωλά, ἡγεμὼν Ἰεβέρ,",
+        "NAB": "The following are the names of the clans of Esau individually according to their subdivisions and localities: the clans of Timna, Alvah, Jetheth,",
+        "SYN": "Сии имена старейшин Исавовых, по племенам их, по местам их, по именам их, [по народам их]: старейшина Фимна, старейшина Алва, старейшина Иетеф,",
+        "NEO": "Voici les noms des chefs issus d’Esaü, selon leurs tribus, leurs territoires et d’après leurs noms : le chef Thamma, le chef Alva, le chef Jétheth,",
+        "VAT_ES": "Los clanes de Esaú –cada uno con sus familias, sus localidades y sus nombres– son los siguientes: Timná, Alvá, Iétet.",
+        "CEI": "Questi sono i nomi dei capi di Esaù, secondo le loro famiglie, le loro località, con i loro nomi: il capo di Timna, il capo di Alva, il capo di Ietet,"
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "אַלּ֧וּף אָהֳלִיבָמָ֛ה אַלּ֥וּף אֵלָ֖ה אַלּ֥וּף פִּינֹֽן׃",
+        "VUL": "dux Oolibama, dux Ela, dux Phinon,",
+        "LXX": "ἡγεμὼν Ἐλιβεμᾶς, ἡγεμὼν Ἠλᾶς, ἡγεμὼν Φινές,",
+        "NAB": "Oholibamah, Elah, Pinon,",
+        "SYN": "старейшина Оливема, старейшина Эла, старейшина Пинон,",
+        "NEO": "le chef Oolibama, le chef Ela, le chef Phinon,",
+        "VAT_ES": "Oholibamá, Elá, Pinón",
+        "CEI": "il capo di Oolibama, il capo di Ela, il capo di Pinon,"
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "אַלּ֥וּף קְנַ֛ז אַלּ֥וּף תֵּימָ֖ן אַלּ֥וּף מִבְצָֽר׃",
+        "VUL": "dux Cenez, dux Theman, dux Mabsar,",
+        "LXX": "ἡγεμὼν Κενέζ, ἡγεμὼν Θαιμάν, ἡγεμὼν Μαζάρ,",
+        "NAB": "Kenaz, Teman, Mibzar,",
+        "SYN": "старейшина Кеназ, старейшина Феман, старейшина Мивцар,",
+        "NEO": "le chef Cénez, le chef Théman, le chef Mabsar,",
+        "VAT_ES": "Quenaz, Temán, Mibsar,",
+        "CEI": "il capo di Kenan, il capo di Teman, il capo di Mibsar,"
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "אַלּ֥וּף מַגְדִּיאֵ֖ל אַלּ֣וּף עִירָ֑ם אֵ֣לֶּה אַלּוּפֵ֣י אֱד֗וֹם לְ/מֹֽשְׁבֹתָ/ם֙ בְּ/אֶ֣רֶץ אֲחֻזָּתָ֔/ם ה֥וּא עֵשָׂ֖ו אֲבִ֥י אֱדֽוֹם׃",
+        "VUL": "dux Magdiel, dux Hiram : hi duces Edom habitantes in terra imperii sui, ipse est Esau pater Idumæorum.",
+        "LXX": "ἡγεμὼν Μετοδιήλ, ἡγεμὼν Ζαφωεί· οὗτοι ἡγεμόνες Ἐδὼμ ἐν ταῖς κατῳκοδομημέναις ἐν τῇ γῇ τῆς κτήσεως αὐτῶν. οὗτος Ἠσαὺ πατὴρ Ἐδώμ.",
+        "NAB": "Magdiel, and Iram. These are the clans of the Edomites, according to their settlements in their territorial holdings. (Esau was the father of the Edomites.)",
+        "SYN": "старейшина Магдиил, старейшина Ирам. Вот старейшины Идумейские, по их селениям, в земле обладания их. Вот Исав, отец Идумеев.",
+        "NEO": "le chef Magdiel, le chef Hiram. Ce sont là les chefs d’Edom, selon leurs demeures dans le pays qu’ils occupent. C’est là Esaü, père d’Edom.",
+        "VAT_ES": "Magdiel e Iram. Estos son los clanes de Edom que residen en sus propios territorios. Esaú es el padre de Edom.",
+        "CEI": "il capo di Magdiel, il capo di Iram. Questi sono i capi di Edom secondo le loro sedi nel territorio di loro proprietà. È appunto questo Esaù il padre degli Idumei."
+      }
+    }
+  }
+}

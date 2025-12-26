@@ -1,0 +1,497 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IERE_017",
+  "book_key": "IERE",
+  "sequence": 17,
+  "chapter_in": {
+    "MT": 17,
+    "VUL": 17,
+    "LXX": 17
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "חַטַּ֣את יְהוּדָ֗ה כְּתוּבָ֛ה בְּ/עֵ֥ט בַּרְזֶ֖ל בְּ/צִפֹּ֣רֶן שָׁמִ֑יר חֲרוּשָׁה֙ עַל ל֣וּחַ לִבָּ֔/ם וּ/לְ/קַרְנ֖וֹת מִזְבְּחוֹתֵי/כֶֽם׃",
+        "VUL": "[Peccatum Juda scriptum est stylo ferreo/ in ungue adamantino,/ exaratum super latitudinem cordis eorum,/ et in cornibus ararum eorum./",
+        "SYN": "Грех Иуды написан железным резцом, алмазным острием начертан на скрижали сердца их и на рогах жертвенников их.",
+        "NEO": "Le péché de Juda est écrit avec un stylet de fer, avec une pointe de diamant, il est gravé sur la table de leurs cœurs, et aux cornes de vos autels.",
+        "NAB": "The sin of Judah is written with an iron stylus, Engraved with a diamond point upon the tablets of their hearts.(And the horns of their altars,",
+        "VAT_ES": "El pecado de Judá está escrito con un buril de hierro, está grabado con punta de diamante sobre la tabla de su corazón y sobre los cuernos de sus altares,",
+        "CEI": "Il peccato di Giuda è scritto con uno stilo di ferro, con una punta di diamante è inciso sulla tavola del loro cuore e sugli angoli dei loro altari,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כִּ/זְכֹּ֤ר בְּנֵי/הֶם֙ מִזְבְּחוֹתָ֔/ם וַ/אֲשֵׁרֵי/הֶ֖ם עַל עֵ֣ץ רַֽעֲנָ֑ן עַ֖ל גְּבָע֥וֹת הַ/גְּבֹהֽוֹת׃",
+        "VUL": "Cum recordati fuerint filii eorum ararum suarum,/ et lucorum suorum,/ lignorumque frondentium,/ in montibus excelsis,/",
+        "SYN": "Как о сыновьях своих, воспоминают они о жертвенниках своих и дубравах своих у зеленых дерев, на высоких холмах.",
+        "NEO": "Comme ils se souviennent de leurs enfants, ainsi se souviennent-ils de leurs autels et de leurs aschérahs, près des arbres verts, sur les collines élevées.",
+        "NAB": "when their sons remember their altars and their sacred poles, beside the green trees, on the high hills,",
+        "VAT_ES": "como testimonio contra ellos. Sus altares y sus postes sagrados están junto a cada árbol frondoso, sobre las colinas elevadas,",
+        "CEI": "come per ricordare ai loro figli i loro altari e i loro pali sacri presso gli alberi verdi, sui colli elevati,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הֲרָרִ/י֙ בַּ/שָּׂדֶ֔ה חֵילְ/ךָ֥ כָל אוֹצְרוֹתֶ֖י/ךָ לָ/בַ֣ז אֶתֵּ֑ן בָּמֹתֶ֕י/ךָ בְּ/חַטָּ֖את בְּ/כָל גְּבוּלֶֽי/ךָ׃",
+        "VUL": "sacrificantes in agro :/ fortitudinem tuam, et omnes thesauros tuos in direptionem dabo ;/ excelsa tua propter peccata in universis finibus tuis./",
+        "SYN": "Гору Мою в поле, имущество твое и все сокровища твои отдам на расхищение, и все высоты твои - за грехи во всех пределах твоих.",
+        "NEO": "O ma montagne qui es dans la plaine, je livrerai au pillage tes biens, tous tes trésors, tes hauts lieux, à cause de tes péchés sur tout ton territoire.",
+        "NAB": "the peaks in the highland.) Your wealth and all your treasures I will give as spoil. In recompense for all your sins throughout your borders,",
+        "VAT_ES": "en las montañas y en campo abierto. Tu riqueza, todos tus tesoros los entregaré como botín, gratuitamente, por todos tus pecados, en todo tu territorio.",
+        "CEI": "sui monti e in aperta campagna. \"I tuoi averi e tutti i tuoi tesori li abbandonerò al saccheggio, a motivo di tutti i peccati che hai commessi in tutti i tuoi territori."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/שָׁמַטְתָּ֗ה וּ/בְ/ךָ֙ מִ/נַּחֲלָֽתְ/ךָ֙ אֲשֶׁ֣ר נָתַ֣תִּי לָ֔/ךְ וְ/הַעֲבַדְתִּ֨י/ךָ֙ אֶת אֹ֣יְבֶ֔י/ךָ בָּ/אָ֖רֶץ אֲשֶׁ֣ר לֹֽא יָדָ֑עְתָּ כִּֽי אֵ֛שׁ קְדַחְתֶּ֥ם בְּ/אַפִּ֖/י עַד עוֹלָ֥ם תּוּקָֽד׃",
+        "VUL": "Et relinqueris sola ab hæreditate tua, quam dedi tibi,/ et servire te faciam inimicis tuis in terra quam ignoras :/ quoniam ignem succendisti in furore meo :/ usque in æternum ardebit.]",
+        "SYN": "И ты чрез себя лишишься наследия твоего, которое Я дал тебе, и отдам тебя в рабство врагам твоим, в землю, которой ты не знаешь, потому что вы воспламенили огонь гнева Моего; он будет гореть вовеки.",
+        "NEO": "Tu laisseras en friche, et par ta faute, ton héritage que je t’avais donné ; je te ferai servir tes ennemis, dans un pays que tu ne connais pas ; car vous avez allumé le feu de ma colère, et il brûle pour jamais.",
+        "NAB": "You will relinquish your hold on your heritage which I have given you. I will enslave you to your enemies in a land that you know not: For a fire has been kindled by my wrath that will burn forever.",
+        "VAT_ES": "Tendrás que desprenderte de tu herencia, la que yo te había dado. haré que sirvas a tus enemigos en un país que no conocías, porque el fuego de mi ira que ustedes encendieron arderá para siempre.",
+        "CEI": "Tu dovrai ritirare la mano dall'eredità che ti avevo data; ti farò schiavo dei tuoi nemici in un paese che non conosci, perché avete acceso il fuoco della mia ira, che arderà sempre\". Così dice il Signore:"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כֹּ֣ה אָמַ֣ר יְהוָ֗ה אָר֤וּר הַ/גֶּ֨בֶר֙ אֲשֶׁ֣ר יִבְטַ֣ח בָּֽ/אָדָ֔ם וְ/שָׂ֥ם בָּשָׂ֖ר זְרֹע֑/וֹ וּ/מִן יְהוָ֖ה יָס֥וּר לִבּֽ/וֹ׃",
+        "LXX": "Ἐπικατάρατος ὁ ἄνθρωπος ὃς τὴν ἐλπίδα ἔχει ἐπ’ ἄνθρωπον, καὶ στηρίσει σάρκα βραχίονος αὐτοῦ ἐπ’ αὐτόν, καὶ ἀπὸ Κυρίου ἀποστῇ ἡ καρδία αὐτοῦ·",
+        "VUL": "[Hæc dicit Dominus :/ Maledictus homo qui confidit in homine,/ et ponit carnem brachium suum,/ et a Domino recedit cor ejus./",
+        "SYN": "Так говорит Господь: проклят человек, который надеется на человека и плоть делает своею опорою, и которого сердце удаляется от Господа.",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Maudit soit l’homme qui se confie en l’homme, qui fait de la chair son bras, et dont le cœur se retire de \\+w Yahweh|strong=\"H3068\"\\+w** !",
+        "NAB": "Thus says the LORD: Cursed is the man who trusts in human beings, who seeks his strength in flesh, whose heart turns away from the LORD.",
+        "VAT_ES": "Así habla el Señor: &iexcl;Maldito el hombre que confía en el hombre y busca su apoyo en la carne, mientras su corazón se aparta del Señor!",
+        "CEI": "\"Maledetto l'uomo che confida nell'uomo, che pone nella carne il suo sostegno e il cui cuore si allontana dal Signore."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֙ כְּ/עַרְעָ֣ר בָּֽ/עֲרָבָ֔ה וְ/לֹ֥א יִרְאֶ֖ה כִּי יָב֣וֹא ט֑וֹב וְ/שָׁכַ֤ן חֲרֵרִים֙ בַּ/מִּדְבָּ֔ר אֶ֥רֶץ מְלֵחָ֖ה וְ/לֹ֥א תֵשֵֽׁב׃",
+        "LXX": "καὶ ἔσται ὡς ἡ ἀγριομυρίκη ἡ ἐν τῇ ἐρήμῳ, οὐκ ὄψεται ὅταν ἔλθῃ τὰ ἀγαθά, καὶ κατασκηνώσει ἐν ἁλίμοις καὶ ἐν ἐρήμῳ, ἐν γῇ ἁλμυρᾷ ἥτις οὐ κατοικεῖται.",
+        "VUL": "Erit enim quasi myricæ in deserto,/ et non videbit cum venerit bonum :/ sed habitabit in siccitate in deserto,/ in terra salsuginis et inhabitabili./",
+        "SYN": "Он будет как вереск в пустыне и не увидит, когда придет доброе, и поселится в местах знойных в степи, на земле бесплодной, необитаемой.",
+        "NEO": "Il est comme une bruyère dans la lande ; il ne jouit pas quand le bonheur arrive ; il occupera les lieux brûlés au désert, une terre salée où personne n’habite.",
+        "NAB": "He is like a barren bush in the desert that enjoys no change of season, But stands in a lava waste, a salt and empty earth.",
+        "VAT_ES": "El es como un matorral en la estepa que no ve llegar la felicidad; habita en la aridez del desierto, en una tierra salobre e inhóspita.",
+        "CEI": "Egli sarà come un tamerisco nella steppa, quando viene il bene non lo vede; dimorerà in luoghi aridi nel deserto, in una terra di salsedine, dove nessuno può vivere."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "בָּר֣וּךְ הַ/גֶּ֔בֶר אֲשֶׁ֥ר יִבְטַ֖ח בַּֽ/יהוָ֑ה וְ/הָיָ֥ה יְהוָ֖ה מִבְטַחֽ/וֹ׃",
+        "LXX": "καὶ εὐλογημένος ὁ ἄνθρωπος ὃς πέποιθεν ἐπὶ τῷ κυρίῳ, καὶ ἔσται Κύριος ἐλπὶς αὐτοῦ·",
+        "VUL": "Benedictus vir qui confidit in Domino,/ et erit Dominus fiducia ejus./",
+        "SYN": "Благословен человек, который надеется на Господа, и которого упование - Господь.",
+        "NEO": "Béni soit l’homme qui se confie en \\+w Yahweh|strong=\"H3068\"\\+w**, et dont \\+w Yahweh|strong=\"H3068\"\\+w** est la confiance !",
+        "NAB": "Blessed is the man who trusts in the LORD, whose hope is the LORD.",
+        "VAT_ES": "&iexcl;Bendito el hombre que confía en el Señor y en él tiene puesta su confianza!",
+        "CEI": "Benedetto l'uomo che confida nel Signore e il Signore è sua fiducia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֞ה כְּ/עֵ֣ץ שָׁת֣וּל עַל מַ֗יִם וְ/עַל יוּבַל֙ יְשַׁלַּ֣ח שָֽׁרָשָׁ֔י/ו וְ/לֹ֤א ירא יִרְאֶה֙ כִּֽי יָבֹ֣א חֹ֔ם וְ/הָיָ֥ה עָלֵ֖/הוּ רַֽעֲנָ֑ן וּ/בִ/שְׁנַ֤ת בַּצֹּ֨רֶת֙ לֹ֣א יִדְאָ֔ג וְ/לֹ֥א יָמִ֖ישׁ מֵ/עֲשׂ֥וֹת פֶּֽרִי׃",
+        "LXX": "καὶ ἔσται ὡς ξύλον εὐθηνοῦν παρ’ ὕδατα, καὶ ἐπὶ ἰκμάδα βαλεῖ ῥίζαν αὐτοῦ· οὐ φοβηθήσεται ὅταν ἔλθῃ καῦμα, καὶ ἔσται ἐπ’ αὐτῷ στελέχη ἀλσώδη, ἐν ἐνιαυτῷ ἀβροχίας οὐ φοβηθήσεται, καὶ οὐ διαλείψει ποιῶν καρπόν.",
+        "VUL": "Et erit quasi lignum quod transplantatur super aquas,/ quod ad humorem mittit radices suas,/ et non timebit cum venerit æstus :/ et erit folium ejus viride,/ et in tempore siccitatis non erit sollicitum,/ nec aliquando desinet facere fructum./",
+        "SYN": "Ибо он будет как дерево, посаженное при водах и пускающее корни свои у потока; не знает оно, когда приходит зной; лист его зелен, и во время засухи оно не боится и не перестает приносить плод.",
+        "NEO": "Il est comme un arbre planté au bord des eaux, qui pousse ses racines vers le courant ; il ne craint pas quand vient la chaleur, et son feuillage reste vert ; il ne s’inquiète pas de l’année de la sécheresse, et ne cesse pas de porter du fruit.",
+        "NAB": "He is like a tree planted beside the waters that stretches out its roots to the stream: It fears not the heat when it comes, its leaves stay green; In the year of drought it shows no distress, but still bears fruit.",
+        "VAT_ES": "El es como un árbol plantado al borde de las aguas, que extiende sus raíces hacia la corriente; no teme cuando llega el calor y su follaje se mantiene frondoso; no se inquieta en un año de sequía y nunca deja de dar fruto.",
+        "CEI": "Egli è come un albero piantato lungo l'acqua, verso la corrente stende le radici; non teme quando viene il caldo, le sue foglie rimangono verdi; nell'anno della siccità non intristisce, non smette di produrre i suoi frutti."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "עָקֹ֥ב הַ/לֵּ֛ב מִ/כֹּ֖ל וְ/אָנֻ֣שׁ ה֑וּא מִ֖י יֵדָעֶֽ/נּוּ׃",
+        "LXX": "βαθεῖα ἡ καρδία παρὰ πάντα, καὶ ἄνθρωπός ἐστιν· καὶ τίς γνώσεται αὐτόν;",
+        "VUL": "Pravum est cor omnium, et inscrutabile :/ quis cognoscet illud ?/",
+        "SYN": "Лукаво сердце _человеческое_ более всего и крайне испорчено; кто узнает его?",
+        "NEO": "Le cœur est rusé plus que toute chose et corrompu : qui le connaîtra ?",
+        "NAB": "More tortuous than all else is the human heart, beyond remedy; who can understand it?",
+        "VAT_ES": "Nada más tortuoso que el corazón humano y no tiene arreglo: &iquest;quién puede penetrarlo?",
+        "CEI": "Più fallace di ogni altra cosa è il cuore e difficilmente guaribile; chi lo può conoscere?"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אֲנִ֧י יְהוָ֛ה חֹקֵ֥ר לֵ֖ב בֹּחֵ֣ן כְּלָי֑וֹת וְ/לָ/תֵ֤ת לְ/אִישׁ֙ כ/דרכ/ו כִּ/דְרָכָ֔י/ו כִּ/פְרִ֖י מַעֲלָלָֽי/ו׃",
+        "LXX": "ἐγὼ Κύριος ἐτάζων καρδίας καὶ δοκιμάζων νεφρούς, τοῦ δοῦναι ἑκάστῳ κατὰ τὰς ὁδοὺς αὐτοῦ καὶ κατὰ τοὺς καρποὺς τῶν ἐπιτηδευμάτων αὐτοῦ.",
+        "VUL": "Ego Dominus scrutans cor,/ et probans renes :/ qui do unicuique juxta viam suam,/ et juxta fructum adinventionum suarum./",
+        "SYN": "Я, Господь, проникаю сердце и испытываю внутренности, чтобы воздать каждому по пути его и по плодам дел его.",
+        "NEO": "Moi, \\+w Yahweh|strong=\"H3068\"\\+w**, qui sonde les cœurs et qui éprouve les reins, et cela pour rendre à chacun selon ses voies, selon le fruit de ses œuvres.",
+        "NAB": "I, the LORD, alone probe the mind and test the heart, To reward everyone according to his ways, according to the merit of his deeds.",
+        "VAT_ES": "Yo, el Señor, sondeo el corazón y examino las entrañas, para dar a cada uno según su conducta, según el fruto de sus acciones.",
+        "CEI": "Io, il Signore, scruto la mente e saggio i cuori, per rendere a ciascuno secondo la sua condotta, secondo il frutto delle sue azioni."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "קֹרֵ֤א דָגַר֙ וְ/לֹ֣א יָלָ֔ד עֹ֥שֶׂה עֹ֖שֶׁר וְ/לֹ֣א בְ/מִשְׁפָּ֑ט בַּ/חֲצִ֤י ימ/ו יָמָי/ו֙ יַעַזְבֶ֔/נּוּ וּ/בְ/אַחֲרִית֖/וֹ יִהְיֶ֥ה נָבָֽל׃",
+        "LXX": "ἐφώνησεν πέρδιξ, συνήγαγεν ἃ οὐκ ἔτεκεν· ποιῶν πλοῦτον αὐτοῦ οὐ μετὰ κρίσεως, ἐν ἡμίσει ἡμερῶν αὐτοῦ ἐγκαταλείψουσιν αὐτόν, καὶ ἐπ’ ἐσχάτων αὐτοῦ ἔσται ἄφρων.",
+        "VUL": "Perdix fovit quæ non peperit :/ fecit divitias, et non in judicio :/ in dimidio dierum suorum derelinquet eas,/ et in novissimo suo erit insipiens./",
+        "SYN": "Куропатка садится на яйца, которых не несла; таков приобретающий богатство неправдою: он оставит его на половине дней своих, и глупцом останется при конце своем.",
+        "NEO": "Une perdrix couve des œufs qu’elle n’a pas pondus ; tel celui qui acquiert des richesses injustement ; au milieu de ses jours il doit les quitter, et à sa fin il n’est qu’un insensé.",
+        "NAB": "A partridge that mothers a brood not her own is the man who acquires wealth unjustly: In midlife it will desert him; in the end he is only a fool.",
+        "VAT_ES": "Perdiz que empolla huevos sin haberlos puesto es el que adquiere riqueza injustamente: en la mitad de sus días tiene que abandonarla y, al final, resulta un insensato.",
+        "CEI": "Come una pernice che cova uova da lei non deposte è chi accumula ricchezze, ma senza giustizia. A metà dei suoi giorni dovrà lasciarle e alla sua fine apparirà uno stolto\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כִּסֵּ֣א כָב֔וֹד מָר֖וֹם מֵֽ/רִאשׁ֑וֹן מְק֖וֹם מִקְדָּשֵֽׁ/נוּ׃",
+        "LXX": "Θρόνος δόξης ὑψωμένος ἁγίασμα ἡμῶν·",
+        "VUL": "Solium gloriæ altitudinis a principio,/ locus sanctificationis nostræ./",
+        "SYN": "Престол славы, возвышенный от начала, есть место освящения нашего.",
+        "NEO": "Trône de gloire, hauteur éternelle, lieu de notre sanctuaire,",
+        "NAB": "A throne of glory, exalted from the beginning, such is our holy place.",
+        "VAT_ES": "&iexcl;Trono de gloria, exaltado desde el comienzo, es el lugar de nuestro Santuario!",
+        "CEI": "Trono di gloria, eccelso fin dal principio, è il luogo del nostro santuario!"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "מִקְוֵ֤ה יִשְׂרָאֵל֙ יְהוָ֔ה כָּל עֹזְבֶ֖י/ךָ יֵבֹ֑שׁוּ יסור/י וְ/סוּרַ/י֙ בָּ/אָ֣רֶץ יִכָּתֵ֔בוּ כִּ֥י עָזְב֛וּ מְק֥וֹר מַֽיִם חַיִּ֖ים אֶת יְהוָֽה׃",
+        "LXX": "ὑπομονὴ Ἰσραήλ, Κύριε, πάντες οἱ καταλιπόντες σε καταισχυνθήτωσαν, ἀφεστηκότες ἐπὶ τῆς γῆς γραφήτωσαν, ὅτι ἐγκατέλιπον πηγὴν ζωῆς τὸν κύριον.",
+        "VUL": "Exspectatio Israël, Domine,/ omnes qui te derelinquunt confundentur :/ recedentes a te, in terra scribentur,/ quoniam dereliquerunt venam aquarum viventium Dominum./",
+        "SYN": "Ты, Господи, надежда Израилева; все, оставляющие Тебя, посрамятся. \"Отступающие от Меня будут написаны на прахе, потому что оставили Господа, источник воды живой\".",
+        "NEO": "espoir d’Israël, \\+w Yahweh|strong=\"H3068\"\\+w**, tous ceux qui t’abandonnent seront confondus ! Ceux qui se détournent de moi seront inscrits sur la terre ; car ils ont abandonné la source des eaux vives, \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "O hope of Israel, O LORD! all who forsake you shall be in disgrace; The rebels in the land shall be put to shame; they have forsaken the source of living waters (the LORD).",
+        "VAT_ES": "Tú, Señor, eres la esperanza de Israel: todos los que te abandonan quedarán confundidos, los que se apartan de ti serán escritos en el polvo, porque han abandonado el manantial de agua viva.",
+        "CEI": "O speranza di Israele, Signore, quanti ti abbandonano resteranno confusi; quanti si allontanano da te saranno scritti nella polvere, perché hanno abbandonato la fonte di acqua viva, il Signore."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "רְפָאֵ֤/נִי יְהוָה֙ וְ/אֵ֣רָפֵ֔א הוֹשִׁיעֵ֖/נִי וְ/אִוָּשֵׁ֑עָה כִּ֥י תְהִלָּתִ֖/י אָֽתָּה׃",
+        "LXX": "ἴασαί με, Κύριε, καὶ ἰαθήσομαι· σῶσόν με, καὶ σωθήσομαι, ὅτι καύχημά μου σὺ εἶ.",
+        "VUL": "Sana me, Domine, et sanabor :/ salvum me fac, et salvus ero :/ quoniam laus mea tu es./",
+        "SYN": "Исцели меня, Господи, и исцелен буду; спаси меня, и спасен буду; ибо Ты хвала моя.",
+        "NEO": "Guéris-moi, \\+w Yahweh|strong=\"H3068\"\\+w**, et je serai guéri ; sauve-moi, et je serai sauvé, car tu es ma louange.",
+        "NAB": "Heal me, LORD, that I may be healed; save me, that I may be saved, for it is you whom I praise.",
+        "VAT_ES": "&iexcl;Sáname, Señor, y quedaré sano, sálvame y estaré a salvo, porque tú eres mi alabanza!",
+        "CEI": "Guariscimi, Signore, e io sarò guarito, salvami e io sarò salvato, poiché tu sei il mio vanto."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "הִנֵּה הֵ֕מָּה אֹמְרִ֖ים אֵלָ֑/י אַיֵּ֥ה דְבַר יְהוָ֖ה יָ֥בוֹא נָֽא׃",
+        "LXX": "ἰδοὺ αὐτοὶ λέγουσι πρὸς μέ Ποῦ ἐστιν ὁ λόγος Κυρίου; ἐλθάτω.",
+        "VUL": "Ecce ipsi dicunt ad me :/ Ubi est verbum Domini ? veniat :/",
+        "SYN": "Вот, они говорят мне: \"где слово Господне? пусть оно придет!\"",
+        "NEO": "Voici qu’ils me disent : « Où est la parole de \\+w Yahweh|strong=\"H3068\"\\+w** ? Qu’elle arrive ! »",
+        "NAB": "See how they say to me, \"Where is the word of the LORD? Let it come to pass!\"",
+        "VAT_ES": "Mira cómo me dicen: «&iquest;Dónde está la palabra del Señor? &iexcl;Que se cumpla!».",
+        "CEI": "Ecco, essi mi dicono: \"Dov'è la parola del Signore? Si compia finalmente!\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֞י לֹא אַ֣צְתִּי מֵ/רֹעֶ֣ה אַחֲרֶ֗י/ךָ וְ/י֥וֹם אָנ֛וּשׁ לֹ֥א הִתְאַוֵּ֖יתִי אַתָּ֣ה יָדָ֑עְתָּ מוֹצָ֣א שְׂפָתַ֔/י נֹ֥כַח פָּנֶ֖י/ךָ הָיָֽה׃",
+        "LXX": "ἐγὼ δὲ οὐκ ἐκοπίασα κατακολουθῶν ὀπίσω σου, καὶ ἡμέραν ἀνθρώπου οὐκ ἐπεθύμησα, σὺ ἐπίστῃ· τὰ ἐκπορευόμενα διὰ τῶν χειλέων μου πρὸ προσώπου σού ἐστιν.",
+        "VUL": "et ego non sum turbatus, te pastorem sequens :/ et diem hominis non desideravi, tu scis :/ quod egressum est de labiis meis, rectum in conspectu tuo fuit./",
+        "SYN": "Я не спешил быть пастырем у Тебя и не желал бедственного дня, Ты это знаешь; что вышло из уст моих, открыто пред лицем Твоим.",
+        "NEO": "Et moi je n’ai pas refusé d’être pasteur à ta suite ; je n’ai pas désiré le jour du malheur, tu le sais ; ce qui est sorti de mes lèvres était présent devant ta face.",
+        "NAB": "Yet I did not press you to send calamity; the day without remedy I have not desired. You know what passed my lips; it is present before you.",
+        "VAT_ES": "Pero yo no te instigué a mandar una desgracia ni he deseado el día irreparable. Tú lo sabes: lo que salía de mi boca está patente delante de tu rostro.",
+        "CEI": "Io non ho insistito presso di te nella sventura né ho desiderato il giorno funesto, tu lo sai. Ciò che è uscito dalla mia bocca è innanzi a te."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אַל תִּֽהְיֵה לִ֖/י לִ/מְחִתָּ֑ה מַֽחֲסִ/י אַ֖תָּה בְּ/י֥וֹם רָעָֽה׃",
+        "LXX": "μὴ γενηθῇς μοι εἰς ἀλλοτρίωσιν, φειδόμενός μου ἐν ἡμέρᾳ πονηρᾷ.",
+        "VUL": "Non sis tu mihi formidini :/ spes mea tu in die afflictionis./",
+        "SYN": "Не будь страшен для меня, Ты - надежда моя в день бедствия.",
+        "NEO": "Ne sois pas pour moi une cause de ruine ; tu es mon refuge au jour du malheur !",
+        "NAB": "Do not be my ruin, you, my refuge in the day of misfortune.",
+        "VAT_ES": "No seas para mí un motivo de terror, tú, mi refugio en el día de la desgracia.",
+        "CEI": "Non essere per me causa di spavento, tu, mio solo rifugio nel giorno della sventura."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "יֵבֹ֤שׁוּ רֹדְפַ/י֙ וְ/אַל אֵבֹ֣שָׁה אָ֔נִי יֵחַ֣תּוּ הֵ֔מָּה וְ/אַל אֵחַ֖תָּה אָ֑נִי הָבִ֤יא עֲלֵי/הֶם֙ י֣וֹם רָעָ֔ה וּ/מִשְׁנֶ֥ה שִׁבָּר֖וֹן שָׁבְרֵֽ/ם׃",
+        "LXX": "καταισχυνθήτωσαν οἱ διώκοντές με, καὶ μὴ καταισχυνθείην ἐγώ· πτοηθείησαν αὐτοί, καὶ μὴ πτοηθείην ἐγώ· ἐπάγαγε ἐπ’ αὐτοὺς ἡμέραν πονηράν, δισσὸν σύντριμμα σύντριψον αὐτούς.",
+        "VUL": "Confundantur qui me persequuntur,/ et non confundar ego :/ paveant illi,/ et non paveam ego :/ induc super eos diem afflictionis,/ et duplici contritione contere eos.]",
+        "SYN": "Пусть постыдятся гонители мои, а я не буду постыжен; пусть они вострепещут, а я буду бестрепетен; наведи на них день бедствия и сокруши их сугубым сокрушением.",
+        "NEO": "Que mes persécuteurs soient confondus, et que je ne sois pas confondu moi-même ! Qu’ils tremblent, eux, et que moi je ne tremble pas ! Amène sur eux le jour du malheur, et brise-les d’une double brèche.",
+        "NAB": "Let my persecutors, not me, be confounded; let them, not me, be broken. Bring upon them the day of misfortune, crush them with repeated destruction.",
+        "VAT_ES": "&iexcl;Que se averg&uuml;encen mis perseguidores, y no yo; que se aterroricen ellos, y no yo! Atrae sobre ellos un día de desgracia, quiébralo con un doble quebranto.",
+        "CEI": "Siano confusi i miei avversari ma non io, si spaventino essi, ma non io. Manda contro di loro il giorno della sventura, distruggili, distruggili per sempre."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כֹּה אָמַ֨ר יְהוָ֜ה אֵלַ֗/י הָלֹ֤ךְ וְ/עָֽמַדְתָּ֙ בְּ/שַׁ֣עַר בְּנֵֽי עם הָ/עָ֔ם אֲשֶׁ֨ר יָבֹ֤אוּ ב/וֹ֙ מַלְכֵ֣י יְהוּדָ֔ה וַ/אֲשֶׁ֖ר יֵ֣צְאוּ ב֑/וֹ וּ/בְ/כֹ֖ל שַׁעֲרֵ֥י יְרוּשָׁלִָֽם׃",
+        "LXX": "Τάδε λέγει Κύριος Βάδισον καὶ στῆθι ἐν ταῖς πύλαις υἱῶν λαοῦ σου, ἐν αἷς εἰσπορεύονται ἐν αὐταῖς βασιλεῖς Ἰούδα καὶ ἐν αἷς ἐκπορεύονται ἐν αὐταῖς, καὶ ἐν πάσαις ταῖς πύλαις Ἰερουσαλήμ,",
+        "VUL": "Hæc dicit Dominus ad me : Vade, et sta in porta filiorum populi, per quam ingrediuntur reges Juda, et egrediuntur, et in cunctis portis Jerusalem :",
+        "SYN": "Так сказал мне Господь: пойди и стань в воротах сынов народа, которыми входят цари Иудейские и которыми они выходят, и во всех воротах Иерусалимских,",
+        "NEO": "Ainsi m’a parlé \\+w Yahweh|strong=\"H3068\"\\+w** : Va, et tiens-toi à la porte des fils du peuple, par où entrent et sortent les rois de Judas, et à toutes les portes de Jérusalem ;",
+        "NAB": "Thus said the LORD to me: Go, stand at the Gate of Benjamin, where the kings of Judah enter and leave, and at the other gates of Jerusalem.",
+        "VAT_ES": "Así me habló el Señor: Ve, párate en la puerta del Pueblo, por donde entran y salen los reyes de Judá, y en todas las puertas de Jerusalén,",
+        "CEI": "Il Signore mi disse: \"Và a metterti alla porta dei Figli del popolo, per la quale entrano ed escono i re di Giuda, e a tutte le porte di Gerusalemme."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/אָמַרְתָּ֣ אֲ֠לֵי/הֶם שִׁמְע֨וּ דְבַר יְהוָ֜ה מַלְכֵ֤י יְהוּדָה֙ וְ/כָל יְהוּדָ֔ה וְ/כֹ֖ל יֹשְׁבֵ֣י יְרוּשָׁלִָ֑ם הַ/בָּאִ֖ים בַּ/שְּׁעָרִ֥ים הָ/אֵֽלֶּה׃",
+        "LXX": "καὶ ἐρεῖς αὐτοῖς τὸν λόγον Κυρίου Βασιλεῖς Ἰούδα καὶ πᾶσα Ἰουδαία καὶ πᾶσα Ἰερουσαλήμ, οἱ εἰσπορευόμενοι ἐν ταῖς πύλαις ταύταις,",
+        "VUL": "et dices ad eos : [Audite verbum Domini,/ reges Juda, et omnis Juda,/ cunctique habitatores Jerusalem,/ qui ingredimini per portas istas./",
+        "SYN": "и говори им: слушайте слово Господне, цари Иудейские, и вся Иудея, и все жители Иерусалима, входящие сими воротами.",
+        "NEO": "et tu leur diras : Ecoutez la parole de \\+w Yahweh|strong=\"H3068\"\\+w**, vous, rois de Juda, et tout Juda, et vous tous, habitants de Jérusalem, qui entrez par ces portes.",
+        "NAB": "There say to them: Hear the word of the LORD, you kings of Judah, and all Judah, and all you citizens of Jerusalem who enter these gates!",
+        "VAT_ES": "y diles: &iexcl;Escuchen la palabra del Señor, reyes de Judá y Judá todo entero, y todos ustedes, habitantes de Jerusalén que entran por estas puertas!",
+        "CEI": "Dirai loro: Ascoltate la parola del Signore, o re di Giuda e voi tutti Giudei e abitanti di Gerusalemme, che entrate per queste porte."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "כֹּ֚ה אָמַ֣ר יְהוָ֔ה הִשָּׁמְר֖וּ בְּ/נַפְשֽׁוֹתֵי/כֶ֑ם וְ/אַל תִּשְׂא֤וּ מַשָּׂא֙ בְּ/י֣וֹם הַ/שַּׁבָּ֔ת וַ/הֲבֵאתֶ֖ם בְּ/שַׁעֲרֵ֥י יְרוּשָׁלִָֽם׃",
+        "LXX": "τάδε λέγει Κύριος Φυλάσσεσθε τὰς ψυχὰς ὑμῶν, καὶ μὴ αἴρετε βαστάγματα ἐν τῇ ἡμέρᾳ τῶν σαββάτων καὶ μὴ ἐκπορεύεσθε ταῖς πύλαις Ἰερουσαλήμ,",
+        "VUL": "Hæc dicit Dominus :/ Custodite animas vestras,/ et nolite portare pondera in die sabbati,/ nec inferatis per portas Jerusalem :/",
+        "SYN": "Так говорит Господь: берегите души свои и не носите нош в день субботний и не вносите их воротами Иерусалимскими,",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Prenez garde à vos âmes, et ne portez pas de fardeaux le jour du sabbat, et n’en faites pas entrer par les portes de Jérusalem.",
+        "NAB": "Thus says the LORD: As you love your lives, take care not to carry burdens on the sabbath day, to bring them in through the gates of Jerusalem.",
+        "VAT_ES": "Así habla el Señor: Cuídense bien, por su propia vida, de llevar una carga en día sábado y de introducirla por las puertas de Jerusalén.",
+        "CEI": "Così dice il Signore: Per amore della vostra vita guardatevi dal trasportare un peso in giorno di sabato e dall'introdurlo per le porte di Gerusalemme."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/לֹא תוֹצִ֨יאוּ מַשָּׂ֤א מִ/בָּֽתֵּי/כֶם֙ בְּ/י֣וֹם הַ/שַּׁבָּ֔ת וְ/כָל מְלָאכָ֖ה לֹ֣א תַֽעֲשׂ֑וּ וְ/קִדַּשְׁתֶּם֙ אֶת י֣וֹם הַ/שַּׁבָּ֔ת כַּ/אֲשֶׁ֥ר צִוִּ֖יתִי אֶת אֲבוֹתֵי/כֶֽם׃",
+        "LXX": "καὶ μὴ ἐκφέρετε βαστάγματα ἐξ οἰκιῶν ὑμῶν ἐν τῇ ἡμέρᾳ τῶν σαββάτων, καὶ πᾶν ἔργον οὐ ποιήσετε· ἁγιάσατε τὴν ἡμέραν τῶν σαββάτων καθὼς ἐνετειλάμην τοῖς πατράσιν ὑμῶν. καὶ οὐκ ἤκουσαν καὶ οὐκ ἔκλιναν τὸ οὖς αὐτῶν,",
+        "VUL": "et nolite ejicere onera de domibus vestris in die sabbati,/ et omne opus non facietis :/ sanctificate diem sabbati,/ sicut præcepi patribus vestris./",
+        "SYN": "и не выносите нош из домов ваших в день субботний, и не занимайтесь никакою работою, но святите день субботний так, как Я заповедал отцам вашим,",
+        "NEO": "Ne faites sortir de vos maisons aucun fardeau le jour du sabbat, et ne faites aucun ouvrage. Et sanctifiez le jour du sabbat, comme je l’ai ordonné à vos pères.",
+        "NAB": "Bring no burden from your homes on the sabbath. Do no work whatever, but keep holy the sabbath, as I commanded your fathers,",
+        "VAT_ES": "No saquen ninguna carga de sus casas en día sábado, ni hagan ningún trabajo. Santifiquen el día sábado, como yo les ordené a sus padres.",
+        "CEI": "Non portate alcun peso fuori dalle vostre case in giorno di sabato e non fate alcun lavoro, ma santificate il giorno di sabato, come io ho comandato ai vostri padri."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/לֹ֣א שָֽׁמְע֔וּ וְ/לֹ֥א הִטּ֖וּ אֶת אָזְנָ֑/ם וַ/יַּקְשׁוּ֙ אֶת עָרְפָּ֔/ם לְ/בִלְתִּ֣י שומע שְׁמ֔וֹעַ וּ/לְ/בִלְתִּ֖י קַ֥חַת מוּסָֽר׃",
+        "LXX": "καὶ ἐσκλήρυναν τὸν τράχηλον αὐτῶν ὑπὲρ τοὺς πατέρας αὐτῶν τοῦ μὴ ἀκοῦσαί μου καὶ τοῦ μὴ δέξασθαι παιδείαν.",
+        "VUL": "Et non audierunt, nec inclinaverunt aurem suam :/ sed induraverunt cervicem suam, ne audirent me,/ et ne acciperent disciplinam./",
+        "SYN": "которые впрочем не послушались и не приклонили уха своего, но сделались жестоковыйными, чтобы не слушать и не принимать наставления.",
+        "NEO": "Ils n’ont pas écouté ni prêté l’oreille ; ils ont raidi leur cou pour ne pas écouter ; et ne pas recevoir l’instruction.",
+        "NAB": "though they did not listen or give ear, but stiffened their necks so as not to hear or take correction.",
+        "VAT_ES": "Pero ellos no escucharon ni inclinaron su oído, sino que se negaron obstinadamente a escuchar y aprender la lección.",
+        "CEI": "Ma essi non vollero ascoltare né prestare orecchio, anzi indurirono la loro cervice per non ascoltarmi e per non accogliere la lezione."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ֠/הָיָה אִם שָׁמֹ֨עַ תִּשְׁמְע֤וּ/ן אֵלַ/י֙ נְאֻם יְהוָ֔ה לְ/בִלְתִּ֣י הָבִ֣יא מַשָּׂ֗א בְּ/שַׁעֲרֵ֛י הָ/עִ֥יר הַ/זֹּ֖את בְּ/י֣וֹם הַ/שַּׁבָּ֑ת וּ/לְ/קַדֵּשׁ֙ אֶת י֣וֹם הַ/שַּׁבָּ֔ת לְ/בִלְתִּ֥י עֲשֽׂוֹת ב/ה בּ֖/וֹ כָּל מְלָאכָֽה׃",
+        "LXX": "καὶ ἔσται ἐὰν εἰσακούσητέ μου, λέγει Κύριος, τοῦ μὴ εἰσφέρειν βαστάγματα διὰ τῶν πυλῶν τῆς πόλεως ταύτης ἐν τῇ ἡμέρᾳ τῶν σαββάτων, καὶ ἁγιάζειν τὴν ἡμέραν τῶν σαββάτων τοῦ μὴ ποιεῖν πᾶν ἔργον,",
+        "VUL": "Et erit : si audieritis me, dicit Dominus,/ ut non inferatis onera per portas civitatis hujus in die sabbati :/ et si sanctificaveritis diem sabbati,/ ne faciatis in eo omne opus :/",
+        "SYN": "И если вы послушаете Меня в том, говорит Господь, чтобы не носить нош воротами сего города в день субботний и чтобы святить субботу, не занимаясь в этот день никакою работою,",
+        "NEO": "Si vous m’écoutez docilement, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, en ne faisant pas entrer de fardeaux par les portes de cette ville le jour du sabbat, en sanctifiant le jour du sabbat en ne faisant aucun ouvrage ce jour-là,",
+        "NAB": "If you obey me wholeheartedly, says the LORD, and carry no burden through the gates of this city on the sabbath, keeping the sabbath holy and abstaining from all work on it,",
+        "VAT_ES": "Si ustedes me escuchan verdaderamente –oráculo del Señor– y no introducen ninguna carga por las puertas de esta ciudad en día sábado; si santifican el día sábado no haciendo ningún trabajo,",
+        "CEI": "Ora, se mi ascolterete sul serio - dice il Signore - se non introdurrete nessun peso entro le porte di questa città in giorno di sabato e santificherete il giorno di sabato non eseguendo in esso alcun lavoro,"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וּ/בָ֣אוּ בְ/שַׁעֲרֵ֣י הָ/עִ֣יר הַ/זֹּ֡את מְלָכִ֣ים וְ/שָׂרִ֡ים יֹשְׁבִים֩ עַל כִּסֵּ֨א דָוִ֜ד רֹכְבִ֣ים בָּ/רֶ֣כֶב וּ/בַ/סּוּסִ֗ים הֵ֚מָּה וְ/שָׂ֣רֵי/הֶ֔ם אִ֥ישׁ יְהוּדָ֖ה וְ/יֹשְׁבֵ֣י יְרוּשָׁלִָ֑ם וְ/יָשְׁבָ֥ה הָֽ/עִיר הַ/זֹּ֖את לְ/עוֹלָֽם׃",
+        "LXX": "καὶ εἰσελεύσονται διὰ τῶν πυλῶν τῆς πόλεως ταύτης βασιλεῖς καὶ ἄρχοντες καθήμενοι ἐπὶ θρόνου Δαυεὶδ καὶ ἐπιβεβηκότες ἐφ’ ἅρμασιν καὶ ἵπποις αὐτῶν, αὐτοὶ καὶ οἱ ἄρχοντες αὐτῶν, ἄνδρες Ἰούδα καὶ οἱ κατοικοῦντες ἐν Ἰερουσαλήμ· καὶ κατοικισθήσεται ἡ πόλις αὕτη εἰς τὸν αἰῶνα,",
+        "VUL": "ingredientur per portas civitatis hujus reges et principes,/ sedentes super solium David,/ et ascendentes in curribus et equis,/ ipsi et principes eorum,/ viri Juda, et habitatores Jerusalem :/ et habitabitur civitas hæc in sempiternum./",
+        "SYN": "то воротами сего города будут входить цари и князья, сидящие на престоле Давида, ездящие на колесницах и на конях, они и князья их, Иудеи и жители Иерусалима, и город сей будет обитаем вечно.",
+        "NEO": "alors par les portes de cette ville entreront des rois et des princes assis sur le trône de David, montés sur des chars et des chevaux, eux et leurs princes, les hommes de Juda et les habitants de Jérusalem ; et cette ville sera habitée à jamais.",
+        "NAB": "then, through the gates of this city, kings who sit upon the throne of David will continue to enter, riding in their chariots or upon their horses, along with their princes, and the men of Judah, and the citizens of Jerusalem. This city will remain inhabited forever.",
+        "VAT_ES": "entonces, por las puertas de esta ciudad, entrarán reyes que se sientan en el trono de David; entrarán montados en carros y caballos, ellos y sus príncipes, los hombres de Judá y los habitantes de Jerusalén. Esta ciudad será habitada para siempre,",
+        "CEI": "entreranno per le porte di questa città i re, che siederanno sul trono di Davide, su carri e su cavalli, essi e i loro ufficiali, gli uomini di Giuda e gli abitanti di Gerusalemme. Questa città sarà abitata per sempre."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וּ/בָ֣אוּ מֵ/עָרֵֽי יְ֠הוּדָה וּ/מִ/סְּבִיב֨וֹת יְרוּשָׁלִַ֜ם וּ/מֵ/אֶ֣רֶץ בִּנְיָמִ֗ן וּ/מִן הַ/שְּׁפֵלָ֤ה וּ/מִן הָ/הָר֙ וּ/מִן הַ/נֶּ֔גֶב מְבִאִ֛ים עוֹלָ֥ה וְ/זֶ֖בַח וּ/מִנְחָ֣ה וּ/לְבוֹנָ֑ה וּ/מְבִאֵ֥י תוֹדָ֖ה בֵּ֥ית יְהוָֽה׃",
+        "LXX": "καὶ ἥξουσιν ἐκ τῶν πόλεων Ἰούδα, καὶ κυκλόθεν Ἰερουσαλὴμ καὶ ἐκ γῆς Βενιαμεὶν καὶ ἐκ γῆς πεδινῆς καὶ ἐκ τοῦ ὄρους καὶ ἐκ τῆς πρὸς νότον φέροντες ὁλοκαυτώματα καὶ θυσίαν καὶ θυμιάματα καὶ μάννα καὶ λίβανον, φέροντες αἴνεσιν εἰς οἶκον Κυρίου.",
+        "VUL": "Et venient de civitatibus Juda,/ et de circuitu Jerusalem,/ et de terra Benjamin,/ et de campestribus, et de montuosis, et ab austro,/ portantes holocaustum, et victimam,/ et sacrificium, et thus,/ et inferent oblationem in domum Domini./",
+        "SYN": "И будут приходить из городов Иудейских, и из окрестностей Иерусалима, и из земли Вениаминовой, и с равнины и с гор и с юга, и приносить всесожжение и жертву, и хлебное приношение, и ливан, и благодарственные жертвы в дом Господень.",
+        "NEO": "On viendra des villes de Juda et des environs de Jérusalem, du pays de Benjamin, de la Séphéla, de la montagne et du négéb, amener des holocaustes et des sacrifices, des oblations et de l’encens, et apporter des sacrifices d’actions de grâces dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "To it people will come from the cities of Judah and the neighborhood of Jerusalem, from the land of Benjamin and from the foothills, from the hill country and the Negeb, to bring holocausts and sacrifices, cereal offerings and incense and thank offerings to the house of the LORD.",
+        "VAT_ES": "y de las ciudades de Judá y de los alrededores de Jerusalén, de la Sefelá, de la Montaña y del Négueb, se traerán holocaustos y sacrificios, oblaciones e incienso, y se traerá el sacrificio de alabanza a la Casa del Señor.",
+        "CEI": "Verranno dalle città di Giuda e dai dintorni di Gerusalemme, dalla terra di Beniamino e dalla Sefèla, dai monti e dal meridione presentando olocausti, sacrifici, offerte e incenso e sacrifici di lode nel tempio del Signore."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/אִם לֹ֨א תִשְׁמְע֜וּ אֵלַ֗/י לְ/קַדֵּשׁ֙ אֶת י֣וֹם הַ/שַּׁבָּ֔ת וּ/לְ/בִלְתִּ֣י שְׂאֵ֣ת מַשָּׂ֗א וּ/בֹ֛א בְּ/שַׁעֲרֵ֥י יְרוּשָׁלִַ֖ם בְּ/י֣וֹם הַ/שַּׁבָּ֑ת וְ/הִצַּ֧תִּי אֵ֣שׁ בִּ/שְׁעָרֶ֗י/הָ וְ/אָֽכְלָ֛ה אַרְמְנ֥וֹת יְרוּשָׁלִַ֖ם וְ/לֹ֥א תִכְבֶּֽה׃",
+        "LXX": "καὶ ἔσται ἐὰν μὴ εἰσακούσητέ μου τοῦ ἁγιάζειν τὴν ἡμέραν τῶν σαββάτων, τοῦ μὴ αἴρειν βαστάγματα καὶ μὴ εἰσπορεύεσθαι ταῖς πύλαις Ἰερουσαλὴμ ἐν τῇ ἡμέρᾳ τῶν σαββάτων, καὶ ἀνάψω πῦρ ἐν ταῖς πύλαις αὐτῆς καὶ καταφάγεται ἄμφοδα Ἰερουσαλήμ, καὶ οὐ σβεσθήσεται.",
+        "VUL": "Si autem non audieritis me/ ut sanctificetis diem sabbati,/ et ne portetis onus,/ et ne inferatis per portas Jerusalem in die sabbati,/ succendam ignem in portis ejus,/ et devorabit domos Jerusalem,/ et non extinguetur.]",
+        "SYN": "А если не послушаете Меня в том, чтобы святить день субботний и не носить нош, входя в ворота Иерусалима в день субботний, то возжгу огонь в воротах его, и он пожрет чертоги Иерусалима и не погаснет.",
+        "NEO": "Mais si vous ne m’écoutez en sanctifiant le jour du sabbat, en ne portant aucun fardeau, quand vous entrez par les portes de Jérusalem, le jour du sabbat, alors j’allumerai un feu aux portes de la ville, et il dévorera les palais de Jérusalem, et il ne s’éteindra point.",
+        "NAB": "But if you do not obey me and keep holy the sabbath, if you carry burdens and come through the gates of Jerusalem on the sabbath, I will set unquenchable fire to its gates, which will consume the palaces of Jerusalem.",
+        "VAT_ES": "Pero si ustedes no escuchan mi orden de santificar el día sábado, y de no llevar cargas cuando entran por las puertas de Jerusalén en día sábado, entonces yo encenderé en sus puertas un fuego que devorará los palacios de Jerusalén, y no se extinguirá.",
+        "CEI": "Ma se non ascolterete il mio comando di santificare il giorno di sabato, di non trasportare pesi e di non introdurli entro le porte di Gerusalemme in giorno di sabato, io accenderò un fuoco alle sue porte; esso divorerà i palazzi di Gerusalemme e mai si estinguerà\"."
+      }
+    }
+  }
+}

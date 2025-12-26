@@ -1,0 +1,359 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_145",
+  "book_key": "PSAL",
+  "sequence": 145,
+  "chapter_in": {
+    "MT": 145,
+    "VUL": 144,
+    "LXX": 144
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "תְּהִלָּ֗ה לְ/דָ֫וִ֥ד אֲרוֹמִמְ/ךָ֣ אֱלוֹהַ֣/י הַ/מֶּ֑לֶךְ וַ/אֲבָרֲכָ֥ה שִׁ֝מְ/ךָ֗ לְ/עוֹלָ֥ם וָ/עֶֽד׃",
+        "LXX": "Ἁλληλουιά· Ἁγγαίου καὶ Ζαχαρίου. Αἴνει, ἡ ψυχή μου, τὸν κύριον·",
+        "VUL": "Alleluja, Aggæi et Zachariæ.",
+        "SYN": "Хвали, душа моя, Господа.",
+        "NEO": "qChant de louange. De David.",
+        "NAB": "Praise. Of David. I will extol you, my God and king; I will bless your name forever.",
+        "CEI": "Lodi. Di Davide. O Dio, mio re, voglio esaltarti e benedire il tuo nome in eterno e per sempre."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בְּ/כָל י֥וֹם אֲבָרֲכֶ֑/ךָּ וַ/אֲהַלְלָ֥ה שִׁ֝מְ/ךָ֗ לְ/עוֹלָ֥ם וָ/עֶֽד׃",
+        "LXX": "αἰνέσω Κύριον ἐν ζωῇ μου, ψαλῶ τῷ θεῷ μου ἕως ὑπάρχω.",
+        "VUL": "[Lauda, anima mea, Dominum./ Laudabo Dominum in vita mea ;/ psallam Deo meo quamdiu fuero./ Nolite confidere in principibus,/",
+        "SYN": "Буду восхвалять Господа, доколе жив; буду петь Богу моему, доколе есмь.",
+        "NEO": "Je veux chaque jour te bénir, et célébrer ton nom toujours et à jamais.",
+        "NAB": "Every day I will bless you; I will praise your name forever.",
+        "VAT_ES": "[Bet] Día tras día te bendeciré,",
+        "CEI": "Ti voglio benedire ogni giorno, lodare il tuo nome in eterno e per sempre."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "גָּ֘ד֤וֹל יְהוָ֣ה וּ/מְהֻלָּ֣ל מְאֹ֑ד וְ֝/לִ/גְדֻלָּת֗/וֹ אֵ֣ין חֵֽקֶר׃",
+        "LXX": "μὴ πεποίθατε ἐπ’ ἄρχοντας καὶ ἐφ’ υἱοὺς ἀνθρώπων, οἷς οὐκ ἔστιν σωτηρία·",
+        "VUL": "in filiis hominum, in quibus non est salus./",
+        "SYN": "Не надейтесь на князей, на сына человеческого, в котором нет спасения.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est grand et digne de toute louange, et sa grandeur est insondable+ 145:3 Cf. Psa 48, 3.*.",
+        "NAB": "Great is the LORD and worthy of high praise; God's grandeur is beyond understanding.",
+        "VAT_ES": "[Guímel] &iexcl;Grande es el Señor y muy digno de alabanza:",
+        "CEI": "Grande è il Signore e degno di ogni lode, la sua grandezza non si può misurare."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "דּ֣וֹר לְ֭/דוֹר יְשַׁבַּ֣ח מַעֲשֶׂ֑י/ךָ וּ/גְב֖וּרֹתֶ֣י/ךָ יַגִּֽידוּ׃",
+        "LXX": "ἐξελεύσεται τὸ πνεῦμα αὐτοῦ καὶ ἐπιστρέψει εἰς τὴν γῆν αὐτοῦ· ἐν ἐκείνῃ τῇ ἡμέρᾳ ἀπολοῦνται πάντες οἱ διαλογισμοὶ αὐτῶν.",
+        "VUL": "Exibit spiritus ejus, et revertetur in terram suam ;/ in illa die peribunt omnes cogitationes eorum./",
+        "SYN": "Выходит дух его, и он возвращается в землю свою: в тот день исчезают [все] помышления его.",
+        "NEO": "Chaque âge+ 145:4 \\+it Chaque âge\\+it*… LXX et Vulg. \\+it Les âges et les âges célébreront\\+it*…* dira au suivant la louange de tes œuvres, on publiera tes prodiges.",
+        "NAB": "One generation praises your deeds to the next and proclaims your mighty works.",
+        "VAT_ES": "[Dálet] Cada generación celebra tus acciones",
+        "CEI": "Una generazione narra all'altra le tue opere, annunzia le tue meraviglie."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הֲ֭דַר כְּב֣וֹד הוֹדֶ֑/ךָ וְ/דִבְרֵ֖י נִפְלְאוֹתֶ֣י/ךָ אָשִֽׂיחָה׃",
+        "LXX": "μακάριος οὗ ὁ θεὸς Ἰακὼβ βοηθός, ἡ ἐλπὶς αὐτοῦ ἐπὶ Κύριον τὸν θεὸν αὐτοῦ·",
+        "VUL": "Beatus cujus Deus Jacob adjutor ejus,/ spes ejus in Domino Deo ipsius :/",
+        "SYN": "Блажен, кому помощник Бог Иаковлев, у кого надежда на Господа Бога его,",
+        "NEO": "Je chanterai l’éclat glorieux de ta majesté+ 145:5 \\+it De ta majesté\\+it*. LXX et Vulg., \\+it de ta sainteté\\+it*. — \\+it Je chanterai\\+it*. LXX et Vulg., \\+it ils diront\\+it*. Même substitution de la 3 \\+sup e\\+sup* pers. plur. à la 1 \\+sup re\\+sup* sing, dans le deuxième membre du v. 6.*, et tes œuvres prodigieuses.",
+        "NAB": "They speak of the splendor of your majestic glory, tell of your wonderful deeds.",
+        "VAT_ES": "[He] Ellas publican sus tremendos prodigios",
+        "CEI": "Proclamano lo splendore della tua gloria e raccontano i tuoi prodigi."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וֶ/עֱז֣וּז נוֹרְאֹתֶ֣י/ךָ יֹאמֵ֑רוּ ו/גדולתי/ך וּ/גְדוּלָּתְ/ךָ֥ אֲסַפְּרֶֽ/נָּה׃",
+        "LXX": "τὸν ποιήσαντα τὸν οὐρανὸν καὶ τὴν γῆν, τὴν θάλασσαν καὶ πάντα τὰ ἐν αὐτοῖς· τὸν φυλάσσοντα ἀλήθειαν εἰς τὸν αἰῶνα,",
+        "VUL": "qui fecit cælum et terram,/ mare, et omnia quæ in eis sunt./",
+        "SYN": "сотворившего небо и землю, море и все, что в них, вечно хранящего верность,",
+        "NEO": "Et l’on parlera de ta puissance redoutable, et je raconterai ta grandeur.",
+        "NAB": "They speak of your fearsome power and attest to your great deeds.",
+        "VAT_ES": "[Vau]: Ellas publican tus tremendos prodigios",
+        "CEI": "Dicono la stupenda tua potenza e parlano della tua grandezza."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "זֵ֣כֶר רַב טוּבְ/ךָ֣ יַבִּ֑יעוּ וְ/צִדְקָתְ/ךָ֥ יְרַנֵּֽנוּ׃",
+        "LXX": "ποιοῦντα κρίμα τοῖς ἀδικουμένοις, διδόντα τροφὴν τοῖς πεινῶσιν. Κύριος λύει πεπεδημένους·",
+        "VUL": "Qui custodit veritatem in sæculum ;/ facit judicium injuriam patientibus ;/ dat escam esurientibus./ Dominus solvit compeditos ;/",
+        "SYN": "творящего суд обиженным, дающего хлеб алчущим. Господь разрешает узников,",
+        "NEO": "On proclamera le souvenir de ton immense bonté, et on célébrera ta justice.",
+        "NAB": "They publish the renown of your abounding goodness and joyfully sing of your justice.",
+        "VAT_ES": "[Zain] divulgan el recuerdo de tu inmensa bondad",
+        "CEI": "Diffondono il ricordo della tua bontà immensa, acclamano la tua giustizia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "חַנּ֣וּן וְ/רַח֣וּם יְהוָ֑ה אֶ֥רֶךְ אַ֝פַּ֗יִם וּ/גְדָל חָֽסֶד׃",
+        "LXX": "Κύριος ἀνορθοῖ κατερραγμένους· Κύριος σοφοῖ τυφλούς· Κύριος ἀγαπᾷ δικαίους·",
+        "VUL": "Dominus illuminat cæcos./ Dominus erigit elisos ;/ Dominus diligit justos./",
+        "SYN": "Господь отверзает очи слепым, Господь восставляет согбенных, Господь любит праведных.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est miséricordieux et compatissant, lent à la colère et plein de bonté.",
+        "NAB": "The LORD is gracious and merciful, slow to anger and abounding in love.",
+        "VAT_ES": "[Jet] El Señor es bondadoso y compasivo,",
+        "CEI": "Paziente e misericordioso è il Signore, lento all'ira e ricco di grazia."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "טוֹב יְהוָ֥ה לַ/כֹּ֑ל וְ֝/רַחֲמָ֗י/ו עַל כָּל מַעֲשָֽׂי/ו׃",
+        "LXX": "Κύριος φυλάσσει τοὺς προσηλύτους, ὀρφανὸν καὶ χήραν ἀναλήμψεται, καὶ ὁδὸν ἁμαρτωλῶν ἀφανιεῖ.",
+        "VUL": "Dominus custodit advenas,/ pupillum et viduam suscipiet,/ et vias peccatorum disperdet./",
+        "SYN": "Господь хранит пришельцев, поддерживает сироту и вдову, а путь нечестивых извращает.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est bon envers tous, et sa miséricorde s’étend sur toutes ses créatures.",
+        "NAB": "The LORD is good to all, compassionate to every creature.",
+        "VAT_ES": "[Tet] el Señor es bueno con todos",
+        "CEI": "Buono è il Signore verso tutti, la sua tenerezza si espande su tutte le creature."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "יוֹד֣וּ/ךָ יְ֭הוָה כָּל מַעֲשֶׂ֑י/ךָ וַ֝/חֲסִידֶ֗י/ךָ יְבָרֲכֽוּ/כָה׃",
+        "LXX": "βασιλεύσει Κύριος εἰς τὸν αἰῶνα, ὁ θεός σου, Σιών, εἰς γενεὰν καὶ γενεάν.",
+        "VUL": "Regnabit Dominus in sæcula ;/ Deus tuus, Sion, in generationem et generationem.]",
+        "SYN": "Господь будет царствовать во веки, Бог твой, Сион, в род и род. Аллилуия.",
+        "NEO": "Toutes tes œuvres te louent, \\+w Yahweh|strong=\"H3068\"\\+w**, et tes fidèles te bénissent.",
+        "NAB": "All your works give you thanks, O LORD and your faithful bless you.",
+        "VAT_ES": "[Iod] Que todas tus obras te den gracias, Señor,",
+        "CEI": "Ti lodino, Signore, tutte le tue opere e ti benedicano i tuoi fedeli."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כְּב֣וֹד מַלְכוּתְ/ךָ֣ יֹאמֵ֑רוּ וּ/גְבוּרָתְ/ךָ֥ יְדַבֵּֽרוּ׃",
+        "NEO": "Ils disent la gloire de ton règne, et proclament ta puissance,",
+        "NAB": "They speak of the glory of your reign and tell of your great works,",
+        "VAT_ES": "[Caf] que anuncien la gloria de tu reino",
+        "CEI": "Dicano la gloria del tuo regno e parlino della tua potenza,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "לְ/הוֹדִ֤יעַ לִ/בְנֵ֣י הָ֭/אָדָם גְּבוּרֹתָ֑י/ו וּ֝/כְב֗וֹד הֲדַ֣ר מַלְכוּתֽ/וֹ׃",
+        "NEO": "afin de faire connaître aux fils des hommes ses prodiges+ 145:12 \\+it Ses prodiges…, son règne\\+it*. LXX et Vulg., \\+it ta puissance…, ton règne\\+it*.*, et le glorieux éclat de son règne.",
+        "NAB": "Making known to all your power, the glorious splendor of your rule.",
+        "VAT_ES": "[Lámed] Así manifestarán a los hombres tu fuerza",
+        "CEI": "per manifestare agli uomini i tuoi prodigi e la splendida gloria del tuo regno."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "מַֽלְכוּתְ/ךָ֗ מַלְכ֥וּת כָּל עֹֽלָמִ֑ים וּ֝/מֶֽמְשֶׁלְתְּ/ךָ֗ בְּ/כָל דּ֥וֹר וָ/דֽוֹר׃",
+        "NEO": "Ton règne est un règne éternel, et ta domination subsiste dans tous les âges+ 145:13 Cf. Dan 3, 33; 4, 31. — Après le vers. 13, on lit dans les LXX et la Vulg. : \\+it Yahweh est fidèle dans toutes ses paroles, et saint dans toutes ses œuvres\\+it*. Ce verset paraît commencer par un noun (nééman Yahweh \\+it bekôl debaraw\\+it* etc. et combler la lacune que présente l’hébreu dans la série alphabétique.*.",
+        "NAB": "Your reign is a reign for all ages, your dominion for all generations. The LORD is trustworthy in every word, and faithful in every work.",
+        "VAT_ES": "[Mem] Tu reino es un reino eterno,",
+        "CEI": "Il tuo regno è regno di tutti i secoli, il tuo dominio si estende ad ogni generazione."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "סוֹמֵ֣ךְ יְ֭הוָה לְ/כָל הַ/נֹּפְלִ֑ים וְ֝/זוֹקֵ֗ף לְ/כָל הַ/כְּפוּפִֽים׃",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** soutient tous ceux qui tombent, il redresse tous ceux qui sont courbés.",
+        "NAB": "The LORD supports all who are falling and raises up all who are bowed down.",
+        "VAT_ES": "[Sámec] El Señor sostiene a los que caen",
+        "CEI": "Il Signore sostiene quelli che vacillano e rialza chiunque è caduto."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "עֵֽינֵי כֹ֭ל אֵלֶ֣י/ךָ יְשַׂבֵּ֑רוּ וְ/אַתָּ֤ה נֽוֹתֵן לָ/הֶ֖ם אֶת אָכְלָ֣/ם בְּ/עִתּֽ/וֹ׃",
+        "NEO": "Les yeux de tous les êtres sont tournés vers toi dans l’attente, et tu leur donnes leur nourriture en son temps.+ 145:15 Psa 54,27-28.*",
+        "NAB": "The eyes of all look hopefully to you; you give them their food in due season.",
+        "VAT_ES": "[Ain] Los ojos de todos esperan en ti,",
+        "CEI": "Gli occhi di tutti sono rivolti a te in attesa e tu provvedi loro il cibo a suo tempo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "פּוֹתֵ֥חַ אֶת יָדֶ֑/ךָ וּ/מַשְׂבִּ֖יעַ לְ/כָל חַ֣י רָצֽוֹן׃",
+        "NEO": "Tu ouvres ta main, et tu rassasies de tes biens+ 145:16 \\+it De tes biens\\+it*, litt. \\+it de bon vouloir\\+it*. D’autres : \\+it tu rassasies à souhait\\+it*.* tout ce qui respire.",
+        "NAB": "You open wide your hand and satisfy the desire of every living thing.",
+        "VAT_ES": "[Pe] abres tu mano",
+        "CEI": "Tu apri la tua mano e sazi la fame di ogni vivente."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "צַדִּ֣יק יְ֭הוָה בְּ/כָל דְּרָכָ֑י/ו וְ֝/חָסִ֗יד בְּ/כָל מַעֲשָֽׂי/ו׃",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est juste dans toutes ses voies, et miséricordieux+ 145:17 \\+it Et miséricordieux\\+it*. LXX et Vulg., \\+it et saint\\+it*.* dans toutes ses œuvres.",
+        "NAB": "You, LORD, are just in all your ways, faithful in all your works.",
+        "VAT_ES": "[Sade] El Señor es justo en todos sus caminos",
+        "CEI": "Giusto è il Signore in tutte le sue vie, santo in tutte le sue opere."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "קָר֣וֹב יְ֭הוָה לְ/כָל קֹרְאָ֑י/ו לְ/כֹ֤ל אֲשֶׁ֖ר יִקְרָאֻ֣/הוּ בֶ/אֱמֶֽת׃",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est près de tous ceux qui l’invoquent, de tous ceux qui l’invoquent d’un cœur sincère.",
+        "NAB": "You, LORD, are near to all who call upon you, to all who call upon you in truth.",
+        "VAT_ES": "[Qof] El Señor está cerca de aquellos que lo invocan,",
+        "CEI": "Il Signore è vicino a quanti lo invocano, a quanti lo cercano con cuore sincero."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "רְצוֹן יְרֵאָ֥י/ו יַעֲשֶׂ֑ה וְֽ/אֶת שַׁוְעָתָ֥/ם יִ֝שְׁמַ֗ע וְ/יוֹשִׁיעֵֽ/ם׃",
+        "NEO": "Il accomplit les désirs de ceux qui le craignent, il entend leur cri et il les sauve.",
+        "NAB": "You satisfy the desire of those who fear you; you hear their cry and save them.",
+        "VAT_ES": "[Res] cumple los deseos de sus fieles,",
+        "CEI": "Appaga il desiderio di quelli che lo temono, ascolta il loro grido e li salva."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "שׁוֹמֵ֣ר יְ֭הוָה אֶת כָּל אֹהֲבָ֑י/ו וְ/אֵ֖ת כָּל הָ/רְשָׁעִ֣ים יַשְׁמִֽיד׃",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** garde tous ceux qui l’aiment, et il détruit tous les méchants.",
+        "NAB": "You, LORD, watch over all who love you, but all the wicked you destroy.",
+        "VAT_ES": "[Sin] el Señor protege a todos sus amigos",
+        "CEI": "Il Signore protegge quanti lo amano, ma disperde tutti gli empi."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "תְּהִלַּ֥ת יְהוָ֗ה יְֽדַבֶּ֫ר פִּ֥/י וִ/יבָרֵ֣ךְ כָּל בָּ֭שָׂר שֵׁ֥ם קָדְשׁ֗/וֹ לְ/עוֹלָ֥ם וָ/עֶֽד׃",
+        "NEO": "Que ma bouche publie la louange de \\+w Yahweh|strong=\"H3068\"\\+w**, et que toute chair bénisse son saint nom, toujours, à jamais !",
+        "NAB": "My mouth will speak your praises, LORD; all flesh will bless your holy name forever.",
+        "VAT_ES": "[Tau] Mi boca proclamará la alabanza del Señor:",
+        "CEI": "Canti la mia bocca la lode del Signore e ogni vivente benedica il suo nome santo, in eterno e sempre."
+      }
+    }
+  }
+}

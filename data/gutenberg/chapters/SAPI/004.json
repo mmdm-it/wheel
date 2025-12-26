@@ -1,0 +1,354 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "SAPI_004",
+  "book_key": "SAPI",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "κρείσσων ἀτεκνία μετὰ ἀρετῆς· ἀθανασία γάρ ἐστιν ἐν μνήμῃ αὐτῆς, ὅτι καὶ παρὰ θεῷ γινώσκεται καὶ παρὰ ἀνθρώποις.",
+        "VUL": "[O quam pulchra est casta generatio, cum claritate !/ immortalis est enim memoria illius,/ quoniam et apud Deum nota est, et apud homines./",
+        "SYN": "Лучше бездетность с добродетелью, ибо память о ней бессмертна: она признается и у Бога и у людей.",
+        "NEO": "Mieux vaut la stérilité avec la vertu ; sa mémoire est immortelle, car elle est connue de Dieu et des hommes.",
+        "NAB": "Better is childlessness with virtue; for immortal is its memory: because both by God is it acknowledged, and by men.",
+        "VAT_ES": "Es mejor no tener hijos y poseer la virtud, porque ella deja un recuerdo inmortal, ya que es reconocida por Dios y por los hombres.",
+        "CEI": "Meglio essere senza figli e avere la virtù, poiché nel ricordo di questa c'è immortalità, per il fatto che è riconosciuta da Dio e dagli uomini."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "παροῦσάν τε μιμοῦνται αὐτήν, καὶ ποθοῦσιν ἀπελθοῦσαν· καὶ ἐν τῷ αἰῶνι στεφανηφοροῦσα πομπεύει, τὸν τῶν ἀμιάντων ἄθλων ἀγῶνα νικήσασα.",
+        "VUL": "Cum præsens est, imitantur illam,/ et desiderant eam cum se eduxerit ;/ et in perpetuum coronata triumphat,/ incoinquinatorum certaminum præmium vincens./",
+        "SYN": "Когда она присуща, ей подражают, а когда отойдет, стремятся к ней: и в вечности увенчанная она торжествует, как одержавшая победу непорочными подвигами.",
+        "NEO": "Quand on l’a sous les yeux, on l’imite ; quand elle n’est plus là, on la regrette ; couronnée dans l’éternité, elle triomphe, ayant remporté la victoire dans des combats sans souillure.",
+        "NAB": "When it is present men imitate it, and they long for it when it is gone; And forever it marches crowned in triumph, victorious in unsullied deeds of valor.",
+        "VAT_ES": "Cuando está presente, se la imita, cuando está ausente, se la echa de menos; en la eternidad, triunfa ceñida de una corona, vencedora en una lucha por premios intachables.",
+        "CEI": "Presente è imitata; assente è desiderata; nell'eternità trionfa, cinta di corona, per aver vinto nella gara di combattimenti senza macchia."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "πολύγονον δὲ ἀσεβῶν πλῆθος οὐ χρησιμεύσει, καὶ ἐκ νόθων μοσχευμάτων οὐ δώσει ῥίζαν εἰς βάθος, οὐδὲ ἀσφαλῆ βάσιν ἑδράσει·",
+        "VUL": "Multigena autem impiorum multitudo non erit utilis,/ et spuria vitulamina non dabunt radices altas,/ nec stabile firmamentum collocabunt./",
+        "SYN": "А плодородное множество нечестивых не принесет пользы, и прелюбодейные отрасли не дадут корней в глубину и не достигнут незыблемого основания;",
+        "NEO": "Mais la nombreuse postérité des impies est sans utilité ; issue* de rejetons bâtards, elle ne jettera pas de racines profondes, et ne s’établira pas sur un fondement assuré.",
+        "NAB": "But the numerous progeny of the wicked shall be of no avail; their spurious offshoots shall not strike deep root nor take firm hold.",
+        "VAT_ES": "En cambio, la numerosa descendencia de los impíos no servirá de nada: nacida de brotes bastardos, no echará raíces profundas ni se establecerá sobre un suelo firme.",
+        "CEI": "La discendenza numerosa degli empi non servirà a nulla; e dalle sue bastarde propaggini non metterà profonde radici né si consoliderà su una base sicura."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "κἂν γὰρ ἐν κλάδοις πρὸς καιρὸν ἀναθάλῃ, ἐπισφαλῶς βεβηκότα ὑπὸ ἀνέμου σαλευθήσεται, καὶ ὑπὸ βίας ἀνέμων ἐκριζωθήσεται·",
+        "VUL": "Etsi in ramis in tempore germinaverint,/ infirmiter posita, a vento commovebuntur,/ et a nimietate ventorum eradicabuntur./",
+        "SYN": "и хотя на время позеленеют в ветвях, но, не имея твердости, поколеблются от ветра и порывом ветров искоренятся;",
+        "NEO": "Alors même qu’ils se couvriraient pour un temps de verts rameaux, fixés au sol* sans solidité, ils seront ébranlés par le vent, et déracinés par la violence de l’ouragan.",
+        "NAB": "For even though their branches flourish for a time, they are unsteady and shall be rocked by the wind and, by the violence of the winds, uprooted;",
+        "VAT_ES": "Aunque por un tiempo crezcan sus ramas, al no estar bien arraigada, será sacudida por el viento y arrancada de raíz por la violencia del vendaval;",
+        "CEI": "Anche se per qualche tempo mette gemme sui rami, i suoi germogli precari saranno scossi dal vento e sradicati dalla violenza delle bufere."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "περικλασθήσονται κλῶνες ἀτέλεστοι, καὶ ὁ καρπὸς αὐτῶν ἄχρηστος, ἄωρος εἰς βρῶσιν καὶ εἰς οὐθὲν ἐπιτήδειος·",
+        "VUL": "Confringentur enim rami inconsummati ;/ et fructus illorum inutiles et acerbi ad manducandum,/ et ad nihilum apti./",
+        "SYN": "некрепкие ветви переломятся, и плод их будет бесполезен, незрел для пищи и ни к чему не годен;",
+        "NEO": "Leurs rameaux seront brisés encore tendres, leurs fruits sont inutiles, trop verts, pour être mangés, et impropres à tout usage.",
+        "NAB": "Their twigs shall be broken off untimely, and their fruit be useless, unripe for eating, and fit for nothing.",
+        "VAT_ES": "sus ramas serán quebradas cuando todavía estén tiernas, sus frutos serán inservibles; no estarán maduros para ser comidos ni prestarán ninguna utilidad.",
+        "CEI": "Si spezzeranno i ramoscelli ancora teneri; il loro frutto sarà inutile, non maturo da mangiare, e a nulla servirà."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ἐκ γὰρ ἀνόμων ὕπνων τέκνα γεννώμενα μάρτυρές εἰσιν πονηρίας κατὰ γονέων ἐν ἐξετασμῷ αὐτῶν·",
+        "VUL": "Ex iniquis enim somnis filii qui nascuntur,/ testes sunt nequitiæ adversus parentes in interrogatione sua./",
+        "SYN": "ибо дети, рождаемые от беззаконных сожитий, суть свидетели разврата против родителей при допросе их.",
+        "NEO": "Car les enfants nés* de sommeils impurs sont témoins du crime contre leurs parents quand on les interroge.",
+        "NAB": "For children born of lawless unions give evidence of the wickedness of their parents, when they are examined.",
+        "VAT_ES": "Porque los hijos nacidos de uniones culpables atestiguan contra la maldad de sus padres, cuando se los examina.",
+        "CEI": "Infatti i figli nati da unioni illegali attestano la perversità dei genitori nel giudizio di essi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "δίκαιος δὲ ἐὰν φθάσῃ τελευτῆσαι, ἐν ἀναπαύσει ἔσται.",
+        "VUL": "Justus autem si morte præoccupatus fuerit,/ in refrigerio erit ;/",
+        "SYN": "А праведник, если и рановременно умрет, будет в покое,",
+        "NEO": "Mais le juste, lors même qu’il meurt avant l’âge, trouve le repos.",
+        "NAB": "But the just man, though he die early, shall be at rest.",
+        "VAT_ES": "El justo, aunque tenga un fin prematuro, gozará del reposo.",
+        "CEI": "Il giusto, anche se muore prematuramente, troverà riposo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "γῆρας γὰρ τίμιον οὐ τὸ πολυχρόνιον, οὐδὲ ἀριθμῷ ἐτῶν μεμέτρηται·",
+        "VUL": "senectus enim venerabilis est non diuturna,/ neque annorum numero computata :/ cani autem sunt sensus hominis,/",
+        "SYN": "ибо не в долговечности честная старость и не числом лет измеряется:",
+        "NEO": "Une vieillesse honorable n’est pas celle que donne* une longue vie ; ni celle qui se mesure au nombre des années.",
+        "NAB": "For the age that is honorable comes not with the passing of time, nor can it be measured in terms of years.",
+        "VAT_ES": "La vejez honorable no consiste en vivir mucho tiempo ni se mide por el número de años:",
+        "CEI": "Vecchiaia veneranda non è la longevità, né si calcola dal numero degli anni;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "πολιὰ δέ ἐστιν φρόνησις ἀνθρώποις, καὶ ἡλικία γήρως βίος ἀκηλίδωτος.",
+        "VUL": "et ætas senectutis vita immaculata./",
+        "SYN": "мудрость есть седина для людей, и беспорочная жизнь - возраст старости.",
+        "NEO": "Mais la prudence tient lieu pour l’homme de cheveux blancs ; et l’âge de la vieillesse, c’est une vie sans tache.",
+        "NAB": "Rather, understanding is the hoary crown for men, and an unsullied life, the attainment of old age.",
+        "VAT_ES": "los cabellos blancos del hombre son la prudencia, y la edad madura, una vida intachable.",
+        "CEI": "ma la canizie per gli uomini sta nella sapienza; e un'età senile è una vita senza macchia."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "εὐάρεστος τῷ θεῷ γενόμενος ἠγαπήθη, καὶ ζῶν μεταξὺ ἁμαρτωλῶν μετετέθη·",
+        "VUL": "Placens Deo factus est dilectus,/ et vivens inter peccatores translatus est./",
+        "SYN": "Как благоугодивший Богу, он возлюблен, и, как живший посреди грешников, преставлен,",
+        "NEO": "Étant agréable à Dieu, il était aimé de lui*, et, comme il vivait parmi les pécheurs, il a été transféré.+ 4:10 Le portrait de ce juste est influencé par Gen 5:24 : “Hénoch plut à Dieu, et on ne le trouva plus, parce que Dieu l’avait transféré” : comp. Sir 46:16 ; Heb 11:5.*",
+        "NAB": "He who pleased God was loved; he who lived among sinners was transported -",
+        "VAT_ES": "Porque se hizo agradable a Dios, el justo fue amado por él, y como vivía entre los pecadores, fue trasladado de este mundo.",
+        "CEI": "Divenuto caro a Dio, fu amato da lui e poiché viveva fra peccatori, fu trasferito."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἡρπάγη, μὴ κακία ἀλλάξῃ σύνεσιν αὐτοῦ, ἢ δόλος ἀπατήσῃ ψυχὴν αὐτοῦ·",
+        "VUL": "Raptus est, ne malitia mutaret intellectum ejus,/ aut ne fictio deciperet animam illius./",
+        "SYN": "восхищен, чтобы злоба не изменила разума его, или коварство не прельстило души его.",
+        "NEO": "Il a été enlevé de peur que la malice n’altérât son intelligence, ou que la ruse ne pervertît son âme.",
+        "NAB": "Snatched away, lest wickedness pervert his mind or deceit beguile his soul;",
+        "VAT_ES": "Fue arrebatado para que la maldad no pervirtiera su inteligencia ni el engaño sedujera su alma.",
+        "CEI": "Fu rapito, perché la malizia non ne mutasse i sentimenti o l'inganno non ne traviasse l'animo,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "βασκανία γὰρ φαυλότητος ἀμαυροῖ τὰ καλά, καὶ ῥεμβασμὸς ἐπιθυμίας μεταλλεύει νοῦν ἄκακον.",
+        "VUL": "Fascinatio enim nugacitatis obscurat bona,/ et inconstantia concupiscentiæ transvertit sensum sine malitia./",
+        "SYN": "Ибо упражнение в нечестии помрачает доброе, и волнение похоти развращает ум незлобивый.",
+        "NEO": "Car l’enchantement du vice obscurcit le bien, et le vertige de la passion pervertit un esprit sans malice.",
+        "NAB": "For the witchery of paltry things obscures what is right and the whirl of desire transforms the innocent mind.",
+        "VAT_ES": "Porque el atractivo del mal oscurece el bien y el torbellino de la pasión altera una mente sin malicia.",
+        "CEI": "poiché il fascino del vizio deturpa anche il bene e il turbine della passione travolge una mente semplice."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "τελειωθεὶς ἐν ὀλίγῳ ἐπλήρωσεν χρόνους μακρούς·",
+        "VUL": "Consummatus in brevi,/ explevit tempora multa ;/",
+        "SYN": "Достигнув совершенства в короткое время, он исполнил долгие лета;",
+        "NEO": "Arrivé en peu de temps à la perfection, il a fourni une longue carrière.",
+        "NAB": "Having become perfect in a short while, he reached the fullness of a long career;",
+        "VAT_ES": "Llegado a la perfección en poco tiempo, alcanzó la plenitud de una larga vida.",
+        "CEI": "Giunto in breve alla perfezione, ha compiuto una lunga carriera."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "ἀρεστὴ γὰρ ἦν Κυρίῳ ἡ ψυχὴ αὐτοῦ, διὰ τοῦτο ἔσπευσεν ἐκ μέσου πονηρίας· οἱ δὲ λαοὶ ἰδόντες καὶ μὴ νοήσαντες, μηδὲ θέντες ἐπὶ διανοίᾳ τὸ τοιοῦτο,",
+        "VUL": "placita enim erat Deo anima illius :/ propter hoc properavit educere illum de medio iniquitatum./ Populi autem videntes, et non intelligentes,/ nec ponentes in præcordiis talia,/",
+        "SYN": "ибо душа его была угодна Господу, потому и ускорил он из среды нечестия. А люди видели это и не поняли, даже и не подумали о том,",
+        "NEO": "Car son âme était agréable au Seigneur ; c’est pourquoi le Seigneur* s’est hâté de le retirer* du milieu de l’iniquité.",
+        "NAB": "for his soul was pleasing to the LORD, therefore he sped him out of the midst of wickedness. But the people saw and did not understand, nor did they take this into account.",
+        "VAT_ES": "Su alma era agradable al Señor, por eso, él se apresuró a sacarlo de en medio de la maldad. La gente ve esto y no lo comprende; ni siquiera se les pasa por la mente",
+        "CEI": "La sua anima fu gradita al Signore; perciò egli lo tolse in fretta da un ambiente malvagio. I popoli vedono senza comprendere; non riflettono nella mente a questo fatto"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ὅτι χάρις καὶ ἔλεος ἐν τοῖς ἐκλεκτοῖς αὐτοῦ καὶ ἐπισκοπὴ ἐν τοῖς ὁσίοις αὐτοῦ.",
+        "VUL": "quoniam gratia Dei et misericordia est in sanctos ejus,/ et respectus in electos illius./",
+        "SYN": "что благодать и милость со святыми Его и промышление об избранных Его.",
+        "NEO": "Les peuples le voient sans y rien comprendre, ne se mettant pas ceci dans l’esprit que la grâce de Dieu* et sa* miséricorde sont avec ses élus, et qu’il a souci de ses saints.",
+        "VAT_ES": "que los elegidos del Señor encuentran gracia y misericordia, y que él interviene en favor de sus santos.",
+        "CEI": "che la grazia e la misericordia sono per i suoi eletti e la protezione per i suoi santi."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "κατακρινεῖ δὲ δίκαιος καμὼν τοὺς ζῶντας ἀσεβεῖς, καὶ νεότης τελεσθεῖσα ταχέως πολυετὲς γῆρας ἀδίκου.",
+        "VUL": "Condemnat autem justus mortuus vivos impios,/ et juventus celerius consummata longam vitam injusti./",
+        "SYN": "Праведник, умирая, осудит живых нечестивых, и скоро достигшая совершенства юность - долголетнюю старость неправедного;",
+        "NEO": "Mais le juste qui meurt condamne les impies qui survivent, et la jeunesse arrivée si vite à la perfection condamne* la longue vieillesse de l’homme injuste.",
+        "NAB": "Yes, the just man dead condemns the sinful who live, and youth swiftly completed condemns the many years of the wicked man grown old.",
+        "VAT_ES": "El justo que muere condena a los impíos que viven, y una juventud que alcanza pronto la perfección reprueba la larga vejez del injusto.",
+        "CEI": "Il giusto defunto condanna gli empi ancora in vita; una giovinezza, giunta in breve alla perfezione, condanna la lunga vecchiaia dell'ingiusto."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "ὄψονται γὰρ τελευτὴν σοφοῦ, καὶ οὐ νοήσουσιν τί ἐβουλεύσατο περὶ αὐτοῦ, καὶ εἰς τί ἠσφαλίσατο αὐτὸν ὁ κύριος·",
+        "VUL": "Videbunt enim finem sapientis,/ et non intelligent quid cogitaverit de illo Deus,/ et quare munierit illum Dominus./",
+        "SYN": "ибо они увидят кончину мудрого и не поймут, что Господь определил о нем и для чего поставил его в безопасность;",
+        "NEO": "Ils verront la fin du sage, mais sans comprendre les desseins de Dieu* sur lui, ni pourquoi le Seigneur l’a mis en sûreté.",
+        "NAB": "For they see the death of the wise man and do not understand what the LORD intended for him, or why he made him secure.",
+        "VAT_ES": "Ellos verán el fin del sabio, pero por qué lo han puesto en lugar seguro;",
+        "CEI": "Le folle vedranno la fine del saggio, ma non capiranno ciò che Dio ha deciso a suo riguardo né in vista di che cosa il Signore l'ha posto al sicuro."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "ὄψονται καὶ ἐξουθενήσουσιν, αὐτοὺς δὲ ὁ κύριος ἐκγελάσεται·",
+        "VUL": "Videbunt, et contemnent eum ;/ illos autem Dominus irridebit./",
+        "SYN": "они увидят и уничтожат его, но Господь посмеется им;",
+        "NEO": "Ils verront et se moqueront, mais le Seigneur se rira d’eux ;",
+        "NAB": "They see, and hold him in contempt; but the LORD laughs them to scorn.",
+        "VAT_ES": "lo verán y sentirán desprecio, pero el Señor se reirá de ellos.",
+        "CEI": "Vedranno e disprezzeranno, ma il Signore li deriderà."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "καὶ ἔσονται μετὰ τοῦτο εἰς πτῶμα ἄτιμον καὶ εἰς ὕβριν ἐν νεκροῖς δι’ αἰῶνος. ὅτι ῥήξει αὐτοὺς ἀφώνους πρηνεῖς, καὶ σαλεύσει αὐτοὺς ἐκ θεμελίων· καὶ ἕως ἐσχάτου χερσωθήσονται, καὶ ἔσονται ἐν ὀδύνῃ, καὶ ἡ μνήμη αὐτῶν ἀπολεῖται.",
+        "VUL": "Et erunt post hæc decidentes sine honore,/ et in contumelia inter mortuos in perpetuum :/ quoniam disrumpet illos inflatos sine voce,/ et commovebit illos a fundamentis,/ et usque ad supremum desolabuntur,/ et erunt gementes, et memoria illorum peribit./",
+        "SYN": "и после сего будут они бесчестным трупом и позором между умершими навек, ибо Он повергнет их ниц безгласными и сдвинет их с оснований, и они вконец запустеют и будут в скорби, и память их погибнет;",
+        "NEO": "et après cela ils seront un cadavre sans honneur, ils seront parmi les morts dans l’opprobre pour toujours. Le Seigneur* les brisera, et, réduits au silence, les précipitera ; il les ébranlera de leurs fondements, et ils seront détruits jusqu’au dernier ; ils seront dans la douleur, et leur mémoire périra.",
+        "NAB": "And they shall afterward become dishonored corpses and an unceasing mockery among the dead. For he shall strike them down speechless and prostrate and rock them to their foundations; They shall be utterly laid waste and shall be in grief and their memory shall perish.",
+        "VAT_ES": "Después se convertirán en un cadáver infame, objeto del oprobio eterno entre los muertos. El Señor los precipitará de cabeza, sin que puedan hablar, los arrancará de sus cimientos, y serán completamente exterminados: quedarán sumidos en el dolor, y desaparecerá hasta su recuerdo.",
+        "CEI": "Infine diventeranno un cadavere spregevole, oggetto di scherno fra i morti per sempre. Dio infatti li precipiterà muti, a capofitto, e li schianterà dalle fondamenta; saranno del tutto rovinati, si troveranno tra dolori e il loro ricordo perirà. Gli empi compaiono in giudizio"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ἐλεύσονται ἐν συλλογισμῷ ἁμαρτημάτων αὐτῶν δειλοί, καὶ ἐλέγξει αὐτοὺς ἐξ ἐναντίας τὰ ἀνομήματα αὐτῶν.",
+        "VUL": "Venient in cogitatione peccatorum suorum timidi,/ et traducent illos ex adverso iniquitates ipsorum.]",
+        "SYN": "в сознании грехов своих они предстанут со страхом, и беззакония их осудят их в лице их.",
+        "NEO": "Ils viendront pleins d’effroi à la pensée de leurs péchés, et leurs crimes, se dressant* devant eux, les accuseront.",
+        "NAB": "Fearful shall they come, at the counting up of their sins, and their lawless deeds shall convict them to their face.",
+        "VAT_ES": "Cuando se haga el recuento de sus pecados, llegarán atemorizados, y sus iniquidades se levantarán contra ellos para acusarlos.",
+        "CEI": "Si presenteranno tremanti al rendiconto dei loro peccati; le loro iniquità si alzeranno contro di essi per accusarli."
+      }
+    }
+  }
+}

@@ -1,0 +1,969 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_COR_015",
+  "book_key": "I_COR",
+  "sequence": 15,
+  "chapter_in": {
+    "MT": 15,
+    "VUL": 15,
+    "LXX": 15
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Γνωρίζω δὲ ὑμῖν, ἀδελφοί, τὸ εὐαγγέλιον ὃ εὐηγγελισάμην ὑμῖν, ὃ καὶ παρελάβετε, ἐν ᾧ καὶ ἑστήκατε,",
+        "VUL": "Notum autem vobis facio, fratres, Evangelium, quod prædicavi vobis, quod et accepistis, in quo et statis,",
+        "SYN": "Напоминаю вам, братия, Евангелие, которое я благовествовал вам, которое вы и приняли, в котором и утвердились,",
+        "NEO": "Je vous rappelle, frères, l’Évangile que je vous ai annoncé, que vous avez reçu, dans lequel vous avez persévéré,",
+        "NAB": "Now I am reminding you, brothers, of the gospel I preached to you, which you indeed received and in which you also stand.",
+        "VAT_ES": "Hermanos, les recuerdo la Buena Noticia que yo les he predicado, que ustedes han recibido y a la cual permanecen fieles.",
+        "CEI": "Cristo ci ha liberati perché restassimo liberi; state dunque saldi e non lasciatevi imporre di nuovo il giogo della schiavitù."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "δι’ οὗ καὶ σῴζεσθε· τίνι λόγῳ εὐηγγελισάμην ὑμῖν, εἰ κατέχετε, ἐκτὸς εἰ μὴ εἰκῇ ἐπιστεύσατε.",
+        "VUL": "per quod et salvamini : qua ratione prædicaverim vobis, si tenetis, nisi frustra credidistis.",
+        "SYN": "которым и спасаетесь, если преподанное удерживаете так, как я благовествовал вам, если только не тщетно уверовали.",
+        "NEO": "et par lequel aussi vous êtes sauvés, si vous le retenez tel que je vous l’ai annoncé ; à moins que vous n’ayez cru en vain.",
+        "NAB": "Through it you are also being saved, if you hold fast to the word I preached to you, unless you believed in vain.",
+        "VAT_ES": "Por ella son salvados, si la conservan tal como yo se la anuncié; de lo contrario, habrán creído en vano.",
+        "CEI": "Ecco, io Paolo vi dico: se vi fate circoncidere, Cristo non vi gioverà nulla."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Παρέδωκα γὰρ ὑμῖν ἐν πρώτοις, ὃ καὶ παρέλαβον, ὅτι χριστὸς ἀπέθανεν ὑπὲρ τῶν ἁμαρτιῶν ἡμῶν κατὰ τὰς γραφάς·",
+        "VUL": "Tradidi enim vobis in primis quod et accepi : quoniam Christus mortuus est pro peccatis nostris secundum Scripturas :",
+        "SYN": "Ибо я первоначально преподал вам, что и _сам_ принял, _то_ _есть,_ что Христос умер за грехи наши, по Писанию,",
+        "NEO": "Je vous ai enseigné avant tout, comme je l’ai appris moi-même, que le Christ est mort pour nos péchés, conformément aux Écritures ;",
+        "NAB": "For I handed on to you as of first importance what I also received: that Christ died for our sins in accordance with the scriptures;",
+        "VAT_ES": "Les he trasmitido en primer lugar, lo que yo mismo recibí: Cristo murió por nuestros pecados, conforme a la Escritura.",
+        "CEI": "E dichiaro ancora una volta a chiunque si fa circoncidere che egli è obbligato ad osservare tutta quanta la legge."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "καὶ ὅτι ἐτάφη· καὶ ὅτι ἐγήγερται τῇ τρίτῃ ἡμέρᾳ κατὰ τὰς γραφάς·",
+        "VUL": "et quia sepultus est, et quia resurrexit tertia die secundum Scripturas :",
+        "SYN": "и что Он погребен был, и что воскрес в третий день, по Писанию,",
+        "NEO": "qu’il a été enseveli et qu’il est ressuscité le troisième jour, conformément aux Écritures ;",
+        "NAB": "that he was buried; that he was raised on the third day in accordance with the scriptures;",
+        "VAT_ES": "Fue sepultado y resucitó al tercer día, de acuerdo con la Escritura.",
+        "CEI": "Non avete più nulla a che fare con Cristo voi che cercate la giustificazione nella legge; siete decaduti dalla grazia."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "καὶ ὅτι ὤφθη Κηφᾷ, εἶτα τοῖς δώδεκα·",
+        "VUL": "et quia visus est Cephæ, et post hoc undecim :",
+        "SYN": "и что явился Кифе, потом двенадцати;",
+        "NEO": "et qu’il est apparu à Céphas, puis aux Douze.+ 15:5 XV, 5. Céphas, Pierre, Luc, xxiv, 34. — \\+qt Aux Douze\\+qt*, aux Apôtres, Jean, xx, 19 sv. La Vulg. et quelques manuscrits, \\+qt aux Onze\\+qt* ; mais on disait \\+qt les Douze\\+qt* alors même que le collège apostolique n’était plus complet.*",
+        "NAB": "that he appeared to Kephas, then to the Twelve.",
+        "VAT_ES": "Se apareció a Pedro y después a los Doce.",
+        "CEI": "Noi infatti per virtù dello Spirito, attendiamo dalla fede la giustificazione che speriamo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "ἔπειτα ὤφθη ἐπάνω πεντακοσίοις ἀδελφοῖς ἐφάπαξ, ἐξ ὧν οἱ πλείους μένουσιν ἕως ἄρτι, τινὲς δὲ καὶ ἐκοιμήθησαν·",
+        "VUL": "deinde visus est plus quam quingentis fratribus simul : ex quibus multi manent usque adhuc, quidam autem dormierunt :",
+        "SYN": "потом явился более нежели пятистам братий в одно время, из которых большая часть доныне в живых, а некоторые и почили;",
+        "NEO": "Après cela, il est apparu en une seule fois à plus de cinq cents frères,+ 15:6 6. Cinq cents frères: l’apparition sur la montagne de Galilée où Jésus devait se mettre à la tête du \\+qt pusillus grex\\+qt* réuni de nouveau (Matth. xxvi, 32 ; xxviii, 10, 16-20). Car la première chrétienté de Jérusalem ne comptait à l’origine qu’environ 120 membres (Act. i, 15).* dont la plupart sont encore vivants, et quelques-uns se sont endormis.",
+        "NAB": "After that, he appeared to more than five hundred brothers at once, most of whom are still living, though some have fallen asleep.",
+        "VAT_ES": "Luego se apareció a más de quinientos hermanos al mismo tiempo, la mayor parte de los cuales vive aún, y algunos han muerto.",
+        "CEI": "Poiché in Cristo Gesù non è la circoncisione che conta o la non circoncisione, ma la fede che opera per mezzo della carità."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "ἔπειτα ὤφθη Ἰακώβῳ, εἶτα τοῖς ἀποστόλοις πᾶσιν·",
+        "VUL": "deinde visus est Jacobo, deinde Apostolis omnibus :",
+        "SYN": "потом явился Иакову, также всем Апостолам;",
+        "NEO": "Ensuite il est apparu à Jacques, puis à tous les apôtres.",
+        "NAB": "After that he appeared to James, then to all the apostles.",
+        "VAT_ES": "Además, se apareció a Santiago y de nuevo a todos los Apóstoles.",
+        "CEI": "Correvate così bene; chi vi ha tagliato la strada che non obbedite più alla verità?"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "ἔσχατον δὲ πάντων, ὡσπερεὶ τῷ ἐκτρώματι, ὤφθη κἀμοί.",
+        "VUL": "novissime autem omnium tamquam abortivo, visus est et mihi.",
+        "SYN": "а после всех явился и мне, как некоему извергу.",
+        "NEO": "Après eux tous, il m’est aussi apparu à moi, comme à l’avorton.+ 15:8 8. Il est apparu, sur le chemin de Damas (Act. ix, 3 sv.). — \\+qt Avorton\\+qt*, fruit qui se détache avant d’être arrivé à maturité : Paul s’appelle ainsi, soit parce que sa conversion, sa régénération a eu lieu d’une manière violente et en dehors de la voie ordinaire, soit aussi parce qu’il a conscience de son indignité et de sa faiblesse.*",
+        "NAB": "Last of all, as to one born abnormally, he appeared to me.",
+        "VAT_ES": "Por último, se me apareció también a mí, que soy como el fruto de un aborto.",
+        "CEI": "Questa persuasione non viene sicuramente da colui che vi chiama!"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Ἐγὼ γάρ εἰμι ὁ ἐλάχιστος τῶν ἀποστόλων, ὃς οὐκ εἰμὶ ἱκανὸς καλεῖσθαι ἀπόστολος, διότι ἐδίωξα τὴν ἐκκλησίαν τοῦ θεοῦ.",
+        "VUL": "Ego enim sum minimus Apostolorum, qui non sum dignus vocari Apostolus, quoniam persecutus sum ecclesiam Dei.",
+        "SYN": "Ибо я наименьший из Апостолов, и недостоин называться Апостолом, потому что гнал церковь Божию.",
+        "NEO": "Car je suis le moindre des Apôtres, moi qui ne suis pas digne d’être appelé apôtre, parce que j’ai persécuté l’Église de Dieu.",
+        "NAB": "For I am the least of the apostles, not fit to be called an apostle, because I persecuted the church of God.",
+        "VAT_ES": "Porque yo soy el último de los Apóstoles, y ni siquiera merezco ser llamado Apóstol, ya que he perseguido a la Iglesia de Dios.",
+        "CEI": "Un pò di lievito fa fermentare tutta la pasta."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Χάριτι δὲ θεοῦ εἰμι ὅ εἰμι, καὶ ἡ χάρις αὐτοῦ ἡ εἰς ἐμὲ οὐ κενὴ ἐγενήθη, ἀλλὰ περισσότερον αὐτῶν πάντων ἐκοπίασα, οὐκ ἐγὼ δέ, ἀλλ’ ἡ χάρις τοῦ θεοῦ ἡ σὺν ἐμοί.",
+        "VUL": "Gratia autem Dei sum id quod sum, et gratia ejus in me vacua non fuit, sed abundantius illis omnibus laboravi : non ego autem, sed gratia Dei mecum :",
+        "SYN": "Но благодатию Божиею есмь то, что есмь; и благодать Его во мне не была тщетна, но я более всех их потрудился: не я, впрочем, а благодать Божия, которая со мною.",
+        "NEO": "C’est par la grâce de Dieu que je suis ce que je suis, et sa grâce envers moi n’a pas été vaine ; loin de là, j’ai travaillé plus qu’eux tous, non pas moi pourtant, mais la grâce de Dieu qui est avec moi.",
+        "NAB": "But by the grace of God I am what I am, and his grace to me has not been ineffective. Indeed, I have toiled harder than all of them; not I, however, but the grace of God (that is) with me.",
+        "VAT_ES": "Pero por la gracia de Dios soy lo que soy, y su gracia no fue estéril en mí, sino que yo he trabajado más que todos ellos, aunque no he sido yo, sino la gracia de Dios que está conmigo.",
+        "CEI": "Io sono fiducioso per voi nel Signore che non penserete diversamente; ma chi vi turba, subirà la sua condanna, chiunque egli sia."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Εἴτε οὖν ἐγώ, εἴτε ἐκεῖνοι, οὕτως κηρύσσομεν καὶ οὕτως ἐπιστεύσατε.",
+        "VUL": "sive enim ego, sive illi : sic prædicamus, et sic credidistis.",
+        "SYN": "Итак я ли, они ли, мы так проповедуем, и вы так уверовали.",
+        "NEO": "Ainsi donc, soit moi, soit eux, voilà ce que nous prêchons, et voilà ce que vous avez cru.",
+        "NAB": "Therefore, whether it be I or they, so we preach and so you believed.",
+        "VAT_ES": "En resumen, tanto ellos como yo, predicamos lo mismo, y esto es lo que ustedes han creído.",
+        "CEI": "Quanto a me, fratelli, se io predico ancora la circoncisione, perché sono tuttora perseguitato? È dunque annullato lo scandalo della croce?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "¶Εἰ δὲ χριστὸς κηρύσσεται ὅτι ἐκ νεκρῶν ἐγήγερται, πῶς λέγουσίν τινες ἐν ὑμῖν ὅτι ἀνάστασις νεκρῶν οὐκ ἔστιν;",
+        "VUL": "Si autem Christus prædicatur quod resurrexit a mortuis, quomodo quidam dicunt in vobis, quoniam resurrectio mortuorum non est ?",
+        "SYN": "Если же о Христе проповедуется, что Он воскрес из мертвых, то как некоторые из вас говорят, что нет воскресения мертвых?",
+        "NEO": "Or, si l’on prêche que le Christ est ressuscité des morts, comment quelques-uns parmi vous disent-ils qu’il n’y a pas de résurrection des morts ?+ 15:12 12. Ce que l’Apôtre établit ici, c’est la connexion nécessaire de la résurrection de J.-C. avec la nôtre. Le point de départ de sa démonstration c’est la doctrine si fondamentale dans la théologie des Épîtres, du corps mystique de J.-C. L’union la plus étroite rattache les membres à leur chef. Impossible de concevoir le Christ ressuscité, et glorifié dans son humanité, sans que les fidèles incorporés à lui par la foi et par la grâce soient associés aux gloires de sa résurrection (S. Jean Chrysostome).*",
+        "NAB": "But if Christ is preached as raised from the dead, how can some among you say there is no resurrection of the dead?",
+        "VAT_ES": "Si se anuncia que Cristo resucitó de entre los muertos, &iquest;cómo algunos de ustedes afirman que los muertos no resucitan?",
+        "CEI": "Dovrebbero farsi mutilare coloro che vi turbano."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ ἀνάστασις νεκρῶν οὐκ ἔστιν, οὐδὲ χριστὸς ἐγήγερται·",
+        "VUL": "Si autem resurrectio mortuorum non est : neque Christus resurrexit.",
+        "SYN": "Если нет воскресения мертвых, то и Христос не воскрес;",
+        "NEO": "S’il n’y a pas de résurrection des morts, le Christ non plus n’est pas ressuscité.",
+        "NAB": "If there is no resurrection of the dead, then neither has Christ been raised.",
+        "VAT_ES": "&iexcl;Si no hay resurrección, Cristo no resucitó!",
+        "CEI": "Voi infatti, fratelli, siete stati chiamati a libertà. Purché questa libertà non divenga un pretesto per vivere secondo la carne, ma mediante la carità siate a servizio gli uni degli altri."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "εἰ δὲ χριστὸς οὐκ ἐγήγερται, κενὸν ἄρα τὸ κήρυγμα ἡμῶν, κενὴ δὲ καὶ ἡ πίστις ὑμῶν.",
+        "VUL": "Si autem Christus non resurrexit, inanis est ergo prædicatio nostra, inanis est et fides vestra :",
+        "SYN": "а если Христос не воскрес, то и проповедь наша тщетна, тщетна и вера ваша.",
+        "NEO": "Et si le Christ n’est pas ressuscité, notre prédication est donc vaine, vaine aussi est votre foi.",
+        "NAB": "And if Christ has not been raised, then empty (too) is our preaching; empty, too, your faith.",
+        "VAT_ES": "Y si Cristo no resucitó, es vana nuestra predicación y vana también la fe de ustedes.",
+        "CEI": "Tutta la legge infatti trova la sua pienezza in un solo precetto: amerai il prossimo tuo come te stesso."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Εὑρισκόμεθα δὲ καὶ ψευδομάρτυρες τοῦ θεοῦ, ὅτι ἐμαρτυρήσαμεν κατὰ τοῦ θεοῦ ὅτι ἤγειρεν τὸν χριστόν, ὃν οὐκ ἤγειρεν, εἴπερ ἄρα νεκροὶ οὐκ ἐγείρονται.",
+        "VUL": "invenimur autem et falsi testes Dei : quoniam testimonium diximus adversus Deum quod suscitaverit Christum, quem non suscitavit, si mortui non resurgunt.",
+        "SYN": "Притом мы оказались бы и лжесвидетелями о Боге, потому что свидетельствовали бы о Боге, что Он воскресил Христа, Которого Он не воскрешал, если, _то_ _есть,_ мертвые не воскресают;",
+        "NEO": "Il se trouve même que nous sommes de faux témoins à l’égard de Dieu, puisque nous avons témoigné contre lui qu’il a ressuscité le Christ, tandis qu’il ne l’aurait pas ressuscité, s’il est vrai que les morts ne ressuscitent pas.",
+        "NAB": "Then we are also false witnesses to God, because we testified against God that he raised Christ, whom he did not raise if in fact the dead are not raised.",
+        "VAT_ES": "Incluso, seríamos falsos testigos de Dios, porque atestiguamos que él resucitó a Jesucristo, lo que es imposible, si los muertos no resucitan.",
+        "CEI": "Ma se vi mordete e divorate a vicenda, guardate almeno di non distruggervi del tutto gli uni gli altri!"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Εἰ γὰρ νεκροὶ οὐκ ἐγείρονται, οὐδὲ χριστὸς ἐγήγερται·",
+        "VUL": "Nam si mortui non resurgunt, neque Christus resurrexit.",
+        "SYN": "ибо если мертвые не воскресают, то и Христос не воскрес.",
+        "NEO": "Car si les morts ne ressuscitent pas, le Christ non plus n’est pas ressuscité.",
+        "NAB": "For if the dead are not raised, neither has Christ been raised,",
+        "VAT_ES": "Porque si los muertos no resucitan, tampoco Cristo resucitó.",
+        "CEI": "Vi dico dunque: camminate secondo lo Spirito e non sarete portati a soddisfare i desideri della carne;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "εἰ δὲ χριστὸς οὐκ ἐγήγερται, ματαία ἡ πίστις ὑμῶν· ἔτι ἐστὲ ἐν ταῖς ἁμαρτίαις ὑμῶν.",
+        "VUL": "Quod si Christus non resurrexit, vana est fides vestra : adhuc enim estis in peccatis vestris.",
+        "SYN": "А если Христос не воскрес, то вера ваша тщетна: вы еще во грехах ваших.",
+        "NEO": "Et si le Christ n’est pas ressuscité,+ 15:17 17. Si le Christ n’est pas ressuscité, nous n’avons pas la garantie que Dieu ait accepté sa mort comme rédemption. Il n’y a donc rien de fait.* votre foi est vaine, vous êtes encore dans vos péchés,",
+        "NAB": "and if Christ has not been raised, your faith is vain; you are still in your sins.",
+        "VAT_ES": "Y si Cristo no resucitó, la fe de ustedes es inútil y sus pecados no han sido perdonados.",
+        "CEI": "la carne infatti ha desideri contrari allo Spirito e lo Spirito ha desideri contrari alla carne; queste cose si oppongono a vicenda, sicché voi non fate quello che vorreste."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Ἄρα καὶ οἱ κοιμηθέντες ἐν χριστῷ ἀπώλοντο.",
+        "VUL": "Ergo et qui dormierunt in Christo, perierunt.",
+        "SYN": "Поэтому и умершие во Христе погибли.",
+        "NEO": "et par conséquent aussi, ceux qui se sont endormis dans le Christ sont perdus.",
+        "NAB": "Then those who have fallen asleep in Christ have perished.",
+        "VAT_ES": "en consecuencia, los que murieron con la fe en Cristo han perecido para siempre.",
+        "CEI": "Ma se vi lasciate guidare dallo Spirito, non siete più sotto la legge."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Εἰ ἐν τῇ ζωῇ ταύτῃ ἠλπικότες ἐσμὲν ἐν χριστῷ μόνον, ἐλεεινότεροι πάντων ἀνθρώπων ἐσμέν.",
+        "VUL": "Si in hac vita tantum in Christo sperantes sumus, miserabiliores sumus omnibus hominibus.",
+        "SYN": "И если мы в этой только жизни надеемся на Христа, то мы несчастнее всех человеков.",
+        "NEO": "Si nous n’avons d’espérance dans le Christ que pour cette vie seulement, nous sommes les plus malheureux de tous les hommes.",
+        "NAB": "If for this life only we have hoped in Christ, we are the most pitiable people of all.",
+        "VAT_ES": "Si nosotros hemos puesto nuestra esperanza en Cristo solamente para esta vida, seríamos los hombres más dignos de lástima.",
+        "CEI": "Del resto le opere della carne sono ben note: fornicazione, impurità, libertinaggio,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "¶Νυνὶ δὲ χριστὸς ἐγήγερται ἐκ νεκρῶν, ἀπαρχὴ τῶν κεκοιμημένων ἐγένετο.",
+        "VUL": "Nunc autem Christus resurrexit a mortuis primitiæ dormientium,",
+        "SYN": "Но Христос воскрес из мертвых, первенец из умерших.",
+        "NEO": "Mais maintenant le Christ est ressuscité des morts, il est les prémices de ceux qui se sont endormis.+ 15:20 20. On appelait prémices les premiers fruits de la moisson. Si J.-C. est \\+qt prémices\\+qt* en tant que ressuscité des morts, la moisson doit suivre, tous les justes, ses membres vivants doivent ressusciter.*",
+        "NAB": "But now Christ has been raised from the dead, the firstfruits of those who have fallen asleep.",
+        "VAT_ES": "Pero no, Cristo resucitó de entre los muertos, el primero de todos.",
+        "CEI": "idolatria, stregonerie, inimicizie, discordia, gelosia, dissensi, divisioni, fazioni,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Ἐπειδὴ γὰρ δι’ ἀνθρώπου ὁ θάνατος, καὶ δι’ ἀνθρώπου ἀνάστασις νεκρῶν.",
+        "VUL": "quoniam quidem per hominem mors, et per hominem resurrectio mortuorum.",
+        "SYN": "Ибо, как смерть через человека, _так_ через человека и воскресение мертвых.",
+        "NEO": "Car, puisque par un homme est venue la mort, c’est par un homme aussi que vient la résurrection des morts.+ 15:21 21. *",
+        "NAB": "For since death came through a human being, the resurrection of the dead came also through a human being.",
+        "VAT_ES": "Porque la muerte vino al mundo por medio de un hombre, y también por medio de un hombre viene la resurrección.",
+        "CEI": "invidie, ubriachezze, orge e cose del genere; circa queste cose vi preavviso, come già ho detto, che chi le compie non erediterà il regno di Dio."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Ὥσπερ γὰρ ἐν τῷ Ἀδὰμ πάντες ἀποθνῄσκουσιν, οὕτως καὶ ἐν τῷ χριστῷ πάντες ζῳοποιηθήσονται.",
+        "VUL": "Et sicut in Adam omnes moriuntur, ita et in Christo omnes vivificabuntur.",
+        "SYN": "Как в Адаме все умирают, так во Христе все оживут,",
+        "NEO": "Et comme tous meurent en Adam, de même aussi tous seront vivifiés+ 15:22 22. Tous seront vivifiés, ressusciteront. S. Paul n’a ici directement en vue que les justes.* dans le Christ,",
+        "NAB": "For just as in Adam all die, so too in Christ shall all be brought to life,",
+        "VAT_ES": "En efecto, así como todos mueren en Adán, así también todos revivirán en Cristo,",
+        "CEI": "Il frutto dello Spirito invece è amore, gioia, pace, pazienza, benevolenza, bontà, fedeltà, mitezza, dominio di sé;"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Ἕκαστος δὲ ἐν τῷ ἰδίῳ τάγματι· ἀπαρχὴ χριστός, ἔπειτα οἱ τοῦ χριστοῦ ἐν τῇ παρουσίᾳ αὐτοῦ.",
+        "VUL": "Unusquisque autem in suo ordine, primitiæ Christus : deinde ii qui sunt Christi, qui in adventu ejus crediderunt.",
+        "SYN": "каждый в своем порядке: первенец Христос, потом Христовы, в пришествие Его.",
+        "NEO": "mais chacun en son rang : comme prémices le Christ, ensuite ceux qui appartiennent au Christ, lors de son avènement.+ 15:23 23. La Vulg. et 2 manuscrits grecs lisent, qui sont au Christ, qui ont cru en son avènement.*",
+        "NAB": "but each one in proper order: Christ the firstfruits; then, at his coming, those who belong to Christ;",
+        "VAT_ES": "cada uno según el orden que le corresponde: Cristo, el primero de todos, luego, aquellos que estén unidos a él en el momento de su Venida.",
+        "CEI": "contro queste cose non c'è legge."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Εἶτα τὸ τέλος, ὅταν παραδῷ τὴν βασιλείαν τῷ θεῷ καὶ πατρί, ὅταν καταργήσῃ πᾶσαν ἀρχὴν καὶ πᾶσαν ἐξουσίαν καὶ δύναμιν.",
+        "VUL": "Deinde finis : cum tradiderit regnum Deo et Patri, cum evacuaverit omnem principatum, et potestatem, et virtutem.",
+        "SYN": "А затем конец, когда Он предаст Царство Богу и Отцу, когда упразднит всякое начальство и всякую власть и силу.",
+        "NEO": "Puis ce sera la fin, quand il remettra le royaume à Dieu et au Père, après avoir anéanti toute principauté, toute puissance et toute force.",
+        "NAB": "then comes the end, when he hands over the kingdom to his God and Father, when he has destroyed every sovereignty and every authority and power.",
+        "VAT_ES": "En seguida vendrá el fin, cuando Cristo entregue el Reino a Dios, el Padre, después de haber aniquilado todo Principado, Dominio y Poder.",
+        "CEI": "Ora quelli che sono di Cristo Gesù hanno crocifisso la loro carne con le sue passioni e i suoi desideri."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Δεῖ γὰρ αὐτὸν βασιλεύειν, ἄχρι οὗ ἂν θῇ πάντας τοὺς ἐχθροὺς ὑπὸ τοὺς πόδας αὐτοῦ.",
+        "VUL": "Oportet autem illum regnare donec ponat omnes inimicos sub pedibus ejus.",
+        "SYN": "Ибо Ему надлежит царствовать, доколе низложит всех врагов под ноги Свои.",
+        "NEO": "Car il faut qu’il règne : « jusqu’à ce qu’il ait mis tous ses ennemis sous ses pieds. »",
+        "NAB": "For he must reign until he has put all his enemies under his feet.",
+        "VAT_ES": "Porque es necesario que Cristo reine hasta que ponga a todos los enemigos debajo de sus pies.",
+        "CEI": "Se pertanto viviamo dello Spirito, camminiamo anche secondo lo Spirito."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Ἔσχατος ἐχθρὸς καταργεῖται ὁ θάνατος.",
+        "VUL": "Novissima autem inimica destruetur mors : omnia enim subjecit pedibus ejus. Cum autem dicat :",
+        "SYN": "Последний же враг истребится -- смерть,",
+        "NEO": "Le dernier ennemi qui sera détruit, c’est la mort,",
+        "NAB": "The last enemy to be destroyed is death,",
+        "VAT_ES": "El último enemigo que será vencido es la muerte,",
+        "CEI": "Non cerchiamo la vanagloria, provocandoci e invidiandoci gli uni gli altri."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Πάντα γὰρ ὑπέταξεν ὑπὸ τοὺς πόδας αὐτοῦ. Ὅταν δὲ εἴπῃ ὅτι Πάντα ὑποτέτακται, δῆλον ὅτι ἐκτὸς τοῦ ὑποτάξαντος αὐτῷ τὰ πάντα.",
+        "VUL": "Omnia subjecta sunt ei, sine dubio præter eum qui subjecit ei omnia.",
+        "SYN": "потому что все покорил под ноги Его. Когда же сказано, что _Ему_ все покорено, то ясно, что кроме Того, Который покорил Ему все.",
+        "NEO": "car Dieu « a tout mis sous ses pieds. » Mais lorsque l’Écriture* dit que tout lui a été soumis, il est évident que celui-là est excepté, qui lui a soumis toutes choses.",
+        "NAB": "for \"he subjected everything under his feet.\" But when it says that everything has been subjected, it is clear that it excludes the one who subjected everything to him.",
+        "VAT_ES": "ya que Dios todo lo sometió bajo sus pies. Pero cuando él diga: «Todo está sometido», será evidentemente a excepción de aquel que le ha sometido todas las cosas."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Ὅταν δὲ ὑποταγῇ αὐτῷ τὰ πάντα, τότε καὶ αὐτὸς ὁ υἱὸς ὑποταγήσεται τῷ ὑποτάξαντι αὐτῷ τὰ πάντα, ἵνα ᾖ ὁ θεὸς τὰ πάντα ἐν πᾶσιν.",
+        "VUL": "Cum autem subjecta fuerint illi omnia : tunc et ipse Filius subjectus erit ei, qui subjecit sibi omnia, ut sit Deus omnia in omnibus.",
+        "SYN": "Когда же все покорит Ему, тогда и Сам Сын покорится Покорившему все Ему, да будет Бог все во всем.",
+        "NEO": "Et lorsque tout lui aura été soumis, alors le Fils lui-même fera hommage à celui qui lui aura soumis toutes choses, afin que Dieu soit tout en tous.",
+        "NAB": "When everything is subjected to him, then the Son himself will (also) be subjected to the one who subjected everything to him, so that God may be all in all.",
+        "VAT_ES": "Y cuando el universo entero le sea sometido, el mismo Hijo se someterá también a aquel que le sometió todas las cosas, a fin de que Dios sea todo en todos."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "¶Ἐπεὶ τί ποιήσουσιν οἱ βαπτιζόμενοι ὑπὲρ τῶν νεκρῶν; Εἰ ὅλως νεκροὶ οὐκ ἐγείρονται, τί καὶ βαπτίζονται ὑπὲρ τῶν νεκρῶν;",
+        "VUL": "Alioquin quid facient qui baptizantur pro mortuis, si omnino mortui non resurgunt ? ut quid et baptizantur pro illis ?",
+        "SYN": "Иначе, что делают крестящиеся для мертвых? Если мертвые совсем не воскресают, то для чего и крестятся для мертвых?",
+        "NEO": "Autrement, que feraient ceux qui se font baptiser pour les morts ? Si les morts ne ressuscitent en aucune manière, pourquoi se font-ils baptiser pour eux ?+ 15:29 29. Autrement, s’il n’y a pas de résurrection. — Il est difficile de savoir ce qu’était ce baptême (ou ablution) pour les morts. Les essais d’explication sont nombreux dans les commentaires.*",
+        "NAB": "Otherwise, what will people accomplish by having themselves baptized for the dead? If the dead are not raised at all, then why are they having themselves baptized for them?",
+        "VAT_ES": "Si no fuera así, &iquest;de qué sirve bautizarse por los que han muerto? Si los muertos no resucitan, &iquest;qué sentido tiene bautizarse por ellos?"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Τί καὶ ἡμεῖς κινδυνεύομεν πᾶσαν ὥραν;",
+        "VUL": "ut quid et nos periclitamur omni hora ?",
+        "SYN": "Для чего и мы ежечасно подвергаемся бедствиям?",
+        "NEO": "Et nous-mêmes, pourquoi sommes-nous à toute heure en péril ?",
+        "NAB": "Moreover, why are we endangering ourselves all the time?",
+        "VAT_ES": "Y nosotros mismos, &iquest;por qué nos exponemos a cada instante al peligro?"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "Καθ’ ἡμέραν ἀποθνῄσκω, νὴ τὴν ὑμετέραν καύχησιν, ἣν ἔχω ἐν χριστῷ Ἰησοῦ τῷ κυρίῳ ἡμῶν.",
+        "VUL": "Quotidie morior per vestram gloriam, fratres, quam habeo in Christo Jesu Domino nostro.",
+        "SYN": "Я каждый день умираю: свидетельствуюсь в том похвалою вашею, братия, которую я имею во Христе Иисусе, Господе нашем.",
+        "NEO": "Chaque jour je suis exposé à la mort, aussi vrai, mes frères, que vous êtes ma gloire en Jésus-Christ notre Seigneur.",
+        "NAB": "Every day I face death; I swear it by the pride in you (brothers) that I have in Christ Jesus our Lord.",
+        "VAT_ES": "Cada día yo me enfrento con la muerte, y esto es tan cierto, hermanos, como que ustedes son mi orgullo en Cristo Jesús, nuestro Señor."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "Εἰ κατὰ ἄνθρωπον ἐθηριομάχησα ἐν Ἐφέσῳ, τί μοι τὸ ὄφελος, εἰ νεκροὶ οὐκ ἐγείρονται; Φάγωμεν καὶ πίωμεν, αὔριον γὰρ ἀποθνῄσκομεν.",
+        "VUL": "Si secundum hominem ad bestias pugnavi Ephesi, quid mihi prodest, si mortui non resurgunt ? Manducemus, et bibamus, cras enim moriemur.",
+        "SYN": "По _рассуждению_ человеческому, когда я боролся со зверями в Ефесе, какая мне польза, если мертвые не воскресают? Станем есть и пить, ибо завтра умрем!",
+        "NEO": "Si c’est avec des vues humaines que j’ai combattu contre les bêtes à Éphèse, quel avantage m’en revient-il ? Si les morts ne ressuscitent pas, « mangeons et buvons, car demain nous mourrons. »+ 15:32 32. (Act. xix, 23 sv. ; xx, 19. Comp. II Tim. iv, 17). — Si les morts, etc. ; la Vulg. joint ce membre de phrase à ce qui précède. Isaïe, xxii, 13 ; comp. Sag. ii, 6.*",
+        "NAB": "If at Ephesus I fought with beasts, so to speak, what benefit was it to me? If the dead are not raised: \"Let us eat and drink, for tomorrow we die.\"",
+        "VAT_ES": "&iquest;Y qué he ganado, si solamente por motivos humanos, yo tuve que luchar con las fieras en Efeso? Si los muertos no resucitan, «comamos y bebamos, porque mañana moriremos»."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Μὴ πλανᾶσθε· Φθείρουσιν ἤθη χρηστὰ ὁμιλίαι κακαί.",
+        "VUL": "Nolite seduci : corrumpunt mores bonos colloquia mala.",
+        "SYN": "Не обманывайтесь: худые сообщества развращают добрые нравы.",
+        "NEO": "Ne vous laissez pas séduire : « les mauvaises compagnies corrompent les bonnes mœurs. »+ 15:33 33. Vers tiré de la Thaïs du poète comique Ménandre, et passé en proverbe.*",
+        "NAB": "Do not be led astray: \"Bad company corrupts good morals.\"",
+        "VAT_ES": "No se dejen engañar: «Las malas compañías corrompen las buenas costumbres»."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "Ἐκνήψατε δικαίως καὶ μὴ ἁμαρτάνετε· ἀγνωσίαν γὰρ θεοῦ τινὲς ἔχουσιν· πρὸς ἐντροπὴν ὑμῖν λέγω.",
+        "VUL": "Evigilate justi, et nolite peccare : ignorantiam enim Dei quidam habent, ad reverentiam vobis loquor.",
+        "SYN": "Отрезвитесь, как должно, и не грешите; ибо, к стыду вашему скажу, некоторые из вас не знают Бога.",
+        "NEO": "Revenez à vous-mêmes, sérieusement,+ 15:34 34. Sérieusement, καίως en lat. \\+qt juste\\+qt* ; la Vulg. actuelle a \\+qt justi\\+qt*, justes, en apostrophe.* et ne péchez pas ; car il y en a qui sont dans l’ignorance de Dieu, je le dis à votre honte.",
+        "NAB": "Become sober as you ought and stop sinning. For some have no knowledge of God; I say this to your shame.",
+        "VAT_ES": "Vuelvan a comportarse como es debido y no pequen más, porque hay algunos entre ustedes que todavía no saben nada de Dios: lo digo para verg&uuml;enza de ustedes."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "¶Ἀλλ’ ἐρεῖ τις, Πῶς ἐγείρονται οἱ νεκροί; Ποίῳ δὲ σώματι ἔρχονται;",
+        "VUL": "Sed dicet aliquis : Quomodo resurgunt mortui ? qualive corpore venient ?",
+        "SYN": "Но скажет кто-нибудь: как воскреснут мертвые? и в каком теле придут?",
+        "NEO": "Mais, dira quelqu’un : Comment les morts ressuscitent-ils ? avec quel corps reviennent-ils ?",
+        "NAB": "But someone may say, \"How are the dead raised? With what kind of body will they come back?\"",
+        "VAT_ES": "Alguien preguntará: &iquest;Cómo resucitan los muertos? &iquest;Con qué clase de cuerpo?"
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "Ἄφρον, σὺ ὃ σπείρεις, οὐ ζῳοποιεῖται ἐὰν μὴ ἀποθάνῃ·",
+        "VUL": "Insipiens, tu quod seminas non vivificatur, nisi prius moriatur :",
+        "SYN": "Безрассудный! то, что ты сеешь, не оживет, если не умрет.",
+        "NEO": "Insensé ! ce que tu sèmes ne reprend pas vie, s’il ne meurt auparavant.",
+        "NAB": "You fool! What you sow is not brought to life unless it dies.",
+        "VAT_ES": "Tu pregunta no tiene sentido. Lo que siembras no llega a tener vida, si antes no muere."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "καὶ ὃ σπείρεις, οὐ τὸ σῶμα τὸ γενησόμενον σπείρεις, ἀλλὰ γυμνὸν κόκκον, εἰ τύχοι, σίτου ἤ τινος τῶν λοιπῶν·",
+        "VUL": "et quod seminas, non corpus, quod futurum est, seminas, sed nudum granum, ut puta tritici, aut alicujus ceterorum.",
+        "SYN": "И когда ты сеешь, то сеешь не тело будущее, а голое зерно, какое случится, пшеничное или другое какое;",
+        "NEO": "Et ce que tu sèmes, ce n’est pas le corps qui sera un jour ; c’est un simple grain, soit de blé, soit de quelque autre semence :",
+        "NAB": "And what you sow is not the body that is to be but a bare kernel of wheat, perhaps, or of some other kind;",
+        "VAT_ES": "Y lo que siembras, no es la planta tal como va a brotar, sino un simple grano, de trigo por ejemplo, o de cualquier otra planta."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "BYZ": "ὁ δὲ θεὸς αὐτῷ δίδωσιν σῶμα καθὼς ἠθέλησεν, καὶ ἑκάστῳ τῶν σπερμάτων τὸ ἴδιον σῶμα.",
+        "VUL": "Deus autem dat illi corpus sicut vult : ut unicuique seminum proprium corpus.",
+        "SYN": "но Бог дает ему тело, как хочет, и каждому семени свое тело.",
+        "NEO": "mais Dieu lui donne un corps comme il l’a voulu, et à chaque semence il donne le corps qui lui est propre.",
+        "NAB": "but God gives it a body as he chooses, and to each of the seeds its own body.",
+        "VAT_ES": "Y Dios da a cada semilla la forma que él quiere, a cada clase de semilla, el cuerpo que le corresponde."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "BYZ": "Οὐ πᾶσα σὰρξ ἡ αὐτὴ σάρξ· ἀλλὰ ἄλλη μὲν ἀνθρώπων, ἄλλη δὲ σὰρξ κτηνῶν, ἄλλη δὲ ἰχθύων, ἄλλη δὲ πτηνῶν.",
+        "VUL": "Non omnis caro, eadem caro : sed alia quidem hominum, alia vero pecorum, alia volucrum, alia autem piscium.",
+        "SYN": "Не всякая плоть такая же плоть; но иная плоть у человеков, иная плоть у скотов, иная у рыб, иная у птиц.",
+        "NEO": "Toute chair n’est pas la même chair ; autre est la chair des hommes, autre celle des quadrupèdes, autre celle des oiseaux, autre celle des poissons.",
+        "NAB": "Not all flesh is the same, but there is one kind for human beings, another kind of flesh for animals, another kind of flesh for birds, and another for fish.",
+        "VAT_ES": "No todos los cuerpos son idénticos: una es la carne de los hombres, otra la de los animales, otra la de las aves y otra la de los peces."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "BYZ": "Καὶ σώματα ἐπουράνια, καὶ σώματα ἐπίγεια· ἀλλ’ ἑτέρα μὲν ἡ τῶν ἐπουρανίων δόξα, ἑτέρα δὲ ἡ τῶν ἐπιγείων.",
+        "VUL": "Et corpora cælestia, et corpora terrestria : sed alia quidem cælestium gloria, alia autem terrestrium.",
+        "SYN": "Есть тела небесные и тела земные; но иная слава небесных, иная земных.",
+        "NEO": "Il y a aussi des corps célestes et des corps terrestres ; mais l’éclat des corps célestes est d’une autre nature que celui des corps terrestres :",
+        "NAB": "There are both heavenly bodies and earthly bodies, but the brightness of the heavenly is one kind and that of the earthly another.",
+        "VAT_ES": "Hay cuerpos celestiales y cuerpos terrestres, y cada uno tiene su propio resplandor:"
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "BYZ": "Ἄλλη δόξα ἡλίου, καὶ ἄλλη δόξα σελήνης, καὶ ἄλλη δόξα ἀστέρων· ἀστὴρ γὰρ ἀστέρος διαφέρει ἐν δόξῃ.",
+        "VUL": "Alia claritas solis, alia claritas lunæ, et alia claritas stellarum. Stella enim a stella differt in claritate :",
+        "SYN": "Иная слава солнца, иная слава луны, иная звезд; и звезда от звезды разнится в славе.",
+        "NEO": "autre est l’éclat du soleil, autre l’éclat de la lune, et autre l’éclat des étoiles ; même une étoile diffère en éclat d’une autre étoile.",
+        "NAB": "The brightness of the sun is one kind, the brightness of the moon another, and the brightness of the stars another. For star differs from star in brightness.",
+        "VAT_ES": "uno es el resplandor del sol, otro el de la luna y otro el de las estrellas, y aun las estrellas difieren unas de otras por su resplandor."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "BYZ": "Οὕτως καὶ ἡ ἀνάστασις τῶν νεκρῶν. Σπείρεται ἐν φθορᾷ, ἐγείρεται ἐν ἀφθαρσίᾳ·",
+        "VUL": "sic et resurrectio mortuorum. Seminatur in corruptione, surget in incorruptione.",
+        "SYN": "Так и при воскресении мертвых: сеется в тлении, восстает в нетлении;",
+        "NEO": "Ainsi en est-il pour la résurrection des morts. Semé dans la corruption, le corps ressuscite, incorruptible ;",
+        "NAB": "So also is the resurrection of the dead. It is sown corruptible; it is raised incorruptible.",
+        "VAT_ES": "Lo mismo pasa con la resurrección de los muertos: se siembran cuerpos corruptibles y resucitarán incorruptibles;"
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "BYZ": "σπείρεται ἐν ἀτιμίᾳ, ἐγείρεται ἐν δόξῃ· σπείρεται ἐν ἀσθενείᾳ, ἐγείρεται ἐν δυνάμει·",
+        "VUL": "Seminatur in ignobilitate, surget in gloria : seminatur in infirmitate, surget in virtute :",
+        "SYN": "сеется в уничижении, восстает в славе; сеется в немощи, восстает в силе;",
+        "NEO": "semé dans l’ignominie, il ressuscite glorieux ; semé dans la faiblesse, il ressuscite plein de force ;",
+        "NAB": "It is sown dishonorable; it is raised glorious. It is sown weak; it is raised powerful.",
+        "VAT_ES": "se siembran cuerpos humillados y resucitarán gloriosos; se siembran cuerpos débiles y resucitarán llenos de fuerza;"
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "BYZ": "σπείρεται σῶμα ψυχικόν, ἐγείρεται σῶμα πνευματικόν. Ἔστιν σῶμα ψυχικόν, καὶ ἔστιν σῶμα πνευματικόν.",
+        "VUL": "seminatur corpus animale, surget corpus spiritale. Si est corpus animale, est et spiritale, sicut scriptum est :",
+        "SYN": "сеется тело душевное, восстает тело духовное. Есть тело душевное, есть тело и духовное.",
+        "NEO": "semé corps animal, il ressuscite corps spirituel.",
+        "NAB": "It is sown a natural body; it is raised a spiritual body. If there is a natural body, there is also a spiritual one.",
+        "VAT_ES": "se siembran cuerpos puramente naturales y resucitarán cuerpos espirituales. Porque hay un cuerpo puramente natural y hay también un cuerpo espiritual."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "BYZ": "Οὕτως καὶ γέγραπται, Ἐγένετο ὁ πρῶτος ἄνθρωπος Ἀδὰμ εἰς ψυχὴν ζῶσαν. Ὁ ἔσχατος Ἀδὰμ εἰς πνεῦμα ζῳοποιοῦν.",
+        "VUL": "Factus est primus homo Adam in animam viventem, novissimus Adam in spiritum vivificantem.",
+        "SYN": "Так и написано: первый человек Адам стал душею живущею; а последний Адам есть дух животворящий.",
+        "NEO": "C’est en ce sens qu’il est écrit : « Le premier homme, Adam, a été fait âme vivante » ; le dernier Adam a été fait esprit vivifiant.",
+        "NAB": "So, too, it is written, \"The first man, Adam, became a living being,\" the last Adam a life-giving spirit.",
+        "VAT_ES": "Esto es lo que dice la Escritura: El primer hombre, Adán, fue creado como un ser viviente; el último Adán, en cambio, es un ser espiritual que da la Vida."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ οὐ πρῶτον τὸ πνευματικόν, ἀλλὰ τὸ ψυχικόν, ἔπειτα τὸ πνευματικόν.",
+        "VUL": "Sed non prius quod spiritale est, sed quod animale : deinde quod spiritale.",
+        "SYN": "Но не духовное прежде, а душевное, потом духовное.",
+        "NEO": "Mais ce n’est pas ce qui est spirituel qui a été fait d’abord, c’est ce qui est animal ; ce qui est spirituel vient ensuite.",
+        "NAB": "But the spiritual was not first; rather the natural and then the spiritual.",
+        "VAT_ES": "Pero no existió primero lo espiritual sino lo puramente natural; lo espiritual viene después."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "BYZ": "Ὁ πρῶτος ἄνθρωπος ἐκ γῆς, χοϊκός· ὁ δεύτερος ἄνθρωπος ὁ κύριος ἐξ οὐρανοῦ.",
+        "VUL": "Primus homo de terra, terrenus : secundus homo de cælo, cælestis.",
+        "SYN": "Первый человек -- из земли, перстный; второй человек -- Господь с неба.",
+        "NEO": "Le premier homme, tiré de la terre, est terrestre ; le second+ 15:47 47. Le second: une leçon marginale passée dans quelques textes ajoute : ὀ Κύριος, le Seigneur J.-C.* vient du ciel.",
+        "NAB": "The first man was from the earth, earthly; the second man, from heaven.",
+        "VAT_ES": "El primer hombre procede de la tierra y es terrenal; pero el segundo hombre procede del cielo."
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "BYZ": "Οἷος ὁ χοϊκός, τοιοῦτοι καὶ οἱ χοϊκοί, καὶ οἷος ὁ ἐπουράνιος, τοιοῦτοι καὶ οἱ ἐπουράνιοι·",
+        "VUL": "Qualis terrenus, tales et terreni : et qualis cælestis, tales et cælestes.",
+        "SYN": "Каков перстный, таковы и перстные; и каков небесный, таковы и небесные.",
+        "NEO": "Tel est le terrestre, tels sont aussi les terrestres ; et tel est le céleste, tels sont aussi les célestes.",
+        "NAB": "As was the earthly one, so also are the earthly, and as is the heavenly one, so also are the heavenly.",
+        "VAT_ES": "Los hombres terrenales serán como el hombre terrenal, y los celestiales como el celestial."
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "BYZ": "καὶ καθὼς ἐφορέσαμεν τὴν εἰκόνα τοῦ χοϊκοῦ, φορέσωμεν καὶ τὴν εἰκόνα τοῦ ἐπουρανίου.",
+        "VUL": "Igitur, sicut portavimus imaginem terreni, portemus et imaginem cælestis.",
+        "SYN": "И как мы носили образ перстного, будем носить и образ небесного.",
+        "NEO": "Et de même que nous avons porté l’image du terrestre, nous porterons+ 15:49 49. Nous porterons. La Vulgate et plusieurs manuscrits grecs, \\+qt portons\\+qt*, méritons de porter, par une vie sainte, en rapport avec notre filiation divine, etc.* aussi l’image du céleste.",
+        "NAB": "Just as we have borne the image of the earthly one, we shall also bear the image of the heavenly one.",
+        "VAT_ES": "De la misma manera que hemos sido revestidos de la imagen del hombre terrenal, también lo seremos de la imagen del hombre celestial."
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "BYZ": "¶Τοῦτο δέ φημι, ἀδελφοί, ὅτι σὰρξ καὶ αἷμα βασιλείαν θεοῦ κληρονομῆσαι οὐ δύνανται, οὐδὲ ἡ φθορὰ τὴν ἀφθαρσίαν κληρονομεῖ.",
+        "VUL": "Hoc autem dico, fratres : quia caro et sanguis regnum Dei possidere non possunt : neque corruptio incorruptelam possidebit.",
+        "SYN": "Но то скажу _вам,_ братия, что плоть и кровь не могут наследовать Царствия Божия, и тление не наследует нетления.",
+        "NEO": "Ce que j’affirme, frères, c’est que ni la chair ni le sang ne peuvent hériter le royaume de Dieu, et que la corruption n’héritera pas l’incorruptibilité.",
+        "NAB": "This I declare, brothers: flesh and blood cannot inherit the kingdom of God, nor does corruption inherit incorruption.",
+        "VAT_ES": "Les aseguro, hermanos, que lo puramente humano no puede tener parte en el Reino de Dios, ni la corrupción puede heredar lo que es incorruptible."
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "BYZ": "Ἰδού, μυστήριον ὑμῖν λέγω· πάντες μὲν οὐ κοιμηθησόμεθα, πάντες δὲ ἀλλαγησόμεθα,",
+        "VUL": "Ecce mysterium vobis dico : omnes quidem resurgemus, sed non omnes immutabimur.",
+        "SYN": "Говорю вам тайну: не все мы умрем, но все изменимся",
+        "NEO": "Voici un mystère que je vous révèle : Nous ne nous endormirons pas tous, mais tous nous serons changés,+ 15:51 51. Nous ne nous endormirons pas tous: plusieurs seront vivants au moment du second avènement de J.-C. ; mais ils n’entreront pas pour cela dans le royaume de Dieu avec leur corps naturel : ceux-là aussi \\+qt seront changés\\+qt* ; sans passer par la mort, ils se verront transfigurés et entreront avec Jésus dans la gloire, ce qui est sans doute un grand \\+qt mystère\\+qt*. Comp. I Thess. iv, 15 sv. ; II Cor. v, 4 sv.Vulg. \\+qt Nous ressusciterons tous, mais nous ne serons pas tous changés\\+qt* ; les méchants n’auront pas un corps spirituel et glorieux. La leçon du texte grec, recommandée par l’autorité des manuscrits, s’accorde mieux avec le contexte. En effet il n’est question, dans ce chapitre que de la résurrection des fidèles justifiés (S. Jérôme).*",
+        "NAB": "Behold, I tell you a mystery. We shall not all fall asleep, but we will all be changed,",
+        "VAT_ES": "Les voy a revelar un misterio: No todos vamos a morir, pero todos seremos transformados."
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "BYZ": "ἐν ἀτόμῳ, ἐν ῥιπῇ ὀφθαλμοῦ, ἐν τῇ ἐσχάτῃ σάλπιγγι· σαλπίσει γάρ, καὶ οἱ νεκροὶ ἐγερθήσονται ἄφθαρτοι, καὶ ἡμεῖς ἀλλαγησόμεθα.",
+        "VUL": "In momento, in ictu oculi, in novissima tuba : canet enim tuba, et mortui resurgent incorrupti : et nos immutabimur.",
+        "SYN": "вдруг, во мгновение ока, при последней трубе; ибо вострубит, и мертвые воскреснут нетленными, а мы изменимся.",
+        "NEO": "en un instant, en un clin d’œil, au son de la dernière trompette, car la trompette retentira et les morts ressusciteront incorruptibles, et nous, nous serons changés.",
+        "NAB": "in an instant, in the blink of an eye, at the last trumpet. For the trumpet will sound, the dead will be raised incorruptible, and we shall be changed.",
+        "VAT_ES": "En un instante, en un abrir y cerrar de ojos, cuando suene la trompeta final –porque esto sucederá– los muertos resucitarán incorruptibles y nosotros seremos transformados."
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "BYZ": "Δεῖ γὰρ τὸ φθαρτὸν τοῦτο ἐνδύσασθαι ἀφθαρσίαν, καὶ τὸ θνητὸν τοῦτο ἐνδύσασθαι ἀθανασίαν.",
+        "VUL": "Oportet enim corruptibile hoc induere incorruptionem : et mortale hoc induere immortalitatem.",
+        "SYN": "Ибо тленному сему надлежит облечься в нетление, и смертному сему облечься в бессмертие.",
+        "NEO": "Car il faut que ce corps corruptible revête l’incorruptibilité, et que ce corps mortel revête l’immortalité.",
+        "NAB": "For that which is corruptible must clothe itself with incorruptibility, and that which is mortal must clothe itself with immortality.",
+        "VAT_ES": "Lo que es corruptible debe revestirse de la incorruptibilidad y lo que es mortal debe revestirse de la inmortalidad."
+      }
+    },
+    "54": {
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "BYZ": "Ὅταν δὲ τὸ φθαρτὸν τοῦτο ἐνδύσηται ἀφθαρσίαν, καὶ τὸ θνητὸν τοῦτο ἐνδύσηται ἀθανασίαν, τότε γενήσεται ὁ λόγος ὁ γεγραμμένος, Κατεπόθη ὁ θάνατος εἰς νῖκος.",
+        "VUL": "Cum autem mortale hoc induerit immortalitatem, tunc fiet sermo, qui scriptus est : Absorpta est mors in victoria.",
+        "SYN": "Когда же тленное сие облечется в нетление и смертное сие облечется в бессмертие, тогда сбудется слово написанное: поглощена смерть победою.",
+        "NEO": "Lorsque ce corps corruptible aura revêtu l’incorruptibilité, et que ce corps mortel aura revêtu l’immortalité, alors s’accomplira la parole qui est écrite : « La mort a été engloutie pour la victoire. »",
+        "NAB": "And when this which is corruptible clothes itself with incorruptibility and this which is mortal clothes itself with immortality, then the word that is written shall come about: \"Death is swallowed up in victory.",
+        "VAT_ES": "Cuando lo que es corruptible se revista de la incorruptibilidad y lo que es mortal se revista de la inmortalidad, entonces se cumplirá la palabra de la Escritura: La muerte ha sido vencida."
+      }
+    },
+    "55": {
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "BYZ": "Ποῦ σου, Θάνατε, τὸ κέντρον; Ποῦ σου, ᾍδη, τὸ νῖκος;",
+        "VUL": "Ubi est mors victoria tua ? ubi est mors stimulus tuus ?",
+        "SYN": "Смерть! где твое жало? ад! где твоя победа?",
+        "NEO": "« Ô mort, où est ta victoire ? Ô mort, où est ton aiguillon ? »",
+        "NAB": "Where, O death, is your victory? Where, O death, is your sting?\"",
+        "VAT_ES": "&iquest;Dónde está, muerte, tu victoria? &iquest;Dónde está tu aguijón?"
+      }
+    },
+    "56": {
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "BYZ": "Τὸ δὲ κέντρον τοῦ θανάτου ἡ ἁμαρτία· ἡ δὲ δύναμις τῆς ἁμαρτίας ὁ νόμος·",
+        "VUL": "Stimulus autem mortis peccatum est : virtus vero peccati lex.",
+        "SYN": "Жало же смерти -- грех; а сила греха -- закон.",
+        "NEO": "Or l’aiguillon de la mort, c’est le péché et la puissance du péché, c’est la loi.",
+        "NAB": "The sting of death is sin, and the power of sin is the law.",
+        "VAT_ES": "Porque lo que provoca la muerte es el pecado y lo que da fuerza al pecado es la ley."
+      }
+    },
+    "57": {
+      "seq": 57,
+      "v_in": {
+        "MT": 57,
+        "VUL": 57,
+        "LXX": 57
+      },
+      "text": {
+        "BYZ": "τῷ δὲ θεῷ χάρις τῷ διδόντι ἡμῖν τὸ νῖκος διὰ τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ.",
+        "VUL": "Deo autem gratias, qui dedit nobis victoriam per Dominum nostrum Jesum Christum.",
+        "SYN": "Благодарение Богу, даровавшему нам победу Господом нашим Иисусом Христом!",
+        "NEO": "Mais grâces soient rendues à Dieu, qui nous a donné la victoire par Notre-Seigneur Jésus-Christ !",
+        "NAB": "But thanks be to God who gives us the victory through our Lord Jesus Christ.",
+        "VAT_ES": "&iexcl;Demos gracias a Dios, que nos ha dado la victoria por nuestro Señor Jesucristo!"
+      }
+    },
+    "58": {
+      "seq": 58,
+      "v_in": {
+        "MT": 58,
+        "VUL": 58,
+        "LXX": 58
+      },
+      "text": {
+        "BYZ": "Ὥστε, ἀδελφοί μου ἀγαπητοί, ἑδραῖοι γίνεσθε, ἀμετακίνητοι, περισσεύοντες ἐν τῷ ἔργῳ τοῦ κυρίου πάντοτε, εἰδότες ὅτι ὁ κόπος ὑμῶν οὐκ ἔστιν κενὸς ἐν κυρίῳ.",
+        "VUL": "Itaque fratres mei dilecti, stabiles estote, et immobiles : abundantes in opere Domini semper, scientes quod labor vester non est inanis in Domino.",
+        "SYN": "Итак, братия мои возлюбленные, будьте тверды, непоколебимы, всегда преуспевайте в деле Господнем, зная, что труд ваш не тщетен пред Господом.",
+        "NEO": "Ainsi, mes frères bien-aimés, soyez fermes, inébranlables, travaillant de plus en plus à l’œuvre du Seigneur, sachant que votre travail n’est pas vain dans le Seigneur.",
+        "NAB": "Therefore, my beloved brothers, be firm, steadfast, always fully devoted to the work of the Lord, knowing that in the Lord your labor is not in vain.",
+        "VAT_ES": "Por eso, queridos hermanos, permanezcan firmes e inconmovibles, progresando constantemente en la obra del Señor, con la certidumbre de que los esfuerzos que realizan por él no serán vanos."
+      }
+    }
+  }
+}

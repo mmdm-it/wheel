@@ -1,0 +1,556 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_COR_010",
+  "book_key": "I_COR",
+  "sequence": 10,
+  "chapter_in": {
+    "MT": 10,
+    "VUL": 10,
+    "LXX": 10
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Οὐ θέλω δὲ ὑμᾶς ἀγνοεῖν, ἀδελφοί, ὅτι οἱ πατέρες ἡμῶν πάντες ὑπὸ τὴν νεφέλην ἦσαν, καὶ πάντες διὰ τῆς θαλάσσης διῆλθον,",
+        "VUL": "Nolo enim vos ignorare fratres, quoniam patres nostri omnes sub nube fuerunt, et omnes mare transierunt,",
+        "SYN": "Не хочу оставить вас, братия, в неведении, что отцы наши все были под облаком, и все прошли сквозь море;",
+        "NEO": "Car je ne veux pas vous laisser ignorer, frères, que nos pères ont tous été sous la nuée, qu’ils ont tous traversé la mer,+ 10:1 X, 1. Car relie ce chapitre aux deux précédents. Après avoir traité (ch. viii) des rapports des chrétiens avec les idolâtres, relativement aux viandes offertes sur les autels du paganisme, et montré (ch. ix), par divers traits de sa propre conduite, qu’il faut savoir renoncer à ses droits, afin d’éviter une liberté charnelle qui conduit au péché, — il emprunte à l’histoire d’Israël et propose ici (ch. x) d’effrayants exemples des péchés auxquels ce peuple fut entraîné par cette fausse liberté. — \\+qt Sous la nuée\\+qt* : allusion à la nuée miraculeuse qui les guidait (Ex. xiii, 21), et les couvrait (Ps. cv (104), 39 ; Sag. x, 17 ; xix, 7). Sens : sous la garde et la conduite de Yahweh.*",
+        "NAB": "I do not want you to be unaware, brothers, that our ancestors were all under the cloud and all passed through the sea,",
+        "VAT_ES": "Porque no deben ignorar, hermanos, que todos nuestros padres fueron guiados por la nube y todos atravesaron el mar;",
+        "CEI": "Questa è la terza volta che vengo da voi. Ogni questione si deciderà sulla dichiarazione di due o tre testimoni."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "καὶ πάντες εἰς τὸν Μωϋσῆν ἐβαπτίσαντο ἐν τῇ νεφέλῃ καὶ ἐν τῇ θαλάσσῃ,",
+        "VUL": "et omnes in Moyse baptizati sunt in nube, et in mari :",
+        "SYN": "и все крестились в Моисея в облаке и в море;",
+        "NEO": "et qu’ils ont tous été baptisés en Moïse dans la nuée et dans la mer ;+ 10:2 2. Baptisés en Moïse, liés, engagés par la confiance et l’obéissance envers Moïse, médiateur entre Dieu et le peuple pour la première alliance, et cela en vertu d’une sorte de baptême \\+qt dans la nuée et dans la mer\\+qt*.*",
+        "NAB": "and all of them were baptized into Moses in the cloud and in the sea.",
+        "VAT_ES": "y para todos, la marcha bajo la nube y el paso del mar, fue un bautismo que los unió a Moisés.",
+        "CEI": "L'ho detto prima e lo ripeto ora, allora presente per la seconda volta e ora assente, a tutti quelli che hanno peccato e a tutti gli altri: quando verrò di nuovo non perdonerò più,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "καὶ πάντες τὸ αὐτὸ βρῶμα πνευματικὸν ἔφαγον,",
+        "VUL": "et omnes eamdem escam spiritalem manducaverunt,",
+        "SYN": "и все ели одну и ту же духовную пищу;",
+        "NEO": "qu’ils ont tous mangé le même aliment+ 10:3 3. Le même aliment, la manne (Ex. xvi, 15) spirituel, parce qu’il était le résultat d’un miracle (Ps. lxxviii (77), 124 ; cv (104), 40 ; Sag. xvi, 20), et surtout parce qu’il figurait une manne supérieure, la sainte Eucharistie (Jean, vi, 48 sv.).* spirituel,",
+        "NAB": "All ate the same spiritual food,",
+        "VAT_ES": "También todos comieron la misma comida y bebieron la misma bebida espiritual.",
+        "CEI": "dal momento che cercate una prova che Cristo parla in me, lui che non è debole, ma potente in mezzo a voi."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "καὶ πάντες τὸ αὐτὸ πόμα πνευματικὸν ἔπιον· ἔπινον γὰρ ἐκ πνευματικῆς ἀκολουθούσης πέτρας· ἡ δὲ πέτρα ἦν ὁ χριστός.",
+        "VUL": "et omnes eumdem potum spiritalem biberunt (bibebant autem de spiritali, consequente eos, petra : petra autem erat Christus) :",
+        "SYN": "и все пили одно и то же духовное питие: ибо пили из духовного последующего камня; камень же был Христос.",
+        "NEO": "et qu’ils ont tous bu le même breuvage spirituel,+ 10:4 4. Breuvage spirituel: allusion à l’eau que Dieu fit jaillir du rocher, la première année du voyage dans le désert, à Raphidim (Exod. xvii, 6), et la dernière, dans le désert de Sin (). — \\+qt Spirituel\\+qt* : à cause de son origine miraculeuse. — \\+qt Le rocher spirituel qui les accompagnait\\+qt*, ce n’est pas la pierre matérielle dont Moïse fit jaillir une source d’eau ; c’était J.-C., Verbe éternel, conducteur et protecteur du peuple élu dans sa marche vers la terre promise. En effet, dans la narration mosaïque c’est Yahweh \\+qt qui se tient sur le rocher\\+qt* (Exod. xvii, 6) ; \\+qt c’est à lui\\+qt*, et non pas à la pierre matérielle que \\+qt Moïse doit parler\\+qt* (Nombr. xx, 8) ; c’est lui qui fait sourdre les eaux miraculeuses.* car ils buvaient à un rocher spirituel qui les accompagnait, et ce rocher était le Christ.",
+        "NAB": "and all drank the same spiritual drink, for they drank from a spiritual rock that followed them, and the rock was the Christ.",
+        "VAT_ES": "En efecto, bebían el agua de una roca espiritual que los acompañaba, y esa roca era Cristo.",
+        "CEI": "Infatti egli fu crocifisso per la sua debolezza, ma vive per la potenza di Dio. E anche noi che siamo deboli in lui, saremo vivi con lui per la potenza di Dio nei vostri riguardi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ οὐκ ἐν τοῖς πλείοσιν αὐτῶν εὐδόκησεν ὁ θεός· κατεστρώθησαν γὰρ ἐν τῇ ἐρήμῳ.",
+        "VUL": "sed non in pluribus eorum beneplacitum est Deo : nam prostrati sunt in deserto.",
+        "SYN": "Но не о многих из них благоволил Бог, ибо они поражены были в пустыне.",
+        "NEO": "Cependant ce n’est pas dans la plupart d’entre eux que Dieu trouva son plaisir, puisque leurs corps jonchèrent le désert.",
+        "NAB": "Yet God was not pleased with most of them, for they were struck down in the desert.",
+        "VAT_ES": "A pesar de esto, muy pocos de ellos fueron agradables a Dios, porque sus cuerpos quedaron tendidos en el desierto.",
+        "CEI": "Esaminate voi stessi se siete nella fede, mettetevi alla prova. Non riconoscete forse che Gesù Cristo abita in voi? A meno che la prova non sia contro di voi!"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ταῦτα δὲ τύποι ἡμῶν ἐγενήθησαν, εἰς τὸ μὴ εἶναι ἡμᾶς ἐπιθυμητὰς κακῶν, καθὼς κἀκεῖνοι ἐπεθύμησαν.",
+        "VUL": "Hæc autem in figura facta sunt nostri, ut non simus concupiscentes malorum, sicut et illi concupierunt.",
+        "SYN": "А это были образы для нас, чтобы мы не были похотливы на злое, как они были похотливы.",
+        "NEO": "Or ces choses ont été des figures de ce qui nous concerne, afin que nous n’ayons pas de désirs coupables, comme ils en ont eu,+ 10:6 6. Voy. Nombr. xi, 4 sv.*",
+        "NAB": "These things happened as examples for us, so that we might not desire evil things, as they did.",
+        "VAT_ES": "Todo esto aconteció simbólicamente para ejemplo nuestro, a fin de que no nos dejemos arrastrar por los malos deseos, como lo hicieron nuestros padres.",
+        "CEI": "Spero tuttavia che riconoscerete che essa non è contro di noi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Μηδὲ εἰδωλολάτραι γίνεσθε, καθώς τινες αὐτῶν· ὥσπερ γέγραπται, Ἐκάθισεν ὁ λαὸς φαγεῖν καὶ πιεῖν, καὶ ἀνέστησαν παίζειν.",
+        "VUL": "Neque idololatræ efficiamini, sicut quidam ex ipsis : quemadmodum scriptum est : Sedit populus manducare, et bibere, et surrexerunt ludere.",
+        "SYN": "Не будьте также идолопоклонниками, как некоторые из них, о которых написано: народ сел есть и пить, и встал играть.",
+        "NEO": "et que vous ne deveniez pas idolâtres, comme quelques-uns d’entre eux, selon qu’il est écrit : « Le peuple s’assit pour manger et pour boire ; puis il se leva pour se divertir. »+ 10:7 7. Ex. xxxii, 6.*",
+        "NAB": "And do not become idolaters, as some of them did, as it is written, \"The people sat down to eat and drink, and rose up to revel.\"",
+        "VAT_ES": "No adoren a falsos dioses, como hicieron algunos de ellos, según leemos en la Escritura: El pueblo se sentó a comer y a beber, y luego se levantó para divertirse.",
+        "CEI": "Noi preghiamo Dio che non facciate alcun male, e non per apparire noi superiori nella prova, ma perché voi facciate il bene e noi restiamo come senza prova."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Μηδὲ πορνεύωμεν, καθώς τινες αὐτῶν ἐπόρνευσαν, καὶ ἔπεσον ἐν μιᾷ ἡμέρᾳ εἴκοσι τρεῖς χιλιάδες.",
+        "VUL": "Neque fornicemur, sicut quidam ex ipsis fornicati sunt, et ceciderunt una die viginti tria millia.",
+        "SYN": "Не станем блудодействовать, как некоторые из них блудодействовали, и в один день погибло их двадцать три тысячи.",
+        "NEO": "Ne nous livrons pas à l’impudicité, comme quelques-uns d’entre eux s’y livrèrent ; et il en tomba vingt-trois mille+ 10:8 8. Vingt-trois mille: il est dit \\+qt vingt-quatre mille\\+qt*, Nombr. xxv, 1-9 : peut-être faute de copiste.* en un seul jour.",
+        "NAB": "Let us not indulge in immorality as some of them did, and twenty-three thousand fell within a single day.",
+        "VAT_ES": "No forniquemos, como algunos de ellos, y por eso, en castigo, murieron veintitrés mil en un solo día.",
+        "CEI": "Non abbiamo infatti alcun potere contro la verità, ma per la verità;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Μηδὲ ἐκπειράζωμεν τὸν χριστόν, καθὼς καί τινες αὐτῶν ἐπείρασαν, καὶ ὑπὸ τῶν ὄφεων ἀπώλοντο.",
+        "VUL": "Neque tentemus Christum, sicut quidam eorum tentaverunt, et a serpentibus perierunt.",
+        "SYN": "Не станем искушать Христа, как некоторые из них искушали и погибли от змей.",
+        "NEO": "Ne tentons pas le Christ, comme le tentèrent quelques-uns d’entre eux, qui périrent par les serpents.",
+        "NAB": "Let us not test Christ as some of them did, and suffered death by serpents.",
+        "VAT_ES": "No provoquemos al Señor, como hicieron algunos de ellos, y perecieron víctimas de las serpientes.",
+        "CEI": "perciò ci rallegriamo quando noi siamo deboli e voi siete forti. Noi preghiamo anche per la vostra perfezione."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Μηδὲ γογγύζετε, καθὼς καί τινες αὐτῶν ἐγόγγυσαν, καὶ ἀπώλοντο ὑπὸ τοῦ ὀλοθρευτοῦ.",
+        "VUL": "Neque murmuraveritis, sicut quidam eorum murmuraverunt, et perierunt ab exterminatore.",
+        "SYN": "Не ропщите, как некоторые из них роптали и погибли от истребителя.",
+        "NEO": "Ne murmurez pas comme murmurèrent quelques-uns d’entre eux, qui périrent sous les coups de l’Exterminateur.+ 10:10 10. Ex. xv, 24 ; xvii, 3 ; Nombr. xi, 4 sv. 33 ; xvi, 25 sv., 41 sv.*",
+        "NAB": "Do not grumble as some of them did, and suffered death by the destroyer.",
+        "VAT_ES": "No nos rebelemos contra Dios, como algunos de ellos, por lo cual murieron víctimas del Angel exterminador.",
+        "CEI": "Per questo vi scrivo queste cose da lontano: per non dover poi, di presenza, agire severamente con il potere che il Signore mi ha dato per edificare e non per distruggere."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Ταῦτα δὲ πάντα τύποι συνέβαινον ἐκείνοις· ἐγράφη δὲ πρὸς νουθεσίαν ἡμῶν, εἰς οὓς τὰ τέλη τῶν αἰώνων κατήντησεν.",
+        "VUL": "Hæc autem omnia in figura contingebant illis : scripta sunt autem ad correptionem nostram, in quos fines sæculorum devenerunt.",
+        "SYN": "Все это происходило с ними, _как_ образы; а описано в наставление нам, достигшим последних веков.",
+        "NEO": "Toutes+ 10:11 11. Toutes manque dans beaucoup de manuscrits.* ces choses leur sont arrivées en figure, et elles ont été écrites pour notre instruction, à nous qui sommes arrivés à la fin des temps.",
+        "NAB": "These things happened to them as an example, and they have been written down as a warning to us, upon whom the end of the ages has come.",
+        "VAT_ES": "Todo esto les sucedió simbólicamente, y está escrito para que nos sirva de lección a los que vivimos en el tiempo final.",
+        "CEI": "Per il resto, fratelli, state lieti, tendete alla perfezione, fatevi coraggio a vicenda, abbiate gli stessi sentimenti, vivete in pace e il Dio dell'amore e della pace sarà con voi."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Ὥστε ὁ δοκῶν ἑστάναι, βλεπέτω μὴ πέσῃ.",
+        "VUL": "Itaque qui se existimat stare, videat ne cadat.",
+        "SYN": "Посему, кто думает, что он стоит, берегись, чтобы не упасть.",
+        "NEO": "Ainsi donc que celui qui croit être debout prenne garde de tomber.+ 10:12 12. Conclusion de tout ce qui précède.*",
+        "NAB": "Therefore, whoever thinks he is standing secure should take care not to fall.",
+        "VAT_ES": "Por eso, el que se cree muy seguro, &iexcl;cuídese de no caer!",
+        "CEI": "Salutatevi a vicenda con il bacio santo. Tutti i santi vi salutano."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Πειρασμὸς ὑμᾶς οὐκ εἴληφεν εἰ μὴ ἀνθρώπινος· πιστὸς δὲ ὁ θεός, ὃς οὐκ ἐάσει ὑμᾶς πειρασθῆναι ὑπὲρ ὃ δύνασθε, ἀλλὰ ποιήσει σὺν τῷ πειρασμῷ καὶ τὴν ἔκβασιν, τοῦ δύνασθαι ὑμᾶς ὑπενεγκεῖν.",
+        "VUL": "Tentatio vos non apprehendat nisi humana : fidelis autem Deus est, qui non patietur vos tentari supra id quod potestis, sed faciet etiam cum tentatione proventum ut possitis sustinere.",
+        "SYN": "Вас постигло искушение не иное, как человеческое; и верен Бог, Который не попустит вам быть искушаемыми сверх сил, но при искушении даст и облегчение, так чтобы вы могли перенести.",
+        "NEO": "Aucune tentation ne vous est survenue, qui n’ait été humaine ; et Dieu, qui est fidèle, ne permettra pas que vous soyez tentés au delà de vos forces ; mais, avec la tentation, il ménagera aussi une heureuse issue en vous donnant le pouvoir de la supporter.+ 10:13 13. Appréhendât dans la Vulgate est probablement une faute ; les anciens manuscrits de cette version, la plupart des Pères et le missel romain ont \\+qt apprehendit\\+qt*. — \\+qt Humaine\\+qt*, en rapport avec les forces de l’homme, soutenu par les secours ordinaires de la grâce. — \\+qt D’en sortir\\+qt* victorieusement. Vulgate, \\+qt le moyen d’en tirer avantage\\+qt*, un profit \\+qt provendum\\+qt* au lieu de \\+qt exitum\\+qt*.*",
+        "NAB": "No trial has come to you but what is human. God is faithful and will not let you be tried beyond your strength; but with the trial he will also provide a way out, so that you may be able to bear it.",
+        "VAT_ES": "Hasta ahora, ustedes no tuvieron tentaciones que superen sus fuerzas humanas. Dios es fiel, y él no permitirá que sean tentados más allá de sus fuerzas. Al contrario, en el momento de la tentación, les dará el medio de librarse de ella, y los ayudará a soportarla.",
+        "CEI": "La grazia del Signore Gesù Cristo, l'amore di Dio e la comunione dello Spirito Santo siano con tutti voi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "¶Διόπερ, ἀγαπητοί μου, φεύγετε ἀπὸ τῆς εἰδωλολατρείας.",
+        "VUL": "Propter quod, carissimi mihi, fugite ab idolorum cultura :",
+        "SYN": "Итак, возлюбленные мои, убегайте идолослужения.",
+        "NEO": "C’est pourquoi, mes bien-aimés, fuyez l’idolâtrie.",
+        "NAB": "Therefore, my beloved, avoid idolatry.",
+        "VAT_ES": "Por esto, queridos míos, eviten la idolatría."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ὡς φρονίμοις λέγω, κρίνατε ὑμεῖς ὅ φημι.",
+        "VUL": "ut prudentibus loquor, vos ipsi judicate quod dico.",
+        "SYN": "Я говорю _вам_ как рассудительным; сами рассудите о том, что говорю.",
+        "NEO": "Je vous parle comme à des hommes intelligents ; jugez vous-mêmes de ce que je dis.",
+        "NAB": "I am speaking as to sensible people; judge for yourselves what I am saying.",
+        "VAT_ES": "Les hablo como a gente sensata; juzguen ustedes mismos lo que voy a decirles."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Τὸ ποτήριον τῆς εὐλογίας ὃ εὐλογοῦμεν, οὐχὶ κοινωνία τοῦ αἵματος τοῦ χριστοῦ ἐστίν; Τὸν ἄρτον ὃν κλῶμεν, οὐχὶ κοινωνία τοῦ σώματος τοῦ χριστοῦ ἐστίν;",
+        "VUL": "Calix benedictionis, cui benedicimus, nonne communicatio sanguinis Christi est ? et panis quem frangimus, nonne participatio corporis Domini est ?",
+        "SYN": "Чаша благословения, которую благословляем, не есть ли приобщение Крови Христовой? Хлеб, который преломляем, не есть ли приобщение Тела Христова?",
+        "NEO": "Le calice+ 10:16 16. Le calice, la coupe eucharistique (Matth. xxvi, 27 ; Marc, xiv, 23). — Le pain céleste de l’eucharistie (Luc, xxii, 19 ; comp. Act. ii, 46).* de bénédiction, que nous bénissons, n’est-il pas une communion au sang du Christ ? Et le pain, que nous rompons, n’est-il pas une communion au corps du Christ ?",
+        "NAB": "The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ?",
+        "VAT_ES": "La copa de bendición que bendecimos, &iquest;no es acaso comunión con la Sangre de Cristo? Y el pan que partimos, &iquest;no es comunión con el Cuerpo de Cristo?"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Ὅτι εἷς ἄρτος, ἓν σῶμα, οἱ πολλοί ἐσμεν· οἱ γὰρ πάντες ἐκ τοῦ ἑνὸς ἄρτου μετέχομεν.",
+        "VUL": "Quoniam unus panis, unum corpus multi sumus, omnes qui de uno pane participamus.",
+        "SYN": "Один хлеб, и мы многие одно тело; ибо все причащаемся от одного хлеба.",
+        "NEO": "Puisqu’il y a un seul pain, nous formons un seul corps, tout en étant plusieurs ; car nous participons tous à un même pain.",
+        "NAB": "Because the loaf of bread is one, we, though many, are one body, for we all partake of the one loaf.",
+        "VAT_ES": "Ya que hay un solo pan, todos nosotros, aunque somos muchos, formamos un solo Cuerpo, porque participamos de ese único pan."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Βλέπετε τὸν Ἰσραὴλ κατὰ σάρκα· οὐχὶ οἱ ἐσθίοντες τὰς θυσίας κοινωνοὶ τοῦ θυσιαστηρίου εἰσίν;",
+        "VUL": "Videte Israël secundum carnem : nonne qui edunt hostias, participes sunt altaris ?",
+        "SYN": "Посмотрите на Израиля по плоти: те, которые едят жертвы, не участники ли жертвенника?",
+        "NEO": "Voyez Israël selon la chair : ceux qui mangent les victimes ne participent-ils pas à l’autel ?",
+        "NAB": "Look at Israel according to the flesh; are not those who eat the sacrifices participants in the altar?",
+        "VAT_ES": "Pensemos en Israel según la carne: aquellos que comen las víctimas, &iquest;no están acaso en comunión con el altar?"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Τί οὖν φημι; Ὅτι εἴδωλόν τί ἐστιν; Ἢ ὅτι εἰδωλόθυτόν τί ἐστιν;",
+        "VUL": "Quid ergo ? dico quod idolis immolatum sit aliquid ? aut quod idolum, sit aliquid ?",
+        "SYN": "Что же я говорю? То ли, что идол есть что-нибудь, или идоложертвенное значит что-нибудь?",
+        "NEO": "Qu’est-ce à dire ? Que la viande sacrifiée aux idoles soit quelque chose, ou qu’une idole soit quelque chose ?",
+        "NAB": "So what am I saying? That meat sacrificed to idols is anything? Or that an idol is anything?",
+        "VAT_ES": "&iquest;Quiero decir con esto que la carne sacrificada a los ídolos tiene algún valor, o que el ídolo es algo?"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ ὅτι ἃ θύει τὰ ἔθνη, δαιμονίοις θύει, καὶ οὐ θεῷ· οὐ θέλω δὲ ὑμᾶς κοινωνοὺς τῶν δαιμονίων γίνεσθαι.",
+        "VUL": "Sed quæ immolant gentes, dæmoniis immolant, et non Deo. Nolo autem vos socios fieri dæmoniorum :",
+        "SYN": "_Нет,_ но что язычники, принося жертвы, приносят бесам, а не Богу. Но я не хочу, чтобы вы были в общении с бесами.",
+        "NEO": "Nullement* ; je dis que ce que les païens offrent en sacrifice, ils l’immolent à des démons, et non à Dieu ; or je ne veux pas que vous soyez en communion avec les démons.",
+        "NAB": "No, I mean that what they sacrifice, (they sacrifice) to demons, not to God, and I do not want you to become participants with demons.",
+        "VAT_ES": "No, afirmo sencillamente que los paganos ofrecen sus sacrificios a los demonios y no a Dios. Ahora bien, yo no quiero que ustedes entren en comunión con los demonios."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Οὐ δύνασθε ποτήριον κυρίου πίνειν καὶ ποτήριον δαιμονίων· οὐ δύνασθε τραπέζης κυρίου μετέχειν καὶ τραπέζης δαιμονίων.",
+        "VUL": "non potestis calicem Domini bibere, et calicem dæmoniorum ; non potestis mensæ Domini participes esse, et mensæ dæmoniorum.",
+        "SYN": "Не можете пить чашу Господню и чашу бесовскую; не можете быть участниками в трапезе Господней и в трапезе бесовской.",
+        "NEO": "Vous ne pouvez boire à la fois au calice du Seigneur et au calice des démons ; vous ne pouvez prendre part à la table du Seigneur et à la table des démons.",
+        "NAB": "You cannot drink the cup of the Lord and also the cup of demons. You cannot partake of the table of the Lord and of the table of demons.",
+        "VAT_ES": "Ustedes no pueden beber de la copa del Señor y de la copa de los demonios; tampoco pueden sentarse a la mesa del Señor y a la mesa de los demonios."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Ἢ παραζηλοῦμεν τὸν κύριον; Μὴ ἰσχυρότεροι αὐτοῦ ἐσμέν;",
+        "VUL": "An æmulamur Dominum ? numquid fortiores illo sumus ? Omnia mihi licent, sed non omnia expediunt.",
+        "SYN": "Неужели мы _решимся_ раздражать Господа? Разве мы сильнее Его?",
+        "NEO": "Voulons-nous provoquer la jalousie du Seigneur ? Sommes-nous plus forts que lui ?",
+        "NAB": "Or are we provoking the Lord to jealous anger? Are we stronger than he?",
+        "VAT_ES": "&iquest;O es que queremos provocar los celos del Señor? &iquest;Pretendemos ser más fuertes que él?"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "¶Πάντα μοι ἔξεστιν, ἀλλ’ οὐ πάντα συμφέρει. Πάντα μοι ἔξεστιν, ἀλλ’ οὐ πάντα οἰκοδομεῖ.",
+        "VUL": "Omnia mihi licent, sed non omnia ædificant.",
+        "SYN": "Все мне позволительно, но не все полезно; все мне позволительно, но не все назидает.",
+        "NEO": "Tout est permis, mais tout n’est pas expédient ; tout est permis, mais tout n’édifie pas.",
+        "NAB": "\"Everything is lawful,\" but not everything is beneficial. \"Everything is lawful,\" but not everything builds up.",
+        "VAT_ES": "«Todo está permitido», pero no todo es conveniente. «Todo está permitido», pero no todo es edificante."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Μηδεὶς τὸ ἑαυτοῦ ζητείτω, ἀλλὰ τὸ τοῦ ἑτέρου ἕκαστος.",
+        "VUL": "Nemo quod suum est quærat, sed quod alterius.",
+        "SYN": "Никто не ищи своего, но каждый _пользы_ другого.",
+        "NEO": "Que personne ne cherche son propre avantage, mais celui d’autrui.",
+        "NAB": "No one should seek his own advantage, but that of his neighbor.",
+        "VAT_ES": "Que nadie busque su propio interés, sino el de los demás."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Πᾶν τὸ ἐν μακέλλῳ πωλούμενον ἐσθίετε, μηδὲν ἀνακρίνοντες διὰ τὴν συνείδησιν·",
+        "VUL": "Omne quod in macello venit, manducate, nihil interrogantes propter conscientiam.",
+        "SYN": "Все, что продается на торгу, ешьте без всякого исследования, для _спокойствия_ совести;",
+        "NEO": "Mangez de tout ce qui se vend au marché, sans faire aucune question+ 10:25 25. Aucune question: sans demander si telle viande, mise en vente, n’a pas fait, partie d’une victime offerte en sacrifice.* par motif de conscience ;",
+        "NAB": "Eat anything sold in the market, without raising questions on grounds of conscience,",
+        "VAT_ES": "Coman de todo lo que se vende en el mercado, sin hacer averiguaciones por escrúpulos de conciencia."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Τοῦ γὰρ κυρίου ἡ γῆ καὶ τὸ πλήρωμα αὐτῆς.",
+        "VUL": "Domini est terra, et plenitudo ejus.",
+        "SYN": "ибо Господня земля, и что наполняет ее.",
+        "NEO": "car « la terre est au Seigneur, et tout ce qu’elle renferme. »+ 10:26 26. Citation du Ps. xxiv (23), 1. Comp. I Tim. iv, 4.*",
+        "NAB": "for \"the earth and its fullness are the Lord's.\"",
+        "VAT_ES": "Porque del Señor es la tierra y todo lo que hay en ella."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Εἰ δέ τις καλεῖ ὑμᾶς τῶν ἀπίστων, καὶ θέλετε πορεύεσθαι, πᾶν τὸ παρατιθέμενον ὑμῖν ἐσθίετε, μηδὲν ἀνακρίνοντες διὰ τὴν συνείδησιν.",
+        "VUL": "Si quis vocat vos infidelium, et vultis ire : omne quod vobis apponitur, manducate, nihil interrogantes propter conscientiam.",
+        "SYN": "Если кто из неверных позовет вас, и вы захотите пойти, то все, предлагаемое вам, ешьте без всякого исследования, для _спокойствия_ совести.",
+        "NEO": "Si un infidèle vous invite et que vous vouliez y aller, mangez de tout ce qu’on vous présentera, sans faire aucune question par motif de conscience.",
+        "NAB": "If an unbeliever invites you and you want to go, eat whatever is placed before you, without raising questions on grounds of conscience.",
+        "VAT_ES": "Si un pagano los invita a comer y ustedes aceptan, coman de todo aquello que les sirvan, sin preguntar nada por motivos de conciencia."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Ἐὰν δέ τις ὑμῖν εἴπῃ, Τοῦτο εἰδωλόθυτόν ἐστιν, μὴ ἐσθίετε δι’ ἐκεῖνον τὸν μηνύσαντα καὶ τὴν συνείδησιν· Τοῦ γὰρ κυρίου ἡ γῆ καὶ τὸ πλήρωμα αὐτῆς.",
+        "VUL": "Si quis autem dixerit : Hoc immolatum est idolis : nolite manducare propter illum qui indicavit, et propter conscientiam :",
+        "SYN": "Но если кто скажет вам: это идоложертвенное, -- то не ешьте ради того, кто объявил вам, и ради совести. Ибо Господня земля, и что наполняет ее.",
+        "NEO": "Mais si quelqu’un+ 10:28 28. Si quelqu’un des convives, probablement, dans la pensée de l’Apôtre, un chrétien de conscience faible (viii, 7 sv.).* vous dit : Ceci a été offert en sacrifice [aux idoles], n’en mangez pas, à cause de celui qui vous a donné ce renseignement et à cause de la conscience.",
+        "NAB": "But if someone says to you, \"This was offered in sacrifice,\" do not eat it on account of the one who called attention to it and on account of conscience;",
+        "VAT_ES": "Pero si alguien les dice: «Esto ha sido sacrificado a los ídolos», entonces no lo coman, en consideración del que los previno y por motivos de conciencia."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Συνείδησιν δὲ λέγω, οὐχὶ τὴν ἑαυτοῦ, ἀλλὰ τὴν τοῦ ἑτέρου· ἵνα τί γὰρ ἡ ἐλευθερία μου κρίνεται ὑπὸ ἄλλης συνειδήσεως;",
+        "VUL": "conscientiam autem dico non tuam, sed alterius. Ut quid enim libertas mea judicatur ab aliena conscientia ?",
+        "SYN": "Совесть же разумею не свою, а другого: ибо для чего моей свободе быть судимой чужою совестью?",
+        "NEO": "Je dis la conscience, non pas la vôtre, mais celle d’autrui. Pourquoi en effet ma liberté serait-elle jugée par une conscience étrangère ?",
+        "NAB": "I mean not your own conscience, but the other's. For why should my freedom be determined by someone else's conscience?",
+        "VAT_ES": "Me refiero a la conciencia de ellos, no a la de ustedes: &iquest;acaso mi libertad va a ser juzgada por la conciencia de otro?"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Εἰ ἐγὼ χάριτι μετέχω, τί βλασφημοῦμαι ὑπὲρ οὗ ἐγὼ εὐχαριστῶ;",
+        "VUL": "Si ego cum gratia participo, quid blasphemor pro eo quod gratias ago ?",
+        "SYN": "Если я с благодарением принимаю _пищу,_ то для чего порицать меня за то, за что я благодарю?",
+        "NEO": "Si je mange avec action de grâces, pourquoi serais-je blâmé pour une chose dont je rends grâces ?",
+        "NAB": "If I partake thankfully, why am I reviled for that over which I give thanks?",
+        "VAT_ES": "Si yo participo de la comida habiendo dado gracias, &iquest;seré reprendido por aquello mismo de lo que he dado gracias?"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "Εἴτε οὖν ἐσθίετε, εἴτε πίνετε, εἴτε τι ποιεῖτε, πάντα εἰς δόξαν θεοῦ ποιεῖτε.",
+        "VUL": "Sive ergo manducatis, sive bibitis, sive aliud quid facitis : omnia in gloriam Dei facite.",
+        "SYN": "Итак, едите ли, пьете ли, или иное что делаете, все делайте в славу Божию.",
+        "NEO": "Soit donc que vous mangiez, soit que vous buviez, ou quelque autre chose que vous fassiez, faites tout pour la gloire de Dieu.",
+        "NAB": "So whether you eat or drink, or whatever you do, do everything for the glory of God.",
+        "VAT_ES": "En resumen, sea que ustedes coman, sea que beban, o cualquier cosa que hagan, háganlo todo para la gloria de Dios."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "Ἀπρόσκοποι γίνεσθε καὶ Ἰουδαίοις καὶ Ἕλλησιν καὶ τῇ ἐκκλησίᾳ τοῦ θεοῦ·",
+        "VUL": "Sine offensione estote Judæis, et gentibus, et ecclesiæ Dei :",
+        "SYN": "Не подавайте соблазна ни Иудеям, ни Еллинам, ни церкви Божией,",
+        "NEO": "Ne soyez en scandale ni aux Juifs, ni aux Grecs, ni à l’Église de Dieu.",
+        "NAB": "Avoid giving offense, whether to Jews or Greeks or the church of God,",
+        "VAT_ES": "No sean motivo de escándalo ni para los judíos ni para los paganos ni tampoco para la Iglesia de Dios."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "καθὼς κἀγὼ πάντα πᾶσιν ἀρέσκω, μὴ ζητῶν τὸ ἐμαυτοῦ συμφέρον, ἀλλὰ τὸ τῶν πολλῶν, ἵνα σωθῶσιν.",
+        "VUL": "sicut et ego per omnia omnibus placeo, non quærens quod mihi utile est, sed quod multis : ut salvi fiant.",
+        "SYN": "так, как и я угождаю всем во всем, ища не своей пользы, но _пользы_ многих, чтобы они спаслись.",
+        "NEO": "C’est ainsi que moi-même je m’efforce en toutes choses de complaire à tous, ne cherchant pas mon propre avantage, mais celui du plus grand nombre, afin qu’ils soient sauvés.",
+        "NAB": "just as I try to please everyone in every way, not seeking my own benefit but that of the many, that they may be saved.",
+        "VAT_ES": "Hagan como yo, que me esfuerzo por complacer a todos en todas las cosas, no buscando mi interés personal, sino el del mayor número, para que puedan salvarse."
+      }
+    }
+  }
+}

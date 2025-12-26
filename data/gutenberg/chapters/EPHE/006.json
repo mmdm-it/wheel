@@ -1,0 +1,415 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EPHE_006",
+  "book_key": "EPHE",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Τὰ τέκνα, ὑπακούετε τοῖς γονεῦσιν ὑμῶν ἐν κυρίῳ· τοῦτο γάρ ἐστιν δίκαιον.",
+        "VUL": "Filii, obedite parentibus vestris in Domino : hoc enim justum est.",
+        "SYN": "Дети, повинуйтесь своим родителям в Господе, ибо сего _требует_ справедливость.",
+        "NEO": "Enfants, obéissez à vos parents dans le Seigneur, car cela est juste.",
+        "NAB": "Children, obey your parents (in the Lord), for this is right.",
+        "VAT_ES": "Pablo y Timoteo, servidores de Cristo Jesús, saludan a todos los santos en Cristo Jesús, que se encuentran en Filipos, así como también a los que presiden la comunidad y a los diáconos.",
+        "CEI": "Lo Spirito dichiara apertamente che negli ultimi tempi alcuni si allontaneranno dalla fede, dando retta a spiriti menzogneri e a dottrine diaboliche,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Τίμα τὸν πατέρα σου καὶ τὴν μητέρα ἥτις ἐστὶν ἐντολὴ πρώτη ἐν ἐπαγγελίᾳ,",
+        "VUL": "Honora patrem tuum, et matrem tuam, quod est mandatum primum in promissione :",
+        "SYN": "Почитай отца твоего и мать, это первая заповедь с обетованием:",
+        "NEO": "« Honore ton père et ta mère — c’est le premier commandement, accompagné d’une promesse. —",
+        "NAB": "\"Honor your father and mother.\" This is the first commandment with a promise,",
+        "VAT_ES": "Llegue a ustedes la gracia y la paz que proceden de Dios, nuestro Padre, y del Señor Jesucristo.",
+        "CEI": "sedotti dall'ipocrisia di impostori, già bollati a fuoco nella loro coscienza."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "ἵνα εὖ σοι γένηται, καὶ ἔσῃ μακροχρόνιος ἐπὶ τῆς γῆς.",
+        "VUL": "ut bene sit tibi, et sis longævus super terram.",
+        "SYN": "да будет тебе благо, и будешь долголетен на земле.",
+        "NEO": "afin que tu sois heureux et que tu vives longtemps sur la terre. »",
+        "NAB": "\"that it may go well with you and that you may have a long life on earth.\"",
+        "VAT_ES": "Yo doy gracias a Dios cada vez que los recuerdo.",
+        "CEI": "Costoro vieteranno il matrimonio, imporranno di astenersi da alcuni cibi che Dio ha creato per essere mangiati con rendimento di grazie dai fedeli e da quanti conoscono la verità."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Καὶ οἱ πατέρες, μὴ παροργίζετε τὰ τέκνα ὑμῶν, ἀλλ’ ἐκτρέφετε αὐτὰ ἐν παιδείᾳ καὶ νουθεσίᾳ κυρίου.",
+        "VUL": "Et vos patres, nolite ad iracundiam provocare filios vestros : sed educate illos in disciplina et correptione Domini.",
+        "SYN": "И вы, отцы, не раздражайте детей ваших, но воспитывайте их в учении и наставлении Господнем.",
+        "NEO": "Et vous, pères, n’exaspérez pas vos enfants, mais élevez-les en les corrigeant et en les avertissant selon le Seigneur.",
+        "NAB": "Fathers, do not provoke your children to anger, but bring them up with the training and instruction of the Lord.",
+        "VAT_ES": "Siempre y en todas mis oraciones pido con alegría por todos ustedes,",
+        "CEI": "Infatti tutto ciò che è stato creato da Dio è buono e nulla è da scartarsi, quando lo si prende con rendimento di grazie,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "¶Οἱ δοῦλοι, ὑπακούετε τοῖς κυρίοις κατὰ σάρκα, μετὰ φόβου καὶ τρόμου, ἐν ἁπλότητι τῆς καρδίας ὑμῶν, ὡς τῷ χριστῷ·",
+        "VUL": "Servi, obedite dominis carnalibus cum timore et tremore, in simplicitate cordis vestri, sicut Christo :",
+        "SYN": "Рабы, повинуйтесь господам своим по плоти со страхом и трепетом, в простоте сердца вашего, как Христу,",
+        "NEO": "Serviteurs, obéissez à vos maîtres selon la chair avec respect et crainte et dans la simplicité de votre cœur, comme au Christ,",
+        "NAB": "Slaves, be obedient to your human masters with fear and trembling, in sincerity of heart, as to Christ,",
+        "VAT_ES": "pensando en la colaboración que prestaron a la difusión del Evangelio, desde el comienzo hasta ahora.",
+        "CEI": "perché esso viene santificato dalla parola di Dio e dalla preghiera."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "μὴ κατ’ ὀφθαλμοδουλείαν ὡς ἀνθρωπάρεσκοι, ἀλλ’ ὡς δοῦλοι τοῦ χριστοῦ, ποιοῦντες τὸ θέλημα τοῦ θεοῦ ἐκ ψυχῆς,",
+        "VUL": "non ad oculum servientes, quasi hominibus placentes, sed ut servi Christi, facientes voluntatem Dei ex animo,",
+        "SYN": "не с видимою только услужливостью, как человекоугодники, но как рабы Христовы, исполняя волю Божию от души,",
+        "NEO": "ne faisant pas seulement le service sous leurs yeux, comme pour plaire aux hommes, mais en serviteurs du Christ, qui font de bon cœur la volonté de Dieu.",
+        "NAB": "not only when being watched, as currying favor, but as slaves of Christ, doing the will of God from the heart,",
+        "VAT_ES": "Estoy firmemente convencido de que aquel que comenzó en ustedes la buena obra la irá completando hasta el Día de Cristo Jesús.",
+        "CEI": "Proponendo queste cose ai fratelli sarai un buon ministro di Cristo Gesù, nutrito come sei dalle parole della fede e della buona dottrina che hai seguito."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "μετ’ εὐνοίας δουλεύοντες ὡς τῷ κυρίῳ καὶ οὐκ ἀνθρώποις·",
+        "VUL": "cum bona voluntate servientes, sicut Domino, et non hominibus :",
+        "SYN": "служа с усердием, как Господу, а не как человекам,",
+        "NEO": "Servez-les avec affection, comme servant* le Seigneur, et non des hommes,+ 6:7 VI. 7. Autre leçon : de bon cœur et avec affection.*",
+        "NAB": "willingly serving the Lord and not human beings,",
+        "VAT_ES": "Y es justo que tenga estos sentimientos hacia todos ustedes, porque los llevo en mi corazón, ya que ustedes, sea cuando estoy prisionero, sea cuando trabajo en la defensa y en la confirmación del Evangelio, participan de la gracia que he recibido.",
+        "CEI": "Rifiuta invece le favole profane, roba da vecchierelle."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "εἰδότες ὅτι ὃ ἐάν τι ἕκαστος ποιήσῃ ἀγαθόν, τοῦτο κομιεῖται παρὰ τοῦ κυρίου, εἴτε δοῦλος, εἴτε ἐλεύθερος.",
+        "VUL": "scientes quoniam unusquisque quodcumque fecerit bonum, hoc recipiet a Domino, sive servus, sive liber.",
+        "SYN": "зная, что каждый получит от Господа по мере добра, которое он сделал, раб ли, или свободный.",
+        "NEO": "assurés que chacun, soit esclave, soit libre, sera récompensé par le Seigneur de ce qu’il aura fait de bien.",
+        "NAB": "knowing that each will be requited from the Lord for whatever good he does, whether he is slave or free.",
+        "VAT_ES": "Dios es testigo de que los quiero tiernamente a todos en el corazón de Cristo Jesús.",
+        "CEI": "Esèrcitati nella pietà, perché l'esercizio fisico è utile a poco, mentre la pietà è utile a tutto, portando con sé la promessa della vita presente come di quella futura."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Καὶ οἱ κύριοι, τὰ αὐτὰ ποιεῖτε πρὸς αὐτούς, ἀνιέντες τὴν ἀπειλήν· εἰδότες ὅτι καὶ ὑμῶν αὐτῶν ὁ κύριός ἐστιν ἐν οὐρανοῖς, καὶ προσωποληψία οὐκ ἔστιν παρ’ αὐτῷ.",
+        "VUL": "Et vos domini, eadem facite illis, remittentes minas : scientes quia et illorum et vester Dominus est in cælis : et personarum acceptio non est apud eum.",
+        "SYN": "И вы, господа, поступайте с ними так же, умеряя строгость, зная, что и над вами самими и над ними есть на небесах Господь, у Которого нет лицеприятия.",
+        "NEO": "Et vous, maîtres, agissez de même à leur égard et laissez là les menaces, sachant que leur Seigneur et le vôtre est dans les cieux et qu’il ne fait pas acception de personne.+ 6:9 9. Autre leçon : qui est aussi votre maître.* ÉPILOGUE.",
+        "NAB": "Masters, act in the same way toward them, and stop bullying, knowing that both they and you have a Master in heaven and that with him there is no partiality.",
+        "VAT_ES": "Y en mi oración pido que el amor de ustedes crezca cada vez más en el conocimiento y en la plena comprensión,",
+        "CEI": "Certo questa parola è degna di fede."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "¶Τὸ λοιπόν, ἀδελφοί μου, ἐνδυναμοῦσθε ἐν κυρίῳ, καὶ ἐν τῷ κράτει τῆς ἰσχύος αὐτοῦ.",
+        "VUL": "De cetero, fratres, confortamini in Domino, et in potentia virtutis ejus.",
+        "SYN": "Наконец, братия мои, укрепляйтесь Господом и могуществом силы Его.",
+        "NEO": "Au reste, frères, fortifiez-vous dans le Seigneur et dans sa vertu toute-puissante.",
+        "NAB": "Finally, draw your strength from the Lord and from his mighty power.",
+        "VAT_ES": "a fin de que puedan discernir lo que es mejor. Así serán encontrados puros e irreprochables en el Día de Cristo.",
+        "CEI": "Noi infatti ci affatichiamo e combattiamo perché abbiamo posto la nostra speranza nel Dio vivente, che è il salvatore di tutti gli uomini, ma soprattutto di quelli che credono."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Ἐνδύσασθε τὴν πανοπλίαν τοῦ θεοῦ, πρὸς τὸ δύνασθαι ὑμᾶς στῆναι πρὸς τὰς μεθοδείας τοῦ διαβόλου.",
+        "VUL": "Induite vos armaturam Dei, ut possitis stare adversus insidias diaboli :",
+        "SYN": "Облекитесь во всеоружие Божие, чтобы вам можно было стать против козней диавольских,",
+        "NEO": "Revêtez-vous de l’armure de Dieu, afin de pouvoir résister aux embûches du diable.",
+        "NAB": "Put on the armor of God so that you may be able to stand firm against the tactics of the devil.",
+        "VAT_ES": "llenos del fruto de justicia que proviene de Jesucristo, para la gloria y alabanza de Dios.",
+        "CEI": "Questo tu devi proclamare e insegnare."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Ὅτι οὐκ ἔστιν ἡμῖν ἡ πάλη πρὸς αἷμα καὶ σάρκα, ἀλλὰ πρὸς τὰς ἀρχάς, πρὸς τὰς ἐξουσίας, πρὸς τοὺς κοσμοκράτορας τοῦ σκότους τοῦ αἰῶνος τούτου, πρὸς τὰ πνευματικὰ τῆς πονηρίας ἐν τοῖς ἐπουρανίοις.",
+        "VUL": "quoniam non est nobis colluctatio adversus carnem et sanguinem, sed adversus principes, et potestates, adversus mundi rectores tenebrarum harum, contra spiritualia nequitiæ, in cælestibus.",
+        "SYN": "потому что наша брань не против крови и плоти, но против начальств, против властей, против мироправителей тьмы века сего, против духов злобы поднебесной.",
+        "NEO": "Car nous n’avons pas à lutter contre la chair et le sang, mais contre les princes, contre les puissances, contre les dominateurs de ce monde de ténèbres, contre les esprits mauvais répandus* dans l’air.",
+        "NAB": "For our struggle is not with flesh and blood but with the principalities, with the powers, with the world rulers of this present darkness, with the evil spirits in the heavens.",
+        "VAT_ES": "Quiero que ustedes sepan, hermanos, que lo que me ha sucedido más bien ha contribuido al progreso del Evangelio.",
+        "CEI": "Nessuno disprezzi la tua giovane età, ma sii esempio ai fedeli nelle parole, nel comportamento, nella carità, nella fede, nella purezza."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Διὰ τοῦτο ἀναλάβετε τὴν πανοπλίαν τοῦ θεοῦ, ἵνα δυνηθῆτε ἀντιστῆναι ἐν τῇ ἡμέρᾳ τῇ πονηρᾷ, καὶ ἅπαντα κατεργασάμενοι στῆναι.",
+        "VUL": "Propterea accipite armaturam Dei, ut possitis resistere in die malo, et in omnibus perfecti stare.",
+        "SYN": "Для сего приимите всеоружие Божие, дабы вы могли противостать в день злый и, все преодолев, устоять.",
+        "NEO": "C’est pourquoi prenez l’armure de Dieu, afin de pouvoir résister au jour mauvais, et après avoir tout surmonté, rester debout.+ 6:13 13. Rester debout, la Vulg. ajoute : \\+qt parfaits en toutes choses\\+qt*. S. Paul était alors sous la garde de soldats romains. Il a devant les yeux leur armure dans la description qu’il fait des armes spirituelles du chrétien.*",
+        "NAB": "Therefore, put on the armor of God, that you may be able to resist on the evil day and, having done everything, to hold your ground.",
+        "VAT_ES": "En efecto, en el pretorio y en todas partes, se ha hecho evidente que es por Cristo que llevo las cadenas,",
+        "CEI": "Fino al mio arrivo, dèdicati alla lettura, all'esortazione e all'insegnamento."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Στῆτε οὖν περιζωσάμενοι τὴν ὀσφὺν ὑμῶν ἐν ἀληθείᾳ, καὶ ἐνδυσάμενοι τὸν θώρακα τῆς δικαιοσύνης,",
+        "VUL": "State ergo succincti lumbos vestros in veritate, et induti loricam justitiæ,",
+        "SYN": "Итак станьте, препоясав чресла ваши истиною и облекшись в броню праведности,",
+        "NEO": "Soyez donc fermes, les reins ceints de la vérité, revêtus de la cuirasse de justice,",
+        "NAB": "So stand fast with your loins girded in truth, clothed with righteousness as a breastplate,",
+        "VAT_ES": "y la mayor parte de los hermanos, a quienes mis cadenas han devuelto el coraje en el Señor, se han animado a proclamar sin temor la Palabra de Dios.",
+        "CEI": "Non trascurare il dono spirituale che è in te e che ti è stato conferito, per indicazioni di profeti, con l'imposizione delle mani da parte del collegio dei presbiteri."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "καὶ ὑποδησάμενοι τοὺς πόδας ἐν ἑτοιμασίᾳ τοῦ εὐαγγελίου τῆς εἰρήνης·",
+        "VUL": "et calceati pedes in præparatione Evangelii pacis,",
+        "SYN": "и обув ноги в готовность благовествовать мир;",
+        "NEO": "et les sandales aux pieds, prêts à annoncer l’Évangile de paix.",
+        "NAB": "and your feet shod in readiness for the gospel of peace.",
+        "VAT_ES": "Es verdad que algunos predican a Cristo llevados por la envidia y el espíritu de discordia, pero otros lo hacen con buena intención.",
+        "CEI": "Abbi premura di queste cose, dèdicati ad esse interamente perché tutti vedano il tuo progresso."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "ἐπὶ πᾶσιν ἀναλαβόντες τὸν θυρεὸν τῆς πίστεως, ἐν ᾧ δυνήσεσθε πάντα τὰ βέλη τοῦ πονηροῦ τὰ πεπυρωμένα σβέσαι.",
+        "VUL": "in omnibus sumentes scutum fidei, in quo possitis omnia tela nequissimi ignea extinguere :",
+        "SYN": "а паче всего возьмите щит веры, которым возможете угасить все раскаленные стрелы лукавого;",
+        "NEO": "Et surtout, prenez le bouclier de la foi, par lequel vous pourrez éteindre tous les traits enflammés du Malin.",
+        "NAB": "In all circumstances, hold faith as a shield, to quench all (the) flaming arrows of the evil one.",
+        "VAT_ES": "Estos obran por amor, sabiendo que yo tengo la misión de defender el Evangelio.",
+        "CEI": "Vigila su te stesso e sul tuo insegnamento e sii perseverante: così facendo salverai te stesso e coloro che ti ascoltano."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Καὶ τὴν περικεφαλαίαν τοῦ σωτηρίου δέξασθαι, καὶ τὴν μάχαιραν τοῦ πνεύματος, ὅ ἐστιν ῥῆμα θεοῦ·",
+        "VUL": "et galeam salutis assumite, et gladium spiritus (quod est verbum Dei),",
+        "SYN": "и шлем спасения возьмите, и меч духовный, который есть Слово Божие.",
+        "NEO": "Prenez aussi le casque du salut, et le glaive de l’Esprit, qui est la parole de Dieu.",
+        "NAB": "And take the helmet of salvation and the sword of the Spirit, which is the word of God.",
+        "VAT_ES": "Aquellos, en cambio, anuncian a Cristo por espíritu de discordia, por motivos que no son puros, creyendo que así aumentan el peso de mis cadenas."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "διὰ πάσης προσευχῆς καὶ δεήσεως προσευχόμενοι ἐν παντὶ καιρῷ ἐν πνεύματι, καὶ εἰς αὐτὸ τοῦτο ἀγρυπνοῦντες ἐν πάσῃ προσκαρτερήσει καὶ δεήσει περὶ πάντων τῶν ἁγίων,",
+        "VUL": "per omnem orationem et obsecrationem orantes omni tempore in spiritu : et in ipso vigilantes in omni instantia et obsecratione pro omnibus sanctis :",
+        "SYN": "Всякою молитвою и прошением молитесь во всякое время духом, и старайтесь о сем самом со всяким постоянством и молением о всех святых",
+        "NEO": "Faites en tout temps par l’Esprit toutes sortes de prières et de supplications ; et pour cela, veillez avec une persévérance continuelle et priez pour tous les saints,",
+        "NAB": "With all prayer and supplication, pray at every opportunity in the Spirit. To that end, be watchful with all perseverance and supplication for all the holy ones",
+        "VAT_ES": "Pero &iexcl;qué importa! Después de todo, de una u otra manera, con sinceridad o sin ella, Cristo es anunciado, y de esto me alegro y me alegraré siempre."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "καὶ ὑπὲρ ἐμοῦ, ἵνα μοι δοθῇ λόγος ἐν ἀνοίξει τοῦ στόματός μου ἐν παρρησίᾳ γνωρίσαι τὸ μυστήριον τοῦ εὐαγγελίου,",
+        "VUL": "et pro me, ut detur mihi sermo in apertione oris mei cum fiducia, notum facere mysterium Evangelii :",
+        "SYN": "и о мне, дабы мне дано было слово -- устами моими открыто с дерзновением возвещать тайну благовествования,",
+        "NEO": "et pour moi, afin qu’il me soit donné d’ouvrir les lèvres et de prêcher avec liberté le mystère de l’Évangile,",
+        "NAB": "and also for me, that speech may be given me to open my mouth, to make known with boldness the mystery of the gospel",
+        "VAT_ES": "Porque sé que esto servirá para mi salvación, gracias a las oraciones de ustedes y a la ayuda que me da el Espíritu de Jesucristo."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "ὑπὲρ οὗ πρεσβεύω ἐν ἁλύσει, ἵνα ἐν αὐτῷ παρρησιάσωμαι, ὡς δεῖ με λαλῆσαι.",
+        "VUL": "pro quo legatione fungor in catena, ita ut in ipso audeam, prout oportet me loqui.",
+        "SYN": "для которого я исполняю посольство в узах, дабы я смело проповедывал, как мне должно.",
+        "NEO": "à l’égard duquel je fais fonction d’ambassadeur dans les chaînes, et afin que j’en parle avec assurance comme il convient.",
+        "NAB": "for which I am an ambassador in chains, so that I may have the courage to speak as I must.",
+        "VAT_ES": "Así lo espero ansiosamente, y no seré defraudado. Al contrario, estoy completamente seguro de que ahora, como siempre, sea que viva, sea que muera, Cristo será glorificado en mi cuerpo."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "¶Ἵνα δὲ εἰδῆτε καὶ ὑμεῖς τὰ κατ’ ἐμέ, τί πράσσω, πάντα ὑμῖν γνωρίσει Τυχικὸς ὁ ἀγαπητὸς ἀδελφὸς καὶ πιστὸς διάκονος ἐν κυρίῳ·",
+        "VUL": "Ut autem et vos sciatis quæ circa me sunt, quid agam, omnia vobis nota faciet Tychicus, carissimus frater, et fidelis minister in Domino :",
+        "SYN": "А дабы и вы знали о моих обстоятельствах и делах, обо всем известит вас Тихик, возлюбленный брат и верный в Господе служитель,",
+        "NEO": "Quant à savoir ce qui me concerne et ce que je fais, Tychique, le bien-aimé frère et fidèle ministre dans le Seigneur, vous fera tout connaître.",
+        "NAB": "So that you also may have news of me and of what I am doing, Tychicus, my beloved brother and trustworthy minister in the Lord, will tell you everything.",
+        "VAT_ES": "Porque para mí la vida es Cristo, y la muerte, una ganancia."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "ὃν ἔπεμψα πρὸς ὑμᾶς εἰς αὐτὸ τοῦτο, ἵνα γνῶτε τὰ περὶ ἡμῶν, καὶ παρακαλέσῃ τὰς καρδίας ὑμῶν.",
+        "VUL": "quem misi ad vos in hoc ipsum, ut cognoscatis quæ circa nos sunt, et consoletur corda vestra.",
+        "SYN": "которого я и послал к вам для того самого, чтобы вы узнали о нас и чтобы он утешил сердца ваши.",
+        "NEO": "Je vous l’envoie tout exprès, pour que vous connaissiez notre situation et pour qu’il console vos cœurs.",
+        "NAB": "I am sending him to you for this very purpose, so that you may know about us and that he may encourage your hearts.",
+        "VAT_ES": "Pero si la vida en este cuerpo me permite seguir trabajando fructuosamente, ya no sé qué elegir."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "¶Εἰρήνη τοῖς ἀδελφοῖς καὶ ἀγάπη μετὰ πίστεως ἀπὸ θεοῦ πατρὸς καὶ κυρίου Ἰησοῦ χριστοῦ.",
+        "VUL": "Pax fratribus, et caritas cum fide a Deo Patre et Domino Jesu Christo.",
+        "SYN": "Мир братиям и любовь с верою от Бога Отца и Господа Иисуса Христа.",
+        "NEO": "Paix aux frères, charité et foi, de la part de Dieu le Père et du Seigneur Jésus-Christ !",
+        "NAB": "Peace be to the brothers, and love with faith, from God the Father and the Lord Jesus Christ.",
+        "VAT_ES": "Me siento urgido de ambas partes: deseo irme para estar con Cristo, porque es mucho mejor,"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Ἡ χάρις μετὰ πάντων τῶν ἀγαπώντων τὸν κύριον ἡμῶν Ἰησοῦν χριστὸν ἐν ἀφθαρσίᾳ. Ἀμήν.",
+        "VUL": "Gratia cum omnibus qui diligunt Dominum nostrum Jesum Christum in incorruptione. Amen.",
+        "SYN": "Благодать со всеми, неизменно любящими Господа нашего Иисуса Христа. Аминь.",
+        "NEO": "Que la grâce soit avec tous ceux qui aiment Notre-Seigneur Jésus-Christ d’un amour incorruptible.",
+        "NAB": "Grace be with all who love our Lord Jesus Christ in immortality.",
+        "VAT_ES": "pero por el bien de ustedes es preferible que permanezca en este cuerpo."
+      }
+    }
+  }
+}

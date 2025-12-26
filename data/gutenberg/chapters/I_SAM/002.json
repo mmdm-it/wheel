@@ -1,0 +1,663 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_SAM_002",
+  "book_key": "I_SAM",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/תִּתְפַּלֵּ֤ל חַנָּה֙ וַ/תֹּאמַ֔ר עָלַ֤ץ לִבִּ/י֙ בַּֽ/יהוָ֔ה רָ֥מָה קַרְנִ֖/י בַּֽ/יהוָ֑ה רָ֤חַב פִּ/י֙ עַל א֣וֹיְבַ֔/י כִּ֥י שָׂמַ֖חְתִּי בִּ/ישׁוּעָתֶֽ/ךָ׃",
+        "LXX": "Καὶ εἶπεν Ἐστερεώθη ἡ καρδία μου ἐν Κυρίῳ, ὑψώθη κέρας μου ἐν θεῷ μου· ἐπλατύνθη ἐπὶ ἐχθροὺς τὸ στόμα μου, εὐφράνθην ἐν σωτηρίᾳ σου.",
+        "VUL": "[Exsultavit cor meum in Domino,/ et exaltatum est cornu meum in Deo meo ;/ dilatatum est os meum super inimicos meos :/ quia lætata sum in salutari tuo./",
+        "SYN": "И молилась Анна и говорила: возрадовалось сердце мое в Господе; вознесся рог мой в Боге моем; широко разверзлись уста мои на врагов моих, ибо я радуюсь о спасении Твоем.",
+        "NEO": "Anne pria et dit : Mon cœur tressaille de joie en \\+w Yahweh|strong=\"H3068\"\\+w**, ma corne a été élevée par \\+w Yahweh|strong=\"H3068\"\\+w**, ma bouche est ouverte sur mes ennemis, car je me suis réjouie de ton secours.",
+        "NAB": "and as she worshiped the LORD, she said: \"My heart exults in the LORD, my horn is exalted in my God. I have swallowed up my enemies; I rejoice in my victory.",
+        "VAT_ES": "Entonces Ana oró, diciendo: «Mi corazón se regocija en el Señor, tengo la frente erguida gracias a mi Dios. Mi boca se ríe de mis enemigos, porque tu salvación me ha llenado de alegría.",
+        "CEI": "Allora Anna pregò: Il mio cuore esulta nel Signore, la mia fronte s'innalza grazie al mio Dio. Si apre la mia bocca contro i miei nemici, perché io godo del beneficio che mi hai concesso."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אֵין קָד֥וֹשׁ כַּ/יהוָ֖ה כִּ֣י אֵ֣ין בִּלְתֶּ֑/ךָ וְ/אֵ֥ין צ֖וּר כֵּ/אלֹהֵֽי/נוּ׃",
+        "LXX": "ὅτι οὐκ ἔστιν ἅγιος ὡς Κύριος, καὶ οὐκ ἔστιν δίκαιος ὡς ὁ θεὸς ἡμῶν, οὐκ ἔστιν ἅγιος πλὴν σοῦ.",
+        "VUL": "Non est sanctus, ut est Dominus,/ neque enim est alius extra te,/ et non est fortis sicut Deus noster./",
+        "SYN": "Нет _столь_ святаго, как Господь; ибо нет другого, кроме Тебя; и нет твердыни, как Бог наш.",
+        "NEO": "Nul n’est saint comme \\+w Yahweh|strong=\"H3068\"\\+w**, car il n’y a pas d’autre Dieu que toi ; il n’y a pas de rocher comme notre Dieu.",
+        "NAB": "There is no Holy One like the LORD; there in no Rock like our God.",
+        "VAT_ES": "No hay Santo como el Señor, porque no hay nadie fuera de ti, y no hay Roca como nuestro Dios.",
+        "CEI": "Non c'è santo come il Signore, non c'è rocca come il nostro Dio."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אַל תַּרְבּ֤וּ תְדַבְּרוּ֙ גְּבֹהָ֣ה גְבֹהָ֔ה יֵצֵ֥א עָתָ֖ק מִ/פִּי/כֶ֑ם כִּ֣י אֵ֤ל דֵּעוֹת֙ יְהוָ֔ה ו/לא וְ/ל֥/וֹ נִתְכְּנ֖וּ עֲלִלֽוֹת׃",
+        "LXX": "μὴ καυχᾶσθε καὶ μὴ λαλεῖτε ὑψηλά, μὴ ἐξελθάτω μεγαλορημοσύνη ἐκ τοῦ στόματος ὑμῶν· ὅτι θεὸς γνώσεως Κύριος, καὶ θεὸς ἑτοιμάζων ἐπιτηδεύματα αὐτοῦ.",
+        "VUL": "Nolite multiplicare loqui sublimia gloriantes ;/ recedant vetera de ore vestro :/ quia Deus scientiarum Dominus est,/ et ipsi præparantur cogitationes./",
+        "SYN": "Не умножайте речей надменных; дерзкие слова да не исходят из уст ваших; ибо Господь есть Бог ведения, и дела у Него взвешены.",
+        "NEO": "Ne prononcez pas tant de paroles hautaines, qu’un langage arrogant ne sorte pas de votre bouche.",
+        "NAB": "\"Speak boastfully no longer, nor let arrogance issue from your mouths. For an all-knowing God is the LORD, a God who judges deeds.",
+        "VAT_ES": "No hablen con tanta arrogancia, que la insolencia no les brote de la boca, porque el Señor es el Dios que lo sabe todo, y es él quien valora las acciones.",
+        "CEI": "Non moltiplicate i discorsi superbi, dalla vostra bocca non esca arroganza; perché il Signore è il Dio che sa tutto e le sue opere sono rette."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "קֶ֥שֶׁת גִּבֹּרִ֖ים חַתִּ֑ים וְ/נִכְשָׁלִ֖ים אָ֥זְרוּ חָֽיִל׃",
+        "LXX": "τόξον δυνατῶν ἠσθένησεν, καὶ ἀσθενοῦντες περιεζώσαντο δύναμιν·",
+        "VUL": "Arcus fortium superatus est,/ et infirmi accincti sunt robore./",
+        "SYN": "Лук сильных преломляется, а немощные препоясываются силою;",
+        "NEO": "L’arc des puissants est brisé, et les faibles ont la force pour ceinture.",
+        "NAB": "The bows of the mighty are broken, while the tottering gird on strength.",
+        "VAT_ES": "El arco de los valientes se ha quebrado, y los vacilantes se ciñen de vigor;",
+        "CEI": "L'arco dei forti s'è spezzato, ma i deboli sono rivestiti di vigore."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "שְׂבֵעִ֤ים בַּ/לֶּ֨חֶם֙ נִשְׂכָּ֔רוּ וּ/רְעֵבִ֖ים חָדֵ֑לּוּ עַד עֲקָרָה֙ יָלְדָ֣ה שִׁבְעָ֔ה וְ/רַבַּ֥ת בָּנִ֖ים אֻמְלָֽלָה׃",
+        "LXX": "πλήρεις ἄρτων ἠλαττώθησαν, καὶ ἀσθενοῦντες παρῆκαν γῆν. ὅτι στεῖρα ἔτεκεν ἑπτά, καὶ ἡ πολλὴ ἐν τέκνοις ἠσθένησεν.",
+        "VUL": "Repleti prius, pro panibus se locaverunt :/ et famelici saturati sunt,/ donec sterilis peperit plurimos :/ et quæ multos habebat filios, infirmata est./",
+        "SYN": "сытые работают из хлеба, а голодные отдыхают; даже бесплодная рождает семь раз, а многочадная изнемогает.",
+        "NEO": "Ceux qui étaient rassasiés se louent pour du pain, et ceux qui étaient affamés n’ont plus faim ; même la stérile enfante sept fois, et celle qui avait beaucoup de fils se flétrit.",
+        "NAB": "he well-fed hire themselves out for bread, while the hungry batten on spoil. The barren wife bears seven sons, while the mother of many languishes.",
+        "VAT_ES": "los satisfechos se contratan por un pedazo de pan, y los hambrientos dejan de fatigarse; la mujer estéril da a luz siete veces, y la madre de muchos hijos se marchita.",
+        "CEI": "I sazi sono andati a giornata per un pane, mentre gli affamati han cessato di faticare. La sterile ha partorito sette volte e la ricca di figli è sfiorita."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "יְהוָ֖ה מֵמִ֣ית וּ/מְחַיֶּ֑ה מוֹרִ֥יד שְׁא֖וֹל וַ/יָּֽעַל׃",
+        "LXX": "Κύριος θανατοῖ καὶ ζωογονεῖ, κατάγει εἰς ᾅδου καὶ ἀνάγει·",
+        "VUL": "Dominus mortificat et vivificat ;/ deducit ad inferos et reducit./",
+        "SYN": "Господь умерщвляет и оживляет, низводит в преисподнюю и возводит;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** fait mourir et il fait vivre, il fait descendre au séjour des morts et il en fait remonter.",
+        "NAB": "\"The LORD puts to death and gives life; he casts down to the nether world; he raises up again.",
+        "VAT_ES": "El Señor da la muerte y la vida, hunde en el Abismo y levanta de él.",
+        "CEI": "Il Signore fa morire e fa vivere, scendere agli inferi e risalire."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יְהוָ֖ה מוֹרִ֣ישׁ וּ/מַעֲשִׁ֑יר מַשְׁפִּ֖יל אַף מְרוֹמֵֽם׃",
+        "LXX": "Κύριος πτωχίζει καὶ πλουτίζει, ταπεινοῖ καὶ ἀνυψοῖ.",
+        "VUL": "Dominus pauperem facit et ditat,/ humiliat et sublevat./",
+        "SYN": "Господь делает нищим и обогащает, унижает и возвышает.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** appauvrit et il enrichit, il abaisse et il élève.",
+        "NAB": "The LORD makes poor and makes rich, he humbles, he also exalts.",
+        "VAT_ES": "El Señor da la pobreza y la riqueza, humilla y también enaltece.",
+        "CEI": "Il Signore rende povero e arricchisce, abbassa ed esalta."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "מֵקִ֨ים מֵ/עָפָ֜ר דָּ֗ל מֵֽ/אַשְׁפֹּת֙ יָרִ֣ים אֶבְי֔וֹן לְ/הוֹשִׁיב֙ עִם נְדִיבִ֔ים וְ/כִסֵּ֥א כָב֖וֹד יַנְחִלֵ֑/ם כִּ֤י לַֽ/יהוָה֙ מְצֻ֣קֵי אֶ֔רֶץ וַ/יָּ֥שֶׁת עֲלֵי/הֶ֖ם תֵּבֵֽל׃",
+        "LXX": "ἀνιστᾷ ἀπὸ γῆς πένητα, καὶ ἀπὸ κοπρίας ἐγείρει πτωχόν· καθίσαι μετὰ δυναστῶν λαῶν, καὶ θρόνον δόξης κατακληρονομῶν αὐτοῖς. διδοὺς εὐχὴν τῷ εὐχομένῳ, καὶ εὐλόγησεν ἔτη δικαίου.",
+        "VUL": "Suscitat de pulvere egenum,/ et de stercore elevat pauperem :/ ut sedeat cum principibus,/ et solium gloriæ teneat./ Domini enim sunt cardines terræ,/ et posuit super eos orbem./",
+        "SYN": "Из праха подъемлет Он бедного, из брения возвышает нищего, посаждая с вельможами, и престол славы дает им в наследие; ибо у Господа основания земли, и Он утвердил на них вселенную.",
+        "NEO": "De la poussière il retire le pauvre, du fumier il relève l’indigent, pour les faire asseoir avec les princes, et il leur donne en partage un trône de gloire.",
+        "NAB": "He raises the needy from the dust; from the ash heap he lifts up the poor, To seat them with nobles and make a glorious throne their heritage. He gives to the vower his vow, and blesses the sleep of the just. \"For the pillars of the earth are the LORD'S, and he has set the world upon them.",
+        "VAT_ES": "El levanta del polvo al desvalido y alza al pobre de la miseria, para hacerlos sentar con los príncipes y darles en herencia un trono de gloria; porque del Señor son las columnas de la tierra y sobre ellas afianzó el mundo.",
+        "CEI": "Solleva dalla polvere il misero, innalza il povero dalle immondizie, per farli sedere insieme con i capi del popolo e assegnar loro un seggio di gloria. Perché al Signore appartengono i cardini della terra e su di essi fa poggiare il mondo."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "רַגְלֵ֤י חסיד/ו חֲסִידָי/ו֙ יִשְׁמֹ֔ר וּ/רְשָׁעִ֖ים בַּ/חֹ֣שֶׁךְ יִדָּ֑מּוּ כִּֽי לֹ֥א בְ/כֹ֖חַ יִגְבַּר אִֽישׁ׃",
+        "LXX": "ὅτι οὐκ ἐν ἰσχύι δυνατὸς ἀνήρ·",
+        "VUL": "Pedes sanctorum suorum servabit,/ et impii in tenebris conticescent :/ quia non in fortitudine sua roborabitur vir./",
+        "SYN": "Стопы святых Своих Он блюдет, а беззаконные во тьме исчезают; ибо не силою крепок человек.",
+        "NEO": "Il gardera les pas de ses pieux, mais les méchants périront dans les ténèbres. Car l’homme ne l’emportera pas par la force.",
+        "NAB": "He will guard the footsteps of his faithful ones, but the wicked shall perish in the darkness. For not by strength does man prevail;",
+        "VAT_ES": "El protege los pasos de sus fieles, pero los malvados desaparecerán en las tinieblas, porque el hombre no triunfa por su fuerza.",
+        "CEI": "Sui passi dei giusti Egli veglia, ma gli empi svaniscono nelle tenebre. Certo non prevarrà l'uomo malgrado la sua forza."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "יְהוָ֞ה יֵחַ֣תּוּ מריב/ו מְרִיבָ֗י/ו על/ו עָלָי/ו֙ בַּ/שָּׁמַ֣יִם יַרְעֵ֔ם יְהוָ֖ה יָדִ֣ין אַפְסֵי אָ֑רֶץ וְ/יִתֶּן עֹ֣ז לְ/מַלְכּ֔/וֹ וְ/יָרֵ֖ם קֶ֥רֶן מְשִׁיחֽ/וֹ׃",
+        "LXX": "Κύριος ἀσθενῆ ποιήσει ἀντίδικον αὐτοῦ· Κύριος ἅγιος. [1] μὴ καυχάσθω ὁ φρόνιμος ἐν τῇ φρονήσει αὐτοῦ, καὶ μὴ καυχάσθω ὁ δυνατὸς ἐν τῇ δυνάμει αὐτοῦ, καὶ μὴ καυχάσθω ὁ πλούσιος ἐν τῷ πλούτῳ αὐτοῦ· [2] ἀλλ’ ἢ ἐν τούτῳ καυχάσθω ὁ καυχώμενος, συνίειν καὶ γινώσκειν τὸν κύριον, καὶ ποιεῖν κρίμα καὶ δικαιοσύνην ἐν μέσῳ τῆς γῆς. Κύριος ἀνέβη εἰς οὐρανούς, καὶ ἐβρόντησεν· αὐτὸς κρινεῖ ἄκρα γῆς. καὶ δίδωσιν ἰσχὺν τοῖς βασιλεῦσιν ἡμῶν, καὶ ὑψώσει κέρας χριστοῦ αὐτοῦ.",
+        "VUL": "Dominum formidabunt adversarii ejus :/ et super ipsos in cælis tonabit./ Dominus judicabit fines terræ,/ et dabit imperium regi suo,/ et sublimabit cornu christi sui.]",
+        "SYN": "Господь сотрет препирающихся с Ним; с небес возгремит на них. [Господь свят. Да не хвалится мудрый мудростью своею, и да не хвалится сильный силою своею, и да не хвалится богатый богатством своим, но желающий хвалиться да хвалится тем, что разумеет и знает Господа.] _Господь_ будет судить концы земли, и даст крепость царю Своему и вознесет рог помазанника Своего.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** ! Ses ennemis seront brisés ; du haut du ciel il tonnera sur eux, \\+w Yahweh|strong=\"H3068\"\\+w** jugera les extrémités de la terre.",
+        "NAB": "the LORD'S foes shall be shattered. The Most High in heaven thunders; The LORD judges the ends of the earth, Now may he give strength to his king, and exalt the horn of his anointed!\"",
+        "VAT_ES": "Los rivales del Señor quedan aterrados, el Altísimo truena desde el cielo. El Señor juzga los confines de la tierra; él fortalece a su rey y exalta la frente de su Ungido».",
+        "CEI": "Il Signore... saranno abbattuti i suoi avversari! L'Altissimo tuonerà dal cielo. Il Signore giudicherà gli estremi confini della terra; darà forza al suo re ed eleverà la potenza del suo Messia\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֧לֶךְ אֶלְקָנָ֛ה הָ/רָמָ֖תָ/ה עַל בֵּית֑/וֹ וְ/הַ/נַּ֗עַר הָיָ֤ה מְשָׁרֵת֙ אֶת יְהוָ֔ה אֶת פְּנֵ֖י עֵלִ֥י הַ/כֹּהֵֽן׃",
+        "LXX": "Καὶ κατέλιπεν αὐτὸν ἐκεῖ ἐνώπιον Κυρίου, καὶ ἀπῆλθεν εἰς Ἁρμαθάιμ· καὶ τὸ παιδάριον ἦν λειτουργῶν τῷ προσώπῳ Κυρίου ἐνώπιον Ἠλεὶ τοῦ ἱερέως.",
+        "VUL": "Et abiit Elcana Ramatha, in domum suam : puer autem erat minister in conspectu Domini ante faciem Heli sacerdotis.",
+        "SYN": "[И оставили Самуила там пред Господом,] и пошел Елкана в Раму в дом свой, а отрок остался служить Господу при Илии священнике.",
+        "NEO": "Elcana s’en alla dans sa maison à Rama, et l’enfant resta au service de \\+w Yahweh|strong=\"H3068\"\\+w**, devant le prêtre Héli.",
+        "NAB": "When Elkanah returned home to Ramah, the child remained in the service of the LORD under the priest Eli.",
+        "VAT_ES": "Luego Elcaná se fue a su casa en Ramá, y el niño quedó al servicio del Señor, a las órdenes del sacerdote Elí.",
+        "CEI": "Poi Elkana tornò a Rama, a casa sua, e il fanciullo rimase a servire il Signore alla presenza del sacerdote Eli."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֥י עֵלִ֖י בְּנֵ֣י בְלִיָּ֑עַל לֹ֥א יָדְע֖וּ אֶת יְהוָֽה׃",
+        "LXX": "Καὶ υἱοὶ Ἠλεὶ τοῦ ἱερέως υἱοὶ λοιμοί, οὐκ εἰδότες τὸν κύριον. καὶ τὸ δικαίωμα τοῦ ἱερέως παρὰ τοῦ λαοῦ παντὸς τοῦ θύοντος.",
+        "VUL": "Porro filii Heli, filii Belial, nescientes Dominum,",
+        "SYN": "Сыновья же Илия были люди негодные; они не знали Господа",
+        "NEO": "Or les fils d’Héli étaient des hommes de Bélial, ils ne connaissaient pas \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Now the sons of Eli were wicked; they had respect neither for the LORD",
+        "VAT_ES": "Los hijos de Elí eran unos canallas, que no reconocían al Señor",
+        "CEI": "Ora i figli di Eli erano uomini depravati; non tenevano in alcun conto il Signore,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וּ/מִשְׁפַּ֥ט הַ/כֹּהֲנִ֖ים אֶת הָ/עָ֑ם כָּל אִ֞ישׁ זֹבֵ֣חַ זֶ֗בַח וּ/בָ֨א נַ֤עַר הַ/כֹּהֵן֙ כְּ/בַשֵּׁ֣ל הַ/בָּשָׂ֔ר וְ/הַ/מַּזְלֵ֛ג שְׁלֹ֥שׁ הַ/שִּׁנַּ֖יִם בְּ/יָדֽ/וֹ׃",
+        "LXX": "καὶ ἤρχετο τὸ παιδάριον τοῦ ἱερέως ὡς ἂν ἡψήθη τὸ κρέας, καὶ κρεάγρα τριόδους ἐν τῇ χειρὶ αὐτοῦ·",
+        "VUL": "neque officium sacerdotum ad populum : sed quicumque immolasset victimam, veniebat puer sacerdotis, dum coquerentur carnes, et habebat fuscinulam tridentem in manu sua,",
+        "SYN": "и долга священников в отношении к народу. Когда кто приносил жертву, отрок священнический, во время варения мяса, приходил с вилкой в руке своей",
+        "NEO": "Et voici la manière d’agir de ces prêtres à l’égard du peuple. Lorsque quelqu’un offrait un sacrifice, le serviteur du prêtre venait, pendant qu’on faisait bouillir la chair, tenant à la main une fourchette à trois dents ;",
+        "NAB": "nor for the priests' duties toward the people. When someone offered a sacrifice, the priest's servant would come with a three-pronged fork, while the meat was still boiling,",
+        "VAT_ES": "ni respetaban los deberes de los sacerdotes para con el pueblo. Cada vez que alguien ofrecía un sacrificio, venía el servidor del sacerdote con un tenedor de tres dientes en la mano, mientras se cocía la carne.",
+        "CEI": "né la retta condotta dei sacerdoti verso il popolo. Quando uno si presentava a offrire il sacrificio, veniva il servo del sacerdote mentre la carne cuoceva, con in mano un forchettone a tre denti,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/הִכָּ֨ה בַ/כִּיּ֜וֹר א֣וֹ בַ/דּ֗וּד א֤וֹ בַ/קַּלַּ֨חַת֙ א֣וֹ בַ/פָּר֔וּר כֹּ֚ל אֲשֶׁ֣ר יַעֲלֶ֣ה הַ/מַּזְלֵ֔ג יִקַּ֥ח הַ/כֹּהֵ֖ן בּ֑/וֹ כָּ֚כָה יַעֲשׂ֣וּ לְ/כָל יִשְׂרָאֵ֔ל הַ/בָּאִ֥ים שָׁ֖ם בְּ/שִׁלֹֽה׃",
+        "LXX": "καὶ ἐπὰταξεν αὐτὴν εἰς τὸν λέβητα τόν μέγαν ἢ εἰς τὸ χαλκίον ἢ εἰς τὴν κύθραν· πᾶν ὃ ἐὰν ἀνέβη ἐν τῇ κρεάγρᾳ ἐλάμβανεν ἑαυτῷ ὁ ἱερεύς· κατὰ τάδε ἐποίουν παντὶ Ἰσραήλ, τοῖς ἐρχομένοις θῦσαι Κυρίῳ ἐν Σηλώμ.",
+        "VUL": "et mittebat eam in lebetem, vel in caldariam, aut in ollam, sive in cacabum : et omne quod levabat fuscinula, tollebat sacerdos sibi : sic faciebant universo Israëli venientium in Silo.",
+        "SYN": "и опускал ее в котел, или в кастрюлю, или на сковороду, или в горшок, и что вынет вилка, то брал себе священник. Так поступали они со всеми Израильтянами, приходившими туда в Силом.",
+        "NEO": "il la plongeait dans la chaudière, dans le chaudron, dans la marmite ou dans le pot, et tout ce que la fourchette amenait, le prêtre le prenait pour lui. C’est ainsi qu’ils agissaient à l’égard de tous les Israélites qui venaient là, à Silo.",
+        "NAB": "and would thrust it into the basin, kettle, caldron, or pot. Whatever the fork brought up, the priest would keep. That is how all the Israelites were treated who came to the sanctuary at Shiloh.",
+        "VAT_ES": "Entonces lo metía en la olla o el caldero, en la cacerola o el tazón, y todo lo que recogía con el tenedor, se lo guardaba el sacerdote para él. Así hacían con todos los israelitas que iban a Silo.",
+        "CEI": "e lo introduceva nella pentola o nella marmitta o nel tegame o nella caldaia e tutto ciò che il forchettone tirava su il sacerdote lo teneva per sé. Così facevano con tutti gli Israeliti che venivano là a Silo."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "גַּם֮ בְּ/טֶרֶם֮ יַקְטִר֣וּ/ן אֶת הַ/חֵלֶב֒ וּ/בָ֣א נַ֣עַר הַ/כֹּהֵ֗ן וְ/אָמַר֙ לָ/אִ֣ישׁ הַ/זֹּבֵ֔חַ תְּנָ֣/ה בָשָׂ֔ר לִ/צְל֖וֹת לַ/כֹּהֵ֑ן וְ/לֹֽא יִקַּ֧ח מִמְּ/ךָ֛ בָּשָׂ֥ר מְבֻשָּׁ֖ל כִּ֥י אִם חָֽי׃",
+        "LXX": "καὶ πρὶν θυμιαθῆναι τὸ στέαρ ἤρχετο τὸ παιδάριον τοῦ ἱερέως καὶ ἔλεγεν τῷ ἀνδρὶ τῷ θύοντι Δὸς κρέας ὀπτῆσαι τῷ ἱερεῖ, καὶ οὐ μὴ λάβω παρὰ σοῦ ἑφθὸν ἐκ τοῦ λέβητος.",
+        "VUL": "Etiam antequam adolerent adipem, veniebat puer sacerdotis, et dicebat immolanti : Da mihi carnem, ut coquam sacerdoti : non enim accipiam a te carnem coctam, sed crudam.",
+        "SYN": "Даже прежде, нежели сожигали тук, приходил отрок священнический и говорил приносившему жертву: дай мяса на жаркое священнику; он не возьмет у тебя вареного мяса, а дай сырое.",
+        "NEO": "Même avant qu’on fît brûler la graisse, le serviteur du prêtre venait et disait à l’homme qui offrait le sacrifice : « Donne-moi de la chair à rôtir pour le prêtre ; il ne recevra pas de toi de chair bouillie, mais seulement de la chair crue. »",
+        "NAB": "In fact, even before the fat was burned, the priest's servant would come and say to the man offering the sacrifice, \"Give me some meat to roast for the priest. He will not accept boiled meat from you, only raw meat.\"",
+        "VAT_ES": "Incluso antes que se quemara la grasa, venía el servidor del sacerdote y decía a la persona que ofrecía el sacrificio: «Dale al sacerdote carne para asar, él no aceptará de ti carne cocida, sino sólo cruda».",
+        "CEI": "Prima che fosse bruciato il grasso, veniva ancora il servo del sacerdote e diceva a chi offriva il sacrificio: \"Dammi la carne da arrostire per il sacerdote, perché non vuole avere da te carne cotta, ma cruda\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֵלָ֜י/ו הָ/אִ֗ישׁ קַטֵּ֨ר יַקְטִיר֤וּ/ן כַּ/יּוֹם֙ הַ/חֵ֔לֶב וְ/קַ֨ח לְ/ךָ֔ כַּ/אֲשֶׁ֥ר תְּאַוֶּ֖ה נַפְשֶׁ֑/ךָ וְ/אָמַ֥ר ל/ו לֹא֙ כִּ֚י עַתָּ֣ה תִתֵּ֔ן וְ/אִם לֹ֖א לָקַ֥חְתִּי בְ/חָזְקָֽה׃",
+        "LXX": "καὶ ἔλεγεν ὁ ἀνὴρ ὁ θύων Θυμιαθήτω πρῶτον ὡς καθήκει τὸ στέαρ, καὶ λάβε σεαυτῷ ἐκ πάντων ὧν ἐπιθυμεῖ ἡ ψυχή σου. καὶ εἶπεν Οὐχί, ὅτι νῦν δώσεις· καὶ ἐὰν μή, λήμψομαι κραταιῶς.",
+        "VUL": "Dicebatque illi immolans : Incendatur primum juxta morem hodie adeps, et tolle tibi quantumcumque desiderat anima tua. Qui respondens aiebat ei : Nequaquam : nunc enim dabis, alioquin tollam vi.",
+        "SYN": "И _если_ кто говорил ему: пусть сожгут прежде тук, как должно, и _потом_ возьми себе, сколько пожелает душа твоя, то он говорил: нет, теперь же дай, а если нет, то силою возьму.",
+        "NEO": "Et si l’homme lui disait : « Qu’on fasse d’abord fumer la graisse ; tu prendras ensuite ce que tu voudras, » le serviteur répondait : « Non, tu en donneras maintenant ; sinon, j’en prendrai de force. »",
+        "NAB": "And if the man protested to him, \"Let the fat be burned first as is the custom, then take whatever you wish,\" he would reply, \"No, give it to me now, or else I will take it by force.\"",
+        "VAT_ES": "Y si el hombre le decía: «Primero hay que quemar la grasa, después, llévate lo que quieras», el servidor replicaba: «No, o me la das ahora mismo, o me la llevo por la fuerza».",
+        "CEI": "Se quegli rispondeva: \"Si bruci prima il grasso, poi prenderai quanto vorrai!\", replicava: \"No, me la devi dare ora, altrimenti la prenderò con la forza\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/תְּהִ֨י חַטַּ֧את הַ/נְּעָרִ֛ים גְּדוֹלָ֥ה מְאֹ֖ד אֶת פְּנֵ֣י יְהוָ֑ה כִּ֤י נִֽאֲצוּ֙ הָֽ/אֲנָשִׁ֔ים אֵ֖ת מִנְחַ֥ת יְהוָֽה׃",
+        "LXX": "καὶ ἦν ἡ ἁμαρτία ἐνώπιον Κυρίου τῶν παιδαρίων μεγάλη σφόδρα, ὅτι ἠθέτουν τὴν θυσίαν Κυρίου.",
+        "VUL": "Erat ergo peccatum puerorum grande nimis coram Domino : quia retrahebant homines a sacrificio Domini.",
+        "SYN": "И грех этих молодых людей был весьма велик пред Господом, ибо они отвращали от жертвоприношений Господу.",
+        "NEO": "Le péché de ces jeunes gens était très grand devant \\+w Yahweh|strong=\"H3068\"\\+w**, parce que ces hommes attiraient le mépris sur les offrandes de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Thus the young men sinned grievously in the presence of the LORD; they treated the offerings to the LORD with disdain.",
+        "VAT_ES": "El pecado de esos ayudantes era muy grave delante del Señor, porque deshonraban las ofrendas del Señor.",
+        "CEI": "Così il peccato di quei giovani era molto grande davanti al Signore perché disonoravano l'offerta del Signore."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וּ/שְׁמוּאֵ֕ל מְשָׁרֵ֖ת אֶת פְּנֵ֣י יְהוָ֑ה נַ֕עַר חָג֖וּר אֵפ֥וֹד בָּֽד׃",
+        "LXX": "καὶ Σαμουὴλ ἦν λειτουργῶν ἐνώπιον Κυρίου, παιδάριον περιεζωσμένον ἐφοὺδ βάρ.",
+        "VUL": "Samuel autem ministrabat ante faciem Domini, puer accinctus ephod lineo.",
+        "SYN": "Отрок же Самуил служил пред Господом, надевая льняной ефод.",
+        "NEO": "Samuel faisait le service devant \\+w Yahweh|strong=\"H3068\"\\+w** : l’enfant était revêtu d’un éphod de lin.",
+        "NAB": "Meanwhile the boy Samuel, girt with a linen apron, was serving in the presence of the LORD.",
+        "VAT_ES": "Samuel servía en la presencia del Señor; era un niño, y llevaba ceñido el efod de lino.",
+        "CEI": "Samuele prestava servizio davanti al Signore per quanto lo poteva un fanciullo e andava cinto di efod di lino."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וּ/מְעִ֤יל קָטֹן֙ תַּעֲשֶׂה לּ֣/וֹ אִמּ֔/וֹ וְ/הַעַלְתָ֥ה ל֖/וֹ מִ/יָּמִ֣ים יָמִ֑ימָ/ה בַּֽ/עֲלוֹתָ/הּ֙ אֶת אִישָׁ֔/הּ לִ/זְבֹּ֖חַ אֶת זֶ֥בַח הַ/יָּמִֽים׃",
+        "LXX": "καὶ διπλοίδα μικρὰν ἐποίησεν αὐτῷ ἡ μήτηρ αὐτοῦ, καὶ ἀνέφερεν αὐτῷ ἐξ ἡμερῶν εἰς ἡμέρας ἐν τῷ ἀναβαίνειν αὐτήν μετὰ τοῦ ἀνδρὸς αὐτῆς θῦσαι τὴν θυσίαν τῶν ἡμερῶν.",
+        "VUL": "Et tunicam parvam faciebat ei mater sua, quam afferebat statutis diebus, ascendens cum viro suo, ut immolaret hostiam solemnem.",
+        "SYN": "Верхнюю одежду малую делала ему мать его и приносила ему ежегодно, когда приходила с мужем своим для принесения положенной жертвы.",
+        "NEO": "Sa mère lui faisait une petite robe, qu’elle lui apportait chaque année, lorsqu’elle montait avec son mari, pour offrir le sacrifice annuel.",
+        "NAB": "His mother used to make a little garment for him, which she would bring him each time she went up with her husband to offer the customary sacrifice.",
+        "VAT_ES": "Su madre le hacía un pequeño manto, y se lo traía cada año, cuando subía con su marido a ofrecer el sacrificio anual.",
+        "CEI": "Sua madre gli preparava una piccola veste e gliela portava ogni anno, quando andava con il marito a offrire il sacrificio annuale."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וּ/בֵרַ֨ךְ עֵלִ֜י אֶת אֶלְקָנָ֣ה וְ/אֶת אִשְׁתּ֗/וֹ וְ/אָמַר֙ יָשֵׂם֩ יְהוָ֨ה לְ/ךָ֥ זֶ֨רַע֙ מִן הָ/אִשָּׁ֣ה הַ/זֹּ֔את תַּ֚חַת הַ/שְּׁאֵלָ֔ה אֲשֶׁ֥ר שָׁאַ֖ל לַֽ/יהוָ֑ה וְ/הָלְכ֖וּ לִ/מְקֹמֽ/וֹ׃",
+        "LXX": "καὶ εὐλόγησεν Ἠλεὶ τὸν Ἐλκανὰ καὶ τὴν γυναῖκα αὐτοῦ λἐγων Ἀποτίσαι σοι Κύριος σπέρμα ἐκ τῆς γυναικὸς ταύτης ἀντὶ τοῦ χρέους οὗ ἔχρησας Κυρίῳ· καὶ ἀπῆλθεν ὁ ἄνθρωπος εἰς τὸν τὸπον αὐτοῦ.",
+        "VUL": "Et benedixit Heli Elcanæ et uxori ejus : dixitque ei : Reddat tibi Dominus semen de muliere hac, pro fnore quod commodasti Domino. Et abierunt in locum suum.",
+        "SYN": "И благословил Илий Елкану и жену его и сказал: да даст тебе Господь детей от жены сей вместо данного, которого ты отдал Господу! И пошли они в место свое.",
+        "NEO": "Héli bénit Elcana et sa femme, en disant : « Que \\+w Yahweh|strong=\"H3068\"\\+w** te donne des enfants de cette femme, pour le don qu’elle a fait à \\+w Yahweh|strong=\"H3068\"\\+w** ! » Et ils s’en retournèrent chez eux.",
+        "NAB": "And Eli would bless Elkanah and his wife, as they were leaving for home. He would say, \"May the LORD repay you with children from this woman for the gift she has made to the LORD!\"",
+        "VAT_ES": "Entonces Elí bendecía a Elcaná y a su mujer, diciendo: «Que el Señor te conceda una descendencia de esta mujer, a cambio de aquel que fue cedido al Señor». Luego se volvían a su casa.",
+        "CEI": "Eli allora benediceva Elkana e sua moglie ed esclamava: \"Ti conceda il Signore altra prole da questa donna per il prestito che essa ha fatto al Signore\". Essi tornarono a casa"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "כִּֽי פָקַ֤ד יְהוָה֙ אֶת חַנָּ֔ה וַ/תַּ֛הַר וַ/תֵּ֥לֶד שְׁלֹשָֽׁה בָנִ֖ים וּ/שְׁתֵּ֣י בָנ֑וֹת וַ/יִּגְדַּ֛ל הַ/נַּ֥עַר שְׁמוּאֵ֖ל עִם יְהוָֽה׃",
+        "LXX": "καὶ ἐπεσκέψατο Κύριος τὴν Ἅνναν, καὶ ἔτεκεν ἔτι τρεῖς υἱοὺς καὶ δύο θυγατέρας· καὶ ἐμεγαλύνθη τὸ παιδάριον Σαμουὴλ ἐνώπιον Κυρίου.",
+        "VUL": "Visitavit ergo Dominus Annam, et concepit, et peperit tres filios, et duas filias : et magnificatus est puer Samuel apud Dominum.",
+        "SYN": "И посетил Господь Анну, и зачала она и родила еще трех сыновей и двух дочерей; а отрок Самуил возрастал у Господа.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** visita Anne, et elle conçut et enfanta trois fils et deux filles. Et le jeune Samuel grandissait en la présence de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The LORD favored Hannah so that she conceived and gave birth to three more sons and two daughters, while young Samuel grew up in the service of the LORD.",
+        "VAT_ES": "El Señor intervino en favor de Ana, y ella concibió y dio a luz tres hijos y dos hijas. Mientras tanto, el joven Samuel crecía junto al Señor.",
+        "CEI": "e il Signore visitò Anna, che partorì ancora tre figli e due figlie. Frattanto il fanciullo Samuele cresceva presso il Signore."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/עֵלִ֖י זָקֵ֣ן מְאֹ֑ד וְ/שָׁמַ֗ע אֵת֩ כָּל אֲשֶׁ֨ר יַעֲשׂ֤וּ/ן בָּנָי/ו֙ לְ/כָל יִשְׂרָאֵ֔ל וְ/אֵ֤ת אֲשֶֽׁר יִשְׁכְּבוּ/ן֙ אֶת הַ/נָּשִׁ֔ים הַ/צֹּ֣בְא֔וֹת פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃",
+        "LXX": "Καὶ Ἠλεὶ πρεσβύτης σφόδρα, καὶ ἤκουσεν ἃ ἐποίουν οἱ υἱοὶ αὐτοῦ τοῖς υἱοῖς Ἰσραήλ·",
+        "VUL": "Heli autem erat senex valde, et audivit omnia quæ faciebant filii sui universo Israëli, et quomodo dormiebant cum mulieribus quæ observabant ad ostium tabernaculi :",
+        "SYN": "Илий же был весьма стар и слышал все, как поступают сыновья его со всеми Израильтянами, и что они спят с женщинами, собиравшимися у входа в скинию собрания.",
+        "NEO": "Héli était très vieux, et il apprit comment ses fils agissaient à l’égard de tout Israël, et qu’ils couchaient avec les femmes qui servaient à l’entrée de la tente de réunion.",
+        "NAB": "When Eli was very old, he heard repeatedly how his sons were treating all Israel (and that they were having relations with the women serving at the entry of the meeting tent).",
+        "VAT_ES": "Elí era ya muy viejo, y oyó hablar de todo lo que hacían sus hijos a Israel, y cómo se acostaban con las mujeres que prestaban servicio a la entrada de la Carpa del Encuentro.",
+        "CEI": "Eli era molto vecchio e gli veniva all'orecchio quanto i suoi figli facevano a tutto Israele e come essi si univano alle donne che prestavano servizio all'ingresso della tenda del convegno."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר לָ/הֶ֔ם לָ֥/מָּה תַעֲשׂ֖וּ/ן כַּ/דְּבָרִ֣ים הָ/אֵ֑לֶּה אֲשֶׁ֨ר אָנֹכִ֤י שֹׁמֵ֨עַ֙ אֶת דִּבְרֵי/כֶ֣ם רָעִ֔ים מֵ/אֵ֖ת כָּל הָ/עָ֥ם אֵֽלֶּה׃",
+        "LXX": "καὶ εἶπεν αὐτοῖς Ἵνα τί ποιεῖτε κατὰ τὸ ῥῆμα τοῦτο ὅ ἐγὼ ἀκούω ἐκ στόματος παντὸς τοῦ λαοῦ Κυρίου;",
+        "VUL": "et dixit eis : Quare facitis res hujuscemodi quas ego audio, res pessimas, ab omni populo ?",
+        "SYN": "И сказал им: для чего вы делаете такие дела? ибо я слышу худые речи о вас от всего народа [Господня].",
+        "NEO": "Il leur dit : « Pourquoi faites-vous de telles choses ? Car j’apprends de tout le peuple vos mauvaises actions.",
+        "NAB": "So he said to them: \"Why are you doing such things?",
+        "VAT_ES": "Entonces les dijo: «&iquest;Por qué hacen esas cosas? Oigo hablar de todo el pueblo de las malas acciones que ustedes cometen.",
+        "CEI": "Perciò disse loro: \"Perché dunque fate tali cose? Io sento infatti da parte di tutto il popolo le vostre azioni empie!"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אַ֖ל בָּנָ֑/י כִּ֠י לֽוֹא טוֹבָ֤ה הַ/שְּׁמֻעָה֙ אֲשֶׁ֣ר אָנֹכִ֣י שֹׁמֵ֔עַ מַעֲבִרִ֖ים עַם יְהוָֽה׃",
+        "LXX": "μή, τέκνα, ὅτι οὐκ ἀγαθὴ ἡ ἀκοὴ ἣν ἐγὼ ἀκούω· μὴ ποιεῖτε οὕτως, ὅτι οὐκ ἀγαθαὶ αἱ ἀκοαὶ ἃς ἐγὼ ἀκοὺω, τοῦ μὴ δουλεύειν λαὸν θεῷ.",
+        "VUL": "Nolite, filii mei : non enim est bona fama quam ego audio, ut transgredi faciatis populum Domini.",
+        "SYN": "Нет, дети мои, нехороша молва, которую я слышу [о вас, не делайте так, ибо нехороша молва, которую я слышу]; вы развращаете народ Господень;",
+        "NEO": "Non, mes enfants, la rumeur que j’entends n’est pas bonne ; on fait pécher le peuple de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "No, my sons, you must not do these things! It is not a good report that I hear the people of the LORD spreading about you.",
+        "VAT_ES": "No, hijos míos, no es nada bueno el rumor que se hace correr entre el pueblo del Señor.",
+        "CEI": "No, figli, non è bene ciò che io odo di voi, che cioè sviate il popolo del Signore."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "אִם יֶחֱטָ֨א אִ֤ישׁ לְ/אִישׁ֙ וּ/פִֽלְל֣/וֹ אֱלֹהִ֔ים וְ/אִ֤ם לַֽ/יהוָה֙ יֶֽחֱטָא אִ֔ישׁ מִ֖י יִתְפַּלֶּל ל֑/וֹ וְ/לֹ֤א יִשְׁמְעוּ֙ לְ/ק֣וֹל אֲבִי/הֶ֔ם כִּֽי חָפֵ֥ץ יְהוָ֖ה לַ/הֲמִיתָֽ/ם׃",
+        "LXX": "ἐὰν ἁμαρτάνων ἁμάρτῃ ἀνὴρ εἰς ἄνδρα, καὶ προσεύξονται ὑπὲρ αὐτοῦ πρὸς Κύριον· καὶ ἐὰν τῷ κυρίῳ ἁμάρτῃ, τίς προσεύξεται ὑπὲρ αὐτοῦ; καὶ οὐκ ἤκουον τῆς φωνῆς τοῦ πατρὸς αὐτῶν, ὅτι βουλόμενος ἐβούλετο Κὺριος διαφθεῖραι αὐτούς.",
+        "VUL": "Si peccaverit vir in virum, placari ei potest Deus : si autem in Dominum peccaverit vir, quis orabit pro eo ? Et non audierunt vocem patris sui : quia voluit Dominus occidere eos.",
+        "SYN": "если согрешит человек против человека, то помолятся о нем Богу; если же человек согрешит против Господа, то кто будет ходатаем о нем? Но они не слушали голоса отца своего, ибо Господь решил уже предать их смерти.",
+        "NEO": "Si un homme pèche contre un autre homme, Dieu intervient comme arbitre ; mais si c’est contre \\+w Yahweh|strong=\"H3068\"\\+w** qu’il pèche, qui intercédera pour lui ? » Et ils n’écoutaient pas la voix de leur père, car \\+w Yahweh|strong=\"H3068\"\\+w** voulait les faire mourir.",
+        "NAB": "If a man sins against another man, one can intercede for him with the LORD; but if a man sins against the LORD, who can intercede for him?\" But they disregarded their father's warning, since the LORD had decided on their death.",
+        "VAT_ES": "Si un hombre peca contra otro hombre, Dios interviene como árbitro; pero si un hombre peca contra el Señor, &iquest;quién puede interceder por él?». Pero ellos no escucharon la voz de su padre, porque el Señor quería hacerlos morir.",
+        "CEI": "Se un uomo pecca contro un altro uomo, Dio potrà intervenire in suo favore, ma se l'uomo pecca contro il Signore, chi potrà intercedere per lui?\". Ma non ascoltarono la voce del padre, perché il Signore aveva deciso di farli morire."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/הַ/נַּ֣עַר שְׁמוּאֵ֔ל הֹלֵ֥ךְ וְ/גָדֵ֖ל וָ/ט֑וֹב גַּ֚ם עִם יְהוָ֔ה וְ/גַ֖ם עִם אֲנָשִֽׁים׃",
+        "LXX": "καὶ τὸ παιδάριον Σαμουὴλ ἐπορεύετο, καὶ ἀγαθὸν καὶ μετὰ Κυρίου καὶ μετὰ ἀνθρώπων.",
+        "VUL": "Puer autem Samuel proficiebat atque crescebat, et placebat tam Domino quam hominibus.",
+        "SYN": "Отрок же Самуил более и более приходил в возраст и в благоволение у Господа и у людей.",
+        "NEO": "Le jeune Samuel continuait à grandir, et il était agréable à \\+w Yahweh|strong=\"H3068\"\\+w** et aux hommes.",
+        "NAB": "Meanwhile, young Samuel was growing in stature and in worth in the estimation of the LORD and of men.",
+        "VAT_ES": "En cambio, el joven Samuel iba creciendo, y era apreciado por Dios y por los hombres.",
+        "CEI": "Invece il giovane Samuele andava crescendo in statura e in bontà davanti al Signore e agli uomini."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֥א אִישׁ אֱלֹהִ֖ים אֶל עֵלִ֑י וַ/יֹּ֣אמֶר אֵלָ֗י/ו כֹּ֚ה אָמַ֣ר יְהוָ֔ה הֲ/נִגְלֹ֤ה נִגְלֵ֨יתִי֙ אֶל בֵּ֣ית אָבִ֔י/ךָ בִּֽ/הְיוֹתָ֥/ם בְּ/מִצְרַ֖יִם לְ/בֵ֥ית פַּרְעֹֽה׃",
+        "LXX": "Καὶ ἦλθεν ἄνθρωπος θεοῦ πρὸς Ἠλεὶ καὶ εἶπεν Τάδε λέγει Κύριος Ἀποκαλυφθεὶς ἀπεκαλύφθην πρὸς οἶκον πατρός σου, ὄντων αὐτῶν ἐν γῇ Αἰγύπτῳ δούλων τῷ οἴκῳ Φαραώ·",
+        "VUL": "Venit autem vir Dei ad Heli, et ait ad eum : Hæc dicit Dominus : Numquid non aperte revelatus sum domui patris tui, cum essent in Ægypto in domo Pharaonis ?",
+        "SYN": "И пришел человек Божий к Илию и сказал ему: так говорит Господь: не открылся ли Я дому отца твоего, когда еще были они в Египте, в доме фараона?",
+        "NEO": "Un homme de Dieu vint auprès d’Héli et lui dit : « Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Ne me suis-je pas clairement révélé à la maison de ton père, lorsqu’ils étaient en Égypte dans la maison de Pharaon ?",
+        "NAB": "A man of God came to Eli and said to him: \"This is what the LORD says: 'I went so far as to reveal myself to your father's family when they were in Egypt as slaves to the house of Pharaoh.",
+        "VAT_ES": "Un hombre de Dios se presentó a Elí y le dijo: «Así habla el Señor: Yo me revelé a la familia de tu padre, cuando ellos estaban en Egipto, bajo el poder de la casa del Faraón.",
+        "CEI": "Un giorno venne un uomo di Dio da Eli e gli disse: \"Così dice il Signore: Non mi sono forse rivelato alla casa di tuo padre, mentre erano in Egitto, in casa del faraone?"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וּ/בָחֹ֣ר אֹ֠ת/וֹ מִ/כָּל שִׁבְטֵ֨י יִשְׂרָאֵ֥ל לִ/י֙ לְ/כֹהֵ֔ן לַ/עֲל֣וֹת עַֽל מִזְבְּחִ֗/י לְ/הַקְטִ֥יר קְטֹ֛רֶת לָ/שֵׂ֥את אֵפ֖וֹד לְ/פָנָ֑/י וָֽ/אֶתְּנָ/ה֙ לְ/בֵ֣ית אָבִ֔י/ךָ אֶת כָּל אִשֵּׁ֖י בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐξελεξάμην τὸν οἶκον τοῦ πατρός σου ἐκ πάντων τῶν σκήπτρων Ἰσραὴλ ἐμοὶ ἱερατεύειν, καὶ ἀναβαίνειν ἐπὶ θυσιαστήριόν μου καὶ θυμιᾷν θυμίαμα καὶ αἴρειν ἐφούδ· καὶ ἔδωκα τῷ οἴκῳ τοῦ πατρός σου τὰ πάντα τοῦ πυρὸς υἱῶν Ἰσραὴλ εἰς βρῶσιν.",
+        "VUL": "Et elegi eum ex omnibus tribubus Israël mihi in sacerdotem, ut ascenderet ad altare meum, et adoleret mihi incensum, et portaret ephod coram me : et dedi domui patris tui omnia de sacrificiis filiorum Israël.",
+        "SYN": "И не избрал ли его из всех колен Израилевых Себе во священника, чтоб он восходил к жертвеннику Моему, чтобы воскурял фимиам, чтобы носил ефод предо Мною? И не дал ли Я дому отца твоего от всех огнем сожигаемых жертв сынов Израилевых?",
+        "NEO": "Je l’ai choisi d’entre toutes les tribus d’Israël pour être mon prêtre, pour monter à mon autel, pour faire fumer l’encens, pour porter l’éphod devant moi ; et j’ai donné à la maison de ton père toutes les offrandes des enfants d’Israël faites par le feu.",
+        "NAB": "I chose them out of all the tribes of Israel to be my priests, to go up to my altar, to burn incense, and to wear the ephod before me; and I assigned all the oblations of the Israelites to your father's family.",
+        "VAT_ES": "Elegí a tu padre entre todas las tribus de Israel, para que fuera mi sacerdote y subiera a mi altar, para que hiciera arder el incienso y llevara el efod en mi presencia. Y asigné a la familia de tu padre todas las ofrendas que hacen quemar los israelitas.",
+        "CEI": "Non l'ho scelto da tutte le tribù d'Israele come mio sacerdote, perché salga l'altare, bruci l'incenso e porti l'efod davanti a me? Alla casa di tuo padre ho anche assegnato tutti i sacrifici consumati dal fuoco, offerti dagli Israeliti."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "לָ֣/מָּה תִבְעֲט֗וּ בְּ/זִבְחִ/י֙ וּ/בְ/מִנְחָתִ֔/י אֲשֶׁ֥ר צִוִּ֖יתִי מָע֑וֹן וַ/תְּכַבֵּ֤ד אֶת בָּנֶ֨י/ךָ֙ מִמֶּ֔/נִּי לְ/הַבְרִֽיאֲ/כֶ֗ם מֵ/רֵאשִׁ֛ית כָּל מִנְחַ֥ת יִשְׂרָאֵ֖ל לְ/עַמִּֽ/י׃",
+        "LXX": "καὶ ἵνα τί ἐπέβλεψας ἐπὶ τὸ θυμίαμά μου καὶ εἰς τὴν θυσίαν μου ἀναιδεῖ ὀφθαλμῷ; καὶ ἐδόξασας τοὺς υἱούς σου ὑπὲρ ἐμὲ ἐνευλογεῖσθαι ἀπαρχῆς πάσης θυσίας Ἰσραὴλ ἔμπροσθέν μου;",
+        "VUL": "Quare calce abjecistis victimam meam, et munera mea quæ præcepi ut offerrentur in templo : et magis honorasti filios tuos quam me, ut comederetis primitias omnis sacrificii Israël populi mei ?",
+        "SYN": "Для чего же вы попираете ногами жертвы Мои и хлебные приношения Мои, которые заповедал Я для жилища _Моего,_ и для чего ты предпочитаешь Мне сыновей своих, утучняя себя начатками всех приношений народа Моего -- Израиля?",
+        "NEO": "Pourquoi avez-vous foulé aux pieds mes sacrifices et mes oblations, que j’ai ordonné d’offrir dans ma demeure ? Et pourquoi as-tu honoré tes fils plus que moi, en vous engraissant du meilleur de toutes les offrandes d’Israël, mon peuple ?",
+        "NAB": "Why do you keep a greedy eye on my sacrifices and on the offerings which I have prescribed? And why do you honor your sons in preference to me, fattening yourselves with the choicest part of every offering of my people Israel?'",
+        "VAT_ES": "&iquest;Por qué entonces pisotean mi sacrificio y mi ofrenda, que yo prescribí para mi Morada? &iquest;Por qué honras a tus hijos más que a mí, haciéndolos engordar con lo mejor de todas las ofrendas de mi pueblo Israel?",
+        "CEI": "Perché dunque avete calpestato i miei sacrifici e le mie offerte che io ho ordinato per sempre e tu hai avuto maggior riguardo ai tuoi figli che a me e vi siete pasciuti in tal modo con le primizie di ogni offerta di Israele mio popolo?"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "לָ/כֵ֗ן נְאֻם יְהוָה֮ אֱלֹהֵ֣י יִשְׂרָאֵל֒ אָמ֣וֹר אָמַ֔רְתִּי בֵּֽיתְ/ךָ֙ וּ/בֵ֣ית אָבִ֔י/ךָ יִתְהַלְּכ֥וּ לְ/פָנַ֖/י עַד עוֹלָ֑ם וְ/עַתָּ֤ה נְאֻם יְהוָה֙ חָלִ֣ילָ/ה לִּ֔/י כִּֽי מְכַבְּדַ֥/י אֲכַבֵּ֖ד וּ/בֹזַ֥/י יֵקָֽלּוּ׃",
+        "LXX": "διὰ τοῦτο τάδε εἶπεν Κύριος ὁ θεὸς Ἰσραήλ Εἶπα Ὁ οἶκός σου καὶ ὁ οἶκος τοῦ πατρός σου διελεύσεται ἐνώπιόν μου ἕως αἰῶνος. καὶ νῦν φησὶν Κὺριος Μηδαμῶς ἐμοί, ὅτι ἀλλ’ ἢ τοὺς δοξάζοντάς με δοξάσω, καὶ ὁ ἐξουθενῶν με ἀτιμωθήσεται.",
+        "VUL": "Propterea ait Dominus Deus Israël : Loquens locutus sum, ut domus tua, et domus patris tui, ministraret in conspectu meo usque in sempiternum. Nunc autem dicit Dominus : Absit hoc a me : sed quicumque glorificaverit me, glorificabo eum : qui autem contemnunt me, erunt ignobiles.",
+        "SYN": "Посему так говорит Господь Бог Израилев: Я сказал _тогда:_ \"дом твой и дом отца твоего будут ходить пред лицем Моим вовек\". Но теперь говорит Господь: да не будет так, ибо Я прославлю прославляющих Меня, а бесславящие Меня будут посрамлены.",
+        "NEO": "C’est pourquoi, voici la parole de \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël : J’avais déclaré que ta maison et la maison de ton père marcheraient devant moi à perpétuité. Et maintenant, dit \\+w Yahweh|strong=\"H3068\"\\+w**, qu’il n’en soit plus ainsi ! Car j’honorerai ceux qui m’honorent, et ceux qui me méprisent seront méprisés.",
+        "NAB": "This, therefore, is the oracle of the LORD, the God of Israel: 'I said in the past that your family and your father's family should minister in my presence forever. But now,' the LORD declares, 'away with this! for I will honor those who honor me, but those who spurn me shall be accursed.",
+        "VAT_ES": "Por eso, el Señor, el Dios de Israel, pronuncia este oráculo: Yo había dicho que tu familia caminaría siempre en mi presencia. Pero ahora –oráculo de Señor– &iexcl;lejos de mí todo eso! Porque yo honro a los que me honran, pero los que me desprecian son humillados.",
+        "CEI": "Ecco dunque l'oracolo del Signore, Dio d'Israele: Avevo promesso alla tua casa e alla casa di tuo padre che avrebbero sempre camminato alla mia presenza. Ma ora - oracolo del Signore - non sia mai! Perché chi mi onorerà anch'io l'onorerò, chi mi disprezzerà sarà oggetto di disprezzo."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "הִנֵּה֙ יָמִ֣ים בָּאִ֔ים וְ/גָֽדַעְתִּי֙ אֶת זְרֹ֣עֲ/ךָ֔ וְ/אֶת זְרֹ֖עַ בֵּ֣ית אָבִ֑י/ךָ מִֽ/הְי֥וֹת זָקֵ֖ן בְּ/בֵיתֶֽ/ךָ׃",
+        "LXX": "ἰδοὺ ἡμέραι ἔρχονται καὶ ἐξολεθρεύσω τὸ σπέρμα σου καὶ τὸ σπέρμα οἴκου πατρός σου,",
+        "VUL": "Ecce dies veniunt, et præcidam brachium tuum, et brachium domus patris tui, ut non sit senex in domo tua.",
+        "SYN": "Вот, наступают дни, в _которые_ Я подсеку мышцу твою и мышцу дома отца твоего, так что не будет старца в доме твоем [никогда];",
+        "NEO": "Voici que les jours viennent où je retrancherai ton bras et le bras de la maison de ton père, en sorte qu’il n’y aura plus de vieillard dans ta maison.",
+        "NAB": "Yes, the time is coming when I will break your strength and the strength of your father's family, so that no man in your family shall reach old age.",
+        "VAT_ES": "Llegan los días en que amputaré tu brazo y el de la familia de tu padre, de manera que no habrá más ancianos en tu casa.",
+        "CEI": "Ecco verranno giorni in cui io taglierò via il tuo braccio e il braccio della casa di tuo padre, sì che non vi sia più un anziano nella tua casa."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/הִבַּטְתָּ֙ צַ֣ר מָע֔וֹן בְּ/כֹ֥ל אֲשֶׁר יֵיטִ֖יב אֶת יִשְׂרָאֵ֑ל וְ/לֹֽא יִהְיֶ֥ה זָקֵ֛ן בְּ/בֵיתְ/ךָ֖ כָּל הַ/יָּמִֽים׃",
+        "LXX": "καὶ οὐκ ἔσται σου πρεσβύτης ἐν οἴκῳ μου πάσας τὰς ἡμέρας.",
+        "VUL": "Et videbis æmulum tuum in templo, in universis prosperis Israël : et non erit senex in domo tua omnibus diebus.",
+        "SYN": "и ты будешь видеть бедствие жилища Моего, при всем том, что _Господь_ благотворит Израилю и не будет в доме твоем старца во все дни,",
+        "NEO": "Tu verras ta demeure humiliée, pendant que Dieu comblera de biens Israël ; et il n’y aura plus jamais de vieillard dans ta maison.",
+        "NAB": "You shall witness as a disappointed rival all the benefits enjoyed by Israel, but there shall never be an old man in your family.",
+        "VAT_ES": "Tú verás un rival en la Morada; y aunque todo le vaya bien a Israel, nunca habrá ancianos en tu casa.",
+        "CEI": "Guarderai sempre angustiato tutto il bene che farò a Israele, mentre non si troverà mai più un anziano nella tua casa."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/אִ֗ישׁ לֹֽא אַכְרִ֤ית לְ/ךָ֙ מֵ/עִ֣ם מִזְבְּחִ֔/י לְ/כַלּ֥וֹת אֶת עֵינֶ֖י/ךָ וְ/לַ/אֲדִ֣יב אֶת נַפְשֶׁ֑/ךָ וְ/כָל מַרְבִּ֥ית בֵּיתְ/ךָ֖ יָמ֥וּתוּ אֲנָשִֽׁים׃",
+        "LXX": "καὶ ἄνδρα οὐκ ἐξολεθρεύσω ἀπὸ τοῦ θυσιαστηρίου μου, ἐκλιπεῖν τοὺς ὀφθαλμοὺς αὐτοῦ καὶ καταρρεῖν τὴν ψυχὴν αὐτοῦ· καὶ πᾶς περισσεύων οἴκου σου πεσοῦνται ἐν ῥομφαίᾳ ἀνδρῶν.",
+        "VUL": "Verumtamen non auferam penitus virum ex te ab altari meo : sed ut deficiant oculi tui, et tabescat anima tua : et pars magna domus tuæ morietur cum ad virilem ætatem venerit.",
+        "SYN": "Я не отрешу у тебя _всех_ от жертвенника Моего, чтобы томить глаза твои и мучить душу твою; но все потомство дома твоего будет умирать в средних летах.",
+        "NEO": "Je ne ferai pas disparaître de mon autel tout homme des tiens, afin que tes yeux se consument et que ton âme défaille ; mais tout rejeton de ta maison mourra dans la force de l’âge.",
+        "NAB": "I will permit some of your family to remain at my altar, to wear out their eyes in consuming greed; but the rest of the men of your family shall die by the sword.",
+        "VAT_ES": "Sin embargo, mantendré a algunos de tus descendientes cerca de mi altar, para que se consuman tus ojos y se desgaste tu vida; pero todos los vástagos de tu casa morirán en la flor de la edad.",
+        "CEI": "Qualcuno dei tuoi tuttavia non lo strapperò dal mio altare, perché ti si consumino gli occhi e si strazi il tuo animo: ma chiunque sarà nato dalla tua famiglia morirà per la spada degli uomini."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְ/זֶה לְּ/ךָ֣ הָ/א֗וֹת אֲשֶׁ֤ר יָבֹא֙ אֶל שְׁנֵ֣י בָנֶ֔י/ךָ אֶל חָפְנִ֖י וּ/פִֽינְחָ֑ס בְּ/י֥וֹם אֶחָ֖ד יָמ֥וּתוּ שְׁנֵי/הֶֽם׃",
+        "LXX": "καὶ τοῦτό σοι τὸ σημεῖον ὃ ἣξει ἐπὶ τοὺς δύο υἱούς σου τούτους, Ὁφνεὶ καὶ Φεινεές, ἐν ἡμέρᾳ μιᾷ ἀποθανοῦνται ἀμφότεροι.",
+        "VUL": "Hoc autem erit tibi signum, quod venturum est duobus filiis tuis, Ophni et Phinees : in die uno morientur ambo.",
+        "SYN": "И вот тебе знамение, которое последует с двумя сыновьями твоими, Офни и Финеесом: оба они умрут в один день.",
+        "NEO": "Et tu auras pour signe ce qui arrivera à tes deux fils, à Ophni et Phinées : ils mourront tous deux le même jour.",
+        "NAB": "You shall have a sign in what will happen to your two sons, Hophni and Phinehas: both shall die on the same day.",
+        "VAT_ES": "Y te servirá de señal lo que les sucederá a tus hijos Jofní y Pinjás: ambos morirán el mismo día.",
+        "CEI": "Sarà per te un segno quello che avverrà ai tuoi due figli, a Cofni e Pìncas: nello stesso giorno moriranno tutti e due."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/הֲקִימֹתִ֥י לִ/י֙ כֹּהֵ֣ן נֶאֱמָ֔ן כַּ/אֲשֶׁ֛ר בִּ/לְבָבִ֥/י וּ/בְ/נַפְשִׁ֖/י יַעֲשֶׂ֑ה וּ/בָנִ֤יתִי ל/וֹ֙ בַּ֣יִת נֶאֱמָ֔ן וְ/הִתְהַלֵּ֥ךְ לִ/פְנֵֽי מְשִׁיחִ֖/י כָּל הַ/יָּמִֽים׃",
+        "LXX": "καὶ ἀναστήσω ἐμαυτῷ ἱερέα πιστόν, ὃς πάντα τὰ ἐν τῇ καρδίᾳ μου καὶ τὰ ἐν τῇ ψυχῇ μου ποιήσει· καὶ οἰκοδομήσω αὐτῷ οἶκον πιστόν, καὶ διελεύσεται ἐνώπιον χριστοῦ μου πάσας τὰς ἡμέρας.",
+        "VUL": "Et suscitabo mihi sacerdotem fidelem, qui juxta cor meum et animam meam faciet : et ædificabo ei domum fidelem, et ambulabit coram christo meo cunctis diebus.",
+        "SYN": "И поставлю Себе священника верного; он будет поступать по сердцу Моему и по душе Моей; и дом его сделаю твердым, и он будет ходить пред помазанником Моим во все дни;",
+        "NEO": "Et je me susciterai un prêtre fidèle, qui agira selon mon cœur et selon mon âme, je lui bâtirai une maison stable, et il marchera toujours devant mon oint.",
+        "NAB": "I will choose a faithful priest who shall do what I have in heart and mind. I will establish a lasting house for him which shall function in the presence of my anointed forever.",
+        "VAT_ES": "En cambio, yo me suscitaré un sacerdote fiel, que obrará conforme a mi corazón y a mis deseos. Yo le edificaré una casa duradera, y él caminará en presencia de mi Ungido todos los días de su vida.",
+        "CEI": "Dopo, farò sorgere al mio servizio un sacerdote fedele che agirà secondo il mio cuore e il mio desiderio. Io gli darò una casa stabile e camminerà alla mia presenza, come mio consacrato per sempre."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה כָּל הַ/נּוֹתָר֙ בְּ/בֵ֣יתְ/ךָ֔ יָבוֹא֙ לְ/הִשְׁתַּחֲוֺ֣ת ל֔/וֹ לַ/אֲג֥וֹרַת כֶּ֖סֶף וְ/כִכַּר לָ֑חֶם וְ/אָמַ֗ר סְפָחֵ֥/נִי נָ֛א אֶל אַחַ֥ת הַ/כְּהֻנּ֖וֹת לֶ/אֱכֹ֥ל פַּת לָֽחֶם׃",
+        "LXX": "καὶ ἔσται ὁ περισσεύων ἐν οἴκῳ ἥξει προσκυνεῖν αὐτῷ ὀβολοῦ ἀργυρίου λέγων Παράριψόν με ἐπὶ μίαν τῶν ἱερατειῶν σου φαγεῖν ἄρτον.",
+        "VUL": "Futurum est autem, ut quicumque remanserit in domo tua, veniat ut oretur pro eo, et offerat nummum argenteum, et tortam panis, dicatque : Dimitte me, obsecro, ad unam partem sacerdotalem, ut comedam buccellam panis.",
+        "SYN": "и всякий, оставшийся из дома твоего, придет кланяться ему из-за геры серебра и куска хлеба и скажет: \"причисли меня к какой-либо левитской должности, чтоб иметь пропитание\".",
+        "NEO": "Et quiconque restera de ta maison viendra se prosterner devant lui, pour avoir une pièce d’argent et un morceau de pain, et il dira : Mets-moi, je te prie, à quelqu’une des fonctions du sacerdoce, afin que j’aie un morceau de pain à manger. »",
+        "NAB": "Then whoever is left of your family will come to grovel before him for a piece of silver or a loaf of bread, and will say: Appoint me, I beg you, to a priestly function, that I may have a morsel of bread to eat.'\"",
+        "VAT_ES": "Y todos los que subsistan de tu casa irán a postrarse delante de él por una moneda de plata y una miga de pan, y le dirán: Admíteme, por favor, a cualquiera de las funciones sacerdotales, para que tenga un pedazo de pan que comer».",
+        "CEI": "Chiunque sarà superstite nella tua casa, andrà a prostrarsi davanti a lui per una monetina d'argento e per un pezzo di pane e dirà: Ammettimi a qualunque ufficio sacerdotale, perché possa mangiare un tozzo di pane\"."
+      }
+    }
+  }
+}

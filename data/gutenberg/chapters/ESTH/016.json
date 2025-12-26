@@ -1,0 +1,17 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ESTH_016",
+  "book_key": "ESTH",
+  "sequence": 16,
+  "chapter_in": {
+    "VUL": 16,
+    "LXX": 16
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "exists_in": [
+    "VUL",
+    "LXX"
+  ],
+  "verses": {}
+}

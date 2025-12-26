@@ -1,0 +1,290 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_086",
+  "book_key": "PSAL",
+  "sequence": 86,
+  "chapter_in": {
+    "MT": 86,
+    "VUL": 85,
+    "LXX": 85
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "תְּפִלָּ֗ה לְ/דָ֫וִ֥ד הַטֵּֽה יְהוָ֣ה אָזְנְ/ךָ֣ עֲנֵ֑/נִי כִּֽי עָנִ֖י וְ/אֶבְי֣וֹן אָֽנִי׃",
+        "LXX": "Τοῖς υἱοῖς Κόρε ψαλμὸς ᾠδῆς. Οἱ θεμέλιοι αὐτοῦ ἐν τοῖς ὄρεσιν τοῖς ἁγίοις·",
+        "VUL": "Filiis Core. Psalmus cantici. [Fundamenta ejus in montibus sanctis ;/",
+        "SYN": "Сынов Кореевых. Псалом. Песнь.",
+        "NEO": "Prière de David.",
+        "NAB": "A prayer of David. Hear me, LORD, and answer me, for I am poor and oppressed.",
+        "CEI": "Supplica. Di Davide. Signore, tendi l'orecchio, rispondimi, perché io sono povero e infelice."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "שָֽׁמְרָ֣/ה נַפְשִׁ/י֮ כִּֽי חָסִ֪יד אָ֥נִי הוֹשַׁ֣ע עַ֭בְדְּ/ךָ אַתָּ֣ה אֱלֹהַ֑/י הַ/בּוֹטֵ֥חַ אֵלֶֽי/ךָ׃",
+        "LXX": "ἀγαπᾷ Κύριος τὰς πύλας Σειὼν ὑπὲρ πάντα τὰ σκηνώματα Ἰακώβ.",
+        "VUL": "diligit Dominus portas Sion super omnia tabernacula Jacob./",
+        "SYN": "Основание его на горах святых. Господь любит врата Сиона более всех селений Иакова.",
+        "NEO": "Garde mon âme, car je suis pieux ; sauve ton serviteur, ô mon Dieu ; il met sa confiance en toi.",
+        "NAB": "Preserve my life, for I am loyal; save your servant who trusts in you.",
+        "VAT_ES": "protégeme, porque soy uno de tus fieles,",
+        "CEI": "Custodiscimi perché sono fedele; tu, Dio mio, salva il tuo servo, che in te spera."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "חָנֵּ֥/נִי אֲדֹנָ֑/י כִּ֥י אֵלֶ֥י/ךָ אֶ֝קְרָ֗א כָּל הַ/יּֽוֹם׃",
+        "LXX": "δεδοξασμένα ἐλαλήθη περὶ σοῦ, ἡ πόλις τοῦ θεοῦ. διάψαλμα.",
+        "VUL": "Gloriosa dicta sunt de te, civitas Dei !/",
+        "SYN": "Славное возвещается о тебе, град Божий!",
+        "NEO": "Aie pitié de moi, Seigneur, car je crie vers toi tout le jour.",
+        "NAB": "You are my God; pity me, Lord; to you I call all the day.",
+        "VAT_ES": "Tú eres mi Dios: ten piedad de mí, Señor,",
+        "CEI": "Pietà di me, Signore, a te grido tutto il giorno."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "שַׂ֭מֵּחַ נֶ֣פֶשׁ עַבְדֶּ֑/ךָ כִּ֥י אֵלֶ֥י/ךָ אֲ֝דֹנָ֗/י נַפְשִׁ֥/י אֶשָּֽׂא׃",
+        "LXX": "μνησθήσομαι Ῥαὰβ καὶ Βαβυλῶνος τοῖς γινώσκουσίν με· καὶ ἰδοὺ ἀλλόφυλοι καὶ Τύρος καὶ λαὸς Αἰθιόπων, οὗτοι ἐγενήθησαν ἐκεῖ.",
+        "VUL": "Memor ero Rahab et Babylonis, scientium me ;/ ecce alienigenæ, et Tyrus, et populus Æthiopum,/ hi fuerunt illic./",
+        "SYN": "Упомяну знающим меня о Рааве и Вавилоне; вот Филистимляне и Тир с Ефиопиею, - _скажут:_ \"такой-то родился там\".",
+        "NEO": "Réjouis l’âme de ton serviteur, car vers toi, Seigneur, j’élève mon âme.",
+        "NAB": "Gladden the soul of your servant; to you, Lord, I lift up my soul.",
+        "VAT_ES": "reconforta el ánimo de tu servidor,",
+        "CEI": "Rallegra la vita del tuo servo, perché a te, Signore, innalzo l'anima mia."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּֽי אַתָּ֣ה אֲ֭דֹנָ/י ט֣וֹב וְ/סַלָּ֑ח וְ/רַב חֶ֝֗סֶד לְ/כָל קֹרְאֶֽי/ךָ׃",
+        "LXX": "Μήτηρ Σειών, ἐρεῖ ἄνθρωπος, καί Ἄνθρωπος ἐγενήθη ἐν αὐτῇ, καί Αὐτὸς ἐθεμελίωσεν αὐτὴν ὁ ὕψιστος.",
+        "VUL": "Numquid Sion dicet : Homo et homo natus est in ea,/ et ipse fundavit eam Altissimus ?/",
+        "SYN": "О Сионе же будут говорить: \"такой-то и такой-то муж родился в нем, и Сам Всевышний укрепил его\".",
+        "NEO": "Car tu es bon, Seigneur, et clément, et plein de compassion pour tous ceux qui t’invoquent.",
+        "NAB": "Lord, you are kind and forgiving, most loving to all who call on you.",
+        "VAT_ES": "Tú, Señor, eres bueno e indulgente,",
+        "CEI": "Tu sei buono, Signore, e perdoni, sei pieno di misericordia con chi ti invoca."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "הַאֲזִ֣ינָ/ה יְ֭הוָה תְּפִלָּתִ֑/י וְ֝/הַקְשִׁ֗יבָ/ה בְּ/ק֣וֹל תַּחֲנוּנוֹתָֽ/י׃",
+        "LXX": "Κύριος διηγήσεται ἐν γραφῇ λαῶν καὶ ἀρχόντων τούτων τῶν γεγενημένων ἐν αὐτῇ. διάψαλμα.",
+        "VUL": "Dominus narrabit in scripturis populorum et principum,/ horum qui fuerunt in ea./",
+        "SYN": "Господь в переписи народов напишет: \"такой-то родился там\".",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, prête l’oreille à ma prière, sois attentif à la voix de mes supplications.",
+        "NAB": "LORD, hear my prayer; listen to my cry for help.",
+        "VAT_ES": "&iexcl;atiende, Señor, a mi plegaria,",
+        "CEI": "Porgi l'orecchio, Signore, alla mia preghiera e sii attento alla voce della mia supplica."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "בְּ/י֣וֹם צָ֭רָתִ֥/י אֶקְרָאֶ֗/ךָּ כִּ֣י תַעֲנֵֽ/נִי׃",
+        "LXX": "ὡς εὐφραινομένων πάντων ἡ κατοικία ἐν σοί.",
+        "VUL": "Sicut lætantium omnium/ habitatio est in te.]",
+        "SYN": "И поющие и играющие, - все источники мои в тебе.",
+        "NEO": "Je t’invoque au jour de ma détresse, et tu m’exauceras.",
+        "NAB": "In this time of trouble I call, for you will answer me.",
+        "VAT_ES": "Yo te invoco en el momento de la angustia;",
+        "CEI": "Nel giorno dell'angoscia alzo a te il mio grido e tu mi esaudirai."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אֵין כָּמ֖וֹ/ךָ בָ/אֱלֹהִ֥ים אֲדֹנָ֗/י וְ/אֵ֣ין כְּֽ/מַעֲשֶֽׂי/ךָ׃",
+        "NEO": "Nul ne t’égale parmi les dieux, Seigneur, rien ne ressemble à tes œuvres.",
+        "NAB": "None among the gods can equal you, O Lord; nor can their deeds compare to yours.",
+        "VAT_ES": "No hay otro dios igual a ti, Señor,",
+        "CEI": "Fra gli dei nessuno è come te, Signore, e non c'è nulla che uguagli le tue opere."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "כָּל גּוֹיִ֤ם אֲשֶׁ֥ר עָשִׂ֗יתָ יָב֤וֹאוּ וְ/יִשְׁתַּחֲו֣וּ לְ/פָנֶ֣י/ךָ אֲדֹנָ֑/י וִֽ/יכַבְּד֣וּ לִ/שְׁמֶֽ/ךָ׃",
+        "NEO": "Toutes les nations que tu as faites viendront se prosterner devant toi, Seigneur, et rendre gloire à ton nom.",
+        "NAB": "All the nations you have made shall come to bow before you, Lord, and give honor to your name.",
+        "VAT_ES": "Todas las naciones que has creado",
+        "CEI": "Tutti i popoli che hai creato verranno e si prostreranno davanti a te, o Signore, per dare gloria al tuo nome;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּֽי גָד֣וֹל אַ֭תָּה וְ/עֹשֵׂ֣ה נִפְלָא֑וֹת אַתָּ֖ה אֱלֹהִ֣ים לְ/בַדֶּֽ/ךָ׃",
+        "NEO": "Car tu es grand et tu opères des prodiges ; toi seul, tu es Dieu.",
+        "NAB": "For you are great and do wondrous deeds; and you alone are God.",
+        "VAT_ES": "porque tú eres grande, Dios mío,",
+        "CEI": "grande tu sei e compi meraviglie: tu solo sei Dio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "ה֘וֹרֵ֤/נִי יְהוָ֨ה דַּרְכֶּ֗/ךָ אֲהַלֵּ֥ךְ בַּ/אֲמִתֶּ֑/ךָ יַחֵ֥ד לְ֝בָבִ֗/י לְ/יִרְאָ֥ה שְׁמֶֽ/ךָ׃",
+        "NEO": "Enseigne-moi tes voies \\+w Yahweh|strong=\"H3068\"\\+w** ; je veux marcher dans ta fidélité ; attache mon cœur à la crainte de ton nom.",
+        "NAB": "Teach me, LORD, your way that I may walk in your truth, single-hearted and revering your name.",
+        "VAT_ES": "Indícame tu camino, Señor,",
+        "CEI": "Mostrami, Signore, la tua via, perché nella tua verità io cammini; donami un cuore semplice che tema il tuo nome."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אוֹדְ/ךָ֤ אֲדֹנָ֣/י אֱ֭לֹהַ/י בְּ/כָל לְבָבִ֑/י וַ/אֲכַבְּדָ֖ה שִׁמְ/ךָ֣ לְ/עוֹלָֽם׃",
+        "NEO": "Je te louerai de tout mon cœur, Seigneur, mon Dieu ; et je glorifierai ton nom à jamais.",
+        "NAB": "I will praise you with all my heart, glorify your name forever, Lord my God.",
+        "VAT_ES": "Te daré gracias, Dios mío, de todo corazón,",
+        "CEI": "Ti loderò, Signore, Dio mio, con tutto il cuore e darò gloria al tuo nome sempre,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כִּֽי חַ֭סְדְּ/ךָ גָּד֣וֹל עָלָ֑/י וְ/הִצַּ֥לְתָּ נַ֝פְשִׁ֗/י מִ/שְּׁא֥וֹל תַּחְתִּיָּֽה׃",
+        "NEO": "Car ta bonté est grande envers moi, tu as tiré mon âme du fond du schéol.",
+        "NAB": "Your love for me is great; you have rescued me from the depths of Sheol.",
+        "VAT_ES": "porque es grande el amor que me tienes,",
+        "CEI": "perché grande con me è la tua misericordia: dal profondo degli inferi mi hai strappato."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אֱלֹהִ֤ים זֵ֘דִ֤ים קָֽמוּ עָלַ֗/י וַ/עֲדַ֣ת עָ֭רִיצִים בִּקְשׁ֣וּ נַפְשִׁ֑/י וְ/לֹ֖א שָׂמ֣וּ/ךָ לְ/נֶגְדָּֽ/ם׃",
+        "NEO": "O Dieu, des orgueilleux se sont élevés contre moi, une troupe d’hommes violents en veulent à ma vie, sans tenir aucun compte de toi.",
+        "NAB": "O God, the arrogant have risen against me; a ruthless band has sought my life; to you they pay no heed.",
+        "VAT_ES": "Dios mío, los orgullosos se levantaron contra mí,",
+        "CEI": "Mio Dio, mi assalgono gli arroganti, una schiera di violenti attenta alla mia vita, non pongono te davanti ai loro occhi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֣ה אֲ֭דֹנָ/י אֵל רַח֣וּם וְ/חַנּ֑וּן אֶ֥רֶךְ אַ֝פַּ֗יִם וְ/רַב חֶ֥סֶד וֶ/אֱמֶֽת׃",
+        "NEO": "Mais toi, Seigneur, tu es un Dieu miséricordieux et compatissant, lent à la colère, riche en bonté et en fidélité.",
+        "NAB": "But you, Lord, are a merciful and gracious God, slow to anger, most loving and true.",
+        "VAT_ES": "Pero tú, Señor, Dios compasivo y bondadoso,",
+        "CEI": "Ma tu, Signore, Dio di pietà, compassionevole, lento all'ira e pieno di amore, Dio fedele,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "פְּנֵ֥ה אֵלַ֗/י וְ/חָ֫נֵּ֥/נִי תְּנָֽ/ה עֻזְּ/ךָ֥ לְ/עַבְדֶּ֑/ךָ וְ֝/הוֹשִׁ֗יעָ/ה לְ/בֶן אֲמָתֶֽ/ךָ׃",
+        "NEO": "Tourne vers moi tes regards et aie pitié de moi ; donne ta force à ton serviteur, et sauve le fils de ta servante.",
+        "NAB": "Turn to me, have pity on me; give your strength to your servant; save this child of your handmaid.",
+        "VAT_ES": "vuelve hacia mí tu rostro y ten piedad de mí;",
+        "CEI": "volgiti a me e abbi misericordia: dona al tuo servo la tua forza, salva il figlio della tua ancella."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "עֲשֵֽׂה עִמִּ֥/י א֗וֹת לְ/ט֫וֹבָ֥ה וְ/יִרְא֣וּ שֹׂנְאַ֣/י וְ/יֵבֹ֑שׁוּ כִּֽי אַתָּ֥ה יְ֝הוָ֗ה עֲזַרְתַּ֥/נִי וְ/נִחַמְתָּֽ/נִי׃",
+        "NEO": "Signale ta bonté envers moi : que mes ennemis le voient et soient confondus ! Car c’est toi, \\+w Yahweh|strong=\"H3068\"\\+w**, qui m’assistes et me consoles.",
+        "NAB": "Give me a sign of your favor: make my enemies see, to their confusion, that you, LORD, help and comfort me.",
+        "VAT_ES": "Dame una prueba de tu bondad,",
+        "CEI": "Dammi un segno di benevolenza; vedano e siano confusi i miei nemici, perché tu, Signore, mi hai soccorso e consolato."
+      }
+    }
+  }
+}

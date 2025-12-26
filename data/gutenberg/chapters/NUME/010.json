@@ -1,0 +1,663 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_010",
+  "book_key": "NUME",
+  "sequence": 10,
+  "chapter_in": {
+    "MT": 10,
+    "VUL": 10,
+    "LXX": 10
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses:",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse ancora a Mosè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עֲשֵׂ֣ה לְ/ךָ֗ שְׁתֵּי֙ חֲצֽוֹצְרֹ֣ת כֶּ֔סֶף מִקְשָׁ֖ה תַּעֲשֶׂ֣ה אֹתָ֑/ם וְ/הָי֤וּ לְ/ךָ֙ לְ/מִקְרָ֣א הָֽ/עֵדָ֔ה וּ/לְ/מַסַּ֖ע אֶת הַֽ/מַּחֲנֽוֹת׃",
+        "LXX": "Ποίησον σεαυτῷ δύο σάλπιγγας, ἐλατὰς ἀργυρᾶς ποιήσεις σεαυτῷ· καὶ ἔσονταί σοι ἀνακαλεῖν τὴν συναγωγὴν καὶ ἐξαίρειν τὰς παρεμβολάς.",
+        "VUL": "Fac tibi duas tubas argenteas ductiles, quibus convocare possis multitudinem quando movenda sunt castra.",
+        "SYN": "сделай себе две серебряные трубы, чеканные сделай их, чтобы они служили тебе для созывания общества и для снятия станов;",
+        "NEO": "« Fais-toi deux trompettes d’argent ; tu les feras d’argent battu. Elles te serviront pour la convocation de l’assemblée et pour la levée des camps.",
+        "NAB": "\"Make two trumpets of beaten silver, which you shall use in assembling the community and in breaking camp.",
+        "VAT_ES": "Manda hacer dos trompetas de plata, forjadas a martillo. Ellas te servirán para convocar a la comunidad y para movilizar las divisiones.",
+        "CEI": "\"Fatti due trombe d'argento; le farai lavorate a martello e ti serviranno per convocare la comunità e per levare l'accampamento."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/תָקְע֖וּ בָּ/הֵ֑ן וְ/נֽוֹעֲד֤וּ אֵלֶ֨י/ךָ֙ כָּל הָ֣/עֵדָ֔ה אֶל פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃",
+        "LXX": "καὶ σαλπίσεις ἐν αὐταῖς, καὶ συναχθήσεται πᾶσα ἡ συναγωγὴ ἐπὶ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου·",
+        "VUL": "Cumque increpueris tubis, congregabitur ad te omnis turba ad ostium tabernaculi fderis.",
+        "SYN": "когда затрубят ими, соберется к тебе все общество ко входу скинии собрания;",
+        "NEO": "Quand on en sonnera, toute l’assemblée se réunira auprès de toi, à l’entrée de la tente de réunion.",
+        "NAB": "When both are blown, the whole community shall gather round you at the entrance of the meeting tent;",
+        "VAT_ES": "Cuando se hagan sonar las dos trompetas, toda la comunidad se reunirá delante de ti, a la entrada de la Carpa del Encuentro.",
+        "CEI": "Al suono di esse tutta la comunità si radunerà presso di te all'ingresso della tenda del convegno."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/אִם בְּ/אַחַ֖ת יִתְקָ֑עוּ וְ/נוֹעֲד֤וּ אֵלֶ֨י/ךָ֙ הַ/נְּשִׂיאִ֔ים רָאשֵׁ֖י אַלְפֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "ἐὰν δὲ ἐν μιᾷ σαλπίσωσιν, προσελεύσονται πρὸς σὲ πάντες οἱ ἄρχοντες, ἀρχηγοὶ Ἰσραήλ.",
+        "VUL": "Si semel clangueris, venient ad te principes, et capita multitudinis Israël.",
+        "SYN": "когда одною трубою затрубят, соберутся к тебе князья и тысяченачальники Израилевы;",
+        "NEO": "Si l’on ne sonne que d’une trompette, les princes seulement, les chefs des milliers d’Israël, se réuniront auprès de toi.",
+        "NAB": "but when one of them is blown, only the princes, the chiefs of the troops of Israel, shall gather round you.",
+        "VAT_ES": "Pero si tocan una sola, se reunirán contigo los jefes, es decir, los capitanes de los regimientos de Israel.",
+        "CEI": "Al suono di una tromba sola, i principi, i capi delle migliaia d'Israele, converranno presso di te."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וּ/תְקַעְתֶּ֖ם תְּרוּעָ֑ה וְ/נָֽסְעוּ֙ הַֽ/מַּחֲנ֔וֹת הַ/חֹנִ֖ים קֵֽדְמָ/ה׃",
+        "LXX": "καὶ σαλπιεῖτε σημασίαν, καὶ ἐξαροῦσιν αἱ παρεμβολαὶ αἱ παρεμβαλοῦσαι ἀνατολάς·",
+        "VUL": "Si autem prolixior atque concisus clangor increpuerit, movebunt castra primi qui sunt ad orientalem plagam.",
+        "SYN": "когда затрубите тревогу, поднимутся станы, становящиеся к востоку;",
+        "NEO": "Quand vous sonnerez avec éclat, ceux qui campent à l’orient se mettront en marche ;",
+        "NAB": "When you sound the first alarm, those encamped on the east side shall set out;",
+        "VAT_ES": "Cuando ustedes den un toque de trompeta acompañado de una aclamación, se pondrán en movimiento las divisiones acampadas al este;",
+        "CEI": "Quando suonerete uno squillo di acclamazione, gli accampamenti che sono a levante si metteranno in cammino."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וּ/תְקַעְתֶּ֤ם תְּרוּעָה֙ שֵׁנִ֔ית וְ/נָֽסְעוּ֙ הַֽ/מַּחֲנ֔וֹת הַ/חֹנִ֖ים תֵּימָ֑נָ/ה תְּרוּעָ֥ה יִתְקְע֖וּ לְ/מַסְעֵי/הֶֽם׃",
+        "LXX": "καὶ σαλπιεῖτε σημασίαν δευτέραν, καὶ ἐξαροῦσιν αἱ παρεμβολαὶ αἱ παρεμβάλλουσαι λίβα· καὶ σαλπιεῖτε σημασίαν τρίτην, καὶ ἐξαροῦσιν αἱ παρεμβολαὶ αἱ παρεμβάλλουσαι παρὰ θάλασσαν· καὶ σαλπιεῖτε σημασίαν τετάρτην, καὶ ἐξαροῦσιν αἱ παρεμβολαὶ αἱ παρεμβάλλουσαι πρὸς βορρᾶν· σημασίᾳ σαλπιοῦσιν ἐν τῇ ἐξάρσει αὐτῶν.",
+        "VUL": "In secundo autem sonitu et pari ululatu tubæ, levabunt tentoria qui habitant ad meridiem ; et juxta hunc modum reliqui facient, ululantibus tubis in profectionem.",
+        "SYN": "когда во второй раз затрубите тревогу, поднимутся станы, становящиеся к югу; [когда затрубите в третий раз тревогу, поднимутся станы, становящиеся к морю; когда в четвертый раз затрубите тревогу, поднимутся станы, становящиеся к северу;] тревогу пусть трубят при отправлении их в путь;",
+        "NEO": "quand vous sonnerez avec éclat pour la seconde fois, ceux qui campent au midi se mettront en marche ; on sonnera avec éclat pour leur départ.",
+        "NAB": "when you sound the second alarm, those encamped on the south side shall set out; when you sound the third alarm, those encamped on the west side shall set out; when you sound the fourth alarm, those encamped on the north side shall set out. Thus shall the alarm be sounded for them to depart.",
+        "VAT_ES": "y al segundo toque de trompeta, realizado de la misma manera, lo harán las divisiones acampadas al sur. Así, el toque de trompetas acompañado de una aclamación, los hará avanzar,",
+        "CEI": "Quando suonerete una seconda volta lo squillo di acclamazione, gli accampamenti che si trovano a mezzogiorno si metteranno in cammino; si suoneranno squilli di acclamazione quando dovranno mettersi in cammino."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וּ/בְ/הַקְהִ֖יל אֶת הַ/קָּהָ֑ל תִּתְקְע֖וּ וְ/לֹ֥א תָרִֽיעוּ׃",
+        "LXX": "καὶ ὅταν συναγάγητε τὴν συναγωγήν, σαλπιεῖτε, καὶ οὐ σημασίᾳ.",
+        "VUL": "Quando autem congregandus est populus, simplex tubarum clangor erit, et non concise ululabunt.",
+        "SYN": "а когда надобно собрать собрание, трубите, но не тревогу;",
+        "NEO": "Vous sonnerez aussi pour convoquer l’assemblée, mais non avec éclat.",
+        "NAB": "But in calling forth an assembly you are to blow an ordinary blast, without sounding the alarm.",
+        "VAT_ES": "mientras que para reunir a la comunidad se tocarán las trompetas sin proferir ninguna aclamación.",
+        "CEI": "Quando deve essere convocata la comunità, suonerete, ma non uno squillo di acclamazione."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֤י אַהֲרֹן֙ הַ/כֹּ֣הֲנִ֔ים יִתְקְע֖וּ בַּֽ/חֲצֹצְר֑וֹת וְ/הָי֥וּ לָ/כֶ֛ם לְ/חֻקַּ֥ת עוֹלָ֖ם לְ/דֹרֹתֵי/כֶֽם׃",
+        "LXX": "καὶ οἱ υἱοὶ Ἀαρὼν οἱ ἱερεῖς σαλπιοῦσιν ταῖς σάλπιγξιν, καὶ ἔσται ὑμῖν νόμιμον αἰώνιον εἰς τὰς γενεὰς ὑμῶν.",
+        "VUL": "Filii autem Aaron sacerdotes clangent tubis : eritque hoc legitimum sempiternum in generationibus vestris.",
+        "SYN": "сыны Аароновы, священники, должны трубить трубами: это будет вам постановлением вечным в роды ваши;",
+        "NEO": "Les fils d’Aaron, les prêtres, sonneront des trompettes : ce sera une loi perpétuelle pour vous et pour vos descendants.",
+        "NAB": "\"It is the sons of Aaron, the priests, who shall blow the trumpets; and the use of them is prescribed by perpetual statute for you and your descendants.",
+        "VAT_ES": "Las trompetas las tocarán los hijos de Aarón, los sacerdotes. Este será para ustedes y para sus descendientes un decreto irrevocable, a lo largo de las generaciones.",
+        "CEI": "I sacerdoti figli di Aronne suoneranno le trombe; sarà una legge perenne per voi e per i vostri discendenti."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/כִֽי תָבֹ֨אוּ מִלְחָמָ֜ה בְּ/אַרְצְ/כֶ֗ם עַל הַ/צַּר֙ הַ/צֹּרֵ֣ר אֶתְ/כֶ֔ם וַ/הֲרֵעֹתֶ֖ם בַּ/חֲצֹצְר֑וֹת וֲ/נִזְכַּרְתֶּ֗ם לִ/פְנֵי֙ יְהוָ֣ה אֱלֹֽהֵי/כֶ֔ם וְ/נוֹשַׁעְתֶּ֖ם מֵ/אֹיְבֵי/כֶֽם׃",
+        "LXX": "ἐὰν δὲ ἐξέλθητε εἰς πόλεμον ἐν τῇ γῇ ὑμῶν πρὸς τοὺς ὑπεναντίους τοὺς ἀνθεστηκότας ὑμῖν, καὶ σημανεῖτε ταῖς σάλπιγξιν, καὶ ἀναμνησθήσεσθε ἔναντι Κυρίου, καὶ διασωθήσεσθε ἀπὸ τῶν ἐχθρῶν ὑμῶν.",
+        "VUL": "Si exieritis ad bellum de terra vestra contra hostes qui dimicant adversum vos, clangetis ululantibus tubis, et erit recordatio vestri coram Domino Deo vestro, ut eruamini de manibus inimicorum vestrorum.",
+        "SYN": "и когда пойдете на войну в земле вашей против врага, наступающего на вас, трубите тревогу трубами, -- и будете воспомянуты пред Господом, Богом вашим, и спасены будете от врагов ваших;",
+        "NEO": "Quand vous irez à la guerre dans votre pays contre l’ennemi qui vous attaquera, vous sonnerez des trompettes avec éclat, et vous serez rappelés au souvenir de \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, et vous serez délivrés de vos ennemis.",
+        "NAB": "When in your own land you go to war against an enemy that is attacking you, you shall sound the alarm on the trumpets, and the LORD, your God, will remember you and save you from your foes.",
+        "VAT_ES": "Cuando ustedes, en su propia tierra, tengan que combatir contra un enemigo que venga a atacarlos, deberán tocar las trompetas profiriendo aclamaciones, y el Señor, su Dios, se acordará de ustedes, y se verán libre de sus enemigos.",
+        "CEI": "Quando nel vostro paese andrete in guerra contro il nemico che vi attaccherà, suonerete le trombe con squilli di acclamazione e sarete ricordati davanti al Signore vostro Dio e sarete liberati dai vostri nemici."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וּ/בְ/י֨וֹם שִׂמְחַתְ/כֶ֥ם וּֽ/בְ/מוֹעֲדֵי/כֶם֮ וּ/בְ/רָאשֵׁ֣י חָדְשֵׁי/כֶם֒ וּ/תְקַעְתֶּ֣ם בַּ/חֲצֹֽצְרֹ֗ת עַ֚ל עֹלֹ֣תֵי/כֶ֔ם וְ/עַ֖ל זִבְחֵ֣י שַׁלְמֵי/כֶ֑ם וְ/הָי֨וּ לָ/כֶ֤ם לְ/זִכָּרוֹן֙ לִ/פְנֵ֣י אֱלֹֽהֵי/כֶ֔ם אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "καὶ ἐν ταῖς ἡμέραις τῆς εὐφροσύνης ὑμῶν καὶ ἐν ταῖς ἑορταῖς ὑμῶν καὶ ἐν ταῖς νουμηνίαις ὑμῶν σαλπιεῖτε ταῖς σάλπιγξιν ἐπὶ τοῖς ὁλοκαυτώμασιν καὶ ἐπὶ ταῖς θυσίαις τῶν σωτηρίων ὑμῶν, καὶ ἔσται ὑμῖν ἀνάμνησις ἔναντι τοῦ θεοῦ ὑμῶν· ἐγὼ Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Siquando habebitis epulum, et dies festos, et calendas, canetis tubis super holocaustis, et pacificis victimis, ut sint vobis in recordationem Dei vestri. Ego Dominus Deus vester.",
+        "SYN": "и в день веселия вашего, и в праздники ваши, и в новомесячия ваши трубите трубами при всесожжениях ваших и при мирных жертвах ваших, -- и это будет напоминанием о вас пред Богом вашим. Я Господь, Бог ваш.",
+        "NEO": "Dans vos jours de joie, dans vos fêtes et à vos nouvelles lunes, vous sonnerez des trompettes, en offrant vos holocaustes et vos sacrifices pacifiques, et elles seront pour vous un mémorial devant votre Dieu. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu. » DEUXIÈME PARTIE DU SINAÏ A CADÈS.",
+        "NAB": "On your days of celebration, your festivals, and your new-moon feasts, you shall blow the trumpets over your holocausts and your peace offerings; this will serve as a reminder of you before your God. I, the LORD, am your God.\"",
+        "VAT_ES": "En las grandes ocasiones, en las fiestas días de luna nueva, tocarán las trompetas sobre sus holocaustos y sus sacrificios de comunión; y este será para ustedes un memorial delante de su Dios. Yo soy el Señor, su Dios.",
+        "CEI": "Così anche nei vostri giorni di gioia, nelle vostre solennità e al principio dei vostri mesi, suonerete le trombe quando offrirete olocausti e sacrifici di comunione; esse vi ricorderanno davanti al vostro Dio. Io sono il Signore vostro Dio\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֞י בַּ/שָּׁנָ֧ה הַ/שֵּׁנִ֛ית בַּ/חֹ֥דֶשׁ הַ/שֵּׁנִ֖י בְּ/עֶשְׂרִ֣ים בַּ/חֹ֑דֶשׁ נַעֲלָה֙ הֶֽ/עָנָ֔ן מֵ/עַ֖ל מִשְׁכַּ֥ן הָ/עֵדֻֽת׃",
+        "LXX": "Καὶ ἐγένετο ἐν τῷ ἐνιαυτῷ τῷ δευτέρῳ ἐν τῷ μηνὶ τῷ δευτέρῳ εἰκάδι τοῦ μηνὸς ἀνέβη ἡ νεφέλη ἀπὸ τῆς σκηνῆς τοῦ μαρτυρίου,",
+        "VUL": "Anno secundo, mense secundo, vigesima die mensis, elevata est nubes de tabernaculo fderis :",
+        "SYN": "Во второй год, во второй месяц, в двадцатый _день_ месяца поднялось облако от скинии откровения;",
+        "NEO": "La seconde année, au vingtième jour du deuxième mois, la nuée s’éleva de dessus la Demeure du témoignage ;",
+        "NAB": "In the second year, on the twentieth day of the second month, the cloud rose from the Dwelling of the commandments.",
+        "VAT_ES": "En el segundo año, el día veinte del segundo mes, la nube se alzó por encima de la Morada del Testimonio,",
+        "CEI": "Il secondo anno, il secondo mese, il venti del mese, la nube si alzò sopra la Dimora della testimonianza."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֧וּ בְנֵֽי יִשְׂרָאֵ֛ל לְ/מַסְעֵי/הֶ֖ם מִ/מִּדְבַּ֣ר סִינָ֑י וַ/יִּשְׁכֹּ֥ן הֶ/עָנָ֖ן בְּ/מִדְבַּ֥ר פָּארָֽן׃",
+        "LXX": "καὶ ἐξῆραν οἱ υἱοὶ Ἰσραὴλ σὺν ἀπαρτίαις αὐτῶν ἐν τῇ ἐρήμῳ Σεινά· καὶ ἔστη ἡ νεφέλη ἐν τῇ ἐρήμῳ τοῦ Φαράν.",
+        "VUL": "profectique sunt filii Israël per turmas suas de deserto Sinai, et recubuit nubes in solitudine Pharan.",
+        "SYN": "и отправились сыны Израилевы по станам своим из пустыни Синайской, и остановилось облако в пустыне Фаран.",
+        "NEO": "et les enfants d’Israël, reprenant leurs marches, partirent du désert de Sinaï, et la nuée s’arrêta dans le désert de Pharan.",
+        "NAB": "The Israelites moved on from the desert of Sinai by stages, until the cloud came to rest in the desert of Paran.",
+        "VAT_ES": "y los israelitas fueron avanzando por etapas desde el desierto del Sinaí, hasta que la nube se detuvo en el desierto de Parán.",
+        "CEI": "Gli Israeliti partirono dal deserto del Sinai secondo il loro ordine di marcia; la nube si fermò nel deserto di Paran."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ בָּ/רִאשֹׁנָ֑ה עַל פִּ֥י יְהוָ֖ה בְּ/יַד מֹשֶֽׁה׃",
+        "LXX": "καὶ ἐξῆραν πρῶτοι διὰ φωνῆς Κυρίου ἐν χειρὶ Μωυσῆ.",
+        "VUL": "Moveruntque castra primi juxta imperium Domini in manu Moysi.",
+        "SYN": "И поднялись они в первый раз, по повелению Господню, _данному_ чрез Моисея.",
+        "NEO": "Ils se mirent en marche pour la première fois, suivant le commandement de \\+w Yahweh|strong=\"H3068\"\\+w** par l’organe de Moïse.",
+        "NAB": "The first time that they broke camp at the bidding of the LORD through Moses,",
+        "VAT_ES": "Cuando se inició la marcha, según la orden que dio el Señor por medio de Moisés,",
+        "CEI": "Così si misero in cammino la prima volta, secondo l'ordine del Signore, dato per mezzo di Mosè."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּסַּ֞ע דֶּ֣גֶל מַחֲנֵ֧ה בְנֵֽי יְהוּדָ֛ה בָּ/רִאשֹׁנָ֖ה לְ/צִבְאֹתָ֑/ם וְ/עַל צְבָא֔/וֹ נַחְשׁ֖וֹן בֶּן עַמִּינָדָֽב׃",
+        "LXX": "καὶ ἐξῆραν τάγμα παρεμβολῆς υἱῶν Ἰούδα πρῶτοι σὺν δυνάμει αὐτῶν, καὶ ἐπὶ τῆς δυνάμεως αὐτῶν Ναασσὼν υἱὸς Ἀμειναδάβ·",
+        "VUL": "Filii Juda per turmas suas : quorum princeps erat Nahasson filius Aminadab.",
+        "SYN": "Поднято было во-первых знамя стана сынов Иудиных по ополчениям их; над ополчением их Наассон, сын Аминадава;",
+        "NEO": "La bannière du camp des fils de Juda partit la première, selon leurs troupes, et la troupe de Juda était commandée par Nahasson, fils d’Aminadab ;",
+        "NAB": "the camp of the Judahites, under its own standard and arranged in companies, was the first to set out. Nahshon, son of Amminadab, was over their host,",
+        "VAT_ES": "el primero en partir fue el estandarte de la división de Judá, distribuida por regimientos, Al frente de sus tropas iba Najsón, hijo de Aminadab;",
+        "CEI": "Per prima si mosse l'insegna dell'accampamento dei figli di Giuda, diviso secondo le loro schiere. Nacason, figlio di Amminadab, comandava la schiera di Giuda."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/עַ֨ל צְבָ֔א מַטֵּ֖ה בְּנֵ֣י יִשָׂשכָ֑ר נְתַנְאֵ֖ל בֶּן צוּעָֽר׃",
+        "LXX": "καὶ ἐπὶ τῆς δυνάμεως φυλῆς υἱῶν Ἰσσαχὰρ Ναθαναὴλ υἱὸς Σωγάρ.",
+        "VUL": "In tribu filiorum Issachar fuit princeps Nathanaël filius Suar.",
+        "SYN": "и над ополчением колена сынов Иссахаровых Нафанаил, сын Цуара;",
+        "NEO": "la troupe de la tribu des fils d’Issachar était commandée par Nathanaël, fils de Suar ;",
+        "NAB": "and Nethanel, son of Zuar, over the host of the tribe of Issachar,",
+        "VAT_ES": "al frente de las tropas de la tribu de Isacar iba Natanael, hijo de Suar;",
+        "CEI": "Netaneel, figlio di Suar, comandava la schiera della tribù dei figli di Issacar;"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/עַ֨ל צְבָ֔א מַטֵּ֖ה בְּנֵ֣י זְבוּלֻ֑ן אֱלִיאָ֖ב בֶּן חֵלֽוֹן׃",
+        "LXX": "καὶ ἐπὶ τῆς δυνάμεως φυλῆς υἱῶν Ζαβουλὼν Ἐλιὰβ υἱὸς Χαιλών·",
+        "VUL": "In tribu Zabulon erat princeps Eliab filius Helon.",
+        "SYN": "и над ополчением колена сынов Завулоновых Елиав, сын Хелона.",
+        "NEO": "et la troupe de la tribu des fils de Zabulon était commandée par Eliab, fils de Hélon.",
+        "NAB": "and Eliab, son of Helon, over the host of the tribe of Zebulun.",
+        "VAT_ES": "y al frente de las tropas de la tribu de Zabulón iba Eliab, hijo de Jelón.",
+        "CEI": "Eliab, figlio di Chelon, comandava la schiera della tribù dei figli di Zàbulon."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/הוּרַ֖ד הַ/מִּשְׁכָּ֑ן וְ/נָסְע֤וּ בְנֵֽי גֵרְשׁוֹן֙ וּ/בְנֵ֣י מְרָרִ֔י נֹשְׂאֵ֖י הַ/מִּשְׁכָּֽן׃",
+        "LXX": "καὶ καθελοῦσιν τὴν σκηνὴν καὶ ἐξαροῦσιν οἱ υἱοὶ Γεδσὼν καὶ οἱ υἱοὶ Μεραρεί, αἴροντες τὴν σκηνήν.",
+        "VUL": "Depositumque est tabernaculum, quod portantes egressi sunt filii Gerson et Merari.",
+        "SYN": "И снята была скиния, и пошли сыны Гирсоновы и сыны Мерарины, носящие скинию.",
+        "NEO": "La Demeure fut démontée, et les fils de Gerson et les fils de Mérari partirent, portant la Demeure.",
+        "NAB": "Then, after the Dwelling was dismantled, the clans of Gershon and Merari set out, carrying the Dwelling.",
+        "VAT_ES": "Una vez que se desarmó la Morada, avanzaron los gersonitas y los meraritas, que eran los encargados de transportarla.",
+        "CEI": "La Dimora fu smontata e i figli di Gherson e i figli di Merari si misero in cammino portando la Dimora."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/נָסַ֗ע דֶּ֛גֶל מַחֲנֵ֥ה רְאוּבֵ֖ן לְ/צִבְאֹתָ֑/ם וְ/עַל צְבָא֔/וֹ אֱלִיצ֖וּר בֶּן שְׁדֵיאֽוּר׃",
+        "LXX": "Καὶ ἐξῆραν τάγμα παρεμβολῆς Ῥουβὴν σὺν δυνάμει αὐτῶν, καὶ ἐπὶ τῆς δυνάμεως αὐτῶν Ἐλισοὺρ υἱὸς Σεδιούρ·",
+        "VUL": "Profectique sunt et filii Ruben, per turmas et ordinem suum : quorum princeps erat Helisur filius Sedeur.",
+        "SYN": "И поднято было знамя стана Рувимова по ополчениям их; и над ополчением его Елицур, сын Шедеура;",
+        "NEO": "La bannière du camp de Ruben partit, selon leurs troupes, et la troupe de Ruben était commandée par Elisur, fils de Sédéur ;",
+        "NAB": "The camp of the Reubenites, under its own standard and arranged in companies, was the next to set out, with Elizur, son of Shedeur, over their host,",
+        "VAT_ES": "Luego avanzó el estandarte de la división de Rubén, distribuida por regimientos. Al frente de sus tropas iba Elisur, hijo de Sedeur;",
+        "CEI": "Poi si mosse l'insegna dell'accampamento di Ruben, diviso secondo le sue schiere. Elisur, figlio di Sedeur, comandava la schiera di Ruben."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/עַ֨ל צְבָ֔א מַטֵּ֖ה בְּנֵ֣י שִׁמְע֑וֹן שְׁלֻֽמִיאֵ֖ל בֶּן צוּרִֽי שַׁדָּֽי׃",
+        "LXX": "καὶ ἐπὶ τῆς δυνάμεως φυλῆς υἱῶν Συμεὼν Σαλαμιὴλ υἱὸς Σουρισαδαί·",
+        "VUL": "In tribu autem filiorum Simeon, princeps fuit Salamiel filius Surisaddai.",
+        "SYN": "и над ополчением колена сынов Симеоновых Шелумиил, сын Цуришаддая;",
+        "NEO": "la troupe de la tribu des fils de Siméon était commandée par Salamiel, fils de Surisaddaï ;",
+        "NAB": "and Shelumiel, son of Zurishaddai, over the host of the tribe of Simeon,",
+        "VAT_ES": "al frente de las tropas de la tribu de Simeón iba Selumiel, hijo de Surisadai;",
+        "CEI": "Selumiel, figlio di Surisaddai, comandava la schiera della tribù dei figli di Simeone."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/עַל צְבָ֖א מַטֵּ֣ה בְנֵי גָ֑ד אֶלְיָסָ֖ף בֶּן דְּעוּאֵֽל׃",
+        "LXX": "καὶ ἐπὶ τῆς δυνάμεως φυλῆς υἱῶν Γὰδ Ἐλεισὰφ ὁ τοῦ Ῥαγουήλ.",
+        "VUL": "Porro in tribu Gad erat princeps Eliasaph filius Duel.",
+        "SYN": "и над ополчением колена сынов Гадовых Елиасаф, сын Регуила.",
+        "NEO": "et la troupe de la tribu des fils de Gad était commandée par Eliasaph, fils de Duel.",
+        "NAB": "and Eliasaph, son of Reuel, over the host of the tribe of Gad.",
+        "VAT_ES": "y al frente de las tropas de la tribu de Gad iba Eliasaf, hijo de Deuel.",
+        "CEI": "Eliasaf, figlio di Deuel, comandava la schiera della tribù dei figli di Gad."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/נָסְעוּ֙ הַ/קְּהָתִ֔ים נֹשְׂאֵ֖י הַ/מִּקְדָּ֑שׁ וְ/הֵקִ֥ימוּ אֶת הַ/מִּשְׁכָּ֖ן עַד בֹּאָֽ/ם׃",
+        "LXX": "καὶ ἐξαροῦσιν οἱ υἱοὶ Καὰθ αἴροντες τὰ ἅγια, καὶ στήσουσιν τὴν σκηνὴν ἕως παραγένωνται.",
+        "VUL": "Profectique sunt et Caathitæ portantes sanctuarium. Tamdiu tabernaculum portabatur, donec venirent ad erectionis locum.",
+        "SYN": "Потом пошли сыны Каафовы, носящие святилище; скиния же была поставляема до прихода их.",
+        "NEO": "Les Caathites partirent portant les objets sacrés, et les autres dressaient la Demeure, en attendant leur arrivée.",
+        "NAB": "The clan of Kohath then set out, carrying the sacred objects for the Dwelling, which was to be erected before their arrival.",
+        "VAT_ES": "Los quehatitas, que llevaban los objetos sagrados, avanzaron después, a fin de que la Morada ya estuviera erigida antes de su llegada.",
+        "CEI": "Poi si mossero i Keatiti, portando gli oggetti sacri; gli altri dovevano erigere la Dimora, prima che questi arrivassero."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/נָסַ֗ע דֶּ֛גֶל מַחֲנֵ֥ה בְנֵֽי אֶפְרַ֖יִם לְ/צִבְאֹתָ֑/ם וְ/עַל צְבָא֔/וֹ אֱלִישָׁמָ֖ע בֶּן עַמִּיהֽוּד׃",
+        "LXX": "Καὶ ἐξαροῦσιν τάγμα παρεμβολῆς Ἐφράιμ σὺν δυνάμει αὐτῶν· ἐπὶ τῆς δυνάμεως αὐτῶν Ἐλισαμὰ υἱὸς Ἐμιούδ·",
+        "VUL": "Moverunt castra et filii Ephraim per turmas suas, in quorum exercitu princeps erat Elisama filius Ammiud.",
+        "SYN": "И поднято было знамя стана сынов Ефремовых по ополчениям их; и над ополчением их Елишама, сын Аммиуда;",
+        "NEO": "La bannière du camp des fils d’Ephraïm partit, selon leurs troupes et la troupe d’Ephraïm était commandée par Elisama, fils d’Ammiud ;",
+        "NAB": "The camp of the Ephraimites next set out, under its own standard and arranged in companies, with Elishama, son of Ammihud, over their host,",
+        "VAT_ES": "A continuación avanzó el estandarte de la división de Efraím, distribuida por regimientos. Al frente de sus tropas iba Elisamá, hijo de Amihud;",
+        "CEI": "Poi si mosse l'insegna dell'accampamento dei figli di Efraim, diviso secondo le sue schiere. Elisama, figlio di Ammiud, comandava la schiera di Efraim."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/עַ֨ל צְבָ֔א מַטֵּ֖ה בְּנֵ֣י מְנַשֶּׁ֑ה גַּמְלִיאֵ֖ל בֶּן פְּדָה צֽוּר׃",
+        "LXX": "καὶ ἐπὶ τῆς δυνάμεως φυλῆς υἱῶν Μανασσὴ Γαμαλιὴλ ὁ τοῦ Φαδασσούρ·",
+        "VUL": "In tribu autem filiorum Manasse princeps fuit Gamaliel filius Phadassur.",
+        "SYN": "и над ополчением колена сынов Манассииных Гамалиил, сын Педацура;",
+        "NEO": "la troupe de la tribu des fils de Manassé était commandée par Gamaliel, fils de Phadassur,",
+        "NAB": "and Gamaliel, son of Pedahzur, over the host of the tribe of Manasseh,",
+        "VAT_ES": "al frente de las tropas de la tribu de Manasés, iba Gamaliel, hijo de Padasur;",
+        "CEI": "Gamliel, figlio di Pedasur, comandava la schiera della tribù dei figli di Manàsse."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/עַ֨ל צְבָ֔א מַטֵּ֖ה בְּנֵ֣י בִנְיָמִ֑ן אֲבִידָ֖ן בֶּן גִּדְעוֹנִֽי׃",
+        "LXX": "καὶ ἐπὶ τῆς δυνάμεως φυλῆς υἱῶν Βενιαμεὶν Ἀβειδὰν ὁ τοῦ Γαδεωνεί.",
+        "VUL": "Et in tribu Benjamin erat dux Abidan filius Gedeonis.",
+        "SYN": "и над ополчением колена сынов Вениаминовых Авидан, сын Гидеония.",
+        "NEO": "et la troupe de la tribu de Benjamin était commandée par Abidan, fils de Gédéon.",
+        "NAB": "and Abidan, son of Gideoni, over the host of the tribe of Benjamin.",
+        "VAT_ES": "y al frente de las tropas de la tribu de Benjamín, iba Abidán, hijo de Gedeón.",
+        "CEI": "Abidau, figlio di Ghideoni, comandava la schiera della tribù dei figli di Beniamino."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/נָסַ֗ע דֶּ֚גֶל מַחֲנֵ֣ה בְנֵי דָ֔ן מְאַסֵּ֥ף לְ/כָל הַֽ/מַּחֲנֹ֖ת לְ/צִבְאֹתָ֑/ם וְ/עַל צְבָא֔/וֹ אֲחִיעֶ֖זֶר בֶּן עַמִּישַׁדָּֽי׃",
+        "LXX": "Καὶ ἐξαροῦσιν τάγμα παρεμβολῆς υἱῶν Δὰν ἔσχατοι πασῶν τῶν παρεμβολῶν σὺν δυνάμει αὐτῶν, καὶ ἐπὶ τῆς δυνάμεως αὐτῶν Ἀχιέζερ ὁ τοῦ Ἀμεισαδαί·",
+        "VUL": "Novissimi castrorum omnium profecti sunt filii Dan per turmas suas, in quorum exercitu princeps fuit Ahiezer filius Ammisaddai.",
+        "SYN": "Последним из всех станов поднято было знамя стана сынов Дановых с ополчениями их; и над ополчением их Ахиезер, сын Аммишаддая;",
+        "NEO": "La bannière du camp des fils de Dan partit, selon leurs troupes : elle formait l’arrière-garde de tous les camps. La troupe de Dan était commandée par Ahiéser, fils d’Ammisaddaï ;",
+        "NAB": "Finally, as rear guard for all the camps, the camp of the Danites set out, under its own standard and arranged in companies, with Ahiezer, son of Ammishaddai, over their host,",
+        "VAT_ES": "Finalmente, a la retaguardia de todos los campamentos, avanzó el estandarte de la tribu de Dan, distribuida por regimientos. Al frente de sus tropas iba Ajiézer, hijo de Amisaddai;",
+        "CEI": "Poi si mosse l'insegna dell'accampamento dei figli di Dan, diviso secondo le sue schiere, formando la retroguardia di tutti gli accampamenti. Achiezer, figlio di Ammisaddai, comandava la schiera di Dan."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/עַל צְבָ֔א מַטֵּ֖ה בְּנֵ֣י אָשֵׁ֑ר פַּגְעִיאֵ֖ל בֶּן עָכְרָֽן׃",
+        "LXX": "καὶ ἐπὶ τῆς δυνάμεως φυλῆς υἱῶν Ἀσὴρ Φαγαιὴλ υἱὸς Ἐχράν·",
+        "VUL": "In tribu autem filiorum Aser erat princeps Phegiel filius Ochran.",
+        "SYN": "и над ополчением колена сынов Асировых Пагиил, сын Охрана;",
+        "NEO": "la troupe de la tribu des fils d’Aser était commandée par Phégiel, fils d’Ochran,",
+        "NAB": "and Pagiel, son of Ochran, over the host of the tribe of Asher,",
+        "VAT_ES": "al frente de la tribu de Aser, iba Peguiel, hijo de Ocrán;",
+        "CEI": "Paghiel, figlio di Ocran, comandava la schiera della tribù dei figli di Aser,"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/עַ֨ל צְבָ֔א מַטֵּ֖ה בְּנֵ֣י נַפְתָּלִ֑י אֲחִירַ֖ע בֶּן עֵינָֽן׃",
+        "LXX": "καὶ ἐπὶ τῆς δυνάμεως φυλῆς υἱῶν Νεφθαλεὶ Ἀχειρὲ υἱὸς Αἰνάν.",
+        "VUL": "Et in tribu filiorum Nephthali princeps fuit Ahira filius Enan.",
+        "SYN": "и над ополчением колена сынов Неффалимовых Ахира, сын Енана.",
+        "NEO": "et la troupe des fils de Nephthali était commandée par Ahira, fils d’Enan.",
+        "NAB": "and Ahira, son of Enan, over the host of the tribe of Naphtali.",
+        "VAT_ES": "y al frente de los descendientes de Neftalí, iba Ajirá, hijo de Enán.",
+        "CEI": "e Achira, figlio di Enan, comandava la schiera della tribù dei figli di Nèftali."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "אֵ֛לֶּה מַסְעֵ֥י בְנֵֽי יִשְׂרָאֵ֖ל לְ/צִבְאֹתָ֑/ם וַ/יִּסָּֽעוּ׃",
+        "LXX": "αὗται αἱ στρατιαὶ υἱῶν Ἰσραήλ, καὶ ἐξῆραν σὺν δυνάμει αὐτῶν.",
+        "VUL": "Hæc sunt castra, et profectiones filiorum Israël per turmas suas quando egrediebantur.",
+        "SYN": "Вот _порядок_ шествия сынов Израилевых по ополчениям их. И отправились они.",
+        "NEO": "Tel était l’ordre de marche des enfants d’Israël selon leurs troupes ; et ils partirent.",
+        "NAB": "This was the order of departure for the Israelites, company by company. As they were setting out,",
+        "VAT_ES": "Este era el orden en que avanzaban los israelitas, distribuidos por regimientos cuando emprendían la marcha.",
+        "CEI": "Questo era l'ordine con cui gli Israeliti si misero in cammino, secondo le loro schiere. Così levarono l'accampamento."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר מֹשֶׁ֗ה לְ֠/חֹבָב בֶּן רְעוּאֵ֣ל הַ/מִּדְיָנִי֮ חֹתֵ֣ן מֹשֶׁה֒ נֹסְעִ֣ים אֲנַ֗חְנוּ אֶל הַ/מָּקוֹם֙ אֲשֶׁ֣ר אָמַ֣ר יְהוָ֔ה אֹת֖/וֹ אֶתֵּ֣ן לָ/כֶ֑ם לְכָ֤/ה אִתָּ֨/נוּ֙ וְ/הֵטַ֣בְנוּ לָ֔/ךְ כִּֽי יְהוָ֥ה דִּבֶּר ט֖וֹב עַל יִשְׂרָאֵֽל׃",
+        "LXX": "Καὶ εἶπεν Μωυσῆς τῷ Ὀβὰβ υἱῷ Ῥαγουὴλ τῷ Μαδιανείτῃ τῷ γαμβρῷ Μωυσῆ Ἐξαίρομεν ἡμεῖς εἰς τὸν τόπον ὃν εἶπεν Κύριος Τοῦτον δώσω ὑμῖν· δεῦρο μεθ’ ἡμῶν, καὶ εὖ σε ποιήσομεν, ὅτι Κύριος ἐλάλησεν καλὰ περὶ Ἰσραήλ.",
+        "VUL": "Dixitque Moyses Hobab filio Raguel Madianitæ, cognato suo : Proficiscimur ad locum quem Dominus daturus est nobis : veni nobiscum, ut benefaciamus tibi, quia Dominus bona promisit Israëli.",
+        "SYN": "И сказал Моисей Ховаву, сыну Рагуилову, Мадианитянину, родственнику Моисееву: мы отправляемся в то место, о котором Господь сказал: вам отдам его; иди с нами, мы сделаем тебе добро, ибо Господь доброе изрек об Израиле.",
+        "NEO": "Moïse dit à Hobab, fils de Raguel, le Madianite, beau-père de Moïse : « Nous partons pour le lieu dont \\+w Yahweh|strong=\"H3068\"\\+w** a dit : Je vous le donnerai. Viens avec nous, et nous te ferons du bien, car \\+w Yahweh|strong=\"H3068\"\\+w** a promis de faire du bien à Israël. »",
+        "NAB": "Moses said to his brother-in-law Hobab, son of Reuel the Midianite, \"We are setting out for the place which the LORD has promised to give us. Come with us, and we will be generous toward you, for the LORD has promised prosperity to Israel.\"",
+        "VAT_ES": "Moisés dijo a Jobab, que era hijo de su suegro Reuel, el madianita: «Nosotros vamos a emprender la marcha hacia el lugar que el Señor prometió darnos. Ven con nosotros, y seremos generosos contigo, porque el Señor prometió ser generoso con Israel».",
+        "CEI": "Mosè disse a Obab, figlio di Reuel, Madianita, suocero di Mosè: \"Noi stiamo per partire, verso il luogo del quale il Signore ha detto: Io ve lo darò in possesso. Vieni con noi e ti faremo del bene, perché il Signore ha promesso di fare il bene a Israele\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר אֵלָ֖י/ו לֹ֣א אֵלֵ֑ךְ כִּ֧י אִם אֶל אַרְצִ֛/י וְ/אֶל מוֹלַדְתִּ֖/י אֵלֵֽךְ׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτόν Οὐ πορεύσομαι ἀλλὰ εἰς τὴν γῆν μου καὶ εἰς τὴν γενεάν μου.",
+        "VUL": "Cui ille respondit : Non vadam tecum, sed revertar in terram meam, in qua natus sum.",
+        "SYN": "Но он сказал ему: не пойду; я пойду в свою землю и на свою родину.",
+        "NEO": "Hobab lui répondit : « Je n’irai point, mais je m’en irai dans mon pays et ma famille. »",
+        "NAB": "But he answered, \"No, I will not come. I am going instead to my own country and to my own kindred.\"",
+        "VAT_ES": "El replicó: «No iré con ustedes, sino que regresaré a mi país natal».",
+        "CEI": "Gli rispose: \"Io non verrò ma tornerò al mio paese e dai miei parenti\". Mosè disse:"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֕אמֶר אַל נָ֖א תַּעֲזֹ֣ב אֹתָ֑/נוּ כִּ֣י עַל כֵּ֣ן יָדַ֗עְתָּ חֲנֹתֵ֨/נוּ֙ בַּ/מִּדְבָּ֔ר וְ/הָיִ֥יתָ לָּ֖/נוּ לְ/עֵינָֽיִם׃",
+        "LXX": "καὶ εἶπεν Μὴ ἐγκαταλίπῃς ἡμᾶς, οὗ εἵνεκεν ἦσθα μεθ’ ἡμῶν ἐν τῇ ἐρήμῳ, καὶ ἔσῃ ἐν ἡμῖν πρεσβύτης·",
+        "VUL": "Et ille : Noli, inquit, nos relinquere : tu enim nosti in quibus locis per desertum castra ponere debeamus, et eris ductor noster.",
+        "SYN": "_Моисей_ же сказал: не оставляй нас, потому что ты знаешь, как располагаемся мы станом в пустыне, и будешь для нас глазом;",
+        "NEO": "Et Moïse dit : « Ne nous quitte pas, je te prie ; puisque tu connais les lieux où nous aurons à camper dans le désert, tu nous serviras d’œil.",
+        "NAB": "Moses said, \"Please, do not leave us; you know where we can camp in the desert, and you will serve as eyes for us.",
+        "VAT_ES": "«Por favor, no nos abandones, le insistió Moisés; tú sabes muy bien en qué lugar del desierto podemos acampar, y por eso nos servirás de guía.",
+        "CEI": "\"Non ci lasciare poiché tu conosci i luoghi dove ci accamperemo nel deserto e sarai per noi come gli occhi."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֖ה כִּי תֵלֵ֣ךְ עִמָּ֑/נוּ וְ/הָיָ֣ה הַ/טּ֣וֹב הַ/ה֗וּא אֲשֶׁ֨ר יֵיטִ֧יב יְהוָ֛ה עִמָּ֖/נוּ וְ/הֵטַ֥בְנוּ לָֽ/ךְ׃",
+        "LXX": "καὶ ἔσται ἐὰν πορευθῇς μεθ’ ἡμῶν, καὶ ἔσται τὰ ἀγαθὰ ἐκεῖνα ὅσα ἐὰν ἀγαθοποιήσῃ Κύριος ἡμᾶς, καὶ εὖ σε ποιήσομεν.",
+        "VUL": "Cumque nobiscum veneris, quidquid optimum fuerit ex opibus, quas nobis traditurus est Dominus, dabimus tibi.",
+        "SYN": "если пойдешь с нами, то добро, которое Господь сделает нам, мы сделаем тебе.",
+        "NEO": "Si tu viens avec nous, nous te ferons partager le bien que \\+w Yahweh|strong=\"H3068\"\\+w** nous fera. »",
+        "NAB": "If you come with us, we will share with you the prosperity the LORD will bestow on us.\"",
+        "VAT_ES": "Si vienes con nosotros, te haremos participar de los bienes que el Señor nos conceda».",
+        "CEI": "Se vieni con noi, qualunque bene il Signore farà a noi, noi lo faremo a te\"."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יִּסְעוּ֙ מֵ/הַ֣ר יְהוָ֔ה דֶּ֖רֶךְ שְׁלֹ֣שֶׁת יָמִ֑ים וַ/אֲר֨וֹן בְּרִית יְהוָ֜ה נֹסֵ֣עַ לִ/פְנֵי/הֶ֗ם דֶּ֚רֶךְ שְׁלֹ֣שֶׁת יָמִ֔ים לָ/ת֥וּר לָ/הֶ֖ם מְנוּחָֽה׃",
+        "LXX": "Καὶ ἐξῆραν ἐκ τοῦ ὄρους Κυρίου ὁδὸν τριῶν ἡμερῶν· καὶ ἡ κιβωτὸς τῆς διαθήκης Κυρίου προεπορεύετο προτέρα αὐτῶν ὁδὸν τριῶν ἡμερῶν, κατασκέψασθαι αὐτοῖς ἀνάπαυσιν.",
+        "VUL": "Profecti sunt ergo de monte Domini viam trium dierum, arcaque fderis Domini præcedebat eos, per dies tres providens castrorum locum.",
+        "SYN": "И отправились они от горы Господней на три дня пути, и ковчег завета Господня шел пред ними три дня пути, чтоб усмотреть им место, где остановиться.",
+        "NEO": "Etant partis de la montagne de \\+w Yahweh|strong=\"H3068\"\\+w**, ils firent trois journées de marche, et pendant ces trois journées de marche, l’arche de l’alliance de \\+w Yahweh|strong=\"H3068\"\\+w** s’avança devant eux pour leur chercher un lieu de repos.",
+        "NAB": "They moved on from the mountain of the LORD, a three days' journey, and the ark of the covenant of the LORD which was to seek out their resting place went the three days' journey with them.",
+        "VAT_ES": "Ellos partieron de la montaña del Señor y recorrieron un camino de tres días. Durante todo ese tiempo, el Arca de la Alianza del Señor avanzó al frente de ellos, para buscarles un lugar donde hacer un alto.",
+        "CEI": "Così partirono dal monte del Signore e fecero tre giornate di cammino; l'arca dell'alleanza del Signore li precedeva durante le tre giornate di cammino, per cercare loro un luogo di sosta."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/עֲנַ֧ן יְהוָ֛ה עֲלֵי/הֶ֖ם יוֹמָ֑ם בְּ/נָסְעָ֖/ם מִן הַֽ/מַּחֲנֶֽה׃",
+        "LXX": "καὶ ἡ νεφέλη ἐγένετο σκιάζουσα ἐπ’ αὐτοῖς ἡμέρας καὶ ἐν τῷ ἐξαίρειν αὐτοὺς ἐκ τῆς παρεμβολῆς.",
+        "VUL": "Nubes quoque Domini super eos erat per diem cum incederent.",
+        "SYN": "И облако Господне осеняло их днем, когда они отправлялись из стана.",
+        "NEO": "La nuée de \\+w Yahweh|strong=\"H3068\"\\+w** était au-dessus d’eux pendant le jour, lorsqu’ils partaient du camp.",
+        "NAB": "And when they set out from camp, the cloud of the LORD was over them by day.",
+        "VAT_ES": "Desde que dejaron el campamento, la nube del Señor estaba sobre ellos durante el día.",
+        "CEI": "La nube del Signore era sopra di loro durante il giorno da quando erano partiti."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֛י בִּ/נְסֹ֥עַ הָ/אָרֹ֖ן וַ/יֹּ֣אמֶר מֹשֶׁ֑ה קוּמָ֣/ה יְהוָ֗ה וְ/יָפֻ֨צוּ֙ אֹֽיְבֶ֔י/ךָ וְ/יָנֻ֥סוּ מְשַׂנְאֶ֖י/ךָ מִ/פָּנֶֽי/ךָ׃",
+        "LXX": "καὶ ἐγένετο ἐν τῷ ἐξαίρειν τὴν κιβωτὸν καὶ εἶπεν Μωυσῆς Ἐξεγέρθητι Κύριε, διασκορπισθήτωσαν οἱ ἐχθροί σου, φυγέτωσαν πάντες οἱ μισοῦντές σε.",
+        "VUL": "Cumque elevaretur arca, dicebat Moyses : Surge, Domine, et dissipentur inimici tui, et fugiant qui oderunt te, a facie tua.",
+        "SYN": "Когда поднимался ковчег в путь, Моисей говорил: восстань, Господи, и рассыплются враги Твои, и побегут от лица Твоего ненавидящие Тебя!",
+        "NEO": "Quand l’arche partait, Moïse disait : « Lève-toi, \\+w Yahweh|strong=\"H3068\"\\+w**, et que tes ennemis soient dispersés ! Que ceux qui te haïssent fuient devant ta face ! »",
+        "NAB": "Whenever the ark set out, Moses would say, \"Arise, O LORD, that your enemies may be scattered, and those who hate you may flee before you.\"",
+        "VAT_ES": "Cuando el Arca se ponía en movimiento, Moisés exclamaba: &iexcl;Levántate, Señor! &iexcl;Que tus enemigos se dispersen y tus adversarios huyan delante de ti!",
+        "CEI": "Quando l'arca partiva, Mosè diceva: \"Sorgi, Signore, e siano dispersi i tuoi nemici e fuggano da te coloro che ti odiano\"."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וּ/בְ/נֻחֹ֖/ה יֹאמַ֑ר שׁוּבָ֣/ה יְהוָ֔ה רִֽבְב֖וֹת אַלְפֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐν τῇ καταπαύσει εἶπεν Ἐπίστρεφε, Κύριε, χιλιάδας μυριάδας ἐν τῷ Ἰσραήλ.",
+        "VUL": "Cum autem deponeretur, aiebat : Revertere, Domine, ad multitudinem exercitus Israël.",
+        "SYN": "А когда останавливался ковчег, он говорил: возвратись, Господи, к тысячам и тьмам Израилевым!",
+        "NEO": "Et quand elle s’arrêtait, il disait : « Reviens, \\+w Yahweh|strong=\"H3068\"\\+w**, vers les myriades des milliers d’Israël ! »",
+        "NAB": "And when it came to rest, he would say, \"Return, O LORD, you who ride upon the clouds, to the troops of Israel.\"",
+        "VAT_ES": "Y cuando se detenía, exclamaba: &iexcl;Descansa, Señor, entre los diez mil millares de Israel!",
+        "CEI": "Quando si posava, diceva: \"Torna, Signore, alle miriadi di migliaia di Israele\"."
+      }
+    }
+  }
+}

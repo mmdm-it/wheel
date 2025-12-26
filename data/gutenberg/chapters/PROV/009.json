@@ -1,0 +1,339 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PROV_009",
+  "book_key": "PROV",
+  "sequence": 9,
+  "chapter_in": {
+    "MT": 9,
+    "VUL": 9,
+    "LXX": 9
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "חָ֭כְמוֹת בָּנְתָ֣ה בֵיתָ֑/הּ חָצְבָ֖ה עַמּוּדֶ֣י/הָ שִׁבְעָֽה׃",
+        "LXX": "Ἡ σοφία οἰκοδόμησεν ἑαυτῇ οἶκον, καὶ ὑπήρεισεν στύλους ἑπτά·",
+        "VUL": "[Sapientia ædificavit sibi domum :/ excidit columnas septem./",
+        "SYN": "Премудрость построила себе дом, вытесала семь столбов его,",
+        "NEO": "La sagesse a bâti sa maison, elle a taillé ses sept colonnes.",
+        "NAB": "Wisdom has built her house, she has set up her seven columns;",
+        "VAT_ES": "La Sabiduría edificó su casa, talló sus siete columnas,",
+        "CEI": "La Sapienza si è costruita la casa, ha intagliato le sue sette colonne."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "טָבְחָ֣ה טִ֭בְחָ/הּ מָסְכָ֣ה יֵינָ֑/הּ אַ֝֗ף עָֽרְכָ֥ה שֻׁלְחָנָֽ/הּ׃",
+        "LXX": "ἔσφαξεν τὰ ἑαυτῆς θύματα, ἐκέρασεν εἰς κρατῆρα τὸν ἑαυτῆς οἶνον, καὶ ἡτοιμάσατο τὴν ἑαυτῆς τράπεζαν·",
+        "VUL": "Immolavit victimas suas, miscuit vinum,/ et proposuit mensam suam./",
+        "SYN": "заколола жертву, растворила вино свое и приготовила у себя трапезу;",
+        "NEO": "Elle a immolé ses victimes, mêlé son vin, et dressé sa table.",
+        "NAB": "She has dressed her meat, mixed her wine, yes, she has spread her table.",
+        "VAT_ES": "inmoló sus víctimas, mezcló su vino, y también preparó su mesa.",
+        "CEI": "Ha ucciso gli animali, ha preparato il vino e ha imbandito la tavola."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "שָֽׁלְחָ֣ה נַעֲרֹתֶ֣י/הָ תִקְרָ֑א עַל גַּ֝פֵּ֗י מְרֹ֣מֵי קָֽרֶת׃",
+        "LXX": "ἀπέστειλεν τοὺς ἑαυτῆς δούλους, συγκαλοῦσα μετὰ ὑψηλοῦ κηρύγματος ἐπὶ κρατῆρα, λέγουσα",
+        "VUL": "Misit ancillas suas ut vocarent/ ad arcem et ad mnia civitatis./",
+        "SYN": "послала слуг своих провозгласить с возвышенностей городских:",
+        "NEO": "Elle a envoyé ses servantes, elle appelle, au sommet des hauteurs de la ville :",
+        "NAB": "She has sent out her maidens; she calls from the heights out over the city:",
+        "VAT_ES": "Ella envió a sus servidoras a proclamar sobre los sitios más altos de la ciudad:",
+        "CEI": "Ha mandato le sue ancelle a proclamare sui punti più alti della città:"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "מִי פֶ֭תִי יָסֻ֣ר הֵ֑נָּה חֲסַר לֵ֝֗ב אָ֣מְרָה לּֽ/וֹ׃",
+        "LXX": "Ὅς ἐστιν ἄφρων, ἐκκλινάτω πρὸς μέ· καὶ τοῖς ἐνδεέσι φρενῶν εἶπεν",
+        "VUL": "Si quis est parvulus, veniat ad me./ Et insipientibus locuta est :/",
+        "SYN": "\"кто неразумен, обратись сюда!\" И скудоумному она сказала:",
+        "NEO": "« Que celui qui est simple entre ici ! » Elle dit à celui qui est dépourvu de sens :",
+        "NAB": "\"Let whoever is simple turn in here; to him who lacks understanding, I say,",
+        "VAT_ES": "«El que sea incauto, que venga aquí». Y al falto de entendimiento, le dice:",
+        "CEI": "\"Chi è inesperto accorra qui!\". A chi è privo di senno essa dice:"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לְ֭כוּ לַחֲמ֣וּ בְֽ/לַחֲמִ֑/י וּ֝/שְׁת֗וּ בְּ/יַ֣יִן מָסָֽכְתִּי׃",
+        "LXX": "Ἔλθατε, φάγετε τῶν ἐμῶν ἄρτων, καὶ πίετε οἶνον ὃν ἐκέρασα ὑμῖν·",
+        "VUL": "Venite, comedite panem meum,/ et bibite vinum quod miscui vobis./",
+        "SYN": "\"идите, ешьте хлеб мой и пейте вино, мною растворенное;",
+        "NEO": "« Venez, mangez de mon pain, et buvez du vin que j’ai mêlé ;",
+        "NAB": "Come, eat of my food, and drink of the wine I have mixed!",
+        "VAT_ES": "«Vengan, coman de mi pan, y beban del vino que yo mezclé.",
+        "CEI": "\"Venite, mangiate il mio pane, bevete il vino che io ho preparato."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "עִזְב֣וּ פְתָאיִ֣ם וִֽ/חְי֑וּ וְ֝/אִשְׁר֗וּ בְּ/דֶ֣רֶךְ בִּינָֽה׃",
+        "LXX": "ἀπολείπετε ἀφροσύνην, ἵνα εἰς τὸν αἰῶνα βασιλεύσητε, καὶ ζητήσατε φρόνησιν, καὶ κατορθώσατε ἐν γνώσει σύνεσιν.",
+        "VUL": "Relinquite infantiam, et vivite,/ et ambulate per vias prudentiæ.]",
+        "SYN": "оставьте неразумие, и живите, и ходите путем разума\".",
+        "NEO": "quittez l’ignorance, et vous vivrez, et marchez dans la voie de l’intelligence. »",
+        "NAB": "Forsake foolishness that you may live; advance in the way of understanding.",
+        "VAT_ES": "Abandonen la ingenuidad, y vivirán, y sigan derecho por el camino de la inteligencia».",
+        "CEI": "Abbandonate la stoltezza e vivrete, andate diritti per la via dell'intelligenza\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יֹ֤סֵ֨ר לֵ֗ץ לֹקֵ֣חַֽ ל֣/וֹ קָל֑וֹן וּ/מוֹכִ֖יחַ לְ/רָשָׁ֣ע מוּמֽ/וֹ׃",
+        "LXX": "Ὁ παιδεύων κακοὺς λήμψεται ἑαυτῷ ἀτιμίαν· ἐλέγχων δὲ τὸν ἀσεβῆ μωμήσεται ἑαυτόν.",
+        "VUL": "[Qui erudit derisorem, ipse injuriam sibi facit,/ et qui arguit impium, sibi maculam generat./",
+        "SYN": "Поучающий кощунника наживет себе бесславие, и обличающий нечестивого - пятно себе.",
+        "NEO": "Celui qui reprend le moqueur s’attire la raillerie, et celui qui réprimande le méchant s’attire l’outrage.",
+        "NAB": "He who corrects an arrogant man earns insult; and he who reproves a wicked man incurs opprobrium.",
+        "VAT_ES": "El que corrige a un insolente se atrae la ignominia, y el que reprende a un malvado, el deshonor,",
+        "CEI": "Chi corregge il beffardo se ne attira il disprezzo, chi rimprovera l'empio se ne attira l'insulto."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אַל תּ֣וֹכַח לֵ֭ץ פֶּן יִשְׂנָאֶ֑/ךָּ הוֹכַ֥ח לְ֝/חָכָ֗ם וְ/יֶאֱהָבֶֽ/ךָּ׃",
+        "LXX": "μὴ ἔλεγχε κακούς, ἵνα μὴ μισῶσίν σε· ἔλεγχε σοφόν, καὶ ἀγαπήσει σε.",
+        "VUL": "Noli arguere derisorem, ne oderit te :/ argue sapientem, et diliget te./",
+        "SYN": "Не обличай кощунника, чтобы он не возненавидел тебя; обличай мудрого, и он возлюбит тебя;",
+        "NEO": "Ne reprends pas le moqueur, de peur qu’il ne te haïsse ; reprends le sage, et il t’aimera.",
+        "NAB": "Reprove not an arrogant man, lest he hate you; reprove a wise man, and he will love you.",
+        "VAT_ES": "No reprendas a un insolente, no sea que te odie; reprende a un sabio, y te amará,",
+        "CEI": "Non rimproverare il beffardo per non farti odiare; rimprovera il saggio ed egli ti amerà."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "תֵּ֣ן לְ֭/חָכָם וְ/יֶחְכַּם ע֑וֹד הוֹדַ֥ע לְ֝/צַדִּ֗יק וְ/י֣וֹסֶף לֶֽקַח׃",
+        "LXX": "δίδου σοφῷ ἀφορμήν, καὶ σοφώτερος ἔσται· γνώριζε δικαίῳ, καὶ προσθήσει τοῦ δέχεσθαι.",
+        "VUL": "Da sapienti occasionem, et addetur ei sapientia ;/ doce justum, et festinabit accipere./",
+        "SYN": "дай _наставление_ мудрому, и он будет еще мудрее; научи правдивого, и он приумножит знание.",
+        "NEO": "Donne au sage, et il deviendra plus sage ; instruis le juste, et il augmentera son savoir.",
+        "NAB": "Instruct a wise man, and he becomes still wiser; teach a just man, and he advances in learning.",
+        "VAT_ES": "Da al sabio y se hará más sabio aún, instruye al justo y ganará en saber.",
+        "CEI": "Dà consigli al saggio e diventerà ancora più saggio; istruisci il giusto ed egli aumenterà la dottrina."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "תְּחִלַּ֣ת חָ֭כְמָה יִרְאַ֣ת יְהוָ֑ה וְ/דַ֖עַת קְדֹשִׁ֣ים בִּינָֽה׃",
+        "LXX": "ἀρχὴ σοφίας φόβος Κυρίου, καὶ βουλὴ ἁγίων σύνεσις· τὸ γὰρ γνῶναι νόμον διανοίας ἐστὶν ἀγαθῆς.",
+        "VUL": "Principium sapientiæ timor Domini,/ et scientia sanctorum prudentia./",
+        "SYN": "Начало мудрости - страх Господень, и познание Святаго - разум;",
+        "NEO": "Le commencement de la sagesse, c’est la crainte de \\+w Yahweh|strong=\"H3068\"\\+w** ; et l’intelligence, c’est la science du Saint.",
+        "NAB": "The beginning of wisdom is the fear of the LORD, and knowledge of the Holy One is understanding.",
+        "VAT_ES": "El comienzo de la sabiduría es el temor del Señor, y la ciencia del Santo es la inteligencia.",
+        "CEI": "Fondamento della sapienza è il timore di Dio, la scienza del Santo è intelligenza."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּי בִ֭/י יִרְבּ֣וּ יָמֶ֑י/ךָ וְ/יוֹסִ֥יפוּ לְּ֝/ךָ֗ שְׁנ֣וֹת חַיִּֽים׃",
+        "LXX": "τούτῳ γὰρ τῷ τρόπῳ πολὺν ζήσεις χρόνον, καὶ προστεθήσεταί σοι ἔτη ζωῆς σου.",
+        "VUL": "Per me enim multiplicabuntur dies tui,/ et addentur tibi anni vitæ./",
+        "SYN": "потому что чрез меня умножатся дни твои, и прибавится тебе лет жизни.",
+        "NEO": "Car par moi tes jours se multiplieront, par moi s’augmenteront les années de ta vie.",
+        "NAB": "For by me your days will be multiplied and the years of your life increased.\"",
+        "VAT_ES": "Porque tus días se multiplicarán gracias a mí y se añadirán años a tu vida.",
+        "CEI": "Per mezzo mio si moltiplicano i tuoi giorni, ti saranno aggiunti anni di vita."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אִם חָ֭כַמְתָּ חָכַ֣מְתָּ לָּ֑/ךְ וְ֝/לַ֗צְתָּ לְֽ/בַדְּ/ךָ֥ תִשָּֽׂא׃",
+        "LXX": "υἱέ, ἐὰν σοφὸς γένῃ σεαυτῷ, σοφὸς ἔσῃ καὶ τοῖς πλησίον· ἐὰν δὲ κακὸς ἀποβῇς, μόνος ἂν ἀντλήσεις κακά. [1] ὃς ἐρείδεται ἐπὶ ψεύδεσιν, οὗτος ποιμαίνει ἀνέμους, ὁ δ’ αὐτὸς διώξεται ὄρνεα πετόμενα· [2] ἀπέλιπεν γὰρ ὁδοὺς τοῦ ἑαυτοῦ ἀμπελῶνος, τοὺς δὲ ἄξονας τοῦ ἰδίου γεωργίου πεπλάνηται· [3] διαπορεύεται δὲ δι’ ἀνύδρου ἐρήμου καὶ γῆν διατεταγμένην ἐν διψώδεσιν, συνάγει δὲ χερσὶν ἀκαρπίαν.",
+        "VUL": "Si sapiens fueris, tibimetipsi eris ;/ si autem illusor, solus portabis malum.]",
+        "SYN": "[Сын мой!] если ты мудр, то мудр для себя [и для ближних твоих]; и если буен, то один потерпишь. [Кто утверждается на лжи, тот пасет ветры, тот гоняется за птицами летающими: ибо он оставил пути своего виноградника и блуждает по тропинкам поля своего; проходит чрез безводную пустыню и землю, обреченную на жажду; собирает руками бесплодие.]",
+        "NEO": "Si tu es sage, tu es sage à ton profit ; si tu es moqueur, tu en porteras seul la peine.",
+        "NAB": "If you are wise, it is to your own advantage; and if you are arrogant, you alone shall bear it.",
+        "VAT_ES": "Si eres sabio, lo eres para ti, si eres insolente, tú solo lo sufrirás.",
+        "CEI": "Se sei sapiente, lo sei a tuo vantaggio, se sei beffardo, tu solo ne porterai la pena."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "אֵ֣שֶׁת כְּ֭סִילוּת הֹֽמִיָּ֑ה פְּ֝תַיּ֗וּת וּ/בַל יָ֥דְעָה מָּֽה׃",
+        "LXX": "Γυνὴ ἄφρων καὶ θρασεῖα ἐνδεὴς ψωμοῦ γίνεται, ἣ οὐκ ἐπίσταται αἰσχύνην·",
+        "VUL": "[Mulier stulta et clamosa,/ plenaque illecebris, et nihil omnino sciens,/",
+        "SYN": "Женщина безрассудная, шумливая, глупая и ничего не знающая",
+        "NEO": "La folie est une femme bruyante, stupide et ne sachant rien.",
+        "NAB": "The woman Folly is fickle, she is inane, and knows nothing.",
+        "VAT_ES": "La señora Necedad es turbulenta, es estúpida y no sabe nada.",
+        "CEI": "Donna irrequieta è follia, una sciocca che non sa nulla."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְֽ֭/יָשְׁבָה לְ/פֶ֣תַח בֵּיתָ֑/הּ עַל כִּ֝סֵּ֗א מְרֹ֣מֵי קָֽרֶת׃",
+        "LXX": "ἐκάθισεν ἐπὶ θύραις τοῦ ἑαυτῆς οἴκου ἐπὶ δίφρου, ἐμφανῶς ἐν πλατείαις",
+        "VUL": "sedit in foribus domus suæ,/ super sellam in excelso urbis loco,/",
+        "SYN": "садится у дверей дома своего на стуле, на возвышенных местах города,",
+        "NEO": "Elle s’est assise, à la porte de sa maison, sur un siège, dans les hauteurs de la ville,",
+        "NAB": "She sits at the door of her house upon a seat on the city heights,",
+        "VAT_ES": "Ella se sienta a la puerta de su casa, en una silla, sobre las alturas de la ciudad,",
+        "CEI": "Sta seduta alla porta di casa, su un trono, in un luogo alto della città,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "לִ/קְרֹ֥א לְ/עֹֽבְרֵי דָ֑רֶךְ הַֽ֝/מְיַשְּׁרִ֗ים אֹֽרְחוֹתָֽ/ם׃",
+        "LXX": "προσκαλουμένη τοὺς παριόντας καὶ κατευθύνοντας ἐν ταῖς ὁδοῖς αὐτῶν",
+        "VUL": "ut vocaret transeuntes per viam,/ et pergentes itinere suo :/",
+        "SYN": "чтобы звать проходящих дорогою, идущих прямо своими путями:",
+        "NEO": "pour inviter les passants qui vont droit leur chemin :",
+        "NAB": "Calling to passers-by as they go on their straight way:",
+        "VAT_ES": "para gritar a los transeúntes que van derecho por el camino:",
+        "CEI": "per invitare i passanti che vanno diritti per la loro strada:"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "מִי פֶ֭תִי יָסֻ֣ר הֵ֑נָּה וַ/חֲסַר לֵ֝֗ב וְ/אָ֣מְרָה לּֽ/וֹ׃",
+        "LXX": "Ὅς ἐστιν ὑμῶν ἀφρονέστατος, ἐκκλινάτω πρὸς μέ· ἐνδεέσι δὲ φρονήσεως παρακελεύομαι λέγουσα",
+        "VUL": "Qui est parvulus declinet ad me./ Et vecordi locuta est :/",
+        "SYN": "\"кто глуп, обратись сюда!\" и скудоумному сказала она:",
+        "NEO": "« Que celui qui est simple entre ici ! » Elle dit à celui qui est dépourvu de sens :",
+        "NAB": "\"Let whoever is simple turn in here, or who lacks understanding; for to him I say,",
+        "VAT_ES": "«El que sea incauto, que venga aquí». Y al falto de entendimiento, le dice:",
+        "CEI": "\"Chi è inesperto venga qua!\". E a chi è privo di senno essa dice:"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "מַֽיִם גְּנוּבִ֥ים יִמְתָּ֑קוּ וְ/לֶ֖חֶם סְתָרִ֣ים יִנְעָֽם׃",
+        "LXX": "Ἄρτων κρυφίων ἡδέως ἅψασθε, καὶ ὕδατος κλοπῆς γλυκεροῦ.",
+        "VUL": "Aquæ furtivæ dulciores sunt,/ et panis absconditus suavior./",
+        "SYN": "\"воды краденые сладки, и утаенный хлеб приятен\".",
+        "NEO": "« Les eaux dérobées sont plus douces, et le pain du mystère est plus agréable ! »",
+        "NAB": "Stolen water is sweet, and bread gotten secretly is pleasing!\"",
+        "VAT_ES": "«&iexcl;Las aguas robadas son dulces y el pan quitado a escondidas, delicioso!».",
+        "CEI": "\"Le acque furtive sono dolci, il pane preso di nascosto è gustoso\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְֽ/לֹא יָ֭דַע כִּֽי רְפָאִ֣ים שָׁ֑ם בְּ/עִמְקֵ֖י שְׁא֣וֹל קְרֻאֶֽי/הָ׃",
+        "LXX": "ὁ δὲ οὐκ οἶδεν ὅτι γηγενεῖς παρ’ αὐτῇ ὄλλυνται, καὶ ἐπὶ πέτευρον ᾅδου συναντᾷ. [1] ἀλλὰ ἀποπήδησον, μὴ χρονίσῃς ἐν τῷ τόπῳ, μηδὲ ἐπιστήσῃς τὸ σὸν ὄμμα πρὸς αὐτήν· οὕτως γὰρ διαβήσῃ ὕδωρ ἀλλότριον· [2] ἀπὸ δὲ ὕδατος ἀλλοτρίου ἀπόσχου, καὶ ἀπὸ πηγῆς ἀλλοτρίας μὴ πίῃς, [3] ἵνα πολὺν ζήσῃς χρόνον, προστεθῇ δέ σοι ἔτη ζωῆς.",
+        "VUL": "Et ignoravit quod ibi sint gigantes,/ et in profundis inferni convivæ ejus.]",
+        "SYN": "И он не знает, что мертвецы там, и что в глубине преисподней зазванные ею. [Но ты отскочи, не медли на месте, не останавливай взгляда твоего на ней; ибо таким образом ты пройдешь воду чужую. От воды чужой удаляйся, и из источника чужого не пей, чтобы пожить многое время, и чтобы прибавились тебе лета жизни.]",
+        "NEO": "Et il ne sait pas qu’il y a là des ombres, et que ses invités sont déjà dans les profondeurs du schéol.",
+        "NAB": "Little he knows that the shades are there, that in the depths of the nether world are her guests!",
+        "VAT_ES": "Pero él no sabe que allí están las Sombras, y sus invitados, en las profundidades del Abismo.",
+        "CEI": "Egli non si accorge che là ci sono le ombre e che i suoi invitati se ne vanno nel profondo degli inferi."
+      }
+    }
+  }
+}

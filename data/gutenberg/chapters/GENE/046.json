@@ -1,0 +1,627 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_046",
+  "book_key": "GENE",
+  "sequence": 46,
+  "chapter_in": {
+    "MT": 46,
+    "VUL": 46,
+    "LXX": 46
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יִּסַּ֤ע יִשְׂרָאֵל֙ וְ/כָל אֲשֶׁר ל֔/וֹ וַ/יָּבֹ֖א בְּאֵ֣רָ/ה שָּׁ֑בַע וַ/יִּזְבַּ֣ח זְבָחִ֔ים לֵ/אלֹהֵ֖י אָבִ֥י/ו יִצְחָֽק׃",
+        "VUL": "Profectusque Israël cum omnibus quæ habebat, venit ad Puteum juramenti : et mactatis ibi victimis Deo patris sui Isaac,",
+        "LXX": "Ἀπάρας δὲ Ἰσραήλ, αὐτὸς καὶ πάντα τὰ αὐτοῦ, ἦλθον ἐπὶ τὸ φρέαρ τοῦ ὅρκου, καὶ ἔθυσεν ἐκεῖ θυσίαν τῷ θεῷ τοῦ πατρὸς αὐτοῦ Ἰσαάκ.",
+        "NAB": "Israel set out with all that was his. When he arrived at Beer-sheba, he offered sacrifices to the God of his father Isaac.",
+        "SYN": "И отправился Израиль со всем, что у него было, и пришел в Вирсавию, и принес жертвы Богу отца своего Исаака.",
+        "NEO": "Israël partit avec tout ce qui lui appartenait. Arrivé à Bersabée, il offrit des sacrifices au Dieu de son père Isaac.",
+        "VAT_ES": "Israel partió llevándose todos sus bienes. Cuando llegó a Berseba, ofreció sacrificios al Dios de su padre Isaac.",
+        "CEI": "Israele dunque levò le tende con quanto possedeva e arrivò a Bersabea, dove offrì sacrifici al Dio di suo padre Isacco."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֱלֹהִ֤ים לְ/יִשְׂרָאֵל֙ בְּ/מַרְאֹ֣ת הַ/לַּ֔יְלָה וַ/יֹּ֖אמֶר יַעֲקֹ֣ב יַעֲקֹ֑ב וַ/יֹּ֖אמֶר הִנֵּֽ/נִי׃",
+        "VUL": "audivit eum per visionem noctis vocantem se, et dicentem sibi : Jacob, Jacob. Cui respondit : Ecce adsum.",
+        "LXX": "εἶπεν δὲ ὁ θεὸς Ἰσραὴλ ἐν ὁράματι τῆς νυκτὸς εἴπας Ἰακὼβ Ἰακώβ. ὁ δὲ εἶπεν Τί ἐστιν;",
+        "NAB": "There God, speaking to Israel in a vision by night, called, \"Jacob! Jacob!\" \"Here I am,\" he answered.",
+        "SYN": "И сказал Бог Израилю в видении ночном: Иаков! Иаков! Он сказал: вот я.",
+        "NEO": "Et Dieu parla à Israël dans une vision de nuit, et il dit : « Jacob ! Jacob ! » Israël répondit : « Me voici. »",
+        "VAT_ES": "Dios dijo a Israel en una visión nocturna: «&iexcl;Jacob, Jacob!». El respondió: «Aquí estoy».",
+        "CEI": "Dio disse a Israele in una visione notturna: \"Giacobbe, Giacobbe!\". Rispose: \"Eccomi!\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֕אמֶר אָנֹכִ֥י הָ/אֵ֖ל אֱלֹהֵ֣י אָבִ֑י/ךָ אַל תִּירָא֙ מֵ/רְדָ֣ה מִצְרַ֔יְמָ/ה כִּֽי לְ/ג֥וֹי גָּד֖וֹל אֲשִֽׂימְ/ךָ֥ שָֽׁם׃",
+        "VUL": "Ait illi Deus : Ego sum fortissimus Deus patris tui : noli timere, descende in Ægyptum, quia in gentem magnam faciam te ibi.",
+        "LXX": "λέγων Ἐγώ εἰμι ὁ θεὸς τῶν πατέρων σου· μὴ φοβοῦ καταβῆναι εἰς Αἴγυπτον, εἰς γὰρ ἔθνος μέγα ποιήσω σε ἐκεῖ·",
+        "NAB": "Then he said: \"I am God, the God of your father. Do not be afraid to go down to Egypt, for there I will make you a great nation.",
+        "SYN": "_Бог_ сказал: Я Бог, Бог отца твоего; не бойся идти в Египет, ибо там произведу от тебя народ великий;",
+        "NEO": "Et Dieu dit : « Je suis le Dieu fort, le Dieu de ton père. Ne crains pas de descendre en Égypte, car là je te ferai devenir une grande nation.",
+        "VAT_ES": "Dios continuó: «Yo soy Dios, el Dios de tu padre. No tengas miedo de bajar a Egipto, porque allí haré de ti una gran nación.",
+        "CEI": "Riprese: \"Io sono Dio, il Dio di tuo padre. Non temere di scendere in Egitto, perché laggiù io farò di te un grande popolo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אָנֹכִ֗י אֵרֵ֤ד עִמְּ/ךָ֙ מִצְרַ֔יְמָ/ה וְ/אָנֹכִ֖י אַֽעַלְ/ךָ֣ גַם עָלֹ֑ה וְ/יוֹסֵ֕ף יָשִׁ֥ית יָד֖/וֹ עַל עֵינֶֽי/ךָ׃",
+        "VUL": "Ego descendam tecum illuc, et ego inde adducam te revertentem : Joseph quoque ponet manus suas super oculos tuos.",
+        "LXX": "καὶ ἐγὼ καταβήσομαι μετὰ σοῦ εἰς Αἴγυπτον, καὶ ἐγὼ ἀναβιβάσω σε εἰς τέλος· καὶ Ἰωσὴφ ἐπιβαλεῖ τὰς χεῖρας ἐπὶ τοὺς ὀφθαλμούς σου.",
+        "NAB": "Not only will I go down to Egypt with you; I will also bring you back here, after Joseph has closed your eyes.\"",
+        "SYN": "Я пойду с тобою в Египет, Я и выведу тебя обратно. Иосиф своею рукою закроет глаза _твои._",
+        "NEO": "Moi-même je descendrai avec toi en Égypte, et moi-même aussi je t’en ferai sûrement remonter ; et Joseph posera sa main sur tes yeux. »",
+        "VAT_ES": "Yo bajaré contigo a Egipto, y después yo mismo te haré volver; y las manos de José cerrarán tus ojos».",
+        "CEI": "Io scenderò con te in Egitto e io certo ti farò tornare. Giuseppe ti chiuderà gli occhi\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥קָם יַעֲקֹ֖ב מִ/בְּאֵ֣ר שָׁ֑בַע וַ/יִּשְׂא֨וּ בְנֵֽי יִשְׂרָאֵ֜ל אֶת יַעֲקֹ֣ב אֲבִי/הֶ֗ם וְ/אֶת טַפָּ/ם֙ וְ/אֶת נְשֵׁי/הֶ֔ם בָּ/עֲגָל֕וֹת אֲשֶׁר שָׁלַ֥ח פַּרְעֹ֖ה לָ/שֵׂ֥את אֹתֽ/וֹ׃",
+        "VUL": "Surrexit autem Jacob a Puteo juramenti : tuleruntque eum filii cum parvulis et uxoribus suis in plaustris quæ miserat Pharao ad portandum senem,",
+        "LXX": "ἀνέστη δὲ Ἰακὼβ ἀπὸ τοῦ φρέατος τοῦ ὅρκου, καὶ ἀνέλαβον οἱ υἱοὶ Ἰσραὴλ τὸν πατέρα αὐτῶν καὶ τὴν ἀποσκευὴν καὶ τὰς γυναῖκας αὐτῶν ἐπὶ τὰς ἁμάξας ἃς ἀπέστειλεν Ἰωσὴφ ἆραι αὐτόν·",
+        "NAB": "So Jacob departed from Beer-sheba, and the sons of Israel put their father and their wives and children on the wagons that Pharaoh had sent for his transport.",
+        "SYN": "Иаков отправился из Вирсавии; и повезли сыны Израилевы Иакова отца своего, и детей своих, и жен своих на колесницах, которые послал фараон, чтобы привезти его.",
+        "NEO": "Jacob, se levant, quitta Bersabée ; et les fils d’Israël mirent Jacob, leur père, ainsi que leurs femmes et leurs enfants, sur les chariots que Pharaon avait envoyés pour le transporter.",
+        "VAT_ES": "Cuando Jacob salió de Berseba, los hijos de Israel hicieron subir a su padre, junto con sus hijos y sus mujeres, en los carros que el Faraón había enviado para trasladarlos.",
+        "CEI": "Giacobbe si alzò da Bersabea e i figli di Israele fecero salire il loro padre Giacobbe, i loro bambini e le loro donne sui carri che il faraone aveva mandati per trasportarlo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּקְח֣וּ אֶת מִקְנֵי/הֶ֗ם וְ/אֶת רְכוּשָׁ/ם֙ אֲשֶׁ֤ר רָֽכְשׁוּ֙ בְּ/אֶ֣רֶץ כְּנַ֔עַן וַ/יָּבֹ֖אוּ מִצְרָ֑יְמָ/ה יַעֲקֹ֖ב וְ/כָל זַרְע֥/וֹ אִתּֽ/וֹ׃",
+        "VUL": "et omnia quæ possederat in terra Chanaan : venitque in Ægyptum cum omni semine suo,",
+        "LXX": "καὶ ἀναλαβόντες τὰ ὑπάρχοντα αὐτῶν καὶ πᾶσαν τὴν κτῆσιν ⸆ ἣν ἐκτήσαντο ἐκ γῆς Χανάαν, καὶ εἰσῆλθεν Ἰακὼβ εἰς Αἴγυπτον, καὶ πᾶν τὸ σπέρμα αὐτοῦ μετ’ αὐτοῦ,",
+        "NAB": "They took with them their livestock and the possessions they had acquired in the land of Canaan. Thus Jacob and all his descendants migrated to Egypt.",
+        "SYN": "И взяли они скот свой и имущество свое, которое приобрели в земле Ханаанской, и пришли в Египет, -- Иаков и весь род его с ним.",
+        "NEO": "Ils prirent aussi leurs troupeaux et leurs biens qu’ils avaient acquis dans le pays de Canaan. Et Jacob se rendit en Égypte avec toute sa famille.",
+        "VAT_ES": "Ellos se llevaron también su ganado y las posesiones que habían adquirido en Canaán. Así llegaron a Egipto, Jacob y toda su familia",
+        "CEI": "Essi presero il loro bestiame e tutti i beni che avevano acquistati nel paese di Cànaan e vennero in Egitto; Giacobbe cioè e con lui tutti i suoi discendenti;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "בָּנָ֞י/ו וּ/בְנֵ֤י בָנָי/ו֙ אִתּ֔/וֹ בְּנֹתָ֛י/ו וּ/בְנ֥וֹת בָּנָ֖י/ו וְ/כָל זַרְע֑/וֹ הֵבִ֥יא אִתּ֖/וֹ מִצְרָֽיְמָ/ה׃",
+        "VUL": "filii ejus, et nepotes, filiæ, et cuncta simul progenies.",
+        "LXX": "υἱοὶ καὶ οἱ υἱοὶ τῶν υἱῶν αὐτοῦ μετ’ αὐτοῦ, θυγατέρες καὶ θυγατέρες τῶν υἱῶν αὐτοῦ μετ’ αὐτοῦ· καὶ πᾶν τὸ σπέρμα αὐτοῦ ἤγαγεν εἰς Αἴγυπτον.",
+        "NAB": "His sons and his grandsons, his daughters and his granddaughters - all his descendants - he took with him to Egypt.",
+        "SYN": "Сынов своих и внуков своих с собою, дочерей своих и внучек своих и весь род свой привел он с собою в Египет.",
+        "NEO": "Il emmena avec lui en Égypte ses fils et les fils de ses fils, ses filles et les filles de ses fils, et toute sa famille.",
+        "VAT_ES": "–sus hijos y sus nietos, sus hijas y sus nietas– porque él había llevado consigo a todos sus descendientes.",
+        "CEI": "i suoi figli e i nipoti, le sue figlie e le nipoti, tutti i suoi discendenti egli condusse con sé in Egitto."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨לֶּה שְׁמ֧וֹת בְּנֵֽי יִשְׂרָאֵ֛ל הַ/בָּאִ֥ים מִצְרַ֖יְמָ/ה יַעֲקֹ֣ב וּ/בָנָ֑י/ו בְּכֹ֥ר יַעֲקֹ֖ב רְאוּבֵֽן׃",
+        "VUL": "Hæc sunt autem nomina filiorum Israël, qui ingressi sunt in Ægyptum, ipse cum liberis suis. Primogenitus Ruben.",
+        "LXX": "Ταῦτα δὲ τὰ ὀνόματα τῶν υἱῶν Ἰσραὴλ τῶν εἰσελθόντων εἰς Αἴγυπτον. Ἰακὼβ καὶ οἱ υἱοὶ αὐτοῦ· πρωτότοκος Ἰακὼβ Ῥουβήν·",
+        "NAB": "These are the names of the Israelites, Jacob and his descendants, who migrated to Egypt. Reuben, Jacob's first-born,",
+        "SYN": "Вот имена сынов Израилевых, пришедших в Египет: Иаков и сыновья его. Первенец Иакова Рувим.",
+        "NEO": "Voici les noms des fils d’Israël qui vinrent en Égypte : Jacob et ses fils. — Premier-né de Jacob, Ruben. —",
+        "VAT_ES": "Los nombres de los hijos de Israel –o sea, Jacob y sus hijos– que emigraron a Egipto son los siguientes: Rubén el primogénito de Jacob,",
+        "CEI": "Questi sono i nomi dei figli d'Israele che entrarono in Egitto: Giacobbe e i suoi figli, il primogenito di Giacobbe, Ruben."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֖י רְאוּבֵ֑ן חֲנ֥וֹךְ וּ/פַלּ֖וּא וְ/חֶצְר֥וֹן וְ/כַרְמִֽי׃",
+        "VUL": "Filii Ruben : Henoch et Phallu et Hesron et Charmi.",
+        "LXX": "υἱοὶ δὲ Ῥουβήν· Ἑνὼχ καὶ Φαλλούδ, Ἁσρὼν καὶ Χαρμί.",
+        "NAB": "and the sons of Reuben: Hanoch, Pallu, Hezron, and Carmi.",
+        "SYN": "Сыны Рувима: Ханох и Фаллу, Хецрон и Харми.",
+        "NEO": "Fils de Ruben : Hénoch, Phallu, Hesron et Charmi. —",
+        "VAT_ES": "y los hijos de Rubén: Henoc, Palú, Jesrón y Carmí.",
+        "CEI": "I figli di Ruben: Enoch, Pallu, Chezron e Carmi."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י שִׁמְע֗וֹן יְמוּאֵ֧ל וְ/יָמִ֛ין וְ/אֹ֖הַד וְ/יָכִ֣ין וְ/צֹ֑חַר וְ/שָׁא֖וּל בֶּן הַֽ/כְּנַעֲנִֽית׃",
+        "VUL": "Filii Simeon : Jamuel et Jamin et Ahod, et Jachin et Sohar, et Saul filius Chanaanitidis.",
+        "LXX": "υἱοὶ δὲ Συμεών· Ἰεμουὴλ καὶ Ἰαμεὶν καὶ Ἄωδ καὶ Ἰαχεὶμ καὶ Σάαρ καὶ Σαμουὴλ υἱὸς τῆς Χανανίτιδος.",
+        "NAB": "The sons of Simeon: Nemuel, Jamin, Ohad, Jachin, Zohar, and Shaul, son of a Canaanite woman.",
+        "SYN": "Сыны Симеона: Иемуил и Иамин, и Огад, и Иахин, и Цохар, и Саул, сын Хананеянки.",
+        "NEO": "Fils de Siméon : Jamuel, Jamin, Ahod, Jachin et Sohar, et Saul, fils de la Chananéenne. —",
+        "VAT_ES": "Los hijos de Simeón: Iemuel, Iamín, Ohad, Iaquín, Sójar y Saúl, el hijo de la cananea.",
+        "CEI": "I figli di Simeone: Iemuel, Iamin, Oad, Iachin, Socar e Saul, figlio della Cananea."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֖י לֵוִ֑י גֵּרְשׁ֕וֹן קְהָ֖ת וּ/מְרָרִֽי׃",
+        "VUL": "Filii Levi : Gerson et Caath et Merari.",
+        "LXX": "υἱοὶ δὲ Λευί· Γηρσών, Καὰθ καὶ Μεραρεί.",
+        "NAB": "The sons of Levi: Gershon, Kohath, and Merari.",
+        "SYN": "Сыны Левия: Гирсон, Кааф и Мерари.",
+        "NEO": "Fils de Lévi : Gerson, Caat et Mérari. —",
+        "VAT_ES": "Los hijos de Leví: Gersón, Quehat y Merarí.",
+        "CEI": "I figli di Levi: Gherson, Keat e Merari."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י יְהוּדָ֗ה עֵ֧ר וְ/אוֹנָ֛ן וְ/שֵׁלָ֖ה וָ/פֶ֣רֶץ וָ/זָ֑רַח וַ/יָּ֨מָת עֵ֤ר וְ/אוֹנָן֙ בְּ/אֶ֣רֶץ כְּנַ֔עַן וַ/יִּהְי֥וּ בְנֵי פֶ֖רֶץ חֶצְר֥וֹן וְ/חָמֽוּל׃",
+        "VUL": "Filii Juda : Her et Onan et Sela et Phares et Zara ; mortui sunt autem Her et Onan in terra Chanaan. Natique sunt filii Phares : Hesron et Hamul.",
+        "LXX": "υἱοὶ δὲ Ἰούδα· Ἢρ καὶ Αὐνὰν καὶ Σηλὼμ καὶ Φάρες καὶ Ζάρα· ἀπέθανεν δὲ Ἢρ καὶ Αὐνὰν ἐν γῇ Χανάαν· ἐγένοντο δὲ υἱοὶ Φάρες Ἁσρὼμ καὶ Ἰεμουήλ.",
+        "NAB": "The sons of Judah: Er, Onan, Shelah, Perez, and Zerah - but Er and Onan had died in the land of Canaan; and the sons of Perez were Hezron and Hamul.",
+        "SYN": "Сыны Иуды: Ир и Онан, и Шела, и Фарес, и Зара; но Ир и Онан умерли в земле Ханаанской. Сыны Фареса были: Есром и Хамул.",
+        "NEO": "Fils de Juda : Her, Onan, Séla, Pharès et Zara ; mais Her et Onan étaient morts au pays de Canaan. Les fils de Pharès furent Hesron et Hamul. —",
+        "VAT_ES": "Los hijos de Judá: Er, Onán, Selá, Peres y Zéraj. Er y Onán ya habían muerto en Canaán, y los hijos de Peres fueron Jesrón y Jamul.",
+        "CEI": "I figli di Giuda: Er, Onan, Sela, Perez e Zerach; ma Er e Onan morirono nel paese di Cànaan. Furono figli di Perez: Chezron e Amul."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֖י יִשָׂשכָ֑ר תּוֹלָ֥ע וּ/פֻוָּ֖ה וְ/י֥וֹב וְ/שִׁמְרֽוֹן׃",
+        "VUL": "Filii Issachar : Thola et Phua et Job et Semron.",
+        "LXX": "υἱοὶ δὲ Ἰσσαχάρ· Θωλὰ καὶ Φουὰ καὶ Ἰασοὺφ καὶ Ζαμβράμ.",
+        "NAB": "The sons of Issachar: Tola, Puah, Jashub, and Shimron.",
+        "SYN": "Сыны Иссахара: Фола и Фува, Иов и Шимрон.",
+        "NEO": "Fils d’Issachar : Thola, Phua, Job et Semron. —",
+        "VAT_ES": "Los hijos de Isacar: Tolá, Puvá, Iasub y Simrón.",
+        "CEI": "I figli di Issacar: Tola, Puva, Giobbe e Simron."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֖י זְבוּלֻ֑ן סֶ֥רֶד וְ/אֵל֖וֹן וְ/יַחְלְאֵֽל׃",
+        "VUL": "Filii Zabulon : Sared et Elon et Jahelel.",
+        "LXX": "υἱοὶ δὲ Ζαβουλών· Σέρεδ καὶ Ἁσρὼν καὶ Ἁλοήλ.",
+        "NAB": "The sons of Zebulun: Sered, Elon, and Jahleel.",
+        "SYN": "Сыны Завулона: Серед и Елон, и Иахлеил.",
+        "NEO": "Fils de Zabulon : Sared, Elon et Jahélel —",
+        "VAT_ES": "Los hijos de Zabulón: Séred, Elón y Iajlel.",
+        "CEI": "I figli di Zàbulon: Sered, Elon e Iacleel."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אֵ֣לֶּה בְּנֵ֣י לֵאָ֗ה אֲשֶׁ֨ר יָֽלְדָ֤ה לְ/יַעֲקֹב֙ בְּ/פַדַּ֣ן אֲרָ֔ם וְ/אֵ֖ת דִּינָ֣ה בִתּ֑/וֹ כָּל נֶ֧פֶשׁ בָּנָ֛י/ו וּ/בְנוֹתָ֖י/ו שְׁלֹשִׁ֥ים וְ/שָׁלֹֽשׁ׃",
+        "VUL": "Hi filii Liæ quos genuit in Mesopotamia Syriæ cum Dina filia sua : omnes animæ filiorum ejus et filiarum, triginta tres.",
+        "LXX": "οὗτοι υἱοὶ Λείας, οὓς ἔτεκεν τῷ Ἰακὼβ ἐν Μεσοποταμίᾳ τῆς Συρίας, καὶ Δείναν τὴν θυγατέρα αὐτοῦ· πᾶσαι αἱ ψυχαί, υἱοὶ καὶ αἱ θυγατέρες, τριάκοντα τρεῖς.",
+        "NAB": "These were the sons whom Leah bore to Jacob in Paddan-aram, along with his daughter Dinah - thirty-three persons in all, male and female.",
+        "SYN": "Это сыны Лии, которых она родила Иакову в Месопотамии, и Дину, дочь его. Всех душ сынов его и дочерей его -- тридцать три.",
+        "NEO": "Ce sont là les fils que Lia enfanta à Jacob à Paddan-Aram, avec sa fille Dina. Ses fils et ses filles étaient en tout trente-trois personnes.",
+        "VAT_ES": "Estos son los hijos que Lía había dado a Jacob en Padán Aram, además de su hija Dina. Entre hombres y mujeres sumaban un total de treinta y tres personas.",
+        "CEI": "Questi sono i figli che Lia partorì a Giacobbe in Paddan-Aram insieme con la figlia Dina; tutti i suoi figli e le sue figlie erano trentatré persone."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י גָ֔ד צִפְי֥וֹן וְ/חַגִּ֖י שׁוּנִ֣י וְ/אֶצְבֹּ֑ן עֵרִ֥י וַֽ/אֲרוֹדִ֖י וְ/אַרְאֵלִֽי׃",
+        "VUL": "Filii Gad : Sephion et Haggi et Suni et Esebon et Heri et Arodi et Areli.",
+        "LXX": "υἱοὶ δὲ Γάδ· Σαφὼν καὶ Ἁγγεὶς καὶ Σαυνὶς καὶ Θασοβὰν καὶ Ἀηδὶς καὶ Ἀροηδὶς καὶ Ἀροηλείς.",
+        "NAB": "The sons of Gad: Zephon, Haggi, Shuni, Ezbon, Eri, Arod, and Areli.",
+        "SYN": "Сыны Гада: Цифион и Хагги, Шуни и Эцбон, Ери и Ароди и Арели.",
+        "NEO": "Fils de Gad : Séphion, Haggi, Suni, Esebon, Heri, Arodi et Aréli. —",
+        "VAT_ES": "Los hijos de Gad: Sifión, Jaguí, Suní, Esbón, Erí, Arodí y Arelí.",
+        "CEI": "I figli di Gad: Zifion, Agghi, Suni, Esbon, Eri, Arodi e Areli."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י אָשֵׁ֗ר יִמְנָ֧ה וְ/יִשְׁוָ֛ה וְ/יִשְׁוִ֥י וּ/בְרִיעָ֖ה וְ/שֶׂ֣רַח אֲחֹתָ֑/ם וּ/בְנֵ֣י בְרִיעָ֔ה חֶ֖בֶר וּ/מַלְכִּיאֵֽל׃",
+        "VUL": "Filii Aser : Jamne et Jesua et Jessui et Beria, Sara quoque soror eorum. Filii Beria : Heber et Melchiel.",
+        "LXX": "υἱοὶ δὲ Ἀσήρ· Ἰεμνὰ καὶ Ἰεσσαὶ καὶ Ἰεοὺλ καὶ Βαριὰ καὶ Σάαρ ἀδελφὴ αὐτῶν. υἱοὶ δὲ Βαριά· Χόβωρ καὶ Μελχιήλ.",
+        "NAB": "The sons of Asher: Imnah, Ishvah, Ishvi, and Beriah, with their sister Serah; and the sons of Beriah: Heber and Malchiel.",
+        "SYN": "Сыны Асира: Имна и Ишва, и Ишви, и Бриа, и Серах, сестра их. Сыны Брии: Хевер и Малхиил.",
+        "NEO": "Fils d’Aser : Jamné, Jésua, Jessui et Béria, et Sara, leur sœur. Les fils de Béria furent Héber et Melchiel. —",
+        "VAT_ES": "Los hijos de Aser: Imná, Isvá, Isví, Beriá, y también Séraj, hermana de aquellos. Los hijos de Beriá: Jéber y Malquiel.",
+        "CEI": "I figli di Aser: Imma, Isva, Isvi, Beria e la loro sorella Serach. I figli di Beria: Eber e Malchiel."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "אֵ֚לֶּה בְּנֵ֣י זִלְפָּ֔ה אֲשֶׁר נָתַ֥ן לָבָ֖ן לְ/לֵאָ֣ה בִתּ֑/וֹ וַ/תֵּ֤לֶד אֶת אֵ֨לֶּה֙ לְ/יַעֲקֹ֔ב שֵׁ֥שׁ עֶשְׂרֵ֖ה נָֽפֶשׁ׃",
+        "VUL": "Hi filii Zelphæ, quam dedit Laban Liæ filiæ suæ : et hos genuit Jacob sedecim animas.",
+        "LXX": "οὗτοι υἱοὶ Ζέλφας, ἣν ἔδωκεν Λαβὰν Λείᾳ τῇ θυγατρὶ αὐτοῦ, ἣ ἔτεκεν τούτους τῷ Ἰακώβ, δέκα ἓξ ψυχάς.",
+        "NAB": "These were the descendants of Zilpah, whom Laban had given to his daughter Leah; these she bore to Jacob - sixteen persons in all.",
+        "SYN": "Это сыны Зелфы, которую Лаван дал Лии, дочери своей; она родила их Иакову шестнадцать душ.",
+        "NEO": "Ce sont là les fils de Zelpha, que Laban avait donnée à Lia, sa fille ; et elle les enfanta à Jacob : en tout seize personnes.",
+        "VAT_ES": "Estos son los hijos de Zilpá, la esclava que Labán había dado a su hija Lía. De ella le nacieron a Jacob estas dieciséis personas.",
+        "CEI": "Questi sono i figli di Zilpa, che Làbano aveva dato alla figlia Lia; essa li partorì a Giacobbe: sono sedici persone."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "בְּנֵ֤י רָחֵל֙ אֵ֣שֶׁת יַֽעֲקֹ֔ב יוֹסֵ֖ף וּ/בִנְיָמִֽן׃",
+        "VUL": "Filii Rachel uxoris Jacob : Joseph et Benjamin.",
+        "LXX": "υἱοὶ δὲ Ῥαχὴλ γυναικὸς Ἰακώβ· Ἰωσὴφ καὶ Βενιαμείν.",
+        "NAB": "The sons of Jacob's wife Rachel: Joseph and Benjamin.",
+        "SYN": "Сыны Рахили, жены Иакова: Иосиф и Вениамин.",
+        "NEO": "Fils de Rachel, femme de Jacob : Joseph et Benjamin.",
+        "VAT_ES": "Los hijos de Raquel, la esposa de Jacob: José y Benjamín.",
+        "CEI": "I figli di Rachele, moglie di Giacobbe: Giuseppe e Beniamino."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּוָּלֵ֣ד לְ/יוֹסֵף֮ בְּ/אֶ֣רֶץ מִצְרַיִם֒ אֲשֶׁ֤ר יָֽלְדָה לּ/וֹ֙ אָֽסְנַ֔ת בַּת פּ֥וֹטִי פֶ֖רַע כֹּהֵ֣ן אֹ֑ן אֶת מְנַשֶּׁ֖ה וְ/אֶת אֶפְרָֽיִם׃",
+        "VUL": "Natique sunt Joseph filii in terra Ægypti, quos genuit ei Aseneth filia Putiphare sacerdotis Heliopoleos : Manasses et Ephraim.",
+        "LXX": "ἐγένοντο δὲ υἱοὶ Ἰωσὴφ ἐν γῇ Αἰγύπτῳ, οὓς ἔτεκεν αὐτῷ Ἀσεννὲθ θυγάτηρ Πετρεφῆ ἱερέως Ἡλίου πόλεως, τὸν Μαννασσὴ καὶ τὸν Ἐφράιμ. ἐγένοντο δὲ υἱοὶ Μαννασσή, οὓς ἔτεκεν αὐτῷ ἡ παλλακὴ ἡ Σύρα, τὸν Μαχείρ· Μαχεὶρ δὲ ἐγέννησεν τὸν Γαλαάδ. υἱοὶ δὲ Ἐφράιμ ἀδελφοῦ Μαννασσή· Σουτάλααμ καὶ Τάαμ. υἱοὶ δὲ Σουτάλααμ· Ἐδέμ.",
+        "NAB": "In the land of Egypt Joseph became the father of Manasseh and Ephraim, whom Asenath, daughter of Potiphera, priest of Heliopolis, bore to him.",
+        "SYN": "И родились у Иосифа в земле Египетской Манассия и Ефрем, которых родила ему Асенефа, дочь Потифера, жреца Илиопольского.",
+        "NEO": "Il naquit à Joseph, au pays d’Égypte, des fils que lui enfanta Aseneth, fille de Putiphar, prêtre d’On, savoir Manassé et Ephraïm. —",
+        "VAT_ES": "En Egipto, José fue padre de Manasés y Efraím, los hijos que le dio Asnat, la hija de Potifera, sacerdote de la ciudad de On.",
+        "CEI": "A Giuseppe nacquero in Egitto Efraim e Manasse, che gli partorì Asenat, figlia di Potifera, sacerdote di On."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י בִנְיָמִ֗ן בֶּ֤לַע וָ/בֶ֨כֶר֙ וְ/אַשְׁבֵּ֔ל גֵּרָ֥א וְ/נַעֲמָ֖ן אֵחִ֣י וָ/רֹ֑אשׁ מֻפִּ֥ים וְ/חֻפִּ֖ים וָ/אָֽרְדְּ׃",
+        "VUL": "Filii Benjamin : Bela et Bechor et Asbel et Gera et Naaman et Echi et Ros et Mophim et Ophim et Ared.",
+        "LXX": "υἱοὶ δὲ Βενιαμείν· Βάλα καὶ Χόβωρ καὶ Ἀσβήλ. ἐγένοντο δὲ υἱοὶ Βαλὰ Γηρὰ καὶ Νοεμὰν καὶ Ἀγχεὶς καὶ Ῥὼς καὶ Μαμφεὶν καὶ Ὁφιμίν· Γηρὰ δὲ ἐγέννησεν τὸν Ἄραδ.",
+        "NAB": "The sons of Benjamin: Bela, Becher, Ashbel, Gera, Naaman, Ahiram, Shupham, Hupham, and Ard.",
+        "SYN": "Сыны Вениамина: Бела и Бехер и Ашбел; [сыны Белы были:] Гера и Нааман, Эхи и Рош, Муппим и Хуппим и Ард.",
+        "NEO": "Fils de Benjamin : Béla, Bochor, Asbel, Géra, Naaman, Echi, Ros, Mophim, Ophim et Ared. —",
+        "VAT_ES": "Los hijos de Benjamín: Belá, Béquer, Asbel, Guerá, Naamán, Ejí, Ros, Mupím, Jupím y Ard.",
+        "CEI": "I figli di Beniamino: Bela, Becher e Asbel, Ghera, Naaman, Echi, Ros, Muppim, Uppim e Arde."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "אֵ֚לֶּה בְּנֵ֣י רָחֵ֔ל אֲשֶׁ֥ר יֻלַּ֖ד לְ/יַעֲקֹ֑ב כָּל נֶ֖פֶשׁ אַרְבָּעָ֥ה עָשָֽׂר׃",
+        "VUL": "Hi filii Rachel quos genuit Jacob : omnes animæ, quatuordecim.",
+        "LXX": "οὗτοι υἱοὶ Ῥαχήλ οὓς ἐγέννησεν Ἰακώβ· πᾶσαι ψυχαὶ δέκα ὀκτώ.",
+        "NAB": "These were the sons whom Rachel bore to Jacob - fourteen persons in all.",
+        "SYN": "Это сыны Рахили, которые родились у Иакова, всего четырнадцать душ.",
+        "NEO": "Ce sont là les fils de Rachel, qui naquirent à Jacob : en tout quatorze personnes.",
+        "VAT_ES": "Estos son los hijos de Raquel, que le nacieron a Jacob. En total, catorce personas.",
+        "CEI": "Questi sono i figli che Rachele partorì a Giacobbe; in tutto sono quattordici persone."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וּ/בְנֵי דָ֖ן חֻשִֽׁים׃",
+        "VUL": "Filii Dan : Husim.",
+        "LXX": "υἱοὶ δὲ Δάν· Ἁσόμ.",
+        "NAB": "The sons of Dan: Hushim.",
+        "SYN": "Сын Дана: Хушим.",
+        "NEO": "Fils de Dan : Husim. —",
+        "VAT_ES": "El hijo de Dan: Jusím.",
+        "CEI": "I figli di Dan: Usim."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֖י נַפְתָּלִ֑י יַחְצְאֵ֥ל וְ/גוּנִ֖י וְ/יֵ֥צֶר וְ/שִׁלֵּֽם׃",
+        "VUL": "Filii Nephthali : Jasiel et Guni et Jeser et Sallem.",
+        "LXX": "καὶ υἱοὶ Νεφθαλί· Ἁσιὴλ καὶ Γωυνὶ καὶ Ἴσσααρ καὶ Συλλήμ.",
+        "NAB": "The sons of Naphtali: Jahzeel, Guni, Jezer, and Shillem.",
+        "SYN": "Сыны Неффалима: Иахцеил и Гуни, и Иецер, и Шиллем.",
+        "NEO": "Fils de Nephtali : Jasiel, Guni, Jéser et Salem. —",
+        "VAT_ES": "Los hijos de Neftalí: Iajsel, Guní, Iéser y Silém.",
+        "CEI": "I figli di Nèftali: Iacseel, Guni, Ieser e Sillem."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "אֵ֚לֶּה בְּנֵ֣י בִלְהָ֔ה אֲשֶׁר נָתַ֥ן לָבָ֖ן לְ/רָחֵ֣ל בִּתּ֑/וֹ וַ/תֵּ֧לֶד אֶת אֵ֛לֶּה לְ/יַעֲקֹ֖ב כָּל נֶ֥פֶשׁ שִׁבְעָֽה׃",
+        "VUL": "Hi filii Balæ, quam dedit Laban Racheli filiæ suæ : et hos genuit Jacob : omnes animæ, septem.",
+        "LXX": "οὗτοι υἱοὶ Βάλλας, ἣν ἔδωκεν Λαβὰν Ῥαχὴλ τῇ θυγατρὶ αὐτοῦ, ἣ ἔτεκεν τούτους τῷ Ἰακώβ· πᾶσαι ψυχαὶ ἑπτά.",
+        "NAB": "These were the sons of Bilhah, whom Laban had given to his daughter Rachel; these she bore to Jacob - seven persons in all.",
+        "SYN": "Это сыны Валлы, которую дал Лаван дочери своей Рахили; она родила их Иакову всего семь душ.",
+        "NEO": "Ce sont là les fils de Bala, que Laban avait donnée à Rachel, sa fille ; et elle les enfanta à Jacob : en tout sept personnes.",
+        "VAT_ES": "Estos son los descendientes de Bilhá, la esclava que Labán había dado a su hija Raquel. De ella le nacieron a Jacob estas siete personas.",
+        "CEI": "Questi sono i figli di Bila, che Làbano diede alla figlia Rachele, ed essa li partorì a Giacobbe; in tutto sette persone."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "כָּל הַ֠/נֶּפֶשׁ הַ/בָּאָ֨ה לְ/יַעֲקֹ֤ב מִצְרַ֨יְמָ/ה֙ יֹצְאֵ֣י יְרֵכ֔/וֹ מִ/לְּ/בַ֖ד נְשֵׁ֣י בְנֵי יַעֲקֹ֑ב כָּל נֶ֖פֶשׁ שִׁשִּׁ֥ים וָ/שֵֽׁשׁ׃",
+        "VUL": "Cunctæ animæ, quæ ingressæ sunt cum Jacob in Ægyptum, et egressæ sunt de femore illius, absque uxoribus filiorum ejus, sexaginta sex.",
+        "LXX": "πᾶσαι δὲ ψυχαὶ αἱ εἰσελθοῦσαι μετὰ Ἰακὼβ εἰς Αἴγυπτον, οἱ ἐξελθόντες ἐκ τῶν μηρῶν αὐτοῦ, χωρὶς τῶν γυναικῶν υἱῶν Ἰακώβ, πᾶσαι ψυχαὶ ἑξήκοντα ἕξ.",
+        "NAB": "Jacob's people who migrated to Egypt - his direct descendants, not counting the wives of Jacob's sons - numbered sixty-six persons in all.",
+        "SYN": "Всех душ, пришедших с Иаковом в Египет, которые произошли из чресл его, кроме жен сынов Иаковлевых, всего шестьдесят шесть душ.",
+        "NEO": "Toutes les personnes qui vinrent avec Jacob en Égypte, issues de lui, sans compter les femmes des fils de Jacob, étaient au nombre de soixante-six en tout.",
+        "VAT_ES": "Toda la familia de Jacob que emigró a Egipto –sus propios descendientes, sin contar a las mujeres de sus hijos– sumaban un total de sesenta y seis personas,",
+        "CEI": "Tutte le persone che entrarono con Giacobbe in Egitto, uscite dai suoi fianchi, senza le mogli dei figli di Giacobbe, sono sessantasei."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֥י יוֹסֵ֛ף אֲשֶׁר יֻלַּד ל֥/וֹ בְ/מִצְרַ֖יִם נֶ֣פֶשׁ שְׁנָ֑יִם כָּל הַ/נֶּ֧פֶשׁ לְ/בֵֽית יַעֲקֹ֛ב הַ/בָּ֥אָה מִצְרַ֖יְמָ/ה שִׁבְעִֽים׃",
+        "VUL": "Filii autem Joseph, qui nati sunt ei in terra Ægypti, animæ duæ. Omnes animæ domus Jacob, quæ ingressæ sunt in Ægyptum, fuere septuaginta.",
+        "LXX": "υἱοὶ δὲ Ἰωσὴφ οἱ γενόμενοι αὐτῷ ἐν γῇ Αἰγύπτῳ ψυχαὶ ἐννέα. πᾶσαι ψυχαὶ οἴκου Ἰακὼβ αἱ εἰσελθοῦσαι εἰς Αἴγυπτον ἑβδομήκοντα πέντε.",
+        "NAB": "Together with Joseph's sons who were born to him in Egypt - two persons - all the people comprising Jacob's family who had come to Egypt amounted to seventy persons in all.",
+        "SYN": "Сынов Иосифа, которые родились у него в Египте, две души. Всех душ дома Иаковлева, перешедших [с Иаковом] в Египет, семьдесят [пять].",
+        "NEO": "Les fils de Joseph qui lui étaient nés en Égypte étaient deux. — Le total des personnes de la famille de Jacob qui vinrent en Égypte était de soixante-dix.",
+        "VAT_ES": "incluyendo a José y a los dos hijos que este tuvo en Egipto, toda la familia de Jacob, cuando emigró a Egipto, sumaba un total de setenta personas.",
+        "CEI": "I figli che nacquero a Giuseppe in Egitto sono due persone. Tutte le persone della famiglia di Giacobbe, che entrarono in Egitto, sono settanta."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/אֶת יְהוּדָ֞ה שָׁלַ֤ח לְ/פָנָי/ו֙ אֶל יוֹסֵ֔ף לְ/הוֹרֹ֥ת לְ/פָנָ֖י/ו גֹּ֑שְׁנָ/ה וַ/יָּבֹ֖אוּ אַ֥רְצָ/ה גֹּֽשֶׁן׃",
+        "VUL": "Misit autem Judam ante se ad Joseph, ut nuntiaret ei, et occurreret in Gessen.",
+        "LXX": "Τὸν δὲ Ἰούδαν ἀπέστειλεν ἔμπροσθεν αὐτῶν πρὸς Ἰωσὴφ συναντῆσαι αὐτῷ καθ’ Ἡρώων ⸂⸆⸃ πόλιν εἰς γῆν Ῥαμεσσή.",
+        "NAB": "Israel had sent Judah ahead to Joseph, so that he might meet him in Goshen. On his arrival in the region of Goshen,",
+        "SYN": "Иуду послал он пред собою к Иосифу, чтобы он указал _путь_ в Гесем. И пришли в землю Гесем.",
+        "NEO": "Jacob avait envoyé Juda devant lui vers Joseph pour préparer son arrivée en Gessen. Lorsque Jacob et les siens furent entrés en Gessen,",
+        "VAT_ES": "Israel hizo que Judá se le adelantara y fuera a ver a José, para anunciarle su llegada a Gosen. Cuando llegaron a la región de Gosen,",
+        "CEI": "Ora egli aveva mandato Giuda avanti a sé da Giuseppe, perché questi desse istruzioni in Gosen prima del suo arrivo. Poi arrivarono al paese di Gosen."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יֶּאְסֹ֤ר יוֹסֵף֙ מֶרְכַּבְתּ֔/וֹ וַ/יַּ֛עַל לִ/קְרַֽאת יִשְׂרָאֵ֥ל אָבִ֖י/ו גֹּ֑שְׁנָ/ה וַ/יֵּרָ֣א אֵלָ֗י/ו וַ/יִּפֹּל֙ עַל צַוָּארָ֔י/ו וַ/יֵּ֥בְךְּ עַל צַוָּארָ֖י/ו עֽוֹד׃",
+        "VUL": "Quo cum pervenisset, juncto Joseph curro suo, ascendit obviam patri suo ad eumdem locum : vidensque eum, irruit super collum ejus, et inter amplexus flevit.",
+        "LXX": "ζεύξας δὲ Ἰωσὴφ τὰ ἅρματα αὐτοῦ ἀνέβη εἰς συνάντησιν Ἰσραὴλ τῷ πατρὶ αὐτοῦ καθ’ Ἡρώων πόλιν· καὶ ὀφθεὶς αὐτῷ ἐπέπεσεν ἐπὶ τὸν τράχηλον αὐτοῦ, καὶ ἔκλαυσεν κλαυθμῷ πίονι.",
+        "NAB": "Joseph hitched the horses to his chariot and rode to meet his father Israel in Goshen. As soon as he saw him, he flung himself on his neck and wept a long time in his arms.",
+        "SYN": "Иосиф запряг колесницу свою и выехал навстречу Израилю, отцу своему, в Гесем, и, увидев его, пал на шею его, и долго плакал на шее его.",
+        "NEO": "Joseph fit atteler son char et y monta, pour aller en Gessen, à la rencontre d’Israël, son père. Il se montra à lui et, s’étant jeté à son cou, il pleura longtemps sur son cou.",
+        "VAT_ES": "José hizo enganchar su carruaje y subió hasta allí para encontrarse con su padre Israel. Apenas este apareció ante él, José lo estrechó entre sus brazos, y lloró un largo rato, abrazado a su padre.",
+        "CEI": "Allora Giuseppe fece attaccare il suo carro e salì in Gosen incontro a Israele, suo padre. Appena se lo vide davanti, gli si gettò al collo e pianse a lungo stretto al suo collo."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמֶר יִשְׂרָאֵ֛ל אֶל יוֹסֵ֖ף אָמ֣וּתָה הַ/פָּ֑עַם אַחֲרֵי֙ רְאוֹתִ֣/י אֶת פָּנֶ֔י/ךָ כִּ֥י עוֹדְ/ךָ֖ חָֽי׃",
+        "VUL": "Dixitque pater ad Joseph : Jam lætus moriar, quia vidi faciem tuam, et superstitem te relinquo.",
+        "LXX": "καὶ εἶπεν Ἰσραὴλ πρὸς Ἰωσήφ Ἀποθανοῦμαι ἀπὸ τοῦ νῦν, ἐπειδὴ ἑώρακα τὸ πρόσωπόν σου· ἔτι γὰρ σὺ ζῇς.",
+        "NAB": "And Israel said to Joseph, \"At last I can die, now that I have seen for myself that Joseph is still alive.\"",
+        "SYN": "И сказал Израиль Иосифу: умру я теперь, увидев лице твое, ибо ты еще жив.",
+        "NEO": "Israël dit à Joseph : « Je puis mourir maintenant, puisque j’ai vu ton visage et que tu vis encore ! »",
+        "VAT_ES": "Entonces Israel dijo a José: «Ahora sí que puedo morir, porque he vuelto a ver tu rostro y que vives todavía».",
+        "CEI": "Israele disse a Giuseppe: \"Posso anche morire, questa volta, dopo aver visto la tua faccia, perché sei ancora vivo\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יוֹסֵ֤ף אֶל אֶחָי/ו֙ וְ/אֶל בֵּ֣ית אָבִ֔י/ו אֶעֱלֶ֖ה וְ/אַגִּ֣ידָה לְ/פַרְעֹ֑ה וְ/אֹֽמְרָ֣ה אֵלָ֔י/ו אַחַ֧/י וּ/בֵית אָבִ֛/י אֲשֶׁ֥ר בְּ/אֶֽרֶץ כְּנַ֖עַן בָּ֥אוּ אֵלָֽ/י׃",
+        "VUL": "At ille locutus est ad fratres suos, et ad omnem domum patris sui : Ascendam, et nuntiabo Pharaoni, dicamque ei : Fratres mei, et domus patris mei, qui erant in terra Chanaan, venerunt ad me :",
+        "LXX": "εἶπεν δὲ Ἰωσὴφ πρὸς τοὺς ἀδελφοὺς αὐτοῦ Ἀναβὰς ἀπαγγελῶ τῷ Φαραὼ καὶ ἐρῶ αὐτῷ Οἱ ἀδελφοί μου καὶ ὁ οἶκος τοῦ πατρός μου, οἳ ἦσαν ἐν γῇ Χανάαν, ἥκασιν πρὸς μέ·",
+        "NAB": "Joseph then said to his brothers and his father's household: \"I will go and inform Pharaoh, telling him: 'My brothers and my father's household, whose home is in the land of Canaan, have come to me.",
+        "SYN": "И сказал Иосиф братьям своим и дому отца своего: я пойду, извещу фараона и скажу ему: братья мои и дом отца моего, которые были в земле Ханаанской, пришли ко мне;",
+        "NEO": "Joseph dit à ses frères et à la famille de son père : « Je vais avertir Pharaon et je lui dirai : Mes frères et la famille de mon père, qui étaient au pays de Canaan, sont venus vers moi.",
+        "VAT_ES": "Después José dijo a sus hermanos y a la familia de su padre: «Yo iré a informar al Faraón y le diré: «Mis hermanos y la familia de mi padre, que antes estaban en Canaán, han venido a reunirse conmigo.",
+        "CEI": "Allora Giuseppe disse ai fratelli e alla famiglia del padre: \"Vado ad informare il faraone e a dirgli: I miei fratelli e la famiglia di mio padre, che erano nel paese di Cànaan, sono venuti da me."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/הָ/אֲנָשִׁים֙ רֹ֣עֵי צֹ֔אן כִּֽי אַנְשֵׁ֥י מִקְנֶ֖ה הָי֑וּ וְ/צֹאנָ֧/ם וּ/בְקָרָ֛/ם וְ/כָל אֲשֶׁ֥ר לָ/הֶ֖ם הֵבִֽיאוּ׃",
+        "VUL": "et sunt viri pastores ovium, curamque habent alendorum gregum : pecora sua, et armenta, et omnia quæ habere potuerunt, adduxerunt secum.",
+        "LXX": "οἱ δὲ ἄνδρες εἰσὶν ποιμένες· ἄνδρες γὰρ κτηνοτρόφοι ἦσαν· καὶ τὰ κτήνη καὶ τούς βόας καὶ πάντα τὰ αὐτῶν ἀγιόχασιν.",
+        "NAB": "The men are shepherds, having long been keepers of livestock; and they have brought with them their flocks and herds, as well as everything else they own.'",
+        "SYN": "эти люди пастухи овец, ибо скотоводы они; и мелкий и крупный скот свой, и все, что у них, привели они.",
+        "NEO": "Ces hommes font paître des brebis, car ce sont des propriétaires de troupeaux ; ils ont amené leurs brebis et leurs bœufs, et tout ce qui leur appartient.",
+        "VAT_ES": "Ellos son pastores, y ya hace mucho tiempo que se dedican a cuidar el ganado. Ahora han traído sus ovejas, sus vacas y todo lo que poseen».",
+        "CEI": "Ora questi uomini sono pastori di greggi, si occupano di bestiame, e hanno condotto i loro greggi, i loro armenti e tutti i loro averi."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֕ה כִּֽי יִקְרָ֥א לָ/כֶ֖ם פַּרְעֹ֑ה וְ/אָמַ֖ר מַה מַּעֲשֵׂי/כֶֽם׃",
+        "VUL": "Cumque vocaverit vos, et dixerit : Quod est opus vestrum ?",
+        "LXX": "ἐὰν οὖν καλέσῃ ὑμᾶς Φαραὼ καὶ εἴπῃ ὑμῖν Τί τὸ ἔργον ὑμῶν ἐστίν;",
+        "NAB": "So when Pharaoh summons you and asks what your occupation is,",
+        "SYN": "Если фараон призовет вас и скажет: какое занятие ваше?",
+        "NEO": "Et quand Pharaon vous appellera et dira : Quelle est votre occupation ?",
+        "VAT_ES": "Por eso, cuando el Faraón los llame y les pregunte de qué se ocupan,",
+        "CEI": "Quando dunque il faraone vi chiamerà e vi domanderà: Qual è il vostro mestiere?,"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/אֲמַרְתֶּ֗ם אַנְשֵׁ֨י מִקְנֶ֜ה הָי֤וּ עֲבָדֶ֨י/ךָ֙ מִ/נְּעוּרֵ֣י/נוּ וְ/עַד עַ֔תָּה גַּם אֲנַ֖חְנוּ גַּם אֲבֹתֵ֑י/נוּ בַּ/עֲב֗וּר תֵּשְׁבוּ֙ בְּ/אֶ֣רֶץ גֹּ֔שֶׁן כִּֽי תוֹעֲבַ֥ת מִצְרַ֖יִם כָּל רֹ֥עֵה צֹֽאן׃",
+        "VUL": "respondebitis : Viri pastores sumus servi tui, ab infantia nostra usque in præsens, et nos et patres nostri. Hæc autem dicetis, ut habitare possitis in terra Gessen : quia detestantur Ægyptii omnes pastores ovium.",
+        "LXX": "ἐρεῖτε Ἄνδρες κτηνοτρόφοι ἐσμὲν οἱ παῖδές σου ἐκ παιδὸς ἕως τοῦ νῦν, καὶ ἡμεῖς καὶ οἱ πατέρες ἡμῶν· ἵνα κατοικήσητε ἐν γῇ Γέσεμ Ἀραβίᾳ· βδέλυγμα γάρ ἐστιν Αἰγυπτίων πᾶς ποιμὴν προβάτων.",
+        "NAB": "you must answer, 'We your servants, like our ancestors, have been keepers of livestock from the beginning until now,' in order that you may stay in the region of Goshen, since all shepherds are abhorrent to the Egyptians.\"",
+        "SYN": "то вы скажите: _мы,_ рабы твои, скотоводами были от юности нашей доныне, и мы и отцы наши, чтобы вас поселили в земле Гесем. Ибо мерзость для Египтян всякий пастух овец.",
+        "NEO": "vous répondrez : Nous, tes serviteurs, sommes des propriétaires de troupeaux depuis notre jeunesse jusqu’à présent comme l’étaient nos pères. De cette manière vous habiterez dans le pays de Gessen, car tous les bergers sont en abomination aux Egyptiens. »",
+        "VAT_ES": "ustedes responderán: «Tus servidores, desde su juventud hasta ahora, se han dedicado a cuidar el ganado, lo mismo que sus antepasados». Así ustedes podrán establecerse en la región de Gosen, porque los egipcios sienten abominación por todos los pastores».",
+        "CEI": "voi risponderete: Gente dedita al bestiame sono stati i tuoi servi, dalla nostra fanciullezza fino ad ora, noi e i nostri padri. Questo perché possiate risiedere nel paese di Gosen\". Perché tutti i pastori di greggi sono un abominio per gli Egiziani."
+      }
+    }
+  }
+}

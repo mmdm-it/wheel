@@ -1,0 +1,411 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_048",
+  "book_key": "GENE",
+  "sequence": 48,
+  "chapter_in": {
+    "MT": 48,
+    "VUL": 48,
+    "LXX": 48
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י אַחֲרֵי֙ הַ/דְּבָרִ֣ים הָ/אֵ֔לֶּה וַ/יֹּ֣אמֶר לְ/יוֹסֵ֔ף הִנֵּ֥ה אָבִ֖י/ךָ חֹלֶ֑ה וַ/יִּקַּ֞ח אֶת שְׁנֵ֤י בָנָי/ו֙ עִמּ֔/וֹ אֶת מְנַשֶּׁ֖ה וְ/אֶת אֶפְרָֽיִם׃",
+        "VUL": "His ita transactis, nuntiatum est Joseph quod ægrotaret pater suus : qui, assumptis duobus filiis Manasse et Ephraim, ire perrexit.",
+        "LXX": "⸂⸆⸃ Ἐγένετο δὲ μετὰ τὰ ῥήματα ταῦτα ἀπηγγέλη τῷ Ἰωσὴφ ὅτι Ὁ πατήρ σου ἐνοχλεῖται· καὶ ἀναλαβὼν τοὺς δύο υἱοὺς αὐτοῦ, τὸν Μανασσὴ καὶ τὸν Ἐφράιμ, ἦλθεν πρὸς Ἰακώβ.",
+        "NAB": "Some time afterward, Joseph was informed, \"Your father is failing.\" So he took along with him his two sons, Manasseh and Ephraim.",
+        "SYN": "После того Иосифу сказали: вот, отец твой болен. И он взял с собою двух сынов своих, Манассию и Ефрема [и пошел к Иакову].",
+        "NEO": "Après ces choses, on vint dire à Joseph : « Voici que ton père est malade. » Il prit avec lui ses deux fils, Manassé et Ephraïm.",
+        "VAT_ES": "Después de estos acontecimientos, José recibió esta noticia: «Tu padre está enfermo». Entonces llevó a sus dos hijos, Manasés y Efraím,",
+        "CEI": "Dopo queste cose, fu riferito a Giuseppe: \"Ecco, tuo padre è malato!\". Allora egli condusse con sé i due figli Manasse ed Efraim."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יַּגֵּ֣ד לְ/יַעֲקֹ֔ב וַ/יֹּ֕אמֶר הִנֵּ֛ה בִּנְ/ךָ֥ יוֹסֵ֖ף בָּ֣א אֵלֶ֑י/ךָ וַ/יִּתְחַזֵּק֙ יִשְׂרָאֵ֔ל וַ/יֵּ֖שֶׁב עַל הַ/מִּטָּֽה׃",
+        "VUL": "Dictumque est seni : Ecce filius tuus Joseph venit ad te. Qui confortatus sedit in lectulo.",
+        "LXX": "ἀπηγγέλη δὲ τῷ Ἰακὼβ λέγοντες Ἰδοὺ ὁ υἱός σου Ἰωσὴφ ἔρχεται πρὸς σέ· καὶ ἐνισχύσας Ἰσραὴλ ἐκάθισεν ἐπὶ τὴν κλίνην.",
+        "NAB": "When Jacob was told, \"Your son Joseph has come to you,\" he rallied his strength and sat up in bed.",
+        "SYN": "Иакова известили и сказали: вот, сын твой Иосиф идет к тебе. Израиль собрал силы свои и сел на постели.",
+        "NEO": "On avertit Jacob, en disant : « Voici ton fils Joseph qui vient vers toi. »",
+        "VAT_ES": "y se hizo anunciar a su padre: «Tu hijo José ha venido a verte». Israel, haciendo un esfuerzo, se sentó en su lecho,",
+        "CEI": "Fu riferita la cosa a Giacobbe: \"Ecco, tuo figlio Giuseppe è venuto da te\". Allora Israele raccolse le forze e si mise a sedere sul letto."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יַעֲקֹב֙ אֶל יוֹסֵ֔ף אֵ֥ל שַׁדַּ֛י נִרְאָֽה אֵלַ֥/י בְּ/ל֖וּז בְּ/אֶ֣רֶץ כְּנָ֑עַן וַ/יְבָ֖רֶךְ אֹתִֽ/י׃",
+        "VUL": "Et ingresso ad se ait : Deus omnipotens apparuit mihi in Luza, quæ est in terra Chanaan : benedixitque mihi,",
+        "LXX": "καὶ εἶπεν Ἰακὼβ τῷ Ἰωσήφ Ὤφθη μοι ὁ θεός μου ⸆ ἐν Λοῦζα ἐν γῇ Χανάαν, καὶ εὐλόγησέν με",
+        "NAB": "Jacob then said to Joseph: \"God Almighty appeared to me at Luz in the land of Canaan, and blessing me,",
+        "SYN": "И сказал Иаков Иосифу: Бог Всемогущий явился мне в Лузе, в земле Ханаанской, и благословил меня,",
+        "NEO": "Jacob dit à Joseph : « Le Dieu tout-puissant m’est apparu à Luz, dans le pays de Canaan, et il m’a béni,",
+        "VAT_ES": "y dijo a José: «El Dios Todopoderoso se me apareció, en Luz, en la tierra de Canaán, y me bendijo,",
+        "CEI": "Giacobbe disse a Giuseppe: \"Dio onnipotente mi apparve a Luz, nel paese di Cànaan, e mi benedisse"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֵלַ֗/י הִנְ/נִ֤י מַפְרְ/ךָ֙ וְ/הִרְבִּיתִ֔/ךָ וּ/נְתַתִּ֖י/ךָ לִ/קְהַ֣ל עַמִּ֑ים וְ/נָ֨תַתִּ֜י אֶת הָ/אָ֧רֶץ הַ/זֹּ֛את לְ/זַרְעֲ/ךָ֥ אַחֲרֶ֖י/ךָ אֲחֻזַּ֥ת עוֹלָֽם׃",
+        "VUL": "et ait : Ego te augebo et multiplicabo, et faciam te in turbas populorum : daboque tibi terram hanc, et semini tuo post te in possessionem sempiternam.",
+        "LXX": "καὶ εἶπέν μοι Ἰδοὺ ἐγώ σε αὐξανῶ καὶ πληθυνῶ καὶ ποιήσω σε εἰς συναγωγὰς ἐθνῶν, καὶ δώσω σοι τὴν γῆν ταύτην καὶ τῷ σπέρματί σου μετὰ σὲ εἰς κατάσχεσιν αἰώνιον.",
+        "NAB": "he said, 'I will make you fertile and numerous and raise you into an assembly of tribes, and I will give this land to your descendants after you as a permanent possession.'",
+        "SYN": "и сказал мне: вот, Я распложу тебя, и размножу тебя, и произведу от тебя множество народов, и дам землю сию потомству твоему после тебя, в вечное владение.",
+        "NEO": "en disant : Je te rendrai fécond, je te multiplierai, et je te ferai devenir une assemblée de peuples ; je donnerai ce pays à ta postérité après toi, pour qu’elle le possède à jamais.",
+        "VAT_ES": "diciendo: «Yo te haré fecundo y numeroso, haré nacer de ti una asamblea de pueblos, y daré esta tierra a tu descendencia después de ti, en posesión perpetua».",
+        "CEI": "dicendomi: Ecco, io ti rendo fecondo: ti moltiplicherò e ti farò diventare un insieme di popoli e darò questo paese alla tua discendenza dopo di te in possesso perenne."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֡ה שְׁנֵֽי בָנֶי/ךָ֩ הַ/נּוֹלָדִ֨ים לְ/ךָ֜ בְּ/אֶ֣רֶץ מִצְרַ֗יִם עַד בֹּאִ֥/י אֵלֶ֛י/ךָ מִצְרַ֖יְמָ/ה לִ/י הֵ֑ם אֶפְרַ֨יִם֙ וּ/מְנַשֶּׁ֔ה כִּ/רְאוּבֵ֥ן וְ/שִׁמְע֖וֹן יִֽהְיוּ לִֽ/י׃",
+        "VUL": "Duo ergo filii tui, qui nati sunt tibi in terra Ægypti antequam huc venirem ad te, mei erunt : Ephraim et Manasses, sicut Ruben et Simeon reputabuntur mihi.",
+        "LXX": "νῦν οὖν οἱ δύο υἱοί σου οἱ γενόμενοί σοι ἐν Αἰγύπτῳ πρὸ τοῦ με ἐλθεῖν εἰς Αἴγυπτον πρὸς σὲ ἐμοί εἰσιν, Ἐφράιμ καὶ Μανασσή, ὡς Ῥουβὴν καὶ Συμεὼν ἔσονταί μοι·",
+        "NAB": "Your two sons, therefore, who were born to you in the land of Egypt before I joined you here, shall be mine; Ephraim and Manasseh shall be mine as much as Reuben and Simeon are mine.",
+        "SYN": "И ныне два сына твои, родившиеся тебе в земле Египетской, до моего прибытия к тебе в Египет, мои они; Ефрем и Манассия, как Рувим и Симеон, будут мои;",
+        "NEO": "Et maintenant, les deux fils qui te sont nés dans le pays d’Égypte, avant mon arrivée vers toi en Égypte, seront miens ; Ephraïm et Manassé seront miens, comme Ruben et Siméon.",
+        "VAT_ES": "Ahora bien, los dos hijos que tuviste en Egipto antes que yo viniera a reunirme contigo, serán mis hijos. Efraím y Manasés serán míos, como lo son Rubén y Simeón.",
+        "CEI": "Ora i due figli che ti sono nati nel paese d'Egitto prima del mio arrivo presso di te in Egitto, sono miei: Efraim e Manasse saranno miei come Ruben e Simeone."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וּ/מוֹלַדְתְּ/ךָ֛ אֲשֶׁר הוֹלַ֥דְתָּ אַחֲרֵי/הֶ֖ם לְ/ךָ֣ יִהְי֑וּ עַ֣ל שֵׁ֧ם אֲחֵי/הֶ֛ם יִקָּרְא֖וּ בְּ/נַחֲלָתָֽ/ם׃",
+        "VUL": "Reliquos autem quos genueris post eos, tui erunt, et nomine fratrum suorum vocabuntur in possessionibus suis.",
+        "LXX": "τὰ δὲ ἔκγονα ἃ δ’ ἂν γεννήσῃς μετὰ ταῦτα ἔσονται ἐπὶ τῷ ὀνόματι τῶν ἀδελφῶν αὐτῶν, κληθήσονται ἐπὶ τοῖς ἐκείνων κλήροις.",
+        "NAB": "Progeny born to you after them shall remain yours; but their heritage shall be recorded in the names of their two brothers.",
+        "SYN": "дети же твои, которые родятся от тебя после них, будут твои; они под именем братьев своих будут именоваться в их уделе.",
+        "NEO": "Mais les enfants que tu as engendrés après eux seront tiens ; ils seront appelés du nom de leurs frères quant à leur part d’héritage.",
+        "VAT_ES": "Los que nacieron después de ellos, en cambio, serán tuyos, y serán llamados con el nombre de sus hermanos para recibir su herencia.",
+        "CEI": "Invece i figli che tu avrai generati dopo di essi, saranno tuoi: saranno chiamati con il nome dei loro fratelli nella loro eredità."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֣י בְּ/בֹאִ֣/י מִ/פַּדָּ֗ן מֵ֩תָה֩ עָלַ֨/י רָחֵ֜ל בְּ/אֶ֤רֶץ כְּנַ֨עַן֙ בַּ/דֶּ֔רֶךְ בְּ/ע֥וֹד כִּבְרַת אֶ֖רֶץ לָ/בֹ֣א אֶפְרָ֑תָה וָ/אֶקְבְּרֶ֤/הָ שָּׁם֙ בְּ/דֶ֣רֶךְ אֶפְרָ֔ת הִ֖וא בֵּ֥ית לָֽחֶם׃",
+        "VUL": "Mihi enim, quando veniebam de Mesopotamia, mortua est Rachel in terra Chanaan in ipso itinere, eratque vernum tempus : et ingrediebar Ephratam, et sepelivi eam juxta viam Ephratæ, quæ alio nomine appellatur Bethlehem.",
+        "LXX": "ἐγὼ δὲ ἡνίκα ἠρχόμην ἐκ Μεσοποταμίας τῆς Συρίας, ἀπέθανεν Ῥαχὴλ ἡ μήτηρ σου ἐν γῇ Χανάαν, ἐγγίζοντός μου κατὰ τὸν ἱππόδρομον χαβραθὰ τῆς γῆς τοῦ ἐλθεῖν Ἐφράθα· καὶ κατώρυξα αὐτὴν ἐν τῇ ὁδῷ τοῦ ἱπποδρόμου· αὕτη ἐστὶν Βεθλέεμ.",
+        "NAB": "I do this because, when I was returning from Paddan, your mother Rachel died, to my sorrow, during the journey in Canaan, while we were still a short distance from Ephrath; and I buried her there on the way to Ephrath (that is, Bethlehem).\"",
+        "SYN": "Когда я шел из Месопотамии, умерла у меня Рахиль [мать твоя] в земле Ханаанской, по дороге, не доходя несколько до Ефрафы, и я похоронил ее там на дороге к Ефрафе, что _ныне_ Вифлеем.",
+        "NEO": "Et moi, quand je revenais de Paddan, Rachel mourut en route auprès de moi, dans le pays de Canaan, à une certaine distance d’Ephrata ; et c’est là que je l’ai enterrée sur le chemin d’Ephrata, qui est Bethléem. »",
+        "VAT_ES": "Yo quiero que así sea, porque a mi regreso de Padán, mientras íbamos por la tierra de Canaán, a poca distancia de Efratá, se me murió tu madre Raquel, y yo la sepulté allí, junto al camino de Efratá, es decir, de Belén».",
+        "CEI": "Quanto a me, mentre giungevo da Paddan, Rachele, tua madre, mi morì nel paese di Cànaan durante il viaggio, quando mancava un tratto di cammino per arrivare a Efrata, e l'ho sepolta là lungo la strada di Efrata, cioè Betlemme\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥רְא יִשְׂרָאֵ֖ל אֶת בְּנֵ֣י יוֹסֵ֑ף וַ/יֹּ֖אמֶר מִי אֵֽלֶּה׃",
+        "VUL": "Videns autem filios ejus dixit ad eum : Qui sunt isti ?",
+        "LXX": "ἰδὼν δὲ Ἰσραὴλ τοὺς υἱοὺς Ἰωσὴφ εἶπεν Τίνες σοι οὗτοι;",
+        "NAB": "When Israel saw Joseph's sons, he asked, \"Who are these?\"",
+        "SYN": "И увидел Израиль сыновей Иосифа и сказал: кто это?",
+        "NEO": "Alors Israël vit les fils de Joseph, et dit : « Qui sont ceux-ci ? »",
+        "VAT_ES": "Al ver a los hijos de José, Israel preguntó: «Y estos, &iquest;quiénes son?».",
+        "CEI": "Poi Israele vide i figli di Giuseppe e disse: \"Chi sono questi?\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יוֹסֵף֙ אֶל אָבִ֔י/ו בָּנַ֣/י הֵ֔ם אֲשֶׁר נָֽתַן לִ֥/י אֱלֹהִ֖ים בָּ/זֶ֑ה וַ/יֹּאמַ֕ר קָֽחֶ/ם נָ֥א אֵלַ֖/י וַ/אֲבָרֲכֵֽ/ם׃",
+        "VUL": "Respondit : Filii mei sunt, quos donavit mihi Deus in hoc loco. Adduc, inquit, eos ad me, ut benedicam illis.",
+        "LXX": "εἶπεν δὲ Ἰωσὴφ τῷ πατρὶ αὐτοῦ Υἱοί μού εἰσιν οὓς ἔδωκέν μοι ὁ θεὸς ἐνταῦθα. καὶ εἶπεν Ἰακώβ Προσάγαγέ μοι αὐτοὺς ἵνα εὐλογήσω αὐτούς.",
+        "NAB": "\"They are my sons,\" Joseph answered his father, \"whom God has given me here.\" \"Bring them to me,\" said his father, \"that I may bless them.\"",
+        "SYN": "И сказал Иосиф отцу своему: это сыновья мои, которых Бог дал мне здесь. [Иаков] сказал: подведи их ко мне, и я благословлю их.",
+        "NEO": "Joseph répondit à son père : « Ce sont mes fils, que Dieu m’a donnés ici. « Et Israël dit : « Fais-les approcher de moi, je te prie, afin que je les bénisse. »",
+        "VAT_ES": "«Son mis hijos, los que Dios me dio aquí», respondió José a su padre. Este añadió: «Acércamelos, para que yo los bendiga».",
+        "CEI": "Giuseppe disse al padre: \"Sono i figli che Dio mi ha dati qui\". Riprese: \"Portameli perché io li benedica!\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/עֵינֵ֤י יִשְׂרָאֵל֙ כָּבְד֣וּ מִ/זֹּ֔קֶן לֹ֥א יוּכַ֖ל לִ/רְא֑וֹת וַ/יַּגֵּ֤שׁ אֹתָ/ם֙ אֵלָ֔י/ו וַ/יִּשַּׁ֥ק לָ/הֶ֖ם וַ/יְחַבֵּ֥ק לָ/הֶֽם׃",
+        "VUL": "Oculi enim Israël caligabant præ nimia senectute, et clare videre non poterat. Applicitosque ad se, deosculatus et circumplexus eos,",
+        "LXX": "οἱ δὲ ὀφθαλμοὶ Ἰσραὴλ ἐβαρυώπησαν ἀπὸ τοῦ γήρους, καὶ οὐκ ἠδύνατο βλέπειν· καὶ ἤγγισεν αὐτοὺς πρὸς αὐτόν, καὶ ἐφίλησεν αὐτοὺς καὶ περιέλαβεν αὐτούς.",
+        "NAB": "(Now Israel's eyes were dim from age, and he could not see well.) When Joseph brought his sons close to him, he kissed and embraced them.",
+        "SYN": "Глаза же Израилевы притупились от старости; не мог он видеть _ясно._ _Иосиф_ подвел их к нему, и он поцеловал их и обнял их.",
+        "NEO": "Car les yeux d’Israël étaient obscurcis par l’âge, et il ne pouvait plus bien voir. Joseph les fit approcher de lui, et Israël les baisa, en les tenant embrassés.",
+        "VAT_ES": "José los puso junto a Israel, que ya no veía, porque sus ojos se habían debilitado a causa de su edad avanzada, y él los besó y los abrazó.",
+        "CEI": "Ora gli occhi di Israele erano offuscati dalla vecchiaia: non poteva più distinguere. Giuseppe li avvicinò a lui, che li baciò e li abbracciò."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יִשְׂרָאֵל֙ אֶל יוֹסֵ֔ף רְאֹ֥ה פָנֶ֖י/ךָ לֹ֣א פִלָּ֑לְתִּי וְ/הִנֵּ֨ה הֶרְאָ֥ה אֹתִ֛/י אֱלֹהִ֖ים גַּ֥ם אֶת זַרְעֶֽ/ךָ׃",
+        "VUL": "dixit ad filium suum : Non sum fraudatus aspectu tuo : insuper ostendit mihi Deus semen tuum.",
+        "LXX": "καὶ εἶπεν Ἰσραὴλ πρὸς Ἰωσήφ Ἰδοὺ τοῦ προσώπου σου οὐκ ἐστερήθην, καὶ ἰδοὺ ἔδειξέν μοι ὁ θεὸς καὶ τὸ σπέρμα σου,",
+        "NAB": "Then Israel said to Joseph, \"I never expected to see your face again, and now God has allowed me to see your descendants as well!\"",
+        "SYN": "И сказал Израиль Иосифу: не надеялся я видеть твое лице; но вот, Бог показал мне и детей твоих.",
+        "NEO": "Et Israël dit à Joseph : « Je ne pensais plus revoir ton visage, et voici que Dieu me fait voir aussi ta postérité ! »",
+        "VAT_ES": "Luego Israel dijo a José: «Yo pensaba que nunca más volvería a ver tu rostro, y ahora Dios me permite ver también tu descendencia».",
+        "CEI": "Israele disse a Giuseppe: \"Io non pensavo più di vedere la tua faccia ed ecco, Dio mi ha concesso di vedere anche la tua prole!\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יּוֹצֵ֥א יוֹסֵ֛ף אֹתָ֖/ם מֵ/עִ֣ם בִּרְכָּ֑י/ו וַ/יִּשְׁתַּ֥חוּ לְ/אַפָּ֖י/ו אָֽרְצָ/ה׃",
+        "VUL": "Cumque tulisset eos Joseph de gremio patris, adoravit pronus in terram.",
+        "LXX": "καὶ ἐξήγαγεν Ἰωσὴφ αὐτοὺς ἀπὸ τῶν γονάτων αὐτοῦ, καὶ προσεκύνησαν αὐτῷ ἐπὶ πρόσωπον ἐπὶ τῆς γῆς.",
+        "NAB": "Joseph removed them from his father's knees and bowed down before him with his face to the ground.",
+        "SYN": "И отвел их Иосиф от колен его и поклонился ему лицем своим до земли.",
+        "NEO": "Joseph les retira d’entre les genoux de son père et, s’étant prosterné en terre devant lui,",
+        "VAT_ES": "José los retiró de las rodillas de Israel y se inclinó profundamente;",
+        "CEI": "Allora Giuseppe li ritirò dalle sue ginocchia e si prostrò con la faccia a terra."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֣ח יוֹסֵף֮ אֶת שְׁנֵי/הֶם֒ אֶת אֶפְרַ֤יִם בִּֽ/ימִינ/וֹ֙ מִ/שְּׂמֹ֣אל יִשְׂרָאֵ֔ל וְ/אֶת מְנַשֶּׁ֥ה בִ/שְׂמֹאל֖/וֹ מִ/ימִ֣ין יִשְׂרָאֵ֑ל וַ/יַּגֵּ֖שׁ אֵלָֽי/ו׃",
+        "VUL": "Et posuit Ephraim ad dexteram suam, id est, ad sinistram Israël : Manassen vero in sinistra sua, ad dexteram scilicet patris, applicuitque ambos ad eum.",
+        "LXX": "λαβὼν δὲ Ἰωσὴφ τοὺς δύο υἱοὺς αὐτοῦ, τόν τε Ἐφράιμ ἐν τῇ δεξιᾷ, ἐξ ἀριστερῶν δὲ Ἰσραήλ, τὸν δὲ Μανασσὴ ἐξ ἀριστερῶν, ἐκ δεξιῶν δὲ Ἰσραήλ, ἤγγισεν αὐτοὺς αὐτῷ.",
+        "NAB": "Then Joseph took the two, Ephraim with his right hand, to Israel's left, and Manasseh with his left hand, to Israel's right, and led them to him.",
+        "SYN": "И взял Иосиф обоих [сыновей своих], Ефрема в правую свою руку против левой Израиля, а Манассию в левую против правой Израиля, и подвел к нему.",
+        "NEO": "Joseph les prit tous les deux, Ephraïm à sa droite, à la gauche d’Israël, et Manassé à sa gauche, à la droite d’Israël, et il les fit approcher.",
+        "VAT_ES": "después los tomó a los dos, a Efraím con su mano derecha, para que estuviera a la izquierda de Israel, y a Manasés con su mano izquierda, para que estuviera a la derecha de Israel, y se los presentó.",
+        "CEI": "Poi li prese tutti e due, Efraim con la sua destra, alla sinistra di Israele, e Manasse con la sua sinistra, alla destra di Israele, e li avvicinò a lui."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַח֩ יִשְׂרָאֵ֨ל אֶת יְמִינ֜/וֹ וַ/יָּ֨שֶׁת עַל רֹ֤אשׁ אֶפְרַ֨יִם֙ וְ/ה֣וּא הַ/צָּעִ֔יר וְ/אֶת שְׂמֹאל֖/וֹ עַל רֹ֣אשׁ מְנַשֶּׁ֑ה שִׂכֵּל֙ אֶת יָדָ֔י/ו כִּ֥י מְנַשֶּׁ֖ה הַ/בְּכֽוֹר׃",
+        "VUL": "Qui extendens manum dexteram, posuit super caput Ephraim minoris fratris : sinistram autem super caput Manasse qui major natu erat, commutans manus.",
+        "LXX": "ἐκτείνας δὲ Ἰσραὴλ τὴν χεῖρα τὴν δεξιὰν ἐπέβαλεν ἐπὶ τὴν κεφαλὴν Ἐφράιμ, οὗτος δὲ ἦν ὁ νεώτερος, καὶ τὴν ἀριστερὰν ἐπὶ τὴν κεφαλὴν Μανασσή, ἐναλλὰξ τὰς χεῖρας.",
+        "NAB": "But Israel, crossing his hands, put out his right hand and laid it on the head of Ephraim, although he was the younger, and his left hand on the head of Manasseh, although he was the first-born.",
+        "SYN": "Но Израиль простер правую руку свою и положил на голову Ефрему, хотя сей был меньший, а левую на голову Манассии. С намерением положил он так руки свои, хотя Манассия был первенец.",
+        "NEO": "Israël étendit sa main droite et la posa sur la tête d’Ephraïm, qui était le plus jeune, et il posa sa main gauche sur la tête de Manassé ; c’est à dessein qu’il posa ainsi ses mains, car Manassé était l’aîné.",
+        "VAT_ES": "Pero Israel, entrecruzando sus manos, puso la derecha sobre la cabeza de Efraím, que era el menor, y la izquierda sobre la cabeza de Manasés, aunque este era el primogénito,",
+        "CEI": "Ma Israele stese la mano destra e la pose sul capo di Efraim, che pure era il più giovane, e la sua sinistra sul capo di Manasse, incrociando le braccia, benché Manasse fosse il primogenito."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יְבָ֥רֶךְ אֶת יוֹסֵ֖ף וַ/יֹּאמַ֑ר הָֽ/אֱלֹהִ֡ים אֲשֶׁר֩ הִתְהַלְּכ֨וּ אֲבֹתַ֤/י לְ/פָנָי/ו֙ אַבְרָהָ֣ם וְ/יִצְחָ֔ק הָֽ/אֱלֹהִים֙ הָ/רֹעֶ֣ה אֹתִ֔/י מֵ/עוֹדִ֖/י עַד הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "VUL": "Benedixitque Jacob filiis Joseph, et ait : Deus, in cujus conspectu ambulaverunt patres mei Abraham, et Isaac ; Deus qui pascit me ab adolescentia mea usque in præsentem diem :",
+        "LXX": "καὶ ηὐλόγησεν αὐτοὺς καὶ εἶπεν Ὁ θεὸς ᾧ εὐηρέστησαν οἱ πατέρες μου ἐναντίον αὐτοῦ Ἀβραὰμ καὶ Ἰσαάκ, ὁ κύριος ὁ τρέφων με ἐκ νεότητος ἕως τῆς ἡμέρας ταύτης,",
+        "NAB": "Then he blessed them with these words: \"May the God in whose ways my fathers Abraham and Isaac walked, The God who has been my shepherd from my birth to this day,",
+        "SYN": "И благословил Иосифа и сказал: Бог, пред Которым ходили отцы мои Авраам и Исаак, Бог, пасущий меня с тех пор, как я существую, до сего дня,",
+        "NEO": "Il bénit Joseph, en disant : « Que le Dieu en présence duquel ont marché mes pères Abraham et Isaac, que le Dieu qui m’a nourri depuis que j’existe jusqu’à ce jour,",
+        "VAT_ES": "y los bendijo, diciendo: «El Dios en cuya presencia caminaron mis padres, Abraham e Isaac, el Dios que fue mi pastor, desde mi nacimiento hasta el día de hoy,",
+        "CEI": "E così benedisse Giuseppe: \"Il Dio, davanti al quale hanno camminato i miei padri Abramo e Isacco, il Dio che è stato il mio pastore da quando esisto fino ad oggi,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "הַ/מַּלְאָךְ֩ הַ/גֹּאֵ֨ל אֹתִ֜/י מִ/כָּל רָ֗ע יְבָרֵךְ֮ אֶת הַ/נְּעָרִים֒ וְ/יִקָּרֵ֤א בָ/הֶם֙ שְׁמִ֔/י וְ/שֵׁ֥ם אֲבֹתַ֖/י אַבְרָהָ֣ם וְ/יִצְחָ֑ק וְ/יִדְגּ֥וּ לָ/רֹ֖ב בְּ/קֶ֥רֶב הָ/אָֽרֶץ׃",
+        "VUL": "angelus, qui eruit me de cunctis malis, benedicat pueris istis : et invocetur super eos nomen meum, nomina quoque patrum meorum Abraham et Isaac, et crescant in multitudinem super terram.",
+        "LXX": "ὁ ἄγγελος ὁ ῥυόμενός με ἐκ πάντων τῶν κακῶν, εὐλογήσαι τὰ παιδία ταῦτα· καὶ ἐπικληθήσεται τὸ ὄνομά μου ἐν αὐτοῖς καὶ τὸ ὄνομα τῶν πατέρων μου Ἀβραὰμ καὶ Ἰσαάκ· καὶ πληθυνθείησαν εἰς πλῆθος πολὺ ἐπὶ τῆς γῆς.",
+        "NAB": "The Angel who has delivered me from all harm, bless these boys That in them my name be recalled, and the names of my fathers, Abraham and Isaac, And they may become teeming multitudes upon the earth!\"",
+        "SYN": "Ангел, избавляющий меня от всякого зла, да благословит отроков сих; да будет на них наречено имя мое и имя отцов моих Авраама и Исаака, и да возрастут они во множество посреди земли.",
+        "NEO": "que l’ange qui m’a délivré de tout mal, bénisse ces enfants ! Qu’ils soient appelés de mon nom et du nom de mes pères, Abraham et Isaac, et qu’ils multiplient en abondance au milieu du pays ! »",
+        "VAT_ES": "el ángel que me rescató de todo mal, bendiga a estos jóvenes, para que en ellos sobreviva mi nombre y el de mis padres, Abraham e Isaac, y lleguen a ser una gran multitud sobre la tierra».",
+        "CEI": "l'angelo che mi ha liberato da ogni male, benedica questi giovinetti! Sia ricordato in essi il mio nome e il nome dei miei padri Abramo e Isacco e si moltiplichino in gran numero in mezzo alla terra!\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣רְא יוֹסֵ֗ף כִּי יָשִׁ֨ית אָבִ֧י/ו יַד יְמִינ֛/וֹ עַל רֹ֥אשׁ אֶפְרַ֖יִם וַ/יֵּ֣רַע בְּ/עֵינָ֑י/ו וַ/יִּתְמֹ֣ךְ יַד אָבִ֗י/ו לְ/הָסִ֥יר אֹתָ֛/הּ מֵ/עַ֥ל רֹאשׁ אֶפְרַ֖יִם עַל רֹ֥אשׁ מְנַשֶּֽׁה׃",
+        "VUL": "Videns autem Joseph quod posuisset pater suus dexteram manum super caput Ephraim, graviter accepit : et apprehensam manum patris levare conatus est de capite Ephraim, et transferre super caput Manasse.",
+        "LXX": "ἰδὼν δὲ Ἰωσὴφ ὅτι ἐπέβαλεν ὁ πατὴρ τὴν δεξιὰν αὐτοῦ ἐπὶ τὴν κεφαλὴν Ἐφράιμ, βαρὺ αὐτῷ κατεφάνη· καὶ ἀντελάβετο Ἰωσὴφ τῆς χειρὸς τοῦ πατρὸς αὐτοῦ ἀφελεῖν αὐτὴν ἀπὸ τῆς κεφαλῆς Ἐφράιμ ἐπὶ τὴν κεφαλὴν Μανασσή.",
+        "NAB": "When Joseph saw that his father had laid his right hand on Ephraim's head, this seemed wrong to him; so he took hold of his father's hand, to remove it from Ephraim's head to Manasseh's,",
+        "SYN": "И увидел Иосиф, что отец его положил правую руку свою на голову Ефрема; и прискорбно было ему это. И взял он руку отца своего, чтобы переложить ее с головы Ефрема на голову Манассии,",
+        "NEO": "Joseph, voyant que son père posait sa main droite sur la tête d’Ephraïm, en eut du déplaisir ; il prit la main de son père pour l’écarter de dessus la tête d’Ephraïm et la porter sur celle de Manassé ;",
+        "VAT_ES": "Cuando José advirtió que su padre tenía puesta la mano derecha sobre la cabeza de Efraím, no le pareció bien. Entonces tomó la mano de su padre para pasarla de la cabeza de Efraím a la de Manasés,",
+        "CEI": "Giuseppe notò che il padre aveva posato la destra sul capo di Efraim e ciò gli spiacque. Prese dunque la mano del padre per toglierla dal capo di Efraim e porla sul capo di Manasse."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמֶר יוֹסֵ֛ף אֶל אָבִ֖י/ו לֹא כֵ֣ן אָבִ֑/י כִּי זֶ֣ה הַ/בְּכֹ֔ר שִׂ֥ים יְמִינְ/ךָ֖ עַל רֹאשֽׁ/וֹ׃",
+        "VUL": "Dixitque ad patrem : Non ita convenit, pater : quia hic est primogenitus, pone dexteram tuam super caput ejus.",
+        "LXX": "εἶπεν δὲ Ἰωσὴφ τῷ πατρὶ αὐτοῦ Οὐχ οὕτως, πάτερ· οὗτος γὰρ ὁ πρωτότοκος, ἐπίθες τὴν δεξιὰν ἐπὶ τὴν κεφαλὴν αὐτοῦ.",
+        "NAB": "saying, \"That is not right, father; the other one is the first-born; lay your right hand on his head!\"",
+        "SYN": "и сказал Иосиф отцу своему: не так, отец мой, ибо это -- первенец; положи на его голову правую руку твою.",
+        "NEO": "et Joseph dit à son père : « Pas ainsi, mon père, car celui-ci est le premier-né : mets ta main droite sur sa tête. »",
+        "VAT_ES": "y dijo a su padre: «Así no, padre, porque el primogénito es el otro; coloca tu mano derecha sobre su cabeza».",
+        "CEI": "Disse al padre: \"Non così, padre mio: è questo il primogenito, posa la destra sul suo capo!\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יְמָאֵ֣ן אָבִ֗י/ו וַ/יֹּ֨אמֶר֙ יָדַ֤עְתִּֽי בְנִ/י֙ יָדַ֔עְתִּי גַּם ה֥וּא יִֽהְיֶה לְּ/עָ֖ם וְ/גַם ה֣וּא יִגְדָּ֑ל וְ/אוּלָ֗ם אָחִ֤י/ו הַ/קָּטֹן֙ יִגְדַּ֣ל מִמֶּ֔/נּוּ וְ/זַרְע֖/וֹ יִהְיֶ֥ה מְלֹֽא הַ/גּוֹיִֽם׃",
+        "VUL": "Qui renuens, ait : Scio, fili mi, scio : et iste quidem erit in populos, et multiplicabitur : sed frater ejus minor, major erit illo : et semen illius crescet in gentes.",
+        "LXX": "καὶ οὐκ ἠθέλησεν, ἀλλὰ εἶπεν Οἶδα, τέκνον, οἶδα· καὶ οὗτος ἔσται εἰς λαόν, καὶ οὗτος ὑψωθήσεται· ἀλλὰ ὁ ἀδελφὸς αὐτοῦ ὁ νεώτερος μείζων αὐτοῦ ἔσται, καὶ τὸ σπέρμα αὐτοῦ ἔσται εἰς πλῆθος ἐθνῶν.",
+        "NAB": "But his father resisted. \"I know it, son,\" he said, \"I know. That one too shall become a tribe, and he too shall be great. Nevertheless, his younger brother shall surpass him, and his descendants shall become a multitude of nations.\"",
+        "SYN": "Но отец его не согласился и сказал: знаю, сын мой, знаю; и от него произойдет народ, и он будет велик; но меньший его брат будет больше его, и от семени его произойдет многочисленный народ.",
+        "NEO": "Mais son père refusa, en disant : « Je le sais, mon fils, je le sais ; lui aussi deviendra un peuple, lui aussi sera grand ; mais son frère cadet sera plus grand que lui, et sa postérité deviendra une multitude de nations. »",
+        "VAT_ES": "Pero su padre se resistió con estas palabras: «Ya lo sé, hijo mío, ya lo sé. También de él nacerá un pueblo, y también él será grande. Pero su hermano menor lo aventajará, y de él descenderán naciones enteras».",
+        "CEI": "Ma il padre ricusò e disse: \"Lo so, figlio mio, lo so: anch'egli diventerà un popolo, anch'egli sarà grande, ma il suo fratello minore sarà più grande di lui e la sua discendenza diventerà una moltitudine di nazioni\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יְבָ֨רֲכֵ֜/ם בַּ/יּ֣וֹם הַ/הוּא֮ לֵ/אמוֹר֒ בְּ/ךָ֗ יְבָרֵ֤ךְ יִשְׂרָאֵל֙ לֵ/אמֹ֔ר יְשִֽׂמְ/ךָ֣ אֱלֹהִ֔ים כְּ/אֶפְרַ֖יִם וְ/כִ/מְנַשֶּׁ֑ה וַ/יָּ֥שֶׂם אֶת אֶפְרַ֖יִם לִ/פְנֵ֥י מְנַשֶּֽׁה׃",
+        "VUL": "Benedixitque eis in tempore illo, dicens : In te benedicetur Israël, atque dicetur : Faciat tibi Deus sicut Ephraim, et sicut Manasse. Constituitque Ephraim ante Manassen.",
+        "LXX": "καὶ εὐλόγησεν αὐτοὺς ἐν τῇ ἡμέρᾳ ἐκείνῃ λέγων Ἐν ὑμῖν εὐλογηθήσεται Ἰσραὴλ λέγοντες Ποιήσαι σε ὁ θεὸς ὡς Ἐφράιμ καὶ ὡς Μανασσή· καὶ ἔθηκεν τὸν Ἐφράιμ ἔμπροσθεν τοῦ Μανασσή.",
+        "NAB": "So when he blessed them that day and said, \"By you shall the people of Israel pronounce blessings; may they say, 'God make you like Ephraim and Manasseh,'\" he placed Ephraim before Manasseh.",
+        "SYN": "И благословил их в тот день, говоря: тобою будет благословлять Израиль, говоря: Бог да сотворит тебе, как Ефрему и Манассии. И поставил Ефрема выше Манассии.",
+        "NEO": "Il les bénit donc ce jour-là et dit : « Par toi Israël bénira, en disant : Que Dieu te rende tel qu’Ephraïm et Manassé ! » Et il mit Ephraïm avant Manassé.",
+        "VAT_ES": "Y aquel día pronunció sobre ellos esta bendición: «Por ti Israel pronunciará esta bendición: &iexcl;Que Dios te haga como Efraím y Manasés!». Y puso a Efraím delante de Manasés.",
+        "CEI": "E li benedisse in quel giorno: \"Di voi si servirà Israele per benedire, dicendo: Dio ti renda come Efraim e come Manasse!\". Così pose Efraim prima di Manasse."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יִשְׂרָאֵל֙ אֶל יוֹסֵ֔ף הִנֵּ֥ה אָנֹכִ֖י מֵ֑ת וְ/הָיָ֤ה אֱלֹהִים֙ עִמָּ/כֶ֔ם וְ/הֵשִׁ֣יב אֶתְ/כֶ֔ם אֶל אֶ֖רֶץ אֲבֹתֵי/כֶֽם׃",
+        "VUL": "Et ait ad Joseph filium suum : En ego morior, et erit Deus vobiscum, reducetque vos ad terram patrum vestrorum.",
+        "LXX": "εἶπεν δὲ Ἰσραὴλ τῷ Ἰωσήφ Ἰδοὺ ἐγὼ ἀποθνήσκω, καὶ ἔσται ὁ θεὸς μεθ’ ὑμῶν καὶ ἀποστρέψει ὑμᾶς εἰς τὴν γῆν ⸂⸆⸃ τῶν πατέρων ὑμῶν·",
+        "NAB": "Then Israel said to Joseph: \"I am about to die. But God will be with you and will restore you to the land of your fathers.",
+        "SYN": "И сказал Израиль Иосифу: вот, я умираю; и Бог будет с вами и возвратит вас в землю отцов ваших;",
+        "NEO": "Israël dit à Joseph : « Voici que je vais mourir. Mais Dieu sera avec vous, et il vous ramènera dans le pays de vos pères.",
+        "VAT_ES": "Finalmente, Israel dijo a José: «Yo estoy a punto de morir, pero Dios estará con ustedes y los hará volver a la tierra de sus padres.",
+        "CEI": "Poi Israele disse a Giuseppe: \"Ecco, io sto per morire, ma Dio sarà con voi e vi farà tornare al paese dei vostri padri."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֞י נָתַ֧תִּֽי לְ/ךָ֛ שְׁכֶ֥ם אַחַ֖ד עַל אַחֶ֑י/ךָ אֲשֶׁ֤ר לָקַ֨חְתִּי֙ מִ/יַּ֣ד הָֽ/אֱמֹרִ֔י בְּ/חַרְבִּ֖/י וּ/בְ/קַשְׁתִּֽ/י׃",
+        "VUL": "Do tibi partem unam extra fratres tuos, quam tuli de manu Amorrhæi in gladio et arcu meo.",
+        "LXX": "ἐγὼ δὲ δίδωμί σοι σίκιμα ἐξαίρετον ὑπὲρ τοὺς ἀδελφούς σου, ἣν ἔλαβον ἐκ χειρὸς Ἀμορραίων ἐν μαχαίρᾳ μου καὶ τόξῳ.",
+        "NAB": "As for me, I give to you, as to the one above his brothers, Shechem, which I captured from the Amorites with my sword and bow.\"",
+        "SYN": "я даю тебе, преимущественно пред братьями твоими, один участок, который я взял из рук Аморреев мечом моим и луком моим.",
+        "NEO": "Je te donne, de plus qu’à tes frères, une portion que j’ai prise de la main des Amorrhéens avec mon épée et mon arc. »",
+        "VAT_ES": "Yo, por mi parte, te doy una franja de tierra más que a tus hermanos, la que arrebaté a los amorreos con mi espada y con mi arco».",
+        "CEI": "Quanto a me, io do a te, più che ai tuoi fratelli, un dorso di monte, che io ho conquistato dalle mani degli Amorrèi con la spada e l'arco\"."
+      }
+    }
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_006",
+  "book_key": "GENE",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ כִּֽי הֵחֵ֣ל הָֽ/אָדָ֔ם לָ/רֹ֖ב עַל פְּנֵ֣י הָֽ/אֲדָמָ֑ה וּ/בָנ֖וֹת יֻלְּד֥וּ לָ/הֶֽם׃",
+        "VUL": "Cumque cpissent homines multiplicari super terram, et filias procreassent,",
+        "LXX": "Καὶ ἦν Νῶε ἐτῶν πεντακοσίων, καὶ ἐγέννησεν Νῶε τρεῖς υἱούς, τὸν Σήμ, τὸν Χάμ, τὸν Ἰάφεθ. Καὶ ἐγένετο ἡνίκα ἤρξαντο οἱ ἄνθρωποι πολλοὶ γίνεσθαι ἐπὶ τῆς γῆς, καὶ θυγατέρες ἐγενήθησαν αὐτοῖς·",
+        "NAB": "When men began to multiply on earth and daughters were born to them,",
+        "SYN": "Когда люди начали умножаться на земле и родились у них дочери,",
+        "NEO": "Lorsque les hommes eurent commencé à être nombreux sur la surface de la terre, et qu’il leur fut né des filles,",
+        "VAT_ES": "Cuando los hombres comenzaron a multiplicarse sobre la tierra y les nacieron hijas,",
+        "CEI": "Quando gli uomini cominciarono a moltiplicarsi sulla terra e nacquero loro figlie,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּרְא֤וּ בְנֵי הָֽ/אֱלֹהִים֙ אֶת בְּנ֣וֹת הָֽ/אָדָ֔ם כִּ֥י טֹבֹ֖ת הֵ֑נָּה וַ/יִּקְח֤וּ לָ/הֶם֙ נָשִׁ֔ים מִ/כֹּ֖ל אֲשֶׁ֥ר בָּחָֽרוּ׃",
+        "VUL": "videntes filii Dei filias hominum quod essent pulchræ, acceperunt sibi uxores ex omnibus, quas elegerant.",
+        "LXX": "ἰδόντες δὲ οἱ ἄγγελοι τοῦ θεοῦ τὰς θυγατέρας τῶν ἀνθρώπων ὅτι καλαί εἰσιν, ἔλαβον ἑαυτοῖς γυναῖκας ἀπὸ πασῶν ὧν ἐξελέξαντο.",
+        "NAB": "the sons of heaven saw how beautiful the daughters of man were, and so they took for their wives as many of them as they chose.",
+        "SYN": "тогда сыны Божии увидели дочерей человеческих, что они красивы, и брали _их_ себе в жены, какую кто избрал.",
+        "NEO": "les fils de Dieu virent que les filles des hommes étaient belles, et ils en prirent pour femmes parmi toutes celles qui leur plurent.",
+        "VAT_ES": "los hijos de Dios vieron que estas eran hermosas, y tomaron como mujeres a todas las que quisieron.",
+        "CEI": "i figli di Dio videro che le figlie degli uomini erano belle e ne presero per mogli quante ne vollero."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוָ֗ה לֹֽא יָד֨וֹן רוּחִ֤/י בָֽ/אָדָם֙ לְ/עֹלָ֔ם בְּ/שַׁ/גַּ֖ם ה֣וּא בָשָׂ֑ר וְ/הָי֣וּ יָמָ֔י/ו מֵאָ֥ה וְ/עֶשְׂרִ֖ים שָׁנָֽה׃",
+        "VUL": "Dixitque Deus : Non permanebit spiritus meus in homine in æternum, quia caro est : eruntque dies illius centum viginti annorum.",
+        "LXX": "καὶ εἶπεν Κύριος ὁ θεός Οὐ μὴ καταμείνῃ τὸ πνεῦμά μου ἐν τοῖς ἀνθρώποις τούτοις εἰς τὸν αἰῶνα, διὰ τὸ εἶναι αὐτοὺς σάρκας· ἔσονται δὲ αἱ ἡμέραι αὐτῶν ἑκατὸν εἴκοσι ἔτη.",
+        "NAB": "Then the LORD said: \"My spirit shall not remain in man forever, since he is but flesh. His days shall comprise one hundred and twenty years.\"",
+        "SYN": "И сказал Господь [Бог]: не вечно Духу Моему быть пренебрегаемым человеками [сими], потому что они плоть; пусть будут дни их сто двадцать лет.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** dit : « Mon esprit ne demeurera pas toujours dans l’homme, car l’homme n’est que chair, et ses jours seront de cent vingt ans. »",
+        "VAT_ES": "Entonces el Señor dijo: «Mi espíritu no va a permanecer activo para siempre en el hombre, porque este no es más que carne; por eso no vivirá más de ciento veinte años».",
+        "CEI": "Allora il Signore disse: \"Il mio spirito non resterà sempre nell'uomo, perché egli è carne e la sua vita sarà di centoventi anni\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הַ/נְּפִלִ֞ים הָי֣וּ בָ/אָרֶץ֮ בַּ/יָּמִ֣ים הָ/הֵם֒ וְ/גַ֣ם אַֽחֲרֵי כֵ֗ן אֲשֶׁ֨ר יָבֹ֜אוּ בְּנֵ֤י הָֽ/אֱלֹהִים֙ אֶל בְּנ֣וֹת הָֽ/אָדָ֔ם וְ/יָלְד֖וּ לָ/הֶ֑ם הֵ֧מָּה הַ/גִּבֹּרִ֛ים אֲשֶׁ֥ר מֵ/עוֹלָ֖ם אַנְשֵׁ֥י הַ/שֵּֽׁם׃",
+        "VUL": "Gigantes autem erant super terram in diebus illis : postquam enim ingressi sunt filii Dei ad filias hominum, illæque genuerunt, isti sunt potentes a sæculo viri famosi.",
+        "LXX": "οἱ δὲ γίγαντες ἦσαν ἐπὶ τῆς γῆς ἐν ⸂⸆⸃ ταῖς ἡμέραις ἐκείναις, καὶ μετ’ ἐκεῖνο ὡς ἂν εἰσεπορεύοντο οἱ υἱοὶ τοῦ θεοῦ πρὸς τὰς θυγατέρας τῶν ἀνθρώπων, καὶ ἐγεννῶσαν ἑαυτοῖς· ἐκεῖνοι ἦσαν οἱ γίγαντες οἱ ἀπ’ αἰῶνος, οἱ ἄνθρωποι οἱ ὀνομαστοί.",
+        "NAB": "At that time the Nephilim appeared on earth (as well as later), after the sons of heaven had intercourse with the daughters of man, who bore them sons. They were the heroes of old, the men of renown.",
+        "SYN": "В то время были на земле исполины, особенно же с того времени, как сыны Божии стали входить к дочерям человеческим, и они стали рождать им: это сильные, издревле славные люди.",
+        "NEO": "Or, les géants étaient sur la terre en ces jours-là, et cela après que les fils de Dieu furent venus vers les filles des hommes, et qu’elles leur eurent donné des enfants : ce sont là les héros renommés dès les temps anciens.",
+        "VAT_ES": "En aquellos días –y aún después– cuando los hijos de Dios se unieron con las hijas de los hombres y ellas tuvieron hijos, había en la tierra gigantes: estos fueron los héroes famosos de la antig&uuml;edad.",
+        "CEI": "C'erano sulla terra i giganti a quei tempi - e anche dopo - quando i figli di Dio si univano alle figlie degli uomini e queste partorivano loro dei figli: sono questi gli eroi dell'antichità, uomini famosi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣רְא יְהוָ֔ה כִּ֥י רַבָּ֛ה רָעַ֥ת הָ/אָדָ֖ם בָּ/אָ֑רֶץ וְ/כָל יֵ֨צֶר֙ מַחְשְׁבֹ֣ת לִבּ֔/וֹ רַ֥ק רַ֖ע כָּל הַ/יּֽוֹם׃",
+        "VUL": "Videns autem Deus quod multa malitia hominum esset in terra, et cuncta cogitatio cordis intenta esset ad malum omni tempore,",
+        "LXX": "ἰδὼν δὲ Κύριος ὁ θεὸς ὅτι ἐπληθύνθησαν αἱ κακίαι τῶν ἀνθρώπων ἐπὶ τῆς γῆς, καὶ πᾶς τις διανοεῖται ἐν τῇ καρδίᾳ αὐτοῦ ἐπιμελῶς ἐπὶ τὰ πονηρὰ πάσας τὰς ἡμέρας·",
+        "NAB": "When the LORD saw how great was man's wickedness on earth, and how no desire that his heart conceived was ever anything but evil,",
+        "SYN": "И увидел Господь [Бог], что велико развращение человеков на земле, и что все мысли и помышления сердца их были зло во всякое время;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** vit que la méchanceté des hommes était grande sur la terre, et que toutes les pensées de leur cœur se portaient chaque jour uniquement vers le mal.",
+        "VAT_ES": "Cuando el Señor vio qué grande era la maldad del hombre en la tierra y cómo todos los designios que forjaba su mente tendían constantemente al mal,",
+        "CEI": "Il Signore vide che la malvagità degli uomini era grande sulla terra e che ogni disegno concepito dal loro cuore non era altro che male."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּנָּ֣חֶם יְהוָ֔ה כִּֽי עָשָׂ֥ה אֶת הָֽ/אָדָ֖ם בָּ/אָ֑רֶץ וַ/יִּתְעַצֵּ֖ב אֶל לִבּֽ/וֹ׃",
+        "VUL": "pnituit eum quod hominem fecisset in terra. Et tactus dolore cordis intrinsecus,",
+        "LXX": "καὶ ἐνεθυμήθη ὁ θεὸς ὅτι ἐποίησεν τὸν ἄνθρωπον ἐπὶ τῆς γῆς, καὶ διενοήθη.",
+        "NAB": "he regretted that he had made man on the earth, and his heart was grieved.",
+        "SYN": "и раскаялся Господь, что создал человека на земле, и восскорбел в сердце Своем.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** se repentit d’avoir fait l’homme sur la terre, et il fut affligé dans son cœur,",
+        "VAT_ES": "se arrepintió de haber hecho al hombre sobre la tierra, y sintió pesar en su corazón.",
+        "CEI": "E il Signore si pentì di aver fatto l'uomo sulla terra e se ne addolorò in cuor suo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוָ֗ה אֶמְחֶ֨ה אֶת הָ/אָדָ֤ם אֲשֶׁר בָּרָ֨אתִי֙ מֵ/עַל֙ פְּנֵ֣י הָֽ/אֲדָמָ֔ה מֵֽ/אָדָם֙ עַד בְּהֵמָ֔ה עַד רֶ֖מֶשׂ וְ/עַד ע֣וֹף הַ/שָּׁמָ֑יִם כִּ֥י נִחַ֖מְתִּי כִּ֥י עֲשִׂיתִֽ/ם׃",
+        "VUL": "Delebo, inquit, hominem, quem creavi, a facie terræ, ab homine usque ad animantia, a reptili usque ad volucres cæli : pnitet enim me fecisse eos.",
+        "LXX": "καὶ εἶπεν ὁ θεός Ἀπαλείψω τὸν ἄνθρωπον ὃν ἐποίησα ἀπὸ προσώπου τῆς γῆς, ἀπὸ ἀνθρώπου ἕως κτήνους καὶ ἀπὸ ἑρπετῶν ἕως τῶν πετεινῶν τοῦ οὐρανοῦ· ὅτι ἐθυμώθην ὅτι ἐποίησα αὐτούς.",
+        "NAB": "So the LORD said: \"I will wipe out from the earth the men whom I have created, and not only the men, but also the beasts and the creeping things and the birds of the air, for I am sorry that I made them.\"",
+        "SYN": "И сказал Господь: истреблю с лица земли человеков, которых Я сотворил, от человека до скотов, и гадов и птиц небесных истреблю, ибо Я раскаялся, что создал их.",
+        "NEO": "et il dit : « J’exterminerai de dessus la terre l’homme que j’ai créé, depuis l’homme jusqu’aux animaux domestiques, aux reptiles et aux oiseaux du ciel, car je me repens de les avoir faits. »",
+        "VAT_ES": "Por eso el Señor dijo: «Voy a eliminar de la superficie del suelo a los hombres que he creado –y junto con ellos a las bestias, los reptiles y los pájaros del cielo– porque me arrepiento de haberlos hecho».",
+        "CEI": "Il Singore disse: \"Sterminerò dalla terra l'uomo che ho creato: con l'uomo anche il bestiame e i rettili e gli uccelli del cielo, perché sono pentito d'averli fatti\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/נֹ֕חַ מָ֥צָא חֵ֖ן בְּ/עֵינֵ֥י יְהוָֽה׃",
+        "VUL": "Noë vero invenit gratiam coram Domino.",
+        "LXX": "Νῶε δὲ εὗρεν χάριν ἐναντίον Κυρίου τοῦ θεοῦ.",
+        "NAB": "But Noah found favor with the LORD.",
+        "SYN": "Ной же обрел благодать пред очами Господа [Бога].",
+        "NEO": "Mais Noé trouva grâce aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "VAT_ES": "Pero Noé fue agradable a los ojos del Señor.",
+        "CEI": "Ma Noè trovò grazia agli occhi del Signore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אֵ֚לֶּה תּוֹלְדֹ֣ת נֹ֔חַ נֹ֗חַ אִ֥ישׁ צַדִּ֛יק תָּמִ֥ים הָיָ֖ה בְּ/דֹֽרֹתָ֑י/ו אֶת הָֽ/אֱלֹהִ֖ים הִֽתְהַלֶּךְ נֹֽחַ׃",
+        "VUL": "Hæ sunt generationes Noë : Noë vir justus atque perfectus fuit in generationibus suis ; cum Deo ambulavit.",
+        "LXX": "Αὗται δὲ αἱ γενέσεις Νῶε. Νῶε ἄνθρωπος δίκαιος, τέλειος ὢν ἐν τῇ γενέσει αὐτοῦ· τῷ θεῷ εὐηρέστησεν Νῶε.",
+        "NAB": "These are the descendants of Noah. Noah, a good man and blameless in that age,",
+        "SYN": "Вот житие Ноя: Ной был человек праведный и непорочный в роде своем; Ной ходил пред Богом.",
+        "NEO": "Voici l’histoire de Noé. Noé était un homme juste, intègre parmi les hommes de son temps ; Noé marchait avec Dieu.",
+        "VAT_ES": "Esta es la historia de Noé. Noé era un hombre justo, irreprochable entre sus contemporáneos, y siguió siempre los caminos de Dios.",
+        "CEI": "Questa è la storia di Noè. Noè era uomo giusto e integro tra i suoi contemporanei e camminava con Dio."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יּ֥וֹלֶד נֹ֖חַ שְׁלֹשָׁ֣ה בָנִ֑ים אֶת שֵׁ֖ם אֶת חָ֥ם וְ/אֶת יָֽפֶת׃",
+        "VUL": "Et genuit tres filios, Sem, Cham et Japheth.",
+        "LXX": "ἐγέννησεν δὲ Νῶε τρεῖς υἱούς, τὸν Σήμ, τὸν Χάμ, τὸν Ἰάφεθ.",
+        "NAB": "for he walked with God, begot three sons: Shem, Ham, and Japheth.",
+        "SYN": "Ной родил трех сынов: Сима, Хама и Иафета.",
+        "NEO": "Noé engendra trois fils, Sem, Cham et Japheth.",
+        "VAT_ES": "Tuvo tres hijos: Sem, Cam y Jafet.",
+        "CEI": "Noè generò tre figli: Sem, Cam, e Iafet."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/תִּשָּׁחֵ֥ת הָ/אָ֖רֶץ לִ/פְנֵ֣י הָֽ/אֱלֹהִ֑ים וַ/תִּמָּלֵ֥א הָ/אָ֖רֶץ חָמָֽס׃",
+        "VUL": "Corrupta est autem terra coram Deo, et repleta est iniquitate.",
+        "LXX": "ἐφθάρη δὲ ἡ γῆ ἐναντίον τοῦ θεοῦ, καὶ ἐπλήσθη ἡ γῆ ἀδικίας.",
+        "NAB": "In the eyes of God the earth was corrupt and full of lawlessness.",
+        "SYN": "Но земля растлилась пред лицем Божиим, и наполнилась земля злодеяниями.",
+        "NEO": "Or la terre se corrompit devant Dieu et se remplit de violence.",
+        "VAT_ES": "Pero la tierra estaba pervertida a los ojos de Dios y se había llenado de violencia.",
+        "CEI": "Ma la terra era corrotta davanti a Dio e piena di violenza."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יַּ֧רְא אֱלֹהִ֛ים אֶת הָ/אָ֖רֶץ וְ/הִנֵּ֣ה נִשְׁחָ֑תָה כִּֽי הִשְׁחִ֧ית כָּל בָּשָׂ֛ר אֶת דַּרְכּ֖/וֹ עַל הָ/אָֽרֶץ׃",
+        "VUL": "Cumque vidisset Deus terram esse corruptam (omnis quippe caro corruperat viam suam super terram),",
+        "LXX": "καὶ ἴδεν Κύριος ὁ θεὸς τὴν γῆν, καὶ ἦν κατεφθαρμένη, ὅτι κατέφθειρεν πᾶσα σὰρξ τὴν ὁδὸν αὐτοῦ ἐπὶ τῆς γῆς.",
+        "NAB": "When God saw how corrupt the earth had become, since all mortals led depraved lives on earth,",
+        "SYN": "И воззрел [Господь] Бог на землю, и вот, она растленна, ибо всякая плоть извратила путь свой на земле.",
+        "NEO": "Dieu regarda la terre, et voici qu’elle était corrompue, car toute chair avait corrompu sa voie sur la terre.",
+        "VAT_ES": "Al ver que la tierra se había pervertido, porque todos los hombres tenían una conducta depravada.",
+        "CEI": "Dio guardò la terra ed ecco essa era corrotta, perché ogni uomo aveva pervertito la sua condotta sulla terra."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֱלֹהִ֜ים לְ/נֹ֗חַ קֵ֤ץ כָּל בָּשָׂר֙ בָּ֣א לְ/פָנַ֔/י כִּֽי מָלְאָ֥ה הָ/אָ֛רֶץ חָמָ֖ס מִ/פְּנֵי/הֶ֑ם וְ/הִנְ/נִ֥י מַשְׁחִיתָ֖/ם אֶת הָ/אָֽרֶץ׃",
+        "VUL": "dixit ad Noë : Finis universæ carnis venit coram me : repleta est terra iniquitate a facie eorum, et ego disperdam eos cum terra.",
+        "LXX": "Καὶ εἶπεν ὁ θεὸς πρὸς Νῶε Καιρὸς παντὸς ἀνθρώπου ἥκει ἐναντίον μου, ὅτι ἐπλήσθη ἡ γῆ ἀδικίας ἀπ’ αὐτῶν· καὶ ἰδοὺ ἐγὼ καταφθείρω αὐτοὺς καὶ τὴν γῆν.",
+        "NAB": "he said to Noah: \"I have decided to put an end to all mortals on earth; the earth is full of lawlessness because of them. So I will destroy them and all life on earth.",
+        "SYN": "И сказал [Господь] Бог Ною: конец всякой плоти пришел пред лице Мое, ибо земля наполнилась от них злодеяниями; и вот, Я истреблю их с земли.",
+        "NEO": "Alors Dieu dit à Noé : « La fin de toute chair est venue devant moi, car la terre est pleine de violence à cause d’eux ; je vais les détruire, ainsi que la terre.",
+        "VAT_ES": "Dios dijo a Noé: «He decidido acabar con todos los mortales, porque la tierra se ha llenado de violencia a causa de ellos. Por eso los voy a destruir junto con la tierra.",
+        "CEI": "Allora Dio disse a Noè: \"È venuta per me la fine di ogni uomo, perché la terra, per causa loro, è piena di violenza; ecco, io li distruggerò insieme con la terra."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "עֲשֵׂ֤ה לְ/ךָ֙ תֵּבַ֣ת עֲצֵי גֹ֔פֶר קִנִּ֖ים תַּֽעֲשֶׂ֣ה אֶת הַ/תֵּבָ֑ה וְ/כָֽפַרְתָּ֥ אֹתָ֛/הּ מִ/בַּ֥יִת וּ/מִ/ח֖וּץ בַּ/כֹּֽפֶר׃",
+        "VUL": "Fac tibi arcam de lignis lævigatis ; mansiunculas in arca facies, et bitumine linies intrinsecus et extrinsecus.",
+        "LXX": "ποίησον οὖν σεαυτῷ κιβωτὸν ἐκ ξύλων τετραγώνων· νοσσιὰς ποιήσεις τὴν κιβωτόν, καὶ ἀσφαλτώσεις αὐτὴν ἔσωθεν καὶ ἔξωθεν τῇ ἀσφάλτῳ.",
+        "NAB": "Make yourself an ark of gopherwood, put various compartments in it, and cover it inside and out with pitch.",
+        "SYN": "Сделай себе ковчег из дерева гофер; отделения сделай в ковчеге и осмоли его смолою внутри и снаружи.",
+        "NEO": "Fais-toi une arche de bois résineux ; tu la feras composée de cellules et tu l’enduiras de bitume en dedans et en dehors.",
+        "VAT_ES": "Constrúyete un arca de madera resinosa, divídela en compartimientos, y recúbrela con betún por dentro y por fuera.",
+        "CEI": "Fatti un'arca di legno di cipresso; dividerai l'arca in scompartimenti e la spalmerai di bitume dentro e fuori."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/זֶ֕ה אֲשֶׁ֥ר תַּֽעֲשֶׂ֖ה אֹתָ֑/הּ שְׁלֹ֧שׁ מֵא֣וֹת אַמָּ֗ה אֹ֚רֶךְ הַ/תֵּבָ֔ה חֲמִשִּׁ֤ים אַמָּה֙ רָחְבָּ֔/הּ וּ/שְׁלֹשִׁ֥ים אַמָּ֖ה קוֹמָתָֽ/הּ׃",
+        "VUL": "Et sic facies eam : trecentorum cubitorum erit longitudo arcæ, quinquaginta cubitorum latitudo, et triginta cubitorum altitudo illius.",
+        "LXX": "καὶ οὕτως ποιήσεις τὴν κιβωτόν· τριακοσίων πήχεων τὸ μῆκος τῆς κιβωτοῦ, καὶ πεντήκοντα πήχεων τὸ πλάτος, καὶ τριάκοντα πήχεων τὸ ὕψος αὐτῆς.",
+        "NAB": "This is how you shall build it: the length of the ark shall be three hundred cubits, its width fifty cubits, and its height thirty cubits.",
+        "SYN": "И сделай его так: длина ковчега триста локтей; ширина его пятьдесят локтей, а высота его тридцать локтей.",
+        "NEO": "Voici comment tu la feras : la longueur de l’arche sera de trois cents coudées, sa largeur de cinquante coudées et sa hauteur de trente.",
+        "VAT_ES": "Deberás hacerla así: el arca tendrá ciento cincuenta metros de largo, treinta de ancho y quince de alto.",
+        "CEI": "Ecco come devi farla: l'arca avrà trecento cubiti di lunghezza, cinquanta di larghezza e trenta di altezza."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "צֹ֣הַר תַּֽעֲשֶׂ֣ה לַ/תֵּבָ֗ה וְ/אֶל אַמָּה֙ תְּכַלֶ֣/נָּה מִ/לְ/מַ֔עְלָ/ה וּ/פֶ֥תַח הַ/תֵּבָ֖ה בְּ/צִדָּ֣/הּ תָּשִׂ֑ים תַּחְתִּיִּ֛ם שְׁנִיִּ֥ם וּ/שְׁלִשִׁ֖ים תַּֽעֲשֶֽׂ/הָ׃",
+        "VUL": "Fenestram in arca facies, et in cubito consummabis summitatem ejus : ostium autem arcæ pones ex latere ; deorsum, cnacula et tristega facies in ea./",
+        "LXX": "ἐπισυνάγων ποιήσεις τὴν κιβωτόν, καὶ εἰς πῆχυν συντελέσεις αὐτὴν ἄνωθεν· τὴν δὲ θύραν τῆς κιβωτοῦ ποιήσεις ἐκ πλαγίων· κατάγαια διώροφα καὶ τριώροφα ποιήσεις αὐτήν. ⸆",
+        "NAB": "Make an opening for daylight in the ark, and finish the ark a cubit above it. Put an entrance in the side of the ark, which you shall make with bottom, second and third decks.",
+        "SYN": "И сделай отверстие в ковчеге, и в локоть сведи его вверху, и дверь в ковчег сделай с боку его; устрой в нем нижнее, второе и третье [жилье].",
+        "NEO": "Tu feras à l’arche une ouverture, à laquelle tu donneras une coudée depuis le toit ; tu établiras une porte sur le côté de l’arche, et tu feras un premier, un second et un troisième étage de cellules.",
+        "VAT_ES": "También le harás un tragaluz y lo terminarás a medio metro de la parte superior. Pondrás la puerta al costado del arca y harás un primero, un segundo y un tercer piso.",
+        "CEI": "Farai nell'arca un tetto e a un cubito più sopra la terminerai; da un lato metterai la porta dell'arca. La farai a piani: inferiore, medio e superiore."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֗י הִנְ/נִי֩ מֵבִ֨יא אֶת הַ/מַּבּ֥וּל מַ֨יִם֙ עַל הָ/אָ֔רֶץ לְ/שַׁחֵ֣ת כָּל בָּשָׂ֗ר אֲשֶׁר בּ/וֹ֙ ר֣וּחַ חַיִּ֔ים מִ/תַּ֖חַת הַ/שָּׁמָ֑יִם כֹּ֥ל אֲשֶׁר בָּ/אָ֖רֶץ יִגְוָֽע׃",
+        "VUL": "Ecce ego adducam aquas diluvii super terram, ut interficiam omnem carnem, in qua spiritus vitæ est subter cælum : universa quæ in terra sunt, consumentur.",
+        "LXX": "ἐγὼ δὲ ἰδοὺ ἐπάγω τὸν κατακλυσμὸν ὕδωρ ἐπὶ τὴν γῆν, καταφθεῖραι πᾶσαν σάρκα ἐν ᾗ ἐστὶν ἐν αὐτῇ πνεῦμα ζωῆς ὑποκάτω τοῦ οὐρανοῦ· καὶ ὅσα ἐὰν ᾖ ἐπὶ τῆς γῆς τελευτήσει.",
+        "NAB": "I, on my part, am about to bring the flood (waters) on the earth, to destroy everywhere all creatures in which there is the breath of life; everything on earth shall perish.",
+        "SYN": "И вот, Я наведу на землю потоп водный, чтоб истребить всякую плоть, в которой есть дух жизни, под небесами; все, что есть на земле, лишится жизни.",
+        "NEO": "Et moi, je vais faire venir le déluge, une inondation de la terre, pour détruire de dessous le ciel toute chair ayant en soi souffle de vie ; tout ce qui est sur la terre périra.",
+        "VAT_ES": "Yo voy a enviar a la tierra las aguas del Diluvio, para destruir completamente a todos los seres que tienen un aliento de vida: todo lo que hay en la tierra perecerá.",
+        "CEI": "Ecco io manderò il diluvio, cioè le acque, sulla terra, per distruggere sotto il cielo ogni carne, in cui è alito di vita; quanto è sulla terra perirà."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/הֲקִמֹתִ֥י אֶת בְּרִיתִ֖/י אִתָּ֑/ךְ וּ/בָאתָ֙ אֶל הַ/תֵּבָ֔ה אַתָּ֕ה וּ/בָנֶ֛י/ךָ וְ/אִשְׁתְּ/ךָ֥ וּ/נְשֵֽׁי בָנֶ֖י/ךָ אִתָּֽ/ךְ׃",
+        "VUL": "Ponamque fdus meum tecum : et ingredieris arcam tu et filii tui, uxor tua, et uxores filiorum tuorum tecum.",
+        "LXX": "καὶ στήσω τὴν διαθήκην μου πρὸς σέ· εἰσελεύσῃ δὲ εἰς τὴν κιβωτόν, σὺ καὶ οἱ υἱοί σου καὶ ἡ γυνή σου καὶ αἱ γυναῖκες τῶν υἱῶν σου μετὰ σοῦ.",
+        "NAB": "But with you I will establish my covenant; you and your sons, your wife and your sons' wives, shall go into the ark.",
+        "SYN": "Но с тобою Я поставлю завет Мой, и войдешь в ковчег ты, и сыновья твои, и жена твоя, и жены сынов твоих с тобою.",
+        "NEO": "Mais j’établirai mon alliance avec toi ; et tu entreras dans l’arche, toi et tes fils, ta femme et les femmes de tes fils avec toi.",
+        "VAT_ES": "Pero contigo estableceré mi alianza: tú entrarás en el arca con tus hijos, tu mujer y las mujeres de tus hijos.",
+        "CEI": "Ma con te io stabilisco la mia alleanza. Entrerai nell'arca tu e con te i tuoi figli, tua moglie e le mogli dei tuoi figli."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וּ/מִ/כָּל הָ֠/חַי מִֽ/כָּל בָּשָׂ֞ר שְׁנַ֧יִם מִ/כֹּ֛ל תָּבִ֥יא אֶל הַ/תֵּבָ֖ה לְ/הַחֲיֹ֣ת אִתָּ֑/ךְ זָכָ֥ר וּ/נְקֵבָ֖ה יִֽהְיֽוּ׃",
+        "VUL": "Et ex cunctis animantibus universæ carnis bina induces in arcam, ut vivant tecum : masculini sexus et feminini.",
+        "LXX": "καὶ ἀπὸ πάντων τῶν κτηνῶν καὶ ἀπὸ πάντων τῶν ἑρπετῶν καὶ ἀπὸ πάντων τῶν θηρίων καὶ ἀπὸ πάσης σαρκός, δύο δύο ἀπὸ πάντων εἰσάξεις εἰς τὴν κιβωτόν, ἵνα τρέφῃς μετὰ σεαυτοῦ· ἄρσεν καὶ θῆλυ ἔσονται.",
+        "NAB": "Of all other living creatures you shall bring two into the ark, one male and one female, that you may keep them alive with you.",
+        "SYN": "Введи также в ковчег [из всякого скота, и из всех гадов, и] из всех животных, и от всякой плоти по паре, чтоб они остались с тобою в живых; мужеского пола и женского пусть они будут.",
+        "NEO": "De tout ce qui vit, de toute chair, tu feras entrer dans l’arche deux de chaque espèce, pour les conserver en vie avec toi ; ce sera un mâle et une femelle.",
+        "VAT_ES": "También harás entrar en el arca una pareja de cada especie de seres vivientes, de todo lo que es carne, para que sobrevivan contigo; deberán ser un macho y una hembra.",
+        "CEI": "Di quanto vive, di ogni carne, introdurrai nell'arca due di ogni specie, per conservarli in vita con te: siano maschio e femmina."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "מֵ/הָ/ע֣וֹף לְ/מִינֵ֗/הוּ וּ/מִן הַ/בְּהֵמָה֙ לְ/מִינָ֔/הּ מִ/כֹּ֛ל רֶ֥מֶשׂ הָֽ/אֲדָמָ֖ה לְ/מִינֵ֑/הוּ שְׁנַ֧יִם מִ/כֹּ֛ל יָבֹ֥אוּ אֵלֶ֖י/ךָ לְ/הַֽחֲיֽוֹת׃",
+        "VUL": "De volucribus juxta genus suum, et de jumentis in genere suo, et ex omni reptili terræ secundum genus suum : bina de omnibus ingredientur tecum, ut possint vivere.",
+        "LXX": "ἀπὸ πάντων τῶν ὀρνέων τῶν πετεινῶν κατὰ γένος καὶ ἀπὸ πάντων τῶν κτηνῶν κατὰ γένος καὶ ἀπὸ πάντων τῶν ἑρπετῶν τῶν ἑρπόντων ἐπὶ τῆς γῆς κατὰ γένος αὐτῶν, δύο δύο ἀπὸ πάντων εἰσελεύσονται πρὸς σὲ τρέφεσθαι μετὰ σοῦ, ἄρσεν καὶ θῆλυ.",
+        "NAB": "Of all kinds of birds, of all kinds of beasts, and of all kinds of creeping things, two of each shall come into the ark with you, to stay alive.",
+        "SYN": "Из [всех] птиц по роду их, и из [всех] скотов по роду их, и из всех пресмыкающихся по земле по роду их, из всех по паре войдут к тебе, чтобы остались в живых [с тобою, мужеского пола и женского].",
+        "NEO": "Des oiseaux des diverses espèces, des animaux domestiques des diverses espèces, et de toutes les espèces d’animaux qui rampent sur le sol, deux de toute espèce viendront vers toi, pour que tu leur conserves la vie.",
+        "VAT_ES": "Irá contigo una pareja de cada especie de pájaros, de ganado y de reptiles, para que puedan sobrevivir.",
+        "CEI": "Degli uccelli secondo la loro specie, del bestiame secondo la propria specie e di tutti i rettili della terra secondo la loro specie, due d'ognuna verranno con te, per essere conservati in vita."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֣ה קַח לְ/ךָ֗ מִ/כָּל מַֽאֲכָל֙ אֲשֶׁ֣ר יֵֽאָכֵ֔ל וְ/אָסַפְתָּ֖ אֵלֶ֑י/ךָ וְ/הָיָ֥ה לְ/ךָ֛ וְ/לָ/הֶ֖ם לְ/אָכְלָֽה׃",
+        "VUL": "Tolles igitur tecum ex omnibus escis, quæ mandi possunt, et comportabis apud te : et erunt tam tibi, quam illis in cibum.",
+        "LXX": "σὺ δὲ λήμψῃ σεαυτῷ ἀπὸ πάντων τῶν βρωμάτων ἃ ἔδεσθε, καὶ συνάξεις πρὸς σεαυτόν, καὶ ἔσται σοὶ καὶ ἐκείνοις φαγεῖν.",
+        "NAB": "Moreover, you are to provide yourself with all the food that is to be eaten, and store it away, that it may serve as provisions for you and for them.\"",
+        "SYN": "Ты же возьми себе всякой пищи, какою питаются, и собери к себе; и будет она для тебя и для них пищею.",
+        "NEO": "Et toi, prends de tous les aliments que l’on mange et fais-en provision près de toi, afin qu’ils te servent de nourriture, ainsi qu’à eux. »",
+        "VAT_ES": "Además, recoge víveres de toda clase y almacénalos, para que te sirvan de alimento, a ti y a ellos».",
+        "CEI": "Quanto a te, prenditi ogni sorta di cibo da mangiare e raccoglilo presso di te: sarà di nutrimento per te e per loro\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יַּ֖עַשׂ נֹ֑חַ כְּ֠/כֹל אֲשֶׁ֨ר צִוָּ֥ה אֹת֛/וֹ אֱלֹהִ֖ים כֵּ֥ן עָשָֽׂה׃",
+        "VUL": "Fecit igitur Noë omnia quæ præceperat illi Deus.",
+        "LXX": "καὶ ἐποίησεν Νῶε πάντα ὅσα ἐνετείλατο αὐτῷ Κύριος ὁ θεός, οὕτως ἐποίησεν.",
+        "NAB": "This Noah did; he carried out all the commands that God gave him.",
+        "SYN": "И сделал Ной всё: как повелел ему [Господь] Бог, так он и сделал.",
+        "NEO": "Noé se mit à l’œuvre ; il fit tout ce que Dieu lui avait ordonné.",
+        "VAT_ES": "Así lo hizo Noé, cumpliendo exactamente todo lo que Dios le había mandado.",
+        "CEI": "Noè eseguì tutto; come Dio gli aveva comandato, così egli fece."
+      }
+    }
+  }
+}

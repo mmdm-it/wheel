@@ -1,0 +1,568 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_022",
+  "book_key": "EXO",
+  "sequence": 22,
+  "chapter_in": {
+    "MT": 22,
+    "VUL": 22,
+    "LXX": 22
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אִם בַּ/מַּחְתֶּ֛רֶת יִמָּצֵ֥א הַ/גַּנָּ֖ב וְ/הֻכָּ֣ה וָ/מֵ֑ת אֵ֥ין ל֖/וֹ דָּמִֽים׃",
+        "LXX": "Ἐὰν δέ τις κλέψη μόσχον ἢ πρόβατον καὶ σφάξῃ ἢ ἀποδῶται, πέντε μόσχους ἀποτίσει ἀντὶ τοῦ μόσχου καὶ τέσσερα πρόβατα ἀντὶ τοῦ προβάτου.",
+        "VUL": "Si quis furatus fuerit bovem aut ovem, et occiderit vel vendiderit : quinque boves pro uno bove restituet, et quatuor oves pro una ove.",
+        "SYN": "Если кто украдет вола или овцу и заколет или продаст, то пять волов заплатит за вола и четыре овцы за овцу.",
+        "NEO": "Si le voleur est surpris la nuit faisant effraction, et qu’il soit frappé et meure, on n’est pas responsable du sang pour lui ;",
+        "NAB": "\"(If a thief is caught in the act of housebreaking and beaten to death, there is no bloodguilt involved.",
+        "VAT_ES": "Si el ladrón, sorprendido en el momento de forzar una casa, es herido de muerte, no hay delito de homicidio.",
+        "CEI": "Se un ladro viene sorpreso mentre sta facendo una breccia in un muro e viene colpito e muore, non vi è vendetta di sangue."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אִם זָרְחָ֥ה הַ/שֶּׁ֛מֶשׁ עָלָ֖י/ו דָּמִ֣ים ל֑/וֹ שַׁלֵּ֣ם יְשַׁלֵּ֔ם אִם אֵ֣ין ל֔/וֹ וְ/נִמְכַּ֖ר בִּ/גְנֵבָתֽ/וֹ׃",
+        "LXX": "ἐὰν δὲ ἐν τῷ διορύγματι εὑρεθῇ ὁ κλέπτης καὶ πληγεὶς ἀποθάνῃ, οὐκ ἔστιν αὐτῷ φόνος·",
+        "VUL": "Si effringens fur domum sive suffodiens fuerit inventus, et accepto vulnere mortuus fuerit, percussor non erit reus sanguinis.",
+        "SYN": "Если _кто_ застанет вора подкапывающего и ударит его, так что он умрет, то кровь не _вменится_ ему;",
+        "NEO": "mais si le soleil est levé, on sera responsable du sang pour lui. – Le voleur fera restitution : s’il n’a rien, on le vendra pour ce qu’il a volé.",
+        "NAB": "But if after sunrise he is thus beaten, there is bloodguilt.) He must make full restitution. If he has nothing, he shall be sold to pay for his theft.",
+        "VAT_ES": "Pero si ya había salido el sol, entonces hay delito de homicidio. El ladrón está obligado a restituir la totalidad de lo robado; si no dispone de medios para hacerlo, deberá ser vendido para compensar por su robo.",
+        "CEI": "Ma se il sole si era già alzato su di lui, a suo riguardo vi è vendetta di sangue. Il ladro dovrà dare l'indennizzo: se non avrà di che pagare, sarà venduto in compenso dell'oggetto rubato."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אִֽם הִמָּצֵא֩ תִמָּצֵ֨א בְ/יָד֜/וֹ הַ/גְּנֵבָ֗ה מִ/שּׁ֧וֹר עַד חֲמ֛וֹר עַד שֶׂ֖ה חַיִּ֑ים שְׁנַ֖יִם יְשַׁלֵּֽם׃",
+        "LXX": "ἐὰν δὲ ἀνατείλῃ ὁ ἥλιος ἐπ’ αὐτῷ, ἔνοχός ἐστιν, ἀνταποθανεῖται. ἐὰν δὲ μὴ ὑπάρχῃ αὐτῷ, πραθήτω ἀντὶ τοῦ κλέμματος.",
+        "VUL": "Quod si orto sole hoc fecerit, homicidium perpetravit, et ipse morietur. Si non habuerit quod pro furto reddat, ipse venundabitur.",
+        "SYN": "но если взошло над ним солнце, то _вменится_ ему кровь. _Укравший_ должен заплатить; а если нечем, то пусть продадут его _для_ _уплаты_ за украденное им;",
+        "NEO": "Si ce qu’il a volé, bœuf, âne ou brebis, se trouve encore vivant entre ses mains, il restituera le double.",
+        "NAB": "If what he stole is found alive in his possession, be it an ox, an ass or a sheep, he shall restore two animals for each one stolen.",
+        "VAT_ES": "Si lo robado –un buey, un asno o una oveja– se encuentra vivo en su poder, tendrá que restituir el doble.",
+        "CEI": "Se si trova ancora in vita e in suo possesso ciò che è stato rubato, si tratti di bue, di asino o di montone, restituirà il doppio."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּ֤י יַבְעֶר אִישׁ֙ שָׂדֶ֣ה אוֹ כֶ֔רֶם וְ/שִׁלַּח֙ אֶת בעיר/ה בְּעִיר֔/וֹ וּ/בִעֵ֖ר בִּ/שְׂדֵ֣ה אַחֵ֑ר מֵיטַ֥ב שָׂדֵ֛/הוּ וּ/מֵיטַ֥ב כַּרְמ֖/וֹ יְשַׁלֵּֽם׃",
+        "LXX": "ἐὰν δὲ καταλημφθῇ καὶ εὑρεθῇ ἐν τῇ χειρὶ αὐτοῦ τὸ κλέμμα ἀπό τε ὄνου ἕως προβάτου ζῶντα, διπλᾶ αὐτὰ ἀποτίσει.",
+        "VUL": "Si inventum fuerit apud eum quod furatus est, vivens : sive bos, sive asinus, sive ovis, duplum restituet.",
+        "SYN": "если [он пойман будет и] украденное найдется у него в руках живым, вол ли то, или осел, или овца, пусть заплатит [за них] вдвое.",
+        "NEO": "Si un homme fait du dégât dans un champ ou dans une vigne, en laissant son bétail brouter le champ d’autrui, il donnera en dédommagement le meilleur de son champ et le meilleur de sa vigne.",
+        "NAB": "\"When a man is burning over a field or a vineyard, if he lets the fire spread so that it burns in another's field, he must make restitution with the best produce of his own field or vineyard.",
+        "VAT_ES": "Si alguien hace pastar su ganado en un campo o una viña, y lo deja suelto de manera que este va a pastar también en campo ajeno, deberá indemnizar con los mejores productos de su campo y de su viña.",
+        "CEI": "Quando un uomo usa come pascolo un campo o una vigna e lascia che il suo bestiame vada a pascolare nel campo altrui, deve dare l'indennizzo con il meglio del suo campo e con il meglio della sua vigna."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּֽי תֵצֵ֨א אֵ֜שׁ וּ/מָצְאָ֤ה קֹצִים֙ וְ/נֶאֱכַ֣ל גָּדִ֔ישׁ א֥וֹ הַ/קָּמָ֖ה א֣וֹ הַ/שָּׂדֶ֑ה שַׁלֵּ֣ם יְשַׁלֵּ֔ם הַ/מַּבְעִ֖ר אֶת הַ/בְּעֵרָֽה׃",
+        "LXX": "Ἐὰν δὲ καταβοσκήσῃ τις ἀγρὸν ἢ ἀμπελῶνα, καὶ ἀφῇ τὸ κτῆνος αὐτοῦ καταβοσκῆσαι ἀγρὸν ἕτερον, ἀποτίσει ἐκ τοῦ ἀγροῦ αὐτοῦ κατὰ τὸ γένημα αὐτοῦ· ἐὰν δὲ πάντα τὸν ἀγρὸν καταβοσκήσῃ, τὰ βέλτιστα τοῦ ἀγροῦ αὐτοῦ καὶ τὰ βέλτιστα τοῦ ἀμπελῶνος αὐτοῦ ἀποτίσει.",
+        "VUL": "Si læserit quispiam agrum vel vineam, et dimiserit jumentum suum ut depascatur aliena : quidquid optimum habuerit in agro suo, vel in vinea, pro damni æstimatione restituet.",
+        "SYN": "Если кто потравит поле, или виноградник, пустив скот свой травить чужое поле, [смотря по плодам его пусть заплатит со своего поля; а если потравит всё поле,] пусть вознаградит лучшим из поля своего и лучшим из виноградника своего.",
+        "NEO": "Si un feu éclate et que, après avoir atteint les épines, il consume des gerbes, ou du blé sur pied, ou un champ, celui qui aura allumé l’incendie donnera un dédommagement.",
+        "NAB": "If the fire spreads further, and catches on to thorn bushes, so that shocked grain or standing grain or the field itself is burned up, the one who started the fire must make full restitution.",
+        "VAT_ES": "Si un fuego se propaga y alcanza los matorrales, y así se destruye la cosecha ya amontonada o la que aún no había sido segada o el campo, el causante del incendio deberá indemnizar.",
+        "CEI": "Quando un fuoco si propaga e si attacca ai cespugli spinosi, se viene bruciato un mucchio di covoni o il grano in spiga o il grano in erba, colui che ha provocato l'incendio darà l'indennizzo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כִּֽי יִתֵּן֩ אִ֨ישׁ אֶל רֵעֵ֜/הוּ כֶּ֤סֶף אֽוֹ כֵלִים֙ לִ/שְׁמֹ֔ר וְ/גֻנַּ֖ב מִ/בֵּ֣ית הָ/אִ֑ישׁ אִם יִמָּצֵ֥א הַ/גַּנָּ֖ב יְשַׁלֵּ֥ם שְׁנָֽיִם׃",
+        "LXX": "Ἐὰν δὲ ἐξελθὸν πῦρ εὕρῃ ἀκάνθας καὶ προσεμπρήσῃ ἅλωνας ἢ στάχυς ἢ πεδίον, ἀποτίσει ὁ τὸ πῦρ ἐκκαύσας.",
+        "VUL": "Si egressus ignis invenerit spinas, et comprehenderit acervos frugum, sive stantes segetes in agris, reddet damnum qui ignem succenderit.",
+        "SYN": "Если появится огонь и охватит терн и выжжет копны, или жатву, или поле, то должен заплатить, кто произвел сей пожар.",
+        "NEO": "Si un homme donne en garde à un autre de l’argent ou des objets, et qu’on les vole de la maison de ce dernier, le voleur, si on le trouve, restituera le double.",
+        "NAB": "\"When a man gives money or an article to another for safekeeping and it is stolen from the latter's house, the thief, if caught, must make twofold restitution.",
+        "VAT_ES": "Si un hombre entrega a otro en depósito dinero o algún objeto, y alguien los roba de la casa de este último, el ladrón, si es descubierto, restituirá el doble.",
+        "CEI": "Quando un uomo dà in custodia al suo prossimo argento od oggetti e poi nella casa di questo uomo viene commesso un furto, se si trova il ladro, restituirà il doppio."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אִם לֹ֤א יִמָּצֵא֙ הַ/גַּנָּ֔ב וְ/נִקְרַ֥ב בַּֽעַל הַ/בַּ֖יִת אֶל הָֽ/אֱלֹהִ֑ים אִם לֹ֥א שָׁלַ֛ח יָד֖/וֹ בִּ/מְלֶ֥אכֶת רֵעֵֽ/הוּ׃",
+        "LXX": "Ἐὰν δέ τις δῷ τῷ πλησίον ἀργύριον ἢ σκεύη φυλάξαι, καὶ κλαπῇ ἐκ τῆς οἰκίας τοῦ ἀνθρώπου, ἐὰν εὑρεθῇ ὁ κλέψας, ἀποτίσει τὸ διπλοῦν·",
+        "VUL": "Si quis commendaverit amico pecuniam aut vas in custodiam, et ab eo, qui susceperat, furto ablata fuerint : si invenitur fur, duplum reddet :",
+        "SYN": "Если кто отдаст ближнему на сохранение серебро или вещи, и они украдены будут из дома его, то, если найдется вор, пусть он заплатит вдвое;",
+        "NEO": "Si le voleur n’est pas trouvé, le maître de la maison se présentera devant Dieu, pour déclarer+ 22:7 Déclarer en consultant l’oracle.* s’il n’a pas mis la main sur le bien de son prochain.",
+        "NAB": "If the thief is not caught, the owner of the house shall be brought to God, to swear that he himself did not lay hands on his neighbor's property.",
+        "VAT_ES": "Si no se logra descubrir al ladrón, el dueño de la casa se presentará ante Dios para atestiguar que no ha puesto su mano sobre los bienes del otro.",
+        "CEI": "Se il ladro non si trova, il padrone della casa si accosterà a Dio per giurare che non ha allungato la mano sulla proprietà del suo prossimo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "עַֽל כָּל דְּבַר פֶּ֡שַׁע עַל שׁ֡וֹר עַל חֲ֠מוֹר עַל שֶׂ֨ה עַל שַׂלְמָ֜ה עַל כָּל אֲבֵדָ֗ה אֲשֶׁ֤ר יֹאמַר֙ כִּי ה֣וּא זֶ֔ה עַ֚ד הָֽ/אֱלֹהִ֔ים יָבֹ֖א דְּבַר שְׁנֵי/הֶ֑ם אֲשֶׁ֤ר יַרְשִׁיעֻ/ן֙ אֱלֹהִ֔ים יְשַׁלֵּ֥ם שְׁנַ֖יִם לְ/רֵעֵֽ/הוּ׃",
+        "LXX": "ἐὰν δὲ μὴ εὑρεθῇ ὁ κλέψας, προσελεύσεται ὁ κύριος τῆς οἰκίας ἐνώπιον τοῦ θεοῦ καὶ ὀμεῖται, ἦ μὴν μὴ αὐτὸν πεπονηρεῦσθαι ἐφ’ ὅλης τῆς παρακαταθήκης τοῦ πλησίον.",
+        "VUL": "si latet fur, dominus domus applicabitur ad deos, et jurabit quod non extenderit manum in rem proximi sui,",
+        "SYN": "а если не найдется вор, пусть хозяин дома придет пред судей [и поклянется], что не простер руки своей на собственность ближнего своего.",
+        "NEO": "Quel que soit le corps du délit, bœuf, âne, brebis, vêtement ou tout objet perdu, au sujet duquel on dira : « C’est bien cela ! » la cause des deux parties ira jusqu’à Dieu, et celui que Dieu aura condamné restituera le double à son prochain.",
+        "NAB": "In every question of dishonest appropriation, whether it be about an ox, or an ass, or a sheep, or a garment, or anything else that has disappeared, where another claims that the thing is his, both parties shall present their case before God; the one whom God convicts must make twofold restitution to the other.",
+        "VAT_ES": "En todo asunto delictivo referente a un buey, un asno, una oveja, un traje o cualquier objeto desaparecido, del cual su propietario pueda decir: «Indudablemente es este», el litigio será llevado ante Dios; y aquel a quien Dios declare culpable, restituirá al otro el doble.",
+        "CEI": "Qualunque sia l'oggetto di una frode, si tratti di un bue, di un asino, di un montone, di una veste, di qualunque oggetto perduto, di cui uno dice: \"È questo!\", la causa delle due parti andrà fino a Dio: colui che Dio dichiarerà colpevole restituirà il doppio al suo prossimo."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "כִּֽי יִתֵּן֩ אִ֨ישׁ אֶל רֵעֵ֜/הוּ חֲמ֨וֹר אוֹ שׁ֥וֹר אוֹ שֶׂ֛ה וְ/כָל בְּהֵמָ֖ה לִ/שְׁמֹ֑ר וּ/מֵ֛ת אוֹ נִשְׁבַּ֥ר אוֹ נִשְׁבָּ֖ה אֵ֥ין רֹאֶֽה׃",
+        "LXX": "κατὰ πᾶν ῥητὸν ἀδίκημα, περί τε μόσχου καὶ ὑποζυγίου καὶ προβάτου καὶ ἱματίου καὶ πάσης ἀπωλίας τῆς ἐνκαλουμένης, ὅ τι οὖν ἂν ᾖ, ἐνώπιον τοῦ θεοῦ ἐλεύσεται ἡ κρίσις ἀμφοτέρων, καὶ ὁ ἁλοὺς διὰ τοῦ θεοῦ ἀποτίσει διπλοῦν τῷ πλησίον.",
+        "VUL": "ad perpetrandam fraudem, tam in bove quam in asino, et ove ac vestimento, et quidquid damnum inferre potest : ad deos utriusque causa perveniet, et si illi judicaverint, duplum restituet proximo suo.",
+        "SYN": "О всякой вещи спорной, о воле, об осле, об овце, об одежде, о всякой вещи потерянной, о которой кто-нибудь скажет, что она его, дело обоих должно быть доведено до судей: кого обвинят судьи, тот заплатит ближнему своему вдвое.",
+        "NEO": "Si un homme donne en garde à un autre un bœuf, une brebis, une tête de bétail quelconque, et que l’animal meure, se casse un membre, ou soit enlevé, sans qu’il y ait de témoin,",
+        "NAB": "\"When a man gives an ass, or an ox, or a sheep, or any other animal to another for safekeeping, if it dies, or is maimed or snatched away, without anyone witnessing the fact,",
+        "VAT_ES": "Si alguien entrega a otra persona un asno, un buey, una oveja o cualquier otro animal para su custodia, y el animal muere, sufre una fractura o es sustraído en ausencia de testigos,",
+        "CEI": "Quando un uomo dà in custodia al suo prossimo un asino o un bue o un capo di bestiame minuto o qualsiasi bestia, se la bestia è morta o si è prodotta una frattura o è stata rapita senza testimone,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "שְׁבֻעַ֣ת יְהוָ֗ה תִּהְיֶה֙ בֵּ֣ין שְׁנֵי/הֶ֔ם אִם לֹ֥א שָׁלַ֛ח יָד֖/וֹ בִּ/מְלֶ֣אכֶת רֵעֵ֑/הוּ וְ/לָקַ֥ח בְּעָלָ֖י/ו וְ/לֹ֥א יְשַׁלֵּֽם׃",
+        "LXX": "Ἐὰν δέ τις δῷ τῷ πλησίον ὑποζύγιον ἢ μόσχον ἢ πρόβατον ἢ πᾶν κτῆνος φυλάξαι, καὶ συντριβῇ ἢ τελευτήσῃ ἢ αἰχμάλωτον γένηται, καὶ μηδεὶς γνῷ,",
+        "VUL": "Si quis commendaverit proximo suo asinum, bovem, ovem, et omne jumentum ad custodiam, et mortuum fuerit, aut debilitatum, vel captum ab hostibus, nullusque hoc viderit :",
+        "SYN": "Если кто отдаст ближнему своему осла, или вола, или овцу, или какой другой скот на сбережение, а он умрет, или будет поврежден, или уведен, так что никто сего не увидит, --",
+        "NEO": "le serment de \\+w Yahweh|strong=\"H3068\"\\+w** interviendra entre les deux parties, pour qu’on sache si le dépositaire n’a pas mis la main sur le bien de son prochain ; et le propriétaire de la bête acceptera ce serment, et l’autre n’aura pas à indemniser.",
+        "NAB": "the custodian shall swear by the LORD that he did not lay hands on his neighbor's property; the owner must accept the oath, and no restitution is to be made.",
+        "VAT_ES": "el depositario deber[a jurar por el Señor que no ha puesto su mano sobre la propiedad ajena. El propietario aceptará el juramento, y aquel no estará obligado a indemnizar.",
+        "CEI": "tra le due parti interverrà un giuramento per il Signore, per dichiarare che il depositario non ha allungato la mano sulla proprietà del suo prossimo. Il padrone della bestia accetterà e l'altro non dovrà restituire."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/אִם גָּנֹ֥ב יִגָּנֵ֖ב מֵ/עִמּ֑/וֹ יְשַׁלֵּ֖ם לִ/בְעָלָֽי/ו׃",
+        "LXX": "ὅρκος ἔσται τοῦ θεοῦ ἀνὰ μέσον ἀμφοτέρων, ἦ μὴν μὴ αὐτὸν πεπονηρεῦσθαι καθόλου τῆς παρακαταθήκης τοῦ πλησίον· καὶ οὕτως προσδέξεται ὁ κύριος αὐτοῦ, καὶ οὐκ ἀποτίσει.",
+        "VUL": "jusjurandum erit in medio, quod non extenderit manum ad rem proximi sui : suscipietque dominus juramentum, et ille reddere non cogetur.",
+        "SYN": "клятва пред Господом да будет между обоими в том, что _взявший_ не простер руки своей на собственность ближнего своего; и хозяин должен принять, а _тот_ не будет платить;",
+        "NEO": "Mais si la bête a été dérobée chez lui, il aura à indemniser le propriétaire.",
+        "NAB": "But if the custodian is really guilty of theft, he must make restitution to the owner.",
+        "VAT_ES": "Pero si el animal fue robado estando presente el depositario, deberá indemnizar.",
+        "CEI": "Ma se la bestia è stata rubata quando si trovava presso di lui, pagherà l'indennizzo al padrone di essa."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אִם טָרֹ֥ף יִטָּרֵ֖ף יְבִאֵ֣/הוּ עֵ֑ד הַ/טְּרֵפָ֖ה לֹ֥א יְשַׁלֵּֽם׃",
+        "LXX": "ἐὰν δὲ κλαπῇ παρ’ αὐτοῦ, ἀποτίσει τῷ κυρίῳ·",
+        "VUL": "Quod si furto ablatum fuerit, restituet damnum domino ;",
+        "SYN": "а если украден будет у него, то должен заплатить хозяину его;",
+        "NEO": "Si elle a été déchirée par une bête féroce, il en produira les restes en témoignage, et il n’aura pas à indemniser pour la bête déchirée.",
+        "NAB": "If it has been killed by a wild beast, let him bring it as evidence, and he need not make restitution for the mangled animal.",
+        "VAT_ES": "Si el animal ha sido despedazado por una fiera, traerá como testimonio los despojos y no tendrá que indemnizar por él.",
+        "CEI": "Se invece è stata sbranata, la porterà in testimonianza e non dovrà dare l'indennizzo per la bestia sbranata."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/כִֽי יִשְׁאַ֥ל אִ֛ישׁ מֵ/עִ֥ם רֵעֵ֖/הוּ וְ/נִשְׁבַּ֣ר אוֹ מֵ֑ת בְּעָלָ֥י/ו אֵין עִמּ֖/וֹ שַׁלֵּ֥ם יְשַׁלֵּֽם׃",
+        "LXX": "ἐὰν δὲ θηριάλωτον γένηται, ἄξει αὐτὸν ἐπὶ τὴν θήραν, καὶ οὐκ ἀποτίσει.",
+        "VUL": "si comestum a bestia, deferat ad eum quod occisum est, et non restituet.",
+        "SYN": "если же будет _зверем_ растерзан, то пусть в доказательство представит растерзанное: за растерзанное он не платит.",
+        "NEO": "Si un homme emprunte à un autre une bête, et qu’elle se casse un membre ou meure, son propriétaire n’étant pas présent, il y aura lieu à indemnité.",
+        "NAB": "\"When a man borrows an animal from his neighbor, if it is maimed or dies while the owner is not present, the man must make restitution.",
+        "VAT_ES": "Si alguien pide prestado un animal, y este sufre una fractura o muere en ausencia de su dueño, el que lo recibió en préstamo deberá indemnizar.",
+        "CEI": "Quando un uomo prende in prestito dal suo prossimo una bestia e questa si è prodotta una frattura o è morta in assenza del padrone, dovrà pagare l'indennizzo."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אִם בְּעָלָ֥י/ו עִמּ֖/וֹ לֹ֣א יְשַׁלֵּ֑ם אִם שָׂכִ֣יר ה֔וּא בָּ֖א בִּ/שְׂכָרֽ/וֹ׃",
+        "LXX": "Ἐὰν δὲ αἰτήσῃ τις παρὰ τοῦ πλησίον, καὶ συντριβῇ ἢ ἀποθάνῃ ἢ αἰχμάλωτον γένηται, ὁ δὲ κύριος μὴ ᾖ μετ’ αὐτοῦ, ἀποτίσει·",
+        "VUL": "Qui a proximo suo quidquam horum mutuo postulaverit, et debilitatum aut mortuum fuerit domino non præsente, reddere compelletur.",
+        "SYN": "Если кто займет у ближнего своего скот, и он будет поврежден, или умрет, а хозяина его не было при нем, то должен заплатить;",
+        "NEO": "Si le propriétaire est présent, on n’indemnisera pas. Si la bête était louée, le prix de location sera une compensation.+ 22:14 On peut aussi traduire : « Si l’accident arrive à un salarié, on se compensera sur son salaire ».*",
+        "NAB": "But if the owner is present, he need not make restitution. If it was hired, this was covered by the price of its hire.",
+        "VAT_ES": "Si su dueño estaba presente, no estará obligado a hacerlo. Si lo había alquilado, le pagara el precio del alquiler.",
+        "CEI": "Ma se il padrone si trova presente, non deve restituire; se si tratta di una bestia presa a nolo, la sua perdita è compensata dal prezzo del noleggio."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/כִֽי יְפַתֶּ֣ה אִ֗ישׁ בְּתוּלָ֛ה אֲשֶׁ֥ר לֹא אֹרָ֖שָׂה וְ/שָׁכַ֣ב עִמָּ֑/הּ מָהֹ֛ר יִמְהָרֶ֥/נָּה לּ֖/וֹ לְ/אִשָּֽׁה׃",
+        "LXX": "ἐὰν δὲ ὁ κύριος ᾖ μετ’ αὐτοῦ, οὐκ ἀποτίσει· ἐὰν δὲ μισθωτὸς ᾖ, ἔσται αὐτῷ ἀντὶ τοῦ μισθοῦ αὐτοῦ.",
+        "VUL": "Quod si impræsentiarum dominus fuerit, non restituet, maxime si conductum venerat pro mercede operis sui.",
+        "SYN": "если же хозяин его был при нем, то не должен платить; если он взят был в наймы за деньги, то пусть и пойдет за ту цену.",
+        "NEO": "Si un homme séduit une vierge qui n’est pas fiancée, et couche avec elle, il paiera sa dot et la prendra pour femme.",
+        "NAB": "\"When a man seduces a virgin who is not betrothed, and lies with her, he shall pay her marriage price and marry her.",
+        "VAT_ES": "Si un hombre seduce a una mujer virgen que no está desposada y se acuesta con ella, deberá tomarla por esposa pagando el precio debido.",
+        "CEI": "Quando un uomo seduce una vergine non ancora fidanzata e pecca con lei, ne pagherà la dote nuziale ed essa diverrà sua moglie."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אִם מָאֵ֧ן יְמָאֵ֛ן אָבִ֖י/הָ לְ/תִתָּ֣/הּ ל֑/וֹ כֶּ֣סֶף יִשְׁקֹ֔ל כְּ/מֹ֖הַר הַ/בְּתוּלֹֽת׃",
+        "LXX": "Ἐὰν δὲ ἀπατήσῃ τις παρθένον ἀμνήστευτον καὶ κοιμηθῇ μετ’ αὐτῆς, φερνῇ φερνιεῖ αὐτὴν αὐτῷ γυναῖκα.",
+        "VUL": "Si seduxerit quis virginem necdum desponsatam, dormieritque cum ea : dotabit eam, et habebit eam uxorem.",
+        "SYN": "Если обольстит кто девицу необрученную и переспит с нею, пусть даст ей вено [и возьмет ее] себе в жену;",
+        "NEO": "Si le père refuse de la lui accorder, le séducteur paiera l’argent qu’on donne pour la dot des vierges.",
+        "NAB": "If her father refuses to give her to him, he must still pay him the customary marriage price for virgins.",
+        "VAT_ES": "Si el padre de la joven se niega a dársela, el seductor pagará una suma equivalente al precio estipulado para casarse con una virgen.",
+        "CEI": "Se il padre di lei si rifiuta di dargliela, egli dovrà versare una somma di denaro pari alla dote nuziale delle vergini."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "מְכַשֵּׁפָ֖ה לֹ֥א תְחַיֶּֽה׃",
+        "LXX": "ἐὰν δὲ ἀνανεύων ἀνανεύσῃ καὶ μὴ βούληται ὁ πατὴρ αὐτῆς δοῦναι αὐτὴν αὐτῷ γυναῖκα, ἀργύριον ἀποτίσει τῷ πατρὶ καθ’ ὅσον ἐστὶν ἡ φερνὴ τῶν παρθένων.",
+        "VUL": "Si pater virginis dare noluerit, reddet pecuniam juxta modum dotis, quam virgines accipere consueverunt.",
+        "SYN": "а если отец не согласится [и не захочет] выдать ее за него, пусть заплатит [отцу] _столько_ серебра, сколько _полагается_ на вено девицам.",
+        "NEO": "Tu ne laisseras pas vivre la magicienne.",
+        "NAB": "\"You shall not let a sorceress live.",
+        "VAT_ES": "No dejarás vivir a la hechicera.",
+        "CEI": "Non lascerai vivere colei che pratica la magìa."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כָּל שֹׁכֵ֥ב עִם בְּהֵמָ֖ה מ֥וֹת יוּמָֽת׃",
+        "LXX": "Φαρμακοὺς οὐ περιποιήσετε.",
+        "VUL": "Maleficos non patieris vivere.",
+        "SYN": "Ворожеи не оставляй в живых.",
+        "NEO": "Quiconque a commerce avec une bête sera mis à mort.",
+        "NAB": "\"Anyone who lies with an animal shall be put to death.",
+        "VAT_ES": "El que tenga trato sexual con una bestia será castigado con la muerte.",
+        "CEI": "Chiunque si abbrutisce con una bestia sia messo a morte."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "זֹבֵ֥חַ לָ/אֱלֹהִ֖ים יָֽחֳרָ֑ם בִּלְתִּ֥י לַ/יהוָ֖ה לְ/בַדּֽ/וֹ׃",
+        "LXX": "Πᾶν κοιμώμενον μετὰ κτήνους, θανάτῳ ἀποκτενεῖτε αὐτούς.",
+        "VUL": "Qui coierit cum jumento, morte moriatur.",
+        "SYN": "Всякий скотоложник да будет предан смерти.",
+        "NEO": "Celui qui offre des sacrifices aux dieux, et non à \\+w Yahweh|strong=\"H3068\"\\+w** seul, sera voué à l’anathème.",
+        "NAB": "\"Whoever sacrifices to any god, except to the LORD alone, shall be doomed.",
+        "VAT_ES": "El que ofrezca sacrificios a otro dios que no sea el Señor, será condenado al exterminio.",
+        "CEI": "Colui che offre un sacrificio agli dei, oltre al solo Signore, sarà votato allo sterminio."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/גֵ֥ר לֹא תוֹנֶ֖ה וְ/לֹ֣א תִלְחָצֶ֑/נּוּ כִּֽי גֵרִ֥ים הֱיִיתֶ֖ם בְּ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "Ὁ θυσιάζων θεοῖς θανάτῳ ὀλεθρευθήσεται, πλὴν Κυρίῳ μόνῳ.",
+        "VUL": "Qui immolat diis, occidetur, præterquam Domino soli.",
+        "SYN": "Приносящий жертву богам, кроме одного Господа, да будет истреблен.",
+        "NEO": "Tu ne maltraiteras pas l’étranger et tu ne l’opprimeras point, car vous avez été des étrangers dans le pays d’Égypte.",
+        "NAB": "\"You shall not molest or oppress an alien, for you were once aliens yourselves in the land of Egypt.",
+        "VAT_ES": "No maltratarás al extranjero ni lo oprimirás, porque ustedes fueron extranjeros en Egipto.",
+        "CEI": "Non molesterai il forestiero né lo opprimerai, perché voi siete stati forestieri nel paese d'Egitto."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "כָּל אַלְמָנָ֥ה וְ/יָת֖וֹם לֹ֥א תְעַנּֽוּ/ן׃",
+        "LXX": "Καὶ προσήλυτον οὐ κακώσετε οὐδὲ μὴ θλίψητε αὐτόν· ἦτε γάρ προσήλυτοι ἐν γῇ Αἰγύπτῳ.",
+        "VUL": "Advenam non contristabis, neque affliges eum : advenæ enim et ipsi fuistis in terra Ægypti.",
+        "SYN": "Пришельца не притесняй и не угнетай его, ибо вы сами были пришельцами в земле Египетской.",
+        "NEO": "Vous n’affligerez pas la veuve ni l’orphelin.",
+        "NAB": "You shall not wrong any widow or orphan.",
+        "VAT_ES": "No harás daño a la viuda ni al huérfano.",
+        "CEI": "Non maltratterai la vedova o l'orfano."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "אִם עַנֵּ֥ה תְעַנֶּ֖ה אֹת֑/וֹ כִּ֣י אִם צָעֹ֤ק יִצְעַק֙ אֵלַ֔/י שָׁמֹ֥עַ אֶשְׁמַ֖ע צַעֲקָתֽ/וֹ׃",
+        "LXX": "πᾶσαν χήραν καὶ ὀρφανὸν οὐ κακώσετε·",
+        "VUL": "Viduæ et pupillo non nocebitis.",
+        "SYN": "Ни вдовы, ни сироты не притесняйте;",
+        "NEO": "Si tu les affliges, ils crieront vers moi, et j’entendrai leur cri ;",
+        "NAB": "If ever you wrong them and they cry out to me, I will surely hear their cry.",
+        "VAT_ES": "Si les haces daño y ellos me piden auxilio, yo escucharé su clamor.",
+        "CEI": "Se tu lo maltratti, quando invocherà da me l'aiuto, io ascolterò il suo grido,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/חָרָ֣ה אַפִּ֔/י וְ/הָרַגְתִּ֥י אֶתְ/כֶ֖ם בֶּ/חָ֑רֶב וְ/הָי֤וּ נְשֵׁי/כֶם֙ אַלְמָנ֔וֹת וּ/בְנֵי/כֶ֖ם יְתֹמִֽים׃",
+        "LXX": "ἐὰν δὲ κακίᾳ κακώσητε αὐτοὺς καὶ κεκράξαντες καταβοήσωσι πρὸς μέ, ἀκοῇ εἰσακούσομαι τῆς φωνῆς αὐτῶν·",
+        "VUL": "Si læseritis eos, vociferabuntur ad me, et ego audiam clamorem eorum :",
+        "SYN": "если же ты притеснишь их, то, когда они возопиют ко Мне, Я услышу вопль их,",
+        "NEO": "ma colère s’enflammera, et je vous détruirai par l’épée, et vos femmes seront des veuves et vos enfants des orphelins.",
+        "NAB": "My wrath will flare up, and I will kill you with the sword; then your own wives will be widows, and your children orphans.",
+        "VAT_ES": "Entonces arderá mi ira, y yo los mataré a ustedes con la espada; sus mujeres quedará viudas, y sus hijos huérfanos.",
+        "CEI": "la mia collera si accenderà e vi farò morire di spada: le vostre mogli saranno vedove e i vostri figli orfani."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אִם כֶּ֣סֶף תַּלְוֶ֣ה אֶת עַמִּ֗/י אֶת הֶֽ/עָנִי֙ עִמָּ֔/ךְ לֹא תִהְיֶ֥ה ל֖/וֹ כְּ/נֹשֶׁ֑ה לֹֽא תְשִׂימ֥וּ/ן עָלָ֖י/ו נֶֽשֶׁךְ׃",
+        "LXX": "καὶ ὀργισθήσομαι θυμῷ καὶ ἀποκτενῶ ὑμᾶς μαχαίρᾳ, καὶ ἔσονται αἱ γυναῖκες ὑμῶν χῆραι καὶ τὰ παιδία ὑμῶν ὀρφανά.",
+        "VUL": "et indignabitur furor meus, percutiamque vos gladio, et erunt uxores vestræ viduæ, et filii vestri pupilli.",
+        "SYN": "и воспламенится гнев Мой, и убью вас мечом, и будут жены ваши вдовами и дети ваши сиротами.",
+        "NEO": "Si tu prêtes de l’argent à quelqu’un de mon peuple, au pauvre qui est avec toi, tu ne seras pas à son égard comme un créancier, tu n’exigeras pas de lui d’intérêt.",
+        "NAB": "\"If you lend money to one of your poor neighbors among my people, you shall not act like an extortioner toward him by demanding interest from him.",
+        "VAT_ES": "Si prestas dinero a un miembro de mi pueblo, al pobre que vive a tu lado, no te comportarás con él como un usurero, no le exigirás interés.",
+        "CEI": "Se tu presti denaro a qualcuno del mio popolo, all'indigente che sta con te, non ti comporterai con lui da usuraio: voi non dovete imporgli alcun interesse."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "אִם חָבֹ֥ל תַּחְבֹּ֖ל שַׂלְמַ֣ת רֵעֶ֑/ךָ עַד בֹּ֥א הַ/שֶּׁ֖מֶשׁ תְּשִׁיבֶ֥/נּוּ לֽ/וֹ׃",
+        "LXX": "Ἐὰν δὲ ἀργύριον ἐκδανίσῃς τῷ ἀδελφῷ τῷ πενιχρῷ παρὰ σοί, οὐκ ἔσῃ αὐτὸν κατεπείγων, οὐκ ἐπιθήσεις αὐτῷ τόκον.",
+        "VUL": "Si pecuniam mutuam dederis populo meo pauperi qui habitat tecum, non urgebis eum quasi exactor, nec usuris opprimes.",
+        "SYN": "Если дашь деньги взаймы бедному из народа Моего, то не притесняй его и не налагай на него роста.",
+        "NEO": "Si tu prends en gage le manteau de ton prochain, tu le lui rendras avant le coucher du soleil ;",
+        "NAB": "If you take your neighbor's cloak as a pledge, you shall return it to him before sunset;",
+        "VAT_ES": "Si tomas en prenda el manto de tu prójimo, devuélveselo antes que se ponga el sol,",
+        "CEI": "Se prendi in pegno il mantello del tuo prossimo, glielo renderai al tramonto del sole,"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "כִּ֣י הִ֤וא כסות/ה כְסוּת/וֹ֙ לְ/בַדָּ֔/הּ הִ֥וא שִׂמְלָת֖/וֹ לְ/עֹר֑/וֹ בַּ/מֶּ֣ה יִשְׁכָּ֔ב וְ/הָיָה֙ כִּֽי יִצְעַ֣ק אֵלַ֔/י וְ/שָׁמַעְתִּ֖י כִּֽי חַנּ֥וּן אָֽנִי׃",
+        "LXX": "ἐὰν δὲ ἐνεχύρασμα ἐνεχυράσῃς τὸ ἱμάτιον τοῦ πλησίον, πρὸ δυσμῶν ἡλίου ἀποδώσεις αὐτῷ·",
+        "VUL": "Si pignus a proximo tuo acceperis vestimentum, ante solis occasum reddes ei.",
+        "SYN": "Если возьмешь в залог одежду ближнего твоего, до захождения солнца возврати ее,",
+        "NEO": "car c’est sa seule couverture, c’est le vêtement dont il s’enveloppe le corps : sur quoi coucherait-il ? S’il crie vers moi, je l’entendrai car je suis compatissant.",
+        "NAB": "for this cloak of his is the only covering he has for his body. What else has he to sleep in? If he cries out to me, I will hear him; for I am compassionate.",
+        "VAT_ES": "porque ese es su único abrigo y el vestido de su cuerpo. De lo contrario, &iquest;con qué dormirá? Y si él me invoca, yo lo escucharé, porque soy compasivo.",
+        "CEI": "perché è la sua sola coperta, è il mantello per la sua pelle; come potrebbe coprirsi dormendo? Altrimenti, quando invocherà da me l'aiuto, io ascolterò il suo grido, perché io sono pietoso."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "אֱלֹהִ֖ים לֹ֣א תְקַלֵּ֑ל וְ/נָשִׂ֥יא בְ/עַמְּ/ךָ֖ לֹ֥א תָאֹֽר׃",
+        "LXX": "ἔστιν γάρ τοῦτο περιβόλαιον αὐτοῦ, μόνον τοῦτο τὸ ἱμάτιον ἀσχημοσύνης αὐτοῦ· ἐν τίνι κοιμηθήσεται; ἐὰν οὖν καταβοήσῃ πρὸς μέ, εἰσακούσομαι αὐτοῦ· ἐλεήμων γάρ εἰμι.",
+        "VUL": "Ipsum enim est solum, quo operitur, indumentum carnis ejus, nec habet aliud in quo dormiat : si clamaverit ad me, exaudiam eum, quia misericors sum.",
+        "SYN": "ибо она есть единственный покров у него, она -- одеяние тела его: в чем будет он спать? итак, когда он возопиет ко Мне, Я услышу, ибо Я милосерд.",
+        "NEO": "Tu ne blasphémeras pas contre Dieu, et tu ne maudiras pas un prince de ton peuple.",
+        "NAB": "\"You shall not revile God, nor curse a prince of your people.",
+        "VAT_ES": "No blasfemarás contra Dios, ni maldecirás a un jefe de tu pueblo.",
+        "CEI": "Non bestemmierai Dio e non maledirai il principe del tuo popolo."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "מְלֵאָתְ/ךָ֥ וְ/דִמְעֲ/ךָ֖ לֹ֣א תְאַחֵ֑ר בְּכ֥וֹר בָּנֶ֖י/ךָ תִּתֶּן לִּֽ/י׃",
+        "LXX": "Θεοὺς οὐ κακολογήσεις, καὶ ἄρχοντας τοῦ λαοῦ σου οὐ κακῶς ἐρεῖς.",
+        "VUL": "Diis non detrahes, et principi populi tui non maledices.",
+        "SYN": "Судей не злословь и начальника в народе твоем не поноси.",
+        "NEO": "Tu ne différeras pas de m’offrir les prémices de ta moisson et de ton pressoir. Tu me donneras le premier-né de tes fils.",
+        "NAB": "\"You shall not delay the offering of your harvest and your press. You shall give me the first-born of your sons.",
+        "VAT_ES": "No demorarás en ofrecer las primicias de la cosecha y de la vendimia. Me darás a tu hijo primogénito.",
+        "CEI": "Non ritarderai l'offerta di ciò che riempie il tuo granaio e di ciò che stilla dal tuo frantoio. Il primogenito dei tuoi figli lo darai a me."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "כֵּֽן תַּעֲשֶׂ֥ה לְ/שֹׁרְ/ךָ֖ לְ/צֹאנֶ֑/ךָ שִׁבְעַ֤ת יָמִים֙ יִהְיֶ֣ה עִם אִמּ֔/וֹ בַּ/יּ֥וֹם הַ/שְּׁמִינִ֖י תִּתְּנ/וֹ לִֽ/י׃",
+        "LXX": "ἀπαρχὰς ἅλωνος καὶ ληνοῦ σου οὐ καθυστερήσεις· τὰ πρωτότοκα τῶν υἱῶν σου δώσεις ἐμοί.",
+        "VUL": "Decimas tuas et primitias tuas non tardabis reddere : primogenitum filiorum tuorum dabis mihi.",
+        "SYN": "Не медли [приносить Мне] начатки от гумна твоего и от точила твоего; отдавай Мне первенца из сынов твоих;",
+        "NEO": "Tu feras de même du premier-né de ta vache et de ta brebis : il restera sept jours avec sa mère et le huitième jour tu me le donneras.",
+        "NAB": "You must do the same with your oxen and your sheep; for seven days the firstling may stay with its mother, but on the eighth day you must give it to me.",
+        "VAT_ES": "Lo mismo deberás hacer con tu ganado mayor y tu ganado menor: el primogénito estará siete días con su madre, y al octavo día me lo darás.",
+        "CEI": "Così farai per il tuo bue e per il tuo bestiame minuto: sette giorni resterà con sua madre, l'ottavo giorno me lo darai."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/אַנְשֵׁי קֹ֖דֶשׁ תִּהְי֣וּ/ן לִ֑/י וּ/בָשָׂ֨ר בַּ/שָּׂדֶ֤ה טְרֵפָה֙ לֹ֣א תֹאכֵ֔לוּ לַ/כֶּ֖לֶב תַּשְׁלִכ֥וּ/ן אֹתֽ/וֹ׃",
+        "LXX": "οὕτως ποιήσεις τὸν μόσχον σου καὶ τὸ πρόβατόν σου καὶ τὸ ὑποζύγιόν σου· ἑπτὰ ἡμέρας ἔσται ὑπὸ τὴν μητέρα, τῇ δὲ ὀγδόῃ ἡμέρᾳ ἀποδώσῃ μοι αὐτό.",
+        "VUL": "De bobus quoque, et ovibus similiter facies : septem diebus sit cum matre sua, die octava reddes illum mihi.",
+        "SYN": "то же делай с волом твоим и с овцою твоею [и с ослом твоим]: семь дней пусть они будут при матери своей, а в восьмой день отдавай их Мне.",
+        "NEO": "Vous serez pour moi des hommes saints ; vous ne mangerez pas la chair déchirée qui se trouvera dans les champs : vous la jetterez aux chiens.",
+        "NAB": "\"You shall be men sacred to me. Flesh torn to pieces in the field you shall not eat; throw it to the dogs.",
+        "VAT_ES": "Ustedes estarán consagrados a mí. No coman carne de un animal despedazado por una fiera, sino arrójenla a los perros.",
+        "CEI": "Voi sarete per me uomini santi: non mangerete la carne di una bestia sbranata nella campagna, la getterete ai cani."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "καὶ ἄνδρες ἅγιοι ἔσεσθέ μοι· καὶ κρέας θηριάλωτον οὐκ ἔδεσθε, τῷ κυνὶ ἀπορίψατε αὐτό.",
+        "VUL": "Viri sancti eritis mihi : carnem, quæ a bestiis fuerit prægustata, non comedetis, sed projicietis canibus.",
+        "SYN": "И будете у Меня людьми святыми; и мяса, растерзанного зверем в поле, не ешьте, псам бросайте его."
+      }
+    }
+  }
+}

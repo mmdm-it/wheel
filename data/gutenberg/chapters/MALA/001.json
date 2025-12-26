@@ -1,0 +1,267 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MALA_001",
+  "book_key": "MALA",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מַשָּׂ֥א דְבַר יְהוָ֖ה אֶל יִשְׂרָאֵ֑ל בְּ/יַ֖ד מַלְאָכִֽי׃",
+        "LXX": "ΛΗΜΜΑ λόγου Κυρίου ἐπὶ τὸν Ἰσραὴλ ἐν χειρὶ ἀγγέλου αὐτοῦ· θέσθε δὴ ἐπὶ τὰς καρδίας ὑμῶν.",
+        "VUL": "Onus verbi Domini ad Israël in manu Malachiæ.",
+        "SYN": "Пророческое слово Господа к Израилю через Малахию.",
+        "NEO": "Sentence. Parole de \\+w Yahweh|strong=\"H3068\"\\+w** à Israël+ 1:1 À Israël, à tout le peuple revenu de l’exil et composé surtout de Judéens.* par l’intermédiaire de Malachie.",
+        "NAB": "An oracle. The word of the LORD to Israel through Malachi.",
+        "VAT_ES": "Oráculo. Palabra del Señor a Israel por medio de Malaquías.",
+        "CEI": "Oracolo. Parola del Signore a Israele per mezzo di Malachia."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אָהַ֤בְתִּי אֶתְ/כֶם֙ אָמַ֣ר יְהוָ֔ה וַ/אֲמַרְתֶּ֖ם בַּ/מָּ֣ה אֲהַבְתָּ֑/נוּ הֲ/לוֹא אָ֨ח עֵשָׂ֤ו לְ/יַֽעֲקֹב֙ נְאֻם יְהוָ֔ה וָ/אֹהַ֖ב אֶֽת יַעֲקֹֽב׃",
+        "LXX": "Ἠγάπησα ὑμᾶς, λέγει Κύριος· καὶ εἴπατε Ἐν τίνι ἠγάπησας ἡμᾶς; οὐκ ἀδελφὸς ἦν Ἠσαὺ τοῦ Ἰακώβ; λέγει Κύριος· καὶ ἠγάπησα τὸν Ἰακώβ,",
+        "VUL": "Dilexi vos, dicit Dominus, et dixistis : In quo dilexisti nos ? Nonne frater erat Esau Jacob ? dicit Dominus : et dilexi Jacob,",
+        "SYN": "Я возлюбил вас, говорит Господь. А вы говорите: \"в чем явил Ты любовь к нам?\" - Не брат ли Исав Иакову? говорит Господь; и однако же Я возлюбил Иакова,",
+        "NEO": "Je vous ai aimés, dit \\+w Yahweh|strong=\"H3068\"\\+w** ; et vous dites+ 1:2 \\+it Vous dites\\+it* : c’est sa misère présente qui fait parler ainsi Israël.* : « En quoi nous as-tu aimés ? » — Esaü n’est-il pas frère de Jacob ? — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** ; et j’ai aimé Jacob,",
+        "NAB": "I have loved you, says the LORD; but you say, \"How have you loved us?\"",
+        "VAT_ES": "&iexcl;Yo los he amado!, dice el Señor, y ustedes dicen: «&iquest;En qué nos has amado?». &iquest;Esaú no era el hermano de Jacob? –oráculo del Señor–. Sin embargo, yo amé a Jacob",
+        "CEI": "Vi ho amati, dice il Signore. E voi dite: \"Come ci hai amati?\". Non era forse Esaù fratello di Giacobbe? - oracolo del Signore - Eppure ho amato Giacobbe"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/אֶת עֵשָׂ֖ו שָׂנֵ֑אתִי וָ/אָשִׂ֤ים אֶת הָרָי/ו֙ שְׁמָמָ֔ה וְ/אֶת נַחֲלָת֖/וֹ לְ/תַנּ֥וֹת מִדְבָּֽר׃",
+        "LXX": "τὸν δὲ Ἠσαὺ ἐμίσησα, καὶ ἔταξα τὰ ὅρια αὐτοῦ εἰς ἀφανισμὸν καὶ τὴν κληρονομίαν αὐτοῦ εἰς δόματα ἐρήμου.",
+        "VUL": "Esau autem odio habui, et posui montes ejus in solitudinem, et hæreditatem ejus in dracones deserti.",
+        "SYN": "а Исава возненавидел и предал горы его опустошению, и владения его - шакалам пустыни.",
+        "NEO": "mais j’ai haï Esaü ; j’ai fait de ses montagnes une solitude, et \\+add livré\\+add** son héritage aux chacals du désert+ 1:3 \\+it Aux chacals du désert\\+it* ; LXX, \\+it en prairies du désert\\+it*.*.",
+        "NAB": "Was not Esau Jacob's brother? says the LORD: yet I loved Jacob, but hated Esau; I made his mountains a waste, his heritage a desert for jackals.",
+        "VAT_ES": "y aborrecí a Esaú. Yo hice de sus montañas una desolación y di su herencia a los chacales del desierto.",
+        "CEI": "e ho odiato Esaù. Ho fatto dei suoi monti un deserto e ho dato la sua eredità agli sciacalli del deserto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּֽי תֹאמַ֨ר אֱד֜וֹם רֻשַּׁ֗שְׁנוּ וְ/נָשׁוּב֙ וְ/נִבְנֶ֣ה חֳרָב֔וֹת כֹּ֤ה אָמַר֙ יְהוָ֣ה צְבָא֔וֹת הֵ֥מָּה יִבְנ֖וּ וַ/אֲנִ֣י אֶהֱר֑וֹס וְ/קָרְא֤וּ לָ/הֶם֙ גְּב֣וּל רִשְׁעָ֔ה וְ/הָ/עָ֛ם אֲשֶׁר זָעַ֥ם יְהוָ֖ה עַד עוֹלָֽם׃",
+        "LXX": "διότι ἐρεῖ Ἡ Ἰδουμαία κατέστραπται, καὶ ἐπιστρέψωμεν καὶ ἀνοικοδομήσωμεν τὰς ἐρήμους. τάδε λέγει Κύριος Παντοκράτωρ Αὐτοὶ οἰκοδομήσουσιν καὶ ἐγὼ καταστρέψω· καὶ ἐπικληθήσεται αὐτοῖς ὅρια ἀνομίας, καὶ λαὸς ἐφ’ ὃν παρατέτακται Κύριος ἕως αἰῶνος.",
+        "VUL": "Quod si dixerit Idumæa : Destructi sumus, sed revertentes ædificabimus quæ destructa sunt : hæc dicit Dominus exercituum : Isti ædificabunt, et ego destruam : et vocabuntur termini impietatis, et populus cui iratus est Dominus usque in æternum.",
+        "SYN": "Если Едом скажет: \"мы разорены, но мы восстановим разрушенное\", то Господь Саваоф говорит: они построят, а Я разрушу, и прозовут их областью нечестивою, народом, на который Господь прогневался навсегда.",
+        "NEO": "Si Edom dit : « Nous avons été détruits, mais nous rebâtirons les ruines, » — ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** des armées : Eux, ils bâtiront, et moi, je renverserai ; et l’on dira d’eux : « Territoire d’iniquité, peuple contre lequel \\+w Yahweh|strong=\"H3068\"\\+w** est irrité pour toujours. »",
+        "NAB": "If Edom says, \"We have been crushed but we will rebuild the ruins,\" Thus says the LORD of hosts: They indeed may build, but I will tear down, And they shall be called the land of guilt, the people with whom the LORD is angry forever.",
+        "VAT_ES": "Si Edom dice: «&iexcl;Hemos sido destruidos, pero reconstruiremos nuestras ruinas!», así habla el Señor de los ejércitos: Ellos edificarán, y yo demoleré, se los llamará «Territorio de maldad» y «Pueblo contra quien el Señor está enojado para siempre».",
+        "CEI": "Se Edom dicesse: \"Siamo stati distrutti, ma ci rialzeremo dalle nostre rovine!\", il Signore degli eserciti dichiara: Essi ricostruiranno: ma io demolirò. Saranno chiamati Regione empia e Popolo contro cui il Signore è adirato per sempre."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/עֵינֵי/כֶ֖ם תִּרְאֶ֑ינָה וְ/אַתֶּ֤ם תֹּֽאמְרוּ֙ יִגְדַּ֣ל יְהוָ֔ה מֵ/עַ֖ל לִ/גְב֥וּל יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ὀφθαλμοὶ ὑμῶν ὄψονται, καὶ ὑμεῖς ἐρεῖτε Ἐμεγαλύνθη Κύριος ὑπεράνω τῶν ὁρίων τοῦ Ἰσραήλ.",
+        "VUL": "Et oculi vestri videbunt, et vos dicetis : Magnificetur Dominus super terminum Israël.",
+        "SYN": "И увидят это глаза ваши, и вы скажете: \"возвеличился Господь над пределами Израиля!\"",
+        "NEO": "Vos yeux le verront, et vous vous direz : « Que \\+w Yahweh|strong=\"H3068\"\\+w** soit glorifié+ 1:5 \\+it Que Yahweh soit glorifié\\+it* ou \\+it Yahweh est grand\\+it*. — \\+it Sur le territoire d’Israël\\+it*. D’autres : \\+it au delà du territoire d’Israël\\+it*.* sur le territoire d’Israël ! »",
+        "NAB": "Your own eyes shall see it, and you will say, \"Great is the LORD, even beyond the land of Israel.\"",
+        "VAT_ES": "Ustedes lo verán con sus ojos y dirán: «&iexcl;Grande es el Señor, aún más allá del territorio de Israel!».",
+        "CEI": "I vostri occhi lo vedranno e voi direte: \"Grande è il Signore anche al di là dei confini d'Israele\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בֵּ֛ן יְכַבֵּ֥ד אָ֖ב וְ/עֶ֣בֶד אֲדֹנָ֑י/ו וְ/אִם אָ֣ב אָ֣נִי אַיֵּ֣ה כְבוֹדִ֡/י וְ/אִם אֲדוֹנִ֣ים אָנִי֩ אַיֵּ֨ה מוֹרָאִ֜/י אָמַ֣ר יְהוָ֣ה צְבָא֗וֹת לָ/כֶם֙ הַ/כֹּֽהֲנִים֙ בּוֹזֵ֣י שְׁמִ֔/י וַ/אֲמַרְתֶּ֕ם בַּ/מֶּ֥ה בָזִ֖ינוּ אֶת שְׁמֶֽ/ךָ׃",
+        "LXX": "Υἱὸς δοξάζει πατέρα, καὶ δοῦλος τὸν κύριον αὐτοῦ. καὶ εἰ πατήρ εἰμι ἐγώ, ποῦ ἐστιν ἡ δόξα μου; καὶ εἰ κύριός εἰμι ἐγώ, ποῦ ἐστιν ὁ φόβος μου; λέγει Κύριος Παντοκράτωρ. ὑμεῖς οἱ ἱερεῖς οἱ φαυλίζοντες τὸ ὄνομά μου, καὶ εἴπατε Ἐν τίνι ἐφαυλίσαμεν τὸ ὄνομά σου;",
+        "VUL": "Filius honorat patrem, et servus dominum suum. Si ergo pater ego sum, ubi est honor meus ? et si Dominus ego sum, ubi est timor meus ? dicit Dominus exercituum. Ad vos, o sacerdotes, qui despicitis nomen meum, et dixistis : In quo despeximus nomen tuum ?",
+        "SYN": "Сын чтит отца и раб - господина своего; если Я отец, то где почтение ко Мне? и если Я Господь, то где благоговение предо Мною? говорит Господь Саваоф вам, священники, бесславящие имя Мое. Вы говорите: \"чем мы бесславим имя Твое?\"",
+        "NEO": "Un fils honore son père, et un serviteur son maître. Or, si je suis père, moi, où est l’honneur qui m’\\+add appartient\\+add** ? Et si je suis Seigneur, où est la crainte qui m’est due* ? dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées, à vous, prêtres, qui méprisez mon nom. Vous dites : « En quoi avons-nous méprisé ton nom ? »",
+        "NAB": "A son honors his father, and a servant fears his master; If then I am a father, where is the honor due to me? And if I am a master, where is the reverence due to me? - So says the LORD of hosts to you, O priests, who despise his name. But you ask, \"How have we despised your name?\"",
+        "VAT_ES": "El hijo honra a su padre y el servidor teme a su señor. Pero si yo soy Padre, &iquest;dónde está mi honor? si soy Señor, &iquest;dónde está mi temor?, les dice el Señor de los ejércitos, a ustedes, sacerdotes, que desprecian mi Nombre. Y ustedes dicen: «&iquest;En qué hemos despreciado tu Nombre?».",
+        "CEI": "Il figlio onora suo padre e il servo rispetta il suo padrone. Se io sono padre, dov'è l'onore che mi spetta? Se sono il padrone, dov'è il timore di me? Dice il Signore degli eserciti a voi, sacerdoti, che disprezzate il mio nome. Voi domandate: \"Come abbiamo disprezzato il tuo nome?\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "מַגִּישִׁ֤ים עַֽל מִזְבְּחִ/י֙ לֶ֣חֶם מְגֹאָ֔ל וַ/אֲמַרְתֶּ֖ם בַּ/מֶּ֣ה גֵֽאַלְנ֑וּ/ךָ בֶּ/אֱמָרְ/כֶ֕ם שֻׁלְחַ֥ן יְהוָ֖ה נִבְזֶ֥ה הֽוּא׃",
+        "LXX": "προσάγοντες πρὸς τὸ θυσιαστήριόν μου ἄρτους ἠλισγημένους. καὶ εἴπατε Ἐν τίνι ἠλισγήσαμεν αὐτούς; ἐν τῷ λέγειν ὑμᾶς Τράπεζα Κυρίου ἠλισγημένη ἐστίν, καὶ τὰ ἐπιτιθέμενα ἐξουδενώσατε.",
+        "VUL": "Offertis super altare meum panem pollutum, et dicitis : In quo polluimus te ? in eo quod dicitis : Mensa Domini despecta est.",
+        "SYN": "Вы приносите на жертвенник Мой нечистый хлеб, и говорите: \"чем мы бесславим Тебя?\" - Тем, что говорите: \"трапеза Господня не стоит уважения\".",
+        "NEO": "En ce que vous apportez sur mon autel un pain souillé+ 1:7 \\+it Un pain souillé\\+it*, expression désignant toutes les offrandes. — \\+it En quoi t’avons-nous souillé ?\\+it* LXX, \\+it en quoi l’avons-nous souillé ?\\+it* — \\+it En ce que vous dites\\+it* etc. : \\+it vous agissez comme si vous pensiez que la table de Yahweh\\+it*, c.-à-d. l’autel, est chose vile, dont on n’a pas à se soucier beaucoup, puisqu’elle ne rapporte aucun profit.*. Et vous dites : « En quoi t’avons-nous souillé ? » En ce que* vous dites : « La table de \\+w Yahweh|strong=\"H3068\"\\+w** est chose vile. »",
+        "NAB": "By offering polluted food on my altar! Then you ask, \"How have we polluted it?\" By saying the table of the LORD may be slighted!",
+        "VAT_ES": "Presentando sobre mi altar un alimento manchado, Y ustedes dicen: «&iquest;En qué te hemos manchado?». Diciendo: «La mesa del Señor es despreciable».",
+        "CEI": "Offrite sul mio altare un cibo contaminato e dite: \"Come ti abbiamo contaminato?\". Quando voi dite: \"La tavola del Signore è spregevole\""
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/כִֽי תַגִּשׁ֨וּ/ן עִוֵּ֤ר לִ/זְבֹּ֨חַ֙ אֵ֣ין רָ֔ע וְ/כִ֥י תַגִּ֛ישׁוּ פִּסֵּ֥חַ וְ/חֹלֶ֖ה אֵ֣ין רָ֑ע הַקְרִיבֵ֨/הוּ נָ֜א לְ/פֶחָתֶ֗/ךָ הֲ/יִּרְצְ/ךָ֙ א֚וֹ הֲ/יִשָּׂ֣א פָנֶ֔י/ךָ אָמַ֖ר יְהוָ֥ה צְבָאֽוֹת׃",
+        "LXX": "διότι ἐὰν προσαγάγητε τυφλὸν εἰς θυσίαν, οὐ κακόν; καὶ ἐὰν προσαγάγητε χωλὸν ἢ ἄρρωστον, οὐ κακόν; προσάγαγε δὴ αὐτὸ τῷ ἡγουμένῳ σου, εἰ προσδέξεταί σε, εἰ λήμψεται πρόσωπόν σου, λέγει Κύριος Παντοκράτωρ.",
+        "VUL": "Si offeratis cæcum ad immolandum, nonne malum est ? et si offeratis claudum et languidum, nonne malum est ? offer illud duci tuo, si placuerit ei, aut si susceperit faciem tuam, dicit Dominus exercituum.",
+        "SYN": "И когда приносите в жертву слепое, не худо ли это? или когда приносите хромое и больное, не худо ли это? Поднеси это твоему князю; будет ли он доволен тобою и благосклонно ли примет тебя? говорит Господь Саваоф.",
+        "NEO": "Quand vous présentez une bête* aveugle pour la* sacrifier, il n’y a pas de mal ! Et quand vous en* amenez une boiteuse et malade, il n’y a pas de mal ! Va donc l’offrir à ton gouverneur ? T’agréera-t-il+ 1:8 \\+it T’agréera-t-il ?\\+it* LXX (Alex, et Sinait.), Vulg. \\+it L’agréera-t-il ?\\+it** ? Te sera-t-il favorable ? dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "When you offer a blind animal for sacrifice, is this not evil? When you offer the lame or the sick, is it not evil? Present it to your governor; see if he will accept it, or welcome you, says the LORD of hosts.",
+        "VAT_ES": "Cuando ustedes presentan un animal ciego para el sacrificio, &iquest;no están obrando mal? Y cuando presentan un animal rengo o enfermo, &iquest;no están obrando mal? Ofrécelos a tu gobernador, a ver si te recibe bien y se muestra favorable, dice el Señor de los Ejércitos.",
+        "CEI": "e offrite un animale cieco in sacrificio, non è forse un male? Quando voi offrite un animale zoppo o malato, non è forse un male? Offritelo pure al vostro governatore: pensate che l'accetterà o che vi sarà grato? Dice il Signore degli eserciti."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֛ה חַלּוּ נָ֥א פְנֵי אֵ֖ל וִֽ/יחָנֵ֑/נוּ מִ/יֶּדְ/כֶם֙ הָ֣יְתָה זֹּ֔את הֲ/יִשָּׂ֤א מִ/כֶּם֙ פָּנִ֔ים אָמַ֖ר יְהוָ֥ה צְבָאֽוֹת׃",
+        "LXX": "καὶ νῦν ἐξιλάσκεσθε τὸ πρόσωπον τοῦ θεοῦ ὑμῶν καὶ δεήθητε αὐτοῦ· ἐν χερσὶν ὑμῶν γέγονεν ταῦτα· εἰ λήμψομαι ἐξ ὑμῶν πρόσωπα ὑμῶν; λέγει Κύριος Παντοκράτωρ.",
+        "VUL": "Et nunc deprecamini vultum Dei ut misereatur vestri (de manu enim vestra factum est hoc), si quomodo suscipiat facies vestras, dicit Dominus exercituum.",
+        "SYN": "Итак молитесь Богу, чтобы помиловал нас; а когда такое исходит из рук ваших, то может ли Он милостиво принимать вас? говорит Господь Саваоф.",
+        "NEO": "Et maintenant, suppliez donc Dieu d’avoir pitié de vous ! C’est par votre main que cela s’est fait ; sera-t-il amené par vous à avoir des égards ? dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "So now if you implore God for mercy on us, when you have done the like Will he welcome any of you? says the LORD of hosts.",
+        "VAT_ES": "Y ahora, aplaquen el rostro de Dios, para que él tenga piedad de nosotros. Todo esto viene de las manos de ustedes, &iquest;acaso él se les mostrará favorable?, dice el Señor de los ejércitos.",
+        "CEI": "Ora supplicate pure Dio perché abbia pietà di voi! Se fate tali cose, dovrebbe mostrarsi favorevole a voi? Dice il Signore degli eserciti."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "מִ֤י גַם בָּ/כֶם֙ וְ/יִסְגֹּ֣ר דְּלָתַ֔יִם וְ/לֹֽא תָאִ֥ירוּ מִזְבְּחִ֖/י חִנָּ֑ם אֵֽין לִ֨/י חֵ֜פֶץ בָּ/כֶ֗ם אָמַר֙ יְהוָ֣ה צְבָא֔וֹת וּ/מִנְחָ֖ה לֹֽא אֶרְצֶ֥ה מִ/יֶּדְ/כֶֽם׃",
+        "LXX": "διότι καὶ ἐν ὑμῖν συνκλεισθήσονται θύραι, καὶ οὐκ ἀνάψεται τὸ θυσιαστήριόν μου δωρεάν· οὐκ ἔστιν μου θέλημα ἐν ὑμῖν, λέγει Κύριος Παντοκράτωρ, καὶ θυσίαν οὐ προσδέξομαι ἐκ τῶν χειρῶν ὑμῶν.",
+        "VUL": "Quis est in vobis qui claudat ostia, et incendat altare meum gratuito ? non est mihi voluntas in vobis, dicit Dominus exercituum, et munus non suscipiam de manu vestra.",
+        "SYN": "Лучше кто-нибудь из вас запер бы двери, чтобы напрасно не держали огня на жертвеннике Моем. Нет Моего благоволения к вам, говорит Господь Саваоф, и приношение из рук ваших неблагоугодно Мне.",
+        "NEO": "Que l’un d’entre vous ne ferme-t-il plutôt les portes, pour que vous n’embrasiez pas mon autel en pure perte ! Je ne prends pas plaisir en vous, dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées, et je n’agrée pas d’offrande de votre main.+ 1:10 Mieux vaudrait supprimer tout à fait les sacrifices, en fermant les portes du parvis intérieur, où se trouvait l’autel des holocaustes.*",
+        "NAB": "Oh, that one among you would shut the temple gates to keep you from kindling fire on my altar in vain! I have no pleasure in you, says the LORD of hosts; neither will I accept any sacrifice from your hands,",
+        "VAT_ES": "&iquest;No habrá alguien entre ustedes que cierre las puertas, para que no enciendan en vano el fuego de mi altar? Yo no me complazco en ustedes, dice el Señor de los ejércitos, y no acepto las ofrendas de sus manos.",
+        "CEI": "Oh, ci fosse fra di voi chi chiude le porte, perché non arda più invano il mio altare! Non mi compiaccio di voi, dice il Signore degli eserciti, non accetto l'offerta delle vostre mani!"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּ֣י מִ/מִּזְרַח שֶׁ֜מֶשׁ וְ/עַד מְבוֹא֗/וֹ גָּד֤וֹל שְׁמִ/י֙ בַּ/גּוֹיִ֔ם וּ/בְ/כָל מָק֗וֹם מֻקְטָ֥ר מֻגָּ֛שׁ לִ/שְׁמִ֖/י וּ/מִנְחָ֣ה טְהוֹרָ֑ה כִּֽי גָד֤וֹל שְׁמִ/י֙ בַּ/גּוֹיִ֔ם אָמַ֖ר יְהוָ֥ה צְבָאֽוֹת׃",
+        "LXX": "διότι ἀπ’ ἀνατολῶν ἡλίου καὶ ἕως δυσμῶν τὸ ὄνομά μου δεδόξασται ἐν τοῖς ἔθνεσιν, καὶ ἐν παντὶ τόπῳ θυμίαμα προσάγεται τῷ ὀνόματὶ μου καὶ θυσία καθαρά· διότι μέγα τὸ ὄνομά μου ἐν τοῖς ἔθνεσιν, ⸂⸆⸃ λέγει Κύριος Παντοκράτωρ.",
+        "VUL": "Ab ortu enim solis usque ad occasum, magnum est nomen meum in gentibus, et in omni loco sacrificatur : et offertur nomini meo oblatio munda, quia magnum est nomen meum in gentibus, dicit Dominus exercituum.",
+        "SYN": "Ибо от востока солнца до запада велико будет имя Мое между народами, и на всяком месте будут приносить фимиам имени Моему, чистую жертву; велико будет имя Мое между народами, говорит Господь Саваоф.",
+        "NEO": "Car, du lever du soleil à son coucher, mon nom est grand parmi les nations, et en tout lieu on offre à mon nom de l’encens et une oblation pure, car mon nom est grand parmi les nations, dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées.+ 1:11 Ce verset est appliqué par la tradition catholique au sacrifice de la loi nouvelle. — \\+it On offre à mon nom de l’encens et une oblation pure\\+it*. Vulg. \\+it On fait des sacrifices et on offre à mon nom une oblation pure\\+it*. Les LXX sont pareils à l’hébreu ; le mot \\+it minchâh\\+it*, \\+it oblation\\+it* est rendu par θυσία.*",
+        "NAB": "For from the rising of the sun, even to its setting, my name is great among the nations; And everywhere they bring sacrifice to my name, and a pure offering; For great is my name among the nations, says the LORD of hosts.",
+        "VAT_ES": "Pero desde la salida del sol hasta su ocaso, mi Nombre es grande entre las naciones y en todo lugar se presenta a mi Nombre un sacrificio de incienso y una ofrenda pura; porque mi Nombre es grande entre las naciones, dice el Señor de los ejércitos.",
+        "CEI": "Poiché dall'oriente all'occidente grande è il mio nome fra le genti e in ogni luogo è offerto incenso al mio nome e una oblazione pura, perché grande è il mio nome fra le genti, dice il Signore degli eserciti."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/אַתֶּ֖ם מְחַלְּלִ֣ים אוֹת֑/וֹ בֶּ/אֱמָרְ/כֶ֗ם שֻׁלְחַ֤ן אֲדֹנָ/י֙ מְגֹאָ֣ל ה֔וּא וְ/נִיב֖/וֹ נִבְזֶ֥ה אָכְלֽ/וֹ׃",
+        "LXX": "ὑμεῖς δὲ βεβηλοῦτε αὐτὸ ἐν τῷ λέγειν ὑμᾶς Τράπεζα Κυρίου ἠλισγημένη ἐστίν, καὶ τὰ ἐπιτιθέμενα ἐξουδένωνται βρώματα αὐτοῦ.",
+        "VUL": "Et vos polluistis illud in eo quod dicitis : Mensa Domini contaminata est, et quod superponitur contemptibilis est, cum igne qui illud devorat.",
+        "SYN": "А вы хулите его тем, что говорите: \"трапеза Господня не стоит уважения, и доход от нее - пища ничтожная\".",
+        "NEO": "Et vous, vous le profanez quand vous dites : « La table du Seigneur est souillée, et ce qu’elle rapporte n’est qu’une méprisable nourriture+ 1:12 \\+it Et ce qu’elle rapporte n’est qu’une nourriture méprisable\\+it* ; m. à m., \\+it et son revenu est méprisable, sa nourriture\\+it*.*. »",
+        "NAB": "But you behave profanely toward me by thinking the LORD'S table and its offering may be polluted, and its food slighted.",
+        "VAT_ES": "Pero ustedes lo profanan cuando dicen: «La mesa del Señor está manchada, y su alimento es despreciable».",
+        "CEI": "Ma voi lo profanate quando dite: \"La tavola del Signore è contaminata e spregevole ciò che v'è sopra, il suo cibo\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/אֲמַרְתֶּם֩ הִנֵּ֨ה מַ/תְּלָאָ֜ה וְ/הִפַּחְתֶּ֣ם אוֹת֗/וֹ אָמַר֙ יְהוָ֣ה צְבָא֔וֹת וַ/הֲבֵאתֶ֣ם גָּז֗וּל וְ/אֶת הַ/פִּסֵּ֨חַ֙ וְ/אֶת הַ֣/חוֹלֶ֔ה וַ/הֲבֵאתֶ֖ם אֶת הַ/מִּנְחָ֑ה הַ/אֶרְצֶ֥ה אוֹתָ֛/הּ מִ/יֶּדְ/כֶ֖ם אָמַ֥ר יְהוָֽה׃",
+        "LXX": "καὶ εἴπατε Ταῦτα ἐκ κακοπαθίας ἐστίν. καὶ ἐξεφύσησα αὐτά, λέγει Κύριος Παντοκράτωρ. καὶ εἰσεφέρετε ἁρπάγματα καὶ τὰ χωλὰ καὶ τὰ ἐνοχλούμενα· καὶ ἐὰν φέρητε τὴν θυσίαν, εἰ προσδέξομαι αὐτὰ ἐκ τῶν χειρῶν ὑμῶν; λέγει Κύριος Παντοκράτωρ.",
+        "VUL": "Et dixistis : Ecce de labore, et exsufflastis illud, dicit Dominus exercituum : et intulistis de rapinis claudum et languidum, et intulistis munus : numquid suscipiam illud de manu vestra ? dicit Dominus.",
+        "SYN": "Притом говорите: \"вот сколько труда!\" и пренебрегаете ею, говорит Господь Саваоф, и приносите украденное, хромое и больное, и такого же свойства приносите хлебный дар: могу ли с благоволением принимать это из рук ваших? говорит Господь.",
+        "NEO": "Et vous dites : « Voici ! Quel ennui ! » et vous la dédaignez, dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées. Et vous amenez ce qui est dérobé+ 1:13 \\+it Dérobé\\+it*, ou peut-être, selon le sens de la même racine en arabe, \\+it mutilé\\+it*.*, ce qui est boiteux et ce qui est malade, et vous présentez cette offrande ! Puis-je l’agréer de votre main ? dit \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "You also say, \"What a burden!\" and you scorn it, says the LORD of hosts; You bring in what you seize, or the lame, or the sick; yes, you bring it as a sacrifice. Shall I accept it from your hands? says the LORD.",
+        "VAT_ES": "Ustedes dicen: «&iexcl;Qué fastidio!» y me provocan dice el Señor de los ejércitos. Cuando traen un animal robado, rengo o enfermo, cuando traen esas ofrendas, &iquest;puedo yo aceptarlas de sus manos?, dice el Señor.",
+        "CEI": "Voi aggiungete: \"Ah! che pena!\". Voi mi disprezzate, dice il Signore degli eserciti, e offrite animali rubati, zoppi, malati e li portate in offerta! Posso io gradirla dalle vostre mani? Dice il Signore."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/אָר֣וּר נוֹכֵ֗ל וְ/יֵ֤שׁ בְּ/עֶדְר/וֹ֙ זָכָ֔ר וְ/נֹדֵ֛ר וְ/זֹבֵ֥חַ מָשְׁחָ֖ת לַֽ/אדֹנָ֑/י כִּי֩ מֶ֨לֶךְ גָּד֜וֹל אָ֗נִי אָמַר֙ יְהוָ֣ה צְבָא֔וֹת וּ/שְׁמִ֖/י נוֹרָ֥א בַ/גּוֹיִֽם׃",
+        "LXX": "καὶ ἐπικατάρατος ὃς ἦν δυνατός, καὶ ὑπῆρχεν ἐν τῷ ποιμνίῳ αὐτοῦ ἄρσεν, καὶ εὐχὴ αὐτοῦ ἐπ’ αὐτῷ, καὶ θύει διεφθαρμένον τῷ κυρίῳ· διότι βασιλεὺς μέγας ἐγώ εἰμι, λέγει Κύριος Παντοκράτωρ, καὶ τὸ ὄνομά μου ἐπιφανὲς ἐν τοῖς ἔθνεσιν.",
+        "VUL": "Maledictus dolosus qui habet in grege suo masculum, et votum faciens immolat debile Domino : quia rex magnus ego, dicit Dominus exercituum, et nomen meum horribile in gentibus.",
+        "SYN": "Проклят лживый, у которого в стаде есть неиспорченный самец, и он дал обет, а приносит в жертву Господу поврежденное: ибо Я Царь великий, и имя Мое страшно у народов.",
+        "NEO": "Maudit soit le fraudeur, celui qui, ayant dans son troupeau un mâle, fait un vœu, et sacrifie au Seigneur une \\+add bête\\+add** chétive ! Car je suis un grand roi, dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées, et mon nom est redouté chez les nations.",
+        "NAB": "Cursed is the deceiver, who has in his flock a male, but under his vow sacrifices to the LORD a gelding; For a great King am I, says the LORD of hosts, and my name will be feared among the nations.",
+        "VAT_ES": "&iexcl;Maldito sea el tramposo que tiene un animal macho en su rebaño, lo ofrece en voto y después sacrifica al Señor uno mutilado! Porque yo soy un gran Rey, dice el Señor de los ejércitos, y mi Nombre es temible entre las naciones.",
+        "CEI": "Maledetto il fraudolento che ha nel gregge un maschio, ne fa voto e poi mi sacrifica una bestia difettosa. Poiché io sono un re grande, dice il Signore degli eserciti, e il mio nome è terribile fra le nazioni."
+      }
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_056",
+  "book_key": "PSAL",
+  "sequence": 56,
+  "chapter_in": {
+    "MT": 56,
+    "VUL": 55,
+    "LXX": 55
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֤חַ עַל י֬וֹנַת אֵ֣לֶם רְ֭חֹקִים לְ/דָוִ֣ד מִכְתָּ֑ם בֶּֽ/אֱחֹ֨ז אֹת֖/וֹ פְלִשְׁתִּ֣ים בְּ/גַֽת׃",
+        "LXX": "Εἰς τὸ τέλος· μὴ διαφθείρῃς· τῷ Δαυεὶδ εἰς στηλογραφίαν, ἐν τῷ αὐτὸν ἀποδιδράσκειν ἀπὸ προσώπου Σαοὺλ εἰς τὸ σπήλαιον.",
+        "VUL": "In finem, ne disperdas. David in tituli inscriptionem, cum fugeret a facie Saul in speluncam.",
+        "SYN": "Начальнику хора. Не погуби. Писание Давида, когда он убежал от Саула в пещеру.",
+        "NEO": "Au maître de chant. Sur la Colombe muette des pays lointains. Hymne de David. Lorsque les Philistins le saisirent à Geth.",
+        "NAB": "For the director. According to Yonath elem rehoqim. A miktam of David, when the Philistines seized him at Gath.",
+        "CEI": "Al maestro del coro. Su \"Jonat elem rehoqim\". Di Davide. Miktam. Quando i Filistei lo tenevano prigioniero in Gat."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "חָנֵּ֣/נִי אֱ֭לֹהִים כִּֽי שְׁאָפַ֣/נִי אֱנ֑וֹשׁ כָּל הַ֝/יּ֗וֹם לֹחֵ֥ם יִלְחָצֵֽ/נִי׃",
+        "LXX": "Ἐλέησόν με, ὁ θεός, ἐλέησόν με· ὅτι ἐπὶ σοὶ πέποιθεν ἡ ψυχή μου, καὶ ἐν τῇ σκιᾷ τῶν πτερύγων σου ἐλπιῶ ἕως οὗ παρέλθῃ ἡ ἀνομία.",
+        "VUL": "[Miserere mei, Deus, miserere mei,/ quoniam in te confidit anima mea./ Et in umbra alarum tuarum sperabo,/ donec transeat iniquitas./",
+        "SYN": "Помилуй меня, Боже, помилуй меня, ибо на Тебя уповает душа моя, и в тени крыл Твоих я укроюсь, доколе не пройдут беды.",
+        "NEO": "Aie pitié de moi, ô Dieu, car l’homme s’acharne après moi ; tout le jour on me fait la guerre, on me persécute.",
+        "NAB": "Have mercy on me, God, for I am treated harshly; attackers press me all the day.",
+        "VAT_ES": "Ten piedad de mí, Señor, porque me asedian,",
+        "CEI": "Pietà di me, o Dio, perché l'uomo mi calpesta, un aggressore sempre mi opprime."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "שָׁאֲפ֣וּ שׁ֭וֹרְרַ/י כָּל הַ/יּ֑וֹם כִּֽי רַבִּ֨ים לֹחֲמִ֖ים לִ֣/י מָרֽוֹם׃",
+        "LXX": "κεκράξομαι πρὸς τὸν θεὸν τὸν ὕψιστον, τὸν θεὸν τὸν εὐεργετήσαντά με. διάψαλμα.",
+        "VUL": "Clamabo ad Deum altissimum,/ Deum qui benefecit mihi./",
+        "SYN": "Воззову к Богу Всевышнему, Богу, благодетельствующему мне;",
+        "NEO": "Tout le jour mes adversaires me harcèlent ; car ils sont nombreux ceux qui me combattent le front levé.",
+        "NAB": "My foes treat me harshly all the day; yes, many are my attackers. O Most High,",
+        "VAT_ES": "mis enemigos me asedian sin cesar,",
+        "CEI": "Mi calpestano sempre i miei nemici, molti sono quelli che mi combattono."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "י֥וֹם אִירָ֑א אֲ֝נִ֗י אֵלֶ֥י/ךָ אֶבְטָֽח׃",
+        "LXX": "ἐξαπέστειλεν ἐξ οὐρανοῦ καὶ ἔσωσέν με, ἔδωκεν εἰς ὄνειδος τοὺς καταπατοῦντάς με· ἐξαπέστειλεν ὁ θεὸς τὸ ἔλεος αὐτοῦ καὶ τὴν ἀλήθειαν αὐτοῦ,",
+        "VUL": "Misit de cælo, et liberavit me ;/ dedit in opprobrium conculcantes me./ Misit Deus misericordiam suam et veritatem suam,/",
+        "SYN": "Он пошлет с небес и спасет меня; посрамит ищущего поглотить меня; пошлет Бог милость Свою и истину Свою.",
+        "NEO": "Quand je suis dans la crainte, je me confie en toi.",
+        "NAB": "when I am afraid, in you I place my trust.",
+        "VAT_ES": "Cuando me asalta el temor,",
+        "CEI": "Nell'ora della paura, io in te confido."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בֵּ/אלֹהִים֮ אֲהַלֵּ֪ל דְּבָ֫ר֥/וֹ בֵּ/אלֹהִ֣ים בָּ֭טַחְתִּי לֹ֣א אִירָ֑א מַה יַּעֲשֶׂ֖ה בָשָׂ֣ר לִֽ/י׃",
+        "LXX": "καὶ ἐρύσατο τὴν ψυχήν μου ἐκ μέσου σκύμνων. ἐκοιμήθην τεταραγμένος· υἱοὶ ἀνθρώπων, οἱ ὀδόντες αὐτῶν ὅπλον καὶ βέλη, καὶ ἡ γλῶσσα αὐτῶν μάχαιρα ὀξεῖα.",
+        "VUL": "et eripuit animam meam de medio catulorum leonum./ Dormivi conturbatus./ Filii hominum dentes eorum arma et sagittæ,/ et lingua eorum gladius acutus./",
+        "SYN": "Душа моя среди львов; я лежу среди дышущих пламенем, среди сынов человеческих, у которых зубы - копья и стрелы, и у которых язык - острый меч.",
+        "NEO": "Par le secours de Dieu, je célébrerai l’accomplissement de sa parole. Je me confie en Dieu, je ne crains rien : que peut me faire un faible mortel ?",
+        "NAB": "God, I praise your promise; in you I trust, I do not fear. What can mere flesh do to me?",
+        "VAT_ES": "confío en Dios y alabo su Palabra,",
+        "CEI": "In Dio, di cui lodo la parola, in Dio confido, non avrò timore: che cosa potrà farmi un uomo?"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כָּל הַ֭/יּוֹם דְּבָרַ֣/י יְעַצֵּ֑בוּ עָלַ֖/י כָּל מַחְשְׁבֹתָ֣/ם לָ/רָֽע׃",
+        "LXX": "ὑψώθητι ἐπὶ τοὺς οὐρανούς, ὁ θεός, καὶ ἐπὶ πᾶσαν τὴν γῆν ἡ δόξα σου.",
+        "VUL": "Exaltare super cælos, Deus,/ et in omnem terram gloria tua./",
+        "SYN": "Будь превознесен выше небес, Боже, и над всею землею да будет слава Твоя!",
+        "NEO": "Sans cesse ils enveniment mes paroles, toutes leurs pensées sont contre moi pour me perdre.",
+        "NAB": "All the day they foil my plans; their every thought is of evil against me.",
+        "VAT_ES": "Me afligen constantemente con sus palabras,",
+        "CEI": "Travisano sempre le mie parole, non pensano che a farmi del male."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יָג֤וּרוּ יצפינו יִצְפּ֗וֹנוּ הֵ֭מָּה עֲקֵבַ֣/י יִשְׁמֹ֑רוּ כַּ֝/אֲשֶׁ֗ר קִוּ֥וּ נַפְשִֽׁ/י׃",
+        "LXX": "παγίδας ἡτοίμασαν τοῖς ποσίν μου, καὶ κατέκαμψαν τὴν ψυχήν μου· ὤρυξαν πρὸ προσώπου μου βόθρον, καὶ ἐνέπεσαν εἰς αὐτόν. διάψαλμα.",
+        "VUL": "Laqueum paraverunt pedibus meis,/ et incurvaverunt animam meam./ Foderunt ante faciem meam foveam,/ et inciderunt in eam.",
+        "SYN": "Приготовили сеть ногам моим; душа моя поникла; выкопали предо мною яму, и _сами_ упали в нее.",
+        "NEO": "Ils complotent, ils apostent des espions, ils observent mes traces, parce qu’ils en veulent à ma vie.",
+        "NAB": "They hide together in ambush; they watch my every step; they lie in wait for my life.",
+        "VAT_ES": "conspiran, se esconden y siguen mis rastros,",
+        "CEI": "Suscitano contese e tendono insidie, osservano i miei passi, per attentare alla mia vita."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "עַל אָ֥וֶן פַּלֶּט לָ֑/מוֹ בְּ֝/אַ֗ף עַמִּ֤ים הוֹרֵ֬ד אֱלֹהִֽים׃",
+        "LXX": "ἑτοίμη ἡ καρδία μου, ὁ θεός, ἑτοίμη ἡ καρδία μου, ᾄσομαι καὶ ψαλῶ.",
+        "VUL": "Paratum cor meum, Deus, paratum cor meum ;/ cantabo, et psalmum dicam./",
+        "SYN": "Готово сердце мое, Боже, готово сердце мое: буду петь и славить.",
+        "NEO": "Chargés de tant de crimes, échapperont-ils ? Dans ta colère, ô Dieu, abats les peuples !",
+        "NAB": "They are evil; watch them, God! Cast the nations down in your anger!",
+        "VAT_ES": "&iquest;Podrán librarse a pesar de su maldad?",
+        "CEI": "Per tanta iniquità non abbiano scampo: nella tua ira abbatti i popoli, o Dio."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "נֹדִ/י֮ סָפַ֪רְתָּ֫ה אָ֥תָּה שִׂ֣ימָ/ה דִמְעָתִ֣/י בְ/נֹאדֶ֑/ךָ הֲ֝/לֹ֗א בְּ/סִפְרָתֶֽ/ךָ׃",
+        "LXX": "ἐξεγέρθητι ἡ δόξα μου, ἐξεγέρθητι, ψαλτήριον καὶ κιθάρα· ἐξεγερθήσομαι ὄρθρου.",
+        "VUL": "Exsurge, gloria mea ;/ exsurge, psalterium et cithara :/ exsurgam diluculo./",
+        "SYN": "Воспрянь, слава моя, воспрянь, псалтирь и гусли! Я встану рано.",
+        "NEO": "Tu as compté les pas de ma vie errante, tu as recueilli mes larmes dans ton outre : ne sont-elles pas inscrites dans ton livre ?",
+        "NAB": "My wanderings you have noted; are my tears not stored in your vial, recorded in your book?",
+        "VAT_ES": "Tú has anotado los pasos de mi destierro;",
+        "CEI": "I passi del mio vagare tu li hai contati, le mie lacrime nell'otre tuo raccogli; non sono forse scritte nel tuo libro?"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אָ֥֨ז יָ֘שׁ֤וּבוּ אוֹיְבַ֣/י אָ֭חוֹר בְּ/י֣וֹם אֶקְרָ֑א זֶה יָ֝דַ֗עְתִּי כִּֽי אֱלֹהִ֥ים לִֽ/י׃",
+        "LXX": "ἐξομολογήσομαί σοι ἐν λαοῖς, κύριε, ψαλῶ σοι ἐν ἔθνεσιν·",
+        "VUL": "Confitebor tibi in populis, Domine,/ et psalmum dicam tibi in gentibus :/",
+        "SYN": "Буду славить Тебя, Господи, между народами; буду воспевать Тебя среди племен,",
+        "NEO": "Alors mes ennemis retourneront en arrière, au jour où je t’invoquerai ; je le sais, Dieu est pour moi.",
+        "NAB": "My foes turn back when I call on you. This I know: God is on my side.",
+        "VAT_ES": "Mis enemigos retrocederán cuando te invoque.",
+        "CEI": "Allora ripiegheranno i miei nemici, quando ti avrò invocato: so che Dio è in mio favore."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "בֵּֽ֭/אלֹהִים אֲהַלֵּ֣ל דָּבָ֑ר בַּ֝/יהוָ֗ה אֲהַלֵּ֥ל דָּבָֽר׃",
+        "LXX": "ὅτι ἐμεγαλύνθη ἕως τῶν οὐρανῶν τὸ ἔλεός σου, καὶ ἕως τῶν νεφελῶν ἡ ἀλήθειά σου.",
+        "VUL": "quoniam magnificata est usque ad cælos misericordia tua,/ et usque ad nubes veritas tua./",
+        "SYN": "ибо до небес велика милость Твоя и до облаков истина Твоя.",
+        "NEO": "Par le secours de Dieu, je célébrerai l’accomplissement de sa parole ; par le secours de \\+w Yahweh|strong=\"H3068\"\\+w**, je célébrerai l’accomplissement de sa promesse.",
+        "NAB": "God, I praise your promise;",
+        "VAT_ES": "confío en Dios y alabo su palabra;",
+        "CEI": "Lodo la parola di Dio, lodo la parola del Signore,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "בֵּֽ/אלֹהִ֣ים בָּ֭טַחְתִּי לֹ֣א אִירָ֑א מַה יַּעֲשֶׂ֖ה אָדָ֣ם לִֽ/י׃",
+        "LXX": "ὑψώθητι ἐπὶ τοὺς οὐρανούς, ὁ θεός, καὶ ἐπὶ πᾶσαν τὴν γῆν ἡ δόξα σου.",
+        "VUL": "Exaltare super cælos, Deus,/ et super omnem terram gloria tua.]",
+        "SYN": "Будь превознесен выше небес, Боже, и над всею землею да будет слава Твоя!",
+        "NEO": "Je me confie en Dieu, je ne crains rien : Que peut me faire un faible mortel ?",
+        "NAB": "in you I trust, I do not fear. What can mere mortals do to me?",
+        "VAT_ES": "confío en él y ya no temo:",
+        "CEI": "in Dio confido, non avrò timore: che cosa potrà farmi un uomo?"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "עָלַ֣/י אֱלֹהִ֣ים נְדָרֶ֑י/ךָ אֲשַׁלֵּ֖ם תּוֹדֹ֣ת לָֽ/ךְ׃",
+        "NEO": "Les vœux que je t’ai faits, ô Dieu, j’ai à les acquitter ; je t’offrirai des sacrifices d’actions de grâces.",
+        "NAB": "I have made vows to you, God; with offerings I will fulfill them,",
+        "VAT_ES": "Debo cumplir, Dios mío, los votos que te hice:",
+        "CEI": "Su di me, o Dio, i voti che ti ho fatto: ti renderò azioni di grazie,"
+      }
+    }
+  }
+}

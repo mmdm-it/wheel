@@ -1,0 +1,623 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "III_REG_015",
+  "book_key": "III_REG",
+  "sequence": 15,
+  "chapter_in": {
+    "MT": 15,
+    "VUL": 15,
+    "LXX": 15
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וּ/בִ/שְׁנַת֙ שְׁמֹנֶ֣ה עֶשְׂרֵ֔ה לַ/מֶּ֖לֶךְ יָרָבְעָ֣ם בֶּן נְבָ֑ט מָלַ֥ךְ אֲבִיָּ֖ם עַל יְהוּדָֽה׃",
+        "LXX": "Καὶ ἐν τῷ ὀκτωκαιδεκάτῳ ἔτει βασιλεύοντος Ἰεροβοὰμ υἱοῦ Ναβὰθ βασιλεύει Ἀβιοὺ υἱὸς Ἰεροβοὰμ ἐπὶ Ἰουδά,",
+        "VUL": "Igitur in octavodecimo anno regni Jeroboam filii Nabat, regnavit Abiam super Judam.",
+        "SYN": "В восемнадцатый год царствования Иеровоама, сына Наватова, Авия воцарился над Иудеями.",
+        "NEO": "La dix-huitième année du roi Jéroboam, fils de Nabat, Abiam devint roi de Juda,",
+        "NAB": "In the eighteenth year of King Jeroboam, son of Nebat, Abijam became king of Judah;",
+        "VAT_ES": "El año decimoctavo del reinado de Jeroboam, hijo de Nebat, Abiam comenzó a reinar sobre Judá.",
+        "CEI": "Nell'anno diciottesimo del re Geroboamo, figlio di Nebàt, divenne re su Giuda Abiam."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "שָׁלֹ֣שׁ שָׁנִ֔ים מָלַ֖ךְ בִּ/ירוּשָׁלִָ֑ם וְ/שֵׁ֣ם אִמּ֔/וֹ מַעֲכָ֖ה בַּת אֲבִישָׁלֽוֹם׃",
+        "LXX": "καὶ ἓξ ἔτη ἐβασίλευσεν· καὶ ὄνομα τῆς μητρὸς αὐτοῦ Μααχά, θυγάτηρ Ἀβεσσαλώμ.",
+        "VUL": "Tribus annis regnavit in Jerusalem : nomen matris ejus Maacha filia Abessalom.",
+        "SYN": "Три года он царствовал в Иерусалиме; имя матери его Мааха, дочь Авессалома.",
+        "NEO": "et il régna trois ans à Jérusalem. Sa mère se nommait Maacha, fille d’Abessalom.",
+        "NAB": "he reigned three years in Jerusalem. His mother's name was Maacah, daughter of Abishalom.",
+        "VAT_ES": "Cro 16.11-14",
+        "CEI": "Egli regnò tre anni in Gerusalemme. Sua madre si chiamava Maaca, figlia di Assalonne."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֕לֶךְ בְּ/כָל חַטֹּ֥אות אָבִ֖י/ו אֲשֶׁר עָשָׂ֣ה לְ/פָנָ֑י/ו וְ/לֹא הָיָ֨ה לְבָב֤/וֹ שָׁלֵם֙ עִם יְהוָ֣ה אֱלֹהָ֔י/ו כִּ/לְבַ֖ב דָּוִ֥ד אָבִֽי/ו׃",
+        "LXX": "καὶ ἐπορεύθη ἐν ταῖς ἁμαρτίαις τοῦ πατρὸς αὐτοῦ αἷς ἐποίησεν ἐνώπιον αὐτοῦ, καὶ οὐκ ἦν ἡ καρδία αὐτοῦ τελεία μετὰ Κυρίου θεοῦ αὐτοῦ ὡς ἡ καρδία τοῦ πατρὸς αὐτοῦ.",
+        "VUL": "Ambulavitque in omnibus peccatis patris sui, quæ fecerat ante eum : nec erat cor ejus perfectum cum Domino Deo suo, sicut cor David patris ejus.",
+        "SYN": "Он ходил во всех грехах отца своего, которые тот делал прежде него, и сердце его не было предано Господу Богу его, как сердце Давида, отца его.",
+        "NEO": "Il marcha dans tous les péchés de son père qu’il avait commis avant lui, et son cœur n’était pas tout entier à \\+w Yahweh|strong=\"H3068\"\\+w**, comme l’avait été le cœur de David, son père.",
+        "NAB": "He imitated all the sins his father had committed before him, and his heart was not entirely with the LORD, his God, like the heart of his grandfather David.",
+        "VAT_ES": "El imitó todos los pecados que su padre había cometido antes que él, y su corazón no perteneció íntegramente al Señor, su Dios, como el de su padre David.",
+        "CEI": "Egli imitò tutti i peccati che suo padre aveva commessi prima di lui; il suo cuore non fu sottomesso al Signore suo Dio, come lo era stato il cuore di Davide suo antenato."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּ֚י לְמַ֣עַן דָּוִ֔ד נָתַן֩ יְהוָ֨ה אֱלֹהָ֥י/ו ל֛/וֹ נִ֖יר בִּ/ירוּשָׁלִָ֑ם לְ/הָקִ֤ים אֶת בְּנ/וֹ֙ אַחֲרָ֔י/ו וּֽ/לְ/הַעֲמִ֖יד אֶת יְרוּשָׁלִָֽם׃",
+        "LXX": "ὅτι διὰ Δαυεὶδ ἔδωκεν αὐτῷ Κύριος κατάλειμμα, ἵνα στήσῃ τέκνα αὐτοῦ μετ’ αὐτὸν καὶ στήσῃ τὴν Ἰερουσαλήμ,",
+        "VUL": "Sed propter David dedit ei Dominus Deus suus lucernam in Jerusalem, ut suscitaret filium ejus post eum, et statueret Jerusalem :",
+        "SYN": "Но ради Давида Господь Бог его дал ему светильник в Иерусалиме, восставив по нем сына его и утвердив Иерусалим,",
+        "NEO": "Mais, à cause de David, \\+w Yahweh|strong=\"H3068\"\\+w**, son Dieu, lui donna une lampe à Jérusalem en établissant son fils après lui et en laissant subsister Jérusalem.",
+        "NAB": "Yet for David's sake the LORD, his God, gave him a lamp in Jerusalem, raising up his son after him and permitting Jerusalem to endure;",
+        "VAT_ES": "Sin embargo, por consideración a David, el Señor, su Dios, le concedió una lámpara en Jerusalén, asegurándole una descendencia y manteniendo en pie a Jerusalén.",
+        "CEI": "Ma, per amore di Davide, il Signore suo Dio gli concesse una lampada in Gerusalemme, innalzandone il figlio dopo di lui e rendendo stabile Gerusalemme,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֨ר עָשָׂ֥ה דָוִ֛ד אֶת הַ/יָּשָׁ֖ר בְּ/עֵינֵ֣י יְהוָ֑ה וְ/לֹֽא סָ֞ר מִ/כֹּ֣ל אֲשֶׁר צִוָּ֗/הוּ כֹּ֚ל יְמֵ֣י חַיָּ֔י/ו רַ֕ק בִּ/דְבַ֖ר אוּרִיָּ֥ה הַ/חִתִּֽי׃",
+        "LXX": "ὡς ἐποίησεν Δαυεὶδ τὸ εὐθὲς ἐνώπιον Κυρίου, οὐκ ἐξέκλινεν ἀπὸ πάντων ὧν ἐνετείλατο αὐτῷ πάσας τὰς ἡμέρας τῆς ζωῆς αὐτοῦ.",
+        "VUL": "eo quod fecisset David rectum in oculis Domini, et non declinasset ab omnibus quæ præceperat ei cunctis diebus vitæ suæ, excepto sermone Uriæ Hethæi.",
+        "SYN": "потому что Давид делал угодное пред очами Господа и не отступал от всего того, что Он заповедал ему, во все дни жизни своей, кроме поступка с Уриею Хеттеянином.",
+        "NEO": "Car David avait fait ce qui est droit aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**, et il ne s’était pas détourné pendant toute sa vie de tous les commandements qu’il en avait reçus, excepté dans l’affaire d’Urie le Hittite.",
+        "NAB": "because David had pleased the LORD and did not disobey any of his commands as long as he lived, except in the case of Uriah the Hittite.",
+        "VAT_ES": "Porque David había hecho lo que es recto a los ojos del Señor, sin apartarse jamás de lo que él le había mandado, salvo en el caso de Urías, el hitita",
+        "CEI": "perché Davide aveva fatto ciò che è giusto agli occhi del Signore e non aveva traviato dai comandi che il Signore gli aveva impartiti, durante tutta la sua vita, se si eccettua il caso di Uria l'Hittita."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וּ/מִלְחָמָ֨ה הָיְתָ֧ה בֵין רְחַבְעָ֛ם וּ/בֵ֥ין יָרָבְעָ֖ם כָּל יְמֵ֥י חַיָּֽי/ו׃",
+        "VUL": "Attamen bellum fuit inter Roboam et Jeroboam omni tempore vitæ ejus.",
+        "SYN": "И война была между Ровоамом и Иеровоамом во все дни жизни их.",
+        "NEO": "Il y eut guerre entre Roboam et Jéroboam tant qu’il vécut.",
+        "NAB": "There was war between Abijam and Jeroboam.",
+        "CEI": "Le altre gesta di Abiam, tutte le sue azioni, sono descritte nel libro delle Cronache dei re di Giuda."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/יֶ֨תֶר דִּבְרֵ֤י אֲבִיָּם֙ וְ/כָל אֲשֶׁ֣ר עָשָׂ֔ה הֲ/לֽוֹא הֵ֣ם כְּתוּבִ֗ים עַל סֵ֛פֶר דִּבְרֵ֥י הַ/יָּמִ֖ים לְ/מַלְכֵ֣י יְהוּדָ֑ה וּ/מִלְחָמָ֥ה הָיְתָ֛ה בֵּ֥ין אֲבִיָּ֖ם וּ/בֵ֥ין יָרָבְעָֽם׃",
+        "LXX": "καὶ τὰ λοιπὰ τῶν λόγων Ἀβιοὺ καὶ πάντα ἃ ἐποίησεν, οὐκ ἰδοὺ ταῦτα γεγραμμένα ἐπὶ βιβλίῳ λόγων τῶν ἡμερῶν τοῖς βασιλεῦσιν Ἰούδα; καὶ πόλεμος ἦν ἀνὰ μέσον Ἀβιοὺ καὶ ἀνὰ μέσον Ἰεροβοάμ.",
+        "VUL": "Reliqua autem sermonum Abiam, et omnia quæ fecit, nonne hæc scripta sunt in libro verborum dierum regum Juda ? Fuitque prælium inter Abiam et inter Jeroboam.",
+        "SYN": "Прочие дела Авии, всё, что он сделал, описано в летописи царей Иудейских. И была война между Авиею и Иеровоамом.",
+        "NEO": "Le reste des actes d’Abiam, et tout ce qu’il a fait, cela n’est-il pas écrit dans le livre des Chroniques des rois de Juda. Il y eut guerre entre Abiam et Jéroboam.",
+        "NAB": "The rest of Abijam's acts, with all that he did, are written in the book of the chronicles of the kings of Judah.",
+        "VAT_ES": "El resto de los hechos de Abiam y todo lo que él hizo, &iquest;no está escrito en el libro de los Anales de los reyes de Judá? Entre Abiam y Jeroboam hubo guerra.",
+        "CEI": "Ci fu guerra fra Abiam e Geroboamo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁכַּ֤ב אֲבִיָּם֙ עִם אֲבֹתָ֔י/ו וַ/יִּקְבְּר֥וּ אֹת֖/וֹ בְּ/עִ֣יר דָּוִ֑ד וַ/יִּמְלֹ֛ךְ אָסָ֥א בְנ֖/וֹ תַּחְתָּֽי/ו׃",
+        "LXX": "καὶ ἐκοιμήθη Ἀβιοὺ μετὰ τῶν πατέρων αὐτοῦ ἐν τῷ εἰκοστῷ καὶ τετάρτῳ ἔτει τοῦ Ἰεροβοάμ, καὶ θάπτεται μετὰ τῶν πατέρων αὐτοῦ ἐν πόλει Δαυείδ· καὶ βασιλεύει Ἀσὰ υἱὸς αὐτοῦ ἀντ’ αὐτοῦ.",
+        "VUL": "Et dormivit Abiam cum patribus suis, et sepelierunt eum in civitate David, regnavitque Asa filius ejus pro eo.",
+        "SYN": "И почил Авия с отцами своими, и похоронили его в городе Давидовом. И воцарился Аса, сын его, вместо него.",
+        "NEO": "Abiam se coucha avec ses pères, et on l’enterrera dans la ville de David. Asa, son fils, régna à sa place.",
+        "NAB": "Abijam rested with his ancestors; he was buried in the City of David, and his son Asa succeeded him as king.",
+        "VAT_ES": "Abiam se fue a descansar con sus padres y lo sepultaron en la Ciudad de David. Su hijo Asá reinó en lugar de él.",
+        "CEI": "Abiam si addormentò con i suoi padri; lo seppellirono nella città di Davide e al suo posto divenne re suo figlio Asa."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וּ/בִ/שְׁנַ֣ת עֶשְׂרִ֔ים לְ/יָרָבְעָ֖ם מֶ֣לֶךְ יִשְׂרָאֵ֑ל מָלַ֥ךְ אָסָ֖א מֶ֥לֶךְ יְהוּדָֽה׃",
+        "LXX": "Ἐν τῷ ἐνιαυτῷ τῷ τετάρτῳ καὶ εἰκοστῷ τοῦ Ἰεροβοὰμ βασιλέως Ἰσραὴλ βασιλεύει Ἀσὰ ἐπὶ Ἰούδαν,",
+        "VUL": "In anno ergo vigesimo Jeroboam regis Israël regnavit Asa rex Juda,",
+        "SYN": "В двадцатый год _царствования_ Иеровоама, царя Израильского, воцарился Аса над Иудеями",
+        "NEO": "La vingtième année de Jéroboam, roi d’Israël, Asa devint roi de Juda,",
+        "NAB": "In the twentieth year of Jeroboam, king of Israel, Asa, king of Judah, began to reign;",
+        "VAT_ES": "El vigésimo año de Jeroboam, rey de Israel, comenzó a reinar Asá como rey de Judá.",
+        "CEI": "Nell'anno ventesimo di Geroboamo, re di Israele, divenne re su Giuda Asa."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/אַרְבָּעִ֤ים וְ/אַחַת֙ שָׁנָ֔ה מָלַ֖ךְ בִּ/ירוּשָׁלִָ֑ם וְ/שֵׁ֣ם אִמּ֔/וֹ מַעֲכָ֖ה בַּת אֲבִישָׁלֽוֹם׃",
+        "LXX": "καὶ τεσσεράκοντα καὶ ἓν ἔτος ἐβασίλευσεν ἐν Ἰερουσαλήμ· καὶ ὄνομα τῆς μητρὸς αὐτοῦ Ἀνά, θυγάτηρ Ἀβεσσαλώμ.",
+        "VUL": "et quadraginta et uno anno regnavit in Jerusalem. Nomen matris ejus Maacha filia Abessalom.",
+        "SYN": "и сорок один год царствовал в Иерусалиме; имя матери его Ана, дочь Авессалома.",
+        "NEO": "et il régna quarante et un ans à Jérusalem. Sa mère s’appelait Maacha, fille d’Abessalom.",
+        "NAB": "he reigned forty-one years in Jerusalem. His grandmother's name was Maacah, daughter of Abishalom.",
+        "VAT_ES": "El reinó cuarenta y un años en Jerusalén. Su abuela se llamaba Maacá, y era hija de Abisalom.",
+        "CEI": "Costui regnò quarantun anni in Gerusalemme. Sua madre si chiamava Maaca, figlia di Assalonne."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יַּ֧עַשׂ אָסָ֛א הַ/יָּשָׁ֖ר בְּ/עֵינֵ֣י יְהוָ֑ה כְּ/דָוִ֖ד אָבִֽי/ו׃",
+        "LXX": "καὶ ἐποίησεν Ἀσὰ τὸ εὐθὲς ἐνώπιον Κυρίου ὡς Δαυεὶδ ὁ πατὴρ αὐτοῦ.",
+        "VUL": "Et fecit Asa rectum ante conspectum Domini, sicut David pater ejus :",
+        "SYN": "Аса делал угодное пред очами Господа, как Давид, отец его.",
+        "NEO": "Asa fit ce qui est droit aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**, comme David, son père.",
+        "NAB": "Asa pleased the LORD like his forefather David,",
+        "VAT_ES": "Asá hizo lo que es recto a los ojos del Señor, igual que su padre David.",
+        "CEI": "Asa, come Davide suo antenato, fece ciò che è giusto agli occhi del Signore."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲבֵ֥ר הַ/קְּדֵשִׁ֖ים מִן הָ/אָ֑רֶץ וַ/יָּ֨סַר֙ אֶת כָּל הַ/גִּלֻּלִ֔ים אֲשֶׁ֥ר עָשׂ֖וּ אֲבֹתָֽי/ו׃",
+        "LXX": "καὶ ἀφεῖλεν τὰς τελετὰς ἀπὸ τῆς γῆς, καὶ ἐξαπέστειλεν πάντα τὰ ἐπιτηδεύματα ἃ ἐποίησαν οἱ πατέρες αὐτοῦ.",
+        "VUL": "et abstulit effeminatos de terra, purgavitque universas sordes idolorum quæ fecerant patres ejus.",
+        "SYN": "Он изгнал блудников из земли и отверг всех идолов, которых сделали отцы его,",
+        "NEO": "Il fit disparaître du pays les prostitués et enleva toutes les idoles que ses pères avaient faites.",
+        "NAB": "banishing the temple prostitutes from the land and removing all the idols his father had made.",
+        "VAT_ES": "Expulsó del país a los que se dedicaban a la prostitución sagrada y retiró todos los ídolos fabricados por sus antepasados.",
+        "CEI": "Eliminò i prostituti sacri dal paese e allontanò tutti gli idoli eretti da suo padre."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/גַ֣ם אֶת מַעֲכָ֣ה אִמּ֗/וֹ וַ/יְסִרֶ֨/הָ֙ מִ/גְּבִירָ֔ה אֲשֶׁר עָשְׂתָ֥ה מִפְלֶ֖צֶת לָ/אֲשֵׁרָ֑ה וַ/יִּכְרֹ֤ת אָסָא֙ אֶת מִפְלַצְתָּ֔/הּ וַ/יִּשְׂרֹ֖ף בְּ/נַ֥חַל קִדְרֽוֹן׃",
+        "LXX": "καὶ τὴν Ἀνὰ τὴν μητέρα αὐτοῦ μετέστησεν τοῦ μὴ εἶναι ἡγουμένην, καθὼς ἐποίησεν σύνοδον ἐν τῷ ἄλσει αὐτῆς· καὶ ἐξέκοψεν Ἀσὰ τὰς καταδύσεις αὐτῆς καὶ ἐνέπρησεν πυρὶ ἐν τῷ χειμάρρῳ τῶν κέδρων.",
+        "VUL": "Insuper et Maacham matrem suam amovit, ne esset princeps in sacris Priapi, et in luco ejus quem consecraverat : subvertitque specum ejus, et confregit simulacrum turpissimum, et combussit in torrente Cedron :",
+        "SYN": "и даже мать свою Ану лишил звания царицы за то, что она сделала истукан Астарты; и изрубил Аса истукан ее и сжег у потока Кедрона.",
+        "NEO": "Et même il ôta la dignité de reine-mère à Maacha, sa mère, parce qu’elle avait fait une idole abominable pour Astarté. Asa abattit son idole abominable et la brûla au torrent de Cédron.",
+        "NAB": "He also deposed his grandmother Maacah from her position as queen mother, because she had made an outrageous object for Asherah. Asa cut down this object and burned it in the Kidron Valley.",
+        "VAT_ES": "Incluso despojó del rango de reina madre a su abuela Maacá, por haber dedicado un horrendo fetiche, quemándolo en el torrente Cedrón.",
+        "CEI": "Anche sua madre Maaca egli privò della dignità di regina madre, perché essa aveva eretto un obbrobrio in onore di Asera; Asa abbatté l'obbrobrio e lo bruciò nella valle del torrente Cedron."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/הַ/בָּמ֖וֹת לֹא סָ֑רוּ רַ֣ק לְבַב אָסָ֗א הָיָ֥ה שָׁלֵ֛ם עִם יְהוָ֖ה כָּל יָמָֽי/ו׃",
+        "LXX": "τὰ δὲ ὑψηλὰ οὐκ ἐξῆρεν· πλὴν ἡ καρδία Ἀσὰ ἦν τελεία μετὰ Κυρίου πάσας τὰς ἡμέρας αὐτοῦ.",
+        "VUL": "excelsa autem non abstulit. Verumtamen cor Asa perfectum erat cum Domino cunctis diebus suis :",
+        "SYN": "Высоты же не были уничтожены. Но сердце Асы было предано Господу во все дни его.",
+        "NEO": "Mais les hauts lieux ne disparurent point, quoique le cœur d’Asa fut parfaitement à \\+w Yahweh|strong=\"H3068\"\\+w** pendant toute sa vie.",
+        "NAB": "The high places did not disappear; yet Asa's heart was entirely with the LORD as long as he lived.",
+        "VAT_ES": "Sin embargo, no desaparecieron los lugares altos, aunque el corazón de Asá perteneció íntegramente al Señor durante toda la vida.",
+        "CEI": "Ma non scomparvero le alture, anche se il cuore di Asa si mantenne integro nei riguardi del Signore per tutta la sua vita."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יָּבֵא֙ אֶת קָדְשֵׁ֣י אָבִ֔י/ו ו/קדש/ו וְ/קָדְשֵׁ֖י בֵּ֣ית יְהוָ֑ה כֶּ֥סֶף וְ/זָהָ֖ב וְ/כֵלִֽים׃",
+        "LXX": "καὶ εἰσήνεγκεν τοὺς κίονας τοῦ πατρὸς αὐτοῦ, καὶ τοὺς κίονας αὐτοῦ εἰσήνεγκεν εἰς τὸν οἶκον Κυρίου ἀργυροῦς καὶ χρυσοῦς καὶ σκεύη.",
+        "VUL": "et intulit ea quæ sanctificaverat pater suus, et voverat, in domum Domini, argentum, et aurum, et vasa.",
+        "SYN": "И внес он в дом Господень вещи, посвященные отцом его, и вещи, посвященные им: серебро и золото и сосуды.",
+        "NEO": "Il mit dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w** les choses consacrées par son père et les choses consacrées par lui-même, de l’argent, de l’or et des vases.",
+        "NAB": "He brought into the temple of the LORD his father's and his own votive offerings of silver, gold, and various utensils.",
+        "VAT_ES": "El hizo llevar a la Casa del Señor las ofrendas consagradas por su padre y las que él mismo había consagrado: plata, oro y otros utensilios.",
+        "CEI": "Fece portare nel tempio le offerte consacrate da suo padre e quelle consacrate da lui stesso, consistenti in argento, oro e vasi."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וּ/מִלְחָמָ֨ה הָיְתָ֜ה בֵּ֣ין אָסָ֗א וּ/בֵ֛ין בַּעְשָׁ֥א מֶֽלֶךְ יִשְׂרָאֵ֖ל כָּל יְמֵי/הֶֽם׃",
+        "LXX": "καὶ πόλεμος ἦν ἀνὰ μέσον Ἀσὰ καὶ ἀνὰ μέσον Βαασὰ βασιλέως Ἰσραὴλ πάσας τὰς ἡμέρας.",
+        "VUL": "Bellum autem erat inter Asa, et Baasa regem Israël cunctis diebus eorum.",
+        "SYN": "И война была между Асою и Ваасою, царем Израильским, во все дни их.",
+        "NEO": "Il y eut guerre entre Asa et Baasa, roi d’Israël, pendant toute leur vie.",
+        "NAB": "There was war between Asa and Baasha, king of Israel, as long as they both reigned.",
+        "VAT_ES": "Entre Asá y Basá, rey de Israel, hubo guerras continuas.",
+        "CEI": "Ci fu guerra fra Asa e Baasa, re di Israele, per tutta la loro vita."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַל בַּעְשָׁ֤א מֶֽלֶךְ יִשְׂרָאֵל֙ עַל יְהוּדָ֔ה וַ/יִּ֖בֶן אֶת הָ/רָמָ֑ה לְ/בִלְתִּ֗י תֵּ֚ת יֹצֵ֣א וָ/בָ֔א לְ/אָסָ֖א מֶ֥לֶךְ יְהוּדָֽה׃",
+        "LXX": "καὶ ἀνέβη Βαασὰ βασιλεὺς Ἰσραὴλ ἐπὶ Ἰούδαν, καὶ ᾠκοδόμησεν τὴν Ῥααμὰ τοῦ μὴ εἶναι ἐκπορευόμενον καὶ εἰσπορευόμενον τῷ Ἀσὰ βασιλεῖ Ἰούδα.",
+        "VUL": "Ascendit quoque Baasa rex Israël in Judam, et ædificavit Rama, ut non posset quispiam egredi vel ingredi de parte Asa regis Juda.",
+        "SYN": "И вышел Вааса, царь Израильский, против Иудеи и начал строить Раму, чтобы никто не выходил и не уходил к Асе, царю Иудейскому.",
+        "NEO": "Baasa, roi d’Israël, monta contre Juda, et il bâtit Rama, pour empêcher les gens d’Asa, roi de Juda, de sortir et d’entrer.",
+        "NAB": "Baasha, king of Israel, attacked Judah and fortified Ramah to prevent communication with Asa, king of Judah.",
+        "VAT_ES": "Basá, rey de Israel, subió contra Judá y fortificó Ramá, para cortarle las comunicaciones a Asá, rey de Judá.",
+        "CEI": "Baasa, re di Israele, assalì Giuda; egli fortificò Rama per impedire le comunicazioni con Asa re di Giuda."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֣ח אָ֠סָא אֶת כָּל הַ/כֶּ֨סֶף וְ/הַ/זָּהָ֜ב הַֽ/נּוֹתָרִ֣ים בְּ/אוֹצְר֣וֹת בֵּית יְהוָ֗ה וְ/אֶת אֽוֹצְרוֹת֙ בֵּ֣ית מלך הַ/מֶּ֔לֶךְ וַֽ/יִּתְּנֵ֖/ם בְּ/יַד עֲבָדָ֑י/ו וַ/יִּשְׁלָחֵ֞/ם הַ/מֶּ֣לֶךְ אָסָ֗א אֶל בֶּן הֲ֠דַד בֶּן טַבְרִמֹּ֤ן בֶּן חֶזְיוֹן֙ מֶ֣לֶךְ אֲרָ֔ם הַ/יֹּשֵׁ֥ב בְּ/דַמֶּ֖שֶׂק לֵ/אמֹֽר׃",
+        "LXX": "καὶ ἔλαβεν Ἀσὰ τὸ ἀργύριον καὶ τὸ χρυσίον τὸ εὑρεθὲν ἐν τοῖς θησαυροῖς τοῦ οἴκου τοῦ βασιλέως, καὶ ἔδωκεν αὐτὰ εἰς χεῖρας παίδων αὐτοῦ· καὶ ἐξαπέστειλεν αὐτοὺς ὁ βασιλεὺς Ἀσὰ πρὸς υἱὸν Ἁδὲρ υἱὸν Ταβερεμὰ υἱοῦ Ἁζεὶν βασιλέως Συρίας τοῦ κατοικοῦντος ἐν Δαμασκῷ λέγων",
+        "VUL": "Tollens itaque Asa omne argentum et aurum quod remanserat in thesauris domus Domini, et in thesauris domus regiæ, et dedit illud in manus servorum suorum : et misit ad Benadad filium Tabremon filii Hezion, regem Syriæ, qui habitabat in Damasco, dicens :",
+        "SYN": "И взял Аса все серебро и золото, остававшееся в сокровищницах дома Господня и в сокровищницах дома царского, и дал его в руки слуг своих, и послал их царь Аса к Венададу, сыну Тавримона, сына Хезионова, царю Сирийскому, жившему в Дамаске, и сказал:",
+        "NEO": "Asa prit tout l’argent et l’or qui étaient restés dans les trésors de la maison de \\+w Yahweh|strong=\"H3068\"\\+w** et les trésors de la maison du roi, et les mit entre les mains de ses serviteurs ; et le roi Asa envoya ces derniers vers Ben-Hadad, fils de Tabremon, fils de Hézion, roi de Syrie, qui habitait à Damas, pour dire :",
+        "NAB": "Asa then took all the silver and gold remaining in the treasuries of the temple of the LORD and of the royal palace. Entrusting them to his ministers, King Asa sent them to Ben-hadad, son of Tabrimmon, son of Hezion, king of Aram, resident in Damascus. He said:",
+        "VAT_ES": "Entonces Asá recogió toda la plata y el oro que aún quedaban en los tesoros de la Casa del Señor y en los de la casa del rey, y se los confió a sus servidores, a los que envió luego a Ben Hadad, hijo de Tabrimón, hijo de Jezión, rey de Aram, que residía en Damasco, con el siguiente mensaje:",
+        "CEI": "Asa prese tutto l'argento e l'oro depositato nei tesori del tempio e nei tesori della reggia, li consegnò ai suoi ministri, che li portarono per ordine del re Asa a Ben-Hadàd, figlio di Tab-Rimmòn, figlio di Chezion, re d'Aram, che risiedeva in Damasco, con la proposta:"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "בְּרִית֙ בֵּינִ֣/י וּ/בֵינֶ֔/ךָ בֵּ֥ין אָבִ֖/י וּ/בֵ֣ין אָבִ֑י/ךָ הִנֵּה֩ שָׁלַ֨חְתִּֽי לְ/ךָ֥ שֹׁ֨חַד֙ כֶּ֣סֶף וְ/זָהָ֔ב לֵ֣ךְ הָפֵ֗רָ/ה אֶת בְּרִֽיתְ/ךָ֙ אֶת בַּעְשָׁ֣א מֶֽלֶךְ יִשְׂרָאֵ֔ל וְ/יַעֲלֶ֖ה מֵ/עָלָֽ/י׃",
+        "LXX": "Διάθου διαθήκην ἀνὰ μέσον ἐμοῦ καὶ τοῦ πατρός μου καὶ τοῦ πατρός σου· ἰδοὺ ἐξαπέσταλκά σοι δῶρα ἀργύριον καὶ χρυσίον· δεῦρο διασκέδασον τὴν διαθήκην σου τὴν πρὸς Βαασὰ βασιλέα Ἰσραήλ, καὶ ἀναβήσεται ἀπ’ ἐμοῦ.",
+        "VUL": "Fdus est inter me et te, et inter patrem meum et patrem tuum : ideo misi tibi munera, argentum et aurum : et peto ut venias, et irritum facias fdus quod habes cum Baasa rege Israël, et recedat a me.",
+        "SYN": "союз да будет между мною и между тобою, _как_ _был_ между отцом моим и между отцом твоим; вот, я посылаю тебе в дар серебро и золото; расторгни союз твой с Ваасою, царем Израильским, чтобы он отошел от меня.",
+        "NEO": "« Qu’il y ait une alliance entre moi et toi, comme il y en avait une entre mon père et ton père. Je t’envoie un présent en argent et en or. Va, romps ton alliance avec Baasa, roi d’Israël, afin qu’il s’éloigne de moi. »",
+        "NAB": "\"There is a treaty between you and me, as there was between your father and my father. I am sending you a present of silver and gold. Go, break your treaty with Baasha, king of Israel, that he may withdraw from me.\"",
+        "VAT_ES": "«Hay una alianza entre tú y yo, como la hubo entre mi padre y el tuyo. Aquí te envío como presente plata y oro. Rompe entonces tu alianza con Basá, rey de Israel, para que se retire de mi territorio».",
+        "CEI": "\"Ci sia un'alleanza fra me e te, come ci fu fra mio padre e tuo padre. Ecco ti mando un dono d'argento e d'oro. Su, rompi la tua alleanza con Baasa, re di Israele, sì che egli si ritiri da me\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֨ע בֶּן הֲדַ֜ד אֶל הַ/מֶּ֣לֶךְ אָסָ֗א וַ֠/יִּשְׁלַח אֶת שָׂרֵ֨י הַ/חֲיָלִ֤ים אֲשֶׁר ל/וֹ֙ עַל עָרֵ֣י יִשְׂרָאֵ֔ל וַ/יַּךְ֙ אֶת עִיּ֣וֹן וְ/אֶת דָּ֔ן וְ/אֵ֖ת אָבֵ֣ל בֵּֽית מַעֲכָ֑ה וְ/אֵת֙ כָּל כִּנְר֔וֹת עַ֖ל כָּל אֶ֥רֶץ נַפְתָּלִֽי׃",
+        "LXX": "καὶ ἤκουσεν υἱὸς Ἁδὲρ τοῦ βασιλέως Ἀσά, καὶ ἀπέστειλεν τοὺς ἄρχοντας τῆς δυνάμεως τῶν αὐτοῦ ταῖς πόλεσιν τοῦ Ἰσραήλ· καὶ ἐπάταξαν τὴν Ἀὶν τὴν Δὰν καὶ τὴν Ἀδελμὰθ καὶ πᾶσαν τὴν Χεζράθ, ἕως πάσης τῆς γῆς Νεφθαλεί.",
+        "VUL": "Acquiescens Benadad regi Asa, misit principes exercitus sui in civitates Israël, et percusserunt Ahion, et Dan, et Abeldomum Maacha, et universam Cenneroth, omnem scilicet terram Nephthali.",
+        "SYN": "И послушался Венадад царя Асы, и послал военачальников своих против городов Израильских, и поразил Аин и Дан и Авел-Беф-Мааху и весь Киннероф, по всей земле Неффалима.",
+        "NEO": "Ben-Hadad écouta le roi Asa ; il envoya les chefs de son armée contre les villes d’Israël, et il battit Ahion, Dan, Abel-Beth-Maacha, et tout Cenéroth avec tout le pays de Nephthali.",
+        "NAB": "Ben-hadad agreed with King Asa and sent the leaders of his troops against the cities of Israel. They attacked Ijon, Dan, Abel-beth-maacah, and all Chinnereth, besides all the land of Naphtali.",
+        "VAT_ES": "Ben Hadad le hizo caso y envió a los jefes de su ejército contra las ciudades de Israel. Atacó a Iyón, Dan, Abel Bet Maacá, toda la región de Quinéret y todo el territorio de Neftalí.",
+        "CEI": "Ben-Hadàd ascoltò il re Asa; mandò contro le città di Israele i capi delle sue forze armate, occupò Iion, Dan, Abel-Bet-Maaca e l'intera regione di Genèsaret, compreso tutto il territorio di Nèftali."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ כִּ/שְׁמֹ֣עַ בַּעְשָׁ֔א וַ/יֶּחְדַּ֕ל מִ/בְּנ֖וֹת אֶת הָֽ/רָמָ֑ה וַ/יֵּ֖שֶׁב בְּ/תִרְצָֽה׃",
+        "LXX": "καὶ ἐγένετο ὡς ἤκουσεν Βαασά, καὶ διέλιπεν τοῦ οἰκοδομεῖν τὴν Ῥααμὰ καὶ ἀνέστρεψεν εἰς Θερσά.",
+        "VUL": "Quod cum audisset Baasa, intermisit ædificare Rama, et reversus est in Thersa.",
+        "SYN": "Услышав _о_ _сем,_ Вааса перестал строить Раму и возвратился в Фирцу.",
+        "NEO": "Baasa, l’ayant appris, cessa de bâtir Rama, et resta à Thersa.",
+        "NAB": "When Baasha heard of it, he left off fortifying Ramah, and stayed in Tirzah.",
+        "VAT_ES": "Cuando se enteró Basá, suspendió la fortificación de Ramá y regresó a Tirsá.",
+        "CEI": "Quando lo seppe, Baasa smise di fortificare Rama e tornò in Tirza."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/הַ/מֶּ֨לֶךְ אָסָ֜א הִשְׁמִ֤יעַ אֶת כָּל יְהוּדָה֙ אֵ֣ין נָקִ֔י וַ/יִּשְׂא֞וּ אֶת אַבְנֵ֤י הָֽ/רָמָה֙ וְ/אֶת עֵצֶ֔י/הָ אֲשֶׁ֥ר בָּנָ֖ה בַּעְשָׁ֑א וַ/יִּ֤בֶן בָּ/ם֙ הַ/מֶּ֣לֶךְ אָסָ֔א אֶת גֶּ֥בַע בִּנְיָמִ֖ן וְ/אֶת הַ/מִּצְפָּֽה׃",
+        "LXX": "καὶ ὁ βασιλεὺς Ἀσὰ παρήγγειλεν παντὶ Ἰούδᾳ εἰς Αἰνακείμ, καὶ αἴρουσιν τοὺς λίθους τῆς Ῥααμὰ καὶ τὰ ξύλα αὐτῆς ἃ ᾠκοδόμησεν Βαασά, καὶ ᾠκοδόμησεν ἐν αὐτοῖς ὁ βασιλεὺς Ἀσὰ πᾶν βουνὸν Βενιαμεὶν καὶ τὴν σκοπιάν.",
+        "VUL": "Rex autem Asa nuntium misit in omnem Judam, dicens : Nemo sit excusatus. Et tulerunt lapides de Rama, et ligna ejus, quibus ædificaverat Baasa, et exstruxit de eis rex Asa Gabaa Benjamin, et Maspha.",
+        "SYN": "Царь же Аса созвал всех Иудеев, никого не исключая, и вынесли они из Рамы камни и дерева, которые Вааса употреблял для строения. И выстроил из них царь Аса Гиву Вениаминову и Мицпу.",
+        "NEO": "Le roi Asa fit convoquer tout Juda, sans exempter personne ; et ils emportèrent les pierres et le bois avec lesquels Baasa construisait Rama, et le roi Asa bâtit avec eux Gabaa de Benjamin et Maspha.",
+        "NAB": "Then King Asa summoned all Judah without exception, and they carried away the stones and beams with which Baasha was fortifying Ramah. With them King Asa built Geba of Benjamin and Mizpeh.",
+        "VAT_ES": "El rey Asá convocó luego a todos los habitantes de Judá, sin excepción, y se llevaron las piedras y la madera con que Basá estaba fortificando Ramá. Con ellas, el rey Asá fortificó Gueba de Benjamín y Mispá.",
+        "CEI": "Allora il re Asa convocò tutti quelli di Giuda, senza esclusione alcuna; costoro presero da Rama le pietre e il legname che Baasa aveva usato per le costruzioni. Con tale materiale il re Asa fortificò Gheba di Beniamino e Mizpà."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/יֶ֣תֶר כָּל דִּבְרֵֽי אָ֠סָא וְ/כָל גְּב֨וּרָת֜/וֹ וְ/כָל אֲשֶׁ֣ר עָשָׂ֗ה וְ/הֶֽ/עָרִים֙ אֲשֶׁ֣ר בָּנָ֔ה הֲ/לֹֽא הֵ֣מָּה כְתוּבִ֗ים עַל סֵ֛פֶר דִּבְרֵ֥י הַ/יָּמִ֖ים לְ/מַלְכֵ֣י יְהוּדָ֑ה רַ֚ק לְ/עֵ֣ת זִקְנָת֔/וֹ חָלָ֖ה אֶת רַגְלָֽי/ו׃",
+        "LXX": "καὶ τὰ λοιπὰ τῶν λόγων Ἀσά, καὶ πᾶσα ἡ δυναστεία αὐτοῦ ἣν ἐποίησεν, οὐκ ἰδοὺ ταῦτα γεγραμμένα ἐστὶν ἐπὶ βιβλίῳ λόγων τῶν ἡμερῶν τοῖς βασιλεῦσιν Ἰούδα; πλὴν ἐν τῷ καιρῷ τοῦ γήρως αὐτοῦ ἐπόνεσεν τοὺς πόδας αὐτοῦ.",
+        "VUL": "Reliqua autem omnium sermonum Asa, et universæ fortitudines ejus, et cuncta quæ fecit, et civitates quas exstruxit, nonne hæc scripta sunt in libro verborum dierum regum Juda ? Verumtamen in tempore senectutis suæ doluit pedes.",
+        "SYN": "Все прочие дела Асы и все подвиги его, и всё, что он сделал, и города, которые он построил, описаны в летописи царей Иудейских, кроме того, что в старости своей он был болен ногами.",
+        "NEO": "Le reste de tous les actes d’Asa, tous ses exploits, et tout ce qu’il a fait, et les villes qu’il a bâties, cela n’est-il pas écrit dans le livre des Chroniques des rois de Juda ? Toutefois, au temps de sa vieillesse, il eut les pieds malades.",
+        "NAB": "The rest of the acts of Asa, with all his valor and accomplishments, and the cities he built, are written in the book of the chronicles of the kings of Judah. In his old age, Asa had an infirmity in his feet.",
+        "VAT_ES": "El resto de todos los hechos de Asá, su valentía, sus obras y las ciudades que construyó, &iquest;no está escrito todo eso en el libro de los Anales de los reyes de Judá? Cuando ya era anciano, se enfermó de los pies.",
+        "CEI": "Le altre gesta di Asa, tutte le sue prodezze e tutte le sue azioni, le città che egli edificò, sono descritte nel libro delle Cronache dei re di Giuda. Egli nella sua vecchiaia ebbe la podàgra."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁכַּ֤ב אָסָא֙ עִם אֲבֹתָ֔י/ו וַ/יִּקָּבֵר֙ עִם אֲבֹתָ֔י/ו בְּ/עִ֖יר דָּוִ֣ד אָבִ֑י/ו וַ/יִּמְלֹ֛ךְ יְהוֹשָׁפָ֥ט בְּנ֖/וֹ תַּחְתָּֽי/ו׃",
+        "LXX": "καὶ ἐκοιμήθη Ἀσὰ καὶ θάπτεται μετὰ τῶν πατέρων αὐτοῦ ἐν πόλει Δαυείδ· καὶ βασιλεύει Ἰωσαφὰθ υἱὸς αὐτοῦ ἀντ’ αὐτοῦ.",
+        "VUL": "Et dormivit cum patribus suis, et sepultus est cum eis in civitate David patris sui. Regnavitque Josaphat filius ejus pro eo.",
+        "SYN": "И почил Аса с отцами своими и погребен с отцами своими в городе Давида, отца своего. И воцарился Иосафат, сын его, вместо него.",
+        "NEO": "Asa se coucha avec ses pères et il fut enterré avec ses pères dans la ville de David, son père ; et Josaphat, son fils, régna à sa place.",
+        "NAB": "He rested with his ancestors; he was buried in his forefather's City of David, and his son Jehoshaphat succeeded him as king.",
+        "VAT_ES": "Asá se fue a descansar con sus padres, y fue sepultado en la Ciudad de David, su padre. Su hijo Josafat reinó en lugar de él.",
+        "CEI": "Asa si addormentò con i suoi padri; fu sepolto nella città di Davide suo antenato e al suo posto divenne re suo figlio Giòsafat."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/נָדָ֣ב בֶּן יָרָבְעָ֗ם מָלַךְ֙ עַל יִשְׂרָאֵ֔ל בִּ/שְׁנַ֣ת שְׁתַּ֔יִם לְ/אָסָ֖א מֶ֣לֶךְ יְהוּדָ֑ה וַ/יִּמְלֹ֥ךְ עַל יִשְׂרָאֵ֖ל שְׁנָתָֽיִם׃",
+        "LXX": "Καὶ Ναβὰθ υἱὸς Ἰεροβοὰμ βασιλεύει ἐπὶ Ἰσραὴλ ἐν ἔτει δευτέρῳ τοῦ Ἀσὰ βασιλέως Ἰούδα, καὶ ἐβασίλευσεν ἐν Ἰσραὴλ ἔτη δύο.",
+        "VUL": "Nadab vero filius Jeroboam regnavit super Israël anno secundo Asa regis Juda : regnavitque super Israël duobus annis.",
+        "SYN": "Нават же, сын Иеровоамов, воцарился над Израилем во второй год Асы, царя Иудейского, и царствовал над Израилем два года.",
+        "NEO": "Nadab, fils de Jéroboam, devint roi d’Israël la seconde année d’Asa, roi de Juda, et il régna deux ans sur Israël.",
+        "NAB": "In the second year of Asa, king of Judah, Nadab, son of Jeroboam, became king of Israel; he reigned over Israel two years.",
+        "VAT_ES": "Nadab, hijo de Jeroboam, comenzó a reinar sobre Israel el segundo año de Asá, rey de Judá, y reinó dos años sobre Israel.",
+        "CEI": "Nadàb, figlio di Geroboamo, divenne re d'Israele nell'anno secondo di Asa, re di Giuda, e regnò su Israele tre anni."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ הָ/רַ֖ע בְּ/עֵינֵ֣י יְהוָ֑ה וַ/יֵּ֨לֶךְ֙ בְּ/דֶ֣רֶךְ אָבִ֔י/ו וּ֨/בְ/חַטָּאת֔/וֹ אֲשֶׁ֥ר הֶחֱטִ֖יא אֶת יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐποίησεν τὸ πονηρὸν ἐνώπιον Κυρίου, καὶ ἐπορεύθη ἐν ὁδῷ τοῦ πατρὸς αὐτοῦ καὶ ἐν ταῖς ἁμαρτίαις αὐτοῦ αἷς ἐξήμαρτεν τὸν Ἰσραήλ.",
+        "VUL": "Et fecit quod malum est in conspectu Domini, et ambulavit in viis patris sui, et in peccatis ejus quibus peccare fecit Israël.",
+        "SYN": "И делал он неугодное пред очами Господа, ходил путем отца своего и во грехах его, которыми тот ввел Израиля в грех.",
+        "NEO": "Il fit ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**, et il marcha dans la voie de son père et dans les péchés de son père qu’il avait fait commettre à Israël.",
+        "NAB": "He did evil in the LORD'S sight, imitating his father's conduct and the sin which he had caused Israel to commit.",
+        "VAT_ES": "El hizo lo que es malo a los ojos del Señor; siguió el camino de su padre y persistió en el pecado con que este hizo pecar a Israel.",
+        "CEI": "Egli fece ciò che è male agli occhi del Signore, imitando la condotta di suo padre e il peccato che questi aveva fatto commettere a Israele."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יִּקְשֹׁ֨ר עָלָ֜י/ו בַּעְשָׁ֤א בֶן אֲחִיָּה֙ לְ/בֵ֣ית יִשָּׂשכָ֔ר וַ/יַּכֵּ֣/הוּ בַעְשָׁ֔א בְּ/גִבְּת֖וֹן אֲשֶׁ֣ר לַ/פְּלִשְׁתִּ֑ים וְ/נָדָב֙ וְ/כָל יִשְׂרָאֵ֔ל צָרִ֖ים עַֽל גִּבְּתֽוֹן׃",
+        "LXX": "καὶ περιεκάθισεν αὐτὸν Βαασὰ υἱὸς Ἀχειὰ ἐπὶ τὸν οἶκον Βελαάν· ὁ υἱὸς Ἀχειὰ καὶ ἐχάραξεν αὐτὸν ἐν Γαβαθὼν τῇ τῶν ἀλλοφύλων· καὶ Ναβὰθ καὶ πᾶς Ἰσραὴλ περιεκάθητο ἐπὶ Γαβαθών.",
+        "VUL": "Insidiatus est autem ei Baasa filius Ahiæ de domo Issachar, et percussit eum in Gebbethon, quæ est urbs Philisthinorum : siquidem Nadab et omnis Israël obsidebant Gebbethon.",
+        "SYN": "И сделал против него заговор Вааса, сын Ахии, из дома Иссахарова, и убил его Вааса при Гавафоне Филистимском, когда Нават и все Израильтяне осаждали Гавафон:",
+        "NEO": "Baasa, fils d’Ahias, de la maison d’Issachar, conspira contre lui ; et Baasa le frappa à Gebbéthon, qui appartenait aux Philistins, car Nadab et tout Israël faisaient le siège de Gebbéthon.",
+        "NAB": "Baasha, son of Ahijah, of the house of Issachar, plotted against him and struck him down at Gibbethon of the Philistines, which Nadab and all Israel were besieging.",
+        "VAT_ES": "Basá, hijo de Ajías, de la casa de Isacar, conspiró contra él y lo ultimó en Guibetón, que pertenecía a los filisteos, cuando Nadab y todo Israel lo estaban sitiando.",
+        "CEI": "Contro di lui congiurò Baasa figlio di Achia, della casa di Issacar, e lo assassinò in Ghibbeton che apparteneva ai Filistei, mentre Nadàb e tutto Israele assediavano Ghibbeton."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יְמִתֵ֣/הוּ בַעְשָׁ֔א בִּ/שְׁנַ֣ת שָׁלֹ֔שׁ לְ/אָסָ֖א מֶ֣לֶךְ יְהוּדָ֑ה וַ/יִּמְלֹ֖ךְ תַּחְתָּֽי/ו׃",
+        "LXX": "καὶ ἐθανάτωσεν αὐτὸν Βαασὰ ἐν ἔτει τρίτῳ βασιλέως τοῦ Ἀσὰ υἱοῦ Ἀβιού, καὶ ἐβασίλευσεν.",
+        "VUL": "Interfecit ergo illum Baasa in anno tertio Asa regis Juda, et regnavit pro eo.",
+        "SYN": "и умертвил его Вааса в третий год Асы, царя Иудейского, и воцарился вместо него.",
+        "NEO": "Baasa le mit à mort la troisième année d’Asa, roi de Juda, et il régna à sa place.",
+        "NAB": "Baasha killed him in the third year of Asa, king of Judah, and reigned in his stead.",
+        "VAT_ES": "Basá dio muerte a Nadab en el tercer año de Asá, rey de Judá, y se constituyó rey en lugar de él.",
+        "CEI": "Baasa lo uccise nell'anno terzo di Asa re di Giuda, e divenne re al suo posto."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י כְ/מָלְכ֗/וֹ הִכָּה֙ אֶת כָּל בֵּ֣ית יָרָבְעָ֔ם לֹֽא הִשְׁאִ֧יר כָּל נְשָׁמָ֛ה לְ/יָרָבְעָ֖ם עַד הִשְׁמִד֑/וֹ כִּ/דְבַ֣ר יְהוָ֔ה אֲשֶׁ֣ר דִּבֶּ֔ר בְּ/יַד עַבְדּ֖/וֹ אֲחִיָּ֥ה הַ/שִּׁילֹנִֽי׃",
+        "LXX": "καὶ ἐγένετο ὡς ἐβασίλευσεν, καὶ ἐπάταξεν τὸν οἶκον Ἰεροβοάμ, καὶ οὐχ ὑπελίπετο πᾶσαν πνοὴν τοῦ Ἰεροβοὰμ ἕως τοῦ ἐξολεθρεῦσαι αὐτόν, κατὰ τὸ ῥῆμα Κυρίου ὃ ἐλάλησεν ἐν χειρὶ δούλου Ἀχειὰ τοῦ Σηλωνείτου",
+        "VUL": "Cumque regnasset, percussit omnem domum Jeroboam : non dimisit ne unam quidem animam de semine ejus donec deleret eum, juxta verbum Domini quod locutus fuerat in manu servi sui Ahiæ Silonitis,",
+        "SYN": "Когда он воцарился, то избил весь дом Иеровоамов, не оставил ни души у Иеровоама, доколе не истребил его, по слову Господа, которое Он изрек чрез раба Своего Ахию Силомлянина,",
+        "NEO": "Lorsqu’il fut devenu roi, il frappa toute la maison de Jéroboam ; il n’épargna de la maison de Jéroboam aucune âme vivante, sans l’exterminer, selon la parole que \\+w Yahweh|strong=\"H3068\"\\+w** avait dite par l’organe de son serviteur Ahias de Silo,",
+        "NAB": "Once he was king, he killed off the entire house of Jeroboam, not leaving a single soul to Jeroboam but destroying him utterly, according to the warning which the LORD had pronounced through his servant, Ahijah the Shilonite,",
+        "VAT_ES": "Apenas comenzó a reinar, masacró a toda la casa de Jeroboam, hasta exterminarla, sin dejar a nadie con vida, conforme a la palabra que había dicho el Señor por medio de su servidor Ajías de Silo.",
+        "CEI": "Appena divenuto re, egli distrusse tutta la famiglia di Geroboamo: non lasciò vivo nessuno di quella stirpe, ma la distrusse tutta, secondo la parola del Signore pronunziata per mezzo del suo servo Achia di Silo,"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "עַל חַטֹּ֤אות יָרָבְעָם֙ אֲשֶׁ֣ר חָטָ֔א וַ/אֲשֶׁ֥ר הֶחֱטִ֖יא אֶת יִשְׂרָאֵ֑ל בְּ/כַעְס֕/וֹ אֲשֶׁ֣ר הִכְעִ֔יס אֶת יְהוָ֖ה אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "περὶ τῶν ἁμαρτιῶν Ἰεροβοάμ, ὡς ἐξήμαρτεν τὸν Ἰσραήλ, καὶ ἐν τῷ παροργισμῷ αὐτοῦ ᾧ παρώργισεν τὸν κύριον θεὸν τοῦ Ἰσραήλ.",
+        "VUL": "propter peccata Jeroboam, quæ peccaverat, et quibus peccare fecerat Israël : et propter delictum quo irritaverat Dominum Deum Israël.",
+        "SYN": "за грехи Иеровоама, которые он сам делал и которыми ввел в грех Израиля, за оскорбление, которым он прогневал Господа Бога Израилева.",
+        "NEO": "à cause des péchés de Jéroboam qu’il avait commis, et qu’il avait fait commettre à Israël, irritant ainsi \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël.",
+        "NAB": "because of the sins Jeroboam committed and caused Israel to commit, by which he provoked the LORD, the God of Israel, to anger.",
+        "VAT_ES": "Esto sucedió a causa de los pecados que Jeroboam cometió e hizo cometer a Israel, provocando así la indignación del Señor, el Dios de Israel.",
+        "CEI": "a causa dei peccati di Geroboamo, commessi da lui e fatti commettere a Israele, e a causa dello sdegno a cui aveva provocato il Signore Dio di Israele."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/יֶ֛תֶר דִּבְרֵ֥י נָדָ֖ב וְ/כָל אֲשֶׁ֣ר עָשָׂ֑ה הֲ/לֹא הֵ֣ם כְּתוּבִ֗ים עַל סֵ֛פֶר דִּבְרֵ֥י הַ/יָּמִ֖ים לְ/מַלְכֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ τὰ λοιπὰ τῶν λόγων Ναβὰτ καὶ πάντα ἃ ἐποίησεν, οὐκ ἰδοὺ ταῦτα γεγραμμένα ἐστὶν ἐν βιβλίῳ λόγων τῶν ἡμερῶν τοῖς βασιλεῦσιν Ἰσραήλ;",
+        "VUL": "Reliqua autem sermonum Nadab, et omnia quæ operatus est, nonne hæc scripta sunt in libro verborum dierum regum Israël ?",
+        "SYN": "Прочие дела Навата, всё, что он сделал, описано в летописи царей Израильских.",
+        "NEO": "Le reste des actes de Nadab, et tout ce qu’il a fait, cela n’est-il pas écrit dans le livre des Chroniques des rois d’Israël ?",
+        "NAB": "The rest of the acts of Nadab, with all that he did, are written in the book of the chronicles of the kings of Israel.",
+        "VAT_ES": "El resto de los hechos de Nadab, todo lo que él hizo, &iquest;no está escrito en el libro de los Anales de los reyes de Israel?",
+        "CEI": "Le altre gesta di Nadàb e tutte le sue azioni sono descritte nel libro delle Cronache dei re di Israele."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וּ/מִלְחָמָ֨ה הָיְתָ֜ה בֵּ֣ין אָסָ֗א וּ/בֵ֛ין בַּעְשָׁ֥א מֶֽלֶךְ יִשְׂרָאֵ֖ל כָּל יְמֵי/הֶֽם׃",
+        "VUL": "Fuitque bellum inter Asa, et Baasa regem Israël, cunctis diebus eorum.",
+        "SYN": "И война была между Асою и Ваасою, царем Израильским, во все дни их.",
+        "NEO": "Il y eut guerre entre Asa et Baasa, roi d’Israël, pendant toute leur vie.",
+        "NAB": "(There was war between Asa and Baasha, king of Israel, as long as they lived.)",
+        "CEI": "Ci fu guerra fra Asa e Baasa, re di Israele, per tutta la loro vita.((16))"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "בִּ/שְׁנַ֣ת שָׁלֹ֔שׁ לְ/אָסָ֖א מֶ֣לֶךְ יְהוּדָ֑ה מָ֠לַךְ בַּעְשָׁ֨א בֶן אֲחִיָּ֤ה עַל כָּל יִשְׂרָאֵל֙ בְּ/תִרְצָ֔ה עֶשְׂרִ֥ים וְ/אַרְבַּ֖ע שָׁנָֽה׃",
+        "LXX": "Καὶ ἐν τῷ ἔτει τῷ τρίτῳ βασιλέως Ἰούδα βασιλεύει Βαασὰ υἱὸς Ἀχειὰ ἐπὶ Ἰσραὴλ ἐν Θερσὰ εἴκοσι καὶ τέσσαρα ἔτη.",
+        "VUL": "Anno tertio Asa regis Juda, regnavit Baasa filius Ahiæ super omnem Israël in Thersa, viginti quatuor annis.",
+        "SYN": "В третий год Асы, царя Иудейского, воцарился Вааса, сын Ахии, над всеми Израильтянами в Фирце _и_ _царствовал_ двадцать четыре года.",
+        "NEO": "La troisième année d’Asa, roi de Juda, Baasa, fils d’Ahias, devint roi sur tout Israël à Thersa, et il régna vingt-quatre ans.",
+        "NAB": "In the third year of Asa, king of Judah, Baasha, son of Ahijah, began his twenty-four-year reign over Israel in Tirzah.",
+        "VAT_ES": "El tercer año de Asá, rey de Judá, comenzó a reinar sobre Israel Basá, hijo de Ajías, y reinó veinticuatro años en Tirsá.",
+        "CEI": "Nell'anno terzo di Asa, re di Giuda, Baasa, figlio di Achia, divenne re d'Israele in Tirza. Regnò ventiquattro anni."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ הָ/רַ֖ע בְּ/עֵינֵ֣י יְהוָ֑ה וַ/יֵּ֨לֶךְ֙ בְּ/דֶ֣רֶךְ יָרָבְעָ֔ם וּ֨/בְ/חַטָּאת֔/וֹ אֲשֶׁ֥ר הֶחֱטִ֖יא אֶת יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐποίησεν τὸ πονηρὸν ἐνώπιον Κυρίου, καὶ ἐπορεύθη ἐν ὁδῷ Ἰεροβοὰμ υἱοῦ Ναβὰθ καὶ ἐν ταῖς ἁμαρτίαις αὐτοῦ, ὡς ἐξήμαρτεν τὸν Ἰσραήλ.",
+        "VUL": "Et fecit malum coram Domino, ambulavitque in via Jeroboam, et in peccatis ejus quibus peccare fecit Israël.",
+        "SYN": "И делал неугодное пред очами Господними и ходил путем Иеровоама и во грехах его, которыми тот ввел в грех Израиля.",
+        "NEO": "Il fit ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**, et il marcha dans la voie de Jéroboam et dans les péchés que celui-ci avait fait commettre à Israël.",
+        "NAB": "He did evil in the LORD'S sight, imitating the conduct of Jeroboam and the sin he had caused Israel to commit.",
+        "VAT_ES": "El hizo lo que es malo a los ojos del Señor; siguió el camino de Jeroboam y persistió en el pecado con que este hizo pecar a Israel.",
+        "CEI": "Fece ciò che è male agli occhi del Signore, imitando la condotta di Geroboamo e il peccato che questi aveva fatto commettere a Israele."
+      }
+    }
+  }
+}

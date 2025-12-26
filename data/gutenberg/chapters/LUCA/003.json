@@ -1,0 +1,661 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LUCA_003",
+  "book_key": "LUCA",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Ἐν ἔτει δὲ πεντεκαιδεκάτῳ τῆς ἡγεμονίας Τιβερίου Καίσαρος, ἡγεμονεύοντος Ποντίου Πιλάτου τῆς Ἰουδαίας, καὶ τετραρχοῦντος τῆς Γαλιλαίας Ἡρῴδου, Φιλίππου δὲ τοῦ ἀδελφοῦ αὐτοῦ τετραρχοῦντος τῆς Ἰτουραίας καὶ Τραχωνίτιδος χώρας, καὶ Λυσανίου τῆς Ἀβιληνῆς τετραρχοῦντος,",
+        "VUL": "Anno autem quintodecimo imperii Tiberii Cæsaris, procurante Pontio Pilato Judæam, tetrarcha autem Galilææ Herode, Philippo autem fratre ejus tetrarcha Iturææ, et Trachonitidis regionis, et Lysania Abilinæ tetrarcha,",
+        "SYN": "В пятнадцатый же год правления Тиверия кесаря, когда Понтий Пилат начальствовал в Иудее, Ирод был четвертовластником в Галилее, Филипп, брат его, четвертовластником в Итурее и Трахонитской области, а Лисаний четвертовластником в Авилинее,",
+        "NEO": "La quinzième année+ 3:1 III, 1. Quinzième année de l’hégémonie de Tibère : l’an 28 à 29 de l’ère chrétienne s’il s’agit de la succession ; l’an 25 à 26 s’il s’agit de l’association à l’empire.* du règne de Tibère César, Ponce Pilate étant gouverneur de la Judée ; Hérode, tétrarque de la Galilée ; Philippe, son frère, tétrarque de l’Iturée et du pays de la Trachonite, et Lysanias, tétrarque de l’Abilène ;",
+        "NAB": "In the fifteenth year of the reign of Tiberius Caesar, when Pontius Pilate was governor of Judea, and Herod was tetrarch of Galilee, and his brother Philip tetrarch of the region of Ituraea and Trachonitis, and Lysanias was tetrarch of Abilene,",
+        "VAT_ES": "El año decimoquinto del reinado del emperador Tiberio, cuando Poncio Pilato gobernaba la Judea, siendo Herodes tetrarca de Galilea, su hermano Felipe tetrarca de Iturea y Traconítide, y Lisanias tetrarca de Abilene,",
+        "CEI": "Entrato in Gerico, attraversava la città."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "ἐπὶ ἀρχιερέως Ἄννα καὶ Καϊάφα, ἐγένετο ῥῆμα θεοῦ ἐπὶ Ἰωάννην τὸν Ζαχαρίου υἱὸν ἐν τῇ ἐρήμῳ.",
+        "VUL": "sub principibus sacerdotum Anna et Caipha : factum est verbum Domini super Joannem, Zachariæ filium, in deserto.",
+        "SYN": "при первосвященниках Анне и Каиафе, был глагол Божий к Иоанну, сыну Захарии, в пустыне.",
+        "NEO": "au temps des grands prêtres Anne et Caïphe, la parole du Seigneur se fit entendre à Jean, fils de Zacharie, dans le désert.+ 3:2 2. Jean, xi, 51.*",
+        "NAB": "during the high priesthood of Annas and Caiaphas, the word of God came to John the son of Zechariah in the desert.",
+        "VAT_ES": "bajo el pontificado de Anás y Caifás, Dios dirigió su palabra a Juan, hijo de Zacarías, que estaba en el desierto.",
+        "CEI": "Ed ecco un uomo di nome Zaccheo, capo dei pubblicani e ricco,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Καὶ ἦλθεν εἰς πᾶσαν τὴν περίχωρον τοῦ Ἰορδάνου, κηρύσσων βάπτισμα μετανοίας εἰς ἄφεσιν ἁμαρτιῶν·",
+        "VUL": "Et venit in omnem regionem Jordanis, prædicans baptismum pnitentiæ in remissionem peccatorum,",
+        "SYN": "И он проходил по всей окрестной стране Иорданской, проповедуя крещение покаяния для прощения грехов,",
+        "NEO": "Et il vint dans toute la contrée du Jourdain, prêchant le baptême de pénitence pour la rémission des péchés,",
+        "NAB": "He went throughout (the) whole region of the Jordan, proclaiming a baptism of repentance for the forgiveness of sins,",
+        "VAT_ES": "Este comenzó entonces a recorrer toda la región del río Jordán, anunciando un bautismo de conversión para el perdón de los pecados,",
+        "CEI": "cercava di vedere quale fosse Gesù, ma non gli riusciva a causa della folla, poiché era piccolo di statura."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "ὡς γέγραπται ἐν βίβλῳ λόγων Ἠσαΐου τοῦ προφήτου, λέγοντος, Φωνὴ βοῶντος ἐν τῇ ἐρήμῳ, Ἑτοιμάσατε τὴν ὁδὸν κυρίου· εὐθείας ποιεῖτε τὰς τρίβους αὐτοῦ.",
+        "VUL": "sicut scriptum est in libro sermonum Isaiæ prophetæ : [Vox clamantis in deserto :/ Parate viam Domini ; rectas facite semitas ejus :/",
+        "SYN": "как написано в книге слов пророка Исаии, который говорит: глас вопиющего в пустыне: приготовьте путь Господу, прямыми сделайте стези Ему;",
+        "NEO": "ainsi qu’il est écrit au livre des oracles du prophète Isaïe : « Une voix a retenti au désert : Préparez le chemin du Seigneur, aplanissez ses sentiers.+ 3:4 4. Is. xl, 3 sv. Comp. Matth. iii, 3 et Marc, i, 2.*",
+        "NAB": "as it is written in the book of the words of the prophet Isaiah: \"A voice of one crying out in the desert: 'Prepare the way of the Lord, make straight his paths.",
+        "VAT_ES": "como está escrito en el libro del profeta Isaías: \"Una voz grita en desierto: Preparen el camino del Señor, allanen sus senderos.",
+        "CEI": "Allora corse avanti e, per poterlo vedere, salì su un sicomoro, poiché doveva passare di là."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Πᾶσα φάραγξ πληρωθήσεται, καὶ πᾶν ὄρος καὶ βουνὸς ταπεινωθήσεται· καὶ ἔσται τὰ σκολιὰ εἰς εὐθεῖαν, καὶ αἱ τραχεῖαι εἰς ὁδοὺς λείας·",
+        "VUL": "omnis vallis implebitur,/ et omnis mons, et collis humiliabitur :/ et erunt prava in directa, et aspera in vias planas :/",
+        "SYN": "всякий дол да наполнится, и всякая гора и холм да понизятся, кривизны выпрямятся и неровные пути сделаются гладкими;",
+        "NEO": "Toute vallée sera comblée, toute montagne et toute colline seront abaissées ; les chemins tortueux deviendront droits, et les raboteux unis.",
+        "NAB": "Every valley shall be filled and every mountain and hill shall be made low. The winding roads shall be made straight, and the rough ways made smooth,",
+        "VAT_ES": "Los valles serán rellenados, las montañas y las colinas serán aplanadas. Serán enderezados los senderos sinuosos y nivelados los caminos desparejos.",
+        "CEI": "Quando giunse sul luogo, Gesù alzò lo sguardo e gli disse: \"Zaccheo, scendi subito, perché oggi devo fermarmi a casa tua\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "καὶ ὄψεται πᾶσα σὰρξ τὸ σωτήριον τοῦ θεοῦ.",
+        "VUL": "et videbit omnis caro salutare Dei.]",
+        "SYN": "и узрит всякая плоть спасение Божие.",
+        "NEO": "Et toute chair verra le salut de Dieu. »",
+        "NAB": "and all flesh shall see the salvation of God.'\"",
+        "VAT_ES": "Entonces, todos los hombres verán la Salvación de Dios.\"",
+        "CEI": "In fretta scese e lo accolse pieno di gioia."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "¶Ἔλεγεν οὖν τοῖς ἐκπορευομένοις ὄχλοις βαπτισθῆναι ὑπ’ αὐτοῦ, Γεννήματα ἐχιδνῶν, τίς ὑπέδειξεν ὑμῖν φυγεῖν ἀπὸ τῆς μελλούσης ὀργῆς;",
+        "VUL": "Dicebat ergo ad turbas quæ exibant ut baptizarentur ab ipso : Genimina viperarum, quis ostendit vobis fugere a ventura ira ?",
+        "SYN": "_Иоанн_ приходившему креститься от него народу говорил: порождения ехиднины! кто внушил вам бежать от будущего гнева?",
+        "NEO": "Il disait à ceux qui accouraient en foule, pour être baptisés par lui : « Race de vipères, qui vous a appris à fuir la colère qui vient ?",
+        "NAB": "He said to the crowds who came out to be baptized by him, \"You brood of vipers! Who warned you to flee from the coming wrath?",
+        "VAT_ES": "Juan decía a la multitud que venía a hacerse bautizar por él: «Raza de víboras, &iquest;quién les enseñó a escapar de la ira de Dios que se acerca?",
+        "CEI": "Vedendo ciò, tutti mormoravano: \"È andato ad alloggiare da un peccatore!\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ποιήσατε οὖν καρποὺς ἀξίους τῆς μετανοίας· καὶ μὴ ἄρξησθε λέγειν ἐν ἑαυτοῖς, Πατέρα ἔχομεν τὸν Ἀβραάμ· λέγω γὰρ ὑμῖν ὅτι δύναται ὁ θεὸς ἐκ τῶν λίθων τούτων ἐγεῖραι τέκνα τῷ Ἀβραάμ.",
+        "VUL": "Facite ergo fructus dignos pnitentiæ, et ne cperitis dicere : Patrem habemus Abraham. Dico enim vobis quia potens est Deus de lapidibus istis suscitare filios Abrahæ.",
+        "SYN": "Сотворите же достойные плоды покаяния и не думайте говорить в себе: отец у нас Авраам, ибо говорю вам, что Бог может из камней сих воздвигнуть детей Аврааму.",
+        "NEO": "Faites donc de dignes fruits de repentir, et n’essayez pas de dire en vous-mêmes : Abraham est notre père ; car je vous dis que de ces pierres mêmes Dieu peut susciter des enfants à Abraham.",
+        "NAB": "Produce good fruits as evidence of your repentance; and do not begin to say to yourselves, 'We have Abraham as our father,' for I tell you, God can raise up children to Abraham from these stones.",
+        "VAT_ES": "Produzcan los frutos de una sincera conversión, y no piensen: «Tenemos por padre a Abraham». Porque yo les digo que de estas piedras Dios puede hacer surgir hijo de Abraham.",
+        "CEI": "Ma Zaccheo, alzatosi, disse al Signore: \"Ecco, Signore, io do la metà dei miei beni ai poveri; e se ho frodato qualcuno, restituisco quattro volte tanto\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Ἤδη δὲ καὶ ἡ ἀξίνη πρὸς τὴν ῥίζαν τῶν δένδρων κεῖται· πᾶν οὖν δένδρον μὴ ποιοῦν καρπὸν καλὸν ἐκκόπτεται καὶ εἰς πῦρ βάλλεται.",
+        "VUL": "Jam enim securis ad radicem arborum posita est. Omnis ergo arbor non faciens fructum bonum, excidetur, et in ignem mittetur.",
+        "SYN": "Уже и секира при корне дерев лежит: всякое дерево, не приносящее доброго плода, срубают и бросают в огонь.",
+        "NEO": "Déjà la cognée est à la racine des arbres. Tout arbre donc qui ne porte pas de bon fruit sera coupé et jeté au feu. »",
+        "NAB": "Even now the ax lies at the root of the trees. Therefore every tree that does not produce good fruit will be cut down and thrown into the fire.\"",
+        "VAT_ES": "El hacha ya está puesta a la raíz de los árboles; el árbol que no produce buen fruto será cortado y arrojado al fuego».",
+        "CEI": "Gesù gli rispose: \"Oggi la salvezza è entrata in questa casa, perché anch'egli è figlio di Abramo;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Καὶ ἐπηρώτων αὐτὸν οἱ ὄχλοι λέγοντες, Τί οὖν ποιήσομεν;",
+        "VUL": "Et interrogabant eum turbæ, dicentes : Quid ergo faciemus ?",
+        "SYN": "И спрашивал его народ: что же нам делать?",
+        "NEO": "Et le peuple lui demanda : « Que faut-il donc faire ? »",
+        "NAB": "And the crowds asked him, \"What then should we do?\"",
+        "VAT_ES": "La gente le preguntaba: «&iquest;Qué debemos hacer entonces?».",
+        "CEI": "il Figlio dell'uomo infatti è venuto a cercare e a salvare ciò che era perduto\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Ἀποκριθεὶς δὲ λέγει αὐτοῖς, Ὁ ἔχων δύο χιτῶνας μεταδότω τῷ μὴ ἔχοντι· καὶ ὁ ἔχων βρώματα ὁμοίως ποιείτω.",
+        "VUL": "Respondens autem dicebat illis : Qui habet duas tunicas, det non habenti : et qui habet escas, similiter faciat.",
+        "SYN": "Он сказал им в ответ: у кого две одежды, тот дай неимущему, и у кого есть пища, делай то же.",
+        "NEO": "Il leur répondit : « Que celui qui a deux tuniques en donne une à qui n’en a pas, et que celui qui a de quoi manger fasse de même. »",
+        "NAB": "He said to them in reply, \"Whoever has two cloaks should share with the person who has none. And whoever has food should do likewise.\"",
+        "VAT_ES": "El les respondía: «El que tenga dos túnicas, dé una al que no tiene; y el que tenga qué comer, haga otro tanto».",
+        "CEI": "Mentre essi stavano ad ascoltare queste cose, Gesù disse ancora una parabola perché era vicino a Gerusalemme ed essi credevano che il regno di Dio dovesse manifestarsi da un momento all'altro."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Ἦλθον δὲ καὶ τελῶναι βαπτισθῆναι, καὶ εἶπον πρὸς αὐτόν, Διδάσκαλε, τί ποιήσομεν;",
+        "VUL": "Venerunt autem et publicani ut baptizarentur, et dixerunt ad illum : Magister, quid faciemus ?",
+        "SYN": "Пришли и мытари креститься, и сказали ему: учитель! что нам делать?",
+        "NEO": "Il vint aussi des publicains pour être baptisés, et ils lui dirent : « Maître, que devons-nous faire ? »",
+        "NAB": "Even tax collectors came to be baptized and they said to him, \"Teacher, what should we do?\"",
+        "VAT_ES": "Algunos publicanos vinieron también a hacer bautizar y le preguntaron: «Maestro, &iquest;qué debemos hacer?».",
+        "CEI": "Disse dunque: \"Un uomo di nobile stirpe partì per un paese lontano per ricevere un titolo regale e poi ritornare."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ εἶπεν πρὸς αὐτούς, Μηδὲν πλέον παρὰ τὸ διατεταγμένον ὑμῖν πράσσετε.",
+        "VUL": "At ille dixit ad eos : Nihil amplius, quam quod constitutum est vobis, faciatis.",
+        "SYN": "Он отвечал им: ничего не требуйте более определенного вам.",
+        "NEO": "Il leur dit : « N’exigez rien au delà de ce qui vous est ordonné. »",
+        "NAB": "He answered them, \"Stop collecting more than what is prescribed.\"",
+        "VAT_ES": "El les respondió: «No exijan más de lo estipulado».",
+        "CEI": "Chiamati dieci servi, consegnò loro dieci mine, dicendo: Impiegatele fino al mio ritorno."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ἐπηρώτων δὲ αὐτὸν καὶ στρατευόμενοι, λέγοντες, Καὶ ἡμεῖς τί ποιήσομεν; Καὶ εἶπεν πρὸς αὐτούς, Μηδένα διασείσητε, μηδὲ συκοφαντήσητε· καὶ ἀρκεῖσθε τοῖς ὀψωνίοις ὑμῶν.",
+        "VUL": "Interrogabant autem eum et milites, dicentes : Quid faciemus et nos ? Et ait illis : Neminem concutiatis, neque calumniam faciatis : et contenti estote stipendiis vestris.",
+        "SYN": "Спрашивали его также и воины: а нам что делать? И сказал им: никого не обижайте, не клевещите, и довольствуйтесь своим жалованьем.",
+        "NEO": "Des gens de guerre l’interrogèrent aussi, disant : « Et nous, que devons-nous faire ? » Il leur répondit : « Abstenez-vous de toute violence et de toute fraude, et contentez-vous de votre solde. »",
+        "NAB": "Soldiers also asked him, \"And what is it that we should do?\" He told them, \"Do not practice extortion, do not falsely accuse anyone, and be satisfied with your wages.\"",
+        "VAT_ES": "A su vez, unos soldados le preguntaron: «Y nosotros, &iquest;qué debemos hacer?». Juan les respondió: «No extorsionen a nadie, no hagan falsas denuncias y conténtense con su sueldo».",
+        "CEI": "Ma i suoi cittadini lo odiavano e gli mandarono dietro un'ambasceria a dire: Non vogliamo che costui venga a regnare su di noi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "¶Προσδοκῶντος δὲ τοῦ λαοῦ, καὶ διαλογιζομένων πάντων ἐν ταῖς καρδίαις αὐτῶν περὶ τοῦ Ἰωάννου, μήποτε αὐτὸς εἴη ὁ χριστός,",
+        "VUL": "Existimante autem populo, et cogitantibus omnibus in cordibus suis de Joanne, ne forte ipse esset Christus,",
+        "SYN": "Когда же народ был в ожидании, и все помышляли в сердцах своих об Иоанне, не Христос ли он, --",
+        "NEO": "Comme le peuple était dans l’attente, et que tous se demandaient dans leurs cœurs, à l’égard de Jean, s’il ne serait pas le Christ,",
+        "NAB": "Now the people were filled with expectation, and all were asking in their hearts whether John might be the Messiah.",
+        "VAT_ES": "Como el pueblo estaba a la expectativa y todos se preguntaban si Juan no sería el Mesías,",
+        "CEI": "Quando fu di ritorno, dopo aver ottenuto il titolo di re, fece chiamare i servi ai quali aveva consegnato il denaro, per vedere quanto ciascuno avesse guadagnato."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "ἀπεκρίνατο ὁ Ἰωάννης, ἅπασιν λέγων, Ἐγὼ μὲν ὕδατι βαπτίζω ὑμᾶς· ἔρχεται δὲ ὁ ἰσχυρότερός μου, οὗ οὐκ εἰμὶ ἱκανὸς λῦσαι τὸν ἱμάντα τῶν ὑποδημάτων αὐτοῦ· αὐτὸς ὑμᾶς βαπτίσει ἐν πνεύματι ἁγίῳ καὶ πυρί·",
+        "VUL": "respondit Joannes, dicens omnibus : Ego quidem aqua baptizo vos : veniet autem fortior me, cujus non sum dignus solvere corrigiam calceamentorum ejus : ipse vos baptizabit in Spiritu Sancto et igni :",
+        "SYN": "Иоанн всем отвечал: я крещу вас водою, но идет Сильнейший меня, у Которого я недостоин развязать ремень обуви; Он будет крестить вас Духом Святым и огнем.",
+        "NEO": "Jean leur dit à tous : « Moi, je vous baptise dans l’eau ; mais il vient, celui qui est plus puissant que moi, et dont je ne suis pas digne de délier la courroie de la chaussure ; lui, il vous baptisera dans l’Esprit-Saint et le feu.",
+        "NAB": "John answered them all, saying, \"I am baptizing you with water, but one mightier than I is coming. I am not worthy to loosen the thongs of his sandals. He will baptize you with the holy Spirit and fire.",
+        "VAT_ES": "él tomó la palabra y les dijo: «Yo los bautizo con agua, pero viene uno que es más poderoso que yo, y yo ni siquiera soy digno de desatar la correa de sus sandalias; él los bautizará en el Espíritu Santo y en el fuego.",
+        "CEI": "Si presentò il primo e disse: Signore, la tua mina ha fruttato altre dieci mine."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "οὗ τὸ πτύον ἐν τῇ χειρὶ αὐτοῦ, καὶ διακαθαριεῖ τὴν ἅλωνα αὐτοῦ, καὶ συνάξει τὸν σῖτον εἰς τὴν ἀποθήκην αὐτοῦ, τὸ δὲ ἄχυρον κατακαύσει πυρὶ ἀσβέστῳ.",
+        "VUL": "cujus ventilabrum in manu ejus, et purgabit aream suam, et congregabit triticum in horreum suum, paleas autem comburet igni inextinguibili.",
+        "SYN": "Лопата Его в руке Его, и Он очистит гумно Свое и соберет пшеницу в житницу Свою, а солому сожжет огнем неугасимым.",
+        "NEO": "Sa main tient le van, et il nettoiera son aire, et il amassera le froment dans son grenier, et il brûlera la paille dans un feu qui ne s’éteint pas. »",
+        "NAB": "His winnowing fan is in his hand to clear his threshing floor and to gather the wheat into his barn, but the chaff he will burn with unquenchable fire.\"",
+        "VAT_ES": "Tiene en su mano la horquilla para limpiar su era y recoger el trigo en su granero. Pero consumirá la paja en el fuego inextinguible»",
+        "CEI": "Gli disse: Bene, bravo servitore; poiché ti sei mostrato fedele nel poco, ricevi il potere sopra dieci città."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "¶Πολλὰ μὲν οὖν καὶ ἕτερα παρακαλῶν εὐηγγελίζετο τὸν λαόν·",
+        "VUL": "Multa quidem et alia exhortans evangelizabat populo.",
+        "SYN": "Многое и другое благовествовал он народу, поучая его.",
+        "NEO": "Par ces exhortations, et beaucoup d’autres semblables, il annonçait donc au peuple la bonne nouvelle.",
+        "NAB": "Exhorting them in many other ways, he preached good news to the people.",
+        "VAT_ES": "Y por medio de muchas otras exhortaciones, anunciaba al pueblo la Buena Noticia.",
+        "CEI": "Poi si presentò il secondo e disse: La tua mina, signore, ha fruttato altre cinque mine."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "ὁ δὲ Ἡρῴδης ὁ τετράρχης, ἐλεγχόμενος ὑπ’ αὐτοῦ περὶ Ἡρῳδιάδος τῆς γυναικὸς τοῦ ἀδελφοῦ αὐτοῦ, καὶ περὶ πάντων ὧν ἐποίησεν πονηρῶν ὁ Ἡρῴδης,",
+        "VUL": "Herodes autem tetrarcha cum corriperetur ab illo de Herodiade uxore fratris sui, et de omnibus malis quæ fecit Herodes,",
+        "SYN": "Ирод же четвертовластник, обличаемый от него за Иродиаду, жену брата своего, и за все, что сделал Ирод худого,",
+        "NEO": "Mais Hérode le tétrarque, étant repris par lui au sujet d’Hérodiade, femme de son frère, et de tout le mal qu’il avait fait,+ 3:19 19. S. Luc, anticipant sur les événements, achève brièvement le récit de la carrière de Jean, avant de passer au baptême de Notre-Seigneur. Comp. Matth. iv, 12 et xiv, 3.*",
+        "NAB": "Now Herod the tetrarch, who had been censured by him because of Herodias, his brother's wife, and because of all the evil deeds Herod had committed,",
+        "VAT_ES": "Mientras tanto el tetrarca Herodes, a quien Juan censuraba a causa de Herodías – la mujer de su hermano– y por todos los delitos que había cometido,",
+        "CEI": "Anche a questo disse: Anche tu sarai a capo di cinque città."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "προσέθηκεν καὶ τοῦτο ἐπὶ πᾶσιν, καὶ κατέκλεισεν τὸν Ἰωάννην ἐν τῇ φυλακῇ.",
+        "VUL": "adjecit et hoc super omnia, et inclusit Joannem in carcere.",
+        "SYN": "прибавил ко всему прочему и то, что заключил Иоанна в темницу.",
+        "NEO": "il ajouta ce crime à tous les autres, et enferma Jean en prison.",
+        "NAB": "added still another to these by (also) putting John in prison.",
+        "VAT_ES": "cometió uno más haciendo encarcelar a Juan.",
+        "CEI": "Venne poi anche l'altro e disse: Signore, ecco la tua mina, che ho tenuta riposta in un fazzoletto;"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "¶Ἐγένετο δὲ ἐν τῷ βαπτισθῆναι ἅπαντα τὸν λαόν, καὶ Ἰησοῦ βαπτισθέντος καὶ προσευχομένου, ἀνεῳχθῆναι τὸν οὐρανόν,",
+        "VUL": "Factum est autem cum baptizaretur omnis populus, et Jesu baptizato, et orante, apertum est cælum :",
+        "SYN": "Когда же крестился весь народ, и Иисус, крестившись, молился: отверзлось небо,",
+        "NEO": "Or, dans le temps que tout le peuple venait de recevoir le baptême, Jésus fut aussi baptisé, et pendant qu’il priait, le ciel s’ouvrit,+ 3:21 21. Matth. iii, 11 ; Marc, i, 6.*",
+        "NAB": "After all the people had been baptized and Jesus also had been baptized and was praying, heaven was opened",
+        "VAT_ES": "Todo el pueblo se hacía bautizar, y también fue bautizado Jesús. Y mientras estaba orando, se abrió el cielo.",
+        "CEI": "avevo paura di te che sei un uomo severo e prendi quello che non hai messo in deposito, mieti quello che non hai seminato."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "καὶ καταβῆναι τὸ πνεῦμα τὸ ἅγιον σωματικῷ εἴδει ὡσεὶ περιστερὰν ἐπ’ αὐτόν, καὶ φωνὴν ἐξ οὐρανοῦ γενέσθαι, λέγουσαν, Σὺ εἶ ὁ υἱός μου ὁ ἀγαπητός, ἐν σοὶ εὐδόκησα.",
+        "VUL": "et descendit Spiritus Sanctus corporali specie sicut columba in ipsum : et vox de cælo facta est : Tu es filius meus dilectus, in te complacui mihi.",
+        "SYN": "и Дух Святый нисшел на Него в телесном виде, как голубь, и был глас с небес, глаголющий: Ты Сын Мой Возлюбленный; в Тебе Мое благоволение!",
+        "NEO": "et l’Esprit-Saint descendit sur lui sous une forme corporelle, comme une colombe, et du ciel une voix se fit entendre, disant : « Tu es mon Fils bien-aimé ; en toi j’ai mes complaisances. »",
+        "NAB": "and the holy Spirit descended upon him in bodily form like a dove. And a voice came from heaven, \"You are my beloved Son; with you I am well pleased.\"",
+        "VAT_ES": "y el Espíritu Santo descendió sobre él en forma corporal, como una paloma. Se oyó entonces una voz del cielo: «Tú eres mi Hijo muy querido, en quien tengo puesta toda mi predilección».",
+        "CEI": "Gli rispose: Dalle tue stesse parole ti giudico, servo malvagio! Sapevi che sono un uomo severo, che prendo quello che non ho messo in deposito e mieto quello che non ho seminato:"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "¶Καὶ αὐτὸς ἦν ὁ Ἰησοῦς ὡσεὶ ἐτῶν τριάκοντα ἀρχόμενος, ὢν- ὡς ἐνομίζετο- υἱὸς Ἰωσήφ, τοῦ Ἡλί,",
+        "VUL": "Et ipse Jesus erat incipiens quasi annorum triginta, ut putabatur, filius Joseph, qui fuit Heli, qui fuit Mathat,",
+        "SYN": "Иисус, начиная _Свое_ _служение,_ был лет тридцати, и был, как думали, Сын Иосифов, Илиев,",
+        "NEO": "Jésus avait environ trente ans lorsqu’il commença son ministère* ; il était, comme on le croyait, fils de Joseph, fils d’Héli,+ 3:23 23. Matth. i, 1-17. — Les noms varient beaucoup selon les mss.*",
+        "NAB": "When Jesus began his ministry he was about thirty years of age. He was the son, as was thought, of Joseph, the son of Heli,",
+        "VAT_ES": "Cuando comenzó su ministerio, Jesús tenía unos treinta años y se lo consideraba hijo de José. José era hijo de Elí;",
+        "CEI": "perché allora non hai consegnato il mio denaro a una banca? Al mio ritorno l'avrei riscosso con gli interessi."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "τοῦ Ματθάτ, τοῦ Λευΐ, τοῦ Μελχί, τοῦ Ἰαννά, τοῦ Ἰωσήφ,",
+        "VUL": "qui fuit Levi, qui fuit Melchi, qui fuit Janne, qui fuit Joseph,",
+        "SYN": "Матфатов, Левиин, Мелхиев, Ианнаев, Иосифов,",
+        "NEO": "fils de Matthat, fils de Lévi, fils de Melchi, fils de Janné, fils de Joseph,",
+        "NAB": "the son of Matthat, the son of Levi, the son of Melchi, the son of Jannai, the son of Joseph,",
+        "VAT_ES": "Elí, hijo de Matat; Mata, hijo de Leví; Leví, hijo de Melquí; Melquí, hijo de Janai; Janai, hijo de José;",
+        "CEI": "Disse poi ai presenti: Toglietegli la mina e datela a colui che ne ha dieci"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "τοῦ Ματταθίου, τοῦ Ἀμώς, τοῦ Ναούμ, τοῦ Ἐσλί, τοῦ Ναγγαί,",
+        "VUL": "qui fuit Mathathiæ, qui fuit Amos, qui fuit Nahum, qui fuit Hesli, qui fuit Nagge,",
+        "SYN": "Маттафиев, Амосов, Наумов, Еслимов, Наггеев,",
+        "NEO": "fils de Mattathias, fils d’Amos, fils de Nahum, fils d’Hesli, fils de Naggé,",
+        "NAB": "the son of Mattathias, the son of Amos, the son of Nahum, the son of Esli, the son of Naggai,",
+        "VAT_ES": "José, hijo de Matatías; Matatías, hijo de Amós; Amós, hijo de Naúm; Naúm, hijo de Eslí; Eslí, hijo de Nagai;",
+        "CEI": "Gli risposero: Signore, ha già dieci mine!"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "τοῦ Μαάθ, τοῦ Ματταθίου, τοῦ Σεμεΐ, τοῦ Ἰωσήφ, τοῦ Ἰούδα,",
+        "VUL": "qui fuit Mahath, qui fuit Mathathiæ, qui fuit Semei, qui fuit Joseph, qui fuit Juda,",
+        "SYN": "Маафов, Маттафиев, Семеиев, Иосифов, Иудин,",
+        "NEO": "fils de Maath, fils de Mattathias, fils de Séméï, fils de Josech, fils de Juda,",
+        "NAB": "the son of Maath, the son of Mattathias, the son of Semein, the son of Josech, the son of Joda,",
+        "VAT_ES": "Nagai, hijo de Maat; Maat, hijo de Matatías; Matatías, hijo de Semein; Semein, hijo de Iosec; Iosec, hijo de Iodá;",
+        "CEI": "Vi dico: A chiunque ha sarà dato; ma a chi non ha sarà tolto anche quello che ha."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "τοῦ Ἰωανάν, τοῦ Ῥησά, τοῦ Ζοροβάβελ, τοῦ Σαλαθιήλ, τοῦ Νηρί,",
+        "VUL": "qui fuit Joanna, qui fuit Resa, qui fuit Zorobabel, qui fuit Salathiel, qui fuit Neri,",
+        "SYN": "Иоаннанов, Рисаев, Зоровавелев, Салафиилев, Нириев,",
+        "NEO": "fils de Joanan, fils de Résa, fils de Zorobabel, fils de Salathiel, fils de Néri,",
+        "NAB": "the son of Joanan, the son of Rhesa, the son of Zerubbabel, the son of Shealtiel, the son of Neri,",
+        "VAT_ES": "Iodá, hijo de Joanán; Joanán, hijo de Resá; Resá, hijo de Zorobabel. Zorobabel era hijo de Salatiel; Salatiel, hijo de Nerí;",
+        "CEI": "E quei miei nemici che non volevano che diventassi loro re, conduceteli qui e uccideteli davanti a me\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "τοῦ Μελχί, τοῦ Ἀδδί, τοῦ Κωσάμ, τοῦ Ἐλμωδάμ, τοῦ Ἤρ,",
+        "VUL": "qui fuit Melchi, qui fuit Addi, qui fuit Cosan, qui fuit Elmadan, qui fuit Her,",
+        "SYN": "Мелхиев, Аддиев, Косамов, Елмодамов, Иров,",
+        "NEO": "fils de Melchi, fils d’Addi, fils de Cosam, fils d’Elmadam, fils de Her,",
+        "NAB": "the son of Melchi, the son of Addi, the son of Cosam, the son of Elmadam, the son of Er,",
+        "VAT_ES": "Nerí, hijo de Melquí; Melquí, hijo de Adí; Adí, hijo de Cosam; Cosam, hijo de Elmadam; Elmadam, hijo de Er;",
+        "CEI": "Dette queste cose, Gesù proseguì avanti agli altri salendo verso Gerusalemme."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "τοῦ Ἰωσή, τοῦ Ἐλιέζερ, τοῦ Ἰωρείμ, τοῦ Ματθάτ, τοῦ Λευΐ,",
+        "VUL": "qui fuit Jesu, qui fuit Eliezer, qui fuit Jorim, qui fuit Mathat, qui fuit Levi,",
+        "SYN": "Иосиев, Елиезеров, Иоримов, Матфатов, Левиин,",
+        "NEO": "fils de Jésus, fils d’Eliézer, fils de Jorim, fils de Matthat, fils de Lévi,",
+        "NAB": "the son of Joshua, the son of Eliezer, the son of Jorim, the son of Matthat, the son of Levi,",
+        "VAT_ES": "Er, hijo de Jesús; Jesús, hijo de Eliezer; Eliezer, hijo de Jorím; Jorím, hijo de Matat; Matat, hijo de Leví;",
+        "CEI": "Quando fu vicino a Bètfage e a Betània, presso il monte detto degli Ulivi, inviò due discepoli dicendo:"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "τοῦ Συμεών, τοῦ Ἰούδα, τοῦ Ἰωσήφ, τοῦ Ἰωνάν, τοῦ Ἐλιακείμ,",
+        "VUL": "qui fuit Simeon, qui fuit Juda, qui fuit Joseph, qui fuit Jona, qui fuit Eliakim,",
+        "SYN": "Симеонов, Иудин, Иосифов, Ионанов, Елиакимов,",
+        "NEO": "fils de Siméon, fils de Juda, fils de Joseph, fils de Jonan, fils d’Eliakim,",
+        "NAB": "the son of Simeon, the son of Judah, the son of Joseph, the son of Jonam, the son of Eliakim,",
+        "VAT_ES": "Leví, hijo de Angel; Angel, hijo de Judá; Judá, hijo de José; José, hijo de Jonam; Jonam, hijo de Eliaquim;",
+        "CEI": "\"Andate nel villaggio di fronte; entrando, troverete un puledro legato, sul quale nessuno è mai salito; scioglietelo e portatelo qui."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "τοῦ Μελεᾶ, τοῦ Μαϊνάν, τοῦ Ματταθά, τοῦ Ναθάν, τοῦ Δαυίδ,",
+        "VUL": "qui fuit Melea, qui fuit Menna, qui fuit Mathatha, qui fuit Nathan, qui fuit David,",
+        "SYN": "Мелеаев, Маинанов, Маттафаев, Нафанов, Давидов,",
+        "NEO": "fils de Méléa, fils de Menna, fils de Mattatha, fils de Nathan, fils de David,",
+        "NAB": "the son of Melea, the son of Menna, the son of Mattatha, the son of Nathan, the son of David,",
+        "VAT_ES": "Eliaquim, hijo de Meleá; Meleá, hijo de Mená; Mená, hijo de Matatá; Matatá, hijo de Natán; Natán, hijo de David.",
+        "CEI": "E se qualcuno vi chiederà: Perché lo sciogliete?, direte così: Il Signore ne ha bisogno\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "τοῦ Ἰεσσαί, τοῦ Ὠβήδ, τοῦ Βοόζ, τοῦ Σαλμών, τοῦ Ναασσών,",
+        "VUL": "qui fuit Jesse, qui fuit Obed, qui fuit Booz, qui fuit Salmon, qui fuit Naasson,",
+        "SYN": "Иессеев, Овидов, Воозов, Салмонов, Наассонов,",
+        "NEO": "fils de Jessé, fils d’Obed, fils de Booz, fils de Salmon, fils de Naasson,",
+        "NAB": "the son of Jesse, the son of Obed, the son of Boaz, the son of Sala, the son of Nahshon,",
+        "VAT_ES": "David era hijo de Jesé; Jesé, hijo de Jobed; Jobed, hijo de Booz; Booz, hijo de Sela; Sela hijo de Naasón;",
+        "CEI": "Gli inviati andarono e trovarono tutto come aveva detto."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "τοῦ Ἀμιναδάβ, τοῦ Ἀράμ, τοῦ Ἑσρώμ, τοῦ Φαρές, τοῦ Ἰούδα,",
+        "VUL": "qui fuit Aminadab, qui fuit Aram, qui fuit Esron, qui fuit Phares, qui fuit Judæ,",
+        "SYN": "Аминадавов, Арамов, Есромов, Фаресов, Иудин,",
+        "NEO": "fils d’Aminadab, fils d’Aram, fils d’Esron, fils de Pharès, fils de Judas,",
+        "NAB": "the son of Amminadab, the son of Admin, the son of Arni, the son of Hezron, the son of Perez, the son of Judah,",
+        "VAT_ES": "Naasón, hijo de Aminadab; Aminadab, hijo de Admín; Admín, hijo de Arní; Arní, hijo de Esrom; Esrom, hijo de Fares; Fares, hijo de Judá;",
+        "CEI": "Mentre scioglievano il puledro, i proprietari dissero loro: \"Perché sciogliete il puledro?\"."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "τοῦ Ἰακώβ, τοῦ Ἰσαάκ, τοῦ Ἀβραάμ, τοῦ Θάρα, τοῦ Ναχώρ,",
+        "VUL": "qui fuit Jacob, qui fuit Isaac, qui fuit Abrahæ, qui fuit Thare, qui fuit Nachor,",
+        "SYN": "Иаковлев, Исааков, Авраамов, Фаррин, Нахоров,",
+        "NEO": "fils de Jacob, fils d’Isaac, fils d’Abraham, fils de Tharé, fils de Nachor,",
+        "NAB": "the son of Jacob, the son of Isaac, the son of Abraham, the son of Terah, the son of Nahor,",
+        "VAT_ES": "Judá, hijo de Jacob; Jacob, hijo de Isaac; Isaac, hijo de Abraham. Abraham era hijo de Tera; Tera, hijo de Najor;",
+        "CEI": "Essi risposero: \"Il Signore ne ha bisogno\"."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "τοῦ Σερούχ, τοῦ Ῥαγαῦ, τοῦ Φάλεγ, τοῦ Ἑβέρ, τοῦ Σαλά,",
+        "VUL": "qui fuit Sarug, qui fuit Ragau, qui fuit Phaleg, qui fuit Heber, qui fuit Sale,",
+        "SYN": "Серухов, Рагавов, Фалеков, Еверов, Салин,",
+        "NEO": "fils de Sarug, fils de Réü, fils de Phaleg, fils d’Héber, fils de Salé,",
+        "NAB": "the son of Serug, the son of Reu, the son of Peleg, the son of Eber, the son of Shelah,",
+        "VAT_ES": "Najor, hijo de Serúj; Serúj, hijo de Ragau; Ragau, hijo de Péleg; Péleg, hijo de Eber; Eber, hijo de Sela;",
+        "CEI": "Lo condussero allora da Gesù; e gettati i loro mantelli sul puledro, vi fecero salire Gesù."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "τοῦ Καϊνάν, τοῦ Ἀρφαξάδ, τοῦ Σήμ, τοῦ Νῶε, τοῦ Λάμεχ,",
+        "VUL": "qui fuit Cainan, qui fuit Arphaxad, qui fuit Sem, qui fuit Noë, qui fuit Lamech,",
+        "SYN": "Каинанов, Арфаксадов, Симов, Ноев, Ламехов,",
+        "NEO": "fils de Caïnan, fils d’Arphaxad, fils de Sem, fils de Noé, fils de Lamech,",
+        "NAB": "the son of Cainan, the son of Arphaxad, the son of Shem, the son of Noah, the son of Lamech,",
+        "VAT_ES": "Sela, hijo de Cainán; Cainán, hijo de Arfaxad; Arfaxad, hijo de Sem. Sem era hijo de Noé; Noé, hijo de Lamec;",
+        "CEI": "Via via che egli avanzava, stendevano i loro mantelli sulla strada."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "τοῦ Μαθουσάλα, τοῦ Ἐνώχ, τοῦ Ἰαρέδ, τοῦ Μαλελεήλ, τοῦ Καϊνάν,",
+        "VUL": "qui fuit Mathusale, qui fuit Henoch, qui fuit Jared, qui fuit Malaleel, qui fuit Cainan,",
+        "SYN": "Мафусалов, Енохов, Иаредов, Малелеилов, Каинанов,",
+        "NEO": "fils de Mathusalé, fils d’Enoch, fils de Jared, fils de Malaléel, fils de Caïnan,",
+        "NAB": "the son of Methuselah, the son of Enoch, the son of Jared, the son of Mahalaleel, the son of Cainan,",
+        "VAT_ES": "Lamec, hijo de Matusalén; Matusalén, hijo de Henoc; Henoc, hijo de Jaret; Jaret, hijo de Malaleel; Malaleel, hijo de Cainán;",
+        "CEI": "Era ormai vicino alla discesa del monte degli Ulivi, quando tutta la folla dei discepoli, esultando, cominciò a lodare Dio a gran voce, per tutti i prodigi che avevano veduto, dicendo:"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "BYZ": "τοῦ Ἐνώς, τοῦ Σήθ, τοῦ Ἀδάμ, τοῦ θεοῦ.",
+        "VUL": "qui fuit Henos, qui fuit Seth, qui fuit Adam, qui fuit Dei.",
+        "SYN": "Еносов, Сифов, Адамов, Божий.",
+        "NEO": "fils d’Enos, fils de Seth, fils d’Adam, fils de Dieu.+ 3:38 38. Act. xvii, 38 sv.*",
+        "NAB": "the son of Enos, the son of Seth, the son of Adam, the son of God.",
+        "VAT_ES": "Cainán, hijo de Enós; Enós, hijo de Set; Set, hijo de Adán; Adán, hijo de Dios.",
+        "CEI": "\"Benedetto colui che viene, il re, nel nome del Signore. Pace in cielo e gloria nel più alto dei cieli!\"."
+      }
+    }
+  }
+}

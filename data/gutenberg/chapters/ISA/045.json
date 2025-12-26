@@ -1,0 +1,465 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_045",
+  "book_key": "ISA",
+  "sequence": 45,
+  "chapter_in": {
+    "MT": 45,
+    "VUL": 45,
+    "LXX": 45
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "כֹּה אָמַ֣ר יְהוָה֮ לִ/מְשִׁיח/וֹ֮ לְ/כ֣וֹרֶשׁ אֲשֶׁר הֶחֱזַ֣קְתִּי בִֽ/ימִינ֗/וֹ לְ/רַד לְ/פָנָי/ו֙ גּוֹיִ֔ם וּ/מָתְנֵ֥י מְלָכִ֖ים אֲפַתֵּ֑חַ לִ/פְתֹּ֤חַ לְ/פָנָי/ו֙ דְּלָתַ֔יִם וּ/שְׁעָרִ֖ים לֹ֥א יִסָּגֵֽרוּ׃",
+        "LXX": "Οὕτως λέγει Κύριος ὁ θεὸς τῷ ⸂⸆⸃ χριστῷ μου Κύρῳ, οὗ ἐκράτησα τῆς δεξιᾶς ἐπακοῦσαι ἔμπροσθεν αὐτοῦ ἔθνη, καὶ ἰσχὺν βασιλέων διαρρήξω, ἀνοίξω ἔμπροσθεν αὐτοῦ θύρας, καὶ πόλεις οὐ ⸆ συνκλεισθήσονται",
+        "VUL": "[Hæc dicit Dominus christo meo Cyro,/ cujus apprehendi dexteram,/ ut subjiciam ante faciem ejus gentes,/ et dorsa regum vertam,/ et aperiam coram eo januas,/ et portæ non claudentur :/",
+        "SYN": "Так говорит Господь помазаннику Своему Киру: Я держу тебя за правую руку, чтобы покорить тебе народы, и сниму поясы с чресл царей, чтоб отворялись для тебя двери, и ворота не затворялись;",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** à son oint, à Cyrus, que j’ai pris par la main droite pour terrasser devant lui les nations, et pour délier la ceinture des rois, pour ouvrir devant lui les portes, afin que les entrées ne lui soient pas fermées :",
+        "NAB": "Thus says the LORD to his anointed, Cyrus, whose right hand I grasp, Subduing nations before him, and making kings run in his service, Opening doors before him and leaving the gates unbarred:",
+        "VAT_ES": "Y ahora, así habla el Señor, el que te creó, Jacob, el que te formó, Israel: No temas, porque yo te he redimido, te he llamado por tu nombre, tú me perteneces.",
+        "CEI": "Dice il Signore del suo eletto, di Ciro: \"Io l'ho preso per la destra, per abbattere davanti a lui le nazioni, per sciogliere le cinture ai fianchi dei re, per aprire davanti a lui i battenti delle porte e nessun portone rimarrà chiuso."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אֲנִי֙ לְ/פָנֶ֣י/ךָ אֵלֵ֔ךְ וַ/הֲדוּרִ֖ים אושר אֲיַשֵּׁ֑ר דַּלְת֤וֹת נְחוּשָׁה֙ אֲשַׁבֵּ֔ר וּ/בְרִיחֵ֥י בַרְזֶ֖ל אֲגַדֵּֽעַ׃",
+        "LXX": "Ἐγὼ ἔμπροσθέν σου πορεύσομαι καὶ ὄρη ὁμαλιῶ, θύρας χαλκᾶς συντρίψω καὶ μοχλοὺς σιδηροῦς συνκλάσω,",
+        "VUL": "Ego ante te ibo, et gloriosos terræ humiliabo ;/ portas æreas conteram,/ et vectes ferreos confringam :/",
+        "SYN": "Я пойду пред тобою и горы уровняю, медные двери сокрушу и запоры железные сломаю;",
+        "NEO": "Moi, je marcherai devant toi ; j’aplanirai les chemins montueux ; je romprai les portes d’airain, et je briserai les verrous de fer.",
+        "NAB": "I will go before you and level the mountains; Bronze doors I will shatter, and iron bars I will snap.",
+        "VAT_ES": "Si cruzas por las aguas, yo estaré contigo, y los ríos no te anegarán; si caminas por el fuego, no te quemarás, y las llamas no te abrasarán.",
+        "CEI": "Io marcerò davanti a te; spianerò le asperità del terreno, spezzerò le porte di bronzo, romperò le spranghe di ferro."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/נָתַתִּ֤י לְ/ךָ֙ אוֹצְר֣וֹת חֹ֔שֶׁךְ וּ/מַטְמֻנֵ֖י מִסְתָּרִ֑ים לְמַ֣עַן תֵּדַ֗ע כִּֽי אֲנִ֧י יְהוָ֛ה הַ/קּוֹרֵ֥א בְ/שִׁמְ/ךָ֖ אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ δώσω σοι θησαυροὺς σκοτινοὺς ἀποκρύφους, ἀοράτους ἀνοίξω σοι, ἵνα γνῷς ὅτι ἐγὼ Κύριος ὁ θεὸς ὁ καλῶν τὸ ὄνομά σου, θεὸς Ἰσραήλ.",
+        "VUL": "et dabo tibi thesauros absconditos,/ et arcana secretorum,/ ut scias quia ego Dominus,/ qui voco nomen tuum, Deus Israël,/",
+        "SYN": "и отдам тебе хранимые во тьме сокровища и сокрытые богатства, дабы ты познал, что Я Господь, называющий тебя по имени, Бог Израилев.",
+        "NEO": "Je te donnerai les trésors cachés, et les richesses enfouies, afin que tu saches que je suis \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël, qui t’ai appelé par ton nom.",
+        "NAB": "I will give you treasures out of the darkness, and riches that have been hidden away, That you may know that I am the LORD, the God of Israel, who calls you by your name.",
+        "VAT_ES": "Porque yo soy el Señor, tu Dios, el Santo de Israel, tu salvador. Yo entregué a Egipto parta tu rescate, a Cus y a Sebá a cambio de ti.",
+        "CEI": "Ti consegnerò tesori nascosti e le ricchezze ben celate, perché tu sappia che io sono il Signore, Dio di Israele, che ti chiamo per nome."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "לְמַ֨עַן֙ עַבְדִּ֣/י יַעֲקֹ֔ב וְ/יִשְׂרָאֵ֖ל בְּחִירִ֑/י וָ/אֶקְרָ֤א לְ/ךָ֙ בִּ/שְׁמֶ֔/ךָ אֲכַנְּ/ךָ֖ וְ/לֹ֥א יְדַעְתָּֽ/נִי׃",
+        "LXX": "ἕνεκεν τοῦ παιδός μου Ἰακὼβ καὶ Ἰσραὴλ τοῦ ἐκλεκτοῦ μου ἐγὼ καλέσω σε τῷ ὀνόματί μου καὶ προσδέξομαί σε· σὺ δὲ οὐκ ἔγνως με.",
+        "VUL": "propter servum meum Jacob,/ et Israël, electum meum ;/ et vocavi te nomine tuo :/ assimilavi te, et non cognovisti me./",
+        "SYN": "Ради Иакова, раба Моего, и Израиля, избранного Моего, Я назвал тебя по имени, почтил тебя, хотя ты не знал Меня.",
+        "NEO": "A cause de Jacob, mon serviteur, et d’Israël, mon élu, je t’ai appelé par ton nom ; je t’ai désigné quand tu ne me connaissais pas.",
+        "NAB": "For the sake of Jacob, my servant, of Israel my chosen one, I have called you by your name, giving you a title, though you knew me not.",
+        "VAT_ES": "Porque tú eres de gran precio a mis ojos, porque eres valioso, y yo te amo, entrego hombres a cambio de ti y pueblos a cambio de tu vida",
+        "CEI": "Per amore di Giacobbe mio servo e di Israele mio eletto io ti ho chiamato per nome, ti ho dato un titolo sebbene tu non mi conosca."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אֲנִ֤י יְהוָה֙ וְ/אֵ֣ין ע֔וֹד זוּלָתִ֖/י אֵ֣ין אֱלֹהִ֑ים אֲאַזֶּרְ/ךָ֖ וְ/לֹ֥א יְדַעְתָּֽ/נִי׃",
+        "LXX": "ὅτι ἐγὼ Κύριος ὁ θεός, καὶ οὐκ ἔστιν ἔτι πλὴν ἐμοῦ· ἐνίσχυσά σε, καὶ οὐκ ᾔδεις με,",
+        "VUL": "Ego Dominus, et non est amplius ;/ extra me non est deus ;/ accinxi te, et non cognovisti me :/",
+        "SYN": "Я Господь, и нет иного; нет Бога кроме Меня; Я препоясал тебя, хотя ты не знал Меня,",
+        "NEO": "Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, et il n’y en a pas d’autre ; hors moi, il n’y a pas de Dieu ! Je t’ai ceint quand tu ne me connaissais pas,",
+        "NAB": "I am the LORD and there is no other, there is no God besides me. It is I who arm you, though you know me not,",
+        "VAT_ES": "No temas, porque yo estoy contigo: traeré a tu descendencia desde Oriente y te reuniré desde Occidente.",
+        "CEI": "Io sono il Signore e non v'è alcun altro; fuori di me non c'è dio; ti renderò spedito nell'agire, anche se tu non mi conosci,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "לְמַ֣עַן יֵדְע֗וּ מִ/מִּזְרַח שֶׁ֨מֶשׁ֙ וּ/מִ/מַּ֣עֲרָבָ֔/הּ כִּי אֶ֖פֶס בִּלְעָדָ֑/י אֲנִ֥י יְהוָ֖ה וְ/אֵ֥ין עֽוֹד׃",
+        "LXX": "ἵνα γνῶσιν οἱ ἀπ’ ἀνατολῶν ἡλίου καὶ οἱ ἀπὸ δυσμῶν ὅτι οὐκ ἔστιν πλὴν ἐμοῦ. ἐγὼ Κύριος ὁ θεός, καὶ οὐκ ἔστιν ἔτι,",
+        "VUL": "ut sciant hi qui ab ortu solis et qui ab occidente,/ quoniam absque me non est :/ ego Dominus, et non est alter :/",
+        "SYN": "дабы узнали от восхода солнца и от запада, что нет кроме Меня; Я Господь, и нет иного.",
+        "NEO": "afin que l’on sache, du levant au couchant, qu’il n’y a rien en dehors de moi ! Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, et il n’y en a pas d’autre ;",
+        "NAB": "so that toward the rising and the setting of the sun men may know that there is none besides me. I am the LORD, there is no other;",
+        "VAT_ES": "Yo diré al Norte: «&iexcl;Dámelo!», y al Sur: «&iexcl;No lo retengas, trae a mis hijos desde lejos y a mis hijas desde el extremo de la tierra:",
+        "CEI": "perché sappiano dall'oriente fino all'occidente che non esiste dio fuori di me. Io sono il Signore e non v'è alcun altro."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "יוֹצֵ֥ר אוֹר֙ וּ/בוֹרֵ֣א חֹ֔שֶׁךְ עֹשֶׂ֥ה שָׁל֖וֹם וּ/ב֣וֹרֵא רָ֑ע אֲנִ֥י יְהוָ֖ה עֹשֶׂ֥ה כָל אֵֽלֶּה׃",
+        "LXX": "ἐγὼ ὁ κατασκευάσας φῶς καὶ ποιήσας σκότος, ὁ ποιῶν εἰρήνην καὶ κτίζων κακά· ἐγὼ Κύριος ὁ θεὸς ὁ ποιῶν πάντα ταῦτα.",
+        "VUL": "formans lucem et creans tenebras,/ faciens pacem et creans malum :/ ego Dominus faciens omnia hæc./",
+        "SYN": "Я образую свет и творю тьму, делаю мир и произвожу бедствия; Я, Господь, делаю все это.",
+        "NEO": "je forme la lumière et crée les ténèbres, je fais la paix et je crée le malheur : c’est moi \\+w Yahweh|strong=\"H3068\"\\+w** qui fais tout cela.",
+        "NAB": "I form the light, and create the darkness, I make well-being and create woe; I, the LORD, do all these things.",
+        "VAT_ES": "a todos los que son llamados con mi Nombre, a los que he creado para mi gloria, a los que yo mismo hice y formé!».",
+        "CEI": "Io formo la luce e creo le tenebre, faccio il bene e provoco la sciagura; io, il Signore, compio tutto questo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הַרְעִ֤יפוּ שָׁמַ֨יִם֙ מִ/מַּ֔עַל וּ/שְׁחָקִ֖ים יִזְּלוּ צֶ֑דֶק תִּפְתַּח אֶ֣רֶץ וְ/יִפְרוּ יֶ֗שַׁע וּ/צְדָקָ֤ה תַצְמִ֨יחַ֙ יַ֔חַד אֲנִ֥י יְהוָ֖ה בְּרָאתִֽי/ו׃",
+        "LXX": "εὐφρανθήτω ὁ οὐρανὸς ἄνωθεν, καὶ αἱ νεφέλαι ῥανάτωσαν δικαιοσύνην· ἀνατειλάτω ἡ γῆ καὶ βλαστησάτω ἔλεος, καὶ δικαιοσύνην ἀναγγειλάτω ἅμα· ἐγώ εἰμι Κύριος ὁ κτίσας σε.",
+        "VUL": "Rorate, cæli, desuper,/ et nubes pluant justum ;/ aperiatur terra, et germinet Salvatorem,/ et justitia oriatur simul :/ ego Dominus creavi eum.]",
+        "SYN": "Кропите, небеса, свыше, и облака да проливают правду; да раскроется земля и приносит спасение, и да произрастает вместе правда. Я, Господь, творю это.",
+        "NEO": "Cieux, répandez d’en haut votre rosée, et que les nuées fassent pleuvoir la justice ! Que la terre s’ouvre et produise le salut, qu’elle fasse germer la justice en même temps ! Moi ! \\+w Yahweh|strong=\"H3068\"\\+w**, je crée ces choses.",
+        "NAB": "Let justice descend, O heavens, like dew from above, like gentle rain let the skies drop it down. Let the earth open and salvation bud forth; let justice also spring up! I, the LORD, have created this.",
+        "VAT_ES": "&iexcl;Hagan salir al pueblo ciego, pero que tiene ojos, sordo, pero que tiene oídos!",
+        "CEI": "Stillate, cieli, dall'alto e le nubi facciano piovere la giustizia; si apra la terra e produca la salvezza e germogli insieme la giustizia. Io, il Signore, ho creato tutto questo\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "ה֗וֹי רָ֚ב אֶת יֹ֣צְר֔/וֹ חֶ֖רֶשׂ אֶת חַרְשֵׂ֣י אֲדָמָ֑ה הֲ/יֹאמַ֨ר חֹ֤מֶר לְ/יֹֽצְר/וֹ֙ מַֽה תַּעֲשֶׂ֔ה וּ/פָעָלְ/ךָ֖ אֵין יָדַ֥יִם לֽ/וֹ׃",
+        "LXX": "Ποῖον βέλτιον κατεσκεύασα ὡς πηλὸν κεραμέως; μὴ ὁ ἀροτριῶν ἀροτριάσει τὴν γῆν ὅλην τὴν ἡμέραν; μὴ ἐρεῖ ὁ πηλὸς τῷ κεραμεῖ Τί ποιεῖς, ὅτι οὐκ ἐργάζῃ οὐδὲ ἔχεις χεῖρας;",
+        "VUL": "[Væ qui contradicit fictori suo,/ testa de samiis terræ !/ Numquid dicet lutum figulo suo : Quid facis,/ et opus tuum absque manibus est ?/",
+        "SYN": "Горе тому, кто препирается с Создателем своим, черепок из черепков земных! Скажет ли глина горшечнику: \"что ты делаешь?\" и твое дело _скажет ли о тебе:_ \"у него нет рук?\"",
+        "NEO": "Malheur à qui conteste avec celui qui l’a formé, vase parmi des vases de terre ! L’argile dira-t-elle à celui qui la façonne : « Que fais-tu ? » Ton œuvre dira-t-elle : « Il n’a pas de mains ? »",
+        "NAB": "Woe to him who contends with his Maker; a potsherd among potsherds of the earth! Dare the clay say to its modeler, \"What are you doing?\" or, \"What you are making has no hands\"?",
+        "VAT_ES": "&iexcl;Que se reúnan todas las naciones y se congreguen los pueblos! &iquest;Quién de entre ellos había anunciado estas cosas? &iquest;Quién nos predijo lo que sucedió en el pasado? Que aduzcan testigos para justificarse, para que se los oiga, y se pueda decir: «Es verdad».",
+        "CEI": "Potrà forse discutere con chi lo ha plasmato un vaso fra altri vasi di argilla? Dirà forse la creta al vasaio: \"Che fai?\" oppure: \"La tua opera non ha manichi\"?"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "ה֛וֹי אֹמֵ֥ר לְ/אָ֖ב מַה תּוֹלִ֑יד וּ/לְ/אִשָּׁ֖ה מַה תְּחִילִֽי/ן׃",
+        "LXX": "μὴ ἀποκριθήσεται τὸ πλάσμα πρὸς τὸν πλάσαντα αὐτό; ὁ λέγων τῷ πατρί Τί γεννήσεις; καὶ τῇ μητρί Τί ὠδίνεις; ⸆",
+        "VUL": "Væ qui dicit patri : Quid generas ?/ et mulieri : Quid parturis ?/",
+        "SYN": "Горе тому, кто говорит отцу: \"зачем ты произвел _меня_ на свет?\", а матери: \"зачем ты родила _меня_?\"",
+        "NEO": "Malheur à qui dit à un père : « Pourquoi engendres-tu ? » Et à une femme : « Pourquoi mets-tu au monde ? »",
+        "NAB": "Woe to him who asks a father, \"What are you begetting?\" or a woman, \"What are you giving birth to?\"",
+        "VAT_ES": "Ustedes son mis testigos y mis servidores –oráculo del Señor–: a ustedes los elegí para que entiendan y crean en mí, y para que comprendan que Yo Soy. Antes de mí no fue formado ningún dios ni habrá otro después de mí.",
+        "CEI": "Chi oserà dire a un padre: \"Che cosa generi?\" o a una donna: \"Che cosa partorisci?\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כֹּֽה אָמַ֧ר יְהוָ֛ה קְד֥וֹשׁ יִשְׂרָאֵ֖ל וְ/יֹצְר֑/וֹ הָ/אֹתִיּ֣וֹת שְׁאָל֔וּ/נִי עַל בָּנַ֛/י וְ/עַל פֹּ֥עַל יָדַ֖/י תְּצַוֻּֽ/נִי׃",
+        "LXX": "ὅτι οὕτως λέγει Κύριος ὁ θεὸς ὁ ἅγιος Ἰσραὴλ ὁ ποιήσας τὰ ἐπερχόμενα Ἐρωτήσατέ με περὶ τῶν υἱῶν μου, καὶ περὶ τῶν ἔργων τῶν χειρῶν μου ἐντείλασθέ μοι.",
+        "VUL": "Hæc dicit Dominus,/ Sanctus Israël, plastes ejus :/ Ventura interrogate me ;/ super filios meos et super opus manuum mearum mandate mihi./",
+        "SYN": "Так говорит Господь, Святый Израиля и Создатель его: вы спрашиваете Меня о будущем сыновей Моих и хотите Мне указывать в деле рук Моих?",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, le Saint d’Israël et celui qui l’a formé : « Oserez-vous m’interroger sur l’avenir, me commander au sujet de mes enfants et de l’œuvre de mes mains ?",
+        "NAB": "Thus says the LORD, the Holy One of Israel, his maker: You question me about my children, or prescribe the work of my hands for me!",
+        "VAT_ES": "Yo, yo solo soy el Señor, y no hay salvador fuera de mí.",
+        "CEI": "Dice il Signore, il Santo di Israele, che lo ha plasmato: \"Volete interrogarmi sul futuro dei miei figli e darmi ordini sul lavoro delle mie mani?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אָֽנֹכִי֙ עָשִׂ֣יתִי אֶ֔רֶץ וְ/אָדָ֖ם עָלֶ֣י/הָ בָרָ֑אתִי אֲנִ֗י יָדַ/י֙ נָט֣וּ שָׁמַ֔יִם וְ/כָל צְבָאָ֖/ם צִוֵּֽיתִי׃",
+        "LXX": "ἐγὼ ἐποίησα γῆν καὶ ἄνθρωπον ἐπ’ αὐτῆς, ἐγὼ τῇ χειρί μου ἐστερέωσα τὸν οὐρανόν, ἐγὼ πᾶσι τοῖς ἄστροις ἐνετειλάμην.",
+        "VUL": "Ego feci terram,/ et hominem super eam creavi ego :/ manus meæ tetenderunt cælos,/ et omni militiæ eorum mandavi./",
+        "SYN": "Я создал землю и сотворил на ней человека; Я - Мои руки распростерли небеса, и всему воинству их дал закон Я.",
+        "NEO": "C’est moi qui ai fait la terre, et qui sur elle ai créé l’homme ; c’est moi dont les mains ont déployé les cieux, moi qui commande à toute leur armée.",
+        "NAB": "It was I who made the earth and created mankind upon it; It was my hands that stretched out the heavens; I gave the order to all their host.",
+        "VAT_ES": "Yo anuncié, yo salvé, yo predije, y no un dios extraño entre ustedes. Ustedes son mis testigos –oráculo del Señor– y yo soy Dios.",
+        "CEI": "Io ho fatto la terra e su di essa ho creato l'uomo; io con le mani ho disteso i cieli e do ordini a tutte le loro schiere."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "אָנֹכִי֙ הַעִירֹתִ֣/הֽוּ בְ/צֶ֔דֶק וְ/כָל דְּרָכָ֖י/ו אֲיַשֵּׁ֑ר הֽוּא יִבְנֶ֤ה עִירִ/י֙ וְ/גָלוּתִ֣/י יְשַׁלֵּ֔חַ לֹ֤א בִ/מְחִיר֙ וְ/לֹ֣א בְ/שֹׁ֔חַד אָמַ֖ר יְהוָ֥ה צְבָאֽוֹת׃",
+        "LXX": "ἐγὼ ἤγειρα αὐτὸν μετὰ δικαιοσύνης βασιλέα, καὶ πᾶσαι αἱ ὁδοὶ αὐτοῦ εὐθεῖαι· οὗτος οἰκοδομήσει τὴν πόλιν μου, καὶ τὴν αἰχμαλωσίαν τοῦ λαοῦ μου ἐπιστρέψει, οὐ μετὰ λύτρων οὐδὲ μετὰ δώρων, εἶπεν Κύριος σαβαώθ.",
+        "VUL": "Ego suscitavi eum ad justitiam,/ et omnes vias ejus dirigam ;/ ipse ædificabit civitatem meam,/ et captivitatem meam dimittet,/ non in pretio neque in muneribus,/ dicit Dominus Deus exercituum.]",
+        "SYN": "Я воздвиг его в правде и уровняю все пути его. Он построит город Мой и отпустит пленных Моих, не за выкуп и не за дары, говорит Господь Саваоф.",
+        "NEO": "C’est moi qui l’ai suscité dans ma justice, et j’aplanis toutes ses voies. C’est lui qui rebâtira ma ville, et renverra mes captifs, sans rançon ni présents, dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "It was I who stirred up one for the triumph of justice; all his ways I make level. He shall rebuild my city and let my exiles go free Without price or ransom, says the LORD of hosts.",
+        "VAT_ES": "Yo soy el mismo desde siempre, y no hay nadie que libre de mi mano: lo que yo hago &iquest;quién lo revocará?",
+        "CEI": "Io l'ho stimolato per la giustizia; spianerò tutte le sue vie. Egli ricostruirà la mia città e rimanderà i miei deportati, senza denaro e senza regali\", dice il Signore degli eserciti."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כֹּ֣ה אָמַ֣ר יְהוָ֗ה יְגִ֨יעַ מִצְרַ֥יִם וּֽ/סְחַר כּוּשׁ֮ וּ/סְבָאִים֮ אַנְשֵׁ֣י מִדָּה֒ עָלַ֤יִ/ךְ יַעֲבֹ֨רוּ֙ וְ/לָ֣/ךְ יִֽהְי֔וּ אַחֲרַ֣יִ/ךְ יֵלֵ֔כוּ בַּ/זִּקִּ֖ים יַעֲבֹ֑רוּ וְ/אֵלַ֤יִ/ךְ יִֽשְׁתַּחֲוּוּ֙ אֵלַ֣יִ/ךְ יִתְפַּלָּ֔לוּ אַ֣ךְ בָּ֥/ךְ אֵ֛ל וְ/אֵ֥ין ע֖וֹד אֶ֥פֶס אֱלֹהִֽים׃",
+        "LXX": "Οὕτως λέγει Κύριος σαβαώθ Ἐκοπίασεν Αἴγυπτος, καὶ ἐμπορία Αἰθιόπων, καὶ οἱ Σαβαεὶμ ἄνδρες ὑψηλοὶ ἐπὶ σὲ διαβήσονται, καὶ σοὶ ἔσονται δοῦλοι καὶ ὀπίσω σου ἀκολουθήσουσιν δεδεμένοι χειροπέδαις, καὶ διαβήσονται πρὸς σὲ καὶ προσκυνήσουσίν σοι, καὶ ἐν σοὶ προσεύξονται· ὅτι ἐν σοὶ ὁ θεός ἐστιν καὶ οὐκ ἔστιν θεὸς πλὴν σοῦ.",
+        "VUL": "[Hæc dicit Dominus :/ Labor Ægypti, et negotiatio Æthiopiæ,/ et Sabaim viri sublimes/ ad te transibunt, et tui erunt ;/ post te ambulabunt,/ vincti manicis pergent, et te adorabunt,/ teque deprecabuntur./ Tantum in te est Deus,/ et non est absque te deus./",
+        "SYN": "Так говорит Господь: труды Египтян и торговля Ефиоплян, и Савейцы, люди рослые, к тебе перейдут и будут твоими; они последуют за тобою, в цепях придут и повергнутся пред тобою, и будут умолять тебя, _говоря:_ у тебя только Бог, и нет иного Бога.",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Les gains de l’Égypte et les profits de l’Ethiopie, et les Sabéens à la haute stature viendront à toi et seront à toi, ils marcheront à ta suite ; ils passeront enchaînés, et se prosterneront devant toi ; ils te diront en suppliant : « Il n’y a de Dieu que chez toi, et il n’y en a pas d’autre, nul autre Dieu absolument ! »",
+        "NAB": "Thus says the LORD: The earnings of Egypt, the gain of Ethiopia, and the Sabeans, tall of stature, Shall come over to you and belong to you; they shall follow you, coming in chains. Before you they shall fall prostrate, saying in prayer: \"With you only is God, and nowhere else; the gods are nought.",
+        "VAT_ES": "Así habla el Señor, el redentor de ustedes, el Santo de Israel: A causa de ustedes, yo envié gente a Babilonia, para hacer saltar todos los cerrojos, y el júbilo de los caldeos se convertirá en lamentos.",
+        "CEI": "Così dice il Signore: \"Le ricchezze d'Egitto e le merci dell'Etiopia e i Sabei dall'alta statura passeranno a te, saranno tuoi; ti seguiranno in catene, si prostreranno davanti a te, ti diranno supplicanti: Solo in te è Dio; non ce n'è altri; non esistono altri dei."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אָכֵ֕ן אַתָּ֖ה אֵ֣ל מִסְתַּתֵּ֑ר אֱלֹהֵ֥י יִשְׂרָאֵ֖ל מוֹשִֽׁיעַ׃",
+        "LXX": "σὺ γὰρ εἶ θεός, καὶ οὐκ ᾔδειμεν, ὁ θεὸς τοῦ Ἰσραήλ.",
+        "VUL": "Vere tu es Deus absconditus,/ Deus Israël, salvator./",
+        "SYN": "Истинно Ты Бог сокровенный, Бог Израилев, Спаситель.",
+        "NEO": "En vérité, vous êtes un Dieu caché, Dieu d’Israël, ô Sauveur !",
+        "NAB": "Truly with you God is hidden, the God of Israel, the savior!",
+        "VAT_ES": "Yo soy el Señor, el Santo, el Creador de Israel, su Rey.",
+        "CEI": "Veramente tu sei un Dio nascosto, Dio di Israele, salvatore."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "בּ֥וֹשׁוּ וְ/גַֽם נִכְלְמ֖וּ כֻּלָּ֑/ם יַחְדָּו֙ הָלְכ֣וּ בַ/כְּלִמָּ֔ה חָרָשֵׁ֖י צִירִֽים׃",
+        "LXX": "αἰσχυνθήσονται καὶ ἐντραπήσονται πάντες οἱ ἀντικείμενοι αὐτῷ, καὶ πορεύσονται ἐν αἰσχύνῃ. ἐγκαινίζεσθε πρὸς μέ, νῆσοι.",
+        "VUL": "Confusi sunt, et erubuerunt omnes :/ simul abierunt in confusionem fabricatores errorum./",
+        "SYN": "Все они будут постыжены и посрамлены; вместе с ними со стыдом пойдут и все, делающие идолов.",
+        "NEO": "Ils sont tous honteux et confus, ils s’en vont confus, les fabricateurs d’idoles.",
+        "NAB": "Those are put to shame and disgrace who vent their anger against him; Those go in disgrace who carve images.",
+        "VAT_ES": "Así habla el Señor, el que abrió un camino a través del mar y un sendero entre las aguas impetuosas;",
+        "CEI": "Saranno confusi e svergognati quanti s'infuriano contro di lui; se ne andranno con ignominia i fabbricanti di idoli."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "יִשְׂרָאֵל֙ נוֹשַׁ֣ע בַּ/יהוָ֔ה תְּשׁוּעַ֖ת עוֹלָמִ֑ים לֹא תֵבֹ֥שׁוּ וְ/לֹא תִכָּלְמ֖וּ עַד ע֥וֹלְמֵי עַֽד׃",
+        "LXX": "Ἰσραὴλ σώζεται ὑπὸ Κυρίου σωτηρίαν αἰώνιον· οὐκ αἰσχυνθήσονται οὐδὲ μὴ ἐντραπῶσιν ἕως τοῦ αἰῶνος.",
+        "VUL": "Israël salvatus est in Domino salute æterna ;/ non confundemini, et non erubescetis usque in sæculum sæculi./",
+        "SYN": "Израиль же будет спасен спасением вечным в Господе; вы не будете постыжены и посрамлены во веки веков.",
+        "NEO": "Israël est sauvé par \\+w Yahweh|strong=\"H3068\"\\+w** d’un salut éternel ; vous n’aurez ni honte ni confusion dans les siècles à venir.",
+        "NAB": "Israel, you are saved by the LORD, saved forever! You shall never be put to shame or disgrace in future ages.\"",
+        "VAT_ES": "el que hizo salir carros de guerra y caballos, todo un ejército de hombres aguerridos; ellos quedaron tendidos, no se levantarán, se extinguieron, se consumieron como una mecha.",
+        "CEI": "Israele sarà salvato dal Signore con salvezza perenne. Non patirete confusione o vergogna per i secoli eterni\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כִּ֣י כֹ֣ה אָֽמַר יְ֠הוָה בּוֹרֵ֨א הַ/שָּׁמַ֜יִם ה֣וּא הָ/אֱלֹהִ֗ים יֹצֵ֨ר הָ/אָ֤רֶץ וְ/עֹשָׂ/הּ֙ ה֣וּא כֽוֹנְנָ֔/הּ לֹא תֹ֥הוּ בְרָאָ֖/הּ לָ/שֶׁ֣בֶת יְצָרָ֑/הּ אֲנִ֥י יְהוָ֖ה וְ/אֵ֥ין עֽוֹד׃",
+        "LXX": "Οὕτως λέγει Κύριος ὁ ποιήσας τὸν οὐρανόν, οὗτος ὁ θεὸς ὁ καταδείξας τὴν γῆν καὶ ποιήσας αὐτήν, αὐτὸς διώρισεν αὐτήν, οὐκ εἰς κενὸν ἐποίησεν, ἀλλὰ κατοικεῖσθαι ἔπλασεν αὐτήν, Ἐγώ εἰμι, καὶ οὐκ ἔστιν ἔτι.",
+        "VUL": "Quia hæc dicit Dominus/ creans cælos,/ ipse Deus formans terram/ et faciens eam, ipse plastes ejus ;/ non in vanum creavit eam :/ ut habitaretur formavit eam :/ Ego Dominus, et non est alius./",
+        "SYN": "Ибо так говорит Господь, сотворивший небеса, Он, Бог, образовавший землю и создавший ее; Он утвердил ее, не напрасно сотворил ее; Он образовал ее для жительства: Я Господь, и нет иного.",
+        "NEO": "Car ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, qui a créé les cieux, lui, le Dieu qui a formé la terre, qui l’a achevée et affermie, qui n’en a pas fait un chaos, mais l’a formée pour être habitée : Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, et il n’y en a pas d’autre !",
+        "NAB": "For thus says the LORD, The creator of the heavens, who is God, The designer and maker of the earth who established it, Not creating it to be a waste, but designing it to be lived in: I am the LORD, and there is no other.",
+        "VAT_ES": "No se acuerden de las cosas pasadas, no piensen en las cosas antiguas;",
+        "CEI": "Poiché così dice il Signore, che ha creato i cieli; egli, il Dio che ha plasmato e fatto la terra e l'ha resa stabile e l'ha creata non come orrida regione, ma l'ha plasmata perché fosse abitata: \"Io sono il Signore; non ce n'è altri."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "לֹ֧א בַ/סֵּ֣תֶר דִּבַּ֗רְתִּי בִּ/מְקוֹם֙ אֶ֣רֶץ חֹ֔שֶׁךְ לֹ֥א אָמַ֛רְתִּי לְ/זֶ֥רַע יַעֲקֹ֖ב תֹּ֣הוּ בַקְּשׁ֑וּ/נִי אֲנִ֤י יְהוָה֙ דֹּבֵ֣ר צֶ֔דֶק מַגִּ֖יד מֵישָׁרִֽים׃",
+        "LXX": "οὐκ ἐν κρυφῇ λελάληκα οὐδὲ ἐν τόπῳ γῆς σκοτεινῷ· οὐκ εἶπα τῷ σπέρματι Ἰακώβ Μάταιον ζητήσατε· ἐγώ εἰμι ἐγώ εἰμι Κύριος ὁ λαλῶν δικαιοσύνην καὶ ἀναγγέλλων ἀλήθειαν.",
+        "VUL": "Non in abscondito locutus sum,/ in loco terræ tenebroso ;/ non dixi semini Jacob frustra :/ Quærite me :/ ego Dominus loquens justitiam,/ annuntians recta./",
+        "SYN": "Не тайно Я говорил, не в темном месте земли; не говорил Я племени Иакова: \"напрасно ищете Меня\". Я Господь, изрекающий правду, открывающий истину.",
+        "NEO": "Je n’ai pas parlé en cachette, dans un lieu obscur de la terre. Je n’ai pas dit à la race de Jacob : « Cherchez-moi vainement ! » Moi, \\+w Yahweh|strong=\"H3068\"\\+w**, je dis ce qui est juste, j’annonce la vérité.",
+        "NAB": "I have not spoken from hiding nor from some dark place of the earth, And I have not said to the descendants of Jacob, \"Look for me in an empty waste.\" I, the LORD, promise justice, I foretell what is right.",
+        "VAT_ES": "yo estoy por hacer algo nuevo: ya está germinando, &iquest;no se dan cuenta? Sí, pondré un camino en el desierto y ríos en la estepa.",
+        "CEI": "Io non ho parlato in segreto, in un luogo d'una terra tenebrosa. Non ho detto alla discendenza di Giacobbe: Cercatemi in un'orrida regione! Io sono il Signore, che parlo con giustizia, che annunzio cose rette. Dio, Signore di tutto l'universo"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "הִקָּבְצ֥וּ וָ/בֹ֛אוּ הִֽתְנַגְּשׁ֥וּ יַחְדָּ֖ו פְּלִיטֵ֣י הַ/גּוֹיִ֑ם לֹ֣א יָדְע֗וּ הַ/נֹּֽשְׂאִים֙ אֶת עֵ֣ץ פִּסְלָ֔/ם וּ/מִתְפַּלְלִ֔ים אֶל אֵ֖ל לֹ֥א יוֹשִֽׁיעַ׃",
+        "LXX": "συνάχθητε καὶ ἥκετε, βουλεύσασθε ἅμα, οἱ σωζόμενοι ἀπὸ τῶν ἐθνῶν. οὐκ ἔγνωσαν οἱ αἴροντες τὸ ξύλον γλύμμα αὐτῶν, καὶ προσευχόμενοι πρὸς θεοὺς οἳ οὐ σώζουσιν.",
+        "VUL": "Congregamini, et venite, et accedite simul/ qui salvati estis ex gentibus :/ nescierunt qui levant lignum sculpturæ suæ,/ et rogant deum non salvantem./",
+        "SYN": "Соберитесь и придите, приблизьтесь все, уцелевшие из народов. Невежды те, которые носят деревянного своего идола и молятся богу, который не спасает.",
+        "NEO": "Assemblez-vous et venez ; approchez ensemble, réchappés des nations. Ils ne savent rien, ceux qui portent leur idole de bois, et invoquent un dieu qui ne sauve pas.",
+        "NAB": "Come and assemble, gather together, you fugitives from among the gentiles! They are without knowledge who bear wooden idols and pray to gods that cannot save.",
+        "VAT_ES": "Me glorificarán las fieras salvajes, los chacales y los avestruces; porque haré brotar agua en el desierto y ríos en la estepa, para dar de beber a mi Pueblo, mi elegido,",
+        "CEI": "Radunatevi e venite, avvicinatevi tutti insieme, superstiti delle nazioni! Non hanno intelligenza coloro che portano un loro legno scolpito e pregano un dio che non può salvare."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "הַגִּ֣ידוּ וְ/הַגִּ֔ישׁוּ אַ֥ף יִֽוָּעֲצ֖וּ יַחְדָּ֑ו מִ֣י הִשְׁמִיעַ֩ זֹ֨את מִ/קֶּ֜דֶם מֵ/אָ֣ז הִגִּידָ֗/הּ הֲ/ל֨וֹא אֲנִ֤י יְהוָה֙ וְ/אֵֽין ע֤וֹד אֱלֹהִים֙ מִ/בַּלְעָדַ֔/י אֵֽל צַדִּ֣יק וּ/מוֹשִׁ֔יעַ אַ֖יִן זוּלָתִֽ/י׃",
+        "LXX": "εἰ ἀναγγελοῦσιν, ἐγγισάτωσαν, ἵνα γνῶσιν ἅμα τίς ἀκουστὰ ἐποίησεν ταῦτα ἀπ’ ἀρχῆς· τότε ἀνηγγέλη ὑμῖν Ἐγὼ ὁ θεός, καὶ οὐκ ἔστιν ἄλλος πλὴν ἐμοῦ, δίκαιος καὶ σωτήρ, οὐκ ἔστιν παρὲξ ἐμοῦ.",
+        "VUL": "Annuntiate, et venite,/ et consiliamini simul./ Quis auditum fecit hoc ab initio,/ ex tunc prædixit illud ?/ numquid non ego Dominus,/ et non est ultra deus absque me ?/ Deus justus, et salvans non est præter me./",
+        "SYN": "Объявите и скажите, посоветовавшись между собою: кто возвестил это из древних времен, наперед сказал это? Не Я ли, Господь? и нет иного Бога кроме Меня, Бога праведного и спасающего нет кроме Меня.",
+        "NEO": "Appelez-les, faites-les approcher, et qu’ils se consultent ensemble ! Qui a fait entendre ces choses dès le commencement, et depuis longtemps les a annoncées ? N’est-ce pas moi, \\+w Yahweh|strong=\"H3068\"\\+w** ? Et il n’y a pas de Dieu en dehors de moi ; Moi, le Dieu juste, et il n’y a pas d’autre sauveur que moi.",
+        "NAB": "Come here and declare in counsel together: Who announced this from the beginning and foretold it from of old? Was it not I, the LORD, besides whom there is no other God? There is no just and saving God but me.",
+        "VAT_ES": "el Pueblo que yo me formé para que pregonara mi alabanza.",
+        "CEI": "Manifestate e portate le prove, consigliatevi pure insieme! Chi ha fatto sentire quelle cose da molto tempo e predetto ciò fin da allora? Non sono forse io, il Signore? Fuori di me non c'è altro Dio; Dio giusto e salvatore non c'è fuori di me."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "פְּנוּ אֵלַ֥/י וְ/הִוָּשְׁע֖וּ כָּל אַפְסֵי אָ֑רֶץ כִּ֥י אֲנִי אֵ֖ל וְ/אֵ֥ין עֽוֹד׃",
+        "LXX": "ἐπιστράφητε ἐπ’ ἐμὲ καὶ σωθήσεσθε, οἱ ἀπ’ ἐσχάτου τῆς γῆς· ἐγώ εἰμι ὁ θεός, καὶ οὐκ ἔστιν ἄλλος.",
+        "VUL": "Convertimini ad me, et salvi eritis,/ omnes fines terræ,/ quia ego Deus, et non est alius./",
+        "SYN": "Ко Мне обратитесь, и будете спасены, все концы земли, ибо Я Бог, и нет иного.",
+        "NEO": "Tournez-vous vers moi, et vous serez sauvés, vous tous habitants de la terre, car je suis Dieu, et il n’y en a pas d’autre.",
+        "NAB": "Turn to me and be safe, all you ends of the earth, for I am God; there is no other!",
+        "VAT_ES": "Pero tú no me has invocado, Jacob, porque te cansaste de mí, Israel.",
+        "CEI": "Volgetevi a me e sarete salvi, paesi tutti della terra, perché io sono Dio; non ce n'è altri."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "בִּ֣/י נִשְׁבַּ֔עְתִּי יָצָ֨א מִ/פִּ֧/י צְדָקָ֛ה דָּבָ֖ר וְ/לֹ֣א יָשׁ֑וּב כִּי לִ/י֙ תִּכְרַ֣ע כָּל בֶּ֔רֶךְ תִּשָּׁבַ֖ע כָּל לָשֽׁוֹן׃",
+        "LXX": "κατ’ ἐμαυτοῦ ὀμνύω, εἰ μὴ ἐξελεύσεται ἐκ τοῦ στόματός μου δικαιοσύνη, οἱ λόγοι μου οὐκ ἀποστραφήσονται, ὅτι ἐμοὶ κάμψει πᾶν γόνυ, καὶ ὀμεῖται πᾶσα γλῶσσα τὸν θεόν,",
+        "VUL": "In memetipso juravi ;/ egredietur de ore meo justitiæ verbum,/ et non revertetur :/ quia mihi curvabitur omne genu,/ et jurabit omnis lingua./",
+        "SYN": "Мною клянусь: из уст Моих исходит правда, слово неизменное, что предо Мною преклонится всякое колено, Мною будет клясться всякий язык.",
+        "NEO": "Je l’ai juré par moi-même ; de ma bouche sort la vérité, une parole qui ne sera pas révoquée : Tout genou fléchira devant moi, Et toute langue me prêtera serment.",
+        "NAB": "By myself I swear, uttering my just decree and my unalterable word: To me every knee shall bend; by me every tongue shall swear,",
+        "VAT_ES": "No me trajiste el cordero de tus holocaustos ni me honraste con tus sacrificios; yo no te abrumé exigiéndote ofrendas ni te cansé reclamándote incienso.",
+        "CEI": "Lo giuro su me stesso, dalla mia bocca esce la verità, una parola irrevocabile: davanti a me si piegherà ogni ginocchio, per me giurerà ogni lingua\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אַ֧ךְ בַּ/יהוָ֛ה לִ֥/י אָמַ֖ר צְדָק֣וֹת וָ/עֹ֑ז עָדָי/ו֙ יָב֣וֹא וְ/יֵבֹ֔שׁוּ כֹּ֖ל הַ/נֶּחֱרִ֥ים בּֽ/וֹ׃",
+        "LXX": "λέγων Δικαιοσύνη καὶ δόξα πρὸς αὐτὸν ἥξει, καὶ αἰσχυνθήσονται πάντες οἱ διορίζοντες αὐτούς·",
+        "VUL": "Ergo in Domino, dicet,/ meæ sunt justitiæ et imperium ;/ ad eum venient, et confundentur/ omnes qui repugnant ei./",
+        "SYN": "Только у Господа, будут говорить о Мне, правда и сила; к Нему придут и устыдятся все, враждовавшие против Него.",
+        "NEO": "« En \\+w Yahweh|strong=\"H3068\"\\+w** seul, dira-t-on de moi, résident la justice et la force ! » On viendra à lui ; mais ils seront confondus, tous ceux qui étaient enflammés contre lui.",
+        "NAB": "Saying, \"Only in the LORD are just deeds and power. Before him in shame shall come all who vent their anger against him.",
+        "VAT_ES": "Tú no compraste para mí caña aromática ni me saciaste con la grasa de tus víctimas. &iexcl;Me has abrumado, en cambio, con tus pecados, me has cansado con tus iniquidades!",
+        "CEI": "Si dirà: \"Solo nel Signore si trovano vittoria e potenza!\". Verso di lui verranno, coperti di vergogna, quanti fremevano d'ira contro di lui."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "בַּ/יהוָ֛ה יִצְדְּק֥וּ וְ/יִֽתְהַלְל֖וּ כָּל זֶ֥רַע יִשְׂרָאֵֽל׃",
+        "LXX": "ἀπὸ Κυρίου δικαιωθήσονται, καὶ ἐν τῷ θεῷ ἐνδοξασθήσεται πᾶν τὸ σπέρμα τῶν υἱῶν Ἰσραήλ.",
+        "VUL": "In Domino justificabitur, et laudabitur/ omne semen Israël.]",
+        "SYN": "Господом будет оправдано и прославлено все племя Израилево.",
+        "NEO": "En \\+w Yahweh|strong=\"H3068\"\\+w** sera justifiée et sera glorifiée toute la race d’Israël.",
+        "NAB": "In the LORD shall be the vindication and the glory of all the descendants of Israel.\"",
+        "VAT_ES": "Pero soy yo, sólo yo, el que borro tus crímenes por consideración a mí, y ya no me acordaré de tus pecados.",
+        "CEI": "Nel Signore saranno vittoriosi e si glorieranno tutti i discendenti di Israele."
+      }
+    }
+  }
+}

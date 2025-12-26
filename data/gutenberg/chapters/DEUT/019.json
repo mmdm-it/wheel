@@ -1,0 +1,393 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_019",
+  "book_key": "DEUT",
+  "sequence": 19,
+  "chapter_in": {
+    "MT": 19,
+    "VUL": 19,
+    "LXX": 19
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "כִּֽי יַכְרִ֞ית יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ אֶת הַ/גּוֹיִ֔ם אֲשֶׁר֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ נֹתֵ֥ן לְ/ךָ֖ אֶת אַרְצָ֑/ם וִֽ/ירִשְׁתָּ֕/ם וְ/יָשַׁבְתָּ֥ בְ/עָרֵי/הֶ֖ם וּ/בְ/בָתֵּי/הֶֽם׃",
+        "LXX": "Ἐὰν δὲ ἀφανίσῃ Κύριος ὁ θεός σου τὰ ἔθνη ἃ ὁ θεὸς δίδωσίν σοι τὴν γῆν, καὶ κατακληρονομήσητε αὐτούς, καὶ κατοικήσητε ἐν ταῖς πόλεσιν αὐτῶν καὶ ἐν τοῖς οἴκοις αὐτῶν,",
+        "VUL": "Cum disperdiderit Dominus Deus tuus gentes, quarum tibi traditurus est terram, et possederis eam, habitaverisque in urbibus ejus et in ædibus :",
+        "SYN": "Когда Господь Бог твой истребит народы, которых землю дает тебе Господь Бог твой и ты вступишь в наследие после них, и поселишься в городах их и домах их,",
+        "NEO": "Lorsque \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, aura exterminé les nations dont \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te donne le pays ; lorsque tu les auras chassées et que tu habiteras dans leurs villes et dans leurs maisons,",
+        "NAB": "\"When the LORD, your God, removes the nations whose land he is giving you, and you have taken their place and are settled in their cities and houses,",
+        "VAT_ES": "cuando el Señor, tu Dios, haya extirpado a las naciones cuyo territorio te entrega, y cuando tú las hayas desposeido y vivas en sus ciudades y en sus casas,",
+        "CEI": "Quando il Signore tuo Dio avrà distrutto le nazioni delle quali egli ti dà il paese e tu prenderai il loro posto e abiterai nelle loro città e nelle loro case,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "שָׁל֥וֹשׁ עָרִ֖ים תַּבְדִּ֣יל לָ֑/ךְ בְּ/ת֣וֹךְ אַרְצְ/ךָ֔ אֲשֶׁר֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ נֹתֵ֥ן לְ/ךָ֖ לְ/רִשְׁתָּֽ/הּ׃",
+        "LXX": "τρεῖς πόλεις διαστελεῖς σεαυτῷ ἐν μέσῳ τῆς γῆς σου ἧς Κύριος ὁ θεός σου δίδωσίν σοι.",
+        "VUL": "tres civitates separabis tibi in medio terræ, quam Dominus Deus tuus dabit tibi in possessionem,",
+        "SYN": "тогда отдели себе три города среди земли твоей, которую Господь Бог твой дает тебе во владение;",
+        "NEO": "tu sépareras trois villes au milieu du pays que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te donne pour le posséder.",
+        "NAB": "you shall set apart three cities in the land which the LORD, your God, is giving you to occupy.",
+        "VAT_ES": "deberás poner aparte tres ciudades en medio del territorio que el Señor, tu Dios. te dará en posesión.",
+        "CEI": "ti sceglierai tre città, nella terra della quale il Signore tuo Dio ti dà il possesso."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "תָּכִ֣ין לְ/ךָ֮ הַ/דֶּרֶךְ֒ וְ/שִׁלַּשְׁתָּ֙ אֶת גְּב֣וּל אַרְצְ/ךָ֔ אֲשֶׁ֥ר יַנְחִֽילְ/ךָ֖ יְהוָ֣ה אֱלֹהֶ֑י/ךָ וְ/הָיָ֕ה לָ/נ֥וּס שָׁ֖מָּ/ה כָּל רֹצֵֽחַ׃",
+        "LXX": "στόχασαί σοι τὴν ὁδόν· καὶ τριμεριεῖς τὰ ὅρια τῆς γῆς σου ἣν καταμερίζει σοι Κύριος ὁ θεός σου, καὶ ἔσται καταφυγὴ ἐκεῖ παντὶ φονευτῇ.",
+        "VUL": "sternens diligenter viam : et in tres æqualiter partes totam terræ tuæ provinciam divides : ut habeat e vicino qui propter homicidium profugus est, quo possit evadere.",
+        "SYN": "устрой себе дорогу и раздели на три части всю землю твою, которую Господь Бог твой дает тебе в удел; они будут служить убежищем всякому убийце.",
+        "NEO": "Tu tiendras en état les routes qui y conduisent, et tu diviseras en trois parties le territoire du pays que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, va te donner en héritage, afin que tout meurtrier puisse s’enfuir dans ces villes.",
+        "NAB": "You shall thereby divide into three regions the land which the LORD, your God, will give you as a heritage, and so arrange the routes that every homicide will be able to find a refuge.",
+        "VAT_ES": "Medirás convenientemente las distancias y dividirás en tres partes el país que el Señor, tu Dios te dará como herencia, para que allí pueda refugiarse el que haya cometido un homicidio.",
+        "CEI": "Preparerai strade e dividerai in tre parti il territorio del paese che il Signore tuo Dio ti dà in eredità, perché ogni omicida si possa rifugiare in quella città."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/זֶה֙ דְּבַ֣ר הָ/רֹצֵ֔חַ אֲשֶׁר יָנ֥וּס שָׁ֖מָּ/ה וָ/חָ֑י אֲשֶׁ֨ר יַכֶּ֤ה אֶת רֵעֵ֨/הוּ֙ בִּ/בְלִי דַ֔עַת וְ/ה֛וּא לֹא שֹׂנֵ֥א ל֖/וֹ מִ/תְּמֹ֥ל שִׁלְשֹֽׁם׃",
+        "LXX": "τοῦτο δὲ ἔσται τὸ πρόσταγμα τοῦ φονευτοῦ ὃς ἂν φύγῃ ἐκεῖ καὶ ζήσεται· ὃς ἂν πατάξῃ τὸν πλησίον αὐτοῦ οὐκ εἰδώς, καὶ οὗτος οὐ μισῶν αὐτὸν πρὸ τῆς ἐχθὲς καὶ τρίτης.",
+        "VUL": "Hæc erit lex homicidæ fugientis, cujus vita servanda est : qui percusserit proximum suum nesciens, et qui heri et nudiustertius nullum contra eum odium habuisse comprobatur :",
+        "SYN": "И вот какой убийца может убегать туда и остаться жив: кто убьет ближнего своего без намерения, не быв врагом ему вчера и третьего дня;",
+        "NEO": "Voici dans quel cas le meurtrier qui s’y réfugiera aura la vie sauve : s’il a tué son prochain par mégarde, sans avoir été auparavant son ennemi.",
+        "NAB": "\"It is in the following case that a homicide may take refuge in such a place to save his life: when someone unwittingly kills his neighbor to whom he had previously borne no malice.",
+        "VAT_ES": "Pero sólo en el caso siguiente: el homicida podrá salvarse huyendo a una de esas ciudades si mató a su prójimo involuntariamente, sin haberlo odiado antes.",
+        "CEI": "Ecco in qual caso l'omicida che vi si rifugerà avrà salva la vita: chiunque avrà ucciso il suo prossimo involontariamente, senza che l'abbia odiato prima,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/אֲשֶׁר֩ יָבֹ֨א אֶת רֵעֵ֥/הוּ בַ/יַּעַר֮ לַ/חְטֹ֣ב עֵצִים֒ וְ/נִדְּחָ֨ה יָד֤/וֹ בַ/גַּרְזֶן֙ לִ/כְרֹ֣ת הָ/עֵ֔ץ וְ/נָשַׁ֤ל הַ/בַּרְזֶל֙ מִן הָ/עֵ֔ץ וּ/מָצָ֥א אֶת רֵעֵ֖/הוּ וָ/מֵ֑ת ה֗וּא יָנ֛וּס אֶל אַחַ֥ת הֶ/עָרִים הָ/אֵ֖לֶּה וָ/חָֽי׃",
+        "LXX": "καὶ ὃς ἂν εἰσέλθῃ μετὰ τοῦ πλησίον εἰς τὸν δρυμὸν συναγαγεῖν ξύλα, καὶ ἐκκρουσθῇ ἡ χεὶρ αὐτοῦ τῇ ἀξίνῃ κόπτοντος τὸ ξύλον, καὶ ἐκπεσὸν τὸ σιδήριον ἀπὸ τοῦ ξύλου τύχῃ τοῦ πλησίον, καὶ ἀποθάνῃ, οὗτος καταφεύξεται εἰς μίαν τῶν πόλεων τούτων καὶ ζήσεται·",
+        "VUL": "sed abiisse cum eo simpliciter in silvam ad ligna cædenda, et in succisione lignorum securis fugerit manu, ferrumque lapsum de manubrio amicum ejus percusserit, et occiderit : hic ad unam supradictarum urbium confugiet, et vivet :",
+        "SYN": "кто пойдет с ближним своим в лес рубить дрова, и размахнется рука его с топором, чтобы срубить дерево, и соскочит железо с топорища и попадет в ближнего, и он умрет, -- такой пусть убежит в один из городов тех, чтоб остаться живым,",
+        "NEO": "Ainsi un homme va couper du bois dans la forêt avec un autre homme ; sa main brandit la hache pour abattre un arbre ; le fer s’échappe du manche, atteint son compagnon et le tue : cet homme s’enfuira dans l’une de ces villes et il aura la vie sauve.",
+        "NAB": "For example, if he goes with his neighbor to a forest to cut wood, and as he swings his ax to fell a tree, its head flies off the handle and hits his neighbor a mortal blow, he may take refuge in one of these cities to save his life.",
+        "VAT_ES": "Por ejemplo, si un hombre va a cortar leña al bosque en compañía de otro, y al empuñar el hacha para cortar un árbol, el hierro se suelta del mango y golpea a su acompañante, provocándole la muerte, el homicida irá a refugiarse en una de esas ciudades y así pondrá a salvo su vida.",
+        "CEI": "come quando uno va al bosco con il suo compagno a tagliare la legna e, mentre la mano afferra la scure per abbattere l'albero, il ferro gli sfugge dal manico e colpisce il compagno così che ne muoia, colui si rifugerà in una di queste città e avrà salva la vita;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "פֶּן יִרְדֹּף֩ גֹּאֵ֨ל הַ/דָּ֜ם אַחֲרֵ֣י הָ/רֹצֵ֗חַ כִּי יֵחַם֮ לְבָב/וֹ֒ וְ/הִשִּׂיג֛/וֹ כִּֽי יִרְבֶּ֥ה הַ/דֶּ֖רֶךְ וְ/הִכָּ֣ה/וּ נָ֑פֶשׁ וְ/ל/וֹ֙ אֵ֣ין מִשְׁפַּט מָ֔וֶת כִּ֠י לֹ֣א שֹׂנֵ֥א ה֛וּא ל֖/וֹ מִ/תְּמ֥וֹל שִׁלְשֽׁוֹם׃",
+        "LXX": "ἵνα μὴ διώξας ὁ ἀγχιστεύων τοῦ αἵματος ὀπίσω τοῦ φονεύσαντος, ὅτι παρατεθέρμανται τῇ καρδίᾳ, καὶ καταλάβῃ αὐτόν, ἐὰν μακροτέρα ἦν ἡ ὁδός, καὶ πατάξῃ αὐτοῦ ψυχήν· καὶ τούτῳ οὐκ ἔστιν κρίσις θανάτου, ὅτι οὐ μισῶν ἦν αὐτὸν πρὸ τῆς ἐχθὲς οὐδὲ πρὸ τῆς τρίτης.",
+        "VUL": "ne forsitan proximus ejus, cujus effusus est sanguis, dolore stimulatus, persequatur, et apprehendat eum si longior via fuerit, et percutiat animam ejus, qui non est reus mortis : quia nullum contra eum, qui occisus est, odium prius habuisse monstratur.",
+        "SYN": "дабы мститель за кровь в горячности сердца своего не погнался за убийцею и не настиг его, если далек будет путь, и не убил его, между тем как он не _подлежит_ осуждению на смерть, ибо не был врагом ему вчера и третьего дня;",
+        "NEO": "Autrement le vengeur du sang, poursuivant le meurtrier dans l’ardeur de sa colère, l’atteindrait, si le chemin était trop long, et lui porterait un coup mortel ; et pourtant cet homme n’aurait pas mérité la mort, puisqu’il n’avait pas auparavant de haine contre la victime.",
+        "NAB": "Should the distance be too great, the avenger of blood may in the heat of his anger pursue the homicide and overtake him and strike him dead, even though he does not merit death since he had previously borne the slain man no malice.",
+        "VAT_ES": "Es preciso evitar que el vengador del homicidio persiga lleno de furor al homicida, lo alcance –ya que el camino es muy largo– y le quite la vida, siendo así que no es reo de muerte, porque nunca fue enemigo de su víctima.",
+        "CEI": "altrimenti il vendicatore del sangue, mentre l'ira gli arde in cuore, potrebbe inseguire l'omicida e, qualora sia lungo il cammino, potrebbe raggiungerlo e colpirlo a morte, mentre quegli non meritava, perché prima non aveva odiato il compagno."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "עַל כֵּ֛ן אָנֹכִ֥י מְצַוְּ/ךָ֖ לֵ/אמֹ֑ר שָׁלֹ֥שׁ עָרִ֖ים תַּבְדִּ֥יל לָֽ/ךְ׃",
+        "LXX": "διὰ τοῦτο ἐγὼ ἐντέλλομαί σοι τὸ ῥῆμα τοῦτο λέγων Τρεῖς πόλεις διαστελεῖς σεαυτῷ.",
+        "VUL": "Idcirco præcipio tibi, ut tres civitates æqualis inter se spatii dividas.",
+        "SYN": "посему я и дал тебе повеление, говоря: отдели себе три города.",
+        "NEO": "C’est pourquoi je te donne cet ordre : Mets à part trois villes.",
+        "NAB": "That is why I order you to set apart three cities.",
+        "VAT_ES": "Por eso te ordeno que pongas aparte esas tres ciudades.",
+        "CEI": "Ti dò dunque questo ordine: Scegliti tre città."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אִם יַרְחִ֞יב יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ אֶת גְּבֻ֣לְ/ךָ֔ כַּ/אֲשֶׁ֥ר נִשְׁבַּ֖ע לַ/אֲבֹתֶ֑י/ךָ וְ/נָ֤תַן לְ/ךָ֙ אֶת כָּל הָ/אָ֔רֶץ אֲשֶׁ֥ר דִּבֶּ֖ר לָ/תֵ֥ת לַ/אֲבֹתֶֽי/ךָ׃",
+        "LXX": "ἐὰν δὲ ἐμπλατύνῃ Κύριος ὁ θεός σου τὰ ὅριά σου ὃν τρόπον ὤμοσεν τοῖς πατράσιν σου, καὶ δῷ σοι Κύριος πᾶσαν τὴν γῆν ἣν εἶπεν δοῦναι τοῖς πατράσιν σου,",
+        "VUL": "Cum autem dilataverit Dominus Deus tuus terminos tuos, sicut juravit patribus tuis, et dederit tibi cunctam terram, quam eis pollicitus est",
+        "SYN": "Когда же Господь Бог твой распространит пределы твои, как Он клялся отцам твоим, и даст тебе всю землю, которую Он обещал дать отцам твоим,",
+        "NEO": "Et si \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, élargit tes frontières, comme il l’a juré à tes pères, et qu’il te donne tout le pays qu’il a promis à tes pères de te donner,",
+        "NAB": "\"But if the LORD, your God, enlarges your territory, as he swore to your fathers, and gives you all the land he promised your fathers he would give",
+        "VAT_ES": "Si el Señor, tu Dios, extiende tus fronteras como lo juró a tus padres, y te da toda la tierra que les prometió",
+        "CEI": "Se il Signore tuo Dio allargherà i tuoi confini, come ha giurato ai tuoi padri, e ti darà tutto il paese che ha promesso di dare ai tuoi padri,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "כִּֽי תִשְׁמֹר֩ אֶת כָּל הַ/מִּצְוָ֨ה הַ/זֹּ֜את לַ/עֲשֹׂתָ֗/הּ אֲשֶׁ֨ר אָנֹכִ֣י מְצַוְּ/ךָ֮ הַ/יּוֹם֒ לְ/אַהֲבָ֞ה אֶת יְהוָ֧ה אֱלֹהֶ֛י/ךָ וְ/לָ/לֶ֥כֶת בִּ/דְרָכָ֖י/ו כָּל הַ/יָּמִ֑ים וְ/יָסַפְתָּ֨ לְ/ךָ֥ עוֹד֙ שָׁלֹ֣שׁ עָרִ֔ים עַ֖ל הַ/שָּׁלֹ֥שׁ הָ/אֵֽלֶּה׃",
+        "LXX": "ἐὰν ἀκούσῃς ποιεῖν πάσας τὰς ἐντολὰς ταύτας ἃς ἐγὼ ἐντέλλομαί σοι σήμερον, ἀγαπᾷν Κύριον τὸν θεόν σου, πορεύεσθαι ἐν πάσαις ταῖς ὁδοῖς αὐτοῦ πάσας τὰς ἡμέρας· καὶ προσθήσεις σαυτῷ ἔτι τρεῖς πόλεις πρὸς τὰς τρεῖς ταύτας·",
+        "VUL": "(si tamen custodieris mandata ejus, et feceris, quæ hodie præcipio tibi, ut diligas Dominum Deum tuum, et ambules in viis ejus omni tempore), addes tibi tres alias civitates, et supradictarum trium urbium numerum duplicabis :",
+        "SYN": "если ты будешь стараться исполнять все сии заповеди, которые я заповедую тебе сегодня, любить Господа Бога твоего и ходить путями Его во все дни, -- тогда к сим трем городам прибавь еще три города,",
+        "NEO": "— pourvu que tu observes et mettes en pratique tous ces commandements que je te prescris aujourd’hui, aimant \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, et marchant toujours dans ses voies, — tu ajouteras encore trois villes à ces trois-là,",
+        "NAB": "in the event that you carefully observe all these commandments which I enjoin on you today, loving the LORD, your God, and ever walking in his ways: then add three cities to these three.",
+        "VAT_ES": "–siempre que te empeñes en cumplir integramente el mandamiento que hoy te prescribo de amar al Señor, tu Dios, y seguir sus caminos– entonces, a esas tres ciudades les añadirás otras tres.",
+        "CEI": "se osserverai tutti questi comandi che oggi ti dò, amando il Signore tuo Dio e camminando sempre secondo le sue vie, allora aggiungerai tre altre città alle prime tre,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/לֹ֤א יִשָּׁפֵךְ֙ דָּ֣ם נָקִ֔י בְּ/קֶ֣רֶב אַרְצְ/ךָ֔ אֲשֶׁר֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ נֹתֵ֥ן לְ/ךָ֖ נַחֲלָ֑ה וְ/הָיָ֥ה עָלֶ֖י/ךָ דָּמִֽים׃",
+        "LXX": "καὶ οὐκ ἐκχυθήσεται αἷμα ἀναίτιον ἐν τῇ γῇ ᾗ Κύριος ὁ θεός σου δίδωσίν σοι ἐν κλήρῳ, καὶ οὐκ ἔσται ἐν σοὶ αἵματι ἔνοχος.",
+        "VUL": "ut non effundatur sanguis innoxius in medio terræ, quam Dominus Deus tuus dabit tibi possidendam, ne sis sanguinis reus.",
+        "SYN": "дабы не проливалась кровь невинного среди земли твоей, которую Господь Бог твой дает тебе в удел, и чтобы не было на тебе [вины] крови.",
+        "NEO": "afin que le sang innocent ne soit pas versé au milieu du pays que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te donne pour héritage, et qu’il n’y ait pas de sang sur toi.",
+        "NAB": "Thus, in the land which the LORD, your God, is giving you as a heritage, innocent blood will not be shed and you will not become guilty of bloodshed.",
+        "VAT_ES": "Así no se derramará sangre inocente en medio del país que el Señor, tu Dios, te da como herencia, y tú no te harás culpable de un derramamiento de sangre.",
+        "CEI": "perché non si sparga sangue innocente nel paese che il Signore tuo Dio ti dà in eredità e tu non ti renda colpevole del sangue versato."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/כִֽי יִהְיֶ֥ה אִישׁ֙ שֹׂנֵ֣א לְ/רֵעֵ֔/הוּ וְ/אָ֤רַב ל/וֹ֙ וְ/קָ֣ם עָלָ֔י/ו וְ/הִכָּ֥ה/וּ נֶ֖פֶשׁ וָ/מֵ֑ת וְ/נָ֕ס אֶל אַחַ֖ת הֶ/עָרִ֥ים הָ/אֵֽל׃",
+        "LXX": "ἐὰν δὲ γένηται ἐν σοὶ ἄνθρωπος μισῶν τὸν πλησίον, καὶ ἐνεδρεύσῃ αὐτὸν καὶ ἐπαναστῇ ἐπ’ αὐτὸν καὶ πατάξῃ αὐτοῦ ψυχήν, καὶ ἀποθάνῃ, καὶ φύγῃ εἰς μίαν τῶν πόλεων τούτων·",
+        "VUL": "Si quis autem, odio habens proximum suum, insidiatus fuerit vitæ ejus, surgensque percusserit illum, et mortuus fuerit, fugeritque ad unam de supradictis urbibus,",
+        "SYN": "Но если кто [у тебя] будет врагом ближнему своему и будет подстерегать его, и восстанет на него и убьет его до смерти, и убежит в один из городов тех,",
+        "NEO": "Mais si un homme ayant de la haine contre son prochain, lui dresse des embûches, se jette sur lui et lui porte un coup mortel, et qu’ensuite il s’enfuie dans l’une de ces villes,",
+        "NAB": "\"However, if someone lies in wait for his neighbor out of hatred for him, and rising up against him, strikes him mortally, and then takes refuge in one of these cities,",
+        "VAT_ES": "Pero si alguien, impulsado por el odio, tiende a su prójimo una emboscada, y arrojándose sobre él, lo hiere mortalmente, y luego va a refugiarse en una de esas ciudades,",
+        "CEI": "Ma se un uomo odia il suo prossimo, gli tende insidie, l'assale, lo percuote in modo da farlo morire e poi si rifugia in una di quelle città,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/שָֽׁלְחוּ֙ זִקְנֵ֣י עִיר֔/וֹ וְ/לָקְח֥וּ אֹת֖/וֹ מִ/שָּׁ֑ם וְ/נָתְנ֣וּ אֹת֗/וֹ בְּ/יַ֛ד גֹּאֵ֥ל הַ/דָּ֖ם וָ/מֵֽת׃",
+        "LXX": "καὶ ἀποστελοῦσιν ἡ γερουσία τῆς πόλεως αὐτοῦ καὶ λήμψονται αὐτὸν ἐκεῖθεν, καὶ παραδώσουσιν αὐτὸν εἰς χεῖρας τῶν ἀγχιστευόντων τοῦ αἵματος, καὶ ἀποθανεῖται·",
+        "VUL": "mittent seniores civitatis illius, et arripient eum de loco effugii, tradentque in manu proximi, cujus sanguis effusus est, et morietur.",
+        "SYN": "то старейшины города его должны послать, чтобы взять его оттуда и предать его в руки мстителя за кровь, чтоб он умер;",
+        "NEO": "les anciens de sa ville l’enverront saisir et le livreront entre les mains du vengeur du sang, afin qu’il meure.",
+        "NAB": "the elders of his own city shall send for him and have him taken from there, and shall hand him over to be slain by the avenger of blood.",
+        "VAT_ES": "los ancianos de su ciudad lo harán apresar y lo pondrán en manos del vengador del homicidio, para que muera.",
+        "CEI": "gli anziani della sua città lo manderanno a prendere di là e lo consegneranno nelle mani del vendicatore del sangue perché sia messo a morte."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "לֹא תָח֥וֹס עֵֽינְ/ךָ֖ עָלָ֑י/ו וּ/בִֽעַרְתָּ֧ דַֽם הַ/נָּקִ֛י מִ/יִּשְׂרָאֵ֖ל וְ/ט֥וֹב לָֽ/ךְ׃",
+        "LXX": "οὐ φείσεται ὁ ὀφθαλμός σου ἐπ’ αὐτῷ, καὶ καθαριεῖς τὸ αἷμα τὸ ἀναίτιον ἐξ Ἰσραήλ, καὶ εὖ σοι ἔσται.",
+        "VUL": "Non misereberis ejus, et auferes innoxium sanguinem de Israël, ut bene sit tibi.",
+        "SYN": "да не пощадит его глаз твой; смой с Израиля кровь невинного, и будет тебе хорошо.",
+        "NEO": "Ton œil n’aura pas de pitié pour lui, et tu ôteras d’Israël le sang innocent, et tu prospéreras.",
+        "NAB": "Do not look on him with pity, but purge from Israel the stain of shedding innocent blood, that you may prosper.",
+        "VAT_ES": "No le tendrás compasión, sino que harás desaparecer de Israel todo derramamiento de sangre inocente. Así serás feliz.",
+        "CEI": "L'occhio tuo non lo compianga; toglierai da Israele il sangue innocente e così sarai felice."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לֹ֤א תַסִּיג֙ גְּב֣וּל רֵֽעֲ/ךָ֔ אֲשֶׁ֥ר גָּבְל֖וּ רִאשֹׁנִ֑ים בְּ/נַחֲלָֽתְ/ךָ֙ אֲשֶׁ֣ר תִּנְחַ֔ל בָּ/אָ֕רֶץ אֲשֶׁר֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ נֹתֵ֥ן לְ/ךָ֖ לְ/רִשְׁתָּֽ/הּ׃",
+        "LXX": "Οὐ μετακινήσεις ὅρια τοῦ πλησίον ἃ ἔστησαν οἱ πατέρες σου ἐν τῇ κληρονομίᾳ ᾗ κατεκληρονομήθης ἐν τῇ γῇ ᾗ Κύριος ὁ θεός σου δίδωσίν σοι ἐν κλήρῳ.",
+        "VUL": "Non assumes, et transferes terminos proximi tui, quos fixerunt priores in possessione tua, quam Dominus Deus tuus dabit tibi in terra quam acceperis possidendam.",
+        "SYN": "Не нарушай межи ближнего твоего, которую положили предки в уделе твоем, доставшемся тебе в земле, которую Господь Бог твой дает тебе во владение.",
+        "NEO": "Tu ne déplaceras pas la borne de ton prochain, posée par les ancêtres, dans l’héritage que tu auras au pays que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te donne pour le posséder.",
+        "NAB": "\"You shall not move your neighbor's landmarks erected by your forefathers in the heritage you receive in the land which the LORD, your God, is giving you to occupy.",
+        "VAT_ES": "No desplazarás los límites de la propiedad de tu vecino, los que han establecido los predecesores, en la herencia que recibirás cuando tomes posesión de la tierra que te da el Señor, tu Dios.",
+        "CEI": "Non sposterai i confini del tuo vicino, posti dai tuoi antenati, nell'eredità che ti sarà toccata nel paese che il Signore tuo Dio ti dà in possesso."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "לֹֽא יָקוּם֩ עֵ֨ד אֶחָ֜ד בְּ/אִ֗ישׁ לְ/כָל עָוֺן֙ וּ/לְ/כָל חַטָּ֔את בְּ/כָל חֵ֖טְא אֲשֶׁ֣ר יֶֽחֱטָ֑א עַל פִּ֣י שְׁנֵ֣י עֵדִ֗ים א֛וֹ עַל פִּ֥י שְׁלֹשָֽׁה עֵדִ֖ים יָק֥וּם דָּבָֽר׃",
+        "LXX": "Οὐκ ἐμμενεῖ μάρτυς εἷς μαρτυρῆσαι κατὰ ἀνθρώπου κατὰ πᾶσαν ἀδικίαν καὶ κατὰ πᾶν ἁμάρτημα καὶ κατὰ πᾶσαν ἁμαρτίαν ἣν ἂν ἁμάρτῃ· ἐπὶ στόματος δύο μαρτύρων καὶ ἐπὶ στόματος τριῶν μαρτύρων στήσεται πᾶν ῥῆμα.",
+        "VUL": "Non stabit testis unus contra aliquem, quidquid illud peccati, et facinoris fuerit : sed in ore duorum aut trium testium stabit omne verbum.",
+        "SYN": "Недостаточно одного свидетеля против кого-либо в какой-- нибудь вине и в каком-нибудь преступлении и в каком-нибудь грехе, которым он согрешит: при словах двух свидетелей, или при словах трех свидетелей состоится [всякое] дело.",
+        "NEO": "Un seul témoin ne sera pas admis contre un homme pour constater un crime ou un péché, quel que soit le péché commis. C’est sur la parole de deux témoins ou sur la parole de trois témoins que la chose sera établie.",
+        "NAB": "\"One witness alone shall not take the stand against a man in regard to any crime or any offense of which he may be guilty; a judicial fact shall be established only on the testimony of two or three witnesses.",
+        "VAT_ES": "No basta un solo testigo para declarar a un hombre culpable de crimen o delito; cualquiera sea la índole del delito, la sentencia deberá fundarse en la declaración de dos o más testigos.",
+        "CEI": "Un solo testimonio non avrà valore contro alcuno, per qualsiasi colpa e per qualsiasi peccato; qualunque peccato questi abbia commesso, il fatto dovrà essere stabilito sulla parola di due o di tre testimoni."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "כִּֽי יָק֥וּם עֵד חָמָ֖ס בְּ/אִ֑ישׁ לַ/עֲנ֥וֹת בּ֖/וֹ סָרָֽה׃",
+        "LXX": "ἐὰν δὲ καταστῇ μάρτυς ἄδικος κατὰ ἀνθρώπου καταλέγων αὐτοῦ ἀσέβειαν,",
+        "VUL": "Si steterit testis mendax contra hominem, accusans eum prævaricationis,",
+        "SYN": "Если выступит против кого свидетель несправедливый, обвиняя его в преступлении,",
+        "NEO": "Lorsqu’un témoin à charge s’élèvera contre un homme pour l’accuser d’un crime,",
+        "NAB": "\"If an unjust witness takes the stand against a man to accuse him of a defection from the law,",
+        "VAT_ES": "Si un falso testigo se levanta contra un hombre y lo acusa de rebeldía,",
+        "CEI": "Qualora un testimonio iniquo si alzi contro qualcuno per accusarlo di ribellione,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/עָמְד֧וּ שְׁנֵֽי הָ/אֲנָשִׁ֛ים אֲשֶׁר לָ/הֶ֥ם הָ/רִ֖יב לִ/פְנֵ֣י יְהוָ֑ה לִ/פְנֵ֤י הַ/כֹּֽהֲנִים֙ וְ/הַ/שֹּׁ֣פְטִ֔ים אֲשֶׁ֥ר יִהְי֖וּ בַּ/יָּמִ֥ים הָ/הֵֽם׃",
+        "LXX": "καὶ γνώσονται οἱ δύο ἄνθρωποι οἷς ἐστιν αὐτοῖς ἡ ἀντιλογία ἔναντι Κυρίου καὶ ἔναντι τῶν ἱερέων καὶ ἔναντι τῶν κριτῶν οἳ ἐὰν ὦσιν ἐν ταῖς ἡμέραις ἐκείναις,",
+        "VUL": "stabunt ambo, quorum causa est, ante Dominum in conspectu sacerdotum et judicum qui fuerint in diebus illis.",
+        "SYN": "то пусть предстанут оба сии человека, у которых тяжба, пред Господа, пред священников и пред судей, которые будут в те дни;",
+        "NEO": "les deux hommes en contestation se présenteront devant \\+w Yahweh|strong=\"H3068\"\\+w**, devant les prêtres et les juges alors en fonction ;",
+        "NAB": "the two parties in the dispute shall appear before the LORD in the presence of the priests or judges in office at that time;",
+        "VAT_ES": "las dos partes en litigio comparecerán delante del Señor, en presencia de los sacerdotes y de los jueces en ejercicio.",
+        "CEI": "i due uomini fra i quali ha luogo la causa compariranno davanti al Signore, davanti ai sacerdoti e ai giudici in carica in quei giorni."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/דָרְשׁ֥וּ הַ/שֹּׁפְטִ֖ים הֵיטֵ֑ב וְ/הִנֵּ֤ה עֵֽד שֶׁ֨קֶר֙ הָ/עֵ֔ד שֶׁ֖קֶר עָנָ֥ה בְ/אָחִֽי/ו׃",
+        "LXX": "καὶ ἐξετάσωσιν οἱ κριταὶ ἀκριβῶς, καὶ ἰδοὺ μάρτυς ἄδικος ἐμαρτύρησεν ἄδικα, ἀντέστη κατὰ τοῦ ἀδελφοῦ αὐτοῦ·",
+        "VUL": "Cumque diligentissime perscrutantes, invenerint falsum testem dixisse contra fratrem suum mendacium,",
+        "SYN": "судьи должны хорошо исследовать, и если свидетель тот свидетель ложный, ложно донес на брата своего,",
+        "NEO": "les juges feront avec soin une enquête et, si le témoin se trouve être un faux témoin, s’il a fait contre son frère une fausse déposition,",
+        "NAB": "and if after a thorough investigation the judges find that the witness is a false witness and has accused his kinsman falsely,",
+        "VAT_ES": "Los jueces investigarán el caso cuidadosamente, y si se pone de manifiesto que el acusador es un testigo falso y a atestiguado falsamente contra su hermano.",
+        "CEI": "I giudici indagheranno con diligenza e, se quel testimonio risulta falso perché ha deposto il falso contro il suo fratello,"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/עֲשִׂ֣יתֶם ל֔/וֹ כַּ/אֲשֶׁ֥ר זָמַ֖ם לַ/עֲשׂ֣וֹת לְ/אָחִ֑י/ו וּ/בִֽעַרְתָּ֥ הָ/רָ֖ע מִ/קִּרְבֶּֽ/ךָ׃",
+        "LXX": "καὶ ποιήσετε αὐτῷ ὃν τρόπον ἐπονηρεύσατο ποιῆσαι κατὰ τοῦ ἀδελφοῦ αὐτοῦ, καὶ ἐξαρεῖς τὸν πονηρὸν ἐξ ὑμῶν αὐτῶν.",
+        "VUL": "reddent ei sicut fratri suo facere cogitavit, et auferes malum de medio tui :",
+        "SYN": "то сделайте ему то, что он умышлял сделать брату своему; и _так_ истреби зло из среды себя;",
+        "NEO": "vous lui ferez subir ce qu’il avait dessein de faire subir à son frère. Tu ôteras ainsi le mal du milieu de toi.",
+        "NAB": "you shall do to him as he planned to do to his kinsman. Thus shall you purge the evil from your midst.",
+        "VAT_ES": "le harán a él lo mismo que él había proyectado hacer contra su hermano. Así harás desaparecer el mal de entre ustedes.",
+        "CEI": "farete a lui quello che egli aveva pensato di fare al suo fratello. Così estirperai il male di mezzo a te."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/הַ/נִּשְׁאָרִ֖ים יִשְׁמְע֣וּ וְ/יִרָ֑אוּ וְ/לֹֽא יֹסִ֨פוּ לַ/עֲשׂ֜וֹת ע֗וֹד כַּ/דָּבָ֥ר הָ/רָ֛ע הַ/זֶּ֖ה בְּ/קִרְבֶּֽ/ךָ׃",
+        "LXX": "καὶ οἱ ἐπίλοιποι ἀκούσαντες φοβηθήσονται, καὶ οὐ προσθήσουσιν ἔτι ποιῆσαι κατὰ τὸ ῥῆμα τοῦτο τὸ πονηρὸν ἐν ὑμῖν.",
+        "VUL": "ut audientes ceteri timorem habeant, et nequaquam talia audeant facere.",
+        "SYN": "и прочие услышат, и убоятся, и не станут впредь делать такое зло среди тебя;",
+        "NEO": "Les autres, en l’apprenant craindront, et l’on ne commettra plus un acte aussi mauvais au milieu de toi.",
+        "NAB": "The rest, on hearing of it, shall fear, and never again do a thing so evil among you.",
+        "VAT_ES": "Y cuando se enteren los otros, sentirán temor y no volverá a cometerse esta infamia entre ustedes.",
+        "CEI": "Gli altri lo verranno a sapere e ne avranno paura e non commetteranno più in mezzo a te una tale azione malvagia."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/לֹ֥א תָח֖וֹס עֵינֶ֑/ךָ נֶ֣פֶשׁ בְּ/נֶ֗פֶשׁ עַ֤יִן בְּ/עַ֨יִן֙ שֵׁ֣ן בְּ/שֵׁ֔ן יָ֥ד בְּ/יָ֖ד רֶ֥גֶל בְּ/רָֽגֶל׃",
+        "LXX": "οὐ φείσεται ὁ ὀφθαλμός σου ἐπ’ αὐτῷ· ψυχὴν ἀντὶ ψυχῆς, ὀφθαλμὸν ἀντὶ ὀφθαλμοῦ, ὀδόντα ἀντὶ ὀδόντος, χεῖρα ἀντὶ χειρός, πόδα ἀντὶ ποδός.",
+        "VUL": "Non misereberis ejus, sed animam pro anima, oculum pro oculo, dentem pro dente, manum pro manu, pedem pro pede exiges.",
+        "SYN": "да не пощадит [его] глаз твой: душу за душу, глаз за глаз, зуб за зуб, руку за руку, ногу за ногу. [Какой кто сделает вред ближнему своему, тем должно отплатить ему.]",
+        "NEO": "Ton œil sera sans pitié : vie pour vie, œil pour œil, dent pour dent, main pour main, pied pour pied.",
+        "NAB": "Do not look on such a man with pity. Life for life, eye for eye, tooth for tooth, hand for hand, and foot for foot!",
+        "VAT_ES": "No tendrás compasión: vida por vida, ojo por ojo, diente por diente, mano por mano, pie por pie.",
+        "CEI": "Il tuo occhio non avrà compassione: vita per vita, occhio per occhio, dente per dente, mano per mano, piede per piede."
+      }
+    }
+  }
+}

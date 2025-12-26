@@ -1,0 +1,610 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_039",
+  "book_key": "ECCLU",
+  "sequence": 39,
+  "chapter_in": {
+    "MT": 39,
+    "VUL": 39,
+    "LXX": 39
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Πλὴν τοῦ ἐπιδόντος τὴν ψυχὴν αὐτοῦ καὶ διανοουμένου ἐν νόμῳ Ὑψίστου, σοφίαν πάντων ἀρχαίων ἐκζητήσει, καὶ ἐν προφητείαις ἀσχοληθήσεται·",
+        "VUL": "[Sapientiam omnium antiquorum exquiret sapiens,/ et in prophetis vacabit./",
+        "SYN": "Только тот, кто посвящает свою душу размышлению о законе Всевышнего, будет искать мудрости всех древних и упражняться в пророчествах:",
+        "NEO": "Il en est autrement de celui qui applique son esprit, et qui médite sur la loi du Très-Haut ! Il cherche la sagesse de tous les anciens, et il consacre ses loisirs aux prophéties.",
+        "NAB": "How different the man who devotes himself to the study of the law of the Most High! He explores the wisdom of the men of old and occupies himself with the prophecies;",
+        "VAT_ES": "No pasa lo mismo con el que consagra su vida a reflexionar sobre la Ley del Altísimo. El busca la sabiduría de todos los antiguos y dedica su tiempo a estudiar las profecías;",
+        "CEI": "Differente è il caso di chi si applica e medita la legge dell'Altissimo. Egli indaga la sapienza di tutti gli antichi, si dedica allo studio delle profezie."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "διηγήσεις ἀνδρῶν ὀνομαστῶν συντηρήσει, καὶ ἐν στροφαῖς παραβολῶν συνεισελεύσεται·",
+        "VUL": "Narrationem virorum nominatorum conservabit,/ et in versutias parabolarum simul introibit./",
+        "SYN": "он будет замечать сказания мужей именитых и углубляться в тонкие обороты притчей;",
+        "NEO": "Il garde dans sa mémoire les récits des hommes célèbres, et il pénètre dans les détours des sentences.",
+        "NAB": "He treasures the discourses of famous men, and goes to the heart of involved sayings;",
+        "VAT_ES": "conserva los dichos de los hombres famosos y penetra en las sutilezas de las parábolas;",
+        "CEI": "Conserva i detti degli uomini famosi, penetra le sottigliezze delle parabole,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ἀπόκρυφα παροιμιῶν ἐκζητήσει, καὶ ἐν αἰνίγμασι παραβολῶν ἀναστραφήσεται.",
+        "VUL": "Occulta proverbiorum exquiret,/ et in absconditis parabolarum conversabitur./",
+        "SYN": "будет исследовать сокровенный смысл изречений и заниматься загадками притчей.",
+        "NEO": "Il cherche le sens caché des proverbes, et il s’occupe des sentences énigmatiques.",
+        "NAB": "He studies obscure parables, and is busied with the hidden meanings of the sages.",
+        "VAT_ES": "indaga el sentido oculto de los proverbios y estudia sin cesar las sentencias enigmáticas.",
+        "CEI": "indaga il senso recondito dei proverbi e s'occupa degli enigmi delle parabole."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ἀνὰ μέσον μεγιστάνων ὑπηρετήσει, καὶ ἔναντι ἡγουμένου ὀφθήσεται· ἐν γῇ ἀλλοτρίων ἐθνῶν διελεύσεται, ἀγαθὰ γὰρ καὶ κακὰ ἐν ἀνθρώποις ἐπείρασεν.",
+        "VUL": "In medio magnatorum ministrabit,/ et in conspectu præsidis apparebit./",
+        "SYN": "Он будет проходить служение среди вельмож и являться пред правителем;",
+        "NEO": "Il sert au milieu des grands, et il paraît devant le prince. Il voyage dans le pays des peuples étrangers, car il veut connaître le bien et le mal parmi les hommes.",
+        "NAB": "He is in attendance on the great, and has entrance to the ruler.",
+        "VAT_ES": "Presta servicio entre los grandes y se lo ve en la presencia de los jefes; viaja por países extranjero, porque conoce por experiencia lo bueno y lo malo de los hombres.",
+        "CEI": "Svolge il suo compito fra i grandi, è presente alle riunioni dei capi, viaggia fra genti straniere, investigando il bene e il male in mezzo agli uomini."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "τὴν καρδίαν αὐτοῦ ἐπιδώσει ὀρθρίσαι πρὸς Κύριον τὸν ποιήσαντα αὐτόν, καὶ ἔναντι Ὑψίστου δεηθήσεται· καὶ ἀνοίξει στόμα αὐτοῦ ἐν προσευχῇ, καὶ περὶ τῶν ἁμαρτιῶν αὐτοῦ δεηθήσεται.",
+        "VUL": "In terram alienigenarum gentium pertransiet :/ bona enim et mala in hominibus tentabit./",
+        "SYN": "будет путешествовать по земле чужих народов, ибо испытал доброе и злое между людьми.",
+        "NEO": "Il met son cœur à aller dès le matin auprès du Seigneur qui l’a fait : il prie en présence du Très-Haut, il ouvre sa bouche pour la prière et il demande pardon pour ses péchés.",
+        "NAB": "He travels among the peoples of foreign lands to learn what is good and evil among men.",
+        "VAT_ES": "De todo corazón, muy de madrugada, se dirige al Señor, su Creador, y suplica en la presencia del Altísimo; abre sus labios para orar y pide perdón por sus pecados.",
+        "CEI": "Di buon mattino rivolge il cuore al Signore, che lo ha creato, prega davanti all'Altissimo, apre la bocca alla preghiera, implora per i suoi peccati."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ἐὰν Κύριος ὁ μέγας θελήσῃ, πνεύματι συνέσεως ἐμπλησθήσεται· ἀνομβρήσει ῥήματα σοφίας αὐτός, καὶ ἐν προσευχῇ ἐξομολογήσεται Κυρίῳ·",
+        "VUL": "Cor suum tradet ad vigilandum diluculo ad Dominum, qui fecit illum,/ et in conspectu Altissimi deprecabitur./",
+        "SYN": "Сердце свое он направит к тому, чтобы с раннего утра обращаться к Господу, сотворившему его, и будет молиться пред Всевышним; откроет в молитве уста свои и будет молиться о грехах своих.",
+        "NEO": "Si c’est la volonté du Seigneur, qui est grand, il sera rempli de l’esprit d’intelligence ; alors il répandra à flots les paroles de la sagesse, et, dans sa prière, il rendra grâces au Seigneur.",
+        "NAB": "His care is to seek the LORD, his Maker, to petition the Most High, To open his lips in prayer, to ask pardon for his sins. Then, if it pleases the LORD Almighty, he will be filled with the spirit of understanding; He will pour forth his words of wisdom and in prayer give thanks to the LORD,",
+        "VAT_ES": "Si el gran Señor así lo desea, será colmado del espíritu de inteligencia: derramará como lluvia sus sabias palabras y celebrará al Señor con su plegaria;",
+        "CEI": "Se questa è la volontà del Signore grande, egli sarà ricolmato di spirito di intelligenza, come pioggia effonderà parole di sapienza, nella preghiera renderà lode al Signore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "⸂⸆⸃ αὐτὸς κατευθυνεῖ βουλὴν αὐτοῦ καὶ ἐπιστήμην, καὶ ἐν τοῖς ἀποκρύφοις αὐτοῦ διανοηθήσεται·",
+        "VUL": "Aperiet os suum in oratione,/ et pro delictis suis deprecabitur./",
+        "SYN": "Если Господу великому угодно будет, он исполнится духом разума,",
+        "NEO": "Il saura diriger sa prudence et son savoir, et il étudiera les mystères divins.",
+        "NAB": "Who will direct his knowledge and his counsel, as he meditates upon his mysteries.",
+        "VAT_ES": "dirigirá rectamente su conejo y su ciencia y reflexionará sobre los secretos de Dios;",
+        "CEI": "Egli dirigerà il suo consiglio e la sua scienza, mediterà sui misteri di Dio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "αὐτὸς ἐκφαίνει παιδείαν διδασκαλίας αὐτοῦ, καὶ ἐν νόμῳ διαθήκης Κυρίου καυχήσεται.",
+        "VUL": "Si enim Dominus magnus voluerit,/ spiritu intelligentiæ replebit illum :/",
+        "SYN": "будет источать слова мудрости своей и в молитве прославлять Господа;",
+        "NEO": "Il publiera la doctrine de son enseignement, et il se glorifiera de la loi de l’alliance du Seigneur.",
+        "NAB": "He will show the wisdom of what he has learned and glory in the law of the LORD'S covenant.",
+        "VAT_ES": "con su enseñanza hará brillar la doctrina y se gloriará en la Ley de Alianza del Señor.",
+        "CEI": "Farà brillare la dottrina del suo insegnamento, si vanterà della legge dell'alleanza del Signore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "αἰνέσουσιν τὴν σύνεσιν αὐτοῦ πολλοί, ἕως τοῦ αἰῶνος οὐκ ἐξαλειφθήσεται· οὐκ ἀποστήσεται τὸ μνημόσυνον αὐτοῦ, καὶ ὄνομα αὐτοῦ ζήσεται εἰς γενεὰς γενεῶν·",
+        "VUL": "et ipse tamquam imbres mittet eloquia sapientiæ suæ,/ et in oratione confitebitur Domino :/",
+        "SYN": "благоуправит свою волю и ум и будет размышлять о тайнах Господа;",
+        "NEO": "Beaucoup loueront son intelligence, et il ne sera jamais oublié ; sa mémoire ne passera pas, et son nom vivra d’âge en âge.",
+        "NAB": "Many will praise his understanding; his fame can never be effaced; Unfading will be his memory, through all generations his name will live;",
+        "VAT_ES": "Muchos alabarán su inteligencia, que nunca caerá en el olvido; su recuerdo no se borrará jamás y su nombre vivirá para siempre.",
+        "CEI": "Molti loderanno la sua intelligenza, egli non sarà mai dimenticato, non scomparirà il suo ricordo, il suo nome vivrà di generazione in generazione."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "τὴν σοφίαν αὐτοῦ διηγήσονται ἔθνη, καὶ τὸν ἔπαινον αὐτοῦ ἐξαγγελεῖ ἐκκλησία·",
+        "VUL": "et ipse diriget consilium ejus, et disciplinam,/ et in absconditis suis consiliabitur./",
+        "SYN": "он покажет мудрость своего учения и будет хвалиться законом завета Господня.",
+        "NEO": "Les peuples raconteront sa sagesse, et l’assemblée célébrera ses louanges.",
+        "NAB": "Peoples will speak of his wisdom, and in assembly sing his praises.",
+        "VAT_ES": "Las naciones hablarán de su sabiduría y la asamblea proclamará su alabanza.",
+        "CEI": "I popoli parleranno della sua sapienza, l'assemblea proclamerà le sue lodi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἐὰν ἐμμείνῃ, ὄνομα καταλείψει ἢ χίλιοι, καὶ ἐὰν ἀναπαύσηται, ἐμποιεῖ αὐτῷ.",
+        "VUL": "Ipse palam faciet disciplinam doctrinæ suæ,/ et in lege testamenti Domini gloriabitur./",
+        "SYN": "Многие будут прославлять знание его, и он не будет забыт вовек;",
+        "NEO": "Tant qu’il est en vie, son nom reste plus illustre que mille autres ; et, quand il se reposera, sa gloire grandira encore.",
+        "NAB": "While he lives he is one out of a thousand, and when he dies his renown will not cease.",
+        "VAT_ES": "Si vive largo tiempo, tendrá más renombre que otros mil; si entra en el reposo, eso le bastará.",
+        "CEI": "Finché vive, lascerà un nome più noto di mille, quando muore, avrà già fatto abbastanza per sé."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "Ἔτι διανοηθεὶς ἐκδιηγήσομαι, καὶ ὡς διχομηνία ἐπληρώθην.",
+        "VUL": "Collaudabunt multi sapientiam ejus,/ et usque in sæculum non delebitur./",
+        "SYN": "память о нем не погибнет, и имя его будет жить в роды родов.",
+        "NEO": "Je veux encore publier le fruit de mes réflexions, car je suis rempli, comme la lune dans son plein.",
+        "NAB": "Once more I will set forth my theme to shine like the moon in its fullness!",
+        "VAT_ES": "Voy a seguir exponiendo mis reflexiones, porque estoy colmado como la luna llena.",
+        "CEI": "Esporrò ancora le mie riflessioni, ne sono pieno come la luna a metà mese."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "εἰσακούσατέ μου, υἱοὶ ὅσιοι, καὶ βλαστήσατε ὡς ῥόδον φυόμενον ἐπὶ ῥεύματος ἀγροῦ,",
+        "VUL": "Non recedet memoria ejus,/ et nomen ejus requiretur a generatione in generationem./",
+        "SYN": "Народы будут прославлять его мудрость, и общество будет возвещать хвалу его;",
+        "NEO": "Ecoutez-moi, fils pieux, et croissez, comme la rose sur le bord d’une eau courante :",
+        "NAB": "Listen, my faithful children: open up your petals, like roses planted near running waters;",
+        "VAT_ES": "Escúchenme, hijos santos, y crezcan como rosal que brota junto a la corriente de agua.",
+        "CEI": "Ascoltatemi, figli santi, e crescete come una pianta di rose su un torrente."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "καὶ ὡς λίβανος εὐωδιάσατε ὀσμήν, καὶ ἀνθήσατε ἄνθος ὡς κρίνον, διάδοτε ὀσμὴν καὶ αἰνέσατε ᾆσμα. εὐλογήσατε Κύριον ἐπὶ πᾶσιν τοῖς ἔργοις,",
+        "VUL": "Sapientiam ejus enarrabunt gentes,/ et laudem ejus enuntiabit ecclesia./",
+        "SYN": "доколе будет жить, он приобретет большую славу, нежели тысячи; а когда почиет, увеличит ее.",
+        "NEO": "répandez, comme l’encens, votre suave odeur ; faites éclore votre fleur, comme le lis ; exhalez votre parfum et chantez un cantique, célébrez le Seigneur pour toutes ses œuvres.",
+        "NAB": "Send up the sweet odor of incense, break forth in blossoms like the lily. Send up the sweet odor of your hymn of praise; bless the LORD for all he has done!",
+        "VAT_ES": "Exhalen suave fragancia como el incienso y florezcan como el lirio; derramen aroma y entonen un canto, bendigan al Señor por todas sus obras.",
+        "CEI": "Come incenso spandete un buon profumo, fate fiorire fiori come il giglio, spargete profumo e intonate un canto di lode; benedite il Signore per tutte le opere sue."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "δότε τῷ ὀνόματι αὐτοῦ μεγαλωσύνην, καὶ ἐξομολογήσασθε ἐν αἰνέσει αὐτοῦ, ἐν ᾠδαῖς χειλέων καὶ ἐν κινύραις, καὶ οὕτως ἐρεῖτε ἐν ἐξομολογήσει",
+        "VUL": "Si permanserit, nomen derelinquet plus quam mille :/ et si requieverit, proderit illi.]",
+        "SYN": "Еще размыслив, расскажу, ибо я полон, как луна в полноте своей.",
+        "NEO": "Rendez gloire à son nom, proclamez sa louange, dans les chants de vos lèvres et sur vos harpes, et, en le célébrant, vous direz :",
+        "NAB": "Proclaim the greatness of his name, loudly sing his praises, With music on the harp and all stringed instruments; sing out with joy as you proclaim:",
+        "VAT_ES": "Reconozcan que su Nombre es grande, denle gracias, proclamando su alabanza, con cantos en los labios y con arpas, y digan en la acción de gracias:",
+        "CEI": "Magnificate il suo nome; proclamate le sue lodi con i vostri canti e le vostre cetre; così direte nella vostra lode:"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "Τὰ ἔργα Κυρίου πάντα ὅτι καλὰ σφόδρα, καὶ πᾶν πρόσταγμα ἐν καιρῷ αὐτοῦ ἔσται·",
+        "VUL": "[Adhuc consiliabor ut enarrem :/ ut furore enim repletus sum./",
+        "SYN": "Выслушайте меня, благочестивые дети, и растите, как роза, растущая на поле при потоке;",
+        "NEO": "Toutes les œuvres du Seigneur sont très bonnes, et tout ce qu’il a ordonné s’accomplira en son temps.",
+        "NAB": "The works of God are all of them good; in its own time every need is supplied.",
+        "VAT_ES": "&iexcl;Qué hermosas son todas las obras del Señor, y todo lo que él ordena se cumple a su tiempo! No hay por qué decir: «&iquest;Qué es esto? &iquest;Para qué está?». Porque todo será comprendido en su momento.",
+        "CEI": "\"Quanto sono magnifiche tutte le opere del Signore! Ogni sua disposizione avrà luogo a suo tempo!\". Non c'è da dire: \"Che è questo? Perché quello?\". Tutte le cose saranno indagate a suo tempo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "οὐκ ἔστιν εἰπεῖν Τί τοῦτο; εἰς τί τοῦτο; πάντα γὰρ ἐν καιρῷ αὐτοῦ ζητηθήσεται. ἐν λόγῳ αὐτοῦ ἔστη ὡς θιμωνιὰ ὕδωρ, καὶ ἐν ῥήματι στόματος αὐτοῦ ἀποδοχεῖα ὑδάτων.",
+        "VUL": "In voce dicit : Obaudite me, divini fructus,/ et quasi rosa plantata super rivos aquarum fructificate./",
+        "SYN": "издавайте благоухание, как ливан;",
+        "NEO": "On ne doit pas dire : « Qu’est-ce que cela ? A quoi sert-il ? » car toute chose sera recherchée en son temps. A sa parole, l’eau se rassembla comme un monceau, et, sur une parole de sa bouche, il y eut des réservoirs d’eau.",
+        "NAB": "At his word the waters become still as in a flask; he had but to speak and the reservoirs were made.",
+        "VAT_ES": "Por su palabra, las aguas se detuvieron como una masa; por una de sus órdenes, se formaron los depósitos de agua.",
+        "CEI": "Alla sua parola l'acqua si ferma come un cumulo, a un suo detto si aprono i serbatoi delle acque."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "ἐν προστάγματι αὐτοῦ πᾶσα ἡ εὐδοκία, καὶ οὐκ ἔστιν ὃς ἐλαττώσει τὸ σωτήριον αὐτοῦ.",
+        "VUL": "Quasi Libanus odorem suavitatis habete./",
+        "SYN": "цветите, как лилия, распространяйте благовоние и пойте песнь;",
+        "NEO": "Par son commandement, ce qui lui plaît arrive, et nul ne peut arrêter le salut qu’il envoie.",
+        "NAB": "He has but to command and his will is done; nothing can limit his achievement.",
+        "VAT_ES": "El lo ordena, y se cumple su voluntad, y nadie puede menoscabar su obra salvadora.",
+        "CEI": "A un suo comando si realizza quanto egli vuole; nessuno può ostacolare il suo aiuto."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ἔργα πάσης σαρκὸς ἐνώπιον αὐτοῦ, καὶ οὐκ ἔστιν κρυβῆναι ἀπὸ τῶν ὀφθαλμῶν αὐτοῦ·",
+        "VUL": "Florete flores quasi lilium :/ et date odorem, et frondete in gratiam :/ et collaudate canticum, et benedicite Dominum in operibus suis./",
+        "SYN": "благословляйте Господа во всех делах; величайте имя Его и прославляйте Его хвалою Его,",
+        "NEO": "Les œuvres de toute chair sont devant lui, et l’on ne peut se cacher à ses yeux.",
+        "NAB": "The works of all mankind are present to him; not a thing escapes his eye.",
+        "VAT_ES": "Las obras de todo ser viviente están ante él y nada puede ocultarse a sus ojos.",
+        "CEI": "Ogni azione umana è davanti a lui, non è possibile nascondersi ai suoi occhi."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ἀπὸ τοῦ αἰῶνος εἰς τὸν αἰῶνα ἐπέβλεψεν, καὶ οὐθέν ἐστιν θαυμάσιον ἐναντίον αὐτοῦ.",
+        "VUL": "Date nomini ejus magnificentiam,/ et confitemini illi in voce labiorum vestrorum,/ et in canticis labiorum, et citharis :/ et sic dicetis in confessione :/",
+        "SYN": "песнями уст и гуслями и, прославляя, говорите так:",
+        "NEO": "Son regard atteint de l’éternité à l’éternité, et il n’y a rien d’étonnant devant lui.",
+        "NAB": "His gaze spans all the ages; to him there is nothing unexpected.",
+        "VAT_ES": "El abarca con la mira los límites del tiempo y no hay nada extraordinario para él.",
+        "CEI": "Il suo sguardo passa da un'eternità all'altra, nulla è straordinario davanti a lui."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "οὐκ ἔστιν εἰπεῖν Τί τοῦτο; εἰς τί τοῦτο; πάντα γὰρ εἰς χρείας αὐτῶν ἔκτισται.",
+        "VUL": "Opera Domini universa bona valde./",
+        "SYN": "все дела Господа весьма благотворны, и всякое повеление Его в свое время исполнится;",
+        "NEO": "On ne doit pas dire : « Qu’est-ce que cela ? A quoi sert-il ? » car toute chose a été créée pour son usage.",
+        "NAB": "No cause then to say: \"What is the purpose of this?\" Everything is chosen to satisfy a need.",
+        "VAT_ES": "No hay por qué decir: «&iquest;Qué es esto? &iquest;Para qué está?». Porque todo ha sido creado con un fin.",
+        "CEI": "Non c'è da dire: \"Che è questo? Perché quello?\" poiché tutte le cose sono state create per un fine."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ἡ εὐλογία αὐτοῦ ὡς ποταμὸς ἐπεκάλυψεν, καὶ ὡς κατακλυσμὸς ξηρὰν ἐμέθυσεν·",
+        "VUL": "In verbo ejus stetit aqua sicut congeries :/ et in sermone oris illius sicut exceptoria aquarum :/",
+        "SYN": "и нельзя сказать: \"что это? для чего это?\", ибо все в свое время откроется.",
+        "NEO": "La bénédiction du Seigneur déborde comme un fleuve, et, comme un déluge, elle arrose la terre.",
+        "NAB": "His blessing overflows like the Nile; like the Euphrates it enriches the surface of the earth.",
+        "VAT_ES": "Su bendición desborda como un río y como un diluvio, empapa la tierra.",
+        "CEI": "La sua benedizione si diffonde come un fiume e irriga come un'inondazione la terra."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "οὕτως ὀργὴν αὐτοῦ ἔθνη κληρονομήσει, ὡς μετέστρεψεν ὕδατα εἰς ἅλμην.",
+        "VUL": "quoniam in præcepto ipsius placor fit,/ et non est minoratio in salute ipsius./",
+        "SYN": "По слову Его стала вода, как стог, и по изречению уст Его явились вместилища вод.",
+        "NEO": "De même il donne sa colère en partage aux nations, comme il a changé un pays bien arrosé en une contrée de sel.",
+        "NAB": "Again, his wrath expels the nations and turns fertile land into a salt marsh.",
+        "VAT_ES": "Pero su ira será la herencia de las naciones, igual que cuando él cambió las aguas en sal.",
+        "CEI": "Così le genti sperimenteranno la sua ira, come trasformò le acque in deserto salato."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "αἱ ὁδοὶ αὐτοῦ τοῖς ὁσίοις εὐθεῖαι, οὕτως τοῖς ἀνόμοις προσκόμματα·",
+        "VUL": "Opera omnis carnis coram illo,/ et non est quidquam absconditum ab oculis ejus./",
+        "SYN": "В повелениях Его - всё Его благоволение, и никто не может умалить спасительность их.",
+        "NEO": "Ses voies sont droites pour les hommes saints, et de même elles sont pour les impies des occasions de chute.",
+        "NAB": "For the virtuous his paths are level, to the haughty they are steep;",
+        "VAT_ES": "Sus caminos son rectos para los santos, pero están llenos de obstáculos para los impíos.",
+        "CEI": "Le sue vie sono diritte per i santi, ma per gli empi piene di inciampi."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "ἀγαθὰ τοῖς ἀγαθοῖς ἔκτισται ἀπ’ ἀρχῆς, οὕτως τοῖς ἁμαρτωλοῖς κακά.",
+        "VUL": "A sæculo usque in sæculum respicit,/ et nihil est mirabile in conspectu ejus./",
+        "SYN": "Пред Ним дела всякой плоти, и невозможно укрыться от очей Его.",
+        "NEO": "Les biens ont été créés pour les bons dès l’origine, et, de même, les maux pour les méchants.",
+        "NAB": "Good things for the good he provided from the beginning, but for the wicked good things and bad.",
+        "VAT_ES": "Los bienes fueron creados desde el principio para los buenos, así como los males para los pecadores.",
+        "CEI": "I beni per i buoni furon creati sin da principio, ma anche i mali per i peccatori."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "ἀρχὴ πάσης χρείας εἰς ζωὴν ἀνθρώπου, ὕδωρ, πῦρ καὶ σίδηρος καὶ ἅλα καὶ σεμίδαλις, πυρὸς καὶ μέλι καὶ γάλα, αἷμα σταφυλῆς καὶ ἔλαιον καὶ ἱμάτιον·",
+        "VUL": "Non est dicere : Quid est hoc, aut quid est istud ?/ omnia enim in tempore suo quærentur./",
+        "SYN": "Он прозирает из века в век, и ничего нет дивного пред Ним.",
+        "NEO": "Ce qui est de première nécessité pour la vie de l’homme, c’est l’eau, le feu, le fer et le sel, la farine de froment, le miel et le lait, le sang de la grappe, l’huile et le vêtement.",
+        "NAB": "Chief of all needs for human life are water and fire, iron and salt, The heart of the wheat, milk and honey, the blood of the grape, and oil, and cloth;",
+        "VAT_ES": "Lo más indispensable para la vida del hombre es el agua y el fuego, el hierro y la sal, la harina de trigo, la leche y la miel, la sangre de la vid, el aceite y la ropa:",
+        "CEI": "Le cose di prima necessità per la vita dell'uomo sono: acqua, fuoco, ferro, sale, farina di frumento, latte, miele, succo di uva, olio e vestito."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "ταῦτα πάντα τοῖς εὐσεβέσιν εἰς ἀγαθά, οὕτως τοῖς ἁμαρτωλοῖς τραπήσεται εἰς κακά.",
+        "VUL": "Benedictio illius quasi fluvius inundavit./",
+        "SYN": "Нельзя сказать: \" что это? для чего это?\", ибо все создано для своего употребления.",
+        "NEO": "Toutes ces choses sont des biens pour les hommes pieux, mais se changent en maux pour les pécheurs.",
+        "NAB": "For the good all these are good, but for the wicked they turn out evil.",
+        "VAT_ES": "todo esto es beneficioso para los buenos, y se vuelve perjudicial para los pecadores.",
+        "CEI": "Tutte queste cose per i pii sono beni, ma per i peccatori diventano mali."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "ἔστιν πνεύματα ἃ εἰς ἐκδίκησιν ἔκτισται, καὶ ἐν θυμῷ αὐτῶν ἐστερέωσαν μάστιγας αὐτῶν· καὶ ἐν καιρῷ συντελείας ἰσχὺν ἐκχεοῦσιν, καὶ τὸν θυμὸν τοῦ ποιήσαντος αὐτοὺς κοπάσουσιν.",
+        "VUL": "Quomodo cataclysmus aridam inebriavit,/ sic ira ipsius gentes quæ non exquisierunt eum hæreditabit./",
+        "SYN": "Благословение Его покрывает, как река, и, как потоп, напояет сушу.",
+        "NEO": "Il y a des vents qui ont été créés pour la vengeance, et, dans leur fureur, ils déchaînent leurs fléaux. Au jour de la destruction, ils déploieront leur puissance, et apaiseront le courroux de Celui qui les a faits.",
+        "NAB": "There are storm winds created to punish, which in their fury can dislodge mountains; When destruction must be, they hurl all their force and appease the anger of their Maker.",
+        "VAT_ES": "Hay vientos que fueron creados para el castigo, y en su furor, él los hace más impetuosos: en el momento de la destrucción, desencadenan su violencia y apaciguan el furor de aquel que los hizo.",
+        "CEI": "Ci sono venti creati per castigo, e nella loro furia rafforzano i loro flagelli; quando verrà la fine, scateneranno violenza, e placheranno lo sdegno del loro creatore."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "πῦρ καὶ χάλαζα καὶ λιμὸς καὶ θάνατος, πάντα ταῦτα εἰς ἐκδίκησιν ἔκτισται·",
+        "VUL": "Quomodo convertit aquas in siccitatem, et siccata est terra,/ et viæ illius viis illorum directæ sunt,/ sic peccatoribus offensiones in ira ejus./",
+        "SYN": "Но и гнев Его испытывают народы, как некогда Он превратил воды в солончаки.",
+        "NEO": "Feu et grêle, famine et peste, toutes ces choses ont été créées pour le châtiment ;",
+        "NAB": "In his treasury also, kept for the proper time, are fire and hail, famine, disease,",
+        "VAT_ES": "Fuego, granizo, hambre y peste: todo esto fue creado para el castigo.",
+        "CEI": "Fuoco, grandine, fame e morte son tutte cose create per il castigo."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "θηρίων ὀδόντες καὶ σκορπίοι καὶ ἔχεις καὶ ῥομφαία ἐκδικοῦσα εἰς ὄλεθρον ἀσεβεῖς,",
+        "VUL": "Bona bonis creata sunt ab initio :/ sic nequissimis bona et mala./",
+        "SYN": "Пути Его для святых прямы, а для беззаконных они - преткновения.",
+        "NEO": "ainsi que la dent des bêtes féroces, les scorpions et les vipères, et le glaive exterminateur funeste aux impies.",
+        "NAB": "Ravenous beasts, scorpions, vipers, and the avenging sword to exterminate the wicked;",
+        "VAT_ES": "Los dientes de las fieras, los escorpiones y las víboras, y la espada vengadora que destruye al impío,",
+        "CEI": "Denti delle fiere, scorpioni e vipere, e spade vendicatrici sono per la rovina degli empi."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "ἐν τῇ ἐντολῇ αὐτοῦ εὐφρανθήσονται, καὶ ἐπὶ τῆς γῆς εἰς χρείας ἑτοιμασθήσονται, καὶ ἐν τοῖς καιροῖς αὐτῶν οὐ παραβήσονται λόγον.",
+        "VUL": "Initium necessariæ rei vitæ hominum, aqua, ignis, et ferrum,/ sal, lac, et panis similagineus, et mel,/ et botrus uvæ, et oleum, et vestimentum./",
+        "SYN": "От начала для добрых создано доброе, как для грешников - злое.",
+        "NEO": "Ces créatures se réjouissent du commandement du Seigneur, elles se tiennent prêtes sur la terre pour le besoin, et, aux temps marqués, elles ne désobéissent pas à ses ordres.",
+        "NAB": "In doing his bidding they rejoice, in their assignments they disobey not his command.",
+        "VAT_ES": "todos ellos se alegran de sus órdenes y están sobre la tierra dispuestos a servirlo: llegado el momento, no transgredirán su palabra.",
+        "CEI": "Esulteranno al comando divino; sono pronte sulla terra per tutti i bisogni. A tempo opportuno non trasgrediranno la parola."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "LXX": "διὰ τοῦτο ἐξ ἀρχῆς ἐστηρίχθην καὶ διενοήθην καὶ ἐν γραφῇ ἀφῆκα.",
+        "VUL": "Hæc omnia sanctis in bona,/ sic et impiis et peccatoribus in mala convertentur./",
+        "SYN": "Главное из всех потребностей для жизни человека - вода, огонь, железо, соль, пшеничная мука, мед, молоко, виноградный сок, масло и одежда:",
+        "NEO": "C’est pourquoi j’ai été dès le début ferme dans mes pensées, et, après avoir médité, je les ai mises par écrit :",
+        "NAB": "So from the first I took my stand, and wrote down as my theme:",
+        "VAT_ES": "Por eso, desde el principio, convencí de esto, reflexioné, y lo puse por escrito:",
+        "CEI": "Per questo ero convinto fin dal principio, vi ho riflettuto e l'ho messo per iscritto:"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "LXX": "τὰ ἔργα Κυρίου πάντα ἀγαθά, καὶ πᾶσαν χρείαν ἐν ὥρᾳ αὐτῆς χορηγήσει·",
+        "VUL": "Sunt spiritus qui ad vindictam creati sunt,/ et in furore suo confirmaverunt tormenta sua./",
+        "SYN": "все это благочестивым служит в пользу, а грешникам может обратиться во вред.",
+        "NEO": "Toutes les œuvres du Seigneur sont bonnes, et il pourvoit à tout besoin en son temps.",
+        "NAB": "The works of God are all of them good; every need when it comes he fills.",
+        "VAT_ES": "Las obras del Señor son todas buenas, y a su debido tiempo, él provee a toda necesidad.",
+        "CEI": "\"Tutte le opere del Signore sono buone; egli provvederà tutto a suo tempo\"."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "LXX": "καὶ οὐκ ἔστιν εἰπεῖν Τοῦτο τούτου πονηρότερον, πάντα γὰρ ἐν καιρῷ εὐδοκιμηθήσεται.",
+        "VUL": "In tempore consummationis effundent virtutem,/ et furorem ejus qui fecit illos placabunt./",
+        "SYN": "Есть ветры, которые созданы для отмщения и в ярости своей усиливают удары свои,",
+        "NEO": "Il n’y a pas lieu de dire : « Ceci est plus mauvais que cela, » car toute chose en son temps sera reconnue bonne.",
+        "NAB": "No cause then to say: \"This is not as good as that\"; for each shows its worth at the proper time.",
+        "VAT_ES": "No hay por qué decir: «Esto es peor que aquello», porque a su tiempo todo será reconocido como bueno.",
+        "CEI": "Non c'è da dire: \"Questo è peggiore di quello\", a suo tempo ogni cosa sarà riconosciuta buona."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "LXX": "καὶ νῦν ἐν πάσῃ καρδίᾳ καὶ στόματι ὑμνήσαμεν, καὶ εὐλογήσατε τὸ ὄνομα Κυρίου.",
+        "VUL": "Ignis, grando, fames, et mors,/ omnia hæc ad vindictam creata sunt :/",
+        "SYN": "во время устремления своего изливают силу и удовлетворяют ярости Сотворившего их.",
+        "NEO": "Et maintenant chantez de tout cœur et de bouche, et bénissez le nom du Seigneur.",
+        "NAB": "So now with full joy of heart proclaim and bless the name of the Holy One.",
+        "VAT_ES": "Y ahora, de todo corazón y en alta voz, canten himnos y bendigan el nombre del Señor».",
+        "CEI": "Ora cantate inni con tutto il cuore e con la bocca e benedite il nome del Signore."
+      }
+    }
+  }
+}

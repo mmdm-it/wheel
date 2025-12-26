@@ -1,0 +1,573 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IUDI_003",
+  "book_key": "IUDI",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/אֵ֤לֶּה הַ/גּוֹיִם֙ אֲשֶׁ֣ר הִנִּ֣יחַ יְהוָ֔ה לְ/נַסּ֥וֹת בָּ֖/ם אֶת יִשְׂרָאֵ֑ל אֵ֚ת כָּל אֲשֶׁ֣ר לֹֽא יָדְע֔וּ אֵ֖ת כָּל מִלְחֲמ֥וֹת כְּנָֽעַן׃",
+        "LXX": "Καὶ ταῦτα τὰ ἔθνη ἃ ἀφῆκεν Κύριος αὐτὰ ὥστε πειράσαι ἐν αὐτοῖς τὸν Ἰσραήλ, πάντας τοὺς μὴ ἐγνωκότας τοὺς πολέμους Χανάαν,",
+        "VUL": "Hæ sunt gentes quas Dominus dereliquit, ut erudiret in eis Israëlem, et omnes qui non noverant bella Chananæorum :",
+        "SYN": "Вот те народы, которых оставил Господь, чтобы искушать ими Израильтян, всех, которые не знали о всех войнах Ханаанских, -",
+        "NEO": "Voici les nations que \\+w Yahweh|strong=\"H3068\"\\+w** laissa en repos pour éprouver par elles Israël, tous ceux qui n’avaient pas connu toutes les guerres de Canaan,",
+        "NAB": "The following are the nations which the LORD allowed to remain, so that through them he might try all those Israelites who had no experience of the battles with Canaan",
+        "VAT_ES": "El Señor dejo que sobrevivieron algunas naciones, para poner a prueba por medio de ellas a Israel, a todos aquellos que habían intervenido en las guerras de Canaán.",
+        "CEI": "Queste sono le nazioni che il Signore risparmiò allo scopo di mettere alla prova Israele per mezzo loro, cioè quanti non avevano visto le guerre di Cànaan."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "רַ֗ק לְמַ֨עַן֙ דַּ֚עַת דֹּר֣וֹת בְּנֵֽי יִשְׂרָאֵ֔ל לְ/לַמְּדָ֖/ם מִלְחָמָ֑ה רַ֥ק אֲשֶׁר לְ/פָנִ֖ים לֹ֥א יְדָעֽוּ/ם׃",
+        "LXX": "πλὴν διὰ τὰς γενεὰς υἱῶν Ἰσρηὰλ τοῦ διδάξαι αὐτοὺς πόλεμον, πλὴν οἱ ἔμπροθεν αὐτῶν οὐκ ἔγνωσαν αὐτά·",
+        "VUL": "ut postea discerent filii eorum certare cum hostibus, et habere consuetudinem præliandi :",
+        "SYN": "для того только, чтобы знали и учились войне последующие роды сынов Израилевых, которые прежде не знали ее:",
+        "NEO": "et cela uniquement pour l’instruction des générations d’Israël, afin de leur apprendre la guerre, à ceux-là du moins qui ne l’avaient pas connue auparavant.",
+        "NAB": "training them in battle, those generations only of the Israelites who would not have had that previous experience):",
+        "VAT_ES": "Lo hizo solamente para enseñar a combatir a los que no lo habían hecho antes, es decir, a las nuevas generaciones de israelitas.",
+        "CEI": "Ciò avvenne soltanto per l'istruzione delle nuove generazioni degli Israeliti, perché imparassero la guerra, quelli, per lo meno, che prima non l'avevano mai vista:"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "חֲמֵ֣שֶׁת סַרְנֵ֣י פְלִשְׁתִּ֗ים וְ/כָל הַֽ/כְּנַעֲנִי֙ וְ/הַ/צִּ֣ידֹנִ֔י וְ/הַ֣/חִוִּ֔י יֹשֵׁ֖ב הַ֣ר הַ/לְּבָנ֑וֹן מֵ/הַר֙ בַּ֣עַל חֶרְמ֔וֹן עַ֖ד לְב֥וֹא חֲמָֽת׃",
+        "LXX": "τὰς πέντε σατραπίας τῶν ἀλλοφύλων καὶ πάντα τὸν Χαναναῖον καὶ τὸν Σιδώνιον καὶ τὸν Εὑαῖον τὸν κατοικοῦντα τὸν Λίβανον ἀπὸ τοῦ ὄρους τοῦ Ἁερμὼν ἕως Λαβὼ Ἑμάθ.",
+        "VUL": "quinque satrapas Philisthinorum, omnemque Chananæum, et Sidonium, atque Hevæum, qui habitabat in monte Libano, de monte Baal Hermon usque ad introitum Emath.",
+        "SYN": "пять владельцев Филистимских, все Хананеи, Сидоняне и Евеи, живущие на горе Ливане, от горы Ваал-Ермона до входа в Емаф.",
+        "NEO": "Ces nations étaient : les cinq princes des Philistins, tous les Chananéens et les Sidoniens, et les Hévéens qui habitaient la montagne du Liban, depuis la montagne de Baal-Hermon jusqu’à l’entrée de Hamath.",
+        "NAB": "the five lords of the Philistines; and all the Canaanites, the Sidonians, and the Hivites who dwell in the mountain region of Lebanon between Baal-hermon and the entrance to Hamath.",
+        "VAT_ES": "Esas naciones son las siguientes: Los filisteos con sus cinco príncipes y todos los cananeos, los sidonios y los hititas que habitaban en la montaña del Líbano, desde el monte de Baal Hermón hasta la Entrada de Jamat.",
+        "CEI": "i cinque capi dei Filistei, tutti i Cananei, quei di Sidòne e gli Evei, che abitavano le montagne del Libano, dal monte Baal-Ermon fino all'ingresso di Amat."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַֽ/יִּהְי֕וּ לְ/נַסּ֥וֹת בָּ֖/ם אֶת יִשְׂרָאֵ֑ל לָ/דַ֗עַת הֲ/יִשְׁמְעוּ֙ אֶת מִצְוֺ֣ת יְהוָ֔ה אֲשֶׁר צִוָּ֥ה אֶת אֲבוֹתָ֖/ם בְּ/יַד מֹשֶֽׁה׃",
+        "LXX": "καὶ ἐγένετο ὥστε πειράσαι ἐν αὐτοῖς τὸν Ἰσραήλ, γνῶναι εἰ ἀκούσονται τὰς ἐντολὰς Κυρίου ἃς ἐνετείλατο τοῖς πατράσιν αὐτῶν ἐν χειρὶ Μωυσῆ.",
+        "VUL": "Dimisitque eos, ut in ipsis experiretur Israëlem, utrum audiret mandata Domini quæ præceperat patribus eorum per manum Moysi, an non.",
+        "SYN": "Они были _оставлены,_ чтобы искушать ими Израильтян и узнать, повинуются ли они заповедям Господним, которые Он заповедал отцам их чрез Моисея.",
+        "NEO": "Ces peuples devaient servir à mettre Israël à l’épreuve, pour savoir s’ils obéiraient aux commandements que \\+w Yahweh|strong=\"H3068\"\\+w** avait prescrits à leurs pères par Moïse.",
+        "NAB": "These served to put Israel to the test, to determine whether they would obey the commandments the LORD had enjoined on their fathers through Moses.",
+        "VAT_ES": "Estas naciones sirvieron para probar a Israel, y ver si era fiel a los mandamientos que el Señor había dado a sus padres por medio de Moisés.",
+        "CEI": "Queste nazioni servirono a mettere Israele alla prova per vedere se Israele avrebbe obbedito ai comandi, che il Signore aveva dati ai loro padri per mezzo di Mosè."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י יִשְׂרָאֵ֔ל יָשְׁב֖וּ בְּ/קֶ֣רֶב הַֽ/כְּנַעֲנִ֑י הַ/חִתִּ֤י וְ/הָֽ/אֱמֹרִי֙ וְ/הַ/פְּרִזִּ֔י וְ/הַ/חִוִּ֖י וְ/הַ/יְבוּסִֽי׃",
+        "LXX": "καὶ οἱ υἱοὶ Ἰσραὴλ κατῴκησαν ἐν μέσῳ τοῦ Χαναναίου καὶ τοῦ Χετταίου καὶ τοῦ Ἀμορραίου καὶ τοῦ Φερεζαίου καὶ τοῦ Εὑαίου καὶ τοῦ Ἰεβουσαίου·",
+        "VUL": "Itaque filii Israël habitaverunt in medio Chananæi, et Hethæi, et Amorrhæi, et Pherezæi, et Hevæi, et Jebusæi :",
+        "SYN": "И жили сыны Израилевы среди Хананеев, Хеттеев, Аморреев, Ферезеев, Евеев, [Гергесеев] и Иевусеев,",
+        "NEO": "Et les enfants d’Israël habitèrent au milieu des Chananéens, des Hittites, des Amorrhéens, des Phérézéens, des Hévéens et des Jébuséens ;",
+        "NAB": "Besides, the Israelites were living among the Canaanites, Hittites, Amorites, Perizzites, Hivites and Jebusites.",
+        "VAT_ES": "Por eso los israelitas tuvieron que vivir en medio de los cananeos, los hititas, los amorreos, los perizitas, los jivitas y los jebuseos.",
+        "CEI": "Così gli Israeliti abitarono in mezzo ai Cananei, agli Hittiti, agli Amorrèi, ai Perizziti, agli Evei e ai Gebusei;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּקְח֨וּ אֶת בְּנוֹתֵי/הֶ֤ם לָ/הֶם֙ לְ/נָשִׁ֔ים וְ/אֶת בְּנוֹתֵי/הֶ֖ם נָתְנ֣וּ לִ/בְנֵי/הֶ֑ם וַ/יַּעַבְד֖וּ אֶת אֱלֹהֵי/הֶֽם׃",
+        "LXX": "καὶ ἔλαβον τὰς θυγατέρας αὐτῶν ἑαυτοῖς εἰς γυναῖκας, καὶ τὰς θυγατέρας αὐτῶν ἔδωκαν τοῖς υἱοῖς αὐτῶν, καὶ ἐλάτρευσαν τοῖς θεοῖς αὐτῶν.",
+        "VUL": "et duxerunt uxores filias eorum, ipsique filias suas filiis eorum tradiderunt, et servierunt diis eorum.",
+        "SYN": "и брали дочерей их себе в жены, и своих дочерей отдавали за сыновей их, и служили богам их.",
+        "NEO": "ils prirent leurs filles pour femmes, et donnèrent à leurs fils leurs propres filles, et ils servirent leurs dieux.",
+        "NAB": "In fact, they took their daughters in marriage, and gave their own daughters to their sons in marriage, and served their gods.",
+        "VAT_ES": "Ellos se casaron con mujeres de estos pueblos, les dieron por esposas a sus propias hijas, y sirvieron a sus dioses.",
+        "CEI": "presero in mogli le figlie di essi, maritarono le proprie figlie con i loro figli e servirono i loro dei."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲשׂ֨וּ בְנֵי יִשְׂרָאֵ֤ל אֶת הָ/רַע֙ בְּ/עֵינֵ֣י יְהוָ֔ה וַֽ/יִּשְׁכְּח֖וּ אֶת יְהוָ֣ה אֱלֹֽהֵי/הֶ֑ם וַ/יַּעַבְד֥וּ אֶת הַ/בְּעָלִ֖ים וְ/אֶת הָ/אֲשֵׁרֽוֹת׃",
+        "LXX": "Καὶ ἐποίησαν οἱ υἱοὶ Ἰσραὴλ τὸ πονηρὸν ἐναντίον Κυρίου, καὶ ἐπελάθοντο Κυρίου τοῦ θεοῦ αὐτῶν, καὶ ἐλάτρευσαν τοῖς Βααλεὶμ καὶ τοῖς ἄλσεσιν.",
+        "VUL": "Feceruntque malum in conspectu Domini, et obliti sunt Dei sui, servientes Baalim et Astaroth.",
+        "SYN": "И сделали сыны Израилевы злое пред очами Господа, и забыли Господа Бога своего, и служили Ваалам и Астартам.",
+        "NEO": "Les enfants d’Israël firent ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w** ; oubliant \\+w Yahweh|strong=\"H3068\"\\+w**, ils servirent les Baals et les Aschéroth.",
+        "NAB": "Because the Israelites had offended the LORD by forgetting the LORD, their God, and serving the Baals and the Asherahs,",
+        "VAT_ES": "Los israelitas hicieron lo que es malo a los ojos del Señor: se olvidaron del Señor, su Dios, y sirvieron a los Baales y a las Aserás.",
+        "CEI": "Gli Israeliti fecero ciò che è male agli occhi del Signore; dimenticarono il Signore loro Dio e servirono i Baal e le Asere."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּֽחַר אַ֤ף יְהוָה֙ בְּ/יִשְׂרָאֵ֔ל וַֽ/יִּמְכְּרֵ֗/ם בְּ/יַד֙ כּוּשַׁ֣ן רִשְׁעָתַ֔יִם מֶ֖לֶךְ אֲרַ֣ם נַהֲרָ֑יִם וַ/יַּעַבְד֧וּ בְנֵֽי יִשְׂרָאֵ֛ל אֶת כּוּשַׁ֥ן רִשְׁעָתַ֖יִם שְׁמֹנֶ֥ה שָׁנִֽים׃",
+        "LXX": "καὶ ὠργίσθη θυμῷ Κύριος ἐν τῷ Ἰσραήλ, καὶ ἀπέδοτο αὐτοὺς ἐν χειρὶ Χουσαρσαθάιμ βασιλέως ποταμῶν Συρίας. καὶ ἐδούλευσαν οἱ υἱοὶ Ἰσραὴλ τῷ Χουσαρσαθάιμ ἔτη ὀκτώ.",
+        "VUL": "Iratusque contra Israël Dominus, tradidit eos in manus Chusan Rasathaim regis Mesopotamiæ, servieruntque ei octo annis.",
+        "SYN": "И воспылал гнев Господень на Израиля, и предал их в руки Хусарсафема, царя Месопотамского, и служили сыны Израилевы Хусарсафему восемь лет.",
+        "NEO": "La colère de \\+w Yahweh|strong=\"H3068\"\\+w** s’enflamma contre Israël, et il les vendit entre les mains de Chusan-Rasathaïm, roi de Mésopotamie, et les enfants d’Israël furent asservis huit ans à Chusan-Rasathaïm.",
+        "NAB": "the anger of the LORD flared up against them, and he allowed them to fall into the power of Cushan-rishathaim, king of Aram Naharaim, whom they served for eight years.",
+        "VAT_ES": "La ira del Señor se encendió contra Israel, y los entregó a Cusán Riseataim, rey de Edom, a quien estuvieron sometidos durante ocho años.",
+        "CEI": "Perciò l'ira del Signore si accese contro Israele e li mise nelle mani di Cusan-Risataim, re del Paese dei due fiumi; gli Israeliti furono servi di Cusan-Risataim per otto anni."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּזְעֲק֤וּ בְנֵֽי יִשְׂרָאֵל֙ אֶל יְהוָ֔ה וַ/יָּ֨קֶם יְהוָ֥ה מוֹשִׁ֛יעַ לִ/בְנֵ֥י יִשְׂרָאֵ֖ל וַ/יּֽוֹשִׁיעֵ֑/ם אֵ֚ת עָתְנִיאֵ֣ל בֶּן קְנַ֔ז אֲחִ֥י כָלֵ֖ב הַ/קָּטֹ֥ן מִמֶּֽ/נּוּ׃",
+        "LXX": "καὶ ἐκέκραξαν οἱ υἱοὶ Ἰσραὴλ πρὸς Κύριον· καὶ ἤγειρεν Κύριος σωτῆρα τῷ Ἰσραήλ, καὶ ἔσωσεν αὐτούς, τὸν Γοθονιὴλ υἱὸν Κενὲζ ἀδελφοῦ Χαλὲβ τὸν νεώτερον ὑπὲρ αὐτόν.",
+        "VUL": "Et clamaverunt ad Dominum, qui suscitavit eis salvatorem, et liberavit eos, Othoniel videlicet filium Cenez, fratrem Caleb minorem :",
+        "SYN": "Тогда возопили сыны Израилевы к Господу, и воздвигнул Господь спасителя сынам Израилевым, который спас их, Гофониила, сына Кеназа, младшего брата Халевова.",
+        "NEO": "Les enfants d’Israël, crièrent vers \\+w Yahweh|strong=\"H3068\"\\+w**, et \\+w Yahweh|strong=\"H3068\"\\+w** leur suscita un libérateur qui les délivra, Othoniel, fils de Cènez, frère cadet de Caleb.",
+        "NAB": "But when the Israelites cried out to the LORD, he raised up for them a savior, Othniel, son of Caleb's younger brother Kenaz, who rescued them.",
+        "VAT_ES": "Los israelitas clamaron al Señor, y él hizo surgir un salvador que los libró. Este fue Otniel, hijo de Quenaz y hermano menor de Caleb.",
+        "CEI": "Poi gli Israeliti gridarono al Signore, e il Signore suscitò loro un liberatore, Otniel, figlio di Kenaz, fratello minore di Caleb, ed egli li liberò."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/תְּהִ֨י עָלָ֥י/ו רֽוּחַ יְהוָה֮ וַ/יִּשְׁפֹּ֣ט אֶת יִשְׂרָאֵל֒ וַ/יֵּצֵא֙ לַ/מִּלְחָמָ֔ה וַ/יִּתֵּ֤ן יְהוָה֙ בְּ/יָד֔/וֹ אֶת כּוּשַׁ֥ן רִשְׁעָתַ֖יִם מֶ֣לֶךְ אֲרָ֑ם וַ/תָּ֣עָז יָד֔/וֹ עַ֖ל כּוּשַׁ֥ן רִשְׁעָתָֽיִם׃",
+        "LXX": "καὶ ἐγένετο ἐπ’ αὐτὸν πνεῦμα Κυρίου, καὶ ἔκρινεν τὸν Ἰσραήλ. καὶ ἐξῆλθεν εἰς πόλεμον πρὸς Χουσαρσαθάιμ· καὶ παρέδωκεν Κύριος ἐν χειρὶ αὐτοῦ τὸν Χουσαρσαθάιμ βασιλέα Συρίας ποταμῶν, καὶ ἐκραταιώθη χεὶρ αὐτοῦ ἐπὶ τὸν Χουσαρσαθάιμ.",
+        "VUL": "fuitque in eo spiritus Domini, et judicavit Israël. Egressusque est ad pugnam, et tradidit Dominus in manus ejus Chusan Rasathaim regem Syriæ, et oppressit eum.",
+        "SYN": "На нем был Дух Господень, и был он судьею Израиля. Он вышел на войну [против Хусарсафема], и предал Господь в руки его Хусарсафема, царя Месопотамского, и преодолела рука его Хусарсафема.",
+        "NEO": "L’Esprit de \\+w Yahweh|strong=\"H3068\"\\+w** vint sur lui ; il jugea Israël et partit pour la guerre ; \\+w Yahweh|strong=\"H3068\"\\+w** livra entre ses mains Chusan-Rasathaïm, roi de Mésopotamie, et sa main fut puissante contre Chusan-Rasathaïm.",
+        "NAB": "The spirit of the LORD came upon him, and he judged Israel. When he went out to war, the LORD delivered Cushan-risha-thaim, king of Aram, into his power, so that he made him subject.",
+        "VAT_ES": "El espíritu del Señor descendió sobre Otniel: él fue juez en Israel y salió a combatir. El Señor entregó en sus manos a Cusán Riseataim, rey de Edom, y su mano prevaleció sobre él.",
+        "CEI": "Lo spirito del Signore fu su di lui ed egli fu giudice d'Israele; uscì a combattere e il Signore gli diede nelle mani Cusan-Risataim, re di Aram; la sua mano fu potente contro Cusan-Risataim."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/תִּשְׁקֹ֥ט הָ/אָ֖רֶץ אַרְבָּעִ֣ים שָׁנָ֑ה וַ/יָּ֖מָת עָתְנִיאֵ֥ל בֶּן קְנַֽז׃",
+        "LXX": "καὶ ἡσύχασεν ἡ γῆ τεσσεράκοντα ἔτη· καὶ ἀπέθανεν Γοθονιὴν υἱὸς Κενέζ.",
+        "VUL": "Quievitque terra quadraginta annis, et mortuus est Othoniel filius Cenez.",
+        "SYN": "И покоилась земля сорок лет. И умер Гофониил, сын Кеназа.",
+        "NEO": "Le pays fut en repos pendant quarante ans, et Othoniel, fils de Cénez, mourut.",
+        "NAB": "The land then was at rest for forty years, until Othniel, son of Kenaz, died.",
+        "VAT_ES": "Así hubo paz en el país durante cuarenta años. Después murió Otniel, hijo de Quenaz.",
+        "CEI": "Il paese rimase in pace per quarant'anni, poi Otniel, figlio di Kenaz, morì."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּסִ֨פוּ֙ בְּנֵ֣י יִשְׂרָאֵ֔ל לַ/עֲשׂ֥וֹת הָ/רַ֖ע בְּ/עֵינֵ֣י יְהוָ֑ה וַ/יְחַזֵּ֨ק יְהוָ֜ה אֶת עֶגְל֤וֹן מֶֽלֶךְ מוֹאָב֙ עַל יִשְׂרָאֵ֔ל עַ֛ל כִּֽי עָשׂ֥וּ אֶת הָ/רַ֖ע בְּ/עֵינֵ֥י יְהוָֽה׃",
+        "LXX": "Καὶ προσέθεντο οἱ υἱοὶ Ἰσραὴλ ποιῆσαι τὸ πονηρὸν ἐνώπιον Κυρίου· καὶ ἐνίσχυσεν Κύριος τὸν Ἐγλὼν βασιλέα Μωὰβ ἐπὶ τὸν Ἰσραήλ, διὰ τὸ πεποιηκέναι αὐτοὺς τὸ πονηρὸν ἔναντι Κυρίου.",
+        "VUL": "Addiderunt autem filii Israël facere malum in conspectu Domini : qui confortavit adversum eos Eglon regem Moab, quia fecerunt malum in conspectu ejus.",
+        "SYN": "Сыны Израилевы опять стали делать злое пред очами Господа, и укрепил Господь Еглона, царя Моавитского, против Израильтян, за то, что они делали злое пред очами Господа.",
+        "NEO": "Les enfants d’Israël firent de nouveau ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**, et \\+w Yahweh|strong=\"H3068\"\\+w** fortifia Eglon, roi de Moab, contre Israël, parce qu’ils faisaient ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Again the Israelites offended the LORD, who because of this offense strengthened Eglon, king of Moab, against Israel.",
+        "VAT_ES": "Los israelitas volvieron a hacer lo que es malo a los ojos del Señor. Entonces el Señor dio poder a Eglón, rey de Moab, sobre Israel, porque ellos hacían lo que es malo a los ojos del Señor.",
+        "CEI": "Gli Israeliti ripresero a fare ciò che è male agli occhi del Signore; il Signore rese forte Eglon, re di Moab, contro Israele, perché facevano ciò che è male agli occhi del Signore."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֶּאֱסֹ֣ף אֵלָ֔י/ו אֶת בְּנֵ֥י עַמּ֖וֹן וַ/עֲמָלֵ֑ק וַ/יֵּ֗לֶךְ וַ/יַּךְ֙ אֶת יִשְׂרָאֵ֔ל וַ/יִּֽירְשׁ֖וּ אֶת עִ֥יר הַ/תְּמָרִֽים׃",
+        "LXX": "καὶ συνήγαγεν πρὸς ἑαυτὸν πάντας τοὺς υἱοὺς Ἀμμὼν καὶ Ἀμαλήκ, καὶ ἐπορεύθη καὶ ἐπάταξεν τὸν Ἰσραήλ, καὶ ἐκληρονόμησεν τὴν πόλιν τῶν φοινίκων.",
+        "VUL": "Et copulavit ei filios Ammon, et Amalec : abiitque et percussit Israël, atque possedit urbem palmarum.",
+        "SYN": "Он собрал к себе [всех] Аммонитян и Амаликитян, и пошел и поразил Израиля, и овладели они городом Пальм.",
+        "NEO": "Eglon s’adjoignit les fils d’Ammon et Amalec, et il se mit en marche. Il battit Israël, et ils s’emparèrent de la ville des Palmiers.",
+        "NAB": "In alliance with the Ammonites and Amalekites, he attacked and defeated Israel, taking possession of the city of palms.",
+        "VAT_ES": "Después de aliarse con los amonitas y los amalecitas, Eglón atacó y derrotó a Israel, y se apoderó de la ciudad de las Palmeras.",
+        "CEI": "Eglon radunò intorno a sé gli Ammoniti e gli Amaleciti, fece una spedizione contro Israele, lo battè e si impadronì della città delle Palme."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יַּעַבְד֤וּ בְנֵֽי יִשְׂרָאֵל֙ אֶת עֶגְל֣וֹן מֶֽלֶךְ מוֹאָ֔ב שְׁמוֹנֶ֥ה עֶשְׂרֵ֖ה שָׁנָֽה׃",
+        "LXX": "καὶ ἐδούλευσαν οἱ υἱοὶ Ἰσραὴλ τῷ Ἐγλὼμ βασιλεῖ Μωὰβ ἔτη δέκα ὀκτώ.",
+        "VUL": "Servieruntque filii Israël Eglon regi Moab decem et octo annis.",
+        "SYN": "И служили сыны Израилевы Еглону, царю Моавитскому, восемнадцать лет.",
+        "NEO": "Les enfants d’Israël furent asservis dix-huit ans à Eglon, roi de Moab.",
+        "NAB": "The Israelites then served Eglon, king of Moab, for eighteen years.",
+        "VAT_ES": "Así los israelitas estuvieron sometidos a Eglón, rey de Moab, durante dieciocho años.",
+        "CEI": "Gli Israeliti furono schiavi di Eglon, re di Moab, per diciotto anni."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּזְעֲק֣וּ בְנֵֽי יִשְׂרָאֵל֮ אֶל יְהוָה֒ וַ/יָּקֶם֩ יְהוָ֨ה לָ/הֶ֜ם מוֹשִׁ֗יעַ אֶת אֵה֤וּד בֶּן גֵּרָא֙ בֶּן הַ/יְמִינִ֔י אִ֥ישׁ אִטֵּ֖ר יַד יְמִינ֑/וֹ וַ/יִּשְׁלְח֨וּ בְנֵי יִשְׂרָאֵ֤ל בְּ/יָד/וֹ֙ מִנְחָ֔ה לְ/עֶגְל֖וֹן מֶ֥לֶךְ מוֹאָֽב׃",
+        "LXX": "καὶ ἐκέκραξαν οἱ υἱοὶ Ἰσραὴλ πρὸς Κύριον· καὶ ἤγειρεν αὐτοῖς σωτῆρα τὸν Ἀὼδ υἱὸν Γηρὰ υἱὸν τοῦ Ἰεμενεί, ἄνδρα ἀμφοτεροδέξιον. καὶ ἐξαπέστειλαν οἱ υἱοὶ Ἰσραὴλ δῶρα ἐν χειρὶ αὐτοῦ τῷ Ἐγλὼμ βασιλεῖ Μωάβ.",
+        "VUL": "Et postea clamaverunt ad Dominum, qui suscitavit eis salvatorem vocabulo Aod, filium Gera, filii Jemini, qui utraque manu pro dextera utebatur. Miseruntque filii Israël per illum munera Eglon regi Moab.",
+        "SYN": "Тогда возопили сыны Израилевы к Господу, и Господь воздвигнул им спасителя Аода, сына Геры, сына Иеминиева, который был левша. И послали сыны Израилевы с ним дары Еглону, царю Моавитскому.",
+        "NEO": "Les enfants d’Israël crièrent vers \\+w Yahweh|strong=\"H3068\"\\+w**, et \\+w Yahweh|strong=\"H3068\"\\+w** leur suscita un libérateur, Aod, fils de Géra, Benjamite, qui ne se servait pas de la main droite. Les enfants d’Israël envoyèrent par lui un présent à Eglon, roi de Moab.",
+        "NAB": "But when the Israelites cried out to the LORD, he raised up for them a savior, the Benjaminite Ehud, son of Gera, who was left-handed. It was by him that the Israelites sent their tribute to Eglon, king of Moab.",
+        "VAT_ES": "Los israelitas clamaron al Señor, y él hizo surgir como salvador a Ehúd, hijo de Guerá, de la tribu de Benjamín, que era zurdo. Ellos le encargaron que llevara el tributo a Eglón, rey de Moab.",
+        "CEI": "Poi gridarono al Signore ed egli suscitò loro un liberatore, Eud, figlio di Ghera, Beniaminita, che era mancino. Gli Israeliti mandarono per mezzo di lui un tributo a Eglon re di Moab."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יַּעַשׂ֩ ל֨/וֹ אֵה֜וּד חֶ֗רֶב וְ/לָ֛/הּ שְׁנֵ֥י פֵי֖וֹת גֹּ֣מֶד אָרְכָּ֑/הּ וַ/יַּחְגֹּ֤ר אוֹתָ/הּ֙ מִ/תַּ֣חַת לְ/מַדָּ֔י/ו עַ֖ל יֶ֥רֶךְ יְמִינֽ/וֹ׃",
+        "LXX": "καὶ ἐποίησεν ἑαυτῷ Ἀὼδ μάχαιραν δίστομον, σπιθαμῆς τὸ μῆκος αὐτῆς, καὶ περιεζώσατο αὐτὴν ὑπὸ τὸν μανδύαν ἐπὶ τὸν μηρὸν τὸν δεξιὸν αὐτοῦ.",
+        "VUL": "Qui fecit sibi gladium ancipitem, habentem in medio capulum longitudinis palmæ manus, et accinctus est eo subter sagum in dextro femore.",
+        "SYN": "Аод сделал себе меч с двумя остриями, длиною в локоть, и припоясал его под плащом своим к правому бедру,",
+        "NEO": "Aod se fit une épée à deux tranchants, longue d’une coudée, et il la ceignit sous ses vêtements, sur sa hanche droite.",
+        "NAB": "Ehud made himself a two-edged dagger a foot long, and wore it under his clothes over his right thigh.",
+        "VAT_ES": "Ehúd se hizo un puñal de doble filo, que ciñó debajo de la ropa, sobre el lado derecho.",
+        "CEI": "Eud si fece una spada a due tagli, lunga un gomed, e se la cinse sotto la veste, al fianco destro."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יַּקְרֵב֙ אֶת הַ/מִּנְחָ֔ה לְ/עֶגְל֖וֹן מֶ֣לֶךְ מוֹאָ֑ב וְ/עֶגְל֕וֹן אִ֥ישׁ בָּרִ֖יא מְאֹֽד׃",
+        "LXX": "καὶ ἐπορεύθη καὶ προσήνεγκεν τὰ δῶρα Ἐγλὼμ βασιλεῖ Μωάβ· καὶ Ἐγλὼμ ἀνὴρ ἀστεῖος σφόδρα.",
+        "VUL": "Obtulitque munera Eglon regi Moab. Erat autem Eglon crassus nimis.",
+        "SYN": "[и пришел,] и поднес дары Еглону, царю Моавитскому; Еглон же был человек очень тучный.",
+        "NEO": "Il offrit le Présent à Eglon. roi de Moab ; or Eglon était un homme très gras.",
+        "NAB": "He presented the tribute to Eglon, king of Moab, who was very fat,",
+        "VAT_ES": "Luego fue a presentar el tributo a Eglón, rey de Moab, que era un hombre muy obeso.",
+        "CEI": "Poi presentò il tributo a Eglon, re di Moab, che era uomo molto grasso."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ כַּ/אֲשֶׁ֣ר כִּלָּ֔ה לְ/הַקְרִ֖יב אֶת הַ/מִּנְחָ֑ה וַ/יְשַׁלַּח֙ אֶת הָ/עָ֔ם נֹשְׂאֵ֖י הַ/מִּנְחָֽה׃",
+        "LXX": "καὶ ἐγένετο ἡνίκα συνετέλεσεν Ἀὼδ προσφέρων τὰ δῶρα, καὶ ἐξαπέστειλεν τοὺς φέροντας τὰ δῶρα·",
+        "VUL": "Cumque obtulisset ei munera, prosecutus est socios, qui cum eo venerant.",
+        "SYN": "Когда поднес _Аод_ все дары и проводил людей, принесших дары,",
+        "NEO": "Lorsqu’il eut achevé d’offrir le présent, il renvoya les gens qui avaient apporté le présent.",
+        "NAB": "and after the presentation went off with the tribute bearers.",
+        "VAT_ES": "Apenas terminó de presentar el tributo, Ehúd despidió a la gente que había transportado la carga,",
+        "CEI": "Finita la presentazione del tributo, ripartì con la gente che l'aveva portato."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/ה֣וּא שָׁ֗ב מִן הַ/פְּסִילִים֙ אֲשֶׁ֣ר אֶת הַ/גִּלְגָּ֔ל וַ/יֹּ֕אמֶר דְּבַר סֵ֥תֶר לִ֛/י אֵלֶ֖י/ךָ הַ/מֶּ֑לֶךְ וַ/יֹּ֣אמֶר הָ֔ס וַ/יֵּֽצְאוּ֙ מֵֽ/עָלָ֔י/ו כָּל הָ/עֹמְדִ֖ים עָלָֽי/ו׃",
+        "LXX": "καὶ αὐτὸς ὑπέστρεψεν ἀπὸ τῶν γλυπτῶν τῶν μετὰ τῆς Γαλγάλ, καὶ εἶπεν Ἀώδ Λόγος μοι κρύφιος πρὸς σέ, βασιλεῦ. καὶ εἶπεν Ἐγλὼμ πρὸς αὐτόν Σιώπα· καὶ ἐξαπέστειλεν ἀφ’ ἑαυτοῦ πάντας τοὺς ἐφεστῶτας ἐπ’ αὐτόν.",
+        "VUL": "Et reversus de Galgalis, ubi erant idola, dixit ad regem : Verbum secretum habeo ad te, o rex. Et ille imperavit silentium : egressisque omnibus qui circa eum erant,",
+        "SYN": "то сам возвратился от истуканов, которые в Галгале, и сказал: у меня есть тайное слово до тебя, царь. Он сказал: тише! И вышли от него все стоявшие при нем.",
+        "NEO": "Et lui-même revint depuis les idoles qui sont près de Galgala, et il dit : « O roi, j’ai quelque chose de secret à te dire. » Le roi dit : « Silence ! » Et tous ceux qui étaient auprès de lui sortirent.",
+        "NAB": "He returned, however, from where the idols are, near Gilgal, and said, \"I have a private message for you, O king.\" And the king said, \"Silence!\" Then when all his attendants had left his presence,",
+        "VAT_ES": "y él, al llegar a los ídolos que están junto a Guilgal, volvió a presentarse delante del rey y le dijo: «Rey, tengo que comunicarte un asunto confidencial». El rey dijo: «Retírense todos». Y todos los que estaban con él salieron de su presencia.",
+        "CEI": "Ma egli, dal luogo detto Idoli, che è presso Gàlgala, tornò indietro e disse: \"O re, ho una cosa da dirti in segreto\". Il re disse: \"Silenzio!\" e quanti stavano con lui uscirono."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/אֵה֣וּד בָּ֣א אֵלָ֗י/ו וְ/הֽוּא יֹ֠שֵׁב בַּ/עֲלִיַּ֨ת הַ/מְּקֵרָ֤ה אֲשֶׁר ל/וֹ֙ לְ/בַדּ֔/וֹ וַ/יֹּ֣אמֶר אֵה֔וּד דְּבַר אֱלֹהִ֥ים לִ֖/י אֵלֶ֑י/ךָ וַ/יָּ֖קָם מֵ/עַ֥ל הַ/כִּסֵּֽא׃",
+        "LXX": "καὶ Ἀὼδ εἰσῆλθεν πρὸς αὐτόν· καὶ αὐτὸς ἐκάθητο ἐν τῷ ὑπερῴῳ τῷ θερινῷ τῷ ἑαυτοῦ μονώτατος. καὶ εἶπεν Ἀώδ Λόγος θεοῦ μοι πρὸς σέ, βασιλεῦ. καὶ ἐξανέστη ἀπὸ τοῦ θρόνου Ἐγλὼμ ἐγγὺς αὐτοῦ.",
+        "VUL": "ingressus est Aod ad eum : sedebat autem in æstivo cnaculo solus : dixitque : Verbum Dei habeo ad te. Qui statim surrexit de throno.",
+        "SYN": "Аод вошел к нему: он сидел в прохладной горнице, которая была у него отдельно. И сказал Аод: у меня есть до тебя, [царь,] слово Божие. [Еглон] встал со стула [пред ним].",
+        "NEO": "Aod l’aborda comme il était assis seul dans sa chambre d’été, et il dit : « J’ai pour toi une parole de Dieu. » Eglon se leva de son siège.",
+        "NAB": "and Ehud went in to him where he sat alone in his cool upper room, Ehud said, \"I have a message from God for you.\" So the king rose from his chair,",
+        "VAT_ES": "Cuando entró Ehúd, el rey se encontraba en la habitación de arriba, que era más fresca y estaba reservada para él solo. Ehúd le dijo: «Tengo que comunicarte un oráculo divino». El rey se levantó de su trono.",
+        "CEI": "Allora Eud si accostò al re che stava seduto nel piano di sopra, riservato a lui solo, per la frescura, e gli disse: \"Ho una parola da dirti da parte di Dio\". Quegli si alzò dal suo seggio."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח אֵהוּד֙ אֶת יַ֣ד שְׂמֹאל֔/וֹ וַ/יִּקַּח֙ אֶת הַ/חֶ֔רֶב מֵ/עַ֖ל יֶ֣רֶךְ יְמִינ֑/וֹ וַ/יִּתְקָעֶ֖/הָ בְּ/בִטְנֽ/וֹ׃",
+        "LXX": "καὶ ἐγένετο ἅμα τῷ ἀναστῆναι αὐτόν, καὶ ἐξέτεινεν Ἀὼδ τὴν χεῖρα τὴν ἀριστερὰν αὐτοῦ καὶ ἔλαβεν τὴν μάχαιραν ἐπάνωθεν τοῦ μηροῦ αὐτοῦ τοῦ δεξιοῦ καὶ ἐνέπηξεν αὐτὴν ἐν τῇ κοιλίᾳ αὐτοῦ,",
+        "VUL": "Extenditque Aod sinistram manum, et tulit sicam de dextro femore suo, infixitque eam in ventre ejus",
+        "SYN": "[Когда он встал,] Аод простер левую руку свою и взял меч с правого бедра своего и вонзил его в чрево его,",
+        "NEO": "Alors Aod, avançant la main gauche, tira l’épée qui était sur sa hanche droite, et la lui enfonça dans le ventre.",
+        "NAB": "and then Ehud with his left hand drew the dagger from his right thigh, and thrust it into Eglon's belly.",
+        "VAT_ES": "Entonces Ehúd extendió su mano izquierda, tomó el puñal que llevaba sobre el lado derecho, y lo clavó en el vientre del rey.",
+        "CEI": "Allora Eud, allungata la mano sinistra, trasse la spada dal suo fianco e gliela piantò nel ventre."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֨א גַֽם הַ/נִּצָּ֜ב אַחַ֣ר הַ/לַּ֗הַב וַ/יִּסְגֹּ֤ר הַ/חֵ֨לֶב֙ בְּעַ֣ד הַ/לַּ֔הַב כִּ֣י לֹ֥א שָׁלַ֛ף הַ/חֶ֖רֶב מִ/בִּטְנ֑/וֹ וַ/יֵּצֵ֖א הַֽ/פַּרְשְׁדֹֽנָ/ה׃",
+        "LXX": "καὶ ἐπεισήνεγκεν καί γε τὴν λαβὴν ὀπίσω τῆς φλογός· καὶ ἀπέκλεισεν τὸ στέαρ κατὰ τῆς φλογός, ὅτι οὐκ ἐξέσπασεν τὴν μάχαιραν ἐκ τῆς κοιλίας αὐτοῦ.",
+        "VUL": "tam valide, ut capulus sequeretur ferrum in vulnere, ac pinguissimo adipe stringeretur. Nec eduxit gladium, sed ita ut percusserat, reliquit in corpore : statimque per secreta naturæ alvi stercora proruperunt.",
+        "SYN": "так что вошла за острием и рукоять, и тук закрыл острие, ибо Аод не вынул меча из чрева его, и он прошел в задние части.",
+        "NEO": "La poignée même entra après la lame, et la graisse se referma sur la lame ; car il ne retira pas l’épée de son ventre, et la lame sortit par derrière.",
+        "NAB": "The hilt also went in after the blade, and the fat closed over the blade because he did not withdraw the dagger from his body.",
+        "VAT_ES": "La hoja se hundió hasta le empuñadura y quedó totalmente cubierta por la grasa, porque Ehúd no extrajo el puñal del vientre.",
+        "CEI": "Anche l'elsa entrò con la lama; il grasso si rinchiuse intorno alla lama, perciò egli uscì subito dalla finestra, senza estrargli la spada dal ventre."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֥א אֵה֖וּד הַֽ/מִּסְדְּר֑וֹנָ/ה וַ/יִּסְגֹּ֞ר דַּלְת֧וֹת הָ/עַלִיָּ֛ה בַּעֲד֖/וֹ וְ/נָעָֽל׃",
+        "LXX": "καὶ ἐξῆλθεν Ἀὼδ τὴν προστάδα, καὶ ἐξῆλθεν τοὺς διατεταγμένους, καὶ ἀπέκλεισεν τὰς θύρας τοῦ ὑπερῴου κατ’ αὐτοῦ, καὶ ἐσφήνωσεν.",
+        "VUL": "Aod autem clausis diligentissime ostiis cnaculi, et obfirmatis sera,",
+        "SYN": "И вышел Аод в преддверие, и затворил за собою двери горницы, и замкнул.",
+        "NEO": "Aod sortit par l’escalier extérieur, ferma sur Eglon les portes de la chambre haute et tira le verrou.",
+        "NAB": "Then Ehud went out into the hall, shutting the doors of the upper room on him and locking them.",
+        "VAT_ES": "Después de atrancar las puertas de la habitación alta, Ehúd salió por la ventana.",
+        "CEI": "Eud uscì nel portico, dopo aver chiuso i battenti del piano di sopra e aver tirato il chiavistello."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/ה֤וּא יָצָא֙ וַ/עֲבָדָ֣י/ו בָּ֔אוּ וַ/יִּרְא֕וּ וְ/הִנֵּ֛ה דַּלְת֥וֹת הָ/עֲלִיָּ֖ה נְעֻל֑וֹת וַ/יֹּ֣אמְר֔וּ אַ֣ךְ מֵסִ֥יךְ ה֛וּא אֶת רַגְלָ֖י/ו בַּ/חֲדַ֥ר הַ/מְּקֵרָֽה׃",
+        "LXX": "καὶ αὐτὸς ἐξῆλθεν· καὶ οἱ παῖδες αὐτοῦ ἐπῆλθον καὶ εἶδον, καὶ ἰδοὺ αἱ θύραι τοῦ ὑπερῴου ἐσφηνωμέναι· καὶ εἶπαν Μή ποτε ἀποκενοῖ τοὺς πόδας αὐτοῦ ἐν τῷ ταμείῳ τῷ θερινῷ;",
+        "VUL": "per posticum egressus est. Servique regis ingressi viderunt clausas fores cnaculi, atque dixerunt : Forsitan purgat alvum in æstivo cubiculo.",
+        "SYN": "Когда он вышел, рабы _Еглона_ пришли и видят, вот, двери горницы замкнуты, и говорят: верно он для нужды в прохладной комнате.",
+        "NEO": "Quand il fut sorti, les serviteurs du roi vinrent et regardèrent ; et voici que les portes de la chambre haute étaient fermées au verrou. Ils dirent : « Sans doute il se couvre les pieds dans la chambre d’été. »",
+        "NAB": "When Ehud had left and the servants came, they saw that the doors of the upper room were locked, and thought, \"He must be easing himself in the cool chamber.\"",
+        "VAT_ES": "En seguida, llegaron los servidores y vieron que las puertas de la habitación alta estaban atrancadas. Entonces dijeron: «Seguramente está haciendo sus necesidades en la habitación ventilada».",
+        "CEI": "Quando fu uscito, vennero i servi, i quali guardarono e videro che i battenti del piano di sopra erano sprangati; dissero: \"Certo attende ai suoi bisogni nel camerino della stanza fresca\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יָּחִ֣ילוּ עַד בּ֔וֹשׁ וְ/הְנֵּ֛ה אֵינֶ֥/נּוּ פֹתֵ֖חַ דַּלְת֣וֹת הָֽ/עֲלִיָּ֑ה וַ/יִּקְח֤וּ אֶת הַ/מַּפְתֵּ֨חַ֙ וַ/יִּפְתָּ֔חוּ וְ/הִנֵּה֙ אֲדֹ֣נֵי/הֶ֔ם נֹפֵ֥ל אַ֖רְצָ/ה מֵֽת׃",
+        "LXX": "καὶ ὑπέμειναν ἕως ᾐσχύνοντο. καὶ ἰδοὺ οὐκ ἔστιν ὁ ἀνοίγων τὰς θύρας τοῦ ὑπερῴου· καὶ ἔλαβον τὴν κλεῖδα καὶ ἤνοιξαν, καὶ ἰδοὺ ὁ κύριος αὐτῶν πεπτωκὼς ἐπὶ τὴν γῆν τεθνηκώς.",
+        "VUL": "Expectantesque diu donec erubescerent, et videntes quod nullus aperiret, tulerunt clavem : et aperientes invenerunt dominum suum in terra jacentem mortuum.",
+        "SYN": "Ждали довольно долго, но видя, что никто не отпирает дверей горницы, взяли ключ и отперли, и вот, господин их лежит на земле мертвый.",
+        "NEO": "Ils attendirent longtemps jusqu’à en avoir honte, et, comme il n’ouvrait pas les portes de la chambre haute, ils prirent la clef et ouvrirent ; et voici que leur maître gisait par terre, sans vie.",
+        "NAB": "They waited until they finally grew suspicious. Since he did not open the doors of the upper room, they took the key and opened them. There on the floor, dead, lay their lord!",
+        "VAT_ES": "Esperaron hasta cansarse y al ver que no abría la puerta, tomaron la llave, abrieron y encontraron a su señor muerto en el suelo.",
+        "CEI": "Aspettarono fino ad essere inquieti, ma quegli non apriva i battenti del piano di sopra. Allora presero la chiave, aprirono ed ecco il loro signore era steso per terra, morto."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/אֵה֥וּד נִמְלַ֖ט עַ֣ד הִֽתְמַהְמְהָ֑/ם וְ/הוּא֙ עָבַ֣ר אֶת הַ/פְּסִילִ֔ים וַ/יִּמָּלֵ֖ט הַ/שְּׂעִירָֽתָ/ה׃",
+        "LXX": "καὶ Ἀὼδ διεσώθη ἕως ἐθορυβοῦντο, καὶ οὐκ ἦν ὁ προσνοῶν αὐτῷ· καὶ αὐτὸς παρῆλθεν τὰ γλυπτὰ καὶ διεσώθη εἰς Σετειρῶθα.",
+        "VUL": "Aod autem, dum illi turbarentur, effugit, et pertransiit locum idolorum, unde reversus fuerat. Venitque in Seirath :",
+        "SYN": "Пока они недоумевали, Аод между тем ушел, [и никто о нем не думал,] прошел мимо истуканов и спасся в Сеираф.",
+        "NEO": "Pendant leurs délais, Aod prit la fuite, dépassa les idoles et se sauva à Séïrath.",
+        "NAB": "During their delay Ehud made good his escape and, passing the idols, took refuge in Seirah.",
+        "VAT_ES": "Mientras ellos esperaban ansiosamente, Ehúd había logrado escapar: después de pasar por el lugar llamado los Idolos, se había puesto a salvo en Seirá.",
+        "CEI": "Mentre essi indugiavano, Eud era fuggito e, dopo aver oltrepassato gli Idoli, si era messo in salvo nella Seira."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י בְּ/בוֹא֔/וֹ וַ/יִּתְקַ֥ע בַּ/שּׁוֹפָ֖ר בְּ/הַ֣ר אֶפְרָ֑יִם וַ/יֵּרְד֨וּ עִמּ֧/וֹ בְנֵֽי יִשְׂרָאֵ֛ל מִן הָ/הָ֖ר וְ/ה֥וּא לִ/פְנֵי/הֶֽם׃",
+        "LXX": "καὶ ἐγένετο ἡνὶκα ἦλθεν Ἀὼδ εἰς γῆν Ἰσραήλ, καὶ ἐσάλπισεν ἐν κερατίνῃ ἐν τῷ ὄρει Ἐφράιμ· καὶ κατέβησαν σὺν αὐτῷ οἱ υἱοὶ Ἰσραὴλ ἀπὸ τοῦ ὄρους, καὶ αὐτὸς ἔμπροσθεν αὐτῶν.",
+        "VUL": "et statim insonuit buccina in monte Ephraim, descenderuntque cum eo filii Israël, ipso in fronte gradiente.",
+        "SYN": "Придя же [в землю Израилеву, Аод] вострубил трубою на горе Ефремовой, и сошли с ним сыны Израилевы с горы, и он _шел_ впереди их.",
+        "NEO": "Aussitôt arrivé, il sonna de la trompette dans la montagne d’Ephraïm. Les enfants d’Israël descendirent avec lui de la montagne, et il se mit à leur tête.",
+        "NAB": "On his arrival he sounded the horn in the mountain region of Ephraim, and the Israelites went down from the mountains with him as their leader.",
+        "VAT_ES": "Apenas llegó al territorio de Israel, tocó el cuerno en la montaña de Efraím y los israelitas bajaron de la montaña junto con él. Ehúd iba al frente,",
+        "CEI": "Appena arrivato là, suonò la tromba sulle montagne di Efraim e gli Israeliti scesero con lui dalle montagne ed egli si mise alla loro testa."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֲלֵ/הֶם֙ רִדְפ֣וּ אַחֲרַ֔/י כִּֽי נָתַ֨ן יְהוָ֧ה אֶת אֹיְבֵי/כֶ֛ם אֶת מוֹאָ֖ב בְּ/יֶדְ/כֶ֑ם וַ/יֵּרְד֣וּ אַחֲרָ֗י/ו וַֽ/יִּלְכְּד֞וּ אֶת מַעְבְּר֤וֹת הַ/יַּרְדֵּן֙ לְ/מוֹאָ֔ב וְ/לֹֽא נָתְנ֥וּ אִ֖ישׁ לַ/עֲבֹֽר׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτούς Κατάβητε ὀπίσω μου, ὅτι παρέδωκεν Κύριος ὁ θεὸς τοὺς ἐχθροὺς ἡμῶν, τὴν Μωάβ, ἐν χειρὶ ἡμῶν. καὶ κατέβησαν ὀπίσω αὐτοῦ, καὶ προκατελάβοντο τὰς διαβάσεις τοῦ Ἰσρδάνου τῆς Μωάβ, καὶ οὐκ ἀφῆκεν ἄνδρα διαβῆναι.",
+        "VUL": "Qui dixit ad eos : Sequimini me : tradidit enim Dominus inimicos nostros Moabitas in manus nostras. Descenderuntque post eum, et occupaverunt vada Jordanis quæ transmittunt in Moab : et non dimiserunt transire quemquam :",
+        "SYN": "И сказал им: идите за мною, ибо предал Господь [Бог] врагов ваших Моавитян в руки ваши. И пошли за ним, и перехватили переправу через Иордан к Моаву, и не давали никому переходить.",
+        "NEO": "Il leur dit : « Suivez-moi ! car \\+w Yahweh|strong=\"H3068\"\\+w** a livré entre vos mains vos ennemis, les Moabites. » Ils descendirent à sa suite, s’emparèrent des gués du Jourdain vis-à-vis de Moab, et ne laissèrent passer personne.",
+        "NAB": "\"Follow me,\" he said to them, \"for the LORD has delivered your enemies the Moabites into your power.\" So they followed him down and seized the fords of the Jordan leading to Moab, permitting no one to cross.",
+        "VAT_ES": "y les dijo: «Síganme, porque el Señor les ha entregado a Moab, el enemigo de ustedes». Ellos lo siguieron, ocuparon los vados del Jordán que estaban en Moab, y no dejaron pasar a nadie.",
+        "CEI": "Disse loro: \"Seguitemi, perché il Signore vi ha messo nelle mani i Moabiti, vostri nemici\". Quelli scesero dopo di lui, si impadronirono dei guadi del Giordano, per impedirne il passo ai Moabiti, e non lasciarono passare nessuno."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יַּכּ֨וּ אֶת מוֹאָ֜ב בָּ/עֵ֣ת הַ/הִ֗יא כַּ/עֲשֶׂ֤רֶת אֲלָפִים֙ אִ֔ישׁ כָּל שָׁמֵ֖ן וְ/כָל אִ֣ישׁ חָ֑יִל וְ/לֹ֥א נִמְלַ֖ט אִֽישׁ׃",
+        "LXX": "καὶ ἐπάταξαν τὴν Μωὰβ ἐν τῇ ἡμέρᾳ ἐκείνῃ ὡσεὶ δέκα χιλιάδας ἀνδρῶν, πᾶν λιπαρὸν καὶ πάντα ἄνδρα δυνάμεως, καὶ οὐ διεσώθη ὁ ἀνήρ.",
+        "VUL": "sed percusserunt Moabitas in tempore illo, circiter decem millia, omnes robustos et fortes viros. Nullus eorum evadere potuit.",
+        "SYN": "И побили в то время Моавитян около десяти тысяч человек, всё здоровых и сильных, и никто не убежал.",
+        "NEO": "Ils battirent Moab en ce temps-là, environ dix mille hommes, tous robustes et tous vaillants, et pas un n’échappa.",
+        "NAB": "On that occasion they slew about ten thousand Moabites, all of them strong and valiant men. Not a man escaped.",
+        "VAT_ES": "En aquella ocasión derrotaron a los moabitas, que eran cerca de diez mil hombres, todos fuertes y aguerridos. No pudo escapar ni uno solo.",
+        "CEI": "In quella circostanza sconfissero circa diecimila Moabiti, tutti robusti e valorosi; non ne scampò neppure uno."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/תִּכָּנַ֤ע מוֹאָב֙ בַּ/יּ֣וֹם הַ/ה֔וּא תַּ֖חַת יַ֣ד יִשְׂרָאֵ֑ל וַ/תִּשְׁקֹ֥ט הָ/אָ֖רֶץ שְׁמוֹנִ֥ים שָׁנָֽה׃",
+        "LXX": "καὶ ἐνετράπη Μωὰβ ἐν τῇ ἡμέρᾳ ἐκείνῃ ὑπὸ χεῖρα Ἰσραήλ, καὶ ἡσύχασεν ἡ γῆ ὀγδοήκοντα ἔτη· καὶ ἔκρινεν αὐτοὺς Ἀὼδ ἕως οὗ ἀπέθανεν.",
+        "VUL": "Humiliatusque est Moab in die illo sub manu Israël : et quievit terra octoginta annis.",
+        "SYN": "Так смирились в тот день Моавитяне пред Израилем, и покоилась земля восемьдесят лет. [И был Аод судьею их до самой смерти.]",
+        "NEO": "En ce jour, Moab fut humilié sous la main d’Israël, et le pays fut en repos pendant quatre-vingt ans.",
+        "NAB": "Thus was Moab brought under the power of Israel at that time; and the land had rest for eighty years.",
+        "VAT_ES": "Así fue humillado Moab bajo la mano de Israel, y hubo paz en el país durante ochenta años.",
+        "CEI": "Così in quel giorno Moab fu umiliato sotto la mano d'Israele e il paese rimase tranquillo per ottant'anni."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/אַחֲרָ֤י/ו הָיָה֙ שַׁמְגַּ֣ר בֶּן עֲנָ֔ת וַ/יַּ֤ךְ אֶת פְּלִשְׁתִּים֙ שֵֽׁשׁ מֵא֣וֹת אִ֔ישׁ בְּ/מַלְמַ֖ד הַ/בָּקָ֑ר וַ/יֹּ֥שַׁע גַּם ה֖וּא אֶת יִשְׂרָאֵֽל׃",
+        "LXX": "Καὶ μετ’ αὐτὸν ἀνέστη Σαμαγὰρ υἱὸς Δεινάχ, καὶ ἐπάταξεν τοὺς ἀλλοφύλους εἰς χ’ ἄυδρας ἐν τῷ ἀροτρόποδι τῶν βοῶν, καὶ ἔσωσεν καί γε αὐτὸς τὸν Ἰσραήλ.",
+        "VUL": "Post hunc fuit Samgar filius Anath, qui percussit de Philisthiim sexcentos viros vomere : et ipse quoque defendit Israël.",
+        "SYN": "После него был Самегар, сын Анафов, который шестьсот человек Филистимлян побил воловьим рожном; и он также спас Израиля.",
+        "NEO": "Après lui, il y eut Samgar, fils d’Anath, qui battit six cents hommes des Philistins avec un aiguillon à bœufs ; lui aussi fut un libérateur d’Israël.",
+        "NAB": "After him there was Shamgar, son of Anath, who slew six hundred Philistines with an oxgoad. He, too, rescued Israel.",
+        "VAT_ES": "Después de él vino Samgar, hijo de Anat, que derrotó a seiscientos filisteos con una picana de bueyes. El también salvó a Israel.",
+        "CEI": "Dopo di lui ci fu Samgar figlio di Anat. Egli sconfisse seicento Filistei con un pungolo da buoi; anch'egli salvò Israele."
+      }
+    }
+  }
+}

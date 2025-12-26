@@ -1,0 +1,321 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_012",
+  "book_key": "ECCLU",
+  "sequence": 12,
+  "chapter_in": {
+    "MT": 12,
+    "VUL": 12,
+    "LXX": 12
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "ἐὰν εὖ ποιῇς, γνῶθι τίνι ποιεῖς, καὶ ἔσται χάρις τοῖς ἀγαθοῖς σου.",
+        "VUL": "[Si benefeceris, scito cui feceris,/ et erit gratia in bonis tuis multa./",
+        "SYN": "Если ты делаешь добро, знай, кому делаешь, и будет благодарность за твои благодеяния.",
+        "NEO": "Si tu fais du bien, sache à qui tu le fais, et l’on te saura gré de tes bienfaits.",
+        "NAB": "If you do good, know for whom you are doing it, and your kindness will have its effect.",
+        "VAT_ES": "Si haces el bien, mira a quién lo haces, y te darán las gracias por tus beneficios.",
+        "CEI": "Se fai il bene, sappi a chi lo fai; così avrai una ricompensa per i tuoi benefici."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "εὖ ποίησον εὐσεβεῖ, καὶ εὑρήσεις ἀνταπόδομα, καὶ εἰ μὴ παρὰ αὐτοῦ, ἀλλὰ παρὰ Ὑψίστου.",
+        "VUL": "Benefac justo, et invenies retributionem magnam :/ et si non ab ipso, certe a Domino./",
+        "SYN": "Делай добро благочестивому, и получишь воздаяние, и если не от него, то от Всевышнего.",
+        "NEO": "Fais du bien à l’homme pieux, et tu en trouveras la récompense, sinon de lui, du moins du Seigneur.",
+        "NAB": "Do good to the just man and reward will be yours, if not from him, from the LORD.",
+        "VAT_ES": "Haz el bien al hombre bueno, y tendrás tu recompensa, si no de él, ciertamente del Altísimo.",
+        "CEI": "Fà il bene al pio e ne avrai il contraccambio, se non da lui, certo dall'Altissimo."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "οὐκ ἔστιν ἀγαθὰ τῷ ἐνδελεχίζοντι εἰς κακὰ καὶ τῷ ἐλεημοσύνην μὴ χαριζομένῳ.",
+        "VUL": "Non est enim ei bene qui assiduus est in malis,/ et eleemosynas non danti :/ quoniam et Altissimus odio habet peccatores,/ et misertus est pnitentibus./",
+        "SYN": "Нет добра для того, кто постоянно занимается злом и кто не подает милостыни.",
+        "NEO": "Les bienfaits ne sont pas pour celui qui persévère dans le mal, ni pour celui qui ne pratique pas la bienfaisance.",
+        "NAB": "No good comes to him who gives comfort to the wicked, nor is it an act of mercy that he does.",
+        "VAT_ES": "No recibe bienes el que persiste en el mal y el que no agradece la limosna.",
+        "CEI": "Nessun beneficio a chi si ostina nel male né a chi rifiuta di fare l'elemosina."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "δὸς τῷ εὐσεβεῖ, καὶ μὴ ἀντιλάβῃ τοῦ ἁμαρτωλοῦ.",
+        "VUL": "Da misericordi, et ne suscipias peccatorem :/ et impiis et peccatoribus reddet vindictam,/ custodiens eos in diem vindictæ./",
+        "SYN": "Давай благочестивому, и не помогай грешнику.",
+        "NEO": "Donne à l’homme pieux, et n’assiste pas le pécheur.",
+        "NAB": "Give to the good man, refuse the sinner; refresh the downtrodden, give nothing to the proud man.",
+        "VAT_ES": "Da al hombre bueno, pero no ayudes al pecador.",
+        "CEI": "Dà al pio e non aiutare il peccatore."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "εὖ ποίησον τῷ ταπεινῷ καὶ μὴ δῷς ἀσεβεῖ· ἐμπόδισον τοὺς ἄρτους αὐτοῦ καὶ μὴ δῷς αὐτῷ, ἵνα μὴ ἐν αὐτοῖς σε δυναστεύσῃ· διπλάσια γὰρ κακὰ εὑρήσεις ἐν πᾶσιν ἀγαθοῖς οἷς ἂν ποιήσῃς αὐτῷ.",
+        "VUL": "Da bono, et non receperis peccatorem./",
+        "SYN": "Делай добро смиренному, и не давай нечестивому: запирай от него хлеб и не давай ему, чтобы он чрез то не превозмог тебя;",
+        "NEO": "Fais du bien à celui qui est humilié, et ne donne pas à l’impie ; refuse-lui du pain, et ne lui en donne pas, de peur qu’il ne devienne par là plus fort que toi ; car tu recueilleras un double mal de tout le bien que tu lui auras fait.",
+        "NAB": "No arms for combat should you give him, lest he use them against yourself;",
+        "VAT_ES": "Sé bueno con el humilde, pero no des el impío: rehúsale su pan, no se lo des, no sea que así llegue a dominarte, y entonces recibirás un doble mal por todo el bien que le hayas hecho.",
+        "CEI": "Benefica il misero e non dare all'empio, impedisci che gli diano il pane e tu non dargliene, perché egli non ne usi per dominarti; difatti tu riceverai il male in doppia misura per tutti i benefici che gli avrai fatto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ὅτι καὶ ὁ ὕψιστος ἐμίσησεν ἁμαρτωλούς, καὶ τοῖς ἀσεβέσιν ἀποδώσει ἐκδίκησιν.",
+        "VUL": "Benefac humili, et non dederis impio :/ prohibe panes illi dari, ne in ipsis potentior te sit :/",
+        "SYN": "ибо ты получил бы сугубое зло за все добро, которое сделал бы ему; ибо и Всевышний ненавидит грешников и нечестивым воздает отмщением.",
+        "NEO": "Le Très-Haut aussi hait les pécheurs, et il tirera vengeance des impies.",
+        "NAB": "With twofold evil you will meet for every good deed you do for him.",
+        "VAT_ES": "Porque también el Altísimo detesta a los pecadores y dará su merecido a los impíos.",
+        "CEI": "Poiché anche l'Altissimo odia i peccatori e farà giustizia degli empi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "δὸς τῷ ἀγαθῷ, καὶ μὴ ἀντιλάβῃ τοῦ ἁμαρτωλοῦ.",
+        "VUL": "nam duplicia mala invenies in omnibus bonis quæcumque feceris illi,/ quoniam et Altissimus odio habet peccatores,/ et impiis reddet vindictam.]",
+        "SYN": "Давай доброму, и не помогай грешнику.",
+        "NEO": "Donne à l’homme vertueux, et n’assiste pas le pécheur.",
+        "NAB": "The Most High himself hates sinners, and upon the wicked he takes vengeance.",
+        "VAT_ES": "Da al hombre bueno, pero no ayudes al pecador.",
+        "CEI": "Dà al buono e non aiutare il peccatore."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "Οὐκ ἐκδικηθήσεται ἐν ἀγαθοῖς ὁ φίλος, καὶ οὐ κρυβήσεται ἐν κακοῖς ὁ ἐχθρός.",
+        "VUL": "[Non agnoscetur in bonis amicus,/ et non abscondetur in malis inimicus./",
+        "SYN": "Друг не познается в счастье, и враг не скроется в несчастье.",
+        "NEO": "Ce n’est pas dans la prospérité qu’un ami s’attire le châtiment, ni dans l’adversité qu’un ennemi se dissimule.",
+        "NAB": "In our prosperity we cannot know our friends; in adversity an enemy will not remain concealed.",
+        "VAT_ES": "No es en las buenas cuando se conoce al amigo, ni en las malas se oculta el enemigo.",
+        "CEI": "L'amico non si può riconoscere nella prosperità, ma nell'avversità il nemico non si nasconderà."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "ἐν ἀγαθοῖς ἀνδρὸς οἱ ἐχθροὶ αὐτοῦ ἐν λύπῃ, καὶ ἐν τοῖς κακοῖς αὐτοῦ καὶ ὁ φίλος διαχωρισθήσεται.",
+        "VUL": "In bonis viri, inimici illius in tristitia :/ et in malitia illius, amicus agnitus est./",
+        "SYN": "При счастье человека враги его в печали, а в несчастье его и друг разойдется с ним.",
+        "NEO": "Quand un homme est heureux, ses ennemis sont dans le deuil ; quand il est malheureux, son ami même se sépare de lui.",
+        "NAB": "When a man is successful even his enemy is friendly; in adversity even his friend disappears.",
+        "VAT_ES": "En las buenas, los enemigos se entristecen, y en las malas, hasta el amigo se aleja.",
+        "CEI": "Quando uno prospera, i suoi nemici sono nel dolore; ma quando uno è infelice, anche l'amico se ne separa."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "μὴ πιστεύσῃς τῷ ἐχθρῷ σου εἰς τὸν αἰῶνα· ὡς γὰρ ὁ χαλκὸς ἰοῦται, οὕτως ἡ πονηρία αὐτοῦ·",
+        "VUL": "Non credas inimico tuo in æternum :/ sicut enim æramentum æruginat nequitia illius :/",
+        "SYN": "Не верь врагу твоему вовек, ибо, как ржавеет медь, так и злоба его:",
+        "NEO": "Ne te fie jamais à ton ennemi, car sa malice est comme l’airain que couvre la rouille ;",
+        "NAB": "Never trust your enemy, for his wickedness is like corrosion in bronze.",
+        "VAT_ES": "Nunca te fíes de tu enemigo, porque la maldad lo corroe como la herrumbre al metal:",
+        "CEI": "Non fidarti mai del tuo nemico, poiché, come il metallo s'arrugginisce, così la sua malvagità."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "καὶ ἐὰν ταπεινωθῇ καὶ πορεύηται συνκεκυφώς, ἐπίστησον τὴν ψυχήν σου καὶ φύλαξαι ἀπ’ αὐτοῦ, καὶ ἔσῃ αὐτῷ ὡς ἐκμεμαχὼς ἔσοπτρον, καὶ γνώσῃ ὅτι οὐκ εἰς τέλος κατίωσεν.",
+        "VUL": "et si humiliatus vadat curvus,/ adjice animum tuum, et custodi te ab illo./",
+        "SYN": "хотя бы он смирился и ходил согнувшись, будь внимателен душею твоею и остерегайся его, и будешь пред ним, как чистое зеркало, и узнаешь, что он не до конца очистился от ржавчины;",
+        "NEO": "alors même qu’il se montre humble et marche courbé, veille sur toi-même et garde-toi de lui ; et tu seras pour lui comme celui qui polit un miroir, et tu connaîtras qu’il n’a pas de rouille jusqu’à la fin.",
+        "NAB": "Even though he acts humbly and peaceably toward you, take care to be on your guard against him. Rub him as one polishes a brazen mirror, and you will find that there is still corrosion.",
+        "VAT_ES": "aunque se haga el humilde y camine encorvado, ten mucho cuidado y está alerta contra él; trátalo como quien pule un espejo, a ver si la herrumbre no terminó de corroerlo.",
+        "CEI": "Anche se si abbassa e cammina curvo, stà attento e guardati da lui; compòrtati con lui come chi pulisce uno specchio e ti accorgerai che la sua ruggine non resiste a lungo."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "μὴ στήσῃς αὐτὸν παρὰ σεαυτόν, μὴ ἀνατρέψας σε στῇ ἐπὶ τὸν τόπον σου· μὴ καθίσῃς αὐτὸν ἐκ δεξιῶν σου, μή ποτε ζητήσῃ τὴν καθέδραν σου, καὶ ἐπ’ ἐσχάτῳ ἐπιγνώσῃ τοὺς λόγους μου, καὶ ἐπὶ τῶν ῥημάτων μου κατανυγήσῃ.",
+        "VUL": "Non statuas illum penes te,/ nec sedeat ad dexteram tuam,/ ne forte conversus in locum tuum, inquirat cathedram tuam,/ et in novissimo agnosces verba mea,/ et in sermonibus meis stimuleris./",
+        "SYN": "не ставь его подле себя, чтобы он, низринув тебя, не стал на твое место; не сажай его по правую сторону себя, чтобы он когда-нибудь не стал домогаться твоего седалища, и ты наконец поймешь слова мои и со скорбью вспомнишь о наставлениях моих.",
+        "NEO": "Ne le mets pas à côté de toi, de peur qu’il ne te renverse et ne prenne ta place. Ne le fais pas asseoir à ta droite, de peur qu’il ne cherche à occuper ton siège, et qu’à la fin, reconnaissant la vérité de mes discours, tu n’aies du chagrin au souvenir de mes paroles.",
+        "NAB": "Let him not stand near you, lest he oust you and take your place. Let him not sit at your right hand, lest he then demand your seat, And in the end you appreciate my advice, when you groan with regret, as I warned you.",
+        "VAT_ES": "No lo pongas junto a ti, no sea que te derribe para ocupar tu puesto; no lo hagas sentar a tu derecha, no sea que pretenda tu mismo sitial, y al fin comprendas mis palabras y sientas pesar al recordarlas.",
+        "CEI": "Non metterlo al tuo fianco, perché non ti rovesci e si ponga al tuo posto,non farlo sedere alla tua destra,perché non ricerchi la tua sedia, e alla fine tu conosca la verità delle mie parole e senta rimorso per i miei detti."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "τίς ἐλεήσει ἐπαοιδὸν ὀφιόδηκτον καὶ πάντας τοὺς προσάγοντας θηρίοις;",
+        "VUL": "Quis miserebitur incantatori a serpente percusso,/ et omnibus qui appropiant bestiis ?/ et sic qui comitatur cum viro iniquo,/ et obvolutus est in peccatis ejus./",
+        "SYN": "Кто пожалеет об ужаленном заклинателе змей и обо всех, приближающихся к диким зверям? Так и о сближающемся с грешником и преобщающемся грехам его:",
+        "NEO": "Qui aura pitié de l’enchanteur mordu par un serpent, et de tous ceux qui approchent les bêtes féroces ?",
+        "NAB": "Who pities a snake charmer when he is bitten, or anyone who goes near a wild beast?",
+        "VAT_ES": "&iquest;Quién compadece al encantador mordido por la serpiente o al domador de animales salvajes?",
+        "CEI": "Chi avrà pietà di un incantatore morso da un serpente e di quanti si avvicinano alle belve?"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "οὕτως τὸν προσπορευόμενον ἀνδρὶ ἁμαρτωλῷ καὶ συνφυρόμενον ἐν ταῖς ἁμαρτίαις αὐτοῦ.",
+        "VUL": "Una hora tecum permanebit :/ si autem declinaveris, non supportabit./",
+        "SYN": "на время он останется с тобою, но, если ты поколеблешься, он не устоит.",
+        "NEO": "Il en est de même de celui qui lie société avec un pécheur, et qui se mêle à ses péchés.",
+        "NAB": "So is it with the companion of the proud man, who is involved in his sins:",
+        "VAT_ES": "Lo mismo pasa con el que se acerca a un pecador y se entremezcla en sus pecados.",
+        "CEI": "Così capita a chi si associa a un peccatore e s'imbratta dei suoi misfatti."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ὥραν μετὰ σοῦ διαμενεῖ, καὶ ἐὰν ἐκκλίνῃς, οὐ μὴ καρτερήσῃ.",
+        "VUL": "In labiis suis indulcat inimicus,/ et in corde suo insidiatur ut subvertat te in foveam./",
+        "SYN": "Устами своими враг усладит тебя, но в сердце своем замышляет ввергнуть тебя в яму: глазами своими враг будет плакать, а когда найдет случай, не насытится кровью.",
+        "NEO": "Il reste une heure avec toi ; mais, si tu te détournes, il ne tiendra pas plus longtemps.",
+        "NAB": "While you stand firm, he makes no bold move; but if you slip, he cannot hold back.",
+        "VAT_ES": "El permanecerá una hora contigo, pero si vacilas, no te dará una mano.",
+        "CEI": "Per un momento rimarrà con te, ma se cadi, egli non reggerà più."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "καὶ ἐν τοῖς χείλεσιν αὐτοῦ γλυκανεῖ ὁ ἐχθρός, καὶ ἐν τῇ καρδίᾳ αὐτοῦ βουλεύσεται ἀνατρέψαι σε εἰς βόθρον· ἐν ὀφθαλμοῖς αὐτοῦ δακρύσει ὁ ἐχθρός, ⸂⸆⸃ καὶ ἐὰν εὕρῃ καιρόν, οὐκ ἐμπλησθήσεται ἀφ’ αἵματος·",
+        "VUL": "In oculis suis lacrimatur inimicus,/ et si invenerit tempus, non satiabitur sanguine./",
+        "SYN": "Если встретится с тобою несчастье, ты найдешь его там прежде себя,",
+        "NEO": "L’ennemi a la douceur sur les lèvres, et, dans son cœur, il médite le moyen de te jeter dans la fosse. L’ennemi a des larmes dans les yeux, et, s’il trouve l’occasion, il sera insatiable de ton sang.",
+        "NAB": "With his lips an enemy speaks sweetly, but in his heart he schemes to plunge you into the abyss. Though your enemy has tears in his eyes, if given the chance, he will never have enough of your blood.",
+        "VAT_ES": "El enemigo tiene miel en los labios, pero por dentro piensa cómo arrojarte en la fosa. El enemigo tiene lágrimas en los ojos, pero, llegada la ocasión, no habrá sangre que lo sacie.",
+        "CEI": "Il nemico ha il dolce sulle labbra, ma in cuore medita di gettarti in una fossa. Il nemico avrà lacrime agli occhi, ma se troverà l'occasione, non si sazierà del tuo sangue."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "κακὰ ἂν ὑπαντήσῃ σοι, εὑρήσεις αὐτὸν πρότερον ἐκεῖ σου, καὶ ὡς βοηθῶν ὑποσχάσει πτέρναν σου·",
+        "VUL": "Et si incurrerint tibi mala,/ invenies eum illic priorem./",
+        "SYN": "и он, как будто желая помочь, подставит тебе ногу:",
+        "NEO": "Si le malheur t’atteint, tu le trouveras là avant toi, et, sous prétexte de te secourir, il te donnera un croc-en-jambe.",
+        "NAB": "If evil comes upon you, you will find him at hand; feigning to help, he will trip you up,",
+        "VAT_ES": "Si te pasa algo malo, lo encontrarás allí antes que a ti mismo; simulando ayudarte, te hará una zancadilla:",
+        "CEI": "Se ti capiterà il male, egli sarà là per il primo e, con il pretesto di aiutarti, ti prenderà per il tallone."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "κινήσει τὴν κεφαλὴν αὐτοῦ καὶ ἐπικροτήσει ταῖς χερσὶν αὐτοῦ, καὶ πολλὰ διαψιθυρίσει καὶ ἀλλοιώσει τὸ πρόσωπον αὐτοῦ.",
+        "VUL": "In oculis suis lacrimatur inimicus,/ et quasi adjuvans suffodiet plantas tuas./",
+        "SYN": "будет кивать головою и хлопать руками, многое будет шептать, и изменит лицо свое.",
+        "NEO": "Alors il branlera la tête, il battra des mains, il ne cessera de chuchoter et prendra un autre visage.",
+        "NAB": "Then he will nod his head and clap his hands and hiss repeatedly, and show his true face.",
+        "VAT_ES": "moverá la cabeza y aplaudirá, hablará entre dientes y pondrá otra cara.",
+        "CEI": "Scuoterà il capo e batterà le mani, poi bisbigliando a lungo cambierà faccia."
+      }
+    }
+  }
+}

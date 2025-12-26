@@ -1,0 +1,463 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_022",
+  "book_key": "ISA",
+  "sequence": 22,
+  "chapter_in": {
+    "MT": 22,
+    "VUL": 22,
+    "LXX": 22
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מַשָּׂ֖א גֵּ֣יא חִזָּי֑וֹן מַה לָּ֣/ךְ אֵפ֔וֹא כִּֽי עָלִ֥ית כֻּלָּ֖/ךְ לַ/גַּגּֽוֹת׃",
+        "LXX": "Τὸ ῥῆμα τῆς φάραγγος Σειών. Τί ἐγένετό σοι ὅτι νῦν ἀνέβητε πάντες εἰς δώματα μάταια;",
+        "VUL": "Onus vallis Visionis. [Quidnam quoque tibi est, quia ascendisti/ et tu omnis in tecta ?/",
+        "SYN": "Пророчество о долине видения. - Что с тобою, что ты весь взошел на кровли?",
+        "NEO": "Oracle sur la Vallée de vision.",
+        "NAB": "Oracle of the Valley of Vision: What is the matter with you now, that you have gone up, all of you, to the housetops,",
+        "VAT_ES": "Oráculo sobre el valle de la Visión. &iquest;Qué es lo que te sucede para que subas en masa a las azoteas,",
+        "CEI": "Oracolo sulla valle della Visione. Che hai tu dunque, che sei salita tutta sulle terrazze,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "תְּשֻׁא֣וֹת מְלֵאָ֗ה עִ֚יר הֽוֹמִיָּ֔ה קִרְיָ֖ה עַלִּיזָ֑ה חֲלָלַ֨יִ/ךְ֙ לֹ֣א חַלְלֵי חֶ֔רֶב וְ/לֹ֖א מֵתֵ֥י מִלְחָמָֽה׃",
+        "LXX": "ἐνεπλήσθη ἡ πόλις βοώντων, οἱ τραυματίαι σου οὐ τραυματίαι ἐν μαχαίραις, οὐδὲ οἱ νεκροί σου νεκροὶ πολέμῳ.",
+        "VUL": "Clamoris plena, urbs frequens,/ civitas exsultans ;/ interfecti tui, non interfecti gladio,/ nec mortui in bello./",
+        "SYN": "Город шумный, волнующийся, город ликующий! Пораженные твои не мечом убиты и не в битве умерли;",
+        "NEO": "cité bruyante, pleine de tumulte, ville joyeuse ? Tes morts n’ont pas péri par l’épée, et ne sont pas tombés dans le combat.",
+        "NAB": "O city full of noise and chaos, O wanton town! Your slain are not slain with the sword, nor killed in battle.",
+        "VAT_ES": "tú, que estás llena de bullicio, ciudad tumultuosa, ciudad alegre? Tus víctimas no son víctimas de la espada ni muertos en el combate.",
+        "CEI": "città rumorosa e tumultuante, città gaudente? I tuoi caduti non sono caduti di spada né sono morti in battaglia."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כָּל קְצִינַ֥יִ/ךְ נָֽדְדוּ יַ֖חַד מִ/קֶּ֣שֶׁת אֻסָּ֑רוּ כָּל נִמְצָאַ֨יִ/ךְ֙ אֻסְּר֣וּ יַחְדָּ֔ו מֵ/רָח֖וֹק בָּרָֽחוּ׃",
+        "LXX": "πάντες οἱ ἄρχοντές σου πεφεύγασιν, καὶ ἁλόντες σκληρῶς δεδεμένοι εἰσίν, καὶ οἱ ἰσχύοντες ἐν σοὶ πόρρω πεφεύγασιν.",
+        "VUL": "Cuncti principes tui fugerunt simul/ dureque ligati sunt ;/ omnes qui inventi sunt vincti sunt pariter ;/ procul fugerunt./",
+        "SYN": "все вожди твои бежали вместе, но были связаны стрелками; все найденные у тебя связаны вместе, как ни далеко бежали.",
+        "NEO": "Tes chefs ont fui tous ensemble, ils ont été pris sans qu’on ait tiré de l’arc ; tous tes citoyens ont été pris ensemble, comme ils fuyaient au loin.",
+        "NAB": "All your leaders fled away together, fled afar off; All who were in you were captured together, captured without the use of a bow.",
+        "VAT_ES": "Tus jefes desertaron todos juntos, cayeron prisioneros sin disparar el arco; todos tus valientes fueron apresados, mientras huían lejos.",
+        "CEI": "Tutti i tuoi capi sono fuggiti insieme, fatti prigionieri senza un tiro d'arco; tutti i tuoi prodi sono stati catturati insieme, o fuggirono lontano."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "עַל כֵּ֥ן אָמַ֛רְתִּי שְׁע֥וּ מִ/נִּ֖י אֲמָרֵ֣ר בַּ/בֶּ֑כִי אַל תָּאִ֣יצוּ לְ/נַֽחֲמֵ֔/נִי עַל שֹׁ֖ד בַּת עַמִּֽ/י׃",
+        "LXX": "διὰ τοῦτο εἶπα Ἄφετέ με, πικρῶς κλαύσομαι· μὴ κατισχύσητε παρακαλεῖν με ἐπὶ τὸ σύντριμμα τῆς θυγατρὸς τοῦ γένους μου.",
+        "VUL": "Propterea dixi : Recedite a me :/ amare flebo ;/ nolite incumbere ut consolemini me/ super vastitate filiæ populi mei ;/",
+        "SYN": "Потому говорю: оставьте меня, я буду плакать горько; не усиливайтесь утешать меня в разорении дочери народа моего.",
+        "NEO": "C’est pourquoi j’ai dit : « Détournez de moi vos regards Que je pleure amèrement ! Ne vous empressez pas à me consoler sur la ruine de la fille de mon peuple. »",
+        "NAB": "At this I say: Turn away from me, let me weep bitterly; Do not try to comfort me for the ruin of the daughter of my people.",
+        "VAT_ES": "Por eso dije: «&iexcl;Aparten sus ojos de mí, voy a llorar amargamente; no insistan en consolarme por la devastación de la hija de mi pueblo!».",
+        "CEI": "Per questo dico: \"Stornate lo sguardo da me, che io pianga amaramente; non cercate di consolarmi per la desolazione della figlia del mio popolo\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּ֣י יוֹם֩ מְהוּמָ֨ה וּ/מְבוּסָ֜ה וּ/מְבוּכָ֗ה לַֽ/אדֹנָ֧/י יְהוִ֛ה צְבָא֖וֹת בְּ/גֵ֣יא חִזָּי֑וֹן מְקַרְקַ֥ר קִ֖ר וְ/שׁ֥וֹעַ אֶל הָ/הָֽר׃",
+        "LXX": "ὅτι ἡμέρα ταραχῆς καὶ ἀπωλείας, καὶ καταπάτημα καὶ πλάνησις παρὰ κυρίου σαβαώθ· ἐν φάραγγι Σειὼν πλανῶνται, ἀπὸ μικροῦ ἕως μεγάλου πλανῶνται ἐπὶ τὰ ὄρη.",
+        "VUL": "dies enim interfectionis,/ et conculcationis, et fletuum,/ Domino Deo exercituum,/ in valle Visionis,/ scrutans murum,/ et magnificus super montem./",
+        "SYN": "Ибо день смятения и попрания и замешательства в долине видения от Господа, Бога Саваофа. Ломают стену, и крик восходит на горы.",
+        "NEO": "Car c’est un jour de confusion, d’écrasement, de perplexité, envoyé par le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** des années, dans la vallée des visions ; on démolit la muraille, on entend des cris vers la montagne.",
+        "NAB": "It is a day of panic, rout and confusion, from the Lord, the GOD of hosts, in the Valley of Vision. Walls crash; they cry for help to the mountains.",
+        "VAT_ES": "Porque es un día de confusión, de humillación y consternación, enviado por el Señor de los ejércitos: en el valle de la Visión se socavaba el muro, el clamor llegaba a la montaña.",
+        "CEI": "Poiché è un giorno di panico, di distruzione e di smarrimento, voluto dal Signore, Dio degli eserciti. Nella valle della Visione un diroccare di mura e un invocare aiuto verso i monti."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/עֵילָם֙ נָשָׂ֣א אַשְׁפָּ֔ה בְּ/רֶ֥כֶב אָדָ֖ם פָּֽרָשִׁ֑ים וְ/קִ֥יר עֵרָ֖ה מָגֵֽן׃",
+        "LXX": "οἱ δὲ Ἐλαμεῖται ἔλαβον φαρέτρας, ἀναβάται ἄνθρωποι ἐφ’ ἵππους, καὶ συναγωγὴ παρατάξεως.",
+        "VUL": "Et Ælam sumpsit pharetram,/ currum hominis equitis,/ et parietem nudavit clypeus./",
+        "SYN": "И Елам несет колчан; люди на колесницах _и_ всадники, и Кир обнажает щит.",
+        "NEO": "Elam a pris le carquois, il vient avec des chars et des cavaliers, et Kir a tiré le bouclier de son enveloppe.",
+        "NAB": "Elam takes up the quivers, Aram mounts the horses, and Kir uncovers the shields.",
+        "VAT_ES": "Elam tomó la aljaba, Aram montó a caballo, Quir desenfundó el escudo.",
+        "CEI": "Gli Elamìti hanno preso la farètra; gli Aramei montano i cavalli, Kir ha tolto il fodero allo scudo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י מִבְחַר עֲמָקַ֖יִ/ךְ מָ֣לְאוּ רָ֑כֶב וְ/הַ/פָּ֣רָשִׁ֔ים שֹׁ֖ת שָׁ֥תוּ הַ/שָּֽׁעְרָ/ה׃",
+        "LXX": "καὶ ἔσονται αἱ ἐκλεκταὶ φάραγγές σου, πλησθήσονται ἁρμάτων, οἱ δὲ ἱππεῖς ἐμφράξουσι τὰς πύλας σου,",
+        "VUL": "Et erunt electæ valles tuæ plenæ quadrigarum,/ et equites ponent sedes suas in porta./",
+        "SYN": "И вот, лучшие долины твои полны колесницами, и всадники выстроились против ворот,",
+        "NEO": "Tes plus belles vallées sont remplies de chars, et les cavaliers sont postés devant tes portes ; on ôte à Juda son voile.",
+        "NAB": "Your choice valleys are filled with chariots, and horses are posted at the gates,",
+        "VAT_ES": "Tus valles más hermosos se llenaron de carros de guerra, los jinetes se apostaron a la Puerta",
+        "CEI": "Le migliori tra le tue valli sono piene di carri; i cavalieri si sono disposti contro la porta."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יְגַ֕ל אֵ֖ת מָסַ֣ךְ יְהוּדָ֑ה וַ/תַּבֵּט֙ בַּ/יּ֣וֹם הַ/ה֔וּא אֶל נֶ֖שֶׁק בֵּ֥ית הַ/יָּֽעַר׃",
+        "LXX": "καὶ ἀνακαλύψουσιν τὰς πύλας Ἰούδα· καὶ ἐμβλέψονται τῇ ἡμέρᾳ ἐκείνῃ εἰς τοὺς ἐκλεκτοὺς οἴκους τῆς πόλεως,",
+        "VUL": "Et revelabitur operimentum Judæ,/ et videbis in die illa/ armamentarium domus saltus./",
+        "SYN": "и снимают покров с Иудеи; и ты в тот день обращаешь взор на запас оружия в доме кедровом.",
+        "NEO": "Et en ce jour-là tu regardes vers l’arsenal du palais de la forêt ;",
+        "NAB": "and shelter over Judah is removed. On that day you looked to the weapons in the House of the Forest;",
+        "VAT_ES": "y cayó la defensa de Judá. Aquel día, ustedes volvieron los ojos hacia el arsenal de la Casa de Bosque.",
+        "CEI": "Così egli toglie la protezione di Giuda. Voi guardavate in quel giorno alle armi del palazzo della Foresta;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨ת בְּקִיעֵ֧י עִיר דָּוִ֛ד רְאִיתֶ֖ם כִּי רָ֑בּוּ וַֽ/תְּקַבְּצ֔וּ אֶת מֵ֥י הַ/בְּרֵכָ֖ה הַ/תַּחְתּוֹנָֽה׃",
+        "LXX": "καὶ ἀνακαλύψουσιν τὰ κρυπτὰ τῶν οἴκων τῆς ἄκρας Δαυείδ. καὶ εἴδοσαν ὅτι πλείους εἰσίν, καὶ ὅτι ἀπέστρεψεν τὸ ὕδωρ τῆς ἀρχαίας κολυμβήθρας εἰς τὴν πόλιν,",
+        "VUL": "Et scissuras civitatis David videbitis,/ quia multiplicatæ sunt ;/ et congregastis aquas piscinæ inferioris,/",
+        "SYN": "Но вы видите, что много проломов в стене города Давидова, и собираете воды в нижнем пруде;",
+        "NEO": "et les brèches de la cité de David, vous voyez qu’elles sont nombreuses. Et vous avez recueilli les eaux de l’étang inférieur ;",
+        "NAB": "you saw that the breaches in the City of David were many; you collected the water of the lower pool.",
+        "VAT_ES": "Vieron qué numerosas eran las brechas de la Ciudad de David; juntaron agua en la cisterna inferior;",
+        "CEI": "le brecce della città di Davide avete visto quante fossero; avete raccolto le acque della piscina inferiore,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/אֶת בָּתֵּ֥י יְרוּשָׁלִַ֖ם סְפַרְתֶּ֑ם וַ/תִּתְֿצוּ֙ הַ/בָּ֣תִּ֔ים לְ/בַצֵּ֖ר הַ/חוֹמָֽה׃",
+        "LXX": "καὶ ὅτι καθείλοσαν τοὺς οἴκους Ἰερουσαλὴμ εἰς ὀχυρώματα τείχους τῇ πόλει.",
+        "VUL": "et domos Jerusalem numerastis,/ et destruxistis domos ad muniendum murum./",
+        "SYN": "и отмечаете домы в Иерусалиме, и разрушаете домы, чтобы укрепить стену;",
+        "NEO": "vous avez compté les maisons de Jérusalem, et vous avez démoli les maisons pour réparer les murailles.",
+        "NAB": "You numbered the houses of Jerusalem, tearing some down to strengthen the wall;",
+        "VAT_ES": "contaron las casas de Jerusalén y derribaron algunas para reforzar la muralla;",
+        "CEI": "avete contato le case di Gerusalemme e demolito le case per fortificare le mura;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/מִקְוָ֣ה עֲשִׂיתֶ֗ם בֵּ֚ין הַ/חֹ֣מֹתַ֔יִם לְ/מֵ֖י הַ/בְּרֵכָ֣ה הַ/יְשָׁנָ֑ה וְ/לֹ֤א הִבַּטְתֶּם֙ אֶל עֹשֶׂ֔י/הָ וְ/יֹצְרָ֥/הּ מֵֽ/רָח֖וֹק לֹ֥א רְאִיתֶֽם׃",
+        "LXX": "καὶ ἐποιήσατε ἑαυτοῖς ὕδωρ ἀνὰ μέσον τῶν δύο τειχῶν ἐσώτερον τῆς κολυμβήθρας τῆς ἀρχαίας, καὶ οὐκ ἐνεβλέψατε εἰς τὸν ἀπ’ ἀρχῆς ποιήσαντα αὐτήν, καὶ τὸν κτίσαντα αὐτὴν οὐκ εἴδετε.",
+        "VUL": "Et lacum fecistis inter duos muros/ ad aquam piscinæ veteris ;/ et non suspexistis ad eum qui fecerat eam,/ et operatorem ejus de longe non vidistis./",
+        "SYN": "и устрояете между двумя стенами хранилище для вод старого пруда. А на Того, Кто это делает, не взираете, и не смотрите на Того, Кто издавна определил это.",
+        "NEO": "Vous avez fait un réservoir entre les deux murs, pour les eaux du vieil étang. Mais vous n’avez pas regardé vers Celui qui a fait cela, et vous n’avez pas vu Celui qui l’a préparé de loin.",
+        "NAB": "you made a reservoir between the two walls for the water of the old pool. But you did not look to the city's Maker, nor did you consider him who built it long ago.",
+        "VAT_ES": "hicieron un depósito entre los dos muros para las aguas de la cisterna antigua. &iexcl;Pero no se fijaron en el que hacía todo eso, ni miraron al que lo planeó hace mucho tiempo!",
+        "CEI": "avete costruito un serbatoio fra i due muri per le acque della piscina vecchia; ma voi non avete guardato a chi ha fatto queste cose, né avete visto chi ha preparato ciò da tempo."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֗א אֲדֹנָ֧/י יְהוִ֛ה צְבָא֖וֹת בַּ/יּ֣וֹם הַ/ה֑וּא לִ/בְכִי֙ וּ/לְ/מִסְפֵּ֔ד וּ/לְ/קָרְחָ֖ה וְ/לַ/חֲגֹ֥ר שָֽׂק׃",
+        "LXX": "καὶ ἐκάλεσεν κύριος Κύριος σαβαὼθ ἐν τῇ ἡμέρᾳ ἐκείνῃ κλαυθμὸν καὶ κοπετὸν καὶ ξύρησιν καὶ ζῶσιν σάκκων,",
+        "VUL": "Et vocabit Dominus Deus exercituum/ in die illa/ ad fletum, et ad planctum,/ ad calvitium, et ad cingulum sacci ;/",
+        "SYN": "И Господь, Господь Саваоф, призывает вас в этот день плакать и сетовать, и остричь волоса и препоясаться вретищем.",
+        "NEO": "Le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** des armées vous appelait, en ce jour-là, à pleurer et à vous lamenter, à raser votre tête et à ceindre le sac.",
+        "NAB": "On that day the Lord, the GOD of hosts, called on you To weep and mourn, to shave your head and put on sackcloth.",
+        "VAT_ES": "Aquel día, el Señor de los ejércitos convocaba al llanto y al luto, a raparse la cabeza y vestirse de saya! ;",
+        "CEI": "Vi invitava il Signore, Dio degli eserciti, in quel giorno al pianto e al lamento, a rasarvi il capo e a vestire il sacco."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּ֣ה שָׂשׂ֣וֹן וְ/שִׂמְחָ֗ה הָרֹ֤ג בָּקָר֙ וְ/שָׁחֹ֣ט צֹ֔אן אָכֹ֥ל בָּשָׂ֖ר וְ/שָׁת֣וֹת יָ֑יִן אָכ֣וֹל וְ/שָׁת֔וֹ כִּ֥י מָחָ֖ר נָמֽוּת׃",
+        "LXX": "αὐτοὶ δὲ ἐποιήσαντο εὐφροσύνην καὶ ἀγαλλίαμα, σφάζοντες μόσχους καὶ θύοντες πρόβατα, ὥστε φαγεῖν κρέα καὶ πιεῖν οἶνον Φάγωμεν καὶ πίωμεν, αὔριον γὰρ ἀποθνήσκομεν.",
+        "VUL": "et ecce gaudium et lætitia,/ occidere vitulos et jugulare arietes,/ comedere carnes, et bibere vinum :/ comedamus et bibamus,/ cras enim moriemur./",
+        "SYN": "Но вот, веселье и радость! Убивают волов, и режут овец; едят мясо, и пьют вино: \"будем есть и пить, ибо завтра умрем!\"",
+        "NEO": "Et voici la fête, la réjouissance ; on égorge les bœufs, on tue des brebis, on se gorge de viandes et on boit du vin, « Mangeons, et buvons, car demain nous mourrons ! »",
+        "NAB": "But look! you feast and celebrate, you slaughter oxen and butcher sheep, You eat meat and drink wine: \"Eat and drink, for tomorrow we die!\"",
+        "VAT_ES": "en cambio, hay gozo y alegría, se matan bueyes y se deg&uuml;ellan ovejas, se come carne y se bebe vino: «&iexcl;Comamos y bebamos, porque mañana moriremos».",
+        "CEI": "Ecco invece si gode e si sta allegri, si sgozzano buoi e si scannano greggi, si mangia carne e si beve vino: \"Si mangi e si beva, perché domani moriremo!\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/נִגְלָ֥ה בְ/אָזְנָ֖/י יְהוָ֣ה צְבָא֑וֹת אִם יְ֠כֻפַּר הֶ/עָוֺ֨ן הַ/זֶּ֤ה לָ/כֶם֙ עַד תְּמֻת֔וּ/ן אָמַ֛ר אֲדֹנָ֥/י יְהוִ֖ה צְבָאֽוֹת׃",
+        "LXX": "καὶ ἀνακεκαλυμμένα ταῦτά ἐστιν ἐν τοῖς ὠσὶν Κυρίου σαβαώθ, ὅτι οὐκ ἀφεθήσεται ὑμῖν αὕτη ἡ ἁμαρτία ἕως ἂν ἀποθάνητε.",
+        "VUL": "Et revelata est in auribus meis vox Domini exercituum :/ Si dimittetur iniquitas hæc vobis donec moriamini,/ dicit Dominus Deus exercituum.]",
+        "SYN": "И открыл мне в уши Господь Саваоф: не будет прощено вам это нечестие, доколе не умрете, сказал Господь, Господь Саваоф.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** des armées l’a révélé à mes oreilles : Ce péché ne vous sera pas remis jusqu’à ce que vous mourriez, dit le Seigneur, \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "This reaches the ears of the LORD of hosts - You shall not be pardoned this wickedness till you die, says the Lord, the GOD of hosts.",
+        "VAT_ES": "El señor de los ejércitos se ha revelado a mi oído: No, esta falta no les será expiada hasta que ustedes mueran, dice el Señor de los ejércitos.",
+        "CEI": "Ma il Signore degli eserciti si è rivelato ai miei orecchi: \"Certo non sarà espiato questo vostro peccato, finché non sarete morti\", dice il Signore, Dio degli eserciti."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כֹּ֥ה אָמַ֛ר אֲדֹנָ֥/י יְהוִ֖ה צְבָא֑וֹת לֶךְ בֹּא֙ אֶל הַ/סֹּכֵ֣ן הַ/זֶּ֔ה עַל שֶׁבְנָ֖א אֲשֶׁ֥ר עַל הַ/בָּֽיִת׃",
+        "LXX": "Τάδε λέγει Κύριος σαβαώθ Πορεύου εἰς τὸ παστοφόριον πρὸς Σόμναν τὸν ταμίαν καὶ εἰπὸν αὐτῷ",
+        "VUL": "[Hæc dicit Dominus Deus exercituum :/ Vade, ingredere ad eum qui habitat in tabernaculo,/ ad Sobnam, præpositum templi, et dices ad eum :/",
+        "SYN": "Так сказал Господь, Господь Саваоф: ступай, пойди к этому царедворцу, к Севне, начальнику дворца [и скажи ему]:",
+        "NEO": "Ainsi a parlé le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** des armées : Va trouver cet intendant, Sobna, le préfet du palais, et dis-lui :",
+        "NAB": "Thus says the Lord, the GOD of hosts: Up, go to that official, Shebna, master of the palace,",
+        "VAT_ES": "Así habla el Señor de los ejércitos: «Ve a encontrarte con ese intendente, Sebná, el mayordomo de palacio,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "מַה לְּ/ךָ֥ פֹה֙ וּ/מִ֣י לְ/ךָ֣ פֹ֔ה כִּֽי חָצַ֧בְתָּ לְּ/ךָ֛ פֹּ֖ה קָ֑בֶר חֹצְבִ֤י מָרוֹם֙ קִבְר֔/וֹ חֹקְקִ֥י בַ/סֶּ֖לַע מִשְׁכָּ֥ן לֽ/וֹ׃",
+        "LXX": "Τί σὺ ὧδε, καὶ τί σοί ἐστιν ὧδε ὅτι ἐλατόμησας σεαυτῷ ὧδε μνημεῖον, καὶ ἐποίησας σεαυτῷ ἐν ὑψηλῷ μνημεῖον, καὶ ἔγραψας σεαυτῷ ἐν πέτρᾳ σκηνήν;",
+        "VUL": "Quid tu hic, aut quasi quis hic ?/ quia excidisti tibi hic sepulchrum,/ excidisti in excelso memoriale diligenter,/ in petra tabernaculum tibi./",
+        "SYN": "что у тебя здесь, и кто здесь у тебя, что ты здесь высекаешь себе гробницу? - Он высекает себе гробницу на возвышенности, вырубает в скале жилище себе.",
+        "NEO": "« Qu’as-tu à faire ici, et qui es-tu ici, que tu te creuses ici un sépulcre, toi qui te creuses un sépulcre sur un lieu élevé, qui te tailles dans le roc une demeure ?",
+        "NAB": "Who has hewn for himself a sepulcher on a height and carved his tomb in the rock: \"What are you doing here, and what people have you here, that here you have hewn for yourself a tomb?\"",
+        "VAT_ES": "que talla su sepulcro en la altura y se cava una morada en la roca. &iquest;Qué tienes y a quién tienes aquí, para tallarte aquí un sepulcro?"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "הִנֵּ֤ה יְהוָה֙ מְטַלְטֶלְ/ךָ֔ טַלְטֵלָ֖ה גָּ֑בֶר וְ/עֹטְ/ךָ֖ עָטֹֽה׃",
+        "LXX": "ἰδοὺ δὴ Κύριος σαβαὼθ ἐκβάλλει καὶ ἐκτρίψει ἄνδρα, καὶ ἀφελεῖ τὴν στολήν σου καὶ τὸν στέφανόν σου τὸν ἔνδοξον,",
+        "VUL": "Ecce Dominus asportari te faciet,/ sicut asportatur gallus gallinaceus ;/ et quasi amictum, sic sublevabit te./",
+        "SYN": "Вот, Господь перебросит тебя, как бросает сильный человек, и сожмет тебя в ком;",
+        "NEO": "Voici que \\+w Yahweh|strong=\"H3068\"\\+w** va te lancer d’un bras viril ;",
+        "NAB": "The LORD shall hurl you down headlong, mortal man! He shall grip you firmly",
+        "VAT_ES": "Mira que el Señor te arroja de un solo golpe, hombre fuerte; te envuelve bien envuelto,",
+        "CEI": "Ecco, il Signore ti scaglierà giù a precipizio, o uomo, ti afferrerà saldamente,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "צָנ֤וֹף יִצְנָפְ/ךָ֙ צְנֵפָ֔ה כַּדּ֕וּר אֶל אֶ֖רֶץ רַחֲבַ֣ת יָדָ֑יִם שָׁ֣מָּ/ה תָמ֗וּת וְ/שָׁ֨מָּ/ה֙ מַרְכְּב֣וֹת כְּבוֹדֶ֔/ךָ קְל֖וֹן בֵּ֥ית אֲדֹנֶֽי/ךָ׃",
+        "LXX": "καὶ ῥίψει σε εἰς χώραν μεγάλην καὶ ἀμέτρητον, καὶ ἐκεῖ ἀποθανῇ· καὶ θήσει τὸ ἅρμα σου τὸ καλὸν εἰς ἀτιμίαν, καὶ τὸν οἶκον τοῦ ἄρχοντός σου,",
+        "VUL": "Coronans coronabit te tribulatione ;/ quasi pilam mittet te in terram latam et spatiosam ;/ ibi morieris, et ibi erit currus gloriæ tuæ,/ ignominia domus domini tui./",
+        "SYN": "свернув тебя в сверток, бросит тебя, как меч, в землю обширную; там ты умрешь, и там великолепные колесницы твои будут поношением для дома господина твоего.",
+        "NEO": "il va te faire tourner, il te fera rouler avec force, rouler comme une boule, sur une vaste plaine. Là tu mourras, là seront tes chars magnifiques, ô l’opprobre de la maison de ton maître.",
+        "NAB": "And roll you up and toss you like a ball into an open land To perish there, you and the chariots you glory in, you disgrace to your master's house!",
+        "VAT_ES": "te ata fuerte como un ovillo y te arroja como una bola a un país de vastas dimensiones. Allí morirás, y allí irán a parar los carruajes que eran tu gloria, &iexcl;tú, deshonra de la casa de tu señor!",
+        "CEI": "ti rotolerà ben bene a rotoli come palla, verso un esteso paese. Là morirai e là finiranno i tuoi carri superbi, o ignominia del palazzo del tuo padrone!"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/הֲדַפְתִּ֖י/ךָ מִ/מַּצָּבֶ֑/ךָ וּ/מִ/מַּעֲמָֽדְ/ךָ֖ יֶהֶרְסֶֽ/ךָ׃",
+        "LXX": "καὶ ἀφαιρεθήσει ἐκ τῆς οἰκονομίας σου καὶ ἐκ τῆς στάσεώς σου.",
+        "VUL": "Et expellam te de statione tua,/ et de ministerio tuo deponam te./",
+        "SYN": "И столкну тебя с места твоего, и свергну тебя со степени твоей.",
+        "NEO": "Je te chasserai de ton poste, \\+w Yahweh|strong=\"H3068\"\\+w** t’arrachera de ta place. »",
+        "NAB": "I will thrust you from your office and pull you down from your station.",
+        "VAT_ES": "Yo te derribaré de tu sitial y te destituiré de tu cargo.",
+        "CEI": "Ti toglierò la carica, ti rovescerò dal tuo posto."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֖ה בַּ/יּ֣וֹם הַ/ה֑וּא וְ/קָרָ֣אתִי לְ/עַבְדִּ֔/י לְ/אֶלְיָקִ֖ים בֶּן חִלְקִיָּֽהוּ׃",
+        "LXX": "καὶ ἔσται ἐν τῇ ἡμέρᾳ ἐκείνῃ καὶ καλέσω τὸν παῖδά μου Ἐλιακεὶμ τὸν τοῦ Χελκίου,",
+        "VUL": "Et erit in die illa :/ vocabo servum meum Eliacim, filium Helciæ,/",
+        "SYN": "И будет в тот день, призову раба Моего Елиакима, сына Хелкиина,",
+        "NEO": "Et il arrivera en ce jour-là : J’appellerai mon serviteur Eliacim, fils d’Helcias,",
+        "NAB": "On that day I will summon my servant Eliakim, son of Hilkiah;",
+        "VAT_ES": "Y aquel día, llamaré a mi servidor Eliaquím, hijo de Jilquías;",
+        "CEI": "In quel giorno chiamerò il mio servo Eliakìm, figlio di Chelkia;"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/הִלְבַּשְׁתִּ֣י/ו כֻּתָּנְתֶּ֗/ךָ וְ/אַבְנֵֽטְ/ךָ֙ אֲחַזְּקֶ֔/נּוּ וּ/מֶֽמְשֶׁלְתְּ/ךָ֖ אֶתֵּ֣ן בְּ/יָד֑/וֹ וְ/הָיָ֥ה לְ/אָ֛ב לְ/יוֹשֵׁ֥ב יְרוּשָׁלִַ֖ם וּ/לְ/בֵ֥ית יְהוּדָֽה׃",
+        "LXX": "καὶ ἐνδύσω αὐτὸν τὴν στολήν σου, καὶ τὸν στέφανόν σου δώσω αὐτῷ κατὰ κράτος, καὶ τὴν οἰκονομίαν σου δώσω εἰς τὰς χεῖρας αὐτοῦ· καὶ ἔσται ὡς πατὴρ τοῖς ἐνοικοῦσιν ἐν Ἰερουσαλὴμ καὶ τοῖς ἐνοικοῦσιν ἐν Ἰούδᾳ.",
+        "VUL": "et induam illum tunica tua,/ et cingulo tuo confortabo eum,/ et potestatem tuam dabo in manu ejus ;/ et erit quasi pater habitantibus Jerusalem/ et domui Juda./",
+        "SYN": "и одену его в одежду твою, и поясом твоим опояшу его, и власть твою передам в руки его; и будет он отцом для жителей Иерусалима и для дома Иудина.",
+        "NEO": "je le revêtirai de ta tunique, et je le ceindrai de ton écharpe ; je mettrai ton autorité entre ses mains ; et il sera un père pour les habitants de Jérusalem, et pour la maison de Juda.",
+        "NAB": "I will clothe him with your robe, and gird him with your sash, and give over to him your authority. He shall be a father to the inhabitants of Jerusalem, and to the house of Judah.",
+        "VAT_ES": "lo vestiré con tu túnica, lo ceñiré con tu faja, pondré tus poderes en su mano, y él será un padre para los habitantes de Jerusalén y para la casa de Judá.",
+        "CEI": "lo rivestirò con la tua tunica, lo cingerò della tua sciarpa e metterò il tuo potere nelle sue mani. Sarà un padre per gli abitanti di Gerusalemme e per il casato di Giuda."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/נָתַתִּ֛י מַפְתֵּ֥חַ בֵּית דָּוִ֖ד עַל שִׁכְמ֑/וֹ וּ/פָתַח֙ וְ/אֵ֣ין סֹגֵ֔ר וְ/סָגַ֖ר וְ/אֵ֥ין פֹּתֵֽחַ׃",
+        "LXX": "καὶ δώσω τὴν δόξαν Δαυεὶδ αὐτῷ, καὶ ἄρξει, καὶ οὐκ ἔσται ὁ ἀντιλέγων, καὶ κλείσει καὶ οὐκ ἔστιν ὁ ἀνοίγων.",
+        "VUL": "Et dabo clavem domus David/ super humerum ejus ;/ et aperiet, et non erit qui claudat ;/ et claudet, et non erit qui aperiat./",
+        "SYN": "И ключ дома Давидова возложу на рамена его; отворит он, и никто не запрет; запрет он, и никто не отворит.",
+        "NEO": "Je mettrai sur son épaule la clef de la maison de David, il ouvrira, et personne ne fermera ; il fermera, et personne n’ouvrira.",
+        "NAB": "I will place the key of the House of David on his shoulder; when he opens, no one shall shut, when he shuts, no one shall open.",
+        "VAT_ES": "pondré sobre sus hombros la llave de la casa de David: lo que él abra, nadie lo cerrará; lo que él cierre, nadie lo abrirá.",
+        "CEI": "Gli porrò sulla spalla la chiave della casa di Davide; se egli apre, nessuno chiuderà; se egli chiude, nessuno potrà aprire."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וּ/תְקַעְתִּ֥י/ו יָתֵ֖ד בְּ/מָק֣וֹם נֶאֱמָ֑ן וְ/הָיָ֛ה לְ/כִסֵּ֥א כָב֖וֹד לְ/בֵ֥ית אָבִֽי/ו׃",
+        "LXX": "καὶ στηλῶ αὐτὸν ἄρχοντα ἐν τόπῳ πιστῷ, καὶ ἔσται εἰς θρόνον δόξης τοῦ οἴκου τοῦ πατρὸς αὐτοῦ.",
+        "VUL": "Et figam illum paxillum in loco fideli,/ et erit in solium gloriæ domui patris ejus./",
+        "SYN": "И укреплю его как гвоздь в твердом месте; и будет он как седалище славы для дома отца своего.",
+        "NEO": "Je le planterai comme un clou en un lieu solide, et il deviendra un trône de gloire pour la maison de son père.",
+        "NAB": "I will fix him like a peg in a sure spot, to be a place of honor for his family;",
+        "VAT_ES": "Lo clavaré como una estaca en un sitio firme, y será un trono de gloria para la casa de su padre.",
+        "CEI": "Lo conficcherò come un paletto in luogo solido e sarà un trono di gloria per la casa di suo padre."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/תָל֨וּ עָלָ֜י/ו כֹּ֣ל כְּב֣וֹד בֵּית אָבִ֗י/ו הַ/צֶּֽאֱצָאִים֙ וְ/הַ/צְּפִע֔וֹת כֹּ֖ל כְּלֵ֣י הַ/קָּטָ֑ן מִ/כְּלֵי֙ הָֽ/אַגָּנ֔וֹת וְ/עַ֖ד כָּל כְּלֵ֥י הַ/נְּבָלִֽים׃",
+        "LXX": "καὶ ἔσται πεποιθὼς ἐπ’ αὐτὸν πᾶς ἔνδοξος ἐν τῷ οἴκῳ τοῦ πατρὸς αὐτοῦ ἀπὸ μικροῦ ἕως μεγάλου, καὶ ἔσονται ἐπικρεμάμενοι αὐτῷ",
+        "VUL": "Et suspendent super eum omnem gloriam domus patris ejus ;/ vasorum diversa genera,/ omne vas parvulum,/ a vasis craterarum usque ad omne vas musicorum./",
+        "SYN": "И будет висеть на нем вся слава дома отца его, детей и внуков, всей домашней утвари до последних музыкальных орудий.",
+        "NEO": "A lui sera suspendue toute la gloire de la maison de son père, les fils et les petits-fils, tous les plus petits vases, depuis la coupe jusqu’aux jarres.",
+        "NAB": "On him shall hang all the glory of his family: descendants and offspring, all the little dishes, from bowls to jugs.",
+        "VAT_ES": "De él estará suspendida toda la gloria de la casa de su padre: retoños y gajos, todos los vasos pequeños, desde las tazas hasta las vasijas de todas clases.",
+        "CEI": "A lui attaccheranno ogni gloria della casa di suo padre: discendenti e nipoti, ogni vaso anche piccolo, dalle tazze alle anfore\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "בַּ/יּ֣וֹם הַ/ה֗וּא נְאֻם֙ יְהוָ֣ה צְבָא֔וֹת תָּמוּשׁ֙ הַ/יָּתֵ֔ד הַ/תְּקוּעָ֖ה בְּ/מָק֣וֹם נֶאֱמָ֑ן וְ/נִגְדְּעָ֣ה וְ/נָפְלָ֗ה וְ/נִכְרַת֙ הַ/מַּשָּׂ֣א אֲשֶׁר עָלֶ֔י/הָ כִּ֥י יְהוָ֖ה דִּבֵּֽר׃",
+        "LXX": "τῇ ἡμέρᾳ ἐκείνῃ. τάδε λέγει Κύριος σαβαώθ· κινηθήσεται ὁ ἄνθρωπος ὁ ἐστηριγμένος ἐν τόπῳ πιστῷ, καὶ ἀφαιρεθήσεται καὶ πεσεῖται, καὶ ἐξολεθρευθήσεται ἡ δόξα ἡ ἐπ’ αὐτόν, ὅτι Κύριος ἐλάλησεν.",
+        "VUL": "In die illa, dicit Dominus exercituum,/ auferetur paxillus qui fixus fuerat in loco fideli,/ et frangetur, et cadet,/ et peribit quod pependerat in eo,/ quia Dominus locutus est.]",
+        "SYN": "В тот день, говорит Господь Саваоф, пошатнется гвоздь, укрепленный в твердом месте, и будет выбит, и упадет, и распадется вся тяжесть, которая на нем: ибо Господь говорит.",
+        "NEO": "En ce jour-là, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** des armées, le clou planté en un lieu solide sera ôté ; il sera arraché et tombera, et le fardeau qu’il portait sera détruit ; car \\+w Yahweh|strong=\"H3068\"\\+w** a parlé.",
+        "NAB": "On that day, says the LORD of hosts, the peg fixed in a sure spot shall give way, break off and fall, and the weight that hung on it shall be done away with; for the LORD has spoken.",
+        "VAT_ES": "Aquel día –oráculo del Señor de los ejércitos– cederá la estaca clavada en un sitio firme, se quebrará, caerá, y la carga que estaba sobre ella será destruida, porque ha hablado el Señor.",
+        "CEI": "In quel giorno - oracolo del Signore degli eserciti - cederà il paletto conficcato in luogo solido, si spezzerà, cadrà e andrà in frantumi tutto ciò che vi era appeso, perché il Signore ha parlato."
+      }
+    }
+  }
+}

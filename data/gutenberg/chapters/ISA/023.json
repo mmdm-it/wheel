@@ -1,0 +1,339 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_023",
+  "book_key": "ISA",
+  "sequence": 23,
+  "chapter_in": {
+    "MT": 23,
+    "VUL": 23,
+    "LXX": 23
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מַשָּׂ֖א צֹ֑ר הֵילִ֣ילוּ אֳנִיּ֣וֹת תַּרְשִׁ֗ישׁ כִּֽי שֻׁדַּ֤ד מִ/בַּ֨יִת֙ מִ/בּ֔וֹא מֵ/אֶ֥רֶץ כִּתִּ֖ים נִגְלָה לָֽ/מוֹ׃",
+        "LXX": "Τὸ ῥῆμα Τύρου. Ὀλολύξατε, πλοῖα Καρχηδόνος, ὅτι ἀπώλετο, καὶ οὐκέτι ἔρχονται ἐκ γῆς Κιτιαίων· ἦκται αἰχμάλωτος.",
+        "VUL": "Onus Tyri. [Ululate, naves maris,/ quia vastata est domus/ unde venire consueverant :/ de terra Cethim/ revelatum est eis./",
+        "SYN": "Пророчество о Тире. - Рыдайте, корабли Фарсиса, ибо он разрушен; нет домов, и некому входить в домы. Так им возвещено из земли Киттийской.",
+        "NEO": "Oracle sur Tyr.",
+        "NAB": "Oracle on Tyre: Wail, O ships of Tarshish, for your port is destroyed; From the land of the Kittim the news reaches them.",
+        "VAT_ES": "Oráculo sobre Tiro. &iexcl;Giman, naves de Tarsis, porque su puerto ha sido devastado! Cuando llegaban de Quitím, recibieron el anuncio.",
+        "CEI": "Oracolo su Tiro. Fate il lamento, navi di Tarsis, perché è stato distrutto il vostro rifugio! Mentre tornavano dal paese dei Kittim, ne fu data loro notizia."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "דֹּ֖מּוּ יֹ֣שְׁבֵי אִ֑י סֹחֵ֥ר צִיד֛וֹן עֹבֵ֥ר יָ֖ם מִלְאֽוּ/ךְ׃",
+        "LXX": "τίνι ὅμοιοι γεγόνασιν οἱ ἐνοικοῦντες ἐν τῇ νήσῳ, μεταβόλοι Φοινίκης, διαπερῶντες τὴν θάλασσαν",
+        "VUL": "Tacete, qui habitatis in insula ;/ negotiatores Sidonis, transfretantes mare, repleverunt te./",
+        "SYN": "Умолкните, обитатели острова, который наполняли купцы Сидонские, плавающие по морю.",
+        "NEO": "Soyez dans la stupeur, habitants de la côte, que remplissaient les marchands de Sidon, parcourant la mer.",
+        "NAB": "Silence! you who dwell on the coast, you merchants of Sidon, Whose messengers crossed the sea",
+        "VAT_ES": "&iexcl;Enmudezcan, habitantes de la costa, comerciantes de Sidón, cuyos emisarios atraviesan el mar.",
+        "CEI": "Ammutolite, abitanti della costa, mercanti di Sidòne, i cui agenti attraversavano"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וּ/בְ/מַ֤יִם רַבִּים֙ זֶ֣רַע שִׁחֹ֔ר קְצִ֥יר יְא֖וֹר תְּבֽוּאָתָ֑/הּ וַ/תְּהִ֖י סְחַ֥ר גּוֹיִֽם׃",
+        "LXX": "ἐν ὕδατι πολλῷ, σπέρμα μεταβόλων; ὡς ἀμητοῦ εἰσφερομένου οἱ μεταβόλοι τῶν ἐθνῶν.",
+        "VUL": "In aquis multis semen Nili ;/ messis fluminis fruges ejus :/ et facta est negotiatio gentium./",
+        "SYN": "По великим водам привозились в него семена Сихора, жатва _большой_ реки, и был он торжищем народов.",
+        "NEO": "A travers les grandes eaux, le blé du Nil, les moissons du fleuve étaient son revenu ; elle était le marché des nations !",
+        "NAB": "over the deep waters. The grain of Shihor, the harvest of the Nile, was her revenue, and she the merchant among nations.",
+        "VAT_ES": "por las aguas profundas! El grano de Sijor, las cosechas del Nilo, le aportaban ganancias: &iexcl;ella era el emporio de las naciones!",
+        "CEI": "grandi acque. Il frumento del Nilo, il raccolto del fiume era la sua ricchezza; era il mercato dei popoli."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "בּ֣וֹשִׁי צִיד֔וֹן כִּֽי אָמַ֣ר יָ֔ם מָע֥וֹז הַ/יָּ֖ם לֵ/אמֹ֑ר לֹֽא חַ֣לְתִּי וְ/לֹֽא יָלַ֗דְתִּי וְ/לֹ֥א גִדַּ֛לְתִּי בַּחוּרִ֖ים רוֹמַ֥מְתִּי בְתוּלֽוֹת׃",
+        "LXX": "αἰσχύνθητι, Σειδών, εἶπεν ἡ θάλασσα· ἡ δὲ ἰσχὺς τῆς θαλάσσης εἶπεν Οὐκ ὤδινον οὐδ’ ἔτεκον, οὐδὲ ἐξέθρεψα νεανίσκους οὐδὲ ὕψωσα παρθένους.",
+        "VUL": "Erubesce, Sidon ; ait enim mare,/ fortitudo maris, dicens :/ Non parturivi, et non peperi,/ et non enutrivi juvenes,/ nec ad incrementum perduxi virgines./",
+        "SYN": "Устыдись, Сидон; ибо _вот что_ говорит море, крепость морская: \"как бы ни мучилась я родами и ни рождала, и ни воспитывала юношей, ни возращала девиц\".",
+        "NEO": "Rougis de honte, Sidon, car la mer a parlé, la citadelle de la mer, en disant : « Je n’ai pas été en travail, je n’ai pas enfanté, je n’ai pas nourri de jeunes gens, et je n’ai pas élevé de vierges.",
+        "NAB": "Shame, O Sidon, fortress on the sea, for the sea has spoken: \"I have not been in labor, nor given birth, nor raised young men, nor reared virgins.\"",
+        "VAT_ES": "Averg&uuml;énzate, Sidón, fortaleza del mar, porque el mar habla así: «No he sufrido los dolores del parto. ni he dado a luz; no he criado muchachos ni hice crecer muchachas.",
+        "CEI": "Vergògnati, Sidòne, perché ha parlato il mare, la fortezza marinara, dicendo: \"Io non ho avuto doglie, non ho partorito, non ho allevato giovani, non ho fatto crescere ragazze\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כַּֽ/אֲשֶׁר שֵׁ֖מַע לְ/מִצְרָ֑יִם יָחִ֖ילוּ כְּ/שֵׁ֥מַע צֹֽר׃",
+        "LXX": "ὅταν δὲ ἀκουστὸν γένηται Αἰγύπτῳ, λήμψεται αὐτοὺς ὀδύνη περὶ Τύρου.",
+        "VUL": "Cum auditum fuerit in Ægypto,/ dolebunt cum audierint de Tyro./",
+        "SYN": "Когда весть дойдет до Египтян, содрогнутся они, услышав о Тире.",
+        "NEO": "Quand l’Égypte en apprendra la nouvelle, elle sera saisie d’effroi à la nouvelle de la chute de Tyr.",
+        "NAB": "When it is heard in Egypt they shall be in anguish at the news of Tyre.",
+        "VAT_ES": "Cuando se enteren en Egipto, temblarán por las noticias de Tiro.",
+        "CEI": "Appena si saprà in Egitto, saranno addolorati per la notizia di Tiro."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "עִבְר֖וּ תַּרְשִׁ֑ישָׁ/ה הֵילִ֖ילוּ יֹ֥שְׁבֵי אִֽי׃",
+        "LXX": "ἀπέλθατε εἰς Καρχηδόνα, ὀλολύξατε, οἱ κατοικοῦντες ἐν τῇ νήσῳ ταύτῃ.",
+        "VUL": "Transite maria, ululate,/ qui habitatis in insula !/",
+        "SYN": "Переселяйтесь в Фарсис, рыдайте, обитатели острова!",
+        "NEO": "Passez à Tarsis et hurlez, habitants de la côte !",
+        "NAB": "Pass over to Tarshish, wailing, you who dwell on the coast!",
+        "VAT_ES": "Emigren a Tarsis, giman, habitantes de la costa.",
+        "CEI": "Passate in Tarsis, fate il lamento, abitanti della costa."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "הֲ/זֹ֥את לָ/כֶ֖ם עַלִּיזָ֑ה מִֽ/ימֵי קֶ֤דֶם קַדְמָתָ/הּ֙ יֹבִל֣וּ/הָ רַגְלֶ֔י/הָ מֵֽ/רָח֖וֹק לָ/גֽוּר׃",
+        "LXX": "οὐχ αὕτη ἦν ὑμῶν ἡ ὕβρις ἀπ’ ἀρχῆς πρὶν ἢ παραδοθῆναι αὐτήν;",
+        "VUL": "Numquid non vestra hæc est, quæ gloriabatur/ a diebus pristinis in antiquitate sua ?/ Ducent eam pedes sui/ longe ad peregrinandum./",
+        "SYN": "Это ли ваш ликующий город, которого начало от дней древних? Ноги его несут его скитаться в стране далекой.",
+        "NEO": "Est-ce là votre cité joyeuse, dont l’origine remontait aux jours anciens, et que ses pieds portaient au loin pour y séjourner ?",
+        "NAB": "Is this your wanton city, whose origin is from old, Whose feet have taken her to dwell in distant lands?",
+        "VAT_ES": "&iquest;Es esta la ciudad alegre, la de orígenes remotos, cuyos pasos la llevaron a colonias lejanas?",
+        "CEI": "È questa la vostra città gaudente, le cui origini risalgono a un'antichità remota, i cui piedi la portavano lontano per fissarvi dimore?"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "מִ֚י יָעַ֣ץ זֹ֔את עַל צֹ֖ר הַ/מַּֽעֲטִירָ֑ה אֲשֶׁ֤ר סֹחֲרֶ֨י/ה֙ שָׂרִ֔ים כִּנְעָנֶ֖י/הָ נִכְבַּדֵּי אָֽרֶץ׃",
+        "LXX": "τίς ταῦτα ἐβούλευσεν ἐπὶ Τύρον; μὴ ἥσσων ἐστίν, ἢ οὐκ ἰσχύει; οἱ ἔμποροι αὐτῆς ἔνδοξοι, ἄρχοντες τῆς γῆς.",
+        "VUL": "Quis cogitavit hoc/ super Tyrum quondam coronatam,/ cujus negotiatores principes,/ institores ejus inclyti terræ ?/",
+        "SYN": "Кто определил это Тиру, который раздавал венцы, которого купцы _были_ князья, торговцы - знаменитости земли?",
+        "NEO": "Qui a décidé cela contre Tyr, qui donnait des couronnes, dont les marchands étaient des princes, et les trafiquants des grands de la terre ?",
+        "NAB": "Who has planned such a thing against Tyre, the bestower of crowns, Whose merchants are princes, whose traders are the earth's honored men?",
+        "VAT_ES": "&iquest;Quién ha concebido esto contra Tiro, la que repartía coronas, cuyos comerciantes eran príncipes y sus mercaderes, grandes de la tierra?",
+        "CEI": "Chi ha deciso questo contro Tiro l'incoronata, i cui mercanti erano principi, i cui trafficanti erano i più nobili della terra?"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "יְהוָ֥ה צְבָא֖וֹת יְעָצָ֑/הּ לְ/חַלֵּל֙ גְּא֣וֹן כָּל צְבִ֔י לְ/הָקֵ֖ל כָּל נִכְבַּדֵּי אָֽרֶץ׃",
+        "LXX": "Κύριος σαβαὼθ ἐβουλεύσατο παραλῦσαι πᾶσαν τὴν ὕβριν τῶν ἐνδόξων καὶ ἀτιμάσαι πᾶν ἔνδοξον ἐπὶ τῆς γῆς.",
+        "VUL": "Dominus exercituum cogitavit hoc,/ ut detraheret superbiam omnis gloriæ,/ et ad ignominiam deduceret universos inclytos terræ./",
+        "SYN": "Господь Саваоф определил это, чтобы посрамить надменность всякой славы, чтобы унизить все знаменитости земли.",
+        "NEO": "C’est \\+w Yahweh|strong=\"H3068\"\\+w** des armées qui l’a décidé, pour flétrir l’orgueil de tout ce qui brille, pour humilier tous les grands de la terre.",
+        "NAB": "The LORD of hosts has planned it, to disgrace all pride of majesty, to degrade all the earth's honored men.",
+        "VAT_ES": "Lo ha concebido el Señor de los ejércitos para envilecer la soberbia de todo esplendor, para humillar a los grandes de la tierra.",
+        "CEI": "Il Signore degli eserciti lo ha deciso per svergognare l'orgoglio di tutto il suo fasto, per umiliare i più nobili sulla terra."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "עִבְרִ֥י אַרְצֵ֖/ךְ כַּ/יְאֹ֑ר בַּת תַּרְשִׁ֕ישׁ אֵ֖ין מֵ֥זַח עֽוֹד׃",
+        "LXX": "ἐργάζου τὴν γῆν σου, καὶ γὰρ πλοῖα οὐκέτι ἔρχεται ἐκ Καρχηδόνος.",
+        "VUL": "Transi terram tuam quasi flumen, filia maris !/ non est cingulum ultra tibi./",
+        "SYN": "Ходи по земле твоей, дочь Фарсиса, как река: нет более препоны.",
+        "NEO": "Répands-toi dans ton pays, comme le Nil, fille de Tarsis, car tu n’as plus de ceinture.",
+        "NAB": "Cross to your own land, O ship of Tarshish; the harbor is no more.",
+        "VAT_ES": "Cultiva tu tierra, hija de Tarsis, como a lo largo del Nilo: &iexcl;el puerto no existe más!",
+        "CEI": "Coltiva la tua terra come il Nilo, figlia di Tarsis; il porto non esiste più."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "יָד/וֹ֙ נָטָ֣ה עַל הַ/יָּ֔ם הִרְגִּ֖יז מַמְלָכ֑וֹת יְהוָה֙ צִוָּ֣ה אֶל כְּנַ֔עַן לַ/שְׁמִ֖ד מָעֻזְנֶֽי/הָ׃",
+        "LXX": "ἡ δὲ χείρ σου οὐκέτι ἰσχύει κατὰ θάλασσαν, ἡ παροξύνουσα βασιλεῖς· Κύριος σαβαὼθ ἐνετείλατο περὶ Χανάαν ἀπολέσαι αὐτῆς τὴν ἰσχύν.",
+        "VUL": "Manum suam extendit super mare ;/ conturbavit regna./ Dominus mandavit adversus Chanaan,/ ut contereret fortes ejus ;/",
+        "SYN": "Он простер руку Свою на море, потряс царства; Господь дал повеление о Ханаане разрушить крепости его",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** a étendu sa main sur la mer, il a fait trembler les royaumes ; il a décrété contre Canaan la ruine de ses forteresses.",
+        "NAB": "His hand he stretches out over the sea, he shakes kingdoms; The LORD has ordered the destruction of Canaan's strongholds.",
+        "VAT_ES": "El ha extendido su mano sobre el mar, ha hecho temblar los reinos; el Señor ha ordenado a Canaán que destruya sus fortalezas.",
+        "CEI": "Ha steso la mano verso il mare, ha sconvolto i regni, il Signore ha decretato per Cànaan di abbattere le sue fortezze."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֕אמֶר לֹֽא תוֹסִ֥יפִי ע֖וֹד לַ/עְל֑וֹז הַֽ/מְעֻשָּׁקָ֞ה בְּתוּלַ֣ת בַּת צִיד֗וֹן כתיים כִּתִּים֙ ק֣וּמִי עֲבֹ֔רִי גַּם שָׁ֖ם לֹא יָנ֥וּחַֽ לָֽ/ךְ׃",
+        "LXX": "καὶ ἐροῦσιν Οὐκέτι μὴ προστεθῆτε τοῦ ὑβρίζειν καὶ ἀδικεῖν τὴν θυγατέρα Σειδῶνος· καὶ ἐὰν ἀπέλθῃς εἰς Κιτιεῖς, οὐδὲ ἐκεῖ ἀνάπαυσις ἔσται σοι·",
+        "VUL": "et dixit : Non adjicies ultra ut glorieris,/ calumniam sustinens virgo filia Sidonis :/ in Cethim consurgens transfreta :/ ibi quoque non erit requies tibi./",
+        "SYN": "и сказал: ты не будешь более ликовать, посрамленная девица, дочь Сидона! Вставай, иди в Киттим, _но_ и там не будет тебе покоя.",
+        "NEO": "Et il a dit : « Tu ne te livreras plus à la joie, vierge déshonorée, fille de Sidon ! Lève-toi, passe à Céthim ; là même, plus de repos pour toi.",
+        "NAB": "You shall exult no more, he says, you who are now oppressed, virgin daughter Sidon. Arise, pass over to the Kittim, even there you shall find no rest.",
+        "VAT_ES": "El ha dicho: «&iexcl;No te regocijarás nunca más, virgen violada, hija de Sidón!» Levántate y emigra a Quitím. aunque tampoco allí tendrás descanso.",
+        "CEI": "Egli ha detto: \"Non continuerai a far baldoria, tu duramente oppressa, vergine figlia di Sidòne. Alzati, và pure dai Kittim; neppure là ci sarà pace per te\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הֵ֣ן אֶ֣רֶץ כַּשְׂדִּ֗ים זֶ֤ה הָ/עָם֙ לֹ֣א הָיָ֔ה אַשּׁ֖וּר יְסָדָ֣/הּ לְ/צִיִּ֑ים הֵקִ֣ימוּ בחיני/ו בַחוּנָ֗י/ו עֹרְרוּ֙ אַרְמְנוֹתֶ֔י/הָ שָׂמָ֖/הּ לְ/מַפֵּלָֽה׃",
+        "LXX": "καὶ εἰς γῆν Χαλδαίων, καὶ αὕτη ἠρήμωται ἀπὸ τῶν Ἀσσυρίων, ὁ τοῖχος αὐτῆς πέπτωκεν.",
+        "VUL": "Ecce terra Chaldæorum, talis populus non fuit :/ Assur fundavit eam ;/ in captivitatem traduxerunt robustos ejus,/ suffoderunt domos ejus,/ posuerunt eam in ruinam./",
+        "SYN": "Вот земля Халдеев. Этого народа прежде не было; Ассур положил ему начало из обитателей пустынь. Они ставят башни свои, разрушают чертоги его, превращают его в развалины.",
+        "NEO": "Vois le pays des Chaldéens, de ce peuple qui n’était pas, et qui a livré Assur aux bêtes du désert ; ils ont élevé leurs tours, détruit ses palais, ils en ont fait un monceau de ruines. »",
+        "NAB": "(This people is the land of the Chaldeans, not Assyria.) She whom the impious founded, setting up towers for her, Has had her castles destroyed, and has been turned into a ruin.",
+        "VAT_ES": "Mira el país de los caldeos, ese pueblo que ya no existe; Asiria lo destinó a las fieras del desierto; levantaron sus torres de asalto, demolieron sus palacios. lo redujeron a escombros.",
+        "CEI": "Ecco il paese da lui fondato per marinai, che ne avevano innalzato le torri; ne han demoliti i palazzi: egli l'ha ridotto a un cumulo di rovine."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הֵילִ֖ילוּ אֳנִיּ֣וֹת תַּרְשִׁ֑ישׁ כִּ֥י שֻׁדַּ֖ד מָעֻזְּ/כֶֽן׃",
+        "LXX": "ὀλολύξατε, πλοῖα Καρχηδόνος, ὅτι ἀπόλωλε τὸ ὀχύρωμα ὑμῶν.",
+        "VUL": "Ululate, naves maris,/ quia devastata est fortitudo vestra.]",
+        "SYN": "Рыдайте, корабли Фарсисские! Ибо твердыня ваша разорена.",
+        "NEO": "Hurlez, navires de Tarsis, car votre forteresse est détruite.",
+        "NAB": "Lament, O ships of Tarshish, for your haven is destroyed.",
+        "VAT_ES": "&iexcl;Giman, naves de Tarsis, porque su fortaleza ha sido devastada!",
+        "CEI": "Fate il lamento, navi di Tarsis, perché è stato distrutto il vostro rifugio."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֙ בַּ/יּ֣וֹם הַ/ה֔וּא וְ/נִשְׁכַּ֤חַת צֹר֙ שִׁבְעִ֣ים שָׁנָ֔ה כִּ/ימֵ֖י מֶ֣לֶךְ אֶחָ֑ד מִ/קֵּ֞ץ שִׁבְעִ֤ים שָׁנָה֙ יִהְיֶ֣ה לְ/צֹ֔ר כְּ/שִׁירַ֖ת הַ/זּוֹנָֽה׃",
+        "LXX": "καὶ ἔσται ἐν τῇ ἡμέρᾳ ἐκείνῃ καταλειφθήσεται Τύρος ἑβδομήκοντα ἔτη, ὡς χρόνος βασιλέως, ὡς χρόνος ἀνθρώπου· καὶ ἔσται μετὰ ἑβδομήκοντα ἔτη ἔσται Τύρος ὡς ᾆσμα πόρνης.",
+        "VUL": "Et erit in die illa : in oblivione eris, o Tyre ! septuaginta annis, sicut dies regis unius ; post septuaginta autem annos erit Tyro quasi canticum meretricis :",
+        "SYN": "И будет в тот день, забудут Тир на семьдесят лет, в мере дней одного царя. По окончании же семидесяти лет с Тиром будет то же, что поют о блуднице:",
+        "NEO": "Il arrivera, en ce jour-là, que Tyr sera oubliée soixante-dix ans, la durée des jours d’un roi. Et au bout de soixante dix ans, il en sera de Tyr comme dans la chanson de la courtisane :",
+        "NAB": "On that day, Tyre shall be forgotten for seventy years. With the days of another king, at the end of seventy years, it shall be for Tyre as in the song about the harlot:",
+        "VAT_ES": "Aquel día será olvidada durante setenta años, que es la duración de la vida de un rey. Al cabo de setenta años, a Tiro le sucederá como en la canción de la prostituta:",
+        "CEI": "In quel giorno Tiro sarà dimenticata per settant'anni, quanti sono gli anni di un re. Alla fine dei settanta anni a Tiro si applicherà la canzone della prostituta:"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "קְחִ֥י כִנּ֛וֹר סֹ֥בִּי עִ֖יר זוֹנָ֣ה נִשְׁכָּחָ֑ה הֵיטִ֤יבִי נַגֵּן֙ הַרְבִּי שִׁ֔יר לְמַ֖עַן תִּזָּכֵֽרִי׃",
+        "LXX": "λάβε κιθάραν, ῥέμβευσον πόλεις πόρνη ἐπιλελησμένη, καλῶς κιθάρισον, πολλὰ ᾆσον, ἵνα σου μνεία γένηται. καὶ ἔσται μετὰ τὰ ἑβδομήκοντα ἔτη ἐπισκοπὴν ποιήσει ὁ θεὸς Τύρου, καὶ πάλιν ἀποκαταστήσεται εἰς τὸ ἀρχαῖον,",
+        "VUL": "[Sume citharam, circui civitatem,/ meretrix oblivioni tradita :/ bene cane, frequenta canticum,/ ut memoria tui sit./",
+        "SYN": "\"возьми цитру, ходи по городу, забытая блудница! Играй складно, пой много песен, чтобы вспомнили о тебе\".",
+        "NEO": "« Prends ta harpe, fais le tour de la ville, courtisane oubliée ; joue avec art, multiplie tes chants, pour qu’on se souvienne de toi. »",
+        "NAB": "Take a harp, go about the city, O forgotten harlot; Pluck the strings skillfully, sing many songs, that they may remember you.",
+        "VAT_ES": "«&iexcl;Toma la cítara, recorre la ciudad, prostituta olvidada! Toca bien, canta mucho, para que se acuerden de ti».",
+        "CEI": "\"Prendi la cetra, gira per la città, prostituta dimenticata; suona con abilità, moltiplica i canti, perché qualcuno si ricordi di te\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֞ה מִ/קֵּ֣ץ שִׁבְעִ֣ים שָׁנָ֗ה יִפְקֹ֤ד יְהוָה֙ אֶת צֹ֔ר וְ/שָׁבָ֖ה לְ/אֶתְנַנָּ֑/ה וְ/זָֽנְתָ֛ה אֶת כָּל מַמְלְכ֥וֹת הָ/אָ֖רֶץ עַל פְּנֵ֥י הָ/אֲדָמָֽה׃",
+        "LXX": "καὶ ἔσται ἐμπόριον πάσαις ταῖς βασιλείαις τῆς οἰκουμένης ἐπὶ πρόσωπον τῆς γῆς.",
+        "VUL": "Et erit post septuaginta annos :/ visitabit Dominus Tyrum,/ et reducet eam ad mercedes suas,/ et rursum fornicabitur cum universis regnis terræ/ super faciem terræ ;/",
+        "SYN": "И будет, по истечении семидесяти лет, Господь посетит Тир; и он снова начнет получать прибыль свою и будет блудодействовать со всеми царствами земными по всей вселенной.",
+        "NEO": "Et il arrivera, au bout de soixante-dix ans, que \\+w Yahweh|strong=\"H3068\"\\+w** visitera Tyr, et elle recevra de nouveau son salaire, et elle se prostituera à tous les royaumes de la terre, sur la face du monde.",
+        "NAB": "At the end of the seventy years the LORD shall visit Tyre. She shall return to her hire and deal with all the world's kingdoms on the face of the earth.",
+        "VAT_ES": "Al cabo de setenta años, el Señor visitará a Tiro, Ella volverá a su antiguo comercio, y se prostituirá con todos los reinos de la tierra, sobre la superficie del suelo.",
+        "CEI": "Ma alla fine dei settant'anni il Signore visiterà Tiro, che ritornerà ai suoi guadagni; essa trescherà con tutti i regni del mondo sulla terra."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֨ה סַחְרָ֜/הּ וְ/אֶתְנַנָּ֗/הּ קֹ֚דֶשׁ לַֽ/יהוָ֔ה לֹ֥א יֵֽאָצֵ֖ר וְ/לֹ֣א יֵֽחָסֵ֑ן כִּ֣י לַ/יֹּשְׁבִ֞ים לִ/פְנֵ֤י יְהוָה֙ יִֽהְיֶ֣ה סַחְרָ֔/הּ לֶ/אֱכֹ֥ל לְ/שָׂבְעָ֖ה וְ/לִ/מְכַסֶּ֥ה עָתִֽיק׃",
+        "LXX": "καὶ ἔσται ἡ ἐμπορία αὐτῆς καὶ ὁ μισθὸς ἅγιον Κυρίῳ, οὐκ αὐτοῖς συναχθήσεται ἀλλὰ τοῖς κατοικοῦσιν ἔναντι Κυρίου, πᾶσα ἡ ἐμπορία αὐτῆς, φαγεῖν καὶ πιεῖν καὶ ἐμπλησθῆναι, καὶ εἰς συμβολὴν μνημόσυνον ἔναντι Κυρίου.",
+        "VUL": "et erunt negotiationes ejus et mercedes ejus sanctificatæ Domino :/ non condentur neque reponentur,/ quia his qui habitaverint coram Domino erit negotiatio ejus,/ ut manducent in saturitatem, et vestiantur usque ad vetustatem.]",
+        "SYN": "Но торговля его и прибыль его будут посвящаемы Господу; не будут заперты и уложены в кладовые, ибо к живущим пред лицем Господа будет переходить прибыль от торговли его, чтобы они ели до сытости и имели одежду прочную.",
+        "NEO": "Et son gain et son salaire seront consacrés à \\+w Yahweh|strong=\"H3068\"\\+w** ; ils ne seront ni amassés, ni mis en réserve ; car son gain appartiendra à ceux qui habitent devant \\+w Yahweh|strong=\"H3068\"\\+w** ; pour qu’ils mangent, se rassasient et se parent magnifiquement.",
+        "NAB": "But her merchandise and her hire shall be sacred to the LORD. It shall not be stored up or laid away, but from her merchandise those who dwell before the LORD shall eat their fill and clothe themselves in choice attire.",
+        "VAT_ES": "Pero sus ganancias y sus salarios serán consagrados al Señor. No serán acumulados ni atesorados: serán para los que habitan delante del Señor, a fin de que coman hasta saciarse y se atavíen espléndidamente.",
+        "CEI": "Il suo salario e il suo guadagno saranno sacri al Signore. Non sarà ammassato né custodito il suo salario, ma andrà a coloro che abitano presso il Signore, perché possano nutrirsi in abbondanza e vestirsi con decoro."
+      }
+    }
+  }
+}
