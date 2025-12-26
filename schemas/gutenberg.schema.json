@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "patternProperties": {
+    "^[A-Za-z0-9_]+$": {
+      "type": "object",
+      "required": ["display_config", "testaments"],
+      "properties": {
+        "display_config": { "type": "object" },
+        "testaments": { "type": "object" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

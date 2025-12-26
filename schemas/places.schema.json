@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "patternProperties": {
+    "^[A-Za-z0-9_]+$": {
+      "type": "object",
+      "required": ["display_config", "root"],
+      "properties": {
+        "display_config": { "type": "object" },
+        "root": { "type": "object", "required": ["id", "children"], "properties": {"id": {"type": "string"}, "children": {"type": "array", "items": {"type": "string"}}}},
+        "galaxies": { "type": "object" },
+        "stars": { "type": "object" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
