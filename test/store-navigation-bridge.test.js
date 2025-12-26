@@ -342,12 +342,13 @@ describe('store-navigation-bridge (catalog)', () => {
       capabilities: {}
     };
 
-    const bridge = await createStoreNavigationBridge({ adapter: adapterOne, onEvent: evt => events.push(evt.type) });
+    const bridge = await createStoreNavigationBridge({ adapter: adapterOne, onEvent: evt => events.push(evt) });
     events.length = 0; // ignore initial load events
 
     await bridge.setVolume(adapterTwo, { focusId: 'b' });
 
-    assertOrder(events, [
+    const types = events.map(e => e.type);
+    assertOrder(types, [
       'volume-switch:start',
       'volume-load:start',
       'volume-load:validate:start',
@@ -355,6 +356,14 @@ describe('store-navigation-bridge (catalog)', () => {
       'volume-load:success',
       'volume-switch:complete'
     ]);
+
+    const start = events.find(e => e.type === 'volume-switch:start');
+    const complete = events.find(e => e.type === 'volume-switch:complete');
+    const success = events.find(e => e.type === 'volume-load:success');
+
+    assert.equal(start.from, 'tele-one');
+    assert.equal(complete.to, 'tele-two');
+    assert.equal(success.volumeId, 'tele-two');
   });
 
   it('emits error telemetry and no completion on failed switch', async () => {
@@ -394,15 +403,19 @@ describe('store-navigation-bridge (catalog)', () => {
       capabilities: {}
     };
 
-    const bridge = await createStoreNavigationBridge({ adapter: goodAdapter, onEvent: evt => events.push(evt.type) });
+    const bridge = await createStoreNavigationBridge({ adapter: goodAdapter, onEvent: evt => events.push(evt) });
     events.length = 0; // ignore initial load events
 
     await assert.rejects(() => bridge.setVolume(badAdapter), /manifest validation failed/i);
 
-    assert.ok(events.includes('volume-switch:error'));
-    assert.ok(events.includes('volume-load:error'));
-    assert.ok(!events.includes('volume-switch:complete'));
-    assertOrder(events, ['volume-switch:start', 'volume-load:start', 'volume-load:validate:start', 'volume-load:error', 'volume-switch:error']);
+    const types = events.map(e => e.type);
+    assert.ok(types.includes('volume-switch:error'));
+    assert.ok(types.includes('volume-load:error'));
+    assert.ok(!types.includes('volume-switch:complete'));
+    assertOrder(types, ['volume-switch:start', 'volume-load:start', 'volume-load:validate:start', 'volume-load:error', 'volume-switch:error']);
+
+    const errEvt = events.find(e => e.type === 'volume-switch:error');
+    assert.ok(errEvt?.error instanceof Error);
     assert.equal(bridge.getVolumeId(), 'tele-good');
   });
 
@@ -429,15 +442,54 @@ describe('store-navigation-bridge (catalog)', () => {
       }
     };
 
-    const bridge = await createStoreNavigationBridge({ adapter, onEvent: evt => events.push(evt.type) });
+    const bridge = await createStoreNavigationBridge({ adapter, onEvent: evt => events.push(evt) });
     events.length = 0;
 
     const ok = await bridge.hydrateDeepLink('missing');
 
     assert.equal(ok, false);
     assert.equal(bridge.getFocusedId(), 'x');
-    assert.ok(events.includes('deep-link:error'));
-    assertOrder(events, ['deep-link:start', 'deep-link:error']);
+    const types = events.map(e => e.type);
+    assert.ok(types.includes('deep-link:error'));
+    assertOrder(types, ['deep-link:start', 'deep-link:error']);
+    const errEvt = events.find(e => e.type === 'deep-link:error');
+    assert.ok(errEvt?.error instanceof Error);
+  });
+
+  it('emits deep-link error telemetry when resolver throws', async () => {
+    const events = [];
+
+    const adapter = {
+      volumeId: 'dl-throw',
+      async loadManifest() {
+        return { items: [{ id: 'y', label: 'Y' }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'dl-throw' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: { deepLink: true },
+      resolveDeepLink() {
+        throw new Error('resolver blew up');
+      }
+    };
+
+    const bridge = await createStoreNavigationBridge({ adapter, onEvent: evt => events.push(evt) });
+    events.length = 0;
+
+    await assert.rejects(() => bridge.hydrateDeepLink('any'), /blew up/);
+
+    const types = events.map(e => e.type);
+    assertOrder(types, ['deep-link:start', 'deep-link:error']);
+    const errEvt = events.find(e => e.type === 'deep-link:error');
+    assert.ok(errEvt?.error instanceof Error);
+    assert.equal(bridge.getVolumeId(), 'dl-throw');
+    assert.equal(bridge.getFocusedId(), 'y');
   });
 
   it('rejects a queued switch when validation fails and leaves active volume intact', async () => {
