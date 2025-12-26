@@ -5,7 +5,7 @@
 ### Release Train Status (v4)
 - v4.0.0 Baseline data + UI lift — done (seeded from v3)
 - v4.1 Adapter + state-store foundation — done (shipped as 4.1.0)
-- v4.2 Volume-safe interaction loop — planned
+- v4.2 Volume-safe interaction loop — active
 - v4.3 Detail/pyramid rebuild on adapters — planned
 - v4.4 Theming + accessibility hardening — planned
 - v4.5 Dimension System (lens: language/time) — planned
@@ -41,11 +41,16 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - One adapter end-to-end: manifest → validate/normalize → layoutSpec → focus-ring render using store state.
 - No data-specific conditionals remain in shared render/navigation paths.
 
-### v4.2 — Volume-Safe Interaction
+### v4.2 — Volume-Safe Interaction (current)
 **Goal:** Make volume switching a first-class, race-free operation.
 - Guarded transitions in the store (no switch mid-transition without queue/cancel).
 - Transition choreography between volumes (loading, placeholder, apply, reveal).
 - Integration tests: switch during rotation; invalid manifest rejection; deep-link hydration.
+
+**Near-term focus (internal):**
+- Add store-level guard rails for concurrent volume switches (queue/cancel behavior covered by tests).
+- Emit telemetry events for load/validate/switch stages via `safeEmit` to prove observability during interactions.
+- Add integration tests: rotation → switch → rotation, invalid manifest rejection, deep-link hydration stability.
 
 **Exit criteria:** volume switch tests green; UX smooth under load; errors degrade gracefully.
 
