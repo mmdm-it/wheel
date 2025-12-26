@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## [4.2.2] - 2025-12-26
+
+### Added
+- Focus view renders child-pyramid instructions (nodes + labels with click hooks)
+
+### Changed
+- Detail plugins (text/card) now support non-DOM render contexts via injected createElement factory
+
 ## [4.2.1] - 2025-12-26
 
 ### Added
