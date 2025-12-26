@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## [4.2.0] - 2025-12-25
+
+### Added
+- Introduced a `safeEmit` telemetry helper to centralize and harden onEvent hooks
+
+### Changed
+- Routed navigation volume load/switch events through telemetry helper for safer callbacks
+- Gated focus-ring debug logging and chain summary emission behind the debug flag to reduce noise
+- Bumped package metadata to version 4.2.0
+
 ## [4.0.1] - 2025-12-25
 
 ### Changed
