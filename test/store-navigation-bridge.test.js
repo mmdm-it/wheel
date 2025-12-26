@@ -119,6 +119,93 @@ describe('store-navigation-bridge (catalog)', () => {
     assert.ok(events.includes('volume-switch:complete'));
   });
 
+  it('handles a burst of rapid switches and leaves the last volume active', async () => {
+    const events = [];
+
+    const mkAdapter = (id, delay = 1) => ({
+      volumeId: id,
+      async loadManifest() {
+        await sleep(delay);
+        return { items: [{ id: `${id}-a`, label: `${id}-A` }, { id: `${id}-b`, label: `${id}-B` }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: id } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    });
+
+    const bridge = await createStoreNavigationBridge({ adapter: mkAdapter('base'), onEvent: evt => events.push(evt.type) });
+
+    const switches = [
+      bridge.setVolume(mkAdapter('v1', 10)),
+      bridge.setVolume(mkAdapter('v2', 9)),
+      bridge.setVolume(mkAdapter('v3', 8)),
+      bridge.setVolume(mkAdapter('v4', 2)),
+      bridge.setVolume(mkAdapter('v5', 1))
+    ];
+
+    const results = await Promise.all(switches);
+
+    assert.equal(results[0].volumeId, 'v1');
+    assert.equal(results.at(-1).volumeId, 'v5');
+    assert.equal(bridge.getVolumeId(), 'v5');
+    assert.ok(events.includes('volume-switch:queued'));
+    assert.ok(events.filter(e => e === 'volume-switch:complete').length >= 2);
+  });
+
+  it('emits error telemetry and preserves volume when manifest load throws', async () => {
+    const events = [];
+
+    const goodAdapter = {
+      volumeId: 'good-load',
+      async loadManifest() {
+        return { items: [{ id: 'g-a', label: 'G A' }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'good-load' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    };
+
+    const badAdapter = {
+      volumeId: 'bad-load',
+      async loadManifest() {
+        throw new Error('load failed');
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'bad-load' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    };
+
+    const bridge = await createStoreNavigationBridge({ adapter: goodAdapter, onEvent: evt => events.push(evt.type) });
+    events.length = 0;
+
+    await assert.rejects(() => bridge.setVolume(badAdapter), /load failed/);
+
+    assert.equal(bridge.getVolumeId(), 'good-load');
+    assert.ok(events.includes('volume-load:error'));
+    assert.ok(events.includes('volume-switch:error'));
+  });
+
   it('rejects invalid manifest switches and keeps prior volume', async () => {
     const events = [];
 
