@@ -109,4 +109,52 @@ describe('store-navigation-bridge (catalog)', () => {
     assert.ok(events.includes('volume-switch:cancelled'));
     assert.ok(events.includes('volume-switch:complete'));
   });
+
+  it('rejects invalid manifest switches and keeps prior volume', async () => {
+    const events = [];
+
+    const goodAdapter = {
+      volumeId: 'good',
+      async loadManifest() {
+        return { items: [{ id: 'good-a', label: 'Good A' }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'good' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    };
+
+    const badAdapter = {
+      volumeId: 'bad',
+      async loadManifest() {
+        return { items: [{ id: 'bad-a', label: 'Bad A' }] };
+      },
+      validate() {
+        return { ok: false, errors: ['missing meta'] };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'bad' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    };
+
+    const bridge = await createStoreNavigationBridge({ adapter: goodAdapter, onEvent: evt => events.push(evt.type) });
+
+    await assert.rejects(() => bridge.setVolume(badAdapter, { focusId: 'bad-a' }), /manifest validation failed/i);
+
+    assert.equal(bridge.getVolumeId(), 'good');
+    assert.equal(bridge.getFocusedId(), 'good-a');
+    assert.ok(bridge.items.find(item => item.id === 'good-a'));
+    assert.ok(events.includes('volume-load:error'));
+    assert.ok(events.includes('volume-switch:error'));
+  });
 });
