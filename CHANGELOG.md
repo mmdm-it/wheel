@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## [4.1.2] - 2025-12-25
+
+### Added
+- Telemetry payload/order assertions for volume switching and deep-link hydration, including error paths and resolver failures
+
+### Changed
+- Strengthened queue/cancel coverage to ensure only final queued switches complete
+
 ## [4.1.1] - 2025-12-25
 
 ### Added
