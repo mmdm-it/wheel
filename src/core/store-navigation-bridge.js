@@ -93,7 +93,7 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
     try {
       manifest = await volAdapter.loadManifest();
     } catch (err) {
-      emit({ type: 'volume-load:error', error: err });
+      emit({ type: 'volume-load:error', error: err, adapter: volAdapter });
       throw err;
     }
 

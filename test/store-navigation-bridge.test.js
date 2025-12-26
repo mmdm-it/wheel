@@ -159,7 +159,7 @@ describe('store-navigation-bridge (catalog)', () => {
     assert.ok(events.filter(e => e === 'volume-switch:complete').length >= 2);
   });
 
-  it('emits error telemetry and preserves volume when manifest load throws', async () => {
+  it('emits error telemetry with adapter context when manifest load throws', async () => {
     const events = [];
 
     const goodAdapter = {
@@ -196,14 +196,17 @@ describe('store-navigation-bridge (catalog)', () => {
       capabilities: {}
     };
 
-    const bridge = await createStoreNavigationBridge({ adapter: goodAdapter, onEvent: evt => events.push(evt.type) });
+    const bridge = await createStoreNavigationBridge({ adapter: goodAdapter, onEvent: evt => events.push(evt) });
     events.length = 0;
 
     await assert.rejects(() => bridge.setVolume(badAdapter), /load failed/);
 
     assert.equal(bridge.getVolumeId(), 'good-load');
-    assert.ok(events.includes('volume-load:error'));
-    assert.ok(events.includes('volume-switch:error'));
+    const types = events.map(e => e.type);
+    assert.ok(types.includes('volume-load:error'));
+    assert.ok(types.includes('volume-switch:error'));
+    const loadErr = events.find(e => e.type === 'volume-load:error');
+    assert.equal(loadErr.adapter.volumeId, 'bad-load');
   });
 
   it('rejects invalid manifest switches and keeps prior volume', async () => {
