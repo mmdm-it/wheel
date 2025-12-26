@@ -1,6 +1,7 @@
 import { catalogAdapter } from '../adapters/catalog-adapter.js';
 import { createInteractionStore, interactionEvents } from './interaction-store.js';
 import { NavigationState } from '../navigation/navigation-state.js';
+import { safeEmit } from './telemetry.js';
 
 // Wires the interaction store to a volume adapter and navigation state.
 // Returns { store, nav, normalized, items, focusById, getFocusedId, setVolume, getVolumeId }.
@@ -38,15 +39,7 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
     return true;
   };
 
-  const emit = payload => {
-    if (typeof onEvent === 'function') {
-      try {
-        onEvent(payload);
-      } catch (err) {
-        console.warn('[store-navigation-bridge] onEvent threw', err);
-      }
-    }
-  };
+  const emit = payload => safeEmit(onEvent, payload);
 
   const loadVolume = async (volAdapter, { requestedFocusId = null } = {}) => {
     emit({ type: 'volume-load:start', adapter: volAdapter, requestedFocusId });

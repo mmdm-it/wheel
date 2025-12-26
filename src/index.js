@@ -4,6 +4,7 @@ import { buildBibleVerseCousinChain, buildBibleBookCousinChain } from './navigat
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
 import { FocusRingView } from './view/focus-ring-view.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
+import { safeEmit } from './core/telemetry.js';
 
 export {
   getViewportInfo,
@@ -19,14 +20,14 @@ export {
 const NODE_RADIUS_RATIO = 0.035; // 3.5% of shorter side
 const MAGNIFIER_RADIUS_RATIO = 0.060; // larger than nodes
 
-const logOnce = (() => {
+const logOnceFactory = logger => {
   let logged = false;
   return (...args) => {
     if (logged) return;
     logged = true;
-    console.log(...args);
+    logger(...args);
   };
-})();
+};
 
 const normalizeAngle = angle => {
   const twoPi = 2 * Math.PI;
@@ -77,6 +78,11 @@ export function createApp({
   onChildrenClick
 }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
+  const debug = Boolean(contextOptions.debug);
+  const emit = payload => safeEmit(contextOptions.onEvent, payload);
+  const logOnce = logOnceFactory((...args) => {
+    if (debug) console.log(...args);
+  });
   let preserveOrderFlag = preserveOrder;
   let normalized = normalizeItems(items, { preserveOrder: preserveOrderFlag });
   const formatLabel = typeof labelFormatter === 'function'
@@ -113,12 +119,16 @@ export function createApp({
   const gapCount = normalized.filter(item => item === null).length;
   const firstItem = normalized.find(item => item !== null);
   const lastItem = [...normalized].reverse().find(item => item !== null);
-  console.info('[FocusRing] chain summary', {
+  const chainSummary = {
     total: normalized.length,
     gaps: gapCount,
     first: firstItem?.name || firstItem?.id || null,
     last: lastItem?.name || lastItem?.id || null
-  });
+  };
+  if (debug) {
+    console.info('[FocusRing] chain summary', chainSummary);
+  }
+  emit({ type: 'focus-ring:chain-summary', payload: chainSummary });
   const nav = new NavigationState();
   const safeIndex = (() => {
     if (!normalized.length) return 0;
