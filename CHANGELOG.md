@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## [4.1.1] - 2025-12-25
+
+### Added
+- Queue-and-replace guard rails for concurrent volume switches with telemetry events for queued/cancelled paths
+- Integration test coverage for queued/replaced switches and invalid manifest rejection preserving prior volume
+
+### Changed
+- Telemetry emits now include validation start/success for volume loads
+
 ## [4.1.0] - 2025-12-25
 
 ### Added
