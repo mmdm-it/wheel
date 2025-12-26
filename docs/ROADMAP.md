@@ -4,7 +4,7 @@
 
 ### Release Train Status (v4)
 - v4.0.0 Baseline data + UI lift — done (seeded from v3)
-- v4.1 Adapter + state-store foundation — active (in-progress builds are numbered 4.0.x until v4.1 ships)
+- v4.1 Adapter + state-store foundation — done (shipped as 4.1.0)
 - v4.2 Volume-safe interaction loop — planned
 - v4.3 Detail/pyramid rebuild on adapters — planned
 - v4.4 Theming + accessibility hardening — planned
@@ -25,12 +25,14 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 
 ## Milestones
 
-### v4.1 — Adapter + Store Foundation (current)
+### v4.1 — Adapter + Store Foundation (shipped in 4.1.0)
 **Goal:** Stand up the new architecture skeleton while keeping the existing UI assets.
 - Define adapter contract (`loadManifest`, `validate`, `normalize`, `layoutSpec`, `capabilities`).
 - Add JSON Schemas for each manifest; enforce via `node --test`.
 - Introduce interaction store/state machine (actions for rotate, focus, volume switch, deep link).
 - Wrap existing geometry/rendering to consume `normalized + layoutSpec` shapes.
+
+**Status:** Complete. Adapter contract and schemas are enforced in tests; interaction store drives render/navigation; telemetry emits use centralized `safeEmit`; debug logging is gated.
 
 **Exit criteria:** adapter contract merged; schemas enforced in CI; store drives render loop for one sample volume.
 
