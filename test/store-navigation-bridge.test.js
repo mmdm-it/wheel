@@ -601,4 +601,5 @@ describe('store-navigation-bridge (catalog)', () => {
     assert.ok(events.includes('volume-switch:cancelled'));
     assert.ok(events.filter(e => e === 'volume-switch:complete').length === 2); // first and last only
   });
+
 });
