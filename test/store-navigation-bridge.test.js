@@ -244,4 +244,55 @@ describe('store-navigation-bridge (catalog)', () => {
     assert.ok(events.includes('volume-switch:start'));
     assert.ok(events.includes('volume-switch:complete'));
   });
+
+  it('supports rotation → volume switch → rotation without stale nav state', async () => {
+    const adapterOne = {
+      volumeId: 'rot-one',
+      async loadManifest() {
+        return { items: [{ id: 'r1-a', label: 'R1 A' }, { id: 'r1-b', label: 'R1 B' }, { id: 'r1-c', label: 'R1 C' }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'rot-one' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    };
+
+    const adapterTwo = {
+      volumeId: 'rot-two',
+      async loadManifest() {
+        return { items: [{ id: 'r2-a', label: 'R2 A' }, { id: 'r2-b', label: 'R2 B' }, { id: 'r2-c', label: 'R2 C' }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'rot-two' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    };
+
+    const bridge = await createStoreNavigationBridge({ adapter: adapterOne });
+
+    // rotate forward once on volume one
+    bridge.nav.selectOffset(1);
+    assert.equal(bridge.getFocusedId(), 'r1-b');
+
+    // switch volumes and carry focusId
+    await bridge.setVolume(adapterTwo, { focusId: 'r2-b' });
+    assert.equal(bridge.getVolumeId(), 'rot-two');
+    assert.equal(bridge.getFocusedId(), 'r2-b');
+
+    // rotate again after switch; ensure new items drive nav
+    bridge.nav.selectOffset(1);
+    assert.equal(bridge.getFocusedId(), 'r2-c');
+  });
 });
