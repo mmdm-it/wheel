@@ -1,6 +1,6 @@
 # Architecture V4 (Greenfield Plan)
 
-> Goal: keep the proven geometry/rendering pieces but rebuild around adapters, schemas, and a single interaction store/state machine. Every dimension is a plugin; renderers stay data-agnostic.
+> Goal: keep the proven geometry/rendering pieces but rebuild around adapters, schemas, and a single interaction store/state machine. Every volume ships a plugin adapter; renderers stay data-agnostic.
 
 ## Layering
 
@@ -13,14 +13,14 @@ Rendering Pipeline (views) — consumes normalized data + layoutSpec
     ↓ layout math
 Geometry (pure functions: focus ring, pyramid, detail sector)
     ↓ data
-Adapters (per-dimension) — load/validate/normalize + layoutSpec + capabilities
+Adapters (per-volume) — load/validate/normalize + layoutSpec + capabilities
     ↓ IO
 Services (fetch/cache/telemetry/feature flags)
 ```
 
-## Dimension Adapter Contract
+## Volume Adapter Contract
 
-Each dimension implements:
+Each volume implements:
 - `loadManifest(env): Promise<RawManifest>` — fetch/load data.
 - `validate(raw): ValidationResult` — JSON Schema + custom invariants (no side effects).
 - `normalize(raw): { items, links, meta }` — stable typed shape (no UI concerns).
@@ -36,9 +36,9 @@ Each dimension implements:
 ## Interaction Store / State Machine
 
 Single source of truth for UI state.
-- State: `{ dimension, rotation, focusId, hoverId, animation: 'idle'|'spinning'|'transitioning', modal: null|{type,payload}, error: null|ErrorLike }`.
-- Events: `SET_DIMENSION`, `ROTATE_TO`, `FOCUS`, `HOVER`, `ANIMATION_START/END`, `DEEP_LINK`, `LOAD_RESULT`.
-- Guards: block/queue dimension switch during transitions; clear hover on dimension change; reject stale loads; debounce rotation commands while applying layout.
+- State: `{ volume, rotation, focusId, hoverId, animation: 'idle'|'spinning'|'transitioning', modal: null|{type,payload}, error: null|ErrorLike }`.
+- Events: `SET_VOLUME`, `ROTATE_TO`, `FOCUS`, `HOVER`, `ANIMATION_START/END`, `DEEP_LINK`, `LOAD_RESULT`.
+- Guards: block/queue volume switch during transitions; clear hover on volume change; reject stale loads; debounce rotation commands while applying layout.
 - Side effects: confined to effect handlers (load adapter, fetch manifest, log telemetry); reducers remain pure.
 
 ## Rendering Pipeline
@@ -46,19 +46,19 @@ Single source of truth for UI state.
 - Inputs: `normalized data`, `layoutSpec`, `interaction state`.
 - Views are pure: state → DOM/SVG/Canvas instructions; no fetch/validation.
 - Geometry helpers provide positions/angles/paths; they take `layoutSpec` and viewport.
-- Theming: base tokens + per-dimension tokens injected at render time; no inline styles/`!important`.
+- Theming: base tokens + per-volume tokens injected at render time; no inline styles/`!important`.
 
 ## Validation & Data Contracts
 
 - JSON Schemas per manifest; enforced in CI/test via `node --test`.
 - Adapters run `validate` in build/test; runtime validation logs warnings only.
-- Invariants to keep: unique IDs, acyclic parent/child links, required fields per level, dimension capability flags consistent with data.
+- Invariants to keep: unique IDs, acyclic parent/child links, required fields per level, volume capability flags consistent with data.
 
 ## Testing Strategy
 
 - Unit: adapter `validate/normalize/layoutSpec`, geometry functions, store reducers/guards.
-- Integration: dimension switch during rotation; deep-link hydration; invalid manifest rejection path; theme swap.
-- Fixtures: per-dimension sample manifests + synthetic stress sets (large chains, sparse cousins, deep hierarchies).
+- Integration: volume switch during rotation; deep-link hydration; invalid manifest rejection path; theme swap.
+- Fixtures: per-volume sample manifests + synthetic stress sets (large chains, sparse cousins, deep hierarchies).
 
 ## Migration Notes (reuse from v3)
 
@@ -69,24 +69,24 @@ Single source of truth for UI state.
 
 ## Telemetry & Ops
 
-- Log adapter load/validate timings, dimension switches, rotation errors.
+- Log adapter load/validate timings, volume switches, rotation errors.
 - Surface warnings for invalid manifests without breaking the session.
-- Feature flags for experimental dimensions or layouts flow through adapters/capabilities, not global constants.
+- Feature flags for experimental volumes or layouts flow through adapters/capabilities, not global constants.
 
 ## Accessibility & Performance
 
 - Provide ARIA labels from normalized metadata; ensure focus order respects interaction state.
 - Respect reduced motion; allow theme tokens to adjust motion duration/curves.
-- Use lazy data hydration per adapter when supported; cache manifests per dimension.
+- Use lazy data hydration per adapter when supported; cache manifests per volume.
 
 **Roadmap alignment:** Build/test checkpoints live in `docs/ROADMAP.md` (v4.1–v4.4) and reference this contract for adapter/store expectations.
 
 ## Migration Checklist (from v3 → v4)
 
 - **Data & validation**: Turn `data/*/manifest.json` into JSON Schemas + adapter `validate/normalize`; move runtime validator logic into tests.
-- **Adapters**: Create one adapter per dimension (gutenberg/bible, catalog/mmdm, calendar, places); each owns `loadManifest`, `validate`, `normalize`, `layoutSpec`, `capabilities`.
-- **Interaction state**: Replace scattered navigation/rotation/dimension globals with a single store/state machine (actions: rotate, focus, set-dimension, deep-link, animation start/end).
+- **Adapters**: Create one adapter per volume (gutenberg/bible, catalog/mmdm, calendar, places); each owns `loadManifest`, `validate`, `normalize`, `layoutSpec`, `capabilities`.
+- **Interaction state**: Replace scattered navigation/rotation/volume globals with a single store/state machine (actions: rotate, focus, set-volume, deep-link, animation start/end).
 - **Rendering**: Point focus-ring/geometry and views to consume `normalized + layoutSpec`; delete data-specific conditionals in shared render/navigation code.
 - **Child pyramid & detail**: Rebuild on normalized data; sampling/templates driven by adapter layout/meta (no raw manifest assumptions).
-- **Theming**: Introduce base tokens + per-dimension theme tokens; remove inline/implicit styling.
-- **Tests**: Add schema tests for each manifest; unit tests for adapter normalize/layoutSpec; integration tests for dimension switching during rotation and deep-link hydration.
+- **Theming**: Introduce base tokens + per-volume theme tokens; remove inline/implicit styling.
+- **Tests**: Add schema tests for each manifest; unit tests for adapter normalize/layoutSpec; integration tests for volume switching during rotation and deep-link hydration.

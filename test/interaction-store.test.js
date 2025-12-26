@@ -3,7 +3,7 @@ import { describe, it } from 'node:test';
 import { createInteractionStore, interactionEvents, getDefaultInteractionState } from '../src/core/interaction-store.js';
 
 const getStateShape = state => ({
-  dimension: state.dimension,
+  volume: state.volume,
   rotation: state.rotation,
   focusId: state.focusId,
   hoverId: state.hoverId,
@@ -18,13 +18,30 @@ describe('interaction-store', () => {
     assert.deepEqual(getStateShape(store.getState()), getStateShape(getDefaultInteractionState()));
   });
 
-  it('handles dimension and rotation updates', () => {
+  it('handles volume and rotation updates', () => {
     const store = createInteractionStore();
-    store.dispatch({ type: interactionEvents.SET_DIMENSION, dimension: 'catalog' });
+    store.dispatch({ type: interactionEvents.SET_VOLUME, volume: 'catalog' });
     store.dispatch({ type: interactionEvents.SET_ROTATION, rotation: Math.PI / 4 });
     const state = store.getState();
-    assert.equal(state.dimension, 'catalog');
+    assert.equal(state.volume, 'catalog');
     assert.equal(state.rotation, Math.PI / 4);
+  });
+
+  it('clears hover when volume changes', () => {
+    const store = createInteractionStore();
+    store.dispatch({ type: interactionEvents.HOVER, hoverId: 'foo' });
+    store.dispatch({ type: interactionEvents.SET_VOLUME, volume: 'next' });
+    assert.equal(store.getState().hoverId, null);
+  });
+
+  it('queues rotation while animating and applies on animation end', () => {
+    const store = createInteractionStore();
+    store.dispatch({ type: interactionEvents.ANIMATION_START, animation: 'transitioning' });
+    store.dispatch({ type: interactionEvents.SET_ROTATION, rotation: Math.PI / 2 });
+    assert.notEqual(store.getState().rotation, Math.PI / 2);
+    store.dispatch({ type: interactionEvents.ANIMATION_END });
+    assert.equal(store.getState().rotation, Math.PI / 2);
+    assert.equal(store.getState().animation, 'idle');
   });
 
   it('notifies subscribers on dispatch', () => {
@@ -40,7 +57,7 @@ describe('interaction-store', () => {
   });
 
   it('returns state unchanged for unknown actions', () => {
-    const store = createInteractionStore({ initialState: { dimension: 'places' } });
+    const store = createInteractionStore({ initialState: { volume: 'places' } });
     const before = store.getState();
     store.dispatch({ type: 'UNKNOWN_ACTION' });
     const after = store.getState();

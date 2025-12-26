@@ -1,11 +1,24 @@
 // Adapter contract sketch for v4 architecture.
-// Each dimension implements these functions; this is a type-hinting scaffold.
+// Each volume implements these functions; this is a type-hinting scaffold.
 
 export const adapterCapabilities = Object.freeze({
   SEARCH: 'search',
   DEEP_LINK: 'deepLink',
   THEMING: 'theming'
 });
+
+export const normalizeCapabilities = (capabilities = {}) => ({
+  search: Boolean(capabilities.search),
+  deepLink: Boolean(capabilities.deepLink),
+  theming: Boolean(capabilities.theming)
+});
+
+export const assertLayoutSpecShape = spec => {
+  if (!spec || typeof spec !== 'object') {
+    throw new Error('layoutSpec must be an object');
+  }
+  return spec;
+};
 
 export const createAdapterContract = ({
   loadManifest,
@@ -18,11 +31,11 @@ export const createAdapterContract = ({
   validate,
   normalize,
   layoutSpec,
-  capabilities
+  capabilities: normalizeCapabilities(capabilities)
 });
 
 export const adapterShapeDescription = `
-Adapter contract (per dimension):
+Adapter contract (per volume):
 - loadManifest(env): Promise<RawManifest>
 - validate(raw): ValidationResult
 - normalize(raw): { items, links, meta }

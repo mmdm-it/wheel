@@ -2,7 +2,7 @@
 // Provides a single source of truth for UI state with basic event handling.
 
 const defaultState = Object.freeze({
-  dimension: null,
+  volume: null,
   rotation: 0,
   focusId: null,
   hoverId: null,
@@ -12,7 +12,7 @@ const defaultState = Object.freeze({
 });
 
 export const interactionEvents = Object.freeze({
-  SET_DIMENSION: 'SET_DIMENSION',
+  SET_VOLUME: 'SET_VOLUME',
   SET_ROTATION: 'SET_ROTATION',
   FOCUS: 'FOCUS',
   HOVER: 'HOVER',
@@ -24,8 +24,10 @@ export const interactionEvents = Object.freeze({
 
 const reducer = (state, action) => {
   switch (action?.type) {
-    case interactionEvents.SET_DIMENSION:
-      return { ...state, dimension: action.dimension ?? null };
+    case 'SET_DIMENSION':
+      return { ...state, volume: action.dimension ?? action.volume ?? null, hoverId: null };
+    case interactionEvents.SET_VOLUME:
+      return { ...state, volume: action.volume ?? null, hoverId: null };
     case interactionEvents.SET_ROTATION:
       return { ...state, rotation: Number.isFinite(action.rotation) ? action.rotation : state.rotation };
     case interactionEvents.FOCUS:
@@ -46,8 +48,14 @@ const reducer = (state, action) => {
 };
 
 export const createInteractionStore = (options = {}) => {
-  const initial = { ...defaultState, ...(options.initialState || {}) };
+  const provided = options.initialState || {};
+  const normalizedInitial = {
+    ...provided,
+    volume: provided.volume ?? provided.dimension ?? defaultState.volume
+  };
+  const initial = { ...defaultState, ...normalizedInitial };
   let state = initial;
+  let pendingRotation = null;
   const listeners = new Set();
 
   const getState = () => state;
@@ -59,7 +67,24 @@ export const createInteractionStore = (options = {}) => {
   };
 
   const dispatch = action => {
+    if (!action?.type) return state;
+
+    if (action.type === interactionEvents.SET_ROTATION && state.animation !== 'idle') {
+      pendingRotation = action;
+      return state;
+    }
+
+    if (action.type === interactionEvents.SET_VOLUME || action.type === 'SET_DIMENSION') {
+      pendingRotation = null;
+    }
+
     state = reducer(state, action);
+
+    if (action.type === interactionEvents.ANIMATION_END && pendingRotation) {
+      state = reducer(state, pendingRotation);
+      pendingRotation = null;
+    }
+
     listeners.forEach(fn => fn(state, action));
     return state;
   };
