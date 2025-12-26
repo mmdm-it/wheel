@@ -5,7 +5,7 @@ import { safeEmit } from './telemetry.js';
 
 // Wires the interaction store to a volume adapter and navigation state.
 // Returns { store, nav, normalized, items, focusById, getFocusedId, setVolume, getVolumeId }.
-export async function createStoreNavigationBridge({ adapter = catalogAdapter, initialFocusId = null, onEvent = null } = {}) {
+export async function createStoreNavigationBridge({ adapter = catalogAdapter, initialFocusId = null, onEvent = null, onError = null } = {}) {
   const store = createInteractionStore();
   const nav = new NavigationState();
 
@@ -13,6 +13,8 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
   let items = [];
   let indexById = new Map();
   let currentVolumeId = null;
+  let currentAdapter = adapter;
+  let lastError = store.getState().error;
 
   const deriveVolumeId = (volAdapter, volNormalized) =>
     volAdapter.volumeId || volNormalized?.meta?.volumeId || volNormalized?.meta?.id || volNormalized?.meta?.name || 'volume';
@@ -40,6 +42,20 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
   };
 
   const emit = payload => safeEmit(onEvent, payload);
+
+  const notifyError = (error, meta = {}) => {
+    if (error === lastError) return;
+    lastError = error;
+    const payload = {
+      ...meta,
+      error,
+      adapter: meta.adapter ?? currentAdapter,
+      volumeId: meta.volumeId ?? currentVolumeId,
+      cleared: !error
+    };
+    emit({ type: 'store:error', ...payload });
+    if (typeof onError === 'function') onError(error, payload);
+  };
 
   const deferred = () => {
     let resolve;
@@ -94,6 +110,7 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
       manifest = await volAdapter.loadManifest();
     } catch (err) {
       store.dispatch({ type: interactionEvents.SET_ERROR, error: err });
+      notifyError(err, { adapter: volAdapter, volumeId: volAdapter.volumeId || currentVolumeId, phase: 'load' });
       emit({ type: 'volume-load:error', error: err, adapter: volAdapter });
       throw err;
     }
@@ -121,11 +138,14 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
 
     store.dispatch({ type: interactionEvents.SET_VOLUME, volume: volumeId });
 
-    normalized = nextNormalized;
-    items = nextItems;
+    currentAdapter = volAdapter;
     currentVolumeId = volumeId;
 
+    normalized = nextNormalized;
+    items = nextItems;
+
     store.dispatch({ type: interactionEvents.SET_ERROR, error: null });
+    notifyError(null, { adapter: volAdapter, volumeId, phase: 'recover' });
     emit({ type: 'volume-load:success', volumeId, itemCount: items.length });
   };
 
