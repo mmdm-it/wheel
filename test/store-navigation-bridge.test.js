@@ -28,7 +28,8 @@ describe('store-navigation-bridge (catalog)', () => {
   });
 
   it('supports volume switching and updates store', async () => {
-    const first = await createStoreNavigationBridge();
+    const events = [];
+    const first = await createStoreNavigationBridge({ onEvent: evt => events.push(evt.type) });
 
     // Stub a second adapter that looks like catalog but is distinct by volume id.
     const secondAdapter = {
@@ -59,5 +60,9 @@ describe('store-navigation-bridge (catalog)', () => {
     assert.equal(first.getFocusedId(), 'beta');
     assert.equal(result.volumeId, 'second-volume');
     assert.ok(first.items.find(item => item.id === 'alpha'));
+    assert.ok(events.includes('volume-load:start'));
+    assert.ok(events.includes('volume-load:success'));
+    assert.ok(events.includes('volume-switch:start'));
+    assert.ok(events.includes('volume-switch:complete'));
   });
 });

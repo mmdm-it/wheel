@@ -4,7 +4,7 @@ import { NavigationState } from '../navigation/navigation-state.js';
 
 // Wires the interaction store to a volume adapter and navigation state.
 // Returns { store, nav, normalized, items, focusById, getFocusedId, setVolume, getVolumeId }.
-export async function createStoreNavigationBridge({ adapter = catalogAdapter, initialFocusId = null } = {}) {
+export async function createStoreNavigationBridge({ adapter = catalogAdapter, initialFocusId = null, onEvent = null } = {}) {
   const store = createInteractionStore();
   const nav = new NavigationState();
 
@@ -38,12 +38,33 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
     return true;
   };
 
+  const emit = payload => {
+    if (typeof onEvent === 'function') {
+      try {
+        onEvent(payload);
+      } catch (err) {
+        console.warn('[store-navigation-bridge] onEvent threw', err);
+      }
+    }
+  };
+
   const loadVolume = async (volAdapter, { requestedFocusId = null } = {}) => {
-    const manifest = await volAdapter.loadManifest();
+    emit({ type: 'volume-load:start', adapter: volAdapter, requestedFocusId });
+
+    let manifest;
+    try {
+      manifest = await volAdapter.loadManifest();
+    } catch (err) {
+      emit({ type: 'volume-load:error', error: err });
+      throw err;
+    }
+
     const validation = volAdapter.validate(manifest);
     if (!validation.ok) {
       const msg = (validation.errors || []).join('; ');
-      throw new Error(`manifest validation failed: ${msg}`);
+      const err = new Error(`manifest validation failed: ${msg}`);
+      emit({ type: 'volume-load:error', error: err, validation });
+      throw err;
     }
 
     const nextNormalized = volAdapter.normalize(manifest);
@@ -62,12 +83,16 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
     normalized = nextNormalized;
     items = nextItems;
     currentVolumeId = volumeId;
+
+    emit({ type: 'volume-load:success', volumeId, itemCount: items.length });
   };
 
   await loadVolume(adapter, { requestedFocusId: initialFocusId });
 
   const setVolume = async (nextAdapter, { focusId = null } = {}) => {
+    emit({ type: 'volume-switch:start', from: currentVolumeId, toAdapter: nextAdapter });
     await loadVolume(nextAdapter, { requestedFocusId: focusId });
+    emit({ type: 'volume-switch:complete', to: currentVolumeId });
     return { volumeId: currentVolumeId, items, normalized };
   };
 
