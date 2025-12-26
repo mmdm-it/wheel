@@ -63,7 +63,7 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - Detail sector uses adapter-provided templates/layout metadata.
 - Expand plugin surface for detail renderers (text, cards, media) with per-volume themes.
 
-**Status:** Active. Pyramid geometry helpers landed; catalog adapter now emits pyramid capacity/sample/place hooks. Next: wire view layer to consume placements and stand up detail-sector plugin registry with adapter-provided templates.
+**Status:** Active. Pyramid geometry helpers landed; catalog adapter emits pyramid capacity/sample/place hooks; pyramid view instructions helper added; detail plugin registry scaffolded. Next: wire pyramid instructions into the UI and stand up detail-sector plugins/templates per adapter.
 
 **Exit criteria:** pyramid/detail work for at least two volumes; migrations stable; theming respected.
 
