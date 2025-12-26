@@ -5,7 +5,7 @@
 ### Release Train Status (v4)
 - v4.0.0 Baseline data + UI lift — done (seeded from v3)
 - v4.1 Adapter + state-store foundation — done (shipped as 4.1.0)
-- v4.2 Volume-safe interaction loop — active
+- v4.2 Volume-safe interaction loop — active (queue/cancel + deep-link hydration done)
 - v4.3 Detail/pyramid rebuild on adapters — planned
 - v4.4 Theming + accessibility hardening — planned
 - v4.5 Dimension System (lens: language/time) — planned
@@ -49,8 +49,9 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 
 **Near-term focus (internal):**
 - Add store-level guard rails for concurrent volume switches (queue/cancel behavior covered by tests).
-- Emit telemetry events for load/validate/switch stages via `safeEmit` to prove observability during interactions.
-- Add integration tests: rotation → switch → rotation, invalid manifest rejection, deep-link hydration stability.
+- Emit telemetry events for load/validate/switch/deep-link stages via `safeEmit` to prove observability during interactions. (DONE)
+- Add integration tests: rotation → switch → rotation (DONE); invalid manifest rejection (DONE); deep-link hydration stability (DONE).
+- Remaining: stress/perf scenarios under rapid switches; UI/UX error affordances.
 
 **Exit criteria:** volume switch tests green; UX smooth under load; errors degrade gracefully.
 
