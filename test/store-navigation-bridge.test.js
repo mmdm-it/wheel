@@ -207,6 +207,52 @@ describe('store-navigation-bridge (catalog)', () => {
     assert.ok(types.includes('volume-switch:error'));
     const loadErr = events.find(e => e.type === 'volume-load:error');
     assert.equal(loadErr.adapter.volumeId, 'bad-load');
+    assert.ok(bridge.store.getState().error instanceof Error);
+  });
+
+  it('sets and clears store error state around failed and successful switches', async () => {
+    const goodAdapter = {
+      volumeId: 'err-good',
+      async loadManifest() {
+        return { items: [{ id: 'g', label: 'G' }] };
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'err-good' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    };
+
+    const badAdapter = {
+      volumeId: 'err-bad',
+      async loadManifest() {
+        throw new Error('explode');
+      },
+      validate() {
+        return { ok: true };
+      },
+      normalize(raw) {
+        return { items: raw.items, meta: { volumeId: 'err-bad' } };
+      },
+      layoutSpec() {
+        return {};
+      },
+      capabilities: {}
+    };
+
+    const bridge = await createStoreNavigationBridge({ adapter: goodAdapter });
+    assert.equal(bridge.store.getState().error, null);
+
+    await assert.rejects(() => bridge.setVolume(badAdapter), /explode/);
+    assert.ok(bridge.store.getState().error instanceof Error);
+
+    await bridge.setVolume(goodAdapter);
+    assert.equal(bridge.store.getState().error, null);
   });
 
   it('rejects invalid manifest switches and keeps prior volume', async () => {

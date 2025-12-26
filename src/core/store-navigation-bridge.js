@@ -93,6 +93,7 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
     try {
       manifest = await volAdapter.loadManifest();
     } catch (err) {
+      store.dispatch({ type: interactionEvents.SET_ERROR, error: err });
       emit({ type: 'volume-load:error', error: err, adapter: volAdapter });
       throw err;
     }
@@ -124,6 +125,7 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
     items = nextItems;
     currentVolumeId = volumeId;
 
+    store.dispatch({ type: interactionEvents.SET_ERROR, error: null });
     emit({ type: 'volume-load:success', volumeId, itemCount: items.length });
   };
 
