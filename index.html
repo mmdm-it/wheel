@@ -18,6 +18,7 @@
     import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookCousinChain, validateVolumeRoot } from './src/index.js';
     import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMillennia, buildBibleSections, buildBibleBooks, buildCatalogManufacturers } from './src/adapters/volume-helpers.js';
     import { createVolumeLayoutSpec } from './src/adapters/volume-layout.js';
+    import { catalogAdapter } from './src/adapters/catalog-adapter.js';
 
     const svg = document.getElementById('app');
     const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
@@ -757,7 +758,22 @@
         catalogModeRef: () => catalogMode,
         setCatalogMode: next => { catalogMode = next; }
       });
-      const pyramidConfig = layoutSpec?.pyramid || null;
+      const adapter = volume === 'catalog' ? catalogAdapter : null;
+      let adapterNormalized = null;
+      let adapterLayoutSpec = null;
+      if (adapter) {
+        try {
+          adapterNormalized = adapter.normalize(manifest);
+          adapterLayoutSpec = adapter.layoutSpec(adapterNormalized, viewport);
+        } catch (err) {
+          console.warn('[wheel-v4] adapter layoutSpec failed, falling back to host config', err);
+          adapterNormalized = null;
+          adapterLayoutSpec = null;
+        }
+      }
+
+      const pyramidLayout = adapterLayoutSpec || layoutSpec;
+      const pyramidConfig = pyramidLayout?.pyramid || null;
       const normalized = {
         items,
         links: (items || [])
@@ -780,8 +796,9 @@
         onParentClick: parentHandler,
         onChildrenClick: childrenHandler,
         pyramid: pyramidConfig,
-        pyramidLayoutSpec: layoutSpec,
-        pyramidNormalized: normalized,
+        pyramidLayoutSpec: pyramidLayout,
+        pyramidNormalized: adapterNormalized || normalized,
+        pyramidAdapter: adapter,
         onSelectSecondary: translationId => {
           const url = new URL(window.location.href);
           const currentItem = app?.nav?.getCurrent?.();
