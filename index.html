@@ -16,6 +16,7 @@
   <script type="module">
     import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookCousinChain } from './src/index.js';
       import { validateVolumeRoot } from './src/index.js';
+      import { createVolumePyramidConfig } from './src/pyramid/volume-pyramid.js';
 
     const svg = document.getElementById('app');
     const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
@@ -1000,101 +1001,26 @@
         return false;
       };
 
-      const pyramidConfig = (() => {
-        const byVolume = {
-          places: {
-            getChildren: ({ selected }) => {
-              if (!selected?.id) return [];
-              if (!placesState?.levels?.length) return [];
-              if (placesState.levelIndex >= placesState.levels.length - 1) return [];
-              const nextLevelIndex = placesState.levelIndex + 1;
-              const nextLevelName = placesState.levels[nextLevelIndex];
-              const { items: childItems } = buildPlacesLevel(
-                placesState.manifest,
-                placesState.levels,
-                nextLevelIndex,
-                {
-                  parentItem: selected,
-                  contextParentId: selected.id,
-                  selectedId: placesState.selections[nextLevelName] || null
-                }
-              );
-              return childItems || [];
-            },
-            onClick: instr => {
-              if (!instr?.item || volume !== 'places') return;
-              const nextLevelIndex = placesState.levelIndex + 1;
-              if (nextLevelIndex >= (placesState.levels?.length || 0)) return;
-              const nextLevelName = placesState.levels[nextLevelIndex];
-              placesState.selections[nextLevelName] = instr.item.id || instr.id || null;
-              placesChildrenHandler({ selected: instr.item, setItems: app?.setPrimaryItems });
-            }
-          },
-          catalog: {
-            getChildren: ({ selected }) => getCatalogChildren(manifest, selected),
-            onClick: instr => {
-              if (!instr?.item || volume !== 'catalog') return;
-              const parent = app?.nav?.getCurrent?.();
-              const models = getCatalogChildren(manifest, parent);
-              if (!models.length) return;
-              const selectedIdx = models.findIndex(m => m.id === instr.item.id);
-              catalogMode = 'model';
-              if (app?.setParentButtons) {
-                app.setParentButtons({ showOuter: true, showInner: true });
-              }
-              if (app?.setPrimaryItems) {
-                app.setPrimaryItems(models, selectedIdx >= 0 ? selectedIdx : 0, true);
-              }
-            }
-          },
-          calendar: {
-            getChildren: ({ selected }) => getCalendarMonths(manifest, selected, calendarMode),
-            onClick: instr => {
-              if (!instr?.item || volume !== 'calendar') return;
-              const year = app?.nav?.getCurrent?.();
-              if (!year) return;
-              const months = getCalendarMonths(manifest, year, calendarMode);
-              if (!months.length) return;
-              const selectedIdx = months.findIndex(m => m.id === instr.item.id);
-              calendarMode = 'month';
-              calendarMonthContext = {
-                yearId: year?.id || null,
-                millenniumId: year?.parentId || year?.parent_id || null
-              };
-              if (app?.setParentButtons) {
-                app.setParentButtons({ showOuter: true, showInner: true });
-              }
-              if (app?.setPrimaryItems) {
-                app.setPrimaryItems(months, selectedIdx >= 0 ? selectedIdx : 0, true);
-              }
-            }
-          },
-          bible: {
-            getChildren: ({ selected }) => getBibleChapters(manifest, selected, namesMap, bibleMode),
-            onClick: instr => {
-              if (!instr?.item || volume !== 'bible') return;
-              const book = app?.nav?.getCurrent?.();
-              if (!book || bibleMode !== 'book') return;
-              const chapters = getBibleChapters(manifest, book, namesMap, bibleMode);
-              if (!chapters.length) return;
-              const selectedIdx = chapters.findIndex(c => c.id === instr.item.id);
-              bibleMode = 'chapter';
-              bibleChapterContext = {
-                bookId: book.id,
-                sectionId: book.sectionId,
-                testamentId: book.testamentId
-              };
-              if (app?.setParentButtons) {
-                app.setParentButtons({ showOuter: true, showInner: true });
-              }
-              if (app?.setPrimaryItems) {
-                app.setPrimaryItems(chapters, selectedIdx >= 0 ? selectedIdx : 0, true);
-              }
-            }
-          }
-        };
-        return byVolume[volume] || null;
-      })();
+      const pyramidConfig = createVolumePyramidConfig({
+        volume,
+        manifest,
+        namesMap,
+        placesState,
+        buildPlacesLevel,
+        placesChildrenHandler,
+        getCatalogChildren,
+        getCalendarMonths,
+        getBibleChapters,
+        getApp: () => app,
+        calendarModeRef: () => calendarMode,
+        setCalendarMode: next => { calendarMode = next; },
+        setCalendarMonthContext: ctx => { calendarMonthContext = ctx; },
+        bibleModeRef: () => bibleMode,
+        setBibleMode: next => { bibleMode = next; },
+        setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
+        catalogModeRef: () => catalogMode,
+        setCatalogMode: next => { catalogMode = next; }
+      });
 
       app = createApp({
         svgRoot: svg,
