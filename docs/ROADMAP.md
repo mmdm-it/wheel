@@ -99,3 +99,4 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - Adapter contract: `docs/ARCHITECTURE_V4.md`
 - Prior spec (baseline geometry/contracts): `docs/ARCHITECTURE_V3.md`
 - Dimension behavior details: `docs/DIMENSION_SYSTEM.md`
+- Legacy launch tracker (v0.8/v1, bibliacatholica.org): see `../wheel/TODO.md`

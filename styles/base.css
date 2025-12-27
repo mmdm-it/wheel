@@ -129,3 +129,29 @@ svg {
 .dimension-button {
   filter: none;
 }
+
+/* Child pyramid preview rendering */
+.child-pyramid {
+  pointer-events: none;
+}
+
+.child-pyramid-node {
+  fill: rgba(0, 0, 0, 0.14);
+  stroke: rgba(0, 0, 0, 0.32);
+  stroke-width: 1px;
+  pointer-events: auto;
+  transition: transform 120ms ease, fill 120ms ease, stroke 120ms ease;
+}
+
+.child-pyramid-node:hover {
+  transform: scale(1.06);
+  fill: rgba(0, 0, 0, 0.22);
+  stroke: rgba(0, 0, 0, 0.46);
+}
+
+.child-pyramid-label {
+  fill: var(--color-text);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: clamp(12px, 1.4vmin, 18px);
+  pointer-events: none;
+}
