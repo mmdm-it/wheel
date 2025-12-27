@@ -145,11 +145,79 @@ export function layoutSpec(normalized, viewport) {
   };
 }
 
+function getManufacturer(manifest, manufacturerId) {
+  const markets = manifest?.MMdM?.markets || {};
+  for (const [marketKey, marketVal] of Object.entries(markets)) {
+    const countries = marketVal?.countries || {};
+    for (const [countryKey, countryVal] of Object.entries(countries)) {
+      const manufacturers = countryVal?.manufacturers || {};
+      if (manufacturers[manufacturerId]) {
+        return {
+          marketKey,
+          countryKey,
+          manufacturer: manufacturers[manufacturerId]
+        };
+      }
+    }
+  }
+  return null;
+}
+
+export function detailFor(selected, manifest) {
+  if (!selected) return null;
+  const id = selected.id || '';
+  const name = selected.name || id;
+  const marketCountryId = id.includes('__') ? id.split('__') : null;
+  const modelParts = id.startsWith('model:') ? id.split(':') : null;
+
+  // Manufacturer nodes come from the focus ring chain (`market__country__manufacturer`).
+  if (marketCountryId && marketCountryId.length === 3) {
+    const [, , manufacturerId] = marketCountryId;
+    const found = getManufacturer(manifest, manufacturerId);
+    const data = found?.manufacturer || {};
+    const founded = data.year_founded ? `Founded ${data.year_founded}` : null;
+    const dissolved = data.year_dissolved ? `Ended ${data.year_dissolved}` : null;
+    const lineItems = [founded, dissolved].filter(Boolean).join(' · ');
+    return {
+      type: 'card',
+      title: name,
+      body: lineItems || 'Manufacturer overview',
+      image: data?.logo || null
+    };
+  }
+
+  // Model nodes come from pyramid clicks (`model:manufacturer:cyl:modelKey`).
+  if (modelParts && modelParts.length >= 4) {
+    const [, manufacturerId, cylinderKey, modelKey] = modelParts;
+    const found = getManufacturer(manifest, manufacturerId);
+    const cylinders = found?.manufacturer?.cylinders || {};
+    const cyl = cylinders[cylinderKey] || {};
+    const models = Array.isArray(cyl.models) ? cyl.models : [];
+    const model = models.find(m => (m.engine_model || '').toString() === modelKey) || models.find((_, idx) => String(idx) === modelKey) || {};
+    const introduced = model.year_introduced ? `Introduced ${model.year_introduced}` : null;
+    const discontinued = model.year_discontinued ? `Discontinued ${model.year_discontinued}` : null;
+    const body = [introduced, discontinued, cylinderKey ? `${cylinderKey} cylinder` : null].filter(Boolean).join(' · ');
+    return {
+      type: 'card',
+      title: model.engine_model || modelKey || name,
+      body: body || 'Model details',
+      image: model.image || null
+    };
+  }
+
+  // Fallback detail text for any other level.
+  return {
+    type: 'text',
+    text: name
+  };
+}
+
 export const catalogAdapter = {
   loadManifest,
   validate,
   normalize,
   layoutSpec,
+  detailFor,
   capabilities: {
     search: false,
     deepLink: false,

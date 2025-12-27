@@ -14,12 +14,18 @@
 <body>
   <div id="version-badge" class="version-badge" aria-label="Application version"></div>
   <svg id="app" aria-label="Wheel v4"></svg>
+  <div id="detail-panel" class="detail-panel" aria-label="Detail panel">
+    <div id="detail-content" class="detail-content"></div>
+  </div>
   <script type="module">
     import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookCousinChain, validateVolumeRoot } from './src/index.js';
     import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMillennia, buildBibleSections, buildBibleBooks, buildCatalogManufacturers } from './src/adapters/volume-helpers.js';
     import { createVolumeLayoutSpec } from './src/adapters/volume-layout.js';
     import { createAdapterRegistry, createAdapterLoader } from './src/adapters/registry.js';
     import { catalogAdapter } from './src/adapters/catalog-adapter.js';
+    import { DetailPluginRegistry } from './src/view/detail/plugin-registry.js';
+    import { TextDetailPlugin } from './src/view/detail/plugins/text-plugin.js';
+    import { CardDetailPlugin } from './src/view/detail/plugins/card-plugin.js';
 
     const svg = document.getElementById('app');
     const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
@@ -138,6 +144,27 @@
       if (link) {
         link.setAttribute('href', `./styles/${theme}.css`);
       }
+    }
+
+    const detailRegistry = new DetailPluginRegistry();
+    detailRegistry.register(new TextDetailPlugin());
+    detailRegistry.register(new CardDetailPlugin());
+    const detailPanel = document.getElementById('detail-panel');
+    const detailContent = document.getElementById('detail-content');
+
+    function renderDetail(selected, adapterInstance, manifest, adapterNormalized) {
+      if (!detailPanel || !detailContent) return;
+      while (detailContent.firstChild) detailContent.removeChild(detailContent.firstChild);
+      if (!selected) return;
+      const payload = adapterInstance?.detailFor
+        ? adapterInstance.detailFor(selected, manifest, { normalized: adapterNormalized })
+        : { type: 'text', text: selected.name || selected.id || '' };
+      if (!payload) return;
+      const plugin = detailRegistry.getPlugin(payload);
+      if (!plugin) return;
+      const bounds = detailPanel.getBoundingClientRect();
+      const node = plugin.render(payload, { width: bounds.width, height: bounds.height }, { createElement: tag => document.createElement(tag) });
+      if (node) detailContent.appendChild(node);
     }
 
     function makeLabelFormatter({ volume, level, locale, namesMap }) {
@@ -817,6 +844,8 @@
       if (options.dimensionEnabled && app?.setBlur) {
         app.setBlur(true);
       }
+      renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized);
+      app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized));
       wireInteractions(app, items.length);
       showVersion();
     }).catch(err => {

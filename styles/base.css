@@ -155,3 +155,66 @@ svg {
   font-size: clamp(12px, 1.4vmin, 18px);
   pointer-events: none;
 }
+
+/* Detail panel driven by adapter detail templates */
+.detail-panel {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: min(360px, 32vw);
+  max-width: 420px;
+  height: min(320px, 38vh);
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: auto;
+}
+
+.detail-content {
+  flex: 1;
+  overflow: auto;
+  color: var(--color-text);
+  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.detail-sector-content {
+  color: var(--color-text);
+}
+
+.detail-text {
+  white-space: pre-wrap;
+}
+
+.detail-card {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.detail-card-title {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.detail-card-body {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.detail-card-image {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.04);
+}

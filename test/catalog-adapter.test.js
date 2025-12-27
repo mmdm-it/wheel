@@ -1,6 +1,6 @@
 import assert from 'assert/strict';
 import { describe, it } from 'node:test';
-import { catalogAdapter, loadManifest, validate, normalize, layoutSpec } from '../src/adapters/catalog-adapter.js';
+import { catalogAdapter, loadManifest, validate, normalize, layoutSpec, detailFor } from '../src/adapters/catalog-adapter.js';
 import { getViewportInfo } from '../src/geometry/focus-ring-geometry.js';
 
 describe('catalog adapter', () => {
@@ -51,5 +51,13 @@ describe('catalog adapter', () => {
   it('exports adapter object', () => {
     assert.ok(catalogAdapter.normalize);
     assert.ok(catalogAdapter.layoutSpec);
+  });
+
+  it('returns adapter-driven detail payloads', async () => {
+    const manifest = await loadManifest();
+    const manuf = { id: 'emea__italy__VM Motori', name: 'VM Motori' };
+    const detail = detailFor(manuf, manifest);
+    assert.equal(detail.type, 'card');
+    assert.match(detail.title, /VM Motori/i);
   });
 });
