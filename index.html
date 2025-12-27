@@ -18,10 +18,14 @@
     import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookCousinChain, validateVolumeRoot } from './src/index.js';
     import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMillennia, buildBibleSections, buildBibleBooks, buildCatalogManufacturers } from './src/adapters/volume-helpers.js';
     import { createVolumeLayoutSpec } from './src/adapters/volume-layout.js';
+    import { createAdapterRegistry, createAdapterLoader } from './src/adapters/registry.js';
     import { catalogAdapter } from './src/adapters/catalog-adapter.js';
 
     const svg = document.getElementById('app');
     const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
+    const adapterRegistry = createAdapterRegistry();
+    adapterRegistry.register('catalog', () => ({ ...catalogAdapter, volumeId: 'catalog' }));
+    const adapterLoader = createAdapterLoader(adapterRegistry);
 
     async function loadConfig() {
       const params = new URLSearchParams(window.location.search);
@@ -758,7 +762,7 @@
         catalogModeRef: () => catalogMode,
         setCatalogMode: next => { catalogMode = next; }
       });
-      const adapter = volume === 'catalog' ? catalogAdapter : null;
+      const adapter = adapterLoader.load(volume);
       let adapterNormalized = null;
       let adapterLayoutSpec = null;
       if (adapter) {

@@ -1,34 +1,55 @@
-import { readFile } from 'fs/promises';
-import { readFileSync as readFileSyncCompat } from 'fs';
-import { dirname, resolve } from 'path';
-import { fileURLToPath } from 'url';
-import Ajv from 'ajv';
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const manifestPath = resolve(__dirname, '../../data/mmdm/mmdm_catalog.json');
-const schemaPath = resolve(__dirname, '../../schemas/mmdm.schema.json');
+const isBrowser = typeof window !== 'undefined' && typeof fetch === 'function';
+const manifestUrl = './data/mmdm/mmdm_catalog.json';
+const schemaUrl = './schemas/mmdm.schema.json';
 
-const ajv = new Ajv({ allErrors: true, strict: false });
+let manifestPath = null;
+let schemaPath = null;
+let nodeReadFile = null;
+let nodeReadFileSync = null;
+let AjvCtor = null;
+if (!isBrowser) {
+  const path = await import('path');
+  const { fileURLToPath } = await import('url');
+  const __dirname = path.dirname(fileURLToPath(import.meta.url));
+  manifestPath = path.resolve(__dirname, '../../data/mmdm/mmdm_catalog.json');
+  schemaPath = path.resolve(__dirname, '../../schemas/mmdm.schema.json');
+  nodeReadFile = (await import('fs/promises')).readFile;
+  nodeReadFileSync = (await import('fs')).readFileSync;
+  AjvCtor = (await import('ajv')).default;
+}
 let validateFn = null;
+let ajvInstance = null;
+
+const fetchJson = async (url) => {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status}`);
+  return res.json();
+};
 
 const getValidator = () => {
+  if (isBrowser) return null;
   if (validateFn) return validateFn;
-  const schemaJson = readFileSyncCompat(schemaPath, 'utf-8');
-  validateFn = ajv.compile(JSON.parse(schemaJson));
+  if (!nodeReadFileSync || !schemaPath || !AjvCtor) return null;
+  if (!ajvInstance) ajvInstance = new AjvCtor({ allErrors: true, strict: false });
+  const schemaJson = JSON.parse(nodeReadFileSync(schemaPath, 'utf-8'));
+  validateFn = ajvInstance.compile(schemaJson);
   return validateFn;
 };
 
 export async function loadManifest() {
-  const raw = await readFile(manifestPath, 'utf-8');
+  if (isBrowser) return fetchJson(manifestUrl);
+  const raw = await nodeReadFile(manifestPath, 'utf-8');
   return JSON.parse(raw);
 }
 
 export function validate(raw) {
-  const validate = getValidator();
-  const ok = validate(raw);
-  const errors = ok ? [] : (validate.errors || []).map(err => `${err.instancePath} ${err.message}`.trim());
+  const validator = getValidator();
+  if (!validator) return { ok: true, errors: [] };
+  const ok = validator(raw);
+  const errors = ok ? [] : (validator.errors || []).map(err => `${err.instancePath} ${err.message}`.trim());
   return { ok, errors };
 }
 

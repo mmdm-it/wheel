@@ -5,13 +5,13 @@
 Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v4.2.8 (2025-12-26)
+- v4.2.10 (2025-12-27)
 
 ## Release Train
-- v4.2.8 Data-agnostic core + multi-volume baseline — done
-- v4.2.8 Parent/Child adapters hardening — active
-- v4.2.8 Child Pyramid — queued
-- v4.2.8 Detail Sector — queued
+- v4.2.10 Data-agnostic core + multi-volume baseline — done
+- v4.2.10 Parent/Child adapters hardening — active
+- v4.2.10 Child Pyramid — queued
+- v4.2.10 Detail Sector — queued
 
 ## Scripts
 - `npm test` — run Node built-in tests (no external deps)

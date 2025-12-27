@@ -2,6 +2,7 @@ import assert from 'assert/strict';
 import { describe, it } from 'node:test';
 import { getViewportInfo } from '../src/geometry/focus-ring-geometry.js';
 import { buildPyramidPreview } from '../src/core/pyramid-preview.js';
+import { catalogAdapter } from '../src/adapters/catalog-adapter.js';
 
 describe('buildPyramidPreview', () => {
   const viewport = getViewportInfo(800, 600);
@@ -105,6 +106,36 @@ describe('buildPyramidPreview', () => {
     assert.ok(calls.build);
     assert.equal(instructions.length, 1);
     assert.equal(instructions[0].id, 'via-child-a');
+  });
+
+  it('builds instructions via catalog adapter layoutSpec and normalized children', async () => {
+    const manifest = await catalogAdapter.loadManifest();
+    const validation = catalogAdapter.validate(manifest);
+    assert.equal(validation.ok, true, `catalog manifest invalid: ${validation.errors}`);
+
+    const normalized = catalogAdapter.normalize(manifest);
+    const layout = catalogAdapter.layoutSpec(normalized, viewport);
+    const manufacturer = normalized.items.find(item => item?.level === 'manufacturer');
+    assert.ok(manufacturer, 'expected a manufacturer node');
+
+    const instructions = buildPyramidPreview({
+      viewport,
+      selected: manufacturer,
+      normalized,
+      adapter: catalogAdapter,
+      layoutSpec: layout
+    });
+
+    assert.ok(instructions.length > 0, 'expected child instructions');
+    const arcNames = new Set((layout?.pyramid?.capacity?.arcs || []).map(a => a.name));
+    instructions.forEach(instr => {
+      assert.ok(typeof instr.id === 'string');
+      assert.ok(Number.isFinite(instr.x));
+      assert.ok(Number.isFinite(instr.y));
+      if (arcNames.size) {
+        assert.ok(arcNames.has(instr.arc));
+      }
+    });
   });
 
   it('returns empty list when no children', () => {
