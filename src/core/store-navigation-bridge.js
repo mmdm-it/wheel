@@ -1,11 +1,13 @@
-import { catalogAdapter } from '../adapters/catalog-adapter.js';
 import { createInteractionStore, interactionEvents } from './interaction-store.js';
 import { NavigationState } from '../navigation/navigation-state.js';
 import { safeEmit } from './telemetry.js';
 
 // Wires the interaction store to a volume adapter and navigation state.
 // Returns { store, nav, normalized, items, focusById, getFocusedId, setVolume, getVolumeId }.
-export async function createStoreNavigationBridge({ adapter = catalogAdapter, initialFocusId = null, onEvent = null, onError = null } = {}) {
+export async function createStoreNavigationBridge({ adapter, adapterLoader = null, initialFocusId = null, onEvent = null, onError = null } = {}) {
+  if (!adapter && !adapterLoader) {
+    throw new Error('createStoreNavigationBridge requires an adapter or an adapterLoader');
+  }
   const store = createInteractionStore();
   const nav = new NavigationState();
 
@@ -13,7 +15,18 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
   let items = [];
   let indexById = new Map();
   let currentVolumeId = null;
-  let currentAdapter = adapter;
+  const resolveAdapter = maybeId => {
+    if (maybeId && typeof maybeId !== 'string') return maybeId;
+    if (!maybeId || !adapterLoader) return null;
+    return adapterLoader.load(maybeId);
+  };
+
+  const initialAdapter = resolveAdapter(adapter) || adapter;
+  if (!initialAdapter) {
+    throw new Error('createStoreNavigationBridge could not resolve initial adapter');
+  }
+
+  let currentAdapter = initialAdapter;
   let lastError = store.getState().error;
 
   const deriveVolumeId = (volAdapter, volNormalized) =>
@@ -149,7 +162,7 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
     emit({ type: 'volume-load:success', volumeId, itemCount: items.length });
   };
 
-  await loadVolume(adapter, { requestedFocusId: initialFocusId });
+  await loadVolume(initialAdapter, { requestedFocusId: initialFocusId });
 
   const runVolumeSwitch = async (nextAdapter, { focusId = null } = {}) => {
     switching = true;
@@ -172,6 +185,10 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
   };
 
   const setVolume = (nextAdapter, { focusId = null } = {}) => {
+    const resolvedAdapter = resolveAdapter(nextAdapter);
+    if (!resolvedAdapter) {
+      return Promise.reject(new Error('adapter not found'));
+    }
     if (switching) {
       if (queuedSwitch) {
         emit({ type: 'volume-switch:cancelled', reason: 'replaced-queued', toAdapter: queuedSwitch.adapter });
@@ -179,10 +196,10 @@ export async function createStoreNavigationBridge({ adapter = catalogAdapter, in
       }
       emit({ type: 'volume-switch:queued', from: currentVolumeId, toAdapter: nextAdapter });
       const next = deferred();
-      queuedSwitch = { adapter: nextAdapter, options: { focusId }, resolve: next.resolve, reject: next.reject };
+      queuedSwitch = { adapter: resolvedAdapter, options: { focusId }, resolve: next.resolve, reject: next.reject };
       return next.promise;
     }
-    return runVolumeSwitch(nextAdapter, { focusId });
+    return runVolumeSwitch(resolvedAdapter, { focusId });
   };
 
   const getFocusedId = () => store.getState().focusId;

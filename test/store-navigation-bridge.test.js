@@ -2,10 +2,51 @@ import assert from 'assert/strict';
 import { describe, it } from 'node:test';
 import { createStoreNavigationBridge } from '../src/core/store-navigation-bridge.js';
 import { interactionEvents } from '../src/core/interaction-store.js';
+import { createAdapterRegistry, createAdapterLoader } from '../src/adapters/registry.js';
 
-const VM_ID = 'manufacturer:VM Motori';
+const VM_ID = 'vm';
+
+const makeCatalogishAdapter = () => ({
+  volumeId: 'catalog-volume',
+  async loadManifest() {
+    return {
+      items: [
+        { id: VM_ID, label: 'VM Motori' },
+        { id: 'ford', label: 'Ford' }
+      ]
+    };
+  },
+  validate() {
+    return { ok: true };
+  },
+  normalize(raw) {
+    return { items: raw.items, meta: { volumeId: 'catalog-volume' } };
+  },
+  layoutSpec() {
+    return {};
+  },
+  capabilities: {}
+});
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const mkAdapter = (id, delay = 0) => ({
+  volumeId: id,
+  async loadManifest() {
+    if (delay) await sleep(delay);
+    return { items: [{ id: `${id}-a`, label: `${id}-A` }, { id: `${id}-b`, label: `${id}-B` }] };
+  },
+  validate() {
+    return { ok: true };
+  },
+  normalize(raw) {
+    return { items: raw.items, meta: { volumeId: id } };
+  },
+  layoutSpec() {
+    return {};
+  },
+  capabilities: {}
+});
 
 const assertOrder = (events, expected) => {
   let cursor = -1;
@@ -16,15 +57,15 @@ const assertOrder = (events, expected) => {
   }
 };
 
-describe('store-navigation-bridge (catalog)', () => {
+describe('store-navigation-bridge (agnostic)', () => {
   it('loads manifest, normalizes, and exposes items', async () => {
-    const bridge = await createStoreNavigationBridge();
+    const bridge = await createStoreNavigationBridge({ adapter: makeCatalogishAdapter() });
     assert.ok(bridge.items.length > 0, 'expected items');
     assert.ok(bridge.normalized.items.length > 0, 'expected normalized items');
   });
 
   it('focusById updates store and nav', async () => {
-    const bridge = await createStoreNavigationBridge();
+    const bridge = await createStoreNavigationBridge({ adapter: makeCatalogishAdapter() });
     const ok = bridge.focusById(VM_ID);
     assert.ok(ok, 'expected focusById to succeed');
     assert.equal(bridge.getFocusedId(), VM_ID);
@@ -32,7 +73,7 @@ describe('store-navigation-bridge (catalog)', () => {
   });
 
   it('returns false for unknown id', async () => {
-    const bridge = await createStoreNavigationBridge();
+    const bridge = await createStoreNavigationBridge({ adapter: makeCatalogishAdapter() });
     const initialFocused = bridge.getFocusedId();
     const ok = bridge.focusById('manufacturer:does-not-exist');
     assert.equal(ok, false);
@@ -41,37 +82,14 @@ describe('store-navigation-bridge (catalog)', () => {
 
   it('supports volume switching and updates store', async () => {
     const events = [];
-    const first = await createStoreNavigationBridge({ onEvent: evt => events.push(evt.type) });
+    const first = await createStoreNavigationBridge({ adapter: mkAdapter('one'), onEvent: evt => events.push(evt.type) });
 
-    // Stub a second adapter that looks like catalog but is distinct by volume id.
-    const secondAdapter = {
-      volumeId: 'second-volume',
-      async loadManifest() {
-        return {
-          items: [
-            { id: 'alpha', label: 'Alpha' },
-            { id: 'beta', label: 'Beta' }
-          ]
-        };
-      },
-      validate() {
-        return { ok: true };
-      },
-      normalize(raw) {
-        return { items: raw.items, meta: { volumeId: 'second-volume' } };
-      },
-      layoutSpec() {
-        return {};
-      },
-      capabilities: {}
-    };
-
-    const result = await first.setVolume(secondAdapter, { focusId: 'beta' });
+    const result = await first.setVolume(mkAdapter('second-volume'), { focusId: 'second-volume-b' });
 
     assert.equal(first.getVolumeId(), 'second-volume');
-    assert.equal(first.getFocusedId(), 'beta');
+    assert.equal(first.getFocusedId(), 'second-volume-b');
     assert.equal(result.volumeId, 'second-volume');
-    assert.ok(first.items.find(item => item.id === 'alpha'));
+    assert.ok(first.items.find(item => item.id === 'second-volume-a'));
     assert.ok(events.includes('volume-load:start'));
     assert.ok(events.includes('volume-load:success'));
     assert.ok(events.includes('volume-switch:start'));
@@ -446,6 +464,24 @@ describe('store-navigation-bridge (catalog)', () => {
     assert.equal(bridge.getFocusedId(), 'two-b');
     assert.ok(events.includes('deep-link:start'));
     assert.ok(events.includes('deep-link:success'));
+    assert.ok(events.includes('volume-switch:start'));
+    assert.ok(events.includes('volume-switch:complete'));
+  });
+
+  it('switches volumes by id using an adapter loader', async () => {
+    const events = [];
+    const registry = createAdapterRegistry();
+    const loader = createAdapterLoader(registry);
+
+    registry.register('vol-a', () => mkAdapter('vol-a'));
+    registry.register('vol-b', () => mkAdapter('vol-b'));
+
+    const bridge = await createStoreNavigationBridge({ adapter: 'vol-a', adapterLoader: loader, onEvent: evt => events.push(evt.type) });
+    const result = await bridge.setVolume('vol-b', { focusId: 'vol-b-b' });
+
+    assert.equal(result.volumeId, 'vol-b');
+    assert.equal(bridge.getVolumeId(), 'vol-b');
+    assert.equal(bridge.getFocusedId(), 'vol-b-b');
     assert.ok(events.includes('volume-switch:start'));
     assert.ok(events.includes('volume-switch:complete'));
   });

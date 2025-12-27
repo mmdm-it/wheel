@@ -1,21 +1,21 @@
-import { readFileSync } from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, resolve } from 'path';
-import assert from 'assert/strict';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { describe, it } from 'node:test';
-import Ajv from 'ajv';
+import { createSchemaService } from '../src/validation/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const loadJson = relativePath => JSON.parse(readFileSync(resolve(__dirname, relativePath), 'utf-8'));
 
-const schemas = {
-  calendar: loadJson('../schemas/calendar.schema.json'),
-  places: loadJson('../schemas/places.schema.json'),
-  gutenberg: loadJson('../schemas/gutenberg.schema.json'),
-  mmdm: loadJson('../schemas/mmdm.schema.json')
-};
+const schemaEntries = [
+  { id: 'calendar', schema: loadJson('../schemas/calendar.schema.json') },
+  { id: 'places', schema: loadJson('../schemas/places.schema.json') },
+  { id: 'gutenberg', schema: loadJson('../schemas/gutenberg.schema.json') },
+  { id: 'mmdm', schema: loadJson('../schemas/mmdm.schema.json') }
+];
 
 const manifests = {
   calendar: loadJson('../data/calendar/manifest.json'),
@@ -24,16 +24,24 @@ const manifests = {
   mmdm: loadJson('../data/mmdm/mmdm_catalog.json')
 };
 
-describe('manifest schema validation', () => {
-  for (const [name, schema] of Object.entries(schemas)) {
-    it(`${name} manifest matches schema`, () => {
-      const ajv = new Ajv({ allErrors: true, strict: false });
-      const validate = ajv.compile(schema);
-      const data = manifests[name];
-      const ok = validate(data);
-      if (!ok) {
-        const message = (validate.errors || []).map(err => `${err.instancePath} ${err.message}`).join('; ');
-        assert.fail(`Schema validation failed for ${name}: ${message}`);
+const formatErrors = errors => (errors || [])
+  .map(err => {
+    const path = err.instancePath || err.schemaPath || '';
+    const msg = err.message || JSON.stringify(err);
+    return `${path} ${msg}`.trim();
+  })
+  .join('; ');
+
+describe('manifest schema validation (registry)', () => {
+  const { validator, registerSchemas } = createSchemaService();
+  registerSchemas(schemaEntries);
+
+  for (const { id } of schemaEntries) {
+    it(`${id} manifest matches schema`, () => {
+      const data = manifests[id];
+      const result = validator.validate(id, data);
+      if (!result.ok) {
+        assert.fail(`Schema validation failed for ${id}: ${formatErrors(result.errors)}`);
       }
     });
   }
