@@ -7,13 +7,132 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link id="volume-style" rel="stylesheet" href="" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <div id="version-badge" class="version-badge" aria-label="Application version"></div>
+  <svg id="app" aria-label="Wheel v4"></svg>
+  <script type="module">
+    import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookCousinChain, validateVolumeRoot } from './src/index.js';
+    import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMillennia, buildBibleSections, buildBibleBooks, buildCatalogManufacturers } from './src/adapters/volume-helpers.js';
+    import { createVolumeLayoutSpec } from './src/adapters/volume-layout.js';
+
+    const svg = document.getElementById('app');
+    const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
+
+    async function loadConfig() {
+      const params = new URLSearchParams(window.location.search);
+      const path = (window.location.pathname || '').toLowerCase();
+      const paramVolume = params.get('volume');
+      const pathVolume = path.includes('/catalog')
+        ? 'catalog'
+        : path.includes('/calendar')
+          ? 'calendar'
+          : path.includes('/bible')
+            ? 'bible'
+            : path.includes('/places')
+              ? 'places'
+              : null;
+      const volume = ['catalog', 'calendar', 'bible', 'places'].includes(paramVolume)
+        ? paramVolume
+        : pathVolume || 'bible';
+
+      const manifestPath = volume === 'catalog'
+        ? './data/mmdm/mmdm_catalog.json'
+        : volume === 'calendar'
+          ? './data/calendar/manifest.json'
+          : volume === 'places'
+            ? './data/places/manifest.json'
+            : './data/gutenberg/manifest.json';
+
+      console.info('[wheel-v4] volume selection', {
+        pathname: path,
+        paramVolume,
+        pathVolume,
+        resolvedVolume: volume,
+        manifestPath
+      });
+
+      const manifest = await fetch(manifestPath).then(r => r.json());
+      const translationsMeta = volume === 'bible'
+        ? await fetch('./data/gutenberg/translations.json').then(r => r.json()).catch(() => null)
+        : null;
+      const volumeRoot = volume === 'catalog'
+        ? manifest?.MMdM
+        : volume === 'calendar'
+          ? manifest?.Calendar
+          : volume === 'places'
+            ? manifest?.Places
+            : manifest?.Gutenberg_Bible;
+      const validation = validateVolumeRoot(volumeRoot);
+      if (!validation.ok) {
+        console.error('[wheel-v4] volume validation failed', { errors: validation.errors, warnings: validation.warnings });
+        throw new Error('Invalid volume manifest');
+      }
+      if (validation.warnings.length) {
+        console.warn('[wheel-v4] volume validation warnings', validation.warnings);
+      }
+      const startup = volumeRoot?.display_config?.focus_ring_startup || {};
+      const arrangements = volumeRoot?.display_config?.focus_ring_arrangements || {};
+      const localeParam = params.get('lang');
+      const level = params.get('level')
+        || startup.top_navigation_level
+        || (volume === 'bible'
+          ? 'book'
+          : volume === 'calendar'
+            ? 'year'
+            : volume === 'catalog'
+              ? 'manufacturer'
+              : 'galaxy');
+      const initialItemId = params.get('item') || startup.initial_magnified_item || null;
+      const arrangement = params.get('arrangement')
+        || arrangements[level]
+        || startup.arrangement
+        || (volume === 'bible'
+          ? 'cousins-with-gaps'
+          : volume === 'calendar'
+            ? 'cousins-with-gaps'
+            : 'cousins-flat');
+      const cousinParam = params.get('cousins');
+      const cousinMode = cousinParam === null
+        ? arrangement !== 'siblings-only'
+        : cousinParam === '1';
+      const dimensionEnabled = params.get('dimension') === '1';
+      return {
+        volume,
+        manifest,
+        translationsMeta,
+        options: {
+          level,
+          initialItemId,
+          arrangement,
+          bookId: params.get('book') || 'GENE',
+          testamentId: params.get('testament'),
+          chapterId: params.get('chapter'),
+          translation: params.get('translation') || 'NAB',
+          cousinMode,
+          locale: localeParam || null,
+          dimensionEnabled
+        }
+      };
+    }
+
+    function applyTheme(manifest, volume) {
+      const root = document.documentElement;
+      const theme = volume === 'catalog'
+        ? 'catalog'
+        : volume === 'calendar'
+          ? 'calendar'
+          : volume === 'places'
             ? 'places'
             : 'bible';
       root.setAttribute('data-theme', theme);
-        const link = document.getElementById('volume-style');
-        if (link) {
-          link.setAttribute('href', `./styles/${theme}.css`);
-        }
+      const link = document.getElementById('volume-style');
+      if (link) {
+        link.setAttribute('href', `./styles/${theme}.css`);
+      }
     }
 
     function makeLabelFormatter({ volume, level, locale, namesMap }) {
