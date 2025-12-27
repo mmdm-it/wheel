@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "placeholder.schema.json",
+  "title": "PlaceholderManifest",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "items": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  },
+  "required": ["id"],
+  "additionalProperties": true
+}
