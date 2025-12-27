@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [4.2.11] - 2025-12-27
+
+### Changed
+- Adapter-driven detail panel (catalog) with text/card plugins and demo wiring
+- Pyramid/detail styles for rendered preview and detail content
+
+
 ## [4.2.10] - 2025-12-27
 
 ### Changed

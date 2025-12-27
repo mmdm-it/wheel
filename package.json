@@ -1,6 +1,6 @@
 {
   "name": "wheel-v4",
-  "version": "4.2.10",
+  "version": "4.2.11",
   "type": "module",
   "scripts": {
     "test": "node --test"
