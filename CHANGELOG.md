@@ -2,53 +2,55 @@
 
 ## [Unreleased]
 
-## [4.2.11] - 2025-12-27
+> Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.4.11.
+
+## [3.4.11] - 2025-12-27
 
 ### Changed
 - Adapter-driven detail panel (catalog) with text/card plugins and demo wiring
 - Pyramid/detail styles for rendered preview and detail content
 
 
-## [4.2.10] - 2025-12-27
+## [3.4.10] - 2025-12-27
 
 ### Changed
-- Version bump to 4.2.10 (no functional changes)
+- Version bump to 3.4.10 (no functional changes)
 
 
-## [4.2.9] - 2025-12-27
-
-### Changed
-- Version bump to 4.2.9 (no functional changes)
-
-
-## [4.2.8] - 2025-12-26
+## [3.4.9] - 2025-12-27
 
 ### Changed
-- Version bump to 4.2.8 (no functional changes)
+- Version bump to 3.4.9 (no functional changes)
 
 
-## [4.2.7] - 2025-12-26
-
-### Changed
-- Version bump to 4.2.7 (no functional changes)
-
-
-## [4.2.6] - 2025-12-26
+## [3.4.8] - 2025-12-26
 
 ### Changed
-- Version bump to 4.2.6 (no functional changes)
+- Version bump to 3.4.8 (no functional changes)
 
-## [4.2.5] - 2025-12-26
 
-### Changed
-- Version bump to 4.2.5 (no functional changes)
-
-## [4.2.4] - 2025-12-26
+## [3.4.7] - 2025-12-26
 
 ### Changed
-- Version bump to 4.2.4 (no functional changes)
+- Version bump to 3.4.7 (no functional changes)
 
-## [4.2.3] - 2025-12-26
+
+## [3.4.6] - 2025-12-26
+
+### Changed
+- Version bump to 3.4.6 (no functional changes)
+
+## [3.4.5] - 2025-12-26
+
+### Changed
+- Version bump to 3.4.5 (no functional changes)
+
+## [3.4.4] - 2025-12-26
+
+### Changed
+- Version bump to 3.4.4 (no functional changes)
+
+## [3.4.3] - 2025-12-26
 
 ### Added
 - Pyramid preview builder that samples/places children and produces render instructions (with tests)
@@ -58,7 +60,7 @@
 ### Changed
 - Pyramid instruction builder now retains the source item to support click affordances
 
-## [4.2.2] - 2025-12-26
+## [3.4.2] - 2025-12-26
 
 ### Added
 - Focus view renders child-pyramid instructions (nodes + labels with click hooks)
@@ -66,13 +68,13 @@
 ### Changed
 - Detail plugins (text/card) now support non-DOM render contexts via injected createElement factory
 
-## [4.2.1] - 2025-12-26
+## [3.4.1] - 2025-12-26
 
 ### Added
 - Detail plugin registry scaffold (register/unregister/cache) with unit tests
 - Catalog adapter layoutSpec emits pyramid capacity/sample/place hooks using child-pyramid geometry helpers
 
-## [4.2.0] - 2025-12-26
+## [3.4.0] - 2025-12-26
 
 ### Added
 - Rapid volume-switch stress coverage (50-cycle burst + in-flight deep-link hydration) to lock volume-safe interaction exit criteria
@@ -81,7 +83,7 @@
 ### Changed
 - Marked volume-safe interaction loop complete; queue/cancel guards, telemetry, and error affordance solidified
 
-## [4.1.3] - 2025-12-25
+## [3.3.3] - 2025-12-25
 
 ### Added
 - `store:error` emission and optional `onError` callback in `createStoreNavigationBridge` so hosts can surface error states
@@ -89,7 +91,7 @@
 ### Changed
 - Error transitions now dedupe notifications and clear state on recovery
 
-## [4.1.2] - 2025-12-25
+## [3.3.2] - 2025-12-25
 
 ### Added
 - Telemetry payload/order assertions for volume switching and deep-link hydration, including error paths and resolver failures
@@ -97,7 +99,7 @@
 ### Changed
 - Strengthened queue/cancel coverage to ensure only final queued switches complete
 
-## [4.1.1] - 2025-12-25
+## [3.3.1] - 2025-12-25
 
 ### Added
 - Queue-and-replace guard rails for concurrent volume switches with telemetry events for queued/cancelled paths
@@ -106,7 +108,7 @@
 ### Changed
 - Telemetry emits now include validation start/success for volume loads
 
-## [4.1.0] - 2025-12-25
+## [3.3.0] - 2025-12-25
 
 ### Added
 - Introduced a `safeEmit` telemetry helper to centralize and harden onEvent hooks
@@ -116,19 +118,19 @@
 - Gated focus-ring debug logging and chain summary emission behind the debug flag to reduce noise
 - Bumped package metadata to version 4.1.0
 
-## [4.0.1] - 2025-12-25
+## [3.2.18] - 2025-12-25
 
 ### Changed
-- Updated branding/logging to Wheel v4 in the demo HTML
+- Updated branding/logging to Wheel v3 in the demo HTML
 - Added a data-agnostic volume validation helper for manifests
 - Wired manifest validation into loader flow and added tests for catalog, calendar, bible, and places
 
 
-## [4.0.0] - 2025-12-25
+## [3.2.17] - 2025-12-25
 
 ### Added
 - Forked v4 codebase from v3 with data-agnostic posture and copied all four volumes (calendar, gutenberg, mmdm, places)
-- Updated package, docs, and tooling references to wheel-v4 paths and versioning
+- Updated package, docs, and tooling references to wheel paths and versioning
 
 ## [3.2.16] - 2025-12-25
 

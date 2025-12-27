@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wheel v4 Demo</title>
+  <title>Wheel v3 Demo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet" />
@@ -13,7 +13,7 @@
 </head>
 <body>
   <div id="version-badge" class="version-badge" aria-label="Application version"></div>
-  <svg id="app" aria-label="Wheel v4"></svg>
+  <svg id="app" aria-label="Wheel v3"></svg>
   <div id="detail-panel" class="detail-panel" aria-label="Detail panel">
     <div id="detail-content" class="detail-content"></div>
   </div>
@@ -58,7 +58,7 @@
             ? './data/places/manifest.json'
             : './data/gutenberg/manifest.json';
 
-      console.info('[wheel-v4] volume selection', {
+      console.info('[wheel] volume selection', {
         pathname: path,
         paramVolume,
         pathVolume,
@@ -79,11 +79,11 @@
             : manifest?.Gutenberg_Bible;
       const validation = validateVolumeRoot(volumeRoot);
       if (!validation.ok) {
-        console.error('[wheel-v4] volume validation failed', { errors: validation.errors, warnings: validation.warnings });
+        console.error('[wheel] volume validation failed', { errors: validation.errors, warnings: validation.warnings });
         throw new Error('Invalid volume manifest');
       }
       if (validation.warnings.length) {
-        console.warn('[wheel-v4] volume validation warnings', validation.warnings);
+        console.warn('[wheel] volume validation warnings', validation.warnings);
       }
       const startup = volumeRoot?.display_config?.focus_ring_startup || {};
       const arrangements = volumeRoot?.display_config?.focus_ring_arrangements || {};
@@ -797,7 +797,7 @@
           adapterNormalized = adapter.normalize(manifest);
           adapterLayoutSpec = adapter.layoutSpec(adapterNormalized, viewport);
         } catch (err) {
-          console.warn('[wheel-v4] adapter layoutSpec failed, falling back to host config', err);
+          console.warn('[wheel] adapter layoutSpec failed, falling back to host config', err);
           adapterNormalized = null;
           adapterLayoutSpec = null;
         }

@@ -1,6 +1,6 @@
-# Architecture V4 (Greenfield Plan)
+# Architecture (Adapter Reset, v3.x numbering)
 
-> Goal: keep the proven geometry/rendering pieces but rebuild around adapters, schemas, and a single interaction store/state machine. Every volume ships a plugin adapter; renderers stay data-agnostic.
+> Goal: keep the proven geometry/rendering pieces but rebuild around adapters, schemas, and a single interaction store/state machine. Every volume ships a plugin adapter; renderers stay data-agnostic. Filename retained from the prior v4 draft; roadmap now tracks this work as v3.3–v3.6.
 
 ## Layering
 
@@ -79,7 +79,7 @@ Single source of truth for UI state.
 - Respect reduced motion; allow theme tokens to adjust motion duration/curves.
 - Use lazy data hydration per adapter when supported; cache manifests per volume.
 
-**Roadmap alignment:** Build/test checkpoints live in `docs/ROADMAP.md` (v4.1–v4.4) and reference this contract for adapter/store expectations.
+**Roadmap alignment:** Build/test checkpoints live in `docs/ROADMAP.md` (v3.3–v3.6) and reference this contract for adapter/store expectations.
 
 ## Migration Checklist (from v3 → v4)
 

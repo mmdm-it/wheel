@@ -1,6 +1,6 @@
 #!/bin/bash
 # bump-version.sh
-# Increment semantic version across wheel-v4 project files
+# Increment semantic version across wheel project files
 # Usage: ./bump-version.sh [major|minor|patch] ["Optional changelog entry"]
 # Default bump: patch
 

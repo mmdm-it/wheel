@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Sync wheel-v4 to catalog, bible, calendar, and places deployments
+# Sync wheel (v3) to catalog, bible, calendar, and places deployments
 # Usage: ./sync-to-server.sh [catalog|bible|calendar|places|both|all]
 
 SERVER="namecheap"
-REMOTE_BASE="~/public_html/mmdm/wheel-v4"
-LOCAL_PATH="/media/howell/dev_workspace/wheel-v4/"
+REMOTE_BASE="~/public_html/mmdm/wheel-v3"
+LOCAL_PATH="$(pwd)/"
 
 # Color codes
 GREEN='\033[0;32m'
@@ -41,7 +41,7 @@ sync_deployment() {
     
     if [ $? -eq 0 ]; then
         echo -e "${GREEN}✅ ${deployment} sync complete!${NC}"
-        echo -e "   URL: https://howellgibbens.com/mmdm/wheel-v4/${deployment}/"
+        echo -e "   URL: https://howellgibbens.com/mmdm/wheel-v3/${deployment}/"
         return 0
     else
         echo -e "${RED}❌ ${deployment} sync failed!${NC}"
@@ -54,7 +54,7 @@ DEPLOYMENT=${1:-all}
 
 echo ""
 echo "════════════════════════════════════════════════════"
-echo "  Wheel v4 - Server Sync"
+echo "  Wheel v3 - Server Sync"
 echo "════════════════════════════════════════════════════"
 echo ""
 
@@ -117,8 +117,8 @@ echo -e "${GREEN}✨ Deployment complete!${NC}"
 echo "════════════════════════════════════════════════════"
 echo ""
 echo "URLs:"
-echo "  📚 Bible:   https://howellgibbens.com/mmdm/wheel-v4/bible/"
-echo "  ⚙️  Catalog: https://howellgibbens.com/mmdm/wheel-v4/catalog/"
-echo "  📅 Calendar: https://howellgibbens.com/mmdm/wheel-v4/calendar/"
-echo "  🧭 Places:   https://howellgibbens.com/mmdm/wheel-v4/places/"
+echo "  📚 Bible:   https://howellgibbens.com/mmdm/wheel-v3/bible/"
+echo "  ⚙️  Catalog: https://howellgibbens.com/mmdm/wheel-v3/catalog/"
+echo "  📅 Calendar: https://howellgibbens.com/mmdm/wheel-v3/calendar/"
+echo "  🧭 Places:   https://howellgibbens.com/mmdm/wheel-v3/places/"
 echo ""

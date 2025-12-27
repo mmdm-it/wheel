@@ -1,20 +1,20 @@
-# Wheel v4 Roadmap
+# Wheel v3 Roadmap
 
-> v4 is a deliberate restart on top of the v4 data and UI lessons. We keep the geometry and rendering wins, but rebuild the core architecture around adapters, schemas, and a central interaction store/state machine.
+> v3.x keeps the geometry and rendering wins, but rebuilds the core architecture around adapters, schemas, and a central interaction store/state machine.
 
-### Release Train Status (v4)
-- v4.0.0 Baseline data + UI lift — done (seeded from v3)
-- v4.1 Adapter + state-store foundation — done (shipped as 4.1.0)
-- v4.2 Volume-safe interaction loop — done (shipped as 4.2.0; queue/cancel + deep-link hydration + rapid-switch stress tests)
-- v4.3 Detail/pyramid rebuild on adapters — active
-- v4.4 Theming + accessibility hardening — planned
-- v4.5 Dimension System (lens: language/time) — planned
+### Release Train Status (v3)
+- v3.2.17 Baseline data + UI lift — done (seeded from v3)
+- v3.3 Adapter + state-store foundation — done (shipped as 3.3.0)
+- v3.4 Volume-safe interaction loop — done (shipped as 3.4.0; queue/cancel + deep-link hydration + rapid-switch stress tests)
+- v3.5 Detail/pyramid rebuild on adapters — active
+- v3.6 Theming + accessibility hardening — planned
+- v3.7 Dimension System (lens: language/time) — planned
 
 ## Vision
 
 A pluggable wheel UI where each volume ships an adapter that provides data, layout, and capabilities. Core interaction and rendering are data-agnostic, guarded by a single state machine. Validation is schema-first and runs at build/test time.
 
-## Core Principles (v4)
+## Core Principles (v3)
 1. **Adapters over conditionals** — each volume ships a contract, not bespoke branches.
 2. **Single interaction source of truth** — one store/state machine for rotation, focus, and volume switching.
 3. **Schema-first data** — JSON Schema + adapter validation in CI; runtime warnings only.
@@ -25,7 +25,18 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 
 ## Milestones
 
-### v4.1 — Adapter + Store Foundation (shipped in 4.1.0)
+### v3.2.17 — Baseline Data + UI Lift (shipped in 3.2.17)
+**Goal:** Seed the refreshed data and UI while keeping geometry and rendering stable ahead of the adapter rebuild.
+
+**Status:** Complete. Baseline manifests and UI assets were lifted from the prior track to anchor the v3.x restart.
+
+**Exit criteria:** core data/UI parity with prior release; geometry unchanged; staging volumes validated.
+
+**Build/Test Checkpoints:**
+- Manifests load and render with legacy adapters; geometry snapshots stable.
+- Smoke rotation/focus flows verified on seeded volumes.
+
+### v3.3 — Adapter + Store Foundation (shipped in 3.3.0)
 **Goal:** Stand up the new architecture skeleton while keeping the existing UI assets.
 - Define adapter contract (`loadManifest`, `validate`, `normalize`, `layoutSpec`, `capabilities`).
 - Add JSON Schemas for each manifest; enforce via `node --test`.
@@ -41,13 +52,13 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - One adapter end-to-end: manifest → validate/normalize → layoutSpec → focus-ring render using store state.
 - No data-specific conditionals remain in shared render/navigation paths.
 
-### v4.2 — Volume-Safe Interaction (complete)
+### v3.4 — Volume-Safe Interaction (complete)
 **Goal:** Make volume switching a first-class, race-free operation.
 - Guarded transitions in the store (no switch mid-transition without queue/cancel).
 - Transition choreography between volumes (loading, placeholder, apply, reveal).
 - Integration tests: switch during rotation; invalid manifest rejection; deep-link hydration.
 
-**Status:** Complete (released as 4.2.0). Queue/cancel guard rails, telemetry + `store:error` affordance, deep-link hydration, rapid-switch stress tests (50-cycle switch/rotate burst + in-flight deep-link), and child-pyramid geometry helpers (dynamic capacity, sampling, even-angle placement) are landed.
+**Status:** Complete (released as 3.4.0). Queue/cancel guard rails, telemetry + `store:error` affordance, deep-link hydration, rapid-switch stress tests (50-cycle switch/rotate burst + in-flight deep-link), and child-pyramid geometry helpers (dynamic capacity, sampling, even-angle placement) are landed.
 
 **Exit criteria:** volume switch tests green; UX smooth under load; errors degrade gracefully. (Met via rapid-switch stress coverage and deep-link-in-flight test.)
 
@@ -57,7 +68,7 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - Error paths: invalid manifest surfaces warning and retains prior volume; deep-link hydration stable.
 - Telemetry hooks emit load/validate/switch events.
 
-### v4.3 — Detail/Pyramid on Adapters
+### v3.5 — Detail/Pyramid on Adapters
 **Goal:** Rebuild child pyramid and detail sector on normalized data + layout specs.
 - Child pyramid consumes adapter layout; sampling and migration animations operate on normalized children.
 - Detail sector uses adapter-provided templates/layout metadata.
@@ -72,7 +83,7 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - Detail renderers driven by adapter templates/meta; snapshot tests per volume.
 - Two volumes validated end-to-end (e.g., gutenberg + catalog) through pyramid/detail flows.
 
-### v4.4 — Theming + Accessibility
+### v3.6 — Theming + Accessibility
 **Goal:** Make the experience skinable and accessible by contract.
 - Theme tokens (color, type, spacing, motion) per volume; base tokens shared.
 - Accessibility pass: focus order, ARIA labels from normalized data, motion-reduced mode.
