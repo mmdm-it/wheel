@@ -77,7 +77,10 @@ export function createApp({
   contextOptions = {},
   onParentClick,
   onChildrenClick,
-  pyramid
+  pyramid,
+  pyramidLayoutSpec = null,
+  pyramidAdapter = null,
+  pyramidNormalized = null
 }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const debug = Boolean(contextOptions.debug);
@@ -86,7 +89,7 @@ export function createApp({
     if (debug) console.log(...args);
   });
   let preserveOrderFlag = preserveOrder;
-  let normalized = normalizeItems(items, { preserveOrder: preserveOrderFlag });
+  let normalizedItems = normalizeItems(items, { preserveOrder: preserveOrderFlag });
   const formatLabel = typeof labelFormatter === 'function'
     ? labelFormatter
     : ({ item }) => item?.name || item?.id || '';
@@ -118,11 +121,11 @@ export function createApp({
     windowInfo,
     magnifier
   });
-  const gapCount = normalized.filter(item => item === null).length;
-  const firstItem = normalized.find(item => item !== null);
-  const lastItem = [...normalized].reverse().find(item => item !== null);
+  const gapCount = normalizedItems.filter(item => item === null).length;
+  const firstItem = normalizedItems.find(item => item !== null);
+  const lastItem = [...normalizedItems].reverse().find(item => item !== null);
   const chainSummary = {
-    total: normalized.length,
+    total: normalizedItems.length,
     gaps: gapCount,
     first: firstItem?.name || firstItem?.id || null,
     last: lastItem?.name || lastItem?.id || null
@@ -133,12 +136,12 @@ export function createApp({
   emit({ type: 'focus-ring:chain-summary', payload: chainSummary });
   const nav = new NavigationState();
   const safeIndex = (() => {
-    if (!normalized.length) return 0;
-    if (normalized[selectedIndex] !== null) return selectedIndex;
-    const fallback = normalized.findIndex(item => item !== null);
+    if (!normalizedItems.length) return 0;
+    if (normalizedItems[selectedIndex] !== null) return selectedIndex;
+    const fallback = normalizedItems.findIndex(item => item !== null);
     return fallback >= 0 ? fallback : 0;
   })();
-  nav.setItems(normalized, safeIndex);
+  nav.setItems(normalizedItems, safeIndex);
   const secondaryNav = new NavigationState();
   const safeSecondaryIndex = (() => {
     if (!secondaryItems?.length) return 0;
@@ -164,16 +167,18 @@ export function createApp({
   let lastSelectedLabelOut = '';
   const pyramidConfig = pyramid || null;
   const getPyramidChildren = typeof pyramidConfig?.getChildren === 'function'
-    ? args => pyramidConfig.getChildren({ ...args, items: nav.items, normalized, viewport: vp })
+    ? args => pyramidConfig.getChildren({ ...args, items: nav.items, normalized: pyramidNormalized ?? normalizedItems, viewport: vp })
     : null;
   const buildPyramid = selected => {
-    if (!getPyramidChildren) return null;
     try {
       const instructions = buildPyramidPreview({
         viewport: vp,
         selected,
-        getChildren: ctx => getPyramidChildren({ ...ctx, selected }),
-        pyramidConfig
+        getChildren: getPyramidChildren ? (ctx => getPyramidChildren({ ...ctx, selected })) : null,
+        pyramidConfig,
+        normalized: pyramidNormalized ?? normalizedItems,
+        adapter: pyramidAdapter,
+        layoutSpec: pyramidLayoutSpec
       });
       return Array.isArray(instructions) && instructions.length > 0 ? instructions : null;
     } catch (err) {
@@ -328,14 +333,14 @@ export function createApp({
 
   const setPrimaryItems = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
     preserveOrderFlag = nextPreserveOrder;
-    normalized = normalizeItems(newItems, { preserveOrder: preserveOrderFlag });
+    normalizedItems = normalizeItems(newItems, { preserveOrder: preserveOrderFlag });
     const safePrimaryIndex = (() => {
-      if (!normalized.length) return 0;
-      if (normalized[nextSelectedIndex] !== null) return nextSelectedIndex;
-      const fallback = normalized.findIndex(item => item !== null);
+      if (!normalizedItems.length) return 0;
+      if (normalizedItems[nextSelectedIndex] !== null) return nextSelectedIndex;
+      const fallback = normalizedItems.findIndex(item => item !== null);
       return fallback >= 0 ? fallback : 0;
     })();
-    nav.setItems(normalized, safePrimaryIndex);
+    nav.setItems(normalizedItems, safePrimaryIndex);
     alignToSelected();
     render(rotation);
   };

@@ -47,6 +47,66 @@ describe('buildPyramidPreview', () => {
     instructions.forEach(instr => assert.ok(instr.id.startsWith('custom-')));
   });
 
+  it('derives children from normalized items when no getter provided', () => {
+    const normalized = {
+      items: [
+        { id: 'parent', name: 'Parent' },
+        { id: 'child-a', name: 'Child A', parentId: 'parent' },
+        { id: 'child-b', name: 'Child B', parentId: 'parent' }
+      ],
+      links: [{ from: 'parent', to: 'child-a' }, { from: 'parent', to: 'child-b' }]
+    };
+
+    const instructions = buildPyramidPreview({ viewport, selected: { id: 'parent' }, normalized });
+
+    assert.equal(instructions.length, 2);
+    assert.deepEqual(instructions.map(i => i.id).sort(), ['child-a', 'child-b']);
+  });
+
+  it('uses adapter layoutSpec pyramid config when available', () => {
+    const normalized = {
+      items: [
+        { id: 'parent', name: 'Parent' },
+        { id: 'child-a', name: 'Child A', parentId: 'parent' },
+        { id: 'child-b', name: 'Child B', parentId: 'parent' }
+      ]
+    };
+    const calls = { layout: false, sample: false, place: false, build: false };
+    const adapter = {
+      layoutSpec: (norm, vp) => {
+        calls.layout = true;
+        assert.equal(norm, normalized);
+        assert.ok(vp?.width);
+        return {
+          pyramid: {
+            capacity: { total: 1, arcs: [] },
+            sample: siblings => {
+              calls.sample = true;
+              return siblings.slice(0, 1);
+            },
+            place: siblings => {
+              calls.place = true;
+              return siblings.map((sibling, idx) => ({ item: sibling, x: idx + 1, y: idx + 2, angle: 0.1 + idx, arc: 'inner' }));
+            },
+            buildInstructions: placements => {
+              calls.build = true;
+              return placements.map(p => ({ ...p, id: `via-${p.item.id}` }));
+            }
+          }
+        };
+      }
+    };
+
+    const instructions = buildPyramidPreview({ viewport, selected: { id: 'parent' }, normalized, adapter });
+
+    assert.ok(calls.layout);
+    assert.ok(calls.sample);
+    assert.ok(calls.place);
+    assert.ok(calls.build);
+    assert.equal(instructions.length, 1);
+    assert.equal(instructions[0].id, 'via-child-a');
+  });
+
   it('returns empty list when no children', () => {
     const instructions = buildPyramidPreview({ viewport, selected: null, getChildren: () => [] });
     assert.deepEqual(instructions, []);

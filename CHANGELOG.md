@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [4.2.8] - 2025-12-26
+
+### Changed
+- Version bump to 4.2.8 (no functional changes)
+
+
 ## [4.2.7] - 2025-12-26
 
 ### Changed

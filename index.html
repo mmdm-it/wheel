@@ -758,6 +758,13 @@
         setCatalogMode: next => { catalogMode = next; }
       });
       const pyramidConfig = layoutSpec?.pyramid || null;
+      const normalized = {
+        items,
+        links: (items || [])
+          .filter(item => item?.parentId)
+          .map(item => ({ from: item.parentId, to: item.id })),
+        meta: { volumeId: volume }
+      };
 
       app = createApp({
         svgRoot: svg,
@@ -773,6 +780,8 @@
         onParentClick: parentHandler,
         onChildrenClick: childrenHandler,
         pyramid: pyramidConfig,
+        pyramidLayoutSpec: layoutSpec,
+        pyramidNormalized: normalized,
         onSelectSecondary: translationId => {
           const url = new URL(window.location.href);
           const currentItem = app?.nav?.getCurrent?.();
