@@ -2,7 +2,12 @@
 
 ## [Unreleased]
 
-> Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.4.11.
+> Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.4.12.
+
+## [3.4.12] - 2025-12-27
+
+### Changed
+- Version bump to 3.4.12 (no functional changes)
 
 ## [3.4.11] - 2025-12-27
 

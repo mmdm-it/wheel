@@ -6,7 +6,7 @@
 - v3.2.17 Baseline data + UI lift — done (seeded from v3)
 - v3.3 Adapter + state-store foundation — done (shipped as 3.3.0)
 - v3.4 Volume-safe interaction loop — done (shipped as 3.4.0; queue/cancel + deep-link hydration + rapid-switch stress tests)
-- v3.5 Detail/pyramid rebuild on adapters — active
+- v3.5 Detail/pyramid rebuild on adapters + data-agnostic sweep — active
 - v3.6 Theming + accessibility hardening — planned
 - v3.7 Dimension System (lens: language/time) — planned
 
@@ -73,15 +73,20 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - Child pyramid consumes adapter layout; sampling and migration animations operate on normalized children.
 - Detail sector uses adapter-provided templates/layout metadata.
 - Expand plugin surface for detail renderers (text, cards, media) with per-volume themes.
+- Data-agnostic sweep: eliminate volume-specific conditionals (e.g., Bible/Catalog/Calendar) from shared navigation/render flows; route through adapter capabilities/layoutSpec.
 
 **Status:** Active. Pyramid geometry helpers landed; catalog adapter emits pyramid capacity/sample/place hooks; pyramid view instructions helper added; detail plugin registry scaffolded with sample text/card plugins. Next: wire pyramid instructions into the UI and stand up adapter-specific detail templates/plugins with snapshots.
 
-**Exit criteria:** pyramid/detail work for at least two volumes; migrations stable; theming respected.
+**Exit criteria:**
+- Pyramid/detail work for at least two volumes; migrations stable; theming respected.
+- Shared navigation/render code is data-agnostic (no hardcoded volume branches); adapters provide volume selection, children resolvers, label formats, and layout.
+- Light guard rails: lint/search check for forbidden volume literals in shared modules and an automated assertion to prevent regression.
 
 **Build/Test Checkpoints:**
 - Pyramid sampling tested on large sibling sets; migration animations do not conflict with volume switches.
 - Detail renderers driven by adapter templates/meta; snapshot tests per volume.
 - Two volumes validated end-to-end (e.g., gutenberg + catalog) through pyramid/detail flows.
+- Data-agnostic sweep validated: string scan for volume literals in shared code passes; adapter-provided hooks cover selection, children, labels, and layout.
 
 ### v3.6 — Theming + Accessibility
 **Goal:** Make the experience skinable and accessible by contract.

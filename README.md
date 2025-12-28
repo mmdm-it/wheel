@@ -5,7 +5,7 @@
 Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.4.11 (2025-12-27)
+- v3.4.12 (2025-12-27)
 
 ## Release Train
 - v3.2.17 Baseline data + UI lift — done
@@ -16,7 +16,7 @@ Minimal scaffold, data-agnostic: interaction → navigation → view → geometr
 - v3.7 Dimension System (lens: language/time) — planned
 
 ## Branching & Tags
-- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.4.11`).
+- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.4.12`).
 - Historical majors live on archive branches (e.g., `archive/v0`, `archive/v1`, `archive/v2`).
 - Future v4 will branch from the final v3 tag and tag releases as `v4.*` (no versioned folders).
 

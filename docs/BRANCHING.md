@@ -10,7 +10,7 @@ We keep one repo with branches and tags per major. Old majors are archived; the 
 - Future: when v4 starts, branch from the last v3 tag to `v4-main` (or keep using `main` after tagging `v3.last`).
 
 ## Tags
-- Release tags use SemVer: `v3.4.11`, `v3.4.0`, etc.
+- Release tags use SemVer: `v3.4.12`, `v3.4.0`, etc.
 - Old releases keep their tags on the archive branches (`v1.4.2`, etc.).
 
 ## Folder Layout
@@ -26,5 +26,5 @@ We keep one repo with branches and tags per major. Old majors are archived; the 
 - Deploy scripts should reference repo-root paths and the current major’s public endpoint (now `wheel-v3`).
 
 ## Migration Notes
-- Package name is `wheel`; current version is `3.4.11` (v3.x track).
+- Package name is `wheel`; current version is `3.4.12` (v3.x track).
 - Deploy script `sync-to-server.sh` uses `wheel-v3` endpoints; adjust hosting paths when v4 begins.
