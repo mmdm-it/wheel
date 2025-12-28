@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "lint:forbidden": "node --test test/forbidden-volume-literals.test.js"
+    "lint:forbidden": "node --test test/forbidden-literals.test.js"
   },
   "dependencies": {
     "ajv": "^8.12.0"
