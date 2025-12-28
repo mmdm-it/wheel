@@ -7,7 +7,8 @@
 - v3.3 Adapter + state-store foundation — done (shipped as 3.3.0)
 - v3.4 Volume-safe interaction loop — done (shipped as 3.4.0; queue/cancel + deep-link hydration + rapid-switch stress tests)
 - v3.5 Detail/pyramid rebuild on adapters + data-agnostic sweep — done (shipped as 3.5.0)
-- v3.6 Theming + accessibility hardening — active
+- v3.6 Theming + accessibility hardening — done (shipped as 3.6.0)
+- v3.7 Dimension System (lens: language/time) — planned
 - v3.7 Dimension System (lens: language/time) — planned
 
 ## Vision
@@ -88,20 +89,20 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - Two volumes validated end-to-end (e.g., gutenberg + catalog) through pyramid/detail flows.
 - Data-agnostic sweep validated: string scan for volume literals in shared code passes; adapter-provided hooks cover selection, children, labels, and layout; handler delegation verified in web smoke and test suite.
 
-### v3.6 — Theming + Accessibility
+### v3.6 — Theming + Accessibility (shipped in 3.6.0)
 **Goal:** Make the experience skinable and accessible by contract.
 - Theme tokens (color, type, spacing, motion) per volume; base tokens shared.
 - Accessibility pass: focus order, ARIA labels from normalized data, motion-reduced mode.
-- Performance tuning: lazy data and cache hooks in adapters.
+- Performance tuning: render/manifest perf telemetry with budgets and CI guards.
 
-**Status:** Active. Next: define base theme tokens + per-volume overlays, wire reduced-motion and ARIA labeling from normalized data, and track perf budgets (manifest load/cache + interaction frame timing).
+**Status:** Complete (released as 3.6.0). Base tokens expanded; per-volume overlays wired via `styles/themes/*.css`; theme swap smoke added. Accessibility hardening covers keyboard activation, ARIA-from-meta, reduced motion, and enforced tab order. Perf telemetry emits `perf:render` and `perf:manifest` with budget flags; CI checks guard budgets.
 
-**Exit criteria:** a11y checks pass; theme swap verified across volumes; perf budgets met.
+**Exit criteria:** a11y checks pass; theme swap verified across volumes; perf budgets met. (Met.)
 
 **Build/Test Checkpoints:**
-- Theme swap smoke tests across volumes; reduced-motion honored.
-- A11y checklist: ARIA labels from normalized meta; focus order aligned with interaction state; keyboard paths verified.
-- Perf: manifest fetch/cache budgets met; interaction frame timing within target.
+- Theme swap smoke tests across volumes; reduced-motion honored; focus order validated.
+- A11y: ARIA labels from normalized meta; keyboard activation on nodes/pyramid/parent/dimension controls; enforced tab order.
+- Perf: manifest fetch/cache and render budgets emitted and CI-guarded.
 
 ---
 
