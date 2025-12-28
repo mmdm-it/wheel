@@ -94,6 +94,7 @@
         paths: ['/calendar'],
         manifestPath: './data/calendar/manifest.json',
         theme: 'calendar',
+        centerLabel: true,
         extractRoot: manifest => manifest?.Calendar,
         async loadSupplemental() { return { translationsMeta: null }; },
         buildOptions: ({ params, startup = {}, arrangements = {} }) => {
@@ -803,7 +804,7 @@
       }
 
       const labelFormatter = makeLabelFormatter({ config, volume, level: options.level, locale: resolvedLocale, namesMap, options, manifest, meta });
-      const shouldCenterLabel = handlerSet.shouldCenterLabel || (() => volume === 'calendar');
+      const shouldCenterLabel = handlerSet.shouldCenterLabel || (() => Boolean(config?.centerLabel));
       let app;
 
       const parentHandler = params => (handlerSet.parentHandler ? handlerSet.parentHandler({ ...params, app }) : false);

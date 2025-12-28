@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { createSchemaRegistry } from '../src/validation/schema-registry.js';
 import { createSchemaValidator } from '../src/validation/schema-validator.js';
-import placeholderSchema from '../schemas/placeholder.schema.json' assert { type: 'json' };
+import placeholderSchema from '../schemas/placeholder.schema.json' with { type: 'json' };
 
 describe('schema harness (agnostic)', () => {
   it('validates data against a registered schema', () => {
