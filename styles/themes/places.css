@@ -1,0 +1,14 @@
+@import './catalog.css';
+
+:root[data-theme="places"] {
+	--theme-color-bg: #132a29;
+	--theme-color-node: #e2b46c;
+	--theme-color-text: #f4f1e9;
+	--theme-color-band: #1f413f;
+	--theme-color-accent: #e2b46c;
+	--theme-color-magnifier-stroke: #f4f1e9;
+	--theme-font-body: 'Montserrat', sans-serif;
+	--theme-font-label: 'Montserrat', sans-serif;
+	--theme-font-magnifier: 'Montserrat', sans-serif;
+	--focus-label-transform: none;
+}

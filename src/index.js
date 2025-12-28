@@ -84,6 +84,11 @@ export function createApp({
 }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const debug = Boolean(contextOptions.debug);
+  const prefersReducedMotion = Boolean(
+    contextOptions?.reducedMotion ?? (typeof window !== 'undefined' && typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches)
+  );
+  const debugPerf = Boolean(contextOptions.debugPerf);
+  const perfRenderBudget = Number(contextOptions?.perfRenderBudgetMs) || 17;
   const emit = payload => safeEmit(contextOptions.onEvent, payload);
   const logOnce = logOnceFactory((...args) => {
     if (debug) console.log(...args);
@@ -418,6 +423,8 @@ export function createApp({
   };
 
   const render = (nextRotation = rotation) => {
+    const canTime = typeof performance !== 'undefined' && typeof performance.now === 'function';
+    const renderStart = canTime ? performance.now() : null;
     rotation = nextRotation;
     const secondaryWindow = getSecondaryWindow();
     const selected = nav.getCurrent() || nav.items.find(item => item !== null) || nav.items[0];
@@ -499,6 +506,16 @@ export function createApp({
         onPyramidClick: pyramidConfig?.onClick
       }
     );
+
+    if (renderStart !== null && typeof performance !== 'undefined') {
+      const elapsed = performance.now() - renderStart;
+      const durationMs = Number(elapsed.toFixed(2));
+      const overBudget = durationMs > perfRenderBudget;
+      emit({ type: 'perf:render', durationMs, budgetMs: perfRenderBudget, overBudget });
+      if (debugPerf) {
+        console.info('[FocusRing] render duration (ms)', durationMs, 'budget', perfRenderBudget, overBudget ? 'OVER' : 'within');
+      }
+    }
 
     if (!isRotating && selected) {
       const neighbors = getNeighbors(nav.getCurrentIndex(), 2);
@@ -629,6 +646,17 @@ export function createApp({
   };
 
   const animateSnapTo = (targetRotation, duration = 100) => {
+    if (prefersReducedMotion) {
+      cancelSnap();
+      rotation = targetRotation;
+      if (choreographer) {
+        choreographer.setRotation(targetRotation, { emit: false });
+        rotation = choreographer.getRotation();
+      }
+      isRotating = false;
+      render(rotation);
+      return;
+    }
     cancelSnap();
     const delta = targetRotation - rotation;
     if (Math.abs(delta) < 1e-6 || duration <= 0) {

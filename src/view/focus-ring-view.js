@@ -25,6 +25,18 @@ export class FocusRingView {
     this.parentButtonInnerLabel = null;
   }
 
+  #attachKeyActivation(target, handler) {
+    if (!target) return;
+    target.onkeydown = evt => {
+      if (!handler) return;
+      const key = evt.key;
+      if (key === 'Enter' || key === ' ') {
+        evt.preventDefault();
+        handler(evt);
+      }
+    };
+  }
+
   init() {
     if (!this.svgRoot) return;
 
@@ -194,8 +206,12 @@ export class FocusRingView {
           circle.setAttribute('cy', instr.y ?? 0);
           circle.setAttribute('r', instr.r ?? 12);
           circle.dataset.id = instr.id ?? '';
+          circle.setAttribute('role', 'button');
+          circle.setAttribute('tabindex', '0');
+          if (instr.label) circle.setAttribute('aria-label', instr.label);
           if (typeof onPyramidClick === 'function') {
             circle.addEventListener('click', evt => onPyramidClick(instr, evt));
+            this.#attachKeyActivation(circle, evt => onPyramidClick(instr, evt));
           }
           this.pyramidNodesGroup.appendChild(circle);
 
@@ -282,11 +298,16 @@ export class FocusRingView {
       this.dimensionIcon.setAttribute('height', h);
       this.dimensionIcon.setAttribute('x', x - w / 2);
       this.dimensionIcon.setAttribute('y', y - h / 2);
+      this.dimensionIcon.setAttribute('role', 'button');
+      this.dimensionIcon.setAttribute('tabindex', '0');
+      this.dimensionIcon.setAttribute('aria-label', 'Toggle dimension mode');
       if (onClick) {
         this.dimensionIcon.onclick = onClick;
+        this.#attachKeyActivation(this.dimensionIcon, onClick);
         this.dimensionIcon.style.cursor = 'pointer';
       } else {
         this.dimensionIcon.onclick = null;
+        this.#attachKeyActivation(this.dimensionIcon, null);
         this.dimensionIcon.style.cursor = 'default';
       }
       this.dimensionIcon.removeAttribute('display');
@@ -307,10 +328,13 @@ export class FocusRingView {
         el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
         el.setAttribute('id', id);
         el.setAttribute('class', 'focus-ring-node');
+        el.setAttribute('role', 'button');
+        el.setAttribute('tabindex', '0');
         this.nodesGroup.appendChild(el);
       }
       if (onNodeClick) {
         el.onclick = () => onNodeClick(node);
+        this.#attachKeyActivation(el, () => onNodeClick(node));
       }
       el.setAttribute('cx', node.x);
       el.setAttribute('cy', node.y);
@@ -320,6 +344,8 @@ export class FocusRingView {
       }
       el.setAttribute('r', nodeRadius);
       el.dataset.index = node.index;
+      const ariaLabel = node.label ?? node.item?.name ?? node.item?.id ?? '';
+      if (ariaLabel) el.setAttribute('aria-label', ariaLabel);
 
       // Label
       const labelId = `focus-label-${node.item.id || node.index}`;
@@ -391,13 +417,17 @@ export class FocusRingView {
           el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
           el.setAttribute('id', id);
           el.setAttribute('class', 'focus-ring-node focus-ring-node-secondary');
+          el.setAttribute('role', 'button');
+          el.setAttribute('tabindex', '0');
           this.mirroredNodesGroup.appendChild(el);
         }
         if (secOnNodeClick) {
           el.onclick = () => secOnNodeClick(node);
+          this.#attachKeyActivation(el, () => secOnNodeClick(node));
           el.style.cursor = 'pointer';
         } else {
           el.onclick = null;
+          this.#attachKeyActivation(el, null);
           el.style.cursor = 'default';
         }
         el.setAttribute('cx', node.x);
@@ -405,6 +435,8 @@ export class FocusRingView {
         const nodeRadius = node.radius;
         el.setAttribute('r', nodeRadius);
         el.dataset.index = node.index;
+        const ariaLabel = node.label ?? node.item?.name ?? node.item?.id ?? '';
+        if (ariaLabel) el.setAttribute('aria-label', ariaLabel);
 
         const labelId = `secondary-label-${node.item.id || node.index}`;
         let label = existingSecLabels.get(labelId);
@@ -465,6 +497,10 @@ export class FocusRingView {
       this.magnifierCircle.setAttribute('cx', magnifier.x);
       this.magnifierCircle.setAttribute('cy', magnifier.y);
       this.magnifierCircle.setAttribute('r', radius);
+      this.magnifierCircle.setAttribute('role', 'img');
+      if (magnifier.label) {
+        this.magnifierCircle.setAttribute('aria-label', magnifier.label);
+      }
       this.magnifierGroup.classList.toggle('rotating', isRotating);
       this.magnifierLabel.setAttribute('x', magnifier.x);
       this.magnifierLabel.setAttribute('y', magnifier.y);
@@ -501,13 +537,19 @@ export class FocusRingView {
         this.parentButtonOuter.setAttribute('cx', outerX);
         this.parentButtonOuter.setAttribute('cy', outerY);
         this.parentButtonOuter.setAttribute('r', magRadius);
+        this.parentButtonOuter.setAttribute('role', 'button');
+        this.parentButtonOuter.setAttribute('tabindex', '0');
         this.parentButtonOuter.removeAttribute('display');
         this.parentButtonOuter.onclick = parentButtons?.onOuterClick || null;
+        this.#attachKeyActivation(this.parentButtonOuter, parentButtons?.onOuterClick || null);
         this.parentButtonOuter.style.cursor = parentButtons?.onOuterClick ? 'pointer' : 'default';
         this.parentButtonOuter.classList.toggle('shifted-out', Boolean(parentButtons?.isLayerOut));
+        const ariaLabel = parentButtons?.outerLabel || 'Parent';
+        this.parentButtonOuter.setAttribute('aria-label', ariaLabel);
       } else {
         this.parentButtonOuter.setAttribute('display', 'none');
         this.parentButtonOuter.onclick = null;
+        this.#attachKeyActivation(this.parentButtonOuter, null);
         this.parentButtonOuter.style.cursor = 'default';
       }
 
@@ -516,13 +558,19 @@ export class FocusRingView {
         this.parentButtonInner.setAttribute('cx', innerX);
         this.parentButtonInner.setAttribute('cy', innerY);
         this.parentButtonInner.setAttribute('r', magRadius);
+        this.parentButtonInner.setAttribute('role', 'button');
+        this.parentButtonInner.setAttribute('tabindex', '0');
         this.parentButtonInner.removeAttribute('display');
         this.parentButtonInner.onclick = parentButtons?.onInnerClick || null;
+        this.#attachKeyActivation(this.parentButtonInner, parentButtons?.onInnerClick || null);
         this.parentButtonInner.style.cursor = parentButtons?.onInnerClick ? 'pointer' : 'default';
         this.parentButtonInner.classList.toggle('shifted-out', Boolean(parentButtons?.isLayerOut));
+        const ariaLabel = parentButtons?.innerLabel || 'Children';
+        this.parentButtonInner.setAttribute('aria-label', ariaLabel);
       } else {
         this.parentButtonInner.setAttribute('display', 'none');
         this.parentButtonInner.onclick = null;
+        this.#attachKeyActivation(this.parentButtonInner, null);
         this.parentButtonInner.style.cursor = 'default';
       }
 

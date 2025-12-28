@@ -4,6 +4,24 @@
 
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
+## [3.6.0] - 2025-12-28
+
+### Added
+- Theme swap smoke coverage for all volumes via `test/theme-swap-smoke.test.js`.
+- Render/manifest performance telemetry with budget flags and CI guardrails (`perf:render`, `perf:manifest`, `test/perf-ci-budget.test.js`).
+
+### Changed
+- Accessibility hardening: keyboard activation across controls, ARIA-from-meta labels, reduced-motion handling, and enforced tab sequence (parent outer → parent inner → primary → pyramid → secondary → dimension).
+- Theme tokens expanded and per-volume overlays wired; base styles consume spacing/radii/motion/magnifier stroke tokens.
+
+### Fixed
+- Focus order validation aligns DOM re-append behavior in tests to mirror browser tab order.
+
+## [3.5.1] - 2025-12-28
+
+### Changed
+- Version bump to 3.5.1 (theming token expansion + overlay test coverage; manual testing planned)
+
 ## [3.5.0] - 2025-12-27
 
 ### Added

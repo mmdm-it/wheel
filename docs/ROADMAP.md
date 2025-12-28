@@ -7,7 +7,7 @@
 - v3.3 Adapter + state-store foundation — done (shipped as 3.3.0)
 - v3.4 Volume-safe interaction loop — done (shipped as 3.4.0; queue/cancel + deep-link hydration + rapid-switch stress tests)
 - v3.5 Detail/pyramid rebuild on adapters + data-agnostic sweep — done (shipped as 3.5.0)
-- v3.6 Theming + accessibility hardening — planned
+- v3.6 Theming + accessibility hardening — active
 - v3.7 Dimension System (lens: language/time) — planned
 
 ## Vision
@@ -93,6 +93,8 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - Theme tokens (color, type, spacing, motion) per volume; base tokens shared.
 - Accessibility pass: focus order, ARIA labels from normalized data, motion-reduced mode.
 - Performance tuning: lazy data and cache hooks in adapters.
+
+**Status:** Active. Next: define base theme tokens + per-volume overlays, wire reduced-motion and ARIA labeling from normalized data, and track perf budgets (manifest load/cache + interaction frame timing).
 
 **Exit criteria:** a11y checks pass; theme swap verified across volumes; perf budgets met.
 

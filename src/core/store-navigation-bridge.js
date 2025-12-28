@@ -55,6 +55,9 @@ export async function createStoreNavigationBridge({ adapter, adapterLoader = nul
   };
 
   const emit = payload => safeEmit(onEvent, payload);
+  const now = () => (typeof performance !== 'undefined' && typeof performance.now === 'function'
+    ? performance.now()
+    : Date.now());
 
   const notifyError = (error, meta = {}) => {
     if (error === lastError) return;
@@ -118,6 +121,9 @@ export async function createStoreNavigationBridge({ adapter, adapterLoader = nul
   const loadVolume = async (volAdapter, { requestedFocusId = null } = {}) => {
     emit({ type: 'volume-load:start', adapter: volAdapter, requestedFocusId });
 
+    const perfContext = { adapter: volAdapter, volumeId: volAdapter?.volumeId || currentVolumeId };
+
+    const loadStart = now();
     let manifest;
     try {
       manifest = await volAdapter.loadManifest();
@@ -127,8 +133,10 @@ export async function createStoreNavigationBridge({ adapter, adapterLoader = nul
       emit({ type: 'volume-load:error', error: err, adapter: volAdapter });
       throw err;
     }
+    emit({ type: 'perf:manifest', phase: 'load', durationMs: now() - loadStart, ...perfContext });
 
     emit({ type: 'volume-load:validate:start', adapter: volAdapter });
+    const validateStart = now();
     const validation = volAdapter.validate(manifest);
     if (!validation.ok) {
       const msg = (validation.errors || []).join('; ');
@@ -137,10 +145,13 @@ export async function createStoreNavigationBridge({ adapter, adapterLoader = nul
       throw err;
     }
     emit({ type: 'volume-load:validate:success', adapter: volAdapter });
+    emit({ type: 'perf:manifest', phase: 'validate', durationMs: now() - validateStart, ...perfContext });
 
+    const normalizeStart = now();
     const nextNormalized = volAdapter.normalize(manifest);
     const nextItems = nextNormalized.items || [];
     const volumeId = deriveVolumeId(volAdapter, nextNormalized);
+    emit({ type: 'perf:manifest', phase: 'normalize', durationMs: now() - normalizeStart, adapter: volAdapter, volumeId });
 
     nav.setItems(nextItems, 0);
     rebuildIndex(nextItems);

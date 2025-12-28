@@ -1,13 +1,29 @@
 :root {
-  --color-bg: #f5f5f5;
-  --color-nodes: #555555;
-  --color-text: #111111;
-  --color-band: #7a7979;
-  --focus-node-radius: 12px;
-  --focus-node-stroke: 1px;
-  --focus-node-font: 'Montserrat', sans-serif;
-  --magnifier-font: 'Montserrat', sans-serif;
+  /* bridge theme tokens to legacy variables */
+  --color-bg: var(--theme-color-bg, #f5f5f5);
+  --color-nodes: var(--theme-color-node, #555555);
+  --color-text: var(--theme-color-text, #111111);
+  --color-band: var(--theme-color-band, #7a7979);
+  --color-accent: var(--theme-color-accent, #1f6feb);
+  --color-magnifier-stroke: var(--theme-color-magnifier-stroke, #000000);
+  --focus-node-radius: var(--theme-radius-node, 12px);
+  --focus-node-stroke: var(--theme-stroke-node, 1px);
+  --focus-node-font: var(--theme-font-label, 'Montserrat'), sans-serif;
+  --magnifier-font: var(--theme-font-magnifier, 'Montserrat'), sans-serif;
   --focus-label-transform: uppercase;
+  --space-2xs: var(--theme-space-2xs, 4px);
+  --space-xs: var(--theme-space-xs, 6px);
+  --space-sm: var(--theme-space-sm, 8px);
+  --space-md: var(--theme-space-md, 12px);
+  --space-lg: var(--theme-space-lg, 16px);
+  --space-xl: var(--theme-space-xl, 20px);
+  --space-2xl: var(--theme-space-2xl, 24px);
+  --radius-panel: var(--theme-radius-panel, 14px);
+  --radius-card: var(--theme-radius-card, 10px);
+  --motion-fast: var(--theme-motion-duration-fast, 120ms);
+  --motion-medium: var(--theme-motion-duration-medium, 200ms);
+  --motion-slow: var(--theme-motion-duration-slow, 320ms);
+  --motion-ease: var(--theme-motion-ease, cubic-bezier(0.33, 1, 0.68, 1));
 }
 
 * { box-sizing: border-box; }
@@ -15,7 +31,7 @@
 body {
   margin: 0;
   background: var(--color-bg);
-  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-family: var(--theme-font-body, var(--focus-node-font, 'Montserrat')), sans-serif;
   overflow: hidden;
   touch-action: none;
 }
@@ -29,14 +45,14 @@ svg {
   position: fixed;
   top: 10px;
   right: 14px;
-  padding: 6px 10px;
+  padding: var(--space-xs, 6px) var(--space-sm, 8px);
   background: rgba(0, 0, 0, 0.08);
   color: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.4px;
-  border-radius: 8px;
+  border-radius: var(--radius-card, 10px);
   pointer-events: none;
 }
 
@@ -140,7 +156,9 @@ svg {
   stroke: rgba(0, 0, 0, 0.32);
   stroke-width: 1px;
   pointer-events: auto;
-  transition: transform 120ms ease, fill 120ms ease, stroke 120ms ease;
+  transition: transform var(--motion-fast, 120ms) var(--motion-ease, ease),
+    fill var(--motion-fast, 120ms) var(--motion-ease, ease),
+    stroke var(--motion-fast, 120ms) var(--motion-ease, ease);
 }
 
 .child-pyramid-node:hover {
@@ -164,16 +182,16 @@ svg {
   width: min(360px, 32vw);
   max-width: 420px;
   height: min(320px, 38vh);
-  padding: 12px 14px;
+  padding: var(--space-md, 12px) var(--space-lg, 16px);
   background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 14px;
+  border-radius: var(--radius-panel, 14px);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--space-sm, 8px);
   pointer-events: auto;
   display: none; /* hidden until detail sector lifecycle is finalized */
 }
@@ -198,7 +216,7 @@ svg {
 .detail-card {
   display: grid;
   grid-template-columns: 84px 1fr;
-  gap: 10px;
+  gap: var(--space-sm, 8px);
   align-items: center;
 }
 
@@ -216,6 +234,6 @@ svg {
   width: 84px;
   height: 84px;
   object-fit: contain;
-  border-radius: 10px;
+  border-radius: var(--radius-card, 10px);
   background: rgba(0, 0, 0, 0.04);
 }

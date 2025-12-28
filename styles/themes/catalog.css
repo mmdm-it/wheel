@@ -1,0 +1,11 @@
+:root[data-theme="catalog"] {
+  --theme-color-bg: #0f1f36;
+  --theme-color-node: #e0c36c;
+  --theme-color-text: #f4f4f4;
+  --theme-color-band: #1b2f4a;
+  --theme-color-accent: #e0c36c;
+  --theme-font-body: 'Montserrat', sans-serif;
+  --theme-font-label: 'Montserrat', sans-serif;
+  --theme-font-magnifier: 'Montserrat', sans-serif;
+  --focus-label-transform: none;
+}

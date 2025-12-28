@@ -1,0 +1,11 @@
+:root[data-theme="calendar"] {
+  --theme-color-bg: #0c2c44;
+  --theme-color-node: #443300;
+  --theme-color-text: #f5f7fb;
+  --theme-color-band: #194567;
+  --theme-color-accent: #f5f7fb;
+  --theme-color-magnifier-stroke: #f5f7fb;
+  --theme-font-body: 'Montserrat', sans-serif;
+  --theme-font-label: 'Montserrat', sans-serif;
+  --theme-font-magnifier: 'Montserrat', sans-serif;
+}

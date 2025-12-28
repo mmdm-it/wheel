@@ -1,0 +1,35 @@
+:root {
+  /* Base palette */
+  --theme-color-bg: #f5f5f5;
+  --theme-color-node: #555555;
+  --theme-color-text: #111111;
+  --theme-color-band: #7a7979;
+  --theme-color-accent: #1f6feb;
+  --theme-color-magnifier-stroke: #000000;
+
+  /* Type */
+  --theme-font-body: 'Montserrat', sans-serif;
+  --theme-font-label: 'Montserrat', sans-serif;
+  --theme-font-magnifier: 'Montserrat', sans-serif;
+
+  /* Spacing */
+  --theme-space-2xs: 4px;
+  --theme-space-xs: 6px;
+  --theme-space-sm: 8px;
+  --theme-space-md: 12px;
+  --theme-space-lg: 16px;
+  --theme-space-xl: 20px;
+  --theme-space-2xl: 24px;
+
+  /* Radii and strokes */
+  --theme-radius-node: 12px;
+  --theme-radius-panel: 14px;
+  --theme-radius-card: 10px;
+  --theme-stroke-node: 1px;
+
+  /* Motion tokens */
+  --theme-motion-duration-fast: 120ms;
+  --theme-motion-duration-medium: 200ms;
+  --theme-motion-duration-slow: 320ms;
+  --theme-motion-ease: cubic-bezier(0.33, 1, 0.68, 1);
+}
