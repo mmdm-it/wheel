@@ -21,6 +21,7 @@
     import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookCousinChain, validateVolumeRoot } from './src/index.js';
     import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMillennia, buildBibleSections, buildBibleBooks, buildCatalogManufacturers } from './src/adapters/volume-helpers.js';
     import { createVolumeLayoutSpec } from './src/adapters/volume-layout.js';
+    import { buildPlacesPyramid, buildCatalogPyramid, buildCalendarPyramid, buildBiblePyramid } from './src/pyramid/volume-pyramid.js';
     import { createAdapterRegistry, createAdapterLoader } from './src/adapters/registry.js';
     import { catalogAdapter } from './src/adapters/catalog-adapter.js';
     import { DetailPluginRegistry } from './src/view/detail/plugin-registry.js';
@@ -386,7 +387,8 @@
         layoutBindings: {
           bibleModeRef: () => bibleMode,
           setBibleMode: next => { bibleMode = next; },
-          setBibleChapterContext: ctx => { bibleChapterContext = ctx; }
+          setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
+          pyramidBuilder: buildBiblePyramid
         }
       };
     }
@@ -458,7 +460,8 @@
           calendarModeRef: () => calendarMode,
           setCalendarMode: next => { calendarMode = next; },
           setCalendarMonthContext: ctx => { calendarMonthContext = ctx; },
-          getCalendarMonths: (m, selected, mode) => getCalendarMonths(manifest, selected, mode || calendarMode)
+          getCalendarMonths: (m, selected, mode) => getCalendarMonths(manifest, selected, mode || calendarMode),
+          pyramidBuilder: buildCalendarPyramid
         }
       };
     }
@@ -484,7 +487,8 @@
         childrenHandler: () => false,
         layoutBindings: {
           catalogModeRef: () => catalogMode,
-          setCatalogMode: next => { catalogMode = next; }
+          setCatalogMode: next => { catalogMode = next; },
+          pyramidBuilder: buildCatalogPyramid
         }
       };
     }
@@ -545,7 +549,8 @@
         layoutBindings: {
           placesState,
           buildPlacesLevel,
-          placesChildrenHandler: params => childrenHandler(params)
+          placesChildrenHandler: params => childrenHandler(params),
+          pyramidBuilder: buildPlacesPyramid
         }
       };
     }
@@ -829,7 +834,8 @@
         setBibleMode: layoutBindings.setBibleMode,
         setBibleChapterContext: layoutBindings.setBibleChapterContext,
         catalogModeRef: layoutBindings.catalogModeRef,
-        setCatalogMode: layoutBindings.setCatalogMode
+        setCatalogMode: layoutBindings.setCatalogMode,
+        pyramidBuilder: layoutBindings.pyramidBuilder
       });
       const adapter = adapterLoader.load(volume);
       let adapterNormalized = null;

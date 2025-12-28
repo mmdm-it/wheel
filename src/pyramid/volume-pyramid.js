@@ -1,21 +1,12 @@
-// Volume-specific pyramid config builders.
-// Each builder stays isolated from the host view logic and only uses passed-in
-// dependencies (manifest, state accessors, and UI callbacks).
-
+// Pyramid config builders are provided by volume-specific handlers; the host simply
+// invokes the supplied builder without branching on volume ids.
 export function createVolumePyramidConfig(options = {}) {
-  const { volume } = options;
-  const builders = {
-    places: buildPlacesPyramid,
-    catalog: buildCatalogPyramid,
-    calendar: buildCalendarPyramid,
-    bible: buildBiblePyramid
-  };
-  const builder = builders[volume];
-  if (!builder) return null;
-  return builder(options);
+  const { pyramidBuilder } = options;
+  if (typeof pyramidBuilder !== 'function') return null;
+  return pyramidBuilder(options);
 }
 
-function buildPlacesPyramid({
+export function buildPlacesPyramid({
   manifest,
   placesState,
   buildPlacesLevel,
@@ -60,7 +51,7 @@ function buildPlacesPyramid({
   return { getChildren, onClick };
 }
 
-function buildCatalogPyramid({
+export function buildCatalogPyramid({
   manifest,
   getCatalogChildren,
   getApp,
@@ -88,7 +79,7 @@ function buildCatalogPyramid({
   return { getChildren, onClick };
 }
 
-function buildCalendarPyramid({
+export function buildCalendarPyramid({
   manifest,
   getCalendarMonths,
   getApp,
@@ -124,7 +115,7 @@ function buildCalendarPyramid({
   return { getChildren, onClick };
 }
 
-function buildBiblePyramid({
+export function buildBiblePyramid({
   manifest,
   namesMap,
   getBibleChapters,

@@ -19,7 +19,8 @@ export function createVolumeLayoutSpec({
   setBibleMode,
   setBibleChapterContext,
   catalogModeRef,
-  setCatalogMode
+  setCatalogMode,
+  pyramidBuilder
 } = {}) {
   const pyramid = createVolumePyramidConfig({
     volume,
@@ -39,7 +40,8 @@ export function createVolumeLayoutSpec({
     setBibleMode,
     setBibleChapterContext,
     catalogModeRef,
-    setCatalogMode
+    setCatalogMode,
+    pyramidBuilder
   });
   return pyramid ? { pyramid } : {};
 }

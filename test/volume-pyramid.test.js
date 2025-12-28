@@ -1,9 +1,15 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { createVolumePyramidConfig } from '../src/pyramid/volume-pyramid.js';
+import {
+  createVolumePyramidConfig,
+  buildCatalogPyramid,
+  buildCalendarPyramid,
+  buildBiblePyramid,
+  buildPlacesPyramid
+} from '../src/pyramid/volume-pyramid.js';
 
 describe('createVolumePyramidConfig', () => {
-  it('returns null for unknown volume', () => {
+  it('returns null when no builder is provided', () => {
     const cfg = createVolumePyramidConfig({ volume: 'unknown' });
     assert.equal(cfg, null);
   });
@@ -28,6 +34,7 @@ describe('createVolumePyramidConfig', () => {
     let mode = 'manufacturer';
     const config = createVolumePyramidConfig({
       volume: 'catalog',
+      pyramidBuilder: buildCatalogPyramid,
       manifest,
       getCatalogChildren,
       getApp: () => app,
@@ -64,6 +71,7 @@ describe('createVolumePyramidConfig', () => {
     };
     const config = createVolumePyramidConfig({
       volume: 'calendar',
+      pyramidBuilder: buildCalendarPyramid,
       manifest,
       getCalendarMonths,
       getApp: () => app,
@@ -101,6 +109,7 @@ describe('createVolumePyramidConfig', () => {
     };
     const config = createVolumePyramidConfig({
       volume: 'bible',
+      pyramidBuilder: buildBiblePyramid,
       manifest,
       getBibleChapters,
       getApp: () => app,
@@ -134,6 +143,7 @@ describe('createVolumePyramidConfig', () => {
     const app = { setPrimaryItems: () => {} };
     const config = createVolumePyramidConfig({
       volume: 'places',
+      pyramidBuilder: buildPlacesPyramid,
       manifest,
       placesState,
       buildPlacesLevel,
