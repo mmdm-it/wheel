@@ -1,9 +1,10 @@
 {
   "name": "wheel",
-  "version": "3.4.13",
+  "version": "3.5.0",
   "type": "module",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "lint:forbidden": "node --test test/forbidden-volume-literals.test.js"
   },
   "dependencies": {
     "ajv": "^8.12.0"

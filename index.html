@@ -19,11 +19,13 @@
   </div>
   <script type="module">
     import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookCousinChain, validateVolumeRoot } from './src/index.js';
-    import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMillennia, buildBibleSections, buildBibleBooks, buildCatalogManufacturers } from './src/adapters/volume-helpers.js';
+    import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters } from './src/adapters/volume-helpers.js';
     import { createVolumeLayoutSpec } from './src/adapters/volume-layout.js';
-    import { buildPlacesPyramid, buildCatalogPyramid, buildCalendarPyramid, buildBiblePyramid } from './src/pyramid/volume-pyramid.js';
     import { createAdapterRegistry, createAdapterLoader } from './src/adapters/registry.js';
     import { catalogAdapter } from './src/adapters/catalog-adapter.js';
+    import { bibleAdapter } from './src/adapters/bible-adapter.js';
+    import { calendarAdapter } from './src/adapters/calendar-adapter.js';
+    import { placesAdapter } from './src/adapters/places-adapter.js';
     import { DetailPluginRegistry } from './src/view/detail/plugin-registry.js';
     import { TextDetailPlugin } from './src/view/detail/plugins/text-plugin.js';
     import { CardDetailPlugin } from './src/view/detail/plugins/card-plugin.js';
@@ -32,6 +34,9 @@
     const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
     const adapterRegistry = createAdapterRegistry();
     adapterRegistry.register('catalog', () => ({ ...catalogAdapter, volumeId: 'catalog' }));
+    adapterRegistry.register('bible', () => ({ ...bibleAdapter, volumeId: 'bible' }));
+    adapterRegistry.register('calendar', () => ({ ...calendarAdapter, volumeId: 'calendar' }));
+    adapterRegistry.register('places', () => ({ ...placesAdapter, volumeId: 'places' }));
     const adapterLoader = createAdapterLoader(adapterRegistry);
 
     const DEFAULT_VOLUME = 'bible';
@@ -66,7 +71,10 @@
         },
         formatLabel: ({ level, locale, namesMap }) => makeBibleLabelFormatter({ level, locale, namesMap }),
         buildChain: (manifest, options, namesMap) => buildBibleChain(manifest, options, namesMap),
-        createHandlers: ({ manifest, namesMap, options, translationsMeta, chainMeta }) => createBibleHandlers({ manifest, namesMap, options, translationsMeta, chainMeta })
+        createHandlers: params => {
+          const adapter = adapterLoader.load('bible');
+          return adapter?.createHandlers ? adapter.createHandlers(params) : { parentHandler: () => false, childrenHandler: () => false, secondary: { items: [], selectedIndex: 0 }, layoutBindings: {} };
+        }
       },
       catalog: {
         id: 'catalog',
@@ -88,7 +96,10 @@
         },
         formatLabel: () => ({ item }) => item?.name || item?.id || '',
         buildChain: (manifest, options) => buildCatalogManufacturers(manifest, { initialItemId: options.initialItemId }),
-        createHandlers: ({ manifest, options, chainMeta }) => createCatalogHandlers({ manifest, options, chainMeta })
+        createHandlers: params => {
+          const adapter = adapterLoader.load('catalog');
+          return adapter?.createHandlers ? adapter.createHandlers(params) : { parentHandler: () => false, childrenHandler: () => false, layoutBindings: {} };
+        }
       },
       calendar: {
         id: 'calendar',
@@ -113,7 +124,10 @@
         },
         formatLabel: ({ locale }) => makeCalendarLabelFormatter({ locale }),
         buildChain: (manifest, options) => buildCalendarYears(manifest, { arrangement: options.arrangement, initialItemId: options.initialItemId }),
-        createHandlers: ({ manifest, options, translationsMeta, chainMeta }) => createCalendarHandlers({ manifest, options, translationsMeta, chainMeta })
+        createHandlers: params => {
+          const adapter = adapterLoader.load('calendar');
+          return adapter?.createHandlers ? adapter.createHandlers(params) : { parentHandler: () => false, childrenHandler: () => false, layoutBindings: {} };
+        }
       },
       places: {
         id: 'places',
@@ -135,7 +149,10 @@
         },
         formatLabel: () => ({ item }) => item?.name || item?.id || '',
         buildChain: (manifest, options) => buildPlacesChain(manifest, options),
-        createHandlers: ({ manifest, options, chainMeta }) => createPlacesHandlers({ manifest, options, chainMeta })
+        createHandlers: params => {
+          const adapter = adapterLoader.load('places');
+          return adapter?.createHandlers ? adapter.createHandlers(params) : { parentHandler: () => false, childrenHandler: () => false, layoutBindings: {} };
+        }
       }
     };
 
@@ -324,236 +341,6 @@
       return { items, selectedIndex, preserveOrder, meta: { levels, levelIndex, selections } };
     }
 
-    function createBibleHandlers({ manifest, namesMap, options, translationsMeta }) {
-      let bibleMode = 'book';
-      let bibleChapterContext = null;
-      const lastBookBySection = {};
-      const secondary = translationsMeta ? buildSecondaryLanguages(translationsMeta, options.translation) : { items: [], selectedIndex: 0 };
-
-      const parentHandler = ({ selected, app }) => {
-        if (bibleMode === 'chapter') {
-          const ctx = bibleChapterContext;
-          const { items: bookItems, selectedIndex: bookSelected, preserveOrder: bookPreserve } = buildBibleBookCousinChain(manifest, {
-            testamentId: ctx?.testamentId,
-            initialItemId: ctx?.bookId,
-            names: namesMap
-          });
-          if (!bookItems.length) return false;
-          bibleMode = 'book';
-          bibleChapterContext = null;
-          if (app?.setParentButtons) app.setParentButtons({ showOuter: true, showInner: true });
-          if (app?.setPrimaryItems) app.setPrimaryItems(bookItems, bookSelected, bookPreserve);
-          return true;
-        }
-        if (bibleMode !== 'book') return false;
-        const sectionId = selected?.sectionId;
-        if (sectionId && selected?.id) {
-          lastBookBySection[sectionId] = selected.id;
-        }
-        const testamentId = selected?.testamentId;
-        const { items: sectionItems, selectedIndex: sectionSelected } = buildBibleSections(manifest, {
-          testamentId,
-          sectionId,
-          namesMap
-        });
-        if (!sectionItems.length) return false;
-        bibleMode = 'section';
-        if (app?.setParentButtons) app.setParentButtons({ showOuter: true, showInner: true });
-        if (app?.setPrimaryItems) app.setPrimaryItems(sectionItems, sectionSelected, true);
-        return true;
-      };
-
-      const childrenHandler = ({ selected, app }) => {
-        if (bibleMode !== 'section') return false;
-        const sectionId = selected?.id;
-        const testamentId = selected?.testamentId;
-        const initialBookId = sectionId ? lastBookBySection[sectionId] : null;
-        const { items: bookItems, selectedIndex: bookSelected, preserveOrder: bookPreserve } = buildBibleBookCousinChain(manifest, {
-          testamentId,
-          initialItemId: initialBookId,
-          names: namesMap
-        });
-        if (!bookItems.length) return false;
-        bibleMode = 'book';
-        if (app?.setParentButtons) app.setParentButtons({ showOuter: true, showInner: true });
-        if (app?.setPrimaryItems) app.setPrimaryItems(bookItems, bookSelected, bookPreserve);
-        return true;
-      };
-
-      return {
-        parentHandler,
-        childrenHandler,
-        secondary,
-        layoutBindings: {
-          bibleModeRef: () => bibleMode,
-          setBibleMode: next => { bibleMode = next; },
-          setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
-          pyramidBuilder: buildBiblePyramid
-        }
-      };
-    }
-
-    function createCalendarHandlers({ manifest, options }) {
-      let calendarMode = 'year';
-      let calendarMonthContext = null;
-      const lastYearByMillennium = {};
-
-      const parentHandler = ({ selected, app }) => {
-        if (calendarMode === 'month') {
-          const yearId = calendarMonthContext?.yearId;
-          const milliId = calendarMonthContext?.millenniumId;
-          const { items: yearItems, selectedIndex: yearSelected } = buildCalendarYears(manifest, {
-            arrangement: options.arrangement,
-            initialItemId: yearId,
-            filterMillenniumId: milliId
-          });
-          calendarMode = 'year';
-          if (app?.setParentButtons) app.setParentButtons({ showOuter: true, showInner: true });
-          if (app?.setPrimaryItems) app.setPrimaryItems(yearItems, yearSelected, true);
-          return true;
-        }
-        if (calendarMode !== 'year') return false;
-        const millenniumId = selected?.parentId || selected?.parent_id || null;
-        if (millenniumId && selected?.id) {
-          lastYearByMillennium[millenniumId] = selected.id;
-        }
-        const { items: milliItems, selectedIndex: milliSelected } = buildCalendarMillennia(manifest, { initialItemId: millenniumId });
-        calendarMode = 'millennium';
-        if (app?.setParentButtons) app.setParentButtons({ showOuter: false, showInner: true });
-        if (app?.setPrimaryItems) app.setPrimaryItems(milliItems, milliSelected, true);
-        return true;
-      };
-
-      const childrenHandler = ({ selected, app }) => {
-        if (calendarMode === 'year') {
-          const months = getCalendarMonths(manifest, selected, calendarMode);
-          if (!months.length) return false;
-          calendarMode = 'month';
-          calendarMonthContext = {
-            yearId: selected?.id || null,
-            millenniumId: selected?.parentId || selected?.parent_id || null
-          };
-          if (app?.setParentButtons) app.setParentButtons({ showOuter: true, showInner: true });
-          if (app?.setPrimaryItems) app.setPrimaryItems(months, 0, true);
-          return true;
-        }
-        if (calendarMode !== 'millennium') return false;
-        const millenniumId = selected?.id;
-        if (!millenniumId) return true;
-        const preferredYear = lastYearByMillennium[millenniumId];
-        const { items: yearItems, selectedIndex: yearSelected } = buildCalendarYears(manifest, {
-          arrangement: options.arrangement,
-          initialItemId: preferredYear,
-          filterMillenniumId: millenniumId
-        });
-        calendarMode = 'year';
-        if (app?.setParentButtons) app.setParentButtons({ showOuter: true, showInner: true });
-        if (app?.setPrimaryItems) app.setPrimaryItems(yearItems, yearSelected, true);
-        return true;
-      };
-
-      return {
-        parentHandler,
-        childrenHandler,
-        shouldCenterLabel: () => true,
-        layoutBindings: {
-          calendarModeRef: () => calendarMode,
-          setCalendarMode: next => { calendarMode = next; },
-          setCalendarMonthContext: ctx => { calendarMonthContext = ctx; },
-          getCalendarMonths: (m, selected, mode) => getCalendarMonths(manifest, selected, mode || calendarMode),
-          pyramidBuilder: buildCalendarPyramid
-        }
-      };
-    }
-
-    function createCatalogHandlers({ chainMeta }) {
-      let catalogMode = 'manufacturer';
-      const catalogRoot = chainMeta ? { ...chainMeta } : null;
-
-      const parentHandler = ({ app }) => {
-        if (catalogMode !== 'model') return false;
-        if (!catalogRoot) return false;
-        catalogMode = 'manufacturer';
-        if (app?.setParentButtons) app.setParentButtons({ showOuter: true, showInner: true });
-        if (app?.setPrimaryItems) {
-          const { items: rootItems, selectedIndex: rootSelected, preserveOrder: rootPreserve } = catalogRoot;
-          app.setPrimaryItems(rootItems || [], rootSelected ?? 0, rootPreserve ?? false);
-        }
-        return true;
-      };
-
-      return {
-        parentHandler,
-        childrenHandler: () => false,
-        layoutBindings: {
-          catalogModeRef: () => catalogMode,
-          setCatalogMode: next => { catalogMode = next; },
-          pyramidBuilder: buildCatalogPyramid
-        }
-      };
-    }
-
-    function createPlacesHandlers({ manifest, chainMeta }) {
-      const baseState = chainMeta?.meta ? chainMeta.meta : chainMeta || {};
-      let placesState = { ...baseState, manifest };
-
-      const parentHandler = ({ selected, setItems, app }) => {
-        if (!placesState?.levels?.length) return false;
-        if (placesState.levelIndex <= 0) return false;
-        const parentLevelIndex = placesState.levelIndex - 1;
-        const parentLevelName = placesState.levels[parentLevelIndex];
-        placesState.selections[placesState.levels[placesState.levelIndex]] = selected?.id || placesState.selections[placesState.levels[placesState.levelIndex]];
-        const { items: parentItems, selectedIndex: parentSelected, preserveOrder } = buildPlacesLevel(
-          placesState.manifest,
-          placesState.levels,
-          parentLevelIndex,
-          {
-            selectedId: placesState.selections[parentLevelName] || null
-          }
-        );
-        if (!parentItems.length) return false;
-        placesState.levelIndex = parentLevelIndex;
-        placesState.selections[parentLevelName] = parentItems[parentSelected]?.id || placesState.selections[parentLevelName] || null;
-        const apply = typeof setItems === 'function' ? setItems : app?.setPrimaryItems;
-        if (apply) apply(parentItems, parentSelected, preserveOrder);
-        return true;
-      };
-
-      const childrenHandler = ({ selected, setItems, app }) => {
-        if (!placesState?.levels?.length) return false;
-        if (placesState.levelIndex >= placesState.levels.length - 1) return false;
-        if (!selected?.id) return false;
-        const nextLevelIndex = placesState.levelIndex + 1;
-        const nextLevelName = placesState.levels[nextLevelIndex];
-        const { items: childItems, selectedIndex: childSelected, preserveOrder } = buildPlacesLevel(
-          placesState.manifest,
-          placesState.levels,
-          nextLevelIndex,
-          {
-            parentItem: selected,
-            selectedId: placesState.selections[nextLevelName] || null,
-            contextParentId: selected.id
-          }
-        );
-        if (!childItems.length) return false;
-        placesState.levelIndex = nextLevelIndex;
-        placesState.selections[nextLevelName] = childItems[childSelected]?.id || placesState.selections[nextLevelName] || null;
-        const apply = typeof setItems === 'function' ? setItems : app?.setPrimaryItems;
-        if (apply) apply(childItems, childSelected, preserveOrder);
-        return true;
-      };
-
-      return {
-        parentHandler,
-        childrenHandler,
-        layoutBindings: {
-          placesState,
-          buildPlacesLevel,
-          placesChildrenHandler: params => childrenHandler(params),
-          pyramidBuilder: buildPlacesPyramid
-        }
-      };
-    }
 
     function wireInteractions(app, itemCount) {
       let isDragging = false;
@@ -669,123 +456,6 @@
       return entries[0][0];
     };
 
-    const buildSecondaryLanguages = (translationsMeta, currentTranslation) => {
-      const nativeNames = {
-        latin: 'Latina',
-        greek: 'Ελληνικά',
-        hebrew: 'עברית',
-        english: 'English',
-        french: 'Français',
-        spanish: 'Español',
-        italian: 'Italiano',
-        portuguese: 'Português',
-        russian: 'Русский'
-      };
-      const desiredOrder = ['hebrew', 'greek', 'latin', 'french', 'spanish', 'english', 'italian', 'portuguese', 'russian'];
-      const normalize = lang => (lang || '').toLowerCase().trim() === 'portugese' ? 'portuguese' : (lang || '').toLowerCase().trim();
-      const translations = translationsMeta?.translations || {};
-      const items = desiredOrder.map((lang, idx) => {
-        const normalizedLang = normalize(lang);
-        const translation = translationsForLanguage(translationsMeta, normalizedLang) || currentTranslation || 'NAB';
-        const name = nativeNames[normalizedLang]
-          || (translations[translation]?.language_name)
-          || (normalizedLang ? `${normalizedLang.charAt(0).toUpperCase()}${normalizedLang.slice(1)}` : 'Language');
-        return {
-          id: normalizedLang,
-          name,
-          order: idx,
-          translation
-        };
-      });
-      const currentLang = translations?.[currentTranslation]?.language;
-      const selectedIndex = (() => {
-        if (currentLang) {
-          const idx = items.findIndex(item => item.id === currentLang);
-          if (idx >= 0) return idx;
-        }
-        return 0;
-      })();
-      return { items, selectedIndex };
-    };
-
-    const getCatalogChildren = (manifest, selected) => {
-      const id = selected?.id;
-      if (!id) return [];
-      const [marketId, countryId, manufacturerId] = id.split('__');
-      const manufacturer = manifest?.MMdM?.markets?.[marketId]?.countries?.[countryId]?.manufacturers?.[manufacturerId];
-      if (!manufacturer) return [];
-      const cylinders = manufacturer.cylinders || {};
-      const children = [];
-      Object.entries(cylinders).forEach(([cylKey, cylVal]) => {
-        const models = Array.isArray(cylVal.models) ? cylVal.models : [];
-        models.forEach((model, idx) => {
-          const modelId = `model:${manufacturerId}:${cylKey}:${model.engine_model || idx}`;
-          children.push({
-            id: modelId,
-            name: model.engine_model || modelId,
-            order: idx,
-            parentId: id,
-            cylinder: cylKey,
-            level: 'model'
-          });
-        });
-      });
-      return children.map((child, idx) => ({ ...child, order: Number.isFinite(child.order) ? child.order : idx }));
-    };
-
-    const getCalendarMonths = (manifest, selected, calendarMode) => {
-      if (calendarMode !== 'year') return [];
-      const yearId = selected?.id;
-      if (!yearId) return [];
-      const years = manifest?.Calendar?.years || {};
-      const yearEntry = years[yearId] || Object.values(years).find(y => String(y.id || '') === String(yearId));
-      if (!yearEntry?.months) return [];
-      return Object.entries(yearEntry.months).map(([monthKey, monthVal], idx) => ({
-        id: monthVal?.id || `${yearId}:${monthKey}`,
-        name: monthVal?.name || monthKey,
-        order: Number.isFinite(monthVal?.sort_number) ? monthVal.sort_number : idx,
-        parentId: yearId,
-        level: 'month'
-      })).sort((a, b) => {
-        if (a.order === b.order) return (a.name || '').localeCompare(b.name || '');
-        return a.order - b.order;
-      }).map((item, idx) => ({ ...item, order: idx }));
-    };
-
-    const getBibleChapters = (manifest, selected, namesMap, bibleMode) => {
-      if (bibleMode !== 'book') return [];
-      const bookId = selected?.id;
-      if (!bookId) return [];
-      const testaments = manifest?.Gutenberg_Bible?.testaments || {};
-      let bookEntry = null;
-      Object.values(testaments).some(testament => {
-        const sections = testament?.sections || {};
-        return Object.values(sections).some(section => {
-          const books = section?.books || {};
-          if (books[bookId]) {
-            bookEntry = books[bookId];
-            return true;
-          }
-          return false;
-        });
-      });
-      if (!bookEntry?.chapters) return [];
-      return Object.entries(bookEntry.chapters).map(([chapterKey, chapterVal], idx) => {
-        const chapterNum = Number.parseInt(chapterKey, 10);
-        const label = Number.isFinite(chapterNum) ? `Chapter ${chapterNum}` : (namesMap?.sections?.[chapterKey] || chapterKey);
-        return {
-          id: chapterVal?.id || `${bookId}:${chapterKey}`,
-          name: chapterVal?.name || label,
-          order: Number.isFinite(chapterVal?.sort_number) ? chapterVal.sort_number : idx,
-          parentId: bookId,
-          level: 'chapter'
-        };
-      }).sort((a, b) => {
-        if (a.order === b.order) return (a.name || '').localeCompare(b.name || '');
-        return a.order - b.order;
-      }).map((item, idx) => ({ ...item, order: idx }));
-    };
-
     loadConfig().then(async ({ volume, config, manifest, options, supplemental }) => {
       applyTheme(manifest, volume);
       const translationsMeta = supplemental?.translationsMeta || null;
@@ -808,7 +478,24 @@
         return;
       }
 
-      const labelFormatter = makeLabelFormatter({ config, volume, level: options.level, locale: resolvedLocale, namesMap, options, manifest, meta });
+      const adapter = adapterLoader.load(volume);
+      let adapterNormalized = null;
+      let adapterLayoutSpec = null;
+      if (adapter) {
+        try {
+          adapterNormalized = adapter.normalize(manifest);
+          adapterLayoutSpec = adapter.layoutSpec(adapterNormalized, viewport);
+        } catch (err) {
+          console.warn('[wheel] adapter layoutSpec failed, falling back to host config', err);
+          adapterNormalized = null;
+          adapterLayoutSpec = null;
+        }
+      }
+
+      const adapterLabel = adapterLayoutSpec?.label;
+      const labelFormatter = adapterLabel
+        ? ({ item }) => adapterLabel(item)
+        : makeLabelFormatter({ config, volume, level: options.level, locale: resolvedLocale, namesMap, options, manifest, meta });
       const shouldCenterLabel = handlerSet.shouldCenterLabel || (() => Boolean(config?.centerLabel));
       let app;
 
@@ -837,20 +524,6 @@
         setCatalogMode: layoutBindings.setCatalogMode,
         pyramidBuilder: layoutBindings.pyramidBuilder
       });
-      const adapter = adapterLoader.load(volume);
-      let adapterNormalized = null;
-      let adapterLayoutSpec = null;
-      if (adapter) {
-        try {
-          adapterNormalized = adapter.normalize(manifest);
-          adapterLayoutSpec = adapter.layoutSpec(adapterNormalized, viewport);
-        } catch (err) {
-          console.warn('[wheel] adapter layoutSpec failed, falling back to host config', err);
-          adapterNormalized = null;
-          adapterLayoutSpec = null;
-        }
-      }
-
       const pyramidLayout = adapterLayoutSpec || layoutSpec;
       const pyramidConfig = pyramidLayout?.pyramid || null;
       const normalized = {

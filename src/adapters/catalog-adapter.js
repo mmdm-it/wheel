@@ -1,5 +1,6 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
+import { buildCatalogPyramid } from '../pyramid/volume-pyramid.js';
 
 const isBrowser = typeof window !== 'undefined' && typeof fetch === 'function';
 const manifestUrl = './data/mmdm/mmdm_catalog.json';
@@ -218,6 +219,30 @@ export const catalogAdapter = {
   normalize,
   layoutSpec,
   detailFor,
+  createHandlers: ({ chainMeta } = {}) => {
+    let catalogMode = 'manufacturer';
+    const catalogRoot = chainMeta ? { ...chainMeta } : null;
+    const parentHandler = ({ app }) => {
+      if (catalogMode !== 'model') return false;
+      if (!catalogRoot) return false;
+      catalogMode = 'manufacturer';
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true, showInner: true });
+      if (app?.setPrimaryItems) {
+        const { items: rootItems, selectedIndex: rootSelected, preserveOrder: rootPreserve } = catalogRoot;
+        app.setPrimaryItems(rootItems || [], rootSelected ?? 0, rootPreserve ?? false);
+      }
+      return true;
+    };
+    return {
+      parentHandler,
+      childrenHandler: () => false,
+      layoutBindings: {
+        catalogModeRef: () => catalogMode,
+        setCatalogMode: next => { catalogMode = next; },
+        pyramidBuilder: buildCatalogPyramid
+      }
+    };
+  },
   capabilities: {
     search: false,
     deepLink: false,

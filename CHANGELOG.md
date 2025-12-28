@@ -2,7 +2,36 @@
 
 ## [Unreleased]
 
-> Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.4.13.
+> Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
+
+## [3.5.0] - 2025-12-27
+
+### Added
+- Adapter-specific detail templates covered via plugin registry for all volumes (Bible, Catalog, Calendar, Places) with mock DOM render tests
+
+### Changed
+- Version bump to 3.5.0 to mark v3.5 release train complete
+
+## [3.4.16] - 2025-12-27
+
+### Added
+- Detail template coverage for Calendar (year/month) and Places (hierarchy) rendered through the plugin registry
+
+### Changed
+- Bumped version to 3.4.16
+
+## [3.4.15] - 2025-12-27
+
+### Added
+- Detail template coverage for Bible and Catalog via plugin registry with mock DOM render tests
+
+### Changed
+- CI wired to run forbidden volume-literal guard and tests on master; README badge added for CI status
+
+## [3.4.14] - 2025-12-27
+
+### Changed
+- Host now delegates per-volume handlers to adapters; handler wiring lives alongside each adapter
 
 ## [3.4.13] - 2025-12-27
 
