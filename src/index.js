@@ -80,7 +80,8 @@ export function createApp({
   pyramid,
   pyramidLayoutSpec = null,
   pyramidAdapter = null,
-  pyramidNormalized = null
+  pyramidNormalized = null,
+  dimensionPortals = null
 }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const debug = Boolean(contextOptions.debug);
@@ -90,10 +91,52 @@ export function createApp({
   const debugPerf = Boolean(contextOptions.debugPerf);
   const perfRenderBudget = Number(contextOptions?.perfRenderBudgetMs) || 17;
   const emit = payload => safeEmit(contextOptions.onEvent, payload);
-  const hasDimensions = contextOptions?.hasDimensions ?? true;
+  const portalMeta = dimensionPortals || contextOptions.dimensionPortals || null;
+  const portalLanguages = Array.isArray(portalMeta?.languages?.items) ? portalMeta.languages.items : [];
+  const portalLanguageLabels = portalMeta?.languages?.labels || {};
+  const portalLanguageDefault = portalMeta?.languages?.defaultId || portalLanguages[0]?.id || null;
+  const portalEditionsAvailable = portalMeta?.editions?.available || {};
+  const portalEditionDefaults = portalMeta?.editions?.default || {};
+  const portalEditionLabels = portalMeta?.editions?.labels || {};
+  const hasPortals = portalLanguages.length > 0;
+  const hasDimensions = (contextOptions?.hasDimensions ?? true) && (hasPortals || secondaryItems.length > 0);
   const logOnce = logOnceFactory((...args) => {
     if (debug) console.log(...args);
   });
+
+  const normalizeSecondaryItems = (list, preferredId = null) => {
+    const normalized = (list || []).map((item, idx) => {
+      const id = item?.id ?? item?.language ?? `item-${idx}`;
+      const name = item?.name || item?.label || item?.language || id;
+      const order = Number.isFinite(item?.order) ? item.order : idx;
+      return { ...item, id, name, order };
+    });
+    const selectedIndex = (() => {
+      if (preferredId) {
+        const found = normalized.findIndex(entry => entry?.id === preferredId);
+        if (found >= 0) return found;
+      }
+      const fallback = normalized.findIndex(entry => entry !== null);
+      return fallback >= 0 ? fallback : 0;
+    })();
+    return { items: normalized, selectedIndex };
+  };
+
+  const getLanguageLabel = langId => portalLanguageLabels[langId] || portalLanguages.find(l => l.id === langId)?.name || langId;
+  const getEditionItems = langId => {
+    const list = portalEditionsAvailable[langId] || [];
+    return list.map((editionId, idx) => ({
+      id: editionId,
+      name: portalEditionLabels[editionId] || editionId,
+      order: idx,
+      language: langId
+    }));
+  };
+  const getDefaultEdition = langId => portalEditionDefaults[langId] || getEditionItems(langId)[0]?.id || null;
+  const languageSelection = normalizeSecondaryItems(portalLanguages, portalMeta?.languages?.selectedId || portalLanguageDefault);
+  let languageSelectedId = languageSelection.items[languageSelection.selectedIndex]?.id || null;
+  let editionSelectedId = languageSelectedId ? (portalMeta?.editions?.selectedId || getDefaultEdition(languageSelectedId)) : null;
+  let portalStage = 'primary';
   let preserveOrderFlag = preserveOrder;
   let normalizedItems = normalizeItems(items, { preserveOrder: preserveOrderFlag });
   const formatLabel = typeof labelFormatter === 'function'
@@ -117,6 +160,7 @@ export function createApp({
     x: arcParams.hubX + dimensionRadius * Math.cos(dimensionAngle),
     y: arcParams.hubY + dimensionRadius * Math.sin(dimensionAngle)
   };
+  const hasDimensionControl = hasDimensions && (hasPortals || secondaryItems.length > 0);
 
   logOnce('[FocusRing] geometry inputs', {
     viewport: vp,
@@ -149,13 +193,12 @@ export function createApp({
   })();
   nav.setItems(normalizedItems, safeIndex);
   const secondaryNav = new NavigationState();
-  const safeSecondaryIndex = (() => {
-    if (!secondaryItems?.length) return 0;
-    if (secondaryItems[secondarySelectedIndex] !== null) return secondarySelectedIndex;
-    const fallback = secondaryItems.findIndex(item => item !== null);
-    return fallback >= 0 ? fallback : 0;
-  })();
-  secondaryNav.setItems(secondaryItems || [], safeSecondaryIndex);
+  const fallbackSecondary = normalizeSecondaryItems(secondaryItems, secondaryItems?.[secondarySelectedIndex]?.id);
+  const secondaryInit = hasPortals ? languageSelection : fallbackSecondary;
+  const safeSecondaryIndex = hasPortals
+    ? secondaryInit.selectedIndex
+    : Math.max(0, Math.min(secondarySelectedIndex, Math.max((secondaryInit.items?.length || 1) - 1, 0)));
+  secondaryNav.setItems(secondaryInit.items || [], safeSecondaryIndex);
   const view = new FocusRingView(svgRoot);
   view.init();
   let isBlurred = false;
@@ -239,6 +282,11 @@ export function createApp({
     const endAngle = secMag.angle + arcLength / 2;
     const maxNodes = windowInfo.maxNodes;
     return { startAngle, endAngle, arcLength, maxNodes };
+  };
+
+  const hasTertiaryForLanguage = lang => {
+    const list = portalEditionsAvailable[lang] || [];
+    return Array.isArray(list) && list.length > 1;
   };
 
   const getParentLabel = item => {
@@ -338,6 +386,82 @@ export function createApp({
     const desiredRotation = getSecondaryMagnifier().angle - baseAngle;
     const bounds = computeSecondaryBounds(secondaryNav.items);
     secondaryRotation = clampSecondaryRotation(desiredRotation, bounds);
+  };
+
+  const applySecondaryItems = (items, preferredId = null) => {
+    const normalized = normalizeSecondaryItems(items, preferredId);
+    secondaryNav.setItems(normalized.items, normalized.selectedIndex);
+    alignSecondaryToSelected();
+  };
+
+  const setStage = next => {
+    portalStage = next;
+    if (!hasPortals) {
+      setBlur(next !== 'primary');
+      return;
+    }
+    if (next === 'language') {
+      applySecondaryItems(languageSelection.items, languageSelectedId);
+    } else if (next === 'edition') {
+      const editions = getEditionItems(languageSelectedId);
+      editionSelectedId = editionSelectedId || getDefaultEdition(languageSelectedId);
+      applySecondaryItems(editions, editionSelectedId);
+    }
+    const shouldBlur = next !== 'primary';
+    setBlur(shouldBlur);
+    emit({
+      type: 'dimension:stage',
+      stage: portalStage,
+      language: languageSelectedId || null,
+      edition: editionSelectedId || null
+    });
+  };
+
+  const setLanguageSelection = langItem => {
+    if (!langItem) return;
+    languageSelectedId = langItem.id ?? langItem.language ?? langItem;
+    editionSelectedId = getDefaultEdition(languageSelectedId);
+    if (typeof portalMeta?.onSelectLanguage === 'function') {
+      portalMeta.onSelectLanguage(languageSelectedId);
+    }
+    emit({
+      type: 'dimension:language',
+      language: languageSelectedId,
+      edition: editionSelectedId || null
+    });
+  };
+
+  const setEditionSelection = editionItem => {
+    if (!editionItem) return;
+    editionSelectedId = editionItem.id ?? editionItem.edition ?? editionItem;
+    if (typeof portalMeta?.onSelectEdition === 'function') {
+      portalMeta.onSelectEdition(editionSelectedId, { language: languageSelectedId });
+    }
+    emit({
+      type: 'dimension:edition',
+      edition: editionSelectedId,
+      language: languageSelectedId || null
+    });
+  };
+
+  const cyclePortalStage = () => {
+    if (!hasPortals) {
+      toggleBlur();
+      return;
+    }
+    if (portalStage === 'primary') {
+      setStage('language');
+      return;
+    }
+    if (portalStage === 'language') {
+      if (hasTertiaryForLanguage(languageSelectedId)) {
+        setStage('edition');
+      } else {
+        setStage('primary');
+      }
+      return;
+    }
+    setStage('primary');
   };
 
   const setPrimaryItems = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
@@ -467,6 +591,17 @@ export function createApp({
       ? (parentLabel || lastSelectedLabelOut || selectedMagnifierLabel)
       : parentLabel;
 
+    const dimensionAria = (() => {
+      if (!hasPortals) return 'Toggle dimension mode';
+      if (portalStage === 'primary') return 'Select language';
+      if (portalStage === 'language' && hasTertiaryForLanguage(languageSelectedId)) {
+        return 'Select edition';
+      }
+      if (portalStage === 'language') return 'Select language';
+      if (portalStage === 'edition') return `Select edition for ${getLanguageLabel(languageSelectedId)}`;
+      return 'Toggle dimension mode';
+    })();
+
     view.render(
       nodes,
       arcParams,
@@ -476,17 +611,18 @@ export function createApp({
         isRotating,
         isBlurred,
         viewport: vp,
-        debug: true,
+        debug,
         magnifierAngle: magnifier.angle,
         labelMaskEpsilon,
         onNodeClick: node => rotateNodeIntoMagnifier(node),
         selectedId: selected?.id,
-        dimensionIcon: hasDimensions ? {
+        dimensionIcon: hasDimensionControl ? {
           href: './art/dimension_sphere_black.svg',
           x: dimensionPosition.x,
           y: dimensionPosition.y,
           size: dimensionSize,
-          onClick: () => toggleBlur()
+          ariaLabel: dimensionAria,
+          onClick: () => cyclePortalStage()
         } : null,
         parentButtons: {
           innerLabel: 'CHILDREN (IN)',
@@ -563,17 +699,19 @@ export function createApp({
         };
       };
 
-      console.info('[FocusRing] magnifier + neighbors', {
-        language: contextOptions?.locale || 'english',
-        magnifier: formatMagnifier(),
-        parentButton: {
-          outerLabel: parentOuterLabel || '',
-          innerLabel: 'CHILDREN (IN)'
-        },
-        layerDirection: isLayerOut ? 'out' : 'in',
-        before: neighbors.before.map(formatNeighbor),
-        after: neighbors.after.map(formatNeighbor)
-      });
+      if (debug) {
+        console.info('[FocusRing] magnifier + neighbors', {
+          language: contextOptions?.locale || 'english',
+          magnifier: formatMagnifier(),
+          parentButton: {
+            outerLabel: parentOuterLabel || '',
+            innerLabel: 'CHILDREN (IN)'
+          },
+          layerDirection: isLayerOut ? 'out' : 'in',
+          before: neighbors.before.map(formatNeighbor),
+          after: neighbors.after.map(formatNeighbor)
+        });
+      }
     }
   };
 
@@ -609,6 +747,7 @@ export function createApp({
   };
 
   const invokeSecondarySelection = selectedItem => {
+    if (hasPortals) return;
     if (typeof onSelectSecondary === 'function' && selectedItem?.translation) {
       const wasBlurred = isBlurred;
       onSelectSecondary(selectedItem.translation);
@@ -630,6 +769,22 @@ export function createApp({
 
   const rotateSecondaryNodeIntoMagnifier = node => {
     if (!node?.item) return;
+    if (hasPortals) {
+      if (portalStage === 'language') {
+        setLanguageSelection(node.item);
+        if (hasTertiaryForLanguage(languageSelectedId)) {
+          setStage('edition');
+        } else {
+          setStage('primary');
+        }
+        return;
+      }
+      if (portalStage === 'edition') {
+        setEditionSelection(node.item);
+        setStage('primary');
+        return;
+      }
+    }
     const secMag = getSecondaryMagnifier();
     const targetAngle = secMag.angle;
     const baseAngle = getSecondaryBaseAngle(node.item.order);
@@ -759,6 +914,21 @@ export function createApp({
 
   const selectSecondaryNearest = () => {
     if (!secondaryNav.items.length) return;
+    if (hasPortals) {
+      const current = secondaryNav.getCurrent();
+      if (portalStage === 'language') {
+        setLanguageSelection(current);
+        if (hasTertiaryForLanguage(languageSelectedId)) {
+          setStage('edition');
+        } else {
+          setStage('primary');
+        }
+      } else if (portalStage === 'edition') {
+        setEditionSelection(current);
+        setStage('primary');
+      }
+      return;
+    }
     const secMag = getSecondaryMagnifier();
     let closestIdx = secondaryNav.getCurrentIndex();
     let closestDiff = Infinity;

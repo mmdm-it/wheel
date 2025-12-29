@@ -8,7 +8,7 @@
 - v3.4 Volume-safe interaction loop — done (shipped as 3.4.0; queue/cancel + deep-link hydration + rapid-switch stress tests)
 - v3.5 Detail/pyramid rebuild on adapters + data-agnostic sweep — done (shipped as 3.5.0)
 - v3.6 Theming + accessibility hardening — done (shipped as 3.6.0)
-- v3.7 Dimension System (lens: language/time) — planned
+- v3.7 Dimension System (lens: language/time) — in progress (portals wired: language/edition metadata, store/bridge hydration, portal UI cycling, telemetry + perf budgets; docs/changelog tracked for release)
 
 ## Vision
 

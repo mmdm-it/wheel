@@ -6,7 +6,54 @@
       "type": "object",
       "required": ["display_config", "testaments"],
       "properties": {
-        "display_config": { "type": "object" },
+        "display_config": {
+          "type": "object",
+          "required": ["languages"],
+          "properties": {
+            "languages": {
+              "type": "object",
+              "required": ["available", "default", "labels"],
+              "properties": {
+                "available": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "minItems": 1
+                },
+                "default": { "type": "string" },
+                "labels": {
+                  "type": "object",
+                  "additionalProperties": { "type": "string" }
+                }
+              },
+              "additionalProperties": true
+            },
+            "editions": {
+              "type": "object",
+              "required": ["registry", "available", "default", "labels"],
+              "properties": {
+                "registry": { "type": "string" },
+                "available": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "array",
+                    "items": { "type": "string" },
+                    "minItems": 1
+                  }
+                },
+                "default": {
+                  "type": "object",
+                  "additionalProperties": { "type": "string" }
+                },
+                "labels": {
+                  "type": "object",
+                  "additionalProperties": { "type": "string" }
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        },
         "testaments": { "type": "object" }
       },
       "additionalProperties": true

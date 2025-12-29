@@ -15,6 +15,8 @@ The **Dimension System** provides alternate views of the hierarchical data. The 
 - **Toggle**: the dimension button (bottom-center) only enters/exits dimension mode; it does not switch dimensions. Selecting a value on the secondary stratum exits dimension mode, and the newly selected dimension becomes visible/applied back on the primary stratum while keeping the hierarchy position unchanged.
 - **Interaction feel**: no fades; elements pop between states. Tab order remains: dimension button → secondary ring nodes → back to normal after selection.
 - **Absent dimensions**: when a volume declares no dimensions, the dimension button is hidden and dimension mode is unavailable.
+- **Portals/strata count**: volumes may declare zero, one, or two portals. That yields up to three strata total: Primary (hierarchy), Secondary (first portal), and Tertiary (second portal). The dimension button simply cycles strata in order for the portals that exist.
+- **Bible example**: Primary = Testament/Book/Chapter/Verse; Secondary = Language portal; Tertiary = Translation portal (e.g., RSV-CE, NABRE, ESV-CE). MMdM has no portals (Primary only).
 
 ---
 
@@ -141,6 +143,18 @@ Dimension Mode
     ↓ (select dimension value)
 Normal Mode (with new dimension applied)
 ```
+
+**Portal count and cycling**: Volumes can have zero, one, or two portals (never more). That yields up to three strata: Primary (hierarchy), Secondary (first portal), and Tertiary (second portal). The Dimension Button is the sole control and cycles strata in order through the portals that exist; with no portals it is hidden/inactive.
+**Portal roles**: Secondary is typically the language selector; Tertiary is the edition/translation selector within a chosen language. Manifests list available languages; edition metadata (per-language translations) lives in the translation registry.
+**Per-secondary tertiary availability**: Tertiary only appears when the currently selected Secondary value exposes multiple Tertiary options. Examples: a genre with subgenres (Jazz → Bebop/Cool/Latin), a time slice with sub-places (1970s → US/EU/JP plants), or a language with multiple editions (English → DRB/NJB/NCB). If the chosen Secondary has a single or no Tertiary option (e.g., Greek with only LXX), the Dimension Button skips Tertiary and returns directly to Primary.
+
+### v3.7 Contracts (language + edition portals)
+
+- **Secondary portal (language)**: Declared in `display_config.languages` with `available` (array), `default` (string), and `labels` (map of language → label). This portal is always the first portal when present.
+- **Tertiary portal (edition/translation)**: Declared in `display_config.editions` with `registry` (path to translation registry), `available` (map language → [edition ids]), `default` (map language → edition id), and `labels` (map edition id → label). Availability is per-language; if a selected language lists only one edition, the tertiary portal is skipped.
+- **Cycling rule**: Dimension button cycles Primary → Secondary → Tertiary (only if multiple editions for selected language) → Primary.
+- **Defaulting rule**: Switching language resets edition to that language’s `editions.default[language]` or its first available edition. Edition changes never change language.
+- **ARIA/labels**: UI labels for portals use `languages.labels` and `editions.labels`; button aria-labels must reflect the target portal (e.g., "Select language", "Select edition for English").
 
 ---
 

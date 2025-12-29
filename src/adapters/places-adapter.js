@@ -64,6 +64,11 @@ export function normalize(raw) {
   const items = [];
   const links = [];
   const levelPalette = {};
+  const displayConfig = volumeData.display_config || {};
+  const dimensions = {
+    languages: displayConfig.languages || null,
+    editions: displayConfig.editions || null
+  };
 
   const hierarchyLevels = volumeData?.display_config?.hierarchy_levels || {};
   Object.entries(hierarchyLevels).forEach(([level, cfg]) => {
@@ -115,7 +120,8 @@ export function normalize(raw) {
       volumeId: volumeKey,
       leafLevel: levels[levels.length - 1] || 'leaf',
       levels,
-      colors: levelPalette
+      colors: levelPalette,
+      dimensions
     }
   };
 }

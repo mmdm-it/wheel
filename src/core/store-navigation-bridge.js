@@ -32,6 +32,24 @@ export async function createStoreNavigationBridge({ adapter, adapterLoader = nul
   const deriveVolumeId = (volAdapter, volNormalized) =>
     volAdapter.volumeId || volNormalized?.meta?.volumeId || volNormalized?.meta?.id || volNormalized?.meta?.name || 'volume';
 
+  const extractDimensions = manifest => {
+    const firstVolume = manifest && typeof manifest === 'object' ? Object.values(manifest)[0] : null;
+    const display = firstVolume?.display_config || manifest?.display_config || null;
+    const languages = display?.languages || null;
+    const editions = display?.editions || null;
+    const languageDefault = languages?.default || (Array.isArray(languages?.available) ? languages.available[0] : null);
+    const editionDefault = languageDefault && editions?.default ? editions.default[languageDefault] ?? null : null;
+    const editionFallback = languageDefault && editions?.available && Array.isArray(editions.available[languageDefault])
+      ? editions.available[languageDefault][0]
+      : null;
+    return {
+      meta: languages || editions ? { languages, editions } : null,
+      language: languageDefault || null,
+      edition: editionDefault || editionFallback || null,
+      editionDefault
+    };
+  };
+
   const rebuildIndex = list => {
     indexById = new Map();
     list.forEach((item, idx) => {
@@ -153,6 +171,8 @@ export async function createStoreNavigationBridge({ adapter, adapterLoader = nul
     const volumeId = deriveVolumeId(volAdapter, nextNormalized);
     emit({ type: 'perf:manifest', phase: 'normalize', durationMs: now() - normalizeStart, adapter: volAdapter, volumeId });
 
+    const dimensionInfo = extractDimensions(manifest);
+
     nav.setItems(nextItems, 0);
     rebuildIndex(nextItems);
 
@@ -161,6 +181,15 @@ export async function createStoreNavigationBridge({ adapter, adapterLoader = nul
     }
 
     store.dispatch({ type: interactionEvents.SET_VOLUME, volume: volumeId });
+    if (dimensionInfo.meta) {
+      store.dispatch({ type: interactionEvents.SET_DIMENSIONS, dimensions: dimensionInfo.meta });
+    }
+    if (dimensionInfo.language) {
+      store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: dimensionInfo.language, defaultEdition: dimensionInfo.edition });
+    }
+    if (dimensionInfo.edition) {
+      store.dispatch({ type: interactionEvents.SET_EDITION, edition: dimensionInfo.edition });
+    }
 
     currentAdapter = volAdapter;
     currentVolumeId = volumeId;

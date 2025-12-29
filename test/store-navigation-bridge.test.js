@@ -30,6 +30,27 @@ const makeCatalogishAdapter = () => ({
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
+const makeDimAdapter = ({ id, languageDefault, languages = ['english', 'latin'], editions = {} }) => ({
+  volumeId: id,
+  async loadManifest() {
+    return {
+      [id]: {
+        display_config: {
+          languages: { available: languages, default: languageDefault },
+          editions
+        }
+      }
+    };
+  },
+  validate() { return { ok: true }; },
+  normalize(raw) {
+    const volumeKey = Object.keys(raw)[0];
+    return { items: [{ id: `${volumeKey}:root`, name: 'root' }], meta: { volumeId: volumeKey } };
+  },
+  layoutSpec() { return {}; },
+  capabilities: {}
+});
+
 const mkAdapter = (id, delay = 0) => ({
   volumeId: id,
   async loadManifest() {
@@ -58,6 +79,52 @@ const assertOrder = (events, expected) => {
 };
 
 describe('store-navigation-bridge (agnostic)', () => {
+  it('hydrates dimension portals from manifest', async () => {
+    const events = [];
+    const adapter = makeDimAdapter({
+      id: 'DimVol',
+      languageDefault: 'english',
+      editions: {
+        available: { english: ['NAB', 'DRA'], latin: ['VUL'] },
+        default: { english: 'NAB', latin: 'VUL' },
+        labels: { NAB: 'New American Bible' }
+      }
+    });
+
+    const bridge = await createStoreNavigationBridge({ adapter, onEvent: evt => events.push(evt) });
+    const state = bridge.store.getState();
+
+    assert.equal(state.language, 'english');
+    assert.equal(state.edition, 'NAB');
+    assert.deepEqual(state.dimensions?.languages?.available, ['english', 'latin']);
+    assert.deepEqual(state.dimensions?.editions?.default?.english, 'NAB');
+    assert.ok(events.some(evt => evt.type === 'volume-load:success'));
+  });
+
+  it('resets dimension portals on volume switch', async () => {
+    const a = makeDimAdapter({
+      id: 'volA',
+      languageDefault: 'english',
+      editions: { default: { english: 'NAB' }, available: { english: ['NAB'] } }
+    });
+    const b = makeDimAdapter({
+      id: 'volB',
+      languageDefault: 'latin',
+      editions: { default: { latin: 'VUL' }, available: { latin: ['VUL', 'DRA'] } }
+    });
+
+    const bridge = await createStoreNavigationBridge({ adapter: a });
+    assert.equal(bridge.store.getState().language, 'english');
+    assert.equal(bridge.store.getState().edition, 'NAB');
+
+    await bridge.setVolume(b);
+    const state = bridge.store.getState();
+    assert.equal(state.language, 'latin');
+    assert.equal(state.edition, 'VUL');
+    assert.deepEqual(state.dimensions?.languages?.available, ['english', 'latin']);
+    assert.deepEqual(state.dimensions?.editions?.available?.latin, ['VUL', 'DRA']);
+  });
+
   it('loads manifest, normalizes, and exposes items', async () => {
     const bridge = await createStoreNavigationBridge({ adapter: makeCatalogishAdapter() });
     assert.ok(bridge.items.length > 0, 'expected items');

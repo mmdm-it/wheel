@@ -9,7 +9,7 @@
       "volume_name": "Gutenberg Bible",
       "volume_description": "Complete Protestant Bible for testing hierarchical navigation",
       "leaf_level": "verse",
-      "translations": {
+      "languages": {
         "available": [
           "hebrew",
           "greek",
@@ -32,6 +32,44 @@
           "italian": "ITALIANO",
           "portuguese": "PORTUGU\u00caS",
           "russian": "\u0420\u0423\u0421\u0421\u041a\u0418\u0419"
+        }
+      },
+      "editions": {
+        "registry": "data/gutenberg/translations.json",
+        "available": {
+          "hebrew": ["WLC"],
+          "greek": ["LXX", "BYZ"],
+          "latin": ["VUL"],
+          "english": ["NAB", "DRA"],
+          "french": ["NEO"],
+          "spanish": ["VAT_ES"],
+          "italian": ["CEI"],
+          "portuguese": ["POR"],
+          "russian": ["SYN"]
+        },
+        "default": {
+          "hebrew": "WLC",
+          "greek": "LXX",
+          "latin": "VUL",
+          "english": "NAB",
+          "french": "NEO",
+          "spanish": "VAT_ES",
+          "italian": "CEI",
+          "portuguese": "POR",
+          "russian": "SYN"
+        },
+        "labels": {
+          "WLC": "Westminster Leningrad Codex",
+          "LXX": "Septuagint",
+          "BYZ": "Byzantine Textform",
+          "VUL": "Clementine Vulgate",
+          "NAB": "New American Bible",
+          "DRA": "Douay-Rheims",
+          "NEO": "Bible Crampon / N\u00e9o-Crampon",
+          "VAT_ES": "Vatican Spanish",
+          "CEI": "CEI (Conferenza Episcopale Italiana)",
+          "POR": "Portuguese Catholic",
+          "SYN": "Russian Synodal"
         }
       },
       "focus_ring_startup": {
@@ -468,7 +506,7 @@
                   }
                 },
                 "name": "Genesis",
-                "translations": {
+                "languages": {
                   "hebrew": "Genesis",
                   "greek": "Genesis",
                   "latin": "Genesis",
@@ -728,7 +766,7 @@
                   }
                 },
                 "name": "Exodus",
-                "translations": {
+                "languages": {
                   "hebrew": "Exodus",
                   "greek": "Exodus",
                   "latin": "Exodus",
@@ -910,7 +948,7 @@
                   }
                 },
                 "name": "Leviticus",
-                "translations": {
+                "languages": {
                   "hebrew": "Leviticus",
                   "greek": "Leviticus",
                   "latin": "Leviticus",
@@ -1146,7 +1184,7 @@
                   }
                 },
                 "name": "Numbers",
-                "translations": {
+                "languages": {
                   "hebrew": "Numbers",
                   "greek": "Numbers",
                   "latin": "Numbers",
@@ -1370,7 +1408,7 @@
                   }
                 },
                 "name": "Deuteronomy",
-                "translations": {
+                "languages": {
                   "hebrew": "Deuteronomy",
                   "greek": "Deuteronomy",
                   "latin": "Deuteronomy",
@@ -1384,7 +1422,7 @@
               }
             },
             "sort_number": 1,
-            "translations": {
+            "languages": {
               "hebrew": "Pentateuch",
               "greek": "Pentateuch",
               "latin": "Pentateuch",
@@ -1563,7 +1601,7 @@
                   }
                 },
                 "name": "Joshua",
-                "translations": {
+                "languages": {
                   "hebrew": "Joshua",
                   "greek": "Joshua",
                   "latin": "Joshua",
@@ -1709,7 +1747,7 @@
                   }
                 },
                 "name": "Judges",
-                "translations": {
+                "languages": {
                   "hebrew": "Judges",
                   "greek": "Judges",
                   "latin": "Judges",
@@ -1753,7 +1791,7 @@
                   }
                 },
                 "name": "Ruth",
-                "translations": {
+                "languages": {
                   "hebrew": "Ruth",
                   "greek": "Ruth",
                   "latin": "Ruth",
@@ -1959,7 +1997,7 @@
                   }
                 },
                 "name": "1 Samuel",
-                "translations": {
+                "languages": {
                   "hebrew": "1 Samuel",
                   "greek": "1 Samuel",
                   "latin": "1 Samuel",
@@ -2123,7 +2161,7 @@
                   }
                 },
                 "name": "2 Samuel",
-                "translations": {
+                "languages": {
                   "hebrew": "2 Samuel",
                   "greek": "2 Samuel",
                   "latin": "2 Samuel",
@@ -2275,7 +2313,7 @@
                   }
                 },
                 "name": "1 Kings",
-                "translations": {
+                "languages": {
                   "hebrew": "1 Kings",
                   "greek": "1 Kings",
                   "latin": "1 Kings",
@@ -2445,7 +2483,7 @@
                   }
                 },
                 "name": "2 Kings",
-                "translations": {
+                "languages": {
                   "hebrew": "2 Kings",
                   "greek": "2 Kings",
                   "latin": "2 Kings",
@@ -2549,7 +2587,7 @@
                   }
                 },
                 "name": "Tobit",
-                "translations": {
+                "languages": {
                   "hebrew": "Tobit",
                   "greek": "Tobit",
                   "latin": "Tobit",
@@ -2665,7 +2703,7 @@
                   }
                 },
                 "name": "Judith",
-                "translations": {
+                "languages": {
                   "hebrew": "Judith",
                   "greek": "Judith",
                   "latin": "Judith",
@@ -2781,7 +2819,7 @@
                   }
                 },
                 "name": "Esther",
-                "translations": {
+                "languages": {
                   "hebrew": "Esther",
                   "greek": "Esther",
                   "latin": "Esther",
@@ -2795,7 +2833,7 @@
               }
             },
             "sort_number": 2,
-            "translations": {
+            "languages": {
               "hebrew": "Historical Books",
               "greek": "Historical Books",
               "latin": "Historical Books",
@@ -3079,7 +3117,7 @@
                   }
                 },
                 "name": "Job",
-                "translations": {
+                "languages": {
                   "hebrew": "Job",
                   "greek": "Job",
                   "latin": "Job",
@@ -3999,7 +4037,7 @@
                   }
                 },
                 "name": "Psalms",
-                "translations": {
+                "languages": {
                   "hebrew": "Psalms",
                   "greek": "Psalms",
                   "latin": "Psalms",
@@ -4205,7 +4243,7 @@
                   }
                 },
                 "name": "Proverbs",
-                "translations": {
+                "languages": {
                   "hebrew": "Proverbs",
                   "greek": "Proverbs",
                   "latin": "Proverbs",
@@ -4297,7 +4335,7 @@
                   }
                 },
                 "name": "Ecclesiastes",
-                "translations": {
+                "languages": {
                   "hebrew": "Ecclesiastes",
                   "greek": "Ecclesiastes",
                   "latin": "Ecclesiastes",
@@ -4365,7 +4403,7 @@
                   }
                 },
                 "name": "Song of Songs",
-                "translations": {
+                "languages": {
                   "hebrew": "Song of Songs",
                   "greek": "Song of Songs",
                   "latin": "Song of Songs",
@@ -4499,7 +4537,7 @@
                   }
                 },
                 "name": "Wisdom",
-                "translations": {
+                "languages": {
                   "hebrew": "Wisdom",
                   "greek": "Wisdom",
                   "latin": "Wisdom",
@@ -4825,7 +4863,7 @@
                   }
                 },
                 "name": "Sirach",
-                "translations": {
+                "languages": {
                   "hebrew": "Sirach",
                   "greek": "Sirach",
                   "latin": "Sirach",
@@ -4839,7 +4877,7 @@
               }
             },
             "sort_number": 3,
-            "translations": {
+            "languages": {
               "hebrew": "Wisdom Books",
               "greek": "Wisdom Books",
               "latin": "Wisdom Books",
@@ -5278,7 +5316,7 @@
                   }
                 },
                 "name": "Isaiah",
-                "translations": {
+                "languages": {
                   "hebrew": "Isaiah",
                   "greek": "Isaiah",
                   "latin": "Isaiah",
@@ -5610,7 +5648,7 @@
                   }
                 },
                 "name": "Jeremiah",
-                "translations": {
+                "languages": {
                   "hebrew": "Jeremiah",
                   "greek": "Jeremiah",
                   "latin": "Jeremiah",
@@ -5660,7 +5698,7 @@
                   }
                 },
                 "name": "Lamentations",
-                "translations": {
+                "languages": {
                   "hebrew": "Lamentations",
                   "greek": "Lamentations",
                   "latin": "Lamentations",
@@ -5716,7 +5754,7 @@
                   }
                 },
                 "name": "Baruch",
-                "translations": {
+                "languages": {
                   "hebrew": "Baruch",
                   "greek": "Baruch",
                   "latin": "Baruch",
@@ -6024,7 +6062,7 @@
                   }
                 },
                 "name": "Ezekiel",
-                "translations": {
+                "languages": {
                   "hebrew": "Ezekiel",
                   "greek": "Ezekiel",
                   "latin": "Ezekiel",
@@ -6128,7 +6166,7 @@
                   }
                 },
                 "name": "Daniel",
-                "translations": {
+                "languages": {
                   "hebrew": "Daniel",
                   "greek": "Daniel",
                   "latin": "Daniel",
@@ -6232,7 +6270,7 @@
                   }
                 },
                 "name": "Hosea",
-                "translations": {
+                "languages": {
                   "hebrew": "Hosea",
                   "greek": "Hosea",
                   "latin": "Hosea",
@@ -6270,7 +6308,7 @@
                   }
                 },
                 "name": "Joel",
-                "translations": {
+                "languages": {
                   "hebrew": "Joel",
                   "greek": "Joel",
                   "latin": "Joel",
@@ -6344,7 +6382,7 @@
                   }
                 },
                 "name": "Amos",
-                "translations": {
+                "languages": {
                   "hebrew": "Amos",
                   "greek": "Amos",
                   "latin": "Amos",
@@ -6370,7 +6408,7 @@
                   }
                 },
                 "name": "Obadiah",
-                "translations": {
+                "languages": {
                   "hebrew": "Obadiah",
                   "greek": "Obadiah",
                   "latin": "Obadiah",
@@ -6414,7 +6452,7 @@
                   }
                 },
                 "name": "Jonah",
-                "translations": {
+                "languages": {
                   "hebrew": "Jonah",
                   "greek": "Jonah",
                   "latin": "Jonah",
@@ -6476,7 +6514,7 @@
                   }
                 },
                 "name": "Micah",
-                "translations": {
+                "languages": {
                   "hebrew": "Micah",
                   "greek": "Micah",
                   "latin": "Micah",
@@ -6514,7 +6552,7 @@
                   }
                 },
                 "name": "Nahum",
-                "translations": {
+                "languages": {
                   "hebrew": "Nahum",
                   "greek": "Nahum",
                   "latin": "Nahum",
@@ -6552,7 +6590,7 @@
                   }
                 },
                 "name": "Habakkuk",
-                "translations": {
+                "languages": {
                   "hebrew": "Habakkuk",
                   "greek": "Habakkuk",
                   "latin": "Habakkuk",
@@ -6590,7 +6628,7 @@
                   }
                 },
                 "name": "Zephaniah",
-                "translations": {
+                "languages": {
                   "hebrew": "Zephaniah",
                   "greek": "Zephaniah",
                   "latin": "Zephaniah",
@@ -6622,7 +6660,7 @@
                   }
                 },
                 "name": "Haggai",
-                "translations": {
+                "languages": {
                   "hebrew": "Haggai",
                   "greek": "Haggai",
                   "latin": "Haggai",
@@ -6726,7 +6764,7 @@
                   }
                 },
                 "name": "Zechariah",
-                "translations": {
+                "languages": {
                   "hebrew": "Zechariah",
                   "greek": "Zechariah",
                   "latin": "Zechariah",
@@ -6770,7 +6808,7 @@
                   }
                 },
                 "name": "Malachi",
-                "translations": {
+                "languages": {
                   "hebrew": "Malachi",
                   "greek": "Malachi",
                   "latin": "Malachi",
@@ -6784,7 +6822,7 @@
               }
             },
             "sort_number": 4,
-            "translations": {
+            "languages": {
               "hebrew": "Prophetic Books",
               "greek": "Prophetic Books",
               "latin": "Prophetic Books",
@@ -6797,7 +6835,7 @@
             }
           }
         },
-        "translations": {
+        "languages": {
           "hebrew": "Old Testament",
           "greek": "Old Testament",
           "latin": "Old Testament",
@@ -6998,7 +7036,7 @@
                   }
                 },
                 "name": "Matthew",
-                "translations": {
+                "languages": {
                   "hebrew": "Matthew",
                   "greek": "Matthew",
                   "latin": "Matthew",
@@ -7114,7 +7152,7 @@
                   }
                 },
                 "name": "Mark",
-                "translations": {
+                "languages": {
                   "hebrew": "Mark",
                   "greek": "Mark",
                   "latin": "Mark",
@@ -7278,7 +7316,7 @@
                   }
                 },
                 "name": "Luke",
-                "translations": {
+                "languages": {
                   "hebrew": "Luke",
                   "greek": "Luke",
                   "latin": "Luke",
@@ -7424,7 +7462,7 @@
                   }
                 },
                 "name": "John",
-                "translations": {
+                "languages": {
                   "hebrew": "John",
                   "greek": "John",
                   "latin": "John",
@@ -7438,7 +7476,7 @@
               }
             },
             "sort_number": 1,
-            "translations": {
+            "languages": {
               "hebrew": "Gospels",
               "greek": "Gospels",
               "latin": "Gospels",
@@ -7632,7 +7670,7 @@
                   }
                 },
                 "name": "Acts",
-                "translations": {
+                "languages": {
                   "hebrew": "Acts",
                   "greek": "Acts",
                   "latin": "Acts",
@@ -7646,7 +7684,7 @@
               }
             },
             "sort_number": 2,
-            "translations": {
+            "languages": {
               "hebrew": "Acts of the Apostles",
               "greek": "Acts of the Apostles",
               "latin": "Acts of the Apostles",
@@ -7788,7 +7826,7 @@
                   }
                 },
                 "name": "Romans",
-                "translations": {
+                "languages": {
                   "hebrew": "Romans",
                   "greek": "Romans",
                   "latin": "Romans",
@@ -7904,7 +7942,7 @@
                   }
                 },
                 "name": "1 Corinthians",
-                "translations": {
+                "languages": {
                   "hebrew": "1 Corinthians",
                   "greek": "1 Corinthians",
                   "latin": "1 Corinthians",
@@ -8002,7 +8040,7 @@
                   }
                 },
                 "name": "2 Corinthians",
-                "translations": {
+                "languages": {
                   "hebrew": "2 Corinthians",
                   "greek": "2 Corinthians",
                   "latin": "2 Corinthians",
@@ -8058,7 +8096,7 @@
                   }
                 },
                 "name": "Galatians",
-                "translations": {
+                "languages": {
                   "hebrew": "Galatians",
                   "greek": "Galatians",
                   "latin": "Galatians",
@@ -8114,7 +8152,7 @@
                   }
                 },
                 "name": "Ephesians",
-                "translations": {
+                "languages": {
                   "hebrew": "Ephesians",
                   "greek": "Ephesians",
                   "latin": "Ephesians",
@@ -8158,7 +8196,7 @@
                   }
                 },
                 "name": "Philippians",
-                "translations": {
+                "languages": {
                   "hebrew": "Philippians",
                   "greek": "Philippians",
                   "latin": "Philippians",
@@ -8202,7 +8240,7 @@
                   }
                 },
                 "name": "Colossians",
-                "translations": {
+                "languages": {
                   "hebrew": "Colossians",
                   "greek": "Colossians",
                   "latin": "Colossians",
@@ -8252,7 +8290,7 @@
                   }
                 },
                 "name": "1 Thessalonians",
-                "translations": {
+                "languages": {
                   "hebrew": "1 Thessalonians",
                   "greek": "1 Thessalonians",
                   "latin": "1 Thessalonians",
@@ -8290,7 +8328,7 @@
                   }
                 },
                 "name": "2 Thessalonians",
-                "translations": {
+                "languages": {
                   "hebrew": "2 Thessalonians",
                   "greek": "2 Thessalonians",
                   "latin": "2 Thessalonians",
@@ -8346,7 +8384,7 @@
                   }
                 },
                 "name": "1 Timothy",
-                "translations": {
+                "languages": {
                   "hebrew": "1 Timothy",
                   "greek": "1 Timothy",
                   "latin": "1 Timothy",
@@ -8390,7 +8428,7 @@
                   }
                 },
                 "name": "2 Timothy",
-                "translations": {
+                "languages": {
                   "hebrew": "2 Timothy",
                   "greek": "2 Timothy",
                   "latin": "2 Timothy",
@@ -8428,7 +8466,7 @@
                   }
                 },
                 "name": "Titus",
-                "translations": {
+                "languages": {
                   "hebrew": "Titus",
                   "greek": "Titus",
                   "latin": "Titus",
@@ -8454,7 +8492,7 @@
                   }
                 },
                 "name": "Philemon",
-                "translations": {
+                "languages": {
                   "hebrew": "Philemon",
                   "greek": "Philemon",
                   "latin": "Philemon",
@@ -8552,7 +8590,7 @@
                   }
                 },
                 "name": "Hebrews",
-                "translations": {
+                "languages": {
                   "hebrew": "Hebrews",
                   "greek": "Hebrews",
                   "latin": "Hebrews",
@@ -8602,7 +8640,7 @@
                   }
                 },
                 "name": "James",
-                "translations": {
+                "languages": {
                   "hebrew": "James",
                   "greek": "James",
                   "latin": "James",
@@ -8652,7 +8690,7 @@
                   }
                 },
                 "name": "1 Peter",
-                "translations": {
+                "languages": {
                   "hebrew": "1 Peter",
                   "greek": "1 Peter",
                   "latin": "1 Peter",
@@ -8690,7 +8728,7 @@
                   }
                 },
                 "name": "2 Peter",
-                "translations": {
+                "languages": {
                   "hebrew": "2 Peter",
                   "greek": "2 Peter",
                   "latin": "2 Peter",
@@ -8740,7 +8778,7 @@
                   }
                 },
                 "name": "1 John",
-                "translations": {
+                "languages": {
                   "hebrew": "1 John",
                   "greek": "1 John",
                   "latin": "1 John",
@@ -8766,7 +8804,7 @@
                   }
                 },
                 "name": "2 John",
-                "translations": {
+                "languages": {
                   "hebrew": "2 John",
                   "greek": "2 John",
                   "latin": "2 John",
@@ -8792,7 +8830,7 @@
                   }
                 },
                 "name": "3 John",
-                "translations": {
+                "languages": {
                   "hebrew": "3 John",
                   "greek": "3 John",
                   "latin": "3 John",
@@ -8818,7 +8856,7 @@
                   }
                 },
                 "name": "Jude",
-                "translations": {
+                "languages": {
                   "hebrew": "Jude",
                   "greek": "Jude",
                   "latin": "Jude",
@@ -8832,7 +8870,7 @@
               }
             },
             "sort_number": 3,
-            "translations": {
+            "languages": {
               "hebrew": "Epistles",
               "greek": "Epistles",
               "latin": "Epistles",
@@ -8990,7 +9028,7 @@
                   }
                 },
                 "name": "Revelation",
-                "translations": {
+                "languages": {
                   "hebrew": "Revelation",
                   "greek": "Revelation",
                   "latin": "Revelation",
@@ -9004,7 +9042,7 @@
               }
             },
             "sort_number": 4,
-            "translations": {
+            "languages": {
               "hebrew": "Revelation",
               "greek": "Revelation",
               "latin": "Revelation",
@@ -9017,7 +9055,7 @@
             }
           }
         },
-        "translations": {
+        "languages": {
           "hebrew": "New Testament",
           "greek": "New Testament",
           "latin": "New Testament",
@@ -9039,7 +9077,7 @@
         "sort_number": 1,
         "chapters": 50,
         "verses": 1533,
-        "translations": {
+        "languages": {
           "hebrew": "Genesis",
           "greek": "Genesis",
           "latin": "Genesis",
@@ -9059,7 +9097,7 @@
         "sort_number": 2,
         "chapters": 1,
         "verses": 1,
-        "translations": {
+        "languages": {
           "hebrew": "Exodus",
           "greek": "Exodus",
           "latin": "Exodus",
@@ -9079,7 +9117,7 @@
         "sort_number": 3,
         "chapters": 1,
         "verses": 1,
-        "translations": {
+        "languages": {
           "hebrew": "Leviticus",
           "greek": "Leviticus",
           "latin": "Leviticus",
@@ -9099,7 +9137,7 @@
         "sort_number": 4,
         "chapters": 1,
         "verses": 1,
-        "translations": {
+        "languages": {
           "hebrew": "Numbers",
           "greek": "Numbers",
           "latin": "Numbers",
@@ -9119,7 +9157,7 @@
         "sort_number": 5,
         "chapters": 1,
         "verses": 1,
-        "translations": {
+        "languages": {
           "hebrew": "Deuteronomy",
           "greek": "Deuteronomy",
           "latin": "Deuteronomy",
@@ -9139,7 +9177,7 @@
         "sort_number": 6,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Joshua",
           "greek": "Joshua",
           "latin": "Joshua",
@@ -9159,7 +9197,7 @@
         "sort_number": 7,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Judges",
           "greek": "Judges",
           "latin": "Judges",
@@ -9179,7 +9217,7 @@
         "sort_number": 8,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Ruth",
           "greek": "Ruth",
           "latin": "Ruth",
@@ -9199,7 +9237,7 @@
         "sort_number": 9,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "1 Samuel",
           "greek": "1 Samuel",
           "latin": "1 Samuel",
@@ -9219,7 +9257,7 @@
         "sort_number": 10,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "2 Samuel",
           "greek": "2 Samuel",
           "latin": "2 Samuel",
@@ -9239,7 +9277,7 @@
         "sort_number": 11,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "1 Kings",
           "greek": "1 Kings",
           "latin": "1 Kings",
@@ -9259,7 +9297,7 @@
         "sort_number": 12,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "2 Kings",
           "greek": "2 Kings",
           "latin": "2 Kings",
@@ -9279,7 +9317,7 @@
         "sort_number": 13,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Tobit",
           "greek": "Tobit",
           "latin": "Tobit",
@@ -9299,7 +9337,7 @@
         "sort_number": 14,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Judith",
           "greek": "Judith",
           "latin": "Judith",
@@ -9319,7 +9357,7 @@
         "sort_number": 15,
         "chapters": 16,
         "verses": 17,
-        "translations": {
+        "languages": {
           "hebrew": "Esther",
           "greek": "Esther",
           "latin": "Esther",
@@ -9339,7 +9377,7 @@
         "sort_number": 16,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Job",
           "greek": "Job",
           "latin": "Job",
@@ -9359,7 +9397,7 @@
         "sort_number": 17,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Psalms",
           "greek": "Psalms",
           "latin": "Psalms",
@@ -9379,7 +9417,7 @@
         "sort_number": 18,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Proverbs",
           "greek": "Proverbs",
           "latin": "Proverbs",
@@ -9399,7 +9437,7 @@
         "sort_number": 19,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Ecclesiastes",
           "greek": "Ecclesiastes",
           "latin": "Ecclesiastes",
@@ -9419,7 +9457,7 @@
         "sort_number": 20,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Song of Songs",
           "greek": "Song of Songs",
           "latin": "Song of Songs",
@@ -9439,7 +9477,7 @@
         "sort_number": 21,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Wisdom",
           "greek": "Wisdom",
           "latin": "Wisdom",
@@ -9459,7 +9497,7 @@
         "sort_number": 22,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Sirach",
           "greek": "Sirach",
           "latin": "Sirach",
@@ -9479,7 +9517,7 @@
         "sort_number": 23,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Isaiah",
           "greek": "Isaiah",
           "latin": "Isaiah",
@@ -9499,7 +9537,7 @@
         "sort_number": 24,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Jeremiah",
           "greek": "Jeremiah",
           "latin": "Jeremiah",
@@ -9519,7 +9557,7 @@
         "sort_number": 25,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Lamentations",
           "greek": "Lamentations",
           "latin": "Lamentations",
@@ -9539,7 +9577,7 @@
         "sort_number": 26,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Baruch",
           "greek": "Baruch",
           "latin": "Baruch",
@@ -9559,7 +9597,7 @@
         "sort_number": 27,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Ezekiel",
           "greek": "Ezekiel",
           "latin": "Ezekiel",
@@ -9579,7 +9617,7 @@
         "sort_number": 28,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Daniel",
           "greek": "Daniel",
           "latin": "Daniel",
@@ -9599,7 +9637,7 @@
         "sort_number": 29,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Hosea",
           "greek": "Hosea",
           "latin": "Hosea",
@@ -9619,7 +9657,7 @@
         "sort_number": 30,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Joel",
           "greek": "Joel",
           "latin": "Joel",
@@ -9639,7 +9677,7 @@
         "sort_number": 31,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Amos",
           "greek": "Amos",
           "latin": "Amos",
@@ -9659,7 +9697,7 @@
         "sort_number": 32,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Obadiah",
           "greek": "Obadiah",
           "latin": "Obadiah",
@@ -9679,7 +9717,7 @@
         "sort_number": 33,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Jonah",
           "greek": "Jonah",
           "latin": "Jonah",
@@ -9699,7 +9737,7 @@
         "sort_number": 34,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Micah",
           "greek": "Micah",
           "latin": "Micah",
@@ -9719,7 +9757,7 @@
         "sort_number": 35,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Nahum",
           "greek": "Nahum",
           "latin": "Nahum",
@@ -9739,7 +9777,7 @@
         "sort_number": 36,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Habakkuk",
           "greek": "Habakkuk",
           "latin": "Habakkuk",
@@ -9759,7 +9797,7 @@
         "sort_number": 37,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Zephaniah",
           "greek": "Zephaniah",
           "latin": "Zephaniah",
@@ -9779,7 +9817,7 @@
         "sort_number": 38,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Haggai",
           "greek": "Haggai",
           "latin": "Haggai",
@@ -9799,7 +9837,7 @@
         "sort_number": 39,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Zechariah",
           "greek": "Zechariah",
           "latin": "Zechariah",
@@ -9819,7 +9857,7 @@
         "sort_number": 40,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Malachi",
           "greek": "Malachi",
           "latin": "Malachi",
@@ -9839,7 +9877,7 @@
         "sort_number": 41,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Matthew",
           "greek": "Matthew",
           "latin": "Matthew",
@@ -9859,7 +9897,7 @@
         "sort_number": 42,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Mark",
           "greek": "Mark",
           "latin": "Mark",
@@ -9879,7 +9917,7 @@
         "sort_number": 43,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Luke",
           "greek": "Luke",
           "latin": "Luke",
@@ -9899,7 +9937,7 @@
         "sort_number": 44,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "John",
           "greek": "John",
           "latin": "John",
@@ -9919,7 +9957,7 @@
         "sort_number": 45,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Acts",
           "greek": "Acts",
           "latin": "Acts",
@@ -9939,7 +9977,7 @@
         "sort_number": 46,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Romans",
           "greek": "Romans",
           "latin": "Romans",
@@ -9959,7 +9997,7 @@
         "sort_number": 47,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "1 Corinthians",
           "greek": "1 Corinthians",
           "latin": "1 Corinthians",
@@ -9979,7 +10017,7 @@
         "sort_number": 48,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "2 Corinthians",
           "greek": "2 Corinthians",
           "latin": "2 Corinthians",
@@ -9999,7 +10037,7 @@
         "sort_number": 49,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Galatians",
           "greek": "Galatians",
           "latin": "Galatians",
@@ -10019,7 +10057,7 @@
         "sort_number": 50,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Ephesians",
           "greek": "Ephesians",
           "latin": "Ephesians",
@@ -10039,7 +10077,7 @@
         "sort_number": 51,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Philippians",
           "greek": "Philippians",
           "latin": "Philippians",
@@ -10059,7 +10097,7 @@
         "sort_number": 52,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Colossians",
           "greek": "Colossians",
           "latin": "Colossians",
@@ -10079,7 +10117,7 @@
         "sort_number": 53,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "1 Thessalonians",
           "greek": "1 Thessalonians",
           "latin": "1 Thessalonians",
@@ -10099,7 +10137,7 @@
         "sort_number": 54,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "2 Thessalonians",
           "greek": "2 Thessalonians",
           "latin": "2 Thessalonians",
@@ -10119,7 +10157,7 @@
         "sort_number": 55,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "1 Timothy",
           "greek": "1 Timothy",
           "latin": "1 Timothy",
@@ -10139,7 +10177,7 @@
         "sort_number": 56,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "2 Timothy",
           "greek": "2 Timothy",
           "latin": "2 Timothy",
@@ -10159,7 +10197,7 @@
         "sort_number": 57,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Titus",
           "greek": "Titus",
           "latin": "Titus",
@@ -10179,7 +10217,7 @@
         "sort_number": 58,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Philemon",
           "greek": "Philemon",
           "latin": "Philemon",
@@ -10199,7 +10237,7 @@
         "sort_number": 59,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Hebrews",
           "greek": "Hebrews",
           "latin": "Hebrews",
@@ -10219,7 +10257,7 @@
         "sort_number": 60,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "James",
           "greek": "James",
           "latin": "James",
@@ -10239,7 +10277,7 @@
         "sort_number": 61,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "1 Peter",
           "greek": "1 Peter",
           "latin": "1 Peter",
@@ -10259,7 +10297,7 @@
         "sort_number": 62,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "2 Peter",
           "greek": "2 Peter",
           "latin": "2 Peter",
@@ -10279,7 +10317,7 @@
         "sort_number": 63,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "1 John",
           "greek": "1 John",
           "latin": "1 John",
@@ -10299,7 +10337,7 @@
         "sort_number": 64,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "2 John",
           "greek": "2 John",
           "latin": "2 John",
@@ -10319,7 +10357,7 @@
         "sort_number": 65,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "3 John",
           "greek": "3 John",
           "latin": "3 John",
@@ -10339,7 +10377,7 @@
         "sort_number": 66,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Jude",
           "greek": "Jude",
           "latin": "Jude",
@@ -10359,7 +10397,7 @@
         "sort_number": 67,
         "chapters": 0,
         "verses": 0,
-        "translations": {
+        "languages": {
           "hebrew": "Revelation",
           "greek": "Revelation",
           "latin": "Revelation",

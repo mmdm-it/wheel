@@ -3,6 +3,9 @@
 
 const defaultState = Object.freeze({
   volume: null,
+  language: null,
+  edition: null,
+  dimensions: null,
   rotation: 0,
   focusId: null,
   hoverId: null,
@@ -13,6 +16,9 @@ const defaultState = Object.freeze({
 
 export const interactionEvents = Object.freeze({
   SET_VOLUME: 'SET_VOLUME',
+  SET_DIMENSIONS: 'SET_DIMENSIONS',
+  SET_LANGUAGE: 'SET_LANGUAGE',
+  SET_EDITION: 'SET_EDITION',
   SET_ROTATION: 'SET_ROTATION',
   FOCUS: 'FOCUS',
   HOVER: 'HOVER',
@@ -27,7 +33,16 @@ const reducer = (state, action) => {
     case 'SET_DIMENSION':
       return { ...state, volume: action.dimension ?? action.volume ?? null, hoverId: null };
     case interactionEvents.SET_VOLUME:
-      return { ...state, volume: action.volume ?? null, hoverId: null };
+      return { ...state, volume: action.volume ?? null, hoverId: null, language: null, edition: null, dimensions: null };
+    case interactionEvents.SET_DIMENSIONS:
+      return { ...state, dimensions: action.dimensions ?? null };
+    case interactionEvents.SET_LANGUAGE: {
+      const nextLanguage = action.language ?? null;
+      const defaultEdition = action.defaultEdition ?? null;
+      return { ...state, language: nextLanguage, edition: defaultEdition ?? (state.language === nextLanguage ? state.edition : null) };
+    }
+    case interactionEvents.SET_EDITION:
+      return { ...state, edition: action.edition ?? null };
     case interactionEvents.SET_ROTATION:
       return { ...state, rotation: Number.isFinite(action.rotation) ? action.rotation : state.rotation };
     case interactionEvents.FOCUS:
@@ -51,7 +66,10 @@ export const createInteractionStore = (options = {}) => {
   const provided = options.initialState || {};
   const normalizedInitial = {
     ...provided,
-    volume: provided.volume ?? provided.dimension ?? defaultState.volume
+    volume: provided.volume ?? provided.dimension ?? defaultState.volume,
+    language: provided.language ?? defaultState.language,
+    edition: provided.edition ?? defaultState.edition,
+    dimensions: provided.dimensions ?? defaultState.dimensions
   };
   const initial = { ...defaultState, ...normalizedInitial };
   let state = initial;

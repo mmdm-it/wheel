@@ -290,7 +290,7 @@ export class FocusRingView {
     }
 
     if (this.dimensionIcon && dimensionIcon) {
-      const { href, x, y, size, onClick } = dimensionIcon;
+      const { href, x, y, size, onClick, ariaLabel } = dimensionIcon;
       this.dimensionIcon.setAttributeNS('http://www.w3.org/1999/xlink', 'href', href);
       const w = size || 0;
       const h = size || 0;
@@ -300,7 +300,7 @@ export class FocusRingView {
       this.dimensionIcon.setAttribute('y', y - h / 2);
       this.dimensionIcon.setAttribute('role', 'button');
       this.dimensionIcon.setAttribute('tabindex', '0');
-      this.dimensionIcon.setAttribute('aria-label', 'Toggle dimension mode');
+      this.dimensionIcon.setAttribute('aria-label', ariaLabel || 'Toggle dimension mode');
       if (onClick) {
         this.dimensionIcon.onclick = onClick;
         this.#attachKeyActivation(this.dimensionIcon, onClick);

@@ -4,6 +4,9 @@ import { createInteractionStore, interactionEvents, getDefaultInteractionState }
 
 const getStateShape = state => ({
   volume: state.volume,
+  language: state.language,
+  edition: state.edition,
+  dimensions: state.dimensions,
   rotation: state.rotation,
   focusId: state.focusId,
   hoverId: state.hoverId,
@@ -24,7 +27,20 @@ describe('interaction-store', () => {
     store.dispatch({ type: interactionEvents.SET_ROTATION, rotation: Math.PI / 4 });
     const state = store.getState();
     assert.equal(state.volume, 'catalog');
+    assert.equal(state.language, null);
+    assert.equal(state.edition, null);
     assert.equal(state.rotation, Math.PI / 4);
+  });
+
+  it('sets dimensions and language/edition portals', () => {
+    const store = createInteractionStore();
+    store.dispatch({ type: interactionEvents.SET_DIMENSIONS, dimensions: { languages: { available: ['en'], default: 'en' } } });
+    store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: 'en', defaultEdition: 'NAB' });
+    store.dispatch({ type: interactionEvents.SET_EDITION, edition: 'DRA' });
+    const state = store.getState();
+    assert.deepEqual(state.dimensions, { languages: { available: ['en'], default: 'en' } });
+    assert.equal(state.language, 'en');
+    assert.equal(state.edition, 'DRA');
   });
 
   it('clears hover when volume changes', () => {

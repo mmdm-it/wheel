@@ -60,6 +60,11 @@ export function normalize(raw) {
   if (!volumeData) throw new Error('normalize: manifest missing volume data');
   const items = [];
   const links = [];
+  const displayConfig = volumeData.display_config || {};
+  const dimensions = {
+    languages: displayConfig.languages || null,
+    editions: displayConfig.editions || null
+  };
 
   const addItem = ({ id, name, level, parentId = null, order = 0, meta = {} }) => {
     items.push({ id, name, level, parentId, order, meta });
@@ -116,7 +121,8 @@ export function normalize(raw) {
     meta: {
       volumeId: volumeKey,
       leafLevel: 'model',
-      levels: ['market', 'country', 'manufacturer', 'cylinder', 'model']
+      levels: ['market', 'country', 'manufacturer', 'cylinder', 'model'],
+      dimensions
     }
   };
 }

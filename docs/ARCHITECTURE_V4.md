@@ -41,6 +41,12 @@ Single source of truth for UI state.
 - Guards: block/queue volume switch during transitions; clear hover on volume change; reject stale loads; debounce rotation commands while applying layout.
 - Side effects: confined to effect handlers (load adapter, fetch manifest, log telemetry); reducers remain pure.
 
+**Dimension portals**
+- Dimension Button is the sole portal control. It cycles strata in order: Primary (hierarchy) → Secondary (first portal) → Tertiary (second portal, if present) → back to Primary.
+- Volumes may expose zero, one, or two portals; never more than two. No portals: Dimension Button hidden/inactive. One portal: Primary ↔ Secondary. Two portals: Primary ↔ Secondary ↔ Tertiary.
+- Portals are selection layers for dimension values (e.g., language, then translation); they are not additional dimensions themselves.
+- Terminology: use “languages” for the Secondary portal options (manifest field), and “translations/editions” for the Tertiary portal options (translation registry keyed by language).
+
 ## Rendering Pipeline
 
 - Inputs: `normalized data`, `layoutSpec`, `interaction state`.

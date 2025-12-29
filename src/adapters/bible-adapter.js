@@ -81,6 +81,11 @@ export function normalize(raw) {
   addItem({ id: rootId, name: volumeName, level: 'root', parentId: null, order: 0 });
 
   const testaments = volumeData.testaments || {};
+  const displayConfig = volumeData.display_config || {};
+  const dimensions = {
+    languages: displayConfig.languages || null,
+    editions: displayConfig.editions || null
+  };
   Object.entries(testaments).forEach(([testamentId, testament], ti) => {
     const testamentOrder = Number.isFinite(testament?.sort_number) ? testament.sort_number : ti;
     addItem({ id: testamentId, name: testament?.name || testamentId, level: 'testament', parentId: rootId, order: testamentOrder });
@@ -144,7 +149,8 @@ export function normalize(raw) {
       volumeId: volumeKey,
       leafLevel: 'chapter',
       levels: ['testament', 'section', 'book', 'chapter'],
-      colors: levelPalette
+      colors: levelPalette,
+      dimensions
     }
   };
 }

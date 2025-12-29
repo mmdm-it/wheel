@@ -4,6 +4,20 @@
 
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
+## [3.7.0] - 2025-12-29
+
+### Added
+- Dimension portals: language (secondary) and edition (tertiary) lenses with UI cycling, aria labels, and keyboard activation.
+- Schema/data: manifest languages/editions metadata required and validated; adapters pass through `display_config.languages/editions`.
+- Telemetry: `dimension:stage`, `dimension:language`, `dimension:edition`, plus perf:render budget checks covering portal toggles.
+
+### Changed
+- Interaction store/bridge hydrate language/edition defaults per volume and reset on volume switch.
+- Focus ring repurposes secondary ring for portals; dimension control uses stage-aware labels.
+
+### Tests
+- Portal UI coverage (aria, keyboard, telemetry), volume-switch dimension resets, and perf budget guard for dimension toggle.
+
 ## [3.6.1] - 2025-12-28
 
 ### Changed
