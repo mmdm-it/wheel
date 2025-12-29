@@ -76,7 +76,6 @@ export function createApp({
   onSelectSecondary,
   contextOptions = {},
   onParentClick,
-  onChildrenClick,
   pyramid,
   pyramidLayoutSpec = null,
   pyramidAdapter = null,
@@ -211,7 +210,7 @@ export function createApp({
   let secondaryRotation = 0;
   let secondarySnapId = null;
   let isLayerOut = false; // track layer migration state between parent button and magnifier
-  let parentButtonsVisibility = { showOuter: true, showInner: true };
+  let parentButtonsVisibility = { showOuter: true };
   let lastParentLabelOut = '';
   let lastSelectedLabelOut = '';
   const pyramidConfig = pyramid || null;
@@ -479,7 +478,9 @@ export function createApp({
   };
 
   const setParentButtons = config => {
-    parentButtonsVisibility = { ...parentButtonsVisibility, ...config };
+    const next = {};
+    if (typeof config?.showOuter === 'boolean') next.showOuter = config.showOuter;
+    parentButtonsVisibility = { ...parentButtonsVisibility, ...next };
     render(rotation);
   };
 
@@ -503,26 +504,6 @@ export function createApp({
     isLayerOut = true;
     lastParentLabelOut = prevParentLabel;
     lastSelectedLabelOut = prevSelectedLabel;
-    render(rotation);
-  };
-
-  const shiftLayersIn = () => {
-    if (typeof onChildrenClick === 'function') {
-      const handled = onChildrenClick({ selected: nav.getCurrent(), nav, setItems: setPrimaryItems });
-      if (handled) {
-        if (isLayerOut) {
-          isLayerOut = false;
-          lastParentLabelOut = '';
-          lastSelectedLabelOut = '';
-          render(rotation);
-        }
-        return;
-      }
-    }
-    if (!isLayerOut) return;
-    isLayerOut = false;
-    lastParentLabelOut = '';
-    lastSelectedLabelOut = '';
     render(rotation);
   };
 
@@ -625,13 +606,10 @@ export function createApp({
           onClick: () => cyclePortalStage()
         } : null,
         parentButtons: {
-          innerLabel: 'CHILDREN (IN)',
           outerLabel: parentOuterLabel,
           onOuterClick: shiftLayersOut,
-          onInnerClick: shiftLayersIn,
           isLayerOut,
-          showOuter: parentButtonsVisibility.showOuter,
-          showInner: parentButtonsVisibility.showInner
+          showOuter: parentButtonsVisibility.showOuter
         },
         secondary: isBlurred && secondaryNav.items.length > 0 ? {
           nodes: secondaryNodes,
@@ -704,8 +682,7 @@ export function createApp({
           language: contextOptions?.locale || 'english',
           magnifier: formatMagnifier(),
           parentButton: {
-            outerLabel: parentOuterLabel || '',
-            innerLabel: 'CHILDREN (IN)'
+            outerLabel: parentOuterLabel || ''
           },
           layerDirection: isLayerOut ? 'out' : 'in',
           before: neighbors.before.map(formatNeighbor),

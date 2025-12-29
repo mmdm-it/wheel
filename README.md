@@ -5,7 +5,7 @@
 Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.7.0 (2025-12-29)
+- v3.7.1 (2025-12-29)
 
 ## Release Train
 - v3.2.17 Baseline data + UI lift — done

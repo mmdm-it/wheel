@@ -70,7 +70,7 @@ export function buildCatalogPyramid({
     const selectedIdx = models.findIndex(m => m.id === instr.item.id);
     if (typeof setCatalogMode === 'function') setCatalogMode('model');
     if (app?.setParentButtons) {
-      app.setParentButtons({ showOuter: true, showInner: true });
+      app.setParentButtons({ showOuter: true });
     }
     if (app?.setPrimaryItems) {
       app.setPrimaryItems(models, selectedIdx >= 0 ? selectedIdx : 0, true);
@@ -106,7 +106,7 @@ export function buildCalendarPyramid({
       });
     }
     if (app?.setParentButtons) {
-      app.setParentButtons({ showOuter: true, showInner: true });
+      app.setParentButtons({ showOuter: true });
     }
     if (app?.setPrimaryItems) {
       app.setPrimaryItems(months, selectedIdx >= 0 ? selectedIdx : 0, true);
@@ -144,7 +144,7 @@ export function buildBiblePyramid({
       });
     }
     if (app?.setParentButtons) {
-      app.setParentButtons({ showOuter: true, showInner: true });
+      app.setParentButtons({ showOuter: true });
     }
     if (app?.setPrimaryItems) {
       app.setPrimaryItems(chapters, selectedIdx >= 0 ? selectedIdx : 0, true);

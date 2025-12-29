@@ -20,9 +20,7 @@ export class FocusRingView {
     this.mirroredMagnifierLabel = null;
     this.dimensionIcon = null;
     this.parentButtonOuter = null;
-    this.parentButtonInner = null;
     this.parentButtonOuterLabel = null;
-    this.parentButtonInnerLabel = null;
   }
 
   #attachKeyActivation(target, handler) {
@@ -69,21 +67,11 @@ export class FocusRingView {
     this.parentButtonOuter.setAttribute('class', 'focus-ring-magnifier-circle');
     this.blurGroup.appendChild(this.parentButtonOuter);
 
-    this.parentButtonInner = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-    this.parentButtonInner.setAttribute('class', 'focus-ring-magnifier-circle');
-    this.blurGroup.appendChild(this.parentButtonInner);
-
     this.parentButtonOuterLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
     this.parentButtonOuterLabel.setAttribute('class', 'focus-ring-magnifier-label');
     this.parentButtonOuterLabel.setAttribute('text-anchor', 'start');
     this.parentButtonOuterLabel.setAttribute('dominant-baseline', 'middle');
     this.blurGroup.appendChild(this.parentButtonOuterLabel);
-
-    this.parentButtonInnerLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-    this.parentButtonInnerLabel.setAttribute('class', 'focus-ring-magnifier-label');
-    this.parentButtonInnerLabel.setAttribute('text-anchor', 'middle');
-    this.parentButtonInnerLabel.setAttribute('dominant-baseline', 'middle');
-    this.blurGroup.appendChild(this.parentButtonInnerLabel);
 
     this.mirroredBand = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     this.mirroredBand.setAttribute('class', 'focus-ring-band focus-ring-band-mirrored');
@@ -516,8 +504,7 @@ export class FocusRingView {
       this.magnifierGroup.setAttribute('display', 'none');
     }
 
-    if (this.parentButtonOuter && this.parentButtonInner && arcParams && magnifier) {
-      const { hubX, hubY, radius: focusRadius } = arcParams;
+    if (this.parentButtonOuter && arcParams && magnifier) {
       const magRadius = magnifier.radius || 14;
 
       // Parent button: explicit viewport-relative placement (top-left origin)
@@ -525,12 +512,6 @@ export class FocusRingView {
       const ls = viewport?.LSd ?? viewport?.height ?? 0;
       const outerX = ss * 0.13;
       const outerY = ls * 0.93;
-
-      // Children button remains hub-relative
-      const innerAngle = (155 * Math.PI) / 180;
-      const innerDist = focusRadius * 0.8;
-      const innerX = hubX + innerDist * Math.cos(innerAngle);
-      const innerY = hubY + innerDist * Math.sin(innerAngle);
 
       const showOuter = parentButtons?.showOuter !== false;
       if (showOuter) {
@@ -553,27 +534,6 @@ export class FocusRingView {
         this.parentButtonOuter.style.cursor = 'default';
       }
 
-      const showInner = parentButtons?.showInner !== false;
-      if (showInner) {
-        this.parentButtonInner.setAttribute('cx', innerX);
-        this.parentButtonInner.setAttribute('cy', innerY);
-        this.parentButtonInner.setAttribute('r', magRadius);
-        this.parentButtonInner.setAttribute('role', 'button');
-        this.parentButtonInner.setAttribute('tabindex', '0');
-        this.parentButtonInner.removeAttribute('display');
-        this.parentButtonInner.onclick = parentButtons?.onInnerClick || null;
-        this.#attachKeyActivation(this.parentButtonInner, parentButtons?.onInnerClick || null);
-        this.parentButtonInner.style.cursor = parentButtons?.onInnerClick ? 'pointer' : 'default';
-        this.parentButtonInner.classList.toggle('shifted-out', Boolean(parentButtons?.isLayerOut));
-        const ariaLabel = parentButtons?.innerLabel || 'Children';
-        this.parentButtonInner.setAttribute('aria-label', ariaLabel);
-      } else {
-        this.parentButtonInner.setAttribute('display', 'none');
-        this.parentButtonInner.onclick = null;
-        this.#attachKeyActivation(this.parentButtonInner, null);
-        this.parentButtonInner.style.cursor = 'default';
-      }
-
       if (this.parentButtonOuterLabel) {
         const text = parentButtons?.outerLabel || '';
         if (showOuter && text) {
@@ -591,28 +551,9 @@ export class FocusRingView {
           this.parentButtonOuterLabel.style.cursor = 'default';
         }
       }
-
-      if (this.parentButtonInnerLabel) {
-        const text = parentButtons?.innerLabel || '';
-        if (showInner && text) {
-          this.parentButtonInnerLabel.setAttribute('x', innerX);
-          this.parentButtonInnerLabel.setAttribute('y', innerY);
-          this.parentButtonInnerLabel.removeAttribute('transform');
-          this.parentButtonInnerLabel.textContent = text;
-          this.parentButtonInnerLabel.onclick = parentButtons?.onInnerClick || null;
-          this.parentButtonInnerLabel.style.cursor = parentButtons?.onInnerClick ? 'pointer' : 'default';
-          this.parentButtonInnerLabel.removeAttribute('display');
-        } else {
-          this.parentButtonInnerLabel.setAttribute('display', 'none');
-          this.parentButtonInnerLabel.onclick = null;
-          this.parentButtonInnerLabel.style.cursor = 'default';
-        }
-      }
     } else {
       if (this.parentButtonOuter) this.parentButtonOuter.setAttribute('display', 'none');
-      if (this.parentButtonInner) this.parentButtonInner.setAttribute('display', 'none');
       if (this.parentButtonOuterLabel) this.parentButtonOuterLabel.setAttribute('display', 'none');
-      if (this.parentButtonInnerLabel) this.parentButtonInnerLabel.setAttribute('display', 'none');
     }
   }
 

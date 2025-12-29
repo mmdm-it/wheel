@@ -239,7 +239,7 @@ export function createHandlers({ manifest, options }) {
         filterMillenniumId: milliId
       });
       calendarMode = 'year';
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: true, showInner: true });
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       if (app?.setPrimaryItems) app.setPrimaryItems(yearItems, yearSelected, true);
       return true;
     }
@@ -250,7 +250,7 @@ export function createHandlers({ manifest, options }) {
     }
     const { items: milliItems, selectedIndex: milliSelected } = buildCalendarMillennia(manifest, { initialItemId: millenniumId });
     calendarMode = 'millennium';
-    if (app?.setParentButtons) app.setParentButtons({ showOuter: false, showInner: true });
+    if (app?.setParentButtons) app.setParentButtons({ showOuter: false });
     if (app?.setPrimaryItems) app.setPrimaryItems(milliItems, milliSelected, true);
     return true;
   };
@@ -264,7 +264,7 @@ export function createHandlers({ manifest, options }) {
         yearId: selected?.id || null,
         millenniumId: selected?.parentId || selected?.parent_id || null
       };
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: true, showInner: true });
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       if (app?.setPrimaryItems) app.setPrimaryItems(months, 0, true);
       return true;
     }
@@ -278,7 +278,7 @@ export function createHandlers({ manifest, options }) {
       filterMillenniumId: millenniumId
     });
     calendarMode = 'year';
-    if (app?.setParentButtons) app.setParentButtons({ showOuter: true, showInner: true });
+    if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
     if (app?.setPrimaryItems) app.setPrimaryItems(yearItems, yearSelected, true);
     return true;
   };
