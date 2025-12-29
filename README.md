@@ -5,15 +5,21 @@
 Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.7.1 (2025-12-29)
+- v3.7.3 (2025-12-29)
+
+## Notable Changes in 3.7.3
+- Child Pyramid nodes are now placed in a Cartesian grid (origin at top-left, offset by 0.2 × SSd).
+- Grid gap is 0.18 × SSd between columns and rows.
+- All child nodes are included (no sampling or filtering).
+- Polar/arc placement logic has been removed for the pyramid grid.
 
 ## Release Train
-- v3.2.17 Baseline data + UI lift — done
-- v3.3 Adapter + state-store foundation — done
-- v3.4 Volume-safe interaction loop — done
-- v3.5 Detail/pyramid rebuild on adapters — done
-- v3.6 Theming + accessibility hardening — done (theming tokens, a11y pass, perf budgets, theme swap smoke)
-- v3.7 Dimension System (lens: language/time) — shipped: language + edition portals, schema/adapter hydration, UI cycling with aria/keyboard, perf budgets
+- v3.7.3 Baseline data + UI lift — done
+- v3.7.3 Adapter + state-store foundation — done
+- v3.7.3 Volume-safe interaction loop — done
+- v3.7.3 Detail/pyramid rebuild on adapters — done
+- v3.7.3 Theming + accessibility hardening — done (theming tokens, a11y pass, perf budgets, theme swap smoke)
+- v3.7.3 Dimension System (lens: language/time) — shipped: language + edition portals, schema/adapter hydration, UI cycling with aria/keyboard, perf budgets
 
 - `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.7.0`).
 - Historical majors live on archive branches (e.g., `archive/v0`, `archive/v1`, `archive/v2`).

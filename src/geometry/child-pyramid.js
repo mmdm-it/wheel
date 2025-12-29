@@ -14,11 +14,10 @@ export function calculatePyramidCapacity(viewport, options = {}) {
   const nodeRadius = options.nodeRadius ?? 12;
   const nodeGap = options.nodeGap ?? 8;
   const { radius, hubX, hubY } = getArcParameters(viewport);
-  const magnifierAngle = options.magnifierAngle ?? getMagnifierAngle(viewport);
-  const cornerAngle = Math.atan2(-viewport.height / 2 - hubY, viewport.width / 2 - hubX);
   const nodeSpacing = options.nodeSpacing ?? getNodeSpacing(viewport);
-  const windowRange = getViewportWindow(viewport, nodeSpacing).arcLength;
-  const angularRange = Math.min(Math.abs(cornerAngle - magnifierAngle), windowRange);
+  const magnifierAngle = options.magnifierAngle ?? getMagnifierAngle(viewport);
+  const cornerAngle = magnifierAngle;
+  const angularRange = Math.max(0, Math.PI - cornerAngle); // magnifier -> 180deg
   const nodeSpan = nodeRadius * 2 + nodeGap;
 
   const capacityPerArc = arcs.map(arc => {
@@ -90,36 +89,31 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   const siblings = Array.isArray(sampledSiblings) ? sampledSiblings : [];
   if (siblings.length === 0) return [];
 
-  const capacity = options.capacity ?? calculatePyramidCapacity(viewport, options);
-  const arcs = capacity?.arcs ?? options.arcs ?? DEFAULT_ARCS;
-  const { radius, hubX, hubY } = getArcParameters(viewport);
-  const magnifierAngle = capacity?.magnifierAngle ?? options.magnifierAngle ?? getMagnifierAngle(viewport);
-  const cornerAngle = capacity?.cornerAngle ?? Math.atan2(-viewport.height / 2 - hubY, viewport.width / 2 - hubX);
-  const angularRange = capacity?.angularRange ?? Math.abs(cornerAngle - magnifierAngle);
-  const direction = magnifierAngle < cornerAngle ? 1 : -1;
-  const angleStep = angularRange / (siblings.length + 1);
-  const counts = distributeAcrossArcs(siblings.length, arcs);
-  const ordering = getCenterOutwardOrder(siblings.length);
+  // Cartesian grid placement, origin at top-left
+  const gap = 0.18 * viewport.SSd;
+  const nodeCount = siblings.length;
+  // Try to make a nearly square grid
+  const cols = Math.ceil(Math.sqrt(nodeCount));
+  const rows = Math.ceil(nodeCount / cols);
+  const offsetX = 0.2 * viewport.SSd;
+  const offsetY = 0.2 * viewport.SSd;
 
   const placements = [];
-  let siblingCursor = 0;
-  counts.forEach(arc => {
-    for (let i = 0; i < arc.count; i += 1) {
-      const orderIndex = ordering[siblingCursor];
-      const angle = magnifierAngle + direction * ((siblingCursor + 1) * angleStep);
-      const radiusAtArc = radius * arc.radiusRatio;
-      const item = siblings[orderIndex];
-      placements.push({
-        item,
-        angle,
-        arc: arc.name ?? `arc-${placements.length}`,
-        radius: radiusAtArc,
-        x: hubX + radiusAtArc * Math.cos(angle),
-        y: hubY + radiusAtArc * Math.sin(angle)
-      });
-      siblingCursor += 1;
-    }
-  });
+  for (let i = 0; i < nodeCount; i++) {
+    const row = Math.floor(i / cols);
+    const col = i % cols;
+    const x = offsetX + col * gap;
+    const y = offsetY + row * gap;
+    placements.push({
+      item: siblings[i],
+      x,
+      y,
+      // Provide dummy values for compatibility
+      angle: 0,
+      arc: 'cartesian',
+      radius: gap * 0.4 // or a default node radius
+    });
+  }
 
   return placements;
 }
