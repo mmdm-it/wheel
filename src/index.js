@@ -90,6 +90,7 @@ export function createApp({
   const debugPerf = Boolean(contextOptions.debugPerf);
   const perfRenderBudget = Number(contextOptions?.perfRenderBudgetMs) || 17;
   const emit = payload => safeEmit(contextOptions.onEvent, payload);
+  const hasDimensions = contextOptions?.hasDimensions ?? true;
   const logOnce = logOnceFactory((...args) => {
     if (debug) console.log(...args);
   });
@@ -210,7 +211,10 @@ export function createApp({
     }
   };
 
-  const toggleBlur = () => setBlur(!isBlurred);
+  const toggleBlur = () => {
+    if (!hasDimensions) return;
+    setBlur(!isBlurred);
+  };
 
   const clampRotation = (value, bounds) => Math.max(bounds.minRotation, Math.min(bounds.maxRotation, value));
   const clampSecondaryRotation = (value, bounds) => Math.max(bounds.minRotation, Math.min(bounds.maxRotation, value));
@@ -477,13 +481,13 @@ export function createApp({
         labelMaskEpsilon,
         onNodeClick: node => rotateNodeIntoMagnifier(node),
         selectedId: selected?.id,
-        dimensionIcon: {
+        dimensionIcon: hasDimensions ? {
           href: './art/dimension_sphere_black.svg',
           x: dimensionPosition.x,
           y: dimensionPosition.y,
           size: dimensionSize,
           onClick: () => toggleBlur()
-        },
+        } : null,
         parentButtons: {
           innerLabel: 'CHILDREN (IN)',
           outerLabel: parentOuterLabel,

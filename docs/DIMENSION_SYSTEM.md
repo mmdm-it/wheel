@@ -2,11 +2,19 @@
 
 ## Overview
 
-The **Dimension System** provides alternate views of the hierarchical data. While the Focus Ring navigates through the hierarchy (Testament → Book → Chapter), dimensions offer fundamentally different ways to **view and navigate the same structure**.
+The **Dimension System** provides alternate views of the hierarchical data. The Focus Ring rotates across items at the current level, while the Parent Button and Child Pyramid move IN/OUT through the hierarchy from top level to leaf; dimensions offer fundamentally different ways to **view and navigate the same structure**.
 
 **Core Principle**: A dimension must **transcend the hierarchy** - it applies to all (or most) levels, providing a parallel navigation system through the same data space.
 
 **Example**: Language dimension for Bible - every level can be translated (Old Testament→Vetus Testamentum, Genesis→Γένεσις, Chapter 1→Κεφάλαιον Α). You're viewing the **same structure** through a different linguistic lens.
+
+### Dimension Mode UI (Strata)
+
+- **Primary stratum**: the main Focus Ring, Parent Button, and Child Pyramid. When dimension mode is toggled on, this stratum stays visible but is blurred and non-interactive.
+- **Secondary stratum**: a second Focus Ring rendered on a mirrored layer at the same radius (reflected vertically). This stratum shows the dimension values (e.g., languages) while the primary remains blurred beneath; its sole purpose is to choose a dimension value.
+- **Toggle**: the dimension button (bottom-center) only enters/exits dimension mode; it does not switch dimensions. Selecting a value on the secondary stratum exits dimension mode, and the newly selected dimension becomes visible/applied back on the primary stratum while keeping the hierarchy position unchanged.
+- **Interaction feel**: no fades; elements pop between states. Tab order remains: dimension button → secondary ring nodes → back to normal after selection.
+- **Absent dimensions**: when a volume declares no dimensions, the dimension button is hidden and dimension mode is unavailable.
 
 ---
 
