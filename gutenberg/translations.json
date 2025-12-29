@@ -1,6 +1,6 @@
 {
   "_schema_version": "2.0",
-  "_description": "Translation and versification metadata for the multilingual Bible",
+  "_description": "Edition-level translation metadata (per-language) and versification systems for the multilingual Bible. Manifest files list languages; this file lists specific translations/editions within those languages (tertiary portal).",
   
   "versification_systems": {
     "MT": {
