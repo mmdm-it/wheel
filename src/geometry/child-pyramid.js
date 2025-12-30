@@ -86,33 +86,71 @@ const distributeAcrossArcs = (totalNodes, arcs) => {
 };
 
 export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
+    // Debug: log placement coordinates for visibility troubleshooting
+    if (typeof window !== 'undefined' && window.localStorage?.debug) {
+      setTimeout(() => {
+        console.info('[ChildPyramid] placements', placements.map(p => ({ x: p.x, y: p.y, radius: p.radius, angle: p.angle })));
+      }, 0);
+    }
   const siblings = Array.isArray(sampledSiblings) ? sampledSiblings : [];
   if (siblings.length === 0) return [];
 
-  // Cartesian grid placement, origin at top-left
-  const gap = 0.18 * viewport.SSd;
-  const nodeCount = siblings.length;
-  // Try to make a nearly square grid
-  const cols = Math.ceil(Math.sqrt(nodeCount));
-  const rows = Math.ceil(nodeCount / cols);
-  const offsetX = 0.2 * viewport.SSd;
-  const offsetY = 0.2 * viewport.SSd;
+  // Spiral placement, polar coordinates, centered at hub
+  const { hubX, hubY, radius: focusRadius } = getArcParameters(viewport);
+  const magnifierAngle = getMagnifierAngle(viewport);
+  // Spiral center: at (hubX, hubY) plus offset at angle halfway between magnifier and 180°, radius 0.7*focusRadius
+  const spiralCenterAngle = (magnifierAngle + Math.PI) / 2;
+  // Place spiral center at viewport center (guaranteed visible)
+  const spiralCenterX = viewport.width / 2;
+  const spiralCenterY = viewport.height / 2;
+  const n = siblings.length;
+  // Use a fixed node radius and gap based on viewport size for visibility
+  const nodeRadius = 0.04 * viewport.SSd;
+  const desiredGap = 2.4 * nodeRadius * 2.5;
+  // Equidistant spiral: r = a + b*theta, with b chosen so arc length between nodes is desiredGap
+  // Approximate: for small angle steps, arc length ≈ sqrt((b*dTheta)^2 + (r*dTheta)^2)
+  // We'll use a constant angle increment, but solve for b so that the distance between nodes is desiredGap
+  // Start spiral at 0.5 turn offset
+  // Archimedean spiral: r = b * theta
+  // Find b so spiral fits well in viewport
+  const maxTurns = 2.5;
+  const maxTheta = maxTurns * 2 * Math.PI;
+  const b = (0.38 * Math.min(viewport.width, viewport.height)) / maxTheta;
+
+  let angle = Math.PI; // start after half a turn
+  let r = b * angle;
+  let prevX = spiralCenterX + r * Math.cos(spiralCenterAngle + angle);
+  let prevY = spiralCenterY + r * Math.sin(spiralCenterAngle + angle);
 
   const placements = [];
-  for (let i = 0; i < nodeCount; i++) {
-    const row = Math.floor(i / cols);
-    const col = i % cols;
-    const x = offsetX + col * gap;
-    const y = offsetY + row * gap;
+  let x, y;
+  for (let i = 0; i < n; i++) {
+    r = b * angle;
+    x = spiralCenterX + r * Math.cos(spiralCenterAngle + angle);
+    y = spiralCenterY + r * Math.sin(spiralCenterAngle + angle);
     placements.push({
       item: siblings[i],
       x,
       y,
-      // Provide dummy values for compatibility
-      angle: 0,
-      arc: 'cartesian',
-      radius: gap * 0.4 // or a default node radius
+      angle: spiralCenterAngle + angle,
+      arc: 'spiral',
+      radius: nodeRadius
     });
+    // For the next node, find the angle so that the distance to the previous node is exactly desiredGap
+    if (i < n - 1) {
+      let nextAngle = angle + 0.01;
+      while (true) {
+        const nextR = b * nextAngle;
+        const nextX = spiralCenterX + nextR * Math.cos(spiralCenterAngle + nextAngle);
+        const nextY = spiralCenterY + nextR * Math.sin(spiralCenterAngle + nextAngle);
+        const dist = Math.sqrt((nextX - x) ** 2 + (nextY - y) ** 2);
+        if (dist >= desiredGap) break;
+        nextAngle += 0.01;
+        // Prevent infinite loop if spiral is too tight
+        if (nextAngle - angle > 0.5) break;
+      }
+      angle = nextAngle;
+    }
   }
 
   return placements;
