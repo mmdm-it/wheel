@@ -58,6 +58,30 @@ export function showPyramidBounds() {
   const diagGroup = document.createElementNS(SVG_NS, 'g');
   diagGroup.setAttribute('id', DIAG_ID);
 
+  // Create filled region representing usable area (intersection of rect and circle)
+  // Using SVG clipPath to clip the rectangle by the circle
+  const clipPathId = 'pyramidBoundsClip';
+  const clipPath = document.createElementNS(SVG_NS, 'clipPath');
+  clipPath.setAttribute('id', clipPathId);
+  
+  const clipCircle = document.createElementNS(SVG_NS, 'circle');
+  clipCircle.setAttribute('cx', ringCenterX);
+  clipCircle.setAttribute('cy', ringCenterY);
+  clipCircle.setAttribute('r', innerRadius);
+  clipPath.appendChild(clipCircle);
+  diagGroup.appendChild(clipPath);
+
+  // Filled rectangle clipped by the circle
+  const filledRect = document.createElementNS(SVG_NS, 'rect');
+  filledRect.setAttribute('x', leftX);
+  filledRect.setAttribute('y', effectiveTopY);
+  filledRect.setAttribute('width', effectiveRightX - leftX);
+  filledRect.setAttribute('height', bottomY - effectiveTopY);
+  filledRect.setAttribute('fill', 'red');
+  filledRect.setAttribute('fill-opacity', '0.2');
+  filledRect.setAttribute('clip-path', `url(#${clipPathId})`);
+  diagGroup.appendChild(filledRect);
+
   // Draw the Focus Ring arc (inner edge with margin)
   const arcCircle = document.createElementNS(SVG_NS, 'circle');
   arcCircle.setAttribute('cx', ringCenterX);
