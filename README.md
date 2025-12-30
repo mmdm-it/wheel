@@ -8,10 +8,7 @@ Minimal scaffold, data-agnostic: interaction → navigation → view → geometr
 - v3.7.4 (2025-12-29)
 
 ## Notable Changes in 3.7.3
-- Child Pyramid nodes are now placed in a Cartesian grid (origin at top-left, offset by 0.2 × SSd).
-- Grid gap is 0.18 × SSd between columns and rows.
-- All child nodes are included (no sampling or filtering).
-- Polar/arc placement logic has been removed for the pyramid grid.
+- Child Pyramid nodes now support a spiral layout mode, placing nodes equidistantly along an Archimedean spiral using true arc-length spacing. This ensures visually uniform node distribution for all child counts. (Cartesian grid mode is also available.)
 
 ## Release Train
 - v3.7.4 Baseline data + UI lift — done

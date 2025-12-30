@@ -107,27 +107,37 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   // Use a fixed node radius and gap based on viewport size for visibility
   const nodeRadius = 0.04 * viewport.SSd;
   const desiredGap = 2.4 * nodeRadius * 2.5;
-  // Equidistant spiral: r = a + b*theta, with b chosen so arc length between nodes is desiredGap
-  // Approximate: for small angle steps, arc length ≈ sqrt((b*dTheta)^2 + (r*dTheta)^2)
-  // We'll use a constant angle increment, but solve for b so that the distance between nodes is desiredGap
-  // Start spiral at 0.5 turn offset
-  // Archimedean spiral: r = b * theta
-  // Find b so spiral fits well in viewport
+  // Archimedean spiral: r = a + b*theta (here a = 0)
   const maxTurns = 2.5;
   const maxTheta = maxTurns * 2 * Math.PI;
   const b = (0.38 * Math.min(viewport.width, viewport.height)) / maxTheta;
 
-  let angle = Math.PI; // start after half a turn
-  let r = b * angle;
-  let prevX = spiralCenterX + r * Math.cos(spiralCenterAngle + angle);
-  let prevY = spiralCenterY + r * Math.sin(spiralCenterAngle + angle);
+  // Arc length from theta0 to theta1 for Archimedean spiral (a=0):
+  function spiralArcLength(b, theta0, theta1) {
+    function F(x) {
+      return x * Math.sqrt(x * x + b * b) + b * b * Math.log(x + Math.sqrt(x * x + b * b));
+    }
+    return (F(b * theta1) - F(b * theta0)) / (2 * b);
+  }
 
+  // Find theta2 so that arc length from theta1 to theta2 is desiredGap
+  function findNextTheta(b, theta1, gap) {
+    let low = theta1, high = theta1 + 2 * Math.PI;
+    while (high - low > 1e-6) {
+      let mid = (low + high) / 2;
+      let s = spiralArcLength(b, theta1, mid);
+      if (s < gap) low = mid;
+      else high = mid;
+    }
+    return (low + high) / 2;
+  }
+
+  let angle = Math.PI; // start after half a turn
   const placements = [];
-  let x, y;
   for (let i = 0; i < n; i++) {
-    r = b * angle;
-    x = spiralCenterX + r * Math.cos(spiralCenterAngle + angle);
-    y = spiralCenterY + r * Math.sin(spiralCenterAngle + angle);
+    const r = b * angle;
+    const x = spiralCenterX + r * Math.cos(spiralCenterAngle + angle);
+    const y = spiralCenterY + r * Math.sin(spiralCenterAngle + angle);
     placements.push({
       item: siblings[i],
       x,
@@ -136,20 +146,8 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
       arc: 'spiral',
       radius: nodeRadius
     });
-    // For the next node, find the angle so that the distance to the previous node is exactly desiredGap
     if (i < n - 1) {
-      let nextAngle = angle + 0.01;
-      while (true) {
-        const nextR = b * nextAngle;
-        const nextX = spiralCenterX + nextR * Math.cos(spiralCenterAngle + nextAngle);
-        const nextY = spiralCenterY + nextR * Math.sin(spiralCenterAngle + nextAngle);
-        const dist = Math.sqrt((nextX - x) ** 2 + (nextY - y) ** 2);
-        if (dist >= desiredGap) break;
-        nextAngle += 0.01;
-        // Prevent infinite loop if spiral is too tight
-        if (nextAngle - angle > 0.5) break;
-      }
-      angle = nextAngle;
+      angle = findNextTheta(b, angle, desiredGap);
     }
   }
 
