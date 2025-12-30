@@ -206,15 +206,24 @@ export function createApp({
   
   // Initialize volume logo (domain-specific)
   const volumeLogo = new VolumeLogo(svgRoot, vp);
-  const logoConfig = pyramidAdapter?.manifest?.display_config?.detail_sector;
+  
+  // For manifests with a root key (like Gutenberg_Bible), extract display_config from the root object
+  const manifestRoot = pyramidAdapter?.manifest 
+    ? (Object.keys(pyramidAdapter.manifest).length === 1 
+        ? pyramidAdapter.manifest[Object.keys(pyramidAdapter.manifest)[0]] 
+        : pyramidAdapter.manifest)
+    : null;
+  
+  const logoConfig = manifestRoot?.display_config?.detail_sector;
   console.log('[Logo Debug] pyramidAdapter:', pyramidAdapter);
-  console.log('[Logo Debug] display_config:', pyramidAdapter?.manifest?.display_config);
+  console.log('[Logo Debug] manifestRoot:', manifestRoot);
+  console.log('[Logo Debug] display_config:', manifestRoot?.display_config);
   console.log('[Logo Debug] detail_sector:', logoConfig);
   if (logoConfig && (logoConfig.logo_base_path || logoConfig.default_image)) {
     console.log('[Logo Debug] Calling volumeLogo.render() with config:', logoConfig);
     volumeLogo.render({
       ...logoConfig,
-      color_scheme: pyramidAdapter?.manifest?.display_config?.color_scheme
+      color_scheme: manifestRoot?.display_config?.color_scheme
     });
   } else {
     console.log('[Logo Debug] Logo render SKIPPED - config check failed:', {

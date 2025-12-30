@@ -490,6 +490,8 @@
         try {
           adapterNormalized = adapter.normalize(manifest);
           adapterLayoutSpec = adapter.layoutSpec(adapterNormalized, viewport);
+          // Attach manifest to adapter for logo configuration
+          adapter.manifest = manifest;
         } catch (err) {
           console.warn('[wheel] adapter layoutSpec failed, falling back to host config', err);
           adapterNormalized = null;
