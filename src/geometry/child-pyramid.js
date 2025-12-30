@@ -8,6 +8,12 @@ export const DEFAULT_ARCS = [
 
 const toRadians = deg => (deg * Math.PI) / 180;
 
+// Spiral parameters (adjustable via console)
+let spiralConfig = {
+  expansionRate: 0.024,  // Controls how quickly spiral expands radially (b parameter)
+  gapMultiplier: 2.4 * 2.5  // Spacing between nodes (multiple of node diameter)
+};
+
 export function calculatePyramidCapacity(viewport, options = {}) {
   const arcs = options.arcs ?? DEFAULT_ARCS;
   const minAngularSpacing = toRadians(options.minAngularSpacingDeg ?? 8);
@@ -124,10 +130,10 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   const n = siblings.length;
   // Use a fixed node radius and gap based on viewport size for visibility
   const nodeRadius = 0.04 * viewport.SSd;
-  const desiredGap = 2.4 * nodeRadius * 2.5;
+  const desiredGap = spiralConfig.gapMultiplier * nodeRadius * 2;
   // Archimedean spiral: r = b*theta
   // Controls how quickly the spiral expands radially
-  const b = 0.024 * viewport.SSd;
+  const b = spiralConfig.expansionRate * viewport.SSd;
 
   // Arc length from theta0 to theta1 for Archimedean spiral (a=0):
   function spiralArcLength(b, theta0, theta1) {
@@ -169,4 +175,22 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   }
 
   return placements;
+}
+
+// Console API for spiral adjustment
+if (typeof window !== 'undefined') {
+  window.setSpiralExpansion = function(rate) {
+    spiralConfig.expansionRate = rate;
+    console.log(`Spiral expansion rate set to ${rate}. Refresh to see changes.`);
+  };
+
+  window.setSpiralGap = function(multiplier) {
+    spiralConfig.gapMultiplier = multiplier;
+    console.log(`Spiral gap multiplier set to ${multiplier}. Refresh to see changes.`);
+  };
+
+  window.getSpiralConfig = function() {
+    console.log('Current spiral configuration:', spiralConfig);
+    return spiralConfig;
+  };
 }
