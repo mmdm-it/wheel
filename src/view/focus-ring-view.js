@@ -126,10 +126,13 @@ export class FocusRingView {
 
     this.pyramidGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.pyramidGroup.setAttribute('class', 'child-pyramid');
+    this.pyramidFanLinesGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.pyramidFanLinesGroup.setAttribute('class', 'child-pyramid-fan-lines');
     this.pyramidNodesGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.pyramidNodesGroup.setAttribute('class', 'child-pyramid-nodes');
     this.pyramidLabelsGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.pyramidLabelsGroup.setAttribute('class', 'child-pyramid-labels');
+    this.pyramidGroup.appendChild(this.pyramidFanLinesGroup);
     this.pyramidGroup.appendChild(this.pyramidNodesGroup);
     this.pyramidGroup.appendChild(this.pyramidLabelsGroup);
     this.blurGroup.appendChild(this.pyramidGroup);
@@ -178,13 +181,15 @@ export class FocusRingView {
     }
 
     // Render child pyramid nodes/labels if provided
-    if (this.pyramidGroup && this.pyramidNodesGroup && this.pyramidLabelsGroup) {
+    if (this.pyramidGroup && this.pyramidFanLinesGroup && this.pyramidNodesGroup && this.pyramidLabelsGroup) {
       if (!pyramidInstructions || pyramidInstructions.length === 0) {
         this.pyramidGroup.setAttribute('display', 'none');
+        while (this.pyramidFanLinesGroup.firstChild) this.pyramidFanLinesGroup.removeChild(this.pyramidFanLinesGroup.firstChild);
         while (this.pyramidNodesGroup.firstChild) this.pyramidNodesGroup.removeChild(this.pyramidNodesGroup.firstChild);
         while (this.pyramidLabelsGroup.firstChild) this.pyramidLabelsGroup.removeChild(this.pyramidLabelsGroup.firstChild);
       } else {
         this.pyramidGroup.removeAttribute('display');
+        while (this.pyramidFanLinesGroup.firstChild) this.pyramidFanLinesGroup.removeChild(this.pyramidFanLinesGroup.firstChild);
         while (this.pyramidNodesGroup.firstChild) this.pyramidNodesGroup.removeChild(this.pyramidNodesGroup.firstChild);
         while (this.pyramidLabelsGroup.firstChild) this.pyramidLabelsGroup.removeChild(this.pyramidLabelsGroup.firstChild);
         if (options?.debug) {
@@ -230,6 +235,24 @@ export class FocusRingView {
           label.textContent = instr.label ?? instr.id ?? '';
           this.pyramidLabelsGroup.appendChild(label);
         });
+
+        // Draw fan lines from magnifier to each pyramid node
+        if (magnifier && magnifier.cx != null && magnifier.cy != null) {
+          const magnifierX = magnifier.cx;
+          const magnifierY = magnifier.cy;
+          
+          pyramidInstructions.forEach(instr => {
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('class', 'child-pyramid-fan-line');
+            line.setAttribute('x1', magnifierX);
+            line.setAttribute('y1', magnifierY);
+            line.setAttribute('x2', instr.x ?? 0);
+            line.setAttribute('y2', instr.y ?? 0);
+            line.setAttribute('stroke', 'black');
+            line.setAttribute('stroke-width', '1');
+            this.pyramidFanLinesGroup.appendChild(line);
+          });
+        }
       }
     }
 
