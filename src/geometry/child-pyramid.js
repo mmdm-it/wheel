@@ -1,4 +1,4 @@
-import { getArcParameters, getMagnifierAngle, getViewportWindow, getNodeSpacing } from './focus-ring-geometry.js';
+import { getArcParameters, getMagnifierAngle, getMagnifierPosition, getViewportWindow, getNodeSpacing } from './focus-ring-geometry.js';
 
 export const DEFAULT_ARCS = [
   { name: 'inner', radiusRatio: 0.65, weight: 0.3 },
@@ -95,14 +95,28 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   const siblings = Array.isArray(sampledSiblings) ? sampledSiblings : [];
   if (siblings.length === 0) return [];
 
-  // Spiral placement, polar coordinates, centered at hub
+  // Calculate CPUA (Child Pyramid Usable Area) bounds
   const { hubX, hubY, radius: focusRadius } = getArcParameters(viewport);
   const magnifierAngle = getMagnifierAngle(viewport);
-  // Spiral center: at (hubX, hubY) plus offset at angle halfway between magnifier and 180°, radius 0.7*focusRadius
+  const magnifierPos = getMagnifierPosition(viewport);
+  
+  // CPUA boundaries
+  const SSd = viewport.SSd;
+  const topMargin = SSd * 0.03;
+  const rightMargin = SSd * 0.03;
+  const MAGNIFIER_RADIUS_RATIO = 0.060;
+  const magnifierRadius = SSd * MAGNIFIER_RADIUS_RATIO;
+  
+  const cpuaTopY = topMargin;
+  const cpuaRightX = viewport.width - rightMargin;
+  const cpuaBottomY = Math.min(viewport.height, magnifierPos.y - (1.5 * magnifierRadius));
+  const cpuaLeftX = 0;
+  
+  // CPUA center: x = center of bottom edge, y = center of right edge
+  const spiralCenterX = (cpuaLeftX + cpuaRightX) / 2;  // horizontal midpoint of bottom edge
+  const spiralCenterY = (cpuaTopY + cpuaBottomY) / 2;   // vertical midpoint of right edge
   const spiralCenterAngle = (magnifierAngle + Math.PI) / 2;
-  // Place spiral center at viewport center (guaranteed visible)
-  const spiralCenterX = viewport.width / 2;
-  const spiralCenterY = viewport.height / 2;
+  
   const n = siblings.length;
   // Use a fixed node radius and gap based on viewport size for visibility
   const nodeRadius = 0.04 * viewport.SSd;
