@@ -42,9 +42,9 @@ describe('catalog adapter', () => {
     assert.equal(typeof spec.colorByLevel, 'function');
     assert.ok(spec.pyramid?.capacity?.total > 0, 'pyramid capacity should be available');
     const siblings = norm.items.filter(i => i.parentId === norm.items[0].id);
-    const sampled = spec.pyramid.sample(siblings);
-    const placed = spec.pyramid.place(sampled);
-    assert.equal(sampled.length, placed.length);
+    const placed = spec.pyramid.place(siblings);
+    assert.ok(siblings.length > 0, 'should have siblings to place');
+    assert.equal(placed.length, siblings.length, 'all siblings should be placed');
     assert.ok(placed.every(p => Number.isFinite(p.angle) && Number.isFinite(p.x) && Number.isFinite(p.y)));
   });
 

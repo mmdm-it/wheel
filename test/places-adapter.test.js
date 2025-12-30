@@ -55,7 +55,6 @@ describe('places adapter', () => {
     const pyramid = spec.pyramid;
     assert.ok(pyramid);
     assert.ok(pyramid.capacity);
-    assert.equal(typeof pyramid.sample, 'function');
     assert.equal(typeof pyramid.place, 'function');
   });
 
