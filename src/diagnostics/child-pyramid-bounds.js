@@ -84,16 +84,83 @@ export function showPyramidBounds() {
   clipPath.appendChild(clipCircle);
   diagGroup.appendChild(clipPath);
 
-  // Filled area - simple rectangle clipped by circle
-  const filledRect = document.createElementNS(SVG_NS, 'rect');
-  filledRect.setAttribute('x', leftX);
-  filledRect.setAttribute('y', effectiveTopY);
-  filledRect.setAttribute('width', effectiveRightX - leftX);
-  filledRect.setAttribute('height', effectiveBottomY - effectiveTopY);
-  filledRect.setAttribute('fill', 'red');
-  filledRect.setAttribute('fill-opacity', '0.2');
-  filledRect.setAttribute('clip-path', `url(#${clipPathId})`);
-  diagGroup.appendChild(filledRect);
+  // Create CPUA filled area (DSUA minus logo exclusion if present)
+  if (logoBounds) {
+    // L-shaped CPUA: Create a path that excludes the logo square
+    // This is the red filled area minus the upper-right logo square
+    const cpuaPath = document.createElementNS(SVG_NS, 'path');
+    
+    // Draw L-shape: main rect with logo square cut out from upper-right
+    const pathData = `
+      M ${leftX},${effectiveTopY}
+      L ${logoBounds.left},${effectiveTopY}
+      L ${logoBounds.left},${logoBounds.bottom}
+      L ${effectiveRightX},${logoBounds.bottom}
+      L ${effectiveRightX},${effectiveBottomY}
+      L ${leftX},${effectiveBottomY}
+      Z
+    `;
+    
+    cpuaPath.setAttribute('d', pathData);
+    cpuaPath.setAttribute('fill', 'red');
+    cpuaPath.setAttribute('fill-opacity', '0.2');
+    cpuaPath.setAttribute('clip-path', `url(#${clipPathId})`);
+    diagGroup.appendChild(cpuaPath);
+    
+    // Draw outline of CPUA (L-shape)
+    const cpuaOutline = document.createElementNS(SVG_NS, 'path');
+    cpuaOutline.setAttribute('d', pathData);
+    cpuaOutline.setAttribute('fill', 'none');
+    cpuaOutline.setAttribute('stroke', 'red');
+    cpuaOutline.setAttribute('stroke-width', '2');
+    diagGroup.appendChild(cpuaOutline);
+    
+    // Draw the excluded logo square outline
+    const logoRect = document.createElementNS(SVG_NS, 'rect');
+    logoRect.setAttribute('x', logoBounds.left);
+    logoRect.setAttribute('y', logoBounds.top);
+    logoRect.setAttribute('width', logoBounds.boxSize);
+    logoRect.setAttribute('height', logoBounds.boxSize);
+    logoRect.setAttribute('fill', 'none');
+    logoRect.setAttribute('stroke', 'orange');
+    logoRect.setAttribute('stroke-width', '2');
+    logoRect.setAttribute('stroke-dasharray', '5,5');
+    diagGroup.appendChild(logoRect);
+    
+    // Add label for excluded area
+    const excludedLabel = document.createElementNS(SVG_NS, 'text');
+    excludedLabel.setAttribute('x', logoBounds.centerX);
+    excludedLabel.setAttribute('y', logoBounds.centerY);
+    excludedLabel.setAttribute('fill', 'orange');
+    excludedLabel.setAttribute('font-size', '14');
+    excludedLabel.setAttribute('font-weight', 'bold');
+    excludedLabel.setAttribute('text-anchor', 'middle');
+    excludedLabel.setAttribute('dominant-baseline', 'middle');
+    excludedLabel.textContent = 'LOGO';
+    diagGroup.appendChild(excludedLabel);
+  } else {
+    // No logo: simple rectangle CPUA
+    const filledRect = document.createElementNS(SVG_NS, 'rect');
+    filledRect.setAttribute('x', leftX);
+    filledRect.setAttribute('y', effectiveTopY);
+    filledRect.setAttribute('width', effectiveRightX - leftX);
+    filledRect.setAttribute('height', effectiveBottomY - effectiveTopY);
+    filledRect.setAttribute('fill', 'red');
+    filledRect.setAttribute('fill-opacity', '0.2');
+    filledRect.setAttribute('clip-path', `url(#${clipPathId})`);
+    diagGroup.appendChild(filledRect);
+    
+    // Draw outline
+    const effectiveRect = document.createElementNS(SVG_NS, 'rect');
+    effectiveRect.setAttribute('x', leftX);
+    effectiveRect.setAttribute('y', effectiveTopY);
+    effectiveRect.setAttribute('width', effectiveRightX - leftX);
+    effectiveRect.setAttribute('height', effectiveBottomY - effectiveTopY);
+    effectiveRect.setAttribute('fill', 'none');
+    effectiveRect.setAttribute('stroke', 'red');
+    effectiveRect.setAttribute('stroke-width', '2');
+    diagGroup.appendChild(effectiveRect);
+  }
 
   // Draw the Focus Ring arc (inner edge with margin)
   const arcCircle = document.createElementNS(SVG_NS, 'circle');
@@ -105,17 +172,6 @@ export function showPyramidBounds() {
   arcCircle.setAttribute('stroke-width', '2');
   arcCircle.setAttribute('stroke-dasharray', '8,4');
   diagGroup.appendChild(arcCircle);
-
-  // Draw effective content boundary (with margins)
-  const effectiveRect = document.createElementNS(SVG_NS, 'rect');
-  effectiveRect.setAttribute('x', leftX);
-  effectiveRect.setAttribute('y', effectiveTopY);
-  effectiveRect.setAttribute('width', effectiveRightX - leftX);
-  effectiveRect.setAttribute('height', effectiveBottomY - effectiveTopY);
-  effectiveRect.setAttribute('fill', 'none');
-  effectiveRect.setAttribute('stroke', 'red');
-  effectiveRect.setAttribute('stroke-width', '2');
-  diagGroup.appendChild(effectiveRect);
 
   // Mark ring center with X
   const centerMarkerSize = 15;
