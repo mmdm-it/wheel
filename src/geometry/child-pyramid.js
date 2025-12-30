@@ -117,21 +117,21 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   const logoBounds = options.logoBounds || null;
   
   const cpuaTopY = topMargin;
-  let cpuaRightX = viewport.width - rightMargin;
+  const cpuaRightXFull = viewport.width - rightMargin;  // Full width for spiral center calculation
   const cpuaBottomY = Math.min(viewport.height, magnifierPos.y - (1.5 * magnifierRadius));
   const cpuaLeftX = 0;
   
-  // Crop right edge if logo is present
-  if (logoBounds) {
-    cpuaRightX = Math.min(cpuaRightX, logoBounds.left - rightMargin);
-  }
+  // Crop right edge for boundary checking if logo is present
+  const cpuaRightX = logoBounds 
+    ? Math.min(cpuaRightXFull, logoBounds.left - rightMargin)
+    : cpuaRightXFull;
   
-  // CPUA center: x = center of bottom edge, y = center of right edge
-  const cpuaCenterX = (cpuaLeftX + cpuaRightX) / 2;
+  // CPUA center: use full width (ignore logo) for spiral center to keep it stable
+  const cpuaCenterX = (cpuaLeftX + cpuaRightXFull) / 2;
   const cpuaCenterY = (cpuaTopY + cpuaBottomY) / 2;
   
-  // Shift spiral center slightly right (10% of CPUA width)
-  const spiralCenterX = cpuaCenterX + ((cpuaRightX - cpuaLeftX) * 0.1);
+  // Shift spiral center slightly right (10% of full CPUA width)
+  const spiralCenterX = cpuaCenterX + ((cpuaRightXFull - cpuaLeftX) * 0.1);
   const spiralCenterY = cpuaCenterY;
   const spiralCenterAngle = (magnifierAngle + Math.PI) / 2;
   
