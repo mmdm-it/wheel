@@ -3,8 +3,10 @@
  * Visualizes the usable area for Child Pyramid spiral layout
  * 
  * Usage from browser console:
- *   showPyramidBounds()  - Display lime green boundary visualization
- *   hidePyramidBounds()  - Remove the visualization
+ *   showPyramidBounds()       - Display Child Pyramid bounds (red)
+ *   hidePyramidBounds()       - Remove Child Pyramid bounds
+ *   showDetailSectorBounds()  - Display Detail Sector bounds (blue)
+ *   hideDetailSectorBounds()  - Remove Detail Sector bounds
  */
 
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
@@ -12,6 +14,7 @@ import { getArcParameters, getMagnifierAngle, getMagnifierPosition } from '../ge
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const DIAG_ID = 'childPyramidBoundsDiag';
+const DETAIL_SECTOR_DIAG_ID = 'detailSectorBoundsDiag';
 
 /**
  * Show the Child Pyramid bounds as lime green overlay
@@ -275,8 +278,97 @@ export function hidePyramidBounds() {
   }
 }
 
+/**
+ * Show the Detail Sector bounds as blue overlay
+ */
+export function showDetailSectorBounds() {
+  const svg = document.querySelector('svg');
+  if (!svg) {
+    console.error('❌ Cannot show detail sector bounds - SVG element not found');
+    return;
+  }
+
+  // Remove existing diagnostic if present
+  hideDetailSectorBounds();
+
+  const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
+  const arcParams = getArcParameters(viewport);
+  const magnifierAngle = getMagnifierAngle(viewport);
+  const magnifierPos = getMagnifierPosition(viewport);
+
+  // SVG uses top-left origin
+  const topY = 0;
+  const rightX = viewport.width;
+  const bottomY = viewport.height;
+  const leftX = 0;
+
+  // Focus Ring parameters
+  const ringCenterX = arcParams.hubX;
+  const ringCenterY = arcParams.hubY;
+  const ringRadius = arcParams.radius;
+
+  // Margins
+  const SSd = viewport.SSd;
+  const marginPercent = 0.03;
+  const topMargin = SSd * marginPercent;
+  const rightMargin = SSd * marginPercent;
+  
+  const MAGNIFIER_RADIUS_RATIO = 0.060;
+  const magnifierRadius = SSd * MAGNIFIER_RADIUS_RATIO;
+
+  // Detail Sector area (placeholder - will be refined later)
+  const effectiveTopY = topY + topMargin;
+  const effectiveRightX = rightX - rightMargin;
+  const effectiveBottomY = Math.min(bottomY, magnifierPos.y - (1.5 * magnifierRadius));
+
+  // Create diagnostic group
+  const diagGroup = document.createElementNS(SVG_NS, 'g');
+  diagGroup.setAttribute('id', DETAIL_SECTOR_DIAG_ID);
+
+  // Blue rectangle showing Detail Sector bounds
+  const dsRect = document.createElementNS(SVG_NS, 'rect');
+  dsRect.setAttribute('x', leftX);
+  dsRect.setAttribute('y', effectiveTopY);
+  dsRect.setAttribute('width', effectiveRightX - leftX);
+  dsRect.setAttribute('height', effectiveBottomY - effectiveTopY);
+  dsRect.setAttribute('fill', 'blue');
+  dsRect.setAttribute('fill-opacity', '0.1');
+  dsRect.setAttribute('stroke', 'blue');
+  dsRect.setAttribute('stroke-width', '2');
+  dsRect.setAttribute('stroke-dasharray', '5,5');
+  diagGroup.appendChild(dsRect);
+
+  // Label
+  const label = document.createElementNS(SVG_NS, 'text');
+  label.setAttribute('x', leftX + 10);
+  label.setAttribute('y', effectiveTopY + 40);
+  label.setAttribute('fill', 'blue');
+  label.setAttribute('font-size', '14');
+  label.setAttribute('font-weight', 'bold');
+  label.textContent = 'DETAIL SECTOR';
+  diagGroup.appendChild(label);
+
+  svg.appendChild(diagGroup);
+
+  console.log('📐 Detail Sector bounds diagnostic displayed (blue)');
+  console.log('   - Call hideDetailSectorBounds() to remove');
+}
+
+/**
+ * Hide the Detail Sector bounds diagnostic
+ */
+export function hideDetailSectorBounds() {
+  const existing = document.getElementById(DETAIL_SECTOR_DIAG_ID);
+  if (existing) {
+    existing.remove();
+    console.log('📐 Detail Sector bounds diagnostic hidden');
+  }
+}
+
 // Expose to global window for console access
 if (typeof window !== 'undefined') {
   window.showPyramidBounds = showPyramidBounds;
   window.hidePyramidBounds = hidePyramidBounds;
+  window.showDetailSectorBounds = showDetailSectorBounds;
+  window.hideDetailSectorBounds = hideDetailSectorBounds;
 }
