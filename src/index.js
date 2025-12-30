@@ -6,6 +6,7 @@ import { FocusRingView } from './view/focus-ring-view.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
 import { buildPyramidPreview } from './core/pyramid-preview.js';
+import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
   getViewportInfo,
