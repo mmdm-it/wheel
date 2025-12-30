@@ -207,10 +207,20 @@ export function createApp({
   // Initialize volume logo (domain-specific)
   const volumeLogo = new VolumeLogo(svgRoot, vp);
   const logoConfig = pyramidAdapter?.manifest?.display_config?.detail_sector;
+  console.log('[Logo Debug] pyramidAdapter:', pyramidAdapter);
+  console.log('[Logo Debug] display_config:', pyramidAdapter?.manifest?.display_config);
+  console.log('[Logo Debug] detail_sector:', logoConfig);
   if (logoConfig && (logoConfig.logo_base_path || logoConfig.default_image)) {
+    console.log('[Logo Debug] Calling volumeLogo.render() with config:', logoConfig);
     volumeLogo.render({
       ...logoConfig,
       color_scheme: pyramidAdapter?.manifest?.display_config?.color_scheme
+    });
+  } else {
+    console.log('[Logo Debug] Logo render SKIPPED - config check failed:', {
+      hasLogoConfig: !!logoConfig,
+      hasBasePath: logoConfig?.logo_base_path,
+      hasDefaultImage: logoConfig?.default_image
     });
   }
   
