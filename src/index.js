@@ -207,6 +207,11 @@ export function createApp({
   // Initialize volume logo (domain-specific)
   const volumeLogo = new VolumeLogo(svgRoot, vp);
   
+  // Make volumeLogo globally accessible for diagnostics
+  if (typeof window !== 'undefined') {
+    window.volumeLogo = volumeLogo;
+  }
+  
   // For manifests with a root key (like Gutenberg_Bible), extract display_config from the root object
   const manifestRoot = pyramidAdapter?.manifest 
     ? (Object.keys(pyramidAdapter.manifest).length === 1 
