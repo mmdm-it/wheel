@@ -113,8 +113,12 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   const cpuaLeftX = 0;
   
   // CPUA center: x = center of bottom edge, y = center of right edge
-  const spiralCenterX = (cpuaLeftX + cpuaRightX) / 2;  // horizontal midpoint of bottom edge
-  const spiralCenterY = (cpuaTopY + cpuaBottomY) / 2;   // vertical midpoint of right edge
+  const cpuaCenterX = (cpuaLeftX + cpuaRightX) / 2;
+  const cpuaCenterY = (cpuaTopY + cpuaBottomY) / 2;
+  
+  // Shift spiral center slightly right (10% of CPUA width)
+  const spiralCenterX = cpuaCenterX + ((cpuaRightX - cpuaLeftX) * 0.1);
+  const spiralCenterY = cpuaCenterY;
   const spiralCenterAngle = (magnifierAngle + Math.PI) / 2;
   
   const n = siblings.length;
