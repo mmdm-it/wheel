@@ -3,6 +3,7 @@ import { NavigationState } from './navigation/navigation-state.js';
 import { buildBibleVerseCousinChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
 import { FocusRingView } from './view/focus-ring-view.js';
+import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
 import { buildPyramidPreview } from './core/pyramid-preview.js';
@@ -14,6 +15,7 @@ export {
   NavigationState,
   RotationChoreographer,
   FocusRingView,
+  VolumeLogo,
   validateVolumeRoot,
   buildBibleVerseCousinChain,
   buildBibleBookCousinChain
@@ -201,6 +203,17 @@ export function createApp({
   secondaryNav.setItems(secondaryInit.items || [], safeSecondaryIndex);
   const view = new FocusRingView(svgRoot);
   view.init();
+  
+  // Initialize volume logo (domain-specific)
+  const volumeLogo = new VolumeLogo(svgRoot, vp);
+  const logoConfig = pyramidAdapter?.manifest?.display_config?.detail_sector;
+  if (logoConfig && (logoConfig.logo_base_path || logoConfig.default_image)) {
+    volumeLogo.render({
+      ...logoConfig,
+      color_scheme: pyramidAdapter?.manifest?.display_config?.color_scheme
+    });
+  }
+  
   let isBlurred = false;
   let choreographer = null;
   let isRotating = false;
@@ -220,6 +233,7 @@ export function createApp({
     : null;
   const buildPyramid = selected => {
     try {
+      const logoBounds = volumeLogo.getBounds();
       const instructions = buildPyramidPreview({
         viewport: vp,
         selected,
@@ -227,7 +241,8 @@ export function createApp({
         pyramidConfig,
         normalized: pyramidNormalized ?? normalizedItems,
         adapter: pyramidAdapter,
-        layoutSpec: pyramidLayoutSpec
+        layoutSpec: pyramidLayoutSpec,
+        logoBounds
       });
       return Array.isArray(instructions) && instructions.length > 0 ? instructions : null;
     } catch (err) {

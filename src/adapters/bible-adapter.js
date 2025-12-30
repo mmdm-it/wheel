@@ -171,8 +171,8 @@ export function layoutSpec(normalized, viewport) {
     colorByLevel: level => palette[level] || '#555',
     pyramid: {
       capacity: pyramidCapacity,
-      place: siblings => placePyramidNodes(siblings, vp, { capacity: pyramidCapacity })
-    }
+      place: (siblings, viewport, opts) => placePyramidNodes(siblings, vp, { capacity: pyramidCapacity, logoBounds: opts?.logoBounds })
+    },
   };
 }
 

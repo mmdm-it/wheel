@@ -113,10 +113,18 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   const MAGNIFIER_RADIUS_RATIO = 0.060;
   const magnifierRadius = SSd * MAGNIFIER_RADIUS_RATIO;
   
+  // Get logo bounds if available (volume-specific)
+  const logoBounds = options.logoBounds || null;
+  
   const cpuaTopY = topMargin;
-  const cpuaRightX = viewport.width - rightMargin;
+  let cpuaRightX = viewport.width - rightMargin;
   const cpuaBottomY = Math.min(viewport.height, magnifierPos.y - (1.5 * magnifierRadius));
   const cpuaLeftX = 0;
+  
+  // Crop right edge if logo is present
+  if (logoBounds) {
+    cpuaRightX = Math.min(cpuaRightX, logoBounds.left - rightMargin);
+  }
   
   // CPUA center: x = center of bottom edge, y = center of right edge
   const cpuaCenterX = (cpuaLeftX + cpuaRightX) / 2;
