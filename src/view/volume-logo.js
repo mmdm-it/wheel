@@ -83,8 +83,8 @@ export class VolumeLogo {
     // Position so right edge of image touches the right margin boundary
     // Right edge of CPUA: width - margin
     // Image right edge should be at: centerX + logoHalfWidth = width - margin
-    // Shift 20% right to account for padding in image file
-    const paddingAdjustment = logoWidth * 0.20;
+    // Shift 12% right to account for padding in image file
+    const paddingAdjustment = logoWidth * 0.12;
     const centerX = this.viewport.width - margin - logoHalfWidth + paddingAdjustment;
     const centerY = margin + logoHalfHeight;
     
