@@ -34,25 +34,25 @@ export class VolumeLogo {
     const radius = shorterSide * 0.12;
     const margin = shorterSide * 0.03;
     
-    // Logo is wider than circle
+    // Square box size (use logo width for both dimensions)
     const logoScaleFactor = 1.8;
-    const logoWidth = radius * 2 * logoScaleFactor;
-    const logoHalfWidth = logoWidth / 2;
+    const boxSize = radius * 2 * logoScaleFactor;
+    const boxHalfSize = boxSize / 2;
     
     // Position from top-left origin (SVG default)
-    const centerX = this.viewport.width - logoHalfWidth - margin;
-    const centerY = radius + margin;
+    const centerX = this.viewport.width - boxHalfSize - margin;
+    const centerY = boxHalfSize + margin;
     
     return {
       centerX,
       centerY,
       radius,
-      logoWidth,
-      // Rectangular bounds for intersection
-      left: centerX - logoHalfWidth,
-      right: centerX + logoHalfWidth,
-      top: centerY - radius,
-      bottom: centerY + radius
+      boxSize,
+      // Square bounds for intersection
+      left: centerX - boxHalfSize,
+      right: centerX + boxHalfSize,
+      top: centerY - boxHalfSize,
+      bottom: centerY + boxHalfSize
     };
   }
 
