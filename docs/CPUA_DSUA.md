@@ -4,17 +4,18 @@
 
 This document defines the mathematical formulae and calculations used to create two critical boundary areas in the Wheel interface:
 
-- **DSUA** (Detail Sector Usable Area): The full rectangular region available for Detail Sector content
-- **CPUA** (Child Pyramid Usable Area): The area available for spiral node layout, which is DSUA minus the logo exclusion zone
+- **DSUA** (Detail Sector Usable Area): A rectangular region clipped by the Focus Ring's inner arc, creating an arc-bounded trapezoid
+- **CPUA** (Child Pyramid Usable Area): The area available for spiral node layout, which is DSUA minus the logo exclusion zone (when present)
 
 ## Terminology
 
 | Term | Definition |
 |------|------------|
-| DSUA | Detail Sector Usable Area - full rectangular area |
+| DSUA | Detail Sector Usable Area - arc-bounded trapezoid (rectangle clipped by Focus Ring) |
 | CPUA | Child Pyramid Usable Area - DSUA minus logo exclusion |
 | SSd | Shorter Side dimension (minimum of viewport width/height) |
 | Focus Ring | The circular navigation ring centered at (hubX, hubY) |
+| Arc-bounded trapezoid | A quadrilateral with three straight edges and one arc edge |
 
 ## Viewport Coordinate System
 
@@ -60,7 +61,7 @@ const magnifierPos = getMagnifierPosition(viewport);
 
 ## DSUA (Detail Sector Usable Area)
 
-DSUA is the **full rectangular area** available for Detail Sector content.
+DSUA is an **arc-bounded trapezoid** - a rectangular region that is clipped by the circular arc of the Focus Ring's inner edge. This creates a shape with three straight edges (left, top, right/bottom) and one curved edge (the Focus Ring arc).
 
 ### Boundary Formulae
 
@@ -93,6 +94,13 @@ const clipRadius = innerRadius;  // 98% of Focus Ring radius
 **Result**: DSUA is the intersection of:
 1. Rectangle from (dsuaLeftX, dsuaTopY) to (dsuaRightX, dsuaBottomY)
 2. Circle centered at (hubX, hubY) with radius = 98% of Focus Ring radius
+
+**Geometric Shape**: Arc-bounded trapezoid - a quadrilateral with:
+- **Left edge**: Vertical line at x = dsuaLeftX
+- **Top edge**: Horizontal line at y = dsuaTopY  
+- **Right edge**: Vertical line at x = dsuaRightX
+- **Bottom edge**: Either horizontal line at y = dsuaBottomY (if below arc) or clipped by the circular arc
+- **Arc edge**: Portion of circle that intersects the rectangle, typically on the right/bottom quadrant
 
 ## Logo Exclusion Zone
 
@@ -214,34 +222,37 @@ const spiralCenterY = cpuaCenterY;
 ### Console Commands
 
 ```javascript
-showDetailSectorBounds()   // Display DSUA (blue rectangle)
+showDetailSectorBounds()   // Display DSUA (blue arc-bounded trapezoid)
 hideDetailSectorBounds()   // Hide DSUA
 
-showPyramidBounds()        // Display CPUA (red L-shape)
+showPyramidBounds()        // Display CPUA (red arc-bounded L-shape or trapezoid)
 hidePyramidBounds()        // Hide CPUA
 ```
 
 ### Visual Indicators
 
 | Element | Color | Opacity | Pattern | Meaning |
-|---------|-------|---------|---------|---------|
-| DSUA fill | Blue | 0.1 | Solid | Full Detail Sector area |
-| DSUA outline | Blue | 1.0 | Dashed (5,5) | DSUA boundary |
-| CPUA fill | Red | 0.2 | Solid | Child Pyramid usable area |
+|---------|-------|---------|---------|---------|------|
+| DSUA fill | Blue | 0.1 | Solid | Arc-bounded trapezoid area |
+| DSUA outline | Blue | 1.0 | Dashed (5,5) | DSUA rectangular bounds |
+| CPUA fill | Red | 0.2 | Solid | Arc-bounded (L-shape if logo) |
 | CPUA outline | Red | 1.0 | Solid | CPUA boundary |
 | Logo exclusion | Orange | 1.0 | Dashed (5,5) | Logo square bounds |
-| Clip circle | Blue/Red | 1.0 | Dashed (8,4) | Focus Ring inner edge |
+| Clip circle | Blue/Red | 1.0 | Dashed (8,4) | Focus Ring arc (curved edge) |
 
 ## Key Relationships
 
 ```
-DSUA = Full rectangular area (clipped by Focus Ring)
+DSUA = Arc-bounded trapezoid (rectangle ∩ circular arc)
+     = Rectangular bounds clipped by Focus Ring inner circle
 
 If logo present:
   CPUA = DSUA - Logo Exclusion Square
+       = Arc-bounded L-shape
   
 If no logo:
   CPUA = DSUA
+       = Arc-bounded trapezoid
 
 Area of logo exclusion:
   logoArea = boxSize²
@@ -300,8 +311,9 @@ dsuaTopY = 0 + 32.4 = 32.4px
 dsuaRightX = 1920 - 32.4 = 1887.6px
 dsuaBottomY = min(1080, 972 - 1.5×64.8) = min(1080, 874.8) = 874.8px
 
-DSUA rectangle: (0, 32.4) to (1887.6, 874.8)
+DSUA base rectangle: (0, 32.4) to (1887.6, 874.8)
 Clipped by circle at (960, 540) with radius 423.36px (98% of 432)
+Result: Arc-bounded trapezoid with curved right/bottom edge
 ```
 
 Calculate Logo Exclusion:
@@ -323,8 +335,10 @@ Logo exclusion square:
 
 Calculate CPUA:
 ```
-CPUA = L-shaped path from DSUA with upper-right corner removed
+CPUA = Arc-bounded L-shape
+     = DSUA (arc-bounded trapezoid) with upper-right logo square removed
 Exclusion removes area from (1514.35, 32.4) to (1887.6, 405.65)
+Result: L-shaped region with one curved edge (the Focus Ring arc)
 ```
 
 ---
