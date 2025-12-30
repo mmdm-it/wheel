@@ -50,13 +50,17 @@ export function showPyramidBounds() {
   const marginPercent = 0.03;
   const topMargin = SSd * marginPercent;
   const rightMargin = SSd * marginPercent;
+  
+  // Magnifier radius for bottom margin calculation
+  const MAGNIFIER_RADIUS_RATIO = 0.060;
+  const magnifierRadius = SSd * MAGNIFIER_RADIUS_RATIO;
 
   // Apply margins
   const effectiveTopY = topY + topMargin;
   const effectiveRightX = rightX - rightMargin;
   
-  // Crop CPUA at magnifier Y position (don't extend below magnifier)
-  const effectiveBottomY = Math.min(bottomY, magnifierPos.y);
+  // Crop CPUA at magnifier Y position, plus additional 1.5 * magnifier radius margin
+  const effectiveBottomY = Math.min(bottomY, magnifierPos.y - (1.5 * magnifierRadius));
 
   // Create diagnostic group
   const diagGroup = document.createElementNS(SVG_NS, 'g');
