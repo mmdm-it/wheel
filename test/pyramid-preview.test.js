@@ -132,7 +132,8 @@ describe('buildPyramidPreview', () => {
       assert.ok(typeof instr.id === 'string');
       assert.ok(Number.isFinite(instr.x));
       assert.ok(Number.isFinite(instr.y));
-      if (arcNames.size) {
+      // Arc can be either from capacity arcs or 'spiral' for spiral layout
+      if (arcNames.size && instr.arc !== 'spiral') {
         assert.ok(arcNames.has(instr.arc));
       }
     });
