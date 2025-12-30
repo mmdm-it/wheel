@@ -164,11 +164,35 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   }
 
   let angle = Math.PI; // start after half a turn
+  // Helper function to check if point is within logo exclusion area
+  function isInLogoExclusion(x, y) {
+    if (!logoBounds) return false;
+    return x >= logoBounds.left && x <= logoBounds.right &&
+           y >= logoBounds.top && y <= logoBounds.bottom;
+  }
+
   const placements = [];
+  let skipped = 0;
   for (let i = 0; i < n; i++) {
     const r = b * angle;
     const x = spiralCenterX + r * Math.cos(spiralCenterAngle + angle);
     const y = spiralCenterY + r * Math.sin(spiralCenterAngle + angle);
+    
+    // Check if node center is within logo exclusion square
+    if (isInLogoExclusion(x, y)) {
+      // Skip this position, advance to next theta
+      skipped++;
+      angle = findNextTheta(b, angle, desiredGap);
+      i--; // Don't consume a sibling for this position
+      
+      // Safety: prevent infinite loop if we can't find valid positions
+      if (skipped > n * 10) {
+        console.warn('[ChildPyramid] Too many skipped positions, stopping placement');
+        break;
+      }
+      continue;
+    }
+    
     placements.push({
       item: siblings[i],
       x,

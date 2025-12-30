@@ -117,30 +117,6 @@ export function showPyramidBounds() {
   effectiveRect.setAttribute('stroke-width', '2');
   diagGroup.appendChild(effectiveRect);
 
-  // If logo is present, draw green overlay box showing logo exclusion area
-  if (logoBounds) {
-    const logoRect = document.createElementNS(SVG_NS, 'rect');
-    logoRect.setAttribute('x', logoBounds.left);
-    logoRect.setAttribute('y', logoBounds.top);
-    logoRect.setAttribute('width', logoBounds.right - logoBounds.left);
-    logoRect.setAttribute('height', logoBounds.bottom - logoBounds.top);
-    logoRect.setAttribute('fill', 'green');
-    logoRect.setAttribute('fill-opacity', '0.3');
-    logoRect.setAttribute('stroke', 'green');
-    logoRect.setAttribute('stroke-width', '2');
-    diagGroup.appendChild(logoRect);
-    
-    // Add label for logo area
-    const logoLabel = document.createElementNS(SVG_NS, 'text');
-    logoLabel.setAttribute('x', logoBounds.left + 10);
-    logoLabel.setAttribute('y', logoBounds.top + 20);
-    logoLabel.setAttribute('fill', 'green');
-    logoLabel.setAttribute('font-size', '12');
-    logoLabel.setAttribute('font-weight', 'bold');
-    logoLabel.textContent = 'LOGO AREA';
-    diagGroup.appendChild(logoLabel);
-  }
-
   // Mark ring center with X
   const centerMarkerSize = 15;
   const centerX1 = document.createElementNS(SVG_NS, 'line');
