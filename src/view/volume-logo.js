@@ -78,10 +78,13 @@ export class VolumeLogo {
     const logoWidth = radius * 2 * logoScaleFactor;
     const logoHeight = logoWidth / logoAspectRatio;
     const logoHalfWidth = logoWidth / 2;
+    const logoHalfHeight = logoHeight / 2;
     
-    // Position in upper right corner (top-left origin)
-    const centerX = this.viewport.width - logoHalfWidth - margin;
-    const centerY = radius + margin;
+    // Position so right edge of image touches the right margin boundary
+    // Right edge of CPUA: width - margin
+    // Image right edge should be at: centerX + logoHalfWidth = width - margin
+    const centerX = this.viewport.width - margin - logoHalfWidth;
+    const centerY = margin + logoHalfHeight;
     
     console.log('[VolumeLogo] Rendering logo:', {
       viewport: { width: this.viewport.width, height: this.viewport.height },
