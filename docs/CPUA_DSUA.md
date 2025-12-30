@@ -4,18 +4,18 @@
 
 This document defines the mathematical formulae and calculations used to create two critical boundary areas in the Wheel interface:
 
-- **DSUA** (Detail Sector Usable Area): A right trapezoid whose non-perpendicular (non-height) leg is a circular arc
+- **DSUA** (Detail Sector Usable Area): A right trapezoid whose non-perpendicular (non-height) leg is a convex circular arc
 - **CPUA** (Child Pyramid Usable Area): The area available for spiral node layout, which is DSUA minus the logo exclusion zone (when present)
 
 ## Terminology
 
 | Term | Definition |
 |------|------------|
-| DSUA | Detail Sector Usable Area - right trapezoid with arc leg |
+| DSUA | Detail Sector Usable Area - right trapezoid with convex arc leg |
 | CPUA | Child Pyramid Usable Area - DSUA minus logo exclusion |
 | SSd | Shorter Side dimension (minimum of viewport width/height) |
 | Focus Ring | The circular navigation ring centered at (hubX, hubY) |
-| Right trapezoid with arc leg | A trapezoid with three straight edges (two perpendicular) and one circular arc edge |
+| Right trapezoid with arc leg | A trapezoid with three straight edges (two perpendicular) and one convex circular arc edge |
 
 ## Viewport Coordinate System
 
@@ -61,7 +61,7 @@ const magnifierPos = getMagnifierPosition(viewport);
 
 ## DSUA (Detail Sector Usable Area)
 
-DSUA is a **right trapezoid whose non-perpendicular (non-height) leg is a circular arc**. It is formed by clipping a rectangular region with the Focus Ring's inner circular edge. The shape has three straight edges and one arc edge.
+DSUA is a **right trapezoid whose non-perpendicular (non-height) leg is a convex circular arc**. It is formed by intersecting a rectangular region with the Focus Ring's inner circular edge. The arc curves **outward** from what would be a simple rectangular boundary, enlarging the usable area beyond the base rectangle. The shape has three straight edges and one convex arc edge.
 
 ### Boundary Formulae
 
@@ -95,12 +95,13 @@ const clipRadius = innerRadius;  // 98% of Focus Ring radius
 1. Rectangle from (dsuaLeftX, dsuaTopY) to (dsuaRightX, dsuaBottomY)
 2. Circle centered at (hubX, hubY) with radius = 98% of Focus Ring radius
 
-**Geometric Shape**: Right trapezoid with arc leg - a quadrilateral with:
+**Geometric Shape**: Right trapezoid with convex arc leg - a quadrilateral with:
 - **Left edge** (height): Vertical line at x = dsuaLeftX (perpendicular to top/bottom)
 - **Top edge** (base): Horizontal line at y = dsuaTopY (perpendicular to left)
 - **Right edge**: Vertical line at x = dsuaRightX (perpendicular to top, parallel to left)
-- **Arc leg** (non-perpendicular): Circular arc from Focus Ring that replaces what would be the bottom edge
-- The arc typically intersects the rectangle on the right/bottom quadrant
+- **Arc leg** (non-perpendicular): Convex circular arc from Focus Ring that extends beyond what would be the bottom edge
+- The arc curves **outward**, bulging away from the rectangular bounds, enlarging the shape
+- The arc typically extends into the right/bottom quadrant beyond the base rectangle
 
 ## Logo Exclusion Zone
 
@@ -243,16 +244,17 @@ hidePyramidBounds()        // Hide CPUA
 ## Key Relationships
 
 ```
-DSUA = Right trapezoid with arc leg (rectangle ∩ circular arc)
-     = Rectangular bounds clipped by Focus Ring inner circle
+DSUA = Right trapezoid with convex arc leg (rectangle ∩ circular arc)
+     = Base rectangular bounds extended by Focus Ring inner circle
+     = Larger than the base rectangle due to outward-curving arc
 
 If logo present:
   CPUA = DSUA - Logo Exclusion Square
-       = L-shaped region with arc leg
+       = L-shaped region with convex arc leg
   
 If no logo:
   CPUA = DSUA
-       = Right trapezoid with arc leg
+       = Right trapezoid with convex arc leg
 
 Area of logo exclusion:
   logoArea = boxSize²
@@ -312,8 +314,8 @@ dsuaRightX = 1920 - 32.4 = 1887.6px
 dsuaBottomY = min(1080, 972 - 1.5×64.8) = min(1080, 874.8) = 874.8px
 
 DSUA base rectangle: (0, 32.4) to (1887.6, 874.8)
-Clipped by circle at (960, 540) with radius 423.36px (98% of 432)
-Result: Right trapezoid with arc leg replacing the right/bottom edge
+Intersected with circle at (960, 540) with radius 423.36px (98% of 432)
+Result: Right trapezoid with convex arc leg extending beyond the base rectangle's right/bottom edge
 ```
 
 Calculate Logo Exclusion:
@@ -335,10 +337,10 @@ Logo exclusion square:
 
 Calculate CPUA:
 ```
-CPUA = L-shaped region with arc leg
-     = DSUA (right trapezoid with arc leg) with upper-right logo square removed
+CPUA = L-shaped region with convex arc leg
+     = DSUA (right trapezoid with convex arc leg) with upper-right logo square removed
 Exclusion removes area from (1514.35, 32.4) to (1887.6, 405.65)
-Result: L-shaped region where the non-perpendicular leg is the Focus Ring arc
+Result: L-shaped region where the non-perpendicular leg is the convex Focus Ring arc
 ```
 
 ---
