@@ -571,6 +571,8 @@
         pyramidAdapter: adapter,
         onSelectSecondary
       });
+      // Expose app to window for console API
+      window.app = app;
       if (options.dimensionEnabled && app?.setBlur) {
         app.setBlur(true);
       }

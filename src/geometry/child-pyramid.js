@@ -181,12 +181,20 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
 if (typeof window !== 'undefined') {
   window.setSpiralExpansion = function(rate) {
     spiralConfig.expansionRate = rate;
-    console.log(`Spiral expansion rate set to ${rate}. Refresh to see changes.`);
+    console.log(`Spiral expansion rate set to ${rate}`);
+    // Trigger re-render if app exists
+    if (window.app?.choreographer) {
+      window.app.choreographer.onRender(window.app.choreographer.getRotation());
+    }
   };
 
   window.setSpiralGap = function(multiplier) {
     spiralConfig.gapMultiplier = multiplier;
-    console.log(`Spiral gap multiplier set to ${multiplier}. Refresh to see changes.`);
+    console.log(`Spiral gap multiplier set to ${multiplier}`);
+    // Trigger re-render if app exists
+    if (window.app?.choreographer) {
+      window.app.choreographer.onRender(window.app.choreographer.getRotation());
+    }
   };
 
   window.getSpiralConfig = function() {
