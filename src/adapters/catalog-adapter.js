@@ -232,7 +232,7 @@ export const catalogAdapter = {
       if (catalogMode !== 'model') return false;
       if (!catalogRoot) return false;
       catalogMode = 'manufacturer';
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: true, showInner: true });
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       if (app?.setPrimaryItems) {
         const { items: rootItems, selectedIndex: rootSelected, preserveOrder: rootPreserve } = catalogRoot;
         app.setPrimaryItems(rootItems || [], rootSelected ?? 0, rootPreserve ?? false);

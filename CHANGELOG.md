@@ -1,8 +1,41 @@
 # Changelog
 
 ## [Unreleased]
-
+### Added
+- Spiral Child Pyramid node layout: nodes are now placed equidistantly along an Archimedean spiral using true arc-length spacing. This provides visually uniform node distribution for all child counts.
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
+
+
+## [3.7.5] - 2025-12-30
+
+### Changed
+- (Add changes here)
+
+
+## [3.7.4] - 2025-12-29
+
+### Changed
+- (Add changes here)
+
+
+## [3.7.3] - 2025-12-29
+
+### Changed
+- Child Pyramid node placement switched to a Cartesian grid (origin at top-left, offset by 0.2 * SSd).
+- Grid gap increased to 0.18 * SSd between columns and rows.
+- All child nodes are now included in the grid (no sampling or filtering).
+- Removed all polar/arc logic from pyramid node placement.
+
+## [3.7.2] - 2025-12-29
+
+### Changed
+- (Internal/test versions; see 3.7.3 for final grid/placement logic.)
+
+
+## [3.7.1] - 2025-12-29
+
+### Changed
+- Removed the temporary "CHILDREN (IN)" inner control and its handlers; parent button is the sole layer toggle.
 
 ## [3.7.0] - 2025-12-29
 

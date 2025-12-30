@@ -52,6 +52,21 @@ Single source of truth for UI state.
 - Inputs: `normalized data`, `layoutSpec`, `interaction state`.
 - Views are pure: state → DOM/SVG/Canvas instructions; no fetch/validation.
 - Geometry helpers provide positions/angles/paths; they take `layoutSpec` and viewport.
+
+### Spiral Child Pyramid Node Layout
+
+The Child Pyramid supports a spiral node layout mode, in which child nodes are placed equidistantly along an Archimedean spiral. This ensures visually uniform spacing between all nodes, regardless of their order or count.
+
+- **Spiral formula:** $r = a + b\theta$ (with $a=0$)
+- **Equidistant placement:** Node positions are computed so that the arc length along the spiral between consecutive nodes is constant. This is achieved by numerically solving for each node's angle $\theta_n$ such that the arc length $s(\theta_{n-1}, \theta_n) = d$, where $d$ is the desired gap.
+- **Arc length calculation:**
+    $$
+    s(\theta_0, \theta) = \frac{1}{2b} \left[ (b\theta) \sqrt{(b\theta)^2 + b^2} + b^2 \ln\left( b\theta + \sqrt{(b\theta)^2 + b^2} \right) \right] \Bigg|_{\theta_0}^{\theta}
+    $$
+- **Implementation:** The layout uses a root-finding algorithm (bisection) to solve for each $\theta_n$ given $\theta_{n-1}$ and the desired gap.
+- **Benefits:** This method guarantees true equidistant spacing along the spiral curve, improving visual consistency and layout quality for large or irregular child sets.
+
+Adapters and geometry helpers expose this layout as part of the `layoutSpec` contract, and it is selected automatically for appropriate volumes or node counts.
 - Theming: base tokens + per-volume tokens injected at render time; no inline styles/`!important`.
 
 ## Validation & Data Contracts

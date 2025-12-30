@@ -182,7 +182,11 @@
       const startup = root?.display_config?.focus_ring_startup || {};
       const arrangements = root?.display_config?.focus_ring_arrangements || {};
       const supplemental = await config.loadSupplemental(root, manifest, params);
-      const options = config.buildOptions({ params, startup, arrangements });
+      const debugFlag = params.get('debug') === '1' || localStorage.getItem('wheel-debug') === '1';
+      const options = {
+        ...config.buildOptions({ params, startup, arrangements }),
+        debug: debugFlag
+      };
       return { volume: resolvedVolume, config, manifest, root, options, supplemental };
     }
 
@@ -561,7 +565,6 @@
         secondarySelectedIndex: secondary.selectedIndex,
         contextOptions: { ...options, locale: resolvedLocale },
         onParentClick: parentHandler,
-        onChildrenClick: childrenHandler,
         pyramid: pyramidConfig,
         pyramidLayoutSpec: pyramidLayout,
         pyramidNormalized: adapterNormalized || normalized,

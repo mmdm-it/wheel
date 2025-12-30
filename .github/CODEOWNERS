@@ -1,0 +1,21 @@
+# Code owners for the Wheel project
+# These users/teams will be automatically requested for review when someone opens a PR
+
+# Default owners for everything in the repo
+* @mmdm-it
+
+# Core architecture and geometry
+/src/geometry/ @mmdm-it
+/src/navigation/ @mmdm-it
+/src/interaction/ @mmdm-it
+
+# Data schemas and manifests
+/data/ @mmdm-it
+/schemas/ @mmdm-it
+
+# CI/CD and workflows
+/.github/ @mmdm-it
+
+# Documentation
+/docs/ @mmdm-it
+*.md @mmdm-it

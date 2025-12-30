@@ -1,6 +1,6 @@
 import assert from 'assert/strict';
 import { describe, it } from 'node:test';
-import { getViewportInfo } from '../src/geometry/focus-ring-geometry.js';
+import { getViewportInfo, getMagnifierAngle } from '../src/geometry/focus-ring-geometry.js';
 import {
   calculatePyramidCapacity,
   sampleSiblings,
@@ -12,15 +12,17 @@ import {
 const mkSiblings = count => Array.from({ length: count }, (_, idx) => ({ id: `n-${idx}`, sort: idx }));
 
 describe('child-pyramid geometry', () => {
-  it('calculates higher capacity for square vs portrait viewports', () => {
-    const square = getViewportInfo(900, 900);
-    const portrait = getViewportInfo(720, 1280);
+  it('calculates capacity using magnifier->180deg window', () => {
+    const viewport = getViewportInfo(900, 900);
 
-    const squareCap = calculatePyramidCapacity({ width: square.width, height: square.height, ...square });
-    const portraitCap = calculatePyramidCapacity({ width: portrait.width, height: portrait.height, ...portrait });
+    const cap = calculatePyramidCapacity({ width: viewport.width, height: viewport.height, ...viewport });
+    const expectedStart = getMagnifierAngle(viewport);
+    const expectedRange = Math.PI - expectedStart;
 
-    assert.ok(squareCap.total > portraitCap.total, 'expected more capacity on square viewport');
-    assert.ok(squareCap.total >= 6, 'baseline capacity should be non-trivial');
+    assert.ok(cap.total >= 1, 'baseline capacity should be at least one node');
+    assert.ok(cap.angularRange > 0, 'angular range should be positive');
+    assert.ok(Math.abs(cap.cornerAngle - expectedStart) < 1e-9, 'start angle should align to magnifier angle');
+    assert.ok(Math.abs(cap.angularRange - expectedRange) < 1e-9, 'angular range should be magnifier->180deg');
   });
 
   it('samples siblings deterministically and keeps endpoints', () => {
@@ -41,22 +43,36 @@ describe('child-pyramid geometry', () => {
     assert.deepEqual(getCenterOutwardOrder(6), [2, 3, 1, 4, 0, 5]);
   });
 
-  it('places nodes with even angular spacing across arcs', () => {
+  it('places nodes in spiral pattern', () => {
     const viewport = getViewportInfo(1000, 1000);
     const capacity = calculatePyramidCapacity({ width: viewport.width, height: viewport.height, ...viewport }, { nodeRadius: 10, minAngularSpacingDeg: 6 });
-    const siblings = mkSiblings(capacity.total);
+    const siblings = mkSiblings(10);
     const placements = placePyramidNodes(siblings, { width: viewport.width, height: viewport.height, ...viewport }, { capacity });
 
     assert.equal(placements.length, siblings.length);
-    const angles = placements.map(p => p.angle).sort((a, b) => a - b);
-    const expectedStep = capacity.angularRange / (angles.length + 1);
-    const diffs = angles.slice(1).map((angle, idx) => angle - angles[idx]);
-    diffs.forEach(diff => {
-      assert.ok(Math.abs(diff - expectedStep) < expectedStep * 0.25, 'angles should be roughly evenly spaced');
+    // Verify all placements have valid coordinates
+    placements.forEach(p => {
+      assert.ok(Number.isFinite(p.x), 'x should be finite');
+      assert.ok(Number.isFinite(p.y), 'y should be finite');
+      assert.ok(Number.isFinite(p.angle), 'angle should be finite');
+      assert.equal(p.arc, 'spiral', 'arc should be spiral');
     });
   });
 
-  it('respects per-arc capacity when distributing placements', () => {
+  it('places nodes within viewport boundaries', () => {
+    const viewport = getViewportInfo(450, 450);
+    const capacity = calculatePyramidCapacity({ width: viewport.width, height: viewport.height, ...viewport });
+    const siblings = mkSiblings(Math.min(5, capacity.total || 5));
+    const placements = placePyramidNodes(siblings, { width: viewport.width, height: viewport.height, ...viewport }, { capacity });
+
+    // Verify placements are within viewport bounds
+    placements.forEach(p => {
+      assert.ok(p.x >= 0 && p.x <= viewport.width, `x (${p.x}) should be within viewport width (${viewport.width})`);
+      assert.ok(p.y >= 0 && p.y <= viewport.height, `y (${p.y}) should be within viewport height (${viewport.height})`);
+    });
+  });
+
+  it('places all nodes in spiral pattern', () => {
     const viewport = getViewportInfo(900, 900);
     const siblings = mkSiblings(5);
     const capacity = {
@@ -73,13 +89,11 @@ describe('child-pyramid geometry', () => {
 
     const placements = placePyramidNodes(siblings, { width: viewport.width, height: viewport.height, ...viewport }, { capacity });
 
-    const countsByArc = placements.reduce((acc, p) => {
-      acc[p.arc] = (acc[p.arc] || 0) + 1;
-      return acc;
-    }, {});
-
-    assert.equal(countsByArc.inner, 1);
-    assert.equal(countsByArc.middle, 1);
-    assert.equal(countsByArc.outer, 3);
+    // Verify all siblings are placed
+    assert.equal(placements.length, siblings.length);
+    // Spiral layout uses 'spiral' arc name
+    placements.forEach(p => {
+      assert.equal(p.arc, 'spiral');
+    });
   });
 });

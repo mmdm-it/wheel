@@ -14,11 +14,10 @@ export function calculatePyramidCapacity(viewport, options = {}) {
   const nodeRadius = options.nodeRadius ?? 12;
   const nodeGap = options.nodeGap ?? 8;
   const { radius, hubX, hubY } = getArcParameters(viewport);
-  const magnifierAngle = options.magnifierAngle ?? getMagnifierAngle(viewport);
-  const cornerAngle = Math.atan2(-viewport.height / 2 - hubY, viewport.width / 2 - hubX);
   const nodeSpacing = options.nodeSpacing ?? getNodeSpacing(viewport);
-  const windowRange = getViewportWindow(viewport, nodeSpacing).arcLength;
-  const angularRange = Math.min(Math.abs(cornerAngle - magnifierAngle), windowRange);
+  const magnifierAngle = options.magnifierAngle ?? getMagnifierAngle(viewport);
+  const cornerAngle = magnifierAngle;
+  const angularRange = Math.max(0, Math.PI - cornerAngle); // magnifier -> 180deg
   const nodeSpan = nodeRadius * 2 + nodeGap;
 
   const capacityPerArc = arcs.map(arc => {
@@ -87,39 +86,70 @@ const distributeAcrossArcs = (totalNodes, arcs) => {
 };
 
 export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
+    // Debug: log placement coordinates for visibility troubleshooting
+    if (typeof window !== 'undefined' && window.localStorage?.debug) {
+      setTimeout(() => {
+        console.info('[ChildPyramid] placements', placements.map(p => ({ x: p.x, y: p.y, radius: p.radius, angle: p.angle })));
+      }, 0);
+    }
   const siblings = Array.isArray(sampledSiblings) ? sampledSiblings : [];
   if (siblings.length === 0) return [];
 
-  const capacity = options.capacity ?? calculatePyramidCapacity(viewport, options);
-  const arcs = capacity?.arcs ?? options.arcs ?? DEFAULT_ARCS;
-  const { radius, hubX, hubY } = getArcParameters(viewport);
-  const magnifierAngle = capacity?.magnifierAngle ?? options.magnifierAngle ?? getMagnifierAngle(viewport);
-  const cornerAngle = capacity?.cornerAngle ?? Math.atan2(-viewport.height / 2 - hubY, viewport.width / 2 - hubX);
-  const angularRange = capacity?.angularRange ?? Math.abs(cornerAngle - magnifierAngle);
-  const direction = magnifierAngle < cornerAngle ? 1 : -1;
-  const angleStep = angularRange / (siblings.length + 1);
-  const counts = distributeAcrossArcs(siblings.length, arcs);
-  const ordering = getCenterOutwardOrder(siblings.length);
+  // Spiral placement, polar coordinates, centered at hub
+  const { hubX, hubY, radius: focusRadius } = getArcParameters(viewport);
+  const magnifierAngle = getMagnifierAngle(viewport);
+  // Spiral center: at (hubX, hubY) plus offset at angle halfway between magnifier and 180°, radius 0.7*focusRadius
+  const spiralCenterAngle = (magnifierAngle + Math.PI) / 2;
+  // Place spiral center at viewport center (guaranteed visible)
+  const spiralCenterX = viewport.width / 2;
+  const spiralCenterY = viewport.height / 2;
+  const n = siblings.length;
+  // Use a fixed node radius and gap based on viewport size for visibility
+  const nodeRadius = 0.04 * viewport.SSd;
+  const desiredGap = 2.4 * nodeRadius * 2.5;
+  // Archimedean spiral: r = a + b*theta (here a = 0)
+  const maxTurns = 2.5;
+  const maxTheta = maxTurns * 2 * Math.PI;
+  const b = (0.38 * Math.min(viewport.width, viewport.height)) / maxTheta;
 
-  const placements = [];
-  let siblingCursor = 0;
-  counts.forEach(arc => {
-    for (let i = 0; i < arc.count; i += 1) {
-      const orderIndex = ordering[siblingCursor];
-      const angle = magnifierAngle + direction * ((siblingCursor + 1) * angleStep);
-      const radiusAtArc = radius * arc.radiusRatio;
-      const item = siblings[orderIndex];
-      placements.push({
-        item,
-        angle,
-        arc: arc.name ?? `arc-${placements.length}`,
-        radius: radiusAtArc,
-        x: hubX + radiusAtArc * Math.cos(angle),
-        y: hubY + radiusAtArc * Math.sin(angle)
-      });
-      siblingCursor += 1;
+  // Arc length from theta0 to theta1 for Archimedean spiral (a=0):
+  function spiralArcLength(b, theta0, theta1) {
+    function F(x) {
+      return x * Math.sqrt(x * x + b * b) + b * b * Math.log(x + Math.sqrt(x * x + b * b));
     }
-  });
+    return (F(b * theta1) - F(b * theta0)) / (2 * b);
+  }
+
+  // Find theta2 so that arc length from theta1 to theta2 is desiredGap
+  function findNextTheta(b, theta1, gap) {
+    let low = theta1, high = theta1 + 2 * Math.PI;
+    while (high - low > 1e-6) {
+      let mid = (low + high) / 2;
+      let s = spiralArcLength(b, theta1, mid);
+      if (s < gap) low = mid;
+      else high = mid;
+    }
+    return (low + high) / 2;
+  }
+
+  let angle = Math.PI; // start after half a turn
+  const placements = [];
+  for (let i = 0; i < n; i++) {
+    const r = b * angle;
+    const x = spiralCenterX + r * Math.cos(spiralCenterAngle + angle);
+    const y = spiralCenterY + r * Math.sin(spiralCenterAngle + angle);
+    placements.push({
+      item: siblings[i],
+      x,
+      y,
+      angle: spiralCenterAngle + angle,
+      arc: 'spiral',
+      radius: nodeRadius
+    });
+    if (i < n - 1) {
+      angle = findNextTheta(b, angle, desiredGap);
+    }
+  }
 
   return placements;
 }
