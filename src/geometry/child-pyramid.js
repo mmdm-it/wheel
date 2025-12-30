@@ -10,8 +10,8 @@ const toRadians = deg => (deg * Math.PI) / 180;
 
 // Spiral parameters (adjustable via console)
 let spiralConfig = {
-  expansionRate: 0.024,  // Controls how quickly spiral expands radially (b parameter)
-  gapMultiplier: 2.4 * 2.5  // Spacing between nodes (multiple of node diameter)
+  expansionRate: 0.03,  // Controls how quickly spiral expands radially (b parameter)
+  gapMultiplier: 3  // Spacing between nodes (multiple of node diameter)
 };
 
 export function calculatePyramidCapacity(viewport, options = {}) {
