@@ -30,13 +30,11 @@ export function showPyramidBounds() {
   const arcParams = getArcParameters(viewport);
   const magnifierAngle = getMagnifierAngle(viewport);
 
-  // Viewport bounds in SVG coordinates (origin at center)
-  const halfWidth = viewport.width / 2;
-  const halfHeight = viewport.height / 2;
-  const topY = -halfHeight;
-  const rightX = halfWidth;
-  const bottomY = halfHeight;
-  const leftX = -halfWidth;
+  // SVG uses top-left origin (not centered), so coordinates are positive
+  const topY = 0;
+  const rightX = viewport.width;
+  const bottomY = viewport.height;
+  const leftX = 0;
 
   // Focus Ring parameters
   const ringCenterX = arcParams.hubX;
@@ -66,7 +64,7 @@ export function showPyramidBounds() {
   arcCircle.setAttribute('cy', ringCenterY);
   arcCircle.setAttribute('r', innerRadius);
   arcCircle.setAttribute('fill', 'none');
-  arcCircle.setAttribute('stroke', 'lime');
+  arcCircle.setAttribute('stroke', 'red');
   arcCircle.setAttribute('stroke-width', '2');
   arcCircle.setAttribute('stroke-dasharray', '8,4');
   diagGroup.appendChild(arcCircle);
@@ -78,7 +76,7 @@ export function showPyramidBounds() {
   effectiveRect.setAttribute('width', effectiveRightX - leftX);
   effectiveRect.setAttribute('height', bottomY - effectiveTopY);
   effectiveRect.setAttribute('fill', 'none');
-  effectiveRect.setAttribute('stroke', 'lime');
+  effectiveRect.setAttribute('stroke', 'red');
   effectiveRect.setAttribute('stroke-width', '2');
   diagGroup.appendChild(effectiveRect);
 
@@ -89,7 +87,7 @@ export function showPyramidBounds() {
   centerX1.setAttribute('y1', ringCenterY - centerMarkerSize);
   centerX1.setAttribute('x2', ringCenterX + centerMarkerSize);
   centerX1.setAttribute('y2', ringCenterY + centerMarkerSize);
-  centerX1.setAttribute('stroke', 'lime');
+  centerX1.setAttribute('stroke', 'red');
   centerX1.setAttribute('stroke-width', '2');
   diagGroup.appendChild(centerX1);
 
@@ -98,7 +96,7 @@ export function showPyramidBounds() {
   centerX2.setAttribute('y1', ringCenterY + centerMarkerSize);
   centerX2.setAttribute('x2', ringCenterX + centerMarkerSize);
   centerX2.setAttribute('y2', ringCenterY - centerMarkerSize);
-  centerX2.setAttribute('stroke', 'lime');
+  centerX2.setAttribute('stroke', 'red');
   centerX2.setAttribute('stroke-width', '2');
   diagGroup.appendChild(centerX2);
 
@@ -133,13 +131,13 @@ export function showPyramidBounds() {
     marker.setAttribute('cx', pt.x);
     marker.setAttribute('cy', pt.y);
     marker.setAttribute('r', 6);
-    marker.setAttribute('fill', 'lime');
+    marker.setAttribute('fill', 'red');
     diagGroup.appendChild(marker);
 
     const label = document.createElementNS(SVG_NS, 'text');
     label.setAttribute('x', pt.x + 10);
     label.setAttribute('y', pt.y + 5);
-    label.setAttribute('fill', 'lime');
+    label.setAttribute('fill', 'red');
     label.setAttribute('font-size', '12');
     label.textContent = `${pt.edge}(${pt.x.toFixed(0)},${pt.y.toFixed(0)})`;
     diagGroup.appendChild(label);
@@ -149,7 +147,7 @@ export function showPyramidBounds() {
   const centerLabel = document.createElementNS(SVG_NS, 'text');
   centerLabel.setAttribute('x', ringCenterX + 20);
   centerLabel.setAttribute('y', ringCenterY + 5);
-  centerLabel.setAttribute('fill', 'lime');
+  centerLabel.setAttribute('fill', 'red');
   centerLabel.setAttribute('font-size', '12');
   centerLabel.textContent = `CENTER(${ringCenterX.toFixed(0)},${ringCenterY.toFixed(0)})`;
   diagGroup.appendChild(centerLabel);
@@ -159,14 +157,14 @@ export function showPyramidBounds() {
   const magnifierLabel = document.createElementNS(SVG_NS, 'text');
   magnifierLabel.setAttribute('x', leftX + 10);
   magnifierLabel.setAttribute('y', effectiveTopY + 20);
-  magnifierLabel.setAttribute('fill', 'lime');
+  magnifierLabel.setAttribute('fill', 'red');
   magnifierLabel.setAttribute('font-size', '12');
   magnifierLabel.textContent = `Magnifier: ${magnifierDeg}°`;
   diagGroup.appendChild(magnifierLabel);
 
   svg.appendChild(diagGroup);
 
-  console.log('📐 Child Pyramid bounds diagnostic displayed (lime green)');
+  console.log('📐 Child Pyramid bounds diagnostic displayed (red)');
   console.log('   - Ring center:', `(${ringCenterX.toFixed(0)}, ${ringCenterY.toFixed(0)})`);
   console.log('   - Inner radius:', innerRadius.toFixed(0));
   console.log('   - Magnifier angle:', magnifierDeg + '°');
