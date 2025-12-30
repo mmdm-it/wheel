@@ -63,7 +63,10 @@ export class VolumeLogo {
   render(config) {
     this.clear();
 
-    if (!config) return;
+    if (!config) {
+      console.log('[VolumeLogo] No config provided');
+      return;
+    }
 
     const shorterSide = Math.min(this.viewport.width, this.viewport.height);
     const radius = shorterSide * 0.12;
@@ -79,6 +82,13 @@ export class VolumeLogo {
     // Position in upper right corner (top-left origin)
     const centerX = this.viewport.width - logoHalfWidth - margin;
     const centerY = radius + margin;
+    
+    console.log('[VolumeLogo] Rendering logo:', {
+      viewport: { width: this.viewport.width, height: this.viewport.height },
+      circle: { centerX, centerY, radius },
+      margin,
+      config
+    });
     
     // Create group
     this.group = document.createElementNS(SVG_NS, 'g');
@@ -96,6 +106,13 @@ export class VolumeLogo {
     this.circle.setAttribute('stroke-width', '1');
     this.group.appendChild(this.circle);
     
+    console.log('[VolumeLogo] Circle created:', {
+      cx: centerX,
+      cy: centerY,
+      r: radius,
+      fill: config.color_scheme?.detail_sector || '#362e6a'
+    });
+    
     // Create logo image or placeholder
     const logoBasePath = config.logo_base_path;
     const defaultImage = config.default_image;
@@ -104,6 +121,14 @@ export class VolumeLogo {
       const logoPath = logoBasePath + defaultImage + '.png';
       const logoX = centerX - (logoWidth / 2);
       const logoY = centerY - (logoHeight / 2);
+      
+      console.log('[VolumeLogo] Creating image:', {
+        path: logoPath,
+        x: logoX,
+        y: logoY,
+        width: logoWidth,
+        height: logoHeight
+      });
       
       this.logo = document.createElementNS(SVG_NS, 'image');
       this.logo.setAttribute('id', 'volume-logo-image');
@@ -115,13 +140,19 @@ export class VolumeLogo {
       this.logo.setAttribute('opacity', config.color_scheme?.detail_sector_opacity || '0.5');
       this.logo.style.pointerEvents = 'none';
       this.group.appendChild(this.logo);
+      
+      console.log('[VolumeLogo] Image element added to group');
+    } else {
+      console.log('[VolumeLogo] No logo image configured');
     }
     
     // Insert at beginning so it renders behind everything
     if (this.svgRoot.firstChild) {
       this.svgRoot.insertBefore(this.group, this.svgRoot.firstChild);
+      console.log('[VolumeLogo] Group inserted at beginning of SVG');
     } else {
       this.svgRoot.appendChild(this.group);
+      console.log('[VolumeLogo] Group appended to SVG');
     }
   }
 
