@@ -345,59 +345,30 @@ export function showDetailSectorBounds() {
   clipPath.appendChild(clipCircle);
   diagGroup.appendChild(clipPath);
 
-  // Create Detail Sector filled area (same shape as CPUA - DSUA minus logo)
-  if (logoBounds) {
-    // L-shaped area: excludes the logo square from upper-right
-    const dsPath = document.createElementNS(SVG_NS, 'path');
-    
-    const pathData = `
-      M ${leftX},${effectiveTopY}
-      L ${logoBounds.left},${effectiveTopY}
-      L ${logoBounds.left},${logoBounds.bottom}
-      L ${effectiveRightX},${logoBounds.bottom}
-      L ${effectiveRightX},${effectiveBottomY}
-      L ${leftX},${effectiveBottomY}
-      Z
-    `;
-    
-    dsPath.setAttribute('d', pathData);
-    dsPath.setAttribute('fill', 'blue');
-    dsPath.setAttribute('fill-opacity', '0.1');
-    dsPath.setAttribute('clip-path', `url(#${clipPathId})`);
-    diagGroup.appendChild(dsPath);
-    
-    // Draw outline of Detail Sector (L-shape)
-    const dsOutline = document.createElementNS(SVG_NS, 'path');
-    dsOutline.setAttribute('d', pathData);
-    dsOutline.setAttribute('fill', 'none');
-    dsOutline.setAttribute('stroke', 'blue');
-    dsOutline.setAttribute('stroke-width', '2');
-    dsOutline.setAttribute('stroke-dasharray', '5,5');
-    diagGroup.appendChild(dsOutline);
-  } else {
-    // No logo: simple rectangle
-    const filledRect = document.createElementNS(SVG_NS, 'rect');
-    filledRect.setAttribute('x', leftX);
-    filledRect.setAttribute('y', effectiveTopY);
-    filledRect.setAttribute('width', effectiveRightX - leftX);
-    filledRect.setAttribute('height', effectiveBottomY - effectiveTopY);
-    filledRect.setAttribute('fill', 'blue');
-    filledRect.setAttribute('fill-opacity', '0.1');
-    filledRect.setAttribute('clip-path', `url(#${clipPathId})`);
-    diagGroup.appendChild(filledRect);
-    
-    // Draw outline
-    const effectiveRect = document.createElementNS(SVG_NS, 'rect');
-    effectiveRect.setAttribute('x', leftX);
-    effectiveRect.setAttribute('y', effectiveTopY);
-    effectiveRect.setAttribute('width', effectiveRightX - leftX);
-    effectiveRect.setAttribute('height', effectiveBottomY - effectiveTopY);
-    effectiveRect.setAttribute('fill', 'none');
-    effectiveRect.setAttribute('stroke', 'blue');
-    effectiveRect.setAttribute('stroke-width', '2');
-    effectiveRect.setAttribute('stroke-dasharray', '5,5');
-    diagGroup.appendChild(effectiveRect);
-  }
+  // Create Detail Sector filled area (full rectangle - NO logo cutout)
+  // This is DSUA = full Detail Sector Usable Area
+  // CPUA (red) = DSUA minus logo exclusion square
+  const filledRect = document.createElementNS(SVG_NS, 'rect');
+  filledRect.setAttribute('x', leftX);
+  filledRect.setAttribute('y', effectiveTopY);
+  filledRect.setAttribute('width', effectiveRightX - leftX);
+  filledRect.setAttribute('height', effectiveBottomY - effectiveTopY);
+  filledRect.setAttribute('fill', 'blue');
+  filledRect.setAttribute('fill-opacity', '0.1');
+  filledRect.setAttribute('clip-path', `url(#${clipPathId})`);
+  diagGroup.appendChild(filledRect);
+  
+  // Draw outline
+  const effectiveRect = document.createElementNS(SVG_NS, 'rect');
+  effectiveRect.setAttribute('x', leftX);
+  effectiveRect.setAttribute('y', effectiveTopY);
+  effectiveRect.setAttribute('width', effectiveRightX - leftX);
+  effectiveRect.setAttribute('height', effectiveBottomY - effectiveTopY);
+  effectiveRect.setAttribute('fill', 'none');
+  effectiveRect.setAttribute('stroke', 'blue');
+  effectiveRect.setAttribute('stroke-width', '2');
+  effectiveRect.setAttribute('stroke-dasharray', '5,5');
+  diagGroup.appendChild(effectiveRect);
 
   // Draw the Focus Ring arc (inner edge with margin)
   const arcCircle = document.createElementNS(SVG_NS, 'circle');
@@ -423,7 +394,8 @@ export function showDetailSectorBounds() {
   svg.appendChild(diagGroup);
 
   console.log('📐 Detail Sector bounds diagnostic displayed (blue)');
-  console.log('   - Same shape as CPUA (red)');
+  console.log('   - Full rectangular area (DSUA)');
+  console.log('   - CPUA (red) = DSUA minus logo exclusion');
   console.log('   - Call hideDetailSectorBounds() to remove');
 }
 
