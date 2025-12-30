@@ -66,8 +66,8 @@ export function buildPyramidPreview({
   if (!Array.isArray(children) || children.length === 0) return [];
 
   const capacity = config.capacity ?? calculatePyramidCapacity(vp, config);
-  const sampler = config.sample ?? ((siblings, cap) => sampleSiblings(siblings, cap?.total ?? siblings.length));
-  const sampled = sampler(children, capacity);
+  const sampler = config.sample ?? null;
+  const sampled = sampler ? sampler(children, capacity) : children;
   if (!Array.isArray(sampled) || sampled.length === 0) return [];
 
   const placer = config.place ?? ((siblings, view, opts) => placePyramidNodes(siblings, view, { ...opts, capacity }));
