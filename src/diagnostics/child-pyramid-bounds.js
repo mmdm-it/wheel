@@ -8,7 +8,7 @@
  */
 
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
-import { getArcParameters, getMagnifierAngle } from '../geometry/focus-ring-geometry.js';
+import { getArcParameters, getMagnifierAngle, getMagnifierPosition } from '../geometry/focus-ring-geometry.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const DIAG_ID = 'childPyramidBoundsDiag';
@@ -29,6 +29,7 @@ export function showPyramidBounds() {
   const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
   const arcParams = getArcParameters(viewport);
   const magnifierAngle = getMagnifierAngle(viewport);
+  const magnifierPos = getMagnifierPosition(viewport);
 
   // SVG uses top-left origin (not centered), so coordinates are positive
   const topY = 0;
@@ -53,6 +54,9 @@ export function showPyramidBounds() {
   // Apply margins
   const effectiveTopY = topY + topMargin;
   const effectiveRightX = rightX - rightMargin;
+  
+  // Crop CPUA at magnifier Y position (don't extend below magnifier)
+  const effectiveBottomY = Math.min(bottomY, magnifierPos.y);
 
   // Create diagnostic group
   const diagGroup = document.createElementNS(SVG_NS, 'g');
@@ -76,7 +80,7 @@ export function showPyramidBounds() {
   filledRect.setAttribute('x', leftX);
   filledRect.setAttribute('y', effectiveTopY);
   filledRect.setAttribute('width', effectiveRightX - leftX);
-  filledRect.setAttribute('height', bottomY - effectiveTopY);
+  filledRect.setAttribute('height', effectiveBottomY - effectiveTopY);
   filledRect.setAttribute('fill', 'red');
   filledRect.setAttribute('fill-opacity', '0.2');
   filledRect.setAttribute('clip-path', `url(#${clipPathId})`);
@@ -98,7 +102,7 @@ export function showPyramidBounds() {
   effectiveRect.setAttribute('x', leftX);
   effectiveRect.setAttribute('y', effectiveTopY);
   effectiveRect.setAttribute('width', effectiveRightX - leftX);
-  effectiveRect.setAttribute('height', bottomY - effectiveTopY);
+  effectiveRect.setAttribute('height', effectiveBottomY - effectiveTopY);
   effectiveRect.setAttribute('fill', 'none');
   effectiveRect.setAttribute('stroke', 'red');
   effectiveRect.setAttribute('stroke-width', '2');
@@ -145,8 +149,8 @@ export function showPyramidBounds() {
     const sqrtRight = Math.sqrt(discRight);
     const y1 = ringCenterY - sqrtRight;
     const y2 = ringCenterY + sqrtRight;
-    if (y1 >= effectiveTopY && y1 <= bottomY) intersections.push({ x: effectiveRightX, y: y1, edge: 'right' });
-    if (y2 >= effectiveTopY && y2 <= bottomY && y2 !== y1) intersections.push({ x: effectiveRightX, y: y2, edge: 'right' });
+    if (y1 >= effectiveTopY && y1 <= effectiveBottomY) intersections.push({ x: effectiveRightX, y: y1, edge: 'right' });
+    if (y2 >= effectiveTopY && y2 <= effectiveBottomY && y2 !== y1) intersections.push({ x: effectiveRightX, y: y2, edge: 'right' });
   }
 
   // Mark intersection points
