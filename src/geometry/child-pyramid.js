@@ -125,10 +125,9 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   // Use a fixed node radius and gap based on viewport size for visibility
   const nodeRadius = 0.04 * viewport.SSd;
   const desiredGap = 2.4 * nodeRadius * 2.5;
-  // Archimedean spiral: r = a + b*theta (here a = 0)
-  const maxTurns = 2.5;
-  const maxTheta = maxTurns * 2 * Math.PI;
-  const b = (0.38 * Math.min(viewport.width, viewport.height)) / maxTheta;
+  // Archimedean spiral: r = b*theta
+  // Controls how quickly the spiral expands radially
+  const b = 0.024 * viewport.SSd;
 
   // Arc length from theta0 to theta1 for Archimedean spiral (a=0):
   function spiralArcLength(b, theta0, theta1) {
