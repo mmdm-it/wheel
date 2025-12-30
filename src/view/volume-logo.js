@@ -34,9 +34,10 @@ export class VolumeLogo {
     const radius = shorterSide * 0.12;
     const margin = shorterSide * 0.03;
     
-    // Square box size (use logo width for both dimensions)
+    // Square box size (80% of full logo size)
     const logoScaleFactor = 1.8;
-    const boxSize = radius * 2 * logoScaleFactor;
+    const fullSize = radius * 2 * logoScaleFactor;
+    const boxSize = fullSize * 0.80;
     const boxHalfSize = boxSize / 2;
     
     // Position from top-left origin (SVG default)
