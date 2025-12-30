@@ -62,12 +62,7 @@ export function showPyramidBounds() {
   
   // Apply margins
   const effectiveTopY = topY + topMargin;
-  let effectiveRightX = rightX - rightMargin;
-  
-  // If logo is present, crop right edge at logo's left boundary
-  if (logoBounds) {
-    effectiveRightX = Math.min(effectiveRightX, logoBounds.left - rightMargin);
-  }
+  const effectiveRightX = rightX - rightMargin;
   
   // Crop CPUA at magnifier Y position, plus additional 1.5 * magnifier radius margin
   const effectiveBottomY = Math.min(bottomY, magnifierPos.y - (1.5 * magnifierRadius));
@@ -89,41 +84,16 @@ export function showPyramidBounds() {
   clipPath.appendChild(clipCircle);
   diagGroup.appendChild(clipPath);
 
-  // Filled area - if logo present, create L-shape, otherwise single rectangle
-  if (logoBounds) {
-    // Bottom rectangle (full width below logo)
-    const filledBottom = document.createElementNS(SVG_NS, 'rect');
-    filledBottom.setAttribute('x', leftX);
-    filledBottom.setAttribute('y', logoBounds.bottom);
-    filledBottom.setAttribute('width', effectiveRightX - leftX);
-    filledBottom.setAttribute('height', effectiveBottomY - logoBounds.bottom);
-    filledBottom.setAttribute('fill', 'red');
-    filledBottom.setAttribute('fill-opacity', '0.2');
-    filledBottom.setAttribute('clip-path', `url(#${clipPathId})`);
-    diagGroup.appendChild(filledBottom);
-    
-    // Left portion (from top to logo bottom)
-    const filledLeft = document.createElementNS(SVG_NS, 'rect');
-    filledLeft.setAttribute('x', leftX);
-    filledLeft.setAttribute('y', effectiveTopY);
-    filledLeft.setAttribute('width', effectiveRightX - leftX);
-    filledLeft.setAttribute('height', logoBounds.bottom - effectiveTopY);
-    filledLeft.setAttribute('fill', 'red');
-    filledLeft.setAttribute('fill-opacity', '0.2');
-    filledLeft.setAttribute('clip-path', `url(#${clipPathId})`);
-    diagGroup.appendChild(filledLeft);
-  } else {
-    // No logo - single filled rectangle
-    const filledRect = document.createElementNS(SVG_NS, 'rect');
-    filledRect.setAttribute('x', leftX);
-    filledRect.setAttribute('y', effectiveTopY);
-    filledRect.setAttribute('width', effectiveRightX - leftX);
-    filledRect.setAttribute('height', effectiveBottomY - effectiveTopY);
-    filledRect.setAttribute('fill', 'red');
-    filledRect.setAttribute('fill-opacity', '0.2');
-    filledRect.setAttribute('clip-path', `url(#${clipPathId})`);
-    diagGroup.appendChild(filledRect);
-  }
+  // Filled area - simple rectangle clipped by circle
+  const filledRect = document.createElementNS(SVG_NS, 'rect');
+  filledRect.setAttribute('x', leftX);
+  filledRect.setAttribute('y', effectiveTopY);
+  filledRect.setAttribute('width', effectiveRightX - leftX);
+  filledRect.setAttribute('height', effectiveBottomY - effectiveTopY);
+  filledRect.setAttribute('fill', 'red');
+  filledRect.setAttribute('fill-opacity', '0.2');
+  filledRect.setAttribute('clip-path', `url(#${clipPathId})`);
+  diagGroup.appendChild(filledRect);
 
   // Draw the Focus Ring arc (inner edge with margin)
   const arcCircle = document.createElementNS(SVG_NS, 'circle');
@@ -137,40 +107,38 @@ export function showPyramidBounds() {
   diagGroup.appendChild(arcCircle);
 
   // Draw effective content boundary (with margins)
-  // If logo is present, draw an L-shape to exclude upper-right corner
+  const effectiveRect = document.createElementNS(SVG_NS, 'rect');
+  effectiveRect.setAttribute('x', leftX);
+  effectiveRect.setAttribute('y', effectiveTopY);
+  effectiveRect.setAttribute('width', effectiveRightX - leftX);
+  effectiveRect.setAttribute('height', effectiveBottomY - effectiveTopY);
+  effectiveRect.setAttribute('fill', 'none');
+  effectiveRect.setAttribute('stroke', 'red');
+  effectiveRect.setAttribute('stroke-width', '2');
+  diagGroup.appendChild(effectiveRect);
+
+  // If logo is present, draw green overlay box showing logo exclusion area
   if (logoBounds) {
-    // Bottom rectangle (full width below logo)
-    const bottomRect = document.createElementNS(SVG_NS, 'rect');
-    bottomRect.setAttribute('x', leftX);
-    bottomRect.setAttribute('y', logoBounds.bottom);
-    bottomRect.setAttribute('width', effectiveRightX - leftX);
-    bottomRect.setAttribute('height', effectiveBottomY - logoBounds.bottom);
-    bottomRect.setAttribute('fill', 'none');
-    bottomRect.setAttribute('stroke', 'red');
-    bottomRect.setAttribute('stroke-width', '2');
-    diagGroup.appendChild(bottomRect);
+    const logoRect = document.createElementNS(SVG_NS, 'rect');
+    logoRect.setAttribute('x', logoBounds.left);
+    logoRect.setAttribute('y', logoBounds.top);
+    logoRect.setAttribute('width', logoBounds.right - logoBounds.left);
+    logoRect.setAttribute('height', logoBounds.bottom - logoBounds.top);
+    logoRect.setAttribute('fill', 'green');
+    logoRect.setAttribute('fill-opacity', '0.3');
+    logoRect.setAttribute('stroke', 'green');
+    logoRect.setAttribute('stroke-width', '2');
+    diagGroup.appendChild(logoRect);
     
-    // Left rectangle (from top to logo bottom, stopping at logo left edge)
-    const leftRect = document.createElementNS(SVG_NS, 'rect');
-    leftRect.setAttribute('x', leftX);
-    leftRect.setAttribute('y', effectiveTopY);
-    leftRect.setAttribute('width', effectiveRightX - leftX);
-    leftRect.setAttribute('height', logoBounds.bottom - effectiveTopY);
-    leftRect.setAttribute('fill', 'none');
-    leftRect.setAttribute('stroke', 'red');
-    leftRect.setAttribute('stroke-width', '2');
-    diagGroup.appendChild(leftRect);
-  } else {
-    // No logo - draw simple rectangle
-    const effectiveRect = document.createElementNS(SVG_NS, 'rect');
-    effectiveRect.setAttribute('x', leftX);
-    effectiveRect.setAttribute('y', effectiveTopY);
-    effectiveRect.setAttribute('width', effectiveRightX - leftX);
-    effectiveRect.setAttribute('height', effectiveBottomY - effectiveTopY);
-    effectiveRect.setAttribute('fill', 'none');
-    effectiveRect.setAttribute('stroke', 'red');
-    effectiveRect.setAttribute('stroke-width', '2');
-    diagGroup.appendChild(effectiveRect);
+    // Add label for logo area
+    const logoLabel = document.createElementNS(SVG_NS, 'text');
+    logoLabel.setAttribute('x', logoBounds.left + 10);
+    logoLabel.setAttribute('y', logoBounds.top + 20);
+    logoLabel.setAttribute('fill', 'green');
+    logoLabel.setAttribute('font-size', '12');
+    logoLabel.setAttribute('font-weight', 'bold');
+    logoLabel.textContent = 'LOGO AREA';
+    diagGroup.appendChild(logoLabel);
   }
 
   // Mark ring center with X
