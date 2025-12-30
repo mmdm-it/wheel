@@ -84,7 +84,8 @@ export class VolumeLogo {
     // Right edge of CPUA: width - margin
     // Image right edge should be at: centerX + logoHalfWidth = width - margin
     const centerX = this.viewport.width - margin - logoHalfWidth;
-    const centerY = margin + logoHalfHeight;
+    // Y position: circle center stays at original position (radius + margin from top)
+    const centerY = radius + margin;
     
     console.log('[VolumeLogo] Rendering logo:', {
       viewport: { width: this.viewport.width, height: this.viewport.height },
