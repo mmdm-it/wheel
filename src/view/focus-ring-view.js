@@ -192,24 +192,6 @@ export class FocusRingView {
         while (this.pyramidFanLinesGroup.firstChild) this.pyramidFanLinesGroup.removeChild(this.pyramidFanLinesGroup.firstChild);
         while (this.pyramidNodesGroup.firstChild) this.pyramidNodesGroup.removeChild(this.pyramidNodesGroup.firstChild);
         while (this.pyramidLabelsGroup.firstChild) this.pyramidLabelsGroup.removeChild(this.pyramidLabelsGroup.firstChild);
-        if (options?.debug) {
-          // Log only the hub angle of the magnifier and the spiral center
-          const hubX = arcParams?.hubX ?? 0;
-          const hubY = arcParams?.hubY ?? 0;
-          // Magnifier angle (radians and degrees)
-          const magnifierAngle = options?.magnifierAngle ?? 0;
-          const magnifierAngleDeg = ((magnifierAngle * 180) / Math.PI + 360) % 360;
-          // Spiral center angle (radians and degrees)
-          // Use the same formula as in child-pyramid.js
-          const spiralCenterAngle = (magnifierAngle + Math.PI) / 2;
-          const spiralCenterAngleDeg = ((spiralCenterAngle * 180) / Math.PI + 360) % 360;
-          console.info('[FocusRingView] magnifier/spiral angles', {
-            magnifierAngleRad: magnifierAngle,
-            magnifierAngleDeg,
-            spiralCenterAngleRad: spiralCenterAngle,
-            spiralCenterAngleDeg
-          });
-        }
         pyramidInstructions.forEach(instr => {
           const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
           circle.setAttribute('class', 'child-pyramid-node');
@@ -286,17 +268,6 @@ export class FocusRingView {
         this.mirroredMagnifier.removeAttribute('display');
         const secIsRotating = Boolean(options?.secondary?.isRotating);
         this.mirroredMagnifier.classList.toggle('rotating', secIsRotating);
-        if (options.debug) {
-          console.info('[FocusRingView] mirrored magnifier', {
-            mirroredX,
-            mirroredY,
-            radius,
-            sourceX: magnifier.x,
-            sourceY: magnifier.y,
-            viewportHeight: viewport.height,
-            isBlurred
-          });
-        }
         if (this.mirroredMagnifierLabel) {
           this.mirroredMagnifierLabel.setAttribute('x', mirroredX);
           this.mirroredMagnifierLabel.setAttribute('y', mirroredY);
