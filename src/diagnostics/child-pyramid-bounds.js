@@ -307,7 +307,10 @@ export function showDetailSectorBounds() {
   const ringCenterY = arcParams.hubY;
   const ringRadius = arcParams.radius;
 
-  // Margins
+  // Inner radius with margin (98% of ring radius)
+  const innerRadius = ringRadius * 0.98;
+
+  // Dynamic margins based on SSd (3%)
   const SSd = viewport.SSd;
   const marginPercent = 0.03;
   const topMargin = SSd * marginPercent;
@@ -316,7 +319,12 @@ export function showDetailSectorBounds() {
   const MAGNIFIER_RADIUS_RATIO = 0.060;
   const magnifierRadius = SSd * MAGNIFIER_RADIUS_RATIO;
 
-  // Detail Sector area (placeholder - will be refined later)
+  // Get logo bounds if available
+  const logoBounds = (typeof window !== 'undefined' && window.volumeLogo) 
+    ? window.volumeLogo.getBounds() 
+    : null;
+
+  // Apply margins
   const effectiveTopY = topY + topMargin;
   const effectiveRightX = rightX - rightMargin;
   const effectiveBottomY = Math.min(bottomY, magnifierPos.y - (1.5 * magnifierRadius));
@@ -325,18 +333,82 @@ export function showDetailSectorBounds() {
   const diagGroup = document.createElementNS(SVG_NS, 'g');
   diagGroup.setAttribute('id', DETAIL_SECTOR_DIAG_ID);
 
-  // Blue rectangle showing Detail Sector bounds
-  const dsRect = document.createElementNS(SVG_NS, 'rect');
-  dsRect.setAttribute('x', leftX);
-  dsRect.setAttribute('y', effectiveTopY);
-  dsRect.setAttribute('width', effectiveRightX - leftX);
-  dsRect.setAttribute('height', effectiveBottomY - effectiveTopY);
-  dsRect.setAttribute('fill', 'blue');
-  dsRect.setAttribute('fill-opacity', '0.1');
-  dsRect.setAttribute('stroke', 'blue');
-  dsRect.setAttribute('stroke-width', '2');
-  dsRect.setAttribute('stroke-dasharray', '5,5');
-  diagGroup.appendChild(dsRect);
+  // Create clip path (same as CPUA - follows Focus Ring arc)
+  const clipPathId = 'detailSectorBoundsClip';
+  const clipPath = document.createElementNS(SVG_NS, 'clipPath');
+  clipPath.setAttribute('id', clipPathId);
+  
+  const clipCircle = document.createElementNS(SVG_NS, 'circle');
+  clipCircle.setAttribute('cx', ringCenterX);
+  clipCircle.setAttribute('cy', ringCenterY);
+  clipCircle.setAttribute('r', innerRadius);
+  clipPath.appendChild(clipCircle);
+  diagGroup.appendChild(clipPath);
+
+  // Create Detail Sector filled area (same shape as CPUA - DSUA minus logo)
+  if (logoBounds) {
+    // L-shaped area: excludes the logo square from upper-right
+    const dsPath = document.createElementNS(SVG_NS, 'path');
+    
+    const pathData = `
+      M ${leftX},${effectiveTopY}
+      L ${logoBounds.left},${effectiveTopY}
+      L ${logoBounds.left},${logoBounds.bottom}
+      L ${effectiveRightX},${logoBounds.bottom}
+      L ${effectiveRightX},${effectiveBottomY}
+      L ${leftX},${effectiveBottomY}
+      Z
+    `;
+    
+    dsPath.setAttribute('d', pathData);
+    dsPath.setAttribute('fill', 'blue');
+    dsPath.setAttribute('fill-opacity', '0.1');
+    dsPath.setAttribute('clip-path', `url(#${clipPathId})`);
+    diagGroup.appendChild(dsPath);
+    
+    // Draw outline of Detail Sector (L-shape)
+    const dsOutline = document.createElementNS(SVG_NS, 'path');
+    dsOutline.setAttribute('d', pathData);
+    dsOutline.setAttribute('fill', 'none');
+    dsOutline.setAttribute('stroke', 'blue');
+    dsOutline.setAttribute('stroke-width', '2');
+    dsOutline.setAttribute('stroke-dasharray', '5,5');
+    diagGroup.appendChild(dsOutline);
+  } else {
+    // No logo: simple rectangle
+    const filledRect = document.createElementNS(SVG_NS, 'rect');
+    filledRect.setAttribute('x', leftX);
+    filledRect.setAttribute('y', effectiveTopY);
+    filledRect.setAttribute('width', effectiveRightX - leftX);
+    filledRect.setAttribute('height', effectiveBottomY - effectiveTopY);
+    filledRect.setAttribute('fill', 'blue');
+    filledRect.setAttribute('fill-opacity', '0.1');
+    filledRect.setAttribute('clip-path', `url(#${clipPathId})`);
+    diagGroup.appendChild(filledRect);
+    
+    // Draw outline
+    const effectiveRect = document.createElementNS(SVG_NS, 'rect');
+    effectiveRect.setAttribute('x', leftX);
+    effectiveRect.setAttribute('y', effectiveTopY);
+    effectiveRect.setAttribute('width', effectiveRightX - leftX);
+    effectiveRect.setAttribute('height', effectiveBottomY - effectiveTopY);
+    effectiveRect.setAttribute('fill', 'none');
+    effectiveRect.setAttribute('stroke', 'blue');
+    effectiveRect.setAttribute('stroke-width', '2');
+    effectiveRect.setAttribute('stroke-dasharray', '5,5');
+    diagGroup.appendChild(effectiveRect);
+  }
+
+  // Draw the Focus Ring arc (inner edge with margin)
+  const arcCircle = document.createElementNS(SVG_NS, 'circle');
+  arcCircle.setAttribute('cx', ringCenterX);
+  arcCircle.setAttribute('cy', ringCenterY);
+  arcCircle.setAttribute('r', innerRadius);
+  arcCircle.setAttribute('fill', 'none');
+  arcCircle.setAttribute('stroke', 'blue');
+  arcCircle.setAttribute('stroke-width', '2');
+  arcCircle.setAttribute('stroke-dasharray', '8,4');
+  diagGroup.appendChild(arcCircle);
 
   // Label
   const label = document.createElementNS(SVG_NS, 'text');
@@ -351,6 +423,7 @@ export function showDetailSectorBounds() {
   svg.appendChild(diagGroup);
 
   console.log('📐 Detail Sector bounds diagnostic displayed (blue)');
+  console.log('   - Same shape as CPUA (red)');
   console.log('   - Call hideDetailSectorBounds() to remove');
 }
 
