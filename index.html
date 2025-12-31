@@ -176,9 +176,6 @@
         console.error('[wheel] volume validation failed', { errors: validation.errors, warnings: validation.warnings });
         throw new Error('Invalid volume manifest');
       }
-      if (validation.warnings.length) {
-        console.warn('[wheel] volume validation warnings', validation.warnings);
-      }
       const startup = root?.display_config?.focus_ring_startup || {};
       const arrangements = root?.display_config?.focus_ring_arrangements || {};
       const supplemental = await config.loadSupplemental(root, manifest, params);
@@ -490,6 +487,8 @@
         try {
           adapterNormalized = adapter.normalize(manifest);
           adapterLayoutSpec = adapter.layoutSpec(adapterNormalized, viewport);
+          // Attach manifest to adapter for logo configuration
+          adapter.manifest = manifest;
         } catch (err) {
           console.warn('[wheel] adapter layoutSpec failed, falling back to host config', err);
           adapterNormalized = null;
@@ -571,6 +570,8 @@
         pyramidAdapter: adapter,
         onSelectSecondary
       });
+      // Expose app to window for console API
+      window.app = app;
       if (options.dimensionEnabled && app?.setBlur) {
         app.setBlur(true);
       }

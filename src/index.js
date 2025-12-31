@@ -3,9 +3,11 @@ import { NavigationState } from './navigation/navigation-state.js';
 import { buildBibleVerseCousinChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
 import { FocusRingView } from './view/focus-ring-view.js';
+import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
 import { buildPyramidPreview } from './core/pyramid-preview.js';
+import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
   getViewportInfo,
@@ -13,6 +15,7 @@ export {
   NavigationState,
   RotationChoreographer,
   FocusRingView,
+  VolumeLogo,
   validateVolumeRoot,
   buildBibleVerseCousinChain,
   buildBibleBookCousinChain
@@ -179,9 +182,6 @@ export function createApp({
     first: firstItem?.name || firstItem?.id || null,
     last: lastItem?.name || lastItem?.id || null
   };
-  if (debug) {
-    console.info('[FocusRing] chain summary', chainSummary);
-  }
   emit({ type: 'focus-ring:chain-summary', payload: chainSummary });
   const nav = new NavigationState();
   const safeIndex = (() => {
@@ -200,6 +200,30 @@ export function createApp({
   secondaryNav.setItems(secondaryInit.items || [], safeSecondaryIndex);
   const view = new FocusRingView(svgRoot);
   view.init();
+  
+  // Initialize volume logo (domain-specific)
+  const volumeLogo = new VolumeLogo(svgRoot, vp);
+  
+  // Make volumeLogo globally accessible for diagnostics
+  if (typeof window !== 'undefined') {
+    window.volumeLogo = volumeLogo;
+  }
+  
+  // For manifests with a root key (like Gutenberg_Bible), extract display_config from the root object
+  const manifestRoot = pyramidAdapter?.manifest 
+    ? (Object.keys(pyramidAdapter.manifest).length === 1 
+        ? pyramidAdapter.manifest[Object.keys(pyramidAdapter.manifest)[0]] 
+        : pyramidAdapter.manifest)
+    : null;
+  
+  const logoConfig = manifestRoot?.display_config?.detail_sector;
+  if (logoConfig && (logoConfig.logo_base_path || logoConfig.default_image)) {
+    volumeLogo.render({
+      ...logoConfig,
+      color_scheme: manifestRoot?.display_config?.color_scheme
+    });
+  }
+  
   let isBlurred = false;
   let choreographer = null;
   let isRotating = false;
@@ -219,6 +243,7 @@ export function createApp({
     : null;
   const buildPyramid = selected => {
     try {
+      const logoBounds = volumeLogo.getBounds();
       const instructions = buildPyramidPreview({
         viewport: vp,
         selected,
@@ -226,7 +251,8 @@ export function createApp({
         pyramidConfig,
         normalized: pyramidNormalized ?? normalizedItems,
         adapter: pyramidAdapter,
-        layoutSpec: pyramidLayoutSpec
+        layoutSpec: pyramidLayoutSpec,
+        logoBounds
       });
       return Array.isArray(instructions) && instructions.length > 0 ? instructions : null;
     } catch (err) {
@@ -563,6 +589,7 @@ export function createApp({
     const secondarySelected = secondaryNav.getCurrent();
     const secondaryNodes = calculateSecondaryNodePositions(secondaryNav.items, secondaryRotation);
     const pyramidInstructions = buildPyramid(selected);
+    console.log('[FocusRing] pyramidInstructions:', pyramidInstructions ? `${pyramidInstructions.length} nodes` : 'null');
     const parentLabel = getParentLabel(selected);
     const selectedMagnifierLabel = formatLabel({ item: selected, context: 'magnifier' });
     const magnifierLabel = isLayerOut
@@ -621,7 +648,8 @@ export function createApp({
           magnifierLabel: secondarySelected?.name || ''
         } : null,
         pyramidInstructions,
-        onPyramidClick: pyramidConfig?.onClick
+        onPyramidClick: pyramidConfig?.onClick,
+        logoBounds: volumeLogo.getBounds()
       }
     );
 
@@ -630,9 +658,6 @@ export function createApp({
       const durationMs = Number(elapsed.toFixed(2));
       const overBudget = durationMs > perfRenderBudget;
       emit({ type: 'perf:render', durationMs, budgetMs: perfRenderBudget, overBudget });
-      if (debugPerf) {
-        console.info('[FocusRing] render duration (ms)', durationMs, 'budget', perfRenderBudget, overBudget ? 'OVER' : 'within');
-      }
     }
 
     if (!isRotating && selected) {
@@ -676,19 +701,6 @@ export function createApp({
           index: nav.getCurrentIndex()
         };
       };
-
-      if (debug) {
-        console.info('[FocusRing] magnifier + neighbors', {
-          language: contextOptions?.locale || 'english',
-          magnifier: formatMagnifier(),
-          parentButton: {
-            outerLabel: parentOuterLabel || ''
-          },
-          layerDirection: isLayerOut ? 'out' : 'in',
-          before: neighbors.before.map(formatNeighbor),
-          after: neighbors.after.map(formatNeighbor)
-        });
-      }
     }
   };
 

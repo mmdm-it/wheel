@@ -146,9 +146,8 @@ export function layoutSpec(normalized, viewport) {
     },
     pyramid: {
       capacity: pyramidCapacity,
-      sample: siblings => sampleSiblings(siblings, pyramidCapacity.total),
-      place: siblings => placePyramidNodes(siblings, vp, { capacity: pyramidCapacity })
-    }
+      place: (siblings, viewport, opts) => placePyramidNodes(siblings, vp, { capacity: pyramidCapacity, logoBounds: opts?.logoBounds })
+    },
   };
 }
 

@@ -1,4 +1,4 @@
-import { getArcParameters, getMagnifierAngle, getViewportWindow, getNodeSpacing } from './focus-ring-geometry.js';
+import { getArcParameters, getMagnifierAngle, getMagnifierPosition, getViewportWindow, getNodeSpacing } from './focus-ring-geometry.js';
 
 export const DEFAULT_ARCS = [
   { name: 'inner', radiusRatio: 0.65, weight: 0.3 },
@@ -7,6 +7,12 @@ export const DEFAULT_ARCS = [
 ];
 
 const toRadians = deg => (deg * Math.PI) / 180;
+
+// Spiral parameters (adjustable via console)
+let spiralConfig = {
+  expansionRate: 0.005,  // Controls how quickly spiral expands radially (b parameter)
+  gapMultiplier: 3  // Spacing between nodes (multiple of node diameter)
+};
 
 export function calculatePyramidCapacity(viewport, options = {}) {
   const arcs = options.arcs ?? DEFAULT_ARCS;
@@ -86,31 +92,50 @@ const distributeAcrossArcs = (totalNodes, arcs) => {
 };
 
 export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
-    // Debug: log placement coordinates for visibility troubleshooting
-    if (typeof window !== 'undefined' && window.localStorage?.debug) {
-      setTimeout(() => {
-        console.info('[ChildPyramid] placements', placements.map(p => ({ x: p.x, y: p.y, radius: p.radius, angle: p.angle })));
-      }, 0);
-    }
   const siblings = Array.isArray(sampledSiblings) ? sampledSiblings : [];
   if (siblings.length === 0) return [];
 
-  // Spiral placement, polar coordinates, centered at hub
+  // Calculate CPUA (Child Pyramid Usable Area) bounds
   const { hubX, hubY, radius: focusRadius } = getArcParameters(viewport);
   const magnifierAngle = getMagnifierAngle(viewport);
-  // Spiral center: at (hubX, hubY) plus offset at angle halfway between magnifier and 180°, radius 0.7*focusRadius
+  const magnifierPos = getMagnifierPosition(viewport);
+  
+  // CPUA boundaries
+  const SSd = viewport.SSd;
+  const topMargin = SSd * 0.03;
+  const rightMargin = SSd * 0.03;
+  const MAGNIFIER_RADIUS_RATIO = 0.060;
+  const magnifierRadius = SSd * MAGNIFIER_RADIUS_RATIO;
+  
+  // Get logo bounds if available (volume-specific)
+  const logoBounds = options.logoBounds || null;
+  
+  const cpuaTopY = topMargin;
+  const cpuaRightXFull = viewport.width - rightMargin;  // Full width for spiral center calculation
+  const cpuaBottomY = Math.min(viewport.height, magnifierPos.y - (4 * magnifierRadius));
+  const cpuaLeftX = 0;
+  
+  // Crop right edge for boundary checking if logo is present
+  const cpuaRightX = logoBounds 
+    ? Math.min(cpuaRightXFull, logoBounds.left - rightMargin)
+    : cpuaRightXFull;
+  
+  // CPUA center: use full width (ignore logo) for spiral center to keep it stable
+  const cpuaCenterX = (cpuaLeftX + cpuaRightXFull) / 2;
+  const cpuaCenterY = (cpuaTopY + cpuaBottomY) / 2;
+  
+  // Shift spiral center slightly right (10% of full CPUA width)
+  const spiralCenterX = cpuaCenterX + ((cpuaRightXFull - cpuaLeftX) * 0.1);
+  const spiralCenterY = cpuaCenterY;
   const spiralCenterAngle = (magnifierAngle + Math.PI) / 2;
-  // Place spiral center at viewport center (guaranteed visible)
-  const spiralCenterX = viewport.width / 2;
-  const spiralCenterY = viewport.height / 2;
+  
   const n = siblings.length;
   // Use a fixed node radius and gap based on viewport size for visibility
   const nodeRadius = 0.04 * viewport.SSd;
-  const desiredGap = 2.4 * nodeRadius * 2.5;
-  // Archimedean spiral: r = a + b*theta (here a = 0)
-  const maxTurns = 2.5;
-  const maxTheta = maxTurns * 2 * Math.PI;
-  const b = (0.38 * Math.min(viewport.width, viewport.height)) / maxTheta;
+  const desiredGap = spiralConfig.gapMultiplier * nodeRadius * 2;
+  // Archimedean spiral: r = b*theta
+  // Controls how quickly the spiral expands radially
+  const b = spiralConfig.expansionRate * viewport.SSd;
 
   // Arc length from theta0 to theta1 for Archimedean spiral (a=0):
   function spiralArcLength(b, theta0, theta1) {
@@ -133,11 +158,34 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   }
 
   let angle = Math.PI; // start after half a turn
+  // Helper function to check if point is within logo exclusion area
+  function isInLogoExclusion(x, y) {
+    if (!logoBounds) return false;
+    return x >= logoBounds.left && x <= logoBounds.right &&
+           y >= logoBounds.top && y <= logoBounds.bottom;
+  }
+
   const placements = [];
+  let skipped = 0;
   for (let i = 0; i < n; i++) {
     const r = b * angle;
     const x = spiralCenterX + r * Math.cos(spiralCenterAngle + angle);
     const y = spiralCenterY + r * Math.sin(spiralCenterAngle + angle);
+    
+    // Check if node center is within logo exclusion square
+    if (isInLogoExclusion(x, y)) {
+      // Skip this position, advance to next theta
+      skipped++;
+      angle = findNextTheta(b, angle, desiredGap);
+      i--; // Don't consume a sibling for this position
+      
+      // Safety: prevent infinite loop if we can't find valid positions
+      if (skipped > n * 10) {
+        break;
+      }
+      continue;
+    }
+    
     placements.push({
       item: siblings[i],
       x,
@@ -152,4 +200,27 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   }
 
   return placements;
+}
+
+// Console API for spiral adjustment
+if (typeof window !== 'undefined') {
+  window.setSpiralExpansion = function(rate) {
+    spiralConfig.expansionRate = rate;
+    // Trigger re-render if app exists
+    if (window.app?.choreographer) {
+      window.app.choreographer.onRender(window.app.choreographer.getRotation());
+    }
+  };
+
+  window.setSpiralGap = function(multiplier) {
+    spiralConfig.gapMultiplier = multiplier;
+    // Trigger re-render if app exists
+    if (window.app?.choreographer) {
+      window.app.choreographer.onRender(window.app.choreographer.getRotation());
+    }
+  };
+
+  window.getSpiralConfig = function() {
+    return spiralConfig;
+  };
 }
