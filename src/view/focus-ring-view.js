@@ -153,7 +153,19 @@ export class FocusRingView {
     if (!this.nodesGroup) return;
     const isRotating = Boolean(options.isRotating);
     const isBlurred = Boolean(options.isBlurred);
-    const viewport = options.viewport;
+    const viewport = options.viewport ?? {};
+    const viewportWidth = viewport.width ?? 0;
+    const viewportHeight = viewport.height ?? 0;
+    const viewportSSd = viewport.SSd ?? Math.min(viewportWidth, viewportHeight);
+    const viewportLSd = viewport.LSd ?? Math.max(viewportWidth, viewportHeight);
+    const removeNode = el => {
+      if (!el) return;
+      if (typeof el.remove === 'function') {
+        el.remove();
+      } else if (el.parentNode) {
+        el.parentNode.removeChild(el);
+      }
+    };
     const secondary = options.secondary;
     const magnifierAngle = options.magnifierAngle;
     const labelMaskEpsilon = options.labelMaskEpsilon ?? 0.0001;
@@ -207,30 +219,30 @@ export class FocusRingView {
           const angleDelta = 3.75; // degrees
           const angleDeltaRad = (angleDelta * Math.PI) / 180;
           // Aim first fan line at spiral origin so it intersects the spiral start
-          const spiralOriginX = (options.viewport.width || 0) / 2 + ((options.viewport.width || 0) * 0.1);
-          const spiralOriginY = (options.viewport.SSd || Math.min(options.viewport.width || 0, options.viewport.height || 0)) * 0.03 +
-            Math.min(options.viewport.height || 0, (magnifier.cy ?? magnifier.y ?? 0) - (1.5 * (options.viewport.SSd || Math.min(options.viewport.width || 0, options.viewport.height || 0)) * 0.060)) / 2;
+          const spiralOriginX = viewportWidth / 2 + (viewportWidth * 0.1);
+          const spiralOriginY = viewportSSd * 0.03 +
+            Math.min(viewportHeight, (magnifier.cy ?? magnifier.y ?? 0) - (1.5 * viewportSSd * 0.060)) / 2;
           const startAngleRad = Math.atan2(spiralOriginY - magnifierY, spiralOriginX - magnifierX);
-          const lineLength = options.viewport?.LSd || 1000; // Use LSd (longer side dimension)
+          const lineLength = viewportLSd || 1000; // Use LSd (longer side dimension)
           
           // Calculate CPUA bounds (same logic as child-pyramid.js)
-          const SSd = options.viewport?.SSd || Math.min(options.viewport?.width || 0, options.viewport?.height || 0);
+          const SSd = viewportSSd;
           const topMargin = SSd * 0.03;
           const rightMargin = SSd * 0.03;
           const cpuaLeftX = 0;
           const cpuaTopY = topMargin;
-          const cpuaRightXFull = (options.viewport?.width || 0) - rightMargin;
+          const cpuaRightXFull = viewportWidth - rightMargin;
           const magnifierRadius = SSd * 0.060;
-          const cpuaBottomY = Math.min(options.viewport?.height || 0, magnifierY - (4 * magnifierRadius));
+          const cpuaBottomY = Math.min(viewportHeight, magnifierY - (4 * magnifierRadius));
 
           const logoBounds = options.logoBounds || null;
           // For fan-line clipping, use full right edge and subtract logo cutout separately
           const cpuaRightX = cpuaRightXFull;
 
           // Clip fan lines to CPUA (rectangle ∩ focus-ring clip circle) minus logo cutout
-          const clipCenterX = arcParams?.hubX ?? (options.viewport?.width || 0) / 2;
+          const clipCenterX = arcParams?.hubX ?? viewportWidth / 2;
           const clipCenterY = arcParams?.hubY ?? 0;
-          const clipRadius = (arcParams?.radius ?? options.viewport?.SSd ?? 0) * 0.98;
+          const clipRadius = (arcParams?.radius ?? viewportSSd) * 0.98;
 
           const segmentIntervalRect = (x1, y1, x2, y2, left, right, top, bottom) => {
             const dx = x2 - x1;
@@ -320,8 +332,8 @@ export class FocusRingView {
           };
 
           console.log('[FocusRingView] CPUA inputs:', {
-            viewportWidth: options.viewport?.width,
-            viewportHeight: options.viewport?.height,
+            viewportWidth,
+            viewportHeight,
             SSd,
             topMargin,
             rightMargin,
@@ -372,7 +384,7 @@ export class FocusRingView {
         // Draw a true Archimedean spiral (no node rendering), unconstrained by CPUA
         if (options.viewport) {
           const fanLineSegments = this._fanLineSegments || [];
-          const SSdLocal = options.viewport.SSd || Math.min(options.viewport.width || 0, options.viewport.height || 0);
+          const SSdLocal = viewportSSd;
           const expansionRate = (() => {
             if (typeof window !== 'undefined' && typeof window.getSpiralConfig === 'function') {
               const cfg = window.getSpiralConfig();
@@ -388,10 +400,10 @@ export class FocusRingView {
           const topMarginLocal = SSdLocal * 0.03;
           const rightMarginLocal = SSdLocal * 0.03;
           const cpuaLeftLocal = 0;
-          const cpuaRightLocal = (options.viewport.width || 0) - rightMarginLocal;
+          const cpuaRightLocal = viewportWidth - rightMarginLocal;
           const magnifierRadiusLocal = SSdLocal * 0.060;
           const magnifierYLocal = magnifier?.cy ?? magnifier?.y ?? 0;
-          const cpuaBottomLocal = Math.min(options.viewport.height || 0, magnifierYLocal - (4 * magnifierRadiusLocal));
+          const cpuaBottomLocal = Math.min(viewportHeight, magnifierYLocal - (4 * magnifierRadiusLocal));
           const cpuaTopLocal = topMarginLocal;
           const spiralCenterX = (cpuaLeftLocal + cpuaRightLocal) / 2 + ((cpuaRightLocal - cpuaLeftLocal) * 0.1);
           const spiralCenterY = (cpuaTopLocal + cpuaBottomLocal) / 2;
@@ -399,7 +411,7 @@ export class FocusRingView {
           const points = [];
           let theta = 0; // start at origin
           const step = 0.03; // radians; small step for smoothness
-          const maxR = Math.max(options.viewport.width || 0, options.viewport.height || 0) * 1.5;
+          const maxR = Math.max(viewportWidth, viewportHeight) * 1.5;
           const maxTheta = maxR / Math.max(b, 1e-6);
           while (theta <= maxTheta) {
             const r = b * theta;
@@ -489,6 +501,67 @@ export class FocusRingView {
 
             hits.forEach(hit => drawX(hit.x, hit.y, 9));
           }
+        }
+
+        // Render pyramid nodes and labels
+        if (pyramidInstructions && pyramidInstructions.length > 0) {
+          const existingPyramidNodes = new Map();
+          [...this.pyramidNodesGroup.children].forEach(child => existingPyramidNodes.set(child.id, child));
+          const existingPyramidLabels = new Map();
+          [...this.pyramidLabelsGroup.children].forEach(child => existingPyramidLabels.set(child.id, child));
+
+          pyramidInstructions.forEach((node, idx) => {
+            const id = `pyramid-node-${node.id || idx}`;
+            let el = existingPyramidNodes.get(id);
+            if (!el) {
+              el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+              el.setAttribute('id', id);
+              el.setAttribute('class', 'child-pyramid-node');
+              el.setAttribute('role', 'button');
+              el.setAttribute('tabindex', '0');
+              this.pyramidNodesGroup.appendChild(el);
+            }
+            if (onPyramidClick) {
+              el.onclick = () => onPyramidClick(node);
+              this.#attachKeyActivation(el, () => onPyramidClick(node));
+              el.style.cursor = 'pointer';
+            } else {
+              el.onclick = null;
+              this.#attachKeyActivation(el, null);
+              el.style.cursor = 'default';
+            }
+            el.setAttribute('cx', node.x ?? 0);
+            el.setAttribute('cy', node.y ?? 0);
+            el.setAttribute('r', node.r ?? node.radius ?? 0);
+            el.dataset.id = node.id || String(idx);
+            const ariaLabel = node.label ?? node.id ?? '';
+            if (ariaLabel) el.setAttribute('aria-label', ariaLabel);
+
+            const labelId = `pyramid-label-${node.id || idx}`;
+            let label = existingPyramidLabels.get(labelId);
+            if (!label) {
+              label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+              label.setAttribute('id', labelId);
+              label.setAttribute('class', 'child-pyramid-label');
+              this.pyramidLabelsGroup.appendChild(label);
+            }
+            label.setAttribute('x', node.x ?? 0);
+            label.setAttribute('y', (node.y ?? 0) - (node.r ?? node.radius ?? 0) - 4);
+            label.setAttribute('text-anchor', 'middle');
+            label.setAttribute('dominant-baseline', 'middle');
+            label.textContent = node.label ?? node.id ?? '';
+          });
+
+          existingPyramidNodes.forEach((el, id) => {
+            if (!pyramidInstructions.find((n, idx) => `pyramid-node-${n.id || idx}` === id)) {
+              removeNode(el);
+            }
+          });
+          existingPyramidLabels.forEach((el, id) => {
+            if (!pyramidInstructions.find((n, idx) => `pyramid-label-${n.id || idx}` === id)) {
+              removeNode(el);
+            }
+          });
         }
       }
     }
@@ -639,13 +712,13 @@ export class FocusRingView {
 
     existingNodes.forEach((el, id) => {
       if (!nodes.find(n => `focus-node-${n.item?.id || n.index}` === id)) {
-        el.remove();
+        removeNode(el);
       }
     });
 
     existingLabels.forEach((el, id) => {
       if (!nodes.find(n => `focus-label-${n.item?.id || n.index}` === id)) {
-        el.remove();
+        removeNode(el);
       }
     });
 
@@ -729,13 +802,13 @@ export class FocusRingView {
 
       existingSecNodes.forEach((el, id) => {
         if (!secNodes.find(n => `secondary-node-${n.item?.id || n.index}` === id)) {
-          el.remove();
+          removeNode(el);
         }
       });
 
       existingSecLabels.forEach((el, id) => {
         if (!secNodes.find(n => `secondary-label-${n.item?.id || n.index}` === id)) {
-          el.remove();
+          removeNode(el);
         }
       });
     } else {
