@@ -205,13 +205,19 @@ const cpuaRightXFull = viewport.width - rightMargin;
 const cpuaRightX = logoBounds 
   ? Math.min(cpuaRightXFull, logoBounds.left - rightMargin)
   : cpuaRightXFull;
+
+// Bottom edge (CPUA only): raised to 4× magnifier radius
+const cpuaBottomY = Math.min(
+  viewport.height,
+  magnifierPos.y - (4 * magnifierRadius)
+);
 ```
 
 ### CPUA Center (Spiral Origin)
 
 ```javascript
 const cpuaCenterX = (dsuaLeftX + cpuaRightXFull) / 2;
-const cpuaCenterY = (dsuaTopY + dsuaBottomY) / 2;
+const cpuaCenterY = (dsuaTopY + cpuaBottomY) / 2;
 
 // Shift spiral center 10% right for better distribution
 const spiralCenterX = cpuaCenterX + ((cpuaRightXFull - dsuaLeftX) * 0.1);
@@ -285,6 +291,7 @@ const LOGO_EXCLUSION_RATIO = 0.80;  // 80% of full logo size
 // Magnifier ratios
 const MAGNIFIER_RADIUS_RATIO = 0.060;  // 6% of SSd
 const MAGNIFIER_BOTTOM_MARGIN = 1.5;   // 1.5× magnifier radius
+const CPUA_BOTTOM_MARGIN = 4.0;        // 4× magnifier radius (CPUA only)
 
 // Focus Ring clip
 const FOCUS_RING_CLIP_RATIO = 0.98;    // 98% of Focus Ring radius
@@ -341,10 +348,13 @@ CPUA = L-shaped region with convex arc leg
      = DSUA (right trapezoid with convex arc leg) with upper-right logo square removed
 Exclusion removes area from (1514.35, 32.4) to (1887.6, 405.65)
 Result: L-shaped region where the non-perpendicular leg is the convex Focus Ring arc
+
+CPUA bottom (raised):
+  cpuaBottomY = min(1080, 972 - 4×64.8) = min(1080, 712.8) = 712.8px
 ```
 
 ---
 
-**Version**: 3.7.8  
-**Last Updated**: December 30, 2025  
+**Version**: 3.7.11  
+**Last Updated**: December 31, 2025  
 **Related Documents**: ARCHITECTURE_V4.md, CHILD_PYRAMID_REDESIGN.md

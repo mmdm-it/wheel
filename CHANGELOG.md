@@ -6,6 +6,25 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.7.11] - 2025-12-31
+
+### Changed
+- CPUA bottom edge raised to 4× magnifier radius (geometry, fan-line clipping/spiral origin, diagnostics).
+- Documentation updated to match CPUA bottom change.
+
+
+## [3.7.10] - 2025-12-30
+
+### Changed
+- CPUA fan-line clipping now respects the full right edge (width minus margin), subtracting the logo cutout and logging endpoints for diagnostics.
+
+
+## [3.7.9] - 2025-12-30
+
+### Changed
+- Fan line visualization with CPUA intersection filtering
+
+
 ## [3.7.8] - 2025-12-30
 
 ### Changed

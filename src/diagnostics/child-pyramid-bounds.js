@@ -68,7 +68,7 @@ export function showPyramidBounds() {
   const effectiveRightX = rightX - rightMargin;
   
   // Crop CPUA at magnifier Y position, plus additional 1.5 * magnifier radius margin
-  const effectiveBottomY = Math.min(bottomY, magnifierPos.y - (1.5 * magnifierRadius));
+  const effectiveBottomY = Math.min(bottomY, magnifierPos.y - (4 * magnifierRadius));
 
   // Create diagnostic group
   const diagGroup = document.createElementNS(SVG_NS, 'g');
@@ -327,7 +327,7 @@ export function showDetailSectorBounds() {
   // Apply margins
   const effectiveTopY = topY + topMargin;
   const effectiveRightX = rightX - rightMargin;
-  const effectiveBottomY = Math.min(bottomY, magnifierPos.y - (1.5 * magnifierRadius));
+  const effectiveBottomY = Math.min(bottomY, magnifierPos.y - (4 * magnifierRadius));
 
   // Create diagnostic group
   const diagGroup = document.createElementNS(SVG_NS, 'g');

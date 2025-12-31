@@ -10,7 +10,7 @@ const toRadians = deg => (deg * Math.PI) / 180;
 
 // Spiral parameters (adjustable via console)
 let spiralConfig = {
-  expansionRate: 0.03,  // Controls how quickly spiral expands radially (b parameter)
+  expansionRate: 0.005,  // Controls how quickly spiral expands radially (b parameter)
   gapMultiplier: 3  // Spacing between nodes (multiple of node diameter)
 };
 
@@ -92,12 +92,6 @@ const distributeAcrossArcs = (totalNodes, arcs) => {
 };
 
 export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
-    // Debug: log placement coordinates for visibility troubleshooting
-    if (typeof window !== 'undefined' && window.localStorage?.debug) {
-      setTimeout(() => {
-        console.info('[ChildPyramid] placements', placements.map(p => ({ x: p.x, y: p.y, radius: p.radius, angle: p.angle })));
-      }, 0);
-    }
   const siblings = Array.isArray(sampledSiblings) ? sampledSiblings : [];
   if (siblings.length === 0) return [];
 
@@ -118,7 +112,7 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
   
   const cpuaTopY = topMargin;
   const cpuaRightXFull = viewport.width - rightMargin;  // Full width for spiral center calculation
-  const cpuaBottomY = Math.min(viewport.height, magnifierPos.y - (1.5 * magnifierRadius));
+  const cpuaBottomY = Math.min(viewport.height, magnifierPos.y - (4 * magnifierRadius));
   const cpuaLeftX = 0;
   
   // Crop right edge for boundary checking if logo is present
@@ -187,7 +181,6 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
       
       // Safety: prevent infinite loop if we can't find valid positions
       if (skipped > n * 10) {
-        console.warn('[ChildPyramid] Too many skipped positions, stopping placement');
         break;
       }
       continue;
@@ -213,7 +206,6 @@ export function placePyramidNodes(sampledSiblings, viewport, options = {}) {
 if (typeof window !== 'undefined') {
   window.setSpiralExpansion = function(rate) {
     spiralConfig.expansionRate = rate;
-    console.log(`Spiral expansion rate set to ${rate}`);
     // Trigger re-render if app exists
     if (window.app?.choreographer) {
       window.app.choreographer.onRender(window.app.choreographer.getRotation());
@@ -222,7 +214,6 @@ if (typeof window !== 'undefined') {
 
   window.setSpiralGap = function(multiplier) {
     spiralConfig.gapMultiplier = multiplier;
-    console.log(`Spiral gap multiplier set to ${multiplier}`);
     // Trigger re-render if app exists
     if (window.app?.choreographer) {
       window.app.choreographer.onRender(window.app.choreographer.getRotation());
@@ -230,7 +221,6 @@ if (typeof window !== 'undefined') {
   };
 
   window.getSpiralConfig = function() {
-    console.log('Current spiral configuration:', spiralConfig);
     return spiralConfig;
   };
 }

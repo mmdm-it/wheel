@@ -182,9 +182,6 @@ export function createApp({
     first: firstItem?.name || firstItem?.id || null,
     last: lastItem?.name || lastItem?.id || null
   };
-  if (debug) {
-    console.info('[FocusRing] chain summary', chainSummary);
-  }
   emit({ type: 'focus-ring:chain-summary', payload: chainSummary });
   const nav = new NavigationState();
   const safeIndex = (() => {
@@ -220,21 +217,10 @@ export function createApp({
     : null;
   
   const logoConfig = manifestRoot?.display_config?.detail_sector;
-  console.log('[Logo Debug] pyramidAdapter:', pyramidAdapter);
-  console.log('[Logo Debug] manifestRoot:', manifestRoot);
-  console.log('[Logo Debug] display_config:', manifestRoot?.display_config);
-  console.log('[Logo Debug] detail_sector:', logoConfig);
   if (logoConfig && (logoConfig.logo_base_path || logoConfig.default_image)) {
-    console.log('[Logo Debug] Calling volumeLogo.render() with config:', logoConfig);
     volumeLogo.render({
       ...logoConfig,
       color_scheme: manifestRoot?.display_config?.color_scheme
-    });
-  } else {
-    console.log('[Logo Debug] Logo render SKIPPED - config check failed:', {
-      hasLogoConfig: !!logoConfig,
-      hasBasePath: logoConfig?.logo_base_path,
-      hasDefaultImage: logoConfig?.default_image
     });
   }
   
@@ -603,6 +589,7 @@ export function createApp({
     const secondarySelected = secondaryNav.getCurrent();
     const secondaryNodes = calculateSecondaryNodePositions(secondaryNav.items, secondaryRotation);
     const pyramidInstructions = buildPyramid(selected);
+    console.log('[FocusRing] pyramidInstructions:', pyramidInstructions ? `${pyramidInstructions.length} nodes` : 'null');
     const parentLabel = getParentLabel(selected);
     const selectedMagnifierLabel = formatLabel({ item: selected, context: 'magnifier' });
     const magnifierLabel = isLayerOut
@@ -661,7 +648,8 @@ export function createApp({
           magnifierLabel: secondarySelected?.name || ''
         } : null,
         pyramidInstructions,
-        onPyramidClick: pyramidConfig?.onClick
+        onPyramidClick: pyramidConfig?.onClick,
+        logoBounds: volumeLogo.getBounds()
       }
     );
 
@@ -670,9 +658,6 @@ export function createApp({
       const durationMs = Number(elapsed.toFixed(2));
       const overBudget = durationMs > perfRenderBudget;
       emit({ type: 'perf:render', durationMs, budgetMs: perfRenderBudget, overBudget });
-      if (debugPerf) {
-        console.info('[FocusRing] render duration (ms)', durationMs, 'budget', perfRenderBudget, overBudget ? 'OVER' : 'within');
-      }
     }
 
     if (!isRotating && selected) {
@@ -716,19 +701,6 @@ export function createApp({
           index: nav.getCurrentIndex()
         };
       };
-
-      if (debug) {
-        console.info('[FocusRing] magnifier + neighbors', {
-          language: contextOptions?.locale || 'english',
-          magnifier: formatMagnifier(),
-          parentButton: {
-            outerLabel: parentOuterLabel || ''
-          },
-          layerDirection: isLayerOut ? 'out' : 'in',
-          before: neighbors.before.map(formatNeighbor),
-          after: neighbors.after.map(formatNeighbor)
-        });
-      }
     }
   };
 

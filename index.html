@@ -176,9 +176,6 @@
         console.error('[wheel] volume validation failed', { errors: validation.errors, warnings: validation.warnings });
         throw new Error('Invalid volume manifest');
       }
-      if (validation.warnings.length) {
-        console.warn('[wheel] volume validation warnings', validation.warnings);
-      }
       const startup = root?.display_config?.focus_ring_startup || {};
       const arrangements = root?.display_config?.focus_ring_arrangements || {};
       const supplemental = await config.loadSupplemental(root, manifest, params);
