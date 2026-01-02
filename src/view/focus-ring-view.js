@@ -1,3 +1,5 @@
+import { PyramidView } from './detail/pyramid-view.js';
+
 export class FocusRingView {
   constructor(svgRoot) {
     this.svgRoot = svgRoot;
@@ -9,6 +11,8 @@ export class FocusRingView {
     this.pyramidGroup = null;
     this.pyramidNodesGroup = null;
     this.pyramidLabelsGroup = null;
+    this.pyramidSpiralGroup = null;
+    this.pyramidView = null;
     this.mirroredNodesGroup = null;
     this.mirroredLabelsGroup = null;
     this.magnifierGroup = null;
@@ -124,18 +128,13 @@ export class FocusRingView {
     this.labelsGroup.setAttribute('class', 'focus-ring-labels');
     this.blurGroup.appendChild(this.labelsGroup);
 
-    this.pyramidGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-    this.pyramidGroup.setAttribute('class', 'child-pyramid');
-    this.pyramidFanLinesGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-    this.pyramidFanLinesGroup.setAttribute('class', 'child-pyramid-fan-lines');
-    this.pyramidNodesGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-    this.pyramidNodesGroup.setAttribute('class', 'child-pyramid-nodes');
-    this.pyramidLabelsGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-    this.pyramidLabelsGroup.setAttribute('class', 'child-pyramid-labels');
-    this.pyramidGroup.appendChild(this.pyramidFanLinesGroup);
-    this.pyramidGroup.appendChild(this.pyramidNodesGroup);
-    this.pyramidGroup.appendChild(this.pyramidLabelsGroup);
-    this.blurGroup.appendChild(this.pyramidGroup);
+    this.pyramidView = new PyramidView(this.blurGroup);
+    this.pyramidView.init();
+    this.pyramidGroup = this.pyramidView.pyramidGroup;
+    this.pyramidFanLinesGroup = this.pyramidView.pyramidFanLinesGroup;
+    this.pyramidSpiralGroup = this.pyramidView.pyramidSpiralGroup;
+    this.pyramidNodesGroup = this.pyramidView.pyramidNodesGroup;
+    this.pyramidLabelsGroup = this.pyramidView.pyramidLabelsGroup;
   }
 
   setBlur(enabled) {
@@ -170,8 +169,6 @@ export class FocusRingView {
     const magnifierAngle = options.magnifierAngle;
     const labelMaskEpsilon = options.labelMaskEpsilon ?? 0.0001;
     const onNodeClick = options.onNodeClick;
-    const pyramidInstructions = Array.isArray(options.pyramidInstructions) ? options.pyramidInstructions : null;
-    const onPyramidClick = options.onPyramidClick;
     const selectedId = options.selectedId;
     const dimensionIcon = options.dimensionIcon;
     const parentButtons = options.parentButtons;
@@ -195,375 +192,14 @@ export class FocusRingView {
       if (this.dimensionIcon) this.svgRoot.appendChild(this.dimensionIcon);
     }
 
-    // Render child pyramid nodes/labels if provided
-    if (this.pyramidGroup && this.pyramidFanLinesGroup && this.pyramidNodesGroup && this.pyramidLabelsGroup) {
-      console.log('[FocusRingView] pyramidInstructions:', pyramidInstructions ? `${pyramidInstructions.length} nodes` : 'null/empty');
-      if (!pyramidInstructions || pyramidInstructions.length === 0) {
-        this.pyramidGroup.setAttribute('display', 'none');
-        while (this.pyramidFanLinesGroup.firstChild) this.pyramidFanLinesGroup.removeChild(this.pyramidFanLinesGroup.firstChild);
-        while (this.pyramidNodesGroup.firstChild) this.pyramidNodesGroup.removeChild(this.pyramidNodesGroup.firstChild);
-        while (this.pyramidLabelsGroup.firstChild) this.pyramidLabelsGroup.removeChild(this.pyramidLabelsGroup.firstChild);
-      } else {
-        this.pyramidGroup.removeAttribute('display');
-        while (this.pyramidFanLinesGroup.firstChild) this.pyramidFanLinesGroup.removeChild(this.pyramidFanLinesGroup.firstChild);
-        while (this.pyramidNodesGroup.firstChild) this.pyramidNodesGroup.removeChild(this.pyramidNodesGroup.firstChild);
-        while (this.pyramidLabelsGroup.firstChild) this.pyramidLabelsGroup.removeChild(this.pyramidLabelsGroup.firstChild);
-        
-        // Draw 72 fan lines radiating from magnifier center, 5 degrees apart
-        // Only draw lines that intersect the CPUA
-        console.log('[FocusRingView] magnifier for fan lines:', magnifier);
-        if (magnifier && (magnifier.cx != null || magnifier.x != null) && (magnifier.cy != null || magnifier.y != null)) {
-          const magnifierX = magnifier.cx ?? magnifier.x;
-          const magnifierY = magnifier.cy ?? magnifier.y;
-          const lineCount = 96;
-          const angleDelta = 3.75; // degrees
-          const angleDeltaRad = (angleDelta * Math.PI) / 180;
-          // Aim first fan line at spiral origin so it intersects the spiral start
-          const spiralOriginX = viewportWidth / 2 + (viewportWidth * 0.1);
-          const spiralOriginY = viewportSSd * 0.03 +
-            Math.min(viewportHeight, (magnifier.cy ?? magnifier.y ?? 0) - (1.5 * viewportSSd * 0.060)) / 2;
-          const startAngleRad = Math.atan2(spiralOriginY - magnifierY, spiralOriginX - magnifierX);
-          const lineLength = viewportLSd || 1000; // Use LSd (longer side dimension)
-          
-          // Calculate CPUA bounds (same logic as child-pyramid.js)
-          const SSd = viewportSSd;
-          const topMargin = SSd * 0.03;
-          const rightMargin = SSd * 0.03;
-          const cpuaLeftX = 0;
-          const cpuaTopY = topMargin;
-          const cpuaRightXFull = viewportWidth - rightMargin;
-          const magnifierRadius = SSd * 0.060;
-          const cpuaBottomY = Math.min(viewportHeight, magnifierY - (4 * magnifierRadius));
-
-          const logoBounds = options.logoBounds || null;
-          // For fan-line clipping, use full right edge and subtract logo cutout separately
-          const cpuaRightX = cpuaRightXFull;
-
-          // Clip fan lines to CPUA (rectangle ∩ focus-ring clip circle) minus logo cutout
-          const clipCenterX = arcParams?.hubX ?? viewportWidth / 2;
-          const clipCenterY = arcParams?.hubY ?? 0;
-          const clipRadius = (arcParams?.radius ?? viewportSSd) * 0.98;
-
-          const segmentIntervalRect = (x1, y1, x2, y2, left, right, top, bottom) => {
-            const dx = x2 - x1;
-            const dy = y2 - y1;
-            let t0 = 0;
-            let t1 = 1;
-            const p = [-dx, dx, -dy, dy];
-            const q = [x1 - left, right - x1, y1 - top, bottom - y1];
-            for (let i = 0; i < 4; i++) {
-              const pi = p[i];
-              const qi = q[i];
-              if (pi === 0) {
-                if (qi < 0) return null;
-                continue;
-              }
-              const t = qi / pi;
-              if (pi < 0) {
-                if (t > t1) return null;
-                if (t > t0) t0 = t;
-              } else {
-                if (t < t0) return null;
-                if (t < t1) t1 = t;
-              }
-            }
-            return { t0, t1 };
-          };
-
-          const segmentIntervalCircle = (x1, y1, x2, y2) => {
-            if (!(clipRadius > 0)) return { t0: 0, t1: 1 };
-            const dx = x2 - x1;
-            const dy = y2 - y1;
-            const fx = x1 - clipCenterX;
-            const fy = y1 - clipCenterY;
-            const a = dx * dx + dy * dy;
-            if (a === 0) return null;
-            const b = 2 * (fx * dx + fy * dy);
-            const c = fx * fx + fy * fy - clipRadius * clipRadius;
-            if (c <= 0) return { t0: 0, t1: 1 };
-            const disc = b * b - 4 * a * c;
-            if (disc < 0) return null;
-            const sqrt = Math.sqrt(disc);
-            let t0 = (-b - sqrt) / (2 * a);
-            let t1 = (-b + sqrt) / (2 * a);
-            if (t0 > t1) [t0, t1] = [t1, t0];
-            const enter = Math.max(0, t0);
-            const exit = Math.min(1, t1);
-            if (exit < 0 || enter > 1) return null;
-            return { t0: enter, t1: exit };
-          };
-
-          const intersectIntervals = (a, b) => {
-            if (!a || !b) return null;
-            const t0 = Math.max(a.t0, b.t0, 0);
-            const t1 = Math.min(a.t1, b.t1, 1);
-            return t1 >= t0 ? { t0, t1 } : null;
-          };
-
-          const subtractLogoInterval = (baseInterval, logoInterval) => {
-            if (!baseInterval) return [];
-            if (!logoInterval) return [baseInterval];
-            const { t0, t1 } = baseInterval;
-            const { t0: l0, t1: l1 } = logoInterval;
-            const segments = [];
-            if (l1 <= t0 || l0 >= t1) return [baseInterval];
-            if (l0 > t0) segments.push({ t0, t1: Math.min(l0, t1) });
-            if (l1 < t1) segments.push({ t0: Math.max(l1, t0), t1 });
-            return segments.filter(seg => seg.t1 > seg.t0);
-          };
-
-          const getCpuAIntersection = (x1, y1, x2, y2) => {
-            const rectInterval = segmentIntervalRect(x1, y1, x2, y2, cpuaLeftX, cpuaRightX, cpuaTopY, cpuaBottomY);
-            const circleInterval = segmentIntervalCircle(x1, y1, x2, y2);
-            const base = intersectIntervals(rectInterval, circleInterval);
-            if (!base) return null;
-            const logoInterval = logoBounds
-              ? segmentIntervalRect(x1, y1, x2, y2, logoBounds.left, logoBounds.right, logoBounds.top, logoBounds.bottom)
-              : null;
-            const candidates = subtractLogoInterval(base, logoInterval);
-            if (!candidates.length) return null;
-            // Choose the farthest-visible intersection so rays can extend to the rightmost legal point
-            const best = candidates.reduce((acc, cur) => (cur.t1 > acc.t1 ? cur : acc), candidates[0]);
-            const { t1 } = best;
-            return {
-              x: x1 + (x2 - x1) * t1,
-              y: y1 + (y2 - y1) * t1
-            };
-          };
-
-          console.log('[FocusRingView] CPUA inputs:', {
-            viewportWidth,
-            viewportHeight,
-            SSd,
-            topMargin,
-            rightMargin,
-            cpuaRightXFull,
-            cpuaRightX,
-            clipCenterX,
-            clipCenterY,
-            clipRadius,
-            logoBounds
-          });
-          console.log(`[FocusRingView] CPUA bounds: (${cpuaLeftX}, ${cpuaTopY}) to (${cpuaRightX}, ${cpuaBottomY})`);
-          console.log(`[FocusRingView] Drawing up to ${lineCount} fan lines from (${magnifierX.toFixed(1)}, ${magnifierY.toFixed(1)})`);
-
-          let drawnCount = 0;
-          const fanLineSegments = [];
-          const fanLineEnds = [];
-          for (let i = 0; i < lineCount; i++) {
-            const angleRad = startAngleRad + i * angleDeltaRad;
-            const endX = magnifierX + Math.cos(angleRad) * lineLength;
-            const endY = magnifierY + Math.sin(angleRad) * lineLength;
-
-            const clipPoint = getCpuAIntersection(magnifierX, magnifierY, endX, endY);
-            if (clipPoint) {
-              const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-              line.setAttribute('class', 'child-pyramid-fan-line');
-              line.setAttribute('x1', magnifierX);
-              line.setAttribute('y1', magnifierY);
-              line.setAttribute('x2', clipPoint.x);
-              line.setAttribute('y2', clipPoint.y);
-              line.setAttribute('stroke', 'black');
-              line.setAttribute('stroke-width', '1');
-              this.pyramidFanLinesGroup.appendChild(line);
-              drawnCount++;
-              fanLineEnds.push({ i, x: clipPoint.x, y: clipPoint.y });
-              fanLineSegments.push({ id: i, x1: magnifierX, y1: magnifierY, x2: clipPoint.x, y2: clipPoint.y });
-            }
-          }
-          console.log(`[FocusRingView] Drew ${drawnCount} of ${lineCount} fan lines (filtered by CPUA intersection)`);
-          if (fanLineEnds.length) {
-            const xs = fanLineEnds.map(p => p.x);
-            const maxX = Math.max(...xs);
-            console.log('[FocusRingView] Fan line end x-coordinates:', fanLineEnds.map(p => `${p.i}:${p.x.toFixed(1)}`).join(', '));
-            console.log(`[FocusRingView] Max fan line end x = ${maxX.toFixed(1)}, CPUA right = ${cpuaRightX.toFixed(1)}, full right = ${cpuaRightXFull.toFixed(1)}`);
-          }
-          this._fanLineSegments = fanLineSegments;
-        }
-        
-        // Draw a true Archimedean spiral (no node rendering), unconstrained by CPUA
-        if (options.viewport) {
-          const fanLineSegments = this._fanLineSegments || [];
-          const SSdLocal = viewportSSd;
-          const expansionRate = (() => {
-            if (typeof window !== 'undefined' && typeof window.getSpiralConfig === 'function') {
-              const cfg = window.getSpiralConfig();
-              if (cfg && typeof cfg.expansionRate === 'number') return cfg.expansionRate;
-            }
-            if (typeof options.spiralExpansion === 'number') return options.spiralExpansion;
-            return 0.005; // fallback
-          })();
-          const b = expansionRate * SSdLocal; // r = b * theta
-          const spiralCenterAngle = (magnifierAngle + Math.PI) / 2;
-
-          // Keep origin consistent with pyramid logic: CPUA-based center with 10% right shift
-          const topMarginLocal = SSdLocal * 0.03;
-          const rightMarginLocal = SSdLocal * 0.03;
-          const cpuaLeftLocal = 0;
-          const cpuaRightLocal = viewportWidth - rightMarginLocal;
-          const magnifierRadiusLocal = SSdLocal * 0.060;
-          const magnifierYLocal = magnifier?.cy ?? magnifier?.y ?? 0;
-          const cpuaBottomLocal = Math.min(viewportHeight, magnifierYLocal - (4 * magnifierRadiusLocal));
-          const cpuaTopLocal = topMarginLocal;
-          const spiralCenterX = (cpuaLeftLocal + cpuaRightLocal) / 2 + ((cpuaRightLocal - cpuaLeftLocal) * 0.1);
-          const spiralCenterY = (cpuaTopLocal + cpuaBottomLocal) / 2;
-
-          const points = [];
-          let theta = 0; // start at origin
-          const step = 0.03; // radians; small step for smoothness
-          const maxR = Math.max(viewportWidth, viewportHeight) * 1.5;
-          const maxTheta = maxR / Math.max(b, 1e-6);
-          while (theta <= maxTheta) {
-            const r = b * theta;
-            const x = spiralCenterX + r * Math.cos(spiralCenterAngle + theta);
-            const y = spiralCenterY + r * Math.sin(spiralCenterAngle + theta);
-            points.push({ x, y });
-            theta += step;
-          }
-
-          if (points.length > 1) {
-            let d = `M ${points[0].x} ${points[0].y}`;
-            for (let i = 1; i < points.length; i++) {
-              d += ` L ${points[i].x} ${points[i].y}`;
-            }
-            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-            path.setAttribute('class', 'child-pyramid-spiral');
-            path.setAttribute('d', d);
-            path.setAttribute('fill', 'none');
-            path.setAttribute('stroke', 'black');
-            path.setAttribute('stroke-width', '1');
-            this.pyramidNodesGroup.appendChild(path);
-
-            // Mark intersections between spiral segments and fan lines with red X
-            const intersectSegments = (a, b) => {
-              const { x1, y1, x2, y2 } = a;
-              const { x1: x3, y1: y3, x2: x4, y2: y4 } = b;
-              const denom = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4);
-              if (denom === 0) return null;
-              const t = ((x1 - x3) * (y3 - y4) - (y1 - y3) * (x3 - x4)) / denom; // along spiral segment
-              const u = -((x1 - x2) * (y1 - y3) - (y1 - y2) * (x1 - x3)) / denom; // along fan line
-              if (t >= 0 && t <= 1 && u >= 0 && u <= 1) {
-                return {
-                  x: x1 + t * (x2 - x1),
-                  y: y1 + t * (y2 - y1),
-                  t,
-                  u
-                };
-              }
-              return null;
-            };
-
-            const drawX = (x, y, size = 9) => {
-              const half = size / 2;
-              const line1 = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-              line1.setAttribute('x1', x - half);
-              line1.setAttribute('y1', y - half);
-              line1.setAttribute('x2', x + half);
-              line1.setAttribute('y2', y + half);
-              line1.setAttribute('stroke', 'red');
-              line1.setAttribute('stroke-width', '2');
-              const line2 = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-              line2.setAttribute('x1', x - half);
-              line2.setAttribute('y1', y + half);
-              line2.setAttribute('x2', x + half);
-              line2.setAttribute('y2', y - half);
-              line2.setAttribute('stroke', 'red');
-              line2.setAttribute('stroke-width', '2');
-              this.pyramidLabelsGroup.appendChild(line1);
-              this.pyramidLabelsGroup.appendChild(line2);
-            };
-
-            const pendingFans = new Set(fanLineSegments.map(f => f.id));
-            const hits = [];
-            const nodeRadiusLocal = 0.04 * SSdLocal;
-            const minHitDistance = nodeRadiusLocal * 4; // 4× node radius
-
-            for (let i = 1; i < points.length && pendingFans.size > 0; i++) {
-              const segSpiral = { x1: points[i - 1].x, y1: points[i - 1].y, x2: points[i].x, y2: points[i].y };
-              fanLineSegments.forEach(segFan => {
-                if (!pendingFans.has(segFan.id)) return;
-                const hit = intersectSegments(segSpiral, segFan);
-                if (hit) {
-                  const tooClose = hits.some(h => {
-                    const dx = h.x - hit.x;
-                    const dy = h.y - hit.y;
-                    return Math.hypot(dx, dy) < minHitDistance;
-                  });
-                  if (!tooClose) {
-                    // accept hit and retire this fan line
-                    hits.push(hit);
-                    pendingFans.delete(segFan.id);
-                  }
-                  // if too close, keep fan line pending for a later intersection
-                }
-              });
-            }
-
-            hits.forEach(hit => drawX(hit.x, hit.y, 9));
-          }
-        }
-
-        // Render pyramid nodes and labels
-        if (pyramidInstructions && pyramidInstructions.length > 0) {
-          const existingPyramidNodes = new Map();
-          [...this.pyramidNodesGroup.children].forEach(child => existingPyramidNodes.set(child.id, child));
-          const existingPyramidLabels = new Map();
-          [...this.pyramidLabelsGroup.children].forEach(child => existingPyramidLabels.set(child.id, child));
-
-          pyramidInstructions.forEach((node, idx) => {
-            const id = `pyramid-node-${node.id || idx}`;
-            let el = existingPyramidNodes.get(id);
-            if (!el) {
-              el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-              el.setAttribute('id', id);
-              el.setAttribute('class', 'child-pyramid-node');
-              el.setAttribute('role', 'button');
-              el.setAttribute('tabindex', '0');
-              this.pyramidNodesGroup.appendChild(el);
-            }
-            if (onPyramidClick) {
-              el.onclick = () => onPyramidClick(node);
-              this.#attachKeyActivation(el, () => onPyramidClick(node));
-              el.style.cursor = 'pointer';
-            } else {
-              el.onclick = null;
-              this.#attachKeyActivation(el, null);
-              el.style.cursor = 'default';
-            }
-            el.setAttribute('cx', node.x ?? 0);
-            el.setAttribute('cy', node.y ?? 0);
-            el.setAttribute('r', node.r ?? node.radius ?? 0);
-            el.dataset.id = node.id || String(idx);
-            const ariaLabel = node.label ?? node.id ?? '';
-            if (ariaLabel) el.setAttribute('aria-label', ariaLabel);
-
-            const labelId = `pyramid-label-${node.id || idx}`;
-            let label = existingPyramidLabels.get(labelId);
-            if (!label) {
-              label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-              label.setAttribute('id', labelId);
-              label.setAttribute('class', 'child-pyramid-label');
-              this.pyramidLabelsGroup.appendChild(label);
-            }
-            label.setAttribute('x', node.x ?? 0);
-            label.setAttribute('y', (node.y ?? 0) - (node.r ?? node.radius ?? 0) - 4);
-            label.setAttribute('text-anchor', 'middle');
-            label.setAttribute('dominant-baseline', 'middle');
-            label.textContent = node.label ?? node.id ?? '';
-          });
-
-          existingPyramidNodes.forEach((el, id) => {
-            if (!pyramidInstructions.find((n, idx) => `pyramid-node-${n.id || idx}` === id)) {
-              removeNode(el);
-            }
-          });
-          existingPyramidLabels.forEach((el, id) => {
-            if (!pyramidInstructions.find((n, idx) => `pyramid-label-${n.id || idx}` === id)) {
-              removeNode(el);
-            }
-          });
-        }
-      }
+    if (this.pyramidView) {
+      this.pyramidView.render(options.pyramidData ?? null);
+      // keep references in sync for any legacy consumers
+      this.pyramidGroup = this.pyramidView.pyramidGroup;
+      this.pyramidFanLinesGroup = this.pyramidView.pyramidFanLinesGroup;
+      this.pyramidSpiralGroup = this.pyramidView.pyramidSpiralGroup;
+      this.pyramidNodesGroup = this.pyramidView.pyramidNodesGroup;
+      this.pyramidLabelsGroup = this.pyramidView.pyramidLabelsGroup;
     }
 
     if (this.band && arcParams && viewportWindow) {

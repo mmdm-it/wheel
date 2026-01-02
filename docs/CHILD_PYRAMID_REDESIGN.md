@@ -1,5 +1,7 @@
 # Child Pyramid Redesign Specification
 
+> **Superseded note (v3.7.12)**: Current implementation renders the CPUA L-shaped region with fan-lines/spiral/intersections computed by `computeChildPyramidGeometry`, with nodes hidden. The triangular arc-bound pyramid and node placement below are retained for historical reference only.
+
 ## Overview
 
 The Child Pyramid is a triangular region displaying a preview of the selected item's children. It sits between the Magnifier and the top-right corner of the viewport, bounded by a convex arc (the Focus Ring / Detail Sector arc) as its hypotenuse.

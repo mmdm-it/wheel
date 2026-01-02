@@ -1,6 +1,6 @@
 {
   "name": "wheel",
-  "version": "3.7.11",
+  "version": "3.7.12",
   "type": "module",
   "scripts": {
     "test": "node --test",

@@ -67,6 +67,7 @@ The Child Pyramid supports a spiral node layout mode, in which child nodes are p
 - **Benefits:** This method guarantees true equidistant spacing along the spiral curve, improving visual consistency and layout quality for large or irregular child sets.
 
 Adapters and geometry helpers expose this layout as part of the `layoutSpec` contract, and it is selected automatically for appropriate volumes or node counts.
+**Current implementation note (v3.7.12)**: The UI renders fan-lines, spiral, and intersections via `computeChildPyramidGeometry` and hides child nodes; Spiral layout remains the contract, but nodes are intentionally suppressed in PyramidView until re-enabled.
 - Theming: base tokens + per-volume tokens injected at render time; no inline styles/`!important`.
 
 ## Validation & Data Contracts

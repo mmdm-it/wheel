@@ -6,7 +6,7 @@ import { FocusRingView } from './view/focus-ring-view.js';
 import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
-import { buildPyramidPreview } from './core/pyramid-preview.js';
+import { computeChildPyramidGeometry } from './geometry/child-pyramid-geometry.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
@@ -238,28 +238,6 @@ export function createApp({
   let lastParentLabelOut = '';
   let lastSelectedLabelOut = '';
   const pyramidConfig = pyramid || null;
-  const getPyramidChildren = typeof pyramidConfig?.getChildren === 'function'
-    ? args => pyramidConfig.getChildren({ ...args, items: nav.items, normalized: pyramidNormalized ?? normalizedItems, viewport: vp })
-    : null;
-  const buildPyramid = selected => {
-    try {
-      const logoBounds = volumeLogo.getBounds();
-      const instructions = buildPyramidPreview({
-        viewport: vp,
-        selected,
-        getChildren: getPyramidChildren ? (ctx => getPyramidChildren({ ...ctx, selected })) : null,
-        pyramidConfig,
-        normalized: pyramidNormalized ?? normalizedItems,
-        adapter: pyramidAdapter,
-        layoutSpec: pyramidLayoutSpec,
-        logoBounds
-      });
-      return Array.isArray(instructions) && instructions.length > 0 ? instructions : null;
-    } catch (err) {
-      if (debug) console.warn('[FocusRing] pyramid preview error', err);
-      return null;
-    }
-  };
 
   const setBlur = enabled => {
     isBlurred = Boolean(enabled);
@@ -588,8 +566,18 @@ export function createApp({
     const secondaryMagnifier = getSecondaryMagnifier();
     const secondarySelected = secondaryNav.getCurrent();
     const secondaryNodes = calculateSecondaryNodePositions(secondaryNav.items, secondaryRotation);
-    const pyramidInstructions = buildPyramid(selected);
-    console.log('[FocusRing] pyramidInstructions:', pyramidInstructions ? `${pyramidInstructions.length} nodes` : 'null');
+    const pyramidData = (() => {
+      if (!pyramidConfig?.enabled) return null;
+      try {
+        return computeChildPyramidGeometry(vp, magnifier, arcParams, {
+          logoBounds: volumeLogo.getBounds(),
+          magnifierAngle: magnifier.angle
+        });
+      } catch (err) {
+        if (debug) console.warn('[FocusRing] pyramid geometry error', err);
+        return null;
+      }
+    })();
     const parentLabel = getParentLabel(selected);
     const selectedMagnifierLabel = formatLabel({ item: selected, context: 'magnifier' });
     const magnifierLabel = isLayerOut
@@ -647,8 +635,7 @@ export function createApp({
           selectedId: secondarySelected?.id,
           magnifierLabel: secondarySelected?.name || ''
         } : null,
-        pyramidInstructions,
-        onPyramidClick: pyramidConfig?.onClick,
+        pyramidData,
         logoBounds: volumeLogo.getBounds()
       }
     );

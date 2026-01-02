@@ -2,6 +2,8 @@
 
 > v3 note: This document is copied verbatim from wheel v2 and serves as the authoritative baseline for v3. Until a v3-specific revision is made, all constitutional constants, layer boundaries, and contracts here remain in force. Add any v3 deltas explicitly near the relevant sections rather than silently diverging.
 
+> **Current state (v3.7.12)**: Child Pyramid now uses the CPUA L-shaped region with fan-lines + spiral intersections via `computeChildPyramidGeometry`; child nodes are not rendered. The triangular arc-bound pyramid described below is historical. Keep this doc as baseline reference only and add explicit v3 deltas when needed.
+
 ## v3 Delta Summary (dimension + secondary language)
 
 - **Dimension mode behavior**: Dimension mode applies a blur to the primary focus ring and exposes the mirrored secondary stratum; only the Dimension button toggles mode. Secondary actions must never exit dimension mode.

@@ -6,6 +6,12 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.7.12] - 2026-01-01
+
+### Changed
+- Focus ring now feeds child pyramid geometry data (fan lines/spiral/intersections) to PyramidView and removes legacy pyramid instruction wiring.
+
+
 ## [3.7.11] - 2025-12-31
 
 ### Changed
