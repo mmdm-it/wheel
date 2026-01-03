@@ -74,8 +74,30 @@ svg {
   opacity: 1;
 }
 
+.focus-ring-band-tertiary {
+  fill: var(--color-band);
+  opacity: 1;
+}
+
+.focus-tertiary-layer {
+  opacity: 1;
+}
+
 .focus-mirror-layer {
   pointer-events: auto;
+  opacity: 0;
+  transition: opacity 2000ms var(--motion-ease, cubic-bezier(0.33, 1, 0.68, 1));
+  will-change: opacity;
+}
+
+.focus-mirror-layer.is-visible {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .focus-mirror-layer {
+    transition: none;
+  }
 }
 
 .focus-ring-node-secondary {
@@ -139,6 +161,36 @@ svg {
 }
 
 .focus-ring-magnifier.rotating .focus-ring-magnifier-label {
+  display: none;
+}
+
+.focus-ring-node-tertiary {
+  opacity: 1;
+}
+
+.focus-ring-label-tertiary {
+  opacity: 1;
+}
+
+.focus-tertiary-magnifier {
+  fill: var(--color-nodes);
+  stroke: var(--color-magnifier-stroke, #000);
+  stroke-width: 1px;
+}
+
+.focus-tertiary-magnifier.rotating {
+  fill: none;
+}
+
+.focus-tertiary-magnifier-label {
+  fill: var(--color-text);
+  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
+  font-size: clamp(21px, 2.4vmin, 39px);
+  text-transform: var(--focus-label-transform, uppercase);
+  pointer-events: none;
+}
+
+.focus-tertiary-magnifier-label.rotating {
   display: none;
 }
 

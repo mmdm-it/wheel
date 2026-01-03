@@ -133,6 +133,17 @@ export class VolumeLogo {
     }
   }
 
+  setBlur(enabled, filterId = 'focus-blur-filter') {
+    if (!this.group) return;
+    if (enabled) {
+      this.group.setAttribute('filter', `url(#${filterId})`);
+      this.group.style.pointerEvents = 'none';
+    } else {
+      this.group.removeAttribute('filter');
+      this.group.style.pointerEvents = '';
+    }
+  }
+
   /**
    * Clear the logo
    */

@@ -458,7 +458,32 @@
       return entries[0][0];
     };
 
-    loadConfig().then(async ({ volume, config, manifest, options, supplemental }) => {
+    function buildDimensionPortals(root) {
+      const cfg = root?.display_config || {};
+      const langs = cfg.languages || {};
+      const edits = cfg.editions || {};
+      const langIds = Array.isArray(langs.available) ? langs.available : [];
+      if (!langIds.length || !edits.available) return null;
+      const languageItems = langIds.map((id, idx) => ({
+        id,
+        name: langs.labels?.[id] || id,
+        order: idx
+      }));
+      return {
+        languages: {
+          items: languageItems,
+          labels: langs.labels || {},
+          defaultId: langs.default || languageItems[0]?.id || null
+        },
+        editions: {
+          available: edits.available || {},
+          default: edits.default || {},
+          labels: edits.labels || {}
+        }
+      };
+    }
+
+    loadConfig().then(async ({ volume, config, manifest, root, options, supplemental }) => {
       applyTheme(manifest, volume);
       const translationsMeta = supplemental?.translationsMeta || null;
       const fallbackTranslation = translationsForLanguage(translationsMeta, options?.locale || 'english') || 'NAB';
@@ -552,6 +577,8 @@
             }
           : undefined);
 
+      const dimensionPortals = buildDimensionPortals(root);
+
       app = createApp({
         svgRoot: svg,
         items,
@@ -568,7 +595,8 @@
         pyramidLayoutSpec: pyramidLayout,
         pyramidNormalized: adapterNormalized || normalized,
         pyramidAdapter: adapter,
-        onSelectSecondary
+        onSelectSecondary,
+        dimensionPortals
       });
       // Expose app to window for console API
       window.app = app;

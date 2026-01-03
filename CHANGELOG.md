@@ -6,6 +6,19 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.7.14] - 2026-01-02
+
+### Changed
+- Tertiary magnifier now uses the same stroke/fill, font, and rotating label behavior as primary/secondary magnifiers for consistent styling across strata.
+
+
+## [3.7.13] - 2026-01-02
+
+### Changed
+- Dimension button now auto-hydrates language/edition portals from `display_config.languages/editions` and the translations registry in the demo bootstrap, restoring tertiary strata visibility when portal data exists.
+- Focus ring stage flags log `hasPortals` and allow the secondary stratum to render in blurred mode even without portals (while keeping tertiary gated to edition stage).
+
+
 ## [3.7.12] - 2026-01-01
 
 ### Changed

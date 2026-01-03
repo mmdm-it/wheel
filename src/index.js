@@ -135,6 +135,20 @@ export function createApp({
     }));
   };
   const getDefaultEdition = langId => portalEditionDefaults[langId] || getEditionItems(langId)[0]?.id || null;
+  const logStrataTransition = (fromStage, toStage, visibility = {}) => {
+    if (!debug) return;
+    const now = (typeof performance !== 'undefined' && typeof performance.now === 'function')
+      ? performance.now()
+      : Date.now();
+    console.log('[StrataTransition]', {
+      from: fromStage,
+      to: toStage,
+      atMs: Number(now.toFixed(2)),
+      secondaryVisible: Boolean(visibility.secondary),
+      tertiaryVisible: Boolean(visibility.tertiary),
+      fadeMs: 2000
+    });
+  };
   const languageSelection = normalizeSecondaryItems(portalLanguages, portalMeta?.languages?.selectedId || portalLanguageDefault);
   let languageSelectedId = languageSelection.items[languageSelection.selectedIndex]?.id || null;
   let editionSelectedId = languageSelectedId ? (portalMeta?.editions?.selectedId || getDefaultEdition(languageSelectedId)) : null;
@@ -164,15 +178,7 @@ export function createApp({
   };
   const hasDimensionControl = hasDimensions && (hasPortals || secondaryItems.length > 0);
 
-  logOnce('[FocusRing] geometry inputs', {
-    viewport: vp,
-    nodeRadius,
-    magnifierRadius,
-    nodeSpacing,
-    arcParams,
-    windowInfo,
-    magnifier
-  });
+  // geometry inputs logged only when debug is enabled (previous log removed to reduce noise)
   const gapCount = normalizedItems.filter(item => item === null).length;
   const firstItem = normalizedItems.find(item => item !== null);
   const lastItem = [...normalizedItems].reverse().find(item => item !== null);
@@ -198,6 +204,11 @@ export function createApp({
     ? secondaryInit.selectedIndex
     : Math.max(0, Math.min(secondarySelectedIndex, Math.max((secondaryInit.items?.length || 1) - 1, 0)));
   secondaryNav.setItems(secondaryInit.items || [], safeSecondaryIndex);
+  const tertiaryNav = new NavigationState();
+  const initialTertiaryItems = hasPortals && languageSelectedId ? getEditionItems(languageSelectedId) : [];
+  const initialTertiarySelected = initialTertiaryItems.findIndex(item => item?.id === editionSelectedId);
+  const safeTertiaryIndex = Math.max(0, initialTertiarySelected >= 0 ? initialTertiarySelected : 0);
+  tertiaryNav.setItems(initialTertiaryItems, safeTertiaryIndex);
   const view = new FocusRingView(svgRoot);
   view.init();
   
@@ -233,6 +244,10 @@ export function createApp({
   let secondaryIsRotating = false;
   let secondaryRotation = 0;
   let secondarySnapId = null;
+  let tertiaryChoreographer = null;
+  let tertiaryIsRotating = false;
+  let tertiaryRotation = 0;
+  let tertiarySnapId = null;
   let isLayerOut = false; // track layer migration state between parent button and magnifier
   let parentButtonsVisibility = { showOuter: true };
   let lastParentLabelOut = '';
@@ -242,6 +257,7 @@ export function createApp({
   const setBlur = enabled => {
     isBlurred = Boolean(enabled);
     view.setBlur(isBlurred);
+    if (volumeLogo?.setBlur) volumeLogo.setBlur(isBlurred);
     if (isBlurred) {
       isRotating = false;
       secondaryIsRotating = false;
@@ -283,6 +299,48 @@ export function createApp({
     const arcLength = windowInfo.arcLength;
     const startAngle = secMag.angle - arcLength / 2;
     const endAngle = secMag.angle + arcLength / 2;
+    const maxNodes = windowInfo.maxNodes;
+    return { startAngle, endAngle, arcLength, maxNodes };
+  };
+
+  const getTertiaryMagnifier = () => {
+    const arc = getTertiaryArc();
+    if (arc) {
+      const primaryMag = magnifier;
+      const secondaryMag = getSecondaryMagnifier();
+      const midX = (primaryMag.x + secondaryMag.x) / 2;
+      const midY = (primaryMag.y + secondaryMag.y) / 2;
+      const angle = Math.atan2(midY - arc.hubY, midX - arc.hubX);
+      return {
+        angle,
+        x: arc.hubX + arc.radius * Math.cos(angle),
+        y: arc.hubY + arc.radius * Math.sin(angle),
+        radius: magnifierRadius
+      };
+    }
+    return { ...magnifier, radius: magnifierRadius };
+  };
+
+  const getTertiaryArc = () => {
+    const primary = { x: magnifier.x, y: magnifier.y };
+    const secondaryY = (vp.height ?? vp.LSd ?? primary.y) - primary.y;
+    const secondary = { x: primary.x, y: secondaryY };
+    const dy = secondary.y - primary.y;
+    const d = Math.abs(dy);
+    const radius = arcParams.radius;
+    if (d > radius * 2) return null;
+    const midY = (primary.y + secondary.y) / 2;
+    const offset = Math.sqrt(Math.max(0, radius * radius - (d * d) / 4));
+    const hubX = primary.x + offset;
+    const hubY = midY;
+    return { hubX, hubY, radius };
+  };
+
+  const getTertiaryWindow = arc => {
+    if (!arc) return null;
+    const startAngle = Math.atan2(vp.height - arc.hubY, vp.width - arc.hubX);
+    const arcLength = windowInfo.arcLength;
+    const endAngle = startAngle + arcLength;
     const maxNodes = windowInfo.maxNodes;
     return { startAngle, endAngle, arcLength, maxNodes };
   };
@@ -373,6 +431,24 @@ export function createApp({
     };
   };
 
+  const computeTertiaryBounds = visibleItems => {
+    const nonNull = visibleItems.filter(item => item !== null);
+    if (!nonNull.length) return { minRotation: 0, maxRotation: 0 };
+    const window = getTertiaryWindow(getTertiaryArc());
+    const firstOrder = Number.isFinite(nonNull[0].order) ? nonNull[0].order : visibleItems.indexOf(nonNull[0]);
+    const lastOrder = Number.isFinite(nonNull[nonNull.length - 1].order)
+      ? nonNull[nonNull.length - 1].order
+      : visibleItems.lastIndexOf(nonNull[nonNull.length - 1]);
+    const baseAngle = magnifier.angle;
+    const spacing = nodeSpacing;
+    const firstAngle = baseAngle + (firstOrder + 1) * spacing * -1;
+    const lastAngle = baseAngle + (lastOrder + 1) * spacing * -1;
+    return {
+      minRotation: window.startAngle - firstAngle,
+      maxRotation: window.endAngle - lastAngle
+    };
+  };
+
   const alignToSelected = () => {
     const selected = nav.getCurrent();
     if (!selected) return;
@@ -397,10 +473,17 @@ export function createApp({
     alignSecondaryToSelected();
   };
 
+  const applyTertiaryItems = (items, preferredId = null) => {
+    const normalized = normalizeSecondaryItems(items, preferredId);
+    tertiaryNav.setItems(normalized.items, normalized.selectedIndex);
+  };
+
   const setStage = next => {
+    const prevStage = portalStage;
     portalStage = next;
     if (!hasPortals) {
       setBlur(next !== 'primary');
+      logStrataTransition(prevStage, next, { secondary: next !== 'primary', tertiary: false });
       return;
     }
     if (next === 'language') {
@@ -408,10 +491,15 @@ export function createApp({
     } else if (next === 'edition') {
       const editions = getEditionItems(languageSelectedId);
       editionSelectedId = editionSelectedId || getDefaultEdition(languageSelectedId);
-      applySecondaryItems(editions, editionSelectedId);
+      applyTertiaryItems(editions, editionSelectedId);
     }
     const shouldBlur = next !== 'primary';
     setBlur(shouldBlur);
+    const visibility = {
+      secondary: next !== 'primary',
+      tertiary: next === 'edition'
+    };
+    logStrataTransition(prevStage, next, visibility);
     emit({
       type: 'dimension:stage',
       stage: portalStage,
@@ -424,6 +512,7 @@ export function createApp({
     if (!langItem) return;
     languageSelectedId = langItem.id ?? langItem.language ?? langItem;
     editionSelectedId = getDefaultEdition(languageSelectedId);
+    applyTertiaryItems(getEditionItems(languageSelectedId), editionSelectedId);
     if (typeof portalMeta?.onSelectLanguage === 'function') {
       portalMeta.onSelectLanguage(languageSelectedId);
     }
@@ -432,11 +521,14 @@ export function createApp({
       language: languageSelectedId,
       edition: editionSelectedId || null
     });
+    render(rotation);
   };
 
   const setEditionSelection = editionItem => {
     if (!editionItem) return;
     editionSelectedId = editionItem.id ?? editionItem.edition ?? editionItem;
+    const idx = tertiaryNav.items.findIndex(item => item?.id === editionSelectedId);
+    if (idx >= 0) tertiaryNav.selectIndex(idx);
     if (typeof portalMeta?.onSelectEdition === 'function') {
       portalMeta.onSelectEdition(editionSelectedId, { language: languageSelectedId });
     }
@@ -445,6 +537,7 @@ export function createApp({
       edition: editionSelectedId,
       language: languageSelectedId || null
     });
+    render(rotation);
   };
 
   const cyclePortalStage = () => {
@@ -457,11 +550,7 @@ export function createApp({
       return;
     }
     if (portalStage === 'language') {
-      if (hasTertiaryForLanguage(languageSelectedId)) {
-        setStage('edition');
-      } else {
-        setStage('primary');
-      }
+      setStage('edition');
       return;
     }
     setStage('primary');
@@ -535,6 +624,32 @@ export function createApp({
     return positions;
   };
 
+  const calculateTertiaryNodePositions = (allItems, rotationOffset = tertiaryRotation) => {
+    const terMag = getTertiaryMagnifier();
+    const terArc = getTertiaryArc();
+    const terWindow = getTertiaryWindow(terArc);
+    if (!terArc || !terWindow) return [];
+    const positions = [];
+    allItems.forEach((item, index) => {
+      if (item === null) return;
+      const order = Number.isFinite(item.order) ? item.order : index;
+      const baseAngle = terMag.angle + (order + 1) * nodeSpacing * -1;
+      const rotatedAngle = baseAngle + rotationOffset;
+      if (rotatedAngle < terWindow.startAngle || rotatedAngle > terWindow.endAngle) return;
+      positions.push({
+        item,
+        index,
+        angle: rotatedAngle,
+        x: terArc.hubX + terArc.radius * Math.cos(rotatedAngle),
+        y: terArc.hubY + terArc.radius * Math.sin(rotatedAngle),
+        radius: nodeRadius,
+        label: item.name,
+        labelCentered: true
+      });
+    });
+    return positions;
+  };
+
   const render = (nextRotation = rotation) => {
     const canTime = typeof performance !== 'undefined' && typeof performance.now === 'function';
     const renderStart = canTime ? performance.now() : null;
@@ -566,6 +681,11 @@ export function createApp({
     const secondaryMagnifier = getSecondaryMagnifier();
     const secondarySelected = secondaryNav.getCurrent();
     const secondaryNodes = calculateSecondaryNodePositions(secondaryNav.items, secondaryRotation);
+    const tertiaryArc = getTertiaryArc();
+    const tertiaryWindow = getTertiaryWindow(tertiaryArc);
+    const tertiaryMagnifier = getTertiaryMagnifier();
+    const tertiarySelected = tertiaryNav.getCurrent();
+    const tertiaryNodes = calculateTertiaryNodePositions(tertiaryNav.items, tertiaryRotation);
     const pyramidData = (() => {
       if (!pyramidConfig?.enabled) return null;
       try {
@@ -598,6 +718,9 @@ export function createApp({
       return 'Toggle dimension mode';
     })();
 
+    const showSecondary = isBlurred && secondaryNav.items.length > 0 && (!hasPortals || portalStage !== 'primary');
+    const showTertiary = isBlurred && hasPortals && portalStage === 'edition';
+
     view.render(
       nodes,
       arcParams,
@@ -626,7 +749,8 @@ export function createApp({
           isLayerOut,
           showOuter: parentButtonsVisibility.showOuter
         },
-        secondary: isBlurred && secondaryNav.items.length > 0 ? {
+        showSecondary,
+        secondary: showSecondary ? {
           nodes: secondaryNodes,
           isRotating: secondaryIsRotating,
           magnifierAngle: secondaryMagnifier.angle,
@@ -635,6 +759,17 @@ export function createApp({
           selectedId: secondarySelected?.id,
           magnifierLabel: secondarySelected?.name || ''
         } : null,
+        showTertiary,
+        tertiary: showTertiary ? {
+          nodes: tertiaryNodes,
+          isRotating: tertiaryIsRotating,
+          magnifierAngle: tertiaryMagnifier.angle,
+          labelMaskEpsilon,
+          onNodeClick: node => rotateTertiaryNodeIntoMagnifier(node),
+          selectedId: tertiarySelected?.id,
+          magnifierLabel: tertiarySelected?.name || ''
+        } : null,
+        tertiaryMagnifier: showTertiary ? { ...tertiaryMagnifier, label: tertiarySelected?.name || '' } : null,
         pyramidData,
         logoBounds: volumeLogo.getBounds()
       }
@@ -745,22 +880,6 @@ export function createApp({
 
   const rotateSecondaryNodeIntoMagnifier = node => {
     if (!node?.item) return;
-    if (hasPortals) {
-      if (portalStage === 'language') {
-        setLanguageSelection(node.item);
-        if (hasTertiaryForLanguage(languageSelectedId)) {
-          setStage('edition');
-        } else {
-          setStage('primary');
-        }
-        return;
-      }
-      if (portalStage === 'edition') {
-        setEditionSelection(node.item);
-        setStage('primary');
-        return;
-      }
-    }
     const secMag = getSecondaryMagnifier();
     const targetAngle = secMag.angle;
     const baseAngle = getSecondaryBaseAngle(node.item.order);
@@ -770,7 +889,31 @@ export function createApp({
     secondaryRotation = clampSecondaryRotation(desiredRotation, bounds);
     secondaryIsRotating = false;
     render(rotation);
-    invokeSecondarySelection(node.item);
+    if (hasPortals) {
+      if (portalStage === 'language') {
+        setLanguageSelection(node.item);
+      } else if (portalStage === 'edition') {
+        setEditionSelection(node.item);
+      }
+    } else {
+      invokeSecondarySelection(node.item);
+    }
+  };
+
+  const rotateTertiaryNodeIntoMagnifier = node => {
+    if (!node?.item) return;
+    const terArc = getTertiaryArc();
+    const terWindow = getTertiaryWindow(terArc);
+    if (!terArc || !terWindow) return;
+    const targetAngle = magnifier.angle;
+    const baseAngle = targetAngle + (node.item.order + 1) * nodeSpacing * -1;
+    const desiredRotation = targetAngle - baseAngle;
+    const bounds = computeTertiaryBounds(tertiaryNav.items);
+    tertiaryNav.selectIndex(node.index);
+    tertiaryRotation = clampSecondaryRotation(desiredRotation, bounds);
+    tertiaryIsRotating = false;
+    render(rotation);
+    setEditionSelection(node.item);
   };
 
   const cancelSnap = () => {
@@ -890,21 +1033,6 @@ export function createApp({
 
   const selectSecondaryNearest = () => {
     if (!secondaryNav.items.length) return;
-    if (hasPortals) {
-      const current = secondaryNav.getCurrent();
-      if (portalStage === 'language') {
-        setLanguageSelection(current);
-        if (hasTertiaryForLanguage(languageSelectedId)) {
-          setStage('edition');
-        } else {
-          setStage('primary');
-        }
-      } else if (portalStage === 'edition') {
-        setEditionSelection(current);
-        setStage('primary');
-      }
-      return;
-    }
     const secMag = getSecondaryMagnifier();
     let closestIdx = secondaryNav.getCurrentIndex();
     let closestDiff = Infinity;
@@ -928,12 +1056,28 @@ export function createApp({
       secondaryRotation = targetRotation;
       secondaryIsRotating = false;
       render(rotation);
-      invokeSecondarySelection(selectedItem);
+      if (hasPortals) {
+        if (portalStage === 'language') {
+          setLanguageSelection(selectedItem);
+        } else if (portalStage === 'edition') {
+          setEditionSelection(selectedItem);
+        }
+      } else {
+        invokeSecondarySelection(selectedItem);
+      }
       return;
     }
     secondaryIsRotating = false;
     render(rotation, false);
-    invokeSecondarySelection(selectedItem);
+    if (hasPortals) {
+      if (portalStage === 'language') {
+        setLanguageSelection(selectedItem);
+      } else if (portalStage === 'edition') {
+        setEditionSelection(selectedItem);
+      }
+    } else {
+      invokeSecondarySelection(selectedItem);
+    }
   };
 
   render(rotation);
@@ -960,10 +1104,12 @@ export function createApp({
     hasSecondary: () => secondaryNav.items.length > 0,
     rotateSecondary: delta => {
       if (!secondaryChoreographer) return;
+      if (hasPortals && portalStage === 'edition') return; // tertiary stage: ignore secondary interactions
       secondaryChoreographer.rotate(delta);
     },
     beginSecondaryRotation: () => {
       if (!secondaryChoreographer) return;
+      if (hasPortals && portalStage === 'edition') return;
       secondaryIsRotating = true;
       if (secondarySnapId) {
         cancelAnimationFrame(secondarySnapId);
@@ -972,6 +1118,7 @@ export function createApp({
     },
     endSecondaryRotation: () => {
       if (!secondaryChoreographer) return;
+      if (hasPortals && portalStage === 'edition') return;
       selectSecondaryNearest();
       secondaryChoreographer.stopMomentum();
       secondaryIsRotating = false;

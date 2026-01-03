@@ -15,6 +15,12 @@ export class FocusRingView {
     this.pyramidView = null;
     this.mirroredNodesGroup = null;
     this.mirroredLabelsGroup = null;
+    this.tertiaryLayer = null;
+    this.tertiaryBand = null;
+    this.tertiaryNodesGroup = null;
+    this.tertiaryLabelsGroup = null;
+    this.tertiaryMagnifier = null;
+    this.tertiaryMagnifierLabel = null;
     this.magnifierGroup = null;
     this.magnifierCircle = null;
     this.magnifierLabel = null;
@@ -66,6 +72,28 @@ export class FocusRingView {
     this.band = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     this.band.setAttribute('class', 'focus-ring-band');
     this.blurGroup.appendChild(this.band);
+
+    this.tertiaryLayer = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.tertiaryLayer.setAttribute('class', 'focus-tertiary-layer');
+    this.svgRoot.appendChild(this.tertiaryLayer);
+    this.tertiaryBand = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    this.tertiaryBand.setAttribute('class', 'focus-ring-band focus-ring-band-tertiary');
+    this.tertiaryBand.style.pointerEvents = 'none';
+    this.tertiaryLayer.appendChild(this.tertiaryBand);
+    this.tertiaryNodesGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.tertiaryNodesGroup.setAttribute('class', 'focus-tertiary-nodes');
+    this.tertiaryLabelsGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.tertiaryLabelsGroup.setAttribute('class', 'focus-tertiary-labels');
+    this.tertiaryMagnifier = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    this.tertiaryMagnifier.setAttribute('class', 'focus-ring-magnifier-circle focus-tertiary-magnifier');
+    this.tertiaryMagnifierLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    this.tertiaryMagnifierLabel.setAttribute('class', 'focus-ring-magnifier-label focus-tertiary-magnifier-label');
+    this.tertiaryMagnifierLabel.setAttribute('text-anchor', 'middle');
+    this.tertiaryMagnifierLabel.setAttribute('dominant-baseline', 'middle');
+    this.tertiaryLayer.appendChild(this.tertiaryNodesGroup);
+    this.tertiaryLayer.appendChild(this.tertiaryLabelsGroup);
+    this.tertiaryLayer.appendChild(this.tertiaryMagnifier);
+    this.tertiaryLayer.appendChild(this.tertiaryMagnifierLabel);
 
     this.parentButtonOuter = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
     this.parentButtonOuter.setAttribute('class', 'focus-ring-magnifier-circle');
@@ -152,6 +180,7 @@ export class FocusRingView {
     if (!this.nodesGroup) return;
     const isRotating = Boolean(options.isRotating);
     const isBlurred = Boolean(options.isBlurred);
+    const debug = Boolean(options.debug);
     const viewport = options.viewport ?? {};
     const viewportWidth = viewport.width ?? 0;
     const viewportHeight = viewport.height ?? 0;
@@ -165,7 +194,10 @@ export class FocusRingView {
         el.parentNode.removeChild(el);
       }
     };
-    const secondary = options.secondary;
+    const showSecondary = options.showSecondary ?? Boolean(options.secondary);
+    const secondary = showSecondary ? options.secondary : null;
+    const tertiary = options.showTertiary ? options.tertiary : null;
+    const terIsRotating = Boolean(tertiary?.isRotating);
     const magnifierAngle = options.magnifierAngle;
     const labelMaskEpsilon = options.labelMaskEpsilon ?? 0.0001;
     const onNodeClick = options.onNodeClick;
@@ -185,10 +217,25 @@ export class FocusRingView {
     if (this.mirrorLayer && this.mirroredMagnifierLabel?.parentNode === this.mirrorLayer) {
       this.mirrorLayer.appendChild(this.mirroredMagnifierLabel);
     }
+    if (this.mirrorLayer) {
+      const secondaryVisible = Boolean(showSecondary && secondary);
+      const pointerState = options.showTertiary ? 'none' : (secondaryVisible ? 'auto' : 'none');
+      this.mirrorLayer.removeAttribute('display');
+      if (options.showTertiary) {
+        this.mirrorLayer.setAttribute('filter', 'url(#focus-blur-filter)');
+      } else {
+        this.mirrorLayer.removeAttribute('filter');
+      }
+      this.mirrorLayer.style.pointerEvents = pointerState;
+      this.mirrorLayer.style.opacity = '';
+      this.mirrorLayer.removeAttribute('transform');
+      this.mirrorLayer.classList.toggle('is-visible', secondaryVisible);
+    }
     if (this.blurGroup && this.svgRoot) {
-      // Keep layering: base blur content, then mirrored band, then dimension icon
+      // Layering order (back to front): primary, secondary (mirrored), tertiary, controls
       this.svgRoot.appendChild(this.blurGroup);
       if (this.mirrorLayer) this.svgRoot.appendChild(this.mirrorLayer);
+      if (this.tertiaryLayer) this.svgRoot.appendChild(this.tertiaryLayer);
       if (this.dimensionIcon) this.svgRoot.appendChild(this.dimensionIcon);
     }
 
@@ -207,7 +254,7 @@ export class FocusRingView {
     }
 
     if (this.mirroredBand) {
-      if (isBlurred && arcParams && viewport) {
+      if (secondary && arcParams && viewport) {
         const mirroredArc = this.#mirroredArc(arcParams, viewport);
         const mirroredWindow = this.#mirroredWindow(viewport, mirroredArc);
         if (mirroredWindow) {
@@ -218,6 +265,21 @@ export class FocusRingView {
         }
       } else {
         this.mirroredBand.setAttribute('display', 'none');
+      }
+    }
+
+    if (this.tertiaryBand) {
+      if (options.showTertiary && arcParams && viewport && magnifier) {
+        const tertiaryArc = this.#tertiaryArc(arcParams, viewport, magnifier);
+        const tertiaryWindow = tertiaryArc ? this.#tertiaryWindow(viewport, tertiaryArc, viewportWindow) : null;
+        if (tertiaryArc && tertiaryWindow) {
+          this.tertiaryBand.setAttribute('d', this.#ringPath(tertiaryArc, tertiaryWindow));
+          this.tertiaryBand.removeAttribute('display');
+        } else {
+          this.tertiaryBand.setAttribute('display', 'none');
+        }
+      } else {
+        this.tertiaryBand.setAttribute('display', 'none');
       }
     }
 
@@ -449,10 +511,109 @@ export class FocusRingView {
       });
     } else {
       if (this.mirroredNodesGroup) {
-        this.mirroredNodesGroup.setAttribute('display', 'none');
+        this.mirroredNodesGroup.removeAttribute('display');
+        this.mirroredNodesGroup.style.pointerEvents = 'none';
       }
       if (this.mirroredLabelsGroup) {
-        this.mirroredLabelsGroup.setAttribute('display', 'none');
+        this.mirroredLabelsGroup.removeAttribute('display');
+        this.mirroredLabelsGroup.style.pointerEvents = 'none';
+      }
+    }
+
+    if (options.showTertiary && tertiary?.nodes && this.tertiaryNodesGroup && this.tertiaryLabelsGroup) {
+      this.tertiaryNodesGroup.removeAttribute('display');
+      this.tertiaryLabelsGroup.removeAttribute('display');
+      const terNodes = tertiary.nodes;
+      const terMagnifierAngle = tertiary.magnifierAngle;
+      const terLabelMaskEpsilon = tertiary.labelMaskEpsilon ?? labelMaskEpsilon;
+      const terOnNodeClick = tertiary.onNodeClick;
+      const terSelectedId = tertiary.selectedId;
+
+      const existingTerNodes = new Map();
+      [...this.tertiaryNodesGroup.children].forEach(child => existingTerNodes.set(child.id, child));
+      const existingTerLabels = new Map();
+      [...(this.tertiaryLabelsGroup?.children || [])].forEach(child => existingTerLabels.set(child.id, child));
+
+      terNodes.forEach(node => {
+        if (node.item === null) return;
+        const id = `tertiary-node-${node.item.id || node.index}`;
+        let el = existingTerNodes.get(id);
+        if (!el) {
+          el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+          el.setAttribute('id', id);
+          el.setAttribute('class', 'focus-ring-node focus-ring-node-tertiary');
+          el.setAttribute('role', 'button');
+          el.setAttribute('tabindex', '0');
+          this.tertiaryNodesGroup.appendChild(el);
+        }
+        if (terOnNodeClick) {
+          el.onclick = () => terOnNodeClick(node);
+          this.#attachKeyActivation(el, () => terOnNodeClick(node));
+          el.style.cursor = 'pointer';
+        } else {
+          el.onclick = null;
+          this.#attachKeyActivation(el, null);
+          el.style.cursor = 'default';
+        }
+        el.setAttribute('cx', node.x);
+        el.setAttribute('cy', node.y);
+        const nodeRadius = node.radius;
+        el.setAttribute('r', nodeRadius);
+        el.dataset.index = node.index;
+        const ariaLabel = node.label ?? node.item?.name ?? node.item?.id ?? '';
+        if (ariaLabel) el.setAttribute('aria-label', ariaLabel);
+
+        const labelId = `tertiary-label-${node.item.id || node.index}`;
+        let label = existingTerLabels.get(labelId);
+        if (!label) {
+          label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+          label.setAttribute('id', labelId);
+          label.setAttribute('class', 'focus-ring-label focus-ring-label-tertiary');
+          this.tertiaryLabelsGroup.appendChild(label);
+        }
+        const useCentered = Boolean(node.labelCentered);
+        if (useCentered) {
+          label.setAttribute('x', node.x);
+          label.setAttribute('y', node.y);
+          label.setAttribute('text-anchor', 'middle');
+          label.setAttribute('dominant-baseline', 'middle');
+          const rotation = (node.angle * 180) / Math.PI + 180;
+          label.setAttribute('transform', `rotate(${rotation}, ${node.x}, ${node.y})`);
+        } else {
+          const radius = nodeRadius;
+          const offset = radius * -1.3;
+          const lx = node.x + Math.cos(node.angle) * offset;
+          const ly = node.y + Math.sin(node.angle) * offset;
+          label.setAttribute('x', lx);
+          label.setAttribute('y', ly);
+          label.setAttribute('text-anchor', 'end');
+          label.setAttribute('dominant-baseline', 'middle');
+          const rotation = (node.angle * 180) / Math.PI + 180;
+          label.setAttribute('transform', `rotate(${rotation}, ${lx}, ${ly})`);
+        }
+        const masked = this.#isNearMagnifier(node.angle, terMagnifierAngle, terLabelMaskEpsilon);
+        const isSelected = terSelectedId && (node.item.id === terSelectedId);
+        const showNodeLabel = terIsRotating || (!masked && !isSelected);
+        label.textContent = showNodeLabel ? (node.label ?? node.item.name ?? '') : '';
+      });
+
+      existingTerNodes.forEach((el, id) => {
+        if (!terNodes.find(n => `tertiary-node-${n.item?.id || n.index}` === id)) {
+          removeNode(el);
+        }
+      });
+
+      existingTerLabels.forEach((el, id) => {
+        if (!terNodes.find(n => `tertiary-label-${n.item?.id || n.index}` === id)) {
+          removeNode(el);
+        }
+      });
+    } else {
+      if (this.tertiaryNodesGroup) {
+        this.tertiaryNodesGroup.setAttribute('display', 'none');
+      }
+      if (this.tertiaryLabelsGroup) {
+        this.tertiaryLabelsGroup.setAttribute('display', 'none');
       }
     }
 
@@ -478,6 +639,30 @@ export class FocusRingView {
       this.magnifierGroup.removeAttribute('display');
     } else if (this.magnifierGroup) {
       this.magnifierGroup.setAttribute('display', 'none');
+    }
+
+    if (options.showTertiary && this.tertiaryMagnifier && this.tertiaryMagnifierLabel && options.tertiaryMagnifier) {
+      const tMag = options.tertiaryMagnifier;
+      const radius = tMag.radius || 14;
+      this.tertiaryMagnifier.setAttribute('cx', tMag.x);
+      this.tertiaryMagnifier.setAttribute('cy', tMag.y);
+      this.tertiaryMagnifier.setAttribute('r', radius);
+      this.tertiaryMagnifier.setAttribute('role', 'img');
+      if (tMag.label) {
+        this.tertiaryMagnifier.setAttribute('aria-label', tMag.label);
+      }
+      this.tertiaryMagnifier.classList.toggle('rotating', terIsRotating);
+      this.tertiaryMagnifierLabel.setAttribute('x', tMag.x);
+      this.tertiaryMagnifierLabel.setAttribute('y', tMag.y);
+      const tRotation = ((tMag.angle || 0) * 180) / Math.PI + 180;
+      this.tertiaryMagnifierLabel.setAttribute('transform', `rotate(${tRotation}, ${tMag.x}, ${tMag.y})`);
+      this.tertiaryMagnifierLabel.classList.toggle('rotating', terIsRotating);
+      this.tertiaryMagnifierLabel.textContent = terIsRotating ? '' : (tMag.label || '');
+      this.tertiaryMagnifier.removeAttribute('display');
+      this.tertiaryMagnifierLabel.removeAttribute('display');
+    } else {
+      if (this.tertiaryMagnifier) this.tertiaryMagnifier.setAttribute('display', 'none');
+      if (this.tertiaryMagnifierLabel) this.tertiaryMagnifierLabel.setAttribute('display', 'none');
     }
 
     if (this.parentButtonOuter && arcParams && magnifier) {
@@ -573,6 +758,33 @@ export class FocusRingView {
     if (!arcParams || !viewport) return arcParams;
     const mirroredHubY = viewport.LSd ?? arcParams.hubY;
     return { ...arcParams, hubY: mirroredHubY };
+  }
+
+  #tertiaryArc(arcParams, viewport, magnifier) {
+    if (!arcParams || !viewport || !magnifier) return null;
+    const radius = arcParams.radius;
+    const primary = { x: magnifier.x, y: magnifier.y };
+    const secondaryY = (viewport.height ?? viewport.LSd ?? primary.y) - primary.y;
+    const secondary = { x: primary.x, y: secondaryY };
+    const dy = secondary.y - primary.y;
+    const d = Math.abs(dy);
+    if (d > radius * 2) return null; // points too far apart for given radius
+    const midY = (primary.y + secondary.y) / 2;
+    const offset = Math.sqrt(Math.max(0, radius * radius - (d * d) / 4));
+    const hubX = primary.x + offset; // place hub to the right to stay consistent with primary ring
+    const hubY = midY;
+    return { hubX, hubY, radius };
+  }
+
+  #tertiaryWindow(viewport, arcParams, baseWindow = null) {
+    if (!viewport || !arcParams) return null;
+    const { width, height } = viewport;
+    const startAngle = Math.atan2(height - arcParams.hubY, width - arcParams.hubX);
+    const desiredArc = baseWindow?.arcLength || (baseWindow?.endAngle && baseWindow?.startAngle !== undefined
+      ? baseWindow.endAngle - baseWindow.startAngle
+      : Math.PI);
+    const endAngle = startAngle + desiredArc;
+    return { startAngle, endAngle };
   }
 
   #isNearMagnifier(angle, magnifierAngle, epsilon) {
