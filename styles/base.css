@@ -74,6 +74,20 @@ svg {
   opacity: 1;
 }
 
+.focus-ring-band-diagnostic {
+  fill: none;
+  stroke: #00ff00;
+  stroke-width: 2px;
+  transition: transform 2000ms var(--motion-ease, cubic-bezier(0.33, 1, 0.68, 1));
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .focus-ring-band-diagnostic {
+    transition: none;
+  }
+}
+
 .focus-ring-band-tertiary {
   fill: var(--color-band);
   opacity: 1;
@@ -86,8 +100,9 @@ svg {
 .focus-mirror-layer {
   pointer-events: auto;
   opacity: 0;
-  transition: opacity 2000ms var(--motion-ease, cubic-bezier(0.33, 1, 0.68, 1));
-  will-change: opacity;
+  transition: opacity 2000ms var(--motion-ease, cubic-bezier(0.33, 1, 0.68, 1)),
+    transform 2000ms var(--motion-ease, cubic-bezier(0.33, 1, 0.68, 1));
+  will-change: opacity, transform;
 }
 
 .focus-mirror-layer.is-visible {

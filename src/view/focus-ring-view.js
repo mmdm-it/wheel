@@ -72,6 +72,18 @@ export class FocusRingView {
     this.band = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     this.band.setAttribute('class', 'focus-ring-band');
     this.blurGroup.appendChild(this.band);
+    
+    this.bandDiagnostic = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    this.bandDiagnostic.setAttribute('class', 'focus-ring-band-diagnostic');
+    this.svgRoot.appendChild(this.bandDiagnostic);
+    
+    this.bandDiagnostic = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    this.bandDiagnostic.setAttribute('class', 'focus-ring-band-diagnostic');
+    this.blurGroup.appendChild(this.bandDiagnostic);
+    
+    this.bandDiagnostic = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    this.bandDiagnostic.setAttribute('class', 'focus-ring-band-diagnostic');
+    this.blurGroup.appendChild(this.bandDiagnostic);
 
     this.tertiaryLayer = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.tertiaryLayer.setAttribute('class', 'focus-tertiary-layer');
@@ -228,15 +240,58 @@ export class FocusRingView {
       }
       this.mirrorLayer.style.pointerEvents = pointerState;
       this.mirrorLayer.style.opacity = '';
-      this.mirrorLayer.removeAttribute('transform');
+      
+      // Animate secondary band splitting from primary position to mirrored position
+      if (magnifier && viewport) {
+        const primaryY = magnifier.y;
+        const mirroredY = (viewport.height ?? viewport.LSd ?? primaryY) - primaryY;
+        const offset = mirroredY - primaryY; // Distance between primary and secondary
+        const translateY = secondaryVisible ? 0 : -offset; // Start at primary, end at mirrored
+        this.mirrorLayer.setAttribute('transform', `translate(0, ${translateY})`);
+      } else {
+        this.mirrorLayer.removeAttribute('transform');
+      }
+      
       this.mirrorLayer.classList.toggle('is-visible', secondaryVisible);
     }
     if (this.blurGroup && this.svgRoot) {
       // Layering order (back to front): primary, secondary (mirrored), tertiary, controls
       this.svgRoot.appendChild(this.blurGroup);
+      if (this.bandDiagnostic) this.svgRoot.appendChild(this.bandDiagnostic);
       if (this.mirrorLayer) this.svgRoot.appendChild(this.mirrorLayer);
       if (this.tertiaryLayer) this.svgRoot.appendChild(this.tertiaryLayer);
       if (this.dimensionIcon) this.svgRoot.appendChild(this.dimensionIcon);
+    }
+
+    if (this.band) {
+      // Animate diagnostic stroke from primary to secondary (mirrored) arc geometry
+      const secondaryAnimating = Boolean(options.secondaryAnimating && secondary);
+      if (this.bandDiagnostic && arcParams && viewportWindow && viewport) {
+        if (secondary) {
+          // Use mirrored arc geometry for correct end-state when secondary exists
+          const mirroredArc = this.#mirroredArc(arcParams, viewport);
+          const mirroredWindow = this.#mirroredWindow(viewport, mirroredArc);
+          if (mirroredWindow) {
+            this.bandDiagnostic.setAttribute('d', this.#ringPath(mirroredArc, mirroredWindow));
+            
+            // Calculate transform to move mirrored arc back to primary position when not animating
+            if (!secondaryAnimating && magnifier) {
+              const primaryY = magnifier.y;
+              const mirroredY = (viewport.height ?? viewport.LSd ?? primaryY) - primaryY;
+              const offset = mirroredY - primaryY;
+              this.bandDiagnostic.setAttribute('transform', `translate(0, ${-offset})`);
+            } else {
+              this.bandDiagnostic.removeAttribute('transform');
+            }
+          }
+        } else {
+          // Use primary arc geometry when secondary doesn't exist yet
+          this.bandDiagnostic.setAttribute('d', this.#ringPath(arcParams, viewportWindow));
+          this.bandDiagnostic.removeAttribute('transform');
+        }
+      } else if (this.bandDiagnostic) {
+        this.bandDiagnostic.removeAttribute('transform');
+      }
     }
 
     if (this.pyramidView) {

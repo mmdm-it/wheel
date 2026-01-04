@@ -153,6 +153,10 @@ export function createApp({
   let languageSelectedId = languageSelection.items[languageSelection.selectedIndex]?.id || null;
   let editionSelectedId = languageSelectedId ? (portalMeta?.editions?.selectedId || getDefaultEdition(languageSelectedId)) : null;
   let portalStage = 'primary';
+  let secondaryDelayTimer = null;
+  let secondaryDelayed = false;
+  let diagnosticAnimationTimer = null;
+  let diagnosticReadyToAnimate = false;
   let preserveOrderFlag = preserveOrder;
   let normalizedItems = normalizeItems(items, { preserveOrder: preserveOrderFlag });
   const formatLabel = typeof labelFormatter === 'function'
@@ -481,6 +485,17 @@ export function createApp({
   const setStage = next => {
     const prevStage = portalStage;
     portalStage = next;
+    
+    // Clear any existing secondary delay timer
+    if (secondaryDelayTimer) {
+      clearTimeout(secondaryDelayTimer);
+      secondaryDelayTimer = null;
+    }
+    if (diagnosticAnimationTimer) {
+      clearTimeout(diagnosticAnimationTimer);
+      diagnosticAnimationTimer = null;
+    }
+    
     if (!hasPortals) {
       setBlur(next !== 'primary');
       logStrataTransition(prevStage, next, { secondary: next !== 'primary', tertiary: false });
@@ -488,10 +503,29 @@ export function createApp({
     }
     if (next === 'language') {
       applySecondaryItems(languageSelection.items, languageSelectedId);
+      // Delay secondary visibility for 2 seconds
+      secondaryDelayed = true;
+      secondaryDelayTimer = setTimeout(() => {
+        secondaryDelayed = false;
+        render(rotation);
+      }, 2000);
+      
+      // Trigger diagnostic animation after first render sets up geometry
+      diagnosticReadyToAnimate = false;
+      render(rotation); // Initial render with transform applied
+      diagnosticAnimationTimer = setTimeout(() => {
+        diagnosticReadyToAnimate = true;
+        render(rotation); // Trigger animation by removing transform
+      }, 50);
     } else if (next === 'edition') {
       const editions = getEditionItems(languageSelectedId);
       editionSelectedId = editionSelectedId || getDefaultEdition(languageSelectedId);
       applyTertiaryItems(editions, editionSelectedId);
+      secondaryDelayed = false;
+      diagnosticReadyToAnimate = false;
+    } else {
+      secondaryDelayed = false;
+      diagnosticReadyToAnimate = false;
     }
     const shouldBlur = next !== 'primary';
     setBlur(shouldBlur);
@@ -718,7 +752,8 @@ export function createApp({
       return 'Toggle dimension mode';
     })();
 
-    const showSecondary = isBlurred && secondaryNav.items.length > 0 && (!hasPortals || portalStage !== 'primary');
+    const showSecondary = isBlurred && secondaryNav.items.length > 0 && (!hasPortals || portalStage !== 'primary') && !secondaryDelayed;
+    const secondaryAnimating = isBlurred && secondaryNav.items.length > 0 && (!hasPortals || portalStage !== 'primary') && diagnosticReadyToAnimate;
     const showTertiary = isBlurred && hasPortals && portalStage === 'edition';
 
     view.render(
@@ -750,6 +785,7 @@ export function createApp({
           showOuter: parentButtonsVisibility.showOuter
         },
         showSecondary,
+        secondaryAnimating,
         secondary: showSecondary ? {
           nodes: secondaryNodes,
           isRotating: secondaryIsRotating,
