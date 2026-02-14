@@ -93,7 +93,7 @@ export function normalize(raw) {
         const cylinders = manuVal.cylinders || {};
         Object.entries(cylinders).forEach(([cylKey, cylVal], cylIdx) => {
           const cylId = `cylinder:${manuKey}:${cylKey}`;
-          addItem({ id: cylId, name: `${cylKey} Cyl`, level: 'cylinder', parentId: manuId, order: cylVal.sort_number ?? cylIdx });
+          addItem({ id: cylId, name: cylKey, level: 'cylinder', parentId: manuId, order: cylVal.sort_number ?? cylIdx });
 
           const models = cylVal.models || [];
           models.forEach((model, modelIdx) => {

@@ -95,7 +95,16 @@
             cousinMode: arrangement !== 'siblings-only'
           };
         },
-        formatLabel: () => ({ item }) => item?.name || item?.id || '',
+        formatLabel: () => ({ item, context }) => {
+          if (!item) return '';
+          const name = item.name || item.id || '';
+          // Cylinder items: number only in nodes, "N CIL" in magnifier
+          if (item.level === 'cylinder' || (item.id && (item.id.startsWith('cyl:') || item.id.startsWith('cylinder:')))) {
+            const num = name.replace(/[^0-9]/g, '') || name;
+            return context === 'magnifier' ? `${num} CIL` : num;
+          }
+          return name;
+        },
         buildChain: (manifest, options) => buildCatalogManufacturers(manifest, { initialItemId: options.initialItemId }),
         createHandlers: params => {
           const adapter = adapterLoader.load('catalog');
@@ -521,11 +530,19 @@
         }
       }
 
+      const configLabel = typeof config?.formatLabel === 'function' ? config.formatLabel() : null;
       const adapterLabel = adapterLayoutSpec?.label;
-      const labelFormatter = adapterLabel
-        ? ({ item }) => adapterLabel(item)
-        : makeLabelFormatter({ config, volume, level: options.level, locale: resolvedLocale, namesMap, options, manifest, meta });
-      const shouldCenterLabel = handlerSet.shouldCenterLabel || (() => Boolean(config?.centerLabel));
+      const labelFormatter = configLabel
+        ? configLabel
+        : adapterLabel
+          ? ({ item }) => adapterLabel(item)
+          : makeLabelFormatter({ config, volume, level: options.level, locale: resolvedLocale, namesMap, options, manifest, meta });
+      const shouldCenterLabel = handlerSet.shouldCenterLabel || (({ item } = {}) => {
+        if (Boolean(config?.centerLabel)) return true;
+        // Cylinder items (short numeric labels) should always be centered
+        if (item?.level === 'cylinder') return true;
+        return false;
+      });
       let app;
 
       const parentHandler = params => (handlerSet.parentHandler ? handlerSet.parentHandler({ ...params, app }) : false);

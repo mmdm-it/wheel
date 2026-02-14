@@ -39,7 +39,7 @@ export function getCatalogChildren(manifest, selected) {
       const modelCount = Array.isArray(cylVal.models) ? cylVal.models.length : 0;
       return {
         id: `cyl:${manufacturerId}:${cylKey}`,
-        name: `${cylKey}-Cylinder`,
+        name: cylKey,
         order: Number.isFinite(cylVal.sort_number) ? cylVal.sort_number : parseInt(cylKey, 10) || 0,
         parentId: id,
         modelCount,

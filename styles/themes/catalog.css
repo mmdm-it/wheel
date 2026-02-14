@@ -7,24 +7,25 @@
   --theme-font-body: 'Montserrat', sans-serif;
   --theme-font-label: 'Montserrat', sans-serif;
   --theme-font-magnifier: 'Montserrat', sans-serif;
-  --focus-label-transform: none;
+  --focus-label-transform: uppercase;
 }
 
-/* Catalog child pyramid nodes: vivid gold on gray */
+/* Catalog child pyramid nodes: solid gold with black stroke (matches magnifier) */
 :root[data-theme="catalog"] .child-pyramid-node {
-  fill: rgba(241, 184, 0, 0.25);
-  stroke: #f1b800;
-  stroke-width: 1.5px;
+  fill: #f1b800;
+  stroke: #000000;
+  stroke-width: 1px;
 }
 
 :root[data-theme="catalog"] .child-pyramid-node:hover {
-  fill: rgba(241, 184, 0, 0.45);
-  stroke: #f1b800;
+  fill: #f1b800;
+  stroke: #000000;
 }
 
 :root[data-theme="catalog"] .child-pyramid-label {
   fill: #000000;
   font-size: clamp(9px, 1.1vmin, 14px);
+  text-transform: uppercase;
 }
 
 /* Catalog fan lines and spiral: subtle dark on gray */

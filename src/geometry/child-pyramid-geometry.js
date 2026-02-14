@@ -4,7 +4,17 @@
 const DEG_TO_RAD = Math.PI / 180;
 const DEFAULT_LINE_COUNT = 96;
 const DEFAULT_ANGLE_DELTA_DEG = 3.75; // matches existing layout
-const DEFAULT_EXPANSION_RATE = 0.005; // r = b * theta factor
+const DEFAULT_EXPANSION_RATE = 0.003; // tighter spiral for denser intersections near center
+
+// Deterministic hash of a string to a number in [0, 1).
+function hashString01(str) {
+  if (!str) return 0;
+  let h = 0;
+  for (let i = 0; i < str.length; i++) {
+    h = ((h << 5) - h + str.charCodeAt(i)) | 0;
+  }
+  return Math.abs(h % 10000) / 10000;
+}
 
 function segmentIntervalRect(x1, y1, x2, y2, left, right, top, bottom) {
   const dx = x2 - x1;
@@ -124,31 +134,46 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   const height = viewport.height ?? 0;
   const SSd = viewport.SSd ?? Math.min(width, height);
   const LSd = viewport.LSd ?? Math.max(width, height);
-  const topMargin = SSd * 0.03;
+  const topMargin = SSd * 0.05;
   const rightMargin = SSd * 0.03;
-  const magnifierRadius = SSd * 0.060;
   const magnifierX = magnifier.cx ?? magnifier.x ?? 0;
   const magnifierY = magnifier.cy ?? magnifier.y ?? 0;
+
+  // #4: CPUA bottom uses the arc (focus ring) inner edge with a comfortable margin,
+  // rather than clearing space for the Dimension Button.
+  const arcRadius = arcParams?.radius ?? SSd;
+  const hubY = arcParams?.hubY ?? 0;
+  const arcInnerMargin = SSd * 0.06; // comfortable gap inside the arc
+  const cpuaBottom = Math.min(height - topMargin, magnifierY - SSd * 0.08);
 
   const cpua = {
     left: 0,
     top: topMargin,
     rightFull: width - rightMargin,
     right: width - rightMargin,
-    bottom: Math.min(height, magnifierY - (4 * magnifierRadius))
+    bottom: cpuaBottom
   };
 
+  // Clip circle: keep nodes inside the focus ring arc with margin
   const clipCircle = {
     cx: arcParams?.hubX ?? width / 2,
-    cy: arcParams?.hubY ?? 0,
-    r: (arcParams?.radius ?? SSd) * 0.98
+    cy: hubY,
+    r: arcRadius - arcInnerMargin
   };
 
   const lineCount = options.lineCount ?? DEFAULT_LINE_COUNT;
   const angleDeltaRad = (options.angleDeltaDeg ?? DEFAULT_ANGLE_DELTA_DEG) * DEG_TO_RAD;
-  const spiralOriginX = width / 2 + (width * 0.1);
-  const spiralOriginY = SSd * 0.03 + Math.min(height, magnifierY - (1.5 * magnifierRadius)) / 2;
-  const startAngleRad = Math.atan2(spiralOriginY - magnifierY, spiralOriginX - magnifierX);
+
+  // #5: Deterministic fan-line rotation offset based on parent ID.
+  // The offset is a fraction of one fan-line angular step, so the fan-line
+  // pattern stays well-formed. Same parent → same constellation every time.
+  const parentHash = hashString01(options.parentId ?? '');
+  const rotationOffset = parentHash * angleDeltaRad;
+
+  // #1: Spiral origin in the visual center of the CPUA (shifted slightly right)
+  const spiralOriginX = (cpua.left + cpua.rightFull) / 2 + ((cpua.rightFull - cpua.left) * 0.05);
+  const spiralOriginY = (cpua.top + cpua.bottom) / 2 + ((cpua.bottom - cpua.top) * 0.08);
+  const startAngleRad = Math.atan2(spiralOriginY - magnifierY, spiralOriginX - magnifierX) + rotationOffset;
   const lineLength = LSd || 1000;
 
   const fanLines = [];
@@ -165,8 +190,8 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   const expansionRate = typeof options.spiralExpansion === 'number' ? options.spiralExpansion : DEFAULT_EXPANSION_RATE;
   const b = expansionRate * SSd; // r = b * theta
   const spiralCenterAngle = ((options.magnifierAngle ?? magnifier.angle ?? 0) + Math.PI) / 2;
-  const spiralCenterX = (cpua.left + cpua.rightFull) / 2 + ((cpua.rightFull - cpua.left) * 0.1);
-  const spiralCenterY = (cpua.top + cpua.bottom) / 2;
+  const spiralCenterX = spiralOriginX;
+  const spiralCenterY = spiralOriginY;
 
   const points = [];
   let theta = 0;
@@ -183,8 +208,15 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
 
   const spiralPath = buildSpiralPath(points);
 
+  // #3: Dynamic minimum distance — fewer children allow wider spacing.
+  // The childCount option drives density; without it, use a moderate default.
+  const childCount = options.childCount ?? 0;
+  const baseNodeRadius = 0.04 * SSd;
+  const minHitDistance = childCount > 0
+    ? baseNodeRadius * Math.max(2.5, 6 - childCount * 0.15)
+    : baseNodeRadius * 4;
+
   const intersections = [];
-  const minHitDistance = (0.04 * SSd) * 4; // 4× node radius assumption
   const pending = new Set(fanLines.map(f => f.id));
   for (let i = 1; i < points.length && pending.size > 0; i++) {
     const segSpiral = { x1: points[i - 1].x, y1: points[i - 1].y, x2: points[i].x, y2: points[i].y };

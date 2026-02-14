@@ -725,34 +725,44 @@ export function createApp({
     const pyramidData = (() => {
       if (!pyramidConfig) return null;
       try {
+        // Pre-fetch children to pass count for dynamic spacing
+        let children = [];
+        if (typeof pyramidConfig.getChildren === 'function' && selected) {
+          children = pyramidConfig.getChildren({ selected });
+        }
         const geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
           logoBounds: volumeLogo.getBounds(),
-          magnifierAngle: magnifier.angle
+          magnifierAngle: magnifier.angle,
+          parentId: selected?.id ?? '',
+          childCount: children.length
         });
         if (!geo) return null;
-        // Compute child nodes for the currently-selected item
+        // Map children onto intersection slots
         let nodes = [];
         let onNodeClick = null;
-        if (typeof pyramidConfig.getChildren === 'function' && selected) {
-          const children = pyramidConfig.getChildren({ selected });
-          if (children.length > 0 && geo.intersections.length > 0) {
+        if (children.length > 0 && geo.intersections.length > 0) {
             const slots = geo.intersections.slice(0, children.length);
             const nodeR = vp.SSd * 0.025;
-            nodes = slots.map((slot, i) => ({
-              id: children[i].id ?? `p-${i}`,
-              label: children[i].name ?? children[i].label ?? children[i].id ?? `p-${i}`,
-              item: children[i],
-              arc: 'intersection',
-              angle: 0,
-              x: slot.x,
-              y: slot.y,
-              r: nodeR
-            }));
+            nodes = slots.map((slot, i) => {
+              // Compute angle from hub (focus ring center) to slot for label rotation
+              const dx = slot.x - arcParams.hubX;
+              const dy = slot.y - arcParams.hubY;
+              const angle = Math.atan2(dy, dx);
+              return {
+                id: children[i].id ?? `p-${i}`,
+                label: children[i].name ?? children[i].label ?? children[i].id ?? `p-${i}`,
+                item: children[i],
+                arc: 'intersection',
+                angle,
+                x: slot.x,
+                y: slot.y,
+                r: nodeR
+              };
+            });
           }
           if (typeof pyramidConfig.onClick === 'function') {
             onNodeClick = instr => pyramidConfig.onClick(instr);
           }
-        }
         return { ...geo, nodes, onNodeClick };
       } catch (err) {
         if (debug) console.warn('[FocusRing] pyramid geometry error', err);

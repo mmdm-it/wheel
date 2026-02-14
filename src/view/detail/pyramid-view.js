@@ -165,9 +165,12 @@ export class PyramidView {
         const label = this.doc.createElementNS('http://www.w3.org/2000/svg', 'text');
         label.setAttribute('class', 'child-pyramid-label');
         label.setAttribute('x', instr.x);
-        label.setAttribute('y', instr.y - instr.r - 4);
+        label.setAttribute('y', instr.y);
         label.setAttribute('text-anchor', 'middle');
-        label.setAttribute('dominant-baseline', 'auto');
+        label.setAttribute('dominant-baseline', 'middle');
+        // Rotate label along the fan-line angle, matching focus ring node label style
+        const rotation = (instr.angle * 180) / Math.PI + 180;
+        label.setAttribute('transform', `rotate(${rotation}, ${instr.x}, ${instr.y})`);
         label.textContent = instr.label || '';
         this.pyramidLabelsGroup.appendChild(label);
       });

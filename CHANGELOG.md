@@ -6,6 +6,36 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.7.23] - 2026-02-14
+
+### Changed
+- feat: child pyramid placement — tighter spiral, dynamic spacing, arc margin, deterministic per-parent fan-line rotation
+
+
+## [3.7.22] - 2026-02-13
+
+### Changed
+- fix: rotate child pyramid labels relative to hub, not magnifier
+
+
+## [3.7.21] - 2026-02-13
+
+### Changed
+- fix: center and rotate child pyramid labels over nodes, matching focus ring label style
+
+
+## [3.7.20] - 2026-02-13
+
+### Changed
+- fix: center cylinder labels in focus ring, show N CIL suffix in magnifier
+
+
+## [3.7.19] - 2026-02-13
+
+### Changed
+- cosmetic: solid gold child nodes with black stroke, uppercase labels, cylinder labels number-only (N CIL in magnifier)
+
+
 ## [3.7.18] - 2026-02-13
 
 ### Changed
