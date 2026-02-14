@@ -74,19 +74,7 @@ svg {
   opacity: 1;
 }
 
-.focus-ring-band-diagnostic {
-  fill: none;
-  stroke: #00ff00;
-  stroke-width: 2px;
-  transition: transform 2000ms var(--motion-ease, cubic-bezier(0.33, 1, 0.68, 1));
-  will-change: transform;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .focus-ring-band-diagnostic {
-    transition: none;
-  }
-}
+/* diagnostic band removed — was debug scaffolding */
 
 .focus-ring-band-tertiary {
   fill: var(--color-band);

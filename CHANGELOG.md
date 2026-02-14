@@ -6,6 +6,30 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.7.18] - 2026-02-13
+
+### Changed
+- fix: restore V0 catalog colors (gray/gold/blue), add catalog logo, show cylinders (not models) as pyramid children, remove diagnostic green band lines
+
+
+## [3.7.17] - 2026-02-13
+
+### Changed
+- refactor: place child nodes at fan-line × spiral intersections instead of independent spiral walk; suppress red X markers when nodes present
+
+
+## [3.7.16] - 2026-02-13
+
+### Changed
+- Fix pyramidConfig merge: merge adapter layout (capacity/place) with volume layout (getChildren/onClick) so child nodes render
+
+
+## [3.7.15] - 2026-02-13
+
+### Changed
+- feat: enable child pyramid node rendering with click-to-drill for catalog
+
+
 ## [3.7.14] - 2026-01-02
 
 ### Changed

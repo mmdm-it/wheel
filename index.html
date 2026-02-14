@@ -553,8 +553,11 @@
         setCatalogMode: layoutBindings.setCatalogMode,
         pyramidBuilder: layoutBindings.pyramidBuilder
       });
+      const pyramidConfig = {
+        ...(layoutSpec?.pyramid || {}),
+        ...(adapterLayoutSpec?.pyramid || {})
+      };
       const pyramidLayout = adapterLayoutSpec || layoutSpec;
-      const pyramidConfig = pyramidLayout?.pyramid || null;
       const normalized = {
         items,
         links: (items || [])

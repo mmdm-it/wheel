@@ -108,36 +108,72 @@ export class PyramidView {
       this.pyramidSpiralGroup.appendChild(path);
     }
 
-    intersections.forEach(hit => {
-      const size = 9;
-      const half = size / 2;
-      const line1 = this.doc.createElementNS('http://www.w3.org/2000/svg', 'line');
-      line1.setAttribute('x1', hit.x - half);
-      line1.setAttribute('y1', hit.y - half);
-      line1.setAttribute('x2', hit.x + half);
-      line1.setAttribute('y2', hit.y + half);
-      line1.setAttribute('stroke', 'red');
-      line1.setAttribute('stroke-width', '2');
-      const line2 = this.doc.createElementNS('http://www.w3.org/2000/svg', 'line');
-      line2.setAttribute('x1', hit.x - half);
-      line2.setAttribute('y1', hit.y + half);
-      line2.setAttribute('x2', hit.x + half);
-      line2.setAttribute('y2', hit.y - half);
-      line2.setAttribute('stroke', 'red');
-      line2.setAttribute('stroke-width', '2');
-      this.pyramidSpiralGroup.appendChild(line1);
-      this.pyramidSpiralGroup.appendChild(line2);
-    });
+    // Only show red X intersection markers when no child nodes are present.
+    // When nodes exist, they occupy the intersection slots directly.
+    if (nodes.length === 0) {
+      intersections.forEach(hit => {
+        const size = 9;
+        const half = size / 2;
+        const line1 = this.doc.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line1.setAttribute('x1', hit.x - half);
+        line1.setAttribute('y1', hit.y - half);
+        line1.setAttribute('x2', hit.x + half);
+        line1.setAttribute('y2', hit.y + half);
+        line1.setAttribute('stroke', 'red');
+        line1.setAttribute('stroke-width', '2');
+        const line2 = this.doc.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line2.setAttribute('x1', hit.x - half);
+        line2.setAttribute('y1', hit.y + half);
+        line2.setAttribute('x2', hit.x + half);
+        line2.setAttribute('y2', hit.y - half);
+        line2.setAttribute('stroke', 'red');
+        line2.setAttribute('stroke-width', '2');
+        this.pyramidSpiralGroup.appendChild(line1);
+        this.pyramidSpiralGroup.appendChild(line2);
+      });
+    }
 
-    // Nodes stay hidden for now; clear and hide groups so tab order ignores them.
-    this.pyramidNodesGroup.setAttribute('display', 'none');
-    this.pyramidLabelsGroup.setAttribute('display', 'none');
+    // Render child nodes at intersection/placement positions.
     this.#clear(this.pyramidNodesGroup);
     this.#clear(this.pyramidLabelsGroup);
 
-    // If nodes rendering is desired later, hook up here using provided nodes array.
     if (Array.isArray(nodes) && nodes.length > 0) {
-      // Intentionally left empty; nodes intentionally hidden.
+      this.pyramidNodesGroup.removeAttribute('display');
+      this.pyramidLabelsGroup.removeAttribute('display');
+      const onNodeClick = data.onNodeClick ?? null;
+      nodes.forEach(instr => {
+        const circle = this.doc.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        circle.setAttribute('class', 'child-pyramid-node');
+        circle.setAttribute('cx', instr.x);
+        circle.setAttribute('cy', instr.y);
+        circle.setAttribute('r', instr.r);
+        circle.setAttribute('role', 'button');
+        circle.setAttribute('tabindex', '0');
+        if (instr.label) circle.setAttribute('aria-label', instr.label);
+        if (onNodeClick) {
+          circle.style.cursor = 'pointer';
+          circle.onclick = () => onNodeClick(instr);
+          circle.onkeydown = evt => {
+            if (evt.key === 'Enter' || evt.key === ' ') {
+              evt.preventDefault();
+              onNodeClick(instr);
+            }
+          };
+        }
+        this.pyramidNodesGroup.appendChild(circle);
+
+        const label = this.doc.createElementNS('http://www.w3.org/2000/svg', 'text');
+        label.setAttribute('class', 'child-pyramid-label');
+        label.setAttribute('x', instr.x);
+        label.setAttribute('y', instr.y - instr.r - 4);
+        label.setAttribute('text-anchor', 'middle');
+        label.setAttribute('dominant-baseline', 'auto');
+        label.textContent = instr.label || '';
+        this.pyramidLabelsGroup.appendChild(label);
+      });
+    } else {
+      this.pyramidNodesGroup.setAttribute('display', 'none');
+      this.pyramidLabelsGroup.setAttribute('display', 'none');
     }
   }
 }

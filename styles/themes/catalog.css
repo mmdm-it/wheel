@@ -1,11 +1,39 @@
 :root[data-theme="catalog"] {
-  --theme-color-bg: #0f1f36;
-  --theme-color-node: #e0c36c;
-  --theme-color-text: #f4f4f4;
-  --theme-color-band: #1b2f4a;
-  --theme-color-accent: #e0c36c;
+  --theme-color-bg: #868686;
+  --theme-color-node: #f1b800;
+  --theme-color-text: #000000;
+  --theme-color-band: #7a7979;
+  --theme-color-accent: #f1b800;
   --theme-font-body: 'Montserrat', sans-serif;
   --theme-font-label: 'Montserrat', sans-serif;
   --theme-font-magnifier: 'Montserrat', sans-serif;
   --focus-label-transform: none;
+}
+
+/* Catalog child pyramid nodes: vivid gold on gray */
+:root[data-theme="catalog"] .child-pyramid-node {
+  fill: rgba(241, 184, 0, 0.25);
+  stroke: #f1b800;
+  stroke-width: 1.5px;
+}
+
+:root[data-theme="catalog"] .child-pyramid-node:hover {
+  fill: rgba(241, 184, 0, 0.45);
+  stroke: #f1b800;
+}
+
+:root[data-theme="catalog"] .child-pyramid-label {
+  fill: #000000;
+  font-size: clamp(9px, 1.1vmin, 14px);
+}
+
+/* Catalog fan lines and spiral: subtle dark on gray */
+:root[data-theme="catalog"] .child-pyramid-fan-line {
+  stroke: rgba(0, 0, 0, 0.12);
+  stroke-width: 0.5px;
+}
+
+:root[data-theme="catalog"] .child-pyramid-spiral {
+  stroke: rgba(0, 0, 0, 0.2);
+  stroke-width: 0.5px;
 }

@@ -73,17 +73,8 @@ export class FocusRingView {
     this.band.setAttribute('class', 'focus-ring-band');
     this.blurGroup.appendChild(this.band);
     
-    this.bandDiagnostic = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    this.bandDiagnostic.setAttribute('class', 'focus-ring-band-diagnostic');
-    this.svgRoot.appendChild(this.bandDiagnostic);
-    
-    this.bandDiagnostic = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    this.bandDiagnostic.setAttribute('class', 'focus-ring-band-diagnostic');
-    this.blurGroup.appendChild(this.bandDiagnostic);
-    
-    this.bandDiagnostic = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    this.bandDiagnostic.setAttribute('class', 'focus-ring-band-diagnostic');
-    this.blurGroup.appendChild(this.bandDiagnostic);
+    // Diagnostic band removed — was debug scaffolding (lime green #00ff00 stroke)
+    this.bandDiagnostic = null;
 
     this.tertiaryLayer = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.tertiaryLayer.setAttribute('class', 'focus-tertiary-layer');
@@ -257,41 +248,13 @@ export class FocusRingView {
     if (this.blurGroup && this.svgRoot) {
       // Layering order (back to front): primary, secondary (mirrored), tertiary, controls
       this.svgRoot.appendChild(this.blurGroup);
-      if (this.bandDiagnostic) this.svgRoot.appendChild(this.bandDiagnostic);
       if (this.mirrorLayer) this.svgRoot.appendChild(this.mirrorLayer);
       if (this.tertiaryLayer) this.svgRoot.appendChild(this.tertiaryLayer);
       if (this.dimensionIcon) this.svgRoot.appendChild(this.dimensionIcon);
     }
 
     if (this.band) {
-      // Animate diagnostic stroke from primary to secondary (mirrored) arc geometry
-      const secondaryAnimating = Boolean(options.secondaryAnimating && secondary);
-      if (this.bandDiagnostic && arcParams && viewportWindow && viewport) {
-        if (secondary) {
-          // Use mirrored arc geometry for correct end-state when secondary exists
-          const mirroredArc = this.#mirroredArc(arcParams, viewport);
-          const mirroredWindow = this.#mirroredWindow(viewport, mirroredArc);
-          if (mirroredWindow) {
-            this.bandDiagnostic.setAttribute('d', this.#ringPath(mirroredArc, mirroredWindow));
-            
-            // Calculate transform to move mirrored arc back to primary position when not animating
-            if (!secondaryAnimating && magnifier) {
-              const primaryY = magnifier.y;
-              const mirroredY = (viewport.height ?? viewport.LSd ?? primaryY) - primaryY;
-              const offset = mirroredY - primaryY;
-              this.bandDiagnostic.setAttribute('transform', `translate(0, ${-offset})`);
-            } else {
-              this.bandDiagnostic.removeAttribute('transform');
-            }
-          }
-        } else {
-          // Use primary arc geometry when secondary doesn't exist yet
-          this.bandDiagnostic.setAttribute('d', this.#ringPath(arcParams, viewportWindow));
-          this.bandDiagnostic.removeAttribute('transform');
-        }
-      } else if (this.bandDiagnostic) {
-        this.bandDiagnostic.removeAttribute('transform');
-      }
+      // Diagnostic band removed — was debug-only (green stroke)
     }
 
     if (this.pyramidView) {

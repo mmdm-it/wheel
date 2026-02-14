@@ -7,6 +7,8 @@ import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry } from './geometry/child-pyramid-geometry.js';
+import { placePyramidNodes } from './geometry/child-pyramid.js';
+import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
@@ -721,12 +723,37 @@ export function createApp({
     const tertiarySelected = tertiaryNav.getCurrent();
     const tertiaryNodes = calculateTertiaryNodePositions(tertiaryNav.items, tertiaryRotation);
     const pyramidData = (() => {
-      if (!pyramidConfig?.enabled) return null;
+      if (!pyramidConfig) return null;
       try {
-        return computeChildPyramidGeometry(vp, magnifier, arcParams, {
+        const geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
           logoBounds: volumeLogo.getBounds(),
           magnifierAngle: magnifier.angle
         });
+        if (!geo) return null;
+        // Compute child nodes for the currently-selected item
+        let nodes = [];
+        let onNodeClick = null;
+        if (typeof pyramidConfig.getChildren === 'function' && selected) {
+          const children = pyramidConfig.getChildren({ selected });
+          if (children.length > 0 && geo.intersections.length > 0) {
+            const slots = geo.intersections.slice(0, children.length);
+            const nodeR = vp.SSd * 0.025;
+            nodes = slots.map((slot, i) => ({
+              id: children[i].id ?? `p-${i}`,
+              label: children[i].name ?? children[i].label ?? children[i].id ?? `p-${i}`,
+              item: children[i],
+              arc: 'intersection',
+              angle: 0,
+              x: slot.x,
+              y: slot.y,
+              r: nodeR
+            }));
+          }
+          if (typeof pyramidConfig.onClick === 'function') {
+            onNodeClick = instr => pyramidConfig.onClick(instr);
+          }
+        }
+        return { ...geo, nodes, onNodeClick };
       } catch (err) {
         if (debug) console.warn('[FocusRing] pyramid geometry error', err);
         return null;

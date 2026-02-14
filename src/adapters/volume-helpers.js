@@ -4,26 +4,50 @@
 export function getCatalogChildren(manifest, selected) {
   const id = selected?.id;
   if (!id) return [];
+
+  // Cylinder-level selection: return models under that cylinder
+  if (id.startsWith('cyl:')) {
+    // id = "cyl:manufacturerId:cylKey" with parentId = "market__country__manufacturer"
+    const parts = id.split(':');
+    const manufacturerId = parts[1];
+    const cylKey = parts[2];
+    const parentId = selected.parentId;
+    if (!parentId) return [];
+    const [marketId, countryId] = parentId.split('__');
+    const manufacturer = manifest?.MMdM?.markets?.[marketId]?.countries?.[countryId]?.manufacturers?.[manufacturerId];
+    if (!manufacturer) return [];
+    const cylVal = manufacturer.cylinders?.[cylKey];
+    if (!cylVal) return [];
+    const models = Array.isArray(cylVal.models) ? cylVal.models : [];
+    return models.map((model, idx) => ({
+      id: `model:${manufacturerId}:${cylKey}:${model.engine_model || idx}`,
+      name: model.engine_model || `Model ${idx + 1}`,
+      order: Number.isFinite(cylVal.sort_number) ? cylVal.sort_number * 100 + idx : idx,
+      parentId: id,
+      cylinder: cylKey,
+      level: 'model'
+    }));
+  }
+
+  // Manufacturer-level selection: return cylinders
   const [marketId, countryId, manufacturerId] = id.split('__');
   const manufacturer = manifest?.MMdM?.markets?.[marketId]?.countries?.[countryId]?.manufacturers?.[manufacturerId];
   if (!manufacturer) return [];
   const cylinders = manufacturer.cylinders || {};
-  const children = [];
-  Object.entries(cylinders).forEach(([cylKey, cylVal]) => {
-    const models = Array.isArray(cylVal.models) ? cylVal.models : [];
-    models.forEach((model, idx) => {
-      const modelId = `model:${manufacturerId}:${cylKey}:${model.engine_model || idx}`;
-      children.push({
-        id: modelId,
-        name: model.engine_model || modelId,
-        order: idx,
+  return Object.entries(cylinders)
+    .map(([cylKey, cylVal]) => {
+      const modelCount = Array.isArray(cylVal.models) ? cylVal.models.length : 0;
+      return {
+        id: `cyl:${manufacturerId}:${cylKey}`,
+        name: `${cylKey}-Cylinder`,
+        order: Number.isFinite(cylVal.sort_number) ? cylVal.sort_number : parseInt(cylKey, 10) || 0,
         parentId: id,
-        cylinder: cylKey,
-        level: 'model'
-      });
-    });
-  });
-  return children.map((child, idx) => ({ ...child, order: Number.isFinite(child.order) ? child.order : idx }));
+        modelCount,
+        level: 'cylinder'
+      };
+    })
+    .sort((a, b) => a.order - b.order)
+    .map((child, idx) => ({ ...child, order: idx }));
 }
 
 export function getCalendarMonths(manifest, selected, calendarMode) {
