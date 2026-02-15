@@ -259,6 +259,7 @@ export function createApp({
   let lastParentLabelOut = '';
   let lastSelectedLabelOut = '';
   const pyramidConfig = pyramid || null;
+  let lastPyramidData = null; // stashed for SVG-level click delegation
 
   const setBlur = enabled => {
     isBlurred = Boolean(enabled);
@@ -742,7 +743,6 @@ export function createApp({
         // Map children onto intersection slots
         let nodes = [];
         let onNodeClick = null;
-        console.log(`[ChildPyramid] children: ${children.length}, slots: ${geo.intersections.length}, showing: ${Math.min(children.length, geo.intersections.length)}, hidden: ${Math.max(0, children.length - geo.intersections.length)}`);
         if (children.length > 0 && geo.intersections.length > 0) {
             const slots = geo.intersections.slice(0, children.length);
             const nodeR = vp.SSd * NODE_RADIUS_RATIO;
@@ -772,6 +772,7 @@ export function createApp({
         return null;
       }
     })();
+    lastPyramidData = pyramidData; // stash for SVG-level click delegation
     const parentLabel = getParentLabel(selected);
     const selectedMagnifierLabel = formatLabel({ item: selected, context: 'magnifier' });
     const magnifierLabel = isLayerOut
@@ -1202,6 +1203,12 @@ export function createApp({
     selectSecondaryNearest,
     secondaryChoreographer,
     setPrimaryItems,
-    setParentButtons
+    setParentButtons,
+    handlePyramidNodeClick: idx => {
+      if (!lastPyramidData) return;
+      const { nodes, onNodeClick } = lastPyramidData;
+      if (!onNodeClick || !nodes || idx < 0 || idx >= nodes.length) return;
+      onNodeClick(nodes[idx]);
+    }
   };
 }

@@ -420,6 +420,15 @@
         if (isNode) {
           return; // click handler on node will manage rotation
         }
+        // Child pyramid node — delegate to the app's pyramid click handler
+        const isPyramidNode = event.target && event.target.closest && event.target.closest('.child-pyramid-node');
+        if (isPyramidNode) {
+          const idx = parseInt(isPyramidNode.dataset.index, 10);
+          if (app.handlePyramidNodeClick) {
+            app.handlePyramidNodeClick(idx);
+          }
+          return; // don't start drag
+        }
         isDragging = true;
         lastX = event.clientX;
         lastY = event.clientY;

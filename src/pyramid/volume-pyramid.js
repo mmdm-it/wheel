@@ -62,7 +62,8 @@ export function buildCatalogPyramid({
   const getChildren = ({ selected }) => getCatalogChildren(manifest, selected);
   const onClick = instr => {
     if (!instr?.item) return;
-    if (typeof catalogModeRef === 'function' && catalogModeRef() !== 'manufacturer') return;
+    const mode = typeof catalogModeRef === 'function' ? catalogModeRef() : 'unknown';
+    if (mode !== 'manufacturer') return;
     const app = typeof getApp === 'function' ? getApp() : null;
     const parent = app?.nav?.getCurrent?.();
     const models = getCatalogChildren(manifest, parent);

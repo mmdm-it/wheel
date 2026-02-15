@@ -34,6 +34,7 @@ export class PyramidView {
     this.pyramidSpiralGroup = null;
     this.pyramidNodesGroup = null;
     this.pyramidLabelsGroup = null;
+    this._onNodeClick = null;     // current click callback
   }
 
   init(parentGroup) {
@@ -106,11 +107,13 @@ export class PyramidView {
     this.#clear(this.pyramidNodesGroup);
     this.#clear(this.pyramidLabelsGroup);
 
+    // Store callback for this render pass
+    this._onNodeClick = data.onNodeClick ?? null;
+
     if (Array.isArray(nodes) && nodes.length > 0) {
       this.pyramidNodesGroup.removeAttribute('display');
       this.pyramidLabelsGroup.removeAttribute('display');
-      const onNodeClick = data.onNodeClick ?? null;
-      nodes.forEach(instr => {
+      nodes.forEach((instr, idx) => {
         const circle = this.doc.createElementNS('http://www.w3.org/2000/svg', 'circle');
         circle.setAttribute('class', 'child-pyramid-node');
         circle.setAttribute('cx', instr.x);
@@ -118,16 +121,10 @@ export class PyramidView {
         circle.setAttribute('r', instr.r);
         circle.setAttribute('role', 'button');
         circle.setAttribute('tabindex', '0');
+        circle.setAttribute('data-index', idx);
         if (instr.label) circle.setAttribute('aria-label', instr.label);
-        if (onNodeClick) {
+        if (this._onNodeClick) {
           circle.style.cursor = 'pointer';
-          circle.onclick = () => onNodeClick(instr);
-          circle.onkeydown = evt => {
-            if (evt.key === 'Enter' || evt.key === ' ') {
-              evt.preventDefault();
-              onNodeClick(instr);
-            }
-          };
         }
         this.pyramidNodesGroup.appendChild(circle);
 
