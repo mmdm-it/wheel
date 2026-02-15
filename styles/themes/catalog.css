@@ -24,13 +24,13 @@
 
 :root[data-theme="catalog"] .child-pyramid-label {
   fill: #000000;
-  font-size: clamp(9px, 1.1vmin, 14px);
+  font-size: clamp(14px, 1.6vmin, 26px);
   text-transform: uppercase;
 }
 
 /* Catalog fan lines and spiral: subtle dark on gray */
 :root[data-theme="catalog"] .child-pyramid-fan-line {
-  stroke: rgba(0, 0, 0, 0.12);
+  stroke: rgba(0, 0, 0, 0.35);
   stroke-width: 0.5px;
 }
 

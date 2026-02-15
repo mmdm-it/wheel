@@ -225,7 +225,7 @@ svg {
 .child-pyramid-label {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-  font-size: clamp(12px, 1.4vmin, 18px);
+  font-size: clamp(14px, 1.6vmin, 26px);
   pointer-events: none;
 }
 

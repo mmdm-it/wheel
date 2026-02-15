@@ -6,6 +6,24 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.7.26] - 2026-02-14
+
+### Changed
+- feat: child pyramid params lookup table by childCount, alphabetical manufacturer sort, remove duplicate Mercruiser
+
+
+## [3.7.25] - 2026-02-14
+
+### Changed
+- feat: child pyramid params lookup table by childCount, alphabetical manufacturer sort, remove duplicate Mercruiser
+
+
+## [3.7.24] - 2026-02-14
+
+### Changed
+- fix: formatLabel crash on Bible — call factory with proper args, detect context-aware catalog formatter
+
+
 ## [3.7.23] - 2026-02-14
 
 ### Changed

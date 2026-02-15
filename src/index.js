@@ -734,15 +734,17 @@ export function createApp({
           logoBounds: volumeLogo.getBounds(),
           magnifierAngle: magnifier.angle,
           parentId: selected?.id ?? '',
-          childCount: children.length
+          childCount: children.length,
+          hasDimensionButton: hasDimensions
         });
         if (!geo) return null;
         // Map children onto intersection slots
         let nodes = [];
         let onNodeClick = null;
+        console.log(`[ChildPyramid] children: ${children.length}, slots: ${geo.intersections.length}, showing: ${Math.min(children.length, geo.intersections.length)}, hidden: ${Math.max(0, children.length - geo.intersections.length)}`);
         if (children.length > 0 && geo.intersections.length > 0) {
             const slots = geo.intersections.slice(0, children.length);
-            const nodeR = vp.SSd * 0.025;
+            const nodeR = vp.SSd * NODE_RADIUS_RATIO;
             nodes = slots.map((slot, i) => {
               // Compute angle from hub (focus ring center) to slot for label rotation
               const dx = slot.x - arcParams.hubX;

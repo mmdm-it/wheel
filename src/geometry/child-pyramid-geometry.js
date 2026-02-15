@@ -1,10 +1,112 @@
 // Computes CPUA fan lines, spiral path, and intersection hits for the child pyramid.
 // Pure functions: no DOM usage.
 
+// ── Console tuning knobs ─────────────────────────────────────────────
+// In the browser console:
+//   spiralOrigin({ x: 0.5, y: 0.5 })   ← normalised 0-1 within CPUA
+//   minNodeDist(3)                      ← multiplier of node radius
+//   fanAngle(5)                         ← degrees between fan lines
+//   arcMargin(0.1)                      ← SSd multiplier for gap inside arc
+//   spiralGrowth(0.005)                 ← spiral expansion rate
+//   <cmd>()  with no args prints current value; <cmd>(null) resets.
+// Click any parent node to re-render after changing.
+if (typeof globalThis.window !== 'undefined') {
+  globalThis.__spiralOverride = globalThis.__spiralOverride ?? { x: null, y: null };
+  globalThis.spiralOrigin = (pos) => {
+    if (!pos) {
+      console.log('spiralOrigin:', JSON.stringify(globalThis.__spiralOverride));
+      return globalThis.__spiralOverride;
+    }
+    if (typeof pos.x === 'number') globalThis.__spiralOverride.x = pos.x;
+    if (typeof pos.y === 'number') globalThis.__spiralOverride.y = pos.y;
+    console.log('spiralOrigin set to:', JSON.stringify(globalThis.__spiralOverride));
+    console.log('Click a parent node to see the change.');
+    return globalThis.__spiralOverride;
+  };
+
+  globalThis.__minNodeDistMul = null; // null = use default (4× node radius)
+  globalThis.minNodeDist = (mul) => {
+    if (mul === undefined) {
+      const cur = globalThis.__minNodeDistMul;
+      console.log('minNodeDist:', cur != null ? cur + '× nodeRadius' : 'default (4× nodeRadius)');
+      return cur;
+    }
+    globalThis.__minNodeDistMul = (typeof mul === 'number' && mul > 0) ? mul : null;
+    console.log('minNodeDist set to:', globalThis.__minNodeDistMul != null ? globalThis.__minNodeDistMul + '× nodeRadius' : 'default (4× nodeRadius)');
+    console.log('Click a parent node to see the change.');
+    return globalThis.__minNodeDistMul;
+  };
+
+  globalThis.__fanAngleDeg = null; // null = use default (3.75°)
+  globalThis.fanAngle = (deg) => {
+    if (deg === undefined) {
+      const cur = globalThis.__fanAngleDeg;
+      console.log('fanAngle:', cur != null ? cur + '°' : 'default (3.75°)');
+      return cur;
+    }
+    globalThis.__fanAngleDeg = (typeof deg === 'number' && deg > 0) ? deg : null;
+    console.log('fanAngle set to:', globalThis.__fanAngleDeg != null ? globalThis.__fanAngleDeg + '°' : 'default (3.75°)');
+    console.log('Click a parent node to see the change.');
+    return globalThis.__fanAngleDeg;
+  };
+
+  globalThis.__arcMarginMul = null; // null = use default (0.06)
+  globalThis.arcMargin = (mul) => {
+    if (mul === undefined) {
+      const cur = globalThis.__arcMarginMul;
+      console.log('arcMargin:', cur != null ? cur + ' × SSd' : 'default (0.06 × SSd)');
+      return cur;
+    }
+    globalThis.__arcMarginMul = (typeof mul === 'number' && mul >= 0) ? mul : null;
+    console.log('arcMargin set to:', globalThis.__arcMarginMul != null ? globalThis.__arcMarginMul + ' × SSd' : 'default (0.06 × SSd)');
+    console.log('Click a parent node to see the change.');
+    return globalThis.__arcMarginMul;
+  };
+
+  globalThis.__spiralGrowth = null; // null = use default (0.003)
+  globalThis.spiralGrowth = (rate) => {
+    if (rate === undefined) {
+      const cur = globalThis.__spiralGrowth;
+      console.log('spiralGrowth:', cur != null ? cur : 'default (0.003)');
+      return cur;
+    }
+    globalThis.__spiralGrowth = (typeof rate === 'number' && rate > 0) ? rate : null;
+    console.log('spiralGrowth set to:', globalThis.__spiralGrowth != null ? globalThis.__spiralGrowth : 'default (0.003)');
+    console.log('Click a parent node to see the change.');
+    return globalThis.__spiralGrowth;
+  };
+}
+
 const DEG_TO_RAD = Math.PI / 180;
 const DEFAULT_LINE_COUNT = 96;
-const DEFAULT_ANGLE_DELTA_DEG = 3.75; // matches existing layout
-const DEFAULT_EXPANSION_RATE = 0.003; // tighter spiral for denser intersections near center
+const DEFAULT_ANGLE_DELTA_DEG = 3.75; // fallback when no childCount supplied
+const DEFAULT_EXPANSION_RATE = 0.003; // fallback when no childCount supplied
+
+// ── Child-count → parameter lookup table ─────────────────────────────
+// Source: docs/child_pyramid_params.csv
+// Rows keyed by maxChildren (inclusive). Last row (Infinity) is the catch-all.
+// Console knobs override these values when set.
+const CHILD_PARAM_TABLE = [
+  { maxChildren:  2, arcMargin: 0.4, fanAngle: 17,   minNodeDist: 7,   spiralGrowth: 0.005 },
+  { maxChildren:  3, arcMargin: 0.4, fanAngle: 17,   minNodeDist: 7,   spiralGrowth: 0.005 },
+  { maxChildren:  4, arcMargin: 0.4, fanAngle: 11,   minNodeDist: 7,   spiralGrowth: 0.005 },
+  { maxChildren:  5, arcMargin: 0.4, fanAngle:  7,   minNodeDist: 7,   spiralGrowth: 0.005 },
+  { maxChildren:  6, arcMargin: 0.4, fanAngle:  5,   minNodeDist: 7,   spiralGrowth: 0.005 },
+  { maxChildren:  7, arcMargin: 0.4, fanAngle:  4,   minNodeDist: 7,   spiralGrowth: 0.005 },
+  { maxChildren:  8, arcMargin: 0.4, fanAngle:  3.5, minNodeDist: 7,   spiralGrowth: 0.005 },
+  { maxChildren:  9, arcMargin: 0.4, fanAngle:  3.5, minNodeDist: 7,   spiralGrowth: 0.005 },
+  { maxChildren: 10, arcMargin: 0.4, fanAngle:  3,   minNodeDist: 7,   spiralGrowth: 0.005 },
+  { maxChildren: 11, arcMargin: 0.4, fanAngle:  3,   minNodeDist: 7,   spiralGrowth: 0.005 },
+  { maxChildren: 12, arcMargin: 0.4, fanAngle:  2.5, minNodeDist: 7,   spiralGrowth: 0.005 },
+  { maxChildren: Infinity, arcMargin: 0.3, fanAngle: 2, minNodeDist: 3.5, spiralGrowth: 0.025 }
+];
+
+function getChildParams(childCount) {
+  for (const row of CHILD_PARAM_TABLE) {
+    if (childCount <= row.maxChildren) return row;
+  }
+  return CHILD_PARAM_TABLE[CHILD_PARAM_TABLE.length - 1];
+}
 
 // Deterministic hash of a string to a number in [0, 1).
 function hashString01(str) {
@@ -135,16 +237,27 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   const SSd = viewport.SSd ?? Math.min(width, height);
   const LSd = viewport.LSd ?? Math.max(width, height);
   const topMargin = SSd * 0.05;
-  const rightMargin = SSd * 0.03;
+  const rightMargin = SSd * 0.1;
   const magnifierX = magnifier.cx ?? magnifier.x ?? 0;
   const magnifierY = magnifier.cy ?? magnifier.y ?? 0;
+
+  // Look up child-count-dependent parameters (console knobs override)
+  const childCount = options.childCount ?? 0;
+  const tableParams = getChildParams(childCount);
 
   // #4: CPUA bottom uses the arc (focus ring) inner edge with a comfortable margin,
   // rather than clearing space for the Dimension Button.
   const arcRadius = arcParams?.radius ?? SSd;
   const hubY = arcParams?.hubY ?? 0;
-  const arcInnerMargin = SSd * 0.06; // comfortable gap inside the arc
-  const cpuaBottom = Math.min(height - topMargin, magnifierY - SSd * 0.08);
+  const arcMarginMul = (typeof globalThis !== 'undefined' && globalThis.__arcMarginMul != null)
+    ? globalThis.__arcMarginMul
+    : tableParams.arcMargin;
+  const arcInnerMargin = SSd * arcMarginMul;
+  // When there's no Dimension Button, allow CPUA to extend to full viewport bottom
+  const hasDimButton = options.hasDimensionButton ?? true;
+  const cpuaBottom = hasDimButton
+    ? Math.min(height - topMargin, magnifierY - SSd * 0.08)
+    : height - topMargin;
 
   const cpua = {
     left: 0,
@@ -154,40 +267,96 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     bottom: cpuaBottom
   };
 
-  // Clip circle: keep nodes inside the focus ring arc with margin
+  // Clip circle: fan lines extend to the full arc edge
+  const clipCircleCx = arcParams?.hubX ?? width / 2;
+  const clipCircleCy = hubY;
   const clipCircle = {
-    cx: arcParams?.hubX ?? width / 2,
-    cy: hubY,
-    r: arcRadius - arcInnerMargin
+    cx: clipCircleCx,
+    cy: clipCircleCy,
+    r: arcRadius
   };
 
-  const lineCount = options.lineCount ?? DEFAULT_LINE_COUNT;
-  const angleDeltaRad = (options.angleDeltaDeg ?? DEFAULT_ANGLE_DELTA_DEG) * DEG_TO_RAD;
+  const fanOverride = (typeof globalThis !== 'undefined') ? globalThis.__fanAngleDeg : null;
+  const angleDeltaDeg = fanOverride ?? options.angleDeltaDeg ?? tableParams.fanAngle;
+  const angleDeltaRad = angleDeltaDeg * DEG_TO_RAD;
+
+  // If the magnifier is inside the CPUA, fan lines must sweep a full 360°.
+  // Otherwise, compute the angular span of the CPUA corners from the magnifier.
+  const magInsideCPUA = magnifierX >= cpua.left && magnifierX <= cpua.rightFull &&
+                        magnifierY >= cpua.top  && magnifierY <= cpua.bottom;
+
+  let sweepStart, lineCount, actualAngleDeltaRad;
+  if (magInsideCPUA) {
+    sweepStart = 0;
+    // Snap lineCount so the angle divides 360° evenly — avoids a short
+    // remainder gap at the wraparound seam (e.g. 9° gap with 13° delta).
+    lineCount = Math.round(360 / angleDeltaDeg);
+    actualAngleDeltaRad = (2 * Math.PI) / lineCount;
+  } else {
+    const cpuaCorners = [
+      { x: cpua.left, y: cpua.top },
+      { x: cpua.rightFull, y: cpua.top },
+      { x: cpua.rightFull, y: cpua.bottom },
+      { x: cpua.left, y: cpua.bottom }
+    ];
+    const cornerAngles = cpuaCorners.map(c => Math.atan2(c.y - magnifierY, c.x - magnifierX));
+    const sorted = [...cornerAngles].sort((a, b) => a - b);
+    let bestSpan = Infinity;
+    let bestStartAngle = sorted[0];
+    for (let i = 0; i < sorted.length; i++) {
+      const start = sorted[i];
+      let maxSpan = 0;
+      for (let j = 0; j < sorted.length; j++) {
+        let span = sorted[j] - start;
+        if (span < 0) span += 2 * Math.PI;
+        if (span > maxSpan) maxSpan = span;
+      }
+      if (maxSpan < bestSpan) {
+        bestSpan = maxSpan;
+        bestStartAngle = start;
+      }
+    }
+    sweepStart = bestStartAngle - angleDeltaRad;
+    const sweepSpan = bestSpan + 2 * angleDeltaRad;
+    lineCount = Math.ceil(sweepSpan / angleDeltaRad) + 1;
+    actualAngleDeltaRad = angleDeltaRad;
+  }
 
   // #5: Deterministic fan-line rotation offset based on parent ID.
-  // The offset is a fraction of one fan-line angular step, so the fan-line
-  // pattern stays well-formed. Same parent → same constellation every time.
+  // Full 360° rotation range for maximum visual variation between parents.
+  // Same parent → same constellation every time.
   const parentHash = hashString01(options.parentId ?? '');
-  const rotationOffset = parentHash * angleDeltaRad;
+  const rotationOffset = parentHash * 2 * Math.PI;
 
-  // #1: Spiral origin in the visual center of the CPUA (shifted slightly right)
-  const spiralOriginX = (cpua.left + cpua.rightFull) / 2 + ((cpua.rightFull - cpua.left) * 0.05);
-  const spiralOriginY = (cpua.top + cpua.bottom) / 2 + ((cpua.bottom - cpua.top) * 0.08);
-  const startAngleRad = Math.atan2(spiralOriginY - magnifierY, spiralOriginX - magnifierX) + rotationOffset;
+  // #1: Spiral origin defaults to the magnifier center
+  const so = (typeof globalThis !== 'undefined' && globalThis.__spiralOverride) || {};
+  const spiralOriginX = (so.x != null)
+    ? cpua.left + so.x * (cpua.rightFull - cpua.left)
+    : magnifierX;
+  const spiralOriginY = (so.y != null)
+    ? cpua.top + so.y * (cpua.bottom - cpua.top)
+    : magnifierY;
+  const startAngleRad = sweepStart + rotationOffset;
   const lineLength = LSd || 1000;
 
   const fanLines = [];
+  const fanDebug = [];
+  const actualAngleDeltaDeg = actualAngleDeltaRad * 180 / Math.PI;
   for (let i = 0; i < lineCount; i++) {
-    const angleRad = startAngleRad + i * angleDeltaRad;
+    const angleRad = startAngleRad + i * actualAngleDeltaRad;
+    const angleDeg = (angleRad * 180 / Math.PI) % 360;
     const endX = magnifierX + Math.cos(angleRad) * lineLength;
     const endY = magnifierY + Math.sin(angleRad) * lineLength;
     const clipped = clipFanLine(magnifierX, magnifierY, endX, endY, cpua, clipCircle, options.logoBounds ?? null);
     if (clipped) {
       fanLines.push({ id: i, x1: magnifierX, y1: magnifierY, x2: clipped.x, y2: clipped.y });
+      fanDebug.push({ i, angleDeg: angleDeg.toFixed(1) });
     }
   }
+  // Debug logging moved after intersection computation (below)
 
-  const expansionRate = typeof options.spiralExpansion === 'number' ? options.spiralExpansion : DEFAULT_EXPANSION_RATE;
+  const growthOverride = (typeof globalThis !== 'undefined') ? globalThis.__spiralGrowth : null;
+  const expansionRate = growthOverride ?? (typeof options.spiralExpansion === 'number' ? options.spiralExpansion : tableParams.spiralGrowth);
   const b = expansionRate * SSd; // r = b * theta
   const spiralCenterAngle = ((options.magnifierAngle ?? magnifier.angle ?? 0) + Math.PI) / 2;
   const spiralCenterX = spiralOriginX;
@@ -208,13 +377,12 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
 
   const spiralPath = buildSpiralPath(points);
 
-  // #3: Dynamic minimum distance — fewer children allow wider spacing.
-  // The childCount option drives density; without it, use a moderate default.
-  const childCount = options.childCount ?? 0;
+  // #3: Minimum distance between nodes — tuneable from console via minNodeDist(mul)
   const baseNodeRadius = 0.04 * SSd;
-  const minHitDistance = childCount > 0
-    ? baseNodeRadius * Math.max(2.5, 6 - childCount * 0.15)
-    : baseNodeRadius * 4;
+  const distMul = (typeof globalThis !== 'undefined' && globalThis.__minNodeDistMul != null)
+    ? globalThis.__minNodeDistMul
+    : tableParams.minNodeDist;
+  const minHitDistance = baseNodeRadius * distMul;
 
   const intersections = [];
   const pending = new Set(fanLines.map(f => f.id));
@@ -224,6 +392,10 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
       if (!pending.has(segFan.id)) return;
       const hit = intersectSegments(segSpiral, segFan);
       if (hit) {
+        // Reject intersections inside the arc margin zone
+        const distToHub = Math.hypot(hit.x - clipCircleCx, hit.y - clipCircleCy);
+        if (distToHub > arcRadius - arcInnerMargin) return;
+
         const tooClose = intersections.some(h => {
           const dx = h.x - hit.x;
           const dy = h.y - hit.y;
@@ -235,6 +407,22 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
         }
       }
     });
+  }
+
+  // Debug: only show fan lines that produced child-node intersections
+  const hitFanIds = new Set(intersections.map(h => h.fanId));
+  const hitDebug = fanDebug.filter(d => hitFanIds.has(d.i));
+  console.log(`[FanLines] children=${childCount}, lineCount=${lineCount}, rendered=${fanLines.length}, withNodes=${hitDebug.length}, angleDelta=${actualAngleDeltaDeg.toFixed(2)}° (requested ${angleDeltaDeg}°), arcMargin=${arcMarginMul}, minNodeDist=${distMul}, spiralGrowth=${expansionRate}`);
+  if (hitDebug.length > 0) {
+    const sortedHit = [...hitDebug].sort((a, b) => parseFloat(a.angleDeg) - parseFloat(b.angleDeg));
+    const gaps = [];
+    for (let k = 1; k < sortedHit.length; k++) {
+      let gap = parseFloat(sortedHit[k].angleDeg) - parseFloat(sortedHit[k - 1].angleDeg);
+      if (gap < 0) gap += 360;
+      gaps.push(gap.toFixed(1));
+    }
+    console.log(`[FanLines] node angles: [${sortedHit.map(d => d.angleDeg).join(', ')}]`);
+    console.log(`[FanLines] node gaps:   [${gaps.join(', ')}]`);
   }
 
   return {

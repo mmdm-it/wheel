@@ -530,13 +530,16 @@
         }
       }
 
-      const configLabel = typeof config?.formatLabel === 'function' ? config.formatLabel() : null;
+      const configLabel = makeLabelFormatter({ config, volume, level: options.level, locale: resolvedLocale, namesMap, options, manifest, meta });
       const adapterLabel = adapterLayoutSpec?.label;
-      const labelFormatter = configLabel
+      // Prefer the config's formatter when it is context-aware (receives { item, context }),
+      // otherwise fall back to the adapter's plain label, then the config formatter.
+      const configIsContextAware = config?.formatLabel?.length === 0; // zero-arg factory returns (item, context) => ...
+      const labelFormatter = configIsContextAware
         ? configLabel
         : adapterLabel
           ? ({ item }) => adapterLabel(item)
-          : makeLabelFormatter({ config, volume, level: options.level, locale: resolvedLocale, namesMap, options, manifest, meta });
+          : configLabel;
       const shouldCenterLabel = handlerSet.shouldCenterLabel || (({ item } = {}) => {
         if (Boolean(config?.centerLabel)) return true;
         // Cylinder items (short numeric labels) should always be centered
