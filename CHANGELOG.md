@@ -6,6 +6,30 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.8.0] - 2026-02-15
+
+### Changed
+- feat: begin IN/OUT migration — child pyramid complete (v3.7.x)
+
+
+## [3.7.29] - 2026-02-15
+
+### Changed
+- chore: remove dead hashString01, archive 7 stale docs, update ROADMAP + version refs + WORKFLOW
+
+
+## [3.7.28] - 2026-02-14
+
+### Changed
+- refactor: replace fan line sweep + spiral with magnifier-to-node connector lines, remove debug logging
+
+
+## [3.7.27] - 2026-02-14
+
+### Changed
+- feat: sort-number rotation offset formula, fix node oscillation (CSS transform transition removal), min-distance-from-origin guard
+
+
 ## [3.7.26] - 2026-02-14
 
 ### Changed

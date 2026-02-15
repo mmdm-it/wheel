@@ -108,16 +108,6 @@ function getChildParams(childCount) {
   return CHILD_PARAM_TABLE[CHILD_PARAM_TABLE.length - 1];
 }
 
-// Deterministic hash of a string to a number in [0, 1).
-function hashString01(str) {
-  if (!str) return 0;
-  let h = 0;
-  for (let i = 0; i < str.length; i++) {
-    h = ((h << 5) - h + str.charCodeAt(i)) | 0;
-  }
-  return Math.abs(h % 10000) / 10000;
-}
-
 function segmentIntervalRect(x1, y1, x2, y2, left, right, top, bottom) {
   const dx = x2 - x1;
   const dy = y2 - y1;
@@ -322,11 +312,12 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     actualAngleDeltaRad = angleDeltaRad;
   }
 
-  // #5: Deterministic fan-line rotation offset based on parent ID.
-  // Full 360° rotation range for maximum visual variation between parents.
-  // Same parent → same constellation every time.
-  const parentHash = hashString01(options.parentId ?? '');
-  const rotationOffset = parentHash * 2 * Math.PI;
+  // #5: Deterministic fan-line rotation offset based on parent sort number.
+  // Formula: (actualFanAngle / π) × sortNumber — the irrational divisor
+  // prevents repeating offsets, giving each parent a unique constellation.
+  const parentSortNumber = options.parentSortNumber ?? 0;
+  const actualAngleDeltaDeg = actualAngleDeltaRad * 180 / Math.PI;
+  const rotationOffset = (actualAngleDeltaDeg / Math.PI * parentSortNumber) * DEG_TO_RAD;
 
   // #1: Spiral origin defaults to the magnifier center
   const so = (typeof globalThis !== 'undefined' && globalThis.__spiralOverride) || {};
@@ -340,8 +331,6 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   const lineLength = LSd || 1000;
 
   const fanLines = [];
-  const fanDebug = [];
-  const actualAngleDeltaDeg = actualAngleDeltaRad * 180 / Math.PI;
   for (let i = 0; i < lineCount; i++) {
     const angleRad = startAngleRad + i * actualAngleDeltaRad;
     const angleDeg = (angleRad * 180 / Math.PI) % 360;
@@ -350,10 +339,8 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     const clipped = clipFanLine(magnifierX, magnifierY, endX, endY, cpua, clipCircle, options.logoBounds ?? null);
     if (clipped) {
       fanLines.push({ id: i, x1: magnifierX, y1: magnifierY, x2: clipped.x, y2: clipped.y });
-      fanDebug.push({ i, angleDeg: angleDeg.toFixed(1) });
     }
   }
-  // Debug logging moved after intersection computation (below)
 
   const growthOverride = (typeof globalThis !== 'undefined') ? globalThis.__spiralGrowth : null;
   const expansionRate = growthOverride ?? (typeof options.spiralExpansion === 'number' ? options.spiralExpansion : tableParams.spiralGrowth);
@@ -386,6 +373,9 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
 
   const intersections = [];
   const pending = new Set(fanLines.map(f => f.id));
+  // Minimum distance from spiral/magnifier center — reject intersections
+  // that land on top of the magnifier (causes visual oscillation).
+  const minDistFromOrigin = baseNodeRadius * 3;
   for (let i = 1; i < points.length && pending.size > 0; i++) {
     const segSpiral = { x1: points[i - 1].x, y1: points[i - 1].y, x2: points[i].x, y2: points[i].y };
     fanLines.forEach(segFan => {
@@ -395,6 +385,10 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
         // Reject intersections inside the arc margin zone
         const distToHub = Math.hypot(hit.x - clipCircleCx, hit.y - clipCircleCy);
         if (distToHub > arcRadius - arcInnerMargin) return;
+
+        // Reject intersections too close to the spiral/magnifier origin
+        const distToOrigin = Math.hypot(hit.x - spiralCenterX, hit.y - spiralCenterY);
+        if (distToOrigin < minDistFromOrigin) return;
 
         const tooClose = intersections.some(h => {
           const dx = h.x - hit.x;
@@ -409,26 +403,11 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     });
   }
 
-  // Debug: only show fan lines that produced child-node intersections
-  const hitFanIds = new Set(intersections.map(h => h.fanId));
-  const hitDebug = fanDebug.filter(d => hitFanIds.has(d.i));
-  console.log(`[FanLines] children=${childCount}, lineCount=${lineCount}, rendered=${fanLines.length}, withNodes=${hitDebug.length}, angleDelta=${actualAngleDeltaDeg.toFixed(2)}° (requested ${angleDeltaDeg}°), arcMargin=${arcMarginMul}, minNodeDist=${distMul}, spiralGrowth=${expansionRate}`);
-  if (hitDebug.length > 0) {
-    const sortedHit = [...hitDebug].sort((a, b) => parseFloat(a.angleDeg) - parseFloat(b.angleDeg));
-    const gaps = [];
-    for (let k = 1; k < sortedHit.length; k++) {
-      let gap = parseFloat(sortedHit[k].angleDeg) - parseFloat(sortedHit[k - 1].angleDeg);
-      if (gap < 0) gap += 360;
-      gaps.push(gap.toFixed(1));
-    }
-    console.log(`[FanLines] node angles: [${sortedHit.map(d => d.angleDeg).join(', ')}]`);
-    console.log(`[FanLines] node gaps:   [${gaps.join(', ')}]`);
-  }
-
   return {
     cpua,
     fanLines,
     spiral: { path: spiralPath, points },
-    intersections
+    intersections,
+    magnifierOrigin: { x: magnifierX, y: magnifierY }
   };
 }

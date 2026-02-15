@@ -734,6 +734,7 @@ export function createApp({
           logoBounds: volumeLogo.getBounds(),
           magnifierAngle: magnifier.angle,
           parentId: selected?.id ?? '',
+          parentSortNumber: selected?.order ?? 0,
           childCount: children.length,
           hasDimensionButton: hasDimensions
         });

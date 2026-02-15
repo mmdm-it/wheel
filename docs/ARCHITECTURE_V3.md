@@ -2,7 +2,7 @@
 
 > v3 note: This document is copied verbatim from wheel v2 and serves as the authoritative baseline for v3. Until a v3-specific revision is made, all constitutional constants, layer boundaries, and contracts here remain in force. Add any v3 deltas explicitly near the relevant sections rather than silently diverging.
 
-> **Current state (v3.7.12)**: Child Pyramid now uses the CPUA L-shaped region with fan-lines + spiral intersections via `computeChildPyramidGeometry`; child nodes are not rendered. The triangular arc-bound pyramid described below is historical. Keep this doc as baseline reference only and add explicit v3 deltas when needed.
+> **Current state (v3.7.28)**: Child Pyramid renders nodes in the CPUA L-shaped region using fan-line/spiral intersection placement via `computeChildPyramidGeometry`, with adaptive parameters from `CHILD_PARAM_TABLE` (keyed by child count) and sort-number-based rotation offsets. Magnifier-to-node connector lines are drawn; fan sweep and spiral are internal geometry only. The triangular arc-bound pyramid described below is historical. Keep this doc as baseline reference only and add explicit v3 deltas when needed.
 
 ## v3 Delta Summary (dimension + secondary language)
 

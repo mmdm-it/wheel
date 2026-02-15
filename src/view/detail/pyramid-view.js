@@ -86,50 +86,19 @@ export class PyramidView {
     this.#clear(this.pyramidNodesGroup);
     this.#clear(this.pyramidLabelsGroup);
 
-    fanLines.forEach(line => {
-      const el = this.doc.createElementNS('http://www.w3.org/2000/svg', 'line');
-      el.setAttribute('class', 'child-pyramid-fan-line');
-      el.setAttribute('x1', line.x1);
-      el.setAttribute('y1', line.y1);
-      el.setAttribute('x2', line.x2);
-      el.setAttribute('y2', line.y2);
-      el.setAttribute('stroke', 'black');
-      el.setAttribute('stroke-width', '1');
-      this.pyramidFanLinesGroup.appendChild(el);
-    });
-
-    if (spiral?.path) {
-      const path = this.doc.createElementNS('http://www.w3.org/2000/svg', 'path');
-      path.setAttribute('class', 'child-pyramid-spiral');
-      path.setAttribute('d', spiral.path);
-      path.setAttribute('fill', 'none');
-      path.setAttribute('stroke', 'black');
-      path.setAttribute('stroke-width', '1');
-      this.pyramidSpiralGroup.appendChild(path);
-    }
-
-    // Only show red X intersection markers when no child nodes are present.
-    // When nodes exist, they occupy the intersection slots directly.
-    if (nodes.length === 0) {
-      intersections.forEach(hit => {
-        const size = 9;
-        const half = size / 2;
-        const line1 = this.doc.createElementNS('http://www.w3.org/2000/svg', 'line');
-        line1.setAttribute('x1', hit.x - half);
-        line1.setAttribute('y1', hit.y - half);
-        line1.setAttribute('x2', hit.x + half);
-        line1.setAttribute('y2', hit.y + half);
-        line1.setAttribute('stroke', 'red');
-        line1.setAttribute('stroke-width', '2');
-        const line2 = this.doc.createElementNS('http://www.w3.org/2000/svg', 'line');
-        line2.setAttribute('x1', hit.x - half);
-        line2.setAttribute('y1', hit.y + half);
-        line2.setAttribute('x2', hit.x + half);
-        line2.setAttribute('y2', hit.y - half);
-        line2.setAttribute('stroke', 'red');
-        line2.setAttribute('stroke-width', '2');
-        this.pyramidSpiralGroup.appendChild(line1);
-        this.pyramidSpiralGroup.appendChild(line2);
+    // Draw connector lines from magnifier origin to each child node
+    const origin = data.magnifierOrigin;
+    if (origin && nodes.length > 0) {
+      nodes.forEach(instr => {
+        const el = this.doc.createElementNS('http://www.w3.org/2000/svg', 'line');
+        el.setAttribute('class', 'child-pyramid-fan-line');
+        el.setAttribute('x1', origin.x);
+        el.setAttribute('y1', origin.y);
+        el.setAttribute('x2', instr.x);
+        el.setAttribute('y2', instr.y);
+        el.setAttribute('stroke', 'black');
+        el.setAttribute('stroke-width', '1');
+        this.pyramidFanLinesGroup.appendChild(el);
       });
     }
 

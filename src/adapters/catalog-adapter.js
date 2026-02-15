@@ -88,7 +88,7 @@ export function normalize(raw) {
       const manufacturers = countryVal.manufacturers || {};
       Object.entries(manufacturers).forEach(([manuKey, manuVal], manuIdx) => {
         const manuId = `manufacturer:${manuKey}`;
-        addItem({ id: manuId, name: manuKey, level: 'manufacturer', parentId: countryId, order: manuIdx, meta: { founded: manuVal.year_founded, dissolved: manuVal.year_dissolved } });
+        addItem({ id: manuId, name: manuKey, level: 'manufacturer', parentId: countryId, order: manuVal.sort_number ?? manuIdx, meta: { founded: manuVal.year_founded, dissolved: manuVal.year_dissolved } });
 
         const cylinders = manuVal.cylinders || {};
         Object.entries(cylinders).forEach(([cylKey, cylVal], cylIdx) => {

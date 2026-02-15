@@ -211,8 +211,7 @@ svg {
   stroke: rgba(0, 0, 0, 0.32);
   stroke-width: 1px;
   pointer-events: auto;
-  transition: transform var(--motion-fast, 120ms) var(--motion-ease, ease),
-    fill var(--motion-fast, 120ms) var(--motion-ease, ease),
+  transition: fill var(--motion-fast, 120ms) var(--motion-ease, ease),
     stroke var(--motion-fast, 120ms) var(--motion-ease, ease);
 }
 

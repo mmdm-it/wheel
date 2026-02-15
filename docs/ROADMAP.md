@@ -8,9 +8,10 @@
 - v3.4 Volume-safe interaction loop — done (shipped as 3.4.0; queue/cancel + deep-link hydration + rapid-switch stress tests)
 - v3.5 Detail/pyramid rebuild on adapters + data-agnostic sweep — done (shipped as 3.5.0)
 - v3.6 Theming + accessibility hardening — done (shipped as 3.6.0)
-- v3.7 Dimension System (lens: language/time) — shipped (portals wired: language/edition metadata, store/bridge hydration, portal UI cycling, telemetry + perf budgets; pyramid geometry refactored to CPUA fan-lines/spiral; docs/changelog tracked for release)
-- v3.8 Child Pyramid node layout, design, and implementation — planned
-- v3.9 Detail Sector layout, design, and implementation — planned
+- v3.7 Dimension System + Child Pyramid — shipped (portals wired: language/edition metadata, store/bridge hydration, portal UI cycling, telemetry + perf budgets; pyramid geometry refactored to CPUA fan-lines/spiral; child pyramid node rendering with CHILD_PARAM_TABLE, connector lines, sort-number rotation offset; catalog data cleanup; shipped as v3.7.28)
+- v3.8 IN/OUT Migration — in progress (node drill-in/drill-out state transitions and animation)
+- v3.9 Detail Sector — planned (layout, design, plugin rendering for leaf-level content)
+- v4.0 Ship — planned (polish, deploy, final QA)
 
 ## Vision
 

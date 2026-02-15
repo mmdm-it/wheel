@@ -1,6 +1,6 @@
 # Child Pyramid Redesign Specification
 
-> **Superseded note (v3.7.12)**: Current implementation renders the CPUA L-shaped region with fan-lines/spiral/intersections computed by `computeChildPyramidGeometry`, with nodes hidden. The triangular arc-bound pyramid and node placement below are retained for historical reference only.
+> **Superseded note (v3.7.28)**: Current implementation uses the CPUA L-shaped region with fan-line/spiral intersection placement via `computeChildPyramidGeometry`. Child nodes are rendered with adaptive parameters from `CHILD_PARAM_TABLE`, magnifier-to-node connector lines, and sort-number-based rotation offsets. Fan sweep and spiral are internal geometry (not rendered). The triangular arc-bound pyramid spec below is retained for historical reference only.
 
 ## Overview
 
