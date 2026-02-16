@@ -6,6 +6,30 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.8.18] - 2026-02-16
+
+### Changed
+- Hub ↔ Child Pyramid animation now runs simultaneously with Child Pyramid ↔ Focus Ring animation (parallel 600ms, down from ~1200ms sequential)
+- Restructured migrateIn to commit data swap immediately while real nodes are hidden, enabling both animations to fire at the same time
+- Fixed pyramid group opacity not restored after OUT migration
+- Removed duplicate animatePyramidFromHub call from migrateOut that caused nodes to vanish and re-animate from wrong direction
+
+
+## [3.8.17] - 2026-02-16
+
+### Added
+- Child Pyramid nodes now animate to/from the hub (off-screen focus-ring center) during IN and OUT migrations instead of popping on/off
+- New `animatePyramidFromHub` and `animatePyramidToHub` exports in migration-animation module
+
+
+## [3.8.16] - 2026-02-16
+
+### Changed
+- Migration animation now runs simultaneously with Detail Sector expand/collapse (parallel 600ms, down from ~1200ms sequential)
+- All child pyramid nodes animate during migration, including those destined for off-screen arc positions (no more filtering to visible window)
+- Added `calculateAllNodePositions` geometry export (unfiltered arc positions for animation targets)
+
+
 ## [3.8.15] - 2026-02-15
 
 ### Added

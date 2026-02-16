@@ -5,18 +5,19 @@
 Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. v3.8.7 Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.8.14 (2026-02-15)
+- v3.8.15 (2026-02-15)
 
 ## Notable Changes in 3.7.3
 - Child Pyramid nodes now support a spiral layout mode, placing nodes equidistantly along an Archimedean spiral using true arc-length spacing. This ensures visually uniform node distribution for all child counts. (Cartesian grid mode is also available.)
 
 ## Release Train
-- v3.8.14 Baseline data + UI lift — done
-- v3.8.14 Adapter + state-store foundation — done
-- v3.8.14 Volume-safe interaction loop — done
-- v3.8.14 Detail/pyramid rebuild on adapters — done
-- v3.8.14 Theming + accessibility hardening — done (theming tokens, a11y pass, perf budgets, theme swap smoke)
-- v3.8.14 Dimension System (lens: language/time) — shipped: language + edition portals, schema/adapter hydration, UI cycling with aria/keyboard, perf budgets
+- v3.8.15 Baseline data + UI lift — done
+- v3.8.15 Adapter + state-store foundation — done
+- v3.8.15 Volume-safe interaction loop — done
+- v3.8.15 Detail/pyramid rebuild on adapters — done
+- v3.8.15 Theming + accessibility hardening — done (theming tokens, a11y pass, perf budgets, theme swap smoke)
+- v3.8.15 Dimension System (lens: language/time) — shipped: language + edition portals, schema/adapter hydration, UI cycling with aria/keyboard, perf budgets
+- v3.8.15 Migration Animation (Child Pyramid ↔ Focus Ring) — shipped: `animateIn`/`animateOut` with LIFO stack, 600ms CSS transform, `isAnimating` guard, `prefers-reduced-motion` support
 
 - `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.7.14`).
 - Historical majors live on archive branches (e.g., `archive/v0`, `archive/v1`, `archive/v2`).
@@ -31,7 +32,7 @@ Minimal scaffold, data-agnostic: interaction → navigation → view → geometr
 - `src/geometry` — pure math helpers (hub/radius, arc window, positions)
 - `src/navigation` — navigation state and events
 - `src/interaction` — rotation choreographer (momentum + snapping)
-- `src/view` — rendering stubs (SVG hooks) and DOM bindings
+- `src/view` — rendering (SVG hooks), DOM bindings, and migration animation (`migration-animation.js`)
 - `data` — sample volume/schema/manifest
 - `styles` — CSS variables and base styles
 - `test` — node test files for geometry/state

@@ -1,4 +1,4 @@
-import { getViewportInfo, calculateNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing } from './geometry/focus-ring-geometry.js';
+import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing } from './geometry/focus-ring-geometry.js';
 import { NavigationState } from './navigation/navigation-state.js';
 import { buildBibleVerseCousinChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
@@ -9,7 +9,7 @@ import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry } from './geometry/child-pyramid-geometry.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
-import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack } from './view/migration-animation.js';
+import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
@@ -663,14 +663,23 @@ export function createApp({
       const tMaxRot = windowInfo.endAngle - getBaseAngleForOrder(tLast, vp, nodeSpacing);
       tempRotation = Math.max(tMinRot, Math.min(tMaxRot, desiredTempRotation));
     }
-    const ringTargets = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing);
+    // Use calculateAllNodePositions (no visible-window filter) so every
+    // sibling gets a target — nodes beyond the visible arc animate to their
+    // implied off-screen positions on the focus ring.
+    const ringTargets = calculateAllNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing);
 
     // 3. Hide real focus-ring nodes + pyramid so only animated clones show
     if (view.nodesGroup)  view.nodesGroup.style.opacity = '0';
     if (view.labelsGroup) view.labelsGroup.style.opacity = '0';
     if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '0';
 
-    // 4. Kick off the animation
+    // 4. Commit the data swap NOW while real nodes are hidden behind clones.
+    //    This lets us read lastPyramidData for the new child pyramid immediately.
+    setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
+
+    // 5. Kick off BOTH animations simultaneously:
+    //    a) Old child pyramid → focus ring (animateIn)
+    //    b) Hub → new child pyramid (animatePyramidFromHub)
     animateIn({
       svgRoot: view.blurGroup || view.svgRoot,
       pyramidNodes,
@@ -679,14 +688,36 @@ export function createApp({
       clickedId: tempSelected?.id ?? null,
       nodeRadius,
       onComplete: () => {
-        // 5. Restore visibility for real nodes
+        // Restore visibility for real focus-ring nodes
         if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
         if (view.labelsGroup) view.labelsGroup.style.opacity = '';
-        if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '';
-        // 6. Commit the real data swap
-        setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
+        // If no pyramid-from-hub animation ran, restore pyramid too
+        if (!lastPyramidData?.nodes?.length) {
+          if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '';
+        }
       }
     });
+
+    // New child pyramid: animate from hub simultaneously with the ring migration
+    if (lastPyramidData?.nodes?.length) {
+      animatePyramidFromHub({
+        svgRoot: view.blurGroup || view.svgRoot,
+        pyramidNodes: lastPyramidData.nodes,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        pyramidGroup: view.pyramidView?.pyramidGroup
+      });
+    }
+
+    // 5. Detail Sector: expand simultaneously if the incoming selected item is a leaf.
+    //    By triggering here (not waiting for onComplete), both animations run in parallel.
+    //    No onComplete render — setPrimaryItems (in the migration onComplete) will
+    //    trigger the authoritative render once nav state has been committed.
+    const incomingIsLeaf = leafLevel && tempSelected?.level === leafLevel;
+    if (incomingIsLeaf && !detailSectorShown && !volumeLogo.animating) {
+      detailSectorShown = true;
+      volumeLogo.expand(arcParams, magnifier.angle);
+    }
   };
 
   // ── Migration Animation: OUT (Focus Ring → Child Pyramid) ─────────
@@ -699,11 +730,38 @@ export function createApp({
       return;
     }
 
+    // Detail Sector: collapse simultaneously with the reverse migration animation.
+    // By triggering here (not waiting for onComplete), both animations run in parallel.
+    //    No onComplete render — setPrimaryItems (in the migration onComplete) will
+    //    trigger the authoritative render once nav state has been committed.
+    if (detailSectorShown && !volumeLogo.animating) {
+      detailSectorShown = false;
+      volumeLogo.collapse(arcParams, magnifier.angle);
+    }
+
+    // Child Pyramid: animate existing nodes to the hub (off-screen) simultaneously
+    // with the reverse migration animation, instead of letting them pop off.
+    if (lastPyramidData?.nodes?.length) {
+      animatePyramidToHub({
+        svgRoot: view.blurGroup || view.svgRoot,
+        pyramidNodes: lastPyramidData.nodes,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        pyramidGroup: view.pyramidView?.pyramidGroup
+      });
+    }
+
     animateOut({
       nodesGroup: view.nodesGroup,
       labelsGroup: view.labelsGroup,
       onComplete: () => {
         setPrimaryItems(items, selectedIndex, preserveOrder);
+        // Restore pyramid group visibility — animatePyramidToHub hid it and
+        // intentionally did not restore it.  setPrimaryItems → render() has
+        // now repainted the children inside the group.
+        if (view.pyramidView?.pyramidGroup) {
+          view.pyramidView.pyramidGroup.style.opacity = '';
+        }
       }
     });
   };

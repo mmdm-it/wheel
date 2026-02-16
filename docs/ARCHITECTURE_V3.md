@@ -41,15 +41,16 @@
                         ▼
 ┌─────────────────────────────────────────────────────────┐
 │                   Navigation Layer                       │
-│      (navigation-state, migration-choreographer)         │
+│              (navigation-state)                          │
 │     Owns current selection, handles IN/OUT migration     │
 └───────────────────────┬─────────────────────────────────┘
                         │
                         ▼
 ┌─────────────────────────────────────────────────────────┐
 │                     View Layer                           │
-│   (focus-ring-view, child-pyramid-view, detail-view)     │
-│         Pure rendering: State → SVG/DOM elements         │
+│   (focus-ring-view, child-pyramid-view, detail-view,     │
+│    migration-animation)                                  │
+│  Pure rendering + animated transitions: State → SVG/DOM  │
 └───────────────────────┬─────────────────────────────────┘
                         │
                         ▼
@@ -344,34 +345,41 @@ class ChildPyramidGeometry {
 
 ---
 
-### 7. ChildPyramidView
+### 7. ChildPyramidView + Migration Animation
 
-**ChildPyramidView** renders the Child Pyramid (pure rendering).
+**PyramidView** (`src/view/detail/pyramid-view.js`) renders the Child Pyramid. **Migration animation** (`src/view/migration-animation.js`) handles IN/OUT transitions.
 
-**Responsibilities:**
-- Create SVG elements for pyramid nodes
-- Render fan lines from magnifier to nodes
+> **v3.8.15 delta**: The aspirational `animateSortingBallet` method described below never shipped. Actual migration animation is provided by the standalone `migration-animation.js` module (see §11 v3.8.15 delta).
+
+**PyramidView responsibilities:**
+- Create SVG elements for pyramid nodes (class `child-pyramid-node`, `data-index` attribute)
+- Render fan lines from magnifier origin to each node
 - Apply CSS classes for styling
-- Animate "sorting ballet" during migration
-- No touch handling
+- Clear and rebuild all elements each render frame
+- No touch handling (SVG click delegation in `index.html`)
 
-**Interface:**
+**Migration Animation responsibilities:**
+- Clone child pyramid nodes and animate to focus ring positions during IN
+- Reverse-animate from focus ring back to pyramid positions during OUT
+- LIFO stack for multi-level undo
+- `isAnimating()` guard to block interaction during transitions
+
+**Interface (PyramidView):**
 ```javascript
-class ChildPyramidView {
-    constructor(container, geometry) { }
-    
-    // Rendering
-    render(items, magnifierPos)   // Create/update SVG
-    
-    // Animation
-    animateSortingBallet(from, to, duration) // IN migration animation
-    
-    // Diagnostic
-    renderBoundary(bounds)        // Lime green triangle (debug mode)
-    
-    // Cleanup
-    clear()                       // Remove all SVG elements
+class PyramidView {
+    constructor(parentGroup, doc) { }
+    init(parentGroup)             // Create SVG groups
+    render(data)                  // Clear and rebuild nodes/labels/fan-lines
 }
+```
+
+**Interface (migration-animation.js):**
+```javascript
+export function animateIn(opts)   // Clone pyramid nodes → focus ring (600ms CSS transform)
+export function animateOut(opts)  // Reverse: focus ring → pyramid positions
+export function isAnimating()     // True while animation in flight
+export function clearStack()      // Reset LIFO stack
+export function getStackDepth()   // Current stack depth
 ```
 
 ---
@@ -507,54 +515,52 @@ choreographer.startMomentum(-0.02);
 // Stops when velocity < 0.001
 ```
 
-### 11. MigrationChoreographer
+### 11. Migration Animation
 
-**MigrationChoreographer** orchestrates animations during IN/OUT navigation.
+> **v3.8.15 delta**: The aspirational `MigrationChoreographer` class described in the original v2 spec was never implemented. Actual migration animation shipped in v3.8.15 as flat function exports in `src/view/migration-animation.js`, modelled after the v0 `MobileAnimation` class.
+
+**Migration Animation** (`src/view/migration-animation.js`) orchestrates CSS transform animations during IN/OUT navigation.
 
 **Responsibilities:**
-- Coordinate multi-view animations
-- Timing and easing functions
-- Ensure views animate together
-- Handle interruptions (user touch during animation)
+- Clone child pyramid nodes into a temporary SVG overlay group
+- Apply CSS `transform: translate(dx,dy) rotate(Δ°)` with 600ms ease-in-out
+- Maintain a LIFO stack of animation layers for multi-level undo
+- Provide `isAnimating()` guard to block interaction during transitions
+- Respect `prefers-reduced-motion` via CSS (`transition: none !important`)
 
-**Interface:**
+**Exports:**
 ```javascript
-class MigrationChoreographer {
-    constructor() { }
-    
-    // Choreography
-    choreographIn(from, to)       // IN migration animation
-    choreographOut(from, to)      // OUT migration animation
-    
-    // Control
-    pause()                       // Pause current animation
-    resume()                      // Resume paused animation
-    cancel()                      // Cancel and reset
-    
-    // Timing
-    getDuration(migrationType)    // Standard duration (800ms)
-    getEasing(migrationType)      // Easing function
-}
+export function animateIn(opts)    // IN: pyramid → focus ring
+export function animateOut(opts)   // OUT: focus ring → pyramid
+export function isAnimating()      // true while animation in flight
+export function clearStack()       // reset LIFO stack
+export function getStackDepth()    // current stack depth
 ```
 
-**IN Migration Sequence:**
-1. Fan lines and parent button line disappear (instant)
-2. Child Pyramid nodes perform "sorting ballet" to Focus Ring (300ms)
-   2a. Selected pyramid node migrates from pyramid to Magnifier
-   2b. Unselected pyramid nodes move to Focus Ring
-   2c. Magnifier node moves to Parent Button
-   2d. Parent Button moves off-screen
-3. New nodes appear in Child Pyramid OR Detail Sector enlarges for leaf (instant)
-4. Fan lines and parent button line reappear (instant)
+**Integration (in `index.js`):**
+- `migrateIn(newItems, selectedIdx, preserveOrder)` — snapshots pyramid node positions, pre-calculates focus ring targets (normalise → align-to-selected → clamp), hides real nodes, calls `animateIn`, then `setPrimaryItems` on completion.
+- `migrateOut(items, selectedIdx, preserveOrder)` — calls `animateOut` to reverse the most recent IN, then `setPrimaryItems` on completion.
+- Both exposed on the app object; adapters call `app.migrateIn`/`app.migrateOut` when available, falling back to `app.setPrimaryItems`.
 
-**OUT Migration Sequence:**
-Reverse of above.
+**IN Animation Sequence:**
+1. Snapshot current child pyramid node positions from `lastPyramidData.nodes`
+2. Pre-calculate focus ring target positions for the new items
+3. Hide real focus ring nodes, labels, and pyramid group
+4. Clone each pyramid node into an SVG overlay `<g class="migration-animation-overlay">`
+5. Apply CSS `transition: transform 600ms ease-in-out`; set `transform: translate(dx,dy) rotate(Δ°)`
+6. After 600ms: hide clones (opacity 0, kept in DOM for OUT reuse), push to LIFO stack
+7. Restore real node visibility; call `setPrimaryItems` to commit data swap
 
-**Visual Changes:**
-- No fading (opacity changes) except Detail Sector circle when enlarged
-- Items either animate (move smoothly) or pop (appear/disappear instantly)
-- Colors set per volume/dimension, never change during navigation
-- All visual transitions must be approved before implementation
+**OUT Animation Sequence:**
+1. Pop most recent entry from LIFO stack
+2. Hide real focus ring nodes and labels
+3. Show saved clones at their translated positions; apply `transform: translate(0,0) rotate(0deg)` with 600ms transition
+4. After 600ms: remove overlay from DOM; restore real node visibility; call `setPrimaryItems`
+
+**Constants:**
+- Duration: 600ms (matches v0)
+- Easing: CSS `ease-in-out`
+- Delay before animation start: 10ms (force reflow gap)
 
 ---
 

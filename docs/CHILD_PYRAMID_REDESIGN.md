@@ -2,13 +2,15 @@
 
 > **Superseded note (v3.7.28)**: Current implementation uses the CPUA L-shaped region with fan-line/spiral intersection placement via `computeChildPyramidGeometry`. Child nodes are rendered with adaptive parameters from `CHILD_PARAM_TABLE`, magnifier-to-node connector lines, and sort-number-based rotation offsets. Fan sweep and spiral are internal geometry (not rendered). The triangular arc-bound pyramid spec below is retained for historical reference only.
 
+> **v3.8.15 delta — Migration Animation**: The "sorting ballet" concept below was implemented as `src/view/migration-animation.js`. Rather than a class method, animation is provided via flat exports: `animateIn` (clones child pyramid nodes, applies CSS `transform: translate(dx,dy) rotate(Δ°)` with 600ms ease-in-out to slide them to focus ring positions) and `animateOut` (reverse via LIFO stack). `isAnimating()` blocks interaction during transitions. See `docs/ARCHITECTURE_V3.md` §11 for full details.
+
 ## Overview
 
 The Child Pyramid is a triangular region displaying a preview of the selected item's children. It sits between the Magnifier and the top-right corner of the viewport, bounded by a convex arc (the Focus Ring / Detail Sector arc) as its hypotenuse.
 
 **Shape**: Right triangle with convex arc hypotenuse
 **Purpose**: Show sampled children before full navigation
-**Animation**: "Sorting ballet" during IN migration to Focus Ring
+**Animation**: IN/OUT migration via `migration-animation.js` (see v3.8.15 delta above)
 
 ---
 

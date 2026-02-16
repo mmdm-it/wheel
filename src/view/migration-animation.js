@@ -246,6 +246,183 @@ export function animateOut(opts) {
 }
 
 /**
+ * Animate child-pyramid nodes FROM the hub (off-screen focus-ring center)
+ * to their pyramid positions.  Used after an IN migration completes and
+ * setPrimaryItems paints a new child pyramid.
+ *
+ * @param {Object}    opts
+ * @param {SVGElement}  opts.svgRoot       — container for clone overlay
+ * @param {Object[]}    opts.pyramidNodes  — newly rendered pyramidData.nodes
+ * @param {number}      opts.hubX          — focus-ring hub X (off-screen right)
+ * @param {number}      opts.hubY          — focus-ring hub Y
+ * @param {SVGElement}  [opts.pyramidGroup]  — real pyramid <g> to hide during anim
+ * @param {Function}    [opts.onComplete]  — called when animation finishes
+ */
+export function animatePyramidFromHub(opts) {
+  const {
+    svgRoot,
+    pyramidNodes = [],
+    hubX,
+    hubY,
+    pyramidGroup,
+    onComplete
+  } = opts;
+
+  if (!svgRoot || pyramidNodes.length === 0) {
+    if (onComplete) onComplete();
+    return;
+  }
+
+  // Hide the real pyramid during the animation
+  if (pyramidGroup) pyramidGroup.style.opacity = '0';
+
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay');
+  svgRoot.appendChild(overlay);
+
+  const entries = [];
+
+  pyramidNodes.forEach(pn => {
+    const g = document.createElementNS(SVG_NS, 'g');
+    g.setAttribute('class', 'migration-node');
+
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', hubX);
+    circle.setAttribute('cy', hubY);
+    circle.setAttribute('r', pn.r);
+    circle.setAttribute('class', 'child-pyramid-node');
+    g.appendChild(circle);
+
+    const label = document.createElementNS(SVG_NS, 'text');
+    label.setAttribute('x', hubX);
+    label.setAttribute('y', hubY);
+    label.setAttribute('text-anchor', 'middle');
+    label.setAttribute('dominant-baseline', 'middle');
+    label.setAttribute('class', 'child-pyramid-label');
+    // Start label at 0° rotation (hub) — will rotate to pyramid angle
+    label.setAttribute('transform', `rotate(0, ${hubX}, ${hubY})`);
+    label.textContent = pn.label ?? pn.item?.name ?? '';
+    g.appendChild(label);
+
+    overlay.appendChild(g);
+
+    // Translation from hub to pyramid position
+    const translateX = pn.x - hubX;
+    const translateY = pn.y - hubY;
+
+    // Set initial transform (at hub, identity)
+    g.style.transformOrigin = `${hubX}px ${hubY}px`;
+    g.style.transform = 'translate(0px, 0px)';
+
+    entries.push({ g, circle, label, translateX, translateY, dstX: pn.x, dstY: pn.y, angle: pn.angle });
+  });
+
+  // Force reflow
+  overlay.getBoundingClientRect();
+
+  setTimeout(() => {
+    entries.forEach(e => {
+      e.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
+      e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
+    });
+
+    setTimeout(() => {
+      overlay.remove();
+      if (pyramidGroup) pyramidGroup.style.opacity = '';
+      if (onComplete) onComplete();
+    }, ANIM_DURATION);
+  }, ANIM_DELAY);
+}
+
+/**
+ * Animate child-pyramid nodes TO the hub (off-screen focus-ring center).
+ * Used at the start of OUT migration so the child pyramid doesn't just vanish.
+ *
+ * @param {Object}    opts
+ * @param {SVGElement}  opts.svgRoot       — container for clone overlay
+ * @param {Object[]}    opts.pyramidNodes  — current pyramidData.nodes (snapshot)
+ * @param {number}      opts.hubX          — focus-ring hub X (off-screen right)
+ * @param {number}      opts.hubY          — focus-ring hub Y
+ * @param {SVGElement}  [opts.pyramidGroup]  — real pyramid <g> to hide during anim
+ * @param {Function}    [opts.onComplete]  — called when animation finishes
+ */
+export function animatePyramidToHub(opts) {
+  const {
+    svgRoot,
+    pyramidNodes = [],
+    hubX,
+    hubY,
+    pyramidGroup,
+    onComplete
+  } = opts;
+
+  if (!svgRoot || pyramidNodes.length === 0) {
+    if (onComplete) onComplete();
+    return;
+  }
+
+  // Hide the real pyramid immediately
+  if (pyramidGroup) pyramidGroup.style.opacity = '0';
+
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay');
+  svgRoot.appendChild(overlay);
+
+  const entries = [];
+
+  pyramidNodes.forEach(pn => {
+    const g = document.createElementNS(SVG_NS, 'g');
+    g.setAttribute('class', 'migration-node');
+
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', pn.x);
+    circle.setAttribute('cy', pn.y);
+    circle.setAttribute('r', pn.r);
+    circle.setAttribute('class', 'child-pyramid-node');
+    g.appendChild(circle);
+
+    const label = document.createElementNS(SVG_NS, 'text');
+    label.setAttribute('x', pn.x);
+    label.setAttribute('y', pn.y);
+    label.setAttribute('text-anchor', 'middle');
+    label.setAttribute('dominant-baseline', 'middle');
+    label.setAttribute('class', 'child-pyramid-label');
+    const srcRot = (pn.angle * 180) / Math.PI + 180;
+    label.setAttribute('transform', `rotate(${srcRot}, ${pn.x}, ${pn.y})`);
+    label.textContent = pn.label ?? pn.item?.name ?? '';
+    g.appendChild(label);
+
+    overlay.appendChild(g);
+
+    // Translation from pyramid position to hub
+    const translateX = hubX - pn.x;
+    const translateY = hubY - pn.y;
+
+    g.style.transformOrigin = `${pn.x}px ${pn.y}px`;
+    g.style.transform = 'translate(0px, 0px)';
+
+    entries.push({ g, translateX, translateY });
+  });
+
+  // Force reflow
+  overlay.getBoundingClientRect();
+
+  setTimeout(() => {
+    entries.forEach(e => {
+      e.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
+      e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
+    });
+
+    setTimeout(() => {
+      overlay.remove();
+      // Do NOT restore pyramidGroup opacity — the OUT migration's
+      // onComplete → setPrimaryItems will repaint the parent's pyramid.
+      if (onComplete) onComplete();
+    }, ANIM_DURATION);
+  }, ANIM_DELAY);
+}
+
+/**
  * Clear the animation stack (e.g. on full navigation reset).
  */
 export function clearStack() {
