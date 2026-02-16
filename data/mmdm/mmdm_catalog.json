@@ -10,7 +10,7 @@
             "volume_description": "Water-Cooled Exhaust Manifolds Database",
             "leaf_level": "model",
             "focus_ring_startup": {
-                "initial_magnified_item": "Lockwood-Ash",
+                "initial_magnified_item": "Ford",
                 "top_navigation_level": "manufacturer",
                 "arrangement": "cousins-flat"
             },
@@ -1921,7 +1921,6 @@
                                                 "engine_model": "3208",
                                                 "year_introduced": 1975,
                                                 "year_discontinued": 1999,
-                                                "rcj_family_sort_number": 3,
                                                 "sort_number": 1
                                             },
                                             {
@@ -1934,7 +1933,6 @@
                                                 "engine_model": "C32",
                                                 "year_introduced": 2010,
                                                 "year_discontinued": null,
-                                                "rcj_family_sort_number": 6,
                                                 "sort_number": 3
                                             },
                                             {
@@ -1964,7 +1962,6 @@
                                                 "engine_model": "D379",
                                                 "year_introduced": 1965,
                                                 "year_discontinued": 1985,
-                                                "rcj_family_sort_number": 1,
                                                 "sort_number": 1
                                             },
                                             {
@@ -2206,8 +2203,10 @@
                                         "sort_number": 1,
                                         "families": {
                                             "Small Block": {
+                                                "sort_number": 1,
                                                 "subfamilies": {
                                                     "Gen IV": {
+                                                        "sort_number": 1,
                                                         "models": [
                                                             {
                                                                 "engine_model": "6.2L",
@@ -2235,6 +2234,7 @@
                                         "sort_number": 1,
                                         "families": {
                                             "Series 71": {
+                                                "sort_number": 1,
                                                 "models": [
                                                     {
                                                         "engine_model": "6-71",

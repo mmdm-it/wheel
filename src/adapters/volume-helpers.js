@@ -1,47 +1,171 @@
 // Volume-specific chain/build helpers extracted from the host page.
 // These remain pure functions over manifests and options.
 
+// Resolve the manufacturer object from a parentId containing market__country
+function resolveManufacturer(manifest, manufacturerId, parentId) {
+  // Walk up through parentId chain or search all markets
+  if (parentId) {
+    // parentId may be a compound "market__country__manufacturer" or we can extract market/country
+    const segments = parentId.includes('__') ? parentId.split('__') : [];
+    if (segments.length >= 2) {
+      const [marketId, countryId] = segments;
+      const found = manifest?.MMdM?.markets?.[marketId]?.countries?.[countryId]?.manufacturers?.[manufacturerId];
+      if (found) return found;
+    }
+  }
+  // Fallback: search all markets
+  const markets = manifest?.MMdM?.markets || {};
+  for (const marketVal of Object.values(markets)) {
+    for (const countryVal of Object.values(marketVal?.countries || {})) {
+      if (countryVal?.manufacturers?.[manufacturerId]) return countryVal.manufacturers[manufacturerId];
+    }
+  }
+  return null;
+}
+
+// Build child items from a models array (orphans or family/subfamily models)
+function modelsToItems(models, idPrefix, parentId, parentName, cylKey) {
+  if (!Array.isArray(models)) return [];
+  return models.map((model, idx) => ({
+    id: `${idPrefix}${model.engine_model || idx}`,
+    name: model.engine_model || `Model ${idx + 1}`,
+    order: model.sort_number ?? idx,
+    parentId,
+    parentName,
+    cylinder: cylKey,
+    level: 'model'
+  }));
+}
+
 export function getCatalogChildren(manifest, selected) {
   const id = selected?.id;
   if (!id) return [];
 
-  // Cylinder-level selection: return models under that cylinder
-  if (id.startsWith('cyl:')) {
-    // id = "cyl:manufacturerId:cylKey" with parentId = "market__country__manufacturer"
+  // --- Subfamily-level: return models under that subfamily ---
+  if (id.startsWith('subfam:')) {
+    // id = "subfam:manufacturer:cyl:family:subfamily"
     const parts = id.split(':');
     const manufacturerId = parts[1];
     const cylKey = parts[2];
-    const parentId = selected.parentId;
-    if (!parentId) return [];
-    const [marketId, countryId] = parentId.split('__');
-    const manufacturer = manifest?.MMdM?.markets?.[marketId]?.countries?.[countryId]?.manufacturers?.[manufacturerId];
+    const familyName = parts[3];
+    const subfamilyName = parts[4];
+    const manufacturer = resolveManufacturer(manifest, manufacturerId, selected.parentId);
+    if (!manufacturer) return [];
+    const cylVal = manufacturer.cylinders?.[cylKey];
+    const subfamily = cylVal?.families?.[familyName]?.subfamilies?.[subfamilyName];
+    if (!subfamily) return [];
+    const prefix = `model:${manufacturerId}:${cylKey}:${familyName}:${subfamilyName}:`;
+    return modelsToItems(subfamily.models, prefix, id, familyName, cylKey)
+      .sort((a, b) => a.order - b.order)
+      .map((child, idx) => ({ ...child, order: idx }));
+  }
+
+  // --- Family-level: return orphan models + subfamilies ---
+  if (id.startsWith('fam:')) {
+    // id = "fam:manufacturer:cyl:family"
+    const parts = id.split(':');
+    const manufacturerId = parts[1];
+    const cylKey = parts[2];
+    const familyName = parts[3];
+    const manufacturer = resolveManufacturer(manifest, manufacturerId, selected.parentId);
+    if (!manufacturer) return [];
+    const cylVal = manufacturer.cylinders?.[cylKey];
+    const family = cylVal?.families?.[familyName];
+    if (!family) return [];
+
+    const children = [];
+    // Orphan models first (models at family level without a subfamily)
+    const prefix = `model:${manufacturerId}:${cylKey}:${familyName}:`;
+    children.push(...modelsToItems(family.models, prefix, id, familyName, cylKey));
+
+    // Then subfamilies
+    const subfamilies = family.subfamilies || {};
+    Object.entries(subfamilies).forEach(([subName, subVal]) => {
+      children.push({
+        id: `subfam:${manufacturerId}:${cylKey}:${familyName}:${subName}`,
+        name: subName,
+        order: subVal.sort_number ?? children.length,
+        parentId: id,
+        parentName: familyName,
+        cylinder: cylKey,
+        level: 'subfamily'
+      });
+    });
+
+    return children
+      .sort((a, b) => {
+        // Orphan models first, then subfamilies
+        const aIsLeaf = a.level === 'model' ? 0 : 1;
+        const bIsLeaf = b.level === 'model' ? 0 : 1;
+        if (aIsLeaf !== bIsLeaf) return aIsLeaf - bIsLeaf;
+        return a.order - b.order;
+      })
+      .map((child, idx) => ({ ...child, order: idx }));
+  }
+
+  // --- Cylinder-level: return orphan models + families ---
+  if (id.startsWith('cyl:')) {
+    // id = "cyl:manufacturerId:cylKey"
+    const parts = id.split(':');
+    const manufacturerId = parts[1];
+    const cylKey = parts[2];
+    const manufacturer = resolveManufacturer(manifest, manufacturerId, selected.parentId);
     if (!manufacturer) return [];
     const cylVal = manufacturer.cylinders?.[cylKey];
     if (!cylVal) return [];
-    const models = Array.isArray(cylVal.models) ? cylVal.models : [];
-    return models.map((model, idx) => ({
-      id: `model:${manufacturerId}:${cylKey}:${model.engine_model || idx}`,
-      name: model.engine_model || `Model ${idx + 1}`,
-      order: Number.isFinite(cylVal.sort_number) ? cylVal.sort_number * 100 + idx : idx,
-      parentId: id,
-      cylinder: cylKey,
-      level: 'model'
-    }));
+
+    const children = [];
+    // Orphan models first (models at cylinder level without a family)
+    const prefix = `model:${manufacturerId}:${cylKey}:`;
+    children.push(...modelsToItems(cylVal.models, prefix, id, manufacturerId, cylKey));
+
+    // Then families
+    const families = cylVal.families || {};
+    Object.entries(families).forEach(([famName, famVal]) => {
+      children.push({
+        id: `fam:${manufacturerId}:${cylKey}:${famName}`,
+        name: famName,
+        order: famVal.sort_number ?? children.length,
+        parentId: id,
+        parentName: manufacturerId,
+        cylinder: cylKey,
+        level: 'family'
+      });
+    });
+
+    return children
+      .sort((a, b) => {
+        // Orphan models first, then families
+        const aIsLeaf = a.level === 'model' ? 0 : 1;
+        const bIsLeaf = b.level === 'model' ? 0 : 1;
+        if (aIsLeaf !== bIsLeaf) return aIsLeaf - bIsLeaf;
+        return a.order - b.order;
+      })
+      .map((child, idx) => ({ ...child, order: idx }));
   }
 
-  // Manufacturer-level selection: return cylinders
+  // --- Manufacturer-level: return cylinders ---
   const [marketId, countryId, manufacturerId] = id.split('__');
   const manufacturer = manifest?.MMdM?.markets?.[marketId]?.countries?.[countryId]?.manufacturers?.[manufacturerId];
   if (!manufacturer) return [];
   const cylinders = manufacturer.cylinders || {};
   return Object.entries(cylinders)
     .map(([cylKey, cylVal]) => {
-      const modelCount = Array.isArray(cylVal.models) ? cylVal.models.length : 0;
+      // Count all models at all depths for this cylinder
+      let modelCount = Array.isArray(cylVal.models) ? cylVal.models.length : 0;
+      const families = cylVal.families || {};
+      for (const famVal of Object.values(families)) {
+        modelCount += Array.isArray(famVal.models) ? famVal.models.length : 0;
+        for (const subVal of Object.values(famVal.subfamilies || {})) {
+          modelCount += Array.isArray(subVal.models) ? subVal.models.length : 0;
+        }
+      }
       return {
         id: `cyl:${manufacturerId}:${cylKey}`,
         name: cylKey,
         order: Number.isFinite(cylVal.sort_number) ? cylVal.sort_number : parseInt(cylKey, 10) || 0,
         parentId: id,
+        parentName: manufacturerId,
         modelCount,
         level: 'cylinder'
       };

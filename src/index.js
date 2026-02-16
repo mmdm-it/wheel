@@ -602,6 +602,9 @@ export function createApp({
       const fallback = normalizedItems.findIndex(item => item !== null);
       return fallback >= 0 ? fallback : 0;
     })();
+    isLayerOut = false; // reset — new items replace the shifted-out context
+    lastParentLabelOut = '';
+    lastSelectedLabelOut = '';
     nav.setItems(normalizedItems, safePrimaryIndex);
     alignToSelected();
     render(rotation);
@@ -621,12 +624,8 @@ export function createApp({
     if (typeof onParentClick === 'function') {
       const handled = onParentClick({ selected: nav.getCurrent(), nav, setItems: setPrimaryItems });
       if (handled) {
-        if (!isLayerOut) {
-          isLayerOut = true;
-          lastParentLabelOut = prevParentLabel;
-          lastSelectedLabelOut = prevSelectedLabel;
-          render(rotation);
-        }
+        // parentHandler replaced primary items via setPrimaryItems, which
+        // already reset isLayerOut.  Nothing more to do.
         return;
       }
     }

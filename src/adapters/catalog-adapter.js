@@ -95,19 +95,44 @@ export function normalize(raw) {
           const cylId = `cylinder:${manuKey}:${cylKey}`;
           addItem({ id: cylId, name: cylKey, level: 'cylinder', parentId: manuId, order: cylVal.sort_number ?? cylIdx });
 
-          const models = cylVal.models || [];
-          models.forEach((model, modelIdx) => {
-            const modelId = `model:${manuKey}:${cylKey}:${model.engine_model || modelIdx}`;
-            addItem({
-              id: modelId,
-              name: model.engine_model || `model-${modelIdx}`,
-              level: 'model',
-              parentId: cylId,
-              order: model.sort_number ?? modelIdx,
-              meta: {
-                year_introduced: model.year_introduced ?? null,
-                year_discontinued: model.year_discontinued ?? null
-              }
+          // Helper to add a models array under a given parent
+          const addModels = (modelsArr, parentNodeId, idPrefix) => {
+            (modelsArr || []).forEach((model, modelIdx) => {
+              const modelId = `${idPrefix}${model.engine_model || modelIdx}`;
+              addItem({
+                id: modelId,
+                name: model.engine_model || `model-${modelIdx}`,
+                level: 'model',
+                parentId: parentNodeId,
+                order: model.sort_number ?? modelIdx,
+                meta: {
+                  year_introduced: model.year_introduced ?? null,
+                  year_discontinued: model.year_discontinued ?? null
+                }
+              });
+            });
+          };
+
+          // Orphan models at cylinder level (no family)
+          addModels(cylVal.models, cylId, `model:${manuKey}:${cylKey}:`);
+
+          // Families
+          const families = cylVal.families || {};
+          Object.entries(families).forEach(([famName, famVal], famIdx) => {
+            const famId = `family:${manuKey}:${cylKey}:${famName}`;
+            addItem({ id: famId, name: famName, level: 'family', parentId: cylId, order: famVal.sort_number ?? famIdx });
+
+            // Orphan models at family level (no subfamily)
+            addModels(famVal.models, famId, `model:${manuKey}:${cylKey}:${famName}:`);
+
+            // Subfamilies
+            const subfamilies = famVal.subfamilies || {};
+            Object.entries(subfamilies).forEach(([subName, subVal], subIdx) => {
+              const subId = `subfamily:${manuKey}:${cylKey}:${famName}:${subName}`;
+              addItem({ id: subId, name: subName, level: 'subfamily', parentId: famId, order: subVal.sort_number ?? subIdx });
+
+              // Models under subfamily
+              addModels(subVal.models, subId, `model:${manuKey}:${cylKey}:${famName}:${subName}:`);
             });
           });
         });
@@ -121,7 +146,7 @@ export function normalize(raw) {
     meta: {
       volumeId: volumeKey,
       leafLevel: 'model',
-      levels: ['market', 'country', 'manufacturer', 'cylinder', 'model'],
+      levels: ['market', 'country', 'manufacturer', 'cylinder', 'family', 'subfamily', 'model'],
       dimensions
     }
   };
@@ -140,6 +165,8 @@ export function layoutSpec(normalized, viewport) {
         country: '#d98d00',
         manufacturer: '#b86c00',
         cylinder: '#8f5200',
+        family: '#7a4600',
+        subfamily: '#6e3f00',
         model: '#633a00'
       };
       return palette[level] || '#555';
@@ -192,14 +219,32 @@ export function detailFor(selected, manifest) {
     };
   }
 
-  // Model nodes come from pyramid clicks (`model:manufacturer:cyl:modelKey`).
+  // Model nodes: model:mfr:cyl:model OR model:mfr:cyl:fam:model OR model:mfr:cyl:fam:sub:model
   if (modelParts && modelParts.length >= 4) {
-    const [, manufacturerId, cylinderKey, modelKey] = modelParts;
+    const [, manufacturerId, cylinderKey, ...rest] = modelParts;
+    const modelKey = rest[rest.length - 1]; // last segment is always the model name
     const found = getManufacturer(manifest, manufacturerId);
     const cylinders = found?.manufacturer?.cylinders || {};
     const cyl = cylinders[cylinderKey] || {};
-    const models = Array.isArray(cyl.models) ? cyl.models : [];
-    const model = models.find(m => (m.engine_model || '').toString() === modelKey) || models.find((_, idx) => String(idx) === modelKey) || {};
+
+    // Collect all model arrays this model could live in
+    const searchArrays = [];
+    // Cylinder-level orphans
+    if (Array.isArray(cyl.models)) searchArrays.push(cyl.models);
+    // Family/subfamily models
+    for (const famVal of Object.values(cyl.families || {})) {
+      if (Array.isArray(famVal.models)) searchArrays.push(famVal.models);
+      for (const subVal of Object.values(famVal.subfamilies || {})) {
+        if (Array.isArray(subVal.models)) searchArrays.push(subVal.models);
+      }
+    }
+
+    let model = null;
+    for (const arr of searchArrays) {
+      model = arr.find(m => (m.engine_model || '').toString() === modelKey);
+      if (model) break;
+    }
+    if (!model) model = {};
     const introduced = model.year_introduced ? `Introduced ${model.year_introduced}` : null;
     const discontinued = model.year_discontinued ? `Discontinued ${model.year_discontinued}` : null;
     const body = [introduced, discontinued, cylinderKey ? `${cylinderKey} cylinder` : null].filter(Boolean).join(' · ');
@@ -208,6 +253,14 @@ export function detailFor(selected, manifest) {
       title: model.engine_model || modelKey || name,
       body: body || 'Model details',
       image: model.image || null
+    };
+  }
+
+  // Family/subfamily containers — show a simple card
+  if (id.startsWith('fam:') || id.startsWith('subfam:')) {
+    return {
+      type: 'text',
+      text: name
     };
   }
 
@@ -226,15 +279,16 @@ export const catalogAdapter = {
   detailFor,
   createHandlers: ({ chainMeta } = {}) => {
     let catalogMode = 'manufacturer';
-    const catalogRoot = chainMeta ? { ...chainMeta } : null;
+    const navStack = []; // stack of snapshots for multi-level IN/OUT
     const parentHandler = ({ app }) => {
-      if (catalogMode !== 'model') return false;
-      if (!catalogRoot) return false;
-      catalogMode = 'manufacturer';
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      if (catalogMode === 'manufacturer') return false;
+      if (navStack.length === 0) return false;
+      const snapshot = navStack.pop();
+      catalogMode = navStack.length === 0 ? 'manufacturer' : 'child';
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: navStack.length > 0 });
       if (app?.setPrimaryItems) {
-        const { items: rootItems, selectedIndex: rootSelected, preserveOrder: rootPreserve } = catalogRoot;
-        app.setPrimaryItems(rootItems || [], rootSelected ?? 0, rootPreserve ?? false);
+        const { items, selectedIndex, preserveOrder } = snapshot;
+        app.setPrimaryItems(items || [], selectedIndex ?? 0, preserveOrder ?? false);
       }
       return true;
     };
@@ -244,6 +298,7 @@ export const catalogAdapter = {
       layoutBindings: {
         catalogModeRef: () => catalogMode,
         setCatalogMode: next => { catalogMode = next; },
+        savePreInState: snapshot => { navStack.push(snapshot); },
         pyramidBuilder: buildCatalogPyramid
       }
     };

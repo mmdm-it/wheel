@@ -6,6 +6,36 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.9.0] - 2026-02-15
+
+### Changed
+- feat: family/subfamily/orphan support — getCatalogChildren walks families, subfamilies, and orphan models; normalize builds full hierarchy graph; multi-level IN/OUT via navStack; detailFor resolves models at any depth; orphans sort before containers
+
+
+## [3.8.5] - 2026-02-15
+
+### Changed
+- fix: OUT migration restores pre-IN state instead of initial load state
+
+
+## [3.8.4] - 2026-02-15
+
+### Changed
+- fix: shiftLayersOut re-stashing isLayerOut after parentHandler already reset it
+
+
+## [3.8.3] - 2026-02-15
+
+### Changed
+- fix: magnifier stuck on old label after OUT migration — reset isLayerOut in setPrimaryItems
+
+
+## [3.8.2] - 2026-02-15
+
+### Changed
+- fix: parent button blank after child pyramid migration — add parentName to catalog children
+
+
 ## [3.8.1] - 2026-02-15
 
 ### Changed

@@ -56,25 +56,34 @@ export function buildCatalogPyramid({
   getCatalogChildren,
   getApp,
   catalogModeRef,
-  setCatalogMode
+  setCatalogMode,
+  savePreInState
 } = {}) {
   if (!manifest || typeof getCatalogChildren !== 'function') return null;
   const getChildren = ({ selected }) => getCatalogChildren(manifest, selected);
   const onClick = instr => {
     if (!instr?.item) return;
     const mode = typeof catalogModeRef === 'function' ? catalogModeRef() : 'unknown';
-    if (mode !== 'manufacturer') return;
+    // Only block clicks when already at a leaf (model) level — no children to navigate into
+    const clickedLevel = instr.item.level || '';
+    if (clickedLevel === 'model') return; // leaf nodes don't trigger IN migration
     const app = typeof getApp === 'function' ? getApp() : null;
     const parent = app?.nav?.getCurrent?.();
-    const models = getCatalogChildren(manifest, parent);
-    if (!models.length) return;
-    const selectedIdx = models.findIndex(m => m.id === instr.item.id);
-    if (typeof setCatalogMode === 'function') setCatalogMode('model');
+    const children = getCatalogChildren(manifest, parent);
+    if (!children.length) return;
+    // Snapshot current nav state before migrating IN
+    if (typeof savePreInState === 'function' && app?.nav) {
+      const currentItems = app.nav.items;
+      const currentIndex = currentItems.indexOf(app.nav.getCurrent());
+      savePreInState({ items: currentItems, selectedIndex: currentIndex >= 0 ? currentIndex : 0, preserveOrder: true });
+    }
+    const selectedIdx = children.findIndex(m => m.id === instr.item.id);
+    if (typeof setCatalogMode === 'function') setCatalogMode('child');
     if (app?.setParentButtons) {
       app.setParentButtons({ showOuter: true });
     }
     if (app?.setPrimaryItems) {
-      app.setPrimaryItems(models, selectedIdx >= 0 ? selectedIdx : 0, true);
+      app.setPrimaryItems(children, selectedIdx >= 0 ? selectedIdx : 0, true);
     }
   };
   return { getChildren, onClick };
