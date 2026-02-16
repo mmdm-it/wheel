@@ -90,14 +90,14 @@ const CHILD_PARAM_TABLE = [
   { maxChildren:  2, arcMargin: 0.4, fanAngle: 17,   minNodeDist: 7,   spiralGrowth: 0.005 },
   { maxChildren:  3, arcMargin: 0.4, fanAngle: 17,   minNodeDist: 7,   spiralGrowth: 0.005 },
   { maxChildren:  4, arcMargin: 0.4, fanAngle: 11,   minNodeDist: 7,   spiralGrowth: 0.005 },
-  { maxChildren:  5, arcMargin: 0.4, fanAngle:  7,   minNodeDist: 7,   spiralGrowth: 0.005 },
-  { maxChildren:  6, arcMargin: 0.4, fanAngle:  5,   minNodeDist: 7,   spiralGrowth: 0.005 },
-  { maxChildren:  7, arcMargin: 0.4, fanAngle:  4,   minNodeDist: 7,   spiralGrowth: 0.005 },
-  { maxChildren:  8, arcMargin: 0.4, fanAngle:  3.5, minNodeDist: 7,   spiralGrowth: 0.005 },
-  { maxChildren:  9, arcMargin: 0.4, fanAngle:  3.5, minNodeDist: 7,   spiralGrowth: 0.005 },
-  { maxChildren: 10, arcMargin: 0.4, fanAngle:  3,   minNodeDist: 7,   spiralGrowth: 0.005 },
-  { maxChildren: 11, arcMargin: 0.4, fanAngle:  3,   minNodeDist: 7,   spiralGrowth: 0.005 },
-  { maxChildren: 12, arcMargin: 0.4, fanAngle:  2.5, minNodeDist: 7,   spiralGrowth: 0.005 },
+  { maxChildren:  5, arcMargin: 0.4, fanAngle:  7,   minNodeDist: 6,   spiralGrowth: 0.005 },
+  { maxChildren:  6, arcMargin: 0.4, fanAngle:  5,   minNodeDist: 6,   spiralGrowth: 0.005 },
+  { maxChildren:  7, arcMargin: 0.4, fanAngle:  4,   minNodeDist: 5,   spiralGrowth: 0.005 },
+  { maxChildren:  8, arcMargin: 0.4, fanAngle:  3.5, minNodeDist: 5,   spiralGrowth: 0.005 },
+  { maxChildren:  9, arcMargin: 0.4, fanAngle:  3.5, minNodeDist: 5,   spiralGrowth: 0.005 },
+  { maxChildren: 10, arcMargin: 0.4, fanAngle:  3,   minNodeDist: 4,   spiralGrowth: 0.005 },
+  { maxChildren: 11, arcMargin: 0.4, fanAngle:  3,   minNodeDist: 4,   spiralGrowth: 0.005 },
+  { maxChildren: 12, arcMargin: 0.4, fanAngle:  2.5, minNodeDist: 3.5, spiralGrowth: 0.005 },
   { maxChildren: Infinity, arcMargin: 0.3, fanAngle: 2, minNodeDist: 3.5, spiralGrowth: 0.025 }
 ];
 

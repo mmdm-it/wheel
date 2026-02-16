@@ -562,6 +562,7 @@
 
       const parentHandler = params => (handlerSet.parentHandler ? handlerSet.parentHandler({ ...params, app }) : false);
       const childrenHandler = params => (handlerSet.childrenHandler ? handlerSet.childrenHandler({ ...params, app }) : false);
+      const adapterGetParentLabel = typeof handlerSet.getParentLabel === 'function' ? handlerSet.getParentLabel : null;
 
       const layoutBindings = handlerSet.layoutBindings || {};
       const layoutSpec = createVolumeLayoutSpec({
@@ -627,6 +628,7 @@
         secondarySelectedIndex: secondary.selectedIndex,
         contextOptions: { ...options, locale: resolvedLocale },
         onParentClick: parentHandler,
+        getParentLabel: adapterGetParentLabel,
         pyramid: pyramidConfig,
         pyramidLayoutSpec: pyramidLayout,
         pyramidNormalized: adapterNormalized || normalized,

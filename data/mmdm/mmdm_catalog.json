@@ -1128,25 +1128,410 @@
                                 "year_founded": 1907,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "3": {
+                                    "1": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "families": {
+                                            "MD Series": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    { "engine_model": "MD1", "year_introduced": 1958, "year_discontinued": 1968, "sort_number": 1 },
+                                                    { "engine_model": "MD1B", "year_introduced": 1968, "year_discontinued": 1975, "sort_number": 2 },
+                                                    { "engine_model": "MD2", "year_introduced": 1960, "year_discontinued": 1971, "sort_number": 3 },
+                                                    { "engine_model": "MD2B", "year_introduced": 1971, "year_discontinued": 1979, "sort_number": 4 },
+                                                    { "engine_model": "MD3B", "year_introduced": 1974, "year_discontinued": 1982, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "2000 Series": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    { "engine_model": "2001", "year_introduced": 1983, "year_discontinued": 1991, "sort_number": 1 },
+                                                    { "engine_model": "2001B", "year_introduced": 1988, "year_discontinued": 1994, "sort_number": 2 },
+                                                    { "engine_model": "2001AG", "year_introduced": 1985, "year_discontinued": 1992, "sort_number": 3 },
+                                                    { "engine_model": "2001D", "year_introduced": 1990, "year_discontinued": 1996, "sort_number": 4 },
+                                                    { "engine_model": "2002", "year_introduced": 1991, "year_discontinued": 1998, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "D1 Series": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    { "engine_model": "D1-13", "year_introduced": 2005, "year_discontinued": null, "sort_number": 1 },
+                                                    { "engine_model": "D1-13F", "year_introduced": 2007, "year_discontinued": null, "sort_number": 2 },
+                                                    { "engine_model": "D1-20", "year_introduced": 2005, "year_discontinued": null, "sort_number": 3 },
+                                                    { "engine_model": "D1-20F", "year_introduced": 2007, "year_discontinued": null, "sort_number": 4 },
+                                                    { "engine_model": "D1-30", "year_introduced": 2006, "year_discontinued": null, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "Archimedes": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    { "engine_model": "Archimedes 3A", "year_introduced": 1952, "year_discontinued": 1960, "sort_number": 1 },
+                                                    { "engine_model": "Archimedes 5A", "year_introduced": 1954, "year_discontinued": 1963, "sort_number": 2 },
+                                                    { "engine_model": "Archimedes 5B", "year_introduced": 1963, "year_discontinued": 1970, "sort_number": 3 },
+                                                    { "engine_model": "Archimedes 7A", "year_introduced": 1956, "year_discontinued": 1965, "sort_number": 4 },
+                                                    { "engine_model": "Archimedes 9A", "year_introduced": 1958, "year_discontinued": 1967, "sort_number": 5 }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "families": {
+                                            "MD Series": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    { "engine_model": "MD5A", "year_introduced": 1966, "year_discontinued": 1975, "sort_number": 1 },
+                                                    { "engine_model": "MD6A", "year_introduced": 1968, "year_discontinued": 1977, "sort_number": 2 },
+                                                    { "engine_model": "MD6B", "year_introduced": 1977, "year_discontinued": 1983, "sort_number": 3 },
+                                                    { "engine_model": "MD7A", "year_introduced": 1970, "year_discontinued": 1979, "sort_number": 4 },
+                                                    { "engine_model": "MD7B", "year_introduced": 1979, "year_discontinued": 1986, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "2000 Series": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    { "engine_model": "2002B", "year_introduced": 1992, "year_discontinued": 1999, "sort_number": 1 },
+                                                    { "engine_model": "2002D", "year_introduced": 1995, "year_discontinued": 2001, "sort_number": 2 },
+                                                    { "engine_model": "2003", "year_introduced": 1994, "year_discontinued": 2002, "sort_number": 3 },
+                                                    { "engine_model": "2003B", "year_introduced": 1998, "year_discontinued": 2005, "sort_number": 4 },
+                                                    { "engine_model": "2003D", "year_introduced": 2001, "year_discontinued": 2007, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "D2 Series": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    { "engine_model": "D2-40", "year_introduced": 2005, "year_discontinued": null, "sort_number": 1 },
+                                                    { "engine_model": "D2-40F", "year_introduced": 2007, "year_discontinued": null, "sort_number": 2 },
+                                                    { "engine_model": "D2-55", "year_introduced": 2006, "year_discontinued": null, "sort_number": 3 },
+                                                    { "engine_model": "D2-55F", "year_introduced": 2008, "year_discontinued": null, "sort_number": 4 },
+                                                    { "engine_model": "D2-75", "year_introduced": 2007, "year_discontinued": null, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "Archimedes": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    { "engine_model": "Archimedes 10A", "year_introduced": 1960, "year_discontinued": 1969, "sort_number": 1 },
+                                                    { "engine_model": "Archimedes 10B", "year_introduced": 1969, "year_discontinued": 1975, "sort_number": 2 },
+                                                    { "engine_model": "Archimedes 12A", "year_introduced": 1962, "year_discontinued": 1971, "sort_number": 3 },
+                                                    { "engine_model": "Archimedes 15A", "year_introduced": 1964, "year_discontinued": 1973, "sort_number": 4 },
+                                                    { "engine_model": "Archimedes 15B", "year_introduced": 1973, "year_discontinued": 1980, "sort_number": 5 }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "3": {
+                                        "sort_number": 3,
+                                        "families": {
+                                            "MD Series": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    { "engine_model": "MD11C", "year_introduced": 1975, "year_discontinued": 1984, "sort_number": 1 },
+                                                    { "engine_model": "MD11D", "year_introduced": 1984, "year_discontinued": 1991, "sort_number": 2 },
+                                                    { "engine_model": "MD17C", "year_introduced": 1978, "year_discontinued": 1987, "sort_number": 3 },
+                                                    { "engine_model": "MD17D", "year_introduced": 1987, "year_discontinued": 1994, "sort_number": 4 },
+                                                    { "engine_model": "MD21A", "year_introduced": 1972, "year_discontinued": 1983, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "2000 Series": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    { "engine_model": "2003T", "year_introduced": 1995, "year_discontinued": 2003, "sort_number": 1 },
+                                                    { "engine_model": "2003TB", "year_introduced": 1999, "year_discontinued": 2006, "sort_number": 2 },
+                                                    { "engine_model": "2003SRA", "year_introduced": 1996, "year_discontinued": 2004, "sort_number": 3 },
+                                                    { "engine_model": "2003AG", "year_introduced": 1997, "year_discontinued": 2005, "sort_number": 4 },
+                                                    { "engine_model": "2003QM", "year_introduced": 2000, "year_discontinued": 2007, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "D3 Series": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    { "engine_model": "D3-110", "year_introduced": 2006, "year_discontinued": null, "sort_number": 1 },
+                                                    { "engine_model": "D3-130", "year_introduced": 2006, "year_discontinued": null, "sort_number": 2 },
+                                                    { "engine_model": "D3-150", "year_introduced": 2007, "year_discontinued": null, "sort_number": 3 },
+                                                    { "engine_model": "D3-170", "year_introduced": 2008, "year_discontinued": null, "sort_number": 4 },
+                                                    { "engine_model": "D3-200", "year_introduced": 2009, "year_discontinued": null, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "Archimedes": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    { "engine_model": "Archimedes 20A", "year_introduced": 1965, "year_discontinued": 1974, "sort_number": 1 },
+                                                    { "engine_model": "Archimedes 20B", "year_introduced": 1974, "year_discontinued": 1981, "sort_number": 2 },
+                                                    { "engine_model": "Archimedes 25A", "year_introduced": 1967, "year_discontinued": 1976, "sort_number": 3 },
+                                                    { "engine_model": "Archimedes 25B", "year_introduced": 1976, "year_discontinued": 1983, "sort_number": 4 },
+                                                    { "engine_model": "Archimedes 30A", "year_introduced": 1969, "year_discontinued": 1978, "sort_number": 5 }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "4": {
-                                        "sort_number": 2,
-                                        "models": []
+                                        "sort_number": 4,
+                                        "families": {
+                                            "MD Series": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    { "engine_model": "MD21B", "year_introduced": 1983, "year_discontinued": 1990, "sort_number": 1 },
+                                                    { "engine_model": "MD30A", "year_introduced": 1976, "year_discontinued": 1985, "sort_number": 2 },
+                                                    { "engine_model": "MD31A", "year_introduced": 1980, "year_discontinued": 1989, "sort_number": 3 },
+                                                    { "engine_model": "MD32A", "year_introduced": 1982, "year_discontinued": 1991, "sort_number": 4 },
+                                                    { "engine_model": "MD40A", "year_introduced": 1978, "year_discontinued": 1988, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "2000 Series": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    { "engine_model": "2010", "year_introduced": 1988, "year_discontinued": 1995, "sort_number": 1 },
+                                                    { "engine_model": "2020", "year_introduced": 1990, "year_discontinued": 1997, "sort_number": 2 },
+                                                    { "engine_model": "2020B", "year_introduced": 1994, "year_discontinued": 2001, "sort_number": 3 },
+                                                    { "engine_model": "2020D", "year_introduced": 1997, "year_discontinued": 2004, "sort_number": 4 },
+                                                    { "engine_model": "2030", "year_introduced": 1992, "year_discontinued": 2000, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "D4 Series": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    { "engine_model": "D4-180", "year_introduced": 2008, "year_discontinued": null, "sort_number": 1 },
+                                                    { "engine_model": "D4-210", "year_introduced": 2008, "year_discontinued": null, "sort_number": 2 },
+                                                    { "engine_model": "D4-225", "year_introduced": 2009, "year_discontinued": null, "sort_number": 3 },
+                                                    { "engine_model": "D4-260", "year_introduced": 2010, "year_discontinued": null, "sort_number": 4 },
+                                                    { "engine_model": "D4-300", "year_introduced": 2012, "year_discontinued": null, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "Archimedes": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    { "engine_model": "Archimedes 35A", "year_introduced": 1970, "year_discontinued": 1979, "sort_number": 1 },
+                                                    { "engine_model": "Archimedes 40A", "year_introduced": 1972, "year_discontinued": 1981, "sort_number": 2 },
+                                                    { "engine_model": "Archimedes 40B", "year_introduced": 1981, "year_discontinued": 1988, "sort_number": 3 },
+                                                    { "engine_model": "Archimedes 50A", "year_introduced": 1974, "year_discontinued": 1983, "sort_number": 4 },
+                                                    { "engine_model": "Archimedes 50B", "year_introduced": 1983, "year_discontinued": 1990, "sort_number": 5 }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "5": {
-                                        "sort_number": 3,
-                                        "models": []
+                                        "sort_number": 5,
+                                        "families": {
+                                            "KAD Series": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    { "engine_model": "KAD32", "year_introduced": 1993, "year_discontinued": 2003, "sort_number": 1 },
+                                                    { "engine_model": "KAD42A", "year_introduced": 1995, "year_discontinued": 2005, "sort_number": 2 },
+                                                    { "engine_model": "KAD42B", "year_introduced": 2000, "year_discontinued": 2007, "sort_number": 3 },
+                                                    { "engine_model": "KAD43P", "year_introduced": 1999, "year_discontinued": 2008, "sort_number": 4 },
+                                                    { "engine_model": "KAD44P", "year_introduced": 2002, "year_discontinued": 2010, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "2000 Series": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    { "engine_model": "2030B", "year_introduced": 1996, "year_discontinued": 2003, "sort_number": 1 },
+                                                    { "engine_model": "2030D", "year_introduced": 1999, "year_discontinued": 2006, "sort_number": 2 },
+                                                    { "engine_model": "2040", "year_introduced": 1994, "year_discontinued": 2002, "sort_number": 3 },
+                                                    { "engine_model": "2040B", "year_introduced": 1998, "year_discontinued": 2005, "sort_number": 4 },
+                                                    { "engine_model": "2040D", "year_introduced": 2001, "year_discontinued": 2008, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "D5 Series": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    { "engine_model": "D5A-150", "year_introduced": 2010, "year_discontinued": null, "sort_number": 1 },
+                                                    { "engine_model": "D5A-175", "year_introduced": 2011, "year_discontinued": null, "sort_number": 2 },
+                                                    { "engine_model": "D5A-200", "year_introduced": 2012, "year_discontinued": null, "sort_number": 3 },
+                                                    { "engine_model": "D5A-225", "year_introduced": 2013, "year_discontinued": null, "sort_number": 4 },
+                                                    { "engine_model": "D5A-250", "year_introduced": 2014, "year_discontinued": null, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "Archimedes": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    { "engine_model": "Archimedes 55A", "year_introduced": 1975, "year_discontinued": 1984, "sort_number": 1 },
+                                                    { "engine_model": "Archimedes 60A", "year_introduced": 1977, "year_discontinued": 1986, "sort_number": 2 },
+                                                    { "engine_model": "Archimedes 60B", "year_introduced": 1986, "year_discontinued": 1993, "sort_number": 3 },
+                                                    { "engine_model": "Archimedes 70A", "year_introduced": 1979, "year_discontinued": 1988, "sort_number": 4 },
+                                                    { "engine_model": "Archimedes 75A", "year_introduced": 1981, "year_discontinued": 1990, "sort_number": 5 }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "6": {
-                                        "sort_number": 4,
-                                        "models": []
+                                        "sort_number": 6,
+                                        "families": {
+                                            "KAD Series": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    { "engine_model": "KAD300", "year_introduced": 1999, "year_discontinued": 2009, "sort_number": 1 },
+                                                    { "engine_model": "KAMD300", "year_introduced": 2001, "year_discontinued": 2010, "sort_number": 2 },
+                                                    { "engine_model": "KAD44P-C", "year_introduced": 2004, "year_discontinued": 2012, "sort_number": 3 },
+                                                    { "engine_model": "KAMD44P-C", "year_introduced": 2005, "year_discontinued": 2013, "sort_number": 4 },
+                                                    { "engine_model": "KAD44P-B", "year_introduced": 2003, "year_discontinued": 2011, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "TAMD Series": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    { "engine_model": "TAMD61A", "year_introduced": 1984, "year_discontinued": 1993, "sort_number": 1 },
+                                                    { "engine_model": "TAMD63L", "year_introduced": 1988, "year_discontinued": 1997, "sort_number": 2 },
+                                                    { "engine_model": "TAMD63P", "year_introduced": 1990, "year_discontinued": 1999, "sort_number": 3 },
+                                                    { "engine_model": "TAMD71A", "year_introduced": 1986, "year_discontinued": 1995, "sort_number": 4 },
+                                                    { "engine_model": "TAMD71B", "year_introduced": 1992, "year_discontinued": 2001, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "D6 Series": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    { "engine_model": "D6-280", "year_introduced": 2010, "year_discontinued": null, "sort_number": 1 },
+                                                    { "engine_model": "D6-310", "year_introduced": 2010, "year_discontinued": null, "sort_number": 2 },
+                                                    { "engine_model": "D6-330", "year_introduced": 2011, "year_discontinued": null, "sort_number": 3 },
+                                                    { "engine_model": "D6-370", "year_introduced": 2012, "year_discontinued": null, "sort_number": 4 },
+                                                    { "engine_model": "D6-435", "year_introduced": 2014, "year_discontinued": null, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "Archimedes": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    { "engine_model": "Archimedes 80A", "year_introduced": 1960, "year_discontinued": 1970, "sort_number": 1 },
+                                                    { "engine_model": "Archimedes 80B", "year_introduced": 1970, "year_discontinued": 1978, "sort_number": 2 },
+                                                    { "engine_model": "Archimedes 100A", "year_introduced": 1963, "year_discontinued": 1972, "sort_number": 3 },
+                                                    { "engine_model": "Archimedes 100B", "year_introduced": 1972, "year_discontinued": 1980, "sort_number": 4 },
+                                                    { "engine_model": "Archimedes 120A", "year_introduced": 1965, "year_discontinued": 1975, "sort_number": 5 }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "8": {
-                                        "sort_number": 5,
-                                        "models": []
+                                        "sort_number": 7,
+                                        "families": {
+                                            "TAMD Series": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    { "engine_model": "TAMD102A", "year_introduced": 1988, "year_discontinued": 1998, "sort_number": 1 },
+                                                    { "engine_model": "TAMD102D", "year_introduced": 1993, "year_discontinued": 2003, "sort_number": 2 },
+                                                    { "engine_model": "TAMD120A", "year_introduced": 1990, "year_discontinued": 2000, "sort_number": 3 },
+                                                    { "engine_model": "TAMD120B", "year_introduced": 1995, "year_discontinued": 2005, "sort_number": 4 },
+                                                    { "engine_model": "TAMD122A", "year_introduced": 1992, "year_discontinued": 2002, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "AQ Series": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    { "engine_model": "AQ211A", "year_introduced": 1977, "year_discontinued": 1986, "sort_number": 1 },
+                                                    { "engine_model": "AQ225D", "year_introduced": 1980, "year_discontinued": 1989, "sort_number": 2 },
+                                                    { "engine_model": "AQ231A", "year_introduced": 1982, "year_discontinued": 1991, "sort_number": 3 },
+                                                    { "engine_model": "AQ255A", "year_introduced": 1984, "year_discontinued": 1993, "sort_number": 4 },
+                                                    { "engine_model": "AQ260A", "year_introduced": 1975, "year_discontinued": 1985, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "D8 Series": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    { "engine_model": "D8-510", "year_introduced": 2015, "year_discontinued": null, "sort_number": 1 },
+                                                    { "engine_model": "D8-550", "year_introduced": 2016, "year_discontinued": null, "sort_number": 2 },
+                                                    { "engine_model": "D8-600", "year_introduced": 2017, "year_discontinued": null, "sort_number": 3 },
+                                                    { "engine_model": "D8-625", "year_introduced": 2018, "year_discontinued": null, "sort_number": 4 },
+                                                    { "engine_model": "D8-700", "year_introduced": 2019, "year_discontinued": null, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "IPS Platform": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    { "engine_model": "IPS500", "year_introduced": 2005, "year_discontinued": null, "sort_number": 1 },
+                                                    { "engine_model": "IPS600", "year_introduced": 2006, "year_discontinued": null, "sort_number": 2 },
+                                                    { "engine_model": "IPS650", "year_introduced": 2008, "year_discontinued": null, "sort_number": 3 },
+                                                    { "engine_model": "IPS700", "year_introduced": 2010, "year_discontinued": null, "sort_number": 4 },
+                                                    { "engine_model": "IPS800", "year_introduced": 2012, "year_discontinued": null, "sort_number": 5 }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "12": {
+                                        "sort_number": 8,
+                                        "families": {
+                                            "TAMD Series": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    { "engine_model": "TAMD162A", "year_introduced": 1992, "year_discontinued": 2002, "sort_number": 1 },
+                                                    { "engine_model": "TAMD162B", "year_introduced": 1997, "year_discontinued": 2006, "sort_number": 2 },
+                                                    { "engine_model": "TAMD163A", "year_introduced": 1994, "year_discontinued": 2004, "sort_number": 3 },
+                                                    { "engine_model": "TAMD163P", "year_introduced": 1996, "year_discontinued": 2006, "sort_number": 4 },
+                                                    { "engine_model": "TAMD165A", "year_introduced": 1998, "year_discontinued": 2008, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "AQ Series": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    { "engine_model": "AQ311A", "year_introduced": 1978, "year_discontinued": 1988, "sort_number": 1 },
+                                                    { "engine_model": "AQ325A", "year_introduced": 1980, "year_discontinued": 1990, "sort_number": 2 },
+                                                    { "engine_model": "AQ350A", "year_introduced": 1982, "year_discontinued": 1992, "sort_number": 3 },
+                                                    { "engine_model": "AQ375A", "year_introduced": 1984, "year_discontinued": 1994, "sort_number": 4 },
+                                                    { "engine_model": "AQ400A", "year_introduced": 1986, "year_discontinued": 1996, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "D12 Series": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    { "engine_model": "D12-715", "year_introduced": 2016, "year_discontinued": null, "sort_number": 1 },
+                                                    { "engine_model": "D12-775", "year_introduced": 2017, "year_discontinued": null, "sort_number": 2 },
+                                                    { "engine_model": "D12-800", "year_introduced": 2018, "year_discontinued": null, "sort_number": 3 },
+                                                    { "engine_model": "D12-900", "year_introduced": 2019, "year_discontinued": null, "sort_number": 4 },
+                                                    { "engine_model": "D12-1000", "year_introduced": 2020, "year_discontinued": null, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "IPS Platform": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    { "engine_model": "IPS900", "year_introduced": 2013, "year_discontinued": null, "sort_number": 1 },
+                                                    { "engine_model": "IPS950", "year_introduced": 2014, "year_discontinued": null, "sort_number": 2 },
+                                                    { "engine_model": "IPS1050", "year_introduced": 2015, "year_discontinued": null, "sort_number": 3 },
+                                                    { "engine_model": "IPS1200", "year_introduced": 2016, "year_discontinued": null, "sort_number": 4 },
+                                                    { "engine_model": "IPS1350", "year_introduced": 2018, "year_discontinued": null, "sort_number": 5 }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "16": {
+                                        "sort_number": 9,
+                                        "families": {
+                                            "TAMD Series": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    { "engine_model": "TAMD200A", "year_introduced": 1994, "year_discontinued": 2004, "sort_number": 1 },
+                                                    { "engine_model": "TAMD200B", "year_introduced": 1999, "year_discontinued": 2008, "sort_number": 2 },
+                                                    { "engine_model": "TAMD210A", "year_introduced": 1996, "year_discontinued": 2006, "sort_number": 3 },
+                                                    { "engine_model": "TAMD210P", "year_introduced": 1998, "year_discontinued": 2008, "sort_number": 4 },
+                                                    { "engine_model": "TAMD220A", "year_introduced": 2000, "year_discontinued": 2010, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "AQ Series": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    { "engine_model": "AQ500A", "year_introduced": 1985, "year_discontinued": 1995, "sort_number": 1 },
+                                                    { "engine_model": "AQ525A", "year_introduced": 1987, "year_discontinued": 1997, "sort_number": 2 },
+                                                    { "engine_model": "AQ550A", "year_introduced": 1989, "year_discontinued": 1999, "sort_number": 3 },
+                                                    { "engine_model": "AQ575A", "year_introduced": 1991, "year_discontinued": 2001, "sort_number": 4 },
+                                                    { "engine_model": "AQ600A", "year_introduced": 1993, "year_discontinued": 2003, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "D16 Series": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    { "engine_model": "D16-1100", "year_introduced": 2018, "year_discontinued": null, "sort_number": 1 },
+                                                    { "engine_model": "D16-1200", "year_introduced": 2019, "year_discontinued": null, "sort_number": 2 },
+                                                    { "engine_model": "D16-1300", "year_introduced": 2020, "year_discontinued": null, "sort_number": 3 },
+                                                    { "engine_model": "D16-1400", "year_introduced": 2021, "year_discontinued": null, "sort_number": 4 },
+                                                    { "engine_model": "D16-1500", "year_introduced": 2022, "year_discontinued": null, "sort_number": 5 }
+                                                ]
+                                            },
+                                            "IPS Platform": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    { "engine_model": "IPS1500", "year_introduced": 2019, "year_discontinued": null, "sort_number": 1 },
+                                                    { "engine_model": "IPS1600", "year_introduced": 2020, "year_discontinued": null, "sort_number": 2 },
+                                                    { "engine_model": "IPS1700", "year_introduced": 2021, "year_discontinued": null, "sort_number": 3 },
+                                                    { "engine_model": "IPS1800", "year_introduced": 2022, "year_discontinued": null, "sort_number": 4 },
+                                                    { "engine_model": "IPS2000", "year_introduced": 2023, "year_discontinued": null, "sort_number": 5 }
+                                                ]
+                                            }
+                                        }
                                     }
                                 },
                                 "sort_number": 99

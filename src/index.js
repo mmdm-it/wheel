@@ -9,7 +9,7 @@ import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry } from './geometry/child-pyramid-geometry.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
-import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub } from './view/migration-animation.js';
+import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
@@ -82,6 +82,7 @@ export function createApp({
   onSelectSecondary,
   contextOptions = {},
   onParentClick,
+  getParentLabel: externalGetParentLabel,
   pyramid,
   pyramidLayoutSpec = null,
   pyramidAdapter = null,
@@ -362,7 +363,7 @@ export function createApp({
     return Array.isArray(list) && list.length > 1;
   };
 
-  const getParentLabel = item => {
+  const builtinGetParentLabel = item => {
     if (!item) return '';
     const pick = () => {
       if (item.parentName) return item.parentName;
@@ -380,6 +381,10 @@ export function createApp({
     const label = pick();
     return label;
   };
+
+  const getParentLabel = typeof externalGetParentLabel === 'function'
+    ? externalGetParentLabel
+    : builtinGetParentLabel;
 
   const getParentKey = entry => {
     if (!entry) return null;
@@ -668,35 +673,65 @@ export function createApp({
     // implied off-screen positions on the focus ring.
     const ringTargets = calculateAllNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing);
 
-    // 3. Hide real focus-ring nodes + pyramid so only animated clones show
-    if (view.nodesGroup)  view.nodesGroup.style.opacity = '0';
-    if (view.labelsGroup) view.labelsGroup.style.opacity = '0';
-    if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '0';
+    // 3. Snapshot current focus-ring node positions before they vanish.
+    //    These will animate radially outward while new nodes animate in.
+    const currentVisible = buildVisibleItems();
+    const currentRingNodes = calculateNodePositions(currentVisible, vp, rotation, nodeRadius, nodeSpacing)
+      .map(node => ({
+        ...node,
+        label: formatLabel({ item: node.item, context: 'node' }),
+        labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
+      }));
 
-    // 4. Commit the data swap NOW while real nodes are hidden behind clones.
+    // 4. Hide real focus-ring nodes + pyramid so only animated clones show
+    if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '0';
+    // nodesGroup + labelsGroup are hidden by animateRingOutward below
+
+    // 5. Commit the data swap NOW while real nodes are hidden behind clones.
     //    This lets us read lastPyramidData for the new child pyramid immediately.
     setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
 
-    // 5. Kick off BOTH animations simultaneously:
+    // 6. Kick off ALL THREE animations simultaneously:
     //    a) Old child pyramid → focus ring (animateIn)
     //    b) Hub → new child pyramid (animatePyramidFromHub)
+    //    c) Old focus-ring nodes → radially outward off-screen (animateRingOutward)
+    const selectedId = tempSelected?.id ?? null;
+
     animateIn({
       svgRoot: view.blurGroup || view.svgRoot,
       pyramidNodes,
       ringTargets,
       magnifierAngle: magnifier.angle,
-      clickedId: tempSelected?.id ?? null,
+      clickedId: selectedId,
       nodeRadius,
       onComplete: () => {
-        // Restore visibility for real focus-ring nodes
-        if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
-        if (view.labelsGroup) view.labelsGroup.style.opacity = '';
+        // If animateRingOutward is running (900 ms), it will restore
+        // nodesGroup/labelsGroup when it finishes.  But if there were
+        // no ring nodes to animate outward, restore them here.
+        if (currentRingNodes.length === 0) {
+          if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
+          if (view.labelsGroup) view.labelsGroup.style.opacity = '';
+        }
         // If no pyramid-from-hub animation ran, restore pyramid too
         if (!lastPyramidData?.nodes?.length) {
           if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '';
         }
       }
     });
+
+    // Old focus-ring nodes: animate radially outward (expanding galaxy)
+    if (currentRingNodes.length > 0) {
+      animateRingOutward({
+        svgRoot: view.blurGroup || view.svgRoot,
+        ringNodes: currentRingNodes,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        arcRadius: arcParams.radius,
+        skipId: selectedId,
+        nodesGroup: view.nodesGroup,
+        labelsGroup: view.labelsGroup
+      });
+    }
 
     // New child pyramid: animate from hub simultaneously with the ring migration
     if (lastPyramidData?.nodes?.length) {
@@ -730,6 +765,36 @@ export function createApp({
       return;
     }
 
+    // Pre-calculate where the parent items will land on the focus ring
+    // so we can fire animateRingInward simultaneously with animateOut.
+    const tempNormalized = normalizeItems(items, { preserveOrder });
+    const safeTempIndex = (() => {
+      if (!tempNormalized.length) return 0;
+      if (tempNormalized[selectedIndex] !== null) return selectedIndex;
+      const fb = tempNormalized.findIndex(i => i !== null);
+      return fb >= 0 ? fb : 0;
+    })();
+    const tempSelected = tempNormalized[safeTempIndex];
+    const tempBaseAngle = tempSelected
+      ? getBaseAngleForOrder(tempSelected.order, vp, nodeSpacing)
+      : magnifier.angle;
+    const desiredTempRotation = magnifier.angle - tempBaseAngle;
+    const tempNonNull = tempNormalized.filter(i => i !== null);
+    let tempRotation = desiredTempRotation;
+    if (tempNonNull.length > 0) {
+      const tFirst = tempNonNull[0].order;
+      const tLast = tempNonNull[tempNonNull.length - 1].order;
+      const tMinRot = windowInfo.startAngle - getBaseAngleForOrder(tFirst, vp, nodeSpacing);
+      const tMaxRot = windowInfo.endAngle - getBaseAngleForOrder(tLast, vp, nodeSpacing);
+      tempRotation = Math.max(tMinRot, Math.min(tMaxRot, desiredTempRotation));
+    }
+    const parentRingNodes = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing)
+      .map(node => ({
+        ...node,
+        label: formatLabel({ item: node.item, context: 'node' }),
+        labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
+      }));
+
     // Detail Sector: collapse simultaneously with the reverse migration animation.
     // By triggering here (not waiting for onComplete), both animations run in parallel.
     //    No onComplete render — setPrimaryItems (in the migration onComplete) will
@@ -751,6 +816,19 @@ export function createApp({
       });
     }
 
+    // Parent's focus-ring nodes: animate inward from off-screen simultaneously
+    if (parentRingNodes.length > 0) {
+      animateRingInward({
+        svgRoot: view.blurGroup || view.svgRoot,
+        ringNodes: parentRingNodes,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        arcRadius: arcParams.radius,
+        nodesGroup: view.nodesGroup,
+        labelsGroup: view.labelsGroup
+      });
+    }
+
     animateOut({
       nodesGroup: view.nodesGroup,
       labelsGroup: view.labelsGroup,
@@ -761,6 +839,13 @@ export function createApp({
         // now repainted the children inside the group.
         if (view.pyramidView?.pyramidGroup) {
           view.pyramidView.pyramidGroup.style.opacity = '';
+        }
+        // If animateRingInward is running (900 ms), it will restore
+        // nodesGroup/labelsGroup when it finishes.  But if there were
+        // no parent ring nodes to animate inward, restore them here.
+        if (parentRingNodes.length === 0) {
+          if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
+          if (view.labelsGroup) view.labelsGroup.style.opacity = '';
         }
       }
     });

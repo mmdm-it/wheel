@@ -3,9 +3,11 @@
  * Handles IN/OUT migration animations for Child Pyramid ↔ Focus Ring transitions.
  *
  * IN  (Child Pyramid → Focus Ring):
- *   Clone each child-pyramid node, animate from its pyramid position to its
- *   calculated focus-ring position over 600 ms, then hide clones and let the
- *   real render paint the focus ring.
+ *   1. animateIn — clone child-pyramid nodes, animate to focus-ring positions (600 ms)
+ *   2. animateRingOutward — clone existing focus-ring nodes, animate radially outward
+ *      from hub until off-screen (600 ms, simultaneous with animateIn)
+ *   3. animatePyramidFromHub — clone new child-pyramid nodes from hub to pyramid (600 ms)
+ *   All three run simultaneously.
  *
  * OUT (Focus Ring → Child Pyramid):
  *   Pop saved clones from LIFO stack, show them at their focus-ring positions,
@@ -18,6 +20,7 @@
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const ANIM_DURATION = 600; // ms — matches v0
 const ANIM_DELAY   = 10;  // ms — force reflow gap
+const RING_RADIAL_DURATION = 900; // ms — ring outward/inward (intentionally leisurely)
 
 /**
  * LIFO stack of animation layers.
@@ -236,9 +239,9 @@ export function animateOut(opts) {
     setTimeout(() => {
       // Remove overlay entirely
       overlay.remove();
-      // Restore real focus ring visibility
-      if (nodesGroup) nodesGroup.style.opacity = '';
-      if (labelsGroup) labelsGroup.style.opacity = '';
+      // Do NOT restore nodesGroup/labelsGroup here — animateRingInward
+      // runs for 900 ms (longer than animateOut's 600 ms) and will restore
+      // them when it finishes.  Restoring here would cause doubled labels.
       _animating = false;
       if (onComplete) onComplete();
     }, ANIM_DURATION);
@@ -419,6 +422,251 @@ export function animatePyramidToHub(opts) {
       // onComplete → setPrimaryItems will repaint the parent's pyramid.
       if (onComplete) onComplete();
     }, ANIM_DURATION);
+  }, ANIM_DELAY);
+}
+
+/**
+ * Animate existing Focus Ring nodes radially outward from the hub until
+ * they leave the viewport.  Each node travels along its own hub→node ray
+ * like an expanding galaxy.  The magnifier node is excluded (it will get
+ * its own unique animation later).
+ *
+ * Runs simultaneously with animateIn and animatePyramidFromHub during IN
+ * migration so all three animations complete together in 600 ms.
+ *
+ * @param {Object}    opts
+ * @param {SVGElement}  opts.svgRoot      — container for clone overlay
+ * @param {Object[]}    opts.ringNodes    — current focus-ring node positions
+ *                                          ({ item, index, angle, x, y, radius, label, labelCentered })
+ * @param {number}      opts.hubX         — arc hub X (off-screen right)
+ * @param {number}      opts.hubY         — arc hub Y
+ * @param {number}      opts.arcRadius    — arc radius (distance from hub to each node)
+ * @param {string|null} [opts.skipId]     — item id to exclude (magnifier node)
+ * @param {SVGElement}  [opts.nodesGroup] — real nodesGroup to hide during animation
+ * @param {SVGElement}  [opts.labelsGroup]— real labelsGroup to hide during animation
+ * @param {Function}    [opts.onComplete] — called when animation finishes
+ */
+export function animateRingOutward(opts) {
+  const {
+    svgRoot,
+    ringNodes = [],
+    hubX,
+    hubY,
+    arcRadius,
+    skipId = null,
+    nodesGroup,
+    labelsGroup,
+    onComplete
+  } = opts;
+
+  // Filter out the magnifier node if skipId is provided
+  const nodesToAnimate = skipId
+    ? ringNodes.filter(n => (n.item?.id ?? n.id) !== skipId)
+    : ringNodes;
+
+  if (!svgRoot || nodesToAnimate.length === 0) {
+    if (onComplete) onComplete();
+    return;
+  }
+
+  // Hide real focus-ring nodes immediately — clones take over
+  if (nodesGroup)  nodesGroup.style.opacity = '0';
+  if (labelsGroup) labelsGroup.style.opacity = '0';
+
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay ring-outward');
+  svgRoot.appendChild(overlay);
+
+  // Compute a uniform translation distance.  Every node sits at distance
+  // arcRadius from the hub, and the outward ray points away from hub
+  // toward (and past) the viewport edge.  Translating by arcRadius pushes
+  // each node to roughly 2× its current distance from hub — well past any
+  // viewport boundary since the hub itself is already far off-screen right.
+  const translateDistance = arcRadius;
+
+  const entries = [];
+
+  nodesToAnimate.forEach(node => {
+    const g = document.createElementNS(SVG_NS, 'g');
+    g.setAttribute('class', 'migration-node');
+
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', node.x);
+    circle.setAttribute('cy', node.y);
+    circle.setAttribute('r', node.radius);
+    circle.setAttribute('class', 'focus-ring-node');
+    g.appendChild(circle);
+
+    const label = document.createElementNS(SVG_NS, 'text');
+    const useCentered = Boolean(node.labelCentered);
+    const rot = (node.angle * 180) / Math.PI + 180;
+    if (useCentered) {
+      label.setAttribute('x', node.x);
+      label.setAttribute('y', node.y);
+      label.setAttribute('text-anchor', 'middle');
+      label.setAttribute('dominant-baseline', 'middle');
+      label.setAttribute('transform', `rotate(${rot}, ${node.x}, ${node.y})`);
+    } else {
+      const offset = node.radius * -1.3;
+      const lx = node.x + Math.cos(node.angle) * offset;
+      const ly = node.y + Math.sin(node.angle) * offset;
+      label.setAttribute('x', lx);
+      label.setAttribute('y', ly);
+      label.setAttribute('text-anchor', 'end');
+      label.setAttribute('dominant-baseline', 'middle');
+      label.setAttribute('transform', `rotate(${rot}, ${lx}, ${ly})`);
+    }
+    label.setAttribute('class', 'focus-ring-label');
+    label.textContent = node.label ?? node.item?.name ?? '';
+    g.appendChild(label);
+
+    overlay.appendChild(g);
+
+    // Unit vector from hub to node (radial direction)
+    const dx = node.x - hubX;
+    const dy = node.y - hubY;
+    // dx, dy has length ≈ arcRadius; normalize then scale by translateDistance
+    const len = Math.sqrt(dx * dx + dy * dy) || 1;
+    const translateX = (dx / len) * translateDistance;
+    const translateY = (dy / len) * translateDistance;
+
+    g.style.transformOrigin = `${node.x}px ${node.y}px`;
+    g.style.transform = 'translate(0px, 0px)';
+
+    entries.push({ g, translateX, translateY });
+  });
+
+  // Force reflow
+  overlay.getBoundingClientRect();
+
+  setTimeout(() => {
+    entries.forEach(e => {
+      e.g.style.transition = `transform ${RING_RADIAL_DURATION}ms ease-in-out`;
+      e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
+    });
+
+    setTimeout(() => {
+      overlay.remove();
+      // Restore real focus-ring nodes now that outward clones are gone.
+      // This is the sole authority for restoring ring visibility during IN.
+      if (nodesGroup)  nodesGroup.style.opacity = '';
+      if (labelsGroup) labelsGroup.style.opacity = '';
+      if (onComplete) onComplete();
+    }, RING_RADIAL_DURATION);
+  }, ANIM_DELAY);
+}
+
+/**
+ * Animate Focus Ring nodes inward from off-screen to their ring positions.
+ * Reverse of animateRingOutward — used during OUT migration so the parent's
+ * focus-ring nodes appear to fly in from the edges along their radial rays.
+ *
+ * @param {Object}    opts
+ * @param {SVGElement}  opts.svgRoot      — container for clone overlay
+ * @param {Object[]}    opts.ringNodes    — target focus-ring node positions
+ *                                          ({ item, index, angle, x, y, radius, label, labelCentered })
+ * @param {number}      opts.hubX         — arc hub X (off-screen right)
+ * @param {number}      opts.hubY         — arc hub Y
+ * @param {number}      opts.arcRadius    — arc radius (distance from hub to each node)
+ * @param {SVGElement}  [opts.nodesGroup] — real nodesGroup to hide during animation
+ * @param {SVGElement}  [opts.labelsGroup]— real labelsGroup to hide during animation
+ * @param {Function}    [opts.onComplete] — called when animation finishes
+ */
+export function animateRingInward(opts) {
+  const {
+    svgRoot,
+    ringNodes = [],
+    hubX,
+    hubY,
+    arcRadius,
+    nodesGroup,
+    labelsGroup,
+    onComplete
+  } = opts;
+
+  if (!svgRoot || ringNodes.length === 0) {
+    if (onComplete) onComplete();
+    return;
+  }
+
+  // Hide real focus-ring nodes — clones animate in their place
+  if (nodesGroup)  nodesGroup.style.opacity = '0';
+  if (labelsGroup) labelsGroup.style.opacity = '0';
+
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay ring-inward');
+  svgRoot.appendChild(overlay);
+
+  const translateDistance = arcRadius;
+  const entries = [];
+
+  ringNodes.forEach(node => {
+    const g = document.createElementNS(SVG_NS, 'g');
+    g.setAttribute('class', 'migration-node');
+
+    // Place circle and label at the TARGET (ring) position
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', node.x);
+    circle.setAttribute('cy', node.y);
+    circle.setAttribute('r', node.radius);
+    circle.setAttribute('class', 'focus-ring-node');
+    g.appendChild(circle);
+
+    const label = document.createElementNS(SVG_NS, 'text');
+    const useCentered = Boolean(node.labelCentered);
+    const rot = (node.angle * 180) / Math.PI + 180;
+    if (useCentered) {
+      label.setAttribute('x', node.x);
+      label.setAttribute('y', node.y);
+      label.setAttribute('text-anchor', 'middle');
+      label.setAttribute('dominant-baseline', 'middle');
+      label.setAttribute('transform', `rotate(${rot}, ${node.x}, ${node.y})`);
+    } else {
+      const offset = node.radius * -1.3;
+      const lx = node.x + Math.cos(node.angle) * offset;
+      const ly = node.y + Math.sin(node.angle) * offset;
+      label.setAttribute('x', lx);
+      label.setAttribute('y', ly);
+      label.setAttribute('text-anchor', 'end');
+      label.setAttribute('dominant-baseline', 'middle');
+      label.setAttribute('transform', `rotate(${rot}, ${lx}, ${ly})`);
+    }
+    label.setAttribute('class', 'focus-ring-label');
+    label.textContent = node.label ?? node.item?.name ?? '';
+    g.appendChild(label);
+
+    overlay.appendChild(g);
+
+    // Unit vector from hub to node (radial outward direction)
+    const dx = node.x - hubX;
+    const dy = node.y - hubY;
+    const len = Math.sqrt(dx * dx + dy * dy) || 1;
+    const offsetX = (dx / len) * translateDistance;
+    const offsetY = (dy / len) * translateDistance;
+
+    // Start off-screen (translated outward), animate to identity (ring position)
+    g.style.transformOrigin = `${node.x}px ${node.y}px`;
+    g.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+
+    entries.push({ g, offsetX, offsetY });
+  });
+
+  // Force reflow so browser registers the initial off-screen transform
+  overlay.getBoundingClientRect();
+
+  setTimeout(() => {
+    entries.forEach(e => {
+      e.g.style.transition = `transform ${RING_RADIAL_DURATION}ms ease-in-out`;
+      e.g.style.transform = 'translate(0px, 0px)';
+    });
+
+    setTimeout(() => {
+      overlay.remove();
+      // Restore real nodes now that clones have settled into position
+      if (nodesGroup)  nodesGroup.style.opacity = '';
+      if (labelsGroup) labelsGroup.style.opacity = '';
+      if (onComplete) onComplete();
+    }, RING_RADIAL_DURATION);
   }, ANIM_DELAY);
 }
 

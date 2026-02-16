@@ -296,9 +296,42 @@ export const catalogAdapter = {
       }
       return true;
     };
+    // Build the parent button label from the navStack history.
+    // depth 0 (manufacturers on ring): label = country name from selected item's compound id
+    // depth 1 (cylinders on ring):     label = manufacturer name
+    // depth 2+ (family/model on ring): label = "MANUFACTURER N CIL" (frozen)
+    const getParentLabel = (item) => {
+      const depth = navStack.length;
+      if (depth === 0) {
+        // At manufacturer level — parent label is the country.
+        // Selected item id is "market__country__manufacturer".
+        if (!item) return '';
+        const id = typeof item.id === 'string' ? item.id : '';
+        if (id.includes('__')) {
+          const parts = id.split('__');
+          if (parts.length >= 2) return parts[1].toUpperCase();
+        }
+        return '';
+      }
+      // navStack[0] = manufacturer-level snapshot
+      const mfgSnapshot = navStack[0];
+      const mfgItem = mfgSnapshot?.items?.[mfgSnapshot.selectedIndex];
+      const mfgName = (mfgItem?.name || '').toUpperCase();
+      if (depth === 1) {
+        // At cylinder level — parent label is just the manufacturer.
+        return mfgName;
+      }
+      // depth >= 2: cylinder level and beyond — "MANUFACTURER N CIL"
+      const cylSnapshot = navStack[1];
+      const cylItem = cylSnapshot?.items?.[cylSnapshot.selectedIndex];
+      const cylName = cylItem?.name || '';
+      return `${mfgName} ${cylName} CIL`;
+    };
+
     return {
       parentHandler,
       childrenHandler: () => false,
+      getParentLabel,
       layoutBindings: {
         catalogModeRef: () => catalogMode,
         setCatalogMode: next => { catalogMode = next; },

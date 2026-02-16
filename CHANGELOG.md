@@ -6,6 +6,60 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.8.24] - 2026-02-16
+
+### Fixed
+- Synced `CHILD_PARAM_TABLE` in child-pyramid-geometry.js with docs/child_pyramid_params.csv: `minNodeDist` now decreases with child count (7→6 at 5, 6→5 at 7, 5→4 at 10, 4→3.5 at 12) instead of being hardcoded to 7 for all counts ≤ 11
+
+
+## [3.8.23] - 2026-02-16
+
+### Fixed
+- Focus Ring animation clones now replicate the real label positioning: offset/radial labels (`text-anchor: end`, pulled toward hub by `radius × -1.3`) for manufacturer-level nodes, centered labels for cylinder-level nodes — eliminates visible "snap" at start of outward and end of inward ring animations
+
+
+## [3.8.22] - 2026-02-16
+
+### Fixed
+- Eliminated doubled Focus Ring labels during IN animation (old ring nodes overlapping new ring nodes between 600–900 ms)
+- Eliminated doubled Focus Ring labels during OUT animation (real ring nodes reappearing at 600 ms while inward clones still settling until 900 ms)
+- Ring node group visibility now controlled solely by the ring radial animation (900 ms) instead of the shorter core animation (600 ms)
+
+
+## [3.8.21] - 2026-02-16
+
+### Changed
+- OUT migration: `animateRingInward` now fires simultaneously with `animateOut` and `animatePyramidToHub` instead of sequentially after them (eliminates ~600ms delay before parent ring nodes enter frame)
+- Parent ring node positions pre-calculated before animations start, matching the pattern used by IN migration
+
+
+## [3.8.20] - 2026-02-16
+
+### Added
+- Focus Ring radial outward animation during IN migration: existing ring nodes fly outward along their hub→node rays (expanding galaxy) while new nodes animate in
+- Focus Ring radial inward animation during OUT migration: parent ring nodes fly inward from off-screen along their radial rays to populate the ring
+- New exports `animateRingOutward` and `animateRingInward` in migration-animation module
+- `RING_RADIAL_DURATION` constant (900ms) — intentionally leisurely compared to 600ms core animations
+- Magnifier node excluded from radial animations (reserved for future Magnifier ↔ Parent Button animation)
+
+### Changed
+- IN migration now fires three simultaneous animations: animateIn + animateRingOutward + animatePyramidFromHub
+- OUT migration fires animateRingInward after animateOut completes and parent items are painted
+
+
+## [3.8.19] - 2026-02-16
+
+### Added
+- Adapter-driven Parent Button labelling: catalog adapter now exports `getParentLabel(item)` on its handler set
+- Parent label builds progressively from navStack depth: country (depth 0) → manufacturer (depth 1) → frozen "MANUFACTURER N CIL" compound (depth 2+)
+- All parent button suffixes forced uppercase for visual consistency
+- `createApp` accepts optional `getParentLabel` callback; delegates to adapter when provided, falls back to built-in logic
+
+### Changed
+- Renamed original `getParentLabel` in index.js to `builtinGetParentLabel` to avoid collision with adapter-supplied function
+- index.html wiring updated to extract `getParentLabel` from adapter handler set and pass to `createApp`
+
+
 ## [3.8.18] - 2026-02-16
 
 ### Changed
