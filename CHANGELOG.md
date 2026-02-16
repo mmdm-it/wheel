@@ -6,6 +6,68 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.8.15] - 2026-02-15
+
+### Added
+- Migration animation: Child Pyramid nodes now animate smoothly to their Focus Ring positions during IN migration (600ms ease-in-out CSS transform), matching v0 behavior
+- Migration animation: Focus Ring nodes animate back to Child Pyramid positions during OUT migration (reverse of IN, LIFO stack for multi-level navigation)
+- New module `src/view/migration-animation.js` with `animateIn`, `animateOut`, LIFO stack, and `isAnimating` guard
+- All volume adapters (catalog, bible, calendar) use animated migration when available, with instant-swap fallback
+- Interaction blocked during animation (pyramid clicks, parent button clicks)
+- CSS `will-change: transform` on animation clones; `prefers-reduced-motion` support
+
+
+## [3.8.14] - 2026-02-15
+
+### Changed
+- revert: Focus Ring band back to original gray (#7a7979, opacity 1)
+
+
+## [3.8.13] - 2026-02-15
+
+### Changed
+- style: catalog band opacity 0.5 to match Detail Sector circle muted blue
+
+
+## [3.8.12] - 2026-02-15
+
+### Changed
+- style: catalog Focus Ring band color changed to Detail Sector blue (#362e6a)
+
+
+## [3.8.11] - 2026-02-15
+
+### Changed
+- fix: Child Pyramid reappears automatically after Detail Sector collapse
+
+
+## [3.8.10] - 2026-02-15
+
+### Changed
+- fix: Parent Button click at manufacturer level no longer duplicates country label in magnifier
+
+
+## [3.8.9] - 2026-02-15
+
+### Changed
+- fix: Parent Button + country label reappear after migrating all the way OUT
+
+
+## [3.8.8] - 2026-02-15
+
+### Changed
+- fix: Detail Sector logo animation — position relative to screen center not hub, fix opacity parity with v0
+
+
+## [3.8.7] - 2026-02-15
+
+### Added
+- feat: Detail Sector expand/collapse animation — VolumeLogo gains expand() and collapse() methods (600ms quadratic ease-in-out); circle grows from 12% SSd upper-right to 99% FR radius at hub center, logo shrinks to 10% watermark at -35% FR offset with magnifier-angle rotation; leaf detection in render loop suppresses Child Pyramid when model-level item is in Magnifier; CPUA bounds suppressed during animation
+
+### Fixed
+- fix: volume-pyramid test updated for child mode (setCatalogMode('child') not 'model')
+
+
 ## [3.8.6] - 2026-02-15
 
 ### Changed

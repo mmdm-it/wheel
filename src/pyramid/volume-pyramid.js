@@ -63,10 +63,6 @@ export function buildCatalogPyramid({
   const getChildren = ({ selected }) => getCatalogChildren(manifest, selected);
   const onClick = instr => {
     if (!instr?.item) return;
-    const mode = typeof catalogModeRef === 'function' ? catalogModeRef() : 'unknown';
-    // Only block clicks when already at a leaf (model) level — no children to navigate into
-    const clickedLevel = instr.item.level || '';
-    if (clickedLevel === 'model') return; // leaf nodes don't trigger IN migration
     const app = typeof getApp === 'function' ? getApp() : null;
     const parent = app?.nav?.getCurrent?.();
     const children = getCatalogChildren(manifest, parent);
@@ -83,7 +79,12 @@ export function buildCatalogPyramid({
       app.setParentButtons({ showOuter: true });
     }
     if (app?.setPrimaryItems) {
-      app.setPrimaryItems(children, selectedIdx >= 0 ? selectedIdx : 0, true);
+      // Migrate IN: siblings land on the focus ring with the clicked item selected.
+      // If a leaf (model) lands in the magnifier, the render loop's leaf detection
+      // will trigger the Detail Sector expand and suppress the Child Pyramid.
+      // Use migrateIn for animated transition when available; fall back to instant swap.
+      const migrateOrSet = app.migrateIn || app.setPrimaryItems;
+      migrateOrSet(children, selectedIdx >= 0 ? selectedIdx : 0, true);
     }
   };
   return { getChildren, onClick };
@@ -119,7 +120,8 @@ export function buildCalendarPyramid({
       app.setParentButtons({ showOuter: true });
     }
     if (app?.setPrimaryItems) {
-      app.setPrimaryItems(months, selectedIdx >= 0 ? selectedIdx : 0, true);
+      const migrateOrSet = app.migrateIn || app.setPrimaryItems;
+      migrateOrSet(months, selectedIdx >= 0 ? selectedIdx : 0, true);
     }
   };
   return { getChildren, onClick };
@@ -157,7 +159,8 @@ export function buildBiblePyramid({
       app.setParentButtons({ showOuter: true });
     }
     if (app?.setPrimaryItems) {
-      app.setPrimaryItems(chapters, selectedIdx >= 0 ? selectedIdx : 0, true);
+      const migrateOrSet = app.migrateIn || app.setPrimaryItems;
+      migrateOrSet(chapters, selectedIdx >= 0 ? selectedIdx : 0, true);
     }
   };
   return { getChildren, onClick };

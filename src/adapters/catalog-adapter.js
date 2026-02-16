@@ -281,14 +281,18 @@ export const catalogAdapter = {
     let catalogMode = 'manufacturer';
     const navStack = []; // stack of snapshots for multi-level IN/OUT
     const parentHandler = ({ app }) => {
-      if (catalogMode === 'manufacturer') return false;
+      if (catalogMode === 'manufacturer') return true; // already at top level — swallow click
       if (navStack.length === 0) return false;
       const snapshot = navStack.pop();
       catalogMode = navStack.length === 0 ? 'manufacturer' : 'child';
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: navStack.length > 0 });
+      // At manufacturer level (navStack empty), parent button must stay visible
+      // for the country label / shiftLayersOut default behaviour
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       if (app?.setPrimaryItems) {
         const { items, selectedIndex, preserveOrder } = snapshot;
-        app.setPrimaryItems(items || [], selectedIndex ?? 0, preserveOrder ?? false);
+        // Use migrateOut for animated transition when available; fall back to instant swap.
+        const migrateOrSet = app.migrateOut || app.setPrimaryItems;
+        migrateOrSet(items || [], selectedIndex ?? 0, preserveOrder ?? false);
       }
       return true;
     };

@@ -9,6 +9,7 @@ import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry } from './geometry/child-pyramid-geometry.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
+import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
@@ -260,6 +261,10 @@ export function createApp({
   let lastSelectedLabelOut = '';
   const pyramidConfig = pyramid || null;
   let lastPyramidData = null; // stashed for SVG-level click delegation
+
+  // Detail Sector leaf detection
+  const leafLevel = pyramidNormalized?.meta?.leafLevel || null;
+  let detailSectorShown = false; // tracks whether DS is currently expanded
 
   const setBlur = enabled => {
     isBlurred = Boolean(enabled);
@@ -617,7 +622,94 @@ export function createApp({
     render(rotation);
   };
 
+  // ── Migration Animation: IN (Child Pyramid → Focus Ring) ──────────
+  // Snapshots current pyramid node positions, calculates where the new
+  // items will land on the focus ring, runs the 600 ms CSS transform
+  // animation, then calls setPrimaryItems to finish the swap.
+  const migrateIn = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
+    // If animating or no pyramid data, fall back to instant swap
+    if (isAnimating() || !lastPyramidData?.nodes?.length) {
+      setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
+      return;
+    }
+
+    // 1. Snapshot current child pyramid node positions (they'll be cleared)
+    const pyramidNodes = lastPyramidData.nodes.slice();
+
+    // 2. Pre-calculate where the new items will land on the focus ring.
+    //    We need to normalise them, align to selected, and compute positions
+    //    *without* actually mutating state yet.
+    const tempNormalized = normalizeItems(newItems, { preserveOrder: nextPreserveOrder });
+    const safeTempIndex = (() => {
+      if (!tempNormalized.length) return 0;
+      if (tempNormalized[nextSelectedIndex] !== null) return nextSelectedIndex;
+      const fb = tempNormalized.findIndex(i => i !== null);
+      return fb >= 0 ? fb : 0;
+    })();
+    const tempSelected = tempNormalized[safeTempIndex];
+    // Compute the rotation offset that will be used after setPrimaryItems
+    // Must replicate alignToSelected + clamp logic to get accurate positions
+    const tempBaseAngle = tempSelected
+      ? getBaseAngleForOrder(tempSelected.order, vp, nodeSpacing)
+      : magnifier.angle;
+    const desiredTempRotation = magnifier.angle - tempBaseAngle;
+    // Compute bounds for the new items to clamp rotation
+    const tempNonNull = tempNormalized.filter(i => i !== null);
+    let tempRotation = desiredTempRotation;
+    if (tempNonNull.length > 0) {
+      const tFirst = tempNonNull[0].order;
+      const tLast = tempNonNull[tempNonNull.length - 1].order;
+      const tMinRot = windowInfo.startAngle - getBaseAngleForOrder(tFirst, vp, nodeSpacing);
+      const tMaxRot = windowInfo.endAngle - getBaseAngleForOrder(tLast, vp, nodeSpacing);
+      tempRotation = Math.max(tMinRot, Math.min(tMaxRot, desiredTempRotation));
+    }
+    const ringTargets = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing);
+
+    // 3. Hide real focus-ring nodes + pyramid so only animated clones show
+    if (view.nodesGroup)  view.nodesGroup.style.opacity = '0';
+    if (view.labelsGroup) view.labelsGroup.style.opacity = '0';
+    if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '0';
+
+    // 4. Kick off the animation
+    animateIn({
+      svgRoot: view.blurGroup || view.svgRoot,
+      pyramidNodes,
+      ringTargets,
+      magnifierAngle: magnifier.angle,
+      clickedId: tempSelected?.id ?? null,
+      nodeRadius,
+      onComplete: () => {
+        // 5. Restore visibility for real nodes
+        if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
+        if (view.labelsGroup) view.labelsGroup.style.opacity = '';
+        if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '';
+        // 6. Commit the real data swap
+        setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
+      }
+    });
+  };
+
+  // ── Migration Animation: OUT (Focus Ring → Child Pyramid) ─────────
+  // Pops the most recent animation layer from the LIFO stack and
+  // reverses the transform animation back to the child pyramid
+  // positions, then calls setPrimaryItems to restore parent items.
+  const migrateOut = (items, selectedIndex = 0, preserveOrder = false) => {
+    if (isAnimating()) {
+      setPrimaryItems(items, selectedIndex, preserveOrder);
+      return;
+    }
+
+    animateOut({
+      nodesGroup: view.nodesGroup,
+      labelsGroup: view.labelsGroup,
+      onComplete: () => {
+        setPrimaryItems(items, selectedIndex, preserveOrder);
+      }
+    });
+  };
+
   const shiftLayersOut = () => {
+    if (isAnimating()) return; // block during migration animation
     const prevSelected = nav.getCurrent();
     const prevParentLabel = getParentLabel(prevSelected) || '';
     const prevSelectedLabel = formatLabel({ item: prevSelected, context: 'magnifier' }) || '';
@@ -722,7 +814,22 @@ export function createApp({
     const tertiaryMagnifier = getTertiaryMagnifier();
     const tertiarySelected = tertiaryNav.getCurrent();
     const tertiaryNodes = calculateTertiaryNodePositions(tertiaryNav.items, tertiaryRotation);
+
+    // Detail Sector leaf detection — expand/collapse based on selected item level
+    const isLeaf = leafLevel && selected?.level === leafLevel;
+    if (isLeaf && !detailSectorShown && !volumeLogo.animating) {
+      detailSectorShown = true;
+      volumeLogo.expand(arcParams, magnifier.angle, () => render(rotation));
+    } else if (!isLeaf && detailSectorShown && !volumeLogo.animating) {
+      detailSectorShown = false;
+      volumeLogo.collapse(arcParams, magnifier.angle, () => render(rotation));
+    }
+
+    // Suppress child pyramid when Detail Sector is shown or animating
+    const suppressPyramid = detailSectorShown || volumeLogo.animating;
+
     const pyramidData = (() => {
+      if (suppressPyramid) return null;
       if (!pyramidConfig) return null;
       try {
         // Pre-fetch children to pass count for dynamic spacing
@@ -1203,7 +1310,10 @@ export function createApp({
     secondaryChoreographer,
     setPrimaryItems,
     setParentButtons,
+    migrateIn,
+    migrateOut,
     handlePyramidNodeClick: idx => {
+      if (isAnimating()) return; // block clicks during migration animation
       if (!lastPyramidData) return;
       const { nodes, onNodeClick } = lastPyramidData;
       if (!onNodeClick || !nodes || idx < 0 || idx >= nodes.length) return;

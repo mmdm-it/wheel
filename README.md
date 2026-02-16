@@ -2,21 +2,21 @@
 
 > **Active codebase**: This branch uses v3.x numbering for the adapter reset. Legacy v1/v2 remain on `main`, and prior v4 labeling has been rolled back to align with the actual release train. File issues and PRs against this branch.
 
-Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
+Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. v3.8.7 Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.8.6 (2026-02-15)
+- v3.8.14 (2026-02-15)
 
 ## Notable Changes in 3.7.3
 - Child Pyramid nodes now support a spiral layout mode, placing nodes equidistantly along an Archimedean spiral using true arc-length spacing. This ensures visually uniform node distribution for all child counts. (Cartesian grid mode is also available.)
 
 ## Release Train
-- v3.9.0 Baseline data + UI lift — done
-- v3.9.0 Adapter + state-store foundation — done
-- v3.9.0 Volume-safe interaction loop — done
-- v3.9.0 Detail/pyramid rebuild on adapters — done
-- v3.9.0 Theming + accessibility hardening — done (theming tokens, a11y pass, perf budgets, theme swap smoke)
-- v3.9.0 Dimension System (lens: language/time) — shipped: language + edition portals, schema/adapter hydration, UI cycling with aria/keyboard, perf budgets
+- v3.8.14 Baseline data + UI lift — done
+- v3.8.14 Adapter + state-store foundation — done
+- v3.8.14 Volume-safe interaction loop — done
+- v3.8.14 Detail/pyramid rebuild on adapters — done
+- v3.8.14 Theming + accessibility hardening — done (theming tokens, a11y pass, perf budgets, theme swap smoke)
+- v3.8.14 Dimension System (lens: language/time) — shipped: language + edition portals, schema/adapter hydration, UI cycling with aria/keyboard, perf budgets
 
 - `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.7.14`).
 - Historical majors live on archive branches (e.g., `archive/v0`, `archive/v1`, `archive/v2`).

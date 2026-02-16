@@ -322,7 +322,10 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       bibleMode = 'book';
       bibleChapterContext = null;
       if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
-      if (app?.setPrimaryItems) app.setPrimaryItems(bookItems, bookSelected, bookPreserve);
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateOut || app.setPrimaryItems;
+        migrateOrSet(bookItems, bookSelected, bookPreserve);
+      }
       return true;
     }
     if (bibleMode !== 'book') return false;
@@ -339,7 +342,10 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     if (!sectionItems.length) return false;
     bibleMode = 'section';
     if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
-    if (app?.setPrimaryItems) app.setPrimaryItems(sectionItems, sectionSelected, true);
+    if (app?.setPrimaryItems) {
+      const migrateOrSet = app.migrateOut || app.setPrimaryItems;
+      migrateOrSet(sectionItems, sectionSelected, true);
+    }
     return true;
   };
 

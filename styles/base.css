@@ -227,6 +227,21 @@ svg {
   pointer-events: none;
 }
 
+/* Migration animation overlay — cloned nodes that travel from pyramid to ring */
+.migration-animation-overlay {
+  pointer-events: none;
+}
+
+.migration-node {
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .migration-node {
+    transition: none !important;
+  }
+}
+
 /* Detail panel driven by adapter detail templates */
 .detail-panel {
   position: fixed;
