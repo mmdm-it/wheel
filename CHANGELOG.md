@@ -6,6 +6,20 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.8.26] - 2026-02-18
+
+### Fixed
+- Ring inward animation (OUT migration) now starts each node just outside its nearest viewport edge instead of a uniform `arcRadius` away — per-node ray-viewport intersection calculates the minimum distance to place each node off-screen, so the first pixel of every node enters the frame at t≈0, synchronized with the visible Ring→Pyramid and Pyramid→Hub contracting motion
+- Restored `ease-in-out` timing (from `ease-out`) since the slow-start phase is now visible, giving a smooth acceleration-deceleration feel matching the outward animation
+
+
+## [3.8.25] - 2026-02-17
+
+### Fixed
+- OUT migration ring inward animation now uses 600 ms `ease-out` (matching animateOut and animatePyramidToHub) instead of 900 ms `ease-in-out` — all three OUT animations are now synchronous, simultaneous, and fluid
+- Previously the 900 ms ease-in-out started slow off-screen (wasted motion), then nodes appeared to jerk into the viewport late; the 600 ms ease-out enters decisively and decelerates smoothly into final position
+
+
 ## [3.8.24] - 2026-02-16
 
 ### Fixed

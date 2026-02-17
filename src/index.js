@@ -824,6 +824,8 @@ export function createApp({
         hubX: arcParams.hubX,
         hubY: arcParams.hubY,
         arcRadius: arcParams.radius,
+        viewportWidth: vp.width,
+        viewportHeight: vp.height,
         nodesGroup: view.nodesGroup,
         labelsGroup: view.labelsGroup
       });

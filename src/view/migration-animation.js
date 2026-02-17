@@ -5,14 +5,16 @@
  * IN  (Child Pyramid → Focus Ring):
  *   1. animateIn — clone child-pyramid nodes, animate to focus-ring positions (600 ms)
  *   2. animateRingOutward — clone existing focus-ring nodes, animate radially outward
- *      from hub until off-screen (600 ms, simultaneous with animateIn)
+ *      from hub until off-screen (900 ms ease-in-out, simultaneous with animateIn)
  *   3. animatePyramidFromHub — clone new child-pyramid nodes from hub to pyramid (600 ms)
  *   All three run simultaneously.
  *
  * OUT (Focus Ring → Child Pyramid):
- *   Pop saved clones from LIFO stack, show them at their focus-ring positions,
- *   reverse-animate back to original pyramid positions, remove clones, let
- *   the real render paint the parent's child pyramid.
+ *   1. animateOut — pop saved clones from LIFO stack, reverse-animate to pyramid (600 ms)
+ *   2. animateRingInward — parent focus-ring nodes fly in from off-screen along
+ *      radial rays to ring positions (600 ms ease-out, simultaneous with animateOut)
+ *   3. animatePyramidToHub — animate child-pyramid nodes to hub (600 ms)
+ *   All three run simultaneously.
  *
  * Modelled after wheel-v0/mobile/mobile-animation.js.
  */
@@ -239,9 +241,8 @@ export function animateOut(opts) {
     setTimeout(() => {
       // Remove overlay entirely
       overlay.remove();
-      // Do NOT restore nodesGroup/labelsGroup here — animateRingInward
-      // runs for 900 ms (longer than animateOut's 600 ms) and will restore
-      // them when it finishes.  Restoring here would cause doubled labels.
+      // animateRingInward (same 600 ms duration) restores nodesGroup/labelsGroup
+      // on its own completion, so we don't duplicate that here.
       _animating = false;
       if (onComplete) onComplete();
     }, ANIM_DURATION);
@@ -557,20 +558,27 @@ export function animateRingOutward(opts) {
 }
 
 /**
- * Animate Focus Ring nodes inward from off-screen to their ring positions.
- * Reverse of animateRingOutward — used during OUT migration so the parent's
- * focus-ring nodes appear to fly in from the edges along their radial rays.
+ * Animate Focus Ring nodes inward from just outside the viewport to their
+ * ring positions.  Used during OUT migration so the parent's focus-ring
+ * nodes enter the frame simultaneously with the other animations.
+ *
+ * Each node starts just beyond the nearest viewport edge along its own
+ * hub→node radial ray, so the first pixel enters the frame at t ≈ 0.
+ * This keeps the "contracting universe" feel — all layers move hub-ward
+ * in sync.
  *
  * @param {Object}    opts
- * @param {SVGElement}  opts.svgRoot      — container for clone overlay
- * @param {Object[]}    opts.ringNodes    — target focus-ring node positions
- *                                          ({ item, index, angle, x, y, radius, label, labelCentered })
- * @param {number}      opts.hubX         — arc hub X (off-screen right)
- * @param {number}      opts.hubY         — arc hub Y
- * @param {number}      opts.arcRadius    — arc radius (distance from hub to each node)
- * @param {SVGElement}  [opts.nodesGroup] — real nodesGroup to hide during animation
- * @param {SVGElement}  [opts.labelsGroup]— real labelsGroup to hide during animation
- * @param {Function}    [opts.onComplete] — called when animation finishes
+ * @param {SVGElement}  opts.svgRoot        — container for clone overlay
+ * @param {Object[]}    opts.ringNodes      — target focus-ring node positions
+ *                                            ({ item, index, angle, x, y, radius, label, labelCentered })
+ * @param {number}      opts.hubX           — arc hub X (off-screen right)
+ * @param {number}      opts.hubY           — arc hub Y
+ * @param {number}      opts.arcRadius      — arc radius (distance from hub to each node)
+ * @param {number}      opts.viewportWidth  — SVG viewport width
+ * @param {number}      opts.viewportHeight — SVG viewport height
+ * @param {SVGElement}  [opts.nodesGroup]   — real nodesGroup to hide during animation
+ * @param {SVGElement}  [opts.labelsGroup]  — real labelsGroup to hide during animation
+ * @param {Function}    [opts.onComplete]   — called when animation finishes
  */
 export function animateRingInward(opts) {
   const {
@@ -579,6 +587,8 @@ export function animateRingInward(opts) {
     hubX,
     hubY,
     arcRadius,
+    viewportWidth = 0,
+    viewportHeight = 0,
     nodesGroup,
     labelsGroup,
     onComplete
@@ -597,8 +607,11 @@ export function animateRingInward(opts) {
   overlay.setAttribute('class', 'migration-animation-overlay ring-inward');
   svgRoot.appendChild(overlay);
 
-  const translateDistance = arcRadius;
   const entries = [];
+
+  // Viewport bounds (SVG coordinate space: 0,0 at top-left)
+  const vpW = viewportWidth  || arcRadius * 2; // fallback if not provided
+  const vpH = viewportHeight || arcRadius * 2;
 
   ringNodes.forEach(node => {
     const g = document.createElementNS(SVG_NS, 'g');
@@ -637,14 +650,45 @@ export function animateRingInward(opts) {
 
     overlay.appendChild(g);
 
-    // Unit vector from hub to node (radial outward direction)
+    // ── Compute per-node start offset ────────────────────────────────
+    // Unit vector from hub toward node (radial outward direction)
     const dx = node.x - hubX;
     const dy = node.y - hubY;
     const len = Math.sqrt(dx * dx + dy * dy) || 1;
-    const offsetX = (dx / len) * translateDistance;
-    const offsetY = (dy / len) * translateDistance;
+    const ux = dx / len;            // unit radial X
+    const uy = dy / len;            // unit radial Y
 
-    // Start off-screen (translated outward), animate to identity (ring position)
+    // Walk outward along the ray from the node position until the node
+    // center is just past the viewport edge.  We need the smallest
+    // positive t such that (node.x + ux*t, node.y + uy*t) is outside
+    // the rectangle [0, vpW] × [0, vpH], plus a margin for the node
+    // radius so the entire circle (not just its center) starts off-screen.
+    const margin = node.radius * 1.5; // comfortable clearance
+    let tMin = Infinity;
+
+    // Check each viewport edge (solve for t where coordinate == edge ± margin)
+    if (ux > 0) {                                      // exits right
+      const t = (vpW + margin - node.x) / ux;
+      if (t > 0 && t < tMin) tMin = t;
+    } else if (ux < 0) {                               // exits left
+      const t = (-margin - node.x) / ux;
+      if (t > 0 && t < tMin) tMin = t;
+    }
+    if (uy > 0) {                                      // exits bottom
+      const t = (vpH + margin - node.y) / uy;
+      if (t > 0 && t < tMin) tMin = t;
+    } else if (uy < 0) {                               // exits top
+      const t = (-margin - node.y) / uy;
+      if (t > 0 && t < tMin) tMin = t;
+    }
+
+    // Fallback: if no edge was reached (shouldn't happen), use arcRadius
+    if (!isFinite(tMin)) tMin = arcRadius;
+
+    const offsetX = ux * tMin;
+    const offsetY = uy * tMin;
+
+    // Start just outside viewport, animate to identity (ring position)
     g.style.transformOrigin = `${node.x}px ${node.y}px`;
     g.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
@@ -656,7 +700,10 @@ export function animateRingInward(opts) {
 
   setTimeout(() => {
     entries.forEach(e => {
-      e.g.style.transition = `transform ${RING_RADIAL_DURATION}ms ease-in-out`;
+      // 600 ms ease-in-out — in sync with animateOut and animatePyramidToHub.
+      // The slow-start is now visible (nodes begin at the viewport edge) and
+      // reads as gentle acceleration, matching the contracting-universe feel.
+      e.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
       e.g.style.transform = 'translate(0px, 0px)';
     });
 
@@ -666,7 +713,7 @@ export function animateRingInward(opts) {
       if (nodesGroup)  nodesGroup.style.opacity = '';
       if (labelsGroup) labelsGroup.style.opacity = '';
       if (onComplete) onComplete();
-    }, RING_RADIAL_DURATION);
+    }, ANIM_DURATION);
   }, ANIM_DELAY);
 }
 
