@@ -9,7 +9,7 @@ import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry } from './geometry/child-pyramid-geometry.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
-import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward } from './view/migration-animation.js';
+import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
@@ -266,6 +266,18 @@ export function createApp({
   // Detail Sector leaf detection
   const leafLevel = pyramidNormalized?.meta?.leafLevel || null;
   let detailSectorShown = false; // tracks whether DS is currently expanded
+
+  // Notify the host page when the detail sector visibility changes.
+  // `when` indicates the timing: 'immediate' (show/hide now) or 'after-animation'
+  // (show after the expand animation has completed).
+  const emitDetailSectorChange = (visible, when = 'immediate') => {
+    console.log('[emitDetailSectorChange] visible:', visible, 'when:', when, 'leafLevel:', leafLevel, 'detailSectorShown:', detailSectorShown);
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('detail-sector-change', {
+        detail: { visible, when }
+      }));
+    }
+  };
 
   const setBlur = enabled => {
     isBlurred = Boolean(enabled);
@@ -687,14 +699,37 @@ export function createApp({
     if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '0';
     // nodesGroup + labelsGroup are hidden by animateRingOutward below
 
+    // 4b. Snapshot magnifier and parent-button state BEFORE setPrimaryItems.
+    //     The magnifier circle travels to the parent-button position (straight line).
+    //     The old parent button exits radially outward from the HUB.
+    const prevSelected = nav.getCurrent();
+    const prevMagnifierLabel = formatLabel({ item: prevSelected, context: 'magnifier' }) || '';
+    const prevParentLabel = getParentLabel(prevSelected) || '';
+    const parentButtonX = vp.SSd * 0.13;
+    const parentButtonY = vp.LSd * 0.93;
+
     // 5. Commit the data swap NOW while real nodes are hidden behind clones.
     //    This lets us read lastPyramidData for the new child pyramid immediately.
     setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
 
-    // 6. Kick off ALL THREE animations simultaneously:
-    //    a) Old child pyramid → focus ring (animateIn)
+    // 5b. setPrimaryItems → render() has now repainted the magnifier and parent
+    //     button with the NEW data.  Hide their labels and circle fills so only
+    //     the animated clones are visible — the stroke rings stay empty until the
+    //     animation completes.
+    //     Use style.visibility (not display attr) because render() calls
+    //     removeAttribute('display') which would undo our hiding.
+    if (view.magnifierLabel) view.magnifierLabel.style.visibility = 'hidden';
+    if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = 'hidden';
+    // Hide circle fills but keep stroke rings visible
+    if (view.magnifierCircle) view.magnifierCircle.style.fill = 'none';
+    if (view.parentButtonOuter) view.parentButtonOuter.style.fill = 'none';
+
+    // 6. Kick off ALL animations simultaneously:
+    //    a) Old child pyramid → focus ring (animateIn) — clicked node grows to magnifier size
     //    b) Hub → new child pyramid (animatePyramidFromHub)
     //    c) Old focus-ring nodes → radially outward off-screen (animateRingOutward)
+    //    d) Old magnifier → parent-button position (straight line)
+    //    e) Old parent button → radially outward off-screen
     const selectedId = tempSelected?.id ?? null;
 
     animateIn({
@@ -704,6 +739,7 @@ export function createApp({
       magnifierAngle: magnifier.angle,
       clickedId: selectedId,
       nodeRadius,
+      magnifierRadius,
       onComplete: () => {
         // If animateRingOutward is running (900 ms), it will restore
         // nodesGroup/labelsGroup when it finishes.  But if there were
@@ -716,6 +752,12 @@ export function createApp({
         if (!lastPyramidData?.nodes?.length) {
           if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '';
         }
+        // Restore magnifier label + circle fill (hidden so clones travel in their place)
+        if (view.magnifierLabel) view.magnifierLabel.style.visibility = '';
+        if (view.magnifierCircle) view.magnifierCircle.style.fill = '';
+        // Restore parent button label + circle fill
+        if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = '';
+        if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
       }
     });
 
@@ -744,6 +786,34 @@ export function createApp({
       });
     }
 
+    // Old magnifier → parent-button position (straight line)
+    animateMagnifierToParent({
+      svgRoot: view.blurGroup || view.svgRoot,
+      fromX: magnifier.x,
+      fromY: magnifier.y,
+      toX: parentButtonX,
+      toY: parentButtonY,
+      radius: magnifierRadius,
+      label: prevMagnifierLabel,
+      fromAngle: magnifier.angle
+    });
+
+    // Old parent button → radially outward off-screen (leads the way)
+    if (prevParentLabel) {
+      animateParentButtonOutward({
+        svgRoot: view.blurGroup || view.svgRoot,
+        buttonX: parentButtonX,
+        buttonY: parentButtonY,
+        radius: magnifierRadius,
+        label: prevParentLabel,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        arcRadius: arcParams.radius,
+        buttonElement: view.parentButtonOuter,
+        buttonLabelElement: view.parentButtonOuterLabel
+      });
+    }
+
     // 5. Detail Sector: expand simultaneously if the incoming selected item is a leaf.
     //    By triggering here (not waiting for onComplete), both animations run in parallel.
     //    No onComplete render — setPrimaryItems (in the migration onComplete) will
@@ -751,7 +821,9 @@ export function createApp({
     const incomingIsLeaf = leafLevel && tempSelected?.level === leafLevel;
     if (incomingIsLeaf && !detailSectorShown && !volumeLogo.animating) {
       detailSectorShown = true;
-      volumeLogo.expand(arcParams, magnifier.angle);
+      volumeLogo.expand(arcParams, magnifier.angle, () => {
+        emitDetailSectorChange(true, 'after-animation');
+      });
     }
   };
 
@@ -801,8 +873,25 @@ export function createApp({
     //    trigger the authoritative render once nav state has been committed.
     if (detailSectorShown && !volumeLogo.animating) {
       detailSectorShown = false;
+      emitDetailSectorChange(false, 'immediate');
       volumeLogo.collapse(arcParams, magnifier.angle);
     }
+
+    // Snapshot magnifier and parent-button state BEFORE animations start.
+    const prevMagnifierLabel = formatLabel({ item: nav.getCurrent(), context: 'magnifier' }) || '';
+    const prevParentLabel = getParentLabel(nav.getCurrent()) || '';
+    const parentButtonX = vp.SSd * 0.13;
+    const parentButtonY = vp.LSd * 0.93;
+    // The new parent label (after OUT) is the parent of tempSelected
+    const newParentLabel = tempSelected ? (getParentLabel(tempSelected) || '') : '';
+
+    // Hide magnifier and parent button fills — clone circles travel in their place.
+    // Stroke rings stay visible (empty) during the animation.
+    // Use style.visibility (not display attr) because render() would undo it.
+    if (view.magnifierLabel) view.magnifierLabel.style.visibility = 'hidden';
+    if (view.magnifierCircle) view.magnifierCircle.style.fill = 'none';
+    if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = 'hidden';
+    if (view.parentButtonOuter) view.parentButtonOuter.style.fill = 'none';
 
     // Child Pyramid: animate existing nodes to the hub (off-screen) simultaneously
     // with the reverse migration animation, instead of letting them pop off.
@@ -849,8 +938,43 @@ export function createApp({
           if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
           if (view.labelsGroup) view.labelsGroup.style.opacity = '';
         }
+        // Restore magnifier + parent button fills and labels
+        if (view.magnifierLabel) view.magnifierLabel.style.visibility = '';
+        if (view.magnifierCircle) view.magnifierCircle.style.fill = '';
+        if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = '';
+        if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
       }
     });
+
+    // Parent button → magnifier position (straight line, reverse of IN)
+    if (prevParentLabel) {
+      animateParentToMagnifier({
+        svgRoot: view.blurGroup || view.svgRoot,
+        fromX: magnifier.x,
+        fromY: magnifier.y,
+        toX: parentButtonX,
+        toY: parentButtonY,
+        radius: magnifierRadius,
+        label: prevParentLabel,
+        fromAngle: magnifier.angle
+      });
+    }
+
+    // New parent button: fly in from off-screen radially
+    if (newParentLabel) {
+      animateParentButtonInward({
+        svgRoot: view.blurGroup || view.svgRoot,
+        buttonX: parentButtonX,
+        buttonY: parentButtonY,
+        radius: magnifierRadius,
+        label: newParentLabel,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        arcRadius: arcParams.radius,
+        buttonElement: view.parentButtonOuter,
+        buttonLabelElement: view.parentButtonOuterLabel
+      });
+    }
   };
 
   const shiftLayersOut = () => {
@@ -962,11 +1086,16 @@ export function createApp({
 
     // Detail Sector leaf detection — expand/collapse based on selected item level
     const isLeaf = leafLevel && selected?.level === leafLevel;
+    console.log('[render] leaf detection: leafLevel:', leafLevel, 'selected.level:', selected?.level, 'isLeaf:', isLeaf, 'detailSectorShown:', detailSectorShown, 'animating:', volumeLogo?.animating);
     if (isLeaf && !detailSectorShown && !volumeLogo.animating) {
       detailSectorShown = true;
-      volumeLogo.expand(arcParams, magnifier.angle, () => render(rotation));
+      volumeLogo.expand(arcParams, magnifier.angle, () => {
+        emitDetailSectorChange(true, 'after-animation');
+        render(rotation);
+      });
     } else if (!isLeaf && detailSectorShown && !volumeLogo.animating) {
       detailSectorShown = false;
+      emitDetailSectorChange(false, 'immediate');
       volumeLogo.collapse(arcParams, magnifier.angle, () => render(rotation));
     }
 

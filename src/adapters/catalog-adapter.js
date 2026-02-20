@@ -244,15 +244,18 @@ export function detailFor(selected, manifest) {
       model = arr.find(m => (m.engine_model || '').toString() === modelKey);
       if (model) break;
     }
+    console.log('[detailFor] mfr:', manufacturerId, 'cyl:', cylinderKey, 'modelKey:', modelKey, 'found:', !!found, 'model:', model ? model.engine_model : 'NOT FOUND', 'hasData:', !!model?.data, 'hasDesc:', !!model?.data?.description);
     if (!model) model = {};
     const introduced = model.year_introduced ? `Introduced ${model.year_introduced}` : null;
     const discontinued = model.year_discontinued ? `Discontinued ${model.year_discontinued}` : null;
     const body = [introduced, discontinued, cylinderKey ? `${cylinderKey} cylinder` : null].filter(Boolean).join(' · ');
+    const description = model.data?.description || null;
     return {
       type: 'card',
       title: model.engine_model || modelKey || name,
       body: body || 'Model details',
-      image: model.image || null
+      image: model.image || null,
+      description
     };
   }
 

@@ -16,10 +16,13 @@
   <link rel="icon" href="data:," />
 </head>
 <body>
-  <div id="version-badge" class="version-badge" aria-label="Application version"></div>
+  <div id="copyright-notice" class="copyright-notice" aria-label="Copyright">
+    © 2026 Meccanismi Marittimi delle Marche. Tutti i diritti riservati.
+  </div>
   <svg id="app" aria-label="Wheel v3"></svg>
   <div id="detail-panel" class="detail-panel" aria-label="Detail panel">
     <div id="detail-content" class="detail-content"></div>
+    <div id="version-badge" class="detail-version" aria-label="Application version"></div>
   </div>
   <script type="module">
     import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookCousinChain, validateVolumeRoot } from './src/index.js';
@@ -36,6 +39,18 @@
 
     const svg = document.getElementById('app');
     const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
+
+    // Detect iframe zoom-out (e.g. GoDaddy "Forward with Masking" on mobile).
+    // Mobile browsers ignore the iframe's viewport meta tag, defaulting to a
+    // ~980 px layout viewport which is then scaled down to fit the screen.
+    // CSS clamp floors (in px) resolve pre-zoom, so fonts appear tiny.
+    // Multiply clamp min/max by this factor to compensate.
+    const _physSSd = Math.min(screen.width, screen.height);
+    const _cssSSd  = Math.min(window.innerWidth, window.innerHeight);
+    if (_physSSd > 0 && _cssSSd > _physSSd * 1.2) {
+      document.documentElement.style.setProperty(
+        '--iframe-scale', (_cssSSd / _physSSd).toFixed(3));
+    }
     const adapterRegistry = createAdapterRegistry();
     adapterRegistry.register('catalog', () => ({ ...catalogAdapter, volumeId: 'catalog' }));
     adapterRegistry.register('bible', () => ({ ...bibleAdapter, volumeId: 'bible' }));
@@ -215,6 +230,23 @@
     const detailPanel = document.getElementById('detail-panel');
     const detailContent = document.getElementById('detail-content');
 
+    // Toggle detail panel visibility in sync with the Detail Sector animation.
+    // The panel fades in after the blue circle has finished expanding,
+    // and hides immediately when the circle begins collapsing.
+    window.addEventListener('detail-sector-change', (e) => {
+      if (!detailPanel) return;
+      const { visible, when } = e.detail || {};
+      console.log('[detail-sector-change] visible:', visible, 'when:', when, 'panel classes before:', detailPanel.className);
+      if (visible) {
+        // Show after expand animation completes
+        detailPanel.classList.add('detail-panel--visible');
+      } else {
+        // Hide immediately when collapsing
+        detailPanel.classList.remove('detail-panel--visible');
+      }
+      console.log('[detail-sector-change] panel classes after:', detailPanel.className);
+    });
+
     function renderDetail(selected, adapterInstance, manifest, adapterNormalized) {
       if (!detailPanel || !detailContent) return;
       while (detailContent.firstChild) detailContent.removeChild(detailContent.firstChild);
@@ -222,12 +254,17 @@
       const payload = adapterInstance?.detailFor
         ? adapterInstance.detailFor(selected, manifest, { normalized: adapterNormalized })
         : { type: 'text', text: selected.name || selected.id || '' };
+      console.log('[renderDetail] selected:', selected?.id, 'level:', selected?.level, 'payload:', JSON.stringify(payload));
       if (!payload) return;
       const plugin = detailRegistry.getPlugin(payload);
+      console.log('[renderDetail] plugin:', plugin?.getMetadata?.()?.name, 'has description:', !!payload?.description);
       if (!plugin) return;
       const bounds = detailPanel.getBoundingClientRect();
       const node = plugin.render(payload, { width: bounds.width, height: bounds.height }, { createElement: tag => document.createElement(tag) });
-      if (node) detailContent.appendChild(node);
+      if (node) {
+        detailContent.appendChild(node);
+        console.log('[renderDetail] appended node, childCount:', detailContent.childNodes.length, 'innerHTML length:', detailContent.innerHTML.length);
+      }
     }
 
     function makeBibleLabelFormatter({ level, locale, namesMap }) {

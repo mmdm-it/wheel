@@ -1,10 +1,13 @@
 #!/bin/bash
 
 # Sync wheel (v3) to catalog, bible, calendar, and places deployments
+# Catalog deploys to mmdm.it root (public_html/mmdm/)
+# Other volumes deploy to wheel-v3 subdirectories
 # Usage: ./sync-to-server.sh [catalog|bible|calendar|places|both|all]
 
 SERVER="namecheap"
 REMOTE_BASE="~/public_html/mmdm/wheel-v3"
+REMOTE_CATALOG="~/public_html/mmdm"
 LOCAL_PATH="$(pwd)/"
 
 # Color codes
@@ -17,7 +20,17 @@ NC='\033[0m' # No Color
 # Function to sync to a specific deployment
 sync_deployment() {
     local deployment=$1
-    local remote_path="${REMOTE_BASE}/${deployment}/"
+    local remote_path
+    local url
+    
+    # Catalog deploys to mmdm.it root, others to wheel-v3 subdirectories
+    if [ "$deployment" = "catalog" ]; then
+        remote_path="${REMOTE_CATALOG}/"
+        url="https://mmdm.it/"
+    else
+        remote_path="${REMOTE_BASE}/${deployment}/"
+        url="https://howellgibbens.com/mmdm/wheel-v3/${deployment}/"
+    fi
     
     echo -e "${BLUE}🚀 Syncing to ${deployment} deployment...${NC}"
     echo "   Local:  $LOCAL_PATH"
@@ -41,7 +54,7 @@ sync_deployment() {
     
     if [ $? -eq 0 ]; then
         echo -e "${GREEN}✅ ${deployment} sync complete!${NC}"
-        echo -e "   URL: https://howellgibbens.com/mmdm/wheel-v3/${deployment}/"
+        echo -e "   URL: $url"
         return 0
     else
         echo -e "${RED}❌ ${deployment} sync failed!${NC}"
@@ -117,8 +130,8 @@ echo -e "${GREEN}✨ Deployment complete!${NC}"
 echo "════════════════════════════════════════════════════"
 echo ""
 echo "URLs:"
-echo "  📚 Bible:   https://howellgibbens.com/mmdm/wheel-v3/bible/"
-echo "  ⚙️  Catalog: https://howellgibbens.com/mmdm/wheel-v3/catalog/"
+echo "  ⚙️  Catalog: https://mmdm.it/"
+echo "  📚 Bible:    https://howellgibbens.com/mmdm/wheel-v3/bible/"
 echo "  📅 Calendar: https://howellgibbens.com/mmdm/wheel-v3/calendar/"
 echo "  🧭 Places:   https://howellgibbens.com/mmdm/wheel-v3/places/"
 echo ""

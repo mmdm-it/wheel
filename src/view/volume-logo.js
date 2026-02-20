@@ -32,6 +32,7 @@ export class VolumeLogo {
     this.group = null;
     this.circle = null;
     this.logo = null;
+    this.clickTarget = null;    // transparent mailto overlay (on top of SVG)
     this._animationId = null;   // rAF handle for cancellation
     this._expanded = false;     // current state
     this._animating = false;    // animation in progress
@@ -151,6 +152,24 @@ export class VolumeLogo {
     } else {
       this.svgRoot.appendChild(this.group);
     }
+
+    // Create transparent click-target overlay (appended LAST so it's on top)
+    const contactEmail = config.contact_email;
+    if (contactEmail) {
+      const link = document.createElementNS(SVG_NS, 'a');
+      const mailto = 'mailto:' + contactEmail;
+      link.setAttributeNS(XLINK_NS, 'href', mailto);
+      link.setAttribute('href', mailto);
+      this.clickTarget = document.createElementNS(SVG_NS, 'circle');
+      this.clickTarget.setAttribute('cx', centerX);
+      this.clickTarget.setAttribute('cy', centerY);
+      this.clickTarget.setAttribute('r', radius);
+      this.clickTarget.setAttribute('fill', 'transparent');
+      this.clickTarget.setAttribute('cursor', 'pointer');
+      this.clickTarget.style.pointerEvents = 'all';
+      link.appendChild(this.clickTarget);
+      this.svgRoot.appendChild(link);
+    }
   }
 
   /**
@@ -253,6 +272,7 @@ export class VolumeLogo {
       this._animationId = null;
     }
     this._animating = true;
+    if (this.clickTarget) this.clickTarget.parentNode.setAttribute('display', 'none');
     const start = this._getStartState();
     const end = this._getEndState(arcParams, magnifierAngle);
     // Apply detail_sector color if configured
@@ -318,6 +338,7 @@ export class VolumeLogo {
         this._animationId = null;
         this._animating = false;
         this._expanded = false;
+        if (this.clickTarget) this.clickTarget.parentNode.removeAttribute('display');
         if (onComplete) onComplete();
       }
     };
@@ -373,6 +394,10 @@ export class VolumeLogo {
       this.group = null;
       this.circle = null;
       this.logo = null;
+    }
+    if (this.clickTarget) {
+      this.clickTarget.parentNode.remove();
+      this.clickTarget = null;
     }
   }
 }

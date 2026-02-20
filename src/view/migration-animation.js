@@ -20,9 +20,9 @@
  */
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
-const ANIM_DURATION = 600; // ms — matches v0
+const ANIM_DURATION = 1200; // ms — temporarily slowed from 600 for design/test
 const ANIM_DELAY   = 10;  // ms — force reflow gap
-const RING_RADIAL_DURATION = 900; // ms — ring outward/inward (intentionally leisurely)
+const RING_RADIAL_DURATION = 1200; // ms — temporarily slowed from 900 for design/test
 
 /**
  * LIFO stack of animation layers.
@@ -56,6 +56,7 @@ export function isAnimating() {
  * @param {number}      opts.magnifierAngle — magnifier angle (radians) so we can size the clicked node
  * @param {string|null} opts.clickedId     — id of the clicked pyramid node (will get magnifier radius)
  * @param {number}      opts.nodeRadius    — default focus-ring node radius
+ * @param {number}      [opts.magnifierRadius] — magnifier circle radius (clicked node grows to this)
  * @param {Function}    opts.onComplete    — called after animation finishes
  */
 export function animateIn(opts) {
@@ -66,6 +67,7 @@ export function animateIn(opts) {
     magnifierAngle,
     clickedId,
     nodeRadius = 10,
+    magnifierRadius,
     onComplete
   } = opts;
 
@@ -126,9 +128,10 @@ export function animateIn(opts) {
     while (rotDelta > 180) rotDelta -= 360;
     while (rotDelta < -180) rotDelta += 360;
 
-    // Target radius — magnifier node is larger in v0 but in v3 all focus nodes
-    // share the same radius, so we just use nodeRadius.
-    const endRadius = nodeRadius;
+    // Target radius — the clicked node (becoming the magnifier) grows to
+    // magnifierRadius; all other sibling nodes use the default nodeRadius.
+    const isClickedNode = clickedId && id === clickedId;
+    const endRadius = (isClickedNode && magnifierRadius) ? magnifierRadius : nodeRadius;
 
     // Set initial transform (identity)
     g.style.transformOrigin = `${pn.x}px ${pn.y}px`;
@@ -182,8 +185,27 @@ export function animateIn(opts) {
 
     // After animation ends: hide clones, signal complete
     setTimeout(() => {
-      // Hide but keep in DOM for OUT reuse
-      animEntries.forEach(a => { a.g.style.opacity = '0'; });
+      // Don't hide clones yet if an outward ring animation is still running —
+      // it won't restore nodesGroup/labelsGroup until RING_RADIAL_DURATION
+      // (900 ms), so hiding our clones at 600 ms would leave a ~300 ms gap
+      // with nothing visible.  Instead, defer hiding until the overlay from
+      // animateRingOutward is removed (which restores real node opacity).
+      const outwardOverlay = svgRoot.querySelector('.migration-animation-overlay.ring-outward');
+      if (outwardOverlay) {
+        // An outward animation is still in flight.  Use a MutationObserver
+        // to hide our clones the instant the outward overlay is removed
+        // (i.e. real nodes are restored).
+        const observer = new MutationObserver(() => {
+          if (!svgRoot.contains(outwardOverlay)) {
+            observer.disconnect();
+            animEntries.forEach(a => { a.g.style.opacity = '0'; });
+          }
+        });
+        observer.observe(svgRoot, { childList: true });
+      } else {
+        // No outward animation running — safe to hide immediately
+        animEntries.forEach(a => { a.g.style.opacity = '0'; });
+      }
       _animating = false;
       if (onComplete) onComplete();
     }, ANIM_DURATION);
@@ -613,6 +635,13 @@ export function animateRingInward(opts) {
   const vpW = viewportWidth  || arcRadius * 2; // fallback if not provided
   const vpH = viewportHeight || arcRadius * 2;
 
+  // ── First pass: build clones and compute per-node radial info ──────
+  // We need the per-node edge distances so we can pick the MAXIMUM as
+  // a single uniform translate distance.  All nodes must stay equidistant
+  // from the HUB at every moment — the rectangular viewport naturally
+  // causes staggered entry/exit.
+  const nodeInfos = [];
+
   ringNodes.forEach(node => {
     const g = document.createElementNS(SVG_NS, 'g');
     g.setAttribute('class', 'migration-node');
@@ -650,23 +679,18 @@ export function animateRingInward(opts) {
 
     overlay.appendChild(g);
 
-    // ── Compute per-node start offset ────────────────────────────────
     // Unit vector from hub toward node (radial outward direction)
     const dx = node.x - hubX;
     const dy = node.y - hubY;
     const len = Math.sqrt(dx * dx + dy * dy) || 1;
-    const ux = dx / len;            // unit radial X
-    const uy = dy / len;            // unit radial Y
+    const ux = dx / len;
+    const uy = dy / len;
 
-    // Walk outward along the ray from the node position until the node
-    // center is just past the viewport edge.  We need the smallest
-    // positive t such that (node.x + ux*t, node.y + uy*t) is outside
-    // the rectangle [0, vpW] × [0, vpH], plus a margin for the node
-    // radius so the entire circle (not just its center) starts off-screen.
-    const margin = node.radius * 1.5; // comfortable clearance
+    // Smallest positive t to push this node just past its nearest
+    // viewport edge along its radial ray (with margin for full circle).
+    const margin = node.radius * 1.5;
     let tMin = Infinity;
 
-    // Check each viewport edge (solve for t where coordinate == edge ± margin)
     if (ux > 0) {                                      // exits right
       const t = (vpW + margin - node.x) / ux;
       if (t > 0 && t < tMin) tMin = t;
@@ -682,17 +706,26 @@ export function animateRingInward(opts) {
       if (t > 0 && t < tMin) tMin = t;
     }
 
-    // Fallback: if no edge was reached (shouldn't happen), use arcRadius
     if (!isFinite(tMin)) tMin = arcRadius;
 
-    const offsetX = ux * tMin;
-    const offsetY = uy * tMin;
+    nodeInfos.push({ g, ux, uy, tMin, node });
+  });
 
-    // Start just outside viewport, animate to identity (ring position)
-    g.style.transformOrigin = `${node.x}px ${node.y}px`;
-    g.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+  // ── Uniform translate distance ─────────────────────────────────────
+  // Use the maximum per-node edge distance so ALL nodes start off-screen,
+  // while every node remains equidistant from the HUB at every frame.
+  // Nodes closer to their nearest edge will enter the viewport sooner —
+  // the rectangular viewport creates natural staggered entry.
+  const uniformT = nodeInfos.reduce((max, info) => Math.max(max, info.tMin), 0);
 
-    entries.push({ g, offsetX, offsetY });
+  nodeInfos.forEach(info => {
+    const offsetX = info.ux * uniformT;
+    const offsetY = info.uy * uniformT;
+
+    info.g.style.transformOrigin = `${info.node.x}px ${info.node.y}px`;
+    info.g.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+
+    entries.push({ g: info.g });
   });
 
   // Force reflow so browser registers the initial off-screen transform
@@ -712,6 +745,355 @@ export function animateRingInward(opts) {
       // Restore real nodes now that clones have settled into position
       if (nodesGroup)  nodesGroup.style.opacity = '';
       if (labelsGroup) labelsGroup.style.opacity = '';
+      if (onComplete) onComplete();
+    }, ANIM_DURATION);
+  }, ANIM_DELAY);
+}
+
+/**
+ * Animate the current magnifier circle + label in a straight line from
+ * the magnifier position to the parent-button position.  Used during IN
+ * migration.  The label transitions from centered (text-anchor: middle)
+ * at magnifier to offset left (text-anchor: start) at parent button,
+ * and its rotation adjusts from the arc-derived angle to horizontal (0°).
+ *
+ * The actual magnifier and parent-button SVG elements should be hidden
+ * (empty stroke rings) by the caller; this function animates a clone.
+ *
+ * @param {Object}   opts
+ * @param {SVGElement} opts.svgRoot       — container for clone overlay
+ * @param {number}     opts.fromX         — magnifier center X
+ * @param {number}     opts.fromY         — magnifier center Y
+ * @param {number}     opts.toX           — parent-button center X
+ * @param {number}     opts.toY           — parent-button center Y
+ * @param {number}     opts.radius        — circle radius (same for both)
+ * @param {string}     opts.label         — text label for the circle
+ * @param {number}     opts.fromAngle     — magnifier angle (radians)
+ * @param {Function}  [opts.onComplete]   — called when animation finishes
+ */
+export function animateMagnifierToParent(opts) {
+  const {
+    svgRoot,
+    fromX, fromY,
+    toX, toY,
+    radius,
+    label = '',
+    fromAngle = 0,
+    onComplete
+  } = opts;
+
+  if (!svgRoot) { if (onComplete) onComplete(); return; }
+
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay magnifier-to-parent');
+  svgRoot.appendChild(overlay);
+
+  const g = document.createElementNS(SVG_NS, 'g');
+  g.setAttribute('class', 'migration-node');
+
+  // Circle at magnifier position
+  const circle = document.createElementNS(SVG_NS, 'circle');
+  circle.setAttribute('cx', fromX);
+  circle.setAttribute('cy', fromY);
+  circle.setAttribute('r', radius);
+  circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  g.appendChild(circle);
+
+  // Label centered at magnifier (text-anchor: middle)
+  const text = document.createElementNS(SVG_NS, 'text');
+  text.setAttribute('x', fromX);
+  text.setAttribute('y', fromY);
+  text.setAttribute('text-anchor', 'middle');
+  text.setAttribute('dominant-baseline', 'middle');
+  text.setAttribute('class', 'focus-ring-magnifier-label');
+  const fromRotDeg = (fromAngle * 180) / Math.PI + 180;
+  text.setAttribute('transform', `rotate(${fromRotDeg}, ${fromX}, ${fromY})`);
+  text.textContent = label;
+  g.appendChild(text);
+
+  overlay.appendChild(g);
+
+  // Translation vector
+  const translateX = toX - fromX;
+  const translateY = toY - fromY;
+
+  // At the parent-button end, the label is offset left by radius × -1.7
+  // and uses text-anchor: start, with no rotation.
+  // We animate via transform on the <g>, and use a separate transition
+  // on the <text> for the positional shift.
+
+  g.style.transformOrigin = `${fromX}px ${fromY}px`;
+  g.style.transform = 'translate(0px, 0px)';
+
+  // Force reflow
+  overlay.getBoundingClientRect();
+
+  setTimeout(() => {
+    g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
+    g.style.transform = `translate(${translateX}px, ${translateY}px)`;
+
+    // Animate label: shift from centered to offset-left of the parent button.
+    // The offset is radius × -1.7 from center, and text-anchor switches to start.
+    // Rotation goes from fromRotDeg (≈322°) to 360° (≡0°) — the +38° CW short path.
+    // Using 0° instead of 360° would make CSS interpolate 322→0 (−322° the long way).
+    const parentLabelX = toX + radius * -1.7;
+    text.style.transition = `all ${ANIM_DURATION}ms ease-in-out`;
+    text.setAttribute('x', fromX + radius * -1.7);
+    text.setAttribute('text-anchor', 'start');
+    text.setAttribute('transform', `rotate(360, ${fromX + radius * -1.7}, ${fromY})`);
+
+    setTimeout(() => {
+      overlay.remove();
+      if (onComplete) onComplete();
+    }, ANIM_DURATION);
+  }, ANIM_DELAY);
+}
+
+/**
+ * Reverse of animateMagnifierToParent: animate from parent-button position
+ * back to magnifier position.  Used during OUT migration.
+ *
+ * @param {Object}   opts — same shape as animateMagnifierToParent
+ */
+export function animateParentToMagnifier(opts) {
+  const {
+    svgRoot,
+    fromX, fromY,   // magnifier position (destination)
+    toX, toY,       // parent-button position (start)
+    radius,
+    label = '',
+    fromAngle = 0,  // magnifier angle (destination angle)
+    onComplete
+  } = opts;
+
+  if (!svgRoot) { if (onComplete) onComplete(); return; }
+
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay parent-to-magnifier');
+  svgRoot.appendChild(overlay);
+
+  const g = document.createElementNS(SVG_NS, 'g');
+  g.setAttribute('class', 'migration-node');
+
+  // Circle starting at parent-button position
+  const circle = document.createElementNS(SVG_NS, 'circle');
+  circle.setAttribute('cx', toX);
+  circle.setAttribute('cy', toY);
+  circle.setAttribute('r', radius);
+  circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  g.appendChild(circle);
+
+  // Label starting offset-left of the parent button (text-anchor: start).
+  // Use 360° (≡0°) so CSS interpolates 360→dstRotDeg (≈322°) = −38° CW short path
+  // instead of 0→322 = +322° the long way.
+  const text = document.createElementNS(SVG_NS, 'text');
+  const parentLabelX = toX + radius * -1.7;
+  text.setAttribute('x', parentLabelX);
+  text.setAttribute('y', toY);
+  text.setAttribute('text-anchor', 'start');
+  text.setAttribute('dominant-baseline', 'middle');
+  text.setAttribute('class', 'focus-ring-magnifier-label');
+  text.setAttribute('transform', `rotate(360, ${parentLabelX}, ${toY})`);
+  text.textContent = label;
+  g.appendChild(text);
+
+  overlay.appendChild(g);
+
+  // Translation: parent button → magnifier
+  const translateX = fromX - toX;
+  const translateY = fromY - toY;
+
+  g.style.transformOrigin = `${toX}px ${toY}px`;
+  g.style.transform = 'translate(0px, 0px)';
+
+  overlay.getBoundingClientRect();
+
+  setTimeout(() => {
+    g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
+    g.style.transform = `translate(${translateX}px, ${translateY}px)`;
+
+    // Animate label: shift from offset-left back to centered at magnifier.
+    // After the <g> translates, the text base is at toX + translateX = fromX.
+    // We need the text centered at fromX, so set x back to toX (which becomes
+    // fromX after translation) and switch to middle anchor with arc rotation.
+    const dstRotDeg = (fromAngle * 180) / Math.PI + 180;
+    text.style.transition = `all ${ANIM_DURATION}ms ease-in-out`;
+    text.setAttribute('x', toX);  // + translateX via <g> = fromX
+    text.setAttribute('text-anchor', 'middle');
+    text.setAttribute('transform', `rotate(${dstRotDeg}, ${toX}, ${toY})`);
+
+    setTimeout(() => {
+      overlay.remove();
+      if (onComplete) onComplete();
+    }, ANIM_DURATION);
+  }, ANIM_DELAY);
+}
+
+/**
+ * Animate the old parent-button circle + label radially outward from the HUB
+ * (same direction as Focus Ring nodes) until it exits the viewport.
+ * Used during IN migration.  The parent button should "lead the way" —
+ * be the first node to leave the frame.
+ *
+ * @param {Object}   opts
+ * @param {SVGElement} opts.svgRoot        — container for clone overlay
+ * @param {number}     opts.buttonX        — parent-button center X
+ * @param {number}     opts.buttonY        — parent-button center Y
+ * @param {number}     opts.radius         — parent-button circle radius
+ * @param {string}     opts.label          — parent-button text label
+ * @param {number}     opts.hubX           — arc hub X
+ * @param {number}     opts.hubY           — arc hub Y
+ * @param {number}     opts.arcRadius      — arc radius (used as translate distance)
+ * @param {SVGElement} [opts.buttonElement]      — real parent button circle to hide
+ * @param {SVGElement} [opts.buttonLabelElement] — real parent button label to hide
+ * @param {Function}  [opts.onComplete]    — called when animation finishes
+ */
+export function animateParentButtonOutward(opts) {
+  const {
+    svgRoot,
+    buttonX, buttonY,
+    radius,
+    label = '',
+    hubX, hubY,
+    arcRadius,
+    buttonElement,
+    buttonLabelElement,
+    onComplete
+  } = opts;
+
+  if (!svgRoot) { if (onComplete) onComplete(); return; }
+
+  // Real parent button fill + label are already hidden by the caller;
+  // the stroke ring stays visible (empty) during the animation.
+
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay parent-button-outward');
+  svgRoot.appendChild(overlay);
+
+  const g = document.createElementNS(SVG_NS, 'g');
+  g.setAttribute('class', 'migration-node');
+
+  const circle = document.createElementNS(SVG_NS, 'circle');
+  circle.setAttribute('cx', buttonX);
+  circle.setAttribute('cy', buttonY);
+  circle.setAttribute('r', radius);
+  circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  g.appendChild(circle);
+
+  const text = document.createElementNS(SVG_NS, 'text');
+  const labelX = buttonX + radius * -1.7;
+  text.setAttribute('x', labelX);
+  text.setAttribute('y', buttonY);
+  text.setAttribute('text-anchor', 'start');
+  text.setAttribute('dominant-baseline', 'middle');
+  text.setAttribute('class', 'focus-ring-magnifier-label');
+  text.textContent = label;
+  g.appendChild(text);
+
+  overlay.appendChild(g);
+
+  // Radial direction from hub through the parent button
+  const dx = buttonX - hubX;
+  const dy = buttonY - hubY;
+  const len = Math.sqrt(dx * dx + dy * dy) || 1;
+  const ux = dx / len;
+  const uy = dy / len;
+
+  // Translate by arcRadius (same uniform distance as ring outward)
+  const translateX = ux * arcRadius;
+  const translateY = uy * arcRadius;
+
+  g.style.transformOrigin = `${buttonX}px ${buttonY}px`;
+  g.style.transform = 'translate(0px, 0px)';
+
+  overlay.getBoundingClientRect();
+
+  setTimeout(() => {
+    g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
+    g.style.transform = `translate(${translateX}px, ${translateY}px)`;
+
+    setTimeout(() => {
+      overlay.remove();
+      // Real parent button will be restored by the render after setPrimaryItems
+      if (onComplete) onComplete();
+    }, ANIM_DURATION);
+  }, ANIM_DELAY);
+}
+
+/**
+ * Reverse of animateParentButtonOutward: animate the parent-button clone
+ * inward from off-screen along a radial ray from the HUB to the parent
+ * button position.  Used during OUT migration.
+ *
+ * @param {Object}   opts — same params as animateParentButtonOutward
+ */
+export function animateParentButtonInward(opts) {
+  const {
+    svgRoot,
+    buttonX, buttonY,
+    radius,
+    label = '',
+    hubX, hubY,
+    arcRadius,
+    buttonElement,
+    buttonLabelElement,
+    onComplete
+  } = opts;
+
+  if (!svgRoot) { if (onComplete) onComplete(); return; }
+
+  // Real parent button fill + label are already hidden by the caller;
+  // the stroke ring stays visible (empty) during the animation.
+
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay parent-button-inward');
+  svgRoot.appendChild(overlay);
+
+  const g = document.createElementNS(SVG_NS, 'g');
+  g.setAttribute('class', 'migration-node');
+
+  const circle = document.createElementNS(SVG_NS, 'circle');
+  circle.setAttribute('cx', buttonX);
+  circle.setAttribute('cy', buttonY);
+  circle.setAttribute('r', radius);
+  circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  g.appendChild(circle);
+
+  const text = document.createElementNS(SVG_NS, 'text');
+  const labelX = buttonX + radius * -1.7;
+  text.setAttribute('x', labelX);
+  text.setAttribute('y', buttonY);
+  text.setAttribute('text-anchor', 'start');
+  text.setAttribute('dominant-baseline', 'middle');
+  text.setAttribute('class', 'focus-ring-magnifier-label');
+  text.textContent = label;
+  g.appendChild(text);
+
+  overlay.appendChild(g);
+
+  // Radial direction from hub through the parent button
+  const dx = buttonX - hubX;
+  const dy = buttonY - hubY;
+  const len = Math.sqrt(dx * dx + dy * dy) || 1;
+  const ux = dx / len;
+  const uy = dy / len;
+
+  // Start at arcRadius away along radial ray (off-screen)
+  const startOffsetX = ux * arcRadius;
+  const startOffsetY = uy * arcRadius;
+
+  g.style.transformOrigin = `${buttonX}px ${buttonY}px`;
+  g.style.transform = `translate(${startOffsetX}px, ${startOffsetY}px)`;
+
+  overlay.getBoundingClientRect();
+
+  setTimeout(() => {
+    g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
+    g.style.transform = 'translate(0px, 0px)';
+
+    setTimeout(() => {
+      overlay.remove();
+      // Real parent button fill + label will be restored by the caller.
       if (onComplete) onComplete();
     }, ANIM_DURATION);
   }, ANIM_DELAY);

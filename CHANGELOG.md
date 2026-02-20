@@ -1,16 +1,61 @@
 # Changelog
 
+## 3.8.31 — Copyright notice & version badge relocation
+- Added copyright notice bar across top of screen:
+  "© 2026 Meccanismi Marittimi delle Marche. Tutti i diritti riservati."
+  White text on dark semi-transparent strip, iframe-scale-aware.
+- Version badge ("WHEEL V3.8.31") moved from top-right overlay into the
+  Detail Sector panel as a subtle footer line, visible when the detail
+  panel expands on leaf-level items.
+
+## 3.8.30 — Iframe font-size compensation (mmdm.it)
+- GoDaddy "Forward with Masking" wraps the app in an iframe without a viewport
+  meta tag, causing mobile browsers to default to a ~980 px layout viewport and
+  zoom out.  CSS `clamp()` floors (in px) resolve pre-zoom, so fonts appeared
+  much smaller than intended while SVG geometry (proportional to SSd) was fine.
+- Added iframe-zoom detection in `index.html`: compares `screen` dimensions to
+  `window.innerWidth/Height`; when the CSS viewport is >20 % wider than the
+  physical screen, sets `--iframe-scale` CSS custom property.
+- All `vmin`-based font-size `clamp()` rules now multiply their min/max bounds
+  by `var(--iframe-scale, 1)`, so the clamp floors survive the browser zoom.
+- Version badge `12px` likewise scales by `--iframe-scale`.
+- No effect on non-iframe or desktop browsing (`--iframe-scale` defaults to 1).
+
 ## [Unreleased]
 ### Added
 - Spiral Child Pyramid node layout: nodes are now placed equidistantly along an Archimedean spiral using true arc-length spacing. This provides visually uniform node distribution for all child counts.
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.8.29] - 2026-02-17
+
+### Fixed
+- Magnifier and Parent Button labels now reliably hidden during migration animation — switched from `display` attribute (which `render()` clobbers via `removeAttribute('display')`) to `style.visibility: hidden` which render never touches
+- Circle fills use `style.fill: none` to keep stroke rings visible while hiding the gold fill during animation
+
+
+## [3.8.28] - 2026-02-17
+
+### Added
+- **Magnifier ↔ Parent Button migration animation**: during IN migration, the old magnifier circle+label travels in a straight line to the parent-button position (label transitions from centered to offset-left); during OUT, the parent button travels back up to the magnifier position (label transitions offset-left to centered)
+- **Parent Button radial exit/entry**: during IN, the old parent button exits radially outward from the HUB (same direction as Focus Ring nodes); during OUT, the new parent button flies in from off-screen along its radial ray
+- **Clicked node → magnifier growth**: the clicked Child Pyramid node now grows from pyramid node radius to magnifier radius during its IN animation to the Focus Ring
+- Magnifier and Parent Button stroke rings remain visible (empty) during animation, matching the Focus Ring band pattern
+- All animation durations temporarily set to 1200 ms for design/test
+
+
+## [3.8.27] - 2026-02-17
+
+### Fixed
+- Eliminated ~300 ms flicker at end of IN migration where Focus Ring nodes briefly disappeared: `animateIn` clones (600 ms) were hidden before `animateRingOutward` (900 ms) restored the real nodes — clones now stay visible until the outward overlay is removed and real nodes are restored
+
+
 ## [3.8.26] - 2026-02-18
 
 ### Fixed
-- Ring inward animation (OUT migration) now starts each node just outside its nearest viewport edge instead of a uniform `arcRadius` away — per-node ray-viewport intersection calculates the minimum distance to place each node off-screen, so the first pixel of every node enters the frame at t≈0, synchronized with the visible Ring→Pyramid and Pyramid→Hub contracting motion
-- Restored `ease-in-out` timing (from `ease-out`) since the slow-start phase is now visible, giving a smooth acceleration-deceleration feel matching the outward animation
+- Ring inward animation (OUT migration) now starts all nodes at a uniform distance from the HUB, just far enough that every node begins off-screen — nodes maintain equal radial distance from the HUB at every frame, and the rectangular viewport naturally causes staggered entry as nodes closer to their nearest edge appear first
+- Per-node ray-viewport intersection determines the minimum clearance for each node; the maximum across all nodes becomes the single uniform translate distance
+- Restored `ease-in-out` timing (from `ease-out`) since the slow-start phase is now visible, giving smooth acceleration-deceleration matching the outward animation
 
 
 ## [3.8.25] - 2026-02-17

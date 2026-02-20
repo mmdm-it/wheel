@@ -24,7 +24,7 @@
 
 :root[data-theme="catalog"] .child-pyramid-label {
   fill: #000000;
-  font-size: clamp(14px, 1.6vmin, 26px);
+  font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
   text-transform: uppercase;
 }
 
