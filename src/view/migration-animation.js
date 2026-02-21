@@ -21,8 +21,30 @@
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const ANIM_DURATION = 1200; // ms — temporarily slowed from 600 for design/test
-const ANIM_DELAY   = 10;  // ms — force reflow gap
 const RING_RADIAL_DURATION = 1200; // ms — temporarily slowed from 900 for design/test
+
+/**
+ * Schedule a callback after the browser has fully painted the current frame.
+ *
+ * On most browsers, rAF fires once per frame (~16 ms at 60 fps).  A
+ * setTimeout(0) after that runs in the next macrotask — after the paint —
+ * so the initial CSS transform has been composited and transitions work.
+ *
+ * On iOS WebKit the rAF callback can fire within the SAME compositing pass
+ * (< 12 ms), meaning no paint has occurred yet.  Chaining additional rAFs
+ * doesn't help — iOS can coalesce those too.  Instead, we measure elapsed
+ * time and pad the setTimeout so the total wait is ≥ 34 ms (two 60 fps
+ * frames), guaranteeing at least one full paint cycle with the initial
+ * state.  On well-behaved browsers this adds zero extra delay.
+ */
+function afterPaint(fn) {
+  const t0 = performance.now();
+  requestAnimationFrame(() => {
+    const elapsed = performance.now() - t0;
+    const pad = elapsed < 12 ? Math.ceil(34 - elapsed) : 0;
+    setTimeout(fn, pad);
+  });
+}
 
 /**
  * LIFO stack of animation layers.
@@ -170,8 +192,8 @@ export function animateIn(opts) {
   // Push to LIFO stack for OUT reversal
   animatedNodesStack.push({ nodes: animEntries, overlay });
 
-  // Kick off the animation after a micro-delay
-  setTimeout(() => {
+  // Kick off the animation after the browser has painted the initial state
+  afterPaint(() => {
     animEntries.forEach(a => {
       a.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
       a.g.style.transform = `translate(${a.translateX}px, ${a.translateY}px) rotate(${a.rotDelta}deg)`;
@@ -185,6 +207,7 @@ export function animateIn(opts) {
 
     // After animation ends: hide clones, signal complete
     setTimeout(() => {
+
       // Don't hide clones yet if an outward ring animation is still running —
       // it won't restore nodesGroup/labelsGroup until RING_RADIAL_DURATION
       // (900 ms), so hiding our clones at 600 ms would leave a ~300 ms gap
@@ -209,7 +232,7 @@ export function animateIn(opts) {
       _animating = false;
       if (onComplete) onComplete();
     }, ANIM_DURATION);
-  }, ANIM_DELAY);
+  });
 }
 
 /**
@@ -248,7 +271,7 @@ export function animateOut(opts) {
   // Force reflow
   if (animEntries.length) animEntries[0].g.getBoundingClientRect();
 
-  setTimeout(() => {
+  afterPaint(() => {
     animEntries.forEach(a => {
       a.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
       a.g.style.transform = 'translate(0px, 0px) rotate(0deg)';
@@ -268,7 +291,7 @@ export function animateOut(opts) {
       _animating = false;
       if (onComplete) onComplete();
     }, ANIM_DURATION);
-  }, ANIM_DELAY);
+  });
 }
 
 /**
@@ -346,7 +369,7 @@ export function animatePyramidFromHub(opts) {
   // Force reflow
   overlay.getBoundingClientRect();
 
-  setTimeout(() => {
+  afterPaint(() => {
     entries.forEach(e => {
       e.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
@@ -357,7 +380,7 @@ export function animatePyramidFromHub(opts) {
       if (pyramidGroup) pyramidGroup.style.opacity = '';
       if (onComplete) onComplete();
     }, ANIM_DURATION);
-  }, ANIM_DELAY);
+  });
 }
 
 /**
@@ -433,7 +456,7 @@ export function animatePyramidToHub(opts) {
   // Force reflow
   overlay.getBoundingClientRect();
 
-  setTimeout(() => {
+  afterPaint(() => {
     entries.forEach(e => {
       e.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
@@ -445,7 +468,7 @@ export function animatePyramidToHub(opts) {
       // onComplete → setPrimaryItems will repaint the parent's pyramid.
       if (onComplete) onComplete();
     }, ANIM_DURATION);
-  }, ANIM_DELAY);
+  });
 }
 
 /**
@@ -562,7 +585,7 @@ export function animateRingOutward(opts) {
   // Force reflow
   overlay.getBoundingClientRect();
 
-  setTimeout(() => {
+  afterPaint(() => {
     entries.forEach(e => {
       e.g.style.transition = `transform ${RING_RADIAL_DURATION}ms ease-in-out`;
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
@@ -576,7 +599,7 @@ export function animateRingOutward(opts) {
       if (labelsGroup) labelsGroup.style.opacity = '';
       if (onComplete) onComplete();
     }, RING_RADIAL_DURATION);
-  }, ANIM_DELAY);
+  });
 }
 
 /**
@@ -731,7 +754,7 @@ export function animateRingInward(opts) {
   // Force reflow so browser registers the initial off-screen transform
   overlay.getBoundingClientRect();
 
-  setTimeout(() => {
+  afterPaint(() => {
     entries.forEach(e => {
       // 600 ms ease-in-out — in sync with animateOut and animatePyramidToHub.
       // The slow-start is now visible (nodes begin at the viewport edge) and
@@ -747,7 +770,7 @@ export function animateRingInward(opts) {
       if (labelsGroup) labelsGroup.style.opacity = '';
       if (onComplete) onComplete();
     }, ANIM_DURATION);
-  }, ANIM_DELAY);
+  });
 }
 
 /**
@@ -828,7 +851,7 @@ export function animateMagnifierToParent(opts) {
   // Force reflow
   overlay.getBoundingClientRect();
 
-  setTimeout(() => {
+  afterPaint(() => {
     g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
     g.style.transform = `translate(${translateX}px, ${translateY}px)`;
 
@@ -846,7 +869,7 @@ export function animateMagnifierToParent(opts) {
       overlay.remove();
       if (onComplete) onComplete();
     }, ANIM_DURATION);
-  }, ANIM_DELAY);
+  });
 }
 
 /**
@@ -908,7 +931,7 @@ export function animateParentToMagnifier(opts) {
 
   overlay.getBoundingClientRect();
 
-  setTimeout(() => {
+  afterPaint(() => {
     g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
     g.style.transform = `translate(${translateX}px, ${translateY}px)`;
 
@@ -926,7 +949,7 @@ export function animateParentToMagnifier(opts) {
       overlay.remove();
       if (onComplete) onComplete();
     }, ANIM_DURATION);
-  }, ANIM_DELAY);
+  });
 }
 
 /**
@@ -1008,7 +1031,7 @@ export function animateParentButtonOutward(opts) {
 
   overlay.getBoundingClientRect();
 
-  setTimeout(() => {
+  afterPaint(() => {
     g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
     g.style.transform = `translate(${translateX}px, ${translateY}px)`;
 
@@ -1017,7 +1040,7 @@ export function animateParentButtonOutward(opts) {
       // Real parent button will be restored by the render after setPrimaryItems
       if (onComplete) onComplete();
     }, ANIM_DURATION);
-  }, ANIM_DELAY);
+  });
 }
 
 /**
@@ -1087,7 +1110,7 @@ export function animateParentButtonInward(opts) {
 
   overlay.getBoundingClientRect();
 
-  setTimeout(() => {
+  afterPaint(() => {
     g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
     g.style.transform = 'translate(0px, 0px)';
 
@@ -1096,7 +1119,7 @@ export function animateParentButtonInward(opts) {
       // Real parent button fill + label will be restored by the caller.
       if (onComplete) onComplete();
     }, ANIM_DURATION);
-  }, ANIM_DELAY);
+  });
 }
 
 /**

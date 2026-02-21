@@ -10,6 +10,15 @@ REMOTE_BASE="~/public_html/mmdm/wheel-v3"
 REMOTE_CATALOG="~/public_html/mmdm"
 LOCAL_PATH="$(pwd)/"
 
+# Build the bundle before syncing
+echo -e "${BLUE}📦 Building dist/app.js ...${NC}"
+npm run build 2>&1
+if [ $? -ne 0 ]; then
+    echo -e "${RED}❌ Build failed. Aborting sync.${NC}"
+    exit 1
+fi
+echo -e "${GREEN}✅ Build complete${NC}"
+
 # Color codes
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
@@ -50,6 +59,8 @@ sync_deployment() {
         --exclude='bump-version.sh' \
         --exclude='CHANGELOG.md' \
         --exclude='README.md' \
+        --exclude='src/' \
+        --exclude='*.map' \
         "$LOCAL_PATH" "$SERVER:$remote_path"
     
     if [ $? -eq 0 ]; then

@@ -1,5 +1,36 @@
 # Changelog
 
+## 3.8.34 — iOS WebKit animation reliability fix
+- Fixed iOS WebKit animation "pop" (nodes jumping to final position instead
+  of animating).  Root cause: `requestAnimationFrame` on iOS can fire within
+  the same compositing pass (<12 ms), before the initial CSS transform has
+  been painted.  The `afterPaint` helper now measures elapsed time since the
+  reflow; if < 12 ms it pads the `setTimeout` delay so the total wait is
+  ≥ 34 ms (two 60 fps frames), guaranteeing at least one full paint cycle.
+  On well-behaved browsers this adds zero extra delay.
+- Applied `--iframe-scale` compensation to all Detail Sector font sizes and
+  panel dimensions (same GoDaddy iframe fix applied to Focus Ring earlier).
+- Removed diagnostic logging overlay and download button.
+
+## 3.8.33 — iOS animation fix & debug overlay removal
+- Removed debug overlay (ES5 error-catching panel) from production.
+- Fixed iOS Safari first-load animation failure: replaced all
+  `setTimeout(fn, 10)` reflow-gap calls in migration-animation.js with
+  double-`requestAnimationFrame` (`afterPaint`) pattern. iOS Safari's
+  compositor needs a full paint cycle to commit the initial CSS transform
+  before the transition target is applied; 10 ms was not enough on cold
+  start, causing the "ballet" migration to be skipped entirely.
+
+## 3.8.32 — Chrome 80 compatibility (Android 10 dumb-phone support)
+- Replaced top-level `await import()` in all 4 adapter modules with lazy
+  `_ensureNode()` init pattern. Top-level await requires Chrome 89+;
+  Android 10 ships with Chrome ~80, causing a fatal SyntaxError at parse
+  time that prevented the app from loading entirely.
+- Replaced CSS `gap` in flexbox (Chrome 84+) with `> * + *` margin
+  fallback for `.detail-panel` and `.detail-card`.
+- Logo circle now links to mailto:info@mmdm.it (configured via
+  `contact_email` in volume manifest).
+
 ## 3.8.31 — Copyright notice & version badge relocation
 - Added copyright notice bar across top of screen:
   "© 2026 Meccanismi Marittimi delle Marche. Tutti i diritti riservati."

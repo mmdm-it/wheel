@@ -14,15 +14,21 @@ let nodeReadFile = null;
 let nodeReadFileSync = null;
 let AjvCtor = null;
 
-if (!isBrowser) {
-  const path = await import('path');
-  const { fileURLToPath } = await import('url');
-  const __dirname = path.dirname(fileURLToPath(import.meta.url));
-  manifestPath = path.resolve(__dirname, '../../data/gutenberg/manifest.json');
-  schemaPath = path.resolve(__dirname, '../../schemas/gutenberg.schema.json');
-  nodeReadFile = (await import('fs/promises')).readFile;
-  nodeReadFileSync = (await import('fs')).readFileSync;
-  AjvCtor = (await import('ajv')).default;
+let _nodeReady = null;
+function _ensureNode() {
+  if (isBrowser) return Promise.resolve();
+  if (_nodeReady) return _nodeReady;
+  _nodeReady = (async () => {
+    const path = await import('path');
+    const { fileURLToPath } = await import('url');
+    const __dirname = path.dirname(fileURLToPath(import.meta.url));
+    manifestPath = path.resolve(__dirname, '../../data/gutenberg/manifest.json');
+    schemaPath = path.resolve(__dirname, '../../schemas/gutenberg.schema.json');
+    nodeReadFile = (await import('fs/promises')).readFile;
+    nodeReadFileSync = (await import('fs')).readFileSync;
+    AjvCtor = (await import('ajv')).default;
+  })();
+  return _nodeReady;
 }
 
 let validateFn = null;
@@ -46,6 +52,7 @@ const getValidator = () => {
 
 export async function loadManifest() {
   if (isBrowser) return fetchJson(manifestUrl);
+  await _ensureNode();
   const raw = await nodeReadFile(manifestPath, 'utf-8');
   return JSON.parse(raw);
 }

@@ -59,7 +59,7 @@ svg {
 .detail-version {
   color: rgba(255, 255, 255, 0.45);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-  font-size: 11px;
+  font-size: calc(11px * var(--iframe-scale, 1));
   text-transform: uppercase;
   letter-spacing: 0.4px;
   text-align: center;
@@ -258,10 +258,10 @@ svg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: min(420px, 48vw);
-  max-width: 480px;
-  max-height: min(380px, 50vh);
-  padding: var(--space-lg, 16px) var(--space-xl, 24px);
+  width: min(calc(420px * var(--iframe-scale, 1)), 48vw);
+  max-width: calc(480px * var(--iframe-scale, 1));
+  max-height: min(calc(380px * var(--iframe-scale, 1)), 50vh);
+  padding: calc(16px * var(--iframe-scale, 1)) calc(24px * var(--iframe-scale, 1));
   background: transparent;
   border: none;
   border-radius: 0;
@@ -269,11 +269,14 @@ svg {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm, 8px);
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.35s ease-in;
   z-index: 200;
+}
+
+.detail-panel > * + * {
+  margin-top: var(--space-sm, 8px);
 }
 
 .detail-panel.detail-panel--visible {
@@ -287,7 +290,7 @@ svg {
   overflow: auto;
   color: rgba(255, 255, 255, 0.92);
   font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
-  font-size: 15px;
+  font-size: calc(15px * var(--iframe-scale, 1));
   line-height: 1.4;
 }
 
@@ -302,36 +305,39 @@ svg {
 .detail-card {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm, 8px);
   align-items: center;
   text-align: center;
 }
 
+.detail-card > * + * {
+  margin-top: var(--space-sm, 8px);
+}
+
 .detail-card-title {
   font-weight: 600;
-  font-size: 19px;
+  font-size: calc(19px * var(--iframe-scale, 1));
   color: rgba(255, 255, 255, 0.95);
 }
 
 .detail-card-body {
-  font-size: 13px;
+  font-size: calc(13px * var(--iframe-scale, 1));
   color: rgba(255, 255, 255, 0.70);
 }
 
 .detail-card-description {
   margin-top: var(--space-md, 12px);
-  font-size: 14px;
+  font-size: calc(14px * var(--iframe-scale, 1));
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.88);
   font-style: italic;
   text-align: left;
-  max-height: 220px;
+  max-height: calc(220px * var(--iframe-scale, 1));
   overflow-y: auto;
 }
 
 .detail-card-image {
-  width: 84px;
-  height: 84px;
+  width: calc(84px * var(--iframe-scale, 1));
+  height: calc(84px * var(--iframe-scale, 1));
   object-fit: contain;
   border-radius: var(--radius-card, 10px);
   background: rgba(255, 255, 255, 0.08);
