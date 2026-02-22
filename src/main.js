@@ -12,6 +12,67 @@ import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
 
 const svg = document.getElementById('app');
 const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
+const tapDebugEnabled = new URLSearchParams(window.location.search).get('tapdebug') === '1';
+
+if (tapDebugEnabled && typeof window !== 'undefined') {
+  window.__tapLog = [];
+  window.__tapDebugLog = (event, payload = {}) => {
+    const row = {
+      ts: new Date().toISOString(),
+      event,
+      ...payload
+    };
+    window.__tapLog.push(row);
+    console.log('[tapdebug]', row);
+  };
+  window.__tapDebugDownload = () => {
+    const text = JSON.stringify(window.__tapLog || [], null, 2);
+    const blob = new Blob([text], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const ts = new Date().toISOString().replace(/[:.]/g, '-');
+    a.href = url;
+    a.download = `tapdebug-${ts}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  const mountTapDebugButton = () => {
+    if (!document.body || document.getElementById('tapdebug-download-btn')) return;
+    const btn = document.createElement('button');
+    btn.id = 'tapdebug-download-btn';
+    btn.type = 'button';
+    btn.textContent = '📋 Tap Log';
+    btn.style.cssText = [
+      'position:fixed',
+      'top:8px',
+      'right:8px',
+      'z-index:9999',
+      'background:#1f2937',
+      'color:#e5e7eb',
+      'border:1px solid #9ca3af',
+      'border-radius:8px',
+      'font:600 13px/1.2 system-ui,-apple-system,Segoe UI,Roboto,sans-serif',
+      'padding:8px 10px',
+      'opacity:0.92',
+      'touch-action:manipulation',
+      'pointer-events:auto'
+    ].join(';');
+    btn.addEventListener('click', evt => {
+      evt.stopPropagation();
+      window.__tapDebugDownload();
+    });
+    document.body.appendChild(btn);
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', mountTapDebugButton, { once: true });
+  } else {
+    mountTapDebugButton();
+  }
+}
 
 // Detect iframe zoom-out (e.g. GoDaddy "Forward with Masking" on mobile).
 // Mobile browsers ignore the iframe's viewport meta tag, defaulting to a
@@ -190,7 +251,22 @@ async function loadConfig() {
 function applyTheme(manifest, volume) {
   const theme = volumeConfigs[volume]?.theme || volume;
   const root = document.documentElement;
+  const themeBackground = {
+    catalog: '#868686',
+    bible: '#d4a574',
+    calendar: '#0c2c44',
+    places: '#132a29'
+  };
+  const bg = themeBackground[theme] || '#f5f5f5';
   root.setAttribute('data-theme', theme);
+  root.style.backgroundColor = bg;
+  root.style.setProperty('--theme-color-bg', bg);
+  if (document.body) {
+    document.body.style.backgroundColor = bg;
+  }
+  if (svg) {
+    svg.style.backgroundColor = bg;
+  }
   const link = document.getElementById('volume-style');
   if (link) {
     link.setAttribute('href', `./styles/themes/${theme}.css`);
@@ -380,6 +456,41 @@ function wireInteractions(app, itemCount) {
   const baseQuickNodes = 60; // empirical baseline nodes per quick swipe at gain 1
   const targetSpinNodes = 350; // fixed quick-flick span for consistency across devices
   const baseMaxGain = Math.max(1, targetSpinNodes / baseQuickNodes);
+  const logTap = (event, payload = {}) => {
+    if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') {
+      window.__tapDebugLog(event, payload);
+    }
+  };
+
+  const nearestRingNode = event => {
+    if (!svg || typeof svg.createSVGPoint !== 'function') return null;
+    const ctm = svg.getScreenCTM?.();
+    if (!ctm) return null;
+
+    const pt = svg.createSVGPoint();
+    pt.x = event.clientX;
+    pt.y = event.clientY;
+    const p = pt.matrixTransform(ctm.inverse());
+
+    const nodes = svg.querySelectorAll('.focus-ring-node');
+    let nearest = null;
+    let nearestDist = Infinity;
+    nodes.forEach(node => {
+      const cx = Number(node.getAttribute('cx'));
+      const cy = Number(node.getAttribute('cy'));
+      const r = Number(node.getAttribute('r')) || 0;
+      if (!Number.isFinite(cx) || !Number.isFinite(cy)) return;
+      const dx = p.x - cx;
+      const dy = p.y - cy;
+      const dist = Math.hypot(dx, dy);
+      const threshold = Math.max(r * 4, 36);
+      if (dist <= threshold && dist < nearestDist) {
+        nearestDist = dist;
+        nearest = node;
+      }
+    });
+    return nearest;
+  };
 
   const onPointerMove = event => {
     if (!isDragging && !isSecondaryDragging) return;
@@ -402,6 +513,16 @@ function wireInteractions(app, itemCount) {
       : Math.min(maxGain, 1 + (velocity - velocityThreshold) * gainSlope);
 
     const delta = -(dx + dy) * sensitivity * gain;
+    logTap('pointermove', {
+      pointerType: event.pointerType,
+      dx,
+      dy,
+      dt,
+      velocity: Number(velocity.toFixed(3)),
+      gain: Number(gain.toFixed(3)),
+      dragging: isDragging,
+      secondaryDragging: isSecondaryDragging
+    });
     if (isSecondaryDragging) {
       app.rotateSecondary(delta);
     } else {
@@ -410,6 +531,13 @@ function wireInteractions(app, itemCount) {
   };
 
   svg.addEventListener('pointerdown', event => {
+    logTap('pointerdown', {
+      pointerType: event.pointerType,
+      targetClass: event.target?.getAttribute?.('class') || null,
+      targetId: event.target?.getAttribute?.('id') || null,
+      x: event.clientX,
+      y: event.clientY
+    });
     const isDimensionButton = event.target && event.target.closest && event.target.closest('.dimension-button');
     if (isDimensionButton) {
       return; // let the Dimension button handle its own toggle without starting a drag
@@ -431,18 +559,56 @@ function wireInteractions(app, itemCount) {
     }
     const isNode = event.target && event.target.closest && event.target.closest('.focus-ring-node');
     if (isNode) {
+      isDragging = false;
+      isSecondaryDragging = false;
+      logTap('node-hit', {
+        pointerType: event.pointerType,
+        nodeIndex: isNode.dataset?.index ?? null,
+        nodeId: isNode.getAttribute?.('id') || null
+      });
+      // Touch reliability: trigger immediately on pointerdown instead of
+      // waiting for delayed/sometimes-missed synthetic click on tiny targets.
+      if ((event.pointerType === 'touch' || event.pointerType === 'pen') && typeof isNode.onclick === 'function') {
+        isNode.onclick();
+        logTap('node-hit-manual-onclick', {
+          pointerType: event.pointerType,
+          nodeIndex: isNode.dataset?.index ?? null
+        });
+        event.preventDefault();
+      }
       return; // click handler on node will manage rotation
     }
     // Child pyramid node — delegate to the app's pyramid click handler
     const isPyramidNode = event.target && event.target.closest && event.target.closest('.child-pyramid-node');
     if (isPyramidNode) {
       const idx = parseInt(isPyramidNode.dataset.index, 10);
+      logTap('pyramid-hit', { pointerType: event.pointerType, nodeIndex: idx });
       if (app.handlePyramidNodeClick) {
         app.handlePyramidNodeClick(idx);
       }
       return; // don't start drag
     }
+
+    // Touch near-miss support: if the tap lands close to a tiny ring node,
+    // trigger its click handler instead of starting a drag.
+    if (event.pointerType === 'touch' || event.pointerType === 'pen') {
+      const nearby = nearestRingNode(event);
+      if (nearby && typeof nearby.onclick === 'function') {
+        isDragging = false;
+        isSecondaryDragging = false;
+        logTap('near-miss-manual-onclick', {
+          pointerType: event.pointerType,
+          nodeIndex: nearby.dataset?.index ?? null,
+          nodeId: nearby.getAttribute?.('id') || null
+        });
+        nearby.onclick();
+        event.preventDefault();
+        return;
+      }
+    }
+
     isDragging = true;
+    logTap('drag-start', { pointerType: event.pointerType });
     lastX = event.clientX;
     lastY = event.clientY;
     lastTime = event.timeStamp;
@@ -451,13 +617,24 @@ function wireInteractions(app, itemCount) {
   svg.addEventListener('pointermove', onPointerMove);
 
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
-    svg.addEventListener(type, () => {
+    svg.addEventListener(type, event => {
       if (isSecondaryDragging) {
         isSecondaryDragging = false;
+        logTap(type, { pointerType: event?.pointerType, secondaryDragging: true, action: 'end-secondary' });
         if (app.endSecondaryRotation) app.endSecondaryRotation();
         return;
       }
+      // v0 parity: only snap after real drags. For taps/clicks, let the
+      // target node's click handler run without a competing snap animation.
+      const wasDragging = isDragging;
       isDragging = false;
+      logTap(type, {
+        pointerType: event?.pointerType,
+        wasDragging,
+        locked: isInteractionLocked(),
+        action: wasDragging ? 'snap-nearest' : 'tap-no-snap'
+      });
+      if (!wasDragging) return;
       if (isInteractionLocked()) return;
       app.selectNearest();
       app.choreographer.stopMomentum();

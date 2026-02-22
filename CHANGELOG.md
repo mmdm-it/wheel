@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.8.38 — Fix click-to-magnify after migrateIn (pointerup race)
+- Fixed click-to-magnify failing at deeper hierarchy levels (e.g. clicking
+  a cylinder after navigating IN from manufacturer → model). Root cause:
+  the `pointerup` handler called `selectNearest()` unconditionally, which
+  could start a snap animation before the browser's `click` event arrived.
+- Fix: mirror the v0 touch pattern — track `wasDragging` and call
+  `selectNearest()` only after real drags, never after taps.
+
 ## 3.8.34 — iOS WebKit animation reliability fix
 - Fixed iOS WebKit animation "pop" (nodes jumping to final position instead
   of animating).  Root cause: `requestAnimationFrame` on iOS can fire within

@@ -1323,6 +1323,22 @@ export function createApp({
     }
   };
 
+  const primaryNodeDistance = (fromIndex, toIndex) => {
+    if (!Number.isFinite(fromIndex) || !Number.isFinite(toIndex)) return 1;
+    const total = nav.items.length;
+    if (total <= 0) return 1;
+    const direct = Math.abs(toIndex - fromIndex);
+    if (preserveOrderFlag) return direct;
+    return Math.min(direct, total - direct);
+  };
+
+  const primaryClickDuration = (fromIndex, toIndex) => {
+    const d = primaryNodeDistance(fromIndex, toIndex);
+    if (d <= 0) return 0;
+    const distance = Math.max(1, d);
+    return 1000 * Math.log10(distance) + 250;
+  };
+
   const rotateNodeIntoMagnifier = node => {
     if (!node?.item || isBlurred) return;
     const targetAngle = magnifier.angle;
@@ -1330,9 +1346,20 @@ export function createApp({
     const desiredRotation = targetAngle - baseAngle;
     const bounds = computeBounds(nav.items);
     const clampedRotation = clampRotation(desiredRotation, bounds);
+    const currentIndex = nav.getCurrentIndex();
+    const duration = primaryClickDuration(currentIndex, node.index);
+    if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') {
+      window.__tapDebugLog('rotate-node-into-magnifier', {
+        fromIndex: currentIndex,
+        toIndex: node.index,
+        itemId: node.item?.id || null,
+        itemLevel: node.item?.level || null,
+        durationMs: Number(duration.toFixed(2))
+      });
+    }
     nav.selectIndex(node.index);
     isRotating = true;
-    animateSnapTo(clampedRotation, 120);
+    animateSnapTo(clampedRotation, duration);
   };
 
   const rotateSecondaryNodeIntoMagnifier = node => {
