@@ -38,40 +38,6 @@ if (tapDebugEnabled && typeof window !== 'undefined') {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
   };
-
-  const mountTapDebugButton = () => {
-    if (!document.body || document.getElementById('tapdebug-download-btn')) return;
-    const btn = document.createElement('button');
-    btn.id = 'tapdebug-download-btn';
-    btn.type = 'button';
-    btn.textContent = '📋 Tap Log';
-    btn.style.cssText = [
-      'position:fixed',
-      'top:8px',
-      'right:8px',
-      'z-index:9999',
-      'background:#1f2937',
-      'color:#e5e7eb',
-      'border:1px solid #9ca3af',
-      'border-radius:8px',
-      'font:600 13px/1.2 system-ui,-apple-system,Segoe UI,Roboto,sans-serif',
-      'padding:8px 10px',
-      'opacity:0.92',
-      'touch-action:manipulation',
-      'pointer-events:auto'
-    ].join(';');
-    btn.addEventListener('click', evt => {
-      evt.stopPropagation();
-      window.__tapDebugDownload();
-    });
-    document.body.appendChild(btn);
-  };
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', mountTapDebugButton, { once: true });
-  } else {
-    mountTapDebugButton();
-  }
 }
 
 // Detect iframe zoom-out (e.g. GoDaddy "Forward with Masking" on mobile).
@@ -487,6 +453,7 @@ function wireInteractions(app, itemCount) {
       if (dist <= threshold && dist < nearestDist) {
         nearestDist = dist;
         nearest = node;
+      let suppressNativeClickUntil = 0;
       }
     });
     return nearest;
@@ -529,6 +496,20 @@ function wireInteractions(app, itemCount) {
       app.choreographer.rotate(delta);
     }
   };
+
+  // When touch pointerdown manually dispatches a node onclick, suppress the
+  // browser's delayed native click so the same node doesn't rotate twice.
+  svg.addEventListener('click', event => {
+    const now = Date.now();
+    if (now < suppressNativeClickUntil) {
+      logTap('native-click-suppressed', {
+        targetClass: event.target?.getAttribute?.('class') || null,
+        targetId: event.target?.getAttribute?.('id') || null
+      });
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }, true);
 
   svg.addEventListener('pointerdown', event => {
     logTap('pointerdown', {
@@ -578,20 +559,47 @@ function wireInteractions(app, itemCount) {
       }
       return; // click handler on node will manage rotation
     }
+
+    // Parent/magnifier controls: don't start drag and don't near-miss redirect.
+    // Let their native click handlers run.
+    const isControlTarget = event.target && event.target.closest && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label');
+    if (isControlTarget) {
+      isDragging = false;
+      isSecondaryDragging = false;
+      logTap('control-hit', {
+        pointerType: event.pointerType,
+        targetClass: event.target?.getAttribute?.('class') || null,
+        targetId: event.target?.getAttribute?.('id') || null
+      });
+      return;
+    }
+            suppressNativeClickUntil = Date.now() + 450;
     // Child pyramid node — delegate to the app's pyramid click handler
     const isPyramidNode = event.target && event.target.closest && event.target.closest('.child-pyramid-node');
     if (isPyramidNode) {
-      const idx = parseInt(isPyramidNode.dataset.index, 10);
-      logTap('pyramid-hit', { pointerType: event.pointerType, nodeIndex: idx });
-      if (app.handlePyramidNodeClick) {
-        app.handlePyramidNodeClick(idx);
+      const attrIndex = isPyramidNode.getAttribute && isPyramidNode.getAttribute('data-index');
+      const rawIndex = isPyramidNode.dataset?.index ?? attrIndex;
+      const idx = Number.parseInt(rawIndex, 10);
+      logTap('pyramid-hit', { pointerType: event.pointerType, nodeIndex: Number.isFinite(idx) ? idx : null, rawIndex: rawIndex ?? null });
+      if (Number.isFinite(idx)) {
+        if (app.handlePyramidNodeClick) {
+          app.handlePyramidNodeClick(idx);
+        }
+        return; // don't start drag
       }
-      return; // don't start drag
+      // No valid index on this pyramid-shaped target (e.g. transient clone).
+      // Fall through to near-miss ring targeting instead of swallowing the tap.
+      logTap('pyramid-hit-no-index-fallback', { pointerType: event.pointerType });
     }
 
     // Touch near-miss support: if the tap lands close to a tiny ring node,
     // trigger its click handler instead of starting a drag.
-    if (event.pointerType === 'touch' || event.pointerType === 'pen') {
+    const isBackgroundLikeTarget = (
+      event.target === svg
+      || (event.target && event.target.closest && event.target.closest('.focus-ring-band'))
+      || Boolean(isPyramidNode)
+    );
+    if ((event.pointerType === 'touch' || event.pointerType === 'pen') && isBackgroundLikeTarget) {
       const nearby = nearestRingNode(event);
       if (nearby && typeof nearby.onclick === 'function') {
         isDragging = false;
@@ -606,6 +614,7 @@ function wireInteractions(app, itemCount) {
         return;
       }
     }
+            suppressNativeClickUntil = Date.now() + 450;
 
     isDragging = true;
     logTap('drag-start', { pointerType: event.pointerType });

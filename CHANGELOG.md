@@ -1,5 +1,19 @@
 # Changelog
 
+## 3.8.39 — Mobile tap reliability + parent-button restore
+- Fixed unreliable tap-to-magnifier targeting on mobile at deeper levels
+  (cylinder/family/model): taps landing on transient `.child-pyramid-node`
+  clones without valid `data-index` are no longer swallowed; they now fall
+  through to proximity-based Focus Ring targeting.
+- Restored logarithmic click-to-magnifier duration behavior for primary ring
+  taps across levels.
+- Fixed duplicate touch activation causing occasional instant second jump
+  (`duration = 0`) by suppressing delayed native click events shortly after
+  manual touch-dispatched node activation.
+- Fixed Parent Button regression on touch devices: control targets are now
+  excluded from near-miss redirection so OUT migration triggers normally.
+- Removed temporary floating tap-log button used during on-device diagnostics.
+
 ## 3.8.38 — Fix click-to-magnify after migrateIn (pointerup race)
 - Fixed click-to-magnify failing at deeper hierarchy levels (e.g. clicking
   a cylinder after navigating IN from manufacturer → model). Root cause:

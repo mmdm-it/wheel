@@ -38,7 +38,7 @@ sync_deployment() {
         url="https://mmdm.it/"
     else
         remote_path="${REMOTE_BASE}/${deployment}/"
-        url="https://howellgibbens.com/mmdm/wheel-v3/${deployment}/"
+        url="https://mmdm.it/wheel-v3/${deployment}/"
     fi
     
     echo -e "${BLUE}🚀 Syncing to ${deployment} deployment...${NC}"
@@ -142,7 +142,7 @@ echo "════════════════════════�
 echo ""
 echo "URLs:"
 echo "  ⚙️  Catalog: https://mmdm.it/"
-echo "  📚 Bible:    https://howellgibbens.com/mmdm/wheel-v3/bible/"
-echo "  📅 Calendar: https://howellgibbens.com/mmdm/wheel-v3/calendar/"
-echo "  🧭 Places:   https://howellgibbens.com/mmdm/wheel-v3/places/"
+echo "  📚 Bible:    https://mmdm.it/wheel-v3/bible/"
+echo "  📅 Calendar: https://mmdm.it/wheel-v3/calendar/"
+echo "  🧭 Places:   https://mmdm.it/wheel-v3/places/"
 echo ""

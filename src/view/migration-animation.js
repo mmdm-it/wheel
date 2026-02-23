@@ -46,6 +46,18 @@ function afterPaint(fn) {
   });
 }
 
+function setTransform(el, value) {
+  if (!el) return;
+  el.style.transform = value;
+  el.style.webkitTransform = value;
+}
+
+function setTransition(el, value) {
+  if (!el) return;
+  el.style.transition = value;
+  el.style.webkitTransition = value;
+}
+
 /**
  * LIFO stack of animation layers.
  * Each entry: { nodes: [ { clone, translateX, translateY, rotDelta } ], level }
@@ -619,6 +631,7 @@ export function animateRingOutward(opts) {
  * @param {number}      opts.hubX           — arc hub X (off-screen right)
  * @param {number}      opts.hubY           — arc hub Y
  * @param {number}      opts.arcRadius      — arc radius (distance from hub to each node)
+ * @param {string|null} [opts.skipId]       — optional item id to exclude (magnified node)
  * @param {number}      opts.viewportWidth  — SVG viewport width
  * @param {number}      opts.viewportHeight — SVG viewport height
  * @param {SVGElement}  [opts.nodesGroup]   — real nodesGroup to hide during animation
@@ -632,6 +645,7 @@ export function animateRingInward(opts) {
     hubX,
     hubY,
     arcRadius,
+    skipId = null,
     viewportWidth = 0,
     viewportHeight = 0,
     nodesGroup,
@@ -639,7 +653,11 @@ export function animateRingInward(opts) {
     onComplete
   } = opts;
 
-  if (!svgRoot || ringNodes.length === 0) {
+  const nodesToAnimate = skipId
+    ? ringNodes.filter(n => (n.item?.id ?? n.id) !== skipId)
+    : ringNodes;
+
+  if (!svgRoot || nodesToAnimate.length === 0) {
     if (onComplete) onComplete();
     return;
   }
@@ -665,7 +683,7 @@ export function animateRingInward(opts) {
   // causes staggered entry/exit.
   const nodeInfos = [];
 
-  ringNodes.forEach(node => {
+  nodesToAnimate.forEach(node => {
     const g = document.createElementNS(SVG_NS, 'g');
     g.setAttribute('class', 'migration-node');
 
@@ -823,6 +841,8 @@ export function animateMagnifierToParent(opts) {
   g.appendChild(circle);
 
   // Label centered at magnifier (text-anchor: middle)
+  const labelWrap = document.createElementNS(SVG_NS, 'g');
+  labelWrap.setAttribute('class', 'migration-label-wrap');
   const text = document.createElementNS(SVG_NS, 'text');
   text.setAttribute('x', fromX);
   text.setAttribute('y', fromY);
@@ -830,9 +850,9 @@ export function animateMagnifierToParent(opts) {
   text.setAttribute('dominant-baseline', 'middle');
   text.setAttribute('class', 'focus-ring-magnifier-label');
   const fromRotDeg = (fromAngle * 180) / Math.PI + 180;
-  text.setAttribute('transform', `rotate(${fromRotDeg}, ${fromX}, ${fromY})`);
   text.textContent = label;
-  g.appendChild(text);
+  labelWrap.appendChild(text);
+  g.appendChild(labelWrap);
 
   overlay.appendChild(g);
 
@@ -840,30 +860,36 @@ export function animateMagnifierToParent(opts) {
   const translateX = toX - fromX;
   const translateY = toY - fromY;
 
-  // At the parent-button end, the label is offset left by radius × -1.7
-  // and uses text-anchor: start, with no rotation.
-  // We animate via transform on the <g>, and use a separate transition
-  // on the <text> for the positional shift.
+  // At the parent-button end, the label is offset left by radius × -1.7.
+  // Keep text-anchor fixed (middle) and animate via CSS transform only;
+  // this avoids iOS/WebKit snapping when x/text-anchor/transform-attr
+  // are changed together on SVG <text>.
+  const labelWidth = typeof text.getComputedTextLength === 'function'
+    ? text.getComputedTextLength()
+    : 0;
+  const parentOffsetX = radius * -1.7;
+  const endLocalDx = parentOffsetX + (labelWidth * 0.5);
 
   g.style.transformOrigin = `${fromX}px ${fromY}px`;
-  g.style.transform = 'translate(0px, 0px)';
+  g.style.webkitTransformOrigin = `${fromX}px ${fromY}px`;
+  setTransform(g, 'translate3d(0px, 0px, 0px)');
+
+  labelWrap.style.transformOrigin = `${fromX}px ${fromY}px`;
+  labelWrap.style.webkitTransformOrigin = `${fromX}px ${fromY}px`;
+  setTransform(labelWrap, `translate3d(0px, 0px, 0px) rotate(${fromRotDeg}deg)`);
 
   // Force reflow
   overlay.getBoundingClientRect();
 
   afterPaint(() => {
-    g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
-    g.style.transform = `translate(${translateX}px, ${translateY}px)`;
+    setTransition(g, `transform ${ANIM_DURATION}ms ease-in-out`);
+    setTransform(g, `translate3d(${translateX}px, ${translateY}px, 0px)`);
 
-    // Animate label: shift from centered to offset-left of the parent button.
-    // The offset is radius × -1.7 from center, and text-anchor switches to start.
-    // Rotation goes from fromRotDeg (≈322°) to 360° (≡0°) — the +38° CW short path.
-    // Using 0° instead of 360° would make CSS interpolate 322→0 (−322° the long way).
-    const parentLabelX = toX + radius * -1.7;
-    text.style.transition = `all ${ANIM_DURATION}ms ease-in-out`;
-    text.setAttribute('x', fromX + radius * -1.7);
-    text.setAttribute('text-anchor', 'start');
-    text.setAttribute('transform', `rotate(360, ${fromX + radius * -1.7}, ${fromY})`);
+    // Rotate to horizontal while translating to parent-label left offset.
+    // 360° (instead of 0°) preserves the short interpolation path from
+    // typical magnifier angles (~322°) on engines that decompose rotation.
+    setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
+    setTransform(labelWrap, `translate3d(${endLocalDx}px, 0px, 0px) rotate(360deg)`);
 
     setTimeout(() => {
       overlay.remove();
@@ -909,16 +935,17 @@ export function animateParentToMagnifier(opts) {
   // Label starting offset-left of the parent button (text-anchor: start).
   // Use 360° (≡0°) so CSS interpolates 360→dstRotDeg (≈322°) = −38° CW short path
   // instead of 0→322 = +322° the long way.
+  const labelWrap = document.createElementNS(SVG_NS, 'g');
+  labelWrap.setAttribute('class', 'migration-label-wrap');
   const text = document.createElementNS(SVG_NS, 'text');
-  const parentLabelX = toX + radius * -1.7;
-  text.setAttribute('x', parentLabelX);
+  text.setAttribute('x', toX);
   text.setAttribute('y', toY);
-  text.setAttribute('text-anchor', 'start');
+  text.setAttribute('text-anchor', 'middle');
   text.setAttribute('dominant-baseline', 'middle');
   text.setAttribute('class', 'focus-ring-magnifier-label');
-  text.setAttribute('transform', `rotate(360, ${parentLabelX}, ${toY})`);
   text.textContent = label;
-  g.appendChild(text);
+  labelWrap.appendChild(text);
+  g.appendChild(labelWrap);
 
   overlay.appendChild(g);
 
@@ -926,24 +953,224 @@ export function animateParentToMagnifier(opts) {
   const translateX = fromX - toX;
   const translateY = fromY - toY;
 
+  const labelWidth = typeof text.getComputedTextLength === 'function'
+    ? text.getComputedTextLength()
+    : 0;
+  const parentOffsetX = radius * -1.7;
+  const startLocalDx = parentOffsetX + (labelWidth * 0.5);
+
   g.style.transformOrigin = `${toX}px ${toY}px`;
-  g.style.transform = 'translate(0px, 0px)';
+  g.style.webkitTransformOrigin = `${toX}px ${toY}px`;
+  setTransform(g, 'translate3d(0px, 0px, 0px)');
+
+  labelWrap.style.transformOrigin = `${toX}px ${toY}px`;
+  labelWrap.style.webkitTransformOrigin = `${toX}px ${toY}px`;
+  setTransform(labelWrap, `translate3d(${startLocalDx}px, 0px, 0px) rotate(360deg)`);
 
   overlay.getBoundingClientRect();
 
   afterPaint(() => {
-    g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
-    g.style.transform = `translate(${translateX}px, ${translateY}px)`;
+    setTransition(g, `transform ${ANIM_DURATION}ms ease-in-out`);
+    setTransform(g, `translate3d(${translateX}px, ${translateY}px, 0px)`);
 
-    // Animate label: shift from offset-left back to centered at magnifier.
-    // After the <g> translates, the text base is at toX + translateX = fromX.
-    // We need the text centered at fromX, so set x back to toX (which becomes
-    // fromX after translation) and switch to middle anchor with arc rotation.
+    // Reverse label transform back to magnifier-centered + arc rotation.
     const dstRotDeg = (fromAngle * 180) / Math.PI + 180;
-    text.style.transition = `all ${ANIM_DURATION}ms ease-in-out`;
-    text.setAttribute('x', toX);  // + translateX via <g> = fromX
-    text.setAttribute('text-anchor', 'middle');
-    text.setAttribute('transform', `rotate(${dstRotDeg}, ${toX}, ${toY})`);
+    setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
+    setTransform(labelWrap, `translate3d(0px, 0px, 0px) rotate(${dstRotDeg}deg)`);
+
+    setTimeout(() => {
+      overlay.remove();
+      if (onComplete) onComplete();
+    }, ANIM_DURATION);
+  });
+}
+
+/**
+ * Catalog-specific IN merge animation:
+ * keep parent base label visually anchored while the magnifier suffix
+ * (e.g. "4 CIL") travels into the parent label as a suffix.
+ */
+export function animateCatalogParentMerge(opts) {
+  const {
+    svgRoot,
+    fromX, fromY,
+    toX, toY,
+    radius,
+    baseLabel = '',
+    suffixLabel = '',
+    fromAngle = 0,
+    onComplete
+  } = opts;
+
+  if (!svgRoot) { if (onComplete) onComplete(); return; }
+
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay catalog-parent-merge');
+  svgRoot.appendChild(overlay);
+
+  const parentLabelX = toX + radius * -1.7;
+
+  const staticBase = document.createElementNS(SVG_NS, 'text');
+  staticBase.setAttribute('x', parentLabelX);
+  staticBase.setAttribute('y', toY);
+  staticBase.setAttribute('text-anchor', 'start');
+  staticBase.setAttribute('dominant-baseline', 'middle');
+  staticBase.setAttribute('class', 'focus-ring-magnifier-label');
+  staticBase.setAttribute('transform', `rotate(360, ${parentLabelX}, ${toY})`);
+  staticBase.textContent = baseLabel;
+  overlay.appendChild(staticBase);
+
+  const baseAdvance = typeof staticBase.getComputedTextLength === 'function'
+    ? staticBase.getComputedTextLength()
+    : 0;
+  const suffixTargetX = parentLabelX + baseAdvance + (baseLabel ? radius * 0.25 : 0);
+
+  const moving = document.createElementNS(SVG_NS, 'g');
+  moving.setAttribute('class', 'migration-node');
+
+  const circle = document.createElementNS(SVG_NS, 'circle');
+  circle.setAttribute('cx', fromX);
+  circle.setAttribute('cy', fromY);
+  circle.setAttribute('r', radius);
+  circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  moving.appendChild(circle);
+
+  const labelWrap = document.createElementNS(SVG_NS, 'g');
+  labelWrap.setAttribute('class', 'migration-label-wrap');
+  const text = document.createElementNS(SVG_NS, 'text');
+  text.setAttribute('x', fromX);
+  text.setAttribute('y', fromY);
+  text.setAttribute('text-anchor', 'middle');
+  text.setAttribute('dominant-baseline', 'middle');
+  text.setAttribute('class', 'focus-ring-magnifier-label');
+  const fromRotDeg = (fromAngle * 180) / Math.PI + 180;
+  text.textContent = suffixLabel;
+  labelWrap.appendChild(text);
+  moving.appendChild(labelWrap);
+
+  overlay.appendChild(moving);
+
+  const tx = toX - fromX;
+  const ty = toY - fromY;
+
+  const suffixWidth = typeof text.getComputedTextLength === 'function'
+    ? text.getComputedTextLength()
+    : 0;
+  const endLocalDx = (suffixTargetX + (suffixWidth * 0.5)) - toX;
+
+  moving.style.transformOrigin = `${fromX}px ${fromY}px`;
+  moving.style.webkitTransformOrigin = `${fromX}px ${fromY}px`;
+  setTransform(moving, 'translate3d(0px, 0px, 0px)');
+
+  labelWrap.style.transformOrigin = `${fromX}px ${fromY}px`;
+  labelWrap.style.webkitTransformOrigin = `${fromX}px ${fromY}px`;
+  setTransform(labelWrap, `translate3d(0px, 0px, 0px) rotate(${fromRotDeg}deg)`);
+
+  overlay.getBoundingClientRect();
+
+  afterPaint(() => {
+    setTransition(moving, `transform ${ANIM_DURATION}ms ease-in-out`);
+    setTransform(moving, `translate3d(${tx}px, ${ty}px, 0px)`);
+
+    setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
+    setTransform(labelWrap, `translate3d(${endLocalDx}px, 0px, 0px) rotate(360deg)`);
+
+    setTimeout(() => {
+      overlay.remove();
+      if (onComplete) onComplete();
+    }, ANIM_DURATION);
+  });
+}
+
+/**
+ * Catalog-specific OUT unmerge animation:
+ * keep parent base label visually anchored while suffix detaches and
+ * travels back to magnifier center.
+ */
+export function animateCatalogParentUnmerge(opts) {
+  const {
+    svgRoot,
+    fromX, fromY,
+    toX, toY,
+    radius,
+    baseLabel = '',
+    suffixLabel = '',
+    fromAngle = 0,
+    onComplete
+  } = opts;
+
+  if (!svgRoot) { if (onComplete) onComplete(); return; }
+
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay catalog-parent-unmerge');
+  svgRoot.appendChild(overlay);
+
+  const parentLabelX = toX + radius * -1.7;
+
+  const staticBase = document.createElementNS(SVG_NS, 'text');
+  staticBase.setAttribute('x', parentLabelX);
+  staticBase.setAttribute('y', toY);
+  staticBase.setAttribute('text-anchor', 'start');
+  staticBase.setAttribute('dominant-baseline', 'middle');
+  staticBase.setAttribute('class', 'focus-ring-magnifier-label');
+  staticBase.setAttribute('transform', `rotate(360, ${parentLabelX}, ${toY})`);
+  staticBase.textContent = baseLabel;
+  overlay.appendChild(staticBase);
+
+  const baseAdvance = typeof staticBase.getComputedTextLength === 'function'
+    ? staticBase.getComputedTextLength()
+    : 0;
+  const suffixStartX = parentLabelX + baseAdvance + (baseLabel ? radius * 0.25 : 0);
+
+  const moving = document.createElementNS(SVG_NS, 'g');
+  moving.setAttribute('class', 'migration-node');
+
+  const circle = document.createElementNS(SVG_NS, 'circle');
+  circle.setAttribute('cx', toX);
+  circle.setAttribute('cy', toY);
+  circle.setAttribute('r', radius);
+  circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  moving.appendChild(circle);
+
+  const labelWrap = document.createElementNS(SVG_NS, 'g');
+  labelWrap.setAttribute('class', 'migration-label-wrap');
+  const text = document.createElementNS(SVG_NS, 'text');
+  text.setAttribute('x', toX);
+  text.setAttribute('y', toY);
+  text.setAttribute('text-anchor', 'middle');
+  text.setAttribute('dominant-baseline', 'middle');
+  text.setAttribute('class', 'focus-ring-magnifier-label');
+  text.textContent = suffixLabel;
+  labelWrap.appendChild(text);
+  moving.appendChild(labelWrap);
+
+  overlay.appendChild(moving);
+
+  const tx = fromX - toX;
+  const ty = fromY - toY;
+
+  const suffixWidth = typeof text.getComputedTextLength === 'function'
+    ? text.getComputedTextLength()
+    : 0;
+  const startLocalDx = (suffixStartX + (suffixWidth * 0.5)) - toX;
+
+  moving.style.transformOrigin = `${toX}px ${toY}px`;
+  moving.style.webkitTransformOrigin = `${toX}px ${toY}px`;
+  setTransform(moving, 'translate3d(0px, 0px, 0px)');
+
+  labelWrap.style.transformOrigin = `${toX}px ${toY}px`;
+  labelWrap.style.webkitTransformOrigin = `${toX}px ${toY}px`;
+  setTransform(labelWrap, `translate3d(${startLocalDx}px, 0px, 0px) rotate(360deg)`);
+
+  overlay.getBoundingClientRect();
+
+  afterPaint(() => {
+    setTransition(moving, `transform ${ANIM_DURATION}ms ease-in-out`);
+    setTransform(moving, `translate3d(${tx}px, ${ty}px, 0px)`);
+
+    const dstRotDeg = (fromAngle * 180) / Math.PI + 180;
+    setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
+    setTransform(labelWrap, `translate3d(0px, 0px, 0px) rotate(${dstRotDeg}deg)`);
 
     setTimeout(() => {
       overlay.remove();

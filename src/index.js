@@ -9,7 +9,7 @@ import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry } from './geometry/child-pyramid-geometry.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
-import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward } from './view/migration-animation.js';
+import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateCatalogParentMerge, animateCatalogParentUnmerge } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
@@ -265,6 +265,7 @@ export function createApp({
 
   // Detail Sector leaf detection
   const leafLevel = pyramidNormalized?.meta?.leafLevel || null;
+  const isCatalogVolume = pyramidNormalized?.meta?.volumeId === 'catalog';
   let detailSectorShown = false; // tracks whether DS is currently expanded
 
   // Notify the host page when the detail sector visibility changes.
@@ -704,7 +705,9 @@ export function createApp({
     //     The old parent button exits radially outward from the HUB.
     const prevSelected = nav.getCurrent();
     const prevMagnifierLabel = formatLabel({ item: prevSelected, context: 'magnifier' }) || '';
-    const prevParentLabel = getParentLabel(prevSelected) || '';
+    const prevParentLabel = getParentLabel(prevSelected)
+      || view.parentButtonOuterLabel?.textContent?.trim()
+      || '';
     const parentButtonX = vp.SSd * 0.13;
     const parentButtonY = vp.LSd * 0.93;
 
@@ -731,6 +734,16 @@ export function createApp({
     //    d) Old magnifier → parent-button position (straight line)
     //    e) Old parent button → radially outward off-screen
     const selectedId = tempSelected?.id ?? null;
+    const outgoingMagnifierId = prevSelected?.id ?? null;
+
+    const incomingParentLabel = tempSelected ? (getParentLabel(tempSelected) || '') : '';
+    const isCatalogSuffixMergeIn = Boolean(
+      isCatalogVolume
+      && prevParentLabel
+      && prevMagnifierLabel
+      && incomingParentLabel
+      && incomingParentLabel.toUpperCase() === `${prevParentLabel} ${prevMagnifierLabel}`.toUpperCase()
+    );
 
     animateIn({
       svgRoot: view.blurGroup || view.svgRoot,
@@ -769,7 +782,9 @@ export function createApp({
         hubX: arcParams.hubX,
         hubY: arcParams.hubY,
         arcRadius: arcParams.radius,
-        skipId: selectedId,
+        // Keep a visual gap under the magnifier: the node currently inside
+        // the magnifier should not animate outward as part of ring clones.
+        skipId: outgoingMagnifierId,
         nodesGroup: view.nodesGroup,
         labelsGroup: view.labelsGroup
       });
@@ -787,19 +802,33 @@ export function createApp({
     }
 
     // Old magnifier → parent-button position (straight line)
-    animateMagnifierToParent({
-      svgRoot: view.blurGroup || view.svgRoot,
-      fromX: magnifier.x,
-      fromY: magnifier.y,
-      toX: parentButtonX,
-      toY: parentButtonY,
-      radius: magnifierRadius,
-      label: prevMagnifierLabel,
-      fromAngle: magnifier.angle
-    });
+    if (isCatalogSuffixMergeIn) {
+      animateCatalogParentMerge({
+        svgRoot: view.blurGroup || view.svgRoot,
+        fromX: magnifier.x,
+        fromY: magnifier.y,
+        toX: parentButtonX,
+        toY: parentButtonY,
+        radius: magnifierRadius,
+        baseLabel: prevParentLabel,
+        suffixLabel: prevMagnifierLabel,
+        fromAngle: magnifier.angle
+      });
+    } else {
+      animateMagnifierToParent({
+        svgRoot: view.blurGroup || view.svgRoot,
+        fromX: magnifier.x,
+        fromY: magnifier.y,
+        toX: parentButtonX,
+        toY: parentButtonY,
+        radius: magnifierRadius,
+        label: prevMagnifierLabel,
+        fromAngle: magnifier.angle
+      });
+    }
 
     // Old parent button → radially outward off-screen (leads the way)
-    if (prevParentLabel) {
+    if (!isCatalogSuffixMergeIn) {
       animateParentButtonOutward({
         svgRoot: view.blurGroup || view.svgRoot,
         buttonX: parentButtonX,
@@ -879,11 +908,20 @@ export function createApp({
 
     // Snapshot magnifier and parent-button state BEFORE animations start.
     const prevMagnifierLabel = formatLabel({ item: nav.getCurrent(), context: 'magnifier' }) || '';
-    const prevParentLabel = getParentLabel(nav.getCurrent()) || '';
+    const prevParentLabel = getParentLabel(nav.getCurrent())
+      || view.parentButtonOuterLabel?.textContent?.trim()
+      || '';
     const parentButtonX = vp.SSd * 0.13;
     const parentButtonY = vp.LSd * 0.93;
     // The new parent label (after OUT) is the parent of tempSelected
     const newParentLabel = tempSelected ? (getParentLabel(tempSelected) || '') : '';
+    const isCatalogSuffixMergeOut = Boolean(
+      isCatalogVolume
+      && newParentLabel
+      && prevMagnifierLabel
+      && prevParentLabel
+      && prevParentLabel.toUpperCase() === `${newParentLabel} ${prevMagnifierLabel}`.toUpperCase()
+    );
 
     // Hide magnifier and parent button fills — clone circles travel in their place.
     // Stroke rings stay visible (empty) during the animation.
@@ -913,6 +951,8 @@ export function createApp({
         hubX: arcParams.hubX,
         hubY: arcParams.hubY,
         arcRadius: arcParams.radius,
+        // Keep the magnifier slot empty during INWARD clone animation too.
+        skipId: tempSelected?.id ?? null,
         viewportWidth: vp.width,
         viewportHeight: vp.height,
         nodesGroup: view.nodesGroup,
@@ -947,7 +987,19 @@ export function createApp({
     });
 
     // Parent button → magnifier position (straight line, reverse of IN)
-    if (prevParentLabel) {
+    if (isCatalogSuffixMergeOut) {
+      animateCatalogParentUnmerge({
+        svgRoot: view.blurGroup || view.svgRoot,
+        fromX: magnifier.x,
+        fromY: magnifier.y,
+        toX: parentButtonX,
+        toY: parentButtonY,
+        radius: magnifierRadius,
+        baseLabel: newParentLabel,
+        suffixLabel: prevMagnifierLabel,
+        fromAngle: magnifier.angle
+      });
+    } else {
       animateParentToMagnifier({
         svgRoot: view.blurGroup || view.svgRoot,
         fromX: magnifier.x,
@@ -961,7 +1013,7 @@ export function createApp({
     }
 
     // New parent button: fly in from off-screen radially
-    if (newParentLabel) {
+    if (newParentLabel && !isCatalogSuffixMergeOut) {
       animateParentButtonInward({
         svgRoot: view.blurGroup || view.svgRoot,
         buttonX: parentButtonX,
