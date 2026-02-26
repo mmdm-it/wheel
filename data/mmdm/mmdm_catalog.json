@@ -894,25 +894,6 @@
                                 },
                                 "sort_number": 85
                             },
-                            "Bukh": {
-                                "year_founded": 1904,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 10
-                            },
                             "Renault Marine": {
                                 "year_founded": 1899,
                                 "year_dissolved": null,
@@ -1616,6 +1597,32 @@
                     },
                     "Danimarca": {
                         "manufacturers": {
+                            "Bukh": {
+                                "year_founded": 1904,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 10
+                            },
+                            "Callesen": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                },
+                                "sort_number": 107
+                            },
                             "Burmeister & Wain": {
                                 "year_founded": 1846,
                                 "year_dissolved": 1980,
@@ -3064,222 +3071,6 @@
                                 },
                                 "sort_number": 52
                             },
-                            "Lugger": {
-                                "year_founded": 1987,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 57
-                            },
-                            "Liberty": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 53
-                            },
-                            "Chrysler": {
-                                "year_founded": 1925,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 13
-                            },
-                            "Hall-Scott": {
-                                "year_founded": 1910,
-                                "year_dissolved": 1974,
-                                "cylinders": {
-                                    "12": {
-                                        "sort_number": 1,
-                                        "models": [
-                                            {
-                                                "engine_model": "Defender",
-                                                "year_introduced": 1930,
-                                                "year_discontinued": 1940,
-                                                "data": {
-                                                    "key_notes": "Purpose-built V12 gasoline engine (circa 1930s–1940s) for marine use; used in WWII rescue boats and patrol craft; up to 650 hp in supercharged variants."
-                                                },
-                                                "sort_number": 1
-                                            }
-                                        ]
-                                    }
-                                },
-                                "sort_number": 31
-                            },
-                            "Alco": {
-                                "year_founded": 1901,
-                                "year_dissolved": 1969,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 3
-                            },
-                            "Cooper Industries": {
-                                "year_founded": 1833,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 14
-                            }
-                        },
-                        "sort_number": 1
-                    },
-                    "Canada": {
-                        "manufacturers": {
-                            "Cooper Industries": {
-                                "year_founded": 1833,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 15
-                            },
-                            "Marathon": {
-                                "year_founded": 1888,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 60
-                            },
-                            "Briggs & Stratton": {
-                                "year_founded": 1908,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 9
-                            },
-                            "Universal": {
-                                "year_founded": 1963,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 94
-                            },
-                            "Indmar": {
-                                "year_founded": 1946,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 38
-                            },
                             "Lockwood-Ash": {
                                 "year_founded": 1902,
                                 "year_dissolved": 1956,
@@ -3495,6 +3286,222 @@
                                     }
                                 },
                                 "sort_number": 55
+                            },
+                            "Lugger": {
+                                "year_founded": 1987,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 57
+                            },
+                            "Liberty": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 53
+                            },
+                            "Chrysler": {
+                                "year_founded": 1925,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 13
+                            },
+                            "Hall-Scott": {
+                                "year_founded": 1910,
+                                "year_dissolved": 1974,
+                                "cylinders": {
+                                    "12": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "Defender",
+                                                "year_introduced": 1930,
+                                                "year_discontinued": 1940,
+                                                "data": {
+                                                    "key_notes": "Purpose-built V12 gasoline engine (circa 1930s–1940s) for marine use; used in WWII rescue boats and patrol craft; up to 650 hp in supercharged variants."
+                                                },
+                                                "sort_number": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "sort_number": 31
+                            },
+                            "Alco": {
+                                "year_founded": 1901,
+                                "year_dissolved": 1969,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 3
+                            },
+                            "Cooper Industries": {
+                                "year_founded": 1833,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 14
+                            }
+                        },
+                        "sort_number": 1
+                    },
+                    "Canada": {
+                        "manufacturers": {
+                            "Cooper Industries": {
+                                "year_founded": 1833,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 15
+                            },
+                            "Marathon": {
+                                "year_founded": 1888,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 60
+                            },
+                            "Briggs & Stratton": {
+                                "year_founded": 1908,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 9
+                            },
+                            "Universal": {
+                                "year_founded": 1963,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 94
+                            },
+                            "Indmar": {
+                                "year_founded": 1946,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 38
                             },
                             "Nadler": {
                                 "year_founded": 1920,
