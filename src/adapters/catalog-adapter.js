@@ -153,6 +153,7 @@ export function normalize(raw) {
     meta: {
       volumeId: volumeKey,
       leafLevel: 'model',
+      suffixMerge: true,
       levels: ['market', 'country', 'manufacturer', 'cylinder', 'family', 'subfamily', 'model'],
       dimensions
     }

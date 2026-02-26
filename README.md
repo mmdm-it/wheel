@@ -1,14 +1,13 @@
 # Wheel v3  [![CI](https://github.com/mmdm-it/wheel/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/mmdm-it/wheel/actions/workflows/ci.yml)
 
-> v3.8.32 Designed
 
-Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. v3.8.29 Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
+Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.8.39 (2026-02-22)
+- v3.8.40 (2026-02-26)
 
-## Notable Changes in 3.7.3
-- Child Pyramid nodes now support a spiral layout mode, placing nodes equidistantly along an Archimedean spiral using true arc-length spacing. This ensures visually uniform node distribution for all child counts. (Cartesian grid mode is also available.)
+## Notable Changes in 3.8.40
+- Reverted commit 52cb891 which caused a black screen on load by suppressing the initial render and forcing pyramid nodes to `display:none`. Restored `src/index.js`, `src/view/detail/pyramid-view.js`, and `src/view/migration-animation.js` to their pre-52cb891 state.
 
 ## Release Train
 - v3.8.15 Baseline data + UI lift — done
@@ -20,7 +19,7 @@ Minimal scaffold, data-agnostic: interaction → navigation → view → geometr
 - v3.8.15 Migration Animation (Child Pyramid ↔ Focus Ring) — shipped: `animateIn`/`animateOut` with LIFO stack, 600ms CSS transform, `isAnimating` guard, `prefers-reduced-motion` support
 - v3.8.19 Parent Button Labelling — shipped: adapter-driven `getParentLabel`, progressive depth labels (country → manufacturer → compound), uppercase suffix
 
-- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.8.39`).
+- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.8.40`).
 - Historical majors are maintained outside the active v3 repository (archived folders/repos for v0/v1/v2).
 - Future v4 will branch from the final v3 tag and tag releases as `v4.*` (no versioned folders).
 - GitHub flow is feature branch → pull request → merge into protected `main` after required checks pass.
@@ -29,7 +28,7 @@ Minimal scaffold, data-agnostic: interaction → navigation → view → geometr
 - `npm test` — run Node built-in tests (no external deps)
 - `npm run build` — esbuild bundle (`src/main.js` → `dist/app.js`, target Chrome 74, IIFE)
 - `npm run lint:forbidden` — guard for forbidden volume-specific literals in shared code (runs `test/forbidden-literals.test.js`)
-- `npm run bump-version -- 3.7.0` — bump package/changelog version for release (or run `./bump-version.sh 3.7.0`)
+- `./bump-version.sh [major|minor|patch] ["changelog note"]` — bump version across package.json, README, and CHANGELOG
 - `bash sync-to-server.sh` — build + deploy using local team deployment config
 
 ## Mobile Device Diagnostics
