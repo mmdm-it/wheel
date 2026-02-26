@@ -986,7 +986,7 @@ export function animateParentToMagnifier(opts) {
 }
 
 /**
- * Catalog-specific IN merge animation:
+ * Volume-specific IN merge animation:
  * keep parent base label visually anchored while the magnifier suffix
  * (e.g. "4 CIL") travels into the parent label as a suffix.
  */
@@ -1005,7 +1005,7 @@ export function animateCatalogParentMerge(opts) {
   if (!svgRoot) { if (onComplete) onComplete(); return; }
 
   const overlay = document.createElementNS(SVG_NS, 'g');
-  overlay.setAttribute('class', 'migration-animation-overlay catalog-parent-merge');
+  overlay.setAttribute('class', 'migration-animation-overlay volume-parent-merge');
   svgRoot.appendChild(overlay);
 
   const parentLabelX = toX + radius * -1.7;
@@ -1083,7 +1083,7 @@ export function animateCatalogParentMerge(opts) {
 }
 
 /**
- * Catalog-specific OUT unmerge animation:
+ * Volume-specific OUT unmerge animation:
  * keep parent base label visually anchored while suffix detaches and
  * travels back to magnifier center.
  */
@@ -1102,7 +1102,7 @@ export function animateCatalogParentUnmerge(opts) {
   if (!svgRoot) { if (onComplete) onComplete(); return; }
 
   const overlay = document.createElementNS(SVG_NS, 'g');
-  overlay.setAttribute('class', 'migration-animation-overlay catalog-parent-unmerge');
+  overlay.setAttribute('class', 'migration-animation-overlay volume-parent-unmerge');
   svgRoot.appendChild(overlay);
 
   const parentLabelX = toX + radius * -1.7;

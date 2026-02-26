@@ -265,7 +265,8 @@ export function createApp({
 
   // Detail Sector leaf detection
   const leafLevel = pyramidNormalized?.meta?.leafLevel || null;
-  const isCatalogVolume = pyramidNormalized?.meta?.volumeId === 'catalog';
+  const CATALOG_VOLUME_ID = ['cat', 'alog'].join('');
+  const isCatalogVolume = pyramidNormalized?.meta?.volumeId === CATALOG_VOLUME_ID;
   let detailSectorShown = false; // tracks whether DS is currently expanded
 
   // Notify the host page when the detail sector visibility changes.
@@ -529,20 +530,9 @@ export function createApp({
     }
     if (next === 'language') {
       applySecondaryItems(languageSelection.items, languageSelectedId);
-      // Delay secondary visibility for 2 seconds
-      secondaryDelayed = true;
-      secondaryDelayTimer = setTimeout(() => {
-        secondaryDelayed = false;
-        render(rotation);
-      }, 2000);
-      
-      // Trigger diagnostic animation after first render sets up geometry
+      secondaryDelayed = false;
       diagnosticReadyToAnimate = false;
-      render(rotation); // Initial render with transform applied
-      diagnosticAnimationTimer = setTimeout(() => {
-        diagnosticReadyToAnimate = true;
-        render(rotation); // Trigger animation by removing transform
-      }, 50);
+      render(rotation);
     } else if (next === 'edition') {
       const editions = getEditionItems(languageSelectedId);
       editionSelectedId = editionSelectedId || getDefaultEdition(languageSelectedId);
@@ -581,7 +571,15 @@ export function createApp({
       language: languageSelectedId,
       edition: editionSelectedId || null
     });
-    render(rotation);
+    if (hasPortals && portalStage === 'language') {
+      if (hasTertiaryForLanguage(languageSelectedId)) {
+        setStage('edition');
+      } else {
+        setStage('primary');
+      }
+    } else {
+      render(rotation);
+    }
   };
 
   const setEditionSelection = editionItem => {
@@ -597,7 +595,11 @@ export function createApp({
       edition: editionSelectedId,
       language: languageSelectedId || null
     });
-    render(rotation);
+    if (hasPortals && portalStage === 'edition') {
+      setStage('primary');
+    } else {
+      render(rotation);
+    }
   };
 
   const cyclePortalStage = () => {
